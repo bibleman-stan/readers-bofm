@@ -332,6 +332,21 @@
     <button class="grid-btn" onclick="showChapter('enos', 1); document.getElementById('nav-panel').style.display='none'; return false;" style="width: 38px; height: 38px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.88em; cursor: pointer;">1</button>
   </div>
 </div>
+<div id="nav-jarom" class="book-nav" style="padding: 6px 0; background: #1e1e1e; border-radius: 4px; border: 1px solid #444;">
+  <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; padding: 8px 12px;">
+    <button class="grid-btn" onclick="showChapter('jarom', 1); document.getElementById('nav-panel').style.display='none'; return false;" style="width: 38px; height: 38px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.88em; cursor: pointer;">1</button>
+  </div>
+</div>
+<div id="nav-omni" class="book-nav" style="padding: 6px 0; background: #1e1e1e; border-radius: 4px; border: 1px solid #444;">
+  <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; padding: 8px 12px;">
+    <button class="grid-btn" onclick="showChapter('omni', 1); document.getElementById('nav-panel').style.display='none'; return false;" style="width: 38px; height: 38px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.88em; cursor: pointer;">1</button>
+  </div>
+</div>
+<div id="nav-words-of-mormon" class="book-nav" style="padding: 6px 0; background: #1e1e1e; border-radius: 4px; border: 1px solid #444;">
+  <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; padding: 8px 12px;">
+    <button class="grid-btn" onclick="showChapter('words-of-mormon', 1); document.getElementById('nav-panel').style.display='none'; return false;" style="width: 38px; height: 38px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.88em; cursor: pointer;">1</button>
+  </div>
+</div>
 </div>
   <div id="layers-panel" style="display: none; margin-top: 8px; padding: 8px 12px; background: #1e1e1e; border-radius: 4px; border: 1px solid #444;">
     <div style="display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 4px;">
@@ -860,9 +875,9 @@
     <option value="2nephi">2 Nephi</option>
     <option value="jacob">Jacob</option>
     <option value="enos">Enos</option>
-    <option value="jarom" disabled>Jarom</option>
-    <option value="omni" disabled>Omni</option>
-    <option value="words-of-mormon" disabled>Words of Mormon</option>
+    <option value="jarom">Jarom</option>
+    <option value="omni">Omni</option>
+    <option value="words-of-mormon">Words of Mormon</option>
     <option value="mosiah" disabled>Mosiah</option>
     <option value="alma" disabled>Alma</option>
     <option value="helaman" disabled>Helaman</option>
@@ -14538,6 +14553,544 @@
 </div>
 
 </div><!-- end book-enos -->
+
+<div id="book-jarom" class="book-content" style="display:none;">
+<div id="grid-jarom" class="chapter-grid">
+  <div style="text-align: center; color: #999; font-size: 0.85em; margin-bottom: 12px;">Select a chapter</div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; padding: 0 8px;">
+    <button class="grid-btn" onclick="showChapter('jarom', 1)" style="width: 48px; height: 48px; border-radius: 8px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 1em; cursor: pointer; transition: background 0.15s, color 0.15s;">1</button>
+  </div>
+</div>
+
+<div id="ch-jarom-1" class="chapter-content" style="display:none;">
+<div style="font-size: 1.4em; font-weight: bold; margin: 0 0 16px 0; color: #e0e0e0;">Chapter 1</div>
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:1</span>
+  <span style="display: block; margin-left: 0;">Now behold<span class="punct">,</span> I<span class="punct">,</span> Jarom<span class="punct">,</span> write a few words</span>
+  <span style="display: block; margin-left: 0;">according to the commandment of my father<span class="punct">,</span> Enos<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">that our genealogy may be kept<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:2</span>
+  <span style="display: block; margin-left: 0;">And as these plates are small<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and as these things are written</span>
+  <span style="display: block; margin-left: 0;">for the intent of the benefit of our <span class="swap" data-orig="brethren" data-mod="brothers">brethren</span> the Lamanites<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span><span class="punct">,</span> it must needs be that I write a little<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">but I shall not write the things of my prophesying<span class="punct">,</span> nor of my revelations<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">For what could I write more than my fathers have written<span class="punct">?</span></span>
+  <span style="display: block; margin-left: 0;">For have not they revealed the plan of salvation<span class="punct">?</span></span>
+  <span style="display: block; margin-left: 0;">I say <span class="swap" data-orig="unto" data-mod="to">unto</span> you<span class="punct">,</span> <span class="swap" data-orig="Yea" data-mod="Indeed">Yea</span><span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and this <span class="swap" data-orig="sufficeth" data-mod="is enough for">sufficeth</span> me<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:3</span>
+  <span style="display: block; margin-left: 0;">Behold<span class="punct">,</span> it is expedient that much should be done among this people<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">because of the hardness of their hearts<span class="punct">,</span> and the deafness of their ears<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and the blindness of their minds<span class="punct">,</span> and the stiffness of their necks<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="nevertheless" data-mod="but">nevertheless</span><span class="punct">,</span> God is <span class="swap" data-orig="exceedingly" data-mod="very">exceedingly</span> merciful <span class="swap" data-orig="unto" data-mod="to">unto</span> them<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and has not as yet swept them off from the face of the land<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:4</span>
+  <span style="display: block; margin-left: 0;">And there are many among us who have many revelations<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">for they are not all stiffnecked<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And as many as are not stiffnecked and have faith<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">have communion with the Holy Spirit<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">which <span class="swap" data-orig="maketh" data-mod="makes">maketh</span> manifest <span class="swap" data-orig="unto" data-mod="to">unto</span> the children of men<span class="punct">,</span> according to their faith<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:5</span>
+  <span style="display: block; margin-left: 0;">And now<span class="punct">,</span> behold<span class="punct">,</span> two hundred years had passed away<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and the people of Nephi had waxed strong in the land<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">They observed to keep the law of Moses</span>
+  <span style="display: block; margin-left: 0;">and the sabbath day holy <span class="swap" data-orig="unto" data-mod="to">unto</span> the Lord<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And they profaned not<span class="punct">;</span> neither <span class="swap" data-orig="did they" data-mod="theyed">did they</span> blaspheme<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And the laws of the land were <span class="swap" data-orig="exceedingly" data-mod="very">exceedingly</span> strict<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:6</span>
+  <span style="display: block; margin-left: 0;">And they were scattered upon much of the face of the land<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and the Lamanites also<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And they were <span class="swap" data-orig="exceedingly" data-mod="very">exceedingly</span> more numerous than were they of the Nephites<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and they loved murder and would drink the blood of beasts<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:7</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that they came many times against us<span class="punct">,</span> the Nephites<span class="punct">,</span> to battle<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">But our kings and our leaders were mighty men in the faith of the Lord<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and they taught the people the ways of the Lord<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span><span class="punct">,</span> we withstood the Lamanites</span>
+  <span style="display: block; margin-left: 0;">and swept them away out of our lands<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and began to fortify our cities<span class="punct">,</span> or whatsoever place of our inheritance<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:8</span>
+  <span style="display: block; margin-left: 0;">And we multiplied <span class="swap" data-orig="exceedingly" data-mod="very">exceedingly</span><span class="punct">,</span> and spread upon the face of the land<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and became <span class="swap" data-orig="exceedingly" data-mod="very">exceedingly</span> rich in gold<span class="punct">,</span> and in silver<span class="punct">,</span> and in precious things<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and <span class="swap" data-orig="in fine" data-mod="in other words">in fine</span> workmanship of wood<span class="punct">,</span> in buildings<span class="punct">,</span> and in machinery<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and also in iron and copper<span class="punct">,</span> and brass and steel<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">making all manner of tools of every kind to till the ground<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and weapons of war<span class="punct">—</span><span class="swap" data-orig="yea" data-mod="yes">yea</span><span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">the sharp pointed arrow<span class="punct">,</span> and the quiver<span class="punct">,</span> and the dart<span class="punct">,</span> and the javelin<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and all preparations for war<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:9</span>
+  <span style="display: block; margin-left: 0;">And thus being prepared to meet the Lamanites<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">they <span class="swap" data-orig="did not" data-mod="noted">did not</span> prosper against us<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">But the word of the Lord was verified<span class="punct">,</span> which he <span class="swap" data-orig="spake" data-mod="spoke">spake</span> <span class="swap" data-orig="unto" data-mod="to">unto</span> our fathers<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">saying that<span class="punct">:</span> <span class="swap" data-orig="Inasmuch as" data-mod="To the degree that">Inasmuch as</span> <span class="swap" data-orig="ye" data-mod="you">ye</span> will keep my commandments</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="ye" data-mod="you">ye</span> shall prosper in the land<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:10</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that the prophets of the Lord</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="did threaten" data-mod="threatened">did threaten</span> the people of Nephi<span class="punct">,</span> according to the word of God<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">that if they <span class="swap" data-orig="did not" data-mod="noted">did not</span> keep the commandments<span class="punct">,</span> but should fall into transgression<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">they should be destroyed from off the face of the land<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:11</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Wherefore" data-mod="So">Wherefore</span><span class="punct">,</span> the prophets<span class="punct">,</span> and the priests<span class="punct">,</span> and the teachers<span class="punct">,</span> <span class="swap" data-orig="did labor" data-mod="labored">did labor</span> diligently<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">exhorting with all long-suffering the people to diligence<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">teaching the law of Moses<span class="punct">,</span> and the intent for which it was given<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">persuading them to look forward <span class="swap" data-orig="unto" data-mod="to">unto</span> the Messiah<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and believe in him to come as though he already was<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And after this manner <span class="swap" data-orig="did they" data-mod="theyed">did they</span> teach them<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:12</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that by so doing</span>
+  <span style="display: block; margin-left: 0;">they kept them from being destroyed upon the face of the land<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">for they <span class="swap" data-orig="did prick" data-mod="pricked">did prick</span> their hearts with the word<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">continually stirring them up <span class="swap" data-orig="unto" data-mod="to">unto</span> repentance<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:13</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that two hundred and thirty and eight years had passed away<span class="punct">—</span>after</span>
+  <span style="display: block; margin-left: 0;">the manner of wars<span class="punct">,</span> and contentions<span class="punct">,</span> and dissensions<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">for the space of much of the time<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:14</span>
+  <span style="display: block; margin-left: 0;">And I<span class="punct">,</span> Jarom<span class="punct">,</span> do not write more<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">for the plates are small<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">But behold<span class="punct">,</span> my <span class="swap" data-orig="brethren" data-mod="brothers">brethren</span><span class="punct">,</span> <span class="swap" data-orig="ye" data-mod="you">ye</span> can go to the other plates of Nephi<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">for behold<span class="punct">,</span> upon them the records of our wars are <span class="swap" data-orig="engraven" data-mod="engraved">engraven</span><span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">according to the writings of the kings<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">or those which they caused to be written<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:15</span>
+  <span style="display: block; margin-left: 0;">And I deliver these plates into the hands of my son Omni<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">that they may be kept according to the commandments of my fathers<span class="punct">.</span></span>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 2em 0 1em; padding: 12px 0; border-top: 1px solid #444;">
+  <span style="color: #555; font-size: 0.9em;">&larr; Intro</span>
+  <a href="#" onclick="showChapterGrid('jarom'); return false;" style="color: #999; text-decoration: none; font-size: 0.85em;">&#9638; Grid</a>
+  <span style="color: #555; font-size: 0.9em;">End</span>
+</div>
+</div>
+
+</div><!-- end book-jarom -->
+
+<div id="book-omni" class="book-content" style="display:none;">
+<div id="grid-omni" class="chapter-grid">
+  <div style="text-align: center; color: #999; font-size: 0.85em; margin-bottom: 12px;">Select a chapter</div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; padding: 0 8px;">
+    <button class="grid-btn" onclick="showChapter('omni', 1)" style="width: 48px; height: 48px; border-radius: 8px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 1em; cursor: pointer; transition: background 0.15s, color 0.15s;">1</button>
+  </div>
+</div>
+
+<div id="ch-omni-1" class="chapter-content" style="display:none;">
+<div style="font-size: 1.4em; font-weight: bold; margin: 0 0 16px 0; color: #e0e0e0;">Chapter 1</div>
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:1</span>
+  <span style="display: block; margin-left: 0;">Behold<span class="punct">,</span> it came to pass that</span>
+  <span style="display: block; margin-left: 0;">I<span class="punct">,</span> Omni<span class="punct">,</span> being commanded by my father<span class="punct">,</span> Jarom<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">that I should write somewhat upon these plates<span class="punct">,</span> to preserve our genealogy<span class="punct">—</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:2</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Wherefore" data-mod="So">Wherefore</span><span class="punct">,</span> in my days<span class="punct">,</span> I would that <span class="swap" data-orig="ye" data-mod="you">ye</span> should know</span>
+  <span style="display: block; margin-left: 0;">that I fought much with the sword to preserve my people<span class="punct">,</span> the Nephites<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">from falling into the hands of their enemies<span class="punct">,</span> the Lamanites<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">But behold<span class="punct">,</span> I of myself am a wicked man<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and I have not kept the statutes and the commandments of the Lord</span>
+  <span style="display: block; margin-left: 0;">as I ought to have done<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:3</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that two hundred and seventy and six years had passed away<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and we had many seasons of peace<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and we had many seasons of serious war and bloodshed<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Yea" data-mod="Indeed">Yea</span><span class="punct">,</span> and <span class="swap" data-orig="in fine" data-mod="in other words">in fine</span><span class="punct">,</span> two hundred and eighty and two years had passed away<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and I had kept these plates according to the commandments of my fathers<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and I conferred them upon my son Amaron<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And I make an end<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:4</span>
+  <span style="display: block; margin-left: 0;">And now I<span class="punct">,</span> Amaron<span class="punct">,</span> write the things whatsoever I write<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">which are few<span class="punct">,</span> in the book of my father<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:5</span>
+  <span style="display: block; margin-left: 0;">Behold<span class="punct">,</span> it came to pass that three hundred and twenty years had passed away<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and the more wicked part of the Nephites were destroyed<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:6</span>
+  <span style="display: block; margin-left: 0;">For the Lord would not suffer<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">after he had led them out of the land of Jerusalem</span>
+  <span style="display: block; margin-left: 0;">and kept and preserved them from falling into the hands of their enemies<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="yea" data-mod="yes">yea</span><span class="punct">,</span> he would not suffer that the words should not be verified<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">which he <span class="swap" data-orig="spake" data-mod="spoke">spake</span> <span class="swap" data-orig="unto" data-mod="to">unto</span> our fathers<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">saying that<span class="punct">:</span> <span class="swap" data-orig="Inasmuch as" data-mod="To the degree that">Inasmuch as</span> <span class="swap" data-orig="ye" data-mod="you">ye</span> will not keep my commandments</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="ye" data-mod="you">ye</span> shall not prosper in the land<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:7</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Wherefore" data-mod="So">Wherefore</span><span class="punct">,</span> the Lord <span class="swap" data-orig="did visit" data-mod="visited">did visit</span> them in great judgment<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="nevertheless" data-mod="but">nevertheless</span><span class="punct">,</span> he <span class="swap" data-orig="did spare" data-mod="spared">did spare</span> the righteous that they should not perish<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">but <span class="swap" data-orig="did deliver" data-mod="delivered">did deliver</span> them out of the hands of their enemies<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:8</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that I <span class="swap" data-orig="did deliver" data-mod="delivered">did deliver</span> the plates <span class="swap" data-orig="unto" data-mod="to">unto</span> my brother Chemish<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:9</span>
+  <span style="display: block; margin-left: 0;">Now I<span class="punct">,</span> Chemish<span class="punct">,</span> write what few things I write<span class="punct">,</span> in the same book with my brother<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">for behold<span class="punct">,</span> I saw the last which he wrote<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">that he wrote it with his own hand<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and he wrote it in the day that he delivered them <span class="swap" data-orig="unto" data-mod="to">unto</span> me<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And after this manner we keep the records<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">for it is according to the commandments of our fathers<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And I make an end<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:10</span>
+  <span style="display: block; margin-left: 0;">Behold<span class="punct">,</span> I<span class="punct">,</span> Abinadom<span class="punct">,</span> am the son of Chemish<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">Behold<span class="punct">,</span> it came to pass that I saw much war and contention</span>
+  <span style="display: block; margin-left: 0;">between my people<span class="punct">,</span> the Nephites<span class="punct">,</span> and the Lamanites<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and I<span class="punct">,</span> with my own sword<span class="punct">,</span> have taken the lives of many of the Lamanites</span>
+  <span style="display: block; margin-left: 0;">in the defence of my <span class="swap" data-orig="brethren" data-mod="brothers">brethren</span><span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:11</span>
+  <span style="display: block; margin-left: 0;">And behold<span class="punct">,</span> the record of this people is <span class="swap" data-orig="engraven" data-mod="engraved">engraven</span> upon plates</span>
+  <span style="display: block; margin-left: 0;">which is had by the kings<span class="punct">,</span> according to the generations<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and I know of no revelation <span class="swap" data-orig="save that" data-mod="except that">save that</span> which has been written<span class="punct">,</span> neither prophecy<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span><span class="punct">,</span> that which is sufficient is written<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And I make an end<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:12</span>
+  <span style="display: block; margin-left: 0;">Behold<span class="punct">,</span> I am Amaleki<span class="punct">,</span> the son of Abinadom<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">Behold<span class="punct">,</span> I will speak <span class="swap" data-orig="unto" data-mod="to">unto</span> you somewhat concerning Mosiah<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">who was made king over the land of Zarahemla<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">for behold<span class="punct">,</span> he being warned of the Lord</span>
+  <span style="display: block; margin-left: 0;">that he should flee out of the land of Nephi<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and as many as would <span class="swap" data-orig="hearken" data-mod="listen">hearken</span> <span class="swap" data-orig="unto" data-mod="to">unto</span> the voice of the Lord</span>
+  <span style="display: block; margin-left: 0;">should also depart out of the land with him<span class="punct">,</span> into the wilderness<span class="punct">—</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:13</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that he <span class="swap" data-orig="did according" data-mod="accordinged">did according</span> as the Lord had commanded him<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And they departed out of the land into the wilderness<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">as many as would <span class="swap" data-orig="hearken" data-mod="listen">hearken</span> <span class="swap" data-orig="unto" data-mod="to">unto</span> the voice of the Lord<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and they were led by many preachings and prophesyings<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And they were admonished continually by the word of God<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and they were led by the power of his arm<span class="punct">,</span> through the wilderness</span>
+  <span style="display: block; margin-left: 0;">until they came down into the land which is called the land of Zarahemla<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:14</span>
+  <span style="display: block; margin-left: 0;">And they discovered a people<span class="punct">,</span> who were called the people of Zarahemla<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">Now<span class="punct">,</span> there was great rejoicing among the people of Zarahemla<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and also Zarahemla <span class="swap" data-orig="did rejoice" data-mod="rejoiced">did rejoice</span> <span class="swap" data-orig="exceedingly" data-mod="very">exceedingly</span><span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">because the Lord had sent the people of Mosiah</span>
+  <span style="display: block; margin-left: 0;">with the plates of brass which contained the record of the Jews<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:15</span>
+  <span style="display: block; margin-left: 0;">Behold<span class="punct">,</span> it came to pass that Mosiah discovered</span>
+  <span style="display: block; margin-left: 0;">that the people of Zarahemla came out from Jerusalem at the time</span>
+  <span style="display: block; margin-left: 0;">that Zedekiah<span class="punct">,</span> king of Judah<span class="punct">,</span> was carried away captive into Babylon<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:16</span>
+  <span style="display: block; margin-left: 0;">And they journeyed in the wilderness<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and were brought by the hand of the Lord across the great waters<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">into the land where Mosiah discovered them<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and they had dwelt there from that time forth<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:17</span>
+  <span style="display: block; margin-left: 0;">And at the time that Mosiah discovered them<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">they had become <span class="swap" data-orig="exceedingly" data-mod="very">exceedingly</span> numerous<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Nevertheless" data-mod="But">Nevertheless</span><span class="punct">,</span> they had had many wars and serious contentions<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and had fallen by the sword from time to time<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and their language had become corrupted<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and they had brought no records with them<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and they denied the being of their Creator<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and Mosiah<span class="punct">,</span> nor the people of Mosiah<span class="punct">,</span> could understand them<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:18</span>
+  <span style="display: block; margin-left: 0;">But it came to pass that Mosiah caused that they should be taught in his language<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And it came to pass that after they were taught in the language of Mosiah<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">Zarahemla gave a genealogy of his fathers<span class="punct">,</span> according to his memory<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and they are written<span class="punct">,</span> but not in these plates<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:19</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that the people of Zarahemla<span class="punct">,</span> and of Mosiah<span class="punct">,</span> <span class="swap" data-orig="did unite" data-mod="united">did unite</span> together<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and Mosiah was appointed to be their king<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:20</span>
+  <span style="display: block; margin-left: 0;">And it came to pass in the days of Mosiah<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">there was a large stone brought <span class="swap" data-orig="unto" data-mod="to">unto</span> him with engravings on it<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and he <span class="swap" data-orig="did interpret" data-mod="interpreted">did interpret</span> the engravings by the gift and power of God<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:21</span>
+  <span style="display: block; margin-left: 0;">And they gave <span class="swap" data-orig="an account" data-mod="a record">an account</span> of one Coriantumr<span class="punct">,</span> and the <span class="swap" data-orig="slain" data-mod="killed">slain</span> of his people<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And Coriantumr was discovered by the people of Zarahemla<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and he dwelt with them for the space of nine moons<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:22</span>
+  <span style="display: block; margin-left: 0;">It also <span class="swap" data-orig="spake" data-mod="spoke">spake</span> a few words concerning his fathers<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And his first parents came out from the tower<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">at the time the Lord <span class="swap" data-orig="confounded" data-mod="put to shame">confounded</span> the language of the people<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and the severity of the Lord fell upon them</span>
+  <span style="display: block; margin-left: 0;">according to his judgments<span class="punct">,</span> which are just<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and their bones lay scattered in the land northward<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:23</span>
+  <span style="display: block; margin-left: 0;">Behold<span class="punct">,</span> I<span class="punct">,</span> Amaleki<span class="punct">,</span> was born in the days of Mosiah<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and I have lived to see his death<span class="punct">;</span> and Benjamin<span class="punct">,</span> his son<span class="punct">,</span> <span class="swap" data-orig="reigneth" data-mod="reigns">reigneth</span> in his stead<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:24</span>
+  <span style="display: block; margin-left: 0;">And behold<span class="punct">,</span> I have seen<span class="punct">,</span> in the days of king Benjamin<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">a serious war and much bloodshed between the Nephites and the Lamanites<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">But behold<span class="punct">,</span> the Nephites <span class="swap" data-orig="did obtain" data-mod="obtained">did obtain</span> much advantage over them<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="yea" data-mod="yes">yea</span><span class="punct">,</span> <span class="swap" data-orig="insomuch" data-mod="so much so">insomuch</span> that king Benjamin <span class="swap" data-orig="did drive" data-mod="drove">did drive</span> them out of the land of Zarahemla<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:25</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that I began to be old<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and<span class="punct">,</span> having no seed<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and knowing king Benjamin to be a just man before the Lord<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span><span class="punct">,</span> I shall deliver up these plates <span class="swap" data-orig="unto" data-mod="to">unto</span> him<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">exhorting all men to come <span class="swap" data-orig="unto" data-mod="to">unto</span> God<span class="punct">,</span> the Holy One of Israel<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and believe in prophesying<span class="punct">,</span> and in revelations<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and in the ministering of angels<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and in the gift of speaking with tongues<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and in the gift of interpreting languages<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and in all things which are good<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">for there is nothing which is good save it comes from the Lord<span class="punct">:</span></span>
+  <span style="display: block; margin-left: 0;">and that which is evil <span class="swap" data-orig="cometh" data-mod="comes">cometh</span> from the devil<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:26</span>
+  <span style="display: block; margin-left: 0;">And now<span class="punct">,</span> my beloved <span class="swap" data-orig="brethren" data-mod="brothers">brethren</span><span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">I would that <span class="swap" data-orig="ye" data-mod="you">ye</span> should come <span class="swap" data-orig="unto" data-mod="to">unto</span> Christ<span class="punct">,</span> who is the Holy One of Israel<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and partake of his salvation<span class="punct">,</span> and the power of his redemption<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Yea" data-mod="Indeed">Yea</span><span class="punct">,</span> come <span class="swap" data-orig="unto" data-mod="to">unto</span> him<span class="punct">,</span> and offer your whole souls as an offering <span class="swap" data-orig="unto" data-mod="to">unto</span> him<span class="punct">,</span> and continue in fasting and praying<span class="punct">,</span> and endure to the end<span class="punct">;</span> and as the Lord <span class="swap" data-orig="liveth" data-mod="lives">liveth</span> <span class="swap" data-orig="ye" data-mod="you">ye</span> will be saved<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:27</span>
+  <span style="display: block; margin-left: 0;">And now I would speak somewhat concerning a certain number who went up into the wilderness to return to the land of Nephi<span class="punct">;</span> for there was a large number who were desirous to possess the land of their inheritance<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:28</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Wherefore" data-mod="So">Wherefore</span><span class="punct">,</span> they went up into the wilderness<span class="punct">.</span> And their leader being a strong and mighty man<span class="punct">,</span> and a stiffnecked man<span class="punct">,</span> <span class="swap" data-orig="wherefore" data-mod="so">wherefore</span> he caused a contention among them<span class="punct">;</span> and they were all <span class="swap" data-orig="slain" data-mod="killed">slain</span><span class="punct">,</span> save fifty<span class="punct">,</span> in the wilderness<span class="punct">,</span> and they returned again to the land of Zarahemla<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:29</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that they also took others to a considerable number<span class="punct">,</span> and took their journey again into the wilderness<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:30</span>
+  <span style="display: block; margin-left: 0;">And I<span class="punct">,</span> Amaleki<span class="punct">,</span> had a brother<span class="punct">,</span> who also went with them<span class="punct">;</span> and I have not since known concerning them<span class="punct">.</span> And I am about to lie down in my grave<span class="punct">;</span> and these plates are full<span class="punct">.</span> And I make an end of my speaking<span class="punct">.</span></span>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 2em 0 1em; padding: 12px 0; border-top: 1px solid #444;">
+  <span style="color: #555; font-size: 0.9em;">&larr; Intro</span>
+  <a href="#" onclick="showChapterGrid('omni'); return false;" style="color: #999; text-decoration: none; font-size: 0.85em;">&#9638; Grid</a>
+  <span style="color: #555; font-size: 0.9em;">End</span>
+</div>
+</div>
+
+</div><!-- end book-omni -->
+
+<div id="book-words-of-mormon" class="book-content" style="display:none;">
+<div id="grid-words-of-mormon" class="chapter-grid">
+  <div style="text-align: center; color: #999; font-size: 0.85em; margin-bottom: 12px;">Select a chapter</div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; padding: 0 8px;">
+    <button class="grid-btn" onclick="showChapter('words-of-mormon', 1)" style="width: 48px; height: 48px; border-radius: 8px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 1em; cursor: pointer; transition: background 0.15s, color 0.15s;">1</button>
+  </div>
+</div>
+
+<div id="ch-words-of-mormon-1" class="chapter-content" style="display:none;">
+<div style="font-size: 1.4em; font-weight: bold; margin: 0 0 16px 0; color: #e0e0e0;">Chapter 1</div>
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:1</span>
+  <span style="display: block; margin-left: 0;">And now I<span class="punct">,</span> Mormon<span class="punct">,</span> being about to deliver up the record</span>
+  <span style="display: block; margin-left: 0;">which I have been making</span>
+  <span style="display: block; margin-left: 0;">into the hands of my son Moroni<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">behold I have witnessed almost all the destruction of my people<span class="punct">,</span> the Nephites<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:2</span>
+  <span style="display: block; margin-left: 0;">And it is many hundred years after the coming of Christ</span>
+  <span style="display: block; margin-left: 0;">that I deliver these records into the hands of my son<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and it <span class="swap" data-orig="supposeth" data-mod="supposes">supposeth</span> me that he will witness the entire destruction of my people<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">But may God grant that he may survive them<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">that he may write somewhat concerning them<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and somewhat concerning Christ<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">that perhaps some day it may profit them<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:3</span>
+  <span style="display: block; margin-left: 0;">And now<span class="punct">,</span> I speak somewhat concerning that which I have written<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">for after I had made an <span class="swap" data-orig="abridgment" data-mod="summary">abridgment</span> from the plates of Nephi<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">down to the reign of this king Benjamin<span class="punct">,</span> of whom Amaleki <span class="swap" data-orig="spake" data-mod="spoke">spake</span><span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">I searched among the records which had been delivered into my hands<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and I found these plates<span class="punct">,</span> which contained this small account of the prophets<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">from Jacob down to the reign of this king Benjamin<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and also many of the words of Nephi<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:4</span>
+  <span style="display: block; margin-left: 0;">And the things which are upon these plates pleasing me<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">because of the prophecies of the coming of Christ<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and my fathers knowing that many of them have been fulfilled<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="yea" data-mod="yes">yea</span><span class="punct">,</span> and I also know that as many things as have been prophesied</span>
+  <span style="display: block; margin-left: 0;">concerning us down to this day have been fulfilled<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and as many as go beyond this day must surely come to pass<span class="punct">—</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:5</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Wherefore" data-mod="So">Wherefore</span><span class="punct">,</span> I chose these things<span class="punct">,</span> to finish my record upon them<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">which remainder of my record I shall take from the plates of Nephi<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and I cannot write the hundredth part of the things of my people<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:6</span>
+  <span style="display: block; margin-left: 0;">But behold<span class="punct">,</span> I shall take these plates<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">which contain these prophesyings and revelations<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and put them with the remainder of my record<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">for they are choice <span class="swap" data-orig="unto" data-mod="to">unto</span> me<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and I know they will be choice <span class="swap" data-orig="unto" data-mod="to">unto</span> my <span class="swap" data-orig="brethren" data-mod="brothers">brethren</span><span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:7</span>
+  <span style="display: block; margin-left: 0;">And I do this for a wise purpose<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">for thus it <span class="swap" data-orig="whispereth" data-mod="whispers">whispereth</span> me<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">according to the workings of the Spirit of the Lord which is in me<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And now<span class="punct">,</span> I do not know all things<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">but the Lord <span class="swap" data-orig="knoweth" data-mod="knows">knoweth</span> all things which are to come<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span><span class="punct">,</span> he <span class="swap" data-orig="worketh" data-mod="works">worketh</span> in me to do according to his will<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:8</span>
+  <span style="display: block; margin-left: 0;">And my prayer to God is concerning my <span class="swap" data-orig="brethren" data-mod="brothers">brethren</span><span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">that they may once again come to the knowledge of God<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="yea" data-mod="yes">yea</span><span class="punct">,</span> the redemption of Christ<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">that they may once again be a delightsome people<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:9</span>
+  <span style="display: block; margin-left: 0;">And now I<span class="punct">,</span> Mormon<span class="punct">,</span> proceed to finish out my record<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">which I take from the plates of Nephi<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and I make it according to the knowledge and the understanding</span>
+  <span style="display: block; margin-left: 0;">which God has given me<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:10</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Wherefore" data-mod="So">Wherefore</span><span class="punct">,</span> it came to pass that</span>
+  <span style="display: block; margin-left: 0;">after Amaleki had delivered up these plates into the hands of king Benjamin<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">he took them and put them with the other plates<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">which contained records which had been handed down</span>
+  <span style="display: block; margin-left: 0;">by the kings<span class="punct">,</span> from generation to generation until the days of king Benjamin<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:11</span>
+  <span style="display: block; margin-left: 0;">And they were handed down from king Benjamin<span class="punct">,</span> from generation to generation</span>
+  <span style="display: block; margin-left: 0;">until they have fallen into my hands<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And I<span class="punct">,</span> Mormon<span class="punct">,</span> pray to God</span>
+  <span style="display: block; margin-left: 0;">that they may be preserved from this time henceforth<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And I know that they will be preserved<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">for there are great things written upon them<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">out of which my people and their <span class="swap" data-orig="brethren" data-mod="brothers">brethren</span> shall be judged at the great and last day<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">according to the word of God which is written<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:12</span>
+  <span style="display: block; margin-left: 0;">And now<span class="punct">,</span> concerning this king Benjamin<span class="punct">—</span>he</span>
+  <span style="display: block; margin-left: 0;">had somewhat of contentions among his own people<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:13</span>
+  <span style="display: block; margin-left: 0;">And it came to pass also that the armies of the Lamanites came down</span>
+  <span style="display: block; margin-left: 0;">out of the land of Nephi<span class="punct">,</span> to battle against his people<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">But behold<span class="punct">,</span> king Benjamin gathered together his armies<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and he <span class="swap" data-orig="did stand" data-mod="stood">did stand</span> against them<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and he <span class="swap" data-orig="did fight" data-mod="fought">did fight</span> with the strength of his own arm<span class="punct">,</span> with the sword of Laban<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:14</span>
+  <span style="display: block; margin-left: 0;">And in the strength of the Lord they <span class="swap" data-orig="did contend" data-mod="contended">did contend</span> against their enemies<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">until they had <span class="swap" data-orig="slain" data-mod="killed">slain</span> many thousands of the Lamanites<span class="punct">.</span></span>
+  <span style="display: block; margin-left: 0;">And it came to pass that they <span class="swap" data-orig="did contend" data-mod="contended">did contend</span> against the Lamanites</span>
+  <span style="display: block; margin-left: 0;">until they had driven them out of all the lands of their inheritance<span class="punct">.</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:15</span>
+  <span style="display: block; margin-left: 0;">And it came to pass that after there had been false Christs<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and their mouths had been shut<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and they punished according to their crimes<span class="punct">;</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:16</span>
+  <span style="display: block; margin-left: 0;">And after there had been false prophets<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and false preachers and teachers among the people<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and all these having been punished according to their crimes<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and after there having been much contention</span>
+  <span style="display: block; margin-left: 0;">and many dissensions away <span class="swap" data-orig="unto" data-mod="to">unto</span> the Lamanites<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">behold<span class="punct">,</span> it came to pass that king Benjamin<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">with the assistance of the holy prophets who were among his people<span class="punct">—</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:17</span>
+  <span style="display: block; margin-left: 0;">For behold<span class="punct">,</span> king Benjamin was a holy man<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and he <span class="swap" data-orig="did reign" data-mod="reigned">did reign</span> over his people in righteousness<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and there were many holy men in the land<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and they <span class="swap" data-orig="did speak" data-mod="spoke">did speak</span> the word of God with power and with authority<span class="punct">;</span></span>
+  <span style="display: block; margin-left: 0;">and they <span class="swap" data-orig="did use" data-mod="used">did use</span> much sharpness because of the <span class="swap" data-orig="stiffneckedness" data-mod="stubbornness">stiffneckedness</span> of the people<span class="punct">—</span></span>
+</div>
+
+<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">1:18</span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="Wherefore" data-mod="So">Wherefore</span><span class="punct">,</span> with the help of these<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">king Benjamin<span class="punct">,</span> by laboring with all the might of his body</span>
+  <span style="display: block; margin-left: 0;">and the faculty of his whole soul<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;">and also the prophets<span class="punct">,</span></span>
+  <span style="display: block; margin-left: 0;"><span class="swap" data-orig="did once" data-mod="onced">did once</span> more establish peace in the land<span class="punct">.</span></span>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 2em 0 1em; padding: 12px 0; border-top: 1px solid #444;">
+  <span style="color: #555; font-size: 0.9em;">&larr; Intro</span>
+  <a href="#" onclick="showChapterGrid('words-of-mormon'); return false;" style="color: #999; text-decoration: none; font-size: 0.85em;">&#9638; Grid</a>
+  <span style="color: #555; font-size: 0.9em;">End</span>
+</div>
+</div>
+
+</div><!-- end book-words-of-mormon -->
 
 
 </div>
