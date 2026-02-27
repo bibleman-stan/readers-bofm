@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The Book of Mormon — Reading Edition</title>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
 </head>
-<body style="background: #1a1d21; color: #c8cdd4; font-family: Literata, Georgia, serif; max-width: 42em; margin: 0 auto; padding: 1em; line-height: 1.8;">
+<body style="background: #1c1f24; color: #d4d0c8; font-family: Literata, Georgia, serif; max-width: 42em; margin: 0 auto; padding: 1em; line-height: 2.05; letter-spacing: 0.015em;">
 <div id="top"></div>
 
 <h1 style="font-weight: normal; font-size: 1.6em; text-align: left; margin-bottom: 0.3em;">The Book of Mormon</h1>
@@ -344,11 +344,11 @@
 
 <style>
   /* Light mode overrides — content only, toolbar stays dark */
-  body.light-mode { background: #f2f4f7 !important; color: #2c3038 !important; }
-  body.light-mode summary { color: #2c3038 !important; }
-  body.light-mode details { border-color: #ddd !important; }
-  body.light-mode hr { border-color: #ddd !important; }
-  body.light-mode p:not(#reading-toolbar p) { color: #2c3038 !important; }
+  body.light-mode { background: #f5f0e8 !important; color: #3a3630 !important; }
+  body.light-mode summary { color: #3a3630 !important; }
+  body.light-mode details { border-color: #d8d0c0 !important; }
+  body.light-mode hr { border-color: #d8d0c0 !important; }
+  body.light-mode p:not(#reading-toolbar p) { color: #3a3630 !important; }
   body.light-mode.show-deity .deity-hl { color: #b5342b !important; }
   body.light-mode.show-deity .father-hl { color: #1e5a9e !important; }
   body.light-mode.show-spirit .spirit-hl { background: rgba(160, 160, 160, 0.15); }
@@ -356,7 +356,7 @@
   body.light-mode .aid-active .swap { color: #1e8449 !important; }
   body.light-mode .sources-active .quote-bible { text-decoration-color: rgba(42, 111, 168, 0.35); }
   body.light-mode div[style*="font-size: 1.1em"] { color: #2c3038 !important; }
-  body.light-mode span[style*="color: #666"] { color: #a0aab5 !important; }
+  body.light-mode span[style*="color: #5a5a52"] { color: #b0a898 !important; }
   body.light-mode span[style*="color: #808080"] { color: #8090a0 !important; }
   body.light-mode span[style*="color: #a0a0a0"] { color: #777 !important; }
   body.light-mode h1 { color: #2c3038 !important; }
@@ -396,8 +396,8 @@
   body.light-mode .comment-note { color: #666; border-left-color: #aaa; }
   body.light-mode .comment-formula { color: #8a7a2a; }
   .sources-active [data-source]::after { content: " (" attr(data-source) ")"; font-size: 0.75em; font-style: italic; font-weight: normal !important; text-decoration: none; display: inline-block; color: rgba(107, 163, 214, 0.7); }
-  .punct { color: #777 !important; }
-  body.light-mode .punct { color: #aaa !important; }
+  .punct { color: #6a6860 !important; }
+  body.light-mode .punct { color: #a8a090 !important; }
 </style>
 
 <script>
@@ -408,7 +408,7 @@
   var spiritLayerOn = false;
   var currentBook = '1nephi';
   var currentChapterMap = {};
-  var loadedBooks = {};  // cache: bookId -> true (content already in DOM)
+  var loadedBooks = {};
 
   // Book metadata — chapter counts
   var bookMeta = {
@@ -429,113 +429,170 @@
     'moroni': {name: 'Moroni', chapters: 10}
   };
 
-  // ---- DEITY HIGHLIGHTING ----
-  var sonPatterns = [
-    'the Son of God', 'Son of God', 'the Son of the living God',
-    'the Son of the Most High God', 'the Lamb of God', 'Lamb of God',
-    'the Only Begotten of the Father', 'Only Begotten',
-    'the Holy One of Israel', 'Holy One of Israel', 'the Holy One',
-    'the Messiah', 'the true Messiah', 'a Messiah',
-    'Jesus Christ', 'Christ', 'Jesus',
-    'the Redeemer', 'Redeemer of the world', 'my Redeemer',
-    'the Savior', 'the Lord God Omnipotent',
-    'the Creator', 'the Eternal Judge',
-    'the Great Creator', 'the God of Israel',
-    'the Lord thy God', 'the Lord your God',
-    'the Mediator', 'the Good Shepherd'
-  ];
-  var fatherPatterns = [
-    'the Eternal Father', 'the Father', 'his Father',
-    'the Eternal God', 'God the Father', 'the Father of heaven'
-  ];
-  var spiritPatterns = [
-    'the Holy Spirit', 'the Holy Ghost',
-    'the Spirit of the Lord', 'the Spirit of God',
-    'the Spirit', 'his Spirit', 'my Spirit', 'the Comforter'
+  // ---- DEITY HIGHLIGHTING (correct version from working build) ----
+  var deityPatterns = [
+    'Christ, the Lord God Omnipotent',
+    'the Lord God Omnipotent',
+    'Lord God Omnipotent',
+    'the Lord God Almighty',
+    'Lord God Almighty',
+    'Jesus Christ, the Son of God',
+    'the Lord Jesus Christ',
+    'Lord Jesus Christ',
+    'the Spirit of the Lord God',
+    'the Spirit of the Lord',
+    'the Spirit of God',
+    'the Son of God',
+    'Son of God',
+    'the Holy Ghost',
+    'the Holy Spirit',
+    'the Holy One of Israel',
+    'Holy One of Israel',
+    'the God of Abraham',
+    'God of Abraham',
+    'the God of Isaac',
+    'God of Isaac',
+    'the God of Jacob',
+    'God of Jacob',
+    'the God of Israel',
+    'God of Israel',
+    'the Lamb of God',
+    'Lamb of God',
+    'the Most High God',
+    'Most High God',
+    'the Mighty One of Israel',
+    'Mighty One of Israel',
+    'the Mighty One of Jacob',
+    'Mighty One of Jacob',
+    'the Eternal Father',
+    'Eternal Father',
+    'the Lord God',
+    'Lord God',
+    'the Holy One',
+    'Holy One',
+    'the Mighty One',
+    'Mighty One',
+    'the Most High',
+    'the Almighty',
+    'the Messiah',
+    'true Messiah',
+    'the Redeemer',
+    'the Savior',
+    'the Creator',
+    'his Holy Spirit',
+    'his Spirit',
+    'the Spirit',
+    'Holy Spirit',
+    'Holy Ghost',
+    'the Lamb',
+    'the Lord',
+    'the Father',
+    'the Son',
+    'Jesus Christ',
+    'Christ the Lord',
+    'everlasting God',
+    'Christ',
+    'Jesus',
+    'Messiah',
+    'Redeemer',
+    'Savior',
+    'Lord',
+    'God'
   ];
 
+  var spiritWords = ['the Spirit of the Lord God', 'the Spirit of the Lord',
+    'the Holy Spirit', 'the Holy Ghost', 'the Spirit of God',
+    'his Holy Spirit', 'his Spirit', 'the Spirit',
+    'Holy Spirit', 'Holy Ghost'];
+  var spiritSet = new Set(spiritWords);
+
+  var fatherWords = ['the Father', 'the Eternal Father', 'Eternal Father',
+    'God the Father', 'the Eternal God, the Father'];
+  var fatherSet = new Set(fatherWords);
+
   function buildRegex(patterns) {
-    var sorted = patterns.slice().sort(function(a,b){return b.length - a.length;});
-    return new RegExp('\\b(' + sorted.map(function(p){return p.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}).join('|') + ')\\b', 'g');
+    return new RegExp('\\b(' + patterns.map(function(p){
+      return p.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    }).join('|') + ')\\b','g');
   }
+
+  var deityRegex = buildRegex(deityPatterns);
 
   function walkText(node, fn) {
     if (node.nodeType === 3) { fn(node); return; }
     if (node.nodeName === 'SCRIPT' || node.nodeName === 'STYLE') return;
-    if (node.classList && (node.classList.contains('deity-hl') || node.classList.contains('father-hl') || node.classList.contains('spirit-hl'))) return;
-    var children = Array.prototype.slice.call(node.childNodes);
-    children.forEach(function(ch){ walkText(ch, fn); });
+    if (node.classList && (node.classList.contains('deity-hl') || node.classList.contains('spirit-hl') || node.classList.contains('father-hl'))) return;
+    var child = node.firstChild;
+    while (child) {
+      var next = child.nextSibling;
+      walkText(child, fn);
+      child = next;
+    }
   }
 
   function addDeityHighlights() {
-    var content = document.getElementById('book-content-container');
-    if (!content) return;
-    var sonRe = buildRegex(sonPatterns);
-    var fatherRe = buildRegex(fatherPatterns);
-    var spiritRe = buildRegex(spiritPatterns);
-    walkText(content, function(textNode) {
-      var text = textNode.nodeValue;
-      if (!sonRe.test(text) && !fatherRe.test(text) && !spiritRe.test(text)) return;
-      sonRe.lastIndex = 0; fatherRe.lastIndex = 0; spiritRe.lastIndex = 0;
-      var frag = document.createDocumentFragment();
-      var combined = [];
-      var m;
-      sonRe.lastIndex = 0;
-      while((m = sonRe.exec(text)) !== null) combined.push({start: m.index, end: m.index+m[0].length, cls: 'deity-hl', text: m[0]});
-      fatherRe.lastIndex = 0;
-      while((m = fatherRe.exec(text)) !== null) combined.push({start: m.index, end: m.index+m[0].length, cls: 'father-hl', text: m[0]});
-      spiritRe.lastIndex = 0;
-      while((m = spiritRe.exec(text)) !== null) combined.push({start: m.index, end: m.index+m[0].length, cls: 'spirit-hl', text: m[0]});
-      combined.sort(function(a,b){return a.start - b.start;});
-      var filtered = []; var lastEnd = 0;
-      combined.forEach(function(c){ if(c.start >= lastEnd){ filtered.push(c); lastEnd = c.end; }});
-      var pos = 0;
-      filtered.forEach(function(c){
-        if (c.start > pos) frag.appendChild(document.createTextNode(text.slice(pos, c.start)));
-        var span = document.createElement('span');
-        span.className = c.cls;
-        span.textContent = c.text;
-        frag.appendChild(span);
-        pos = c.end;
+    var root = document.getElementById('scripture-content');
+    if (!root) return;
+    var chapters = root.querySelectorAll('.chapter-content');
+    chapters.forEach(function(sec) {
+      walkText(sec, function(textNode) {
+        var text = textNode.nodeValue;
+        if (!deityRegex.test(text)) return;
+        deityRegex.lastIndex = 0;
+        var frag = document.createDocumentFragment();
+        var lastIdx = 0;
+        var match;
+        while ((match = deityRegex.exec(text)) !== null) {
+          if (match.index > lastIdx) {
+            frag.appendChild(document.createTextNode(text.slice(lastIdx, match.index)));
+          }
+          var span = document.createElement('span');
+          span.className = spiritSet.has(match[0]) ? 'spirit-hl' : fatherSet.has(match[0]) ? 'father-hl' : 'deity-hl';
+          span.textContent = match[0];
+          frag.appendChild(span);
+          lastIdx = deityRegex.lastIndex;
+        }
+        if (lastIdx < text.length) {
+          frag.appendChild(document.createTextNode(text.slice(lastIdx)));
+        }
+        textNode.parentNode.replaceChild(frag, textNode);
       });
-      if (pos < text.length) frag.appendChild(document.createTextNode(text.slice(pos)));
-      textNode.parentNode.replaceChild(frag, textNode);
     });
   }
 
   function removeDeityHighlights() {
-    var content = document.getElementById('book-content-container');
-    if (!content) return;
-    ['deity-hl','father-hl','spirit-hl'].forEach(function(cls){
-      content.querySelectorAll('.'+cls).forEach(function(span){
-        var parent = span.parentNode;
-        parent.replaceChild(document.createTextNode(span.textContent), span);
-        parent.normalize();
-      });
+    document.querySelectorAll('.deity-hl, .spirit-hl, .father-hl').forEach(function(span) {
+      var parent = span.parentNode;
+      while (span.firstChild) parent.insertBefore(span.firstChild, span);
+      parent.removeChild(span);
+      parent.normalize();
     });
   }
 
   function ensureHighlights() {
-    if (deityLayerOn) { removeDeityHighlights(); addDeityHighlights(); }
-    if (spiritLayerOn) { removeDeityHighlights(); addDeityHighlights(); }
+    if (!document.querySelector('.deity-hl, .spirit-hl, .father-hl')) {
+      addDeityHighlights();
+    }
   }
 
   function maybeRemoveHighlights() {
-    if (!deityLayerOn && !spiritLayerOn) removeDeityHighlights();
+    if (!deityLayerOn && !spiritLayerOn) {
+      removeDeityHighlights();
+    }
   }
 
   window.toggleDeityLayer = function(on) {
     deityLayerOn = on;
+    if (on) { ensureHighlights(); }
     document.body.classList.toggle('show-deity', on);
-    if (on) { removeDeityHighlights(); addDeityHighlights(); }
-    else { maybeRemoveHighlights(); }
+    if (!on) maybeRemoveHighlights();
   };
 
   window.toggleSpiritLayer = function(on) {
     spiritLayerOn = on;
+    if (on) { ensureHighlights(); }
     document.body.classList.toggle('show-spirit', on);
-    if (on) { removeDeityHighlights(); addDeityHighlights(); }
-    else { maybeRemoveHighlights(); }
+    if (!on) maybeRemoveHighlights();
   };
 
   // ---- READING AID TOGGLE ----
@@ -613,12 +670,10 @@
   }
 
   function loadBook(bookId, callback) {
-    // If already loaded, just show it
     if (loadedBooks[bookId]) {
       if (callback) callback();
       return;
     }
-    // Fetch the book HTML fragment
     var container = document.getElementById('book-content-container');
     fetch('books/' + bookId + '.html')
       .then(function(response) {
@@ -626,17 +681,14 @@
         return response.text();
       })
       .then(function(html) {
-        // Create a temp div to parse the HTML
         var temp = document.createElement('div');
         temp.innerHTML = html;
-        // Append the book content div to the container
         var bookDiv = temp.firstElementChild;
         if (bookDiv) {
           bookDiv.style.display = 'none';
           container.appendChild(bookDiv);
         }
         loadedBooks[bookId] = true;
-        // Re-apply reading aid if it's on
         if (aidOn) {
           bookDiv.querySelectorAll('.swap').forEach(function(el) {
             el.textContent = el.getAttribute('data-mod');
@@ -652,19 +704,12 @@
   }
 
   window.switchBook = function(bookId) {
-    // Hide all currently loaded book content divs
     document.querySelectorAll('.book-content').forEach(function(b) { b.style.display = 'none'; });
-
-    // Update all book selector dropdowns
     ['book-select', 'toolbar-book-select', 'toolbar-book-select-study'].forEach(function(id) {
       var sel = document.getElementById(id);
       if (sel) sel.value = bookId;
     });
-
-    // Build chapter grid for this book
     buildChapterGrid(bookId);
-
-    // Update "About" link text
     var meta = bookMeta[bookId];
     var displayName = meta ? meta.name : bookId;
     document.querySelectorAll('.about-book-link').forEach(function(a) {
@@ -676,18 +721,19 @@
         return false;
       };
     });
-
     currentBook = bookId;
-
-    // Load the book (fetches if not cached) then show chapter 1
+    // Remove existing deity highlights before loading new book
+    removeDeityHighlights();
     loadBook(bookId, function() {
       var target = document.getElementById('book-' + bookId);
       if (target) target.style.display = 'block';
       showChapter(bookId, 1);
       var navPanel = document.getElementById('nav-panel');
       if (navPanel) navPanel.style.display = 'block';
-      // Re-apply deity highlights if active
-      ensureHighlights();
+      // Re-apply deity highlights if layers are active
+      if (deityLayerOn || spiritLayerOn) {
+        addDeityHighlights();
+      }
     });
   };
 
@@ -800,7 +846,6 @@
     var target = document.getElementById('ch-' + bookId + '-' + chNum);
     if (target) target.style.display = 'block';
     currentChapterMap[bookId] = chNum;
-    // Highlight active chapter in grid
     document.querySelectorAll('#nav-grid .grid-btn').forEach(function(btn, idx) {
       btn.classList.toggle('active-ch', idx === chNum - 1);
     });
@@ -818,8 +863,14 @@
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
 
+  // Initialize: load 1 Nephi on page ready
+  document.addEventListener('DOMContentLoaded', function() {
+    switchBook('1nephi');
+  });
+
 })();
 </script>
+
 
 <div id="scripture-content">
 

@@ -424,7 +424,7 @@ def process_line(line, swap_list):
 def gen_verse(verse, swap_list):
     ref = verse['ref']
     processed = [process_line(l, swap_list) for l in verse['lines']]
-    parts = [f'<div style="margin-bottom: 12px;"><span style="font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;">{ref}</span>']
+    parts = [f'<div style="margin-bottom: 20px;"><span style="font-size: 0.55em; color: #5a5a52; margin-right: 3px; vertical-align: super;">{ref}</span>']
     for line in processed:
         parts.append(f'  <span style="display: block; margin-left: 0;">{line}</span>')
     parts.append('</div>')
