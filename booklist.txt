@@ -1,0 +1,20 @@
+# Book of Mormon Reading Edition — Source File List
+# Format: bookid sourcefile.txt
+# Lines starting with # are ignored
+# Run: python3 build_book.py --all booklist.txt --out books/
+
+1nephi    01-1_nephi-stan-v1.txt
+2nephi    02-2_nephi-stan-v1.txt
+jacob     03-jacob-2020-sb.txt
+enos      04-enos-2020-sb.txt
+jarom     05-jarom-2020-sb.txt
+omni      06-omni-2020-sb.txt
+words-of-mormon  07-words_of_mormon-2020-sb.txt
+mosiah    08-mosiah-2020-sb.txt
+alma      09-alma-2020-sb.txt
+helaman   10-helaman-2020-sb.txt
+3nephi    11-3_nephi-2020-sb.txt
+4nephi    12-4_nephi-2020-sb.txt
+mormon    13-mormon-2020-sb.txt
+ether     14-ether-2020-sb.txt
+moroni    15-moroni-2020-sb.txt
