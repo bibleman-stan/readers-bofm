@@ -22,6 +22,7 @@ import re, sys, os
 # ============================================================================
 
 COMPOUND_SWAPS = [
+    ("none other object save it be", "no other purpose except"),
     ("inasmuch as", "to the degree that"), ("Inasmuch as", "To the degree that"),
     ("hither and thither", "this way and that"),
     ("an account", "a record"), ("in fine", "in other words"), ("lust after", "desire"),
