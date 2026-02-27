@@ -364,8 +364,16 @@ def apply_swaps(text, swap_list):
         placeholders.append((sent, word, mf)); return sent
     result = re.sub(r'\b[a-z]+eth\b', lambda m: eth_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
+    # Words that follow "did" but are NOT verbs — skip these
+    DID_SKIP = {'my', 'his', 'her', 'their', 'our', 'your', 'its', 'the', 'a', 'an',
+                'not', 'also', 'all', 'both', 'even', 'never', 'once', 'then', 'thus',
+                'it', 'they', 'she', 'he', 'we', 'so', 'as', 'again', 'frankly',
+                'still', 'do', 'molten', 'this', 'that', 'these', 'those'}
+
     def did_verb_replace(m):
         full, verb = m.group(0), m.group(1)
+        if verb.lower() in DID_SKIP:
+            return full  # not a verb, leave as-is
         if verb in IRREGULAR_PAST: past = IRREGULAR_PAST[verb]
         elif verb.endswith('e'): past = verb + 'd'
         elif verb.endswith('y') and len(verb)>1 and verb[-2] not in 'aeiou': past = verb[:-1] + 'ied'
