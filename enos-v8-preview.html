@@ -107,21 +107,16 @@
   body.continuous .verse-num { display: none; }
   body.continuous .verse { margin-bottom: 2px; }
 
-  /* Mode: hide punct — collapse characters, preserve surrounding space */
+  /* Mode: hide punct — collapse all punctuation to zero width.
+     Dashes are at line-end so no word-smashing risk.
+     For rare mid-line dashes, punct-dash inserts a thin space. */
   body.hide-punct .punct {
     font-size: 0;
-    letter-spacing: 0;
-    display: inline;
   }
-  /* Em-dashes need a thin space when hidden, otherwise words smash together */
   body.hide-punct .punct-dash {
     font-size: 0;
-    word-spacing: 0.3em;
-  }
-  body.hide-punct .punct-dash::after {
-    content: ' ';
-    font-size: var(--font-size);
-    word-spacing: normal;
+    display: inline-block;
+    width: 4px;
   }
 
   /* Mode: study (show verse nums, normal spacing) */
@@ -155,10 +150,10 @@
 </div>
 <div class="verse"><span class="verse-num">1:1</span>
   <span class="line"><span class="swap" data-orig="Behold, it came to pass that" data-mod="Then behold,">Behold<span class="punct">,</span> it came to pass that</span></span>
-  <span class="line">I<span class="punct">,</span> Enos<span class="punct">,</span> knowing my father that he was a just man<span class="punct punct-dash">—</span>for</span>
-  <span class="line">he taught me in his language<span class="punct">,</span></span>
-  <span class="line">and also in the nurture and admonition of the Lord<span class="punct punct-dash">—</span>and</span>
-  <span class="line">blessed be the name of my God for it<span class="punct punct-dash">—</span></span>
+  <span class="line">I<span class="punct">,</span> Enos<span class="punct">,</span> knowing my father that he was a just man<span class="punct punct-dash">—</span></span>
+  <span class="line">for he taught me in his language<span class="punct">,</span></span>
+  <span class="line">and also in the nurture and admonition of the Lord<span class="punct punct-dash">—</span></span>
+  <span class="line">and blessed be the name of my God for it<span class="punct punct-dash">—</span></span>
 </div>
 
 <div class="verse"><span class="verse-num">1:2</span>
@@ -241,8 +236,8 @@
 </div>
 
 <div class="verse"><span class="verse-num">1:13</span>
-  <span class="line">And now behold<span class="punct">,</span> this was the desire which I desired of him<span class="punct punct-dash">—</span>that</span>
-  <span class="line">if it should so be<span class="punct">,</span> that my people<span class="punct">,</span> the Nephites<span class="punct">,</span> should fall into transgression<span class="punct">,</span></span>
+  <span class="line">And now behold<span class="punct">,</span> this was the desire which I desired of him<span class="punct punct-dash">—</span></span>
+  <span class="line">that if it should so be<span class="punct">,</span> that my people<span class="punct">,</span> the Nephites<span class="punct">,</span> should fall into transgression<span class="punct">,</span></span>
   <span class="line">and by any means be destroyed<span class="punct">,</span> and the Lamanites should not be destroyed<span class="punct">,</span></span>
   <span class="line">that the Lord God would preserve a record of my people<span class="punct">,</span> the Nephites<span class="punct">;</span></span>
   <span class="line">even if it so be by the power of his holy arm<span class="punct">,</span></span>
@@ -380,6 +375,8 @@
 </div>
 
 </div>
+
+
 
 
 

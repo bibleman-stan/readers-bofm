@@ -158,28 +158,16 @@ SPEECH_NEAR_PAT = re.compile(r'(said|saith|spake|spoke|say |says )')
 
 def m0_emdash_trailing(lines):
     """Line ending --word: move word to start of next line.
-    Skip detachment for short connecting words (for, and, but, or, if,
-    he, she, it, etc.) that introduce parenthetical clauses after dashes.
+    Almost all post-dash words are clause-starters (and, for, but, I, that,
+    yea, behold, etc.) so the break naturally belongs at the dash.
     """
-    # Words that naturally introduce a clause after an em-dash — keep glued
-    _EMDASH_KEEP = {'for', 'and', 'but', 'or', 'if', 'nor', 'yet', 'so',
-                    'he', 'she', 'it', 'we', 'they', 'I', 'who', 'which',
-                    'that', 'as', 'in', 'on', 'to', 'by', 'at', 'of',
-                    'Because', 'because', 'even', 'not', 'no', 'yea', 'nay'}
     result = list(lines)
     i = 0
     while i < len(result) - 1:
-        m = re.match(r'^(.+)--([\w]+)([,;.]?)$', result[i])
+        m = re.match(r'^(.+)--([\w]+[,;.]?)$', result[i])
         if m:
-            word = m.group(1)  # text before --
-            trailing = m.group(2)  # the word after --
-            punct = m.group(3)  # optional trailing punctuation
-            # Keep short connecting words glued to the dash
-            if trailing in _EMDASH_KEEP:
-                pass  # leave as-is
-            else:
-                result[i] = word + '--'
-                result[i + 1] = trailing + punct + ' ' + result[i + 1]
+            result[i] = m.group(1) + '--'
+            result[i + 1] = m.group(2) + ' ' + result[i + 1]
         i += 1
     return result
 
