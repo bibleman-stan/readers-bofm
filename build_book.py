@@ -45,6 +45,7 @@ AICTP_SWAPS = [
 ]
 
 COMPOUND_SWAPS = [
+    ("go to", "go"),  # archaic interjection (only when followed by , or ;)
     ("none other object save it be", "no other purpose except"),
     ("inasmuch as", "to the degree that"), ("Inasmuch as", "To the degree that"),
     ("hither and thither", "this way and that"),
@@ -373,6 +374,10 @@ def apply_swaps(text, swap_list):
             placeholders.append((sentinel, archaic, modern)); continue
         if archaic in ("account", "Account"):
             result = re.sub(r'\b' + re.escape(archaic) + r'\b(?! of\b| for\b)', sentinel, result)
+            placeholders.append((sentinel, archaic, modern)); continue
+        if archaic == "go to" and modern == "go":
+            # Only match the archaic interjection form: "go to," or "go to;"
+            result = re.sub(r'\bgo to(?=[,;])', sentinel, result)
             placeholders.append((sentinel, archaic, modern)); continue
         result = re.sub(r'\b' + re.escape(archaic) + r'\b', sentinel, result)
         placeholders.append((sentinel, archaic, modern))
