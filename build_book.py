@@ -565,6 +565,34 @@ def get_geo_entries(book_id, chapter, verse):
         return []
     return _GEO_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
 
+def _is_geo_fragment(frag, category):
+    """Check if a fragment contains geographically meaningful content.
+
+    Short fragments from ellipsis splitting often capture just names
+    (e.g. 'king Lamoni', 'Ammon') rather than actual geographic language.
+    We require short fragments to contain geographic vocabulary.
+    """
+    GEO_KEYWORDS = {
+        'sea', 'river', 'land', 'wilderness', 'mountain', 'hill', 'valley',
+        'north', 'south', 'east', 'west', 'border', 'borders', 'bordering',
+        'city', 'village', 'narrow', 'strip', 'desolation', 'bountiful',
+        'journey', 'distance', 'day', 'days', 'mile',
+        'water', 'waters', 'flood', 'deep', 'shore', 'seashore',
+        'forest', 'tree', 'trees', 'timber', 'grain', 'fruit',
+        'horse', 'horses', 'chariot', 'chariots', 'flock', 'flocks',
+        'cattle', 'goat', 'elephant', 'serpent', 'bee', 'beast',
+        'heat', 'cold', 'rain', 'drought', 'snow', 'storm',
+        'tent', 'tents', 'dwell', 'possess', 'inheritance', 'inhabit',
+        'place', 'plain', 'plains', 'tower', 'wall', 'gate',
+    }
+    frag_lower = frag.lower()
+    # Long fragments (20+ chars) are likely meaningful enough
+    if len(frag) >= 20:
+        return True
+    # Short fragments must contain a geographic keyword
+    words = set(re.sub(r'[^\w\s]', '', frag_lower).split())
+    return bool(words & GEO_KEYWORDS)
+
 def apply_geo_highlights(line_text, geo_entries):
     """Wrap geographic extract phrases within a line with <span class="geo-ref">.
 
@@ -587,6 +615,9 @@ def apply_geo_highlights(line_text, geo_entries):
         if not fragments:
             fragments = [extract]
         for frag in fragments:
+            # Skip fragments that are just names/context, not geographic content
+            if not _is_geo_fragment(frag, cat):
+                continue
             frag_lower = frag.lower()
             idx = line_lower.find(frag_lower)
             if idx != -1:
