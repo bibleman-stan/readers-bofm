@@ -1996,33 +1996,38 @@
     }, 300);
   });
 
-  // Back to top button
-  var btn = document.getElementById('back-to-top');
-  window.addEventListener('scroll', function() {
-    btn.style.display = window.scrollY > 600 ? 'flex' : 'none';
-  });
-
-  // ---- TOOLBAR COLLAPSE ON SCROLL ----
+  // ---- SCROLL HANDLER (back-to-top + toolbar collapse) ----
+  var backBtn = document.getElementById('back-to-top');
   var toolbar = document.getElementById('reading-toolbar');
   var lastScrollY = 0;
-  var collapseThreshold = 100; // pixels scrolled before collapsing
+  var scrollTicking = false;
+  var scrollDeadZone = 8; // ignore jitter smaller than this
 
   window.addEventListener('scroll', function() {
-    var y = window.scrollY;
-    if (y > collapseThreshold && y > lastScrollY) {
-      // Scrolling down past threshold — collapse
-      toolbar.classList.add('toolbar-collapsed');
-    } else if (y < lastScrollY || y <= collapseThreshold) {
-      // Scrolling up or near the top — expand
-      toolbar.classList.remove('toolbar-collapsed');
+    if (!scrollTicking) {
+      requestAnimationFrame(function() {
+        var y = window.scrollY;
+        // Back-to-top button
+        backBtn.style.display = y > 600 ? 'flex' : 'none';
+        // Toolbar collapse — only act on intentional scrolls
+        var delta = y - lastScrollY;
+        if (y <= 80) {
+          toolbar.classList.remove('toolbar-collapsed');
+        } else if (delta > scrollDeadZone) {
+          toolbar.classList.add('toolbar-collapsed');
+        } else if (delta < -scrollDeadZone) {
+          toolbar.classList.remove('toolbar-collapsed');
+        }
+        lastScrollY = y;
+        scrollTicking = false;
+      });
+      scrollTicking = true;
     }
-    lastScrollY = y;
   }, { passive: true });
 
   // Tap the collapsed toolbar to expand it
   toolbar.addEventListener('click', function(e) {
     if (toolbar.classList.contains('toolbar-collapsed')) {
-      // Only expand if they clicked the panel area, not a control inside it
       var tag = e.target.tagName.toLowerCase();
       if (tag !== 'select' && tag !== 'button' && tag !== 'input' && tag !== 'a') {
         toolbar.classList.remove('toolbar-collapsed');
