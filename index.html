@@ -559,19 +559,37 @@
     border-bottom: 2px solid #d4a843;
   }
 
-  .sources-active .quote-bible {
+  /* Quotations-only mode: show direct quotations, hide allusions */
+  .sources-quotations .quote-bible {
+    text-decoration: overline dotted;
+    text-decoration-color: rgba(107, 163, 214, 0.5);
+    text-decoration-thickness: 2px;
+  }
+  .sources-quotations .quote-allusion {
+    /* hidden in quotations-only mode */
+  }
+
+  /* All-references mode: show both quotations and allusions */
+  .sources-all .quote-bible {
+    text-decoration: overline dotted;
+    text-decoration-color: rgba(107, 163, 214, 0.5);
+    text-decoration-thickness: 2px;
+  }
+  .sources-all .quote-allusion {
+    text-decoration: overline dotted;
+    text-decoration-color: rgba(107, 163, 214, 0.25);
+    text-decoration-thickness: 1px;
+  }
+
+  .sources-quotations .quote-prophet,
+  .sources-all .quote-prophet {
     text-decoration: overline dotted;
     text-decoration-color: rgba(107, 163, 214, 0.4);
     text-decoration-thickness: 2px;
   }
 
-  .sources-active .quote-prophet {
-    text-decoration: overline dotted;
-    text-decoration-color: rgba(107, 163, 214, 0.4);
-    text-decoration-thickness: 2px;
-  }
-
-  .sources-active .quote-frame {
+  .sources-quotations .quote-frame,
+  .sources-all .quote-frame {
     font-weight: normal !important;
     font-style: italic;
     opacity: 0.7;
@@ -622,7 +640,8 @@
     color: #8a7a2a;
   }
 
-  .sources-active [data-source]::after {
+  .sources-quotations [data-source]::after,
+  .sources-all [data-source]::after {
     content: " (" attr(data-source) ")";
     font-size: 0.75em;
     font-style: italic;
@@ -1169,10 +1188,18 @@
       <input type="checkbox" id="spirit-check" onchange="toggleSpiritLayer(this.checked)" style="accent-color: #888;">
       <span>Holy Ghost References <span style="color: #888;">■</span></span>
     </label>
-    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer; margin-bottom: 4px;">
-      <input type="checkbox" id="intertext-check" onchange="toggleIntertext(this.checked)" style="accent-color: #6ba3d6;">
-      <span>Intertextual Quotations <span style="color: #6ba3d6;">■</span></span>
-    </label>
+    <div style="display: flex; align-items: center; gap: 8px; color: #ccc; font-size: 0.85em; margin-bottom: 4px;">
+      <span>Biblical Sources <span style="color: #6ba3d6;">■</span></span>
+      <label style="cursor: pointer; display: flex; align-items: center; gap: 3px;">
+        <input type="radio" name="intertext-mode" value="off" checked onchange="setIntertextMode('off')" style="accent-color: #6ba3d6;"> Off
+      </label>
+      <label style="cursor: pointer; display: flex; align-items: center; gap: 3px;">
+        <input type="radio" name="intertext-mode" value="quotations" onchange="setIntertextMode('quotations')" style="accent-color: #6ba3d6;"> Quotes
+      </label>
+      <label style="cursor: pointer; display: flex; align-items: center; gap: 3px;">
+        <input type="radio" name="intertext-mode" value="all" onchange="setIntertextMode('all')" style="accent-color: #6ba3d6;"> All
+      </label>
+    </div>
     <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer;">
       <input type="checkbox" id="isaiah-check" style="accent-color: #6ba3d6;" disabled>
       <span style="opacity: 0.5;">Isaiah Parallels <span style="color: #6ba3d6;">■</span> <i>(coming soon)</i></span>
@@ -1728,24 +1755,31 @@
   };
 
   window.clearAllLayers = function() {
-    ['deity-check', 'spirit-check', 'intertext-check', 'isaiah-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb) { cb.checked = false; }
     });
-    document.body.classList.remove('show-deity', 'show-spirit', 'sources-active');
+    // Reset intertext radio to "off"
+    var offRadio = document.querySelector('input[name="intertext-mode"][value="off"]');
+    if (offRadio) offRadio.checked = true;
+    setIntertextMode('off');
+    document.body.classList.remove('show-deity', 'show-spirit');
     deityLayerOn = false;
     spiritLayerOn = false;
     removeDeityHighlights();
   };
 
   window.selectAllLayers = function() {
-    ['deity-check', 'spirit-check', 'intertext-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb && !cb.disabled) { cb.checked = true; }
     });
+    // Set intertext radio to "all"
+    var allRadio = document.querySelector('input[name="intertext-mode"][value="all"]');
+    if (allRadio) allRadio.checked = true;
     toggleDeityLayer(true);
     toggleSpiritLayer(true);
-    toggleIntertext(true);
+    setIntertextMode('all');
   };
 
   window.jumpTo = function(id) {
@@ -1760,7 +1794,12 @@
   };
 
   window.toggleEditorial = function(on) { document.body.classList.toggle('editorial-active', on); };
-  window.toggleIntertext = function(on) { document.body.classList.toggle('sources-active', on); };
+  window.setIntertextMode = function(mode) {
+    document.body.classList.remove('sources-quotations', 'sources-all');
+    if (mode === 'quotations') document.body.classList.add('sources-quotations');
+    else if (mode === 'all') document.body.classList.add('sources-all');
+  };
+  window.toggleIntertext = function(on) { window.setIntertextMode(on ? 'all' : 'off'); };
   window.toggleIsaiah = function(on) {};
   window.toggleCovenant = function(on) { document.body.classList.toggle('covenant-active', on); };
   window.toggleComments = function(on) {};

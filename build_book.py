@@ -15,7 +15,7 @@ Output: books/BOOKID.html — a standalone fragment containing just the
 These drop directly into the modular shell's books/ folder.
 """
 
-import re, sys, os
+import re, sys, os, json
 
 # ============================================================================
 # SWAP LEXICON — Single source of truth for all archaic word modernization
@@ -473,12 +473,53 @@ def process_line(line, swap_list):
     return wrap_punctuation(fix_participles(apply_swaps(line, swap_list)))
 
 # ============================================================================
+# INTERTEXT DATA — Hardy biblical references loaded at build time
+# ============================================================================
+
+_INTERTEXT_INDEX = None  # populated by load_intertext()
+
+def load_intertext():
+    """Load the enriched Hardy intertext index (book→chapter→verse→[refs])."""
+    global _INTERTEXT_INDEX
+    intertext_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'hardy_intertext.json')
+    if os.path.exists(intertext_path):
+        with open(intertext_path) as f:
+            _INTERTEXT_INDEX = json.load(f)
+        total = sum(len(vs) for ch in _INTERTEXT_INDEX.values() for vs in ch.values())
+        print(f"Loaded intertext index: {len(_INTERTEXT_INDEX)} books, {total} verse slots")
+    else:
+        print(f"  No intertext data at {intertext_path}, skipping intertext injection")
+        _INTERTEXT_INDEX = {}
+
+def get_intertext(book_id, chapter, verse):
+    """Return list of intertext entries for a given verse, or empty list."""
+    if not _INTERTEXT_INDEX:
+        return []
+    return _INTERTEXT_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
+
+# ============================================================================
 # HTML GENERATION — outputs standalone book fragments
 # ============================================================================
 
-def gen_verse(verse, swap_list):
+def gen_verse(verse, swap_list, book_id=None):
     ref = verse['ref']
     processed = [process_line(l, swap_list) for l in verse['lines']]
+
+    # Check for intertext references on this verse
+    entries = get_intertext(book_id, verse['chapter'], verse['verse']) if book_id else []
+
+    if entries:
+        # Determine highest-priority type: quotation > allusion
+        has_quotation = any(e['type'] == 'quotation' for e in entries)
+        css_class = 'quote-bible' if has_quotation else 'quote-allusion'
+        # Combine all bible refs into data-source attribute
+        sources = '; '.join(e['bible_ref'] for e in entries)
+        # Wrap each line's content in an intertext span
+        wrapped = []
+        for line in processed:
+            wrapped.append(f'<span class="{css_class}" data-source="{sources}">{line}</span>')
+        processed = wrapped
+
     parts = [f'<div class="verse"><span class="verse-num">{ref}</span>']
     for line in processed:
         parts.append(f'  <span class="line">{line}</span>')
@@ -500,7 +541,7 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
         p.append('  <span class="chapter-nav-disabled">End</span>')
     p.append('</div>')
     for v in ch_verses:
-        p.append(gen_verse(v, swap_list))
+        p.append(gen_verse(v, swap_list, book_id=bid))
         p.append('')
     p.append('</div>')
     return '\n'.join(p)
@@ -554,6 +595,7 @@ def main():
 
     os.makedirs(out_dir, exist_ok=True)
     swap_list = build_swap_list()
+    load_intertext()
 
     if args[0] == '--all':
         # Read booklist.txt for all book/file pairs
