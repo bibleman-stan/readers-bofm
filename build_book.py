@@ -26,22 +26,40 @@ import re, sys, os
 # No trailing spaces here — matching is done with regex that handles both
 # mid-line (followed by space) and end-of-line (followed by newline/EOL) cases.
 AICTP_SWAPS = [
+    # "that" variants (longest first)
     ("And now it came to pass that", "And now"),
     ("Now, it came to pass that", "Now,"),
     ("Now it came to pass that", "Now"),
     ("Behold, it came to pass that", "Then behold,"),
     ("Wherefore, it came to pass that", "And so"),
+    ("Wherefore it came to pass that", "And so"),
     ("Therefore it came to pass that", "Therefore"),
     ("But it came to pass that", "But then"),
     ("For it came to pass that", "For then"),
     ("And it came to pass that", "And then"),
     ("and it came to pass that", "and then"),
-    ("And it came to pass,", "And then,"),
-    ("And it came to pass", "And then"),
-    ("and it came to pass", "and then"),
     ("thus it came to pass that", "thus"),
     ("before it came to pass that", "before"),
     ("behold it came to pass that", "then behold"),
+    # Bare / comma variants (no "that")
+    ("And now it came to pass,", "And now,"),
+    ("And now it came to pass", "And now"),
+    ("But it came to pass,", "But then,"),
+    ("But it came to pass", "But then"),
+    ("Now it came to pass", "Now"),
+    ("For it came to pass", "For then"),
+    ("thus it came to pass,", "thus,"),
+    ("Behold, it came to pass", "Then behold,"),
+    ("behold it came to pass", "then behold"),
+    ("Therefore it came to pass", "Therefore"),
+    ("before it came to pass", "before"),
+    ("And it came to pass,", "And then,"),
+    ("And it came to pass", "And then"),
+    ("and it came to pass", "and then"),
+    # Bare mid-sentence (no prefix)
+    ("it came to pass that", "then"),
+    ("it came to pass,", "then,"),
+    ("it came to pass", "then"),
 ]
 
 COMPOUND_SWAPS = [
