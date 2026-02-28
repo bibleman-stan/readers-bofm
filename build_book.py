@@ -476,6 +476,37 @@ def process_line(line, swap_list):
 # INTERTEXT DATA — Hardy biblical references loaded at build time
 # ============================================================================
 
+# Short abbreviations for bible books (displayed inline after verses)
+BIBLE_ABBREV = {
+    'Genesis': 'Gen', 'Exodus': 'Exo', 'Leviticus': 'Lev', 'Numbers': 'Num',
+    'Deuteronomy': 'Deu', 'Joshua': 'Jos', 'Judges': 'Jdg', 'Ruth': 'Rth',
+    '1 Samuel': '1Sa', '2 Samuel': '2Sa', '1 Kings': '1Ki', '2 Kings': '2Ki',
+    '1 Chronicles': '1Ch', '2 Chronicles': '2Ch', 'Ezra': 'Ezr', 'Nehemiah': 'Neh',
+    'Esther': 'Est', 'Job': 'Job', 'Psalms': 'Psa', 'Proverbs': 'Pro',
+    'Ecclesiastes': 'Ecc', 'Song of Solomon': 'SoS', 'Isaiah': 'Isa',
+    'Jeremiah': 'Jer', 'Lamentations': 'Lam', 'Ezekiel': 'Eze', 'Daniel': 'Dan',
+    'Hosea': 'Hos', 'Joel': 'Joe', 'Amos': 'Amo', 'Obadiah': 'Oba',
+    'Jonah': 'Jon', 'Micah': 'Mic', 'Nahum': 'Nah', 'Habakkuk': 'Hab',
+    'Zephaniah': 'Zep', 'Haggai': 'Hag', 'Zechariah': 'Zec', 'Malachi': 'Mal',
+    'Matthew': 'Mat', 'Mark': 'Mrk', 'Luke': 'Luk', 'John': 'Jhn',
+    'Acts': 'Act', 'Romans': 'Rom', '1 Corinthians': '1Co', '2 Corinthians': '2Co',
+    'Galatians': 'Gal', 'Ephesians': 'Eph', 'Philippians': 'Php',
+    'Colossians': 'Col', '1 Thessalonians': '1Th', '2 Thessalonians': '2Th',
+    '1 Timothy': '1Ti', '2 Timothy': '2Ti', 'Titus': 'Tit', 'Philemon': 'Phm',
+    'Hebrews': 'Heb', 'James': 'Jas', '1 Peter': '1Pe', '2 Peter': '2Pe',
+    '1 John': '1Jn', '2 John': '2Jn', '3 John': '3Jn', 'Jude': 'Jud',
+    'Revelation': 'Rev',
+}
+# Sort longest-first so "1 Corinthians" matches before "1 Co..." etc.
+_SORTED_BIBLE = sorted(BIBLE_ABBREV.keys(), key=len, reverse=True)
+
+def shorten_bible_ref(ref):
+    """Shorten 'Isaiah 40.3' → 'Isa 40.3', 'Matthew 3.3+' → 'Mat 3.3+'."""
+    for full in _SORTED_BIBLE:
+        if ref.startswith(full):
+            return BIBLE_ABBREV[full] + ref[len(full):]
+    return ref
+
 _INTERTEXT_INDEX = None  # populated by load_intertext()
 
 def load_intertext():
@@ -512,12 +543,16 @@ def gen_verse(verse, swap_list, book_id=None):
         # Determine highest-priority type: quotation > allusion
         has_quotation = any(e['type'] == 'quotation' for e in entries)
         css_class = 'quote-bible' if has_quotation else 'quote-allusion'
-        # Combine all bible refs into data-source attribute
-        sources = '; '.join(e['bible_ref'] for e in entries)
-        # Wrap each line's content in an intertext span
+        # Combine all bible refs into data-source attribute (abbreviated)
+        sources = '; '.join(shorten_bible_ref(e['bible_ref']) for e in entries)
+        # Wrap each line in the intertext span (for coloring),
+        # but only put data-source on the LAST line (reference shows once per verse)
         wrapped = []
-        for line in processed:
-            wrapped.append(f'<span class="{css_class}" data-source="{sources}">{line}</span>')
+        for i, line in enumerate(processed):
+            if i == len(processed) - 1:
+                wrapped.append(f'<span class="{css_class}" data-source="{sources}">{line}</span>')
+            else:
+                wrapped.append(f'<span class="{css_class}">{line}</span>')
         processed = wrapped
 
     parts = [f'<div class="verse"><span class="verse-num">{ref}</span>']

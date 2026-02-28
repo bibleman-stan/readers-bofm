@@ -573,9 +573,7 @@
 
   /* Quotations-only mode: show direct quotations, hide allusions */
   .sources-quotations .quote-bible {
-    text-decoration: overline dotted;
-    text-decoration-color: rgba(107, 163, 214, 0.5);
-    text-decoration-thickness: 2px;
+    color: #7cb8e4;
   }
   .sources-quotations .quote-allusion {
     /* hidden in quotations-only mode */
@@ -583,21 +581,24 @@
 
   /* All-references mode: show both quotations and allusions */
   .sources-all .quote-bible {
-    text-decoration: overline dotted;
-    text-decoration-color: rgba(107, 163, 214, 0.5);
-    text-decoration-thickness: 2px;
+    color: #7cb8e4;
   }
   .sources-all .quote-allusion {
-    text-decoration: overline dotted;
-    text-decoration-color: rgba(107, 163, 214, 0.25);
-    text-decoration-thickness: 1px;
+    color: #8aabbf;
+  }
+
+  /* Light mode overrides */
+  body.light-mode .sources-quotations .quote-bible,
+  body.light-mode .sources-all .quote-bible {
+    color: #2a6496;
+  }
+  body.light-mode .sources-all .quote-allusion {
+    color: #5a8aaa;
   }
 
   .sources-quotations .quote-prophet,
   .sources-all .quote-prophet {
-    text-decoration: overline dotted;
-    text-decoration-color: rgba(107, 163, 214, 0.4);
-    text-decoration-thickness: 2px;
+    color: #7cb8e4;
   }
 
   .sources-quotations .quote-frame,
@@ -654,13 +655,13 @@
 
   .sources-quotations [data-source]::after,
   .sources-all [data-source]::after {
-    content: " (" attr(data-source) ")";
-    font-size: 0.75em;
+    content: "\2014\00a0" attr(data-source);
+    font-size: 0.7em;
     font-style: italic;
     font-weight: normal !important;
     text-decoration: none;
-    display: inline-block;
-    color: rgba(107, 163, 214, 0.7);
+    display: inline;
+    color: rgba(107, 163, 214, 0.5);
   }
 
   /* Intro section styles */
