@@ -21,6 +21,29 @@ import re, sys, os
 # SWAP LEXICON — Single source of truth for all archaic word modernization
 # ============================================================================
 
+# AICTP (wayyehi) swaps — "it came to pass" → contextual modern equivalents
+# These are handled specially in apply_swaps via regex (not word-boundary).
+# No trailing spaces here — matching is done with regex that handles both
+# mid-line (followed by space) and end-of-line (followed by newline/EOL) cases.
+AICTP_SWAPS = [
+    ("And now it came to pass that", "And now"),
+    ("Now, it came to pass that", "Now,"),
+    ("Now it came to pass that", "Now"),
+    ("Behold, it came to pass that", "Then behold,"),
+    ("Wherefore, it came to pass that", "And so"),
+    ("Therefore it came to pass that", "Therefore"),
+    ("But it came to pass that", "But then"),
+    ("For it came to pass that", "For then"),
+    ("And it came to pass that", "And then"),
+    ("and it came to pass that", "and then"),
+    ("And it came to pass,", "And then,"),
+    ("And it came to pass", "And then"),
+    ("and it came to pass", "and then"),
+    ("thus it came to pass that", "thus"),
+    ("before it came to pass that", "before"),
+    ("behold it came to pass that", "then behold"),
+]
+
 COMPOUND_SWAPS = [
     ("none other object save it be", "no other purpose except"),
     ("inasmuch as", "to the degree that"), ("Inasmuch as", "To the degree that"),
@@ -322,7 +345,7 @@ def parse_verses(filepath):
     return verses
 
 def build_swap_list():
-    s = list(COMPOUND_SWAPS) + list(SIMPLE_SWAPS)
+    s = list(AICTP_SWAPS) + list(COMPOUND_SWAPS) + list(SIMPLE_SWAPS)
     s.sort(key=lambda x: len(x[0]), reverse=True)
     return s
 
@@ -331,6 +354,13 @@ def apply_swaps(text, swap_list):
     result = text
     for i, (archaic, modern) in enumerate(swap_list):
         sentinel = f"\x00{i}\x00"
+        # AICTP patterns: literal match, not word-boundary
+        # Match the formula followed by space or end-of-line, preserve spacing
+        if 'it came to pass' in archaic:
+            if archaic in result:
+                result = result.replace(archaic, sentinel)
+                placeholders.append((sentinel, archaic, modern))
+            continue
         if archaic.lower() == "meet":
             for prefix in [r'(?<=\bis )', r'(?<=\bwas )', r'(?<=\bbe )']:
                 result = re.sub(prefix + re.escape(archaic) + r'\b', sentinel, result)
@@ -361,14 +391,14 @@ def apply_swaps(text, swap_list):
             elif len(stem) <= 2: mf = stem + 'es'
             else: mf = stem + 's'
             print(f"  WARNING: Unknown -eth '{word}' → '{mf}'", file=sys.stderr)
-        idx = len(placeholders); sent = f"\x00{idx}\x00"
+        idx = len(placeholders); sent = f"\x00E{idx}\x00"
         placeholders.append((sent, word, mf)); return sent
     result = re.sub(r'\b[a-z]+eth\b', lambda m: eth_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
     # Words that follow "did" but are NOT verbs — skip these
     DID_SKIP = {'my', 'his', 'her', 'their', 'our', 'your', 'its', 'the', 'a', 'an',
                 'not', 'also', 'all', 'both', 'even', 'never', 'once', 'then', 'thus',
-                'it', 'they', 'she', 'he', 'we', 'so', 'as', 'again', 'frankly',
+                'i', 'it', 'they', 'she', 'he', 'we', 'so', 'as', 'again', 'frankly',
                 'still', 'do', 'molten', 'this', 'that', 'these', 'those'}
 
     def did_verb_replace(m):
@@ -379,7 +409,7 @@ def apply_swaps(text, swap_list):
         elif verb.endswith('e'): past = verb + 'd'
         elif verb.endswith('y') and len(verb)>1 and verb[-2] not in 'aeiou': past = verb[:-1] + 'ied'
         else: past = verb + 'ed'
-        idx = len(placeholders); sent = f"\x00{idx}\x00"
+        idx = len(placeholders); sent = f"\x00D{idx}\x00"
         placeholders.append((sent, full, past)); return sent
     result = re.sub(r'\bdid (\w+)\b', lambda m: did_verb_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
@@ -387,7 +417,7 @@ def apply_swaps(text, swap_list):
         full, ve = m.group(0), m.group(1)
         base = ve[:-3] if ve.endswith('est') else (ve[:-2] if ve.endswith('st') else None)
         if not base: return full
-        idx = len(placeholders); sent = f"\x00{idx}\x00"
+        idx = len(placeholders); sent = f"\x00T{idx}\x00"
         placeholders.append((sent, full, ("You " if full[0]=='T' else "you ") + base)); return sent
     result = re.sub(r'\b[Tt]hou (\w+est)\b', lambda m: thou_est_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
@@ -408,7 +438,9 @@ def wrap_punctuation(text):
     for part in parts:
         if part.startswith('<'): result.append(part)
         else:
-            for ch in [',',';',':','.','!','?','\u2014','(',')','\'','\u2018','\u2019']:
+            # Em-dashes get a separate class so they can insert space when hidden
+            part = part.replace('\u2014', '<span class="punct punct-dash">\u2014</span>')
+            for ch in [',',';',':','.','!','?','(',')','\'','\u2018','\u2019']:
                 part = part.replace(ch, f'<span class="punct">{ch}</span>')
             part = re.sub(r'(?<=\s)-(?=\s)', '<span class="punct">-</span>', part)
             result.append(part)

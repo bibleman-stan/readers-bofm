@@ -157,14 +157,29 @@ SPEECH_NEAR_PAT = re.compile(r'(said|saith|spake|spoke|say |says )')
 # ============================================================
 
 def m0_emdash_trailing(lines):
-    """Line ending --word: move word to start of next line."""
+    """Line ending --word: move word to start of next line.
+    Skip detachment for short connecting words (for, and, but, or, if,
+    he, she, it, etc.) that introduce parenthetical clauses after dashes.
+    """
+    # Words that naturally introduce a clause after an em-dash — keep glued
+    _EMDASH_KEEP = {'for', 'and', 'but', 'or', 'if', 'nor', 'yet', 'so',
+                    'he', 'she', 'it', 'we', 'they', 'I', 'who', 'which',
+                    'that', 'as', 'in', 'on', 'to', 'by', 'at', 'of',
+                    'Because', 'because', 'even', 'not', 'no', 'yea', 'nay'}
     result = list(lines)
     i = 0
     while i < len(result) - 1:
-        m = re.match(r'^(.+)--([\w]+[,;.]?)$', result[i])
+        m = re.match(r'^(.+)--([\w]+)([,;.]?)$', result[i])
         if m:
-            result[i] = m.group(1) + '--'
-            result[i + 1] = m.group(2) + ' ' + result[i + 1]
+            word = m.group(1)  # text before --
+            trailing = m.group(2)  # the word after --
+            punct = m.group(3)  # optional trailing punctuation
+            # Keep short connecting words glued to the dash
+            if trailing in _EMDASH_KEEP:
+                pass  # leave as-is
+            else:
+                result[i] = word + '--'
+                result[i + 1] = trailing + punct + ' ' + result[i + 1]
         i += 1
     return result
 
@@ -552,9 +567,14 @@ def m11_speech_frame(lines):
 _IN_GERUND_PAT = re.compile(r'^(.{15,}?)\s+(in\s+\w+ing\b.+)$')
 
 def m12_in_gerund(lines):
-    """Complete phrase + 'in [gerund]' → split before 'in'."""
+    """Complete phrase + 'in [gerund]' → split before 'in'.
+    Only fires when total line is >65 chars (v8: relaxed for wrap-indent).
+    """
     result = []
     for line in lines:
+        if len(line) <= 65:
+            result.append(line)
+            continue
         m = _IN_GERUND_PAT.match(line)
         if m and len(m.group(2)) >= 20:
             result.append(m.group(1))
@@ -816,7 +836,8 @@ def m18_list_stacking(lines):
 
 PIPELINE = [
     ('M0:  emdash trailing',      m0_emdash_trailing),
-    ('M1:  AICTP isolation',      m1_aictp),
+    # M1 disabled in v8c: AICTP now handled as swap in build_book.py
+    # ('M1:  AICTP isolation',      m1_aictp),
     ('M2:  behold hinge',         m2_behold_hinge),
     ('M3:  yea trailing',         m3_yea_trailing),
     ('M4:  insomuch split',       m4_insomuch),

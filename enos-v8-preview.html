@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enos — v8 Preview</title>
+<title>Enos — v8d Preview (AICTP as swap)</title>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -107,8 +107,22 @@
   body.continuous .verse-num { display: none; }
   body.continuous .verse { margin-bottom: 2px; }
 
-  /* Mode: hide punct */
-  body.hide-punct .punct { opacity: 0; }
+  /* Mode: hide punct — collapse characters, preserve surrounding space */
+  body.hide-punct .punct {
+    font-size: 0;
+    letter-spacing: 0;
+    display: inline;
+  }
+  /* Em-dashes need a thin space when hidden, otherwise words smash together */
+  body.hide-punct .punct-dash {
+    font-size: 0;
+    word-spacing: 0.3em;
+  }
+  body.hide-punct .punct-dash::after {
+    content: ' ';
+    font-size: var(--font-size);
+    word-spacing: normal;
+  }
 
   /* Mode: study (show verse nums, normal spacing) */
   body.study .verse-num { display: inline; }
@@ -122,7 +136,7 @@
 <body>
 
 <div class="preview-toolbar">
-  <h2>Enos — v8 reformatter preview</h2>
+  <h2>Enos — v8d preview (AICTP as swap + all fixes)</h2>
   <div class="controls">
     <button onclick="toggleMode('continuous')" id="btn-continuous">Continuous</button>
     <button onclick="toggleMode('hide-punct')" id="btn-hide-punct">Hide Punct</button>
@@ -140,11 +154,11 @@
   <span class="chapter-nav-disabled">End</span>
 </div>
 <div class="verse"><span class="verse-num">1:1</span>
-  <span class="line">Behold<span class="punct">,</span> it came to pass that</span>
-  <span class="line">I<span class="punct">,</span> Enos<span class="punct">,</span> knowing my father that he was a just man<span class="punct">—</span></span>
-  <span class="line">for he taught me in his language<span class="punct">,</span></span>
-  <span class="line">and also in the nurture and admonition of the Lord<span class="punct">—</span></span>
-  <span class="line">and blessed be the name of my God for it<span class="punct">—</span></span>
+  <span class="line"><span class="swap" data-orig="Behold, it came to pass that" data-mod="Then behold,">Behold<span class="punct">,</span> it came to pass that</span></span>
+  <span class="line">I<span class="punct">,</span> Enos<span class="punct">,</span> knowing my father that he was a just man<span class="punct punct-dash">—</span>for</span>
+  <span class="line">he taught me in his language<span class="punct">,</span></span>
+  <span class="line">and also in the nurture and admonition of the Lord<span class="punct punct-dash">—</span>and</span>
+  <span class="line">blessed be the name of my God for it<span class="punct punct-dash">—</span></span>
 </div>
 
 <div class="verse"><span class="verse-num">1:2</span>
@@ -195,17 +209,16 @@
 </div>
 
 <div class="verse"><span class="verse-num">1:9</span>
-  <span class="line">Now<span class="punct">,</span> it came to pass that when I had heard these words</span>
+  <span class="line"><span class="swap" data-orig="Now, it came to pass that" data-mod="Now,">Now<span class="punct">,</span> it came to pass that</span> when I had heard these words</span>
   <span class="line">I began to feel a desire for the welfare of my <span class="swap" data-orig="brethren" data-mod="brothers">brethren</span><span class="punct">,</span> the Nephites<span class="punct">;</span></span>
-  <span class="line"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span><span class="punct">,</span> I did pour out my whole soul <span class="swap" data-orig="unto" data-mod="to">unto</span> God for them<span class="punct">.</span></span>
+  <span class="line"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span><span class="punct">,</span> I <span class="swap" data-orig="did pour" data-mod="poured">did pour</span> out my whole soul <span class="swap" data-orig="unto" data-mod="to">unto</span> God for them<span class="punct">.</span></span>
 </div>
 
 <div class="verse"><span class="verse-num">1:10</span>
   <span class="line">And while I was thus struggling in the spirit<span class="punct">,</span></span>
   <span class="line">behold<span class="punct">,</span> the voice of the Lord came into my mind again<span class="punct">,</span> saying<span class="punct">:</span></span>
   <span class="line">I will visit <span class="swap" data-orig="thy" data-mod="your">thy</span> <span class="swap" data-orig="brethren" data-mod="brothers">brethren</span></span>
-  <span class="line">according to their diligence</span>
-  <span class="line">in keeping my commandments<span class="punct">.</span></span>
+  <span class="line">according to their diligence in keeping my commandments<span class="punct">.</span></span>
   <span class="line">I have given <span class="swap" data-orig="unto" data-mod="to">unto</span> them this land<span class="punct">,</span></span>
   <span class="line">and it is a holy land<span class="punct">;</span></span>
   <span class="line">and I curse it not <span class="swap" data-orig="save it be" data-mod="unless">save it be</span> for the cause of iniquity<span class="punct">;</span></span>
@@ -221,20 +234,20 @@
 </div>
 
 <div class="verse"><span class="verse-num">1:12</span>
-  <span class="line">And it came to pass that</span>
+  <span class="line"><span class="swap" data-orig="And it came to pass that" data-mod="And then">And it came to pass that</span></span>
   <span class="line">after I had prayed and labored with all diligence<span class="punct">,</span></span>
   <span class="line">the Lord said <span class="swap" data-orig="unto" data-mod="to">unto</span> me<span class="punct">:</span></span>
   <span class="line">I will grant <span class="swap" data-orig="unto" data-mod="to">unto</span> <span class="swap" data-orig="thee" data-mod="you">thee</span> according to <span class="swap" data-orig="thy" data-mod="your">thy</span> desires<span class="punct">,</span> because of <span class="swap" data-orig="thy" data-mod="your">thy</span> faith<span class="punct">.</span></span>
 </div>
 
 <div class="verse"><span class="verse-num">1:13</span>
-  <span class="line">And now behold<span class="punct">,</span> this was the desire which I desired of him<span class="punct">—</span></span>
-  <span class="line">that if it should so be<span class="punct">,</span> that my people<span class="punct">,</span> the Nephites<span class="punct">,</span> should fall into transgression<span class="punct">,</span></span>
+  <span class="line">And now behold<span class="punct">,</span> this was the desire which I desired of him<span class="punct punct-dash">—</span>that</span>
+  <span class="line">if it should so be<span class="punct">,</span> that my people<span class="punct">,</span> the Nephites<span class="punct">,</span> should fall into transgression<span class="punct">,</span></span>
   <span class="line">and by any means be destroyed<span class="punct">,</span> and the Lamanites should not be destroyed<span class="punct">,</span></span>
   <span class="line">that the Lord God would preserve a record of my people<span class="punct">,</span> the Nephites<span class="punct">;</span></span>
   <span class="line">even if it so be by the power of his holy arm<span class="punct">,</span></span>
   <span class="line">that it might be brought forth at some future day <span class="swap" data-orig="unto" data-mod="to">unto</span> the Lamanites<span class="punct">,</span></span>
-  <span class="line">that<span class="punct">,</span> perhaps<span class="punct">,</span> they might be brought <span class="swap" data-orig="unto" data-mod="to">unto</span> salvation<span class="punct">—</span></span>
+  <span class="line">that<span class="punct">,</span> perhaps<span class="punct">,</span> they might be brought <span class="swap" data-orig="unto" data-mod="to">unto</span> salvation<span class="punct punct-dash">—</span></span>
 </div>
 
 <div class="verse"><span class="verse-num">1:14</span>
@@ -258,7 +271,7 @@
 </div>
 
 <div class="verse"><span class="verse-num">1:16</span>
-  <span class="line">And I had faith<span class="punct">,</span> and I did cry <span class="swap" data-orig="unto" data-mod="to">unto</span> God</span>
+  <span class="line">And I had faith<span class="punct">,</span> and I <span class="swap" data-orig="did cry" data-mod="cried">did cry</span> <span class="swap" data-orig="unto" data-mod="to">unto</span> God</span>
   <span class="line">that he would preserve the records<span class="punct">;</span></span>
   <span class="line">and he covenanted with me</span>
   <span class="line">that he would bring them forth <span class="swap" data-orig="unto" data-mod="to">unto</span> the Lamanites in his own due time<span class="punct">.</span></span>
@@ -266,7 +279,7 @@
 
 <div class="verse"><span class="verse-num">1:17</span>
   <span class="line">And I<span class="punct">,</span> Enos<span class="punct">,</span> knew it would be according to the covenant which he had made<span class="punct">;</span></span>
-  <span class="line"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span> my soul did rest<span class="punct">.</span></span>
+  <span class="line"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span> my soul <span class="swap" data-orig="did rest" data-mod="rested">did rest</span><span class="punct">.</span></span>
 </div>
 
 <div class="verse"><span class="verse-num">1:18</span>
@@ -277,33 +290,32 @@
 </div>
 
 <div class="verse"><span class="verse-num">1:19</span>
-  <span class="line">And now it came to pass that</span>
+  <span class="line"><span class="swap" data-orig="And now it came to pass that" data-mod="And now">And now it came to pass that</span></span>
   <span class="line">I<span class="punct">,</span> Enos<span class="punct">,</span> went about among the people of Nephi<span class="punct">,</span></span>
   <span class="line">prophesying of things to come<span class="punct">,</span></span>
   <span class="line">and testifying of the things which I had heard and seen<span class="punct">.</span></span>
 </div>
 
 <div class="verse"><span class="verse-num">1:20</span>
-  <span class="line">And I bear record that the people of Nephi did seek diligently</span>
+  <span class="line">And I bear record that the people of Nephi <span class="swap" data-orig="did seek" data-mod="sought">did seek</span> diligently</span>
   <span class="line">to restore the Lamanites <span class="swap" data-orig="unto" data-mod="to">unto</span> the true faith in God<span class="punct">.</span></span>
   <span class="line">But our labors were vain<span class="punct">;</span></span>
   <span class="line">their hatred was fixed<span class="punct">,</span></span>
   <span class="line">and they were led by their evil nature</span>
   <span class="line">that they became wild<span class="punct">,</span> and ferocious<span class="punct">,</span></span>
-  <span class="line">and a blood<span class="punct">-</span>thirsty people<span class="punct">,</span> full of idolatry and filthiness<span class="punct">;</span></span>
+  <span class="line">and a blood-thirsty people<span class="punct">,</span> full of idolatry and filthiness<span class="punct">;</span></span>
   <span class="line">feeding upon beasts of prey<span class="punct">;</span></span>
   <span class="line">dwelling in tents<span class="punct">,</span> and wandering about in the wilderness</span>
   <span class="line">with a short skin girdle about their loins and their heads shaven<span class="punct">;</span></span>
   <span class="line">and their skill was in the bow<span class="punct">,</span></span>
   <span class="line">and in the cimeter<span class="punct">,</span></span>
   <span class="line">and the ax<span class="punct">.</span></span>
-  <span class="line">And many of them did eat nothing save it was raw meat<span class="punct">;</span></span>
+  <span class="line">And many of them <span class="swap" data-orig="did eat" data-mod="ate">did eat</span> nothing save it was raw meat<span class="punct">;</span></span>
   <span class="line">and they were continually seeking to destroy us<span class="punct">.</span></span>
 </div>
 
 <div class="verse"><span class="verse-num">1:21</span>
-  <span class="line">And it came to pass</span>
-  <span class="line">that the people of Nephi did till the land<span class="punct">,</span></span>
+  <span class="line"><span class="swap" data-orig="And it came to pass that" data-mod="And then">And it came to pass that</span> the people of Nephi <span class="swap" data-orig="did till" data-mod="tilled">did till</span> the land<span class="punct">,</span></span>
   <span class="line">and raise all manner of grain<span class="punct">,</span> and of fruit<span class="punct">,</span></span>
   <span class="line">and flocks of herds<span class="punct">,</span> and flocks of all manner of cattle of every kind<span class="punct">,</span></span>
   <span class="line">and goats<span class="punct">,</span></span>
@@ -324,7 +336,7 @@
   <span class="line">and destructions<span class="punct">,</span></span>
   <span class="line">and continually reminding them of death<span class="punct">,</span></span>
   <span class="line">and the duration of eternity<span class="punct">,</span> and the judgments and the power of God<span class="punct">,</span></span>
-  <span class="line">and all these things<span class="punct">—</span>stirring them up continually</span>
+  <span class="line">and all these things<span class="punct punct-dash">—</span>stirring them up continually</span>
   <span class="line">to keep them in the fear of the Lord<span class="punct">.</span></span>
   <span class="line">I say there was nothing short of these things<span class="punct">,</span></span>
   <span class="line">and <span class="swap" data-orig="exceedingly" data-mod="very">exceedingly</span> great plainness of speech<span class="punct">,</span></span>
@@ -337,8 +349,7 @@
 </div>
 
 <div class="verse"><span class="verse-num">1:25</span>
-  <span class="line">And it came to pass</span>
-  <span class="line">that I began to be old<span class="punct">,</span></span>
+  <span class="line"><span class="swap" data-orig="And it came to pass that" data-mod="And then">And it came to pass that</span> I began to be old<span class="punct">,</span></span>
   <span class="line">and an hundred and seventy and nine years had passed away</span>
   <span class="line">from the time that our father Lehi left Jerusalem<span class="punct">.</span></span>
 </div>
@@ -367,7 +378,14 @@
 </div>
 
 </div>
+
 </div>
+
+
+
+
+
+
 
 <script>
 function toggleMode(cls) {
@@ -381,7 +399,15 @@ function toggleAid() {
   btn.classList.toggle('active');
   var on = document.body.classList.contains('aid-active');
   document.querySelectorAll('.swap').forEach(function(el) {
-    el.textContent = on ? el.getAttribute('data-mod') : el.getAttribute('data-orig');
+    // Save original innerHTML on first toggle so we can restore punct spans
+    if (!el.hasAttribute('data-orig-html')) {
+      el.setAttribute('data-orig-html', el.innerHTML);
+    }
+    if (on) {
+      el.textContent = el.getAttribute('data-mod');
+    } else {
+      el.innerHTML = el.getAttribute('data-orig-html');
+    }
   });
 }
 </script>
