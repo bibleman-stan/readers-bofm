@@ -1711,8 +1711,10 @@
 
   // ---- CHAPTER PICKER (book+chapter in one action) ----
   var pendingBookId = null;
+  var pickerOpen = false;
 
   window.onBookSelectChange = function(bookId, selectEl) {
+    if (pickerOpen) return; // guard against re-entrant calls from dropdown reset
     var meta = bookMeta[bookId];
     if (!meta) return;
     // Single-chapter books: navigate directly, no picker needed
@@ -1722,12 +1724,12 @@
     }
     // If selecting the same book we're already on, just show the regular nav grid
     if (bookId === currentBook) {
-      // Reset dropdown to current book (it already matches)
       toggleNav();
       return;
     }
     // Show chapter picker popup
     pendingBookId = bookId;
+    pickerOpen = true;
     var title = document.getElementById('chapter-picker-title');
     title.textContent = meta.name + ' — choose chapter';
     var grid = document.getElementById('chapter-picker-grid');
@@ -1738,8 +1740,10 @@
         btn.className = 'grid-btn';
         btn.textContent = ch;
         btn.onclick = function() {
+          var targetBook = pendingBookId;
+          var targetCh = ch;
           closeChapterPicker();
-          switchBook(pendingBookId, ch);
+          switchBook(targetBook, targetCh);
           return false;
         };
         grid.appendChild(btn);
@@ -1752,7 +1756,9 @@
   window.closeChapterPicker = function() {
     document.getElementById('chapter-picker-overlay').style.display = 'none';
     document.getElementById('chapter-picker').style.display = 'none';
-    // Reset dropdown back to current book since user cancelled or picked
+    pickerOpen = false;
+    // Reset dropdown back to current book (won't re-trigger due to pickerOpen guard above being false,
+    // but onBookSelectChange checks bookId === currentBook anyway)
     ['book-select', 'toolbar-book-select', 'toolbar-book-select-study'].forEach(function(id) {
       var sel = document.getElementById(id);
       if (sel) sel.value = currentBook;
@@ -1760,7 +1766,7 @@
   };
 
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeChapterPicker();
+    if (e.key === 'Escape' && pickerOpen) closeChapterPicker();
   });
 
   function loadBook(bookId, callback) {
