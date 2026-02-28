@@ -478,7 +478,7 @@
     "extracted_phrase": null,
     "match_type": "thematic",
     "already_matched": false,
-    "notes": ""
+    "notes": "echo: 'evil continually' (only 2 words, too short for verbal match)"
   },
   {
     "bible_ref": "Genesis 6.5",
@@ -491,7 +491,7 @@
     "extracted_phrase": null,
     "match_type": "thematic",
     "already_matched": false,
-    "notes": ""
+    "notes": "echo: 'evil continually' (only 2 words, too short for verbal match)"
   },
   {
     "bible_ref": "Genesis 10.9",
@@ -527,10 +527,10 @@
     "bom_verse": 22,
     "kjv_text": "And they said, Go to, let us build us a city and a tower, whose top may reach unto heaven; and let us make us a name, lest we be scattered abroad upon the face of the whole earth.",
     "bom_text": "It also spake a few words concerning his fathers. And his first parents came out from the tower, at the time the Lord confounded the language of the people; and the severity of the Lord fell upon them according to his judgments, which are just; and their bones lay scattered in the land northward.",
-    "extracted_phrase": null,
-    "match_type": "thematic",
+    "extracted_phrase": "the Lord confounded the language of the people",
+    "match_type": "verbal",
     "already_matched": false,
-    "notes": ""
+    "notes": "echoes Genesis 11 language confusion narrative"
   },
   {
     "bible_ref": "Genesis 11.4-8",
@@ -540,7 +540,7 @@
     "bom_verse": 17,
     "kjv_text": "And they said, Go to, let us build us a city and a tower, whose top may reach unto heaven; and let us make us a name, lest we be scattered abroad upon the face of the whole earth.",
     "bom_text": "Now after Mosiah had finished translating these records, behold, it gave an account of the people who were destroyed, from the time that they were destroyed back to the building of the great tower, at the time the Lord confounded the language of the people and they were scattered abroad upon the face of all the earth, yea, and even from that time back until the creation of Adam.",
-    "extracted_phrase": "scattered abroad upon the face of",
+    "extracted_phrase": "scattered abroad upon the face of all the earth",
     "match_type": "verbal",
     "already_matched": false,
     "notes": ""
@@ -579,10 +579,10 @@
     "bom_verse": 42,
     "kjv_text": "And I will make of thee a great nation, and I will bless thee, and make thy name great; and thou shalt be a blessing:",
     "bom_text": "And when thou hast done this thou shalt go at the head of them down into the valley which is northward. And there will I meet thee, and I will go before thee into a land which is choice above all the lands of the earth.",
-    "extracted_phrase": "And I will",
-    "match_type": "verbal",
+    "extracted_phrase": null,
+    "match_type": "thematic",
     "already_matched": false,
-    "notes": ""
+    "notes": "too generic: 'And I will' is common. Thematic echo of divine promise and covenant."
   },
   {
     "bible_ref": "Genesis 14.18-20",
@@ -605,10 +605,10 @@
     "bom_verse": 32,
     "kjv_text": "And blessed be the most high God, which hath delivered thine enemies into thy hand. And he gave him tithes of all.",
     "bom_text": "Yea, they did cry: Hosanna to the Most High God. And they did cry: Blessed be the name of the Lord God Almighty, the Most High God.",
-    "extracted_phrase": "blessed be the",
+    "extracted_phrase": "Blessed be...the Most High God",
     "match_type": "verbal",
     "already_matched": false,
-    "notes": ""
+    "notes": "echoes 'blessed be the most high God'"
   },
   {
     "bible_ref": "Genesis 15.6",
@@ -618,10 +618,10 @@
     "bom_verse": 7,
     "kjv_text": "And he believed in the Lord; and he counted it to him for righteousness.",
     "bom_text": "For behold, it is not counted unto him for righteousness.",
-    "extracted_phrase": "to him for righteousness.",
+    "extracted_phrase": "counted unto him for righteousness",
     "match_type": "verbal",
     "already_matched": false,
-    "notes": ""
+    "notes": "includes the key verb 'counted'"
   },
   {
     "bible_ref": "Genesis 15.13, 16",
