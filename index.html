@@ -489,7 +489,7 @@
     border-color: #c0c5cc !important;
   }
 
-  body.light-mode #toolbar-book-select, body.light-mode #toolbar-book-select-study {
+  body.light-mode #toolbar-book-select {
     background: #e8eaef !important;
     color: #2c3038 !important;
     border-color: #c0c5cc !important;
@@ -703,7 +703,7 @@
     color: #ccc;
   }
 
-  #toolbar-book-select, #toolbar-book-select-study {
+  #toolbar-book-select {
     background: #1e1e1e;
     color: #ccc;
     border: 1px solid #555;
@@ -715,14 +715,14 @@
     max-width: 140px;
   }
 
-  #about-link, #aid-toggle, #aid-toggle-study, #layers-link {
+  #about-link, #aid-toggle, #layers-link {
     color: #999;
     text-decoration: none;
     font-size: 0.9em;
     white-space: nowrap;
   }
 
-  #aid-toggle, #aid-toggle-study {
+  #aid-toggle {
     background: none;
     border: 1px solid #27ae60;
     color: #27ae60;
@@ -885,7 +885,6 @@
   <!-- Tab bar with gear button -->
   <div class="tab-bar">
     <button id="tab-read" class="tab-btn active" onclick="switchTab('read')">Read</button>
-    <button id="tab-study" class="tab-btn" onclick="switchTab('study')">Study</button>
     <button id="tab-intro" class="tab-btn" onclick="switchTab('intro')">Background</button>
     <button id="gear-btn" class="gear-btn" onclick="toggleSettings()" aria-label="Display settings">
       <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1112 8.4a3.6 3.6 0 010 7.2z"/></svg>
@@ -1190,39 +1189,12 @@
       <span style="color: #555;">|</span>
       <button id="aid-toggle" onclick="toggleAid()" style="background: none; border: 1px solid #27ae60; color: #27ae60; border-radius: 4px; padding: 3px 10px; cursor: pointer; font-size: 0.9em; white-space: nowrap;">Reading Aid: <span id="aid-state">Off</span></button>
       <span style="color: #555;">|</span>
-      <a href="#" onclick="switchTab('intro'); var s=document.getElementById('intro-'+currentBook); if(s){s.open=true; setTimeout(function(){s.scrollIntoView({behavior:'smooth',block:'start'});},100);} return false;" class="about-book-link" style="color: #999; text-decoration: none; font-size: 0.9em; white-space: nowrap;">About 1 Nephi</a>
-    </div>
-  </div>
-
-  <!-- Study panel -->
-  <div id="panel-study" class="toolbar-panel" style="display: none;">
-    <div class="panel-content">
-      <select id="toolbar-book-select-study" onchange="onBookSelectChange(this.value, this)">
-        <option value="1nephi">1 Nephi</option>
-        <option value="2nephi">2 Nephi</option>
-        <option value="jacob">Jacob</option>
-        <option value="enos">Enos</option>
-        <option value="jarom">Jarom</option>
-        <option value="omni">Omni</option>
-        <option value="words-of-mormon">Words of Mormon</option>
-        <option value="mosiah">Mosiah</option>
-        <option value="alma">Alma</option>
-        <option value="helaman">Helaman</option>
-        <option value="3nephi">3 Nephi</option>
-        <option value="4nephi">4 Nephi</option>
-        <option value="mormon">Mormon</option>
-        <option value="ether">Ether</option>
-        <option value="moroni">Moroni</option>
-      </select>
-      <a href="#" onclick="toggleNav(); return false;" style="color: #999; text-decoration: none; font-size: 0.9em; white-space: nowrap;">☰ Ch.</a>
-      <span style="color: #555;">|</span>
-      <button id="aid-toggle-study" onclick="toggleAid()" style="background: none; border: 1px solid #27ae60; color: #27ae60; border-radius: 4px; padding: 3px 10px; cursor: pointer; font-size: 0.9em; white-space: nowrap;">Reading Aid: <span id="aid-state-study">Off</span></button>
-      <span style="color: #555;">|</span>
       <a href="#" onclick="toggleLayers(); return false;" id="layers-link" style="color: #999; text-decoration: none; font-size: 0.9em; white-space: nowrap;">Layers +</a>
       <span style="color: #555;">|</span>
       <a href="#" onclick="switchTab('intro'); var s=document.getElementById('intro-'+currentBook); if(s){s.open=true; setTimeout(function(){s.scrollIntoView({behavior:'smooth',block:'start'});},100);} return false;" class="about-book-link" style="color: #999; text-decoration: none; font-size: 0.9em; white-space: nowrap;">About 1 Nephi</a>
     </div>
   </div>
+
 
   <!-- Chapter picker popup — for direct book+chapter navigation -->
   <div id="chapter-picker-overlay" onclick="closeChapterPicker()"></div>
@@ -1328,11 +1300,10 @@
 
   // Tab defaults
   var tabDefaults = {
-    read:  { flow: true,  punct: true,  wrap: true,  spacing: 'airy',   size: 'medium', density: 'normal' },
-    study: { flow: false, punct: false, wrap: false, spacing: 'normal', size: 'medium', density: 'normal' }
+    read:  { flow: true,  punct: true,  wrap: true,  spacing: 'airy',   size: 'medium', density: 'normal' }
   };
 
-  var tabOverrides = { read: {}, study: {} };
+  var tabOverrides = { read: {} };
 
   var spacingValues = { tight: 1.55, normal: 1.75, airy: 2.35 };
   var sizeValues    = { small: '15px', medium: '17px', large: '20px' };
@@ -1548,7 +1519,7 @@
       }
     });
     document.body.classList.toggle('aid-active', aidOn);
-    document.querySelectorAll('#aid-toggle, #aid-toggle-study').forEach(function(btn) {
+    document.querySelectorAll('#aid-toggle').forEach(function(btn) {
       var span = btn.querySelector('span');
       if (span) span.textContent = aidOn ? 'On' : 'Off';
     });
@@ -1659,11 +1630,13 @@
 
   // ---- TAB SWITCHING ----
   window.switchTab = function(tab) {
-    var panels = ['intro', 'read', 'study'];
+    var panels = ['intro', 'read'];
     var about = document.getElementById('about-panel');
     var nav = document.getElementById('nav-panel');
     about.style.display = 'none';
     nav.style.display = 'none';
+    var layers = document.getElementById('layers-panel');
+    if (layers) { layers.style.display = 'none'; document.getElementById('layers-link').textContent = 'Layers +'; }
     document.getElementById('settings-panel').classList.remove('visible');
     document.getElementById('gear-btn').classList.remove('active');
     var scripture = document.getElementById('scripture-content');
@@ -1685,7 +1658,7 @@
     if (introContent) {
       introContent.style.display = (tab === 'intro') ? 'block' : 'none';
     }
-    if (tab === 'read' || tab === 'study') {
+    if (tab === 'read') {
       applyTabSettings(tab);
     }
     window.scrollTo(0, 0);
@@ -1762,7 +1735,7 @@
     pickerOpen = false;
     // Reset dropdown back to current book (won't re-trigger due to pickerOpen guard above being false,
     // but onBookSelectChange checks bookId === currentBook anyway)
-    ['book-select', 'toolbar-book-select', 'toolbar-book-select-study'].forEach(function(id) {
+    ['book-select', 'toolbar-book-select'].forEach(function(id) {
       var sel = document.getElementById(id);
       if (sel) sel.value = currentBook;
     });
@@ -1810,7 +1783,7 @@
   window.switchBook = function(bookId, targetChapter) {
     var ch = targetChapter || 1;
     document.querySelectorAll('.book-content').forEach(function(b) { b.style.display = 'none'; });
-    ['book-select', 'toolbar-book-select', 'toolbar-book-select-study'].forEach(function(id) {
+    ['book-select', 'toolbar-book-select'].forEach(function(id) {
       var sel = document.getElementById(id);
       if (sel) sel.value = bookId;
     });
