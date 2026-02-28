@@ -153,6 +153,36 @@ SPEECH_NEAR_PAT = re.compile(r'(said|saith|spake|spoke|say |says )')
 
 
 # ============================================================
+# Mpre: SHORT SPEECH MERGE
+# ============================================================
+
+_SPEECH_END_PAT = re.compile(
+    r'(said|saith|say|sayeth|says|cried|spake|spoke|answered|asked|replied|'
+    r'commanded|inquired|exclaimed|declared|prophesied)\b.*:$', re.I)
+
+def mpre_short_speech_merge(lines, max_combined=55):
+    """Merge short speech-frame + short content onto one line.
+    'And I said: / Lord, how is it done?' → 'And I said: Lord, how is it done?'
+    Only fires when the combined length is under max_combined.
+    """
+    result = []
+    i = 0
+    while i < len(lines):
+        if (i < len(lines) - 1
+                and _SPEECH_END_PAT.search(lines[i])
+                and lines[i+1].strip()
+                and not lines[i+1].strip()[0].isdigit()):
+            combined = lines[i] + ' ' + lines[i+1]
+            if len(combined) <= max_combined:
+                result.append(combined)
+                i += 2
+                continue
+        result.append(lines[i])
+        i += 1
+    return result
+
+
+# ============================================================
 # M0: EM DASH TRAILING WORD REATTACHMENT
 # ============================================================
 
@@ -823,6 +853,7 @@ def m18_list_stacking(lines):
 # ============================================================
 
 PIPELINE = [
+    ('Mpre: short speech merge',  mpre_short_speech_merge),
     ('M0:  emdash trailing',      m0_emdash_trailing),
     # M1 disabled in v8c: AICTP now handled as swap in build_book.py
     # ('M1:  AICTP isolation',      m1_aictp),

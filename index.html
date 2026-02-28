@@ -365,7 +365,20 @@
     opacity: var(--punct-opacity);
   }
   .transitions-enabled .punct {
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, font-size 0.15s ease;
+  }
+
+  /* Hide punct: collapse characters to zero width */
+  body.hide-punct .punct {
+    font-size: 0;
+    opacity: 0;
+  }
+  /* Em-dashes: invisible spacer so adjacent words don't fuse */
+  body.hide-punct .punct-dash {
+    font-size: 0;
+    opacity: 0;
+    display: inline-block;
+    width: 4px;
   }
 
   .swap {
@@ -1428,9 +1441,19 @@
     aidOn = !aidOn;
     document.querySelectorAll('.swap').forEach(function(el) {
       if (aidOn) {
+        // Cache original innerHTML (preserves inner punct spans)
+        if (!el.hasAttribute('data-orig-html')) {
+          el.setAttribute('data-orig-html', el.innerHTML);
+        }
         el.textContent = el.getAttribute('data-mod');
       } else {
-        el.textContent = el.getAttribute('data-orig');
+        // Restore cached innerHTML with punct spans intact
+        var cached = el.getAttribute('data-orig-html');
+        if (cached) {
+          el.innerHTML = cached;
+        } else {
+          el.textContent = el.getAttribute('data-orig');
+        }
       }
     });
     document.body.classList.toggle('aid-active', aidOn);
@@ -1455,6 +1478,7 @@
   window.togglePunct = function(on) {
     tabOverrides[currentTab].punct = on;
     root.style.setProperty('--punct-opacity', on ? '0' : '1');
+    document.body.classList.toggle('hide-punct', on);
   };
 
   window.toggleWrapIndent = function(on) {
@@ -1519,6 +1543,7 @@
     root.style.setProperty('--verse-num-display', flow ? 'none' : 'inline');
     root.style.setProperty('--verse-gap', flow ? '2px' : '12px');
     root.style.setProperty('--punct-opacity', punct ? '0' : '1');
+    document.body.classList.toggle('hide-punct', punct);
     root.style.setProperty('--wrap-indent', wrap ? '0.75em' : '0em');
     root.style.setProperty('--line-height', spacingValues[spacing]);
     root.style.setProperty('--font-size', sizeValues[size]);
@@ -1617,6 +1642,7 @@
         loadedBooks[bookId] = true;
         if (aidOn) {
           bookDiv.querySelectorAll('.swap').forEach(function(el) {
+            el.setAttribute('data-orig-html', el.innerHTML);
             el.textContent = el.getAttribute('data-mod');
           });
         }
@@ -1804,6 +1830,8 @@
       el.textContent = el.getAttribute('data-orig');
     });
     aidOn = false;
+    // Set default body classes for reading mode
+    document.body.classList.add('hide-punct');
     applyTabSettings('read');
     switchBook('1nephi');
     handleHash();
