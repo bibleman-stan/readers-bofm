@@ -268,29 +268,35 @@ def build_phrase_index(hardy_data_file, scripture_file, output_file):
     with open(hardy_data_file, 'r', encoding='utf-8') as f:
         hardy_data = json.load(f)
 
-    # Filter for quotations only
-    quotations = [e for e in hardy_data.get('entries', []) if e.get('type') == 'quotation']
-    print(f"  Found {len(quotations)} quotations")
+    # Filter for quotations and allusions (skip cross-references)
+    entries = [e for e in hardy_data.get('entries', []) if e.get('type') in ('quotation', 'allusion')]
+    quotations = [e for e in entries if e['type'] == 'quotation']
+    allusions = [e for e in entries if e['type'] == 'allusion']
+    print(f"  Found {len(quotations)} quotations, {len(allusions)} allusions")
 
     # Build phrase index
     phrase_index = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
     stats = {
-        'total_quotations': len(quotations),
+        'total': len(entries),
         'matched': 0,
         'unmatched_bible_lookup': 0,
         'unmatched_bom_lookup': 0,
         'no_phrase_match': 0,
         'successful_matches': [],
+        'quotation_matched': 0,
+        'allusion_matched': 0,
+        'allusion_no_match': 0,
     }
 
-    print("\nProcessing quotations...")
-    for idx, quotation in enumerate(quotations, 1):
-        if idx % 20 == 0:
-            print(f"  {idx}/{len(quotations)}...")
+    print(f"\nProcessing {len(entries)} entries...")
+    for idx, entry in enumerate(entries, 1):
+        if idx % 100 == 0:
+            print(f"  {idx}/{len(entries)}...")
 
-        bible_ref_hardy = quotation.get('bible_ref', '')
-        bom_ref_hardy = quotation.get('bom_ref', '')
+        bible_ref_hardy = entry.get('bible_ref', '')
+        bom_ref_hardy = entry.get('bom_ref', '')
+        entry_type = entry.get('type', 'allusion')
 
         # Parse BoM reference
         bom_refs = parse_bom_ref(bom_ref_hardy)
@@ -345,30 +351,48 @@ def build_phrase_index(hardy_data_file, scripture_file, output_file):
 
             if not matches:
                 stats['no_phrase_match'] += 1
+                if entry_type == 'allusion':
+                    stats['allusion_no_match'] += 1
                 continue
 
-            # Add to phrase index
-            phrase_index[book_id][str(chapter)][str(verse)] = {
-                "bible_ref": bible_ref_hardy,
-                "matches": matches
-            }
+            # Add matches to phrase index, tagging with type
+            ch_str, v_str = str(chapter), str(verse)
+            existing = phrase_index[book_id][ch_str].get(v_str)
+            tagged_matches = [{"start": m["start"], "end": m["end"], "text": m["text"], "type": entry_type} for m in matches]
+
+            if existing:
+                # Merge: add new matches to existing entry
+                existing['matches'].extend(tagged_matches)
+                # Upgrade ref list
+                if bible_ref_hardy not in existing['bible_ref']:
+                    existing['bible_ref'] += '; ' + bible_ref_hardy
+            else:
+                phrase_index[book_id][ch_str][v_str] = {
+                    "bible_ref": bible_ref_hardy,
+                    "matches": tagged_matches
+                }
 
             stats['matched'] += 1
+            if entry_type == 'quotation':
+                stats['quotation_matched'] += 1
+            else:
+                stats['allusion_matched'] += 1
             stats['successful_matches'].append({
                 'bible_ref': bible_ref_hardy,
                 'bom_ref': bom_ref_hardy,
-                'match_count': len(matches)
+                'match_count': len(matches),
+                'type': entry_type
             })
 
     print("\n=== Statistics ===")
-    print(f"Total quotations processed: {stats['total_quotations']}")
-    print(f"Quotations with at least one match: {len(stats['successful_matches'])}")
-    print(f"Total match instances (verses × matches): {stats['matched']}")
+    print(f"Total entries processed: {stats['total']}")
+    print(f"  Quotations matched: {stats['quotation_matched']}")
+    print(f"  Allusions matched: {stats['allusion_matched']}")
+    print(f"  Allusions with no phrase match: {stats['allusion_no_match']}")
+    print(f"Total verse-level matches: {stats['matched']}")
     print(f"Unmatched (Bible lookup failed): {stats['unmatched_bible_lookup']}")
     print(f"Unmatched (BoM lookup failed): {stats['unmatched_bom_lookup']}")
     print(f"Unmatched (no phrase match found): {stats['no_phrase_match']}")
-    success_quotations = len(stats['successful_matches'])
-    print(f"Quotation success rate: {success_quotations / stats['total_quotations'] * 100:.1f}%")
 
     # Sample successful matches
     print("\nSample successful matches:")

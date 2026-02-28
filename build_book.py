@@ -646,21 +646,24 @@ def gen_verse(verse, swap_list, book_id=None):
 
     if entries:
         has_quotation = any(e['type'] == 'quotation' for e in entries)
-        css_class = 'quote-bible' if has_quotation else 'quote-allusion'
         sources = '; '.join(shorten_bible_ref(e['bible_ref']) for e in entries)
 
-        # For quotations: try phrase-level highlighting (color only matched phrases)
-        phrase_data = get_phrase_matches(book_id, verse['chapter'], verse['verse']) if has_quotation else None
-        phrase_texts = [m['text'] for m in phrase_data['matches']] if phrase_data and phrase_data.get('matches') else []
+        # Look up phrase-level matches (now includes both quotations and allusions)
+        phrase_data = get_phrase_matches(book_id, verse['chapter'], verse['verse'])
+        matches = phrase_data.get('matches', []) if phrase_data else []
+
+        # Separate matches by type
+        quote_phrases = [m['text'] for m in matches if m.get('type') == 'quotation']
+        allusion_phrases = [m['text'] for m in matches if m.get('type') == 'allusion']
+        has_any_phrases = bool(quote_phrases or allusion_phrases)
 
         wrapped = []
         for i, line in enumerate(processed):
-            if has_quotation and phrase_texts:
-                # Phrase-level: wrap only matched substrings within the line
-                highlighted = apply_phrase_highlights(line, phrase_texts, css_class)
-            else:
-                # Whole-verse: wrap entire line (allusions, or quotations without phrase data)
-                highlighted = f'<span class="{css_class}">{line}</span>'
+            highlighted = line
+            if quote_phrases:
+                highlighted = apply_phrase_highlights(highlighted, quote_phrases, 'quote-bible')
+            if allusion_phrases:
+                highlighted = apply_phrase_highlights(highlighted, allusion_phrases, 'quote-allusion')
             # Add data-source only on the last line
             if i == len(processed) - 1:
                 wrapped.append(f'<span data-source="{sources}">{highlighted}</span>')
