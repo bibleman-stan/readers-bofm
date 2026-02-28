@@ -581,10 +581,16 @@ def apply_geo_highlights(line_text, geo_entries):
         extract = entry.get('extract', '')
         if not extract or len(extract) < 5:
             continue
-        extract_lower = extract.lower()
-        idx = line_lower.find(extract_lower)
-        if idx != -1:
-            intervals.append((idx, idx + len(extract), entry.get('category', '')))
+        cat = entry.get('category', '')
+        # Split on ellipsis to get matchable fragments
+        fragments = [f.strip() for f in extract.replace('…', '...').split('...') if f.strip() and len(f.strip()) >= 5]
+        if not fragments:
+            fragments = [extract]
+        for frag in fragments:
+            frag_lower = frag.lower()
+            idx = line_lower.find(frag_lower)
+            if idx != -1:
+                intervals.append((idx, idx + len(frag), cat))
 
     if not intervals:
         return line_text
