@@ -340,6 +340,8 @@
 
   .verse {
     margin-bottom: var(--verse-gap);
+  }
+  .transitions-enabled .verse {
     transition: margin-bottom 0.3s ease;
   }
 
@@ -361,6 +363,8 @@
   .punct {
     color: #666;
     opacity: var(--punct-opacity);
+  }
+  .transitions-enabled .punct {
     transition: opacity 0.3s ease;
   }
 
@@ -1746,6 +1750,8 @@
   });
 
   // ---- CHAPTER NAVIGATION ----
+  var hashUpdating = false;  // Guard against circular hash calls
+
   window.showChapter = function(bookId, chNum) {
     var allCh = document.querySelectorAll('#book-' + bookId + ' .chapter-content');
     allCh.forEach(function(el) { el.style.display = 'none'; });
@@ -1755,10 +1761,13 @@
     document.querySelectorAll('#nav-grid .grid-btn').forEach(function(btn, idx) {
       btn.classList.toggle('active-ch', idx === chNum - 1);
     });
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({top: 0});
     var navPanel = document.getElementById('nav-panel');
     if (navPanel) navPanel.style.display = 'none';
+    // Update hash without triggering hashchange loop
+    hashUpdating = true;
     window.location.hash = bookId + '-' + chNum;
+    hashUpdating = false;
   };
 
   window.showChapterGrid = function(bookId) {
@@ -1767,11 +1776,12 @@
     buildChapterGrid(bookId);
     delete currentChapterMap[bookId];
     document.querySelectorAll('#nav-grid .grid-btn').forEach(function(btn) { btn.classList.remove('active-ch'); });
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({top: 0});
   };
 
   // ---- HASH-BASED DEEP LINKING ----
   function handleHash() {
+    if (hashUpdating) return;  // Skip if we just set the hash ourselves
     var hash = window.location.hash.slice(1);
     if (!hash) return;
     var parts = hash.match(/^([a-z0-9-]+?)(?:-(\d+))?$/);
@@ -1797,6 +1807,10 @@
     applyTabSettings('read');
     switchBook('1nephi');
     handleHash();
+    // Enable CSS transitions only after initial render to prevent lag on load
+    setTimeout(function() {
+      document.body.classList.add('transitions-enabled');
+    }, 300);
   });
 
   // Back to top button
