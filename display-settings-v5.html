@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Settings — Prototype v5 (Consolidated)</title>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --line-height: 2.35;
+    --wrap-indent: 0.75em;
+    --verse-gap: 2px;
+    --verse-num-display: none;
+    --punct-opacity: 0;
+    --font-size: 17px;
+    --letter-spacing: 0em;
+    --word-spacing: 0em;
+    --content-padding: 18px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #1a1a1a;
+    color: #d4d0c8;
+    font-family: 'Literata', Georgia, serif;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+  }
+
+  /* === TOOLBAR === */
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #111;
+    border-bottom: 1px solid #333;
+  }
+  .tab-bar {
+    display: flex;
+    align-items: center;
+  }
+  .tab-btn {
+    flex: 1;
+    padding: 10px 6px;
+    background: none;
+    border: none;
+    color: #777;
+    font-family: 'Literata', Georgia, serif;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .tab-btn:hover { color: #bbb; }
+  .tab-btn.active { color: #d4d0c8; border-bottom-color: #d4d0c8; }
+
+  .gear-btn {
+    width: 44px; height: 44px; flex-shrink: 0;
+    background: none; border: none; border-left: 1px solid #333;
+    color: #666; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: color 0.2s;
+  }
+  .gear-btn:hover { color: #bbb; }
+  .gear-btn.active { color: #d4d0c8; }
+  .gear-btn svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* === SETTINGS PANEL === */
+  .settings-panel {
+    max-height: 0; overflow: hidden;
+    background: #1f1f1f;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 18px;
+  }
+  .settings-panel.visible {
+    max-height: 800px;
+    padding: 20px 18px 24px;
+    border-bottom: 1px solid #333;
+  }
+
+  /* Toggle row */
+  .toggle-row {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .toggle-desc {
+    font-size: 0.75em; color: #999; flex: 1; padding-right: 16px; line-height: 1.4;
+  }
+  .toggle-desc strong { color: #bbb; font-weight: 400; }
+  .toggle-switch { position: relative; width: 44px; height: 24px; flex-shrink: 0; }
+  .toggle-switch input { opacity: 0; width: 0; height: 0; }
+  .toggle-track {
+    position: absolute; inset: 0; background: #444; border-radius: 12px;
+    cursor: pointer; transition: background 0.25s;
+  }
+  .toggle-track::after {
+    content: ''; position: absolute; top: 3px; left: 3px;
+    width: 18px; height: 18px; background: #ccc; border-radius: 50%;
+    transition: transform 0.25s;
+  }
+  .toggle-switch input:checked + .toggle-track { background: #5a7a5a; }
+  .toggle-switch input:checked + .toggle-track::after { transform: translateX(20px); }
+
+  .settings-divider { border: none; border-top: 1px solid #333; margin: 18px 0; }
+
+  /* Section label */
+  .setting-label {
+    font-size: 0.75em; color: #999; margin-bottom: 8px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .setting-label strong { color: #bbb; font-weight: 400; }
+
+  /* Option buttons */
+  .option-row { display: flex; gap: 8px; margin-bottom: 16px; }
+  .option-row:last-child { margin-bottom: 0; }
+  .option-btn {
+    flex: 1; padding: 8px 0; background: #2a2a2a; border: 1px solid #444;
+    border-radius: 6px; color: #999; font-family: 'Literata', Georgia, serif;
+    font-size: 0.75em; cursor: pointer; transition: all 0.2s; text-align: center;
+  }
+  .option-btn:hover { border-color: #777; color: #ccc; }
+  .option-btn.active { border-color: #888; color: #d4d0c8; background: #333; }
+
+  /* Text size — A buttons */
+  .size-row { display: flex; gap: 8px; margin-bottom: 16px; }
+  .size-btn {
+    flex: 1; padding: 10px 0 8px; background: #2a2a2a; border: 1px solid #444;
+    border-radius: 6px; color: #999; font-family: 'Literata', Georgia, serif;
+    cursor: pointer; transition: all 0.2s; text-align: center;
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+  }
+  .size-btn:hover { border-color: #777; color: #ccc; }
+  .size-btn.active { border-color: #888; color: #d4d0c8; background: #333; }
+  .size-btn .letter { line-height: 1; }
+  .size-btn .label { font-size: 0.6em; color: #777; letter-spacing: 0.04em; }
+  .size-btn.active .label { color: #aaa; }
+
+  /* Mode indicator */
+  .mode-indicator {
+    padding: 6px 18px; background: #181818;
+    font-size: 0.65em; color: #555; letter-spacing: 0.08em;
+    text-transform: uppercase; text-align: center;
+  }
+
+  /* === READING CONTENT === */
+  .content {
+    padding: 24px var(--content-padding) 80px;
+    max-width: 600px;
+    margin: 0 auto;
+    letter-spacing: var(--letter-spacing);
+    word-spacing: var(--word-spacing);
+    transition: all 0.25s ease;
+  }
+  .chapter-title {
+    font-size: 1.3em; font-weight: 700; margin-bottom: 20px; color: #d4d0c8;
+  }
+  .pericope {
+    font-size: 1.05em; font-weight: 700; margin: 24px 0 4px 0; color: #d4d0c8;
+  }
+  .pericope .ref { color: #808080; font-size: 0.85em; font-weight: 400; }
+  hr.section-break { border: none; border-top: 1px dotted #444; margin: 24px 0 0 0; }
+
+  .verse {
+    margin-bottom: var(--verse-gap);
+    transition: margin-bottom 0.3s ease;
+  }
+  .verse-num {
+    font-size: 0.6em; color: #666; margin-right: 3px; vertical-align: super;
+    display: var(--verse-num-display);
+  }
+  .line {
+    display: block; margin-left: 0;
+    padding-left: var(--wrap-indent);
+    text-indent: calc(var(--wrap-indent) * -1);
+  }
+  .punct {
+    color: #666; opacity: var(--punct-opacity); transition: opacity 0.3s ease;
+  }
+
+  /* Swap words — green, dotted underline, NO bold */
+  .swap {
+    color: #6b9;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #6b9;
+    text-underline-offset: 3px;
+  }
+
+  /* Density preview text in buttons */
+  .density-preview {
+    font-size: 0.55em; color: #666; margin-top: 2px;
+    letter-spacing: inherit; word-spacing: inherit;
+  }
+</style>
+</head>
+<body>
+
+<!-- TOOLBAR -->
+<div class="toolbar">
+  <div class="tab-bar">
+    <button class="tab-btn" onclick="switchTab('intro')">Intro</button>
+    <button class="tab-btn active" onclick="switchTab('read')" id="tab-read">Read</button>
+    <button class="tab-btn" onclick="switchTab('study')" id="tab-study">Study</button>
+    <button class="gear-btn" id="gear-btn" onclick="toggleSettings()" aria-label="Display settings">
+      <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1112 8.4a3.6 3.6 0 010 7.2z"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- SETTINGS PANEL -->
+<div class="settings-panel" id="settings-panel">
+
+  <!-- Toggles -->
+  <div class="toggle-row">
+    <div class="toggle-desc"><strong>Continuous flow</strong><br>Hide verse numbers</div>
+    <label class="toggle-switch">
+      <input type="checkbox" id="flow-toggle" checked onchange="toggleFlow(this.checked)">
+      <span class="toggle-track"></span>
+    </label>
+  </div>
+  <div class="toggle-row">
+    <div class="toggle-desc"><strong>Hide punctuation</strong><br>Let line breaks guide reading</div>
+    <label class="toggle-switch">
+      <input type="checkbox" id="punct-toggle" checked onchange="togglePunct(this.checked)">
+      <span class="toggle-track"></span>
+    </label>
+  </div>
+  <div class="toggle-row" style="margin-bottom:0;">
+    <div class="toggle-desc"><strong>Wrap indent</strong><br>Indent overflow lines</div>
+    <label class="toggle-switch">
+      <input type="checkbox" id="wrap-toggle" checked onchange="toggleWrapIndent(this.checked)">
+      <span class="toggle-track"></span>
+    </label>
+  </div>
+
+  <hr class="settings-divider">
+
+  <!-- Text size -->
+  <div class="setting-label"><strong>Text size</strong></div>
+  <div class="size-row">
+    <button class="size-btn" onclick="setSize('small')">
+      <span class="letter" style="font-size: 0.85em;">A</span>
+      <span class="label">Small</span>
+    </button>
+    <button class="size-btn active" onclick="setSize('medium')">
+      <span class="letter" style="font-size: 1.1em;">A</span>
+      <span class="label">Medium</span>
+    </button>
+    <button class="size-btn" onclick="setSize('large')">
+      <span class="letter" style="font-size: 1.4em;">A</span>
+      <span class="label">Large</span>
+    </button>
+  </div>
+
+  <!-- Text density -->
+  <div class="setting-label"><strong>Text density</strong></div>
+  <div class="option-row" id="density-row">
+    <button class="option-btn" onclick="setDensity('compact')">Compact</button>
+    <button class="option-btn active" onclick="setDensity('normal')">Normal</button>
+    <button class="option-btn" onclick="setDensity('spacious')">Spacious</button>
+  </div>
+
+  <!-- Line spacing -->
+  <div class="setting-label"><strong>Line spacing</strong></div>
+  <div class="option-row" id="spacing-row">
+    <button class="option-btn" onclick="setSpacing('tight')">Tight</button>
+    <button class="option-btn" onclick="setSpacing('normal')">Normal</button>
+    <button class="option-btn active" onclick="setSpacing('airy')">Airy</button>
+  </div>
+
+</div>
+
+<!-- MODE INDICATOR -->
+<div class="mode-indicator" id="mode-indicator">Reading view</div>
+
+<!-- READING CONTENT -->
+<div class="content" id="reading-content">
+  <div class="chapter-title">2 Nephi 9</div>
+  <div class="pericope">Jacob teaches about the Atonement <span class="ref">(vv. 5–12)</span></div>
+
+  <div class="verse">
+    <span class="verse-num">9:5</span>
+    <span class="line">For the Eternal God of all things</span>
+    <span class="line">must needs die<span class="punct">;</span></span>
+    <span class="line">and being the first that should rise<span class="punct">,</span></span>
+    <span class="line">he opens the door for all<span class="punct">.</span></span>
+  </div>
+
+  <div class="verse">
+    <span class="verse-num">9:6</span>
+    <span class="line">For as death <span class="swap" data-orig="hath" data-mod="has">hath</span> passed upon all men<span class="punct">,</span></span>
+    <span class="line"><span class="swap" data-orig="to fulfil" data-mod="to fulfill">to fulfil</span> the merciful plan of the great Creator<span class="punct">,</span></span>
+    <span class="line">there must needs be a power of resurrection<span class="punct">,</span></span>
+    <span class="line">and the resurrection must needs come <span class="swap" data-orig="unto" data-mod="to">unto</span> man</span>
+    <span class="line">by reason of the fall<span class="punct">;</span></span>
+    <span class="line">and the fall came by reason of transgression<span class="punct">;</span></span>
+    <span class="line">and because man became fallen</span>
+    <span class="line">they were cut off from the presence of the Lord<span class="punct">.</span></span>
+  </div>
+
+  <div class="verse">
+    <span class="verse-num">9:7</span>
+    <span class="line"><span class="swap" data-orig="Wherefore" data-mod="So">Wherefore</span><span class="punct">,</span> it must needs be an infinite atonement—</span>
+    <span class="line"><span class="swap" data-orig="save" data-mod="unless">save</span> it should be an infinite atonement—</span>
+    <span class="line">this corruption could not put on incorruption<span class="punct">.</span></span>
+  </div>
+
+  <div class="verse">
+    <span class="verse-num">9:8</span>
+    <span class="line">O the wisdom of God<span class="punct">,</span></span>
+    <span class="line">his mercy and grace<span class="punct">!</span></span>
+  </div>
+
+  <div class="verse">
+    <span class="verse-num">9:9</span>
+    <span class="line">And our spirits must have become like <span class="swap" data-orig="unto" data-mod="to">unto</span> him<span class="punct">,</span></span>
+    <span class="line">and we become devils<span class="punct">,</span> angels to a devil<span class="punct">,</span></span>
+    <span class="line">to be shut out from the presence of our God<span class="punct">,</span></span>
+    <span class="line">and to remain with the father of lies<span class="punct">,</span></span>
+    <span class="line">in misery<span class="punct">,</span> like <span class="swap" data-orig="unto" data-mod="to">unto</span> himself<span class="punct">;</span></span>
+    <span class="line"><span class="swap" data-orig="yea" data-mod="yes">yea</span><span class="punct">,</span> to that being who beguiled our first parents<span class="punct">,</span></span>
+    <span class="line">who <span class="swap" data-orig="transformeth" data-mod="transforms">transformeth</span> himself nigh <span class="swap" data-orig="unto" data-mod="to">unto</span> an angel of light<span class="punct">,</span></span>
+    <span class="line">and <span class="swap" data-orig="stirreth" data-mod="stirs">stirreth</span> up the children of men</span>
+    <span class="line"><span class="swap" data-orig="unto" data-mod="to">unto</span> secret combinations of murder</span>
+    <span class="line">and all manner of secret works of darkness<span class="punct">.</span></span>
+  </div>
+
+  <hr class="section-break">
+  <div class="pericope">The resurrection and judgment <span class="ref">(vv. 13–16)</span></div>
+
+  <div class="verse">
+    <span class="verse-num">9:13</span>
+    <span class="line">O how great the plan of our God<span class="punct">!</span></span>
+    <span class="line">For on the other hand<span class="punct">,</span></span>
+    <span class="line">the paradise of God must deliver up the spirits of the righteous<span class="punct">,</span></span>
+    <span class="line">and the grave deliver up the body of the righteous<span class="punct">;</span></span>
+    <span class="line">and the spirit and the body is restored to itself again<span class="punct">,</span></span>
+    <span class="line">and all men become incorruptible<span class="punct">,</span> and immortal<span class="punct">,</span></span>
+    <span class="line">and they are living souls<span class="punct">,</span></span>
+    <span class="line">having a perfect knowledge like <span class="swap" data-orig="unto" data-mod="to">unto</span> us in the flesh<span class="punct">,</span></span>
+    <span class="line"><span class="swap" data-orig="save" data-mod="except">save</span> it be that our knowledge shall be perfect<span class="punct">.</span></span>
+  </div>
+
+  <div class="verse">
+    <span class="verse-num">9:14</span>
+    <span class="line"><span class="swap" data-orig="Wherefore" data-mod="So">Wherefore</span><span class="punct">,</span> we shall have a perfect knowledge</span>
+    <span class="line">of all our guilt<span class="punct">,</span> and our uncleanness<span class="punct">,</span></span>
+    <span class="line">and our nakedness<span class="punct">;</span></span>
+    <span class="line">and the righteous shall have a perfect knowledge</span>
+    <span class="line">of their enjoyment<span class="punct">,</span> and their righteousness<span class="punct">,</span></span>
+    <span class="line">being clothed with purity<span class="punct">,</span></span>
+    <span class="line"><span class="swap" data-orig="yea" data-mod="yes">yea</span><span class="punct">,</span> even with the robe of righteousness<span class="punct">.</span></span>
+  </div>
+
+  <div class="verse">
+    <span class="verse-num">9:15</span>
+    <span class="line">And it shall come to pass that when all men shall have passed</span>
+    <span class="line">from this first death <span class="swap" data-orig="unto" data-mod="to">unto</span> life<span class="punct">,</span></span>
+    <span class="line"><span class="swap" data-orig="insomuch" data-mod="so much so">insomuch</span> as they have become immortal<span class="punct">,</span></span>
+    <span class="line">they must appear before the judgment-seat</span>
+    <span class="line">of the Holy One of Israel<span class="punct">;</span></span>
+    <span class="line">and then <span class="swap" data-orig="cometh" data-mod="comes">cometh</span> the judgment<span class="punct">,</span></span>
+    <span class="line">and then must they be judged</span>
+    <span class="line">according to the holy judgment of God<span class="punct">.</span></span>
+  </div>
+
+  <div class="verse">
+    <span class="verse-num">9:16</span>
+    <span class="line">And assuredly<span class="punct">,</span> as the Lord <span class="swap" data-orig="liveth" data-mod="lives">liveth</span><span class="punct">,</span></span>
+    <span class="line">for the Lord God <span class="swap" data-orig="hath" data-mod="has">hath</span> spoken it<span class="punct">,</span></span>
+    <span class="line">and it is his eternal word<span class="punct">,</span></span>
+    <span class="line">which cannot pass away<span class="punct">,</span></span>
+    <span class="line">that they who are righteous shall be righteous still<span class="punct">,</span></span>
+    <span class="line">and they who are filthy shall be filthy still<span class="punct">;</span></span>
+    <span class="line"><span class="swap" data-orig="wherefore" data-mod="so">wherefore</span><span class="punct">,</span> they who are filthy are the devil and his angels<span class="punct">;</span></span>
+    <span class="line">and they shall go away into everlasting fire<span class="punct">,</span></span>
+    <span class="line">prepared for them<span class="punct">;</span></span>
+    <span class="line">and their torment is as a lake of fire and brimstone<span class="punct">,</span></span>
+    <span class="line">whose flame <span class="swap" data-orig="ascendeth" data-mod="ascends">ascendeth</span> up forever and ever</span>
+    <span class="line">and has no end<span class="punct">.</span></span>
+  </div>
+</div>
+
+<script>
+  var root = document.documentElement;
+  var currentTab = 'read';
+
+  var tabDefaults = {
+    read:  { flow: true,  punct: true,  wrap: true,  spacing: 'airy',   size: 'medium', density: 'normal' },
+    study: { flow: false, punct: false, wrap: false, spacing: 'normal', size: 'medium', density: 'normal' }
+  };
+
+  var tabOverrides = { read: {}, study: {} };
+
+  var spacingValues = { tight: 1.55, normal: 1.75, airy: 2.35 };
+  var sizeValues    = { small: '15px', medium: '17px', large: '20px' };
+  var densityValues = {
+    compact:  { letter: '-0.015em', word: '-0.03em', padding: '10px' },
+    normal:   { letter: '0em',      word: '0em',     padding: '18px' },
+    spacious: { letter: '0.02em',   word: '0.06em',  padding: '26px' }
+  };
+
+  // === INIT ===
+  document.addEventListener('DOMContentLoaded', function() {
+    // Force all swap spans to archaic on load (toggle bug fix)
+    document.querySelectorAll('.swap').forEach(function(el) {
+      el.textContent = el.getAttribute('data-orig');
+    });
+    applyTabSettings('read');
+  });
+
+  function switchTab(tab) {
+    if (tab === 'intro') return;
+    currentTab = tab;
+    document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.getElementById('tab-' + tab).classList.add('active');
+    document.getElementById('settings-panel').classList.remove('visible');
+    document.getElementById('gear-btn').classList.remove('active');
+    applyTabSettings(tab);
+    document.getElementById('mode-indicator').textContent =
+      tab === 'read' ? 'Reading view' : 'Study view';
+  }
+
+  function getSetting(tab, key) {
+    var o = tabOverrides[tab];
+    return o[key] !== undefined ? o[key] : tabDefaults[tab][key];
+  }
+
+  function applyTabSettings(tab) {
+    var flow    = getSetting(tab, 'flow');
+    var punct   = getSetting(tab, 'punct');
+    var wrap    = getSetting(tab, 'wrap');
+    var spacing = getSetting(tab, 'spacing');
+    var size    = getSetting(tab, 'size');
+    var density = getSetting(tab, 'density');
+
+    root.style.setProperty('--verse-num-display', flow ? 'none' : 'inline');
+    root.style.setProperty('--verse-gap', flow ? '2px' : '12px');
+    root.style.setProperty('--punct-opacity', punct ? '0' : '1');
+    root.style.setProperty('--wrap-indent', wrap ? '0.75em' : '0em');
+    root.style.setProperty('--line-height', spacingValues[spacing]);
+    root.style.setProperty('--font-size', sizeValues[size]);
+
+    var d = densityValues[density];
+    root.style.setProperty('--letter-spacing', d.letter);
+    root.style.setProperty('--word-spacing', d.word);
+    root.style.setProperty('--content-padding', d.padding);
+
+    syncUI(flow, punct, wrap, spacing, size, density);
+  }
+
+  function syncUI(flow, punct, wrap, spacing, size, density) {
+    document.getElementById('flow-toggle').checked = flow;
+    document.getElementById('punct-toggle').checked = punct;
+    document.getElementById('wrap-toggle').checked = wrap;
+
+    document.querySelectorAll('#spacing-row .option-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === spacing);
+    });
+    document.querySelectorAll('#density-row .option-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === density);
+    });
+    document.querySelectorAll('.size-btn').forEach(function(btn) {
+      var label = btn.querySelector('.label').textContent.toLowerCase();
+      btn.classList.toggle('active', label === size);
+    });
+  }
+
+  function toggleSettings() {
+    document.getElementById('settings-panel').classList.toggle('visible');
+    document.getElementById('gear-btn').classList.toggle('active');
+  }
+
+  function toggleFlow(on) {
+    tabOverrides[currentTab].flow = on;
+    root.style.setProperty('--verse-num-display', on ? 'none' : 'inline');
+    root.style.setProperty('--verse-gap', on ? '2px' : '12px');
+  }
+  function togglePunct(on) {
+    tabOverrides[currentTab].punct = on;
+    root.style.setProperty('--punct-opacity', on ? '0' : '1');
+  }
+  function toggleWrapIndent(on) {
+    tabOverrides[currentTab].wrap = on;
+    root.style.setProperty('--wrap-indent', on ? '0.75em' : '0em');
+  }
+
+  function setSpacing(level) {
+    tabOverrides[currentTab].spacing = level;
+    root.style.setProperty('--line-height', spacingValues[level]);
+    document.querySelectorAll('#spacing-row .option-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === level);
+    });
+  }
+
+  function setSize(size) {
+    tabOverrides[currentTab].size = size;
+    root.style.setProperty('--font-size', sizeValues[size]);
+    document.querySelectorAll('.size-btn').forEach(function(btn) {
+      var label = btn.querySelector('.label').textContent.toLowerCase();
+      btn.classList.toggle('active', label === size);
+    });
+  }
+
+  function setDensity(level) {
+    tabOverrides[currentTab].density = level;
+    var d = densityValues[level];
+    root.style.setProperty('--letter-spacing', d.letter);
+    root.style.setProperty('--word-spacing', d.word);
+    root.style.setProperty('--content-padding', d.padding);
+    document.querySelectorAll('#density-row .option-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === level);
+    });
+  }
+</script>
+
+</body>
+</html>

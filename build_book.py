@@ -424,25 +424,25 @@ def process_line(line, swap_list):
 def gen_verse(verse, swap_list):
     ref = verse['ref']
     processed = [process_line(l, swap_list) for l in verse['lines']]
-    parts = [f'<div style="margin-bottom: 20px;"><span style="font-size: 0.55em; color: #5a5a52; margin-right: 3px; vertical-align: super;">{ref}</span>']
+    parts = [f'<div class="verse"><span class="verse-num">{ref}</span>']
     for line in processed:
-        parts.append(f'  <span style="display: block; margin-left: 0;">{line}</span>')
+        parts.append(f'  <span class="line">{line}</span>')
     parts.append('</div>')
     return '\n'.join(parts)
 
 def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
     p = [f'<div id="ch-{bid}-{ch_num}" class="chapter-content" style="display:none;">']
-    p.append(f'<div style="font-size: 1.4em; font-weight: bold; margin: 0 0 16px 0; color: #e0e0e0;">Chapter {ch_num}</div>')
+    p.append(f'<div class="chapter-title">Chapter {ch_num}</div>')
     # Prev/Next nav at TOP
-    p.append('<div style="display: flex; justify-content: space-between; align-items: center; margin: 0 0 1em; padding: 8px 0 12px; border-bottom: 1px solid #444;">')
+    p.append('<div class="chapter-nav">')
     if ch_num > 1:
-        p.append(f'  <a href="#" onclick="showChapter(\'{bid}\', {ch_num-1}); return false;" style="color: #7cafc2; text-decoration: none; font-size: 0.9em;">&larr; Ch {ch_num-1}</a>')
+        p.append(f'  <a href="#" onclick="showChapter(\'{bid}\', {ch_num-1}); return false;" class="chapter-nav-link">&larr; Ch {ch_num-1}</a>')
     else:
-        p.append('  <span style="color: #555; font-size: 0.9em;">&larr; Intro</span>')
+        p.append('  <span class="chapter-nav-disabled">&larr; Intro</span>')
     if ch_num < total_chapters:
-        p.append(f'  <a href="#" onclick="showChapter(\'{bid}\', {ch_num+1}); return false;" style="color: #7cafc2; text-decoration: none; font-size: 0.9em;">Ch {ch_num+1} &rarr;</a>')
+        p.append(f'  <a href="#" onclick="showChapter(\'{bid}\', {ch_num+1}); return false;" class="chapter-nav-link">Ch {ch_num+1} &rarr;</a>')
     else:
-        p.append('  <span style="color: #555; font-size: 0.9em;">End</span>')
+        p.append('  <span class="chapter-nav-disabled">End</span>')
     p.append('</div>')
     for v in ch_verses:
         p.append(gen_verse(v, swap_list))

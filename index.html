@@ -2,254 +2,1081 @@
 <html>
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The Book of Mormon — Reading Edition</title>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --line-height: 2.35;
+    --wrap-indent: 0.75em;
+    --verse-gap: 2px;
+    --verse-num-display: none;
+    --punct-opacity: 0;
+    --font-size: 17px;
+    --letter-spacing: 0em;
+    --word-spacing: 0em;
+    --content-padding: 18px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1c1f24;
+    color: #d4d0c8;
+    font-family: Literata, Georgia, serif;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    max-width: 42em;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 1.6em;
+    text-align: left;
+    margin-bottom: 0.3em;
+  }
+
+  h1 ~ p {
+    font-style: italic;
+    color: #8899aa;
+    margin-bottom: 1em;
+  }
+
+  /* === TOOLBAR === */
+  #reading-toolbar {
+    background: #2a2a2a;
+    padding: 0;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border: 1px solid #444;
+  }
+
+  .tab-bar {
+    display: flex;
+    align-items: center;
+    height: 44px;
+  }
+
+  .tab-btn {
+    flex: 1;
+    padding: 0;
+    height: 100%;
+    background: #2a2a2a;
+    border: none;
+    border-right: 1px solid #444;
+    color: #888;
+    cursor: pointer;
+    font-size: 0.88em;
+    font-weight: normal;
+    font-family: Literata, Georgia, serif;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+  }
+
+  .tab-btn:last-of-type {
+    border-right: 1px solid #444;
+  }
+
+  .tab-btn:hover {
+    background: #333;
+    color: #ccc;
+  }
+
+  .tab-btn.active {
+    background: #3a3a3a;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #555;
+  }
+
+  .gear-btn {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    border-left: 1px solid #444;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+  }
+
+  .gear-btn:hover {
+    color: #bbb;
+  }
+
+  .gear-btn.active {
+    color: #d4d0c8;
+  }
+
+  .gear-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+
+  /* === SETTINGS PANEL === */
+  .settings-panel {
+    max-height: 0;
+    overflow: hidden;
+    background: #1f1f1f;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 18px;
+    border-top: 1px solid #444;
+  }
+
+  .settings-panel.visible {
+    max-height: 800px;
+    padding: 20px 18px 24px;
+  }
+
+  /* Toggle row */
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .toggle-desc {
+    font-size: 0.75em;
+    color: #999;
+    flex: 1;
+    padding-right: 16px;
+    line-height: 1.4;
+  }
+
+  .toggle-desc strong {
+    color: #bbb;
+    font-weight: 400;
+  }
+
+  .toggle-switch {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .toggle-track {
+    position: absolute;
+    inset: 0;
+    background: #444;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.25s;
+  }
+
+  .toggle-track::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    background: #ccc;
+    border-radius: 50%;
+    transition: transform 0.25s;
+  }
+
+  .toggle-switch input:checked + .toggle-track {
+    background: #5a7a5a;
+  }
+
+  .toggle-switch input:checked + .toggle-track::after {
+    transform: translateX(20px);
+  }
+
+  .settings-divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 18px 0;
+  }
+
+  /* Section label */
+  .setting-label {
+    font-size: 0.75em;
+    color: #999;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .setting-label strong {
+    color: #bbb;
+    font-weight: 400;
+  }
+
+  /* Option buttons */
+  .option-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .option-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .option-btn {
+    flex: 1;
+    padding: 8px 0;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #999;
+    font-family: Literata, Georgia, serif;
+    font-size: 0.75em;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .option-btn:hover {
+    border-color: #777;
+    color: #ccc;
+  }
+
+  .option-btn.active {
+    border-color: #888;
+    color: #d4d0c8;
+    background: #333;
+  }
+
+  /* Text size — A buttons */
+  .size-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .size-btn {
+    flex: 1;
+    padding: 10px 0 8px;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #999;
+    font-family: Literata, Georgia, serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .size-btn:hover {
+    border-color: #777;
+    color: #ccc;
+  }
+
+  .size-btn.active {
+    border-color: #888;
+    color: #d4d0c8;
+    background: #333;
+  }
+
+  .size-btn .letter {
+    line-height: 1;
+  }
+
+  .size-btn .label {
+    font-size: 0.6em;
+    color: #777;
+    letter-spacing: 0.04em;
+  }
+
+  .size-btn.active .label {
+    color: #aaa;
+  }
+
+  /* === READING CONTENT === */
+  #scripture-content {
+    letter-spacing: var(--letter-spacing);
+    word-spacing: var(--word-spacing);
+    padding: 24px var(--content-padding) 80px;
+  }
+
+  .chapter-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    color: #e0e0e0;
+  }
+
+  .chapter-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1em;
+    padding: 8px 0 12px;
+    border-bottom: 1px solid #444;
+  }
+
+  .chapter-nav-link {
+    color: #7cafc2;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+
+  .chapter-nav-disabled {
+    color: #555;
+    font-size: 0.9em;
+  }
+
+  .verse {
+    margin-bottom: var(--verse-gap);
+    transition: margin-bottom 0.3s ease;
+  }
+
+  .verse-num {
+    font-size: 0.6em;
+    color: #666;
+    margin-right: 3px;
+    vertical-align: super;
+    display: var(--verse-num-display);
+  }
+
+  .line {
+    display: block;
+    margin-left: 0;
+    padding-left: var(--wrap-indent);
+    text-indent: calc(var(--wrap-indent) * -1);
+  }
+
+  .punct {
+    color: #666;
+    opacity: var(--punct-opacity);
+    transition: opacity 0.3s ease;
+  }
+
+  .swap {
+    color: #6b9;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #6b9;
+    text-underline-offset: 3px;
+  }
+
+  .aid-active .swap {
+    color: #27ae60 !important;
+    text-decoration: none !important;
+  }
+
+  /* Light mode overrides */
+  body.light-mode {
+    background: #f5f0e8 !important;
+    color: #3a3630 !important;
+  }
+
+  body.light-mode summary {
+    color: #3a3630 !important;
+  }
+
+  body.light-mode details {
+    border-color: #d8d0c0 !important;
+  }
+
+  body.light-mode hr {
+    border-color: #d8d0c0 !important;
+  }
+
+  body.light-mode p:not(#reading-toolbar p) {
+    color: #3a3630 !important;
+  }
+
+  body.light-mode.show-deity .deity-hl {
+    color: #b5342b !important;
+  }
+
+  body.light-mode.show-deity .father-hl {
+    color: #1e5a9e !important;
+  }
+
+  body.light-mode.show-spirit .spirit-hl {
+    background: rgba(160, 160, 160, 0.15);
+  }
+
+  body.light-mode .swap {
+    text-decoration-color: #1e8449 !important;
+  }
+
+  body.light-mode .aid-active .swap {
+    color: #1e8449 !important;
+  }
+
+  body.light-mode .sources-active .quote-bible {
+    text-decoration-color: rgba(42, 111, 168, 0.35);
+  }
+
+  body.light-mode div[style*="font-size: 1.1em"] {
+    color: #2c3038 !important;
+  }
+
+  body.light-mode span[style*="color: #5a5a52"] {
+    color: #b0a898 !important;
+  }
+
+  body.light-mode span[style*="color: #808080"] {
+    color: #8090a0 !important;
+  }
+
+  body.light-mode span[style*="color: #a0a0a0"] {
+    color: #777 !important;
+  }
+
+  body.light-mode h1 {
+    color: #2c3038 !important;
+  }
+
+  body.light-mode a:not(#reading-toolbar a) {
+    color: #4a7a9e !important;
+  }
+
+  body.light-mode #back-to-top {
+    background: #e8eaef !important;
+    color: #556070 !important;
+    border-color: #c0c5cc !important;
+  }
+
+  body.light-mode #book-select {
+    background: #e8eaef !important;
+    color: #2c3038 !important;
+    border-color: #c0c5cc !important;
+  }
+
+  body.light-mode #toolbar-book-select, body.light-mode #toolbar-book-select-study {
+    background: #e8eaef !important;
+    color: #2c3038 !important;
+    border-color: #c0c5cc !important;
+  }
+
+  body.light-mode p[style*="color: #b0b0b0"] {
+    color: #667888 !important;
+  }
+
+  body.light-mode p[style*="color: #707070"] {
+    color: #777 !important;
+  }
+
+  body.light-mode .punct {
+    color: #a8a090 !important;
+  }
+
+  /* Default link colors */
+  a {
+    color: #7cafc2;
+  }
+
+  a:visited {
+    color: #7cafc2;
+  }
+
+  #reading-toolbar a {
+    color: #7cafc2;
+    text-decoration: none;
+  }
+
+  #reading-toolbar a:hover {
+    text-decoration: underline;
+  }
+
+  /* Deity/Spirit highlighting */
+  .nav-item:hover {
+    background: #333;
+    color: #fff !important;
+  }
+
+  .deity-hl {
+    color: inherit;
+    font-weight: inherit;
+  }
+
+  .father-hl {
+    color: inherit;
+    font-weight: inherit;
+  }
+
+  .spirit-hl {
+    background: none;
+  }
+
+  body.show-deity .deity-hl {
+    color: #c0392b !important;
+    font-weight: bold !important;
+  }
+
+  body.show-deity .father-hl {
+    color: #2e6cb5 !important;
+    font-weight: bold !important;
+  }
+
+  body.show-spirit .spirit-hl {
+    background: rgba(192, 192, 192, 0.18);
+    border-radius: 2px;
+    padding: 1px 2px;
+  }
+
+  /* Editorial, intertext, covenant, comment styles */
+  .editorial {
+    display: none;
+  }
+
+  .editorial-active .editorial {
+    display: inline;
+    background: rgba(212, 168, 67, 0.15);
+    border-bottom: 2px solid #d4a843;
+  }
+
+  .sources-active .quote-bible {
+    text-decoration: overline dotted;
+    text-decoration-color: rgba(107, 163, 214, 0.4);
+    text-decoration-thickness: 2px;
+  }
+
+  .sources-active .quote-prophet {
+    text-decoration: overline dotted;
+    text-decoration-color: rgba(107, 163, 214, 0.4);
+    text-decoration-thickness: 2px;
+  }
+
+  .sources-active .quote-frame {
+    font-weight: normal !important;
+    font-style: italic;
+    opacity: 0.7;
+  }
+
+  .covenant {
+    font-style: italic;
+  }
+
+  .comment {
+    text-decoration: underline;
+    text-decoration-color: #888;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .comment-formula {
+    color: #e8d88c;
+  }
+
+  .comment:hover {
+    text-decoration-color: #bbb;
+  }
+
+  .comment-note {
+    display: none;
+    font-style: italic;
+    color: #999;
+    font-size: 0.85em;
+    margin: 6px 0 10px 2em;
+    padding: 6px 10px;
+    border-left: 2px solid #666;
+    line-height: 1.5;
+  }
+
+  .comment-note.open {
+    display: block;
+  }
+
+  body.light-mode .comment-note {
+    color: #666;
+    border-left-color: #aaa;
+  }
+
+  body.light-mode .comment-formula {
+    color: #8a7a2a;
+  }
+
+  .sources-active [data-source]::after {
+    content: " (" attr(data-source) ")";
+    font-size: 0.75em;
+    font-style: italic;
+    font-weight: normal !important;
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(107, 163, 214, 0.7);
+  }
+
+  /* Intro section styles */
+  .intro-section {
+    margin-bottom: 0.3em;
+  }
+
+  .intro-section summary {
+    cursor: pointer;
+    font-size: 1.15em;
+    font-weight: bold;
+    padding: 6px 0;
+  }
+
+  .intro-section > div {
+    padding: 8px 0 12px;
+    line-height: 1.6;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 0.8em 0;
+  }
+
+  /* Panel styles */
+  .toolbar-panel {
+    padding: 8px 0 4px 0;
+    border-top: 1px solid #555;
+  }
+
+  .panel-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.88em;
+    color: #ccc;
+  }
+
+  #toolbar-book-select, #toolbar-book-select-study {
+    background: #1e1e1e;
+    color: #ccc;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-family: Georgia, serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    max-width: 140px;
+  }
+
+  #about-link, #aid-toggle, #aid-toggle-study, #layers-link {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9em;
+    white-space: nowrap;
+  }
+
+  #aid-toggle, #aid-toggle-study {
+    background: none;
+    border: 1px solid #27ae60;
+    color: #27ae60;
+    border-radius: 4px;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
+
+  #nav-panel {
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  #nav-grid-container {
+    padding: 6px 0;
+    background: #1e1e1e;
+    border-radius: 4px;
+    border: 1px solid #444;
+  }
+
+  #nav-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    padding: 8px 12px;
+  }
+
+  .grid-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background: #2a2a2a;
+    color: #ccc;
+    font-family: Georgia, serif;
+    font-size: 0.88em;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .grid-btn:hover {
+    background: #333;
+    color: #fff;
+  }
+
+  #layers-panel {
+    display: none;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #1e1e1e;
+    border-radius: 4px;
+    border: 1px solid #444;
+  }
+
+  #layers-panel label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #ccc;
+    font-size: 0.85em;
+    cursor: pointer;
+    margin-bottom: 4px;
+  }
+
+  #about-panel {
+    display: none;
+    margin-top: 8px;
+    padding: 10px 14px;
+    background: #1e1e1e;
+    border-radius: 4px;
+    border: 1px solid #444;
+    font-size: 0.85em;
+    color: #bbb;
+    line-height: 1.6;
+  }
+
+  #about-panel p {
+    margin: 0 0 8px 0;
+  }
+
+  #about-panel p:last-child {
+    margin: 0;
+  }
+
+  /* Back to top button */
+  #back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #3a3a3a;
+    color: #999;
+    border: 1px solid #555;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    z-index: 20;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+</style>
 </head>
-<body style="background: #1c1f24; color: #d4d0c8; font-family: Literata, Georgia, serif; max-width: 42em; margin: 0 auto; padding: 1em; line-height: 2.05; letter-spacing: 0.015em;">
+<body>
 <div id="top"></div>
 
-<h1 style="font-weight: normal; font-size: 1.6em; text-align: left; margin-bottom: 0.3em;">The Book of Mormon</h1>
-<p style="font-style: italic; color: #8899aa; margin-bottom: 1em;">A Reading Edition for Everyone</p>
+<h1>The Book of Mormon</h1>
+<p>A Reading Edition for Everyone</p>
 
 <!-- Floating toolbar -->
-<div id="reading-toolbar" style="background: #2a2a2a; padding: 8px 14px; border-radius: 6px; margin-bottom: 16px; position: sticky; top: 0; z-index: 10;">
-  <!-- Tab row with utilities -->
-  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0;">
-    <div style="display: flex; gap: 0;">
-      <button id="tab-read" onclick="switchTab('read')" style="background: #3a3a3a; border: 1px solid #555; border-bottom: none; color: #fff; border-radius: 4px 4px 0 0; padding: 5px 12px; cursor: pointer; font-size: 0.88em; font-weight: bold; white-space: nowrap;">Read</button>
-      <button id="tab-study" onclick="switchTab('study')" style="background: none; border: 1px solid #444; border-bottom: 1px solid #555; color: #888; border-radius: 4px 4px 0 0; padding: 5px 12px; cursor: pointer; font-size: 0.88em; white-space: nowrap;">Study</button>
-      <button id="tab-intro" onclick="switchTab('intro')" style="background: none; border: 1px solid #444; border-bottom: 1px solid #555; color: #888; border-radius: 4px 4px 0 0; padding: 5px 12px; cursor: pointer; font-size: 0.88em; white-space: nowrap;">Background</button>
+<div id="reading-toolbar">
+  <!-- Tab bar with gear button -->
+  <div class="tab-bar">
+    <button id="tab-read" class="tab-btn active" onclick="switchTab('read')">Read</button>
+    <button id="tab-study" class="tab-btn" onclick="switchTab('study')">Study</button>
+    <button id="tab-intro" class="tab-btn" onclick="switchTab('intro')">Background</button>
+    <button id="gear-btn" class="gear-btn" onclick="toggleSettings()" aria-label="Display settings">
+      <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1112 8.4a3.6 3.6 0 010 7.2z"/></svg>
+    </button>
+  </div>
+
+  <!-- Settings panel -->
+  <div class="settings-panel" id="settings-panel">
+    <!-- Toggles -->
+    <div class="toggle-row">
+      <div class="toggle-desc"><strong>Continuous flow</strong><br>Hide verse numbers</div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="flow-toggle" checked onchange="toggleFlow(this.checked)">
+        <span class="toggle-track"></span>
+      </label>
     </div>
-    <div style="display: flex; align-items: center; gap: 6px; font-size: 0.88em;">
-      <a href="#" onclick="adjustFontSize(-1); return false;" style="color: #999; text-decoration: none; font-size: 0.85em; padding: 2px 4px;" title="Decrease font size">A−</a>
-      <a href="#" onclick="adjustFontSize(1); return false;" style="color: #999; text-decoration: none; font-size: 1.05em; padding: 2px 4px;" title="Increase font size">A+</a>
-      <span style="color: #444; margin: 0 2px;">│</span>
-      <a href="#" id="mode-link" onclick="toggleDarkMode(); return false;" style="color: #999; text-decoration: none; padding: 2px 4px;" title="Toggle light/dark mode">☀</a>
-      <span style="color: #444; margin: 0 2px;">│</span>
-      <a href="#" id="about-link" onclick="toggleAbout(); return false;" style="color: #999; text-decoration: none; padding: 2px 4px;" title="How to read this edition">ⓘ</a>
+    <div class="toggle-row">
+      <div class="toggle-desc"><strong>Hide punctuation</strong><br>Let line breaks guide reading</div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="punct-toggle" checked onchange="togglePunct(this.checked)">
+        <span class="toggle-track"></span>
+      </label>
+    </div>
+    <div class="toggle-row" style="margin-bottom:0;">
+      <div class="toggle-desc"><strong>Wrap indent</strong><br>Indent overflow lines</div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="wrap-toggle" checked onchange="toggleWrapIndent(this.checked)">
+        <span class="toggle-track"></span>
+      </label>
+    </div>
+
+    <hr class="settings-divider">
+
+    <!-- Text size -->
+    <div class="setting-label"><strong>Text size</strong></div>
+    <div class="size-row">
+      <button class="size-btn" onclick="setSize('small')">
+        <span class="letter" style="font-size: 0.85em;">A</span>
+        <span class="label">Small</span>
+      </button>
+      <button class="size-btn active" onclick="setSize('medium')">
+        <span class="letter" style="font-size: 1.1em;">A</span>
+        <span class="label">Medium</span>
+      </button>
+      <button class="size-btn" onclick="setSize('large')">
+        <span class="letter" style="font-size: 1.4em;">A</span>
+        <span class="label">Large</span>
+      </button>
+    </div>
+
+    <!-- Text density -->
+    <div class="setting-label"><strong>Text density</strong></div>
+    <div class="option-row" id="density-row">
+      <button class="option-btn" onclick="setDensity('compact')">Compact</button>
+      <button class="option-btn active" onclick="setDensity('normal')">Normal</button>
+      <button class="option-btn" onclick="setDensity('spacious')">Spacious</button>
+    </div>
+
+    <!-- Line spacing -->
+    <div class="setting-label"><strong>Line spacing</strong></div>
+    <div class="option-row" id="spacing-row">
+      <button class="option-btn" onclick="setSpacing('tight')">Tight</button>
+      <button class="option-btn" onclick="setSpacing('normal')">Normal</button>
+      <button class="option-btn active" onclick="setSpacing('airy')">Airy</button>
+    </div>
+
+    <hr class="settings-divider">
+
+    <!-- Dark/Light mode toggle -->
+    <div class="toggle-row" style="margin-bottom:0;">
+      <div class="toggle-desc"><strong>Light mode</strong><br>Switch display theme</div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="mode-toggle" onchange="toggleDarkMode()">
+        <span class="toggle-track"></span>
+      </label>
     </div>
   </div>
+
   <!-- Intro panel -->
-  <div id="panel-intro" style="display: none; padding: 8px 0 4px 0; border-top: 1px solid #555;">
+  <div id="panel-intro" class="toolbar-panel" style="display:none;">
+    <div id="intro-content" style="margin-top: 8px; display: none;">
+      <!-- Book grid -->
+      <div style="margin: 4px 0 16px 0;">
+        <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;">
+          <button onclick="beginReading('1nephi')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">1 Ne</button>
+          <button onclick="beginReading('2nephi')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">2 Ne</button>
+          <button onclick="beginReading('jacob')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Jac</button>
+          <button onclick="beginReading('enos')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Eno</button>
+          <button onclick="beginReading('jarom')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Jar</button>
+          <button onclick="beginReading('omni')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Omn</button>
+          <button onclick="beginReading('words-of-mormon')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">WoM</button>
+          <button onclick="beginReading('mosiah')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Mos</button>
+          <button onclick="beginReading('alma')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Alm</button>
+          <button onclick="beginReading('helaman')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Hel</button>
+          <button onclick="beginReading('3nephi')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">3 Ne</button>
+          <button onclick="beginReading('4nephi')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">4 Ne</button>
+          <button onclick="beginReading('mormon')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Morm</button>
+          <button onclick="beginReading('ether')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Eth</button>
+          <button onclick="beginReading('moroni')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Moro</button>
+        </div>
+      </div>
+      <p style="margin: 0 0 12px 0; color: #999; font-size: 0.88em; line-height: 1.6;">Tap a book to start reading. Expand a section below for background on each book.</p>
+      <div style="font-size: 0.88em; margin: 10px 0 16px; display: flex; gap: 10px;">
+        <a href="#" onclick="document.querySelectorAll('#intro-content details.intro-section').forEach(d => d.open = true); return false;">Expand all</a>
+        <span style="color: #555;">|</span>
+        <a href="#" onclick="document.querySelectorAll('#intro-content details.intro-section').forEach(d => d.open = false); return false;">Collapse all</a>
+      </div>
 
-<div id="intro-content" style="margin-top: 8px; display: none;">
-  <!-- Book grid -->
-  <div style="margin: 4px 0 16px 0;">
-    <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;">
-      <button onclick="beginReading('1nephi')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">1 Ne</button>
-      <button onclick="beginReading('2nephi')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">2 Ne</button>
-      <button onclick="beginReading('jacob')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Jac</button>
-      <button onclick="beginReading('enos')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Eno</button>
-      <button onclick="beginReading('jarom')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Jar</button>
-      <button onclick="beginReading('omni')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Omn</button>
-      <button onclick="beginReading('words-of-mormon')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">WoM</button>
-      <button onclick="beginReading('mosiah')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Mos</button>
-      <button onclick="beginReading('alma')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Alm</button>
-      <button onclick="beginReading('helaman')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Hel</button>
-      <button onclick="beginReading('3nephi')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">3 Ne</button>
-      <button onclick="beginReading('4nephi')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">4 Ne</button>
-      <button onclick="beginReading('mormon')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Morm</button>
-      <button onclick="beginReading('ether')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Eth</button>
-      <button onclick="beginReading('moroni')" style="width: 52px; height: 42px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.78em; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.2;">Moro</button>
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-1nephi">
+        <summary>1 Nephi</summary>
+        <div>
+          <p style="margin: 0 0 1em;">The narrator of this book is a man named Nephi. He is the son of a prophet of God named Lehi. Nephi tells the story of his family when they left Jerusalem around 600 BC, during the final years of the kingdom of Judah. This was at about the same time period as described in the Old Testament in 2 Kings 24–25 and 2 Chronicles 36 (just before Jerusalem was destroyed by Babylon).</p>
+          <p style="margin: 0 0 1em;">Nephi explains how God warned his father to leave Jerusalem and how each family member reacted in a different way. Lehi trusted God's warning. Nephi learned to trust God through hard experiences. Nephi's older brothers, Laman and Lemuel, struggled to trust God and often complained.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>God helps and protects those who choose to trust Him, even when doing so is hard and the future is unclear.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('1nephi'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading 1 Nephi →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-2nephi">
+        <summary>2 Nephi</summary>
+        <div>
+          <p style="margin: 0 0 1em;">The narrator is still Nephi. This book begins soon after the family has reached a new land, but it quickly becomes more about teaching than travel.</p>
+          <p style="margin: 0 0 1em;">A large part of 2 Nephi is sermons and prophecy. Nephi includes long passages from Isaiah and then explains why they matter. If Isaiah feels difficult, do not panic. The main message is easier than the details.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>God makes covenants and keeps His promises, and repentance opens the way back to Him.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('2nephi'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading 2 Nephi →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-jacob">
+        <summary>Jacob</summary>
+        <div>
+          <p style="margin: 0 0 1em;">The narrator is Jacob, Nephi's brother, who serves as a priest and teacher. He speaks to a community that has been in the new land for some time.</p>
+          <p style="margin: 0 0 1em;">Jacob warns his people about pride, mistreating the poor, and breaking family trust. He also teaches strongly about Christ and about God's mercy for those who repent.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>God cares about the condition of the heart, not just outward religion.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('jacob'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Jacob →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-enos">
+        <summary>Enos</summary>
+        <div>
+          <p style="margin: 0 0 1em;">The narrator is Enos, the son of Jacob. This is a short, personal story.</p>
+          <p style="margin: 0 0 1em;">Enos describes a deep experience of prayer, forgiveness, and change. After he finds peace with God, he begins to pray for his people and even for his enemies.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>Honest prayer can lead to forgiveness, peace, and fill us with the desire to bless others.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('enos'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Enos →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-jarom">
+        <summary>Jarom</summary>
+        <div>
+          <p style="margin: 0 0 1em;">The narrator is Jarom, a descendant of Jacob. He writes briefly and covers many years quickly.</p>
+          <p style="margin: 0 0 1em;">Jarom explains that the people had wars and problems, but prophets continued to teach, and many still tried to keep God's commandments.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>Even in hard times, God supports those who keep seeking Him.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('jarom'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Jarom →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-omni">
+        <summary>Omni</summary>
+        <div>
+          <p style="margin: 0 0 1em;">Even though it is very short, the book of Omni has more than one narrator. It is a short record that covers a period of more than 200 years.</p>
+          <p style="margin: 0 0 1em;">The writers give short updates about wars, leadership changes, and an important move to a new place. Some major events are mentioned very quickly because the record is small.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>God gathers and blesses those who remain loyal to Him, and He scatters those who choose to reject Him.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('omni'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Omni →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-words-of-mormon">
+        <summary>Words of Mormon</summary>
+        <div>
+          <p style="margin: 0 0 1em;">The narrator is Mormon, a prophet and historian who lived hundreds of years after Nephi. This book is a bridge, and it is meant to help you understand a big shift in the text.</p>
+          <p style="margin: 0 0 1em;"><strong>One important note:</strong><br>Up to this point you have been reading what are often called the "small plates" of Nephi, which focus heavily on spiritual teaching and family history. Starting in Mosiah, you move into a different set of records (often called the "large plates"), which are more like a national history with sermons, missions, and wars. Mormon is explaining why both sets are included.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>God can guide what is preserved in scripture, even across centuries, to bless later readers.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('words-of-mormon'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Words of Mormon →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-mosiah">
+        <summary>Mosiah</summary>
+        <div>
+          <p style="margin: 0 0 1em;">In Mosiah, Mormon is the main narrator. There are multiple characters and story lines. You will hear from King Benjamin, King Mosiah, King Limhi, Abinadi, Alma, and others.</p>
+          <p style="margin: 0 0 1em;">This book includes major sermons, major conversions, and big changes in how the people are led. It also introduces different groups of people and locations, so new names may appear quickly. If you feel lost, keep track of the main themes: teaching, covenant-making, missionary work, and community change.</p>
+          <p style="margin: 0 0 1em;">One of the most important figures in this book is Abinadi, a prophet who boldly warns a corrupt king and his priests. Abinadi is rejected and killed, but his words change one listener, a man named Alma. Alma's conversion begins a line of prophets, teachers, and leaders whose influence continues through Alma, Helaman, and leads all the way to the visit of Jesus Christ in 3 Nephi.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>One faithful witness can start a chain of belief that not only affects everyone around them but also can last for generations.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('mosiah'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Mosiah →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-alma">
+        <summary>Alma</summary>
+        <div>
+          <p style="margin: 0 0 1em;">This book continues the story that began with the prophet Abinadi in Mosiah, following Alma and those who carry forward his teachings as they face opposition, growth, and conflict. Mormon continues to be the main narrator.</p>
+          <p style="margin: 0 0 1em;">Alma is one of the longest books and it contains many stories and sermons. You will see conversion, missionary work, church problems, debates about belief, and major wars. Some chapters are fast-moving stories; others are long teachings. This is a good place to slow down and read in smaller pieces.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>Even during times of trouble, political conflict, or war, God remembers His covenant people and gives them strength and protection.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('alma'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Alma →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-helaman">
+        <summary>Helaman</summary>
+        <div>
+          <p style="margin: 0 0 1em;">This book continues the story that began with the prophet Abinadi in Mosiah, now showing what happens in the next generations as the people rise and fall again and again. Mormon is still the narrator of the stories.</p>
+          <p style="margin: 0 0 1em;">The main characters are Helaman and his sons, but you will also see other leaders and groups, including a very wicked man named Gadianton. This book shows a society swinging back and forth between faith and pride. It includes political conflict (including secret criminal and political conspiracies) and repeated warnings from prophets.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>As the coming of the Messiah draws near, people are divided more clearly. The righteous grow stronger in faith, while the wicked become more open and brazen in rejecting God, setting their hearts on worldly things, and engaging in acts of wickedness.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('helaman'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Helaman →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-3nephi">
+        <summary>3 Nephi</summary>
+        <div>
+          <p style="margin: 0 0 1em;">The long chain of prophets and believers that began with Abinadi reaches its fulfillment here. The warnings, divisions, and preparations of earlier generations lead to this moment. Mormon continues to be the narrator, but during long portions, Jesus Christ himself is quoted.</p>
+          <p style="margin: 0 0 1em;">The book begins with great destruction and grief, which mark the end of widespread wickedness. What follows is healing and renewal. Jesus Christ appears to the people after His resurrection. He invites them to come to Him, heals the sick, blesses children, teaches His gospel, and establishes peace among those who will follow Him.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>Jesus Christ is the answer to long preparation. He brings healing after judgment and peace after division, and He gathers all who are willing to come to Him.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('3nephi'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading 3 Nephi →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-4nephi">
+        <summary>4 Nephi</summary>
+        <div>
+          <p style="margin: 0 0 1em;">This short book is a summary of the two generations after Christ's visit. It shows what life can look like when people truly live the gospel together.</p>
+          <p style="margin: 0 0 1em;">The people have long peace and unity in a society filled with economic equality and great miracles, but over time pride returns and the community breaks apart. The book moves quickly, so pay attention to the pattern.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>When people truly live the gospel of Jesus Christ, peace can last for generations. When that devotion fades, division quickly returns.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('4nephi'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading 4 Nephi →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-mormon">
+        <summary>Mormon</summary>
+        <div>
+          <p style="margin: 0 0 1em;">This book has two narrators: Mormon, the historian who also wrote Words of Mormon. He is also a military leader living near the end of his people's history. However, at the end of the book, Mormon's son Moroni takes over and explains that his father was killed in war before he could finish his work.</p>
+          <p style="margin: 0 0 1em;">Mormon describes the story of his life. He tells it in the context of when his people have chosen to reject God and are in deep spiritual and military decline: they are losing wars to their enemies, refusing to repent, and are finally destroyed. Mormon writes his story with sorrow, but also with a desire to warn and to preserve hope for future readers.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>When a society knowingly rejects God, it collapses. Even then, God continues to reach out to individuals who will listen.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('mormon'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Mormon →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-ether">
+        <summary>Ether</summary>
+        <div>
+          <p style="margin: 0 0 1em;">The narrator is now Moroni, who continues writing after the death of his father. However, the story he tells in Ether is much older. The Book of Ether is a record about the Jaredites, a people who lived long before Nephi's time. Although the Jaredite civilization lasted for many centuries, Moroni gives only a brief summary of their history. He focuses mainly on their kings and on the moments when the people chose to listen to, or reject, God's prophets.</p>
+          <p style="margin: 0 0 1em;">Ether begins with a remarkable revelation of the Lord Jesus Christ to a faithful man who lived near the time of the Tower of Babel. This man and his people leave the Old World and travel to the New World thousands of years before the birth of Jesus Christ. The book shows a long rise followed by a tragic fall, much like what later happens to the Nephites. The story includes kings, wars, prophets, and many chances to repent. It also contains one of the clearest teachings in the Book of Mormon about how God can strengthen people in their weakness.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>Societies that honor God's prophets are preserved and blessed. When people reject and seek to destroy God's prophets, He allows them to destroy themselves.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('ether'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Ether →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <details class="intro-section" id="intro-moroni">
+        <summary>Moroni</summary>
+        <div>
+          <p style="margin: 0 0 1em;">The narrator of the final book is still Moroni. He is now alone, writing after the destruction of his people and the death of his father. Moroni knows that he is finishing the record, and he writes directly for future readers who will live long after his own time.</p>
+          <p style="margin: 0 0 1em;">Moroni includes teachings about church practices, such as ordinances and leadership, to help future believers understand how Christ's church should function. He also preserves powerful teachings from his father, Mormon, especially about faith, hope, and charity. These teachings explain not just what to believe, but what kind of people followers of Christ are meant to become.</p>
+          <p style="margin: 0 0 1em;">More than any other book, Moroni speaks directly to the reader. He bears personal testimony, explains how God continues to work through miracles, and invites readers to seek God sincerely. The book ends with Moroni's promise that God will answer those who ask in faith and with real intent.</p>
+          <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>God is a God of miracles, and He does not change. He continues to reveal Himself and confirm truth to all who will seek Him through faith in Jesus Christ. God offers His covenant relationship to everyone who will accept the conditions, especially trusting in the power of Jesus Christ.</p>
+          <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('moroni'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Moroni →</a></p>
+        </div>
+      </details>
+
+      <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
+      <p style="color: #666; font-size: 0.82em; margin-top: 1.5em; text-align: center;">These introductions reflect the editor's perspective and are not part of the original text.</p>
     </div>
   </div>
-  <p style="margin: 0 0 12px 0; color: #999; font-size: 0.88em; line-height: 1.6;">Tap a book to start reading. Expand a section below for background on each book.</p>
-  <div style="font-size: 0.88em; margin: 10px 0 16px; display: flex; gap: 10px;">
-    <a href="#" onclick="document.querySelectorAll('#intro-content details.intro-section').forEach(d => d.open = true); return false;">Expand all</a>
-    <span style="color: #555;">|</span>
-    <a href="#" onclick="document.querySelectorAll('#intro-content details.intro-section').forEach(d => d.open = false); return false;">Collapse all</a>
-  </div>
 
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-1nephi" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">1 Nephi</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">The narrator of this book is a man named Nephi. He is the son of a prophet of God named Lehi. Nephi tells the story of his family when they left Jerusalem around 600 BC, during the final years of the kingdom of Judah. This was at about the same time period as described in the Old Testament in 2 Kings 24–25 and 2 Chronicles 36 (just before Jerusalem was destroyed by Babylon).</p>
-      <p style="margin: 0 0 1em;">Nephi explains how God warned his father to leave Jerusalem and how each family member reacted in a different way. Lehi trusted God's warning. Nephi learned to trust God through hard experiences. Nephi's older brothers, Laman and Lemuel, struggled to trust God and often complained.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    God helps and protects those who choose to trust Him, even when doing so is hard and the future is unclear.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('1nephi'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading 1 Nephi →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-2nephi" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">2 Nephi</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">The narrator is still Nephi. This book begins soon after the family has reached a new land, but it quickly becomes more about teaching than travel.</p>
-      <p style="margin: 0 0 1em;">A large part of 2 Nephi is sermons and prophecy. Nephi includes long passages from Isaiah and then explains why they matter. If Isaiah feels difficult, do not panic. The main message is easier than the details.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    God makes covenants and keeps His promises, and repentance opens the way back to Him.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('2nephi'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading 2 Nephi →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-jacob" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Jacob</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">The narrator is Jacob, Nephi's brother, who serves as a priest and teacher. He speaks to a community that has been in the new land for some time.</p>
-      <p style="margin: 0 0 1em;">Jacob warns his people about pride, mistreating the poor, and breaking family trust. He also teaches strongly about Christ and about God's mercy for those who repent.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    God cares about the condition of the heart, not just outward religion.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('jacob'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Jacob →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-enos" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Enos</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">The narrator is Enos, the son of Jacob. This is a short, personal story.</p>
-      <p style="margin: 0 0 1em;">Enos describes a deep experience of prayer, forgiveness, and change. After he finds peace with God, he begins to pray for his people and even for his enemies.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    Honest prayer can lead to forgiveness, peace, and fill us with the desire to bless others.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('enos'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Enos →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-jarom" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Jarom</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">The narrator is Jarom, a descendant of Jacob. He writes briefly and covers many years quickly.</p>
-      <p style="margin: 0 0 1em;">Jarom explains that the people had wars and problems, but prophets continued to teach, and many still tried to keep God's commandments.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    Even in hard times, God supports those who keep seeking Him.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('jarom'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Jarom →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-omni" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Omni</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">Even though it is very short, the book of Omni has more than one narrator. It is a short record that covers a period of more than 200 years.</p>
-      <p style="margin: 0 0 1em;">The writers give short updates about wars, leadership changes, and an important move to a new place. Some major events are mentioned very quickly because the record is small.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    God gathers and blesses those who remain loyal to Him, and He scatters those who choose to reject Him.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('omni'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Omni →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-words-of-mormon" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Words of Mormon</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">The narrator is Mormon, a prophet and historian who lived hundreds of years after Nephi. This book is a bridge, and it is meant to help you understand a big shift in the text.</p>
-      <p style="margin: 0 0 1em;"><strong>One important note:</strong><br>
-  Up to this point you have been reading what are often called the "small plates" of Nephi, which focus heavily on spiritual teaching and family history. Starting in Mosiah, you move into a different set of records (often called the "large plates"), which are more like a national history with sermons, missions, and wars. Mormon is explaining why both sets are included.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    God can guide what is preserved in scripture, even across centuries, to bless later readers.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('words-of-mormon'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Words of Mormon →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-mosiah" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Mosiah</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">In Mosiah, Mormon is the main narrator. There are multiple characters and story lines. You will hear from King Benjamin, King Mosiah, King Limhi, Abinadi, Alma, and others.</p>
-      <p style="margin: 0 0 1em;">This book includes major sermons, major conversions, and big changes in how the people are led. It also introduces different groups of people and locations, so new names may appear quickly. If you feel lost, keep track of the main themes: teaching, covenant-making, missionary work, and community change.</p>
-      <p style="margin: 0 0 1em;">One of the most important figures in this book is Abinadi, a prophet who boldly warns a corrupt king and his priests. Abinadi is rejected and killed, but his words change one listener, a man named Alma. Alma's conversion begins a line of prophets, teachers, and leaders whose influence continues through Alma, Helaman, and leads all the way to the visit of Jesus Christ in 3 Nephi.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    One faithful witness can start a chain of belief that not only affects everyone around them but also can last for generations.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('mosiah'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Mosiah →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-alma" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Alma</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">This book continues the story that began with the prophet Abinadi in Mosiah, following Alma and those who carry forward his teachings as they face opposition, growth, and conflict. Mormon continues to be the main narrator.</p>
-      <p style="margin: 0 0 1em;">Alma is one of the longest books and it contains many stories and sermons. You will see conversion, missionary work, church problems, debates about belief, and major wars. Some chapters are fast-moving stories; others are long teachings. This is a good place to slow down and read in smaller pieces.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    Even during times of trouble, political conflict, or war, God remembers His covenant people and gives them strength and protection.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('alma'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Alma →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-helaman" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Helaman</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">This book continues the story that began with the prophet Abinadi in Mosiah, now showing what happens in the next generations as the people rise and fall again and again. Mormon is still the narrator of the stories.</p>
-      <p style="margin: 0 0 1em;">The main characters are Helaman and his sons, but you will also see other leaders and groups, including a very wicked man named Gadianton. This book shows a society swinging back and forth between faith and pride. It includes political conflict (including secret criminal and political conspiracies) and repeated warnings from prophets.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    As the coming of the Messiah draws near, people are divided more clearly. The righteous grow stronger in faith, while the wicked become more open and brazen in rejecting God, setting their hearts on worldly things, and engaging in acts of wickedness.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('helaman'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Helaman →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-3nephi" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">3 Nephi</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">The long chain of prophets and believers that began with Abinadi reaches its fulfillment here. The warnings, divisions, and preparations of earlier generations lead to this moment. Mormon continues to be the narrator, but during long portions, Jesus Christ himself is quoted.</p>
-      <p style="margin: 0 0 1em;">The book begins with great destruction and grief, which mark the end of widespread wickedness. What follows is healing and renewal. Jesus Christ appears to the people after His resurrection. He invites them to come to Him, heals the sick, blesses children, teaches His gospel, and establishes peace among those who will follow Him.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    Jesus Christ is the answer to long preparation. He brings healing after judgment and peace after division, and He gathers all who are willing to come to Him.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('3nephi'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading 3 Nephi →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-4nephi" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">4 Nephi</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">This short book is a summary of the two generations after Christ's visit. It shows what life can look like when people truly live the gospel together.</p>
-      <p style="margin: 0 0 1em;">The people have long peace and unity in a society filled with economic equality and great miracles, but over time pride returns and the community breaks apart. The book moves quickly, so pay attention to the pattern.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    When people truly live the gospel of Jesus Christ, peace can last for generations. When that devotion fades, division quickly returns.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('4nephi'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading 4 Nephi →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-mormon" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Mormon</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">This book has two narrators: Mormon, the historian who also wrote Words of Mormon. He is also a military leader living near the end of his people's history. However, at the end of the book, Mormon's son Moroni takes over and explains that his father was killed in war before he could finish his work.</p>
-      <p style="margin: 0 0 1em;">Mormon describes the story of his life. He tells it in the context of when his people have chosen to reject God and are in deep spiritual and military decline: they are losing wars to their enemies, refusing to repent, and are finally destroyed. Mormon writes his story with sorrow, but also with a desire to warn and to preserve hope for future readers.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    When a society knowingly rejects God, it collapses. Even then, God continues to reach out to individuals who will listen.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('mormon'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Mormon →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-ether" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Ether</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">The narrator is now Moroni, who continues writing after the death of his father. However, the story he tells in Ether is much older. The Book of Ether is a record about the Jaredites, a people who lived long before Nephi's time. Although the Jaredite civilization lasted for many centuries, Moroni gives only a brief summary of their history. He focuses mainly on their kings and on the moments when the people chose to listen to, or reject, God's prophets.</p>
-      <p style="margin: 0 0 1em;">Ether begins with a remarkable revelation of the Lord Jesus Christ to a faithful man who lived near the time of the Tower of Babel. This man and his people leave the Old World and travel to the New World thousands of years before the birth of Jesus Christ. The book shows a long rise followed by a tragic fall, much like what later happens to the Nephites. The story includes kings, wars, prophets, and many chances to repent. It also contains one of the clearest teachings in the Book of Mormon about how God can strengthen people in their weakness.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    Societies that honor God's prophets are preserved and blessed. When people reject and seek to destroy God's prophets, He allows them to destroy themselves.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('ether'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Ether →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <details class="intro-section" id="intro-moroni" style="margin-bottom: 0.3em;">
-    <summary style="cursor: pointer; font-size: 1.15em; font-weight: bold; padding: 6px 0;">Moroni</summary>
-    <div style="padding: 8px 0 12px; line-height: 1.6;">
-      <p style="margin: 0 0 1em;">The narrator of the final book is still Moroni. He is now alone, writing after the destruction of his people and the death of his father. Moroni knows that he is finishing the record, and he writes directly for future readers who will live long after his own time.</p>
-      <p style="margin: 0 0 1em;">Moroni includes teachings about church practices, such as ordinances and leadership, to help future believers understand how Christ's church should function. He also preserves powerful teachings from his father, Mormon, especially about faith, hope, and charity. These teachings explain not just what to believe, but what kind of people followers of Christ are meant to become.</p>
-      <p style="margin: 0 0 1em;">More than any other book, Moroni speaks directly to the reader. He bears personal testimony, explains how God continues to work through miracles, and invites readers to seek God sincerely. The book ends with Moroni's promise that God will answer those who ask in faith and with real intent.</p>
-      <p style="margin: 0 0 1em;"><strong>One key theme to watch for:</strong><br>
-    God is a God of miracles, and He does not change. He continues to reveal Himself and confirm truth to all who will seek Him through faith in Jesus Christ. God offers His covenant relationship to everyone who will accept the conditions, especially trusting in the power of Jesus Christ.</p>
-      <p style="margin: 1em 0 0;"><a href="#" onclick="beginReading('moroni'); return false;" style="color: #7cafc2; font-size: 0.95em;">Begin reading Moroni →</a></p>
-    </div>
-  </details>
-
-  <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
-  <p style="color: #666; font-size: 0.82em; margin-top: 1.5em; text-align: center;">These introductions reflect the editor's perspective and are not part of the original text.</p>
-</div>
-  </div>
   <!-- Read panel -->
-  <div id="panel-read" style="padding: 8px 0 4px 0; border-top: 1px solid #555;">
-    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 0.88em; color: #ccc;">
-      <select id="toolbar-book-select" onchange="switchBook(this.value)" style="background: #1e1e1e; color: #ccc; border: 1px solid #555; border-radius: 4px; padding: 3px 6px; font-family: Georgia, serif; font-size: 0.9em; cursor: pointer; max-width: 140px;">
+  <div id="panel-read" class="toolbar-panel">
+    <div class="panel-content">
+      <select id="toolbar-book-select" onchange="switchBook(this.value)">
         <option value="1nephi">1 Nephi</option>
         <option value="2nephi">2 Nephi</option>
         <option value="jacob">Jacob</option>
@@ -273,10 +1100,11 @@
       <a href="#" onclick="switchTab('intro'); var s=document.getElementById('intro-'+currentBook); if(s){s.open=true; setTimeout(function(){s.scrollIntoView({behavior:'smooth',block:'start'});},100);} return false;" class="about-book-link" style="color: #999; text-decoration: none; font-size: 0.9em; white-space: nowrap;">About 1 Nephi</a>
     </div>
   </div>
+
   <!-- Study panel -->
-  <div id="panel-study" style="display: none; padding: 8px 0 4px 0; border-top: 1px solid #555;">
-    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 0.88em; color: #ccc; margin-bottom: 8px;">
-      <select id="toolbar-book-select-study" onchange="switchBook(this.value)" style="background: #1e1e1e; color: #ccc; border: 1px solid #555; border-radius: 4px; padding: 3px 6px; font-family: Georgia, serif; font-size: 0.9em; cursor: pointer; max-width: 140px;">
+  <div id="panel-study" class="toolbar-panel" style="display: none;">
+    <div class="panel-content">
+      <select id="toolbar-book-select-study" onchange="switchBook(this.value)">
         <option value="1nephi">1 Nephi</option>
         <option value="2nephi">2 Nephi</option>
         <option value="jacob">Jacob</option>
@@ -302,17 +1130,16 @@
       <a href="#" onclick="switchTab('intro'); var s=document.getElementById('intro-'+currentBook); if(s){s.open=true; setTimeout(function(){s.scrollIntoView({behavior:'smooth',block:'start'});},100);} return false;" class="about-book-link" style="color: #999; text-decoration: none; font-size: 0.9em; white-space: nowrap;">About 1 Nephi</a>
     </div>
   </div>
-  <!-- Shared panels (accessible from both Read and Study) -->
-  <!-- Navigation dropdown -->
+
   <!-- Shared panels (accessible from both Read and Study) -->
   <!-- Navigation panel — chapter grid generated dynamically by JS -->
-  <div id="nav-panel" style="display: none; margin-top: 4px; margin-bottom: 4px;">
-    <div id="nav-grid-container" style="padding: 6px 0; background: #1e1e1e; border-radius: 4px; border: 1px solid #444;">
-      <div id="nav-grid" style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; padding: 8px 12px;">
+  <div id="nav-panel">
+    <div id="nav-grid-container">
+      <div id="nav-grid">
       </div>
     </div>
   </div>
-  <div id="layers-panel" style="display: none; margin-top: 8px; padding: 8px 12px; background: #1e1e1e; border-radius: 4px; border: 1px solid #444;">
+  <div id="layers-panel">
     <div style="display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 4px;">
       <a href="#" onclick="selectAllLayers(); return false;" style="color: #888; text-decoration: none; font-size: 0.78em;">Select All</a>
       <a href="#" onclick="clearAllLayers(); return false;" style="color: #888; text-decoration: none; font-size: 0.78em;">Clear All</a>
@@ -334,74 +1161,54 @@
       <span style="opacity: 0.5;">Isaiah Parallels <span style="color: #6ba3d6;">■</span> <i>(coming soon)</i></span>
     </label>
   </div>
-  <div id="about-panel" style="display: none; margin-top: 8px; padding: 10px 14px; background: #1e1e1e; border-radius: 4px; border: 1px solid #444; font-size: 0.85em; color: #bbb; line-height: 1.6;">
-    <p style="margin: 0 0 8px 0;">This edition uses the original words of the Book of Mormon, arranged in shorter lines that follow natural pauses in speech. This makes it easier to read, especially for those who are learning English.</p>
-    <p style="margin: 0 0 8px 0;">The <b style="color: #27ae60;">Reading Aid</b> button swaps old-fashioned words for modern ones. Words that can be swapped have a <span style="text-decoration: underline; text-decoration-color: #27ae60; text-decoration-style: dotted; text-underline-offset: 3px;">dotted green underline</span>.</p>
-    <p style="margin: 0 0 8px 0;">The <b>Study</b> tab adds extra tools. The <b>Layers</b> button lets you highlight references to God the Father and Jesus Christ, the Holy Ghost, and quotations from other scripture.</p>
+  <div id="about-panel">
+    <p><this edition uses the original words of the Book of Mormon, arranged in shorter lines that follow natural pauses in speech. This makes it easier to read, especially for those who are learning English.</p>
+    <p>The <b style="color: #27ae60;">Reading Aid</b> button swaps old-fashioned words for modern ones. Words that can be swapped have a <span style="text-decoration: underline; text-decoration-color: #27ae60; text-decoration-style: dotted; text-underline-offset: 3px;">dotted green underline</span>.</p>
+    <p>The <b>Study</b> tab adds extra tools. The <b>Layers</b> button lets you highlight references to God the Father and Jesus Christ, the Holy Ghost, and quotations from other scripture.</p>
     <p style="margin: 0;"><i>Covenant promises</i> — places where God states His promises — appear in <i>italics</i>.</p>
   </div>
 </div>
 
-<style>
-  /* Light mode overrides — content only, toolbar stays dark */
-  body.light-mode { background: #f5f0e8 !important; color: #3a3630 !important; }
-  body.light-mode summary { color: #3a3630 !important; }
-  body.light-mode details { border-color: #d8d0c0 !important; }
-  body.light-mode hr { border-color: #d8d0c0 !important; }
-  body.light-mode p:not(#reading-toolbar p) { color: #3a3630 !important; }
-  body.light-mode.show-deity .deity-hl { color: #b5342b !important; }
-  body.light-mode.show-deity .father-hl { color: #1e5a9e !important; }
-  body.light-mode.show-spirit .spirit-hl { background: rgba(160, 160, 160, 0.15); }
-  body.light-mode .swap { text-decoration-color: #1e8449 !important; }
-  body.light-mode .aid-active .swap { color: #1e8449 !important; }
-  body.light-mode .sources-active .quote-bible { text-decoration-color: rgba(42, 111, 168, 0.35); }
-  body.light-mode div[style*="font-size: 1.1em"] { color: #2c3038 !important; }
-  body.light-mode span[style*="color: #5a5a52"] { color: #b0a898 !important; }
-  body.light-mode span[style*="color: #808080"] { color: #8090a0 !important; }
-  body.light-mode span[style*="color: #a0a0a0"] { color: #777 !important; }
-  body.light-mode h1 { color: #2c3038 !important; }
-  body.light-mode a:not(#reading-toolbar a) { color: #4a7a9e !important; }
-  body.light-mode #back-to-top { background: #e8eaef !important; color: #556070 !important; border-color: #c0c5cc !important; }
-  body.light-mode #book-select { background: #e8eaef !important; color: #2c3038 !important; border-color: #c0c5cc !important; }
-  body.light-mode #toolbar-book-select, body.light-mode #toolbar-book-select-study { background: #e8eaef !important; color: #2c3038 !important; border-color: #c0c5cc !important; }
+<div id="scripture-content">
+  <!-- Book selector (hidden, kept for compatibility) -->
+  <div id="book-selector" style="display: none; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 0.9em;">
+    <span style="color: #999;">Book:</span>
+    <select id="book-select" onchange="switchBook(this.value)">
+      <option value="1nephi">1 Nephi</option>
+      <option value="2nephi">2 Nephi</option>
+      <option value="jacob">Jacob</option>
+      <option value="enos">Enos</option>
+      <option value="jarom">Jarom</option>
+      <option value="omni">Omni</option>
+      <option value="words-of-mormon">Words of Mormon</option>
+      <option value="mosiah">Mosiah</option>
+      <option value="alma">Alma</option>
+      <option value="helaman">Helaman</option>
+      <option value="3nephi">3 Nephi</option>
+      <option value="4nephi">4 Nephi</option>
+      <option value="mormon">Mormon</option>
+      <option value="ether">Ether</option>
+      <option value="moroni">Moroni</option>
+    </select>
+  </div>
 
-  /* Default link colors for dark mode */
-  a { color: #7cafc2; }
-  a:visited { color: #7cafc2; }
-  body.light-mode p[style*="color: #b0b0b0"] { color: #667888 !important; }
-  body.light-mode p[style*="color: #707070"] { color: #777 !important; }
+  <!-- Book content loaded dynamically by JS -->
+  <div id="book-content-container">
+  </div>
+</div>
 
-  .nav-item:hover { background: #333; color: #fff !important; }
-  .deity-hl { color: inherit; font-weight: inherit; }
-  .father-hl { color: inherit; font-weight: inherit; }
-  .spirit-hl { background: none; }
-  body.show-deity .deity-hl { color: #c0392b !important; font-weight: bold !important; }
-  body.show-deity .father-hl { color: #2e6cb5 !important; font-weight: bold !important; }
-  body.show-spirit .spirit-hl { background: rgba(192, 192, 192, 0.18); border-radius: 2px; padding: 1px 2px; }
-  .swap { text-decoration: underline; text-decoration-color: #27ae60; text-decoration-style: dotted; text-underline-offset: 3px; }
-  .aid-active .swap { color: #27ae60 !important; font-weight: bold !important; text-decoration: none !important; }
-  .editorial { display: none; }
-  .editorial-active .editorial { display: inline; background: rgba(212, 168, 67, 0.15); border-bottom: 2px solid #d4a843; }
-  #reading-toolbar a { color: #7cafc2; text-decoration: none; }
-  #reading-toolbar a:hover { text-decoration: underline; }
-  .sources-active .quote-bible { text-decoration: overline dotted; text-decoration-color: rgba(107, 163, 214, 0.4); text-decoration-thickness: 2px; }
-  .sources-active .quote-prophet { text-decoration: overline dotted; text-decoration-color: rgba(107, 163, 214, 0.4); text-decoration-thickness: 2px; }
-  .sources-active .quote-frame { font-weight: normal !important; font-style: italic; opacity: 0.7; }
-  .covenant { font-style: italic; }
-  .comment { text-decoration: underline; text-decoration-color: #888; text-decoration-style: dotted; text-underline-offset: 3px; cursor: pointer; position: relative; }
-  .comment-formula { color: #e8d88c; }
-  .comment:hover { text-decoration-color: #bbb; }
-  .comment-note { display: none; font-style: italic; color: #999; font-size: 0.85em; margin: 6px 0 10px 2em; padding: 6px 10px; border-left: 2px solid #666; line-height: 1.5; }
-  .comment-note.open { display: block; }
-  body.light-mode .comment-note { color: #666; border-left-color: #aaa; }
-  body.light-mode .comment-formula { color: #8a7a2a; }
-  .sources-active [data-source]::after { content: " (" attr(data-source) ")"; font-size: 0.75em; font-style: italic; font-weight: normal !important; text-decoration: none; display: inline-block; color: rgba(107, 163, 214, 0.7); }
-  .punct { color: #6a6860 !important; }
-  body.light-mode .punct { color: #a8a090 !important; }
-</style>
+<hr style="border: none; border-top: 1px solid #555; margin: 1.2em 0;" />
+
+<p style="text-align: center; color: #707070; font-size: 0.85em; margin-top: 2em;">
+  Text based on the public domain edition of the Book of Mormon. Language modernization, sense-line formatting, and introductions are editorial choices and are not part of the original text. Verse numbers follow the standard modern edition for cross-reference.
+</p>
+
+<!-- Back to top button -->
+<a href="#top" id="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" title="Back to top">↑</a>
 
 <script>
 (function(){
+  var root = document.documentElement;
   var deityOn = false;
   var aidOn = false;
   var deityLayerOn = false;
@@ -409,6 +1216,23 @@
   var currentBook = '1nephi';
   var currentChapterMap = {};
   var loadedBooks = {};
+  var currentTab = 'read';
+
+  // Tab defaults
+  var tabDefaults = {
+    read:  { flow: true,  punct: true,  wrap: true,  spacing: 'airy',   size: 'medium', density: 'normal' },
+    study: { flow: false, punct: false, wrap: false, spacing: 'normal', size: 'medium', density: 'normal' }
+  };
+
+  var tabOverrides = { read: {}, study: {} };
+
+  var spacingValues = { tight: 1.55, normal: 1.75, airy: 2.35 };
+  var sizeValues    = { small: '15px', medium: '17px', large: '20px' };
+  var densityValues = {
+    compact:  { letter: '-0.015em', word: '-0.03em', padding: '10px' },
+    normal:   { letter: '0em',      word: '0em',     padding: '18px' },
+    spacious: { letter: '0.02em',   word: '0.06em',  padding: '26px' }
+  };
 
   // Book metadata — chapter counts
   var bookMeta = {
@@ -429,7 +1253,7 @@
     'moroni': {name: 'Moroni', chapters: 10}
   };
 
-  // ---- DEITY HIGHLIGHTING (correct version from working build) ----
+  // ---- DEITY HIGHLIGHTING ----
   var deityPatterns = [
     'Christ, the Lord God Omnipotent',
     'the Lord God Omnipotent',
@@ -606,9 +1430,111 @@
       }
     });
     document.body.classList.toggle('aid-active', aidOn);
-    document.querySelectorAll('.aid-toggle').forEach(function(btn) {
-      btn.textContent = 'Reading Aid: ' + (aidOn ? 'On' : 'Off');
+    document.querySelectorAll('#aid-toggle, #aid-toggle-study').forEach(function(btn) {
+      var span = btn.querySelector('span');
+      if (span) span.textContent = aidOn ? 'On' : 'Off';
     });
+  };
+
+  // ---- SETTINGS FUNCTIONS ----
+  function getSetting(tab, key) {
+    var o = tabOverrides[tab];
+    return o[key] !== undefined ? o[key] : tabDefaults[tab][key];
+  }
+
+  window.toggleFlow = function(on) {
+    tabOverrides[currentTab].flow = on;
+    root.style.setProperty('--verse-num-display', on ? 'none' : 'inline');
+    root.style.setProperty('--verse-gap', on ? '2px' : '12px');
+  };
+
+  window.togglePunct = function(on) {
+    tabOverrides[currentTab].punct = on;
+    root.style.setProperty('--punct-opacity', on ? '0' : '1');
+  };
+
+  window.toggleWrapIndent = function(on) {
+    tabOverrides[currentTab].wrap = on;
+    root.style.setProperty('--wrap-indent', on ? '0.75em' : '0em');
+  };
+
+  window.setSpacing = function(level) {
+    tabOverrides[currentTab].spacing = level;
+    root.style.setProperty('--line-height', spacingValues[level]);
+    document.querySelectorAll('#spacing-row .option-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === level);
+    });
+  };
+
+  window.setSize = function(size) {
+    tabOverrides[currentTab].size = size;
+    root.style.setProperty('--font-size', sizeValues[size]);
+    document.querySelectorAll('.size-btn').forEach(function(btn) {
+      var label = btn.querySelector('.label').textContent.toLowerCase();
+      btn.classList.toggle('active', label === size);
+    });
+  };
+
+  window.setDensity = function(level) {
+    tabOverrides[currentTab].density = level;
+    var d = densityValues[level];
+    root.style.setProperty('--letter-spacing', d.letter);
+    root.style.setProperty('--word-spacing', d.word);
+    root.style.setProperty('--content-padding', d.padding);
+    document.querySelectorAll('#density-row .option-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === level);
+    });
+  };
+
+  function syncUI(flow, punct, wrap, spacing, size, density) {
+    document.getElementById('flow-toggle').checked = flow;
+    document.getElementById('punct-toggle').checked = punct;
+    document.getElementById('wrap-toggle').checked = wrap;
+
+    document.querySelectorAll('#spacing-row .option-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === spacing);
+    });
+    document.querySelectorAll('#density-row .option-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === density);
+    });
+    document.querySelectorAll('.size-btn').forEach(function(btn) {
+      var label = btn.querySelector('.label').textContent.toLowerCase();
+      btn.classList.toggle('active', label === size);
+    });
+  }
+
+  function applyTabSettings(tab) {
+    currentTab = tab;
+    var flow    = getSetting(tab, 'flow');
+    var punct   = getSetting(tab, 'punct');
+    var wrap    = getSetting(tab, 'wrap');
+    var spacing = getSetting(tab, 'spacing');
+    var size    = getSetting(tab, 'size');
+    var density = getSetting(tab, 'density');
+
+    root.style.setProperty('--verse-num-display', flow ? 'none' : 'inline');
+    root.style.setProperty('--verse-gap', flow ? '2px' : '12px');
+    root.style.setProperty('--punct-opacity', punct ? '0' : '1');
+    root.style.setProperty('--wrap-indent', wrap ? '0.75em' : '0em');
+    root.style.setProperty('--line-height', spacingValues[spacing]);
+    root.style.setProperty('--font-size', sizeValues[size]);
+
+    var d = densityValues[density];
+    root.style.setProperty('--letter-spacing', d.letter);
+    root.style.setProperty('--word-spacing', d.word);
+    root.style.setProperty('--content-padding', d.padding);
+
+    syncUI(flow, punct, wrap, spacing, size, density);
+  }
+
+  window.toggleSettings = function() {
+    document.getElementById('settings-panel').classList.toggle('visible');
+    document.getElementById('gear-btn').classList.toggle('active');
+  };
+
+  window.toggleDarkMode = function() {
+    var isLight = document.body.classList.toggle('light-mode');
+    document.getElementById('mode-toggle').checked = isLight;
   };
 
   // ---- TAB SWITCHING ----
@@ -618,24 +1544,18 @@
     var nav = document.getElementById('nav-panel');
     about.style.display = 'none';
     nav.style.display = 'none';
+    document.getElementById('settings-panel').classList.remove('visible');
+    document.getElementById('gear-btn').classList.remove('active');
     var scripture = document.getElementById('scripture-content');
     panels.forEach(function(p) {
       var panel = document.getElementById('panel-' + p);
       var btn = document.getElementById('tab-' + p);
       if (p === tab) {
         panel.style.display = 'block';
-        btn.style.background = '#3a3a3a';
-        btn.style.color = '#fff';
-        btn.style.fontWeight = 'bold';
-        btn.style.borderBottom = 'none';
-        btn.style.borderColor = '#555';
+        btn.classList.add('active');
       } else {
         panel.style.display = 'none';
-        btn.style.background = 'none';
-        btn.style.color = '#888';
-        btn.style.fontWeight = 'normal';
-        btn.style.borderBottom = '1px solid #555';
-        btn.style.borderColor = '#444';
+        btn.classList.remove('active');
       }
     });
     if (scripture) {
@@ -644,6 +1564,9 @@
     var introContent = document.getElementById('intro-content');
     if (introContent) {
       introContent.style.display = (tab === 'intro') ? 'block' : 'none';
+    }
+    if (tab === 'read' || tab === 'study') {
+      applyTabSettings(tab);
     }
   };
 
@@ -658,7 +1581,6 @@
         var btn = document.createElement('button');
         btn.className = 'grid-btn';
         btn.textContent = ch;
-        btn.style.cssText = 'width: 38px; height: 38px; border-radius: 6px; border: 1px solid #555; background: #2a2a2a; color: #ccc; font-family: Georgia, serif; font-size: 0.88em; cursor: pointer;';
         btn.onclick = function() {
           showChapter(bookId, ch);
           document.getElementById('nav-panel').style.display = 'none';
@@ -722,7 +1644,6 @@
       };
     });
     currentBook = bookId;
-    // Remove existing deity highlights before loading new book
     removeDeityHighlights();
     loadBook(bookId, function() {
       var target = document.getElementById('book-' + bookId);
@@ -730,7 +1651,6 @@
       showChapter(bookId, 1);
       var navPanel = document.getElementById('nav-panel');
       if (navPanel) navPanel.style.display = 'block';
-      // Re-apply deity highlights if layers are active
       if (deityLayerOn || spiritLayerOn) {
         addDeityHighlights();
       }
@@ -825,20 +1745,6 @@
     if (note) { note.classList.toggle('open'); }
   });
 
-  var currentFontSize = 100;
-  window.adjustFontSize = function(direction) {
-    currentFontSize += direction * 10;
-    if (currentFontSize < 60) currentFontSize = 60;
-    if (currentFontSize > 200) currentFontSize = 200;
-    document.body.style.fontSize = currentFontSize + '%';
-  };
-
-  window.toggleDarkMode = function() {
-    var isLight = document.body.classList.toggle('light-mode');
-    var link = document.getElementById('mode-link');
-    link.textContent = isLight ? '🌙' : '☀';
-  };
-
   // ---- CHAPTER NAVIGATION ----
   window.showChapter = function(bookId, chNum) {
     var allCh = document.querySelectorAll('#book-' + bookId + ' .chapter-content');
@@ -852,6 +1758,7 @@
     window.scrollTo({top: 0, behavior: 'smooth'});
     var navPanel = document.getElementById('nav-panel');
     if (navPanel) navPanel.style.display = 'none';
+    window.location.hash = bookId + '-' + chNum;
   };
 
   window.showChapterGrid = function(bookId) {
@@ -863,62 +1770,41 @@
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
 
+  // ---- HASH-BASED DEEP LINKING ----
+  function handleHash() {
+    var hash = window.location.hash.slice(1);
+    if (!hash) return;
+    var parts = hash.match(/^([a-z0-9-]+?)(?:-(\d+))?$/);
+    if (!parts) return;
+    var bookId = parts[1];
+    var chapter = parts[2] ? parseInt(parts[2]) : 1;
+    if (bookMeta[bookId]) {
+      switchBook(bookId);
+      showChapter(bookId, chapter);
+      switchTab('read');
+    }
+  }
+
+  window.addEventListener('hashchange', handleHash);
+
   // Initialize: load 1 Nephi on page ready
   document.addEventListener('DOMContentLoaded', function() {
+    // Force all swap spans to show data-orig text (toggle bug fix)
+    document.querySelectorAll('.swap').forEach(function(el) {
+      el.textContent = el.getAttribute('data-orig');
+    });
+    aidOn = false;
+    applyTabSettings('read');
     switchBook('1nephi');
+    handleHash();
   });
 
-})();
-</script>
-
-
-<div id="scripture-content">
-
-<!-- Book selector -->
-<div id="book-selector" style="display: none; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 0.9em;">
-  <span style="color: #999;">Book:</span>
-  <select id="book-select" onchange="switchBook(this.value)" style="background: #2a2a2a; color: #e0e0e0; border: 1px solid #555; border-radius: 4px; padding: 4px 8px; font-family: Georgia, serif; font-size: 1em; cursor: pointer;">
-    <option value="1nephi">1 Nephi</option>
-    <option value="2nephi">2 Nephi</option>
-    <option value="jacob">Jacob</option>
-    <option value="enos">Enos</option>
-    <option value="jarom">Jarom</option>
-    <option value="omni">Omni</option>
-    <option value="words-of-mormon">Words of Mormon</option>
-    <option value="mosiah">Mosiah</option>
-    <option value="alma">Alma</option>
-    <option value="helaman">Helaman</option>
-    <option value="3nephi">3 Nephi</option>
-    <option value="4nephi">4 Nephi</option>
-    <option value="mormon">Mormon</option>
-    <option value="ether">Ether</option>
-    <option value="moroni">Moroni</option>
-  </select>
-</div>
-
-<!-- Book content loaded dynamically by JS -->
-<div id="book-content-container">
-</div>
-
-</div>
-
-
-</div>
-
-<hr style="border: none; border-top: 1px solid #555; margin: 1.2em 0;" />
-
-<p style="text-align: center; color: #707070; font-size: 0.85em; margin-top: 2em;">
-  Text based on the public domain edition of the Book of Mormon. Language modernization, sense-line formatting, and introductions are editorial choices and are not part of the original text. Verse numbers follow the standard modern edition for cross-reference.
-</p>
-
-<!-- Back to top button -->
-<a href="#top" id="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" style="position: fixed; bottom: 24px; right: 24px; background: #3a3a3a; color: #999; border: 1px solid #555; border-radius: 50%; width: 40px; height: 40px; display: none; align-items: center; justify-content: center; text-decoration: none; font-size: 1.2em; cursor: pointer; z-index: 20; box-shadow: 0 2px 6px rgba(0,0,0,0.3);" title="Back to top">↑</a>
-<script>
-(function() {
+  // Back to top button
   var btn = document.getElementById('back-to-top');
   window.addEventListener('scroll', function() {
     btn.style.display = window.scrollY > 600 ? 'flex' : 'none';
   });
+
 })();
 </script>
 
