@@ -543,12 +543,73 @@ def load_intertext():
     else:
         print(f"  No KJV diff index at {diff_path}, skipping diff layer")
         _KJV_DIFF_INDEX = {}
+    geo_path = os.path.join(base, 'data', 'geo_index.json')
+    if os.path.exists(geo_path):
+        with open(geo_path) as f:
+            _GEO_INDEX = json.load(f)
+        total = sum(len(vs) for ch in _GEO_INDEX.values() for vs in ch.values() for vs in vs.values())
+        print(f"Loaded geo index: {total} verse-category entries for geography layer")
+    else:
+        print(f"  No geo index at {geo_path}, skipping geography layer")
+        _GEO_INDEX = {}
 
 def get_intertext(book_id, chapter, verse):
     """Return list of intertext entries for a given verse, or empty list."""
     if not _INTERTEXT_INDEX:
         return []
     return _INTERTEXT_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
+
+def get_geo_entries(book_id, chapter, verse):
+    """Return list of geography entries for a given verse, or empty list."""
+    if not _GEO_INDEX:
+        return []
+    return _GEO_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
+
+def apply_geo_highlights(line_text, geo_entries):
+    """Wrap geographic extract phrases within a line with <span class="geo-ref">.
+
+    Each geo entry has an 'extract' field with the text to match, and a 'category'.
+    We do case-insensitive substring matching and wrap with a span that includes
+    the category as a data attribute.
+    """
+    if not geo_entries:
+        return line_text
+
+    intervals = []
+    line_lower = line_text.lower()
+    for entry in geo_entries:
+        extract = entry.get('extract', '')
+        if not extract or len(extract) < 5:
+            continue
+        extract_lower = extract.lower()
+        idx = line_lower.find(extract_lower)
+        if idx != -1:
+            intervals.append((idx, idx + len(extract), entry.get('category', '')))
+
+    if not intervals:
+        return line_text
+
+    # Sort by start position; handle overlaps by taking longest
+    intervals.sort(key=lambda x: (x[0], -(x[1] - x[0])))
+    merged = []
+    for s, e, cat in intervals:
+        if merged and s < merged[-1][1]:
+            # Overlapping — keep the longer one
+            if e - s > merged[-1][1] - merged[-1][0]:
+                merged[-1] = (s, e, cat)
+        else:
+            merged.append((s, e, cat))
+
+    result = []
+    pos = 0
+    for s, e, cat in merged:
+        if pos < s:
+            result.append(line_text[pos:s])
+        result.append(f'<span class="geo-ref" data-geo-cat="{cat}">{line_text[s:e]}</span>')
+        pos = e
+    if pos < len(line_text):
+        result.append(line_text[pos:])
+    return ''.join(result)
 
 def get_kjv_diff(book_id, chapter, verse):
     """Return KJV diff data for a parallel verse, or None."""
@@ -671,6 +732,21 @@ def gen_verse(verse, swap_list, book_id=None):
             else:
                 wrapped.append(highlighted)
         processed = wrapped
+
+    # Check for geography entries on this verse
+    geo_entries = get_geo_entries(book_id, verse['chapter'], verse['verse']) if book_id else []
+    if geo_entries:
+        # Build category annotation for the verse (shown as subscript)
+        geo_cats = list(dict.fromkeys(e.get('category', '') for e in geo_entries))
+        geo_label = ', '.join(geo_cats)
+        geo_wrapped = []
+        for i, line in enumerate(processed):
+            highlighted = apply_geo_highlights(line, geo_entries)
+            if i == len(processed) - 1:
+                geo_wrapped.append(f'<span data-geo="{geo_label}">{highlighted}</span>')
+            else:
+                geo_wrapped.append(highlighted)
+        processed = geo_wrapped
 
     # Check for KJV diff data (parallel passage visualization)
     diff_data = get_kjv_diff(book_id, verse['chapter'], verse['verse']) if book_id else None
