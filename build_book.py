@@ -510,10 +510,11 @@ def shorten_bible_ref(ref):
 _INTERTEXT_INDEX = None  # populated by load_intertext()
 _PHRASE_INDEX = None      # populated by load_intertext()
 _KJV_DIFF_INDEX = None   # populated by load_intertext()
+_GEO_INDEX = None         # populated by load_intertext()
 
 def load_intertext():
-    """Load the enriched Hardy intertext index, phrase index, and KJV diff index."""
-    global _INTERTEXT_INDEX, _PHRASE_INDEX, _KJV_DIFF_INDEX
+    """Load the enriched Hardy intertext index, phrase index, KJV diff, and geo index."""
+    global _INTERTEXT_INDEX, _PHRASE_INDEX, _KJV_DIFF_INDEX, _GEO_INDEX
     base = os.path.dirname(os.path.abspath(__file__))
     intertext_path = os.path.join(base, 'data', 'hardy_intertext.json')
     phrase_path = os.path.join(base, 'data', 'hardy_phrase_index.json')
