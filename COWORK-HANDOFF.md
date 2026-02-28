@@ -115,6 +115,20 @@ Used sed to convert all existing `books/*.html` from inline styles to the same C
 
 ---
 
+## Bug Fixes Applied After Initial Rebuild (2026-02-28)
+
+### Chapter revert bug
+**Symptom:** Select a book, pick a chapter (e.g., 2 Nephi 9), start scrolling, and it snaps back to chapter 1.
+**Root cause:** `showChapter()` sets `window.location.hash`, which fires `hashchange` asynchronously. The original boolean flag guard (`hashUpdating = true/false`) reset before the async event fired, so `handleHash()` always ran → called `switchBook()` → which called `showChapter(bookId, 1)` → chapter 1.
+**Fix:** Replaced the flag with `lastHashWeSet` — a string that stores the hash we just set. `handleHash()` compares the current hash to this value and skips if they match. No race condition possible.
+
+### Scroll fighting / layout stutter on load
+**Symptom:** Brief lag when choosing a new book; scroll "fights" for a moment before working; toolbar doesn't stick immediately.
+**Root cause:** CSS transitions on `.verse` (`margin-bottom 0.3s`) and `.punct` (`opacity 0.3s`) fired on every CSS variable change, including initial page load and book switches — hundreds of elements animating simultaneously. Also `scrollTo({behavior: 'smooth'})` competed with layout recalculation.
+**Fix:** Moved transitions behind a `.transitions-enabled` class on `<body>` that gets added 300ms after `DOMContentLoaded`. Changed `scrollTo` to instant (removed `behavior: 'smooth'`). Transitions still animate smoothly when toggling settings via the gear panel.
+
+---
+
 ## Known Future Work
 
 - **Study tab layers** are partially implemented (deity highlighting works, intertextual quotations work for marked books). Isaiah parallels and covenant promises are stubbed.
