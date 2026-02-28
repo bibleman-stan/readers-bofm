@@ -341,7 +341,7 @@ def build_phrase_index(hardy_data_file, scripture_file, output_file):
             bom_text = scripture_dict[scripture_key]
 
             # Perform phrase matching
-            matches = find_phrase_matches(combined_bible_text, bom_text, min_words=3)
+            matches = find_phrase_matches(combined_bible_text, bom_text, min_words=4)
 
             if not matches:
                 stats['no_phrase_match'] += 1
