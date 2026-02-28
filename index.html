@@ -57,6 +57,18 @@
     display: flex;
     align-items: center;
     height: 44px;
+    overflow: hidden;
+    transition: height 0.25s ease, opacity 0.2s ease;
+  }
+
+  .toolbar-collapsed .tab-bar {
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .toolbar-collapsed .toolbar-panel {
+    padding: 4px 0 2px 0;
   }
 
   .tab-btn {
@@ -717,6 +729,49 @@
     cursor: pointer;
   }
 
+  /* Chapter picker popup — appears inline when switching books */
+  #chapter-picker {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #1e1e1e;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 340px;
+    width: 90vw;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  }
+  body.light-mode #chapter-picker {
+    background: #f5f0e8;
+    border-color: #bbb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  #chapter-picker-title {
+    text-align: center;
+    color: #ccc;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+  }
+  body.light-mode #chapter-picker-title { color: #444; }
+  #chapter-picker-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+  }
+  #chapter-picker-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+  }
+
   #nav-panel {
     display: none;
     margin-top: 4px;
@@ -1112,7 +1167,7 @@
   <!-- Read panel -->
   <div id="panel-read" class="toolbar-panel">
     <div class="panel-content">
-      <select id="toolbar-book-select" onchange="switchBook(this.value)">
+      <select id="toolbar-book-select" onchange="onBookSelectChange(this.value, this)">
         <option value="1nephi">1 Nephi</option>
         <option value="2nephi">2 Nephi</option>
         <option value="jacob">Jacob</option>
@@ -1140,7 +1195,7 @@
   <!-- Study panel -->
   <div id="panel-study" class="toolbar-panel" style="display: none;">
     <div class="panel-content">
-      <select id="toolbar-book-select-study" onchange="switchBook(this.value)">
+      <select id="toolbar-book-select-study" onchange="onBookSelectChange(this.value, this)">
         <option value="1nephi">1 Nephi</option>
         <option value="2nephi">2 Nephi</option>
         <option value="jacob">Jacob</option>
@@ -1165,6 +1220,13 @@
       <span style="color: #555;">|</span>
       <a href="#" onclick="switchTab('intro'); var s=document.getElementById('intro-'+currentBook); if(s){s.open=true; setTimeout(function(){s.scrollIntoView({behavior:'smooth',block:'start'});},100);} return false;" class="about-book-link" style="color: #999; text-decoration: none; font-size: 0.9em; white-space: nowrap;">About 1 Nephi</a>
     </div>
+  </div>
+
+  <!-- Chapter picker popup — for direct book+chapter navigation -->
+  <div id="chapter-picker-overlay" onclick="closeChapterPicker()"></div>
+  <div id="chapter-picker">
+    <div id="chapter-picker-title"></div>
+    <div id="chapter-picker-grid"></div>
   </div>
 
   <!-- Shared panels (accessible from both Read and Study) -->
@@ -1647,6 +1709,60 @@
     }
   }
 
+  // ---- CHAPTER PICKER (book+chapter in one action) ----
+  var pendingBookId = null;
+
+  window.onBookSelectChange = function(bookId, selectEl) {
+    var meta = bookMeta[bookId];
+    if (!meta) return;
+    // Single-chapter books: navigate directly, no picker needed
+    if (meta.chapters === 1) {
+      switchBook(bookId);
+      return;
+    }
+    // If selecting the same book we're already on, just show the regular nav grid
+    if (bookId === currentBook) {
+      // Reset dropdown to current book (it already matches)
+      toggleNav();
+      return;
+    }
+    // Show chapter picker popup
+    pendingBookId = bookId;
+    var title = document.getElementById('chapter-picker-title');
+    title.textContent = meta.name + ' — choose chapter';
+    var grid = document.getElementById('chapter-picker-grid');
+    grid.innerHTML = '';
+    for (var i = 1; i <= meta.chapters; i++) {
+      (function(ch) {
+        var btn = document.createElement('button');
+        btn.className = 'grid-btn';
+        btn.textContent = ch;
+        btn.onclick = function() {
+          closeChapterPicker();
+          switchBook(pendingBookId, ch);
+          return false;
+        };
+        grid.appendChild(btn);
+      })(i);
+    }
+    document.getElementById('chapter-picker-overlay').style.display = 'block';
+    document.getElementById('chapter-picker').style.display = 'block';
+  };
+
+  window.closeChapterPicker = function() {
+    document.getElementById('chapter-picker-overlay').style.display = 'none';
+    document.getElementById('chapter-picker').style.display = 'none';
+    // Reset dropdown back to current book since user cancelled or picked
+    ['book-select', 'toolbar-book-select', 'toolbar-book-select-study'].forEach(function(id) {
+      var sel = document.getElementById(id);
+      if (sel) sel.value = currentBook;
+    });
+  };
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeChapterPicker();
+  });
+
   function loadBook(bookId, callback) {
     if (loadedBooks[bookId]) {
       if (callback) callback();
@@ -1682,7 +1798,8 @@
       });
   }
 
-  window.switchBook = function(bookId) {
+  window.switchBook = function(bookId, targetChapter) {
+    var ch = targetChapter || 1;
     document.querySelectorAll('.book-content').forEach(function(b) { b.style.display = 'none'; });
     ['book-select', 'toolbar-book-select', 'toolbar-book-select-study'].forEach(function(id) {
       var sel = document.getElementById(id);
@@ -1705,7 +1822,7 @@
     loadBook(bookId, function() {
       var target = document.getElementById('book-' + bookId);
       if (target) target.style.display = 'block';
-      showChapter(bookId, 1);
+      showChapter(bookId, ch);
       var navPanel = document.getElementById('nav-panel');
       if (navPanel) navPanel.style.display = 'block';
       if (deityLayerOn || spiritLayerOn) {
@@ -1854,8 +1971,7 @@
     var bookId = parts[1];
     var chapter = parts[2] ? parseInt(parts[2]) : 1;
     if (bookMeta[bookId]) {
-      switchBook(bookId);
-      showChapter(bookId, chapter);
+      switchBook(bookId, chapter);
       switchTab('read');
     }
   }
@@ -1884,6 +2000,34 @@
   var btn = document.getElementById('back-to-top');
   window.addEventListener('scroll', function() {
     btn.style.display = window.scrollY > 600 ? 'flex' : 'none';
+  });
+
+  // ---- TOOLBAR COLLAPSE ON SCROLL ----
+  var toolbar = document.getElementById('reading-toolbar');
+  var lastScrollY = 0;
+  var collapseThreshold = 100; // pixels scrolled before collapsing
+
+  window.addEventListener('scroll', function() {
+    var y = window.scrollY;
+    if (y > collapseThreshold && y > lastScrollY) {
+      // Scrolling down past threshold — collapse
+      toolbar.classList.add('toolbar-collapsed');
+    } else if (y < lastScrollY || y <= collapseThreshold) {
+      // Scrolling up or near the top — expand
+      toolbar.classList.remove('toolbar-collapsed');
+    }
+    lastScrollY = y;
+  }, { passive: true });
+
+  // Tap the collapsed toolbar to expand it
+  toolbar.addEventListener('click', function(e) {
+    if (toolbar.classList.contains('toolbar-collapsed')) {
+      // Only expand if they clicked the panel area, not a control inside it
+      var tag = e.target.tagName.toLowerCase();
+      if (tag !== 'select' && tag !== 'button' && tag !== 'input' && tag !== 'a') {
+        toolbar.classList.remove('toolbar-collapsed');
+      }
+    }
   });
 
 })();
