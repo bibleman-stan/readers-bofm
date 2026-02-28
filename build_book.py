@@ -508,11 +508,14 @@ def shorten_bible_ref(ref):
     return ref
 
 _INTERTEXT_INDEX = None  # populated by load_intertext()
+_PHRASE_INDEX = None      # populated by load_intertext()
 
 def load_intertext():
-    """Load the enriched Hardy intertext index (book→chapter→verse→[refs])."""
-    global _INTERTEXT_INDEX
-    intertext_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'hardy_intertext.json')
+    """Load the enriched Hardy intertext index and phrase index."""
+    global _INTERTEXT_INDEX, _PHRASE_INDEX
+    base = os.path.dirname(os.path.abspath(__file__))
+    intertext_path = os.path.join(base, 'data', 'hardy_intertext.json')
+    phrase_path = os.path.join(base, 'data', 'hardy_phrase_index.json')
     if os.path.exists(intertext_path):
         with open(intertext_path) as f:
             _INTERTEXT_INDEX = json.load(f)
@@ -521,12 +524,73 @@ def load_intertext():
     else:
         print(f"  No intertext data at {intertext_path}, skipping intertext injection")
         _INTERTEXT_INDEX = {}
+    if os.path.exists(phrase_path):
+        with open(phrase_path) as f:
+            _PHRASE_INDEX = json.load(f)
+        total = sum(1 for ch in _PHRASE_INDEX.values() for vs in ch.values() for _ in vs.values())
+        print(f"Loaded phrase index: {total} verse entries for phrase-level quotation coloring")
+    else:
+        print(f"  No phrase index at {phrase_path}, quotations will use full-verse coloring")
+        _PHRASE_INDEX = {}
 
 def get_intertext(book_id, chapter, verse):
     """Return list of intertext entries for a given verse, or empty list."""
     if not _INTERTEXT_INDEX:
         return []
     return _INTERTEXT_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
+
+def get_phrase_matches(book_id, chapter, verse):
+    """Return phrase match data for a quotation verse, or None."""
+    if not _PHRASE_INDEX:
+        return None
+    return _PHRASE_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), None)
+
+def apply_phrase_highlights(line_text, phrases, css_class):
+    """Wrap matched phrases within a line with <span class="css_class">.
+
+    Uses case-insensitive matching to find phrase text within the line,
+    then wraps matched portions. Non-matched portions are left unwrapped.
+    Returns the line with spans inserted.
+    """
+    if not phrases:
+        return line_text
+
+    # Find all phrase occurrences in this line (case-insensitive)
+    intervals = []
+    line_lower = line_text.lower()
+    for phrase in phrases:
+        phrase_lower = phrase.lower()
+        start = 0
+        while True:
+            idx = line_lower.find(phrase_lower, start)
+            if idx == -1:
+                break
+            intervals.append((idx, idx + len(phrase)))
+            start = idx + 1
+
+    if not intervals:
+        return line_text
+
+    # Merge overlapping intervals
+    intervals.sort()
+    merged = [intervals[0]]
+    for s, e in intervals[1:]:
+        if s <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], e))
+        else:
+            merged.append((s, e))
+
+    # Build result with spans around matched portions
+    result = []
+    pos = 0
+    for s, e in merged:
+        if pos < s:
+            result.append(line_text[pos:s])
+        result.append(f'<span class="{css_class}">{line_text[s:e]}</span>')
+        pos = e
+    if pos < len(line_text):
+        result.append(line_text[pos:])
+    return ''.join(result)
 
 # ============================================================================
 # HTML GENERATION — outputs standalone book fragments
@@ -540,19 +604,27 @@ def gen_verse(verse, swap_list, book_id=None):
     entries = get_intertext(book_id, verse['chapter'], verse['verse']) if book_id else []
 
     if entries:
-        # Determine highest-priority type: quotation > allusion
         has_quotation = any(e['type'] == 'quotation' for e in entries)
         css_class = 'quote-bible' if has_quotation else 'quote-allusion'
-        # Combine all bible refs into data-source attribute (abbreviated)
         sources = '; '.join(shorten_bible_ref(e['bible_ref']) for e in entries)
-        # Wrap each line in the intertext span (for coloring),
-        # but only put data-source on the LAST line (reference shows once per verse)
+
+        # For quotations: try phrase-level highlighting (color only matched phrases)
+        phrase_data = get_phrase_matches(book_id, verse['chapter'], verse['verse']) if has_quotation else None
+        phrase_texts = [m['text'] for m in phrase_data['matches']] if phrase_data and phrase_data.get('matches') else []
+
         wrapped = []
         for i, line in enumerate(processed):
-            if i == len(processed) - 1:
-                wrapped.append(f'<span class="{css_class}" data-source="{sources}">{line}</span>')
+            if has_quotation and phrase_texts:
+                # Phrase-level: wrap only matched substrings within the line
+                highlighted = apply_phrase_highlights(line, phrase_texts, css_class)
             else:
-                wrapped.append(f'<span class="{css_class}">{line}</span>')
+                # Whole-verse: wrap entire line (allusions, or quotations without phrase data)
+                highlighted = f'<span class="{css_class}">{line}</span>'
+            # Add data-source only on the last line
+            if i == len(processed) - 1:
+                wrapped.append(f'<span data-source="{sources}">{highlighted}</span>')
+            else:
+                wrapped.append(highlighted)
         processed = wrapped
 
     parts = [f'<div class="verse"><span class="verse-num">{ref}</span>']
