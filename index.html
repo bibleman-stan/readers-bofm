@@ -1750,7 +1750,7 @@
   });
 
   // ---- CHAPTER NAVIGATION ----
-  var hashUpdating = false;  // Guard against circular hash calls
+  var lastHashWeSet = '';  // Track hash we set to avoid circular calls
 
   window.showChapter = function(bookId, chNum) {
     var allCh = document.querySelectorAll('#book-' + bookId + ' .chapter-content');
@@ -1764,10 +1764,9 @@
     window.scrollTo({top: 0});
     var navPanel = document.getElementById('nav-panel');
     if (navPanel) navPanel.style.display = 'none';
-    // Update hash without triggering hashchange loop
-    hashUpdating = true;
-    window.location.hash = bookId + '-' + chNum;
-    hashUpdating = false;
+    // Update hash — store what we set so handleHash can skip it
+    lastHashWeSet = bookId + '-' + chNum;
+    window.location.hash = lastHashWeSet;
   };
 
   window.showChapterGrid = function(bookId) {
@@ -1781,9 +1780,10 @@
 
   // ---- HASH-BASED DEEP LINKING ----
   function handleHash() {
-    if (hashUpdating) return;  // Skip if we just set the hash ourselves
     var hash = window.location.hash.slice(1);
     if (!hash) return;
+    // Skip if this is the hash we just set ourselves
+    if (hash === lastHashWeSet) return;
     var parts = hash.match(/^([a-z0-9-]+?)(?:-(\d+))?$/);
     if (!parts) return;
     var bookId = parts[1];
