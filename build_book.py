@@ -509,13 +509,15 @@ def shorten_bible_ref(ref):
 
 _INTERTEXT_INDEX = None  # populated by load_intertext()
 _PHRASE_INDEX = None      # populated by load_intertext()
+_KJV_DIFF_INDEX = None   # populated by load_intertext()
 
 def load_intertext():
-    """Load the enriched Hardy intertext index and phrase index."""
-    global _INTERTEXT_INDEX, _PHRASE_INDEX
+    """Load the enriched Hardy intertext index, phrase index, and KJV diff index."""
+    global _INTERTEXT_INDEX, _PHRASE_INDEX, _KJV_DIFF_INDEX
     base = os.path.dirname(os.path.abspath(__file__))
     intertext_path = os.path.join(base, 'data', 'hardy_intertext.json')
     phrase_path = os.path.join(base, 'data', 'hardy_phrase_index.json')
+    diff_path = os.path.join(base, 'data', 'kjv_diff_index.json')
     if os.path.exists(intertext_path):
         with open(intertext_path) as f:
             _INTERTEXT_INDEX = json.load(f)
@@ -532,12 +534,51 @@ def load_intertext():
     else:
         print(f"  No phrase index at {phrase_path}, quotations will use full-verse coloring")
         _PHRASE_INDEX = {}
+    if os.path.exists(diff_path):
+        with open(diff_path) as f:
+            _KJV_DIFF_INDEX = json.load(f)
+        total = sum(1 for ch in _KJV_DIFF_INDEX.values() for vs in ch.values() for _ in vs.values())
+        print(f"Loaded KJV diff index: {total} verse entries for parallel passage visualization")
+    else:
+        print(f"  No KJV diff index at {diff_path}, skipping diff layer")
+        _KJV_DIFF_INDEX = {}
 
 def get_intertext(book_id, chapter, verse):
     """Return list of intertext entries for a given verse, or empty list."""
     if not _INTERTEXT_INDEX:
         return []
     return _INTERTEXT_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
+
+def get_kjv_diff(book_id, chapter, verse):
+    """Return KJV diff data for a parallel verse, or None."""
+    if not _KJV_DIFF_INDEX:
+        return None
+    return _KJV_DIFF_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), None)
+
+def render_kjv_diff(diff_data):
+    """Render a KJV diff entry as HTML with strikethrough/bold markup.
+
+    Returns an HTML string where:
+    - 'delete' words get <del class="kjv-del">
+    - 'insert' words get <b class="kjv-ins">
+    - 'equal' words are plain text
+    Also includes the KJV source reference.
+    """
+    parts = []
+    for segment in diff_data['diff']:
+        text = segment['text']
+        stype = segment['type']
+        if stype == 'delete':
+            parts.append(f'<del class="kjv-del">{text}</del>')
+        elif stype == 'insert':
+            parts.append(f'<b class="kjv-ins">{text}</b>')
+        else:
+            parts.append(text)
+    kjv_ref = diff_data.get('kjv_ref', '')
+    html = ' '.join(parts)
+    # Clean up spacing around punctuation that diff may have split awkwardly
+    html = re.sub(r'\s+([.,;:!?])', r'\1', html)
+    return f'<span class="kjv-diff-text">{html}</span><span class="kjv-diff-ref">{kjv_ref}</span>'
 
 def get_phrase_matches(book_id, chapter, verse):
     """Return phrase match data for a quotation verse, or None."""
@@ -627,10 +668,23 @@ def gen_verse(verse, swap_list, book_id=None):
                 wrapped.append(highlighted)
         processed = wrapped
 
-    parts = [f'<div class="verse"><span class="verse-num">{ref}</span>']
-    for line in processed:
-        parts.append(f'  <span class="line">{line}</span>')
-    parts.append('</div>')
+    # Check for KJV diff data (parallel passage visualization)
+    diff_data = get_kjv_diff(book_id, verse['chapter'], verse['verse']) if book_id else None
+    has_diff = diff_data is not None and any(s['type'] != 'equal' for s in diff_data.get('diff', []))
+
+    if has_diff:
+        # Verse has both normal and diff views
+        diff_html = render_kjv_diff(diff_data)
+        parts = [f'<div class="verse has-kjv-diff"><span class="verse-num">{ref}</span>']
+        for line in processed:
+            parts.append(f'  <span class="line verse-normal">{line}</span>')
+        parts.append(f'  <span class="line verse-diff">{diff_html}</span>')
+        parts.append('</div>')
+    else:
+        parts = [f'<div class="verse"><span class="verse-num">{ref}</span>']
+        for line in processed:
+            parts.append(f'  <span class="line">{line}</span>')
+        parts.append('</div>')
     return '\n'.join(parts)
 
 def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):

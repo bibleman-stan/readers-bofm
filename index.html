@@ -665,6 +665,40 @@
     color: rgba(107, 163, 214, 0.5);
   }
 
+  /* === KJV DIFF LAYER === */
+  /* By default, diff view is hidden; normal text shows */
+  .verse-diff { display: none !important; }
+
+  /* When diff layer is active, swap views */
+  body.show-kjv-diff .has-kjv-diff .verse-normal { display: none !important; }
+  body.show-kjv-diff .has-kjv-diff .verse-diff { display: inline !important; }
+
+  /* Diff markup styles */
+  .kjv-del {
+    text-decoration: line-through;
+    opacity: 0.5;
+    font-weight: normal;
+  }
+  .kjv-ins {
+    font-weight: bold;
+  }
+  .kjv-diff-ref {
+    display: inline;
+    font-size: 0.7em;
+    font-style: italic;
+    color: rgba(107, 163, 214, 0.5);
+    margin-left: 0.5em;
+  }
+  .kjv-diff-ref::before {
+    content: "\2014\00a0";
+  }
+  .kjv-diff-text {
+    display: inline;
+  }
+
+  body.light-mode .kjv-del { opacity: 0.4; }
+  body.light-mode .kjv-diff-ref { color: rgba(42, 100, 150, 0.5); }
+
   /* Intro section styles */
   .intro-section {
     margin-bottom: 0.3em;
@@ -1237,8 +1271,8 @@
       </label>
     </div>
     <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer;">
-      <input type="checkbox" id="isaiah-check" style="accent-color: #6ba3d6;" disabled>
-      <span style="opacity: 0.5;">Isaiah Parallels <span style="color: #6ba3d6;">■</span> <i>(coming soon)</i></span>
+      <input type="checkbox" id="kjv-diff-check" onchange="toggleKjvDiff(this.checked)" style="accent-color: #6ba3d6;">
+      <span>KJV Parallels <span style="color: #6ba3d6;">■</span></span>
     </label>
   </div>
   <div id="about-panel">
@@ -1860,7 +1894,7 @@
   };
 
   window.clearAllLayers = function() {
-    ['deity-check', 'spirit-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'kjv-diff-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb) { cb.checked = false; }
     });
@@ -1868,6 +1902,7 @@
     var offRadio = document.querySelector('input[name="intertext-mode"][value="off"]');
     if (offRadio) offRadio.checked = true;
     setIntertextMode('off');
+    toggleKjvDiff(false);
     document.body.classList.remove('show-deity', 'show-spirit');
     deityLayerOn = false;
     spiritLayerOn = false;
@@ -1875,7 +1910,7 @@
   };
 
   window.selectAllLayers = function() {
-    ['deity-check', 'spirit-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'kjv-diff-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb && !cb.disabled) { cb.checked = true; }
     });
@@ -1885,6 +1920,7 @@
     toggleDeityLayer(true);
     toggleSpiritLayer(true);
     setIntertextMode('all');
+    toggleKjvDiff(true);
   };
 
   window.jumpTo = function(id) {
@@ -1905,7 +1941,9 @@
     else if (mode === 'all') document.body.classList.add('sources-all');
   };
   window.toggleIntertext = function(on) { window.setIntertextMode(on ? 'all' : 'off'); };
-  window.toggleIsaiah = function(on) {};
+  window.toggleKjvDiff = function(on) {
+    document.body.classList.toggle('show-kjv-diff', on);
+  };
   window.toggleCovenant = function(on) { document.body.classList.toggle('covenant-active', on); };
   window.toggleComments = function(on) {};
 
