@@ -1829,8 +1829,11 @@
       var target = document.getElementById('book-' + bookId);
       if (target) target.style.display = 'block';
       showChapter(bookId, ch);
-      var navPanel = document.getElementById('nav-panel');
-      if (navPanel) navPanel.style.display = 'block';
+      // Only show chapter grid if no specific chapter was requested
+      if (!targetChapter) {
+        var navPanel = document.getElementById('nav-panel');
+        if (navPanel) navPanel.style.display = 'block';
+      }
       if (deityLayerOn || spiritLayerOn) {
         addDeityHighlights();
       }
@@ -1844,6 +1847,7 @@
 
   // ---- UI TOGGLES ----
   window.toggleAbout = function() {
+    pauseCollapse();
     var panel = document.getElementById('about-panel');
     var nav = document.getElementById('nav-panel');
     nav.style.display = 'none';
@@ -1851,6 +1855,7 @@
   };
 
   window.toggleNav = function() {
+    pauseCollapse();
     var panel = document.getElementById('nav-panel');
     var about = document.getElementById('about-panel');
     var layers = document.getElementById('layers-panel');
@@ -1862,6 +1867,7 @@
   };
 
   window.toggleLayers = function() {
+    pauseCollapse();
     var panel = document.getElementById('layers-panel');
     var link = document.getElementById('layers-link');
     var nav = document.getElementById('nav-panel');
@@ -2008,6 +2014,7 @@
   var lastScrollY = 0;
   var scrollTicking = false;
   var scrollDeadZone = 8; // ignore jitter smaller than this
+  var collapseDisabledUntil = 0; // timestamp — ignore collapse logic until this time
 
   window.addEventListener('scroll', function() {
     if (!scrollTicking) {
@@ -2015,7 +2022,12 @@
         var y = window.scrollY;
         // Back-to-top button
         backBtn.style.display = y > 600 ? 'flex' : 'none';
-        // Toolbar collapse — only act on intentional scrolls
+        // Toolbar collapse — skip if temporarily paused (panel toggle, etc.)
+        if (Date.now() < collapseDisabledUntil) {
+          lastScrollY = y;
+          scrollTicking = false;
+          return;
+        }
         var delta = y - lastScrollY;
         if (y <= 80) {
           toolbar.classList.remove('toolbar-collapsed');
@@ -2030,6 +2042,9 @@
       scrollTicking = true;
     }
   }, { passive: true });
+
+  // Pause collapse logic briefly (call before toggling panels that change page height)
+  function pauseCollapse() { collapseDisabledUntil = Date.now() + 400; }
 
   // Tap the collapsed toolbar to expand it
   toolbar.addEventListener('click', function(e) {
