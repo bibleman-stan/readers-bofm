@@ -1,210 +1,330 @@
-[
-  {
-    "verse": "1:4",
-    "title": "Signs and miracles begin appearing"
-  },
-  {
-    "verse": "1:9",
-    "title": "Unbelievers plan death for believers"
-  },
-  {
-    "verse": "1:12",
-    "title": "Nephi prays for the faithful"
-  },
-  {
-    "verse": "1:15",
-    "title": "Night without darkness fulfills prophecy"
-  },
-  {
-    "verse": "1:19",
-    "title": "Sun rises on day of Christ's birth"
-  },
-  {
-    "verse": "2:1",
-    "title": "People forget signs; grow wicked"
-  },
-  {
-    "verse": "2:11",
-    "title": "Wars against Gadianton robbers begin"
-  },
-  {
-    "verse": "2:14",
-    "title": "Lamanites and Nephites unite as one"
-  },
-  {
-    "verse": "3:11",
-    "title": "Giddianhi demands Nephite surrender"
-  },
-  {
-    "verse": "3:12",
-    "title": "Lachoneus prepares for war"
-  },
-  {
-    "verse": "4:1",
-    "title": "Armies encircle Nephites; starvation"
-  },
-  {
-    "verse": "4:13",
-    "title": "Nephi calls Nephites to righteousness"
-  },
-  {
-    "verse": "4:21",
-    "title": "Nephites desire to come forth from siege"
-  },
-  {
-    "verse": "4:29",
-    "title": "Giddianhi and robbers defeated and slain"
-  },
-  {
-    "verse": "5:12",
-    "title": "Great destruction in the land"
-  },
-  {
-    "verse": "6:2",
-    "title": "Destruction and darkness cover earth"
-  },
-  {
-    "verse": "8:20",
-    "title": "Darkness continues for three days"
-  },
-  {
-    "verse": "9:1",
-    "title": "Jesus Christ appears and speaks"
-  },
-  {
-    "verse": "9:6",
-    "title": "Christ demonstrates his wounds"
-  },
-  {
-    "verse": "9:15",
-    "title": "Christ institutes sacrament of bread"
-  },
-  {
-    "verse": "10:1",
-    "title": "Voice calls scattered house of Israel"
-  },
-  {
-    "verse": "10:8",
-    "title": "Three days of destruction end"
-  },
-  {
-    "verse": "11:1",
-    "title": "Multitude gathers; Jesus descends"
-  },
-  {
-    "verse": "11:8",
-    "title": "Jesus identifies himself to people"
-  },
-  {
-    "verse": "11:15",
-    "title": "People thrust hands into Jesus' side"
-  },
-  {
-    "verse": "11:21",
-    "title": "Jesus gives power to baptize"
-  },
-  {
-    "verse": "11:27",
-    "title": "Jesus teaches doctrine about Trinity"
-  },
-  {
-    "verse": "12:1",
-    "title": "Jesus begins Sermon on Mount"
-  },
-  {
-    "verse": "12:3",
-    "title": "Blessed are poor in spirit"
-  },
-  {
-    "verse": "12:44",
-    "title": "Love enemies; be perfect like Father"
-  },
-  {
-    "verse": "13:5",
-    "title": "Parable of salt and light"
-  },
-  {
-    "verse": "13:43",
-    "title": "Love enemies; pray for persecutors"
-  },
-  {
-    "verse": "14:1",
-    "title": "Do not judge others harshly"
-  },
-  {
-    "verse": "14:24",
-    "title": "Build foundation on rock, not sand"
-  },
-  {
-    "verse": "15:1",
-    "title": "Jesus speaks on charity and gifts"
-  },
-  {
-    "verse": "16:4",
-    "title": "Jesus heals all their sick"
-  },
-  {
-    "verse": "16:10",
-    "title": "Jesus administers sacrament again"
-  },
-  {
-    "verse": "17:1",
-    "title": "Jesus gives final instructions"
-  },
-  {
-    "verse": "18:1",
-    "title": "Jesus institutes sacrament for people"
-  },
-  {
-    "verse": "18:4",
-    "title": "Sacrament of wine and remembrance"
-  },
-  {
-    "verse": "18:10",
-    "title": "To partake unworthily brings condemnation"
-  },
-  {
-    "verse": "18:36",
-    "title": "Angels minister unto the people"
-  },
-  {
-    "verse": "19:1",
-    "title": "Jesus prays for twelve apostles"
-  },
-  {
-    "verse": "19:2",
-    "title": "Twelve disciples pray with Jesus"
-  },
-  {
-    "verse": "19:13",
-    "title": "Jesus prays for little children"
-  },
-  {
-    "verse": "20:1",
-    "title": "Jesus appears again to multitude"
-  },
-  {
-    "verse": "20:3",
-    "title": "Multitude cannot contain all teachings"
-  },
-  {
-    "verse": "21:1",
-    "title": "Jesus shows crucifixion marks"
-  },
-  {
-    "verse": "21:8",
-    "title": "Nephi given charge of records"
-  },
-  {
-    "verse": "26:1",
-    "title": "Jesus prepares to ascend to heaven"
-  },
-  {
-    "verse": "26:12",
-    "title": "Jesus departs; angels minister"
-  },
-  {
-    "verse": "27:1",
-    "title": "Great peace established for years"
-  }
-]
+{
+  "1": [
+    {
+      "verse": 4,
+      "title": "Signs and miracles begin appearing"
+    },
+    {
+      "verse": 9,
+      "title": "Unbelievers plan death for believers"
+    },
+    {
+      "verse": 12,
+      "title": "Nephi prays for the faithful"
+    },
+    {
+      "verse": 15,
+      "title": "Night without darkness fulfills prophecy"
+    },
+    {
+      "verse": 19,
+      "title": "Sun rises on day of Christ's birth"
+    }
+  ],
+  "2": [
+    {
+      "verse": 1,
+      "title": "People forget signs; grow wicked"
+    },
+    {
+      "verse": 11,
+      "title": "Wars against Gadianton robbers begin"
+    },
+    {
+      "verse": 14,
+      "title": "Lamanites and Nephites unite as one"
+    }
+  ],
+  "3": [
+    {
+      "verse": 11,
+      "title": "Giddianhi demands Nephite surrender"
+    },
+    {
+      "verse": 12,
+      "title": "Lachoneus prepares for war"
+    }
+  ],
+  "4": [
+    {
+      "verse": 1,
+      "title": "Armies encircle Nephites; starvation"
+    },
+    {
+      "verse": 13,
+      "title": "Nephi calls Nephites to righteousness"
+    },
+    {
+      "verse": 21,
+      "title": "Nephites desire to come forth from siege"
+    },
+    {
+      "verse": 29,
+      "title": "Giddianhi and robbers defeated and slain"
+    }
+  ],
+  "5": [
+    {
+      "verse": 12,
+      "title": "Great destruction in the land"
+    }
+  ],
+  "6": [
+    {
+      "verse": 2,
+      "title": "Destruction and darkness cover earth"
+    }
+  ],
+  "8": [
+    {
+      "verse": 20,
+      "title": "Darkness continues for three days"
+    }
+  ],
+  "9": [
+    {
+      "verse": 1,
+      "title": "Jesus Christ appears and speaks"
+    },
+    {
+      "verse": 6,
+      "title": "Christ demonstrates his wounds"
+    },
+    {
+      "verse": 15,
+      "title": "Christ institutes sacrament of bread"
+    }
+  ],
+  "10": [
+    {
+      "verse": 1,
+      "title": "Voice calls scattered house of Israel"
+    },
+    {
+      "verse": 8,
+      "title": "Three days of destruction end"
+    }
+  ],
+  "11": [
+    {
+      "verse": 1,
+      "title": "Multitude gathers; Jesus descends"
+    },
+    {
+      "verse": 8,
+      "title": "Jesus identifies himself to people"
+    },
+    {
+      "verse": 15,
+      "title": "People thrust hands into Jesus' side"
+    },
+    {
+      "verse": 21,
+      "title": "Jesus gives power to baptize"
+    },
+    {
+      "verse": 27,
+      "title": "Jesus teaches doctrine about Trinity"
+    }
+  ],
+  "12": [
+    {
+      "verse": 1,
+      "title": "Jesus begins Sermon on Mount"
+    },
+    {
+      "verse": 3,
+      "title": "Blessed are poor in spirit"
+    },
+    {
+      "verse": 44,
+      "title": "Love enemies; be perfect like Father"
+    }
+  ],
+  "13": [
+    {
+      "verse": 5,
+      "title": "Parable of salt and light"
+    },
+    {
+      "verse": 43,
+      "title": "Love enemies; pray for persecutors"
+    }
+  ],
+  "14": [
+    {
+      "verse": 1,
+      "title": "Do not judge others harshly"
+    },
+    {
+      "verse": 24,
+      "title": "Build foundation on rock, not sand"
+    }
+  ],
+  "15": [
+    {
+      "verse": 1,
+      "title": "Jesus speaks on charity and gifts"
+    }
+  ],
+  "16": [
+    {
+      "verse": 4,
+      "title": "Jesus heals all their sick"
+    },
+    {
+      "verse": 10,
+      "title": "Jesus administers sacrament again"
+    }
+  ],
+  "17": [
+    {
+      "verse": 1,
+      "title": "Jesus gives final instructions"
+    }
+  ],
+  "18": [
+    {
+      "verse": 1,
+      "title": "Jesus institutes sacrament for people"
+    },
+    {
+      "verse": 4,
+      "title": "Sacrament of wine and remembrance"
+    },
+    {
+      "verse": 10,
+      "title": "To partake unworthily brings condemnation"
+    },
+    {
+      "verse": 36,
+      "title": "Angels minister unto the people"
+    }
+  ],
+  "19": [
+    {
+      "verse": 1,
+      "title": "Jesus prays for twelve apostles"
+    },
+    {
+      "verse": 2,
+      "title": "Twelve disciples pray with Jesus"
+    },
+    {
+      "verse": 13,
+      "title": "Jesus prays for little children"
+    }
+  ],
+  "20": [
+    {
+      "verse": 1,
+      "title": "Jesus appears again to multitude"
+    },
+    {
+      "verse": 3,
+      "title": "Multitude cannot contain all teachings"
+    }
+  ],
+  "21": [
+    {
+      "verse": 1,
+      "title": "Jesus shows crucifixion marks"
+    },
+    {
+      "verse": 8,
+      "title": "Nephi given charge of records"
+    }
+  ],
+  "26": [
+    {
+      "verse": 1,
+      "title": "Jesus prepares to ascend to heaven"
+    },
+    {
+      "verse": 12,
+      "title": "Jesus departs; angels minister"
+    }
+  ],
+  "27": [
+    {
+      "verse": 1,
+      "title": "Great peace established for years"
+    }
+  ],
+  "22": [
+    {
+      "verse": 1,
+      "title": "Sing, O Barren — Your Children Shall Be More Than Before (Isaiah 54:1–3)"
+    },
+    {
+      "verse": 4,
+      "title": "God the Husband Calls Back His Forsaken Wife (Isaiah 54:4–8)"
+    },
+    {
+      "verse": 9,
+      "title": "As in the Days of Noah: God's Covenant of Peace (Isaiah 54:9–10)"
+    },
+    {
+      "verse": 11,
+      "title": "O Afflicted One — Your Foundations Shall Be Sapphires (Isaiah 54:11–14)"
+    },
+    {
+      "verse": 15,
+      "title": "No Weapon Formed Against You Shall Prosper (Isaiah 54:15–17)"
+    }
+  ],
+  "23": [
+    {
+      "verse": 1,
+      "title": "Jesus Commands: Search the Words of Isaiah"
+    },
+    {
+      "verse": 6,
+      "title": "Jesus Reviews the Nephite Records for Missing Prophecies"
+    },
+    {
+      "verse": 14,
+      "title": "Jesus Expounds All the Scriptures to the People"
+    }
+  ],
+  "24": [
+    {
+      "verse": 1,
+      "title": "I Send My Messenger — The Lord Shall Suddenly Come to His Temple (Malachi 3:1)"
+    },
+    {
+      "verse": 2,
+      "title": "A Refiner's Fire: He Shall Purify the Sons of Levi (Malachi 3:2–6)"
+    },
+    {
+      "verse": 7,
+      "title": "Return to Me and I Will Return to You (Malachi 3:7)"
+    },
+    {
+      "verse": 8,
+      "title": "Will a Man Rob God? — The Promise of Tithes and Offerings (Malachi 3:8–12)"
+    },
+    {
+      "verse": 13,
+      "title": "Is It Vain to Serve God? — The Righteous Answer (Malachi 3:13–18)"
+    }
+  ],
+  "25": [
+    {
+      "verse": 1,
+      "title": "The Day That Burns as an Oven — Root and Branch Consumed (Malachi 4:1)"
+    },
+    {
+      "verse": 2,
+      "title": "The Sun of Righteousness Shall Arise With Healing (Malachi 4:2–3)"
+    },
+    {
+      "verse": 4,
+      "title": "Remember the Law of Moses (Malachi 4:4)"
+    },
+    {
+      "verse": 5,
+      "title": "Elijah Shall Come Before the Great and Dreadful Day (Malachi 4:5–6)"
+    }
+  ]
+}
