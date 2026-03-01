@@ -163,6 +163,11 @@
     color: #c9a368;
   }
 
+  .pill-btn.active-sections {
+    border-color: #9ab;
+    color: #9ab;
+  }
+
   .pill-btn.active-bg {
     border-color: #ccc;
     color: #ccc;
@@ -595,6 +600,11 @@
   body.light-mode .pill-btn.active-verses {
     border-color: #8a7340 !important;
     color: #8a7340 !important;
+  }
+
+  body.light-mode .pill-btn.active-sections {
+    border-color: #5a7a8a !important;
+    color: #5a7a8a !important;
   }
 
   body.light-mode .about-pill-btn {
@@ -1211,8 +1221,9 @@
   <!-- Controls row — pill buttons -->
   <div class="controls-row">
     <button class="pill-btn" id="aid-pill" onclick="toggleAid()">Aid</button>
-    <button class="pill-btn" id="layers-pill" onclick="toggleLayers()">Layers</button>
     <button class="pill-btn" id="verses-pill" onclick="toggleVerses()">Verses</button>
+    <button class="pill-btn" id="sections-pill" onclick="toggleSections()">Sections</button>
+    <button class="pill-btn" id="layers-pill" onclick="toggleLayers()">Layers</button>
     <button id="gear-btn" class="gear-btn" onclick="toggleSettings()" aria-label="Display settings" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px;">
       <svg viewBox="0 0 24 24" style="width:14px; height:14px;"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1112 8.4a3.6 3.6 0 010 7.2z"/></svg>
     </button>
@@ -1224,13 +1235,6 @@
       <a href="#" onclick="selectAllLayers(); return false;">Select All</a>
       <a href="#" onclick="clearAllLayers(); return false;">Clear All</a>
     </div>
-
-    <div class="layer-group-label">Structure</div>
-    <label>
-      <input type="checkbox" id="sections-check" onchange="toggleSections(this.checked); updateLayersPill()" style="accent-color: #9ab;">
-      <span class="layer-swatch" style="background: #9ab;"></span>
-      <span>Section Headings</span>
-    </label>
 
     <div class="layer-group-label">Divine Voice</div>
     <label>
@@ -2058,7 +2062,7 @@
   };
 
   window.clearAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'sections-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb) { cb.checked = false; }
     });
@@ -2066,7 +2070,6 @@
     toggleAllusions(false);
     toggleKjvDiff(false);
     toggleGeo(false);
-    toggleSections(false);
     document.body.classList.remove('show-deity', 'show-spirit');
     deityLayerOn = false;
     spiritLayerOn = false;
@@ -2075,7 +2078,7 @@
   };
 
   window.selectAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'sections-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb && !cb.disabled) { cb.checked = true; }
     });
@@ -2085,13 +2088,12 @@
     toggleAllusions(true);
     toggleKjvDiff(true);
     toggleGeo(true);
-    toggleSections(true);
     updateLayersPill();
   };
 
   // Update layers pill to show active state when any layer is on
   function updateLayersPill() {
-    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'sections-check'].some(function(id) {
+    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].some(function(id) {
       var cb = document.getElementById(id);
       return cb && cb.checked;
     });
@@ -2124,7 +2126,16 @@
     document.body.classList.toggle('show-geo', on);
   };
   window.toggleSections = function(on) {
-    document.body.classList.toggle('show-sections', on);
+    // Called with no arg from pill button → toggle; with arg from selectAll/clearAll → set
+    var sectionsOn;
+    if (typeof on === 'undefined') {
+      sectionsOn = !document.body.classList.contains('show-sections');
+    } else {
+      sectionsOn = on;
+    }
+    document.body.classList.toggle('show-sections', sectionsOn);
+    var pill = document.getElementById('sections-pill');
+    if (pill) pill.classList.toggle('active-sections', sectionsOn);
   };
   window.toggleCovenant = function(on) { document.body.classList.toggle('covenant-active', on); };
   window.toggleComments = function(on) {};
