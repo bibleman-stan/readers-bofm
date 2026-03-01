@@ -971,20 +971,86 @@
   #layers-panel {
     display: none;
     margin-top: 8px;
-    padding: 8px 12px;
-    background: #1e1e1e;
-    border-radius: 4px;
-    border: 1px solid #444;
+    padding: 10px 14px 8px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid #333;
+  }
+
+  #layers-panel .layer-group-label {
+    font-size: 0.68em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #666;
+    margin: 8px 0 4px 0;
+    padding: 0;
+  }
+  #layers-panel .layer-group-label:first-child {
+    margin-top: 0;
   }
 
   #layers-panel label {
     display: flex;
     align-items: center;
-    gap: 6px;
-    color: #ccc;
-    font-size: 0.85em;
+    gap: 8px;
+    color: #bbb;
+    font-size: 0.82em;
     cursor: pointer;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    transition: background 0.15s;
+  }
+  #layers-panel label:hover {
+    background: rgba(255,255,255,0.04);
+  }
+
+  #layers-panel .layer-swatch {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  #layers-panel .layers-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-bottom: 2px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  #layers-panel .layers-actions a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.72em;
+    letter-spacing: 0.02em;
+    transition: color 0.15s;
+  }
+  #layers-panel .layers-actions a:hover {
+    color: #999;
+  }
+
+  body.light-mode #layers-panel {
+    background: #f4f4f4;
+    border-color: #d0d0d0;
+  }
+  body.light-mode #layers-panel label {
+    color: #444;
+  }
+  body.light-mode #layers-panel label:hover {
+    background: rgba(0,0,0,0.04);
+  }
+  body.light-mode #layers-panel .layer-group-label {
+    color: #999;
+  }
+  body.light-mode #layers-panel .layers-actions {
+    border-bottom-color: #ddd;
+  }
+  body.light-mode #layers-panel .layers-actions a {
+    color: #999;
   }
 
   #about-panel {
@@ -1154,37 +1220,52 @@
 
   <!-- Layers panel -->
   <div id="layers-panel">
-    <div style="display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 4px;">
-      <a href="#" onclick="selectAllLayers(); return false;" style="color: #888; text-decoration: none; font-size: 0.78em;">Select All</a>
-      <a href="#" onclick="clearAllLayers(); return false;" style="color: #888; text-decoration: none; font-size: 0.78em;">Clear All</a>
+    <div class="layers-actions">
+      <a href="#" onclick="selectAllLayers(); return false;">Select All</a>
+      <a href="#" onclick="clearAllLayers(); return false;">Clear All</a>
     </div>
-    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer; margin-bottom: 4px;">
-      <input type="checkbox" id="deity-check" onchange="toggleDeityLayer(this.checked); updateLayersPill()" style="accent-color: #c0392b;">
-      <span>Father/Son References <span style="color: #c0392b;">&#9632;</span></span>
-    </label>
-    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer; margin-bottom: 4px;">
-      <input type="checkbox" id="spirit-check" onchange="toggleSpiritLayer(this.checked); updateLayersPill()" style="accent-color: #888;">
-      <span>Holy Ghost References <span style="color: #888;">&#9632;</span></span>
-    </label>
-    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer; margin-bottom: 4px;">
-      <input type="checkbox" id="quotations-check" onchange="toggleQuotations(this.checked); updateLayersPill()" style="accent-color: #7cb8e4;">
-      <span>Biblical Quotations <span style="color: #7cb8e4;">&#9632;</span></span>
-    </label>
-    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer; margin-bottom: 4px;">
-      <input type="checkbox" id="allusions-check" onchange="toggleAllusions(this.checked); updateLayersPill()" style="accent-color: #8aabbf;">
-      <span>Biblical Allusions <span style="color: #8aabbf;">&#9632;</span></span>
-    </label>
-    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer; margin-bottom: 4px;">
-      <input type="checkbox" id="kjv-diff-check" onchange="toggleKjvDiff(this.checked); updateLayersPill()" style="accent-color: #6ba3d6;">
-      <span>KJV Parallels <span style="color: #6ba3d6;">&#9632;</span></span>
-    </label>
-    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer; margin-bottom: 4px;">
-      <input type="checkbox" id="geo-check" onchange="toggleGeo(this.checked); updateLayersPill()" style="accent-color: #b5854a;">
-      <span>Geography <span style="color: #b5854a;">&#9632;</span></span>
-    </label>
-    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer;">
+
+    <div class="layer-group-label">Structure</div>
+    <label>
       <input type="checkbox" id="sections-check" onchange="toggleSections(this.checked); updateLayersPill()" style="accent-color: #9ab;">
-      <span>Sections <span style="color: #9ab;">&#9632;</span></span>
+      <span class="layer-swatch" style="background: #9ab;"></span>
+      <span>Section Headings</span>
+    </label>
+
+    <div class="layer-group-label">Divine Voice</div>
+    <label>
+      <input type="checkbox" id="deity-check" onchange="toggleDeityLayer(this.checked); updateLayersPill()" style="accent-color: #c0392b;">
+      <span class="layer-swatch" style="background: #c0392b;"></span>
+      <span>God's Presence</span>
+    </label>
+    <label>
+      <input type="checkbox" id="spirit-check" onchange="toggleSpiritLayer(this.checked); updateLayersPill()" style="accent-color: #888;">
+      <span class="layer-swatch" style="background: #888;"></span>
+      <span>The Holy Spirit</span>
+    </label>
+
+    <div class="layer-group-label">Biblical Roots</div>
+    <label>
+      <input type="checkbox" id="quotations-check" onchange="toggleQuotations(this.checked); updateLayersPill()" style="accent-color: #7cb8e4;">
+      <span class="layer-swatch" style="background: #7cb8e4;"></span>
+      <span>Direct Quotations</span>
+    </label>
+    <label>
+      <input type="checkbox" id="allusions-check" onchange="toggleAllusions(this.checked); updateLayersPill()" style="accent-color: #8aabbf;">
+      <span class="layer-swatch" style="background: #8aabbf;"></span>
+      <span>Echoes &amp; Allusions</span>
+    </label>
+    <label>
+      <input type="checkbox" id="kjv-diff-check" onchange="toggleKjvDiff(this.checked); updateLayersPill()" style="accent-color: #6ba3d6;">
+      <span class="layer-swatch" style="background: #6ba3d6;"></span>
+      <span>KJV Parallels</span>
+    </label>
+
+    <div class="layer-group-label">Setting</div>
+    <label>
+      <input type="checkbox" id="geo-check" onchange="toggleGeo(this.checked); updateLayersPill()" style="accent-color: #b5854a;">
+      <span class="layer-swatch" style="background: #b5854a;"></span>
+      <span>Geography</span>
     </label>
   </div>
 
