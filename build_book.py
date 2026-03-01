@@ -579,6 +579,50 @@ def get_pericope(book_id, chapter, verse):
             return entry['title']
     return None
 
+def format_pericope_header(title):
+    """Format a pericope title into a two-tier HTML header.
+
+    Splits on colon to create a main title and subtitle line.
+    Extracts parenthetical scripture references (Isaiah X:Y, Malachi X:Y)
+    into a separate styled span.
+
+    Examples:
+      "The Song of the Vineyard: God's People Fail to Bear Fruit (Isaiah 5:1–7)"
+      → main: "The Song of the Vineyard"
+      → sub:  "God's People Fail to Bear Fruit"  ref: "Isaiah 5:1–7"
+
+      "Nephi Explains Isaiah's Difficult Prophecies"
+      → main: "Nephi Explains Isaiah's Difficult Prophecies"  (no subtitle)
+    """
+    import re
+
+    # Extract parenthetical scripture reference if present
+    ref_match = re.search(r'\s*\(([^)]*(?:Isaiah|Malachi|Genesis|Exodus|Psalm)[^)]*)\)\s*$', title)
+    ref_html = ''
+    if ref_match:
+        ref_text = ref_match.group(1)
+        ref_html = f'<span class="pericope-ref">{ref_text}</span>'
+        title = title[:ref_match.start()]
+
+    # Split on colon for two-tier display (but not if colon is inside quotes)
+    if ': ' in title and "'" not in title.split(': ')[0][-5:]:
+        parts = title.split(': ', 1)
+        main_title = parts[0].strip()
+        subtitle = parts[1].strip()
+        inner = f'<span class="pericope-main">{main_title}</span>'
+        inner += f'<span class="pericope-sub">{subtitle}</span>'
+        if ref_html:
+            inner += ref_html
+        return f'<div class="pericope-header pericope-two-tier">{inner}</div>'
+    else:
+        # Single-tier: no colon split
+        inner = f'<span class="pericope-main">{title}</span>'
+        if ref_html:
+            inner += ref_html
+            # Use pericope-with-ref class so ref gets its own line via flex
+            return f'<div class="pericope-header pericope-with-ref">{inner}</div>'
+        return f'<div class="pericope-header">{inner}</div>'
+
 def get_intertext(book_id, chapter, verse):
     """Return list of intertext entries for a given verse, or empty list."""
     if not _INTERTEXT_INDEX:
@@ -852,7 +896,7 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
         # Check for pericope section header before this verse
         pericope_title = get_pericope(bid, v['chapter'], v['verse'])
         if pericope_title:
-            p.append(f'<div class="pericope-header">{pericope_title}</div>')
+            p.append(format_pericope_header(pericope_title))
         p.append(gen_verse(v, swap_list, book_id=bid))
         p.append('')
     p.append('</div>')
