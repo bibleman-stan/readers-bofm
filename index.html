@@ -2520,6 +2520,56 @@
     }
   });
 
+  // Click-outside-to-dismiss for dropdown panels (layers, nav, background, settings)
+  // This catches clicks anywhere on the page that are NOT inside an open panel or its toggle button
+  document.addEventListener('click', function(e) {
+    var panelIds = ['nav-panel', 'layers-panel', 'background-panel', 'settings-panel'];
+    var anyOpen = panelIds.some(function(id) {
+      var el = document.getElementById(id);
+      if (!el) return false;
+      if (id === 'settings-panel') return el.classList.contains('visible');
+      return el.style.display === 'block';
+    });
+    if (!anyOpen) return;
+
+    // Check if the click was inside any open panel or on a toggle button
+    var clickedInPanel = panelIds.some(function(id) {
+      var el = document.getElementById(id);
+      return el && el.contains(e.target);
+    });
+    if (clickedInPanel) return;
+
+    // Check if the click was on a pill/button that toggles a panel
+    // (those handlers manage their own open/close logic)
+    var toggleIds = ['layers-pill', 'sections-pill', 'about-pill', 'gear-btn', 'aid-pill', 'verses-pill'];
+    var clickedToggle = toggleIds.some(function(id) {
+      var el = document.getElementById(id);
+      return el && (el === e.target || el.contains(e.target));
+    });
+    if (clickedToggle) return;
+
+    // Check if clicked on a book button (those open nav-panel)
+    if (e.target.closest && e.target.closest('.book-btn')) return;
+
+    // Click was outside all panels and toggles — close everything
+    closeAllPanels();
+    pauseCollapse();
+  });
+
+  // Escape key to dismiss open panels (desktop UX)
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      var anyOpen = ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
+        var el = document.getElementById(id);
+        return el && el.style.display === 'block';
+      }) || document.getElementById('settings-panel').classList.contains('visible');
+      if (anyOpen) {
+        closeAllPanels();
+        pauseCollapse();
+      }
+    }
+  });
+
   // ---- SWIPE TO CHANGE CHAPTERS ----
   var touchStartX = 0;
   var touchStartY = 0;
