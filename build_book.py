@@ -568,6 +568,25 @@ def load_intertext():
     else:
         print(f"  No pericope index at {pericope_path}, skipping Sections layer")
         _PERICOPE_INDEX = {}
+    load_parallel_index(base)
+
+_PARALLEL_INDEX = {}
+
+def load_parallel_index(base):
+    global _PARALLEL_INDEX
+    path = os.path.join(base, 'data', 'parallel_index.json')
+    if os.path.exists(path):
+        with open(path) as f:
+            _PARALLEL_INDEX = json.load(f)
+        total = sum(len(e) for ch in _PARALLEL_INDEX.values() for e in ch.values())
+        print(f"Loaded parallel index: {total} structures for Hebrew Poetry layer")
+    else:
+        print(f"  No parallel index at {path}, skipping Hebrew Poetry layer")
+        _PARALLEL_INDEX = {}
+
+def get_parallel_structures(book_id, chapter):
+    """Return list of parallel structures for this chapter, or empty list."""
+    return _PARALLEL_INDEX.get(book_id, {}).get(str(chapter), [])
 
 def get_pericope(book_id, chapter, verse):
     """Return a pericope section title if this verse starts a new section, or None."""
@@ -806,7 +825,7 @@ def apply_phrase_highlights(line_text, phrases, css_class):
 # HTML GENERATION — outputs standalone book fragments
 # ============================================================================
 
-def gen_verse(verse, swap_list, book_id=None):
+def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
     ref = verse['ref']
     processed = [process_line(l, swap_list) for l in verse['lines']]
 
@@ -863,20 +882,92 @@ def gen_verse(verse, swap_list, book_id=None):
     diff_data = get_kjv_diff(book_id, verse['chapter'], verse['verse']) if book_id else None
     has_diff = diff_data is not None and any(s['type'] != 'equal' for s in diff_data.get('diff', []))
 
+    # Helper to build parallel attributes for a line
+    def _par_attrs(line_idx):
+        if not parallel_map:
+            return ''
+        key = (verse['verse'], line_idx)
+        if key in parallel_map:
+            gid, lvl = parallel_map[key]
+            return f' data-parallel-group="{gid}" data-parallel-level="{lvl}"'
+        return ''
+
     if has_diff:
         # Verse has both normal and diff views
         diff_html = render_kjv_diff(diff_data)
         parts = [f'<div class="verse has-kjv-diff"><span class="verse-num">{ref}</span>']
-        for line in processed:
-            parts.append(f'  <span class="line verse-normal">{line}</span>')
+        for idx, line in enumerate(processed):
+            pa = _par_attrs(idx)
+            parts.append(f'  <span class="line verse-normal"{pa}>{line}</span>')
         parts.append(f'  <span class="line verse-diff">{diff_html}</span>')
         parts.append('</div>')
     else:
         parts = [f'<div class="verse"><span class="verse-num">{ref}</span>']
-        for line in processed:
-            parts.append(f'  <span class="line">{line}</span>')
+        for idx, line in enumerate(processed):
+            pa = _par_attrs(idx)
+            parts.append(f'  <span class="line"{pa}>{line}</span>')
         parts.append('</div>')
     return '\n'.join(parts)
+
+def build_parallel_map(bid, ch_num, ch_verses):
+    """Build a map: (verse_num, line_index) -> (group_id, level) for parallel highlighting.
+
+    Matches Parry's text fragments against the raw source lines using subsequence matching.
+    Returns dict like {(3, 2): ('p1', 'A'), (3, 3): ('p1', 'B'), ...}
+    """
+    structures = get_parallel_structures(bid, ch_num)
+    if not structures:
+        return {}
+
+    # Build a lookup: verse_num -> [(line_index, raw_text), ...]
+    verse_lines = {}
+    for v in ch_verses:
+        vn = v['verse']
+        verse_lines[vn] = [(i, line.strip().lower()) for i, line in enumerate(v['lines'])]
+
+    result = {}
+    for si, struct in enumerate(structures):
+        group_id = f'p{ch_num}-{si}'
+        for pline in struct['lines']:
+            verse_num = pline['verse']
+            level = pline['level']
+            frag = pline['text_fragment'].strip().lower()
+            # Remove Parry markup artifacts
+            frag = re.sub(r'^[a-k]\t', '', frag)
+
+            if verse_num not in verse_lines:
+                continue
+
+            # Find the best matching line in this verse
+            best_match = -1
+            best_score = 0
+            # Extract first N significant words from fragment for matching
+            frag_words = re.findall(r'[a-z]+', frag)[:6]
+            if not frag_words:
+                continue
+
+            for li, raw in verse_lines[verse_num]:
+                raw_words = re.findall(r'[a-z]+', raw)
+                if not raw_words:
+                    continue
+                # Count how many of the first fragment words appear in this line
+                score = sum(1 for w in frag_words if w in raw_words)
+                # Bonus for matching the first word
+                if frag_words[0] == raw_words[0]:
+                    score += 2
+                if score > best_score:
+                    best_score = score
+                    best_match = li
+
+            # Require at least half the words to match
+            if best_match >= 0 and best_score >= max(2, len(frag_words) * 0.4):
+                key = (verse_num, best_match)
+                # Don't overwrite if already assigned to a different group
+                if key not in result:
+                    result[key] = (group_id, level)
+
+    return result
+
 
 def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
     p = [f'<div id="ch-{bid}-{ch_num}" class="chapter-content" style="display:none;">']
@@ -892,12 +983,16 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
     else:
         p.append('  <span class="chapter-nav-disabled">End</span>')
     p.append('</div>')
+
+    # Build parallel structure map for this chapter
+    par_map = build_parallel_map(bid, ch_num, ch_verses)
+
     for v in ch_verses:
         # Check for pericope section header before this verse
         pericope_title = get_pericope(bid, v['chapter'], v['verse'])
         if pericope_title:
             p.append(format_pericope_header(pericope_title))
-        p.append(gen_verse(v, swap_list, book_id=bid))
+        p.append(gen_verse(v, swap_list, book_id=bid, parallel_map=par_map))
         p.append('')
     p.append('</div>')
     return '\n'.join(p)

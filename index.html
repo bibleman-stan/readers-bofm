@@ -763,6 +763,40 @@
     font-style: italic;
   }
 
+  /* === HEBREW POETRY / PARALLEL STRUCTURE LAYER === */
+  /* Hidden by default; activated by body.show-parallels */
+  body.show-parallels [data-parallel-level="A"] {
+    background: rgba(94, 173, 173, 0.10);
+    border-left: 2.5px solid rgba(94, 173, 173, 0.38);
+    padding-left: 6px;
+    margin-left: -9px;
+  }
+  body.show-parallels [data-parallel-level="B"] {
+    background: rgba(154, 133, 176, 0.10);
+    border-left: 2.5px solid rgba(154, 133, 176, 0.38);
+    padding-left: 6px;
+    margin-left: -9px;
+  }
+  body.show-parallels [data-parallel-level="C"] {
+    background: rgba(125, 168, 125, 0.10);
+    border-left: 2.5px solid rgba(125, 168, 125, 0.38);
+    padding-left: 6px;
+    margin-left: -9px;
+  }
+  /* Light-mode variants */
+  body.light-mode.show-parallels [data-parallel-level="A"] {
+    background: rgba(94, 173, 173, 0.12);
+    border-left-color: rgba(60, 140, 140, 0.45);
+  }
+  body.light-mode.show-parallels [data-parallel-level="B"] {
+    background: rgba(154, 133, 176, 0.12);
+    border-left-color: rgba(120, 100, 150, 0.45);
+  }
+  body.light-mode.show-parallels [data-parallel-level="C"] {
+    background: rgba(125, 168, 125, 0.12);
+    border-left-color: rgba(90, 140, 90, 0.45);
+  }
+
   /* === GEOGRAPHY LAYER === */
   .geo-ref { display: inline; }
   [data-geo] { display: inline; }
@@ -1389,6 +1423,13 @@
       <input type="checkbox" id="geo-check" onchange="toggleGeo(this.checked); updateLayersPill()" style="accent-color: #b5854a;">
       <span class="layer-swatch" style="background: #b5854a;"></span>
       <span>Geography</span>
+    </label>
+
+    <div class="layer-group-label">Literary</div>
+    <label>
+      <input type="checkbox" id="parallels-check" onchange="toggleParallels(this.checked); updateLayersPill()" style="accent-color: #5eadad;">
+      <span class="layer-swatch" style="background: #5eadad;"></span>
+      <span>Hebrew Poetry</span>
     </label>
   </div>
 
@@ -2266,7 +2307,7 @@
   };
 
   window.clearAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'parallels-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb) { cb.checked = false; }
     });
@@ -2274,6 +2315,7 @@
     toggleAllusions(false);
     toggleKjvDiff(false);
     toggleGeo(false);
+    toggleParallels(false);
     document.body.classList.remove('show-deity', 'show-spirit');
     deityLayerOn = false;
     spiritLayerOn = false;
@@ -2282,7 +2324,7 @@
   };
 
   window.selectAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'parallels-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb && !cb.disabled) { cb.checked = true; }
     });
@@ -2292,12 +2334,13 @@
     toggleAllusions(true);
     toggleKjvDiff(true);
     toggleGeo(true);
+    toggleParallels(true);
     updateLayersPill();
   };
 
   // Update layers pill to show active state when any layer is on
   function updateLayersPill() {
-    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].some(function(id) {
+    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'parallels-check'].some(function(id) {
       var cb = document.getElementById(id);
       return cb && cb.checked;
     });
@@ -2328,6 +2371,9 @@
   };
   window.toggleGeo = function(on) {
     document.body.classList.toggle('show-geo', on);
+  };
+  window.toggleParallels = function(on) {
+    document.body.classList.toggle('show-parallels', on);
   };
   window.toggleSections = function(on) {
     // Called with no arg from pill button → toggle; with arg from selectAll/clearAll → set
