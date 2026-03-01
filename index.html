@@ -1899,6 +1899,8 @@
   }
 
   // ---- DYNAMIC BOOK LOADING ----
+  var pendingChapter = null;  // Track chapter selected before book finishes loading
+
   function buildChapterGrid(bookId) {
     var meta = bookMeta[bookId];
     if (!meta) return;
@@ -1910,8 +1912,18 @@
         btn.className = 'grid-btn';
         btn.textContent = ch;
         btn.onclick = function() {
-          showChapter(bookId, ch);
-          document.getElementById('nav-panel').style.display = 'none';
+          if (loadedBooks[bookId]) {
+            // Book already loaded — navigate immediately
+            showChapter(bookId, ch);
+            document.getElementById('nav-panel').style.display = 'none';
+          } else {
+            // Book still loading — store choice so callback uses it
+            pendingChapter = ch;
+            // Highlight the selected button immediately for feedback
+            grid.querySelectorAll('.grid-btn').forEach(function(b) {
+              b.classList.toggle('active-ch', b === btn);
+            });
+          }
           return false;
         };
         grid.appendChild(btn);
@@ -1971,9 +1983,12 @@
     loadBook(bookId, function() {
       var target = document.getElementById('book-' + bookId);
       if (target) target.style.display = 'block';
-      showChapter(bookId, ch);
+      // If user picked a chapter while the book was loading, use that
+      var finalCh = pendingChapter || ch;
+      pendingChapter = null;
+      showChapter(bookId, finalCh);
       // Only show chapter grid if no specific chapter was requested
-      if (!targetChapter) {
+      if (!targetChapter && finalCh === 1) {
         var navPanel = document.getElementById('nav-panel');
         if (navPanel) navPanel.style.display = 'block';
       }
