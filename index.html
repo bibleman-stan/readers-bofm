@@ -985,6 +985,8 @@
     background: #1a1a1a;
     border-radius: 8px;
     border: 1px solid #333;
+    max-height: 60vh;
+    overflow-y: auto;
   }
 
   #layers-panel .layer-group-label {
@@ -2254,14 +2256,22 @@
         }
         var delta = y - lastScrollY;
         var wasCollapsed = lastCollapseState;
+        // Don't collapse toolbar while a panel is open (layers, nav, background, etc.)
+        var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel', 'about-panel'].some(function(id) {
+          var el = document.getElementById(id);
+          return el && el.style.display === 'block';
+        }) || document.getElementById('settings-panel').classList.contains('visible');
+        if (anyPanelOpen) {
+          lastScrollY = y;
+          scrollTicking = false;
+          return;
+        }
         if (y <= 80) {
           toolbar.classList.remove('toolbar-collapsed');
           lastCollapseState = false;
         } else if (delta > scrollDeadZone) {
           toolbar.classList.add('toolbar-collapsed');
           lastCollapseState = true;
-          // Auto-close panels on scroll down
-          closeAllPanels();
         } else if (delta < -scrollDeadZone) {
           toolbar.classList.remove('toolbar-collapsed');
           lastCollapseState = false;
@@ -2290,6 +2300,17 @@
 
   // Tap on scripture content to collapse toolbar (dismiss expanded menu)
   document.getElementById('scripture-content').addEventListener('click', function() {
+    // Always close open panels when tapping scripture area
+    var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel', 'about-panel'].some(function(id) {
+      var el = document.getElementById(id);
+      return el && el.style.display === 'block';
+    }) || document.getElementById('settings-panel').classList.contains('visible');
+    if (anyPanelOpen) {
+      closeAllPanels();
+      pauseCollapse();
+      return;
+    }
+    // Collapse toolbar if scrolled past top
     if (!toolbar.classList.contains('toolbar-collapsed') && window.scrollY > 80) {
       toolbar.classList.add('toolbar-collapsed');
       closeAllPanels();

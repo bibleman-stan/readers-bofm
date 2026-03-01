@@ -66,6 +66,8 @@ COMPOUND_SWAPS = [
     ("go to", "go"),  # archaic interjection (only when followed by , or ;)
     ("none other object save it be", "no other purpose except"),
     ("inasmuch as", "to the degree that"), ("Inasmuch as", "To the degree that"),
+    ("things of naught", "worthless things"), ("thing of naught", "worthless thing"),
+    ("set at naught", "disregarded"), ("setteth at naught", "disregards"),
     ("hither and thither", "this way and that"),
     ("an account", "a record"), ("in fine", "in other words"), ("lust after", "desire"),
     ("save two churches only", "only two churches"), ("save a few only", "only a few"),
@@ -164,6 +166,7 @@ SIMPLE_SWAPS = [
     ("naught", "nothing"), ("Naught", "Nothing"),
     ("surety", "certainty"), ("Surety", "Certainty"),
     ("firmament", "sky"), ("Firmament", "Sky"),
+    ("asunder", "apart"), ("Asunder", "Apart"),
     ("apparel", "clothing"), ("Apparel", "Clothing"),
     ("goodly", "good"), ("Goodly", "Good"),
     ("luster", "brightness"), ("Luster", "Brightness"),
@@ -450,9 +453,11 @@ def apply_swaps(text, swap_list):
     return result
 
 def fix_participles(text):
+    # Fix "had saw" → "had seen", "have spoke" → "have spoken", etc.
+    # Use a tighter window that doesn't cross clause boundaries (no ; or . between)
     for wrong, right in [('saw','seen'),('spoke','spoken'),('broke','broken')]:
-        text = re.sub(r'(\bhad\b.{0,60}?)data-mod="'+re.escape(wrong)+'"', r'\1data-mod="'+right+'"', text)
-        text = re.sub(r'(\bhave\b.{0,60}?)data-mod="'+re.escape(wrong)+'"', r'\1data-mod="'+right+'"', text)
+        text = re.sub(r'(\bhad\b[^;.]{0,30}?)data-mod="'+re.escape(wrong)+'"', r'\1data-mod="'+right+'"', text)
+        text = re.sub(r'(\bhave\b[^;.]{0,30}?)data-mod="'+re.escape(wrong)+'"', r'\1data-mod="'+right+'"', text)
     return text
 
 def wrap_punctuation(text):
