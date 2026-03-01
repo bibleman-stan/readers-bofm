@@ -158,9 +158,28 @@
     color: #7cb8e4;
   }
 
+  .pill-btn.active-verses {
+    border-color: #c9a368;
+    color: #c9a368;
+  }
+
   .pill-btn.active-bg {
     border-color: #ccc;
     color: #ccc;
+  }
+
+  /* About button — stands out in book grid row */
+  .about-pill-btn {
+    height: 34px;
+    font-size: 0.72em;
+    color: #b8c4d0;
+    border-color: #667;
+    font-weight: 600;
+  }
+
+  .about-pill-btn:hover {
+    color: #dce4ec;
+    border-color: #889;
   }
 
   /* Collapsed toolbar — smooth clip, no reflow stutter */
@@ -571,6 +590,17 @@
   body.light-mode .pill-btn.active-layers {
     border-color: #4a7a9e !important;
     color: #4a7a9e !important;
+  }
+
+  body.light-mode .pill-btn.active-verses {
+    border-color: #8a7340 !important;
+    color: #8a7340 !important;
+  }
+
+  body.light-mode .about-pill-btn {
+    color: #4a6070 !important;
+    border-color: #99a !important;
+    font-weight: 600 !important;
   }
 
   body.light-mode .controls-row {
@@ -1009,7 +1039,7 @@
     <button class="book-btn" data-book="mormon" onclick="onBookBtnClick('mormon')">Morm</button>
     <button class="book-btn" data-book="ether" onclick="onBookBtnClick('ether')">Eth</button>
     <button class="book-btn" data-book="moroni" onclick="onBookBtnClick('moroni')">Moro</button>
-    <button class="pill-btn" id="about-pill" onclick="toggleBackground()" style="height: 34px; font-size: 0.72em;">About <span id="about-book-name">1 Nephi</span></button>
+    <button class="pill-btn about-pill-btn" id="about-pill" onclick="toggleBackground()">About <span id="about-book-name">1 Nephi</span></button>
   </div>
 
   <!-- Settings panel -->
@@ -1094,8 +1124,9 @@
 
   <!-- Controls row — pill buttons -->
   <div class="controls-row">
-    <button class="pill-btn" id="aid-pill" onclick="toggleAid()">Reading Aid: <span id="aid-state">Off</span></button>
+    <button class="pill-btn" id="aid-pill" onclick="toggleAid()">Aid</button>
     <button class="pill-btn" id="layers-pill" onclick="toggleLayers()">Layers</button>
+    <button class="pill-btn" id="verses-pill" onclick="toggleVerses()">Verses</button>
     <button id="gear-btn" class="gear-btn" onclick="toggleSettings()" aria-label="Display settings" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px;">
       <svg viewBox="0 0 24 24" style="width:14px; height:14px;"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1112 8.4a3.6 3.6 0 010 7.2z"/></svg>
     </button>
@@ -1595,10 +1626,22 @@
     // Update pill button state
     var aidPill = document.getElementById('aid-pill');
     if (aidPill) {
-      var span = aidPill.querySelector('#aid-state');
-      if (span) span.textContent = aidOn ? 'On' : 'Off';
       aidPill.classList.toggle('active-aid', aidOn);
     }
+  };
+
+  // ---- VERSES TOGGLE (show/hide verse numbers) ----
+  var versesOn = false;
+  window.toggleVerses = function() {
+    versesOn = !versesOn;
+    // Toggle the CSS variable that controls verse number display
+    document.documentElement.style.setProperty('--verse-num-display', versesOn ? 'inline' : 'none');
+    // Also sync the settings panel checkbox
+    var flowToggle = document.getElementById('flow-toggle');
+    if (flowToggle) flowToggle.checked = !versesOn;
+    // Update pill state
+    var pill = document.getElementById('verses-pill');
+    if (pill) pill.classList.toggle('active-verses', versesOn);
   };
 
   // ---- SETTINGS FUNCTIONS ----
@@ -1611,6 +1654,10 @@
     tabOverrides[currentTab].flow = on;
     root.style.setProperty('--verse-num-display', on ? 'none' : 'inline');
     root.style.setProperty('--verse-gap', on ? '2px' : '12px');
+    // Sync the verses pill
+    versesOn = !on;
+    var pill = document.getElementById('verses-pill');
+    if (pill) pill.classList.toggle('active-verses', versesOn);
   };
 
   window.togglePunct = function(on) {
