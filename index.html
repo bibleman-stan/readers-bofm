@@ -173,10 +173,12 @@
   .collapsed-summary {
     display: none;
     text-align: center;
-    padding: 6px 8px;
+    height: 32px;
+    line-height: 32px;
     color: #999;
     font-size: 0.82em;
     cursor: pointer;
+    padding: 0 8px;
   }
 
   .toolbar-collapsed .collapsed-summary {
@@ -2102,6 +2104,63 @@
       pauseCollapse();
     }
   });
+
+  // Tap on scripture content to collapse toolbar (dismiss expanded menu)
+  document.getElementById('scripture-content').addEventListener('click', function() {
+    if (!toolbar.classList.contains('toolbar-collapsed') && window.scrollY > 80) {
+      toolbar.classList.add('toolbar-collapsed');
+      closeAllPanels();
+      pauseCollapse();
+    }
+  });
+
+  // ---- SWIPE TO CHANGE CHAPTERS ----
+  var touchStartX = 0;
+  var touchStartY = 0;
+  var touchStartTime = 0;
+  var swipeThreshold = 60; // min horizontal distance
+  var swipeMaxVertical = 80; // max vertical drift (don't trigger on diagonal scrolls)
+
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches.length !== 1) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    touchStartTime = Date.now();
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!touchStartTime) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    var dt = Date.now() - touchStartTime;
+    touchStartTime = 0;
+
+    // Must be fast-ish, mostly horizontal, and beyond threshold
+    if (dt > 500) return;
+    if (Math.abs(dy) > swipeMaxVertical) return;
+    if (Math.abs(dx) < swipeThreshold) return;
+
+    // Don't trigger on toolbar or form elements
+    var tag = e.target.tagName.toLowerCase();
+    if (tag === 'input' || tag === 'select' || tag === 'button') return;
+    if (e.target.closest('#reading-toolbar')) return;
+
+    var meta = bookMeta[currentBook];
+    if (!meta) return;
+    var curCh = currentChapterMap[currentBook] || 1;
+
+    if (dx < 0) {
+      // Swipe left → next chapter
+      if (curCh < meta.chapters) {
+        showChapter(currentBook, curCh + 1);
+      }
+    } else {
+      // Swipe right → previous chapter
+      if (curCh > 1) {
+        showChapter(currentBook, curCh - 1);
+      }
+    }
+  }, { passive: true });
 
 })();
 </script>
