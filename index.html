@@ -766,6 +766,26 @@
     color: rgba(139, 105, 20, 0.5);
   }
 
+  /* Pericope / Sections layer */
+  .pericope-header {
+    display: none;
+    font-size: 0.88em;
+    font-weight: 600;
+    color: #9ab;
+    letter-spacing: 0.03em;
+    margin: 1.4em 0 0.4em 0;
+    padding: 0 0 4px 0;
+    border-bottom: 1px solid rgba(154, 170, 187, 0.2);
+    font-style: italic;
+  }
+  body.show-sections .pericope-header {
+    display: block;
+  }
+  body.light-mode .pericope-header {
+    color: #5a6a7a;
+    border-bottom-color: rgba(90, 106, 122, 0.2);
+  }
+
   .comment {
     text-decoration: underline;
     text-decoration-color: #888;
@@ -1158,9 +1178,13 @@
       <input type="checkbox" id="kjv-diff-check" onchange="toggleKjvDiff(this.checked); updateLayersPill()" style="accent-color: #6ba3d6;">
       <span>KJV Parallels <span style="color: #6ba3d6;">&#9632;</span></span>
     </label>
-    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer;">
+    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer; margin-bottom: 4px;">
       <input type="checkbox" id="geo-check" onchange="toggleGeo(this.checked); updateLayersPill()" style="accent-color: #b5854a;">
       <span>Geography <span style="color: #b5854a;">&#9632;</span></span>
+    </label>
+    <label style="display: flex; align-items: center; gap: 6px; color: #ccc; font-size: 0.85em; cursor: pointer;">
+      <input type="checkbox" id="sections-check" onchange="toggleSections(this.checked); updateLayersPill()" style="accent-color: #9ab;">
+      <span>Sections <span style="color: #9ab;">&#9632;</span></span>
     </label>
   </div>
 
@@ -1953,7 +1977,7 @@
   };
 
   window.clearAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'sections-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb) { cb.checked = false; }
     });
@@ -1961,6 +1985,7 @@
     toggleAllusions(false);
     toggleKjvDiff(false);
     toggleGeo(false);
+    toggleSections(false);
     document.body.classList.remove('show-deity', 'show-spirit');
     deityLayerOn = false;
     spiritLayerOn = false;
@@ -1969,7 +1994,7 @@
   };
 
   window.selectAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'sections-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb && !cb.disabled) { cb.checked = true; }
     });
@@ -1979,12 +2004,13 @@
     toggleAllusions(true);
     toggleKjvDiff(true);
     toggleGeo(true);
+    toggleSections(true);
     updateLayersPill();
   };
 
   // Update layers pill to show active state when any layer is on
   function updateLayersPill() {
-    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].some(function(id) {
+    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'sections-check'].some(function(id) {
       var cb = document.getElementById(id);
       return cb && cb.checked;
     });
@@ -2015,6 +2041,9 @@
   };
   window.toggleGeo = function(on) {
     document.body.classList.toggle('show-geo', on);
+  };
+  window.toggleSections = function(on) {
+    document.body.classList.toggle('show-sections', on);
   };
   window.toggleCovenant = function(on) { document.body.classList.toggle('covenant-active', on); };
   window.toggleComments = function(on) {};

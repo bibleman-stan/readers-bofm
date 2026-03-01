@@ -164,6 +164,7 @@ SIMPLE_SWAPS = [
     ("naught", "nothing"), ("Naught", "Nothing"),
     ("surety", "certainty"), ("Surety", "Certainty"),
     ("firmament", "sky"), ("Firmament", "Sky"),
+    ("apparel", "clothing"), ("Apparel", "Clothing"),
     ("goodly", "good"), ("Goodly", "Good"),
     ("luster", "brightness"), ("Luster", "Brightness"),
     ("methought", "I thought"), ("Methought", "I thought"),
@@ -511,10 +512,11 @@ _INTERTEXT_INDEX = None  # populated by load_intertext()
 _PHRASE_INDEX = None      # populated by load_intertext()
 _KJV_DIFF_INDEX = None   # populated by load_intertext()
 _GEO_INDEX = None         # populated by load_intertext()
+_PERICOPE_INDEX = None    # populated by load_intertext()
 
 def load_intertext():
     """Load the enriched Hardy intertext index, phrase index, KJV diff, and geo index."""
-    global _INTERTEXT_INDEX, _PHRASE_INDEX, _KJV_DIFF_INDEX, _GEO_INDEX
+    global _INTERTEXT_INDEX, _PHRASE_INDEX, _KJV_DIFF_INDEX, _GEO_INDEX, _PERICOPE_INDEX
     base = os.path.dirname(os.path.abspath(__file__))
     intertext_path = os.path.join(base, 'data', 'hardy_intertext.json')
     phrase_path = os.path.join(base, 'data', 'hardy_phrase_index.json')
@@ -552,6 +554,25 @@ def load_intertext():
     else:
         print(f"  No geo index at {geo_path}, skipping geography layer")
         _GEO_INDEX = {}
+    pericope_path = os.path.join(base, 'data', 'pericope_index.json')
+    if os.path.exists(pericope_path):
+        with open(pericope_path) as f:
+            _PERICOPE_INDEX = json.load(f)
+        total = sum(len(entries) for ch in _PERICOPE_INDEX.values() for entries in ch.values())
+        print(f"Loaded pericope index: {total} section headers for Sections layer")
+    else:
+        print(f"  No pericope index at {pericope_path}, skipping Sections layer")
+        _PERICOPE_INDEX = {}
+
+def get_pericope(book_id, chapter, verse):
+    """Return a pericope section title if this verse starts a new section, or None."""
+    if not _PERICOPE_INDEX:
+        return None
+    entries = _PERICOPE_INDEX.get(book_id, {}).get(str(chapter), [])
+    for entry in entries:
+        if entry['verse'] == verse:
+            return entry['title']
+    return None
 
 def get_intertext(book_id, chapter, verse):
     """Return list of intertext entries for a given verse, or empty list."""
@@ -823,6 +844,10 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
         p.append('  <span class="chapter-nav-disabled">End</span>')
     p.append('</div>')
     for v in ch_verses:
+        # Check for pericope section header before this verse
+        pericope_title = get_pericope(bid, v['chapter'], v['verse'])
+        if pericope_title:
+            p.append(f'<div class="pericope-header">{pericope_title}</div>')
         p.append(gen_verse(v, swap_list, book_id=bid))
         p.append('')
     p.append('</div>')
