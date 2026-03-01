@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The Book of Mormon — Reading Edition</title>
+<meta name="description" content="A reading edition of the Book of Mormon with sense-line formatting, modern language aids, and study layers.">
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -32,13 +33,24 @@
     font-weight: normal;
     font-size: 1.6em;
     text-align: left;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.8em;
+    line-height: 1.2;
   }
 
-  h1 ~ p {
+  h1 .subtitle {
+    font-size: 0.52em;
     font-style: italic;
     color: #8899aa;
-    margin-bottom: 1em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-left: 0.5em;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.05em;
+  }
+
+  body.light-mode h1 .subtitle {
+    color: #6a7a8a;
   }
 
   /* === TOOLBAR === */
@@ -1065,24 +1077,91 @@
     color: #999;
   }
 
-  #about-panel {
+  /* About page — full-page feature guide */
+  #about-page {
     display: none;
-    margin-top: 8px;
-    padding: 10px 14px;
+    padding: 0.5em 0 3em;
+    font-size: 0.92em;
+    color: #ccc;
+    line-height: 1.75;
+  }
+
+  #about-page h2 {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #dce4ec;
+    margin: 2em 0 0.6em;
+    letter-spacing: 0.01em;
+  }
+
+  #about-page h2:first-child {
+    margin-top: 0.5em;
+  }
+
+  #about-page p {
+    margin: 0 0 0.9em;
+  }
+
+  #about-page .feature-card {
     background: #1e1e1e;
-    border-radius: 4px;
-    border: 1px solid #444;
-    font-size: 0.85em;
-    color: #bbb;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1em 1.2em;
+    margin: 0.8em 0;
+  }
+
+  #about-page .feature-card .feature-name {
+    font-weight: 600;
+    font-size: 0.95em;
+    margin-bottom: 0.3em;
+  }
+
+  #about-page .feature-card .feature-desc {
+    font-size: 0.88em;
+    color: #aaa;
     line-height: 1.6;
   }
 
-  #about-panel p {
-    margin: 0 0 8px 0;
+  #about-page .pill-demo {
+    display: inline-block;
+    border: 1px solid #667;
+    border-radius: 14px;
+    padding: 2px 10px;
+    font-size: 0.82em;
+    font-weight: 600;
+    margin: 0 2px;
+    vertical-align: middle;
   }
 
-  #about-panel p:last-child {
-    margin: 0;
+  #about-page .swatch-demo {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+
+  #about-page .about-back-link {
+    display: inline-block;
+    color: #7cafc2;
+    font-size: 0.9em;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+
+  body.light-mode #about-page {
+    color: #444;
+  }
+  body.light-mode #about-page h2 {
+    color: #2a3a4a;
+  }
+  body.light-mode #about-page .feature-card {
+    background: #f4f4f4;
+    border-color: #ddd;
+  }
+  body.light-mode #about-page .feature-card .feature-desc {
+    color: #666;
   }
 
   /* Back to top button */
@@ -1110,9 +1189,8 @@
 <body>
 <div id="top"></div>
 
-<a href="https://bomreader.com/" style="text-decoration: none; color: inherit;">
-<h1>The Book of Mormon</h1>
-<p>A Reading Edition for Everyone</p>
+<a href="#" onclick="showAboutPage(); return false;" style="text-decoration: none; color: inherit;">
+<h1>The Book of Mormon <span class="subtitle">Reading Edition</span></h1>
 </a>
 
 <!-- Floating toolbar -->
@@ -1455,13 +1533,6 @@
       <p style="color: #666; font-size: 0.82em; margin-top: 1.5em; text-align: center;">These introductions reflect the editor's perspective and are not part of the original text.</p>
   </div>
 
-  <!-- About panel — general site info -->
-  <div id="about-panel">
-    <p>This edition uses the original words of the Book of Mormon, arranged in shorter lines that follow natural pauses in speech. This makes it easier to read, especially for those who are learning English.</p>
-    <p>The <b style="color: #27ae60;">Reading Aid</b> button swaps old-fashioned words for modern ones. Words that can be swapped have a <span style="text-decoration: underline; text-decoration-color: #27ae60; text-decoration-style: dotted; text-underline-offset: 3px;">dotted green underline</span>.</p>
-    <p>The <b>Layers</b> button lets you highlight references to God the Father and Jesus Christ, the Holy Ghost, and quotations from other scripture.</p>
-    <p style="margin: 0;"><i>Covenant promises</i> — places where God states His promises — appear in <i>italics</i>.</p>
-  </div>
 </div>
 
 <div id="scripture-content">
@@ -1485,6 +1556,83 @@
       <option value="ether">Ether</option>
       <option value="moroni">Moroni</option>
     </select>
+  </div>
+
+  <!-- About page — full feature guide -->
+  <div id="about-page">
+    <h2>About This Edition</h2>
+    <p>This is a reading edition of the Book of Mormon. The original text is preserved exactly, but it has been reformatted into shorter sense-lines that follow natural pauses in speech. This makes the text easier to read aloud, easier to follow visually, and more accessible for people who are learning English or encountering the Book of Mormon for the first time.</p>
+    <p>The toolbar at the top stays with you as you read and gives you access to every feature. You can tap any book abbreviation to jump between books, and the chapter grid appears below. Everything is designed to stay out of your way until you need it.</p>
+
+    <h2>The Toolbar Buttons</h2>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="pill-demo" style="color: #27ae60; border-color: #27ae60;">Aid</span></div>
+      <div class="feature-desc">Turns on the <strong>Reading Aid</strong> layer. Old-fashioned or archaic words are swapped for modern equivalents (for example, "wherefore" becomes "therefore," "unto" becomes "to"). The original word is always preserved underneath — tap any green-underlined word to see it. This is especially helpful for readers who find the older language difficult.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="pill-demo" style="color: #ccc; border-color: #889;">Verses</span></div>
+      <div class="feature-desc">Shows or hides verse numbers. By default, verse numbers are hidden so you can read the text as continuous prose. Toggle this on when you need to find or reference a specific verse.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="pill-demo" style="color: #9ab; border-color: #9ab;">Sections</span></div>
+      <div class="feature-desc">Adds section headings throughout the text. These short, descriptive titles mark natural breaks in the narrative or teaching — like chapter titles in a novel. They help you see the structure of each book and understand where one thought ends and the next begins.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="pill-demo" style="color: #ccc; border-color: #889;">Layers</span></div>
+      <div class="feature-desc">Opens the Layers panel, where you can toggle colored highlights across the text. Each layer reveals a different dimension of the text that you can combine in any way. The available layers are described below.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="pill-demo" style="color: #ccc; border-color: #889;">⚙</span></div>
+      <div class="feature-desc">Opens display settings: toggle continuous-flow or verse mode, show or hide punctuation, adjust text density and line spacing, and switch between dark and light mode.</div>
+    </div>
+
+    <h2>The Layers</h2>
+    <p>Layers are colored highlights you can toggle on and off. They let you see patterns in the text that aren't visible in a plain reading. You can turn on one layer at a time or combine several.</p>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="swatch-demo" style="background: #c0392b;"></span> God's Presence</div>
+      <div class="feature-desc">Highlights passages where God the Father or Jesus Christ speaks directly or is described as personally present. This helps you see how often God's voice and presence appear throughout the narrative.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="swatch-demo" style="background: #8e44ad;"></span> The Holy Spirit</div>
+      <div class="feature-desc">Highlights references to the Holy Ghost — His influence, His role in teaching and testifying, and the way He works in people's lives.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="swatch-demo" style="background: #2980b9;"></span> Direct Quotations</div>
+      <div class="feature-desc">Highlights places where the Book of Mormon directly quotes other scripture — particularly the Bible. These show the deep connections between the two records.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="swatch-demo" style="background: #8aabbf;"></span> Echoes &amp; Allusions</div>
+      <div class="feature-desc">Highlights phrases or ideas that echo biblical language without being direct quotes. These allusions show how deeply the Book of Mormon authors were shaped by earlier scripture.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="swatch-demo" style="background: #6ba3d6;"></span> KJV Parallels</div>
+      <div class="feature-desc">Highlights passages that share language with the King James Version of the Bible. This layer helps you see the broader textual relationship between the two books.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="swatch-demo" style="background: #b5854a;"></span> Geography</div>
+      <div class="feature-desc">Highlights place names and geographic references. This is useful for tracking the movement of people and armies across the narrative, and for understanding the physical setting of events.</div>
+    </div>
+
+    <h2>Other Features</h2>
+    <p>Words that are part of <em>covenant promises</em> — places where God states His binding promises — appear in <em>italics</em> throughout the text.</p>
+    <p>The <strong>About</strong> button in the book grid opens background introductions for each book, written to help first-time readers understand who is speaking, what is happening, and what themes to watch for.</p>
+    <p>Swipe left or right on the reading area to move between chapters. The toolbar collapses as you scroll down to give you more reading space, and reappears when you scroll back up.</p>
+
+    <h2>Design Philosophy</h2>
+    <p>Every decision in this edition is aimed at removing barriers between the reader and the text. The sense-line formatting, the modern word swaps, the section headings, and the visual layers are all optional tools — you can use as many or as few as you like. The goal is to let the Book of Mormon speak clearly to anyone willing to read it, regardless of their background or experience with scripture.</p>
+
+    <p><a class="about-back-link" href="#" onclick="hideAboutPage(); return false;">← Back to reading</a></p>
   </div>
 
   <!-- Book content loaded dynamically by JS -->
@@ -2018,7 +2166,7 @@
   // ---- UI TOGGLES ----
   // Close all dropdown panels
   function closeAllPanels() {
-    var ids = ['nav-panel', 'layers-panel', 'background-panel', 'about-panel'];
+    var ids = ['nav-panel', 'layers-panel', 'background-panel'];
     ids.forEach(function(id) {
       var el = document.getElementById(id);
       if (el) el.style.display = 'none';
@@ -2157,6 +2305,19 @@
   window.toggleCovenant = function(on) { document.body.classList.toggle('covenant-active', on); };
   window.toggleComments = function(on) {};
 
+  // ---- ABOUT PAGE ----
+  window.showAboutPage = function() {
+    closeAllPanels();
+    document.getElementById('about-page').style.display = 'block';
+    document.getElementById('book-content-container').style.display = 'none';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.hideAboutPage = function() {
+    document.getElementById('about-page').style.display = 'none';
+    document.getElementById('book-content-container').style.display = 'block';
+  };
+
   document.addEventListener('click', function(e) {
     var el = e.target;
     while (el && !el.classList.contains('comment')) { el = el.parentElement; }
@@ -2171,6 +2332,8 @@
   var lastHashWeSet = '';  // Track hash we set to avoid circular calls
 
   window.showChapter = function(bookId, chNum) {
+    // Hide about page if visible
+    hideAboutPage();
     var allCh = document.querySelectorAll('#book-' + bookId + ' .chapter-content');
     allCh.forEach(function(el) { el.style.display = 'none'; });
     var target = document.getElementById('ch-' + bookId + '-' + chNum);
@@ -2257,7 +2420,7 @@
         var delta = y - lastScrollY;
         var wasCollapsed = lastCollapseState;
         // Don't collapse toolbar while a panel is open (layers, nav, background, etc.)
-        var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel', 'about-panel'].some(function(id) {
+        var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
           var el = document.getElementById(id);
           return el && el.style.display === 'block';
         }) || document.getElementById('settings-panel').classList.contains('visible');
@@ -2301,7 +2464,7 @@
   // Tap on scripture content to collapse toolbar (dismiss expanded menu)
   document.getElementById('scripture-content').addEventListener('click', function() {
     // Always close open panels when tapping scripture area
-    var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel', 'about-panel'].some(function(id) {
+    var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
       var el = document.getElementById(id);
       return el && el.style.display === 'block';
     }) || document.getElementById('settings-panel').classList.contains('visible');
