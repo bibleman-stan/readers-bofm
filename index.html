@@ -764,46 +764,46 @@
   }
 
   /* === HEBREW POETRY / PARALLEL STRUCTURE LAYER === */
-  /* Parry-style: clean scholarly indentation with lowercase letter labels, no color noise */
+  /* Parry-style: clean scholarly indentation with letter labels (a, b, c / a', b', c') */
   body.show-parallels [data-parallel-level] {
     position: relative;
-    padding-left: 2em;
+    padding-left: 2.2em;
   }
   body.show-parallels [data-parallel-level]::before {
     content: attr(data-parallel-level);
     position: absolute;
-    left: 0.3em;
-    font-size: 0.7em;
+    left: 0.1em;
+    font-size: 0.75em;
     font-weight: 400;
     font-style: italic;
     font-family: Literata, Georgia, serif;
-    opacity: 0.45;
+    opacity: 0.7;
     color: inherit;
-    top: 0.25em;
+    top: 0.2em;
     text-transform: lowercase;
   }
-  /* Level B — indented */
-  body.show-parallels [data-parallel-level="B"] {
-    padding-left: 3.5em;
+  /* Level B — indented (^= matches both "B" and "B'") */
+  body.show-parallels [data-parallel-level^="B"] {
+    padding-left: 3.8em;
   }
-  body.show-parallels [data-parallel-level="B"]::before { left: 1.8em; }
+  body.show-parallels [data-parallel-level^="B"]::before { left: 1.8em; }
   /* Level C — double indented */
-  body.show-parallels [data-parallel-level="C"] {
-    padding-left: 5em;
+  body.show-parallels [data-parallel-level^="C"] {
+    padding-left: 5.4em;
   }
-  body.show-parallels [data-parallel-level="C"]::before { left: 3.3em; }
+  body.show-parallels [data-parallel-level^="C"]::before { left: 3.4em; }
   /* Level D — triple indented */
-  body.show-parallels [data-parallel-level="D"] {
-    padding-left: 6.5em;
+  body.show-parallels [data-parallel-level^="D"] {
+    padding-left: 7em;
   }
-  body.show-parallels [data-parallel-level="D"]::before { left: 4.8em; }
+  body.show-parallels [data-parallel-level^="D"]::before { left: 5em; }
   /* Level E — quad indented */
-  body.show-parallels [data-parallel-level="E"] {
-    padding-left: 8em;
+  body.show-parallels [data-parallel-level^="E"] {
+    padding-left: 8.6em;
   }
-  body.show-parallels [data-parallel-level="E"]::before { left: 6.3em; }
+  body.show-parallels [data-parallel-level^="E"]::before { left: 6.6em; }
   /* Light-mode: slightly more visible labels */
-  body.light-mode.show-parallels [data-parallel-level]::before { opacity: 0.55; }
+  body.light-mode.show-parallels [data-parallel-level]::before { opacity: 0.8; }
 
   /* === GEOGRAPHY LAYER === */
   .geo-ref { display: inline; }

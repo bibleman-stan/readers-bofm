@@ -63,6 +63,31 @@ for ti, t in enumerate(_tens):
             WORD_NUMS[f'{t}-{_ones[oi]}'] = ti * 10 + oi
 
 
+def add_chiasmus_primes(lines):
+    """For chiasmus structures, add prime notation to the return-side levels.
+
+    E.g., A,B,C,B,A → A,B,C,B',A'  (mirror side gets primes)
+    """
+    if len(lines) < 3:
+        # Simple pair — just A, A → A, A' for chiasmus
+        if len(lines) == 2 and lines[0]['level'] == lines[1]['level']:
+            lines[1]['level'] = lines[1]['level'] + "'"
+        return lines
+
+    # Find the deepest point (highest letter = center of chiasm)
+    depths = [ord(l['level']) - ord('A') for l in lines]
+    max_depth = max(depths)
+    # First occurrence of max depth is the center
+    center_idx = depths.index(max_depth)
+
+    # Everything after the center gets primed
+    for j in range(center_idx + 1, len(lines)):
+        if "'" not in lines[j]['level']:
+            lines[j]['level'] = lines[j]['level'] + "'"
+
+    return lines
+
+
 def clean_parry_text(text):
     """Clean a line from Parry for matching against BofM sense-lines."""
     # Remove type annotations
@@ -208,6 +233,10 @@ def parse_parry(filepath, book_filter=None):
             if our_type == 'chiasmus' and max_depth > 3:
                 i += 1
                 continue
+
+            # Add prime notation for chiasmus return-side
+            if our_type == 'chiasmus':
+                labeled = add_chiasmus_primes(labeled)
 
             verse_start = min(ll['verse'] for ll in labeled)
             verse_end = max(ll['verse'] for ll in labeled)
