@@ -614,8 +614,33 @@ Removed the `[data-source]::after` CSS content rule that displayed inline script
 ### Hebrew Poetry CSS Rewrite
 Replaced colored backgrounds + rainbow letter labels with Parry-style clean scholarly indentation: lowercase italic letters inheriting text color at 45% opacity, progressive padding-left per level, no backgrounds.
 
+### Sense-Line Splits from Parry Alignment
+Ran `parry_split_candidates.py` to identify sense-lines where Parry's parallel fragments suggest a split. Found 308 candidates; applied ~98 high/medium-confidence splits (semicolon breaks, comma+conjunction) across 1 Nephi, 2 Nephi, Mosiah, and Alma source files.
+
+### Chiasmus Prime Notation
+Added `add_chiasmus_primes()` to `build_parallel_index.py`. For chiasmus structures (A,B,C,B,A), the return side now displays as a', b', c' instead of a, b, c. Algorithm finds the deepest point (center of chiasm) and primes everything after it.
+
+### Default Landing Page
+Changed init behavior: no hash → show About page; hash present → honor deep link. Removed auto-loading 1 Nephi on startup. `showAboutPage()` clears URL hash with `history.replaceState()`.
+
+### KJV Partial-Chapter Parallel Mappings (Mar 2 late)
+Extended `build_kjv_diff.py` with `PARTIAL_PARALLELS` for verse-range quotations that don't span a full chapter:
+- **Mosiah 14** = Isaiah 53 (full chapter, was missing from `PARALLEL_CHAPTERS`)
+- **Mosiah 12:21-24** = Isaiah 52:7-10
+- **3 Nephi 16:18-20** = Isaiah 52:8-10
+- **3 Nephi 20:36-45** = Isaiah 52:1-3, 52:6-7, 52:11-15
+- **2 Nephi 6:6-7** = Isaiah 49:22-23
+- **2 Nephi 6:16-18** = Isaiah 49:24-26
+- **2 Nephi 8:24-25** = Isaiah 52:1-2
+- **2 Nephi 9:50-51** = Isaiah 55:1-2
+- **2 Nephi 30:9-15** = Isaiah 11:4-9
+
+Total KJV diff coverage: 551 verses (up from ~420).
+
+Also added pericope section headers for newly mapped quotation passages (e.g., "Quoting Isaiah (Isa 52:8–10)" before 3 Ne 16:18). Changed `has_diff` check so ALL verses with KJV parallel data get `has-kjv-diff` class, not just those with actual textual differences.
+
 ### All 15 Books Rebuilt
-Ran `build_book.py --all booklist.txt --out books/` — all books now have corrected KJV diff data and parallel layer markup.
+Ran `build_book.py --all booklist.txt --out books/` — all books now have expanded KJV parallel data, corrected diffs, parallel layer markup, and sense-line improvements.
 
 ---
 
