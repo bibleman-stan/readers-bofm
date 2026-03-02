@@ -813,8 +813,19 @@
     color: #b5854a;
     font-weight: bold;
   }
+  body.show-geo [data-geo]::after {
+    content: "\2014\00a0" attr(data-geo);
+    font-size: 0.7em;
+    font-style: italic;
+    font-weight: normal !important;
+    display: inline;
+    color: rgba(201, 163, 104, 0.7);
+  }
   body.light-mode.show-geo .geo-ref {
     color: #8b6914;
+  }
+  body.light-mode.show-geo [data-geo]::after {
+    color: rgba(139, 105, 20, 0.5);
   }
 
   /* Pericope / Sections layer */

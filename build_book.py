@@ -863,10 +863,20 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
     # Check for geography entries on this verse
     geo_entries = get_geo_entries(book_id, verse['chapter'], verse['verse']) if book_id else []
     if geo_entries:
+        # Build category annotation for the verse (shown as subscript)
+        geo_cats = list(dict.fromkeys(e.get('category', '') for e in geo_entries))
+        geo_label = ', '.join(geo_cats)
         geo_wrapped = []
+        last_geo_line = -1
         for i, line in enumerate(processed):
             highlighted = apply_geo_highlights(line, geo_entries)
             geo_wrapped.append(highlighted)
+            if 'geo-ref' in highlighted:
+                last_geo_line = i
+        # Place the data-geo tag on the last line that has geo-ref content,
+        # or the last line of the verse if no geo-ref spans were found
+        tag_line = last_geo_line if last_geo_line >= 0 else len(geo_wrapped) - 1
+        geo_wrapped[tag_line] = f'<span data-geo="{geo_label}">{geo_wrapped[tag_line]}</span>'
         processed = geo_wrapped
 
     # Check for KJV diff data (parallel passage visualization)
