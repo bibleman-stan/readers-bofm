@@ -21,7 +21,8 @@ A web-based reading app for the Book of Mormon designed for ESL readers, childre
 
 | File | Purpose | Lines |
 |------|---------|-------|
-| `index.html` | Main app shell — all CSS, HTML, JS in one file | ~2600 |
+| `index.html` | Main app shell — all CSS, HTML, JS in one file | ~2740 |
+| `readalong.html` | **Standalone beta** — Read Along mic/speech tool (extracted from index.html Mar 2) | ~420 |
 | `build_book.py` | Converts sense-line `.txt` sources into HTML book fragments | ~1090 |
 | `build_parallel_index.py` | Parses Parry parallelism data into JSON index (lite filter) | ~300 |
 | `books/*.html` | Generated HTML fragments, one per book (15 total, loaded via fetch) | varies |
@@ -82,7 +83,7 @@ Sticky toolbar with multiple sub-components:
 2. **Book grid** (`#book-grid`) — 15 book abbreviation buttons + "About [Book Name]" pill
 3. **Settings panel** (`#settings-panel`) — typography controls (uses `.visible` class, not display)
 4. **Navigation panel** (`#nav-panel`) — chapter number grid (shown on book tap)
-5. **Controls row** (`.controls-row`) — pill buttons: Aid · Verses · Sections · Layers · ⚙
+5. **Controls row** (`.controls-row`) — pill buttons: Aid · Verses · Sections · Layers · ⚙ (Mic button removed — see `readalong.html`)
 6. **Layers panel** (`#layers-panel`) — checkbox toggles grouped by category
 7. **Background panel** (`#background-panel`) — book introductions with expandable `<details>` sections
 
@@ -641,6 +642,24 @@ Also added pericope section headers for newly mapped quotation passages (e.g., "
 
 ### All 15 Books Rebuilt
 Ran `build_book.py --all booklist.txt --out books/` — all books now have expanded KJV parallel data, corrected diffs, parallel layer markup, and sense-line improvements.
+
+### Read Along Feature Extraction (Mar 2 evening)
+The mic/Read Along feature (~280 lines of JS + CSS) was extracted from `index.html` into a standalone `readalong.html` file. The main app no longer has any speech recognition code.
+
+**What was removed from `index.html`:**
+- CSS: `.pill-btn.active-mic`, `@keyframes mic-pulse`, `.ra-word-active`, `.ra-line-active`, `.ra-word-done` + light-mode variants (~34 lines)
+- HTML: `<button id="mic-pill">` from controls row, Mic feature card from About page
+- JS: Entire Read Along IIFE — `SpeechRecognition` setup, `buildWordMap()`, `teardownWordMap()`, `highlightWord()`, `processSpeech()`, Levenshtein matching, `showChapter` wrapper (~270 lines)
+
+**What `readalong.html` provides:**
+- Standalone single-file tool with its own book grid, chapter selector, and status indicator
+- Loads the same `books/*.html` fragments via fetch (same content, just a different shell)
+- Full speech recognition with fuzzy Levenshtein matching, word-by-word highlighting, line tracking, auto-scroll
+- "← Back to the Reading Edition" link to `index.html`
+- Marked as BETA with a red tag in the header
+- Could live at `bomreader.com/readalong` or eventually become its own repo
+
+**Why extracted:** The feature "kind of works but not really yet" — browser speech recognition is inconsistent (Chrome-only, intermittent timeouts, accuracy issues with archaic English). Keeping it separate lets the main reader stay stable while the Read Along tool can be iterated on independently.
 
 ---
 

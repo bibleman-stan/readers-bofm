@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book of Mormon — Read Along (Beta)</title>
+<meta name="description" content="Read Along mode for the Book of Mormon Reading Edition. Follow along as you read aloud — words highlight in real time.">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --line-height: 2.35;
+    --wrap-indent: 0.75em;
+    --verse-gap: 2px;
+    --verse-num-display: none;
+    --punct-opacity: 0;
+    --font-size: 17px;
+    --letter-spacing: 0em;
+    --word-spacing: 0em;
+    --content-padding: 18px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1c1f24;
+    color: #d4d0c8;
+    font-family: Literata, Georgia, serif;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    max-width: 42em;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 1.6em;
+    text-align: left;
+    margin-bottom: 0.4em;
+    line-height: 1.1;
+  }
+
+  h1 .subtitle {
+    display: block;
+    font-size: 0.48em;
+    font-style: italic;
+    color: #8899aa;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-top: 0.15em;
+  }
+
+  h1 .beta-tag {
+    display: inline-block;
+    font-size: 0.28em;
+    font-style: normal;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    border-radius: 4px;
+    padding: 1px 6px;
+    vertical-align: middle;
+    margin-left: 8px;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+
+  /* ---- Toolbar ---- */
+  #toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #2a2d32;
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .pill-btn {
+    background: none;
+    border: 1px solid #555;
+    border-radius: 16px;
+    color: #aaa;
+    padding: 4px 12px;
+    font-size: 0.75em;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+
+  .pill-btn:hover { border-color: #888; color: #ccc; }
+
+  .pill-btn.active-mic {
+    border-color: #e74c3c;
+    color: #e74c3c;
+    animation: mic-pulse 1.5s ease-in-out infinite;
+  }
+
+  @keyframes mic-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+    50% { box-shadow: 0 0 8px 3px rgba(231, 76, 60, 0.25); }
+  }
+
+  .book-btn {
+    background: #3a3a3a;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #aaa;
+    padding: 4px 8px;
+    font-size: 0.7em;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .book-btn:hover { background: #4a4a4a; color: #ccc; }
+  .book-btn.active { background: #4a6070; color: #d4d0c8; border-color: rgba(124,175,194,0.4); }
+
+  select {
+    background: #3a3a3a;
+    border: 1px solid #555;
+    border-radius: 6px;
+    color: #d4d0c8;
+    padding: 4px 8px;
+    font-size: 0.75em;
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  #status {
+    font-size: 0.72em;
+    color: #888;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  #status.listening { color: #e74c3c; }
+
+  /* ---- Content area ---- */
+  #content { padding: var(--content-padding); }
+
+  .chapter-title {
+    font-size: 1.2em;
+    color: #8899aa;
+    margin-bottom: 0.8em;
+    font-weight: 400;
+  }
+
+  .verse {
+    margin-bottom: var(--verse-gap);
+    position: relative;
+  }
+
+  .verse-num {
+    display: var(--verse-num-display);
+    font-size: 0.6em;
+    color: rgba(154, 170, 187, 0.6);
+    vertical-align: super;
+    margin-right: 0.3em;
+    user-select: none;
+  }
+
+  .line {
+    display: block;
+    text-indent: calc(-1 * var(--wrap-indent));
+    padding-left: var(--wrap-indent);
+  }
+
+  .punct { opacity: var(--punct-opacity); }
+
+  .swap { text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; text-decoration-color: rgba(39,174,96,0.5); }
+
+  /* ---- Read Along highlighting ---- */
+  .ra-word-active {
+    background: rgba(231, 176, 60, 0.35);
+    border-radius: 3px;
+    transition: background 0.15s;
+  }
+
+  .ra-line-active {
+    background: rgba(231, 176, 60, 0.08);
+    border-radius: 3px;
+  }
+
+  .ra-word-done {
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* ---- About / instructions ---- */
+  #about {
+    background: #2a2d32;
+    border-radius: 10px;
+    padding: 1.2em 1.4em;
+    margin-bottom: 1.5em;
+    font-size: 0.88em;
+    line-height: 1.6;
+    color: #aab;
+  }
+
+  #about h2 {
+    font-size: 1.1em;
+    color: #d4d0c8;
+    margin-bottom: 0.4em;
+    font-weight: 600;
+  }
+
+  #about p { margin-bottom: 0.6em; }
+
+  #about .step {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0.5em;
+  }
+
+  #about .step-num {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+
+  .back-link {
+    display: inline-block;
+    font-size: 0.82em;
+    color: #7cafc2;
+    text-decoration: none;
+    margin-top: 1em;
+  }
+
+  .back-link:hover { text-decoration: underline; }
+
+  /* ---- Light mode ---- */
+  body.light-mode { background: #f5f0e8; color: #3a3630; }
+  body.light-mode #toolbar { background: #e8e4dc; }
+  body.light-mode .book-btn { background: #e8eaef; color: #555; }
+  body.light-mode .book-btn.active { background: #d0dae8; color: #3a3630; }
+  body.light-mode select { background: #e8eaef; color: #3a3630; border-color: #ccc; }
+  body.light-mode #about { background: #e8e4dc; color: #555; }
+  body.light-mode #about h2 { color: #3a3630; }
+  body.light-mode .ra-word-done { color: rgba(0,0,0,0.35); }
+  body.light-mode .ra-word-active { background: rgba(200, 150, 30, 0.25); }
+  body.light-mode .ra-line-active { background: rgba(200, 150, 30, 0.06); }
+  body.light-mode .chapter-title { color: #5a7a8a; }
+  body.light-mode .verse-num { color: rgba(90,106,122,0.6); }
+</style>
+</head>
+<body>
+  <h1>The Book of Mormon <span class="subtitle">Read Along Edition <span class="beta-tag">BETA</span></span></h1>
+
+  <div id="toolbar">
+    <div id="book-grid" style="display: flex; flex-wrap: wrap; gap: 4px;"></div>
+    <select id="chapter-select" onchange="loadChapter(this.value)" style="display:none;"></select>
+    <button class="pill-btn" id="mic-pill" onclick="toggleReadAlong()" title="Start reading aloud">Start Reading</button>
+    <span id="status">Choose a book to begin</span>
+  </div>
+
+  <div id="about">
+    <h2>How Read Along Works</h2>
+    <p>This tool listens through your microphone as you read the Book of Mormon aloud. Words highlight in real time to help you track your place.</p>
+    <div class="step"><span class="step-num">1</span><span>Tap a book, then choose a chapter</span></div>
+    <div class="step"><span class="step-num">2</span><span>Tap <strong>Start Reading</strong> — allow microphone access when prompted</span></div>
+    <div class="step"><span class="step-num">3</span><span>Read aloud at your own pace. Words highlight as you go.</span></div>
+    <p style="color: #888; font-size: 0.9em;">Works best in Chrome on desktop or Android. Safari has limited speech recognition support.</p>
+    <a class="back-link" href="index.html">← Back to the Reading Edition</a>
+  </div>
+
+  <div id="content"></div>
+
+<script>
+  // ===========================================================================
+  // BOOK OF MORMON — READ ALONG (BETA)
+  // Standalone tool extracted from bomreader.com
+  // Loads book HTML fragments from the main project's books/ folder
+  // ===========================================================================
+
+  var BOOKS = [
+    { id: '1nephi',  abbr: '1 Ne', name: '1 Nephi', chapters: 22 },
+    { id: '2nephi',  abbr: '2 Ne', name: '2 Nephi', chapters: 33 },
+    { id: 'jacob',   abbr: 'Jac',  name: 'Jacob', chapters: 7 },
+    { id: 'enos',    abbr: 'Eno',  name: 'Enos', chapters: 1 },
+    { id: 'jarom',   abbr: 'Jar',  name: 'Jarom', chapters: 1 },
+    { id: 'omni',    abbr: 'Omn',  name: 'Omni', chapters: 1 },
+    { id: 'words-of-mormon', abbr: 'WoM', name: 'Words of Mormon', chapters: 1 },
+    { id: 'mosiah',  abbr: 'Mos',  name: 'Mosiah', chapters: 29 },
+    { id: 'alma',    abbr: 'Alm',  name: 'Alma', chapters: 63 },
+    { id: 'helaman', abbr: 'Hel',  name: 'Helaman', chapters: 16 },
+    { id: '3nephi',  abbr: '3 Ne', name: '3 Nephi', chapters: 30 },
+    { id: '4nephi',  abbr: '4 Ne', name: '4 Nephi', chapters: 1 },
+    { id: 'mormon',  abbr: 'Morm', name: 'Mormon', chapters: 9 },
+    { id: 'ether',   abbr: 'Eth',  name: 'Ether', chapters: 15 },
+    { id: 'moroni',  abbr: 'Moro', name: 'Moroni', chapters: 10 }
+  ];
+
+  var currentBook = null;
+  var currentChapter = null;
+  var loadedBooks = {};
+
+  // ---- Build book grid ----
+  (function() {
+    var grid = document.getElementById('book-grid');
+    BOOKS.forEach(function(book) {
+      var btn = document.createElement('button');
+      btn.className = 'book-btn';
+      btn.textContent = book.abbr;
+      btn.title = book.name;
+      btn.onclick = function() { selectBook(book.id); };
+      btn.id = 'btn-' + book.id;
+      grid.appendChild(btn);
+    });
+  })();
+
+  function selectBook(bookId) {
+    var book = BOOKS.find(function(b) { return b.id === bookId; });
+    if (!book) return;
+
+    // Stop any active read-along
+    if (typeof stopReadAlong === 'function') stopReadAlong();
+
+    currentBook = book;
+
+    // Update active button
+    document.querySelectorAll('.book-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.getElementById('btn-' + bookId).classList.add('active');
+
+    // Build chapter selector
+    var sel = document.getElementById('chapter-select');
+    sel.innerHTML = '';
+    if (book.chapters === 1) {
+      sel.style.display = 'none';
+      loadChapter(1);
+    } else {
+      sel.style.display = '';
+      for (var i = 1; i <= book.chapters; i++) {
+        var opt = document.createElement('option');
+        opt.value = i;
+        opt.textContent = 'Chapter ' + i;
+        sel.appendChild(opt);
+      }
+      loadChapter(1);
+    }
+  }
+
+  function loadChapter(chNum) {
+    chNum = parseInt(chNum);
+    currentChapter = chNum;
+    var bookId = currentBook.id;
+
+    document.getElementById('about').style.display = 'none';
+    document.getElementById('status').textContent = 'Loading...';
+    document.getElementById('status').className = '';
+
+    if (loadedBooks[bookId]) {
+      showChapter(bookId, chNum);
+      return;
+    }
+
+    fetch('books/' + bookId + '.html')
+      .then(function(r) { return r.text(); })
+      .then(function(html) {
+        // Store the full book HTML
+        var temp = document.createElement('div');
+        temp.innerHTML = html;
+        loadedBooks[bookId] = temp;
+        showChapter(bookId, chNum);
+      })
+      .catch(function(err) {
+        document.getElementById('content').innerHTML =
+          '<p style="color: #e74c3c;">Could not load ' + bookId + '. Make sure books/ folder is available.</p>';
+        document.getElementById('status').textContent = 'Load error';
+      });
+  }
+
+  function showChapter(bookId, chNum) {
+    var bookEl = loadedBooks[bookId];
+    if (!bookEl) return;
+
+    var chDiv = bookEl.querySelector('#ch-' + bookId + '-' + chNum);
+    if (!chDiv) {
+      document.getElementById('content').innerHTML = '<p style="color: #888;">Chapter not found.</p>';
+      return;
+    }
+
+    // Clone the chapter content into the display area
+    var content = document.getElementById('content');
+    content.innerHTML = '';
+    var clone = chDiv.cloneNode(true);
+    clone.style.display = 'block';
+    content.appendChild(clone);
+
+    document.getElementById('status').textContent = currentBook.name + ' ' + chNum + ' — tap Start Reading';
+    document.getElementById('status').className = '';
+
+    window.scrollTo({ top: 0 });
+  }
+
+  // ===========================================================================
+  // READ ALONG — Web Speech API word-tracking
+  // ===========================================================================
+  var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var raActive = false;
+  var recognition = null;
+  var wordEls = [];
+  var wordTexts = [];
+  var cursor = 0;
+  var currentLine = null;
+
+  function norm(w) {
+    return w.toLowerCase().replace(/[^a-z']/g, '');
+  }
+
+  function lev(a, b) {
+    if (a === b) return 0;
+    if (!a.length) return b.length;
+    if (!b.length) return a.length;
+    var m = [];
+    for (var i = 0; i <= b.length; i++) m[i] = [i];
+    for (var j = 0; j <= a.length; j++) m[0][j] = j;
+    for (var i = 1; i <= b.length; i++) {
+      for (var j = 1; j <= a.length; j++) {
+        m[i][j] = b[i-1] === a[j-1] ? m[i-1][j-1] :
+          Math.min(m[i-1][j-1]+1, m[i][j-1]+1, m[i-1][j]+1);
+      }
+    }
+    return m[b.length][a.length];
+  }
+
+  function isMatch(spoken, expected) {
+    if (!spoken || !expected) return false;
+    if (spoken === expected) return true;
+    var maxDist = expected.length <= 3 ? 1 : Math.ceil(expected.length * 0.35);
+    return lev(spoken, expected) <= maxDist;
+  }
+
+  function buildWordMap() {
+    wordEls = [];
+    wordTexts = [];
+    cursor = 0;
+
+    var lines = document.querySelectorAll('#content .line');
+    lines.forEach(function(line) {
+      var walker = document.createTreeWalker(line, NodeFilter.SHOW_TEXT, null, false);
+      var node;
+      while ((node = walker.nextNode())) {
+        var text = node.nodeValue;
+        if (!text.trim()) continue;
+        var parts = text.split(/(\s+)/);
+        if (parts.length <= 1 && !text.trim()) continue;
+        var frag = document.createDocumentFragment();
+        parts.forEach(function(part) {
+          if (/^\s+$/.test(part) || part === '') {
+            frag.appendChild(document.createTextNode(part));
+          } else {
+            var span = document.createElement('span');
+            span.className = 'ra-word';
+            span.textContent = part;
+            frag.appendChild(span);
+            var n = norm(part);
+            if (n) {
+              wordEls.push(span);
+              wordTexts.push(n);
+            }
+          }
+        });
+        node.parentNode.replaceChild(frag, node);
+      }
+    });
+  }
+
+  function teardownWordMap() {
+    document.querySelectorAll('.ra-word').forEach(function(span) {
+      span.classList.remove('ra-word-active', 'ra-word-done');
+      var parent = span.parentNode;
+      if (parent) {
+        parent.replaceChild(document.createTextNode(span.textContent), span);
+        parent.normalize();
+      }
+    });
+    document.querySelectorAll('.ra-line-active').forEach(function(el) {
+      el.classList.remove('ra-line-active');
+    });
+    wordEls = [];
+    wordTexts = [];
+    cursor = 0;
+    currentLine = null;
+  }
+
+  function highlightWord(idx) {
+    if (idx < 0 || idx >= wordEls.length) return;
+    var prevActive = document.querySelector('.ra-word-active');
+    if (prevActive) {
+      prevActive.classList.remove('ra-word-active');
+      prevActive.classList.add('ra-word-done');
+    }
+    wordEls[idx].classList.add('ra-word-active');
+    var line = wordEls[idx].closest('.line');
+    if (line !== currentLine) {
+      if (currentLine) currentLine.classList.remove('ra-line-active');
+      if (line) line.classList.add('ra-line-active');
+      currentLine = line;
+    }
+    var rect = wordEls[idx].getBoundingClientRect();
+    var toolbarH = document.getElementById('toolbar').offsetHeight || 60;
+    if (rect.top < toolbarH + 20 || rect.bottom > window.innerHeight - 20) {
+      wordEls[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  function processSpeech(transcript) {
+    var spoken = transcript.toLowerCase().replace(/[^a-z'\s]/g, '').split(/\s+/).filter(Boolean);
+    if (!spoken.length) return;
+
+    spoken.forEach(function(sw) {
+      if (cursor >= wordTexts.length) return;
+      var sn = norm(sw);
+      if (!sn) return;
+
+      var lookAhead = Math.min(4, wordTexts.length - cursor);
+      var bestIdx = -1;
+      var bestDist = 999;
+      for (var i = 0; i < lookAhead; i++) {
+        var d = lev(sn, wordTexts[cursor + i]);
+        var maxDist = wordTexts[cursor+i].length <= 3 ? 1 : Math.ceil(wordTexts[cursor+i].length * 0.35);
+        if (d <= maxDist && d < bestDist) {
+          bestDist = d;
+          bestIdx = cursor + i;
+        }
+      }
+
+      if (bestIdx >= 0) {
+        for (var j = cursor; j < bestIdx; j++) {
+          wordEls[j].classList.add('ra-word-done');
+        }
+        highlightWord(bestIdx);
+        cursor = bestIdx + 1;
+      }
+    });
+
+    // Update status with progress
+    if (wordTexts.length > 0) {
+      var pct = Math.round(cursor / wordTexts.length * 100);
+      document.getElementById('status').textContent = currentBook.name + ' ' + currentChapter + ' — ' + pct + '% read';
+    }
+  }
+
+  function startRecognition() {
+    if (!SpeechRecognition) {
+      alert('Speech recognition is not supported in this browser. Try Chrome on desktop or Android.');
+      return false;
+    }
+    recognition = new SpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = true;
+    recognition.lang = 'en-US';
+    recognition.maxAlternatives = 1;
+
+    var lastProcessed = '';
+
+    recognition.onresult = function(event) {
+      var result = event.results[event.results.length - 1];
+      var transcript = result[0].transcript;
+      if (transcript !== lastProcessed) {
+        var newPart = transcript;
+        if (!result.isFinal && lastProcessed && transcript.startsWith(lastProcessed)) {
+          newPart = transcript.slice(lastProcessed.length);
+        }
+        processSpeech(newPart);
+        if (result.isFinal) {
+          lastProcessed = '';
+        } else {
+          lastProcessed = transcript;
+        }
+      }
+    };
+
+    recognition.onerror = function(event) {
+      if (event.error === 'no-speech' || event.error === 'aborted') return;
+      console.log('Speech recognition error:', event.error);
+      if (event.error === 'not-allowed') {
+        alert('Microphone access was denied. Please allow microphone access and try again.');
+        stopReadAlong();
+      }
+    };
+
+    recognition.onend = function() {
+      if (raActive) {
+        try { recognition.start(); } catch(e) {}
+      }
+    };
+
+    try {
+      recognition.start();
+      return true;
+    } catch(e) {
+      alert('Could not start speech recognition: ' + e.message);
+      return false;
+    }
+  }
+
+  function stopReadAlong() {
+    raActive = false;
+    if (recognition) {
+      try { recognition.stop(); } catch(e) {}
+      recognition = null;
+    }
+    teardownWordMap();
+    var pill = document.getElementById('mic-pill');
+    if (pill) { pill.classList.remove('active-mic'); pill.textContent = 'Start Reading'; }
+    if (currentBook && currentChapter) {
+      document.getElementById('status').textContent = currentBook.name + ' ' + currentChapter + ' — tap Start Reading';
+    }
+    document.getElementById('status').className = '';
+  }
+
+  window.toggleReadAlong = function() {
+    if (raActive) {
+      stopReadAlong();
+      return;
+    }
+    if (!currentBook || !currentChapter) {
+      alert('Choose a book and chapter first.');
+      return;
+    }
+    buildWordMap();
+    if (!wordEls.length) {
+      alert('No text found. Navigate to a chapter first.');
+      return;
+    }
+    if (!startRecognition()) {
+      teardownWordMap();
+      return;
+    }
+    raActive = true;
+    var pill = document.getElementById('mic-pill');
+    if (pill) { pill.classList.add('active-mic'); pill.textContent = 'Stop'; }
+    document.getElementById('status').textContent = 'Listening...';
+    document.getElementById('status').className = 'listening';
+    highlightWord(0);
+  };
+</script>
+</body>
+</html>
