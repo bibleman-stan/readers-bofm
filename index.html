@@ -1385,7 +1385,7 @@
     <label>
       <input type="checkbox" id="deity-check" onchange="toggleDeityLayer(this.checked); updateLayersPill()" style="accent-color: #c0392b;">
       <span class="layer-swatch" style="background: #c0392b;"></span>
-      <span>God's Presence</span>
+      <span>The Father and the Son</span>
     </label>
     <label>
       <input type="checkbox" id="spirit-check" onchange="toggleSpiritLayer(this.checked); updateLayersPill()" style="accent-color: #888;">
@@ -1667,8 +1667,8 @@
     <p>Layers are colored highlights you can toggle on and off. They let you see patterns in the text that aren't visible in a plain reading. You can turn on one layer at a time or combine several.</p>
 
     <div class="feature-card">
-      <div class="feature-name"><span class="swatch-demo" style="background: #c0392b;"></span> God's Presence</div>
-      <div class="feature-desc">Highlights passages where God the Father or Jesus Christ speaks directly or is described as personally present. This helps you see how often God's voice and presence appear throughout the narrative.</div>
+      <div class="feature-name"><span class="swatch-demo" style="background: #c0392b;"></span> The Father and the Son</div>
+      <div class="feature-desc">Highlights references to God the Father (blue), Jesus Christ (red), and the Holy Spirit (separate layer). Christological titles like "the Father of heaven and earth" highlight as Christ references per Book of Mormon theology.</div>
     </div>
 
     <div class="feature-card">
@@ -1769,6 +1769,12 @@
 
   // ---- DEITY HIGHLIGHTING ----
   var deityPatterns = [
+    'the very Eternal Father of heaven and of earth',
+    'the Eternal Father of heaven and of earth',
+    'the Father of heaven and of earth',
+    'the Father of heaven and earth',
+    'the Eternal Father of heaven',
+    'the Father of heaven',
     'Christ, the Lord God Omnipotent',
     'the Lord God Omnipotent',
     'Lord God Omnipotent',
