@@ -916,12 +916,19 @@ def build_parallel_map(bid, ch_num, ch_verses):
     Returns dict like {(3, 2): ('p1', 'A'), (3, 3): ('p1', 'B'), ...}
 
     Quality filters:
-    - Structures where <50% of lines match are dropped entirely (too noisy)
+    - Skip structures with >10 Parry lines (too sprawling for our sense-line granularity)
+    - Skip structures using levels deeper than C (D, E, F... too fine-grained)
+    - Structures where <60% of lines match are dropped entirely (too noisy)
     - When multiple Parry lines match the same sense-line, uses the shallowest (A>B>C) level
+    - Orphan labels (single label in a verse) are pruned
+    - After pruning, skip if matched lines don't show both halves of the pattern (need A and B minimum)
     """
     structures = get_parallel_structures(bid, ch_num)
     if not structures:
         return {}
+
+    MAX_LINES = 10       # structures larger than this are too sprawling
+    MAX_DEPTH = 'C'      # don't display levels deeper than C (D, E, F are too fine-grained)
 
     # Build a lookup: verse_num -> [(line_index, raw_text), ...]
     verse_lines = {}
@@ -931,6 +938,14 @@ def build_parallel_map(bid, ch_num, ch_verses):
 
     result = {}
     for si, struct in enumerate(structures):
+        # Pre-filter: skip structures that are too large or too deep
+        if len(struct['lines']) > MAX_LINES:
+            continue
+        # Check max depth used in structure
+        deepest = max((line['level'].rstrip("'") for line in struct['lines']), default='A')
+        if deepest > MAX_DEPTH:
+            continue
+
         group_id = f'p{ch_num}-{si}'
         # Track which sense-lines have been consumed within each verse for this structure,
         # so repeated text (e.g., "and he suffereth it" x3) matches sequentially
@@ -1009,6 +1024,21 @@ def build_parallel_map(bid, ch_num, ch_verses):
 
         # After pruning orphans, need at least 2 lines to be useful
         if len(struct_matches) < 2:
+            continue
+
+        # Pattern completeness: must have at least A and B levels to show a real parallel
+        remaining_levels = set(v[1].rstrip("'") for v in struct_matches.values())
+        if 'A' not in remaining_levels or 'B' not in remaining_levels:
+            continue
+
+        # Gap check: the remaining levels should be consecutive (A,B or A,B,C — no A,C skipping B)
+        sorted_levels = sorted(remaining_levels)
+        has_gaps = False
+        for i in range(1, len(sorted_levels)):
+            if ord(sorted_levels[i]) - ord(sorted_levels[i-1]) > 1:
+                has_gaps = True
+                break
+        if has_gaps:
             continue
 
         # Merge into result (don't overwrite existing assignments from earlier structures)
