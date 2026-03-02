@@ -100,6 +100,12 @@ def tokenize_words(text):
     return words
 
 
+def normalize_for_diff(word):
+    """Strip trailing punctuation and lowercase for comparison.
+    This prevents false diffs where only punctuation differs (e.g. 'Lord,' vs 'Lord')."""
+    return re.sub(r'[.,;:!?\-—]+$', '', word).lower()
+
+
 def word_diff(kjv_text, bom_text):
     """
     Perform word-level diff between KJV and BoM text.
@@ -109,9 +115,10 @@ def word_diff(kjv_text, bom_text):
     kjv_words = tokenize_words(kjv_text)
     bom_words = tokenize_words(bom_text)
 
-    # For matching, use lowercase versions
-    kjv_words_lower = [w.lower() for w in kjv_words]
-    bom_words_lower = [w.lower() for w in bom_words]
+    # Normalize: strip trailing punctuation + lowercase for comparison
+    # This ensures "Lord," and "Lord" match as equal
+    kjv_words_lower = [normalize_for_diff(w) for w in kjv_words]
+    bom_words_lower = [normalize_for_diff(w) for w in bom_words]
 
     # Use SequenceMatcher to find matching blocks
     matcher = SequenceMatcher(isjunk=None, a=kjv_words_lower, b=bom_words_lower)
@@ -235,7 +242,7 @@ def build_kjv_diff_index(scriptures):
 
 def main():
     print("Parsing lds-scriptures.txt...")
-    scriptures = parse_scripture_file('/sessions/compassionate-dreamy-faraday/mnt/readers-bofm/lds-scriptures.txt')
+    scriptures = parse_scripture_file('/sessions/compassionate-dreamy-faraday/mnt/readers-bofm/data/lds-scriptures.txt')
     print(f"Loaded {len(scriptures)} scripture verses")
 
     print("Building KJV diff index...")

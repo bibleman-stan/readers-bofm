@@ -764,38 +764,46 @@
   }
 
   /* === HEBREW POETRY / PARALLEL STRUCTURE LAYER === */
-  /* Hidden by default; activated by body.show-parallels */
-  body.show-parallels [data-parallel-level="A"] {
-    background: rgba(94, 173, 173, 0.10);
-    border-left: 2.5px solid rgba(94, 173, 173, 0.38);
-    padding-left: 6px;
-    margin-left: -9px;
+  /* Parry-style: clean scholarly indentation with lowercase letter labels, no color noise */
+  body.show-parallels [data-parallel-level] {
+    position: relative;
+    padding-left: 2em;
   }
+  body.show-parallels [data-parallel-level]::before {
+    content: attr(data-parallel-level);
+    position: absolute;
+    left: 0.3em;
+    font-size: 0.7em;
+    font-weight: 400;
+    font-style: italic;
+    font-family: Literata, Georgia, serif;
+    opacity: 0.45;
+    color: inherit;
+    top: 0.25em;
+    text-transform: lowercase;
+  }
+  /* Level B — indented */
   body.show-parallels [data-parallel-level="B"] {
-    background: rgba(154, 133, 176, 0.10);
-    border-left: 2.5px solid rgba(154, 133, 176, 0.38);
-    padding-left: 6px;
-    margin-left: -9px;
+    padding-left: 3.5em;
   }
+  body.show-parallels [data-parallel-level="B"]::before { left: 1.8em; }
+  /* Level C — double indented */
   body.show-parallels [data-parallel-level="C"] {
-    background: rgba(125, 168, 125, 0.10);
-    border-left: 2.5px solid rgba(125, 168, 125, 0.38);
-    padding-left: 6px;
-    margin-left: -9px;
+    padding-left: 5em;
   }
-  /* Light-mode variants */
-  body.light-mode.show-parallels [data-parallel-level="A"] {
-    background: rgba(94, 173, 173, 0.12);
-    border-left-color: rgba(60, 140, 140, 0.45);
+  body.show-parallels [data-parallel-level="C"]::before { left: 3.3em; }
+  /* Level D — triple indented */
+  body.show-parallels [data-parallel-level="D"] {
+    padding-left: 6.5em;
   }
-  body.light-mode.show-parallels [data-parallel-level="B"] {
-    background: rgba(154, 133, 176, 0.12);
-    border-left-color: rgba(120, 100, 150, 0.45);
+  body.show-parallels [data-parallel-level="D"]::before { left: 4.8em; }
+  /* Level E — quad indented */
+  body.show-parallels [data-parallel-level="E"] {
+    padding-left: 8em;
   }
-  body.light-mode.show-parallels [data-parallel-level="C"] {
-    background: rgba(125, 168, 125, 0.12);
-    border-left-color: rgba(90, 140, 90, 0.45);
-  }
+  body.show-parallels [data-parallel-level="E"]::before { left: 6.3em; }
+  /* Light-mode: slightly more visible labels */
+  body.light-mode.show-parallels [data-parallel-level]::before { opacity: 0.55; }
 
   /* === GEOGRAPHY LAYER === */
   .geo-ref { display: inline; }
@@ -922,16 +930,8 @@
     color: #8a7a2a;
   }
 
-  .sources-quotations [data-source]::after,
-  .sources-allusions [data-source]::after {
-    content: "\2014\00a0" attr(data-source);
-    font-size: 0.7em;
-    font-style: italic;
-    font-weight: normal !important;
-    text-decoration: none;
-    display: inline;
-    color: rgba(107, 163, 214, 0.5);
-  }
+  /* Inline references removed — pericope headers now provide scripture context.
+     data-source attributes remain in HTML for future use (tooltips, etc.) */
 
   /* === KJV DIFF LAYER === */
   /* By default, diff view is hidden; normal text shows */
@@ -944,17 +944,18 @@
   /* Diff markup styles */
   .kjv-del {
     text-decoration: line-through;
-    opacity: 0.5;
+    color: rgba(200, 110, 110, 0.7);
     font-weight: normal;
   }
   .kjv-ins {
     font-weight: bold;
+    color: #d4a855;
   }
   .kjv-diff-ref {
     display: inline;
     font-size: 0.7em;
     font-style: italic;
-    color: rgba(107, 163, 214, 0.5);
+    color: rgba(107, 163, 214, 0.65);
     margin-left: 0.5em;
   }
   .kjv-diff-ref::before {
@@ -964,8 +965,9 @@
     display: inline;
   }
 
-  body.light-mode .kjv-del { opacity: 0.4; }
-  body.light-mode .kjv-diff-ref { color: rgba(42, 100, 150, 0.5); }
+  body.light-mode .kjv-del { color: rgba(180, 70, 70, 0.6); }
+  body.light-mode .kjv-ins { color: #8a6a20; }
+  body.light-mode .kjv-diff-ref { color: rgba(42, 100, 150, 0.6); }
 
   /* Intro section styles */
   .intro-section {
@@ -2086,6 +2088,7 @@
     var isVisible = panel.classList.contains('visible');
     // Close other panels when opening settings
     if (!isVisible) {
+      document.getElementById('nav-panel').style.display = 'none';
       document.getElementById('layers-panel').style.display = 'none';
       document.getElementById('layers-pill').classList.remove('active-layers');
       document.getElementById('background-panel').style.display = 'none';
@@ -2103,6 +2106,7 @@
   // ---- BOOK GRID NAVIGATION ----
   window.onBookBtnClick = function(bookId) {
     pauseCollapse();
+    pendingChapter = null;  // Clear any pending chapter from a previous book switch
     var meta = bookMeta[bookId];
     if (!meta) return;
     // Close other panels
@@ -2217,10 +2221,16 @@
       var finalCh = pendingChapter || ch;
       pendingChapter = null;
       showChapter(bookId, finalCh);
-      // Only show chapter grid if no specific chapter was requested
+      // Only show chapter grid if no specific chapter was requested AND no other panel is open
       if (!targetChapter && finalCh === 1) {
-        var navPanel = document.getElementById('nav-panel');
-        if (navPanel) navPanel.style.display = 'block';
+        var otherPanelOpen = ['layers-panel', 'background-panel'].some(function(id) {
+          var el = document.getElementById(id);
+          return el && el.style.display === 'block';
+        }) || document.getElementById('settings-panel').classList.contains('visible');
+        if (!otherPanelOpen) {
+          var navPanel = document.getElementById('nav-panel');
+          if (navPanel) navPanel.style.display = 'block';
+        }
       }
       if (deityLayerOn || spiritLayerOn) {
         addDeityHighlights();

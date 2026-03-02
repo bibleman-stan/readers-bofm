@@ -1,7 +1,7 @@
 # Book of Mormon Reader's Edition — Cowork Handoff
 
-**Last updated:** 2026-03-01 (evening)
-**Sessions covered:** Feb 28 (initial build) → Feb 28 evening (v8 reformatter) → Mar 1 (layers, pericope, polish, About page) → Mar 1 evening (Isaiah pericopes, two-tier headers, Hebrew Poetry layer, UI fixes)
+**Last updated:** 2026-03-02
+**Sessions covered:** Feb 28 (initial build) → Feb 28 evening (v8 reformatter) → Mar 1 (layers, pericope, polish, About page) → Mar 1 evening (Isaiah pericopes, two-tier headers, Hebrew Poetry layer, UI fixes) → Mar 2 (nav bug fixes, Parry-style CSS, KJV diff fix, reference cleanup)
 
 ---
 
@@ -426,40 +426,40 @@ A new layer that highlights Hebraic parallel structures (chiasmus, synonymous pa
 - `gen_verse()` injects `data-parallel-group="p12-0"` and `data-parallel-level="A"` attributes on matching `<span class="line">` elements
 - 2 Nephi build produces 402 tagged lines across 142 matched structures
 
-### CSS — Line-Level Visual Channel
-All existing layers work at word/phrase level (text color, underline, `::after` pseudo-elements). The parallel layer uses LINE-level properties to avoid collision:
+### CSS — Parry-Style Clean Scholarly Indentation (Mar 2)
+All existing layers work at word/phrase level (text color, underline, `::after` pseudo-elements). The parallel layer uses LINE-level properties (indentation, labels) to avoid collision.
+
+**Design:** Matches Donald Parry's published format — clean cascading indentation with lowercase italic letter labels, no background colors or decorative borders. Purely structural.
 
 ```css
-body.show-parallels [data-parallel-level="A"] {
-  background: rgba(94, 173, 173, 0.10);      /* teal */
-  border-left: 2.5px solid rgba(94, 173, 173, 0.38);
-  padding-left: 6px; margin-left: -9px;
+body.show-parallels [data-parallel-level] {
+  position: relative;
+  padding-left: 2em;           /* base indent for label space */
 }
-body.show-parallels [data-parallel-level="B"] {
-  background: rgba(154, 133, 176, 0.10);     /* soft purple */
-  border-left: 2.5px solid rgba(154, 133, 176, 0.38);
+body.show-parallels [data-parallel-level]::before {
+  content: attr(data-parallel-level);
+  text-transform: lowercase;   /* A→a, B→b, etc. */
+  color: inherit;              /* matches text color, not rainbow */
+  opacity: 0.45;
+  font-style: italic;
+  font-weight: 400;
 }
-body.show-parallels [data-parallel-level="C"] {
-  background: rgba(125, 168, 125, 0.10);     /* sage */
-  border-left: 2.5px solid rgba(125, 168, 125, 0.38);
-}
+/* Progressive indentation: A=2em, B=3.5em, C=5em, D=6.5em, E=8em */
 ```
 
-### Current State (Proof of Concept)
-- ✅ Parser complete, generates 619 lite structures
-- ✅ Build pipeline injects data attributes on matched sense-lines
-- ✅ CSS layer with teal/purple/sage color scheme
-- ✅ Layers panel toggle ("Hebrew Poetry" under "Literary" group)
-- ✅ 2 Nephi rebuilt with parallel markup (402 tagged lines)
-- ⚠️ Only 2 Nephi has been rebuilt — other books need `build_book.py --all` to get parallel data
-- ⚠️ Current rendering uses flat left-border + background tint (functional but visually basic)
+Previous iterations tried colored backgrounds + colored letter labels per level — user rejected these as too noisy/decorative compared to Parry's clean academic style.
 
-### Future Enhancement: Parry-Style Indented Rendering
-The user wants cascading indentation (A flush, B indented, C double-indented + letter labels) like Parry's published format. Analysis shows:
-- **22% of structures** (32/143 in 2 Nephi) have perfect sense-line alignment — all Parry break-points coincide with existing sense-line breaks. These could get Parry-style indentation immediately.
+### Current State
+- ✅ Parser complete, generates 619 lite structures
+- ✅ Build pipeline injects `data-parallel-group` and `data-parallel-level` attributes on matched sense-lines
+- ✅ CSS: Parry-style cascading indentation with lowercase labels (Mar 2)
+- ✅ Layers panel toggle ("Hebrew Poetry" under "Literary" group)
+- ✅ All 15 books rebuilt with parallel markup (Mar 2)
+
+### Alignment Analysis
+- **22% of structures** (32/143 in 2 Nephi) have perfect sense-line alignment — all Parry break-points coincide with existing sense-line breaks
 - **78% have mismatches** — Parry wants line breaks inside our sense-lines (209 split candidates in 2 Nephi)
-- **Possible approach:** Use Parry's break-points as a diagnostic to identify sense-lines that merit revision; as sense-lines get refined, Parry-style rendering coverage increases organically.
-- This is filed as a "very cool nice-to-have" — not a must-have.
+- **Possible approach:** Use Parry's break-points as a diagnostic to identify sense-lines that merit revision; as sense-lines get refined, Parry-style rendering coverage increases organically
 
 ---
 
@@ -578,7 +578,7 @@ Automatically stacks parallel triads (3+ ", and X" items) vertically.
 - **Sections (pericope) are build-time injected** as `<div class="pericope-header">` — not runtime JS.
 - **Layers panel groups**: Divine Voice, Biblical Roots, Setting, Literary. Sections is a top-level pill, not in layers.
 - **About page replaces content area** (not a dropdown), toolbar stays functional for navigation.
-- **Layer visual channel separation:** Existing layers (deity, quotations, allusions, geography, KJV diff) all work at word/phrase level (text color, underline, `::after`). The parallel layer uses LINE-level properties (left border + background tint) — no visual collision when all layers are active simultaneously.
+- **Layer visual channel separation:** Existing layers (deity, quotations, allusions, geography, KJV diff) all work at word/phrase level (text color, underline, `::after`). The parallel layer uses LINE-level properties (indentation + letter labels via `::before`) — no visual collision when all layers are active simultaneously.
 - **Parallel "lite" filter:** Parry's full dataset (1,530 structures) is too dense. Lite = chiasmus ≤3 deep + simple couplets = 619 structures (60% reduction).
 - **Two-tier pericope headers** for Isaiah/Malachi sections provide main title, subtitle, and scripture cross-reference on separate lines.
 
@@ -586,14 +586,36 @@ Automatically stacks parallel triads (3+ ", and X" items) vertically.
 
 ## Pending / Known Issues
 
-1. **Rebuild all books** — Only 2 Nephi has been rebuilt with the parallel layer data attributes. Run `python3 build_book.py --all booklist.txt --out books/` to propagate to all 15 books.
-2. **Hebrew Poetry visual rendering** — Current flat border+tint works but user wants Parry-style cascading indentation for the ~22% of structures where sense-lines align. See "Future Enhancement" in the Hebrew Poetry section.
-3. **KJV diff layer styling** — User noted the font/color combo is too subtle. Deferred: "let's do that after you tackle the pericope beast."
+1. ~~**Rebuild all books**~~ — ✅ Done (Mar 2). All 15 books rebuilt with parallel layer + corrected KJV diff data.
+2. ~~**Hebrew Poetry visual rendering**~~ — ✅ Done (Mar 2). Parry-style clean cascading indentation with lowercase labels. See Hebrew Poetry section.
+3. ~~**KJV diff layer styling**~~ — ✅ Done (Mar 2). Deletions now muted red (`rgba(200, 110, 110, 0.7)`), insertions warm gold (`#d4a855`). Light-mode variants included.
 4. **Parry as sense-line diagnostic** — Use Parry's parallel break-points to flag sense-lines that might benefit from revision (209 split candidates identified in 2 Nephi alone). Improving sense-line alignment would organically increase Parry-style rendering coverage.
 5. **Spanish fork** — Major future project. Raw data in `data/spa/`. Needs sense-lining, UI translation, swap lexicon, Reina-Valera diff layer.
 6. **localStorage persistence** — Not implemented. Settings reset on page load.
-7. **Navigation bug (2 Ne → 33)** — `pendingChapter` fix is in code but may need verification after deploy.
+7. ~~**Navigation bug (2 Ne → 33)**~~ — ✅ Fixed (Mar 2). Three sub-fixes: toggleSettings now closes nav-panel, pendingChapter cleared on book click, switchBook callback guards nav-panel re-open.
 8. **Reformatter v8 refinement** — M0 em-dash and M12 in+gerund thresholds could be adjusted.
+
+## Mar 2 Session Summary
+
+### Navigation Bug Fixes
+Three root causes identified and fixed in `index.html`:
+- `toggleSettings()` now closes `nav-panel` when opening settings
+- `onBookBtnClick()` clears `pendingChapter` at top (prevents stale chapter from previous book)
+- `switchBook()` callback checks whether layers/background/settings panels are open before re-showing nav-panel
+
+### KJV Diff False Hit Fix
+**Problem:** `build_kjv_diff.py` word-level diff was comparing "Lord," ≠ "Lord" (punctuation attached to tokens), causing 65% of delete→insert pairs to be false hits (crossing out a word and replacing with the same word).
+**Fix:** Added `normalize_for_diff()` function that strips trailing punctuation before comparison. Regenerated `data/kjv_diff_index.json` — same 323 verses with differences but now clean diffs.
+**Verification:** 2 Ne 12:19 "Lord" now correctly shows as equal text instead of ~~Lord,~~ **Lord**
+
+### Inline Reference Removal
+Removed the `[data-source]::after` CSS content rule that displayed inline scripture references (e.g., "— Isaiah 2:1") at end of verses. Now redundant with pericope headers providing that context. The `data-source` attributes remain in HTML for potential future tooltip use.
+
+### Hebrew Poetry CSS Rewrite
+Replaced colored backgrounds + rainbow letter labels with Parry-style clean scholarly indentation: lowercase italic letters inheriting text color at 45% opacity, progressive padding-left per level, no backgrounds.
+
+### All 15 Books Rebuilt
+Ran `build_book.py --all booklist.txt --out books/` — all books now have corrected KJV diff data and parallel layer markup.
 
 ---
 
