@@ -659,9 +659,20 @@ def _is_geo_fragment(frag, category):
     """Check if a fragment contains geographically meaningful content.
 
     Short fragments from ellipsis splitting often capture just names
-    (e.g. 'king Lamoni', 'Ammon') rather than actual geographic language.
-    We require short fragments to contain geographic vocabulary.
+    (e.g. 'king Lamoni', 'Ammon') or bare directional phrases
+    (e.g. 'on the west') rather than actual geographic data.
     """
+    # Generic fragments that are just compass directions, not real geo data
+    GENERIC_BLOCKLIST = {
+        'on the west', 'on the east', 'on the north', 'on the south',
+        'on the east and on the west', 'on the north and on the south',
+        'the lamanites', 'ammon', 'no wait', 'he being determined',
+        'a considerable number', 'those who were in favor of kings',
+    }
+    frag_lower = frag.lower().strip()
+    if frag_lower in GENERIC_BLOCKLIST:
+        return False
+
     GEO_KEYWORDS = {
         'sea', 'river', 'land', 'wilderness', 'mountain', 'hill', 'valley',
         'north', 'south', 'east', 'west', 'border', 'borders', 'bordering',
@@ -675,13 +686,22 @@ def _is_geo_fragment(frag, category):
         'tent', 'tents', 'dwell', 'possess', 'inheritance', 'inhabit',
         'place', 'plain', 'plains', 'tower', 'wall', 'gate',
     }
-    frag_lower = frag.lower()
-    # Long fragments (20+ chars) are likely meaningful enough
-    if len(frag) >= 20:
+    # Long fragments (25+ chars) are likely meaningful enough
+    if len(frag) >= 25:
         return True
-    # Short fragments must contain a geographic keyword
+    # Medium fragments (15-24 chars) need a geo keyword
+    if len(frag) >= 15:
+        words = set(re.sub(r'[^\w\s]', '', frag_lower).split())
+        return bool(words & GEO_KEYWORDS)
+    # Short fragments (<15 chars) must have a geo keyword AND a proper noun or
+    # specific place name to be worth highlighting — otherwise too generic
     words = set(re.sub(r'[^\w\s]', '', frag_lower).split())
-    return bool(words & GEO_KEYWORDS)
+    if not (words & GEO_KEYWORDS):
+        return False
+    # "land of Nephi" (13 chars) is good; "on the west" (11 chars) is not
+    # Require "land of", "city of", "sea", "river", "wilderness", "narrow" for short frags
+    SPECIFIC_SHORT = {'land', 'city', 'sea', 'river', 'wilderness', 'narrow', 'valley', 'hill', 'mountain', 'seashore', 'forest'}
+    return bool(words & SPECIFIC_SHORT)
 
 def apply_geo_highlights(line_text, geo_entries):
     """Wrap geographic extract phrases within a line with <span class="geo-ref">.
@@ -863,9 +883,16 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
     # Check for geography entries on this verse
     geo_entries = get_geo_entries(book_id, verse['chapter'], verse['verse']) if book_id else []
     if geo_entries:
-        # Build category annotation for the verse (shown as subscript)
+        # Build category annotation — show the most specific category
+        # Priority order: more specific > less specific
+        GEO_CAT_PRIORITY = {
+            'terrain': 1, 'water': 2, 'settlement': 3, 'distance': 4,
+            'flora': 5, 'fauna': 6, 'climate': 7, 'materials': 8,
+            'demographics': 9, 'old world': 10, 'direction': 11, 'misc': 12,
+        }
         geo_cats = list(dict.fromkeys(e.get('category', '') for e in geo_entries))
-        geo_label = ', '.join(geo_cats)
+        geo_cats.sort(key=lambda c: GEO_CAT_PRIORITY.get(c, 99))
+        geo_label = geo_cats[0] if geo_cats else ''
         geo_wrapped = []
         last_geo_line = -1
         for i, line in enumerate(processed):
@@ -873,10 +900,9 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
             geo_wrapped.append(highlighted)
             if 'geo-ref' in highlighted:
                 last_geo_line = i
-        # Place the data-geo tag on the last line that has geo-ref content,
-        # or the last line of the verse if no geo-ref spans were found
-        tag_line = last_geo_line if last_geo_line >= 0 else len(geo_wrapped) - 1
-        geo_wrapped[tag_line] = f'<span data-geo="{geo_label}">{geo_wrapped[tag_line]}</span>'
+        # Only add category label if at least one fragment was actually highlighted
+        if last_geo_line >= 0:
+            geo_wrapped[last_geo_line] = f'<span data-geo="{geo_label}">{geo_wrapped[last_geo_line]}</span>'
         processed = geo_wrapped
 
     # Check for KJV diff data (parallel passage visualization)
