@@ -928,6 +928,10 @@ def build_parallel_map(bid, ch_num, ch_verses):
     result = {}
     for si, struct in enumerate(structures):
         group_id = f'p{ch_num}-{si}'
+        # Track which sense-lines have been consumed within each verse for this structure,
+        # so repeated text (e.g., "and he suffereth it" x3) matches sequentially
+        consumed_per_verse = {}  # verse_num -> set of line indices already taken
+
         for pline in struct['lines']:
             verse_num = pline['verse']
             level = pline['level']
@@ -938,15 +942,20 @@ def build_parallel_map(bid, ch_num, ch_verses):
             if verse_num not in verse_lines:
                 continue
 
-            # Find the best matching line in this verse
-            best_match = -1
-            best_score = 0
+            consumed = consumed_per_verse.setdefault(verse_num, set())
+
             # Extract first N significant words from fragment for matching
             frag_words = re.findall(r'[a-z]+', frag)[:6]
             if not frag_words:
                 continue
 
+            # Find the best matching line NOT YET consumed
+            best_match = -1
+            best_score = 0
+
             for li, raw in verse_lines[verse_num]:
+                if li in consumed:
+                    continue  # Skip already-matched lines
                 raw_words = re.findall(r'[a-z]+', raw)
                 if not raw_words:
                     continue
@@ -961,6 +970,7 @@ def build_parallel_map(bid, ch_num, ch_verses):
 
             # Require at least half the words to match
             if best_match >= 0 and best_score >= max(2, len(frag_words) * 0.4):
+                consumed.add(best_match)
                 key = (verse_num, best_match)
                 # Don't overwrite if already assigned to a different group
                 if key not in result:

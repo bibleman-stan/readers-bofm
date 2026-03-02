@@ -2395,6 +2395,11 @@
     closeAllPanels();
     document.getElementById('about-page').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'none';
+    // Clear the hash so stale chapter refs don't interfere with navigation
+    lastHashWeSet = '';
+    if (window.location.hash) {
+      history.replaceState(null, '', window.location.pathname);
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
