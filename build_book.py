@@ -762,11 +762,11 @@ def render_kjv_diff(diff_data):
             parts.append(f'<b class="kjv-ins">{text}</b>')
         else:
             parts.append(text)
-    kjv_ref = diff_data.get('kjv_ref', '')
     html = ' '.join(parts)
     # Clean up spacing around punctuation that diff may have split awkwardly
     html = re.sub(r'\s+([.,;:!?])', r'\1', html)
-    return f'<span class="kjv-diff-text">{html}</span><span class="kjv-diff-ref">{kjv_ref}</span>'
+    # Per-verse ref removed — pericope section headers provide the Isaiah/Malachi context
+    return f'<span class="kjv-diff-text">{html}</span>'
 
 def get_phrase_matches(book_id, chapter, verse):
     """Return phrase match data for a quotation verse, or None."""

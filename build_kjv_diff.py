@@ -230,7 +230,10 @@ def build_kjv_diff_index(scriptures):
 
             # Store in index
             book_id = get_book_id(bom_book)
-            kjv_ref = f"{kjv_book} {kjv_chap}:{bom_verse}"
+            # Abbreviate book names for compact citations
+            abbrev = {"Isaiah": "Isa", "Malachi": "Mal"}
+            kjv_book_short = abbrev.get(kjv_book, kjv_book)
+            kjv_ref = f"{kjv_book_short} {kjv_chap}:{bom_verse}"
 
             index[book_id][str(bom_chap)][str(bom_verse)] = {
                 "kjv_ref": kjv_ref,
