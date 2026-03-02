@@ -1773,8 +1773,10 @@
     'the Eternal Father of heaven and of earth',
     'the Father of heaven and of earth',
     'the Father of heaven and earth',
+    'the very Eternal Father of heaven',
     'the Eternal Father of heaven',
     'the Father of heaven',
+    'the very Eternal Father',
     'Christ, the Lord God Omnipotent',
     'the Lord God Omnipotent',
     'Lord God Omnipotent',
@@ -1853,6 +1855,19 @@
   var fatherWords = ['the Father', 'the Eternal Father', 'Eternal Father',
     'God the Father', 'the Eternal God, the Father'];
   var fatherSet = new Set(fatherWords);
+  // Books/chapters where "the Father" clearly refers to God the Father
+  // as a distinct being (not a christological title):
+  // - 2 Nephi 31: baptism theology with distinct Father/Son/Spirit roles
+  // - 3 Nephi 11+: Father's voice speaks from heaven as separate person
+  // - 4 Nephi, Mormon, Ether: post-Christ-visit theology
+  // - Moroni: sacrament prayers, Moroni 10:4 "ask God the Eternal Father in the name of Christ"
+  // - Mosiah 15: Abinadi explicitly distinguishes Father/Son (though he also
+  //   teaches Christ IS the Father — we color blue here since he's explaining the distinction)
+  var fatherAsGodBooks = new Set(['3nephi', '4nephi', 'mormon', 'moroni']);
+  var fatherAsGodChapters = {
+    '2nephi': new Set([31, 32, 33]),
+    'mosiah': new Set([15]),
+  };
 
   function buildRegex(patterns) {
     return new RegExp('\\b(' + patterns.map(function(p){
@@ -1879,6 +1894,20 @@
     if (!root) return;
     var chapters = root.querySelectorAll('.chapter-content');
     chapters.forEach(function(sec) {
+      // Determine if "the Father" should be blue (God the Father) in this chapter.
+      // Parse chapter id like "ch-3nephi-11" → book="3nephi", chNum=11
+      var useFatherBlue = false;
+      var chId = sec.id || '';
+      var chParts = chId.replace('ch-', '').match(/^(.+?)-(\d+)$/);
+      if (chParts) {
+        var bookId = chParts[1];
+        var chNum = parseInt(chParts[2], 10);
+        if (fatherAsGodBooks.has(bookId)) {
+          useFatherBlue = true;
+        } else if (fatherAsGodChapters[bookId] && fatherAsGodChapters[bookId].has(chNum)) {
+          useFatherBlue = true;
+        }
+      }
       walkText(sec, function(textNode) {
         var text = textNode.nodeValue;
         if (!deityRegex.test(text)) return;
@@ -1891,8 +1920,15 @@
             frag.appendChild(document.createTextNode(text.slice(lastIdx, match.index)));
           }
           var span = document.createElement('span');
-          span.className = spiritSet.has(match[0]) ? 'spirit-hl' : fatherSet.has(match[0]) ? 'father-hl' : 'deity-hl';
-          span.textContent = match[0];
+          var m = match[0];
+          if (spiritSet.has(m)) {
+            span.className = 'spirit-hl';
+          } else if (fatherSet.has(m) && useFatherBlue) {
+            span.className = 'father-hl';
+          } else {
+            span.className = 'deity-hl';
+          }
+          span.textContent = m;
           frag.appendChild(span);
           lastIdx = deityRegex.lastIndex;
         }
