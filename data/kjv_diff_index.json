@@ -2482,6 +2482,32 @@
             "text": "thou hast laid thy body as the ground and as the street to them that went over."
           }
         ]
+      },
+      "24": {
+        "kjv_ref": "Isa 52:1",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Awake, awake, put on thy strength, O Zion; put on thy beautiful garments, O Jerusalem, the holy city; for henceforth there shall no more come into thee the uncircumcised and the unclean."
+          }
+        ]
+      },
+      "25": {
+        "kjv_ref": "Isa 52:2",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Shake thyself from the dust; arise,"
+          },
+          {
+            "type": "delete",
+            "text": "and"
+          },
+          {
+            "type": "equal",
+            "text": "sit down, O Jerusalem; loose thyself from the bands of thy neck, O captive daughter of Zion."
+          }
+        ]
       }
     },
     "12": {
@@ -7720,6 +7746,579 @@
           }
         ]
       }
+    },
+    "6": {
+      "6": {
+        "kjv_ref": "Isa 49:22",
+        "diff": [
+          {
+            "type": "insert",
+            "text": "And now, these are the words:"
+          },
+          {
+            "type": "equal",
+            "text": "Thus saith the Lord God: Behold, I will lift up mine hand to the Gentiles, and set up my standard to the people; and they shall bring thy sons in their arms, and thy daughters shall be carried upon their shoulders."
+          }
+        ]
+      },
+      "7": {
+        "kjv_ref": "Isa 49:23",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "And kings shall be thy nursing fathers, and their queens thy nursing mothers; they shall bow down to thee with their"
+          },
+          {
+            "type": "delete",
+            "text": "face toward"
+          },
+          {
+            "type": "insert",
+            "text": "faces towards"
+          },
+          {
+            "type": "equal",
+            "text": "the earth, and lick up the dust of thy feet; and thou shalt know that I am the Lord; for they shall not be ashamed that wait for me."
+          }
+        ]
+      },
+      "16": {
+        "kjv_ref": "Isa 49:24",
+        "diff": [
+          {
+            "type": "insert",
+            "text": "For"
+          },
+          {
+            "type": "equal",
+            "text": "shall the prey be taken from the mighty, or the lawful captive delivered?"
+          }
+        ]
+      },
+      "17": {
+        "kjv_ref": "Isa 49:25",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "But thus saith the Lord: Even the captives of the mighty shall be taken away, and the prey of the terrible shall be delivered; for"
+          },
+          {
+            "type": "insert",
+            "text": "the Mighty God shall deliver his covenant people. For thus saith the Lord:"
+          },
+          {
+            "type": "equal",
+            "text": "I will contend with"
+          },
+          {
+            "type": "delete",
+            "text": "him"
+          },
+          {
+            "type": "insert",
+            "text": "them"
+          },
+          {
+            "type": "equal",
+            "text": "that contendeth with thee--"
+          },
+          {
+            "type": "delete",
+            "text": "and I will save thy children."
+          }
+        ]
+      },
+      "18": {
+        "kjv_ref": "Isa 49:26",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "And I will feed them that oppress thee, with their own flesh; and they shall be drunken with their own blood as with sweet wine; and all flesh shall know that I the Lord am thy"
+          },
+          {
+            "type": "delete",
+            "text": "Saviour"
+          },
+          {
+            "type": "insert",
+            "text": "Savior"
+          },
+          {
+            "type": "equal",
+            "text": "and thy Redeemer, the Mighty One of Jacob."
+          }
+        ]
+      }
+    },
+    "9": {
+      "50": {
+        "kjv_ref": "Isa 55:1",
+        "diff": [
+          {
+            "type": "delete",
+            "text": "Ho,"
+          },
+          {
+            "type": "insert",
+            "text": "Come, my brethren,"
+          },
+          {
+            "type": "equal",
+            "text": "every one that thirsteth, come ye to the waters; and he that hath no money, come"
+          },
+          {
+            "type": "delete",
+            "text": "ye,"
+          },
+          {
+            "type": "equal",
+            "text": "buy and eat; yea, come buy wine and milk without money and without price."
+          }
+        ]
+      },
+      "51": {
+        "kjv_ref": "Isa 55:2",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Wherefore, do"
+          },
+          {
+            "type": "delete",
+            "text": "ye"
+          },
+          {
+            "type": "insert",
+            "text": "not"
+          },
+          {
+            "type": "equal",
+            "text": "spend money for that which is"
+          },
+          {
+            "type": "delete",
+            "text": "not bread? and"
+          },
+          {
+            "type": "insert",
+            "text": "of no worth, nor"
+          },
+          {
+            "type": "equal",
+            "text": "your"
+          },
+          {
+            "type": "delete",
+            "text": "labour"
+          },
+          {
+            "type": "insert",
+            "text": "labor"
+          },
+          {
+            "type": "equal",
+            "text": "for that which"
+          },
+          {
+            "type": "delete",
+            "text": "satisfieth not?"
+          },
+          {
+            "type": "insert",
+            "text": "cannot satisfy."
+          },
+          {
+            "type": "equal",
+            "text": "Hearken diligently unto me, and"
+          },
+          {
+            "type": "delete",
+            "text": "eat ye"
+          },
+          {
+            "type": "insert",
+            "text": "remember the words which I have spoken; and come unto the Holy One of Israel, and feast upon"
+          },
+          {
+            "type": "equal",
+            "text": "that which"
+          },
+          {
+            "type": "delete",
+            "text": "is good,"
+          },
+          {
+            "type": "insert",
+            "text": "perisheth not, neither can be corrupted,"
+          },
+          {
+            "type": "equal",
+            "text": "and let your soul delight"
+          },
+          {
+            "type": "delete",
+            "text": "itself"
+          },
+          {
+            "type": "equal",
+            "text": "in fatness."
+          }
+        ]
+      }
+    },
+    "30": {
+      "9": {
+        "kjv_ref": "Isa 11:4",
+        "diff": [
+          {
+            "type": "delete",
+            "text": "But"
+          },
+          {
+            "type": "insert",
+            "text": "And"
+          },
+          {
+            "type": "equal",
+            "text": "with righteousness shall"
+          },
+          {
+            "type": "delete",
+            "text": "he"
+          },
+          {
+            "type": "insert",
+            "text": "the Lord God"
+          },
+          {
+            "type": "equal",
+            "text": "judge the poor, and reprove with equity for the meek of the earth. And he shall smite the earth with the rod of his mouth; and with the breath of his lips shall he slay the wicked."
+          }
+        ]
+      },
+      "11": {
+        "kjv_ref": "Isa 11:5",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "And righteousness shall be the girdle of his loins, and faithfulness the girdle of his reins."
+          }
+        ]
+      },
+      "12": {
+        "kjv_ref": "Isa 11:6",
+        "diff": [
+          {
+            "type": "insert",
+            "text": "And then shall"
+          },
+          {
+            "type": "equal",
+            "text": "the wolf"
+          },
+          {
+            "type": "delete",
+            "text": "also shall"
+          },
+          {
+            "type": "equal",
+            "text": "dwell with the lamb; and the leopard shall lie down with the kid, and the calf, and the young lion, and the fatling, together; and a little child shall lead them."
+          }
+        ]
+      },
+      "13": {
+        "kjv_ref": "Isa 11:7",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "And the cow and the bear shall feed; their young ones shall lie down together; and the lion shall eat straw like the ox."
+          }
+        ]
+      },
+      "14": {
+        "kjv_ref": "Isa 11:8",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "And the sucking child shall play on the hole of the asp, and the weaned child shall put his hand on the"
+          },
+          {
+            "type": "delete",
+            "text": "cockatrice'"
+          },
+          {
+            "type": "insert",
+            "text": "cockatrice's"
+          },
+          {
+            "type": "equal",
+            "text": "den."
+          }
+        ]
+      },
+      "15": {
+        "kjv_ref": "Isa 11:9",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "They shall not hurt nor destroy in all my holy mountain; for the earth shall be full of the knowledge of the Lord as the waters cover the sea."
+          }
+        ]
+      }
+    }
+  },
+  "mosiah": {
+    "14": {
+      "1": {
+        "kjv_ref": "Isa 53:1",
+        "diff": [
+          {
+            "type": "insert",
+            "text": "Yea, even doth not Isaiah say:"
+          },
+          {
+            "type": "equal",
+            "text": "Who hath believed our report, and to whom is the arm of the Lord revealed?"
+          }
+        ]
+      },
+      "2": {
+        "kjv_ref": "Isa 53:2",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "For he shall grow up before him as a tender plant, and as a root out of"
+          },
+          {
+            "type": "delete",
+            "text": "a"
+          },
+          {
+            "type": "equal",
+            "text": "dry ground; he hath no form nor comeliness; and when we shall see him there is no beauty that we should desire him."
+          }
+        ]
+      },
+      "3": {
+        "kjv_ref": "Isa 53:3",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "He is despised and rejected of men; a man of sorrows, and acquainted with grief; and we hid as it were our faces from him; he was despised, and we esteemed him not."
+          }
+        ]
+      },
+      "4": {
+        "kjv_ref": "Isa 53:4",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Surely he"
+          },
+          {
+            "type": "delete",
+            "text": "hath"
+          },
+          {
+            "type": "insert",
+            "text": "has"
+          },
+          {
+            "type": "equal",
+            "text": "borne our griefs, and carried our sorrows; yet we did esteem him stricken, smitten of God, and afflicted."
+          }
+        ]
+      },
+      "5": {
+        "kjv_ref": "Isa 53:5",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "But he was wounded for our transgressions, he was bruised for our iniquities; the chastisement of our peace was upon him; and with his stripes we are healed."
+          }
+        ]
+      },
+      "6": {
+        "kjv_ref": "Isa 53:6",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "All we, like sheep, have gone astray; we have turned every one to his own way; and the Lord hath laid on him the"
+          },
+          {
+            "type": "delete",
+            "text": "iniquity"
+          },
+          {
+            "type": "insert",
+            "text": "iniquities"
+          },
+          {
+            "type": "equal",
+            "text": "of us all."
+          }
+        ]
+      },
+      "7": {
+        "kjv_ref": "Isa 53:7",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "He was oppressed, and he was afflicted, yet he opened not his mouth; he is brought as a lamb to the slaughter, and as a sheep before her shearers is dumb so he"
+          },
+          {
+            "type": "delete",
+            "text": "openeth"
+          },
+          {
+            "type": "insert",
+            "text": "opened"
+          },
+          {
+            "type": "equal",
+            "text": "not his mouth."
+          }
+        ]
+      },
+      "8": {
+        "kjv_ref": "Isa 53:8",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "He was taken from prison and from judgment; and who shall declare his generation? For he was cut off out of the land of the living; for the"
+          },
+          {
+            "type": "delete",
+            "text": "transgression"
+          },
+          {
+            "type": "insert",
+            "text": "transgressions"
+          },
+          {
+            "type": "equal",
+            "text": "of my people was he stricken."
+          }
+        ]
+      },
+      "9": {
+        "kjv_ref": "Isa 53:9",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "And he made his grave with the wicked, and with the rich in his death; because he had done no"
+          },
+          {
+            "type": "delete",
+            "text": "violence,"
+          },
+          {
+            "type": "insert",
+            "text": "evil,"
+          },
+          {
+            "type": "equal",
+            "text": "neither was any deceit in his mouth."
+          }
+        ]
+      },
+      "10": {
+        "kjv_ref": "Isa 53:10",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Yet it pleased the Lord to bruise him; he hath put him to grief; when thou shalt make his soul an offering for sin he shall see his seed, he shall prolong his days, and the pleasure of the Lord shall prosper in his hand."
+          }
+        ]
+      },
+      "11": {
+        "kjv_ref": "Isa 53:11",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "He shall see"
+          },
+          {
+            "type": "delete",
+            "text": "of"
+          },
+          {
+            "type": "equal",
+            "text": "the travail of his soul, and shall be satisfied; by his knowledge shall my righteous servant justify many; for he shall bear their iniquities."
+          }
+        ]
+      },
+      "12": {
+        "kjv_ref": "Isa 53:12",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Therefore will I divide him a portion with the great, and he shall divide the spoil with the strong; because he hath poured out his soul unto death; and he was numbered with the transgressors; and he"
+          },
+          {
+            "type": "delete",
+            "text": "bare"
+          },
+          {
+            "type": "insert",
+            "text": "bore"
+          },
+          {
+            "type": "equal",
+            "text": "the"
+          },
+          {
+            "type": "delete",
+            "text": "sin"
+          },
+          {
+            "type": "insert",
+            "text": "sins"
+          },
+          {
+            "type": "equal",
+            "text": "of many, and made intercession for the transgressors."
+          }
+        ]
+      }
+    },
+    "12": {
+      "21": {
+        "kjv_ref": "Isa 52:7",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "How beautiful upon the mountains are the feet of him that bringeth good tidings; that publisheth peace; that bringeth good tidings of good; that publisheth salvation; that saith unto Zion, Thy God reigneth;"
+          }
+        ]
+      },
+      "22": {
+        "kjv_ref": "Isa 52:8",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Thy watchmen shall lift up the voice; with the voice together shall they sing; for they shall see eye to eye when the Lord shall bring again Zion;"
+          }
+        ]
+      },
+      "23": {
+        "kjv_ref": "Isa 52:9",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Break forth into joy; sing together ye waste places of Jerusalem; for the Lord hath comforted his people, he hath redeemed Jerusalem;"
+          }
+        ]
+      },
+      "24": {
+        "kjv_ref": "Isa 52:10",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "The Lord hath made bare his holy arm in the eyes of all the nations, and all the ends of the earth shall see the salvation of our God?"
+          }
+        ]
+      }
     }
   },
   "3nephi": {
@@ -10981,6 +11580,279 @@
           {
             "type": "equal",
             "text": "And he shall turn the heart of the fathers to the children, and the heart of the children to their fathers, lest I come and smite the earth with a curse."
+          }
+        ]
+      }
+    },
+    "16": {
+      "18": {
+        "kjv_ref": "Isa 52:8",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Thy watchmen shall lift up the voice; with the voice together shall they sing, for they shall see eye to eye when the Lord shall bring again Zion."
+          }
+        ]
+      },
+      "19": {
+        "kjv_ref": "Isa 52:9",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Break forth into joy, sing together, ye waste places of Jerusalem; for the Lord hath comforted his people, he hath redeemed Jerusalem."
+          }
+        ]
+      },
+      "20": {
+        "kjv_ref": "Isa 52:10",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "The Lord hath made bare his holy arm in the eyes of all the nations; and all the ends of the earth shall see the salvation of"
+          },
+          {
+            "type": "delete",
+            "text": "our"
+          },
+          {
+            "type": "equal",
+            "text": "God."
+          }
+        ]
+      }
+    },
+    "20": {
+      "36": {
+        "kjv_ref": "Isa 52:1",
+        "diff": [
+          {
+            "type": "insert",
+            "text": "And then shall be brought to pass that which is written:"
+          },
+          {
+            "type": "equal",
+            "text": "Awake, awake"
+          },
+          {
+            "type": "insert",
+            "text": "again, and"
+          },
+          {
+            "type": "equal",
+            "text": "put on thy strength, O Zion; put on thy beautiful garments, O Jerusalem, the holy city, for henceforth there shall no more come into thee the uncircumcised and the unclean."
+          }
+        ]
+      },
+      "37": {
+        "kjv_ref": "Isa 52:2",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Shake thyself from the dust; arise,"
+          },
+          {
+            "type": "delete",
+            "text": "and"
+          },
+          {
+            "type": "equal",
+            "text": "sit down, O Jerusalem; loose thyself from the bands of thy neck, O captive daughter of Zion."
+          }
+        ]
+      },
+      "38": {
+        "kjv_ref": "Isa 52:3",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "For thus saith the Lord: Ye have sold yourselves for"
+          },
+          {
+            "type": "delete",
+            "text": "nought;"
+          },
+          {
+            "type": "insert",
+            "text": "naught,"
+          },
+          {
+            "type": "equal",
+            "text": "and ye shall be redeemed without money."
+          }
+        ]
+      },
+      "39": {
+        "kjv_ref": "Isa 52:6",
+        "diff": [
+          {
+            "type": "delete",
+            "text": "Therefore"
+          },
+          {
+            "type": "insert",
+            "text": "Verily, verily, I say unto you, that"
+          },
+          {
+            "type": "equal",
+            "text": "my people shall know my name;"
+          },
+          {
+            "type": "delete",
+            "text": "therefore"
+          },
+          {
+            "type": "insert",
+            "text": "yea, in that day"
+          },
+          {
+            "type": "equal",
+            "text": "they shall know"
+          },
+          {
+            "type": "delete",
+            "text": "in that day"
+          },
+          {
+            "type": "equal",
+            "text": "that I am he that doth speak."
+          },
+          {
+            "type": "delete",
+            "text": "behold, it is I."
+          }
+        ]
+      },
+      "40": {
+        "kjv_ref": "Isa 52:7",
+        "diff": [
+          {
+            "type": "insert",
+            "text": "And then shall they say:"
+          },
+          {
+            "type": "equal",
+            "text": "How beautiful upon the mountains are the feet of him that bringeth good tidings"
+          },
+          {
+            "type": "insert",
+            "text": "unto them,"
+          },
+          {
+            "type": "equal",
+            "text": "that publisheth peace; that bringeth good tidings"
+          },
+          {
+            "type": "insert",
+            "text": "unto them"
+          },
+          {
+            "type": "equal",
+            "text": "of good, that publisheth salvation; that saith unto Zion: Thy God reigneth!"
+          }
+        ]
+      },
+      "41": {
+        "kjv_ref": "Isa 52:11",
+        "diff": [
+          {
+            "type": "insert",
+            "text": "And then shall a cry go forth:"
+          },
+          {
+            "type": "equal",
+            "text": "Depart ye, depart ye, go ye out from thence, touch"
+          },
+          {
+            "type": "delete",
+            "text": "no"
+          },
+          {
+            "type": "insert",
+            "text": "not that which is"
+          },
+          {
+            "type": "equal",
+            "text": "unclean;"
+          },
+          {
+            "type": "delete",
+            "text": "thing;"
+          },
+          {
+            "type": "equal",
+            "text": "go ye out of the midst of her; be ye clean that bear the vessels of the Lord."
+          }
+        ]
+      },
+      "42": {
+        "kjv_ref": "Isa 52:12",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "For ye shall not go out with haste nor go by flight; for the Lord will go before you, and the God of Israel"
+          },
+          {
+            "type": "delete",
+            "text": "will"
+          },
+          {
+            "type": "insert",
+            "text": "shall"
+          },
+          {
+            "type": "equal",
+            "text": "be your rearward."
+          }
+        ]
+      },
+      "43": {
+        "kjv_ref": "Isa 52:13",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "Behold, my servant shall deal prudently; he shall be exalted and extolled and be very high."
+          }
+        ]
+      },
+      "44": {
+        "kjv_ref": "Isa 52:14",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "As many were"
+          },
+          {
+            "type": "delete",
+            "text": "astonied"
+          },
+          {
+            "type": "insert",
+            "text": "astonished"
+          },
+          {
+            "type": "equal",
+            "text": "at"
+          },
+          {
+            "type": "delete",
+            "text": "thee; his"
+          },
+          {
+            "type": "insert",
+            "text": "thee--his"
+          },
+          {
+            "type": "equal",
+            "text": "visage was so marred, more than any man, and his form more than the sons of men--"
+          }
+        ]
+      },
+      "45": {
+        "kjv_ref": "Isa 52:15",
+        "diff": [
+          {
+            "type": "equal",
+            "text": "So shall he sprinkle many nations; the kings shall shut their mouths at him, for that which had not been told them shall they see; and that which they had not heard shall they consider."
           }
         ]
       }

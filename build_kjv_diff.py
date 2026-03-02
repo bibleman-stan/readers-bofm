@@ -32,6 +32,8 @@ PARALLEL_CHAPTERS = [
     ("2 Nephi", 22, "Isaiah", 12),
     ("2 Nephi", 23, "Isaiah", 13),
     ("2 Nephi", 24, "Isaiah", 14),
+    # Mosiah — Isaiah
+    ("Mosiah", 14, "Isaiah", 53),
     # 3 Nephi — Sermon on the Mount (Matthew)
     ("3 Nephi", 12, "Matthew", 5),
     ("3 Nephi", 13, "Matthew", 6),
@@ -42,11 +44,44 @@ PARALLEL_CHAPTERS = [
     ("3 Nephi", 25, "Malachi", 4),
 ]
 
+# Partial-chapter parallels: verse-range mappings where BofM quotes a few verses from a KJV chapter
+# Format: (bom_book, bom_chapter, bom_verse_start, bom_verse_end, kjv_book, kjv_chapter, kjv_verse_start)
+# The KJV verse offset is: kjv_verse = kjv_verse_start + (bom_verse - bom_verse_start)
+PARTIAL_PARALLELS = [
+    # 2 Nephi 8:24-25 = Isaiah 52:1-2  (continuation of the Isa 51 block)
+    ("2 Nephi", 8, 24, 25, "Isaiah", 52, 1),
+    # 2 Nephi 6:6-7 = Isaiah 49:22-23  (Jacob quoting Isaiah)
+    ("2 Nephi", 6, 6, 7, "Isaiah", 49, 22),
+    # 2 Nephi 6:16-18 = Isaiah 49:24-26
+    ("2 Nephi", 6, 16, 18, "Isaiah", 49, 24),
+    # 2 Nephi 9:50-51 = Isaiah 55:1-2
+    ("2 Nephi", 9, 50, 51, "Isaiah", 55, 1),
+    # 2 Nephi 30:9 = Isaiah 11:4
+    ("2 Nephi", 30, 9, 9, "Isaiah", 11, 4),
+    # 2 Nephi 30:11-15 = Isaiah 11:5-9
+    ("2 Nephi", 30, 11, 15, "Isaiah", 11, 5),
+    # Mosiah 12:21-24 = Isaiah 52:7-10
+    ("Mosiah", 12, 21, 24, "Isaiah", 52, 7),
+    # Mosiah 15:14-18 = Isaiah 52:7 (Abinadi re-quoting; 15:14 ~ 52:7, loosely)
+    # These are loose paraphrases — skip for now, too divergent for word-diff
+    # Mosiah 15:6 = Isaiah 53:7 (very loose paraphrase — skip)
+    # Mosiah 15:8-12 = Isaiah 53:8-12 (Abinadi's commentary, not direct quote — skip)
+    # 3 Nephi 16:18-20 = Isaiah 52:8-10
+    ("3 Nephi", 16, 18, 20, "Isaiah", 52, 8),
+    # 3 Nephi 20:36-38 = Isaiah 52:1-3
+    ("3 Nephi", 20, 36, 38, "Isaiah", 52, 1),
+    # 3 Nephi 20:39-40 = Isaiah 52:6-7
+    ("3 Nephi", 20, 39, 40, "Isaiah", 52, 6),
+    # 3 Nephi 20:41-45 = Isaiah 52:11-15
+    ("3 Nephi", 20, 41, 45, "Isaiah", 52, 11),
+]
+
 # Book IDs for the JSON output
 BOOK_ID_MAP = {
     "1 Nephi": "1nephi",
     "2 Nephi": "2nephi",
     "3 Nephi": "3nephi",
+    "Mosiah": "mosiah",
     "Isaiah": "isaiah",
     "Matthew": "matthew",
     "Malachi": "malachi",
@@ -236,6 +271,56 @@ def build_kjv_diff_index(scriptures):
             kjv_ref = f"{kjv_book_short} {kjv_chap}:{bom_verse}"
 
             index[book_id][str(bom_chap)][str(bom_verse)] = {
+                "kjv_ref": kjv_ref,
+                "diff": diff
+            }
+
+    # --- Process partial-chapter parallels ---
+    abbrev = {"Isaiah": "Isa", "Malachi": "Mal", "Matthew": "Matt"}
+
+    for bom_book, bom_chap, bom_v_start, bom_v_end, kjv_book, kjv_chap, kjv_v_start in PARTIAL_PARALLELS:
+        for bom_verse in range(bom_v_start, bom_v_end + 1):
+            kjv_verse = kjv_v_start + (bom_verse - bom_v_start)
+
+            bom_key = (bom_book, bom_chap, bom_verse)
+            kjv_key = (kjv_book, kjv_chap, kjv_verse)
+
+            if bom_key not in scriptures or kjv_key not in scriptures:
+                continue
+
+            book_id = get_book_id(bom_book)
+            ch_str = str(bom_chap)
+            v_str = str(bom_verse)
+
+            # Don't overwrite if already covered by full-chapter mapping
+            if book_id in index and ch_str in index[book_id] and v_str in index[book_id][ch_str]:
+                continue
+
+            bom_text = scriptures[bom_key]
+            kjv_text = scriptures[kjv_key]
+
+            stats["total_verses"] += 1
+            diff = word_diff(kjv_text, bom_text)
+            is_identical = (len(diff) == 1 and diff[0]["type"] == "equal")
+
+            if is_identical:
+                stats["verses_identical"] += 1
+            else:
+                stats["verses_with_diff"] += 1
+
+            for item in diff:
+                word_count = len(item["text"].split())
+                if item["type"] == "equal":
+                    stats["total_words_equal"] += word_count
+                elif item["type"] == "delete":
+                    stats["total_words_deleted"] += word_count
+                elif item["type"] == "insert":
+                    stats["total_words_inserted"] += word_count
+
+            kjv_book_short = abbrev.get(kjv_book, kjv_book)
+            kjv_ref = f"{kjv_book_short} {kjv_chap}:{kjv_verse}"
+
+            index[book_id][ch_str][v_str] = {
                 "kjv_ref": kjv_ref,
                 "diff": diff
             }

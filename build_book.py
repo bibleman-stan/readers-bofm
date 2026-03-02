@@ -880,7 +880,7 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
 
     # Check for KJV diff data (parallel passage visualization)
     diff_data = get_kjv_diff(book_id, verse['chapter'], verse['verse']) if book_id else None
-    has_diff = diff_data is not None and any(s['type'] != 'equal' for s in diff_data.get('diff', []))
+    has_diff = diff_data is not None  # Mark ALL verses with KJV parallel data, even identical ones
 
     # Helper to build parallel attributes for a line
     def _par_attrs(line_idx):
