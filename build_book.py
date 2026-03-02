@@ -914,6 +914,10 @@ def build_parallel_map(bid, ch_num, ch_verses):
 
     Matches Parry's text fragments against the raw source lines using subsequence matching.
     Returns dict like {(3, 2): ('p1', 'A'), (3, 3): ('p1', 'B'), ...}
+
+    Quality filters:
+    - Structures where <50% of lines match are dropped entirely (too noisy)
+    - When multiple Parry lines match the same sense-line, uses the shallowest (A>B>C) level
     """
     structures = get_parallel_structures(bid, ch_num)
     if not structures:
@@ -931,6 +935,11 @@ def build_parallel_map(bid, ch_num, ch_verses):
         # Track which sense-lines have been consumed within each verse for this structure,
         # so repeated text (e.g., "and he suffereth it" x3) matches sequentially
         consumed_per_verse = {}  # verse_num -> set of line indices already taken
+
+        # First pass: match all lines and collect candidates
+        struct_matches = {}  # key -> (group_id, level)
+        total_lines = len(struct['lines'])
+        matched_count = 0
 
         for pline in struct['lines']:
             verse_num = pline['verse']
@@ -968,13 +977,44 @@ def build_parallel_map(bid, ch_num, ch_verses):
                     best_score = score
                     best_match = li
 
-            # Require at least half the words to match
-            if best_match >= 0 and best_score >= max(2, len(frag_words) * 0.4):
+            # Require a strong match: at least 3 word hits, or first-word bonus + 2
+            if best_match >= 0 and best_score >= max(3, len(frag_words) * 0.5):
                 consumed.add(best_match)
+                matched_count += 1
                 key = (verse_num, best_match)
-                # Don't overwrite if already assigned to a different group
-                if key not in result:
-                    result[key] = (group_id, level)
+                # When multiple Parry lines hit the same sense-line, keep the shallowest level
+                if key in struct_matches:
+                    existing_level = struct_matches[key][1]
+                    # Shallowest = closest to 'A' (strip prime for comparison)
+                    if level.rstrip("'") < existing_level.rstrip("'"):
+                        struct_matches[key] = (group_id, level)
+                else:
+                    struct_matches[key] = (group_id, level)
+
+        # Quality gate: drop structures where less than 60% of lines matched
+        if total_lines > 0 and matched_count / total_lines < 0.6:
+            continue
+
+        # Contiguity gate: matched lines should form a coherent block, not scattered orphans.
+        # For structures with matches across multiple verses, require at least 2 matched lines
+        # in any verse that has matches (drop verses with only 1 orphan label).
+        if len(struct_matches) >= 3:
+            # Count matches per verse
+            from collections import Counter
+            verse_match_counts = Counter(k[0] for k in struct_matches)
+            # Remove orphan matches (single label in a verse with no neighbors)
+            orphan_keys = [k for k in struct_matches if verse_match_counts[k[0]] < 2]
+            for k in orphan_keys:
+                del struct_matches[k]
+
+        # After pruning orphans, need at least 2 lines to be useful
+        if len(struct_matches) < 2:
+            continue
+
+        # Merge into result (don't overwrite existing assignments from earlier structures)
+        for key, val in struct_matches.items():
+            if key not in result:
+                result[key] = val
 
     return result
 
