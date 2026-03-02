@@ -2472,7 +2472,7 @@
 
   window.addEventListener('hashchange', handleHash);
 
-  // Initialize: load 1 Nephi on page ready
+  // Initialize on page ready
   document.addEventListener('DOMContentLoaded', function() {
     // Force all swap spans to show data-orig text (toggle bug fix)
     document.querySelectorAll('.swap').forEach(function(el) {
@@ -2483,8 +2483,16 @@
     document.body.classList.add('hide-punct');
     applyTabSettings('read');
     highlightBookBtn('1nephi');
-    switchBook('1nephi');
-    handleHash();
+    buildChapterGrid('1nephi');
+
+    var hash = window.location.hash.slice(1);
+    if (hash && hash !== '') {
+      // Deep link — honor it (e.g. #alma-32)
+      handleHash();
+    } else {
+      // No hash — show About page as landing
+      showAboutPage();
+    }
     // Enable CSS transitions only after initial render to prevent lag on load
     setTimeout(function() {
       document.body.classList.add('transitions-enabled');
