@@ -930,8 +930,20 @@
     color: #8a7a2a;
   }
 
-  /* Inline references removed — pericope headers now provide scripture context.
-     data-source attributes remain in HTML for future use (tooltips, etc.) */
+  /* Inline biblical references — shown when quotations or allusions layer is active */
+  body.sources-quotations [data-source]::after,
+  body.sources-allusions [data-source]::after {
+    content: "\2014\00a0" attr(data-source);
+    font-size: 0.7em;
+    font-style: italic;
+    font-weight: normal !important;
+    display: inline;
+    color: rgba(124, 184, 228, 0.7);
+  }
+  body.light-mode.sources-quotations [data-source]::after,
+  body.light-mode.sources-allusions [data-source]::after {
+    color: rgba(42, 100, 150, 0.5);
+  }
 
   /* === KJV DIFF LAYER === */
   /* By default, diff view is hidden; normal text shows */
