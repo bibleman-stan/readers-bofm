@@ -1,7 +1,7 @@
 # Book of Mormon Reader's Edition — Cowork Handoff
 
 **Last updated:** 2026-03-02
-**Sessions covered:** Feb 28 (initial build) → Feb 28 evening (v8 reformatter) → Mar 1 (layers, pericope, polish, About page) → Mar 1 evening (Isaiah pericopes, two-tier headers, Hebrew Poetry layer, UI fixes) → Mar 2 (nav bug fixes, Parry-style CSS, KJV diff fix, reference cleanup)
+**Sessions covered:** Feb 28 (initial build) → Feb 28 evening (v8 reformatter) → Mar 1 (layers, pericope, polish, About page) → Mar 1 evening (Isaiah pericopes, two-tier headers, Hebrew Poetry layer, UI fixes) → Mar 2 (nav bug fixes, Parry-style CSS, KJV diff fix, reference cleanup) → Mar 2 evening (Read Along extraction, archaic word swaps expansion)
 
 ---
 
@@ -238,8 +238,8 @@ function closeAllPanels() {
 
 Processing order in `apply_swaps()`:
 1. **AICTP_SWAPS** (32 entries) — "And it came to pass" variants, literal string replacement
-2. **COMPOUND_SWAPS** (27 pairs) — Multi-word phrases like "save it be" → "unless"
-3. **SIMPLE_SWAPS** (151 pairs) — Single-word archaic → modern
+2. **COMPOUND_SWAPS** (45 pairs) — Multi-word phrases like "save it be" → "unless"
+3. **SIMPLE_SWAPS** (161 pairs) — Single-word archaic → modern
 4. **ETH_SWAPS** (167 known + fallback rule) — Verbs ending in -eth
 5. **DID verb conjugation** — "did VERB" → past tense
 6. **THOU-EST conjugation** — "Thou verb_est" → "You base"
@@ -262,6 +262,45 @@ All swaps output: `<span class="swap" data-orig="archaic" data-mod="modern">arch
 ("asunder", "apart")
 ("apparel", "clothing")
 ```
+
+### Archaic Word Swaps Expansion (Mar 2 evening)
+
+**New SIMPLE_SWAPS (5 words, 10 entries with capitalized variants):**
+- `aught` → "anything" (2 occurrences)
+- `nay` → "no" (44 occurrences)
+- `privily` → "secretly" (4 occurrences)
+- `wist` → "knew" (2 occurrences)
+- `notwithstanding` → "despite this" (67 occurrences)
+
+**New COMPOUND_SWAPS — bowels (6 patterns, 8 occurrences):**
+Context-sensitive — figurative uses (seat of emotion) → "depths of mercy" / "heart is filled with"; literal uses → "body" / "womb":
+```python
+("bowels of mercy", "depths of mercy")
+("bowels are filled with compassion", "heart is filled with compassion")
+("bowels are filled with mercy", "heart is filled with mercy")
+("bowels may be filled with mercy", "heart may be filled with mercy")
+("offspring of thy bowels", "offspring of thy body")
+("bowels of my mother", "womb of my mother")
+```
+
+**New COMPOUND_SWAPS — loins (12 patterns, 34 occurrences):**
+Context-sensitive — figurative uses (lineage/descendants) → "lineage"; literal uses (body part) → "waist":
+```python
+("fruit of my loins", "fruit of my lineage")
+("fruit of thy loins", "fruit of thy lineage")
+("fruit of his loins", "fruit of his lineage")
+("fruit of the loins", "fruit of the lineage")
+("seed of thy loins", "seed of thy lineage")
+("spokesman of thy loins", "spokesman of thy lineage")
+("about my loins", "about my waist")
+("about his loins", "about his waist")
+("about their loins", "about their waist")
+("about her loins", "about her waist")
+("of his loins", "of his waist")
+("of their loins", "of their waist")
+```
+
+**Total new swaps across the canon:** 161 occurrences (aught 2 + nay 44 + privily 4 + wist 2 + notwithstanding 67 + bowels 8 + loins 34). All 15 books rebuilt and verified.
 
 ### Processing Pipeline Per Line
 ```python
