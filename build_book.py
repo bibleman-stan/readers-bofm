@@ -84,6 +84,26 @@ COMPOUND_SWAPS = [
     ("did murmur", "complained"), ("did exhort", "urged"),
     ("did confound", "silenced"), ("did engraven", "engraved"),
     ("did slay", "killed"), ("did smite", "struck"),
+    # Bowels — figurative (seat of emotion / mercy)
+    ("bowels of mercy", "depths of mercy"),
+    ("bowels are filled with compassion", "heart is filled with compassion"),
+    ("bowels are filled with mercy", "heart is filled with mercy"),
+    ("bowels may be filled with mercy", "heart may be filled with mercy"),
+    ("offspring of thy bowels", "offspring of thy body"),
+    ("bowels of my mother", "womb of my mother"),
+    # Loins — figurative (lineage) vs literal (waist)
+    ("fruit of my loins", "fruit of my lineage"),
+    ("fruit of thy loins", "fruit of thy lineage"),
+    ("fruit of his loins", "fruit of his lineage"),
+    ("fruit of the loins", "fruit of the lineage"),
+    ("seed of thy loins", "seed of thy lineage"),
+    ("spokesman of thy loins", "spokesman of thy lineage"),
+    ("about my loins", "about my waist"),
+    ("about his loins", "about his waist"),
+    ("about their loins", "about their waist"),
+    ("about her loins", "about her waist"),
+    ("of his loins", "of his waist"),
+    ("of their loins", "of their waist"),
 ]
 
 SIMPLE_SWAPS = [
@@ -188,6 +208,11 @@ SIMPLE_SWAPS = [
     ("lest", "for fear that"), ("Lest", "For fear that"),
     ("yea", "yes"), ("Yea", "Indeed"),
     ("meet", "fitting"), ("Meet", "Fitting"),
+    ("aught", "anything"), ("Aught", "Anything"),
+    ("nay", "no"), ("Nay", "No"),
+    ("privily", "secretly"), ("Privily", "Secretly"),
+    ("wist", "knew"), ("Wist", "Knew"),
+    ("notwithstanding", "despite this"), ("Notwithstanding", "Despite this"),
     ("sufficeth", "is enough for"), ("constraineth", "compels"),
     ("commandeth", "commands"), ("speaketh", "speaks"),
     ("prepareth", "prepares"), ("standeth", "stands"),
