@@ -183,6 +183,40 @@
     color: #ccc;
   }
 
+  /* Read Along mic button */
+  .pill-btn.active-mic {
+    border-color: #e74c3c;
+    color: #e74c3c;
+    animation: mic-pulse 1.5s ease-in-out infinite;
+  }
+  @keyframes mic-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+    50% { box-shadow: 0 0 8px 3px rgba(231, 76, 60, 0.25); }
+  }
+
+  /* Read Along word highlighting */
+  .ra-word-active {
+    background: rgba(231, 176, 60, 0.35);
+    border-radius: 3px;
+    transition: background 0.15s;
+  }
+  .ra-line-active {
+    background: rgba(231, 176, 60, 0.08);
+    border-radius: 3px;
+  }
+  .ra-word-done {
+    color: rgba(255,255,255,0.4);
+  }
+  body.light-mode .ra-word-done {
+    color: rgba(0,0,0,0.35);
+  }
+  body.light-mode .ra-word-active {
+    background: rgba(200, 150, 30, 0.25);
+  }
+  body.light-mode .ra-line-active {
+    background: rgba(200, 150, 30, 0.06);
+  }
+
   /* About button — stands out in book grid row */
   .about-pill-btn {
     height: 34px;
@@ -1381,6 +1415,7 @@
     <button class="pill-btn" id="verses-pill" onclick="toggleVerses()">Verses</button>
     <button class="pill-btn" id="sections-pill" onclick="toggleSections()">Sections</button>
     <button class="pill-btn" id="layers-pill" onclick="toggleLayers()">Layers</button>
+    <button class="pill-btn" id="mic-pill" onclick="toggleReadAlong()" title="Read Along — highlights words as you read aloud">Mic</button>
     <button id="gear-btn" class="gear-btn" onclick="toggleSettings()" aria-label="Display settings" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px;">
       <svg viewBox="0 0 24 24" style="width:14px; height:14px;"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1112 8.4a3.6 3.6 0 010 7.2z"/></svg>
     </button>
@@ -1673,6 +1708,11 @@
     <div class="feature-card">
       <div class="feature-name"><span class="pill-demo" style="color: #ccc; border-color: #889;">⚙</span></div>
       <div class="feature-desc">Opens display settings: toggle continuous-flow or verse mode, show or hide punctuation, adjust text density and line spacing, and switch between dark and light mode.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name"><span class="pill-demo" style="color: #e74c3c; border-color: #e74c3c;">Mic</span></div>
+      <div class="feature-desc">Read Along mode. Tap to start listening through your microphone, then read the text aloud. Words highlight as you speak, helping you track your place. Designed for children, language learners, or anyone who wants to read aloud with visual feedback. Works best in Chrome.</div>
     </div>
 
     <h2>The Layers</h2>
@@ -2730,6 +2770,281 @@
       }
     }
   }, { passive: true });
+
+  // ===========================================================================
+  // READ ALONG — follow-along highlighting using Web Speech API
+  // ===========================================================================
+  (function() {
+    var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    var raActive = false;
+    var recognition = null;
+    var wordEls = [];      // flat array of wrapped <span> word elements in reading order
+    var wordTexts = [];    // parallel array of lowercased normalized word strings
+    var cursor = 0;        // index into wordEls/wordTexts for next expected word
+    var currentLine = null;
+
+    // Normalize a word for fuzzy matching: lowercase, strip punctuation
+    function norm(w) {
+      return w.toLowerCase().replace(/[^a-z']/g, '');
+    }
+
+    // Levenshtein distance for fuzzy matching
+    function lev(a, b) {
+      if (a === b) return 0;
+      if (!a.length) return b.length;
+      if (!b.length) return a.length;
+      var m = [];
+      for (var i = 0; i <= b.length; i++) m[i] = [i];
+      for (var j = 0; j <= a.length; j++) m[0][j] = j;
+      for (var i = 1; i <= b.length; i++) {
+        for (var j = 1; j <= a.length; j++) {
+          m[i][j] = b[i-1] === a[j-1] ? m[i-1][j-1] :
+            Math.min(m[i-1][j-1]+1, m[i][j-1]+1, m[i-1][j]+1);
+        }
+      }
+      return m[b.length][a.length];
+    }
+
+    // Check if spoken word is close enough to expected word
+    function isMatch(spoken, expected) {
+      if (!spoken || !expected) return false;
+      if (spoken === expected) return true;
+      // Allow up to ~30% edit distance for short words, more lenient for longer
+      var maxDist = expected.length <= 3 ? 1 : Math.ceil(expected.length * 0.35);
+      return lev(spoken, expected) <= maxDist;
+    }
+
+    // Wrap every visible text word in the current chapter into <span class="ra-word">
+    function buildWordMap() {
+      wordEls = [];
+      wordTexts = [];
+      cursor = 0;
+
+      // Get the currently visible chapter
+      var active = document.querySelector('.chapter-content[open]');
+      if (!active) {
+        var chapters = document.querySelectorAll('.chapter-content');
+        // Find the one that's on screen
+        for (var i = 0; i < chapters.length; i++) {
+          if (chapters[i].offsetHeight > 0 && chapters[i].style.display !== 'none') {
+            active = chapters[i]; break;
+          }
+        }
+      }
+      if (!active) return;
+
+      var lines = active.querySelectorAll('.line');
+      lines.forEach(function(line) {
+        // Walk all text nodes inside this line, wrap each word
+        var walker = document.createTreeWalker(line, NodeFilter.SHOW_TEXT, null, false);
+        var node;
+        while ((node = walker.nextNode())) {
+          var text = node.nodeValue;
+          if (!text.trim()) continue;
+          // Split into words while preserving whitespace positions
+          var parts = text.split(/(\s+)/);
+          if (parts.length <= 1 && !text.trim()) continue;
+          var frag = document.createDocumentFragment();
+          parts.forEach(function(part) {
+            if (/^\s+$/.test(part) || part === '') {
+              frag.appendChild(document.createTextNode(part));
+            } else {
+              var span = document.createElement('span');
+              span.className = 'ra-word';
+              span.textContent = part;
+              frag.appendChild(span);
+              var n = norm(part);
+              if (n) {
+                wordEls.push(span);
+                wordTexts.push(n);
+              }
+            }
+          });
+          node.parentNode.replaceChild(frag, node);
+        }
+      });
+    }
+
+    // Remove word wrapping, restore original text nodes
+    function teardownWordMap() {
+      document.querySelectorAll('.ra-word').forEach(function(span) {
+        span.classList.remove('ra-word-active', 'ra-word-done');
+        var parent = span.parentNode;
+        if (parent) {
+          parent.replaceChild(document.createTextNode(span.textContent), span);
+          parent.normalize();
+        }
+      });
+      document.querySelectorAll('.ra-line-active').forEach(function(el) {
+        el.classList.remove('ra-line-active');
+      });
+      wordEls = [];
+      wordTexts = [];
+      cursor = 0;
+      currentLine = null;
+    }
+
+    // Advance cursor: mark word as active, dim previous, update line highlight
+    function highlightWord(idx) {
+      if (idx < 0 || idx >= wordEls.length) return;
+      // Dim previous active word
+      var prevActive = document.querySelector('.ra-word-active');
+      if (prevActive) {
+        prevActive.classList.remove('ra-word-active');
+        prevActive.classList.add('ra-word-done');
+      }
+      // Highlight new word
+      wordEls[idx].classList.add('ra-word-active');
+      // Update line highlight
+      var line = wordEls[idx].closest('.line');
+      if (line !== currentLine) {
+        if (currentLine) currentLine.classList.remove('ra-line-active');
+        if (line) line.classList.add('ra-line-active');
+        currentLine = line;
+      }
+      // Scroll into view if needed
+      var rect = wordEls[idx].getBoundingClientRect();
+      var toolbar = document.getElementById('reading-toolbar');
+      var toolbarH = toolbar ? toolbar.offsetHeight : 60;
+      if (rect.top < toolbarH + 20 || rect.bottom > window.innerHeight - 20) {
+        wordEls[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    // Process speech: try to match spoken words against expected text
+    function processSpeech(transcript) {
+      var spoken = transcript.toLowerCase().replace(/[^a-z'\s]/g, '').split(/\s+/).filter(Boolean);
+      if (!spoken.length) return;
+
+      spoken.forEach(function(sw) {
+        if (cursor >= wordTexts.length) return;
+        var sn = norm(sw);
+        if (!sn) return;
+
+        // Try matching current word, or look ahead up to 3 words for skips/insertions
+        var lookAhead = Math.min(4, wordTexts.length - cursor);
+        var bestIdx = -1;
+        var bestDist = 999;
+        for (var i = 0; i < lookAhead; i++) {
+          var d = lev(sn, wordTexts[cursor + i]);
+          var maxDist = wordTexts[cursor+i].length <= 3 ? 1 : Math.ceil(wordTexts[cursor+i].length * 0.35);
+          if (d <= maxDist && d < bestDist) {
+            bestDist = d;
+            bestIdx = cursor + i;
+          }
+        }
+
+        if (bestIdx >= 0) {
+          // Mark any skipped words as done
+          for (var j = cursor; j < bestIdx; j++) {
+            wordEls[j].classList.add('ra-word-done');
+          }
+          highlightWord(bestIdx);
+          cursor = bestIdx + 1;
+        }
+      });
+    }
+
+    function startRecognition() {
+      if (!SpeechRecognition) {
+        alert('Speech recognition is not supported in this browser. Try Chrome on desktop or Android.');
+        return false;
+      }
+      recognition = new SpeechRecognition();
+      recognition.continuous = true;
+      recognition.interimResults = true;
+      recognition.lang = 'en-US';
+      recognition.maxAlternatives = 1;
+
+      var lastProcessed = '';
+
+      recognition.onresult = function(event) {
+        // Process from the latest result
+        var result = event.results[event.results.length - 1];
+        var transcript = result[0].transcript;
+        // Only process new content
+        if (transcript !== lastProcessed) {
+          // For interim results, process the new words beyond what we already handled
+          var newPart = transcript;
+          if (!result.isFinal && lastProcessed && transcript.startsWith(lastProcessed)) {
+            newPart = transcript.slice(lastProcessed.length);
+          }
+          processSpeech(newPart);
+          if (result.isFinal) {
+            lastProcessed = '';
+          } else {
+            lastProcessed = transcript;
+          }
+        }
+      };
+
+      recognition.onerror = function(event) {
+        if (event.error === 'no-speech' || event.error === 'aborted') return;
+        console.log('Speech recognition error:', event.error);
+        if (event.error === 'not-allowed') {
+          alert('Microphone access was denied. Please allow microphone access and try again.');
+          stopReadAlong();
+        }
+      };
+
+      recognition.onend = function() {
+        // Auto-restart if still active (speech recognition times out periodically)
+        if (raActive) {
+          try { recognition.start(); } catch(e) {}
+        }
+      };
+
+      try {
+        recognition.start();
+        return true;
+      } catch(e) {
+        alert('Could not start speech recognition: ' + e.message);
+        return false;
+      }
+    }
+
+    function stopReadAlong() {
+      raActive = false;
+      if (recognition) {
+        try { recognition.stop(); } catch(e) {}
+        recognition = null;
+      }
+      teardownWordMap();
+      var pill = document.getElementById('mic-pill');
+      if (pill) pill.classList.remove('active-mic');
+    }
+
+    window.toggleReadAlong = function() {
+      if (raActive) {
+        stopReadAlong();
+        return;
+      }
+      // Start
+      buildWordMap();
+      if (!wordEls.length) {
+        alert('No text found. Navigate to a chapter first.');
+        return;
+      }
+      if (!startRecognition()) {
+        teardownWordMap();
+        return;
+      }
+      raActive = true;
+      var pill = document.getElementById('mic-pill');
+      if (pill) pill.classList.add('active-mic');
+      // Highlight the first word to show it's ready
+      highlightWord(0);
+    };
+
+    // Clean up if user navigates to another chapter while Read Along is active
+    var origSwitch = window.showChapter;
+    if (origSwitch) {
+      window.showChapter = function() {
+        if (raActive) stopReadAlong();
+        return origSwitch.apply(this, arguments);
+      };
+    }
+  })();
 
 })();
 </script>
