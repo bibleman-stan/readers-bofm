@@ -139,6 +139,7 @@ SIMPLE_SWAPS = [
     ("Nephi exceedingly", "Nephi greatly"), ("Moroni exceedingly", "Moroni greatly"),
     ("Lehi exceedingly", "Lehi greatly"), ("Kishkumen exceedingly", "Kishkumen greatly"),
     ("Lamanites exceedingly", "Lamanites greatly"), ("Lord exceedingly", "Lord greatly"),
+    ("exceeding", "great"), ("Exceeding", "Great"),
     ("insomuch", "so much so"), ("Insomuch", "So much so"),
     ("hearken", "listen"), ("Hearken", "Listen"),
     ("hearkened", "listened"), ("Hearkened", "Listened"),
