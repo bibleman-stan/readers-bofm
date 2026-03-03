@@ -209,7 +209,7 @@ SIMPLE_SWAPS = [
     ("tarried", "stayed"), ("Tarried", "Stayed"),
     ("tarry", "stay"), ("Tarry", "Stay"),
     ("wroth", "angry"), ("Wroth", "Angry"),
-    ("durst", "dared"), ("Durst", "Dared"),
+    ("durst", "dare"), ("Durst", "Dare"),
     ("bade", "told"), ("Bade", "Told"),
     ("doth", "does"), ("Doth", "Does"),
     ("whit", "bit"), ("Whit", "Bit"),
