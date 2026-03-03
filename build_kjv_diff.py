@@ -136,9 +136,10 @@ def tokenize_words(text):
 
 
 def normalize_for_diff(word):
-    """Strip trailing punctuation and lowercase for comparison.
-    This prevents false diffs where only punctuation differs (e.g. 'Lord,' vs 'Lord')."""
-    return re.sub(r'[.,;:!?\-—]+$', '', word).lower()
+    """Strip ALL punctuation and lowercase for comparison.
+    This prevents false diffs where only punctuation/hyphens differ
+    (e.g. 'commandments!' vs 'commandments--', 'plowshares' vs 'plow-shares')."""
+    return re.sub(r'[^a-zA-Z]', '', word).lower()
 
 
 def word_diff(kjv_text, bom_text):
@@ -330,7 +331,7 @@ def build_kjv_diff_index(scriptures):
 
 def main():
     print("Parsing lds-scriptures.txt...")
-    scriptures = parse_scripture_file('/sessions/compassionate-dreamy-faraday/mnt/readers-bofm/data/lds-scriptures.txt')
+    scriptures = parse_scripture_file('data/lds-scriptures.txt')
     print(f"Loaded {len(scriptures)} scripture verses")
 
     print("Building KJV diff index...")
@@ -344,7 +345,7 @@ def main():
             index_serializable[book_id][chapter] = dict(verses)
 
     # Write output
-    output_path = '/sessions/compassionate-dreamy-faraday/mnt/readers-bofm/data/kjv_diff_index.json'
+    output_path = 'data/kjv_diff_index.json'
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(index_serializable, f, indent=2, ensure_ascii=False)
 

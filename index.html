@@ -1000,12 +1000,21 @@
   }
 
   /* === KJV DIFF LAYER === */
-  /* By default, diff view is hidden; normal text shows */
-  .verse-diff { display: none !important; }
+  /* By default, diff annotation is hidden */
+  .verse-diff { display: none; }
 
-  /* When diff layer is active, swap views */
-  body.show-kjv-diff .has-kjv-diff .verse-normal { display: none !important; }
-  body.show-kjv-diff .has-kjv-diff .verse-diff { display: inline !important; }
+  /* When diff layer is active, show diff as annotation BELOW the sense-lines */
+  body.show-kjv-diff .has-kjv-diff .verse-diff {
+    display: block;
+    font-size: 0.82em;
+    line-height: 1.6;
+    margin: 0.4em 0 0.8em 0;
+    padding: 0.5em 0.8em;
+    border-left: 2px solid rgba(107, 163, 214, 0.35);
+    background: rgba(107, 163, 214, 0.06);
+    border-radius: 0 4px 4px 0;
+    color: rgba(212, 208, 200, 0.75);
+  }
 
   /* Diff markup styles */
   .kjv-del {
@@ -1017,11 +1026,15 @@
     font-weight: bold;
     color: #d4a855;
   }
-  /* Per-verse KJV refs removed — pericope headers provide context */
   .kjv-diff-text {
     display: inline;
   }
 
+  body.light-mode.show-kjv-diff .has-kjv-diff .verse-diff {
+    background: rgba(74, 122, 158, 0.06);
+    border-left-color: rgba(74, 122, 158, 0.3);
+    color: rgba(58, 54, 48, 0.7);
+  }
   body.light-mode .kjv-del { color: rgba(180, 70, 70, 0.6); }
   body.light-mode .kjv-ins { color: #8a6a20; }
 
