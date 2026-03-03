@@ -82,7 +82,11 @@ COMPOUND_SWAPS = [
     ("wilt thou", "will you"), ("Wilt thou", "Will you"),
     ("art thou", "are you"), ("Art thou", "Are you"),
     ("did murmur", "complained"), ("did exhort", "urged"),
-    ("did confound", "silenced"), ("did engraven", "engraved"),
+    # confound — "silenced" for debate sense; base form gets "confuse" for language sense
+    ("did confound", "silenced"),
+    ("confound the language", "confuse the language"),
+    ("not confound us", "not confuse us"),
+    ("did engraven", "engraved"),
     ("did slay", "killed"), ("did smite", "struck"),
     # Doth + adverb + verb (pre-collapse to avoid "does greatly rejoice")
     ("doth exceedingly rejoice", "rejoices greatly"),
@@ -184,7 +188,7 @@ SIMPLE_SWAPS = [
     ("abridged", "summarized"), ("Abridged", "Summarized"),
     ("stiffneckedness", "stubbornness"), ("Stiffneckedness", "Stubbornness"),
     ("commencement", "beginning"), ("Commencement", "Beginning"),
-    ("confounded", "put to shame"), ("Confounded", "Put to shame"),
+    ("confounded", "confused"), ("Confounded", "Confused"),
     ("constrained", "compelled"), ("Constrained", "Compelled"),
     ("nevertheless", "but"), ("Nevertheless", "But"),
     ("concourses", "crowds"), ("Concourses", "Crowds"),
