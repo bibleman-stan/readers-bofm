@@ -84,6 +84,11 @@ COMPOUND_SWAPS = [
     ("did murmur", "complained"), ("did exhort", "urged"),
     ("did confound", "silenced"), ("did engraven", "engraved"),
     ("did slay", "killed"), ("did smite", "struck"),
+    # Doth + adverb + verb (pre-collapse to avoid "does greatly rejoice")
+    ("doth exceedingly rejoice", "rejoices greatly"),
+    ("doth immediately bless", "immediately blesses"),
+    ("doth speedily drag", "speedily drags"),
+    ("doth rightly belong", "rightly belongs"),
     # Bowels — figurative (seat of emotion / mercy)
     ("bowels of mercy", "depths of mercy"),
     ("bowels are filled with compassion", "heart is filled with compassion"),
@@ -212,7 +217,7 @@ SIMPLE_SWAPS = [
     ("nay", "no"), ("Nay", "No"),
     ("privily", "secretly"), ("Privily", "Secretly"),
     ("wist", "knew"), ("Wist", "Knew"),
-    ("notwithstanding", "despite this"), ("Notwithstanding", "Despite this"),
+    ("notwithstanding", "despite"), ("Notwithstanding", "Despite"),  # overridden context-sensitively in apply_swaps()
     ("sufficeth", "is enough for"), ("constraineth", "compels"),
     ("commandeth", "commands"), ("speaketh", "speaks"),
     ("prepareth", "prepares"), ("standeth", "stands"),
@@ -373,6 +378,10 @@ IRREGULAR_PAST = {
     'pursue': 'pursued', 'repair': 'repaired', 'retire': 'retired',
     'establish': 'established', 'appoint': 'appointed', 'commence': 'commenced',
     'inhabit': 'inhabited', 'possess': 'possessed', 'multiply': 'multiplied',
+    'have': 'had', 'beat': 'beat', 'cut': 'cut', 'overthrow': 'overthrew',
+    'cleave': 'cleft', 'sow': 'sowed', 'bestow': 'bestowed',
+    'overshadow': 'overshadowed', 'sorrow': 'sorrowed',
+    'buy': 'bought', 'joy': 'rejoiced',
 }
 
 # ============================================================================
@@ -401,6 +410,60 @@ def build_swap_list():
 def apply_swaps(text, swap_list):
     placeholders = []
     result = text
+
+    # ---- PRE-PASS: DO/DOES/DOTH + VERB → present tense collapse ----
+    # "doth tremble" → "trembles", "does carry" → "carries"
+    # "do know" → "know", "do rejoice" → "rejoice"
+    # Non-verbs: leave the aux alone (e.g. "doth not" stays for later doth→does swap)
+    DO_SKIP = {
+        # pronouns / determiners
+        'not', 'ye', 'you', 'all', 'this', 'that', 'these', 'those',
+        'the', 'it', 'they', 'we', 'he', 'she', 'i', 'me', 'him',
+        'them', 'us', 'her', 'his', 'my', 'our', 'your', 'their', 'its',
+        'a', 'an', 'some', 'any', 'such', 'nothing', 'something',
+        'none', 'no', 'every', 'one', 'mine', 'whatsoever', 'anything',
+        # prepositions / conjunctions
+        'so', 'as', 'in', 'to', 'unto', 'with', 'for', 'after',
+        'among', 'concerning', 'if', 'now', 'then',
+        # adverbs (appear between aux and real verb: "doth exceedingly rejoice")
+        'well', 'much', 'more', 'many', 'also', 'even', 'thus',
+        'likewise', 'always', 'greatly', 'exceedingly', 'immediately',
+        'speedily', 'rightly', 'justly', 'still', 'already',
+        # nouns / adjectives that follow "do" but aren't verbs
+        'good', 'evil', 'iniquity', 'wickedly', 'great',
+        'according', 'because', 'here', 'there', 'like',
+        'men', 'wrong', 'alms', 'miracles', 'justice', 'mercy',
+        'salvation', 'battle', 'business', 'service',
+    }
+
+    def _third_person_s(verb):
+        """Base verb → 3rd-person singular: tremble→trembles, carry→carries"""
+        if verb.endswith(('s', 'sh', 'x', 'z', 'ch')):
+            return verb + 'es'
+        if verb.endswith('y') and len(verb) > 1 and verb[-2] not in 'aeiou':
+            return verb[:-1] + 'ies'
+        return verb + 's'
+
+    def _do_verb_replace(m):
+        full = m.group(0)
+        aux = m.group(1)     # do / does / doth / Do / Does / Doth
+        verb = m.group(2)    # the base verb
+        if verb.lower() in DO_SKIP:
+            return full       # not a verb — leave untouched for later swap passes
+        # doth/does + verb → 3rd person singular
+        if aux.lower() in ('doth', 'does'):
+            modern = _third_person_s(verb)
+        else:
+            # do + verb → just drop "do", keep verb as-is (1st/2nd/plural)
+            modern = verb
+        # Capitalize if aux was capitalized at start of sentence
+        if aux[0].isupper() and not modern[0].isupper():
+            modern = modern[0].upper() + modern[1:]
+        idx = len(placeholders); sent = f"\x00O{idx}\x00"
+        placeholders.append((sent, full, modern)); return sent
+
+    result = re.sub(r'\b(do|does|doth|Do|Does|Doth) (\w+)\b', _do_verb_replace, result)
+
     for i, (archaic, modern) in enumerate(swap_list):
         sentinel = f"\x00{i}\x00"
         # AICTP patterns: literal match, not word-boundary
@@ -427,6 +490,27 @@ def apply_swaps(text, swap_list):
             # Only match the archaic interjection form: "go to," or "go to;"
             result = re.sub(r'\bgo to(?=[,;])', sentinel, result)
             placeholders.append((sentinel, archaic, modern)); continue
+        # notwithstanding: context-sensitive — "despite" before NP, "even though" before clause
+        if archaic.lower() == 'notwithstanding':
+            cap = archaic[0].isupper()
+            def _notw_replace(m):
+                after = result[m.end():m.end()+20].lstrip()
+                first_word = re.match(r'[a-zA-Z]+', after)
+                fw = first_word.group(0).lower() if first_word else ''
+                # Before noun phrases → "despite"
+                if fw in ('the','their','all','our','my','his','her','its','a','an',
+                          'these','this','that','those','such','every','much','many'):
+                    mod = 'Despite' if cap else 'despite'
+                # Before clause (pronoun + verb) → "even though"
+                elif fw in ('they','we','he','she','i','it','so','there','being'):
+                    mod = 'Even though' if cap else 'even though'
+                # Standalone / end of phrase → "nevertheless"
+                else:
+                    mod = 'Nevertheless' if cap else 'nevertheless'
+                idx = len(placeholders); sent = f"\x00{len(placeholders)+1000}\x00"
+                placeholders.append((sent, archaic, mod)); return sent
+            result = re.sub(r'\b' + re.escape(archaic) + r'\b', _notw_replace, result)
+            continue
         result = re.sub(r'\b' + re.escape(archaic) + r'\b', sentinel, result)
         placeholders.append((sentinel, archaic, modern))
 
@@ -452,7 +536,8 @@ def apply_swaps(text, swap_list):
     DID_SKIP = {'my', 'his', 'her', 'their', 'our', 'your', 'its', 'the', 'a', 'an',
                 'not', 'also', 'all', 'both', 'even', 'never', 'once', 'then', 'thus',
                 'i', 'it', 'they', 'she', 'he', 'we', 'so', 'as', 'again', 'frankly',
-                'still', 'do', 'molten', 'this', 'that', 'these', 'those'}
+                'still', 'do', 'molten', 'this', 'that', 'these', 'those',
+                'now', 'throughout', 'there', 'here', 'much', 'more'}
 
     def did_verb_replace(m):
         full, verb = m.group(0), m.group(1)
