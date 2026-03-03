@@ -1053,16 +1053,19 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
 def build_parallel_map(bid, ch_num, ch_verses):
     """Build a map: (verse_num, line_index) -> (group_id, level) for parallel highlighting.
 
-    Matches Parry's text fragments against the raw source lines using subsequence matching.
+    Matches Parry's text fragments against the raw source lines using word-based scoring.
     Returns dict like {(3, 2): ('p1', 'A'), (3, 3): ('p1', 'B'), ...}
 
     Quality filters:
     - Skip structures with >10 Parry lines (too sprawling for our sense-line granularity)
     - Skip structures using levels deeper than C (D, E, F... too fine-grained)
+    - Stop-words excluded from match scoring (common function words don't count)
     - Structures where <60% of lines match are dropped entirely (too noisy)
     - When multiple Parry lines match the same sense-line, uses the shallowest (A>B>C) level
     - Orphan labels (single label in a verse) are pruned
     - After pruning, skip if matched lines don't show both halves of the pattern (need A and B minimum)
+    - First label in reading order must be A (not B, C, or prime variants)
+    - No gap of >3 unlabeled lines between adjacent matches within a verse
     """
     structures = get_parallel_structures(bid, ch_num)
     if not structures:
@@ -1070,6 +1073,17 @@ def build_parallel_map(bid, ch_num, ch_verses):
 
     MAX_LINES = 10       # structures larger than this are too sprawling
     MAX_DEPTH = 'C'      # don't display levels deeper than C (D, E, F are too fine-grained)
+    MAX_GAP = 3          # max unlabeled lines between adjacent matches in same verse
+
+    # Function words excluded from match scoring — too common to be distinctive
+    STOP_WORDS = {
+        'the', 'a', 'an', 'and', 'or', 'but', 'of', 'in', 'to', 'for',
+        'is', 'it', 'that', 'which', 'with', 'he', 'his', 'him', 'she',
+        'her', 'they', 'them', 'their', 'we', 'our', 'us', 'i', 'my',
+        'me', 'ye', 'you', 'your', 'unto', 'by', 'as', 'on', 'at',
+        'from', 'be', 'was', 'were', 'are', 'been', 'had', 'have', 'has',
+        'did', 'do', 'not', 'no', 'this', 'these', 'those',
+    }
 
     # Build a lookup: verse_num -> [(line_index, raw_text), ...]
     verse_lines = {}
@@ -1110,8 +1124,11 @@ def build_parallel_map(bid, ch_num, ch_verses):
             consumed = consumed_per_verse.setdefault(verse_num, set())
 
             # Extract first N significant words from fragment for matching
-            frag_words = re.findall(r'[a-z]+', frag)[:6]
-            if not frag_words:
+            # Filter out stop-words — they're too common to be useful for matching
+            all_frag_words = re.findall(r'[a-z]+', frag)
+            frag_content_words = [w for w in all_frag_words if w not in STOP_WORDS][:6]
+            frag_first_word = all_frag_words[0] if all_frag_words else ''
+            if not frag_content_words:
                 continue
 
             # Find the best matching line NOT YET consumed
@@ -1124,17 +1141,17 @@ def build_parallel_map(bid, ch_num, ch_verses):
                 raw_words = re.findall(r'[a-z]+', raw)
                 if not raw_words:
                     continue
-                # Count how many of the first fragment words appear in this line
-                score = sum(1 for w in frag_words if w in raw_words)
-                # Bonus for matching the first word
-                if frag_words[0] == raw_words[0]:
+                # Count how many content words from fragment appear in this line
+                score = sum(1 for w in frag_content_words if w in raw_words)
+                # Bonus for matching the first word (even if it's a stop-word)
+                if frag_first_word and frag_first_word == raw_words[0]:
                     score += 2
                 if score > best_score:
                     best_score = score
                     best_match = li
 
-            # Require a strong match: at least 3 word hits, or first-word bonus + 2
-            if best_match >= 0 and best_score >= max(3, len(frag_words) * 0.5):
+            # Require a strong match: at least 3 content-word hits, or 50% of content words
+            if best_match >= 0 and best_score >= max(3, len(frag_content_words) * 0.5):
                 consumed.add(best_match)
                 matched_count += 1
                 key = (verse_num, best_match)
@@ -1155,7 +1172,6 @@ def build_parallel_map(bid, ch_num, ch_verses):
         # For structures with matches across multiple verses, require at least 2 matched lines
         # in any verse that has matches (drop verses with only 1 orphan label).
         if len(struct_matches) >= 3:
-            # Count matches per verse
             from collections import Counter
             verse_match_counts = Counter(k[0] for k in struct_matches)
             # Remove orphan matches (single label in a verse with no neighbors)
@@ -1182,10 +1198,64 @@ def build_parallel_map(bid, ch_num, ch_verses):
         if has_gaps:
             continue
 
-        # Merge into result (don't overwrite existing assignments from earlier structures)
-        for key, val in struct_matches.items():
-            if key not in result:
-                result[key] = val
+        # Reading-order check: first label must be A (not B, C, or prime variants).
+        # Without this, readers see a "b" or "c'" label with no preceding "a" — confusing.
+        sorted_keys = sorted(struct_matches.keys())
+        first_level = struct_matches[sorted_keys[0]][1]
+        if first_level.rstrip("'") != 'A':
+            continue
+
+        # Gap-within-verse check: adjacent matched lines shouldn't be >MAX_GAP lines apart.
+        # Large gaps make the parallel structure visually unclear.
+        from collections import defaultdict
+        verse_indices = defaultdict(list)
+        for (vn, li) in sorted_keys:
+            verse_indices[vn].append(li)
+        gap_ok = True
+        for vn, indices in verse_indices.items():
+            indices.sort()
+            for i in range(1, len(indices)):
+                if indices[i] - indices[i-1] > MAX_GAP + 1:  # +1 because gap of 3 means 3 lines between
+                    gap_ok = False
+                    break
+            if not gap_ok:
+                break
+        if not gap_ok:
+            continue
+
+        # Level-adjacency check: within each verse, consecutive matched lines should
+        # have labels within 1 level of each other (A→B ok, A→C confusing).
+        # This catches cases like A, C, B, C where sense-line merging garbles the order.
+        level_order_ok = True
+        for vn, indices in verse_indices.items():
+            verse_keys_sorted = sorted((li, struct_matches[(vn, li)][1]) for li in indices)
+            for i in range(1, len(verse_keys_sorted)):
+                prev_base = ord(verse_keys_sorted[i-1][1].rstrip("'"))
+                curr_base = ord(verse_keys_sorted[i][1].rstrip("'"))
+                if abs(curr_base - prev_base) > 1:
+                    level_order_ok = False
+                    break
+            if not level_order_ok:
+                break
+        if not level_order_ok:
+            continue
+
+        # Merge into result — all-or-nothing to avoid orphaned labels.
+        # If ANY key in this structure conflicts with an existing assignment,
+        # skip the entire structure rather than leaving partial/orphaned entries.
+        conflicts = [k for k in struct_matches if k in result]
+        if not conflicts:
+            result.update(struct_matches)
+        else:
+            # Check if the non-conflicting subset still has A and B
+            remaining = {k: v for k, v in struct_matches.items() if k not in result}
+            rem_levels = set(v[1].rstrip("'") for v in remaining.values())
+            if 'A' in rem_levels and 'B' in rem_levels and len(remaining) >= 2:
+                # Verify first-label and level-adjacency for the subset
+                rem_sorted = sorted(remaining.keys())
+                if remaining[rem_sorted[0]][1].rstrip("'") == 'A':
+                    result.update(remaining)
+            # Otherwise: skip entirely — the overlapping structure won
 
     return result
 
