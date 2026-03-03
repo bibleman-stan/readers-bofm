@@ -914,6 +914,8 @@ def apply_phrase_highlights(line_text, phrases, css_class):
 
     Uses case-insensitive matching to find phrase text within the line,
     then wraps matched portions. Non-matched portions are left unwrapped.
+    Also matches partial phrases: if a multi-word phrase spans across line
+    breaks, we check whether any 3+ word suffix or prefix falls on this line.
     Returns the line with spans inserted.
     """
     if not phrases:
@@ -924,13 +926,35 @@ def apply_phrase_highlights(line_text, phrases, css_class):
     line_lower = line_text.lower()
     for phrase in phrases:
         phrase_lower = phrase.lower()
+        # Try full phrase first
         start = 0
+        found_full = False
         while True:
             idx = line_lower.find(phrase_lower, start)
             if idx == -1:
                 break
             intervals.append((idx, idx + len(phrase)))
             start = idx + 1
+            found_full = True
+
+        # If full phrase not found, try sub-phrases (for cross-line spanning)
+        if not found_full:
+            words = phrase_lower.split()
+            if len(words) >= 4:
+                # Try prefixes and suffixes of 3+ words
+                for n in range(len(words) - 1, 2, -1):
+                    # Try prefix (end of phrase on this line)
+                    prefix = ' '.join(words[:n])
+                    idx = line_lower.find(prefix)
+                    if idx != -1:
+                        intervals.append((idx, idx + len(prefix)))
+                        break
+                    # Try suffix (start of phrase on this line)
+                    suffix = ' '.join(words[len(words)-n:])
+                    idx = line_lower.find(suffix)
+                    if idx != -1:
+                        intervals.append((idx, idx + len(suffix)))
+                        break
 
     if not intervals:
         return line_text

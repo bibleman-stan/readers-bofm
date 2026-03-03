@@ -38,12 +38,44 @@ HARDY_ABBREV_TO_NAME = {
 }
 
 
+# KJV→BofM spelling normalization (British → American, archaic → modern)
+KJV_SPELLING_MAP = {
+    'marvellous': 'marvelous', 'marvelled': 'marveled',
+    'counsellor': 'counselor', 'counselled': 'counseled',
+    'honour': 'honor', 'honourable': 'honorable',
+    'favour': 'favor', 'favoured': 'favored',
+    'labour': 'labor', 'laboured': 'labored', 'labourer': 'laborer',
+    'labourers': 'laborers', 'labouring': 'laboring', 'labours': 'labors',
+    'saviour': 'savior', 'savour': 'savor',
+    'neighbour': 'neighbor', 'armour': 'armor',
+    'colours': 'colors', 'vapour': 'vapor', 'vapours': 'vapors',
+    'rumours': 'rumors',
+    'endeavour': 'endeavor', 'endeavoured': 'endeavored', 'endeavouring': 'endeavoring',
+    'succour': 'succor', 'succoured': 'succored',
+    'travelled': 'traveled', 'traveller': 'traveler', 'travelling': 'traveling',
+    'shew': 'show', 'shewed': 'showed', 'sheweth': 'showeth', 'shewing': 'showing',
+}
+
+# Generic 3-word phrases too common to be meaningful allusions
+STOP_PHRASES = {
+    'and he did', 'and i will', 'and it was', 'and they did',
+    'and they were', 'that in them', 'and he was', 'and it is',
+    'it came to', 'came to pass', 'and he said', 'and they shall',
+    'and i say', 'and i am', 'it shall be', 'and there was',
+    'that he was', 'that he had', 'that they had', 'that they were',
+}
+
+
 def normalize_text(text):
-    """Normalize text for phrase matching: lowercase, remove punctuation, keep spaces."""
+    """Normalize text for phrase matching: lowercase, remove punctuation, normalize KJV spellings."""
     # Remove punctuation but keep spaces
     text = re.sub(r'[^\w\s]', ' ', text, flags=re.UNICODE)
     # Lowercase
     text = text.lower()
+    # Normalize KJV spellings to BofM spellings
+    words = text.split()
+    words = [KJV_SPELLING_MAP.get(w, w) for w in words]
+    text = ' '.join(words)
     # Collapse multiple spaces
     text = re.sub(r'\s+', ' ', text).strip()
     return text
@@ -122,10 +154,14 @@ def find_phrase_matches(bible_text, bom_text, min_words=3):
             else:
                 char_end_norm = len(bom_norm)
 
+            # Filter out generic stop-phrases (only for 3-word matches)
+            phrase_text_norm = ' '.join(bom_words[word_start_idx:word_end_idx + 1])
+            if best_match_len <= 3 and phrase_text_norm in STOP_PHRASES:
+                continue
+
             # Now map back to character positions in ORIGINAL text
             # This is tricky because we removed punctuation
             # We need to find where this phrase appears in the original text
-            phrase_text_norm = ' '.join(bom_words[word_start_idx:word_end_idx + 1])
 
             # Simple approach: find the first occurrence of this phrase in the original
             # after normalizing character-by-character
@@ -346,8 +382,9 @@ def build_phrase_index(hardy_data_file, scripture_file, output_file):
 
             bom_text = scripture_dict[scripture_key]
 
-            # Perform phrase matching
-            matches = find_phrase_matches(combined_bible_text, bom_text, min_words=4)
+            # Perform phrase matching — allusions use lower threshold (paraphrases share fewer words)
+            min_w = 3 if entry_type == 'allusion' else 4
+            matches = find_phrase_matches(combined_bible_text, bom_text, min_words=min_w)
 
             if not matches:
                 stats['no_phrase_match'] += 1
@@ -425,10 +462,10 @@ def build_phrase_index(hardy_data_file, scripture_file, output_file):
 
 
 if __name__ == '__main__':
-    base_path = Path('/sessions/compassionate-dreamy-faraday/mnt/readers-bofm')
+    base_path = Path(__file__).resolve().parent
 
     hardy_data_file = base_path / 'data' / 'hardy_biblical_references.json'
-    scripture_file = base_path / 'lds-scriptures.txt'
+    scripture_file = base_path / 'data' / 'lds-scriptures.txt'
     output_file = base_path / 'data' / 'hardy_phrase_index.json'
 
     build_phrase_index(hardy_data_file, scripture_file, output_file)
