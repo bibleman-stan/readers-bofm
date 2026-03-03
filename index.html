@@ -2,6 +2,9 @@
 <html>
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The Book of Mormon — Reading Edition</title>
 <meta name="description" content="A reading edition of the Book of Mormon with sense-line formatting, modern language aids, and study layers.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a1a1a">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -632,6 +635,14 @@
     background: #e8eaef !important;
     color: #888 !important;
     border-color: #c0c5cc !important;
+  }
+
+  body.light-mode #offline-btn {
+    background: #d0dae8 !important;
+    color: #3a3630 !important;
+  }
+  body.light-mode #offline-bar {
+    background: #4a7a9e !important;
   }
 
   body.light-mode #background-panel {
@@ -1359,12 +1370,34 @@
     <hr class="settings-divider">
 
     <!-- Dark/Light mode toggle -->
-    <div class="toggle-row" style="margin-bottom:0;">
+    <div class="toggle-row">
       <div class="toggle-desc"><strong>Light mode</strong><br>Switch display theme</div>
       <label class="toggle-switch">
         <input type="checkbox" id="mode-toggle" onchange="toggleDarkMode()">
         <span class="toggle-track"></span>
       </label>
+    </div>
+
+    <hr class="settings-divider">
+
+    <!-- Offline download -->
+    <div id="offline-section">
+      <div class="toggle-row" style="margin-bottom:0;">
+        <div class="toggle-desc">
+          <strong>Save for offline</strong><br>
+          <span id="offline-status" style="font-size:0.85em;opacity:0.7;">Checking...</span>
+        </div>
+        <button id="offline-btn" onclick="downloadAllForOffline()" style="
+          background: #4a6070; color: #d4d0c8; border: none; border-radius: 12px;
+          padding: 6px 14px; font-size: 0.82em; cursor: pointer; white-space: nowrap;
+        ">Download All</button>
+      </div>
+      <div id="offline-progress" style="display:none; margin-top:8px;">
+        <div style="background:rgba(255,255,255,0.1); border-radius:4px; height:6px; overflow:hidden;">
+          <div id="offline-bar" style="background:#7cafc2; height:100%; width:0%; transition:width 0.3s;"></div>
+        </div>
+        <div id="offline-progress-text" style="font-size:0.78em; opacity:0.6; margin-top:4px; text-align:center;"></div>
+      </div>
     </div>
   </div>
 
@@ -2141,6 +2174,8 @@
     }
     panel.classList.toggle('visible');
     document.getElementById('gear-btn').classList.toggle('active');
+    // Refresh offline cache status when opening settings
+    if (!isVisible && typeof checkOfflineStatus === 'function') checkOfflineStatus();
   };
 
   window.toggleDarkMode = function() {
@@ -2735,6 +2770,77 @@
   // [Read Along feature extracted to readalong.html — see that file for the beta mic/speech tool]
 
 })();
+
+// =========================================================================
+// SERVICE WORKER — offline support
+// =========================================================================
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').then(function(reg) {
+    console.log('Service worker registered');
+    // Check cache status when settings panel opens
+    checkOfflineStatus();
+  }).catch(function(err) {
+    console.log('SW registration failed:', err);
+    // Hide offline section if SW not supported
+    var sec = document.getElementById('offline-section');
+    if (sec) sec.style.display = 'none';
+  });
+}
+
+function checkOfflineStatus() {
+  if (!navigator.serviceWorker || !navigator.serviceWorker.controller) {
+    var status = document.getElementById('offline-status');
+    if (status) status.textContent = 'Available after first load';
+    return;
+  }
+  var channel = new MessageChannel();
+  channel.port1.onmessage = function(event) {
+    if (event.data.type === 'CACHE_STATUS') {
+      var status = document.getElementById('offline-status');
+      var btn = document.getElementById('offline-btn');
+      if (event.data.cached >= event.data.total) {
+        if (status) status.textContent = 'All ' + event.data.total + ' books saved';
+        if (btn) { btn.textContent = 'Saved'; btn.style.opacity = '0.5'; btn.disabled = true; }
+      } else {
+        if (status) status.textContent = event.data.cached + ' of ' + event.data.total + ' books saved';
+        if (btn) { btn.textContent = 'Download All'; btn.style.opacity = '1'; btn.disabled = false; }
+      }
+    }
+  };
+  navigator.serviceWorker.controller.postMessage({ type: 'CHECK_CACHE' }, [channel.port2]);
+}
+
+function downloadAllForOffline() {
+  if (!navigator.serviceWorker || !navigator.serviceWorker.controller) {
+    alert('Offline support will be ready after a page refresh.');
+    return;
+  }
+  var btn = document.getElementById('offline-btn');
+  var progress = document.getElementById('offline-progress');
+  var bar = document.getElementById('offline-bar');
+  var progressText = document.getElementById('offline-progress-text');
+
+  btn.disabled = true;
+  btn.textContent = 'Downloading...';
+  progress.style.display = 'block';
+
+  var channel = new MessageChannel();
+  channel.port1.onmessage = function(event) {
+    if (event.data.type === 'PROGRESS') {
+      var pct = Math.round((event.data.done / event.data.total) * 100);
+      bar.style.width = pct + '%';
+      progressText.textContent = event.data.done + ' of ' + event.data.total + ' books';
+    }
+    if (event.data.type === 'COMPLETE') {
+      bar.style.width = '100%';
+      btn.textContent = 'Saved';
+      btn.style.opacity = '0.5';
+      progressText.textContent = 'Ready for offline reading';
+      document.getElementById('offline-status').textContent = 'All ' + event.data.cached + ' books saved';
+    }
+  };
+  navigator.serviceWorker.controller.postMessage({ type: 'CACHE_ALL_BOOKS' }, [channel.port2]);
+}
 </script>
 
 </body></html>

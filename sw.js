@@ -1,0 +1,116 @@
+// Service Worker for bomreader.com
+// Strategy: cache app shell eagerly, cache books lazily (on first open),
+// with option to pre-cache all books at once via message from page.
+
+const CACHE_NAME = 'bomreader-v1';
+
+// App shell — cached on install
+const SHELL_ASSETS = [
+  './',
+  './index.html',
+];
+
+// All book fragments — cached lazily or on demand
+const BOOK_IDS = [
+  '1nephi','2nephi','jacob','enos','jarom','omni','words-of-mormon',
+  'mosiah','alma','helaman','3nephi','4nephi','mormon','ether','moroni'
+];
+const BOOK_URLS = BOOK_IDS.map(id => `./books/${id}.html`);
+
+// Install: cache the app shell
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL_ASSETS))
+  );
+  self.skipWaiting();
+});
+
+// Activate: clean old caches
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
+    )
+  );
+  self.clients.claim();
+});
+
+// Fetch: cache-first for books and shell, network-first for fonts (so updates come through)
+self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+
+  // Google Fonts: cache-first (they rarely change)
+  if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
+    event.respondWith(
+      caches.match(event.request).then(cached => {
+        if (cached) return cached;
+        return fetch(event.request).then(response => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          }
+          return response;
+        });
+      })
+    );
+    return;
+  }
+
+  // Same-origin requests: cache-first, fallback to network (and cache the response)
+  if (url.origin === self.location.origin) {
+    event.respondWith(
+      caches.match(event.request).then(cached => {
+        if (cached) return cached;
+        return fetch(event.request).then(response => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          }
+          return response;
+        });
+      })
+    );
+    return;
+  }
+
+  // Everything else: network only
+  event.respondWith(fetch(event.request));
+});
+
+// Message handler: pre-cache all books on demand
+self.addEventListener('message', event => {
+  if (event.data && event.data.type === 'CACHE_ALL_BOOKS') {
+    const port = event.ports[0];
+    caches.open(CACHE_NAME).then(async cache => {
+      let done = 0;
+      for (const url of BOOK_URLS) {
+        try {
+          // Check if already cached
+          const existing = await cache.match(url);
+          if (!existing) {
+            await cache.add(url);
+          }
+          done++;
+          if (port) port.postMessage({ type: 'PROGRESS', done, total: BOOK_URLS.length });
+        } catch (err) {
+          done++;
+          if (port) port.postMessage({ type: 'PROGRESS', done, total: BOOK_URLS.length, error: url });
+        }
+      }
+      if (port) port.postMessage({ type: 'COMPLETE', cached: BOOK_URLS.length });
+    });
+  }
+
+  // Report which books are currently cached
+  if (event.data && event.data.type === 'CHECK_CACHE') {
+    const port = event.ports[0];
+    caches.open(CACHE_NAME).then(async cache => {
+      let cachedCount = 0;
+      for (const url of BOOK_URLS) {
+        const existing = await cache.match(url);
+        if (existing) cachedCount++;
+      }
+      if (port) port.postMessage({ type: 'CACHE_STATUS', cached: cachedCount, total: BOOK_URLS.length });
+    });
+  }
+});
