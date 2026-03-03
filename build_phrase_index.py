@@ -56,13 +56,29 @@ KJV_SPELLING_MAP = {
     'shew': 'show', 'shewed': 'showed', 'sheweth': 'showeth', 'shewing': 'showing',
 }
 
-# Generic 3-word phrases too common to be meaningful allusions
+# Phrases too common/generic to be meaningful allusion signals.
+# These appear in both Bible and BofM but don't indicate literary dependence.
 STOP_PHRASES = {
+    # 3-word function-heavy phrases
     'and he did', 'and i will', 'and it was', 'and they did',
     'and they were', 'that in them', 'and he was', 'and it is',
     'it came to', 'came to pass', 'and he said', 'and they shall',
     'and i say', 'and i am', 'it shall be', 'and there was',
     'that he was', 'that he had', 'that they had', 'that they were',
+    'of the lord', 'of the world', 'the blood of', 'i am the',
+    'the kingdom of', 'the son of', 'there is no', 'from the ground',
+    'and the earth', 'of the righteous', 'in the wilderness',
+    'in heaven and', 'from the beginning', 'to the intent',
+    'the father of', 'the fulness of', 'unto the lord',
+    'from the dust', 'of the earth', 'speak with the',
+    'and the life', 'said unto them', 'upon their own',
+    'the resurrection of', 'in the beginning', 'and a contrite',
+    # 4-word function-heavy phrases
+    'and they shall be', 'and he shall be', 'and it shall be',
+    'i say unto you', 'and the holy ghost', 'shall be gathered together',
+    'out of the land', 'in the name of', 'the lord of hosts',
+    'the word of god', 'of the lord god', 'the house of israel',
+    'the children of men', 'the land of promise',
 }
 
 
@@ -154,9 +170,9 @@ def find_phrase_matches(bible_text, bom_text, min_words=3):
             else:
                 char_end_norm = len(bom_norm)
 
-            # Filter out generic stop-phrases (only for 3-word matches)
+            # Filter out generic stop-phrases (short matches only)
             phrase_text_norm = ' '.join(bom_words[word_start_idx:word_end_idx + 1])
-            if best_match_len <= 3 and phrase_text_norm in STOP_PHRASES:
+            if best_match_len <= 4 and phrase_text_norm in STOP_PHRASES:
                 continue
 
             # Now map back to character positions in ORIGINAL text
@@ -382,9 +398,8 @@ def build_phrase_index(hardy_data_file, scripture_file, output_file):
 
             bom_text = scripture_dict[scripture_key]
 
-            # Perform phrase matching — allusions use lower threshold (paraphrases share fewer words)
-            min_w = 3 if entry_type == 'allusion' else 4
-            matches = find_phrase_matches(combined_bible_text, bom_text, min_words=min_w)
+            # Perform phrase matching
+            matches = find_phrase_matches(combined_bible_text, bom_text, min_words=4)
 
             if not matches:
                 stats['no_phrase_match'] += 1

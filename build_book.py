@@ -940,9 +940,9 @@ def apply_phrase_highlights(line_text, phrases, css_class):
         # If full phrase not found, try sub-phrases (for cross-line spanning)
         if not found_full:
             words = phrase_lower.split()
-            if len(words) >= 4:
-                # Try prefixes and suffixes of 3+ words
-                for n in range(len(words) - 1, 2, -1):
+            if len(words) >= 5:
+                # Try prefixes and suffixes of 4+ words (avoid short noisy fragments)
+                for n in range(len(words) - 1, 3, -1):
                     # Try prefix (end of phrase on this line)
                     prefix = ' '.join(words[:n])
                     idx = line_lower.find(prefix)
