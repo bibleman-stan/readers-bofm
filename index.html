@@ -442,6 +442,48 @@
     font-size: 0.9em;
   }
 
+  /* ---- Floating chapter arrows (desktop only) ---- */
+  .float-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 90;
+    background: rgba(40, 44, 52, 0.75);
+    color: #7cafc2;
+    border: 1px solid rgba(124, 175, 194, 0.25);
+    font-size: 1.4em;
+    line-height: 1;
+    padding: 14px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: opacity 0.2s, background 0.2s;
+    opacity: 0.5;
+    display: none;  /* hidden by default; JS shows on desktop when chapter is active */
+  }
+  .float-nav:hover {
+    opacity: 1;
+    background: rgba(40, 44, 52, 0.92);
+  }
+  .float-nav-prev { left: 8px; }
+  .float-nav-next { right: 8px; }
+  .float-nav.hidden { display: none !important; }
+  /* Only show on screens wide enough to have margin space */
+  @media (min-width: 900px) {
+    .float-nav.active { display: block; }
+  }
+  /* Light mode */
+  body.light-mode .float-nav {
+    background: rgba(235, 230, 220, 0.8);
+    color: #4a7a9e;
+    border-color: rgba(74, 122, 158, 0.25);
+  }
+  body.light-mode .float-nav:hover {
+    background: rgba(235, 230, 220, 0.95);
+  }
+
   .verse {
     margin-bottom: var(--verse-gap);
   }
@@ -1277,6 +1319,10 @@
 </head>
 <body>
 <div id="top"></div>
+
+<!-- Floating chapter arrows (desktop) -->
+<a id="float-prev" class="float-nav float-nav-prev" href="#" onclick="floatNavPrev(); return false;">&lsaquo;</a>
+<a id="float-next" class="float-nav float-nav-next" href="#" onclick="floatNavNext(); return false;">&rsaquo;</a>
 
 <a href="#" onclick="showAboutPage(); return false;" style="text-decoration: none; color: inherit;">
 <h1>The Book of Mormon <span class="subtitle">Reading Edition</span></h1>
@@ -2485,6 +2531,9 @@
     closeAllPanels();
     document.getElementById('about-page').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'none';
+    // Hide floating chapter arrows
+    document.getElementById('float-prev').classList.remove('active');
+    document.getElementById('float-next').classList.remove('active');
     // Clear the hash so stale chapter refs don't interfere with navigation
     lastHashWeSet = '';
     if (window.location.hash) {
@@ -2529,6 +2578,7 @@
     lastHashWeSet = bookId + '-' + chNum;
     window.location.hash = lastHashWeSet;
     updateCollapsedSummary(bookId, chNum);
+    updateFloatNav(bookId, chNum);
   };
 
   window.showChapterGrid = function(bookId) {
@@ -2717,9 +2767,44 @@
         pauseCollapse();
       }
     }
+    // Arrow keys → prev/next chapter (only when not in an input/textarea)
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+    if (e.key === 'ArrowLeft') { floatNavPrev(); }
+    if (e.key === 'ArrowRight') { floatNavNext(); }
   });
 
   // ---- SWIPE TO CHANGE CHAPTERS ----
+  // ---- FLOATING CHAPTER ARROWS (desktop) ----
+  function updateFloatNav(bookId, chNum) {
+    var prev = document.getElementById('float-prev');
+    var next = document.getElementById('float-next');
+    if (!prev || !next) return;
+    var meta = bookMeta[bookId];
+    if (!meta) { prev.classList.remove('active'); next.classList.remove('active'); return; }
+    if (chNum > 1) { prev.classList.add('active'); } else { prev.classList.remove('active'); }
+    if (chNum < meta.chapters) { next.classList.add('active'); } else { next.classList.remove('active'); }
+  }
+  window.floatNavPrev = function() {
+    var meta = bookMeta[currentBook];
+    if (!meta) return;
+    var curCh = currentChapterMap[currentBook] || 1;
+    if (curCh > 1) showChapter(currentBook, curCh - 1);
+  };
+  window.floatNavNext = function() {
+    var meta = bookMeta[currentBook];
+    if (!meta) return;
+    var curCh = currentChapterMap[currentBook] || 1;
+    if (curCh < meta.chapters) showChapter(currentBook, curCh + 1);
+  };
+  // Hide float-nav when on chapter grid or about page
+  var origShowChapterGrid = window.showChapterGrid;
+  window.showChapterGrid = function(bookId) {
+    document.getElementById('float-prev').classList.remove('active');
+    document.getElementById('float-next').classList.remove('active');
+    origShowChapterGrid(bookId);
+  };
+
+  // ---- TOUCH/SWIPE NAVIGATION ----
   var touchStartX = 0;
   var touchStartY = 0;
   var touchStartTime = 0;
