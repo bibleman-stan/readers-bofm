@@ -813,20 +813,6 @@ def get_parry_structures(book_id, chapter):
     """Return list of Parry structures for this chapter, or empty list."""
     return _PARRY_INDEX.get(book_id, {}).get(str(chapter), [])
 
-def gen_parry_overlay(structure):
-    """Generate HTML for a single Parry parallelism overlay block."""
-    parts = ['<div class="parry-overlay">']
-    for line in structure['lines']:
-        indent = line.get('indent', 0)
-        level = line.get('level', '')
-        text = line.get('text', '')
-        indent_cls = f' parry-indent-{min(indent, 5)}'
-        label_html = f'<span class="parry-label">{level}</span> ' if level else ''
-        parts.append(f'  <div class="parry-line{indent_cls}">{label_html}{text}</div>')
-    ptype = structure.get('type', 'parallelism')
-    parts.append(f'  <div class="parry-type">({ptype})</div>')
-    parts.append('</div>')
-    return '\n'.join(parts)
 
 def get_pericope(book_id, chapter, verse):
     """Return a pericope section title if this verse starts a new section, or None."""
@@ -1109,7 +1095,7 @@ def apply_phrase_highlights(line_text, phrases, css_class):
 # HTML GENERATION — outputs standalone book fragments
 # ============================================================================
 
-def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
+def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=None):
     ref = verse['ref']
     processed = [process_line(l, swap_list) for l in verse['lines']]
 
@@ -1206,6 +1192,22 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
     if has_diff:
         diff_html = render_kjv_diff(diff_data)
         parts.append(f'  <span class="line verse-diff">{diff_html}</span>')
+
+    # Parry Hebrew Poetry layer (third text mode — hidden by default)
+    if parry_lines:
+        for pl in parry_lines:
+            indent = min(pl.get('indent', 0), 5)
+            label = pl.get('label', '')
+            text = pl.get('text', '')
+            label_html = f'<span class="parry-label">{label}</span>' if label else '<span class="parry-label-spacer"></span>'
+            parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{text}</span>')
+            # If this line ends a structure, add type annotation
+            if 'type_end' in pl and pl['type_end']:
+                parts.append(f'  <span class="line-parry parry-type-line">({pl["type_end"]})</span>')
+    else:
+        # Fallback: show paragraph text when no Parry data exists for this verse
+        if para_html:
+            parts.append(f'  <span class="line-parry">{para_html}</span>')
 
     parts.append('</div>')
     return '\n'.join(parts)
@@ -1438,24 +1440,31 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
     # Build parallel structure map for this chapter
     par_map = build_parallel_map(bid, ch_num, ch_verses)
 
-    # Build Parry overlay map: verse_end → list of structures ending at that verse
+    # Build Parry per-verse map: verse_num → list of line dicts + type annotations
     parry_structs = get_parry_structures(bid, ch_num)
-    parry_end_map = {}
+    parry_verse_map = {}  # verse_num → list of {label, indent, text, type_end}
     for s in parry_structs:
+        ptype = s.get('type', '')
         ve = s.get('ve', 0)
-        parry_end_map.setdefault(ve, []).append(s)
+        for line in s.get('lines', []):
+            vn = line.get('v', 0)
+            entry = {
+                'label': line.get('level', ''),
+                'indent': line.get('indent', 0),
+                'text': line.get('text', ''),
+            }
+            parry_verse_map.setdefault(vn, []).append(entry)
+        # Add type annotation marker on the last line of the structure's last verse
+        if ve in parry_verse_map and parry_verse_map[ve]:
+            parry_verse_map[ve][-1]['type_end'] = ptype
 
     for v in ch_verses:
         # Check for pericope section header before this verse
         pericope_title = get_pericope(bid, v['chapter'], v['verse'])
         if pericope_title:
             p.append(format_pericope_header(pericope_title))
-        p.append(gen_verse(v, swap_list, book_id=bid, parallel_map=par_map))
-        # Inject Parry overlays that end at this verse
-        vn = v['verse']
-        if vn in parry_end_map:
-            for s in parry_end_map[vn]:
-                p.append(gen_parry_overlay(s))
+        p.append(gen_verse(v, swap_list, book_id=bid, parallel_map=par_map,
+                           parry_lines=parry_verse_map.get(v['verse'], [])))
         p.append('')
     p.append('</div>')
     return '\n'.join(p)
