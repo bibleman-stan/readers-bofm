@@ -1313,7 +1313,9 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 label_html = '<span class="parry-label-spacer"></span>'
                 indent = 0
 
-            parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{text}</span>')
+            # Apply swap processing so the Aid layer works in Poetic mode
+            processed_text = process_line(text, swap_list)
+            parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{processed_text}</span>')
         # Type annotations (chiasmus, simple alternate, etc.) are no longer
         # rendered visibly — they are metadata only, not displayed to the reader.
     else:
