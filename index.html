@@ -846,8 +846,7 @@
     font-style: italic;
   }
 
-  /* === HEBREW POETRY / PARALLEL STRUCTURE LAYER === */
-  /* Parry-style: clean scholarly indentation with letter labels (a, b, c / a', b', c') */
+  /* === HEBREW POETRY / PARALLEL STRUCTURE LAYER (old sense-line overlay) === */
   body.show-parallels [data-parallel-level] {
     position: relative;
     padding-left: 2.2em;
@@ -865,28 +864,56 @@
     top: 0.2em;
     text-transform: lowercase;
   }
-  /* Level B — indented (^= matches both "B" and "B'") */
-  body.show-parallels [data-parallel-level^="B"] {
-    padding-left: 3.8em;
-  }
+  body.show-parallels [data-parallel-level^="B"] { padding-left: 3.8em; }
   body.show-parallels [data-parallel-level^="B"]::before { left: 1.8em; }
-  /* Level C — double indented */
-  body.show-parallels [data-parallel-level^="C"] {
-    padding-left: 5.4em;
-  }
+  body.show-parallels [data-parallel-level^="C"] { padding-left: 5.4em; }
   body.show-parallels [data-parallel-level^="C"]::before { left: 3.4em; }
-  /* Level D — triple indented */
-  body.show-parallels [data-parallel-level^="D"] {
-    padding-left: 7em;
-  }
+  body.show-parallels [data-parallel-level^="D"] { padding-left: 7em; }
   body.show-parallels [data-parallel-level^="D"]::before { left: 5em; }
-  /* Level E — quad indented */
-  body.show-parallels [data-parallel-level^="E"] {
-    padding-left: 8.6em;
-  }
+  body.show-parallels [data-parallel-level^="E"] { padding-left: 8.6em; }
   body.show-parallels [data-parallel-level^="E"]::before { left: 6.6em; }
-  /* Light-mode: slightly more visible labels */
   body.light-mode.show-parallels [data-parallel-level]::before { opacity: 0.8; }
+
+  /* === PARRY PARALLELISM OVERLAY (dedicated annotation blocks) === */
+  .parry-overlay {
+    display: none;
+    margin: 0.3em 0 0.8em 0;
+    padding: 0.6em 0.8em;
+    border-left: 3px solid #5eadad;
+    background: rgba(94, 173, 173, 0.06);
+    border-radius: 0 4px 4px 0;
+    font-size: 0.92em;
+    line-height: 1.55;
+  }
+  body.show-parry .parry-overlay { display: block; }
+  .parry-line { white-space: pre-wrap; }
+  .parry-indent-0 { padding-left: 0; }
+  .parry-indent-1 { padding-left: 1.5em; }
+  .parry-indent-2 { padding-left: 3em; }
+  .parry-indent-3 { padding-left: 4.5em; }
+  .parry-indent-4 { padding-left: 6em; }
+  .parry-indent-5 { padding-left: 7.5em; }
+  .parry-label {
+    font-weight: 700;
+    font-style: italic;
+    font-family: Literata, Georgia, serif;
+    color: #5eadad;
+    margin-right: 0.4em;
+    min-width: 1.2em;
+    display: inline-block;
+  }
+  .parry-type {
+    margin-top: 0.3em;
+    font-size: 0.82em;
+    font-style: italic;
+    opacity: 0.6;
+  }
+  /* Light mode adjustments */
+  body.light-mode .parry-overlay {
+    background: rgba(94, 173, 173, 0.08);
+    border-left-color: #4a9999;
+  }
+  body.light-mode .parry-label { color: #4a9999; }
 
   /* === GEOGRAPHY LAYER === */
   .geo-ref { display: inline; }
@@ -1760,9 +1787,9 @@
 
     <div class="layer-group-label">Literary</div>
     <label>
-      <input type="checkbox" id="parallels-check" onchange="toggleParallels(this.checked); updateLayersPill()" style="accent-color: #5eadad;">
+      <input type="checkbox" id="parry-check" onchange="toggleParry(this.checked); updateLayersPill()" style="accent-color: #5eadad;">
       <span class="layer-swatch" style="background: #5eadad;"></span>
-      <span>Hebrew Poetry</span>
+      <span>Hebrew Poetry (Parry)</span>
     </label>
   </div>
 
@@ -2689,7 +2716,7 @@
   };
 
   window.clearAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'parallels-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'parry-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb) { cb.checked = false; }
     });
@@ -2697,7 +2724,7 @@
     toggleAllusions(false);
     toggleKjvDiff(false);
     toggleGeo(false);
-    toggleParallels(false);
+    toggleParry(false);
     document.body.classList.remove('show-deity', 'show-spirit');
     deityLayerOn = false;
     spiritLayerOn = false;
@@ -2706,7 +2733,7 @@
   };
 
   window.selectAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'parallels-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'parry-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb && !cb.disabled) { cb.checked = true; }
     });
@@ -2716,13 +2743,13 @@
     toggleAllusions(true);
     toggleKjvDiff(true);
     toggleGeo(true);
-    toggleParallels(true);
+    toggleParry(true);
     updateLayersPill();
   };
 
   // Update layers pill to show active state when any layer is on
   function updateLayersPill() {
-    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'parallels-check'].some(function(id) {
+    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check', 'parry-check'].some(function(id) {
       var cb = document.getElementById(id);
       return cb && cb.checked;
     });
@@ -2756,6 +2783,9 @@
   };
   window.toggleParallels = function(on) {
     document.body.classList.toggle('show-parallels', on);
+  };
+  window.toggleParry = function(on) {
+    document.body.classList.toggle('show-parry', on);
   };
   window.toggleSections = function(on) {
     // Called with no arg from pill button → toggle; with arg from selectAll/clearAll → set

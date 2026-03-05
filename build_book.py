@@ -774,6 +774,7 @@ def load_intertext():
         print(f"  No pericope index at {pericope_path}, skipping Sections layer")
         _PERICOPE_INDEX = {}
     load_parallel_index(base)
+    load_parry_index(base)
 
 _PARALLEL_INDEX = {}
 
@@ -792,6 +793,40 @@ def load_parallel_index(base):
 def get_parallel_structures(book_id, chapter):
     """Return list of parallel structures for this chapter, or empty list."""
     return _PARALLEL_INDEX.get(book_id, {}).get(str(chapter), [])
+
+# ── Parry parallelism overlay data ──
+_PARRY_INDEX = {}
+
+def load_parry_index(base):
+    global _PARRY_INDEX
+    path = os.path.join(base, 'data', 'parry_index.json')
+    if os.path.exists(path):
+        with open(path) as f:
+            _PARRY_INDEX = json.load(f)
+        total = sum(len(e) for ch in _PARRY_INDEX.values() for e in ch.values())
+        print(f"Loaded Parry index: {total} structures for Parry Poetry overlay")
+    else:
+        print(f"  No Parry index at {path}, skipping Parry overlay")
+        _PARRY_INDEX = {}
+
+def get_parry_structures(book_id, chapter):
+    """Return list of Parry structures for this chapter, or empty list."""
+    return _PARRY_INDEX.get(book_id, {}).get(str(chapter), [])
+
+def gen_parry_overlay(structure):
+    """Generate HTML for a single Parry parallelism overlay block."""
+    parts = ['<div class="parry-overlay">']
+    for line in structure['lines']:
+        indent = line.get('indent', 0)
+        level = line.get('level', '')
+        text = line.get('text', '')
+        indent_cls = f' parry-indent-{min(indent, 5)}'
+        label_html = f'<span class="parry-label">{level}</span> ' if level else ''
+        parts.append(f'  <div class="parry-line{indent_cls}">{label_html}{text}</div>')
+    ptype = structure.get('type', 'parallelism')
+    parts.append(f'  <div class="parry-type">({ptype})</div>')
+    parts.append('</div>')
+    return '\n'.join(parts)
 
 def get_pericope(book_id, chapter, verse):
     """Return a pericope section title if this verse starts a new section, or None."""
@@ -1403,12 +1438,24 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
     # Build parallel structure map for this chapter
     par_map = build_parallel_map(bid, ch_num, ch_verses)
 
+    # Build Parry overlay map: verse_end → list of structures ending at that verse
+    parry_structs = get_parry_structures(bid, ch_num)
+    parry_end_map = {}
+    for s in parry_structs:
+        ve = s.get('ve', 0)
+        parry_end_map.setdefault(ve, []).append(s)
+
     for v in ch_verses:
         # Check for pericope section header before this verse
         pericope_title = get_pericope(bid, v['chapter'], v['verse'])
         if pericope_title:
             p.append(format_pericope_header(pericope_title))
         p.append(gen_verse(v, swap_list, book_id=bid, parallel_map=par_map))
+        # Inject Parry overlays that end at this verse
+        vn = v['verse']
+        if vn in parry_end_map:
+            for s in parry_end_map[vn]:
+                p.append(gen_parry_overlay(s))
         p.append('')
     p.append('</div>')
     return '\n'.join(p)
