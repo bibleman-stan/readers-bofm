@@ -640,14 +640,14 @@ def process_line(line, swap_list):
 
 V0_DIR = Path(__file__).resolve().parent / 'text-files' / 'v0-bofm-original'
 
-# Map book display names → v0 filenames
+# Map book IDs (lowercase, as used in booklist.txt) → v0 filenames
 V0_FILE_MAP = {
-    '1 Nephi': '1_Nephi.txt', '2 Nephi': '2_Nephi.txt',
-    '3 Nephi': '3_Nephi.txt', '4 Nephi': '4_Nephi.txt',
-    'Jacob': 'Jacob.txt', 'Enos': 'Enos.txt', 'Jarom': 'Jarom.txt',
-    'Omni': 'Omni.txt', 'Words of Mormon': 'Words_of_Mormon.txt',
-    'Mosiah': 'Mosiah.txt', 'Alma': 'Alma.txt', 'Helaman': 'Helaman.txt',
-    'Mormon': 'Mormon.txt', 'Ether': 'Ether.txt', 'Moroni': 'Moroni.txt',
+    '1nephi': '1_Nephi.txt', '2nephi': '2_Nephi.txt',
+    '3nephi': '3_Nephi.txt', '4nephi': '4_Nephi.txt',
+    'jacob': 'Jacob.txt', 'enos': 'Enos.txt', 'jarom': 'Jarom.txt',
+    'omni': 'Omni.txt', 'words-of-mormon': 'Words_of_Mormon.txt',
+    'mosiah': 'Mosiah.txt', 'alma': 'Alma.txt', 'helaman': 'Helaman.txt',
+    'mormon': 'Mormon.txt', 'ether': 'Ether.txt', 'moroni': 'Moroni.txt',
 }
 
 _v0_cache = {}
