@@ -1431,13 +1431,18 @@
   }
   body.light-mode #search-count { color: #777; }
 
-  /* Bar chart — two-level (groups → books) */
+  /* Bar chart — two sections: groups then books */
   #search-chart {
-    margin-bottom: 18px;
+    margin-bottom: 12px;
   }
-  .search-group-section {
-    margin-bottom: 6px;
+  #search-chart-groups, #search-chart-books {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #333;
   }
+  body.light-mode #search-chart-groups,
+  body.light-mode #search-chart-books { border-color: #ddd; }
+  #search-chart-books:empty { display: none; }
   .search-bar-row {
     display: flex;
     align-items: center;
@@ -1450,8 +1455,8 @@
     opacity: 0.8;
   }
   .search-bar-label {
-    min-width: 110px;
-    width: 110px;
+    min-width: 120px;
+    width: 120px;
     text-align: right;
     color: #aaa;
     white-space: nowrap;
@@ -1470,44 +1475,27 @@
   .search-bar-track {
     flex: 1;
     height: 16px;
-    background: rgba(255,255,255,0.04);
+    background: rgba(255,255,255,0.05);
     border-radius: 2px;
     overflow: hidden;
   }
-  body.light-mode .search-bar-track { background: rgba(0,0,0,0.05); }
+  body.light-mode .search-bar-track { background: rgba(0,0,0,0.06); }
   .search-bar-fill {
     height: 100%;
-    background: #888;
+    background: #aaa;
     border-radius: 2px;
     min-width: 3px;
     transition: width 0.2s ease;
   }
+  body.light-mode .search-bar-fill { background: #999; }
   .search-bar-num {
-    min-width: 32px;
+    min-width: 36px;
     text-align: left;
     color: #999;
     font-size: 0.88em;
     flex-shrink: 0;
   }
   body.light-mode .search-bar-num { color: #777; }
-  /* Sub-book rows (indented, slightly smaller) */
-  .search-bar-row.sub-book {
-    padding-left: 0;
-  }
-  .search-bar-row.sub-book .search-bar-label {
-    min-width: 110px;
-    width: 110px;
-    font-size: 0.95em;
-  }
-  /* Expanded group gets a subtle separator */
-  .search-group-books {
-    display: none;
-    padding: 2px 0 6px 0;
-    border-bottom: 1px solid #333;
-    margin-bottom: 4px;
-  }
-  body.light-mode .search-group-books { border-color: #ddd; }
-  .search-group-books.open { display: block; }
 
   /* Results list */
   .search-result {
@@ -3186,7 +3174,7 @@ function downloadAllForOffline() {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   SEARCH — two-level chart (plate groups → books), instant pre-filtering
+   SEARCH — two-section chart: plate groups → books (Literal Word style)
    ═══════════════════════════════════════════════════════════════════════ */
 (function() {
   var searchIndex = null;
@@ -3194,24 +3182,27 @@ function downloadAllForOffline() {
   var lastQuery = '';
   var lastHits = [];
   var lastBookCounts = [];
-  var activeGroup = -1;   // which plate group is expanded (-1 = none)
-  var activeBook = -1;    // which book is filtered to (-1 = all)
+  var activeGroup = -1;   // which plate group is selected (-1 = all)
+  var activeBook = -1;    // which book within group is selected (-1 = all in group)
 
-  // Book of Mormon plate groupings
+  // Book of Mormon plate groupings (book indices into searchIndex.books)
   var GROUPS = [
-    { name: 'Small Plates',  books: [0,1,2,3,4,5] },      // 1Ne,2Ne,Jac,Enos,Jar,Omni
-    { name: 'Words of Mormon', books: [6] },                // WoM
-    { name: 'Large Plates',  books: [7,8,9,10,11,12] },    // Mos,Alma,Hel,3Ne,4Ne,Morm
-    { name: 'Plates of Ether', books: [13] },               // Ether
-    { name: 'Moroni',        books: [14] },                  // Moroni
+    { name: 'Small Plates',    books: [0,1,2,3,4,5,6] },   // 1Ne–Omni + WoM
+    { name: 'Large Plates',    books: [7,8,9,10,11,12,13] },// Mos–Mormon + Ether
+    { name: 'Moroni',          books: [14] },                // Moroni
   ];
+
+  function clearCharts() {
+    document.getElementById('search-chart-groups').innerHTML = '';
+    document.getElementById('search-chart-books').innerHTML = '';
+  }
 
   window.openSearch = function() {
     var overlay = document.getElementById('search-overlay');
     var scrim = document.getElementById('search-scrim');
     document.getElementById('search-input').value = '';
     document.getElementById('search-count').textContent = '';
-    document.getElementById('search-chart').innerHTML = '';
+    clearCharts();
     document.getElementById('search-results').innerHTML = '';
     activeGroup = -1;
     activeBook = -1;
@@ -3253,7 +3244,7 @@ function downloadAllForOffline() {
         var q = input.value.trim();
         if (q.length < 2) {
           document.getElementById('search-count').textContent = '';
-          document.getElementById('search-chart').innerHTML = '';
+          clearCharts();
           document.getElementById('search-results').innerHTML = '';
           lastQuery = ''; lastHits = []; lastBookCounts = [];
           return;
@@ -3297,7 +3288,8 @@ function downloadAllForOffline() {
   function renderAll() {
     var filtered = getFilteredHits();
     renderCount(filtered.length, lastHits.length);
-    renderChart();
+    renderGroupChart();
+    renderBookChart();
     renderResults(filtered, lastQuery, 150);
   }
 
@@ -3311,51 +3303,47 @@ function downloadAllForOffline() {
     }
   }
 
-  function renderChart() {
-    var chart = document.getElementById('search-chart');
-    chart.innerHTML = '';
+  /* ── Section 1: Plate groups ── */
+  function renderGroupChart() {
+    var container = document.getElementById('search-chart-groups');
+    container.innerHTML = '';
     if (lastHits.length === 0) return;
 
-    // Compute group totals
     var groupCounts = GROUPS.map(function(g) {
-      var total = 0;
-      g.books.forEach(function(bi) { total += lastBookCounts[bi]; });
-      return total;
+      var t = 0; g.books.forEach(function(bi) { t += lastBookCounts[bi]; }); return t;
     });
-    var maxGroupCount = Math.max.apply(null, groupCounts);
+    var maxG = Math.max.apply(null, groupCounts);
 
     for (var gi = 0; gi < GROUPS.length; gi++) {
       if (groupCounts[gi] === 0) continue;
-      var g = GROUPS[gi];
+      var row = makeBarRow(GROUPS[gi].name, groupCounts[gi], maxG,
+        gi === activeGroup,
+        (function(idx) { return function() { toggleGroup(idx); }; })(gi));
+      container.appendChild(row);
+    }
+  }
 
-      var section = document.createElement('div');
-      section.className = 'search-group-section';
+  /* ── Section 2: Books within selected group ── */
+  function renderBookChart() {
+    var container = document.getElementById('search-chart-books');
+    container.innerHTML = '';
+    if (activeGroup < 0) return;  // no group selected → no book chart
 
-      // Group-level bar row
-      var row = makeBarRow(g.name, groupCounts[gi], maxGroupCount,
-        gi === activeGroup, function(idx) { return function() { toggleGroup(idx); }; }(gi));
-      section.appendChild(row);
+    var g = GROUPS[activeGroup];
+    if (g.books.length <= 1) return;  // single-book group, no need for sub-chart
 
-      // Sub-book rows (shown when this group is expanded)
-      if (gi === activeGroup && g.books.length > 1) {
-        var booksDiv = document.createElement('div');
-        booksDiv.className = 'search-group-books open';
-        var maxBookInGroup = 0;
-        g.books.forEach(function(bi) {
-          if (lastBookCounts[bi] > maxBookInGroup) maxBookInGroup = lastBookCounts[bi];
-        });
-        for (var j = 0; j < g.books.length; j++) {
-          var bi = g.books[j];
-          if (lastBookCounts[bi] === 0) continue;
-          var bookRow = makeBarRow(searchIndex.books[bi], lastBookCounts[bi], maxBookInGroup,
-            bi === activeBook, function(bIdx) { return function() { toggleBook(bIdx); }; }(bi));
-          bookRow.classList.add('sub-book');
-          booksDiv.appendChild(bookRow);
-        }
-        section.appendChild(booksDiv);
-      }
+    var maxB = 0;
+    g.books.forEach(function(bi) {
+      if (lastBookCounts[bi] > maxB) maxB = lastBookCounts[bi];
+    });
 
-      chart.appendChild(section);
+    for (var j = 0; j < g.books.length; j++) {
+      var bi = g.books[j];
+      if (lastBookCounts[bi] === 0) continue;
+      var row = makeBarRow(searchIndex.books[bi], lastBookCounts[bi], maxB,
+        bi === activeBook,
+        (function(bIdx) { return function() { toggleBook(bIdx); }; })(bi));
+      container.appendChild(row);
     }
   }
 
@@ -3388,11 +3376,10 @@ function downloadAllForOffline() {
 
   function toggleGroup(gi) {
     if (activeGroup === gi) {
-      // Collapse — show all
+      // Deselect group → show everything
       activeGroup = -1;
       activeBook = -1;
     } else {
-      // Expand this group, filter results to it
       activeGroup = gi;
       activeBook = -1;
     }
@@ -3401,8 +3388,7 @@ function downloadAllForOffline() {
 
   function toggleBook(bi) {
     if (activeBook === bi) {
-      // Deselect book, stay in group
-      activeBook = -1;
+      activeBook = -1;  // deselect, stay in group
     } else {
       activeBook = bi;
     }
@@ -3505,7 +3491,10 @@ function downloadAllForOffline() {
   </div>
   <div id="search-body">
     <div id="search-count"></div>
-    <div id="search-chart"></div>
+    <div id="search-chart">
+      <div id="search-chart-groups"></div>
+      <div id="search-chart-books"></div>
+    </div>
     <div id="search-results"></div>
   </div>
 </div>
