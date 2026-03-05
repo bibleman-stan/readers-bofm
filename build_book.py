@@ -1194,22 +1194,26 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
         parts.append(f'  <span class="line verse-diff">{diff_html}</span>')
 
     # Poetic / Hebrew Poetry layer (third text mode — hidden by default)
-    # Indent is derived from the label letter: A=0, B=1, C=2, ... (case-insensitive)
+    # parry_lines is now a list of structure groups, each with 'lines', 'type', 'is_last_verse'
     if parry_lines:
-        for pl in parry_lines:
-            label = pl.get('label', '')
-            text = pl.get('text', '')
-            # Derive indent from label letter: A=0, B=1, C+=2 (capped for mobile)
-            base_letter = label.rstrip("'").upper() if label else ''
-            indent = max(0, ord(base_letter) - ord('A')) if base_letter and base_letter.isalpha() else 0
-            indent = min(indent, 2)
-            label_html = f'<span class="parry-label">{label}</span>' if label else '<span class="parry-label-spacer"></span>'
-            parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{text}</span>')
-            # If this line ends a structure, add type annotation
-            if 'type_end' in pl and pl['type_end']:
-                parts.append(f'  <span class="line-parry parry-type-line">({pl["type_end"]})</span>')
+        for gi, group in enumerate(parry_lines):
+            # Add separator between structures within the same verse
+            if gi > 0:
+                parts.append('  <span class="line-parry parry-sep"></span>')
+            for pl in group['lines']:
+                label = pl.get('label', '')
+                text = pl.get('text', '')
+                # Derive indent from label letter: A=0, B=1, C+=2 (capped)
+                base_letter = label.rstrip("'").upper() if label else ''
+                indent = max(0, ord(base_letter) - ord('A')) if base_letter and base_letter.isalpha() else 0
+                indent = min(indent, 2)
+                label_html = f'<span class="parry-label">{label}</span>' if label else '<span class="parry-label-spacer"></span>'
+                parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{text}</span>')
+            # Show type annotation on the structure's last verse
+            if group.get('is_last_verse') and group.get('type'):
+                parts.append(f'  <span class="line-parry parry-type-line">({group["type"]})</span>')
     else:
-        # Fallback: show paragraph text when no Parry data exists for this verse
+        # Fallback: show paragraph text when no Parry data exists
         if para_html:
             parts.append(f'  <span class="line-parry">{para_html}</span>')
 
@@ -1444,23 +1448,25 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
     # Build parallel structure map for this chapter
     par_map = build_parallel_map(bid, ch_num, ch_verses)
 
-    # Build Parry per-verse map: verse_num → list of line dicts + type annotations
+    # Build Parry per-verse map: verse_num → list of structure groups
+    # Each group = { 'lines': [...], 'type': str, 'is_last_verse': bool }
     parry_structs = get_parry_structures(bid, ch_num)
-    parry_verse_map = {}  # verse_num → list of {label, indent, text, type_end}
+    parry_verse_map = {}  # verse_num → list of groups
     for s in parry_structs:
         ptype = s.get('type', '')
         ve = s.get('ve', 0)
+        # Group lines by verse
+        verse_lines = {}
         for line in s.get('lines', []):
             vn = line.get('v', 0)
-            entry = {
+            verse_lines.setdefault(vn, []).append({
                 'label': line.get('level', ''),
                 'indent': line.get('indent', 0),
                 'text': line.get('text', ''),
-            }
-            parry_verse_map.setdefault(vn, []).append(entry)
-        # Add type annotation marker on the last line of the structure's last verse
-        if ve in parry_verse_map and parry_verse_map[ve]:
-            parry_verse_map[ve][-1]['type_end'] = ptype
+            })
+        for vn, lines in verse_lines.items():
+            group = {'lines': lines, 'type': ptype, 'is_last_verse': (vn == ve)}
+            parry_verse_map.setdefault(vn, []).append(group)
 
     for v in ch_verses:
         # Check for pericope section header before this verse
