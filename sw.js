@@ -2,7 +2,7 @@
 // Strategy: cache app shell eagerly, cache books lazily (on first open),
 // with option to pre-cache all books at once via message from page.
 
-const CACHE_NAME = 'bomreader-v1';
+const CACHE_NAME = 'bomreader-v2';
 
 // App shell — cached on install
 const SHELL_ASSETS = [
@@ -56,20 +56,35 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Same-origin requests: cache-first, fallback to network (and cache the response)
+  // Same-origin: network-first for HTML (so updates come through), cache-first for everything else
   if (url.origin === self.location.origin) {
-    event.respondWith(
-      caches.match(event.request).then(cached => {
-        if (cached) return cached;
-        return fetch(event.request).then(response => {
+    const isHTML = url.pathname.endsWith('.html') || url.pathname === '/' || url.pathname.endsWith('/');
+    if (isHTML) {
+      // Network-first: try fresh copy, fall back to cache for offline
+      event.respondWith(
+        fetch(event.request).then(response => {
           if (response.ok) {
             const clone = response.clone();
             caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
           }
           return response;
-        });
-      })
-    );
+        }).catch(() => caches.match(event.request))
+      );
+    } else {
+      // Cache-first for non-HTML assets (fonts, data, images)
+      event.respondWith(
+        caches.match(event.request).then(cached => {
+          if (cached) return cached;
+          return fetch(event.request).then(response => {
+            if (response.ok) {
+              const clone = response.clone();
+              caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+            }
+            return response;
+          });
+        })
+      );
+    }
     return;
   }
 
@@ -98,6 +113,17 @@ self.addEventListener('message', event => {
         }
       }
       if (port) port.postMessage({ type: 'COMPLETE', cached: BOOK_URLS.length });
+    });
+  }
+
+  // Flush entire cache and reload fresh
+  if (event.data && event.data.type === 'FLUSH_CACHE') {
+    const port = event.ports[0];
+    caches.delete(CACHE_NAME).then(() => {
+      // Re-create cache with shell
+      return caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL_ASSETS));
+    }).then(() => {
+      if (port) port.postMessage({ type: 'FLUSH_COMPLETE' });
     });
   }
 

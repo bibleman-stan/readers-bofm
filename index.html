@@ -1502,20 +1502,20 @@
   }
   .search-bar-track {
     flex: 1;
-    height: 16px;
-    background: rgba(255,255,255,0.05);
+    height: 14px;
+    background: rgba(255,255,255,0.12);
     border-radius: 2px;
     overflow: hidden;
   }
-  body.light-mode .search-bar-track { background: rgba(0,0,0,0.06); }
+  body.light-mode .search-bar-track { background: rgba(0,0,0,0.10); }
   .search-bar-fill {
     height: 100%;
     background: #aaa;
     border-radius: 2px;
-    min-width: 3px;
+    min-width: 2px;
     transition: width 0.2s ease;
   }
-  body.light-mode .search-bar-fill { background: #999; }
+  body.light-mode .search-bar-fill { background: #888; }
   .search-bar-num {
     min-width: 36px;
     text-align: left;
@@ -1699,6 +1699,18 @@
     </div>
 
     <hr class="settings-divider">
+
+    <!-- Refresh / flush cache -->
+    <div class="toggle-row" style="margin-bottom:6px;">
+      <div class="toggle-desc">
+        <strong>Refresh content</strong><br>
+        <span style="font-size:0.85em;opacity:0.7;">Clear cached files and reload latest</span>
+      </div>
+      <button id="flush-btn" onclick="flushAndReload()" style="
+        background: #705050; color: #d4d0c8; border: none; border-radius: 12px;
+        padding: 6px 14px; font-size: 0.82em; cursor: pointer; white-space: nowrap;
+      ">Refresh</button>
+    </div>
 
     <!-- Offline download -->
     <div id="offline-section">
@@ -3196,6 +3208,29 @@ function downloadAllForOffline() {
     }
   };
   navigator.serviceWorker.controller.postMessage({ type: 'CACHE_ALL_BOOKS' }, [channel.port2]);
+}
+
+function flushAndReload() {
+  var btn = document.getElementById('flush-btn');
+  if (btn) { btn.textContent = 'Clearing...'; btn.disabled = true; }
+  if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+    var channel = new MessageChannel();
+    channel.port1.onmessage = function() {
+      window.location.reload(true);
+    };
+    navigator.serviceWorker.controller.postMessage({ type: 'FLUSH_CACHE' }, [channel.port2]);
+    // Fallback: reload after 2s even if SW doesn't respond
+    setTimeout(function() { window.location.reload(true); }, 2000);
+  } else {
+    // No SW — just clear caches directly and reload
+    if ('caches' in window) {
+      caches.keys().then(function(names) {
+        return Promise.all(names.map(function(n) { return caches.delete(n); }));
+      }).then(function() { window.location.reload(true); });
+    } else {
+      window.location.reload(true);
+    }
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
