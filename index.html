@@ -1415,28 +1415,33 @@
   }
   body.light-mode #search-count { color: #777; }
 
-  /* Bar chart */
+  /* Bar chart — two-level (groups → books) */
   #search-chart {
     margin-bottom: 18px;
+  }
+  .search-group-section {
+    margin-bottom: 6px;
   }
   .search-bar-row {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 3px 0;
+    padding: 4px 0;
     cursor: pointer;
     font-size: 0.88em;
   }
-  .search-bar-row:hover {
-    opacity: 0.85;
+  .search-bar-row:hover .search-bar-fill {
+    opacity: 0.8;
   }
   .search-bar-label {
-    width: 120px;
+    min-width: 110px;
+    width: 110px;
     text-align: right;
     color: #aaa;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    flex-shrink: 0;
   }
   body.light-mode .search-bar-label { color: #666; }
   .search-bar-row.active-filter .search-bar-label {
@@ -1448,22 +1453,45 @@
   }
   .search-bar-track {
     flex: 1;
-    height: 14px;
-    position: relative;
+    height: 16px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 2px;
+    overflow: hidden;
   }
+  body.light-mode .search-bar-track { background: rgba(0,0,0,0.05); }
   .search-bar-fill {
     height: 100%;
-    background: #7a7a7a;
+    background: #888;
     border-radius: 2px;
-    min-width: 2px;
+    min-width: 3px;
+    transition: width 0.2s ease;
   }
   .search-bar-num {
-    width: 36px;
+    min-width: 32px;
     text-align: left;
-    color: #888;
-    font-size: 0.92em;
+    color: #999;
+    font-size: 0.88em;
+    flex-shrink: 0;
   }
   body.light-mode .search-bar-num { color: #777; }
+  /* Sub-book rows (indented, slightly smaller) */
+  .search-bar-row.sub-book {
+    padding-left: 0;
+  }
+  .search-bar-row.sub-book .search-bar-label {
+    min-width: 110px;
+    width: 110px;
+    font-size: 0.95em;
+  }
+  /* Expanded group gets a subtle separator */
+  .search-group-books {
+    display: none;
+    padding: 2px 0 6px 0;
+    border-bottom: 1px solid #333;
+    margin-bottom: 4px;
+  }
+  body.light-mode .search-group-books { border-color: #ddd; }
+  .search-group-books.open { display: block; }
 
   /* Results list */
   .search-result {
@@ -3142,14 +3170,25 @@ function downloadAllForOffline() {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   SEARCH
+   SEARCH — two-level chart (plate groups → books), instant pre-filtering
    ═══════════════════════════════════════════════════════════════════════ */
 (function() {
-  var searchIndex = null;  // loaded lazily
+  var searchIndex = null;
   var searchTimer = null;
-  var activeBookFilter = -1;  // -1 = show all
   var lastQuery = '';
-  var lastHits = [];  // cached hit array for filtering
+  var lastHits = [];
+  var lastBookCounts = [];
+  var activeGroup = -1;   // which plate group is expanded (-1 = none)
+  var activeBook = -1;    // which book is filtered to (-1 = all)
+
+  // Book of Mormon plate groupings
+  var GROUPS = [
+    { name: 'Small Plates',  books: [0,1,2,3,4,5] },      // 1Ne,2Ne,Jac,Enos,Jar,Omni
+    { name: 'Words of Mormon', books: [6] },                // WoM
+    { name: 'Large Plates',  books: [7,8,9,10,11,12] },    // Mos,Alma,Hel,3Ne,4Ne,Morm
+    { name: 'Plates of Ether', books: [13] },               // Ether
+    { name: 'Moroni',        books: [14] },                  // Moroni
+  ];
 
   window.openSearch = function() {
     var overlay = document.getElementById('search-overlay');
@@ -3158,16 +3197,15 @@ function downloadAllForOffline() {
     document.getElementById('search-count').textContent = '';
     document.getElementById('search-chart').innerHTML = '';
     document.getElementById('search-results').innerHTML = '';
-    activeBookFilter = -1;
+    activeGroup = -1;
+    activeBook = -1;
     lastQuery = '';
     lastHits = [];
-    // Slide in
+    lastBookCounts = [];
     scrim.classList.add('open');
-    // Force reflow so transition fires
     overlay.offsetHeight;
     overlay.classList.add('open');
     setTimeout(function() { document.getElementById('search-input').focus(); }, 260);
-    // Load index if needed
     if (!searchIndex) {
       fetch('data/search_index.json')
         .then(function(r) { return r.json(); })
@@ -3179,18 +3217,17 @@ function downloadAllForOffline() {
   window.closeSearch = function() {
     document.getElementById('search-overlay').classList.remove('open');
     document.getElementById('search-scrim').classList.remove('open');
-    activeBookFilter = -1;
+    activeGroup = -1;
+    activeBook = -1;
     lastQuery = '';
   };
 
-  // Close on Escape
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && document.getElementById('search-overlay').classList.contains('open')) {
       closeSearch();
     }
   });
 
-  // Debounced input handler
   document.addEventListener('DOMContentLoaded', function() {
     var input = document.getElementById('search-input');
     if (!input) return;
@@ -3202,8 +3239,7 @@ function downloadAllForOffline() {
           document.getElementById('search-count').textContent = '';
           document.getElementById('search-chart').innerHTML = '';
           document.getElementById('search-results').innerHTML = '';
-          lastQuery = '';
-          lastHits = [];
+          lastQuery = ''; lastHits = []; lastBookCounts = [];
           return;
         }
         runSearch(q);
@@ -3214,11 +3250,11 @@ function downloadAllForOffline() {
   function runSearch(query) {
     if (!searchIndex) return;
     lastQuery = query;
-    activeBookFilter = -1;
+    activeGroup = -1;
+    activeBook = -1;
     var qLower = query.toLowerCase();
     var hits = [];
     var bookCounts = new Array(searchIndex.books.length).fill(0);
-
     for (var i = 0; i < searchIndex.verses.length; i++) {
       var v = searchIndex.verses[i];
       if (v.t.toLowerCase().indexOf(qLower) !== -1) {
@@ -3227,17 +3263,31 @@ function downloadAllForOffline() {
       }
     }
     lastHits = hits;
-    renderChart(bookCounts, hits.length);
-    renderCount(hits.length, hits.length);
-    renderResults(hits, query, 100);
+    lastBookCounts = bookCounts;
+    renderAll();
+  }
+
+  function getFilteredHits() {
+    if (activeBook >= 0) {
+      return lastHits.filter(function(v) { return v.b === activeBook; });
+    }
+    if (activeGroup >= 0) {
+      var gBooks = GROUPS[activeGroup].books;
+      return lastHits.filter(function(v) { return gBooks.indexOf(v.b) !== -1; });
+    }
+    return lastHits;
+  }
+
+  function renderAll() {
+    var filtered = getFilteredHits();
+    renderCount(filtered.length, lastHits.length);
+    renderChart();
+    renderResults(filtered, lastQuery, 150);
   }
 
   function renderCount(showing, total) {
     var el = document.getElementById('search-count');
-    if (total === 0) {
-      el.textContent = '';
-      return;
-    }
+    if (total === 0) { el.textContent = ''; return; }
     if (showing === total) {
       el.textContent = total + ' verse' + (total !== 1 ? 's' : '') + ' found. Tap chart to filter.';
     } else {
@@ -3245,82 +3295,111 @@ function downloadAllForOffline() {
     }
   }
 
-  function renderChart(bookCounts, totalHits) {
+  function renderChart() {
     var chart = document.getElementById('search-chart');
     chart.innerHTML = '';
-    if (totalHits === 0) return;
-    var maxCount = Math.max.apply(null, bookCounts);
+    if (lastHits.length === 0) return;
 
-    for (var i = 0; i < searchIndex.books.length; i++) {
-      if (bookCounts[i] === 0) continue;
-      var row = document.createElement('div');
-      row.className = 'search-bar-row';
-      row.setAttribute('data-book-idx', i);
+    // Compute group totals
+    var groupCounts = GROUPS.map(function(g) {
+      var total = 0;
+      g.books.forEach(function(bi) { total += lastBookCounts[bi]; });
+      return total;
+    });
+    var maxGroupCount = Math.max.apply(null, groupCounts);
 
-      var label = document.createElement('span');
-      label.className = 'search-bar-label';
-      label.textContent = searchIndex.books[i];
+    for (var gi = 0; gi < GROUPS.length; gi++) {
+      if (groupCounts[gi] === 0) continue;
+      var g = GROUPS[gi];
 
-      var track = document.createElement('span');
-      track.className = 'search-bar-track';
-      var fill = document.createElement('span');
-      fill.className = 'search-bar-fill';
-      fill.style.width = Math.max(2, Math.round((bookCounts[i] / maxCount) * 100)) + '%';
-      track.appendChild(fill);
+      var section = document.createElement('div');
+      section.className = 'search-group-section';
 
-      var num = document.createElement('span');
-      num.className = 'search-bar-num';
-      num.textContent = bookCounts[i];
+      // Group-level bar row
+      var row = makeBarRow(g.name, groupCounts[gi], maxGroupCount,
+        gi === activeGroup, function(idx) { return function() { toggleGroup(idx); }; }(gi));
+      section.appendChild(row);
 
-      row.appendChild(label);
-      row.appendChild(track);
-      row.appendChild(num);
+      // Sub-book rows (shown when this group is expanded)
+      if (gi === activeGroup && g.books.length > 1) {
+        var booksDiv = document.createElement('div');
+        booksDiv.className = 'search-group-books open';
+        var maxBookInGroup = 0;
+        g.books.forEach(function(bi) {
+          if (lastBookCounts[bi] > maxBookInGroup) maxBookInGroup = lastBookCounts[bi];
+        });
+        for (var j = 0; j < g.books.length; j++) {
+          var bi = g.books[j];
+          if (lastBookCounts[bi] === 0) continue;
+          var bookRow = makeBarRow(searchIndex.books[bi], lastBookCounts[bi], maxBookInGroup,
+            bi === activeBook, function(bIdx) { return function() { toggleBook(bIdx); }; }(bi));
+          bookRow.classList.add('sub-book');
+          booksDiv.appendChild(bookRow);
+        }
+        section.appendChild(booksDiv);
+      }
 
-      (function(bookIdx) {
-        row.addEventListener('click', function() { filterByBook(bookIdx); });
-      })(i);
-
-      chart.appendChild(row);
+      chart.appendChild(section);
     }
   }
 
-  function filterByBook(bookIdx) {
-    if (activeBookFilter === bookIdx) {
-      // Deselect — show all
-      activeBookFilter = -1;
-      var allRows = document.querySelectorAll('.search-bar-row');
-      allRows.forEach(function(r) { r.classList.remove('active-filter'); });
-      renderCount(lastHits.length, lastHits.length);
-      renderResults(lastHits, lastQuery, 100);
-      return;
+  function makeBarRow(label, count, maxCount, isActive, clickFn) {
+    var row = document.createElement('div');
+    row.className = 'search-bar-row' + (isActive ? ' active-filter' : '');
+
+    var lbl = document.createElement('span');
+    lbl.className = 'search-bar-label';
+    lbl.textContent = label;
+
+    var track = document.createElement('span');
+    track.className = 'search-bar-track';
+    var fill = document.createElement('span');
+    fill.className = 'search-bar-fill';
+    var pct = maxCount > 0 ? Math.max(3, Math.round((count / maxCount) * 100)) : 0;
+    fill.style.width = pct + '%';
+    track.appendChild(fill);
+
+    var num = document.createElement('span');
+    num.className = 'search-bar-num';
+    num.textContent = count;
+
+    row.appendChild(lbl);
+    row.appendChild(track);
+    row.appendChild(num);
+    row.addEventListener('click', clickFn);
+    return row;
+  }
+
+  function toggleGroup(gi) {
+    if (activeGroup === gi) {
+      // Collapse — show all
+      activeGroup = -1;
+      activeBook = -1;
+    } else {
+      // Expand this group, filter results to it
+      activeGroup = gi;
+      activeBook = -1;
     }
-    activeBookFilter = bookIdx;
+    renderAll();
+  }
 
-    // Highlight the active row
-    var allRows = document.querySelectorAll('.search-bar-row');
-    allRows.forEach(function(r) {
-      if (parseInt(r.getAttribute('data-book-idx')) === bookIdx) {
-        r.classList.add('active-filter');
-      } else {
-        r.classList.remove('active-filter');
-      }
-    });
-
-    // Filter hits
-    var filtered = lastHits.filter(function(v) { return v.b === bookIdx; });
-    renderCount(filtered.length, lastHits.length);
-    renderResults(filtered, lastQuery, 200);
+  function toggleBook(bi) {
+    if (activeBook === bi) {
+      // Deselect book, stay in group
+      activeBook = -1;
+    } else {
+      activeBook = bi;
+    }
+    renderAll();
   }
 
   function renderResults(hits, query, limit) {
     var container = document.getElementById('search-results');
     container.innerHTML = '';
-
     if (hits.length === 0) {
       container.innerHTML = '<div id="search-no-results">No results found</div>';
       return;
     }
-
     var shown = Math.min(hits.length, limit);
     for (var i = 0; i < shown; i++) {
       var v = hits[i];
@@ -3348,18 +3427,15 @@ function downloadAllForOffline() {
       card.appendChild(textDiv);
 
       (function(bid, ch, vs) {
-        card.addEventListener('click', function() {
-          navigateToVerse(bid, ch, vs);
-        });
+        card.addEventListener('click', function() { navigateToVerse(bid, ch, vs); });
       })(bookId, v.c, v.v);
 
       container.appendChild(card);
     }
-
     if (hits.length > limit) {
       var more = document.createElement('div');
       more.style.cssText = 'color:#666; text-align:center; padding:20px 0; font-size:0.9em;';
-      more.textContent = (hits.length - limit) + ' more results...';
+      more.textContent = (hits.length - limit) + ' more results\u2026';
       container.appendChild(more);
     }
   }
@@ -3368,7 +3444,6 @@ function downloadAllForOffline() {
     if (!query) return escapeHtml(text);
     var escaped = escapeHtml(text);
     var qEscaped = escapeHtml(query);
-    // Case-insensitive highlight
     var re = new RegExp('(' + qEscaped.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
     return escaped.replace(re, '<span class="search-highlight">$1</span>');
   }
@@ -3381,10 +3456,8 @@ function downloadAllForOffline() {
 
   function navigateToVerse(bookId, chapter, verse) {
     closeSearch();
-    // Use existing switchBook / showChapter, then scroll to verse
     if (typeof switchBook === 'function') {
       switchBook(bookId, chapter);
-      // Wait for book load + chapter render, then scroll to verse
       setTimeout(function() {
         var verseRef = chapter + ':' + verse;
         var allVerses = document.querySelectorAll('#book-' + bookId + ' .verse-num');
@@ -3393,7 +3466,6 @@ function downloadAllForOffline() {
             var verseDiv = allVerses[i].closest('.verse');
             if (verseDiv) {
               verseDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              // Brief highlight flash
               verseDiv.style.transition = 'background 0.3s';
               verseDiv.style.background = 'rgba(124,175,194,0.15)';
               setTimeout(function() { verseDiv.style.background = ''; }, 2000);
