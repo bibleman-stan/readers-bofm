@@ -1201,12 +1201,11 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
     # parry_lines is a v2 entry: {"v": N, "lines": [{label, text}], "types": [...]}
     #
     # Indent rules:
-    #   Uppercase A-Z: indent = letter position (A=0, B=1, ...), capped at MAX_INDENT
-    #   Lowercase a-z: indent = last_uppercase_indent + letter_pos + 1 (capped)
-    #   All labels are shown (even deep ones like F-K in Alma 36's chiasm);
-    #   only the visual indent is capped to prevent excessive nesting.
+    #   Uppercase A-E: indent = letter position (A=0, B=1, C=2, D=3, E=4)
+    #   Uppercase beyond E (F,G,H...): hidden (shown as plain unlabeled text)
+    #   Lowercase a-z: always shown; indent = last_uppercase_indent + letter_pos + 1
     #   Unlabeled continuation lines: indent 0
-    MAX_INDENT = 4  # visual cap
+    MAX_INDENT = 4  # E
     if parry_lines:
         plines = parry_lines.get('lines', [])
         ptypes = parry_lines.get('types', [])
@@ -1219,12 +1218,17 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 base_char = raw_label.rstrip("'")[0] if raw_label.rstrip("'") else ''
                 letter_pos = ord(base_char.upper()) - ord('A') if base_char.isalpha() else 0
 
-                if base_char.isupper():
-                    indent = min(letter_pos, MAX_INDENT)
+                if letter_pos > MAX_INDENT and base_char.isupper():
+                    # Deep uppercase label (F,G,H...) — hide label, show as plain text
+                    label_html = '<span class="parry-label-spacer"></span>'
+                    indent = 0
+                    last_upper_indent = MAX_INDENT
+                elif base_char.isupper():
+                    indent = letter_pos
                     last_upper_indent = indent
                     label_html = f'<span class="parry-label">{raw_label}</span>'
                 else:
-                    # Lowercase sub-structure: nest under preceding uppercase
+                    # Lowercase sub-structure: always shown
                     indent = min(last_upper_indent + letter_pos + 1, MAX_INDENT)
                     label_html = f'<span class="parry-label">{raw_label}</span>'
             else:
