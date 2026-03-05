@@ -44,24 +44,18 @@ FILE_TO_BOOKID = {
     '15-moroni': 'moroni',
 }
 
-# Known type annotations that appear inline in parentheses
-TYPE_WORDS = [
-    'chiasmus', 'synonymous', 'antithetical', 'synthetic', 'alternate',
-    'regular repetition', 'random repetition', 'simple synonymous',
-    'simple alternate', 'simple antithetical', 'simple synthetic',
-    'many ands', 'climactic', 'extended alternating', 'extended alternate',
-    'contrast', 'progression', 'like sentence beginnings',
-    'repeated alternating', 'repeated alternate',
-]
-
-# Build regex for type annotations
-TYPE_PATTERN = re.compile(
-    r'\s*\((' + '|'.join(re.escape(t) for t in sorted(TYPE_WORDS, key=len, reverse=True)) + r')\)',
-    re.IGNORECASE
-)
+# Type annotation pattern: parenthesized text at end of line containing only
+# lowercase words (no proper nouns, no verse content). Examples:
+#   (chiasmus)  (simple alternate)  (contrasting ideas)  (extended alternate)
+# We match any parenthesized phrase at the end that is all-lowercase and
+# consists of 1-4 words, which distinguishes type labels from verse content
+# like "(see Alma 5:3)" or "(for he has been faithful)".
+TYPE_PATTERN = re.compile(r'\s*\(([a-z][a-z ]{0,40})\)\s*$')
 
 # Verse number pattern: line starts with optional space + number + tab
-VERSE_RE = re.compile(r'^\s*(\d+)\t')
+# Verse numbers appear with only spaces before them (never tabs).
+# Structure sub-numbers like "1", "2", "3" appear with leading tabs.
+VERSE_RE = re.compile(r'^[ ]*(\d+)\t')
 
 # Chapter header pattern
 CHAPTER_RE = re.compile(r'^Chapter\s+', re.IGNORECASE)
@@ -77,11 +71,11 @@ def extract_types(text):
     # Normalize non-breaking spaces to regular spaces
     text = text.replace('\xa0', ' ')
     types = []
-    def collect(m):
-        types.append(m.group(1).lower())
-        return ''
-    cleaned = TYPE_PATTERN.sub(collect, text)
-    return cleaned.strip(), types
+    m = TYPE_PATTERN.search(text)
+    if m:
+        types.append(m.group(1).strip())
+        text = text[:m.start()].strip()
+    return text, types
 
 
 def count_leading_tabs(line):
@@ -117,11 +111,16 @@ def parse_line(line):
     remaining = raw
     labels_found = []
 
-    # Scan for label patterns: sequences of tabs + letter + tab
+    # Scan for label patterns: sequences of tabs + letter (or number) + tab
+    # Letters (A, B, a, b, etc.) are Parry's structural labels
+    # Numbers (1, 2, 3) are sub-level markers within a verse
     while True:
-        m = re.match(r'^(\t*)([A-Za-z]\'?)\t', remaining)
+        m = re.match(r'^(\t*)([A-Za-z]\'?|\d+)\t', remaining)
         if m:
-            labels_found.append(m.group(2))
+            lbl = m.group(2)
+            # Only keep letter labels; skip numeric sub-markers
+            if not lbl.isdigit():
+                labels_found.append(lbl)
             remaining = remaining[m.end():]
         else:
             break
@@ -132,7 +131,9 @@ def parse_line(line):
         text = remaining.strip()
     else:
         label = ''
-        text = raw.strip()
+        # Use remaining (after stripping any consumed numeric sub-labels),
+        # not raw (which still has the tab+digit+tab prefix)
+        text = remaining.strip()
 
     # Strip type annotations from text
     text, types = extract_types(text)

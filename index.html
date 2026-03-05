@@ -1422,8 +1422,8 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 12px 16px;
+    gap: 8px;
+    padding: 8px 14px;
     background: #2a2a2a;
     border-bottom: 1px solid #444;
   }
@@ -1442,8 +1442,8 @@
     outline: none;
     color: #d4d0c8;
     font-family: 'Literata', Georgia, serif;
-    font-size: 1.15em;
-    padding: 4px 0;
+    font-size: 1.05em;
+    padding: 2px 0;
   }
   body.light-mode #search-input { color: #3a3630; }
   #search-input::placeholder { color: #666; }
@@ -1476,10 +1476,10 @@
   .search-bar-row {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 4px 0;
+    gap: 6px;
+    padding: 3px 0;
     cursor: pointer;
-    font-size: 0.88em;
+    font-size: 0.82em;
   }
   .search-bar-row:hover .search-bar-fill {
     opacity: 0.8;
@@ -1504,7 +1504,7 @@
   }
   .search-bar-track {
     flex: 1;
-    height: 14px;
+    height: 10px;
     background: rgba(255,255,255,0.12);
     border-radius: 2px;
     overflow: hidden;
@@ -3260,6 +3260,9 @@ function flushAndReload() {
     document.getElementById('search-chart-books').innerHTML = '';
   }
 
+  /* ── Stem index for smart search ── */
+  var stemIndex = null;  // stem → [word forms]
+
   window.openSearch = function() {
     var overlay = document.getElementById('search-overlay');
     var scrim = document.getElementById('search-scrim');
@@ -3281,6 +3284,12 @@ function flushAndReload() {
         .then(function(r) { return r.json(); })
         .then(function(data) { searchIndex = data; })
         .catch(function(e) { console.error('Search index load failed', e); });
+    }
+    if (!stemIndex) {
+      fetch('data/stem_index.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { stemIndex = data; })
+        .catch(function(e) { console.error('Stem index load failed', e); });
     }
   };
 
@@ -3317,17 +3326,142 @@ function flushAndReload() {
     });
   });
 
+  /* ── Minimal Porter stemmer (JS) for query-time stem lookup ── */
+  var porterStem = (function() {
+    function cons(w, i) {
+      if ('aeiou'.indexOf(w[i]) >= 0) return false;
+      if (w[i] === 'y') return i === 0 || !cons(w, i - 1);
+      return true;
+    }
+    function m(w, j) {
+      var n = 0, i = 0, len = j + 1;
+      while (i < len && cons(w, i)) i++;
+      while (i < len) {
+        while (i < len && !cons(w, i)) i++;
+        if (i >= len) break;
+        n++;
+        while (i < len && cons(w, i)) i++;
+      }
+      return n;
+    }
+    function vowelInStem(w, j) {
+      for (var i = 0; i <= j; i++) if (!cons(w, i)) return true;
+      return false;
+    }
+    function doublec(w, j) {
+      return j >= 1 && w[j] === w[j-1] && cons(w, j);
+    }
+    function cvc(w, j) {
+      if (j < 2 || !cons(w,j) || cons(w,j-1) || !cons(w,j-2)) return false;
+      return 'wxy'.indexOf(w[j]) < 0;
+    }
+    return function(word) {
+      word = word.toLowerCase();
+      if (word.length <= 2) return word;
+      // Step 1a
+      if (word.slice(-4) === 'sses') word = word.slice(0,-2);
+      else if (word.slice(-3) === 'ies') word = word.slice(0,-2);
+      else if (word.slice(-2) !== 'ss' && word.slice(-1) === 's') word = word.slice(0,-1);
+      // Step 1b
+      var flag = false;
+      if (word.slice(-3) === 'eed') {
+        if (m(word, word.length-4) > 0) word = word.slice(0,-1);
+      } else if (word.slice(-2) === 'ed' && vowelInStem(word, word.length-3)) {
+        word = word.slice(0,-2); flag = true;
+      } else if (word.slice(-3) === 'ing' && vowelInStem(word, word.length-4)) {
+        word = word.slice(0,-3); flag = true;
+      }
+      if (flag) {
+        if (word.slice(-2)==='at'||word.slice(-2)==='bl'||word.slice(-2)==='iz') word+='e';
+        else if (word.length>=2 && doublec(word,word.length-1) && 'lsz'.indexOf(word.slice(-1))<0) word=word.slice(0,-1);
+        else if (m(word,word.length-1)===1 && cvc(word,word.length-1)) word+='e';
+      }
+      // Step 1c
+      if (word.slice(-1)==='y' && vowelInStem(word, word.length-2)) word=word.slice(0,-1)+'i';
+      // Step 2
+      var s2 = {ational:'ate',tional:'tion',enci:'ence',anci:'ance',izer:'ize',abli:'able',alli:'al',entli:'ent',eli:'e',ousli:'ous',ization:'ize',ation:'ate',ator:'ate',alism:'al',iveness:'ive',fulness:'ful',ousness:'ous',aliti:'al',iviti:'ive',biliti:'ble'};
+      var s2k = Object.keys(s2).sort(function(a,b){return b.length-a.length;});
+      for (var i=0;i<s2k.length;i++){var sf=s2k[i];if(word.slice(-sf.length)===sf){var st=word.slice(0,-sf.length);if(m(word,word.length-sf.length-1)>0)word=st+s2[sf];break;}}
+      // Step 3
+      var s3={icate:'ic',ative:'',alize:'al',iciti:'ic',ical:'ic',ful:'',ness:''};
+      var s3k=Object.keys(s3).sort(function(a,b){return b.length-a.length;});
+      for(var i=0;i<s3k.length;i++){var sf=s3k[i];if(word.slice(-sf.length)===sf){var st=word.slice(0,-sf.length);if(m(word,word.length-sf.length-1)>0)word=st+s3[sf];break;}}
+      // Step 4
+      var s4=['ement','ment','ance','ence','able','ible','ant','ent','ion','ism','ate','iti','ous','ive','ize','al','er','ic','ou'];
+      for(var i=0;i<s4.length;i++){var sf=s4[i];if(word.slice(-sf.length)===sf){var st=word.slice(0,-sf.length);if(m(word,word.length-sf.length-1)>1){if(sf==='ion'&&st.length>0&&'st'.indexOf(st.slice(-1))>=0)word=st;else if(sf!=='ion')word=st;}break;}}
+      // Step 5a
+      if(word.slice(-1)==='e'){var st=word.slice(0,-1);var mv=m(word,word.length-2);if(mv>1||(mv===1&&!cvc(word,word.length-2)))word=st;}
+      // Step 5b
+      if(m(word,word.length-1)>1&&doublec(word,word.length-1)&&word.slice(-1)==='l')word=word.slice(0,-1);
+      return word;
+    };
+  })();
+
+  /* Expand a query word to all its stem-related forms found in BOM text */
+  function expandStemForms(word) {
+    if (!stemIndex) return [word.toLowerCase()];
+    var stem = porterStem(word);
+    // Check stem index for this stem
+    if (stemIndex[stem]) return stemIndex[stem];
+    // Also check if the word itself is in any group (manual groups use a canonical key)
+    var wLower = word.toLowerCase();
+    for (var key in stemIndex) {
+      if (stemIndex[key].indexOf(wLower) >= 0) return stemIndex[key];
+    }
+    // Fallback: just the word itself
+    return [wLower];
+  }
+
+  var lastSearchForms = [];  // the expanded word forms for highlighting
+
   function runSearch(query) {
     if (!searchIndex) return;
     lastQuery = query;
     activeGroup = -1;
     activeBook = -1;
-    var qLower = query.toLowerCase();
+
+    // Detect "quoted" exact search vs smart stem search
+    var isExact = /^".*"$/.test(query.trim());
+    var searchTerms;
+
+    if (isExact) {
+      // Exact substring match (strip quotes)
+      var exact = query.trim().replace(/^"|"$/g, '').toLowerCase();
+      searchTerms = [exact];
+      lastSearchForms = [exact];
+    } else {
+      // Smart stem-expanded search: split into words, expand each
+      var words = query.trim().toLowerCase().split(/\s+/);
+      if (words.length === 1) {
+        // Single word: expand via stem
+        var forms = expandStemForms(words[0]);
+        searchTerms = forms;
+        lastSearchForms = forms;
+      } else {
+        // Multi-word: treat as exact phrase (like current behavior)
+        searchTerms = [query.trim().toLowerCase()];
+        lastSearchForms = [query.trim().toLowerCase()];
+      }
+    }
+
     var hits = [];
     var bookCounts = new Array(searchIndex.books.length).fill(0);
     for (var i = 0; i < searchIndex.verses.length; i++) {
       var v = searchIndex.verses[i];
-      if (v.t.toLowerCase().indexOf(qLower) !== -1) {
+      var tLower = v.t.toLowerCase();
+      var matched = false;
+      for (var j = 0; j < searchTerms.length; j++) {
+        // Word-boundary match: ensure the term is a whole word (not substring)
+        // For single words, use word-boundary regex; for phrases, use indexOf
+        if (!isExact && searchTerms.length > 1 || (searchTerms[0].indexOf(' ') >= 0)) {
+          if (tLower.indexOf(searchTerms[j]) !== -1) { matched = true; break; }
+        } else {
+          // Use word-boundary matching for single-word stem forms
+          var wbRe = new RegExp('\\b' + searchTerms[j].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+          if (wbRe.test(v.t)) { matched = true; break; }
+        }
+      }
+      if (matched) {
         hits.push(v);
         bookCounts[v.b]++;
       }
@@ -3358,12 +3492,18 @@ function flushAndReload() {
 
   function renderCount(showing, total) {
     var el = document.getElementById('search-count');
-    if (total === 0) { el.textContent = ''; return; }
+    if (total === 0) { el.innerHTML = ''; return; }
+    var countHtml;
     if (showing === total) {
-      el.textContent = total + ' verse' + (total !== 1 ? 's' : '') + ' found. Tap chart to filter.';
+      countHtml = total + ' verse' + (total !== 1 ? 's' : '') + ' found. Tap chart to filter.';
     } else {
-      el.textContent = 'Showing ' + showing + ' of ' + total + ' verses.';
+      countHtml = 'Showing ' + showing + ' of ' + total + ' verses.';
     }
+    // Show matched forms if stem-expanded (more than 1 form)
+    if (lastSearchForms.length > 1) {
+      countHtml += '<br><span style="font-size:0.85em;opacity:0.7">Matching: ' + lastSearchForms.join(', ') + '</span>';
+    }
+    el.innerHTML = countHtml;
   }
 
   /* ── Section 1: Plate groups ── */
@@ -3508,8 +3648,20 @@ function flushAndReload() {
   function highlightText(text, query) {
     if (!query) return escapeHtml(text);
     var escaped = escapeHtml(text);
-    var qEscaped = escapeHtml(query);
-    var re = new RegExp('(' + qEscaped.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    // Build regex from all matched forms (stem-expanded or exact)
+    var forms = lastSearchForms.length > 0 ? lastSearchForms : [query.toLowerCase()];
+    var patterns = forms.map(function(f) {
+      return escapeHtml(f).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    });
+    // For single-word forms, use word boundaries; for phrases, plain match
+    var isPhrase = forms.some(function(f) { return f.indexOf(' ') >= 0; });
+    var reStr;
+    if (isPhrase) {
+      reStr = '(' + patterns.join('|') + ')';
+    } else {
+      reStr = '\\b(' + patterns.join('|') + ')\\b';
+    }
+    var re = new RegExp(reStr, 'gi');
     return escaped.replace(re, '<span class="search-highlight">$1</span>');
   }
 
