@@ -874,44 +874,44 @@
   body.show-parallels [data-parallel-level^="E"]::before { left: 6.6em; }
   body.light-mode.show-parallels [data-parallel-level]::before { opacity: 0.8; }
 
-  /* === PARRY HEBREW POETRY (third text view mode) === */
+  /* === POETIC / HEBREW POETRY (third text view mode) === */
   .line-parry {
     display: none;
-    padding-left: var(--wrap-indent);
-    text-indent: calc(var(--wrap-indent) * -1);
+    line-height: 1.5;
+    margin: 0.1em 0;
   }
-  /* When "Parry" toggle is active: show parry lines, hide paragraphs + sense-lines */
+  /* When "Poetic" toggle is active: show poetic lines, hide paragraphs + sense-lines */
   body.show-parry .line-para { display: none; }
   body.show-parry .line { display: none !important; }
   body.show-parry .line-parry { display: block; }
-  /* Indentation levels */
-  .parry-indent-0 { padding-left: 2em; text-indent: -2em; }
-  .parry-indent-1 { padding-left: 3.5em; text-indent: -2em; }
-  .parry-indent-2 { padding-left: 5em; text-indent: -2em; }
-  .parry-indent-3 { padding-left: 6.5em; text-indent: -2em; }
-  .parry-indent-4 { padding-left: 8em; text-indent: -2em; }
-  .parry-indent-5 { padding-left: 9.5em; text-indent: -2em; }
+  /* Indentation — compact scale for mobile friendliness */
+  .parry-indent-0 { margin-left: 0; }
+  .parry-indent-1 { margin-left: 1.2em; }
+  .parry-indent-2 { margin-left: 2.4em; }
+  .parry-indent-3 { margin-left: 3.6em; }
+  .parry-indent-4 { margin-left: 4.8em; }
+  .parry-indent-5 { margin-left: 6em; }
+  .parry-indent-6 { margin-left: 7.2em; }
   .parry-label {
-    font-weight: 700;
+    font-weight: 600;
     font-style: italic;
     font-family: Literata, Georgia, serif;
     color: #5eadad;
-    margin-right: 0.5em;
-    min-width: 1.4em;
-    display: inline-block;
-    text-indent: 0;
+    margin-right: 0.35em;
+    min-width: 1em;
+    display: inline;
   }
   .parry-label-spacer {
-    min-width: 1.4em;
-    margin-right: 0.5em;
+    min-width: 1em;
+    margin-right: 0.35em;
     display: inline-block;
   }
   .parry-type-line {
-    font-size: 0.82em;
+    font-size: 0.8em;
     font-style: italic;
-    opacity: 0.55;
-    padding-left: 2em;
-    text-indent: 0;
+    opacity: 0.5;
+    margin-left: 0;
+    margin-top: 0.15em;
   }
   /* Light mode */
   body.light-mode .parry-label { color: #4a9999; }
@@ -2379,7 +2379,7 @@
     var pill = document.getElementById('lines-pill');
     if (pill) {
       pill.classList.toggle('active-lines', mode > 0);
-      pill.textContent = mode === 0 ? 'Lines' : mode === 1 ? 'Lines' : 'Parry';
+      pill.textContent = mode === 0 ? 'Lines' : mode === 1 ? 'Lines' : 'Poetic';
     }
   }
   window.toggleLines = function() {
