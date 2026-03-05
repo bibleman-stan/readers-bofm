@@ -1201,11 +1201,12 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
     # parry_lines is a v2 entry: {"v": N, "lines": [{label, text}], "types": [...]}
     #
     # Indent rules:
-    #   Uppercase A-E: indent = letter position (A=0, B=1, C=2, D=3, E=4)
-    #   Lowercase a-e: indent = last_uppercase_indent + letter_pos + 1 (capped at 4)
-    #   Labels beyond E/e (F,G,H... or f,g,h...): stripped to plain unlabeled text
+    #   Uppercase A-Z: indent = letter position (A=0, B=1, ...), capped at MAX_INDENT
+    #   Lowercase a-z: indent = last_uppercase_indent + letter_pos + 1 (capped)
+    #   All labels are shown (even deep ones like F-K in Alma 36's chiasm);
+    #   only the visual indent is capped to prevent excessive nesting.
     #   Unlabeled continuation lines: indent 0
-    MAX_INDENT = 4  # E
+    MAX_INDENT = 4  # visual cap
     if parry_lines:
         plines = parry_lines.get('lines', [])
         ptypes = parry_lines.get('types', [])
@@ -1218,12 +1219,8 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 base_char = raw_label.rstrip("'")[0] if raw_label.rstrip("'") else ''
                 letter_pos = ord(base_char.upper()) - ord('A') if base_char.isalpha() else 0
 
-                if letter_pos > MAX_INDENT:
-                    # Too deep — show as plain unlabeled text
-                    label_html = '<span class="parry-label-spacer"></span>'
-                    indent = 0
-                elif base_char.isupper():
-                    indent = letter_pos
+                if base_char.isupper():
+                    indent = min(letter_pos, MAX_INDENT)
                     last_upper_indent = indent
                     label_html = f'<span class="parry-label">{raw_label}</span>'
                 else:
@@ -1235,9 +1232,8 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 indent = 0
 
             parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{text}</span>')
-        if ptypes:
-            type_str = ', '.join(ptypes)
-            parts.append(f'  <span class="line-parry parry-type-line">({type_str})</span>')
+        # Type annotations (chiasmus, simple alternate, etc.) are no longer
+        # rendered visibly — they are metadata only, not displayed to the reader.
     else:
         # Fallback: show paragraph text when no Parry data exists
         if para_html:

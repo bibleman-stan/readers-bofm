@@ -52,6 +52,19 @@ FILE_TO_BOOKID = {
 # like "(see Alma 5:3)" or "(for he has been faithful)".
 TYPE_PATTERN = re.compile(r'\s*\(([a-z][a-z ]{0,40})\)\s*$')
 
+# Known Parry type annotation terms that can appear INLINE (mid-text).
+# These must be stripped from the text but NOT confused with actual scripture
+# parentheticals like "(for they were all of them very young)".
+KNOWN_INLINE_TYPES = {
+    'chiasmus', 'simple alternate', 'extended alternate', 'simple synonymous',
+    'antithetical', 'contrasting ideas', 'many ands', 'detailing',
+    'regular repetition', 'repeated alternate', 'synonymous words',
+    'random repetition', 'repetition of words', 'progression', 'duplication',
+    'gradation', 'synthetic', 'chiasmus and progression', 'chiasmus and numbers',
+}
+# Pattern to find any parenthesized annotation anywhere in text
+INLINE_TYPE_PATTERN = re.compile(r'\s*\(([a-z][a-z ]{0,40})\)')
+
 # Verse number pattern: line starts with optional space + number + tab
 # Verse numbers appear with only spaces before them (never tabs).
 # Structure sub-numbers like "1", "2", "3" appear with leading tabs.
@@ -67,14 +80,34 @@ LABEL_RE = re.compile(r'^(\t+)([A-Za-z]\'?)\t')
 
 
 def extract_types(text):
-    """Extract type annotations from text, return (cleaned_text, [types])."""
+    """Extract type annotations from text, return (cleaned_text, [types]).
+
+    Strips both end-of-line type annotations AND known inline annotations
+    that appear mid-text (like '(duplication)' or '(random repetition)').
+    """
     # Normalize non-breaking spaces to regular spaces
     text = text.replace('\xa0', ' ')
     types = []
+
+    # 1) Strip end-of-line type annotation first
     m = TYPE_PATTERN.search(text)
     if m:
         types.append(m.group(1).strip())
         text = text[:m.start()].strip()
+
+    # 2) Strip known inline type annotations from anywhere in the text
+    def _replace_inline(match):
+        term = match.group(1).strip()
+        if term in KNOWN_INLINE_TYPES:
+            types.append(term)
+            return ''  # remove from text
+        return match.group(0)  # keep — it's actual scripture
+
+    text = INLINE_TYPE_PATTERN.sub(_replace_inline, text)
+
+    # Clean up any double spaces left behind
+    text = re.sub(r'  +', ' ', text).strip()
+
     return text, types
 
 
