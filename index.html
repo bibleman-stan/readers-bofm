@@ -884,9 +884,12 @@
   body.show-parry .line-para { display: none; }
   body.show-parry .line { display: none !important; }
   body.show-parry .line-parry { display: block; }
-  /* Indentation — uppercase labels (A,B,C…)=0, lowercase (a,b,c…)=1 */
+  /* Indentation — A=0, B=1, C=2, D=3, E=4; lowercase nests under parent */
   .parry-indent-0 { margin-left: 0; }
-  .parry-indent-1 { margin-left: 1.5em; }
+  .parry-indent-1 { margin-left: 1.2em; }
+  .parry-indent-2 { margin-left: 2.4em; }
+  .parry-indent-3 { margin-left: 3.6em; }
+  .parry-indent-4 { margin-left: 4.8em; }
   .parry-label {
     font-weight: 600;
     font-style: italic;
@@ -3253,11 +3256,22 @@ function flushAndReload() {
   var activeGroup = -1;   // which plate group is selected (-1 = all)
   var activeBook = -1;    // which book within group is selected (-1 = all in group)
 
-  // Book of Mormon plate groupings (book indices into searchIndex.books)
+  // Book of Mormon plate groupings
+  // Each group has a match(v) function that tests if a search verse belongs to it.
+  // Mormon splits at ch 8: chs 1-7 = Large Plates (Mormon's narrative),
+  // ch 8+ = Moroni's Addendum (Moroni finishes his father's record).
+  // book indices: 0-6=Small Plates, 7=Mosiah, 8=Alma, 9=Helaman,
+  //   10=3Nephi, 11=4Nephi, 12=Mormon, 13=Ether, 14=Moroni
   var GROUPS = [
-    { name: 'Small Plates',    books: [0,1,2,3,4,5,6] },   // 1Ne–Omni + WoM
-    { name: 'Large Plates',    books: [7,8,9,10,11,12,13] },// Mos–Mormon + Ether
-    { name: 'Moroni',          books: [14] },                // Moroni
+    { name: 'Small Plates',
+      books: [0,1,2,3,4,5,6],
+      match: function(v) { return v.b <= 6; } },
+    { name: 'Large Plates',
+      books: [7,8,9,10,11,12],
+      match: function(v) { return v.b >= 7 && v.b <= 11 || (v.b === 12 && v.c <= 7); } },
+    { name: "Moroni's Writings",
+      books: [12,13,14],
+      match: function(v) { return (v.b === 12 && v.c >= 8) || v.b === 13 || v.b === 14; } },
   ];
 
   function clearCharts() {
@@ -3477,12 +3491,17 @@ function flushAndReload() {
   }
 
   function getFilteredHits() {
+    if (activeBook >= 0 && activeGroup >= 0) {
+      // Filter by both book AND group (needed for Mormon chapter split)
+      var matchFn = GROUPS[activeGroup].match;
+      return lastHits.filter(function(v) { return v.b === activeBook && matchFn(v); });
+    }
     if (activeBook >= 0) {
       return lastHits.filter(function(v) { return v.b === activeBook; });
     }
     if (activeGroup >= 0) {
-      var gBooks = GROUPS[activeGroup].books;
-      return lastHits.filter(function(v) { return gBooks.indexOf(v.b) !== -1; });
+      var matchFn = GROUPS[activeGroup].match;
+      return lastHits.filter(matchFn);
     }
     return lastHits;
   }
@@ -3518,7 +3537,11 @@ function flushAndReload() {
     if (lastHits.length === 0) return;
 
     var groupCounts = GROUPS.map(function(g) {
-      var t = 0; g.books.forEach(function(bi) { t += lastBookCounts[bi]; }); return t;
+      var t = 0;
+      for (var i = 0; i < lastHits.length; i++) {
+        if (g.match(lastHits[i])) t++;
+      }
+      return t;
     });
     var maxG = Math.max.apply(null, groupCounts);
 
@@ -3540,15 +3563,31 @@ function flushAndReload() {
     var g = GROUPS[activeGroup];
     if (g.books.length <= 1) return;  // single-book group, no need for sub-chart
 
+    // Count per-book hits that match this group's filter
+    // (needed because Mormon is split between Large Plates and Moroni's Writings)
+    var groupBookCounts = {};
+    for (var i = 0; i < lastHits.length; i++) {
+      var v = lastHits[i];
+      if (g.match(v)) {
+        groupBookCounts[v.b] = (groupBookCounts[v.b] || 0) + 1;
+      }
+    }
+
     var maxB = 0;
     g.books.forEach(function(bi) {
-      if (lastBookCounts[bi] > maxB) maxB = lastBookCounts[bi];
+      var c = groupBookCounts[bi] || 0;
+      if (c > maxB) maxB = c;
     });
 
     for (var j = 0; j < g.books.length; j++) {
       var bi = g.books[j];
-      if (lastBookCounts[bi] === 0) continue;
-      var row = makeBarRow(searchIndex.books[bi], lastBookCounts[bi], maxB,
+      var cnt = groupBookCounts[bi] || 0;
+      if (cnt === 0) continue;
+      var bookLabel = searchIndex.books[bi];
+      // Annotate Mormon with chapter range when it's split
+      if (bi === 12 && g.name === 'Large Plates') bookLabel = 'Mormon 1\u20137';
+      if (bi === 12 && g.name !== 'Large Plates') bookLabel = 'Mormon 8\u20139';
+      var row = makeBarRow(bookLabel, cnt, maxB,
         bi === activeBook,
         (function(bIdx) { return function() { toggleBook(bIdx); }; })(bi));
       container.appendChild(row);

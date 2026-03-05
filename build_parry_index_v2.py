@@ -138,16 +138,9 @@ def parse_line(line):
     # Strip type annotations from text
     text, types = extract_types(text)
 
-    # Derive indent from label: uppercase=0 (primary), lowercase=1 (secondary)
-    # The label letter itself communicates chiastic depth; indent is just
-    # primary vs secondary visual grouping.
-    if label:
-        base_char = label.rstrip("'")[0] if label.rstrip("'") else ''
-        indent = 1 if base_char.islower() else 0
-    else:
-        indent = 0
-
-    return {'label': label, 'text': text, 'indent': indent, 'types': types}
+    # Store raw label — indent calculation happens at HTML render time
+    # in build_book.py where we can track context (preceding uppercase level).
+    return {'label': label, 'text': text, 'indent': 0, 'types': types}
 
 
 def parse_book(filepath):

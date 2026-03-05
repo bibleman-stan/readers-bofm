@@ -332,6 +332,53 @@ def build_stem_map(words):
         for form in forms:
             manual_word_to_key[form] = key
 
+    # Words that are NOT archaic verb forms despite ending in -eth/-est
+    NOT_ARCHAIC_ETH = {
+        'nazareth', 'teeth', 'beneath', 'seth', 'ieth',  # ordinals
+        'eightieth', 'fiftieth', 'fortieth', 'ninetieth', 'sixtieth',
+        'thirtieth', 'twentieth',
+    }
+    NOT_ARCHAIC_EST = {
+        'forest', 'harvest', 'honest', 'interest', 'manifest', 'priest',
+        'request', 'tempest', 'molest', 'infest', 'arrest', 'protest',
+        'wrest', 'eldest', 'greatest', 'smallest', 'strongest', 'weakest',
+        'youngest', 'poorest', 'longest', 'fastest', 'darkest', 'chiefest',
+        'grossest', 'vilest', 'clearest',
+    }
+
+    def strip_archaic(w):
+        """Strip KJV-era -eth/-est suffixes to find base verb.
+        Returns base form or None if not an archaic form."""
+        if w.endswith('eth') and len(w) > 4 and w not in NOT_ARCHAIC_ETH:
+            base = w[:-3]
+            # Handle cases like 'cometh' → 'come' (add silent e)
+            # and 'liveth' → 'live'
+            if base + 'e' in words:
+                return base + 'e'
+            if base in words:
+                return base
+            # Handle 'ieth' → 'y' (e.g. 'crieth' → 'cry', 'prophesieth' → 'prophesy')
+            if base.endswith('i'):
+                ybase = base[:-1] + 'y'
+                if ybase in words:
+                    return ybase
+            return base  # best guess
+        if w.endswith('est') and len(w) > 4 and w not in NOT_ARCHAIC_EST:
+            base = w[:-3]
+            if base + 'e' in words:
+                return base + 'e'
+            if base in words:
+                return base
+            if base.endswith('i'):
+                ybase = base[:-1] + 'y'
+                if ybase in words:
+                    return ybase
+            # Handle 'sawest' → 'saw', 'knewest' → 'knew'
+            if base + 'st' in words:
+                return None  # e.g. 'knewest' — handled by manual groups
+            return base
+        return None
+
     # First pass: stem all words
     for w in words:
         if w in manual_word_to_key:
@@ -340,6 +387,22 @@ def build_stem_map(words):
         else:
             stem = stemmer.stem(w)
             stem_groups[stem].add(w)
+
+    # Second pass: resolve archaic -eth/-est forms
+    # Group them with their base word's stem group
+    for w in words:
+        if w in manual_word_to_key:
+            continue  # already handled
+        base = strip_archaic(w)
+        if base:
+            # Find the stem group that contains the base word
+            base_stem = stemmer.stem(base)
+            if base in manual_word_to_key:
+                base_stem = manual_word_to_key[base]
+            # Add the archaic form to the base's group
+            stem_groups[base_stem].add(w)
+            if base in words:
+                stem_groups[base_stem].add(base)
 
     # Merge: for manual groups, ensure the manual key's stem group exists
     # and add any stemmer-derived matches

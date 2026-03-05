@@ -1198,15 +1198,42 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
         parts.append(f'  <span class="line verse-diff">{diff_html}</span>')
 
     # Poetic / Hebrew Poetry layer (third text mode — hidden by default)
-    # parry_lines is now a v2 entry: {"v": N, "lines": [{label, text, indent}], "types": [...]}
+    # parry_lines is a v2 entry: {"v": N, "lines": [{label, text}], "types": [...]}
+    #
+    # Indent rules:
+    #   Uppercase A-E: indent = letter position (A=0, B=1, C=2, D=3, E=4)
+    #   Lowercase a-e: indent = last_uppercase_indent + letter_pos + 1 (capped at 4)
+    #   Labels beyond E/e (F,G,H... or f,g,h...): stripped to plain unlabeled text
+    #   Unlabeled continuation lines: indent 0
+    MAX_INDENT = 4  # E
     if parry_lines:
         plines = parry_lines.get('lines', [])
         ptypes = parry_lines.get('types', [])
+        last_upper_indent = 0
         for pl in plines:
-            label = pl.get('label', '')
+            raw_label = pl.get('label', '')
             text = pl.get('text', '')
-            indent = pl.get('indent', 0)
-            label_html = f'<span class="parry-label">{label}</span>' if label else '<span class="parry-label-spacer"></span>'
+
+            if raw_label:
+                base_char = raw_label.rstrip("'")[0] if raw_label.rstrip("'") else ''
+                letter_pos = ord(base_char.upper()) - ord('A') if base_char.isalpha() else 0
+
+                if letter_pos > MAX_INDENT:
+                    # Too deep — show as plain unlabeled text
+                    label_html = '<span class="parry-label-spacer"></span>'
+                    indent = 0
+                elif base_char.isupper():
+                    indent = letter_pos
+                    last_upper_indent = indent
+                    label_html = f'<span class="parry-label">{raw_label}</span>'
+                else:
+                    # Lowercase sub-structure: nest under preceding uppercase
+                    indent = min(last_upper_indent + letter_pos + 1, MAX_INDENT)
+                    label_html = f'<span class="parry-label">{raw_label}</span>'
+            else:
+                label_html = '<span class="parry-label-spacer"></span>'
+                indent = 0
+
             parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{text}</span>')
         if ptypes:
             type_str = ', '.join(ptypes)
