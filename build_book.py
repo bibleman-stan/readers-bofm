@@ -1099,7 +1099,75 @@ def apply_phrase_highlights(line_text, phrases, css_class):
 # HTML GENERATION — outputs standalone book fragments
 # ============================================================================
 
-def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=None):
+def find_deep_structure_verses(parry_verse_map):
+    """Identify verses belonging to structures that go deeper than E.
+
+    Groups labeled verses into structures (separated by gaps of unlabeled verses
+    or label resets back to A). If any structure contains an uppercase label
+    beyond E (i.e. F-K), ALL verses in that structure are marked as "deep"
+    and their uppercase labels should be hidden entirely.
+
+    Returns a set of verse numbers whose uppercase labels should be suppressed.
+    """
+    MAX_LABEL = 4  # E = ord('E') - ord('A')
+
+    if not parry_verse_map:
+        return set()
+
+    # Collect (verse_num, max_uppercase_letter_pos) for labeled verses
+    labeled_verses = []
+    for vnum in sorted(parry_verse_map.keys()):
+        entry = parry_verse_map[vnum]
+        uppercase_labels = []
+        for line in entry.get('lines', []):
+            lbl = line.get('label', '')
+            if lbl and lbl[0].isupper():
+                pos = ord(lbl.rstrip("'")[0]) - ord('A')
+                uppercase_labels.append(pos)
+        if uppercase_labels:
+            labeled_verses.append((vnum, max(uppercase_labels)))
+
+    if not labeled_verses:
+        return set()
+
+    # Group into structures: a new structure starts when we see A (pos=0)
+    # after a gap or after seeing the sequence descend back to A.
+    structures = []  # list of [(vnum, max_pos), ...]
+    current_group = [labeled_verses[0]]
+
+    for i in range(1, len(labeled_verses)):
+        vnum, max_pos = labeled_verses[i]
+        prev_vnum, prev_max = labeled_verses[i - 1]
+
+        # Heuristic: new structure if label resets to A after gap of 2+ unlabeled verses
+        # or if we see A again after the structure has already descended back to A
+        gap = vnum - prev_vnum
+        has_A = max_pos == 0
+
+        # Check if current group already contains the full mirror (went up and came back)
+        group_positions = [p for _, p in current_group]
+        peaked = len(group_positions) > 2 and group_positions[-1] <= 1
+
+        if has_A and (gap > 2 or peaked):
+            structures.append(current_group)
+            current_group = [(vnum, max_pos)]
+        else:
+            current_group.append((vnum, max_pos))
+
+    structures.append(current_group)
+
+    # Mark all verses in deep structures
+    deep_verses = set()
+    for group in structures:
+        max_depth = max(p for _, p in group)
+        if max_depth > MAX_LABEL:
+            for vnum, _ in group:
+                deep_verses.add(vnum)
+
+    return deep_verses
+
+
+def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=None, deep_structure_verses=None):
     ref = verse['ref']
     processed = [process_line(l, swap_list) for l in verse['lines']]
 
@@ -1201,11 +1269,17 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
     # parry_lines is a v2 entry: {"v": N, "lines": [{label, text}], "types": [...]}
     #
     # Indent rules:
+    #   If this verse belongs to a deep structure (one that goes beyond E),
+    #   ALL uppercase labels in that structure are hidden. Only lowercase
+    #   sub-structures (a-b, a-b-c) are shown within deep structures.
+    #
+    #   For non-deep structures:
     #   Uppercase A-E: indent = letter position (A=0, B=1, C=2, D=3, E=4)
-    #   Uppercase beyond E (F,G,H...): hidden (shown as plain unlabeled text)
-    #   Lowercase a-z: always shown; indent = last_uppercase_indent + letter_pos + 1
+    #   Lowercase a-z: indent = last_uppercase_indent + letter_pos + 1
     #   Unlabeled continuation lines: indent 0
     MAX_INDENT = 4  # E
+    verse_num = verse.get('verse', 0)
+    in_deep_structure = deep_structure_verses and verse_num in deep_structure_verses
     if parry_lines:
         plines = parry_lines.get('lines', [])
         ptypes = parry_lines.get('types', [])
@@ -1218,8 +1292,12 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 base_char = raw_label.rstrip("'")[0] if raw_label.rstrip("'") else ''
                 letter_pos = ord(base_char.upper()) - ord('A') if base_char.isalpha() else 0
 
-                if letter_pos > MAX_INDENT and base_char.isupper():
-                    # Deep uppercase label (F,G,H...) — hide label, show as plain text
+                if base_char.isupper() and in_deep_structure:
+                    # Verse belongs to a deep structure — hide ALL uppercase labels
+                    label_html = '<span class="parry-label-spacer"></span>'
+                    indent = 0
+                elif base_char.isupper() and letter_pos > MAX_INDENT:
+                    # Standalone deep label outside detected structure — hide
                     label_html = '<span class="parry-label-spacer"></span>'
                     indent = 0
                     last_upper_indent = MAX_INDENT
@@ -1476,6 +1554,7 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
 
     # Build Parry per-verse map from v2 index (verse_num → entry with lines + types)
     parry_verse_map = get_parry_verses(bid, ch_num)
+    deep_verset = find_deep_structure_verses(parry_verse_map)
 
     for v in ch_verses:
         # Check for pericope section header before this verse
@@ -1483,7 +1562,8 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
         if pericope_title:
             p.append(format_pericope_header(pericope_title))
         p.append(gen_verse(v, swap_list, book_id=bid, parallel_map=par_map,
-                           parry_lines=parry_verse_map.get(v['verse'])))
+                           parry_lines=parry_verse_map.get(v['verse']),
+                           deep_structure_verses=deep_verset))
         p.append('')
     p.append('</div>')
     return '\n'.join(p)
