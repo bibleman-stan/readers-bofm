@@ -125,10 +125,11 @@ def count_leading_tabs(line):
 def parse_line(line):
     """Parse a single line from the Parry file.
 
-    Returns dict: {label, text, indent, types}
-    - label: the letter label (e.g. 'A', 'b', "C'") or '' for unlabeled
+    Returns dict: {label, labels_all, text, indent, types}
+    - label: the INNERMOST letter label (closest to the text), used for display
+    - labels_all: ALL letter labels found on this line, outer→inner order
     - text: the text content with type annotations stripped
-    - indent: visual indent level (0, 1, or 2 based on label letter)
+    - indent: visual indent level (computed later in build_book.py)
     - types: list of type annotations found on this line
     """
     # Strip trailing whitespace
@@ -138,9 +139,11 @@ def parse_line(line):
 
     # Check if this line has labels
     # Labels appear as tab-indented letters followed by tab
-    # There can be multiple labels (nested structures) — we want the outermost
-    # e.g. "\t\tC\t\t\tA\tAnd now I, Nephi..."
-    # Parse all labels and take the first (outermost structure)
+    # There can be multiple labels (nested/overlapping structures):
+    #   e.g. "\t\tC\t\t\tA\tAnd now I, Nephi..."
+    #   → outer label C, inner label A
+    # We capture ALL labels and use the LAST (innermost) for display,
+    # since it represents the most specific structural role of this text.
     remaining = raw
     labels_found = []
 
@@ -159,8 +162,8 @@ def parse_line(line):
             break
 
     if labels_found:
-        # Use the first label (outermost structure)
-        label = labels_found[0]
+        # Use the LAST label (innermost structure) for display
+        label = labels_found[-1]
         text = remaining.strip()
     else:
         label = ''
@@ -173,7 +176,11 @@ def parse_line(line):
 
     # Store raw label — indent calculation happens at HTML render time
     # in build_book.py where we can track context (preceding uppercase level).
-    return {'label': label, 'text': text, 'indent': 0, 'types': types}
+    result = {'label': label, 'text': text, 'indent': 0, 'types': types}
+    # Include all labels when there are overlapping structures
+    if len(labels_found) > 1:
+        result['labels_all'] = labels_found
+    return result
 
 
 def parse_book(filepath):
