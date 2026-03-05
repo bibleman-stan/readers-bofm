@@ -1199,10 +1199,10 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
         for pl in parry_lines:
             label = pl.get('label', '')
             text = pl.get('text', '')
-            # Derive indent from label letter (A/a=0, B/b=1, etc.)
+            # Derive indent from label letter: A=0, B=1, C+=2 (capped for mobile)
             base_letter = label.rstrip("'").upper() if label else ''
             indent = max(0, ord(base_letter) - ord('A')) if base_letter and base_letter.isalpha() else 0
-            indent = min(indent, 6)
+            indent = min(indent, 2)
             label_html = f'<span class="parry-label">{label}</span>' if label else '<span class="parry-label-spacer"></span>'
             parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{text}</span>')
             # If this line ends a structure, add type annotation
