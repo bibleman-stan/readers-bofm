@@ -10,8 +10,7 @@
   :root {
     --line-height: 2.35;
     --wrap-indent: 0.75em;
-    --verse-gap: 2px;
-    --verse-num-display: none;
+    --verse-gap: 6px;
     --punct-opacity: 0;
     --font-size: 17px;
     --letter-spacing: 0em;
@@ -171,7 +170,7 @@
     color: #7cb8e4;
   }
 
-  .pill-btn.active-verses {
+  .pill-btn.active-lines {
     border-color: #c9a368;
     color: #c9a368;
   }
@@ -496,14 +495,28 @@
     color: #666;
     margin-right: 3px;
     vertical-align: super;
-    display: var(--verse-num-display);
+    display: inline;
   }
 
+  /* ── Paragraph layer (default: visible) ── */
+  .line-para {
+    display: inline;
+  }
+
+  /* ── Sense-line layer (default: hidden) ── */
   .line {
-    display: block;
+    display: none;
     margin-left: 0;
     padding-left: var(--wrap-indent);
     text-indent: calc(var(--wrap-indent) * -1);
+  }
+
+  /* When "Lines" toggle is active: show sense-lines, hide paragraphs */
+  body.show-lines .line-para {
+    display: none;
+  }
+  body.show-lines .line {
+    display: block;
   }
 
   .punct {
@@ -653,7 +666,7 @@
     color: #4a7a9e !important;
   }
 
-  body.light-mode .pill-btn.active-verses {
+  body.light-mode .pill-btn.active-lines {
     border-color: #8a7340 !important;
     color: #8a7340 !important;
   }
@@ -1370,7 +1383,7 @@
   <div class="settings-panel" id="settings-panel">
     <!-- Toggles -->
     <div class="toggle-row">
-      <div class="toggle-desc"><strong>Continuous flow</strong><br>Hide verse numbers</div>
+      <div class="toggle-desc"><strong>Paragraph mode</strong><br>Standard verse text (sense-lines off)</div>
       <label class="toggle-switch">
         <input type="checkbox" id="flow-toggle" checked onchange="toggleFlow(this.checked)">
         <span class="toggle-track"></span>
@@ -1471,7 +1484,7 @@
   <!-- Controls row — pill buttons -->
   <div class="controls-row">
     <button class="pill-btn" id="aid-pill" onclick="toggleAid()">Aid</button>
-    <button class="pill-btn" id="verses-pill" onclick="toggleVerses()">Verses</button>
+    <button class="pill-btn" id="lines-pill" onclick="toggleLines()">Lines</button>
     <button class="pill-btn" id="sections-pill" onclick="toggleSections()">Sections</button>
     <button class="pill-btn" id="layers-pill" onclick="toggleLayers()">Layers <span style="font-size:0.7em;opacity:0.6;margin-left:1px;">▾</span></button>
     <button id="gear-btn" class="gear-btn" onclick="toggleSettings()" aria-label="Display settings" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px;">
@@ -2108,18 +2121,13 @@
     }
   };
 
-  // ---- VERSES TOGGLE (show/hide verse numbers) ----
-  var versesOn = false;
-  window.toggleVerses = function() {
-    versesOn = !versesOn;
-    // Toggle the CSS variable that controls verse number display
-    document.documentElement.style.setProperty('--verse-num-display', versesOn ? 'inline' : 'none');
-    // Also sync the settings panel checkbox
-    var flowToggle = document.getElementById('flow-toggle');
-    if (flowToggle) flowToggle.checked = !versesOn;
-    // Update pill state
-    var pill = document.getElementById('verses-pill');
-    if (pill) pill.classList.toggle('active-verses', versesOn);
+  // ---- LINES TOGGLE (show/hide sense-line formatting) ----
+  var linesOn = false;
+  window.toggleLines = function() {
+    linesOn = !linesOn;
+    document.body.classList.toggle('show-lines', linesOn);
+    var pill = document.getElementById('lines-pill');
+    if (pill) pill.classList.toggle('active-lines', linesOn);
   };
 
   // ---- SETTINGS FUNCTIONS ----
@@ -2130,12 +2138,11 @@
 
   window.toggleFlow = function(on) {
     tabOverrides[currentTab].flow = on;
-    root.style.setProperty('--verse-num-display', on ? 'none' : 'inline');
-    root.style.setProperty('--verse-gap', on ? '2px' : '12px');
-    // Sync the verses pill
-    versesOn = !on;
-    var pill = document.getElementById('verses-pill');
-    if (pill) pill.classList.toggle('active-verses', versesOn);
+    // Flow on = paragraph mode (lines off), Flow off = sense-line mode (lines on)
+    linesOn = !on;
+    document.body.classList.toggle('show-lines', linesOn);
+    var pill = document.getElementById('lines-pill');
+    if (pill) pill.classList.toggle('active-lines', linesOn);
   };
 
   window.togglePunct = function(on) {
@@ -2203,8 +2210,11 @@
     var size    = getSetting(tab, 'size');
     var density = getSetting(tab, 'density');
 
-    root.style.setProperty('--verse-num-display', flow ? 'none' : 'inline');
-    root.style.setProperty('--verse-gap', flow ? '2px' : '12px');
+    // flow=true means paragraph mode (lines off); flow=false means sense-line mode (lines on)
+    linesOn = !flow;
+    document.body.classList.toggle('show-lines', linesOn);
+    var linesPill = document.getElementById('lines-pill');
+    if (linesPill) linesPill.classList.toggle('active-lines', linesOn);
     root.style.setProperty('--punct-opacity', punct ? '0' : '1');
     document.body.classList.toggle('hide-punct', punct);
     root.style.setProperty('--wrap-indent', wrap ? '0.75em' : '0em');
@@ -2753,7 +2763,7 @@
 
     // Check if the click was on a pill/button that toggles a panel
     // (those handlers manage their own open/close logic)
-    var toggleIds = ['layers-pill', 'sections-pill', 'about-pill', 'gear-btn', 'aid-pill', 'verses-pill'];
+    var toggleIds = ['layers-pill', 'sections-pill', 'about-pill', 'gear-btn', 'aid-pill', 'lines-pill'];
     var clickedToggle = toggleIds.some(function(id) {
       var el = document.getElementById(id);
       return el && (el === e.target || el.contains(e.target));

@@ -16,6 +16,7 @@ These drop directly into the modular shell's books/ folder.
 """
 
 import re, sys, os, json
+from pathlib import Path
 
 # ============================================================================
 # SWAP LEXICON — Single source of truth for all archaic word modernization
@@ -67,7 +68,23 @@ COMPOUND_SWAPS = [
     ("none other object save it be", "no other purpose except"),
     ("inasmuch as", "to the degree that"), ("Inasmuch as", "To the degree that"),
     ("things of naught", "worthless things"), ("thing of naught", "worthless thing"),
-    ("set at naught", "disregarded"), ("setteth at naught", "disregards"),
+    ("set at naught", "treated with contempt"), ("setteth at naught", "treats with contempt"),
+    # ── Participle fixes: have/has/had + archaic past → correct past participle ──
+    ("hast beheld", "have seen"), ("hath beheld", "has seen"),
+    ("had beheld", "had seen"), ("have beheld", "have seen"),
+    ("has beheld", "has seen"),  # post-hath swap
+    ("never have beheld", "never have seen"), ("never had beheld", "never had seen"),
+    ("hast spake", "have spoken"), ("hath spake", "has spoken"),
+    ("had spake", "had spoken"), ("have spake", "have spoken"),
+    ("hast spoken", "have spoken"),  # hast→have participle fix
+    # ── yea, even → indeed, even (emphatic, not affirmative) ──
+    ("yea, even", "indeed, even"), ("Yea, even", "Indeed, even"),
+    ("yea even", "indeed even"), ("Yea even", "Indeed even"),
+    # ── lest that → for fear that (avoid double 'that') ──
+    ("lest that", "for fear that"),
+    # ── wicked + abomination collision ──
+    ("wicked abominations", "wicked practices"),
+    ("wicked abomination", "wicked practice"),
     ("hither and thither", "this way and that"),
     ("an account", "a record"), ("in fine", "in other words"), ("lust after", "desire"),
     ("save two churches only", "only two churches"), ("save a few only", "only a few"),
@@ -98,15 +115,17 @@ COMPOUND_SWAPS = [
     ("bowels are filled with compassion", "heart is filled with compassion"),
     ("bowels are filled with mercy", "heart is filled with mercy"),
     ("bowels may be filled with mercy", "heart may be filled with mercy"),
-    ("offspring of thy bowels", "offspring of thy body"),
+    ("offspring of thy bowels", "offspring of your body"),
     ("bowels of my mother", "womb of my mother"),
     # Loins — figurative (lineage) vs literal (waist)
     ("fruit of my loins", "fruit of my lineage"),
-    ("fruit of thy loins", "fruit of thy lineage"),
+    ("fruit of thy loins", "fruit of your lineage"),
     ("fruit of his loins", "fruit of his lineage"),
     ("fruit of the loins", "fruit of the lineage"),
-    ("seed of thy loins", "seed of thy lineage"),
-    ("spokesman of thy loins", "spokesman of thy lineage"),
+    ("seed of thy loins", "seed of your lineage"),
+    ("spokesman of thy loins", "spokesman of your lineage"),
+    # ── Pronoun collision: "unto thee ye" → "to you, you" (insert comma) ──
+    ("unto thee ye", "to you, you"),
     ("about my loins", "about my waist"),
     ("about his loins", "about his waist"),
     ("about their loins", "about their waist"),
@@ -568,11 +587,33 @@ def apply_swaps(text, swap_list):
     return result
 
 def fix_participles(text):
-    # Fix "had saw" → "had seen", "have spoke" → "have spoken", etc.
-    # Use a tighter window that doesn't cross clause boundaries (no ; or . between)
-    for wrong, right in [('saw','seen'),('spoke','spoken'),('broke','broken')]:
-        text = re.sub(r'(\bhad\b[^;.]{0,30}?)data-mod="'+re.escape(wrong)+'"', r'\1data-mod="'+right+'"', text)
-        text = re.sub(r'(\bhave\b[^;.]{0,30}?)data-mod="'+re.escape(wrong)+'"', r'\1data-mod="'+right+'"', text)
+    """Fix past tense → past participle after have/has/had auxiliaries."""
+    PARTICIPLE_MAP = [
+        ('saw', 'seen'), ('spoke', 'spoken'), ('broke', 'broken'),
+        ('gave', 'given'), ('took', 'taken'), ('wrote', 'written'),
+        ('drove', 'driven'), ('chose', 'chosen'), ('rose', 'risen'),
+        ('fell', 'fallen'), ('grew', 'grown'), ('knew', 'known'),
+        ('threw', 'thrown'), ('drew', 'drawn'), ('swore', 'sworn'),
+        ('tore', 'torn'), ('wore', 'worn'), ('froze', 'frozen'),
+        ('stole', 'stolen'), ('shrank', 'shrunk'), ('drank', 'drunk'),
+        ('began', 'begun'), ('sang', 'sung'), ('ran', 'run'),
+        ('went', 'gone'),
+    ]
+    for wrong, right in PARTICIPLE_MAP:
+        # Match have/has/had within a clause window (no ; or . between)
+        # Window of 50 chars to catch adverbs like "never", "also", "not yet"
+        for aux in ('had', 'have', 'has'):
+            text = re.sub(
+                r'(\b' + aux + r'\b[^;.]{0,50}?)data-mod="' + re.escape(wrong) + '"',
+                r'\1data-mod="' + right + '"', text)
+    return text
+
+def fix_articles(text):
+    """Fix 'an' → 'a' before consonant sounds introduced by swaps (e.g. 'an very')."""
+    # Match: an <span...data-mod="[consonant-starting]"...>
+    def _fix_an(m):
+        return 'a' + m.group(0)[2:]  # replace 'an' with 'a'
+    text = re.sub(r'\ban\s+(<span class="swap"[^>]*data-mod="[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ])', _fix_an, text)
     return text
 
 def wrap_punctuation(text):
@@ -591,7 +632,56 @@ def wrap_punctuation(text):
     return ''.join(result)
 
 def process_line(line, swap_list):
-    return wrap_punctuation(fix_participles(apply_swaps(line, swap_list)))
+    return wrap_punctuation(fix_articles(fix_participles(apply_swaps(line, swap_list))))
+
+# ============================================================================
+# V0 PARAGRAPH TEXT — original verse paragraphs for base-layer display
+# ============================================================================
+
+V0_DIR = Path(__file__).resolve().parent / 'text-files' / 'v0-bofm-original'
+
+# Map book display names → v0 filenames
+V0_FILE_MAP = {
+    '1 Nephi': '1_Nephi.txt', '2 Nephi': '2_Nephi.txt',
+    '3 Nephi': '3_Nephi.txt', '4 Nephi': '4_Nephi.txt',
+    'Jacob': 'Jacob.txt', 'Enos': 'Enos.txt', 'Jarom': 'Jarom.txt',
+    'Omni': 'Omni.txt', 'Words of Mormon': 'Words_of_Mormon.txt',
+    'Mosiah': 'Mosiah.txt', 'Alma': 'Alma.txt', 'Helaman': 'Helaman.txt',
+    'Mormon': 'Mormon.txt', 'Ether': 'Ether.txt', 'Moroni': 'Moroni.txt',
+}
+
+_v0_cache = {}
+
+def load_v0_paragraphs(book_name):
+    """Load v0 original text, return dict of {chapter:verse_num: paragraph_text}."""
+    if book_name in _v0_cache:
+        return _v0_cache[book_name]
+    fname = V0_FILE_MAP.get(book_name)
+    if not fname:
+        _v0_cache[book_name] = {}
+        return {}
+    fpath = V0_DIR / fname
+    if not fpath.exists():
+        _v0_cache[book_name] = {}
+        return {}
+    result = {}
+    with open(fpath, 'r', encoding='utf-8') as f:
+        text = f.read()
+    for block in text.strip().split('\n\n'):
+        lines = block.strip().split('\n')
+        if not lines:
+            continue
+        header = lines[0].strip()
+        # v0 format: "1 Nephi 1:1" — extract chapter:verse
+        m = re.match(r'.+\s+(\d+):(\d+)$', header)
+        if not m:
+            continue
+        ch, vs = int(m.group(1)), int(m.group(2))
+        # Join remaining lines as paragraph text (some long verses wrap in the file)
+        para_text = ' '.join(l.strip() for l in lines[1:] if l.strip())
+        result[(ch, vs)] = para_text
+    _v0_cache[book_name] = result
+    return result
 
 # ============================================================================
 # INTERTEXT DATA — Hardy biblical references loaded at build time
@@ -1047,6 +1137,13 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
     diff_data = get_kjv_diff(book_id, verse['chapter'], verse['verse']) if book_id else None
     has_diff = diff_data is not None  # Mark ALL verses with KJV parallel data, even identical ones
 
+    # ── Paragraph layer (v0 text) ──
+    v0 = load_v0_paragraphs(book_id) if book_id else {}
+    para_text = v0.get((verse['chapter'], verse['verse']), '')
+    para_html = ''
+    if para_text:
+        para_html = process_line(para_text, swap_list)
+
     # Helper to build parallel attributes for a line
     def _par_attrs(line_idx):
         if not parallel_map:
@@ -1057,21 +1154,25 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None):
             return f' data-parallel-group="{gid}" data-parallel-level="{lvl}"'
         return ''
 
+    div_class = 'verse has-kjv-diff' if has_diff else 'verse'
+    parts = [f'<div class="{div_class}"><span class="verse-num">{ref}</span>']
+
+    # Paragraph span (base layer — visible by default)
+    if para_html:
+        parts.append(f'  <span class="line-para">{para_html}</span>')
+
+    # Sense-line spans (hidden by default, shown when "Lines" is active)
+    for idx, line in enumerate(processed):
+        pa = _par_attrs(idx)
+        cls = 'line verse-normal' if has_diff else 'line'
+        parts.append(f'  <span class="{cls}"{pa}>{line}</span>')
+
+    # KJV diff annotation (appears after sense-lines when diff layer is on)
     if has_diff:
-        # Verse has both normal and diff views
         diff_html = render_kjv_diff(diff_data)
-        parts = [f'<div class="verse has-kjv-diff"><span class="verse-num">{ref}</span>']
-        for idx, line in enumerate(processed):
-            pa = _par_attrs(idx)
-            parts.append(f'  <span class="line verse-normal"{pa}>{line}</span>')
         parts.append(f'  <span class="line verse-diff">{diff_html}</span>')
-        parts.append('</div>')
-    else:
-        parts = [f'<div class="verse"><span class="verse-num">{ref}</span>']
-        for idx, line in enumerate(processed):
-            pa = _par_attrs(idx)
-            parts.append(f'  <span class="line"{pa}>{line}</span>')
-        parts.append('</div>')
+
+    parts.append('</div>')
     return '\n'.join(parts)
 
 def build_parallel_map(bid, ch_num, ch_verses):
