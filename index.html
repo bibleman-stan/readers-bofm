@@ -1342,18 +1342,33 @@
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   }
 
-  /* ── Search overlay ── */
-  #search-overlay {
+  /* ── Search panel (slides from right) ── */
+  #search-scrim {
     display: none;
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 9998;
+    background: rgba(0,0,0,0.45);
+  }
+  #search-scrim.open { display: block; }
+  body.light-mode #search-scrim { background: rgba(0,0,0,0.18); }
+  #search-overlay {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: 85%;
+    max-width: 520px;
     z-index: 9999;
     background: #1c1f24;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.5);
   }
+  #search-overlay.open { transform: translateX(0); }
   body.light-mode #search-overlay {
     background: #f5f0e8;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.12);
   }
   #search-header {
     position: sticky;
@@ -3138,7 +3153,7 @@ function downloadAllForOffline() {
 
   window.openSearch = function() {
     var overlay = document.getElementById('search-overlay');
-    overlay.style.display = 'block';
+    var scrim = document.getElementById('search-scrim');
     document.getElementById('search-input').value = '';
     document.getElementById('search-count').textContent = '';
     document.getElementById('search-chart').innerHTML = '';
@@ -3146,8 +3161,12 @@ function downloadAllForOffline() {
     activeBookFilter = -1;
     lastQuery = '';
     lastHits = [];
-    // Focus after display settles
-    setTimeout(function() { document.getElementById('search-input').focus(); }, 50);
+    // Slide in
+    scrim.classList.add('open');
+    // Force reflow so transition fires
+    overlay.offsetHeight;
+    overlay.classList.add('open');
+    setTimeout(function() { document.getElementById('search-input').focus(); }, 260);
     // Load index if needed
     if (!searchIndex) {
       fetch('data/search_index.json')
@@ -3158,14 +3177,15 @@ function downloadAllForOffline() {
   };
 
   window.closeSearch = function() {
-    document.getElementById('search-overlay').style.display = 'none';
+    document.getElementById('search-overlay').classList.remove('open');
+    document.getElementById('search-scrim').classList.remove('open');
     activeBookFilter = -1;
     lastQuery = '';
   };
 
   // Close on Escape
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && document.getElementById('search-overlay').style.display === 'block') {
+    if (e.key === 'Escape' && document.getElementById('search-overlay').classList.contains('open')) {
       closeSearch();
     }
   });
@@ -3387,7 +3407,8 @@ function downloadAllForOffline() {
 })();
 </script>
 
-<!-- Search overlay -->
+<!-- Search panel -->
+<div id="search-scrim" onclick="closeSearch()"></div>
 <div id="search-overlay">
   <div id="search-header">
     <button id="search-back" onclick="closeSearch()">&#8592;</button>
