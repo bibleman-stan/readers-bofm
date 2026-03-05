@@ -138,11 +138,12 @@ def parse_line(line):
     # Strip type annotations from text
     text, types = extract_types(text)
 
-    # Derive indent from label
+    # Derive indent from label: uppercase=0 (primary), lowercase=1 (secondary)
+    # The label letter itself communicates chiastic depth; indent is just
+    # primary vs secondary visual grouping.
     if label:
-        base = label.rstrip("'").upper()
-        indent = max(0, ord(base) - ord('A'))
-        indent = min(indent, 2)
+        base_char = label.rstrip("'")[0] if label.rstrip("'") else ''
+        indent = 1 if base_char.islower() else 0
     else:
         indent = 0
 
