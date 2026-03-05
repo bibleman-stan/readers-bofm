@@ -1341,6 +1341,179 @@
     z-index: 20;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   }
+
+  /* ── Search overlay ── */
+  #search-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 9999;
+    background: #1c1f24;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  body.light-mode #search-overlay {
+    background: #f5f0e8;
+  }
+  #search-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #2a2a2a;
+    border-bottom: 1px solid #444;
+  }
+  body.light-mode #search-header {
+    background: #ede8e0;
+    border-color: #ccc;
+  }
+  #search-back {
+    background: none; border: none; color: #d4d0c8; font-size: 1.3em; cursor: pointer; padding: 4px;
+  }
+  body.light-mode #search-back { color: #3a3630; }
+  #search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #d4d0c8;
+    font-family: 'Literata', Georgia, serif;
+    font-size: 1.15em;
+    padding: 4px 0;
+  }
+  body.light-mode #search-input { color: #3a3630; }
+  #search-input::placeholder { color: #666; }
+  body.light-mode #search-input::placeholder { color: #999; }
+  #search-close {
+    background: none; border: none; color: #888; font-size: 1.3em; cursor: pointer; padding: 4px;
+  }
+  #search-body {
+    padding: 16px;
+  }
+  #search-count {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 14px;
+  }
+  body.light-mode #search-count { color: #777; }
+
+  /* Bar chart */
+  #search-chart {
+    margin-bottom: 18px;
+  }
+  .search-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 3px 0;
+    cursor: pointer;
+    font-size: 0.88em;
+  }
+  .search-bar-row:hover {
+    opacity: 0.85;
+  }
+  .search-bar-label {
+    width: 120px;
+    text-align: right;
+    color: #aaa;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body.light-mode .search-bar-label { color: #666; }
+  .search-bar-row.active-filter .search-bar-label {
+    color: #d4d0c8;
+    font-weight: 700;
+  }
+  body.light-mode .search-bar-row.active-filter .search-bar-label {
+    color: #3a3630;
+  }
+  .search-bar-track {
+    flex: 1;
+    height: 14px;
+    position: relative;
+  }
+  .search-bar-fill {
+    height: 100%;
+    background: #7a7a7a;
+    border-radius: 2px;
+    min-width: 2px;
+  }
+  .search-bar-num {
+    width: 36px;
+    text-align: left;
+    color: #888;
+    font-size: 0.92em;
+  }
+  body.light-mode .search-bar-num { color: #777; }
+
+  /* Results list */
+  .search-result {
+    padding: 14px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+  }
+  body.light-mode .search-result {
+    border-color: #ddd;
+  }
+  .search-result:hover {
+    opacity: 0.85;
+  }
+  .search-result-ref {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .search-result-ref span:first-child {
+    color: #d4d0c8;
+    font-size: 1em;
+  }
+  body.light-mode .search-result-ref span:first-child { color: #3a3630; }
+  .search-result-ref span:last-child {
+    color: #666;
+    font-size: 1.1em;
+  }
+  .search-result-text {
+    color: #999;
+    font-size: 0.92em;
+    line-height: 1.55;
+  }
+  body.light-mode .search-result-text { color: #666; }
+  .search-highlight {
+    color: #d4d0c8;
+    font-weight: 700;
+  }
+  body.light-mode .search-highlight {
+    color: #3a3630;
+  }
+  #search-no-results {
+    color: #666;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.95em;
+  }
+
+  /* Search icon in controls row */
+  .search-icon-btn {
+    background: none;
+    border: 1px solid #555;
+    border-radius: 16px;
+    padding: 4px 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    color: #d4d0c8;
+  }
+  .search-icon-btn:hover { border-color: #888; }
+  body.light-mode .search-icon-btn {
+    border-color: #bbb;
+    color: #3a3630;
+  }
+  body.light-mode .search-icon-btn:hover { border-color: #888; }
 </style>
 </head>
 <body>
@@ -1487,6 +1660,9 @@
     <button class="pill-btn" id="lines-pill" onclick="toggleLines()">Lines</button>
     <button class="pill-btn" id="sections-pill" onclick="toggleSections()">Sections</button>
     <button class="pill-btn" id="layers-pill" onclick="toggleLayers()">Layers <span style="font-size:0.7em;opacity:0.6;margin-left:1px;">▾</span></button>
+    <button class="search-icon-btn" onclick="openSearch()" aria-label="Search">
+      <svg viewBox="0 0 24 24" style="width:14px; height:14px;" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
     <button id="gear-btn" class="gear-btn" onclick="toggleSettings()" aria-label="Display settings" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px;">
       <svg viewBox="0 0 24 24" style="width:14px; height:14px;"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1112 8.4a3.6 3.6 0 010 7.2z"/></svg>
     </button>
@@ -2949,6 +3125,279 @@ function downloadAllForOffline() {
   };
   navigator.serviceWorker.controller.postMessage({ type: 'CACHE_ALL_BOOKS' }, [channel.port2]);
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   SEARCH
+   ═══════════════════════════════════════════════════════════════════════ */
+(function() {
+  var searchIndex = null;  // loaded lazily
+  var searchTimer = null;
+  var activeBookFilter = -1;  // -1 = show all
+  var lastQuery = '';
+  var lastHits = [];  // cached hit array for filtering
+
+  window.openSearch = function() {
+    var overlay = document.getElementById('search-overlay');
+    overlay.style.display = 'block';
+    document.getElementById('search-input').value = '';
+    document.getElementById('search-count').textContent = '';
+    document.getElementById('search-chart').innerHTML = '';
+    document.getElementById('search-results').innerHTML = '';
+    activeBookFilter = -1;
+    lastQuery = '';
+    lastHits = [];
+    // Focus after display settles
+    setTimeout(function() { document.getElementById('search-input').focus(); }, 50);
+    // Load index if needed
+    if (!searchIndex) {
+      fetch('data/search_index.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { searchIndex = data; })
+        .catch(function(e) { console.error('Search index load failed', e); });
+    }
+  };
+
+  window.closeSearch = function() {
+    document.getElementById('search-overlay').style.display = 'none';
+    activeBookFilter = -1;
+    lastQuery = '';
+  };
+
+  // Close on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.getElementById('search-overlay').style.display === 'block') {
+      closeSearch();
+    }
+  });
+
+  // Debounced input handler
+  document.addEventListener('DOMContentLoaded', function() {
+    var input = document.getElementById('search-input');
+    if (!input) return;
+    input.addEventListener('input', function() {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(function() {
+        var q = input.value.trim();
+        if (q.length < 2) {
+          document.getElementById('search-count').textContent = '';
+          document.getElementById('search-chart').innerHTML = '';
+          document.getElementById('search-results').innerHTML = '';
+          lastQuery = '';
+          lastHits = [];
+          return;
+        }
+        runSearch(q);
+      }, 150);
+    });
+  });
+
+  function runSearch(query) {
+    if (!searchIndex) return;
+    lastQuery = query;
+    activeBookFilter = -1;
+    var qLower = query.toLowerCase();
+    var hits = [];
+    var bookCounts = new Array(searchIndex.books.length).fill(0);
+
+    for (var i = 0; i < searchIndex.verses.length; i++) {
+      var v = searchIndex.verses[i];
+      if (v.t.toLowerCase().indexOf(qLower) !== -1) {
+        hits.push(v);
+        bookCounts[v.b]++;
+      }
+    }
+    lastHits = hits;
+    renderChart(bookCounts, hits.length);
+    renderCount(hits.length, hits.length);
+    renderResults(hits, query, 100);
+  }
+
+  function renderCount(showing, total) {
+    var el = document.getElementById('search-count');
+    if (total === 0) {
+      el.textContent = '';
+      return;
+    }
+    if (showing === total) {
+      el.textContent = total + ' verse' + (total !== 1 ? 's' : '') + ' found. Tap chart to filter.';
+    } else {
+      el.textContent = 'Showing ' + showing + ' of ' + total + ' verses.';
+    }
+  }
+
+  function renderChart(bookCounts, totalHits) {
+    var chart = document.getElementById('search-chart');
+    chart.innerHTML = '';
+    if (totalHits === 0) return;
+    var maxCount = Math.max.apply(null, bookCounts);
+
+    for (var i = 0; i < searchIndex.books.length; i++) {
+      if (bookCounts[i] === 0) continue;
+      var row = document.createElement('div');
+      row.className = 'search-bar-row';
+      row.setAttribute('data-book-idx', i);
+
+      var label = document.createElement('span');
+      label.className = 'search-bar-label';
+      label.textContent = searchIndex.books[i];
+
+      var track = document.createElement('span');
+      track.className = 'search-bar-track';
+      var fill = document.createElement('span');
+      fill.className = 'search-bar-fill';
+      fill.style.width = Math.max(2, Math.round((bookCounts[i] / maxCount) * 100)) + '%';
+      track.appendChild(fill);
+
+      var num = document.createElement('span');
+      num.className = 'search-bar-num';
+      num.textContent = bookCounts[i];
+
+      row.appendChild(label);
+      row.appendChild(track);
+      row.appendChild(num);
+
+      (function(bookIdx) {
+        row.addEventListener('click', function() { filterByBook(bookIdx); });
+      })(i);
+
+      chart.appendChild(row);
+    }
+  }
+
+  function filterByBook(bookIdx) {
+    if (activeBookFilter === bookIdx) {
+      // Deselect — show all
+      activeBookFilter = -1;
+      var allRows = document.querySelectorAll('.search-bar-row');
+      allRows.forEach(function(r) { r.classList.remove('active-filter'); });
+      renderCount(lastHits.length, lastHits.length);
+      renderResults(lastHits, lastQuery, 100);
+      return;
+    }
+    activeBookFilter = bookIdx;
+
+    // Highlight the active row
+    var allRows = document.querySelectorAll('.search-bar-row');
+    allRows.forEach(function(r) {
+      if (parseInt(r.getAttribute('data-book-idx')) === bookIdx) {
+        r.classList.add('active-filter');
+      } else {
+        r.classList.remove('active-filter');
+      }
+    });
+
+    // Filter hits
+    var filtered = lastHits.filter(function(v) { return v.b === bookIdx; });
+    renderCount(filtered.length, lastHits.length);
+    renderResults(filtered, lastQuery, 200);
+  }
+
+  function renderResults(hits, query, limit) {
+    var container = document.getElementById('search-results');
+    container.innerHTML = '';
+
+    if (hits.length === 0) {
+      container.innerHTML = '<div id="search-no-results">No results found</div>';
+      return;
+    }
+
+    var shown = Math.min(hits.length, limit);
+    for (var i = 0; i < shown; i++) {
+      var v = hits[i];
+      var bookName = searchIndex.books[v.b];
+      var bookId = searchIndex.bookIds[v.b];
+      var ref = bookName + ' ' + v.c + ':' + v.v;
+
+      var card = document.createElement('div');
+      card.className = 'search-result';
+
+      var refRow = document.createElement('div');
+      refRow.className = 'search-result-ref';
+      var refLabel = document.createElement('span');
+      refLabel.textContent = ref;
+      var arrow = document.createElement('span');
+      arrow.textContent = '›';
+      refRow.appendChild(refLabel);
+      refRow.appendChild(arrow);
+
+      var textDiv = document.createElement('div');
+      textDiv.className = 'search-result-text';
+      textDiv.innerHTML = highlightText(v.t, query);
+
+      card.appendChild(refRow);
+      card.appendChild(textDiv);
+
+      (function(bid, ch, vs) {
+        card.addEventListener('click', function() {
+          navigateToVerse(bid, ch, vs);
+        });
+      })(bookId, v.c, v.v);
+
+      container.appendChild(card);
+    }
+
+    if (hits.length > limit) {
+      var more = document.createElement('div');
+      more.style.cssText = 'color:#666; text-align:center; padding:20px 0; font-size:0.9em;';
+      more.textContent = (hits.length - limit) + ' more results...';
+      container.appendChild(more);
+    }
+  }
+
+  function highlightText(text, query) {
+    if (!query) return escapeHtml(text);
+    var escaped = escapeHtml(text);
+    var qEscaped = escapeHtml(query);
+    // Case-insensitive highlight
+    var re = new RegExp('(' + qEscaped.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    return escaped.replace(re, '<span class="search-highlight">$1</span>');
+  }
+
+  function escapeHtml(s) {
+    var d = document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+
+  function navigateToVerse(bookId, chapter, verse) {
+    closeSearch();
+    // Use existing switchBook / showChapter, then scroll to verse
+    if (typeof switchBook === 'function') {
+      switchBook(bookId, chapter);
+      // Wait for book load + chapter render, then scroll to verse
+      setTimeout(function() {
+        var verseRef = chapter + ':' + verse;
+        var allVerses = document.querySelectorAll('#book-' + bookId + ' .verse-num');
+        for (var i = 0; i < allVerses.length; i++) {
+          if (allVerses[i].textContent.trim() === verseRef) {
+            var verseDiv = allVerses[i].closest('.verse');
+            if (verseDiv) {
+              verseDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              // Brief highlight flash
+              verseDiv.style.transition = 'background 0.3s';
+              verseDiv.style.background = 'rgba(124,175,194,0.15)';
+              setTimeout(function() { verseDiv.style.background = ''; }, 2000);
+            }
+            break;
+          }
+        }
+      }, 400);
+    }
+  }
+})();
 </script>
 
+<!-- Search overlay -->
+<div id="search-overlay">
+  <div id="search-header">
+    <button id="search-back" onclick="closeSearch()">&#8592;</button>
+    <input id="search-input" type="text" placeholder="Search..." autocomplete="off" autocorrect="off" spellcheck="false">
+    <button id="search-close" onclick="closeSearch()">&#10005;</button>
+  </div>
+  <div id="search-body">
+    <div id="search-count"></div>
+    <div id="search-chart"></div>
+    <div id="search-results"></div>
+  </div>
+</div>
 </body></html>
