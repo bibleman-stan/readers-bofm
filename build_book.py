@@ -1024,11 +1024,41 @@ def get_phrase_matches(book_id, chapter, verse):
         return None
     return _PHRASE_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), None)
 
+def _build_text_map(html):
+    """Build a mapping between text-only positions and HTML positions.
+
+    Returns (plain_text, text_to_html_map) where text_to_html_map[i] gives
+    the HTML position corresponding to plain_text[i]. This allows us to find
+    phrases in plain text and map match positions back to the original HTML.
+    """
+    plain_chars = []
+    text_to_html = []
+    i = 0
+    in_tag = False
+    while i < len(html):
+        if html[i] == '<':
+            in_tag = True
+            i += 1
+        elif html[i] == '>' and in_tag:
+            in_tag = False
+            i += 1
+        elif in_tag:
+            i += 1
+        else:
+            plain_chars.append(html[i])
+            text_to_html.append(i)
+            i += 1
+    # Sentinel for end-of-string mapping
+    text_to_html.append(len(html))
+    return ''.join(plain_chars), text_to_html
+
+
 def apply_phrase_highlights(line_text, phrases, css_class):
     """Wrap matched phrases within a line with <span class="css_class">.
 
     Uses case-insensitive matching to find phrase text within the line,
-    then wraps matched portions. Non-matched portions are left unwrapped.
+    then wraps matched portions. Searches only in visible text (not inside
+    HTML tags or attributes) to avoid corrupting existing markup.
     Also matches partial phrases: if a multi-word phrase spans across line
     breaks, we check whether any 3+ word suffix or prefix falls on this line.
     Returns the line with spans inserted.
@@ -1036,19 +1066,22 @@ def apply_phrase_highlights(line_text, phrases, css_class):
     if not phrases:
         return line_text
 
-    # Find all phrase occurrences in this line (case-insensitive)
-    intervals = []
-    line_lower = line_text.lower()
+    # Build text-only version for safe phrase matching
+    plain_text, text_to_html = _build_text_map(line_text)
+    plain_lower = plain_text.lower()
+
+    # Find all phrase occurrences in plain text (case-insensitive)
+    text_intervals = []  # intervals in plain_text coordinates
     for phrase in phrases:
         phrase_lower = phrase.lower()
         # Try full phrase first
         start = 0
         found_full = False
         while True:
-            idx = line_lower.find(phrase_lower, start)
+            idx = plain_lower.find(phrase_lower, start)
             if idx == -1:
                 break
-            intervals.append((idx, idx + len(phrase)))
+            text_intervals.append((idx, idx + len(phrase_lower)))
             start = idx + 1
             found_full = True
 
@@ -1056,41 +1089,45 @@ def apply_phrase_highlights(line_text, phrases, css_class):
         if not found_full:
             words = phrase_lower.split()
             if len(words) >= 5:
-                # Try prefixes and suffixes of 4+ words (avoid short noisy fragments)
                 for n in range(len(words) - 1, 3, -1):
-                    # Try prefix (end of phrase on this line)
                     prefix = ' '.join(words[:n])
-                    idx = line_lower.find(prefix)
+                    idx = plain_lower.find(prefix)
                     if idx != -1:
-                        intervals.append((idx, idx + len(prefix)))
+                        text_intervals.append((idx, idx + len(prefix)))
                         break
-                    # Try suffix (start of phrase on this line)
                     suffix = ' '.join(words[len(words)-n:])
-                    idx = line_lower.find(suffix)
+                    idx = plain_lower.find(suffix)
                     if idx != -1:
-                        intervals.append((idx, idx + len(suffix)))
+                        text_intervals.append((idx, idx + len(suffix)))
                         break
 
-    if not intervals:
+    if not text_intervals:
         return line_text
 
-    # Merge overlapping intervals
-    intervals.sort()
-    merged = [intervals[0]]
-    for s, e in intervals[1:]:
+    # Merge overlapping intervals (in text coordinates)
+    text_intervals.sort()
+    merged = [text_intervals[0]]
+    for s, e in text_intervals[1:]:
         if s <= merged[-1][1]:
             merged[-1] = (merged[-1][0], max(merged[-1][1], e))
         else:
             merged.append((s, e))
 
-    # Build result with spans around matched portions
+    # Map text intervals back to HTML positions
+    html_intervals = []
+    for ts, te in merged:
+        hs = text_to_html[ts]
+        he = text_to_html[te]
+        html_intervals.append((hs, he))
+
+    # Build result with spans around matched portions in original HTML
     result = []
     pos = 0
-    for s, e in merged:
-        if pos < s:
-            result.append(line_text[pos:s])
-        result.append(f'<span class="{css_class}">{line_text[s:e]}</span>')
-        pos = e
+    for hs, he in html_intervals:
+        if pos < hs:
+            result.append(line_text[pos:hs])
+        result.append(f'<span class="{css_class}">{line_text[hs:he]}</span>')
+        pos = he
     if pos < len(line_text):
         result.append(line_text[pos:])
     return ''.join(result)
