@@ -11,6 +11,7 @@
     --line-height: 2.35;
     --wrap-indent: 0.75em;
     --verse-gap: 6px;
+    --cola-gap: 0.3em;
     --punct-opacity: 0;
     --font-size: 17px;
     --letter-spacing: 0em;
@@ -554,6 +555,11 @@
   }
   body.show-lines .line {
     display: block;
+    line-height: 1.45;
+    margin-bottom: var(--cola-gap);
+  }
+  body.show-lines .line:last-of-type {
+    margin-bottom: 0;
   }
 
   .punct {
@@ -1776,7 +1782,7 @@
   <!-- Controls row — pill buttons -->
   <div class="controls-row">
     <button class="pill-btn" id="aid-pill" onclick="toggleAid()">Aid</button>
-    <button class="pill-btn" id="lines-pill" onclick="toggleLines()">Lines</button>
+    <button class="pill-btn" id="lines-pill" onclick="toggleLines()">Paragraph</button>
     <button class="pill-btn" id="sections-pill" onclick="toggleSections()">Sections</button>
     <button class="pill-btn" id="layers-pill" onclick="toggleLayers()">Layers <span style="font-size:0.7em;opacity:0.6;margin-left:1px;">▾</span></button>
     <button class="search-icon-btn" onclick="openSearch()" aria-label="Search">
@@ -2149,6 +2155,7 @@
   var tabOverrides = { read: {} };
 
   var spacingValues = { tight: 1.55, normal: 1.75, airy: 2.35 };
+  var colaGapValues = { tight: '0.15em', normal: '0.25em', airy: '0.3em' };
   var sizeValues    = { small: '15px', medium: '17px', large: '20px' };
   var densityValues = {
     compact:  { letter: '-0.015em', word: '-0.03em', padding: '10px' },
@@ -2422,8 +2429,16 @@
     document.body.classList.toggle('show-parry', mode === 2);
     var pill = document.getElementById('lines-pill');
     if (pill) {
-      pill.classList.toggle('active-lines', mode > 0);
-      pill.textContent = mode === 0 ? 'Lines' : mode === 1 ? 'Lines' : 'Poetic';
+      pill.classList.remove('active-lines');
+      if (mode === 0) {
+        pill.textContent = 'Paragraph';
+      } else if (mode === 1) {
+        pill.textContent = 'Lines';
+        pill.classList.add('active-lines');
+      } else {
+        pill.textContent = 'Poetic';
+        pill.classList.add('active-lines');
+      }
     }
   }
   window.toggleLines = function() {
@@ -2456,6 +2471,7 @@
   window.setSpacing = function(level) {
     tabOverrides[currentTab].spacing = level;
     root.style.setProperty('--line-height', spacingValues[level]);
+    root.style.setProperty('--cola-gap', colaGapValues[level]);
     document.querySelectorAll('#spacing-row .option-btn').forEach(function(btn) {
       btn.classList.toggle('active', btn.textContent.toLowerCase() === level);
     });
@@ -2513,6 +2529,7 @@
     document.body.classList.toggle('hide-punct', punct);
     root.style.setProperty('--wrap-indent', wrap ? '0.75em' : '0em');
     root.style.setProperty('--line-height', spacingValues[spacing]);
+    root.style.setProperty('--cola-gap', colaGapValues[spacing]);
     root.style.setProperty('--font-size', sizeValues[size]);
 
     var d = densityValues[density];
