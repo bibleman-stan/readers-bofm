@@ -11,7 +11,7 @@
     --line-height: 2.35;
     --wrap-indent: 0.75em;
     --verse-gap: 6px;
-    --cola-gap: 0.3em;
+    --cola-gap: 0.55em;
     --punct-opacity: 0;
     --font-size: 17px;
     --letter-spacing: 0em;
@@ -565,7 +565,6 @@
   }
   body.show-lines .line {
     display: block;
-    line-height: 1.45;
     margin-bottom: var(--cola-gap);
   }
   body.show-lines .line:last-of-type {
@@ -2165,7 +2164,7 @@
   var tabOverrides = { read: {} };
 
   var spacingValues = { tight: 1.55, normal: 1.75, airy: 2.35 };
-  var colaGapValues = { tight: '0.15em', normal: '0.25em', airy: '0.3em' };
+  var colaGapValues = { tight: '0.3em', normal: '0.45em', airy: '0.55em' };
   var sizeValues    = { small: '15px', medium: '17px', large: '20px' };
   var densityValues = {
     compact:  { letter: '-0.015em', word: '-0.03em', padding: '10px' },
