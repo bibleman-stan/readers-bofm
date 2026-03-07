@@ -11,12 +11,12 @@
     --line-height: 2.35;
     --wrap-indent: 0.75em;
     --verse-gap: 6px;
-    --cola-gap: 0.55em;
+    --cola-gap: 0.7em;
     --punct-opacity: 0;
-    --font-size: 17px;
-    --letter-spacing: 0em;
-    --word-spacing: 0em;
-    --content-padding: 18px;
+    --font-size: 15px;
+    --letter-spacing: -0.015em;
+    --word-spacing: -0.03em;
+    --content-padding: 10px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -550,6 +550,10 @@
   .line-para {
     display: inline;
   }
+  /* Paragraph mode: tighter line-height for prose reading */
+  body:not(.show-lines):not(.show-parry) .verse {
+    line-height: calc(var(--line-height) * 0.82);
+  }
 
   /* ── Sense-line layer (default: hidden) ── */
   .line {
@@ -566,6 +570,7 @@
   body.show-lines .line {
     display: block;
     margin-bottom: var(--cola-gap);
+    line-height: 1.45;
   }
   body.show-lines .line:last-of-type {
     margin-bottom: 0;
@@ -1704,11 +1709,11 @@
     <!-- Text size -->
     <div class="setting-label"><strong>Text size</strong></div>
     <div class="size-row">
-      <button class="size-btn" onclick="setSize('small')">
+      <button class="size-btn active" onclick="setSize('small')">
         <span class="letter" style="font-size: 0.85em;">A</span>
         <span class="label">Small</span>
       </button>
-      <button class="size-btn active" onclick="setSize('medium')">
+      <button class="size-btn" onclick="setSize('medium')">
         <span class="letter" style="font-size: 1.1em;">A</span>
         <span class="label">Medium</span>
       </button>
@@ -1721,8 +1726,8 @@
     <!-- Text density -->
     <div class="setting-label"><strong>Text density</strong></div>
     <div class="option-row" id="density-row">
-      <button class="option-btn" onclick="setDensity('compact')">Compact</button>
-      <button class="option-btn active" onclick="setDensity('normal')">Normal</button>
+      <button class="option-btn active" onclick="setDensity('compact')">Compact</button>
+      <button class="option-btn" onclick="setDensity('normal')">Normal</button>
       <button class="option-btn" onclick="setDensity('spacious')">Spacious</button>
     </div>
 
@@ -2158,13 +2163,13 @@
 
   // Tab defaults
   var tabDefaults = {
-    read:  { flow: true,  punct: true,  wrap: true,  spacing: 'airy',   size: 'medium', density: 'normal' }
+    read:  { flow: true,  punct: true,  wrap: true,  spacing: 'airy',   size: 'small', density: 'compact' }
   };
 
   var tabOverrides = { read: {} };
 
   var spacingValues = { tight: 1.55, normal: 1.75, airy: 2.35 };
-  var colaGapValues = { tight: '0.3em', normal: '0.45em', airy: '0.55em' };
+  var colaGapValues = { tight: '0.35em', normal: '0.55em', airy: '0.7em' };
   var sizeValues    = { small: '15px', medium: '17px', large: '20px' };
   var densityValues = {
     compact:  { letter: '-0.015em', word: '-0.03em', padding: '10px' },
