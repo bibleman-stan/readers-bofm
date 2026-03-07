@@ -220,8 +220,25 @@
     order: -2;
   }
 
-  .toolbar-collapsed .collapsed-summary {
+  /* Show summary bar when scrolled down (collapsed or expanded) */
+  .toolbar-collapsed .collapsed-summary,
+  .toolbar-show-summary .collapsed-summary {
     display: block;
+  }
+  /* When expanded with summary visible, show a collapse affordance */
+  .toolbar-show-summary .collapsed-summary::after {
+    content: '▲';
+    float: right;
+    font-size: 0.65em;
+    opacity: 0.4;
+    margin-right: 4px;
+  }
+  .toolbar-collapsed .collapsed-summary::after {
+    content: '▼';
+    float: right;
+    font-size: 0.65em;
+    opacity: 0.4;
+    margin-right: 4px;
   }
 
   /* In collapsed mode, bring controls-row up right after the summary */
@@ -230,6 +247,10 @@
     border-top: none;
     padding-top: 0;
     padding-bottom: 6px;
+  }
+  /* Hide gear in collapsed mode — settings needs full toolbar */
+  .toolbar-collapsed .gear-btn {
+    display: none;
   }
   /* Push everything else down so it gets clipped */
   .toolbar-collapsed .book-grid { order: 10; }
@@ -2504,12 +2525,12 @@
 
   window.toggleSettings = function() {
     pauseCollapse();
-    // Expand toolbar if collapsed — settings panel needs room to show
-    if (toolbar.classList.contains('toolbar-collapsed')) {
-      toolbar.classList.remove('toolbar-collapsed');
-    }
     var panel = document.getElementById('settings-panel');
     var isVisible = panel.classList.contains('visible');
+    // Only expand toolbar when OPENING settings, not closing
+    if (!isVisible && toolbar.classList.contains('toolbar-collapsed')) {
+      toolbar.classList.remove('toolbar-collapsed');
+    }
     // Close other panels when opening settings
     if (!isVisible) {
       document.getElementById('nav-panel').style.display = 'none';
@@ -2707,13 +2728,13 @@
 
   window.toggleLayers = function() {
     pauseCollapse();
-    // Expand toolbar if collapsed — panel needs room to show
-    if (toolbar.classList.contains('toolbar-collapsed')) {
-      toolbar.classList.remove('toolbar-collapsed');
-    }
     var panel = document.getElementById('layers-panel');
     var pill = document.getElementById('layers-pill');
     var isHidden = panel.style.display === 'none' || panel.style.display === '';
+    // Only expand toolbar when OPENING the panel, not closing
+    if (isHidden && toolbar.classList.contains('toolbar-collapsed')) {
+      toolbar.classList.remove('toolbar-collapsed');
+    }
     // Close other panels
     document.getElementById('nav-panel').style.display = 'none';
     document.getElementById('background-panel').style.display = 'none';
@@ -2971,12 +2992,15 @@
         }
         if (y <= 80) {
           toolbar.classList.remove('toolbar-collapsed');
+          toolbar.classList.remove('toolbar-show-summary');
           lastCollapseState = false;
         } else if (delta > scrollDeadZone) {
           toolbar.classList.add('toolbar-collapsed');
+          toolbar.classList.remove('toolbar-show-summary');
           lastCollapseState = true;
         } else if (delta < -scrollDeadZone) {
           toolbar.classList.remove('toolbar-collapsed');
+          toolbar.classList.remove('toolbar-show-summary');
           lastCollapseState = false;
         }
         // Add cooldown when collapse state changes to prevent stutter
@@ -2993,10 +3017,19 @@
   // Pause collapse logic briefly (call before toggling panels that change page height)
   function pauseCollapse() { collapseDisabledUntil = Date.now() + 400; }
 
-  // Tap the collapsed summary bar to expand toolbar (but not when clicking pills/controls)
+  // Tap the summary bar to toggle toolbar expand/collapse
   document.getElementById('collapsed-summary').addEventListener('click', function(e) {
     if (toolbar.classList.contains('toolbar-collapsed')) {
+      // Expand
       toolbar.classList.remove('toolbar-collapsed');
+      // Keep summary visible so user can tap to re-collapse
+      if (window.scrollY > 80) toolbar.classList.add('toolbar-show-summary');
+      pauseCollapse();
+    } else if (window.scrollY > 80) {
+      // Re-collapse (user taps summary bar again while expanded)
+      toolbar.classList.add('toolbar-collapsed');
+      toolbar.classList.remove('toolbar-show-summary');
+      closeAllPanels();
       pauseCollapse();
     }
   });
@@ -3016,6 +3049,7 @@
     // Collapse toolbar if scrolled past top
     if (!toolbar.classList.contains('toolbar-collapsed') && window.scrollY > 80) {
       toolbar.classList.add('toolbar-collapsed');
+      toolbar.classList.remove('toolbar-show-summary');
       closeAllPanels();
       pauseCollapse();
     }
