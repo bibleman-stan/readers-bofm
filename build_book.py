@@ -1211,6 +1211,10 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
     # Check for intertext references on this verse
     entries = get_intertext(book_id, verse['chapter'], verse['verse']) if book_id else []
 
+    # Compute phrase/allusion data once — used across all three text layers
+    quote_phrases = []
+    allusion_phrases = []
+    sources = ''
     if entries:
         has_quotation = any(e['type'] == 'quotation' for e in entries)
         sources = '; '.join(shorten_bible_ref(e['bible_ref']) for e in entries)
@@ -1224,6 +1228,7 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
         allusion_phrases = [m['text'] for m in matches if m.get('type') == 'allusion']
         has_any_phrases = bool(quote_phrases or allusion_phrases)
 
+        # Apply highlighting to sense-lines
         wrapped = []
         for i, line in enumerate(processed):
             highlighted = line
@@ -1240,6 +1245,7 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
 
     # Check for geography entries on this verse
     geo_entries = get_geo_entries(book_id, verse['chapter'], verse['verse']) if book_id else []
+    geo_label = ''
     if geo_entries:
         # Build category annotation — show the most specific category
         # Priority order: more specific > less specific
@@ -1273,6 +1279,20 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
     para_html = ''
     if para_text:
         para_html = process_line(para_text, swap_list)
+        # Apply allusion/quotation highlighting to paragraph layer too
+        if quote_phrases:
+            para_html = apply_phrase_highlights(para_html, quote_phrases, 'quote-bible')
+        if allusion_phrases:
+            para_html = apply_phrase_highlights(para_html, allusion_phrases, 'quote-allusion')
+        # Apply geography highlighting to paragraph layer
+        if geo_entries:
+            geo_para = apply_geo_highlights(para_html, geo_entries)
+            if 'geo-ref' in geo_para and geo_label:
+                para_html = f'<span data-geo="{geo_label}">{geo_para}</span>'
+            else:
+                para_html = geo_para
+        if sources:
+            para_html = f'<span data-source="{sources}">{para_html}</span>'
 
     # Helper to build parallel attributes for a line
     def _par_attrs(line_idx):
@@ -1321,7 +1341,7 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
         plines = parry_lines.get('lines', [])
         ptypes = parry_lines.get('types', [])
         last_upper_indent = 0
-        for pl in plines:
+        for pl_idx, pl in enumerate(plines):
             raw_label = pl.get('label', '')
             text = pl.get('text', '')
 
@@ -1352,6 +1372,20 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
 
             # Apply swap processing so the Aid layer works in Poetic mode
             processed_text = process_line(text, swap_list)
+            # Apply allusion/quotation highlighting to Poetic layer too
+            if quote_phrases:
+                processed_text = apply_phrase_highlights(processed_text, quote_phrases, 'quote-bible')
+            if allusion_phrases:
+                processed_text = apply_phrase_highlights(processed_text, allusion_phrases, 'quote-allusion')
+            # Apply geography highlighting to Poetic layer
+            if geo_entries:
+                processed_text = apply_geo_highlights(processed_text, geo_entries)
+            # Add data-source on the last Parry line for reference tooltip
+            if sources and pl_idx == len(plines) - 1:
+                processed_text = f'<span data-source="{sources}">{processed_text}</span>'
+            # Add data-geo on the last Parry line for geo category label
+            if geo_entries and geo_label and pl_idx == len(plines) - 1 and 'geo-ref' in processed_text:
+                processed_text = f'<span data-geo="{geo_label}">{processed_text}</span>'
             parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{processed_text}</span>')
         # Type annotations (chiasmus, simple alternate, etc.) are no longer
         # rendered visibly — they are metadata only, not displayed to the reader.
