@@ -19,6 +19,21 @@ import re, sys, os, json
 from pathlib import Path
 
 # ============================================================================
+# QUIET SWAPS — High-frequency archaic words that don't need dotted underlines.
+# These still get swapped in Aid mode but won't have visual decoration,
+# because they appear so often that underlining them creates visual noise.
+# Uses lowercase canonical forms; matching is case-insensitive.
+QUIET_ARCHAICS = {
+    'unto', 'wherefore', 'ye', 'thee', 'thou', 'thy', 'thine', 'mine',
+    'yea', 'nay', 'hath', 'doth', 'hast', 'shalt', 'dost', 'wilt',
+    'nevertheless', 'exceedingly', 'exceeding', 'insomuch',
+    'spake', 'beheld', 'smitten', 'smote',
+    'hither', 'thither', 'whither', 'whence',
+    'brethren', 'thereof', 'whereby', 'wherewith',
+    'it came to pass',
+}
+
+# ============================================================================
 # SWAP LEXICON — Single source of truth for all archaic word modernization
 # ============================================================================
 
@@ -583,7 +598,12 @@ def apply_swaps(text, swap_list):
     result = re.sub(r'\b[Tt]hou (\w+est)\b', lambda m: thou_est_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
     for sentinel, archaic, modern in placeholders:
-        result = result.replace(sentinel, f'<span class="swap" data-orig="{archaic}" data-mod="{modern}">{archaic}</span>')
+        # High-frequency words get swap-quiet class (no dotted underline)
+        arc_low = archaic.lower()
+        is_quiet = (arc_low in QUIET_ARCHAICS
+                    or any(q in arc_low for q in QUIET_ARCHAICS if len(q) > 3))
+        quiet = ' swap-quiet' if is_quiet else ''
+        result = result.replace(sentinel, f'<span class="swap{quiet}" data-orig="{archaic}" data-mod="{modern}">{archaic}</span>')
     return result
 
 def fix_participles(text):
