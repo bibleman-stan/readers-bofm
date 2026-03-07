@@ -63,6 +63,8 @@
     top: 0;
     z-index: 10;
     border: 1px solid #444;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Book grid row */
@@ -202,41 +204,39 @@
 
   /* Collapsed toolbar — smooth clip, no reflow stutter */
   .toolbar-collapsed {
-    max-height: 32px !important;
+    max-height: 70px !important;
     overflow: hidden !important;
     transition: max-height 0.2s ease;
   }
 
   .collapsed-summary {
     display: none;
-    text-align: center;
     height: 32px;
     line-height: 32px;
     color: #999;
     font-size: 0.82em;
     cursor: pointer;
-    padding: 0 8px;
-    position: relative;
+    padding: 0 12px;
+    order: -2;
   }
-  .collapsed-search-btn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #888;
-    cursor: pointer;
-    padding: 4px;
-    line-height: 1;
-  }
-  .collapsed-search-btn:hover { color: #ccc; }
-  body.light-mode .collapsed-search-btn { color: #999; }
-  body.light-mode .collapsed-search-btn:hover { color: #555; }
 
   .toolbar-collapsed .collapsed-summary {
     display: block;
   }
+
+  /* In collapsed mode, bring controls-row up right after the summary */
+  .toolbar-collapsed .controls-row {
+    order: -1;
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 6px;
+  }
+  /* Push everything else down so it gets clipped */
+  .toolbar-collapsed .book-grid { order: 10; }
+  .toolbar-collapsed #settings-panel { order: 11; }
+  .toolbar-collapsed #nav-panel { order: 12; }
+  .toolbar-collapsed #layers-panel { order: 13; }
+  .toolbar-collapsed #background-panel { order: 14; }
 
   /* === SETTINGS PANEL === */
   .settings-panel {
@@ -1616,7 +1616,7 @@
 <!-- Floating toolbar -->
 <div id="reading-toolbar">
   <!-- Collapsed summary bar (shown when toolbar is collapsed on scroll) -->
-  <div class="collapsed-summary" id="collapsed-summary"><button class="collapsed-search-btn" onclick="event.stopPropagation(); openSearch();" aria-label="Search"><svg viewBox="0 0 24 24" style="width:14px;height:14px;" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button></div>
+  <div class="collapsed-summary" id="collapsed-summary"></div>
 
   <!-- Book grid -->
   <div class="book-grid" id="book-grid">
@@ -2137,21 +2137,21 @@
 
   // Book metadata — chapter counts
   var bookMeta = {
-    '1nephi': {name: '1 Nephi', chapters: 22},
-    '2nephi': {name: '2 Nephi', chapters: 33},
-    'jacob': {name: 'Jacob', chapters: 7},
-    'enos': {name: 'Enos', chapters: 1},
-    'jarom': {name: 'Jarom', chapters: 1},
-    'omni': {name: 'Omni', chapters: 1},
-    'words-of-mormon': {name: 'Words of Mormon', chapters: 1},
-    'mosiah': {name: 'Mosiah', chapters: 29},
-    'alma': {name: 'Alma', chapters: 63},
-    'helaman': {name: 'Helaman', chapters: 16},
-    '3nephi': {name: '3 Nephi', chapters: 30},
-    '4nephi': {name: '4 Nephi', chapters: 1},
-    'mormon': {name: 'Mormon', chapters: 9},
-    'ether': {name: 'Ether', chapters: 15},
-    'moroni': {name: 'Moroni', chapters: 10}
+    '1nephi': {name: '1 Nephi', abbr: '1 Ne', chapters: 22},
+    '2nephi': {name: '2 Nephi', abbr: '2 Ne', chapters: 33},
+    'jacob': {name: 'Jacob', abbr: 'Jac', chapters: 7},
+    'enos': {name: 'Enos', abbr: 'Eno', chapters: 1},
+    'jarom': {name: 'Jarom', abbr: 'Jar', chapters: 1},
+    'omni': {name: 'Omni', abbr: 'Omn', chapters: 1},
+    'words-of-mormon': {name: 'Words of Mormon', abbr: 'WoM', chapters: 1},
+    'mosiah': {name: 'Mosiah', abbr: 'Mos', chapters: 29},
+    'alma': {name: 'Alma', abbr: 'Alm', chapters: 63},
+    'helaman': {name: 'Helaman', abbr: 'Hel', chapters: 16},
+    '3nephi': {name: '3 Nephi', abbr: '3 Ne', chapters: 30},
+    '4nephi': {name: '4 Nephi', abbr: '4 Ne', chapters: 1},
+    'mormon': {name: 'Mormon', abbr: 'Morm', chapters: 9},
+    'ether': {name: 'Ether', abbr: 'Eth', chapters: 15},
+    'moroni': {name: 'Moroni', abbr: 'Moro', chapters: 10}
   };
 
   // ---- DEITY HIGHLIGHTING ----
@@ -2504,6 +2504,10 @@
 
   window.toggleSettings = function() {
     pauseCollapse();
+    // Expand toolbar if collapsed — settings panel needs room to show
+    if (toolbar.classList.contains('toolbar-collapsed')) {
+      toolbar.classList.remove('toolbar-collapsed');
+    }
     var panel = document.getElementById('settings-panel');
     var isVisible = panel.classList.contains('visible');
     // Close other panels when opening settings
@@ -2670,9 +2674,9 @@
 
   function updateCollapsedSummary(bookId, ch) {
     var meta = bookMeta[bookId];
-    var name = meta ? meta.name : bookId;
+    var abbr = meta ? (meta.abbr || meta.name) : bookId;
     var summary = document.getElementById('collapsed-summary');
-    if (summary) summary.textContent = name + ' ' + ch;
+    if (summary) summary.textContent = abbr + ' ' + ch;
   }
 
   // ---- UI TOGGLES ----
@@ -2703,6 +2707,10 @@
 
   window.toggleLayers = function() {
     pauseCollapse();
+    // Expand toolbar if collapsed — panel needs room to show
+    if (toolbar.classList.contains('toolbar-collapsed')) {
+      toolbar.classList.remove('toolbar-collapsed');
+    }
     var panel = document.getElementById('layers-panel');
     var pill = document.getElementById('layers-pill');
     var isHidden = panel.style.display === 'none' || panel.style.display === '';
@@ -2985,8 +2993,8 @@
   // Pause collapse logic briefly (call before toggling panels that change page height)
   function pauseCollapse() { collapseDisabledUntil = Date.now() + 400; }
 
-  // Tap the collapsed summary bar to expand toolbar
-  toolbar.addEventListener('click', function(e) {
+  // Tap the collapsed summary bar to expand toolbar (but not when clicking pills/controls)
+  document.getElementById('collapsed-summary').addEventListener('click', function(e) {
     if (toolbar.classList.contains('toolbar-collapsed')) {
       toolbar.classList.remove('toolbar-collapsed');
       pauseCollapse();
