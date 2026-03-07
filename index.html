@@ -2583,6 +2583,9 @@
     pendingChapter = null;  // Clear any pending chapter from a previous book switch
     var meta = bookMeta[bookId];
     if (!meta) return;
+    // If the about page is showing, hide it first
+    var aboutVisible = document.getElementById('about-page').style.display === 'block';
+    if (aboutVisible) hideAboutPage();
     // Close other panels
     closeAllPanels();
     // Single-chapter books: navigate directly
@@ -2590,13 +2593,13 @@
       switchBook(bookId);
       return;
     }
-    // Same book: toggle chapter grid
-    if (bookId === currentBook) {
+    // Same book: toggle chapter grid (but if about page was showing, show chapter grid instead)
+    if (bookId === currentBook && !aboutVisible) {
       var navPanel = document.getElementById('nav-panel');
       navPanel.style.display = (navPanel.style.display === 'none' || navPanel.style.display === '') ? 'block' : 'none';
       return;
     }
-    // Different book: switch and show chapter grid
+    // Different book (or same book returning from about page): switch and show chapter grid
     switchBook(bookId);
   };
 
