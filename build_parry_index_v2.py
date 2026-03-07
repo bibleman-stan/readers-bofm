@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build parry_index.json from per-book Parry text files in text-files/parry/.
+Build parry_index.json from per-book Parry text files in data/text-files/parry/.
 
 Each Parry file has the FULL verse text with poetic labels embedded.
 This parser extracts every line of every verse, preserving:
@@ -22,7 +22,7 @@ Output format:
 
 import os, re, json, glob
 
-PARRY_DIR = 'text-files/parry'
+PARRY_DIR = 'data/text-files/parry'
 OUTPUT = 'data/parry_index.json'
 
 # Map filename prefix to book ID

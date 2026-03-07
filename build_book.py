@@ -638,7 +638,7 @@ def process_line(line, swap_list):
 # V0 PARAGRAPH TEXT — original verse paragraphs for base-layer display
 # ============================================================================
 
-V0_DIR = Path(__file__).resolve().parent / 'text-files' / 'v0-bofm-original'
+V0_DIR = Path(__file__).resolve().parent / 'data' / 'text-files' / 'v0-bofm-original'
 
 # Map book IDs (lowercase, as used in booklist.txt) → v0 filenames
 V0_FILE_MAP = {

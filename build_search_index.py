@@ -18,7 +18,7 @@ Usage: python3 build_search_index.py
 import json, os, re
 from pathlib import Path
 
-V0_DIR = Path(__file__).resolve().parent / 'text-files' / 'v0-bofm-original'
+V0_DIR = Path(__file__).resolve().parent / 'data' / 'text-files' / 'v0-bofm-original'
 
 # Ordered list: (bookId, displayName, v0Filename)
 BOOKS = [
