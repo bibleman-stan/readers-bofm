@@ -546,11 +546,11 @@
     display: inline;
   }
 
-  /* ── Paragraph layer (default: visible) ── */
+  /* ── Verse layer (default: visible) ── */
   .line-para {
     display: inline;
   }
-  /* Paragraph mode: tighter line-height for prose reading */
+  /* Verse mode: tighter line-height for prose reading */
   body:not(.show-lines):not(.show-parry) .verse {
     line-height: calc(var(--line-height) * 0.82);
   }
@@ -563,7 +563,7 @@
     text-indent: calc(var(--wrap-indent) * -1);
   }
 
-  /* When "Lines" toggle is active: show sense-lines, hide paragraphs */
+  /* When "Lines" toggle is active: show sense-lines, hide verse prose */
   body.show-lines .line-para {
     display: none;
   }
@@ -919,13 +919,13 @@
   body.show-parallels [data-parallel-level^="E"]::before { left: 6.6em; }
   body.light-mode.show-parallels [data-parallel-level]::before { opacity: 0.8; }
 
-  /* === POETIC / HEBREW POETRY (third text view mode) === */
+  /* === PARALLELS / HEBREW POETRY (third text view mode) === */
   .line-parry {
     display: none;
     line-height: 1.5;
     margin: 0.1em 0;
   }
-  /* When "Poetic" toggle is active: show poetic lines, hide paragraphs + sense-lines */
+  /* When "Parallels" toggle is active: show parallel lines, hide verse prose + sense-lines */
   body.show-parry .line-para { display: none; }
   body.show-parry .line { display: none !important; }
   body.show-parry .line-parry { display: block; }
@@ -1687,7 +1687,7 @@
   <div class="settings-panel" id="settings-panel">
     <!-- Toggles -->
     <div class="toggle-row">
-      <div class="toggle-desc"><strong>Paragraph mode</strong><br>Show text as running prose</div>
+      <div class="toggle-desc"><strong>Verse mode</strong><br>Show text as running prose</div>
       <label class="toggle-switch">
         <input type="checkbox" id="flow-toggle" checked onchange="toggleFlow(this.checked)">
         <span class="toggle-track"></span>
@@ -1800,7 +1800,7 @@
   <!-- Controls row — pill buttons -->
   <div class="controls-row">
     <button class="pill-btn" id="aid-pill" onclick="toggleAid()">Aid</button>
-    <button class="pill-btn" id="lines-pill" onclick="toggleLines()">Paragraph</button>
+    <button class="pill-btn" id="lines-pill" onclick="toggleLines()">Verses</button>
     <button class="pill-btn" id="sections-pill" onclick="toggleSections()">Sections</button>
     <button class="pill-btn" id="layers-pill" onclick="toggleLayers()">Layers <span style="font-size:0.7em;opacity:0.6;margin-left:1px;">▾</span></button>
     <button class="search-icon-btn" onclick="openSearch()" aria-label="Search">
@@ -2435,8 +2435,8 @@
     }
   };
 
-  // ---- TEXT MODE TOGGLE (cycles: paragraph → lines → parry → paragraph) ----
-  // textMode: 0=paragraph, 1=lines, 2=parry
+  // ---- TEXT MODE TOGGLE (cycles: verses → lines → parallels → verses) ----
+  // textMode: 0=verses, 1=lines, 2=parallels
   var textMode = 0;
   var linesOn = false;  // kept for backward compat with settings
   function applyTextMode(mode) {
@@ -2448,12 +2448,12 @@
     if (pill) {
       pill.classList.remove('active-lines');
       if (mode === 0) {
-        pill.textContent = 'Paragraph';
+        pill.textContent = 'Verses';
       } else if (mode === 1) {
         pill.textContent = 'Lines';
         pill.classList.add('active-lines');
       } else {
-        pill.textContent = 'Poetic';
+        pill.textContent = 'Parallels';
         pill.classList.add('active-lines');
       }
     }
@@ -2471,7 +2471,7 @@
 
   window.toggleFlow = function(on) {
     tabOverrides[currentTab].flow = on;
-    // Flow on = paragraph mode (lines off), Flow off = sense-line mode (lines on)
+    // Flow on = verse mode (lines off), Flow off = sense-line mode (lines on)
     applyTextMode(on ? 0 : 1);
   };
 
@@ -2541,7 +2541,7 @@
     var size    = getSetting(tab, 'size');
     var density = getSetting(tab, 'density');
 
-    // flow=true means paragraph mode; flow=false means sense-line mode
+    // flow=true means verse mode; flow=false means sense-line mode
     applyTextMode(flow ? 0 : 1);
     root.style.setProperty('--punct-opacity', punct ? '0' : '1');
     document.body.classList.toggle('hide-punct', punct);
