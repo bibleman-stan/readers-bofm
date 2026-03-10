@@ -572,6 +572,9 @@
     margin-bottom: var(--cola-gap);
     line-height: 1.45;
   }
+  body.show-lines .line.verse-diff {
+    display: none;  /* KJV diff annotation hidden in Lines mode — only shown via diff layer toggle */
+  }
   body.show-lines .line:last-of-type {
     margin-bottom: 0;
   }
