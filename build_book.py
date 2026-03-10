@@ -153,6 +153,11 @@ COMPOUND_SWAPS = [
     ("did engraven", "engraved"),
     ("should engraven", "should engrave"), ("might engraven", "might engrave"),
     ("could engraven", "could engrave"), ("would engraven", "would engrave"),
+    ("shall engraven", "shall engrave"), ("shalt engraven", "shall engrave"),
+    ("will engraven", "will engrave"), ("wilt engraven", "will engrave"),
+    ("may engraven", "may engrave"), ("can engraven", "can engrave"),
+    ("mayest engraven", "may engrave"), ("canst engraven", "can engrave"),
+    ("to engraven", "to engrave"),
     ("did slay", "killed"), ("did smite", "struck"),
     # Doth + adverb + verb (pre-collapse to avoid "does greatly rejoice")
     ("doth exceedingly rejoice", "rejoices greatly"),
@@ -173,8 +178,10 @@ COMPOUND_SWAPS = [
     ("fruit of the loins", "fruit of the lineage"),
     ("seed of thy loins", "seed of your lineage"),
     ("spokesman of thy loins", "spokesman of your lineage"),
-    # ── Pronoun collision: "unto thee ye" → "to you, you" (insert comma) ──
+    # ── Pronoun collision: thee/thou adjacency → "you, you" (insert comma) ──
     ("unto thee ye", "to you, you"),
+    ("from thee thou", "from you, you"),
+    ("thee thou", "you, you"),  # catch-all for other adjacencies
     # ── Isaiah archaic phrases ──
     ("forasmuch as", "because"), ("Forasmuch as", "Because"),
     ("hardly bestead", "hard-pressed"),
@@ -817,33 +824,84 @@ def apply_swaps(text, swap_list):
     return result
 
 def fix_participles(text):
-    """Fix past tense → past participle after have/has/had auxiliaries."""
-    PARTICIPLE_MAP = [
-        ('saw', 'seen'), ('spoke', 'spoken'), ('broke', 'broken'),
-        ('gave', 'given'), ('took', 'taken'), ('wrote', 'written'),
-        ('drove', 'driven'), ('chose', 'chosen'), ('rose', 'risen'),
-        ('fell', 'fallen'), ('grew', 'grown'), ('knew', 'known'),
-        ('threw', 'thrown'), ('drew', 'drawn'), ('swore', 'sworn'),
-        ('tore', 'torn'), ('wore', 'worn'), ('froze', 'frozen'),
-        ('stole', 'stolen'), ('shrank', 'shrunk'), ('drank', 'drunk'),
-        ('began', 'begun'), ('sang', 'sung'), ('ran', 'run'),
-        ('went', 'gone'),
-    ]
-    for wrong, right in PARTICIPLE_MAP:
-        # Match have/has/had within a clause window (no ; or . between)
-        # Window of 50 chars to catch adverbs like "never", "also", "not yet"
-        for aux in ('had', 'have', 'has'):
-            text = re.sub(
-                r'(\b' + aux + r'\b[^;.]{0,50}?)data-mod="' + re.escape(wrong) + '"',
-                r'\1data-mod="' + right + '"', text)
+    """Fix past tense → past participle after have/has/had/be auxiliaries,
+    and past tense → base form after modals and 'to' infinitive.
+
+    Uses a single-pass approach: find all data-mod attributes, check the
+    preceding context for auxiliaries/modals, and correct as needed."""
+    PARTICIPLE_MAP = {
+        'saw': 'seen', 'spoke': 'spoken', 'broke': 'broken',
+        'gave': 'given', 'took': 'taken', 'wrote': 'written',
+        'drove': 'driven', 'chose': 'chosen', 'rose': 'risen',
+        'fell': 'fallen', 'grew': 'grown', 'knew': 'known',
+        'threw': 'thrown', 'drew': 'drawn', 'swore': 'sworn',
+        'tore': 'torn', 'wore': 'worn', 'froze': 'frozen',
+        'stole': 'stolen', 'shrank': 'shrunk', 'drank': 'drunk',
+        'began': 'begun', 'sang': 'sung', 'ran': 'run',
+        'went': 'gone',
+    }
+    MODAL_BASE_MAP = {
+        'engraved': 'engrave',
+        'saw': 'see', 'spoke': 'speak', 'broke': 'break',
+        'gave': 'give', 'took': 'take', 'wrote': 'write',
+        'drove': 'drive', 'chose': 'choose', 'rose': 'rise',
+        'fell': 'fall', 'grew': 'grow', 'knew': 'know',
+        'threw': 'throw', 'drew': 'draw', 'swore': 'swear',
+        'tore': 'tear', 'wore': 'wear', 'froze': 'freeze',
+        'stole': 'steal', 'shrank': 'shrink', 'drank': 'drink',
+        'began': 'begin', 'sang': 'sing', 'ran': 'run',
+        'went': 'go', 'struck': 'strike', 'killed': 'kill',
+        'fastened': 'fasten', 'listened': 'listen',
+        'complained': 'complain', 'stayed': 'stay',
+        'confused': 'confuse', 'compelled': 'compel',
+        'deceived': 'deceive', 'filled': 'fill',
+    }
+    AUX_SET = {'had', 'have', 'has', 'was', 'were', 'be', 'been', 'being', 'is', 'are'}
+    MODAL_SET = {'should', 'would', 'could', 'may', 'might', 'shall', 'will', 'can', 'must'}
+    # All words that might need correction in data-mod
+    ALL_TARGETS = set(PARTICIPLE_MAP.keys()) | set(MODAL_BASE_MAP.keys())
+
+    def _fix_mod(m):
+        mod_val = m.group(1)
+        if mod_val not in ALL_TARGETS:
+            return m.group(0)
+        # Look back ~120 chars for context (covers preceding spans + text)
+        start = max(0, m.start() - 120)
+        context = text[start:m.start()]
+        # Check for auxiliary (have/has/had/was/were/be...) in preceding text or data-mod
+        has_aux = bool(re.search(r'\b(' + '|'.join(AUX_SET) + r')\b', context))
+        has_modal = bool(re.search(r'\b(' + '|'.join(MODAL_SET) + r')\b', context))
+        # Also check for modal/aux inside preceding data-mod attributes
+        for dm in re.finditer(r'data-mod="([^"]*)"', context):
+            dm_text = dm.group(1)
+            if re.search(r'\b(' + '|'.join(AUX_SET) + r')$', dm_text):
+                has_aux = True
+            if re.search(r'\b(' + '|'.join(MODAL_SET) + r')$', dm_text):
+                has_modal = True
+        # Check for "to" infinitive (in text, not in a tag attribute)
+        has_to = bool(re.search(r'\bto\s*$', re.sub(r'<[^>]+>', ' ', context)))
+        if has_modal and mod_val in MODAL_BASE_MAP:
+            return 'data-mod="' + MODAL_BASE_MAP[mod_val] + '"'
+        if has_to and mod_val in MODAL_BASE_MAP:
+            return 'data-mod="' + MODAL_BASE_MAP[mod_val] + '"'
+        if has_aux and mod_val in PARTICIPLE_MAP:
+            return 'data-mod="' + PARTICIPLE_MAP[mod_val] + '"'
+        return m.group(0)
+
+    text = re.sub(r'data-mod="([^"]*)"', _fix_mod, text)
     return text
 
 def fix_articles(text):
     """Fix 'an' → 'a' before consonant sounds introduced by swaps (e.g. 'an very')."""
-    # Match: an <span...data-mod="[consonant-starting]"...>
+    # Match: an <span class="swap..."...data-mod="[consonant-starting]"...>
+    # Note: class may be "swap" or "swap swap-quiet", so match with [^>]* after "swap
     def _fix_an(m):
         return 'a' + m.group(0)[2:]  # replace 'an' with 'a'
-    text = re.sub(r'\ban\s+(<span class="swap"[^>]*data-mod="[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ])', _fix_an, text)
+    text = re.sub(r'\ban\s+(<span class="swap[^"]*"[^>]*data-mod="[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ])', _fix_an, text)
+    # Also fix 'a' → 'an' before vowel-starting swap output
+    def _fix_a(m):
+        return 'an' + m.group(0)[1:]  # replace 'a' with 'an'
+    text = re.sub(r'\ba\s+(<span class="swap[^"]*"[^>]*data-mod="[aeiouAEIOU])', _fix_a, text)
     return text
 
 def wrap_punctuation(text):
