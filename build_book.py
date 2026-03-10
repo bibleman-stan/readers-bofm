@@ -149,6 +149,18 @@ COMPOUND_SWAPS = [
     ("narrowly look upon", "look closely at"),
     ("doleful creatures", "mournful creatures"),
     ("cockatrice's", "viper's"), ("Cockatrice's", "Viper's"),  # before simple cockatrice swap
+    # ── Isaiah false friends & opaque phrases (batch 2) ──
+    ("cunning artificer", "skilled craftsman"),
+    ("round tires like the moon", "crescent ornaments"),
+    ("pleasant pictures", "beautiful craft"),
+    ("wanton eyes", "flirtatious eyes"),
+    ("walking and mincing as they go", "walking and taking dainty steps"),
+    ("peep and mutter", "chirp and mutter"),
+    ("crisping-pins", "purses"), ("Crisping-pins", "Purses"),
+    ("dry shod", "dry-footed"),
+    ("girdle of his reins", "belt around his waist"),  # reins = loins/inner being
+    ("girdle of their loins", "belt of their loins"),
+    ("girdle of his loins", "belt of his loins"),
     ("about my loins", "about my waist"),
     ("about his loins", "about his waist"),
     ("about their loins", "about their waist"),
@@ -288,6 +300,32 @@ SIMPLE_SWAPS = [
     ("vex", "trouble"), ("Vex", "Trouble"),
     ("vexed", "troubled"), ("Vexed", "Troubled"),
     ("vexation", "distress"), ("Vexation", "Distress"),
+    # ── Isaiah false friends & dead words (batch 2) ──
+    ("bravery", "finery"), ("Bravery", "Finery"),  # KJV "bravery" = splendor, NOT courage
+    ("carriages", "baggage"), ("Carriages", "Baggage"),  # NOT vehicles
+    ("girdle", "belt"), ("Girdle", "Belt"),
+    ("stoutness", "arrogance"), ("Stoutness", "Arrogance"),
+    ("replenished", "filled"), ("Replenished", "Filled"),
+    ("cauls", "hairnets"), ("Cauls", "Hairnets"),
+    ("mufflers", "veils"), ("Mufflers", "Veils"),
+    ("wimples", "shawls"), ("Wimples", "Shawls"),
+    ("stomacher", "fine robe"), ("Stomacher", "Fine robe"),
+    ("tabret", "tambourine"), ("Tabret", "Tambourine"),
+    ("latchet", "strap"), ("Latchet", "Strap"),
+    ("mattock", "hoe"), ("Mattock", "Hoe"),
+    ("silverlings", "silver coins"), ("Silverlings", "Silver coins"),
+    ("threescore", "sixty"), ("Threescore", "Sixty"),
+    ("digged", "dug"), ("Digged", "Dug"),
+    ("soothsayers", "fortune-tellers"), ("Soothsayers", "Fortune-tellers"),
+    ("fatlings", "fattened calves"), ("Fatlings", "Fattened calves"),
+    ("fatling", "fattened calf"), ("Fatling", "Fattened calf"),
+    ("arrogancy", "arrogance"), ("Arrogancy", "Arrogance"),
+    ("comely", "lovely"), ("Comely", "Lovely"),
+    ("covert", "shelter"), ("Covert", "Shelter"),
+    ("therein", "in it"), ("Therein", "In it"),
+    ("viol", "lyre"), ("Viol", "Lyre"),  # singular (viols already handled)
+    ("peeped", "chirped"), ("Peeped", "Chirped"),
+    ("Lo", "See"),
 ]
 
 KNOWN_ETH = {
