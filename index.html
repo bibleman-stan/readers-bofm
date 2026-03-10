@@ -2673,7 +2673,7 @@
           container.appendChild(bookDiv);
         }
         loadedBooks[bookId] = true;
-        if (aidOn) {
+        if (aidOn && bookDiv) {
           bookDiv.querySelectorAll('.swap').forEach(function(el) {
             el.setAttribute('data-orig-html', el.innerHTML);
             el.textContent = el.getAttribute('data-mod');

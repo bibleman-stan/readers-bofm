@@ -199,6 +199,10 @@ COMPOUND_SWAPS = [
     ("about her loins", "about her waist"),
     ("of his loins", "of his waist"),
     ("of their loins", "of their waist"),
+    # ── gird/girded: context-dependent verb ──
+    ("gird yourselves", "prepare yourselves"), ("Gird yourselves", "Prepare yourselves"),
+    ("girding of", "wrapping of"),
+    ("gird on", "strap on"),
 ]
 
 SIMPLE_SWAPS = [
@@ -357,7 +361,7 @@ SIMPLE_SWAPS = [
     ("therein", "in it"), ("Therein", "In it"),
     ("viol", "lyre"), ("Viol", "Lyre"),  # singular (viols already handled)
     ("peeped", "chirped"), ("Peeped", "Chirped"),
-    ("Lo", "See"),
+    ("Lo", "See"), ("lo", "see"),
     # ── Full BofM archaic vocabulary ──
     ("nigh", "near"), ("Nigh", "Near"),
     ("thence", "from there"), ("Thence", "From there"),
@@ -382,8 +386,7 @@ SIMPLE_SWAPS = [
     ("wherein", "in which"), ("Wherein", "In which"),
     ("whereon", "on which"), ("Whereon", "On which"),
     ("whereat", "at which"), ("Whereat", "At which"),
-    ("girded", "armed"), ("Girded", "Armed"),
-    ("gird", "arm"), ("Gird", "Arm"),
+    ("girded", "fastened"), ("Girded", "Fastened"),
     ("commenced", "began"), ("Commenced", "Began"),
     ("remembrance", "memory"), ("Remembrance", "Memory"),
     ("pestilence", "plague"), ("Pestilence", "Plague"),
