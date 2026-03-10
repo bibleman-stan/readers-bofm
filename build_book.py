@@ -141,6 +141,14 @@ COMPOUND_SWAPS = [
     ("spokesman of thy loins", "spokesman of your lineage"),
     # ── Pronoun collision: "unto thee ye" → "to you, you" (insert comma) ──
     ("unto thee ye", "to you, you"),
+    # ── Isaiah archaic phrases ──
+    ("forasmuch as", "because"), ("Forasmuch as", "Because"),
+    ("hardly bestead", "hard-pressed"),
+    ("teil tree", "terebinth"),
+    ("mean man", "common man"),
+    ("narrowly look upon", "look closely at"),
+    ("doleful creatures", "mournful creatures"),
+    ("cockatrice's", "viper's"), ("Cockatrice's", "Viper's"),  # before simple cockatrice swap
     ("about my loins", "about my waist"),
     ("about his loins", "about his waist"),
     ("about their loins", "about their waist"),
@@ -263,6 +271,23 @@ SIMPLE_SWAPS = [
     ("ceaseth", "ceases"), ("seeketh", "seeks"),
     ("slayeth", "kills"), ("liveth", "lives"),
     ("giveth", "gives"), ("goeth", "goes"), ("mattereth", "matters"),
+    # ── Isaiah archaic vocabulary ──
+    ("twain", "two"), ("Twain", "Two"),
+    ("betwixt", "between"), ("Betwixt", "Between"),
+    ("howbeit", "however"), ("Howbeit", "However"),
+    ("cockatrice", "viper"), ("Cockatrice", "Viper"),
+    ("satyrs", "wild goats"), ("Satyrs", "Wild goats"),
+    ("besom", "broom"), ("Besom", "Broom"),
+    ("disannul", "undo"), ("Disannul", "Undo"),
+    ("viols", "lyres"), ("Viols", "Lyres"),
+    ("bittern", "hedgehog"), ("Bittern", "Hedgehog"),
+    ("ensign", "banner"), ("Ensign", "Banner"),
+    ("feller", "woodcutter"), ("Feller", "Woodcutter"),
+    ("gin", "trap"), ("Gin", "Trap"),
+    ("hiss", "whistle"), ("Hiss", "Whistle"),
+    ("vex", "trouble"), ("Vex", "Trouble"),
+    ("vexed", "troubled"), ("Vexed", "Troubled"),
+    ("vexation", "distress"), ("Vexation", "Distress"),
 ]
 
 KNOWN_ETH = {
