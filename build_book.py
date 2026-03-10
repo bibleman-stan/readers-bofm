@@ -113,6 +113,38 @@ COMPOUND_SWAPS = [
     ("Thou art", "You are"), ("thou art", "you are"),
     ("wilt thou", "will you"), ("Wilt thou", "Will you"),
     ("art thou", "are you"), ("Art thou", "Are you"),
+    # ── Inverted -est thou questions → "Do you [verb]" ──
+    ("Believest thou", "Do you believe"), ("believest thou", "do you believe"),
+    ("Knowest thou", "Do you know"), ("knowest thou", "do you know"),
+    ("Deniest thou", "Do you deny"), ("deniest thou", "do you deny"),
+    ("Seest thou", "Do you see"), ("seest thou", "do you see"),
+    ("Sawest thou", "Did you see"), ("sawest thou", "did you see"),
+    ("Rememberest thou", "Do you remember"), ("rememberest thou", "do you remember"),
+    ("beholdest thou", "do you behold"), ("beheldest thou", "did you behold"),
+    ("desirest thou", "do you desire"),
+    ("sayest thou", "do you say"),
+    ("prayest thou", "do you pray"),
+    ("persecutest thou", "do you persecute"),
+    ("commandest thou", "do you command"),
+    ("comest thou", "do you come"),
+    # ── Non-inverted thou + -est (common patterns not yet caught) ──
+    ("thou seest", "you see"), ("Thou seest", "You see"),
+    ("thou mayest", "you may"), ("Thou mayest", "You may"),
+    ("thou beholdest", "you behold"), ("Thou beholdest", "You behold"),
+    ("thou desirest", "you desire"), ("Thou desirest", "You desire"),
+    ("thou believest", "you believe"), ("Thou believest", "You believe"),
+    ("thou sayest", "you say"), ("Thou sayest", "You say"),
+    ("thou prayest", "you pray"), ("thou goest", "you go"),
+    ("thou livest", "you live"), ("thou workest", "you work"),
+    ("thou heardest", "you heard"), ("thou speakest", "you speak"),
+    ("thou beheldest", "you beheld"),
+    ("thou comfortedst", "you comforted"), ("thou receivedst", "you received"),
+    # ── Collision guards ──
+    ("from thence", "from there"),
+    ("from whence", "from where"),
+    # ── "succoring" before "succor" simple swap ──
+    ("succoring", "helping"), ("Succoring", "Helping"),
+    ("succored", "helped"), ("Succored", "Helped"),
     ("did murmur", "complained"), ("did exhort", "urged"),
     # confound — "silenced" for debate sense; base form gets "confuse" for language sense
     ("did confound", "silenced"),
@@ -326,6 +358,42 @@ SIMPLE_SWAPS = [
     ("viol", "lyre"), ("Viol", "Lyre"),  # singular (viols already handled)
     ("peeped", "chirped"), ("Peeped", "Chirped"),
     ("Lo", "See"),
+    # ── Full BofM archaic vocabulary ──
+    ("nigh", "near"), ("Nigh", "Near"),
+    ("thence", "from there"), ("Thence", "From there"),
+    ("hence", "from here"), ("Hence", "From here"),
+    ("waxed", "grew"), ("Waxed", "Grew"),
+    ("waxen", "grown"), ("Waxen", "Grown"),
+    ("succor", "help"), ("Succor", "Help"),
+    ("raiment", "clothing"), ("Raiment", "Clothing"),
+    ("straightway", "immediately"), ("Straightway", "Immediately"),
+    ("hereafter", "after this"), ("Hereafter", "After this"),
+    ("travail", "toil"), ("Travail", "Toil"),
+    ("sojourn", "stay"), ("Sojourn", "Stay"),
+    ("sojourned", "stayed"), ("Sojourned", "Stayed"),
+    ("dearth", "famine"), ("Dearth", "Famine"),
+    ("fain", "gladly"), ("Fain", "Gladly"),
+    ("begat", "fathered"), ("Begat", "Fathered"),
+    ("beguile", "deceive"), ("Beguile", "Deceive"),
+    ("beguiled", "deceived"), ("Beguiled", "Deceived"),
+    ("thereon", "on it"), ("Thereon", "On it"),
+    ("therewith", "with it"), ("Therewith", "With it"),
+    ("thereto", "to it"), ("Thereto", "To it"),
+    ("wherein", "in which"), ("Wherein", "In which"),
+    ("whereon", "on which"), ("Whereon", "On which"),
+    ("whereat", "at which"), ("Whereat", "At which"),
+    ("girded", "armed"), ("Girded", "Armed"),
+    ("gird", "arm"), ("Gird", "Arm"),
+    ("commenced", "began"), ("Commenced", "Began"),
+    ("remembrance", "memory"), ("Remembrance", "Memory"),
+    ("pestilence", "plague"), ("Pestilence", "Plague"),
+    ("supplication", "plea"), ("Supplication", "Plea"),
+    ("supplications", "pleas"), ("Supplications", "Pleas"),
+    ("sundry", "various"), ("Sundry", "Various"),
+    ("manifold", "many"), ("Manifold", "Many"),
+    ("withal", "as well"), ("Withal", "As well"),
+    ("anon", "soon"), ("Anon", "Soon"),
+    ("ere", "before"), ("Ere", "Before"),
 ]
 
 KNOWN_ETH = {
@@ -508,6 +576,58 @@ def build_swap_list():
     s.sort(key=lambda x: len(x[0]), reverse=True)
     return s
 
+# ============================================================================
+# SINGLE-PASS SWAP ENGINE — replaces the old O(text × swaps) loop
+# ============================================================================
+# Pre-compile a single regex alternation from all "general" swaps (those with
+# no special matching logic).  Special-case words (meet, mine, save, account,
+# go to, notwithstanding, AICTP) are still handled individually.
+#
+# The compiled regex is built once at module load and reused for every verse.
+# ============================================================================
+
+SPECIAL_CASE_ARCHAICS = {
+    'meet', 'Meet', 'mine', 'Mine', 'account', 'Account',
+    'notwithstanding', 'Notwithstanding',
+}
+
+def _build_general_swap_engine(swap_list):
+    """Build a compiled regex + lookup dict for all non-special swaps.
+    Returns (compiled_regex, lookup_dict) where lookup_dict maps
+    archaic string → modern string."""
+    lookup = {}
+    patterns = []
+    seen = set()
+    for archaic, modern in swap_list:
+        if 'it came to pass' in archaic:
+            continue  # AICTP handled separately
+        if archaic in SPECIAL_CASE_ARCHAICS:
+            continue  # handled individually
+        if archaic == "go to" and modern == "go":
+            continue  # special punctuation lookahead
+        if archaic == "save" and modern == "unless":
+            continue  # special negative lookbehind
+        if archaic in seen:
+            continue  # deduplicate (longest-first already in swap_list)
+        seen.add(archaic)
+        lookup[archaic] = modern
+        patterns.append(re.escape(archaic))
+    # Sort patterns longest-first so the alternation prefers longer matches
+    patterns.sort(key=len, reverse=True)
+    # Build one big regex: \b(?:pattern1|pattern2|...)\b
+    big_pattern = r'\b(?:' + '|'.join(patterns) + r')\b'
+    compiled = re.compile(big_pattern)
+    return compiled, lookup
+
+# Module-level cache (built lazily on first call)
+_SWAP_ENGINE = None
+
+def _get_swap_engine(swap_list):
+    global _SWAP_ENGINE
+    if _SWAP_ENGINE is None:
+        _SWAP_ENGINE = _build_general_swap_engine(swap_list)
+    return _SWAP_ENGINE
+
 def apply_swaps(text, swap_list):
     placeholders = []
     result = text
@@ -565,15 +685,24 @@ def apply_swaps(text, swap_list):
 
     result = re.sub(r'\b(do|does|doth|Do|Does|Doth) (\w+)\b', _do_verb_replace, result)
 
-    for i, (archaic, modern) in enumerate(swap_list):
-        sentinel = f"\x00{i}\x00"
-        # AICTP patterns: literal match, not word-boundary
-        # Match the formula followed by space or end-of-line, preserve spacing
-        if 'it came to pass' in archaic:
-            if archaic in result:
-                result = result.replace(archaic, sentinel)
-                placeholders.append((sentinel, archaic, modern))
+    # ---- AICTP swaps: literal string match (no word boundary) ----
+    for archaic, modern in swap_list:
+        if 'it came to pass' not in archaic:
             continue
+        if archaic in result:
+            sentinel = f"\x00A{len(placeholders)}\x00"
+            result = result.replace(archaic, sentinel)
+            placeholders.append((sentinel, archaic, modern))
+
+    # ---- Special-case swaps (custom regex logic) ----
+    # Build a quick lookup from swap_list for special words
+    _special_lookup = {}
+    for archaic, modern in swap_list:
+        if archaic in SPECIAL_CASE_ARCHAICS or (archaic == "go to" and modern == "go") or (archaic == "save" and modern == "unless"):
+            _special_lookup[archaic] = modern
+
+    for archaic, modern in _special_lookup.items():
+        sentinel = f"\x00S{len(placeholders)}\x00"
         if archaic.lower() == "meet":
             for prefix in [r'(?<=\bis )', r'(?<=\bwas )', r'(?<=\bbe )']:
                 result = re.sub(prefix + re.escape(archaic) + r'\b', sentinel, result)
@@ -588,33 +717,45 @@ def apply_swaps(text, swap_list):
             result = re.sub(r'\b' + re.escape(archaic) + r'\b(?! of\b| for\b)', sentinel, result)
             placeholders.append((sentinel, archaic, modern)); continue
         if archaic == "go to" and modern == "go":
-            # Only match the archaic interjection form: "go to," or "go to;"
             result = re.sub(r'\bgo to(?=[,;])', sentinel, result)
             placeholders.append((sentinel, archaic, modern)); continue
-        # notwithstanding: context-sensitive — "despite" before NP, "even though" before clause
+        # notwithstanding: context-sensitive
         if archaic.lower() == 'notwithstanding':
             cap = archaic[0].isupper()
-            def _notw_replace(m):
+            def _notw_replace(m, _cap=cap, _archaic=archaic):
                 after = result[m.end():m.end()+20].lstrip()
                 first_word = re.match(r'[a-zA-Z]+', after)
                 fw = first_word.group(0).lower() if first_word else ''
-                # Before noun phrases → "despite"
                 if fw in ('the','their','all','our','my','his','her','its','a','an',
                           'these','this','that','those','such','every','much','many'):
-                    mod = 'Despite' if cap else 'despite'
-                # Before clause (pronoun + verb) → "even though"
+                    mod = 'Despite' if _cap else 'despite'
                 elif fw in ('they','we','he','she','i','it','so','there','being'):
-                    mod = 'Even though' if cap else 'even though'
-                # Standalone / end of phrase → "nevertheless"
+                    mod = 'Even though' if _cap else 'even though'
                 else:
-                    mod = 'Nevertheless' if cap else 'nevertheless'
-                idx = len(placeholders); sent = f"\x00{len(placeholders)+1000}\x00"
-                placeholders.append((sent, archaic, mod)); return sent
+                    mod = 'Nevertheless' if _cap else 'nevertheless'
+                idx = len(placeholders); sent = f"\x00N{idx}\x00"
+                placeholders.append((sent, _archaic, mod)); return sent
             result = re.sub(r'\b' + re.escape(archaic) + r'\b', _notw_replace, result)
             continue
-        result = re.sub(r'\b' + re.escape(archaic) + r'\b', sentinel, result)
-        placeholders.append((sentinel, archaic, modern))
 
+    # ---- SINGLE-PASS general swaps (the big performance win) ----
+    compiled_re, lookup = _get_swap_engine(swap_list)
+
+    def _general_replace(m):
+        matched = m.group(0)
+        # Skip if inside a sentinel (already replaced by earlier pass)
+        if '\x00' in result[max(0, m.start()-2):m.start()]:
+            return matched
+        modern = lookup.get(matched)
+        if modern is None:
+            return matched  # shouldn't happen, but safety
+        idx = len(placeholders); sent = f"\x00G{idx}\x00"
+        placeholders.append((sent, matched, modern))
+        return sent
+
+    result = compiled_re.sub(_general_replace, result)
+
+    # ---- -eth verb fallback (catch any remaining -eth words) ----
     def eth_replace(m):
         word = m.group(0)
         if word.lower() in NOT_ETH_VERBS:
@@ -633,7 +774,7 @@ def apply_swaps(text, swap_list):
         placeholders.append((sent, word, mf)); return sent
     result = re.sub(r'\b[a-z]+eth\b', lambda m: eth_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
-    # Words that follow "did" but are NOT verbs — skip these
+    # ---- "did" + verb → past tense ----
     DID_SKIP = {'my', 'his', 'her', 'their', 'our', 'your', 'its', 'the', 'a', 'an',
                 'not', 'also', 'all', 'both', 'even', 'never', 'once', 'then', 'thus',
                 'i', 'it', 'they', 'she', 'he', 'we', 'so', 'as', 'again', 'frankly',
@@ -652,6 +793,7 @@ def apply_swaps(text, swap_list):
         placeholders.append((sent, full, past)); return sent
     result = re.sub(r'\bdid (\w+)\b', lambda m: did_verb_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
+    # ---- "thou" + -est fallback (catch any not already in compound swaps) ----
     def thou_est_replace(m):
         full, ve = m.group(0), m.group(1)
         base = ve[:-3] if ve.endswith('est') else (ve[:-2] if ve.endswith('st') else None)
@@ -660,8 +802,8 @@ def apply_swaps(text, swap_list):
         placeholders.append((sent, full, ("You " if full[0]=='T' else "you ") + base)); return sent
     result = re.sub(r'\b[Tt]hou (\w+est)\b', lambda m: thou_est_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
+    # ---- Final expansion: sentinels → HTML <span> markup ----
     for sentinel, archaic, modern in placeholders:
-        # High-frequency words get swap-quiet class (no dotted underline)
         arc_low = archaic.lower()
         is_quiet = (arc_low in QUIET_ARCHAICS
                     or any(q in arc_low for q in QUIET_ARCHAICS if len(q) > 3))
