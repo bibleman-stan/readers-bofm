@@ -151,6 +151,8 @@ COMPOUND_SWAPS = [
     ("confound the language", "confuse the language"),
     ("not confound us", "not confuse us"),
     ("did engraven", "engraved"),
+    ("should engraven", "should engrave"), ("might engraven", "might engrave"),
+    ("could engraven", "could engrave"), ("would engraven", "would engrave"),
     ("did slay", "killed"), ("did smite", "struck"),
     # Doth + adverb + verb (pre-collapse to avoid "does greatly rejoice")
     ("doth exceedingly rejoice", "rejoices greatly"),
