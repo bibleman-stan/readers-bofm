@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gloss Pip — Size & Brightness Tuning</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Literata', Georgia, serif; padding: 30px; background: #1c1f24; color: #e8e0d0; line-height: 2.2; }
+  .container { max-width: 700px; margin: 0 auto; }
+  h2 { font-size: 0.9em; color: #888; margin: 30px 0 12px; font-weight: normal; letter-spacing: 0.05em; text-transform: uppercase; }
+  h2:first-child { margin-top: 0; }
+  .verse { font-size: 17px; margin-bottom: 24px; }
+  .ref { font-size: 0.48em; vertical-align: super; color: #888; margin-right: 2px; }
+  .divider { border: none; border-top: 1px solid #333; margin: 30px 0; }
+
+  /* Swap — kept as-is */
+  .swap { color: inherit; text-decoration: underline dotted; text-decoration-color: #6b9; text-underline-offset: 3px; }
+  .swap-quiet { text-decoration: none !important; }
+
+  /* Shared gloss base */
+  .gloss { cursor: pointer; text-decoration: none; }
+
+  /* ====== SIZE / BRIGHTNESS VARIATIONS ====== */
+
+  /* A: 0.4em, full opacity, brighter colors */
+  .szA .gloss::after {
+    content: '\25CF';
+    font-size: 0.4em;
+    vertical-align: super;
+    margin-left: 1px;
+  }
+  .szA .gloss[data-cat="geographic"]::after { color: #7dcfe6; }
+  .szA .gloss[data-cat="cultural"]::after { color: #e0c060; }
+  .szA .gloss[data-cat="historical"]::after { color: #d4908a; }
+  .szA .gloss[data-cat="literary"]::after { color: #88d488; }
+
+  /* B: 0.45em, full opacity, brighter colors */
+  .szB .gloss::after {
+    content: '\25CF';
+    font-size: 0.45em;
+    vertical-align: super;
+    margin-left: 1px;
+  }
+  .szB .gloss[data-cat="geographic"]::after { color: #7dcfe6; }
+  .szB .gloss[data-cat="cultural"]::after { color: #e0c060; }
+  .szB .gloss[data-cat="historical"]::after { color: #d4908a; }
+  .szB .gloss[data-cat="literary"]::after { color: #88d488; }
+
+  /* C: 0.5em, full opacity, brighter colors */
+  .szC .gloss::after {
+    content: '\25CF';
+    font-size: 0.5em;
+    vertical-align: super;
+    margin-left: 1px;
+  }
+  .szC .gloss[data-cat="geographic"]::after { color: #7dcfe6; }
+  .szC .gloss[data-cat="cultural"]::after { color: #e0c060; }
+  .szC .gloss[data-cat="historical"]::after { color: #d4908a; }
+  .szC .gloss[data-cat="literary"]::after { color: #88d488; }
+
+  /* D: star pip — 6-pointed ✦ */
+  .szD .gloss::after {
+    content: '\2726';
+    font-size: 0.4em;
+    vertical-align: super;
+    margin-left: 1px;
+  }
+  .szD .gloss[data-cat="geographic"]::after { color: #7dcfe6; }
+  .szD .gloss[data-cat="cultural"]::after { color: #e0c060; }
+  .szD .gloss[data-cat="historical"]::after { color: #d4908a; }
+  .szD .gloss[data-cat="literary"]::after { color: #88d488; }
+
+  /* E: star pip — 4-pointed ✦ at 0.45em */
+  .szE .gloss { cursor: pointer; text-decoration: none; }
+  .szE .gloss::after {
+    content: '\2726';
+    font-size: 0.45em;
+    vertical-align: super;
+    margin-left: 1px;
+  }
+  .szE .gloss[data-cat="geographic"]::after { color: #7dcfe6; }
+  .szE .gloss[data-cat="cultural"]::after { color: #e0c060; }
+  .szE .gloss[data-cat="historical"]::after { color: #d4908a; }
+  .szE .gloss[data-cat="literary"]::after { color: #88d488; }
+
+  /* F: classic 5-pointed star ★ at 0.4em */
+  .szF .gloss { cursor: pointer; text-decoration: none; }
+  .szF .gloss::after {
+    content: '\2605';
+    font-size: 0.4em;
+    vertical-align: super;
+    margin-left: 1px;
+  }
+  .szF .gloss[data-cat="geographic"]::after { color: #7dcfe6; }
+  .szF .gloss[data-cat="cultural"]::after { color: #e0c060; }
+  .szF .gloss[data-cat="historical"]::after { color: #d4908a; }
+  .szF .gloss[data-cat="literary"]::after { color: #88d488; }
+
+  /* G: asterisk ✱ at 0.45em */
+  .szG .gloss { cursor: pointer; text-decoration: none; }
+  .szG .gloss::after {
+    content: '\2731';
+    font-size: 0.45em;
+    vertical-align: super;
+    margin-left: 1px;
+  }
+  .szG .gloss[data-cat="geographic"]::after { color: #7dcfe6; }
+  .szG .gloss[data-cat="cultural"]::after { color: #e0c060; }
+  .szG .gloss[data-cat="historical"]::after { color: #d4908a; }
+  .szG .gloss[data-cat="literary"]::after { color: #88d488; }
+
+  .toggle-row { margin: 20px 0; }
+  .toggle-btn { background: #333; color: #e8e0d0; border: 1px solid #555; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 14px; }
+  .toggle-btn:hover { background: #444; }
+
+  .legend { font-size: 0.75em; color: #999; margin: 8px 0 20px; }
+  .legend span { margin-right: 14px; }
+  .legend .geo { color: #7dcfe6; }
+  .legend .cul { color: #e0c060; }
+  .legend .his { color: #d4908a; }
+  .legend .lit { color: #88d488; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<div class="toggle-row">
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Light/Dark Mode</button>
+</div>
+
+<div class="legend">
+  <span class="geo">● geographic</span>
+  <span class="cul">● cultural</span>
+  <span class="his">● historical</span>
+  <span class="lit">● literary</span>
+</div>
+
+<h2>Size A — 0.4em filled circle (one step up from before)</h2>
+<div class="verse szA">
+<span class="ref">12:6</span> Therefore O Lord <span class="swap swap-quiet">thou hast</span> forsaken <span class="swap swap-quiet">thy</span> people the house of Jacob because they be <span class="gloss" data-cat="cultural">replenished from the east</span> and <span class="gloss" data-cat="cultural">hearken unto soothsayers</span> like <span class="gloss" data-cat="geographic">the Philistines</span> and they please themselves in <span class="gloss" data-cat="cultural">the children of strangers</span>
+</div>
+
+<h2>Size B — 0.45em filled circle</h2>
+<div class="verse szB">
+<span class="ref">12:6</span> Therefore O Lord <span class="swap swap-quiet">thou hast</span> forsaken <span class="swap swap-quiet">thy</span> people the house of Jacob because they be <span class="gloss" data-cat="cultural">replenished from the east</span> and <span class="gloss" data-cat="cultural">hearken unto soothsayers</span> like <span class="gloss" data-cat="geographic">the Philistines</span> and they please themselves in <span class="gloss" data-cat="cultural">the children of strangers</span>
+</div>
+
+<h2>Size C — 0.5em filled circle (largest)</h2>
+<div class="verse szC">
+<span class="ref">12:6</span> Therefore O Lord <span class="swap swap-quiet">thou hast</span> forsaken <span class="swap swap-quiet">thy</span> people the house of Jacob because they be <span class="gloss" data-cat="cultural">replenished from the east</span> and <span class="gloss" data-cat="cultural">hearken unto soothsayers</span> like <span class="gloss" data-cat="geographic">the Philistines</span> and they please themselves in <span class="gloss" data-cat="cultural">the children of strangers</span>
+</div>
+
+<h2>Size D — 4-pointed star ✦ at 0.4em</h2>
+<div class="verse szD">
+<span class="ref">12:6</span> Therefore O Lord <span class="swap swap-quiet">thou hast</span> forsaken <span class="swap swap-quiet">thy</span> people the house of Jacob because they be <span class="gloss" data-cat="cultural">replenished from the east</span> and <span class="gloss" data-cat="cultural">hearken unto soothsayers</span> like <span class="gloss" data-cat="geographic">the Philistines</span> and they please themselves in <span class="gloss" data-cat="cultural">the children of strangers</span>
+</div>
+
+<h2>Size E — 4-pointed star ✦ at 0.45em</h2>
+<div class="verse szE">
+<span class="ref">12:6</span> Therefore O Lord <span class="swap swap-quiet">thou hast</span> forsaken <span class="swap swap-quiet">thy</span> people the house of Jacob because they be <span class="gloss" data-cat="cultural">replenished from the east</span> and <span class="gloss" data-cat="cultural">hearken unto soothsayers</span> like <span class="gloss" data-cat="geographic">the Philistines</span> and they please themselves in <span class="gloss" data-cat="cultural">the children of strangers</span>
+</div>
+
+<h2>Size F — 5-pointed star ★ at 0.4em</h2>
+<div class="verse szF">
+<span class="ref">12:6</span> Therefore O Lord <span class="swap swap-quiet">thou hast</span> forsaken <span class="swap swap-quiet">thy</span> people the house of Jacob because they be <span class="gloss" data-cat="cultural">replenished from the east</span> and <span class="gloss" data-cat="cultural">hearken unto soothsayers</span> like <span class="gloss" data-cat="geographic">the Philistines</span> and they please themselves in <span class="gloss" data-cat="cultural">the children of strangers</span>
+</div>
+
+<h2>Size G — Heavy asterisk ✱ at 0.45em</h2>
+<div class="verse szG">
+<span class="ref">12:6</span> Therefore O Lord <span class="swap swap-quiet">thou hast</span> forsaken <span class="swap swap-quiet">thy</span> people the house of Jacob because they be <span class="gloss" data-cat="cultural">replenished from the east</span> and <span class="gloss" data-cat="cultural">hearken unto soothsayers</span> like <span class="gloss" data-cat="geographic">the Philistines</span> and they please themselves in <span class="gloss" data-cat="cultural">the children of strangers</span>
+</div>
+
+<hr class="divider">
+
+<h2>Stress test — 2 Ne 12:12–16 (Size B circle, with swaps)</h2>
+<div class="verse szB" style="line-height: 2.35;">
+<span class="ref">12:12</span> For <span class="gloss" data-cat="literary">the day of the Lord of Hosts</span> soon <span class="swap swap-quiet">cometh</span> upon all nations, <span class="swap swap-quiet">yea</span>, upon every one; <span class="swap swap-quiet">yea</span>, upon the proud and lofty, and upon every one who is lifted up, and he shall be brought low. <span class="ref">12:13</span> <span class="swap swap-quiet">Yea</span>, and the day of the Lord shall come upon all <span class="gloss" data-cat="geographic">the cedars of Lebanon</span>, for they are high and lifted up; and upon all <span class="gloss" data-cat="geographic">the oaks of Bashan</span>; <span class="ref">12:14</span> And upon all the high mountains, and upon all the hills, and upon all the nations which are lifted up, and upon every people; <span class="ref">12:15</span> And upon every high tower, and upon every <span class="gloss" data-cat="historical">fenced wall</span>; <span class="ref">12:16</span> And upon all <span class="gloss" data-cat="historical">the ships of the sea</span>, and upon all <span class="gloss" data-cat="historical">the ships of Tarshish</span>, and upon all <span class="gloss" data-cat="cultural">pleasant pictures</span>.
+</div>
+
+<h2>Same stress test — 4-pointed star ✦ (Size E)</h2>
+<div class="verse szE" style="line-height: 2.35;">
+<span class="ref">12:12</span> For <span class="gloss" data-cat="literary">the day of the Lord of Hosts</span> soon <span class="swap swap-quiet">cometh</span> upon all nations, <span class="swap swap-quiet">yea</span>, upon every one; <span class="swap swap-quiet">yea</span>, upon the proud and lofty, and upon every one who is lifted up, and he shall be brought low. <span class="ref">12:13</span> <span class="swap swap-quiet">Yea</span>, and the day of the Lord shall come upon all <span class="gloss" data-cat="geographic">the cedars of Lebanon</span>, for they are high and lifted up; and upon all <span class="gloss" data-cat="geographic">the oaks of Bashan</span>; <span class="ref">12:14</span> And upon all the high mountains, and upon all the hills, and upon all the nations which are lifted up, and upon every people; <span class="ref">12:15</span> And upon every high tower, and upon every <span class="gloss" data-cat="historical">fenced wall</span>; <span class="ref">12:16</span> And upon all <span class="gloss" data-cat="historical">the ships of the sea</span>, and upon all <span class="gloss" data-cat="historical">the ships of Tarshish</span>, and upon all <span class="gloss" data-cat="cultural">pleasant pictures</span>.
+</div>
+
+<h2>Same stress test — Heavy asterisk ✱ (Size G)</h2>
+<div class="verse szG" style="line-height: 2.35;">
+<span class="ref">12:12</span> For <span class="gloss" data-cat="literary">the day of the Lord of Hosts</span> soon <span class="swap swap-quiet">cometh</span> upon all nations, <span class="swap swap-quiet">yea</span>, upon every one; <span class="swap swap-quiet">yea</span>, upon the proud and lofty, and upon every one who is lifted up, and he shall be brought low. <span class="ref">12:13</span> <span class="swap swap-quiet">Yea</span>, and the day of the Lord shall come upon all <span class="gloss" data-cat="geographic">the cedars of Lebanon</span>, for they are high and lifted up; and upon all <span class="gloss" data-cat="geographic">the oaks of Bashan</span>; <span class="ref">12:14</span> And upon all the high mountains, and upon all the hills, and upon all the nations which are lifted up, and upon every people; <span class="ref">12:15</span> And upon every high tower, and upon every <span class="gloss" data-cat="historical">fenced wall</span>; <span class="ref">12:16</span> And upon all <span class="gloss" data-cat="historical">the ships of the sea</span>, and upon all <span class="gloss" data-cat="historical">the ships of Tarshish</span>, and upon all <span class="gloss" data-cat="cultural">pleasant pictures</span>.
+</div>
+
+</div>
+
+<script>
+function toggleMode() {
+  var isLight = document.body.style.background === 'rgb(245, 240, 232)';
+  document.body.style.background = isLight ? '#1c1f24' : '#f5f0e8';
+  document.body.style.color = isLight ? '#e8e0d0' : '#3a3630';
+  // Adjust pip colors for light mode (darker versions)
+  var cats = {geographic: ['#7dcfe6','#2a8aaa'], cultural: ['#e0c060','#9a7a20'], historical: ['#d4908a','#994a44'], literary: ['#88d488','#3a8a3a']};
+  var newLight = !isLight;
+  document.querySelectorAll('.gloss').forEach(function(el) {
+    var cat = el.getAttribute('data-cat');
+    if (cat && cats[cat]) el.style.setProperty('--pip-color', newLight ? cats[cat][1] : cats[cat][0]);
+  });
+  // Use CSS custom property fallback — simpler to just set directly on pseudo-elements via class
+  document.body.classList.toggle('light-mode');
+}
+</script>
+</body>
+</html>
