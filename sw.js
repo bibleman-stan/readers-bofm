@@ -2,7 +2,7 @@
 // Strategy: cache app shell eagerly, cache books lazily (on first open),
 // with option to pre-cache all books at once via message from page.
 
-const CACHE_NAME = 'bomreader-v6';
+const CACHE_NAME = 'bomreader-v7';
 
 // App shell — cached on install
 const SHELL_ASSETS = [
@@ -25,14 +25,17 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
-// Activate: clean old caches
+// Activate: clean old caches, then tell all open tabs to refresh
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
-    )
+    ).then(() => self.clients.claim())
+     .then(() => self.clients.matchAll({ type: 'window' }))
+     .then(clients => {
+       clients.forEach(client => client.postMessage({ type: 'SW_UPDATED' }));
+     })
   );
-  self.clients.claim();
 });
 
 // Fetch: cache-first for books and shell, network-first for fonts (so updates come through)

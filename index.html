@@ -3292,6 +3292,15 @@ if ('serviceWorker' in navigator) {
     var sec = document.getElementById('offline-section');
     if (sec) sec.style.display = 'none';
   });
+
+  // Silent auto-refresh: when a new SW activates, it sends SW_UPDATED.
+  // Reload the page so the reader always gets the latest content.
+  navigator.serviceWorker.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'SW_UPDATED') {
+      console.log('New version detected — refreshing');
+      window.location.reload();
+    }
+  });
 }
 
 function checkOfflineStatus() {
