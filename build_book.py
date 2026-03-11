@@ -1245,9 +1245,13 @@ def apply_gloss_highlights(line_text, gloss_entries):
             plain_idx += 1
         fragment = ''.join(frag_parts)
 
-        # Wrap visible text in gloss span, respecting existing tag boundaries
-        gloss_open = f'<span class="gloss" data-note="{note}" data-cat="{cat}">'
+        # Wrap visible text in gloss span, respecting existing tag boundaries.
+        # Continuation fragments (after the first open) get gloss-cont class
+        # so CSS can suppress duplicate ✦ markers.
+        gloss_open_first = f'<span class="gloss" data-note="{note}" data-cat="{cat}">'
+        gloss_open_cont  = f'<span class="gloss gloss-cont" data-note="{note}" data-cat="{cat}">'
         in_gloss = False
+        gloss_opened_count = 0
         fi = 0
         while fi < len(fragment):
             if fragment[fi] == '<':
@@ -1262,7 +1266,8 @@ def apply_gloss_highlights(line_text, gloss_entries):
                 fi = end_tag + 1
             else:
                 if not in_gloss:
-                    result.append(gloss_open)
+                    gloss_opened_count += 1
+                    result.append(gloss_open_first if gloss_opened_count == 1 else gloss_open_cont)
                     in_gloss = True
                 result.append(fragment[fi])
                 fi += 1
@@ -1476,9 +1481,12 @@ def apply_phrase_highlights(line_text, phrases, css_class):
     # by closing/reopening the highlight span at each tag boundary.
     def _wrap_respecting_tags(html_fragment, cls):
         """Wrap visible text in <span class=cls>, closing and reopening
-        around any existing HTML tags so nesting stays valid."""
+        around any existing HTML tags so nesting stays valid.
+        Continuation fragments (after the first) get an extra 'gloss-cont'
+        class so CSS can suppress duplicate markers."""
         parts = []
         inside_highlight = False
+        opened_count = 0      # how many times we've opened a highlight span
         i = 0
         while i < len(html_fragment):
             if html_fragment[i] == '<':
@@ -1495,7 +1503,11 @@ def apply_phrase_highlights(line_text, phrases, css_class):
             else:
                 # Visible text — make sure we're inside highlight
                 if not inside_highlight:
-                    parts.append(f'<span class="{cls}">')
+                    opened_count += 1
+                    if opened_count > 1 and 'gloss' in cls:
+                        parts.append(f'<span class="{cls} gloss-cont">')
+                    else:
+                        parts.append(f'<span class="{cls}">')
                     inside_highlight = True
                 parts.append(html_fragment[i])
                 i += 1
