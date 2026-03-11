@@ -868,18 +868,42 @@ def fix_participles(text):
         # Look back ~120 chars for context (covers preceding spans + text)
         start = max(0, m.start() - 120)
         context = text[start:m.start()]
-        # Check for auxiliary (have/has/had/was/were/be...) in preceding text or data-mod
+
+        # Strip HTML tags to get plain text context for clause-boundary detection
+        plain_context = re.sub(r'<[^>]+>', ' ', context)
+
+        # For modal detection, only look within the current clause.
+        # Split on clause boundaries (comma, semicolon, colon, period, question mark)
+        # and use only the last clause fragment.
+        clause_context = re.split(r'[,;:.?!]', plain_context)[-1]
+
+        # Check for auxiliary (have/has/had/was/were/be...) in full context
         has_aux = bool(re.search(r'\b(' + '|'.join(AUX_SET) + r')\b', context))
-        has_modal = bool(re.search(r'\b(' + '|'.join(MODAL_SET) + r')\b', context))
-        # Also check for modal/aux inside preceding data-mod attributes
+        # Check for modal only in same clause (prevents cross-clause false positives)
+        has_modal = bool(re.search(r'\b(' + '|'.join(MODAL_SET) + r')\b', clause_context))
+        # Also check for modal/aux inside preceding data-mod attributes (same clause)
         for dm in re.finditer(r'data-mod="([^"]*)"', context):
             dm_text = dm.group(1)
             if re.search(r'\b(' + '|'.join(AUX_SET) + r')$', dm_text):
                 has_aux = True
+        # Only count data-mod modals if they're in the same clause fragment
+        clause_context_raw = context[context.rfind('>') if '>' in context else 0:]
+        for dm in re.finditer(r'data-mod="([^"]*)"', clause_context_raw):
+            dm_text = dm.group(1)
             if re.search(r'\b(' + '|'.join(MODAL_SET) + r')$', dm_text):
                 has_modal = True
-        # Check for "to" infinitive (in text, not in a tag attribute)
-        has_to = bool(re.search(r'\bto\s*$', re.sub(r'<[^>]+>', ' ', context)))
+        # Check for "to" infinitive
+        has_to = bool(re.search(r'\bto\s*$', plain_context))
+        # When both modal AND be-auxiliary are present (e.g. "should be engraved"),
+        # it's passive voice — keep past participle, don't reduce to base form.
+        BE_WORDS = {'be', 'been', 'being', 'is', 'are', 'was', 'were'}
+        has_be = bool(re.search(r'\b(' + '|'.join(BE_WORDS) + r')\b', clause_context))
+        if has_modal and has_be and mod_val in PARTICIPLE_MAP:
+            # Passive: "should be engraved" — keep participle
+            return 'data-mod="' + PARTICIPLE_MAP[mod_val] + '"'
+        if has_modal and has_be:
+            # Passive but no irregular participle — keep as-is (regular -ed is fine)
+            return m.group(0)
         if has_modal and mod_val in MODAL_BASE_MAP:
             return 'data-mod="' + MODAL_BASE_MAP[mod_val] + '"'
         if has_to and mod_val in MODAL_BASE_MAP:
