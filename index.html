@@ -897,7 +897,6 @@
     text-decoration-color: #666;
     text-underline-offset: 3px;
     cursor: pointer;
-    position: relative;
   }
   .gloss:hover {
     text-decoration-color: #aaa;
@@ -921,10 +920,7 @@
 
   /* Gloss popover */
   .gloss-popover {
-    position: absolute;
-    bottom: calc(100% + 8px);
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed;
     background: #2a2a2a;
     color: #e0e0e0;
     border: 1px solid #444;
@@ -932,43 +928,21 @@
     padding: 8px 12px;
     font-size: 0.82rem;
     line-height: 1.45;
-    max-width: 320px;
-    min-width: 140px;
+    width: max-content;
+    max-width: min(360px, 85vw);
     white-space: normal;
     z-index: 1000;
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     pointer-events: auto;
   }
-  .gloss-popover::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent;
-    border-top-color: #2a2a2a;
-  }
-  .gloss-popover::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 7px solid transparent;
-    border-top-color: #444;
-  }
+  /* Arrow omitted — fixed positioning makes arrow alignment unreliable */
   body.light-mode .gloss-popover {
     background: #fff;
     color: #333;
     border-color: #ccc;
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
   }
-  body.light-mode .gloss-popover::after {
-    border-top-color: #fff;
-  }
-  body.light-mode .gloss-popover::before {
-    border-top-color: #ccc;
-  }
+  /* Light-mode arrow overrides removed — using fixed positioning without arrows */
   .gloss-popover .cat-badge {
     display: inline-block;
     font-size: 0.65rem;
@@ -3911,22 +3885,25 @@ function flushAndReload() {
     var badge = cat ? '<div class="cat-badge ' + cat + '">' + cat + '</div>' : '';
     pop.innerHTML = badge + '<div>' + note + '</div>';
 
-    gloss.appendChild(pop);
+    // Append to body so it's not constrained by inline parent
+    document.body.appendChild(pop);
 
-    // Reposition if off-screen
-    var rect = pop.getBoundingClientRect();
-    if (rect.left < 8) {
-      pop.style.left = '0';
-      pop.style.transform = 'none';
-    } else if (rect.right > window.innerWidth - 8) {
-      pop.style.left = 'auto';
-      pop.style.right = '0';
-      pop.style.transform = 'none';
-    }
-    if (rect.top < 8) {
-      pop.style.bottom = 'auto';
-      pop.style.top = 'calc(100% + 8px)';
-    }
+    // Position relative to the gloss span
+    var gr = gloss.getBoundingClientRect();
+    var pr = pop.getBoundingClientRect();
+    var cx = gr.left + gr.width / 2;
+    var popLeft = cx - pr.width / 2;
+    var popTop = gr.top - pr.height - 8;
+
+    // Keep within viewport horizontally
+    if (popLeft < 8) popLeft = 8;
+    if (popLeft + pr.width > window.innerWidth - 8) popLeft = window.innerWidth - 8 - pr.width;
+
+    // Flip below if no room above
+    if (popTop < 8) popTop = gr.bottom + 8;
+
+    pop.style.left = popLeft + 'px';
+    pop.style.top = popTop + 'px';
 
     activePopover = pop;
     activeGloss = gloss;
