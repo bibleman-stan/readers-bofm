@@ -892,31 +892,27 @@
 
   /* === CONTEXTUAL GLOSSES (Isaiah/Malachi inline annotations) === */
   .gloss {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: #666;
-    text-underline-offset: 3px;
+    text-decoration: none;
     cursor: pointer;
   }
-  .gloss:hover {
-    text-decoration-color: #aaa;
+  .gloss::after {
+    content: '\2726';
+    font-size: 0.45em;
+    vertical-align: super;
+    margin-left: 1px;
+    color: #888;
   }
-  /* Category color hints on the underline */
-  .gloss[data-cat="geographic"] { text-decoration-color: #8ab4c4; }
-  .gloss[data-cat="geographic"]:hover { text-decoration-color: #5a94a4; }
-  .gloss[data-cat="cultural"] { text-decoration-color: #c4a86a; }
-  .gloss[data-cat="cultural"]:hover { text-decoration-color: #a48a4a; }
-  .gloss[data-cat="historical"] { text-decoration-color: #b48a8a; }
-  .gloss[data-cat="historical"]:hover { text-decoration-color: #946a6a; }
-  .gloss[data-cat="literary"] { text-decoration-color: #8ab48a; }
-  .gloss[data-cat="literary"]:hover { text-decoration-color: #6a946a; }
+  /* Category color pips */
+  .gloss[data-cat="geographic"]::after { color: #7dcfe6; }
+  .gloss[data-cat="cultural"]::after { color: #e0c060; }
+  .gloss[data-cat="historical"]::after { color: #d4908a; }
+  .gloss[data-cat="literary"]::after { color: #88d488; }
   /* Light mode adjustments */
-  body.light-mode .gloss { text-decoration-color: #999; }
-  body.light-mode .gloss:hover { text-decoration-color: #666; }
-  body.light-mode .gloss[data-cat="geographic"] { text-decoration-color: #5a94a4; }
-  body.light-mode .gloss[data-cat="cultural"] { text-decoration-color: #a48a4a; }
-  body.light-mode .gloss[data-cat="historical"] { text-decoration-color: #946a6a; }
-  body.light-mode .gloss[data-cat="literary"] { text-decoration-color: #6a946a; }
+  body.light-mode .gloss::after { color: #777; }
+  body.light-mode .gloss[data-cat="geographic"]::after { color: #2a8aaa; }
+  body.light-mode .gloss[data-cat="cultural"]::after { color: #9a7a20; }
+  body.light-mode .gloss[data-cat="historical"]::after { color: #994a44; }
+  body.light-mode .gloss[data-cat="literary"]::after { color: #3a8a3a; }
 
   /* Gloss popover */
   .gloss-popover {
@@ -2168,7 +2164,7 @@
     </div>
 
     <h2>Other Features</h2>
-    <p>In sections where a brief explanation can help in reading (especially the sections that quote Isaiah and Malachi), you'll see words with a light <span class="gloss" data-cat="cultural" style="cursor:default; pointer-events:none">dotted underline</span>. These mark places where a brief comment has been inserted; it might be under a word, a place name, a cultural practice, or a historical event that modern readers may not recognize. Tap any underlined phrase to see a short factual note. The notes identify what the reference is (for example, that "Rahab" is a mythological sea monster, or that "the fuller's field" was where cloth-workers bleached fabric outside Jerusalem).</p>
+    <p>In sections where a brief explanation can help in reading (especially the sections that quote Isaiah and Malachi), you'll see a small colored star<span class="gloss" data-cat="cultural" style="cursor:default; pointer-events:none"></span> after certain words or phrases. These mark places where a brief comment has been inserted; it might be after a word, a place name, a cultural practice, or a historical event that modern readers may not recognize. Tap any starred phrase to see a short factual note. The notes identify what the reference is (for example, that "Rahab" is a mythological sea monster, or that "the fuller's field" was where cloth-workers bleached fabric outside Jerusalem).</p>
     <p>Words that are part of <em>covenant promises</em> — places where God states His binding promises — appear in <em>italics</em> throughout the text.</p>
     <p>The <strong>About</strong> button in the book grid opens background introductions for each book, written to help first-time readers understand who is speaking, what is happening, and what themes to watch for.</p>
     <p>Swipe left or right on the reading area to move between chapters. The toolbar collapses as you scroll down to give you more reading space, and reappears when you scroll back up.</p>
