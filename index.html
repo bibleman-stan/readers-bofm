@@ -896,26 +896,38 @@
     cursor: pointer;
     padding: 4px 0;
     margin: -4px 0;
+    border-radius: 3px;
+    transition: background-color 0.15s ease;
   }
-  .gloss::before, .gloss::after {
+  .gloss::before {
     content: '\2726';
-    font-size: 0.4em;
+    font-size: 0.45em;
     vertical-align: super;
+    margin-right: 2px;
     color: #888;
   }
-  .gloss::before { margin-right: 2px; }
-  .gloss::after { margin-left: 2px; }
+  /* Active highlight — light wash matching category color */
+  .gloss.gloss-active { background-color: rgba(136, 136, 136, 0.15); }
+  .gloss.gloss-active[data-cat="geographic"] { background-color: rgba(125, 207, 230, 0.15); }
+  .gloss.gloss-active[data-cat="cultural"] { background-color: rgba(224, 192, 96, 0.15); }
+  .gloss.gloss-active[data-cat="historical"] { background-color: rgba(212, 144, 138, 0.15); }
+  .gloss.gloss-active[data-cat="literary"] { background-color: rgba(136, 212, 136, 0.15); }
   /* Category color pips */
-  .gloss[data-cat="geographic"]::before, .gloss[data-cat="geographic"]::after { color: #7dcfe6; }
-  .gloss[data-cat="cultural"]::before, .gloss[data-cat="cultural"]::after { color: #e0c060; }
-  .gloss[data-cat="historical"]::before, .gloss[data-cat="historical"]::after { color: #d4908a; }
-  .gloss[data-cat="literary"]::before, .gloss[data-cat="literary"]::after { color: #88d488; }
+  .gloss[data-cat="geographic"]::before { color: #7dcfe6; }
+  .gloss[data-cat="cultural"]::before { color: #e0c060; }
+  .gloss[data-cat="historical"]::before { color: #d4908a; }
+  .gloss[data-cat="literary"]::before { color: #88d488; }
   /* Light mode adjustments */
-  body.light-mode .gloss::before, body.light-mode .gloss::after { color: #777; }
-  body.light-mode .gloss[data-cat="geographic"]::before, body.light-mode .gloss[data-cat="geographic"]::after { color: #2a8aaa; }
-  body.light-mode .gloss[data-cat="cultural"]::before, body.light-mode .gloss[data-cat="cultural"]::after { color: #9a7a20; }
-  body.light-mode .gloss[data-cat="historical"]::before, body.light-mode .gloss[data-cat="historical"]::after { color: #994a44; }
-  body.light-mode .gloss[data-cat="literary"]::before, body.light-mode .gloss[data-cat="literary"]::after { color: #3a8a3a; }
+  body.light-mode .gloss::before { color: #777; }
+  body.light-mode .gloss[data-cat="geographic"]::before { color: #2a8aaa; }
+  body.light-mode .gloss[data-cat="cultural"]::before { color: #9a7a20; }
+  body.light-mode .gloss[data-cat="historical"]::before { color: #994a44; }
+  body.light-mode .gloss[data-cat="literary"]::before { color: #3a8a3a; }
+  body.light-mode .gloss.gloss-active { background-color: rgba(100, 100, 100, 0.1); }
+  body.light-mode .gloss.gloss-active[data-cat="geographic"] { background-color: rgba(42, 138, 170, 0.12); }
+  body.light-mode .gloss.gloss-active[data-cat="cultural"] { background-color: rgba(154, 122, 32, 0.12); }
+  body.light-mode .gloss.gloss-active[data-cat="historical"] { background-color: rgba(153, 74, 68, 0.12); }
+  body.light-mode .gloss.gloss-active[data-cat="literary"] { background-color: rgba(58, 138, 58, 0.12); }
 
   /* Gloss popover */
   .gloss-popover {
@@ -3865,6 +3877,7 @@ function flushAndReload() {
     // Close any existing popover
     if (activePopover) {
       activePopover.remove();
+      if (activeGloss) activeGloss.classList.remove('gloss-active');
       if (activeGloss === gloss) {
         activePopover = null;
         activeGloss = null;
@@ -3906,6 +3919,7 @@ function flushAndReload() {
 
     activePopover = pop;
     activeGloss = gloss;
+    gloss.classList.add('gloss-active');
     e.stopPropagation();
   });
 })();
