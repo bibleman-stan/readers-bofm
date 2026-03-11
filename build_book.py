@@ -1227,20 +1227,41 @@ def apply_gloss_highlights(line_text, gloss_entries):
             html_pos += 1
             plain_idx += 1
 
-        # Now emit the opening span
-        result.append(f'<span class="gloss" data-note="{note}" data-cat="{cat}">')
-
-        # Emit all chars in [s, e) including intervening HTML tags
+        # Collect the HTML fragment for this gloss range
+        frag_parts = []
         while plain_idx < e:
             html_p = plain_chars[plain_idx][0]
             while html_pos < html_p:
-                result.append(line_text[html_pos])
+                frag_parts.append(line_text[html_pos])
                 html_pos += 1
-            result.append(line_text[html_pos])
+            frag_parts.append(line_text[html_pos])
             html_pos += 1
             plain_idx += 1
+        fragment = ''.join(frag_parts)
 
-        result.append('</span>')
+        # Wrap visible text in gloss span, respecting existing tag boundaries
+        gloss_open = f'<span class="gloss" data-note="{note}" data-cat="{cat}">'
+        in_gloss = False
+        fi = 0
+        while fi < len(fragment):
+            if fragment[fi] == '<':
+                end_tag = fragment.find('>', fi)
+                if end_tag == -1:
+                    break
+                tag = fragment[fi:end_tag + 1]
+                if in_gloss:
+                    result.append('</span>')
+                    in_gloss = False
+                result.append(tag)
+                fi = end_tag + 1
+            else:
+                if not in_gloss:
+                    result.append(gloss_open)
+                    in_gloss = True
+                result.append(fragment[fi])
+                fi += 1
+        if in_gloss:
+            result.append('</span>')
 
     # Emit remainder
     while html_pos < len(line_text):
@@ -1443,13 +1464,45 @@ def apply_phrase_highlights(line_text, phrases, css_class):
         he = text_to_html[te]
         html_intervals.append((hs, he))
 
-    # Build result with spans around matched portions in original HTML
+    # Build result with spans around matched portions in original HTML.
+    # We must respect existing span boundaries: if our highlight range starts
+    # or ends inside an existing <span>, we wrap only the visible-text portions
+    # by closing/reopening the highlight span at each tag boundary.
+    def _wrap_respecting_tags(html_fragment, cls):
+        """Wrap visible text in <span class=cls>, closing and reopening
+        around any existing HTML tags so nesting stays valid."""
+        parts = []
+        inside_highlight = False
+        i = 0
+        while i < len(html_fragment):
+            if html_fragment[i] == '<':
+                # We hit a tag — close highlight before tag, emit tag
+                end_tag = html_fragment.find('>', i)
+                if end_tag == -1:
+                    break
+                tag = html_fragment[i:end_tag + 1]
+                if inside_highlight:
+                    parts.append('</span>')
+                    inside_highlight = False
+                parts.append(tag)
+                i = end_tag + 1
+            else:
+                # Visible text — make sure we're inside highlight
+                if not inside_highlight:
+                    parts.append(f'<span class="{cls}">')
+                    inside_highlight = True
+                parts.append(html_fragment[i])
+                i += 1
+        if inside_highlight:
+            parts.append('</span>')
+        return ''.join(parts)
+
     result = []
     pos = 0
     for hs, he in html_intervals:
         if pos < hs:
             result.append(line_text[pos:hs])
-        result.append(f'<span class="{css_class}">{line_text[hs:he]}</span>')
+        result.append(_wrap_respecting_tags(line_text[hs:he], css_class))
         pos = he
     if pos < len(line_text):
         result.append(line_text[pos:])
