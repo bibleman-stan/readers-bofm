@@ -1033,12 +1033,12 @@ def shorten_bible_ref(ref):
 _INTERTEXT_INDEX = None  # populated by load_intertext()
 _PHRASE_INDEX = None      # populated by load_intertext()
 _KJV_DIFF_INDEX = None   # populated by load_intertext()
-_GEO_INDEX = None         # populated by load_intertext()
 _PERICOPE_INDEX = None    # populated by load_intertext()
+_GLOSS_INDEX = {}         # populated by load_intertext() — contextual glosses for Isaiah/Malachi
 
 def load_intertext():
-    """Load the enriched Hardy intertext index, phrase index, KJV diff, and geo index."""
-    global _INTERTEXT_INDEX, _PHRASE_INDEX, _KJV_DIFF_INDEX, _GEO_INDEX, _PERICOPE_INDEX
+    """Load the enriched Hardy intertext index, phrase index, KJV diff, and glosses."""
+    global _INTERTEXT_INDEX, _PHRASE_INDEX, _KJV_DIFF_INDEX, _PERICOPE_INDEX, _GLOSS_INDEX
     base = os.path.dirname(os.path.abspath(__file__))
     intertext_path = os.path.join(base, 'data', 'hardy_intertext.json')
     phrase_path = os.path.join(base, 'data', 'hardy_phrase_index.json')
@@ -1067,15 +1067,6 @@ def load_intertext():
     else:
         print(f"  No KJV diff index at {diff_path}, skipping diff layer")
         _KJV_DIFF_INDEX = {}
-    geo_path = os.path.join(base, 'data', 'geo_index.json')
-    if os.path.exists(geo_path):
-        with open(geo_path) as f:
-            _GEO_INDEX = json.load(f)
-        total = sum(len(vs) for ch in _GEO_INDEX.values() for vs in ch.values() for vs in vs.values())
-        print(f"Loaded geo index: {total} verse-category entries for geography layer")
-    else:
-        print(f"  No geo index at {geo_path}, skipping geography layer")
-        _GEO_INDEX = {}
     pericope_path = os.path.join(base, 'data', 'pericope_index.json')
     if os.path.exists(pericope_path):
         with open(pericope_path) as f:
@@ -1087,6 +1078,7 @@ def load_intertext():
         _PERICOPE_INDEX = {}
     load_parallel_index(base)
     load_parry_index(base)
+    load_contextual_glosses(base)
 
 _PARALLEL_INDEX = {}
 
@@ -1128,6 +1120,134 @@ def get_parry_verses(book_id, chapter):
     for entry in ch_data:
         result[entry['v']] = entry
     return result
+
+
+def load_contextual_glosses(base):
+    """Load contextual glosses for Isaiah/Malachi sections.
+
+    The JSON has flat keys like "2nephi:12:1" mapping to arrays of
+    {phrase, note, category} objects.  We restructure into nested
+    book → chapter → verse → [glosses] for O(1) lookup.
+    """
+    global _GLOSS_INDEX
+    path = os.path.join(base, 'data', 'contextual_glosses.json')
+    if not os.path.exists(path):
+        print(f"  No contextual glosses at {path}, skipping gloss layer")
+        _GLOSS_INDEX = {}
+        return
+    with open(path) as f:
+        raw = json.load(f)
+    _GLOSS_INDEX = {}
+    total = 0
+    for key, entries in raw.items():
+        if key == '_meta' or not entries:
+            continue
+        parts = key.split(':')
+        if len(parts) != 3:
+            continue
+        book, ch, v = parts
+        _GLOSS_INDEX.setdefault(book, {}).setdefault(ch, {})[v] = entries
+        total += len(entries)
+    print(f"Loaded contextual glosses: {total} glosses for Isaiah/Malachi annotation")
+
+
+def get_glosses(book_id, chapter, verse):
+    """Return list of gloss entries for this verse, or empty list."""
+    if not _GLOSS_INDEX:
+        return []
+    return _GLOSS_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
+
+
+def apply_gloss_highlights(line_text, gloss_entries):
+    """Wrap glossed phrases in <span class="gloss" data-note="..." data-cat="...">.
+
+    Matches phrase text case-insensitively against the line (which may
+    contain HTML tags from swap processing).  Works on the visible-text
+    layer, skipping over tags.
+    """
+    if not gloss_entries:
+        return line_text
+
+    # Build a plain-text map (char positions in the HTML → visible text)
+    # so we can match phrases against visible text and map back to HTML positions
+    plain_chars = []  # list of (html_pos, char)
+    i = 0
+    while i < len(line_text):
+        if line_text[i] == '<':
+            end = line_text.find('>', i)
+            if end == -1:
+                break
+            i = end + 1
+        else:
+            plain_chars.append((i, line_text[i]))
+            i += 1
+
+    plain_text = ''.join(c for _, c in plain_chars)
+    plain_lower = plain_text.lower()
+
+    # Find all gloss matches as intervals in plain-text space
+    intervals = []
+    for entry in gloss_entries:
+        phrase = entry.get('phrase', '')
+        if not phrase:
+            continue
+        note = entry.get('note', '').replace('"', '&quot;')
+        cat = entry.get('category', '')
+        idx = plain_lower.find(phrase.lower())
+        if idx != -1:
+            intervals.append((idx, idx + len(phrase), note, cat))
+
+    if not intervals:
+        return line_text
+
+    # Sort by start; resolve overlaps (keep longest)
+    intervals.sort(key=lambda x: (x[0], -(x[1] - x[0])))
+    merged = []
+    for s, e, note, cat in intervals:
+        if merged and s < merged[-1][1]:
+            if e - s > merged[-1][1] - merged[-1][0]:
+                merged[-1] = (s, e, note, cat)
+        else:
+            merged.append((s, e, note, cat))
+
+    # Map plain-text positions back to HTML positions
+    result = []
+    html_pos = 0
+    plain_idx = 0
+
+    for s, e, note, cat in merged:
+        # Advance to start of this interval
+        while plain_idx < s:
+            html_p = plain_chars[plain_idx][0]
+            # Include any HTML tags between current html_pos and this char
+            while html_pos < html_p:
+                result.append(line_text[html_pos])
+                html_pos += 1
+            result.append(line_text[html_pos])
+            html_pos += 1
+            plain_idx += 1
+
+        # Now emit the opening span
+        result.append(f'<span class="gloss" data-note="{note}" data-cat="{cat}">')
+
+        # Emit all chars in [s, e) including intervening HTML tags
+        while plain_idx < e:
+            html_p = plain_chars[plain_idx][0]
+            while html_pos < html_p:
+                result.append(line_text[html_pos])
+                html_pos += 1
+            result.append(line_text[html_pos])
+            html_pos += 1
+            plain_idx += 1
+
+        result.append('</span>')
+
+    # Emit remainder
+    while html_pos < len(line_text):
+        result.append(line_text[html_pos])
+        html_pos += 1
+
+    return ''.join(result)
 
 
 def get_pericope(book_id, chapter, verse):
@@ -1189,115 +1309,6 @@ def get_intertext(book_id, chapter, verse):
     if not _INTERTEXT_INDEX:
         return []
     return _INTERTEXT_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
-
-def get_geo_entries(book_id, chapter, verse):
-    """Return list of geography entries for a given verse, or empty list."""
-    if not _GEO_INDEX:
-        return []
-    return _GEO_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
-
-def _is_geo_fragment(frag, category):
-    """Check if a fragment contains geographically meaningful content.
-
-    Short fragments from ellipsis splitting often capture just names
-    (e.g. 'king Lamoni', 'Ammon') or bare directional phrases
-    (e.g. 'on the west') rather than actual geographic data.
-    """
-    # Generic fragments that are just compass directions, not real geo data
-    GENERIC_BLOCKLIST = {
-        'on the west', 'on the east', 'on the north', 'on the south',
-        'on the east and on the west', 'on the north and on the south',
-        'the lamanites', 'ammon', 'no wait', 'he being determined',
-        'a considerable number', 'those who were in favor of kings',
-    }
-    frag_lower = frag.lower().strip()
-    if frag_lower in GENERIC_BLOCKLIST:
-        return False
-
-    GEO_KEYWORDS = {
-        'sea', 'river', 'land', 'wilderness', 'mountain', 'hill', 'valley',
-        'north', 'south', 'east', 'west', 'border', 'borders', 'bordering',
-        'city', 'village', 'narrow', 'strip', 'desolation', 'bountiful',
-        'journey', 'distance', 'day', 'days', 'mile',
-        'water', 'waters', 'flood', 'deep', 'shore', 'seashore',
-        'forest', 'tree', 'trees', 'timber', 'grain', 'fruit',
-        'horse', 'horses', 'chariot', 'chariots', 'flock', 'flocks',
-        'cattle', 'goat', 'elephant', 'serpent', 'bee', 'beast',
-        'heat', 'cold', 'rain', 'drought', 'snow', 'storm',
-        'tent', 'tents', 'dwell', 'possess', 'inheritance', 'inhabit',
-        'place', 'plain', 'plains', 'tower', 'wall', 'gate',
-    }
-    # Long fragments (25+ chars) are likely meaningful enough
-    if len(frag) >= 25:
-        return True
-    # Medium fragments (15-24 chars) need a geo keyword
-    if len(frag) >= 15:
-        words = set(re.sub(r'[^\w\s]', '', frag_lower).split())
-        return bool(words & GEO_KEYWORDS)
-    # Short fragments (<15 chars) must have a geo keyword AND a proper noun or
-    # specific place name to be worth highlighting — otherwise too generic
-    words = set(re.sub(r'[^\w\s]', '', frag_lower).split())
-    if not (words & GEO_KEYWORDS):
-        return False
-    # "land of Nephi" (13 chars) is good; "on the west" (11 chars) is not
-    # Require "land of", "city of", "sea", "river", "wilderness", "narrow" for short frags
-    SPECIFIC_SHORT = {'land', 'city', 'sea', 'river', 'wilderness', 'narrow', 'valley', 'hill', 'mountain', 'seashore', 'forest'}
-    return bool(words & SPECIFIC_SHORT)
-
-def apply_geo_highlights(line_text, geo_entries):
-    """Wrap geographic extract phrases within a line with <span class="geo-ref">.
-
-    Each geo entry has an 'extract' field with the text to match, and a 'category'.
-    We do case-insensitive substring matching and wrap with a span that includes
-    the category as a data attribute.
-    """
-    if not geo_entries:
-        return line_text
-
-    intervals = []
-    line_lower = line_text.lower()
-    for entry in geo_entries:
-        extract = entry.get('extract', '')
-        if not extract or len(extract) < 5:
-            continue
-        cat = entry.get('category', '')
-        # Split on ellipsis to get matchable fragments
-        fragments = [f.strip() for f in extract.replace('…', '...').split('...') if f.strip() and len(f.strip()) >= 5]
-        if not fragments:
-            fragments = [extract]
-        for frag in fragments:
-            # Skip fragments that are just names/context, not geographic content
-            if not _is_geo_fragment(frag, cat):
-                continue
-            frag_lower = frag.lower()
-            idx = line_lower.find(frag_lower)
-            if idx != -1:
-                intervals.append((idx, idx + len(frag), cat))
-
-    if not intervals:
-        return line_text
-
-    # Sort by start position; handle overlaps by taking longest
-    intervals.sort(key=lambda x: (x[0], -(x[1] - x[0])))
-    merged = []
-    for s, e, cat in intervals:
-        if merged and s < merged[-1][1]:
-            # Overlapping — keep the longer one
-            if e - s > merged[-1][1] - merged[-1][0]:
-                merged[-1] = (s, e, cat)
-        else:
-            merged.append((s, e, cat))
-
-    result = []
-    pos = 0
-    for s, e, cat in merged:
-        if pos < s:
-            result.append(line_text[pos:s])
-        result.append(f'<span class="geo-ref" data-geo-cat="{cat}">{line_text[s:e]}</span>')
-        pos = e
-    if pos < len(line_text):
-        result.append(line_text[pos:])
-    return ''.join(result)
 
 def get_kjv_diff(book_id, chapter, verse):
     """Return KJV diff data for a parallel verse, or None."""
@@ -1555,31 +1566,10 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 wrapped.append(highlighted)
         processed = wrapped
 
-    # Check for geography entries on this verse
-    geo_entries = get_geo_entries(book_id, verse['chapter'], verse['verse']) if book_id else []
-    geo_label = ''
-    if geo_entries:
-        # Build category annotation — show the most specific category
-        # Priority order: more specific > less specific
-        GEO_CAT_PRIORITY = {
-            'terrain': 1, 'water': 2, 'settlement': 3, 'distance': 4,
-            'flora': 5, 'fauna': 6, 'climate': 7, 'materials': 8,
-            'demographics': 9, 'old world': 10, 'direction': 11, 'misc': 12,
-        }
-        geo_cats = list(dict.fromkeys(e.get('category', '') for e in geo_entries))
-        geo_cats.sort(key=lambda c: GEO_CAT_PRIORITY.get(c, 99))
-        geo_label = geo_cats[0] if geo_cats else ''
-        geo_wrapped = []
-        last_geo_line = -1
-        for i, line in enumerate(processed):
-            highlighted = apply_geo_highlights(line, geo_entries)
-            geo_wrapped.append(highlighted)
-            if 'geo-ref' in highlighted:
-                last_geo_line = i
-        # Only add category label if at least one fragment was actually highlighted
-        if last_geo_line >= 0:
-            geo_wrapped[last_geo_line] = f'<span data-geo="{geo_label}">{geo_wrapped[last_geo_line]}</span>'
-        processed = geo_wrapped
+    # Check for contextual glosses (Isaiah/Malachi inline annotations)
+    gloss_entries = get_glosses(book_id, verse['chapter'], verse['verse']) if book_id else []
+    if gloss_entries:
+        processed = [apply_gloss_highlights(line, gloss_entries) for line in processed]
 
     # Check for KJV diff data (parallel passage visualization)
     diff_data = get_kjv_diff(book_id, verse['chapter'], verse['verse']) if book_id else None
@@ -1596,13 +1586,9 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
             para_html = apply_phrase_highlights(para_html, quote_phrases, 'quote-bible')
         if allusion_phrases:
             para_html = apply_phrase_highlights(para_html, allusion_phrases, 'quote-allusion')
-        # Apply geography highlighting to paragraph layer
-        if geo_entries:
-            geo_para = apply_geo_highlights(para_html, geo_entries)
-            if 'geo-ref' in geo_para and geo_label:
-                para_html = f'<span data-geo="{geo_label}">{geo_para}</span>'
-            else:
-                para_html = geo_para
+        # Apply contextual glosses to paragraph layer
+        if gloss_entries:
+            para_html = apply_gloss_highlights(para_html, gloss_entries)
         if sources:
             para_html = f'<span data-source="{sources}">{para_html}</span>'
 
@@ -1689,15 +1675,12 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 processed_text = apply_phrase_highlights(processed_text, quote_phrases, 'quote-bible')
             if allusion_phrases:
                 processed_text = apply_phrase_highlights(processed_text, allusion_phrases, 'quote-allusion')
-            # Apply geography highlighting to Poetic layer
-            if geo_entries:
-                processed_text = apply_geo_highlights(processed_text, geo_entries)
+            # Apply contextual glosses to Poetic layer
+            if gloss_entries:
+                processed_text = apply_gloss_highlights(processed_text, gloss_entries)
             # Add data-source on the last Parry line for reference tooltip
             if sources and pl_idx == len(plines) - 1:
                 processed_text = f'<span data-source="{sources}">{processed_text}</span>'
-            # Add data-geo on the last Parry line for geo category label
-            if geo_entries and geo_label and pl_idx == len(plines) - 1 and 'geo-ref' in processed_text:
-                processed_text = f'<span data-geo="{geo_label}">{processed_text}</span>'
             parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{processed_text}</span>')
         # Type annotations (chiasmus, simple alternate, etc.) are no longer
         # rendered visibly — they are metadata only, not displayed to the reader.

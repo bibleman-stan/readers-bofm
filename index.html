@@ -890,6 +890,104 @@
     color: #5a8aaa;
   }
 
+  /* === CONTEXTUAL GLOSSES (Isaiah/Malachi inline annotations) === */
+  .gloss {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #666;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    position: relative;
+  }
+  .gloss:hover {
+    text-decoration-color: #aaa;
+  }
+  /* Category color hints on the underline */
+  .gloss[data-cat="geographic"] { text-decoration-color: #8ab4c4; }
+  .gloss[data-cat="geographic"]:hover { text-decoration-color: #5a94a4; }
+  .gloss[data-cat="cultural"] { text-decoration-color: #c4a86a; }
+  .gloss[data-cat="cultural"]:hover { text-decoration-color: #a48a4a; }
+  .gloss[data-cat="historical"] { text-decoration-color: #b48a8a; }
+  .gloss[data-cat="historical"]:hover { text-decoration-color: #946a6a; }
+  .gloss[data-cat="literary"] { text-decoration-color: #8ab48a; }
+  .gloss[data-cat="literary"]:hover { text-decoration-color: #6a946a; }
+  /* Light mode adjustments */
+  body.light-mode .gloss { text-decoration-color: #999; }
+  body.light-mode .gloss:hover { text-decoration-color: #666; }
+  body.light-mode .gloss[data-cat="geographic"] { text-decoration-color: #5a94a4; }
+  body.light-mode .gloss[data-cat="cultural"] { text-decoration-color: #a48a4a; }
+  body.light-mode .gloss[data-cat="historical"] { text-decoration-color: #946a6a; }
+  body.light-mode .gloss[data-cat="literary"] { text-decoration-color: #6a946a; }
+
+  /* Gloss popover */
+  .gloss-popover {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    max-width: 320px;
+    min-width: 140px;
+    white-space: normal;
+    z-index: 1000;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    pointer-events: auto;
+  }
+  .gloss-popover::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #2a2a2a;
+  }
+  .gloss-popover::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid transparent;
+    border-top-color: #444;
+  }
+  body.light-mode .gloss-popover {
+    background: #fff;
+    color: #333;
+    border-color: #ccc;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  }
+  body.light-mode .gloss-popover::after {
+    border-top-color: #fff;
+  }
+  body.light-mode .gloss-popover::before {
+    border-top-color: #ccc;
+  }
+  .gloss-popover .cat-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    opacity: 0.8;
+  }
+  .cat-badge.geographic { background: #1a3a4a; color: #8ab4c4; }
+  .cat-badge.cultural { background: #3a2a1a; color: #c4a86a; }
+  .cat-badge.historical { background: #3a2020; color: #b48a8a; }
+  .cat-badge.literary { background: #1a3a1a; color: #8ab48a; }
+  body.light-mode .cat-badge.geographic { background: #e0f0f8; color: #3a6a7a; }
+  body.light-mode .cat-badge.cultural { background: #f8f0e0; color: #7a6a3a; }
+  body.light-mode .cat-badge.historical { background: #f8e8e8; color: #7a4a4a; }
+  body.light-mode .cat-badge.literary { background: #e8f8e8; color: #4a7a4a; }
+
   .covenant {
     font-style: italic;
   }
@@ -967,29 +1065,6 @@
   body.light-mode .parry-sep { border-color: rgba(0,0,0,0.08); }
   /* Light mode */
   body.light-mode .parry-label { color: #4a9999; }
-
-  /* === GEOGRAPHY LAYER === */
-  .geo-ref { display: inline; }
-  [data-geo] { display: inline; }
-
-  body.show-geo .geo-ref {
-    color: #b5854a;
-    font-weight: bold;
-  }
-  body.show-geo [data-geo]::after {
-    content: "\2014\00a0" attr(data-geo);
-    font-size: 0.7em;
-    font-style: italic;
-    font-weight: normal !important;
-    display: inline;
-    color: rgba(201, 163, 104, 0.7);
-  }
-  body.light-mode.show-geo .geo-ref {
-    color: #8b6914;
-  }
-  body.light-mode.show-geo [data-geo]::after {
-    color: rgba(139, 105, 20, 0.5);
-  }
 
   /* Pericope / Sections layer */
   .pericope-header {
@@ -1850,13 +1925,6 @@
       <span>KJV Parallels</span>
     </label>
 
-    <div class="layer-group-label">Setting</div>
-    <label>
-      <input type="checkbox" id="geo-check" onchange="toggleGeo(this.checked); updateLayersPill()" style="accent-color: #b5854a;">
-      <span class="layer-swatch" style="background: #b5854a;"></span>
-      <span>Geography</span>
-    </label>
-
   </div>
 
   <!-- Background panel — book intros (shown on About tap) -->
@@ -2123,11 +2191,6 @@
     <div class="feature-card">
       <div class="feature-name"><span class="swatch-demo" style="background: #6ba3d6;"></span> KJV Parallels</div>
       <div class="feature-desc">Highlights passages that share language with the King James Version of the Bible. This layer helps you see the broader textual relationship between the two books.</div>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-name"><span class="swatch-demo" style="background: #b5854a;"></span> Geography</div>
-      <div class="feature-desc">Highlights place names and geographic references. This is useful for tracking the movement of people and armies across the narrative, and for understanding the physical setting of events.</div>
     </div>
 
     <h2>Other Features</h2>
@@ -2809,14 +2872,13 @@
   };
 
   window.clearAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb) { cb.checked = false; }
     });
     toggleQuotations(false);
     toggleAllusions(false);
     toggleKjvDiff(false);
-    toggleGeo(false);
     document.body.classList.remove('show-deity', 'show-spirit');
     deityLayerOn = false;
     spiritLayerOn = false;
@@ -2825,7 +2887,7 @@
   };
 
   window.selectAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].forEach(function(id) {
+    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check'].forEach(function(id) {
       var cb = document.getElementById(id);
       if (cb && !cb.disabled) { cb.checked = true; }
     });
@@ -2834,13 +2896,12 @@
     toggleQuotations(true);
     toggleAllusions(true);
     toggleKjvDiff(true);
-    toggleGeo(true);
     updateLayersPill();
   };
 
   // Update layers pill to show active state when any layer is on
   function updateLayersPill() {
-    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check', 'geo-check'].some(function(id) {
+    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check'].some(function(id) {
       var cb = document.getElementById(id);
       return cb && cb.checked;
     });
@@ -2868,9 +2929,6 @@
   };
   window.toggleKjvDiff = function(on) {
     document.body.classList.toggle('show-kjv-diff', on);
-  };
-  window.toggleGeo = function(on) {
-    document.body.classList.toggle('show-geo', on);
   };
   window.toggleParallels = function(on) {
     document.body.classList.toggle('show-parallels', on);
@@ -3820,6 +3878,59 @@ function flushAndReload() {
       }, 400);
     }
   }
+})();
+
+// === CONTEXTUAL GLOSS POPOVER ===
+(function() {
+  var activePopover = null;
+  var activeGloss = null;
+
+  document.addEventListener('click', function(e) {
+    var gloss = e.target.closest('.gloss');
+
+    // Close any existing popover
+    if (activePopover) {
+      activePopover.remove();
+      if (activeGloss === gloss) {
+        activePopover = null;
+        activeGloss = null;
+        return; // Toggle off
+      }
+      activePopover = null;
+      activeGloss = null;
+    }
+
+    if (!gloss) return;
+
+    var note = gloss.getAttribute('data-note');
+    var cat = gloss.getAttribute('data-cat') || '';
+
+    var pop = document.createElement('div');
+    pop.className = 'gloss-popover';
+    var badge = cat ? '<div class="cat-badge ' + cat + '">' + cat + '</div>' : '';
+    pop.innerHTML = badge + '<div>' + note + '</div>';
+
+    gloss.appendChild(pop);
+
+    // Reposition if off-screen
+    var rect = pop.getBoundingClientRect();
+    if (rect.left < 8) {
+      pop.style.left = '0';
+      pop.style.transform = 'none';
+    } else if (rect.right > window.innerWidth - 8) {
+      pop.style.left = 'auto';
+      pop.style.right = '0';
+      pop.style.transform = 'none';
+    }
+    if (rect.top < 8) {
+      pop.style.bottom = 'auto';
+      pop.style.top = 'calc(100% + 8px)';
+    }
+
+    activePopover = pop;
+    activeGloss = gloss;
+    e.stopPropagation();
+  });
 })();
 </script>
 

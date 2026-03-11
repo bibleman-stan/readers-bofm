@@ -1,0 +1,447 @@
+{
+  "_meta": {
+    "description": "Contextual glosses for 2 Nephi Isaiah chapters. Each entry keys on book:chapter:verse and provides phrase-level annotations with short, factual, non-interpretive notes to help readers understand historical and cultural references.",
+    "format": "Each gloss has: phrase (the exact text to underline), note (the tooltip text, max ~15 words), and optionally category (geographic, cultural, literary, historical)"
+  },
+
+  "12:1": [
+    {
+      "phrase": "son of Amoz",
+      "note": "Not the prophet Amos; Amoz was Isaiah's father, likely of a noble Judahite family.",
+      "category": "historical"
+    }
+  ],
+
+  "12:2": [
+    {
+      "phrase": "the mountain of the Lord's house",
+      "note": "Mount Moriah in Jerusalem, site of Solomon's temple.",
+      "category": "geographic"
+    },
+    {
+      "phrase": "in the top of the mountains",
+      "note": "Isaiah pictures the temple mount raised above all peaks — the highest point on earth.",
+      "category": "literary"
+    }
+  ],
+
+  "12:3": [
+    {
+      "phrase": "house of the God of Jacob",
+      "note": "The Jerusalem temple.",
+      "category": "geographic"
+    },
+    {
+      "phrase": "out of Zion shall go forth the law",
+      "note": "Zion and Jerusalem are used as parallel terms for the same holy city.",
+      "category": "geographic"
+    }
+  ],
+
+  "12:4": [
+    {
+      "phrase": "beat their swords into plow-shares",
+      "note": "Farm tools forged from weapons — a reversal of Joel 3:10, which says the opposite.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "pruning-hooks",
+      "note": "Curved blades used to trim grapevines — a common tool in Israelite agriculture.",
+      "category": "cultural"
+    }
+  ],
+
+  "12:5": [
+    {
+      "phrase": "house of Jacob",
+      "note": "The covenant people of Israel, descended from the patriarch Jacob.",
+      "category": "historical"
+    }
+  ],
+
+  "12:6": [
+    {
+      "phrase": "replenished from the east",
+      "note": "Filled with pagan practices from Mesopotamia — Babylon, Assyria, and surrounding cultures.",
+      "category": "historical"
+    },
+    {
+      "phrase": "soothsayers like the Philistines",
+      "note": "Fortune-tellers. The Philistines, Israel's coastal neighbors, were known for divination.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "please themselves in the children of strangers",
+      "note": "Forming alliances (or intermarrying) with foreign nations instead of trusting God.",
+      "category": "cultural"
+    }
+  ],
+
+  "12:7": [
+    {
+      "phrase": "full of horses",
+      "note": "Horses and chariots were offensive military technology — and a sign of reliance on human power rather than God (see Deut. 17:16).",
+      "category": "cultural"
+    }
+  ],
+
+  "12:9": [
+    {
+      "phrase": "the mean man",
+      "note": "\"Mean\" here means common or ordinary — the everyday person, not someone cruel.",
+      "category": "literary"
+    }
+  ],
+
+  "12:12": [
+    {
+      "phrase": "the day of the Lord of Hosts",
+      "note": "A recurring Old Testament concept: a future time when God acts decisively to judge the proud and deliver the humble.",
+      "category": "literary"
+    }
+  ],
+
+  "12:13": [
+    {
+      "phrase": "cedars of Lebanon",
+      "note": "The tallest, most prized trees in the ancient world — used to build palaces and temples. A symbol of towering pride.",
+      "category": "geographic"
+    },
+    {
+      "phrase": "oaks of Bashan",
+      "note": "Bashan (modern Golan Heights) was famous for its massive oak forests. Second only to Lebanon's cedars as a symbol of strength.",
+      "category": "geographic"
+    }
+  ],
+
+  "12:15": [
+    {
+      "phrase": "fenced wall",
+      "note": "A fortified wall — the military defenses cities relied on for survival.",
+      "category": "cultural"
+    }
+  ],
+
+  "12:16": [
+    {
+      "phrase": "ships of Tarshish",
+      "note": "Large merchant vessels for long-distance trade. Tarshish was likely in Spain or Sardinia — the edge of the known world.",
+      "category": "geographic"
+    },
+    {
+      "phrase": "pleasant pictures",
+      "note": "Probably luxury goods or fine craftsmanship — the Hebrew suggests beautiful display vessels or carved imagery.",
+      "category": "cultural"
+    }
+  ],
+
+  "13:1": [
+    {
+      "phrase": "the stay and the staff",
+      "note": "Everything a society leans on — all its supports. Isaiah then lists what those supports are.",
+      "category": "literary"
+    },
+    {
+      "phrase": "the whole staff of bread, and the whole stay of water",
+      "note": "The most basic necessities — food and water supply. When these fail, everything collapses.",
+      "category": "cultural"
+    }
+  ],
+
+  "13:2": [
+    {
+      "phrase": "the prudent",
+      "note": "Someone skilled in reading omens or interpreting signs — not necessarily a positive role.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "the ancient",
+      "note": "The elder — a community leader whose authority came from age and experience.",
+      "category": "cultural"
+    }
+  ],
+
+  "13:3": [
+    {
+      "phrase": "captain of fifty",
+      "note": "A military officer commanding a unit of fifty soldiers — a mid-rank leader in the Israelite army.",
+      "category": "historical"
+    },
+    {
+      "phrase": "the honorable man",
+      "note": "A man of social rank or influence — literally, one whose face is \"lifted up\" in the community.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "cunning artificer",
+      "note": "A skilled craftsman — metalworker, builder, or engineer. \"Cunning\" here means expert, not deceitful.",
+      "category": "literary"
+    },
+    {
+      "phrase": "eloquent orator",
+      "note": "One skilled in persuasive speech. Some scholars read the Hebrew as \"skilled in charms\" (enchanter).",
+      "category": "cultural"
+    }
+  ],
+
+  "13:4": [
+    {
+      "phrase": "children unto them to be their princes",
+      "note": "Inexperienced, unqualified rulers — the opposite of the wise leaders just listed. A sign of total social collapse.",
+      "category": "literary"
+    }
+  ],
+
+  "13:5": [
+    {
+      "phrase": "the base against the honorable",
+      "note": "Social order inverted — the lowly disrespect those of rank. Isaiah is describing anarchy.",
+      "category": "literary"
+    }
+  ],
+
+  "13:6": [
+    {
+      "phrase": "Thou hast clothing, be thou our ruler",
+      "note": "Things are so desperate that simply owning a coat qualifies someone to lead — everyone else has been stripped bare.",
+      "category": "literary"
+    }
+  ],
+
+  "13:9": [
+    {
+      "phrase": "their sin to be even as Sodom",
+      "note": "Sodom (Genesis 18-19) was the ultimate example of a city destroyed for its wickedness. The comparison means Judah's sin is open and shameless.",
+      "category": "historical"
+    }
+  ],
+
+  "13:12": [
+    {
+      "phrase": "children are their oppressors, and women rule over them",
+      "note": "Not a statement about women or children in general — Isaiah is saying the expected leaders have failed, and the social order is upside down.",
+      "category": "literary"
+    }
+  ],
+
+  "13:14": [
+    {
+      "phrase": "ye have eaten up the vineyard",
+      "note": "The vineyard is Israel (see Isaiah 5:1-7). The leaders have devoured what they were supposed to tend.",
+      "category": "literary"
+    }
+  ],
+
+  "13:15": [
+    {
+      "phrase": "grind the faces of the poor",
+      "note": "A vivid image of economic oppression — crushing people like grain between millstones.",
+      "category": "literary"
+    }
+  ],
+
+  "13:16": [
+    {
+      "phrase": "daughters of Zion",
+      "note": "The wealthy women of Jerusalem. Isaiah uses their luxury as a symbol of the whole city's misplaced priorities.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "stretched-forth necks",
+      "note": "A haughty posture — head tilted back, looking down at others.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "wanton eyes",
+      "note": "Flirtatious glances. The Hebrew suggests eyes painted or decorated to attract attention.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "mincing as they go",
+      "note": "Taking small, affected steps — possibly because of ankle chains that restricted their stride (see v. 18).",
+      "category": "cultural"
+    },
+    {
+      "phrase": "making a tinkling with their feet",
+      "note": "Ankle bracelets with bells or ornamental chains that jingled with each step.",
+      "category": "cultural"
+    }
+  ],
+
+  "13:17": [
+    {
+      "phrase": "smite with a scab the crown of the head",
+      "note": "A skin disease on the most visible part of the body — public humiliation replacing public vanity.",
+      "category": "literary"
+    }
+  ],
+
+  "13:18": [
+    {
+      "phrase": "tinkling ornaments",
+      "note": "Ankle bracelets, probably with small bells or chains.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "cauls",
+      "note": "Ornamental hairnets or headbands, often beaded.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "round tires like the moon",
+      "note": "Crescent-shaped pendants worn as necklaces — \"tires\" means headdresses or ornaments, not wheels.",
+      "category": "cultural"
+    }
+  ],
+
+  "13:19": [
+    {
+      "phrase": "mufflers",
+      "note": "Veils or long scarves covering the face and neck.",
+      "category": "cultural"
+    }
+  ],
+
+  "13:20": [
+    {
+      "phrase": "bonnets",
+      "note": "Elaborate headdresses or turbans.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "ornaments of the legs",
+      "note": "Decorative ankle chains connecting the feet — these also caused the \"mincing\" walk of v. 16.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "tablets",
+      "note": "Perfume boxes or scent bottles — the Hebrew literally means \"houses of the soul\" (i.e., containers for fragrance).",
+      "category": "cultural"
+    }
+  ],
+
+  "13:22": [
+    {
+      "phrase": "changeable suits of apparel",
+      "note": "Festival robes — fine garments kept for special occasions.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "wimples",
+      "note": "Outer cloaks or shawls draped over the body.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "crisping-pins",
+      "note": "Despite the name, probably money-bags or ornamental purses — not hair pins.",
+      "category": "cultural"
+    }
+  ],
+
+  "13:23": [
+    {
+      "phrase": "glasses",
+      "note": "Polished metal mirrors — not eyeglasses, which wouldn't exist for another two thousand years.",
+      "category": "cultural"
+    }
+  ],
+
+  "13:24": [
+    {
+      "phrase": "instead of a girdle, a rent",
+      "note": "Instead of a fine sash, a rope. \"Rent\" here means a torn strip of cloth.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "a stomacher",
+      "note": "A richly embroidered chest garment — replaced by rough sackcloth, the garment of mourning.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "burning instead of beauty",
+      "note": "A brand-mark (from captivity or slavery) replacing their carefully maintained appearance.",
+      "category": "cultural"
+    }
+  ],
+
+  "13:26": [
+    {
+      "phrase": "her gates shall lament and mourn",
+      "note": "City gates were the center of public life — where courts met, business happened, and news spread. Empty gates meant a dead city.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "she shall be desolate, and shall sit upon the ground",
+      "note": "Sitting on the ground was the posture of mourning and humiliation (see Lamentations 1:1).",
+      "category": "cultural"
+    }
+  ],
+
+  "14:1": [
+    {
+      "phrase": "seven women shall take hold of one man",
+      "note": "So many men have died in war (13:25) that seven women share one husband. The number seven suggests completeness — the devastation is total.",
+      "category": "historical"
+    },
+    {
+      "phrase": "we will eat our own bread, and wear our own apparel",
+      "note": "Normally a husband provided food and clothing. These women waive that right — they only want his name to avoid the social shame of being unmarried and childless.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "to take away our reproach",
+      "note": "In ancient Israel, being unmarried and childless was considered a deep disgrace for a woman.",
+      "category": "cultural"
+    }
+  ],
+
+  "14:2": [
+    {
+      "phrase": "the branch of the Lord",
+      "note": "A sprouting shoot from a seemingly dead stump — new life after devastation. A recurring prophetic image (see also Isa. 11:1, Jer. 23:5, Zech. 3:8).",
+      "category": "literary"
+    },
+    {
+      "phrase": "them that are escaped of Israel",
+      "note": "The surviving remnant — those who endure the judgment described in chapters 12-13.",
+      "category": "literary"
+    }
+  ],
+
+  "14:3": [
+    {
+      "phrase": "written among the living in Jerusalem",
+      "note": "An ancient concept of a divine registry — a book of those counted as belonging to God's people (see Exod. 32:32, Ps. 69:28).",
+      "category": "cultural"
+    }
+  ],
+
+  "14:4": [
+    {
+      "phrase": "the spirit of judgment and by the spirit of burning",
+      "note": "Purification through judgment — like refining metal with fire to burn away impurities.",
+      "category": "literary"
+    }
+  ],
+
+  "14:5": [
+    {
+      "phrase": "a cloud and smoke by day and the shining of a flaming fire by night",
+      "note": "Echoes the Exodus (Exod. 13:21-22), when God guided Israel with a pillar of cloud by day and fire by night. The protection returns.",
+      "category": "historical"
+    },
+    {
+      "phrase": "upon all the glory of Zion shall be a defence",
+      "note": "The Hebrew word is chuppah — a canopy or wedding covering. God shelters the renewed Zion like a bride.",
+      "category": "literary"
+    }
+  ],
+
+  "14:6": [
+    {
+      "phrase": "a tabernacle",
+      "note": "A shelter or booth — echoing both the wilderness tabernacle and the harvest booths of the Feast of Tabernacles (Sukkot).",
+      "category": "cultural"
+    }
+  ]
+}
