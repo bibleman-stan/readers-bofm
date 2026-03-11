@@ -407,8 +407,6 @@ SIMPLE_SWAPS = [
     ("commenced", "began"), ("Commenced", "Began"),
     ("remembrance", "memory"), ("Remembrance", "Memory"),
     ("pestilence", "plague"), ("Pestilence", "Plague"),
-    ("supplication", "plea"), ("Supplication", "Plea"),
-    ("supplications", "pleas"), ("Supplications", "Pleas"),
     ("sundry", "various"), ("Sundry", "Various"),
     ("manifold", "many"), ("Manifold", "Many"),
     ("withal", "as well"), ("Withal", "As well"),
