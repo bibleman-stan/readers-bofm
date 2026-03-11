@@ -26,6 +26,7 @@ from pathlib import Path
 QUIET_ARCHAICS = {
     'unto', 'wherefore', 'ye', 'thee', 'thou', 'thy', 'thine', 'mine',
     'yea', 'nay', 'hath', 'doth', 'hast', 'shalt', 'dost', 'wilt',
+    'canst', 'didst', 'shouldst', 'wouldst', 'wast', 'hadst', 'saidst',
     'nevertheless', 'exceedingly', 'exceeding', 'insomuch',
     'spake', 'beheld', 'smitten', 'smote',
     'hither', 'thither', 'whither', 'whence',
@@ -281,6 +282,13 @@ SIMPLE_SWAPS = [
     ("fulness", "fullness"), ("Fulness", "Fullness"),
     ("slay", "kill"), ("Slay", "Kill"),
     ("shalt", "shall"), ("Shalt", "Shall"),
+    ("canst", "can"), ("Canst", "Can"),
+    ("didst", "did"), ("Didst", "Did"),
+    ("shouldst", "should"), ("Shouldst", "Should"),
+    ("wouldst", "would"), ("Wouldst", "Would"),
+    ("wast", "were"), ("Wast", "Were"),
+    ("hadst", "had"), ("Hadst", "Had"),
+    ("saidst", "said"), ("Saidst", "Said"),
     ("abominations", "wicked practices"), ("Abominations", "Wicked practices"),
     ("abomination", "wicked practice"), ("Abomination", "Wicked practice"),
     ("abridgment", "summary"), ("Abridgment", "Summary"),
@@ -517,7 +525,7 @@ KNOWN_ETH = {
 
 NOT_ETH_VERBS = {'teeth', 'thirtieth', 'twentieth', 'fortieth', 'fiftieth',
     'sixtieth', 'seventieth', 'eightieth', 'ninetieth', 'hundredth',
-    'seth', 'beth', 'nazareth', 'shibboleth', 'japheth', 'Kenneth',
+    'seth', 'beth', 'heth', 'nazareth', 'shibboleth', 'japheth', 'Kenneth',
     'beneath', 'breadth', 'hundredeth'}
 
 IRREGULAR_PAST = {
