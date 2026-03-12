@@ -14,9 +14,9 @@
     --cola-gap: 1em;
     --punct-opacity: 0;
     --font-size: 17px;
-    --letter-spacing: -0.015em;
-    --word-spacing: -0.03em;
-    --content-padding: 10px;
+    --letter-spacing: 0.02em;
+    --word-spacing: 0.06em;
+    --content-padding: 26px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1802,9 +1802,9 @@
     <!-- Text density -->
     <div class="setting-label"><strong>Text density</strong></div>
     <div class="option-row" id="density-row">
-      <button class="option-btn active" onclick="setDensity('compact')">Compact</button>
+      <button class="option-btn" onclick="setDensity('compact')">Compact</button>
       <button class="option-btn" onclick="setDensity('normal')">Normal</button>
-      <button class="option-btn" onclick="setDensity('spacious')">Spacious</button>
+      <button class="option-btn active" onclick="setDensity('spacious')">Spacious</button>
     </div>
 
     <!-- Line spacing -->
@@ -2222,7 +2222,7 @@
 
   // Tab defaults
   var tabDefaults = {
-    read:  { flow: true,  punct: true,  wrap: true,  spacing: 'airy',   size: 'medium', density: 'compact' }
+    read:  { flow: true,  punct: true,  wrap: true,  spacing: 'airy',   size: 'medium', density: 'spacious' }
   };
 
   var tabOverrides = { read: {} };
