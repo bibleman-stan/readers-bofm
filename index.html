@@ -892,22 +892,14 @@
 
   /* === CONTEXTUAL GLOSSES (Isaiah/Malachi inline annotations) === */
   .gloss {
-    text-decoration: none;
     cursor: pointer;
-    padding: 4px 0;
-    margin: -4px 0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgba(180, 160, 120, 0.3);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
     border-radius: 3px;
     transition: background-color 0.15s ease;
-  }
-  .gloss::before {
-    content: '\2726';
-    font-size: 0.45em;
-    vertical-align: super;
-    margin-right: 2px;
-    color: #888;
-  }
-  .gloss.gloss-cont::before {
-    content: none;
   }
   /* Active highlight — light wash matching category color */
   .gloss.gloss-active { background-color: rgba(136, 136, 136, 0.15); }
@@ -916,21 +908,21 @@
   .gloss.gloss-active[data-cat="historical"] { background-color: rgba(212, 144, 138, 0.15); }
   .gloss.gloss-active[data-cat="literary"] { background-color: rgba(136, 212, 136, 0.15); }
   .gloss.gloss-active[data-cat="analytic"] { background-color: rgba(200, 210, 220, 0.18); }
-  /* Category color pips */
-  .gloss[data-cat="geographic"]::before { color: #7dcfe6; }
-  .gloss[data-cat="cultural"]::before { color: #e0c060; }
-  .gloss[data-cat="historical"]::before { color: #d4908a; }
-  .gloss[data-cat="literary"]::before { color: #88d488; }
-  .gloss[data-cat="analytic"]::before { color: #c8d4e0; }
-  .gloss[data-cat="military"]::before { color: #d4908a; }
+  /* Category underline colors */
+  .gloss[data-cat="geographic"] { text-decoration-color: rgba(125, 207, 230, 0.3); }
+  .gloss[data-cat="cultural"] { text-decoration-color: rgba(224, 192, 96, 0.3); }
+  .gloss[data-cat="historical"] { text-decoration-color: rgba(212, 144, 138, 0.3); }
+  .gloss[data-cat="literary"] { text-decoration-color: rgba(136, 212, 136, 0.25); }
+  .gloss[data-cat="analytic"] { text-decoration-color: rgba(200, 210, 220, 0.3); }
+  .gloss[data-cat="military"] { text-decoration-color: rgba(212, 144, 138, 0.3); }
   /* Light mode adjustments */
-  body.light-mode .gloss::before { color: #777; }
-  body.light-mode .gloss[data-cat="geographic"]::before { color: #2a8aaa; }
-  body.light-mode .gloss[data-cat="cultural"]::before { color: #9a7a20; }
-  body.light-mode .gloss[data-cat="historical"]::before { color: #994a44; }
-  body.light-mode .gloss[data-cat="literary"]::before { color: #3a8a3a; }
-  body.light-mode .gloss[data-cat="analytic"]::before { color: #6a7a8a; }
-  body.light-mode .gloss[data-cat="military"]::before { color: #994a44; }
+  body.light-mode .gloss { text-decoration-color: rgba(120, 100, 60, 0.3); }
+  body.light-mode .gloss[data-cat="geographic"] { text-decoration-color: rgba(42, 138, 170, 0.35); }
+  body.light-mode .gloss[data-cat="cultural"] { text-decoration-color: rgba(154, 122, 32, 0.35); }
+  body.light-mode .gloss[data-cat="historical"] { text-decoration-color: rgba(153, 74, 68, 0.35); }
+  body.light-mode .gloss[data-cat="literary"] { text-decoration-color: rgba(58, 138, 58, 0.3); }
+  body.light-mode .gloss[data-cat="analytic"] { text-decoration-color: rgba(106, 122, 138, 0.3); }
+  body.light-mode .gloss[data-cat="military"] { text-decoration-color: rgba(153, 74, 68, 0.35); }
   body.light-mode .gloss.gloss-active { background-color: rgba(100, 100, 100, 0.1); }
   body.light-mode .gloss.gloss-active[data-cat="geographic"] { background-color: rgba(42, 138, 170, 0.12); }
   body.light-mode .gloss.gloss-active[data-cat="cultural"] { background-color: rgba(154, 122, 32, 0.12); }
