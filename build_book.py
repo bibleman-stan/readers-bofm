@@ -31,7 +31,7 @@ QUIET_ARCHAICS = {
     'spake', 'beheld', 'smitten', 'smote',
     'hither', 'thither', 'whither', 'whence',
     'brethren', 'thereof', 'whereby', 'wherewith',
-    'it came to pass',
+    'it came to pass', 'it shall come to pass',
 }
 
 # ============================================================================
@@ -77,6 +77,36 @@ AICTP_SWAPS = [
     ("it came to pass that", "then"),
     ("it came to pass,", "then,"),
     ("it came to pass", "then"),
+
+    # ── Future tense: "it shall come to pass" ──
+    # "that" variants (longest first)
+    ("And now it shall come to pass that", "And now"),
+    ("Wherefore it shall come to pass that", "And so"),
+    ("Therefore it shall come to pass that", "Therefore"),
+    ("But behold, it shall come to pass that", "But behold,"),
+    ("But it shall come to pass that", "But then"),
+    ("For it shall come to pass that", "For then"),
+    ("And it shall come to pass that", "And then"),
+    ("and it shall come to pass that", "and then"),
+    ("And behold it shall come to pass that", "And behold,"),
+    ("And again it shall come to pass that", "And again"),
+    ("Yea, and it shall come to pass that", "Yea, and"),
+    # "in that day" variants
+    ("And it shall come to pass in that day,", "And in that day,"),
+    ("And it shall come to pass in that day", "And in that day"),
+    ("and it shall come to pass in that day", "and in that day"),
+    # Bare / comma variants (no "that")
+    ("And it shall come to pass,", "And then,"),
+    ("And it shall come to pass", "And then"),
+    ("and it shall come to pass", "and then"),
+    ("For it shall come to pass", "For then"),
+    ("But behold, it shall come to pass", "But behold,"),
+    ("Wherefore it shall come to pass", "And so"),
+    ("Therefore it shall come to pass", "Therefore"),
+    # Bare mid-sentence
+    ("it shall come to pass that", "then"),
+    ("it shall come to pass,", "then,"),
+    ("it shall come to pass", "then"),
 ]
 
 COMPOUND_SWAPS = [
@@ -622,7 +652,7 @@ def _build_general_swap_engine(swap_list):
     patterns = []
     seen = set()
     for archaic, modern in swap_list:
-        if 'it came to pass' in archaic:
+        if 'it came to pass' in archaic or 'it shall come to pass' in archaic:
             continue  # AICTP handled separately
         if archaic in SPECIAL_CASE_ARCHAICS:
             continue  # handled individually
@@ -710,7 +740,7 @@ def apply_swaps(text, swap_list):
 
     # ---- AICTP swaps: literal string match (no word boundary) ----
     for archaic, modern in swap_list:
-        if 'it came to pass' not in archaic:
+        if 'it came to pass' not in archaic and 'it shall come to pass' not in archaic:
             continue
         if archaic in result:
             sentinel = f"\x00A{len(placeholders)}\x00"
