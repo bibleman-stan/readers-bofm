@@ -192,6 +192,11 @@ COMPOUND_SWAPS = [
     ("doleful creatures", "mournful creatures"),
     ("cockatrice's", "viper's"), ("Cockatrice's", "Viper's"),  # before simple cockatrice swap
     # ── Isaiah false friends & opaque phrases (batch 2) ──
+    ("ragged rocks", "jagged rocks"),
+    ("smite with a scab", "smite with sores"),
+    ("a rent", "a torn rag"),
+    ("stout heart", "proud heart"),
+    ("stout against", "harsh against"),
     ("cunning artificer", "skilled craftsman"),
     ("round tires like the moon", "crescent ornaments"),
     ("pleasant pictures", "beautiful craft"),
