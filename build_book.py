@@ -104,7 +104,7 @@ COMPOUND_SWAPS = [
     ("hither and thither", "this way and that"),
     ("an account", "a record"), ("in fine", "in other words"), ("lust after", "desire"),
     ("save two churches only", "only two churches"), ("save a few only", "only a few"),
-    ("save it were", "except"), ("save it be", "unless"), ("save that", "except that"),
+    ("save it were", "except"), ("save it be", "except"), ("save that", "except that"),
     ("Thou mightest", "You might"), ("thou mightest", "you might"),
     ("Thou knowest", "You know"), ("thou knowest", "you know"),
     ("Thou shalt", "You shall"), ("thou shalt", "you shall"),
