@@ -2,7 +2,7 @@
   "_meta": {
     "description": "Comprehensive contextual glosses for Isaiah and Malachi sections in the Book of Mormon. Each entry keys on book:chapter:verse and provides phrase-level annotations with short, factual, non-interpretive notes to help readers understand historical and cultural references.",
     "format": "Each gloss has: phrase (the exact text to underline), note (the tooltip text, max ~160 chars), and category (geographic, cultural, historical, literary)",
-    "coverage": "1 Nephi 20-21 (Isaiah 48-49), 2 Nephi 7-8 (Isaiah 50-52), 2 Nephi 12-24 (Isaiah 2-14), 2 Nephi 27 (Isaiah 29 expansion), 3 Nephi 22 (Isaiah 54), 3 Nephi 24-25 (Malachi 3-4)"
+    "coverage": "1 Nephi 20-21 (Isaiah 48-49), 2 Nephi 7-8 (Isaiah 50-52), 2 Nephi 12-24 (Isaiah 2-14), 2 Nephi 27 (Isaiah 29 expansion), 2 Nephi 30 (Isaiah 11 quotation), 3 Nephi 22 (Isaiah 54), 3 Nephi 24-25 (Malachi 3-4)"
   },
   "1nephi:20:1": [
     {
@@ -1519,6 +1519,27 @@
       "phrase": "lay a snare for him that reproveth in the gate",
       "note": "The city gate was the public court where disputes were settled. To 'reprove in the gate' is to speak up for justice in open court. These people are punished for it.",
       "category": "cultural"
+    }
+  ],
+  "2nephi:30:9": [
+    {
+      "phrase": "he shall smite the earth with the rod of his mouth",
+      "note": "From Isaiah 11:4. The 'rod of his mouth' is his word — he judges and rules by what he speaks, not by force of arms.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:30:11": [
+    {
+      "phrase": "righteousness shall be the girdle of his loins, and faithfulness the girdle of his reins",
+      "note": "From Isaiah 11:5. 'Reins' means the innermost core (loins/kidneys), not horse reins. Righteousness and faithfulness aren't things he puts on — they hold his very being together.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:30:14": [
+    {
+      "phrase": "the sucking child shall play on the hole of the asp",
+      "note": "From Isaiah 11:8. The asp and cockatrice (viper) are deadly serpents. Even the most dangerous creatures are harmless — a vision of total peace.",
+      "category": "literary"
     }
   ]
 }
