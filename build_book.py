@@ -1317,6 +1317,94 @@ def apply_gloss_highlights(line_text, gloss_entries):
     return ''.join(result)
 
 
+def _extract_visible_text(html):
+    """Strip HTML tags to get visible text only."""
+    result = []
+    i = 0
+    while i < len(html):
+        if html[i] == '<':
+            end = html.find('>', i)
+            if end == -1:
+                break
+            i = end + 1
+        else:
+            result.append(html[i])
+            i += 1
+    return ''.join(result)
+
+
+def apply_gloss_highlights_multiline(lines, gloss_entries):
+    """Apply glosses across multiple lines, handling phrases that span line breaks.
+
+    For phrases found within a single line, delegates to apply_gloss_highlights.
+    For phrases that span multiple lines, splits the phrase at line boundaries
+    and applies sub-phrase glosses to each line.
+    """
+    if not gloss_entries or not lines:
+        return lines
+
+    # Extract plain text for each line
+    line_plains = [_extract_visible_text(line) for line in lines]
+
+    # Separate single-line vs multi-line gloss entries
+    single_entries = []
+    multi_entries = []
+    for entry in gloss_entries:
+        phrase = entry.get('phrase', '')
+        if not phrase:
+            continue
+        phrase_lower = phrase.lower()
+        if any(phrase_lower in lp.lower() for lp in line_plains):
+            single_entries.append(entry)
+        else:
+            multi_entries.append(entry)
+
+    # Apply single-line glosses normally
+    result = [apply_gloss_highlights(line, single_entries) for line in lines]
+
+    if not multi_entries:
+        return result
+
+    # Build concatenated plain text with line-boundary offsets
+    # Join with space (matching visual separation between sense lines)
+    line_offsets = []  # (start, end) in the concatenated string
+    pos = 0
+    for lp in line_plains:
+        line_offsets.append((pos, pos + len(lp)))
+        pos += len(lp) + 1  # +1 for the joining space
+
+    full_plain = ' '.join(line_plains)
+    full_lower = full_plain.lower()
+
+    for entry in multi_entries:
+        phrase = entry.get('phrase', '')
+        note = entry.get('note', '')
+        cat = entry.get('category', '')
+        phrase_lower = phrase.lower()
+
+        idx = full_lower.find(phrase_lower)
+        if idx == -1:
+            continue
+        phrase_end = idx + len(phrase)
+
+        # Determine which lines the phrase spans
+        for li, (ls, le) in enumerate(line_offsets):
+            overlap_start = max(idx, ls)
+            overlap_end = min(phrase_end, le)
+
+            if overlap_start < overlap_end:
+                sub_phrase = line_plains[li][overlap_start - ls : overlap_end - ls]
+                if sub_phrase.strip():
+                    sub_entry = {
+                        'phrase': sub_phrase,
+                        'note': note,
+                        'category': cat,
+                    }
+                    result[li] = apply_gloss_highlights(result[li], [sub_entry])
+
+    return result
+
+
 def get_pericope(book_id, chapter, verse):
     """Return a pericope section title if this verse starts a new section, or None."""
     if not _PERICOPE_INDEX:
@@ -1675,7 +1763,7 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
     # Check for contextual glosses (Isaiah/Malachi inline annotations)
     gloss_entries = get_glosses(book_id, verse['chapter'], verse['verse']) if book_id else []
     if gloss_entries:
-        processed = [apply_gloss_highlights(line, gloss_entries) for line in processed]
+        processed = apply_gloss_highlights_multiline(processed, gloss_entries)
 
     # Check for KJV diff data (parallel passage visualization)
     diff_data = get_kjv_diff(book_id, verse['chapter'], verse['verse']) if book_id else None
@@ -1745,6 +1833,8 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
         plines = parry_lines.get('lines', [])
         ptypes = parry_lines.get('types', [])
         last_upper_indent = 0
+        parry_metadata = []   # (label_html, indent) per Parry line
+        parry_texts = []      # processed HTML text per Parry line
         for pl_idx, pl in enumerate(plines):
             raw_label = pl.get('label', '')
             text = pl.get('text', '')
@@ -1781,9 +1871,16 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 processed_text = apply_phrase_highlights(processed_text, quote_phrases, 'quote-bible')
             if allusion_phrases:
                 processed_text = apply_phrase_highlights(processed_text, allusion_phrases, 'quote-allusion')
-            # Apply contextual glosses to Poetic layer
-            if gloss_entries:
-                processed_text = apply_gloss_highlights(processed_text, gloss_entries)
+            parry_metadata.append((label_html, indent))
+            parry_texts.append(processed_text)
+
+        # Apply contextual glosses across all Parry lines at once
+        # (handles phrases that span multiple lines)
+        if gloss_entries:
+            parry_texts = apply_gloss_highlights_multiline(parry_texts, gloss_entries)
+
+        # Wrap each Parry line in its span
+        for pl_idx, (processed_text, (label_html, indent)) in enumerate(zip(parry_texts, parry_metadata)):
             # Add data-source on the last Parry line for reference tooltip
             if sources and pl_idx == len(plines) - 1:
                 processed_text = f'<span data-source="{sources}">{processed_text}</span>'
