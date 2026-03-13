@@ -2,7 +2,7 @@
   "_meta": {
     "description": "Comprehensive contextual glosses for Isaiah and Malachi sections in the Book of Mormon. Each entry keys on book:chapter:verse and provides phrase-level annotations with short, factual, non-interpretive notes to help readers understand historical and cultural references.",
     "format": "Each gloss has: phrase (the exact text to underline), note (the tooltip text, max ~160 chars), and category (geographic, cultural, historical, literary)",
-    "coverage": "1 Nephi 20-21 (Isaiah 48-49), 2 Nephi 7-8 (Isaiah 50-52), 2 Nephi 12-24 (Isaiah 2-14), 3 Nephi 22 (Isaiah 54), 3 Nephi 24-25 (Malachi 3-4)"
+    "coverage": "1 Nephi 20-21 (Isaiah 48-49), 2 Nephi 7-8 (Isaiah 50-52), 2 Nephi 12-24 (Isaiah 2-14), 2 Nephi 27 (Isaiah 29 expansion), 3 Nephi 22 (Isaiah 54), 3 Nephi 24-25 (Malachi 3-4)"
   },
   "1nephi:20:1": [
     {
@@ -1491,6 +1491,154 @@
       "phrase": "evil fruit",
       "note": "In early English, 'evil' often meant simply 'bad' or 'worthless' — here it describes inedible fruit, not moral wickedness.",
       "category": "analytic"
+    }
+  ],
+  "2nephi:27:3": [
+    {
+      "phrase": "shall be as a dream of a night vision",
+      "note": "From Isaiah 29:7-8. The enemy's victory will be as fleeting and unreal as a dream — they think they've won, but wake to nothing.",
+      "category": "literary"
+    },
+    {
+      "phrase": "his soul is empty",
+      "note": "The dreamer eats or drinks in the dream but wakes still hungry. Isaiah's image: the nations' conquest of Zion will prove equally hollow.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:4": [
+    {
+      "phrase": "stay yourselves and wonder",
+      "note": "From Isaiah 29:9. 'Stay yourselves' means stop and stand still. God dares them to pause and see what is really happening.",
+      "category": "literary"
+    },
+    {
+      "phrase": "ye shall be drunken but not with wine",
+      "note": "Spiritual stupor, not literal intoxication. Isaiah's metaphor (29:9): the people stagger in confusion because God has withdrawn understanding.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:5": [
+    {
+      "phrase": "the spirit of deep sleep",
+      "note": "From Isaiah 29:10. A God-imposed inability to perceive spiritual truth — not physical sleep but willful blindness hardened into judgment.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:6": [
+    {
+      "phrase": "the words of them which have slumbered",
+      "note": "The dead — their written words survive them. Nephi's addition to Isaiah 29: a sealed book from an ancient, destroyed people.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:11": [
+    {
+      "phrase": "read upon the house tops",
+      "note": "Flat-roofed houses in the ancient Near East were public gathering places. 'On the housetops' means proclaimed openly to everyone.",
+      "category": "cultural"
+    }
+  ],
+  "2nephi:27:15": [
+    {
+      "phrase": "show them unto the learned",
+      "note": "Nephi's expansion of Isaiah 29:11-12. The 'learned man' is asked to authenticate or translate the text but ultimately refuses.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:25": [
+    {
+      "phrase": "draw near unto me with their mouth",
+      "note": "Quoting Isaiah 29:13. Lip-service religion — outward devotion with no inward commitment. Jesus later quotes this same verse (Matt 15:8).",
+      "category": "literary"
+    },
+    {
+      "phrase": "their fear towards me is taught by the precepts of men",
+      "note": "Their reverence for God is not genuine but learned by rote from human tradition rather than from the Spirit.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:26": [
+    {
+      "phrase": "a marvelous work and a wonder",
+      "note": "From Isaiah 29:14. A divine act so unexpected it overturns human wisdom. The 'wise and learned' will not see it coming.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:27": [
+    {
+      "phrase": "seek deep to hide their counsel from the Lord",
+      "note": "From Isaiah 29:15. People who scheme in secret, imagining God cannot see. Isaiah mocks the absurdity of hiding from an all-seeing Creator.",
+      "category": "literary"
+    },
+    {
+      "phrase": "Who seeth us, and who knoweth us?",
+      "note": "The conspirators' self-delusion — they believe their plans are invisible to God.",
+      "category": "literary"
+    },
+    {
+      "phrase": "your turning of things upside down shall be esteemed as the potter's clay",
+      "note": "From Isaiah 29:16. You treat God like clay and yourselves like the potter — reversing who made whom. A charge of breathtaking arrogance.",
+      "category": "literary"
+    },
+    {
+      "phrase": "shall the work say of him that made it, he made me not?",
+      "note": "Can a pot deny its potter? Isaiah's rhetorical question: creation cannot disown its Creator or claim to be self-made.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:28": [
+    {
+      "phrase": "Lebanon shall be turned into a fruitful field",
+      "note": "From Isaiah 29:17. Lebanon was famous for its vast cedar forests. God will turn wild woodland into cultivated farmland — a total reversal of the natural order.",
+      "category": "geographic"
+    },
+    {
+      "phrase": "the fruitful field shall be esteemed as a forest",
+      "note": "The reversal goes both ways: what is cultivated will seem wild, what is wild will seem cultivated. The entire social and spiritual landscape will be transformed.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:31": [
+    {
+      "phrase": "the terrible one is brought to naught",
+      "note": "From Isaiah 29:20. The tyrant or oppressor will be reduced to nothing.",
+      "category": "literary"
+    },
+    {
+      "phrase": "all that watch for iniquity are cut off",
+      "note": "Those who lie in wait for an opportunity to do evil — predators looking for prey — will be destroyed.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:32": [
+    {
+      "phrase": "make a man an offender for a word",
+      "note": "From Isaiah 29:21. Condemning someone over a single statement — distorting or weaponizing their speech to destroy them.",
+      "category": "literary"
+    },
+    {
+      "phrase": "lay a snare for him that reproveth in the gate",
+      "note": "The city gate was the public court where disputes were settled. 'Reproveth in the gate' means the one who speaks up for justice. They are being trapped for it.",
+      "category": "cultural"
+    },
+    {
+      "phrase": "turn aside the just for a thing of naught",
+      "note": "Denying a righteous person their legal rights on a technicality or a fabricated charge — justice perverted for nothing.",
+      "category": "literary"
+    }
+  ],
+  "2nephi:27:33": [
+    {
+      "phrase": "who redeemed Abraham",
+      "note": "From Isaiah 29:22. God called Abraham out of pagan Mesopotamia — 'redeemed' here means rescued from idolatry and obscurity.",
+      "category": "historical"
+    }
+  ],
+  "2nephi:27:34": [
+    {
+      "phrase": "the work of my hands, in the midst of him",
+      "note": "Jacob (Israel) will see his descendants — God's handiwork — flourishing around him. The shame of v. 33 is replaced by awe.",
+      "category": "literary"
     }
   ]
 }
