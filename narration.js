@@ -188,8 +188,29 @@ const NARRATION = (() => {
       await audioContext.resume();
     }
 
-    const samples = rawAudio.audio || rawAudio.data;
+    // Extract samples — handle various kokoro-js return formats
+    let samples = rawAudio.audio || rawAudio.data;
     const sampleRate = rawAudio.sampling_rate || 24000;
+
+    // Debug logging
+    console.log('Narration playAudio:', {
+      type: typeof samples,
+      constructor: samples?.constructor?.name,
+      length: samples?.length,
+      sampleRate,
+      audioCtxState: audioContext.state,
+      rawKeys: Object.keys(rawAudio || {})
+    });
+
+    if (!samples || samples.length === 0) {
+      console.warn('Narration: empty audio samples, skipping');
+      return;
+    }
+
+    // Ensure we have a plain Float32Array (some ONNX backends return views)
+    if (!(samples instanceof Float32Array)) {
+      samples = new Float32Array(samples);
+    }
 
     const buffer = audioContext.createBuffer(1, samples.length, sampleRate);
     buffer.getChannelData(0).set(samples);
@@ -282,6 +303,8 @@ const NARRATION = (() => {
       });
 
       lines = gatherLines();
+      console.log('Narration: gathered', lines.length, 'items,',
+        lines.filter(l => l.type === 'line' || l.type === 'verse').length, 'speakable lines');
       if (lines.length === 0) {
         console.warn('Narration: no lines found to read');
         stopPlayback();
@@ -289,6 +312,7 @@ const NARRATION = (() => {
       }
 
       updatePlayerState('playing');
+      console.log('Narration: starting playback loop, voice:', currentVoice);
 
       for (cursor = (seekTarget >= 0 ? seekTarget : 0); cursor < lines.length; cursor++) {
         if (signal.aborted) break;
@@ -319,7 +343,9 @@ const NARRATION = (() => {
         if (item.type === 'pericope') {
           await sleep(PERICOPE_PAUSE_MS / currentSpeed, signal);
           highlightLine(item.element);
+          console.log('Narration: generating pericope audio for:', item.text);
           const audio = await tts.generate(item.text, { voice: currentVoice });
+          console.log('Narration: pericope generated, playing...');
           await playAudio(audio, signal);
           await sleep(PERICOPE_PAUSE_MS / currentSpeed, signal);
           continue;
@@ -327,7 +353,10 @@ const NARRATION = (() => {
 
         // Regular line or verse
         highlightLine(item.element);
+        console.log('Narration: generating audio for:', item.text.substring(0, 60) + '...');
+        const t0 = performance.now();
         const audio = await tts.generate(item.text, { voice: currentVoice });
+        console.log('Narration: generated in', Math.round(performance.now() - t0), 'ms');
         await playAudio(audio, signal);
 
         if (item.type === 'line') {
@@ -790,11 +819,11 @@ const NARRATION = (() => {
   };
 
   // Simple rewind/forward icons with "10" text
-  const ICON_RW = `<svg viewBox="0 0 24 24" fill="currentColor" style="width:100%;height:100%">
+  const ICON_RW = `<svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px">
     <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
     <text x="9.5" y="15.5" font-size="7.5" font-weight="700" font-family="sans-serif" text-anchor="middle">10</text>
   </svg>`;
-  const ICON_FF = `<svg viewBox="0 0 24 24" fill="currentColor" style="width:100%;height:100%">
+  const ICON_FF = `<svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px">
     <path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/>
     <text x="14" y="15.5" font-size="7.5" font-weight="700" font-family="sans-serif" text-anchor="middle">10</text>
   </svg>`;
