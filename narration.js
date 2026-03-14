@@ -143,6 +143,7 @@ const NARRATION = (() => {
       playing = true;
       updatePlayerState('playing');
       startHighlightLoop();
+      bindChapterClick();
     } catch (e) {
       console.error('Narration: play failed:', e);
       updatePlayerState('error', 'Playback failed');
@@ -175,6 +176,7 @@ const NARRATION = (() => {
     currentLineIdx = -1;
     clearHighlight();
     stopHighlightLoop();
+    unbindChapterClick();
     updatePlayerState('stopped');
   }
 
@@ -223,6 +225,155 @@ const NARRATION = (() => {
     currentSpeed = speed;
     if (audioEl) audioEl.playbackRate = speed;
     updateSpeedDisplay();
+  }
+
+  function cycleSpeed() {
+    const idx = SPEEDS.indexOf(currentSpeed);
+    const next = SPEEDS[(idx + 1) % SPEEDS.length];
+    setSpeed(next);
+  }
+
+  // ── Click-to-seek on lines ──
+
+  /**
+   * Given a DOM element (a .line, .line-para, or .pericope-header),
+   * determine its lineIndex within the chapter by walking the same
+   * tree that findLineElement uses, but in reverse.
+   * Returns the manifest line index, or -1 if not found.
+   */
+  function getLineIndexFromElement(targetEl) {
+    const activeBook = document.querySelector('.book-content[style*="display: block"]')
+                    || document.querySelector('.book-content:not([style*="display: none"])');
+    if (!activeBook) return -1;
+
+    const activeChapter = activeBook.querySelector('.chapter-content[style*="display: block"]')
+                       || activeBook.querySelector('.chapter-content:not([style*="display: none"])');
+    if (!activeChapter) return -1;
+
+    const isSenseLineMode = document.body.classList.contains('show-lines');
+    let idx = 0;
+
+    for (const child of activeChapter.children) {
+      if (typeof child.classList === 'undefined') continue;
+      const classes = child.classList;
+
+      if (classes.contains('pericope-header')) {
+        if (child === targetEl || child.contains(targetEl)) return idx;
+        idx++;
+        continue;
+      }
+
+      if (classes.contains('verse')) {
+        if (isSenseLineMode) {
+          const senseLines = Array.from(child.querySelectorAll(':scope > .line'));
+          const lines = senseLines.filter(el => el.className.trim() === 'line');
+          for (const line of lines) {
+            if (line === targetEl || line.contains(targetEl)) return idx;
+            idx++;
+          }
+        } else {
+          const para = child.querySelector('.line-para');
+          if (para) {
+            if (para === targetEl || para.contains(targetEl)) return idx;
+            idx++;
+          }
+        }
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * Seek audio to the start of a specific manifest line index.
+   * If audio isn't loaded yet, loads it first.
+   */
+  async function seekToLine(manifestIdx) {
+    if (!manifest || manifestIdx < 0 || manifestIdx >= manifest.lines.length) return;
+
+    const entry = manifest.lines[manifestIdx];
+
+    // If audio isn't loaded, load it first
+    if (!audioEl || !audioEl.src) {
+      const ok = await loadChapterAudio();
+      if (!ok) return;
+    }
+
+    audioEl.currentTime = entry.start;
+
+    // If not playing, start playback from this point
+    if (!playing) {
+      try {
+        await audioEl.play();
+        playing = true;
+        showPlayer();
+        updatePlayerState('playing');
+        startHighlightLoop();
+      } catch (e) {
+        console.error('Narration: play from line failed:', e);
+      }
+    }
+
+    // Force immediate highlight update
+    currentLineIdx = -1; // reset so updateHighlight picks up new position
+    updateHighlight();
+    updateProgress();
+  }
+
+  /**
+   * Delegated click handler for chapter content.
+   * Clicking a line while narration is active seeks to that line.
+   */
+  function onChapterClick(e) {
+    // Only respond when we have a manifest loaded (narration is active)
+    if (!manifest) return;
+
+    // Walk up from click target to find a .line, .line-para, or .pericope-header
+    let el = e.target;
+    while (el && el !== e.currentTarget) {
+      const cl = el.className?.trim?.() || '';
+      if (cl === 'line' || cl === 'line-para' || el.classList?.contains('pericope-header')) {
+        break;
+      }
+      el = el.parentElement;
+    }
+    if (!el || el === e.currentTarget) return;
+
+    const lineIdx = getLineIndexFromElement(el);
+    if (lineIdx < 0) return;
+
+    // Find the manifest entry for this lineIndex
+    const manifestIdx = manifest.lines.findIndex(l => l.lineIndex === lineIdx);
+    if (manifestIdx < 0) return;
+
+    e.preventDefault();
+    seekToLine(manifestIdx);
+  }
+
+  let chapterClickBound = false;
+
+  function bindChapterClick() {
+    if (chapterClickBound) return;
+    const activeBook = document.querySelector('.book-content[style*="display: block"]')
+                    || document.querySelector('.book-content:not([style*="display: none"])');
+    if (!activeBook) return;
+
+    const activeChapter = activeBook.querySelector('.chapter-content[style*="display: block"]')
+                       || activeBook.querySelector('.chapter-content:not([style*="display: none"])');
+    if (!activeChapter) return;
+
+    activeChapter.addEventListener('click', onChapterClick);
+    chapterClickBound = true;
+
+    // Add class so CSS can show pointer cursors
+    document.body.classList.add('narration-clickable');
+  }
+
+  function unbindChapterClick() {
+    if (!chapterClickBound) return;
+    document.body.classList.remove('narration-clickable');
+    // We leave the listener attached since chapter may change;
+    // the handler checks manifest !== null before acting
+    chapterClickBound = false;
   }
 
   // ── Line highlighting ──
@@ -477,7 +628,10 @@ const NARRATION = (() => {
 
       .narr-exp-header {
         display: flex; align-items: center; justify-content: space-between;
-        margin-bottom: 14px;
+        margin-bottom: 14px; gap: 8px;
+      }
+      .narr-exp-header-btns {
+        display: flex; align-items: center; gap: 2px; flex-shrink: 0;
       }
       .narr-exp-title { font-size: 0.95em; font-weight: 600; color: #d4d0c8; }
       body.light-mode .narr-exp-title { color: #3a3630; }
@@ -558,6 +712,41 @@ const NARRATION = (() => {
 
       body.narration-player-active { padding-bottom: 60px; }
       body.narration-player-expanded { padding-bottom: 220px; }
+
+      /* ── Clickable lines when narration is active ── */
+      body.narration-clickable .line,
+      body.narration-clickable .line-para,
+      body.narration-clickable .pericope-header {
+        cursor: pointer;
+        transition: background 0.15s ease;
+      }
+      body.narration-clickable .line:hover,
+      body.narration-clickable .line-para:hover {
+        background: rgba(100, 180, 255, 0.08);
+        border-radius: 3px;
+      }
+      body.light-mode.narration-clickable .line:hover,
+      body.light-mode.narration-clickable .line-para:hover {
+        background: rgba(50, 120, 200, 0.06);
+      }
+
+      /* ── Mini speed button ── */
+      .narr-mini-speed {
+        background: rgba(100, 150, 200, 0.12);
+        border: 1px solid rgba(100, 150, 200, 0.2);
+        border-radius: 10px; color: #9ab; font-size: 0.68em;
+        padding: 1px 7px; cursor: pointer; font-family: inherit;
+        white-space: nowrap; transition: all 0.15s;
+        min-width: 32px; text-align: center;
+      }
+      .narr-mini-speed:hover {
+        background: rgba(100, 150, 200, 0.25);
+        border-color: rgba(100, 150, 200, 0.4);
+      }
+      body.light-mode .narr-mini-speed {
+        background: rgba(90, 106, 122, 0.08);
+        border-color: rgba(90, 106, 122, 0.2); color: #5a6a7a;
+      }
     `;
     document.head.appendChild(style);
   }
@@ -595,6 +784,7 @@ const NARRATION = (() => {
           <div class="narr-mini-title" id="narr-mini-title">Loading...</div>
           <div class="narr-mini-subtitle" id="narr-mini-sub">Narration</div>
         </div>
+        <button class="narr-mini-speed" id="narr-mini-speed" title="Change speed">${currentSpeed}x</button>
         <button class="narr-btn narr-btn-skip" id="narr-mini-rw" title="Back 10s">${ICON_RW}</button>
         <button class="narr-btn narr-btn-play" id="narr-mini-play" title="Play/Pause">${ICONS.play}</button>
         <button class="narr-btn narr-btn-skip" id="narr-mini-ff" title="Forward 10s">${ICON_FF}</button>
@@ -606,7 +796,10 @@ const NARRATION = (() => {
             <div class="narr-exp-title" id="narr-exp-title">Loading...</div>
             <div class="narr-exp-verse" id="narr-exp-verse"></div>
           </div>
-          <button class="narr-collapse-btn" id="narr-collapse" title="Collapse">${ICONS.chevDown}</button>
+          <div class="narr-exp-header-btns">
+            <button class="narr-collapse-btn" id="narr-collapse" title="Minimize">${ICONS.chevDown}</button>
+            <button class="narr-btn narr-btn-close" id="narr-exp-close" title="Close player">${ICONS.close}</button>
+          </div>
         </div>
         <div class="narr-progress-container" id="narr-prog-bar">
           <div class="narr-progress-fill" id="narr-prog-fill" style="width: 0%"></div>
@@ -634,12 +827,14 @@ const NARRATION = (() => {
     document.getElementById('narr-mini-play').addEventListener('click', (e) => { e.stopPropagation(); togglePlayPause(); });
     document.getElementById('narr-mini-rw').addEventListener('click', (e) => { e.stopPropagation(); seekRelative(-10); });
     document.getElementById('narr-mini-ff').addEventListener('click', (e) => { e.stopPropagation(); seekRelative(10); });
+    document.getElementById('narr-mini-speed').addEventListener('click', (e) => { e.stopPropagation(); cycleSpeed(); });
     document.getElementById('narr-mini-close').addEventListener('click', (e) => { e.stopPropagation(); stopPlayback(); hidePlayer(); });
 
     document.getElementById('narr-exp-play').addEventListener('click', togglePlayPause);
     document.getElementById('narr-exp-rw').addEventListener('click', () => seekRelative(-10));
     document.getElementById('narr-exp-ff').addEventListener('click', () => seekRelative(10));
     document.getElementById('narr-collapse').addEventListener('click', () => toggleExpand(false));
+    document.getElementById('narr-exp-close').addEventListener('click', () => { stopPlayback(); hidePlayer(); });
 
     // Speed buttons
     expandedEl.querySelectorAll('.narr-speed-btn').forEach(btn => {
@@ -661,11 +856,21 @@ const NARRATION = (() => {
       playerEl.classList.add('expanded');
       document.body.classList.add('narration-player-expanded');
       document.body.classList.remove('narration-player-active');
+      // Click outside to collapse
+      setTimeout(() => document.addEventListener('click', onClickOutsidePlayer, true), 0);
     } else {
       playerEl.classList.remove('expanded');
       document.body.classList.remove('narration-player-expanded');
       document.body.classList.add('narration-player-active');
+      document.removeEventListener('click', onClickOutsidePlayer, true);
     }
+  }
+
+  function onClickOutsidePlayer(e) {
+    if (!isExpanded || !playerEl) return;
+    // If the click landed inside the expanded player, ignore it
+    if (playerEl.contains(e.target)) return;
+    toggleExpand(false);
   }
 
   function showPlayer() {
@@ -677,6 +882,7 @@ const NARRATION = (() => {
   function hidePlayer() {
     if (playerEl) playerEl.classList.remove('visible', 'expanded');
     document.body.classList.remove('narration-player-active', 'narration-player-expanded');
+    document.removeEventListener('click', onClickOutsidePlayer, true);
     isExpanded = false;
   }
 
@@ -771,11 +977,15 @@ const NARRATION = (() => {
   }
 
   function updateSpeedDisplay() {
-    if (!expandedEl) return;
-    expandedEl.querySelectorAll('.narr-speed-btn').forEach(btn => {
-      const s = parseFloat(btn.dataset.speed);
-      btn.classList.toggle('active', s === currentSpeed);
-    });
+    if (expandedEl) {
+      expandedEl.querySelectorAll('.narr-speed-btn').forEach(btn => {
+        const s = parseFloat(btn.dataset.speed);
+        btn.classList.toggle('active', s === currentSpeed);
+      });
+    }
+    // Update mini speed button
+    const miniSpeed = document.getElementById('narr-mini-speed');
+    if (miniSpeed) miniSpeed.textContent = currentSpeed + 'x';
   }
 
   // ── Toolbar button (entry point) ──
@@ -824,8 +1034,10 @@ const NARRATION = (() => {
     resume: resumePlayback,
     stop: stopPlayback,
     setSpeed,
+    seekToLine,
     get isPlaying() { return playing; },
     get isPaused() { return audioEl && audioEl.paused; },
+    get currentLine() { return currentLineIdx >= 0 && manifest ? manifest.lines[currentLineIdx] : null; },
   };
 })();
 
