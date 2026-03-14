@@ -708,6 +708,14 @@ def apply_swaps(text, swap_list):
         'according', 'because', 'here', 'there', 'like',
         'men', 'wrong', 'alms', 'miracles', 'justice', 'mercy',
         'salvation', 'battle', 'business', 'service',
+        # title nouns (appear between aux and real verb: "did king Benjamin teach")
+        'king', 'captain', 'chief', 'judge', 'prophet', 'queen',
+        # proper nouns (appear as subject after inverted aux: "did Alma teach")
+        'abinadi', 'alma', 'ammon', 'antipus', 'gideon', 'helaman',
+        'laman', 'lamoni', 'lehi', 'limhi', 'moroni', 'mosiah',
+        'nephi', 'noah', 'satan', 'sherem', 'zeniff',
+        # other words that follow "did/do" but aren't verbs
+        'again',
     }
 
     def _third_person_s(verb):
@@ -832,7 +840,13 @@ def apply_swaps(text, swap_list):
                 'not', 'also', 'all', 'both', 'even', 'never', 'once', 'then', 'thus',
                 'i', 'it', 'they', 'she', 'he', 'we', 'so', 'as', 'again', 'frankly',
                 'still', 'do', 'molten', 'this', 'that', 'these', 'those',
-                'now', 'throughout', 'there', 'here', 'much', 'more'}
+                'now', 'throughout', 'there', 'here', 'much', 'more',
+                # title nouns (subject between aux and verb: "did king Benjamin teach")
+                'king', 'captain', 'chief', 'judge', 'prophet', 'queen',
+                # proper nouns (inverted subject: "did Alma teach")
+                'abinadi', 'alma', 'ammon', 'antipus', 'gideon', 'helaman',
+                'laman', 'lamoni', 'lehi', 'limhi', 'moroni', 'mosiah',
+                'nephi', 'noah', 'satan', 'sherem', 'zeniff'}
 
     def did_verb_replace(m):
         full, verb = m.group(0), m.group(1)
