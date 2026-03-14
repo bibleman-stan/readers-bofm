@@ -220,6 +220,17 @@
     transition: max-height 0.2s ease;
   }
 
+  /* Tap-to-toggle: fully hide toolbar */
+  .toolbar-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+  }
+  #reading-toolbar {
+    transition: transform 0.25s ease, opacity 0.2s ease;
+  }
+
   .collapsed-summary {
     display: none;
     height: 32px;
@@ -2625,6 +2636,8 @@
     if (!isVisible && toolbar.classList.contains('toolbar-collapsed')) {
       toolbar.classList.remove('toolbar-collapsed');
     }
+    // Reveal toolbar if hidden by tap
+    if (!isVisible) { toolbar.classList.remove('toolbar-hidden'); }
     // Close other panels when opening settings
     if (!isVisible) {
       document.getElementById('nav-panel').style.display = 'none';
@@ -2832,6 +2845,8 @@
     if (isHidden && toolbar.classList.contains('toolbar-collapsed')) {
       toolbar.classList.remove('toolbar-collapsed');
     }
+    // Reveal toolbar if hidden by tap
+    if (isHidden) { toolbar.classList.remove('toolbar-hidden'); }
     // Close other panels
     document.getElementById('nav-panel').style.display = 'none';
     document.getElementById('background-panel').style.display = 'none';
@@ -3062,42 +3077,19 @@
     if (!scrollTicking) {
       requestAnimationFrame(function() {
         var y = window.scrollY;
-        // Back-to-top button
+        // Back-to-top button (scroll-driven visibility still applies)
         backBtn.style.display = y > 600 ? 'flex' : 'none';
-        // Toolbar collapse — skip if temporarily paused (panel toggle, etc.)
-        if (Date.now() < collapseDisabledUntil) {
-          lastScrollY = y;
-          scrollTicking = false;
-          return;
-        }
-        var delta = y - lastScrollY;
-        var wasCollapsed = lastCollapseState;
-        // Don't collapse toolbar while a panel is open (layers, nav, background, etc.)
-        var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
-          var el = document.getElementById(id);
-          return el && el.style.display === 'block';
-        }) || document.getElementById('settings-panel').classList.contains('visible');
-        if (anyPanelOpen) {
-          lastScrollY = y;
-          scrollTicking = false;
-          return;
-        }
-        if (y <= 80) {
-          toolbar.classList.remove('toolbar-collapsed');
-          toolbar.classList.remove('toolbar-show-summary');
-          lastCollapseState = false;
-        } else if (delta > scrollDeadZone) {
-          toolbar.classList.add('toolbar-collapsed');
-          toolbar.classList.remove('toolbar-show-summary');
-          lastCollapseState = true;
-        } else if (delta < -scrollDeadZone) {
-          toolbar.classList.remove('toolbar-collapsed');
-          toolbar.classList.remove('toolbar-show-summary');
-          lastCollapseState = false;
-        }
-        // Add cooldown when collapse state changes to prevent stutter
-        if (lastCollapseState !== wasCollapsed) {
-          collapseDisabledUntil = Date.now() + 400;
+        // Toolbar collapse into compact mode when scrolled down (purely visual)
+        // But do NOT change toolbar-hidden state — that's tap-driven only
+        // Skip collapse logic entirely if toolbar is hidden by tap
+        if (!toolbar.classList.contains('toolbar-hidden')) {
+          if (y <= 80) {
+            toolbar.classList.remove('toolbar-collapsed');
+            toolbar.classList.remove('toolbar-show-summary');
+          } else if (!toolbar.classList.contains('toolbar-collapsed')) {
+            toolbar.classList.add('toolbar-collapsed');
+            toolbar.classList.remove('toolbar-show-summary');
+          }
         }
         lastScrollY = y;
         scrollTicking = false;
@@ -3109,16 +3101,21 @@
   // Pause collapse logic briefly (call before toggling panels that change page height)
   function pauseCollapse() { collapseDisabledUntil = Date.now() + 400; }
 
-  // Tap the summary bar to toggle toolbar expand/collapse
+  // Tap the summary bar — if toolbar is hidden, show it; otherwise toggle expand/collapse
   document.getElementById('collapsed-summary').addEventListener('click', function(e) {
+    e.stopPropagation(); // don't trigger the content-area toggle
+    if (toolbar.classList.contains('toolbar-hidden')) {
+      // Reveal the toolbar
+      toolbar.classList.remove('toolbar-hidden');
+      return;
+    }
     if (toolbar.classList.contains('toolbar-collapsed')) {
-      // Expand
+      // Expand to full toolbar
       toolbar.classList.remove('toolbar-collapsed');
-      // Keep summary visible so user can tap to re-collapse
       if (window.scrollY > 80) toolbar.classList.add('toolbar-show-summary');
       pauseCollapse();
     } else if (window.scrollY > 80) {
-      // Re-collapse (user taps summary bar again while expanded)
+      // Re-collapse
       toolbar.classList.add('toolbar-collapsed');
       toolbar.classList.remove('toolbar-show-summary');
       closeAllPanels();
@@ -3126,9 +3123,11 @@
     }
   });
 
-  // Tap on scripture content to collapse toolbar (dismiss expanded menu)
-  document.getElementById('scripture-content').addEventListener('click', function() {
-    // Always close open panels when tapping scripture area
+  // ── Tap-to-toggle: tap content area to hide/show toolbar ──
+  document.getElementById('scripture-content').addEventListener('click', function(e) {
+    // Don't toggle if user tapped a link, button, or interactive element
+    if (e.target.closest('a, button, .verse-num, .swap, .gloss-trigger, .quote-allusion')) return;
+    // Don't toggle if a panel is open — close it instead
     var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
       var el = document.getElementById(id);
       return el && el.style.display === 'block';
@@ -3138,13 +3137,8 @@
       pauseCollapse();
       return;
     }
-    // Collapse toolbar if scrolled past top
-    if (!toolbar.classList.contains('toolbar-collapsed') && window.scrollY > 80) {
-      toolbar.classList.add('toolbar-collapsed');
-      toolbar.classList.remove('toolbar-show-summary');
-      closeAllPanels();
-      pauseCollapse();
-    }
+    // Toggle toolbar visibility (class is source of truth)
+    toolbar.classList.toggle('toolbar-hidden');
   });
 
   // Click-outside-to-dismiss for dropdown panels (layers, nav, background, settings)
