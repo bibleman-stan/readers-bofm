@@ -15,7 +15,11 @@
 const NARRATION = (() => {
   // ── Configuration ──
   const MODEL_ID = 'onnx-community/Kokoro-82M-v1.0-ONNX';
-  const MODEL_OPTS = { dtype: 'q8', device: 'wasm' };
+  // Detect WebGPU support — async GPU inference won't block main thread
+  const USE_WEBGPU = typeof navigator !== 'undefined' && !!navigator.gpu;
+  const MODEL_OPTS = USE_WEBGPU
+    ? { dtype: 'fp32', device: 'webgpu' }
+    : { dtype: 'q8', device: 'wasm' };
   const VOICES = {
     'bm_george':  'George (British male)',
     'bf_emma':    'Emma (British female)',
@@ -45,6 +49,11 @@ const NARRATION = (() => {
   let seekTarget = -1;      // set to jump to a specific line
 
   // ── Helpers ──
+
+  /** Yield to the browser event loop so the UI stays responsive */
+  function yieldToMain() {
+    return new Promise(resolve => setTimeout(resolve, 0));
+  }
 
   function sleep(ms, signal) {
     return new Promise((resolve, reject) => {
@@ -244,6 +253,7 @@ const NARRATION = (() => {
     if (loading) return;
 
     loading = true;
+    console.log('Narration: loading model, device:', USE_WEBGPU ? 'webgpu' : 'wasm');
     try {
       const { KokoroTTS } = await import(
         /* webpackIgnore: true */
@@ -261,6 +271,21 @@ const NARRATION = (() => {
       throw e;
     } finally {
       loading = false;
+    }
+  }
+
+  // ── Generating indicator (pulsing dot on mini bar while WASM works) ──
+
+  function showGeneratingIndicator(show) {
+    const sub = document.getElementById('narr-mini-sub');
+    const title = document.getElementById('narr-mini-title');
+    if (!sub) return;
+    if (show) {
+      sub.textContent = 'Generating...';
+      if (title) title.style.opacity = '0.6';
+    } else {
+      if (title) title.style.opacity = '1';
+      // sub will be updated by updateProgress()
     }
   }
 
@@ -312,7 +337,62 @@ const NARRATION = (() => {
       }
 
       updatePlayerState('playing');
-      console.log('Narration: starting playback loop, voice:', currentVoice);
+      console.log('Narration: starting playback, voice:', currentVoice,
+        'device:', USE_WEBGPU ? 'webgpu' : 'wasm');
+
+      // ── Pre-generation pipeline ──
+      // Generate next line's audio while current line plays to minimize gaps.
+      let nextAudioCache = null;   // { index, audio } for the next speakable line
+      let nextGenPromise = null;   // in-flight generation promise
+
+      /** Pre-generate audio for the next speakable line after `fromIndex` */
+      function pregenNext(fromIndex) {
+        // Find next speakable item
+        let ni = fromIndex + 1;
+        while (ni < lines.length && (lines[ni].type === 'verse-gap')) ni++;
+        if (ni >= lines.length || signal.aborted) return;
+        const nextItem = lines[ni];
+        if (!nextItem.text) return;
+
+        console.log('Narration: pre-generating line', ni);
+        nextGenPromise = tts.generate(nextItem.text, { voice: currentVoice })
+          .then(audio => {
+            nextAudioCache = { index: ni, audio };
+            nextGenPromise = null;
+          })
+          .catch(() => { nextGenPromise = null; });
+      }
+
+      /** Get audio for an item — use cache if available, otherwise generate */
+      async function getAudio(index, text) {
+        // Check if we pre-generated this one
+        if (nextAudioCache && nextAudioCache.index === index) {
+          console.log('Narration: cache HIT for line', index);
+          const audio = nextAudioCache.audio;
+          nextAudioCache = null;
+          return audio;
+        }
+        // Wait for in-flight pre-gen if it's for this index
+        if (nextGenPromise) {
+          showGeneratingIndicator(true);
+          await nextGenPromise;
+          showGeneratingIndicator(false);
+          if (nextAudioCache && nextAudioCache.index === index) {
+            console.log('Narration: cache HIT (waited) for line', index);
+            const audio = nextAudioCache.audio;
+            nextAudioCache = null;
+            return audio;
+          }
+        }
+        // Generate fresh (first line, or cache miss after seek)
+        showGeneratingIndicator(true);
+        await yieldToMain();
+        const t0 = performance.now();
+        const audio = await tts.generate(text, { voice: currentVoice });
+        console.log('Narration: generated fresh in', Math.round(performance.now() - t0), 'ms');
+        showGeneratingIndicator(false);
+        return audio;
+      }
 
       for (cursor = (seekTarget >= 0 ? seekTarget : 0); cursor < lines.length; cursor++) {
         if (signal.aborted) break;
@@ -323,9 +403,10 @@ const NARRATION = (() => {
           await sleep(100, signal);
         }
 
-        // Check for seek
+        // Check for seek (invalidate pre-gen cache)
         if (seekTarget >= 0) {
-          cursor = seekTarget - 1; // will be incremented by for loop
+          nextAudioCache = null;
+          cursor = seekTarget - 1;
           seekTarget = -1;
           continue;
         }
@@ -343,9 +424,10 @@ const NARRATION = (() => {
         if (item.type === 'pericope') {
           await sleep(PERICOPE_PAUSE_MS / currentSpeed, signal);
           highlightLine(item.element);
-          console.log('Narration: generating pericope audio for:', item.text);
-          const audio = await tts.generate(item.text, { voice: currentVoice });
-          console.log('Narration: pericope generated, playing...');
+          const audio = await getAudio(cursor, item.text);
+          await yieldToMain();
+          // Start pre-generating next while pericope plays
+          pregenNext(cursor);
           await playAudio(audio, signal);
           await sleep(PERICOPE_PAUSE_MS / currentSpeed, signal);
           continue;
@@ -353,10 +435,10 @@ const NARRATION = (() => {
 
         // Regular line or verse
         highlightLine(item.element);
-        console.log('Narration: generating audio for:', item.text.substring(0, 60) + '...');
-        const t0 = performance.now();
-        const audio = await tts.generate(item.text, { voice: currentVoice });
-        console.log('Narration: generated in', Math.round(performance.now() - t0), 'ms');
+        const audio = await getAudio(cursor, item.text);
+        await yieldToMain();
+        // Start pre-generating next line while this one plays
+        pregenNext(cursor);
         await playAudio(audio, signal);
 
         if (item.type === 'line') {
