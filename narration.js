@@ -16,6 +16,7 @@
 const NARRATION = (() => {
   const SPEEDS = [0.75, 1, 1.25, 1.5, 2];
   const AUDIO_BASE = 'audio/';
+  const VOICE = 'samuel';  // active voice: 'samuel', 'tony', etc.
 
   // ── State ──
   let audioEl = null;          // HTML5 Audio element
@@ -79,8 +80,8 @@ const NARRATION = (() => {
       return false;
     }
 
-    const mp3Url = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}.mp3`;
-    const jsonUrl = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}.json`;
+    const mp3Url = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
+    const jsonUrl = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}-${VOICE}.json`;
 
     updatePlayerState('loading', 'Loading audio...');
 
@@ -132,7 +133,7 @@ const NARRATION = (() => {
     const ch = getCurrentChapter();
     if (!ch) return;
 
-    const expectedSrc = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}.mp3`;
+    const expectedSrc = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
     if (!audioEl || !audioEl.src.endsWith(expectedSrc)) {
       const ok = await loadChapterAudio();
       if (!ok) return;
