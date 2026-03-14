@@ -188,14 +188,17 @@ def generate_chapter_audio(items, tts, voice=VOICE):
             all_samples.append(silence)
             current_time += PERICOPE_PAUSE_S
 
-        # Generate speech
+        # Generate speech using Kokoro's callable API:
+        #   pipeline(text, voice=...) returns a generator of (graphemes, phonemes, audio)
         start_time = current_time
         try:
-            result = tts.generate(item['text'], voice=voice)
-            audio_data = result.audio
-            if hasattr(audio_data, 'numpy'):
-                audio_data = audio_data.numpy()
-            audio_data = np.array(audio_data, dtype=np.float32).flatten()
+            audio_pieces = []
+            for gs, ps, audio in tts(item['text'], voice=voice):
+                audio_pieces.append(audio)
+            if audio_pieces:
+                audio_data = np.concatenate(audio_pieces).astype(np.float32)
+            else:
+                audio_data = generate_silence(0.5)
         except Exception as e:
             print(f'    Error generating "{item["text"][:50]}...": {e}')
             # Insert a short silence as placeholder
