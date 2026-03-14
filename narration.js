@@ -872,7 +872,7 @@ const NARRATION = (() => {
     document.getElementById('narr-exp-rw').addEventListener('click', () => seekRelative(-10));
     document.getElementById('narr-exp-ff').addEventListener('click', () => seekRelative(10));
     document.getElementById('narr-collapse').addEventListener('click', () => toggleExpand(false));
-    document.getElementById('narr-exp-close').addEventListener('click', () => { stopPlayback(); hidePlayer(); });
+    document.getElementById('narr-exp-close').addEventListener('click', () => toggleExpand(false));
 
     // Speed buttons
     expandedEl.querySelectorAll('.narr-speed-btn').forEach(btn => {
