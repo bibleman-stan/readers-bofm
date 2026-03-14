@@ -3084,10 +3084,14 @@
         // Skip collapse logic entirely if toolbar is hidden by tap
         // Also skip if collapse is paused (e.g., after panel toggle)
         if (!toolbar.classList.contains('toolbar-hidden') && Date.now() > collapseDisabledUntil) {
-          if (y <= 80) {
+          var isCollapsed = toolbar.classList.contains('toolbar-collapsed');
+          // Hysteresis: collapse at 80px, but only expand back at 30px.
+          // This prevents a layout-shift feedback loop where collapsing the
+          // toolbar changes content position, bouncing scrollY back and forth.
+          if (isCollapsed && y <= 30) {
             toolbar.classList.remove('toolbar-collapsed');
             toolbar.classList.remove('toolbar-show-summary');
-          } else if (!toolbar.classList.contains('toolbar-collapsed')) {
+          } else if (!isCollapsed && y > 80) {
             toolbar.classList.add('toolbar-collapsed');
             toolbar.classList.remove('toolbar-show-summary');
           }
