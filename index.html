@@ -3082,7 +3082,8 @@
         // Toolbar collapse into compact mode when scrolled down (purely visual)
         // But do NOT change toolbar-hidden state — that's tap-driven only
         // Skip collapse logic entirely if toolbar is hidden by tap
-        if (!toolbar.classList.contains('toolbar-hidden')) {
+        // Also skip if collapse is paused (e.g., after panel toggle)
+        if (!toolbar.classList.contains('toolbar-hidden') && Date.now() > collapseDisabledUntil) {
           if (y <= 80) {
             toolbar.classList.remove('toolbar-collapsed');
             toolbar.classList.remove('toolbar-show-summary');
@@ -3101,9 +3102,24 @@
   // Pause collapse logic briefly (call before toggling panels that change page height)
   function pauseCollapse() { collapseDisabledUntil = Date.now() + 400; }
 
+  // ── Touch tracking: distinguish taps from scroll gestures on mobile ──
+  var touchStartX = 0, touchStartY = 0, touchMoved = false;
+  document.addEventListener('touchstart', function(e) {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    touchMoved = false;
+  }, { passive: true });
+  document.addEventListener('touchmove', function(e) {
+    if (touchMoved) return;
+    var dx = Math.abs(e.touches[0].clientX - touchStartX);
+    var dy = Math.abs(e.touches[0].clientY - touchStartY);
+    if (dx > 10 || dy > 10) touchMoved = true;
+  }, { passive: true });
+
   // Tap the summary bar — if toolbar is hidden, show it; otherwise toggle expand/collapse
   document.getElementById('collapsed-summary').addEventListener('click', function(e) {
     e.stopPropagation(); // don't trigger the content-area toggle
+    if (touchMoved) return; // ignore scroll gestures
     if (toolbar.classList.contains('toolbar-hidden')) {
       // Reveal the toolbar
       toolbar.classList.remove('toolbar-hidden');
@@ -3125,8 +3141,12 @@
 
   // ── Tap-to-toggle: tap content area to hide/show toolbar ──
   document.getElementById('scripture-content').addEventListener('click', function(e) {
+    // Ignore scroll gestures on mobile (touchmove > 10px)
+    if (touchMoved) return;
     // Don't toggle if user tapped a link, button, or interactive element
     if (e.target.closest('a, button, .verse-num, .swap, .gloss-trigger, .quote-allusion')) return;
+    // Don't toggle if narration is active and user clicked a line (click-to-seek)
+    if (typeof NARRATION !== 'undefined' && NARRATION.isPlaying && e.target.closest('.line, .line-para')) return;
     // Don't toggle if a panel is open — close it instead
     var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
       var el = document.getElementById(id);

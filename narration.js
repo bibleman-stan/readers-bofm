@@ -25,6 +25,7 @@ const NARRATION = (() => {
   let playing = false;
   let highlightTimer = null;   // requestAnimationFrame ID
   let currentLineIdx = -1;     // currently highlighted line index
+  let savedTextMode = null;    // saved text mode to restore when narration stops
 
   // ── Helpers ──
 
@@ -139,6 +140,25 @@ const NARRATION = (() => {
       if (!ok) return;
     }
 
+    // Switch to sense-line mode for accurate line highlighting.
+    // The manifest lineIndex maps to individual .line elements, not .line-para.
+    // The app IIFE doesn't expose textMode globally, so we use the toggleLines
+    // window function and detect current mode from body classes.
+    if (!document.body.classList.contains('show-lines')) {
+      // Save what mode we're in: 'parry' if show-parry, else 'verses'
+      savedTextMode = document.body.classList.contains('show-parry') ? 'parry' : 'verses';
+      // Cycle to lines mode via the global toggle
+      if (typeof window.toggleLines === 'function') {
+        // toggleLines cycles: verses→lines→parallels→verses
+        // If in verses mode (0), one call gets us to lines (1)
+        // If in parry mode (2), two calls cycle through verses→lines
+        if (savedTextMode === 'parry') {
+          window.toggleLines(); // parry → verses
+        }
+        window.toggleLines(); // verses → lines
+      }
+    }
+
     try {
       await audioEl.play();
       playing = true;
@@ -179,6 +199,23 @@ const NARRATION = (() => {
     stopHighlightLoop();
     unbindChapterClick();
     updatePlayerState('stopped');
+    // Restore text mode if we changed it
+    restoreTextMode();
+  }
+
+  function restoreTextMode() {
+    if (savedTextMode === null) return;
+    if (typeof window.toggleLines !== 'function') { savedTextMode = null; return; }
+    // Currently in lines mode (1). Cycle back to the saved mode.
+    if (savedTextMode === 'verses') {
+      // lines → parallels → verses: two toggles
+      window.toggleLines(); // lines → parallels
+      window.toggleLines(); // parallels → verses
+    } else if (savedTextMode === 'parry') {
+      // lines → parallels: one toggle
+      window.toggleLines(); // lines → parallels
+    }
+    savedTextMode = null;
   }
 
   function togglePlayPause() {
@@ -885,6 +922,7 @@ const NARRATION = (() => {
     document.body.classList.remove('narration-player-active', 'narration-player-expanded');
     document.removeEventListener('click', onClickOutsidePlayer, true);
     isExpanded = false;
+    restoreTextMode();
   }
 
   // ── UI updates ──
