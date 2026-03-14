@@ -721,3 +721,325 @@ The mic/Read Along feature (~280 lines of JS + CSS) was extracted from `index.ht
 | `mormon` | Morm | Mormon | 9 |
 | `ether` | Eth | Ether | 15 |
 | `moroni` | Moro | Moroni | 10 |
+
+---
+
+## Mar 13–14 Sessions: Narration System + Voice Exploration + Sense-Line Review
+
+**Last updated:** 2026-03-14
+**Sessions covered:** Mar 13 (narration rewrite, ElevenLabs pipeline) → Mar 13 evening (voice comparison, UX enhancements) → Mar 14 (authentic text fix, Samuel re-generation, Mosiah sense-line review)
+
+---
+
+### ElevenLabs TTS Pipeline (Colab Notebook)
+
+The narration system was rebuilt from scratch, moving from browser-based Kokoro.js TTS to pre-generated audio using the ElevenLabs API.
+
+**Colab Notebook:** `bom_reader_voices` at https://colab.research.google.com/drive/15bW7Y1p8eGsL-ODf6pGb4Nn7DTp-Cpnj
+
+**Cell structure:**
+
+| Cell | # | Purpose |
+|------|---|---------|
+| 1 | [varies] | Install dependencies (pydub, beautifulsoup4, requests) |
+| 2 | [varies] | Clone repo + set configuration (API key, default voice, model, pause timing) |
+| 3 | [20] | **Core functions** — all HTML parsing, TTS calls, caching, stitching (~200 lines) |
+| 4 | [9] | Quick test — generates 5 lines for voice preview |
+| 5 | [21] | **Full generation** — currently configured for Enos with Samuel voice |
+| 6 | [22] | **Download** — copies output to voice-labeled filenames and triggers browser download |
+
+**Configuration (Cell 2):**
+```python
+ELEVENLABS_API_KEY = "sk_d38fb8e3ceaf4ca8304ccef240d231025e0afb0d150168ba"
+VOICE_ID = "GBc0W7zMgpvEFBEHSpqS"    # Hector the Protector (default/unused)
+MODEL_ID = "eleven_multilingual_v2"    # Best for accented English
+LINE_PAUSE_MS = 180    # 180ms between sense-lines
+VERSE_PAUSE_MS = 500   # 500ms between verses
+```
+
+**Voice IDs:**
+
+| Voice | ElevenLabs ID | Status | Enos Stats |
+|-------|---------------|--------|------------|
+| Samuel | `ddDFRErfhdc2asyySOG5` | **Active** — current production voice | 429.1s / 6706 KB (authentic text) |
+| Tony | `lRf3yb6jZby4fn3q3Q7M` | **Shelved** — "put on the shelf for now" | 386.7s / 6043 KB |
+| Lester | `LBN8aWETnm9oOSBzmFQR` | Generated but not deployed | 360.8s / 5639 KB |
+
+**Per-line audio caching:**
+- Cache dir: `audio_cache/` in Colab runtime
+- Cache key: SHA256 hash of `json.dumps({text, voice_id, model_id, settings})`
+- Changing ANY of these invalidates the cache for that line
+- Cached lines show `[cache]` in output; fresh lines show `[NEW]`
+- Re-running is cheap — only changed lines hit the API
+
+**Critical code path — text extraction:**
+
+The `get_text_from_element(el, use_modern=False)` function in Cell 3 controls whether TTS reads authentic Book of Mormon text (`data-orig` values like "brethren", "unto", "thy") or modernized reading edition text (`data-mod` values like "brothers", "to", "your").
+
+The default parameter `use_modern=False` was set correctly, BUT `parse_chapter()` was explicitly calling it with `use_modern=True`, overriding the default. **This was the root cause of the "brothers vs brethren" bug.**
+
+**THE FIX (applied Mar 14):** Changed the call site in `parse_chapter()`:
+```python
+# BEFORE (bug):
+text = get_text_from_element(line_el, use_modern=True)
+# AFTER (fix):
+text = get_text_from_element(line_el, use_modern=False)
+```
+
+**Stan's stated preference:** "I want to use our modified sense-lines, but I do NOT want to use our archaic language for the voice script. I want the authentic wording of the Book of Mormon." This means:
+- Sense-line BREAKS come from the reading edition (the HTML structure)
+- TTS TEXT uses original Book of Mormon wording (data-orig), NOT modernized swaps (data-mod)
+
+**Colab editing lessons learned:**
+1. **Monaco editor API changes are unreliable** — edits save to the notebook file but may not update the live runtime cell. The "Review remote changes" dialog is a symptom.
+2. **Use Colab's Find & Replace (Ctrl+H)** for reliable multi-instance edits — it updates both the notebook AND the runtime.
+3. **Always verify output** before downloading — check the printed voice ID, character count, and look for [NEW] vs [cache] tags to confirm text actually changed.
+
+---
+
+### Narration Player (narration.js)
+
+**File:** `narration.js` (~1050 lines)
+**Architecture:** IIFE module (`const NARRATION = (() => { ... })()`) attached to window
+
+**Key features added in Mar 13–14 sessions:**
+
+1. **Voice-prefixed file paths** — Audio files are now `audio/{book}-{chapter}-{voice}.mp3` instead of `audio/{book}-{chapter}.mp3`. The `VOICE` constant (currently `'samuel'`) controls which voice files load.
+   ```javascript
+   const VOICE = 'samuel';  // active voice: 'samuel', 'tony', etc.
+   const mp3Url = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
+   ```
+
+2. **Click-to-seek** — Users can click any sense-line during playback to jump to that point in the audio. Uses `getLineIndexFromElement()` to map DOM elements back to manifest line indices.
+
+3. **Mini speed control** — Collapsed player bar shows a speed button that cycles through 0.75x/1x/1.25x/1.5x/2x.
+
+4. **Collapse/close buttons** — Mini player can be collapsed to a thin bar or closed entirely.
+
+5. **Persistent bottom-bar player** — Full media controls with play/pause, skip forward/back, progress bar, speed control. Expands/collapses between mini and full views.
+
+**Audio file naming convention:**
+```
+audio/enos-1-samuel.mp3      # Enos chapter 1, Samuel voice
+audio/enos-1-samuel.json     # Timing manifest for above
+audio/enos-1-lester.mp3      # Enos chapter 1, Lester voice (if generated)
+```
+
+**Timing manifest format (JSON):**
+```json
+{
+  "book": "enos",
+  "chapter": 1,
+  "voice_id": "ddDFRErfhdc2asyySOG5",
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.345,
+      "type": "line",
+      "text": "Behold, it came to pass that I, Enos,...",
+      "verse": "1:1",
+      "lineIndex": 0
+    }
+  ]
+}
+```
+
+**Current audio inventory:**
+- `audio/enos-1-samuel.mp3` (6706 KB, 429.1s) — Samuel voice, authentic BofM text ✅
+- `audio/enos-1-samuel.json` — timing manifest ✅
+- No other books/chapters have audio yet
+
+**Service worker:** `sw.js` cache version is `bomreader-v31`
+
+---
+
+### HTML Swap Element System (for TTS text extraction)
+
+The HTML book files use swap spans to provide both authentic and modernized text:
+
+```html
+<span class="swap swap-quiet" data-orig="unto" data-mod="to">unto</span>
+<span class="swap swap-quiet" data-orig="brethren" data-mod="brothers">brethren</span>
+<span class="swap swap-quiet" data-orig="Behold, it came to pass that" data-mod="Then behold,">Behold, it came to pass that</span>
+```
+
+- `data-orig` = authentic Book of Mormon text (what displays by default, what TTS reads)
+- `data-mod` = modernized reading edition text (shown when "Aid" toggle is ON)
+- `class="swap"` = visible swap (shows tooltip/highlight)
+- `class="swap swap-quiet"` = quiet swap (no visible indicator, just for Aid toggle)
+
+**For TTS:** `get_text_from_element(el, use_modern=False)` extracts the displayed text as-is (since `data-orig` is the default innerHTML). When `use_modern=True`, it replaces swap spans with their `data-mod` values before extracting text.
+
+---
+
+### Sense-Line Review Process
+
+**Stan's canonical source files** live in:
+```
+data/text-files/v2-mine/01-1_nephi-2020-sb-v2.txt
+data/text-files/v2-mine/02-2_nephi-2020-sb-v2.txt
+...
+data/text-files/v2-mine/08-mosiah-2020-sb-v2.txt  (most recently edited)
+...
+data/text-files/v2-mine/15-moroni-2020-sb-v2.txt
+```
+
+**File format:** Plain text with verse markers and one sense-line per line:
+```
+5:15
+may seal you his,
+that you may be brought to heaven,
+that ye may have everlasting salvation and eternal life,
+through the wisdom, and power,
+and justice, and mercy
+of him who created all things, in heaven and in earth,
+who is God above all.
+Amen.
+```
+
+**Review methodology — how Stan and Claude review sense-lines together:**
+
+Stan makes manual edits to the v2-mine text files on his local machine, then asks Claude to review them. The review process:
+
+1. Claude runs `git diff` on the changed text file to see exact edits
+2. Claude categorizes each edit as a "merge" (joining short lines together) or "break" (splitting a line into multiple)
+3. Claude evaluates each edit against these principles:
+   - **Merges are good when:** items are short parallel fragments that read as a single breath ("Abraham, and Isaac, and Jacob" belongs together)
+   - **Breaks are good when:** a line combines distinct units that deserve separation (geographic lists, clause boundaries at semicolons)
+   - Lines should be natural breath units for read-aloud delivery
+   - Parallel structures should be mirrored across lines
+   - Don't over-split short phrases; don't under-split long compound lines
+4. Claude provides a brief assessment of each change with reasoning
+
+**Most recent review (Mar 14):** Mosiah chapters 5 and 7 — four edits:
+- 5:15: Merged 4 short parallel items ("wisdom / power / justice / mercy") into 2 lines of paired items ✓
+- 7:7: Merged 3 short parallel clauses ("taken / bound / committed to prison") into 1 line ✓
+- 7:19: Merged "God of Abraham / Isaac / Jacob" into 1 line ✓
+- 7:21: Broke 2 lines into 3 — separating cities/lands at natural pause points ✓
+
+**Build pipeline after editing text files:**
+```bash
+# 1. Edit text files in data/text-files/v2-mine/
+# 2. Rebuild HTML:
+python3 build_book.py --all booklist.txt --out books/
+# 3. If audio exists for changed chapters, regenerate via Colab
+```
+
+**rebreak.py** — A utility script in the repo root for automated sense-line rebalancing:
+- Examines lines >78 chars for potential splits
+- Examines lines <25 chars for potential consolidation
+- Uses grammatical break-point patterns (subordinate clauses, conjunctions, prepositional phrases)
+- Has uncommitted changes (396-line diff) — appears to be actively iterated on
+
+---
+
+### Pending Tasks and Next Steps
+
+**Immediate:**
+1. ~~Samuel Enos generation with authentic text~~ ✅ Done (429.1s / 6706 KB)
+2. ~~Download Samuel files~~ ✅ Done (enos-1-Samuel.mp3 + enos-1-Samuel.json)
+3. **Files need proper casing** — repo has `enos-1-samuel.mp3` (lowercase) but Colab downloaded `enos-1-Samuel.mp3` (capital S). `narration.js` VOICE constant is lowercase `'samuel'`. Need consistency.
+4. **Mosiah text file changes need to be built** — `data/text-files/v2-mine/08-mosiah-2020-sb-v2.txt` has 4 uncommitted sense-line edits. Need `python3 build_book.py mosiah --out books/` then commit.
+5. **rebreak.py has uncommitted changes** — 396-line diff, unclear if WIP or ready to commit.
+
+**Voice exploration (shelved):**
+- Tony (`lRf3yb6jZby4fn3q3Q7M`) is shelved per Stan's request
+- Lester (`LBN8aWETnm9oOSBzmFQR`) was generated but not deployed
+- Samuel is the active voice going forward
+- Previous "bad" Lester files (which were actually Tony's voice due to the Monaco editor bug) were downloaded but should be discarded
+
+**Audio expansion:**
+- Only Enos chapter 1 has audio currently
+- To add more chapters/books: configure Cell 5 in Colab with new BOOK_ID/CHAPTER, run generation
+- Each chapter takes ~3-5 minutes for 140 lines at ~$0.02-0.05 in API credits
+- Audio files go in `audio/` directory with voice-prefixed naming
+
+**Ongoing sense-line work:**
+- Stan is actively reviewing/editing Mosiah text files
+- The review process is collaborative: Stan edits → Claude reviews the diff → iterate
+- `rebreak.py` automates common patterns but Stan hand-edits for editorial judgment
+- Parry parallel data (619 structures) can serve as a diagnostic for misaligned sense-lines
+
+---
+
+### Voice Settings (ElevenLabs)
+
+```python
+VOICE_SETTINGS = {
+    "stability": 0.50,
+    "similarity_boost": 0.75,
+    "style": 0.35,
+    "use_speaker_boost": True,
+}
+```
+
+These settings are baked into the cache key — changing them invalidates all cached lines.
+
+---
+
+### Known Gotchas
+
+1. **Colab Find & Replace is the only reliable way to edit cells** — don't trust Monaco editor API changes to propagate to the runtime.
+2. **Always check [NEW] vs [cache] tags in generation output** — if you expect text changes but see all [cache], the text didn't actually change (runtime still has old function definitions).
+3. **The `use_modern` parameter has TWO locations** — the function default AND the call site in `parse_chapter()`. Both must agree. The call site takes precedence.
+4. **"Saving failed" in Colab** is harmless — doesn't affect running code or downloads. Fix with File → Save a copy in Drive.
+5. **Audio file casing** — `narration.js` uses lowercase voice names. Colab downloads may have different casing. Ensure files match what the JS expects.
+6. **Service worker caching** — after deploying new audio or code changes, bump the cache version in `sw.js` (currently `bomreader-v31`).
+
+---
+
+### Git Status (as of Mar 14 end of session)
+
+**Uncommitted changes:**
+- `data/text-files/v2-mine/08-mosiah-2020-sb-v2.txt` — 4 sense-line edits (merges + break in ch 5, 7)
+- `rebreak.py` — 396-line diff (automated rebalancing tool updates)
+
+**Recent commits (Mar 14):**
+```
+be5c28a new-voice
+782684b voice
+44c9677 voices
+6eefc36 narration-update
+767dfd2 Bump service worker cache to v27 for narration updates
+```
+
+**All narration.js and sw.js changes are committed.** The audio files (enos-1-samuel.mp3/json) are committed.
+
+---
+
+### Email Task Queue (from Stan's "Hey Claude" emails, Mar 14)
+
+These are pending tasks Stan sent to himself as notes for Claude. Read the full emails for details — search `from:thebibleman77@gmail.com` in Gmail.
+
+**1. Audio-highlight sync drift (HIGH PRIORITY)**
+- **Email subject:** "Hey Claude" (3:47 PM, message ID `19cede3bb627b5a6`)
+- **Problem:** Samuel's Enos audio gets out of sync with the highlighted sense-line at some point during playback. The line highlight drifts from the actual spoken text.
+- **Likely cause:** The timing manifest (`enos-1-samuel.json`) was generated with authentic BofM text, but the `lineIndex` values in the manifest may not match the DOM line indices that `narration.js` counts (pericope headers, verse gaps, and other non-speakable elements affect the count). Investigate `findLineElement()` in narration.js and compare its line-walking logic against the manifest's `lineIndex` values.
+- **To debug:** Play the audio on bomreader.com, note the exact verse/line where sync drifts, then compare manifest timestamps against DOM line indices at that point.
+
+**2. Toolbar stuck open on mobile (HIGH PRIORITY)**
+- **Email subject:** "Hey Claude" (3:52 PM, message ID `19cede89de083b16`)
+- **Problem:** After the tap-to-toggle toolbar was introduced, the floating top banner occasionally gets "pegged open" on mobile — can't scroll past it.
+- **Likely cause:** The scroll handler and tap-to-toggle state machine have a race condition. The toolbar's collapsed/expanded state gets stuck. Check the scroll freeze logic (which pauses collapse while panels are open) and the tap-to-toggle handler interaction.
+- **Related to email #3 below** — the tap-to-toggle was a design change requested earlier the same day.
+
+**3. Tap-to-toggle toolbar redesign (MEDIUM — may be already partially done)**
+- **Email subject:** "Hey Claude — UI change: tap-to-toggle the floating top banner on bomreader.com" (9:10 AM, message ID `19cec783d4a55f1f`)
+- **Request:** Redesign toolbar visibility to be purely tap-based — tap anywhere to hide, tap again to show. Completely decouple from scroll direction. No scroll-up/scroll-down auto-show/hide logic at all.
+- **Has screenshot attachment** — read the full email for the detailed spec and screenshot.
+- **Note:** This was likely partially implemented (commits `fcd7921` "tap-to-toggle toolbar" and others), which is what introduced the stuck-open bug (#2 above).
+
+**4. "Behold" vs. "Lo" sense-line methodology (LOW PRIORITY — research/methodology)**
+- **Email subject:** "Hey Claude — Methodology note: 'Behold' vs. 'Lo' as sense-line break triggers in the Book of Mormon" (6:25 AM, message ID `19cebe1412bf1438`)
+- **Content:** A detailed linguistic working note establishing three functional types of "behold" (deictic, mirative, logical-connective) and how each should affect sense-line breaking decisions. "Lo" is distinct — appears only ~5-10 times, almost exclusively in Isaiah quotation blocks.
+- **Action items from the email:**
+  - Apply the three "behold" type distinctions to a test passage (suggested: Alma 5 or 2 Nephi 4:15–35)
+  - Evaluate whether type C (logical-connective "behold", e.g., "For behold...") benefits from indentation rather than a full line break
+  - Decide how "and behold" vs. standalone "behold" affects break placement
+  - Decide whether "lo" in Isaiah blocks follows our rules or defers to Isaiah's own poetic structure
+
+**5–8. Older emails (Mar 13 evening — most likely already addressed):**
+- Archaic word filter false hits on verbs (Mosiah 1:8, 2:9) — likely fixed in commits `42addb3`, `430d302`
+- AICTP double-that construction (Mosiah 1:9) — likely fixed in commit `832082b`
+- Pericope header verse ranges + thematic breaks — likely done in commit `c7f7486`
+- "can you read this" test email — ignore
