@@ -2,1212 +2,1139 @@
   "book": "enos",
   "bookName": "Enos",
   "chapter": 1,
-  "voice": "bm_george",
-  "duration": 562.675,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel the Nigerian"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 412.476,
   "lines": [
     {
-      "start": 0.9,
-      "end": 4.475,
-      "type": "pericope",
-      "text": "Enos's Childhood and Father's Teachings",
-      "verse": "",
-      "lineIndex": 0
-    },
-    {
-      "start": 5.375,
-      "end": 9.025,
+      "start": 0.0,
+      "end": 2.554,
       "type": "line",
       "text": "Then behold, I, Enos, knowing my father",
       "verse": "1:1",
       "lineIndex": 1
     },
     {
-      "start": 9.205,
-      "end": 11.53,
+      "start": 2.734,
+      "end": 4.592,
       "type": "line",
       "text": "that he was a just man\u2014",
       "verse": "1:1",
       "lineIndex": 2
     },
     {
-      "start": 11.71,
-      "end": 14.51,
+      "start": 4.772,
+      "end": 6.769,
       "type": "line",
       "text": "for he taught me in his language,",
       "verse": "1:1",
       "lineIndex": 3
     },
     {
-      "start": 14.69,
-      "end": 18.965,
+      "start": 6.949,
+      "end": 10.153,
       "type": "line",
       "text": "and also in the nurture and admonition of the Lord\u2014",
       "verse": "1:1",
       "lineIndex": 4
     },
     {
-      "start": 19.145,
-      "end": 22.245,
+      "start": 10.333,
+      "end": 12.794,
       "type": "line",
       "text": "and blessed be the name of my God for it\u2014",
       "verse": "1:1",
       "lineIndex": 5
     },
     {
-      "start": 22.925,
-      "end": 27.25,
+      "start": 13.474,
+      "end": 16.725,
       "type": "line",
       "text": "And I will tell you of the wrestle which I had before God,",
       "verse": "1:2",
       "lineIndex": 6
     },
     {
-      "start": 27.43,
-      "end": 31.38,
+      "start": 16.905,
+      "end": 19.366,
       "type": "line",
       "text": "before I received a remission of my sins.",
       "verse": "1:2",
       "lineIndex": 7
     },
     {
-      "start": 32.96,
-      "end": 35.76,
-      "type": "pericope",
-      "text": "Hunting and Spiritual Wrestle",
-      "verse": "",
-      "lineIndex": 8
-    },
-    {
-      "start": 36.66,
-      "end": 40.135,
+      "start": 20.046,
+      "end": 23.018,
       "type": "line",
       "text": "Behold, I went to hunt beasts in the forests;",
       "verse": "1:3",
       "lineIndex": 9
     },
     {
-      "start": 40.315,
-      "end": 44.265,
+      "start": 23.198,
+      "end": 26.588,
       "type": "line",
       "text": "and the words which I had often heard my father speak",
       "verse": "1:3",
       "lineIndex": 10
     },
     {
-      "start": 44.445,
-      "end": 47.12,
+      "start": 26.768,
+      "end": 28.533,
       "type": "line",
       "text": "concerning eternal life",
       "verse": "1:3",
       "lineIndex": 11
     },
     {
-      "start": 47.3,
-      "end": 51.075,
+      "start": 28.713,
+      "end": 32.196,
       "type": "line",
       "text": "and the joy of the saints, sunk deep into my heart.",
       "verse": "1:3",
       "lineIndex": 12
     },
     {
-      "start": 52.655,
-      "end": 55.855,
-      "type": "pericope",
-      "text": "Mighty Prayer and Wrestle with God",
-      "verse": "",
-      "lineIndex": 13
-    },
-    {
-      "start": 56.755,
-      "end": 58.88,
+      "start": 32.876,
+      "end": 34.362,
       "type": "line",
       "text": "And my soul hungered;",
       "verse": "1:4",
       "lineIndex": 14
     },
     {
-      "start": 59.06,
-      "end": 62.135,
+      "start": 34.542,
+      "end": 36.771,
       "type": "line",
       "text": "and I kneeled down before my Maker,",
       "verse": "1:4",
       "lineIndex": 15
     },
     {
-      "start": 62.315,
-      "end": 64.39,
+      "start": 36.951,
+      "end": 38.484,
       "type": "line",
       "text": "and I cried to him",
       "verse": "1:4",
       "lineIndex": 16
     },
     {
-      "start": 64.57,
-      "end": 68.82,
+      "start": 38.664,
+      "end": 41.358,
       "type": "line",
       "text": "in mighty prayer and supplication for my own soul;",
       "verse": "1:4",
       "lineIndex": 17
     },
     {
-      "start": 69.0,
-      "end": 72.375,
+      "start": 41.538,
+      "end": 43.814,
       "type": "line",
       "text": "and all the day long did I cry to him;",
       "verse": "1:4",
       "lineIndex": 18
     },
     {
-      "start": 72.555,
-      "end": 74.955,
+      "start": 43.994,
+      "end": 45.944,
       "type": "line",
       "text": "yes, and when the night came",
       "verse": "1:4",
       "lineIndex": 19
     },
     {
-      "start": 75.135,
-      "end": 78.135,
+      "start": 46.124,
+      "end": 48.074,
       "type": "line",
       "text": "I did still raise my voice high",
       "verse": "1:4",
       "lineIndex": 20
     },
     {
-      "start": 78.315,
-      "end": 80.665,
+      "start": 48.254,
+      "end": 49.926,
       "type": "line",
       "text": "that it reached the heavens.",
       "verse": "1:4",
       "lineIndex": 21
     },
     {
-      "start": 82.245,
-      "end": 85.345,
-      "type": "pericope",
-      "text": "Divine Forgiveness and Assurance",
-      "verse": "",
-      "lineIndex": 22
-    },
-    {
-      "start": 86.245,
-      "end": 88.92,
+      "start": 50.606,
+      "end": 53.021,
       "type": "line",
       "text": "And there came a voice to me, saying:",
       "verse": "1:5",
       "lineIndex": 23
     },
     {
-      "start": 89.1,
-      "end": 92.275,
+      "start": 53.201,
+      "end": 55.709,
       "type": "line",
       "text": "Enos, your sins are forgiven you,",
       "verse": "1:5",
       "lineIndex": 24
     },
     {
-      "start": 92.455,
-      "end": 94.705,
+      "start": 55.889,
+      "end": 57.468,
       "type": "line",
       "text": "and you shall be blessed.",
       "verse": "1:5",
       "lineIndex": 25
     },
     {
-      "start": 95.385,
-      "end": 98.91,
+      "start": 58.148,
+      "end": 60.888,
       "type": "line",
       "text": "And I, Enos, knew that God could not lie;",
       "verse": "1:6",
       "lineIndex": 26
     },
     {
-      "start": 99.09,
-      "end": 101.79,
+      "start": 61.068,
+      "end": 62.926,
       "type": "line",
       "text": "so, my guilt was swept away.",
       "verse": "1:6",
       "lineIndex": 27
     },
     {
-      "start": 102.47,
-      "end": 105.52,
+      "start": 63.606,
+      "end": 65.649,
       "type": "line",
       "text": "And I said: Lord, how is it done?",
       "verse": "1:7",
       "lineIndex": 28
     },
     {
-      "start": 107.1,
-      "end": 110.625,
-      "type": "pericope",
-      "text": "Lord Promises Lamanite Salvation",
-      "verse": "",
-      "lineIndex": 29
-    },
-    {
-      "start": 111.525,
-      "end": 113.4,
+      "start": 66.329,
+      "end": 67.862,
       "type": "line",
       "text": "And he said to me:",
       "verse": "1:8",
       "lineIndex": 30
     },
     {
-      "start": 113.58,
-      "end": 116.43,
+      "start": 68.042,
+      "end": 70.178,
       "type": "line",
       "text": "Because of your faith in Christ,",
       "verse": "1:8",
       "lineIndex": 31
     },
     {
-      "start": 116.61,
-      "end": 119.885,
+      "start": 70.358,
+      "end": 72.866,
       "type": "line",
       "text": "whom you have never before heard nor seen.",
       "verse": "1:8",
       "lineIndex": 32
     },
     {
-      "start": 120.065,
-      "end": 122.79,
+      "start": 73.046,
+      "end": 74.95,
       "type": "line",
       "text": "And many years pass away",
       "verse": "1:8",
       "lineIndex": 33
     },
     {
-      "start": 122.97,
-      "end": 126.645,
+      "start": 75.13,
+      "end": 77.916,
       "type": "line",
       "text": "before he shall manifest himself in the flesh;",
       "verse": "1:8",
       "lineIndex": 34
     },
     {
-      "start": 126.825,
-      "end": 128.375,
+      "start": 78.096,
+      "end": 79.071,
       "type": "line",
       "text": "so, go,",
       "verse": "1:8",
       "lineIndex": 35
     },
     {
-      "start": 128.555,
-      "end": 131.28,
+      "start": 79.251,
+      "end": 81.016,
       "type": "line",
       "text": "your faith has made you whole.",
       "verse": "1:8",
       "lineIndex": 36
     },
     {
-      "start": 132.86,
-      "end": 135.91,
-      "type": "pericope",
-      "text": "Praying for the Nephites and Lamanites",
-      "verse": "",
-      "lineIndex": 37
-    },
-    {
-      "start": 136.81,
-      "end": 139.385,
+      "start": 81.696,
+      "end": 83.925,
       "type": "line",
       "text": "Now, when I had heard these words",
       "verse": "1:9",
       "lineIndex": 38
     },
     {
-      "start": 139.565,
-      "end": 144.44,
+      "start": 84.105,
+      "end": 88.935,
       "type": "line",
       "text": "I began to feel a desire for the welfare of my brothers, the Nephites;",
       "verse": "1:9",
       "lineIndex": 39
     },
     {
-      "start": 144.62,
-      "end": 148.12,
+      "start": 89.115,
+      "end": 92.041,
       "type": "line",
       "text": "so, I poured out my whole soul to God for them.",
       "verse": "1:9",
       "lineIndex": 40
     },
     {
-      "start": 148.8,
-      "end": 152.0,
+      "start": 92.721,
+      "end": 95.74,
       "type": "line",
       "text": "And while I was thus struggling in the spirit,",
       "verse": "1:10",
       "lineIndex": 41
     },
     {
-      "start": 152.18,
-      "end": 156.78,
+      "start": 95.92,
+      "end": 99.496,
       "type": "line",
       "text": "behold, the voice of the Lord came into my mind again, saying:",
       "verse": "1:10",
       "lineIndex": 42
     },
     {
-      "start": 156.96,
-      "end": 159.585,
+      "start": 99.676,
+      "end": 101.394,
       "type": "line",
       "text": "I will visit your brothers",
       "verse": "1:10",
       "lineIndex": 43
     },
     {
-      "start": 159.765,
-      "end": 163.94,
+      "start": 101.574,
+      "end": 104.778,
       "type": "line",
       "text": "according to their diligence in keeping my commandments.",
       "verse": "1:10",
       "lineIndex": 44
     },
     {
-      "start": 164.12,
-      "end": 166.97,
+      "start": 104.958,
+      "end": 107.187,
       "type": "line",
       "text": "I have given to them this land,",
       "verse": "1:10",
       "lineIndex": 45
     },
     {
-      "start": 167.15,
-      "end": 169.775,
+      "start": 107.367,
+      "end": 109.132,
       "type": "line",
       "text": "and it is a holy land;",
       "verse": "1:10",
       "lineIndex": 46
     },
     {
-      "start": 169.955,
-      "end": 172.03,
+      "start": 109.312,
+      "end": 110.984,
       "type": "line",
       "text": "and I curse it not",
       "verse": "1:10",
       "lineIndex": 47
     },
     {
-      "start": 172.21,
-      "end": 175.26,
+      "start": 111.164,
+      "end": 113.579,
       "type": "line",
       "text": "except for the cause of iniquity;",
       "verse": "1:10",
       "lineIndex": 48
     },
     {
-      "start": 175.44,
-      "end": 179.565,
+      "start": 113.759,
+      "end": 117.056,
       "type": "line",
       "text": "so, I will visit your brothers according as I have said;",
       "verse": "1:10",
       "lineIndex": 49
     },
     {
-      "start": 179.745,
-      "end": 184.995,
+      "start": 117.236,
+      "end": 121.694,
       "type": "line",
       "text": "and their transgressions will I bring down with sorrow upon their own heads.",
       "verse": "1:10",
       "lineIndex": 50
     },
     {
-      "start": 185.675,
-      "end": 189.325,
+      "start": 122.374,
+      "end": 125.114,
       "type": "line",
       "text": "And after I, Enos, had heard these words,",
       "verse": "1:11",
       "lineIndex": 51
     },
     {
-      "start": 189.505,
-      "end": 193.18,
+      "start": 125.294,
+      "end": 127.988,
       "type": "line",
       "text": "my faith began to be unshaken in the Lord;",
       "verse": "1:11",
       "lineIndex": 52
     },
     {
-      "start": 193.36,
-      "end": 198.735,
+      "start": 128.168,
+      "end": 133.276,
       "type": "line",
       "text": "and I prayed to him with many long strugglings for my brothers, the Lamanites.",
       "verse": "1:11",
       "lineIndex": 53
     },
     {
-      "start": 200.315,
-      "end": 203.69,
-      "type": "pericope",
-      "text": "Divine Covenant Regarding Records",
-      "verse": "",
-      "lineIndex": 54
-    },
-    {
-      "start": 204.59,
-      "end": 208.94,
+      "start": 133.956,
+      "end": 137.625,
       "type": "line",
       "text": "And then after I had prayed and labored with all diligence,",
       "verse": "1:12",
       "lineIndex": 55
     },
     {
-      "start": 209.12,
-      "end": 211.295,
+      "start": 137.805,
+      "end": 139.245,
       "type": "line",
       "text": "the Lord said to me:",
       "verse": "1:12",
       "lineIndex": 56
     },
     {
-      "start": 211.475,
-      "end": 215.225,
+      "start": 139.425,
+      "end": 142.397,
       "type": "line",
       "text": "I will grant to you according to your desires,",
       "verse": "1:12",
       "lineIndex": 57
     },
     {
-      "start": 215.405,
-      "end": 217.63,
+      "start": 142.577,
+      "end": 143.97,
       "type": "line",
       "text": "because of your faith.",
       "verse": "1:12",
       "lineIndex": 58
     },
     {
-      "start": 219.21,
-      "end": 222.46,
-      "type": "pericope",
-      "text": "Enos Requests Eternal Record",
-      "verse": "",
-      "lineIndex": 59
-    },
-    {
-      "start": 223.36,
-      "end": 227.96,
+      "start": 144.65,
+      "end": 148.226,
       "type": "line",
       "text": "And now behold, this was the desire which I desired of him\u2014",
       "verse": "1:13",
       "lineIndex": 60
     },
     {
-      "start": 228.14,
-      "end": 230.415,
+      "start": 148.406,
+      "end": 150.078,
       "type": "line",
       "text": "that if it should so be",
       "verse": "1:13",
       "lineIndex": 61
     },
     {
-      "start": 230.595,
-      "end": 233.245,
+      "start": 150.258,
+      "end": 152.162,
       "type": "line",
       "text": "that my people, the Nephites,",
       "verse": "1:13",
       "lineIndex": 62
     },
     {
-      "start": 233.425,
-      "end": 236.125,
+      "start": 152.342,
+      "end": 154.478,
       "type": "line",
       "text": "should fall into transgression,",
       "verse": "1:13",
       "lineIndex": 63
     },
     {
-      "start": 236.305,
-      "end": 239.13,
+      "start": 154.658,
+      "end": 156.701,
       "type": "line",
       "text": "and by any means be destroyed,",
       "verse": "1:13",
       "lineIndex": 64
     },
     {
-      "start": 239.31,
-      "end": 242.385,
+      "start": 156.881,
+      "end": 159.389,
       "type": "line",
       "text": "and the Lamanites should not be destroyed,",
       "verse": "1:13",
       "lineIndex": 65
     },
     {
-      "start": 242.565,
-      "end": 247.49,
+      "start": 159.569,
+      "end": 164.956,
       "type": "line",
       "text": "that the Lord God would preserve a record of my people, the Nephites;",
       "verse": "1:13",
       "lineIndex": 66
     },
     {
-      "start": 247.67,
-      "end": 251.695,
+      "start": 165.136,
+      "end": 168.108,
       "type": "line",
       "text": "even if it so be by the power of his holy arm,",
       "verse": "1:13",
       "lineIndex": 67
     },
     {
-      "start": 251.875,
-      "end": 256.25,
+      "start": 168.288,
+      "end": 172.839,
       "type": "line",
       "text": "that it might be brought forth at some future day to the Lamanites,",
       "verse": "1:13",
       "lineIndex": 68
     },
     {
-      "start": 256.43,
-      "end": 260.005,
+      "start": 173.019,
+      "end": 175.759,
       "type": "line",
       "text": "that, perhaps, they might be brought to salvation\u2014",
       "verse": "1:13",
       "lineIndex": 69
     },
     {
-      "start": 260.685,
-      "end": 264.135,
+      "start": 176.439,
+      "end": 179.411,
       "type": "line",
       "text": "For at the present our strugglings were vain",
       "verse": "1:14",
       "lineIndex": 70
     },
     {
-      "start": 264.315,
-      "end": 267.49,
+      "start": 179.591,
+      "end": 181.959,
       "type": "line",
       "text": "in restoring them to the true faith.",
       "verse": "1:14",
       "lineIndex": 71
     },
     {
-      "start": 267.67,
-      "end": 270.52,
+      "start": 182.139,
+      "end": 184.229,
       "type": "line",
       "text": "And they swore in their wrath that,",
       "verse": "1:14",
       "lineIndex": 72
     },
     {
-      "start": 270.7,
-      "end": 272.675,
+      "start": 184.409,
+      "end": 185.988,
       "type": "line",
       "text": "if it were possible,",
       "verse": "1:14",
       "lineIndex": 73
     },
     {
-      "start": 272.855,
-      "end": 276.155,
+      "start": 186.168,
+      "end": 188.815,
       "type": "line",
       "text": "they would destroy our records and us,",
       "verse": "1:14",
       "lineIndex": 74
     },
     {
-      "start": 276.335,
-      "end": 279.985,
+      "start": 188.995,
+      "end": 191.642,
       "type": "line",
       "text": "and also all the traditions of our fathers.",
       "verse": "1:14",
       "lineIndex": 75
     },
     {
-      "start": 280.665,
-      "end": 282.54,
+      "start": 192.322,
+      "end": 193.529,
       "type": "line",
       "text": "So, I knowing",
       "verse": "1:15",
       "lineIndex": 76
     },
     {
-      "start": 282.72,
-      "end": 286.945,
+      "start": 193.709,
+      "end": 196.82,
       "type": "line",
       "text": "that the Lord God was able to preserve our records,",
       "verse": "1:15",
       "lineIndex": 77
     },
     {
-      "start": 287.125,
-      "end": 291.05,
+      "start": 197.0,
+      "end": 200.111,
       "type": "line",
       "text": "I cried to him continually, for he had said to me:",
       "verse": "1:15",
       "lineIndex": 78
     },
     {
-      "start": 291.23,
-      "end": 294.655,
+      "start": 200.291,
+      "end": 202.892,
       "type": "line",
       "text": "Whatsoever thing you shall ask in faith,",
       "verse": "1:15",
       "lineIndex": 79
     },
     {
-      "start": 294.835,
-      "end": 298.86,
+      "start": 203.072,
+      "end": 205.951,
       "type": "line",
       "text": "believing that you shall receive in the name of Christ,",
       "verse": "1:15",
       "lineIndex": 80
     },
     {
-      "start": 299.04,
-      "end": 301.04,
+      "start": 206.131,
+      "end": 207.803,
       "type": "line",
       "text": "you shall receive it.",
       "verse": "1:15",
       "lineIndex": 81
     },
     {
-      "start": 302.62,
-      "end": 305.645,
-      "type": "pericope",
-      "text": "Seed of Fathers Also Had Faith",
-      "verse": "",
-      "lineIndex": 82
-    },
-    {
-      "start": 306.545,
-      "end": 308.345,
+      "start": 208.483,
+      "end": 209.923,
       "type": "line",
       "text": "And I had faith,",
       "verse": "1:16",
       "lineIndex": 83
     },
     {
-      "start": 308.525,
-      "end": 310.7,
+      "start": 210.103,
+      "end": 211.775,
       "type": "line",
       "text": "and I cried to God",
       "verse": "1:16",
       "lineIndex": 84
     },
     {
-      "start": 310.88,
-      "end": 313.68,
+      "start": 211.955,
+      "end": 213.998,
       "type": "line",
       "text": "that he would preserve the records;",
       "verse": "1:16",
       "lineIndex": 85
     },
     {
-      "start": 313.86,
-      "end": 316.41,
+      "start": 214.178,
+      "end": 215.896,
       "type": "line",
       "text": "and he covenanted with me",
       "verse": "1:16",
       "lineIndex": 86
     },
     {
-      "start": 316.59,
-      "end": 321.215,
+      "start": 216.076,
+      "end": 220.348,
       "type": "line",
       "text": "that he would bring them forth to the Lamanites in his own due time.",
       "verse": "1:16",
       "lineIndex": 87
     },
     {
-      "start": 321.895,
-      "end": 326.87,
+      "start": 221.028,
+      "end": 225.533,
       "type": "line",
       "text": "And I, Enos, knew it would be according to the covenant which he had made;",
       "verse": "1:17",
       "lineIndex": 88
     },
     {
-      "start": 327.05,
-      "end": 329.425,
+      "start": 225.713,
+      "end": 227.338,
       "type": "line",
       "text": "so my soul rested.",
       "verse": "1:17",
       "lineIndex": 89
     },
     {
-      "start": 330.105,
-      "end": 332.305,
+      "start": 228.018,
+      "end": 229.643,
       "type": "line",
       "text": "And the Lord said to me:",
       "verse": "1:18",
       "lineIndex": 90
     },
     {
-      "start": 332.485,
-      "end": 336.26,
+      "start": 229.823,
+      "end": 232.749,
       "type": "line",
       "text": "Your fathers have also required of me this thing;",
       "verse": "1:18",
       "lineIndex": 91
     },
     {
-      "start": 336.44,
-      "end": 340.365,
+      "start": 232.929,
+      "end": 236.226,
       "type": "line",
       "text": "and it shall be done to them according to their faith;",
       "verse": "1:18",
       "lineIndex": 92
     },
     {
-      "start": 340.545,
-      "end": 343.27,
+      "start": 236.406,
+      "end": 238.728,
       "type": "line",
       "text": "for their faith was like to your.",
       "verse": "1:18",
       "lineIndex": 93
     },
     {
-      "start": 344.85,
-      "end": 348.05,
-      "type": "pericope",
-      "text": "Enos's Ministry and Testimony",
-      "verse": "",
-      "lineIndex": 94
-    },
-    {
-      "start": 348.95,
-      "end": 353.25,
+      "start": 239.408,
+      "end": 243.123,
       "type": "line",
       "text": "And now I, Enos, went about among the people of Nephi,",
       "verse": "1:19",
       "lineIndex": 95
     },
     {
-      "start": 353.43,
-      "end": 356.23,
+      "start": 243.303,
+      "end": 245.486,
       "type": "line",
       "text": "prophesying of things to come,",
       "verse": "1:19",
       "lineIndex": 96
     },
     {
-      "start": 356.41,
-      "end": 360.76,
+      "start": 245.666,
+      "end": 249.056,
       "type": "line",
       "text": "and testifying of the things which I had heard and seen.",
       "verse": "1:19",
       "lineIndex": 97
     },
     {
-      "start": 361.44,
-      "end": 365.89,
+      "start": 249.736,
+      "end": 253.73,
       "type": "line",
       "text": "And I bear record that the people of Nephi sought diligently",
       "verse": "1:20",
       "lineIndex": 98
     },
     {
-      "start": 366.07,
-      "end": 370.145,
+      "start": 253.91,
+      "end": 257.161,
       "type": "line",
       "text": "to restore the Lamanites to the true faith in God.",
       "verse": "1:20",
       "lineIndex": 99
     },
     {
-      "start": 370.325,
-      "end": 372.8,
+      "start": 257.341,
+      "end": 259.384,
       "type": "line",
       "text": "But our labors were vain;",
       "verse": "1:20",
       "lineIndex": 100
     },
     {
-      "start": 372.98,
-      "end": 375.305,
+      "start": 259.564,
+      "end": 261.189,
       "type": "line",
       "text": "their hatred was fixed,",
       "verse": "1:20",
       "lineIndex": 101
     },
     {
-      "start": 375.485,
-      "end": 378.685,
+      "start": 261.369,
+      "end": 263.737,
       "type": "line",
       "text": "and they were led by their evil nature",
       "verse": "1:20",
       "lineIndex": 102
     },
     {
-      "start": 378.865,
-      "end": 383.665,
+      "start": 263.917,
+      "end": 269.211,
       "type": "line",
       "text": "that they became wild, and ferocious, and a blood-thirsty people,",
       "verse": "1:20",
       "lineIndex": 103
     },
     {
-      "start": 383.845,
-      "end": 386.97,
+      "start": 269.391,
+      "end": 272.27,
       "type": "line",
       "text": "full of idolatry and filthiness;",
       "verse": "1:20",
       "lineIndex": 104
     },
     {
-      "start": 387.15,
-      "end": 390.925,
+      "start": 272.45,
+      "end": 275.747,
       "type": "line",
       "text": "feeding upon beasts of prey; dwelling in tents,",
       "verse": "1:20",
       "lineIndex": 105
     },
     {
-      "start": 391.105,
-      "end": 394.305,
+      "start": 275.927,
+      "end": 278.806,
       "type": "line",
       "text": "and wandering about in the wilderness",
       "verse": "1:20",
       "lineIndex": 106
     },
     {
-      "start": 394.485,
-      "end": 399.11,
+      "start": 278.986,
+      "end": 283.119,
       "type": "line",
       "text": "with a short skin belt about their waist and their heads shaven;",
       "verse": "1:20",
       "lineIndex": 107
     },
     {
-      "start": 399.29,
-      "end": 403.715,
+      "start": 283.299,
+      "end": 287.85,
       "type": "line",
       "text": "and their skill was in the bow, and in the cimeter, and the ax.",
       "verse": "1:20",
       "lineIndex": 108
     },
     {
-      "start": 403.895,
-      "end": 408.12,
+      "start": 288.03,
+      "end": 291.281,
       "type": "line",
       "text": "And many of them ate nothing save it was raw meat;",
       "verse": "1:20",
       "lineIndex": 109
     },
     {
-      "start": 408.3,
-      "end": 411.775,
+      "start": 291.461,
+      "end": 294.155,
       "type": "line",
       "text": "and they were continually seeking to destroy us.",
       "verse": "1:20",
       "lineIndex": 110
     },
     {
-      "start": 412.455,
-      "end": 415.83,
+      "start": 294.835,
+      "end": 297.575,
       "type": "line",
       "text": "And then the people of Nephi tilled the land,",
       "verse": "1:21",
       "lineIndex": 111
     },
     {
-      "start": 416.01,
-      "end": 419.51,
+      "start": 297.755,
+      "end": 300.309,
       "type": "line",
       "text": "and raise all manner of grain, and of fruit,",
       "verse": "1:21",
       "lineIndex": 112
     },
     {
-      "start": 419.69,
-      "end": 421.89,
+      "start": 300.489,
+      "end": 302.022,
       "type": "line",
       "text": "and flocks of herds,",
       "verse": "1:21",
       "lineIndex": 113
     },
     {
-      "start": 422.07,
-      "end": 426.12,
+      "start": 302.202,
+      "end": 305.36,
       "type": "line",
       "text": "and flocks of all manner of cattle of every kind,",
       "verse": "1:21",
       "lineIndex": 114
     },
     {
-      "start": 426.3,
-      "end": 430.4,
+      "start": 305.54,
+      "end": 308.977,
       "type": "line",
       "text": "and goats, and wild goats, and also many horses.",
       "verse": "1:21",
       "lineIndex": 115
     },
     {
-      "start": 431.08,
-      "end": 434.205,
+      "start": 309.657,
+      "end": 312.211,
       "type": "line",
       "text": "And there were very many prophets among us.",
       "verse": "1:22",
       "lineIndex": 116
     },
     {
-      "start": 434.385,
-      "end": 438.66,
+      "start": 312.391,
+      "end": 316.106,
       "type": "line",
       "text": "And the people were a stiffnecked people, hard to understand.",
       "verse": "1:22",
       "lineIndex": 117
     },
     {
-      "start": 440.24,
-      "end": 443.74,
-      "type": "pericope",
-      "text": "Enos's Old Age and Final Witness",
-      "verse": "",
-      "lineIndex": 118
-    },
-    {
-      "start": 444.64,
-      "end": 448.165,
+      "start": 316.786,
+      "end": 319.897,
       "type": "line",
       "text": "And there was nothing save it was great harshness,",
       "verse": "1:23",
       "lineIndex": 119
     },
     {
-      "start": 448.345,
-      "end": 453.42,
+      "start": 320.077,
+      "end": 325.0,
       "type": "line",
       "text": "preaching and prophesying of wars, and contentions, and destructions,",
       "verse": "1:23",
       "lineIndex": 120
     },
     {
-      "start": 453.6,
-      "end": 456.875,
+      "start": 325.18,
+      "end": 327.595,
       "type": "line",
       "text": "and continually reminding them of death,",
       "verse": "1:23",
       "lineIndex": 121
     },
     {
-      "start": 457.055,
-      "end": 460.03,
+      "start": 327.775,
+      "end": 329.911,
       "type": "line",
       "text": "and the duration of eternity,",
       "verse": "1:23",
       "lineIndex": 122
     },
     {
-      "start": 460.21,
-      "end": 463.36,
+      "start": 330.091,
+      "end": 332.552,
       "type": "line",
       "text": "and the judgments and the power of God,",
       "verse": "1:23",
       "lineIndex": 123
     },
     {
-      "start": 463.54,
-      "end": 467.29,
+      "start": 332.732,
+      "end": 335.611,
       "type": "line",
       "text": "and all these things\u2014stirring them up continually",
       "verse": "1:23",
       "lineIndex": 124
     },
     {
-      "start": 467.47,
-      "end": 470.87,
+      "start": 335.791,
+      "end": 338.577,
       "type": "line",
       "text": "to keep them in the fear of the Lord.",
       "verse": "1:23",
       "lineIndex": 125
     },
     {
-      "start": 471.05,
-      "end": 474.425,
+      "start": 338.757,
+      "end": 341.683,
       "type": "line",
       "text": "I say there was nothing short of these things,",
       "verse": "1:23",
       "lineIndex": 126
     },
     {
-      "start": 474.605,
-      "end": 477.555,
+      "start": 341.863,
+      "end": 344.092,
       "type": "line",
       "text": "and very great plainness of speech,",
       "verse": "1:23",
       "lineIndex": 127
     },
     {
-      "start": 477.735,
-      "end": 481.935,
+      "start": 344.272,
+      "end": 347.801,
       "type": "line",
       "text": "would keep them from going down speedily to destruction.",
       "verse": "1:23",
       "lineIndex": 128
     },
     {
-      "start": 482.115,
-      "end": 485.94,
+      "start": 347.981,
+      "end": 351.278,
       "type": "line",
       "text": "And after this manner do I write concerning them.",
       "verse": "1:23",
       "lineIndex": 129
     },
     {
-      "start": 486.62,
-      "end": 491.92,
+      "start": 351.958,
+      "end": 356.741,
       "type": "line",
       "text": "And I saw wars between the Nephites and Lamanites in the course of my days.",
       "verse": "1:24",
       "lineIndex": 130
     },
     {
-      "start": 492.6,
-      "end": 495.35,
+      "start": 357.421,
+      "end": 359.371,
       "type": "line",
       "text": "And then I began to be old,",
       "verse": "1:25",
       "lineIndex": 131
     },
     {
-      "start": 495.53,
-      "end": 499.93,
+      "start": 359.551,
+      "end": 362.662,
       "type": "line",
       "text": "and an hundred and seventy and nine years had passed away",
       "verse": "1:25",
       "lineIndex": 132
     },
     {
-      "start": 500.11,
-      "end": 504.135,
+      "start": 362.842,
+      "end": 366.929,
       "type": "line",
       "text": "from the time that our father Lehi left Jerusalem.",
       "verse": "1:25",
       "lineIndex": 133
     },
     {
-      "start": 504.815,
-      "end": 508.615,
+      "start": 367.609,
+      "end": 370.581,
       "type": "line",
       "text": "And I saw that I must soon go down to my grave,",
       "verse": "1:26",
       "lineIndex": 134
     },
     {
-      "start": 508.795,
-      "end": 512.37,
+      "start": 370.761,
+      "end": 373.733,
       "type": "line",
       "text": "having been wrought upon by the power of God",
       "verse": "1:26",
       "lineIndex": 135
     },
     {
-      "start": 512.55,
-      "end": 516.25,
+      "start": 373.913,
+      "end": 376.885,
       "type": "line",
       "text": "that I must preach and prophesy to this people,",
       "verse": "1:26",
       "lineIndex": 136
     },
     {
-      "start": 516.43,
-      "end": 521.03,
+      "start": 377.065,
+      "end": 380.409,
       "type": "line",
       "text": "and declare the word according to the truth which is in Christ.",
       "verse": "1:26",
       "lineIndex": 137
     },
     {
-      "start": 521.21,
-      "end": 524.41,
+      "start": 380.589,
+      "end": 382.911,
       "type": "line",
       "text": "And I have declared it in all my days,",
       "verse": "1:26",
       "lineIndex": 138
     },
     {
-      "start": 524.59,
-      "end": 528.14,
+      "start": 383.091,
+      "end": 386.11,
       "type": "line",
       "text": "and have rejoiced in it above that of the world.",
       "verse": "1:26",
       "lineIndex": 139
     },
     {
-      "start": 528.82,
-      "end": 532.045,
+      "start": 386.79,
+      "end": 389.112,
       "type": "line",
       "text": "And I soon go to the place of my rest,",
       "verse": "1:27",
       "lineIndex": 140
     },
     {
-      "start": 532.225,
-      "end": 534.9,
+      "start": 389.292,
+      "end": 390.871,
       "type": "line",
       "text": "which is with my Redeemer;",
       "verse": "1:27",
       "lineIndex": 141
     },
     {
-      "start": 535.08,
-      "end": 538.355,
+      "start": 391.051,
+      "end": 393.605,
       "type": "line",
       "text": "for I know that in him I shall rest.",
       "verse": "1:27",
       "lineIndex": 142
     },
     {
-      "start": 538.535,
-      "end": 541.26,
+      "start": 393.785,
+      "end": 395.596,
       "type": "line",
       "text": "And I rejoice in the day",
       "verse": "1:27",
       "lineIndex": 143
     },
     {
-      "start": 541.44,
-      "end": 545.04,
+      "start": 395.776,
+      "end": 398.748,
       "type": "line",
       "text": "when my mortal shall put on immortality,",
       "verse": "1:27",
       "lineIndex": 144
     },
     {
-      "start": 545.22,
-      "end": 547.67,
+      "start": 398.928,
+      "end": 400.553,
       "type": "line",
       "text": "and shall stand before him;",
       "verse": "1:27",
       "lineIndex": 145
     },
     {
-      "start": 547.85,
-      "end": 550.925,
+      "start": 400.733,
+      "end": 403.055,
       "type": "line",
       "text": "then shall I see his face with pleasure,",
       "verse": "1:27",
       "lineIndex": 146
     },
     {
-      "start": 551.105,
-      "end": 553.255,
+      "start": 403.235,
+      "end": 404.768,
       "type": "line",
       "text": "and he will say to me:",
       "verse": "1:27",
       "lineIndex": 147
     },
     {
-      "start": 553.435,
-      "end": 555.61,
+      "start": 404.948,
+      "end": 406.62,
       "type": "line",
       "text": "Come to me, you blessed,",
       "verse": "1:27",
       "lineIndex": 148
     },
     {
-      "start": 555.79,
-      "end": 560.39,
+      "start": 406.8,
+      "end": 410.747,
       "type": "line",
       "text": "there is a place prepared for you in the mansions of my Father.",
       "verse": "1:27",
       "lineIndex": 149
     },
     {
-      "start": 560.57,
-      "end": 561.995,
+      "start": 410.927,
+      "end": 411.809,
       "type": "line",
       "text": "Amen.",
       "verse": "1:27",

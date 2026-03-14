@@ -2,7 +2,7 @@
  * Narration module for bomreader.com — Pre-generated Audio Player
  *
  * Plays pre-generated MP3 chapter audio with synchronized line highlighting.
- * Audio files are generated offline using Kokoro TTS and stored in audio/.
+ * Audio files are generated offline using ElevenLabs TTS and stored in audio/.
  * Each chapter has an MP3 file and a JSON timing manifest.
  *
  * Architecture:
@@ -593,7 +593,7 @@ const NARRATION = (() => {
         <div class="narr-mini-progress" id="narr-mini-prog"></div>
         <div class="narr-mini-info" id="narr-mini-info-click">
           <div class="narr-mini-title" id="narr-mini-title">Loading...</div>
-          <div class="narr-mini-subtitle" id="narr-mini-sub">Kokoro TTS</div>
+          <div class="narr-mini-subtitle" id="narr-mini-sub">Narration</div>
         </div>
         <button class="narr-btn narr-btn-skip" id="narr-mini-rw" title="Back 10s">${ICON_RW}</button>
         <button class="narr-btn narr-btn-play" id="narr-mini-play" title="Play/Pause">${ICONS.play}</button>
