@@ -932,8 +932,13 @@ def fix_participles(text):
         # and use only the last clause fragment.
         clause_context = re.split(r'[,;:.?!]', plain_context)[-1]
 
-        # Check for auxiliary (have/has/had/was/were/be...) in full context
-        has_aux = bool(re.search(r'\b(' + '|'.join(AUX_SET) + r')\b', context))
+        # Check for auxiliary (have/has/had/was/were/be...) immediately preceding the verb
+        # Only match if the aux is within a few words of the swap (not a distant copula)
+        # Use the last ~40 chars of plain context stripped of HTML
+        near_context = re.sub(r'<[^>]*>?', '', context[-60:]).strip()
+        near_words = near_context.split()
+        # Check last 3 words before the swap for an auxiliary
+        has_aux = bool(set(w.lower() for w in near_words[-3:]) & AUX_SET)
         # Check for modal only in same clause (prevents cross-clause false positives)
         has_modal = bool(re.search(r'\b(' + '|'.join(MODAL_SET) + r')\b', clause_context))
         # Also check for modal/aux inside preceding data-mod attributes (same clause)
@@ -951,15 +956,21 @@ def fix_participles(text):
         has_to = bool(re.search(r'\bto\s*$', plain_context))
         # When both modal AND be-auxiliary are present (e.g. "should be engraved"),
         # it's passive voice — keep past participle, don't reduce to base form.
+        # IMPORTANT: both modal and be must be NEAR the verb (within 5 words),
+        # not just anywhere in the clause. "shall read are they which Isaiah spake"
+        # has 'shall' and 'are' in the same clause but neither modifies 'spake'.
         BE_WORDS = {'be', 'been', 'being', 'is', 'are', 'was', 'were'}
+        near_words_lower = [w.lower() for w in near_words[-5:]]
+        has_near_modal = bool(set(near_words_lower) & MODAL_SET)
+        has_near_be = bool(set(near_words_lower) & BE_WORDS)
         has_be = bool(re.search(r'\b(' + '|'.join(BE_WORDS) + r')\b', clause_context))
-        if has_modal and has_be and mod_val in PARTICIPLE_MAP:
+        if has_near_modal and has_near_be and mod_val in PARTICIPLE_MAP:
             # Passive: "should be engraved" — keep participle
             return 'data-mod="' + PARTICIPLE_MAP[mod_val] + '"'
-        if has_modal and has_be:
+        if has_near_modal and has_near_be:
             # Passive but no irregular participle — keep as-is (regular -ed is fine)
             return m.group(0)
-        if has_modal and mod_val in MODAL_BASE_MAP:
+        if has_near_modal and mod_val in MODAL_BASE_MAP:
             return 'data-mod="' + MODAL_BASE_MAP[mod_val] + '"'
         if has_to and mod_val in MODAL_BASE_MAP:
             return 'data-mod="' + MODAL_BASE_MAP[mod_val] + '"'
