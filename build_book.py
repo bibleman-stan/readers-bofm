@@ -1457,13 +1457,22 @@ def format_pericope_header(title):
     """
     import re
 
-    # Extract parenthetical scripture reference if present
-    ref_match = re.search(r'\s*\(([^)]*(?:Isaiah|Malachi|Genesis|Exodus|Psalm)[^)]*)\)\s*$', title)
+    # Extract parenthetical scripture reference if present (Isaiah, Malachi, etc.)
+    # Also extract verse-range references like (vv. 1–8) or (v. 3)
+    ref_match = re.search(r'\s*\(([^)]*(?:Isaiah|Malachi|Genesis|Exodus|Psalm|Isa|Mal|Gen|Exo|Psa|Mic|Deut|Lev)[^)]*)\)\s*$', title)
     ref_html = ''
     if ref_match:
         ref_text = ref_match.group(1)
         ref_html = f'<span class="pericope-ref">{ref_text}</span>'
         title = title[:ref_match.start()]
+
+    # Extract verse-range references like (vv. 1–8) or (v. 3)
+    vv_match = re.search(r'\s*\((vv?\.\s*\d+(?:\s*\u2013\s*\d+)?)\)\s*$', title)
+    vv_html = ''
+    if vv_match:
+        vv_text = vv_match.group(1)
+        vv_html = f'<span class="pericope-vv">{vv_text}</span>'
+        title = title[:vv_match.start()]
 
     # Split on colon for two-tier display (but not if colon is inside quotes)
     if ': ' in title and "'" not in title.split(': ')[0][-5:]:
@@ -1474,14 +1483,20 @@ def format_pericope_header(title):
         inner += f'<span class="pericope-sub">{subtitle}</span>'
         if ref_html:
             inner += ref_html
+        if vv_html:
+            inner += vv_html
         return f'<div class="pericope-header pericope-two-tier">{inner}</div>'
     else:
         # Single-tier: no colon split
         inner = f'<span class="pericope-main">{title}</span>'
         if ref_html:
             inner += ref_html
+            if vv_html:
+                inner += vv_html
             # Use pericope-with-ref class so ref gets its own line via flex
             return f'<div class="pericope-header pericope-with-ref">{inner}</div>'
+        if vv_html:
+            inner += vv_html
         return f'<div class="pericope-header">{inner}</div>'
 
 def get_intertext(book_id, chapter, verse):
