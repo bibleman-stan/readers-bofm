@@ -1735,9 +1735,27 @@ def find_deep_structure_verses(parry_verse_map):
     return deep_verses
 
 
+def _fix_double_that(lines):
+    """Fix AICTP double-that: when 'it came to pass that [X], / that [Y]',
+    the AICTP swap consumes the first 'that' but leaves the second orphaned.
+    Pre-process: if line[i] contains 'it came to pass that' and ends with comma,
+    and line[i+1] starts with 'that ', remove that second 'that' so the swap
+    produces clean grammar ('And then [X], [Y]' instead of 'And then [X], that [Y]')."""
+    result = list(lines)
+    for i in range(len(result) - 1):
+        if 'it came to pass that' in result[i].lower() and result[i].rstrip().endswith(','):
+            nxt = result[i + 1]
+            if nxt.startswith('that ') or nxt.startswith('That '):
+                # Remove the leading "that " — capitalize next word if "That" was capitalized
+                rest = nxt[5:]  # skip "that "
+                result[i + 1] = rest
+    return result
+
+
 def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=None, deep_structure_verses=None):
     ref = verse['ref']
-    processed = [process_line(l, swap_list) for l in verse['lines']]
+    fixed_lines = _fix_double_that(verse['lines'])
+    processed = [process_line(l, swap_list) for l in fixed_lines]
 
     # Check for intertext references on this verse
     entries = get_intertext(book_id, verse['chapter'], verse['verse']) if book_id else []
@@ -1788,6 +1806,13 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
     para_text = v0.get((verse['chapter'], verse['verse']), '')
     para_html = ''
     if para_text:
+        # Fix double-that in paragraph text too
+        para_text = re.sub(
+            r'(it came to pass that\b[^,]+,)\s+that ',
+            r'\1 ',
+            para_text,
+            flags=re.IGNORECASE
+        )
         para_html = process_line(para_text, swap_list)
         # Apply allusion/quotation highlighting to paragraph layer too
         if quote_phrases:
@@ -1846,12 +1871,20 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
     if parry_lines:
         plines = parry_lines.get('lines', [])
         ptypes = parry_lines.get('types', [])
+        # Fix double-that in Parry lines
+        parry_raw_texts = [pl.get('text', '') for pl in plines]
+        parry_raw_texts = _fix_double_that(parry_raw_texts)
+        # Also fix single-line Parry entries where the whole verse is one string
+        parry_raw_texts = [
+            re.sub(r'(it came to pass that\b[^,]+,)\s+that ', r'\1 ', t, flags=re.IGNORECASE)
+            for t in parry_raw_texts
+        ]
         last_upper_indent = 0
         parry_metadata = []   # (label_html, indent) per Parry line
         parry_texts = []      # processed HTML text per Parry line
         for pl_idx, pl in enumerate(plines):
             raw_label = pl.get('label', '')
-            text = pl.get('text', '')
+            text = parry_raw_texts[pl_idx]
 
             if raw_label:
                 base_char = raw_label.rstrip("'")[0] if raw_label.rstrip("'") else ''
