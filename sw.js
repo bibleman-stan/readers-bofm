@@ -2,12 +2,13 @@
 // Strategy: cache app shell eagerly, cache books lazily (on first open),
 // with option to pre-cache all books at once via message from page.
 
-const CACHE_NAME = 'bomreader-v20';
+const CACHE_NAME = 'bomreader-v21';
 
 // App shell — cached on install
 const SHELL_ASSETS = [
   './',
   './index.html',
+  './narration.js',
 ];
 
 // All book fragments — cached lazily or on demand
