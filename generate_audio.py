@@ -101,19 +101,10 @@ def parse_chapter(html_path, book_id, chapter_num):
 
         classes = child.get('class', [])
 
-        # Pericope header
+        # Pericope header — skip for audio (they're editorial aids, not text)
+        # but still count them in line_index so DOM highlighting stays aligned
         if 'pericope-header' in classes:
-            main_el = child.find(class_='pericope-main')
-            if main_el:
-                text = main_el.get_text().strip()
-                if text:
-                    items.append({
-                        'type': 'pericope',
-                        'text': text,
-                        'verse_num': '',
-                        'line_index': line_idx,
-                    })
-                    line_idx += 1
+            line_idx += 1
             continue
 
         # Verse
@@ -182,12 +173,6 @@ def generate_chapter_audio(items, tts, voice=VOICE):
             current_time += VERSE_PAUSE_S
             continue
 
-        if item['type'] == 'pericope':
-            # Pause before pericope
-            silence = generate_silence(PERICOPE_PAUSE_S)
-            all_samples.append(silence)
-            current_time += PERICOPE_PAUSE_S
-
         # Generate speech using Kokoro's callable API:
         #   pipeline(text, voice=...) returns a generator of (graphemes, phonemes, audio)
         start_time = current_time
@@ -226,12 +211,6 @@ def generate_chapter_audio(items, tts, voice=VOICE):
             silence = generate_silence(LINE_PAUSE_S)
             all_samples.append(silence)
             current_time += LINE_PAUSE_S
-
-        # Extra pause after pericope audio
-        if item['type'] == 'pericope':
-            silence = generate_silence(PERICOPE_PAUSE_S)
-            all_samples.append(silence)
-            current_time += PERICOPE_PAUSE_S
 
     print()  # newline after progress
 
