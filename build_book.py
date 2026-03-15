@@ -190,6 +190,11 @@ COMPOUND_SWAPS = [
     ("mayest engraven", "may engrave"), ("canst engraven", "can engrave"),
     ("to engraven", "to engrave"),
     ("did slay", "killed"), ("did smite", "struck"),
+    # Did + compound verb (shared auxiliary: "did X and Y exceedingly")
+    ("did quake and tremble exceedingly", "quaked and trembled greatly"),
+    ("did fear and tremble exceedingly", "feared and trembled greatly"),
+    ("did multiply and wax exceedingly", "multiplied and grew very"),
+    ("did multiply and prosper exceedingly", "multiplied and prospered greatly"),
     # Doth + adverb + verb (pre-collapse to avoid "does greatly rejoice")
     ("doth exceedingly rejoice", "rejoices greatly"),
     ("doth immediately bless", "immediately blesses"),
