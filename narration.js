@@ -1071,8 +1071,9 @@ const NARRATION = (() => {
     const controlsRow = document.querySelector('.controls-row');
     if (controlsRow) {
       const searchBtn = controlsRow.querySelector('.search-icon-btn');
-      if (searchBtn) {
-        controlsRow.insertBefore(controls, searchBtn);
+      if (searchBtn && searchBtn.nextSibling) {
+        // Insert Listen after search icon (between search and layers)
+        controlsRow.insertBefore(controls, searchBtn.nextSibling);
       } else {
         controlsRow.appendChild(controls);
       }
