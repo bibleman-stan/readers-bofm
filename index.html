@@ -3021,7 +3021,8 @@
     document.querySelectorAll('#nav-grid .grid-btn').forEach(function(btn, idx) {
       btn.classList.toggle('active-ch', idx === chNum - 1);
     });
-    window.scrollTo({top: 0});
+    // Skip scroll-to-top when navigating to a specific verse from search
+    if (!window._pendingVerseScroll) window.scrollTo({top: 0});
     var navPanel = document.getElementById('nav-panel');
     if (navPanel) navPanel.style.display = 'none';
     // Update hash — store what we set so handleHash can skip it
@@ -3465,6 +3466,59 @@ function flushAndReload() {
   var activeGroup = -1;   // which plate group is selected (-1 = all)
   var activeBook = -1;    // which book within group is selected (-1 = all in group)
 
+  /* ── Recent searches cache (localStorage) ── */
+  var RECENT_KEY = 'bom-recent-searches';
+  var MAX_RECENT = 8;
+
+  function getRecentSearches() {
+    try {
+      var data = localStorage.getItem(RECENT_KEY);
+      return data ? JSON.parse(data) : [];
+    } catch(e) { return []; }
+  }
+
+  function saveRecentSearch(query) {
+    if (!query || query.length < 2) return;
+    var recent = getRecentSearches();
+    // Remove duplicate if already present
+    recent = recent.filter(function(r) { return r !== query; });
+    // Add to front
+    recent.unshift(query);
+    // Trim to max
+    if (recent.length > MAX_RECENT) recent = recent.slice(0, MAX_RECENT);
+    try { localStorage.setItem(RECENT_KEY, JSON.stringify(recent)); } catch(e) {}
+  }
+
+  function renderRecentSearches() {
+    var container = document.getElementById('search-results');
+    var recent = getRecentSearches();
+    if (recent.length === 0) return;
+    container.innerHTML = '';
+    var header = document.createElement('div');
+    header.style.cssText = 'color:#999; font-size:0.85em; padding:12px 16px 4px; text-transform:uppercase; letter-spacing:0.05em;';
+    header.textContent = 'Recent Searches';
+    container.appendChild(header);
+    for (var i = 0; i < recent.length; i++) {
+      var row = document.createElement('div');
+      row.className = 'search-result';
+      row.style.cssText = 'cursor:pointer; padding:10px 16px; display:flex; align-items:center; gap:8px;';
+      var icon = document.createElement('span');
+      icon.textContent = '\u23F1';
+      icon.style.cssText = 'opacity:0.4; font-size:0.9em;';
+      var text = document.createElement('span');
+      text.textContent = recent[i];
+      row.appendChild(icon);
+      row.appendChild(text);
+      (function(q) {
+        row.addEventListener('click', function() {
+          document.getElementById('search-input').value = q;
+          runSearch(q);
+        });
+      })(recent[i]);
+      container.appendChild(row);
+    }
+  }
+
   // Book of Mormon plate groupings
   // Each group has a match(v) function that tests if a search verse belongs to it.
   // Mormon splits at ch 8: chs 1-7 = Large Plates (Mormon's narrative),
@@ -3506,7 +3560,10 @@ function flushAndReload() {
     scrim.classList.add('open');
     overlay.offsetHeight;
     overlay.classList.add('open');
-    setTimeout(function() { document.getElementById('search-input').focus(); }, 260);
+    setTimeout(function() {
+      document.getElementById('search-input').focus();
+      renderRecentSearches();
+    }, 260);
     if (!searchIndex) {
       fetch('data/search_index.json')
         .then(function(r) { return r.json(); })
@@ -3547,6 +3604,7 @@ function flushAndReload() {
           clearCharts();
           document.getElementById('search-results').innerHTML = '';
           lastQuery = ''; lastHits = []; lastBookCounts = [];
+          if (q.length === 0) renderRecentSearches();
           return;
         }
         runSearch(q);
@@ -3642,17 +3700,120 @@ function flushAndReload() {
 
   var lastSearchForms = [];  // the expanded word forms for highlighting
 
+  /* ── Boolean query detection and parsing ── */
+  function hasBooleanOps(query) {
+    // Check for AND, OR, NOT as separate uppercase words
+    return /\b(AND|OR|NOT)\b/.test(query);
+  }
+
+  // Test if a single term (word or "quoted phrase") matches a verse
+  function termMatchesVerse(term, verseText) {
+    if (term.charAt(0) === '"' && term.charAt(term.length - 1) === '"') {
+      // Exact phrase match
+      var phrase = term.slice(1, -1).toLowerCase();
+      return verseText.toLowerCase().indexOf(phrase) !== -1;
+    }
+    // Single word: stem-expand and word-boundary match
+    var forms = expandStemForms(term);
+    for (var i = 0; i < forms.length; i++) {
+      var re = new RegExp('\\b' + forms[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+      if (re.test(verseText)) return true;
+    }
+    return false;
+  }
+
+  // Parse Boolean query into a matcher function
+  // Supports: term AND term, term OR term, NOT term, parentheses optional
+  // Precedence: NOT > AND > OR (standard Boolean)
+  function parseBooleanQuery(query) {
+    // Tokenize: extract "quoted phrases", AND, OR, NOT, and bare words
+    var tokens = [];
+    var re = /"[^"]*"|\bAND\b|\bOR\b|\bNOT\b|\S+/g;
+    var m;
+    while ((m = re.exec(query)) !== null) {
+      tokens.push(m[0]);
+    }
+
+    // Collect all non-operator terms for highlighting
+    var highlightTerms = [];
+    for (var i = 0; i < tokens.length; i++) {
+      var tok = tokens[i];
+      if (tok !== 'AND' && tok !== 'OR' && tok !== 'NOT') {
+        if (tok.charAt(0) === '"' && tok.charAt(tok.length - 1) === '"') {
+          highlightTerms.push(tok.slice(1, -1).toLowerCase());
+        } else {
+          var expanded = expandStemForms(tok);
+          for (var j = 0; j < expanded.length; j++) highlightTerms.push(expanded[j]);
+        }
+      }
+    }
+
+    // Simple recursive descent: OR groups of AND groups
+    var pos = 0;
+
+    function parseOr() {
+      var left = parseAnd();
+      while (pos < tokens.length && tokens[pos] === 'OR') {
+        pos++;
+        var right = parseAnd();
+        left = (function(l, r) { return function(v) { return l(v) || r(v); }; })(left, right);
+      }
+      return left;
+    }
+
+    function parseAnd() {
+      var left = parseNot();
+      while (pos < tokens.length && tokens[pos] === 'AND') {
+        pos++;
+        var right = parseNot();
+        left = (function(l, r) { return function(v) { return l(v) && r(v); }; })(left, right);
+      }
+      // Implicit AND: two terms next to each other with no operator (or NOT prefix)
+      while (pos < tokens.length && tokens[pos] !== 'OR' && tokens[pos] !== 'AND') {
+        var right = parseNot();
+        left = (function(l, r) { return function(v) { return l(v) && r(v); }; })(left, right);
+      }
+      return left;
+    }
+
+    function parseNot() {
+      if (pos < tokens.length && tokens[pos] === 'NOT') {
+        pos++;
+        var inner = parseTerm();
+        return (function(fn) { return function(v) { return !fn(v); }; })(inner);
+      }
+      return parseTerm();
+    }
+
+    function parseTerm() {
+      if (pos >= tokens.length) return function() { return false; };
+      var tok = tokens[pos];
+      pos++;
+      return function(verseText) { return termMatchesVerse(tok, verseText); };
+    }
+
+    var matcher = parseOr();
+    return { matcher: matcher, highlightTerms: highlightTerms };
+  }
+
   function runSearch(query) {
     if (!searchIndex) return;
     lastQuery = query;
     activeGroup = -1;
     activeBook = -1;
+    saveRecentSearch(query);
 
-    // Detect "quoted" exact search vs smart stem search
+    var isBoolean = hasBooleanOps(query);
     var isExact = /^".*"$/.test(query.trim());
     var searchTerms;
+    var boolMatcher = null;
 
-    if (isExact) {
+    if (isBoolean) {
+      // Boolean mode: parse into matcher
+      var parsed = parseBooleanQuery(query);
+      boolMatcher = parsed.matcher;
+      lastSearchForms = parsed.highlightTerms;
+    } else if (isExact) {
       // Exact substring match (strip quotes)
       var exact = query.trim().replace(/^"|"$/g, '').toLowerCase();
       searchTerms = [exact];
@@ -3676,19 +3837,26 @@ function flushAndReload() {
     var bookCounts = new Array(searchIndex.books.length).fill(0);
     for (var i = 0; i < searchIndex.verses.length; i++) {
       var v = searchIndex.verses[i];
-      var tLower = v.t.toLowerCase();
       var matched = false;
-      for (var j = 0; j < searchTerms.length; j++) {
-        // Word-boundary match: ensure the term is a whole word (not substring)
-        // For single words, use word-boundary regex; for phrases, use indexOf
-        if (!isExact && searchTerms.length > 1 || (searchTerms[0].indexOf(' ') >= 0)) {
-          if (tLower.indexOf(searchTerms[j]) !== -1) { matched = true; break; }
-        } else {
-          // Use word-boundary matching for single-word stem forms
-          var wbRe = new RegExp('\\b' + searchTerms[j].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
-          if (wbRe.test(v.t)) { matched = true; break; }
+
+      if (boolMatcher) {
+        // Boolean mode
+        matched = boolMatcher(v.t);
+      } else {
+        var tLower = v.t.toLowerCase();
+        for (var j = 0; j < searchTerms.length; j++) {
+          // Word-boundary match: ensure the term is a whole word (not substring)
+          // For single words, use word-boundary regex; for phrases, use indexOf
+          if (!isExact && searchTerms.length > 1 || (searchTerms[0].indexOf(' ') >= 0)) {
+            if (tLower.indexOf(searchTerms[j]) !== -1) { matched = true; break; }
+          } else {
+            // Use word-boundary matching for single-word stem forms
+            var wbRe = new RegExp('\\b' + searchTerms[j].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+            if (wbRe.test(v.t)) { matched = true; break; }
+          }
         }
       }
+
       if (matched) {
         hits.push(v);
         bookCounts[v.b]++;
@@ -3924,26 +4092,40 @@ function flushAndReload() {
     return d.innerHTML;
   }
 
+  function scrollToVerse(bookId, chapter, verse) {
+    var verseRef = chapter + ':' + verse;
+    var allVerses = document.querySelectorAll('#book-' + bookId + ' .verse-num');
+    for (var i = 0; i < allVerses.length; i++) {
+      if (allVerses[i].textContent.trim() === verseRef) {
+        var verseDiv = allVerses[i].closest('.verse');
+        if (verseDiv) {
+          verseDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          verseDiv.style.transition = 'background 0.3s';
+          verseDiv.style.background = 'rgba(124,175,194,0.15)';
+          setTimeout(function() { verseDiv.style.background = ''; }, 2000);
+        }
+        return true;
+      }
+    }
+    return false;
+  }
+
   function navigateToVerse(bookId, chapter, verse) {
     closeSearch();
     if (typeof switchBook === 'function') {
+      // Set a flag so we can scroll after showChapter's scrollTo(top:0) settles
+      window._pendingVerseScroll = { bookId: bookId, chapter: chapter, verse: verse };
       switchBook(bookId, chapter);
-      setTimeout(function() {
-        var verseRef = chapter + ':' + verse;
-        var allVerses = document.querySelectorAll('#book-' + bookId + ' .verse-num');
-        for (var i = 0; i < allVerses.length; i++) {
-          if (allVerses[i].textContent.trim() === verseRef) {
-            var verseDiv = allVerses[i].closest('.verse');
-            if (verseDiv) {
-              verseDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              verseDiv.style.transition = 'background 0.3s';
-              verseDiv.style.background = 'rgba(124,175,194,0.15)';
-              setTimeout(function() { verseDiv.style.background = ''; }, 2000);
-            }
-            break;
-          }
+      // Poll until the verse element exists (handles async book loading)
+      var attempts = 0;
+      var maxAttempts = 40;  // 40 * 100ms = 4s max
+      var checker = setInterval(function() {
+        attempts++;
+        if (scrollToVerse(bookId, chapter, verse) || attempts >= maxAttempts) {
+          clearInterval(checker);
+          window._pendingVerseScroll = null;
         }
-      }, 400);
+      }, 100);
     }
   }
 })();
