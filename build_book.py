@@ -128,9 +128,21 @@ COMPOUND_SWAPS = [
     ("yea even", "indeed even"), ("Yea even", "Indeed even"),
     # ── lest that → for fear that (avoid double 'that') ──
     ("lest that", "for fear that"),
-    # ── wicked + abomination collision ──
+    # ── abomination collision avoidance ──
+    # "wickedness and abominations" → avoid "wickedness and wicked practices"
+    ("wickedness and abominations", "wickedness and evil deeds"),
+    ("wickedness and abomination", "wickedness and evil deeds"),
+    ("wickedness and their abominations", "wickedness and their evil deeds"),
+    ("wickedness and his abominations", "wickedness and his evil deeds"),
+    # "iniquity and abominations" → same issue (iniquity ≈ wickedness)
+    ("iniquity and abominations", "iniquity and evil deeds"),
+    ("iniquities and abominations", "iniquities and evil deeds"),
+    ("iniquity and abomination", "iniquity and evil deeds"),
+    # "wicked abominations" → collapse redundancy
     ("wicked abominations", "wicked practices"),
     ("wicked abomination", "wicked practice"),
+    # "mother of abominations" → biblical title (Rev 17), keep as-is
+    ("mother of abominations", "mother of abominations"),
     ("hither and thither", "this way and that"),
     ("an account", "a record"), ("in fine", "in other words"), ("lust after", "desire"),
     ("save two churches only", "only two churches"), ("save a few only", "only a few"),
