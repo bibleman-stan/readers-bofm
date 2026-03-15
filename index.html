@@ -3227,7 +3227,7 @@
   var collapseDisabledUntil = 0; // timestamp — pause collapse logic briefly
   var manualExpandScrollY = -1;  // scrollY when user manually expanded; -1 = not active
   var COLLAPSE_THRESHOLD = 80;   // scrollY above which toolbar collapses
-  var EXPAND_THRESHOLD = 30;     // scrollY below which toolbar fully expands
+  var EXPAND_THRESHOLD = 5;      // scrollY below which toolbar fully expands (near top only)
   var GRACE_DISTANCE = 150;      // how far user can scroll before manual expand auto-collapses
 
   window.addEventListener('scroll', function() {
@@ -3252,6 +3252,7 @@
         if (isCollapsed || isManualExpand) {
           toolbar.classList.remove('toolbar-collapsed', 'toolbar-show-summary');
           manualExpandScrollY = -1;
+          pauseCollapse(); // prevent layout-shift scroll from re-collapsing
         }
         return;
       }
@@ -3265,11 +3266,13 @@
             toolbar.classList.remove('toolbar-show-summary');
             manualExpandScrollY = -1;
             closeAllPanels();
+            pauseCollapse(); // prevent layout-shift scroll from re-expanding
           }
           // Otherwise, leave it expanded (within grace period)
         } else if (!isCollapsed) {
           // Normal auto-collapse
           toolbar.classList.add('toolbar-collapsed');
+          pauseCollapse(); // prevent layout-shift scroll from re-expanding
         }
       }
     });
