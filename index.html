@@ -1509,6 +1509,69 @@
     color: #666;
   }
 
+  /* Welcome section — minimal landing for first visit */
+  #welcome-section {
+    display: none;
+    text-align: center;
+    padding: 2.5em 1em 3em;
+    color: #bcc8d4;
+  }
+  #welcome-section .welcome-tagline {
+    font-size: 1.35em;
+    font-weight: 600;
+    color: #dce4ec;
+    margin: 0 0 0.6em;
+    letter-spacing: 0.01em;
+  }
+  #welcome-section .welcome-desc {
+    font-size: 0.95em;
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 auto 1.8em;
+    color: #9aacbd;
+  }
+  #welcome-section .welcome-prompt {
+    font-size: 0.88em;
+    color: #7a8a9a;
+    margin-top: 0.5em;
+  }
+  #welcome-section .welcome-prompt span {
+    display: inline-block;
+    border: 1px solid #445;
+    border-radius: 16px;
+    padding: 6px 18px;
+    margin-top: 0.4em;
+    color: #9aacbd;
+    font-size: 0.95em;
+  }
+  #welcome-section .welcome-about-link {
+    display: inline-block;
+    margin-top: 1.8em;
+    font-size: 0.85em;
+    color: #7cafc2;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #welcome-section .welcome-about-link:hover {
+    text-decoration: underline;
+  }
+  body.light-mode #welcome-section {
+    color: #556;
+  }
+  body.light-mode #welcome-section .welcome-tagline {
+    color: #2a3a4a;
+  }
+  body.light-mode #welcome-section .welcome-desc {
+    color: #556;
+  }
+  body.light-mode #welcome-section .welcome-prompt {
+    color: #889;
+  }
+  body.light-mode #welcome-section .welcome-prompt span {
+    border-color: #ccd;
+    color: #556;
+  }
+
   /* Back to top button */
   #back-to-top {
     position: fixed;
@@ -2230,6 +2293,14 @@
     <p><a class="about-back-link" href="#" onclick="hideAboutPage(); return false;">← Back to reading</a></p>
   </div>
 
+  <!-- Welcome section — minimal landing for first-time visitors -->
+  <div id="welcome-section">
+    <p class="welcome-tagline">The Book of Mormon, formatted for reading</p>
+    <p class="welcome-desc">Sense-lines, modern-language aids, audio narration, and colored layers reveal what a wall of text hides. Choose a book above to begin.</p>
+    <p class="welcome-prompt"><span>↑ Tap any book to start reading</span></p>
+    <a class="welcome-about-link" href="#" onclick="showAboutPage(); return false;">Learn more about the features</a>
+  </div>
+
   <!-- Book content loaded dynamically by JS -->
   <div id="book-content-container">
   </div>
@@ -2685,9 +2756,11 @@
     pendingChapter = null;  // Clear any pending chapter from a previous book switch
     var meta = bookMeta[bookId];
     if (!meta) return;
-    // If the about page is showing, hide it first
+    // If the about page or welcome section is showing, hide it first
     var aboutVisible = document.getElementById('about-page').style.display === 'block';
     if (aboutVisible) hideAboutPage();
+    var welcomeVisible = document.getElementById('welcome-section').style.display === 'block';
+    if (welcomeVisible) hideWelcome();
     // Close other panels
     closeAllPanels();
     // Single-chapter books: navigate directly
@@ -2695,8 +2768,8 @@
       switchBook(bookId);
       return;
     }
-    // Same book: toggle chapter grid (but if about page was showing, show chapter grid instead)
-    if (bookId === currentBook && !aboutVisible) {
+    // Same book: toggle chapter grid (but if about/welcome was showing, show chapter grid instead)
+    if (bookId === currentBook && !aboutVisible && !welcomeVisible) {
       var navPanel = document.getElementById('nav-panel');
       navPanel.style.display = (navPanel.style.display === 'none' || navPanel.style.display === '') ? 'block' : 'none';
       return;
@@ -2987,6 +3060,7 @@
     // Force toolbar expanded before switching content
     toolbar.classList.remove('toolbar-collapsed');
     toolbar.classList.remove('toolbar-show-summary');
+    document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('about-page').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'none';
     // Hide floating chapter arrows
@@ -3004,6 +3078,24 @@
   window.hideAboutPage = function() {
     pauseCollapse();
     document.getElementById('about-page').style.display = 'none';
+    document.getElementById('book-content-container').style.display = 'block';
+  };
+
+  window.showWelcome = function() {
+    closeAllPanels();
+    pauseCollapse();
+    toolbar.classList.remove('toolbar-collapsed');
+    toolbar.classList.remove('toolbar-show-summary');
+    document.getElementById('welcome-section').style.display = 'block';
+    document.getElementById('about-page').style.display = 'none';
+    document.getElementById('book-content-container').style.display = 'none';
+    document.getElementById('float-prev').classList.remove('active');
+    document.getElementById('float-next').classList.remove('active');
+    window.scrollTo({ top: 0 });
+  };
+
+  window.hideWelcome = function() {
+    document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('book-content-container').style.display = 'block';
   };
 
@@ -3086,8 +3178,8 @@
       // Deep link — honor it (e.g. #alma-32)
       handleHash();
     } else {
-      // No hash — show About page as landing
-      showAboutPage();
+      // No hash — show welcome section as landing
+      showWelcome();
     }
     // Enable CSS transitions only after initial render to prevent lag on load
     setTimeout(function() {
