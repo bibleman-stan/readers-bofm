@@ -1756,7 +1756,7 @@
 <!-- Floating toolbar -->
 <div id="reading-toolbar">
   <!-- Collapsed summary bar (shown when toolbar is collapsed on scroll) -->
-  <div class="collapsed-summary" id="collapsed-summary"><span class="summary-home" id="summary-home" title="Scroll to top">↑</span> <span id="summary-text"></span></div>
+  <div class="collapsed-summary" id="collapsed-summary"><span class="summary-home" id="summary-home" title="Expand toolbar">↑</span> <span id="summary-text"></span></div>
 
   <!-- Book grid -->
   <div class="book-grid" id="book-grid">
@@ -3106,15 +3106,16 @@
         // Also skip if collapse is paused (e.g., after panel toggle)
         if (!toolbar.classList.contains('toolbar-hidden') && Date.now() > collapseDisabledUntil) {
           var isCollapsed = toolbar.classList.contains('toolbar-collapsed');
+          var isManuallyExpanded = toolbar.classList.contains('toolbar-show-summary');
           // Hysteresis: collapse at 80px, but only expand back at 30px.
           // This prevents a layout-shift feedback loop where collapsing the
           // toolbar changes content position, bouncing scrollY back and forth.
+          // Skip auto-collapse if user manually expanded via ↑ arrow or summary tap
           if (isCollapsed && y <= 30) {
             toolbar.classList.remove('toolbar-collapsed');
             toolbar.classList.remove('toolbar-show-summary');
-          } else if (!isCollapsed && y > 80) {
+          } else if (!isCollapsed && y > 80 && !isManuallyExpanded) {
             toolbar.classList.add('toolbar-collapsed');
-            toolbar.classList.remove('toolbar-show-summary');
           }
         }
         lastScrollY = y;
@@ -3125,7 +3126,7 @@
   }, { passive: true });
 
   // Pause collapse logic briefly (call before toggling panels that change page height)
-  function pauseCollapse() { collapseDisabledUntil = Date.now() + 400; }
+  function pauseCollapse() { collapseDisabledUntil = Date.now() + 600; }
 
   // ── Touch tracking: distinguish taps from scroll gestures on mobile ──
   var touchStartX = 0, touchStartY = 0, touchMoved = false;
@@ -3159,14 +3160,13 @@
     }
   }, { passive: true });
 
-  // Tap the ↑ arrow in the summary bar — scroll to title banner
+  // Tap the ↑ arrow in the summary bar — expand toolbar only (stay at current position)
   document.getElementById('summary-home').addEventListener('click', function(e) {
     e.stopPropagation(); // don't trigger summary bar toggle
     if (touchMoved) return;
     pauseCollapse();
     toolbar.classList.remove('toolbar-collapsed');
-    toolbar.classList.remove('toolbar-show-summary');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (window.scrollY > 80) toolbar.classList.add('toolbar-show-summary');
   });
 
   // Tap the summary bar — if toolbar is hidden, show it; otherwise toggle expand/collapse

@@ -458,15 +458,33 @@ const NARRATION = (() => {
   function updateHighlight() {
     if (!audioEl || !manifest) return;
 
-    const t = audioEl.currentTime;
+    // MP3 encoder adds a small silence prefix (encoder delay, typically ~26ms
+    // for LAME at 44.1kHz). Adjust for this so highlighting stays in sync.
+    // Also use a small look-ahead to trigger highlights slightly early, which
+    // feels more natural (the eye reads the line as the voice starts it).
+    const SYNC_OFFSET = 0.05;  // seconds to shift highlight earlier
+    const t = audioEl.currentTime - SYNC_OFFSET;
 
-    // Find which line we're in
+    // Find which line we're in (with tolerance for MP3 frame alignment drift)
     let newIdx = -1;
     for (let i = 0; i < manifest.lines.length; i++) {
       const line = manifest.lines[i];
       if (t >= line.start && t < line.end) {
         newIdx = i;
         break;
+      }
+    }
+
+    // If no exact match (we're in a gap between lines), check if we're
+    // very close to the next line's start — if so, highlight it early.
+    // This prevents the highlight from flickering off during tiny pauses.
+    if (newIdx < 0) {
+      for (let i = 0; i < manifest.lines.length; i++) {
+        const line = manifest.lines[i];
+        if (t < line.start && (line.start - t) < 0.15) {
+          newIdx = i;
+          break;
+        }
       }
     }
 
