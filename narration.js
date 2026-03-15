@@ -18,6 +18,13 @@ const NARRATION = (() => {
   const AUDIO_BASE = 'audio/';
   const VOICE = 'samuel';  // active voice: 'samuel', 'tony', etc.
 
+  // Canonical book order for auto-advance
+  const BOOK_ORDER = [
+    '1nephi', '2nephi', 'jacob', 'enos', 'jarom', 'omni',
+    'words-of-mormon', 'mosiah', 'alma', 'helaman', '3nephi',
+    '4nephi', 'mormon', 'ether', 'moroni'
+  ];
+
   // Map bookId → subfolder inside audio/
   const BOOK_FOLDERS = {
     '1nephi':          '01-1_Nephi',
@@ -45,6 +52,8 @@ const NARRATION = (() => {
   let highlightTimer = null;   // requestAnimationFrame ID
   let currentLineIdx = -1;     // currently highlighted line index
   let savedTextMode = null;    // saved text mode to restore when narration stops
+  let autoAdvancing = false;   // true while transitioning to next chapter
+  let userStopped = false;     // set true on explicit stop to suppress auto-advance
 
   // ── Helpers ──
 
@@ -147,6 +156,7 @@ const NARRATION = (() => {
 
   async function startPlayback() {
     if (playing) return;
+    userStopped = false;
 
     showPlayer();
 
@@ -209,6 +219,7 @@ const NARRATION = (() => {
   }
 
   function stopPlayback() {
+    userStopped = true;
     if (audioEl) {
       audioEl.pause();
       audioEl.currentTime = 0;
@@ -251,12 +262,146 @@ const NARRATION = (() => {
     }
   }
 
+  /**
+   * Determine the next chapter after the current one.
+   * Returns { bookId, chapter } or null if at the very end (Moroni 10).
+   */
+  function getNextChapter() {
+    const ch = getCurrentChapter();
+    if (!ch) return null;
+
+    // Try next chapter in the same book
+    const bookMeta = window.bookMeta;
+    if (bookMeta && bookMeta[ch.bookId] && ch.chapter < bookMeta[ch.bookId].chapters) {
+      return { bookId: ch.bookId, chapter: ch.chapter + 1 };
+    }
+
+    // Move to first chapter of the next book
+    const idx = BOOK_ORDER.indexOf(ch.bookId);
+    if (idx < 0 || idx >= BOOK_ORDER.length - 1) return null; // last book
+    const nextBook = BOOK_ORDER[idx + 1];
+    return { bookId: nextBook, chapter: 1 };
+  }
+
+  /**
+   * Check if a chapter has audio available (HEAD request on the mp3).
+   */
+  async function hasAudio(bookId, chapter) {
+    const folder = BOOK_FOLDERS[bookId] || bookId;
+    const url = `${AUDIO_BASE}${folder}/${bookId}-${chapter}-${VOICE}.mp3`;
+    try {
+      const resp = await fetch(url, { method: 'HEAD' });
+      return resp.ok;
+    } catch {
+      return false;
+    }
+  }
+
+  /**
+   * After the page has navigated to the next chapter, load audio and play.
+   */
+  async function playAfterNavigation(next) {
+    // Wait for the DOM to settle after chapter/book switch
+    await new Promise(resolve => setTimeout(resolve, 400));
+
+    const ok = await loadChapterAudio();
+    if (!ok) {
+      autoAdvancing = false;
+      updatePlayerState('stopped');
+      return;
+    }
+
+    // Ensure we're in sense-line mode
+    if (!document.body.classList.contains('show-lines')) {
+      if (savedTextMode === null) {
+        savedTextMode = document.body.classList.contains('show-parry') ? 'parry' : 'verses';
+      }
+      if (typeof window.toggleLines === 'function') {
+        if (document.body.classList.contains('show-parry')) {
+          window.toggleLines(); // parry → verses
+        }
+        window.toggleLines(); // verses → lines
+      }
+    }
+
+    try {
+      await audioEl.play();
+      playing = true;
+      updatePlayerState('playing');
+      startHighlightLoop();
+      bindChapterClick();
+    } catch (e) {
+      console.error('Narration: auto-advance play failed:', e);
+      updatePlayerState('error', 'Playback failed');
+    }
+    autoAdvancing = false;
+  }
+
+  /**
+   * Auto-advance to the next chapter and continue playing.
+   * Called silently when the current chapter's audio ends.
+   */
+  async function advanceToNextChapter() {
+    const cur = getCurrentChapter();
+    const next = getNextChapter();
+    if (!next) {
+      // End of the Book of Mormon — stop gracefully
+      updatePlayerState('stopped');
+      return;
+    }
+
+    // Check that the next chapter actually has audio
+    const available = await hasAudio(next.bookId, next.chapter);
+    if (!available) {
+      console.log(`Narration: no audio for ${next.bookId}-${next.chapter}, stopping auto-advance`);
+      updatePlayerState('stopped');
+      return;
+    }
+
+    autoAdvancing = true;
+    console.log(`Narration: auto-advancing to ${next.bookId} ${next.chapter}`);
+    updatePlayerState('loading', 'Loading next chapter...');
+
+    // Same book → just switch chapter; different book → switchBook handles loading
+    if (cur && next.bookId === cur.bookId) {
+      if (typeof window.showChapter === 'function') {
+        window.showChapter(next.bookId, next.chapter);
+      }
+      await playAfterNavigation(next);
+    } else {
+      // Cross-book: use switchBook which loads the HTML, then play in callback
+      if (typeof window.switchBook === 'function') {
+        window.switchBook(next.bookId, next.chapter);
+        // switchBook loads async — wait for the chapter element to appear
+        let attempts = 0;
+        const maxAttempts = 40; // 4 seconds max
+        await new Promise(resolve => {
+          const poll = setInterval(() => {
+            attempts++;
+            const el = document.getElementById('ch-' + next.bookId + '-' + next.chapter);
+            if ((el && el.style.display !== 'none') || attempts >= maxAttempts) {
+              clearInterval(poll);
+              resolve();
+            }
+          }, 100);
+        });
+      }
+      await playAfterNavigation(next);
+    }
+  }
+
   function onAudioEnded() {
     playing = false;
     currentLineIdx = -1;
     clearHighlight();
     stopHighlightLoop();
-    updatePlayerState('stopped');
+    // Auto-advance to next chapter unless user explicitly stopped
+    if (userStopped) {
+      userStopped = false;
+      updatePlayerState('stopped');
+      return;
+    }
+    advanceToNextChapter();
   }
 
   function onAudioError(e) {
