@@ -213,12 +213,12 @@
     border-color: #889;
   }
 
-  /* Collapsed toolbar — smooth clip, no reflow stutter */
-  .toolbar-collapsed {
-    max-height: 70px !important;
-    overflow: hidden !important;
-    transition: max-height 0.2s ease;
-  }
+  /* Collapsed toolbar — hide book grid and panels, keep summary + controls */
+  .toolbar-collapsed .book-grid { display: none !important; }
+  .toolbar-collapsed #settings-panel { display: none !important; }
+  .toolbar-collapsed #nav-panel { display: none !important; }
+  .toolbar-collapsed #layers-panel { display: none !important; }
+  .toolbar-collapsed #background-panel { display: none !important; }
 
   /* Tap-to-toggle: fully hide toolbar */
   .toolbar-hidden {
@@ -229,6 +229,31 @@
   }
   #reading-toolbar {
     transition: transform 0.25s ease, opacity 0.2s ease;
+  }
+
+  /* First-visit toolbar hint */
+  .toolbar-hint {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(30, 35, 42, 0.92);
+    color: #bcc8d4;
+    font-size: 0.82em;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(100, 150, 200, 0.2);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  .toolbar-hint.visible { opacity: 1; }
+  body.light-mode .toolbar-hint {
+    background: rgba(240, 240, 240, 0.95);
+    color: #556;
+    border-color: rgba(90, 106, 122, 0.25);
   }
 
   .collapsed-summary {
@@ -271,25 +296,18 @@
   }
   .summary-home:active { opacity: 1; }
 
-  /* In collapsed mode, bring controls-row up right after the summary */
+  /* In collapsed mode, tighten controls-row spacing */
   .toolbar-collapsed .controls-row {
-    order: -1;
     border-top: none;
     padding-top: 0;
     padding-bottom: 6px;
   }
-  /* Hide gear and layers in collapsed mode — only show core controls */
+  /* Hide gear, guide, and layers in collapsed mode — only show core controls */
   .toolbar-collapsed .gear-btn,
   .toolbar-collapsed #guide-btn,
   .toolbar-collapsed #layers-pill {
     display: none;
   }
-  /* Push everything else down so it gets clipped */
-  .toolbar-collapsed .book-grid { order: 10; }
-  .toolbar-collapsed #settings-panel { order: 11; }
-  .toolbar-collapsed #nav-panel { order: 12; }
-  .toolbar-collapsed #layers-panel { order: 13; }
-  .toolbar-collapsed #background-panel { order: 14; }
 
   /* === SETTINGS PANEL === */
   .settings-panel {
@@ -3190,56 +3208,100 @@
     }, 300);
   });
 
-  // ---- SCROLL HANDLER (back-to-top + toolbar collapse) ----
+  // ════════════════════════════════════════════════════════════
+  // TOOLBAR STATE MACHINE (v2 — rewritten to eliminate oscillation)
+  //
+  // Three orthogonal states, each driven by ONE owner:
+  //   1. COLLAPSED  (scroll-driven)   — book grid hidden, summary+controls visible
+  //   2. HIDDEN     (tap-driven)      — entire toolbar off-screen
+  //   3. SHOW-SUMMARY (manual expand) — full toolbar + summary bar, with grace period
+  //
+  // Key fix: collapse uses display:none (not max-height/overflow), so no
+  // layout-shift feedback loop. Manual expand gets a scroll-distance grace
+  // period instead of permanent immunity.
+  // ════════════════════════════════════════════════════════════
+
   var backBtn = document.getElementById('back-to-top');
   var toolbar = document.getElementById('reading-toolbar');
-  var lastScrollY = 0;
   var scrollTicking = false;
-  var scrollDeadZone = 20; // ignore jitter smaller than this (increased to prevent stutter)
-  var collapseDisabledUntil = 0; // timestamp — ignore collapse logic until this time
-  var lastCollapseState = false; // track last state to add cooldown on transitions
+  var collapseDisabledUntil = 0; // timestamp — pause collapse logic briefly
+  var manualExpandScrollY = -1;  // scrollY when user manually expanded; -1 = not active
+  var COLLAPSE_THRESHOLD = 80;   // scrollY above which toolbar collapses
+  var EXPAND_THRESHOLD = 30;     // scrollY below which toolbar fully expands
+  var GRACE_DISTANCE = 150;      // how far user can scroll before manual expand auto-collapses
 
   window.addEventListener('scroll', function() {
-    if (!scrollTicking) {
-      requestAnimationFrame(function() {
-        var y = window.scrollY;
-        // Back-to-top button (scroll-driven visibility still applies)
-        backBtn.style.display = y > 600 ? 'flex' : 'none';
-        // Toolbar collapse into compact mode when scrolled down (purely visual)
-        // But do NOT change toolbar-hidden state — that's tap-driven only
-        // Skip collapse logic entirely if toolbar is hidden by tap
-        // Also skip if collapse is paused (e.g., after panel toggle)
-        if (!toolbar.classList.contains('toolbar-hidden') && Date.now() > collapseDisabledUntil) {
-          var isCollapsed = toolbar.classList.contains('toolbar-collapsed');
-          var isManuallyExpanded = toolbar.classList.contains('toolbar-show-summary');
-          // Hysteresis: collapse at 80px, but only expand back at 30px.
-          // This prevents a layout-shift feedback loop where collapsing the
-          // toolbar changes content position, bouncing scrollY back and forth.
-          // Skip auto-collapse if user manually expanded via ↑ arrow or summary tap
-          if (isCollapsed && y <= 30) {
-            toolbar.classList.remove('toolbar-collapsed');
-            toolbar.classList.remove('toolbar-show-summary');
-          } else if (!isCollapsed && y > 80 && !isManuallyExpanded) {
-            toolbar.classList.add('toolbar-collapsed');
-          }
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(function() {
+      scrollTicking = false;
+      var y = window.scrollY;
+
+      // Back-to-top button
+      backBtn.style.display = y > 600 ? 'flex' : 'none';
+
+      // Skip collapse logic if toolbar is hidden (tap-driven) or paused
+      if (toolbar.classList.contains('toolbar-hidden')) return;
+      if (Date.now() < collapseDisabledUntil) return;
+
+      var isCollapsed = toolbar.classList.contains('toolbar-collapsed');
+      var isManualExpand = toolbar.classList.contains('toolbar-show-summary');
+
+      // Near top of page: always fully expand, clear all states
+      if (y <= EXPAND_THRESHOLD) {
+        if (isCollapsed || isManualExpand) {
+          toolbar.classList.remove('toolbar-collapsed', 'toolbar-show-summary');
+          manualExpandScrollY = -1;
         }
-        lastScrollY = y;
-        scrollTicking = false;
-      });
-      scrollTicking = true;
-    }
+        return;
+      }
+
+      // Below collapse threshold
+      if (y > COLLAPSE_THRESHOLD) {
+        if (isManualExpand) {
+          // User manually expanded — collapse after they've scrolled far enough
+          if (manualExpandScrollY >= 0 && Math.abs(y - manualExpandScrollY) > GRACE_DISTANCE) {
+            toolbar.classList.add('toolbar-collapsed');
+            toolbar.classList.remove('toolbar-show-summary');
+            manualExpandScrollY = -1;
+            closeAllPanels();
+          }
+          // Otherwise, leave it expanded (within grace period)
+        } else if (!isCollapsed) {
+          // Normal auto-collapse
+          toolbar.classList.add('toolbar-collapsed');
+        }
+      }
+    });
   }, { passive: true });
 
   // Pause collapse logic briefly (call before toggling panels that change page height)
   function pauseCollapse() { collapseDisabledUntil = Date.now() + 600; }
 
+  // Helper: expand toolbar from collapsed state (used by ↑ arrow and summary bar)
+  function manualExpand() {
+    pauseCollapse();
+    toolbar.classList.remove('toolbar-collapsed');
+    if (window.scrollY > COLLAPSE_THRESHOLD) {
+      toolbar.classList.add('toolbar-show-summary');
+      manualExpandScrollY = window.scrollY;
+    }
+  }
+
+  // Helper: collapse toolbar (used by summary bar toggle)
+  function manualCollapse() {
+    pauseCollapse();
+    toolbar.classList.add('toolbar-collapsed');
+    toolbar.classList.remove('toolbar-show-summary');
+    manualExpandScrollY = -1;
+    closeAllPanels();
+  }
+
   // ── Touch tracking: distinguish taps from scroll gestures on mobile ──
   var touchStartX = 0, touchStartY = 0, touchMoved = false;
-  var touchStartScrollY = 0;
   document.addEventListener('touchstart', function(e) {
     touchStartX = e.touches[0].clientX;
     touchStartY = e.touches[0].clientY;
-    touchStartScrollY = window.scrollY;
     touchMoved = false;
   }, { passive: true });
   document.addEventListener('touchmove', function(e) {
@@ -3250,62 +3312,51 @@
   }, { passive: true });
 
   // ── Toolbar drag gestures ──
-  // Only handle a strong, intentional drag-down from the toolbar (top 60px of viewport).
-  // This scrolls to the title banner from anywhere in a chapter.
-  // Weak/slow gestures are left to the normal scroll handler to avoid bugginess.
+  // Strong drag-down from toolbar zone → scroll to top and fully expand
   document.addEventListener('touchend', function(e) {
-    if (touchStartY >= 60) return; // only handle gestures starting in toolbar zone
+    if (touchStartY >= 60) return;
     var dy = e.changedTouches[0].clientY - touchStartY;
     if (dy > 120) {
-      // Strong drag DOWN → scroll to top / reveal title banner
       pauseCollapse();
-      toolbar.classList.remove('toolbar-collapsed');
-      toolbar.classList.remove('toolbar-show-summary');
+      toolbar.classList.remove('toolbar-collapsed', 'toolbar-show-summary');
+      manualExpandScrollY = -1;
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, { passive: true });
 
-  // Tap the ↑ arrow in the summary bar — expand toolbar only (stay at current position)
+  // Tap the ↑ arrow — expand toolbar, stay at current scroll position
   document.getElementById('summary-home').addEventListener('click', function(e) {
-    e.stopPropagation(); // don't trigger summary bar toggle
+    e.stopPropagation();
     if (touchMoved) return;
-    pauseCollapse();
-    toolbar.classList.remove('toolbar-collapsed');
-    if (window.scrollY > 80) toolbar.classList.add('toolbar-show-summary');
+    manualExpand();
   });
 
-  // Tap the summary bar — if toolbar is hidden, show it; otherwise toggle expand/collapse
+  // Tap the summary bar — toggle expand/collapse (or reveal if hidden)
   document.getElementById('collapsed-summary').addEventListener('click', function(e) {
-    e.stopPropagation(); // don't trigger the content-area toggle
-    if (touchMoved) return; // ignore scroll gestures
+    e.stopPropagation();
+    if (touchMoved) return;
     if (toolbar.classList.contains('toolbar-hidden')) {
-      // Reveal the toolbar
+      // Unhide and set correct collapse state for current scroll position
       toolbar.classList.remove('toolbar-hidden');
+      if (window.scrollY > COLLAPSE_THRESHOLD) {
+        toolbar.classList.add('toolbar-collapsed');
+        toolbar.classList.remove('toolbar-show-summary');
+      }
       return;
     }
     if (toolbar.classList.contains('toolbar-collapsed')) {
-      // Expand to full toolbar
-      toolbar.classList.remove('toolbar-collapsed');
-      if (window.scrollY > 80) toolbar.classList.add('toolbar-show-summary');
-      pauseCollapse();
-    } else if (window.scrollY > 80) {
-      // Re-collapse
-      toolbar.classList.add('toolbar-collapsed');
-      toolbar.classList.remove('toolbar-show-summary');
-      closeAllPanels();
-      pauseCollapse();
+      manualExpand();
+    } else if (window.scrollY > COLLAPSE_THRESHOLD) {
+      manualCollapse();
     }
   });
 
   // ── Tap-to-toggle: tap content area to hide/show toolbar ──
   document.getElementById('scripture-content').addEventListener('click', function(e) {
-    // Ignore scroll gestures on mobile (touchmove > 10px)
     if (touchMoved) return;
-    // Don't toggle if user tapped a link, button, or interactive element
     if (e.target.closest('a, button, .verse-num, .swap, .gloss-trigger, .quote-allusion')) return;
-    // Don't toggle if narration is active and user clicked a line (click-to-seek)
     if (typeof NARRATION !== 'undefined' && NARRATION.isPlaying && e.target.closest('.line, .line-para')) return;
-    // Don't toggle if a panel is open — close it instead
+    // If a panel is open, close it instead of toggling toolbar
     var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
       var el = document.getElementById(id);
       return el && el.style.display === 'block';
@@ -3315,9 +3366,48 @@
       pauseCollapse();
       return;
     }
-    // Toggle toolbar visibility (class is source of truth)
-    toolbar.classList.toggle('toolbar-hidden');
+    if (toolbar.classList.contains('toolbar-hidden')) {
+      // Unhide — set correct state for current scroll position
+      toolbar.classList.remove('toolbar-hidden');
+      if (window.scrollY > COLLAPSE_THRESHOLD) {
+        toolbar.classList.add('toolbar-collapsed');
+        toolbar.classList.remove('toolbar-show-summary');
+      } else {
+        toolbar.classList.remove('toolbar-collapsed', 'toolbar-show-summary');
+      }
+      manualExpandScrollY = -1;
+    } else {
+      // Hide the toolbar
+      toolbar.classList.add('toolbar-hidden');
+    }
   });
+
+  // ── First-visit toolbar hint ──
+  // Show a brief hint the first time the toolbar collapses, so new users
+  // know they can tap the text to hide/show it.
+  (function() {
+    var HINT_KEY = 'bom-toolbar-hint-shown';
+    if (localStorage.getItem(HINT_KEY)) return; // already shown once
+    var hintEl = document.createElement('div');
+    hintEl.className = 'toolbar-hint';
+    hintEl.textContent = 'Tap the text area to hide or show the toolbar';
+    document.body.appendChild(hintEl);
+    // Watch for the first collapse event
+    var observer = new MutationObserver(function(mutations) {
+      for (var i = 0; i < mutations.length; i++) {
+        if (toolbar.classList.contains('toolbar-collapsed')) {
+          observer.disconnect();
+          // Show hint briefly
+          setTimeout(function() { hintEl.classList.add('visible'); }, 300);
+          setTimeout(function() { hintEl.classList.remove('visible'); }, 4500);
+          setTimeout(function() { hintEl.remove(); }, 5200);
+          localStorage.setItem(HINT_KEY, '1');
+          return;
+        }
+      }
+    });
+    observer.observe(toolbar, { attributes: true, attributeFilter: ['class'] });
+  })();
 
   // Click-outside-to-dismiss for dropdown panels (layers, nav, background, settings)
   // This catches clicks anywhere on the page that are NOT inside an open panel or its toggle button
