@@ -262,6 +262,14 @@
     opacity: 0.4;
     margin-right: 4px;
   }
+  .summary-home {
+    display: inline-block;
+    padding: 0 8px 0 2px;
+    opacity: 0.5;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+  .summary-home:active { opacity: 1; }
 
   /* In collapsed mode, bring controls-row up right after the summary */
   .toolbar-collapsed .controls-row {
@@ -1747,7 +1755,7 @@
 <!-- Floating toolbar -->
 <div id="reading-toolbar">
   <!-- Collapsed summary bar (shown when toolbar is collapsed on scroll) -->
-  <div class="collapsed-summary" id="collapsed-summary"></div>
+  <div class="collapsed-summary" id="collapsed-summary"><span class="summary-home" id="summary-home" title="Scroll to top">↑</span> <span id="summary-text"></span></div>
 
   <!-- Book grid -->
   <div class="book-grid" id="book-grid">
@@ -2809,7 +2817,8 @@
     var meta = bookMeta[bookId];
     var abbr = meta ? (meta.abbr || meta.name) : bookId;
     var summary = document.getElementById('collapsed-summary');
-    if (summary) summary.textContent = abbr + ' ' + ch;
+    var summaryText = document.getElementById('summary-text');
+    if (summaryText) summaryText.textContent = abbr + ' ' + ch;
   }
 
   // ---- UI TOGGLES ----
@@ -3131,19 +3140,31 @@
     if (dx > 10 || dy > 10) touchMoved = true;
   }, { passive: true });
 
-  // ── Extended drag-down from toolbar: scroll to title banner from anywhere ──
-  // If user starts a downward drag from the toolbar area (top ~60px of viewport)
-  // and drags down more than 100px, scroll to very top to reveal the title banner.
+  // ── Toolbar drag gestures ──
+  // Only handle a strong, intentional drag-down from the toolbar (top 60px of viewport).
+  // This scrolls to the title banner from anywhere in a chapter.
+  // Weak/slow gestures are left to the normal scroll handler to avoid bugginess.
   document.addEventListener('touchend', function(e) {
+    if (touchStartY >= 60) return; // only handle gestures starting in toolbar zone
     var dy = e.changedTouches[0].clientY - touchStartY;
-    // Only trigger if drag started in the toolbar zone (top 60px of viewport)
-    if (dy > 100 && touchStartY < 60) {
+    if (dy > 120) {
+      // Strong drag DOWN → scroll to top / reveal title banner
       pauseCollapse();
       toolbar.classList.remove('toolbar-collapsed');
       toolbar.classList.remove('toolbar-show-summary');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, { passive: true });
+
+  // Tap the ↑ arrow in the summary bar — scroll to title banner
+  document.getElementById('summary-home').addEventListener('click', function(e) {
+    e.stopPropagation(); // don't trigger summary bar toggle
+    if (touchMoved) return;
+    pauseCollapse();
+    toolbar.classList.remove('toolbar-collapsed');
+    toolbar.classList.remove('toolbar-show-summary');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
   // Tap the summary bar — if toolbar is hidden, show it; otherwise toggle expand/collapse
   document.getElementById('collapsed-summary').addEventListener('click', function(e) {
