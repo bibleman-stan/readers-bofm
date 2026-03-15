@@ -1,0 +1,976 @@
+{
+  "book": "1nephi",
+  "bookName": "1 Nephi",
+  "chapter": 3,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 359.985,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.483,
+      "type": "line",
+      "text": "And then I, Nephi, returned from speaking with the Lord,",
+      "verse": "3:1",
+      "lineIndex": 0
+    },
+    {
+      "start": 3.663,
+      "end": 5.288,
+      "type": "line",
+      "text": "to the tent of my father.",
+      "verse": "3:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.968,
+      "end": 8.244,
+      "type": "line",
+      "text": "And then he spoke to me, saying:",
+      "verse": "3:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 8.424,
+      "end": 10.7,
+      "type": "line",
+      "text": "Behold I have dreamed a dream,",
+      "verse": "3:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 10.88,
+      "end": 13.295,
+      "type": "line",
+      "text": "in the which the Lord has commanded me",
+      "verse": "3:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 13.475,
+      "end": 16.772,
+      "type": "line",
+      "text": "that you and your brothers shall return to Jerusalem.",
+      "verse": "3:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 17.452,
+      "end": 20.238,
+      "type": "line",
+      "text": "For behold, Laban has the record of the Jews",
+      "verse": "3:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 20.418,
+      "end": 23.204,
+      "type": "line",
+      "text": "and also a genealogy of my forefathers,",
+      "verse": "3:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 23.384,
+      "end": 26.124,
+      "type": "line",
+      "text": "and they are engraved upon plates of brass.",
+      "verse": "3:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 26.804,
+      "end": 28.708,
+      "type": "line",
+      "text": "So, the Lord has commanded me",
+      "verse": "3:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 28.888,
+      "end": 32.464,
+      "type": "line",
+      "text": "that you and your brothers should go to the house of Laban,",
+      "verse": "3:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 32.644,
+      "end": 34.13,
+      "type": "line",
+      "text": "and seek the records,",
+      "verse": "3:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 34.31,
+      "end": 36.911,
+      "type": "line",
+      "text": "and bring them down here into the wilderness.",
+      "verse": "3:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 37.591,
+      "end": 40.052,
+      "type": "line",
+      "text": "And now, behold your brothers complain,",
+      "verse": "3:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 40.232,
+      "end": 43.761,
+      "type": "line",
+      "text": "saying it is a hard thing which I have required of them;",
+      "verse": "3:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 43.941,
+      "end": 46.449,
+      "type": "line",
+      "text": "but behold I have not required it of them,",
+      "verse": "3:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 46.629,
+      "end": 49.276,
+      "type": "line",
+      "text": "but it is a commandment of the Lord.",
+      "verse": "3:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 49.956,
+      "end": 51.489,
+      "type": "line",
+      "text": "Therefore go, my son,",
+      "verse": "3:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 51.669,
+      "end": 54.037,
+      "type": "line",
+      "text": "and you shall be favored of the Lord,",
+      "verse": "3:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 54.217,
+      "end": 56.307,
+      "type": "line",
+      "text": "because you have not complained.",
+      "verse": "3:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 56.987,
+      "end": 59.309,
+      "type": "line",
+      "text": "And then I, Nephi, said to my father:",
+      "verse": "3:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 59.489,
+      "end": 63.158,
+      "type": "line",
+      "text": "I will go and do the things which the Lord has commanded,",
+      "verse": "3:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 63.338,
+      "end": 67.425,
+      "type": "line",
+      "text": "for I know that the Lord gives no commandments to the children of men,",
+      "verse": "3:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 67.605,
+      "end": 70.206,
+      "type": "line",
+      "text": "save he shall prepare a way for them",
+      "verse": "3:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 70.386,
+      "end": 74.008,
+      "type": "line",
+      "text": "that they may accomplish the thing which he commands them.",
+      "verse": "3:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 74.688,
+      "end": 77.149,
+      "type": "line",
+      "text": "And then when my father had heard these words",
+      "verse": "3:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 77.329,
+      "end": 78.769,
+      "type": "line",
+      "text": "he was very glad,",
+      "verse": "3:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 78.949,
+      "end": 81.968,
+      "type": "line",
+      "text": "for he knew that I had been blessed of the Lord.",
+      "verse": "3:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 82.648,
+      "end": 86.874,
+      "type": "line",
+      "text": "And I, Nephi, and my brothers took our journey in the wilderness,",
+      "verse": "3:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 87.054,
+      "end": 88.633,
+      "type": "line",
+      "text": "with our tents,",
+      "verse": "3:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 88.813,
+      "end": 90.903,
+      "type": "line",
+      "text": "to go up to the land of Jerusalem.",
+      "verse": "3:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 91.583,
+      "end": 94.694,
+      "type": "line",
+      "text": "And then when we had gone up to the land of Jerusalem,",
+      "verse": "3:10",
+      "lineIndex": 34
+    },
+    {
+      "start": 94.874,
+      "end": 97.614,
+      "type": "line",
+      "text": "I and my brothers consulted one with another.",
+      "verse": "3:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 98.294,
+      "end": 99.548,
+      "type": "line",
+      "text": "And we cast lots\u2014",
+      "verse": "3:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 99.728,
+      "end": 102.282,
+      "type": "line",
+      "text": "who of us should go in to the house of Laban.",
+      "verse": "3:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 102.462,
+      "end": 104.738,
+      "type": "line",
+      "text": "And then the lot fell upon Laman;",
+      "verse": "3:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 104.918,
+      "end": 107.519,
+      "type": "line",
+      "text": "and Laman went in to the house of Laban,",
+      "verse": "3:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 107.699,
+      "end": 110.857,
+      "type": "line",
+      "text": "and he talked with him as he sat in his house.",
+      "verse": "3:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 111.537,
+      "end": 114.184,
+      "type": "line",
+      "text": "And he desired of Laban the records",
+      "verse": "3:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 114.364,
+      "end": 117.383,
+      "type": "line",
+      "text": "which were engraved upon the plates of brass,",
+      "verse": "3:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 117.563,
+      "end": 120.489,
+      "type": "line",
+      "text": "which contained the genealogy of my father.",
+      "verse": "3:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 121.169,
+      "end": 123.63,
+      "type": "line",
+      "text": "And behold, then Laban was angry,",
+      "verse": "3:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 123.81,
+      "end": 126.086,
+      "type": "line",
+      "text": "and thrust him out from his presence;",
+      "verse": "3:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 126.266,
+      "end": 129.47,
+      "type": "line",
+      "text": "and he would not that he should have the records.",
+      "verse": "3:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 129.65,
+      "end": 131.322,
+      "type": "line",
+      "text": "So, he said to him:",
+      "verse": "3:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 131.502,
+      "end": 134.149,
+      "type": "line",
+      "text": "Behold you are a robber, and I will kill you.",
+      "verse": "3:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 134.829,
+      "end": 137.244,
+      "type": "line",
+      "text": "But Laman fled out of his presence,",
+      "verse": "3:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 137.424,
+      "end": 140.582,
+      "type": "line",
+      "text": "and told the things which Laban had done, to us.",
+      "verse": "3:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 140.762,
+      "end": 142.991,
+      "type": "line",
+      "text": "And we began to be very sorrowful,",
+      "verse": "3:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 143.171,
+      "end": 147.072,
+      "type": "line",
+      "text": "and my brothers were about to return to my father in the wilderness.",
+      "verse": "3:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 147.752,
+      "end": 149.981,
+      "type": "line",
+      "text": "But behold I said to them that:",
+      "verse": "3:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 150.161,
+      "end": 151.461,
+      "type": "line",
+      "text": "As the Lord lives,",
+      "verse": "3:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 151.641,
+      "end": 153.081,
+      "type": "line",
+      "text": "and as we live,",
+      "verse": "3:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 153.261,
+      "end": 156.976,
+      "type": "line",
+      "text": "we will not go down to our father in the wilderness",
+      "verse": "3:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 157.156,
+      "end": 160.825,
+      "type": "line",
+      "text": "until we have accomplished the thing which the Lord has commanded us.",
+      "verse": "3:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 161.505,
+      "end": 163.13,
+      "type": "line",
+      "text": "So, let us be faithful",
+      "verse": "3:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 163.31,
+      "end": 165.493,
+      "type": "line",
+      "text": "in keeping the commandments of the Lord;",
+      "verse": "3:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 165.673,
+      "end": 170.085,
+      "type": "line",
+      "text": "therefore let us go down to the land of our father's inheritance,",
+      "verse": "3:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 170.265,
+      "end": 172.541,
+      "type": "line",
+      "text": "for behold he left gold and silver,",
+      "verse": "3:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 172.721,
+      "end": 174.486,
+      "type": "line",
+      "text": "and all manner of riches.",
+      "verse": "3:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 174.666,
+      "end": 178.567,
+      "type": "line",
+      "text": "And all this he has done because of the commandments of the Lord.",
+      "verse": "3:16",
+      "lineIndex": 64
+    },
+    {
+      "start": 179.247,
+      "end": 181.987,
+      "type": "line",
+      "text": "For he knew that Jerusalem must be destroyed,",
+      "verse": "3:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 182.167,
+      "end": 184.396,
+      "type": "line",
+      "text": "because of the wickedness of the people.",
+      "verse": "3:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 185.076,
+      "end": 188.141,
+      "type": "line",
+      "text": "For behold, they have rejected the words of the prophets.",
+      "verse": "3:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 188.321,
+      "end": 190.643,
+      "type": "line",
+      "text": "So, if my father should dwell in the land",
+      "verse": "3:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 190.823,
+      "end": 193.934,
+      "type": "line",
+      "text": "after he has been commanded to flee out of the land,",
+      "verse": "3:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 194.114,
+      "end": 196.343,
+      "type": "line",
+      "text": "behold, he would also perish.",
+      "verse": "3:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 196.523,
+      "end": 199.82,
+      "type": "line",
+      "text": "So, it must needs be that he flee out of the land.",
+      "verse": "3:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 200.5,
+      "end": 205.608,
+      "type": "line",
+      "text": "And behold, it is wisdom in God that we should obtain these records,",
+      "verse": "3:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 205.788,
+      "end": 210.014,
+      "type": "line",
+      "text": "that we may preserve to our children the language of our fathers;",
+      "verse": "3:19",
+      "lineIndex": 73
+    },
+    {
+      "start": 210.694,
+      "end": 213.852,
+      "type": "line",
+      "text": "And also that we may preserve to them the words",
+      "verse": "3:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 214.032,
+      "end": 217.422,
+      "type": "line",
+      "text": "which have been spoken by the mouth of all the holy prophets,",
+      "verse": "3:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 217.602,
+      "end": 221.967,
+      "type": "line",
+      "text": "which have been delivered to them by the Spirit and power of God,",
+      "verse": "3:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 222.147,
+      "end": 223.819,
+      "type": "line",
+      "text": "since the world began,",
+      "verse": "3:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 223.999,
+      "end": 225.857,
+      "type": "line",
+      "text": "even down to this present time.",
+      "verse": "3:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 226.537,
+      "end": 229.927,
+      "type": "line",
+      "text": "And then after this manner of language did I persuade my brothers,",
+      "verse": "3:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 230.107,
+      "end": 233.683,
+      "type": "line",
+      "text": "they might be faithful in keeping the commandments of God.",
+      "verse": "3:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 234.363,
+      "end": 237.567,
+      "type": "line",
+      "text": "And then we went down to the land of our inheritance,",
+      "verse": "3:22",
+      "lineIndex": 82
+    },
+    {
+      "start": 237.747,
+      "end": 240.812,
+      "type": "line",
+      "text": "and we gathered together our gold, and our silver,",
+      "verse": "3:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 240.992,
+      "end": 242.617,
+      "type": "line",
+      "text": "and our precious things.",
+      "verse": "3:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 243.297,
+      "end": 245.944,
+      "type": "line",
+      "text": "And after we had gathered these things together,",
+      "verse": "3:23",
+      "lineIndex": 85
+    },
+    {
+      "start": 246.124,
+      "end": 248.353,
+      "type": "line",
+      "text": "we went up again to the house of Laban.",
+      "verse": "3:23",
+      "lineIndex": 86
+    },
+    {
+      "start": 249.033,
+      "end": 252.237,
+      "type": "line",
+      "text": "And then we went in to Laban, and desired him",
+      "verse": "3:24",
+      "lineIndex": 87
+    },
+    {
+      "start": 252.417,
+      "end": 254.971,
+      "type": "line",
+      "text": "that he would give to us the records",
+      "verse": "3:24",
+      "lineIndex": 88
+    },
+    {
+      "start": 255.151,
+      "end": 258.17,
+      "type": "line",
+      "text": "which were engraved upon the plates of brass,",
+      "verse": "3:24",
+      "lineIndex": 89
+    },
+    {
+      "start": 258.35,
+      "end": 261.926,
+      "type": "line",
+      "text": "for which we would give to him our gold, and our silver,",
+      "verse": "3:24",
+      "lineIndex": 90
+    },
+    {
+      "start": 262.106,
+      "end": 263.964,
+      "type": "line",
+      "text": "and all our precious things.",
+      "verse": "3:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 264.644,
+      "end": 267.245,
+      "type": "line",
+      "text": "And then when Laban saw our property,",
+      "verse": "3:25",
+      "lineIndex": 92
+    },
+    {
+      "start": 267.425,
+      "end": 270.397,
+      "type": "line",
+      "text": "and that it was very great, he did desire it,",
+      "verse": "3:25",
+      "lineIndex": 93
+    },
+    {
+      "start": 270.577,
+      "end": 272.945,
+      "type": "line",
+      "text": "so much so that he thrust us out,",
+      "verse": "3:25",
+      "lineIndex": 94
+    },
+    {
+      "start": 273.125,
+      "end": 275.215,
+      "type": "line",
+      "text": "and sent his servants to kill us,",
+      "verse": "3:25",
+      "lineIndex": 95
+    },
+    {
+      "start": 275.395,
+      "end": 277.624,
+      "type": "line",
+      "text": "that he might obtain our property.",
+      "verse": "3:25",
+      "lineIndex": 96
+    },
+    {
+      "start": 278.304,
+      "end": 281.183,
+      "type": "line",
+      "text": "And then we fled before the servants of Laban,",
+      "verse": "3:26",
+      "lineIndex": 97
+    },
+    {
+      "start": 281.363,
+      "end": 284.66,
+      "type": "line",
+      "text": "and we were obliged to leave behind our property,",
+      "verse": "3:26",
+      "lineIndex": 98
+    },
+    {
+      "start": 284.84,
+      "end": 287.208,
+      "type": "line",
+      "text": "and it fell into the hands of Laban.",
+      "verse": "3:26",
+      "lineIndex": 99
+    },
+    {
+      "start": 287.888,
+      "end": 290.349,
+      "type": "line",
+      "text": "And then we fled into the wilderness,",
+      "verse": "3:27",
+      "lineIndex": 100
+    },
+    {
+      "start": 290.529,
+      "end": 293.687,
+      "type": "line",
+      "text": "and the servants of Laban did not overtake us,",
+      "verse": "3:27",
+      "lineIndex": 101
+    },
+    {
+      "start": 293.867,
+      "end": 296.607,
+      "type": "line",
+      "text": "and we hid ourselves in the cavity of a rock.",
+      "verse": "3:27",
+      "lineIndex": 102
+    },
+    {
+      "start": 297.287,
+      "end": 299.563,
+      "type": "line",
+      "text": "And then Laman was angry with me,",
+      "verse": "3:28",
+      "lineIndex": 104
+    },
+    {
+      "start": 299.743,
+      "end": 301.461,
+      "type": "line",
+      "text": "and also with my father;",
+      "verse": "3:28",
+      "lineIndex": 105
+    },
+    {
+      "start": 301.641,
+      "end": 303.359,
+      "type": "line",
+      "text": "and also was Lemuel,",
+      "verse": "3:28",
+      "lineIndex": 106
+    },
+    {
+      "start": 303.539,
+      "end": 306.047,
+      "type": "line",
+      "text": "for he listened to the words of Laman.",
+      "verse": "3:28",
+      "lineIndex": 107
+    },
+    {
+      "start": 306.227,
+      "end": 309.756,
+      "type": "line",
+      "text": "So Laman and Lemuel spoke many hard words to us,",
+      "verse": "3:28",
+      "lineIndex": 108
+    },
+    {
+      "start": 309.936,
+      "end": 311.515,
+      "type": "line",
+      "text": "their younger brothers,",
+      "verse": "3:28",
+      "lineIndex": 109
+    },
+    {
+      "start": 311.695,
+      "end": 314.11,
+      "type": "line",
+      "text": "and they struck us even with a rod.",
+      "verse": "3:28",
+      "lineIndex": 110
+    },
+    {
+      "start": 314.79,
+      "end": 317.205,
+      "type": "line",
+      "text": "And then as they struck us with a rod,",
+      "verse": "3:29",
+      "lineIndex": 111
+    },
+    {
+      "start": 317.385,
+      "end": 320.775,
+      "type": "line",
+      "text": "behold, an angel of the Lord came and stood before them,",
+      "verse": "3:29",
+      "lineIndex": 112
+    },
+    {
+      "start": 320.955,
+      "end": 322.813,
+      "type": "line",
+      "text": "and he spoke to them, saying:",
+      "verse": "3:29",
+      "lineIndex": 113
+    },
+    {
+      "start": 322.993,
+      "end": 326.012,
+      "type": "line",
+      "text": "Why do you strike your younger brother with a rod?",
+      "verse": "3:29",
+      "lineIndex": 114
+    },
+    {
+      "start": 326.192,
+      "end": 330.186,
+      "type": "line",
+      "text": "Know you not that the Lord has chosen him to be a ruler over you,",
+      "verse": "3:29",
+      "lineIndex": 115
+    },
+    {
+      "start": 330.366,
+      "end": 332.688,
+      "type": "line",
+      "text": "and this because of your iniquities?",
+      "verse": "3:29",
+      "lineIndex": 116
+    },
+    {
+      "start": 332.868,
+      "end": 335.515,
+      "type": "line",
+      "text": "Behold you shall go up to Jerusalem again,",
+      "verse": "3:29",
+      "lineIndex": 117
+    },
+    {
+      "start": 335.695,
+      "end": 338.481,
+      "type": "line",
+      "text": "and the Lord will deliver Laban into your hands.",
+      "verse": "3:29",
+      "lineIndex": 118
+    },
+    {
+      "start": 339.161,
+      "end": 342.18,
+      "type": "line",
+      "text": "And after the angel had spoken to us, he departed.",
+      "verse": "3:30",
+      "lineIndex": 119
+    },
+    {
+      "start": 342.86,
+      "end": 345.089,
+      "type": "line",
+      "text": "And after the angel had departed,",
+      "verse": "3:31",
+      "lineIndex": 120
+    },
+    {
+      "start": 345.269,
+      "end": 348.334,
+      "type": "line",
+      "text": "Laman and Lemuel again began to complain, saying:",
+      "verse": "3:31",
+      "lineIndex": 121
+    },
+    {
+      "start": 348.514,
+      "end": 352.369,
+      "type": "line",
+      "text": "How is it possible that the Lord will deliver Laban into our hands?",
+      "verse": "3:31",
+      "lineIndex": 122
+    },
+    {
+      "start": 352.549,
+      "end": 355.893,
+      "type": "line",
+      "text": "Behold, he is a mighty man, and he can command fifty,",
+      "verse": "3:31",
+      "lineIndex": 123
+    },
+    {
+      "start": 356.073,
+      "end": 359.324,
+      "type": "line",
+      "text": "indeed, even he can kill fifty; then why not us?",
+      "verse": "3:31",
+      "lineIndex": 124
+    }
+  ]
+}

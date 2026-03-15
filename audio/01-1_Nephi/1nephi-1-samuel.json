@@ -1,0 +1,928 @@
+{
+  "book": "1nephi",
+  "bookName": "1 Nephi",
+  "chapter": 1,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 324.243,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.158,
+      "type": "line",
+      "text": "I, Nephi, having been born of good parents,",
+      "verse": "1:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.338,
+      "end": 7.146,
+      "type": "line",
+      "text": "therefore I was taught somewhat in all the learning of my father;",
+      "verse": "1:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.326,
+      "end": 10.902,
+      "type": "line",
+      "text": "and having seen many hardships in the course of my days,",
+      "verse": "1:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.082,
+      "end": 14.658,
+      "type": "line",
+      "text": "but, having been highly favored of the Lord in all my days;",
+      "verse": "1:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 14.838,
+      "end": 19.064,
+      "type": "line",
+      "text": "yes, having had a great knowledge of the goodness and the mysteries of God,",
+      "verse": "1:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.244,
+      "end": 22.588,
+      "type": "line",
+      "text": "therefore I make a record of my proceedings in my days.",
+      "verse": "1:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.268,
+      "end": 26.797,
+      "type": "line",
+      "text": "Indeed, I make a record in the language of my father,",
+      "verse": "1:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 26.977,
+      "end": 29.949,
+      "type": "line",
+      "text": "which consists of the learning of the Jews",
+      "verse": "1:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 30.129,
+      "end": 32.683,
+      "type": "line",
+      "text": "and the language of the Egyptians.",
+      "verse": "1:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 33.363,
+      "end": 36.242,
+      "type": "line",
+      "text": "And I know that the record which I make is true;",
+      "verse": "1:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 36.422,
+      "end": 38.465,
+      "type": "line",
+      "text": "and I make it with my own hand;",
+      "verse": "1:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 38.645,
+      "end": 40.874,
+      "type": "line",
+      "text": "and I make it according to my knowledge.",
+      "verse": "1:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 41.554,
+      "end": 44.248,
+      "type": "line",
+      "text": "For then in the beginning of the first year",
+      "verse": "1:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 44.428,
+      "end": 47.354,
+      "type": "line",
+      "text": "of the reign of Zedekiah, king of Judah,",
+      "verse": "1:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 47.534,
+      "end": 51.621,
+      "type": "line",
+      "text": "(my father, Lehi, having dwelt at Jerusalem in all his days);",
+      "verse": "1:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 51.801,
+      "end": 54.959,
+      "type": "line",
+      "text": "and in that same year there came many prophets,",
+      "verse": "1:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 55.139,
+      "end": 56.904,
+      "type": "line",
+      "text": "prophesying to the people",
+      "verse": "1:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 57.084,
+      "end": 58.617,
+      "type": "line",
+      "text": "that they must repent,",
+      "verse": "1:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 58.797,
+      "end": 61.816,
+      "type": "line",
+      "text": "or the great city Jerusalem must be destroyed.",
+      "verse": "1:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 62.496,
+      "end": 65.004,
+      "type": "line",
+      "text": "And so my father, Lehi, as he went forth",
+      "verse": "1:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 65.184,
+      "end": 66.531,
+      "type": "line",
+      "text": "prayed to the Lord,",
+      "verse": "1:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 66.711,
+      "end": 69.451,
+      "type": "line",
+      "text": "indeed, even with all his heart,",
+      "verse": "1:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 69.631,
+      "end": 71.117,
+      "type": "line",
+      "text": "in behalf of his people.",
+      "verse": "1:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 71.797,
+      "end": 73.84,
+      "type": "line",
+      "text": "And then as he prayed to the Lord,",
+      "verse": "1:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 74.02,
+      "end": 75.785,
+      "type": "line",
+      "text": "there came a pillar of fire",
+      "verse": "1:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 75.965,
+      "end": 78.38,
+      "type": "line",
+      "text": "and dwelt upon a rock before him;",
+      "verse": "1:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 78.56,
+      "end": 80.696,
+      "type": "line",
+      "text": "and he saw and heard much;",
+      "verse": "1:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 80.876,
+      "end": 84.034,
+      "type": "line",
+      "text": "and because of the things which he saw and heard",
+      "verse": "1:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 84.214,
+      "end": 86.257,
+      "type": "line",
+      "text": "he quaked and tremble greatly.",
+      "verse": "1:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 86.937,
+      "end": 90.234,
+      "type": "line",
+      "text": "And then he returned to his own house at Jerusalem;",
+      "verse": "1:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 90.414,
+      "end": 92.643,
+      "type": "line",
+      "text": "and he cast himself upon his bed,",
+      "verse": "1:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 92.823,
+      "end": 94.913,
+      "type": "line",
+      "text": "being overcome with the Spirit",
+      "verse": "1:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 95.093,
+      "end": 97.276,
+      "type": "line",
+      "text": "and the things which he had seen.",
+      "verse": "1:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 97.956,
+      "end": 100.51,
+      "type": "line",
+      "text": "And being thus overcome with the Spirit,",
+      "verse": "1:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 100.69,
+      "end": 103.012,
+      "type": "line",
+      "text": "he was carried away in a vision,",
+      "verse": "1:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 103.192,
+      "end": 105.56,
+      "type": "line",
+      "text": "even that he saw the heavens open",
+      "verse": "1:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 105.74,
+      "end": 108.805,
+      "type": "line",
+      "text": "and he thought he saw God sitting upon his throne,",
+      "verse": "1:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 108.985,
+      "end": 111.864,
+      "type": "line",
+      "text": "surrounded with numberless crowds of angels",
+      "verse": "1:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 112.044,
+      "end": 115.388,
+      "type": "line",
+      "text": "in the attitude of singing and praising their God.",
+      "verse": "1:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 116.068,
+      "end": 117.554,
+      "type": "line",
+      "text": "And then he saw One",
+      "verse": "1:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 117.734,
+      "end": 120.428,
+      "type": "line",
+      "text": "descending out of the middle of heaven,",
+      "verse": "1:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 120.608,
+      "end": 122.558,
+      "type": "line",
+      "text": "and he saw that his brightness",
+      "verse": "1:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 122.738,
+      "end": 125.199,
+      "type": "line",
+      "text": "was above that of the sun at noon-day.",
+      "verse": "1:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 125.879,
+      "end": 128.433,
+      "type": "line",
+      "text": "And he also saw twelve others following him,",
+      "verse": "1:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 128.613,
+      "end": 132.096,
+      "type": "line",
+      "text": "and their brightness exceeded that of the stars in the sky.",
+      "verse": "1:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 132.776,
+      "end": 134.494,
+      "type": "line",
+      "text": "And they came down",
+      "verse": "1:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 134.674,
+      "end": 137.321,
+      "type": "line",
+      "text": "and went forth upon the face of the earth;",
+      "verse": "1:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 137.501,
+      "end": 139.08,
+      "type": "line",
+      "text": "and the first came",
+      "verse": "1:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 139.26,
+      "end": 141.118,
+      "type": "line",
+      "text": "and stood before my father,",
+      "verse": "1:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 141.298,
+      "end": 143.109,
+      "type": "line",
+      "text": "and gave to him a book,",
+      "verse": "1:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 143.289,
+      "end": 145.239,
+      "type": "line",
+      "text": "and told him that he should read.",
+      "verse": "1:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 145.919,
+      "end": 147.684,
+      "type": "line",
+      "text": "And then as he read,",
+      "verse": "1:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 147.864,
+      "end": 150.186,
+      "type": "line",
+      "text": "he was filled with the Spirit of the Lord.",
+      "verse": "1:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 150.866,
+      "end": 152.445,
+      "type": "line",
+      "text": "And he read, saying:",
+      "verse": "1:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 152.625,
+      "end": 154.297,
+      "type": "line",
+      "text": "Woe, woe, to Jerusalem,",
+      "verse": "1:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 154.477,
+      "end": 156.892,
+      "type": "line",
+      "text": "for I have seen your wicked practices!",
+      "verse": "1:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 157.072,
+      "end": 161.391,
+      "type": "line",
+      "text": "Indeed, and many things did my father read concerning Jerusalem\u2014",
+      "verse": "1:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 161.571,
+      "end": 163.336,
+      "type": "line",
+      "text": "that it should be destroyed,",
+      "verse": "1:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 163.516,
+      "end": 165.374,
+      "type": "line",
+      "text": "and the inhabitants of it;",
+      "verse": "1:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 165.554,
+      "end": 167.83,
+      "type": "line",
+      "text": "many should perish by the sword,",
+      "verse": "1:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 168.01,
+      "end": 171.261,
+      "type": "line",
+      "text": "and many should be carried away captive into Babylon.",
+      "verse": "1:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 171.941,
+      "end": 174.449,
+      "type": "line",
+      "text": "And then when my father had read and seen",
+      "verse": "1:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 174.629,
+      "end": 176.858,
+      "type": "line",
+      "text": "many great and marvelous things,",
+      "verse": "1:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 177.038,
+      "end": 179.685,
+      "type": "line",
+      "text": "he exclaimed many things to the Lord; such as:",
+      "verse": "1:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 179.865,
+      "end": 182.233,
+      "type": "line",
+      "text": "Great and marvelous are your works,",
+      "verse": "1:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 182.413,
+      "end": 184.085,
+      "type": "line",
+      "text": "O Lord God Almighty!",
+      "verse": "1:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 184.265,
+      "end": 186.448,
+      "type": "line",
+      "text": "Your throne is high in the heavens,",
+      "verse": "1:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 186.628,
+      "end": 187.882,
+      "type": "line",
+      "text": "and your power,",
+      "verse": "1:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 188.062,
+      "end": 189.223,
+      "type": "line",
+      "text": "and goodness,",
+      "verse": "1:14",
+      "lineIndex": 71
+    },
+    {
+      "start": 189.403,
+      "end": 190.61,
+      "type": "line",
+      "text": "and mercy",
+      "verse": "1:14",
+      "lineIndex": 72
+    },
+    {
+      "start": 190.79,
+      "end": 193.391,
+      "type": "line",
+      "text": "are over all the inhabitants of the earth;",
+      "verse": "1:14",
+      "lineIndex": 73
+    },
+    {
+      "start": 193.571,
+      "end": 195.614,
+      "type": "line",
+      "text": "and, because you are merciful,",
+      "verse": "1:14",
+      "lineIndex": 74
+    },
+    {
+      "start": 195.794,
+      "end": 199.602,
+      "type": "line",
+      "text": "you will not suffer those who come to you that they shall perish!",
+      "verse": "1:14",
+      "lineIndex": 75
+    },
+    {
+      "start": 200.282,
+      "end": 203.347,
+      "type": "line",
+      "text": "And after this manner was the language of my father",
+      "verse": "1:15",
+      "lineIndex": 76
+    },
+    {
+      "start": 203.527,
+      "end": 205.477,
+      "type": "line",
+      "text": "in the praising of his God;",
+      "verse": "1:15",
+      "lineIndex": 77
+    },
+    {
+      "start": 205.657,
+      "end": 207.19,
+      "type": "line",
+      "text": "for his soul rejoiced,",
+      "verse": "1:15",
+      "lineIndex": 78
+    },
+    {
+      "start": 207.37,
+      "end": 209.413,
+      "type": "line",
+      "text": "and his whole heart was filled,",
+      "verse": "1:15",
+      "lineIndex": 79
+    },
+    {
+      "start": 209.593,
+      "end": 211.869,
+      "type": "line",
+      "text": "because of the things which he had seen,",
+      "verse": "1:15",
+      "lineIndex": 80
+    },
+    {
+      "start": 212.049,
+      "end": 214.325,
+      "type": "line",
+      "text": "yes, which the Lord had shown to him.",
+      "verse": "1:15",
+      "lineIndex": 81
+    },
+    {
+      "start": 215.005,
+      "end": 220.392,
+      "type": "line",
+      "text": "And now I, Nephi, do not make a full account of the things which my father has written,",
+      "verse": "1:16",
+      "lineIndex": 82
+    },
+    {
+      "start": 220.572,
+      "end": 222.801,
+      "type": "line",
+      "text": "for he has written many things",
+      "verse": "1:16",
+      "lineIndex": 83
+    },
+    {
+      "start": 222.981,
+      "end": 225.489,
+      "type": "line",
+      "text": "which he saw in visions and in dreams;",
+      "verse": "1:16",
+      "lineIndex": 84
+    },
+    {
+      "start": 225.669,
+      "end": 228.037,
+      "type": "line",
+      "text": "and he also has written many things",
+      "verse": "1:16",
+      "lineIndex": 85
+    },
+    {
+      "start": 228.217,
+      "end": 231.05,
+      "type": "line",
+      "text": "which he prophesied and spoke to his children,",
+      "verse": "1:16",
+      "lineIndex": 86
+    },
+    {
+      "start": 231.23,
+      "end": 233.552,
+      "type": "line",
+      "text": "of which I shall not make a full record.",
+      "verse": "1:16",
+      "lineIndex": 87
+    },
+    {
+      "start": 234.232,
+      "end": 237.483,
+      "type": "line",
+      "text": "But I shall make a record of my proceedings in my days.",
+      "verse": "1:17",
+      "lineIndex": 88
+    },
+    {
+      "start": 237.663,
+      "end": 241.239,
+      "type": "line",
+      "text": "Behold, I make a summary of the record of my father,",
+      "verse": "1:17",
+      "lineIndex": 89
+    },
+    {
+      "start": 241.419,
+      "end": 244.763,
+      "type": "line",
+      "text": "upon plates which I have made with my own hands;",
+      "verse": "1:17",
+      "lineIndex": 90
+    },
+    {
+      "start": 244.943,
+      "end": 248.705,
+      "type": "line",
+      "text": "so, after I have summarized the record of my father",
+      "verse": "1:17",
+      "lineIndex": 91
+    },
+    {
+      "start": 248.885,
+      "end": 251.253,
+      "type": "line",
+      "text": "then will I make a record of my own life.",
+      "verse": "1:17",
+      "lineIndex": 92
+    },
+    {
+      "start": 251.933,
+      "end": 254.209,
+      "type": "line",
+      "text": "Therefore, I would that you should know",
+      "verse": "1:18",
+      "lineIndex": 94
+    },
+    {
+      "start": 254.389,
+      "end": 258.847,
+      "type": "line",
+      "text": "that after the Lord had shown so many marvelous things to my father, Lehi,",
+      "verse": "1:18",
+      "lineIndex": 95
+    },
+    {
+      "start": 259.027,
+      "end": 262.417,
+      "type": "line",
+      "text": "yes, concerning the destruction of Jerusalem,",
+      "verse": "1:18",
+      "lineIndex": 96
+    },
+    {
+      "start": 262.597,
+      "end": 264.78,
+      "type": "line",
+      "text": "behold he went forth among the people,",
+      "verse": "1:18",
+      "lineIndex": 97
+    },
+    {
+      "start": 264.96,
+      "end": 266.678,
+      "type": "line",
+      "text": "and began to prophesy",
+      "verse": "1:18",
+      "lineIndex": 98
+    },
+    {
+      "start": 266.858,
+      "end": 271.223,
+      "type": "line",
+      "text": "and to declare to them concerning the things which he had both seen and heard.",
+      "verse": "1:18",
+      "lineIndex": 99
+    },
+    {
+      "start": 271.903,
+      "end": 273.668,
+      "type": "line",
+      "text": "And then the Jews mocked him",
+      "verse": "1:19",
+      "lineIndex": 100
+    },
+    {
+      "start": 273.848,
+      "end": 277.006,
+      "type": "line",
+      "text": "because of the things which he testified of them;",
+      "verse": "1:19",
+      "lineIndex": 101
+    },
+    {
+      "start": 277.186,
+      "end": 282.341,
+      "type": "line",
+      "text": "for he truly testified of their wickedness and their wicked practices;",
+      "verse": "1:19",
+      "lineIndex": 102
+    },
+    {
+      "start": 282.521,
+      "end": 286.376,
+      "type": "line",
+      "text": "and he testified that the things which he saw and heard,",
+      "verse": "1:19",
+      "lineIndex": 103
+    },
+    {
+      "start": 286.556,
+      "end": 289.435,
+      "type": "line",
+      "text": "and also the things which he read in the book,",
+      "verse": "1:19",
+      "lineIndex": 104
+    },
+    {
+      "start": 289.615,
+      "end": 292.819,
+      "type": "line",
+      "text": "manifested plainly of the coming of a Messiah,",
+      "verse": "1:19",
+      "lineIndex": 105
+    },
+    {
+      "start": 292.999,
+      "end": 295.182,
+      "type": "line",
+      "text": "and also the redemption of the world.",
+      "verse": "1:19",
+      "lineIndex": 106
+    },
+    {
+      "start": 295.862,
+      "end": 299.763,
+      "type": "line",
+      "text": "And when the Jews heard these things they were angry with him;",
+      "verse": "1:20",
+      "lineIndex": 107
+    },
+    {
+      "start": 299.943,
+      "end": 302.637,
+      "type": "line",
+      "text": "indeed, even as with the prophets of old,",
+      "verse": "1:20",
+      "lineIndex": 108
+    },
+    {
+      "start": 302.817,
+      "end": 304.628,
+      "type": "line",
+      "text": "whom they had cast out,",
+      "verse": "1:20",
+      "lineIndex": 109
+    },
+    {
+      "start": 304.808,
+      "end": 306.526,
+      "type": "line",
+      "text": "and stoned, and killed;",
+      "verse": "1:20",
+      "lineIndex": 110
+    },
+    {
+      "start": 306.706,
+      "end": 308.61,
+      "type": "line",
+      "text": "and they also sought his life,",
+      "verse": "1:20",
+      "lineIndex": 111
+    },
+    {
+      "start": 308.79,
+      "end": 310.555,
+      "type": "line",
+      "text": "that they might take it away.",
+      "verse": "1:20",
+      "lineIndex": 112
+    },
+    {
+      "start": 310.735,
+      "end": 313.011,
+      "type": "line",
+      "text": "But behold, I, Nephi, will show to you",
+      "verse": "1:20",
+      "lineIndex": 113
+    },
+    {
+      "start": 313.191,
+      "end": 318.299,
+      "type": "line",
+      "text": "that the tender mercies of the Lord are over all those whom he has chosen,",
+      "verse": "1:20",
+      "lineIndex": 114
+    },
+    {
+      "start": 318.479,
+      "end": 320.151,
+      "type": "line",
+      "text": "because of their faith,",
+      "verse": "1:20",
+      "lineIndex": 115
+    },
+    {
+      "start": 320.331,
+      "end": 323.582,
+      "type": "line",
+      "text": "to make them mighty even to the power of deliverance.",
+      "verse": "1:20",
+      "lineIndex": 116
+    }
+  ]
+}

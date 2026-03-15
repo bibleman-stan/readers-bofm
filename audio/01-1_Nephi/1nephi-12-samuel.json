@@ -1,0 +1,896 @@
+{
+  "book": "1nephi",
+  "bookName": "1 Nephi",
+  "chapter": 12,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 309.327,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 1.718,
+      "type": "line",
+      "text": "And then the angel said to me:",
+      "verse": "12:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 1.898,
+      "end": 3.756,
+      "type": "line",
+      "text": "Look, and behold your seed,",
+      "verse": "12:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 3.936,
+      "end": 6.212,
+      "type": "line",
+      "text": "and also the seed of your brothers.",
+      "verse": "12:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 6.392,
+      "end": 8.993,
+      "type": "line",
+      "text": "And I looked and saw the land of promise;",
+      "verse": "12:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 9.173,
+      "end": 11.356,
+      "type": "line",
+      "text": "and I saw multitudes of people,",
+      "verse": "12:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 11.536,
+      "end": 16.366,
+      "type": "line",
+      "text": "indeed, even as it were in number as many as the sand of the sea.",
+      "verse": "12:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 17.046,
+      "end": 18.857,
+      "type": "line",
+      "text": "And then I saw multitudes",
+      "verse": "12:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 19.037,
+      "end": 21.034,
+      "type": "line",
+      "text": "gathered together to battle,",
+      "verse": "12:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 21.214,
+      "end": 22.561,
+      "type": "line",
+      "text": "one against the other;",
+      "verse": "12:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 22.741,
+      "end": 24.227,
+      "type": "line",
+      "text": "and I saw wars,",
+      "verse": "12:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 24.407,
+      "end": 26.079,
+      "type": "line",
+      "text": "and rumors of wars,",
+      "verse": "12:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 26.259,
+      "end": 29.649,
+      "type": "line",
+      "text": "and great slaughters with the sword among my people.",
+      "verse": "12:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 30.329,
+      "end": 33.208,
+      "type": "line",
+      "text": "And then I saw many generations pass away,",
+      "verse": "12:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 33.388,
+      "end": 36.964,
+      "type": "line",
+      "text": "after the manner of wars and contentions in the land;",
+      "verse": "12:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 37.144,
+      "end": 38.909,
+      "type": "line",
+      "text": "and I saw many cities,",
+      "verse": "12:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 39.089,
+      "end": 41.597,
+      "type": "line",
+      "text": "indeed, even that I did not number them.",
+      "verse": "12:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 42.277,
+      "end": 45.017,
+      "type": "line",
+      "text": "And then I saw a mist of darkness",
+      "verse": "12:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 45.197,
+      "end": 47.658,
+      "type": "line",
+      "text": "on the face of the land of promise;",
+      "verse": "12:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 47.838,
+      "end": 49.417,
+      "type": "line",
+      "text": "and I saw lightnings,",
+      "verse": "12:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 49.597,
+      "end": 54.102,
+      "type": "line",
+      "text": "and I heard thunderings, and earthquakes, and all manner of tumultuous noises;",
+      "verse": "12:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 54.282,
+      "end": 57.347,
+      "type": "line",
+      "text": "and I saw the earth and the rocks, that they rent;",
+      "verse": "12:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 57.527,
+      "end": 60.406,
+      "type": "line",
+      "text": "and I saw mountains tumbling into pieces;",
+      "verse": "12:4",
+      "lineIndex": 23
+    },
+    {
+      "start": 60.586,
+      "end": 63.047,
+      "type": "line",
+      "text": "and I saw the plains of the earth,",
+      "verse": "12:4",
+      "lineIndex": 24
+    },
+    {
+      "start": 63.227,
+      "end": 64.806,
+      "type": "line",
+      "text": "that they were broken up;",
+      "verse": "12:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 64.986,
+      "end": 67.912,
+      "type": "line",
+      "text": "and I saw many cities that they were sunk;",
+      "verse": "12:4",
+      "lineIndex": 26
+    },
+    {
+      "start": 68.092,
+      "end": 71.203,
+      "type": "line",
+      "text": "and I saw many that they were burned with fire;",
+      "verse": "12:4",
+      "lineIndex": 27
+    },
+    {
+      "start": 71.383,
+      "end": 73.844,
+      "type": "line",
+      "text": "and I saw many that tumbled to the earth,",
+      "verse": "12:4",
+      "lineIndex": 28
+    },
+    {
+      "start": 74.024,
+      "end": 75.835,
+      "type": "line",
+      "text": "because of the quaking of it.",
+      "verse": "12:4",
+      "lineIndex": 29
+    },
+    {
+      "start": 76.515,
+      "end": 78.651,
+      "type": "line",
+      "text": "And then after I saw these things,",
+      "verse": "12:5",
+      "lineIndex": 30
+    },
+    {
+      "start": 78.831,
+      "end": 81.014,
+      "type": "line",
+      "text": "I saw the vapor of darkness,",
+      "verse": "12:5",
+      "lineIndex": 31
+    },
+    {
+      "start": 81.194,
+      "end": 83.702,
+      "type": "line",
+      "text": "that it passed from off the face of the earth;",
+      "verse": "12:5",
+      "lineIndex": 32
+    },
+    {
+      "start": 83.882,
+      "end": 87.086,
+      "type": "line",
+      "text": "and behold, I saw multitudes who had not fallen",
+      "verse": "12:5",
+      "lineIndex": 33
+    },
+    {
+      "start": 87.266,
+      "end": 91.028,
+      "type": "line",
+      "text": "because of the great and terrible judgments of the Lord.",
+      "verse": "12:5",
+      "lineIndex": 34
+    },
+    {
+      "start": 91.708,
+      "end": 93.519,
+      "type": "line",
+      "text": "And I saw the heavens open,",
+      "verse": "12:6",
+      "lineIndex": 36
+    },
+    {
+      "start": 93.699,
+      "end": 96.578,
+      "type": "line",
+      "text": "and the Lamb of God descending out of heaven;",
+      "verse": "12:6",
+      "lineIndex": 37
+    },
+    {
+      "start": 96.758,
+      "end": 98.941,
+      "type": "line",
+      "text": "and he came down and showed himself to them.",
+      "verse": "12:6",
+      "lineIndex": 38
+    },
+    {
+      "start": 99.621,
+      "end": 101.711,
+      "type": "line",
+      "text": "And I also saw and bear record",
+      "verse": "12:7",
+      "lineIndex": 39
+    },
+    {
+      "start": 101.891,
+      "end": 104.956,
+      "type": "line",
+      "text": "that the Holy Ghost fell upon twelve others;",
+      "verse": "12:7",
+      "lineIndex": 40
+    },
+    {
+      "start": 105.136,
+      "end": 107.737,
+      "type": "line",
+      "text": "and they were ordained of God, and chosen.",
+      "verse": "12:7",
+      "lineIndex": 41
+    },
+    {
+      "start": 108.417,
+      "end": 110.414,
+      "type": "line",
+      "text": "And the angel spoke to me, saying:",
+      "verse": "12:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 110.594,
+      "end": 113.148,
+      "type": "line",
+      "text": "Behold the twelve disciples of the Lamb,",
+      "verse": "12:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 113.328,
+      "end": 115.836,
+      "type": "line",
+      "text": "who are chosen to minister to your seed.",
+      "verse": "12:8",
+      "lineIndex": 44
+    },
+    {
+      "start": 116.516,
+      "end": 117.909,
+      "type": "line",
+      "text": "And he said to me:",
+      "verse": "12:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 118.089,
+      "end": 120.829,
+      "type": "line",
+      "text": "You rememberest the twelve apostles of the Lamb?",
+      "verse": "12:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 121.009,
+      "end": 122.495,
+      "type": "line",
+      "text": "Behold they are they",
+      "verse": "12:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 122.675,
+      "end": 125.461,
+      "type": "line",
+      "text": "who shall judge the twelve tribes of Israel;",
+      "verse": "12:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 125.641,
+      "end": 129.681,
+      "type": "line",
+      "text": "so, the twelve ministers of your seed shall be judged of them;",
+      "verse": "12:9",
+      "lineIndex": 49
+    },
+    {
+      "start": 129.861,
+      "end": 132.555,
+      "type": "line",
+      "text": "for you are of the house of Israel.",
+      "verse": "12:9",
+      "lineIndex": 50
+    },
+    {
+      "start": 133.235,
+      "end": 137.693,
+      "type": "line",
+      "text": "And these twelve ministers whom you behold shall judge your seed.",
+      "verse": "12:10",
+      "lineIndex": 51
+    },
+    {
+      "start": 137.873,
+      "end": 140.288,
+      "type": "line",
+      "text": "And, behold, they are righteous forever;",
+      "verse": "12:10",
+      "lineIndex": 52
+    },
+    {
+      "start": 140.468,
+      "end": 143.301,
+      "type": "line",
+      "text": "for because of their faith in the Lamb of God",
+      "verse": "12:10",
+      "lineIndex": 53
+    },
+    {
+      "start": 143.481,
+      "end": 145.989,
+      "type": "line",
+      "text": "their garments are made white in his blood.",
+      "verse": "12:10",
+      "lineIndex": 54
+    },
+    {
+      "start": 146.669,
+      "end": 148.294,
+      "type": "line",
+      "text": "And the angel said to me:",
+      "verse": "12:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 148.474,
+      "end": 149.31,
+      "type": "line",
+      "text": "Look!",
+      "verse": "12:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 149.49,
+      "end": 153.484,
+      "type": "line",
+      "text": "And I looked, and saw three generations pass away in righteousness;",
+      "verse": "12:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 153.664,
+      "end": 155.661,
+      "type": "line",
+      "text": "and their garments were white",
+      "verse": "12:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 155.841,
+      "end": 157.652,
+      "type": "line",
+      "text": "even like to the Lamb of God.",
+      "verse": "12:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 157.832,
+      "end": 159.457,
+      "type": "line",
+      "text": "And the angel said to me:",
+      "verse": "12:11",
+      "lineIndex": 60
+    },
+    {
+      "start": 159.637,
+      "end": 162.284,
+      "type": "line",
+      "text": "These are made white in the blood of the Lamb,",
+      "verse": "12:11",
+      "lineIndex": 61
+    },
+    {
+      "start": 162.464,
+      "end": 164.693,
+      "type": "line",
+      "text": "because of their faith in him.",
+      "verse": "12:11",
+      "lineIndex": 62
+    },
+    {
+      "start": 165.373,
+      "end": 168.81,
+      "type": "line",
+      "text": "And I, Nephi, also saw many of the fourth generation",
+      "verse": "12:12",
+      "lineIndex": 63
+    },
+    {
+      "start": 168.99,
+      "end": 171.312,
+      "type": "line",
+      "text": "who passed away in righteousness.",
+      "verse": "12:12",
+      "lineIndex": 64
+    },
+    {
+      "start": 171.992,
+      "end": 175.939,
+      "type": "line",
+      "text": "And then I saw the multitudes of the earth gathered together.",
+      "verse": "12:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 176.619,
+      "end": 178.244,
+      "type": "line",
+      "text": "And the angel said to me:",
+      "verse": "12:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 178.424,
+      "end": 181.489,
+      "type": "line",
+      "text": "Behold your seed, and also the seed of your brothers.",
+      "verse": "12:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 182.169,
+      "end": 184.259,
+      "type": "line",
+      "text": "And then I looked",
+      "verse": "12:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 184.439,
+      "end": 186.482,
+      "type": "line",
+      "text": "and saw the people of my seed",
+      "verse": "12:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 186.662,
+      "end": 188.984,
+      "type": "line",
+      "text": "gathered together in multitudes",
+      "verse": "12:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 189.164,
+      "end": 191.672,
+      "type": "line",
+      "text": "against the seed of my brothers;",
+      "verse": "12:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 191.852,
+      "end": 194.128,
+      "type": "line",
+      "text": "and they were gathered together to battle.",
+      "verse": "12:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 194.808,
+      "end": 196.805,
+      "type": "line",
+      "text": "And the angel spoke to me, saying:",
+      "verse": "12:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 196.985,
+      "end": 200.514,
+      "type": "line",
+      "text": "Behold the fountain of filthy water which your father saw;",
+      "verse": "12:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 200.694,
+      "end": 203.295,
+      "type": "line",
+      "text": "indeed, even the river of which he spoke;",
+      "verse": "12:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 203.475,
+      "end": 206.122,
+      "type": "line",
+      "text": "and the depths of it are the depths of hell.",
+      "verse": "12:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 206.802,
+      "end": 208.845,
+      "type": "line",
+      "text": "And the mists of darkness",
+      "verse": "12:17",
+      "lineIndex": 77
+    },
+    {
+      "start": 209.025,
+      "end": 211.208,
+      "type": "line",
+      "text": "are the temptations of the devil,",
+      "verse": "12:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 211.388,
+      "end": 212.874,
+      "type": "line",
+      "text": "which blinds the eyes,",
+      "verse": "12:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 213.054,
+      "end": 215.84,
+      "type": "line",
+      "text": "and hardens the hearts of the children of men,",
+      "verse": "12:17",
+      "lineIndex": 80
+    },
+    {
+      "start": 216.02,
+      "end": 218.714,
+      "type": "line",
+      "text": "and leads them away into broad roads,",
+      "verse": "12:17",
+      "lineIndex": 81
+    },
+    {
+      "start": 218.894,
+      "end": 221.17,
+      "type": "line",
+      "text": "that they perish and are lost.",
+      "verse": "12:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 221.85,
+      "end": 224.265,
+      "type": "line",
+      "text": "And the large and spacious building,",
+      "verse": "12:18",
+      "lineIndex": 83
+    },
+    {
+      "start": 224.445,
+      "end": 227.556,
+      "type": "line",
+      "text": "which your father saw, is vain imaginations",
+      "verse": "12:18",
+      "lineIndex": 84
+    },
+    {
+      "start": 227.736,
+      "end": 229.919,
+      "type": "line",
+      "text": "and the pride of the children of men.",
+      "verse": "12:18",
+      "lineIndex": 85
+    },
+    {
+      "start": 230.099,
+      "end": 233.35,
+      "type": "line",
+      "text": "And a great and a terrible gulf divides them;",
+      "verse": "12:18",
+      "lineIndex": 86
+    },
+    {
+      "start": 233.53,
+      "end": 236.92,
+      "type": "line",
+      "text": "indeed, even the word of the justice of the Eternal God,",
+      "verse": "12:18",
+      "lineIndex": 87
+    },
+    {
+      "start": 237.1,
+      "end": 239.654,
+      "type": "line",
+      "text": "and the Messiah who is the Lamb of God,",
+      "verse": "12:18",
+      "lineIndex": 88
+    },
+    {
+      "start": 239.834,
+      "end": 242.249,
+      "type": "line",
+      "text": "of whom the Holy Ghost bears record,",
+      "verse": "12:18",
+      "lineIndex": 89
+    },
+    {
+      "start": 242.429,
+      "end": 246.237,
+      "type": "line",
+      "text": "from the beginning of the world until this time,",
+      "verse": "12:18",
+      "lineIndex": 90
+    },
+    {
+      "start": 246.417,
+      "end": 249.064,
+      "type": "line",
+      "text": "and from this time henceforth and forever.",
+      "verse": "12:18",
+      "lineIndex": 91
+    },
+    {
+      "start": 249.744,
+      "end": 251.88,
+      "type": "line",
+      "text": "And while the angel spoke these words,",
+      "verse": "12:19",
+      "lineIndex": 92
+    },
+    {
+      "start": 252.06,
+      "end": 253.082,
+      "type": "line",
+      "text": "I saw and saw",
+      "verse": "12:19",
+      "lineIndex": 93
+    },
+    {
+      "start": 253.262,
+      "end": 256.652,
+      "type": "line",
+      "text": "that the seed of my brothers contended against my seed,",
+      "verse": "12:19",
+      "lineIndex": 94
+    },
+    {
+      "start": 256.832,
+      "end": 259.293,
+      "type": "line",
+      "text": "according to the word of the angel;",
+      "verse": "12:19",
+      "lineIndex": 95
+    },
+    {
+      "start": 259.473,
+      "end": 261.795,
+      "type": "line",
+      "text": "and because of the pride of my seed,",
+      "verse": "12:19",
+      "lineIndex": 96
+    },
+    {
+      "start": 261.975,
+      "end": 263.972,
+      "type": "line",
+      "text": "and the temptations of the devil,",
+      "verse": "12:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 264.152,
+      "end": 268.332,
+      "type": "line",
+      "text": "I saw that the seed of my brothers overpowered the people of my seed.",
+      "verse": "12:19",
+      "lineIndex": 98
+    },
+    {
+      "start": 269.012,
+      "end": 270.452,
+      "type": "line",
+      "text": "And then I saw,",
+      "verse": "12:20",
+      "lineIndex": 99
+    },
+    {
+      "start": 270.632,
+      "end": 273.836,
+      "type": "line",
+      "text": "and saw the people of the seed of my brothers",
+      "verse": "12:20",
+      "lineIndex": 100
+    },
+    {
+      "start": 274.016,
+      "end": 276.152,
+      "type": "line",
+      "text": "that they had overcome my seed;",
+      "verse": "12:20",
+      "lineIndex": 101
+    },
+    {
+      "start": 276.332,
+      "end": 279.815,
+      "type": "line",
+      "text": "and they went forth in multitudes upon the face of the land.",
+      "verse": "12:20",
+      "lineIndex": 102
+    },
+    {
+      "start": 280.495,
+      "end": 283.885,
+      "type": "line",
+      "text": "And I saw them gathered together in multitudes;",
+      "verse": "12:21",
+      "lineIndex": 103
+    },
+    {
+      "start": 284.065,
+      "end": 287.316,
+      "type": "line",
+      "text": "and I saw wars and rumors of wars among them;",
+      "verse": "12:21",
+      "lineIndex": 104
+    },
+    {
+      "start": 287.496,
+      "end": 291.768,
+      "type": "line",
+      "text": "and in wars and rumors of wars I saw many generations pass away.",
+      "verse": "12:21",
+      "lineIndex": 105
+    },
+    {
+      "start": 292.448,
+      "end": 294.073,
+      "type": "line",
+      "text": "And the angel said to me:",
+      "verse": "12:22",
+      "lineIndex": 106
+    },
+    {
+      "start": 294.253,
+      "end": 296.668,
+      "type": "line",
+      "text": "Behold these shall dwindle in unbelief.",
+      "verse": "12:22",
+      "lineIndex": 107
+    },
+    {
+      "start": 297.348,
+      "end": 298.788,
+      "type": "line",
+      "text": "And then I saw,",
+      "verse": "12:23",
+      "lineIndex": 108
+    },
+    {
+      "start": 298.968,
+      "end": 301.29,
+      "type": "line",
+      "text": "after they had dwindled in unbelief",
+      "verse": "12:23",
+      "lineIndex": 109
+    },
+    {
+      "start": 301.47,
+      "end": 305.046,
+      "type": "line",
+      "text": "they became a dark, and loathsome, and a filthy people,",
+      "verse": "12:23",
+      "lineIndex": 110
+    },
+    {
+      "start": 305.226,
+      "end": 308.663,
+      "type": "line",
+      "text": "full of idleness and all manner of wicked practices.",
+      "verse": "12:23",
+      "lineIndex": 111
+    }
+  ]
+}

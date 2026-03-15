@@ -18,6 +18,25 @@ const NARRATION = (() => {
   const AUDIO_BASE = 'audio/';
   const VOICE = 'samuel';  // active voice: 'samuel', 'tony', etc.
 
+  // Map bookId → subfolder inside audio/
+  const BOOK_FOLDERS = {
+    '1nephi':          '01-1_Nephi',
+    '2nephi':          '02-2_Nephi',
+    'jacob':           '03-Jacob',
+    'enos':            '04-Enos',
+    'jarom':           '05-Jarom',
+    'omni':            '06-Omni',
+    'words-of-mormon': '07-Words_of_Mormon',
+    'mosiah':          '08-Mosiah',
+    'alma':            '09-Alma',
+    'helaman':         '10-Helaman',
+    '3nephi':          '11-3_Nephi',
+    '4nephi':          '12-4_Nephi',
+    'mormon':          '13-Mormon',
+    'ether':           '14-Ether',
+    'moroni':          '15-Moroni',
+  };
+
   // ── State ──
   let audioEl = null;          // HTML5 Audio element
   let manifest = null;         // timing manifest for current chapter
@@ -81,8 +100,9 @@ const NARRATION = (() => {
       return false;
     }
 
-    const mp3Url = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
-    const jsonUrl = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}-${VOICE}.json`;
+    const folder = BOOK_FOLDERS[ch.bookId] || ch.bookId;
+    const mp3Url = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
+    const jsonUrl = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${VOICE}.json`;
 
     updatePlayerState('loading', 'Loading audio...');
 
@@ -134,7 +154,8 @@ const NARRATION = (() => {
     const ch = getCurrentChapter();
     if (!ch) return;
 
-    const expectedSrc = `${AUDIO_BASE}${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
+    const expFolder = BOOK_FOLDERS[ch.bookId] || ch.bookId;
+    const expectedSrc = `${AUDIO_BASE}${expFolder}/${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
     if (!audioEl || !audioEl.src.endsWith(expectedSrc)) {
       const ok = await loadChapterAudio();
       if (!ok) return;

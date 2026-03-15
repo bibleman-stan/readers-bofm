@@ -1,0 +1,848 @@
+{
+  "book": "1nephi",
+  "bookName": "1 Nephi",
+  "chapter": 2,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 306.286,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.833,
+      "type": "line",
+      "text": "For behold, then the Lord spoke to my father,",
+      "verse": "2:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.013,
+      "end": 5.381,
+      "type": "line",
+      "text": "indeed, even in a dream, and said to him:",
+      "verse": "2:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.561,
+      "end": 7.279,
+      "type": "line",
+      "text": "Blessed are you Lehi,",
+      "verse": "2:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 7.459,
+      "end": 9.688,
+      "type": "line",
+      "text": "because of the things which you have done;",
+      "verse": "2:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 9.868,
+      "end": 11.911,
+      "type": "line",
+      "text": "and because you have been faithful",
+      "verse": "2:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 12.091,
+      "end": 15.713,
+      "type": "line",
+      "text": "and declared to this people the things which I commanded you,",
+      "verse": "2:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 15.893,
+      "end": 18.169,
+      "type": "line",
+      "text": "behold, they seek to take away your life.",
+      "verse": "2:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 18.849,
+      "end": 22.007,
+      "type": "line",
+      "text": "And then the Lord commanded my father, even in a dream,",
+      "verse": "2:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 22.187,
+      "end": 23.905,
+      "type": "line",
+      "text": "he should take his family",
+      "verse": "2:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 24.085,
+      "end": 26.593,
+      "type": "line",
+      "text": "and depart into the wilderness.",
+      "verse": "2:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 27.273,
+      "end": 30.57,
+      "type": "line",
+      "text": "And then he was obedient to the word of the Lord,",
+      "verse": "2:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 30.75,
+      "end": 33.026,
+      "type": "line",
+      "text": "so he did as the Lord commanded him.",
+      "verse": "2:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 33.706,
+      "end": 36.214,
+      "type": "line",
+      "text": "And then he departed into the wilderness.",
+      "verse": "2:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 36.394,
+      "end": 39.18,
+      "type": "line",
+      "text": "And he left his house, and the land of his inheritance,",
+      "verse": "2:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 39.36,
+      "end": 41.403,
+      "type": "line",
+      "text": "and his gold, and his silver,",
+      "verse": "2:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 41.583,
+      "end": 44.23,
+      "type": "line",
+      "text": "and his precious things, and took nothing with him,",
+      "verse": "2:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 44.41,
+      "end": 45.943,
+      "type": "line",
+      "text": "except his family,",
+      "verse": "2:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 46.123,
+      "end": 48.399,
+      "type": "line",
+      "text": "and provisions, and tents,",
+      "verse": "2:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 48.579,
+      "end": 50.715,
+      "type": "line",
+      "text": "and departed into the wilderness.",
+      "verse": "2:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 51.395,
+      "end": 53.485,
+      "type": "line",
+      "text": "And he came down by the borders",
+      "verse": "2:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 53.665,
+      "end": 55.801,
+      "type": "line",
+      "text": "near the shore of the Red Sea;",
+      "verse": "2:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 55.981,
+      "end": 58.489,
+      "type": "line",
+      "text": "and he traveled in the wilderness",
+      "verse": "2:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 58.669,
+      "end": 61.827,
+      "type": "line",
+      "text": "in the borders which are nearer the Red Sea;",
+      "verse": "2:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 62.007,
+      "end": 64.886,
+      "type": "line",
+      "text": "and he traveled in the wilderness with his family,",
+      "verse": "2:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 65.066,
+      "end": 67.667,
+      "type": "line",
+      "text": "which consisted of my mother, Sariah,",
+      "verse": "2:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 67.847,
+      "end": 71.423,
+      "type": "line",
+      "text": "and my elder brothers, who were Laman, Lemuel, and Sam.",
+      "verse": "2:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 72.103,
+      "end": 75.818,
+      "type": "line",
+      "text": "And then when he had traveled three days in the wilderness,",
+      "verse": "2:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 75.998,
+      "end": 79.806,
+      "type": "line",
+      "text": "he pitched his tent in a valley by the side of a river of water.",
+      "verse": "2:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 80.486,
+      "end": 82.715,
+      "type": "line",
+      "text": "And then he built an altar of stones,",
+      "verse": "2:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 82.895,
+      "end": 84.938,
+      "type": "line",
+      "text": "and made an offering to the Lord,",
+      "verse": "2:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 85.118,
+      "end": 87.486,
+      "type": "line",
+      "text": "and gave thanks to the Lord our God.",
+      "verse": "2:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 88.166,
+      "end": 91.51,
+      "type": "line",
+      "text": "And then he called the name of the river, Laman,",
+      "verse": "2:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 91.69,
+      "end": 93.966,
+      "type": "line",
+      "text": "and it emptied into the Red Sea;",
+      "verse": "2:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 94.146,
+      "end": 97.49,
+      "type": "line",
+      "text": "and the valley was in the borders near the mouth of it.",
+      "verse": "2:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 98.17,
+      "end": 101.792,
+      "type": "line",
+      "text": "And when my father saw that the waters of the river",
+      "verse": "2:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 101.972,
+      "end": 105.734,
+      "type": "line",
+      "text": "emptied into the fountain of the Red Sea, he spoke to Laman, saying:",
+      "verse": "2:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 105.914,
+      "end": 108.282,
+      "type": "line",
+      "text": "O that you might be like to this river,",
+      "verse": "2:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 108.462,
+      "end": 112.317,
+      "type": "line",
+      "text": "continually running into the fountain of all righteousness!",
+      "verse": "2:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 112.997,
+      "end": 115.04,
+      "type": "line",
+      "text": "And he also spoke to Lemuel:",
+      "verse": "2:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 115.22,
+      "end": 117.681,
+      "type": "line",
+      "text": "O that you might be like to this valley,",
+      "verse": "2:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 117.861,
+      "end": 120.555,
+      "type": "line",
+      "text": "firm and steadfast, and immovable",
+      "verse": "2:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 120.735,
+      "end": 123.057,
+      "type": "line",
+      "text": "in keeping the commandments of the Lord!",
+      "verse": "2:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 123.737,
+      "end": 128.149,
+      "type": "line",
+      "text": "Now this he spoke because of the stubbornness of Laman and Lemuel;",
+      "verse": "2:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 128.329,
+      "end": 131.858,
+      "type": "line",
+      "text": "for behold they complained in many things against their father,",
+      "verse": "2:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 132.038,
+      "end": 134.314,
+      "type": "line",
+      "text": "because he was a visionary man,",
+      "verse": "2:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 134.494,
+      "end": 137.745,
+      "type": "line",
+      "text": "and had led them out of the land of Jerusalem,",
+      "verse": "2:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 137.925,
+      "end": 140.293,
+      "type": "line",
+      "text": "to leave the land of their inheritance,",
+      "verse": "2:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 140.473,
+      "end": 145.581,
+      "type": "line",
+      "text": "and their gold, and their silver, and their precious things,",
+      "verse": "2:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 145.761,
+      "end": 147.572,
+      "type": "line",
+      "text": "to perish in the wilderness.",
+      "verse": "2:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 147.752,
+      "end": 149.749,
+      "type": "line",
+      "text": "And this they said he had done",
+      "verse": "2:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 149.929,
+      "end": 152.901,
+      "type": "line",
+      "text": "because of the foolish imaginations of his heart.",
+      "verse": "2:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 153.581,
+      "end": 156.692,
+      "type": "line",
+      "text": "And thus Laman and Lemuel, being the eldest,",
+      "verse": "2:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 156.872,
+      "end": 159.055,
+      "type": "line",
+      "text": "complained against their father.",
+      "verse": "2:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 159.235,
+      "end": 161.975,
+      "type": "line",
+      "text": "And they complained because they knew not",
+      "verse": "2:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 162.155,
+      "end": 165.313,
+      "type": "line",
+      "text": "the dealings of that God who had created them.",
+      "verse": "2:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 165.993,
+      "end": 167.618,
+      "type": "line",
+      "text": "Neither did they believe",
+      "verse": "2:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 167.798,
+      "end": 171.606,
+      "type": "line",
+      "text": "that Jerusalem, that great city, could be destroyed",
+      "verse": "2:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 171.786,
+      "end": 174.015,
+      "type": "line",
+      "text": "according to the words of the prophets.",
+      "verse": "2:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 174.195,
+      "end": 177.632,
+      "type": "line",
+      "text": "And they were like to the Jews who were at Jerusalem,",
+      "verse": "2:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 177.812,
+      "end": 181.202,
+      "type": "line",
+      "text": "who sought to take away the life of my father.",
+      "verse": "2:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 181.882,
+      "end": 183.879,
+      "type": "line",
+      "text": "And then my father spoke to them",
+      "verse": "2:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 184.059,
+      "end": 188.192,
+      "type": "line",
+      "text": "in the valley of Lemuel, with power, being filled with the Spirit,",
+      "verse": "2:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 188.372,
+      "end": 190.833,
+      "type": "line",
+      "text": "until their frames shook before him.",
+      "verse": "2:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 191.013,
+      "end": 192.685,
+      "type": "line",
+      "text": "And he silenced them,",
+      "verse": "2:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 192.865,
+      "end": 195.094,
+      "type": "line",
+      "text": "that they dare not utter against him;",
+      "verse": "2:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 195.274,
+      "end": 197.55,
+      "type": "line",
+      "text": "so, they did as he commanded them.",
+      "verse": "2:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 198.23,
+      "end": 200.273,
+      "type": "line",
+      "text": "And my father dwelt in a tent.",
+      "verse": "2:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 200.953,
+      "end": 203.414,
+      "type": "line",
+      "text": "And then I, Nephi, being very young,",
+      "verse": "2:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 203.594,
+      "end": 205.405,
+      "type": "line",
+      "text": "but being large in stature,",
+      "verse": "2:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 205.585,
+      "end": 209.44,
+      "type": "line",
+      "text": "and also having great desires to know of the mysteries of God,",
+      "verse": "2:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 209.62,
+      "end": 211.245,
+      "type": "line",
+      "text": "so, I cried to the Lord;",
+      "verse": "2:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 211.425,
+      "end": 213.19,
+      "type": "line",
+      "text": "and behold he visited me,",
+      "verse": "2:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 213.37,
+      "end": 216.574,
+      "type": "line",
+      "text": "and softened my heart that I believed all the words",
+      "verse": "2:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 216.754,
+      "end": 219.169,
+      "type": "line",
+      "text": "which had been spoken by my father;",
+      "verse": "2:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 219.349,
+      "end": 222.646,
+      "type": "line",
+      "text": "so, I did not rebel against him like to my brothers.",
+      "verse": "2:16",
+      "lineIndex": 78
+    },
+    {
+      "start": 223.326,
+      "end": 224.951,
+      "type": "line",
+      "text": "And I spoke to Sam,",
+      "verse": "2:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 225.131,
+      "end": 227.081,
+      "type": "line",
+      "text": "making known to him the things",
+      "verse": "2:17",
+      "lineIndex": 80
+    },
+    {
+      "start": 227.261,
+      "end": 230.79,
+      "type": "line",
+      "text": "which the Lord had manifested to me by his Holy Spirit.",
+      "verse": "2:17",
+      "lineIndex": 81
+    },
+    {
+      "start": 230.97,
+      "end": 233.106,
+      "type": "line",
+      "text": "And then he believed in my words.",
+      "verse": "2:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 233.786,
+      "end": 238.058,
+      "type": "line",
+      "text": "But, behold, Laman and Lemuel would not listen to my words;",
+      "verse": "2:18",
+      "lineIndex": 83
+    },
+    {
+      "start": 238.238,
+      "end": 241.396,
+      "type": "line",
+      "text": "and being grieved because of the hardness of their hearts",
+      "verse": "2:18",
+      "lineIndex": 84
+    },
+    {
+      "start": 241.576,
+      "end": 243.434,
+      "type": "line",
+      "text": "I cried to the Lord for them.",
+      "verse": "2:18",
+      "lineIndex": 85
+    },
+    {
+      "start": 244.114,
+      "end": 246.482,
+      "type": "line",
+      "text": "And then the Lord spoke to me, saying:",
+      "verse": "2:19",
+      "lineIndex": 87
+    },
+    {
+      "start": 246.662,
+      "end": 248.334,
+      "type": "line",
+      "text": "Blessed are you, Nephi,",
+      "verse": "2:19",
+      "lineIndex": 88
+    },
+    {
+      "start": 248.514,
+      "end": 250.093,
+      "type": "line",
+      "text": "because of your faith,",
+      "verse": "2:19",
+      "lineIndex": 89
+    },
+    {
+      "start": 250.273,
+      "end": 252.641,
+      "type": "line",
+      "text": "for you have sought me diligently,",
+      "verse": "2:19",
+      "lineIndex": 90
+    },
+    {
+      "start": 252.821,
+      "end": 254.539,
+      "type": "line",
+      "text": "with lowliness of heart.",
+      "verse": "2:19",
+      "lineIndex": 91
+    },
+    {
+      "start": 255.219,
+      "end": 258.47,
+      "type": "line",
+      "text": "And to the degree that you shall keep my commandments,",
+      "verse": "2:20",
+      "lineIndex": 92
+    },
+    {
+      "start": 258.65,
+      "end": 260.09,
+      "type": "line",
+      "text": "you shall prosper,",
+      "verse": "2:20",
+      "lineIndex": 93
+    },
+    {
+      "start": 260.27,
+      "end": 262.499,
+      "type": "line",
+      "text": "and shall be led to a land of promise;",
+      "verse": "2:20",
+      "lineIndex": 94
+    },
+    {
+      "start": 262.679,
+      "end": 266.116,
+      "type": "line",
+      "text": "indeed, even a land which I have prepared for you; yes,",
+      "verse": "2:20",
+      "lineIndex": 95
+    },
+    {
+      "start": 266.296,
+      "end": 269.454,
+      "type": "line",
+      "text": "a land which is choice above all other lands.",
+      "verse": "2:20",
+      "lineIndex": 96
+    },
+    {
+      "start": 270.134,
+      "end": 273.524,
+      "type": "line",
+      "text": "And to the degree that your brothers shall rebel against you,",
+      "verse": "2:21",
+      "lineIndex": 97
+    },
+    {
+      "start": 273.704,
+      "end": 276.955,
+      "type": "line",
+      "text": "they shall be cut off from the presence of the Lord.",
+      "verse": "2:21",
+      "lineIndex": 98
+    },
+    {
+      "start": 277.635,
+      "end": 280.886,
+      "type": "line",
+      "text": "And to the degree that you shall keep my commandments,",
+      "verse": "2:22",
+      "lineIndex": 99
+    },
+    {
+      "start": 281.066,
+      "end": 284.735,
+      "type": "line",
+      "text": "you shall be made a ruler and a teacher over your brothers.",
+      "verse": "2:22",
+      "lineIndex": 100
+    },
+    {
+      "start": 285.415,
+      "end": 288.48,
+      "type": "line",
+      "text": "For behold, in that day that they shall rebel against me,",
+      "verse": "2:23",
+      "lineIndex": 101
+    },
+    {
+      "start": 288.66,
+      "end": 291.307,
+      "type": "line",
+      "text": "I will curse them even with a sore curse,",
+      "verse": "2:23",
+      "lineIndex": 102
+    },
+    {
+      "start": 291.487,
+      "end": 294.041,
+      "type": "line",
+      "text": "and they shall have no power over your seed",
+      "verse": "2:23",
+      "lineIndex": 103
+    },
+    {
+      "start": 294.221,
+      "end": 296.775,
+      "type": "line",
+      "text": "except they shall rebel against me also.",
+      "verse": "2:23",
+      "lineIndex": 104
+    },
+    {
+      "start": 297.455,
+      "end": 300.195,
+      "type": "line",
+      "text": "And if it so be that they rebel against me,",
+      "verse": "2:24",
+      "lineIndex": 105
+    },
+    {
+      "start": 300.375,
+      "end": 302.697,
+      "type": "line",
+      "text": "they shall be a scourge to your seed,",
+      "verse": "2:24",
+      "lineIndex": 106
+    },
+    {
+      "start": 302.877,
+      "end": 305.617,
+      "type": "line",
+      "text": "to stir them up in the ways of memory.",
+      "verse": "2:24",
+      "lineIndex": 107
+    }
+  ]
+}

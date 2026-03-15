@@ -1,0 +1,928 @@
+{
+  "book": "1nephi",
+  "bookName": "1 Nephi",
+  "chapter": 7,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 330.305,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.508,
+      "type": "line",
+      "text": "And now I would that you might know",
+      "verse": "7:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.688,
+      "end": 7.239,
+      "type": "line",
+      "text": "that after my father, Lehi, had made an end of prophesying",
+      "verse": "7:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.419,
+      "end": 9.091,
+      "type": "line",
+      "text": "concerning his seed,",
+      "verse": "7:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.271,
+      "end": 11.639,
+      "type": "line",
+      "text": "then the Lord spoke to him again, saying",
+      "verse": "7:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.819,
+      "end": 14.141,
+      "type": "line",
+      "text": "that it was not meet for him, Lehi,",
+      "verse": "7:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.321,
+      "end": 17.99,
+      "type": "line",
+      "text": "that he should take his family into the wilderness alone;",
+      "verse": "7:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 18.17,
+      "end": 21.374,
+      "type": "line",
+      "text": "but that his sons should take daughters to wife,",
+      "verse": "7:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 21.554,
+      "end": 25.176,
+      "type": "line",
+      "text": "that they might raise up seed to the Lord in the land of promise.",
+      "verse": "7:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 25.856,
+      "end": 27.806,
+      "type": "line",
+      "text": "And then the Lord commanded him",
+      "verse": "7:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 27.986,
+      "end": 33.466,
+      "type": "line",
+      "text": "that I, Nephi, and my brothers, should again return to the land of Jerusalem,",
+      "verse": "7:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 33.646,
+      "end": 36.99,
+      "type": "line",
+      "text": "and bring down Ishmael and his family into the wilderness.",
+      "verse": "7:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 37.67,
+      "end": 40.689,
+      "type": "line",
+      "text": "And then I, Nephi, did again, with my brothers,",
+      "verse": "7:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 40.869,
+      "end": 43.934,
+      "type": "line",
+      "text": "go forth into the wilderness to go up to Jerusalem.",
+      "verse": "7:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.614,
+      "end": 47.308,
+      "type": "line",
+      "text": "And then we went up to the house of Ishmael,",
+      "verse": "7:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 47.488,
+      "end": 50.739,
+      "type": "line",
+      "text": "and we gained favor in the sight of Ishmael,",
+      "verse": "7:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 50.919,
+      "end": 54.17,
+      "type": "line",
+      "text": "so much so that we spoke to him the words of the Lord.",
+      "verse": "7:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 54.85,
+      "end": 58.472,
+      "type": "line",
+      "text": "And then the Lord softened the heart of Ishmael,",
+      "verse": "7:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 58.652,
+      "end": 60.277,
+      "type": "line",
+      "text": "and also his household,",
+      "verse": "7:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 60.457,
+      "end": 65.333,
+      "type": "line",
+      "text": "so much so that they took their journey with us down into the wilderness",
+      "verse": "7:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 65.513,
+      "end": 67.138,
+      "type": "line",
+      "text": "to the tent of our father.",
+      "verse": "7:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 67.818,
+      "end": 70.697,
+      "type": "line",
+      "text": "And then as we journeyed in the wilderness,",
+      "verse": "7:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 70.877,
+      "end": 72.688,
+      "type": "line",
+      "text": "behold Laman and Lemuel,",
+      "verse": "7:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 72.868,
+      "end": 74.958,
+      "type": "line",
+      "text": "and two of the daughters of Ishmael",
+      "verse": "7:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 75.138,
+      "end": 78.342,
+      "type": "line",
+      "text": "and the two sons of Ishmael and their families,",
+      "verse": "7:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 78.522,
+      "end": 80.147,
+      "type": "line",
+      "text": "rebeled against us;",
+      "verse": "7:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 80.327,
+      "end": 82.742,
+      "type": "line",
+      "text": "yes, against me, Nephi, and Sam,",
+      "verse": "7:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 82.922,
+      "end": 85.29,
+      "type": "line",
+      "text": "and their father, Ishmael, and his wife,",
+      "verse": "7:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 85.47,
+      "end": 87.328,
+      "type": "line",
+      "text": "and his three other daughters.",
+      "verse": "7:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 88.008,
+      "end": 90.469,
+      "type": "line",
+      "text": "And then in the which rebellion,",
+      "verse": "7:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 90.649,
+      "end": 94.364,
+      "type": "line",
+      "text": "they were desirous to return to the land of Jerusalem.",
+      "verse": "7:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 95.044,
+      "end": 98.806,
+      "type": "line",
+      "text": "And now I, Nephi, being grieved for the hardness of their hearts,",
+      "verse": "7:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 98.986,
+      "end": 100.983,
+      "type": "line",
+      "text": "therefore I spoke to them, saying,",
+      "verse": "7:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 101.163,
+      "end": 103.857,
+      "type": "line",
+      "text": "indeed, even to Laman and to Lemuel:",
+      "verse": "7:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 104.037,
+      "end": 106.034,
+      "type": "line",
+      "text": "Behold you are my elder brothers,",
+      "verse": "7:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 106.214,
+      "end": 108.675,
+      "type": "line",
+      "text": "and how is it that you are so hard",
+      "verse": "7:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 108.855,
+      "end": 111.641,
+      "type": "line",
+      "text": "in your hearts, and so blind in your minds,",
+      "verse": "7:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 111.821,
+      "end": 114.886,
+      "type": "line",
+      "text": "that you have need that I, your younger brother,",
+      "verse": "7:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 115.066,
+      "end": 116.506,
+      "type": "line",
+      "text": "should speak to you,",
+      "verse": "7:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 116.686,
+      "end": 118.962,
+      "type": "line",
+      "text": "yes, and set an example for you?",
+      "verse": "7:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 119.642,
+      "end": 123.218,
+      "type": "line",
+      "text": "How is it that you have not listened to the word of the Lord?",
+      "verse": "7:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 123.898,
+      "end": 126.034,
+      "type": "line",
+      "text": "How is it that you have forgotten",
+      "verse": "7:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 126.214,
+      "end": 128.35,
+      "type": "line",
+      "text": "that you have seen an angel of the Lord?",
+      "verse": "7:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 129.03,
+      "end": 132.095,
+      "type": "line",
+      "text": "Indeed, and how is it that you have forgotten",
+      "verse": "7:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 132.275,
+      "end": 135.108,
+      "type": "line",
+      "text": "what great things the Lord has done for us,",
+      "verse": "7:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 135.288,
+      "end": 138.307,
+      "type": "line",
+      "text": "in delivering us out of the hands of Laban,",
+      "verse": "7:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 138.487,
+      "end": 140.67,
+      "type": "line",
+      "text": "and also that we should obtain the record?",
+      "verse": "7:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 141.35,
+      "end": 144.415,
+      "type": "line",
+      "text": "Indeed, and how is it that you have forgotten",
+      "verse": "7:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 144.595,
+      "end": 147.335,
+      "type": "line",
+      "text": "that the Lord is able to do all things",
+      "verse": "7:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 147.515,
+      "end": 150.673,
+      "type": "line",
+      "text": "according to his will, for the children of men,",
+      "verse": "7:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 150.853,
+      "end": 153.547,
+      "type": "line",
+      "text": "if it so be that they exercise faith in him?",
+      "verse": "7:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 153.727,
+      "end": 155.724,
+      "type": "line",
+      "text": "So, let us be faithful to him.",
+      "verse": "7:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 156.404,
+      "end": 158.958,
+      "type": "line",
+      "text": "And if it so be that we are faithful to him,",
+      "verse": "7:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 159.138,
+      "end": 161.553,
+      "type": "line",
+      "text": "we shall obtain the land of promise;",
+      "verse": "7:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 161.733,
+      "end": 164.473,
+      "type": "line",
+      "text": "and you shall know at some future period",
+      "verse": "7:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 164.653,
+      "end": 167.3,
+      "type": "line",
+      "text": "that the word of the Lord shall be fulfilled",
+      "verse": "7:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 167.48,
+      "end": 169.988,
+      "type": "line",
+      "text": "concerning the destruction of Jerusalem;",
+      "verse": "7:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 170.168,
+      "end": 172.722,
+      "type": "line",
+      "text": "for all things which the Lord has spoken",
+      "verse": "7:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 172.902,
+      "end": 176.292,
+      "type": "line",
+      "text": "concerning the destruction of Jerusalem must be fulfilled.",
+      "verse": "7:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 176.972,
+      "end": 180.78,
+      "type": "line",
+      "text": "For behold, the Spirit of the Lord ceases soon to strive with them;",
+      "verse": "7:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 180.96,
+      "end": 183.561,
+      "type": "line",
+      "text": "for behold, they have rejected the prophets,",
+      "verse": "7:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 183.741,
+      "end": 186.295,
+      "type": "line",
+      "text": "and Jeremiah have they cast into prison.",
+      "verse": "7:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 186.475,
+      "end": 189.261,
+      "type": "line",
+      "text": "And they have sought to take away the life of my father,",
+      "verse": "7:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 189.441,
+      "end": 193.063,
+      "type": "line",
+      "text": "so much so that they have driven him out of the land.",
+      "verse": "7:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 193.743,
+      "end": 195.368,
+      "type": "line",
+      "text": "Now behold, I say to you",
+      "verse": "7:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 195.548,
+      "end": 197.916,
+      "type": "line",
+      "text": "that if you will return to Jerusalem",
+      "verse": "7:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 198.096,
+      "end": 200.232,
+      "type": "line",
+      "text": "you shall also perish with them.",
+      "verse": "7:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 200.412,
+      "end": 203.709,
+      "type": "line",
+      "text": "And now, if you have choice, go up to the land,",
+      "verse": "7:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 203.889,
+      "end": 206.722,
+      "type": "line",
+      "text": "and remember the words which I speak to you",
+      "verse": "7:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 206.902,
+      "end": 209.317,
+      "type": "line",
+      "text": "that if you go you will also perish;",
+      "verse": "7:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 209.497,
+      "end": 213.166,
+      "type": "line",
+      "text": "for thus the Spirit of the Lord compels me that I should speak.",
+      "verse": "7:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 213.846,
+      "end": 217.329,
+      "type": "line",
+      "text": "And then when I, Nephi, had spoken these words to my brothers,",
+      "verse": "7:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 217.509,
+      "end": 218.856,
+      "type": "line",
+      "text": "they were angry with me.",
+      "verse": "7:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 219.036,
+      "end": 221.312,
+      "type": "line",
+      "text": "And then they laid their hands upon me,",
+      "verse": "7:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 221.492,
+      "end": 223.582,
+      "type": "line",
+      "text": "for behold, they were very angry,",
+      "verse": "7:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 223.762,
+      "end": 225.62,
+      "type": "line",
+      "text": "and they bound me with cords,",
+      "verse": "7:16",
+      "lineIndex": 78
+    },
+    {
+      "start": 225.8,
+      "end": 228.308,
+      "type": "line",
+      "text": "for they sought to take away my life,",
+      "verse": "7:16",
+      "lineIndex": 79
+    },
+    {
+      "start": 228.488,
+      "end": 231.507,
+      "type": "line",
+      "text": "that they might leave me in the wilderness",
+      "verse": "7:16",
+      "lineIndex": 80
+    },
+    {
+      "start": 231.687,
+      "end": 233.963,
+      "type": "line",
+      "text": "to be devoured by wild beasts.",
+      "verse": "7:16",
+      "lineIndex": 81
+    },
+    {
+      "start": 234.643,
+      "end": 236.64,
+      "type": "line",
+      "text": "But then I prayed to the Lord, saying:",
+      "verse": "7:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 236.82,
+      "end": 237.795,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "7:17",
+      "lineIndex": 83
+    },
+    {
+      "start": 237.975,
+      "end": 240.297,
+      "type": "line",
+      "text": "according to my faith which is in you,",
+      "verse": "7:17",
+      "lineIndex": 84
+    },
+    {
+      "start": 240.477,
+      "end": 243.774,
+      "type": "line",
+      "text": "will you deliver me from the hands of my brothers;",
+      "verse": "7:17",
+      "lineIndex": 85
+    },
+    {
+      "start": 243.954,
+      "end": 246.276,
+      "type": "line",
+      "text": "indeed, even give me strength",
+      "verse": "7:17",
+      "lineIndex": 86
+    },
+    {
+      "start": 246.456,
+      "end": 249.567,
+      "type": "line",
+      "text": "that I may burst these bands with which I am bound.",
+      "verse": "7:17",
+      "lineIndex": 87
+    },
+    {
+      "start": 250.247,
+      "end": 252.569,
+      "type": "line",
+      "text": "And then when I had said these words,",
+      "verse": "7:18",
+      "lineIndex": 88
+    },
+    {
+      "start": 252.749,
+      "end": 255.953,
+      "type": "line",
+      "text": "behold, the bands were loosed from off my hands and feet,",
+      "verse": "7:18",
+      "lineIndex": 89
+    },
+    {
+      "start": 256.133,
+      "end": 258.176,
+      "type": "line",
+      "text": "and I stood before my brothers,",
+      "verse": "7:18",
+      "lineIndex": 90
+    },
+    {
+      "start": 258.356,
+      "end": 259.935,
+      "type": "line",
+      "text": "and I spoke to them again.",
+      "verse": "7:18",
+      "lineIndex": 91
+    },
+    {
+      "start": 260.615,
+      "end": 262.612,
+      "type": "line",
+      "text": "And then they were angry with me again,",
+      "verse": "7:19",
+      "lineIndex": 92
+    },
+    {
+      "start": 262.792,
+      "end": 265.068,
+      "type": "line",
+      "text": "and sought to lay hands upon me;",
+      "verse": "7:19",
+      "lineIndex": 93
+    },
+    {
+      "start": 265.248,
+      "end": 268.22,
+      "type": "line",
+      "text": "but behold, one of the daughters of Ishmael,",
+      "verse": "7:19",
+      "lineIndex": 94
+    },
+    {
+      "start": 268.4,
+      "end": 270.258,
+      "type": "line",
+      "text": "yes, and also her mother,",
+      "verse": "7:19",
+      "lineIndex": 95
+    },
+    {
+      "start": 270.438,
+      "end": 272.621,
+      "type": "line",
+      "text": "and one of the sons of Ishmael,",
+      "verse": "7:19",
+      "lineIndex": 96
+    },
+    {
+      "start": 272.801,
+      "end": 274.473,
+      "type": "line",
+      "text": "pleaded with my brothers,",
+      "verse": "7:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 274.653,
+      "end": 277.532,
+      "type": "line",
+      "text": "so much so that they softened their hearts;",
+      "verse": "7:19",
+      "lineIndex": 98
+    },
+    {
+      "start": 277.712,
+      "end": 280.638,
+      "type": "line",
+      "text": "and they ceased striving to take away my life.",
+      "verse": "7:19",
+      "lineIndex": 99
+    },
+    {
+      "start": 281.318,
+      "end": 283.361,
+      "type": "line",
+      "text": "And then they were sorrowful,",
+      "verse": "7:20",
+      "lineIndex": 101
+    },
+    {
+      "start": 283.541,
+      "end": 285.584,
+      "type": "line",
+      "text": "because of their wickedness,",
+      "verse": "7:20",
+      "lineIndex": 102
+    },
+    {
+      "start": 285.764,
+      "end": 288.783,
+      "type": "line",
+      "text": "so much so that they bowed down before me,",
+      "verse": "7:20",
+      "lineIndex": 103
+    },
+    {
+      "start": 288.963,
+      "end": 290.542,
+      "type": "line",
+      "text": "and pleaded with me",
+      "verse": "7:20",
+      "lineIndex": 104
+    },
+    {
+      "start": 290.722,
+      "end": 294.855,
+      "type": "line",
+      "text": "that I would forgive them of the thing that they had done against me.",
+      "verse": "7:20",
+      "lineIndex": 105
+    },
+    {
+      "start": 295.535,
+      "end": 299.39,
+      "type": "line",
+      "text": "And then I did frankly forgive them all that they had done,",
+      "verse": "7:21",
+      "lineIndex": 106
+    },
+    {
+      "start": 299.57,
+      "end": 301.753,
+      "type": "line",
+      "text": "and I urged them that they would pray",
+      "verse": "7:21",
+      "lineIndex": 107
+    },
+    {
+      "start": 301.933,
+      "end": 304.209,
+      "type": "line",
+      "text": "to the Lord their God for forgiveness.",
+      "verse": "7:21",
+      "lineIndex": 108
+    },
+    {
+      "start": 304.389,
+      "end": 305.736,
+      "type": "line",
+      "text": "And then they did so.",
+      "verse": "7:21",
+      "lineIndex": 109
+    },
+    {
+      "start": 305.916,
+      "end": 308.563,
+      "type": "line",
+      "text": "And after they had done praying to the Lord",
+      "verse": "7:21",
+      "lineIndex": 110
+    },
+    {
+      "start": 308.743,
+      "end": 311.204,
+      "type": "line",
+      "text": "we did again travel on our journey",
+      "verse": "7:21",
+      "lineIndex": 111
+    },
+    {
+      "start": 311.384,
+      "end": 313.613,
+      "type": "line",
+      "text": "towards the tent of our father.",
+      "verse": "7:21",
+      "lineIndex": 112
+    },
+    {
+      "start": 314.293,
+      "end": 317.637,
+      "type": "line",
+      "text": "And then we came down to the tent of our father.",
+      "verse": "7:22",
+      "lineIndex": 113
+    },
+    {
+      "start": 317.817,
+      "end": 321.161,
+      "type": "line",
+      "text": "And after I and my brothers and all the house of Ishmael",
+      "verse": "7:22",
+      "lineIndex": 114
+    },
+    {
+      "start": 321.341,
+      "end": 323.756,
+      "type": "line",
+      "text": "had come down to the tent of my father,",
+      "verse": "7:22",
+      "lineIndex": 115
+    },
+    {
+      "start": 323.936,
+      "end": 326.212,
+      "type": "line",
+      "text": "they gave thanks to the Lord their God;",
+      "verse": "7:22",
+      "lineIndex": 116
+    },
+    {
+      "start": 326.392,
+      "end": 329.643,
+      "type": "line",
+      "text": "and they offered sacrifice and burnt offerings to him.",
+      "verse": "7:22",
+      "lineIndex": 117
+    }
+  ]
+}
