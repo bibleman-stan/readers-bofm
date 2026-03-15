@@ -12,7 +12,7 @@ results = []
 
 for ch in range(1, TOTAL_CHAPTERS + 1):
     print("=== " + BOOK_NAME + " Chapter " + str(ch) + " ===")
-    lines, timing = parse_chapter("books/" + BOOK_ID + ".html", ch)
+    lines, timing = parse_chapter("books/" + BOOK_ID + ".html", BOOK_ID, ch)
     speakable = [l for l in lines if l.get("text", "").strip()]
     print("  Lines: " + str(len(speakable)))
     audio_segments = []
