@@ -1775,7 +1775,7 @@
     <div class="toggle-row">
       <div class="toggle-desc"><strong>Verse mode</strong><br>Show text as running prose</div>
       <label class="toggle-switch">
-        <input type="checkbox" id="flow-toggle" checked onchange="toggleFlow(this.checked)">
+        <input type="checkbox" id="flow-toggle" onchange="toggleFlow(this.checked)">
         <span class="toggle-track"></span>
       </label>
     </div>
@@ -2154,8 +2154,8 @@
     </div>
 
     <div class="feature-card">
-      <div class="feature-name"><span class="pill-demo" style="color: #ccc; border-color: #889;">Verses</span></div>
-      <div class="feature-desc">Cycles through three text layouts. <strong>Verses</strong> (default) flows as continuous prose. <strong>Lines</strong> breaks the text at natural phrase boundaries for easier oral reading. <strong>Parallels</strong> indents the text to reveal Hebrew poetic structures — parallelisms, chiasms, and other patterns. Tap repeatedly to cycle through all three.</div>
+      <div class="feature-name"><span class="pill-demo" style="color: #27ae60; border-color: #27ae60;">Lines</span></div>
+      <div class="feature-desc">Cycles through three text layouts. <strong>Lines</strong> (default) breaks the text at natural phrase boundaries for easier oral reading — and is the layout that audio narration follows. <strong>Parallels</strong> indents the text to reveal Hebrew poetic structures — parallelisms, chiasms, and other patterns. <strong>Verses</strong> flows as continuous prose. Tap repeatedly to cycle through all three.</div>
     </div>
 
     <div class="feature-card">
@@ -2170,7 +2170,7 @@
 
     <div class="feature-card">
       <div class="feature-name"><span class="pill-demo" style="color: #ccc; border-color: #889;">⚙</span></div>
-      <div class="feature-desc">Opens display settings: toggle continuous-flow or verse mode, show or hide punctuation, adjust text density and line spacing, and switch between dark and light mode.</div>
+      <div class="feature-desc">Opens display settings: toggle verse mode (continuous prose) or sense-line mode, show or hide punctuation, adjust text density and line spacing, and switch between dark and light mode.</div>
     </div>
 
     <h2>The Layers</h2>
@@ -2236,7 +2236,7 @@
 
   // Tab defaults
   var tabDefaults = {
-    read:  { flow: true,  punct: true,  wrap: true,  spacing: 'airy',   size: 'medium', density: 'spacious' }
+    read:  { flow: false,  punct: true,  wrap: true,  spacing: 'airy',   size: 'medium', density: 'spacious' }
   };
 
   var tabOverrides = { read: {} };
@@ -2507,7 +2507,7 @@
 
   // ---- TEXT MODE TOGGLE (cycles: verses → lines → parallels → verses) ----
   // textMode: 0=verses, 1=lines, 2=parallels
-  var textMode = 0;
+  var textMode = 1;
   var linesOn = false;  // kept for backward compat with settings
   function applyTextMode(mode) {
     textMode = mode;
@@ -2959,6 +2959,11 @@
   // ---- ABOUT PAGE ----
   window.showAboutPage = function() {
     closeAllPanels();
+    // Pause collapse logic to prevent oscillation during page transition
+    pauseCollapse();
+    // Force toolbar expanded before switching content
+    toolbar.classList.remove('toolbar-collapsed');
+    toolbar.classList.remove('toolbar-show-summary');
     document.getElementById('about-page').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'none';
     // Hide floating chapter arrows
@@ -2969,10 +2974,12 @@
     if (window.location.hash) {
       history.replaceState(null, '', window.location.pathname);
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Scroll to top instantly (smooth scroll + collapse logic = oscillation)
+    window.scrollTo({ top: 0 });
   };
 
   window.hideAboutPage = function() {
+    pauseCollapse();
     document.getElementById('about-page').style.display = 'none';
     document.getElementById('book-content-container').style.display = 'block';
   };
@@ -3108,9 +3115,11 @@
 
   // ── Touch tracking: distinguish taps from scroll gestures on mobile ──
   var touchStartX = 0, touchStartY = 0, touchMoved = false;
+  var touchStartScrollY = 0;
   document.addEventListener('touchstart', function(e) {
     touchStartX = e.touches[0].clientX;
     touchStartY = e.touches[0].clientY;
+    touchStartScrollY = window.scrollY;
     touchMoved = false;
   }, { passive: true });
   document.addEventListener('touchmove', function(e) {
@@ -3118,6 +3127,20 @@
     var dx = Math.abs(e.touches[0].clientX - touchStartX);
     var dy = Math.abs(e.touches[0].clientY - touchStartY);
     if (dx > 10 || dy > 10) touchMoved = true;
+  }, { passive: true });
+
+  // ── Extended drag-down from toolbar: scroll to title banner from anywhere ──
+  // If user starts a downward drag from the toolbar area (top ~60px of viewport)
+  // and drags down more than 100px, scroll to very top to reveal the title banner.
+  document.addEventListener('touchend', function(e) {
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    // Only trigger if drag started in the toolbar zone (top 60px of viewport)
+    if (dy > 100 && touchStartY < 60) {
+      pauseCollapse();
+      toolbar.classList.remove('toolbar-collapsed');
+      toolbar.classList.remove('toolbar-show-summary');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }, { passive: true });
 
   // Tap the summary bar — if toolbar is hidden, show it; otherwise toggle expand/collapse
