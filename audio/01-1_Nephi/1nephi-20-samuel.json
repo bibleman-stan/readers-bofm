@@ -1,0 +1,760 @@
+{
+  "book": "1nephi",
+  "bookName": "1 Nephi",
+  "chapter": 20,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 260.536,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 1.672,
+      "type": "line",
+      "text": "Hearken and hear this,",
+      "verse": "20:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 1.852,
+      "end": 3.431,
+      "type": "line",
+      "text": "O house of Jacob,",
+      "verse": "20:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 3.611,
+      "end": 6.397,
+      "type": "line",
+      "text": "who are called by the name of Israel,",
+      "verse": "20:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 6.577,
+      "end": 9.828,
+      "type": "line",
+      "text": "and are come forth out of the waters of Judah,",
+      "verse": "20:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 10.008,
+      "end": 12.562,
+      "type": "line",
+      "text": "or out of the waters of baptism,",
+      "verse": "20:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 12.742,
+      "end": 14.971,
+      "type": "line",
+      "text": "who swear by the name of the Lord",
+      "verse": "20:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 15.151,
+      "end": 17.845,
+      "type": "line",
+      "text": "and make mention of the God of Israel,",
+      "verse": "20:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 18.025,
+      "end": 19.975,
+      "type": "line",
+      "text": "yet they swear not in truth",
+      "verse": "20:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 20.155,
+      "end": 21.502,
+      "type": "line",
+      "text": "nor in righteousness.",
+      "verse": "20:1",
+      "lineIndex": 9
+    },
+    {
+      "start": 22.182,
+      "end": 25.247,
+      "type": "line",
+      "text": "Nevertheless, they call themselves of the holy city,",
+      "verse": "20:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 25.427,
+      "end": 29.003,
+      "type": "line",
+      "text": "but they do not stay themselves upon the God of Israel,",
+      "verse": "20:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 29.183,
+      "end": 30.901,
+      "type": "line",
+      "text": "who is the Lord of Hosts;",
+      "verse": "20:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 31.081,
+      "end": 33.403,
+      "type": "line",
+      "text": "yea, the Lord of Hosts is his name.",
+      "verse": "20:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 34.083,
+      "end": 37.845,
+      "type": "line",
+      "text": "Behold, I have declared the former things from the beginning;",
+      "verse": "20:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 38.025,
+      "end": 40.347,
+      "type": "line",
+      "text": "and they went forth out of my mouth,",
+      "verse": "20:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 40.527,
+      "end": 42.292,
+      "type": "line",
+      "text": "and I showed them.",
+      "verse": "20:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 42.472,
+      "end": 44.19,
+      "type": "line",
+      "text": "I did show them suddenly.",
+      "verse": "20:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 44.87,
+      "end": 46.217,
+      "type": "line",
+      "text": "And I did it",
+      "verse": "20:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 46.397,
+      "end": 48.812,
+      "type": "line",
+      "text": "because I knew that thou art obstinate,",
+      "verse": "20:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 48.992,
+      "end": 52.614,
+      "type": "line",
+      "text": "and thy neck is an iron sinew, and thy brow brass;",
+      "verse": "20:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 53.294,
+      "end": 56.266,
+      "type": "line",
+      "text": "And I have even from the beginning declared to thee;",
+      "verse": "20:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 56.446,
+      "end": 60.208,
+      "type": "line",
+      "text": "before it came to pass I showed them thee; and I showed them",
+      "verse": "20:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 60.388,
+      "end": 62.989,
+      "type": "line",
+      "text": "for fear lest thou shouldst say\u2014",
+      "verse": "20:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 63.169,
+      "end": 65.073,
+      "type": "line",
+      "text": "Mine idol hath done them,",
+      "verse": "20:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 65.253,
+      "end": 68.782,
+      "type": "line",
+      "text": "and my graven image and my molten image hath commanded them.",
+      "verse": "20:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 69.462,
+      "end": 71.738,
+      "type": "line",
+      "text": "Thou hast seen and heard all this;",
+      "verse": "20:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 71.918,
+      "end": 73.451,
+      "type": "line",
+      "text": "and will ye not declare them?",
+      "verse": "20:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 73.631,
+      "end": 75.442,
+      "type": "line",
+      "text": "And that I have showed thee",
+      "verse": "20:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 75.622,
+      "end": 77.572,
+      "type": "line",
+      "text": "new things from this time,",
+      "verse": "20:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 77.752,
+      "end": 79.285,
+      "type": "line",
+      "text": "even hidden things,",
+      "verse": "20:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 79.465,
+      "end": 81.09,
+      "type": "line",
+      "text": "and thou didst not know them.",
+      "verse": "20:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 81.77,
+      "end": 84.928,
+      "type": "line",
+      "text": "They are created now, and not from the beginning,",
+      "verse": "20:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 85.108,
+      "end": 86.641,
+      "type": "line",
+      "text": "even before the day",
+      "verse": "20:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 86.821,
+      "end": 91.744,
+      "type": "line",
+      "text": "when thou heardest them not they were declared unto thee, lest thou shouldst say\u2014",
+      "verse": "20:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 91.924,
+      "end": 93.41,
+      "type": "line",
+      "text": "Behold I knew them.",
+      "verse": "20:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 94.09,
+      "end": 95.762,
+      "type": "line",
+      "text": "Yea, and thou heardest not;",
+      "verse": "20:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 95.942,
+      "end": 97.66,
+      "type": "line",
+      "text": "yea, thou knewest not;",
+      "verse": "20:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 97.84,
+      "end": 101.88,
+      "type": "line",
+      "text": "yea, from that time thine ear was not opened; for I knew",
+      "verse": "20:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 102.06,
+      "end": 104.8,
+      "type": "line",
+      "text": "that thou wouldst deal very treacherously,",
+      "verse": "20:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 104.98,
+      "end": 107.674,
+      "type": "line",
+      "text": "and wast called a transgressor from the womb.",
+      "verse": "20:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 108.354,
+      "end": 112.116,
+      "type": "line",
+      "text": "Nevertheless, for my name's sake will I defer mine anger,",
+      "verse": "20:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 112.296,
+      "end": 113.689,
+      "type": "line",
+      "text": "and for my praise",
+      "verse": "20:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 113.869,
+      "end": 116.841,
+      "type": "line",
+      "text": "will I refrain from thee, that I cut thee not off.",
+      "verse": "20:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 117.521,
+      "end": 118.728,
+      "type": "line",
+      "text": "For, behold,",
+      "verse": "20:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 118.908,
+      "end": 120.394,
+      "type": "line",
+      "text": "I have refined thee,",
+      "verse": "20:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 120.574,
+      "end": 123.732,
+      "type": "line",
+      "text": "I have chosen thee in the furnace of affliction.",
+      "verse": "20:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 124.412,
+      "end": 125.852,
+      "type": "line",
+      "text": "For mine own sake,",
+      "verse": "20:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 126.032,
+      "end": 128.447,
+      "type": "line",
+      "text": "yea, for mine own sake will I do this,",
+      "verse": "20:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 128.627,
+      "end": 131.553,
+      "type": "line",
+      "text": "for I will not suffer my name to be polluted,",
+      "verse": "20:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 131.733,
+      "end": 134.38,
+      "type": "line",
+      "text": "and I will not give my glory unto another.",
+      "verse": "20:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 135.06,
+      "end": 138.264,
+      "type": "line",
+      "text": "Hearken unto me, O Jacob, and Israel my called,",
+      "verse": "20:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 138.444,
+      "end": 139.837,
+      "type": "line",
+      "text": "for I am he;",
+      "verse": "20:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 140.017,
+      "end": 142.293,
+      "type": "line",
+      "text": "I am the first, and I am also the last.",
+      "verse": "20:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 142.973,
+      "end": 146.317,
+      "type": "line",
+      "text": "Mine hand hath also laid the foundation of the earth,",
+      "verse": "20:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 146.497,
+      "end": 149.191,
+      "type": "line",
+      "text": "and my right hand hath spanned the heavens.",
+      "verse": "20:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 149.371,
+      "end": 152.065,
+      "type": "line",
+      "text": "I call unto them and they stand up together.",
+      "verse": "20:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 152.745,
+      "end": 155.299,
+      "type": "line",
+      "text": "All ye, assemble yourselves, and hear;",
+      "verse": "20:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 155.479,
+      "end": 158.637,
+      "type": "line",
+      "text": "who among them hath declared these things unto them?",
+      "verse": "20:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 158.817,
+      "end": 160.442,
+      "type": "line",
+      "text": "The Lord hath loved him;",
+      "verse": "20:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 160.622,
+      "end": 164.337,
+      "type": "line",
+      "text": "yea, and he will fulfil his word which he hath declared by them;",
+      "verse": "20:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 164.517,
+      "end": 166.978,
+      "type": "line",
+      "text": "and he will do his pleasure on Babylon,",
+      "verse": "20:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 167.158,
+      "end": 169.712,
+      "type": "line",
+      "text": "and his arm shall come upon the Chaldeans.",
+      "verse": "20:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 170.392,
+      "end": 172.157,
+      "type": "line",
+      "text": "Also, saith the Lord;",
+      "verse": "20:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 172.337,
+      "end": 174.566,
+      "type": "line",
+      "text": "I the Lord, yea, I have spoken;",
+      "verse": "20:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 174.746,
+      "end": 176.882,
+      "type": "line",
+      "text": "yea, I have called him to declare,",
+      "verse": "20:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 177.062,
+      "end": 178.548,
+      "type": "line",
+      "text": "I have brought him,",
+      "verse": "20:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 178.728,
+      "end": 180.771,
+      "type": "line",
+      "text": "and he shall make his way prosperous.",
+      "verse": "20:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 181.451,
+      "end": 183.123,
+      "type": "line",
+      "text": "Come ye near unto me;",
+      "verse": "20:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 183.303,
+      "end": 186.322,
+      "type": "line",
+      "text": "I have not spoken in secret; from the beginning,",
+      "verse": "20:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 186.502,
+      "end": 189.939,
+      "type": "line",
+      "text": "from the time that it was declared have I spoken;",
+      "verse": "20:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 190.119,
+      "end": 193.091,
+      "type": "line",
+      "text": "and the Lord God, and his Spirit, hath sent me.",
+      "verse": "20:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 193.771,
+      "end": 197.208,
+      "type": "line",
+      "text": "And thus saith the Lord, thy Redeemer, the Holy One of Israel;",
+      "verse": "20:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 197.388,
+      "end": 200.964,
+      "type": "line",
+      "text": "I have sent him, the Lord thy God who teacheth thee to profit,",
+      "verse": "20:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 201.144,
+      "end": 204.813,
+      "type": "line",
+      "text": "who leadeth thee by the way thou shouldst go, hath done it.",
+      "verse": "20:17",
+      "lineIndex": 80
+    },
+    {
+      "start": 205.493,
+      "end": 208.326,
+      "type": "line",
+      "text": "O that thou hadst hearkened to my commandments\u2014",
+      "verse": "20:18",
+      "lineIndex": 81
+    },
+    {
+      "start": 208.506,
+      "end": 210.828,
+      "type": "line",
+      "text": "then had thy peace been as a river,",
+      "verse": "20:18",
+      "lineIndex": 82
+    },
+    {
+      "start": 211.008,
+      "end": 214.073,
+      "type": "line",
+      "text": "and thy righteousness as the waves of the sea.",
+      "verse": "20:18",
+      "lineIndex": 83
+    },
+    {
+      "start": 214.753,
+      "end": 217.261,
+      "type": "line",
+      "text": "Thy seed also had been as the sand;",
+      "verse": "20:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 217.441,
+      "end": 219.438,
+      "type": "line",
+      "text": "the offspring of thy bowels",
+      "verse": "20:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 219.618,
+      "end": 221.243,
+      "type": "line",
+      "text": "like the gravel thereof;",
+      "verse": "20:19",
+      "lineIndex": 86
+    },
+    {
+      "start": 221.423,
+      "end": 225.788,
+      "type": "line",
+      "text": "his name should not have been cut off nor destroyed from before me.",
+      "verse": "20:19",
+      "lineIndex": 87
+    },
+    {
+      "start": 226.468,
+      "end": 231.623,
+      "type": "line",
+      "text": "Go ye forth of Babylon, flee ye from the Chaldeans, with a voice of singing",
+      "verse": "20:20",
+      "lineIndex": 89
+    },
+    {
+      "start": 231.803,
+      "end": 233.475,
+      "type": "line",
+      "text": "declare ye, tell this,",
+      "verse": "20:20",
+      "lineIndex": 90
+    },
+    {
+      "start": 233.655,
+      "end": 235.745,
+      "type": "line",
+      "text": "utter to the end of the earth;",
+      "verse": "20:20",
+      "lineIndex": 91
+    },
+    {
+      "start": 235.925,
+      "end": 239.176,
+      "type": "line",
+      "text": "say ye: The Lord hath redeemed his servant Jacob.",
+      "verse": "20:20",
+      "lineIndex": 92
+    },
+    {
+      "start": 239.856,
+      "end": 241.528,
+      "type": "line",
+      "text": "And they thirsted not;",
+      "verse": "20:21",
+      "lineIndex": 93
+    },
+    {
+      "start": 241.708,
+      "end": 245.237,
+      "type": "line",
+      "text": "he led them through the deserts; he caused the waters",
+      "verse": "20:21",
+      "lineIndex": 94
+    },
+    {
+      "start": 245.417,
+      "end": 247.785,
+      "type": "line",
+      "text": "to flow out of the rock for them;",
+      "verse": "20:21",
+      "lineIndex": 95
+    },
+    {
+      "start": 247.965,
+      "end": 251.773,
+      "type": "line",
+      "text": "he clave the rock also and the waters gushed out.",
+      "verse": "20:21",
+      "lineIndex": 96
+    },
+    {
+      "start": 252.453,
+      "end": 255.054,
+      "type": "line",
+      "text": "And notwithstanding he hath done all this,",
+      "verse": "20:22",
+      "lineIndex": 97
+    },
+    {
+      "start": 255.234,
+      "end": 257.602,
+      "type": "line",
+      "text": "and greater also, there is no peace,",
+      "verse": "20:22",
+      "lineIndex": 98
+    },
+    {
+      "start": 257.782,
+      "end": 259.872,
+      "type": "line",
+      "text": "saith the Lord, unto the wicked.",
+      "verse": "20:22",
+      "lineIndex": 99
+    }
+  ]
+}
