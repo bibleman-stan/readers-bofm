@@ -275,7 +275,7 @@
     background: var(--bg-raised);
     border-top: 1px solid var(--border);
     border-radius: 16px 16px 0 0;
-    padding: 0 20px 20px;
+    padding: 0 20px 14px;
     transform: translateY(100%);
     transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
     z-index: 200;
@@ -285,7 +285,7 @@
   .sheet.open { transform: translateY(0); }
 
   .sheet-handle-area {
-    padding: 10px 0 4px;
+    padding: 8px 0 2px;
     cursor: grab;
     display: flex;
     justify-content: center;
@@ -298,15 +298,15 @@
   }
 
   .sheet-section {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .sheet-label {
-    font-size: 0.62em;
+    font-size: 0.6em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--text-faint);
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     font-weight: 600;
   }
 
@@ -315,7 +315,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 7px 0;
+    padding: 5px 0;
   }
   .toggle-row + .toggle-row {
     border-top: 1px solid var(--border);
@@ -326,29 +326,29 @@
     min-width: 0;
   }
   .toggle-name {
-    font-size: 0.86em;
+    font-size: 0.82em;
     color: var(--text);
     font-weight: 400;
   }
   .toggle-desc {
-    font-size: 0.72em;
+    font-size: 0.68em;
     color: var(--text-faint);
-    margin-top: 1px;
+    margin-top: 0;
   }
 
   .toggle-switch {
     position: relative;
-    width: 44px;
-    height: 26px;
+    width: 40px;
+    height: 24px;
     flex-shrink: 0;
-    margin-left: 16px;
+    margin-left: 12px;
   }
   .toggle-switch input { display: none; }
   .toggle-track {
     position: absolute;
     inset: 0;
     background: rgba(255,255,255,0.08);
-    border-radius: 13px;
+    border-radius: 12px;
     cursor: pointer;
     transition: background 0.2s;
   }
@@ -356,7 +356,7 @@
     content: '';
     position: absolute;
     top: 3px; left: 3px;
-    width: 20px; height: 20px;
+    width: 18px; height: 18px;
     border-radius: 50%;
     background: #666;
     transition: all 0.2s;
@@ -365,7 +365,7 @@
     background: var(--accent);
   }
   .toggle-switch input:checked + .toggle-track::after {
-    left: 21px;
+    left: 19px;
     background: #fff;
   }
 
@@ -462,7 +462,7 @@
 
   .size-btn {
     flex: 1;
-    padding: 6px 0;
+    padding: 7px 0;
     border-radius: 8px;
     border: 1px solid var(--border);
     background: none;
@@ -471,6 +471,10 @@
     cursor: pointer;
     text-align: center;
     transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
   }
   .size-btn:hover {
     border-color: rgba(255,255,255,0.1);
@@ -482,13 +486,11 @@
     background: var(--accent-dim);
   }
   .size-btn .letter {
-    display: block;
-    font-size: 0.9em;
+    font-size: 0.88em;
     font-weight: 600;
-    margin-bottom: 1px;
   }
   .size-btn .label {
-    font-size: 0.58em;
+    font-size: 0.68em;
     opacity: 0.6;
   }
 
