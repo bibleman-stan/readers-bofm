@@ -1459,6 +1459,38 @@
     background: none; border: none; color: #888; font-size: 1.3em; cursor: pointer; padding: 4px;
   }
 
+  .search-ops {
+    display: flex;
+    gap: 6px;
+    padding: 4px 14px 6px;
+    flex-wrap: wrap;
+  }
+  .search-op {
+    padding: 3px 10px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    background: rgba(255,255,255,0.04);
+    color: #999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.68em;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .search-op:active {
+    background: rgba(255,255,255,0.12);
+    color: #ccc;
+  }
+  body.light-mode .search-op {
+    border-color: #ccc;
+    background: rgba(0,0,0,0.04);
+    color: #777;
+  }
+  body.light-mode .search-op:active {
+    background: rgba(0,0,0,0.10);
+    color: #444;
+  }
+
   #search-body {
     padding: 16px;
   }
@@ -3240,6 +3272,34 @@ function flushAndReload() {
     }
   };
 
+  // Insert search operator at cursor position in the search input
+  window.insertSearchOp = function(before, after) {
+    var input = document.getElementById('search-input');
+    input.focus();
+    var start = input.selectionStart;
+    var end = input.selectionEnd;
+    var val = input.value;
+    if (after) {
+      // Wrapping operator (parens or quotes): wrap selection or insert empty pair
+      var selected = val.substring(start, end);
+      var insert = before + selected + after;
+      input.value = val.substring(0, start) + insert + val.substring(end);
+      if (selected.length > 0) {
+        // Place cursor after the closing wrapper
+        input.selectionStart = input.selectionEnd = start + insert.length;
+      } else {
+        // Place cursor between the pair
+        input.selectionStart = input.selectionEnd = start + before.length;
+      }
+    } else {
+      // Simple insert (AND, OR, NOT, NEAR)
+      input.value = val.substring(0, start) + before + val.substring(end);
+      input.selectionStart = input.selectionEnd = start + before.length;
+    }
+    // Trigger the search debounce
+    input.dispatchEvent(new Event('input'));
+  };
+
   window.closeSearch = function() {
     document.getElementById('search-overlay').classList.remove('open');
     document.getElementById('search-scrim').classList.remove('open');
@@ -3920,7 +3980,14 @@ function flushAndReload() {
     <input id="search-input" type="text" placeholder="Search..." autocomplete="off" autocorrect="off" spellcheck="false">
     <button id="search-close" onclick="closeSearch()">&#10005;</button>
   </div>
-  <div style="padding: 2px 14px 4px; font-size: 0.7em; color: #666; line-height: 1.4;">Try: <em>faith AND works</em> · <em>pray NOT temple</em> · <em>fire NEAR2 spirit</em> · <em>"exact phrase"</em></div>
+  <div class="search-ops">
+    <span class="search-op" onclick="insertSearchOp(' AND ')">AND</span>
+    <span class="search-op" onclick="insertSearchOp(' OR ')">OR</span>
+    <span class="search-op" onclick="insertSearchOp(' NOT ')">NOT</span>
+    <span class="search-op" onclick="insertSearchOp('(', ')')">( )</span>
+    <span class="search-op" onclick="insertSearchOp('&quot;', '&quot;')">" "</span>
+    <span class="search-op" onclick="insertSearchOp(' NEAR2 ')">NEAR</span>
+  </div>
   <div id="search-body">
     <div id="search-count"></div>
     <div id="search-chart">
