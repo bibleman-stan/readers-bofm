@@ -1734,6 +1734,224 @@
     color: #3a3630;
   }
   body.light-mode .search-icon-btn:hover { border-color: #888; }
+
+  /* ── Annotation system ── */
+  .annotation-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #7cafc2;
+    margin-right: 4px;
+    vertical-align: middle;
+    opacity: 0.7;
+  }
+
+  #annotation-overlay, .annotation-overlay-base {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  #annotation-overlay.open, .annotation-overlay-base.open { opacity: 1; }
+
+  .annotation-modal {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 10px;
+    width: 92%;
+    max-width: 420px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 16px;
+  }
+  body.light-mode .annotation-modal { background: #fff; border-color: #ccc; }
+
+  .annotation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .annotation-ref {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #7cafc2;
+  }
+  .annotation-close {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0 4px;
+  }
+  .annotation-close:hover { color: #fff; }
+  body.light-mode .annotation-close:hover { color: #333; }
+
+  .annotation-preview {
+    font-size: 0.82em;
+    color: #888;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    max-height: 3.5em;
+    overflow: hidden;
+  }
+
+  .annotation-label {
+    display: block;
+    font-size: 0.78em;
+    color: #999;
+    margin-bottom: 4px;
+    margin-top: 10px;
+  }
+
+  .annotation-textarea {
+    width: 100%;
+    background: #1c1f24;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #d4d0c8;
+    font-family: Literata, Georgia, serif;
+    font-size: 0.9em;
+    padding: 8px 10px;
+    resize: vertical;
+    min-height: 60px;
+  }
+  body.light-mode .annotation-textarea { background: #f5f5f5; color: #333; border-color: #ccc; }
+
+  .annotation-input {
+    width: 100%;
+    background: #1c1f24;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #d4d0c8;
+    font-family: Literata, Georgia, serif;
+    font-size: 0.9em;
+    padding: 8px 10px;
+  }
+  body.light-mode .annotation-input { background: #f5f5f5; color: #333; border-color: #ccc; }
+
+  .annotation-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 0 0 6px 6px;
+    z-index: 10;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  body.light-mode .annotation-suggestions { background: #fff; border-color: #ccc; }
+
+  .annotation-suggestion {
+    padding: 6px 10px;
+    font-size: 0.85em;
+    color: #bbb;
+    cursor: pointer;
+  }
+  .annotation-suggestion:hover { background: #444; color: #fff; }
+  body.light-mode .annotation-suggestion { color: #555; }
+  body.light-mode .annotation-suggestion:hover { background: #eee; color: #222; }
+
+  .annotation-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .annotation-btn {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: Literata, Georgia, serif;
+    font-size: 0.85em;
+  }
+  .annotation-btn-save { background: #7cafc2; color: #fff; }
+  .annotation-btn-save:hover { background: #6a9db0; }
+  .annotation-btn-danger { background: none; color: #c66; border: 1px solid #c66; }
+  .annotation-btn-danger:hover { background: rgba(204,102,102,0.15); }
+  .annotation-btn-small { background: none; color: #999; border: 1px solid #666; padding: 4px 10px; font-size: 0.78em; cursor: pointer; border-radius: 4px; }
+  .annotation-btn-small:hover { color: #ccc; border-color: #888; }
+
+  /* Dashboard */
+  .annotation-dashboard-panel {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  body.light-mode .annotation-dashboard-panel { background: #fff; border-color: #ccc; }
+
+  .annotation-dashboard-auth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 10px;
+    font-size: 0.82em;
+    color: #888;
+  }
+
+  .annotation-dashboard-results {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 16px 16px;
+  }
+
+  .annotation-result-card {
+    background: #1c1f24;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  .annotation-result-card:hover { border-color: #7cafc2; }
+  body.light-mode .annotation-result-card { background: #f5f5f5; border-color: #ddd; }
+  body.light-mode .annotation-result-card:hover { border-color: #3a7a92; }
+
+  .annotation-result-ref {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #7cafc2;
+    margin-bottom: 4px;
+  }
+  .annotation-result-note {
+    font-size: 0.82em;
+    color: #999;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+  .annotation-result-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+  }
+  .annotation-tag-chip {
+    display: inline-block;
+    font-size: 0.72em;
+    background: rgba(124,175,194,0.15);
+    color: #7cafc2;
+    padding: 2px 8px;
+    border-radius: 10px;
+    border: 1px solid rgba(124,175,194,0.3);
+  }
 </style>
 </head>
 <body>
@@ -1898,6 +2116,7 @@
       <svg viewBox="0 0 24 24" style="width:14px; height:14px;"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1112 8.4a3.6 3.6 0 010 7.2z"/></svg><span id="gear-arrow" style="font-size:0.85em; margin-left:2px; opacity:0.5;">▾</span>
     </button>
     <button id="guide-btn" class="gear-btn" onclick="showAboutPage()" aria-label="Feature guide" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px; font-size: 13px; font-weight: 600;">?</button>
+    <button id="annotation-auth-btn" class="gear-btn" aria-label="Annotations" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px; font-size: 14px; display: none;">✎</button>
   </div>
 
   <!-- Background panel — book intros (shown on About tap) -->
@@ -2138,7 +2357,7 @@
 
     <div class="feature-card">
       <div class="feature-name"><span class="pill-demo" style="color: #999; border-color: #666; font-size: 1.1em;">🔍</span></div>
-      <div class="feature-desc">Opens full-text search across the entire Book of Mormon. Type a word to see all verses containing it (with stem matching — searching "pray" also finds "praying" and "prayed"). Use quotes for exact phrases, or Boolean operators (AND, OR, NOT) for advanced searches. Results are grouped by plate section and book. Recent searches are saved for quick access.</div>
+      <div class="feature-desc">Opens full-text search across the entire Book of Mormon. Type a word to see all verses containing it (with stem matching — searching "pray" also finds "praying" and "prayed"). Use quotes for exact phrases, Boolean operators (AND, OR, NOT), or proximity search (e.g. "fire NEAR2 spirit" finds verses where those words appear within two words of each other). Results are grouped by plate section and book, and tapping a result jumps to that verse. Recent searches are saved for quick access.</div>
     </div>
 
     <div class="feature-card">
@@ -2914,6 +3133,10 @@
     window.location.hash = lastHashWeSet;
     updateCollapsedSummary(bookId, chNum);
     updateFloatNav(bookId, chNum);
+    // Load annotations for this chapter (if signed in)
+    if (typeof ANNOTATIONS !== 'undefined' && ANNOTATIONS.loadChapterAnnotations) {
+      ANNOTATIONS.loadChapterAnnotations(bookId, chNum);
+    }
   };
 
   window.showChapterGrid = function(bookId) {
@@ -4140,6 +4363,9 @@ function flushAndReload() {
   function navigateToVerse(bookId, chapter, verse) {
     closeSearch();
     if (typeof switchBook === 'function') {
+      // Ensure welcome/about pages are dismissed so book content is visible
+      if (typeof hideWelcome === 'function') hideWelcome();
+      if (typeof hideAboutPage === 'function') hideAboutPage();
       // Set a flag so we can scroll after showChapter's scrollTo(top:0) settles
       window._pendingVerseScroll = { bookId: bookId, chapter: chapter, verse: verse };
       switchBook(bookId, chapter);
@@ -4235,4 +4461,9 @@ function flushAndReload() {
   </div>
 </div>
 <script src="narration.js" defer></script>
+<!-- Firebase SDK (compat) — needed for annotations -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js" defer></script>
+<script src="annotations.js" defer></script>
 </body></html>
