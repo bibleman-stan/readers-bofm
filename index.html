@@ -465,6 +465,32 @@
     border-color: var(--border-accent);
   }
 
+  .landing-book.active {
+    background: var(--accent-dim);
+    color: var(--text);
+    border-color: var(--border-accent);
+  }
+  .landing-expand {
+    display: none;
+    grid-column: 1 / -1;
+    padding: 10px 4px 14px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+  }
+  .landing-expand.visible { display: block; }
+  .landing-expand .picker-ch-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 4px;
+  }
+  .landing-expand .picker-intro {
+    border-top: 1px solid var(--border);
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+
   .landing-link {
     display: inline-block;
     margin-top: 1.5em;
@@ -2713,16 +2739,59 @@
       var meta = bookMeta[id];
       var btn = document.createElement('div');
       btn.className = 'landing-book';
+      btn.setAttribute('data-book', id);
       btn.textContent = meta.abbr;
       btn.onclick = (function(bookId) {
-        return function() { pickLandingBook(bookId); };
+        return function() { toggleLandingBook(bookId); };
       })(id);
       grid.appendChild(btn);
+
+      // Expandable area with chapters + intro
+      var expand = document.createElement('div');
+      expand.className = 'landing-expand';
+      expand.id = 'landing-expand-' + id;
+      var chGrid = document.createElement('div');
+      chGrid.className = 'picker-ch-grid';
+      for (var c = 1; c <= meta.chapters; c++) {
+        var ch = document.createElement('div');
+        ch.className = 'picker-ch';
+        ch.textContent = c;
+        ch.onclick = (function(bookId, chNum) {
+          return function(e) {
+            e.stopPropagation();
+            switchBook(bookId, chNum);
+          };
+        })(id, c);
+        chGrid.appendChild(ch);
+      }
+      expand.appendChild(chGrid);
+      if (bookIntros[id]) {
+        var intro = document.createElement('div');
+        intro.className = 'picker-intro';
+        intro.innerHTML = bookIntros[id];
+        expand.appendChild(intro);
+      }
+      grid.appendChild(expand);
     }
   }
 
-  function pickLandingBook(bookId) {
-    switchBook(bookId);
+  function toggleLandingBook(bookId) {
+    var expand = document.getElementById('landing-expand-' + bookId);
+    if (!expand) return;
+    var wasVisible = expand.classList.contains('visible');
+    // Close all others
+    document.querySelectorAll('.landing-expand.visible').forEach(function(e) { e.classList.remove('visible'); });
+    document.querySelectorAll('.landing-book.active').forEach(function(b) { b.classList.remove('active'); });
+    if (!wasVisible) {
+      expand.classList.add('visible');
+      var btn = document.querySelector('.landing-book[data-book="' + bookId + '"]');
+      if (btn) btn.classList.add('active');
+      // For single-chapter books, just navigate
+      var meta = bookMeta[bookId];
+      if (meta && meta.chapters === 1) {
+        switchBook(bookId, 1);
+      }
+    }
   }
 
   document.addEventListener('click', function(e) {
