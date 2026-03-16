@@ -1828,7 +1828,7 @@
         <span class="toggle-track"></span>
       </label>
     </div>
-    <div class="toggle-row" id="listen-toggle-row" style="display:none;">
+    <div class="toggle-row" id="listen-toggle-row">
       <div class="toggle-info">
         <div class="toggle-name">Listen</div>
         <div class="toggle-desc">Audio narration</div>
@@ -2715,10 +2715,6 @@
     // Load annotations for this chapter (if signed in)
     if (typeof ANNOTATIONS !== 'undefined' && ANNOTATIONS.loadChapterAnnotations) {
       ANNOTATIONS.loadChapterAnnotations(bookId, chNum);
-    }
-    // Check if narration audio is available for this chapter
-    if (typeof NARRATION !== 'undefined' && NARRATION.checkAudio) {
-      NARRATION.checkAudio();
     }
   };
 

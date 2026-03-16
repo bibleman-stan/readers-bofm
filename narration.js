@@ -1232,24 +1232,6 @@ const NARRATION = (() => {
         }
       });
     }
-    // Show the listen toggle row (hidden by default) — will be
-    // shown/hidden per-chapter by checkAudioAvailability()
-    checkAudioAvailability();
-  }
-
-  // Check if audio exists for the current chapter and show/hide the toggle
-  function checkAudioAvailability() {
-    var row = document.getElementById('listen-toggle-row');
-    if (!row) return;
-    var ch = getCurrentChapter();
-    if (!ch) { row.style.display = 'none'; return; }
-    var folder = BOOK_FOLDERS[ch.bookId] || ch.bookId;
-    var url = AUDIO_BASE + folder + '/' + ch.bookId + '-' + ch.chapter + '-' + VOICE + '.json';
-    fetch(url, { method: 'HEAD' }).then(function(r) {
-      row.style.display = r.ok ? '' : 'none';
-    }).catch(function() {
-      row.style.display = 'none';
-    });
   }
 
   // ── Initialize ──
@@ -1268,7 +1250,6 @@ const NARRATION = (() => {
     stop: stopPlayback,
     setSpeed,
     seekToLine,
-    checkAudio: checkAudioAvailability,
     get isPlaying() { return playing; },
     get isPaused() { return audioEl && audioEl.paused; },
     get currentLine() { return currentLineIdx >= 0 && manifest ? manifest.lines[currentLineIdx] : null; },
