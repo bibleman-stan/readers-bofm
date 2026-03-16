@@ -196,6 +196,8 @@
 
   .picker-body {
     padding: 0 20px 40px;
+    max-width: 38em;
+    margin: 0 auto;
   }
 
   .picker-book-row {
@@ -1784,10 +1786,15 @@
 
 <!-- Top bar -->
 <div class="topbar" id="topbar">
-  <div class="topbar-loc" id="topbar-loc" onclick="togglePicker()" style="display:none;">
-    <span class="topbar-book" id="topbar-book">1 Nephi</span>
-    <span class="topbar-sep">&middot;</span>
-    <span class="topbar-chap" id="topbar-chap">Chapter 1</span>
+  <div style="display:flex; align-items:center; gap:4px; min-width:0;">
+    <button class="topbar-icon topbar-home-btn" id="topbar-home-btn" onclick="showWelcome()" aria-label="Home" title="Home" style="display:none;">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </button>
+    <div class="topbar-loc" id="topbar-loc" onclick="togglePicker()" style="display:none;">
+      <span class="topbar-book" id="topbar-book">1 Nephi</span>
+      <span class="topbar-sep">&middot;</span>
+      <span class="topbar-chap" id="topbar-chap">Chapter 1</span>
+    </div>
   </div>
   <div class="topbar-home" id="topbar-home">bomreader.com</div>
   <div class="topbar-icons">
@@ -2533,6 +2540,7 @@
     document.getElementById('book-content-container').style.display = 'none';
     // Topbar: show home state
     document.getElementById('topbar-loc').style.display = 'none';
+    document.getElementById('topbar-home-btn').style.display = 'none';
     document.getElementById('topbar-home').style.display = 'block';
     document.getElementById('float-prev').classList.remove('active');
     document.getElementById('float-next').classList.remove('active');
@@ -2549,6 +2557,7 @@
     document.getElementById('book-content-container').style.display = 'block';
     // Topbar: show reading state
     document.getElementById('topbar-loc').style.display = 'flex';
+    document.getElementById('topbar-home-btn').style.display = 'flex';
     document.getElementById('topbar-home').style.display = 'none';
   };
 
@@ -2563,6 +2572,7 @@
     document.getElementById('book-content-container').style.display = 'none';
     // Topbar: show home state
     document.getElementById('topbar-loc').style.display = 'none';
+    document.getElementById('topbar-home-btn').style.display = 'none';
     document.getElementById('topbar-home').style.display = 'block';
     // Hide float nav
     document.getElementById('float-prev').classList.remove('active');
@@ -2577,6 +2587,7 @@
     document.getElementById('book-content-container').style.display = 'block';
     // Topbar: show reading state
     document.getElementById('topbar-loc').style.display = 'flex';
+    document.getElementById('topbar-home-btn').style.display = 'flex';
     document.getElementById('topbar-home').style.display = 'none';
   };
 
