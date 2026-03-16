@@ -23,12 +23,12 @@ var ANNOTATIONS = (function() {
 
   // ── Firebase config — MUST be replaced with your project's config ──
   var firebaseConfig = {
-    apiKey: '',
-    authDomain: '',
-    projectId: '',
-    storageBucket: '',
-    messagingSenderId: '',
-    appId: ''
+    apiKey: 'AIzaSyDchoYSMwOa0p0cSxE6L-SZ2MC07a5Hq2g',
+    authDomain: 'bofm-reader.firebaseapp.com',
+    projectId: 'bofm-reader',
+    storageBucket: 'bofm-reader.firebasestorage.app',
+    messagingSenderId: '154628946665',
+    appId: '1:154628946665:web:aebd9adef01cfbff584e78'
   };
 
   var db = null;
