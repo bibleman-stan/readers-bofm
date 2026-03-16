@@ -1824,10 +1824,6 @@
 <a id="float-prev" class="float-nav float-nav-prev" href="#" onclick="floatNavPrev(); return false;">&lsaquo;</a>
 <a id="float-next" class="float-nav float-nav-next" href="#" onclick="floatNavNext(); return false;">&rsaquo;</a>
 
-<a href="#" onclick="showWelcome(); return false;" style="text-decoration: none; color: inherit;">
-<h1>The Book of Mormon <span class="subtitle">Reading Edition</span></h1>
-</a>
-
 <!-- Floating toolbar -->
 <div id="reading-toolbar">
   <!-- Collapsed summary bar (shown when toolbar is collapsed on scroll) -->
@@ -2205,6 +2201,10 @@
 
 <!-- Spacer to prevent content from hiding behind fixed toolbar -->
 <div id="toolbar-spacer"></div>
+
+<a href="#" onclick="showWelcome(); return false;" style="text-decoration: none; color: inherit;">
+<h1>The Book of Mormon <span class="subtitle">Reading Edition</span></h1>
+</a>
 
 <div id="scripture-content">
   <!-- Book selector (hidden, kept for compatibility) -->
@@ -3227,14 +3227,18 @@
   var EXPAND_THRESHOLD = 5;      // scrollY below which toolbar fully expands (near top only)
   var GRACE_DISTANCE = 150;      // how far user can scroll before manual expand auto-collapses
 
-  // Keep spacer height in sync with toolbar height (ResizeObserver)
-  function updateSpacer() {
-    if (toolbarSpacer) toolbarSpacer.style.height = toolbar.offsetHeight + 'px';
+  // Set spacer to collapsed toolbar height once — NEVER dynamically resize it.
+  // Dynamic resizing would cause layout shifts (scrollY changes) that recreate
+  // the same oscillation problem we're fixing. The expanded toolbar just overlays
+  // the content below, which is fine since it's a temporary interaction.
+  function initSpacer() {
+    // Temporarily collapse to measure the minimum height
+    toolbar.classList.add('toolbar-collapsed');
+    var collapsedH = toolbar.offsetHeight;
+    toolbar.classList.remove('toolbar-collapsed');
+    if (toolbarSpacer) toolbarSpacer.style.height = collapsedH + 'px';
   }
-  if (typeof ResizeObserver !== 'undefined') {
-    new ResizeObserver(updateSpacer).observe(toolbar);
-  }
-  updateSpacer();
+  initSpacer();
 
   window.addEventListener('scroll', function() {
     if (scrollTicking) return;
