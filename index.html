@@ -17,307 +17,295 @@
     --letter-spacing: 0.02em;
     --word-spacing: 0.06em;
     --content-padding: 26px;
+    --bg: #1c1f24;
+    --bg-raised: #22262d;
+    --bg-overlay: rgba(14, 16, 20, 0.97);
+    --text: #d4d0c8;
+    --text-dim: #8899aa;
+    --text-faint: #556;
+    --accent: #7cafc2;
+    --accent-dim: rgba(124, 175, 194, 0.12);
+    --border: rgba(255,255,255,0.06);
+    --border-accent: rgba(124, 175, 194, 0.25);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: #1c1f24;
-    color: #d4d0c8;
+    background: var(--bg);
+    color: var(--text);
     font-family: Literata, Georgia, serif;
     font-size: var(--font-size);
     line-height: var(--line-height);
     max-width: 42em;
     margin: 0 auto;
     padding: 1em;
+    padding-top: 50px;
   }
 
-  /* h1 styles kept minimal — title is now inside toolbar as #toolbar-title */
+  /* h1 styles kept minimal */
   h1 { font-weight: normal; font-size: 1.6em; text-align: left; margin-bottom: 0.4em; line-height: 1.1; }
 
-  /* === TOOLBAR === */
-  #reading-toolbar {
-    background: #2a2a2a;
-    padding: 0;
-    border-radius: 6px;
+  /* === PROGRESS LINE === */
+  .progress-line {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0; left: 0;
+    height: 2px;
+    background: var(--accent);
+    opacity: 0.25;
+    z-index: 200;
+    width: 0%;
+    transition: width 0.15s;
+  }
+
+  /* === TOP BAR === */
+  .topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
     max-width: 42em;
     margin: 0 auto;
-    z-index: 10;
-    border: 1px solid #444;
+    height: 44px;
+    background: rgba(28, 31, 36, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
     display: flex;
-    flex-direction: column;
-  }
-  /* Spacer keeps content from hiding behind fixed toolbar */
-  #toolbar-spacer {
-    height: 120px; /* updated dynamically by JS */
-  }
-  /* Edge-to-edge toolbar on mobile */
-  @media (max-width: 600px) {
-    #reading-toolbar {
-      border-radius: 0;
-      border-left: none;
-      border-right: none;
-      max-width: none;
-    }
-  }
-
-  /* Book grid row */
-  .book-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-    padding: 8px 6px 6px;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    z-index: 100;
   }
 
-  .book-btn {
-    width: 48px;
-    height: 34px;
-    border-radius: 6px;
-    border: 1px solid #555;
-    background: #2a2a2a;
-    color: #999;
-    font-family: Georgia, serif;
-    font-size: 0.72em;
+  .topbar-loc {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
     cursor: pointer;
-    transition: background 0.15s, color 0.15s, border-color 0.15s;
-    line-height: 1.2;
-    padding: 0;
+    padding: 6px 2px;
+    border-radius: 6px;
+    transition: background 0.15s;
+    min-width: 0;
+  }
+  .topbar-loc:hover {
+    background: rgba(255,255,255,0.03);
   }
 
-  .book-btn:hover {
-    background: #333;
-    color: #ccc;
+  .topbar-book {
+    font-size: 0.84em;
+    color: var(--accent);
+    font-weight: 600;
+    white-space: nowrap;
   }
 
-  .book-btn.active {
-    border-color: #7cafc2;
-    color: #fff;
-    background: #2a3542;
+  .topbar-sep {
+    font-size: 0.72em;
+    color: #334;
   }
 
-  .gear-btn {
+  .topbar-chap {
+    font-size: 0.78em;
+    color: var(--text-faint);
+    white-space: nowrap;
+  }
+
+  .topbar-icons {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .topbar-icon {
     width: 34px;
     height: 34px;
-    flex-shrink: 0;
-    background: #2a2a2a;
-    border: 1px solid #555;
-    border-radius: 6px;
-    color: #666;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color 0.2s, border-color 0.2s;
-  }
-
-  .gear-btn:hover {
-    color: #bbb;
-    border-color: #777;
-  }
-
-  .gear-btn.active {
-    color: #d4d0c8;
-    border-color: #888;
-  }
-
-  .gear-btn svg {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
-  }
-
-  /* Controls row — pill buttons */
-  .controls-row {
-    display: flex;
-    gap: 8px;
-    padding: 4px 8px 8px;
-    justify-content: center;
-    flex-wrap: wrap;
-    border-top: 1px solid #3a3a3a;
-  }
-
-  .pill-btn {
-    border: 1px solid #555;
-    border-radius: 16px;
-    padding: 4px 12px;
+    border-radius: 8px;
     background: none;
-    color: #999;
-    font-family: Literata, Georgia, serif;
+    border: none;
+    color: var(--text-faint);
+    cursor: pointer;
+    transition: color 0.15s, background 0.15s;
+  }
+  .topbar-icon:hover {
+    color: var(--text-dim);
+    background: rgba(255,255,255,0.04);
+  }
+  .topbar-icon svg { width: 16px; height: 16px; fill: currentColor; }
+
+  .topbar-home {
     font-size: 0.78em;
-    cursor: pointer;
-    transition: all 0.2s;
-    white-space: nowrap;
-  }
-
-  .pill-btn:hover {
-    border-color: #777;
-    color: #ccc;
-  }
-
-  .pill-btn.active-aid {
-    border-color: #27ae60;
-    color: #27ae60;
-  }
-
-  .pill-btn.active-lines {
-    border-color: #c9a368;
-    color: #c9a368;
-  }
-
-  .pill-btn.active-sections {
-    border-color: #9ab;
-    color: #9ab;
-  }
-
-  .pill-btn.active-bg {
-    border-color: #ccc;
-    color: #ccc;
-  }
-
-
-  /* About button — stands out in book grid row */
-  .about-pill-btn {
-    height: 34px;
-    font-size: 0.72em;
-    color: #b8c4d0;
-    border-color: #667;
-    font-weight: 600;
-  }
-
-  .about-pill-btn:hover {
-    color: #dce4ec;
-    border-color: #889;
-  }
-
-  /* Toolbar title / home link */
-  #toolbar-title {
-    display: block;
-    text-align: left;
-    font-family: Literata, Georgia, serif;
-    font-size: 1.35em;
-    font-weight: normal;
-    color: #7cafc2;
-    text-decoration: none;
-    padding: 10px 12px 4px;
-    line-height: 1.2;
-  }
-  #toolbar-title:hover { color: #a0cfdf; }
-  .toolbar-title-sub {
-    display: block;
-    font-size: 0.42em;
-    font-style: italic;
-    color: #8899aa;
+    color: var(--text-faint);
     font-weight: 400;
-    letter-spacing: 0.03em;
-    margin-top: 2px;
-  }
-  body.light-mode #toolbar-title { color: #3a7a92; }
-  body.light-mode #toolbar-title:hover { color: #2a6a82; }
-  body.light-mode .toolbar-title-sub { color: #6a7a8a; }
-
-  /* Collapsed toolbar — hide title, book grid, and panels; keep summary + controls */
-  .toolbar-collapsed #toolbar-title { display: none !important; }
-  .toolbar-collapsed .book-grid { display: none !important; }
-  .toolbar-collapsed #settings-panel { display: none !important; }
-  .toolbar-collapsed #nav-panel { display: none !important; }
-  .toolbar-collapsed #background-panel { display: none !important; }
-
-  /* Landing page mode — no controls row, no collapse, never hidden */
-  .toolbar-landing .controls-row { display: none !important; }
-  .toolbar-landing .collapsed-summary { display: none !important; }
-
-  /* Tap-to-toggle: fully hide toolbar */
-  #reading-toolbar {
-    transition: transform 0.25s ease, opacity 0.2s ease;
-  }
-  .toolbar-hidden {
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  /* First-visit toolbar hint */
-  .toolbar-hint {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(30, 35, 42, 0.92);
-    color: #bcc8d4;
-    font-size: 0.82em;
-    padding: 8px 18px;
-    border-radius: 20px;
-    border: 1px solid rgba(100, 150, 200, 0.2);
-    z-index: 9999;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
-    white-space: nowrap;
-  }
-  .toolbar-hint.visible { opacity: 1; }
-  body.light-mode .toolbar-hint {
-    background: rgba(240, 240, 240, 0.95);
-    color: #556;
-    border-color: rgba(90, 106, 122, 0.25);
-  }
-
-  .collapsed-summary {
-    display: block;
-    height: 32px;
-    line-height: 32px;
-    color: #999;
-    font-size: 0.82em;
-    cursor: pointer;
-    padding: 0 12px;
-    order: -2;
-  }
-  /* Arrow always visible — ▼ to collapse, ▲ when collapsed */
-  .collapsed-summary::after {
-    content: '▼';
-    float: right;
-    font-size: 0.85em;
-    opacity: 0.5;
-    margin-right: 6px;
-    cursor: pointer;
-  }
-  .toolbar-collapsed .collapsed-summary::after {
-    content: '▲';
-  }
-  /* Hide summary bar on landing page — no collapse needed */
-  .toolbar-landing .collapsed-summary { display: none; }
-
-  /* In collapsed mode, tighten controls-row spacing */
-  .toolbar-collapsed .controls-row {
-    border-top: none;
-    padding-top: 0;
-    padding-bottom: 6px;
-  }
-  /* Hide gear, guide, and layers in collapsed mode — only show core controls */
-  .toolbar-collapsed .gear-btn,
-  .toolbar-collapsed #guide-btn {
     display: none;
+    font-style: italic;
   }
 
-  /* === SETTINGS PANEL === */
-  .settings-panel {
-    max-height: 0;
-    overflow: hidden;
-    background: #1f1f1f;
-    transition: max-height 0.35s ease, padding 0.35s ease;
-    padding: 0 18px;
-    border-top: 1px solid #444;
-  }
-
-  .settings-panel.visible {
-    max-height: calc(100vh - 60px);
+  /* === BOOK/CHAPTER PICKER === */
+  .picker {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-overlay);
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
     overflow-y: auto;
-    padding: 14px 18px 18px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .picker.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .picker-header {
+    position: sticky;
+    top: 0;
+    background: var(--bg-overlay);
+    padding: 16px 20px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .picker-title {
+    font-size: 0.88em;
+    color: var(--text-dim);
+    font-weight: 400;
+  }
+
+  .picker-close {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: none;
+    border: none;
+    color: var(--text-faint);
+    cursor: pointer;
+    font-size: 22px;
+    transition: color 0.15s;
+  }
+  .picker-close:hover { color: var(--text-dim); }
+
+  .picker-body {
+    padding: 0 20px 40px;
+  }
+
+  .picker-book-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-dim);
+    font-size: 0.88em;
+    transition: all 0.12s;
+  }
+  .picker-book-row:hover {
+    background: rgba(255,255,255,0.025);
+    color: var(--text);
+  }
+  .picker-book-row.active {
+    color: var(--accent);
+  }
+
+  .picker-book-chaps {
+    font-size: 0.72em;
+    color: var(--text-faint);
+  }
+
+  .picker-chapters {
+    display: none;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 6px 12px 14px;
+  }
+  .picker-chapters.visible { display: flex; }
+
+  .picker-ch {
+    width: 34px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 0.72em;
+    color: var(--text-faint);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.12s;
+  }
+  .picker-ch:hover {
+    color: var(--text-dim);
+    background: rgba(255,255,255,0.03);
+  }
+  .picker-ch.current {
+    color: var(--accent);
+    border-color: var(--border-accent);
+    background: var(--accent-dim);
+  }
+
+  /* === BOTTOM SHEET === */
+  .sheet-scrim {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 150;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+  .sheet-scrim.open { opacity: 1; pointer-events: auto; }
+
+  .sheet {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    max-width: 42em;
+    margin: 0 auto;
+    background: var(--bg-raised);
+    border-top: 1px solid var(--border);
+    border-radius: 16px 16px 0 0;
+    padding: 0 20px 32px;
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+    z-index: 200;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .sheet.open { transform: translateY(0); }
+
+  .sheet-handle-area {
+    padding: 12px 0 8px;
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+  }
+  .sheet-handle {
+    width: 36px;
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.1);
+  }
+
+  .sheet-section {
+    margin-bottom: 20px;
+  }
+
+  .sheet-label {
+    font-size: 0.62em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    margin-bottom: 10px;
+    font-weight: 600;
   }
 
   /* Toggle row */
@@ -325,168 +313,181 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 12px;
+    padding: 10px 0;
+  }
+  .toggle-row + .toggle-row {
+    border-top: 1px solid var(--border);
   }
 
-  .toggle-desc {
-    font-size: 0.75em;
-    color: #999;
+  .toggle-info {
     flex: 1;
-    padding-right: 16px;
-    line-height: 1.4;
+    min-width: 0;
   }
-
-  .toggle-desc strong {
-    color: #bbb;
+  .toggle-name {
+    font-size: 0.86em;
+    color: var(--text);
     font-weight: 400;
+  }
+  .toggle-desc {
+    font-size: 0.72em;
+    color: var(--text-faint);
+    margin-top: 1px;
   }
 
   .toggle-switch {
     position: relative;
     width: 44px;
-    height: 24px;
+    height: 26px;
     flex-shrink: 0;
+    margin-left: 16px;
   }
-
-  .toggle-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
+  .toggle-switch input { display: none; }
   .toggle-track {
     position: absolute;
     inset: 0;
-    background: #444;
-    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 13px;
     cursor: pointer;
-    transition: background 0.25s;
+    transition: background 0.2s;
   }
-
   .toggle-track::after {
     content: '';
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 18px;
-    height: 18px;
-    background: #ccc;
+    top: 3px; left: 3px;
+    width: 20px; height: 20px;
     border-radius: 50%;
-    transition: transform 0.25s;
-  }
-
-  .toggle-switch input:checked + .toggle-track {
-    background: #5a7a5a;
-  }
-
-  .toggle-switch input:checked + .toggle-track::after {
-    transform: translateX(20px);
-  }
-
-  .settings-divider {
-    border: none;
-    border-top: 1px solid #333;
-    margin: 12px 0;
-  }
-
-  /* Section label */
-  .setting-label {
-    font-size: 0.75em;
-    color: #999;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .setting-label strong {
-    color: #bbb;
-    font-weight: 400;
-  }
-
-  /* Option buttons */
-  .option-row {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 12px;
-  }
-
-  .option-row:last-child {
-    margin-bottom: 0;
-  }
-
-  .option-btn {
-    flex: 1;
-    padding: 8px 0;
-    background: #2a2a2a;
-    border: 1px solid #444;
-    border-radius: 6px;
-    color: #999;
-    font-family: Literata, Georgia, serif;
-    font-size: 0.75em;
-    cursor: pointer;
+    background: #666;
     transition: all 0.2s;
+  }
+  .toggle-switch input:checked + .toggle-track {
+    background: var(--accent);
+  }
+  .toggle-switch input:checked + .toggle-track::after {
+    left: 21px;
+    background: #fff;
+  }
+
+  /* === LANDING PAGE === */
+  .landing {
+    display: none;
+    padding: 1.5em 0 3em;
+  }
+  .landing.visible { display: block; }
+
+  .landing-title {
+    font-size: 1.25em;
+    color: var(--accent);
+    font-weight: 400;
+    margin-bottom: 0.15em;
+    line-height: 1.3;
+  }
+  .landing-title-sub {
+    font-size: 0.52em;
+    color: var(--text-faint);
+    font-style: italic;
+  }
+
+  .landing-tagline {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #dce4ec;
+    margin: 0.8em 0 0.6em;
+  }
+
+  .landing-desc {
+    font-size: 0.92em;
+    line-height: 1.75;
+    color: var(--text-dim);
+    margin-bottom: 1.5em;
+  }
+
+  .landing-books-label {
+    font-size: 0.65em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    margin: 2.2em 0 0.8em;
+    font-weight: 600;
+  }
+
+  .landing-books {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 7px;
+    max-width: 360px;
+  }
+
+  .landing-book {
+    padding: 9px 4px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    font-family: Literata, Georgia, serif;
+    font-size: 0.7em;
     text-align: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    line-height: 1.3;
+  }
+  .landing-book:hover {
+    background: var(--accent-dim);
+    color: var(--text);
+    border-color: var(--border-accent);
   }
 
-  .option-btn:hover {
-    border-color: #777;
-    color: #ccc;
+  .landing-link {
+    display: inline-block;
+    margin-top: 1.5em;
+    font-size: 0.82em;
+    color: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
   }
+  .landing-link:hover { text-decoration: underline; }
 
-  .option-btn.active {
-    border-color: #888;
-    color: #d4d0c8;
-    background: #333;
+  @media (max-width: 380px) {
+    .landing-books {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   /* Text size — A buttons */
   .size-row {
     display: flex;
     gap: 8px;
-    margin-bottom: 12px;
   }
 
   .size-btn {
     flex: 1;
-    padding: 10px 0 8px;
-    background: #2a2a2a;
-    border: 1px solid #444;
-    border-radius: 6px;
-    color: #999;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: none;
+    color: var(--text-faint);
     font-family: Literata, Georgia, serif;
     cursor: pointer;
-    transition: all 0.2s;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
+    transition: all 0.15s;
   }
-
   .size-btn:hover {
-    border-color: #777;
-    color: #ccc;
+    border-color: rgba(255,255,255,0.1);
+    color: var(--text-dim);
   }
-
   .size-btn.active {
-    border-color: #888;
-    color: #d4d0c8;
-    background: #333;
+    border-color: var(--border-accent);
+    color: var(--accent);
+    background: var(--accent-dim);
   }
-
   .size-btn .letter {
-    line-height: 1;
+    display: block;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 2px;
   }
-
   .size-btn .label {
-    font-size: 0.6em;
-    color: #777;
-    letter-spacing: 0.04em;
-  }
-
-  .size-btn.active .label {
-    color: #aaa;
+    font-size: 0.62em;
+    opacity: 0.6;
   }
 
   /* === READING CONTENT === */
@@ -496,11 +497,12 @@
     padding: 24px var(--content-padding) 80px;
   }
 
-  .chapter-title {
-    font-size: 1.3em;
-    font-weight: 700;
-    margin: 0 0 16px 0;
-    color: #e0e0e0;
+  .chapter-heading {
+    font-size: 0.82em;
+    color: var(--text-faint);
+    margin: 0 0 1em;
+    font-style: italic;
+    line-height: 1.6;
   }
 
   .chapter-nav {
@@ -528,41 +530,24 @@
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 90;
-    background: rgba(40, 44, 52, 0.75);
-    color: #7cafc2;
-    border: 1px solid rgba(124, 175, 194, 0.25);
-    font-size: 1.4em;
-    line-height: 1;
-    padding: 14px 10px;
+    width: 28px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.08);
+    font-size: 22px;
     cursor: pointer;
-    border-radius: 6px;
     text-decoration: none;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    transition: opacity 0.2s, background 0.2s;
-    opacity: 0.5;
-    display: none;  /* hidden by default; JS shows on desktop when chapter is active */
+    transition: color 0.2s;
+    z-index: 10;
   }
-  .float-nav:hover {
-    opacity: 1;
-    background: rgba(40, 44, 52, 0.92);
-  }
-  .float-nav-prev { left: 8px; }
-  .float-nav-next { right: 8px; }
-  .float-nav.hidden { display: none !important; }
-  /* Only show on screens wide enough to have margin space */
-  @media (min-width: 900px) {
-    .float-nav.active { display: block; }
-  }
-  /* Light mode */
-  body.light-mode .float-nav {
-    background: rgba(235, 230, 220, 0.8);
-    color: #4a7a9e;
-    border-color: rgba(74, 122, 158, 0.25);
-  }
-  body.light-mode .float-nav:hover {
-    background: rgba(235, 230, 220, 0.95);
+  .float-nav:hover { color: rgba(255,255,255,0.2); }
+  .float-prev { left: 2px; }
+  .float-next { right: 2px; }
+
+  @media (max-width: 600px) {
+    .float-nav { display: none; }
   }
 
   .verse {
@@ -669,7 +654,7 @@
     border-color: #d8d0c0 !important;
   }
 
-  body.light-mode p:not(#reading-toolbar p) {
+  body.light-mode p {
     color: #3a3630 !important;
   }
 
@@ -717,7 +702,7 @@
     color: #2c3038 !important;
   }
 
-  body.light-mode a:not(#reading-toolbar a) {
+  body.light-mode a {
     color: #4a7a9e !important;
   }
 
@@ -727,101 +712,29 @@
     border-color: #c0c5cc !important;
   }
 
-  body.light-mode .book-btn {
-    background: #e8eaef !important;
-    color: #667 !important;
-    border-color: #c0c5cc !important;
+  body.light-mode {
+    --bg: #f5f0e8;
+    --bg-raised: #ede8e0;
+    --bg-overlay: rgba(240, 235, 225, 0.97);
+    --text: #3a3630;
+    --text-dim: #6a7a8a;
+    --text-faint: #999;
+    --accent: #3a7a92;
+    --accent-dim: rgba(58, 122, 146, 0.12);
+    --border: rgba(0,0,0,0.06);
+    --border-accent: rgba(58, 122, 146, 0.25);
   }
 
-  body.light-mode .book-btn:hover {
-    background: #dde0e8 !important;
-    color: #333 !important;
+  @media (max-width: 600px) {
+    .topbar { max-width: none; }
+    .sheet { max-width: none; }
+    body { padding-left: 0.75em; padding-right: 0.75em; }
   }
 
-  body.light-mode .book-btn.active {
-    background: #d0dae8 !important;
-    color: #2c3038 !important;
-    border-color: #4a7a9e !important;
-  }
-
-  body.light-mode .pill-btn {
-    border-color: #c0c5cc !important;
-    color: #667 !important;
-  }
-
-  body.light-mode .pill-btn:hover {
-    border-color: #999 !important;
-    color: #333 !important;
-  }
-
-  body.light-mode .pill-btn.active-aid {
-    border-color: #1e8449 !important;
-    color: #1e8449 !important;
-  }
-
-  body.light-mode .pill-btn.active-lines {
-    border-color: #8a7340 !important;
-    color: #8a7340 !important;
-  }
-
-  body.light-mode .pill-btn.active-sections {
-    border-color: #5a7a8a !important;
-    color: #5a7a8a !important;
-  }
-
-  body.light-mode .about-pill-btn {
-    color: #4a6070 !important;
-    border-color: #99a !important;
-    font-weight: 600 !important;
-  }
-
-  body.light-mode .controls-row {
-    border-top-color: #d8d0c0 !important;
-  }
-
-  body.light-mode .gear-btn {
-    background: #e8eaef !important;
-    color: #888 !important;
-    border-color: #c0c5cc !important;
-  }
-
-  body.light-mode #offline-btn {
-    background: #d0dae8 !important;
-    color: #3a3630 !important;
-  }
-  body.light-mode #offline-bar {
-    background: #4a7a9e !important;
-  }
-
-  body.light-mode #background-panel {
-    background: #ede8e0 !important;
-    border-color: #c0c5cc !important;
-  }
-
-  body.light-mode .collapsed-summary {
-    color: #667 !important;
-  }
-
-  body.light-mode #nav-grid-container {
-    background: #ede8e0 !important;
-    border-color: #c0c5cc !important;
-  }
-
-  body.light-mode .grid-btn {
-    background: #e8eaef !important;
-    color: #667 !important;
-    border-color: #c0c5cc !important;
-  }
-
-  body.light-mode .grid-btn:hover {
-    background: #dde0e8 !important;
-    color: #333 !important;
-  }
-
-  body.light-mode .grid-btn.active-ch {
-    background: #d0dae8 !important;
-    color: #2c3038 !important;
-    border-color: #4a7a9e !important;
+  @media (min-width: 601px) {
+    .topbar {
+      border-radius: 0 0 8px 8px;
+    }
   }
 
   body.light-mode p[style*="color: #b0b0b0"] {
@@ -843,15 +756,6 @@
 
   a:visited {
     color: #7cafc2;
-  }
-
-  #reading-toolbar a {
-    color: #7cafc2;
-    text-decoration: none;
-  }
-
-  #reading-toolbar a:hover {
-    text-decoration: underline;
   }
 
   /* Deity/Spirit highlighting */
@@ -1533,6 +1437,7 @@
   }
   #search-scrim.open { display: block; }
   body.light-mode #search-scrim { background: rgba(0,0,0,0.18); }
+
   #search-overlay {
     position: fixed;
     top: 0; right: 0; bottom: 0;
@@ -1551,6 +1456,7 @@
     background: #f5f0e8;
     box-shadow: -4px 0 20px rgba(0,0,0,0.12);
   }
+
   #search-header {
     position: sticky;
     top: 0;
@@ -1566,10 +1472,12 @@
     background: #ede8e0;
     border-color: #ccc;
   }
+
   #search-back {
     background: none; border: none; color: #d4d0c8; font-size: 1.3em; cursor: pointer; padding: 4px;
   }
   body.light-mode #search-back { color: #3a3630; }
+
   #search-input {
     flex: 1;
     background: transparent;
@@ -1583,9 +1491,11 @@
   body.light-mode #search-input { color: #3a3630; }
   #search-input::placeholder { color: #666; }
   body.light-mode #search-input::placeholder { color: #999; }
+
   #search-close {
     background: none; border: none; color: #888; font-size: 1.3em; cursor: pointer; padding: 4px;
   }
+
   #search-body {
     padding: 16px;
   }
@@ -1960,36 +1870,133 @@
 <a id="float-prev" class="float-nav float-nav-prev" href="#" onclick="floatNavPrev(); return false;">&lsaquo;</a>
 <a id="float-next" class="float-nav float-nav-next" href="#" onclick="floatNavNext(); return false;">&rsaquo;</a>
 
-<!-- Floating toolbar -->
-<div id="reading-toolbar">
-  <!-- Title / home link (hidden when collapsed) -->
-  <a id="toolbar-title" href="#" onclick="showWelcome(); return false;">The Book of Mormon <span class="toolbar-title-sub">Reading Edition</span></a>
+<!-- Progress line -->
+<div class="progress-line" id="progress"></div>
 
-  <!-- Collapsed summary bar (shown when toolbar is collapsed on scroll) -->
-  <div class="collapsed-summary" id="collapsed-summary"><span id="summary-text"></span></div>
+<!-- Top bar -->
+<div class="topbar" id="topbar">
+  <div class="topbar-loc" id="topbar-loc" onclick="togglePicker()" style="display:none;">
+    <span class="topbar-book" id="topbar-book">1 Nephi</span>
+    <span class="topbar-sep">&middot;</span>
+    <span class="topbar-chap" id="topbar-chap">Chapter 1</span>
+  </div>
+  <div class="topbar-home" id="topbar-home">bomreader.com</div>
+  <div class="topbar-icons">
+    <button class="topbar-icon" onclick="openSearch()" aria-label="Search" title="Search">
+      <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
+    <button class="topbar-icon" onclick="toggleSheet()" aria-label="Settings" title="Reading settings">
+      <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </button>
+  </div>
+</div>
 
-  <!-- Book grid -->
-  <div class="book-grid" id="book-grid">
-    <button class="book-btn active" data-book="1nephi" onclick="onBookBtnClick('1nephi')">1 Ne</button>
-    <button class="book-btn" data-book="2nephi" onclick="onBookBtnClick('2nephi')">2 Ne</button>
-    <button class="book-btn" data-book="jacob" onclick="onBookBtnClick('jacob')">Jac</button>
-    <button class="book-btn" data-book="enos" onclick="onBookBtnClick('enos')">Eno</button>
-    <button class="book-btn" data-book="jarom" onclick="onBookBtnClick('jarom')">Jar</button>
-    <button class="book-btn" data-book="omni" onclick="onBookBtnClick('omni')">Omn</button>
-    <button class="book-btn" data-book="words-of-mormon" onclick="onBookBtnClick('words-of-mormon')">WoM</button>
-    <button class="book-btn" data-book="mosiah" onclick="onBookBtnClick('mosiah')">Mos</button>
-    <button class="book-btn" data-book="alma" onclick="onBookBtnClick('alma')">Alm</button>
-    <button class="book-btn" data-book="helaman" onclick="onBookBtnClick('helaman')">Hel</button>
-    <button class="book-btn" data-book="3nephi" onclick="onBookBtnClick('3nephi')">3 Ne</button>
-    <button class="book-btn" data-book="4nephi" onclick="onBookBtnClick('4nephi')">4 Ne</button>
-    <button class="book-btn" data-book="mormon" onclick="onBookBtnClick('mormon')">Morm</button>
-    <button class="book-btn" data-book="ether" onclick="onBookBtnClick('ether')">Eth</button>
-    <button class="book-btn" data-book="moroni" onclick="onBookBtnClick('moroni')">Moro</button>
-    <button class="pill-btn about-pill-btn" id="about-pill" onclick="toggleBackground()">About <span id="about-book-name">1 Nephi</span></button>
+<!-- Book/Chapter picker overlay -->
+<div class="picker" id="picker">
+  <div class="picker-header">
+    <div class="picker-title">Choose a book</div>
+    <button class="picker-close" onclick="togglePicker()">&times;</button>
+  </div>
+  <div class="picker-body" id="picker-body">
+    <!-- Generated dynamically by JS -->
+  </div>
+</div>
+
+<!-- Bottom sheet (reading controls) -->
+<div class="sheet-scrim" id="sheetScrim" onclick="toggleSheet()"></div>
+<div class="sheet" id="sheet">
+  <div class="sheet-handle-area"><div class="sheet-handle"></div></div>
+
+  <div class="sheet-section">
+    <div class="sheet-label">Reading</div>
+    <div class="toggle-row">
+      <div class="toggle-info">
+        <div class="toggle-name">Modern words</div>
+        <div class="toggle-desc">Replace archaic language</div>
+      </div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="aid-toggle" onchange="toggleAid()">
+        <span class="toggle-track"></span>
+      </label>
+    </div>
+    <div class="toggle-row" id="listen-toggle-row" style="display:none;">
+      <div class="toggle-info">
+        <div class="toggle-name">Listen</div>
+        <div class="toggle-desc">Audio narration</div>
+      </div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="listen-toggle">
+        <span class="toggle-track"></span>
+      </label>
+    </div>
+    <div class="toggle-row">
+      <div class="toggle-info">
+        <div class="toggle-name">Section headings</div>
+        <div class="toggle-desc">Show editorial section breaks</div>
+      </div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="sections-toggle" onchange="toggleSections(this.checked)">
+        <span class="toggle-track"></span>
+      </label>
+    </div>
   </div>
 
-  <!-- Settings panel -->
-  <div class="settings-panel" id="settings-panel">
+  <div class="sheet-section">
+    <div class="sheet-label">Text size</div>
+    <div class="size-row">
+      <button class="size-btn" onclick="setSize('small')">
+        <span class="letter" style="font-size:0.8em;">A</span>
+        <span class="label">Small</span>
+      </button>
+      <button class="size-btn active" onclick="setSize('medium')">
+        <span class="letter" style="font-size:1.05em;">A</span>
+        <span class="label">Medium</span>
+      </button>
+      <button class="size-btn" onclick="setSize('large')">
+        <span class="letter" style="font-size:1.35em;">A</span>
+        <span class="label">Large</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="sheet-section" style="margin-bottom:0;">
+    <div class="sheet-label">Display</div>
+    <div class="toggle-row" style="border:none;">
+      <div class="toggle-info">
+        <div class="toggle-name">Light mode</div>
+      </div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="mode-toggle" onchange="toggleDarkMode()">
+        <span class="toggle-track"></span>
+      </label>
+    </div>
+    <div class="toggle-row">
+      <div class="toggle-info">
+        <div class="toggle-name" style="font-size:0.82em;">Refresh content</div>
+        <div class="toggle-desc">Clear cache and reload</div>
+      </div>
+      <button id="flush-btn" onclick="flushAndReload()" style="background: #705050; color: #d4d0c8; border: none; border-radius: 12px; padding: 6px 14px; font-size: 0.82em; cursor: pointer; white-space: nowrap;">Refresh</button>
+    </div>
+    <div id="offline-section">
+      <div class="toggle-row">
+        <div class="toggle-info">
+          <div class="toggle-name" style="font-size:0.82em;">Save for offline</div>
+          <div class="toggle-desc" id="offline-status">Checking...</div>
+        </div>
+        <button id="offline-btn" onclick="downloadAllForOffline()" style="background: #4a6070; color: #d4d0c8; border: none; border-radius: 12px; padding: 6px 14px; font-size: 0.82em; cursor: pointer; white-space: nowrap;">Download All</button>
+      </div>
+      <div id="offline-progress" style="display:none; margin-top:8px; padding: 0 0 8px;">
+        <div style="background:rgba(255,255,255,0.1); border-radius:4px; height:6px; overflow:hidden;">
+          <div id="offline-bar" style="background:#7cafc2; height:100%; width:0%; transition:width 0.3s;"></div>
+        </div>
+        <div id="offline-progress-text" style="font-size:0.78em; opacity:0.6; margin-top:4px; text-align:center;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Old settings panel — removed, replaced by bottom sheet above -->
+<div style="display:none;" id="settings-panel-old">
     <!-- Toggles -->
     <div class="toggle-row">
       <div class="toggle-desc"><strong>Verse mode</strong><br>Show text as running prose</div>
@@ -2118,8 +2125,9 @@
     <button id="annotation-auth-btn" class="gear-btn" aria-label="Annotations" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px; font-size: 14px; display: none;">✎</button>
   </div>
 
-  <!-- Background panel — book intros (shown on About tap) -->
-  <div id="background-panel">
+  <!-- Hidden old toolbar elements (kept for JS compatibility) -->
+  <div style="display:none;">
+    <div id="background-panel">
     <button class="bg-close" onclick="toggleBackground()">&times;</button>
     <div style="font-size: 0.88em; margin: 0 0 10px; display: flex; gap: 10px;">
       <a href="#" onclick="document.querySelectorAll('#background-panel details.intro-section').forEach(d => d.open = true); return false;">Expand all</a>
@@ -2296,12 +2304,10 @@
 
       <hr style="border: none; border-top: 1px solid #444; margin: 0.8em 0;" />
       <p style="color: #666; font-size: 0.82em; margin-top: 1.5em; text-align: center;">These introductions reflect the editor's perspective and are not part of the original text.</p>
+    </div>
+
   </div>
-
-</div>
-
-<!-- Spacer to prevent content from hiding behind fixed toolbar -->
-<div id="toolbar-spacer"></div>
+  <!-- End hidden old settings panel -->
 
 <div id="scripture-content">
   <!-- Book selector (hidden, kept for compatibility) -->
@@ -2373,17 +2379,17 @@
     <p><a class="about-back-link" href="#" onclick="hideAboutPage(); return false;">← Back to reading</a></p>
   </div>
 
-  <!-- Welcome section — minimal landing for first-time visitors -->
-  <div id="welcome-section">
-    <div class="page-title">The Book of Mormon <span class="page-title-sub">Reading Edition</span></div>
-    <p class="welcome-tagline">A new way into the Book of Mormon</p>
-    <p class="welcome-desc">If you find the Book of Mormon hard to read, difficult to understand, or unfulfilling, this edition seeks to give you new tools that can help. Old words are replaced with modern ones, the text is broken into shorter lines that reflect ideas in the text. Additionally, the text has a fresh audio narration that can help the text come alive.</p>
-    <p class="welcome-prompt">Choose a book above to begin reading</p>
-    <a class="welcome-about-link" href="#" onclick="showAboutPage(); return false;">Learn more about the features</a>
+  <!-- Landing page (shown on first visit or when back at home) -->
+  <div class="landing" id="landing" style="display:none;">
+    <div class="landing-title">The Book of Mormon <span class="landing-title-sub">Reading Edition</span></div>
+    <p class="landing-tagline">A new way into the Book of Mormon</p>
+    <p class="landing-desc">If you find the Book of Mormon hard to read, difficult to understand, or unfulfilling, this edition seeks to give you new tools that can help. Old words are replaced with modern ones, and the text is broken into shorter lines that reflect the ideas in the text. Additionally, the text has a fresh audio narration that can help it come alive.</p>
+    <div class="landing-books-label">Start reading</div>
+    <div class="landing-books" id="landing-books">
+      <!-- Generated dynamically by JS -->
+    </div>
+    <a class="landing-link" onclick="showAboutPage()">Learn more about the features</a>
   </div>
-
-  <!-- Decorative title above reading content -->
-  <div id="chapter-title" class="page-title" style="display:none;">The Book of Mormon <span class="page-title-sub">Reading Edition</span></div>
 
   <!-- Book content loaded dynamically by JS -->
   <div id="book-content-container">
@@ -2663,6 +2669,9 @@
     if (aidPill) {
       aidPill.classList.toggle('active-aid', aidOn);
     }
+    // Update checkbox in bottom sheet
+    var aidToggle = document.getElementById('aid-toggle');
+    if (aidToggle) aidToggle.checked = aidOn;
   };
 
   // ---- TEXT MODE TOGGLE (cycles: verses → lines → parallels → verses) ----
@@ -2746,9 +2755,13 @@
   };
 
   function syncUI(flow, punct, wrap, spacing, size, density) {
-    document.getElementById('flow-toggle').checked = flow;
-    document.getElementById('punct-toggle').checked = punct;
-    document.getElementById('wrap-toggle').checked = wrap;
+    // Old toggle elements may not exist in new UI — guard safely
+    var flowEl = document.getElementById('flow-toggle');
+    var punctEl = document.getElementById('punct-toggle');
+    var wrapEl = document.getElementById('wrap-toggle');
+    if (flowEl) flowEl.checked = flow;
+    if (punctEl) punctEl.checked = punct;
+    if (wrapEl) wrapEl.checked = wrap;
 
     document.querySelectorAll('#spacing-row .option-btn').forEach(function(btn) {
       btn.classList.toggle('active', btn.textContent.toLowerCase() === spacing);
@@ -2757,8 +2770,8 @@
       btn.classList.toggle('active', btn.textContent.toLowerCase() === density);
     });
     document.querySelectorAll('.size-btn').forEach(function(btn) {
-      var label = btn.querySelector('.label').textContent.toLowerCase();
-      btn.classList.toggle('active', label === size);
+      var label = btn.querySelector('.label');
+      if (label) btn.classList.toggle('active', label.textContent.toLowerCase() === size);
     });
   }
 
@@ -2771,8 +2784,8 @@
     var size    = getSetting(tab, 'size');
     var density = getSetting(tab, 'density');
 
-    // flow=true means verse mode; flow=false means sense-line mode
-    applyTextMode(flow ? 0 : 1);
+    // Force sense-line mode (mode 1) always — Reading Edition has only sense lines
+    applyTextMode(1);
     root.style.setProperty('--punct-opacity', punct ? '0' : '1');
     document.body.classList.toggle('hide-punct', punct);
     root.style.setProperty('--wrap-indent', wrap ? '0.75em' : '0em');
@@ -2788,29 +2801,10 @@
     syncUI(flow, punct, wrap, spacing, size, density);
   }
 
+  // toggleSettings now maps to the bottom sheet
   window.toggleSettings = function() {
-    pauseCollapse();
-    var panel = document.getElementById('settings-panel');
-    var isVisible = panel.classList.contains('visible');
-    // Only expand toolbar when OPENING settings, not closing
-    if (!isVisible && toolbar.classList.contains('toolbar-collapsed')) {
-      toolbar.classList.remove('toolbar-collapsed');
-    }
-    // Reveal toolbar if hidden by tap
-    if (!isVisible) { toolbar.classList.remove('toolbar-hidden'); }
-    // Close other panels when opening settings
-    if (!isVisible) {
-      document.getElementById('nav-panel').style.display = 'none';
-      document.getElementById('background-panel').style.display = 'none';
-      document.getElementById('about-pill').classList.remove('active-bg');
-    }
-    panel.classList.toggle('visible');
-    document.getElementById('gear-btn').classList.toggle('active');
-    // Toggle the gear arrow direction
-    var arrow = document.getElementById('gear-arrow');
-    if (arrow) arrow.textContent = isVisible ? '▾' : '▴';
-    // Refresh offline cache status when opening settings
-    if (!isVisible && typeof checkOfflineStatus === 'function') checkOfflineStatus();
+    toggleSheet();
+    if (typeof checkOfflineStatus === 'function') checkOfflineStatus();
   };
 
   window.toggleDarkMode = function() {
@@ -2819,71 +2813,24 @@
   };
 
   // ---- BOOK GRID NAVIGATION ----
+  // onBookBtnClick — legacy, now handled by picker. Kept for any external callers.
   window.onBookBtnClick = function(bookId) {
-    pauseCollapse();
-    pendingChapter = null;  // Clear any pending chapter from a previous book switch
-    var meta = bookMeta[bookId];
-    if (!meta) return;
-    // If the about page or welcome section is showing, hide it first
-    var aboutVisible = document.getElementById('about-page').style.display === 'block';
-    if (aboutVisible) hideAboutPage();
-    var welcomeVisible = document.getElementById('welcome-section').style.display === 'block';
-    if (welcomeVisible) hideWelcome();
-    // Close other panels
-    closeAllPanels();
-    // Single-chapter books: navigate directly
-    if (meta.chapters === 1) {
-      switchBook(bookId);
-      return;
-    }
-    // Same book: toggle chapter grid (but if about/welcome was showing, show chapter grid instead)
-    if (bookId === currentBook && !aboutVisible && !welcomeVisible) {
-      var navPanel = document.getElementById('nav-panel');
-      navPanel.style.display = (navPanel.style.display === 'none' || navPanel.style.display === '') ? 'block' : 'none';
-      return;
-    }
-    // Different book (or same book returning from about page): switch and show chapter grid
     switchBook(bookId);
   };
 
+  // highlightBookBtn — now highlights in the picker instead
   function highlightBookBtn(bookId) {
-    document.querySelectorAll('.book-btn').forEach(function(btn) {
-      btn.classList.toggle('active', btn.getAttribute('data-book') === bookId);
+    // Highlight in picker
+    document.querySelectorAll('.picker-book-row').forEach(function(row) {
+      row.classList.toggle('active', row.getAttribute('data-book') === bookId);
     });
   }
 
   // ---- DYNAMIC BOOK LOADING ----
   var pendingChapter = null;  // Track chapter selected before book finishes loading
 
-  function buildChapterGrid(bookId) {
-    var meta = bookMeta[bookId];
-    if (!meta) return;
-    var grid = document.getElementById('nav-grid');
-    grid.innerHTML = '';
-    for (var i = 1; i <= meta.chapters; i++) {
-      (function(ch) {
-        var btn = document.createElement('button');
-        btn.className = 'grid-btn';
-        btn.textContent = ch;
-        btn.onclick = function() {
-          if (loadedBooks[bookId]) {
-            // Book already loaded — navigate immediately
-            showChapter(bookId, ch);
-            document.getElementById('nav-panel').style.display = 'none';
-          } else {
-            // Book still loading — store choice so callback uses it
-            pendingChapter = ch;
-            // Highlight the selected button immediately for feedback
-            grid.querySelectorAll('.grid-btn').forEach(function(b) {
-              b.classList.toggle('active-ch', b === btn);
-            });
-          }
-          return false;
-        };
-        grid.appendChild(btn);
-      })(i);
-    }
-  }
+  // buildChapterGrid — no longer needed (picker is built once in buildPicker)
+  function buildChapterGrid(bookId) { /* no-op — picker handles this */ }
 
   function loadBook(bookId, callback) {
     if (loadedBooks[bookId]) {
@@ -2924,14 +2871,12 @@
     var ch = targetChapter || 1;
     document.querySelectorAll('.book-content').forEach(function(b) { b.style.display = 'none'; });
     highlightBookBtn(bookId);
-    buildChapterGrid(bookId);
     var meta = bookMeta[bookId];
-    var displayName = meta ? meta.name : bookId;
-    // Update "About" pill text
-    var aboutName = document.getElementById('about-book-name');
-    if (aboutName) aboutName.textContent = displayName;
-    // Update collapsed summary
-    updateCollapsedSummary(bookId, ch);
+    // Update topbar
+    if (meta) {
+      document.getElementById('topbar-book').textContent = meta.name;
+      document.getElementById('topbar-chap').textContent = 'Chapter ' + ch;
+    }
     currentBook = bookId;
     removeDeityHighlights();
     loadBook(bookId, function() {
@@ -2941,97 +2886,29 @@
       var finalCh = pendingChapter || ch;
       pendingChapter = null;
       showChapter(bookId, finalCh);
-      // Only show chapter grid if no specific chapter was requested AND no other panel is open
-      if (!targetChapter && finalCh === 1) {
-        var otherPanelOpen = ['background-panel'].some(function(id) {
-          var el = document.getElementById(id);
-          return el && el.style.display === 'block';
-        }) || document.getElementById('settings-panel').classList.contains('visible');
-        if (!otherPanelOpen) {
-          var navPanel = document.getElementById('nav-panel');
-          if (navPanel) navPanel.style.display = 'block';
-        }
-      }
     });
   };
 
   window.beginReading = function(bookId) {
-    // Close background panel and navigate
-    var bgPanel = document.getElementById('background-panel');
-    if (bgPanel) bgPanel.style.display = 'none';
-    document.getElementById('about-pill').classList.remove('active-bg');
     switchBook(bookId);
   };
 
-  function updateCollapsedSummary(bookId, ch) {
-    var meta = bookMeta[bookId];
-    var abbr = meta ? (meta.abbr || meta.name) : bookId;
-    var summary = document.getElementById('collapsed-summary');
-    var summaryText = document.getElementById('summary-text');
-    if (summaryText) summaryText.textContent = abbr + ' ' + ch;
-  }
-
   // ---- UI TOGGLES ----
-  // Close all dropdown panels
-  function closeAllPanels() {
-    var ids = ['nav-panel', 'background-panel'];
-    ids.forEach(function(id) {
-      var el = document.getElementById(id);
-      if (el) el.style.display = 'none';
-    });
-    document.getElementById('about-pill').classList.remove('active-bg');
-    document.getElementById('settings-panel').classList.remove('visible');
-    document.getElementById('gear-btn').classList.remove('active');
-    var arrow = document.getElementById('gear-arrow');
-    if (arrow) arrow.textContent = '▾';
-  }
-
-  window.toggleNav = function() {
-    pauseCollapse();
-    var panel = document.getElementById('nav-panel');
-    var isHidden = panel.style.display === 'none' || panel.style.display === '';
-    // Close other panels but keep nav toggling
-    document.getElementById('background-panel').style.display = 'none';
-    document.getElementById('about-pill').classList.remove('active-bg');
-    panel.style.display = isHidden ? 'block' : 'none';
-  };
-
-  window.toggleBackground = function() {
-    pauseCollapse();
-    var panel = document.getElementById('background-panel');
-    var pill = document.getElementById('about-pill');
-    var isHidden = panel.style.display === 'none' || panel.style.display === '';
-    // Close other panels
-    document.getElementById('nav-panel').style.display = 'none';
-    if (isHidden) {
-      panel.style.display = 'block';
-      pill.classList.add('active-bg');
-      // Auto-open the current book's intro section
-      var sec = document.getElementById('intro-' + currentBook);
-      if (sec) {
-        sec.open = true;
-        setTimeout(function() { sec.scrollIntoView({behavior:'smooth', block:'nearest'}); }, 100);
-      }
-    } else {
-      panel.style.display = 'none';
-      pill.classList.remove('active-bg');
-    }
-  };
+  // ---- UI TOGGLES (simplified for new design) ----
+  window.toggleNav = function() { togglePicker(); };
+  window.toggleBackground = function() { /* No longer in UI — use About page link */ };
 
   window.jumpTo = function(id) {
     var el = document.getElementById(id);
     if (!el) return;
     if (!el.open) el.open = true;
-    document.getElementById('nav-panel').style.display = 'none';
-    var toolbar = document.getElementById('reading-toolbar');
-    var offset = toolbar ? toolbar.offsetHeight + 8 : 60;
+    var offset = 52; // topbar height + padding
     var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
     window.scrollTo({ top: top, behavior: 'smooth' });
   };
 
   window.toggleEditorial = function(on) { document.body.classList.toggle('editorial-active', on); };
   window.toggleSections = function(on) {
-    // Called with no arg from pill button → toggle; with arg from selectAll/clearAll → set
     var sectionsOn;
     if (typeof on === 'undefined') {
       sectionsOn = !document.body.classList.contains('show-sections');
@@ -3039,24 +2916,29 @@
       sectionsOn = on;
     }
     document.body.classList.toggle('show-sections', sectionsOn);
-    var pill = document.getElementById('sections-pill');
-    if (pill) pill.classList.toggle('active-sections', sectionsOn);
+    // Update the sheet toggle checkbox
+    var toggle = document.getElementById('sections-toggle');
+    if (toggle) toggle.checked = sectionsOn;
   };
   window.toggleCovenant = function(on) { document.body.classList.toggle('covenant-active', on); };
   window.toggleComments = function(on) {};
 
   // ---- ABOUT PAGE ----
   window.showAboutPage = function() {
-    closeAllPanels();
-    pauseCollapse();
-    toolbar.classList.remove('toolbar-collapsed');
-    toolbar.classList.remove('toolbar-show-summary');
-    document.getElementById('welcome-section').style.display = 'none';
-    document.getElementById('chapter-title').style.display = 'none';
+    // Close any open overlays
+    document.getElementById('picker').classList.remove('open');
+    document.getElementById('sheet').classList.remove('open');
+    document.getElementById('sheetScrim').classList.remove('open');
+    // Hide landing and reading
+    document.getElementById('landing').style.display = 'none';
     document.getElementById('about-page').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'none';
+    // Topbar: show home state
+    document.getElementById('topbar-loc').style.display = 'none';
+    document.getElementById('topbar-home').style.display = 'block';
     document.getElementById('float-prev').classList.remove('active');
     document.getElementById('float-next').classList.remove('active');
+    document.getElementById('progress').style.width = '0%';
     lastHashWeSet = '';
     if (window.location.hash) {
       history.replaceState(null, '', window.location.pathname);
@@ -3065,39 +2947,130 @@
   };
 
   window.hideAboutPage = function() {
-    pauseCollapse();
     document.getElementById('about-page').style.display = 'none';
-    document.getElementById('chapter-title').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'block';
+    // Topbar: show reading state
+    document.getElementById('topbar-loc').style.display = 'flex';
+    document.getElementById('topbar-home').style.display = 'none';
   };
 
   window.showWelcome = function() {
-    closeAllPanels();
-    pauseCollapse();
-    toolbar.classList.remove('toolbar-collapsed');
-    toolbar.classList.remove('toolbar-show-summary');
-    toolbar.classList.add('toolbar-landing');
-    document.getElementById('welcome-section').style.display = 'block';
-    document.getElementById('chapter-title').style.display = 'none';
+    // Close any open overlays
+    document.getElementById('picker').classList.remove('open');
+    document.getElementById('sheet').classList.remove('open');
+    document.getElementById('sheetScrim').classList.remove('open');
+    // Show landing, hide reading content
+    document.getElementById('landing').style.display = 'block';
     document.getElementById('about-page').style.display = 'none';
     document.getElementById('book-content-container').style.display = 'none';
+    // Topbar: show home state
+    document.getElementById('topbar-loc').style.display = 'none';
+    document.getElementById('topbar-home').style.display = 'block';
+    // Hide float nav
     document.getElementById('float-prev').classList.remove('active');
     document.getElementById('float-next').classList.remove('active');
-    // Set spacer to full landing toolbar height so content starts below
-    requestAnimationFrame(function() {
-      if (toolbarSpacer) toolbarSpacer.style.height = toolbar.offsetHeight + 'px';
-    });
+    // Reset progress
+    document.getElementById('progress').style.width = '0%';
     window.scrollTo({ top: 0 });
   };
 
   window.hideWelcome = function() {
-    toolbar.classList.remove('toolbar-landing');
-    document.getElementById('welcome-section').style.display = 'none';
-    document.getElementById('chapter-title').style.display = 'block';
+    document.getElementById('landing').style.display = 'none';
     document.getElementById('book-content-container').style.display = 'block';
-    // Restore spacer to collapsed toolbar height for reading mode
-    initSpacer();
+    // Topbar: show reading state
+    document.getElementById('topbar-loc').style.display = 'flex';
+    document.getElementById('topbar-home').style.display = 'none';
   };
+
+  // ---- NEW UI FUNCTIONS ----
+  window.togglePicker = function() {
+    document.getElementById('picker').classList.toggle('open');
+  };
+
+  window.toggleSheet = function() {
+    document.getElementById('sheet').classList.toggle('open');
+    document.getElementById('sheetScrim').classList.toggle('open');
+  };
+
+  // openSearch / closeSearch defined below in the Search section
+
+  // Picker population function
+  function buildPicker() {
+    var body = document.getElementById('picker-body');
+    body.innerHTML = '';
+    var bookIds = Object.keys(bookMeta);
+    for (var i = 0; i < bookIds.length; i++) {
+      var id = bookIds[i];
+      var meta = bookMeta[id];
+      var row = document.createElement('div');
+      row.className = 'picker-book-row';
+      row.setAttribute('data-book', id);
+      row.innerHTML = meta.name + ' <span class="picker-book-chaps">' + meta.chapters + (meta.chapters === 1 ? ' chapter' : ' chapters') + '</span>';
+      row.onclick = (function(bookId) {
+        return function() { togglePickerChapters(this, bookId); };
+      })(id);
+      body.appendChild(row);
+
+      var chaps = document.createElement('div');
+      chaps.className = 'picker-chapters';
+      chaps.id = 'picker-chapters-' + id;
+      for (var c = 1; c <= meta.chapters; c++) {
+        var ch = document.createElement('div');
+        ch.className = 'picker-ch';
+        ch.textContent = c;
+        ch.onclick = (function(bookId, chNum) {
+          return function(e) {
+            e.stopPropagation();
+            togglePicker();
+            switchBook(bookId, chNum);
+          };
+        })(id, c);
+        chaps.appendChild(ch);
+      }
+      body.appendChild(chaps);
+    }
+  }
+
+  function togglePickerChapters(el, bookId) {
+    var chapters = document.getElementById('picker-chapters-' + bookId);
+    if (!chapters) return;
+    var wasVisible = chapters.classList.contains('visible');
+    // Close all other chapter lists
+    document.querySelectorAll('.picker-chapters.visible').forEach(function(c) { c.classList.remove('visible'); });
+    document.querySelectorAll('.picker-book-row.active').forEach(function(r) { r.classList.remove('active'); });
+    if (!wasVisible) {
+      chapters.classList.add('visible');
+      el.classList.add('active');
+    }
+    // For single-chapter books, navigate directly
+    var meta = bookMeta[bookId];
+    if (meta && meta.chapters === 1) {
+      togglePicker();
+      switchBook(bookId, 1);
+    }
+  }
+
+  // Landing page book grid population
+  function buildLandingBooks() {
+    var grid = document.getElementById('landing-books');
+    grid.innerHTML = '';
+    var bookIds = Object.keys(bookMeta);
+    for (var i = 0; i < bookIds.length; i++) {
+      var id = bookIds[i];
+      var meta = bookMeta[id];
+      var btn = document.createElement('div');
+      btn.className = 'landing-book';
+      btn.textContent = meta.abbr;
+      btn.onclick = (function(bookId) {
+        return function() { pickLandingBook(bookId); };
+      })(id);
+      grid.appendChild(btn);
+    }
+  }
+
+  function pickLandingBook(bookId) {
+    switchBook(bookId);
+  }
 
   document.addEventListener('click', function(e) {
     var el = e.target;
@@ -3115,22 +3088,31 @@
   window.showChapter = function(bookId, chNum) {
     // Hide about page if visible
     hideAboutPage();
+    // Hide welcome/landing
+    hideWelcome();
     var allCh = document.querySelectorAll('#book-' + bookId + ' .chapter-content');
     allCh.forEach(function(el) { el.style.display = 'none'; });
     var target = document.getElementById('ch-' + bookId + '-' + chNum);
     if (target) target.style.display = 'block';
     currentChapterMap[bookId] = chNum;
-    document.querySelectorAll('#nav-grid .grid-btn').forEach(function(btn, idx) {
-      btn.classList.toggle('active-ch', idx === chNum - 1);
-    });
     // Skip scroll-to-top when navigating to a specific verse from search
     if (!window._pendingVerseScroll) window.scrollTo({top: 0});
-    var navPanel = document.getElementById('nav-panel');
-    if (navPanel) navPanel.style.display = 'none';
     // Update hash — store what we set so handleHash can skip it
     lastHashWeSet = bookId + '-' + chNum;
     window.location.hash = lastHashWeSet;
-    updateCollapsedSummary(bookId, chNum);
+    // Update topbar location
+    var meta = bookMeta[bookId];
+    if (meta) {
+      document.getElementById('topbar-book').textContent = meta.name;
+      document.getElementById('topbar-chap').textContent = 'Chapter ' + chNum;
+    }
+    // Highlight current chapter in picker
+    document.querySelectorAll('.picker-ch').forEach(function(c) { c.classList.remove('current'); });
+    var pickerChaps = document.getElementById('picker-chapters-' + bookId);
+    if (pickerChaps) {
+      var chs = pickerChaps.querySelectorAll('.picker-ch');
+      if (chs[chNum - 1]) chs[chNum - 1].classList.add('current');
+    }
     updateFloatNav(bookId, chNum);
     // Load annotations for this chapter (if signed in)
     if (typeof ANNOTATIONS !== 'undefined' && ANNOTATIONS.loadChapterAnnotations) {
@@ -3139,12 +3121,10 @@
   };
 
   window.showChapterGrid = function(bookId) {
-    var navPanel = document.getElementById('nav-panel');
-    if (navPanel) navPanel.style.display = 'block';
-    buildChapterGrid(bookId);
-    delete currentChapterMap[bookId];
-    document.querySelectorAll('#nav-grid .grid-btn').forEach(function(btn) { btn.classList.remove('active-ch'); });
-    window.scrollTo({top: 0});
+    // Open the picker and expand this book's chapters
+    togglePicker();
+    var pickerChaps = document.getElementById('picker-chapters-' + bookId);
+    if (pickerChaps) pickerChaps.classList.add('visible');
   };
 
   // ---- HASH-BASED DEEP LINKING ----
@@ -3171,18 +3151,22 @@
       el.textContent = el.getAttribute('data-orig');
     });
     aidOn = false;
-    // Set default body classes for reading mode
+    // Set default body classes for reading mode (force sense-line mode only)
     document.body.classList.add('hide-punct');
+    document.body.classList.add('show-lines');
     applyTabSettings('read');
     highlightBookBtn('1nephi');
     buildChapterGrid('1nephi');
+    // Build new UI elements
+    buildPicker();
+    buildLandingBooks();
 
     var hash = window.location.hash.slice(1);
     if (hash && hash !== '') {
       // Deep link — honor it (e.g. #alma-32)
       handleHash();
     } else {
-      // No hash — show welcome section as landing
+      // No hash — show landing page
       showWelcome();
     }
     // Enable CSS transitions only after initial render to prevent lag on load
@@ -3191,279 +3175,47 @@
     }, 300);
   });
 
-  // ════════════════════════════════════════════════════════════
-  // TOOLBAR STATE MACHINE (v2 — rewritten to eliminate oscillation)
-  //
-  // Three orthogonal states, each driven by ONE owner:
-  //   1. COLLAPSED  (scroll-driven)   — book grid hidden, summary+controls visible
-  //   2. HIDDEN     (tap-driven)      — entire toolbar off-screen
-  //   3. SHOW-SUMMARY (manual expand) — full toolbar + summary bar, with grace period
-  //
-  // Key fix: toolbar is position:fixed, so height changes NEVER affect
-  // scrollY or document flow. No oscillation possible. Collapse/expand
-  // is purely visual — direction-based, like headroom.js.
-  // ════════════════════════════════════════════════════════════
-
-  var backBtn = document.getElementById('back-to-top');
-  var toolbar = document.getElementById('reading-toolbar');
-  var toolbarSpacer = document.getElementById('toolbar-spacer');
-  var scrollTicking = false;
-  var prevScrollY = window.scrollY;
-  var manualExpandScrollY = -1;  // scrollY when user manually expanded; -1 = not active
-  var COLLAPSE_THRESHOLD = 80;   // scrollY above which toolbar collapses
-  var EXPAND_THRESHOLD = 5;      // scrollY below which toolbar fully expands (near top only)
-  var GRACE_DISTANCE = 150;      // how far user can scroll before manual expand auto-collapses
-
-  // Set spacer to collapsed toolbar height once — NEVER dynamically resize it.
-  // Dynamic resizing would cause layout shifts (scrollY changes) that recreate
-  // the same oscillation problem we're fixing. The expanded toolbar just overlays
-  // the content below, which is fine since it's a temporary interaction.
-  function initSpacer() {
-    // Temporarily collapse to measure the minimum height
-    toolbar.classList.add('toolbar-collapsed');
-    var collapsedH = toolbar.offsetHeight;
-    toolbar.classList.remove('toolbar-collapsed');
-    if (toolbarSpacer) toolbarSpacer.style.height = collapsedH + 'px';
-  }
-  initSpacer();
-
-  window.addEventListener('scroll', function() {
-    if (scrollTicking) return;
-    scrollTicking = true;
-    requestAnimationFrame(function() {
-      scrollTicking = false;
-      var y = window.scrollY;
-
-      // Back-to-top button
-      backBtn.style.display = y > 600 ? 'flex' : 'none';
-
-      // Skip collapse logic if toolbar is hidden (tap-driven) or on landing page
-      if (toolbar.classList.contains('toolbar-hidden') || toolbar.classList.contains('toolbar-landing')) {
-        prevScrollY = y;
-        return;
-      }
-
-      var isCollapsed = toolbar.classList.contains('toolbar-collapsed');
-      var isManualExpand = toolbar.classList.contains('toolbar-show-summary');
-
-      // Near top of page: always fully expand, clear all states
-      if (y <= EXPAND_THRESHOLD) {
-        if (isCollapsed || isManualExpand) {
-          toolbar.classList.remove('toolbar-collapsed', 'toolbar-show-summary');
-          manualExpandScrollY = -1;
-        }
-        prevScrollY = y;
-        return;
-      }
-
-      // Don't collapse while a panel is open — user is actively interacting
-      var anyPanelOpen = document.getElementById('settings-panel').classList.contains('visible')
-        || ['nav-panel', 'background-panel'].some(function(id) {
-          var el = document.getElementById(id);
-          return el && el.style.display === 'block';
-        });
-      if (anyPanelOpen) { prevScrollY = y; return; }
-
-      // Below collapse threshold
-      if (y > COLLAPSE_THRESHOLD) {
-        if (isManualExpand) {
-          // User manually expanded — collapse after they've scrolled far enough
-          if (manualExpandScrollY >= 0 && Math.abs(y - manualExpandScrollY) > GRACE_DISTANCE) {
-            toolbar.classList.add('toolbar-collapsed');
-            toolbar.classList.remove('toolbar-show-summary');
-            manualExpandScrollY = -1;
-            closeAllPanels();
-          }
-        } else if (!isCollapsed) {
-          // Auto-collapse when scrolled past threshold
-          toolbar.classList.add('toolbar-collapsed');
-        }
-      }
-
-      prevScrollY = y;
-    });
-  }, { passive: true });
-
-  // Helper: expand toolbar from collapsed state (used by ↑ arrow and summary bar)
-  function manualExpand() {
-    toolbar.classList.remove('toolbar-collapsed');
-    if (window.scrollY > COLLAPSE_THRESHOLD) {
-      toolbar.classList.add('toolbar-show-summary');
-      manualExpandScrollY = window.scrollY;
-    }
-  }
-
-  // Helper: collapse toolbar (used by summary bar toggle)
-  function manualCollapse() {
-    toolbar.classList.add('toolbar-collapsed');
-    toolbar.classList.remove('toolbar-show-summary');
-    manualExpandScrollY = -1;
-    closeAllPanels();
-  }
-
-  // Backward-compat shim: pauseCollapse is now a no-op (not needed with fixed positioning)
-  function pauseCollapse() {}
-
-  // ── Touch tracking: distinguish taps from scroll gestures on mobile ──
-  var touchStartX = 0, touchStartY = 0, touchMoved = false;
-  document.addEventListener('touchstart', function(e) {
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-    touchMoved = false;
-  }, { passive: true });
-  document.addEventListener('touchmove', function(e) {
-    if (touchMoved) return;
-    var dx = Math.abs(e.touches[0].clientX - touchStartX);
-    var dy = Math.abs(e.touches[0].clientY - touchStartY);
-    if (dx > 10 || dy > 10) touchMoved = true;
-  }, { passive: true });
-
-  // ── Toolbar drag gestures ──
-  // Strong drag-down from toolbar zone → scroll to top and fully expand
-  document.addEventListener('touchend', function(e) {
-    if (touchStartY >= 60) return;
-    var dy = e.changedTouches[0].clientY - touchStartY;
-    if (dy > 120) {
-      pauseCollapse();
-      toolbar.classList.remove('toolbar-collapsed', 'toolbar-show-summary');
-      manualExpandScrollY = -1;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  }, { passive: true });
-
-  // Tap the summary bar — toggle expand/collapse (or reveal if hidden)
-  document.getElementById('collapsed-summary').addEventListener('click', function(e) {
-    e.stopPropagation();
-    if (touchMoved) return;
-    if (toolbar.classList.contains('toolbar-hidden')) {
-      // Unhide and set correct collapse state for current scroll position
-      toolbar.classList.remove('toolbar-hidden');
-      if (window.scrollY > COLLAPSE_THRESHOLD) {
-        toolbar.classList.add('toolbar-collapsed');
-        toolbar.classList.remove('toolbar-show-summary');
-      }
-      return;
-    }
-    if (toolbar.classList.contains('toolbar-collapsed')) {
-      manualExpand();
-    } else if (window.scrollY > COLLAPSE_THRESHOLD) {
-      manualCollapse();
-    }
-  });
-
-  // ── Tap-to-toggle: tap content area to hide/show toolbar ──
-  document.getElementById('scripture-content').addEventListener('click', function(e) {
-    if (touchMoved) return;
-    // Don't toggle toolbar on landing page
-    if (toolbar.classList.contains('toolbar-landing')) return;
-    if (e.target.closest('a, button, .verse-num, .swap, .gloss-trigger, .quote-allusion')) return;
-    if (typeof NARRATION !== 'undefined' && NARRATION.isPlaying && e.target.closest('.line, .line-para')) return;
-    // If a panel is open, close it instead of toggling toolbar
-    var anyPanelOpen = ['nav-panel', 'background-panel'].some(function(id) {
-      var el = document.getElementById(id);
-      return el && el.style.display === 'block';
-    }) || document.getElementById('settings-panel').classList.contains('visible');
-    if (anyPanelOpen) {
-      closeAllPanels();
-      pauseCollapse();
-      return;
-    }
-    if (toolbar.classList.contains('toolbar-hidden')) {
-      // Unhide — set correct state for current scroll position
-      toolbar.classList.remove('toolbar-hidden');
-      if (window.scrollY > COLLAPSE_THRESHOLD) {
-        toolbar.classList.add('toolbar-collapsed');
-        toolbar.classList.remove('toolbar-show-summary');
-      } else {
-        toolbar.classList.remove('toolbar-collapsed', 'toolbar-show-summary');
-      }
-      manualExpandScrollY = -1;
-    } else {
-      // Hide the toolbar
-      toolbar.classList.add('toolbar-hidden');
-    }
-  });
-
-  // ── First-visit toolbar hint ──
-  // Show a brief hint the first time the toolbar collapses, so new users
-  // know they can tap the text to hide/show it.
-  (function() {
-    var HINT_KEY = 'bom-toolbar-hint-shown';
-    if (localStorage.getItem(HINT_KEY)) return; // already shown once
-    var hintEl = document.createElement('div');
-    hintEl.className = 'toolbar-hint';
-    hintEl.textContent = 'Tap the text area to hide or show the toolbar';
-    document.body.appendChild(hintEl);
-    // Watch for the first collapse event
-    var observer = new MutationObserver(function(mutations) {
-      for (var i = 0; i < mutations.length; i++) {
-        if (toolbar.classList.contains('toolbar-collapsed')) {
-          observer.disconnect();
-          // Show hint briefly
-          setTimeout(function() { hintEl.classList.add('visible'); }, 300);
-          setTimeout(function() { hintEl.classList.remove('visible'); }, 4500);
-          setTimeout(function() { hintEl.remove(); }, 5200);
-          localStorage.setItem(HINT_KEY, '1');
-          return;
-        }
-      }
-    });
-    observer.observe(toolbar, { attributes: true, attributeFilter: ['class'] });
-  })();
-
-  // Click-outside-to-dismiss for dropdown panels (layers, nav, background, settings)
-  // This catches clicks anywhere on the page that are NOT inside an open panel or its toggle button
-  document.addEventListener('click', function(e) {
-    var panelIds = ['nav-panel', 'background-panel', 'settings-panel'];
-    var anyOpen = panelIds.some(function(id) {
-      var el = document.getElementById(id);
-      if (!el) return false;
-      if (id === 'settings-panel') return el.classList.contains('visible');
-      return el.style.display === 'block';
-    });
-    if (!anyOpen) return;
-
-    // Check if the click was inside any open panel or on a toggle button
-    var clickedInPanel = panelIds.some(function(id) {
-      var el = document.getElementById(id);
-      return el && el.contains(e.target);
-    });
-    if (clickedInPanel) return;
-
-    // Check if the click was on a pill/button that toggles a panel
-    // (those handlers manage their own open/close logic)
-    var toggleIds = ['sections-pill', 'about-pill', 'gear-btn', 'aid-pill', 'lines-pill'];
-    var clickedToggle = toggleIds.some(function(id) {
-      var el = document.getElementById(id);
-      return el && (el === e.target || el.contains(e.target));
-    });
-    if (clickedToggle) return;
-
-    // Check if clicked on a book button (those open nav-panel)
-    if (e.target.closest && e.target.closest('.book-btn')) return;
-
-    // Click was outside all panels and toggles — close everything
-    closeAllPanels();
-    pauseCollapse();
-  });
-
-  // Escape key to dismiss open panels (desktop UX)
+  // Escape key handler
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-      var anyOpen = ['nav-panel', 'background-panel'].some(function(id) {
-        var el = document.getElementById(id);
-        return el && el.style.display === 'block';
-      }) || document.getElementById('settings-panel').classList.contains('visible');
-      if (anyOpen) {
-        closeAllPanels();
-        pauseCollapse();
+      if (document.getElementById('picker').classList.contains('open')) {
+        togglePicker();
+        return;
+      }
+      if (document.getElementById('sheet').classList.contains('open')) {
+        toggleSheet();
+        return;
+      }
+      if (document.getElementById('search-overlay').classList.contains('open')) {
+        closeSearch();
+        return;
       }
     }
-    // Arrow keys → prev/next chapter (only when not in an input/textarea)
+    // Arrow keys for chapter nav
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
     if (e.key === 'ArrowLeft') { floatNavPrev(); }
     if (e.key === 'ArrowRight') { floatNavNext(); }
   });
+
+  // ════════════════════════════════════════════════════════════
+  // SCROLL & PROGRESS — simple: back-to-top + progress line
+  // ════════════════════════════════════════════════════════════
+
+  var backBtn = document.getElementById('back-to-top');
+
+  // No-op shim for any lingering callers
+  function pauseCollapse() {}
+  function closeAllPanels() {}
+
+  window.addEventListener('scroll', function() {
+    var y = window.scrollY;
+    // Back-to-top button
+    if (backBtn) backBtn.style.display = y > 600 ? 'flex' : 'none';
+    // Progress line
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = h > 0 ? (y / h * 100) : 0;
+    document.getElementById('progress').style.width = pct + '%';
+  }, { passive: true });
 
   // ---- SWIPE TO CHANGE CHAPTERS ----
   // ---- FLOATING CHAPTER ARROWS (desktop) ----
@@ -3525,7 +3277,7 @@
     // Don't trigger on toolbar or form elements
     var tag = e.target.tagName.toLowerCase();
     if (tag === 'input' || tag === 'select' || tag === 'button') return;
-    if (e.target.closest('#reading-toolbar')) return;
+    if (e.target.closest('.topbar, .sheet, .picker')) return;
 
     var meta = bookMeta[currentBook];
     if (!meta) return;

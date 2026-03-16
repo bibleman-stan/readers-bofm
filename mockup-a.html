@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup A — Thin Persistent Bar</title>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+/*
+  CONCEPT A — "Thin Persistent Bar"
+  ──────────────────────────────────
+  The entire toolbar is ONE thin row: book name + chapter on the left,
+  three small icons on the right. Tapping the book name opens a
+  full-screen book/chapter picker overlay. The controls row is gone
+  entirely — Aid/Verses/Sections are in a slide-up settings sheet.
+
+  Key idea: the reader sees almost nothing but text.
+*/
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #1c1f24;
+  color: #d4d0c8;
+  font-family: Literata, Georgia, serif;
+  font-size: 17px;
+  line-height: 2.35;
+  max-width: 42em;
+  margin: 0 auto;
+  padding: 1em;
+  padding-top: 52px;
+}
+
+/* ── The bar: one thin row ── */
+.topbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  max-width: 42em;
+  margin: 0 auto;
+  height: 44px;
+  background: #1c1f24;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(28, 31, 36, 0.92);
+}
+
+.topbar-loc {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.topbar-book {
+  font-size: 0.82em;
+  color: #7cafc2;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.topbar-chap {
+  font-size: 0.72em;
+  color: #667;
+  white-space: nowrap;
+}
+
+.topbar-icons {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.topbar-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  color: #556;
+  cursor: pointer;
+  font-size: 15px;
+  transition: color 0.2s, background 0.2s;
+}
+.topbar-icon:hover {
+  color: #aab;
+  background: rgba(255,255,255,0.05);
+}
+.topbar-icon svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* ── Full-screen book picker overlay ── */
+.picker-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(14, 16, 20, 0.97);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.picker-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.picker-close {
+  position: absolute;
+  top: 16px; right: 20px;
+  font-size: 28px;
+  color: #556;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.picker-close:hover { color: #aab; }
+
+.picker-title {
+  font-size: 1.1em;
+  color: #7cafc2;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+.picker-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  max-width: 340px;
+}
+
+.picker-book {
+  padding: 10px 6px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #8899aa;
+  font-family: Literata, Georgia, serif;
+  font-size: 0.7em;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.picker-book:hover {
+  background: rgba(124, 175, 194, 0.08);
+  color: #bcc8d4;
+  border-color: rgba(124, 175, 194, 0.2);
+}
+.picker-book.active {
+  background: rgba(124, 175, 194, 0.12);
+  color: #7cafc2;
+  border-color: rgba(124, 175, 194, 0.3);
+}
+
+/* ── Settings sheet (slides up from bottom) ── */
+.settings-sheet {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  max-width: 42em;
+  margin: 0 auto;
+  background: #22252b;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px 16px 0 0;
+  padding: 20px 24px 28px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 200;
+}
+.settings-sheet.open {
+  transform: translateY(0);
+}
+
+.sheet-handle {
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.12);
+  margin: 0 auto 18px;
+}
+
+.sheet-section {
+  margin-bottom: 18px;
+}
+
+.sheet-label {
+  font-size: 0.68em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #556;
+  margin-bottom: 8px;
+}
+
+.sheet-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sheet-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: none;
+  color: #8899aa;
+  font-family: Literata, Georgia, serif;
+  font-size: 0.78em;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sheet-chip:hover {
+  border-color: rgba(255,255,255,0.2);
+  color: #bcc8d4;
+}
+.sheet-chip.on {
+  border-color: #7cafc2;
+  color: #7cafc2;
+  background: rgba(124, 175, 194, 0.08);
+}
+
+/* ── Scrim behind overlays ── */
+.scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 150;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+.scrim.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Page title ── */
+.page-title {
+  font-size: 1.15em;
+  color: #7cafc2;
+  margin-bottom: 0.3em;
+  font-weight: 400;
+}
+.page-title-sub {
+  font-size: 0.55em;
+  color: #667;
+  font-style: italic;
+}
+
+/* ── Sample verse text ── */
+.verse { margin-bottom: 0.3em; }
+.verse-num {
+  font-size: 0.65em;
+  color: #556;
+  vertical-align: super;
+  margin-right: 0.2em;
+  cursor: pointer;
+}
+.verse-num:hover { color: #7cafc2; }
+
+.chapter-heading {
+  font-size: 0.82em;
+  color: #667;
+  margin: 1.5em 0 0.8em;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .topbar { max-width: none; }
+  .settings-sheet { max-width: none; }
+  .picker-grid { grid-template-columns: repeat(5, 1fr); max-width: 90vw; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ THIN TOP BAR ═══ -->
+<div class="topbar">
+  <div class="topbar-loc" onclick="togglePicker()">
+    <span class="topbar-book">1 Nephi</span>
+    <span class="topbar-chap">Chapter 1</span>
+  </div>
+  <div class="topbar-icons">
+    <button class="topbar-icon" onclick="toggleSearch()" aria-label="Search">
+      <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
+    <button class="topbar-icon" onclick="toggleSheet()" aria-label="Settings">
+      <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ═══ BOOK PICKER OVERLAY ═══ -->
+<div class="picker-overlay" id="picker">
+  <button class="picker-close" onclick="togglePicker()">&times;</button>
+  <div class="picker-title">Choose a book</div>
+  <div class="picker-grid">
+    <div class="picker-book active">1 Nephi</div>
+    <div class="picker-book">2 Nephi</div>
+    <div class="picker-book">Jacob</div>
+    <div class="picker-book">Enos</div>
+    <div class="picker-book">Jarom</div>
+    <div class="picker-book">Omni</div>
+    <div class="picker-book">WoM</div>
+    <div class="picker-book">Mosiah</div>
+    <div class="picker-book">Alma</div>
+    <div class="picker-book">Helaman</div>
+    <div class="picker-book">3 Nephi</div>
+    <div class="picker-book">4 Nephi</div>
+    <div class="picker-book">Mormon</div>
+    <div class="picker-book">Ether</div>
+    <div class="picker-book">Moroni</div>
+  </div>
+</div>
+
+<!-- ═══ SETTINGS SHEET ═══ -->
+<div class="scrim" id="scrim" onclick="toggleSheet()"></div>
+<div class="settings-sheet" id="sheet">
+  <div class="sheet-handle"></div>
+
+  <div class="sheet-section">
+    <div class="sheet-label">Reading aids</div>
+    <div class="sheet-chips">
+      <button class="sheet-chip on">Modern words</button>
+      <button class="sheet-chip">Verse numbers</button>
+      <button class="sheet-chip">Section breaks</button>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <div class="sheet-label">Display</div>
+    <div class="sheet-chips">
+      <button class="sheet-chip">Light mode</button>
+      <button class="sheet-chip on">Sense lines</button>
+      <button class="sheet-chip">Prose view</button>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <div class="sheet-label">Text size</div>
+    <div class="sheet-chips">
+      <button class="sheet-chip">Small</button>
+      <button class="sheet-chip on">Medium</button>
+      <button class="sheet-chip">Large</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ READING CONTENT ═══ -->
+<div class="page-title">The Book of Mormon <span class="page-title-sub">Reading Edition</span></div>
+
+<div class="chapter-heading">The account of Lehi and his wife Sariah and his four sons</div>
+
+<div class="verse"><span class="verse-num">1</span>I, Nephi, having been born of good parents, therefore I was taught somewhat in all the learning of my father;</div>
+<div class="verse">and having seen many afflictions in the course of my days,</div>
+<div class="verse">nevertheless, having been highly favored of the Lord in all my days —</div>
+<div class="verse">yes, having had a great knowledge of the goodness and the mysteries of God,</div>
+<div class="verse">therefore I make a record of my proceedings in my days.</div>
+
+<div class="verse"><span class="verse-num">2</span>Yes, I make a record in the language of my father,</div>
+<div class="verse">which consists of the learning of the Jews and the language of the Egyptians.</div>
+
+<div class="verse"><span class="verse-num">3</span>And I know that the record which I make is true;</div>
+<div class="verse">and I make it with my own hand;</div>
+<div class="verse">and I make it according to my knowledge.</div>
+
+<div class="verse"><span class="verse-num">4</span>For it came to pass in the beginning of the first year of the reign of Zedekiah, king of Judah</div>
+<div class="verse">(my father, Lehi, having lived at Jerusalem in all his days);</div>
+<div class="verse">and in that same year there came many prophets,</div>
+<div class="verse">prophesying to the people that they must repent, or the great city Jerusalem must be destroyed.</div>
+
+<div class="verse"><span class="verse-num">5</span>That is why my father, Lehi, as he went out, prayed to the Lord,</div>
+<div class="verse">yes, even with all his heart, on behalf of his people.</div>
+
+<div class="verse"><span class="verse-num">6</span>And it came to pass that as he prayed to the Lord,</div>
+<div class="verse">a pillar of fire came and sat upon a rock before him;</div>
+<div class="verse">and he saw and heard much;</div>
+<div class="verse">and because of the things which he saw and heard</div>
+<div class="verse">he did shake and tremble exceedingly.</div>
+
+<div class="verse"><span class="verse-num">7</span>And it came to pass that he returned to his own house at Jerusalem;</div>
+<div class="verse">and he threw himself upon his bed, being overcome with the Spirit and the things which he had seen.</div>
+
+<div class="verse"><span class="verse-num">8</span>And being thus overcome with the Spirit,</div>
+<div class="verse">he was carried away in a vision,</div>
+<div class="verse">even that he saw the heavens open,</div>
+<div class="verse">and he thought he saw God sitting upon his throne,</div>
+<div class="verse">surrounded by numberless groups of angels in the attitude of singing and praising their God.</div>
+
+<script>
+function togglePicker() {
+  document.getElementById('picker').classList.toggle('open');
+}
+function toggleSheet() {
+  document.getElementById('sheet').classList.toggle('open');
+  document.getElementById('scrim').classList.toggle('open');
+}
+function toggleSearch() {
+  alert('Search would open here');
+}
+</script>
+
+</body>
+</html>

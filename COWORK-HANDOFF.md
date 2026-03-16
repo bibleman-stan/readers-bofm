@@ -1,7 +1,7 @@
 # Book of Mormon Reader's Edition — Cowork Handoff
 
-**Last updated:** 2026-03-02
-**Sessions covered:** Feb 28 (initial build) → Feb 28 evening (v8 reformatter) → Mar 1 (layers, pericope, polish, About page) → Mar 1 evening (Isaiah pericopes, two-tier headers, Hebrew Poetry layer, UI fixes) → Mar 2 (nav bug fixes, Parry-style CSS, KJV diff fix, reference cleanup) → Mar 2 evening (Read Along extraction, archaic word swaps expansion)
+**Last updated:** 2026-03-16
+**Sessions covered:** Feb 28 (initial build) → Feb 28 evening (v8 reformatter) → Mar 1 (layers, pericope, polish, About page) → Mar 1 evening (Isaiah pericopes, two-tier headers, Hebrew Poetry layer, UI fixes) → Mar 2 (nav bug fixes, Parry-style CSS, KJV diff fix, reference cleanup) → Mar 2 evening (Read Along extraction, archaic word swaps expansion) → Mar 16 (major UI redesign: thin persistent bar, landing page, bottom sheet)
 
 ---
 
@@ -21,8 +21,9 @@ A web-based reading app for the Book of Mormon designed for ESL readers, childre
 
 | File | Purpose | Lines |
 |------|---------|-------|
-| `index.html` | Main app shell — all CSS, HTML, JS in one file | ~2740 |
+| `index.html` | Main app shell — all CSS, HTML, JS in one file | ~4220 |
 | `readalong.html` | **Standalone beta** — Read Along mic/speech tool (extracted from index.html Mar 2) | ~420 |
+| `archive-studying-edition/` | Preserved old toolbar, text-mode toggle, Parry parallel UI code for future Studying Edition | — |
 | `build_book.py` | Converts sense-line `.txt` sources into HTML book fragments | ~1090 |
 | `build_parallel_index.py` | Parses Parry parallelism data into JSON index (lite filter) | ~300 |
 | `books/*.html` | Generated HTML fragments, one per book (15 total, loaded via fetch) | varies |
@@ -66,65 +67,52 @@ python3 build_book.py --all booklist.txt --out books/
 
 ## Current UI Structure
 
-### Header
-```html
-<a href="#" onclick="showAboutPage(); return false;">
-  <h1>The Book of Mormon <span class="subtitle">Reading Edition</span></h1>
-</a>
-```
-- Title is one line: "The Book of Mormon" in full size, "Reading Edition" on a second line in smaller (0.48em) italic muted text
-- Clicking opens the About page (full-page feature guide in the content area)
-- Tight spacing: `margin-bottom: 0.4em`, subtitle has `margin-top: 0.15em`
+### Thin Persistent Top Bar (`.topbar`)
+A 44px fixed bar at the top with backdrop blur:
+- **Left side:** Book name + chapter (e.g., "1 Nephi · Chapter 1") — tap opens the full-screen book/chapter picker
+- **On landing page:** Shows "bomreader.com" instead of book/chapter
+- **Right side:** Search icon + Settings (hamburger) icon
+- CSS custom properties for theming: `--bg`, `--accent`, `--text-dim`, `--text-faint`, `--border`, etc.
 
-### Floating Toolbar (`#reading-toolbar`)
-Sticky toolbar with multiple sub-components:
+### Progress Line (`.progress-line`)
+A 2px bar at the very top of the viewport showing scroll position (0–100%).
 
-1. **Collapsed summary bar** (`#collapsed-summary`) — shown when toolbar collapses on scroll, displays current book + chapter
-2. **Book grid** (`#book-grid`) — 15 book abbreviation buttons + "About [Book Name]" pill
-3. **Settings panel** (`#settings-panel`) — typography controls (uses `.visible` class, not display)
-4. **Navigation panel** (`#nav-panel`) — chapter number grid (shown on book tap)
-5. **Controls row** (`.controls-row`) — pill buttons: Aid · Verses · Sections · Layers · ⚙ (Mic button removed — see `readalong.html`)
-6. **Layers panel** (`#layers-panel`) — checkbox toggles grouped by category
-7. **Background panel** (`#background-panel`) — book introductions with expandable `<details>` sections
+### Full-Screen Book/Chapter Picker (`.picker`)
+Opens when tapping the book/chapter in the topbar:
+- Vertical list of all 15 books
+- Tap a book row to expand its chapter numbers
+- Chapter numbers shown as small clickable pills
+- Built dynamically from `bookMeta` object via `buildPicker()`
+
+### Bottom Sheet (`.sheet`)
+Slides up from bottom when tapping the settings icon:
+- **Modern words** toggle (iOS-style switch)
+- **Listen** toggle (starts narration)
+- **Section headings** toggle
+- **Text size** selector (S / M / L buttons)
+- **Light mode** toggle
+- **Refresh content** and **Save for offline** utility buttons
+- Backdrop scrim (`.sheet-scrim`) behind the sheet
+
+### Landing Page (`.landing`)
+Shown when no hash is present (initial visit):
+- Title: "The Book of Mormon — Reading Edition"
+- Tagline and description paragraph
+- Book grid with all 15 books as clickable cards (built from `bookMeta` via `buildLandingBooks()`)
+- "Learn more about the features" link → About page
+
+### Text Mode
+Sense lines are now the ONLY text mode for the Reading Edition. `applyTextMode(1)` is forced on load. The three-layer data (prose `.line-para`, sense lines `.line`, Parry parallels `.line-parry`) still exists in `books/*.html` for future Studying Edition use. See `archive-studying-edition/text-mode-system.md`.
 
 ### Content Area (`#scripture-content`)
 Contains:
-- `#about-page` — full feature guide (hidden by default, shown by clicking header)
+- `#landing` — landing page (shown when no hash)
+- `#about-page` — full feature guide (hidden by default)
 - `#book-content-container` — where book HTML fragments get injected
 
-### Pill Button Active States
-
-| Button | ID | Active Class | Color |
-|--------|-----|-------------|-------|
-| Aid | `aid-pill` | `active-aid` | `#27ae60` (green) |
-| Verses | `verses-pill` | `active-verses` | `#c9a368` (gold) |
-| Sections | `sections-pill` | `active-sections` | `#9ab` (blue-gray) |
-| Layers | `layers-pill` | `active-layers` | `#7cb8e4` (blue) |
-| About [Book] | `about-pill` | `active-bg` | `#ccc` |
-
-### Layers Panel Groups
-
-| Group | Layer | Checkbox ID | Color | Body Class |
-|-------|-------|------------|-------|------------|
-| Divine Voice | God's Presence | `deity-check` | `#c0392b` | `show-deity` |
-| Divine Voice | The Holy Spirit | `spirit-check` | `#888` | `show-spirit` |
-| Biblical Roots | Direct Quotations | `quotations-check` | `#7cb8e4` | `sources-quotations` |
-| Biblical Roots | Echoes & Allusions | `allusions-check` | `#8aabbf` | `sources-allusions` |
-| Biblical Roots | KJV Parallels | `kjv-diff-check` | `#6ba3d6` | `show-kjv-diff` |
-| Setting | Geography | `geo-check` | `#b5854a` | `show-geo` |
-| Literary | Hebrew Poetry | `parallels-check` | `#5eadad` | `show-parallels` |
-
-### Settings Panel Defaults
-
-| Setting | Default | CSS Variable |
-|---------|---------|-------------|
-| Continuous flow | ON (checked) | `--verse-num-display: none; --verse-gap: 2px` |
-| Hide punctuation | ON (checked) | `--punct-opacity: 0` |
-| Wrap indent | ON (checked) | `--wrap-indent: 0.75em` |
-| Text size | Medium | `--font-size: 17px` |
-| Text density | Normal | `--letter-spacing: 0; --word-spacing: 0` |
-| Line spacing | Airy | `--line-height: 2.35` |
-| Light mode | OFF | `body.light-mode` class |
+### Preserved but Hidden
+- `#settings-panel-old` — the old toolbar settings panel, kept with `display:none` for future Studying Edition reference
+- All verse rendering infrastructure (`.verse`, `.line`, `.swap`, `.punct`, `.deity`, `.gloss`, `.pericope`, annotations) remains unchanged
 
 ---
 
@@ -1043,3 +1031,27 @@ These are pending tasks Stan sent to himself as notes for Claude. Read the full 
 - AICTP double-that construction (Mosiah 1:9) — likely fixed in commit `832082b`
 - Pericope header verse ranges + thematic breaks — likely done in commit `c7f7486`
 - "can you read this" test email — ignore
+
+---
+
+## Mar 16 Redesign Notes
+
+### What Changed
+- **Removed:** Complex collapsible floating toolbar (`#reading-toolbar`) with its ~250-line scroll state machine, book grid, controls row, pill buttons, and multi-panel system
+- **Added:** Thin persistent top bar (44px), full-screen book/chapter picker overlay, bottom sheet for settings, landing page, progress line
+- **Simplified:** Text mode is now sense-lines only (no verse/prose/parallels toggle). `applyTextMode(1)` forced on load.
+- **Preserved:** All verse rendering, search system (with stem matching, charts, boolean queries), annotations (Firebase), narration, swipe navigation, keyboard shortcuts, offline/service worker support
+
+### Archive
+Old UI code preserved in `archive-studying-edition/` folder:
+- `old-toolbar.html` — HTML skeleton of the removed toolbar
+- `old-toolbar-css.css` — Removed CSS styles
+- `old-toolbar-js.js` — Removed JS state machine
+- `text-mode-system.md` — Documentation of the three-layer text system
+- `README.md` — Overview and rationale
+
+### Known Issues / TODO
+- Light mode CSS needs verification for new topbar, picker, sheet, and landing page elements
+- Narration integration: Listen button was previously in `.controls-row`, now in bottom sheet `#listen-toggle-row` — needs verification
+- Book introductions (previously in `#background-panel`) are in hidden `settings-panel-old` div — need to be made accessible (via About page or picker)
+- Lower priority: About page color accuracy, generate 2 Nephi 6-33 audio, 1 Ne 6:1 verse text edit and audio patch

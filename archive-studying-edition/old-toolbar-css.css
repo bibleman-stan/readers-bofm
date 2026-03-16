@@ -1,0 +1,430 @@
+/* Archive: Old Toolbar Styles
+   Styles for the collapsible toolbar system removed during Reading Edition redesign.
+   Kept as reference for planned Studying Edition.
+
+   Key concepts:
+   - Toolbar can be in states: hidden, collapsed, expanded, landing (first-time hint)
+   - Smooth transitions between states
+   - Responsive to touch and scroll
+   - Sub-panels slide in/out
+   - Animations guide user attention
+*/
+
+/* ========== Main Toolbar Container ========== */
+
+#reading-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  will-change: transform;
+}
+
+#reading-toolbar.toolbar-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+#reading-toolbar.toolbar-collapsed {
+  transform: translateY(0);
+}
+
+#reading-toolbar.toolbar-expanded {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#reading-toolbar.toolbar-landing {
+  /* First-visit state: hint visible, toolbar ready for interaction */
+}
+
+/* ========== Collapsed Summary Bar ========== */
+
+.collapsed-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+  user-select: none;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  min-height: 48px;
+}
+
+#toolbar-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  flex-grow: 1;
+}
+
+.collapsed-summary .expand-hint {
+  font-size: 20px;
+  color: #999;
+  transition: transform 0.3s ease;
+}
+
+.toolbar-expanded .collapsed-summary .expand-hint {
+  transform: rotate(180deg);
+}
+
+/* Tap feedback */
+.collapsed-summary:active {
+  background: #f0f0f0;
+}
+
+/* ========== Toolbar Content (Expanded) ========== */
+
+.toolbar-content {
+  padding: 16px;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+.toolbar-collapsed .toolbar-content {
+  display: none;
+}
+
+/* ========== Book Grid ========== */
+
+.book-section {
+  margin-bottom: 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 600px) {
+  .book-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.book-btn {
+  padding: 12px 8px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #333;
+  text-align: center;
+}
+
+.book-btn:hover {
+  background: #e8e8e8;
+  border-color: #999;
+}
+
+.book-btn:active {
+  transform: scale(0.96);
+  background: #d0d0d0;
+}
+
+.book-btn.active {
+  background: #4a90e2;
+  color: #fff;
+  border-color: #2e5c8a;
+}
+
+/* ========== Controls Row (Pill Buttons) ========== */
+
+.controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pill-btn {
+  padding: 8px 14px;
+  background: #e8f4f8;
+  border: 1px solid #b3dce8;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #2c5aa0;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.pill-btn:hover {
+  background: #d4ebf3;
+  border-color: #8ec5d9;
+}
+
+.pill-btn:active {
+  transform: scale(0.95);
+}
+
+.pill-btn.active {
+  background: #4a90e2;
+  color: #fff;
+  border-color: #2e5c8a;
+}
+
+.btn-label {
+  display: inline-block;
+}
+
+/* Text Mode Group (radio-style button group) */
+.text-mode-group {
+  display: flex;
+  gap: 4px;
+  background: #f0f0f0;
+  padding: 4px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.text-mode-btn {
+  background: transparent;
+  border: none;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 18px;
+  transition: all 0.2s ease;
+  color: #666;
+}
+
+.text-mode-btn:hover {
+  color: #333;
+}
+
+.text-mode-btn.active {
+  background: #fff;
+  color: #4a90e2;
+  border: 1px solid #b3dce8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== Toolbar Panels (Slide-out sections) ========== */
+
+.toolbar-panel {
+  margin-top: 16px;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateY(-8px);
+}
+
+.toolbar-panel.active {
+  max-height: 400px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.panel-header {
+  padding: 12px 16px;
+  background: #f0f0f0;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.panel-content {
+  padding: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.setting-item input[type="range"] {
+  width: 120px;
+}
+
+.setting-item input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.nav-search {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.intro-text {
+  line-height: 1.6;
+  color: #666;
+}
+
+/* ========== Toolbar Footer ========== */
+
+.toolbar-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  margin-top: 16px;
+}
+
+.about-pill-btn,
+.gear-btn {
+  padding: 8px 12px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-pill-btn:hover,
+.gear-btn:hover {
+  background: #e0e0e0;
+  border-color: #999;
+}
+
+/* ========== Toolbar Hint (First-visit UI) ========== */
+
+.toolbar-hint {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 1001;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.hint-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hint-content p {
+  margin: 0;
+}
+
+.hint-dismiss {
+  padding: 4px 10px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hint-dismiss:hover {
+  background: #2e5c8a;
+}
+
+/* ========== Toolbar Spacer ========== */
+
+#toolbar-spacer {
+  transition: height 0.3s ease;
+  will-change: height;
+}
+
+/* ========== Scroll-triggered Auto-collapse ========== */
+
+/* When scrolling down, toolbar slides out of view */
+#reading-toolbar.toolbar-auto-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ========== Touch Drag Indication ========== */
+
+#reading-toolbar.toolbar-dragging {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== Responsive Design ========== */
+
+@media (max-width: 480px) {
+  .book-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .controls-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pill-btn,
+  .text-mode-group {
+    width: 100%;
+  }
+
+  .collapsed-summary {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  #toolbar-title {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .toolbar-content {
+    max-height: 80vh;
+  }
+
+  .controls-row {
+    gap: 12px;
+  }
+}

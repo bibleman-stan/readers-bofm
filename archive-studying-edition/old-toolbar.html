@@ -1,0 +1,154 @@
+<!-- Archived Toolbar HTML Structure
+     This is the HTML skeleton of the collapsible toolbar system that was removed
+     during the Reading Edition redesign. Provided as reference for the planned
+     Studying Edition.
+
+     The toolbar was:
+     - Expandable/collapsible via button tap or scroll gesture
+     - Organized into multiple sub-sections (book grid, controls, panels)
+     - Auto-hidden on scroll down, auto-expanded on scroll up
+     - Mobile-optimized with touch tracking
+-->
+
+<div id="reading-toolbar" class="toolbar-hidden">
+
+  <!-- Collapsed Summary Bar
+       Shows when toolbar is collapsed. Displays current book and chapter.
+       Tapping expands the full toolbar.
+  -->
+  <div class="collapsed-summary">
+    <span id="toolbar-title">
+      <!-- Dynamically populated: e.g., "1 Nephi 1" -->
+    </span>
+    <span class="expand-hint">⌄</span>
+  </div>
+
+  <!-- Main Toolbar Content (hidden when collapsed) -->
+  <div class="toolbar-content">
+
+    <!-- Book Selector Grid
+         Displays 15 book buttons in a grid. Clicking a book navigates to it.
+         Grid adapts to available space.
+    -->
+    <div class="book-section">
+      <div class="book-grid">
+        <!-- Each book gets a button with class .book-btn -->
+        <!-- Data structure: data-book="1nephi" or similar identifier -->
+        <button class="book-btn" data-book="1nephi">1 Nephi</button>
+        <button class="book-btn" data-book="2nephi">2 Nephi</button>
+        <button class="book-btn" data-book="jacob">Jacob</button>
+        <button class="book-btn" data-book="enos">Enos</button>
+        <button class="book-btn" data-book="jarom">Jarom</button>
+        <button class="book-btn" data-book="omni">Omni</button>
+        <button class="book-btn" data-book="mosiah">Mosiah</button>
+        <button class="book-btn" data-book="alma">Alma</button>
+        <button class="book-btn" data-book="helaman">Helaman</button>
+        <button class="book-btn" data-book="3nephi">3 Nephi</button>
+        <button class="book-btn" data-book="4nephi">4 Nephi</button>
+        <button class="book-btn" data-book="mormon">Mormon</button>
+        <button class="book-btn" data-book="ether">Ether</button>
+        <button class="book-btn" data-book="moroni">Moroni</button>
+        <button class="book-btn" data-book="dc">D&amp;C</button>
+      </div>
+    </div>
+
+    <!-- Controls Row
+         Contains pill buttons for text mode and display toggles.
+    -->
+    <div class="controls-row">
+
+      <!-- Modern/Original Words Toggle -->
+      <button class="pill-btn aid-toggle" id="aid-btn" title="Toggle modern word aids">
+        <span class="btn-label">Aid</span>
+      </button>
+
+      <!-- Text Mode Selector (Verses/Lines/Parallels) -->
+      <!-- Radio-button style: only one can be active -->
+      <div class="text-mode-group">
+        <button class="pill-btn text-mode-btn" data-mode="0" title="Prose mode">
+          <span class="btn-label">Prose</span>
+        </button>
+        <button class="pill-btn text-mode-btn active" data-mode="1" title="Sense lines mode">
+          <span class="btn-label">Lines</span>
+        </button>
+        <button class="pill-btn text-mode-btn" data-mode="2" title="Parry parallels mode">
+          <span class="btn-label">Parallels</span>
+        </button>
+      </div>
+
+      <!-- Sections Toggle -->
+      <button class="pill-btn sections-toggle" id="sections-btn" title="Toggle section headers">
+        <span class="btn-label">§ Sections</span>
+      </button>
+    </div>
+
+    <!-- Sub-Panels (slide-out containers)
+         These appear as additional sections below controls.
+         Only one panel expands at a time.
+    -->
+
+    <!-- Settings Panel -->
+    <div class="toolbar-panel settings-panel" id="settings-panel">
+      <div class="panel-header">Settings</div>
+      <div class="panel-content">
+        <!-- Font size, colors, spacing controls would go here -->
+        <label class="setting-item">
+          <span>Font size</span>
+          <input type="range" min="12" max="24" value="16">
+        </label>
+        <label class="setting-item">
+          <input type="checkbox"> Dark mode
+        </label>
+      </div>
+    </div>
+
+    <!-- Navigation Panel -->
+    <div class="toolbar-panel nav-panel" id="nav-panel">
+      <div class="panel-header">Navigation</div>
+      <div class="panel-content">
+        <!-- Quick chapter links or search would go here -->
+        <input type="text" class="nav-search" placeholder="Go to chapter...">
+      </div>
+    </div>
+
+    <!-- Background Panel (Book Introductions) -->
+    <div class="toolbar-panel background-panel" id="background-panel">
+      <div class="panel-header">Background</div>
+      <div class="panel-content">
+        <!-- Book introductions, historical context would go here -->
+        <div class="intro-text">
+          <!-- Dynamically populated with book introduction -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Toolbar Footer (settings/about icons) -->
+    <div class="toolbar-footer">
+      <button class="about-pill-btn" id="about-btn" title="About this edition">
+        ⓘ
+      </button>
+      <button class="gear-btn" id="settings-btn" title="Settings">
+        ⚙
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Hint Element
+       First-visit hint showing user how to interact with the toolbar.
+       Disappears after user dismisses or interacts.
+  -->
+  <div class="toolbar-hint" id="toolbar-hint" style="display: none;">
+    <div class="hint-content">
+      <p>Tap the book name to expand menu. Scroll down to hide, up to show.</p>
+      <button class="hint-dismiss">Got it</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- Dynamic Spacer Element
+     Used to push content down when toolbar is expanded, preventing overlap.
+     Height calculated by initSpacer() function.
+-->
+<div id="toolbar-spacer" style="height: 0;"></div>
