@@ -273,17 +273,17 @@
     background: var(--bg-raised);
     border-top: 1px solid var(--border);
     border-radius: 16px 16px 0 0;
-    padding: 0 20px 32px;
+    padding: 0 20px 20px;
     transform: translateY(100%);
     transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
     z-index: 200;
-    max-height: 80vh;
+    max-height: 85vh;
     overflow-y: auto;
   }
   .sheet.open { transform: translateY(0); }
 
   .sheet-handle-area {
-    padding: 12px 0 8px;
+    padding: 10px 0 4px;
     cursor: grab;
     display: flex;
     justify-content: center;
@@ -296,7 +296,7 @@
   }
 
   .sheet-section {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 
   .sheet-label {
@@ -304,7 +304,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--text-faint);
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     font-weight: 600;
   }
 
@@ -313,7 +313,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 7px 0;
   }
   .toggle-row + .toggle-row {
     border-top: 1px solid var(--border);
@@ -455,13 +455,13 @@
   /* Text size — A buttons */
   .size-row {
     display: flex;
-    gap: 8px;
+    gap: 6px;
   }
 
   .size-btn {
     flex: 1;
-    padding: 10px 0;
-    border-radius: 10px;
+    padding: 6px 0;
+    border-radius: 8px;
     border: 1px solid var(--border);
     background: none;
     color: var(--text-faint);
@@ -481,12 +481,12 @@
   }
   .size-btn .letter {
     display: block;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 600;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
   .size-btn .label {
-    font-size: 0.62em;
+    font-size: 0.58em;
     opacity: 0.6;
   }
 
