@@ -1164,13 +1164,10 @@ const NARRATION = (() => {
         break;
     }
 
-    // Toolbar button
-    const toolbarBtn = document.getElementById('narration-btn');
-    if (toolbarBtn) {
-      if (state === 'playing') toolbarBtn.textContent = 'Playing';
-      else if (state === 'paused') toolbarBtn.textContent = 'Paused';
-      else if (state === 'loading') toolbarBtn.textContent = 'Loading...';
-      else toolbarBtn.textContent = 'Listen';
+    // Sync bottom-sheet Listen toggle
+    var listenToggle = document.getElementById('listen-toggle');
+    if (listenToggle) {
+      listenToggle.checked = (state === 'playing' || state === 'loading');
     }
   }
 
@@ -1216,36 +1213,43 @@ const NARRATION = (() => {
     if (miniSpeed) miniSpeed.textContent = currentSpeed + 'x';
   }
 
-  // ── Toolbar button (entry point) ──
+  // ── Bottom-sheet Listen toggle (entry point) ──
 
   function initToolbarButton() {
-    const controls = document.createElement('div');
-    controls.id = 'narration-controls';
-
-    const btn = document.createElement('button');
-    btn.id = 'narration-btn';
-    btn.textContent = 'Listen';
-    btn.title = 'Listen to this chapter';
-    btn.addEventListener('click', () => {
-      if (playing) {
-        showPlayer();
-        toggleExpand(true);
-      } else {
-        startPlayback();
-      }
-    });
-    controls.appendChild(btn);
-
-    const controlsRow = document.querySelector('.controls-row');
-    if (controlsRow) {
-      const searchBtn = controlsRow.querySelector('.search-icon-btn');
-      if (searchBtn && searchBtn.nextSibling) {
-        // Insert Listen after search icon (between search and layers)
-        controlsRow.insertBefore(controls, searchBtn.nextSibling);
-      } else {
-        controlsRow.appendChild(controls);
-      }
+    // Wire the Listen toggle in the bottom sheet
+    var listenToggle = document.getElementById('listen-toggle');
+    if (listenToggle) {
+      listenToggle.addEventListener('change', function() {
+        if (listenToggle.checked) {
+          if (playing) {
+            showPlayer();
+            toggleExpand(true);
+          } else {
+            startPlayback();
+          }
+        } else {
+          if (playing) stopPlayback();
+        }
+      });
     }
+    // Show the listen toggle row (hidden by default) — will be
+    // shown/hidden per-chapter by checkAudioAvailability()
+    checkAudioAvailability();
+  }
+
+  // Check if audio exists for the current chapter and show/hide the toggle
+  function checkAudioAvailability() {
+    var row = document.getElementById('listen-toggle-row');
+    if (!row) return;
+    var ch = getCurrentChapter();
+    if (!ch) { row.style.display = 'none'; return; }
+    var folder = BOOK_FOLDERS[ch.bookId] || ch.bookId;
+    var url = AUDIO_BASE + folder + '/' + ch.bookId + '-' + ch.chapter + '-' + VOICE + '.json';
+    fetch(url, { method: 'HEAD' }).then(function(r) {
+      row.style.display = r.ok ? '' : 'none';
+    }).catch(function() {
+      row.style.display = 'none';
+    });
   }
 
   // ── Initialize ──
@@ -1264,6 +1268,7 @@ const NARRATION = (() => {
     stop: stopPlayback,
     setSpeed,
     seekToLine,
+    checkAudio: checkAudioAvailability,
     get isPlaying() { return playing; },
     get isPaused() { return audioEl && audioEl.paused; },
     get currentLine() { return currentLineIdx >= 0 && manifest ? manifest.lines[currentLineIdx] : null; },

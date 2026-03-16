@@ -2716,6 +2716,10 @@
     if (typeof ANNOTATIONS !== 'undefined' && ANNOTATIONS.loadChapterAnnotations) {
       ANNOTATIONS.loadChapterAnnotations(bookId, chNum);
     }
+    // Check if narration audio is available for this chapter
+    if (typeof NARRATION !== 'undefined' && NARRATION.checkAudio) {
+      NARRATION.checkAudio();
+    }
   };
 
   window.showChapterGrid = function(bookId) {
