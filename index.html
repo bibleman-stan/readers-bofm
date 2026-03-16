@@ -32,27 +32,8 @@
     padding: 1em;
   }
 
-  h1 {
-    font-weight: normal;
-    font-size: 1.6em;
-    text-align: left;
-    margin-bottom: 0.4em;
-    line-height: 1.1;
-  }
-
-  h1 .subtitle {
-    display: block;
-    font-size: 0.48em;
-    font-style: italic;
-    color: #8899aa;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    margin-top: 0.15em;
-  }
-
-  body.light-mode h1 .subtitle {
-    color: #6a7a8a;
-  }
+  /* h1 styles kept minimal — title is now inside toolbar as #toolbar-title */
+  h1 { font-weight: normal; font-size: 1.6em; text-align: left; margin-bottom: 0.4em; line-height: 1.1; }
 
   /* === TOOLBAR === */
   #reading-toolbar {
@@ -219,7 +200,34 @@
     border-color: #889;
   }
 
-  /* Collapsed toolbar — hide book grid and panels, keep summary + controls */
+  /* Toolbar title / home link */
+  #toolbar-title {
+    display: block;
+    text-align: left;
+    font-family: Literata, Georgia, serif;
+    font-size: 1.35em;
+    font-weight: normal;
+    color: #d4d0c8;
+    text-decoration: none;
+    padding: 10px 12px 4px;
+    line-height: 1.2;
+  }
+  #toolbar-title:hover { color: #fff; }
+  .toolbar-title-sub {
+    display: block;
+    font-size: 0.42em;
+    font-style: italic;
+    color: #8899aa;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-top: 2px;
+  }
+  body.light-mode #toolbar-title { color: #2a3a4a; }
+  body.light-mode #toolbar-title:hover { color: #111; }
+  body.light-mode .toolbar-title-sub { color: #6a7a8a; }
+
+  /* Collapsed toolbar — hide title, book grid, and panels; keep summary + controls */
+  .toolbar-collapsed #toolbar-title { display: none !important; }
   .toolbar-collapsed .book-grid { display: none !important; }
   .toolbar-collapsed #settings-panel { display: none !important; }
   .toolbar-collapsed #nav-panel { display: none !important; }
@@ -1826,6 +1834,9 @@
 
 <!-- Floating toolbar -->
 <div id="reading-toolbar">
+  <!-- Title / home link (hidden when collapsed) -->
+  <a id="toolbar-title" href="#" onclick="showWelcome(); return false;">The Book of Mormon <span class="toolbar-title-sub">Reading Edition</span></a>
+
   <!-- Collapsed summary bar (shown when toolbar is collapsed on scroll) -->
   <div class="collapsed-summary" id="collapsed-summary"><span class="summary-home" id="summary-home" title="Expand toolbar">↑</span> <span id="summary-text"></span></div>
 
@@ -2201,10 +2212,6 @@
 
 <!-- Spacer to prevent content from hiding behind fixed toolbar -->
 <div id="toolbar-spacer"></div>
-
-<a href="#" onclick="showWelcome(); return false;" style="text-decoration: none; color: inherit;">
-<h1>The Book of Mormon <span class="subtitle">Reading Edition</span></h1>
-</a>
 
 <div id="scripture-content">
   <!-- Book selector (hidden, kept for compatibility) -->
