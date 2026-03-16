@@ -1136,7 +1136,11 @@ const NARRATION = (() => {
   }
 
   function showPlayer() {
-    if (!playerEl) buildPlayer();
+    if (!playerEl) {
+      buildPlayer();
+      // Force reflow after DOM insertion so CSS transition triggers on mobile
+      playerEl.offsetHeight;
+    }
     playerEl.classList.add('visible');
     document.body.classList.add('narration-player-active');
   }
@@ -1256,30 +1260,39 @@ const NARRATION = (() => {
 
   function initToolbarButton() {
     // Wire the Listen toggle in the bottom sheet.
-    // Toggle ON  = show player bar + load audio (user presses play to start)
+    // Toggle ON  = close sheet, show player bar (audio loads when user presses play)
     // Toggle OFF = stop playback + hide player
     var listenToggle = document.getElementById('listen-toggle');
-    if (listenToggle) {
-      listenToggle.addEventListener('change', function() {
-        if (listenToggle.checked) {
-          // Close the bottom sheet so the player is visible (especially on mobile)
-          if (typeof window.toggleSheet === 'function') {
-            window.toggleSheet();
-          }
-          // Show the player in a ready-to-play state (don't auto-start)
-          showPlayer();
-          loadChapterAudio().then(function(ok) {
-            if (ok) {
-              updatePlayerState('stopped');
-            }
-            // If load failed, updatePlayerState('error') was already called
-          });
-        } else {
-          if (playing) stopPlayback();
-          hidePlayer();
-        }
-      });
+    if (!listenToggle) {
+      console.warn('Narration: #listen-toggle not found in DOM');
+      return;
     }
+    listenToggle.addEventListener('change', function() {
+      if (listenToggle.checked) {
+        // Close the bottom sheet so the player is visible
+        var sheet = document.getElementById('sheet');
+        var scrim = document.getElementById('sheetScrim');
+        if (sheet) sheet.classList.remove('open');
+        if (scrim) scrim.classList.remove('open');
+
+        // Show the player bar immediately — no async work here
+        showPlayer();
+
+        // Force a reflow so the transition actually animates on mobile
+        if (playerEl) playerEl.offsetHeight;
+
+        // Set the player to "ready" state with chapter name
+        var ch = getCurrentChapter();
+        if (ch) {
+          updatePlayerState('stopped');
+        } else {
+          updatePlayerState('error', 'Open a chapter first');
+        }
+      } else {
+        if (playing) stopPlayback();
+        hidePlayer();
+      }
+    });
   }
 
   // ── Initialize ──
