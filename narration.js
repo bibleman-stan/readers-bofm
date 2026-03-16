@@ -102,8 +102,8 @@ const NARRATION = (() => {
 
   // ── Audio loading ──
 
-  async function loadChapterAudio() {
-    const ch = getCurrentChapter();
+  async function loadChapterAudio(overrideCh) {
+    const ch = overrideCh || getCurrentChapter();
     if (!ch) {
       console.warn('Narration: cannot determine current chapter');
       return false;
@@ -304,7 +304,9 @@ const NARRATION = (() => {
     // Wait for the DOM to settle after chapter/book switch
     await new Promise(resolve => setTimeout(resolve, 400));
 
-    const ok = await loadChapterAudio();
+    // Pass next chapter directly — don't rely on getCurrentChapter() since
+    // hash/DOM may not have updated yet during auto-advance
+    const ok = await loadChapterAudio(next);
     if (!ok) {
       autoAdvancing = false;
       updatePlayerState('stopped');
@@ -332,7 +334,10 @@ const NARRATION = (() => {
       bindChapterClick();
     } catch (e) {
       console.error('Narration: auto-advance play failed:', e);
-      updatePlayerState('error', 'Playback failed');
+      // On mobile, autoplay may be blocked — show tap-to-play state
+      playing = false;
+      updatePlayerState('stopped');
+      // The player UI is still visible so user can tap play
     }
     autoAdvancing = false;
   }

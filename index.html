@@ -59,13 +59,20 @@
     background: #2a2a2a;
     padding: 0;
     border-radius: 6px;
-    margin-bottom: 16px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    max-width: 42em;
+    margin: 0 auto;
     z-index: 10;
     border: 1px solid #444;
     display: flex;
     flex-direction: column;
+  }
+  /* Spacer keeps content from hiding behind fixed toolbar */
+  #toolbar-spacer {
+    height: 120px; /* updated dynamically by JS */
   }
   /* Edge-to-edge toolbar on mobile */
   @media (max-width: 600px) {
@@ -73,8 +80,7 @@
       border-radius: 0;
       border-left: none;
       border-right: none;
-      margin-left: -1em;
-      margin-right: -1em;
+      max-width: none;
     }
   }
 
@@ -221,14 +227,13 @@
   .toolbar-collapsed #background-panel { display: none !important; }
 
   /* Tap-to-toggle: fully hide toolbar */
+  #reading-toolbar {
+    transition: transform 0.25s ease, opacity 0.2s ease;
+  }
   .toolbar-hidden {
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
-    transition: transform 0.25s ease, opacity 0.2s ease;
-  }
-  #reading-toolbar {
-    transition: transform 0.25s ease, opacity 0.2s ease;
   }
 
   /* First-visit toolbar hint */
@@ -1550,18 +1555,10 @@
     color: #9aacbd;
   }
   #welcome-section .welcome-prompt {
-    font-size: 0.88em;
+    font-size: 0.85em;
     color: #7a8a9a;
-    margin-top: 0.5em;
-  }
-  #welcome-section .welcome-prompt span {
-    display: inline-block;
-    border: 1px solid #445;
-    border-radius: 16px;
-    padding: 6px 18px;
-    margin-top: 0.4em;
-    color: #9aacbd;
-    font-size: 0.95em;
+    margin-top: 1.2em;
+    font-style: italic;
   }
   #welcome-section .welcome-about-link {
     display: inline-block;
@@ -1585,10 +1582,6 @@
   }
   body.light-mode #welcome-section .welcome-prompt {
     color: #889;
-  }
-  body.light-mode #welcome-section .welcome-prompt span {
-    border-color: #ccd;
-    color: #556;
   }
 
   /* Back to top button */
@@ -2210,6 +2203,9 @@
 
 </div>
 
+<!-- Spacer to prevent content from hiding behind fixed toolbar -->
+<div id="toolbar-spacer"></div>
+
 <div id="scripture-content">
   <!-- Book selector (hidden, kept for compatibility) -->
   <div id="book-selector" style="display: none; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 0.9em;">
@@ -2317,7 +2313,7 @@
   <div id="welcome-section">
     <p class="welcome-tagline">A new way into the Book of Mormon</p>
     <p class="welcome-desc">If you find the Book of Mormon hard to read, difficult to understand, or unfulfilling, this edition seeks to give you new tools that can help. Old words are replaced with modern ones, the text is broken into shorter lines that reflect ideas in the text. Additionally, the text has a fresh audio narration that can help the text come alive.</p>
-    <p class="welcome-prompt"><span>↑ Tap any book to start reading</span></p>
+    <p class="welcome-prompt">Tap anywhere on the screen to show or hide the top menu</p>
     <a class="welcome-about-link" href="#" onclick="showAboutPage(); return false;">Learn more about the features</a>
   </div>
 
@@ -3216,19 +3212,29 @@
   //   2. HIDDEN     (tap-driven)      — entire toolbar off-screen
   //   3. SHOW-SUMMARY (manual expand) — full toolbar + summary bar, with grace period
   //
-  // Key fix: collapse uses display:none (not max-height/overflow), so no
-  // layout-shift feedback loop. Manual expand gets a scroll-distance grace
-  // period instead of permanent immunity.
+  // Key fix: toolbar is position:fixed, so height changes NEVER affect
+  // scrollY or document flow. No oscillation possible. Collapse/expand
+  // is purely visual — direction-based, like headroom.js.
   // ════════════════════════════════════════════════════════════
 
   var backBtn = document.getElementById('back-to-top');
   var toolbar = document.getElementById('reading-toolbar');
+  var toolbarSpacer = document.getElementById('toolbar-spacer');
   var scrollTicking = false;
-  var collapseDisabledUntil = 0; // timestamp — pause collapse logic briefly
+  var prevScrollY = window.scrollY;
   var manualExpandScrollY = -1;  // scrollY when user manually expanded; -1 = not active
   var COLLAPSE_THRESHOLD = 80;   // scrollY above which toolbar collapses
   var EXPAND_THRESHOLD = 5;      // scrollY below which toolbar fully expands (near top only)
   var GRACE_DISTANCE = 150;      // how far user can scroll before manual expand auto-collapses
+
+  // Keep spacer height in sync with toolbar height (ResizeObserver)
+  function updateSpacer() {
+    if (toolbarSpacer) toolbarSpacer.style.height = toolbar.offsetHeight + 'px';
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(updateSpacer).observe(toolbar);
+  }
+  updateSpacer();
 
   window.addEventListener('scroll', function() {
     if (scrollTicking) return;
@@ -3240,9 +3246,11 @@
       // Back-to-top button
       backBtn.style.display = y > 600 ? 'flex' : 'none';
 
-      // Skip collapse logic if toolbar is hidden (tap-driven) or paused
-      if (toolbar.classList.contains('toolbar-hidden')) return;
-      if (Date.now() < collapseDisabledUntil) return;
+      // Skip collapse logic if toolbar is hidden (tap-driven)
+      if (toolbar.classList.contains('toolbar-hidden')) {
+        prevScrollY = y;
+        return;
+      }
 
       var isCollapsed = toolbar.classList.contains('toolbar-collapsed');
       var isManualExpand = toolbar.classList.contains('toolbar-show-summary');
@@ -3252,10 +3260,18 @@
         if (isCollapsed || isManualExpand) {
           toolbar.classList.remove('toolbar-collapsed', 'toolbar-show-summary');
           manualExpandScrollY = -1;
-          pauseCollapse(); // prevent layout-shift scroll from re-collapsing
         }
+        prevScrollY = y;
         return;
       }
+
+      // Don't collapse while a panel is open — user is actively interacting
+      var anyPanelOpen = document.getElementById('settings-panel').classList.contains('visible')
+        || ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
+          var el = document.getElementById(id);
+          return el && el.style.display === 'block';
+        });
+      if (anyPanelOpen) { prevScrollY = y; return; }
 
       // Below collapse threshold
       if (y > COLLAPSE_THRESHOLD) {
@@ -3266,24 +3282,19 @@
             toolbar.classList.remove('toolbar-show-summary');
             manualExpandScrollY = -1;
             closeAllPanels();
-            pauseCollapse(); // prevent layout-shift scroll from re-expanding
           }
-          // Otherwise, leave it expanded (within grace period)
         } else if (!isCollapsed) {
-          // Normal auto-collapse
+          // Auto-collapse when scrolled past threshold
           toolbar.classList.add('toolbar-collapsed');
-          pauseCollapse(); // prevent layout-shift scroll from re-expanding
         }
       }
+
+      prevScrollY = y;
     });
   }, { passive: true });
 
-  // Pause collapse logic briefly (call before toggling panels that change page height)
-  function pauseCollapse() { collapseDisabledUntil = Date.now() + 600; }
-
   // Helper: expand toolbar from collapsed state (used by ↑ arrow and summary bar)
   function manualExpand() {
-    pauseCollapse();
     toolbar.classList.remove('toolbar-collapsed');
     if (window.scrollY > COLLAPSE_THRESHOLD) {
       toolbar.classList.add('toolbar-show-summary');
@@ -3293,12 +3304,14 @@
 
   // Helper: collapse toolbar (used by summary bar toggle)
   function manualCollapse() {
-    pauseCollapse();
     toolbar.classList.add('toolbar-collapsed');
     toolbar.classList.remove('toolbar-show-summary');
     manualExpandScrollY = -1;
     closeAllPanels();
   }
+
+  // Backward-compat shim: pauseCollapse is now a no-op (not needed with fixed positioning)
+  function pauseCollapse() {}
 
   // ── Touch tracking: distinguish taps from scroll gestures on mobile ──
   var touchStartX = 0, touchStartY = 0, touchMoved = false;
