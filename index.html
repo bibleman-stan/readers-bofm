@@ -134,6 +134,30 @@
   }
   .topbar-icon svg { width: 16px; height: 16px; fill: currentColor; }
 
+  #aid-pill {
+    padding: 3px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--text-faint);
+    background: none;
+    color: var(--text-faint);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.62em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.02em;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #aid-pill:hover {
+    color: var(--text-dim);
+    border-color: var(--text-dim);
+  }
+  #aid-pill.active-aid {
+    color: #d4935a;
+    border-color: #d4935a;
+    background: rgba(212,147,90,0.12);
+  }
+
   .topbar-home {
     font-size: 0.78em;
     color: var(--text-faint);
@@ -425,9 +449,9 @@
 
   .landing-desc {
     font-size: 0.92em;
-    line-height: 1.75;
+    line-height: 1.9;
     color: #b8b2a8;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
   }
 
   .landing-books-label {
@@ -687,7 +711,7 @@
     color: inherit;
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: #6b9;
+    text-decoration-color: rgba(212,147,90,0.45);
     text-underline-offset: 3px;
   }
   /* High-frequency archaic words: still swappable but no visual noise */
@@ -696,7 +720,7 @@
   }
 
   .aid-active .swap {
-    color: #27ae60 !important;
+    color: #d4935a !important;
     text-decoration: none !important;
   }
 
@@ -735,11 +759,11 @@
   }
 
   body.light-mode .swap {
-    text-decoration-color: #1e8449 !important;
+    text-decoration-color: rgba(180,110,50,0.4) !important;
   }
 
   body.light-mode .aid-active .swap {
-    color: #1e8449 !important;
+    color: #b46e32 !important;
   }
 
   body.light-mode .sources-active .quote-bible {
@@ -1892,6 +1916,7 @@
   </div>
   <div class="topbar-home" id="topbar-home">bomreader.com</div>
   <div class="topbar-icons">
+    <button id="aid-pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
     <button class="topbar-icon" onclick="openSearch()" aria-label="Search" title="Search">
       <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
     </button>
@@ -2087,7 +2112,7 @@
   <div class="landing" id="landing" style="display:none;">
     <div class="landing-title">The Book of Mormon <span class="landing-title-sub">Reading Edition</span></div>
     <p class="landing-tagline">A new way into the Book of Mormon</p>
-    <p class="landing-desc">If you find the Book of Mormon hard to read, difficult to understand, or unfulfilling, this edition seeks to give you new tools that can help. Old words are replaced with modern ones, and the text is broken into shorter lines that reflect the ideas in the text. Additionally, the text has a fresh audio narration that can help it come alive.</p>
+    <p class="landing-desc">If you find the Book of Mormon hard to read, difficult to understand, or unfulfilling, this edition seeks to give you new tools that can help. Old words are replaced with modern ones, and the text is broken into shorter lines that reflect the ideas in the text. Additionally, the text has a fresh audio narration that can help it come alive in a new way.</p>
     <div class="landing-books-label">Start reading</div>
     <div class="landing-books" id="landing-books">
       <!-- Generated dynamically by JS -->
