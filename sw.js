@@ -2,7 +2,7 @@
 // Strategy: cache app shell eagerly, cache books lazily (on first open),
 // with option to pre-cache all books at once via message from page.
 
-const CACHE_NAME = 'bomreader-v36';
+const CACHE_NAME = 'bomreader-v37';
 
 // App shell — cached on install
 const SHELL_ASSETS = [
@@ -60,10 +60,11 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Same-origin: network-first for HTML (so updates come through), cache-first for everything else
+  // Same-origin: network-first for HTML and JS (so updates come through), cache-first for everything else
   if (url.origin === self.location.origin) {
-    const isHTML = url.pathname.endsWith('.html') || url.pathname === '/' || url.pathname.endsWith('/');
-    if (isHTML) {
+    const isAppCode = url.pathname.endsWith('.html') || url.pathname.endsWith('.js')
+                   || url.pathname === '/' || url.pathname.endsWith('/');
+    if (isAppCode) {
       // Network-first: try fresh copy, fall back to cache for offline
       event.respondWith(
         fetch(event.request).then(response => {
@@ -75,7 +76,7 @@ self.addEventListener('fetch', event => {
         }).catch(() => caches.match(event.request))
       );
     } else {
-      // Cache-first for non-HTML assets (fonts, data, images)
+      // Cache-first for static assets (fonts, data, images, audio)
       event.respondWith(
         caches.match(event.request).then(cached => {
           if (cached) return cached;
