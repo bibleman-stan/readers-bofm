@@ -2587,8 +2587,12 @@
     // Hide float nav
     document.getElementById('float-prev').classList.remove('active');
     document.getElementById('float-next').classList.remove('active');
-    // Reset progress
+    // Reset progress and URL
     document.getElementById('progress').style.width = '0%';
+    lastHashWeSet = '';
+    if (window.location.hash) {
+      history.replaceState(null, '', window.location.pathname);
+    }
     window.scrollTo({ top: 0 });
   };
 
