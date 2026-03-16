@@ -165,11 +165,6 @@
     color: #27ae60;
   }
 
-  .pill-btn.active-layers {
-    border-color: #7cb8e4;
-    color: #7cb8e4;
-  }
-
   .pill-btn.active-lines {
     border-color: #c9a368;
     color: #c9a368;
@@ -231,7 +226,6 @@
   .toolbar-collapsed .book-grid { display: none !important; }
   .toolbar-collapsed #settings-panel { display: none !important; }
   .toolbar-collapsed #nav-panel { display: none !important; }
-  .toolbar-collapsed #layers-panel { display: none !important; }
   .toolbar-collapsed #background-panel { display: none !important; }
 
   /* Tap-to-toggle: fully hide toolbar */
@@ -289,25 +283,19 @@
   .toolbar-show-summary .collapsed-summary::after {
     content: '▲';
     float: right;
-    font-size: 0.65em;
-    opacity: 0.4;
-    margin-right: 4px;
+    font-size: 0.85em;
+    opacity: 0.5;
+    margin-right: 6px;
+    cursor: pointer;
   }
   .toolbar-collapsed .collapsed-summary::after {
     content: '▼';
     float: right;
-    font-size: 0.65em;
-    opacity: 0.4;
-    margin-right: 4px;
-  }
-  .summary-home {
-    display: inline-block;
-    padding: 0 8px 0 2px;
+    font-size: 0.85em;
     opacity: 0.5;
-    font-size: 1.1em;
+    margin-right: 6px;
     cursor: pointer;
   }
-  .summary-home:active { opacity: 1; }
 
   /* In collapsed mode, tighten controls-row spacing */
   .toolbar-collapsed .controls-row {
@@ -317,8 +305,7 @@
   }
   /* Hide gear, guide, and layers in collapsed mode — only show core controls */
   .toolbar-collapsed .gear-btn,
-  .toolbar-collapsed #guide-btn,
-  .toolbar-collapsed #layers-pill {
+  .toolbar-collapsed #guide-btn {
     display: none;
   }
 
@@ -775,11 +762,6 @@
   body.light-mode .pill-btn.active-aid {
     border-color: #1e8449 !important;
     color: #1e8449 !important;
-  }
-
-  body.light-mode .pill-btn.active-layers {
-    border-color: #4a7a9e !important;
-    color: #4a7a9e !important;
   }
 
   body.light-mode .pill-btn.active-lines {
@@ -1367,93 +1349,6 @@
     color: #fff;
   }
 
-  #layers-panel {
-    display: none;
-    margin-top: 8px;
-    padding: 10px 14px 8px;
-    background: #1a1a1a;
-    border-radius: 8px;
-    border: 1px solid #333;
-    max-height: 60vh;
-    overflow-y: auto;
-  }
-
-  #layers-panel .layer-group-label {
-    font-size: 0.68em;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #666;
-    margin: 8px 0 4px 0;
-    padding: 0;
-  }
-  #layers-panel .layer-group-label:first-child {
-    margin-top: 0;
-  }
-
-  #layers-panel label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #bbb;
-    font-size: 0.82em;
-    cursor: pointer;
-    margin-bottom: 0;
-    padding: 3px 6px;
-    border-radius: 5px;
-    transition: background 0.15s;
-  }
-  #layers-panel label:hover {
-    background: rgba(255,255,255,0.04);
-  }
-
-  #layers-panel .layer-swatch {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
-
-  #layers-panel .layers-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-    margin-bottom: 2px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid #2a2a2a;
-  }
-  #layers-panel .layers-actions a {
-    color: #666;
-    text-decoration: none;
-    font-size: 0.72em;
-    letter-spacing: 0.02em;
-    transition: color 0.15s;
-  }
-  #layers-panel .layers-actions a:hover {
-    color: #999;
-  }
-
-  body.light-mode #layers-panel {
-    background: #f4f4f4;
-    border-color: #d0d0d0;
-  }
-  body.light-mode #layers-panel label {
-    color: #444;
-  }
-  body.light-mode #layers-panel label:hover {
-    background: rgba(0,0,0,0.04);
-  }
-  body.light-mode #layers-panel .layer-group-label {
-    color: #999;
-  }
-  body.light-mode #layers-panel .layers-actions {
-    border-bottom-color: #ddd;
-  }
-  body.light-mode #layers-panel .layers-actions a {
-    color: #999;
-  }
-
   /* About page — full-page feature guide */
   #about-page {
     display: none;
@@ -1540,6 +1435,27 @@
   body.light-mode #about-page .feature-card .feature-desc {
     color: #666;
   }
+
+  /* Decorative page title (non-clickable) — welcome page + chapter view */
+  .page-title {
+    font-family: Literata, Georgia, serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #d4d0c8;
+    text-align: center;
+    padding: 0.6em 0 0.2em;
+    line-height: 1.15;
+  }
+  .page-title-sub {
+    display: block;
+    font-size: 0.4em;
+    font-style: italic;
+    color: #8899aa;
+    letter-spacing: 0.03em;
+    margin-top: 3px;
+  }
+  body.light-mode .page-title { color: #2a3a4a; }
+  body.light-mode .page-title-sub { color: #6a7a8a; }
 
   /* Welcome section — minimal landing for first visit */
   #welcome-section {
@@ -1838,7 +1754,7 @@
   <a id="toolbar-title" href="#" onclick="showWelcome(); return false;">The Book of Mormon <span class="toolbar-title-sub">Reading Edition</span></a>
 
   <!-- Collapsed summary bar (shown when toolbar is collapsed on scroll) -->
-  <div class="collapsed-summary" id="collapsed-summary"><span class="summary-home" id="summary-home" title="Expand toolbar">↑</span> <span id="summary-text"></span></div>
+  <div class="collapsed-summary" id="collapsed-summary"><span id="summary-text"></span></div>
 
   <!-- Book grid -->
   <div class="book-grid" id="book-grid">
@@ -1983,49 +1899,10 @@
       <svg viewBox="0 0 24 24" style="width:14px; height:14px;" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
     </button>
     <!-- Listen button injected here by narration.js -->
-    <button class="pill-btn" id="layers-pill" onclick="toggleLayers()">Layers <span style="font-size:0.7em;opacity:0.6;margin-left:1px;">▾</span></button>
     <button id="gear-btn" class="gear-btn" onclick="toggleSettings()" aria-label="Display settings" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px;">
       <svg viewBox="0 0 24 24" style="width:14px; height:14px;"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1112 8.4a3.6 3.6 0 010 7.2z"/></svg>
     </button>
     <button id="guide-btn" class="gear-btn" onclick="showAboutPage()" aria-label="Feature guide" style="border-radius: 16px; width: auto; height: auto; padding: 4px 10px; font-size: 13px; font-weight: 600;">?</button>
-  </div>
-
-  <!-- Layers panel -->
-  <div id="layers-panel">
-    <div class="layers-actions">
-      <a href="#" onclick="selectAllLayers(); return false;">Select All</a>
-      <a href="#" onclick="clearAllLayers(); return false;">Clear All</a>
-    </div>
-
-    <div class="layer-group-label">Divine Voice</div>
-    <label>
-      <input type="checkbox" id="deity-check" onchange="toggleDeityLayer(this.checked); updateLayersPill()" style="accent-color: #c0392b;">
-      <span class="layer-swatch" style="background: #c0392b;"></span>
-      <span>The Father and the Son</span>
-    </label>
-    <label>
-      <input type="checkbox" id="spirit-check" onchange="toggleSpiritLayer(this.checked); updateLayersPill()" style="accent-color: #888;">
-      <span class="layer-swatch" style="background: #888;"></span>
-      <span>The Holy Spirit</span>
-    </label>
-
-    <div class="layer-group-label">Biblical Roots</div>
-    <label>
-      <input type="checkbox" id="quotations-check" onchange="toggleQuotations(this.checked); updateLayersPill()" style="accent-color: #7cb8e4;">
-      <span class="layer-swatch" style="background: #7cb8e4;"></span>
-      <span>Direct Quotations</span>
-    </label>
-    <label>
-      <input type="checkbox" id="allusions-check" onchange="toggleAllusions(this.checked); updateLayersPill()" style="accent-color: #8aabbf;">
-      <span class="layer-swatch" style="background: #8aabbf;"></span>
-      <span>Echoes &amp; Allusions</span>
-    </label>
-    <label>
-      <input type="checkbox" id="kjv-diff-check" onchange="toggleKjvDiff(this.checked); updateLayersPill()" style="accent-color: #6ba3d6;">
-      <span class="layer-swatch" style="background: #6ba3d6;"></span>
-      <span>KJV Parallels</span>
-    </label>
-
   </div>
 
   <!-- Background panel — book intros (shown on About tap) -->
@@ -2270,41 +2147,8 @@
     </div>
 
     <div class="feature-card">
-      <div class="feature-name"><span class="pill-demo" style="color: #7cb8e4; border-color: #7cb8e4;">Layers</span></div>
-      <div class="feature-desc">Opens the Layers panel, where you can toggle colored highlights across the text. Each layer reveals a different dimension of the text that you can combine in any way. The available layers are described below.</div>
-    </div>
-
-    <div class="feature-card">
       <div class="feature-name"><span class="pill-demo" style="color: #ccc; border-color: #889;">⚙</span></div>
       <div class="feature-desc">Opens display settings: show or hide punctuation, adjust text density and line spacing, and switch between dark and light mode.</div>
-    </div>
-
-    <h2>The Layers</h2>
-    <p>Layers are colored highlights you can toggle on and off. They let you see patterns in the text that aren't visible in a plain reading. You can turn on one layer at a time or combine several.</p>
-
-    <div class="feature-card">
-      <div class="feature-name"><span class="swatch-demo" style="background: #c0392b;"></span> The Father and the Son</div>
-      <div class="feature-desc">Highlights references to God the Father (blue), Jesus Christ (red), and the Holy Spirit (separate layer). Christological titles like "the Father of heaven and earth" highlight as Christ references per Book of Mormon theology.</div>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-name"><span class="swatch-demo" style="background: #888;"></span> The Holy Spirit</div>
-      <div class="feature-desc">Highlights references to the Holy Ghost — His influence, His role in teaching and testifying, and the way He works in people's lives.</div>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-name"><span class="swatch-demo" style="background: #7cb8e4;"></span> Direct Quotations</div>
-      <div class="feature-desc">Highlights places where the Book of Mormon directly quotes other scripture — particularly the Bible. These show the deep connections between the two records.</div>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-name"><span class="swatch-demo" style="background: #8aabbf;"></span> Echoes &amp; Allusions</div>
-      <div class="feature-desc">Highlights phrases or ideas that echo biblical language without being direct quotes. These allusions show how deeply the Book of Mormon authors were shaped by earlier scripture.</div>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-name"><span class="swatch-demo" style="background: #6ba3d6;"></span> KJV Parallels</div>
-      <div class="feature-desc">Highlights passages that share language with the King James Version of the Bible. This layer helps you see the broader textual relationship between the two books.</div>
     </div>
 
     <h2>Starred Notes</h2>
@@ -2318,11 +2162,15 @@
 
   <!-- Welcome section — minimal landing for first-time visitors -->
   <div id="welcome-section">
+    <div class="page-title">The Book of Mormon <span class="page-title-sub">Reading Edition</span></div>
     <p class="welcome-tagline">A new way into the Book of Mormon</p>
     <p class="welcome-desc">If you find the Book of Mormon hard to read, difficult to understand, or unfulfilling, this edition seeks to give you new tools that can help. Old words are replaced with modern ones, the text is broken into shorter lines that reflect ideas in the text. Additionally, the text has a fresh audio narration that can help the text come alive.</p>
     <p class="welcome-prompt">Tap anywhere on the screen to show or hide the top menu</p>
     <a class="welcome-about-link" href="#" onclick="showAboutPage(); return false;">Learn more about the features</a>
   </div>
+
+  <!-- Decorative title above reading content -->
+  <div id="chapter-title" class="page-title" style="display:none;">The Book of Mormon <span class="page-title-sub">Reading Edition</span></div>
 
   <!-- Book content loaded dynamically by JS -->
   <div id="book-content-container">
@@ -2331,7 +2179,7 @@
 
 <hr style="border: none; border-top: 1px solid #555; margin: 1.2em 0;" />
 
-<p style="text-align: center; color: #707070; font-size: 0.85em; margin-top: 2em;">
+<p style="text-align: center; color: #606060; font-size: 0.72em; font-style: italic; margin-top: 2em; line-height: 1.6;">
   Text based on the public domain edition of the Book of Mormon. Language modernization, sense-line formatting, and introductions are editorial choices and are not part of the original text. Verse numbers follow the standard modern edition for cross-reference.
 </p>
 
@@ -2343,8 +2191,6 @@
   var root = document.documentElement;
   var deityOn = false;
   var aidOn = false;
-  var deityLayerOn = false;
-  var spiritLayerOn = false;
   var currentBook = '1nephi';
   var currentChapterMap = {};
   var loadedBooks = {};
@@ -2575,24 +2421,8 @@
   }
 
   function maybeRemoveHighlights() {
-    if (!deityLayerOn && !spiritLayerOn) {
-      removeDeityHighlights();
-    }
+    removeDeityHighlights();
   }
-
-  window.toggleDeityLayer = function(on) {
-    deityLayerOn = on;
-    if (on) { ensureHighlights(); }
-    document.body.classList.toggle('show-deity', on);
-    if (!on) maybeRemoveHighlights();
-  };
-
-  window.toggleSpiritLayer = function(on) {
-    spiritLayerOn = on;
-    if (on) { ensureHighlights(); }
-    document.body.classList.toggle('show-spirit', on);
-    if (!on) maybeRemoveHighlights();
-  };
 
   // ---- READING AID TOGGLE ----
   window.toggleAid = function() {
@@ -2758,8 +2588,6 @@
     // Close other panels when opening settings
     if (!isVisible) {
       document.getElementById('nav-panel').style.display = 'none';
-      document.getElementById('layers-panel').style.display = 'none';
-      document.getElementById('layers-pill').classList.remove('active-layers');
       document.getElementById('background-panel').style.display = 'none';
       document.getElementById('about-pill').classList.remove('active-bg');
     }
@@ -2899,7 +2727,7 @@
       showChapter(bookId, finalCh);
       // Only show chapter grid if no specific chapter was requested AND no other panel is open
       if (!targetChapter && finalCh === 1) {
-        var otherPanelOpen = ['layers-panel', 'background-panel'].some(function(id) {
+        var otherPanelOpen = ['background-panel'].some(function(id) {
           var el = document.getElementById(id);
           return el && el.style.display === 'block';
         }) || document.getElementById('settings-panel').classList.contains('visible');
@@ -2907,9 +2735,6 @@
           var navPanel = document.getElementById('nav-panel');
           if (navPanel) navPanel.style.display = 'block';
         }
-      }
-      if (deityLayerOn || spiritLayerOn) {
-        addDeityHighlights();
       }
     });
   };
@@ -2933,12 +2758,11 @@
   // ---- UI TOGGLES ----
   // Close all dropdown panels
   function closeAllPanels() {
-    var ids = ['nav-panel', 'layers-panel', 'background-panel'];
+    var ids = ['nav-panel', 'background-panel'];
     ids.forEach(function(id) {
       var el = document.getElementById(id);
       if (el) el.style.display = 'none';
     });
-    document.getElementById('layers-pill').classList.remove('active-layers');
     document.getElementById('about-pill').classList.remove('active-bg');
     document.getElementById('settings-panel').classList.remove('visible');
     document.getElementById('gear-btn').classList.remove('active');
@@ -2949,30 +2773,9 @@
     var panel = document.getElementById('nav-panel');
     var isHidden = panel.style.display === 'none' || panel.style.display === '';
     // Close other panels but keep nav toggling
-    document.getElementById('layers-panel').style.display = 'none';
-    document.getElementById('layers-pill').classList.remove('active-layers');
     document.getElementById('background-panel').style.display = 'none';
     document.getElementById('about-pill').classList.remove('active-bg');
     panel.style.display = isHidden ? 'block' : 'none';
-  };
-
-  window.toggleLayers = function() {
-    pauseCollapse();
-    var panel = document.getElementById('layers-panel');
-    var pill = document.getElementById('layers-pill');
-    var isHidden = panel.style.display === 'none' || panel.style.display === '';
-    // Only expand toolbar when OPENING the panel, not closing
-    if (isHidden && toolbar.classList.contains('toolbar-collapsed')) {
-      toolbar.classList.remove('toolbar-collapsed');
-    }
-    // Reveal toolbar if hidden by tap
-    if (isHidden) { toolbar.classList.remove('toolbar-hidden'); }
-    // Close other panels
-    document.getElementById('nav-panel').style.display = 'none';
-    document.getElementById('background-panel').style.display = 'none';
-    document.getElementById('about-pill').classList.remove('active-bg');
-    panel.style.display = isHidden ? 'block' : 'none';
-    pill.classList.toggle('active-layers', isHidden);
   };
 
   window.toggleBackground = function() {
@@ -2982,8 +2785,6 @@
     var isHidden = panel.style.display === 'none' || panel.style.display === '';
     // Close other panels
     document.getElementById('nav-panel').style.display = 'none';
-    document.getElementById('layers-panel').style.display = 'none';
-    document.getElementById('layers-pill').classList.remove('active-layers');
     if (isHidden) {
       panel.style.display = 'block';
       pill.classList.add('active-bg');
@@ -2999,44 +2800,6 @@
     }
   };
 
-  window.clearAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check'].forEach(function(id) {
-      var cb = document.getElementById(id);
-      if (cb) { cb.checked = false; }
-    });
-    toggleQuotations(false);
-    toggleAllusions(false);
-    toggleKjvDiff(false);
-    document.body.classList.remove('show-deity', 'show-spirit');
-    deityLayerOn = false;
-    spiritLayerOn = false;
-    removeDeityHighlights();
-    updateLayersPill();
-  };
-
-  window.selectAllLayers = function() {
-    ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check'].forEach(function(id) {
-      var cb = document.getElementById(id);
-      if (cb && !cb.disabled) { cb.checked = true; }
-    });
-    toggleDeityLayer(true);
-    toggleSpiritLayer(true);
-    toggleQuotations(true);
-    toggleAllusions(true);
-    toggleKjvDiff(true);
-    updateLayersPill();
-  };
-
-  // Update layers pill to show active state when any layer is on
-  function updateLayersPill() {
-    var anyOn = ['deity-check', 'spirit-check', 'quotations-check', 'allusions-check', 'kjv-diff-check'].some(function(id) {
-      var cb = document.getElementById(id);
-      return cb && cb.checked;
-    });
-    var pill = document.getElementById('layers-pill');
-    if (pill) pill.classList.toggle('active-layers', anyOn);
-  }
-
   window.jumpTo = function(id) {
     var el = document.getElementById(id);
     if (!el) return;
@@ -3049,18 +2812,6 @@
   };
 
   window.toggleEditorial = function(on) { document.body.classList.toggle('editorial-active', on); };
-  window.toggleQuotations = function(on) {
-    document.body.classList.toggle('sources-quotations', on);
-  };
-  window.toggleAllusions = function(on) {
-    document.body.classList.toggle('sources-allusions', on);
-  };
-  window.toggleKjvDiff = function(on) {
-    document.body.classList.toggle('show-kjv-diff', on);
-  };
-  window.toggleParallels = function(on) {
-    document.body.classList.toggle('show-parallels', on);
-  };
   window.toggleSections = function(on) {
     // Called with no arg from pill button → toggle; with arg from selectAll/clearAll → set
     var sectionsOn;
@@ -3079,29 +2830,26 @@
   // ---- ABOUT PAGE ----
   window.showAboutPage = function() {
     closeAllPanels();
-    // Pause collapse logic to prevent oscillation during page transition
     pauseCollapse();
-    // Force toolbar expanded before switching content
     toolbar.classList.remove('toolbar-collapsed');
     toolbar.classList.remove('toolbar-show-summary');
     document.getElementById('welcome-section').style.display = 'none';
+    document.getElementById('chapter-title').style.display = 'none';
     document.getElementById('about-page').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'none';
-    // Hide floating chapter arrows
     document.getElementById('float-prev').classList.remove('active');
     document.getElementById('float-next').classList.remove('active');
-    // Clear the hash so stale chapter refs don't interfere with navigation
     lastHashWeSet = '';
     if (window.location.hash) {
       history.replaceState(null, '', window.location.pathname);
     }
-    // Scroll to top instantly (smooth scroll + collapse logic = oscillation)
     window.scrollTo({ top: 0 });
   };
 
   window.hideAboutPage = function() {
     pauseCollapse();
     document.getElementById('about-page').style.display = 'none';
+    document.getElementById('chapter-title').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'block';
   };
 
@@ -3111,6 +2859,7 @@
     toolbar.classList.remove('toolbar-collapsed');
     toolbar.classList.remove('toolbar-show-summary');
     document.getElementById('welcome-section').style.display = 'block';
+    document.getElementById('chapter-title').style.display = 'none';
     document.getElementById('about-page').style.display = 'none';
     document.getElementById('book-content-container').style.display = 'none';
     document.getElementById('float-prev').classList.remove('active');
@@ -3120,6 +2869,7 @@
 
   window.hideWelcome = function() {
     document.getElementById('welcome-section').style.display = 'none';
+    document.getElementById('chapter-title').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'block';
   };
 
@@ -3278,7 +3028,7 @@
 
       // Don't collapse while a panel is open — user is actively interacting
       var anyPanelOpen = document.getElementById('settings-panel').classList.contains('visible')
-        || ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
+        || ['nav-panel', 'background-panel'].some(function(id) {
           var el = document.getElementById(id);
           return el && el.style.display === 'block';
         });
@@ -3351,13 +3101,6 @@
     }
   }, { passive: true });
 
-  // Tap the ↑ arrow — expand toolbar, stay at current scroll position
-  document.getElementById('summary-home').addEventListener('click', function(e) {
-    e.stopPropagation();
-    if (touchMoved) return;
-    manualExpand();
-  });
-
   // Tap the summary bar — toggle expand/collapse (or reveal if hidden)
   document.getElementById('collapsed-summary').addEventListener('click', function(e) {
     e.stopPropagation();
@@ -3384,7 +3127,7 @@
     if (e.target.closest('a, button, .verse-num, .swap, .gloss-trigger, .quote-allusion')) return;
     if (typeof NARRATION !== 'undefined' && NARRATION.isPlaying && e.target.closest('.line, .line-para')) return;
     // If a panel is open, close it instead of toggling toolbar
-    var anyPanelOpen = ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
+    var anyPanelOpen = ['nav-panel', 'background-panel'].some(function(id) {
       var el = document.getElementById(id);
       return el && el.style.display === 'block';
     }) || document.getElementById('settings-panel').classList.contains('visible');
@@ -3439,7 +3182,7 @@
   // Click-outside-to-dismiss for dropdown panels (layers, nav, background, settings)
   // This catches clicks anywhere on the page that are NOT inside an open panel or its toggle button
   document.addEventListener('click', function(e) {
-    var panelIds = ['nav-panel', 'layers-panel', 'background-panel', 'settings-panel'];
+    var panelIds = ['nav-panel', 'background-panel', 'settings-panel'];
     var anyOpen = panelIds.some(function(id) {
       var el = document.getElementById(id);
       if (!el) return false;
@@ -3457,7 +3200,7 @@
 
     // Check if the click was on a pill/button that toggles a panel
     // (those handlers manage their own open/close logic)
-    var toggleIds = ['layers-pill', 'sections-pill', 'about-pill', 'gear-btn', 'aid-pill', 'lines-pill'];
+    var toggleIds = ['sections-pill', 'about-pill', 'gear-btn', 'aid-pill', 'lines-pill'];
     var clickedToggle = toggleIds.some(function(id) {
       var el = document.getElementById(id);
       return el && (el === e.target || el.contains(e.target));
@@ -3475,7 +3218,7 @@
   // Escape key to dismiss open panels (desktop UX)
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-      var anyOpen = ['nav-panel', 'layers-panel', 'background-panel'].some(function(id) {
+      var anyOpen = ['nav-panel', 'background-panel'].some(function(id) {
         var el = document.getElementById(id);
         return el && el.style.display === 'block';
       }) || document.getElementById('settings-panel').classList.contains('visible');
