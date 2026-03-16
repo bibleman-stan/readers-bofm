@@ -2721,12 +2721,6 @@
       chapters.classList.add('visible');
       el.classList.add('active');
     }
-    // For single-chapter books, navigate directly
-    var meta = bookMeta[bookId];
-    if (meta && meta.chapters === 1) {
-      togglePicker();
-      switchBook(bookId, 1);
-    }
   }
 
   // Landing page book grid population
@@ -2786,11 +2780,6 @@
       expand.classList.add('visible');
       var btn = document.querySelector('.landing-book[data-book="' + bookId + '"]');
       if (btn) btn.classList.add('active');
-      // For single-chapter books, just navigate
-      var meta = bookMeta[bookId];
-      if (meta && meta.chapters === 1) {
-        switchBook(bookId, 1);
-      }
     }
   }
 
