@@ -528,29 +528,8 @@
   }
 
   /* ---- Floating chapter arrows (desktop only) ---- */
-  .float-nav {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255,255,255,0.08);
-    font-size: 22px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: color 0.2s;
-    z-index: 10;
-  }
-  .float-nav:hover { color: rgba(255,255,255,0.2); }
-  .float-prev { left: 2px; }
-  .float-next { right: 2px; }
-
-  @media (max-width: 600px) {
-    .float-nav { display: none; }
-  }
+  /* Float nav arrows hidden — redundant with inline chapter nav */
+  .float-nav { display: none; }
 
   .verse {
     margin-bottom: var(--verse-gap);
