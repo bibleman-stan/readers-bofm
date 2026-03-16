@@ -160,45 +160,68 @@ const NARRATION = (() => {
 
     showPlayer();
 
-    // Load audio if needed (different chapter or first play)
     const ch = getCurrentChapter();
     if (!ch) return;
 
-    const expFolder = BOOK_FOLDERS[ch.bookId] || ch.bookId;
-    const expectedSrc = `${AUDIO_BASE}${expFolder}/${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
-    if (!audioEl || !audioEl.src.endsWith(expectedSrc)) {
-      const ok = await loadChapterAudio();
-      if (!ok) return;
+    const folder = BOOK_FOLDERS[ch.bookId] || ch.bookId;
+    const mp3Url = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
+    const jsonUrl = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${VOICE}.json`;
+
+    // ── CRITICAL: iOS/mobile requires audioEl.play() in the SYNCHRONOUS
+    // callstack of a user gesture. No awaits before play(). ──
+
+    // Create audio element if needed (synchronous)
+    if (!audioEl) {
+      audioEl = new Audio();
+      audioEl.preload = 'auto';
+      audioEl.addEventListener('ended', onAudioEnded);
+      audioEl.addEventListener('error', onAudioError);
     }
 
-    // Switch to sense-line mode for accurate line highlighting.
-    // The manifest lineIndex maps to individual .line elements, not .line-para.
-    // The app IIFE doesn't expose textMode globally, so we use the toggleLines
-    // window function and detect current mode from body classes.
+    // Set source and start playback IMMEDIATELY (no await before this)
+    const needsLoad = !audioEl.src.endsWith(mp3Url);
+    if (needsLoad) {
+      audioEl.src = mp3Url;
+      audioEl.playbackRate = currentSpeed;
+    }
+
+    // Switch to sense-line mode for accurate line highlighting
     if (!document.body.classList.contains('show-lines')) {
-      // Save what mode we're in: 'parry' if show-parry, else 'verses'
       savedTextMode = document.body.classList.contains('show-parry') ? 'parry' : 'verses';
-      // Cycle to lines mode via the global toggle
       if (typeof window.toggleLines === 'function') {
-        // toggleLines cycles: verses→lines→parallels→verses
-        // If in verses mode (0), one call gets us to lines (1)
-        // If in parry mode (2), two calls cycle through verses→lines
-        if (savedTextMode === 'parry') {
-          window.toggleLines(); // parry → verses
-        }
-        window.toggleLines(); // verses → lines
+        if (savedTextMode === 'parry') window.toggleLines();
+        window.toggleLines();
       }
     }
 
     try {
+      // Play synchronously in user gesture context (required for mobile)
+      updatePlayerState('loading', 'Loading audio...');
       await audioEl.play();
       playing = true;
       updatePlayerState('playing');
-      startHighlightLoop();
       bindChapterClick();
+
+      // Load timing manifest in parallel (for line highlighting only)
+      if (needsLoad || !manifest) {
+        try {
+          const resp = await fetch(jsonUrl);
+          if (resp.ok) {
+            manifest = await resp.json();
+            console.log('Narration: loaded manifest,', manifest.lines.length, 'timed segments');
+          } else {
+            console.warn('Narration: no timing manifest, playback continues without highlighting');
+            manifest = null;
+          }
+        } catch (e) {
+          console.warn('Narration: manifest load failed, playback continues without highlighting');
+          manifest = null;
+        }
+      }
+      startHighlightLoop();
     } catch (e) {
       console.error('Narration: play failed:', e);
-      updatePlayerState('error', 'Playback failed');
+      updatePlayerState('error', 'No audio available for this chapter');
     }
   }
 
@@ -1055,13 +1078,25 @@ const NARRATION = (() => {
     document.getElementById('narr-mini-rw').addEventListener('click', (e) => { e.stopPropagation(); seekRelative(-10); });
     document.getElementById('narr-mini-ff').addEventListener('click', (e) => { e.stopPropagation(); seekRelative(10); });
     document.getElementById('narr-mini-speed').addEventListener('click', (e) => { e.stopPropagation(); cycleSpeed(); });
-    document.getElementById('narr-mini-close').addEventListener('click', (e) => { e.stopPropagation(); stopPlayback(); hidePlayer(); });
+    document.getElementById('narr-mini-close').addEventListener('click', (e) => {
+      e.stopPropagation();
+      stopPlayback();
+      hidePlayer();
+      // Uncheck the listen toggle since we're closing the player
+      var listenToggle = document.getElementById('listen-toggle');
+      if (listenToggle) listenToggle.checked = false;
+    });
 
     document.getElementById('narr-exp-play').addEventListener('click', togglePlayPause);
     document.getElementById('narr-exp-rw').addEventListener('click', () => seekRelative(-10));
     document.getElementById('narr-exp-ff').addEventListener('click', () => seekRelative(10));
     document.getElementById('narr-collapse').addEventListener('click', () => toggleExpand(false));
-    document.getElementById('narr-exp-close').addEventListener('click', () => toggleExpand(false));
+    document.getElementById('narr-exp-close').addEventListener('click', () => {
+      stopPlayback();
+      hidePlayer();
+      var listenToggle = document.getElementById('listen-toggle');
+      if (listenToggle) listenToggle.checked = false;
+    });
 
     // Speed buttons
     expandedEl.querySelectorAll('.narr-speed-btn').forEach(btn => {
@@ -1112,6 +1147,9 @@ const NARRATION = (() => {
     document.removeEventListener('click', onClickOutsidePlayer, true);
     isExpanded = false;
     restoreTextMode();
+    // Sync toggle — player hidden means toggle off
+    var listenToggle = document.getElementById('listen-toggle');
+    if (listenToggle) listenToggle.checked = false;
   }
 
   // ── UI updates ──
@@ -1164,10 +1202,11 @@ const NARRATION = (() => {
         break;
     }
 
-    // Sync bottom-sheet Listen toggle
+    // Sync bottom-sheet Listen toggle to player visibility (not playback state).
+    // The toggle means "show/hide the player", not "play/pause".
     var listenToggle = document.getElementById('listen-toggle');
     if (listenToggle) {
-      listenToggle.checked = (state === 'playing' || state === 'loading');
+      listenToggle.checked = playerEl && playerEl.classList.contains('visible');
     }
   }
 
@@ -1216,19 +1255,24 @@ const NARRATION = (() => {
   // ── Bottom-sheet Listen toggle (entry point) ──
 
   function initToolbarButton() {
-    // Wire the Listen toggle in the bottom sheet
+    // Wire the Listen toggle in the bottom sheet.
+    // Toggle ON  = show player bar + load audio (user presses play to start)
+    // Toggle OFF = stop playback + hide player
     var listenToggle = document.getElementById('listen-toggle');
     if (listenToggle) {
       listenToggle.addEventListener('change', function() {
         if (listenToggle.checked) {
-          if (playing) {
-            showPlayer();
-            toggleExpand(true);
-          } else {
-            startPlayback();
-          }
+          // Show the player in a ready-to-play state (don't auto-start)
+          showPlayer();
+          loadChapterAudio().then(function(ok) {
+            if (ok) {
+              updatePlayerState('stopped');
+            }
+            // If load failed, updatePlayerState('error') was already called
+          });
         } else {
           if (playing) stopPlayback();
+          hidePlayer();
         }
       });
     }
