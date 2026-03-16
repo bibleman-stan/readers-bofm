@@ -255,6 +255,16 @@
     background: var(--accent-dim);
   }
 
+  .picker-intro {
+    width: 100%;
+    font-size: 0.76em;
+    line-height: 1.55;
+    color: var(--text-faint);
+    padding: 8px 2px 4px;
+    margin-top: 4px;
+    border-top: 1px solid var(--border);
+  }
+
   /* === BOTTOM SHEET === */
   .sheet-scrim {
     position: fixed;
@@ -2036,6 +2046,25 @@
   };
   window.bookMeta = bookMeta;  // expose for narration.js auto-advance
 
+  // ---- BOOK INTRODUCTIONS ----
+  var bookIntros = {
+    '1nephi': 'The narrator is Nephi, son of the prophet Lehi. He tells the story of his family leaving Jerusalem around 600 BC, during the final years of the kingdom of Judah. Nephi explains how God warned his father to leave and how each family member reacted differently.',
+    '2nephi': 'The narrator is still Nephi. This book begins after the family has reached a new land, but quickly becomes more about teaching than travel. A large part of 2 Nephi is sermons and prophecy, including long passages from Isaiah.',
+    'jacob': 'The narrator is Jacob, Nephi\u2019s brother, who serves as a priest and teacher. He warns his people about pride, mistreating the poor, and breaking family trust, and teaches about Christ and God\u2019s mercy.',
+    'enos': 'The narrator is Enos, the son of Jacob. This is a short, personal story. Enos describes a deep experience of prayer, forgiveness, and change.',
+    'jarom': 'The narrator is Jarom, a descendant of Jacob. He writes briefly and covers many years quickly.',
+    'omni': 'Even though it is very short, Omni has more than one narrator. It covers a period of more than 200 years.',
+    'words-of-mormon': 'The narrator is Mormon, a prophet and historian who lived hundreds of years after Nephi. This book is a bridge that helps you understand a big shift in the text.',
+    'mosiah': 'Mormon is the main narrator. There are multiple characters and story lines: King Benjamin, King Mosiah, King Limhi, Abinadi, Alma, and others.',
+    'alma': 'This book continues the story that began with Abinadi in Mosiah, following Alma and those who carry forward his teachings as they face opposition, growth, and conflict.',
+    'helaman': 'This book continues the story from Mosiah, showing what happens in the next generations as the people rise and fall again and again.',
+    '3nephi': 'The long chain of prophets and believers that began with Abinadi reaches its fulfillment here. The warnings, divisions, and preparations of earlier generations lead to this moment.',
+    '4nephi': 'This short book summarizes the two generations after Christ\u2019s visit. It shows what life can look like when people truly live the gospel together.',
+    'mormon': 'This book has two narrators: Mormon, the historian and military leader living near the end of his people\u2019s history, and his son Moroni.',
+    'ether': 'The narrator is Moroni, who continues writing after his father\u2019s death. The story he tells is much older\u2014the history of the Jaredites, a people who came to the Americas long before Lehi.',
+    'moroni': 'The narrator is still Moroni, now alone, writing after the destruction of his people. He includes letters from his father, instructions on the church, and a final invitation to all future readers.'
+  };
+
   // ---- DEITY HIGHLIGHTING ----
   var deityPatterns = [
     'the very Eternal Father of heaven and of earth',
@@ -2616,6 +2645,13 @@
           };
         })(id, c);
         chaps.appendChild(ch);
+      }
+      // Add book intro text below chapters
+      if (bookIntros[id]) {
+        var intro = document.createElement('div');
+        intro.className = 'picker-intro';
+        intro.textContent = bookIntros[id];
+        chaps.appendChild(intro);
       }
       body.appendChild(chaps);
     }

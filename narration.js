@@ -1262,6 +1262,10 @@ const NARRATION = (() => {
     if (listenToggle) {
       listenToggle.addEventListener('change', function() {
         if (listenToggle.checked) {
+          // Close the bottom sheet so the player is visible (especially on mobile)
+          if (typeof window.toggleSheet === 'function') {
+            window.toggleSheet();
+          }
           // Show the player in a ready-to-play state (don't auto-start)
           showPlayer();
           loadChapterAudio().then(function(ok) {
