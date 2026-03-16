@@ -202,12 +202,12 @@
     font-family: Literata, Georgia, serif;
     font-size: 1.35em;
     font-weight: normal;
-    color: #d4d0c8;
+    color: #7cafc2;
     text-decoration: none;
     padding: 10px 12px 4px;
     line-height: 1.2;
   }
-  #toolbar-title:hover { color: #fff; }
+  #toolbar-title:hover { color: #a0cfdf; }
   .toolbar-title-sub {
     display: block;
     font-size: 0.42em;
@@ -217,8 +217,8 @@
     letter-spacing: 0.03em;
     margin-top: 2px;
   }
-  body.light-mode #toolbar-title { color: #2a3a4a; }
-  body.light-mode #toolbar-title:hover { color: #111; }
+  body.light-mode #toolbar-title { color: #3a7a92; }
+  body.light-mode #toolbar-title:hover { color: #2a6a82; }
   body.light-mode .toolbar-title-sub { color: #6a7a8a; }
 
   /* Collapsed toolbar — hide title, book grid, and panels; keep summary + controls */
@@ -227,6 +227,10 @@
   .toolbar-collapsed #settings-panel { display: none !important; }
   .toolbar-collapsed #nav-panel { display: none !important; }
   .toolbar-collapsed #background-panel { display: none !important; }
+
+  /* Landing page mode — no controls row, no collapse, never hidden */
+  .toolbar-landing .controls-row { display: none !important; }
+  .toolbar-landing .collapsed-summary { display: none !important; }
 
   /* Tap-to-toggle: fully hide toolbar */
   #reading-toolbar {
@@ -264,7 +268,7 @@
   }
 
   .collapsed-summary {
-    display: none;
+    display: block;
     height: 32px;
     line-height: 32px;
     color: #999;
@@ -273,22 +277,8 @@
     padding: 0 12px;
     order: -2;
   }
-
-  /* Show summary bar when scrolled down (collapsed or expanded) */
-  .toolbar-collapsed .collapsed-summary,
-  .toolbar-show-summary .collapsed-summary {
-    display: block;
-  }
-  /* When expanded with summary visible, show a collapse affordance */
-  .toolbar-show-summary .collapsed-summary::after {
-    content: '▲';
-    float: right;
-    font-size: 0.85em;
-    opacity: 0.5;
-    margin-right: 6px;
-    cursor: pointer;
-  }
-  .toolbar-collapsed .collapsed-summary::after {
+  /* Arrow always visible — ▼ to collapse, ▲ when collapsed */
+  .collapsed-summary::after {
     content: '▼';
     float: right;
     font-size: 0.85em;
@@ -296,6 +286,11 @@
     margin-right: 6px;
     cursor: pointer;
   }
+  .toolbar-collapsed .collapsed-summary::after {
+    content: '▲';
+  }
+  /* Hide summary bar on landing page — no collapse needed */
+  .toolbar-landing .collapsed-summary { display: none; }
 
   /* In collapsed mode, tighten controls-row spacing */
   .toolbar-collapsed .controls-row {
@@ -1441,7 +1436,7 @@
     font-family: Literata, Georgia, serif;
     font-size: 1.5em;
     font-weight: normal;
-    color: #d4d0c8;
+    color: #7cafc2;
     text-align: left;
     padding: 0.6em 0 0.2em;
     line-height: 1.15;
@@ -1454,7 +1449,7 @@
     letter-spacing: 0.03em;
     margin-top: 3px;
   }
-  body.light-mode .page-title { color: #2a3a4a; }
+  body.light-mode .page-title { color: #3a7a92; }
   body.light-mode .page-title-sub { color: #6a7a8a; }
 
   /* Welcome section — minimal landing for first visit */
@@ -2163,9 +2158,9 @@
   <!-- Welcome section — minimal landing for first-time visitors -->
   <div id="welcome-section">
     <div class="page-title">The Book of Mormon <span class="page-title-sub">Reading Edition</span></div>
-    <p class="welcome-tagline">A new way into the Book of Mormon</p>
+    <p class="welcome-tagline">A new way<br>into the Book of Mormon</p>
     <p class="welcome-desc">If you find the Book of Mormon hard to read, difficult to understand, or unfulfilling, this edition seeks to give you new tools that can help. Old words are replaced with modern ones, the text is broken into shorter lines that reflect ideas in the text. Additionally, the text has a fresh audio narration that can help the text come alive.</p>
-    <p class="welcome-prompt">Tap anywhere on the screen to show or hide the top menu</p>
+    <p class="welcome-prompt">Choose a book above to begin reading</p>
     <a class="welcome-about-link" href="#" onclick="showAboutPage(); return false;">Learn more about the features</a>
   </div>
 
@@ -2863,19 +2858,27 @@
     pauseCollapse();
     toolbar.classList.remove('toolbar-collapsed');
     toolbar.classList.remove('toolbar-show-summary');
+    toolbar.classList.add('toolbar-landing');
     document.getElementById('welcome-section').style.display = 'block';
     document.getElementById('chapter-title').style.display = 'none';
     document.getElementById('about-page').style.display = 'none';
     document.getElementById('book-content-container').style.display = 'none';
     document.getElementById('float-prev').classList.remove('active');
     document.getElementById('float-next').classList.remove('active');
+    // Set spacer to full landing toolbar height so content starts below
+    requestAnimationFrame(function() {
+      if (toolbarSpacer) toolbarSpacer.style.height = toolbar.offsetHeight + 'px';
+    });
     window.scrollTo({ top: 0 });
   };
 
   window.hideWelcome = function() {
+    toolbar.classList.remove('toolbar-landing');
     document.getElementById('welcome-section').style.display = 'none';
     document.getElementById('chapter-title').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'block';
+    // Restore spacer to collapsed toolbar height for reading mode
+    initSpacer();
   };
 
   document.addEventListener('click', function(e) {
@@ -3012,8 +3015,8 @@
       // Back-to-top button
       backBtn.style.display = y > 600 ? 'flex' : 'none';
 
-      // Skip collapse logic if toolbar is hidden (tap-driven)
-      if (toolbar.classList.contains('toolbar-hidden')) {
+      // Skip collapse logic if toolbar is hidden (tap-driven) or on landing page
+      if (toolbar.classList.contains('toolbar-hidden') || toolbar.classList.contains('toolbar-landing')) {
         prevScrollY = y;
         return;
       }
@@ -3129,6 +3132,8 @@
   // ── Tap-to-toggle: tap content area to hide/show toolbar ──
   document.getElementById('scripture-content').addEventListener('click', function(e) {
     if (touchMoved) return;
+    // Don't toggle toolbar on landing page
+    if (toolbar.classList.contains('toolbar-landing')) return;
     if (e.target.closest('a, button, .verse-num, .swap, .gloss-trigger, .quote-allusion')) return;
     if (typeof NARRATION !== 'undefined' && NARRATION.isPlaying && e.target.closest('.line, .line-para')) return;
     // If a panel is open, close it instead of toggling toolbar
@@ -3672,8 +3677,47 @@ function flushAndReload() {
 
   /* ── Boolean query detection and parsing ── */
   function hasBooleanOps(query) {
-    // Check for AND, OR, NOT as separate uppercase words
-    return /\b(AND|OR|NOT)\b/.test(query);
+    // Check for AND, OR, NOT, NEARn as separate uppercase words
+    return /\b(AND|OR|NOT|NEAR\d+)\b/.test(query);
+  }
+
+  // Find all word-index positions where a term matches in the verse
+  function termWordPositions(term, verseText) {
+    var words = verseText.toLowerCase().replace(/[^\w\s'-]/g, '').split(/\s+/);
+    var positions = [];
+    if (term.charAt(0) === '"' && term.charAt(term.length - 1) === '"') {
+      // Exact phrase: find where the phrase starts in word array
+      var phrase = term.slice(1, -1).toLowerCase().split(/\s+/);
+      for (var i = 0; i <= words.length - phrase.length; i++) {
+        var match = true;
+        for (var p = 0; p < phrase.length; p++) {
+          if (words[i + p] !== phrase[p]) { match = false; break; }
+        }
+        if (match) positions.push(i);
+      }
+    } else {
+      // Single word: stem-expand and check each word
+      var forms = expandStemForms(term);
+      for (var i = 0; i < words.length; i++) {
+        for (var f = 0; f < forms.length; f++) {
+          var re = new RegExp('^' + forms[f].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', 'i');
+          if (re.test(words[i])) { positions.push(i); break; }
+        }
+      }
+    }
+    return positions;
+  }
+
+  // Check if two terms appear within N words of each other in verse text
+  function nearMatch(term1, term2, distance, verseText) {
+    var pos1 = termWordPositions(term1, verseText);
+    var pos2 = termWordPositions(term2, verseText);
+    for (var i = 0; i < pos1.length; i++) {
+      for (var j = 0; j < pos2.length; j++) {
+        if (Math.abs(pos1[i] - pos2[j]) <= distance) return true;
+      }
+    }
+    return false;
   }
 
   // Test if a single term (word or "quoted phrase") matches a verse
@@ -3698,7 +3742,7 @@ function flushAndReload() {
   function parseBooleanQuery(query) {
     // Tokenize: extract "quoted phrases", AND, OR, NOT, and bare words
     var tokens = [];
-    var re = /"[^"]*"|\bAND\b|\bOR\b|\bNOT\b|\S+/g;
+    var re = /"[^"]*"|\bAND\b|\bOR\b|\bNOT\b|\bNEAR\d+\b|\S+/g;
     var m;
     while ((m = re.exec(query)) !== null) {
       tokens.push(m[0]);
@@ -3708,7 +3752,7 @@ function flushAndReload() {
     var highlightTerms = [];
     for (var i = 0; i < tokens.length; i++) {
       var tok = tokens[i];
-      if (tok !== 'AND' && tok !== 'OR' && tok !== 'NOT') {
+      if (tok !== 'AND' && tok !== 'OR' && tok !== 'NOT' && !/^NEAR\d+$/.test(tok)) {
         if (tok.charAt(0) === '"' && tok.charAt(tok.length - 1) === '"') {
           highlightTerms.push(tok.slice(1, -1).toLowerCase());
         } else {
@@ -3733,13 +3777,24 @@ function flushAndReload() {
 
     function parseAnd() {
       var left = parseNot();
-      while (pos < tokens.length && tokens[pos] === 'AND') {
+      while (pos < tokens.length && (tokens[pos] === 'AND' || /^NEAR\d+$/.test(tokens[pos]))) {
+        var op = tokens[pos];
         pos++;
-        var right = parseNot();
-        left = (function(l, r) { return function(v) { return l(v) && r(v); }; })(left, right);
+        if (/^NEAR\d+$/.test(op)) {
+          var dist = parseInt(op.replace('NEAR', ''), 10);
+          var leftTerm = lastNearTerm;  // captured from prior parseTerm call
+          var rightNode = parseNot();   // this sets lastNearTerm to right term
+          var rightTerm = lastNearTerm;
+          left = (function(lt, rt, d) {
+            return function(v) { return nearMatch(lt, rt, d, v); };
+          })(leftTerm, rightTerm, dist);
+        } else {
+          var right = parseNot();
+          left = (function(l, r) { return function(v) { return l(v) && r(v); }; })(left, right);
+        }
       }
       // Implicit AND: two terms next to each other with no operator (or NOT prefix)
-      while (pos < tokens.length && tokens[pos] !== 'OR' && tokens[pos] !== 'AND') {
+      while (pos < tokens.length && tokens[pos] !== 'OR' && tokens[pos] !== 'AND' && !/^NEAR\d+$/.test(tokens[pos])) {
         var right = parseNot();
         left = (function(l, r) { return function(v) { return l(v) && r(v); }; })(left, right);
       }
@@ -3755,10 +3810,12 @@ function flushAndReload() {
       return parseTerm();
     }
 
+    var lastNearTerm = '';
     function parseTerm() {
       if (pos >= tokens.length) return function() { return false; };
       var tok = tokens[pos];
       pos++;
+      lastNearTerm = tok;
       return function(verseText) { return termMatchesVerse(tok, verseText); };
     }
 
@@ -4167,6 +4224,7 @@ function flushAndReload() {
     <input id="search-input" type="text" placeholder="Search..." autocomplete="off" autocorrect="off" spellcheck="false">
     <button id="search-close" onclick="closeSearch()">&#10005;</button>
   </div>
+  <div style="padding: 2px 14px 4px; font-size: 0.7em; color: #666; line-height: 1.4;">Try: <em>faith AND works</em> · <em>pray NOT temple</em> · <em>fire NEAR2 spirit</em> · <em>"exact phrase"</em></div>
   <div id="search-body">
     <div id="search-count"></div>
     <div id="search-chart">
