@@ -3364,8 +3364,8 @@ function flushAndReload() {
 
   /* ── Boolean query detection and parsing ── */
   function hasBooleanOps(query) {
-    // Check for AND, OR, NOT, NEARn as separate uppercase words
-    return /\b(AND|OR|NOT|NEAR\d+)\b/.test(query);
+    // Check for AND, OR, NOT, NEARn as separate uppercase words, or parentheses
+    return /\b(AND|OR|NOT|NEAR\d+)\b/.test(query) || /[()]/.test(query);
   }
 
   // Find all word-index positions where a term matches in the verse
@@ -3429,7 +3429,7 @@ function flushAndReload() {
   function parseBooleanQuery(query) {
     // Tokenize: extract "quoted phrases", AND, OR, NOT, and bare words
     var tokens = [];
-    var re = /"[^"]*"|\bAND\b|\bOR\b|\bNOT\b|\bNEAR\d+\b|\S+/g;
+    var re = /"[^"]*"|\bAND\b|\bOR\b|\bNOT\b|\bNEAR\d+\b|[()]|[^\s()]+/g;
     var m;
     while ((m = re.exec(query)) !== null) {
       tokens.push(m[0]);
@@ -3439,7 +3439,7 @@ function flushAndReload() {
     var highlightTerms = [];
     for (var i = 0; i < tokens.length; i++) {
       var tok = tokens[i];
-      if (tok !== 'AND' && tok !== 'OR' && tok !== 'NOT' && !/^NEAR\d+$/.test(tok)) {
+      if (tok !== 'AND' && tok !== 'OR' && tok !== 'NOT' && tok !== '(' && tok !== ')' && !/^NEAR\d+$/.test(tok)) {
         if (tok.charAt(0) === '"' && tok.charAt(tok.length - 1) === '"') {
           highlightTerms.push(tok.slice(1, -1).toLowerCase());
         } else {
@@ -3481,7 +3481,7 @@ function flushAndReload() {
         }
       }
       // Implicit AND: two terms next to each other with no operator (or NOT prefix)
-      while (pos < tokens.length && tokens[pos] !== 'OR' && tokens[pos] !== 'AND' && !/^NEAR\d+$/.test(tokens[pos])) {
+      while (pos < tokens.length && tokens[pos] !== 'OR' && tokens[pos] !== 'AND' && tokens[pos] !== ')' && !/^NEAR\d+$/.test(tokens[pos])) {
         var right = parseNot();
         left = (function(l, r) { return function(v) { return l(v) && r(v); }; })(left, right);
       }
@@ -3501,6 +3501,12 @@ function flushAndReload() {
     function parseTerm() {
       if (pos >= tokens.length) return function() { return false; };
       var tok = tokens[pos];
+      if (tok === '(') {
+        pos++; // consume '('
+        var inner = parseOr();
+        if (pos < tokens.length && tokens[pos] === ')') pos++; // consume ')'
+        return inner;
+      }
       pos++;
       lastNearTerm = tok;
       return function(verseText) { return termMatchesVerse(tok, verseText); };
