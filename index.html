@@ -694,7 +694,7 @@
     color: inherit;
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: rgba(124,175,194,0.4);
+    text-decoration-color: rgba(124,175,194,0.55);
     text-underline-offset: 3px;
   }
   /* High-frequency archaic words: still swappable but no visual noise */
@@ -876,7 +876,12 @@
     border-bottom: 2px solid #d4a843;
   }
 
-  /* Quotations layer */
+  /* Intertextual quotations — always italicized */
+  .quote-bible {
+    font-style: italic;
+  }
+
+  /* Quotations layer (toggle-activated color) */
   .sources-quotations .quote-bible {
     color: #7cb8e4;
   }
