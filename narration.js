@@ -16,7 +16,29 @@
 const NARRATION = (() => {
   const SPEEDS = [0.75, 1, 1.25, 1.5, 2];
   const AUDIO_BASE = 'audio/';
-  const VOICE = 'samuel';  // active voice: 'samuel', 'tony', etc.
+  // Per-book voice mapping — alternating Samuel / Sister M
+  const BOOK_VOICES = {
+    '1nephi':          'samuel',
+    '2nephi':          'sister-m',
+    'jacob':           'samuel',
+    'enos':            'samuel',
+    'jarom':           'samuel',
+    'omni':            'samuel',
+    'words-of-mormon': 'samuel',
+    'mosiah':          'sister-m',
+    'alma':            'samuel',
+    'helaman':         'sister-m',
+    '3nephi':          'samuel',
+    '4nephi':          'sister-m',
+    'mormon':          'samuel',
+    'ether':           'sister-m',
+    'moroni':          'samuel',
+  };
+  const DEFAULT_VOICE = 'samuel';
+
+  function voiceFor(bookId) {
+    return BOOK_VOICES[bookId] || DEFAULT_VOICE;
+  }
 
   // Canonical book order for auto-advance
   const BOOK_ORDER = [
@@ -110,8 +132,9 @@ const NARRATION = (() => {
     }
 
     const folder = BOOK_FOLDERS[ch.bookId] || ch.bookId;
-    const mp3Url = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
-    const jsonUrl = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${VOICE}.json`;
+    const voice = voiceFor(ch.bookId);
+    const mp3Url = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${voice}.mp3`;
+    const jsonUrl = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${voice}.json`;
 
     updatePlayerState('loading', 'Loading audio...');
 
@@ -164,8 +187,9 @@ const NARRATION = (() => {
     if (!ch) return;
 
     const folder = BOOK_FOLDERS[ch.bookId] || ch.bookId;
-    const mp3Url = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${VOICE}.mp3`;
-    const jsonUrl = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${VOICE}.json`;
+    const voice = voiceFor(ch.bookId);
+    const mp3Url = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${voice}.mp3`;
+    const jsonUrl = `${AUDIO_BASE}${folder}/${ch.bookId}-${ch.chapter}-${voice}.json`;
 
     // ── CRITICAL: iOS/mobile requires audioEl.play() in the SYNCHRONOUS
     // callstack of a user gesture. No awaits before play(). ──
@@ -311,7 +335,8 @@ const NARRATION = (() => {
    */
   async function hasAudio(bookId, chapter) {
     const folder = BOOK_FOLDERS[bookId] || bookId;
-    const url = `${AUDIO_BASE}${folder}/${bookId}-${chapter}-${VOICE}.mp3`;
+    const voice = voiceFor(bookId);
+    const url = `${AUDIO_BASE}${folder}/${bookId}-${chapter}-${voice}.mp3`;
     try {
       const resp = await fetch(url, { method: 'HEAD' });
       return resp.ok;
