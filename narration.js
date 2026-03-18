@@ -16,22 +16,22 @@
 const NARRATION = (() => {
   const SPEEDS = [0.75, 1, 1.25, 1.5, 2];
   const AUDIO_BASE = 'audio/';
-  // Per-book voice mapping — alternating Samuel / Sister M
+  // Voice mapping — Samuel for all books
   const BOOK_VOICES = {
     '1nephi':          'samuel',
-    '2nephi':          'sister-m',
+    '2nephi':          'samuel',
     'jacob':           'samuel',
     'enos':            'samuel',
     'jarom':           'samuel',
     'omni':            'samuel',
     'words-of-mormon': 'samuel',
-    'mosiah':          'sister-m',
+    'mosiah':          'samuel',
     'alma':            'samuel',
-    'helaman':         'sister-m',
+    'helaman':         'samuel',
     '3nephi':          'samuel',
-    '4nephi':          'sister-m',
+    '4nephi':          'samuel',
     'mormon':          'samuel',
-    'ether':           'sister-m',
+    'ether':           'samuel',
     'moroni':          'samuel',
   };
   const DEFAULT_VOICE = 'samuel';
