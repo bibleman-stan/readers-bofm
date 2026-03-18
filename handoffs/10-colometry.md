@@ -160,4 +160,57 @@ Should the same syntactic pattern always get the same break treatment? Or should
 7. If audio exists for changed chapters, audio must be regenerated via Colab pipeline (changed lines invalidate cache)
 
 ---
+### Update — 2026-03-18
+
+#### Foundational Principle Clarified
+
+Through working review of Mosiah sense-lines, the overriding criterion for all line-break decisions was articulated more precisely:
+
+**Each line must be an atomic thought, an atomic breath unit, or ideally both.**
+
+This is the foundational test that all the settled principles below it are trying to serve. It should be read before the specific rules, not derived from them.
+
+"Atomic thought" means the line holds a single processable unit of meaning — the reader doesn't need to carry it forward and resolve it against the next line to understand it.
+
+"Atomic breath unit" means the line can be physically delivered in one breath at a natural reading pace — not gasping, not cutting a thought short.
+
+When a line fails both tests it clearly needs revision. When it passes both it's valid regardless of what a syntactic rule might suggest. When they conflict — a line that is one breath but two thoughts, or one thought but too long for one breath — editorial judgment decides which criterion governs for that passage.
+
+This principle also clarifies the relationship between syntactic attachment and rhetorical function: **syntax tells you where thoughts can be separated; rhetoric and breath tell you where they should be.** These usually agree; when they don't, breath and rhetoric govern.
+
+#### Qualifying Phrases That Escalate vs. Restrict
+
+A related distinction emerged from reviewing Mosiah 3:5 and 3:7:
+
+A qualifying phrase that **restricts** the preceding claim tends to belong with it on the same line ("save it be," "except it were"). But a qualifying phrase that **escalates or intensifies** the preceding claim — pushing it to a further extreme — often earns its own line, because the escalation is itself a thought that benefits from its own arrest.
+
+Example (Mosiah 3:7): "even more than man can suffer, / except it be unto death" — "except it be unto death" is not merely restricting; it is pushing the claim to its limit. The break honors that.
+
+#### Fronted Adverbials as Intentional Rhetorical Positioning
+
+Mosiah 3:5 — "that with power, / the Lord Omnipotent who reigneth" — initially flagged as a possible orphan fragment. On review: "with power" is a fronted adverbial, extracted from its natural post-verbal position ("shall come down with power") and placed before the subject for rhetorical effect. The fronting is the device — it announces the manner before the actor, building anticipation. The line break after it is grammatically and rhetorically accurate, not accidental.
+
+General principle: short lines that appear to be orphan fragments may instead be fronted elements occupying a genuine clause-initial position. Check deep structure before proposing a merge.
+
+#### Line Reordering as an Editorial Tool
+
+The revision of Mosiah 15:9 established that **reordering lines within a verse** is a legitimate editorial move, not just changing where breaks fall. In the original v2, "having broken the bands of death" preceded "standing betwixt them and justice." The revised order places "standing betwixt them and justice" as the climactic statement of Christ's mediating function, with the subsequent participles ("having broken… taken upon… redeemed… satisfied") explaining the acts that constitute that function. This is the correct theological and rhetorical sequence: function stated, then grounded.
+
+Reordering is more substantive than break adjustment and should be used sparingly, but it is the right tool when the logical or rhetorical arc of a verse requires it.
+
+#### Three-Category Framework for Automated Review
+
+When reviewing sense-lines systematically (book by book), proposed changes fall into three categories:
+
+- **Category A — Editorial slippage:** Break placement is suboptimal by our own principles. No theological or rhetorical stakes. Safe to revise with review.
+- **Category B — Rhetorical shape:** The arrangement reflects how a speaker builds argument or emphasis. Changing the break changes the rhetoric. Requires judgment about what the speaker is doing, not just syntactic tidiness.
+- **Category C — Theological weight:** Break placement makes a doctrinal point, or a proposed change would flatten something intentional. Flag and discuss before touching.
+
+Category A gets a confident proposal. B and C get a question first.
+
+#### Punctuation Is Canonical — Never Touch It
+
+Line breaks are editorial. Punctuation belongs to the canonical LDS text and is never altered, even when it might seem to affect how a line reads. This is moot in the default view (punctuation hidden via CSS) but the source files must preserve the canonical text exactly.
+
+---
 *Created: 2026-03-18*
