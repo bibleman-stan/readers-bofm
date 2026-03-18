@@ -1,0 +1,1095 @@
+{
+  "book": "2nephi",
+  "chapter": 5,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 430.918,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.666,
+      "type": "line",
+      "text": "Behold, it came to pass that I, Nephi, did cry much unto the Lord my God,",
+      "verse": "5:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.846,
+      "end": 8.354,
+      "type": "line",
+      "text": "because of the anger of my brethren.",
+      "verse": "5:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.034,
+      "end": 12.145,
+      "type": "line",
+      "text": "But behold, their anger did increase against me,",
+      "verse": "5:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 12.325,
+      "end": 15.576,
+      "type": "line",
+      "text": "insomuch that they did seek to take away my life.",
+      "verse": "5:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 16.256,
+      "end": 18.717,
+      "type": "line",
+      "text": "Yea, they did murmur against me, saying:",
+      "verse": "5:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 18.897,
+      "end": 21.451,
+      "type": "line",
+      "text": "Our younger brother thinks to rule over us;",
+      "verse": "5:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 21.631,
+      "end": 24.092,
+      "type": "line",
+      "text": "and we have had much trial because of him;",
+      "verse": "5:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 24.272,
+      "end": 26.548,
+      "type": "line",
+      "text": "wherefore, now let us slay him,",
+      "verse": "5:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 26.728,
+      "end": 30.072,
+      "type": "line",
+      "text": "that we may not be afflicted more because of his words.",
+      "verse": "5:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 30.252,
+      "end": 33.271,
+      "type": "line",
+      "text": "For behold, we will not have him to be our ruler;",
+      "verse": "5:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 33.451,
+      "end": 36.934,
+      "type": "line",
+      "text": "for it belongs unto us, who are the elder brethren,",
+      "verse": "5:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 37.114,
+      "end": 38.739,
+      "type": "line",
+      "text": "to rule over this people.",
+      "verse": "5:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 39.419,
+      "end": 43.97,
+      "type": "line",
+      "text": "Now I do not write upon these plates all the words which they murmured against me.",
+      "verse": "5:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.15,
+      "end": 47.772,
+      "type": "line",
+      "text": "But it sufficeth me to say that they did seek to take away my life.",
+      "verse": "5:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 48.452,
+      "end": 51.703,
+      "type": "line",
+      "text": "And it came to pass that the Lord did warn me,",
+      "verse": "5:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 51.883,
+      "end": 54.298,
+      "type": "line",
+      "text": "I, Nephi, should depart from them",
+      "verse": "5:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 54.478,
+      "end": 56.475,
+      "type": "line",
+      "text": "and flee into the wilderness,",
+      "verse": "5:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 56.655,
+      "end": 59.023,
+      "type": "line",
+      "text": "and all those who would go with me.",
+      "verse": "5:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 59.703,
+      "end": 63.465,
+      "type": "line",
+      "text": "Wherefore, it came to pass that I, Nephi, did take my family,",
+      "verse": "5:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 63.645,
+      "end": 65.967,
+      "type": "line",
+      "text": "and also Zoram and his family,",
+      "verse": "5:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 66.147,
+      "end": 69.258,
+      "type": "line",
+      "text": "and Sam, mine elder brother and his family,",
+      "verse": "5:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 69.438,
+      "end": 72.271,
+      "type": "line",
+      "text": "and Jacob and Joseph, my younger brethren,",
+      "verse": "5:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 72.451,
+      "end": 74.076,
+      "type": "line",
+      "text": "and also my sisters,",
+      "verse": "5:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 74.256,
+      "end": 76.624,
+      "type": "line",
+      "text": "and all those who would go with me.",
+      "verse": "5:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 76.804,
+      "end": 79.59,
+      "type": "line",
+      "text": "And all those who would go with me were those",
+      "verse": "5:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 79.77,
+      "end": 83.439,
+      "type": "line",
+      "text": "who believed in the warnings and the revelations of God;",
+      "verse": "5:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 83.619,
+      "end": 86.498,
+      "type": "line",
+      "text": "wherefore, they did hearken unto my words.",
+      "verse": "5:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 87.178,
+      "end": 88.943,
+      "type": "line",
+      "text": "And we did take our tents",
+      "verse": "5:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 89.123,
+      "end": 91.677,
+      "type": "line",
+      "text": "and whatsoever things were possible for us,",
+      "verse": "5:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 91.857,
+      "end": 95.526,
+      "type": "line",
+      "text": "and did journey in the wilderness for the space of many days.",
+      "verse": "5:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 95.706,
+      "end": 99.003,
+      "type": "line",
+      "text": "And after we had journeyed for the space of many days",
+      "verse": "5:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 99.183,
+      "end": 100.855,
+      "type": "line",
+      "text": "we did pitch our tents.",
+      "verse": "5:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 101.535,
+      "end": 105.9,
+      "type": "line",
+      "text": "And my people would that we should call the name of the place Nephi;",
+      "verse": "5:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 106.08,
+      "end": 108.17,
+      "type": "line",
+      "text": "wherefore, we did call it Nephi.",
+      "verse": "5:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 108.85,
+      "end": 112.101,
+      "type": "line",
+      "text": "And all those who were with me did take upon them",
+      "verse": "5:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 112.281,
+      "end": 114.557,
+      "type": "line",
+      "text": "to call themselves the people of Nephi.",
+      "verse": "5:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 115.237,
+      "end": 117.884,
+      "type": "line",
+      "text": "And we did observe to keep the judgments,",
+      "verse": "5:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 118.064,
+      "end": 119.55,
+      "type": "line",
+      "text": "and the statutes,",
+      "verse": "5:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 119.73,
+      "end": 122.098,
+      "type": "line",
+      "text": "and the commandments of the Lord",
+      "verse": "5:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 122.278,
+      "end": 125.018,
+      "type": "line",
+      "text": "in all things, according to the law of Moses.",
+      "verse": "5:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 125.698,
+      "end": 127.463,
+      "type": "line",
+      "text": "And the Lord was with us;",
+      "verse": "5:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 127.643,
+      "end": 129.872,
+      "type": "line",
+      "text": "and we did prosper exceedingly;",
+      "verse": "5:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 130.052,
+      "end": 131.863,
+      "type": "line",
+      "text": "for we did sow seed,",
+      "verse": "5:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 132.043,
+      "end": 134.458,
+      "type": "line",
+      "text": "and we did reap again in abundance.",
+      "verse": "5:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 134.638,
+      "end": 139.375,
+      "type": "line",
+      "text": "And we began to raise flocks, and herds, and animals of every kind.",
+      "verse": "5:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 140.055,
+      "end": 142.981,
+      "type": "line",
+      "text": "And I, Nephi, had also brought the records",
+      "verse": "5:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 143.161,
+      "end": 145.901,
+      "type": "line",
+      "text": "which were engraven upon the plates of brass;",
+      "verse": "5:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 146.081,
+      "end": 147.66,
+      "type": "line",
+      "text": "and also the ball,",
+      "verse": "5:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 147.84,
+      "end": 149.14,
+      "type": "line",
+      "text": "or compass,",
+      "verse": "5:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 149.32,
+      "end": 152.942,
+      "type": "line",
+      "text": "which was prepared for my father by the hand of the Lord,",
+      "verse": "5:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 153.122,
+      "end": 155.165,
+      "type": "line",
+      "text": "according to that which is written.",
+      "verse": "5:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 155.845,
+      "end": 159.189,
+      "type": "line",
+      "text": "And it came to pass that we began to prosper exceedingly,",
+      "verse": "5:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 159.369,
+      "end": 161.18,
+      "type": "line",
+      "text": "and to multiply in the land.",
+      "verse": "5:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 161.86,
+      "end": 164.461,
+      "type": "line",
+      "text": "And I, Nephi, did take the sword of Laban,",
+      "verse": "5:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 164.641,
+      "end": 167.66,
+      "type": "line",
+      "text": "and after the manner of it did make many swords,",
+      "verse": "5:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 167.84,
+      "end": 171.695,
+      "type": "line",
+      "text": "lest by any means the people who were now called Lamanites",
+      "verse": "5:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 171.875,
+      "end": 174.151,
+      "type": "line",
+      "text": "should come upon us and destroy us;",
+      "verse": "5:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 174.331,
+      "end": 177.535,
+      "type": "line",
+      "text": "for I knew their hatred towards me and my children",
+      "verse": "5:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 177.715,
+      "end": 180.316,
+      "type": "line",
+      "text": "and those who were called my people.",
+      "verse": "5:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 180.996,
+      "end": 183.736,
+      "type": "line",
+      "text": "And I did teach my people to build buildings,",
+      "verse": "5:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 183.916,
+      "end": 188.514,
+      "type": "line",
+      "text": "and to work in all manner of wood, and of iron, and of copper,",
+      "verse": "5:15",
+      "lineIndex": 62
+    },
+    {
+      "start": 188.694,
+      "end": 191.248,
+      "type": "line",
+      "text": "and of brass, and of steel, and of gold,",
+      "verse": "5:15",
+      "lineIndex": 63
+    },
+    {
+      "start": 191.428,
+      "end": 193.75,
+      "type": "line",
+      "text": "and of silver, and of precious ores,",
+      "verse": "5:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 193.93,
+      "end": 196.298,
+      "type": "line",
+      "text": "which were in great abundance.",
+      "verse": "5:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 196.978,
+      "end": 199.625,
+      "type": "line",
+      "text": "And I, Nephi, did build a temple;",
+      "verse": "5:16",
+      "lineIndex": 66
+    },
+    {
+      "start": 199.805,
+      "end": 204.17,
+      "type": "line",
+      "text": "and I did construct it after the manner of the temple of Solomon",
+      "verse": "5:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 204.35,
+      "end": 207.461,
+      "type": "line",
+      "text": "save it were not built of so many precious things;",
+      "verse": "5:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 207.641,
+      "end": 210.242,
+      "type": "line",
+      "text": "for they were not to be found upon the land,",
+      "verse": "5:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 210.422,
+      "end": 214.416,
+      "type": "line",
+      "text": "wherefore, it could not be built like unto Solomon's temple.",
+      "verse": "5:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 214.596,
+      "end": 219.844,
+      "type": "line",
+      "text": "But the manner of the construction was like unto the temple of Solomon;",
+      "verse": "5:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 220.024,
+      "end": 223.275,
+      "type": "line",
+      "text": "and the workmanship thereof was exceedingly fine.",
+      "verse": "5:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 223.955,
+      "end": 229.063,
+      "type": "line",
+      "text": "And it came to pass that I, Nephi, did cause my people to be industrious,",
+      "verse": "5:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 229.243,
+      "end": 231.193,
+      "type": "line",
+      "text": "and to labor with their hands.",
+      "verse": "5:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 231.873,
+      "end": 235.635,
+      "type": "line",
+      "text": "And it came to pass that they would that I should be their king.",
+      "verse": "5:18",
+      "lineIndex": 75
+    },
+    {
+      "start": 235.815,
+      "end": 239.298,
+      "type": "line",
+      "text": "But I, Nephi, was desirous that they should have no king;",
+      "verse": "5:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 239.478,
+      "end": 243.75,
+      "type": "line",
+      "text": "nevertheless, I did for them according to that which was in my power.",
+      "verse": "5:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 244.43,
+      "end": 248.238,
+      "type": "line",
+      "text": "And behold, the words of the Lord had been fulfilled unto my brethren,",
+      "verse": "5:19",
+      "lineIndex": 78
+    },
+    {
+      "start": 248.418,
+      "end": 250.508,
+      "type": "line",
+      "text": "which he spake concerning them",
+      "verse": "5:19",
+      "lineIndex": 79
+    },
+    {
+      "start": 250.688,
+      "end": 253.66,
+      "type": "line",
+      "text": "that I should be their ruler and their teacher.",
+      "verse": "5:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 253.84,
+      "end": 257.044,
+      "type": "line",
+      "text": "Wherefore, I had been their ruler and their teacher,",
+      "verse": "5:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 257.224,
+      "end": 259.453,
+      "type": "line",
+      "text": "according to the commandments of the Lord,",
+      "verse": "5:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 259.633,
+      "end": 262.605,
+      "type": "line",
+      "text": "until the time they sought to take away my life.",
+      "verse": "5:19",
+      "lineIndex": 83
+    },
+    {
+      "start": 263.285,
+      "end": 266.025,
+      "type": "line",
+      "text": "Wherefore, the word of the Lord was fulfilled",
+      "verse": "5:20",
+      "lineIndex": 85
+    },
+    {
+      "start": 266.205,
+      "end": 268.527,
+      "type": "line",
+      "text": "which he spake unto me, saying that:",
+      "verse": "5:20",
+      "lineIndex": 86
+    },
+    {
+      "start": 268.707,
+      "end": 271.958,
+      "type": "line",
+      "text": "Inasmuch as they will not hearken unto thy words",
+      "verse": "5:20",
+      "lineIndex": 87
+    },
+    {
+      "start": 272.138,
+      "end": 275.575,
+      "type": "line",
+      "text": "they shall be cut off from the presence of the Lord.",
+      "verse": "5:20",
+      "lineIndex": 88
+    },
+    {
+      "start": 275.755,
+      "end": 278.959,
+      "type": "line",
+      "text": "And behold, they were cut off from his presence.",
+      "verse": "5:20",
+      "lineIndex": 89
+    },
+    {
+      "start": 279.639,
+      "end": 282.89,
+      "type": "line",
+      "text": "And he had caused the cursing to come upon them,",
+      "verse": "5:21",
+      "lineIndex": 90
+    },
+    {
+      "start": 283.07,
+      "end": 284.974,
+      "type": "line",
+      "text": "yea, even a sore cursing,",
+      "verse": "5:21",
+      "lineIndex": 91
+    },
+    {
+      "start": 285.154,
+      "end": 286.826,
+      "type": "line",
+      "text": "because of their iniquity.",
+      "verse": "5:21",
+      "lineIndex": 92
+    },
+    {
+      "start": 287.006,
+      "end": 289.932,
+      "type": "line",
+      "text": "For behold, they had hardened their hearts against him,",
+      "verse": "5:21",
+      "lineIndex": 93
+    },
+    {
+      "start": 290.112,
+      "end": 292.527,
+      "type": "line",
+      "text": "that they had become like unto a flint;",
+      "verse": "5:21",
+      "lineIndex": 94
+    },
+    {
+      "start": 292.707,
+      "end": 294.89,
+      "type": "line",
+      "text": "wherefore, as they were white,",
+      "verse": "5:21",
+      "lineIndex": 95
+    },
+    {
+      "start": 295.07,
+      "end": 297.624,
+      "type": "line",
+      "text": "and exceedingly fair and delightsome,",
+      "verse": "5:21",
+      "lineIndex": 96
+    },
+    {
+      "start": 297.804,
+      "end": 300.915,
+      "type": "line",
+      "text": "that they might not be enticing unto my people",
+      "verse": "5:21",
+      "lineIndex": 97
+    },
+    {
+      "start": 301.095,
+      "end": 305.089,
+      "type": "line",
+      "text": "the Lord God did cause a skin of blackness to come upon them.",
+      "verse": "5:21",
+      "lineIndex": 98
+    },
+    {
+      "start": 305.769,
+      "end": 307.534,
+      "type": "line",
+      "text": "And thus saith the Lord God:",
+      "verse": "5:22",
+      "lineIndex": 99
+    },
+    {
+      "start": 307.714,
+      "end": 311.569,
+      "type": "line",
+      "text": "I will cause that they shall be loathsome unto thy people,",
+      "verse": "5:22",
+      "lineIndex": 100
+    },
+    {
+      "start": 311.749,
+      "end": 314.582,
+      "type": "line",
+      "text": "save they shall repent of their iniquities.",
+      "verse": "5:22",
+      "lineIndex": 101
+    },
+    {
+      "start": 315.262,
+      "end": 317.816,
+      "type": "line",
+      "text": "And cursed shall be the seed of him",
+      "verse": "5:23",
+      "lineIndex": 102
+    },
+    {
+      "start": 317.996,
+      "end": 319.854,
+      "type": "line",
+      "text": "that mixeth with their seed;",
+      "verse": "5:23",
+      "lineIndex": 103
+    },
+    {
+      "start": 320.034,
+      "end": 323.006,
+      "type": "line",
+      "text": "for they shall be cursed even with the same cursing.",
+      "verse": "5:23",
+      "lineIndex": 104
+    },
+    {
+      "start": 323.186,
+      "end": 325.787,
+      "type": "line",
+      "text": "And the Lord spake it, and it was done.",
+      "verse": "5:23",
+      "lineIndex": 105
+    },
+    {
+      "start": 326.467,
+      "end": 329.671,
+      "type": "line",
+      "text": "And because of their cursing which was upon them",
+      "verse": "5:24",
+      "lineIndex": 106
+    },
+    {
+      "start": 329.851,
+      "end": 332.173,
+      "type": "line",
+      "text": "they did become an idle people,",
+      "verse": "5:24",
+      "lineIndex": 107
+    },
+    {
+      "start": 332.353,
+      "end": 334.536,
+      "type": "line",
+      "text": "full of mischief and subtlety,",
+      "verse": "5:24",
+      "lineIndex": 108
+    },
+    {
+      "start": 334.716,
+      "end": 338.245,
+      "type": "line",
+      "text": "and did seek in the wilderness for beasts of prey.",
+      "verse": "5:24",
+      "lineIndex": 109
+    },
+    {
+      "start": 338.925,
+      "end": 341.015,
+      "type": "line",
+      "text": "And the Lord God said unto me:",
+      "verse": "5:25",
+      "lineIndex": 111
+    },
+    {
+      "start": 341.195,
+      "end": 343.61,
+      "type": "line",
+      "text": "They shall be a scourge unto thy seed,",
+      "verse": "5:25",
+      "lineIndex": 112
+    },
+    {
+      "start": 343.79,
+      "end": 346.298,
+      "type": "line",
+      "text": "to stir them up in remembrance of me;",
+      "verse": "5:25",
+      "lineIndex": 113
+    },
+    {
+      "start": 346.478,
+      "end": 349.218,
+      "type": "line",
+      "text": "and inasmuch as they will not remember me,",
+      "verse": "5:25",
+      "lineIndex": 114
+    },
+    {
+      "start": 349.398,
+      "end": 351.256,
+      "type": "line",
+      "text": "and hearken unto my words,",
+      "verse": "5:25",
+      "lineIndex": 115
+    },
+    {
+      "start": 351.436,
+      "end": 354.594,
+      "type": "line",
+      "text": "they shall scourge them even unto destruction.",
+      "verse": "5:25",
+      "lineIndex": 116
+    },
+    {
+      "start": 355.274,
+      "end": 360.568,
+      "type": "line",
+      "text": "And it came to pass that I, Nephi, did consecrate Jacob and Joseph,",
+      "verse": "5:26",
+      "lineIndex": 117
+    },
+    {
+      "start": 360.748,
+      "end": 364.37,
+      "type": "line",
+      "text": "they should be priests and teachers over the land of my people.",
+      "verse": "5:26",
+      "lineIndex": 118
+    },
+    {
+      "start": 365.05,
+      "end": 368.905,
+      "type": "line",
+      "text": "And it came to pass that we lived after the manner of happiness.",
+      "verse": "5:27",
+      "lineIndex": 119
+    },
+    {
+      "start": 369.585,
+      "end": 373.347,
+      "type": "line",
+      "text": "And thirty years had passed away from the time we left Jerusalem.",
+      "verse": "5:28",
+      "lineIndex": 120
+    },
+    {
+      "start": 374.027,
+      "end": 376.628,
+      "type": "line",
+      "text": "And I, Nephi, had kept the records",
+      "verse": "5:29",
+      "lineIndex": 121
+    },
+    {
+      "start": 376.808,
+      "end": 380.43,
+      "type": "line",
+      "text": "upon my plates, which I had made, of my people thus far.",
+      "verse": "5:29",
+      "lineIndex": 122
+    },
+    {
+      "start": 381.11,
+      "end": 383.989,
+      "type": "line",
+      "text": "And it came to pass that the Lord God said unto me:",
+      "verse": "5:30",
+      "lineIndex": 123
+    },
+    {
+      "start": 384.169,
+      "end": 385.609,
+      "type": "line",
+      "text": "Make other plates;",
+      "verse": "5:30",
+      "lineIndex": 124
+    },
+    {
+      "start": 385.789,
+      "end": 388.715,
+      "type": "line",
+      "text": "and thou shalt engraven many things upon them",
+      "verse": "5:30",
+      "lineIndex": 125
+    },
+    {
+      "start": 388.895,
+      "end": 390.845,
+      "type": "line",
+      "text": "which are good in my sight,",
+      "verse": "5:30",
+      "lineIndex": 126
+    },
+    {
+      "start": 391.025,
+      "end": 392.929,
+      "type": "line",
+      "text": "for the profit of thy people.",
+      "verse": "5:30",
+      "lineIndex": 127
+    },
+    {
+      "start": 393.609,
+      "end": 395.234,
+      "type": "line",
+      "text": "Wherefore, I, Nephi,",
+      "verse": "5:31",
+      "lineIndex": 128
+    },
+    {
+      "start": 395.414,
+      "end": 398.386,
+      "type": "line",
+      "text": "to be obedient to the commandments of the Lord,",
+      "verse": "5:31",
+      "lineIndex": 129
+    },
+    {
+      "start": 398.566,
+      "end": 402.56,
+      "type": "line",
+      "text": "went and made these plates upon which I have engraven these things.",
+      "verse": "5:31",
+      "lineIndex": 130
+    },
+    {
+      "start": 403.24,
+      "end": 406.259,
+      "type": "line",
+      "text": "And I engraved that which is pleasing unto God.",
+      "verse": "5:32",
+      "lineIndex": 131
+    },
+    {
+      "start": 406.439,
+      "end": 409.318,
+      "type": "line",
+      "text": "And if my people are pleased with the things of God",
+      "verse": "5:32",
+      "lineIndex": 132
+    },
+    {
+      "start": 409.498,
+      "end": 414.467,
+      "type": "line",
+      "text": "they will be pleased with mine engravings which are upon these plates.",
+      "verse": "5:32",
+      "lineIndex": 133
+    },
+    {
+      "start": 415.147,
+      "end": 419.745,
+      "type": "line",
+      "text": "And if my people desire to know the more particular part of the history of my people",
+      "verse": "5:33",
+      "lineIndex": 134
+    },
+    {
+      "start": 419.925,
+      "end": 422.154,
+      "type": "line",
+      "text": "they must search mine other plates.",
+      "verse": "5:33",
+      "lineIndex": 135
+    },
+    {
+      "start": 422.834,
+      "end": 426.363,
+      "type": "line",
+      "text": "And it sufficeth me to say that forty years had passed away,",
+      "verse": "5:34",
+      "lineIndex": 136
+    },
+    {
+      "start": 426.543,
+      "end": 430.258,
+      "type": "line",
+      "text": "and we had already had wars and contentions with our brethren.",
+      "verse": "5:34",
+      "lineIndex": 137
+    }
+  ]
+}
