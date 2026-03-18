@@ -2,19 +2,19 @@
 
 ## IMMEDIATE (do first in next session)
 
-### 1. Push unpushed commits
-Three commits on main waiting to be pushed. Voice mapping and audio files.
+### 1. Generate 2 Nephi 25-33 with Samuel
+~49,400 chars. Stan has ~100k credits available. Use `samuel_pipeline.ipynb`. Configure `BOOK_ID='2nephi'`, `TOTAL_CHAPTERS=33`. Skip logic will handle ch 1-5 (already exist). Need to set start chapter or let it skip to 25.
 
-### 2. Test 2 Nephi 1-5 audio
-After push, verify Samuel plays correctly on bomreader.com for 2 Ne 1-5.
+### 2. Test audio playback on bomreader.com
+Verify Samuel plays correctly for 2 Ne 1-5 (currently deployed) and any newly generated chapters.
 
-## WHEN CREDITS RESET
+## WHEN MORE CREDITS AVAILABLE
 
-### 3. Generate remaining 2 Nephi (ch 6-33)
-~165,000 chars. Use `samuel_pipeline.ipynb` with Drive persistence. Configure: `BOOK_ID='2nephi'`, `TOTAL_CHAPTERS=33`. The skip logic will skip ch 1-5 (already on Drive from previous run) and generate 6-33.
+### 3. Generate remaining 2 Nephi (ch 6-24)
+~116,000 chars. The Isaiah quotation chapters (12-24). May fit in same credit cycle as #1 if budget allows.
 
 ### 4. Generate Jacob, Jarom, Omni, Words of Mormon
-~63,000 chars total. Fits in one credit cycle with buffer. After 2 Nephi is done (if credits remain) or in the following month.
+~63,000 chars total. Fills the gap between 1 Nephi and Mosiah.
 
 ### 5. Continue through remaining books
 Mosiah (164k), Alma (443k), Helaman (107k), 3 Nephi (173k), 4 Nephi (10k), Mormon (49k), Ether (85k), Moroni (32k). At 100k/month this is roughly 13 months of generation.

@@ -15,6 +15,7 @@ This directory contains structured project documentation organized by domain. Ea
 | 07 | `07-pending-tasks.md` | Prioritized task list — immediate, when credits reset, bugs, low priority |
 | 08 | `08-future-plans.md` | Spanish fork, Studying Edition, Read Along, shelved ideas |
 | 09 | `09-bugs-fixed.md` | Historical bug fixes, key design decisions |
+| 10 | `10-colometry.md` | Sense-line theory, settled principles, competing theories, "behold" analysis, review process |
 
 ## Update Protocol
 
