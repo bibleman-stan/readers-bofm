@@ -1,0 +1,256 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 14,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "iJpuSZDxZSBJHFSeavba",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "sister-m"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 168.434,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.573,
+      "type": "line",
+      "text": "And in that day, seven women shall take hold of one man, saying:",
+      "verse": "14:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.753,
+      "end": 9.468,
+      "type": "line",
+      "text": "We will eat our own bread, and wear our own apparel;",
+      "verse": "14:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.648,
+      "end": 14.106,
+      "type": "line",
+      "text": "only let us be called by thy name to take away our reproach.",
+      "verse": "14:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.286,
+      "end": 27.846,
+      "type": "line",
+      "text": "And in that day, seven women shall take hold of one man, saying: We will eat our own bread, and wear our own apparel; only let us be called by thy name to take away our reproach.",
+      "verse": "14:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 28.526,
+      "end": 33.216,
+      "type": "line",
+      "text": "In that day shall the branch of the Lord be beautiful and glorious;",
+      "verse": "14:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 33.396,
+      "end": 36.693,
+      "type": "line",
+      "text": "the fruit of the earth excellent and comely",
+      "verse": "14:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 36.873,
+      "end": 39.381,
+      "type": "line",
+      "text": "to them that are escaped of Israel.",
+      "verse": "14:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 39.561,
+      "end": 50.985,
+      "type": "line",
+      "text": "In that day shall the branch of the Lord be beautiful and glorious; and the fruit of the earth shall be excellent and comely for to them that are escaped of Israel.",
+      "verse": "14:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 51.665,
+      "end": 55.891,
+      "type": "line",
+      "text": "And it shall come to pass, they that are left in Zion",
+      "verse": "14:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 56.071,
+      "end": 59.136,
+      "type": "line",
+      "text": "and remain in Jerusalem shall be called holy,",
+      "verse": "14:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 59.316,
+      "end": 65.446,
+      "type": "line",
+      "text": "every one that is written among the living in Jerusalem\u2014",
+      "verse": "14:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 65.626,
+      "end": 83.32,
+      "type": "line",
+      "text": "And it shall come to pass, they that he that is are left in Zion and he that remaineth remain in Jerusalem shall be called holy, even every one that is written among the living in Jerusalem--",
+      "verse": "14:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 84.0,
+      "end": 88.319,
+      "type": "line",
+      "text": "When the Lord shall have washed away the filth of the daughters of Zion,",
+      "verse": "14:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 88.499,
+      "end": 93.375,
+      "type": "line",
+      "text": "and shall have purged the blood of Jerusalem from the midst thereof",
+      "verse": "14:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 93.555,
+      "end": 95.413,
+      "type": "line",
+      "text": "by the spirit of judgment",
+      "verse": "14:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 95.593,
+      "end": 97.915,
+      "type": "line",
+      "text": "and by the spirit of burning.",
+      "verse": "14:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 98.095,
+      "end": 110.309,
+      "type": "line",
+      "text": "When the Lord shall have washed away the filth of the daughters of Zion, and shall have purged the blood of Jerusalem from the midst thereof by the spirit of judgment and by the spirit of burning.",
+      "verse": "14:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 110.989,
+      "end": 112.847,
+      "type": "line",
+      "text": "And the Lord will create",
+      "verse": "14:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 113.027,
+      "end": 116.138,
+      "type": "line",
+      "text": "upon every dwelling-place of mount Zion,",
+      "verse": "14:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 116.318,
+      "end": 118.083,
+      "type": "line",
+      "text": "and upon her assemblies,",
+      "verse": "14:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 118.263,
+      "end": 120.167,
+      "type": "line",
+      "text": "a cloud and smoke by day",
+      "verse": "14:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 120.347,
+      "end": 124.016,
+      "type": "line",
+      "text": "and the shining of a flaming fire by night;",
+      "verse": "14:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 124.196,
+      "end": 128.097,
+      "type": "line",
+      "text": "for upon all the glory of Zion shall be a defence.",
+      "verse": "14:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 128.277,
+      "end": 145.646,
+      "type": "line",
+      "text": "And the Lord will create upon every dwelling place dwelling-place of mount Zion, and upon her assemblies, a cloud and smoke by day and the shining of a flaming fire by night; for upon all the glory of Zion shall be a defence.",
+      "verse": "14:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 146.326,
+      "end": 148.88,
+      "type": "line",
+      "text": "And there shall be a tabernacle",
+      "verse": "14:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 149.06,
+      "end": 152.171,
+      "type": "line",
+      "text": "for a shadow in the daytime from the heat,",
+      "verse": "14:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 152.351,
+      "end": 154.301,
+      "type": "line",
+      "text": "and for a place of refuge,",
+      "verse": "14:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 154.481,
+      "end": 157.407,
+      "type": "line",
+      "text": "and a covert from storm and from rain.",
+      "verse": "14:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 157.587,
+      "end": 167.757,
+      "type": "line",
+      "text": "And there shall be a tabernacle for a shadow in the daytime from the heat, and for a place of refuge, and for a covert from storm and from rain.",
+      "verse": "14:6",
+      "lineIndex": 31
+    }
+  ]
+}

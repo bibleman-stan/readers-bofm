@@ -1,0 +1,720 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 33,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "iJpuSZDxZSBJHFSeavba",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "sister-m"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 70.068,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 0.5,
+      "type": "line",
+      "text": "And now I, Nephi, cannot write all the things which were taught among my people;",
+      "verse": "33:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 0.68,
+      "end": 1.18,
+      "type": "line",
+      "text": "neither am I mighty in writing,",
+      "verse": "33:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 1.36,
+      "end": 1.86,
+      "type": "line",
+      "text": "like unto speaking;",
+      "verse": "33:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 2.04,
+      "end": 2.54,
+      "type": "line",
+      "text": "for when a man speaketh by the power of the Holy Ghost",
+      "verse": "33:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 2.72,
+      "end": 3.22,
+      "type": "line",
+      "text": "the power of the Holy Ghost carrieth it unto the hearts of the children of men.",
+      "verse": "33:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 3.9,
+      "end": 4.4,
+      "type": "line",
+      "text": "But behold, there are many that harden their hearts against the Holy Spirit,",
+      "verse": "33:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 4.58,
+      "end": 5.08,
+      "type": "line",
+      "text": "that it hath no place in them;",
+      "verse": "33:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 5.26,
+      "end": 5.76,
+      "type": "line",
+      "text": "wherefore, they cast many things away which are written",
+      "verse": "33:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 5.94,
+      "end": 6.44,
+      "type": "line",
+      "text": "and esteem them as things of naught.",
+      "verse": "33:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 7.12,
+      "end": 7.62,
+      "type": "line",
+      "text": "But I, Nephi, have written what I have written,",
+      "verse": "33:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 7.8,
+      "end": 8.3,
+      "type": "line",
+      "text": "and I esteem it as of great worth,",
+      "verse": "33:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 8.48,
+      "end": 8.98,
+      "type": "line",
+      "text": "and especially unto my people.",
+      "verse": "33:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 9.16,
+      "end": 9.66,
+      "type": "line",
+      "text": "For I pray continually for them by day,",
+      "verse": "33:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 9.84,
+      "end": 10.34,
+      "type": "line",
+      "text": "and mine eyes water my pillow by night, because of them;",
+      "verse": "33:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 10.52,
+      "end": 11.02,
+      "type": "line",
+      "text": "and I cry unto my God in faith,",
+      "verse": "33:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 11.2,
+      "end": 11.7,
+      "type": "line",
+      "text": "and I know that he will hear my cry.",
+      "verse": "33:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 12.38,
+      "end": 12.88,
+      "type": "line",
+      "text": "And I know that the Lord God will consecrate my prayers",
+      "verse": "33:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 13.06,
+      "end": 13.56,
+      "type": "line",
+      "text": "for the gain of my people.",
+      "verse": "33:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 13.74,
+      "end": 14.24,
+      "type": "line",
+      "text": "And the words which I have written in weakness",
+      "verse": "33:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 14.42,
+      "end": 14.92,
+      "type": "line",
+      "text": "will be made strong unto them;",
+      "verse": "33:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 15.1,
+      "end": 15.6,
+      "type": "line",
+      "text": "for it persuadeth them to do good;",
+      "verse": "33:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 15.78,
+      "end": 16.28,
+      "type": "line",
+      "text": "it maketh known unto them of their fathers;",
+      "verse": "33:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 16.46,
+      "end": 16.96,
+      "type": "line",
+      "text": "and it speaketh of Jesus,",
+      "verse": "33:4",
+      "lineIndex": 23
+    },
+    {
+      "start": 17.14,
+      "end": 17.64,
+      "type": "line",
+      "text": "and persuadeth them to believe in him,",
+      "verse": "33:4",
+      "lineIndex": 24
+    },
+    {
+      "start": 17.82,
+      "end": 18.32,
+      "type": "line",
+      "text": "and to endure to the end,",
+      "verse": "33:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 18.5,
+      "end": 19.0,
+      "type": "line",
+      "text": "which is life eternal.",
+      "verse": "33:4",
+      "lineIndex": 26
+    },
+    {
+      "start": 19.68,
+      "end": 20.18,
+      "type": "line",
+      "text": "And it speaketh harshly against sin,",
+      "verse": "33:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 20.36,
+      "end": 20.86,
+      "type": "line",
+      "text": "according to the plainness of the truth;",
+      "verse": "33:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 21.04,
+      "end": 21.54,
+      "type": "line",
+      "text": "wherefore, no man will be angry at the words which I have written",
+      "verse": "33:5",
+      "lineIndex": 29
+    },
+    {
+      "start": 21.72,
+      "end": 22.22,
+      "type": "line",
+      "text": "save he shall be of the spirit of the devil.",
+      "verse": "33:5",
+      "lineIndex": 30
+    },
+    {
+      "start": 22.9,
+      "end": 23.4,
+      "type": "line",
+      "text": "I glory in plainness;",
+      "verse": "33:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 23.58,
+      "end": 24.08,
+      "type": "line",
+      "text": "I glory in truth;",
+      "verse": "33:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 24.26,
+      "end": 24.76,
+      "type": "line",
+      "text": "I glory in my Jesus,",
+      "verse": "33:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 24.94,
+      "end": 25.44,
+      "type": "line",
+      "text": "for he hath redeemed my soul from hell.",
+      "verse": "33:6",
+      "lineIndex": 35
+    },
+    {
+      "start": 26.12,
+      "end": 26.62,
+      "type": "line",
+      "text": "I have charity for my people,",
+      "verse": "33:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 26.8,
+      "end": 27.3,
+      "type": "line",
+      "text": "and great faith in Christ",
+      "verse": "33:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 27.48,
+      "end": 27.98,
+      "type": "line",
+      "text": "that I shall meet many souls spotless at his judgment-seat.",
+      "verse": "33:7",
+      "lineIndex": 38
+    },
+    {
+      "start": 28.66,
+      "end": 29.16,
+      "type": "line",
+      "text": "I have charity for the Jew\u2014",
+      "verse": "33:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 29.34,
+      "end": 29.84,
+      "type": "line",
+      "text": "I say Jew, because I mean them from whence I came.",
+      "verse": "33:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 30.52,
+      "end": 31.02,
+      "type": "line",
+      "text": "I also have charity for the Gentiles.",
+      "verse": "33:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 31.2,
+      "end": 31.7,
+      "type": "line",
+      "text": "But behold, for none of these can I hope",
+      "verse": "33:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 31.88,
+      "end": 32.38,
+      "type": "line",
+      "text": "except they shall be reconciled unto Christ,",
+      "verse": "33:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 32.56,
+      "end": 33.06,
+      "type": "line",
+      "text": "and enter into the narrow gate,",
+      "verse": "33:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 33.24,
+      "end": 33.74,
+      "type": "line",
+      "text": "and walk in the strait path which leads to life,",
+      "verse": "33:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 33.92,
+      "end": 34.42,
+      "type": "line",
+      "text": "and continue in the path",
+      "verse": "33:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 34.6,
+      "end": 35.1,
+      "type": "line",
+      "text": "until the end of the day of probation.",
+      "verse": "33:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 35.78,
+      "end": 37.823,
+      "type": "line",
+      "text": "And now, my beloved brethren,",
+      "verse": "33:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 38.003,
+      "end": 38.503,
+      "type": "line",
+      "text": "and also Jew,",
+      "verse": "33:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 38.683,
+      "end": 39.183,
+      "type": "line",
+      "text": "and all ye ends of the earth,",
+      "verse": "33:10",
+      "lineIndex": 51
+    },
+    {
+      "start": 39.363,
+      "end": 39.863,
+      "type": "line",
+      "text": "hearken unto these words and believe in Christ;",
+      "verse": "33:10",
+      "lineIndex": 52
+    },
+    {
+      "start": 40.043,
+      "end": 40.543,
+      "type": "line",
+      "text": "and if ye believe not in these words believe in Christ.",
+      "verse": "33:10",
+      "lineIndex": 53
+    },
+    {
+      "start": 40.723,
+      "end": 41.223,
+      "type": "line",
+      "text": "And if ye shall believe in Christ",
+      "verse": "33:10",
+      "lineIndex": 54
+    },
+    {
+      "start": 41.403,
+      "end": 41.903,
+      "type": "line",
+      "text": "ye will believe in these words,",
+      "verse": "33:10",
+      "lineIndex": 55
+    },
+    {
+      "start": 42.083,
+      "end": 42.583,
+      "type": "line",
+      "text": "for they are the words of Christ,",
+      "verse": "33:10",
+      "lineIndex": 56
+    },
+    {
+      "start": 42.763,
+      "end": 43.263,
+      "type": "line",
+      "text": "and he hath given them unto me;",
+      "verse": "33:10",
+      "lineIndex": 57
+    },
+    {
+      "start": 43.443,
+      "end": 43.943,
+      "type": "line",
+      "text": "and they teach all men that they should do good.",
+      "verse": "33:10",
+      "lineIndex": 58
+    },
+    {
+      "start": 44.623,
+      "end": 45.123,
+      "type": "line",
+      "text": "And if they are not the words of Christ,",
+      "verse": "33:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 45.303,
+      "end": 45.803,
+      "type": "line",
+      "text": "judge ye\u2014",
+      "verse": "33:11",
+      "lineIndex": 60
+    },
+    {
+      "start": 45.983,
+      "end": 46.483,
+      "type": "line",
+      "text": "for Christ will show unto you,",
+      "verse": "33:11",
+      "lineIndex": 61
+    },
+    {
+      "start": 46.663,
+      "end": 47.163,
+      "type": "line",
+      "text": "with power and great glory,",
+      "verse": "33:11",
+      "lineIndex": 62
+    },
+    {
+      "start": 47.343,
+      "end": 47.843,
+      "type": "line",
+      "text": "that they are his words,",
+      "verse": "33:11",
+      "lineIndex": 63
+    },
+    {
+      "start": 48.023,
+      "end": 48.523,
+      "type": "line",
+      "text": "at the last day;",
+      "verse": "33:11",
+      "lineIndex": 64
+    },
+    {
+      "start": 48.703,
+      "end": 49.203,
+      "type": "line",
+      "text": "and you and I shall stand face to face before his bar;",
+      "verse": "33:11",
+      "lineIndex": 65
+    },
+    {
+      "start": 49.383,
+      "end": 49.883,
+      "type": "line",
+      "text": "and ye shall know that I have been commanded of him",
+      "verse": "33:11",
+      "lineIndex": 66
+    },
+    {
+      "start": 50.063,
+      "end": 50.563,
+      "type": "line",
+      "text": "to write these things,",
+      "verse": "33:11",
+      "lineIndex": 67
+    },
+    {
+      "start": 50.743,
+      "end": 51.243,
+      "type": "line",
+      "text": "notwithstanding my weakness.",
+      "verse": "33:11",
+      "lineIndex": 68
+    },
+    {
+      "start": 51.923,
+      "end": 52.423,
+      "type": "line",
+      "text": "And I pray the Father in the name of Christ",
+      "verse": "33:12",
+      "lineIndex": 69
+    },
+    {
+      "start": 52.603,
+      "end": 53.103,
+      "type": "line",
+      "text": "that many of us,",
+      "verse": "33:12",
+      "lineIndex": 70
+    },
+    {
+      "start": 53.283,
+      "end": 53.783,
+      "type": "line",
+      "text": "if not all,",
+      "verse": "33:12",
+      "lineIndex": 71
+    },
+    {
+      "start": 53.963,
+      "end": 54.463,
+      "type": "line",
+      "text": "may be saved in his kingdom",
+      "verse": "33:12",
+      "lineIndex": 72
+    },
+    {
+      "start": 54.643,
+      "end": 55.143,
+      "type": "line",
+      "text": "at that great and last day.",
+      "verse": "33:12",
+      "lineIndex": 73
+    },
+    {
+      "start": 55.823,
+      "end": 57.866,
+      "type": "line",
+      "text": "And now, my beloved brethren,",
+      "verse": "33:13",
+      "lineIndex": 74
+    },
+    {
+      "start": 58.046,
+      "end": 58.546,
+      "type": "line",
+      "text": "all those who are of the house of Israel,",
+      "verse": "33:13",
+      "lineIndex": 75
+    },
+    {
+      "start": 58.726,
+      "end": 59.226,
+      "type": "line",
+      "text": "and all ye ends of the earth,",
+      "verse": "33:13",
+      "lineIndex": 76
+    },
+    {
+      "start": 59.406,
+      "end": 59.906,
+      "type": "line",
+      "text": "I speak unto you as the voice of one crying from the dust:",
+      "verse": "33:13",
+      "lineIndex": 77
+    },
+    {
+      "start": 60.086,
+      "end": 60.586,
+      "type": "line",
+      "text": "Farewell until that great day shall come.",
+      "verse": "33:13",
+      "lineIndex": 78
+    },
+    {
+      "start": 61.266,
+      "end": 61.766,
+      "type": "line",
+      "text": "And you that will not partake of the goodness of God,",
+      "verse": "33:14",
+      "lineIndex": 79
+    },
+    {
+      "start": 61.946,
+      "end": 62.446,
+      "type": "line",
+      "text": "and respect the words of the Jews,",
+      "verse": "33:14",
+      "lineIndex": 80
+    },
+    {
+      "start": 62.626,
+      "end": 63.126,
+      "type": "line",
+      "text": "and also my words,",
+      "verse": "33:14",
+      "lineIndex": 81
+    },
+    {
+      "start": 63.306,
+      "end": 63.806,
+      "type": "line",
+      "text": "and the words which shall proceed forth out of the mouth of the Lamb of God,",
+      "verse": "33:14",
+      "lineIndex": 82
+    },
+    {
+      "start": 63.986,
+      "end": 64.486,
+      "type": "line",
+      "text": "behold, I bid you an everlasting farewell,",
+      "verse": "33:14",
+      "lineIndex": 83
+    },
+    {
+      "start": 64.666,
+      "end": 65.166,
+      "type": "line",
+      "text": "for these words shall condemn you at the last day.",
+      "verse": "33:14",
+      "lineIndex": 84
+    },
+    {
+      "start": 65.846,
+      "end": 66.346,
+      "type": "line",
+      "text": "For what I seal on earth,",
+      "verse": "33:15",
+      "lineIndex": 85
+    },
+    {
+      "start": 66.526,
+      "end": 67.026,
+      "type": "line",
+      "text": "shall be brought against you at the judgment bar;",
+      "verse": "33:15",
+      "lineIndex": 86
+    },
+    {
+      "start": 67.206,
+      "end": 67.706,
+      "type": "line",
+      "text": "for thus hath the Lord commanded me,",
+      "verse": "33:15",
+      "lineIndex": 87
+    },
+    {
+      "start": 67.886,
+      "end": 68.386,
+      "type": "line",
+      "text": "and I must obey.",
+      "verse": "33:15",
+      "lineIndex": 88
+    },
+    {
+      "start": 68.566,
+      "end": 69.402,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "33:15",
+      "lineIndex": 89
+    }
+  ]
+}

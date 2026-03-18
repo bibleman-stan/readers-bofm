@@ -1,0 +1,728 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 30,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "iJpuSZDxZSBJHFSeavba",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "sister-m"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 126.533,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 0.5,
+      "type": "line",
+      "text": "And now behold, my beloved brethren,",
+      "verse": "30:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 0.68,
+      "end": 1.18,
+      "type": "line",
+      "text": "I would speak unto you;",
+      "verse": "30:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 1.36,
+      "end": 1.86,
+      "type": "line",
+      "text": "for I, Nephi, would not suffer that ye should suppose",
+      "verse": "30:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 2.04,
+      "end": 2.54,
+      "type": "line",
+      "text": "that ye are more righteous than the Gentiles shall be.",
+      "verse": "30:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 2.72,
+      "end": 3.22,
+      "type": "line",
+      "text": "For behold, except ye shall keep the commandments of God",
+      "verse": "30:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 3.4,
+      "end": 3.9,
+      "type": "line",
+      "text": "ye shall all likewise perish;",
+      "verse": "30:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 4.08,
+      "end": 4.58,
+      "type": "line",
+      "text": "and because of the words which have been spoken",
+      "verse": "30:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 4.76,
+      "end": 5.26,
+      "type": "line",
+      "text": "ye need not suppose that the Gentiles are utterly destroyed.",
+      "verse": "30:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 5.94,
+      "end": 8.308,
+      "type": "line",
+      "text": "For behold, I say unto you",
+      "verse": "30:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 8.488,
+      "end": 8.988,
+      "type": "line",
+      "text": "that as many of the Gentiles as will repent",
+      "verse": "30:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 9.168,
+      "end": 9.668,
+      "type": "line",
+      "text": "are the covenant people of the Lord;",
+      "verse": "30:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 9.848,
+      "end": 10.348,
+      "type": "line",
+      "text": "and as many of the Jews as will not repent",
+      "verse": "30:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 10.528,
+      "end": 11.028,
+      "type": "line",
+      "text": "shall be cast off;",
+      "verse": "30:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 11.208,
+      "end": 11.708,
+      "type": "line",
+      "text": "for the Lord covenanteth with none",
+      "verse": "30:2",
+      "lineIndex": 14
+    },
+    {
+      "start": 11.888,
+      "end": 12.388,
+      "type": "line",
+      "text": "save it be with them that repent",
+      "verse": "30:2",
+      "lineIndex": 15
+    },
+    {
+      "start": 12.568,
+      "end": 13.068,
+      "type": "line",
+      "text": "and believe in his Son,",
+      "verse": "30:2",
+      "lineIndex": 16
+    },
+    {
+      "start": 13.248,
+      "end": 13.748,
+      "type": "line",
+      "text": "who is the Holy One of Israel.",
+      "verse": "30:2",
+      "lineIndex": 17
+    },
+    {
+      "start": 14.428,
+      "end": 14.928,
+      "type": "line",
+      "text": "And now, I would prophesy somewhat more",
+      "verse": "30:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 15.108,
+      "end": 15.608,
+      "type": "line",
+      "text": "concerning the Jews and the Gentiles.",
+      "verse": "30:3",
+      "lineIndex": 19
+    },
+    {
+      "start": 15.788,
+      "end": 16.288,
+      "type": "line",
+      "text": "For after the book of which I have spoken shall come forth,",
+      "verse": "30:3",
+      "lineIndex": 20
+    },
+    {
+      "start": 16.468,
+      "end": 16.968,
+      "type": "line",
+      "text": "and be written unto the Gentiles,",
+      "verse": "30:3",
+      "lineIndex": 21
+    },
+    {
+      "start": 17.148,
+      "end": 17.648,
+      "type": "line",
+      "text": "and sealed up again unto the Lord,",
+      "verse": "30:3",
+      "lineIndex": 22
+    },
+    {
+      "start": 17.828,
+      "end": 18.328,
+      "type": "line",
+      "text": "there shall be many which shall believe the words which are written;",
+      "verse": "30:3",
+      "lineIndex": 23
+    },
+    {
+      "start": 18.508,
+      "end": 19.008,
+      "type": "line",
+      "text": "and they shall carry them forth unto the remnant of our seed.",
+      "verse": "30:3",
+      "lineIndex": 24
+    },
+    {
+      "start": 19.688,
+      "end": 20.188,
+      "type": "line",
+      "text": "And then shall the remnant of our seed know concerning us,",
+      "verse": "30:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 20.368,
+      "end": 20.868,
+      "type": "line",
+      "text": "how that we came out from Jerusalem,",
+      "verse": "30:4",
+      "lineIndex": 26
+    },
+    {
+      "start": 21.048,
+      "end": 21.548,
+      "type": "line",
+      "text": "and that they are descendants of the Jews.",
+      "verse": "30:4",
+      "lineIndex": 27
+    },
+    {
+      "start": 22.228,
+      "end": 22.728,
+      "type": "line",
+      "text": "And the gospel of Jesus Christ shall be declared among them;",
+      "verse": "30:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 22.908,
+      "end": 23.408,
+      "type": "line",
+      "text": "wherefore, they shall be restored unto the knowledge of their fathers,",
+      "verse": "30:5",
+      "lineIndex": 29
+    },
+    {
+      "start": 23.588,
+      "end": 24.088,
+      "type": "line",
+      "text": "and also to the knowledge of Jesus Christ,",
+      "verse": "30:5",
+      "lineIndex": 30
+    },
+    {
+      "start": 24.268,
+      "end": 24.768,
+      "type": "line",
+      "text": "which was had among their fathers.",
+      "verse": "30:5",
+      "lineIndex": 31
+    },
+    {
+      "start": 25.448,
+      "end": 25.948,
+      "type": "line",
+      "text": "And then shall they rejoice;",
+      "verse": "30:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 26.128,
+      "end": 26.628,
+      "type": "line",
+      "text": "for they shall know that it is a blessing unto them",
+      "verse": "30:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 26.808,
+      "end": 27.308,
+      "type": "line",
+      "text": "from the hand of God;",
+      "verse": "30:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 27.488,
+      "end": 27.988,
+      "type": "line",
+      "text": "and their scales of darkness shall begin to fall from their eyes;",
+      "verse": "30:6",
+      "lineIndex": 35
+    },
+    {
+      "start": 28.168,
+      "end": 28.668,
+      "type": "line",
+      "text": "and many generations shall not pass away among them,",
+      "verse": "30:6",
+      "lineIndex": 36
+    },
+    {
+      "start": 28.848,
+      "end": 29.348,
+      "type": "line",
+      "text": "save they shall be a pure and a delightsome people.",
+      "verse": "30:6",
+      "lineIndex": 37
+    },
+    {
+      "start": 30.028,
+      "end": 30.528,
+      "type": "line",
+      "text": "And it shall come to pass that the Jews which are scattered also shall begin to believe in Christ;",
+      "verse": "30:7",
+      "lineIndex": 38
+    },
+    {
+      "start": 30.708,
+      "end": 31.208,
+      "type": "line",
+      "text": "and they shall begin to gather in upon the face of the land;",
+      "verse": "30:7",
+      "lineIndex": 39
+    },
+    {
+      "start": 31.388,
+      "end": 31.888,
+      "type": "line",
+      "text": "and as many as shall believe in Christ",
+      "verse": "30:7",
+      "lineIndex": 40
+    },
+    {
+      "start": 32.068,
+      "end": 32.568,
+      "type": "line",
+      "text": "shall also become a delightsome people.",
+      "verse": "30:7",
+      "lineIndex": 41
+    },
+    {
+      "start": 33.248,
+      "end": 33.748,
+      "type": "line",
+      "text": "And it shall come to pass that the Lord God shall commence his work",
+      "verse": "30:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 33.928,
+      "end": 34.428,
+      "type": "line",
+      "text": "among all nations, kindreds, tongues, and people,",
+      "verse": "30:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 34.608,
+      "end": 35.108,
+      "type": "line",
+      "text": "to bring about the restoration of his people upon the earth.",
+      "verse": "30:8",
+      "lineIndex": 44
+    },
+    {
+      "start": 35.788,
+      "end": 36.288,
+      "type": "line",
+      "text": "And with righteousness shall the Lord God judge the poor,",
+      "verse": "30:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 36.468,
+      "end": 36.968,
+      "type": "line",
+      "text": "and reprove with equity for the meek of the earth.",
+      "verse": "30:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 37.148,
+      "end": 37.648,
+      "type": "line",
+      "text": "And he shall smite the earth with the rod of his mouth;",
+      "verse": "30:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 37.828,
+      "end": 41.636,
+      "type": "line",
+      "text": "and with the breath of his lips shall he slay the wicked.",
+      "verse": "30:9",
+      "lineIndex": 49
+    },
+    {
+      "start": 41.816,
+      "end": 42.316,
+      "type": "line",
+      "text": "But And with righteousness shall he the Lord God judge the poor, and reprove with equity for the meek of the earth. And he shall smite the earth with the rod of his mouth; and with the breath of his lips shall he slay the wicked.",
+      "verse": "30:9",
+      "lineIndex": 50
+    },
+    {
+      "start": 42.996,
+      "end": 43.496,
+      "type": "line",
+      "text": "For the time speedily cometh",
+      "verse": "30:10",
+      "lineIndex": 52
+    },
+    {
+      "start": 43.676,
+      "end": 44.176,
+      "type": "line",
+      "text": "that the Lord God shall cause a great division among the people,",
+      "verse": "30:10",
+      "lineIndex": 53
+    },
+    {
+      "start": 44.356,
+      "end": 44.856,
+      "type": "line",
+      "text": "and the wicked will he destroy;",
+      "verse": "30:10",
+      "lineIndex": 54
+    },
+    {
+      "start": 45.036,
+      "end": 45.536,
+      "type": "line",
+      "text": "and he will spare his people,",
+      "verse": "30:10",
+      "lineIndex": 55
+    },
+    {
+      "start": 45.716,
+      "end": 46.216,
+      "type": "line",
+      "text": "yea, even if it so be that he must destroy the wicked by fire.",
+      "verse": "30:10",
+      "lineIndex": 56
+    },
+    {
+      "start": 46.896,
+      "end": 50.611,
+      "type": "line",
+      "text": "And righteousness shall be the girdle of his loins,",
+      "verse": "30:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 50.791,
+      "end": 53.81,
+      "type": "line",
+      "text": "and faithfulness the girdle of his reins.",
+      "verse": "30:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 53.99,
+      "end": 61.513,
+      "type": "line",
+      "text": "And righteousness shall be the girdle of his loins, and faithfulness the girdle of his reins.",
+      "verse": "30:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 62.193,
+      "end": 62.693,
+      "type": "line",
+      "text": "And then shall the wolf dwell with the lamb;",
+      "verse": "30:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 62.873,
+      "end": 65.752,
+      "type": "line",
+      "text": "and the leopard shall lie down with the kid,",
+      "verse": "30:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 65.932,
+      "end": 66.432,
+      "type": "line",
+      "text": "and the calf, and the young lion, and the fatling, together;",
+      "verse": "30:12",
+      "lineIndex": 62
+    },
+    {
+      "start": 66.612,
+      "end": 69.445,
+      "type": "line",
+      "text": "and a little child shall lead them.",
+      "verse": "30:12",
+      "lineIndex": 63
+    },
+    {
+      "start": 69.625,
+      "end": 70.125,
+      "type": "line",
+      "text": "And then shall the wolf also shall dwell with the lamb; and the leopard shall lie down with the kid, and the calf, and the young lion, and the fatling, together; and a little child shall lead them.",
+      "verse": "30:12",
+      "lineIndex": 64
+    },
+    {
+      "start": 70.805,
+      "end": 73.173,
+      "type": "line",
+      "text": "And the cow and the bear shall feed;",
+      "verse": "30:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 73.353,
+      "end": 76.279,
+      "type": "line",
+      "text": "their young ones shall lie down together;",
+      "verse": "30:13",
+      "lineIndex": 66
+    },
+    {
+      "start": 76.459,
+      "end": 79.524,
+      "type": "line",
+      "text": "and the lion shall eat straw like the ox.",
+      "verse": "30:13",
+      "lineIndex": 67
+    },
+    {
+      "start": 79.704,
+      "end": 88.342,
+      "type": "line",
+      "text": "And the cow and the bear shall feed; their young ones shall lie down together; and the lion shall eat straw like the ox.",
+      "verse": "30:13",
+      "lineIndex": 68
+    },
+    {
+      "start": 89.022,
+      "end": 92.923,
+      "type": "line",
+      "text": "And the sucking child shall play on the hole of the asp,",
+      "verse": "30:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 93.103,
+      "end": 97.747,
+      "type": "line",
+      "text": "and the weaned child shall put his hand on the cockatrice's den.",
+      "verse": "30:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 97.927,
+      "end": 107.633,
+      "type": "line",
+      "text": "And the sucking child shall play on the hole of the asp, and the weaned child shall put his hand on the cockatrice' cockatrice's den.",
+      "verse": "30:14",
+      "lineIndex": 71
+    },
+    {
+      "start": 108.313,
+      "end": 108.813,
+      "type": "line",
+      "text": "They shall not hurt nor destroy in all my holy mountain;",
+      "verse": "30:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 108.993,
+      "end": 109.493,
+      "type": "line",
+      "text": "for the earth shall be full of the knowledge of the Lord",
+      "verse": "30:15",
+      "lineIndex": 73
+    },
+    {
+      "start": 109.673,
+      "end": 111.949,
+      "type": "line",
+      "text": "as the waters cover the sea.",
+      "verse": "30:15",
+      "lineIndex": 74
+    },
+    {
+      "start": 112.129,
+      "end": 112.629,
+      "type": "line",
+      "text": "They shall not hurt nor destroy in all my holy mountain; for the earth shall be full of the knowledge of the Lord as the waters cover the sea.",
+      "verse": "30:15",
+      "lineIndex": 75
+    },
+    {
+      "start": 113.309,
+      "end": 113.809,
+      "type": "line",
+      "text": "Wherefore, the things of all nations shall be made known;",
+      "verse": "30:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 113.989,
+      "end": 114.489,
+      "type": "line",
+      "text": "yea, all things shall be made known unto the children of men.",
+      "verse": "30:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 115.169,
+      "end": 115.669,
+      "type": "line",
+      "text": "There is nothing which is secret",
+      "verse": "30:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 115.849,
+      "end": 116.349,
+      "type": "line",
+      "text": "save it shall be revealed;",
+      "verse": "30:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 116.529,
+      "end": 117.029,
+      "type": "line",
+      "text": "there is no work of darkness",
+      "verse": "30:17",
+      "lineIndex": 80
+    },
+    {
+      "start": 117.209,
+      "end": 117.709,
+      "type": "line",
+      "text": "save it shall be made manifest in the light;",
+      "verse": "30:17",
+      "lineIndex": 81
+    },
+    {
+      "start": 117.889,
+      "end": 118.389,
+      "type": "line",
+      "text": "and there is nothing which is sealed",
+      "verse": "30:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 118.569,
+      "end": 119.069,
+      "type": "line",
+      "text": "upon the earth save it shall be loosed.",
+      "verse": "30:17",
+      "lineIndex": 83
+    },
+    {
+      "start": 119.749,
+      "end": 120.249,
+      "type": "line",
+      "text": "Wherefore, all things which have been revealed",
+      "verse": "30:18",
+      "lineIndex": 84
+    },
+    {
+      "start": 120.429,
+      "end": 120.929,
+      "type": "line",
+      "text": "unto the children of men",
+      "verse": "30:18",
+      "lineIndex": 85
+    },
+    {
+      "start": 121.109,
+      "end": 121.609,
+      "type": "line",
+      "text": "shall at that day be revealed;",
+      "verse": "30:18",
+      "lineIndex": 86
+    },
+    {
+      "start": 121.789,
+      "end": 122.289,
+      "type": "line",
+      "text": "and Satan shall have power over the hearts of the children of men",
+      "verse": "30:18",
+      "lineIndex": 87
+    },
+    {
+      "start": 122.469,
+      "end": 122.969,
+      "type": "line",
+      "text": "no more, for a long time.",
+      "verse": "30:18",
+      "lineIndex": 88
+    },
+    {
+      "start": 123.149,
+      "end": 125.192,
+      "type": "line",
+      "text": "And now, my beloved brethren,",
+      "verse": "30:18",
+      "lineIndex": 89
+    },
+    {
+      "start": 125.372,
+      "end": 125.872,
+      "type": "line",
+      "text": "I make an end of my sayings.",
+      "verse": "30:18",
+      "lineIndex": 90
+    }
+  ]
+}

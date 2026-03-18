@@ -1,0 +1,552 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 7,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "iJpuSZDxZSBJHFSeavba",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "sister-m"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 353.736,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.322,
+      "type": "line",
+      "text": "Yea, for thus saith the Lord:",
+      "verse": "7:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.502,
+      "end": 3.988,
+      "type": "line",
+      "text": "Have I put thee away,",
+      "verse": "7:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 4.168,
+      "end": 6.351,
+      "type": "line",
+      "text": "or have I cast thee off forever?",
+      "verse": "7:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 6.531,
+      "end": 8.203,
+      "type": "line",
+      "text": "For thus saith the Lord:",
+      "verse": "7:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 8.383,
+      "end": 11.309,
+      "type": "line",
+      "text": "Where is the bill of your mother's divorcement?",
+      "verse": "7:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 11.489,
+      "end": 13.532,
+      "type": "line",
+      "text": "To whom have I put thee away,",
+      "verse": "7:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 13.712,
+      "end": 16.963,
+      "type": "line",
+      "text": "or to which of my creditors have I sold you?",
+      "verse": "7:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 17.143,
+      "end": 19.372,
+      "type": "line",
+      "text": "Yea, to whom have I sold you?",
+      "verse": "7:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 19.552,
+      "end": 24.057,
+      "type": "line",
+      "text": "Behold, for your iniquities have ye sold yourselves,",
+      "verse": "7:1",
+      "lineIndex": 9
+    },
+    {
+      "start": 24.237,
+      "end": 28.045,
+      "type": "line",
+      "text": "and for your transgressions is your mother put away.",
+      "verse": "7:1",
+      "lineIndex": 10
+    },
+    {
+      "start": 28.225,
+      "end": 58.039,
+      "type": "line",
+      "text": "Yea, for thus saith the Lord: Have I put thee away, or have I cast thee off forever? For thus saith the Lord: Where is the bill of your mother's divorcement? To whom have I have put thee away, or to which of my creditors is it have I sold you? Yea, to whom have I have sold you? Behold, for your iniquities have ye sold yourselves, and for your transgressions is your mother put away.",
+      "verse": "7:1",
+      "lineIndex": 11
+    },
+    {
+      "start": 58.719,
+      "end": 61.738,
+      "type": "line",
+      "text": "Wherefore, when I came, there was no man;",
+      "verse": "7:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 61.918,
+      "end": 65.447,
+      "type": "line",
+      "text": "when I called, yea, there was none to answer.",
+      "verse": "7:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 65.627,
+      "end": 66.974,
+      "type": "line",
+      "text": "O house of Israel,",
+      "verse": "7:2",
+      "lineIndex": 14
+    },
+    {
+      "start": 67.154,
+      "end": 71.101,
+      "type": "line",
+      "text": "is my hand shortened at all that it cannot redeem,",
+      "verse": "7:2",
+      "lineIndex": 15
+    },
+    {
+      "start": 71.281,
+      "end": 73.603,
+      "type": "line",
+      "text": "or have I no power to deliver?",
+      "verse": "7:2",
+      "lineIndex": 16
+    },
+    {
+      "start": 73.783,
+      "end": 77.591,
+      "type": "line",
+      "text": "Behold, at my rebuke I dry up the sea,",
+      "verse": "7:2",
+      "lineIndex": 17
+    },
+    {
+      "start": 77.771,
+      "end": 80.465,
+      "type": "line",
+      "text": "I make their rivers a wilderness",
+      "verse": "7:2",
+      "lineIndex": 18
+    },
+    {
+      "start": 80.645,
+      "end": 84.825,
+      "type": "line",
+      "text": "and their fish to stink because the waters are dried up,",
+      "verse": "7:2",
+      "lineIndex": 19
+    },
+    {
+      "start": 85.005,
+      "end": 87.466,
+      "type": "line",
+      "text": "and they die because of thirst.",
+      "verse": "7:2",
+      "lineIndex": 20
+    },
+    {
+      "start": 87.646,
+      "end": 119.875,
+      "type": "line",
+      "text": "Wherefore, when I came, there was there no man; when I called, yea, there was there none to answer. O house of Israel, is my hand shortened at all that it cannot redeem, or have I no power to deliver? Behold, at my rebuke I dry up the sea, I make the their rivers a wilderness and their fish stinketh, to stink because there is no water, the waters are dried up, and dieth for they die because of thirst.",
+      "verse": "7:2",
+      "lineIndex": 21
+    },
+    {
+      "start": 120.555,
+      "end": 123.249,
+      "type": "line",
+      "text": "I clothe the heavens with blackness,",
+      "verse": "7:3",
+      "lineIndex": 22
+    },
+    {
+      "start": 123.429,
+      "end": 126.308,
+      "type": "line",
+      "text": "and I make sackcloth their covering.",
+      "verse": "7:3",
+      "lineIndex": 23
+    },
+    {
+      "start": 126.488,
+      "end": 131.643,
+      "type": "line",
+      "text": "I clothe the heavens with blackness, and I make sackcloth their covering.",
+      "verse": "7:3",
+      "lineIndex": 24
+    },
+    {
+      "start": 132.323,
+      "end": 135.574,
+      "type": "line",
+      "text": "The Lord God hath given me the tongue of the learned,",
+      "verse": "7:4",
+      "lineIndex": 26
+    },
+    {
+      "start": 135.754,
+      "end": 140.073,
+      "type": "line",
+      "text": "that I should know how to speak a word in season unto thee,",
+      "verse": "7:4",
+      "lineIndex": 27
+    },
+    {
+      "start": 140.253,
+      "end": 141.6,
+      "type": "line",
+      "text": "O house of Israel.",
+      "verse": "7:4",
+      "lineIndex": 28
+    },
+    {
+      "start": 141.78,
+      "end": 144.984,
+      "type": "line",
+      "text": "When ye are weary he waketh morning by morning.",
+      "verse": "7:4",
+      "lineIndex": 29
+    },
+    {
+      "start": 145.164,
+      "end": 148.043,
+      "type": "line",
+      "text": "He waketh mine ear to hear as the learned.",
+      "verse": "7:4",
+      "lineIndex": 30
+    },
+    {
+      "start": 148.223,
+      "end": 168.331,
+      "type": "line",
+      "text": "The Lord God hath given me the tongue of the learned, that I should know how to speak a word in season to him that is unto thee, O house of Israel. When ye are weary he wakeneth waketh morning by morning. He wakeneth waketh mine ear to hear as the learned.",
+      "verse": "7:4",
+      "lineIndex": 31
+    },
+    {
+      "start": 169.011,
+      "end": 171.565,
+      "type": "line",
+      "text": "The Lord God hath opened mine ear,",
+      "verse": "7:5",
+      "lineIndex": 32
+    },
+    {
+      "start": 171.745,
+      "end": 173.835,
+      "type": "line",
+      "text": "and I was not rebellious,",
+      "verse": "7:5",
+      "lineIndex": 33
+    },
+    {
+      "start": 174.015,
+      "end": 175.548,
+      "type": "line",
+      "text": "neither turned away back.",
+      "verse": "7:5",
+      "lineIndex": 34
+    },
+    {
+      "start": 175.728,
+      "end": 181.765,
+      "type": "line",
+      "text": "The Lord God hath opened mine ear, and I was not rebellious, neither turned away back.",
+      "verse": "7:5",
+      "lineIndex": 35
+    },
+    {
+      "start": 182.445,
+      "end": 184.767,
+      "type": "line",
+      "text": "I gave my back to the smiter,",
+      "verse": "7:6",
+      "lineIndex": 36
+    },
+    {
+      "start": 184.947,
+      "end": 188.662,
+      "type": "line",
+      "text": "and my cheeks to them that plucked off the hair.",
+      "verse": "7:6",
+      "lineIndex": 37
+    },
+    {
+      "start": 188.842,
+      "end": 191.721,
+      "type": "line",
+      "text": "I hid not my face from shame and spitting.",
+      "verse": "7:6",
+      "lineIndex": 38
+    },
+    {
+      "start": 191.901,
+      "end": 202.071,
+      "type": "line",
+      "text": "I gave my back to the smiters, smiter, and my cheeks to them that plucked off the hair. I hid not my face from shame and spitting.",
+      "verse": "7:6",
+      "lineIndex": 39
+    },
+    {
+      "start": 202.751,
+      "end": 205.212,
+      "type": "line",
+      "text": "For the Lord God will help me,",
+      "verse": "7:7",
+      "lineIndex": 41
+    },
+    {
+      "start": 205.392,
+      "end": 208.271,
+      "type": "line",
+      "text": "therefore shall I not be confounded.",
+      "verse": "7:7",
+      "lineIndex": 42
+    },
+    {
+      "start": 208.451,
+      "end": 211.562,
+      "type": "line",
+      "text": "Therefore have I set my face like a flint,",
+      "verse": "7:7",
+      "lineIndex": 43
+    },
+    {
+      "start": 211.742,
+      "end": 214.668,
+      "type": "line",
+      "text": "and I know that I shall not be ashamed.",
+      "verse": "7:7",
+      "lineIndex": 44
+    },
+    {
+      "start": 214.848,
+      "end": 225.436,
+      "type": "line",
+      "text": "For the Lord God will help me, therefore shall I not be confounded. Therefore have I set my face like a flint, and I know that I shall not be ashamed.",
+      "verse": "7:7",
+      "lineIndex": 45
+    },
+    {
+      "start": 226.116,
+      "end": 230.203,
+      "type": "line",
+      "text": "And the Lord is near, and he justifieth me.",
+      "verse": "7:8",
+      "lineIndex": 46
+    },
+    {
+      "start": 230.383,
+      "end": 232.101,
+      "type": "line",
+      "text": "Who will contend with me?",
+      "verse": "7:8",
+      "lineIndex": 47
+    },
+    {
+      "start": 232.281,
+      "end": 233.86,
+      "type": "line",
+      "text": "Let us stand together.",
+      "verse": "7:8",
+      "lineIndex": 48
+    },
+    {
+      "start": 234.04,
+      "end": 236.13,
+      "type": "line",
+      "text": "Who is mine adversary?",
+      "verse": "7:8",
+      "lineIndex": 49
+    },
+    {
+      "start": 236.31,
+      "end": 237.75,
+      "type": "line",
+      "text": "Let him come near me,",
+      "verse": "7:8",
+      "lineIndex": 50
+    },
+    {
+      "start": 237.93,
+      "end": 242.017,
+      "type": "line",
+      "text": "and I will smite him with the strength of my mouth.",
+      "verse": "7:8",
+      "lineIndex": 51
+    },
+    {
+      "start": 242.197,
+      "end": 256.315,
+      "type": "line",
+      "text": "He And the Lord is near, that and he justifieth me. Who will contend with me? Let us stand together. Who is mine adversary? Let him come near to me, and I will smite him with the strength of my mouth.",
+      "verse": "7:8",
+      "lineIndex": 52
+    },
+    {
+      "start": 256.995,
+      "end": 259.41,
+      "type": "line",
+      "text": "For the Lord God will help me.",
+      "verse": "7:9",
+      "lineIndex": 53
+    },
+    {
+      "start": 259.59,
+      "end": 262.098,
+      "type": "line",
+      "text": "And all they who shall condemn me,",
+      "verse": "7:9",
+      "lineIndex": 54
+    },
+    {
+      "start": 262.278,
+      "end": 265.947,
+      "type": "line",
+      "text": "behold, all they shall wax old as a garment,",
+      "verse": "7:9",
+      "lineIndex": 55
+    },
+    {
+      "start": 266.127,
+      "end": 281.127,
+      "type": "line",
+      "text": "and the moth shall eat them up.",
+      "verse": "7:9",
+      "lineIndex": 56
+    },
+    {
+      "start": 281.307,
+      "end": 293.66,
+      "type": "line",
+      "text": "Behold, For the Lord God will help me. And all they who is he that shall condemn me, lo, behold, all they all shall wax old as a garment, and the moth shall eat them up.",
+      "verse": "7:9",
+      "lineIndex": 57
+    },
+    {
+      "start": 294.34,
+      "end": 296.941,
+      "type": "line",
+      "text": "Who is among you that feareth the Lord,",
+      "verse": "7:10",
+      "lineIndex": 58
+    },
+    {
+      "start": 297.121,
+      "end": 299.722,
+      "type": "line",
+      "text": "that obeyeth the voice of his servant,",
+      "verse": "7:10",
+      "lineIndex": 59
+    },
+    {
+      "start": 299.902,
+      "end": 303.339,
+      "type": "line",
+      "text": "that walketh in darkness and hath no light?",
+      "verse": "7:10",
+      "lineIndex": 60
+    },
+    {
+      "start": 303.519,
+      "end": 316.151,
+      "type": "line",
+      "text": "Who is among you that feareth the Lord, that obeyeth the voice of his servant, that walketh in darkness and hath no light? let him trust in the name of the Lord, and stay upon his God.",
+      "verse": "7:10",
+      "lineIndex": 61
+    },
+    {
+      "start": 316.831,
+      "end": 319.339,
+      "type": "line",
+      "text": "Behold all ye that kindle fire,",
+      "verse": "7:11",
+      "lineIndex": 62
+    },
+    {
+      "start": 319.519,
+      "end": 322.584,
+      "type": "line",
+      "text": "that compass yourselves about with sparks,",
+      "verse": "7:11",
+      "lineIndex": 63
+    },
+    {
+      "start": 322.764,
+      "end": 325.411,
+      "type": "line",
+      "text": "walk in the light of your fire",
+      "verse": "7:11",
+      "lineIndex": 64
+    },
+    {
+      "start": 325.591,
+      "end": 328.099,
+      "type": "line",
+      "text": "and in the sparks which ye have kindled.",
+      "verse": "7:11",
+      "lineIndex": 65
+    },
+    {
+      "start": 328.279,
+      "end": 333.48,
+      "type": "line",
+      "text": "This shall ye have of mine hand\u2014",
+      "verse": "7:11",
+      "lineIndex": 66
+    },
+    {
+      "start": 333.66,
+      "end": 335.796,
+      "type": "line",
+      "text": "ye shall lie down in sorrow.",
+      "verse": "7:11",
+      "lineIndex": 67
+    },
+    {
+      "start": 335.976,
+      "end": 353.066,
+      "type": "line",
+      "text": "Behold all ye that kindle a fire, that compass yourselves about with sparks, walk in the light of your fire and in the sparks that which ye have kindled. This shall ye have of mine hand; ye hand--ye shall lie down in sorrow.",
+      "verse": "7:11",
+      "lineIndex": 68
+    }
+  ]
+}

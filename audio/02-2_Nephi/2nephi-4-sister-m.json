@@ -1,0 +1,1440 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 4,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "iJpuSZDxZSBJHFSeavba",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "sister-m"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 573.503,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.69,
+      "type": "line",
+      "text": "And now, I, Nephi, speak concerning the prophecies",
+      "verse": "4:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.87,
+      "end": 7.192,
+      "type": "line",
+      "text": "of which my father hath spoken,",
+      "verse": "4:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.372,
+      "end": 10.994,
+      "type": "line",
+      "text": "concerning Joseph, who was carried into Egypt.",
+      "verse": "4:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.674,
+      "end": 15.946,
+      "type": "line",
+      "text": "For behold, he truly prophesied concerning all his seed.",
+      "verse": "4:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 16.126,
+      "end": 21.745,
+      "type": "line",
+      "text": "And the prophecies which he wrote,",
+      "verse": "4:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 21.925,
+      "end": 23.643,
+      "type": "line",
+      "text": "there are not many greater.",
+      "verse": "4:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.823,
+      "end": 26.052,
+      "type": "line",
+      "text": "And he prophesied concerning us,",
+      "verse": "4:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 26.232,
+      "end": 28.275,
+      "type": "line",
+      "text": "and our future generations;",
+      "verse": "4:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 28.455,
+      "end": 31.892,
+      "type": "line",
+      "text": "and they are written upon the plates of brass.",
+      "verse": "4:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 32.572,
+      "end": 36.334,
+      "type": "line",
+      "text": "Wherefore, after my father had made an end of speaking",
+      "verse": "4:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 36.514,
+      "end": 38.882,
+      "type": "line",
+      "text": "concerning the prophecies of Joseph,",
+      "verse": "4:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 39.062,
+      "end": 41.57,
+      "type": "line",
+      "text": "he called the children of Laman,",
+      "verse": "4:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 41.75,
+      "end": 44.769,
+      "type": "line",
+      "text": "his sons, and his daughters,",
+      "verse": "4:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.949,
+      "end": 46.574,
+      "type": "line",
+      "text": "and said unto them:",
+      "verse": "4:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 46.754,
+      "end": 49.865,
+      "type": "line",
+      "text": "Behold, my sons, and my daughters,",
+      "verse": "4:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 50.045,
+      "end": 53.807,
+      "type": "line",
+      "text": "who are the sons and the daughters of my firstborn,",
+      "verse": "4:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 53.987,
+      "end": 57.284,
+      "type": "line",
+      "text": "I would that ye should give ear unto my words.",
+      "verse": "4:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 57.964,
+      "end": 60.193,
+      "type": "line",
+      "text": "For the Lord God hath said that:",
+      "verse": "4:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 60.373,
+      "end": 63.577,
+      "type": "line",
+      "text": "Inasmuch as ye shall keep my commandments",
+      "verse": "4:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 63.757,
+      "end": 65.893,
+      "type": "line",
+      "text": "ye shall prosper in the land;",
+      "verse": "4:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 66.073,
+      "end": 70.253,
+      "type": "line",
+      "text": "and inasmuch as ye will not keep my commandments",
+      "verse": "4:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 70.433,
+      "end": 73.127,
+      "type": "line",
+      "text": "ye shall be cut off from my presence.",
+      "verse": "4:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 73.807,
+      "end": 76.965,
+      "type": "line",
+      "text": "But behold, my sons and my daughters,",
+      "verse": "4:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 77.145,
+      "end": 79.095,
+      "type": "line",
+      "text": "I cannot go down to my grave",
+      "verse": "4:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 79.275,
+      "end": 81.69,
+      "type": "line",
+      "text": "save I should leave a blessing upon you;",
+      "verse": "4:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 81.87,
+      "end": 86.56,
+      "type": "line",
+      "text": "for behold, I know that if ye are brought up in the way ye should go",
+      "verse": "4:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 86.74,
+      "end": 88.876,
+      "type": "line",
+      "text": "ye will not depart from it.",
+      "verse": "4:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 89.556,
+      "end": 91.785,
+      "type": "line",
+      "text": "Wherefore, if ye are cursed,",
+      "verse": "4:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 91.965,
+      "end": 95.309,
+      "type": "line",
+      "text": "behold, I leave my blessing upon you,",
+      "verse": "4:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 95.489,
+      "end": 97.997,
+      "type": "line",
+      "text": "that the cursing may be taken from you",
+      "verse": "4:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 98.177,
+      "end": 101.474,
+      "type": "line",
+      "text": "and be answered upon the heads of your parents.",
+      "verse": "4:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 102.154,
+      "end": 104.43,
+      "type": "line",
+      "text": "Wherefore, because of my blessing",
+      "verse": "4:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 104.61,
+      "end": 108.557,
+      "type": "line",
+      "text": "the Lord God will not suffer that ye shall perish;",
+      "verse": "4:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 108.737,
+      "end": 111.709,
+      "type": "line",
+      "text": "wherefore, he will be merciful unto you",
+      "verse": "4:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 111.889,
+      "end": 114.211,
+      "type": "line",
+      "text": "and unto your seed forever.",
+      "verse": "4:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 114.891,
+      "end": 119.907,
+      "type": "line",
+      "text": "And it came to pass that after my father had made an end of speaking",
+      "verse": "4:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 120.087,
+      "end": 122.409,
+      "type": "line",
+      "text": "to the sons and daughters of Laman,",
+      "verse": "4:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 122.589,
+      "end": 127.094,
+      "type": "line",
+      "text": "he caused the sons and daughters of Lemuel to be brought before him.",
+      "verse": "4:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 127.774,
+      "end": 130.096,
+      "type": "line",
+      "text": "And he spake unto them, saying:",
+      "verse": "4:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 130.276,
+      "end": 133.573,
+      "type": "line",
+      "text": "Behold, my sons and my daughters,",
+      "verse": "4:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 133.753,
+      "end": 137.608,
+      "type": "line",
+      "text": "who are the sons and the daughters of my second son;",
+      "verse": "4:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 137.788,
+      "end": 141.735,
+      "type": "line",
+      "text": "behold I leave unto you the same blessing",
+      "verse": "4:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 141.915,
+      "end": 145.77,
+      "type": "line",
+      "text": "which I left unto the sons and daughters of Laman;",
+      "verse": "4:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 145.95,
+      "end": 149.247,
+      "type": "line",
+      "text": "wherefore, thou shalt not utterly be destroyed;",
+      "verse": "4:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 149.427,
+      "end": 152.631,
+      "type": "line",
+      "text": "but in the end thy seed shall be blessed.",
+      "verse": "4:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 153.311,
+      "end": 158.419,
+      "type": "line",
+      "text": "And it came to pass that when my father had made an end of speaking unto them,",
+      "verse": "4:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 158.599,
+      "end": 162.175,
+      "type": "line",
+      "text": "behold, he spake unto the sons of Ishmael,",
+      "verse": "4:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 162.355,
+      "end": 165.699,
+      "type": "line",
+      "text": "yea, and even all his household.",
+      "verse": "4:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 166.379,
+      "end": 170.094,
+      "type": "line",
+      "text": "And after he had made an end of speaking unto them,",
+      "verse": "4:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 170.274,
+      "end": 172.224,
+      "type": "line",
+      "text": "he spake unto Sam, saying:",
+      "verse": "4:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 172.404,
+      "end": 175.237,
+      "type": "line",
+      "text": "Blessed art thou, and thy seed;",
+      "verse": "4:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 175.417,
+      "end": 180.154,
+      "type": "line",
+      "text": "for thou shalt inherit the land like unto thy brother Nephi.",
+      "verse": "4:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 180.334,
+      "end": 183.492,
+      "type": "line",
+      "text": "And thy seed shall be numbered with his seed;",
+      "verse": "4:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 183.672,
+      "end": 186.783,
+      "type": "line",
+      "text": "and thou shalt be even like unto thy brother,",
+      "verse": "4:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 186.963,
+      "end": 189.703,
+      "type": "line",
+      "text": "and thy seed like unto his seed;",
+      "verse": "4:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 189.883,
+      "end": 193.087,
+      "type": "line",
+      "text": "and thou shalt be blessed in all thy days.",
+      "verse": "4:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 193.767,
+      "end": 199.758,
+      "type": "line",
+      "text": "And it came to pass after my father, Lehi, had spoken unto all his household,",
+      "verse": "4:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 199.938,
+      "end": 205.325,
+      "type": "line",
+      "text": "according to the feelings of his heart and the Spirit of the Lord which was in him,",
+      "verse": "4:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 205.505,
+      "end": 210.428,
+      "type": "line",
+      "text": "he waxed old. And it came to pass that he died, and was buried.",
+      "verse": "4:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 211.108,
+      "end": 215.148,
+      "type": "line",
+      "text": "And it came to pass that not many days after his death,",
+      "verse": "4:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 215.328,
+      "end": 217.046,
+      "type": "line",
+      "text": "Laman and Lemuel",
+      "verse": "4:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 217.226,
+      "end": 220.57,
+      "type": "line",
+      "text": "and the sons of Ishmael were angry with me",
+      "verse": "4:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 220.75,
+      "end": 223.444,
+      "type": "line",
+      "text": "because of the admonitions of the Lord.",
+      "verse": "4:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 224.124,
+      "end": 228.629,
+      "type": "line",
+      "text": "For I, Nephi, was constrained to speak unto them,",
+      "verse": "4:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 228.809,
+      "end": 230.481,
+      "type": "line",
+      "text": "according to his word;",
+      "verse": "4:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 230.661,
+      "end": 233.54,
+      "type": "line",
+      "text": "for I had spoken many things unto them,",
+      "verse": "4:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 233.72,
+      "end": 236.646,
+      "type": "line",
+      "text": "and also my father, before his death;",
+      "verse": "4:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 236.826,
+      "end": 240.681,
+      "type": "line",
+      "text": "many of which sayings are written upon mine other plates;",
+      "verse": "4:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 240.861,
+      "end": 244.762,
+      "type": "line",
+      "text": "for a more history part are written upon mine other plates.",
+      "verse": "4:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 245.442,
+      "end": 248.646,
+      "type": "line",
+      "text": "And upon these I write the things of my soul,",
+      "verse": "4:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 248.826,
+      "end": 250.684,
+      "type": "line",
+      "text": "and many of the scriptures",
+      "verse": "4:15",
+      "lineIndex": 73
+    },
+    {
+      "start": 250.864,
+      "end": 253.558,
+      "type": "line",
+      "text": "which are engraven upon the plates of brass.",
+      "verse": "4:15",
+      "lineIndex": 74
+    },
+    {
+      "start": 253.738,
+      "end": 256.757,
+      "type": "line",
+      "text": "For my soul delighteth in the scriptures,",
+      "verse": "4:15",
+      "lineIndex": 75
+    },
+    {
+      "start": 256.937,
+      "end": 259.166,
+      "type": "line",
+      "text": "and my heart pondereth them,",
+      "verse": "4:15",
+      "lineIndex": 76
+    },
+    {
+      "start": 259.346,
+      "end": 263.758,
+      "type": "line",
+      "text": "and writeth them for the learning and the profit of my children.",
+      "verse": "4:15",
+      "lineIndex": 77
+    },
+    {
+      "start": 264.438,
+      "end": 268.432,
+      "type": "line",
+      "text": "Behold, my soul delighteth in the things of the Lord;",
+      "verse": "4:16",
+      "lineIndex": 78
+    },
+    {
+      "start": 268.612,
+      "end": 272.467,
+      "type": "line",
+      "text": "and my heart pondereth continually upon the things",
+      "verse": "4:16",
+      "lineIndex": 79
+    },
+    {
+      "start": 272.647,
+      "end": 274.644,
+      "type": "line",
+      "text": "which I have seen and heard.",
+      "verse": "4:16",
+      "lineIndex": 80
+    },
+    {
+      "start": 275.324,
+      "end": 279.782,
+      "type": "line",
+      "text": "Nevertheless, notwithstanding the great goodness of the Lord,",
+      "verse": "4:17",
+      "lineIndex": 81
+    },
+    {
+      "start": 279.962,
+      "end": 283.399,
+      "type": "line",
+      "text": "in showing me his great and marvelous works,",
+      "verse": "4:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 283.579,
+      "end": 285.297,
+      "type": "line",
+      "text": "my heart exclaimeth:",
+      "verse": "4:17",
+      "lineIndex": 83
+    },
+    {
+      "start": 285.477,
+      "end": 287.427,
+      "type": "line",
+      "text": "O wretched man that I am!",
+      "verse": "4:17",
+      "lineIndex": 84
+    },
+    {
+      "start": 287.607,
+      "end": 290.997,
+      "type": "line",
+      "text": "Yea, my heart sorroweth because of my flesh;",
+      "verse": "4:17",
+      "lineIndex": 85
+    },
+    {
+      "start": 291.177,
+      "end": 294.428,
+      "type": "line",
+      "text": "my soul grieveth because of mine iniquities.",
+      "verse": "4:17",
+      "lineIndex": 86
+    },
+    {
+      "start": 295.108,
+      "end": 296.826,
+      "type": "line",
+      "text": "I am encompassed about,",
+      "verse": "4:18",
+      "lineIndex": 87
+    },
+    {
+      "start": 297.006,
+      "end": 300.257,
+      "type": "line",
+      "text": "because of the temptations and the sins",
+      "verse": "4:18",
+      "lineIndex": 88
+    },
+    {
+      "start": 300.437,
+      "end": 302.62,
+      "type": "line",
+      "text": "which do so easily beset me.",
+      "verse": "4:18",
+      "lineIndex": 89
+    },
+    {
+      "start": 303.3,
+      "end": 305.576,
+      "type": "line",
+      "text": "And when I desire to rejoice,",
+      "verse": "4:19",
+      "lineIndex": 90
+    },
+    {
+      "start": 305.756,
+      "end": 308.682,
+      "type": "line",
+      "text": "my heart groaneth because of my sins;",
+      "verse": "4:19",
+      "lineIndex": 91
+    },
+    {
+      "start": 308.862,
+      "end": 312.484,
+      "type": "line",
+      "text": "nevertheless, I know in whom I have trusted.",
+      "verse": "4:19",
+      "lineIndex": 92
+    },
+    {
+      "start": 313.164,
+      "end": 315.3,
+      "type": "line",
+      "text": "My God hath been my support;",
+      "verse": "4:20",
+      "lineIndex": 93
+    },
+    {
+      "start": 315.48,
+      "end": 316.873,
+      "type": "line",
+      "text": "he hath led me",
+      "verse": "4:20",
+      "lineIndex": 94
+    },
+    {
+      "start": 317.053,
+      "end": 319.747,
+      "type": "line",
+      "text": "through mine afflictions in the wilderness;",
+      "verse": "4:20",
+      "lineIndex": 95
+    },
+    {
+      "start": 319.927,
+      "end": 321.785,
+      "type": "line",
+      "text": "and he hath preserved me",
+      "verse": "4:20",
+      "lineIndex": 96
+    },
+    {
+      "start": 321.965,
+      "end": 324.798,
+      "type": "line",
+      "text": "upon the waters of the great deep.",
+      "verse": "4:20",
+      "lineIndex": 97
+    },
+    {
+      "start": 325.478,
+      "end": 327.661,
+      "type": "line",
+      "text": "He hath filled me with his love,",
+      "verse": "4:21",
+      "lineIndex": 98
+    },
+    {
+      "start": 327.841,
+      "end": 330.813,
+      "type": "line",
+      "text": "even unto the consuming of my flesh.",
+      "verse": "4:21",
+      "lineIndex": 99
+    },
+    {
+      "start": 331.493,
+      "end": 333.722,
+      "type": "line",
+      "text": "He hath confounded mine enemies,",
+      "verse": "4:22",
+      "lineIndex": 100
+    },
+    {
+      "start": 333.902,
+      "end": 337.06,
+      "type": "line",
+      "text": "unto the causing of them to quake before me.",
+      "verse": "4:22",
+      "lineIndex": 101
+    },
+    {
+      "start": 337.74,
+      "end": 340.851,
+      "type": "line",
+      "text": "Behold, he hath heard my cry by day,",
+      "verse": "4:23",
+      "lineIndex": 102
+    },
+    {
+      "start": 341.031,
+      "end": 343.167,
+      "type": "line",
+      "text": "and he hath given me knowledge",
+      "verse": "4:23",
+      "lineIndex": 103
+    },
+    {
+      "start": 343.347,
+      "end": 345.437,
+      "type": "line",
+      "text": "by visions in the night-time.",
+      "verse": "4:23",
+      "lineIndex": 104
+    },
+    {
+      "start": 346.117,
+      "end": 348.903,
+      "type": "line",
+      "text": "And by day have I waxed bold",
+      "verse": "4:24",
+      "lineIndex": 105
+    },
+    {
+      "start": 349.083,
+      "end": 351.173,
+      "type": "line",
+      "text": "in mighty prayer before him;",
+      "verse": "4:24",
+      "lineIndex": 106
+    },
+    {
+      "start": 351.353,
+      "end": 354.372,
+      "type": "line",
+      "text": "yea, my voice have I sent up on high;",
+      "verse": "4:24",
+      "lineIndex": 107
+    },
+    {
+      "start": 354.552,
+      "end": 357.989,
+      "type": "line",
+      "text": "and angels came down and ministered unto me.",
+      "verse": "4:24",
+      "lineIndex": 108
+    },
+    {
+      "start": 358.669,
+      "end": 360.991,
+      "type": "line",
+      "text": "And upon the wings of his Spirit",
+      "verse": "4:25",
+      "lineIndex": 110
+    },
+    {
+      "start": 361.171,
+      "end": 363.307,
+      "type": "line",
+      "text": "hath my body been carried away",
+      "verse": "4:25",
+      "lineIndex": 111
+    },
+    {
+      "start": 363.487,
+      "end": 365.902,
+      "type": "line",
+      "text": "upon exceedingly high mountains.",
+      "verse": "4:25",
+      "lineIndex": 112
+    },
+    {
+      "start": 366.082,
+      "end": 369.147,
+      "type": "line",
+      "text": "And mine eyes have beheld great things,",
+      "verse": "4:25",
+      "lineIndex": 113
+    },
+    {
+      "start": 369.327,
+      "end": 371.881,
+      "type": "line",
+      "text": "yea, even too great for man;",
+      "verse": "4:25",
+      "lineIndex": 114
+    },
+    {
+      "start": 372.061,
+      "end": 375.637,
+      "type": "line",
+      "text": "therefore I was bidden that I should not write them.",
+      "verse": "4:25",
+      "lineIndex": 115
+    },
+    {
+      "start": 376.317,
+      "end": 379.103,
+      "type": "line",
+      "text": "O then, if I have seen so great things,",
+      "verse": "4:26",
+      "lineIndex": 116
+    },
+    {
+      "start": 379.283,
+      "end": 383.741,
+      "type": "line",
+      "text": "if the Lord in his condescension unto the children of men",
+      "verse": "4:26",
+      "lineIndex": 117
+    },
+    {
+      "start": 383.921,
+      "end": 386.847,
+      "type": "line",
+      "text": "hath visited men in so much mercy,",
+      "verse": "4:26",
+      "lineIndex": 118
+    },
+    {
+      "start": 387.027,
+      "end": 388.977,
+      "type": "line",
+      "text": "why should my heart weep",
+      "verse": "4:26",
+      "lineIndex": 119
+    },
+    {
+      "start": 389.157,
+      "end": 392.547,
+      "type": "line",
+      "text": "and my soul linger in the valley of sorrow,",
+      "verse": "4:26",
+      "lineIndex": 120
+    },
+    {
+      "start": 392.727,
+      "end": 394.817,
+      "type": "line",
+      "text": "and my flesh waste away,",
+      "verse": "4:26",
+      "lineIndex": 121
+    },
+    {
+      "start": 394.997,
+      "end": 396.622,
+      "type": "line",
+      "text": "and my strength slacken,",
+      "verse": "4:26",
+      "lineIndex": 122
+    },
+    {
+      "start": 396.802,
+      "end": 398.613,
+      "type": "line",
+      "text": "because of mine afflictions?",
+      "verse": "4:26",
+      "lineIndex": 123
+    },
+    {
+      "start": 399.293,
+      "end": 401.615,
+      "type": "line",
+      "text": "And why should I yield to sin,",
+      "verse": "4:27",
+      "lineIndex": 124
+    },
+    {
+      "start": 401.795,
+      "end": 403.56,
+      "type": "line",
+      "text": "because of my flesh?",
+      "verse": "4:27",
+      "lineIndex": 125
+    },
+    {
+      "start": 403.74,
+      "end": 407.177,
+      "type": "line",
+      "text": "Yea, why should I give way to temptations,",
+      "verse": "4:27",
+      "lineIndex": 126
+    },
+    {
+      "start": 407.357,
+      "end": 416.877,
+      "type": "line",
+      "text": "that the evil one have place in my heart",
+      "verse": "4:27",
+      "lineIndex": 127
+    },
+    {
+      "start": 417.057,
+      "end": 420.308,
+      "type": "line",
+      "text": "to destroy my peace and afflict my soul?",
+      "verse": "4:27",
+      "lineIndex": 128
+    },
+    {
+      "start": 420.488,
+      "end": 422.996,
+      "type": "line",
+      "text": "Why am I angry because of mine enemy?",
+      "verse": "4:27",
+      "lineIndex": 129
+    },
+    {
+      "start": 423.676,
+      "end": 425.255,
+      "type": "line",
+      "text": "Awake, my soul!",
+      "verse": "4:28",
+      "lineIndex": 130
+    },
+    {
+      "start": 425.435,
+      "end": 427.432,
+      "type": "line",
+      "text": "No longer droop in sin.",
+      "verse": "4:28",
+      "lineIndex": 131
+    },
+    {
+      "start": 427.612,
+      "end": 429.655,
+      "type": "line",
+      "text": "Rejoice, O my heart,",
+      "verse": "4:28",
+      "lineIndex": 132
+    },
+    {
+      "start": 429.835,
+      "end": 433.875,
+      "type": "line",
+      "text": "and give place no more for the enemy of my soul.",
+      "verse": "4:28",
+      "lineIndex": 133
+    },
+    {
+      "start": 434.555,
+      "end": 436.459,
+      "type": "line",
+      "text": "Do not anger again",
+      "verse": "4:29",
+      "lineIndex": 134
+    },
+    {
+      "start": 436.639,
+      "end": 438.357,
+      "type": "line",
+      "text": "because of mine enemies.",
+      "verse": "4:29",
+      "lineIndex": 135
+    },
+    {
+      "start": 438.537,
+      "end": 440.72,
+      "type": "line",
+      "text": "Do not slacken my strength",
+      "verse": "4:29",
+      "lineIndex": 136
+    },
+    {
+      "start": 440.9,
+      "end": 442.758,
+      "type": "line",
+      "text": "because of mine afflictions.",
+      "verse": "4:29",
+      "lineIndex": 137
+    },
+    {
+      "start": 443.438,
+      "end": 445.481,
+      "type": "line",
+      "text": "Rejoice, O my heart,",
+      "verse": "4:30",
+      "lineIndex": 138
+    },
+    {
+      "start": 445.661,
+      "end": 448.215,
+      "type": "line",
+      "text": "and cry unto the Lord, and say:",
+      "verse": "4:30",
+      "lineIndex": 139
+    },
+    {
+      "start": 448.395,
+      "end": 451.089,
+      "type": "line",
+      "text": "O Lord, I will praise thee forever;",
+      "verse": "4:30",
+      "lineIndex": 140
+    },
+    {
+      "start": 451.269,
+      "end": 454.102,
+      "type": "line",
+      "text": "yea, my soul will rejoice in thee,",
+      "verse": "4:30",
+      "lineIndex": 141
+    },
+    {
+      "start": 454.282,
+      "end": 457.719,
+      "type": "line",
+      "text": "my God, and the rock of my salvation.",
+      "verse": "4:30",
+      "lineIndex": 142
+    },
+    {
+      "start": 458.399,
+      "end": 459.281,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "4:31",
+      "lineIndex": 143
+    },
+    {
+      "start": 459.461,
+      "end": 461.272,
+      "type": "line",
+      "text": "wilt thou redeem my soul?",
+      "verse": "4:31",
+      "lineIndex": 144
+    },
+    {
+      "start": 461.452,
+      "end": 464.935,
+      "type": "line",
+      "text": "Wilt thou deliver me out of the hands of mine enemies?",
+      "verse": "4:31",
+      "lineIndex": 145
+    },
+    {
+      "start": 465.115,
+      "end": 469.573,
+      "type": "line",
+      "text": "Wilt thou make me that I may shake at the appearance of sin?",
+      "verse": "4:31",
+      "lineIndex": 146
+    },
+    {
+      "start": 470.253,
+      "end": 472.111,
+      "type": "line",
+      "text": "May the gates of hell",
+      "verse": "4:32",
+      "lineIndex": 147
+    },
+    {
+      "start": 472.291,
+      "end": 474.706,
+      "type": "line",
+      "text": "be shut continually before me,",
+      "verse": "4:32",
+      "lineIndex": 148
+    },
+    {
+      "start": 474.886,
+      "end": 477.022,
+      "type": "line",
+      "text": "because that my heart is broken",
+      "verse": "4:32",
+      "lineIndex": 149
+    },
+    {
+      "start": 477.202,
+      "end": 479.292,
+      "type": "line",
+      "text": "and my spirit is contrite!",
+      "verse": "4:32",
+      "lineIndex": 150
+    },
+    {
+      "start": 479.472,
+      "end": 482.351,
+      "type": "line",
+      "text": "O Lord, wilt thou not shut",
+      "verse": "4:32",
+      "lineIndex": 151
+    },
+    {
+      "start": 482.531,
+      "end": 485.503,
+      "type": "line",
+      "text": "the gates of thy righteousness before me,",
+      "verse": "4:32",
+      "lineIndex": 152
+    },
+    {
+      "start": 485.683,
+      "end": 489.166,
+      "type": "line",
+      "text": "that I may walk in the path of the low valley,",
+      "verse": "4:32",
+      "lineIndex": 153
+    },
+    {
+      "start": 489.346,
+      "end": 491.947,
+      "type": "line",
+      "text": "that I may be strict in the plain road!",
+      "verse": "4:32",
+      "lineIndex": 154
+    },
+    {
+      "start": 492.627,
+      "end": 493.509,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "4:33",
+      "lineIndex": 155
+    },
+    {
+      "start": 493.689,
+      "end": 495.686,
+      "type": "line",
+      "text": "wilt thou encircle me around",
+      "verse": "4:33",
+      "lineIndex": 156
+    },
+    {
+      "start": 495.866,
+      "end": 497.816,
+      "type": "line",
+      "text": "in the robe of thy righteousness!",
+      "verse": "4:33",
+      "lineIndex": 157
+    },
+    {
+      "start": 497.996,
+      "end": 498.878,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "4:33",
+      "lineIndex": 158
+    },
+    {
+      "start": 499.058,
+      "end": 503.33,
+      "type": "line",
+      "text": "wilt thou make a way for mine escape before mine enemies!",
+      "verse": "4:33",
+      "lineIndex": 159
+    },
+    {
+      "start": 503.51,
+      "end": 506.389,
+      "type": "line",
+      "text": "Wilt thou make my path straight before me!",
+      "verse": "4:33",
+      "lineIndex": 160
+    },
+    {
+      "start": 506.569,
+      "end": 512.699,
+      "type": "line",
+      "text": "Wilt thou not place a stumbling block in my way\u2014",
+      "verse": "4:33",
+      "lineIndex": 161
+    },
+    {
+      "start": 512.879,
+      "end": 515.712,
+      "type": "line",
+      "text": "but that thou wouldst clear my way before me,",
+      "verse": "4:33",
+      "lineIndex": 162
+    },
+    {
+      "start": 515.892,
+      "end": 520.397,
+      "type": "line",
+      "text": "and hedge not up my way, but the ways of mine enemy.",
+      "verse": "4:33",
+      "lineIndex": 163
+    },
+    {
+      "start": 521.077,
+      "end": 521.959,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "4:34",
+      "lineIndex": 164
+    },
+    {
+      "start": 522.139,
+      "end": 523.672,
+      "type": "line",
+      "text": "I have trusted in thee,",
+      "verse": "4:34",
+      "lineIndex": 165
+    },
+    {
+      "start": 523.852,
+      "end": 526.453,
+      "type": "line",
+      "text": "and I will trust in thee forever.",
+      "verse": "4:34",
+      "lineIndex": 166
+    },
+    {
+      "start": 526.633,
+      "end": 530.209,
+      "type": "line",
+      "text": "I will not put my trust in the arm of flesh;",
+      "verse": "4:34",
+      "lineIndex": 167
+    },
+    {
+      "start": 530.389,
+      "end": 533.454,
+      "type": "line",
+      "text": "for I know that cursed is he",
+      "verse": "4:34",
+      "lineIndex": 168
+    },
+    {
+      "start": 533.634,
+      "end": 536.931,
+      "type": "line",
+      "text": "that putteth his trust in the arm of flesh.",
+      "verse": "4:34",
+      "lineIndex": 169
+    },
+    {
+      "start": 537.111,
+      "end": 542.405,
+      "type": "line",
+      "text": "Yea, cursed is he that putteth his trust in man",
+      "verse": "4:34",
+      "lineIndex": 170
+    },
+    {
+      "start": 542.585,
+      "end": 544.535,
+      "type": "line",
+      "text": "or maketh flesh his arm.",
+      "verse": "4:34",
+      "lineIndex": 171
+    },
+    {
+      "start": 545.215,
+      "end": 550.231,
+      "type": "line",
+      "text": "Yea, I know that God will give liberally to him that asketh.",
+      "verse": "4:35",
+      "lineIndex": 172
+    },
+    {
+      "start": 550.411,
+      "end": 553.29,
+      "type": "line",
+      "text": "Yea, my God will give me,",
+      "verse": "4:35",
+      "lineIndex": 173
+    },
+    {
+      "start": 553.47,
+      "end": 555.281,
+      "type": "line",
+      "text": "if I ask not amiss;",
+      "verse": "4:35",
+      "lineIndex": 174
+    },
+    {
+      "start": 555.461,
+      "end": 558.898,
+      "type": "line",
+      "text": "therefore I will lift up my voice unto thee;",
+      "verse": "4:35",
+      "lineIndex": 175
+    },
+    {
+      "start": 559.078,
+      "end": 561.214,
+      "type": "line",
+      "text": "yea, I will cry unto thee,",
+      "verse": "4:35",
+      "lineIndex": 176
+    },
+    {
+      "start": 561.394,
+      "end": 564.134,
+      "type": "line",
+      "text": "my God, the rock of my righteousness.",
+      "verse": "4:35",
+      "lineIndex": 177
+    },
+    {
+      "start": 564.314,
+      "end": 568.494,
+      "type": "line",
+      "text": "Behold, my voice shall forever ascend up unto thee,",
+      "verse": "4:35",
+      "lineIndex": 178
+    },
+    {
+      "start": 568.674,
+      "end": 571.832,
+      "type": "line",
+      "text": "my rock and mine everlasting God.",
+      "verse": "4:35",
+      "lineIndex": 179
+    },
+    {
+      "start": 572.012,
+      "end": 572.848,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "4:35",
+      "lineIndex": 180
+    }
+  ]
+}
