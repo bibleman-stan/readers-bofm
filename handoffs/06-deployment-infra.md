@@ -8,7 +8,7 @@
 ## Service Worker (sw.js)
 - Strategy: cache app shell eagerly, cache books lazily (on first open)
 - Option to pre-cache all books at once via message from page
-- **Current version:** `bomreader-v61`
+- **Current version:** `bomreader-v62`
 - **Versioning:** Every CSS/JS/HTML change requires a cache version bump. Version jumped from v31 (Mar 14) to v61 (Mar 18) due to rapid iteration — this is normal.
 - Users need hard refresh (Ctrl+Shift+R) or wait for SW update cycle to see changes
 
@@ -32,6 +32,11 @@ Three commits need pushing:
 - Service worker caches app shell on install
 - "Save for offline" button in bottom sheet pre-caches all book HTML fragments
 - Audio files cached on first play
+
+---
+### Update — 2026-03-18
+- Cache version bumped from v61 to v62 after Mosiah HTML rebuild
+- Additional unpushed commits: structured handoff docs creation, colometry handoff, Mosiah text edits, and HTML rebuild
 
 ---
 *Last updated: 2026-03-18*

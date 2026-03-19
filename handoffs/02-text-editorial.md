@@ -125,4 +125,12 @@ Utility script for automated sense-line rebalancing:
 - M18: NEW — list-stacking for parallel triads
 
 ---
+### Update — 2026-03-18
+- Applied sense-line edits to Mosiah chapters 4 and 15, adjusting line breaks per newly articulated colometry principles (see 10-colometry.md)
+- Mosiah 15:15–18 ("how beautiful upon the mountains") restructured to break after the recurring phrase rather than mid-clause
+- Mosiah 15:24 merged circumstantial clause pairing ("in their ignorance, not having salvation declared unto them" on one line)
+- Mosiah 15:24 adjusted equivalence restatement ("or have eternal life, being redeemed by the Lord" grouped together)
+- Rebuilt all HTML from updated Mosiah source text via `build_book.py --all`
+
+---
 *Last updated: 2026-03-18*

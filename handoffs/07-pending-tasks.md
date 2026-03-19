@@ -54,4 +54,9 @@ Google API key in `annotations.js:26` — restrict in Google Cloud Console.
 Use Parry break-points to identify sense-lines that merit revision. 209 split candidates in 2 Nephi alone.
 
 ---
+### Update — 2026-03-18
+- Mosiah editorial work begun — sense-line revisions applied to chapters 4 and 15 as first pass, demonstrating newly articulated colometry principles
+- Remaining Mosiah chapters (1-3, 5-14, 16-29) still need systematic editorial review
+
+---
 *Last updated: 2026-03-18*
