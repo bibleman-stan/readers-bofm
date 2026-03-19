@@ -57,6 +57,23 @@ Observable differences that emerged during the BOM Reader editorial process:
 - [ ] Literature review: confirm nobody has done this (check Interpreter, JBMS, Maxwell Institute publications, DH conference proceedings)
 - [ ] Decide on framing: faith-compatible scholarship? Neutral computational humanities? Both audiences?
 
+### Existing Evidence from the BOM Reader Audit (Mar 18, 2026)
+
+A systematic audit of the entire Small Plates corpus (1 Nephi through Words of Mormon — 1,690 verses, ~8,000+ line breaks) was conducted using the "atomic image" test: does each line present a complete, standalone mental image? The audit found **1 genuine merge candidate** across all seven books (1 Nephi 19:21 — a "must needs be" split from its complement clause, fixed).
+
+This result is itself data. It means:
+1. The editorial decisions are internally consistent across thousands of break points
+2. The rules were formalized *after* the editorial work, yet the text already conformed — the editorial ear was applying coherent principles before they were articulated
+3. The consistency holds across different authorial voices (Nephi narrative, Nephi vision, Lehi, Jacob, Enos, Jarom, Omni) — which means the *differences* between voices that emerge from the line-length data are real rhetorical differences, not artifacts of inconsistent editing
+
+This is critical for the colometric stylometry argument: if the editing were sloppy, the colometric profiles wouldn't mean anything. The audit establishes that the dataset is clean.
+
+### The Gemini Control Experiment (Mar 18, 2026)
+
+An external audit was attempted via Google Gemini, which produced a sophisticated theoretical framework (correctly synthesizing published colometric and stylometric scholarship) but **hallucinated every single specific example** it provided. When asked for verse-by-verse merge candidates, Gemini fabricated plausible-sounding critiques that didn't match the actual text. Every "specific" recommendation it made was either a false positive when checked against the real lines or applied a syntactic rule (e.g., "never end on a preposition") that the image test correctly overruled (e.g., phrasal verb particles like "grafted in" are complete images).
+
+This is useful methodological evidence: it shows that the BOM Reader's editorial decisions survive scrutiny that generic NLP-style rules cannot replicate. The editorial judgment is operating at a level that requires understanding the *meaning* of the text, not just its syntax.
+
 ### Connection to the "Behold" Typology
 Stan's three-type "behold" classification (deictic, mirative, logical-connective) from the Mar 14 email could be a sub-study within this larger project. If different authors use "behold" in different functional proportions, and those proportions are visible in the colometric decisions (which type tends to get its own line vs. which type merges), that's another authorial fingerprint.
 
@@ -103,6 +120,20 @@ to all the will of the Lord.
 ```
 
 The first line is the frame — heavy, dense, scene-setting. The subsequent lines are the expansion — shorter, accumulative, building the theological point.
+
+Compare with how Nephi constructs the same kind of moment (1 Nephi 1:6-7):
+```
+And it came to pass as he prayed unto the Lord,
+there came a pillar of fire
+and dwelt upon a rock before him;
+and he saw and heard much;
+and because of the things which he saw and heard
+he did quake and tremble exceedingly.
+```
+
+Nephi's wayyehi line is short: "And it came to pass as he prayed unto the Lord," — then the *details* build upward in roughly equal-length lines. The construction is additive, not top-heavy. Mormon drops a heavy ceiling; Nephi builds a staircase.
+
+This pattern was first noticed during editorial review of Mosiah (Mar 18, 2026) and is visible throughout the screenshot of Mosiah 24:15-18 where Mormon's framers run nearly the full screen width while the expansion lines are half that length or less.
 
 ### The Hypothesis
 These long framing lines may correspond to **Mormon's actual compositional paragraphs** — the units in which he thought and wrote. Each framer represents a place where Mormon picked up his stylus and began a new thought-block. The shorter lines within are the internal structure of that thought-block.
