@@ -293,6 +293,44 @@ Each link feeds the next. The BOM Reader project is building the middle three li
 
 **Defense:** (1) The FEF definition is theory-neutral. (2) The paper presents interpretive options without choosing. (3) The "JS absorbed KJV patterns" explanation is given equal weight. (4) The interesting finding is the author-differentiation, which is remarkable regardless of text origin. (5) Publishing in a DH venue rather than an LDS venue signals methodological intent.
 
+### The Discovery Sequence as Methodological Shield
+
+The order in which insights emerged is itself evidence against confirmation bias. The sequence was:
+
+1. **Goal:** Make a readable edition. No research agenda. No hypothesis about authorial voices or Hebrew structures.
+2. **Method:** Apply "one image per line / one breath per line" consistently across the entire text. The criteria were articulated for readability, not for detecting anything.
+3. **Resistance:** Certain lines in Mormon's text refused to break. The editor's instinct was to break them — shorter lines are easier to read. The text wouldn't let him. Every break point orphaned something.
+4. **Reluctant acceptance:** The long lines were accepted not because they were desired but because no valid break existed under the established criteria.
+5. **Pattern recognition:** After accepting dozens of these irreducible long lines, the editor noticed they clustered at verse openings and were followed by shorter expansion lines. The FEF pattern was *noticed*, not designed.
+6. **Hebrew parallel:** Only after the FEF pattern was named and defined did the structural parallel to Hebrew wayyiqtol + circumstantial protasis become apparent. The parallel was recognized, not sought.
+7. **Theory articulation:** The FEF hypothesis, the three-register model, and the connection to OTC all came *after* the editorial decisions were already made and committed to the repository. Git history documents this sequence.
+
+This matters because the standard criticism of pattern-finding in texts is "you found what you were looking for." The discovery sequence shows the opposite: Stan found what he wasn't looking for, tried to make it go away (by breaking the lines), failed, and only then recognized what the text was showing him.
+
+The git commit history is the evidence trail. The editorial rules (10-colometry.md) were formalized on Mar 18. The Mosiah edits applying those rules were committed the same day. The FEF hypothesis was articulated *after* the edits, not before. A skeptic can verify this by examining the commit timestamps.
+
+### Visualization as Display, Not Argument
+
+A critical distinction for the paper: bomreader.com is a *display*, not an *argument*. The website shows text formatted according to transparent, articulable, testable criteria. It does not tell the reader what to conclude. When a reader opens Mosiah 24:15 and sees a long framing line followed by shorter expansion lines, they are seeing the text — not an interpretation of the text.
+
+This matters because the "fitting data to thesis" objection assumes the researcher is selecting or shaping which data to present. But bomreader.com presents *all* the data — every verse of every book, formatted by the same rules. The FEF pattern is visible because it's there, not because unfavorable data has been hidden.
+
+The paper's evidence comes in three complementary forms:
+
+1. **The website itself** — the text displayed according to the editorial criteria. Anyone can look at any chapter and see the colometric structure. This is the raw data, publicly accessible, fully transparent.
+2. **Quantitative analysis** — line-length distributions, FEF frequency, construction-type categorization, author-differentiated profiles. Charts and graphs that measure what the page shows. These are testable and replicable.
+3. **The editorial criteria** — formally defined, documented in the colometry handoff, applicable by anyone to the same text. If someone else applies the four-criterion FEF definition and gets different results, that's a legitimate challenge. If they get the same results, that's replication.
+
+None of these three forms of evidence requires the reader to accept a prior conclusion. They display, they measure, and they define. The reader draws their own conclusions.
+
+### OTC's "Mnemonic Load-Bearing Walls" Concept
+
+In OTC terminology, FEFs function as **mnemonic load-bearing walls** — structural elements that cannot be removed without the entire passage losing its organizational coherence. Just as a structural engineer can identify which walls in a building are load-bearing by testing what happens when you try to remove them (the building collapses), the colometric editor identifies FEFs by testing what happens when you try to break them (the image fragments, the syntax orphans, the meaning collapses).
+
+This connects directly to OTC's diagnostic approach: the method doesn't start by assuming what's mnemonic — it applies consistent criteria and observes which elements resist simplification. Resistance to simplification *is* the diagnostic signal. Elements that resist editorial breaking are the elements doing the most structural work in the text's oral architecture.
+
+The BOM Reader editorial process is performing exactly this diagnostic — applying consistent "simplification pressure" (the atomic-image test) to every line of text and noting where the text pushes back. FEFs are the pushback zones. In OTC terms, they're the oral ridges — the highest points of mnemonic density — made visible through colometric analysis.
+
 ---
 
 *Created: 2026-03-18*
