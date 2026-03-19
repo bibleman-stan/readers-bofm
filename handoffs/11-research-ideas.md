@@ -105,10 +105,18 @@ Could be written anytime. Doesn't require statistical analysis. The colometry ha
 
 ---
 
-## 4. Mormon's Paragraph Structure: Long Framers as Compositional Units
+## 4. Front-End Frames (FEFs): Emergent Compositional Units in Mormon's Abridgment
 
 ### The Idea
-When sense-line breaks are applied to Mormon's abridgment (Mosiah onward), a distinctive pattern emerges that is absent from the Small Plates: **long, unbreakable framing lines followed by shorter expansionist detail lines.** The framing lines are often massive wayyehi constructions or complex temporal/spatial setups that resist breaking because the entire frame is one atomic image. The detail lines that follow are shorter, more digestible, and unpack the frame.
+When the atomic-image breaking rules are applied consistently across the entire Book of Mormon, a distinctive pattern emerges in Mormon's abridgment (Mosiah onward) that is absent from the Small Plates: **long, irreducible framing lines followed by shorter expansionist detail lines.** These "Front-End Frames" (FEFs) are not a rule imposed on the text — they are what *emerges* when consistent breaking criteria meet a particular authorial construction style.
+
+### Why FEFs Are Emergent, Not Imposed
+The editor's (Stan's) instinct was to *break* these lines, applying the same atomic-image test used everywhere. The text *resisted*. FEFs are long because they are genuinely irreducible — every syntactic element is bound to every other element, and no break point exists that wouldn't orphan a verb from its object, a frame from its content, or a temporal clause from its main verb. The editor reluctantly accepted the long lines, then noticed the pattern they created. This sequence — reluctant acceptance → pattern recognition → theoretical articulation — is methodologically important. The FEF hypothesis was not designed first and then confirmed; it was discovered through the editorial process.
+
+This means: if the pattern is measurable, it's a property of the *text*, not of the editor's preferences.
+
+### The Pattern
+The framing lines are often massive wayyehi constructions or complex temporal/spatial setups that resist breaking because the entire frame is one atomic image. The detail lines that follow are shorter, more digestible, and unpack the frame.
 
 Example (Mosiah 24:15):
 ```
@@ -146,11 +154,22 @@ If this is true, the sense-line analysis may be recovering a layer of textual st
 3. **Framer complexity growth**: Do Mormon's framers get longer or more syntactically complex as Mosiah progresses? This would reflect increasing editorial burden as he synthesizes multiple source records (Zeniff, Alma, Limhi) and manages parallel timelines.
 4. **Comparison with Small Plates**: Confirm that Nephi's text does NOT exhibit this long-framer pattern — that he builds from short units upward rather than dropping in a heavy frame and unpacking downward. This would establish the pattern as a Mormon-specific compositional signature.
 5. **Source record transitions**: Do framer characteristics change when Mormon shifts between source records? If the framers when he's abridging Zeniff feel different from the framers when he's abridging Alma, that suggests the source material's own structure is leaking through Mormon's editorial voice.
+6. **Grammatical categorization of irreducibility**: Categorize *why* each FEF resists breaking. Is it a stacked prepositional chain? A temporal clause nested inside a wayyehi? A participial phrase that can't detach from its subject? A relative clause that binds actor to action? If different attributed authors produce FEFs that are irreducible for *different grammatical reasons*, that's another dimension of the authorial fingerprint beyond simple line length.
+7. **Construction-type frequency by author**: Quantify the distribution of construction types (participials, prepositional phrases, conditional frames, relative clauses, compound verbs) across attributed authorial sections. If Mormon's FEFs are dominated by temporal+spatial stacking while Nephi's long lines (when they occur) are dominated by compound verbs, that's a measurable structural difference that connects colometry to syntax in a way traditional stylometry doesn't capture.
 
 ### Implications
 - If the framers recover a genuine compositional structure, this could motivate a "re-paragraphed" presentation of Mormon's text that organizes by framer units rather than Pratt's verses
 - This would be an entirely new way to visualize the Book of Mormon's structure — one derived from the text's own rhetoric rather than imposed by 19th-century editorial convention
 - It's also another independent line of evidence for the text having genuine compositional structure (whether ancient or otherwise) — mechanical or random text wouldn't produce this systematic pattern
+
+### Three Registers Within Mormon's Text
+The Mosiah edits reveal not just a two-part pattern (FEF + expansion) but potentially three distinct colometric registers operating simultaneously:
+
+1. **Mormon's narrative FEFs** — long, heavy, irreducible framing lines. Temporal+spatial+actor stacking. The "ceiling drop."
+2. **Mormon's expansion lines** — shorter, accumulative detail lines that unpack the FEF. The "downward build."
+3. **Quoted divine/angelic speech** — short, staccato, imperative. "Blessed art thou, / because of thy exceeding faith." "Alma, / arise and stand forth." "This is my church, / and I will establish it." One image per line, command-length utterances.
+
+This is significant because it suggests Mormon is *preserving* a register difference when he quotes the Lord or an angel — he doesn't flatten divine speech into his own editorial cadence. The same editor (Mormon) is producing two different colometric patterns depending on whether he's narrating or quoting. If this is measurable, it shows the text has internal voice-switching that operates at the rhetorical structure level, not just the vocabulary level.
 
 ### Connection to Idea #1
 This is a sub-hypothesis within the colometric stylometry framework. The "long framer + short expansion" pattern is itself a colometric signature — it shows up in the line-length distribution as a bimodal pattern (a cluster of long lines and a cluster of short lines) that would be absent from, say, Nephi's more uniformly distributed line lengths.
