@@ -1,0 +1,1448 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 27,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 528.404,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.183,
+      "type": "line",
+      "text": "But, behold, in the last days,",
+      "verse": "27:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.363,
+      "end": 4.267,
+      "type": "line",
+      "text": "or in the days of the Gentiles\u2014",
+      "verse": "27:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 4.447,
+      "end": 8.069,
+      "type": "line",
+      "text": "yea, behold all the nations of the Gentiles and also the Jews,",
+      "verse": "27:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 8.249,
+      "end": 11.082,
+      "type": "line",
+      "text": "both those who shall come upon this land",
+      "verse": "27:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.262,
+      "end": 13.909,
+      "type": "line",
+      "text": "and those who shall be upon other lands,",
+      "verse": "27:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.089,
+      "end": 17.015,
+      "type": "line",
+      "text": "yea, even upon all the lands of the earth,",
+      "verse": "27:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 17.195,
+      "end": 19.703,
+      "type": "line",
+      "text": "behold, they will be drunken with iniquity",
+      "verse": "27:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 19.883,
+      "end": 22.298,
+      "type": "line",
+      "text": "and all manner of abominations\u2014",
+      "verse": "27:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 22.978,
+      "end": 24.743,
+      "type": "line",
+      "text": "And when that day shall come",
+      "verse": "27:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 24.923,
+      "end": 27.942,
+      "type": "line",
+      "text": "they shall be visited of the Lord of Hosts,",
+      "verse": "27:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 28.122,
+      "end": 30.258,
+      "type": "line",
+      "text": "with thunder and with earthquake,",
+      "verse": "27:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 30.438,
+      "end": 32.017,
+      "type": "line",
+      "text": "and with a great noise,",
+      "verse": "27:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 32.197,
+      "end": 34.612,
+      "type": "line",
+      "text": "and with storm, and with tempest,",
+      "verse": "27:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 34.792,
+      "end": 37.207,
+      "type": "line",
+      "text": "and with the flame of devouring fire.",
+      "verse": "27:2",
+      "lineIndex": 14
+    },
+    {
+      "start": 37.887,
+      "end": 40.766,
+      "type": "line",
+      "text": "And all the nations that fight against Zion,",
+      "verse": "27:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 40.946,
+      "end": 42.386,
+      "type": "line",
+      "text": "and that distress her,",
+      "verse": "27:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 42.566,
+      "end": 45.12,
+      "type": "line",
+      "text": "shall be as a dream of a night vision;",
+      "verse": "27:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 45.3,
+      "end": 47.808,
+      "type": "line",
+      "text": "yea, it shall be unto them,",
+      "verse": "27:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 47.988,
+      "end": 50.867,
+      "type": "line",
+      "text": "even as unto a hungry man which dreameth,",
+      "verse": "27:3",
+      "lineIndex": 19
+    },
+    {
+      "start": 51.047,
+      "end": 52.58,
+      "type": "line",
+      "text": "and behold he eateth",
+      "verse": "27:3",
+      "lineIndex": 20
+    },
+    {
+      "start": 52.76,
+      "end": 55.454,
+      "type": "line",
+      "text": "but he awaketh and his soul is empty;",
+      "verse": "27:3",
+      "lineIndex": 21
+    },
+    {
+      "start": 55.634,
+      "end": 58.42,
+      "type": "line",
+      "text": "or like unto a thirsty man which dreameth,",
+      "verse": "27:3",
+      "lineIndex": 22
+    },
+    {
+      "start": 58.6,
+      "end": 60.318,
+      "type": "line",
+      "text": "and behold he drinketh",
+      "verse": "27:3",
+      "lineIndex": 23
+    },
+    {
+      "start": 60.498,
+      "end": 63.284,
+      "type": "line",
+      "text": "but he awaketh and behold he is faint,",
+      "verse": "27:3",
+      "lineIndex": 24
+    },
+    {
+      "start": 63.464,
+      "end": 65.554,
+      "type": "line",
+      "text": "and his soul hath appetite;",
+      "verse": "27:3",
+      "lineIndex": 25
+    },
+    {
+      "start": 65.734,
+      "end": 68.149,
+      "type": "line",
+      "text": "yea, even so shall the multitude",
+      "verse": "27:3",
+      "lineIndex": 26
+    },
+    {
+      "start": 68.329,
+      "end": 71.626,
+      "type": "line",
+      "text": "of all the nations be that fight against Mount Zion.",
+      "verse": "27:3",
+      "lineIndex": 27
+    },
+    {
+      "start": 72.306,
+      "end": 74.907,
+      "type": "line",
+      "text": "For behold, all ye that doeth iniquity,",
+      "verse": "27:4",
+      "lineIndex": 29
+    },
+    {
+      "start": 75.087,
+      "end": 76.945,
+      "type": "line",
+      "text": "stay yourselves and wonder,",
+      "verse": "27:4",
+      "lineIndex": 30
+    },
+    {
+      "start": 77.125,
+      "end": 78.843,
+      "type": "line",
+      "text": "for ye shall cry out,",
+      "verse": "27:4",
+      "lineIndex": 31
+    },
+    {
+      "start": 79.023,
+      "end": 80.091,
+      "type": "line",
+      "text": "and cry;",
+      "verse": "27:4",
+      "lineIndex": 32
+    },
+    {
+      "start": 80.271,
+      "end": 82.036,
+      "type": "line",
+      "text": "yea, ye shall be drunken",
+      "verse": "27:4",
+      "lineIndex": 33
+    },
+    {
+      "start": 82.216,
+      "end": 83.609,
+      "type": "line",
+      "text": "but not with wine,",
+      "verse": "27:4",
+      "lineIndex": 34
+    },
+    {
+      "start": 83.789,
+      "end": 85.322,
+      "type": "line",
+      "text": "ye shall stagger",
+      "verse": "27:4",
+      "lineIndex": 35
+    },
+    {
+      "start": 85.502,
+      "end": 87.174,
+      "type": "line",
+      "text": "but not with strong drink.",
+      "verse": "27:4",
+      "lineIndex": 36
+    },
+    {
+      "start": 87.854,
+      "end": 92.08,
+      "type": "line",
+      "text": "For behold, the Lord hath poured out upon you the spirit of deep sleep.",
+      "verse": "27:5",
+      "lineIndex": 37
+    },
+    {
+      "start": 92.26,
+      "end": 94.721,
+      "type": "line",
+      "text": "For behold, ye have closed your eyes,",
+      "verse": "27:5",
+      "lineIndex": 38
+    },
+    {
+      "start": 94.901,
+      "end": 98.105,
+      "type": "line",
+      "text": "and ye have rejected the prophets; and your rulers,",
+      "verse": "27:5",
+      "lineIndex": 39
+    },
+    {
+      "start": 98.285,
+      "end": 101.443,
+      "type": "line",
+      "text": "and the seers hath he covered because of your iniquity.",
+      "verse": "27:5",
+      "lineIndex": 40
+    },
+    {
+      "start": 102.123,
+      "end": 107.789,
+      "type": "line",
+      "text": "And it shall come to pass that the Lord God shall bring forth unto you the words of a book,",
+      "verse": "27:6",
+      "lineIndex": 41
+    },
+    {
+      "start": 107.969,
+      "end": 111.08,
+      "type": "line",
+      "text": "and they shall be the words of them which have slumbered.",
+      "verse": "27:6",
+      "lineIndex": 42
+    },
+    {
+      "start": 111.76,
+      "end": 113.943,
+      "type": "line",
+      "text": "And behold the book shall be sealed;",
+      "verse": "27:7",
+      "lineIndex": 43
+    },
+    {
+      "start": 114.123,
+      "end": 117.327,
+      "type": "line",
+      "text": "and in the book shall be a revelation from God,",
+      "verse": "27:7",
+      "lineIndex": 44
+    },
+    {
+      "start": 117.507,
+      "end": 120.851,
+      "type": "line",
+      "text": "from the beginning of the world to the ending thereof.",
+      "verse": "27:7",
+      "lineIndex": 45
+    },
+    {
+      "start": 121.531,
+      "end": 125.153,
+      "type": "line",
+      "text": "Wherefore, because of the things which are sealed up,",
+      "verse": "27:8",
+      "lineIndex": 46
+    },
+    {
+      "start": 125.333,
+      "end": 128.537,
+      "type": "line",
+      "text": "the things which are sealed shall not be delivered",
+      "verse": "27:8",
+      "lineIndex": 47
+    },
+    {
+      "start": 128.717,
+      "end": 132.246,
+      "type": "line",
+      "text": "in the day of the wickedness and abominations of the people.",
+      "verse": "27:8",
+      "lineIndex": 48
+    },
+    {
+      "start": 132.426,
+      "end": 134.841,
+      "type": "line",
+      "text": "Wherefore the book shall be kept from them.",
+      "verse": "27:8",
+      "lineIndex": 49
+    },
+    {
+      "start": 135.521,
+      "end": 138.307,
+      "type": "line",
+      "text": "But the book shall be delivered unto a man,",
+      "verse": "27:9",
+      "lineIndex": 51
+    },
+    {
+      "start": 138.487,
+      "end": 141.273,
+      "type": "line",
+      "text": "and he shall deliver the words of the book,",
+      "verse": "27:9",
+      "lineIndex": 52
+    },
+    {
+      "start": 141.453,
+      "end": 144.75,
+      "type": "line",
+      "text": "which are the words of those who have slumbered in the dust,",
+      "verse": "27:9",
+      "lineIndex": 53
+    },
+    {
+      "start": 144.93,
+      "end": 147.949,
+      "type": "line",
+      "text": "and he shall deliver these words unto another;",
+      "verse": "27:9",
+      "lineIndex": 54
+    },
+    {
+      "start": 148.629,
+      "end": 151.415,
+      "type": "line",
+      "text": "But the words which are sealed he shall not deliver,",
+      "verse": "27:10",
+      "lineIndex": 55
+    },
+    {
+      "start": 151.595,
+      "end": 154.149,
+      "type": "line",
+      "text": "neither shall he deliver the book.",
+      "verse": "27:10",
+      "lineIndex": 56
+    },
+    {
+      "start": 154.329,
+      "end": 157.44,
+      "type": "line",
+      "text": "For the book shall be sealed by the power of God,",
+      "verse": "27:10",
+      "lineIndex": 57
+    },
+    {
+      "start": 157.62,
+      "end": 161.428,
+      "type": "line",
+      "text": "and the revelation which was sealed shall be kept in the book",
+      "verse": "27:10",
+      "lineIndex": 58
+    },
+    {
+      "start": 161.608,
+      "end": 163.837,
+      "type": "line",
+      "text": "until the own due time of the Lord,",
+      "verse": "27:10",
+      "lineIndex": 59
+    },
+    {
+      "start": 164.017,
+      "end": 165.782,
+      "type": "line",
+      "text": "that they may come forth;",
+      "verse": "27:10",
+      "lineIndex": 60
+    },
+    {
+      "start": 165.962,
+      "end": 168.377,
+      "type": "line",
+      "text": "for behold, they reveal all things",
+      "verse": "27:10",
+      "lineIndex": 61
+    },
+    {
+      "start": 168.557,
+      "end": 171.761,
+      "type": "line",
+      "text": "from the foundation of the world unto the end thereof.",
+      "verse": "27:10",
+      "lineIndex": 62
+    },
+    {
+      "start": 172.441,
+      "end": 176.296,
+      "type": "line",
+      "text": "And the day cometh that the words of the book which were sealed",
+      "verse": "27:11",
+      "lineIndex": 63
+    },
+    {
+      "start": 176.476,
+      "end": 178.891,
+      "type": "line",
+      "text": "shall be read upon the house tops;",
+      "verse": "27:11",
+      "lineIndex": 64
+    },
+    {
+      "start": 179.071,
+      "end": 181.811,
+      "type": "line",
+      "text": "and they shall be read by the power of Christ;",
+      "verse": "27:11",
+      "lineIndex": 65
+    },
+    {
+      "start": 181.991,
+      "end": 185.474,
+      "type": "line",
+      "text": "and all things shall be revealed unto the children of men",
+      "verse": "27:11",
+      "lineIndex": 66
+    },
+    {
+      "start": 185.654,
+      "end": 188.858,
+      "type": "line",
+      "text": "which ever have been among the children of men,",
+      "verse": "27:11",
+      "lineIndex": 67
+    },
+    {
+      "start": 189.038,
+      "end": 192.521,
+      "type": "line",
+      "text": "and which ever will be even unto the end of the earth.",
+      "verse": "27:11",
+      "lineIndex": 68
+    },
+    {
+      "start": 193.201,
+      "end": 196.87,
+      "type": "line",
+      "text": "Wherefore, at that day when the book shall be delivered",
+      "verse": "27:12",
+      "lineIndex": 69
+    },
+    {
+      "start": 197.05,
+      "end": 199.465,
+      "type": "line",
+      "text": "unto the man of whom I have spoken,",
+      "verse": "27:12",
+      "lineIndex": 70
+    },
+    {
+      "start": 199.645,
+      "end": 202.896,
+      "type": "line",
+      "text": "the book shall be hid from the eyes of the world,",
+      "verse": "27:12",
+      "lineIndex": 71
+    },
+    {
+      "start": 203.076,
+      "end": 205.491,
+      "type": "line",
+      "text": "that the eyes of none shall behold it",
+      "verse": "27:12",
+      "lineIndex": 72
+    },
+    {
+      "start": 205.671,
+      "end": 209.154,
+      "type": "line",
+      "text": "save it be that three witnesses shall behold it,",
+      "verse": "27:12",
+      "lineIndex": 73
+    },
+    {
+      "start": 209.334,
+      "end": 210.867,
+      "type": "line",
+      "text": "by the power of God,",
+      "verse": "27:12",
+      "lineIndex": 74
+    },
+    {
+      "start": 211.047,
+      "end": 213.973,
+      "type": "line",
+      "text": "besides him to whom the book shall be delivered;",
+      "verse": "27:12",
+      "lineIndex": 75
+    },
+    {
+      "start": 214.153,
+      "end": 219.447,
+      "type": "line",
+      "text": "and they shall testify to the truth of the book and the things therein.",
+      "verse": "27:12",
+      "lineIndex": 76
+    },
+    {
+      "start": 220.127,
+      "end": 222.588,
+      "type": "line",
+      "text": "And there is none other which shall view it,",
+      "verse": "27:13",
+      "lineIndex": 77
+    },
+    {
+      "start": 222.768,
+      "end": 225.787,
+      "type": "line",
+      "text": "save it be a few according to the will of God,",
+      "verse": "27:13",
+      "lineIndex": 78
+    },
+    {
+      "start": 225.967,
+      "end": 229.543,
+      "type": "line",
+      "text": "to bear testimony of his word unto the children of men;",
+      "verse": "27:13",
+      "lineIndex": 79
+    },
+    {
+      "start": 229.723,
+      "end": 231.627,
+      "type": "line",
+      "text": "for the Lord God hath said",
+      "verse": "27:13",
+      "lineIndex": 80
+    },
+    {
+      "start": 231.807,
+      "end": 234.454,
+      "type": "line",
+      "text": "that the words of the faithful should speak",
+      "verse": "27:13",
+      "lineIndex": 81
+    },
+    {
+      "start": 234.634,
+      "end": 236.352,
+      "type": "line",
+      "text": "as if it were from the dead.",
+      "verse": "27:13",
+      "lineIndex": 82
+    },
+    {
+      "start": 237.032,
+      "end": 241.49,
+      "type": "line",
+      "text": "Wherefore, the Lord God will proceed to bring forth the words of the book;",
+      "verse": "27:14",
+      "lineIndex": 83
+    },
+    {
+      "start": 241.67,
+      "end": 245.478,
+      "type": "line",
+      "text": "and in the mouth of as many witnesses as seemeth him good",
+      "verse": "27:14",
+      "lineIndex": 84
+    },
+    {
+      "start": 245.658,
+      "end": 247.516,
+      "type": "line",
+      "text": "will he establish his word;",
+      "verse": "27:14",
+      "lineIndex": 85
+    },
+    {
+      "start": 247.696,
+      "end": 251.225,
+      "type": "line",
+      "text": "and wo be unto him that rejecteth the word of God!",
+      "verse": "27:14",
+      "lineIndex": 86
+    },
+    {
+      "start": 251.905,
+      "end": 255.063,
+      "type": "line",
+      "text": "But behold, it shall come to pass that the Lord God",
+      "verse": "27:15",
+      "lineIndex": 88
+    },
+    {
+      "start": 255.243,
+      "end": 258.912,
+      "type": "line",
+      "text": "shall say unto him to whom he shall deliver the book:",
+      "verse": "27:15",
+      "lineIndex": 89
+    },
+    {
+      "start": 259.092,
+      "end": 261.321,
+      "type": "line",
+      "text": "Take these words which are not sealed",
+      "verse": "27:15",
+      "lineIndex": 90
+    },
+    {
+      "start": 261.501,
+      "end": 263.405,
+      "type": "line",
+      "text": "and deliver them to another,",
+      "verse": "27:15",
+      "lineIndex": 91
+    },
+    {
+      "start": 263.585,
+      "end": 266.65,
+      "type": "line",
+      "text": "that he may show them unto the learned, saying:",
+      "verse": "27:15",
+      "lineIndex": 92
+    },
+    {
+      "start": 266.83,
+      "end": 268.502,
+      "type": "line",
+      "text": "Read this, I pray thee.",
+      "verse": "27:15",
+      "lineIndex": 93
+    },
+    {
+      "start": 268.682,
+      "end": 270.493,
+      "type": "line",
+      "text": "And the learned shall say:",
+      "verse": "27:15",
+      "lineIndex": 94
+    },
+    {
+      "start": 270.673,
+      "end": 272.949,
+      "type": "line",
+      "text": "Bring hither the book, and I will read them.",
+      "verse": "27:15",
+      "lineIndex": 95
+    },
+    {
+      "start": 273.629,
+      "end": 276.74,
+      "type": "line",
+      "text": "And now, because of the glory of the world and",
+      "verse": "27:16",
+      "lineIndex": 96
+    },
+    {
+      "start": 276.92,
+      "end": 278.917,
+      "type": "line",
+      "text": "to get gain will they say this,",
+      "verse": "27:16",
+      "lineIndex": 97
+    },
+    {
+      "start": 279.097,
+      "end": 281.047,
+      "type": "line",
+      "text": "and not for the glory of God.",
+      "verse": "27:16",
+      "lineIndex": 98
+    },
+    {
+      "start": 281.727,
+      "end": 283.352,
+      "type": "line",
+      "text": "And the man shall say:",
+      "verse": "27:17",
+      "lineIndex": 99
+    },
+    {
+      "start": 283.532,
+      "end": 285.947,
+      "type": "line",
+      "text": "I cannot bring the book, for it is sealed.",
+      "verse": "27:17",
+      "lineIndex": 100
+    },
+    {
+      "start": 286.627,
+      "end": 288.392,
+      "type": "line",
+      "text": "Then shall the learned say:",
+      "verse": "27:18",
+      "lineIndex": 101
+    },
+    {
+      "start": 288.572,
+      "end": 289.965,
+      "type": "line",
+      "text": "I cannot read it.",
+      "verse": "27:18",
+      "lineIndex": 102
+    },
+    {
+      "start": 290.645,
+      "end": 297.565,
+      "type": "line",
+      "text": "Wherefore it shall come to pass that the Lord God will deliver again the book and the words thereof",
+      "verse": "27:19",
+      "lineIndex": 104
+    },
+    {
+      "start": 297.745,
+      "end": 299.556,
+      "type": "line",
+      "text": "to him that is not learned;",
+      "verse": "27:19",
+      "lineIndex": 105
+    },
+    {
+      "start": 299.736,
+      "end": 302.383,
+      "type": "line",
+      "text": "and the man that is not learned shall say:",
+      "verse": "27:19",
+      "lineIndex": 106
+    },
+    {
+      "start": 302.563,
+      "end": 303.956,
+      "type": "line",
+      "text": "I am not learned.",
+      "verse": "27:19",
+      "lineIndex": 107
+    },
+    {
+      "start": 304.636,
+      "end": 306.912,
+      "type": "line",
+      "text": "Then shall the Lord God say unto him:",
+      "verse": "27:20",
+      "lineIndex": 108
+    },
+    {
+      "start": 307.092,
+      "end": 309.042,
+      "type": "line",
+      "text": "The learned shall not read them,",
+      "verse": "27:20",
+      "lineIndex": 109
+    },
+    {
+      "start": 309.222,
+      "end": 311.08,
+      "type": "line",
+      "text": "for they have rejected them,",
+      "verse": "27:20",
+      "lineIndex": 110
+    },
+    {
+      "start": 311.26,
+      "end": 313.582,
+      "type": "line",
+      "text": "and I am able to do mine own work;",
+      "verse": "27:20",
+      "lineIndex": 111
+    },
+    {
+      "start": 313.762,
+      "end": 317.895,
+      "type": "line",
+      "text": "wherefore thou shalt read the words which I shall give unto thee.",
+      "verse": "27:20",
+      "lineIndex": 112
+    },
+    {
+      "start": 318.575,
+      "end": 320.804,
+      "type": "line",
+      "text": "Touch not the things which are sealed,",
+      "verse": "27:21",
+      "lineIndex": 113
+    },
+    {
+      "start": 320.984,
+      "end": 324.235,
+      "type": "line",
+      "text": "for I will bring them forth in mine own due time;",
+      "verse": "27:21",
+      "lineIndex": 114
+    },
+    {
+      "start": 324.415,
+      "end": 327.016,
+      "type": "line",
+      "text": "for I will show unto the children of men",
+      "verse": "27:21",
+      "lineIndex": 115
+    },
+    {
+      "start": 327.196,
+      "end": 329.611,
+      "type": "line",
+      "text": "that I am able to do mine own work.",
+      "verse": "27:21",
+      "lineIndex": 116
+    },
+    {
+      "start": 330.291,
+      "end": 335.539,
+      "type": "line",
+      "text": "Wherefore, when thou hast read the words which I have commanded thee,",
+      "verse": "27:22",
+      "lineIndex": 117
+    },
+    {
+      "start": 335.719,
+      "end": 339.109,
+      "type": "line",
+      "text": "and obtained the witnesses which I have promised unto thee,",
+      "verse": "27:22",
+      "lineIndex": 118
+    },
+    {
+      "start": 339.289,
+      "end": 341.565,
+      "type": "line",
+      "text": "then shalt thou seal up the book again,",
+      "verse": "27:22",
+      "lineIndex": 119
+    },
+    {
+      "start": 341.745,
+      "end": 343.51,
+      "type": "line",
+      "text": "and hide it up unto me,",
+      "verse": "27:22",
+      "lineIndex": 120
+    },
+    {
+      "start": 343.69,
+      "end": 346.848,
+      "type": "line",
+      "text": "that I may preserve the words which thou hast not read,",
+      "verse": "27:22",
+      "lineIndex": 121
+    },
+    {
+      "start": 347.028,
+      "end": 350.0,
+      "type": "line",
+      "text": "until I shall see fit in mine own wisdom",
+      "verse": "27:22",
+      "lineIndex": 122
+    },
+    {
+      "start": 350.18,
+      "end": 353.431,
+      "type": "line",
+      "text": "to reveal all things unto the children of men.",
+      "verse": "27:22",
+      "lineIndex": 123
+    },
+    {
+      "start": 354.111,
+      "end": 355.829,
+      "type": "line",
+      "text": "For behold, I am God;",
+      "verse": "27:23",
+      "lineIndex": 125
+    },
+    {
+      "start": 356.009,
+      "end": 358.006,
+      "type": "line",
+      "text": "and I am a God of miracles;",
+      "verse": "27:23",
+      "lineIndex": 126
+    },
+    {
+      "start": 358.186,
+      "end": 360.276,
+      "type": "line",
+      "text": "and I will show unto the world",
+      "verse": "27:23",
+      "lineIndex": 127
+    },
+    {
+      "start": 360.456,
+      "end": 363.66,
+      "type": "line",
+      "text": "that I am the same yesterday, today, and forever;",
+      "verse": "27:23",
+      "lineIndex": 128
+    },
+    {
+      "start": 363.84,
+      "end": 366.626,
+      "type": "line",
+      "text": "and I work not among the children of men",
+      "verse": "27:23",
+      "lineIndex": 129
+    },
+    {
+      "start": 366.806,
+      "end": 369.174,
+      "type": "line",
+      "text": "save it be according to their faith.",
+      "verse": "27:23",
+      "lineIndex": 130
+    },
+    {
+      "start": 369.854,
+      "end": 373.058,
+      "type": "line",
+      "text": "And again it shall come to pass that the Lord shall say",
+      "verse": "27:24",
+      "lineIndex": 131
+    },
+    {
+      "start": 373.238,
+      "end": 377.325,
+      "type": "line",
+      "text": "unto him that shall read the words that shall be delivered him:",
+      "verse": "27:24",
+      "lineIndex": 132
+    },
+    {
+      "start": 378.005,
+      "end": 381.86,
+      "type": "line",
+      "text": "Forasmuch as this people draw near unto me with their mouth,",
+      "verse": "27:25",
+      "lineIndex": 134
+    },
+    {
+      "start": 382.04,
+      "end": 383.99,
+      "type": "line",
+      "text": "and with their lips do honor me,",
+      "verse": "27:25",
+      "lineIndex": 135
+    },
+    {
+      "start": 384.17,
+      "end": 386.538,
+      "type": "line",
+      "text": "but have removed their hearts far from me,",
+      "verse": "27:25",
+      "lineIndex": 136
+    },
+    {
+      "start": 386.718,
+      "end": 390.201,
+      "type": "line",
+      "text": "and their fear towards me is taught by the precepts of men\u2014",
+      "verse": "27:25",
+      "lineIndex": 137
+    },
+    {
+      "start": 390.881,
+      "end": 395.061,
+      "type": "line",
+      "text": "Therefore, I will proceed to do a marvelous work among this people,",
+      "verse": "27:26",
+      "lineIndex": 138
+    },
+    {
+      "start": 395.241,
+      "end": 398.167,
+      "type": "line",
+      "text": "yea, a marvelous work and a wonder,",
+      "verse": "27:26",
+      "lineIndex": 139
+    },
+    {
+      "start": 398.347,
+      "end": 401.458,
+      "type": "line",
+      "text": "for the wisdom of their wise and learned shall perish,",
+      "verse": "27:26",
+      "lineIndex": 140
+    },
+    {
+      "start": 401.638,
+      "end": 405.028,
+      "type": "line",
+      "text": "and the understanding of their prudent shall be hid.",
+      "verse": "27:26",
+      "lineIndex": 141
+    },
+    {
+      "start": 405.708,
+      "end": 409.377,
+      "type": "line",
+      "text": "And wo unto them that seek deep to hide their counsel from the Lord!",
+      "verse": "27:27",
+      "lineIndex": 142
+    },
+    {
+      "start": 409.557,
+      "end": 411.972,
+      "type": "line",
+      "text": "And their works are in the dark;",
+      "verse": "27:27",
+      "lineIndex": 143
+    },
+    {
+      "start": 412.152,
+      "end": 413.452,
+      "type": "line",
+      "text": "and they say:",
+      "verse": "27:27",
+      "lineIndex": 144
+    },
+    {
+      "start": 413.632,
+      "end": 414.886,
+      "type": "line",
+      "text": "Who seeth us,",
+      "verse": "27:27",
+      "lineIndex": 145
+    },
+    {
+      "start": 415.066,
+      "end": 416.227,
+      "type": "line",
+      "text": "and who knoweth us?",
+      "verse": "27:27",
+      "lineIndex": 146
+    },
+    {
+      "start": 416.407,
+      "end": 417.893,
+      "type": "line",
+      "text": "And they also say:",
+      "verse": "27:27",
+      "lineIndex": 147
+    },
+    {
+      "start": 418.073,
+      "end": 422.81,
+      "type": "line",
+      "text": "Surely, your turning of things upside down shall be esteemed as the potter's clay.",
+      "verse": "27:27",
+      "lineIndex": 148
+    },
+    {
+      "start": 422.99,
+      "end": 425.266,
+      "type": "line",
+      "text": "But behold, I will show unto them,",
+      "verse": "27:27",
+      "lineIndex": 149
+    },
+    {
+      "start": 425.446,
+      "end": 427.118,
+      "type": "line",
+      "text": "saith the Lord of Hosts,",
+      "verse": "27:27",
+      "lineIndex": 150
+    },
+    {
+      "start": 427.298,
+      "end": 429.202,
+      "type": "line",
+      "text": "that I know all their works.",
+      "verse": "27:27",
+      "lineIndex": 151
+    },
+    {
+      "start": 429.382,
+      "end": 432.54,
+      "type": "line",
+      "text": "For shall the work say of him that made it,",
+      "verse": "27:27",
+      "lineIndex": 152
+    },
+    {
+      "start": 432.72,
+      "end": 434.02,
+      "type": "line",
+      "text": "he made me not?",
+      "verse": "27:27",
+      "lineIndex": 153
+    },
+    {
+      "start": 434.2,
+      "end": 436.986,
+      "type": "line",
+      "text": "Or shall the thing framed say of him that framed it,",
+      "verse": "27:27",
+      "lineIndex": 154
+    },
+    {
+      "start": 437.166,
+      "end": 438.838,
+      "type": "line",
+      "text": "he had no understanding?",
+      "verse": "27:27",
+      "lineIndex": 155
+    },
+    {
+      "start": 439.518,
+      "end": 441.794,
+      "type": "line",
+      "text": "But behold, saith the Lord of Hosts:",
+      "verse": "27:28",
+      "lineIndex": 156
+    },
+    {
+      "start": 441.974,
+      "end": 444.389,
+      "type": "line",
+      "text": "I will show unto the children of men",
+      "verse": "27:28",
+      "lineIndex": 157
+    },
+    {
+      "start": 444.569,
+      "end": 447.03,
+      "type": "line",
+      "text": "that it is yet a very little while",
+      "verse": "27:28",
+      "lineIndex": 158
+    },
+    {
+      "start": 447.21,
+      "end": 450.321,
+      "type": "line",
+      "text": "and Lebanon shall be turned into a fruitful field;",
+      "verse": "27:28",
+      "lineIndex": 159
+    },
+    {
+      "start": 450.501,
+      "end": 453.845,
+      "type": "line",
+      "text": "and the fruitful field shall be esteemed as a forest.",
+      "verse": "27:28",
+      "lineIndex": 160
+    },
+    {
+      "start": 454.525,
+      "end": 457.869,
+      "type": "line",
+      "text": "And in that day shall the deaf hear the words of the book,",
+      "verse": "27:29",
+      "lineIndex": 162
+    },
+    {
+      "start": 458.049,
+      "end": 461.346,
+      "type": "line",
+      "text": "and the eyes of the blind shall see out of obscurity",
+      "verse": "27:29",
+      "lineIndex": 163
+    },
+    {
+      "start": 461.526,
+      "end": 463.198,
+      "type": "line",
+      "text": "and out of darkness.",
+      "verse": "27:29",
+      "lineIndex": 164
+    },
+    {
+      "start": 463.878,
+      "end": 466.107,
+      "type": "line",
+      "text": "And the meek also shall increase,",
+      "verse": "27:30",
+      "lineIndex": 165
+    },
+    {
+      "start": 466.287,
+      "end": 468.47,
+      "type": "line",
+      "text": "and their joy shall be in the Lord,",
+      "verse": "27:30",
+      "lineIndex": 166
+    },
+    {
+      "start": 468.65,
+      "end": 472.69,
+      "type": "line",
+      "text": "and the poor among men shall rejoice in the Holy One of Israel.",
+      "verse": "27:30",
+      "lineIndex": 167
+    },
+    {
+      "start": 473.37,
+      "end": 475.738,
+      "type": "line",
+      "text": "For assuredly as the Lord liveth",
+      "verse": "27:31",
+      "lineIndex": 168
+    },
+    {
+      "start": 475.918,
+      "end": 479.308,
+      "type": "line",
+      "text": "they shall see that the terrible one is brought to naught,",
+      "verse": "27:31",
+      "lineIndex": 169
+    },
+    {
+      "start": 479.488,
+      "end": 481.438,
+      "type": "line",
+      "text": "and the scorner is consumed,",
+      "verse": "27:31",
+      "lineIndex": 170
+    },
+    {
+      "start": 481.618,
+      "end": 484.544,
+      "type": "line",
+      "text": "and all that watch for iniquity are cut off;",
+      "verse": "27:31",
+      "lineIndex": 171
+    },
+    {
+      "start": 485.224,
+      "end": 489.079,
+      "type": "line",
+      "text": "And they that make a man an offender for a word,",
+      "verse": "27:32",
+      "lineIndex": 172
+    },
+    {
+      "start": 489.259,
+      "end": 492.603,
+      "type": "line",
+      "text": "and lay a snare for him that reproveth in the gate,",
+      "verse": "27:32",
+      "lineIndex": 173
+    },
+    {
+      "start": 492.783,
+      "end": 495.848,
+      "type": "line",
+      "text": "and turn aside the just for a thing of naught.",
+      "verse": "27:32",
+      "lineIndex": 174
+    },
+    {
+      "start": 496.528,
+      "end": 500.057,
+      "type": "line",
+      "text": "Therefore, thus saith the Lord, who redeemed Abraham,",
+      "verse": "27:33",
+      "lineIndex": 176
+    },
+    {
+      "start": 500.237,
+      "end": 502.373,
+      "type": "line",
+      "text": "concerning the house of Jacob:",
+      "verse": "27:33",
+      "lineIndex": 177
+    },
+    {
+      "start": 502.553,
+      "end": 504.643,
+      "type": "line",
+      "text": "Jacob shall not now be ashamed,",
+      "verse": "27:33",
+      "lineIndex": 178
+    },
+    {
+      "start": 504.823,
+      "end": 507.191,
+      "type": "line",
+      "text": "neither shall his face now wax pale.",
+      "verse": "27:33",
+      "lineIndex": 179
+    },
+    {
+      "start": 507.871,
+      "end": 509.914,
+      "type": "line",
+      "text": "But when he seeth his children,",
+      "verse": "27:34",
+      "lineIndex": 180
+    },
+    {
+      "start": 510.094,
+      "end": 512.788,
+      "type": "line",
+      "text": "the work of my hands, in the midst of him,",
+      "verse": "27:34",
+      "lineIndex": 181
+    },
+    {
+      "start": 512.968,
+      "end": 514.965,
+      "type": "line",
+      "text": "they shall sanctify my name,",
+      "verse": "27:34",
+      "lineIndex": 182
+    },
+    {
+      "start": 515.145,
+      "end": 517.746,
+      "type": "line",
+      "text": "and sanctify the Holy One of Jacob,",
+      "verse": "27:34",
+      "lineIndex": 183
+    },
+    {
+      "start": 517.926,
+      "end": 520.387,
+      "type": "line",
+      "text": "and shall fear the God of Israel.",
+      "verse": "27:34",
+      "lineIndex": 184
+    },
+    {
+      "start": 521.067,
+      "end": 524.689,
+      "type": "line",
+      "text": "They also that erred in spirit shall come to understanding,",
+      "verse": "27:35",
+      "lineIndex": 185
+    },
+    {
+      "start": 524.869,
+      "end": 527.748,
+      "type": "line",
+      "text": "and they that murmured shall learn doctrine.",
+      "verse": "27:35",
+      "lineIndex": 186
+    }
+  ]
+}

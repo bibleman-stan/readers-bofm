@@ -213,4 +213,37 @@ Category A gets a confident proposal. B and C get a question first.
 Line breaks are editorial. Punctuation belongs to the canonical LDS text and is never altered, even when it might seem to affect how a line reads. This is moot in the default view (punctuation hidden via CSS) but the source files must preserve the canonical text exactly.
 
 ---
+### Update — 2026-03-18 (evening)
+
+#### Framing Devices Beyond Wayyehi
+
+An external audit (via Gemini) confirmed and extended the wayyehi principle: **all discourse-framing constructions should be treated as atomic units with their content**, not broken away from it. This includes:
+
+1. **Wayyehi + temporal/spatial clause** — already settled. "And it came to pass that X" stays together.
+2. **We'atta / "And now"** — "And now, I Nephi, make an end" or "And now, my sons, I would that ye should" — the "And now" is a discourse pivot, not a standalone breath. It attaches to the clause it introduces.
+3. **"For behold" / "Behold"** — a deictic pointer that frames what follows. "For behold, he hath the record of the Jews" is one unit. Don't orphan the pointer from the pointed-at.
+4. **"Wherefore" / "Therefore"** — logical connectives that frame a conclusion. "Wherefore, men are free according to the flesh" is one atomic thought. Don't break after "Wherefore."
+5. **Speech introduction formulas** — "And he said unto them:" or "And I, Nephi, said unto my father:" — the speech introduction is a framing device. It attaches to the first line of the speech unless the combined line is too long for one breath.
+
+The general principle: **if a construction's function is to frame, introduce, or pivot to what comes next, it should not be severed from what comes next.** A frame without its content is an orphan. Content without its frame loses its rhetorical context.
+
+#### Syntactic Bond Rules (from audit)
+
+These rules prevent mechanical over-splitting:
+
+- **Never split verb from direct object** — "I make / a record" → merge to "I make a record"
+- **Never end a line on an article** (the, a, an) — always merge forward
+- **Never end a line on a preposition** (of, to, in, with, by, at) — always merge forward
+- **Never split auxiliary from main verb** — "did / slay" → merge to "did slay"
+- **Never split "not/neither/nor" from what they negate** — "neither sense / nor insensibility" → merge to "neither sense nor insensibility"
+
+#### Vocative Splitting Rule
+
+Vocatives (O, Wo) get nuanced treatment:
+
+- **Vocative-as-command** → gets its own line: "Awake, my soul!" stands alone because it's a complete imperative.
+- **Vocative-as-appeal** → stays with the request: "O Lord, wilt thou redeem my soul?" is one atomic cry. Don't orphan "O Lord" from the plea.
+- **"Wo unto X who Y"** — merge when Y *defines* X ("Wo unto the murderer who deliberately killeth"); split when Y *elaborates* on X ("Wo unto the rich, / who are rich as to the things of the world").
+
+---
 *Created: 2026-03-18*
