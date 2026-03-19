@@ -88,4 +88,45 @@ Could be written anytime. Doesn't require statistical analysis. The colometry ha
 
 ---
 
+## 4. Mormon's Paragraph Structure: Long Framers as Compositional Units
+
+### The Idea
+When sense-line breaks are applied to Mormon's abridgment (Mosiah onward), a distinctive pattern emerges that is absent from the Small Plates: **long, unbreakable framing lines followed by shorter expansionist detail lines.** The framing lines are often massive wayyehi constructions or complex temporal/spatial setups that resist breaking because the entire frame is one atomic image. The detail lines that follow are shorter, more digestible, and unpack the frame.
+
+Example (Mosiah 24:15):
+```
+And now it came to pass that the burdens which were laid upon Alma and his brethren were made light;
+yea, the Lord did strengthen them
+that they could bear up their burdens with ease,
+and they did submit cheerfully and with patience
+to all the will of the Lord.
+```
+
+The first line is the frame — heavy, dense, scene-setting. The subsequent lines are the expansion — shorter, accumulative, building the theological point.
+
+### The Hypothesis
+These long framing lines may correspond to **Mormon's actual compositional paragraphs** — the units in which he thought and wrote. Each framer represents a place where Mormon picked up his stylus and began a new thought-block. The shorter lines within are the internal structure of that thought-block.
+
+If this is true, the sense-line analysis may be recovering a layer of textual structure that the LDS versification system (imposed in 1879 by Orson Pratt) obscured. Pratt's verse breaks were made on different criteria — roughly by sentence or clause — and may not align with Mormon's compositional units.
+
+### What to Test
+1. **Framer identification**: Define "long framer" quantitatively — perhaps lines above a certain character/word threshold that begin with a discourse marker (wayyehi, "And now," "And thus," "Therefore," "Behold")
+2. **Verse boundary alignment**: Do framers consistently appear at verse boundaries, or do they sometimes fall mid-verse? If mid-verse, the versification is cutting across Mormon's paragraphs.
+3. **Framer complexity growth**: Do Mormon's framers get longer or more syntactically complex as Mosiah progresses? This would reflect increasing editorial burden as he synthesizes multiple source records (Zeniff, Alma, Limhi) and manages parallel timelines.
+4. **Comparison with Small Plates**: Confirm that Nephi's text does NOT exhibit this long-framer pattern — that he builds from short units upward rather than dropping in a heavy frame and unpacking downward. This would establish the pattern as a Mormon-specific compositional signature.
+5. **Source record transitions**: Do framer characteristics change when Mormon shifts between source records? If the framers when he's abridging Zeniff feel different from the framers when he's abridging Alma, that suggests the source material's own structure is leaking through Mormon's editorial voice.
+
+### Implications
+- If the framers recover a genuine compositional structure, this could motivate a "re-paragraphed" presentation of Mormon's text that organizes by framer units rather than Pratt's verses
+- This would be an entirely new way to visualize the Book of Mormon's structure — one derived from the text's own rhetoric rather than imposed by 19th-century editorial convention
+- It's also another independent line of evidence for the text having genuine compositional structure (whether ancient or otherwise) — mechanical or random text wouldn't produce this systematic pattern
+
+### Connection to Idea #1
+This is a sub-hypothesis within the colometric stylometry framework. The "long framer + short expansion" pattern is itself a colometric signature — it shows up in the line-length distribution as a bimodal pattern (a cluster of long lines and a cluster of short lines) that would be absent from, say, Nephi's more uniformly distributed line lengths.
+
+### Status
+Observational. The pattern is visible in the edited Mosiah text. Needs quantitative confirmation before any claims can be made. A good first step would be plotting first-line-of-verse lengths across the entire corpus, colored by attributed author.
+
+---
+
 *Created: 2026-03-18*
