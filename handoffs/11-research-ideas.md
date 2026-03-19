@@ -148,8 +148,20 @@ These long framing lines may correspond to **Mormon's actual compositional parag
 
 If this is true, the sense-line analysis may be recovering a layer of textual structure that the LDS versification system (imposed in 1879 by Orson Pratt) obscured. Pratt's verse breaks were made on different criteria — roughly by sentence or clause — and may not align with Mormon's compositional units.
 
+### Paper Structure: "This Is a Thing" / "What It Could Mean"
+
+**Part 1 — The phenomenon (theory-neutral):** FEFs exist. Definition, data, distribution across attributed authors. Measurable, replicable, no presuppositions about text origin. The term FEF is deliberately theory-neutral — it describes what appears on the page, not why it's there. This section can be accepted by any reader regardless of their position on the Book of Mormon.
+
+**Part 2 — Interpretive significance:** Note the structural parallel to Hebrew circumstantial clause + wayyiqtol constructions. Crucially: this parallel was discovered independently — English readability criteria produced structures that match Hebrew narrative conventions, not the other way around. Then present interpretive options without choosing:
+- If the text is translated from a Hebrew-influenced source, FEFs may be structural fossils of the source language surviving through translation
+- If the text is 19th-century composition, FEFs may reflect deep absorption of KJV narrative conventions (which themselves reflect Hebrew structure)
+- Either way, the pattern is *systematic* and *author-differentiated*, which is the interesting finding regardless of origin
+- The fact that a single 19th-century author (if that's the explanation) maintained distinct FEF profiles for different fictional narrators is itself a remarkable literary achievement worth documenting
+
+This framing avoids the apologetics trap while still allowing faith-compatible readers to draw their own conclusions.
+
 ### What to Test
-1. **Framer identification**: Define "long framer" quantitatively — perhaps lines above a certain character/word threshold that begin with a discourse marker (wayyehi, "And now," "And thus," "Therefore," "Behold")
+1. **Framer identification**: FEFs are now formally defined (see 10-colometry.md) with four criteria: position, discourse marker, irreducibility, expansion. No longer just "long lines" — specifically lines that resist breaking because of syntactic mutual dependence
 2. **Verse boundary alignment**: Do framers consistently appear at verse boundaries, or do they sometimes fall mid-verse? If mid-verse, the versification is cutting across Mormon's paragraphs.
 3. **Framer complexity growth**: Do Mormon's framers get longer or more syntactically complex as Mosiah progresses? This would reflect increasing editorial burden as he synthesizes multiple source records (Zeniff, Alma, Limhi) and manages parallel timelines.
 4. **Comparison with Small Plates**: Confirm that Nephi's text does NOT exhibit this long-framer pattern — that he builds from short units upward rather than dropping in a heavy frame and unpacking downward. This would establish the pattern as a Mormon-specific compositional signature.

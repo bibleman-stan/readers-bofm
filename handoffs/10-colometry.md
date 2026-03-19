@@ -246,4 +246,45 @@ Vocatives (O, Wo) get nuanced treatment:
 - **"Wo unto X who Y"** — merge when Y *defines* X ("Wo unto the murderer who deliberately killeth"); split when Y *elaborates* on X ("Wo unto the rich, / who are rich as to the things of the world").
 
 ---
+### Update — 2026-03-18 (late evening)
+
+#### Formal Definition: Front-End Frames (FEFs)
+
+A **Front-End Frame** is a line that meets all four criteria:
+
+1. **Position**: Opens a verse or verse-block (first line after a verse marker)
+2. **Discourse marker**: Begins with one of: wayyehi ("And it came to pass"), we'atta ("And now"), "Wherefore," "Therefore," "For behold," "Behold," "Nevertheless," "And thus," "But behold," "Now," or a speech introduction formula
+3. **Irreducibility**: Binds syntactically to at least one dependent element (temporal clause, spatial clause, participial phrase, relative clause, or object clause) such that no break point exists that wouldn't orphan either the frame or its content under the atomic-image rule
+4. **Expansion**: Is followed by two or more shorter lines that unpack, elaborate, or detail the frame's content
+
+The irreducibility criterion (3) is what distinguishes FEFs from merely long lines. A line can be long because it contains a list or compound predicate — that's breakable. An FEF is long because every element is syntactically dependent on every other element. The frame *suspends resolution* until the main verb arrives, and everything between the discourse marker and the main verb is part of the suspension.
+
+#### FEFs and Hebrew Narrative Convention
+
+FEFs have a structural analogue in Biblical Hebrew. The *wayyiqtol* chain that forms the backbone of Hebrew narrative typically begins with a circumstantial protasis — a front-loaded frame that establishes time, place, condition, and actor before the main verb resolves:
+
+```
+wayehi [temporal clause] [circumstantial participial clause]... [main verb]
+```
+
+Hebrew grammarians treat the protasis as one syntactic unit — you don't break it. The atomic-image rule independently arrived at the same conclusion from the English side: don't break until the image resolves.
+
+This convergence is methodologically significant. The FEF pattern was not discovered by starting from Hebrew grammar and looking for it in English. It was discovered by applying an English readability criterion (atomic image / atomic breath) consistently across the text, noticing that certain lines *resisted* breaking, and then recognizing that the resistant structures match Hebrew narrative conventions.
+
+This means: whether the Book of Mormon's source is ancient Hebrew-influenced text or 19th-century KJV-absorbed composition, the structural pattern is real and measurable. The FEF definition is theory-neutral — it describes what's on the page without presupposing an explanation.
+
+#### FEF-Aware Pre-Breaking (Workflow Optimization)
+
+The current v8 reformatter breaks at syntactic boundaries (commas, conjunctions, subordinators) with length thresholds. It doesn't recognize framing constructions, so it frequently breaks FEFs that then require manual re-merging.
+
+An FEF-aware pre-breaker would:
+
+1. **Detect the discourse marker** at the start of a verse
+2. **Walk forward** looking for the main verb — the verb that the discourse marker introduces
+3. **Protect everything between marker and main verb resolution** as one atomic unit — no breaking regardless of internal commas, participials, or relative clauses
+4. **Apply normal v8 breaking rules only to the expansion lines** after the FEF resolves
+
+This would reduce manual editing burden for unedited books (Alma through Moroni) by preserving FEFs automatically and focusing human review on the expansion lines where editorial judgment is genuinely needed.
+
+---
 *Created: 2026-03-18*
