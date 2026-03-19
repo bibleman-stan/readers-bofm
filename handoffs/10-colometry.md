@@ -233,7 +233,7 @@ These rules prevent mechanical over-splitting:
 
 - **Never split verb from direct object** — "I make / a record" → merge to "I make a record"
 - **Never end a line on an article** (the, a, an) — always merge forward
-- **Never end a line on a preposition** (of, to, in, with, by, at) — always merge forward
+- **Never end a line on a preposition that's still looking for its object** — "the power / of the Lamb" → merge. BUT phrasal verb particles are fine: "grafted in," "carried away," "cast off" are complete images because the particle completes the verb's meaning, not a prepositional phrase seeking an object. Similarly, stranded prepositions in relative clauses are fine: "the state...they are in" — the preposition has already connected back to its antecedent
 - **Never split auxiliary from main verb** — "did / slay" → merge to "did slay"
 - **Never split "not/neither/nor" from what they negate** — "neither sense / nor insensibility" → merge to "neither sense nor insensibility"
 
