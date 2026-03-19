@@ -212,7 +212,62 @@ Observation stage. Needs a close reading of Mosiah 28-29 alongside the Jaredite 
 
 ---
 
-## 6. The BOM Reader as Unintentional Pilot Study for OTC
+## 6. Colometry as Text-Critical Diagnostic: When Sense-Lines Expose Textual Problems
+
+### The Idea
+
+When you break text into atomic images, you are forced to ask of every phrase: "Does this image cohere? Does this element belong in this sequence?" This is a question that traditional reading — flowing through paragraphs — can gloss over, because the eye keeps moving. But when each line must stand as a complete, defensible image, incoherences become visible.
+
+This means colometric analysis may function as an **independent text-critical diagnostic** — a way of surfacing textual problems (scribal errors, formulaic intrusions, harmonizations) that traditional text criticism identifies through manuscript comparison but that colometry identifies through *semantic pressure*. The editor tries to make the line work as an image, and the line *won't work*, because the text is corrupt or disturbed at that point.
+
+### Case Study: Alma 2:25 — "Flocks" vs. "Families"
+
+The first concrete example emerged during editorial work on Alma 2. In Alma 2:25, spies report that Nephites are "fleeing before them with their flocks, and their wives, and their children, towards our city." Royal Skousen's *Analysis of Textual Variants* (Part Three, pp. 1629-1630) addresses this, confirming that the Original Manuscript reads "flocks" and defending it as the *lectio difficilior* — the harder reading that a scribe would be tempted to smooth to "families."
+
+What struck Stan during colometric editing: when you try to break this into sense-lines, "their flocks, and their wives, and their children" creates a list where one element (flocks) is semantically incongruent with the other two (wives, children). The image doesn't cohere — you're seeing livestock mixed with human dependents in what is supposed to be a single "refugee caravan" image. The colometric editor's instinct is to pause and ask: *is this really one image, or is something wrong with the text?*
+
+The Gemini conversation surfaced a plausible counterargument to Skousen's *lectio difficilior* defense:
+
+1. **Formulaic overextension**: "Flocks, wives, and children" is a standard Pentateuchal baggage-list formula (cf. Genesis 47:1). A scribe — or even the original dictator — might have instinctively inserted "flocks" because the formula was ingrained, regardless of whether flocks were actually present in this tactical context.
+
+2. **Absence in the parallel**: In Alma 2:27, when the same force arrives for battle, "flocks" disappear from the description. If flocks were a defining characteristic of the refugee flight in v. 25, their absence two verses later is either a narrative inconsistency or evidence that "flocks" was a formulaic intrusion in v. 25 that the text itself doesn't sustain.
+
+3. **Lectio difficilior protecting a manifest error**: The counterargument is that *lectio difficilior* can sometimes protect an error rather than an original reading. If a word is "difficult" because it's a contextually inappropriate formulaic slip, then the "easier" reading may be what the author intended.
+
+### The Broader Principle
+
+This case illustrates something generalizable: **colometric editing creates semantic pressure that exposes textual disturbances**. When you must assign every phrase to an atomic image, formulaic intrusions, harmonizations, and scribal errors become visible because they break the image coherence.
+
+This is directly analogous to how OTC's mnemonic density scoring works on Gospel material. OTC asks: "Does the mnemonic architecture cohere at this point?" If a passage that should be high-density (oral ridge) suddenly drops in density, that's a signal of editorial intervention. Colometry asks the parallel question: "Does the image cohere at this point?" If a line that should present one atomic image contains a semantically incongruent element, that's a signal of textual disturbance.
+
+### Potential Paper: "Colometry as Text-Critical Tool"
+
+A paper could:
+
+1. **Define the method**: Colometric editing as a form of "semantic stress testing" — applying image-coherence pressure to every phrase and documenting where the text resists
+2. **Catalog cases**: Systematically collect instances across the BOM Reader editorial process where colometric editing flagged a phrase as problematic, then check whether Skousen's ATV addresses the same passage. Cases where colometry independently flags what manuscript evidence also flags would be strong validation.
+3. **Test against controls**: Apply the same colometric pressure to passages where the text is stable (no manuscript variants) and confirm that the method does NOT flag false positives in clean text. The Small Plates audit (1 fix in 1,690 verses) is already evidence of low false-positive rate.
+4. **Propose colometric text-critical criterion**: Just as OTC proposes "mnemonic-architecture preservation" as a new text-critical criterion, this paper would propose "image-coherence under colometric pressure" as another. Where *lectio difficilior* asks "which reading is harder?", the colometric criterion asks "which reading produces a coherent atomic image?"
+5. **Engage Skousen directly**: The BOM Reader project and Skousen's Critical Text Project are working on the same text from different angles. Cases where they converge (both flag the same passage) or diverge (colometry flags something Skousen doesn't, or vice versa) would be mutually illuminating.
+
+### Connection to OTC
+
+This paper idea connects to the dissertation in two ways:
+
+1. It demonstrates that colometric analysis has **diagnostic power** beyond readability — it can detect textual disturbances. This strengthens OTC's Chapter 9 argument that colometry is not just aesthetic formatting but a genuine analytical tool.
+2. It establishes a new text-critical criterion that complements OTC's mnemonic-preservation criterion. Together they form a family of "structural coherence" criteria that operate where traditional text-critical tools (stemmatic analysis, scribal-tendency analysis) are blind — at the level of the text's internal architecture rather than its external transmission history.
+
+### Status
+
+One case study identified (Alma 2:25). More will likely emerge as Alma through Moroni editorial work continues. Worth collecting cases systematically before deciding whether there's enough for a standalone paper.
+
+### Methodology Note
+
+Important: not every colometric "bump" is a textual problem. Sometimes an image is deliberately complex or jarring. The method requires distinguishing between (a) text that is hard to break because it's *dense* (legitimate complexity — leave it alone) and (b) text that is hard to break because an element *doesn't belong* (possible corruption — investigate). The Alma 2:25 case is type (b): "flocks" doesn't belong in a list of human dependents in a military context, and the parallel in v. 27 confirms its absence.
+
+---
+
+## 7. The BOM Reader as Unintentional Pilot Study for OTC
 
 ### Background: Stan's Dissertation
 
