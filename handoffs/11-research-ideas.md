@@ -211,4 +211,88 @@ Observation stage. Needs a close reading of Mosiah 28-29 alongside the Jaredite 
 
 ---
 
+## 6. The BOM Reader as Unintentional Pilot Study for OTC
+
+### Background: Stan's Dissertation
+
+Stan is developing a doctoral dissertation proposing **Oral Transmission Criticism (OTC)** as a new critical method for detecting, measuring, and analyzing oral-mnemonic architecture in ancient texts. The prospectus (v7.1, "Oral Transmission Criticism: A New Method for Detecting Mnemonic Architecture in Ancient Texts, with Calibration Against Arab-Islamic Transmission and Application to Early Christian Gospels") frames OTC as the corrected fulfillment of Form Criticism's original promise — a neo-Form Criticism that supplies the empirical rigor the original method lacked.
+
+OTC's core insight: oral traditions that successfully preserve material across transmission chains do so through specific, identifiable, and quantifiable textual mechanisms — phonetic patterning, formulaic repetition, structural parallelism, ellipsis, grammatical shifts — that function as mnemonic scaffolding. These mechanisms are not hypothetical; they are documented and measurable in traditions where oral preservation is historically attested (Arab-Islamic materials serve as the calibration standard).
+
+The dissertation proceeds: (1) calibrate against Arab-Islamic materials where mnemonic engineering is undisputed, (2) develop a diagnostic toolkit (mnemonic density scoring, retroversion as "mnemonic archaeology," directionality testing, cross-textual inverse predictions), (3) apply to Gospel material showing Mark preserves Aramaic-substrate mnemonic architecture, John preserves Greek-native mnemonic architecture, and Matthew/Luke systematically literize (remove mnemonic features).
+
+### The Colometry Connection
+
+Chapter 9 of the prospectus ("Colometry as Independent Corroboration — and Evidence of Convergence") argues that colometric scholarship is already approaching OTC's territory without possessing the framework to articulate what it's finding. The key passage from the prospectus:
+
+> "Colometric scholars can feel that these structures mean something beyond rhetorical ornamentation — that the segmentation patterns reflect something fundamental about how the texts were composed and used — but without a mnemonic-functional framework, the observation has nowhere to go. The data is accumulating; the interpretive paradigm is missing. OTC provides that paradigm."
+
+And:
+
+> "The côlon is not merely a rhetorical unit but a memory unit; the period is a mnemonic chunk sized for human working memory; and the Gorgianic figures colometric scholars catalog are redundancy mechanisms serving the same functional role as formulaic repetition in Qur'anic saj'. Colometry tells us where the oral units are. OTC tells us why the units are there."
+
+The relationship is symbiotic: colometry gives OTC empirical precision about unit boundaries; OTC gives colometry the functional explanatory framework it currently lacks.
+
+### How the BOM Reader Project Functions as OTC Pilot
+
+The BOM Reader project was not designed as an OTC test. It was designed as a reading edition. But the editorial process forced Stan to confront exactly the questions OTC is designed to answer — and the results constitute a live, documented, large-scale demonstration of colometric analysis producing structurally significant findings.
+
+**What the BOM Reader demonstrates:**
+
+1. **Consistent colometric criteria applied at scale produce author-differentiated results.** The atomic-image/atomic-breath test was applied uniformly across 1,690+ verses in the Small Plates and hundreds more in Mosiah. Different attributed authors produce measurably different colometric profiles — not because the criteria changed, but because the underlying rhetorical architecture is different. This is exactly the capability OTC needs colometry to have.
+
+2. **FEFs are the colometric analogue of OTC's "oral ridges."** OTC predicts that oral-traditional material will have zones of high mnemonic density (preserved sayings, formulaic constructions) and zones of low density (connective narrative tissue). The BOM Reader found exactly this pattern: FEFs (high density, irreducible, resistant to editorial simplification) followed by expansion lines (lower density, more flexible, breakable by standard rules). The terminology is different — "FEF" vs "oral ridge" — but the structural phenomenon is the same: points where the text's architecture is load-bearing and cannot be simplified without destroying the structure.
+
+3. **The three-register discovery (FEF / expansion / divine speech) demonstrates that colometric analysis can detect voice-switching within a single editor's work.** Mormon produces two different colometric patterns depending on whether he's narrating or quoting the Lord. This is directly analogous to what OTC would look for in Gospel material: can the method detect when Mark is preserving oral-traditional sayings versus composing narrative framing? If colometric analysis can detect this kind of register switching in the Book of Mormon, it can plausibly detect it in other texts.
+
+4. **The FEF-Hebrew parallel was discovered independently.** English readability criteria (atomic image / atomic breath) produced structures that match Hebrew narrative conventions (wayyiqtol + circumstantial protasis). This convergence was not sought — it was noticed after the editorial decisions were already made. OTC's prospectus argues that when an independent scholarly tradition produces results that a new method would have predicted, this constitutes strong evidence that both are detecting real phenomena rather than generating artifacts. The BOM Reader's FEF discovery is a concrete instance of exactly this kind of independent convergence.
+
+5. **The audit methodology demonstrates that colometric datasets can be validated.** The Small Plates audit (1,690 verses, 1 fix needed) and the Gemini control experiment (hallucinated every specific recommendation) together show that (a) the editorial decisions are internally consistent and (b) they cannot be replicated by generic syntactic rules — they require semantic understanding. This matters for OTC because it establishes that human editorial colometry is a reliable analytical instrument, not a subjective impressionistic exercise.
+
+### What This Means for the Dissertation
+
+The BOM Reader work cannot go in the dissertation directly — the dissertation is about OTC applied to Gospels, calibrated against Arab-Islamic materials. But it strengthens the dissertation in several indirect ways:
+
+1. **Credentialing.** Stan is not just theorizing about colometry in Chapter 9; he has actually performed large-scale editorial colometry on a complete multi-author text. This is unusual — most colometric scholars work on individual passages or pericopes, not entire books.
+
+2. **Methodology demonstration.** The BOM Reader shows that the colometric approach described in the prospectus (applying consistent segmentation criteria, measuring what emerges, comparing across attributed authors) actually *works* — it produces differentiated results, it reveals structural patterns, and it can be validated through systematic audit.
+
+3. **The FEF-aware pre-breaking concept.** If FEFs can be detected programmatically in the Book of Mormon, the same detection logic could be applied to Gospel texts — identifying likely mnemonic load-bearing constructions in Mark, for example, before human analysis begins. This is a practical tool that could emerge from the BOM Reader project and feed directly into OTC's toolkit.
+
+### Publication Strategy: How the Two Projects Feed Each Other
+
+**Option A: BOM Reader colometric stylometry paper published first.** This establishes Stan's colometric credentials and demonstrates the methodology working on a non-Gospel text. The FEF concept is introduced. When the dissertation drops, the colometric chapter (Ch. 9) can cite the published paper as demonstrating that the method works at scale.
+
+**Option B: Conference paper at DH or SBL.** Introduce FEFs as a general concept at a digital humanities or biblical studies conference, with the BOM as the demonstration case. This positions Stan at the colometry/orality intersection before the dissertation is defended.
+
+**Option C: Methodological appendix.** The BOM Reader work is documented as a "methods development" appendix to the dissertation, showing how the colometric instincts that inform Chapter 9 were developed through practical editorial work.
+
+**Option D: Post-dissertation research program.** OTC + colometric stylometry gets applied to Hebrew Bible, Homeric, and other corpora after the dissertation establishes the theoretical framework. The BOM Reader is the proof-of-concept that the method works at scale, and its codebase (v8 reformatter, FEF-aware pre-breaker, line-length analysis scripts) becomes transferable tooling.
+
+These options are not mutually exclusive. A conference paper (B) could precede a journal article (A), which could be cited in the dissertation (C), which could lead to a research program (D).
+
+### The Key Intellectual Chain
+
+```
+OTC (theory of how texts work orally)
+  → Colometry (method for making oral structure visible on the page)
+    → FEFs (emergent pattern that colometry reveals)
+      → Colometric Stylometry (FEFs vary by author = authorial fingerprint)
+        → Independent convergence with Hebrew narrative conventions
+```
+
+Each link feeds the next. The BOM Reader project is building the middle three links at industrial scale. The dissertation provides the first link (OTC as theoretical framework) and applies the whole chain to a different corpus (Gospels). Together they make a unified research program in which colometric analysis — grounded in OTC's functional explanatory framework — becomes a general tool for recovering oral-compositional structure in ancient texts.
+
+### Critical Self-Assessment
+
+**Risk:** Confirmation bias. Stan developed the FEF hypothesis while editing the same text the hypothesis describes. A skeptic could argue the editing shaped the data to fit the theory.
+
+**Defense:** (1) The editing rules were established before the FEF pattern was noticed — the text resisted breaking under rules that were articulated for other reasons. (2) The Small Plates audit shows the rules are consistently applied even where they don't produce FEFs, establishing that the rules are not designed to create the pattern. (3) The pre-edit and post-edit versions of Mosiah should both show the FEF pattern (just more pronounced after editing), confirming that editing clarified rather than created the signal. (4) If someone else applies the same four-criterion FEF definition to the same text, they should get the same results — the definition is replicable.
+
+**Risk:** The BOM is a religiously contested text. Using it as a colometric demonstration case could be perceived as apologetics regardless of framing.
+
+**Defense:** (1) The FEF definition is theory-neutral. (2) The paper presents interpretive options without choosing. (3) The "JS absorbed KJV patterns" explanation is given equal weight. (4) The interesting finding is the author-differentiation, which is remarkable regardless of text origin. (5) Publishing in a DH venue rather than an LDS venue signals methodological intent.
+
+---
+
 *Created: 2026-03-18*

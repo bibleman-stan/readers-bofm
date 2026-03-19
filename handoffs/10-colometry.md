@@ -286,5 +286,13 @@ An FEF-aware pre-breaker would:
 
 This would reduce manual editing burden for unedited books (Alma through Moroni) by preserving FEFs automatically and focusing human review on the expansion lines where editorial judgment is genuinely needed.
 
+#### Connection to Oral Transmission Criticism (OTC)
+
+The colometric methodology documented in this file connects to a broader academic research program. Stan is developing Oral Transmission Criticism (OTC) as a doctoral dissertation — a new critical method for detecting oral-mnemonic architecture in ancient texts, calibrated against Arab-Islamic materials and applied to early Christian Gospels.
+
+OTC's Chapter 9 argues that colometry tells us *where* oral units are; OTC tells us *why* they're there. The BOM Reader's colometric work is an unintentional pilot study demonstrating that consistent editorial colometric criteria applied at scale produce author-differentiated results — exactly the capability OTC needs colometry to have. FEFs are the colometric analogue of OTC's "oral ridges" (zones of high mnemonic density that resist editorial simplification).
+
+The full intellectual chain: OTC (theory) → colometry (method) → FEFs (emergent pattern) → colometric stylometry (author differentiation) → independent convergence with Hebrew narrative conventions. See `11-research-ideas.md` § 6 for the detailed connection.
+
 ---
 *Created: 2026-03-18*
