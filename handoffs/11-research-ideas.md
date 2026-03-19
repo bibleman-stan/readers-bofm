@@ -160,4 +160,24 @@ Observational. The pattern is visible in the edited Mosiah text. Needs quantitat
 
 ---
 
+## 5. Intertextual Bleed: Jaredite Influence on Mosiah's Final Chapters
+
+### The Observations
+
+Two verses in the closing chapters of Mosiah suggest that Mormon's (or Mosiah's) knowledge of the Jaredite record is actively shaping the Nephite narrative at that point — and that this influence is detectable in the text:
+
+**Mosiah 28:19** — Mormon signals his intention to write a Jaredite history. He never does. This unfulfilled editorial intention may explain why Moroni later takes up the task himself (the book of Ether). If Mormon planned to write it but didn't get to it, Moroni's decision to include Ether isn't arbitrary — it's completing his father's stated project.
+
+**Mosiah 29:7** — Mosiah warns about the dangers of kings, specifically the danger of a king leading the people into destruction. The argument has *some* Nephite precedent — the wicked king Noah episode that Mosiah recently became aware of through the Limhi/Zeniff records. But the *scale* of the warning in Mosiah 29 seems to exceed what Noah alone would warrant (Noah was a local ruler of a breakaway colony, not a king over all the Nephites). The Jaredite record provides a far more dramatic precedent, which Mosiah had just finished translating. The Jaredite history is essentially a case study in how wicked kings destroy nations. Mosiah's political argument in chapter 29 reads as if he's applying lessons from the Jaredite record to Nephite governance — a real-time policy application of translated ancient history.
+
+### Why This Matters
+- It suggests the Jaredite record was not just a curiosity but actively influenced Nephite political thought at the moment of its translation
+- It creates a narrative thread from Mosiah 28 (translation) → Mosiah 29 (application) → Ether (Moroni completing Mormon's project) that spans the entire second half of the Book of Mormon
+- It's a test of internal consistency: if Joseph Smith were composing freely, there's no obvious reason to plant an unfulfilled editorial intention in Mosiah 28 that gets resolved by a different character hundreds of pages later in Ether
+
+### Status
+Observation stage. Needs a close reading of Mosiah 28-29 alongside the Jaredite king narratives in Ether to document the specific parallels. Could be a standalone short paper or a section within a larger study of Mormon's editorial awareness.
+
+---
+
 *Created: 2026-03-18*
