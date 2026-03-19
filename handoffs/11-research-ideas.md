@@ -173,6 +173,7 @@ This framing avoids the apologetics trap while still allowing faith-compatible r
 - If the framers recover a genuine compositional structure, this could motivate a "re-paragraphed" presentation of Mormon's text that organizes by framer units rather than Pratt's verses
 - This would be an entirely new way to visualize the Book of Mormon's structure — one derived from the text's own rhetoric rather than imposed by 19th-century editorial convention
 - It's also another independent line of evidence for the text having genuine compositional structure (whether ancient or otherwise) — mechanical or random text wouldn't produce this systematic pattern
+- **Thought experiment (shelved for post-editing):** After all editorial re-breaks are complete, create an alternative versification scheme where only FEFs receive verse numbers — effectively recovering Mormon's compositional paragraphs as the structural unit rather than Pratt's 1879 verse divisions. This would be a concrete, visual demonstration of how FEF-based segmentation differs from conventional versification. Even if never published as a "real" versification, the comparison between FEF-based and Pratt-based verse boundaries would be powerful data for the paper — showing exactly where the two systems agree and diverge.
 
 ### Three Registers Within Mormon's Text
 The Mosiah edits reveal not just a two-part pattern (FEF + expansion) but potentially three distinct colometric registers operating simultaneously:
