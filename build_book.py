@@ -30,7 +30,7 @@ QUIET_ARCHAICS = {
     'nevertheless', 'exceedingly', 'exceeding', 'insomuch',
     'spake', 'beheld', 'smitten', 'smote',
     'hither', 'thither', 'whither', 'whence',
-    'brethren', 'thereof', 'whereby', 'wherewith',
+    'brethren', 'thereof', 'whereby', 'wherewith', 'amongst',
     'it came to pass', 'it shall come to pass',
 }
 
@@ -390,6 +390,7 @@ SIMPLE_SWAPS = [
     ("giveth", "gives"), ("goeth", "goes"), ("mattereth", "matters"),
     # ── Isaiah archaic vocabulary ──
     ("twain", "two"), ("Twain", "Two"),
+    ("amongst", "among"), ("Amongst", "Among"),
     ("betwixt", "between"), ("Betwixt", "Between"),
     ("howbeit", "however"), ("Howbeit", "However"),
     ("cockatrice", "viper"), ("Cockatrice", "Viper"),

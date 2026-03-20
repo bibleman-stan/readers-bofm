@@ -133,4 +133,10 @@ Utility script for automated sense-line rebalancing:
 - Rebuilt all HTML from updated Mosiah source text via `build_book.py --all`
 
 ---
-*Last updated: 2026-03-18*
+### Update — 2026-03-19
+- Added `amongst → among` as a quiet swap (no dotted underline) — 14 occurrences across the corpus
+- Added to `QUIET_ARCHAICS` set in `build_book.py` (line ~33) and swap pair added near `betwixt → between` in the Isaiah archaic vocabulary section
+- Rationale: "amongst" is a high-frequency archaic preposition equivalent to "among"; no visual decoration needed (same treatment as "unto", "thee", etc.)
+
+---
+*Last updated: 2026-03-19*
