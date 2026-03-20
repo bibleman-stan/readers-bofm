@@ -296,3 +296,39 @@ The full intellectual chain: OTC (theory) → colometry (method) → FEFs (emerg
 
 ---
 *Created: 2026-03-18*
+
+---
+### Update — 2026-03-20
+
+#### Speech Attribution Formulas vs. FEFs
+
+A distinction emerged from Alma 3:15-16 editorial work that clarifies FEF treatment:
+
+**FEFs are the narrator's voice.** "For behold," "And now," "Wherefore," "Nevertheless" — these are the literary narrator (Mormon, Nephi, Alma) shaping discourse. They attach to what they introduce because narrator and content are continuous. The frame and its content belong to the same voice.
+
+**Speech attribution formulas introduce a different voice.** "And again:" "Thus saith the Lord:" "He said:" — these are handoffs to quoted speech. The break between the attribution and the speech marks a *voice shift*. The colon is the textual signal. Rule: **attribution formula takes its own line; quoted content begins fresh on the next line.**
+
+This is not FEF behavior — it's the opposite. FEFs bind forward; speech attributions *release* into a new voice.
+
+#### The Literary Narrator vs. The Oracular Voice
+
+The FEF/quotation asymmetry reveals a deeper pattern:
+
+- **The narrator deploys FEFs** — orienting, reasoning, persuading, connecting. FEFs are markers of a literary mind at work. A narrator using "Wherefore" or "For behold" is signaling logical relationship and shaping the listener's expectations. This is composed rhetoric, not improvised speech.
+- **Divine speech quotes short and compressed.** It doesn't need to orient you. It declares. The oracular voice resists elaboration — it pronounces, then stops.
+
+This asymmetry — literary narrator vs. oracular divine voice — is theologically and stylistically significant. FEFs cluster in narrative voice; direct divine speech tends toward shorter, less-structured lines.
+
+**Research implication:** FEF distribution across the text is potentially a marker of *narrative voice* specifically. Mapping FEF density could help distinguish narrator passages from embedded speeches, and narrator voice from divine voice, across the corpus. This is a dimension of the FEF paper worth developing: FEFs as markers of literary self-consciousness in the narrator, absent in the oracular.
+
+#### Quotations Tend Toward Shorter Breaks
+
+Observed pattern across Alma editorial work: direct speech — especially divine speech — tends to break into shorter, more reducible lines than narrative prose. This may reflect:
+- Original delivery of quoted speech with more deliberate, measured cadence
+- The oracular register resisting elaboration
+- The narrator's literary shaping being absent inside the quotation
+
+This is a working observation, not yet a settled rule. Track as editorial work continues into Alma.
+
+---
+*Last updated: 2026-03-20*
