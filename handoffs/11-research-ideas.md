@@ -390,3 +390,27 @@ The BOM Reader editorial process is performing exactly this diagnostic — apply
 ---
 
 *Created: 2026-03-18*
+
+---
+### Update — 2026-03-20
+
+#### FEF Density as a Narrator-Voice Marker
+
+**The insight:** FEFs are the literary narrator's tool. Divine speech and quoted speech don't use them — they declare without orienting, pronounce without persuading. This asymmetry is potentially quantifiable across the corpus.
+
+**The research question:** Does FEF density vary systematically by voice type — narrator, embedded speech, divine quotation? If so, colometric analysis can distinguish narrative voice from quoted voice at scale, without requiring prior source-critical assumptions.
+
+**The method:** Tag each verse-block in the corpus by voice type (narrator, character speech, divine speech, prayer). Count FEF instances per voice type. Calculate density (FEFs per 100 lines). If the asymmetry holds at corpus scale, it's a measurable, replicable signal.
+
+**Why it matters:**
+- It gives FEF analysis a second use beyond readability — as a *stylometric probe* into voice distribution
+- It's theory-neutral: whether the text is ancient or 19th-century, the pattern either holds or it doesn't
+- It connects to OTC's interest in mnemonic architecture — FEFs as markers of the narrator's *conscious literary shaping*, absent in oracular and direct-speech registers
+- It extends the author-differentiation hypothesis: not just "which author uses FEFs more" but "which voice-type each author uses FEFs in"
+
+**Connection to existing research ideas:** This is a quantitative extension of § colometric stylometry (FEF frequency per author) and the FEF paper outline. Could be a standalone section or a second paper.
+
+**Status:** Working hypothesis, emerged 2026-03-20 from Alma 3:15-16 editorial work. Not yet tested against corpus data.
+
+---
+*Last updated: 2026-03-20*
