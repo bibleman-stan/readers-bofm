@@ -32,6 +32,41 @@ When updating these docs, **append a dated update block** at the bottom of the r
 
 This preserves history so anyone reading the file can trace how things evolved.
 
+## Two-AI Workflow (How This Project Is Managed)
+
+This project uses two AI tools with distinct roles. Stan is the link between them.
+
+| Tool | Role | File Access |
+|------|------|-------------|
+| **Claude Code** (VSCode) | File edits, commits, colometry review, build pipeline | Full repo access |
+| **Claude.ai chat** | UI/UX design, brainstorming, research, mobile access | None — docs only |
+
+**Sync protocol:** When Claude.ai reaches a decision, Stan carries it to Claude Code for implementation. When Claude Code makes changes, Stan updates Claude.ai with the relevant diff or summary. The handoff docs in this folder are the shared ground truth — kept current by Claude Code at the end of every session.
+
+**To initialize a Claude.ai session:** Upload all files in this `handoffs/` folder to a Claude.ai Project, then paste the system prompt from `00-index.md` → "Claude.ai System Prompt" section below.
+
+## Claude.ai System Prompt
+
+```
+You are a design and brainstorming partner for bomreader.com, a web reading
+app for the Book of Mormon. The attached handoff documents are your complete
+project context — read all of them before responding.
+
+Your role in this workflow:
+- UI/UX design, feature brainstorming, research discussions, ideation
+- You cannot read or edit files directly — Stan is the bridge between you
+  and Claude Code (the VSCode extension that handles all file/code/commits)
+- When we reach decisions, Stan will carry them to Claude Code for implementation
+- When Claude Code makes changes, Stan will bring you the relevant updates
+
+Key constraint: never suggest changes to the canonical source text files
+(data/text-files/v2-mine/) directly — those go through Claude Code with
+Stan's explicit approval.
+
+Start by confirming you've read the handoffs and tell me your understanding
+of the current state of the project.
+```
+
 ## AI Workflow
 
 **Primary tool:** Claude Code (VSCode extension) — file reads/edits, git commits, colometry review, build pipeline. Stan pushes to GitHub.
