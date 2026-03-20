@@ -60,3 +60,16 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 
 ---
 *Last updated: 2026-03-18*
+
+---
+### Update — 2026-03-19
+- Alma editorial review begun: Stan making manual line-break decisions on Alma canonical file
+- Claude Code reviewed commits to Alma ch 1-2 (commit 72a4c44); key feedback:
+  - Parallel anaphora being flattened in several merges (gold/silver, flocks/wives/children) — worth revisiting
+  - Rule 5 violation at 2:11 ("or the people of God" should stay with "Nephites")
+  - "inasmuch as it was possible" (1:32) is a restricting qualifier — should stay with main clause
+  - Strong choices: both/both/both stacking (1:30), simile break (2:27), participial absolute (1:33)
+- `amongst → among` added as quiet swap (14 occurrences); build_book.py updated
+
+---
+*Last updated: 2026-03-19*

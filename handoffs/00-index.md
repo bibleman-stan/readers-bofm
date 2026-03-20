@@ -32,6 +32,18 @@ When updating these docs, **append a dated update block** at the bottom of the r
 
 This preserves history so anyone reading the file can trace how things evolved.
 
+## AI Workflow
+
+**Primary tool:** Claude Code (VSCode extension) — file reads/edits, git commits, colometry review, build pipeline. Stan pushes to GitHub.
+
+**Mobile/brainstorming:** Claude.ai chat — accessible on phone for design, research threads, ideation. Use Claude.ai Projects with key handoff docs uploaded (especially `10-colometry.md`) for persistent context. Conversations can be moved into the Project later from desktop.
+
+**COWORK deprecated** as of 2026-03-19. Claude Code covers all its GitHub capabilities with better project memory.
+
+**Session continuity:** Handoff docs are the memory layer between sessions. Claude Code updates these at session end; Stan pushes. Each new session: read CLAUDE.md + all handoffs, then proceed.
+
+**Obsidian vault:** Pointed at repo root (`C:\Users\bibleman\repos\readers-bofm`). `.obsidian/` is gitignored. "Show all file types" enabled so `.txt` source files are visible alongside `.md` handoffs.
+
 ## Old Handoff Files
 The following files in the repo root are superseded by this directory:
 - `COWORK-HANDOFF.md` — comprehensive but monolithic, covers Feb 28 - Mar 16

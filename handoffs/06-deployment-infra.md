@@ -40,3 +40,14 @@ Three commits need pushing:
 
 ---
 *Last updated: 2026-03-18*
+
+---
+### Update — 2026-03-19
+- COWORK deprecated; Claude Code (VSCode extension) is now the primary AI tool for all file/code/commit work
+- Established workflow: Claude Code commits, Stan pushes via GitHub Desktop
+- Obsidian vault created pointed at repo root; `.obsidian/` and `Welcome.md` added to `.gitignore`
+- Stale `bom-reader/` subfolder (prior vault artifact) removed from repo
+- CLAUDE.md added to repo root as Claude Code orientation document for new sessions
+
+---
+*Last updated: 2026-03-19*
