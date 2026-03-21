@@ -414,3 +414,24 @@ The BOM Reader editorial process is performing exactly this diagnostic — apply
 
 ---
 *Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-20
+
+#### Colometric Compressibility as a Stylistic Marker
+
+**The observation:** Mormon's narrative prose (large plates abridgment) resists colometric compression more than small-plates authors. Long-but-irreducible lines appear more frequently in Mormon's voice — complex participial frames, double-observation constructions ("he saw X / and he saw also Y"), multi-clause elaborations. The small plates authors (Nephi, Jacob) tend toward shorter, more direct declarations with less syntactic suspension.
+
+**The hypothesis:** *Colometric compressibility* — the average minimum line length that the coherence principle forces — is a stylistic marker that varies by author/voice. Mormon's prose has a higher compressibility floor (longer irreducible units) than small-plates prose. This may reflect Mormon's literary elaboration as an abridger working at scale vs. the more direct, oracular register of first-person small-plates authors.
+
+**Connection to existing ideas:**
+- Extends the FEF density hypothesis (FEFs as narrator-voice markers) with a second metric
+- Adds a dimension to colometric stylometry: not just FEF frequency but *syntactic density* — how long coherence forces lines to be before they can break
+- The "divine speech compresses shorter" pattern observed in Alma 3 may be one end of a spectrum, with Mormon's narrative prose at the other
+
+**The metric:** Average minimum coherent line length per chapter/book, measured by applying the atomic-thought test systematically. Chapters where the coherence principle consistently produces lines of 15+ words may indicate Mormon's editorial hand. Chapters where lines compress to 8-10 words may indicate a different voice or register.
+
+**Status:** Working hypothesis, emerged 2026-03-20 from Alma 4:11 editorial work. Connects "Mormonistic" vs. "Nephic/small plates" stylistic registers to measurable colometric properties.
+
+---
+*Last updated: 2026-03-20*
