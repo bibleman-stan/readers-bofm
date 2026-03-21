@@ -332,3 +332,28 @@ This is a working observation, not yet a settled rule. Track as editorial work c
 
 ---
 *Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-20 (second entry)
+
+#### Coherence Is Primary: Resolving the Breath vs. Atomic Thought Tension
+
+When breath unit length and coherence appear to conflict, **coherence wins**. This is not an exception to the foundational test — it's what the foundational test actually says.
+
+A line that fails the atomic thought test cannot be rescued by being short. A fragment is not a breath unit in any meaningful sense — the reader has nowhere to land. "And now as many of the Lamanites and the Amlicites" is not a breath unit; it's a suspended quantifier waiting for resolution. Shortness without coherence is just a broken line.
+
+The practical rule: **never break a line to solve a length problem if the break produces a fragment.** Length is a signal that something complex is happening — not always a problem to be solved by breaking. Sometimes the right response to a long line is to recognize that its length is irreducible.
+
+#### Connection to FEF Principles
+
+This resolves what might look like a tension between FEF rules and breath-unit concerns. They are the same principle operating at different syntactic levels:
+
+- FEF rule: don't break the frame from its content (clause level)
+- Coherence rule: don't break a subject from its defining relative clause (phrase level)
+
+In both cases the unit resists breaking because every element is syntactically dependent on every other. The atomicity test independently arrives at the same conclusion as syntactic analysis: the unit is complete only when the meaning resolves.
+
+**Skousen's breaks on defining relative clauses** (e.g., Alma 3:3 "And now as many of the Lamanites and the Amlicites / who had been slain upon the bank of the river Sidon") are therefore systematically wrong by this principle — not just awkward, but failures of the foundational test. The v2 merge is correct.
+
+---
+*Last updated: 2026-03-20*
