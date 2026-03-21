@@ -433,6 +433,9 @@ SIMPLE_SWAPS = [
     ("peeped", "chirped"), ("Peeped", "Chirped"),
     ("Lo", "See"), ("lo", "see"),
     # ── Full BofM archaic vocabulary ──
+    ("abasing", "humbling"), ("Abasing", "Humbling"),
+    ("abased", "humbled"), ("Abased", "Humbled"),
+    ("abase", "humble"), ("Abase", "Humble"),
     ("nigh", "near"), ("Nigh", "Near"),
     ("thence", "from there"), ("Thence", "From there"),
     ("hence", "from here"), ("Hence", "From here"),

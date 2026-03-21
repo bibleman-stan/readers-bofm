@@ -140,3 +140,13 @@ Utility script for automated sense-line rebalancing:
 
 ---
 *Last updated: 2026-03-19*
+
+---
+### Update — 2026-03-20
+- Added `abase/abasing/abased → humble/humbling/humbled` as visible swap (dotted underline)
+- One occurrence in corpus: Alma 4:13 "abasing themselves" → "humbling themselves"
+- All inflected forms added defensively in "Full BofM archaic vocabulary" section of build_book.py
+- Rationale: genuinely archaic, rare enough that readers would stumble; visible swap appropriate
+
+---
+*Last updated: 2026-03-20*
