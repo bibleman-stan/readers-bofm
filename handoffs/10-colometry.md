@@ -457,3 +457,25 @@ All mechanical slippage, no rule failures. The existing rubric caught every case
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-21 (third entry)
+
+#### New Settled Rules from Alma Editorial Work & Full-Corpus Scrub
+
+**Rule 15: Vocative units are indivisible.** Multi-word divine address formulas ("O Lord God," "O Lord our God,") stay whole on one line. The vocative can stand as its own line (consistent with Rule 3), but it must not be split mid-address. "O Lord" / "God" is always wrong; "O Lord God," / "how long wilt thou suffer..." is correct.
+
+**Rule 16: "Dangling that" after AICTP.** When "And it shall come to pass that" ends a line with "that" trailing, the fix is to break BEFORE "that" so it leads the next line: "And it shall come to pass" / "that [content]." The subordinator "that" introduces a clause and must lead, not trail. This was the most common mechanical error across the corpus (~10 instances in Mosiah alone).
+
+**Rule 17: "Caused that" complement integrity.** "Caused" requires its complement clause on the same line (or rebroken so "caused that" stays together). Same principle as "began to" — the governing verb needs its complement. "He caused" / "that his servants should..." fails; "he caused that his servants should stand forth" is correct.
+
+**Rule 18: Fixed idiom integrity.** Certain multi-word expressions are indivisible: "put to death," "from time to time," "prevailed upon," "put an end to." Never break inside a fixed idiom regardless of line length.
+
+#### Settled Editorial Decisions (promoted from working hypothesis)
+
+**"I say unto you" isolation pattern — SETTLED.** Isolated on its own line when introducing substantial content; merged when followed by a short response ("Nay," "Yea," "they are blessed"). This pattern is now consistent across Mosiah and Alma with no exceptions. It is not voice-dependent — it operates the same way in King Benjamin's speech, Abinadi's trial, and Alma's sermon.
+
+**"According to" as causal break — EDITORIAL JUDGMENT.** "According to his faith / there was a mighty change wrought in his heart" (Alma 5:12) — Stan's decision to treat "according to" as functionally causal. Not codified as a universal rule, but defensible when "according to" is doing causal work (stating WHY something happened, not just HOW). Watch for more instances before generalizing.
+
+---
+*Last updated: 2026-03-21*

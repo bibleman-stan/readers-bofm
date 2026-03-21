@@ -107,6 +107,10 @@ Breaking *on* verbs (giving each verb its own line) is often correct — verbs a
 12. **Never split auxiliary from main verb** ("did / slay" → merge to "did slay")
 13. **Parallel structures stack vertically** — mirror parallel elements across lines to show rhetorical pattern
 14. **Qualifying phrases that escalate** earn their own line; qualifying phrases that merely restrict tend to stay with what they qualify
+15. **Vocative units are indivisible** — "O Lord God," and "O Lord our God," stay whole; never split mid-address
+16. **"Dangling that" after AICTP** — break BEFORE "that" so it leads the next line: "And it shall come to pass" / "that [content]"
+17. **"Caused that" complement integrity** — "caused" requires its complement clause; same as "began to" rule
+18. **Fixed idiom integrity** — "put to death," "from time to time," "prevailed upon" are indivisible units
 
 ### Three Categories for Proposed Changes
 
