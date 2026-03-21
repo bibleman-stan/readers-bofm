@@ -357,3 +357,23 @@ In both cases the unit resists breaking because every element is syntactically d
 
 ---
 *Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-20 (third entry)
+
+#### FEF Is a Structural Property, Not an AICTP Rule
+
+AICTP ("And it came to pass") constructions are high-frequency FEF candidates because "it came to pass" is always anticipatory — it never resolves without a following clause. But FEF irreducibility is not limited to AICTP. It is a **structural property** that appears in many construction types:
+
+- **Genitive phrases:** "the ninth year / of the reign of the judges" — the head noun doesn't identify without its genitive
+- **Verb + infinitive complement:** "began / to be lifted up" — "began" suspends until the infinitive resolves what was begun
+- **Verb + object:** "did not grant / unto him the office" — the action is incomplete without its object and recipient
+- **Participial frames:** "Alma, having seen the afflictions... / began to be sorrowful" — the participial suspends until the main verb lands
+- **Defining relative clauses:** "as many of the Lamanites / who had been slain" — the referent is unidentified without the clause
+
+**The unifying test is always the same:** can the reader land on this line as a complete unit of meaning? If not — regardless of *why* — the construction is irreducible and the break is wrong.
+
+AICTP is the most visible carrier of this pattern because it is formulaic and frequent. But the colometric principle applies wherever a line fails the atomic thought test due to syntactic suspension, not just at AICTP markers.
+
+---
+*Last updated: 2026-03-20*
