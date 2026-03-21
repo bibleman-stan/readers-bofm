@@ -436,3 +436,24 @@ This is consistent with v2 as already edited — the distinction was operating i
 **Applies equally to "who" relative clauses.** The distinguishing factor is the construction type (relative pronoun introducing a clause), not the specific pronoun. Example: Alma 5:48 — `the Only Begotten of the Father, / full of grace and mercy, and truth` — the appositional phrase functions as an extended adjective completing the portrait, not a new predication. Same merge logic applies.
 
 **Status: WORKING HYPOTHESIS.** Not yet fully settled. Continue tracking examples through Alma to confirm or complicate.
+
+---
+### Update — 2026-03-21 (second entry)
+
+#### Granular Over-Break Scrub Validation
+
+Full audit of 1 Nephi through Alma 5 (~17,000 lines): 43 over-breaks flagged, 40 fixed. Error rate 0.25%. All flags were Category A (editorial slippage). No new systemic patterns emerged. Rubric validated.
+
+**Error types found:**
+- Verb/complement splits (~20) — verb separated from its direct object or complement
+- Dangling conjunctions/subordinators (~10) — "and," "but," "that" trailing at end of line
+- Genitive orphans (~8) — head noun separated from its genitive phrase
+
+All mechanical slippage, no rule failures. The existing rubric caught every case without needing new rules.
+
+**Most common repeating pattern:** The "dangling that" after AICTP — "And it shall come to pass that" / [content] constructions where "that" trailed the previous line instead of leading the next. Fix: break BEFORE "that" so it leads the next line, not trail the previous.
+
+**Isaiah chapters (2 Ne 12-24)** contributed disproportionately to 2 Nephi's flags, consistent with complex syntax processed mechanically before FEF principles existed.
+
+---
+*Last updated: 2026-03-21*

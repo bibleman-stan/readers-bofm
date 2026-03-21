@@ -73,3 +73,21 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 
 ---
 *Last updated: 2026-03-19*
+
+---
+### Update — 2026-03-21
+- Alma 1-5 editorial review COMPLETE (FEF pass, sermonic breaks, consistency audit)
+- Granular over-break scrub of 1 Ne through Alma 5 COMPLETE (43 flags, 40 fixed, 0.25% error rate, rubric validated)
+- FEF consistency pass applied across 1 Ne, 2 Ne, Jacob, Mosiah, Alma 1-5
+- Alma 6-63 FEF/mechanical pre-break pass IN PROGRESS
+- Helaman through Moroni still needs FEF/mechanical pass + editorial review
+- "abase → humble" and "amongst → among" swaps added to build_book.py
+- First Alma contextual gloss added (5:27 walked/halakh)
+- Book introductions HTML saved to data/book-introductions.html
+- Reformatter rules extracted to handoffs/12-reformatter-rules.md
+- External vault content consolidated into repo, vault deleted
+- All HTML rebuilt and cache at v66
+- Multiple commits queued for Stan to push
+
+---
+*Last updated: 2026-03-21*

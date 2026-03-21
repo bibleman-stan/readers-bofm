@@ -150,3 +150,14 @@ Utility script for automated sense-line rebalancing:
 
 ---
 *Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-21
+- Alma 5 editorial pass — sermonic voice breaks applied (parallel stacking, "I say unto you" isolation, vocative separation, rhetorical question isolation)
+- "abase/abasing/abased → humble/humbling/humbled" visible swap confirmed (1 occurrence: Alma 4:13)
+- First non-Isaiah contextual gloss added: Alma 5:27 "walked" — literary category, explains Hebrew halakh idiom
+- FEF consistency pass: 1 Ne 1:4 genitive merge, Alma 4:5/4:6/4:9/4:11 temporal rebreaks, Jacob 2:14 vocative isolation
+- Granular over-break scrub: 40 fixes across 1 Ne through Alma 5 (verb splits, dangling conjunctions, genitive orphans)
+
+---
+*Last updated: 2026-03-21*
