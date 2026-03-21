@@ -269,3 +269,16 @@ Never overwrite history — always append.
 - Never alter punctuation, words, or structure — line breaks only
 - **Colometry review partner:** on request, agree/challenge/suggest on Stan's edits using the settled rules and category framework
 - **Handoff maintenance:** after any session where decisions are made, principles are refined, or new patterns identified, update the relevant handoff file (append dated block, never overwrite history)
+- **"Do an update" means:** update ALL relevant handoffs, memory files, research files, and any other documentation so that a fresh session can resume with full context
+
+---
+
+## Connected Resources
+
+### Academic Vault
+Stan's academic Obsidian vault at `C:\vaults-nano\my_brain\` contains his OTC dissertation materials, bibliographic records (332 sources), scholar hub notes (~230), and 838 zettels. The vault's `CLAUDE.md` has full orientation. Read it for context when work touches Hebrew poetry, oral tradition, stylometry, or the FEF paper.
+
+The BOM Reader `research/` folder is symlinked into the vault at `10_Projects/BOM-Reader-Research/`. Files live in the vault; the repo path is a symlink. The folder is gitignored.
+
+### Two-AI Workflow
+Claude Code (this tool) handles file access, commits, mechanical analysis. Claude.ai chat handles brainstorming, design, paper strategy. Stan bridges between them. Handoff docs and research files are the shared ground truth — keep them current so either AI can spin up with full context.
