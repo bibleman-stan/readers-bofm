@@ -479,3 +479,34 @@ All mechanical slippage, no rule failures. The existing rubric caught every case
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-21 (fourth entry)
+
+#### Full-Corpus Mechanical Scrub: Patterns & Insights
+
+178 mechanical fixes applied across all 15 books (6,603 verses). The error types never changed from the initial validation set — the rubric scaled without requiring new rules.
+
+**Error distribution by book (normalized observations):**
+- **Alma 6-63** had the highest raw count (61 flags) but is also the longest book. The war chapters (43-63) and the geography chapter (22) were the densest error zones — complex military action sequences and geographic descriptions produce compound clauses the reformatter splits mechanically.
+- **The small plates (Enos, Jarom, Omni, Words of Mormon)** were remarkably clean (9 flags total). These are the earliest-edited files and reflect Stan's editorial hand the most. The principles were being applied intuitively before they were codified.
+- **Isaiah chapters (2 Ne 12-24)** contributed disproportionately to 2 Nephi's flags. Isaiah's Hebrew-poetry-in-KJV-English syntax doesn't follow the prose patterns the reformatter was built for. A future dedicated pass on Isaiah blocks may benefit from starting with Hebrew poetic structure rather than English prose rules.
+
+**The six mechanical error types (complete list — no new types emerged across the full corpus):**
+1. Dangling conjunctions/subordinators at line end ("and," "but," "nor," "that," "or," "even," "insomuch")
+2. Verb separated from direct object or complement
+3. Genitive noun separated from identifying "of/which/who/where" complement
+4. "Began to" / "caused that" split from complement verb
+5. Auxiliary/modal separated from main verb
+6. Fixed idiom split ("put to death," "from time to time," "one with another," "prevailed upon")
+
+**Stylometric observations from the scrub:**
+
+- **"Caused that" is Mormon's construction.** Almost every "caused that" split occurred in large-plates material (Mosiah through Mormon and Ether). "Caused that [subject] should [verb]" is a distinctly Mormonistic way of expressing indirect causation. Nephi doesn't use it. This is a potential stylometric marker beyond FEF density — *construction type* frequency.
+- **"Began to" splits cluster in narrative, not speech.** Every "began to" flag was in Mormon's narration or Ether's king-list chronicles. Embedded speeches (Alma's sermon, Benjamin's speech, Abinadi's trial) never triggered this error because their syntax is naturally shorter. Reinforces the voice distinction: Mormon's narrative generates longer, more complex lines; embedded speech is cleaner.
+- **The "dangling that" after AICTP was the single most common pattern** (~25-30 instances corpus-wide). All from the reformatter splitting at a length or comma threshold without recognizing "that" as a subordinator. This is the strongest case for an FEF-aware pre-breaker in any future reformatter version.
+
+**Reformatter implication:** The v8 reformatter was calibrated on 1-2 Nephi's measured prose. It doesn't anticipate how Mormon's war narrative piles up coordinated verbs, or how "caused that" constructions work, or that "it shall come to pass that" is structurally identical to the past-tense AICTP. A future v9 reformatter should protect these patterns.
+
+---
+*Last updated: 2026-03-21*

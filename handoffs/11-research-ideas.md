@@ -435,3 +435,19 @@ The BOM Reader editorial process is performing exactly this diagnostic — apply
 
 ---
 *Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-21
+
+#### "Caused that" as Stylometric Marker
+
+Full-corpus mechanical scrub revealed that "caused that [subject] should [verb]" is a distinctly Mormonistic construction — it appears almost exclusively in large-plates material (Mosiah through Mormon) and in Ether's king-list chronicles. Nephi and the small-plates authors do not use it.
+
+This is a different kind of stylometric signal from FEF density. FEF density measures how often a narrator uses frame-and-expand structures. "Caused that" frequency measures a specific syntactic choice for expressing indirect causation. Both could be quantified per chapter and mapped against the narrator-voice attribution.
+
+**Proposed method:** Count "caused that" constructions per 1,000 words by chapter. Map against attributed narrator (Nephi, Jacob, Mormon, Moroni, embedded speaker). Test whether the distribution differs significantly between narrators.
+
+**Hypothesis:** "Caused that" will cluster in Mormon's narration and Ether's compressed chronicle, with near-zero frequency in small-plates and embedded speech. This would be consistent with the construction being a feature of Mormon's editorial voice rather than the underlying source voices he is abridging.
+
+---
+*Last updated: 2026-03-21*
