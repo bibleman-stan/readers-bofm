@@ -2,7 +2,7 @@
 """
 Colometric Analysis of Book of Mormon Sense-Line Corpus
 Computes per-chapter metrics across all 15 books for linguistic/stylometric research.
-Outputs CSV to data/colometric_metrics.csv
+Outputs CSV to research/colometric_metrics.csv
 """
 
 import re, os, csv, sys
@@ -192,7 +192,7 @@ def main():
                 all_results.append(result)
 
     # Write CSV
-    output_path = REPO_ROOT / "data" / "colometric_metrics.csv"
+    output_path = REPO_ROOT / "research" / "colometric_metrics.csv"
     if all_results:
         fieldnames = list(all_results[0].keys())
         with open(output_path, 'w', newline='', encoding='utf-8') as f:
