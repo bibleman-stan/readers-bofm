@@ -410,4 +410,6 @@ This is a **minimal pair** — same construction, different behavior. The distin
 
 This is consistent with v2 as already edited — the distinction was operating intuitively before it was theorized.
 
+**Applies equally to "who" relative clauses.** The distinguishing factor is the construction type (relative pronoun introducing a clause), not the specific pronoun. Example: Alma 5:48 — `the Only Begotten of the Father, / full of grace and mercy, and truth` — the appositional phrase functions as an extended adjective completing the portrait, not a new predication. Same merge logic applies.
+
 **Status: WORKING HYPOTHESIS.** Not yet fully settled. Continue tracking examples through Alma to confirm or complicate.
