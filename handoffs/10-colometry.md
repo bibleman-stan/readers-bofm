@@ -155,9 +155,8 @@ Should the same syntactic pattern always get the same break treatment? Or should
 2. Claude runs `git diff` on the changed file to see the edits
 3. Claude categorizes each edit as merge (joining lines) or break (splitting)
 4. Claude evaluates against the settled principles above
-5. After approval: `python3 build_book.py --all` to rebuild HTML
-6. Service worker cache version bumped
-7. If audio exists for changed chapters, audio must be regenerated via Colab pipeline (changed lines invalidate cache)
+5. **After any substantive line-break edits:** commit the source file changes, then rebuild all HTML via `python3 build_book.py --all`, bump the service worker cache version in `sw.js`, and commit the rebuilt HTML — so everything is ready for Stan to push via GitHub Desktop
+6. If audio exists for changed chapters, audio must be regenerated via Colab pipeline (changed lines invalidate cache)
 
 ---
 ### Update — 2026-03-18
@@ -377,6 +376,30 @@ AICTP is the most visible carrier of this pattern because it is formulaic and fr
 
 ---
 *Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-21
+
+#### Refined FEF Temporal Frame Principle
+
+Cross-book consistency audit (1 Ne through Alma 5) revealed that AICTP + temporal/date formulas were handled inconsistently: 1 Nephi broke *inside* the temporal reference (too early), while Alma merged *past* the temporal reference into the main clause (too late).
+
+**The refined rule: complete the temporal/genitive reference on one line, then break before the main verb.**
+
+The FEF frame ends where the temporal identification ends. "And it came to pass in the seventh year of the reign of the judges" is the frame. "There were about three thousand five hundred souls..." is the expansion. The frame can be long — that's fine. But the main verb is where expansion begins, and expansion earns its own line.
+
+This principle is **structural, not authorial** — it operates the same way whether Nephi or Mormon is deploying it. AICTP suspends resolution the same way regardless of voice. This strengthens the case for AICTP as evidence of a Hebrew literary framing convention (wayyiqtol protasis), because the pattern holds uniformly across narrators rather than varying by author.
+
+**Implication for colometric stylometry:** The "Mormonistic vs. Nephic" voice distinction does not live in how FEFs are *handled* (which should be uniform). It lives in FEF *density* (how often they appear), line length distribution in non-FEF passages, sermonic fragmentation patterns, and parallel stacking frequency.
+
+#### Genre Awareness vs. Foundational Test
+
+Alma 5 editorial work (Alma's sermon) prompted the question: should sermonic voice get different break treatment than narrative voice? The answer: **genre awareness is context, not a rule.** The foundational test (atomic thought + atomic breath unit) applies universally regardless of voice type. If applying the same test to sermonic material produces shorter, more fragmented lines, that's an *observation* about how Alma speaks — not a license to fragment *because* it's a sermon.
+
+The guard against bias: never break or merge *because* of genre expectations. Apply the test, let the results fall, and interpret the pattern afterward.
+
+---
+*Last updated: 2026-03-21*
 
 ---
 ### Update — 2026-03-20 (fourth entry)
