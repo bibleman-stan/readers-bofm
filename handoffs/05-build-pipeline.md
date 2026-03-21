@@ -87,3 +87,12 @@ When KJV diff layer is toggled ON, CSS hides `.verse-normal` and shows `.verse-d
 
 ---
 *Last updated: 2026-03-18*
+
+---
+### Update — 2026-03-21
+- build_book.py "notwithstanding" context-sensitive swap updated: "a" and "an" moved from determiner list to clause-subject list to prevent false swap inside "notwithstanding a/an" constructions
+- Service worker cache bumped to v70
+- scripts/ folder created and build helper scripts consolidated there (build_kjv_diff.py, build_geo_index.py, etc. — build_book.py remains at root as the primary build entry point)
+
+---
+*Last updated: 2026-03-21*

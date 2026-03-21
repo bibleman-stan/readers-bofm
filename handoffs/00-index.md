@@ -88,3 +88,8 @@ The following files in the repo root are superseded by this directory:
 - `HANDOFF.md` — Mar 18 session state
 
 These can be kept for historical reference or deleted.
+
+---
+### Update — 2026-03-21
+- research/ folder now gitignored from repo; lives locally at `research/` (not symlinked — just a local directory excluded from git)
+- Old handoff files (COWORK-HANDOFF.md, COWORK-HANDOFF-KJV.md, HANDOFF.md) deleted from repo root — section above is now historical note only

@@ -91,3 +91,15 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-21 (second entry)
+- Full-corpus FEF mechanical scrub COMPLETE: 178 fixes across all 15 books (Alma 6-63, Helaman through Moroni)
+- All books now have a clean mechanical floor; manual editorial decisions remain for Alma 6+ through Moroni
+- Colometric analysis script created (`scripts/colometric_analysis.py`) and CSV generated (`research/colometric_metrics.csv`) — quantitative data ready for paper
+- research/ folder established and gitignored (pre-publication materials: CSVs, paper notes, PDFs, analysis outputs)
+- Service worker cache now at v70 (was v66 in earlier entry)
+- Repo structure cleanup complete (scripts consolidated, dead files removed, colab cleaned)
+
+---
+*Last updated: 2026-03-21*

@@ -92,3 +92,17 @@ Format: `#bookId` or `#bookId-chapterNumber` (e.g., `#alma-45`)
 
 ---
 *Last updated: 2026-03-18*
+
+---
+### Update — 2026-03-21
+- Major repo cleanup: root reduced from ~40 files to ~11 (scripts moved to `scripts/`, dead files deleted)
+- Scripts consolidated into `scripts/` folder: senseline_reformat_v8.py, build_kjv_diff.py, colometric_analysis.py, and 12 others
+- `colab/` cleaned: sister_m_pipeline, 2nephi_sister_m, bom_reader_voices_v1, gen_2nephi all deleted; only `samuel_pipeline.ipynb` remains
+- `data/` split: production data stays in repo; `research/` folder created for pre-publication materials (PDFs, analysis spreadsheets, paper notes)
+- `research/` is gitignored — local only, not tracked in repo
+- Old root-level handoff files deleted (COWORK-HANDOFF.md, COWORK-HANDOFF-KJV.md, HANDOFF.md)
+- External Obsidian vault (C:\vaults-nano\gospel\11-Readers_BofM) deleted after extracting unique content into repo
+- Service worker cache at v70
+
+---
+*Last updated: 2026-03-21*

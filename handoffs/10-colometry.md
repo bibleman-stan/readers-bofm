@@ -510,3 +510,19 @@ All mechanical slippage, no rule failures. The existing rubric caught every case
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-21 (fifth entry)
+
+#### "Insomuch that" — Leading vs. Trailing Distinction
+
+"Insomuch that" constructions have two distinct colometric behaviors depending on position:
+
+**Trailing (result clause):** "they did smite them / insomuch that they did flee" — "insomuch that" introduces the result of the previous action. It leads a new line because it opens a new clause with new content (the result). The previous line is complete without it.
+
+**Leading (degree modifier):** "insomuch that they could not be distinguished" — when "insomuch" modifies the degree of the preceding verb and the "that" clause is the specification of degree, it can merge with the preceding material if the combined line passes the atomic thought test.
+
+The operational test: does "insomuch that" introduce a genuinely new event/result (break), or does it specify the degree of the same event (merge candidate)?
+
+---
+*Last updated: 2026-03-21*

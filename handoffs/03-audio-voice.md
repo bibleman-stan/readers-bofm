@@ -156,3 +156,13 @@ The line highlight drifts from actual spoken text during playback. Root cause: `
 
 ---
 *Last updated: 2026-03-18*
+
+---
+### Update — 2026-03-21
+- Colab folder cleaned: `sister_m_pipeline.ipynb`, `2nephi_sister_m.ipynb`, `bom_reader_voices_v1.ipynb`, `gen_2nephi.py` all deleted from repo
+- Only `samuel_pipeline.ipynb` remains in `colab/` (the canonical notebook)
+- Local backup copies of all deleted notebooks saved at `C:\Users\bibleman\Downloads\Colab Notebooks\` (not in repo)
+- DEPRECATED section above is now historical note only — the files no longer exist in repo
+
+---
+*Last updated: 2026-03-21*

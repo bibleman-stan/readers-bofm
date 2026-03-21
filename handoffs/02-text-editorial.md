@@ -161,3 +161,9 @@ Utility script for automated sense-line rebalancing:
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-21 (second entry)
+- Full-corpus FEF mechanical scrub: 178 fixes across all 15 books (Alma 6-63, Helaman, 3 Nephi, 4 Nephi, Mormon, Ether, Moroni — the unedited books)
+- "notwithstanding" context-sensitive swap fix in build_book.py: moved "a" and "an" from determiner list to clause-subject list to prevent false positive swaps inside "notwithstanding" constructions
+- All 15 books rebuilt; service worker cache at v70

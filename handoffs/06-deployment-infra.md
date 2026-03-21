@@ -51,3 +51,15 @@ Three commits need pushing:
 
 ---
 *Last updated: 2026-03-19*
+
+---
+### Update — 2026-03-21
+- Major repo structure cleanup: scripts consolidated into `scripts/`, dead files deleted from root, root reduced from ~40 to ~11 files
+- Service worker cache bumped from v63 to v70 across multiple rebuilds this session
+- Old handoff files deleted from repo root: COWORK-HANDOFF.md, COWORK-HANDOFF-KJV.md, HANDOFF.md (superseded by handoffs/ directory)
+- External Obsidian vault (C:\vaults-nano\gospel\11-Readers_BofM) deleted after unique content extracted into repo
+- research/ folder created and gitignored for pre-publication materials (analysis CSVs, paper notes, PDFs)
+- Colab folder cleaned to single canonical notebook (samuel_pipeline.ipynb)
+
+---
+*Last updated: 2026-03-21*
