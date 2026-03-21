@@ -18,6 +18,7 @@ This directory contains structured project documentation organized by domain. Ea
 | 10 | `10-colometry.md` | Sense-line theory, settled principles, competing theories, "behold" analysis, review process |
 | 11 | `11-research-ideas.md` | Potential papers: colometric stylometry, functional translation, sense-lines as silent commentary |
 | 12 | `12-reformatter-rules.md` | Mechanical reformatter rules (M0-M10), editorial rules (E1-E11), calibration data, -eth conjugation, script thresholds |
+| 13 | `13-preliminary-linguistic-data.md` | Quantified colometric metrics by book: AICTP rates, voice markers, structural metrics, preliminary voice taxonomy |
 
 ## Update Protocol
 
