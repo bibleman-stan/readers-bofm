@@ -377,3 +377,37 @@ AICTP is the most visible carrier of this pattern because it is formulaic and fr
 
 ---
 *Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-20 (fourth entry)
+
+#### "Which" Relative Clauses: Open Question
+
+Working through Alma 5, a genuine open question emerged about "which" relative clauses as break points.
+
+The earlier principle (third entry, this update) settled that **defining relative clauses that leave the antecedent unidentifiable should not be broken** — "as many of the Lamanites / who had been slain" fails because the antecedent is a bare quantifier without the clause.
+
+But the Alma 5 work revealed a different situation: cases where the line before "which" is already a complete syntactic unit, and the "which" clause adds substantial specification:
+
+- `did not my father Alma believe in the words` / `which were delivered by the mouth of Abinadi?`
+- `to stand before God to be judged according to the deeds` / `which have been done in the mortal body?`
+
+In both cases the preceding line is syntactically complete — the "which" clause adds information rather than resolving an incomplete referent. Stan's instinct (confirmed) was to keep these broken. The "which" marks a genuine clausal boundary.
+
+**Working distinction (from Alma 5:3 vs. 5:11/5:15):**
+
+Alma 5:3 contains two "which" clauses that are correctly *merged* in v2:
+- `the land which was in the borders of Nephi` — light verb, thin identifier, essentially "the Nephi-bordered land"
+- `the land which was called the land of Mormon` — naming clause, another thin identifier
+
+Alma 5:11 and 5:15 contain "which" clauses that are correctly *broken*:
+- `words / which were delivered by the mouth of Abinadi` — passive verb + agent phrase; predicates something theologically substantial about the words
+- `the deeds / which have been done in the mortal body` — locative predication adding real content
+
+This is a **minimal pair** — same construction, different behavior. The distinguishing factor Stan articulated: sometimes "which" functions as an **extended adjective** (identifies/classifies the noun, thin predicate, merge tendency) and sometimes as a **genuine subordinate clause** (predicates new information, break legitimate).
+
+**Operational test:** Does the "which" clause introduce genuinely new information, or does it merely identify which one? Identifier → merge. New predication → break legitimate.
+
+This is consistent with v2 as already edited — the distinction was operating intuitively before it was theorized.
+
+**Status: WORKING HYPOTHESIS.** Not yet fully settled. Continue tracking examples through Alma to confirm or complicate.
