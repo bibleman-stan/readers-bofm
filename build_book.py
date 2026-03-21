@@ -808,10 +808,10 @@ def apply_swaps(text, swap_list):
                 after = result[m.end():m.end()+20].lstrip()
                 first_word = re.match(r'[a-zA-Z]+', after)
                 fw = first_word.group(0).lower() if first_word else ''
-                if fw in ('the','their','all','our','my','his','her','its','a','an',
+                if fw in ('the','their','all','our','my','his','her','its',
                           'these','this','that','those','such','every','much','many'):
                     mod = 'Despite' if _cap else 'despite'
-                elif fw in ('they','we','he','she','i','it','so','there','being'):
+                elif fw in ('they','we','he','she','i','it','so','there','being','a','an'):
                     mod = 'Even though' if _cap else 'even though'
                 else:
                     mod = 'Nevertheless' if _cap else 'nevertheless'
