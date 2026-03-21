@@ -217,6 +217,51 @@ The goal is not mastery of everything. It is knowing which works you are buildin
 
 ---
 
+### B7. Berlin, Adele. *The Dynamics of Biblical Parallelism.* Indiana University Press, 1985. Rev. ed. 2008.
+
+**What it is:** A linguistic analysis of how Hebrew parallelism actually works — phonologically, lexically, and syntactically. Distinct from Berlin's *Poetics and Interpretation of Biblical Narrative* (B3 above), which is about narrative rather than poetry.
+
+**Why it matters for your paper:** This is more directly relevant to your line-breaking methodology than the narrative poetics book. Berlin provides the linguistic "rules" of how parallelism functions — why certain pairs belong together, what makes a second line intensify rather than merely repeat. Your editorial decisions about when to stack parallels vertically and when to merge are implicitly applying Berlin's framework. Being able to cite the linguistic basis for your break decisions strengthens the methodology section.
+
+**What to absorb:**
+- The three levels of parallelism: phonological (sound), lexical (word pairs), syntactic (grammatical structure)
+- How syntactic parallelism creates the structural expectation that governs where a reader/listener processes a line break
+- Her critique of Lowth's simplistic three-category system — the reality is more nuanced than "synonymous/antithetical/synthetic"
+
+**Effort:** 🟡 **Read selectively.** Introduction + the chapter on syntactic parallelism. 3–4 hours. More linguistically rigorous than Alter or Kugel, which is exactly what a reviewer looking at your methodology would want to see cited.
+
+---
+
+### B8. Dobbs-Allsopp, F. W. *On Biblical Poetry.* Oxford University Press, 2015.
+
+**What it is:** The current scholarly state-of-the-art on Hebrew poetry, moving beyond the Alter/Kugel debate. Dobbs-Allsopp argues against the search for rigid meter and instead describes biblical poetry as a form of free verse, with the *line* (not the couplet) as the fundamental unit.
+
+**Why it matters for your paper:** This may be the single most theoretically important work for your methodology, because Dobbs-Allsopp is arguing exactly what your colometric practice assumes — that the line is the primary unit of Hebrew poetic/rhetorical organization, and that rhythm emerges from lineation rather than from imposed metrical patterns. His focus on orality and performance-based form also connects directly to your foundational test (atomic breath unit). If a reviewer asks "what theoretical basis do you have for treating individual sense-lines as the unit of analysis?" — Dobbs-Allsopp is the answer.
+
+**What to absorb:**
+- The argument for the line as fundamental unit (not the couplet or the verse)
+- The concept of rhythm without meter — cadence emerging from natural speech units
+- The orality dimension: how poetic forms reflect performance contexts
+- Why the search for Greco-Roman-style meter in Hebrew has failed, and what replaces it
+
+**Effort:** 🟡 **Read selectively.** Introduction + the chapters on the line and on rhythm. 4–5 hours. This is dense but directly foundational for your theoretical framework. Worth the investment.
+
+---
+
+### B9. Emanuel, David M. *A Primer of Biblical Hebrew Poetry.* Zondervan Academic, 2025.
+
+**What it is:** The most recent pedagogical entry for students with working Hebrew who need a structured introduction to poetic analysis.
+
+**Why it matters for your paper:** Not a citation source for the paper — too pedagogical. But useful for your personal ramp-up as you build comfort with the Hebrew poetry tradition. Designed as a learning path rather than a reference or argument.
+
+**What to absorb:**
+- Use as a self-study guide alongside the deeper works (Alter, Kugel, Dobbs-Allsopp)
+- Good for building confidence with terminology and analytical categories before engaging the primary scholarship
+
+**Effort:** 🟢 **Background self-study.** Work through at your own pace alongside the priority reading. Not urgent for the paper draft.
+
+---
+
 ## SECTION C — Stylometry and Computational Authorship
 
 *These establish the broader methodological conversation. You need to know this field exists and be able to describe your method's relationship to it.*
@@ -403,18 +448,20 @@ The goal is not mastery of everything. It is knowing which works you are buildin
 
 ## Priority Reading Order
 
-If you have limited time before drafting, do these seven items in sequence:
+If you have limited time before drafting, do these nine items in sequence:
 
 1. **Alter, intro + Chapter 3** (B1, E1) — your prose model and closest methodological analogue
 2. **Welch 1969** (A1) — your direct structural predecessor; read twice
 3. **Hardy, intro + Nephi/Mormon chapters** (A5) — deepens your argument about authorial differences
-4. **Roper, Fields, Schaalje 2012** (A3) — the stylometric conversation you're extending
-5. **Kugel, Part 1** (B2) — theoretical grounding for line-break decisions and the parallelism tradition
-6. **Muilenburg 1969** (B5) — 18 pages, foundational, signals scholarly literacy
-7. **One recent JBMS paper** (E3) — format conventions for your target venue
+4. **Dobbs-Allsopp, intro + line/rhythm chapters** (B8) — theoretical foundation for treating the line as the primary unit; the "why" behind your methodology
+5. **Roper, Fields, Schaalje 2012** (A3) — the stylometric conversation you're extending
+6. **Kugel, Part 1** (B2) — theoretical grounding for line-break decisions and the parallelism tradition
+7. **Berlin, *Dynamics*, intro + syntactic parallelism chapter** (B7) — linguistic mechanics of why your breaks work
+8. **Muilenburg 1969** (B5) — 18 pages, foundational, signals scholarly literacy
+9. **One recent JBMS paper** (E3) — format conventions for your target venue
 
 ---
 
 *This bibliography will grow as the paper develops. Entries should be updated when a work is read and its relevance confirmed, modified, or expanded.*
 
-*Last updated: 2026-03-19 (created in Claude.ai master-thread). Imported to repo: 2026-03-21.*
+*Last updated: 2026-03-21. Added B7 (Berlin, Dynamics), B8 (Dobbs-Allsopp), B9 (Emanuel) from Gemini research thread.*
