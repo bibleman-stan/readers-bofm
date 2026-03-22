@@ -829,6 +829,93 @@ def apply_swaps(text, swap_list):
             result = re.sub(r'\b' + re.escape(archaic) + r'\b', _notw_replace, result)
             continue
 
+    # ---- "suffer" = ALLOW sense (context-sensitive) ----
+    # Swap "suffer" → "allow/let" only when syntactic context signals the ALLOW sense.
+    # Leave ENDURE sense ("suffer pain", "suffered much", "long-suffering") untouched.
+
+    # Pattern 1: "suffer that [clause]" → "allow that" / "let"
+    def _suffer_replace(m):
+        full = m.group(0)
+        idx = len(placeholders); sent = f"\x00F{idx}\x00"
+        # Determine the right modern word based on pattern
+        low = full.lower()
+        cap = full[0].isupper()
+        if 'suffered' in low:
+            mod = 'Allowed' if cap else 'allowed'
+        elif 'suffereth' in low:
+            mod = 'Allows' if cap else 'allows'
+        elif 'suffering' in low:
+            return full  # skip — "suffering" is almost always ENDURE
+        else:
+            mod = 'Allow' if cap else 'allow'
+        placeholders.append((sent, full, mod))
+        return sent
+
+    # "suffer/suffered/suffereth that [clause]" — always ALLOW
+    result = re.sub(r'\b(suffer(?:ed|eth)?)\b(?= that\b)', _suffer_replace, result)
+
+    # "[will/would/shall/should/did/could/may/might/doth/hath] [not] suffer" — almost always ALLOW
+    # Also catches "not suffer", "not be suffered"
+    def _suffer_modal_replace(m):
+        full = m.group(0)
+        modal_part = m.group(1)
+        neg = m.group(2) or ''
+        suffer_word = m.group(3)
+        low_s = suffer_word.lower()
+        if low_s == 'suffered':
+            mod_s = 'allowed'
+        elif low_s == 'suffereth':
+            mod_s = 'allows'
+        else:
+            mod_s = 'allow'
+        # Preserve original capitalization of the modal part
+        modern_full = f"{modal_part}{neg}{mod_s}"
+        idx = len(placeholders); sent = f"\x00F{idx}\x00"
+        placeholders.append((sent, full, modern_full))
+        return sent
+
+    result = re.sub(
+        r'\b((?:will|would|shall|should|did|could|may|might|doth|hath|have|has|had|can|must) )(not )?(suffer(?:ed|eth)?)\b'
+        r'(?! (?:pain|affliction|temptation|death|hunger|thirst|sorrow|loss|anguish|much|great|many|all |every |the pain|for ))',
+        _suffer_modal_replace, result
+    )
+
+    # "suffer [pronoun/noun] to [verb]" — ALLOW ("suffer them to enter" → "allow them to enter")
+    def _suffer_obj_to_replace(m):
+        full = m.group(0)
+        suffer_word = m.group(1)
+        rest = m.group(2)
+        low_s = suffer_word.lower()
+        if low_s == 'suffered':
+            mod_s = 'allowed'
+        elif low_s == 'suffereth':
+            mod_s = 'allows'
+        else:
+            mod_s = 'allow'
+        if suffer_word[0].isupper():
+            mod_s = mod_s[0].upper() + mod_s[1:]
+        modern_full = f"{mod_s}{rest}"
+        idx = len(placeholders); sent = f"\x00F{idx}\x00"
+        placeholders.append((sent, full, modern_full))
+        return sent
+
+    result = re.sub(
+        r'\b(Suffer(?:ed|eth)?|suffer(?:ed|eth)?)'
+        r'( (?:me|him|her|them|us|you|ye|it|himself|herself|themselves|yourselves|ourselves|myself|that ye|that they|that he|that we|that you|none|no one|any one|any) (?:to|that)\b)',
+        _suffer_obj_to_replace, result, flags=re.IGNORECASE
+    )
+
+    # "be suffered to" — passive ALLOW ("was suffered to speak" → "was allowed to speak")
+    def _suffer_passive_replace(m):
+        full = m.group(0)
+        be_word = m.group(1)
+        modern_full = f"{be_word} allowed to"
+        idx = len(placeholders); sent = f"\x00F{idx}\x00"
+        placeholders.append((sent, full, modern_full))
+        return sent
+
+    result = re.sub(r'\b(be|been|was|were|is|are) suffered to\b', _suffer_passive_replace, result)
+
     # ---- PHRASE-LEVEL swaps (multi-word idioms before single-word pass) ----
 
     # "were/was/is/are desirous" → "wanted/wants/want"
