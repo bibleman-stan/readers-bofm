@@ -113,6 +113,14 @@ COMPOUND_SWAPS = [
     ("go to", "go"),  # archaic interjection (only when followed by , or ;)
     ("none other object save it be", "no other purpose except"),
     ("inasmuch as", "to the degree that"), ("Inasmuch as", "To the degree that"),
+    # ── Structural speed bump phrase swaps ──
+    ("for the space of", "for"), ("For the space of", "For"),
+    ("must needs be", "must be"), ("must needs", "must"),
+    ("on the morrow", "the next day"), ("On the morrow", "The next day"),
+    ("after the manner of", "like"), ("After the manner of", "Like"),
+    ("in the which", "in which"), ("In the which", "In which"),
+    ("in nowise", "in no way"), ("In nowise", "In no way"),
+    ("on this wise", "in this way"), ("On this wise", "In this way"),
     ("things of naught", "worthless things"), ("thing of naught", "worthless thing"),
     ("set at naught", "treated with contempt"), ("setteth at naught", "treats with contempt"),
     # ── Participle fixes: have/has/had + archaic past → correct past participle ──
@@ -822,6 +830,28 @@ def apply_swaps(text, swap_list):
             continue
 
     # ---- PHRASE-LEVEL swaps (multi-word idioms before single-word pass) ----
+
+    # "were/was/is/are desirous" → "wanted/wants/want"
+    def _desirous_replace(m):
+        copula = m.group(1).lower()
+        idx = len(placeholders); sent = f"\x00P{idx}\x00"
+        if copula in ('were', 'was'):
+            placeholders.append((sent, m.group(0), 'wanted'))
+        elif copula in ('is', 'art'):
+            placeholders.append((sent, m.group(0), 'wants'))
+        else:  # are, am, be
+            placeholders.append((sent, m.group(0), 'want'))
+        return sent
+    result = re.sub(r'\b(were|was|is|are|am|be|art) desirous\b', _desirous_replace, result)
+
+    # "I would that ye/you should [verb]" → "I want you to [verb]"
+    def _would_that_replace(m):
+        idx = len(placeholders); sent = f"\x00P{idx}\x00"
+        verb = m.group(1)
+        placeholders.append((sent, m.group(0), f'I want you to {verb}'))
+        return sent
+    result = re.sub(r'\bI would that (?:ye|you) should (\w+)', _would_that_replace, result)
+
     # "retained in remembrance" → "remembered", "retain in remembrance" → "remember"
     def _remembrance_replace(m):
         verb = m.group(1).lower()  # retain or retained
