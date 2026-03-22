@@ -111,6 +111,7 @@ Breaking *on* verbs (giving each verb its own line) is often correct — verbs a
 16. **"Dangling that" after AICTP** — break BEFORE "that" so it leads the next line: "And it shall come to pass" / "that [content]"
 17. **"Caused that" complement integrity** — "caused" requires its complement clause; same as "began to" rule
 18. **Fixed idiom integrity** — "put to death," "from time to time," "prevailed upon" are indivisible units
+19. **Cataphoric "that" clauses break; anaphoric merge** — a "that" clause earns its own line only if it introduces new content (cataphoric). If it's entirely backward-pointing ("this," "the case," "the same"), it merges (anaphoric — no new semantic content to carry a line)
 
 ### Three Categories for Proposed Changes
 

@@ -471,6 +471,8 @@ All mechanical slippage, no rule failures. The existing rubric caught every case
 
 **Rule 18: Fixed idiom integrity.** Certain multi-word expressions are indivisible: "put to death," "from time to time," "prevailed upon," "put an end to." Never break inside a fixed idiom regardless of line length.
 
+**Rule 19: Cataphoric "that" clauses break; anaphoric "that" clauses merge.** A "that" clause earns its own line only if it introduces at least one new referent, image, or proposition (cataphoric — forward-pointing, new content). If its content is entirely backward-pointing — pronouns, demonstratives, "the case," "this thing," "the same" — it stays merged (anaphoric — resolving, no new content). Example: "I say unto you / there be many things to come" breaks because the content clause introduces new information. "The Spirit hath not said unto me that this should be the case" stays merged because "this" and "the case" are anaphoric back-references with zero new semantic content. This connects to the FEF framework: FEFs are cataphoric (forward-pointing, creating suspension); anaphoric back-references close down and resolve, having no independent energy to carry a line.
+
 #### Settled Editorial Decisions (promoted from working hypothesis)
 
 **"I say unto you" isolation pattern — SETTLED.** Isolated on its own line when introducing substantial content; merged when followed by a short response ("Nay," "Yea," "they are blessed"). This pattern is now consistent across Mosiah and Alma with no exceptions. It is not voice-dependent — it operates the same way in King Benjamin's speech, Abinadi's trial, and Alma's sermon.
