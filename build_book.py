@@ -461,7 +461,8 @@ SIMPLE_SWAPS = [
     ("whereat", "at which"), ("Whereat", "At which"),
     ("girded", "fastened"), ("Girded", "Fastened"),
     ("commenced", "began"), ("Commenced", "Began"),
-    ("remembrance", "memory"), ("Remembrance", "Memory"),
+    # remembrance: NOT swapped globally — only "retain(ed) in remembrance" is handled
+    # as a phrase-level swap in the special-case section of apply_swaps()
     ("pestilence", "plague"), ("Pestilence", "Plague"),
     ("sundry", "various"), ("Sundry", "Various"),
     ("manifold", "many"), ("Manifold", "Many"),
@@ -819,6 +820,18 @@ def apply_swaps(text, swap_list):
                 placeholders.append((sent, _archaic, mod)); return sent
             result = re.sub(r'\b' + re.escape(archaic) + r'\b', _notw_replace, result)
             continue
+
+    # ---- PHRASE-LEVEL swaps (multi-word idioms before single-word pass) ----
+    # "retained in remembrance" → "remembered", "retain in remembrance" → "remember"
+    def _remembrance_replace(m):
+        verb = m.group(1).lower()  # retain or retained
+        idx = len(placeholders); sent = f"\x00P{idx}\x00"
+        if verb == 'retained':
+            placeholders.append((sent, m.group(0), 'remembered'))
+        else:
+            placeholders.append((sent, m.group(0), 'remember'))
+        return sent
+    result = re.sub(r'\b(retain|retained|Retain|Retained) in remembrance\b', _remembrance_replace, result)
 
     # ---- SINGLE-PASS general swaps (the big performance win) ----
     compiled_re, lookup = _get_swap_engine(swap_list)
