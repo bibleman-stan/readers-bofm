@@ -451,3 +451,25 @@ This is a different kind of stylometric signal from FEF density. FEF density mea
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-22
+
+#### Hebrew Retroversion Test for Sense-Line Breaks
+
+If sense-line breaks consistently fall at points that correspond to known Hebrew clause boundaries — wayyiqtol onset, circumstantial protasis boundary, discourse marker position, participial frame boundary — that correspondence, discovered through English-side analysis without reference to Hebrew grammar, would be consistent with the hypothesis that the colometric structure preserves features of an underlying Semitic compositional grammar.
+
+**Proposed method:** Select 50 representative sense-line breaks across multiple voice types (Nephi narrative, Mormon abridgment, embedded speech, divine quotation). For each, produce a plausible Biblical Hebrew retroversion and assess whether the English break falls at a natural Hebrew clause boundary.
+
+**Predicted outcomes:**
+- FEF breaks (AICTP + temporal frame) should correspond to wayyiqtol + circumstantial protasis boundaries → high correspondence expected
+- Sermonic breaks ("behold, I say unto you" isolation) should correspond to discourse marker onsets (הִנֵּה, וְעַתָּה) → high correspondence expected
+- Structural/editorial breaks (causal isolation, rhetorical emphasis) → mixed results expected, as these may reflect English discourse organization rather than Hebrew clause structure
+- Either outcome is interesting: high correspondence supports a Semitic substrate claim; low correspondence confirms breaks are English-native but still valid for stylometric purposes
+
+**Connection to FEF paper:** This could be a standalone study or a section within the broader colometric stylometry paper. The retroversion test provides independent validation of the method from the Hebrew side, strengthening the claim that FEFs parallel documented Hebrew narrative conventions.
+
+**Prerequisite:** Requires someone with Biblical Hebrew competence (Stan or a collaborator) to produce the retroversions. The analysis script and line-break data already exist.
+
+---
+*Last updated: 2026-03-22*

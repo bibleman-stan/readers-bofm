@@ -528,3 +528,34 @@ The operational test: does "insomuch that" introduce a genuinely new event/resul
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-22
+
+#### Rule 19: Anaphoric vs. Cataphoric "that" Clauses
+
+**Cataphoric "that" clauses (forward-pointing, new content) break; anaphoric "that" clauses (backward-pointing, resolving) merge.**
+
+Test: does the "that" clause introduce at least one new referent, image, or proposition? If yes (cataphoric), it can break. If its content is entirely backward-pointing — pronouns, demonstratives, "the case," "this thing," "the same" — it merges.
+
+Examples:
+- "that the good shepherd doth call you" — new image, new action → **breaks** (cataphoric)
+- "that this should be the case" — "this" and "the case" both point back → **merges** (anaphoric)
+- "there be many things to come" — new referent, new temporal info → **breaks** (cataphoric)
+
+This connects to the FEF framework: FEFs are cataphoric by nature (forward-pointing, creating suspension). Anaphoric back-references close down and resolve — they have no independent energy and merge with what precedes them.
+
+#### Methodological Note: Syntactic vs. Structural Categories
+
+Two distinct layers operate in sense-line decisions:
+
+**Syntactic rules** (grammar-level): subject-verb binding, verb-object binding, conjunction placement, genitive completion, auxiliary-verb unity. These are non-negotiable — if the grammar says the break creates an incomplete parse, the break doesn't happen. Rules 1-18 are almost entirely syntactic. These produce the 0.25% error rate and are falsifiable by sentence diagramming.
+
+**Structural decisions** (discourse-level): speech attribution isolation, vocative separation, parallel stacking for emphasis, causal breaks that separate cause from effect, sermonic pauses. These operate WITHIN the space syntactic rules leave open — where grammar permits a break, structural judgment decides whether to take it.
+
+**The principle: sense-line breaks occur only where syntactic permission and structural motivation converge.** If the grammar says no, the break doesn't happen regardless of rhetorical appeal. If the grammar says yes but there's no structural reason, lines stay merged. No structural choice should ever override a syntactic rule.
+
+This layered approach is what makes the method defensible: the syntactic rules are mechanical and replicable; the structural decisions are editorial but constrained by the syntactic floor.
+
+---
+*Last updated: 2026-03-22*
