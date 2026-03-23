@@ -559,3 +559,23 @@ This layered approach is what makes the method defensible: the syntactic rules a
 
 ---
 *Last updated: 2026-03-22*
+
+---
+### Update — 2026-03-23
+
+#### Rule 19 Refinement: Expletive "It" and Result Clauses Are Not Anaphoric
+
+The initial formulation of Rule 19 (anaphoric "that" clauses merge; cataphoric break) was too broad. Corpus audit revealed false positives where "it" or "that" appeared to point backward but were actually introducing new content:
+
+**Expletive "it" in cleft constructions:** "that it is by his grace" (Jacob 4:7) — the "it" is a structural placeholder in a cleft sentence ("it is X that Y"), not a referential pronoun pointing to a previously named thing. The predication ("by his grace") is genuinely new content. These are CATAPHORIC — they break correctly.
+
+**Result/purpose clauses with new predication:** "that it is good" (Jacob 5:39) — "it" refers back to "the natural fruit," but "good" is NEW information — the discovery, the payoff of the action. When a backward-pointing pronoun is followed by a new predicate (quality, state, judgment), the clause carries enough new content to justify breaking.
+
+**Sharpened test for Rule 19:** A "that" clause is anaphoric (merge) ONLY when BOTH the subject AND the predicate are backward-pointing. If the subject points back ("this," "it," "these things") but the predicate introduces new content ("is by his grace," "is good," "is because I have testified"), the clause is cataphoric enough to break.
+
+Genuine anaphoric violations have predicates like "should be," "should be the case," "had not been written" — where the predicate adds no new image or information beyond what was already established.
+
+**Confirmed violations fixed:** Helaman 14:27 ("that these things should be" — "these things" + "should be" = all backward), 3 Nephi 11:30 ("that such things should be done away" — "such things" + removal = all backward), 3 Nephi 23:12 ("that this thing had not been written" — "this thing" + "not written" = all backward).
+
+---
+*Last updated: 2026-03-23*
