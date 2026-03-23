@@ -501,3 +501,26 @@ This escalation is a line-breaking signal: each appositive earns its own line be
 
 ---
 *Last updated: 2026-03-23*
+
+---
+### Update — 2026-03-23 (second entry)
+
+#### Paper Sequence: Colometry as Hermeneutical Tool
+
+Three papers in different registers, each building on the previous:
+
+**Paper 1 — The Method Paper (JBMS/DH)**
+"And It Came to Pass": Front-End Frames and Colometric Stylometry in the Book of Mormon. Establishes the editorial methodology, defines FEFs, presents quantitative voice differentiation. The tool-building paper.
+
+**Paper 2 — The Exegetical Paper (BYU Studies / Interpreter)**
+Working title: "What Sense-Lines Reveal: Theological Architecture in Benjamin's Discourse" (or Abinadi's sermon, or the Christological passages). Demonstrates that colometric formatting produces genuinely new exegetical insights — specifically that the text's own grammar organizes theological content in patterns invisible in paragraph format. The escalatory appositive is the primary exhibit: Mosiah 3:19 (humility cluster → love escalation), 15:5 (four-stage passion descent), 4:6 (divine attribute escalation), 18:2 (salvific arc from power to ascension). This is the paper that makes the method matter to a theological audience.
+
+**Paper 3 — The Hermeneutical Paper (academic theology / literary theory)**
+"Silent Commentary: Line-Breaking as Interpretation in Ancient Multi-Voice Texts." The theoretical argument that colometric formatting is itself an interpretive act — that WHERE you break the line makes an implicit claim about what the text means. Uses the BofM colometric edition as the case study but the argument is transferable to any ancient text presented in sense-lines (LXX colometry, Qumran manuscripts, Skousen's edition). Connects to the OTC dissertation framework.
+
+**Sequencing advantage:** Paper 1 establishes credibility and peer review. Paper 2 demonstrates impact for a faith-invested audience. Paper 3 theorizes the implications for a broader scholarly audience. Each cites the previous.
+
+**Key insight driving all three:** The polysyndeton + repeated possessive principle (Rule 20) provides a grammatical basis for a different exegetical outcome. When we show that "and his matchless power, / and his wisdom, / and his patience, / and his long-suffering" is structured as a four-step escalation from distant to intimate, that's not devotional commentary — it's structural analysis with exegetical consequences. The grammar itself marks the escalation; the sense-line formatting makes it visible.
+
+---
+*Last updated: 2026-03-23*
