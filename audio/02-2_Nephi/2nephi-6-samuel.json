@@ -1,0 +1,944 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 6,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 411.142,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.694,
+      "type": "line",
+      "text": "The words of Jacob, the brother of Nephi,",
+      "verse": "6:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.874,
+      "end": 5.289,
+      "type": "line",
+      "text": "which he spake unto the people of Nephi:",
+      "verse": "6:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.969,
+      "end": 7.919,
+      "type": "line",
+      "text": "Behold, my beloved brethren,",
+      "verse": "6:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 8.099,
+      "end": 10.7,
+      "type": "line",
+      "text": "I, Jacob, having been called of God,",
+      "verse": "6:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 10.88,
+      "end": 14.224,
+      "type": "line",
+      "text": "and ordained after the manner of his holy order,",
+      "verse": "6:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.404,
+      "end": 17.515,
+      "type": "line",
+      "text": "and having been consecrated by my brother Nephi,",
+      "verse": "6:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 17.695,
+      "end": 20.853,
+      "type": "line",
+      "text": "unto whom ye look as a king or a protector,",
+      "verse": "6:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 21.033,
+      "end": 23.309,
+      "type": "line",
+      "text": "and on whom ye depend for safety,",
+      "verse": "6:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 23.489,
+      "end": 28.272,
+      "type": "line",
+      "text": "behold ye know that I have spoken unto you exceedingly many things.",
+      "verse": "6:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 28.952,
+      "end": 31.228,
+      "type": "line",
+      "text": "Nevertheless, I speak unto you again;",
+      "verse": "6:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 31.408,
+      "end": 34.38,
+      "type": "line",
+      "text": "for I am desirous for the welfare of your souls.",
+      "verse": "6:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 34.56,
+      "end": 36.557,
+      "type": "line",
+      "text": "Yea, mine anxiety is great for you;",
+      "verse": "6:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 36.737,
+      "end": 39.709,
+      "type": "line",
+      "text": "and ye yourselves know that it ever has been.",
+      "verse": "6:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 39.889,
+      "end": 42.583,
+      "type": "line",
+      "text": "For I have exhorted you with all diligence;",
+      "verse": "6:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 42.763,
+      "end": 46.014,
+      "type": "line",
+      "text": "and I have taught you the words of my father;",
+      "verse": "6:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 46.194,
+      "end": 50.095,
+      "type": "line",
+      "text": "and I have spoken unto you concerning all things which are written,",
+      "verse": "6:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 50.275,
+      "end": 52.458,
+      "type": "line",
+      "text": "from the creation of the world.",
+      "verse": "6:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 53.138,
+      "end": 55.646,
+      "type": "line",
+      "text": "And now, behold, I would speak unto you",
+      "verse": "6:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 55.826,
+      "end": 57.73,
+      "type": "line",
+      "text": "concerning things which are,",
+      "verse": "6:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 57.91,
+      "end": 59.35,
+      "type": "line",
+      "text": "and which are to come;",
+      "verse": "6:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 59.53,
+      "end": 62.595,
+      "type": "line",
+      "text": "wherefore, I will read you the words of Isaiah.",
+      "verse": "6:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 62.775,
+      "end": 67.976,
+      "type": "line",
+      "text": "And they are the words which my brother has desired that I should speak unto you.",
+      "verse": "6:4",
+      "lineIndex": 23
+    },
+    {
+      "start": 68.156,
+      "end": 70.339,
+      "type": "line",
+      "text": "And I speak unto you for your sakes,",
+      "verse": "6:4",
+      "lineIndex": 24
+    },
+    {
+      "start": 70.519,
+      "end": 74.002,
+      "type": "line",
+      "text": "that ye may learn and glorify the name of your God.",
+      "verse": "6:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 74.682,
+      "end": 79.79,
+      "type": "line",
+      "text": "And now, the words which I shall read are they which Isaiah spake",
+      "verse": "6:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 79.97,
+      "end": 82.292,
+      "type": "line",
+      "text": "concerning all the house of Israel;",
+      "verse": "6:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 82.472,
+      "end": 85.026,
+      "type": "line",
+      "text": "wherefore, they may be likened unto you,",
+      "verse": "6:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 85.206,
+      "end": 87.714,
+      "type": "line",
+      "text": "for ye are of the house of Israel.",
+      "verse": "6:5",
+      "lineIndex": 29
+    },
+    {
+      "start": 87.894,
+      "end": 91.098,
+      "type": "line",
+      "text": "And there are many things which have been spoken by Isaiah",
+      "verse": "6:5",
+      "lineIndex": 30
+    },
+    {
+      "start": 91.278,
+      "end": 93.228,
+      "type": "line",
+      "text": "which may be likened unto you,",
+      "verse": "6:5",
+      "lineIndex": 31
+    },
+    {
+      "start": 93.408,
+      "end": 96.194,
+      "type": "line",
+      "text": "because ye are of the house of Israel.",
+      "verse": "6:5",
+      "lineIndex": 32
+    },
+    {
+      "start": 96.874,
+      "end": 99.057,
+      "type": "line",
+      "text": "And now, these are the words:",
+      "verse": "6:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 99.237,
+      "end": 101.141,
+      "type": "line",
+      "text": "Thus saith the Lord God:",
+      "verse": "6:6",
+      "lineIndex": 35
+    },
+    {
+      "start": 101.321,
+      "end": 104.2,
+      "type": "line",
+      "text": "Behold, I will lift up mine hand to the Gentiles,",
+      "verse": "6:6",
+      "lineIndex": 36
+    },
+    {
+      "start": 104.38,
+      "end": 106.888,
+      "type": "line",
+      "text": "and set up my standard to the people;",
+      "verse": "6:6",
+      "lineIndex": 37
+    },
+    {
+      "start": 107.068,
+      "end": 109.947,
+      "type": "line",
+      "text": "and they shall bring thy sons in their arms,",
+      "verse": "6:6",
+      "lineIndex": 38
+    },
+    {
+      "start": 110.127,
+      "end": 113.889,
+      "type": "line",
+      "text": "and thy daughters shall be carried upon their shoulders.",
+      "verse": "6:6",
+      "lineIndex": 39
+    },
+    {
+      "start": 114.069,
+      "end": 129.533,
+      "type": "line",
+      "text": "And now, these are the words: Thus saith the Lord God: Behold, I will lift up mine hand to the Gentiles, and set up my standard to the people; and they shall bring thy sons in their arms, and thy daughters shall be carried upon their shoulders.",
+      "verse": "6:6",
+      "lineIndex": 40
+    },
+    {
+      "start": 130.213,
+      "end": 132.86,
+      "type": "line",
+      "text": "And kings shall be thy nursing fathers,",
+      "verse": "6:7",
+      "lineIndex": 41
+    },
+    {
+      "start": 133.04,
+      "end": 135.734,
+      "type": "line",
+      "text": "and their queens thy nursing mothers;",
+      "verse": "6:7",
+      "lineIndex": 42
+    },
+    {
+      "start": 135.914,
+      "end": 140.047,
+      "type": "line",
+      "text": "they shall bow down to thee with their faces towards the earth,",
+      "verse": "6:7",
+      "lineIndex": 43
+    },
+    {
+      "start": 140.227,
+      "end": 142.781,
+      "type": "line",
+      "text": "and lick up the dust of thy feet;",
+      "verse": "6:7",
+      "lineIndex": 44
+    },
+    {
+      "start": 142.961,
+      "end": 145.237,
+      "type": "line",
+      "text": "and thou shalt know that I am the Lord;",
+      "verse": "6:7",
+      "lineIndex": 45
+    },
+    {
+      "start": 145.417,
+      "end": 148.018,
+      "type": "line",
+      "text": "for they shall not be ashamed that wait for me.",
+      "verse": "6:7",
+      "lineIndex": 46
+    },
+    {
+      "start": 148.198,
+      "end": 166.867,
+      "type": "line",
+      "text": "And kings shall be thy nursing fathers, and their queens thy nursing mothers; they shall bow down to thee with their face toward faces towards the earth, and lick up the dust of thy feet; and thou shalt know that I am the Lord; for they shall not be ashamed that wait for me.",
+      "verse": "6:7",
+      "lineIndex": 47
+    },
+    {
+      "start": 167.547,
+      "end": 171.123,
+      "type": "line",
+      "text": "And now I, Jacob, would speak somewhat concerning these words.",
+      "verse": "6:8",
+      "lineIndex": 49
+    },
+    {
+      "start": 171.303,
+      "end": 173.579,
+      "type": "line",
+      "text": "For behold, the Lord has shown me",
+      "verse": "6:8",
+      "lineIndex": 50
+    },
+    {
+      "start": 173.759,
+      "end": 176.174,
+      "type": "line",
+      "text": "that those who were at Jerusalem,",
+      "verse": "6:8",
+      "lineIndex": 51
+    },
+    {
+      "start": 176.354,
+      "end": 177.887,
+      "type": "line",
+      "text": "from whence we came,",
+      "verse": "6:8",
+      "lineIndex": 52
+    },
+    {
+      "start": 178.067,
+      "end": 180.528,
+      "type": "line",
+      "text": "have been slain and carried away captive.",
+      "verse": "6:8",
+      "lineIndex": 53
+    },
+    {
+      "start": 181.208,
+      "end": 183.762,
+      "type": "line",
+      "text": "Nevertheless, the Lord has shown unto me",
+      "verse": "6:9",
+      "lineIndex": 54
+    },
+    {
+      "start": 183.942,
+      "end": 185.753,
+      "type": "line",
+      "text": "that they should return again.",
+      "verse": "6:9",
+      "lineIndex": 55
+    },
+    {
+      "start": 185.933,
+      "end": 187.976,
+      "type": "line",
+      "text": "And he also has shown unto me",
+      "verse": "6:9",
+      "lineIndex": 56
+    },
+    {
+      "start": 188.156,
+      "end": 191.175,
+      "type": "line",
+      "text": "that the Lord God, the Holy One of Israel,",
+      "verse": "6:9",
+      "lineIndex": 57
+    },
+    {
+      "start": 191.355,
+      "end": 194.606,
+      "type": "line",
+      "text": "should manifest himself unto them in the flesh;",
+      "verse": "6:9",
+      "lineIndex": 58
+    },
+    {
+      "start": 194.786,
+      "end": 197.108,
+      "type": "line",
+      "text": "and after he should manifest himself",
+      "verse": "6:9",
+      "lineIndex": 59
+    },
+    {
+      "start": 197.288,
+      "end": 199.982,
+      "type": "line",
+      "text": "they should scourge him and crucify him,",
+      "verse": "6:9",
+      "lineIndex": 60
+    },
+    {
+      "start": 200.162,
+      "end": 203.738,
+      "type": "line",
+      "text": "according to the words of the angel who spake it unto me.",
+      "verse": "6:9",
+      "lineIndex": 61
+    },
+    {
+      "start": 204.418,
+      "end": 207.019,
+      "type": "line",
+      "text": "And after they have hardened their hearts",
+      "verse": "6:10",
+      "lineIndex": 62
+    },
+    {
+      "start": 207.199,
+      "end": 209.01,
+      "type": "line",
+      "text": "and stiffened their necks",
+      "verse": "6:10",
+      "lineIndex": 63
+    },
+    {
+      "start": 209.19,
+      "end": 211.28,
+      "type": "line",
+      "text": "against the Holy One of Israel,",
+      "verse": "6:10",
+      "lineIndex": 64
+    },
+    {
+      "start": 211.46,
+      "end": 215.593,
+      "type": "line",
+      "text": "behold, the judgments of the Holy One of Israel shall come upon them.",
+      "verse": "6:10",
+      "lineIndex": 65
+    },
+    {
+      "start": 215.773,
+      "end": 219.163,
+      "type": "line",
+      "text": "And the day cometh that they shall be smitten and afflicted.",
+      "verse": "6:10",
+      "lineIndex": 66
+    },
+    {
+      "start": 219.843,
+      "end": 222.49,
+      "type": "line",
+      "text": "Wherefore, after they are driven to and fro,",
+      "verse": "6:11",
+      "lineIndex": 67
+    },
+    {
+      "start": 222.67,
+      "end": 224.481,
+      "type": "line",
+      "text": "for thus saith the angel,",
+      "verse": "6:11",
+      "lineIndex": 68
+    },
+    {
+      "start": 224.661,
+      "end": 227.029,
+      "type": "line",
+      "text": "many shall be afflicted in the flesh,",
+      "verse": "6:11",
+      "lineIndex": 69
+    },
+    {
+      "start": 227.209,
+      "end": 229.577,
+      "type": "line",
+      "text": "and shall not be suffered to perish,",
+      "verse": "6:11",
+      "lineIndex": 70
+    },
+    {
+      "start": 229.757,
+      "end": 232.125,
+      "type": "line",
+      "text": "because of the prayers of the faithful;",
+      "verse": "6:11",
+      "lineIndex": 71
+    },
+    {
+      "start": 232.305,
+      "end": 235.509,
+      "type": "line",
+      "text": "they shall be scattered, and smitten, and hated;",
+      "verse": "6:11",
+      "lineIndex": 72
+    },
+    {
+      "start": 235.689,
+      "end": 238.708,
+      "type": "line",
+      "text": "nevertheless, the Lord will be merciful unto them,",
+      "verse": "6:11",
+      "lineIndex": 73
+    },
+    {
+      "start": 238.888,
+      "end": 242.417,
+      "type": "line",
+      "text": "that when they shall come to the knowledge of their Redeemer,",
+      "verse": "6:11",
+      "lineIndex": 74
+    },
+    {
+      "start": 242.597,
+      "end": 247.148,
+      "type": "line",
+      "text": "they shall be gathered together again to the lands of their inheritance.",
+      "verse": "6:11",
+      "lineIndex": 75
+    },
+    {
+      "start": 247.828,
+      "end": 249.639,
+      "type": "line",
+      "text": "And blessed are the Gentiles,",
+      "verse": "6:12",
+      "lineIndex": 76
+    },
+    {
+      "start": 249.819,
+      "end": 252.048,
+      "type": "line",
+      "text": "they of whom the prophet has written;",
+      "verse": "6:12",
+      "lineIndex": 77
+    },
+    {
+      "start": 252.228,
+      "end": 255.386,
+      "type": "line",
+      "text": "for behold, if it so be that they shall repent",
+      "verse": "6:12",
+      "lineIndex": 78
+    },
+    {
+      "start": 255.566,
+      "end": 257.702,
+      "type": "line",
+      "text": "and fight not against Zion,",
+      "verse": "6:12",
+      "lineIndex": 79
+    },
+    {
+      "start": 257.882,
+      "end": 261.829,
+      "type": "line",
+      "text": "and do not unite themselves to that great and abominable church,",
+      "verse": "6:12",
+      "lineIndex": 80
+    },
+    {
+      "start": 262.009,
+      "end": 263.634,
+      "type": "line",
+      "text": "they shall be saved;",
+      "verse": "6:12",
+      "lineIndex": 81
+    },
+    {
+      "start": 263.814,
+      "end": 266.693,
+      "type": "line",
+      "text": "for the Lord God will fulfil his covenants",
+      "verse": "6:12",
+      "lineIndex": 82
+    },
+    {
+      "start": 266.873,
+      "end": 268.731,
+      "type": "line",
+      "text": "which he has made unto his children;",
+      "verse": "6:12",
+      "lineIndex": 83
+    },
+    {
+      "start": 268.911,
+      "end": 272.348,
+      "type": "line",
+      "text": "and for this cause the prophet has written these things.",
+      "verse": "6:12",
+      "lineIndex": 84
+    },
+    {
+      "start": 273.028,
+      "end": 275.722,
+      "type": "line",
+      "text": "Wherefore, they that fight against Zion",
+      "verse": "6:13",
+      "lineIndex": 85
+    },
+    {
+      "start": 275.902,
+      "end": 278.456,
+      "type": "line",
+      "text": "and the covenant people of the Lord",
+      "verse": "6:13",
+      "lineIndex": 86
+    },
+    {
+      "start": 278.636,
+      "end": 281.051,
+      "type": "line",
+      "text": "shall lick up the dust of their feet;",
+      "verse": "6:13",
+      "lineIndex": 87
+    },
+    {
+      "start": 281.231,
+      "end": 283.925,
+      "type": "line",
+      "text": "and the people of the Lord shall not be ashamed.",
+      "verse": "6:13",
+      "lineIndex": 88
+    },
+    {
+      "start": 284.105,
+      "end": 286.891,
+      "type": "line",
+      "text": "For the people of the Lord are they who wait for him;",
+      "verse": "6:13",
+      "lineIndex": 89
+    },
+    {
+      "start": 287.071,
+      "end": 290.275,
+      "type": "line",
+      "text": "for they still wait for the coming of the Messiah.",
+      "verse": "6:13",
+      "lineIndex": 90
+    },
+    {
+      "start": 290.955,
+      "end": 294.531,
+      "type": "line",
+      "text": "And behold, according to the words of the prophet,",
+      "verse": "6:14",
+      "lineIndex": 91
+    },
+    {
+      "start": 294.711,
+      "end": 298.798,
+      "type": "line",
+      "text": "the Messiah will set himself again the second time to recover them;",
+      "verse": "6:14",
+      "lineIndex": 92
+    },
+    {
+      "start": 298.978,
+      "end": 302.136,
+      "type": "line",
+      "text": "wherefore, he will manifest himself unto them",
+      "verse": "6:14",
+      "lineIndex": 93
+    },
+    {
+      "start": 302.316,
+      "end": 304.174,
+      "type": "line",
+      "text": "in power and great glory,",
+      "verse": "6:14",
+      "lineIndex": 94
+    },
+    {
+      "start": 304.354,
+      "end": 306.815,
+      "type": "line",
+      "text": "unto the destruction of their enemies,",
+      "verse": "6:14",
+      "lineIndex": 95
+    },
+    {
+      "start": 306.995,
+      "end": 310.06,
+      "type": "line",
+      "text": "when that day cometh when they shall believe in him;",
+      "verse": "6:14",
+      "lineIndex": 96
+    },
+    {
+      "start": 310.24,
+      "end": 312.794,
+      "type": "line",
+      "text": "and none will he destroy that believe in him.",
+      "verse": "6:14",
+      "lineIndex": 97
+    },
+    {
+      "start": 313.474,
+      "end": 316.446,
+      "type": "line",
+      "text": "And they that believe not in him shall be destroyed,",
+      "verse": "6:15",
+      "lineIndex": 98
+    },
+    {
+      "start": 316.626,
+      "end": 320.063,
+      "type": "line",
+      "text": "both by fire, and by tempest, and by earthquakes,",
+      "verse": "6:15",
+      "lineIndex": 99
+    },
+    {
+      "start": 320.243,
+      "end": 323.912,
+      "type": "line",
+      "text": "and by bloodsheds, and by pestilence, and by famine.",
+      "verse": "6:15",
+      "lineIndex": 100
+    },
+    {
+      "start": 324.092,
+      "end": 326.925,
+      "type": "line",
+      "text": "And they shall know that the Lord is God,",
+      "verse": "6:15",
+      "lineIndex": 101
+    },
+    {
+      "start": 327.105,
+      "end": 328.777,
+      "type": "line",
+      "text": "the Holy One of Israel.",
+      "verse": "6:15",
+      "lineIndex": 102
+    },
+    {
+      "start": 329.457,
+      "end": 332.243,
+      "type": "line",
+      "text": "For shall the prey be taken from the mighty,",
+      "verse": "6:16",
+      "lineIndex": 103
+    },
+    {
+      "start": 332.423,
+      "end": 334.791,
+      "type": "line",
+      "text": "or the lawful captive delivered?",
+      "verse": "6:16",
+      "lineIndex": 104
+    },
+    {
+      "start": 334.971,
+      "end": 339.661,
+      "type": "line",
+      "text": "For shall the prey be taken from the mighty, or the lawful captive delivered?",
+      "verse": "6:16",
+      "lineIndex": 105
+    },
+    {
+      "start": 340.341,
+      "end": 342.059,
+      "type": "line",
+      "text": "But thus saith the Lord:",
+      "verse": "6:17",
+      "lineIndex": 106
+    },
+    {
+      "start": 342.239,
+      "end": 345.35,
+      "type": "line",
+      "text": "Even the captives of the mighty shall be taken away,",
+      "verse": "6:17",
+      "lineIndex": 107
+    },
+    {
+      "start": 345.53,
+      "end": 348.224,
+      "type": "line",
+      "text": "and the prey of the terrible shall be delivered;",
+      "verse": "6:17",
+      "lineIndex": 108
+    },
+    {
+      "start": 348.404,
+      "end": 351.841,
+      "type": "line",
+      "text": "for the Mighty God shall deliver his covenant people.",
+      "verse": "6:17",
+      "lineIndex": 109
+    },
+    {
+      "start": 352.021,
+      "end": 353.693,
+      "type": "line",
+      "text": "For thus saith the Lord:",
+      "verse": "6:17",
+      "lineIndex": 110
+    },
+    {
+      "start": 353.873,
+      "end": 356.799,
+      "type": "line",
+      "text": "I will contend with them that contendeth with thee\u2014",
+      "verse": "6:17",
+      "lineIndex": 111
+    },
+    {
+      "start": 356.979,
+      "end": 377.32,
+      "type": "line",
+      "text": "But thus saith the Lord: Even the captives of the mighty shall be taken away, and the prey of the terrible shall be delivered; for the Mighty God shall deliver his covenant people. For thus saith the Lord: I will contend with him them that contendeth with thee-- and I will save thy children.",
+      "verse": "6:17",
+      "lineIndex": 112
+    },
+    {
+      "start": 378.0,
+      "end": 381.529,
+      "type": "line",
+      "text": "And I will feed them that oppress thee, with their own flesh;",
+      "verse": "6:18",
+      "lineIndex": 113
+    },
+    {
+      "start": 381.709,
+      "end": 386.121,
+      "type": "line",
+      "text": "and they shall be drunken with their own blood as with sweet wine;",
+      "verse": "6:18",
+      "lineIndex": 114
+    },
+    {
+      "start": 386.301,
+      "end": 388.205,
+      "type": "line",
+      "text": "and all flesh shall know",
+      "verse": "6:18",
+      "lineIndex": 115
+    },
+    {
+      "start": 388.385,
+      "end": 391.589,
+      "type": "line",
+      "text": "that I the Lord am thy Savior and thy Redeemer,",
+      "verse": "6:18",
+      "lineIndex": 116
+    },
+    {
+      "start": 391.769,
+      "end": 393.394,
+      "type": "line",
+      "text": "the Mighty One of Jacob.",
+      "verse": "6:18",
+      "lineIndex": 117
+    },
+    {
+      "start": 393.574,
+      "end": 410.478,
+      "type": "line",
+      "text": "And I will feed them that oppress thee, with their own flesh; and they shall be drunken with their own blood as with sweet wine; and all flesh shall know that I the Lord am thy Saviour Savior and thy Redeemer, the Mighty One of Jacob.",
+      "verse": "6:18",
+      "lineIndex": 118
+    }
+  ]
+}

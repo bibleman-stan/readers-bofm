@@ -1,0 +1,2464 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 9,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 942.484,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.043,
+      "type": "line",
+      "text": "And now, my beloved brethren,",
+      "verse": "9:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.223,
+      "end": 6.728,
+      "type": "line",
+      "text": "I have read these things that ye might know concerning the covenants of the Lord",
+      "verse": "9:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.908,
+      "end": 10.112,
+      "type": "line",
+      "text": "that he has covenanted with all the house of Israel\u2014",
+      "verse": "9:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.792,
+      "end": 13.068,
+      "type": "line",
+      "text": "That he has spoken unto the Jews,",
+      "verse": "9:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 13.248,
+      "end": 15.384,
+      "type": "line",
+      "text": "by the mouth of his holy prophets,",
+      "verse": "9:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 15.564,
+      "end": 17.422,
+      "type": "line",
+      "text": "even from the beginning down,",
+      "verse": "9:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 17.602,
+      "end": 19.738,
+      "type": "line",
+      "text": "from generation to generation,",
+      "verse": "9:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 19.918,
+      "end": 23.076,
+      "type": "line",
+      "text": "until the time comes that they shall be restored",
+      "verse": "9:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 23.256,
+      "end": 25.578,
+      "type": "line",
+      "text": "to the true church and fold of God;",
+      "verse": "9:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 25.758,
+      "end": 29.752,
+      "type": "line",
+      "text": "when they shall be gathered home to the lands of their inheritance,",
+      "verse": "9:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 29.932,
+      "end": 32.904,
+      "type": "line",
+      "text": "and shall be established in all their lands of promise.",
+      "verse": "9:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 33.584,
+      "end": 35.534,
+      "type": "line",
+      "text": "Behold, my beloved brethren,",
+      "verse": "9:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 35.714,
+      "end": 37.804,
+      "type": "line",
+      "text": "I speak unto you these things",
+      "verse": "9:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 37.984,
+      "end": 39.517,
+      "type": "line",
+      "text": "that ye may rejoice,",
+      "verse": "9:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 39.697,
+      "end": 41.74,
+      "type": "line",
+      "text": "and lift up your heads forever,",
+      "verse": "9:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 41.92,
+      "end": 46.007,
+      "type": "line",
+      "text": "because of the blessings which the Lord God shall bestow upon your children.",
+      "verse": "9:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 46.687,
+      "end": 49.984,
+      "type": "line",
+      "text": "For I know that ye have searched much, many of you,",
+      "verse": "9:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 50.164,
+      "end": 52.114,
+      "type": "line",
+      "text": "to know of things to come;",
+      "verse": "9:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 52.294,
+      "end": 54.384,
+      "type": "line",
+      "text": "wherefore I know that ye know",
+      "verse": "9:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 54.564,
+      "end": 57.118,
+      "type": "line",
+      "text": "that our flesh must waste away and die;",
+      "verse": "9:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 57.298,
+      "end": 60.084,
+      "type": "line",
+      "text": "nevertheless, in our bodies we shall see God.",
+      "verse": "9:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 60.764,
+      "end": 62.343,
+      "type": "line",
+      "text": "Yea, I know that ye know",
+      "verse": "9:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 62.523,
+      "end": 66.703,
+      "type": "line",
+      "text": "that in the body he shall show himself unto those at Jerusalem,",
+      "verse": "9:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 66.883,
+      "end": 68.508,
+      "type": "line",
+      "text": "from whence we came;",
+      "verse": "9:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 68.688,
+      "end": 72.078,
+      "type": "line",
+      "text": "for it is expedient that it should be among them;",
+      "verse": "9:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 72.258,
+      "end": 78.852,
+      "type": "line",
+      "text": "for it behooveth the great Creator that he suffereth himself to become subject unto man in the flesh,",
+      "verse": "9:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 79.032,
+      "end": 80.936,
+      "type": "line",
+      "text": "and die for all men,",
+      "verse": "9:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 81.116,
+      "end": 83.902,
+      "type": "line",
+      "text": "that all men might become subject unto him.",
+      "verse": "9:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 84.582,
+      "end": 87.322,
+      "type": "line",
+      "text": "For as death hath passed upon all men,",
+      "verse": "9:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 87.502,
+      "end": 90.613,
+      "type": "line",
+      "text": "to fulfil the merciful plan of the great Creator,",
+      "verse": "9:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 90.793,
+      "end": 93.812,
+      "type": "line",
+      "text": "there must needs be a power of resurrection,",
+      "verse": "9:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 93.992,
+      "end": 98.729,
+      "type": "line",
+      "text": "and the resurrection must needs come unto man by reason of the fall;",
+      "verse": "9:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 98.909,
+      "end": 101.974,
+      "type": "line",
+      "text": "and the fall came by reason of transgression;",
+      "verse": "9:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 102.154,
+      "end": 104.244,
+      "type": "line",
+      "text": "and because man became fallen",
+      "verse": "9:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 104.424,
+      "end": 107.675,
+      "type": "line",
+      "text": "they were cut off from the presence of the Lord.",
+      "verse": "9:6",
+      "lineIndex": 35
+    },
+    {
+      "start": 108.355,
+      "end": 112.395,
+      "type": "line",
+      "text": "Wherefore, it must needs be an infinite atonement\u2014",
+      "verse": "9:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 112.575,
+      "end": 115.408,
+      "type": "line",
+      "text": "save it should be an infinite atonement",
+      "verse": "9:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 115.588,
+      "end": 118.003,
+      "type": "line",
+      "text": "this corruption could not put on incorruption.",
+      "verse": "9:7",
+      "lineIndex": 38
+    },
+    {
+      "start": 118.183,
+      "end": 121.341,
+      "type": "line",
+      "text": "Wherefore, the first judgment which came upon man",
+      "verse": "9:7",
+      "lineIndex": 39
+    },
+    {
+      "start": 121.521,
+      "end": 124.632,
+      "type": "line",
+      "text": "must needs have remained to an endless duration.",
+      "verse": "9:7",
+      "lineIndex": 40
+    },
+    {
+      "start": 124.812,
+      "end": 128.341,
+      "type": "line",
+      "text": "And if so, this flesh must have laid down to rot",
+      "verse": "9:7",
+      "lineIndex": 41
+    },
+    {
+      "start": 128.521,
+      "end": 132.004,
+      "type": "line",
+      "text": "and to crumble to its mother earth, to rise no more.",
+      "verse": "9:7",
+      "lineIndex": 42
+    },
+    {
+      "start": 132.684,
+      "end": 135.099,
+      "type": "line",
+      "text": "O the wisdom of God, his mercy and grace!",
+      "verse": "9:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 135.279,
+      "end": 138.065,
+      "type": "line",
+      "text": "For behold, if the flesh should rise no more",
+      "verse": "9:8",
+      "lineIndex": 44
+    },
+    {
+      "start": 138.245,
+      "end": 141.217,
+      "type": "line",
+      "text": "our spirits must become subject to that angel",
+      "verse": "9:8",
+      "lineIndex": 45
+    },
+    {
+      "start": 141.397,
+      "end": 144.834,
+      "type": "line",
+      "text": "who fell from before the presence of the Eternal God,",
+      "verse": "9:8",
+      "lineIndex": 46
+    },
+    {
+      "start": 145.014,
+      "end": 147.708,
+      "type": "line",
+      "text": "and became the devil, to rise no more.",
+      "verse": "9:8",
+      "lineIndex": 47
+    },
+    {
+      "start": 148.388,
+      "end": 151.499,
+      "type": "line",
+      "text": "And our spirits must have become like unto him,",
+      "verse": "9:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 151.679,
+      "end": 154.558,
+      "type": "line",
+      "text": "and we become devils, angels to a devil,",
+      "verse": "9:9",
+      "lineIndex": 49
+    },
+    {
+      "start": 154.738,
+      "end": 157.757,
+      "type": "line",
+      "text": "to be shut out from the presence of our God,",
+      "verse": "9:9",
+      "lineIndex": 50
+    },
+    {
+      "start": 157.937,
+      "end": 160.305,
+      "type": "line",
+      "text": "and to remain with the father of lies,",
+      "verse": "9:9",
+      "lineIndex": 51
+    },
+    {
+      "start": 160.485,
+      "end": 162.761,
+      "type": "line",
+      "text": "in misery, like unto himself;",
+      "verse": "9:9",
+      "lineIndex": 52
+    },
+    {
+      "start": 162.941,
+      "end": 166.424,
+      "type": "line",
+      "text": "yea, to that being who beguiled our first parents,",
+      "verse": "9:9",
+      "lineIndex": 53
+    },
+    {
+      "start": 166.604,
+      "end": 170.366,
+      "type": "line",
+      "text": "who transformeth himself nigh unto an angel of light,",
+      "verse": "9:9",
+      "lineIndex": 54
+    },
+    {
+      "start": 170.546,
+      "end": 176.119,
+      "type": "line",
+      "text": "and stirreth up the children of men unto secret combinations of murder",
+      "verse": "9:9",
+      "lineIndex": 55
+    },
+    {
+      "start": 176.299,
+      "end": 178.993,
+      "type": "line",
+      "text": "and all manner of secret works of darkness.",
+      "verse": "9:9",
+      "lineIndex": 56
+    },
+    {
+      "start": 179.673,
+      "end": 181.949,
+      "type": "line",
+      "text": "O how great the goodness of our God,",
+      "verse": "9:10",
+      "lineIndex": 57
+    },
+    {
+      "start": 182.129,
+      "end": 187.098,
+      "type": "line",
+      "text": "who prepareth a way for our escape from the grasp of this awful monster;",
+      "verse": "9:10",
+      "lineIndex": 58
+    },
+    {
+      "start": 187.278,
+      "end": 189.228,
+      "type": "line",
+      "text": "yea, that monster, death and hell,",
+      "verse": "9:10",
+      "lineIndex": 59
+    },
+    {
+      "start": 189.408,
+      "end": 191.637,
+      "type": "line",
+      "text": "which I call the death of the body,",
+      "verse": "9:10",
+      "lineIndex": 60
+    },
+    {
+      "start": 191.817,
+      "end": 193.86,
+      "type": "line",
+      "text": "and also the death of the spirit.",
+      "verse": "9:10",
+      "lineIndex": 61
+    },
+    {
+      "start": 194.54,
+      "end": 199.416,
+      "type": "line",
+      "text": "And because of the way of deliverance of our God, the Holy One of Israel,",
+      "verse": "9:11",
+      "lineIndex": 62
+    },
+    {
+      "start": 199.596,
+      "end": 201.825,
+      "type": "line",
+      "text": "this death, of which I have spoken,",
+      "verse": "9:11",
+      "lineIndex": 63
+    },
+    {
+      "start": 202.005,
+      "end": 203.77,
+      "type": "line",
+      "text": "which is the temporal,",
+      "verse": "9:11",
+      "lineIndex": 64
+    },
+    {
+      "start": 203.95,
+      "end": 207.805,
+      "type": "line",
+      "text": "shall deliver up its dead; which death is the grave.",
+      "verse": "9:11",
+      "lineIndex": 65
+    },
+    {
+      "start": 208.485,
+      "end": 211.225,
+      "type": "line",
+      "text": "And this death of which I have spoken,",
+      "verse": "9:12",
+      "lineIndex": 66
+    },
+    {
+      "start": 211.405,
+      "end": 213.309,
+      "type": "line",
+      "text": "which is the spiritual death,",
+      "verse": "9:12",
+      "lineIndex": 67
+    },
+    {
+      "start": 213.489,
+      "end": 215.347,
+      "type": "line",
+      "text": "shall deliver up its dead;",
+      "verse": "9:12",
+      "lineIndex": 68
+    },
+    {
+      "start": 215.527,
+      "end": 217.57,
+      "type": "line",
+      "text": "which spiritual death is hell;",
+      "verse": "9:12",
+      "lineIndex": 69
+    },
+    {
+      "start": 217.75,
+      "end": 221.14,
+      "type": "line",
+      "text": "wherefore, death and hell must deliver up their dead,",
+      "verse": "9:12",
+      "lineIndex": 70
+    },
+    {
+      "start": 221.32,
+      "end": 224.199,
+      "type": "line",
+      "text": "and hell must deliver up its captive spirits,",
+      "verse": "9:12",
+      "lineIndex": 71
+    },
+    {
+      "start": 224.379,
+      "end": 227.583,
+      "type": "line",
+      "text": "and the grave must deliver up its captive bodies,",
+      "verse": "9:12",
+      "lineIndex": 72
+    },
+    {
+      "start": 227.763,
+      "end": 232.593,
+      "type": "line",
+      "text": "and the bodies and the spirits of men will be restored one to the other;",
+      "verse": "9:12",
+      "lineIndex": 73
+    },
+    {
+      "start": 232.773,
+      "end": 237.278,
+      "type": "line",
+      "text": "and it is by the power of the resurrection of the Holy One of Israel.",
+      "verse": "9:12",
+      "lineIndex": 74
+    },
+    {
+      "start": 237.958,
+      "end": 240.094,
+      "type": "line",
+      "text": "O how great the plan of our God!",
+      "verse": "9:13",
+      "lineIndex": 75
+    },
+    {
+      "start": 240.274,
+      "end": 241.807,
+      "type": "line",
+      "text": "For on the other hand,",
+      "verse": "9:13",
+      "lineIndex": 76
+    },
+    {
+      "start": 241.987,
+      "end": 245.888,
+      "type": "line",
+      "text": "the paradise of God must deliver up the spirits of the righteous,",
+      "verse": "9:13",
+      "lineIndex": 77
+    },
+    {
+      "start": 246.068,
+      "end": 249.179,
+      "type": "line",
+      "text": "and the grave deliver up the body of the righteous;",
+      "verse": "9:13",
+      "lineIndex": 78
+    },
+    {
+      "start": 249.359,
+      "end": 252.656,
+      "type": "line",
+      "text": "and the spirit and the body is restored to itself again,",
+      "verse": "9:13",
+      "lineIndex": 79
+    },
+    {
+      "start": 252.836,
+      "end": 256.087,
+      "type": "line",
+      "text": "and all men become incorruptible, and immortal,",
+      "verse": "9:13",
+      "lineIndex": 80
+    },
+    {
+      "start": 256.267,
+      "end": 258.31,
+      "type": "line",
+      "text": "and they are living souls,",
+      "verse": "9:13",
+      "lineIndex": 81
+    },
+    {
+      "start": 258.49,
+      "end": 261.741,
+      "type": "line",
+      "text": "having a perfect knowledge like unto us in the flesh,",
+      "verse": "9:13",
+      "lineIndex": 82
+    },
+    {
+      "start": 261.921,
+      "end": 265.265,
+      "type": "line",
+      "text": "save it be that our knowledge shall be perfect.",
+      "verse": "9:13",
+      "lineIndex": 83
+    },
+    {
+      "start": 265.945,
+      "end": 270.357,
+      "type": "line",
+      "text": "Wherefore, we shall have a perfect knowledge of all our guilt,",
+      "verse": "9:14",
+      "lineIndex": 84
+    },
+    {
+      "start": 270.537,
+      "end": 272.302,
+      "type": "line",
+      "text": "and our uncleanness,",
+      "verse": "9:14",
+      "lineIndex": 85
+    },
+    {
+      "start": 272.482,
+      "end": 274.154,
+      "type": "line",
+      "text": "and our nakedness;",
+      "verse": "9:14",
+      "lineIndex": 86
+    },
+    {
+      "start": 274.334,
+      "end": 277.399,
+      "type": "line",
+      "text": "and the righteous shall have a perfect knowledge",
+      "verse": "9:14",
+      "lineIndex": 87
+    },
+    {
+      "start": 277.579,
+      "end": 279.39,
+      "type": "line",
+      "text": "of their enjoyment,",
+      "verse": "9:14",
+      "lineIndex": 88
+    },
+    {
+      "start": 279.57,
+      "end": 281.335,
+      "type": "line",
+      "text": "and their righteousness,",
+      "verse": "9:14",
+      "lineIndex": 89
+    },
+    {
+      "start": 281.515,
+      "end": 283.28,
+      "type": "line",
+      "text": "being clothed with purity,",
+      "verse": "9:14",
+      "lineIndex": 90
+    },
+    {
+      "start": 283.46,
+      "end": 286.014,
+      "type": "line",
+      "text": "yea, even with the robe of righteousness.",
+      "verse": "9:14",
+      "lineIndex": 91
+    },
+    {
+      "start": 286.694,
+      "end": 293.381,
+      "type": "line",
+      "text": "And it shall come to pass that when all men shall have passed from this first death unto life,",
+      "verse": "9:15",
+      "lineIndex": 93
+    },
+    {
+      "start": 293.561,
+      "end": 295.976,
+      "type": "line",
+      "text": "insomuch as they have become immortal,",
+      "verse": "9:15",
+      "lineIndex": 94
+    },
+    {
+      "start": 296.156,
+      "end": 300.568,
+      "type": "line",
+      "text": "they must appear before the judgment-seat of the Holy One of Israel;",
+      "verse": "9:15",
+      "lineIndex": 95
+    },
+    {
+      "start": 300.748,
+      "end": 302.606,
+      "type": "line",
+      "text": "and then cometh the judgment,",
+      "verse": "9:15",
+      "lineIndex": 96
+    },
+    {
+      "start": 302.786,
+      "end": 306.687,
+      "type": "line",
+      "text": "and then must they be judged according to the holy judgment of God.",
+      "verse": "9:15",
+      "lineIndex": 97
+    },
+    {
+      "start": 307.367,
+      "end": 309.503,
+      "type": "line",
+      "text": "And assuredly, as the Lord liveth,",
+      "verse": "9:16",
+      "lineIndex": 98
+    },
+    {
+      "start": 309.683,
+      "end": 312.005,
+      "type": "line",
+      "text": "for the Lord God hath spoken it,",
+      "verse": "9:16",
+      "lineIndex": 99
+    },
+    {
+      "start": 312.185,
+      "end": 315.296,
+      "type": "line",
+      "text": "and it is his eternal word, which cannot pass away,",
+      "verse": "9:16",
+      "lineIndex": 100
+    },
+    {
+      "start": 315.476,
+      "end": 319.052,
+      "type": "line",
+      "text": "that they who are righteous shall be righteous still,",
+      "verse": "9:16",
+      "lineIndex": 101
+    },
+    {
+      "start": 319.232,
+      "end": 322.158,
+      "type": "line",
+      "text": "and they who are filthy shall be filthy still;",
+      "verse": "9:16",
+      "lineIndex": 102
+    },
+    {
+      "start": 322.338,
+      "end": 326.657,
+      "type": "line",
+      "text": "wherefore, they who are filthy are the devil and his angels;",
+      "verse": "9:16",
+      "lineIndex": 103
+    },
+    {
+      "start": 326.837,
+      "end": 330.738,
+      "type": "line",
+      "text": "and they shall go away into everlasting fire, prepared for them;",
+      "verse": "9:16",
+      "lineIndex": 104
+    },
+    {
+      "start": 330.918,
+      "end": 334.633,
+      "type": "line",
+      "text": "and their torment is as a lake of fire and brimstone,",
+      "verse": "9:16",
+      "lineIndex": 105
+    },
+    {
+      "start": 334.813,
+      "end": 338.435,
+      "type": "line",
+      "text": "whose flame ascendeth up forever and ever and has no end.",
+      "verse": "9:16",
+      "lineIndex": 106
+    },
+    {
+      "start": 339.115,
+      "end": 341.948,
+      "type": "line",
+      "text": "O the greatness and the justice of our God!",
+      "verse": "9:17",
+      "lineIndex": 107
+    },
+    {
+      "start": 342.128,
+      "end": 344.496,
+      "type": "line",
+      "text": "For he executeth all his words,",
+      "verse": "9:17",
+      "lineIndex": 108
+    },
+    {
+      "start": 344.676,
+      "end": 346.859,
+      "type": "line",
+      "text": "and they have gone forth out of his mouth,",
+      "verse": "9:17",
+      "lineIndex": 109
+    },
+    {
+      "start": 347.039,
+      "end": 348.85,
+      "type": "line",
+      "text": "and his law must be fulfilled.",
+      "verse": "9:17",
+      "lineIndex": 110
+    },
+    {
+      "start": 349.53,
+      "end": 351.202,
+      "type": "line",
+      "text": "But, behold, the righteous,",
+      "verse": "9:18",
+      "lineIndex": 111
+    },
+    {
+      "start": 351.382,
+      "end": 353.843,
+      "type": "line",
+      "text": "the saints of the Holy One of Israel,",
+      "verse": "9:18",
+      "lineIndex": 112
+    },
+    {
+      "start": 354.023,
+      "end": 356.809,
+      "type": "line",
+      "text": "they who have believed in the Holy One of Israel,",
+      "verse": "9:18",
+      "lineIndex": 113
+    },
+    {
+      "start": 356.989,
+      "end": 360.333,
+      "type": "line",
+      "text": "they who have endured the crosses of the world",
+      "verse": "9:18",
+      "lineIndex": 114
+    },
+    {
+      "start": 360.513,
+      "end": 362.324,
+      "type": "line",
+      "text": "and despised the shame of it,",
+      "verse": "9:18",
+      "lineIndex": 115
+    },
+    {
+      "start": 362.504,
+      "end": 364.826,
+      "type": "line",
+      "text": "they shall inherit the kingdom of God,",
+      "verse": "9:18",
+      "lineIndex": 116
+    },
+    {
+      "start": 365.006,
+      "end": 369.046,
+      "type": "line",
+      "text": "which was prepared for them from the foundation of the world,",
+      "verse": "9:18",
+      "lineIndex": 117
+    },
+    {
+      "start": 369.226,
+      "end": 371.827,
+      "type": "line",
+      "text": "and their joy shall be full forever.",
+      "verse": "9:18",
+      "lineIndex": 118
+    },
+    {
+      "start": 372.507,
+      "end": 375.061,
+      "type": "line",
+      "text": "O the greatness of the mercy of our God,",
+      "verse": "9:19",
+      "lineIndex": 119
+    },
+    {
+      "start": 375.241,
+      "end": 376.774,
+      "type": "line",
+      "text": "the Holy One of Israel!",
+      "verse": "9:19",
+      "lineIndex": 120
+    },
+    {
+      "start": 376.954,
+      "end": 380.669,
+      "type": "line",
+      "text": "For he delivereth his saints from that awful monster the devil",
+      "verse": "9:19",
+      "lineIndex": 121
+    },
+    {
+      "start": 380.849,
+      "end": 384.704,
+      "type": "line",
+      "text": "and death, and hell, and that lake of fire and brimstone,",
+      "verse": "9:19",
+      "lineIndex": 122
+    },
+    {
+      "start": 384.884,
+      "end": 386.556,
+      "type": "line",
+      "text": "which is endless torment.",
+      "verse": "9:19",
+      "lineIndex": 123
+    },
+    {
+      "start": 387.236,
+      "end": 389.697,
+      "type": "line",
+      "text": "O how great the holiness of our God!",
+      "verse": "9:20",
+      "lineIndex": 124
+    },
+    {
+      "start": 389.877,
+      "end": 391.456,
+      "type": "line",
+      "text": "For he knoweth all things,",
+      "verse": "9:20",
+      "lineIndex": 125
+    },
+    {
+      "start": 391.636,
+      "end": 394.19,
+      "type": "line",
+      "text": "and there is not anything save he knows it.",
+      "verse": "9:20",
+      "lineIndex": 126
+    },
+    {
+      "start": 394.87,
+      "end": 398.121,
+      "type": "line",
+      "text": "And he cometh into the world that he may save all men",
+      "verse": "9:21",
+      "lineIndex": 127
+    },
+    {
+      "start": 398.301,
+      "end": 400.623,
+      "type": "line",
+      "text": "if they will hearken unto his voice;",
+      "verse": "9:21",
+      "lineIndex": 128
+    },
+    {
+      "start": 400.803,
+      "end": 404.007,
+      "type": "line",
+      "text": "for behold, he suffereth the pains of all men,",
+      "verse": "9:21",
+      "lineIndex": 129
+    },
+    {
+      "start": 404.187,
+      "end": 406.788,
+      "type": "line",
+      "text": "yea, the pains of every living creature,",
+      "verse": "9:21",
+      "lineIndex": 130
+    },
+    {
+      "start": 406.968,
+      "end": 409.336,
+      "type": "line",
+      "text": "both men, women, and children,",
+      "verse": "9:21",
+      "lineIndex": 131
+    },
+    {
+      "start": 409.516,
+      "end": 412.024,
+      "type": "line",
+      "text": "who belong to the family of Adam.",
+      "verse": "9:21",
+      "lineIndex": 132
+    },
+    {
+      "start": 412.704,
+      "end": 416.698,
+      "type": "line",
+      "text": "And he suffereth this that the resurrection might pass upon all men,",
+      "verse": "9:22",
+      "lineIndex": 133
+    },
+    {
+      "start": 416.878,
+      "end": 420.872,
+      "type": "line",
+      "text": "that all might stand before him at the great and judgment day.",
+      "verse": "9:22",
+      "lineIndex": 134
+    },
+    {
+      "start": 421.552,
+      "end": 424.431,
+      "type": "line",
+      "text": "And he commandeth all men that they must repent,",
+      "verse": "9:23",
+      "lineIndex": 135
+    },
+    {
+      "start": 424.611,
+      "end": 426.515,
+      "type": "line",
+      "text": "and be baptized in his name,",
+      "verse": "9:23",
+      "lineIndex": 136
+    },
+    {
+      "start": 426.695,
+      "end": 429.946,
+      "type": "line",
+      "text": "having perfect faith in the Holy One of Israel,",
+      "verse": "9:23",
+      "lineIndex": 137
+    },
+    {
+      "start": 430.126,
+      "end": 432.773,
+      "type": "line",
+      "text": "or they cannot be saved in the kingdom of God.",
+      "verse": "9:23",
+      "lineIndex": 138
+    },
+    {
+      "start": 433.453,
+      "end": 436.147,
+      "type": "line",
+      "text": "And if they will not repent and believe in his name,",
+      "verse": "9:24",
+      "lineIndex": 139
+    },
+    {
+      "start": 436.327,
+      "end": 439.16,
+      "type": "line",
+      "text": "and be baptized in his name, and endure to the end,",
+      "verse": "9:24",
+      "lineIndex": 140
+    },
+    {
+      "start": 439.34,
+      "end": 440.733,
+      "type": "line",
+      "text": "they must be damned;",
+      "verse": "9:24",
+      "lineIndex": 141
+    },
+    {
+      "start": 440.913,
+      "end": 442.353,
+      "type": "line",
+      "text": "for the Lord God,",
+      "verse": "9:24",
+      "lineIndex": 142
+    },
+    {
+      "start": 442.533,
+      "end": 445.134,
+      "type": "line",
+      "text": "the Holy One of Israel, has spoken it.",
+      "verse": "9:24",
+      "lineIndex": 143
+    },
+    {
+      "start": 445.814,
+      "end": 448.322,
+      "type": "line",
+      "text": "Wherefore, he has given a law;",
+      "verse": "9:25",
+      "lineIndex": 144
+    },
+    {
+      "start": 448.502,
+      "end": 452.217,
+      "type": "line",
+      "text": "and where there is no law given there is no punishment;",
+      "verse": "9:25",
+      "lineIndex": 145
+    },
+    {
+      "start": 452.397,
+      "end": 455.88,
+      "type": "line",
+      "text": "and where there is no punishment there is no condemnation;",
+      "verse": "9:25",
+      "lineIndex": 146
+    },
+    {
+      "start": 456.06,
+      "end": 458.475,
+      "type": "line",
+      "text": "and where there is no condemnation",
+      "verse": "9:25",
+      "lineIndex": 147
+    },
+    {
+      "start": 458.655,
+      "end": 461.859,
+      "type": "line",
+      "text": "the mercies of the Holy One of Israel have claim upon them,",
+      "verse": "9:25",
+      "lineIndex": 148
+    },
+    {
+      "start": 462.039,
+      "end": 463.804,
+      "type": "line",
+      "text": "because of the atonement;",
+      "verse": "9:25",
+      "lineIndex": 149
+    },
+    {
+      "start": 463.984,
+      "end": 466.445,
+      "type": "line",
+      "text": "for they are delivered by the power of him.",
+      "verse": "9:25",
+      "lineIndex": 150
+    },
+    {
+      "start": 467.125,
+      "end": 470.84,
+      "type": "line",
+      "text": "For the atonement satisfieth the demands of his justice",
+      "verse": "9:26",
+      "lineIndex": 151
+    },
+    {
+      "start": 471.02,
+      "end": 474.224,
+      "type": "line",
+      "text": "upon all those who have not the law given to them,",
+      "verse": "9:26",
+      "lineIndex": 152
+    },
+    {
+      "start": 474.404,
+      "end": 479.048,
+      "type": "line",
+      "text": "that they are delivered from that awful monster, death and hell,",
+      "verse": "9:26",
+      "lineIndex": 153
+    },
+    {
+      "start": 479.228,
+      "end": 482.339,
+      "type": "line",
+      "text": "and the devil, and the lake of fire and brimstone,",
+      "verse": "9:26",
+      "lineIndex": 154
+    },
+    {
+      "start": 482.519,
+      "end": 484.237,
+      "type": "line",
+      "text": "which is endless torment;",
+      "verse": "9:26",
+      "lineIndex": 155
+    },
+    {
+      "start": 484.417,
+      "end": 487.343,
+      "type": "line",
+      "text": "and they are restored to that God who gave them breath,",
+      "verse": "9:26",
+      "lineIndex": 156
+    },
+    {
+      "start": 487.523,
+      "end": 489.845,
+      "type": "line",
+      "text": "which is the Holy One of Israel.",
+      "verse": "9:26",
+      "lineIndex": 157
+    },
+    {
+      "start": 490.525,
+      "end": 492.94,
+      "type": "line",
+      "text": "But wo unto him that has the law given,",
+      "verse": "9:27",
+      "lineIndex": 159
+    },
+    {
+      "start": 493.12,
+      "end": 496.649,
+      "type": "line",
+      "text": "yea, that has all the commandments of God, like unto us,",
+      "verse": "9:27",
+      "lineIndex": 160
+    },
+    {
+      "start": 496.829,
+      "end": 498.687,
+      "type": "line",
+      "text": "and that transgresseth them,",
+      "verse": "9:27",
+      "lineIndex": 161
+    },
+    {
+      "start": 498.867,
+      "end": 501.793,
+      "type": "line",
+      "text": "and that wasteth the days of his probation,",
+      "verse": "9:27",
+      "lineIndex": 162
+    },
+    {
+      "start": 501.973,
+      "end": 503.598,
+      "type": "line",
+      "text": "for awful is his state!",
+      "verse": "9:27",
+      "lineIndex": 163
+    },
+    {
+      "start": 504.278,
+      "end": 506.739,
+      "type": "line",
+      "text": "O that cunning plan of the evil one!",
+      "verse": "9:28",
+      "lineIndex": 164
+    },
+    {
+      "start": 506.919,
+      "end": 510.774,
+      "type": "line",
+      "text": "O the vainness, and the frailties, and the foolishness of men!",
+      "verse": "9:28",
+      "lineIndex": 165
+    },
+    {
+      "start": 510.954,
+      "end": 514.019,
+      "type": "line",
+      "text": "When they are learned they think they are wise,",
+      "verse": "9:28",
+      "lineIndex": 166
+    },
+    {
+      "start": 514.199,
+      "end": 516.939,
+      "type": "line",
+      "text": "and they hearken not unto the counsel of God,",
+      "verse": "9:28",
+      "lineIndex": 167
+    },
+    {
+      "start": 517.119,
+      "end": 520.602,
+      "type": "line",
+      "text": "for they set it aside, supposing they know of themselves,",
+      "verse": "9:28",
+      "lineIndex": 168
+    },
+    {
+      "start": 520.782,
+      "end": 525.426,
+      "type": "line",
+      "text": "wherefore, their wisdom is foolishness and it profiteth them not.",
+      "verse": "9:28",
+      "lineIndex": 169
+    },
+    {
+      "start": 525.606,
+      "end": 527.139,
+      "type": "line",
+      "text": "And they shall perish.",
+      "verse": "9:28",
+      "lineIndex": 170
+    },
+    {
+      "start": 527.819,
+      "end": 529.584,
+      "type": "line",
+      "text": "But to be learned is good",
+      "verse": "9:29",
+      "lineIndex": 171
+    },
+    {
+      "start": 529.764,
+      "end": 532.086,
+      "type": "line",
+      "text": "if they hearken unto the counsels of God.",
+      "verse": "9:29",
+      "lineIndex": 172
+    },
+    {
+      "start": 532.766,
+      "end": 534.345,
+      "type": "line",
+      "text": "But wo unto the rich,",
+      "verse": "9:30",
+      "lineIndex": 173
+    },
+    {
+      "start": 534.525,
+      "end": 537.172,
+      "type": "line",
+      "text": "who are rich as to the things of the world.",
+      "verse": "9:30",
+      "lineIndex": 174
+    },
+    {
+      "start": 537.352,
+      "end": 540.696,
+      "type": "line",
+      "text": "For because they are rich they despise the poor,",
+      "verse": "9:30",
+      "lineIndex": 175
+    },
+    {
+      "start": 540.876,
+      "end": 542.734,
+      "type": "line",
+      "text": "and they persecute the meek,",
+      "verse": "9:30",
+      "lineIndex": 176
+    },
+    {
+      "start": 542.914,
+      "end": 545.143,
+      "type": "line",
+      "text": "and their hearts are upon their treasures;",
+      "verse": "9:30",
+      "lineIndex": 177
+    },
+    {
+      "start": 545.323,
+      "end": 547.877,
+      "type": "line",
+      "text": "wherefore, their treasure is their god.",
+      "verse": "9:30",
+      "lineIndex": 178
+    },
+    {
+      "start": 548.057,
+      "end": 551.215,
+      "type": "line",
+      "text": "And behold, their treasure shall perish with them also.",
+      "verse": "9:30",
+      "lineIndex": 179
+    },
+    {
+      "start": 551.895,
+      "end": 554.31,
+      "type": "line",
+      "text": "And wo unto the deaf that will not hear;",
+      "verse": "9:31",
+      "lineIndex": 180
+    },
+    {
+      "start": 554.49,
+      "end": 556.115,
+      "type": "line",
+      "text": "for they shall perish.",
+      "verse": "9:31",
+      "lineIndex": 181
+    },
+    {
+      "start": 556.795,
+      "end": 558.978,
+      "type": "line",
+      "text": "Wo unto the blind that will not see;",
+      "verse": "9:32",
+      "lineIndex": 182
+    },
+    {
+      "start": 559.158,
+      "end": 561.062,
+      "type": "line",
+      "text": "for they shall perish also.",
+      "verse": "9:32",
+      "lineIndex": 183
+    },
+    {
+      "start": 561.742,
+      "end": 564.389,
+      "type": "line",
+      "text": "Wo unto the uncircumcised of heart,",
+      "verse": "9:33",
+      "lineIndex": 184
+    },
+    {
+      "start": 564.569,
+      "end": 569.259,
+      "type": "line",
+      "text": "for a knowledge of their iniquities shall smite them at the last day.",
+      "verse": "9:33",
+      "lineIndex": 185
+    },
+    {
+      "start": 569.939,
+      "end": 571.286,
+      "type": "line",
+      "text": "Wo unto the liar,",
+      "verse": "9:34",
+      "lineIndex": 186
+    },
+    {
+      "start": 571.466,
+      "end": 573.881,
+      "type": "line",
+      "text": "for he shall be thrust down to hell.",
+      "verse": "9:34",
+      "lineIndex": 187
+    },
+    {
+      "start": 574.561,
+      "end": 577.626,
+      "type": "line",
+      "text": "Wo unto the murderer who deliberately killeth,",
+      "verse": "9:35",
+      "lineIndex": 188
+    },
+    {
+      "start": 577.806,
+      "end": 579.385,
+      "type": "line",
+      "text": "for he shall die.",
+      "verse": "9:35",
+      "lineIndex": 189
+    },
+    {
+      "start": 580.065,
+      "end": 582.387,
+      "type": "line",
+      "text": "Wo unto them who commit whoredoms,",
+      "verse": "9:36",
+      "lineIndex": 190
+    },
+    {
+      "start": 582.567,
+      "end": 584.889,
+      "type": "line",
+      "text": "for they shall be thrust down to hell.",
+      "verse": "9:36",
+      "lineIndex": 191
+    },
+    {
+      "start": 585.569,
+      "end": 588.495,
+      "type": "line",
+      "text": "Yea, wo unto those that worship idols,",
+      "verse": "9:37",
+      "lineIndex": 192
+    },
+    {
+      "start": 588.675,
+      "end": 592.112,
+      "type": "line",
+      "text": "for the devil of all devils delighteth in them.",
+      "verse": "9:37",
+      "lineIndex": 193
+    },
+    {
+      "start": 592.792,
+      "end": 596.043,
+      "type": "line",
+      "text": "And, in fine, wo unto all those who die in their sins;",
+      "verse": "9:38",
+      "lineIndex": 194
+    },
+    {
+      "start": 596.223,
+      "end": 601.378,
+      "type": "line",
+      "text": "for they shall return to God, and behold his face, and remain in their sins.",
+      "verse": "9:38",
+      "lineIndex": 195
+    },
+    {
+      "start": 602.058,
+      "end": 603.73,
+      "type": "line",
+      "text": "O, my beloved brethren,",
+      "verse": "9:39",
+      "lineIndex": 197
+    },
+    {
+      "start": 603.91,
+      "end": 607.765,
+      "type": "line",
+      "text": "remember the awfulness in transgressing against that Holy God,",
+      "verse": "9:39",
+      "lineIndex": 198
+    },
+    {
+      "start": 607.945,
+      "end": 612.171,
+      "type": "line",
+      "text": "and also the awfulness of yielding to the enticings of that cunning one.",
+      "verse": "9:39",
+      "lineIndex": 199
+    },
+    {
+      "start": 612.351,
+      "end": 615.091,
+      "type": "line",
+      "text": "Remember, to be carnally-minded is death,",
+      "verse": "9:39",
+      "lineIndex": 200
+    },
+    {
+      "start": 615.271,
+      "end": 618.197,
+      "type": "line",
+      "text": "and to be spiritually-minded is life eternal.",
+      "verse": "9:39",
+      "lineIndex": 201
+    },
+    {
+      "start": 618.877,
+      "end": 621.803,
+      "type": "line",
+      "text": "O, my beloved brethren, give ear to my words.",
+      "verse": "9:40",
+      "lineIndex": 202
+    },
+    {
+      "start": 621.983,
+      "end": 625.187,
+      "type": "line",
+      "text": "Remember the greatness of the Holy One of Israel.",
+      "verse": "9:40",
+      "lineIndex": 203
+    },
+    {
+      "start": 625.367,
+      "end": 628.896,
+      "type": "line",
+      "text": "Do not say that I have spoken hard things against you;",
+      "verse": "9:40",
+      "lineIndex": 204
+    },
+    {
+      "start": 629.076,
+      "end": 632.048,
+      "type": "line",
+      "text": "for if ye do, ye will revile against the truth;",
+      "verse": "9:40",
+      "lineIndex": 205
+    },
+    {
+      "start": 632.228,
+      "end": 634.829,
+      "type": "line",
+      "text": "for I have spoken the words of your Maker.",
+      "verse": "9:40",
+      "lineIndex": 206
+    },
+    {
+      "start": 635.009,
+      "end": 639.374,
+      "type": "line",
+      "text": "I know that the words of truth are hard against all uncleanness;",
+      "verse": "9:40",
+      "lineIndex": 207
+    },
+    {
+      "start": 639.554,
+      "end": 641.876,
+      "type": "line",
+      "text": "but the righteous fear them not,",
+      "verse": "9:40",
+      "lineIndex": 208
+    },
+    {
+      "start": 642.056,
+      "end": 644.75,
+      "type": "line",
+      "text": "for they love the truth and are not shaken.",
+      "verse": "9:40",
+      "lineIndex": 209
+    },
+    {
+      "start": 645.43,
+      "end": 647.473,
+      "type": "line",
+      "text": "O then, my beloved brethren,",
+      "verse": "9:41",
+      "lineIndex": 210
+    },
+    {
+      "start": 647.653,
+      "end": 649.929,
+      "type": "line",
+      "text": "come unto the Lord, the Holy One.",
+      "verse": "9:41",
+      "lineIndex": 211
+    },
+    {
+      "start": 650.109,
+      "end": 652.385,
+      "type": "line",
+      "text": "Remember that his paths are righteous.",
+      "verse": "9:41",
+      "lineIndex": 212
+    },
+    {
+      "start": 652.565,
+      "end": 654.841,
+      "type": "line",
+      "text": "Behold, the way for man is narrow,",
+      "verse": "9:41",
+      "lineIndex": 213
+    },
+    {
+      "start": 655.021,
+      "end": 657.9,
+      "type": "line",
+      "text": "but it lieth in a straight course before him,",
+      "verse": "9:41",
+      "lineIndex": 214
+    },
+    {
+      "start": 658.08,
+      "end": 661.145,
+      "type": "line",
+      "text": "and the keeper of the gate is the Holy One of Israel;",
+      "verse": "9:41",
+      "lineIndex": 215
+    },
+    {
+      "start": 661.325,
+      "end": 663.368,
+      "type": "line",
+      "text": "and he employeth no servant there;",
+      "verse": "9:41",
+      "lineIndex": 216
+    },
+    {
+      "start": 663.548,
+      "end": 666.892,
+      "type": "line",
+      "text": "and there is none other way save it be by the gate;",
+      "verse": "9:41",
+      "lineIndex": 217
+    },
+    {
+      "start": 667.072,
+      "end": 668.837,
+      "type": "line",
+      "text": "for he cannot be deceived,",
+      "verse": "9:41",
+      "lineIndex": 218
+    },
+    {
+      "start": 669.017,
+      "end": 670.921,
+      "type": "line",
+      "text": "for the Lord God is his name.",
+      "verse": "9:41",
+      "lineIndex": 219
+    },
+    {
+      "start": 671.601,
+      "end": 674.155,
+      "type": "line",
+      "text": "And whoso knocketh, to him will he open;",
+      "verse": "9:42",
+      "lineIndex": 220
+    },
+    {
+      "start": 674.335,
+      "end": 677.911,
+      "type": "line",
+      "text": "and the wise, and the learned, and they that are rich,",
+      "verse": "9:42",
+      "lineIndex": 221
+    },
+    {
+      "start": 678.091,
+      "end": 682.642,
+      "type": "line",
+      "text": "who are puffed up because of their learning, and their wisdom, and their riches\u2014",
+      "verse": "9:42",
+      "lineIndex": 222
+    },
+    {
+      "start": 682.822,
+      "end": 685.516,
+      "type": "line",
+      "text": "yea, they are they whom he despiseth;",
+      "verse": "9:42",
+      "lineIndex": 223
+    },
+    {
+      "start": 685.696,
+      "end": 688.25,
+      "type": "line",
+      "text": "and save they shall cast these things away,",
+      "verse": "9:42",
+      "lineIndex": 224
+    },
+    {
+      "start": 688.43,
+      "end": 691.216,
+      "type": "line",
+      "text": "and consider themselves fools before God,",
+      "verse": "9:42",
+      "lineIndex": 225
+    },
+    {
+      "start": 691.396,
+      "end": 693.95,
+      "type": "line",
+      "text": "and come down in the depths of humility,",
+      "verse": "9:42",
+      "lineIndex": 226
+    },
+    {
+      "start": 694.13,
+      "end": 695.941,
+      "type": "line",
+      "text": "he will not open unto them.",
+      "verse": "9:42",
+      "lineIndex": 227
+    },
+    {
+      "start": 696.621,
+      "end": 699.129,
+      "type": "line",
+      "text": "But the things of the wise and the prudent",
+      "verse": "9:43",
+      "lineIndex": 228
+    },
+    {
+      "start": 699.309,
+      "end": 701.445,
+      "type": "line",
+      "text": "shall be hid from them forever\u2014",
+      "verse": "9:43",
+      "lineIndex": 229
+    },
+    {
+      "start": 701.625,
+      "end": 704.69,
+      "type": "line",
+      "text": "yea, that happiness which is prepared for the saints.",
+      "verse": "9:43",
+      "lineIndex": 230
+    },
+    {
+      "start": 705.37,
+      "end": 707.971,
+      "type": "line",
+      "text": "O, my beloved brethren, remember my words.",
+      "verse": "9:44",
+      "lineIndex": 231
+    },
+    {
+      "start": 708.151,
+      "end": 710.287,
+      "type": "line",
+      "text": "Behold, I take off my garments,",
+      "verse": "9:44",
+      "lineIndex": 232
+    },
+    {
+      "start": 710.467,
+      "end": 712.51,
+      "type": "line",
+      "text": "and I shake them before you;",
+      "verse": "9:44",
+      "lineIndex": 233
+    },
+    {
+      "start": 712.69,
+      "end": 715.012,
+      "type": "line",
+      "text": "I pray the God of my salvation",
+      "verse": "9:44",
+      "lineIndex": 234
+    },
+    {
+      "start": 715.192,
+      "end": 718.025,
+      "type": "line",
+      "text": "that he view me with his all-searching eye;",
+      "verse": "9:44",
+      "lineIndex": 235
+    },
+    {
+      "start": 718.205,
+      "end": 720.759,
+      "type": "line",
+      "text": "wherefore, ye shall know at the last day,",
+      "verse": "9:44",
+      "lineIndex": 236
+    },
+    {
+      "start": 720.939,
+      "end": 723.772,
+      "type": "line",
+      "text": "when all men shall be judged of their works",
+      "verse": "9:44",
+      "lineIndex": 237
+    },
+    {
+      "start": 723.952,
+      "end": 726.181,
+      "type": "line",
+      "text": "that the God of Israel did witness",
+      "verse": "9:44",
+      "lineIndex": 238
+    },
+    {
+      "start": 726.361,
+      "end": 729.147,
+      "type": "line",
+      "text": "that I shook your iniquities from my soul,",
+      "verse": "9:44",
+      "lineIndex": 239
+    },
+    {
+      "start": 729.327,
+      "end": 731.835,
+      "type": "line",
+      "text": "and that I stand with brightness before him,",
+      "verse": "9:44",
+      "lineIndex": 240
+    },
+    {
+      "start": 732.015,
+      "end": 733.687,
+      "type": "line",
+      "text": "and am rid of your blood.",
+      "verse": "9:44",
+      "lineIndex": 241
+    },
+    {
+      "start": 734.367,
+      "end": 736.039,
+      "type": "line",
+      "text": "O, my beloved brethren,",
+      "verse": "9:45",
+      "lineIndex": 243
+    },
+    {
+      "start": 736.219,
+      "end": 737.891,
+      "type": "line",
+      "text": "turn away from your sins;",
+      "verse": "9:45",
+      "lineIndex": 244
+    },
+    {
+      "start": 738.071,
+      "end": 741.229,
+      "type": "line",
+      "text": "shake off the chains of him that would bind you fast;",
+      "verse": "9:45",
+      "lineIndex": 245
+    },
+    {
+      "start": 741.409,
+      "end": 744.753,
+      "type": "line",
+      "text": "come unto that God who is the rock of your salvation.",
+      "verse": "9:45",
+      "lineIndex": 246
+    },
+    {
+      "start": 745.433,
+      "end": 747.801,
+      "type": "line",
+      "text": "Prepare your souls for that glorious day",
+      "verse": "9:46",
+      "lineIndex": 247
+    },
+    {
+      "start": 747.981,
+      "end": 751.139,
+      "type": "line",
+      "text": "when justice shall be administered unto the righteous,",
+      "verse": "9:46",
+      "lineIndex": 248
+    },
+    {
+      "start": 751.319,
+      "end": 753.037,
+      "type": "line",
+      "text": "even the day of judgment,",
+      "verse": "9:46",
+      "lineIndex": 249
+    },
+    {
+      "start": 753.217,
+      "end": 755.911,
+      "type": "line",
+      "text": "that ye may not shrink with awful fear;",
+      "verse": "9:46",
+      "lineIndex": 250
+    },
+    {
+      "start": 756.091,
+      "end": 759.899,
+      "type": "line",
+      "text": "that ye may not remember your awful guilt in perfectness,",
+      "verse": "9:46",
+      "lineIndex": 251
+    },
+    {
+      "start": 760.079,
+      "end": 762.169,
+      "type": "line",
+      "text": "and be constrained to exclaim:",
+      "verse": "9:46",
+      "lineIndex": 252
+    },
+    {
+      "start": 762.349,
+      "end": 764.903,
+      "type": "line",
+      "text": "Holy, holy are thy judgments,",
+      "verse": "9:46",
+      "lineIndex": 253
+    },
+    {
+      "start": 765.083,
+      "end": 766.662,
+      "type": "line",
+      "text": "O Lord God Almighty\u2014",
+      "verse": "9:46",
+      "lineIndex": 254
+    },
+    {
+      "start": 766.842,
+      "end": 768.56,
+      "type": "line",
+      "text": "but I know my guilt;",
+      "verse": "9:46",
+      "lineIndex": 255
+    },
+    {
+      "start": 768.74,
+      "end": 770.273,
+      "type": "line",
+      "text": "I transgressed thy law,",
+      "verse": "9:46",
+      "lineIndex": 256
+    },
+    {
+      "start": 770.453,
+      "end": 772.589,
+      "type": "line",
+      "text": "and my transgressions are mine;",
+      "verse": "9:46",
+      "lineIndex": 257
+    },
+    {
+      "start": 772.769,
+      "end": 774.766,
+      "type": "line",
+      "text": "and the devil hath obtained me,",
+      "verse": "9:46",
+      "lineIndex": 258
+    },
+    {
+      "start": 774.946,
+      "end": 777.593,
+      "type": "line",
+      "text": "that I am a prey to his awful misery.",
+      "verse": "9:46",
+      "lineIndex": 259
+    },
+    {
+      "start": 778.273,
+      "end": 779.945,
+      "type": "line",
+      "text": "But behold, my brethren,",
+      "verse": "9:47",
+      "lineIndex": 260
+    },
+    {
+      "start": 780.125,
+      "end": 782.54,
+      "type": "line",
+      "text": "is it expedient that I should awake you",
+      "verse": "9:47",
+      "lineIndex": 261
+    },
+    {
+      "start": 782.72,
+      "end": 785.228,
+      "type": "line",
+      "text": "to an awful reality of these things?",
+      "verse": "9:47",
+      "lineIndex": 262
+    },
+    {
+      "start": 785.408,
+      "end": 788.798,
+      "type": "line",
+      "text": "Would I harrow up your souls if your minds were pure?",
+      "verse": "9:47",
+      "lineIndex": 263
+    },
+    {
+      "start": 788.978,
+      "end": 790.743,
+      "type": "line",
+      "text": "Would I be plain unto you",
+      "verse": "9:47",
+      "lineIndex": 264
+    },
+    {
+      "start": 790.923,
+      "end": 793.199,
+      "type": "line",
+      "text": "according to the plainness of the truth",
+      "verse": "9:47",
+      "lineIndex": 265
+    },
+    {
+      "start": 793.379,
+      "end": 795.051,
+      "type": "line",
+      "text": "if ye were freed from sin?",
+      "verse": "9:47",
+      "lineIndex": 266
+    },
+    {
+      "start": 795.731,
+      "end": 797.496,
+      "type": "line",
+      "text": "Behold, if ye were holy",
+      "verse": "9:48",
+      "lineIndex": 267
+    },
+    {
+      "start": 797.676,
+      "end": 800.044,
+      "type": "line",
+      "text": "I would speak unto you of holiness;",
+      "verse": "9:48",
+      "lineIndex": 268
+    },
+    {
+      "start": 800.224,
+      "end": 802.082,
+      "type": "line",
+      "text": "but as ye are not holy",
+      "verse": "9:48",
+      "lineIndex": 269
+    },
+    {
+      "start": 802.262,
+      "end": 804.538,
+      "type": "line",
+      "text": "and ye look upon me as a teacher,",
+      "verse": "9:48",
+      "lineIndex": 270
+    },
+    {
+      "start": 804.718,
+      "end": 809.269,
+      "type": "line",
+      "text": "it must needs be expedient that I teach you the consequences of sin.",
+      "verse": "9:48",
+      "lineIndex": 271
+    },
+    {
+      "start": 809.949,
+      "end": 812.41,
+      "type": "line",
+      "text": "Behold, my soul abhorreth sin,",
+      "verse": "9:49",
+      "lineIndex": 272
+    },
+    {
+      "start": 812.59,
+      "end": 814.912,
+      "type": "line",
+      "text": "and my heart delighteth in righteousness;",
+      "verse": "9:49",
+      "lineIndex": 273
+    },
+    {
+      "start": 815.092,
+      "end": 817.507,
+      "type": "line",
+      "text": "and I will praise the holy name of my God.",
+      "verse": "9:49",
+      "lineIndex": 274
+    },
+    {
+      "start": 818.187,
+      "end": 819.673,
+      "type": "line",
+      "text": "Come, my brethren,",
+      "verse": "9:50",
+      "lineIndex": 276
+    },
+    {
+      "start": 819.853,
+      "end": 821.571,
+      "type": "line",
+      "text": "every one that thirsteth,",
+      "verse": "9:50",
+      "lineIndex": 277
+    },
+    {
+      "start": 821.751,
+      "end": 823.284,
+      "type": "line",
+      "text": "come ye to the waters;",
+      "verse": "9:50",
+      "lineIndex": 278
+    },
+    {
+      "start": 823.464,
+      "end": 825.368,
+      "type": "line",
+      "text": "and he that hath no money,",
+      "verse": "9:50",
+      "lineIndex": 279
+    },
+    {
+      "start": 825.548,
+      "end": 827.081,
+      "type": "line",
+      "text": "come buy and eat;",
+      "verse": "9:50",
+      "lineIndex": 280
+    },
+    {
+      "start": 827.261,
+      "end": 829.165,
+      "type": "line",
+      "text": "yea, come buy wine and milk",
+      "verse": "9:50",
+      "lineIndex": 281
+    },
+    {
+      "start": 829.345,
+      "end": 831.76,
+      "type": "line",
+      "text": "without money and without price.",
+      "verse": "9:50",
+      "lineIndex": 282
+    },
+    {
+      "start": 831.94,
+      "end": 843.782,
+      "type": "line",
+      "text": "Ho, Come, my brethren, every one that thirsteth, come ye to the waters; and he that hath no money, come ye, buy and eat; yea, come buy wine and milk without money and without price.",
+      "verse": "9:50",
+      "lineIndex": 283
+    },
+    {
+      "start": 844.462,
+      "end": 848.317,
+      "type": "line",
+      "text": "Wherefore, do not spend money for that which is of no worth,",
+      "verse": "9:51",
+      "lineIndex": 284
+    },
+    {
+      "start": 848.497,
+      "end": 851.423,
+      "type": "line",
+      "text": "nor your labor for that which cannot satisfy.",
+      "verse": "9:51",
+      "lineIndex": 285
+    },
+    {
+      "start": 851.603,
+      "end": 853.832,
+      "type": "line",
+      "text": "Hearken diligently unto me,",
+      "verse": "9:51",
+      "lineIndex": 286
+    },
+    {
+      "start": 854.012,
+      "end": 856.473,
+      "type": "line",
+      "text": "and remember the words which I have spoken;",
+      "verse": "9:51",
+      "lineIndex": 287
+    },
+    {
+      "start": 856.653,
+      "end": 858.975,
+      "type": "line",
+      "text": "and come unto the Holy One of Israel,",
+      "verse": "9:51",
+      "lineIndex": 288
+    },
+    {
+      "start": 859.155,
+      "end": 862.174,
+      "type": "line",
+      "text": "and feast upon that which perisheth not,",
+      "verse": "9:51",
+      "lineIndex": 289
+    },
+    {
+      "start": 862.354,
+      "end": 864.072,
+      "type": "line",
+      "text": "neither can be corrupted,",
+      "verse": "9:51",
+      "lineIndex": 290
+    },
+    {
+      "start": 864.252,
+      "end": 866.667,
+      "type": "line",
+      "text": "and let your soul delight in fatness.",
+      "verse": "9:51",
+      "lineIndex": 291
+    },
+    {
+      "start": 866.847,
+      "end": 893.968,
+      "type": "line",
+      "text": "Wherefore, do ye not spend money for that which is not bread? and of no worth, nor your labour labor for that which satisfieth not? cannot satisfy. Hearken diligently unto me, and eat ye remember the words which I have spoken; and come unto the Holy One of Israel, and feast upon that which is good, perisheth not, neither can be corrupted, and let your soul delight itself in fatness.",
+      "verse": "9:51",
+      "lineIndex": 292
+    },
+    {
+      "start": 894.648,
+      "end": 896.598,
+      "type": "line",
+      "text": "Behold, my beloved brethren,",
+      "verse": "9:52",
+      "lineIndex": 293
+    },
+    {
+      "start": 896.778,
+      "end": 898.589,
+      "type": "line",
+      "text": "remember the words of your God;",
+      "verse": "9:52",
+      "lineIndex": 294
+    },
+    {
+      "start": 898.769,
+      "end": 901.416,
+      "type": "line",
+      "text": "pray unto him continually by day,",
+      "verse": "9:52",
+      "lineIndex": 295
+    },
+    {
+      "start": 901.596,
+      "end": 904.429,
+      "type": "line",
+      "text": "and give thanks unto his holy name by night.",
+      "verse": "9:52",
+      "lineIndex": 296
+    },
+    {
+      "start": 904.609,
+      "end": 906.234,
+      "type": "line",
+      "text": "Let your hearts rejoice.",
+      "verse": "9:52",
+      "lineIndex": 297
+    },
+    {
+      "start": 906.914,
+      "end": 909.747,
+      "type": "line",
+      "text": "And behold how great the covenants of the Lord,",
+      "verse": "9:53",
+      "lineIndex": 298
+    },
+    {
+      "start": 909.927,
+      "end": 913.596,
+      "type": "line",
+      "text": "and how great his condescensions unto the children of men;",
+      "verse": "9:53",
+      "lineIndex": 299
+    },
+    {
+      "start": 913.776,
+      "end": 917.213,
+      "type": "line",
+      "text": "and because of his greatness and his grace and mercy,",
+      "verse": "9:53",
+      "lineIndex": 300
+    },
+    {
+      "start": 917.393,
+      "end": 919.158,
+      "type": "line",
+      "text": "he has promised unto us",
+      "verse": "9:53",
+      "lineIndex": 301
+    },
+    {
+      "start": 919.338,
+      "end": 922.078,
+      "type": "line",
+      "text": "that our seed shall not utterly be destroyed,",
+      "verse": "9:53",
+      "lineIndex": 302
+    },
+    {
+      "start": 922.258,
+      "end": 923.744,
+      "type": "line",
+      "text": "according to the flesh,",
+      "verse": "9:53",
+      "lineIndex": 303
+    },
+    {
+      "start": 923.924,
+      "end": 926.385,
+      "type": "line",
+      "text": "but that he would preserve them;",
+      "verse": "9:53",
+      "lineIndex": 304
+    },
+    {
+      "start": 926.565,
+      "end": 928.237,
+      "type": "line",
+      "text": "and in future generations",
+      "verse": "9:53",
+      "lineIndex": 305
+    },
+    {
+      "start": 928.417,
+      "end": 932.179,
+      "type": "line",
+      "text": "they shall become a righteous branch unto the house of Israel.",
+      "verse": "9:53",
+      "lineIndex": 306
+    },
+    {
+      "start": 932.859,
+      "end": 934.159,
+      "type": "line",
+      "text": "And now, my brethren,",
+      "verse": "9:54",
+      "lineIndex": 307
+    },
+    {
+      "start": 934.339,
+      "end": 936.15,
+      "type": "line",
+      "text": "I would speak unto you more;",
+      "verse": "9:54",
+      "lineIndex": 308
+    },
+    {
+      "start": 936.33,
+      "end": 940.835,
+      "type": "line",
+      "text": "but on the morrow I will declare unto you the remainder of my words.",
+      "verse": "9:54",
+      "lineIndex": 309
+    },
+    {
+      "start": 941.015,
+      "end": 941.851,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "9:54",
+      "lineIndex": 310
+    }
+  ]
+}
