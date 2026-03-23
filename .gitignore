@@ -8,5 +8,11 @@ audio/*.zip
 .obsidian/
 Welcome.md
 
+# Audio line cache (local only, ~100s of small MP3 fragments)
+.audio-cache/
+
+# ElevenLabs API key
+.env
+
 # Research / pre-publication (local only)
 research/
