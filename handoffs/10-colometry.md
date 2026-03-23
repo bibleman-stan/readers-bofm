@@ -579,3 +579,33 @@ Genuine anaphoric violations have predicates like "should be," "should be the ca
 
 ---
 *Last updated: 2026-03-23*
+
+---
+### Update — 2026-03-23 (second entry)
+
+#### Rule 20: Polysyndeton + Repeated Possessive/Conjunction = Stack
+
+When a series uses polysyndeton ("and X, and Y, and Z") rather than asyndeton or simple listing ("X, Y, and Z"), each "and" marks a deliberate rhetorical beat. Combined with repeated possessives ("and his X, and his Y"), the speaker is re-anchoring each item individually rather than compressing them into a catalogue.
+
+**Stack (polysyndeton — each item gets its own line):**
+- "and his matchless power, / and his wisdom, / and his patience, / and his long-suffering" — repeated "and his" marks each as distinct
+- "but suffereth himself to be mocked, / and scourged, / and cast out, / and disowned" — each "and" introduces a new action/image
+
+**Keep together (asyndeton/simple list — one line):**
+- "gold and silver and precious things" — no escalation, same register
+- "submissive, meek, humble, patient" — comma-separated catalogue in the same register (humility cluster), no repeated conjunction
+
+**The test:** Does each "and" introduce a genuinely new image at a different register, or is the "and" just connecting equivalent items? If each conjunction marks a step up (or down) in theological/rhetorical weight, stack vertically. If the items are coordinate equivalents, keep together.
+
+**Statistical value:** Polysyndetic escalation frequency is a measurable feature per attributed author. The pattern clusters in theologically dense passages (Benjamin's angel discourse, Abinadi, Jacob's sermon) and may correlate with prophetic/revelatory voice type vs. narrative voice type.
+
+#### Escalatory Appositive Inventory Update
+
+After applying Rule 20 across Mosiah, the corpus now has:
+- 24 existing escalatory appositive stacks (19 original + 5 new Mosiah breaks)
+- 5 remaining missed opportunities in 2 Nephi and Mormon/Moroni (to be reviewed in Stan's manual pass)
+
+The pattern is concentrated in prophetic/revelatory speech — not in Mormon's narrative prose. This distribution is itself data for the colometric stylometry paper.
+
+---
+*Last updated: 2026-03-23*
