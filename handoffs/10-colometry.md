@@ -609,3 +609,19 @@ The pattern is concentrated in prophetic/revelatory speech — not in Mormon's n
 
 ---
 *Last updated: 2026-03-23*
+
+---
+### Update — 2026-03-23 (third entry)
+
+#### Methodological Principle: Punctuation Must Not Have Deterministic Force
+
+The commas, semicolons, colons, and dashes in the canonical text are editorial additions — added by the printer/publisher, not original to the translation event. They may corroborate a line-break decision grounded in grammar or rhetoric, but they CANNOT justify one by themselves.
+
+**The test:** If a line break depends on a comma being present to make the case, remove the comma mentally and ask whether the break still holds on purely grammatical/rhetorical grounds. If not, the break is grounded in a 19th-century typesetter's judgment, not in the text's structure.
+
+**Example:** Alma 7:12 — "that his bowels may be filled with mercy, / according to the flesh," was initially defended as a split because the comma after "mercy" seemed to mark "according to the flesh" as a non-restrictive modifier. But the comma is editorial, and syntactically "according to the flesh" is a manner adverbial modifying "filled" — identical to the subsequent "know according to the flesh" and "succor according to their infirmities," which were both correctly merged. Without the comma distinction, all three should be treated the same. The split was reversed.
+
+**Implication:** This does NOT mean we ignore punctuation entirely — it's useful context and often reflects genuine clause boundaries. But it cannot be the SOLE basis for a break decision. Grammar, rhetorical structure, and the atomic thought test are primary; punctuation is secondary/corroborating.
+
+---
+*Last updated: 2026-03-23*
