@@ -473,3 +473,31 @@ If sense-line breaks consistently fall at points that correspond to known Hebrew
 
 ---
 *Last updated: 2026-03-22*
+
+---
+### Update — 2026-03-23
+
+#### "Escalatory Appositive" as a Colometric Unit
+
+Appositional chains in BofM narrative prose frequently escalate in theological register — each successive appositive adds a higher-order attribute rather than merely restating. Example from Alma 7:10 describing Mary:
+
+1. "she being a virgin," — physical state
+2. "a precious and chosen vessel," — theological status (divine election)
+3. "who shall be overshadowed and conceive by the power of the Holy Ghost," — divine action
+
+This escalation is a line-breaking signal: each appositive earns its own line because it introduces a genuinely new image at a higher register, not a restatement. Rule 14 (qualifying phrases that escalate earn their own line) covers this, but the specific phenomenon of **appositional chains that systematically escalate in theological register** hasn't been named in the colometric literature.
+
+**Existing related concepts:**
+- Kugel's "A, and what's more, B" — climactic parallelism in Hebrew poetry
+- Alter's "structures of intensification" — escalation across poetic cola
+- Fokkelman's "intensification across cola" in Hebrew narrative
+- Epexegesis — a subsequent phrase that explains/specifies
+
+**What's new:** Applying climactic intensification specifically to appositional chains in narrative prose, within an editorial colometric framework, and producing a testable rule. The concept (escalation) isn't new; the syntactic context (apposition in prose), the analytical framework (editorial colometry), and the resulting rule are.
+
+**The term "escalatory appositive"** appears to be uncoined. It's descriptive, immediately parseable, and could apply beyond BofM studies to any multi-voice ancient text where appositional chains reveal theological layering.
+
+**Paper relevance:** This could be a named contribution — a new analytical category demonstrated on BofM material but transferable to biblical and other ancient texts. Compare Alter coining "type-scene" and Welch introducing chiasmus to BofM studies. The 5:48 Christological portrait ("yea, the Son, / the Only Begotten of the Father, / full of grace and mercy, and truth.") is another clean example.
+
+---
+*Last updated: 2026-03-23*
