@@ -118,7 +118,7 @@ COMPOUND_SWAPS = [
     ("for the space of", "for"), ("For the space of", "For"),
     ("must needs be", "must be"), ("must needs", "must"),
     ("on the morrow", "the next day"), ("On the morrow", "The next day"),
-    ("after the manner of", "like"), ("After the manner of", "Like"),
+
     ("from this time henceforth", "from now on"), ("From this time henceforth", "From now on"),
     ("from that time henceforth", "from then on"), ("From that time henceforth", "From then on"),
     ("from thenceforth", "from then on"), ("From thenceforth", "From then on"),
