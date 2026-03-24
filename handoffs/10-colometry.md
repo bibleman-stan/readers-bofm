@@ -650,3 +650,28 @@ The commas, semicolons, colons, and dashes in the canonical text are editorial a
 
 ---
 *Last updated: 2026-03-24*
+
+---
+### Update — 2026-03-24 (second entry)
+
+#### Rule 22: Divine Title Appositives — INTRODUCING vs. REFERENCING
+
+Divine title appositive constructions ("Jesus Christ, the Son of God") are treated differently based on whether the speaker is INTRODUCING or REFERENCING the identity:
+
+**INTRODUCING (stack):** The speaker is prophetically declaring, formally proclaiming, or revealing the identity for the first time in context. The appositive makes a theological claim — it escalates from name to title. Examples:
+- "his name shall be Jesus Christ, / the Son of God." (2 Ne 25:19 — Nephi's naming prophecy)
+- "that I am Jesus Christ, / the Son of God," (3 Ne 20:31 — Christ's self-declaration)
+- "Christ was the God, / the Father of all things," (Mosiah 7:27 — Abinadi's Christological claim)
+- "Hosanna to the Lord, / the most high God;" (1 Ne 11:6 — liturgical exclamation)
+
+**REFERENCING (merge):** The speaker is using an already-established identity as a name unit. The audience already knows. The appositive identifies, doesn't escalate. Examples:
+- "I am a disciple of Jesus Christ, the Son of God." (3 Ne 5:13)
+- "in the name of Jesus Christ, the Son of the living God;" (Morm 9:29)
+- "O God, the Eternal Father," (Moroni 4:3, 5:2 — liturgical formula)
+
+**The test:** Is the speaker REVEALING identity (audience doesn't know, or the moment demands formal proclamation) or USING identity (audience already knows, name is formulaic)?
+
+Corpus inventory: 38 divine title appositive constructions identified. 18 already stacked, 6 newly stacked (all INTRODUCING), 14 correctly merged (all REFERENCING).
+
+---
+*Last updated: 2026-03-24*
