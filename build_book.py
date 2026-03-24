@@ -112,6 +112,7 @@ AICTP_SWAPS = [
 COMPOUND_SWAPS = [
     ("go to", "go"),  # archaic interjection (only when followed by , or ;)
     ("none other object save it be", "no other purpose except"),
+    ("exceeding of all", "beyond all"), ("Exceeding of all", "Beyond all"),
     ("inasmuch as", "to the degree that"), ("Inasmuch as", "To the degree that"),
     # ── Structural speed bump phrase swaps ──
     ("for the space of", "for"), ("For the space of", "For"),
