@@ -674,4 +674,61 @@ Divine title appositive constructions ("Jesus Christ, the Son of God") are treat
 Corpus inventory: 38 divine title appositive constructions identified. 18 already stacked, 6 newly stacked (all INTRODUCING), 14 correctly merged (all REFERENCING).
 
 ---
+
+### Update — 2026-03-24 (Alma 7–8 editorial session)
+
+Three candidate rules emerged from manual review of Alma 7–8. Rules 20 and 21 are considered settled; Rule 22 is settled in principle but requires editorial judgment in application.
+
+#### Rule 20: Inverted predicate constructions earn their own line.
+
+When the predicate is fronted for emphasis — "great is my joy," "blessed are they," "marvelous are the works" — break before the inverted predicate. The inversion itself signals that the author is marking this as rhetorically weighted; the construction is a discrete image and a natural breath unit.
+
+**Test:** Can you rephrase it in normal word order ("my joy is great") and the emphasis is lost? If yes, the inversion is doing rhetorical work and deserves its own line.
+
+**Example (Alma 7:17):**
+```
+yea, concerning the things which I have spoken,
+great is my joy.
+```
+Not: `yea, concerning the things which I have spoken, great is my joy.`
+
+#### Rule 21: Title/role stays with its domain.
+
+Never split a title or role designation from the prepositional phrase that completes it: "high priest over the church," "king over the land," "chief judge among the people," "captain over the armies." The title is semantically incomplete without its domain.
+
+**Test:** Would the title alone be ambiguous or incomplete as a referent? If yes, keep title + domain on one line.
+
+**Example (Alma 8:11):**
+```
+and we know that thou art high priest over the church
+which thou hast established in many parts of the land,
+```
+Not: `and we know that thou art high priest / over the church which thou hast established...`
+
+#### Rule 22: Virtue/vice lists — examine for parallel structure.
+
+When a passage stacks moral qualities, exhortations, or enumerated items, examine the list for detectable parallel patterns before making line-break decisions. Common patterns to look for:
+
+- **Dual parallels (2-beat pairs):** "women and children," "humble and submissive," "spiritual and temporal." These stay together as a unit unless the second element introduces genuinely new content.
+- **Triadic parallels (3-beat triads):** "faith, hope, and charity." These stack vertically if each element carries enough weight, or stay merged if they function as a single compound concept.
+- **Dual + expansion (2+1 pattern):** A paired doublet followed by a third element that expands or recontextualizes the pair. The expansion earns its own line.
+- **Crescendo lists:** If the list items grow progressively longer, the lengthening may be deliberate — each item asks more of the reader. Do not normalize long lines to match short ones if the growing length tracks growing rhetorical weight.
+
+**Test:** Is there a detectable rhythmic pattern (2-beat, 3-beat, escalating doublet)? If yes, line breaks should make it visible. If no pattern is detectable, default to the breath/image test per line. Do not impose parallelism that isn't there — but do not obscure it either.
+
+**Example (Alma 7:23) — crescendo preserved:**
+```
+And now I would that ye should be humble,
+and be submissive and gentle;
+easy to be entreated;
+full of patience and long-suffering;
+being temperate in all things;
+being diligent in keeping the commandments of God at all times;
+asking for whatsoever things ye stand in need,
+both spiritual and temporal;
+always returning thanks unto God for whatsoever things ye do receive.
+```
+The list grows longer as the demands grow heavier. The longer lines earn their length.
+
+---
 *Last updated: 2026-03-24*
