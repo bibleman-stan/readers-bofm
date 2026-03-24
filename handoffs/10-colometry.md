@@ -625,3 +625,28 @@ The commas, semicolons, colons, and dashes in the canonical text are editorial a
 
 ---
 *Last updated: 2026-03-23*
+
+---
+### Update — 2026-03-24
+
+#### Rule 21: "According to" — Manner vs. Source/Authority
+
+"According to" phrases split when they claim divine source or authority; they merge when they describe manner.
+
+**Merge (manner — HOW the action is done):**
+- "spoke unto them, according to his word" — per instructions
+- "proceed with mine own prophecy, according to my plainness" — style of delivery
+- "gave a genealogy, according to his memory" — how he recalled
+- "manifest unto the children of men, according to their faith" — the mechanism
+
+**Split (source/authority — BY WHAT POWER the action occurs):**
+- "it whispereth me, / according to the workings of the Spirit of the Lord" — the Spirit is the source
+- "had spoken unto all his household, / according to the feelings of his heart and the Spirit of the Lord" — dual source: personal feeling + divine Spirit
+- "I give unto you a prophecy, / according to the spirit which is in me" — prophetic authorization
+
+**The test:** Is the "according to" phrase answering HOW? (manner → merge) or BY WHAT AUTHORITY / FROM WHAT SOURCE? (authorization → split). Source/authority claims are independent theological assertions that earn their own line. Manner adverbials are embedded modifiers that stay with their verb.
+
+**Connection to punctuation principle:** This distinction was discovered when the punctuation-dependency audit revealed that all "according to" breaks had been made at comma boundaries. Stripping the commas and testing on grammar alone revealed that some breaks were genuinely justified (source/authority) while others were punctuation artifacts (manner). The comma cannot be the basis — the function of the phrase must be.
+
+---
+*Last updated: 2026-03-24*
