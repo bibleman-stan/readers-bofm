@@ -103,3 +103,17 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-22–24
+- Full-corpus AICTP merge pass COMPLETE (all 15 books)
+- Anaphoric clause audit COMPLETE (Rule 19 refined, 3 fixes)
+- Escalatory appositive pass COMPLETE (28 stacks identified, 9 new breaks applied)
+- Punctuation-dependency audit COMPLETE (11 cases, 7 merged, 3 restored, 1 already correct)
+- Divine title appositive pass COMPLETE (38 identified, 6 newly stacked)
+- "after the manner of" swap removed
+- "Harlots" paper idea created in academic vault (Article Ideas folder)
+- Remaining: Stan's manual editorial pass on Alma 6+; "Jesus Christ, the Son of God" introducing/referencing calls in context (flagged for future dedicated review); Helaman-Moroni manual editorial pass; remaining ESL structural speed bumps from Tier 1 list
+
+---
+*Last updated: 2026-03-24*

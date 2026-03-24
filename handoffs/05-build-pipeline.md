@@ -96,3 +96,20 @@ When KJV diff layer is toggled ON, CSS hides `.verse-normal` and shows `.verse-d
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-23–24
+- Swap system updates:
+  - "retained in remembrance" → "remembered" / "retain in remembrance" → "remember" (phrase-level, 7 instances)
+  - Removed "remembrance" → "memory" global swap (not actually archaic)
+  - "insomuch" simplified from "so much so" → "so much" (178 instances)
+  - "yea/Yea" unified to "yes/Yes" (removed capitalization-dependent "Indeed" swap — capitalization is editorial, not original)
+  - "exceeding of all" → "beyond all" (phrase-level fix for 1 Ne 11:8)
+  - Added henceforth/thenceforth swaps (18 instances): "from this time henceforth" → "from now on", "from thenceforth" → "from then on", etc.
+  - Removed "after the manner of" → "like" swap (breaks in half the contexts; phrase isn't a real comprehension barrier)
+  - Context-sensitive "suffer" swap added: "suffer" meaning "allow/permit" → "allow/let" (110 instances); "suffer" meaning "endure pain" left untouched
+  - Fixed UTF-8 mojibake in contextual glosses — em-dashes and smart quotes replaced with HTML entities
+  - Cache at v74
+
+---
+*Last updated: 2026-03-24*

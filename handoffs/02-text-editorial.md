@@ -167,3 +167,15 @@ Utility script for automated sense-line rebalancing:
 - Full-corpus FEF mechanical scrub: 178 fixes across all 15 books (Alma 6-63, Helaman, 3 Nephi, 4 Nephi, Mormon, Ether, Moroni — the unedited books)
 - "notwithstanding" context-sensitive swap fix in build_book.py: moved "a" and "an" from determiner list to clause-subject list to prevent false positive swaps inside "notwithstanding" constructions
 - All 15 books rebuilt; service worker cache at v70
+
+---
+### Update — 2026-03-22–24
+- 2026-03-22: FEF consistency pass continued — AICTP merge candidates fixed across 1 Ne (7), 2 Ne (7), Jacob (3), Alma-Moroni (17). Full corpus now consistent on wayyehi rule.
+- 2026-03-23: Anaphoric clause audit — Rule 19 refined (expletive "it" in cleft constructions is cataphoric, not anaphoric; result clauses with new predication are cataphoric). 3 genuine violations fixed (Hel 14:27, 3 Ne 11:30, 3 Ne 23:12).
+- 2026-03-23: Escalatory appositive pass — 9 breaks applied across Mosiah (3:19, 4:6, 5:15, 15:5, 18:2), 2 Nephi (9:19, 9:26), Mormon (7:7), Moroni (9:25). Rule 20 (polysyndeton + repeated possessive = stack) codified.
+- 2026-03-23: Punctuation-dependency audit — 11 cases found where comma was sole basis for break. 7 manner adverbials merged back; 3 source/authority phrases correctly restored. Rule 21 (manner vs source/authority for "according to") codified. Principle established: punctuation must not have deterministic force.
+- 2026-03-24: Divine title appositive pass — 6 INTRODUCING appositives stacked (2 Ne 25:19, Hel 14:12, 3 Ne 20:31, Morm 5:14, Ether 4:7, Mosiah 7:27). Rule 22 (introducing vs referencing) codified. 1 Ne 11:6 "the most high God" stacked.
+- 2026-03-24: Alma 7:12 "according to the flesh" — merged back after punctuation principle applied. Manner adverbial, not source/authority.
+
+---
+*Last updated: 2026-03-24*
