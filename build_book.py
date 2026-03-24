@@ -138,9 +138,9 @@ COMPOUND_SWAPS = [
     ("hast spake", "have spoken"), ("hath spake", "has spoken"),
     ("had spake", "had spoken"), ("have spake", "have spoken"),
     ("hast spoken", "have spoken"),  # hast→have participle fix
-    # ── yea, even → indeed, even (emphatic, not affirmative) ──
-    ("yea, even", "indeed, even"), ("Yea, even", "Indeed, even"),
-    ("yea even", "indeed even"), ("Yea even", "Indeed even"),
+    # ── yea, even → yes, even (simplified: "yea" always → "yes") ──
+    ("yea, even", "yes, even"), ("Yea, even", "Yes, even"),
+    ("yea even", "yes even"), ("Yea even", "Yes even"),
     # ── lest that → for fear that (avoid double 'that') ──
     ("lest that", "for fear that"),
     # ── abomination collision avoidance ──
@@ -389,7 +389,7 @@ SIMPLE_SWAPS = [
     ("whit", "bit"), ("Whit", "Bit"),
     ("wo", "woe"), ("Wo", "Woe"),
     ("lest", "for fear that"), ("Lest", "For fear that"),
-    ("yea", "yes"), ("Yea", "Indeed"),
+    ("yea", "yes"), ("Yea", "Yes"),
     ("meet", "fitting"), ("Meet", "Fitting"),
     ("aught", "anything"), ("Aught", "Anything"),
     ("nay", "no"), ("Nay", "No"),
