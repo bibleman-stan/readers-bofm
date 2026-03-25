@@ -185,6 +185,14 @@ COMPOUND_SWAPS = [
     ("persecutest thou", "do you persecute"),
     ("commandest thou", "do you command"),
     ("comest thou", "do you come"),
+    # ── Inverted ye/you questions → "Do you [verb]" ──
+    ("What say ye", "What do you say"), ("what say ye", "what do you say"),
+    ("What mean ye", "What do you mean"), ("what mean ye", "what do you mean"),
+    ("what know ye", "what do you know"), ("What know ye", "What do you know"),
+    ("Suppose ye", "Do you suppose"), ("suppose ye", "do you suppose"),
+    # ── Imperative ye → drop ye for natural English ──
+    ("Know ye that", "Know that"), ("know ye that", "know that"),
+    ("Remember ye the", "Remember the"),
     # ── Non-inverted thou + -est (common patterns not yet caught) ──
     ("thou seest", "you see"), ("Thou seest", "You see"),
     ("thou mayest", "you may"), ("Thou mayest", "You may"),
