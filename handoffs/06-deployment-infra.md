@@ -63,3 +63,17 @@ Three commits need pushing:
 
 ---
 *Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-25
+
+#### Google Analytics 4 Added
+
+- **Measurement ID:** G-RZKBGPM7CR
+- **Dashboard:** https://analytics.google.com/analytics/web/provision/#/a388883428p529989979/reports/intelligenthome
+- **Tracking:** Pageviews + SPA hash navigation (every book/chapter change fires a virtual pageview)
+- **Code location:** `index.html` lines 4-13 (in `<head>`)
+- **Note:** The GA4 property is under Stan's Google account. Data collection began 2026-03-25.
+
+---
+*Last updated: 2026-03-25*
