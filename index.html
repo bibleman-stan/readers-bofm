@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The Book of Mormon — Reading Edition</title>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZKBGPM7CR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZKBGPM7CR');
+  // Track SPA hash navigation as pageviews
+  window.addEventListener('hashchange', function() {
+    gtag('event', 'page_view', { page_path: location.hash });
+  });
+</script>
 <meta name="description" content="A reading edition of the Book of Mormon with sense-line formatting, modern language aids, and study layers.">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1a1a1a">
