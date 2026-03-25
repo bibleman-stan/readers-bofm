@@ -17,8 +17,7 @@ Welcome.md
 # Research / pre-publication (local only)
 research/
 
-# Proprietary datasets (local only — build output in books/ is public)
-data/text-files/
+# Proprietary indexes (local only — not needed at runtime)
 data/parry_index.json
 data/hardy_intertext.json
 data/hardy_phrase_index.json
