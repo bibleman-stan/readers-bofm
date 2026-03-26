@@ -732,3 +732,31 @@ The list grows longer as the demands grow heavier. The longer lines earn their l
 
 ---
 *Last updated: 2026-03-24*
+
+---
+### Update — 2026-03-25
+
+#### Rule 23: Narrowing Vocative Addresses
+
+Compound vocative addresses that narrow from broad group to specific subset earn a break at the narrowing point. The speaker names the wide audience first, then zooms in to the specific addressees.
+
+**Break (narrows):**
+- "O ye house of Israel, / all ye that are broken off and are driven out" — nation → diaspora subset
+- "O ye wicked and perverse generation, / ye lawyers and hypocrites," — generation → occupational subset
+- "O ye workers of iniquity; / ye that are puffed up in the vain things of the world," — broad category → specific behavior
+
+**Keep merged (restates at same level):**
+- "O ye my people, or my brethren," — equivalence restatement (Rule 5), same scope
+
+**Corpus observation:** 15 compound vocative instances identified. The BofM text **consistently narrows from broad to specific** in vocative stacking — never the reverse. This unidirectional pattern (broad→narrow) parallels the escalatory appositive direction (general→specific) and may be a structural feature of the text's rhetorical grammar. Potentially quantifiable as a stylometric feature.
+
+#### Critical Bug Fix: _fix_double_that Stripping Genuine Clauses
+
+The build_book.py function `_fix_double_that` was silently deleting the word "that" from 31 genuine purpose/content clauses across the corpus. The function assumed every "that" following an AICTP line ending in comma was a duplicate, but many were introducing genuine new clauses ("that thereby they might," "that they should," "that if he would," etc.).
+
+Fix: added a CLAUSE_STARTERS guard — if the word after "that" is a pronoun, determiner, adverb, or conjunction (they, he, this, thereby, if, when, etc.), the "that" is a genuine clause introducer and is preserved. Also removed the paragraph-layer regex that did the same stripping.
+
+Impact: 31 verses across all 15 books now correctly retain their purpose/content clause "that."
+
+---
+*Last updated: 2026-03-25*
