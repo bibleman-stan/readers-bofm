@@ -117,3 +117,23 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 
 ---
 *Last updated: 2026-03-24*
+
+---
+### Update — 2026-03-26
+
+#### TTS Preprocessing Pipeline (Specced, Not Yet Built)
+
+**Problem:** Canonical punctuation conflicts with sense-line structure. TTS pauses at commas that don't align with editorial breaks; no pauses at line breaks where commas are absent.
+
+**Solution:** A preprocessing function in the Colab audio pipeline that transforms v2 source text into TTS-optimized text at generation time. No separate file to maintain — reads v2 live and applies rules.
+
+**Key design decisions:**
+- TTS reads **authentic/original text** (data-orig), NOT modernized swaps
+- Line breaks → short SSML pauses (not full commas)
+- Strip line-end commas/semicolons (redundant with line-break pause)
+- Preserve mid-line punctuation, periods, question marks, colons before speech
+- Edge cases: "wo, wo" → pauses between repetitions; "yea, even" → strip comma
+
+**Potential issues identified:** comma stripping too aggressive, verse-initial "And" choppiness, SSML pause duration tuning, regeneration credit cost (~100k chars/month vs. Alma at ~180k chars).
+
+**Status:** Specced in this session. Build when next audio generation cycle begins.
