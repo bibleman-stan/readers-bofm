@@ -1951,15 +1951,24 @@ def _fix_double_that(lines):
     """Fix AICTP double-that: when 'it came to pass that [X], / that [Y]',
     the AICTP swap consumes the first 'that' but leaves the second orphaned.
     Pre-process: if line[i] contains 'it came to pass that' and ends with comma,
-    and line[i+1] starts with 'that ', remove that second 'that' so the swap
-    produces clean grammar ('And then [X], [Y]' instead of 'And then [X], that [Y]')."""
+    and line[i+1] starts with 'that ', remove that second 'that' ONLY if it is
+    truly a duplicate — not if it introduces a genuine purpose/content clause."""
+    # Words that signal a genuine new clause after "that" — don't strip
+    CLAUSE_STARTERS = {
+        'thereby', 'they', 'he', 'she', 'it', 'we', 'ye', 'you', 'i',
+        'those', 'these', 'this', 'the', 'his', 'her', 'their', 'our',
+        'my', 'your', 'a', 'an', 'all', 'many', 'some', 'no', 'every',
+        'whosoever', 'whatsoever', 'if', 'when', 'after', 'before',
+    }
     result = list(lines)
     for i in range(len(result) - 1):
         if 'it came to pass that' in result[i].lower() and result[i].rstrip().endswith(','):
             nxt = result[i + 1]
             if nxt.startswith('that ') or nxt.startswith('That '):
-                # Remove the leading "that " — capitalize next word if "That" was capitalized
-                rest = nxt[5:]  # skip "that "
+                rest = nxt[5:]  # text after "that "
+                first_word = rest.split()[0].lower().rstrip('.,;:') if rest.split() else ''
+                if first_word in CLAUSE_STARTERS:
+                    continue  # genuine clause — don't strip
                 result[i + 1] = rest
     return result
 
@@ -2018,13 +2027,10 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
     para_text = v0.get((verse['chapter'], verse['verse']), '')
     para_html = ''
     if para_text:
-        # Fix double-that in paragraph text too
-        para_text = re.sub(
-            r'(it came to pass that\b[^,]+,)\s+that ',
-            r'\1 ',
-            para_text,
-            flags=re.IGNORECASE
-        )
+        # NOTE: Previously stripped "double-that" from paragraph text, but this
+        # incorrectly removed genuine purpose/content clause "that" in 31+ verses.
+        # The AICTP swap handles the first "that"; the second is usually a real clause.
+        # Removed 2026-03-25.
         para_html = process_line(para_text, swap_list)
         # Apply allusion/quotation highlighting to paragraph layer too
         if quote_phrases:
