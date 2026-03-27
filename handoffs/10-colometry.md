@@ -821,3 +821,28 @@ When an adjective requires a "that" clause as its complement, they stay on the s
 
 ---
 *Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-26 (third entry)
+
+#### Virtue List Pivot Principle
+
+Asyndetic adjective lists in the same register compress onto one line; a pivot to a new register earns a break. The pivot can be:
+
+- **Bare adjectives → compound phrases:** "humble, submissive, gentle" (one-word adjectives) vs. "full of patience and long-suffering" (prepositional compound) — the shift from single modifiers to elaborated phrases marks a register change.
+- **Receptive → active:** qualities the believer RECEIVES (humble, meek, submissive) vs. qualities the believer DOES (diligent in keeping commandments, asking for whatsoever things) — the shift from passive reception to active practice earns a break.
+
+Alma 13:28 virtue list pivot applied to match the Mosiah 3:19 pattern. Both passages share a receptive-to-active arc; the break at the pivot makes this rhetorical architecture visible across books.
+
+#### "Through" as Source/Mechanism Follows Rule 21
+
+"Through [source]" phrases claiming the mechanism of salvation or divine action split from what precedes them. These are source/authority claims, not manner adverbials:
+
+- "redeemed of God, / through the blood of the Lamb"
+- "salvation cometh to none such / except it be through repentance and faith"
+- "be saved / through the merits, and mercy, and grace of the Holy Messiah"
+
+10 instances fixed across 6 books. Follows the same logic as Rule 21 (source/authority splits; manner merges).
+
+---
+*Last updated: 2026-03-26*

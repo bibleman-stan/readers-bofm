@@ -179,3 +179,22 @@ Utility script for automated sense-line rebalancing:
 
 ---
 *Last updated: 2026-03-24*
+
+---
+### Update — 2026-03-25–26
+- Critical bug fix: `_fix_double_that` function was stripping 31 genuine purpose/content clause "that" across the corpus. Fixed with CLAUSE_STARTERS guard. Also removed paragraph-layer regex doing the same.
+- Alma 10:13 merge, 10:17 vocative split, 10:19 appositive split
+- Annotation system (Firebase) disabled — verse-num click handler removed
+- 1 Ne 21:1 narrowing vocative split (Rule 23)
+- Predictive mechanical breaks applied to entire corpus: Alma 12-63 (17), Helaman (4), 3 Nephi (11), Mormon (3), Ether (6), Moroni (1) — speech attributions, polysyndetic stacking, verb/content-clause breaks
+- Definitional "which is" breaks: 5 applied (2 Ne 25:16, Jacob 7:7, Alma 12:27, Alma 18:13, 3 Ne 27:5) — Rule 24
+- "And thus we see / that" editorial narrator breaks: 11 applied across 4 books — Rule 25
+- Adjective + "that" complement merges: 19 fixed across 7 books (possible/expedient/desirous/necessary + "that") — Rule 26
+- "Through" source/mechanism isolation: 10 fixes across 6 books (blood of the Lamb x3, his merits, faith on his name, through Christ, through Jesus Christ, etc.)
+- Declaration verb/content breaks: 5 fixes (testified that, covenanted that, sworn that x2 parallel, covenant that)
+- Alma 11-12 manual editorial pass: currency stacking, speech attributions, circumstantial frames, divine oath breaks
+- Alma 13:28 virtue list pivot to match Mosiah 3:19 pattern
+- Alma 7:12 "according to the flesh" merge (punctuation principle applied)
+
+---
+*Last updated: 2026-03-26*

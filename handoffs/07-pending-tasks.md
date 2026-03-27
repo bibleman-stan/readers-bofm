@@ -137,3 +137,20 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 **Potential issues identified:** comma stripping too aggressive, verse-initial "And" choppiness, SSML pause duration tuning, regeneration credit cost (~100k chars/month vs. Alma at ~180k chars).
 
 **Status:** Specced in this session. Build when next audio generation cycle begins.
+
+---
+### Update — 2026-03-25–26
+- Full predictive mechanical pass COMPLETE for entire corpus (Alma 12-63, Helaman, 3 Nephi, 4 Nephi, Mormon, Ether, Moroni)
+- Double-that bug FIXED (31 clauses restored)
+- Annotation system disabled
+- GA4 analytics added and live
+- Rules 23-26 codified and applied corpus-wide
+- "Through" source/mechanism + declaration verb passes COMPLETE
+- "And thus we see" editorial narrator breaks COMPLETE
+- Virtue list consistency scan IN PROGRESS
+- TTS preprocessing pipeline SPECCED (pending build when next audio generation)
+- Stan's manual Alma editorial pass: through chapter 13, continuing
+- Remaining: Alma 14+ manual editorial pass, virtue list consistency fixes (pending scan results), remaining books manual pass
+
+---
+*Last updated: 2026-03-26*

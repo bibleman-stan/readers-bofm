@@ -113,3 +113,23 @@ When KJV diff layer is toggled ON, CSS hides `.verse-normal` and shows `.verse-d
 
 ---
 *Last updated: 2026-03-24*
+
+---
+### Update — 2026-03-25–26
+- Critical: `_fix_double_that` bug fixed — was stripping "that" from 31 genuine clauses
+- Paragraph-layer regex for double-that also removed
+- Archaic verb-inversion swaps added for ye patterns (13 instances): "What say ye" → "What do you say", "Suppose ye" → "Do you suppose", "Know ye that" → "Know that", etc.
+- "Exceeding of all" → "beyond all" phrase swap fix (1 Ne 11:8)
+- "henceforth/thenceforth" swaps added (18 instances)
+- "yea/Yea" unified to "yes/Yes" (removed capitalization-dependent "Indeed")
+- "after the manner of" swap removed (not a real comprehension barrier)
+- 11 swap collision fixes: durst→dared, hence temporal, hiss scorn contexts, more exceedingly, affrighted, wax exceedingly, collocation fixes
+- Contextual glosses mojibake fixed (em-dashes → HTML entities)
+- Annotation system disabled (Firebase scripts commented out)
+- Google Analytics 4 added (G-RZKBGPM7CR)
+- Landing page text fix ("text" → "verses")
+- Alma 11:3 currency system analytic gloss added
+- Cache at v79
+
+---
+*Last updated: 2026-03-26*
