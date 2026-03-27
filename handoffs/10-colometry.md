@@ -760,3 +760,40 @@ Impact: 31 verses across all 15 books now correctly retain their purpose/content
 
 ---
 *Last updated: 2026-03-25*
+
+---
+### Update — 2026-03-26
+
+#### Rule 24: Definitional "Which Is" Clauses — Equation vs. Description
+
+"Which is/are" relative clauses break when they make a **theological equation or reveal** something the reader doesn't already know. They merge when they merely **describe an attribute**.
+
+**Break (equation/revelation):**
+- "the atonement, / which is infinite for all mankind" — defines the scope (equation)
+- "the law of Moses / which is the right way" — equates law with theological status
+- "judgment of which we have spoken, / which is the end" — defines the judgment as the eschatological end
+- "Rabbanah, / which is, being interpreted, powerful or great king" — translates a foreign word
+- "the name of Christ, / which is my name?" — Christ equates the name with his identity
+
+**Merge (description/attribute):**
+- "a life which is endless" — single-word attribute, not an equation
+- "a sin which is unpardonable" — descriptive modifier
+- "that joy which is unspeakable and full of glory" — describes what the joy is LIKE
+
+**The test:** Does the "which is" clause tell the reader what something IS (equation → break) or what it's LIKE (attribute → merge)?
+
+Corpus: 65 definitional "which is/are" clauses identified. 52 already broken (80%), 5 newly broken, 8 correctly merged as descriptive.
+
+#### Rule 25: "And Thus We See" — Editorial Narrator Formula
+
+"And thus we see" is Mormon's signature editorial intrusion — the narrator stepping back from the story to draw a lesson for the reader. When followed by "that [lesson]," the formula earns its own line:
+
+- "And thus we see / that there was no possible chance..." 
+- "And thus we see / that the Spirit of the Lord began to withdraw..."
+
+"And thus we see" is complete as an editorial gesture (the narrator addresses the reader). "That [lesson]" is the content clause — what we are supposed to see. Breaking them makes Mormon's compositional architecture visible.
+
+~20 instances corpus-wide. Concentrated in Alma and Helaman (Mormon's abridgment). Near-zero in small plates. This distribution is itself quantifiable data for the colometric stylometry paper — "and thus we see" frequency is a narrator-voice marker.
+
+---
+*Last updated: 2026-03-26*
