@@ -797,3 +797,27 @@ Corpus: 65 definitional "which is/are" clauses identified. 52 already broken (80
 
 ---
 *Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-26 (second entry)
+
+#### Rule 26: Adjective + "That" Complement Constructions Stay Together
+
+When an adjective requires a "that" clause as its complement, they stay on the same line. The "that" clause is not independent content — it completes the adjective's meaning.
+
+**Merge (adjective needs its "that" complement):**
+- "if it were possible that our first parents..." — possible WHAT?
+- "it is expedient that much should be done..." — expedient THAT what?
+- "they were desirous that they might destroy..." — desirous OF what?
+- "it is impossible that ye should be ignorant..." — impossible THAT what?
+
+**Break (verb is complete without "that"):**
+- "he hath said / that no unclean thing..." — "said" is complete; "that" introduces content
+- "and thus we see / that all mankind were fallen" — "we see" is complete; "that" introduces the lesson
+
+**The distinction:** Adjectives (possible, expedient, desirous, necessary, needful, impossible) REQUIRE their "that" clause to have any meaning — they are incomplete without it. Verbs of speaking/perceiving (said, testified, see, know) are complete as speech acts even without specifying what was said/seen/known.
+
+19 instances fixed across 7 books.
+
+---
+*Last updated: 2026-03-26*
