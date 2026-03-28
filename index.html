@@ -2104,15 +2104,15 @@
 
 <!-- Top bar -->
 <div class="topbar" id="topbar">
-  <button class="topbar-icon" id="topbar-hamburger" onclick="toggleNavPanel()" aria-label="Navigation" title="Navigation" style="display:none; position:absolute; left:14px; top:50%; transform:translateY(-50%);">
+  <button class="topbar-icon" id="topbar-hamburger" onclick="toggleNavPanel()" aria-label="Navigation" title="Navigation" style="display:none;">
     <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
   </button>
-  <div class="topbar-loc" id="topbar-loc" style="display:none; cursor:default; position:absolute; left:50%; transform:translateX(-50%); white-space:nowrap; max-width:calc(100% - 200px); overflow:hidden; text-overflow:ellipsis;">
+  <div class="topbar-loc" id="topbar-loc" style="display:none; cursor:default; flex:1; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
     <span class="topbar-book" id="topbar-book">1 Nephi</span>
     <span class="topbar-chap" id="topbar-chap">1</span>
   </div>
-  <div class="topbar-home" id="topbar-home" style="position:absolute; left:50%; transform:translateX(-50%);">bomreader.com</div>
-  <div class="topbar-icons" style="position:absolute; right:14px; top:50%; transform:translateY(-50%);">
+  <div class="topbar-home" id="topbar-home" style="flex:1; text-align:center;">bomreader.com</div>
+  <div class="topbar-icons">
     <button id="aid-pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
     <button class="topbar-icon" onclick="openSearch()" aria-label="Search" title="Search">
       <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
