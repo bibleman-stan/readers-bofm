@@ -241,22 +241,6 @@
   .nav-columns {
     width: 100%;
   }
-  .nav-book-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 24px;
-    margin-bottom: 12px;
-  }
-  .nav-ch-section {
-    border-top: 1px solid var(--border);
-    padding-top: 8px;
-  }
-  .nav-ch-section-title {
-    font-size: 0.78em;
-    color: var(--accent);
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
 
   .nav-col-header {
     font-size: 0.62em;
@@ -286,7 +270,10 @@
 
   .nav-ch-grid {
     display: none;
-    padding: 8px 0 12px;
+    padding: 10px 0 14px;
+    margin: 4px 0 8px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
   .nav-ch-grid.visible { display: block; }
 
@@ -3067,17 +3054,12 @@
     container.innerHTML = '';
 
     var bookIds = Object.keys(bookMeta);
-    var splitAt = 9;
-
-    // Book name grid (two columns)
-    var bookGrid = document.createElement('div');
-    bookGrid.className = 'nav-book-grid';
-    var leftCol = document.createElement('div');
-    var rightCol = document.createElement('div');
 
     for (var i = 0; i < bookIds.length; i++) {
       var id = bookIds[i];
       var meta = bookMeta[id];
+
+      // Book name
       var bookItem = document.createElement('div');
       bookItem.className = 'nav-book-item';
       bookItem.setAttribute('data-book', id);
@@ -3085,29 +3067,13 @@
       bookItem.onclick = (function(bookId) {
         return function() { toggleNavChapters(bookId); };
       })(id);
-      if (i < splitAt) leftCol.appendChild(bookItem);
-      else rightCol.appendChild(bookItem);
-    }
-    bookGrid.appendChild(leftCol);
-    bookGrid.appendChild(rightCol);
-    container.appendChild(bookGrid);
+      container.appendChild(bookItem);
 
-    // Chapter section (appears below book grid when a book is tapped)
-    for (var i = 0; i < bookIds.length; i++) {
-      var id = bookIds[i];
-      var meta = bookMeta[id];
+      // Chapter grid (hidden until tapped)
+      var chGrid = document.createElement('div');
+      chGrid.className = 'nav-ch-grid';
+      chGrid.id = 'nav-ch-grid-' + id;
 
-      var section = document.createElement('div');
-      section.className = 'nav-ch-grid';
-      section.id = 'nav-ch-grid-' + id;
-
-      // Book title in the expansion
-      var sectionTitle = document.createElement('div');
-      sectionTitle.className = 'nav-ch-section-title';
-      sectionTitle.textContent = meta.name;
-      section.appendChild(sectionTitle);
-
-      // Flex container for Intro + chapters
       var chFlex = document.createElement('div');
       chFlex.style.cssText = 'display:flex; flex-wrap:wrap; gap:5px;';
 
@@ -3136,8 +3102,8 @@
         })(id, c);
         chFlex.appendChild(ch);
       }
-      section.appendChild(chFlex);
-      container.appendChild(section);
+      chGrid.appendChild(chFlex);
+      container.appendChild(chGrid);
     }
   }
 
