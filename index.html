@@ -238,6 +238,10 @@
     box-sizing: border-box;
   }
 
+  #nav-columns {
+    display: block;
+  }
+
   .nav-book-row {
     display: flex;
     align-items: center;
@@ -3012,7 +3016,7 @@
     var panel = document.getElementById('nav-panel');
     panel.classList.add('open');
     // Reset to columns view (hide intro view)
-    document.getElementById('nav-columns').style.display = 'flex';
+    document.getElementById('nav-columns').style.display = 'block';
     document.getElementById('nav-intro-view').classList.remove('visible');
     // Highlight current book in right column
     highlightNavCurrentBook();
