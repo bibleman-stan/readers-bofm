@@ -3055,7 +3055,7 @@
       var row = document.createElement('div');
       row.className = 'nav-book-row';
       row.setAttribute('data-book', id);
-      row.innerHTML = meta.name + ' <span class="nav-book-chaps">' + meta.chapters + (meta.chapters === 1 ? ' chapter' : ' chapters') + '</span>';
+      row.textContent = meta.name;
       row.onclick = (function(bookId) {
         return function() { toggleNavChapters(bookId); };
       })(id);
