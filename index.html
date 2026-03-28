@@ -92,14 +92,10 @@
     display: flex;
     align-items: baseline;
     gap: 6px;
-    cursor: pointer;
+    cursor: default;
     padding: 6px 2px;
     border-radius: 6px;
-    transition: background 0.15s;
     min-width: 0;
-  }
-  .topbar-loc:hover {
-    background: rgba(255,255,255,0.03);
   }
 
   .topbar-book {
@@ -178,45 +174,40 @@
     font-style: italic;
   }
 
-  /* === BOOK/CHAPTER PICKER === */
-  .picker {
+  /* === NAVIGATION PANEL === */
+  .nav-panel {
     position: fixed;
     inset: 0;
-    background: var(--bg-overlay);
+    background: #0e1014;
     z-index: 300;
-    display: flex;
+    display: none;
     flex-direction: column;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s ease;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .picker.open {
-    opacity: 1;
-    pointer-events: auto;
+  .nav-panel.open {
+    display: flex;
   }
 
-  .picker-header {
+  .nav-panel-header {
     position: sticky;
     top: 0;
-    background: var(--bg-overlay);
-    padding: 16px 20px 12px;
+    background: #0e1014;
+    padding: 12px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 8px;
     z-index: 1;
+    border-bottom: 1px solid var(--border);
+    max-width: 42em;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  .picker-title {
-    font-size: 0.88em;
-    color: var(--text-dim);
-    font-weight: 400;
-  }
-
-  .picker-close {
-    width: 34px;
-    height: 34px;
+  .nav-panel-close {
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,48 +217,265 @@
     color: var(--text-faint);
     cursor: pointer;
     font-size: 22px;
-    transition: color 0.15s;
   }
-  .picker-close:hover { color: var(--text-dim); }
 
-  .picker-body {
+  .nav-panel-home {
+    font-size: 0.88em;
+    color: var(--accent);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+    padding: 8px 12px;
+  }
+
+  .nav-panel-body {
     padding: 0 20px 40px;
-    max-width: 38em;
+    max-width: 42em;
     margin: 0 auto;
+    width: 100%;
   }
 
-  .picker-book-row {
+  .nav-columns {
+    display: flex;
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav-col-about {
+    flex: 0 0 auto;
+    min-width: 0;
+    border-right: 1px solid var(--border);
+    padding-right: 16px;
+  }
+
+  .nav-col-books {
+    flex: 1;
+    min-width: 0;
+    padding-left: 10px;
+  }
+
+  .nav-col-header {
+    font-size: 0.62em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    font-weight: 600;
+    padding: 12px 6px 8px;
+  }
+
+  .nav-about-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 11px 12px;
-    border-radius: 8px;
-    cursor: pointer;
+    padding: 4px 6px;
+    font-size: 0.82em;
     color: var(--text-dim);
-    font-size: 0.88em;
-    transition: all 0.12s;
+    cursor: pointer;
+    border-radius: 6px;
+    min-height: 36px;
   }
-  .picker-book-row:hover {
-    background: rgba(255,255,255,0.025);
-    color: var(--text);
+
+  .nav-book-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+    font-size: 0.82em;
+    color: var(--text-dim);
+    cursor: pointer;
+    border-radius: 6px;
+    min-height: 36px;
   }
-  .picker-book-row.active {
+  .nav-book-item.active {
     color: var(--accent);
   }
 
-  .picker-book-chaps {
+  .nav-ch-grid {
+    display: none;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 4px 6px 10px;
+  }
+  .nav-ch-grid.visible { display: flex; }
+
+  .nav-ch {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 0.72em;
+    color: var(--text-faint);
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  .nav-ch.current {
+    color: var(--accent);
+    border-color: var(--border-accent);
+    background: var(--accent-dim);
+  }
+
+  /* Verse popover */
+  .verse-popover-scrim {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 400;
+    display: none;
+  }
+  .verse-popover-scrim.open { display: block; }
+
+  .verse-popover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px 20px;
+    z-index: 401;
+    max-width: 320px;
+    width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: none;
+  }
+  .verse-popover.open { display: block; }
+
+  .verse-popover-title {
+    font-size: 0.92em;
+    color: var(--accent);
+    cursor: pointer;
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+
+  .verse-popover-subtitle {
+    font-size: 0.72em;
+    color: var(--text-faint);
+    margin-bottom: 12px;
+  }
+
+  .verse-popover-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .verse-popover-num {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 0.72em;
+    color: var(--text-faint);
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+
+  /* Intro reading view (standalone page) */
+  .nav-intro-view {
+    display: none;
+  }
+
+  .nav-intro-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0 12px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 16px;
+  }
+
+  .nav-intro-back {
+    font-size: 0.82em;
+    color: var(--accent);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+    padding: 8px 4px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-intro-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-intro-arrow {
+    font-size: 1.2em;
+    color: var(--text-dim);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-intro-arrow:disabled {
+    color: var(--text-faint);
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  .nav-intro-counter {
     font-size: 0.72em;
     color: var(--text-faint);
   }
 
-  .picker-chapters {
-    display: none;
-    flex-wrap: wrap;
-    gap: 5px;
-    padding: 6px 12px 14px;
+  .nav-intro-content {
+    font-size: 0.88em;
+    line-height: 1.7;
+    color: #a0a0a0;
   }
-  .picker-chapters.visible { display: flex; }
+  .nav-intro-content p {
+    margin: 0 0 1em;
+  }
+  .nav-intro-content strong {
+    color: var(--text-main, #d4d4d4);
+    font-weight: 600;
+  }
+  .nav-intro-content strong {
+    color: var(--text);
+  }
 
+  .nav-intro-title {
+    font-size: 1.1em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .nav-intro-read-btn {
+    display: inline-block;
+    margin-top: 1.5em;
+    padding: 10px 20px;
+    background: var(--accent-dim);
+    color: var(--accent);
+    border: 1px solid var(--border-accent);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.88em;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  @media (max-width: 360px) {
+    .nav-col-about { flex: 0 0 35%; }
+    .nav-about-item, .nav-book-item { font-size: 0.76em; }
+  }
+
+  /* Keep .picker-ch for landing page grid compatibility */
   .picker-ch {
     width: 34px;
     height: 30px;
@@ -279,11 +487,6 @@
     color: var(--text-faint);
     cursor: pointer;
     border: 1px solid transparent;
-    transition: all 0.12s;
-  }
-  .picker-ch:hover {
-    color: var(--text-dim);
-    background: rgba(255,255,255,0.03);
   }
   .picker-ch.current {
     color: var(--accent);
@@ -723,6 +926,10 @@
   body.light-mode {
     background: #f5f0e8 !important;
     color: #3a3630 !important;
+  }
+  body.light-mode .nav-panel,
+  body.light-mode .nav-panel-header {
+    background: #f5f0e8;
   }
 
   body.light-mode summary {
@@ -1900,10 +2107,10 @@
 <!-- Top bar -->
 <div class="topbar" id="topbar">
   <div style="display:flex; align-items:center; gap:4px; min-width:0;">
-    <button class="topbar-icon topbar-home-btn" id="topbar-home-btn" onclick="showWelcome()" aria-label="Home" title="Home" style="display:none;">
-      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    <button class="topbar-icon" id="topbar-hamburger" onclick="toggleNavPanel()" aria-label="Navigation" title="Navigation" style="display:none;">
+      <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
     </button>
-    <div class="topbar-loc" id="topbar-loc" onclick="togglePicker()" style="display:none;">
+    <div class="topbar-loc" id="topbar-loc" style="display:none; cursor:default;">
       <span class="topbar-book" id="topbar-book">1 Nephi</span>
       <span class="topbar-sep">&middot;</span>
       <span class="topbar-chap" id="topbar-chap">Chapter 1</span>
@@ -1916,20 +2123,38 @@
       <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
     </button>
     <button class="topbar-icon" onclick="toggleSheet()" aria-label="Settings" title="Reading settings">
-      <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.48.48 0 00-.48-.41h-3.84a.48.48 0 00-.48.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87a.48.48 0 00.12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.26.41.48.41h3.84c.24 0 .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1115.6 12 3.61 3.61 0 0112 15.6z"/></svg>
     </button>
   </div>
 </div>
 
-<!-- Book/Chapter picker overlay -->
-<div class="picker" id="picker">
-  <div class="picker-header">
-    <div class="picker-title">Choose a book</div>
-    <button class="picker-close" onclick="togglePicker()">&times;</button>
+<!-- Navigation panel overlay -->
+<div class="nav-panel" id="nav-panel">
+  <div class="nav-panel-header">
+    <button class="nav-panel-close" onclick="closeNavPanel()">&times;</button>
+    <button class="nav-panel-home" onclick="closeNavPanel(); showWelcome();">Home</button>
+    <div style="flex:1;"></div>
   </div>
-  <div class="picker-body" id="picker-body">
-    <!-- Generated dynamically by JS -->
+  <div class="nav-panel-body" id="nav-panel-body">
+    <!-- Two-column layout generated by JS -->
+    <div class="nav-columns" id="nav-columns">
+      <div class="nav-col-about" id="nav-col-about">
+        <div class="nav-col-header">About</div>
+      </div>
+      <div class="nav-col-books" id="nav-col-books">
+        <div class="nav-col-header">Books</div>
+      </div>
+    </div>
   </div>
+</div>
+<!-- Intro reading view (standalone page) -->
+<div class="nav-intro-view" id="nav-intro-view" style="max-width:42em; margin:0 auto; padding:20px;"></div>
+<!-- Verse popover -->
+<div class="verse-popover-scrim" id="verse-popover-scrim" onclick="closeVersePopover()"></div>
+<div class="verse-popover" id="verse-popover">
+  <div class="verse-popover-title" id="verse-popover-title"></div>
+  <div class="verse-popover-subtitle">Select a verse:</div>
+  <div class="verse-popover-grid" id="verse-popover-grid"></div>
 </div>
 
 <!-- Bottom sheet (reading controls) -->
@@ -2057,7 +2282,7 @@
       <a href="#" onclick="showWelcome(); return false;" style="color:#7cafc2; font-size:0.85em; text-decoration:none; white-space:nowrap;">Home ↗</a>
     </div>
     <p>This is a reading edition of the Book of Mormon. The original text is preserved exactly, but it has been reformatted into shorter sense-lines that follow natural pauses in speech. This makes the text easier to read aloud, easier to follow visually, and more accessible for people who are learning English or encountering the Book of Mormon for the first time.</p>
-    <p>Tap the book and chapter name at the top of the screen to open the book picker, where you can jump to any chapter. Tap the menu icon at the top right to open reading settings. Everything is designed to stay out of your way until you need it.</p>
+    <p>Tap the menu icon at the top left to open the navigation panel, where you can jump to any book, chapter, or verse. Tap the gear icon at the top right to open reading settings. Everything is designed to stay out of your way until you need it.</p>
 
     <h2>Reading Settings</h2>
 
@@ -2090,7 +2315,7 @@
 
     <div class="feature-card">
       <div class="feature-name">Book introductions</div>
-      <div class="feature-desc">When you open the book picker and tap a book name, a brief introduction appears below the chapter numbers explaining who the narrator is and what to expect.</div>
+      <div class="feature-desc">Open the navigation panel and tap a book name in the left column to read a brief introduction explaining who the narrator is and what to expect.</div>
     </div>
 
     <div class="feature-card">
@@ -2174,6 +2399,50 @@
     'moroni': {name: 'Moroni', abbr: 'Moro', chapters: 10}
   };
   window.bookMeta = bookMeta;  // expose for narration.js auto-advance
+
+  // ---- VERSE COUNTS PER CHAPTER ----
+  var VERSE_COUNTS = {
+    '1nephi': {1:20, 2:24, 3:31, 4:38, 5:22, 6:6, 7:22, 8:38, 9:6, 10:22, 11:36, 12:23, 13:42, 14:30, 15:36, 16:39, 17:55, 18:25, 19:24, 20:22, 21:26, 22:31},
+    '2nephi': {1:32, 2:30, 3:25, 4:35, 5:34, 6:18, 7:11, 8:25, 9:54, 10:25, 11:8, 12:22, 13:26, 14:6, 15:30, 16:13, 17:25, 18:22, 19:21, 20:34, 21:16, 22:6, 23:22, 24:32, 25:30, 26:33, 27:35, 28:32, 29:14, 30:18, 31:21, 32:9, 33:15},
+    'jacob': {1:19, 2:35, 3:14, 4:18, 5:77, 6:13, 7:27},
+    'enos': {1:27},
+    'jarom': {1:15},
+    'omni': {1:30},
+    'words-of-mormon': {1:18},
+    'mosiah': {1:18, 2:41, 3:27, 4:30, 5:15, 6:7, 7:33, 8:21, 9:19, 10:22, 11:29, 12:37, 13:35, 14:12, 15:31, 16:15, 17:20, 18:35, 19:29, 20:26, 21:36, 22:16, 23:39, 24:25, 25:24, 26:39, 27:37, 28:20, 29:47},
+    'alma': {1:33, 2:38, 3:27, 4:20, 5:62, 6:8, 7:27, 8:32, 9:34, 10:32, 11:46, 12:37, 13:31, 14:29, 15:19, 16:21, 17:39, 18:43, 19:36, 20:30, 21:23, 22:35, 23:18, 24:30, 25:17, 26:37, 27:30, 28:14, 29:17, 30:60, 31:38, 32:43, 33:23, 34:41, 35:16, 36:30, 37:47, 38:15, 39:19, 40:26, 41:15, 42:31, 43:54, 44:24, 45:24, 46:41, 47:36, 48:25, 49:30, 50:40, 51:37, 52:40, 53:23, 54:24, 55:35, 56:57, 57:36, 58:41, 59:13, 60:36, 61:21, 62:52, 63:17},
+    'helaman': {1:34, 2:14, 3:37, 4:26, 5:52, 6:41, 7:29, 8:28, 9:41, 10:19, 11:38, 12:26, 13:39, 14:31, 15:17, 16:25},
+    '3nephi': {1:30, 2:19, 3:26, 4:33, 5:26, 6:30, 7:26, 8:25, 9:22, 10:19, 11:41, 12:48, 13:34, 14:27, 15:24, 16:20, 17:25, 18:39, 19:36, 20:46, 21:29, 22:17, 23:14, 24:18, 25:6, 26:21, 27:33, 28:40, 29:9, 30:2},
+    '4nephi': {1:49},
+    'mormon': {1:19, 2:29, 3:22, 4:23, 5:24, 6:22, 7:10, 8:41, 9:37},
+    'ether': {1:43, 2:25, 3:28, 4:19, 5:6, 6:30, 7:27, 8:26, 9:35, 10:34, 11:23, 12:41, 13:31, 14:31, 15:34},
+    'moroni': {1:4, 2:3, 3:4, 4:3, 5:2, 6:9, 7:48, 8:30, 9:26, 10:34}
+  };
+
+  // Single-chapter book IDs (skip chapter grid, go straight to verse popover)
+  var singleChapterBooks = new Set(['enos', 'jarom', 'omni', 'words-of-mormon', '4nephi']);
+
+  // Book IDs in order for intro navigation
+  var bookOrder = Object.keys(bookMeta);
+
+  // ---- FULL BOOK INTRODUCTIONS (for intro reading view) ----
+  var bookIntrosFull = [
+    {id: '1nephi', name: '1 Nephi', html: '<p>The narrator of this book is a man named Nephi. He is the son of a prophet of God named Lehi. Nephi tells the story of his family when they left Jerusalem around 600 BC, during the final years of the kingdom of Judah. This was at about the same time period as described in the Old Testament in 2 Kings 24\u201325 and 2 Chronicles 36 (just before Jerusalem was destroyed by Babylon).</p><p>Nephi explains how God warned his father to leave Jerusalem and how each family member reacted in a different way. Lehi trusted God\u2019s warning. Nephi learned to trust God through hard experiences. Nephi\u2019s older brothers, Laman and Lemuel, struggled to trust God and often complained.</p><p><strong>One key theme to watch for:</strong><br>God helps and protects those who choose to trust Him, even when doing so is hard and the future is unclear.</p>'},
+    {id: '2nephi', name: '2 Nephi', html: '<p>The narrator is still Nephi. This book begins soon after the family has reached a new land, but it quickly becomes more about teaching than travel.</p><p>A large part of 2 Nephi is sermons and prophecy. Nephi includes long passages from Isaiah and then explains why they matter. If Isaiah feels difficult, do not panic. The main message is easier than the details.</p><p><strong>One key theme to watch for:</strong><br>God makes covenants and keeps His promises, and repentance opens the way back to Him.</p>'},
+    {id: 'jacob', name: 'Jacob', html: '<p>The narrator is Jacob, Nephi\u2019s brother, who serves as a priest and teacher. He speaks to a community that has been in the new land for some time.</p><p>Jacob warns his people about pride, mistreating the poor, and breaking family trust. He also teaches strongly about Christ and about God\u2019s mercy for those who repent.</p><p><strong>One key theme to watch for:</strong><br>God cares about the condition of the heart, not just outward religion.</p>'},
+    {id: 'enos', name: 'Enos', html: '<p>The narrator is Enos, the son of Jacob. This is a short, personal story.</p><p>Enos describes a deep experience of prayer, forgiveness, and change. After he finds peace with God, he begins to pray for his people and even for his enemies.</p><p><strong>One key theme to watch for:</strong><br>Honest prayer can lead to forgiveness, peace, and fill us with the desire to bless others.</p>'},
+    {id: 'jarom', name: 'Jarom', html: '<p>The narrator is Jarom, a descendant of Jacob. He writes briefly and covers many years quickly.</p><p>Jarom explains that the people had wars and problems, but prophets continued to teach, and many still tried to keep God\u2019s commandments.</p><p><strong>One key theme to watch for:</strong><br>Even in hard times, God supports those who keep seeking Him.</p>'},
+    {id: 'omni', name: 'Omni', html: '<p>Even though it is very short, the book of Omni has more than one narrator. It is a short record that covers a period of more than 200 years.</p><p>The writers give short updates about wars, leadership changes, and an important move to a new place. Some major events are mentioned very quickly because the record is small.</p><p><strong>One key theme to watch for:</strong><br>God gathers and blesses those who remain loyal to Him, and He scatters those who choose to reject Him.</p>'},
+    {id: 'words-of-mormon', name: 'Words of Mormon', html: '<p>The narrator is Mormon, a prophet and historian who lived hundreds of years after Nephi. This book is a bridge, and it is meant to help you understand a big shift in the text.</p><p><strong>One important note:</strong><br>Up to this point you have been reading what are often called the \u201csmall plates\u201d of Nephi, which focus heavily on spiritual teaching and family history. Starting in Mosiah, you move into a different set of records (often called the \u201clarge plates\u201d), which are more like a national history with sermons, missions, and wars. Mormon is explaining why both sets are included.</p><p><strong>One key theme to watch for:</strong><br>God can guide what is preserved in scripture, even across centuries, to bless later readers.</p>'},
+    {id: 'mosiah', name: 'Mosiah', html: '<p>In Mosiah, Mormon is the main narrator. There are multiple characters and story lines. You will hear from King Benjamin, King Mosiah, King Limhi, Abinadi, Alma, and others.</p><p>This book includes major sermons, major conversions, and big changes in how the people are led. It also introduces different groups of people and locations, so new names may appear quickly. If you feel lost, keep track of the main themes: teaching, covenant-making, missionary work, and community change.</p><p>One of the most important figures in this book is Abinadi, a prophet who boldly warns a corrupt king and his priests. Abinadi is rejected and killed, but his words change one listener, a man named Alma. Alma\u2019s conversion begins a line of prophets, teachers, and leaders whose influence continues through Alma, Helaman, and leads all the way to the visit of Jesus Christ in 3 Nephi.</p><p><strong>One key theme to watch for:</strong><br>One faithful witness can start a chain of belief that not only affects everyone around them but also can last for generations.</p>'},
+    {id: 'alma', name: 'Alma', html: '<p>This book continues the story that began with the prophet Abinadi in Mosiah, following Alma and those who carry forward his teachings as they face opposition, growth, and conflict. Mormon continues to be the main narrator.</p><p>Alma is one of the longest books and it contains many stories and sermons. You will see conversion, missionary work, church problems, debates about belief, and major wars. Some chapters are fast-moving stories; others are long teachings. This is a good place to slow down and read in smaller pieces.</p><p><strong>One key theme to watch for:</strong><br>Even during times of trouble, political conflict, or war, God remembers His covenant people and gives them strength and protection.</p>'},
+    {id: 'helaman', name: 'Helaman', html: '<p>This book continues the story that began with the prophet Abinadi in Mosiah, now showing what happens in the next generations as the people rise and fall again and again. Mormon is still the narrator of the stories.</p><p>The main characters are Helaman and his sons, but you will also see other leaders and groups, including a very wicked man named Gadianton. This book shows a society swinging back and forth between faith and pride. It includes political conflict (including secret criminal and political conspiracies) and repeated warnings from prophets.</p><p><strong>One key theme to watch for:</strong><br>As the coming of the Messiah draws near, people are divided more clearly. The righteous grow stronger in faith, while the wicked become more open and brazen in rejecting God, setting their hearts on worldly things, and engaging in acts of wickedness.</p>'},
+    {id: '3nephi', name: '3 Nephi', html: '<p>The long chain of prophets and believers that began with Abinadi reaches its fulfillment here. The warnings, divisions, and preparations of earlier generations lead to this moment. Mormon continues to be the narrator, but during long portions, Jesus Christ himself is quoted.</p><p>The book begins with great destruction and grief, which mark the end of widespread wickedness. What follows is healing and renewal. Jesus Christ appears to the people after His resurrection. He invites them to come to Him, heals the sick, blesses children, teaches His gospel, and establishes peace among those who will follow Him.</p><p><strong>One key theme to watch for:</strong><br>Jesus Christ is the answer to long preparation. He brings healing after judgment and peace after division, and He gathers all who are willing to come to Him.</p>'},
+    {id: '4nephi', name: '4 Nephi', html: '<p>This short book is a summary of the two generations after Christ\u2019s visit. It shows what life can look like when people truly live the gospel together.</p><p>The people have long peace and unity in a society filled with economic equality and great miracles, but over time pride returns and the community breaks apart. The book moves quickly, so pay attention to the pattern.</p><p><strong>One key theme to watch for:</strong><br>When people truly live the gospel of Jesus Christ, peace can last for generations. When that devotion fades, division quickly returns.</p>'},
+    {id: 'mormon', name: 'Mormon', html: '<p>This book has two narrators: Mormon, the historian who also wrote Words of Mormon. He is also a military leader living near the end of his people\u2019s history. However, at the end of the book, Mormon\u2019s son Moroni takes over and explains that his father was killed in war before he could finish his work.</p><p>Mormon describes the story of his life. He tells it in the context of when his people have chosen to reject God and are in deep spiritual and military decline: they are losing wars to their enemies, refusing to repent, and are finally destroyed. Mormon writes his story with sorrow, but also with a desire to warn and to preserve hope for future readers.</p><p><strong>One key theme to watch for:</strong><br>When a society knowingly rejects God, it collapses. Even then, God continues to reach out to individuals who will listen.</p>'},
+    {id: 'ether', name: 'Ether', html: '<p>The narrator is now Moroni, who continues writing after the death of his father. However, the story he tells in Ether is much older. The Book of Ether is a record about the Jaredites, a people who lived long before Nephi\u2019s time. Although the Jaredite civilization lasted for many centuries, Moroni gives only a brief summary of their history. He focuses mainly on their kings and on the moments when the people chose to listen to, or reject, God\u2019s prophets.</p><p>Ether begins with a remarkable revelation of the Lord Jesus Christ to a faithful man who lived near the time of the Tower of Babel. This man and his people leave the Old World and travel to the New World thousands of years before the birth of Jesus Christ. The book shows a long rise followed by a tragic fall, much like what later happens to the Nephites. The story includes kings, wars, prophets, and many chances to repent. It also contains one of the clearest teachings in the Book of Mormon about how God can strengthen people in their weakness.</p><p><strong>One key theme to watch for:</strong><br>Societies that honor God\u2019s prophets are preserved and blessed. When people reject and seek to destroy God\u2019s prophets, He allows them to destroy themselves.</p>'},
+    {id: 'moroni', name: 'Moroni', html: '<p>The narrator of the final book is still Moroni. He is now alone, writing after the destruction of his people and the death of his father. Moroni knows that he is finishing the record, and he writes directly for future readers who will live long after his own time.</p><p>Moroni includes teachings about church practices, such as ordinances and leadership, to help future believers understand how Christ\u2019s church should function. He also preserves powerful teachings from his father, Mormon, especially about faith, hope, and charity. These teachings explain not just what to believe, but what kind of people followers of Christ are meant to become.</p><p>More than any other book, Moroni speaks directly to the reader. He bears personal testimony, explains how God continues to work through miracles, and invites readers to seek God sincerely. The book ends with Moroni\u2019s promise that God will answer those who ask in faith and with real intent.</p><p><strong>One key theme to watch for:</strong><br>God is a God of miracles, and He does not change. He continues to reveal Himself and confirm truth to all who will seek Him through faith in Jesus Christ. God offers His covenant relationship to everyone who will accept the conditions, especially trusting in the power of Jesus Christ.</p>'}
+  ];
 
   // ---- BOOK INTRODUCTIONS ----
   var bookIntros = {
@@ -2639,7 +2908,7 @@
 
   // ---- UI TOGGLES ----
   // ---- UI TOGGLES (simplified for new design) ----
-  window.toggleNav = function() { togglePicker(); };
+  window.toggleNav = function() { toggleNavPanel(); };
   window.toggleBackground = function() { /* No longer in UI — use About page link */ };
 
   window.jumpTo = function(id) {
@@ -2670,7 +2939,7 @@
   // ---- ABOUT PAGE ----
   window.showAboutPage = function() {
     // Close any open overlays
-    document.getElementById('picker').classList.remove('open');
+    document.getElementById('nav-panel').classList.remove('open');
     document.getElementById('sheet').classList.remove('open');
     document.getElementById('sheetScrim').classList.remove('open');
     // Hide landing and reading
@@ -2679,7 +2948,7 @@
     document.getElementById('book-content-container').style.display = 'none';
     // Topbar: show home state
     document.getElementById('topbar-loc').style.display = 'none';
-    document.getElementById('topbar-home-btn').style.display = 'none';
+    document.getElementById('topbar-hamburger').style.display = 'none';
     document.getElementById('topbar-home').style.display = 'block';
     document.getElementById('float-prev').classList.remove('active');
     document.getElementById('float-next').classList.remove('active');
@@ -2696,13 +2965,13 @@
     document.getElementById('book-content-container').style.display = 'block';
     // Topbar: show reading state
     document.getElementById('topbar-loc').style.display = 'flex';
-    document.getElementById('topbar-home-btn').style.display = 'flex';
+    document.getElementById('topbar-hamburger').style.display = 'flex';
     document.getElementById('topbar-home').style.display = 'none';
   };
 
   window.showWelcome = function() {
     // Close any open overlays
-    document.getElementById('picker').classList.remove('open');
+    document.getElementById('nav-panel').classList.remove('open');
     document.getElementById('sheet').classList.remove('open');
     document.getElementById('sheetScrim').classList.remove('open');
     // Show landing, hide reading content
@@ -2711,7 +2980,7 @@
     document.getElementById('book-content-container').style.display = 'none';
     // Topbar: show home state
     document.getElementById('topbar-loc').style.display = 'none';
-    document.getElementById('topbar-home-btn').style.display = 'none';
+    document.getElementById('topbar-hamburger').style.display = 'none';
     document.getElementById('topbar-home').style.display = 'block';
     // Hide float nav
     document.getElementById('float-prev').classList.remove('active');
@@ -2730,14 +2999,13 @@
     document.getElementById('book-content-container').style.display = 'block';
     // Topbar: show reading state
     document.getElementById('topbar-loc').style.display = 'flex';
-    document.getElementById('topbar-home-btn').style.display = 'flex';
+    document.getElementById('topbar-hamburger').style.display = 'flex';
     document.getElementById('topbar-home').style.display = 'none';
   };
 
   // ---- NEW UI FUNCTIONS ----
-  window.togglePicker = function() {
-    document.getElementById('picker').classList.toggle('open');
-  };
+  // Legacy alias for any remaining callers
+  window.togglePicker = function() { toggleNavPanel(); };
 
   window.toggleSheet = function() {
     document.getElementById('sheet').classList.toggle('open');
@@ -2746,60 +3014,269 @@
 
   // openSearch / closeSearch defined below in the Search section
 
-  // Picker population function
-  function buildPicker() {
-    var body = document.getElementById('picker-body');
-    body.innerHTML = '';
+  // ---- NAVIGATION PANEL ----
+  window.toggleNavPanel = function() {
+    var panel = document.getElementById('nav-panel');
+    if (panel.classList.contains('open')) {
+      closeNavPanel();
+    } else {
+      openNavPanel();
+    }
+  };
+
+  window.openNavPanel = function() {
+    var panel = document.getElementById('nav-panel');
+    panel.classList.add('open');
+    // Reset to columns view (hide intro view)
+    document.getElementById('nav-columns').style.display = 'flex';
+    document.getElementById('nav-intro-view').classList.remove('visible');
+    // Highlight current book in right column
+    highlightNavCurrentBook();
+  };
+
+  window.closeNavPanel = function() {
+    document.getElementById('nav-panel').classList.remove('open');
+    closeVersePopover();
+  };
+
+  function highlightNavCurrentBook() {
+    document.querySelectorAll('.nav-book-item').forEach(function(el) {
+      el.classList.toggle('active', el.getAttribute('data-book') === currentBook);
+    });
+    // Highlight current chapter in grid
+    document.querySelectorAll('.nav-ch').forEach(function(el) { el.classList.remove('current'); });
+    var grid = document.getElementById('nav-ch-grid-' + currentBook);
+    if (grid) {
+      var ch = currentChapterMap[currentBook] || 1;
+      var items = grid.querySelectorAll('.nav-ch');
+      if (items[ch - 1]) items[ch - 1].classList.add('current');
+    }
+  }
+
+  function buildNavPanel() {
+    var aboutCol = document.getElementById('nav-col-about');
+    var booksCol = document.getElementById('nav-col-books');
+    // Keep headers
+    aboutCol.innerHTML = '<div class="nav-col-header">About</div>';
+    booksCol.innerHTML = '<div class="nav-col-header">Books</div>';
+
     var bookIds = Object.keys(bookMeta);
     for (var i = 0; i < bookIds.length; i++) {
       var id = bookIds[i];
       var meta = bookMeta[id];
-      var row = document.createElement('div');
-      row.className = 'picker-book-row';
-      row.setAttribute('data-book', id);
-      row.innerHTML = meta.name + ' <span class="picker-book-chaps">' + meta.chapters + (meta.chapters === 1 ? ' chapter' : ' chapters') + '</span>';
-      row.onclick = (function(bookId) {
-        return function() { togglePickerChapters(this, bookId); };
-      })(id);
-      body.appendChild(row);
 
-      var chaps = document.createElement('div');
-      chaps.className = 'picker-chapters';
-      chaps.id = 'picker-chapters-' + id;
+      // Left column: about/intro link
+      var aboutItem = document.createElement('div');
+      aboutItem.className = 'nav-about-item';
+      aboutItem.textContent = 'Intro to ' + meta.name;
+      aboutItem.onclick = (function(idx) {
+        return function() { showNavIntro(idx); };
+      })(i);
+      aboutCol.appendChild(aboutItem);
+
+      // Right column: book name (tappable to expand chapters)
+      var bookItem = document.createElement('div');
+      bookItem.className = 'nav-book-item';
+      bookItem.setAttribute('data-book', id);
+      bookItem.textContent = meta.name;
+      bookItem.onclick = (function(bookId) {
+        return function() { toggleNavChapters(bookId); };
+      })(id);
+      booksCol.appendChild(bookItem);
+
+      // Chapter grid (accordion)
+      var chGrid = document.createElement('div');
+      chGrid.className = 'nav-ch-grid';
+      chGrid.id = 'nav-ch-grid-' + id;
       for (var c = 1; c <= meta.chapters; c++) {
         var ch = document.createElement('div');
-        ch.className = 'picker-ch';
+        ch.className = 'nav-ch';
         ch.textContent = c;
         ch.onclick = (function(bookId, chNum) {
           return function(e) {
             e.stopPropagation();
-            togglePicker();
-            switchBook(bookId, chNum);
+            showVersePopover(bookId, chNum);
           };
         })(id, c);
-        chaps.appendChild(ch);
+        chGrid.appendChild(ch);
       }
-      // Add book intro text below chapters
-      if (bookIntros[id]) {
-        var intro = document.createElement('div');
-        intro.className = 'picker-intro';
-        intro.innerHTML = bookIntros[id];
-        chaps.appendChild(intro);
-      }
-      body.appendChild(chaps);
+      booksCol.appendChild(chGrid);
     }
   }
 
-  function togglePickerChapters(el, bookId) {
-    var chapters = document.getElementById('picker-chapters-' + bookId);
-    if (!chapters) return;
-    var wasVisible = chapters.classList.contains('visible');
-    // Close all other chapter lists
-    document.querySelectorAll('.picker-chapters.visible').forEach(function(c) { c.classList.remove('visible'); });
-    document.querySelectorAll('.picker-book-row.active').forEach(function(r) { r.classList.remove('active'); });
+  function toggleNavChapters(bookId) {
+    // For single-chapter books, go straight to verse popover
+    if (singleChapterBooks.has(bookId)) {
+      showVersePopover(bookId, 1);
+      return;
+    }
+    var grid = document.getElementById('nav-ch-grid-' + bookId);
+    if (!grid) return;
+    var wasVisible = grid.classList.contains('visible');
+    // Close all other chapter grids
+    document.querySelectorAll('.nav-ch-grid.visible').forEach(function(g) { g.classList.remove('visible'); });
+    document.querySelectorAll('.nav-book-item.active').forEach(function(r) {
+      if (r.getAttribute('data-book') !== currentBook) r.classList.remove('active');
+    });
     if (!wasVisible) {
-      chapters.classList.add('visible');
-      el.classList.add('active');
+      grid.classList.add('visible');
+      var item = document.querySelector('.nav-book-item[data-book="' + bookId + '"]');
+      if (item) item.classList.add('active');
+      // Highlight current chapter
+      highlightNavCurrentBook();
+    }
+  }
+
+  // ---- VERSE POPOVER ----
+  window.showVersePopover = function(bookId, chNum) {
+    var counts = VERSE_COUNTS[bookId];
+    var numVerses = counts ? (counts[chNum] || 0) : 0;
+    if (numVerses === 0) {
+      // Fallback: just navigate to chapter
+      closeNavPanel();
+      switchBook(bookId, chNum);
+      return;
+    }
+    var title = document.getElementById('verse-popover-title');
+    title.textContent = 'Chapter ' + chNum;
+    title.onclick = function() {
+      closeVersePopover();
+      closeNavPanel();
+      switchBook(bookId, chNum);
+    };
+    var grid = document.getElementById('verse-popover-grid');
+    grid.innerHTML = '';
+    for (var v = 1; v <= numVerses; v++) {
+      var btn = document.createElement('div');
+      btn.className = 'verse-popover-num';
+      btn.textContent = v;
+      btn.onclick = (function(bk, ch, verse) {
+        return function() {
+          closeVersePopover();
+          closeNavPanel();
+          // Navigate to book-chapter then scroll to verse
+          window._pendingVerseScroll = { bookId: bk, chapter: ch, verse: verse };
+          switchBook(bk, ch);
+          var attempts = 0;
+          var checker = setInterval(function() {
+            attempts++;
+            if (scrollToVerse(bk, ch, verse) || attempts >= 40) {
+              clearInterval(checker);
+              window._pendingVerseScroll = null;
+              // Update hash to include verse
+              lastHashWeSet = bk + '-' + ch + '-' + verse;
+              window.location.hash = lastHashWeSet;
+            }
+          }, 100);
+        };
+      })(bookId, chNum, v);
+      grid.appendChild(btn);
+    }
+    document.getElementById('verse-popover-scrim').classList.add('open');
+    document.getElementById('verse-popover').classList.add('open');
+  };
+
+  window.closeVersePopover = function() {
+    document.getElementById('verse-popover-scrim').classList.remove('open');
+    document.getElementById('verse-popover').classList.remove('open');
+  };
+
+  // ---- INTRO READING VIEW ----
+  var currentIntroIndex = 0;
+
+  var introPageBuilt = false;
+  function showNavIntro(index) {
+    var view = document.getElementById('nav-intro-view');
+
+    // Build the full scrollable intro page once
+    if (!introPageBuilt) {
+      view.innerHTML = '';
+
+      // Back button header
+      var header = document.createElement('div');
+      header.className = 'nav-intro-header';
+      var backBtn = document.createElement('button');
+      backBtn.className = 'nav-intro-back';
+      backBtn.innerHTML = '&#8592; Back';
+      backBtn.onclick = function() {
+        view.style.display = 'none';
+        view.classList.remove('visible');
+        // Restore reading view
+        document.getElementById('topbar').style.display = '';
+        if (currentBook) {
+          document.querySelectorAll('.book-content').forEach(function(el) { el.style.display = ''; });
+          var hash = currentBook + '-' + (currentChapterMap[currentBook] || 1);
+          history.replaceState(null, '', '#' + hash);
+        } else {
+          showWelcome();
+        }
+      };
+      header.appendChild(backBtn);
+      var pageTitle = document.createElement('span');
+      pageTitle.style.cssText = 'font-size:0.88em; color:var(--text-faint);';
+      pageTitle.textContent = 'Book Introductions';
+      header.appendChild(pageTitle);
+      view.appendChild(header);
+
+      // All 15 intros as one scrollable page
+      for (var i = 0; i < bookIntrosFull.length; i++) {
+        (function(idx) {
+          var intro = bookIntrosFull[idx];
+          var section = document.createElement('div');
+          section.id = 'intro-' + intro.id;
+          section.style.cssText = 'padding: 16px 0; border-bottom: 1px solid var(--border);';
+
+          var title = document.createElement('div');
+          title.className = 'nav-intro-title';
+          title.textContent = intro.name;
+          section.appendChild(title);
+
+          var content = document.createElement('div');
+          content.className = 'nav-intro-content';
+          content.innerHTML = intro.html;
+          section.appendChild(content);
+
+          var readBtn = document.createElement('button');
+          readBtn.className = 'nav-intro-read-btn';
+          readBtn.innerHTML = 'Read ' + intro.name + ' &#8594;';
+          readBtn.onclick = function() {
+            closeNavPanel();
+            switchBook(intro.id, 1);
+          };
+          section.appendChild(readBtn);
+
+          view.appendChild(section);
+        })(i);
+      }
+      introPageBuilt = true;
+    }
+
+    // Close nav panel and show intro view as a standalone page
+    closeNavPanel();
+
+    // Hide reading content, show intro view
+    document.querySelectorAll('.book-content').forEach(function(el) { el.style.display = 'none'; });
+    document.getElementById('topbar').style.display = 'none';
+    var landing = document.getElementById('landing');
+    if (landing) landing.style.display = 'none';
+    var aboutPage = document.getElementById('about-page');
+    if (aboutPage) aboutPage.style.display = 'none';
+
+    view.style.display = 'block';
+    view.classList.add('visible');
+
+    // Set hash
+    history.replaceState(null, '', '#introductions');
+
+    // Scroll to the requested book's intro
+    var targetId = 'intro-' + bookIntrosFull[index].id;
+    var targetEl = document.getElementById(targetId);
+    if (targetEl) {
+      setTimeout(function() {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+    } else {
+      window.scrollTo(0, 0);
     }
   }
 
@@ -2833,18 +3310,13 @@
         ch.onclick = (function(bookId, chNum) {
           return function(e) {
             e.stopPropagation();
-            switchBook(bookId, chNum);
+            showVersePopover(bookId, chNum);
           };
         })(id, c);
         chGrid.appendChild(ch);
       }
       expand.appendChild(chGrid);
-      if (bookIntros[id]) {
-        var intro = document.createElement('div');
-        intro.className = 'picker-intro';
-        intro.innerHTML = bookIntros[id];
-        expand.appendChild(intro);
-      }
+      /* Intro text removed from landing page — now accessed via About column in nav panel */
       grid.appendChild(expand);
     }
   }
@@ -2897,13 +3369,15 @@
       document.getElementById('topbar-book').textContent = meta.name;
       document.getElementById('topbar-chap').textContent = 'Chapter ' + chNum;
     }
-    // Highlight current chapter in picker
-    document.querySelectorAll('.picker-ch').forEach(function(c) { c.classList.remove('current'); });
-    var pickerChaps = document.getElementById('picker-chapters-' + bookId);
-    if (pickerChaps) {
-      var chs = pickerChaps.querySelectorAll('.picker-ch');
+    // Highlight current chapter in nav panel
+    document.querySelectorAll('.nav-ch').forEach(function(c) { c.classList.remove('current'); });
+    var navGrid = document.getElementById('nav-ch-grid-' + bookId);
+    if (navGrid) {
+      var chs = navGrid.querySelectorAll('.nav-ch');
       if (chs[chNum - 1]) chs[chNum - 1].classList.add('current');
     }
+    // Also highlight in landing page grid
+    document.querySelectorAll('.picker-ch').forEach(function(c) { c.classList.remove('current'); });
     updateFloatNav(bookId, chNum);
     // Load annotations for this chapter (if signed in)
     if (typeof ANNOTATIONS !== 'undefined' && ANNOTATIONS.loadChapterAnnotations) {
@@ -2912,25 +3386,66 @@
   };
 
   window.showChapterGrid = function(bookId) {
-    // Open the picker and expand this book's chapters
-    togglePicker();
-    var pickerChaps = document.getElementById('picker-chapters-' + bookId);
-    if (pickerChaps) pickerChaps.classList.add('visible');
+    // Open the nav panel and expand this book's chapters
+    openNavPanel();
+    toggleNavChapters(bookId);
   };
 
   // ---- HASH-BASED DEEP LINKING ----
   function handleHash() {
     var hash = window.location.hash.slice(1);
     if (!hash) return;
+    // Handle introductions page
+    if (hash === 'introductions') {
+      showNavIntro(0);
+      return;
+    }
     // Skip if this is the hash we just set ourselves
     if (hash === lastHashWeSet) return;
-    var parts = hash.match(/^([a-z0-9-]+?)(?:-(\d+))?$/);
+    // Match book-chapter-verse (verse is optional)
+    var parts = hash.match(/^([a-z0-9-]+?)(?:-(\d+))?(?:-(\d+))?$/);
     if (!parts) return;
     var bookId = parts[1];
     var chapter = parts[2] ? parseInt(parts[2]) : 1;
+    var verse = parts[3] ? parseInt(parts[3]) : null;
     if (bookMeta[bookId]) {
-      switchBook(bookId, chapter);
+      if (verse) {
+        // Navigate to chapter, then scroll to verse
+        window._pendingVerseScroll = { bookId: bookId, chapter: chapter, verse: verse };
+        switchBook(bookId, chapter);
+        var attempts = 0;
+        var checker = setInterval(function() {
+          attempts++;
+          if (scrollToVerse(bookId, chapter, verse) || attempts >= 40) {
+            clearInterval(checker);
+            window._pendingVerseScroll = null;
+            // Restore the full hash with verse
+            lastHashWeSet = bookId + '-' + chapter + '-' + verse;
+            window.location.hash = lastHashWeSet;
+          }
+        }, 100);
+      } else {
+        switchBook(bookId, chapter);
+      }
     }
+  }
+
+  // scrollToVerse used by both search and hash routing
+  function scrollToVerse(bookId, chapter, verse) {
+    var verseRef = chapter + ':' + verse;
+    var allVerses = document.querySelectorAll('#book-' + bookId + ' .verse-num');
+    for (var i = 0; i < allVerses.length; i++) {
+      if (allVerses[i].textContent.trim() === verseRef) {
+        var verseDiv = allVerses[i].closest('.verse');
+        if (verseDiv) {
+          verseDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          verseDiv.style.background = 'rgba(124,175,194,0.15)';
+          setTimeout(function() { verseDiv.style.background = ''; }, 2000);
+        }
+        return true;
+      }
+    }
+    return false;
   }
 
   window.addEventListener('hashchange', handleHash);
@@ -2951,7 +3466,7 @@
     highlightBookBtn('1nephi');
     buildChapterGrid('1nephi');
     // Build new UI elements
-    buildPicker();
+    buildNavPanel();
     buildLandingBooks();
 
     var hash = window.location.hash.slice(1);
@@ -2971,8 +3486,8 @@
   // Escape key handler
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-      if (document.getElementById('picker').classList.contains('open')) {
-        togglePicker();
+      if (document.getElementById('nav-panel').classList.contains('open')) {
+        closeNavPanel();
         return;
       }
       if (document.getElementById('sheet').classList.contains('open')) {
