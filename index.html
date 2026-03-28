@@ -270,12 +270,14 @@
 
   .nav-ch-grid {
     display: none;
-    padding: 10px 0 14px;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px 6px 14px;
     margin: 4px 0 8px;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
-  .nav-ch-grid.visible { display: block; }
+  .nav-ch-grid.visible { display: flex; }
 
   .nav-ch {
     width: 44px;
@@ -3074,9 +3076,6 @@
       chGrid.className = 'nav-ch-grid';
       chGrid.id = 'nav-ch-grid-' + id;
 
-      var chFlex = document.createElement('div');
-      chFlex.style.cssText = 'display:flex; flex-wrap:wrap; gap:5px;';
-
       // "Intro" chip
       var introChip = document.createElement('div');
       introChip.className = 'nav-ch-intro';
@@ -3087,7 +3086,7 @@
           showNavIntro(idx);
         };
       })(i);
-      chFlex.appendChild(introChip);
+      chGrid.appendChild(introChip);
 
       // Chapter numbers
       for (var c = 1; c <= meta.chapters; c++) {
@@ -3100,9 +3099,8 @@
             showVersePopover(bookId, chNum);
           };
         })(id, c);
-        chFlex.appendChild(ch);
+        chGrid.appendChild(ch);
       }
-      chGrid.appendChild(chFlex);
       container.appendChild(chGrid);
     }
   }
