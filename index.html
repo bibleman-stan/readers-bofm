@@ -239,10 +239,12 @@
   }
 
   .nav-columns {
+    width: 100%;
+  }
+  .nav-book-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 20px;
-    width: 100%;
   }
 
   .nav-col-header {
@@ -3056,14 +3058,19 @@
     container.innerHTML = '';
 
     var bookIds = Object.keys(bookMeta);
-    // Split into two columns: first 9 books left, last 6 right (roughly balanced)
-    var splitAt = 9;
+    var splitAt = 9; // first 9 left, last 6 right
+
+    // Book name grid
+    var bookGrid = document.createElement('div');
+    bookGrid.className = 'nav-book-grid';
+
+    // Left column
+    var leftCol = document.createElement('div');
+    var rightCol = document.createElement('div');
 
     for (var i = 0; i < bookIds.length; i++) {
       var id = bookIds[i];
       var meta = bookMeta[id];
-
-      // Book name item
       var bookItem = document.createElement('div');
       bookItem.className = 'nav-book-item';
       bookItem.setAttribute('data-book', id);
@@ -3071,11 +3078,17 @@
       bookItem.onclick = (function(bookId) {
         return function() { toggleNavChapters(bookId); };
       })(id);
-      container.appendChild(bookItem);
+      if (i < splitAt) leftCol.appendChild(bookItem);
+      else rightCol.appendChild(bookItem);
+    }
+    bookGrid.appendChild(leftCol);
+    bookGrid.appendChild(rightCol);
+    container.appendChild(bookGrid);
 
-      // Chapter grid with Intro as first item (accordion, spans both columns)
-      var expandWrap = document.createElement('div');
-      expandWrap.className = 'nav-ch-expand';
+    // Chapter expansion area (below the book grid)
+    for (var i = 0; i < bookIds.length; i++) {
+      var id = bookIds[i];
+      var meta = bookMeta[id];
       var chGrid = document.createElement('div');
       chGrid.className = 'nav-ch-grid';
       chGrid.id = 'nav-ch-grid-' + id;
@@ -3105,8 +3118,7 @@
         })(id, c);
         chGrid.appendChild(ch);
       }
-      expandWrap.appendChild(chGrid);
-      container.appendChild(expandWrap);
+      container.appendChild(chGrid);
     }
   }
 
