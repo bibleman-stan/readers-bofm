@@ -907,3 +907,51 @@ An adversarial review of all 26 settled rules revealed that approximately 10 are
 
 ---
 *Last updated: 2026-03-29*
+
+---
+### Update — 2026-03-29 (second entry)
+
+#### Discourse Formula Check: "I would that ye should [verb]" is NOT a consistent pattern
+
+Tested all 50 instances of "I would that ye should [verb]" + "that" across the corpus. Result: exactly 25 broken, 25 merged — a perfect 50/50 split. This is NOT promotable to a rule. Breaks are governed by line length/breath, not by the formula itself. The earlier agent's claim of "~25 instances, ALL broken" was incorrect — it only counted instances where "that" appeared on the next line and missed the merged ones. **Cautionary tale about confirmation bias in audit processes.**
+
+#### Editorial Principle Break Audit Results
+
+Tested 16 breaks made under Editorial Principles (Rules 14, 20, 21, 22, 24) against the foundational test alone:
+- **11 of 16 SURVIVE** the foundational test without the editorial principle (Rules 21, 22, 24 breaks, plus Mosiah 3:19 and Alma 7:10)
+- **5 of 16 DEPEND ON PRINCIPLE** — all five are Rule 20 polysyndetic stacking of bare noun/verb fragments
+
+Of the 5 principle-dependent breaks:
+- **3 RETAINED** (Mosiah 15:5 passion verbs, Mosiah 18:2 salvific arc, 2 Ne 9:19 monster decomposition) — items are in genuinely different semantic domains with distinct visualizable images
+- **2 REVERTED** (Mosiah 4:6 divine attributes, Mosiah 5:15 divine attributes) — abstract quality catalogues where we may have imposed gravitas the text doesn't structurally demand
+
+#### Refined Polysyndetic Stacking Criterion
+
+Polysyndetic stacking is justified ONLY when items are in genuinely different semantic domains AND each item produces a distinct visualizable image:
+- **Stack:** "mocked / scourged / cast out / disowned" — four different KINDS of action, each a distinct image
+- **Stack:** "devil / death / hell / lake of fire" — distinct entities, each a distinct image
+- **Merge:** "matchless power, and his wisdom, and his patience" — abstract attributes in the same general domain (divine qualities), not distinct images
+
+**The test:** Can you visualize each item as a separate mental picture? "Scourged" — yes (whip on flesh). "Mercy" — no (abstract concept). Image-producing items can stack; abstractions merge.
+
+#### Mechanical Validation Test Results
+
+Line-length statistics measured across 10 attributed voice sections. Key finding: **voice differentiation IS present in the current text.**
+- Shortest: Abinadi at 7.71 avg words/line
+- Longest: Mormon Narrative at 9.09 avg words/line
+- Spread: 1.38 words/line across sections
+- Standard deviation remarkably consistent (2.87-3.19) across ALL sections — the editorial hand applies the same spread everywhere; only the center shifts
+
+Three tiers: oratorical/sermon (7.7-8.0), blended (8.4-8.5), narrative/abridgment (8.8-9.1). The differentiation is in the TEXT, not in our method.
+
+#### Methodological Commitment: Identify Real Grammar, Not Pseudo-Categories
+
+When identifying the grammatical basis for a line break:
+- **"This is [standard grammatical term]"** — when confident it's established (e.g., "verb phrase | prepositional adjunct")
+- **"I think this might be [X] but I'm not certain"** — when pattern-matching
+- **"I don't know"** — when uncertain
+
+Do not construct grammatical categories to justify editorial instincts. If a break can't be named in standard grammatical terms, it's an editorial decision — which is fine, but should be labeled honestly.
+
+---
+*Last updated: 2026-03-29*
