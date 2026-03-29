@@ -198,3 +198,12 @@ Utility script for automated sense-line rebalancing:
 
 ---
 *Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-28–29
+- Navigation refactor implemented — hamburger menu, verse-level navigation with popover, standalone intro page, centered topbar. Multiple iterations to get layout right.
+- Alma 12:1 and 12:3 parallel breaks at verb phrase | prepositional adjunct boundary.
+- Verb + "that" audit completed — 131 instances tested, no verb-type rule found. Breaks governed by speech attribution, discourse formulas, and line length/breath (see 10-colometry.md for full analysis).
+
+---
+*Last updated: 2026-03-29*

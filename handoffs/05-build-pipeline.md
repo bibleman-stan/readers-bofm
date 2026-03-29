@@ -133,3 +133,11 @@ When KJV diff layer is toggled ON, CSS hides `.verse-normal` and shows `.verse-d
 
 ---
 *Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-28–29
+- Navigation refactor — replaced full-screen picker with hamburger-triggered nav panel. New verse popover with VERSE_COUNTS data object. New intro reading page. Settings icon changed from hamburger to gear. Landing page now has verse-level navigation. Google Analytics hash tracking preserved.
+- Cache version advanced significantly through multiple iterations.
+
+---
+*Last updated: 2026-03-29*

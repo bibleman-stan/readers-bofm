@@ -154,3 +154,15 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 
 ---
 *Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-29
+- Navigation refactor SHIPPED (hamburger panel, verse popover, intro page, centered topbar)
+- Verb + "that" audit COMPLETE — no verb-type rule warranted
+- Rules reclassified into three tiers: RULES, EDITORIAL PRINCIPLES, GUIDELINES (see 10-colometry.md)
+- Mechanical-only validation test for stylometry paper: PROPOSED but not yet run
+- Stan's Alma manual pass: continuing through chapter 12+
+- Remaining: mobile testing of new navigation, intro page Back button edge cases, "I would that ye should know/remember" formula consistency review
+
+---
+*Last updated: 2026-03-29*

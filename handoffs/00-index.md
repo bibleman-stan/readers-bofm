@@ -93,3 +93,11 @@ These can be kept for historical reference or deleted.
 ### Update — 2026-03-21
 - research/ folder now gitignored from repo; lives locally at `research/` (not symlinked — just a local directory excluded from git)
 - Old handoff files (COWORK-HANDOFF.md, COWORK-HANDOFF-KJV.md, HANDOFF.md) deleted from repo root — section above is now historical note only
+
+---
+### Update — 2026-03-29
+- Rules reclassification documented in 10-colometry.md: 26 settled rules now organized into three tiers (RULES — mechanical/reproducible, EDITORIAL PRINCIPLES — defensible but judgment-dependent, GUIDELINES — useful tendencies). Implication: the paper should claim only what the mechanical rules can support.
+- Navigation refactor shipped; updates across 02, 04, 05, 06, 07.
+
+---
+*Last updated: 2026-03-29*

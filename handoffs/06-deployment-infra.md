@@ -77,3 +77,11 @@ Three commits need pushing:
 
 ---
 *Last updated: 2026-03-25*
+
+---
+### Update — 2026-03-28–29
+- Major UI refactor — navigation panel replaces full-screen picker. Topbar restructured (hamburger left, book name centered, tools right). Multiple commits to iterate on alignment, layout, and mobile compatibility.
+- Annotation system (Firebase) was disabled in a prior session.
+
+---
+*Last updated: 2026-03-29*
