@@ -47,7 +47,29 @@
 
 ---
 
-## II. Previous and Adjacent Work
+## II. Previous and Adjacent Work (BIFURCATED — March 2026 revision)
+
+**Critical note:** The original literature review drew exclusively from Hebrew *poetic* colometry. But the BofM is mostly prose. The method itself demonstrated this — applied uniformly, it produced poetry-like cola for Isaiah, liturgical stacking for Benjamin, and the prose FEF/expansion pattern for Mormon. The tool differentiated genres without being told to. The literature review must therefore draw on TWO traditions: poetic colometry (for the syntactic principle) and prose discourse analysis (for the structural model).
+
+### Stream A — Poetic Colometry (syntactic criterion for line division)
+- Lowth (Hebrew parallelism, 1753) → Kugel → Berlin → Watson
+- Muilenburg (rhetorical criticism, "beyond form criticism")
+- **Cloete** (*Versification and Syntax in Jeremiah 2–25*, 1989) — the key figure: syntax governs colometry. The reformatter is Cloete's method automated.
+- Fokkelman (Hebrew poetry and narrative structure)
+- Marschall (Pauline colometry — breath-unit cola; precedent for applying colometry to non-poetry)
+- Key point: this stream establishes the *principle* (syntax governs line division) but was built for poetry. It cannot explain why FEFs behave as they do in prose.
+
+### Stream B — Hebrew Prose Discourse Analysis (NEW — structural model)
+- **Niccacci** (*The Syntax of the Verb in Classical Hebrew Prose*, 1990) — foreground (wayyiqtol mainline) vs. background (circumstantial clauses, offline comments). FEFs ARE Niccacci's circumstantial protasis in English clothing. The FEF-frame/expansion-line architecture IS Niccacci's background/foreground distinction.
+- **Longacre** (*Joseph: A Story of Divine Providence*, 1989) — discourse grammar applied to Hebrew narrative; routine/peak narrative model. The three-register finding (FEF/expansion/divine speech) maps onto Longacre's tripartite system (background/foreground/direct speech).
+- **Alter** (*The Art of Biblical Narrative*, 1981 — NOT the poetry book) — prose rhythm, type-scenes, "purposeful reticence." Divine speech compressing shorter than narrative prose is a recognized Hebrew property.
+- Key point: this stream provides the theoretical home for what FEFs actually are — discourse-level foreground/background transitions in narrative prose, not poetic cola.
+
+### Stream C — Kunstprosa (art prose)
+- Norden's concept of structurally patterned prose that is not verse
+- The register most BofM text occupies: not poetry, not flat prose, but orally shaped narrative with structural conventions
+- This gives terminological permission to apply colometric analysis to prose without claiming the prose is poetry
+- Arabic *saj'* (rhymed prose) as cross-linguistic parallel for Semitic Kunstprosa
 
 ### Stylometric Studies of the Book of Mormon
 - Hilton (wordprint studies, "Voices in the Book of Mormon" 2024)
@@ -55,27 +77,18 @@
 - Fields (criticism of stylometric methods applied to BofM)
 - Key point: all previous stylometric work measures features *in* the text (word choice, function word frequency, vocabulary richness). None measures features *between* the lines — the structural architecture of how ideas are packaged.
 
-### Colometric Studies in Biblical Scholarship
-- Lowth (Hebrew parallelism, 1753) → Kugel → Berlin → Watson
-- Muilenburg (rhetorical criticism, "beyond form criticism")
-- Fokkelman (major structural analysis of Hebrew poetry and narrative)
-- Marschall (Pauline colometry — breath-unit cola, Gorgianic redundancy figures)
-- Key point: colometry has a rich tradition in biblical studies but has never been applied to the Book of Mormon, and has rarely been connected to stylometric questions (who wrote this?) as opposed to rhetorical questions (how does this work?).
-
 ### The "And It Came to Pass" Literature
-- Frequency criticism: Mark Twain's joke and its scholarly descendants — the phrase as evidence of literary clumsiness or single authorship
-- Apologetic responses: the phrase as Hebrew wayyehi, a legitimate narrative convention
-- What's missing: nobody has examined *what happens structurally when the phrase is treated as a discourse marker rather than verbal filler* — what it introduces, how the introduction relates to what follows, and whether that relationship varies by attributed author
+- Frequency criticism: Mark Twain's joke and its scholarly descendants
+- Apologetic responses: the phrase as Hebrew wayyehi
+- What's missing: nobody has examined *what happens structurally when the phrase is treated as a discourse marker rather than verbal filler*
 
 ### Book of Mormon Formatting Editions
-- Skousen's *Earliest Text* (recovering original English dictation)
-- Hardy's *Maxwell Institute Study Edition* (modern paragraphing, some poetic formatting)
-- Key point: both make editorial formatting decisions but neither applies a consistent, rule-based colometric methodology across the entire text and then measures what emerges. Skousen's breaks are textual-critical; Hardy's are readability-oriented. Neither is designed to reveal structural patterns at the macro level.
+- Skousen's *Earliest Text* — textual-critical breaks, not colometric
+- Hardy's *Maxwell Institute Study Edition* — readability-oriented, not rule-based
+- **Key transmission history point:** The Original Manuscript was dictated without punctuation. Punctuation added by printer Gilbert (1830). Versification by Pratt (1879). Every structural layer readers see today was added by someone other than the author(s) or translator. The colometric recovery project works on a literally unpunctuated dictated text — methodologically identical to what text critics do with unpunctuated manuscripts (DSS, early papyri). This is not a metaphor.
 
 ### Oral Textual Criticism (Broader Theoretical Context)
-- Brief note connecting to OTC as a developing methodology (Stan's dissertation work)
-- Colometry tells us where the oral units are; OTC tells us why they're there
-- The BOM Reader project is a practical demonstration of colometric analysis at scale — the data source for the present paper
+- Brief note connecting to OTC as a developing methodology
 - Not developed in full here (that's the dissertation), but acknowledged as the theoretical umbrella
 
 ---
@@ -101,6 +114,12 @@
 - Result: 1 genuine merge candidate found (1 Nephi 19:21, "must needs be" split from complement clause)
 - This establishes the dataset is clean: editorial decisions are internally consistent across thousands of break points
 - The Gemini control experiment: an external AI audit produced sophisticated theoretical synthesis but hallucinated every specific recommendation — demonstrating that the editorial decisions require semantic understanding, not just syntactic pattern-matching
+
+### The Three-Layer Methodology Model
+- **Layer 1 — Mechanical syntax** (reformatter M0–M10): purely Cloetean. Syntax governs colometry. Handles ~74% of corpus adequately. This is what syntax alone can do.
+- **Layer 2 — Discourse-level structure** (FEF recognition, speech attribution, register identification): Niccacci/Longacre territory. Recognizes foreground/background transitions that syntax alone misses. This is where human judgment adds something the reformatter cannot.
+- **Layer 3 — Rhetorical and theological interpretation** (escalatory appositives, virtue list pivots, divine title stacking): Alter territory — the art in the prose.
+- The reformatter (Layer 1) applying Cloete's syntax-governs-colometry principle *broke FEFs that shouldn't be broken*. The FEF framework (Layer 2), informed by prose discourse analysis, *preserved them*. This is documented evidence that prose discourse analysis outperforms syntactic colometry on a measurable task.
 
 ### What Emerges: Two Distinct Construction Patterns
 - In the Small Plates: relatively uniform line lengths, additive construction ("staircase building")
@@ -183,18 +202,35 @@ A Front-End Frame (FEF) is a line that meets all four criteria:
 
 ---
 
-## VI. The Hebrew Parallel — and Why It Matters That It Was Discovered Independently
+## VI. The Hebrew Prose Parallel — and Why It Matters That It Was Discovered Independently
 
-### FEFs and Wayyiqtol + Circumstantial Protasis
-- Hebrew narrative backbone: wayehi [temporal] [circumstantial participial]... [main verb]
-- Hebrew grammarians treat the protasis as one unit — don't break it
-- The atomic-image rule arrived at the same conclusion from the English side independently
+**Note: This section has been rewritten to frame the parallel in terms of prose discourse analysis (Niccacci/Longacre) rather than poetic colometry.**
+
+### FEFs as Niccacci's Circumstantial Protasis
+- Not just a structural resemblance: a functional correspondence
+- Niccacci's foreground/background distinction: wayyiqtol mainline = foreground (events advancing the narrative); circumstantial clauses = background (setting, description, explanation)
+- FEF frames ARE background; expansion lines beginning with the main verb ARE foreground
+- The three-register model (FEF / expansion / divine speech) maps onto Niccacci's tripartite prose system (background / foreground / direct speech, which he treats as a distinct discourse level)
+- This is not "these look alike" — it's "the same functional discourse architecture appears in both, independently identified"
+
+### The Retroversion Test (proposed)
+- 50 representative FEF breaks retroversioned into Biblical Hebrew
+- Test whether English-side breaks fall at natural Hebrew clause boundaries
+- If correspondence is high for FEF breaks and wayyiqtol boundaries, that's the strongest version of the convergence argument
+- Not convergence with *poetic* Hebrew structure — convergence with *prose* Hebrew discourse structure (the correct claim)
 
 ### Methodological Significance of Independent Discovery
 - The criteria were developed for English readability, not Hebrew grammar
 - The structures emerged from applying those English criteria, then were recognized as matching Hebrew conventions
 - This is convergent evidence — two independent analytical approaches arriving at the same structural conclusion
 - Much stronger than starting from Hebrew and looking for it in English (which would be circular)
+
+### Genre-Neutrality as Methodological Validation
+- The method applied a single criterion uniformly across the corpus
+- The OUTPUT differentiated genres: Isaiah → poetry-like cola; Benjamin → liturgical stacking; Mormon → prose FEF/expansion; 4 Nephi → chronicle compression; Nephi's visions → cinematic stichometry
+- The Isaiah blocks are the positive control: the method CAN detect poetry when poetry is present — which makes it significant that it DOESN'T detect poetry in Mormon's narrative
+- The tool said "this isn't poetry." Niccacci and Longacre describe what it detected instead.
+- This is a defense against the "you found what you were looking for" objection: you weren't looking for genre differentiation. You were looking for readable line breaks. Genre differentiation fell out as a byproduct.
 
 ### Interpretive Options (presented neutrally)
 1. If the text is translated from a Hebrew-influenced source → FEFs may be structural fossils surviving through translation
@@ -264,4 +300,5 @@ Summary statistics demonstrating internal consistency of the editorial dataset.
 ---
 
 *Draft outline created: 2026-03-18*
-*Status: Outline stage. Quantitative analysis not yet performed. Needs line-length data extraction, statistical analysis, and visualization before drafting can begin.*
+*Major revision: 2026-03-29 — Prose discourse reframing (Niccacci/Longacre/Cloete), bifurcated lit review, three-layer methodology model, genre-neutrality finding, transmission history argument, retroversion test proposal*
+*Status: Outline stage. Quantitative analysis not yet performed. Needs line-length data extraction, statistical analysis, and visualization before drafting can begin. Priority reading: Niccacci and Longacre before drafting Sections II, IV, and VI.*
