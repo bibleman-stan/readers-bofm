@@ -955,3 +955,25 @@ Do not construct grammatical categories to justify editorial instincts. If a bre
 
 ---
 *Last updated: 2026-03-29*
+
+---
+### Update — 2026-03-29 (third entry)
+
+#### Compound List Break Signals (replaces Rule 20 polysyndetic stacking)
+
+In a compound list governed by one preposition or verb, bare "and [noun]" items are compound objects of one grammatical act and stay MERGED. A break is justified only when a grammatical signal marks an item as structurally distinct:
+
+**Signals that justify a break within a compound list:**
+1. **Elided auxiliary + stacked participles** — each participle is an implied predication. "Suffereth himself to be mocked, / and scourged, / and cast out, / and disowned" — each has an implied "to be." Standard grammatical ellipsis.
+2. **Possessive restart** — "and his/their/our" re-anchors to a new subject-relationship. "Through the power, and sufferings, and death of Christ, / and his resurrection and ascension" — "and his" starts a new possessive phrase.
+3. **Demonstrative** — "and that/this/these" signals a new specified noun phrase. "The devil, and death, and hell, / and that lake of fire and brimstone" — "that" marks a structurally distinct item.
+4. **Relative clause attached** — "which is/who was" adds a predication that gives the item independent grammatical weight.
+
+**Without such a signal:** bare "and [noun]" items merge. "His matchless power, and his wisdom, and his patience" — wait, this HAS repeated possessives ("and his"). But we reverted it. The distinction: the possessive in Mosiah 4:6 is REPEATED identically ("and his X, and his Y") — it's a formulaic pattern, not a restart. In Mosiah 18:2, the possessive SHIFTS from no possessive ("through the power, and sufferings, and death") to possessive ("and his resurrection") — a genuine grammatical shift marking a new phase.
+
+**Refined possessive test:** A possessive RESTART (appearing after items without it, or changing from one possessor to another) justifies a break. A repeated identical possessive ("and his X, and his Y, and his Z") is formulaic and does NOT alone justify stacking.
+
+**All three signals are mechanically testable — no judgment about register, escalation, or theological weight required.**
+
+---
+*Last updated: 2026-03-29*
