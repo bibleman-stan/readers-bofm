@@ -846,3 +846,64 @@ Alma 13:28 virtue list pivot applied to match the Mosiah 3:19 pattern. Both pass
 
 ---
 *Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-29
+
+#### Verb + "That" Audit: No Verb-Type Rule Exists
+
+A corpus-wide audit of every verb + "that" construction tested the hypothesis that declarative verbs (said, testified, covenanted) should break before "that" while perceptive/stative verbs (saw, knew, believed, supposed) should merge. **The hypothesis failed.**
+
+131 instances contradicted the proposed rule: 55 declarative verbs merged, 76 perceptive verbs broken. The pattern is NOT governed by verb type.
+
+**What the data actually shows:**
+
+1. **Speech attribution formulas** break — "he said:" / "he testified / that..." This is a genuine structural pattern (already settled). The verb functions as attribution, not as an ordinary predicate.
+
+2. **Discourse formulas** break consistently — "I would that ye should know / that..." (~25 instances, ALL broken), "do ye not remember / that..." (ALL broken), "when they saw / that..." (ALL broken). These are FORMULAIC breaks at formula boundaries, not verb-type boundaries.
+
+3. **Line length and breath** govern most other cases — long lines break before "that" because the preceding line is already a full breath unit. Short embedded verb+"that" constructions merge because there's no natural breath point.
+
+4. **No verb-type classification produces consistent results.** The "exclamation test" and "declarative vs perceptive" distinction were post-hoc rationalizations of editorial decisions actually driven by breath and formula, not grammar.
+
+**Conclusion:** Verb + "that" breaks are governed by the foundational test (atomic thought + breath unit) and the speech attribution rule, not by a verb-type classification. No new rule is warranted.
+
+#### Rules Reclassification: Rules vs. Editorial Principles
+
+An adversarial review of all 26 settled rules revealed that approximately 10 are genuinely mechanical (any trained editor would apply them identically), while approximately 6 depend on editorial judgment about register, escalation, theological weight, or narrative context. Both categories are legitimate, but they should be labeled honestly.
+
+**RULES (mechanical, reproducible, falsifiable):**
+- Rule 1: AICTP stays on one line
+- Rule 2: "It is expedient that" is a fixed idiom
+- Rule 5: Equivalence "or" restatement
+- Rule 6: Causal clauses break
+- Rule 7: Purpose clauses break
+- Rule 9: Never end on a conjunction
+- Rule 11: Never end on an article
+- Rule 12: Never split auxiliary from main verb
+- Rule 15: Vocative units indivisible
+- Rule 16: Dangling "that" after AICTP
+- Rule 17: "Caused that" complement integrity
+- Rule 18: Fixed idiom integrity
+- Rule 25: "And thus we see" editorial narrator formula
+- Rule 26: Adjective + "that" complement stays together
+
+**EDITORIAL PRINCIPLES (defensible, documented, but require judgment):**
+- Rule 14: Escalatory vs. restrictive qualifying phrases
+- Rule 20: Polysyndetic stacking (depends on "different register" judgment)
+- Rule 21: "According to" manner vs. source/authority
+- Rule 22: Divine title introducing vs. referencing
+- Rule 24: Definitional "which is" — equation vs. description
+
+**GUIDELINES (useful tendencies, not strict rules):**
+- Rule 4: Circumstantial clause pairing (restates the foundational test)
+- Rule 8: Framing devices attach to content (mostly true, some exceptions)
+- Rule 10: Verb + direct object on short phrases ("short" undefined)
+- Rule 13: Parallel structures stack (too broad — contradicted by same-register compression)
+- Rule 19: Anaphoric/cataphoric "that" (useful heuristic, edges are fuzzy)
+- Rule 23: Narrowing vocatives (data supports the pattern but sample is small)
+
+**Implication for the paper:** The mechanical rules provide the falsifiable, reproducible foundation for quantitative claims. The editorial principles provide the reading edition's character. The paper should claim only what the mechanical rules can support — editorial principles are methodology of the EDITION, not evidence for the STYLOMETRY.
+
+---
+*Last updated: 2026-03-29*
