@@ -207,3 +207,46 @@ Utility script for automated sense-line rebalancing:
 
 ---
 *Last updated: 2026-03-29*
+
+---
+### Update — 2026-03-29 (second entry)
+
+#### Adversarial Methodology Audit — Major Reverts and Refinements
+
+Conducted an adversarial review of all 26 colometric rules. Key findings:
+
+**Rules reclassified into three tiers:** RULES (mechanical, reproducible), EDITORIAL PRINCIPLES (defensible but judgment-dependent), GUIDELINES (useful tendencies). See 10-colometry.md for full reclassification.
+
+**Verb + "that" audit:** Tested 131 instances. No verb-type rule exists — the proposed "declarative vs perceptive" distinction was a pseudo-rule. Breaks are governed by speech attribution formulas, line length/breath, and the foundational test. The "I would that ye should [verb]" formula is 50/50 broken/merged — NOT a consistent pattern.
+
+**Mechanical validation test:** Voice differentiation IS present in the text — 1.38 words/line spread between Abinadi (7.71) and Mormon Narrative (9.09). Standard deviation consistent across all sections (2.87-3.19), confirming the differentiation is in the TEXT, not in our editorial method.
+
+**Compound list break signals — new grammatical criterion replacing Rule 20:**
+Breaks within compound lists justified ONLY by grammatical signals:
+1. Elided auxiliary + stacked participles (each is implied predication)
+2. Possessive restart ("and his" after items without possessive)
+3. Demonstrative ("and that/this/these")
+4. Relative clause attached to the item
+
+Without such signals, bare "and [noun]" items are compound objects of one grammatical act and MERGE.
+
+**Reverts applied (editorial breaks that lacked grammatical justification):**
+- Mosiah 4:6 — divine attribute stack (power/wisdom/patience/long-suffering) merged back. Abstract nouns, no structural signals.
+- Mosiah 5:15 — divine attribute stack (wisdom/power/justice/mercy) merged back. Same.
+- Mosiah 3:19 — "full of love" merged back with "submissive, meek, humble, patient." All predicate adjectives of one participle.
+- Alma 13:28 — same virtue list pattern, merged back.
+- Alma 7:10 — "a precious and chosen vessel" merged back with "she being a virgin." Both appositional noun phrases, same grammatical slot.
+- Mosiah 18:2 — noun objects of "through" merged. Break retained at possessive restart ("and his resurrection").
+- 2 Nephi 9:19 — break retained at demonstrative "that" ("and that lake of fire").
+- 2 Nephi 9:26 — compound appositive merged after "that awful monster" frame.
+
+**Retained breaks that pass grammatical tests:**
+- Mosiah 15:5 passion verbs — elided auxiliary, each participle is implied predication
+- Moroni 7:45 charity verbs — elided subject, each verb is independent predication
+- Mosiah 18:2 at "and his resurrection" — possessive restart
+- 2 Nephi 9:19 at "and that lake of fire" — demonstrative signal
+
+**Methodological commitment:** Do not construct grammatical categories to justify editorial instincts. If a break can't be named in standard grammatical terms, it's an editorial decision — label it honestly.
+
+---
+*Last updated: 2026-03-29*

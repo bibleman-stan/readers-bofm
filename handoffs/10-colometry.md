@@ -977,3 +977,26 @@ In a compound list governed by one preposition or verb, bare "and [noun]" items 
 
 ---
 *Last updated: 2026-03-29*
+
+---
+### Update — 2026-03-29 (fourth entry)
+
+#### Reverted Editorial Breaks That Lacked Grammatical Justification
+
+Applied the compound list break signals test to all remaining editorial principle breaks. Reverted those without genuine grammatical signals:
+
+- **Mosiah 3:19** — "full of love" merged back with "submissive, meek, humble, patient" — all predicate adjectives of one participle, no structural signal separating them. "Willing to submit..." stays broken (full participial phrase with own object).
+- **Alma 13:28** — same pattern, merged back.
+- **Alma 7:10** — "a precious and chosen vessel" merged back with "she being a virgin" — both appositional noun phrases in the same slot. "Who shall be overshadowed" stays broken (own verb = genuine predication).
+- **Mosiah 18:2** — noun objects of "through" merged. Break at possessive restart ("and his resurrection") retained — genuine grammatical signal.
+- **2 Nephi 9:26** — compound appositive merged after "that awful monster" frame. No internal grammatical signals justified stacking.
+
+#### Retained Breaks That Pass Grammatical Tests
+
+- **Mosiah 15:5** — "mocked / scourged / cast out / disowned" — elided auxiliary "to be," each participle is an implied predication. PASSES.
+- **Moroni 7:45** — "beareth / believeth / hopeth / endureth all things" — elided subject "charity," each verb is an independent predication. PASSES.
+- **2 Nephi 9:19** — break at "and that lake of fire" — demonstrative "that" is a grammatical signal. PASSES.
+- **Mosiah 18:2** — break at "and his resurrection" — possessive restart. PASSES.
+
+---
+*Last updated: 2026-03-29*
