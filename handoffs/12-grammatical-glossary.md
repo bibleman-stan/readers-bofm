@@ -115,9 +115,9 @@ A relative clause that makes a theological equation or reveals what something IS
 - **Example (merge):** "a life which is endless" — attribute.
 
 ### Editorial Narrator Formula
-A construction where Mormon (the narrator) steps back from the story to address the reader directly — most commonly "And thus we see that..."
-- **Colometric use:** "And thus we see" stands on its own line; "that [lesson]" begins the next (Rule 25). This is Mormon's signature compositional marker.
-- **Example:** "And thus we see / that the Spirit of the Lord began to withdraw from the Nephites."
+A construction where Mormon (the narrator) steps back from the story to address the reader directly — most commonly "And thus we see that..." Recognized in discourse analysis as a "metatextual discourse marker" (Hyland 2005) or "narratorial intrusion" (Genette 1980). Variants include "Now we see that," "therefore we see that," "thus we see that."
+- **Colometric use:** ~~Former Rule 25 broke after "we see."~~ **Eliminated 2026-03-29.** "We see" without its complement is an incomplete thought; the formula merges with its "that" clause. The formula remains a valid stylometric marker (concentrated in Alma/Helaman, near-zero in small plates) even though it no longer triggers a break.
+- **Example:** "And thus we see that the Spirit of the Lord began to withdraw from the Nephites."
 
 ---
 

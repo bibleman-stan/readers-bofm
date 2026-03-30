@@ -784,16 +784,17 @@ Impact: 31 verses across all 15 books now correctly retain their purpose/content
 
 Corpus: 65 definitional "which is/are" clauses identified. 52 already broken (80%), 5 newly broken, 8 correctly merged as descriptive.
 
-#### Rule 25: "And Thus We See" — Editorial Narrator Formula
+#### Rule 25: ~~"And Thus We See" — Editorial Narrator Formula~~ **ELIMINATED 2026-03-29**
 
-"And thus we see" is Mormon's signature editorial intrusion — the narrator stepping back from the story to draw a lesson for the reader. When followed by "that [lesson]," the formula earns its own line:
+**Former rule:** "And thus we see" earns its own line as an editorial narrator formula, with "that [lesson]" beginning the next line.
 
-- "And thus we see / that there was no possible chance..." 
-- "And thus we see / that the Spirit of the Lord began to withdraw..."
+**Reason for elimination:** "We see" without its complement clause is an incomplete thought — it fails the atomic thought test. While discourse analysts (Hyland 2005, Schiffrin 1987) would recognize "And thus we see" as a metatextual discourse marker with its own intonational phrase, we privilege syntactic completeness over discourse-marker status. The prosodic pause after "we see" is real but not doing significant enough work to override the foundational test.
 
-"And thus we see" is complete as an editorial gesture (the narrator addresses the reader). "That [lesson]" is the content clause — what we are supposed to see. Breaking them makes Mormon's compositional architecture visible.
+**Methodological principle established:** When discourse-marker status (prosody) and syntactic completeness (atomic thought) conflict, syntactic completeness governs. Prosodic breaks can override syntax only when the break is clear, significant, and does unambiguous rhetorical or structural work. This applies equally to "And thus we see," "Now we see," "therefore we see," and all variants of the conclusory "we see" formula.
 
-~20 instances corpus-wide. Concentrated in Alma and Helaman (Mormon's abridgment). Near-zero in small plates. This distribution is itself quantifiable data for the colometric stylometry paper — "and thus we see" frequency is a narrator-voice marker.
+**Action taken:** 13 instances merged across 1 Nephi (2), Alma (6), Helaman (5), Ether (1). All produce reasonable breath-length lines (8–14 words).
+
+**Note:** The *distribution* of "and thus we see" remains quantifiable data for stylometric analysis — the formula's frequency is still a narrator-voice marker, even though it no longer triggers a line break.
 
 ---
 *Last updated: 2026-03-26*
@@ -813,7 +814,7 @@ When an adjective requires a "that" clause as its complement, they stay on the s
 
 **Break (verb is complete without "that"):**
 - "he hath said / that no unclean thing..." — "said" is complete; "that" introduces content
-- "and thus we see / that all mankind were fallen" — "we see" is complete; "that" introduces the lesson
+- "and thus we see that all mankind were fallen" — "we see" + complement merges (Rule 25 eliminated; verb is syntactically incomplete without "that" clause)
 
 **The distinction:** Adjectives (possible, expedient, desirous, necessary, needful, impossible) REQUIRE their "that" clause to have any meaning — they are incomplete without it. Verbs of speaking/perceiving (said, testified, see, know) are complete as speech acts even without specifying what was said/seen/known.
 
@@ -885,7 +886,7 @@ An adversarial review of all 26 settled rules revealed that approximately 10 are
 - Rule 16: Dangling "that" after AICTP
 - Rule 17: "Caused that" complement integrity
 - Rule 18: Fixed idiom integrity
-- Rule 25: "And thus we see" editorial narrator formula
+- ~~Rule 25: "And thus we see" editorial narrator formula~~ **ELIMINATED** — verb + complement is syntactically incomplete; foundational test overrides discourse-marker status
 - Rule 26: Adjective + "that" complement stays together
 
 **EDITORIAL PRINCIPLES (defensible, documented, but require judgment):**
@@ -997,6 +998,38 @@ Applied the compound list break signals test to all remaining editorial principl
 - **Moroni 7:45** — "beareth / believeth / hopeth / endureth all things" — elided subject "charity," each verb is an independent predication. PASSES.
 - **2 Nephi 9:19** — break at "and that lake of fire" — demonstrative "that" is a grammatical signal. PASSES.
 - **Mosiah 18:2** — break at "and his resurrection" — possessive restart. PASSES.
+
+---
+*Last updated: 2026-03-29*
+
+---
+### Update — 2026-03-29 (fifth entry)
+
+#### Rule 25 Eliminated: "And Thus We See" No Longer Breaks
+
+The editorial narrator formula "And thus we see / that [lesson]" has been re-merged across the corpus. "We see" without its complement clause is an incomplete thought — it fails the atomic thought test, same as "it is expedient" without "that."
+
+While discourse analysis (Hyland 2005 *Metadiscourse*; Schiffrin 1987 *Discourse Markers*; Genette 1980 *Narrative Discourse*) confirms that "And thus we see" IS a metatextual discourse marker with its own intonational phrase, we privilege syntactic completeness over discourse-marker status.
+
+**Methodological principle: syntax vs. prosody tiebreaker.** When discourse-marker status (prosody) and syntactic completeness (atomic thought) conflict, syntactic completeness governs unless the prosodic break is doing clear, significant, unambiguous rhetorical or structural work. The small pause after "we see" doesn't change meaning or reveal hidden structure — it's a prosodic instinct, not a structural revelation.
+
+This applies to ALL variants: "And thus we see," "Now we see," "therefore we see," "thus we see." All are verb + complement clause, governed by the foundational test.
+
+**13 instances merged:** 1 Nephi 16:29, 17:3; Alma 12:21, 12:22, 24:19, 30:60, 42:4, 42:14; Helaman 6:34, 6:35, 6:36, 6:40, 12:3; Ether 14:25.
+
+**Note:** The formula's *distribution* remains valid stylometric data. "And thus we see" frequency is still a narrator-voice marker — the formula just no longer triggers a line break.
+
+#### Foundational Test Hierarchy Formalized
+
+1. **Syntax (atomic thought)** — always governs unless overridden
+2. **Prosody (atomic breath)** — can override syntax only when break is clear and significant
+3. **Editorial instinct** — flags candidates but doesn't decide
+
+This hierarchy resolves the tension between the two prongs of the foundational test. Both are valid, but when they conflict, the atomic thought test is the stronger prong.
+
+#### Linguistic Audit of All Rules Completed
+
+Full audit saved to `research/colometry-rules-audit.md`. Results: 20 CONFIRMED, 7 PARTIALLY CONFIRMED, 0 UNCONFIRMED, 0 PROBLEMATIC. Key citations integrated. The PARTIALLY CONFIRMED rules all have real linguistic grounding but use non-standard terminology or require editorial judgment. None contradicts established grammar.
 
 ---
 *Last updated: 2026-03-29*
