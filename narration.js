@@ -87,7 +87,7 @@ const NARRATION = (() => {
     // Try hash: #enos-1, #1nephi-3, etc.
     const hash = window.location.hash.replace('#', '');
     if (hash) {
-      const m = hash.match(/^(.+?)-(\d+)$/);
+      const m = hash.match(/^(.+?)-(\d+)(?:-\d+)?$/);
       if (m) return { bookId: m[1], chapter: parseInt(m[2]) };
       // Single-chapter books: #enos-1 or just the book loaded
     }
