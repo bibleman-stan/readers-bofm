@@ -666,6 +666,22 @@ IRREGULAR_PAST = {
     'establish': 'established', 'appoint': 'appointed', 'commence': 'commenced',
     'inhabit': 'inhabited', 'possess': 'possessed', 'multiply': 'multiplied',
     'have': 'had', 'beat': 'beat', 'cut': 'cut', 'overthrow': 'overthrew',
+    'withhold': 'withheld', 'uphold': 'upheld', 'behold': 'beheld',
+    'withstand': 'withstood', 'overcome': 'overcame', 'overtake': 'overtook',
+    'fulfil': 'fulfilled', 'traffic': 'trafficked', 'fellowship': 'fellowshipped',
+    'arise': 'arose', 'bear': 'bore', 'become': 'became', 'deal': 'dealt',
+    'dig': 'dug', 'feel': 'felt', 'forbear': 'forbore', 'forget': 'forgot',
+    'get': 'got', 'lie': 'lay', 'rend': 'rent', 'shed': 'shed',
+    'shine': 'shone', 'sing': 'sang', 'sink': 'sank', 'slay': 'slew',
+    'sleep': 'slept', 'sling': 'slung', 'speed': 'sped', 'steal': 'stole',
+    'thrust': 'thrust', 'tread': 'trod', 'hang': 'hung', 'let': 'let',
+    'smite': 'smote', 'swell': 'swelled', 'light': 'lit',
+    # Multi-syllable CVC doublers (stress on final syllable)
+    'commit': 'committed', 'compel': 'compelled', 'confer': 'conferred',
+    'submit': 'submitted', 'occur': 'occurred', 'refer': 'referred',
+    # Multi-syllable NON-doublers (stress NOT on final syllable)
+    'enter': 'entered', 'offer': 'offered', 'cover': 'covered',
+    'open': 'opened', 'utter': 'uttered', 'murder': 'murdered',
     'cleave': 'cleft', 'sow': 'sowed', 'bestow': 'bestowed',
     'overshadow': 'overshadowed', 'sorrow': 'sorrowed',
     'buy': 'bought', 'joy': 'rejoiced',
@@ -1027,6 +1043,11 @@ def apply_swaps(text, swap_list):
                 'i', 'it', 'they', 'she', 'he', 'we', 'so', 'as', 'again', 'frankly',
                 'still', 'do', 'molten', 'this', 'that', 'these', 'those',
                 'now', 'throughout', 'there', 'here', 'much', 'more',
+                # non-verbs caught by "did X" pattern
+                'according', 'because', 'boldly', 'for', 'himself', 'in',
+                'let', 'many', 'no', 'of', 'truly', 'two', 'upon',
+                'utterly', 'was', 'while', 'wilfully', 'before', 'which', 'who',
+                'thy', 'ye', 'fell', 'engraven',
                 # title nouns (subject between aux and verb: "did king Benjamin teach")
                 'king', 'captain', 'chief', 'judge', 'prophet', 'queen',
                 # proper nouns (inverted subject: "did Alma teach")
@@ -1041,6 +1062,12 @@ def apply_swaps(text, swap_list):
         if verb in IRREGULAR_PAST: past = IRREGULAR_PAST[verb]
         elif verb.endswith('e'): past = verb + 'd'
         elif verb.endswith('y') and len(verb)>1 and verb[-2] not in 'aeiou': past = verb[:-1] + 'ied'
+        elif (len(verb) >= 3 and len(verb) <= 5
+              and verb[-1] not in 'aeiouwxy'
+              and verb[-2] in 'aeiou' and verb[-3] not in 'aeiou'):
+            # CVC pattern for SHORT words: double final consonant (stop→stopped, rob→robbed)
+            # Only short words — multi-syllable doublers (commit, compel) go in IRREGULAR_PAST
+            past = verb + verb[-1] + 'ed'
         else: past = verb + 'ed'
         idx = len(placeholders); sent = f"\x00D{idx}\x00"
         placeholders.append((sent, full, past)); return sent
