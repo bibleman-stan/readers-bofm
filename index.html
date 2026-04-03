@@ -4176,12 +4176,16 @@ function flushAndReload() {
    * e.g. "according to ? faith" or "according to * faith"
    */
   function hasWildcards(query) {
-    return /(?:^|\s)[?*](?:\s|$)/.test(query);
+    // Wildcards only active inside a quoted phrase: "according to ? faith"
+    var q = query.trim();
+    if (q.charAt(0) !== '"' || q.charAt(q.length - 1) !== '"') return false;
+    var inner = q.slice(1, -1);
+    return /(?:^|\s)[?*](?:\s|$)/.test(inner);
   }
 
   function buildWildcardRegex(query) {
-    // Split on whitespace, convert ? and * tokens to regex patterns
-    var words = query.trim().split(/\s+/);
+    // Strip surrounding quotes, then split on whitespace
+    var words = query.trim().replace(/^"|"$/g, '').split(/\s+/);
     var parts = [];
     var highlightParts = [];
     for (var i = 0; i < words.length; i++) {
