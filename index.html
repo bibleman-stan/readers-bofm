@@ -4540,9 +4540,13 @@ function flushAndReload() {
   var searchReturnState = null;
 
   function savePositionForReturn() {
+    // Read current position from the hash (always kept in sync by showChapter)
+    var hash = window.location.hash.replace('#', '');
+    var m = hash.match(/^(.+?)-(\d+)(?:-\d+)?$/);
+    if (!m) return;
     searchReturnState = {
-      bookId: window.currentBook,
-      chapter: window.currentChapterMap && window.currentBook ? window.currentChapterMap[window.currentBook] : 1,
+      bookId: m[1],
+      chapter: parseInt(m[2]),
       scrollY: window.scrollY
     };
   }
