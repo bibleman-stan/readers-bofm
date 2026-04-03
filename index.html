@@ -827,6 +827,34 @@
   .float-nav-next { right: 4px; }
   body.light-mode .float-nav { background: rgba(220,220,220,0.7); color: #666; }
   body.light-mode .float-nav:hover { background: rgba(200,200,200,0.9); color: #333; }
+
+  /* Search return button */
+  #search-return-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(40,40,40,0.9);
+    color: #7cafc2;
+    border: 1px solid rgba(124,175,194,0.3);
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-size: 0.85em;
+    font-family: inherit;
+    cursor: pointer;
+    z-index: 900;
+    white-space: nowrap;
+    transition: opacity 0.3s;
+  }
+  #search-return-btn.visible { display: block; }
+  #search-return-btn:hover { background: rgba(60,60,60,0.95); }
+  body.light-mode #search-return-btn {
+    background: rgba(240,240,240,0.95);
+    color: #4a7a8c;
+    border-color: rgba(74,122,140,0.3);
+  }
+  body.light-mode #search-return-btn:hover { background: rgba(220,220,220,1); }
   @media (max-width: 600px) {
     .float-nav { width: 26px; height: 44px; line-height: 44px; font-size: 1.1em; }
   }
@@ -2098,6 +2126,7 @@
 <!-- Floating chapter arrows (desktop) -->
 <a id="float-prev" class="float-nav float-nav-prev" href="#" onclick="floatNavPrev(); return false;">&lsaquo;</a>
 <a id="float-next" class="float-nav float-nav-next" href="#" onclick="floatNavNext(); return false;">&rsaquo;</a>
+<button id="search-return-btn" onclick="searchReturn()">&#8592; Return to previous position</button>
 
 <!-- Progress line -->
 <div class="progress-line" id="progress"></div>
@@ -3346,6 +3375,11 @@
   var lastHashWeSet = '';  // Track hash we set to avoid circular calls
 
   window.showChapter = function(bookId, chNum) {
+    // Hide search return button on manual navigation (not search jumps)
+    if (!window._pendingVerseScroll) {
+      var retBtn = document.getElementById('search-return-btn');
+      if (retBtn) retBtn.classList.remove('visible');
+    }
     // Hide about page if visible
     hideAboutPage();
     // Hide welcome/landing
@@ -3981,6 +4015,7 @@ function flushAndReload() {
   }
 
   var lastSearchForms = [];  // the expanded word forms for highlighting
+  var lastWildcardData = null;  // wildcard regex data for highlighting
 
   /* ── Boolean query detection and parsing ── */
   function hasBooleanOps(query) {
@@ -4136,6 +4171,38 @@ function flushAndReload() {
     return { matcher: matcher, highlightTerms: highlightTerms };
   }
 
+  /* ── Wildcard query support ──
+   * ? = exactly one word, * = one or more words
+   * e.g. "according to ? faith" or "according to * faith"
+   */
+  function hasWildcards(query) {
+    return /(?:^|\s)[?*](?:\s|$)/.test(query);
+  }
+
+  function buildWildcardRegex(query) {
+    // Split on whitespace, convert ? and * tokens to regex patterns
+    var words = query.trim().split(/\s+/);
+    var parts = [];
+    var highlightParts = [];
+    for (var i = 0; i < words.length; i++) {
+      if (words[i] === '?') {
+        parts.push('\\S+');
+        highlightParts.push('\\S+');
+      } else if (words[i] === '*') {
+        parts.push('\\S+(?:\\s+\\S+)*');
+        highlightParts.push('\\S+(?:\\s+\\S+)*');
+      } else {
+        var escaped = words[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        parts.push(escaped);
+      }
+    }
+    return {
+      regex: new RegExp('\\b' + parts.join('\\s+') + '\\b', 'gi'),
+      // For highlighting, build pattern that captures the whole matched phrase
+      highlightRegex: new RegExp('\\b(' + parts.join('\\s+') + ')\\b', 'gi')
+    };
+  }
+
   function runSearch(query) {
     if (!searchIndex) return;
     lastQuery = query;
@@ -4143,12 +4210,17 @@ function flushAndReload() {
     activeBook = -1;
     saveRecentSearch(query);
 
-    var isBoolean = hasBooleanOps(query);
+    var isWildcard = hasWildcards(query);
+    var isBoolean = !isWildcard && hasBooleanOps(query);
     var isExact = /^".*"$/.test(query.trim());
     var searchTerms;
     var boolMatcher = null;
+    var wildcardData = null;
 
-    if (isBoolean) {
+    if (isWildcard) {
+      wildcardData = buildWildcardRegex(query);
+      lastSearchForms = [];  // highlighting handled by wildcardData.highlightRegex
+    } else if (isBoolean) {
       // Boolean mode: parse into matcher
       var parsed = parseBooleanQuery(query);
       boolMatcher = parsed.matcher;
@@ -4179,7 +4251,11 @@ function flushAndReload() {
       var v = searchIndex.verses[i];
       var matched = false;
 
-      if (boolMatcher) {
+      if (wildcardData) {
+        // Wildcard mode: test regex against verse text
+        wildcardData.regex.lastIndex = 0;
+        matched = wildcardData.regex.test(v.t);
+      } else if (boolMatcher) {
         // Boolean mode
         matched = boolMatcher(v.t);
       } else {
@@ -4204,6 +4280,7 @@ function flushAndReload() {
     }
     lastHits = hits;
     lastBookCounts = bookCounts;
+    lastWildcardData = wildcardData;
     renderAll();
   }
 
@@ -4409,6 +4486,11 @@ function flushAndReload() {
   function highlightText(text, query) {
     if (!query) return escapeHtml(text);
     var escaped = escapeHtml(text);
+    // Wildcard mode: use the wildcard highlight regex directly
+    if (lastWildcardData && lastWildcardData.highlightRegex) {
+      lastWildcardData.highlightRegex.lastIndex = 0;
+      return escaped.replace(lastWildcardData.highlightRegex, '<span class="search-highlight">$1</span>');
+    }
     // Build regex from all matched forms (stem-expanded or exact)
     var forms = lastSearchForms.length > 0 ? lastSearchForms : [query.toLowerCase()];
     var patterns = forms.map(function(f) {
@@ -4450,7 +4532,43 @@ function flushAndReload() {
     return false;
   }
 
+  // ── Search return button: remembers position before a search jump ──
+  var searchReturnState = null;
+
+  function savePositionForReturn() {
+    searchReturnState = {
+      bookId: window.currentBook,
+      chapter: window.currentChapterMap && window.currentBook ? window.currentChapterMap[window.currentBook] : 1,
+      scrollY: window.scrollY
+    };
+  }
+
+  function showReturnButton() {
+    var btn = document.getElementById('search-return-btn');
+    if (!btn) return;
+    btn.classList.add('visible');
+  }
+
+  function hideReturnButton() {
+    var btn = document.getElementById('search-return-btn');
+    if (btn) btn.classList.remove('visible');
+    searchReturnState = null;
+  }
+
+  window.searchReturn = function() {
+    if (!searchReturnState) return;
+    var st = searchReturnState;
+    hideReturnButton();
+    if (typeof switchBook === 'function') {
+      switchBook(st.bookId, st.chapter);
+      // Restore scroll position after chapter renders
+      setTimeout(function() { window.scrollTo({ top: st.scrollY, behavior: 'smooth' }); }, 200);
+    }
+  };
+
   function navigateToVerse(bookId, chapter, verse) {
+    // Save current position before jumping
+    savePositionForReturn();
     closeSearch();
     if (typeof switchBook === 'function') {
       // Ensure welcome/about pages are dismissed so book content is visible
@@ -4467,6 +4585,8 @@ function flushAndReload() {
         if (scrollToVerse(bookId, chapter, verse) || attempts >= maxAttempts) {
           clearInterval(checker);
           window._pendingVerseScroll = null;
+          // Show return button after navigation completes
+          showReturnButton();
         }
       }, 100);
     }
