@@ -268,6 +268,17 @@ COMPOUND_SWAPS = [
     ("fruit of the loins", "fruit of the lineage"),
     ("seed of thy loins", "seed of your lineage"),
     ("spokesman of thy loins", "spokesman of your lineage"),
+    # ── "inequality" → "contrast between" (phrase-level, preposition varies) ──
+    ("inequality among the people", "contrast between the people"),
+    ("all their inequality", "all the contrast between them"),
+    ("no inequality among them", "no contrast between them"),
+    ("inequality of man", "contrast between men"),
+    ("this inequality", "this contrast"),
+    ("a great inequality", "a great contrast"),
+    # ── "check" as restraint/halt ──
+    ("a great check", "a great halt"),
+    ("were checked as to", "were halted in"),
+    ("to check them", "to stop them"),
     # ── Pronoun collision: thee/thou adjacency → "you, you" (insert comma) ──
     ("unto thee ye", "to you, you"),
     ("from thee thou", "from you, you"),
