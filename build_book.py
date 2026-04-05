@@ -150,11 +150,16 @@ COMPOUND_SWAPS = [
     ("fall exceedingly", "fall very"), ("fell exceedingly", "fell very"),
     ("exercising exceedingly great", "exercising tremendous"),
     # (notwithstanding+being phrases handled in special-case logic below)
-    # ── Past-tense -eth in narrative context (2 Ne 31:7,9) ──
-    ("he showeth unto the children of men", "he showed unto the children of men"),
-    ("he humbleth himself before the Father", "he humbled himself before the Father"),
-    ("and witnesseth unto the Father", "and witnessed unto the Father"),
-    ("it showeth unto the children of men", "it showed unto the children of men"),
+    # ── Imperative + emphatic pronoun → drop pronoun ──
+    ("Follow thou me", "Follow me"),
+    ("come ye to the waters", "come to the waters"),
+    ("come ye and let us", "come and let us"),
+    ("come ye out from", "come out from"),
+    ("hear ye the words", "hear the words"),
+    ("hear ye him", "hear him"),
+    ("Hearken unto us, and hear ye our precept", "Hearken unto us, and hear our precept"),
+    ("judge ye--", "judge--"),
+    ("judge ye;", "judge;"),
     # ── Participle fixes: have/has/had + archaic past → correct past participle ──
     ("hast beheld", "have seen"), ("hath beheld", "has seen"),
     ("had beheld", "had seen"), ("have beheld", "have seen"),
