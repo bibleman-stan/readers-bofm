@@ -149,6 +149,12 @@ COMPOUND_SWAPS = [
     ("destroyed exceedingly", "destroyed very"),
     ("fall exceedingly", "fall very"), ("fell exceedingly", "fell very"),
     ("exercising exceedingly great", "exercising tremendous"),
+    # (notwithstanding+being phrases handled in special-case logic below)
+    # ── Past-tense -eth in narrative context (2 Ne 31:7,9) ──
+    ("he showeth unto the children of men", "he showed unto the children of men"),
+    ("he humbleth himself before the Father", "he humbled himself before the Father"),
+    ("and witnesseth unto the Father", "and witnessed unto the Father"),
+    ("it showeth unto the children of men", "it showed unto the children of men"),
     # ── Participle fixes: have/has/had + archaic past → correct past participle ──
     ("hast beheld", "have seen"), ("hath beheld", "has seen"),
     ("had beheld", "had seen"), ("have beheld", "have seen"),
@@ -874,6 +880,29 @@ def apply_swaps(text, swap_list):
             placeholders.append((sentinel, archaic, modern)); continue
         # notwithstanding: context-sensitive
         if archaic.lower() == 'notwithstanding':
+            # First: handle "notwithstanding X being" absolute participials as phrase swaps
+            _notw_phrases = [
+                (r'notwithstanding he being holy', 'even though he was holy'),
+                (r'notwithstanding they being led', 'even though they were led'),
+                (r'notwithstanding there being many churches', 'even though there were many churches'),
+                (r'notwithstanding it being a small voice', 'even though it was a small voice'),
+                (r'notwithstanding I being young, was large in stature', 'even though I was young, I was large in stature'),
+                (r'notwithstanding their number being so much greater', 'even though their number was so much greater'),
+                (r'notwithstanding the Lamanites being cut off', 'even though the Lamanites were cut off'),
+            ]
+            for phrase, repl in _notw_phrases:
+                pat = re.compile(re.escape(phrase), re.IGNORECASE)
+                for pm in pat.finditer(result):
+                    orig_text = pm.group(0)
+                    # Match capitalization of replacement to original
+                    r_text = repl
+                    if orig_text[0].isupper():
+                        r_text = repl[0].upper() + repl[1:]
+                    idx = len(placeholders); sent = f"\x00N{idx}\x00"
+                    placeholders.append((sent, orig_text, r_text))
+                    result = result[:pm.start()] + sent + result[pm.end():]
+                    break  # only one per line
+            # Then: single-word context-sensitive swap for remaining instances
             cap = archaic[0].isupper()
             def _notw_replace(m, _cap=cap, _archaic=archaic):
                 after = result[m.end():m.end()+20].lstrip()
