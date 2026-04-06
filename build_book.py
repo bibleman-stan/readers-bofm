@@ -896,6 +896,21 @@ def apply_swaps(text, swap_list):
             result = result.replace(archaic, sentinel)
             placeholders.append((sentinel, archaic, modern))
 
+    # ---- Imperative + emphatic pronoun pre-pass (literal match, before ye→you) ----
+    # These contain punctuation so \b-based regex won't match them.
+    for archaic, modern in swap_list:
+        # Match compound swaps that contain ye/thou + punctuation
+        if ('ye,' in archaic or 'ye ' in archaic or 'ye!' in archaic
+            or 'ye;' in archaic or 'ye--' in archaic
+            or 'thou ' in archaic or 'thou,' in archaic):
+            # Skip non-imperative compound swaps (AICTP, notwithstanding, etc.)
+            if 'it came to pass' in archaic or 'notwithstanding' in archaic.lower():
+                continue
+            if archaic in result:
+                sentinel = f"\x00I{len(placeholders)}\x00"
+                result = result.replace(archaic, sentinel, 1)
+                placeholders.append((sentinel, archaic, modern))
+
     # ---- Special-case swaps (custom regex logic) ----
     # Build a quick lookup from swap_list for special words
     _special_lookup = {}
