@@ -1033,3 +1033,74 @@ Full audit saved to `research/colometry-rules-audit.md`. Results: 20 CONFIRMED, 
 
 ---
 *Last updated: 2026-03-29*
+
+---
+### Update — 2026-04-11
+
+#### Four Criteria for Sense-Line Breaks (Definitive Formulation)
+
+Sense-line breaks are governed by four criteria, applied in a strict hierarchy:
+
+**1. English syntax / clause rules (FLOOR — never violate)**
+
+Syntax does two things: it *permits* breaks (clause boundaries, predication boundaries, restated prepositions) and it *forbids* breaks (verb + obligatory complement, article + noun, auxiliary + main verb). The syntactic bond rules are the floor. You never break where syntax says no, regardless of what the other three criteria suggest.
+
+Key principle: **obligatory vs. optional complement clauses.** Verbs that require their "that" clause to be semantically complete ("suppose," "understand," "show," "command") must not break before "that." Verbs that are complete without it ("say," "testify," "believe," "know") may break. The period test: can you put a period after the verb phrase and have a grammatically complete sentence? If not, the complement is obligatory and the break is forbidden.
+
+**2. Atomic idea (PRIMARY criterion)**
+
+Each line holds one processable unit of meaning. The reader doesn't need to carry it forward and resolve it against the next line to understand it. When breath and thought conflict, thought wins. A line that fails the atomic thought test cannot be rescued by being short.
+
+**3. New mental image (STRONG signal)**
+
+When a new picture appears — a new actor, a new scene, a new action — that's a break candidate. Each line should paint a single image in the mind. If a line contains two distinct images, it's a candidate for splitting. Operates within syntactic permission — the image test never overrides a syntactic bond.
+
+**4. Natural breath pause (SECONDARY — tiebreaker)**
+
+Each line can be delivered in one breath at natural reading pace. This is the weakest criterion — it decides *whether* to take a break that grammar permits and the other criteria leave ambiguous. A prosodic pause alone, without a thought boundary or image boundary, is not sufficient to justify a break unless it is clear and significant.
+
+**The hierarchy in practice:**
+
+```
+Criterion 1 (syntax)  — hard floor, never violate
+Criterion 2 (thought) — primary, governs when criteria conflict
+Criterion 3 (image)   — strong signal, operates within syntactic permission
+Criterion 4 (breath)  — secondary, tiebreaker when thought/image are ambiguous
+```
+
+This replaces the earlier two-prong "atomic thought OR atomic breath" formulation with a clearer four-part hierarchy.
+
+#### Obligatory vs. Optional Complement Rule (New)
+
+Formalized from verb valency analysis (Quirk et al. 1985, §16.31-35):
+
+**Break before "that" only when it introduces an OPTIONAL complement clause.** If the preceding verb requires the "that" clause to be semantically complete, the break is forbidden.
+
+| Verb class | Examples | Complement type | Break? |
+|-----------|----------|----------------|--------|
+| Reporting/speech | say, testify, declare, prophesy | Optional | YES |
+| Perception | see, hear, believe, know | Optional | YES |
+| Cognitive (obligatory) | suppose, understand, imagine | Obligatory | NO |
+| Causative | cause, command, grant | Obligatory | NO |
+| Demonstrative | show (prove sense), witness | Obligatory | NO |
+
+Applied: 23 suppose/understand/granted merges, 8 commanded merges, 5 desire merges.
+
+#### Semantic Grouping Principle for Compound Lists (New)
+
+Breaks in compound lists should fall at **semantic domain boundaries**, not arbitrarily. Items sharing a closer semantic relationship stay on the same line.
+
+**Recognized semantic pairings:** gold+silver, copper+brass, iron+steel, flocks+herds, swords+cimeters, famine+pestilence, women+children, statutes+judgments+commandments, murder+plunder+steal, whoredoms+abominations, power+wisdom+understanding.
+
+Applied: 17 semantic regrouping fixes + 19 same-register merges across all books.
+
+#### Rule 25 Eliminated
+
+"And thus we see" merged with complement clause. "We see" without its complement is incomplete — fails atomic thought test. 13 merges applied.
+
+#### Date/Colophon Formulas Always One Line
+
+Editorial timestamps are bureaucratic formulas, not rhetoric. 34 merges applied across Alma and Helaman.
+
+---
+*Last updated: 2026-04-11*
