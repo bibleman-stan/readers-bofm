@@ -39,12 +39,32 @@ A 19-pass automated tool that takes Skousen's v1 breaks and applies mechanical r
 
 These are editorial rules established through discussion and applied consistently.
 
-### 1. The Wayyehi Rule
-**"And it came to pass that" stays on one line as a fixed formula — never break it.**
+### 1. The Wayyehi Rule (Revised 2026-04-11)
+**"And it came to pass" is an indivisible discourse marker that opens a Front-End Frame (FEF).**
 
-This is the Book of Mormon's signature narrative formula (Hebrew *wayyehi*). It functions as a single discourse marker, not a compound clause. Breaking it mid-phrase ("And it came to pass / that...") destroys the formulaic quality and creates a false enjambment.
+The original rule stated: "And it came to pass that stays on one line — never break it." This was our first settled principle, written before FEFs were understood. It conflated two things: (a) formula integrity (don't break inside the formula) and (b) FEF behavior (the frame stays together until the main verb resolves).
 
-Applied to all variants: "And it came to pass," "And it came to pass that," "And now it came to pass that," etc.
+The revised rule:
+- **The formula itself is indivisible.** Never break "And it came to pass" mid-phrase. The words form a single discourse marker (Hebrew *wayyehi*).
+- **"That" belongs with the clause it introduces, not trailing the formula.** "That" is a complementizer — it leads the temporal/circumstantial clause, following the dangling-that principle (Rule 16).
+- **The FEF resolves at the main verb.** Everything between the discourse marker and the main verb (temporal clauses, circumstantial participials, date formulas) is part of the FEF frame and stays together per normal FEF rules.
+
+**Correct treatment:**
+```
+And it came to pass that in the seventh year of the reign of the judges,
+there were about three thousand five hundred souls...
+```
+(Formula + temporal clause = one FEF line. Main verb starts expansion.)
+
+Or when the temporal clause is very long:
+```
+And it came to pass
+that in the commencement of the twenty and fifth year of the reign of the judges over the people of Nephi,
+they having established peace...
+```
+(Formula on its own, "that" leads the temporal clause on the next line.)
+
+Applied to all variants: "And it came to pass," "And now it came to pass," "And it shall come to pass," etc. The future-tense variant follows the same rule — resolving the contradiction between the old Wayyehi rule and the dangling-that rule that the adversarial audit identified.
 
 ### 2. "Expedient That" as Fixed Idiom
 **"It is expedient that" stays together — don't break at "that."**
