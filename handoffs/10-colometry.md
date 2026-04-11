@@ -1103,4 +1103,41 @@ Applied: 17 semantic regrouping fixes + 19 same-register merges across all books
 Editorial timestamps are bureaucratic formulas, not rhetoric. 34 merges applied across Alma and Helaman.
 
 ---
+
+### Update — 2026-04-11: Comparative Literature Review & Terminology Alignment
+
+#### 1. Comparative Literature Review
+
+How our four-criteria hierarchy compares to published colometric scholarship:
+
+**Priscille Marschall (2023)** — "Refining the Criteria for Delineating Cola and Periods." Her key concept "semantico-syntactic completeness" is equivalent to our "atomic thought" test. She validates that phrases without verbs CAN be cola if they carry enough semantic weight — this legitimizes our short emphatic lines as classical "commata." Her work is grounded in Graeco-Roman rhetorical treatises (Aristotle, Pseudo-Demetrius, Cicero, Quintilian). She distinguishes "autonomous" cola (disjointed style, each stands alone) from "periodic" cola (linked within a period by parallelism, hyperbaton, etc.). No hierarchy among criteria; no image test; no BOM application.
+
+**Royal Skousen** — "The Earliest Text" (2009/2022). Sense-line formatting based on phrases/clauses + "reasonable pause points." No formal hierarchy. Relies on unstated editorial judgment. Non-replicable.
+
+**Donald Parry** — "Poetic Parallelisms" (1992/2007). Single criterion: parallelism detection. Fundamentally different — identifies macro-level literary structures, not line-by-line colometry.
+
+**M.P. O'Connor** — "Hebrew Verse Structure" (1980). Strongest analog to our syntax-first principle. Six syntactic constraints define the Hebrew poetic line. Rejects meter/rhythm. Supports our syntax-as-floor principle.
+
+**Thomas Renz** — "Colometry and Accentuation" (2003). Empirical finding: Masoretic accent divisions align with syntactic boundaries in 92% of cases, supporting syntax as the dominant criterion.
+
+**Key finding: No published scholar has articulated a formal, ranked hierarchy of colometric criteria for the Book of Mormon.** Our four-criteria hierarchy (syntax > atomic thought > image > breath) appears to be genuinely novel.
+
+#### 2. Terminology Alignment
+
+Equivalences between our terms and established scholarly terminology:
+
+- Our "atomic thought" = Marschall's "semantico-syntactic completeness" = Chafe's "idea unit" = the intonational phrase of prosodic phonology
+- Our "atomic breath unit" = the classical côlon as breath unit (Lee & Scott 2009)
+- Our short emphatic lines = classical "commata" (κόμματα), validated by Pseudo-Demetrius and Cicero
+- Our "autonomous" lines (most of our lines) = Marschall's "autonomous côla" (disjointed style)
+- Our parallel-stacked lines = Marschall's "periodic côla" (linked by figures)
+
+#### 3. Methodological Implications
+
+- Our method is more operationally precise than any published alternative (four ranked criteria with specific rules, mechanical validation at 0.25% error rate, empirical voice-differentiation confirmation)
+- Our method is less historically grounded than Marschall's Graeco-Roman analysis — a paper should cite both traditions
+- The image test (criterion 3) has no direct parallel in published colometric scholarship — this is an original contribution
+- The convergence between ancient rhetorical theory ("semantico-syntactic completeness") and our modern editorial practice ("atomic thought test") independently arriving at the same criterion from different directions is methodologically significant
+
+---
 *Last updated: 2026-04-11*
