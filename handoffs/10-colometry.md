@@ -1178,4 +1178,31 @@ Equivalences between our terms and established scholarly terminology:
 - The convergence between ancient rhetorical theory ("semantico-syntactic completeness") and our modern editorial practice ("atomic thought test") independently arriving at the same criterion from different directions is methodologically significant
 
 ---
+### Update — 2026-04-11 (second entry)
+
+#### Adversarial Audit: Three Rulings
+
+A four-agent adversarial audit of the full corpus (31,200 lines) identified three systematic inconsistencies. Rulings:
+
+**1. "And it shall come to pass" — Wayyehi Rule revised (see Rule 1 above)**
+The old Wayyehi rule and Rule 16 (dangling-that) contradicted each other for future-tense AICTP. 2 Nephi kept "that" attached; Mosiah split it off. Resolution: the Wayyehi rule is now subsumed into the FEF framework. "That" belongs with the clause it introduces, not trailing the formula. This resolves the contradiction and aligns past-tense and future-tense variants under the same principle.
+
+**2. "I say unto you" — settled as speech-act formula**
+"I say unto you" is a speech-act formula with an OPTIONAL complement ("say" passes the period test). Treatment: breaks when introducing substantial cataphoric content (the "that" clause is long enough to deserve its own line). Merges when the total line fits in one breath and passes the atomic thought test. This is length-dependent, not absolute — honest about the role of breath as tiebreaker.
+
+**3. Purpose clauses — honest about length-dependence**
+The rule "purpose clauses break" is refined: purpose clauses ("that they might," "that ye may") break when the preceding line is already a complete atomic thought. They merge when the combined line passes both the atomic thought and breath tests. The earlier formulation overpromised by treating the break as absolute; in practice, short-line contexts correctly merge the purpose clause.
+
+#### Corpus Consistency Scorecard
+
+| Section | Lines | Violations | Rate |
+|---------|-------|------------|------|
+| 1 Nephi – Jacob | 8,400 | 35 | 0.42% |
+| Mosiah – Alma | 13,129 | 10 | 0.076% |
+| Helaman – Moroni | 9,686 | 16 | 0.16% |
+| **Total** | **~31,200** | **61** | **0.20%** |
+
+Most common violation: "know/knew" split from "that" clause (17 instances). Concentrated in earlier-edited books (1 Nephi–Jacob) before rules were formalized. Mosiah–Alma is the cleanest section (0.076%).
+
+---
 *Last updated: 2026-04-11*

@@ -250,3 +250,22 @@ Without such signals, bare "and [noun]" items are compound objects of one gramma
 
 ---
 *Last updated: 2026-03-29*
+
+---
+### Update — 2026-04-11
+
+#### New Swap Additions This Session
+
+- **check→halt/stop:** 3 phrase swaps added ("check" in the sense of restraining/stopping)
+- **inequality→contrast between:** 6 phrase swaps ("inequality" in the sense of division/contrast)
+- **notwithstanding+being→even though was/were:** 7 phrase-level swap fixes
+- **Past-tense -eth in 2 Ne 31:** reverted — all -eth forms confirmed as present tense, not past
+- **Imperative ye/thou dropped:** 45+ compound swaps added, pre-pass engine built into swap pipeline. Examples:
+  - "Follow thou me" → "Follow me"
+  - "Know ye not" → "Do you not know" (rhetorical question special case)
+- **58 irregular past tense fixes:** IRREGULAR_PAST dictionary expanded for DID+verb conjugation
+- **CVC consonant doubling logic added:** handles cases like "did stop" → "stopped" (double-p)
+- **Non-verb DID_SKIP expanded:** 17 new entries added to prevent false past-tense conjugation of non-verbs
+
+---
+*Last updated: 2026-04-11*

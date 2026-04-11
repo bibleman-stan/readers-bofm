@@ -166,3 +166,44 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 
 ---
 *Last updated: 2026-03-29*
+
+---
+### Update — 2026-04-11
+
+**Completed this session:**
+- Four-criteria hierarchy formalized (syntax > thought > image > breath)
+- Obligatory complement rule: 42 merges (suppose, understand, command, grant, desire, know)
+- Modal+know rule: 11 merges (should/shall/might/may know + that)
+- "Insomuch that" degree/result rule: 44 merges
+- Semantic grouping principle: 36 compound list fixes + 17 semantic regrouping
+- Date/colophon formulas: 34 merges
+- Wayyehi rule revised to FEF framework: 7 AISCTP fixes
+- Rule 25 eliminated: 13 merges
+- 28 stuck-word bugs fixed
+- 28 Category A audit fixes (fragments, participials, witness+that)
+- Imperative ye/thou: 91 swap fixes
+- Check→halt/stop, inequality→contrast swaps
+- Notwithstanding+being: 7 phrase-level swap fixes
+- 58 archaic past-tense swap fixes (irregular verbs, CVC doubling, non-verb skips)
+- Wildcard search (? and *) + search return button features
+- Narration audio bug fix (verse hash parsing)
+- Pericope header mojibake fix (UTF-8 encoding)
+- Marschall 2023 comparative analysis saved to research/
+- Full corpus literature comparison saved to research/
+- Adversarial audit: corpus-wide consistency 0.20% violation rate
+- "I say unto you" genre analysis: 273 instances categorized (sermonic/editorial/divine)
+
+**Remaining work (Category B for editorial review):**
+- 9 Category B items confirmed as intentional (keep as-is)
+- 6 borderline AISCTP instances (70-81 chars) in 2 Nephi — editorial review
+- "I say unto you" — 52 merged sermonic instances could be spot-checked
+- Alma long lines (68 lines >18 words) — less thoroughly edited than other books
+- Isaiah blocks (2 Ne 12-24) — different conventions, no settled treatment
+
+**Features pending:**
+- Wildcard search and return button deployed but not yet tested on mobile
+- TTS preprocessing pipeline (specced but not built)
+- Generate 2 Nephi 25-33 audio when ElevenLabs credits reset
+
+---
+*Last updated: 2026-04-11*
