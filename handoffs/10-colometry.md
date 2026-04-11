@@ -516,18 +516,36 @@ All mechanical slippage, no rule failures. The existing rubric caught every case
 ---
 ### Update — 2026-03-21 (fifth entry)
 
-#### "Insomuch that" — Leading vs. Trailing Distinction
+#### "Insomuch that" — Degree vs. Result Rule (Refined 2026-04-11)
 
-"Insomuch that" constructions have two distinct colometric behaviors depending on position:
+"Insomuch that" has two genuinely different functions, requiring different colometric treatment. Of 178 corpus instances, 91 are result clauses (correctly split) and 44 are degree modifiers (merged in April 2026 session). The remaining were confirmed as correctly split under the tighter image test.
 
-**Trailing (result clause):** "they did smite them / insomuch that they did flee" — "insomuch that" introduces the result of the previous action. It leads a new line because it opens a new clause with new content (the result). The previous line is complete without it.
+**DEGREE (merge):** The "insomuch that" clause restates, quantifies, or measures the SAME action on the preceding line. No new image is introduced.
 
-**Leading (degree modifier):** "insomuch that they could not be distinguished" — when "insomuch" modifies the degree of the preceding verb and the "that" clause is the specification of degree, it can merge with the preceding material if the combined line passes the atomic thought test.
+Three subtypes:
+- **(a) Same verb/synonym restated:** "there arose a division / insomuch that they divided hither and thither" — "divided" IS the "division"
+- **(b) Quantification:** "did slay them with much slaughter / insomuch that there were slain twelve thousand" — adds a number to the same action
+- **(c) Abstract → specific detail (same image):** "it began to be exceedingly difficult / insomuch that we could obtain no food" — specifies what "difficult" means without painting a new picture
 
-The operational test: does "insomuch that" introduce a genuinely new event/result (break), or does it specify the degree of the same event (merge candidate)?
+**RESULT (break):** The "insomuch that" clause introduces a genuinely new event, actor, or image.
+
+Three triggers for breaking:
+- **(d) New actor:** "they preached / insomuch that the Lord did bless them" — the Lord is a new actor
+- **(e) New type of action:** "their anger did increase / insomuch that they did seek to take away my life" — emotion → lethal action is a different kind of event
+- **(f) New image (image test):** "they were astonished / insomuch that they fell to the earth" — you were picturing stunned faces; now you see bodies hitting the ground
+
+**The image test for borderline cases:** Close your eyes and picture the scene. Does the "insomuch that" clause make you SEE something new (a new body position, a new physical event, a new scene) or does it just give you MORE DETAIL about what you were already picturing? New image = break. Same image with more detail = merge.
+
+**Key patterns that emerged from the audit:**
+- Emotion → same emotion restated: MERGE ("glad / insomuch that they did rejoice")
+- Emotion → physical action: BREAK ("astonished / insomuch that they fell to the earth")
+- Abstract state → concrete specification: MERGE ("exceedingly strong / insomuch that they became rich")
+- Abstract state → concrete new scene: BREAK ("prosperity / insomuch that they did build cities")
+- Same military action measured: MERGE ("did gain advantage / insomuch that they did drive them back")
+- Military action → different outcome: BREAK ("did beat them / insomuch that they did return to their own lands")
 
 ---
-*Last updated: 2026-03-21*
+*Last updated: 2026-04-11*
 
 ---
 ### Update — 2026-03-22
