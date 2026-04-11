@@ -1446,7 +1446,7 @@ def load_intertext():
         _KJV_DIFF_INDEX = {}
     pericope_path = os.path.join(base, 'data', 'pericope_index.json')
     if os.path.exists(pericope_path):
-        with open(pericope_path) as f:
+        with open(pericope_path, encoding='utf-8') as f:
             _PERICOPE_INDEX = json.load(f)
         total = sum(len(entries) for ch in _PERICOPE_INDEX.values() for entries in ch.values())
         print(f"Loaded pericope index: {total} section headers for Sections layer")
