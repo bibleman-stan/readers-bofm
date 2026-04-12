@@ -30,7 +30,7 @@ QUIET_ARCHAICS = {
     'nevertheless', 'exceedingly', 'exceeding', 'insomuch',
     'spake', 'beheld', 'smitten', 'smote',
     'hither', 'thither', 'whither', 'whence',
-    'brethren', 'thereof', 'whereby', 'wherewith', 'amongst',
+    'brethren', 'whereby', 'wherewith', 'amongst',  # thereof removed (Class F: preserved, not swapped)
     'it came to pass', 'it shall come to pass',
 }
 
@@ -116,15 +116,28 @@ COMPOUND_SWAPS = [
     ("inasmuch as", "to the degree that"), ("Inasmuch as", "To the degree that"),
     # ── Structural speed bump phrase swaps ──
     ("for the space of", "for"), ("For the space of", "For"),
+    # Added 2026-04-12: see Class J audit — impersonal KJV idioms. Must fire
+    # before the -eth → -s rule in KNOWN_ETH or we get "it supposes me".
+    ("it supposeth me", "it seems to me"), ("It supposeth me", "It seems to me"),
+    ("it whispereth me", "it whispers to me"), ("It whispereth me", "It whispers to me"),
+    ("seemeth me", "seems to me"), ("Seemeth me", "Seems to me"),
+    ("methinks", "I think"), ("Methinks", "I think"),
+    # Round 2 cleanup: Moroni 8:11 cascading "unto" sequence — fix the idiom.
+    ("baptism is unto repentance", "baptism is for repentance"),
     ("must needs be", "must be"), ("must needs", "must"),
+    # Added 2026-04-12: see Class J audit — 3 Ne 3:8 "on the morrow month" is
+    # an archaic "within a month" idiom. Must fire BEFORE "on the morrow".
+    ("on the morrow month", "within a month"), ("On the morrow month", "Within a month"),
     ("on the morrow", "the next day"), ("On the morrow", "The next day"),
 
     ("from this time henceforth", "from now on"), ("From this time henceforth", "From now on"),
     ("from that time henceforth", "from then on"), ("From that time henceforth", "From then on"),
     ("from thenceforth", "from then on"), ("From thenceforth", "From then on"),
     ("is thenceforth", "is then"), ("shall be thenceforth", "shall then be"),
-    ("it henceforth", "it from now on"),
-    ("henceforth", "from now on"), ("Henceforth", "From now on"),
+    # Removed 2026-04-12: see Class J audit — produced "from from now on"
+    # (2 Ne 19:7) and "from then on and forever" (2 Ne 29:9). Preserve "henceforth."
+    # ("it henceforth", "it from now on"),
+    # ("henceforth", "from now on"), ("Henceforth", "From now on"),
     ("in the which", "in which"), ("In the which", "In which"),
     ("in nowise", "in no way"), ("In nowise", "In no way"),
     ("on this wise", "in this way"), ("On this wise", "In this way"),
@@ -150,7 +163,9 @@ COMPOUND_SWAPS = [
     ("fall exceedingly", "fall very"), ("fell exceedingly", "fell very"),
     ("exercising exceedingly great", "exercising tremendous"),
     # ── "fear lest" collision: avoid "fear for fear that" stutter ──
-    ("fear lest", "afraid that"), ("Fear lest", "Afraid that"),
+    # Use "fear that" not "afraid that" — "fear" is often a noun governed
+    # by "with"/"in" (e.g. "with fear lest..."), where "afraid" doesn't compose.
+    ("fear lest", "fear that"), ("Fear lest", "Fear that"),
     ("for fear lest", "for fear that"),
     # (Sentence-initial "Notwithstanding [pronoun]" + "notwithstanding+being"
     #  phrases handled in special-case logic below — see _notw_phrases)
@@ -177,7 +192,9 @@ COMPOUND_SWAPS = [
     ("come ye", "come"),
     ("declare ye", "declare"),
     ("Depart ye,", "Depart,"),
-    ("do ye", "do"),
+    # ("do ye", "do") — REMOVED 2026-04-12: in BoM "do ye" is exclusively
+    # interrogative ("Why do ye suppose...?"), so ye must swap to "you", not
+    # be dropped. The standalone ye→you swap in SIMPLE_SWAPS handles it.
     ("Enter ye", "Enter"),
     ("fear ye", "fear"),
     ("flee ye", "flee"),
@@ -213,8 +230,10 @@ COMPOUND_SWAPS = [
     # ── yea, even → yes, even (simplified: "yea" always → "yes") ──
     ("yea, even", "yes, even"), ("Yea, even", "Yes, even"),
     ("yea even", "yes even"), ("Yea even", "Yes even"),
-    # ── lest that → for fear that (avoid double 'that') ──
-    ("lest that", "for fear that"),
+    # ── "lest that" preserved (Class E audit fix) ──
+    # Dropped 2026-04-12: produced "feared ... for fear that" stutter (Hel 2:11,
+    # Alma 22:22). "Lest" in all forms is now preserved.
+    # ("lest that", "for fear that"),
     # ── abomination collision avoidance ──
     # "wickedness and abominations" → avoid "wickedness and wicked practices"
     ("wickedness and abominations", "wickedness and evil deeds"),
@@ -231,8 +250,23 @@ COMPOUND_SWAPS = [
     # "mother of abominations" → biblical title (Rev 17), keep as-is
     ("mother of abominations", "mother of abominations"),
     ("hither and thither", "this way and that"),
-    ("an account", "a record"), ("in fine", "in other words"), ("lust after", "desire"),
+    # Changed 2026-04-12: see Class J audit — "in other words" implies
+    # restatement; wrong for Jarom 1:8 list-end and Omni 1:3 narrative use.
+    # Also adds "like unto → like" (was producing stilted "like to" via cascade).
+    ("like unto", "like"), ("Like unto", "Like"),
+    # Round 2 cleanup: "in fine" can be discourse marker (in summary) or part of
+    # "in [adjective] X" (Jarom 1:8 "in fine workmanship"). Only fire on the
+    # discourse marker (followed by comma). The bare "in fine" → "in short"
+    # was misfiring on adjectival use.
+    ("in fine,", "in short,"), ("In fine,", "In short,"),
+    ("an account", "a record"), ("lust after", "desire"),
     ("save two churches only", "only two churches"), ("save a few only", "only a few"),
+    # Class J cleanup 2026-04-12: targeted "have save it be one wife" → "have only one wife"
+    # (Jacob 2:27, 3:5) MUST fire before the bare "save it be → except" rule.
+    ("have save it be one wife", "have only one wife"),
+    ("have save it were one wife", "have only one wife"),
+    ("should have save it be one wife", "should have only one wife"),
+    ("should have save it were one wife", "should have only one wife"),
     ("save it were", "except"), ("save it be", "except"), ("save that", "except that"),
     ("Thou mightest", "You might"), ("thou mightest", "you might"),
     ("Thou knowest", "You know"), ("thou knowest", "you know"),
@@ -321,13 +355,15 @@ COMPOUND_SWAPS = [
     ("fruit of the loins", "fruit of the lineage"),
     ("seed of thy loins", "seed of your lineage"),
     ("spokesman of thy loins", "spokesman of your lineage"),
-    # ── "inequality" → "contrast between" (phrase-level, preposition varies) ──
-    ("inequality among the people", "contrast between the people"),
-    ("all their inequality", "all the contrast between them"),
-    ("no inequality among them", "no contrast between them"),
-    ("inequality of man", "contrast between men"),
-    ("this inequality", "this contrast"),
-    ("a great inequality", "a great contrast"),
+    # Removed 2026-04-12: see Class J audit — Mosiah 29:32 "this contrast
+    # should be no more in this land" erases a key political concept.
+    # Preserve "inequality" — it is modern English.
+    # ("inequality among the people", "contrast between the people"),
+    # ("all their inequality", "all the contrast between them"),
+    # ("no inequality among them", "no contrast between them"),
+    # ("inequality of man", "contrast between men"),
+    # ("this inequality", "this contrast"),
+    # ("a great inequality", "a great contrast"),
     # ── "check" as restraint/halt ──
     ("a great check", "a great halt"),
     ("were checked as to", "were halted in"),
@@ -377,9 +413,16 @@ SIMPLE_SWAPS = [
     ("unto", "to"), ("Unto", "To"),
     ("wherefore", "so"), ("Wherefore", "So"),
     ("brethren", "brothers"), ("Brethren", "Brothers"),
-    ("thereof", "of it"), ("Thereof", "Of it"),
+    # thereof: PRESERVED (Class F audit fix). Antecedent-blind rewriting
+    # produced nonsense on plural antecedents ("the hilts of it" for "swords")
+    # and on personal antecedents ("in the stead of it" for Lib). "Thereof"
+    # is archaic but universally understood.
+    # ("thereof", "of it"), ("Thereof", "Of it"),
     ("whereby", "by which"), ("Whereby", "By which"),
-    ("wherewith", "with which"), ("Wherewith", "With which"),
+    # Removed 2026-04-12: see Class J audit — Mosiah 8:13 "has with which that
+    # he can look", 13:4 "commandments with which God has commanded me" are
+    # awkward. Preserve "wherewith."
+    # ("wherewith", "with which"), ("Wherewith", "With which"),
     ("whither", "where"), ("Whither", "Where"),
     ("whence", "where"), ("Whence", "Where"),
     ("hither", "here"), ("Hither", "Here"),
@@ -392,7 +435,12 @@ SIMPLE_SWAPS = [
     ("mine", "my"), ("Mine", "My"),
     ("beheld", "saw"), ("spake", "spoke"),
     ("hath", "has"), ("Hath", "Has"),
-    ("exceedingly", "very"), ("Exceedingly", "Very"),
+    # NOTE: bare ("exceedingly", "very") fallback removed (Class H audit fix).
+    # "Very" cannot modify a verb ("very fear"), cannot precede a comparative
+    # ("very more numerous"), cannot dangle sentence-finally ("kill them very"),
+    # and "very afraid" is the wrong intensifier. The collision-handling rules
+    # above still rewrite the awkward verb-adjacent cases.
+    # ("exceedingly", "very"), ("Exceedingly", "Very"),
     ("rejoice exceedingly", "rejoice greatly"), ("rejoiced exceedingly", "rejoiced greatly"),
     ("prosper exceedingly", "prosper greatly"), ("prospered exceedingly", "prospered greatly"),
     ("astonished exceedingly", "astonished greatly"),
@@ -433,8 +481,13 @@ SIMPLE_SWAPS = [
     ("engraven", "engraved"), ("Engraven", "Engraved"),
     ("murmurings", "complaints"), ("Murmurings", "Complaints"),
     ("murmured", "complained"), ("Murmured", "Complained"),
-    ("murmur", "complain"), ("Murmur", "Complain"),
-    ("slain", "killed"), ("Slain", "Killed"),
+    # Changed 2026-04-12: see Class J audit — Alma 60:4 produced "complain nor
+    # complain" stutter. Use "grumble" (distinct word) instead.
+    ("murmur", "grumble"), ("Murmur", "Grumble"),
+    # "slain" preserved (Class G audit fix) — bare-string swap fired wrongly
+    # on substantives ("the slain of his people") and perfect/passive forms
+    # ("would have slain"). Finite "slay → kill" remains active below.
+    # ("slain", "killed"), ("Slain", "Killed"),
     ("afflictions", "hardships"), ("Afflictions", "Hardships"),
     ("hast", "have"), ("Hast", "Have"),
     ("fulness", "fullness"), ("Fulness", "Fullness"),
@@ -445,8 +498,13 @@ SIMPLE_SWAPS = [
     ("shouldst", "should"), ("Shouldst", "Should"),
     ("wouldst", "would"), ("Wouldst", "Would"),
     ("wast", "were"), ("Wast", "Were"),
+    ("wert", "were"), ("Wert", "Were"),
     ("hadst", "had"), ("Hadst", "Had"),
     ("saidst", "said"), ("Saidst", "Said"),
+    # Class D: standalone archaic 2p-sg pronouns/verbs (previously only caught
+    # when glued to literal "thou")
+    ("thyself", "yourself"), ("Thyself", "Yourself"),
+    ("thyselves", "yourselves"), ("Thyselves", "Yourselves"),
     ("abominations", "wicked practices"), ("Abominations", "Wicked practices"),
     ("abomination", "wicked practice"), ("Abomination", "Wicked practice"),
     ("abridgment", "summary"), ("Abridgment", "Summary"),
@@ -455,13 +513,18 @@ SIMPLE_SWAPS = [
     ("commencement", "beginning"), ("Commencement", "Beginning"),
     ("confounded", "confused"), ("Confounded", "Confused"),
     ("constrained", "compelled"), ("Constrained", "Compelled"),
-    ("nevertheless", "but"), ("Nevertheless", "But"),
+    # Removed 2026-04-12: see Class J audit — "nevertheless" is modern English;
+    # swap fired in mid-sentence non-discourse positions ("however being large
+    # in stature", 1 Ne 2:16). Preserve "nevertheless."
+    # ("nevertheless", "however"), ("Nevertheless", "However"),
     ("concourses", "crowds"), ("Concourses", "Crowds"),
     ("account", "record"), ("Account", "Record"),
     ("naught", "nothing"), ("Naught", "Nothing"),
     ("surety", "certainty"), ("Surety", "Certainty"),
     ("firmament", "sky"), ("Firmament", "Sky"),
-    ("asunder", "apart"), ("Asunder", "Apart"),
+    # Removed 2026-04-12: see Class J audit — Mosiah 27:18 produced "as though
+    # it would part apart" (stutter with canonical "part"). Preserve "asunder."
+    # ("asunder", "apart"), ("Asunder", "Apart"),
     ("apparel", "clothing"), ("Apparel", "Clothing"),
     ("goodly", "good"), ("Goodly", "Good"),
     ("luster", "brightness"), ("Luster", "Brightness"),
@@ -476,11 +539,16 @@ SIMPLE_SWAPS = [
     ("wroth", "angry"), ("Wroth", "Angry"),
     ("durst", "dared"), ("Durst", "Dared"),
     ("affrighted", "frightened"), ("Affrighted", "Frightened"),
-    ("bade", "told"), ("Bade", "Told"),
+    # Removed 2026-04-12: see Class J audit — 3 Ne 17:19 produced "told them
+    # arise" (missing "to"). Bade-X-infinitive doesn't map to told-X-bare-inf.
+    # Preserve "bade."
+    # ("bade", "told"), ("Bade", "Told"),
     ("doth", "does"), ("Doth", "Does"),
     ("whit", "bit"), ("Whit", "Bit"),
     ("wo", "woe"), ("Wo", "Woe"),
-    ("lest", "for fear that"), ("Lest", "For fear that"),
+    # "lest" preserved (Class E audit fix) — dropping this kills ~17 stutter
+    # cases (e.g. "feared for fear that"). "Lest" is formal but understood.
+    # ("lest", "for fear that"), ("Lest", "For fear that"),
     ("yea", "yes"), ("Yea", "Yes"),
     ("meet", "fitting"), ("Meet", "Fitting"),
     ("aught", "anything"), ("Aught", "Anything"),
@@ -495,6 +563,57 @@ SIMPLE_SWAPS = [
     ("ceaseth", "ceases"), ("seeketh", "seeks"),
     ("slayeth", "kills"), ("liveth", "lives"),
     ("giveth", "gives"), ("goeth", "goes"), ("mattereth", "matters"),
+    # ── Class D fix: bare -est verbs (standalone, w/o "thou" prefix) ──
+    ("knowest", "know"), ("Knowest", "Know"),
+    ("seest", "see"), ("Seest", "See"),
+    ("hearest", "hear"), ("Hearest", "Hear"),
+    ("sayest", "say"), ("Sayest", "Say"),
+    ("speakest", "speak"), ("Speakest", "Speak"),
+    ("doest", "do"), ("Doest", "Do"),
+    ("goest", "go"), ("Goest", "Go"),
+    ("comest", "come"), ("Comest", "Come"),
+    ("makest", "make"), ("givest", "give"),
+    ("takest", "take"), ("findest", "find"),
+    ("lovest", "love"), ("hatest", "hate"),
+    ("believest", "believe"), ("desirest", "desire"),
+    ("rememberest", "remember"), ("forgettest", "forget"),
+    ("prayest", "pray"), ("worshippest", "worship"),
+    ("abhorrest", "abhor"), ("livest", "live"),
+    ("diest", "die"), ("liest", "lie"),
+    ("risest", "rise"), ("standest", "stand"),
+    ("sittest", "sit"), ("walkest", "walk"),
+    ("workest", "work"), ("keepest", "keep"),
+    ("holdest", "hold"), ("seekest", "seek"),
+    ("askest", "ask"), ("callest", "call"),
+    ("judgest", "judge"), ("condemnest", "condemn"),
+    ("forgivest", "forgive"), ("savest", "save"),
+    ("healest", "heal"), ("sendest", "send"),
+    ("teachest", "teach"), ("showest", "show"),
+    ("revealest", "reveal"), ("rulest", "rule"),
+    ("reignest", "reign"), ("dwellest", "dwell"),
+    ("abidest", "abide"), ("remainest", "remain"),
+    ("persecutest", "persecute"), ("temptest", "tempt"),
+    ("deceivest", "deceive"), ("repentest", "repent"),
+    ("trustest", "trust"), ("fearest", "fear"),
+    ("buildest", "build"), ("destroyest", "destroy"),
+    ("smitest", "smite"), ("castest", "cast"),
+    ("breakest", "break"), ("openest", "open"),
+    ("coverest", "cover"), ("hidest", "hide"),
+    ("anointest", "anoint"), ("blessest", "bless"),
+    ("glorifiest", "glorify"), ("exaltest", "exalt"),
+    ("humblest", "humble"), ("rejoicest", "rejoice"),
+    ("weepest", "weep"), ("mournest", "mourn"),
+    ("writest", "write"), ("readest", "read"),
+    ("eatest", "eat"), ("drinkest", "drink"),
+    ("sleepest", "sleep"), ("wakest", "wake"),
+    ("tarriest", "tarry"), ("hearkenest", "listen"),
+    ("abhorrest", "abhor"),
+    # Class D: past-tense -st forms seen in BoM Isaiah chapters
+    ("sawest", "saw"), ("Sawest", "Saw"),
+    ("heardest", "heard"), ("spakest", "spoke"),
+    ("camest", "came"), ("wentest", "went"),
+    ("gavest", "gave"), ("tookest", "took"),
+    ("madest", "made"), ("broughtest", "brought"),
     # ── Isaiah archaic vocabulary ──
     ("twain", "two"), ("Twain", "Two"),
     ("amongst", "among"), ("Amongst", "Among"),
@@ -514,7 +633,9 @@ SIMPLE_SWAPS = [
     ("vexed", "troubled"), ("Vexed", "Troubled"),
     ("vexation", "distress"), ("Vexation", "Distress"),
     # ── Isaiah false friends & dead words (batch 2) ──
-    ("bravery", "finery"), ("Bravery", "Finery"),  # KJV "bravery" = splendor, NOT courage
+    # Removed 2026-04-12: see Class J audit — Moroni 9:10 produced "they do it
+    # for a token of finery" (cannibalism-as-fashion). Preserve "bravery."
+    # ("bravery", "finery"), ("Bravery", "Finery"),
     ("carriages", "baggage"), ("Carriages", "Baggage"),  # NOT vehicles
     ("girdle", "belt"), ("Girdle", "Belt"),
     ("stoutness", "arrogance"), ("Stoutness", "Arrogance"),
@@ -563,7 +684,10 @@ SIMPLE_SWAPS = [
     ("thereon", "on it"), ("Thereon", "On it"),
     ("therewith", "with it"), ("Therewith", "With it"),
     ("thereto", "to it"), ("Thereto", "To it"),
-    ("wherein", "in which"), ("Wherein", "In which"),
+    # Removed 2026-04-12: see Class J audit — Ether 8:9 "By which has my father
+    # so much sorrow?", 3 Ne 24:7/24:8 "In which have we robbed you?" break
+    # interrogative syntax. Preserve "wherein."
+    # ("wherein", "in which"), ("Wherein", "In which"),
     ("whereon", "on which"), ("Whereon", "On which"),
     ("whereat", "at which"), ("Whereat", "At which"),
     ("girded", "fastened"), ("Girded", "Fastened"),
@@ -687,8 +811,17 @@ KNOWN_ETH = {
 
 NOT_ETH_VERBS = {'teeth', 'thirtieth', 'twentieth', 'fortieth', 'fiftieth',
     'sixtieth', 'seventieth', 'eightieth', 'ninetieth', 'hundredth',
-    'seth', 'beth', 'heth', 'nazareth', 'shibboleth', 'japheth', 'Kenneth',
-    'beneath', 'breadth', 'hundredeth'}
+    'seth', 'beth', 'heth', 'nazareth', 'shibboleth', 'japheth', 'kenneth',
+    'beneath', 'breadth', 'hundredeth',
+    # Class D fix: real English nouns ending in -eth that the fallback would
+    # otherwise mangle into "dea," "brea," "wrea," "shea," etc.
+    'death', 'breath', 'wreath', 'sheath', 'heath', 'wealth', 'health',
+    'stealth', 'dearth', 'earth', 'hearth', 'mirth', 'birth', 'worth',
+    'fourth', 'fifth', 'sixth', 'tenth', 'twelfth', 'moth', 'cloth',
+    'path', 'bath', 'wrath', 'length', 'strength', 'depth', 'width',
+    'both', 'youth', 'south', 'north', 'mouth', 'truth', 'faith',
+    'oath', 'behemoth', 'mammoth',
+    'elizabeth', 'goliath', 'methuselah'}
 
 IRREGULAR_PAST = {
     'speak': 'spoke', 'give': 'gave', 'go': 'went', 'take': 'took',
@@ -787,6 +920,11 @@ def build_swap_list():
 SPECIAL_CASE_ARCHAICS = {
     'meet', 'Meet', 'mine', 'Mine', 'account', 'Account',
     'notwithstanding', 'Notwithstanding',
+    # Class F fix: thine needs attributive/predicative context-sensitivity.
+    'thine', 'Thine',
+    # Class D fix: art is both archaic 2p verb and modern noun. Only fire after
+    # thou/you/who/that.
+    'art', 'Art',
 }
 
 def _build_general_swap_engine(swap_list):
@@ -929,8 +1067,52 @@ def apply_swaps(text, swap_list):
                 result = re.sub(prefix + re.escape(archaic) + r'\b', sentinel, result)
             placeholders.append((sentinel, archaic, modern)); continue
         if archaic in ("mine", "Mine"):
-            result = re.sub(r'(?<!\ba )(?<!\bthe )\b' + re.escape(archaic) + r'\b', sentinel, result)
+            # Class F fix: context-sensitive. Fire ONLY in attributive position
+            # (followed by a content word OR a sentinel-wrapped content word).
+            # In predicative position — end-of-line, punctuation, or coordinator
+            # — preserve `mine`.
+            #   "mine eyes have seen"        → "my eyes have seen"  (attributive)
+            #   "mine account" (where account → \x00 sentinel) → "my [...]"
+            #   "vengeance is mine"          → "vengeance is mine"  (preserved)
+            #   "they are mine"              → "they are mine"      (preserved)
+            #   "sayings of mine and does"   → preserved
+            _mine_attr_re = re.compile(
+                r'(?<!\ba )(?<!\bthe )\b' + re.escape(archaic) +
+                r'\b(?=\s+[A-Za-z\x00])'
+                r'(?!\s+(?:and|or|but|nor|also)\b)'
+            )
+            result = _mine_attr_re.sub(sentinel, result)
             placeholders.append((sentinel, archaic, modern)); continue
+        if archaic in ("art", "Art"):
+            # Class D fix: only fire when clearly the archaic 2nd-person-singular
+            # "to be" — preceded by thou/you/who/that. Skip noun senses ("the art").
+            def _art_replace(m, _arch=archaic):
+                idx = len(placeholders); sent_inner = f"\x00V{idx}\x00"
+                placeholders.append((sent_inner, _arch, "are"))
+                return sent_inner
+            pat = r'(?:(?<=\bthou )|(?<=\byou )|(?<=\bwho )|(?<=\bthat ))\b' + re.escape(archaic) + r'\b'
+            result = re.sub(pat, _art_replace, result)
+            continue
+        if archaic in ("thine", "Thine"):
+            # Class F fix: mirror of mine. Attributive → "your"; predicative
+            # survivors caught by a second pass that rewrites them to "yours".
+            # Allow sentinel \x00 in lookahead so swapped neighbors (e.g.
+            # "thine account" where account is already sentinelized) still match.
+            _thine_attr_re = re.compile(
+                r'\b' + re.escape(archaic) +
+                r'\b(?=\s+[A-Za-z\x00])'
+                r'(?!\s+(?:and|or|but|nor|also)\b)'
+            )
+            result = _thine_attr_re.sub(sentinel, result)
+            placeholders.append((sentinel, archaic, modern))
+            # Second pass: any surviving `thine` (predicative) → "yours" / "Yours"
+            yours_modern = "yours" if archaic == "thine" else "Yours"
+            sentinel2 = f"\x00S{len(placeholders)}\x00"
+            _thine_pred_re = re.compile(r'\b' + re.escape(archaic) + r'\b')
+            if _thine_pred_re.search(result):
+                result = _thine_pred_re.sub(sentinel2, result)
+                placeholders.append((sentinel2, archaic, yours_modern))
+            continue
         if archaic == "save" and modern == "unless":
             result = re.sub(r'(?<!\bto )(?<!\bdid )(?<!\bwill )(?<!\bshall )(?<!\bcould )(?<!\bwould )(?<!\bmight )(?<!\bmay )(?<!\bcan )\bsave\b(?! us| them| him| her| his| the | those| all| my| your| our| a | it$)', sentinel, result)
             placeholders.append((sentinel, archaic, modern)); continue
@@ -952,14 +1134,6 @@ def apply_swaps(text, swap_list):
                 (r'notwithstanding I being young, was large in stature', 'even though I was young, I was large in stature'),
                 (r'notwithstanding their number being so much greater', 'even though their number was so much greater'),
                 (r'notwithstanding the Lamanites being cut off', 'even though the Lamanites were cut off'),
-                # Sentence-initial "Notwithstanding [pronoun]" — preserve adversative force with "But"
-                (r'Notwithstanding they', 'But even though they'),
-                (r'Notwithstanding we', 'But even though we'),
-                (r'Notwithstanding he', 'But even though he'),
-                (r'Notwithstanding she', 'But even though she'),
-                (r'Notwithstanding I', 'But even though I'),
-                (r'Notwithstanding ye', 'But even though you'),
-                (r'Notwithstanding it', 'But even though it'),
             ]
             for phrase, repl in _notw_phrases:
                 pat = re.compile(re.escape(phrase), re.IGNORECASE)
@@ -991,92 +1165,16 @@ def apply_swaps(text, swap_list):
             result = re.sub(r'\b' + re.escape(archaic) + r'\b', _notw_replace, result)
             continue
 
-    # ---- "suffer" = ALLOW sense (context-sensitive) ----
-    # Swap "suffer" → "allow/let" only when syntactic context signals the ALLOW sense.
-    # Leave ENDURE sense ("suffer pain", "suffered much", "long-suffering") untouched.
-
-    # Pattern 1: "suffer that [clause]" → "allow that" / "let"
-    def _suffer_replace(m):
-        full = m.group(0)
-        idx = len(placeholders); sent = f"\x00F{idx}\x00"
-        # Determine the right modern word based on pattern
-        low = full.lower()
-        cap = full[0].isupper()
-        if 'suffered' in low:
-            mod = 'Allowed' if cap else 'allowed'
-        elif 'suffereth' in low:
-            mod = 'Allows' if cap else 'allows'
-        elif 'suffering' in low:
-            return full  # skip — "suffering" is almost always ENDURE
-        else:
-            mod = 'Allow' if cap else 'allow'
-        placeholders.append((sent, full, mod))
-        return sent
-
-    # "suffer/suffered/suffereth that [clause]" — always ALLOW
-    result = re.sub(r'\b(suffer(?:ed|eth)?)\b(?= that\b)', _suffer_replace, result)
-
-    # "[will/would/shall/should/did/could/may/might/doth/hath] [not] suffer" — almost always ALLOW
-    # Also catches "not suffer", "not be suffered"
-    def _suffer_modal_replace(m):
-        full = m.group(0)
-        modal_part = m.group(1)
-        neg = m.group(2) or ''
-        suffer_word = m.group(3)
-        low_s = suffer_word.lower()
-        if low_s == 'suffered':
-            mod_s = 'allowed'
-        elif low_s == 'suffereth':
-            mod_s = 'allows'
-        else:
-            mod_s = 'allow'
-        # Preserve original capitalization of the modal part
-        modern_full = f"{modal_part}{neg}{mod_s}"
-        idx = len(placeholders); sent = f"\x00F{idx}\x00"
-        placeholders.append((sent, full, modern_full))
-        return sent
-
-    result = re.sub(
-        r'\b((?:will|would|shall|should|did|could|may|might|doth|hath|have|has|had|can|must) )(not )?(suffer(?:ed|eth)?)\b'
-        r'(?! (?:pain|affliction|temptation|death|hunger|thirst|sorrow|loss|anguish|much|great|many|all |every |the pain|for ))',
-        _suffer_modal_replace, result
-    )
-
-    # "suffer [pronoun/noun] to [verb]" — ALLOW ("suffer them to enter" → "allow them to enter")
-    def _suffer_obj_to_replace(m):
-        full = m.group(0)
-        suffer_word = m.group(1)
-        rest = m.group(2)
-        low_s = suffer_word.lower()
-        if low_s == 'suffered':
-            mod_s = 'allowed'
-        elif low_s == 'suffereth':
-            mod_s = 'allows'
-        else:
-            mod_s = 'allow'
-        if suffer_word[0].isupper():
-            mod_s = mod_s[0].upper() + mod_s[1:]
-        modern_full = f"{mod_s}{rest}"
-        idx = len(placeholders); sent = f"\x00F{idx}\x00"
-        placeholders.append((sent, full, modern_full))
-        return sent
-
-    result = re.sub(
-        r'\b(Suffer(?:ed|eth)?|suffer(?:ed|eth)?)'
-        r'( (?:me|him|her|them|us|you|ye|it|himself|herself|themselves|yourselves|ourselves|myself|that ye|that they|that he|that we|that you|none|no one|any one|any) (?:to|that)\b)',
-        _suffer_obj_to_replace, result, flags=re.IGNORECASE
-    )
-
-    # "be suffered to" — passive ALLOW ("was suffered to speak" → "was allowed to speak")
-    def _suffer_passive_replace(m):
-        full = m.group(0)
-        be_word = m.group(1)
-        modern_full = f"{be_word} allowed to"
-        idx = len(placeholders); sent = f"\x00F{idx}\x00"
-        placeholders.append((sent, full, modern_full))
-        return sent
-
-    result = re.sub(r'\b(be|been|was|were|is|are) suffered to\b', _suffer_passive_replace, result)
+    # ---- "suffer" preserved (Class A audit fix 2026-04-12) ----
+    # Previously this block ran four context-sensitive regex passes that rewrote
+    # "suffer" → "allow" whenever a modal, "that"-complement, pronoun+to, or
+    # passive context was detected. The patterns misfired on endurance-sense
+    # verses across the corpus (e.g. Mosiah 17:10 "I will suffer even until
+    # death", Alma 60:28 "we have suffered so much loss", Mosiah 3:7 "more than
+    # man can suffer"). Per the 14-agent audit and CLAUDE.md guidance, modern
+    # readers understand "suffer" in the endurance sense, so we leave every
+    # occurrence untouched here. The "suffereth" → "suffers" inflection still
+    # runs via the -eth fallback elsewhere.
 
     # ---- PHRASE-LEVEL swaps (multi-word idioms before single-word pass) ----
 
@@ -1130,13 +1228,20 @@ def apply_swaps(text, swap_list):
     result = compiled_re.sub(_general_replace, result)
 
     # ---- -eth verb fallback (catch any remaining -eth words) ----
+    # Class D fix: case-insensitive (catches sentence-initial Saith/Hath/Doth)
+    # and preserves capitalization through the lookup.
     def eth_replace(m):
         word = m.group(0)
         if word.lower() in NOT_ETH_VERBS:
             return word
-        if word in KNOWN_ETH: mf = KNOWN_ETH[word]
+        lower = word.lower()
+        was_upper = word[0].isupper()
+        if lower in KNOWN_ETH:
+            mf = KNOWN_ETH[lower]
+        elif word in KNOWN_ETH:
+            mf = KNOWN_ETH[word]
         else:
-            stem = word[:-3]
+            stem = lower[:-3]
             if stem.endswith('i'): mf = stem[:-1] + 'ies'
             elif stem.endswith(('s','sh','x','z','ch')): mf = stem + 'es'
             elif stem.endswith(('rr','tt','pp','dd','gg','nn')): mf = stem[:-1] + 's'
@@ -1144,9 +1249,11 @@ def apply_swaps(text, swap_list):
             elif len(stem) <= 2: mf = stem + 'es'
             else: mf = stem + 's'
             print(f"  WARNING: Unknown -eth '{word}' → '{mf}'", file=sys.stderr)
+        if was_upper:
+            mf = mf[0].upper() + mf[1:]
         idx = len(placeholders); sent = f"\x00E{idx}\x00"
         placeholders.append((sent, word, mf)); return sent
-    result = re.sub(r'\b[a-z]+eth\b', lambda m: eth_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
+    result = re.sub(r'\b[A-Za-z]+eth\b', lambda m: eth_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
     # ---- "did" + verb → past tense ----
     DID_SKIP = {'my', 'his', 'her', 'their', 'our', 'your', 'its', 'the', 'a', 'an',
@@ -1166,32 +1273,145 @@ def apply_swaps(text, swap_list):
                 'laman', 'lamoni', 'lehi', 'limhi', 'moroni', 'mosiah',
                 'nephi', 'noah', 'satan', 'sherem', 'zeniff'}
 
+    def _conjugate_bare_verb(verb):
+        """Return past tense for a bare verb, or None if it isn't a recognizable verb.
+        Used for both direct 'did X' and coordinated-series 'did X and Y' cases."""
+        if verb.lower() in DID_SKIP:
+            return None
+        if verb in IRREGULAR_PAST: return IRREGULAR_PAST[verb]
+        if verb.endswith('e'): return verb + 'd'
+        if verb.endswith('y') and len(verb) > 1 and verb[-2] not in 'aeiou':
+            return verb[:-1] + 'ied'
+        if (len(verb) >= 3 and len(verb) <= 5
+                and verb[-1] not in 'aeiouwxy'
+                and verb[-2] in 'aeiou' and verb[-3] not in 'aeiou'):
+            return verb + verb[-1] + 'ed'
+        return verb + 'ed'
+
     def did_verb_replace(m):
         full, verb = m.group(0), m.group(1)
-        if verb.lower() in DID_SKIP:
+        past = _conjugate_bare_verb(verb)
+        if past is None:
             return full  # not a verb, leave as-is
-        if verb in IRREGULAR_PAST: past = IRREGULAR_PAST[verb]
-        elif verb.endswith('e'): past = verb + 'd'
-        elif verb.endswith('y') and len(verb)>1 and verb[-2] not in 'aeiou': past = verb[:-1] + 'ied'
-        elif (len(verb) >= 3 and len(verb) <= 5
-              and verb[-1] not in 'aeiouwxy'
-              and verb[-2] in 'aeiou' and verb[-3] not in 'aeiou'):
-            # CVC pattern for SHORT words: double final consonant (stop→stopped, rob→robbed)
-            # Only short words — multi-syllable doublers (commit, compel) go in IRREGULAR_PAST
-            past = verb + verb[-1] + 'ed'
-        else: past = verb + 'ed'
         idx = len(placeholders); sent = f"\x00D{idx}\x00"
         placeholders.append((sent, full, past)); return sent
     result = re.sub(r'\bdid (\w+)\b', lambda m: did_verb_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
 
-    # ---- "thou" + -est fallback (catch any not already in compound swaps) ----
-    def thou_est_replace(m):
-        full, ve = m.group(0), m.group(1)
-        base = ve[:-3] if ve.endswith('est') else (ve[:-2] if ve.endswith('st') else None)
-        if not base: return full
-        idx = len(placeholders); sent = f"\x00T{idx}\x00"
-        placeholders.append((sent, full, ("You " if full[0]=='T' else "you ") + base)); return sent
-    result = re.sub(r'\b[Tt]hou (\w+est)\b', lambda m: thou_est_replace(m) if '\x00' not in m.group(0) else m.group(0), result)
+    # ---- Coordinated bare infinitives sharing an upstream "did" auxiliary ----
+    # "did rejoice and cry" → sentinel(rejoice→rejoiced) and [cry→cried]
+    # After did_verb_replace, each "did X" is a \x00D…\x00 sentinel. Walk forward
+    # from each sentinel through (,? and|or <verb>) continuations and conjugate.
+    #
+    # CRITICAL: only fires on words in IRREGULAR_PAST (known base-form verbs).
+    # Earlier version used the default +ed fallback which produced "withed",
+    # "tooked", "droved", "toed" etc. by mis-conjugating prepositions, already-
+    # past forms, and nouns. Restricting to IRREGULAR_PAST keys means we miss
+    # some regular verbs in coordinated series, but we don't break canonical
+    # text — the safety tradeoff is correct.
+    CLAUSE_BOUNDARY = set('.;:!?')
+    NEW_SUBJECT_MARKERS = {'did', 'they', 'he', 'she', 'it', 'we', 'i', 'ye', 'you',
+                           'the', 'but', 'for', 'nephi', 'alma', 'moroni', 'mormon',
+                           'lamanites', 'nephites', 'lord', 'jesus', 'god'}
+    coord_re = re.compile(r',?\s+(?:and|or)\s+(\w+)\b', re.IGNORECASE)
+
+    def _chain_strict_conjugate(verb):
+        """Strict variant of _conjugate_bare_verb for the chain post-pass.
+        Only fires on known base-form verbs (IRREGULAR_PAST keys). No default
+        +ed fallback — returns None for any unknown word."""
+        if verb.lower() in DID_SKIP:
+            return None
+        if verb in IRREGULAR_PAST:
+            return IRREGULAR_PAST[verb]
+        return None  # NO default fallback — be conservative
+
+    def _chain_coordinated_verbs(text_so_far):
+        out = []
+        sentinel_re = re.compile(r'\x00D\d+\x00')
+        pos = 0
+        while True:
+            sm = sentinel_re.search(text_so_far, pos)
+            if not sm:
+                out.append(text_so_far[pos:])
+                break
+            out.append(text_so_far[pos:sm.end()])
+            scan_start = sm.end()
+            boundary_idx = len(text_so_far)
+            for k in range(scan_start, len(text_so_far)):
+                if text_so_far[k] in CLAUSE_BOUNDARY:
+                    boundary_idx = k
+                    break
+            next_sm = sentinel_re.search(text_so_far, scan_start)
+            if next_sm and next_sm.start() < boundary_idx:
+                window_end = next_sm.start()
+            else:
+                window_end = boundary_idx
+            window = text_so_far[scan_start:window_end]
+            cursor = 0
+            rewritten = []
+            while True:
+                cm = coord_re.search(window, cursor)
+                if not cm:
+                    rewritten.append(window[cursor:])
+                    break
+                cand = cm.group(1)
+                interim = window[cursor:cm.start()].lower()
+                if any(re.search(r'\b' + re.escape(tok) + r'\b', interim)
+                       for tok in NEW_SUBJECT_MARKERS):
+                    rewritten.append(window[cursor:])
+                    break
+                past = _chain_strict_conjugate(cand)
+                if past is None:
+                    rewritten.append(window[cursor:])
+                    break
+                idx2 = len(placeholders)
+                sent2 = f"\x00D{idx2}\x00"
+                placeholders.append((sent2, cand, past))
+                rewritten.append(window[cursor:cm.start(1)])
+                rewritten.append(sent2)
+                cursor = cm.end(1)
+            out.append(''.join(rewritten))
+            pos = window_end
+        return ''.join(out)
+
+    result = _chain_coordinated_verbs(result)
+
+    # ---- (Class D fix 2026-04-12) ----
+    # The old "thou + -est" fallback at this position was DEAD CODE: by the
+    # time it ran, "thou" had already been replaced with a sentinel by the
+    # general pass, so the regex `\b[Tt]hou (\w+est)\b` could never match.
+    # Replaced with a comprehensive standalone-verb list in the main swap
+    # table (~70 entries above) plus a final sweep below for any surviving
+    # thou/thee/thy/thyself/ye stranded by the sentinel-proximity guard.
+
+    # ---- FINAL SWEEP: any surviving thou/thee/thy/thyself/ye ----
+    # These survive when earlier passes hit the sentinel-proximity guard.
+    # Context-blind sweep — by this point every legitimate compound rule has
+    # already fired. NOTE: thine/Thine intentionally NOT in this list — Class F
+    # handles them with attributive/predicative context-sensitivity.
+    _FINAL_SWEEP = [
+        (r'\bthyself\b',  'yourself'),
+        (r'\bThyself\b',  'Yourself'),
+        (r'\bthou\b',     'you'),
+        (r'\bThou\b',     'You'),
+        (r'\bthee\b',     'you'),
+        (r'\bThee\b',     'You'),
+        (r'\bthy\b',      'your'),
+        (r'\bThy\b',      'Your'),
+        (r'\bye\b',       'you'),
+        (r'\bYe\b',       'You'),
+    ]
+    def _final_sweep_replace(modern_word):
+        def _rep(m):
+            start = m.start()
+            window = result[max(0, start-2):m.end()+2]
+            if '\x00' in window:
+                return m.group(0)
+            idx = len(placeholders); sent_inner = f"\x00Z{idx}\x00"
+            placeholders.append((sent_inner, m.group(0), modern_word))
+            return sent_inner
+        return _rep
+    for pat, mod in _FINAL_SWEEP:
+        result = re.sub(pat, _final_sweep_replace(mod), result)
 
     # ---- Final expansion: sentinels → HTML <span> markup ----
     for sentinel, archaic, modern in placeholders:
@@ -2086,28 +2306,55 @@ def find_deep_structure_verses(parry_verse_map):
 
 
 def _fix_double_that(lines):
-    """Fix AICTP double-that: when 'it came to pass that [X], / that [Y]',
-    the AICTP swap consumes the first 'that' but leaves the second orphaned.
-    Pre-process: if line[i] contains 'it came to pass that' and ends with comma,
-    and line[i+1] starts with 'that ', remove that second 'that' ONLY if it is
-    truly a duplicate — not if it introduces a genuine purpose/content clause."""
-    # Words that signal a genuine new clause after "that" — don't strip
+    """Two related AICTP fixes:
+
+    1. DOUBLE-THAT: 'it came to pass that [X], / that [Y]' — the AICTP swap
+       consumes the first 'that', leaving the second orphaned when it is
+       merely a duplicate. Only strip if [Y] is not a genuine new clause.
+
+    2. LINE-SPLIT AICTP (Class I audit fix 2026-04-12): the source breaks
+       the AICTP phrase across a line boundary, e.g. 'Wherefore it shall
+       come to pass / that when the Lord...'. Here line[i] has no 'that' —
+       the 'that' on line[i+1] IS the AICTP complementizer. The per-line
+       swap rewrites line[i] to 'And so' / 'For then' / etc., leaving the
+       'that' stranded. In this case the 'that' must always be stripped,
+       regardless of what word follows it.
+    """
+    # CLAUSE_STARTERS only applies to the DOUBLE-THAT case, not LINE-SPLIT
     CLAUSE_STARTERS = {
         'thereby', 'they', 'he', 'she', 'it', 'we', 'ye', 'you', 'i',
         'those', 'these', 'this', 'the', 'his', 'her', 'their', 'our',
         'my', 'your', 'a', 'an', 'all', 'many', 'some', 'no', 'every',
         'whosoever', 'whatsoever', 'if', 'when', 'after', 'before',
     }
+    # Regex for the LINE-SPLIT case: line[i] ends with an AICTP phrase that
+    # has NOT yet consumed its own 'that'.
+    LINE_SPLIT_AICTP = re.compile(
+        r'\b(?:it\s+came\s+to\s+pass|it\s+shall\s+come\s+to\s+pass)\s*,?\s*$',
+        re.IGNORECASE,
+    )
     result = list(lines)
     for i in range(len(result) - 1):
-        if 'it came to pass that' in result[i].lower() and result[i].rstrip().endswith(','):
-            nxt = result[i + 1]
-            if nxt.startswith('that ') or nxt.startswith('That '):
-                rest = nxt[5:]  # text after "that "
-                first_word = rest.split()[0].lower().rstrip('.,;:') if rest.split() else ''
-                if first_word in CLAUSE_STARTERS:
-                    continue  # genuine clause — don't strip
-                result[i + 1] = rest
+        cur_lower = result[i].lower()
+        nxt = result[i + 1]
+        if not (nxt.startswith('that ') or nxt.startswith('That ')):
+            continue
+
+        # Case 2: LINE-SPLIT AICTP — strip the orphan 'that' unconditionally
+        if LINE_SPLIT_AICTP.search(result[i]):
+            rest = nxt[5:]  # drop "that "
+            if nxt.startswith('That ') and rest and rest[0].islower():
+                rest = rest[0].upper() + rest[1:]
+            result[i + 1] = rest
+            continue
+
+        # Case 1: DOUBLE-THAT — strip only if not a genuine new clause
+        if 'it came to pass that' in cur_lower and result[i].rstrip().endswith(','):
+            rest = nxt[5:]
+            first_word = rest.split()[0].lower().rstrip('.,;:') if rest.split() else ''
+            if first_word in CLAUSE_STARTERS:
+                continue  # genuine clause — don't strip
+            result[i + 1] = rest
     return result
 
 
