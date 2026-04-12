@@ -63,7 +63,6 @@ A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL
   --line-height: 2.35;
   --wrap-indent: 0.75em;
   --verse-gap: 2px;
-  --verse-num-display: none;
   --punct-opacity: 0;
   --font-size: 17px;
   --letter-spacing: 0em;

@@ -938,7 +938,7 @@ An adversarial review of all 26 settled rules revealed that approximately 10 are
 - Rule 4: Circumstantial clause pairing (restates the foundational test)
 - Rule 8: Framing devices attach to content (mostly true, some exceptions)
 - Rule 10: Verb + direct object on short phrases ("short" undefined)
-- Rule 13: Parallel structures stack (too broad — contradicted by same-register compression)
+- Rule 13: Parallel structures stack ONLY when each stacked element is independently atomic (revised 2026-04-12 — see update at bottom of doc)
 - Rule 19: Anaphoric/cataphoric "that" (useful heuristic, edges are fuzzy)
 - Rule 23: Narrowing vocatives (data supports the pattern but sample is small)
 
@@ -1322,6 +1322,73 @@ When these conflict, **chunking wins**. A break that aids cognitive chunking but
 This hierarchy resolves a tension that was implicit in our four-criteria framework but never made explicit. The four criteria tell us *what makes a break valid*. The cognitive hierarchy tells us *what to optimize for when the criteria leave room for multiple valid choices*.
 
 **Practical consequence:** if a break would help a reader chunk the text (criterion 1: atomic thought) but the breath is slightly long, take the break — chunking comes first. If a break would reveal a beautiful rhetorical parallel but produces a fragment that fails the atomic thought test, don't take it — chunking still comes first.
+
+---
+
+### Update — 2026-04-12
+
+#### Sense-Line Mission Clarified: We Expose Atomic Thoughts, Not Poetic Parallels
+
+After running an Isaiah block audit that initially preserved Hebrew bicolon and tricolon structures across multiple lines (the "stacked parallels" approach), Stan course-corrected with a clear prioritization that supersedes any earlier ambiguity:
+
+> "Parallels are fine, but we were trying to isolate clear ideas, not half strophes or poetic structure, except indirectly."
+
+And in a follow-up:
+
+> "Atomic thoughts trump rhetorical considerations. Our effort here is to expose SENSE-lines, not poetic parallels. While we might overlap with Parry, we're not trying to 'do Parry.'"
+
+**Three propositions, in priority order:**
+
+1. **Atomic thought is non-negotiable.** A line that fails the atomic-thought test is wrong, regardless of how beautifully it preserves a Hebrew colon, an English parallelism, or a rhetorical figure. The four-criteria hierarchy (atomic thought > image > breath > source-language syntax) is now fully resolved: atomic thought wins every collision.
+
+2. **The mission is sense-lines, not poetry layout.** Our editorial goal is to expose discrete units of thought that an ESL reader, child, or newcomer can process one bite at a time. Hebrew/Greek poetic structure is incidental to that goal. When the two align, that's a happy bonus. When they conflict, atomic thought wins.
+
+3. **Parry is a separate layer, not a target.** Donald Parry's parallelism analysis is loaded as the "Parry index" (6604 verses) and rendered as the optional **Hebrew Poetry layer** in the build. That layer exists to surface poetic structure for readers who want it. The sense-line layer is something else: a delivery substrate for atomic thoughts. The two layers may overlap by ~78% (per the earlier Parry-as-diagnostic note), but the overlap is incidental, not the design intent. We are **not** trying to make our sense-lines reproduce Parry's cola, and we should not feel compelled to preserve a Parry parallel at the cost of an atomic thought violation.
+
+#### Rule 13 Amendment — Parallel Structures Stack ONLY If Atomic
+
+**Old form (too broad):** "Parallel structures stack vertically — mirror parallel elements across lines to show rhetorical pattern."
+
+**New form:** "Parallel structures stack vertically **only when each stacked element is itself independently atomic**. If stacking a parallel produces fragment lines (subject without verb, verb without complement, restrictive relative split from antecedent), merge the stack into atomic-thought-sized units even if the rhetorical mirror is lost."
+
+**Worked example — 2 Ne 19:2 (Isaiah 9:2, the Galilean light verse):**
+
+The text was previously rendered as four lines preserving a parallel bicolon structure:
+```
+The people that walked in darkness
+have seen a great light;
+they that dwell in the land of the shadow of death,
+upon them hath the light shined.
+```
+
+Hebrew has this as exactly two cola. The four-line English version splits each colon at the relative-clause / subject-verb seam, producing four fragments — the first half of each colon ("The people that walked in darkness" / "they that dwell in the land of the shadow of death") is a hanging subject, not an atomic thought.
+
+Corrected to two lines (one per Hebrew colon, each independently atomic):
+```
+The people that walked in darkness have seen a great light;
+they that dwell in the land of the shadow of death, upon them hath the light shined.
+```
+
+The parallelism is still visible — two lines mirrored — but now each line stands as a complete idea. Stacking the parallel halves did not require fragmenting them; the merge accomplished both goals at once. When stacking and atomicity conflict, merge.
+
+**Where this rule applies most:** Isaiah blocks, Psalm-like passages, prophetic oracles in Mosiah/Alma, and any place where the editor was tempted to mirror Hebrew bicola or tricola at the cost of atomic-thought integrity. The April Isaiah audit caught ~20 instances in 2 Nephi alone where the old Rule 13 had over-stacked.
+
+#### What This Does NOT Mean
+
+- **It does NOT mean "merge all parallels."** Where each parallel element is independently atomic, stacking is still good and still serves rhetorical-structure revelation (criterion 3). The corrected rule only forbids stacking that *creates* fragments.
+- **It does NOT mean "ignore Parry."** Parry remains a useful diagnostic — when a Parry parallel break-point lies inside one of our sense-lines, that's still worth examining. It just means we don't always defer to Parry; we defer to atomic thought.
+- **It does NOT mean "Hebrew structure is irrelevant."** Hebrew colometry is one of the four criteria (the "source-language syntax" servant criterion). It still informs editorial judgment. It just doesn't outrank atomic thought.
+
+#### Consequences Already Applied
+
+- 21 Cat A merges in the 2 Nephi Isaiah block (chapters 8, 12, 13, 15, 18, 19, 20, 21, 23) committed in the April 12 session
+- 1 Cat A merge in Mosiah 14 (Isaiah 53:2 "tender plant + dry ground")
+- ~19 Cat B borderlines flagged for separate per-case review
+
+#### Consequences Still Pending
+
+- A Cat B borderline review of the Isaiah audit findings (cases where atomic-thought says merge but rhetorical/stacking arguments push back)
+- Possible re-audit of other Hebrew-poetry-influenced passages: 2 Nephi 4 (Psalm of Nephi), Jacob 5 (allegory of the olive tree), Alma 36 (chiasm), Mosiah 5, 3 Nephi 22-25 (Isaiah/Malachi reuse) — with the corrected Rule 13 in hand
 
 ---
 *Last updated: 2026-04-12*

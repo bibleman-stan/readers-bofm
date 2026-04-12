@@ -220,11 +220,12 @@ TTS audio reads `data-orig` (authentic text), NOT `data-mod` (modern). Never cha
   --line-height: 2.35;
   --wrap-indent: 0.75em;
   --verse-gap: 2px;
-  --verse-num-display: none;
   --punct-opacity: 0;
   --font-size: 17px;
 }
 ```
+
+Verse-number visibility is controlled by a body class (`body.hide-verse-num` hides them) toggled from the bottom settings sheet, not by a CSS variable. Default state: visible. Persisted to localStorage as `bomreader-verse-num`. Punctuation visibility is similarly controlled by `body.hide-punct` (default: hidden); the `--punct-opacity` variable above is the older mechanism and may be retired in the future.
 
 ---
 
