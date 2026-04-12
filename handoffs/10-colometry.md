@@ -1205,4 +1205,102 @@ The rule "purpose clauses break" is refined: purpose clauses ("that they might,"
 Most common violation: "know/knew" split from "that" clause (17 instances). Concentrated in earlier-edited books (1 Nephi–Jacob) before rules were formalized. Mosiah–Alma is the cleanest section (0.076%).
 
 ---
+### Update — 2026-04-11 (third entry): Harmonization with Reader's GNT
+
+The sister project Reader's GNT (`C:\Users\bibleman\repos\readers-gnt\`) has been independently developing colometric methodology for the Greek New Testament. A side-by-side comparison of `handoffs/02-colometry-method.md` (GNT) with this document (BOM) reveals that both projects have converged on the **same four criteria** but with slightly different framing and ordering. The GNT formulation is sharper and more honest about what grammar is actually doing. We are harmonizing the BOM doc to match.
+
+#### The Four Criteria (Harmonized Formulation)
+
+These supersede the earlier ordering. The criteria are the same; the framing is sharper.
+
+**1. Atomic Thought (PRIMARY)**
+
+Each line must contain one complete predication — a unit of meaning that can stand on its own without requiring the next line to resolve its subject, verb, or complement. A line that requires the next line to complete its sense is incomplete. This is the foundational test.
+
+**2. Single Image (STRONG)**
+
+Each line should paint a single image or picture in the mind. If a line contains two distinct images, it's a candidate for splitting. If a line contains no complete image, it may need merging with its neighbor. The image test sharpens the atomic thought test by asking: "what does the reader SEE here?"
+
+**3. Breath Unit (SECONDARY)**
+
+Each line can be delivered in one breath at natural reading pace. This is the oral-delivery criterion. Very short fragments (1–2 words) are rarely valid unless they are complete predications (imperatives, vocatives-as-commands, classical *commata*). Very long lines likely contain multiple thoughts.
+
+**4. Source-Language Syntax (SERVANT)**
+
+Line breaks are informed by the clause and syntax structure of the source language — for the BOM Reader, English clause structure (with awareness of underlying Hebrew patterns where relevant). Conditional constructions, subordinating conjunctions, participial phrases, discourse markers, and verb-complement bonds all signal natural break points.
+
+**This criterion serves the first three — it does not override them.** Grammar helps us *find* where atomic thoughts, images, and breath units naturally break. **If a grammatical rule produces a line that isn't an atomic thought, the rule is wrong, not the criteria.** Grammar reveals structure that already exists in the text; it doesn't create structure.
+
+#### Why the Reordering Matters
+
+The previous BOM formulation put syntax FIRST as a "floor — never violate." The harmonized formulation puts syntax LAST as a *servant* to the first three criteria. These positions are operationally identical (they produce the same edits in every case we've tested) but conceptually different:
+
+- **Old framing:** "Grammar trumps everything; you can't break inside a syntactic bond."
+- **New framing:** "Atomic thought trumps everything; grammar helps us find where atomic thoughts naturally break."
+
+The new framing is more honest because:
+1. We don't break because grammar permits it; we break because the line is an atomic thought.
+2. The obligatory complement rule (verbs that require their "that" clause) is enforced by both framings — but the new framing explains *why* (the result wouldn't be atomic) rather than just saying "syntax forbids it."
+3. It aligns with Marschall (2023) and Habineck (1985), who say "almost any constituent can, under the right circumstances, be a côlon" — meaning grammar is not the primary criterion, *completeness of thought* is.
+
+#### What Stays BOM-Specific
+
+The harmonization changes the framing, not the content. All BOM-specific rules and refinements remain in force:
+
+**Rules unique to BOM (or developed here first):**
+- **Wayyehi rule (revised):** AICTP is an indivisible discourse marker opening an FEF; "that" leads its clause, not trailing the formula
+- **"Expedient that" idiom integrity** (Rule 2)
+- **Date/colophon formula rule:** editorial timestamps stay on one line
+- **"Insomuch that" degree vs. result rule:** 178 instances classified, image test for borderline cases
+- **Obligatory vs. optional complement rule:** verb valency analysis (suppose, understand, command, grant, desire, witness, modal+know all merge; say, testify, declare, hear may break)
+- **Semantic grouping principle for compound lists:** items sharing a closer semantic relationship stay on one line; breaks fall at domain boundaries
+- **Compound list break signals:** elided auxiliary, possessive restart, demonstrative, relative clause
+- **AICTP variants treatment** (Wayyehi/FEF framework)
+- **Rule 25 elimination:** "And thus we see" merged with complement
+- **Imperative + emphatic ye/thou** dropped (90+ phrase swaps)
+- **The complete settled rules list** (Rules 1–26 with Rule 25 eliminated)
+- **FEF (Front-End Frame) concept** with four-criteria definition
+- **Skousen's breaks vs. Stan's breaks** observations
+- **The 26 rules and their adversarial audit results**
+
+**The corpus-specific application data:**
+- All editorial work, swap system, and corpus-wide audits remain BOM-specific
+- The 0.20% violation rate is BOM-specific
+- The "I say unto you" genre analysis (273 instances) is BOM-specific
+
+#### Contribution Back to GNT: Obligatory Complement Rule
+
+The obligatory vs. optional complement rule (developed during our March-April 2026 sessions) should be exported to the GNT project. Greek has the same verb valency distinctions:
+
+| BOM verb (English) | Greek equivalent | Class |
+|-------------------|------------------|-------|
+| say, said | λέγω, εἶπεν | OPTIONAL — can break |
+| testify, declare | μαρτυρέω, ἀπαγγέλλω | OPTIONAL — can break |
+| see, behold | ὁράω, βλέπω | OPTIONAL — can break |
+| know | γινώσκω, οἶδα | CONTEXT-DEP (modal makes obligatory) |
+| suppose, think | δοκέω, νομίζω | OBLIGATORY — must merge |
+| command | κελεύω, ἐντέλλομαι | OBLIGATORY — must merge |
+| desire | θέλω, ἐπιθυμέω | OBLIGATORY — must merge |
+| show (demonstrate) | δείκνυμι, δηλόω | OBLIGATORY — must merge |
+| witness | μαρτυρέω + ὅτι | CONTEXT-DEP |
+
+The period test ("can you put a period after the verb phrase and have a complete sentence?") works in Greek too. This rule should be added to GNT's `02-colometry-method.md` as a refinement of criterion 4 (Source-Language Syntax).
+
+#### What GNT Has That BOM Should Adopt (Future Work)
+
+The GNT doc has several refinements that we should consider adopting:
+
+1. **Ellipsis Principle (formalized):** An elided verb is a real predication. Triadic object lists and parallel structures with shared verbs each count as separate atomic thoughts. We've been applying this informally — should be codified.
+
+2. **Subordinate Clause Attachment (adjectival vs. adverbial):** Adjectival subordinate clauses (modifying a noun) merge with their head; adverbial subordinate clauses (frames of time, purpose, result) can stand alone. Cleaner than our current treatment.
+
+3. **Universal Vocative Rule:** All vocatives stand alone (with one exception: repeated vocatives as a rhetorical unit, e.g., "Lord, Lord"). Cleaner than our nuanced vocative-as-command vs. vocative-as-appeal distinction.
+
+4. **Participial Phrase Test (refined):** Default merge for circumstantial participles; split only when the participle is a supplementary predication via implicit verb repetition. This is sharper than our current treatment.
+
+5. **Paradox Pairs:** Antithetical pairs forming a single paradox merge ("seeing they may see and not perceive"). We've been doing this implicitly — should be codified.
+
+These are flagged as **adoption candidates** for a future BOM editorial pass.
+
+---
 *Last updated: 2026-04-11*
