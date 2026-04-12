@@ -149,7 +149,11 @@ COMPOUND_SWAPS = [
     ("destroyed exceedingly", "destroyed very"),
     ("fall exceedingly", "fall very"), ("fell exceedingly", "fell very"),
     ("exercising exceedingly great", "exercising tremendous"),
-    # (notwithstanding+being phrases handled in special-case logic below)
+    # ── "fear lest" collision: avoid "fear for fear that" stutter ──
+    ("fear lest", "afraid that"), ("Fear lest", "Afraid that"),
+    ("for fear lest", "for fear that"),
+    # (Sentence-initial "Notwithstanding [pronoun]" + "notwithstanding+being"
+    #  phrases handled in special-case logic below — see _notw_phrases)
     # ── Imperative + emphatic ye/thou → drop pronoun ──
     # Multi-word patterns (must fire before simple ye→you swap)
     ("Depart ye, depart ye, go ye out", "Depart, depart, go out"),
@@ -940,6 +944,7 @@ def apply_swaps(text, swap_list):
         if archaic.lower() == 'notwithstanding':
             # First: handle "notwithstanding X being" absolute participials as phrase swaps
             _notw_phrases = [
+                # Absolute participial constructions (avoid "even though X being" awkwardness)
                 (r'notwithstanding he being holy', 'even though he was holy'),
                 (r'notwithstanding they being led', 'even though they were led'),
                 (r'notwithstanding there being many churches', 'even though there were many churches'),
@@ -947,6 +952,14 @@ def apply_swaps(text, swap_list):
                 (r'notwithstanding I being young, was large in stature', 'even though I was young, I was large in stature'),
                 (r'notwithstanding their number being so much greater', 'even though their number was so much greater'),
                 (r'notwithstanding the Lamanites being cut off', 'even though the Lamanites were cut off'),
+                # Sentence-initial "Notwithstanding [pronoun]" — preserve adversative force with "But"
+                (r'Notwithstanding they', 'But even though they'),
+                (r'Notwithstanding we', 'But even though we'),
+                (r'Notwithstanding he', 'But even though he'),
+                (r'Notwithstanding she', 'But even though she'),
+                (r'Notwithstanding I', 'But even though I'),
+                (r'Notwithstanding ye', 'But even though you'),
+                (r'Notwithstanding it', 'But even though it'),
             ]
             for phrase, repl in _notw_phrases:
                 pat = re.compile(re.escape(phrase), re.IGNORECASE)
