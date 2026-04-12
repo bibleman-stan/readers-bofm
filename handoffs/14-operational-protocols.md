@@ -197,6 +197,62 @@ The "agentic horde" is not a metaphor. It's the operating model.
 
 ---
 
+## I. Lessons from the 2026-04-12 Swap Engine + Colometry Sessions
+
+The April 12 sessions ran the parallel-dispatch pattern at scale — 14 audit agents → 10 patch agents → application → round-2 verification — and surfaced several refinements worth codifying.
+
+### I1. Audit extractor must preserve nested structure
+
+The first audit extracted modernized text from `books/*.html` with a regex `<span class="swap[^"]*"[^>]*>[^<]*</span>` that uses `[^<]*` for the inner content. This **breaks when there's a nested `<span class="gloss">` inside a swap span**, which happens for any swap that overlaps a contextual gloss. Result: the swap doesn't get matched, the un-modernized form leaks into the audit text, and agents flag false positives ("Wo unto" still surviving) for words that the live build correctly modernizes.
+
+**Rule:** before dispatching audit agents on extracted text, validate the extractor against a known-good swap that overlaps a gloss. If the extractor can't handle it, fix the extractor first — agent reports built on broken extracts will cost more time than the extractor fix.
+
+### I2. Distinguish stale-extract flags from live-build flags
+
+Round 2 audits dispatched after a code change but before a re-extract will read the *previous* extracted text and report bugs that have already been fixed. Always **re-extract immediately after rebuilding** before dispatching round-N agents. Better: have the audit agents read the live HTML directly so there's no separate extract step that can go stale.
+
+### I3. Patch agents that produce text patches > patch agents that edit files
+
+When 10 patch agents work on the same file (`build_book.py`), having each one apply its own edits causes race conditions, "file modified since read" errors, and merge conflicts. The pattern that works:
+
+1. Each agent **investigates** its assigned class
+2. Each agent **returns a patch as text** — exact `old_string` / `new_string` blocks plus rationale
+3. The parent agent **aggregates** all patches and **applies them sequentially** with the Edit tool
+4. Single rebuild at the end
+
+This serializes the file writes (safe) while parallelizing the investigation (fast).
+
+### I4. Always pair "make this safer" with regression spot-checks
+
+When you tighten a rule to be more conservative (e.g., restrict the Class B coordinated-verb chain from default `+ed` fallback to IRREGULAR_PAST keys only), immediately spot-check the regression cases the prior version was breaking AND the legitimate cases the prior version was catching. The first version of the chain post-pass produced "withed/tooked/droved/toed/beganned" by mis-conjugating non-verbs. The fix produced clean output for the regression cases AND lost a few legitimate regular-verb conjugations — that tradeoff was acceptable, but only verifiable by spot-checking both directions.
+
+### I5. The "find the class, then build a scanner" pattern is faster than agent dispatch for mechanical patterns
+
+Three colometric over-split classes were identified by user observation in Alma 18:
+- Stranded adverbial fragments
+- Verb + obligatory "that" complement splits
+- Agent-of-passive over-splits
+
+Each was made mechanically detectable by a regex scanner. **350 + 11 = 361 merges applied across 15 books in ~10 minutes of compute**. Reserving agent judgment only for the genuinely-ambiguous residue (the 800–900 lower-confidence candidates that don't match any narrow phrase pattern).
+
+**Rule:** before dispatching agents to do colometric judgment, check whether the class can be detected mechanically by:
+- Line N tail shape (verb form, ending punctuation)
+- Line N+1 opener (preposition, conjunction, "that", named pattern)
+- Line N+1 absence of finite verb / clause boundary
+
+If yes, build a scanner. If no, dispatch agents. The scanner approach is faster, more deterministic, and produces a discrete reviewable commit.
+
+### I6. Multi-class scanners should run as separate commits, not one bundle
+
+Each colometric class should commit independently:
+- Stranded adverbials commit (247 merges)
+- Verb+that commit (103 merges)
+- Agent-of-passive commit (11 merges)
+
+Reasons: easier to revert if one class goes wrong; cleaner git log; class-by-class diff inspection is humanly readable; and it forces explicit articulation of each class's diagnostic shape in the commit message.
+
+---
+
 ## H. Origin of These Protocols
 
 These protocols were established in the Reader's GNT project after experience showed that ad hoc workflows don't scale. The GNT team's specific failure modes that led to each protocol:
@@ -213,4 +269,5 @@ The BOM Reader project has hit the same failure modes during the April 2026 sess
 ---
 
 *Created: 2026-04-12*
+*Last updated: 2026-04-12 (late)*
 *Origin: Ported from Reader's GNT project (readers-gnt/handoffs/04-editorial-workflow.md)*

@@ -1391,4 +1391,117 @@ The parallelism is still visible — two lines mirrored — but now each line st
 - Possible re-audit of other Hebrew-poetry-influenced passages: 2 Nephi 4 (Psalm of Nephi), Jacob 5 (allegory of the olive tree), Alma 36 (chiasm), Mosiah 5, 3 Nephi 22-25 (Isaiah/Malachi reuse) — with the corrected Rule 13 in hand
 
 ---
-*Last updated: 2026-04-12*
+
+### Update — 2026-04-12 (late)
+
+#### Three new mechanically-detectable colometric over-split classes
+
+User pattern recognition during a manual review of Alma 18 surfaced three classes of over-splits that can be detected mechanically by regex on v2 source files. Each got its own scanner script and discrete commit.
+
+**Class 1: Stranded adverbial fragments**
+
+Diagnostic shape:
+- Line N is a complete predication (subject + verb [+ object]), ending in a noun or comma — never in conjunction/preposition/article
+- Line N+1 begins with a preposition (`for|in|on|at|by|with|from|of|upon|before|after|during|previous|according|throughout|until|while|since|beyond|among|through|against|near|into|unto|toward|towards|amid|amidst|round`)
+- Line N+1 contains no finite verb
+- Line N+1 typically modifies line N as a temporal, manner, locative, or instrumental adjunct
+
+The fragment exists only as a modifier of line N. Atomic-thought primacy says it should merge.
+
+Worked example (Alma 18:14):
+```
+Before:
+  And the king answered him not
+  for the space of an hour, according to their time,
+After:
+  And the king answered him not for the space of an hour, according to their time,
+```
+
+Subclasses observed: duration ("for the space of"), temporal anchor ("previous to"), manner ("according to"), locative ("in the city of"), instrumental ("by the power of"), causal ("because of"), source ("from the X"), directional ("into/unto the X").
+
+**High-confidence Cat A patterns** (auto-merged in 2026-04-12 commit):
+- `for the space of [time]`
+- `according to`
+- `after the manner of`
+- `previous to`
+- `in the days/year/space/time/name/midst/presence of`
+- `by the power/words/spirit/hand/mouth/gift/name/commandment of`
+- `in/to the land/city/valley/wilderness/temple/borders/country of`
+- `even unto`
+- `throughout all/the`
+
+Resulted in **247 mechanical merges** in the first pass.
+
+The remaining ~1015 lower-confidence candidates need finer sub-class scans (Stage 2) plus eventual editorial agent judgment for the residue.
+
+Scanner: `C:/tmp/apply_oversplit_merges.py` (high-confidence subset only).
+
+**Class 2: Verb + obligatory "that" complement splits**
+
+Diagnostic shape:
+- Line N ends in a complement-taking verb: `heard|said|knew|supposed|believed|taught|commanded|promised|sworn|witnessed|declared|remembered|perceived|told|...`
+- Line N+1 starts with `that ...`
+- The "that" clause is the obligatory content of the verb (not a relative pronoun)
+
+**Excludes** RELATIVE_RISK_VERBS (`saw|see|beheld|behold`) where "that" is often a relative pronoun rather than a complementizer.
+
+Worked example (Alma 18:10):
+```
+Before:
+  Now when king Lamoni heard
+  that Ammon was preparing his horses and his chariots
+After:
+  Now when king Lamoni heard that Ammon was preparing his horses and his chariots
+```
+
+Resulted in **103 mechanical merges**.
+
+Scanner: same script as Class 1.
+
+**Class 3: Agent-of-passive over-splits**
+
+Diagnostic shape:
+- Line N contains a passive predication ending in a past participle (`was/were/be/been/is/are/am/being + Xed/Xen/Xt`, OR a bare past participle from a curated list: `appointed|given|made|sent|done|taught|called|brought|taken|led|killed|slain|wounded|destroyed|delivered|received|saved|redeemed|blessed|cursed|chosen|founded|prepared|established|known|written|spoken|told|shown|baptized|ordained|anointed|crowned|...`)
+- Line N+1 begins with `by [the/a/his/their/our/my/your/its/whom/Proper Noun]`
+- Line N must NOT end in semicolon (semicolon = clause boundary; the "by" then introduces an instrumental of the next clause, not the agent of this one)
+
+**Distinct from stranded adverbials**: an instrumental "by the power of God" modifying an active verb is a circumstantial adjunct (Class 1). An agent "by the father of Lamoni" following a passive "appointed" is the **obligatory missing argument** the passive demoted from subject position. The passive verb is incomplete in atomic-thought terms without it.
+
+Worked example (Alma 18:9):
+```
+Before:
+  for there had been a great feast appointed at the land of Nephi,
+  by the father of Lamoni,
+After:
+  for there had been a great feast appointed at the land of Nephi, by the father of Lamoni,
+```
+
+Caught one false positive in dry-run: Mosiah 15:8 (quoting Isaiah 53:11) "and shall be satisfied; / by his knowledge shall my righteous servant justify many" — the line ended in `;` and the "by" introduced an instrumental of the next clause, not the agent of "satisfied". Added the semicolon-rejection guard.
+
+Resulted in **10 mechanical merges**.
+
+Scanner: `C:/tmp/scan_agent_of_passive.py`.
+
+#### Workflow established for finding new colometric classes
+
+The Alma 18 sessions demonstrated a repeatable workflow:
+1. **User-observed instance** in a manual review → triggers class hypothesis
+2. **Articulate the diagnostic shape** (line N condition + line N+1 condition + filters)
+3. **Build a regex scanner** that bins all v2 source files by the shape
+4. **Dry-run** and inspect a sample for false positives
+5. **Add filters** for any false-positive classes found (e.g., the semicolon rejection)
+6. **Apply** as a separate commit so the class can be reverted if it goes wrong
+7. **Add the scanner to handoffs** so the class can be re-run in future sessions
+
+This is significantly faster than per-case agent judgment when the class is mechanically detectable. Reserve agents for the genuinely-ambiguous residue.
+
+#### Standing question: stage 3 deferred residue
+
+After the high-confidence Cat A passes for stranded adverbials, verb+that, and agent-of-passive, an estimated **800–900 lower-confidence stranded-adverbial candidates** remain. These don't match any narrow phrase pattern and need either:
+- (a) Finer sub-class scans for hidden narrow patterns ("in behalf of", "from generation to generation", "unto all nations" etc.)
+- (b) Editorial judgment via dispatched agents
+
+This is the next colometry attack surface.
+
+---
+*Last updated: 2026-04-12 (late)*
