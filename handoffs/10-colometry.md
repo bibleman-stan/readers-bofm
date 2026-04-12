@@ -1303,4 +1303,25 @@ The GNT doc has several refinements that we should consider adopting:
 These are flagged as **adoption candidates** for a future BOM editorial pass.
 
 ---
-*Last updated: 2026-04-11*
+### Update — 2026-04-12: Cognitive Hierarchy
+
+#### When Criteria Conflict, the Priority Order Is
+
+**Chunking > Oral > Rhetorical**
+
+This ordering was established in the Reader's GNT project (`readers-gnt/handoffs/04-editorial-workflow.md`, session 6) and is adopted here for consistency. It governs editorial decisions when the four criteria leave ambiguity.
+
+1. **Cognitive chunking** — line breaks first serve comprehension. Each line is a unit the reader can process as one cognitive bite. This is the foundational purpose of colometric formatting.
+
+2. **Oral delivery** — line breaks support read-aloud at natural breath pace. This is the ESL/youth/audio purpose — central to the BOM Reader's design for ESL readers, children, and newcomers.
+
+3. **Rhetorical structure revelation** — line breaks make the author's compositional architecture visible (parallels, escalation, climax, chiasm). This is the literary/scholarly purpose, and what makes the colometric output valuable for stylometric analysis.
+
+When these conflict, **chunking wins**. A break that aids cognitive chunking but flattens some rhetoric is acceptable. A break that reveals rhetoric but creates a fragment that can't be processed is not. Likewise, a break that serves oral delivery but breaks an atomic thought has the order wrong.
+
+This hierarchy resolves a tension that was implicit in our four-criteria framework but never made explicit. The four criteria tell us *what makes a break valid*. The cognitive hierarchy tells us *what to optimize for when the criteria leave room for multiple valid choices*.
+
+**Practical consequence:** if a break would help a reader chunk the text (criterion 1: atomic thought) but the breath is slightly long, take the break — chunking comes first. If a break would reveal a beautiful rhetorical parallel but produces a fragment that fails the atomic thought test, don't take it — chunking still comes first.
+
+---
+*Last updated: 2026-04-12*

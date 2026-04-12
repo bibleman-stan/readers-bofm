@@ -19,6 +19,7 @@ This directory contains structured project documentation organized by domain. Ea
 | 11 | `11-research-ideas.md` | Potential papers: colometric stylometry, functional translation, sense-lines as silent commentary |
 | 12 | `12-reformatter-rules.md` | Mechanical reformatter rules (M0-M10), editorial rules (E1-E11), calibration data, -eth conjugation, script thresholds |
 | 13 | `13-preliminary-linguistic-data.md` | Quantified colometric metrics by book: AICTP rates, voice markers, structural metrics, preliminary voice taxonomy |
+| 14 | `14-operational-protocols.md` | "Work smarter" patterns: parallel agent dispatch, two-phase pipeline changes, find-the-class bug fixes, adversarial testing, cognitive hierarchy |
 
 ## Update Protocol
 
@@ -100,4 +101,10 @@ These can be kept for historical reference or deleted.
 - Navigation refactor shipped; updates across 02, 04, 05, 06, 07.
 
 ---
-*Last updated: 2026-03-29*
+### Update — 2026-04-12
+- Added `14-operational-protocols.md` — codifies the "work smarter" patterns ported from Reader's GNT project
+- Added cognitive hierarchy (chunking > oral > rhetorical) to `10-colometry.md`
+- Standard Operating Procedures (find-the-class, two-phase pipeline pattern, parallel dispatch discipline, adversarial testing) are now mandatory operating discipline, not optional
+
+---
+*Last updated: 2026-04-12*

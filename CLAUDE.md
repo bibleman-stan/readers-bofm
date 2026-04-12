@@ -33,6 +33,7 @@ Before any substantive work, read the handoffs directory in order. Each file is 
 | `handoffs/08-future-plans.md` | Spanish fork, Studying Edition, shelved ideas |
 | `handoffs/09-bugs-fixed.md` | Historical bug fixes and key design decisions |
 | `handoffs/10-colometry.md` | Sense-line theory and editorial methodology — READ THIS CAREFULLY |
+| `handoffs/14-operational-protocols.md` | "Work smarter" patterns: parallel dispatch, two-phase pipeline, find-the-class fixes — READ THIS CAREFULLY |
 
 ---
 
