@@ -873,6 +873,9 @@
     vertical-align: super;
     display: inline;
   }
+  body.hide-verse-num .verse-num {
+    display: none;
+  }
 
   /* ── Verse layer (default: visible) ── */
   .line-para {
@@ -2213,6 +2216,16 @@
         <span class="toggle-track"></span>
       </label>
     </div>
+    <div class="toggle-row">
+      <div class="toggle-info">
+        <div class="toggle-name">Verse numbers</div>
+        <div class="toggle-desc">Show small superscript verse numbers</div>
+      </div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="versenum-toggle" checked onchange="toggleVerseNumbers(this.checked)">
+        <span class="toggle-track"></span>
+      </label>
+    </div>
   </div>
 
   <div class="sheet-section">
@@ -2318,6 +2331,11 @@
     <div class="feature-card">
       <div class="feature-name">Section headings</div>
       <div class="feature-desc">Adds section headings throughout the text. These short, descriptive titles mark natural breaks in the narrative or teaching — like chapter titles in a novel. They help you see the structure of each book and understand where one thought ends and the next begins.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-name">Verse numbers</div>
+      <div class="feature-desc">Small superscript verse numbers are shown by default to help you locate specific verses. Turn this off for a cleaner reading experience that lets the text flow without interruption — useful when you want to read a chapter as a continuous passage rather than verse by verse. Your preference is remembered.</div>
     </div>
 
     <div class="feature-card">
@@ -2952,6 +2970,18 @@
     var toggle = document.getElementById('sections-toggle');
     if (toggle) toggle.checked = sectionsOn;
   };
+  window.toggleVerseNumbers = function(on) {
+    var visible;
+    if (typeof on === 'undefined') {
+      visible = document.body.classList.contains('hide-verse-num');
+    } else {
+      visible = on;
+    }
+    document.body.classList.toggle('hide-verse-num', !visible);
+    var toggle = document.getElementById('versenum-toggle');
+    if (toggle) toggle.checked = visible;
+    try { localStorage.setItem('bomreader-verse-num', visible ? '1' : '0'); } catch(e) {}
+  };
   window.toggleCovenant = function(on) { document.body.classList.toggle('covenant-active', on); };
   window.toggleComments = function(on) {};
 
@@ -3491,6 +3521,15 @@
     // Set default body classes for reading mode (force sense-line mode only)
     document.body.classList.add('hide-punct');
     document.body.classList.add('show-lines');
+    // Restore verse-number visibility preference (default: visible)
+    try {
+      var vnPref = localStorage.getItem('bomreader-verse-num');
+      if (vnPref === '0') {
+        document.body.classList.add('hide-verse-num');
+        var vnToggle = document.getElementById('versenum-toggle');
+        if (vnToggle) vnToggle.checked = false;
+      }
+    } catch(e) {}
     // Clear any leftover layer classes from old UI
     document.body.classList.remove('show-parallels', 'show-parry', 'show-deity', 'show-spirit', 'sources-quotations', 'sources-allusions', 'show-kjv-diff', 'show-geo');
     applyTabSettings('read');
