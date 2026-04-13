@@ -206,4 +206,43 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 - Generate 2 Nephi 25-33 audio when ElevenLabs credits reset
 
 ---
-*Last updated: 2026-04-11*
+
+### Update — 2026-04-13 — Alma 17-22 sweep + Classes A–H scanner harvest
+
+**Completed this session:**
+- 28 atomic-thought merges applied across Alma 17-22 from 7-agent parallel sweep (commit `8388e4f`)
+- Swap engine fixes for Mosiah 28:3 "tremble" regression (infinitive-context detection in `_chain_coordinated_verbs`)
+- Search NEAR operator bug fixed for `(might OR mighty) NEAR9 call` (refactored `parseBooleanQuery` to return node objects with term lists)
+- Service worker bumped to v128
+- **8 new colometric-class scanners built and run corpus-wide** (see `handoffs/10-colometry.md` update for the full table). Scanners live at `C:/tmp/scan_class_{A..H}_*.py`.
+
+**Next actionable work — Class A–H merge application (pending Stan review):**
+
+| Class | Hits | Next step |
+|---|---:|---|
+| **A** compound-subject stranding | 99 (~91 deduped) | Review first-20 sample; dedupe 3-line duplicates; filter resumptive-verb FPs; apply Cat A subset |
+| **B** ditransitive object stranding | 26 | Filter passives + "of promise" noun-FPs; review ~20 high-conf survivors |
+| **C** "concerning" topic stranding | 18 | Review all 18 HIGH candidates; most look Cat A-clean |
+| **D** fixed idiom split | 0 | Nothing to do — corpus is clean for the 20-item idiom list |
+| **E** appositional relative | 13 strict / 309 broad | Tier 1 (13) worth focused review; Tier 2 noisy — tighten N+1 word-count filter before acting |
+| **F** subject + adjunct stranding | 94 / 51 | Tier 1 "having/being" (94) is the biggest pathological class in the corpus; Alma dominates (35); apply in stages |
+| **G** cataphoric / hollow head | 56 / **2** | Tier 2 (2 hits, both Alma 22:21 / 1 Ne 18:10 "fear exceedingly / lest") are both clean merges; Tier 1 needs tighter filter (require framing opener) |
+| **H** "or" restatement | 33 / 15 | Tier 1 needs "or that" complementizer filter + Cat B/C flags (Mosiah 15:5 Son/Father, Jacob 4:6 parallel triplet) before applying |
+
+**Priority order for next session:**
+1. Class H Tier 1 — filter & apply (~25 Cat A merges after flagging Cat B/C)
+2. Class G Tier 2 — apply 2 hits immediately
+3. Class C — apply 18 HIGH candidates (most look Cat A)
+4. Class A — dedupe + filter resumptive-verb FPs + apply
+5. Class B — filter passives + apply survivors
+6. Class F — largest class, requires staged review (35 in Alma alone)
+7. Class E Tier 1 — focused 13-hit review
+
+**New principles added to handoffs:**
+- Length caps removed from merge scanners (`10-colometry.md` + `14-operational-protocols.md`)
+- Multi-agent atomic-thought scanning workflow documented (`14-operational-protocols.md`)
+- Content-based replacement over line-number replacement (`14-operational-protocols.md`)
+- Write merge scripts to files, never bash heredocs (`14-operational-protocols.md`)
+
+---
+*Last updated: 2026-04-13*

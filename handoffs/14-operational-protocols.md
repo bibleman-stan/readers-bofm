@@ -269,5 +269,41 @@ The BOM Reader project has hit the same failure modes during the April 2026 sess
 ---
 
 *Created: 2026-04-12*
-*Last updated: 2026-04-12 (late)*
+*Last updated: 2026-04-13*
 *Origin: Ported from Reader's GNT project (readers-gnt/handoffs/04-editorial-workflow.md)*
+
+---
+
+### Update — 2026-04-13 — Atomic-thought scanning + parallel agent dispatch
+
+Two operational insights from the Alma 17-22 sweep session:
+
+**1. Length caps are a category error for atomic-thought scanning.**
+
+Previous scanners used hard line-length caps (140, 200 chars) to avoid producing "too long" merges. Stan's correction: *"line/character limit should not be arbitrary right, if something's not an atomic thought, it's not."* Later refined: *"breath unit should give us pause and ask if there IS another way to consider the text because people generally don't write/speak more than a coherent breath unit."*
+
+Protocol: **drop length caps from merge scanners.** The atomic-thought test is the only criterion. If a correctly-merged atomic thought happens to be long, that's information — either it genuinely is one thought, or the original text is doing something unusual at that spot that deserves a closer look. Length should inform Category B/C flagging, not be a mechanical gate.
+
+**2. "Find the class" is a multi-agent atomic-thought scan, not a regex-first exercise.**
+
+Stan's complaint about reactive scanners: *"i'm discouraged to continue to see clear non-atomic stuff right there in alma 18... why are these still all non-complete atomic thought units... what pattern have we not been looking for?"*
+
+The problem: each scanner catches one known shape, so each new example exposes a gap, not a fix.
+
+The fix (confirmed working this session): **when you've hit the reactive wall, dispatch an atomic-thought *scanning* agent — not a regex scanner — to read a contiguous range in natural-language-judgment mode and report any two-line pair that fails the atomic-thought test regardless of shape.** That agent *discovers* new classes by looking at what it flags that your existing regex classes don't cover.
+
+This session's dispatch pattern that worked:
+- 6 per-chapter agents (Alma 17, 18, 19, 20, 21, 22), each doing atomic-thought scanning across their chapter in parallel
+- 1 full-range agent reading Alma 17-22 end-to-end looking for *class-level* patterns
+- Merge results were aggregated into one content-matched Python script saved to `C:/tmp/` (**not** a bash heredoc — apostrophes in the BoM text break heredocs)
+- Result: 28 merges applied across Alma 17-22 plus 8 newly-discovered classes (A-H) that fed the next wave of regex scanners
+
+**Protocol: whenever mechanical scanners stall and fresh manual examples keep surfacing, dispatch atomic-thought scanning agents as the next step. They are slower than regex but they discover classes regex can't be asked about.**
+
+**3. Save merge scripts to files, not bash heredocs.**
+
+The BoM text is saturated with apostrophes ("king's", "father's", "Lamanites' land"). Bash heredocs with `'EOF'` break on these. Protocol: **always `Write` the merge script to `C:/tmp/*.py` and run it via `python3 C:/tmp/file.py`.** Never paste large multi-line merge scripts through `bash -c` or heredoc.
+
+**4. Content-based replacement beats line-number replacement for robustness.**
+
+Line numbers drift as earlier merges compress the file. A script that uses `text.replace(multiline_before, single_line_after, 1)` with full multi-line context strings is immune to drift and trivially audits itself (the match count must equal the expected count, or something's wrong). Line-number-based scripts need re-sorting and offset math. Protocol: **merge scripts should use exact multi-line content matching, not line indices.**

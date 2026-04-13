@@ -1504,4 +1504,59 @@ After the high-confidence Cat A passes for stranded adverbials, verb+that, and a
 This is the next colometry attack surface.
 
 ---
-*Last updated: 2026-04-12 (late)*
+
+### Update — 2026-04-13 — Alma 17-22 seven-agent sweep + eight new classes (A–H)
+
+**Result of the session:** 28 additional atomic-thought merges applied across Alma 17-22 (commit `8388e4f`), plus a complete scanner inventory for 8 previously uncatalogued violation classes, run corpus-wide.
+
+#### Trigger: the reactive-scanner wall
+
+After ~12 regex-defined classes had been scanned and cleaned, Stan continued to flag violations manually: "why are these still all non-complete atomic thought units — what pattern have we not been looking for?" Each manual example exposed a class the regex scanners didn't know to look for, so each fix was reactive, not systematic.
+
+The breakthrough: stop writing scanners first. **Dispatch atomic-thought scanning *agents* that read natural-language ranges and flag ANY two-line pair where neither line is atomic, regardless of shape.** The agents discover new classes by reporting what they flag. Stan confirmed the dispatch pattern: *"maybe you should have broken it up into sub-agents, yeah?"*
+
+#### Seven-agent parallel dispatch pattern
+
+- 6 per-chapter agents: Alma 17 / 18 / 19 / 20 / 21 / 22 (one each, parallel)
+- 1 full-range agent: Alma 17-22 end-to-end, looking for *class-level* patterns
+- Aggregated into a single content-matched Python script (`C:/tmp/apply_alma_17_22_merges.py`) with exact multi-line `before → after` replacements
+
+**28 merges landed clean on first application — zero content drift.**
+
+#### Eight new colometric classes discovered (A–H)
+
+Each has a dry-run scanner at `C:/tmp/scan_class_X_*.py`, runnable against the full v2 corpus on demand.
+
+| Class | Name | Diagnostic | Tier 1 corpus hits |
+|---|---|---|---|
+| **A** | Compound-subject stranding | Line N = conjoined NPs, no finite verb; Line N+1 starts with finite verb governing them | **99** (~91 deduped) |
+| **B** | Ditransitive object stranding | Line N ends with ditransitive verb (+IO); Line N+1 carries the DO | **26** |
+| **C** | "concerning/of" topic prep stranding | Line N ends with speech/cognition verb; Line N+1 opens "concerning X" | **18** (HIGH tier) |
+| **D** | Fixed idiom split | 20 canonical idioms straddle a line break | **0** (corpus clean) |
+| **E** | Appositional-relative stranding | Line N ends "it being the X,"; Line N+1 = "which/who/that..." | **13** (Tier 1 strict) |
+| **F** | Subject + parenthetical-adjunct stranding | Line N = "X, having/being Y,"; Line N+1 starts with finite verb | **94** (Tier 1; ~55-65% TP) |
+| **G** | Cataphoric / hollow-head resumption | Line N ends with content-light NP ("the cause,") or hollow verb ("began to fear,"); Line N+1 specifies | **58** (Tier 1 ~20% TP; Tier 2 = 2, both legit) |
+| **H** | Cataphoric "or" restatement | Line N ends NP,; Line N+1 opens "or [det] NP," with no finite main-clause verb | **33** (Tier 1; ~75-85% TP) |
+
+**Class D's zero result** is a real finding: Rule 18 (fixed-idiom integrity) has been applied cleanly across the whole corpus for the canonical idiom list.
+
+#### Principle refinements from this session
+
+1. **Length caps are wrong for atomic-thought scanning.** Stan: *"line/character limit should not be arbitrary right — if something's not an atomic thought, it's not."* The previous 140/200-char caps on merge scanners have been removed. Length is a hint to pause and look, not a mechanical gate.
+
+2. **Breath-unit intuition as a sanity check, not a gate.** *"The breath unit should give us pause and ask if there IS another way to consider the text, because people generally don't write/speak more than a coherent breath unit."* If a merge produces something un-speakable, reconsider — but don't refuse the merge on word count alone.
+
+3. **Speech verbs now include `saw/beheld/behold/see`.** The earlier Class 2 scanner excluded these out of caution about relative-clause confusion. That left a gap Stan caught manually (Alma 19:17 "when she saw / that all the servants..."). Subsequent scanners pick these up correctly.
+
+4. **Compound subjects are a MAJOR class.** 99 corpus-wide Tier 1 candidates from Class A — larger than verb+that was. Alma alone has 25. This is not a rare exception; it's a systematic under-broken class.
+
+5. **"Or" restatements (Class H / Rule 5) are more common than previously thought.** 33 Tier 1 candidates, heavy in Alma and Mosiah. Several are Category B/C (Mosiah 15:5 Son/Father doctrinal equivalence; Jacob 4:6 mountains/waves parallel triplet) — not mechanical.
+
+6. **Class F (subject + participial adjunct) is the single largest pathological class:** 94 Tier 1 hits. Participial absolutes "X, having Y," / "X, being Y," strand the subject from its finite verb. This is where Mormon's authorial voice builds momentum — Alma has 35 hits alone.
+
+#### Operational takeaway
+
+When the regex-scanner reactive loop starts failing, *switch medium*. Natural-language agents on contiguous ranges discover classes. Regex scanners clean up classes. The two complement each other; neither replaces the other.
+
+---
+*Last updated: 2026-04-13*
