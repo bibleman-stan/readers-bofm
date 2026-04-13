@@ -32,10 +32,9 @@ Before any substantive work, read the handoffs directory in order. Each file is 
 | `handoffs/07-pending-tasks.md` | Prioritized task list |
 | `handoffs/08-future-plans.md` | Spanish fork, Studying Edition, shelved ideas |
 | `handoffs/09-bugs-fixed.md` | Historical bug fixes and key design decisions |
-| `handoffs/10-colometry.md` | Sense-line theory and editorial methodology — READ THIS CAREFULLY |
 | `handoffs/14-operational-protocols.md` | "Work smarter" patterns: parallel dispatch, two-phase pipeline, find-the-class fixes — READ THIS CAREFULLY |
 
-Also check `research/OVERSEER-DIRECTIONS.md` if present — local-only session directives (gitignored). It carries active directives and a sync log; read it before starting substantive work.
+Also check `private/OVERSEER-DIRECTIONS.md` if present — local-only session directives (gitignored). It carries active directives, the pointer to the full methodology canon, and a sync log; read it before starting substantive work.
 
 ---
 
@@ -75,7 +74,7 @@ The files in `data/text-files/v2-mine/` are the canonical source. These are Stan
 
 ## Sense-Line Editorial Methodology
 
-This is the intellectual heart of the project. Read `docs/10-colometry.md` in full. Key principles:
+This is the intellectual heart of the project. The full methodology reference is pointed to from `private/OVERSEER-DIRECTIONS.md` (local only). Key principles:
 
 ### The Foundational Test
 **Each line must be an atomic thought, an atomic breath unit, or ideally both.**
