@@ -35,6 +35,8 @@ Before any substantive work, read the handoffs directory in order. Each file is 
 | `handoffs/10-colometry.md` | Sense-line theory and editorial methodology — READ THIS CAREFULLY |
 | `handoffs/14-operational-protocols.md` | "Work smarter" patterns: parallel dispatch, two-phase pipeline, find-the-class fixes — READ THIS CAREFULLY |
 
+Also check `research/OVERSEER-DIRECTIONS.md` if present — local-only session directives (gitignored). It carries active directives and a sync log; read it before starting substantive work.
+
 ---
 
 ## Key Files

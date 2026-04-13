@@ -1660,4 +1660,115 @@ Classes B, C, G, E, A held up well under the audit. The principle behind those s
 The Goldilocks refinement was developed first in the Reader's GNT project (`readers-gnt/handoffs/02-colometry-method.md` §Goldilocks, 2026-04-13) after an adversarial agent asked to argue the opposite case ("we should break MORE, we're not thinking ancient-Greek enough"). That session's verdict — container-not-originator applies to subordinating syntax only — was the exact refinement we needed here. Credit to the GNT precedent and to the cross-project pollination.
 
 ---
-*Last updated: 2026-04-13 (late — Goldilocks refinement)*
+### Update — 2026-04-13 (end of session) — Overseer items 2, 3, 4 applied
+
+Three cross-pollination items from the overseer's directions list
+(`research/OVERSEER-DIRECTIONS.md`) applied in one pass. All three port
+principles from the readers-gnt sibling project.
+
+#### The no-anchor rule (Rule 20)
+
+**The rule:** every sense-line must carry at least one thought-marking anchor:
+
+1. A finite verb (main, subordinate, imperative, archaic `-eth`/`-est` forms)
+2. An infinitive (`to` + base verb as the predication of its clause)
+3. A participle (`-ing` form or past participle standing as predicate)
+4. A substantive head — a noun phrase that is the topic/subject of its own line, not merely a modifier of something in a neighboring line
+
+Lines lacking all four are **containers without originators** — pure modifier fragments (dangling PPs, bare conjunctions, elliptical hinges). They belong *inside* a neighboring anchored line's atomic thought, not on a line of their own.
+
+**Source:** Imported from the readers-gnt project. See `readers-gnt/handoffs/02-colometry-method.md` lines 934–954. The GNT side ran 860 no-anchor merges across 26 books to reach **zero unanchored lines** corpus-wide. The rule was their answer to why over-fragmented lines survived multiple targeted editorial passes: targeted scanners find specific error classes, but nothing was enforcing "every line must carry a thought-marking element" on the positive side.
+
+**Legitimate exemptions** (inherited from GNT methodology):
+- Single-line verses — if the whole verse fits in one line, it is atomic by definition and needs no internal anchor check.
+- Speech-intro prefixes (rare in BoM; more common in GNT).
+- Standalone sentence connectives (`Wherefore,` `And now,` `Therefore`) — hinge markers that license merger with the *next* line, not failures.
+
+**BoM corpus scan result (2026-04-13):**
+
+| metric | value |
+|---|---:|
+| total lines scanned | 28,683 |
+| unanchored lines | **5** |
+| compliance | 99.98% |
+
+Per-book breakdown: clean everywhere except 1 Nephi (1), 2 Nephi (2), Alma (1), 3 Nephi (1). Nine books are at zero.
+
+**Residual hits** (all editorial judgment calls, none mechanical):
+
+1. `1 Nephi 14:8` — `Yea.`
+2. `2 Nephi 2:11` — `If not so,`
+3. `2 Nephi 33:12` — `if not all,`
+4. `Alma 36:27` — `yea,`
+5. `3 Nephi 16:9` — `that after all this,`
+
+All five are short discourse hinges or elliptical interjections — the same residual class the GNT scan caught at its tail end. They want Category A merges (upward or downward) but require a look at the surrounding context. (Note: `Yea.` and `yea,` may fall under the exemption for standalone sentence connectives — editorial review pending.)
+
+**Why this rule is already (near-)mechanically enforced in the BoM build:** Class F (subject + participial adjunct stranding) combined with Rule 9 (never end a line on a conjunction) and Rule 18 (fixed idiom integrity) together prevent the main ways a modifier-only fragment could end up on its own line. The BoM reached compliance organically through rule-governed hand-editing rather than a dedicated merge pass.
+
+**Verification tool:** `C:/tmp/scan_no_anchor_rule.py` — reads the 15 v2 canonical files, tokenizes each content line, tests for finite verbs, infinitives, `-ed`/`-eth`/`-est`/`-ing` suffixes, and substantive heads. Non-destructive; supports `--apply` which reports the count without mutating anything. No production scanner needed — the rule is empirically enforced by existing rules. The verification script lives in `C:/tmp/` as a spot-check tool; re-run after any future mass edit to confirm compliance still holds.
+
+
+#### Rule 21 — Participial absolute integrity
+
+A **participial absolute** — a subject-bearing participial clause of the form "X having Y-ed," or "X being Y," — constitutes a grammatically independent predication and earns its own sense-line. The participial clause carries its own subject, its own non-finite verb, and its own predicate complement; it is not a dangling modifier on the next clause's main verb but a full prosodic frame in its own right. Merging it into the following line collapses two atomic thoughts into one and destroys the archaic-English periodic rhythm.
+
+**Principle.** BoM English lacks Greek's formal genitive absolute, but functionally reproduces it. "Moroni being in their course of march," stands to "Jacob was determined to slay them" exactly as βλεπόντων αὐτῶν stands to ἐπήρθη in Acts 1:9 — two camera frames, two predications, two lines. The cross-project parallel is explicit: see GNT Reader `handoffs/02-colometry-method.md` lines 160–167 (Acts 1:9 showcase) and line 438 (the 2026-04-12 resolution: "Always its own line. Gen abs is grammatically independent (its own subject + its own predicate), so it passes the atomic-thought test on its own").
+
+**Diagnostic test.** Can the participial clause be rewritten as a finite sentence — "X was Y" or "X had Y-ed" — that stands alone as a complete thought? If yes, it is an absolute and earns its own line.
+- "they being hard in their hearts" → "they were hard in their hearts" ✓
+- "Moroni being in their course of march" → "Moroni was in their course of march" ✓
+- "their bows having lost their springs" → "their bows had lost their springs" ✓
+
+**Relationship to the Goldilocks refinement.** Rule 21 is the *principle*; the Q1/Q2 diagnostic is the operational *test* for candidate merges. Q1: does line N (the participial) stand alone as a predication? Q2: does line N+1 begin with a rhetorical pivot ("therefore," "thus," "wherefore"), a resumptive subject pronoun ("he went," "it began"), or a parallel opener? If both answers are yes, the merge is wrong — restore the split. Container-not-originator reasoning applies only to genuinely subordinating syntax, not to coordinated participial frames.
+
+**Positive examples (earn their own line).** From the 2026 audit reverts:
+- 1 Ne 1:1 — "I, Nephi, having been born of goodly parents," / "therefore I was taught..."
+- 1 Ne 16:21 — "and their bows having lost their springs," / "it began to be exceedingly difficult..."
+- Alma 2:16 — "Now Alma, being the chief judge and the governor of the people of Nephi," / "therefore he went up..."
+- Alma 52:34 — "Moroni being in their course of march," / "therefore Jacob was determined..."
+- Moroni 1:1 — "Now I, Moroni, after having made an end of abridging the account of the people of Jared," / "I had supposed not to have written more..."
+
+**Counter-examples (participials that genuinely strand and should merge).** From Class F merges kept after audit:
+- Mos 9:3 — "And yet, I being over-zealous to inherit the land of our fathers, collected as many as were desirous..." — "collected" has no resumptive subject; the participial is the subject of the main verb.
+- Mos 21:23 — "And the king having been without the gates of the city with his guard, discovered Ammon..." — "discovered" takes the king directly as subject; no pivot, no resumption.
+- Mos 21:26 — "and they, having supposed it to be the land of Zarahemla, returned..." — bare "returned" with the same subject threading through.
+- Alma 12:32 — "the penalty thereof being a second death, which was an everlasting death..." — the "which" relative is anaphoric, not a new predication.
+- Alma 35:8 / 52:36 — same pattern: participial adjunct feeding directly into a finite verb whose subject it shares, with no rhetorical pivot.
+
+**Edge case.** When the participial's predicate nominal is thin — e.g., Mos 18:12 "he being one of the first," — the standalone reading feels lighter than "he being the king's captain," or "Alma being the chief judge and the governor of the people of Nephi." These thin-predicate cases still passed the audit (Q2 was satisfied by "and went" / "he went forth"), but the call is harder and should be flagged for Stan's judgment rather than applied mechanically. The principle holds; the weighting of Q1 wobbles.
+
+
+#### Thought-marking vs. structural syntax
+
+Borrowing a distinction locked in by the sister GNT project (`readers-gnt/handoffs/02-colometry-method.md` lines 906–916), we can divide syntactic features into two classes, only one of which tracks atomic thought.
+
+**Thought-marking syntax** is the set of surface features that reveal where one atomic unit ends and the next begins. Main-verb shifts, clause boundaries, subject changes, appositive coreference, and camera-angle turns all belong here. When a thought-marking feature is present, the author has given us evidence that a new atomic unit is beginning; the line break exposes a boundary the author built into the text. Rules that manipulate thought-marking syntax are making editorial claims about where thought boundaries lie.
+
+**Structural syntax** is the set of fixed English/archaic-English patterns that do NOT automatically map to thought boundaries. These are grammatical scaffolds the language requires regardless of how the thought is chunked. A line break inside a structural pattern is not reading a boundary off the text — it is just following grammar. Rules that manipulate structural syntax are accommodating the container, not claiming a thought division.
+
+**BoM examples — thought-marking:**
+- Purpose clauses: "that they might believe" — a new telic frame, new image
+- Causal clauses: "because of the hardness of their hearts" — a new explanatory frame
+- Complement "that" after speech/cognition verbs: "I know that my Redeemer liveth" — the that-clause is the content of the knowing, a distinct proposition
+- Subordinate relative clauses introducing new images: "which thing was pleasing unto the Lord"
+
+**BoM examples — structural:**
+- Conditionals ("if ye shall keep my commandments... then"): the if/then pair is one hypothetical claim, not two
+- Correlatives ("as... so," "neither... nor"): both limbs belong to a single comparison
+- Comparatives ("more than all the earth"): the comparison is one thought
+- The Wayyehi formula ("And it came to pass that"): fixed narrative hinge, already Rule 1
+- Vocatives ("O Lord God"): already Rule 15 — indivisible address unit
+- Fixed idioms ("put to death," "from time to time"): already Rule 18
+
+#### What this replaces and what it sharpens
+
+This distinction **replaces the earlier "servant of the text" framing.** "Servant of the text" was directionally right but too vague — it did not say *which* textual features we were serving. The answer is: thought-marking features. Structural features we accommodate; thought-marking features we expose.
+
+It also **sharpens Rule 13 (parallel structures stack vertically).** Parallel structure earns vertical stacking when each limb is its own atomic claim — when the parallelism is *thought-marking*. Parallelism that is merely structural (a correlative pair expressing one comparison, a conditional with its consequent) does not earn a break just because the surface is parallel. The test is not "is this parallel?" but "does each limb carry its own atomic thought?" Rule 13 applies when the answer is yes; it is silent when the answer is no.
+
+The defense against "you're just breaking at every grammatical feature" is the same as the GNT project's: we break at features that *mark thought boundaries*, not at features that are merely fixed grammatical constructions.
+
+
+---
+*Last updated: 2026-04-13 (end of session — overseer items 2-4)*
