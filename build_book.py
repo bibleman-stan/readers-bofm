@@ -968,6 +968,49 @@ def apply_swaps(text, swap_list):
     placeholders = []
     result = text
 
+    # ---- PRE-PASS: AICTP-gated redundant "that" hider ----
+    # When a line contains "And it came to pass that" AND a later ", that"
+    # complementizer follows a speech/cognition/perception verb, the second
+    # "that" feels gratuitous when AICTP gets modernized to "And then".
+    # Hide the second "that" in the modernized layer (canonical/audio preserve it).
+    #
+    # Conditions for hiding:
+    #   1. Line begins with "And it came to pass that" (the AICTP frame)
+    #   2. Line contains ", that " somewhere later
+    #   3. The content after ", that " starts with a pronoun/article + indicative
+    #      finite verb (NOT a modal — modal "should/might/may" makes "that"
+    #      load-bearing as a directive/purpose marker)
+    #
+    # The wrapped span has data-orig=", that " and data-mod=", " — when the
+    # user toggles modern, the "that" disappears.
+    if re.match(r'^And it came to pass that\b', result, re.IGNORECASE):
+        # Look for ", that <pronoun/article> <indicative verb>" — capture the ", that " span
+        _hide_that_re = re.compile(
+            r',\s+that(\s+(?:I|he|she|it|they|we|you|the|this|those|these|his|her|their|our|my|your)\b'
+            r'(?:\s*,\s*\w+\s*,)?'  # optional appositive after pronoun
+            r'\s+(?:'
+            r'did|was|were|are|is|am|has|have|had|being|hath|doth'  # indicative auxiliaries
+            r'|came|went|gave|made|took|saw|knew|spake|spoke|stood|fell|cried|wept|brought|wrought'  # irregular pasts
+            r'|wrote|told|sent|kept|met|fled|read|cut|set|hit|put|fed|let'
+            r'|\w+ed|\w+en'  # regular past / past participle
+            r'))',
+            re.IGNORECASE
+        )
+        m = _hide_that_re.search(result)
+        if m:
+            full_match = m.group(0)  # ", that <pronoun> <verb>"
+            comma_part = ', '         # what to keep visible in modern mode
+            rest = m.group(1)         # " <pronoun> <verb>" — the part after "that"
+            # We want the swap to wrap ", that" and reveal ", " in modern.
+            # The rest (pronoun+verb) stays as plain text.
+            target = ', that'
+            target_idx = result.find(target, m.start())
+            if target_idx != -1 and target_idx == m.start():
+                idx = len(placeholders)
+                sentinel = f"\x00H{idx}\x00"
+                placeholders.append((sentinel, ', that', ','))
+                result = result[:target_idx] + sentinel + result[target_idx + len(target):]
+
     # ---- PRE-PASS: DO/DOES/DOTH + VERB → present tense collapse ----
     # "doth tremble" → "trembles", "does carry" → "carries"
     # "do know" → "know", "do rejoice" → "rejoice"
