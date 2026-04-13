@@ -1367,9 +1367,19 @@ def apply_swaps(text, swap_list):
             return IRREGULAR_PAST[verb]
         return None  # NO default fallback — be conservative
 
+    # Non-verbal words that can follow "to" (articles, pronouns, determiners)
+    # without creating an infinitive context. If "to X" appears between the
+    # sentinel and the coordinated verb, and X is NOT in this set, we're
+    # inside an infinitive clause and should stop the chain.
+    TO_NONVERB = {'the','a','an','this','that','those','these','his','her','their',
+                  'our','my','your','its','him','them','me','us','it','you','whom',
+                  'whatsoever','all','one','some','any','each','every','no','not',
+                  'such','much','many','most','more','few','other','another'}
+
     def _chain_coordinated_verbs(text_so_far):
         out = []
         sentinel_re = re.compile(r'\x00D\d+\x00')
+        to_check = re.compile(r'\bto\s+(\w+)\b', re.IGNORECASE)
         pos = 0
         while True:
             sm = sentinel_re.search(text_so_far, pos)
@@ -1400,6 +1410,18 @@ def apply_swaps(text, swap_list):
                 interim = window[cursor:cm.start()].lower()
                 if any(re.search(r'\b' + re.escape(tok) + r'\b', interim)
                        for tok in NEW_SUBJECT_MARKERS):
+                    rewritten.append(window[cursor:])
+                    break
+                # Check for infinitive-clause context: "to <verb>" in interim
+                # means the "and X" is likely a second bare infinitive coord
+                # ("caused them to quake and tremble"), not a past-tense coord.
+                infinitive_block = False
+                for to_m in to_check.finditer(interim):
+                    next_word = to_m.group(1).lower()
+                    if next_word not in TO_NONVERB:
+                        infinitive_block = True
+                        break
+                if infinitive_block:
                     rewritten.append(window[cursor:])
                     break
                 past = _chain_strict_conjugate(cand)
