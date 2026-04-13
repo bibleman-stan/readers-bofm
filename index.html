@@ -4101,6 +4101,27 @@ function flushAndReload() {
     return false;
   }
 
+  // Multi-term NEAR: test if ANY left term is within `distance` words of ANY right term.
+  // Used when NEAR's operands are grouped expressions like "(might OR mighty) NEAR9 call".
+  function nearMatchMulti(leftTerms, rightTerms, distance, verseText) {
+    var leftPos = [];
+    for (var i = 0; i < leftTerms.length; i++) {
+      var p = termWordPositions(leftTerms[i], verseText);
+      for (var k = 0; k < p.length; k++) leftPos.push(p[k]);
+    }
+    var rightPos = [];
+    for (var j = 0; j < rightTerms.length; j++) {
+      var p = termWordPositions(rightTerms[j], verseText);
+      for (var k = 0; k < p.length; k++) rightPos.push(p[k]);
+    }
+    for (var i = 0; i < leftPos.length; i++) {
+      for (var j = 0; j < rightPos.length; j++) {
+        if (Math.abs(leftPos[i] - rightPos[j]) <= distance) return true;
+      }
+    }
+    return false;
+  }
+
   // Test if a single term (word or "quoted phrase") matches a verse
   function termMatchesVerse(term, verseText) {
     if (term.charAt(0) === '"' && term.charAt(term.length - 1) === '"') {
@@ -4143,7 +4164,13 @@ function flushAndReload() {
       }
     }
 
-    // Simple recursive descent: OR groups of AND groups
+    // Simple recursive descent: OR groups of AND groups.
+    //
+    // Each parser function returns a node object: {match: fn(verse)->bool, terms: [string]}.
+    // The `terms` list carries the raw search terms from that subtree so NEAR can
+    // check positions across grouped expressions. Fixes the bug where
+    // "(might OR mighty) NEAR9 call" only considered "mighty" (the last token
+    // parsed) and dropped verses matching "might NEAR9 call".
     var pos = 0;
 
     function parseOr() {
@@ -4151,7 +4178,10 @@ function flushAndReload() {
       while (pos < tokens.length && tokens[pos] === 'OR') {
         pos++;
         var right = parseAnd();
-        left = (function(l, r) { return function(v) { return l(v) || r(v); }; })(left, right);
+        left = {
+          match: (function(l, r) { return function(v) { return l(v) || r(v); }; })(left.match, right.match),
+          terms: left.terms.concat(right.terms)
+        };
       }
       return left;
     }
@@ -4163,21 +4193,30 @@ function flushAndReload() {
         pos++;
         if (/^NEAR\d+$/.test(op)) {
           var dist = parseInt(op.replace('NEAR', ''), 10);
-          var leftTerm = lastNearTerm;  // captured from prior parseTerm call
-          var rightNode = parseNot();   // this sets lastNearTerm to right term
-          var rightTerm = lastNearTerm;
-          left = (function(lt, rt, d) {
-            return function(v) { return nearMatch(lt, rt, d, v); };
-          })(leftTerm, rightTerm, dist);
+          var leftTerms = left.terms;  // ALL terms from the left subtree
+          var rightNode = parseNot();
+          var rightTerms = rightNode.terms;  // ALL terms from the right subtree
+          left = {
+            match: (function(lt, rt, d) {
+              return function(v) { return nearMatchMulti(lt, rt, d, v); };
+            })(leftTerms, rightTerms, dist),
+            terms: leftTerms.concat(rightTerms)
+          };
         } else {
-          var right = parseNot();
-          left = (function(l, r) { return function(v) { return l(v) && r(v); }; })(left, right);
+          var rightA = parseNot();
+          left = {
+            match: (function(l, r) { return function(v) { return l(v) && r(v); }; })(left.match, rightA.match),
+            terms: left.terms.concat(rightA.terms)
+          };
         }
       }
-      // Implicit AND: two terms next to each other with no operator (or NOT prefix)
+      // Implicit AND: two terms next to each other with no operator
       while (pos < tokens.length && tokens[pos] !== 'OR' && tokens[pos] !== 'AND' && tokens[pos] !== ')' && !/^NEAR\d+$/.test(tokens[pos])) {
-        var right = parseNot();
-        left = (function(l, r) { return function(v) { return l(v) && r(v); }; })(left, right);
+        var rightI = parseNot();
+        left = {
+          match: (function(l, r) { return function(v) { return l(v) && r(v); }; })(left.match, rightI.match),
+          terms: left.terms.concat(rightI.terms)
+        };
       }
       return left;
     }
@@ -4186,14 +4225,18 @@ function flushAndReload() {
       if (pos < tokens.length && tokens[pos] === 'NOT') {
         pos++;
         var inner = parseTerm();
-        return (function(fn) { return function(v) { return !fn(v); }; })(inner);
+        // NOT: invert match. `terms` is emptied because these aren't terms
+        // we want NEAR to search for in matched verses.
+        return {
+          match: (function(fn) { return function(v) { return !fn(v); }; })(inner.match),
+          terms: []
+        };
       }
       return parseTerm();
     }
 
-    var lastNearTerm = '';
     function parseTerm() {
-      if (pos >= tokens.length) return function() { return false; };
+      if (pos >= tokens.length) return { match: function() { return false; }, terms: [] };
       var tok = tokens[pos];
       if (tok === '(') {
         pos++; // consume '('
@@ -4202,12 +4245,14 @@ function flushAndReload() {
         return inner;
       }
       pos++;
-      lastNearTerm = tok;
-      return function(verseText) { return termMatchesVerse(tok, verseText); };
+      return {
+        match: (function(t) { return function(verseText) { return termMatchesVerse(t, verseText); }; })(tok),
+        terms: [tok]
+      };
     }
 
-    var matcher = parseOr();
-    return { matcher: matcher, highlightTerms: highlightTerms };
+    var rootNode = parseOr();
+    return { matcher: rootNode.match, highlightTerms: highlightTerms };
   }
 
   /* ── Wildcard query support ──
