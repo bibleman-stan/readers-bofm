@@ -34,7 +34,7 @@ Before any substantive work, read the handoffs directory in order. Each file is 
 | `handoffs/09-bugs-fixed.md` | Historical bug fixes and key design decisions |
 | `handoffs/14-operational-protocols.md` | "Work smarter" patterns: parallel dispatch, two-phase pipeline, find-the-class fixes — READ THIS CAREFULLY |
 
-Also check `private/OVERSEER-DIRECTIONS.md` if present — local-only session directives (gitignored). It carries active directives, the pointer to the full methodology canon, and a sync log; read it before starting substantive work.
+Also check `private/OVERSEER-DIRECTIONS.md` if present — local-only session directives (gitignored, Dropbox-backed). It carries active directives, the pointer to the full methodology canon, and a sync log. **Read it before starting substantive work, and update it before ending the session or committing — whichever comes first.** It contains its own documentation protocol; follow it. Session memory evaporates at compaction but that file survives, so treat it as the persistent write surface for anything the overseer needs to know about your session.
 
 ---
 
