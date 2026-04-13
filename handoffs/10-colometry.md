@@ -1559,4 +1559,105 @@ Each has a dry-run scanner at `C:/tmp/scan_class_X_*.py`, runnable against the f
 When the regex-scanner reactive loop starts failing, *switch medium*. Natural-language agents on contiguous ranges discover classes. Regex scanners clean up classes. The two complement each other; neither replaces the other.
 
 ---
-*Last updated: 2026-04-13*
+
+### Update — 2026-04-13 (late) — The Goldilocks refinement: subordinating vs coordinating syntax
+
+This update codifies a **load-bearing refinement** to how the atomic-thought test gets applied. It's ported directly from a parallel insight in the GNT Reader project (see `readers-gnt/handoffs/02-colometry-method.md` §Goldilocks refinement, 2026-04-13) and it resolves a real failure mode we hit in this session: merges that nominally satisfied the atomic-thought test but actively erased the author's rhetorical architecture.
+
+#### The failure mode
+
+During the Class F (participial absolute) and Class A (compound subject) merge passes, I applied the container-not-originator reasoning too broadly. I treated **every** case where line N ended in a participial/NP fragment and line N+1 began with a verb or discourse pivot as a subordinating-modifier-to-head problem that required merging. That was wrong for a large subset of cases.
+
+#### The refinement in one sentence
+
+**Container-not-originator applies to SUBORDINATING syntax (modifier → head) only. It does NOT apply to COORDINATING or PARALLEL syntax. Parallel members are each their own atomic thought.**
+
+#### The three phases — the Goldilocks arc
+
+This is the same arc the GNT Reader project traversed, one week ahead of us:
+
+1. **Phase 1: over-broken.** Early BoM v2 files had bare PPs, particles, and modifier tails scattered on their own lines. Atomic-thought principle was applied too loosely — every grammatical boundary got a break.
+2. **Phase 2: over-merged.** The Class F, A, E, H passes in this session pulled coordinate/parallel members upward into their neighbors, collapsing tri-cola, isocola, and rhetorical subject-stacks into mega-lines. Nominally "atomic thought," but the merged lines failed the breath-unit test AND the rhetorical-architecture test. Examples: Nephi's opening "I, Nephi, having been born of goodly parents, therefore I was taught..." merged into one line; the patriarchal triad "God of Abraham, and of Isaac, and of Jacob, / yieldeth himself" merged; Mormon 6:14's casualty-roll verb attached to just the last pair of names.
+3. **Phase 3: Goldilocks.** The subordinating-vs-coordinating distinction, applied mechanically, recovers the right answer. Subordinating modifiers merge. Coordinate members stay split. The breath-unit test is a second-order sanity check — if a proposed merge produces an unspeakable line, coordination is almost certainly at work.
+
+#### The operative distinction
+
+| Syntax type | Example | Rule |
+|---|---|---|
+| **Subordinating** (modifier → head) | stranded preposition on its verb; verb missing its direct object; bare subject missing its finite verb; "concerning X" topic on a speech verb; ditransitive DO/IO stranding | Container-not-originator applies. **Merge** — line N is a bare fragment demanding completion from line N+1. |
+| **Coordinating / parallel** (member ↔ member) | participial absolute + "therefore/thus" + resumptive pronoun; rhetorical subject-stack (patriarchal triads, ethnic quadrads, casualty rolls); "or X / or Y" parallel namings; cleft with escalating relative image | Container-not-originator does NOT apply. **Split** — each member is its own atomic beat. |
+
+#### The diagnostic test (mechanical, reliable)
+
+When evaluating a candidate merge, ask two questions:
+
+**Q1.** Can line N be read as a **standalone prosodic predication** (with an implicit "was/had" if needed)?
+- "he being an exceedingly curious man" → "he was an exceedingly curious man" ✓ standalone
+- "Alma having seen all these things" → "Alma had seen all these things" ✓ standalone
+- "the Lamanites and the Amalekites and the people of Amulon" → can't stand alone, needs a verb ✗
+
+**Q2.** Does line N+1 open with a **rhetorical pivot**, a **resumptive subject pronoun**, or a **parallel conjunction**?
+- "therefore he went forth" ✓ pivot + resumptive
+- "thus he commanded" ✓ pivot + resumptive
+- "it was impossible" ✓ new grammatical subject
+- "his blood would cry" ✓ new subject NP
+- "or the church of Christ" ✓ parallel conjunction
+- "had built a great city" ✗ bare finite verb directly picking up the subject
+
+**If Q1=yes AND Q2=yes → COORDINATING, do NOT merge.**
+**If Q1=no OR Q2=no → SUBORDINATING, merge is correct.**
+
+Stan's earlier breath-unit intuition — *"people generally don't write/speak more than a coherent breath unit"* — is the same principle from a different angle. When a merge produces an unspeakably long line, coordinating syntax was almost certainly flattened.
+
+#### Signatures of coordinate syntax (red flags for merge scanners)
+
+- "therefore" / "thus" / "wherefore" / "and now" opening line N+1
+- Resumptive subject pronoun (he/she/they/it/I/we/ye) at start of line N+1
+- New grammatical subject NP opening line N+1 ("his blood", "it was", "Jacob was")
+- Parallel conjunction "or" + determiner + NP opening line N+1
+- "having/being" + full predicate nominal/participial predicate on line N (stands alone as "was/had")
+- Subject-stacks of 3+ parallel NPs across multiple lines (theological triads, ethnic lists, casualty rolls)
+- Relative clauses on line N+1 introducing a NEW image or action (Rule 14 — escalating qualifiers earn their own line)
+
+#### Signatures of subordinating syntax (green lights for merge)
+
+- Line N ends in a bare preposition waiting for its object ("I will plead / with the king")
+- Line N ends in a verb missing its direct object ("rehearse unto them / the words of Isaiah")
+- Line N ends in an NP subject with NO finite verb ("the Lamanites and Amalekites and Amulon / had built")
+- Line N ends in a speech/cognition verb + "unto X" awaiting content ("spake unto them / concerning X")
+- Line N ends in a "hollow head" ("began to fear exceedingly / lest...", "this was the cause / for which...")
+- Line N+1 opens with a bare finite verb that directly picks up line N's subject with no pivot and no resumptive
+
+#### This session's revert pass
+
+The adversarial audit dispatched five parallel agents (one per class batch) to evaluate every merge applied this session against this test. Results:
+
+| Class | Merges applied | Reverts | Pass rate |
+|---|---:|---:|---:|
+| C + G T2 + B | 28 | 0 | 100% subordinating |
+| Alma 17-22 sweep | 28 | 5 | 82% subordinating |
+| A compound subject | 34 | 5 | 85% subordinating |
+| E cleft + relative | 12 | 4 | 67% subordinating |
+| H "or" restatement | 17 | 7 | 59% subordinating |
+| F participial absolute | 19 | 12 | 37% subordinating |
+
+**Class F had the highest false-positive rate (63%) because participial absolutes in BoM archaic English function as prosodic full predications.** "He being X" is syntactically subordinate but prosodically equivalent to "he was X" — a complete statement followed by a beat. The Class F scanner mistook the syntactic form for a thought-level dependency. Class H was second worst because "or X" in BoM is MORE often a parallel naming/doubling than a simple restatement.
+
+Classes B, C, G, E, A held up well under the audit. The principle behind those scanners (stranded verb → object, stranded subject → verb) is genuinely subordinating in almost all cases.
+
+**Net session yield after reverts: 138 merges applied − 33 reverts = 105 standing corpus-wide atomic-thought fixes.**
+
+#### Protocol for future merge passes
+
+1. **Write the scanner as before.** Mechanical shape-matching is still the right first step.
+2. **Triage each hit against the Q1/Q2 test.** Don't auto-apply.
+3. **Apply the subset that passes Q1=no OR Q2=no.** These are the genuine subordinating cases.
+4. **Dispatch an adversarial audit agent on the applied batch** before committing, or at most one commit later, with the explicit subordinate/coordinate framing. The audit catches the residual false positives the mechanical filter missed.
+5. **If the audit flags ≥30% of a merge batch for revert, the scanner itself is too broad** — add filters before re-running.
+
+#### Credit
+
+The Goldilocks refinement was developed first in the Reader's GNT project (`readers-gnt/handoffs/02-colometry-method.md` §Goldilocks, 2026-04-13) after an adversarial agent asked to argue the opposite case ("we should break MORE, we're not thinking ancient-Greek enough"). That session's verdict — container-not-originator applies to subordinating syntax only — was the exact refinement we needed here. Credit to the GNT precedent and to the cross-project pollination.
+
+---
+*Last updated: 2026-04-13 (late — Goldilocks refinement)*
