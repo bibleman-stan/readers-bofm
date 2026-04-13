@@ -14,6 +14,9 @@ Welcome.md
 # ElevenLabs API key
 .env
 
+# Claude Code local config (per-repo permissions, not project content)
+.claude/
+
 # Research / pre-publication (local only)
 research/
 
