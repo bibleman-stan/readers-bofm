@@ -81,11 +81,31 @@ When Stan signals end-of-session with phrases like **"let's wrap it up for now,"
 
 **Why this matters:** Stan's standing complaint about trench Claudes is that they forget to document, hit compaction, and lose progress. The wrap-up report is the single most important thing you do in a session — it's the handoff to the next session (same Claude or different Claude, doesn't matter). If you only have time for one thing at end-of-session, it's the wrap-up report. Commits can wait five minutes; a compacted context cannot be recovered.
 
-### Why BOTH bookends matter
+### CONTEXT-AWARE SELF-DISCIPLINE — watch your own context usage
+
+Compaction is your equivalent of Stan saying "wrap it up" — but unlike Stan's verbal signal, compaction is gradual and doesn't announce itself. The cost of hitting compaction mid-operation is real: aggregation steps get lost, reasoning chains get truncated, in-flight batch state evaporates. **Don't let it get down to "oh crap we just lost something beautiful."**
+
+Apply these three thresholds to your own context meter and treat them as standing rules, not suggestions:
+
+**At ~50% context remaining — informal checkpoint.** Don't stop working, but do these things cheaply:
+- Save any in-flight batch state to a file (scanner output partial results, audit aggregations, anything you'd lose if compacted)
+- Commit any WIP code changes even if the work isn't complete — commits are cheap insurance, working memory is not
+- Add a dated entry to `private/OVERSEER-DIRECTIONS.md` sync log capturing "session so far" in one paragraph. If compaction happens unexpectedly after 50%, you've got a recoverable mid-session checkpoint.
+
+**At ~40% context remaining — defensive wrap-up, proactively.** This matches the overseer's own threshold. Treat the 40% mark as equivalent to Stan saying "let's wrap it up for now," even if he hasn't said it. Execute the full WRAP-UP REPORT protocol above (dialogue-notes if applicable, OVERSEER-DIRECTIONS update, wrap-up message, commits). Don't start new major operations after this point — only finish what's already in progress. **Tell Stan you've hit 40% and are wrapping up** so he can decide whether to continue in a fresh session or stop for the night.
+
+**At ~30% context remaining — hard stop.** If you're still working past 30%, you've already taken on too much risk. At this threshold: finish ONLY the wrap-up. Don't continue substantive work. Don't start any new operation even if it seems small. The runway between 30% and auto-compact is your margin for error — preserve it. Every minute past 30% is a minute closer to losing the wrap-up itself.
+
+**Why these thresholds are conservative for trench Claudes:** execution work (corpus-wide scans, adversarial audits, merge applications, file reorganizations, stylometry runs) has more in-flight state than pure synthesis. A single compaction during an aggregation step can lose hours of work if the intermediate results only exist in working memory. The cost of triggering a checkpoint too early is low (you write some files and continue); the cost of triggering too late is "oh crap we just lost something beautiful" — Stan's phrasing, and the thing these thresholds are designed to prevent.
+
+**When in doubt, write it down.** Files survive compaction; working memory does not. This is the same discipline the overseer applies to itself.
+
+### Why BOTH bookends + context discipline matter
 
 Check-in without wrap-up = you start oriented but leave nothing for the next session.
 Wrap-up without check-in = you document cleanly but start from "what Stan just said" instead of "the full accumulated state."
-**Both = the overseer has full and robust visibility.** Stan gets to work at the speed of direction-giving, not the speed of context-pasting.
+Bookends without context discipline = you're great at planned wrap-ups but lose sessions when compaction sneaks up.
+**All three together = the overseer has full and robust visibility, and compaction never costs you beautiful work.** Stan gets to work at the speed of direction-giving, not the speed of context-watching-and-rescue.
 
 See `private/OVERSEER-DIRECTIONS.md` documentation protocol for additional details, including what counts as a "substantive methodology dialogue" worth capturing.
 
