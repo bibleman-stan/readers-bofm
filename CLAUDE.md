@@ -38,6 +38,61 @@ Also check `private/OVERSEER-DIRECTIONS.md` if present — local-only session di
 
 ---
 
+## Session bookend protocol (standing rule — CHECK-IN + WRAP-UP)
+
+**Sessions have two mandatory bookends: a check-in at the start, a report at the end.** The overseer (cross-project Claude) cannot see your conversation — it only sees files you leave behind. The bookends are how the overseer stays oriented across sessions without having to guess or have Stan paste everything manually.
+
+### CHECK-IN — at session start
+
+When Stan signals start-of-session with phrases like **"hey, let's start a new session," "new session," "fresh start," "let's begin," "let's kick off,"** or any similar opening language — before you do any substantive work, read these files in this order:
+
+1. **This CLAUDE.md file in full** — you may already be doing this on orientation, but confirm it.
+2. **`private/OVERSEER-DIRECTIONS.md`** — active cross-project directives, sync log, documentation protocol. This is your primary coordination surface with the overseer.
+3. **`private/README.md`** — subdirectory layout of `private/` so you know where to find things and where to write new files.
+4. **`c:/Users/bibleman/repos/overseer-workspace/LANDSCAPE-MAP.md`** — one-glance snapshot of where the whole program is right now. Tells you what's hot, what's resolved, what's open. **Read this every session — it's the overseer's dip-in file and it's kept fresh.**
+5. **`c:/Users/bibleman/repos/overseer-workspace/METHODOLOGY-TIMELINE.md`** — dated log of methodology state changes on both projects. Check this if you're going to touch any scan/audit/findings files from prior sessions — the timeline tells you what methodology state they reflect.
+6. **`c:/Users/bibleman/repos/overseer-workspace/OPEN-QUESTIONS.md`** — unresolved threads that might intersect with whatever Stan is asking for. Skim for relevance.
+7. **`private/handoffs/10-colometry.md`** — the methodology canon. Always fresh-read before any editorial or rule work. Rules evolve fast.
+8. **`git log --oneline -10`** — see what's committed since the last session. Any commit you don't recognize is a state change you should understand before working.
+
+**After reading:** send Stan a brief check-in message confirming orientation. Something like: "Checked in. Current state: [one-sentence summary]. Top 2-3 hot threads per LANDSCAPE-MAP: [...]. Anything specific you want me to focus on, or should I continue the queued work?" Keep this to 4-5 lines. The goal is to prove you read the files, not to summarize them exhaustively.
+
+**Why this matters:** sessions that skip the check-in tend to propose things contradicting recent state, re-argue decisions already made, miss open questions that affect the current task, and waste Stan's time on corrections the overseer already wrote down. The overseer workspace and the OVERSEER-DIRECTIONS file are the cumulative state — reading them puts you in the same frame the overseer operates from.
+
+### WRAP-UP REPORT — at session end
+
+When Stan signals end-of-session with phrases like **"let's wrap it up for now," "wrap it up," "let's stop here," "that's enough for today," "commit and wrap,"** or any similar winding-down language — do these things BEFORE you commit or stop, in this order:
+
+1. **Write dialogue-notes if a substantive methodology dialogue happened.** If the session produced a methodology correction, rule refinement, theoretical framing, enthusiastic adoption walked back, or pushback Stan thinks is dangerous → write `private/sessions/[YYYY-MM-DD]-[topic-slug]/dialogue-notes.md` capturing:
+   - What you initially proposed
+   - Stan's pushback or refinement
+   - The reasoning chain (not just the outcome — the *why* matters more than the *what*)
+   - What was ultimately decided
+   - Any load-bearing phrases Stan used verbatim — they may become prospectus language and need to be preserved exactly
+
+2. **Update `private/OVERSEER-DIRECTIONS.md`** per its documentation protocol:
+   - Transform any applied items from "Status: active" to "APPLIED [date] — commit [hash]" with a brief resolution note
+   - Add any new findings to the "push FROM HERE" section for cross-project porting
+   - Append a dated sync-log entry at the bottom summarizing: commit hashes, files touched, items closed, new items opened, anything surprising
+
+3. **Send Stan a wrap-up report message** before committing. Something like: "Session wrap-up. Commits landing: [hashes]. Files touched: [list]. Items closed: [list]. New items opened: [list]. Dialogue notes written at [path] covering [topic]. Anything unsurprising elsewhere that the overseer should also know?" 4-8 lines. The goal is to give the overseer a one-message summary that captures everything important without requiring it to read the full diff.
+
+4. **Then commit and stop.**
+
+**Why this matters:** Stan's standing complaint about trench Claudes is that they forget to document, hit compaction, and lose progress. The wrap-up report is the single most important thing you do in a session — it's the handoff to the next session (same Claude or different Claude, doesn't matter). If you only have time for one thing at end-of-session, it's the wrap-up report. Commits can wait five minutes; a compacted context cannot be recovered.
+
+### Why BOTH bookends matter
+
+Check-in without wrap-up = you start oriented but leave nothing for the next session.
+Wrap-up without check-in = you document cleanly but start from "what Stan just said" instead of "the full accumulated state."
+**Both = the overseer has full and robust visibility.** Stan gets to work at the speed of direction-giving, not the speed of context-pasting.
+
+See `private/OVERSEER-DIRECTIONS.md` documentation protocol for additional details, including what counts as a "substantive methodology dialogue" worth capturing.
+
+---
+
+---
+
 ## Key Files
 
 | File | Purpose |
