@@ -63,12 +63,25 @@ When Stan signals start-of-session with phrases like **"hey, let's start a new s
 
 When Stan signals end-of-session with phrases like **"let's wrap it up for now," "wrap it up," "let's stop here," "that's enough for today," "commit and wrap,"** or any similar winding-down language — do these things BEFORE you commit or stop, in this order:
 
-1. **Write dialogue-notes if a substantive methodology dialogue happened.** If the session produced a methodology correction, rule refinement, theoretical framing, enthusiastic adoption walked back, or pushback Stan thinks is dangerous → write `private/sessions/[YYYY-MM-DD]-[topic-slug]/dialogue-notes.md` capturing:
-   - What you initially proposed
-   - Stan's pushback or refinement
-   - The reasoning chain (not just the outcome — the *why* matters more than the *what*)
-   - What was ultimately decided
+1. **Write session-dir notes for ANY substantive work, not just dialogues.** Create `private/sessions/[YYYY-MM-DD]-[topic-slug]/` and drop a notes file inside. This is **mandatory for any session that produced any ONE of the following** (not just dialogues):
+   - **Methodology dialogue:** you were corrected on an approach, a rule refinement landed, a theoretical framing was articulated, an enthusiastic adoption was walked back → file name `dialogue-notes.md`
+   - **Scanner class work:** new classes explored, applied, or retired; FP rates measured; false-positive filter tuning → file name `session-notes.md`
+   - **Cross-validation findings:** cross-lens convergence, cross-agent agreement, retroactive validation of prior work → file name `session-notes.md`
+   - **Multi-class corpus sweeps:** merges or splits applied across multiple classes or books; adversarial audit results → file name `session-notes.md`
+   - **New theoretical framings or reframings:** like today's "v4 is methodology application, not hand editing" correction → file name `dialogue-notes.md` or `session-notes.md` as fits
+   - **Any work whose reasoning the commit message can't fit in its 1000-character soft limit.** If your commit body is already 600+ characters and there's more you want to preserve, that's the signal to write session notes.
+
+   **Heuristic: if the session produced something a future overseer session would want to read after it auto-loads LANDSCAPE-MAP and METHODOLOGY-TIMELINE, write the session notes.** The commit message is the pointer-summary; the session notes file is the reasoning archive. Both should exist for substantive work.
+
+   **What the notes should contain** (regardless of which filename):
+   - What you proposed, attempted, or discovered
+   - Stan's pushback, refinements, or decisions
+   - The reasoning chain (the *why* matters more than the *what* — the commit captures the *what*)
+   - What was ultimately decided, applied, or retired
    - Any load-bearing phrases Stan used verbatim — they may become prospectus language and need to be preserved exactly
+   - Cross-references to other workspace files (overseer-workspace briefings, sibling OVERSEER-DIRECTIONS updates, etc.) that this session affects or is affected by
+
+   **The gap this rule is fixing:** on 2026-04-14, the BofM trench Claude ran a significant split-scanner inversion pass (Classes I/J/L + cross-lens convergence finding at Alma 19:2) with a thorough commit message but no session directory. That finding — Q8 empirical validation — is important enough that a future overseer session should find it by walking `private/sessions/` rather than grepping commit messages. Any substantive work deserves its own session directory.
 
 2. **Update `private/OVERSEER-DIRECTIONS.md`** per its documentation protocol:
    - Transform any applied items from "Status: active" to "APPLIED [date] — commit [hash]" with a brief resolution note
