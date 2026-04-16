@@ -3414,13 +3414,21 @@
     hideAboutPage();
     // Hide welcome/landing
     hideWelcome();
-    var allCh = document.querySelectorAll('#book-' + bookId + ' .chapter-content');
-    allCh.forEach(function(el) { el.style.display = 'none'; });
+    // Mark active chapter for narration tracking
+    var prevActive = document.querySelector('#book-' + bookId + ' .chapter-content.chapter-active');
+    if (prevActive) prevActive.classList.remove('chapter-active');
     var target = document.getElementById('ch-' + bookId + '-' + chNum);
-    if (target) target.style.display = 'block';
+    if (target) target.classList.add('chapter-active');
     currentChapterMap[bookId] = chNum;
-    // Skip scroll-to-top when navigating to a specific verse from search
-    if (!window._pendingVerseScroll) window.scrollTo({top: 0});
+    // Scroll to chapter anchor (continuous scroll)
+    if (!window._pendingVerseScroll) {
+      if (target) {
+        var y = target.getBoundingClientRect().top + window.scrollY - 52;
+        window.scrollTo({ top: Math.max(0, y) });
+      } else {
+        window.scrollTo({ top: 0 });
+      }
+    }
     // Update hash — store what we set so handleHash can skip it
     lastHashWeSet = bookId + '-' + chNum;
     window.location.hash = lastHashWeSet;
@@ -3585,6 +3593,68 @@
   function pauseCollapse() {}
   function closeAllPanels() {}
 
+  // ---- CONTINUOUS-SCROLL CHAPTER TRACKING ----
+  // Fires on scroll (rAF-throttled). Determines the topmost visible chapter
+  // and updates topbar, hash, float nav, and chapter-active class.
+  var _scrollTicking = false;
+  function onScrollUpdateChapter() {
+    if (_scrollTicking) return;
+    _scrollTicking = true;
+    requestAnimationFrame(function() {
+      _scrollTicking = false;
+      if (!currentBook) return;
+      var bookEl = document.getElementById('book-' + currentBook);
+      if (!bookEl || bookEl.style.display === 'none') return;
+      var chapters = bookEl.querySelectorAll('.chapter-content');
+      if (!chapters.length) return;
+      var topbarH = 52;
+      var best = null;
+      var bestTop = -Infinity;
+      // Find topmost chapter whose top has scrolled at or above the topbar line
+      for (var i = 0; i < chapters.length; i++) {
+        var rect = chapters[i].getBoundingClientRect();
+        if (rect.top <= topbarH && rect.top > bestTop) {
+          bestTop = rect.top;
+          best = chapters[i];
+        }
+      }
+      // If none has scrolled past topbar, take first chapter with visible content
+      if (!best) {
+        for (var i = 0; i < chapters.length; i++) {
+          var rect = chapters[i].getBoundingClientRect();
+          if (rect.bottom > topbarH) { best = chapters[i]; break; }
+        }
+      }
+      if (!best) return;
+      // Extract chapter number from id: "ch-alma-32" → last segment
+      var idParts = best.id.split('-');
+      var chNum = parseInt(idParts[idParts.length - 1]);
+      if (isNaN(chNum) || currentChapterMap[currentBook] === chNum) return;
+      // Update state
+      currentChapterMap[currentBook] = chNum;
+      // chapter-active class
+      var prevActive = bookEl.querySelector('.chapter-content.chapter-active');
+      if (prevActive) prevActive.classList.remove('chapter-active');
+      best.classList.add('chapter-active');
+      // Topbar
+      var meta = bookMeta[currentBook];
+      if (meta) document.getElementById('topbar-chap').textContent = chNum;
+      // Float nav
+      updateFloatNav(currentBook, chNum);
+      // Hash (replaceState — no history entry, no hashchange event)
+      var newHash = currentBook + '-' + chNum;
+      lastHashWeSet = newHash;
+      history.replaceState(null, '', '#' + newHash);
+      // Nav panel highlight
+      document.querySelectorAll('.nav-ch').forEach(function(c) { c.classList.remove('current'); });
+      var navGrid = document.getElementById('nav-ch-grid-' + currentBook);
+      if (navGrid) {
+        var chs = navGrid.querySelectorAll('.nav-ch');
+        if (chs[chNum - 1]) chs[chNum - 1].classList.add('current');
+      }
+    });
+  }
+
   window.addEventListener('scroll', function() {
     var y = window.scrollY;
     // Back-to-top button
@@ -3593,6 +3663,8 @@
     var h = document.documentElement.scrollHeight - window.innerHeight;
     var pct = h > 0 ? (y / h * 100) : 0;
     document.getElementById('progress').style.width = pct + '%';
+    // Chapter tracking for continuous scroll
+    onScrollUpdateChapter();
   }, { passive: true });
 
   // ---- SWIPE TO CHANGE CHAPTERS ----

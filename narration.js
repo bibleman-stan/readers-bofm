@@ -97,8 +97,8 @@ const NARRATION = (() => {
                     || document.querySelector('.book-content:not([style*="display: none"])');
     if (!activeBook) return null;
 
-    const activeChapter = activeBook.querySelector('.chapter-content[style*="display: block"]')
-                       || activeBook.querySelector('.chapter-content:not([style*="display: none"])');
+    const activeChapter = activeBook.querySelector('.chapter-content.chapter-active')
+                       || activeBook.querySelector('.chapter-content');
     if (!activeChapter) return null;
 
     const id = activeChapter.id || '';
@@ -503,8 +503,8 @@ const NARRATION = (() => {
                     || document.querySelector('.book-content:not([style*="display: none"])');
     if (!activeBook) return -1;
 
-    const activeChapter = activeBook.querySelector('.chapter-content[style*="display: block"]')
-                       || activeBook.querySelector('.chapter-content:not([style*="display: none"])');
+    const activeChapter = activeBook.querySelector('.chapter-content.chapter-active')
+                       || activeBook.querySelector('.chapter-content');
     if (!activeChapter) return -1;
 
     const isSenseLineMode = document.body.classList.contains('show-lines');
@@ -614,8 +614,8 @@ const NARRATION = (() => {
                     || document.querySelector('.book-content:not([style*="display: none"])');
     if (!activeBook) return;
 
-    const activeChapter = activeBook.querySelector('.chapter-content[style*="display: block"]')
-                       || activeBook.querySelector('.chapter-content:not([style*="display: none"])');
+    const activeChapter = activeBook.querySelector('.chapter-content.chapter-active')
+                       || activeBook.querySelector('.chapter-content');
     if (!activeChapter) return;
 
     activeChapter.addEventListener('click', onChapterClick);
@@ -720,8 +720,8 @@ const NARRATION = (() => {
                     || document.querySelector('.book-content:not([style*="display: none"])');
     if (!activeBook) return null;
 
-    const activeChapter = activeBook.querySelector('.chapter-content[style*="display: block"]')
-                       || activeBook.querySelector('.chapter-content:not([style*="display: none"])');
+    const activeChapter = activeBook.querySelector('.chapter-content.chapter-active')
+                       || activeBook.querySelector('.chapter-content');
     if (!activeChapter) return null;
 
     const isSenseLineMode = document.body.classList.contains('show-lines');

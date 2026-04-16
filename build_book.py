@@ -2821,7 +2821,7 @@ def build_parallel_map(bid, ch_num, ch_verses):
 
 
 def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
-    p = [f'<div id="ch-{bid}-{ch_num}" class="chapter-content" style="display:none;">']
+    p = [f'<div id="ch-{bid}-{ch_num}" class="chapter-content">']
     p.append(f'<div class="chapter-title">Chapter {ch_num}</div>')
     # Prev/Next nav at TOP
     p.append('<div class="chapter-nav">')
