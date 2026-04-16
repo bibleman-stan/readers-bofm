@@ -61,10 +61,17 @@ This prevents building the wrong solution and having to undo it. The "I'll just 
 ### A4. When Running Adversarial Agents
 
 1. **Specific scoped mandates**, not "review all of X." Instead: "check Alma 5, 7, 12 and Helaman 5, 6 for these 5 specific patterns."
-2. Use the **haiku model** for read-only review tasks (faster, cheaper, and just as effective for finding issues)
-3. Use **opus** for tasks requiring code changes or complex multi-step reasoning
-4. Each agent should **find AND fix**, not just find — avoid the sequential bottleneck where you have to manually consolidate findings and dispatch fix agents
-5. **Split by genre group** for corpus-wide reviews (see A2 for groups)
+2. **Match model to task complexity** — don't default everything to Opus. Stan pays per-token; routing matters.
+3. Each agent should **find AND fix**, not just find — avoid the sequential bottleneck where you have to manually consolidate findings and dispatch fix agents
+4. **Split by genre group** for corpus-wide reviews (see A2 for groups)
+
+**Three-tier model routing for agent dispatch:**
+
+- **Haiku** (cheapest, fastest): file moves, renames, glob/ls formatting, mechanical reference lookups (find all X, count Y), single-file reads-and-summarize with no judgment, yes/no checks against file content.
+- **Sonnet** (mid-tier): scanner runs where rules are already defined, quick consistency checks with narrow scope, documentation updates following a clear template, short adversarial checks on a single specific question, cross-project consistency checks once both sides are stable, mirroring edits between files.
+- **Opus** (reasoning-heavy): multi-angle adversarial audits requiring deep reasoning, methodology synthesis across multiple sources, restructuring major documents, novel rule design or hierarchy reframes, anything where the judgment IS the work product.
+
+**When in doubt, Sonnet is the right default** — it handles most scoped tasks capably at a fraction of Opus cost. Reserve Opus for tasks where the reasoning quality directly determines the output's value.
 
 ### A5. When Adding Split/Merge Rules
 
