@@ -53,7 +53,13 @@ When Stan signals start-of-session with phrases like **"hey, let's start a new s
 5. **`c:/Users/bibleman/repos/overseer-workspace/METHODOLOGY-TIMELINE.md`** — dated log of methodology state changes on both projects. Check this if you're going to touch any scan/audit/findings files from prior sessions — the timeline tells you what methodology state they reflect.
 6. **`c:/Users/bibleman/repos/overseer-workspace/OPEN-QUESTIONS.md`** — unresolved threads that might intersect with whatever Stan is asking for. Skim for relevance.
 7. **`private/01-method/colometry-canon.md`** — the methodology canon. Always fresh-read before any editorial or rule work. Rules evolve fast.
-8. **`C:\vaults-nano\my_brain\00_Inbox\claude-brainstorming.md`** — Stan's mobile-to-desktop idea bridge. He voice-chats ideas with mobile Claude; they land here via Obsidian Sync. If there's content you haven't seen before, treat each item as a pending task/idea for the current project and either integrate it into active work or surface it to Stan. Don't let items sit here unaddressed — that breaks the loop.
+8. **`C:\vaults-nano\my_brain\00_Inbox\claude-brainstorming.md`** — Stan's mobile-to-desktop idea bridge. He voice-chats ideas with mobile Claude; they land here via Obsidian Sync. Rules of engagement (three Claudes may be reading this file — overseer + both trench Claudes — coordination matters):
+   - **Read all unaddressed items** (those without a ✓ or ⏳ mark).
+   - **Assess scope:** If clearly BofM-related (mentions BoM, BofM passage, bomreader), the BofM trench Claude handles it. If clearly GNT-related, the GNT trench Claude handles it. Cross-project, methodology-wide, or ambiguous items → the overseer handles (or you raise to Stan).
+   - **If an item is in YOUR scope:** claim it by adding a line below Stan's text: `⏳ [claimed by bofm-trench YYYY-MM-DD]`. Work on it during the session.
+   - **When done:** replace the ⏳ line with `✓ YYYY-MM-DD — [one-line disposition]. [pointer to commit/session-notes/canon section where the real record lives].`
+   - **If an item is NOT in your scope:** do NOT touch it. Don't claim it, don't address it, don't delete or archive it. Mention it in your check-in to Stan only if it bears on what he's asking.
+   - **Never delete items.** Archival is the overseer's job (moves ✓-annotated items to `claude-brainstorming-archive.md` in the same folder).
 9. **`git log --oneline -10`** — see what's committed since the last session. Any commit you don't recognize is a state change you should understand before working.
 
 **After reading:** send Stan a brief check-in message confirming orientation. Something like: "Checked in. Current state: [one-sentence summary]. Top 2-3 hot threads per LANDSCAPE-MAP: [...]. Anything specific you want me to focus on, or should I continue the queued work?" Keep this to 4-5 lines. The goal is to prove you read the files, not to summarize them exhaustively.
