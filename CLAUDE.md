@@ -42,17 +42,22 @@ Also check `private/OVERSEER-DIRECTIONS.md` if present — local-only session di
 
 Canonical shared source: [`overseer-workspace/SESSION-BOOKEND-PROTOCOL.md`](../overseer-workspace/SESSION-BOOKEND-PROTOCOL.md) — CHECK-IN, WRAP-UP, context thresholds, and compaction-resume protocol. **Read it at the start of every session.**
 
-### BofM-specific CHECK-IN file list (steps from the shared protocol, with BofM paths)
+### BofM-specific CHECK-IN file list (structured as mandatory + consult-on-trigger per shared protocol)
 
+**MANDATORY (read every wake — including short "hey wake up" signals):**
 1. This CLAUDE.md in full
-2. `private/OVERSEER-DIRECTIONS.md` — active-directives section
-3. `private/README.md`
-4. `c:/Users/bibleman/repos/overseer-workspace/LANDSCAPE-MAP.md`
-5. `c:/Users/bibleman/repos/overseer-workspace/METHODOLOGY-TIMELINE.md` (only if touching prior-session files)
-6. `c:/Users/bibleman/repos/overseer-workspace/OPEN-QUESTIONS.md`
-7. `private/01-method/colometry-canon.md` — always fresh-read before editorial or rule work
-8. `C:\vaults-nano\my_brain\00_Inbox\claude-brainstorming.md` — scope per shared protocol (BofM items only)
-9. `git log --oneline -10`
+2. `private/OVERSEER-DIRECTIONS.md` active-directives section (NOT the archive)
+3. `c:/Users/bibleman/repos/overseer-workspace/LANDSCAPE-MAP.md`
+4. `C:\vaults-nano\my_brain\00_Inbox\claude-brainstorming.md` — scope per shared protocol (BofM items only)
+5. `git log --oneline -10`
+
+**CONSULT-ON-TRIGGER (evaluate the trigger; do NOT silently skip):**
+- `c:/Users/bibleman/repos/overseer-workspace/METHODOLOGY-TIMELINE.md` — **trigger:** task touches scan outputs, canon entries, or methodology artifacts from a prior session that you need to verify. **Skip when:** pure new work with no prior-session artifact dependencies.
+- `c:/Users/bibleman/repos/overseer-workspace/OPEN-QUESTIONS.md` — **trigger:** Stan's request bears on a named open question OR you're about to propose something that might overlap an unresolved thread. **Skip when:** request is clearly scoped with no open-question overlap.
+- `private/01-method/colometry-canon.md` — **trigger:** ANY editorial decision, rule interpretation, or methodology-touching work. **Skip when:** pure infrastructure / code / UX / deployment work with no canon touching.
+- `private/README.md` — **trigger:** writing a new file under `private/` and don't already know the subdirectory layout. **Skip when:** only reading existing files or writing in standard locations.
+
+**Self-report is mandatory before your first substantive response** — see the shared protocol's SELF-REPORT section for the one-line-per-file format. A silent skip is a check-in failure.
 
 ### BofM-specific WRAP-UP additions
 
