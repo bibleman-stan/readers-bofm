@@ -114,6 +114,12 @@ COMPOUND_SWAPS = [
     ("none other object save it be", "no other purpose except"),
     ("exceeding of all", "beyond all"), ("Exceeding of all", "Beyond all"),
     ("inasmuch as", "to the degree that"), ("Inasmuch as", "To the degree that"),
+    # Mosiah 2:16-17 — archaic "only" = "really/truly" (theological redirection,
+    # not modern "merely"). Benjamin: service to you WAS really service to God;
+    # when ye serve fellows, ye are really serving God. Phrase-specific to
+    # avoid collision with modern-sense "only" elsewhere in the corpus.
+    ("only been in the service", "really been in the service"),
+    ("only in the service", "really in the service"),
     # ── Structural speed bump phrase swaps ──
     ("for the space of", "for"), ("For the space of", "For"),
     # Added 2026-04-12: see Class J audit — impersonal KJV idioms. Must fire
