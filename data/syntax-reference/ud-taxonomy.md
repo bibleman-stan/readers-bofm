@@ -181,6 +181,7 @@ This table is a break-legality filter, not a break-doctrine. It catalogs where E
 | Line-last POS = `CCONJ` (*and, or, but, nor, yet, so, for*) | `REQUIRED-MERGE` | Ch. 15 §1 |
 | Line-last POS = `DET` (*the, a, an, this, these, his, their*) | `REQUIRED-MERGE` | Ch. 5 §7 |
 | Line-last POS = `AUX` with `aux` relation to VERB on following line | `REQUIRED-MERGE` | Ch. 3 §1 |
+| Line-last participle (VERB) with coordinated participle on following line sharing earlier modal+aux via ellipsis (line N+1 starts with `cc` = *and* + participle, lacks `nsubj` and finite verb) | `REQUIRED-MERGE` | Ch. 14 §2 |
 | Line-last POS = `ADP` with `case` relation to NP on following line | `REQUIRED-MERGE` | Ch. 7 §1 |
 | Line-last POS = `PART` (infinitive marker *to*) with `xcomp` VERB on following line | `REQUIRED-MERGE` | Ch. 14 §3 |
 | Line-last POS = `PART`/`ADV` (negator *not/no/neither/nor*) with scope constituent on following line | `REQUIRED-MERGE` | Ch. 9 §3 |
