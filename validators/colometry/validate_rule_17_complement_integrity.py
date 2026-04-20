@@ -317,7 +317,7 @@ def main():
         for cls in sorted(by_class):
             print(f"--- {cls.upper()} verbs ({len(by_class[cls])} violations) ---")
             for v in by_class[cls]:
-                print(f"  {v['file']}:{v['line_num']} [{v['verb']}]")
+                print(f"[DEVIATION]  {v['file']}:{v['line_num']} [{v['verb']}]")
                 print(f"    {v['line'][:100]}")
                 print(f"    {v['next_line'][:100]}")
                 print()

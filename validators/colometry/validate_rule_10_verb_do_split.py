@@ -16,6 +16,23 @@ review; false positives are expected (restrictive relatives, appositive
 NPs, compound-object continuations with parallel structure). A human
 reviews before applying merges.
 
+Exclusion patterns (added 2026-04-19 after corpus review confirmed all 13
+original candidates were false positives):
+
+  1. SUBORDINATOR_THAT_RE  — "that" + pronoun on N+1 → subordinate clause,
+     not a DO (e.g. "that ye suffer none of these things").
+  2. RELATIVE_PRONOUN_START_RE — N+1 starts with which/who/whose/whom →
+     relative-clause continuation, not a DO.
+  3. COORDINATE_START_RE — N+1 starts with and/but/or/nor/yet → coordinate
+     continuation, not a DO.
+  4. EXISTENTIAL_START_RE — N+1 starts with "there was/were/..." →
+     existential construction, not a DO.
+  5. CATAPHORIC_IT_END_RE — Line N ends with it/this/these/those AND N+1
+     starts with that/which → cataphoric placeholder; Rule 17 territory.
+  6. APPOSITIVE_NP_RE — N+1 is "the Son of God" / "the Almighty" style
+     appositive (article + short title NP, no verb at all after stripping
+     relative markers) where the preceding line already contains its own DO.
+
 Exit code: 0 if zero violations, 1 if violations found.
 """
 
@@ -86,6 +103,74 @@ VERB_OR_PP_END_RE = re.compile(
 )
 
 
+# ---------------------------------------------------------------------------
+# Exclusion patterns — added 2026-04-19
+# ---------------------------------------------------------------------------
+
+# Pattern 1: "that" used as subordinator (followed by a pronoun subject)
+SUBORDINATOR_THAT_RE = re.compile(
+    r"^that\s+(?:ye|thou|he|she|it|we|they|you|I|thee|thy|thine)\b",
+    re.IGNORECASE,
+)
+
+# Pattern 2 (part of cataphoric check): "that" or "which" opening a clause
+# after a cataphoric "it/this/these/those" on Line N
+CATAPHORIC_IT_END_RE = re.compile(
+    r"\b(?:it|this|these|those)\b[,.;]?\s*$",
+    re.IGNORECASE,
+)
+
+# Pattern 3/6: relative pronouns that start a relative-clause continuation
+RELATIVE_PRONOUN_START_RE = re.compile(
+    r"^(?:which|who|whose|whom)\b",
+    re.IGNORECASE,
+)
+
+# Pattern 4: coordinating conjunction at start of N+1
+COORDINATE_START_RE = re.compile(
+    r"^(?:and|but|or|nor|yet)\b",
+    re.IGNORECASE,
+)
+
+# Pattern 7: existential "there was/were/..." construction
+EXISTENTIAL_START_RE = re.compile(
+    r"^there\s+(?:was|were|is|are|came|stood|dwelt)\b",
+    re.IGNORECASE,
+)
+
+# Additional: "that" + proper noun / "the Lord" type (subordinator introducing
+# direct-speech citation, e.g. "that thus saith the Lord God")
+SUBORDINATOR_THAT_LORD_RE = re.compile(
+    r"^that\s+(?:thus|so|the\s+Lord|all|none|no\b)",
+    re.IGNORECASE,
+)
+
+# Pattern 8: relative "that" + finite verb (not covered by SUBORDINATOR_THAT_RE
+# which only tests pronoun subjects). E.g. "that has brought", "that are".
+# RELATIVE_MARKERS_RE already strips these but the resulting bare NP can still
+# pass the FINITE_VERB check — so skip at the N+1-start level instead.
+RELATIVE_THAT_VERB_RE = re.compile(
+    r"^that\s+(?:is|are|was|were|hath|hast|had|has|have|did|do|does|doth|"
+    r"shall|will|would|could|should|might|must|may|can)\b",
+    re.IGNORECASE,
+)
+
+# Pattern 9: appositive NP continuation — N+1 is a short NP with no verb at all
+# after a proper name or title on Line N. Detected by: N ends with a proper
+# name-like token (capitalized word) or comma after a name, AND N+1 has no
+# finite verb whatsoever (even after stripping relatives).
+# Implemented as: if no_relative has no finite verb AND N contains a proper
+# name immediately before end-of-line punctuation — handled via the existing
+# finite-verb check, which should already catch this. BUT the Helaman:2656
+# case slips through because VERB_OR_PP_END_RE matches "of Jesus Christ," via
+# "of" as a preposition after "know". Add a check: if Line N ends with a
+# proper noun (capitalized word + comma/semicolon), the next-line bare NP is
+# almost certainly an appositive.
+ENDS_WITH_PROPER_NOUN_RE = re.compile(
+    r"\b[A-Z][a-z]+[,;]\s*$"
+)
+
+
 def scan_file(path: Path) -> list[dict]:
     """Scan one v2-mine file for Rule 10 violations."""
     violations = []
@@ -121,6 +206,45 @@ def scan_file(path: Path) -> list[dict]:
 
         # Filter: skip if line N ends with colon (direct discourse)
         if line.rstrip().endswith(":"):
+            continue
+
+        # -------------------------------------------------------------------
+        # Exclusion checks (2026-04-19)
+        # -------------------------------------------------------------------
+
+        # Pattern 1 & variants: "that" as subordinator or relative pronoun
+        if SUBORDINATOR_THAT_RE.match(next_stripped):
+            continue
+        if SUBORDINATOR_THAT_LORD_RE.match(next_stripped):
+            continue
+        # Pattern 8: relative "that" + finite verb (e.g. "that has brought")
+        if RELATIVE_THAT_VERB_RE.match(next_stripped):
+            continue
+
+        # Pattern 3/6: relative-clause continuation (which/who/whose/whom)
+        if RELATIVE_PRONOUN_START_RE.match(next_stripped):
+            continue
+
+        # Pattern 4: coordinate continuation
+        if COORDINATE_START_RE.match(next_stripped):
+            continue
+
+        # Pattern 7: existential construction on N+1 OR on Line N itself
+        if EXISTENTIAL_START_RE.match(next_stripped):
+            continue
+        if EXISTENTIAL_START_RE.match(line.lstrip()):
+            continue
+
+        # Pattern 2/5: cataphoric "it/this/these/those" on Line N +
+        #              "that/which" opening Line N+1
+        if CATAPHORIC_IT_END_RE.search(line) and re.match(
+            r"^(?:that|which)\b", next_stripped, re.IGNORECASE
+        ):
+            continue
+
+        # Pattern 9: appositive NP — Line N ends with a proper noun (capitalized
+        # word before comma/semicolon). N+1 is then an appositive, not a DO.
+        if ENDS_WITH_PROPER_NOUN_RE.search(line.rstrip()):
             continue
 
         violations.append(
@@ -163,7 +287,7 @@ def main():
 
     if all_violations:
         for v in all_violations:
-            print(f"  {v['file']}:{v['line_num']}")
+            print(f"[DEVIATION]  {v['file']}:{v['line_num']}")
             print(f"    {v['line'][:100]}")
             print(f"    {v['next_line'][:100]}")
             print()

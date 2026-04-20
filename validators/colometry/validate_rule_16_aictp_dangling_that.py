@@ -89,7 +89,7 @@ def main():
 
     if all_violations:
         for v in all_violations:
-            print(f"  {v['file']}:{v['line_num']} — {v['pattern']}")
+            print(f"[DEVIATION]  {v['file']}:{v['line_num']} — {v['pattern']}")
             print(f"    {v['line'][:100]}")
             if v["next_line"]:
                 print(f"    {v['next_line'][:100]}")

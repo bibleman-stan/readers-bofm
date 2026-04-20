@@ -321,7 +321,7 @@ def main():
         for rule in sorted(by_rule):
             print(f"--- {rule} ({len(by_rule[rule])} violations) ---")
             for v in by_rule[rule]:
-                print(f"  {v['file']}:{v['line_num']} — {v['reason']}")
+                print(f"[MALFORMED]  {v['file']}:{v['line_num']} — {v['reason']}")
                 print(f"    {v['line'][:100]}")
                 if "Rule 12" in v["rule"]:
                     print(f"    {v['next_line'][:100]}")

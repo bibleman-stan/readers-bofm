@@ -90,16 +90,20 @@ Threshold discipline and compaction-resume rules live in the shared protocol (re
 The files in `data/text-files/v2-mine/` are the canonical source. These are Stan's hand-edited sense-line files. They are sacred.
 
 **NEVER:**
-- Modify a canonical v2 file directly
 - Alter punctuation (punctuation belongs to the canonical LDS text)
 - Add, remove, or change words
-- Apply changes without Stan's explicit approval
+- Apply **ad-hoc / novel** changes (changes not derived from a settled rule in `private/01-method/colometry-canon.md`) without Stan's explicit approval
 
 **ALWAYS:**
-- Work on a copy: `cp data/text-files/v2-mine/FILE.txt /tmp/FILE-working.txt`
-- Present proposed changes for review before touching any canonical file
+- Present ad-hoc / novel proposed changes for review before touching any canonical file
 - Save the original before any new upload could overwrite it
 - Make line-break changes only — the only editorial tool is where lines break
+
+**Rule-derivative changes are different and do NOT require per-item approval.** When a settled mechanical rule in the canon (Rules 1, 7, 9, 10, 11, 12, 13a, 15, 16, 17, 18, 19, 20, 21, 23, 26, 27, 28, etc.) fires unambiguously against the corpus — via its validator or a clean trigger match that the rule's UD signature catches — applying that rule IS the approval. The canon is the agreement. Rule-derivative changes on mechanical triggers are Category A by default and apply without per-item flagging.
+
+**Validator output is a work queue, not a review queue.** `STRONG-MERGE-CANDIDATE` and `STRONG-SPLIT-CANDIDATE` tags are application-ready. Only `REVIEW-REQUIRED` items (those the validator itself flags as heuristic-ambiguous) need per-item editorial judgment. Don't invert this discipline by treating clean mechanical hits as "candidates for review" — that's the over-cautious failure mode, and it creates toilsome friction for Stan who already authorized the rule.
+
+Do not work on copies of v2-mine files; edit them directly when applying rule-derivative changes. Git and the canonical-LDS-text punctuation-preservation rule are the safeguards, not file-copy rituals.
 
 ---
 
@@ -294,15 +298,15 @@ Never overwrite history — always append.
 - Has final say on all Category B and C colometry decisions
 
 **Claude Code:**
-- Mechanical passes: find dangling conjunctions, long lines, orphan fragments
-- Propose changes in clear before/after format
-- Apply approved changes to working copies only
-- Run build pipeline after approved changes
-- Never touch canonical files without explicit approval
+- **Mechanical passes:** find and APPLY rule-derivative changes (dangling conjunctions per Rule 9, complement-integrity merges per Rule 17, insomuch-that binding per Rule 27, etc.). Canon is authority; no per-item flagging needed for clean mechanical hits.
+- **Ad-hoc / novel proposals:** present in clear before/after format for Stan's review. These are Category B/C changes, not rule-derivative.
+- **Apply approved changes directly to canonical files.** File-copy rituals are not the safeguard — the safeguards are the punctuation-preservation rule, the words-never-change rule, git history, and the rule-derivative vs. ad-hoc distinction.
+- Run build pipeline after source text changes (`python3 build_book.py --all` + bump `sw.js` cache version).
 - Never alter punctuation, words, or structure — line breaks only
 - **Colometry review partner:** on request, agree/challenge/suggest on Stan's edits using the settled rules and category framework
 - **Handoff maintenance:** after any session where decisions are made, principles are refined, or new patterns identified, update the relevant handoff file (append dated block, never overwrite history)
 - **"Do an update" means:** update ALL relevant handoffs, memory files, research files, and any other documentation so that a fresh session can resume with full context
+- **Hedging discipline:** do not ask for confirmation on rule-derivative actions Stan has already implicitly authorized by adopting the rule. "Yes that's fine" after clear prior direction is a friction cost that compounds across a session. If the rule says to do X and conditions are unambiguous, do X.
 
 ---
 
