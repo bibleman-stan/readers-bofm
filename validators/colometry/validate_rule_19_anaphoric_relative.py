@@ -13,6 +13,9 @@ whose, whom, that as relative).
 Classification:
   STRONG-MERGE: anaphoric + Class P signals — short clause, no proper nouns,
       no substantive new predicates, mostly pronouns and common verbs.
+  STRONG-MERGE-PREDICATIVE-IDENTIFIER: relative pronoun + copular verb +
+      classifier/adjective phrase; identifies/classifies the head noun; ≤12
+      words; no proper nouns.
   PROBABLE-CATAPHORIC-KEEP-SPLIT: proper nouns, long clause, new substantive
       content.
   REVIEW-REQUIRED: ambiguous.
@@ -52,6 +55,39 @@ REL_PRONOUN_RE = re.compile(
 )
 
 # --- Classification heuristics ---
+
+# Predicative-identifier pattern: relative pronoun + copular verb + classifier/adjective
+# Examples: "which is most abominable", "which was desirable above all", "which is the word of God"
+# STRICT: only match when followed by adjective or NP — not passive past participles.
+# We detect "which is/was/are/were" + classifier by checking that the next word is NOT a
+# past-participle in -ed/-en form (which would indicate a passive construction).
+# Strategy: require that the first content word after the copula is NOT a past-participle.
+# Past-participles typically end in -ed, -en, or are on the action-participle list.
+PREDICATIVE_IDENTIFIER_RE = re.compile(
+    r"^(?:which|who|that)\s+"
+    r"(?:is|was|are|were|be|been|being|am|art|became|seemed|appeared|proved)\s+"
+    r"(?:the|a|an|most|more|less|very|exceedingly|so|such|not|\s)*\w+",
+    re.IGNORECASE,
+)
+
+# Past-participle (passive) pattern — signals ACTION, not classification.
+# These are cataphoric not classifying. Catches -ed, -en endings plus common irregular forms.
+# After stripping "which is/was/are/were", if next content word ends in -ed or -en or is
+# in the explicit list, it's an action passive.
+# Also catches: "not written" (negated passive), present-participle action (falling/coming/going)
+ACTION_PARTICIPLE_RE = re.compile(
+    r"^(?:which|who|that)\s+(?:is|was|are|were)\s+"
+    r"(?:the |a |an |most |more |very |exceedingly |not )?"  # optional leading modifiers incl. "not"
+    r"(?:\w+ed|\w+en|\w+ing|"  # -ed, -en, -ing ending words (past/present participles)
+    r"slain|run|set|put|cut|led|built|wrought|given|born|done|seen|known|shown|"
+    r"fallen|taken|broken|spoken|written|torn|sworn|chosen|proven|"
+    r"prepared|ordained|sent|commanded|appointed|called|made|"
+    r"established|created|fulfilled|manifested|revealed|"
+    r"suffered|crucified|raised|baptized|condemned|cast|brought|"
+    r"scattered|gathered|lifted|separated|trodden|ministered|delivered|"
+    r"compared|translated|engraven|executed|converted|used)\b",
+    re.IGNORECASE,
+)
 
 # Proper nouns: capitalized word NOT at start of line (after trimming leading "which/who/...")
 # and NOT common false-positives (I, Lord — actually Lord is a proper noun we DO want to catch)
@@ -123,9 +159,28 @@ def find_proper_nouns(clause_body: str) -> list[str]:
     return proper
 
 
+def is_action_advancing_participle(rel_line: str, clause_body: str) -> bool:
+    """
+    Return True if rel_line matches the is/was + past-participle (passive) pattern.
+    Passive constructions describe actions done to the head noun, not properties of it.
+    These are cataphoric or anaphoric-action, not predicative-identifier.
+    Examples: "which was made of fine steel", "which was given unto our father",
+              "which are ripened", "who was executed according to the law"
+    """
+    return bool(ACTION_PARTICIPLE_RE.match(rel_line.strip()))
+
+
 def classify_relative_clause(rel_line: str, next_next_line: str | None) -> tuple[str, str]:
     """
-    Classify the relative clause line as STRONG-MERGE, PROBABLE-CATAPHORIC, or REVIEW-REQUIRED.
+    Classify the relative clause line as STRONG-MERGE, STRONG-MERGE-PREDICATIVE-IDENTIFIER,
+    PROBABLE-CATAPHORIC, or REVIEW-REQUIRED.
+
+    Classification priority:
+      1. Proper nouns → PROBABLE-CATAPHORIC
+      2. Too long (>12w) → PROBABLE-CATAPHORIC
+      3. STRONG-MERGE heuristic (original: ≤8w, no proper nouns, no substantive predicates)
+      4. PREDICATIVE-IDENTIFIER (copular + classifier, ≤12w, no action-advancing participle)
+      5. Otherwise REVIEW-REQUIRED
 
     Returns (category, reason).
     """
@@ -140,11 +195,11 @@ def classify_relative_clause(rel_line: str, next_next_line: str | None) -> tuple
             f"proper nouns in clause: {proper_nouns[:3]}",
         )
 
-    # 2. Word count > 8 → lean cataphoric (may carry substantive info)
-    if word_count > 8:
+    # 2. Word count > 12 → cataphoric (too long to be purely classifying)
+    if word_count > 12:
         return (
             "PROBABLE-CATAPHORIC-KEEP-SPLIT",
-            f"clause too long ({word_count} words) to be purely anaphoric",
+            f"clause too long ({word_count} words) for merge",
         )
 
     # 3. Check for substantive new predicates (non-common verbs)
@@ -167,28 +222,46 @@ def classify_relative_clause(rel_line: str, next_next_line: str | None) -> tuple
         # common content words that ARE backward-pointing in BofM formulaic style
         "appointed", "given", "spoken", "written", "said", "commanded",
         "promised", "prepared", "ordained", "written",
+        # degree modifiers / qualifiers
+        "most", "more", "less", "very", "exceedingly", "above", "all", "other",
+        "so", "such", "also", "even", "only",
     }
 
     # Remove short function words (len <= 2)
     non_common = {w for w in non_common if len(w) > 2}
 
+    if word_count <= 8 and len(non_common) == 0:
+        # Original STRONG-MERGE: short + no proper nouns + no new substantive content
+        return (
+            "STRONG-MERGE",
+            f"short ({word_count}w), no proper nouns, no new substantive predicates",
+        )
+
+    # 4. Predicative-identifier check: copular verb + classifier (≤12w already guaranteed above)
+    if PREDICATIVE_IDENTIFIER_RE.match(rel_line.strip()):
+        # Exclude action-advancing participles (e.g. "which was prepared from the foundation")
+        if not is_action_advancing_participle(rel_line.strip(), clause_body):
+            return (
+                "STRONG-MERGE-PREDICATIVE-IDENTIFIER",
+                f"copular+classifier ({word_count}w), classifies head noun, no proper nouns",
+            )
+
+    # 5. Multiple substantive words — REVIEW
     if len(non_common) >= 2:
-        # Multiple substantive words not in our backward-pointing list
         return (
             "REVIEW-REQUIRED",
             f"substantive new words in clause: {sorted(non_common)[:5]}",
         )
     elif len(non_common) == 1:
-        # Single substantive word — borderline
         return (
             "REVIEW-REQUIRED",
             f"one substantive new word: {sorted(non_common)}",
         )
 
-    # 4. Short clause, no proper nouns, no substantive new content → STRONG-MERGE
+    # 6. Nothing clear — REVIEW
     return (
-        "STRONG-MERGE",
-        f"short ({word_count}w), no proper nouns, no new substantive predicates",
+        "REVIEW-REQUIRED",
+        f"ambiguous ({word_count}w)",
     )
 
 
@@ -243,14 +316,16 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
 def apply_strong_merges(candidates: list[dict]) -> list[dict]:
     """
-    For STRONG-MERGE candidates: merge line N+1 upward into line N.
+    For STRONG-MERGE and STRONG-MERGE-PREDICATIVE-IDENTIFIER candidates:
+    merge line N+1 upward into line N.
     Groups by file, applies all merges in one pass per file.
     Returns list of applied merges.
     """
+    MERGE_CATEGORIES = {"STRONG-MERGE", "STRONG-MERGE-PREDICATIVE-IDENTIFIER"}
     # Group by file
     by_file: dict[Path, list[dict]] = {}
     for c in candidates:
-        if c["category"] == "STRONG-MERGE":
+        if c["category"] in MERGE_CATEGORIES:
             by_file.setdefault(c["path"], []).append(c)
 
     applied = []
@@ -315,6 +390,7 @@ def main():
 
     # Partition
     strong_merge = [c for c in all_candidates if c["category"] == "STRONG-MERGE"]
+    pred_id = [c for c in all_candidates if c["category"] == "STRONG-MERGE-PREDICATIVE-IDENTIFIER"]
     cataphoric = [c for c in all_candidates if c["category"] == "PROBABLE-CATAPHORIC-KEEP-SPLIT"]
     review = [c for c in all_candidates if c["category"] == "REVIEW-REQUIRED"]
 
@@ -323,30 +399,58 @@ def main():
     print("Rule 19 (Anaphoric Relative / Class P) validator — BofM v2-mine")
     print("[DEVIATION] error class")
     print("=" * 72)
-    print(f"Files scanned:                  {len(files)}")
-    print(f"Total candidates:               {len(all_candidates)}")
-    print(f"  STRONG-MERGE:                 {len(strong_merge)}")
-    print(f"  PROBABLE-CATAPHORIC (keep):   {len(cataphoric)}")
-    print(f"  REVIEW-REQUIRED:              {len(review)}")
+    print(f"Files scanned:                           {len(files)}")
+    print(f"Total candidates:                        {len(all_candidates)}")
+    print(f"  STRONG-MERGE:                          {len(strong_merge)}")
+    print(f"  STRONG-MERGE-PREDICATIVE-IDENTIFIER:   {len(pred_id)}")
+    print(f"  PROBABLE-CATAPHORIC (keep):            {len(cataphoric)}")
+    print(f"  REVIEW-REQUIRED:                       {len(review)}")
     print()
 
     # Apply merges if requested
     applied = []
-    if args.apply and strong_merge:
-        applied = apply_strong_merges(strong_merge)
-        print(f"Applied {len(applied)} STRONG-MERGE fix(es).")
+    merge_candidates = strong_merge + pred_id
+    if args.apply and merge_candidates:
+        applied = apply_strong_merges(all_candidates)
+        sm_applied = [a for a in applied if a["category"] == "STRONG-MERGE"]
+        pi_applied = [a for a in applied if a["category"] == "STRONG-MERGE-PREDICATIVE-IDENTIFIER"]
+        print(f"Applied {len(applied)} merge(s) total:")
+        print(f"  STRONG-MERGE:                          {len(sm_applied)}")
+        print(f"  STRONG-MERGE-PREDICATIVE-IDENTIFIER:   {len(pi_applied)}")
+        # Book distribution
+        from collections import Counter
+        book_counts = Counter(a["file"] for a in applied)
+        print("  Book distribution:")
+        for fname, cnt in sorted(book_counts.items()):
+            print(f"    {fname}: {cnt}")
         print()
 
     # --- STRONG-MERGE section ---
     print("=" * 72)
     print(f"STRONG-MERGE candidates ({len(strong_merge)})")
     print("=" * 72)
-    for c in strong_merge:
+    for c in strong_merge[:20]:  # cap at 20 for readability
         tag = "[APPLIED]" if args.apply else "[DEVIATION]"
         print(f"{tag}  {c['file']}:{c['line_num']}")
         print(f"    BEFORE line {c['line_num']}: {c['line'][:90]}")
         print(f"    BEFORE line {c['line_num']+1}: {c['rel_line'][:90]}")
-        print(f"    AFTER merge:  {c['line'].rstrip()} {c['rel_line'].lstrip()}"[:110])
+        print(f"    AFTER merge:  {(c['line'].rstrip() + ' ' + c['rel_line'].lstrip())[:110]}")
+        print(f"    Reason: {c['reason']}")
+        print()
+    if len(strong_merge) > 20:
+        print(f"  ... and {len(strong_merge) - 20} more (use --verbose for full list)")
+        print()
+
+    # --- STRONG-MERGE-PREDICATIVE-IDENTIFIER section ---
+    print("=" * 72)
+    print(f"STRONG-MERGE-PREDICATIVE-IDENTIFIER candidates ({len(pred_id)})")
+    print("=" * 72)
+    for c in pred_id:
+        tag = "[APPLIED]" if args.apply else "[DEVIATION]"
+        print(f"{tag}  {c['file']}:{c['line_num']}")
+        print(f"    BEFORE line {c['line_num']}: {c['line'][:90]}")
+        print(f"    BEFORE line {c['line_num']+1}: {c['rel_line'][:90]}")
+        print(f"    AFTER merge:  {(c['line'].rstrip() + ' ' + c['rel_line'].lstrip())[:110]}")
         print(f"    Reason: {c['reason']}")
         print()
 
