@@ -34,38 +34,46 @@ Before any substantive work, read the handoffs directory in order. Each file is 
 | `handoffs/09-bugs-fixed.md` | Historical bug fixes and key design decisions |
 | `handoffs/14-operational-protocols.md` | "Work smarter" patterns: parallel dispatch, two-phase pipeline, find-the-class fixes — READ THIS CAREFULLY |
 
-Also check `private/OVERSEER-DIRECTIONS.md` if present — local-only session directives (gitignored, Dropbox-backed). It carries active directives, the pointer to the full methodology canon, and a sync log. **Read it before starting substantive work, and update it before ending the session or committing — whichever comes first.** It contains its own documentation protocol; follow it. Session memory evaporates at compaction but that file survives, so treat it as the persistent write surface for anything the overseer needs to know about your session.
-
 ---
 
-## Session bookend protocol
+## Session bookend protocol (revised 2026-04-20 — overseer deprecated)
 
-Canonical shared source: [`overseer-workspace/SESSION-BOOKEND-PROTOCOL.md`](../overseer-workspace/SESSION-BOOKEND-PROTOCOL.md) — CHECK-IN, WRAP-UP, context thresholds, and compaction-resume protocol. **Read it at the start of every session.**
+**The overseer system is deprecated as of 2026-04-20.** Do NOT read or update `private/OVERSEER-DIRECTIONS.md` or files under `overseer-workspace/` — those remain as historical archive but are no longer authoritative. Stan is the direct authority.
 
-### BofM-specific CHECK-IN file list (structured as mandatory + consult-on-trigger per shared protocol)
+Each session has its own folder at `private/YYYY-MM-DD-brief_description/` containing:
+- `transcript.md` — verbatim user + assistant text, generated from JSONL at session end (skip tool-use and tool-result entries for readability)
+- `session-notes.md` — narrative summary of the session arc: what happened, why, what was decided
+- `decisions.md` — key decisions made, one paragraph each with rationale
+- `pending.md` — explicit carry-forward items for the next session
 
-**MANDATORY (read every wake — including short "hey wake up" signals):**
-1. This CLAUDE.md in full
-2. `private/OVERSEER-DIRECTIONS.md` active-directives section (NOT the archive)
-3. `c:/Users/bibleman/repos/overseer-workspace/LANDSCAPE-MAP.md`
-4. `C:\vaults-nano\my_brain\00_Inbox\claude-brainstorming.md` — scope per shared protocol (BofM items only)
-5. `git log --oneline -10`
+### CHECK-IN at session start
 
-**CONSULT-ON-TRIGGER (evaluate the trigger; do NOT silently skip):**
-- `c:/Users/bibleman/repos/overseer-workspace/METHODOLOGY-TIMELINE.md` — **trigger:** task touches scan outputs, canon entries, or methodology artifacts from a prior session that you need to verify. **Skip when:** pure new work with no prior-session artifact dependencies.
-- `c:/Users/bibleman/repos/overseer-workspace/OPEN-QUESTIONS.md` — **trigger:** Stan's request bears on a named open question OR you're about to propose something that might overlap an unresolved thread. **Skip when:** request is clearly scoped with no open-question overlap.
-- `private/01-method/colometry-canon.md` — **trigger:** ANY editorial decision, rule interpretation, or methodology-touching work. **Skip when:** pure infrastructure / code / UX / deployment work with no canon touching.
-- `private/README.md` — **trigger:** writing a new file under `private/` and don't already know the subdirectory layout. **Skip when:** only reading existing files or writing in standard locations.
+**MANDATORY (read every wake):**
+1. This `CLAUDE.md` in full
+2. `private/01-method/colometry-canon.md` — especially §0 Mission, §1 Framework, §2 Autonomy Boundary, §5 Rule detail
+3. The most recent session folder under `private/YYYY-MM-DD-*/` — specifically its `pending.md` (carry-forward state) and `session-notes.md` (prior-session context)
+4. `git log --oneline -10`
 
-**Self-report is mandatory before your first substantive response** — see the shared protocol's SELF-REPORT section for the one-line-per-file format. A silent skip is a check-in failure.
+**CONSULT-ON-TRIGGER:**
+- `data/syntax-reference/ud-taxonomy.md` §7 Break Legality Reference — **trigger:** any Layer 1 mechanical-rule work or validator design.
+- `validators/README.md` — **trigger:** writing or modifying a validator.
+- `C:\vaults-nano\my_brain\00_Inbox\claude-brainstorming.md` — **trigger:** Stan references a mobile-inbox item.
 
-### BofM-specific WRAP-UP additions
+**Self-report** before first substantive response: one-line-per-file confirmation of what you read, with any red flags surfaced.
 
-Session notes go to `private/03-sessions/[YYYY-MM-DD]-[topic-slug]/session-notes.md` (or `dialogue-notes.md` for methodology dialogues). The "What the notes should contain" bullet list from the shared protocol applies in full.
+### At session end (WRAP-UP)
 
-### Context-threshold and compaction-resume — see shared protocol
+Produce four files in the current session folder:
+1. `transcript.md` — dispatch a JSONL-filter agent (see `/chats/` path printed at session start; Claude Code writes JSONL per session)
+2. `session-notes.md` — narrative summary
+3. `decisions.md` — key decisions with rationale
+4. `pending.md` — carry-forward for next session
 
-Threshold discipline and compaction-resume rules live in the shared protocol (revised 2026-04-19).
+Commit any code/corpus changes before wrapping. Session folder files live in gitignored `private/` so they don't need committing.
+
+### Compaction-resume
+
+Compaction is a session boundary. When resuming from a compaction summary, still execute the full CHECK-IN protocol above. Compaction gives context but does not exercise the orientation muscles — silent skip is a check-in failure.
 
 ---
 
@@ -109,7 +117,7 @@ Do not work on copies of v2-mine files; edit them directly when applying rule-de
 
 ## Sense-Line Editorial Methodology
 
-This is the intellectual heart of the project. The full methodology reference is pointed to from `private/OVERSEER-DIRECTIONS.md` (local only). Key principles:
+This is the intellectual heart of the project. The full methodology canon lives at `private/01-method/colometry-canon.md` (gitignored). Key principles:
 
 ### The Foundational Test
 **Each line must be an atomic thought, an atomic breath unit, or ideally both.**
