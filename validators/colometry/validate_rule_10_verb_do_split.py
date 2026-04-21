@@ -33,6 +33,15 @@ original candidates were false positives):
      appositive (article + short title NP, no verb at all after stripping
      relative markers) where the preceding line already contains its own DO.
 
+Refactor — 2026-04-20:
+  The original Pattern 9 exclusion used ENDS_WITH_PROPER_NOUN_RE, a regex
+  that matched any capitalized word before a trailing comma/semicolon.
+  That heuristic relied on capitalization + punctuation as PRIMARY structural
+  signals — editorial overlays, per canon §1 (2026-04-20 editorial-overlay
+  discipline). It was replaced with an explicit BOFM_PROPER_NOUNS whitelist
+  of attested BofM named entities. The whitelist is extensible: if a proper
+  noun is missing, add it to the constant.
+
 Exit code: 0 if zero violations, 1 if violations found.
 """
 
@@ -156,19 +165,80 @@ RELATIVE_THAT_VERB_RE = re.compile(
 )
 
 # Pattern 9: appositive NP continuation — N+1 is a short NP with no verb at all
-# after a proper name or title on Line N. Detected by: N ends with a proper
-# name-like token (capitalized word) or comma after a name, AND N+1 has no
-# finite verb whatsoever (even after stripping relatives).
-# Implemented as: if no_relative has no finite verb AND N contains a proper
-# name immediately before end-of-line punctuation — handled via the existing
-# finite-verb check, which should already catch this. BUT the Helaman:2656
-# case slips through because VERB_OR_PP_END_RE matches "of Jesus Christ," via
-# "of" as a preposition after "know". Add a check: if Line N ends with a
-# proper noun (capitalized word + comma/semicolon), the next-line bare NP is
-# almost certainly an appositive.
-ENDS_WITH_PROPER_NOUN_RE = re.compile(
-    r"\b[A-Z][a-z]+[,;]\s*$"
+# after a proper name or title on Line N. Detected by: N ends with an attested
+# BofM proper noun (last token, stripped of trailing punctuation).
+# Refactored 2026-04-20: replaced capitalization-based regex (editorial overlay)
+# with an explicit whitelist of BofM named entities per canon §1 discipline.
+# If a proper noun is missing, add it to BOFM_PROPER_NOUNS below.
+
+# BofM characters
+_CHARACTERS = {
+    "Nephi", "Lehi", "Sam", "Sariah", "Laman", "Lemuel", "Jacob", "Joseph",
+    "Enos", "Jarom", "Omni", "Amaron", "Chemish", "Abinadom", "Amaleki",
+    "Benjamin", "Mosiah", "Zeniff", "Noah", "Limhi", "Abinadi", "Alma",
+    "Amulek", "Zeezrom", "Helam", "Helaman", "Shiblon", "Corianton",
+    "Moroni", "Teancum", "Pahoran", "Gidgiddoni", "Mormon", "Ether",
+    "Coriantumr", "Shiz", "Jared", "Mahonri", "Moriancumer",
+    "Akish", "Omer", "Lib", "Kib", "Oriha", "Ripliancum",
+    "Ammon", "Aaron", "Omner", "Himni", "Lamoni", "Antiomno",
+    "Muloki", "Ammah", "Middoni", "Amgid", "Gideon", "Nehor",
+    "Amlici", "Zerahemnah", "Korihor", "Gadianton", "Kishkumen",
+    "Lachoneus", "Giddianhi", "Moronihah", "Seezoram", "Pacumeni",
+    "Amalickiah", "Ammoron", "Tubaloth", "Shurr", "Corihor",
+    "Antipus", "Archantus", "Gilgal", "Zoram", "Ishmael",
+    "Riplakish", "Shared", "Corom", "Levi", "Kim", "Amnigaddah",
+    "Ethem", "Seth", "Ahah", "Moron", "Heth", "Shez",
+}
+
+# BofM places and geographic names
+_PLACES = {
+    "Jerusalem", "Bountiful", "Zarahemla", "Nephihah", "Manti",
+    "Antionum", "Ammonihah", "Middoni", "Nahom", "Shazer",
+    "Cumorah", "Ripliancum", "Ablom", "Ogath", "Ramah",
+    "Moron", "Desolation", "Sidom", "Minon", "Gideon",
+    "Melek", "Jershon", "Antum", "Shem", "Angola",
+    "Jordan", "Boaz", "Teancum", "Cumeni", "Antiparah",
+    "Zeezrom", "Limhah", "Moroni", "Nephihah", "Lehi",
+    "Aaron", "Omner", "Gid", "Mulek", "Judea",
+}
+
+# BofM peoples and groups
+_PEOPLES = {
+    "Nephites", "Lamanites", "Jacobites", "Josephites", "Zoramites",
+    "Amalickiahites", "Amlicites", "Jaredites", "Mulekites",
+    "Ammonites", "Ishmaelites", "Lemuelites", "Samites",
+    "Gadianton", "Robbers",
+}
+
+# Deity titles and sacred names
+_DEITY = {
+    "God", "Lord", "Christ", "Jesus", "Jehovah", "Messiah",
+    "Savior", "Redeemer", "Father", "Emmanuel", "Immanuel",
+    "Spirit", "Ghost",
+}
+
+# Other attested capitalized proper-noun-like entities
+_OTHER = {
+    "Israel", "Egypt", "Babylon", "Jews", "Gentiles", "Zion",
+    "Assyria", "Arabia", "Red",
+}
+
+BOFM_PROPER_NOUNS: frozenset = frozenset(
+    _CHARACTERS | _PLACES | _PEOPLES | _DEITY | _OTHER
 )
+
+
+def _ends_with_proper_noun(line: str) -> bool:
+    """Return True if the last token of *line* (stripped of trailing
+    punctuation) is an attested BofM proper noun in BOFM_PROPER_NOUNS.
+
+    Replaces the former ENDS_WITH_PROPER_NOUN_RE capitalization heuristic.
+    """
+    token = line.rstrip().rstrip(",;:.!?").rsplit(None, 1)
+    if not token:
+        return False
+    last = token[-1].strip("\"'()")
+    return last in BOFM_PROPER_NOUNS
 
 
 def scan_file(path: Path) -> list[dict]:
@@ -242,9 +312,9 @@ def scan_file(path: Path) -> list[dict]:
         ):
             continue
 
-        # Pattern 9: appositive NP — Line N ends with a proper noun (capitalized
-        # word before comma/semicolon). N+1 is then an appositive, not a DO.
-        if ENDS_WITH_PROPER_NOUN_RE.search(line.rstrip()):
+        # Pattern 9: appositive NP — Line N ends with an attested BofM proper
+        # noun. N+1 is then an appositive, not a DO.
+        if _ends_with_proper_noun(line):
             continue
 
         violations.append(
