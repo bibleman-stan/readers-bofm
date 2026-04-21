@@ -40,7 +40,13 @@ Before any substantive work, read the handoffs directory in order. Each file is 
 
 **The overseer system is deprecated as of 2026-04-20.** Do NOT read or update `private/OVERSEER-DIRECTIONS.md` or files under `overseer-workspace/` — those remain as historical archive but are no longer authoritative. Stan is the direct authority.
 
-Each session has its own folder at `private/YYYY-MM-DD-brief_description/` containing:
+### Session folder convention (clarified 2026-04-20 PM via cross-project directive)
+
+**A session = one Claude Code JSONL session**, not a calendar day. A compaction-wake starts a new session — create a new folder with a new descriptor even if the calendar date matches a pre-compaction folder. Multiple folders sharing a date with different descriptors is correct.
+
+Each session has its own folder at `private/YYYY-MM-DD-brief_description/` where `YYYY-MM-DD` is the **session start date** (not today's date if the session crossed midnight) and `brief_description` distinguishes the session from others on the same date.
+
+Contents:
 - `transcript.md` — verbatim user + assistant text, generated from JSONL at session end (skip tool-use and tool-result entries for readability)
 - `session-notes.md` — narrative summary of the session arc: what happened, why, what was decided
 - `decisions.md` — key decisions made, one paragraph each with rationale
@@ -73,7 +79,18 @@ Commit any code/corpus changes before wrapping. Session folder files live in git
 
 ### Compaction-resume
 
-Compaction is a session boundary. When resuming from a compaction summary, still execute the full CHECK-IN protocol above. Compaction gives context but does not exercise the orientation muscles — silent skip is a check-in failure.
+Compaction is a session boundary. When resuming from a compaction summary, still execute the full CHECK-IN protocol above. Compaction gives context but does not exercise the orientation muscles — silent skip is a check-in failure. Per the session folder convention: a compaction-wake creates a NEW session folder with a new descriptor, even if the calendar date matches the pre-compaction folder.
+
+### Canon-to-git policy (adopted 2026-04-20 PM from cross-project directive)
+
+**`private/` is gitignored EXCEPT for one legacy-tracked exception: `private/01-method/colometry-canon.md`.** The canon is tracked via `git add -f` so the public repo shows its current form to any future scholar or collaborator reading the method doc.
+
+- **Dropbox is the sole versioning substrate** for the canon. Micro-refinement history lives in Dropbox's sync, not git.
+- **Git tracks only publicly-published canon state** — the form a scholar would read, weighed on its merits, not wading through micro-commit history.
+- When the canon changes, update the tracked file via `git add -f private/01-method/colometry-canon.md` in the same commit as any code/corpus changes that accompany it.
+- Other files under `private/` (session folders, research notes, sub-method docs) stay gitignored and unversioned in git. They live in Dropbox only.
+
+**Rationale:** the target audience for the tracked canon is a future scholar reading the final-form method doc. Micro-commit granularity obscures the method; a single tracked current-state file exposes it clearly.
 
 ---
 
