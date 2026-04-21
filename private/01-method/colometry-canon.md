@@ -184,6 +184,14 @@ M2 is named here for cross-canon consistency with GNT's merge-override framework
 
 **This is the adversarial-auditor's primary over-split detection rule.** Corpus audit (2026-04-20, run by Agent Delta) enumerated 211 M4 candidates: 23 HIGH-confidence, 126 MEDIUM, 62 LOW. The Eta follow-up sweep surfaced 182 *"yea, even"* line-starts total (Delta's HIGH subset was a conservative filter).
 
+**Precedence over structural justifications — critical refinement (2026-04-20 PM).** M4 fires ONLY when splitting produces a fragment that **fails** the atomic-thought test. A fragment that PASSES atomic-thought via another structural justification's cognitive prong does NOT fail. Specifically:
+- **Formally-marked parallel series (justification 1):** members of a 3+ member series pass cognitive-prong via shared-predicate recovery. M4 does NOT fire on series members. Example: Alma 8:7 *"their lands, and their cities, and their villages, yea, even all their small villages"* is a 4-member catalog; the yea-even member is a parallel-series beat, not an M4 fragment. Decision procedure: justification 1 cognitive-prong passes → M4 does not block → STACK.
+- **Substantive adjunct (justification 5):** substantial adjuncts (year-formulas, proper-noun entities, institutional bodies) earn own lines. M4 does NOT fire on these. Example: Alma 50:23 year-formula PP; Alma 60:14 *"the slothfulness of our government"* (institutional body). KEEP SPLIT.
+
+**Parallel interaction with Rule 12 compound-verb extension.** Rule 12's shared-auxiliary merge also defers to justification 1 when the coordinated participles are members of a 3+ member parallel series. Example: Helaman 3:16 6-verb cascade *"murdered, plundered, and hunted, and driven forth, and slain, and scattered"* — shared aux *"have been"* normally triggers Rule 12 merge, but 6-member parallel series passes cognitive-prong, so justification 1 wins → STACK. Same logic for Mosiah 27:35 participial series (striving/confessing/publishing/explaining).
+
+**Unified principle:** merge-overrides (M1–M4) and Rule 12 compound-verb merge block split-triggers ONLY when splitting would produce true atomic-thought failure. Fragments that pass atomic-thought via a structural justification's cognitive prong are not M4 fragments; the structural justification wins.
+
 **Extensibility note:** new M4 sub-patterns can be promoted to named status when corpus audit surfaces 10+ instances with unified structural signature AND sweep passes ≥80% clean categorization. Patterns that hit the first threshold but not the second (like *"yea, even X"*) remain trigger-for-review sub-patterns — useful as validator input, not as mechanical-apply rules.
 
 ### Summary: the four forces
