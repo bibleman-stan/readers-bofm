@@ -172,6 +172,7 @@ The list is extensible only by worked example + adversarial validation, same rul
 - **Named BofM registers where stab-commata fires:** Alma 5 interrogative chain ("Have ye" sequences), Alma 32 whosoever chains, 2 Ne 4 Nephi's psalm, Mormon 6 casualty rolls, Mosiah 11-17 Abinadi indictment chains, Helaman 13 / 3 Ne 9 woe formulas, 2 Ne 13:18-23 Isaiah ornaments catalog.
 - **Cross-language convergence (v1 finding):** GNT Marschall's rhetorical-treatise method independently identified the same register (stab-commata stacking in classical rhetorical catalogs). Two methodologies converge.
 - **Interaction with M1:** M1 and stab-commata are complementary — same coordinate structure, opposite register reading. M1 fires when the pair reads as unified bonded image; stab-commata fires when the enumeration reads as sequential rhetorical blows. Read register before applying.
+- **SCOPE exclusions (added 2026-04-22 post-audit):** stab-commata does NOT fire when (a) the series is a bonded pair already resolved by M1 (calm unified hendiadys wins over stab-commata reading for N=2), (b) items are short bare nouns without independent predicative or imagistic force (*"gold and silver and precious things"* is a compound DO catalog, not stab-commata enumeration — covered by the compound-list-break-signals rule above), or (c) the series is the formally-marked parallel type already handled by structural justification 1 with recoverable shared predicate (justification 1 covers; no need for stab-commata). Stab-commata is specifically the passionate-enumerative register where each member carries independent predicative or imagistic weight AND the passage rhetoric is indicting / lamenting / escalating. If those register conditions aren't present, don't invoke stab-commata.
 
 #### M2. Verb-Object Clause-Nucleus Bond
 
@@ -306,7 +307,7 @@ Every proposed change falls into one of three categories:
 | EP-4 | Title/role + domain | Editorial | Title-NP + headed `nmod` domain PP | Keep together |
 | EP-5 | Virtue/vice lists | Editorial | Stacked moral qualities | Examine for parallel; apply pattern if detected; else merge |
 
-**Guidelines** (useful tendencies, not strict rules): line length as signal; vocative splitting nuances; compound list break signals; fronted adverbials; line reordering (rare).
+**Guidelines** (useful tendencies, not strict rules): line length as signal; vocative splitting nuances; fronted adverbials; line reordering (rare). (Compound list break signals promoted 2026-04-22 from Guideline to named sub-rule under structural justification 1 — no longer in this guideline list.)
 
 ---
 
@@ -782,15 +783,15 @@ Parallel doc-audit sweeps across handoffs, retired v1 canon, git log, and sessio
 
 **Canon additions:**
 - **§3 structural justification 3 — Named pattern: Verily formula** (BofM calque of GNT's Amen-formula). 32 corpus instances, all in 3 Nephi. 3 applied splits (3 Ne 11:23, 27:9, 27:21); 22 already protected; 7 correctly merged as formula+short-answer.
-- **§1 structural justification 1 — Triad symmetry constraint** (recovered from handoffs E3): triad is 1 or 3 lines, never 2.
+- ~~**§1 structural justification 1 — Triad symmetry constraint** (recovered from handoffs E3)~~ **REVERTED post-audit 2026-04-22** (commit `4e3b88f`): handoffs E3 is a reformatter-tool rule, not editorial methodology.
 - **§1 structural justification 1 — Compound list break signals** (recovered from v1): four-signal test (elided-aux, possessive-restart, demonstrative, relative attached); possessive-restart vs. repeated-possessive distinction named.
 - **§1 structural justification 1 — Semantic grouping principle** (recovered from v1 §8): named BofM semantic pairs (gold+silver, swords+cimeters, women+children, statutes+judgments+commandments, etc.) extend M1 to material/social/moral domains.
 - **§1 M1 counterpart — Stab-commata register** (triple-surfaced: recovered from v1 §8, flagged in git-log commits, flagged as forgotten cross-pollination). Passionate-enumerative register STACKS; named BofM passages (Alma 5 interrogative chain, Mormon 6 casualty rolls, Helaman 13 / 3 Ne 9 woe formulas, etc.).
 - **§1 M4 "yea, even X" sub-pattern exclusion** — already landed 2026-04-20 PM; reinforced today.
 - **§1 Merge-overrides strict-application caveat** — "rejection ≠ split license" (from GNT cross-project directive).
-- **§1 Punctuation section — Em-dash convention** (recovered from handoffs M0): word after `--` launches next line (Stan's convention, differs from Skousen).
-- **§5 Rule 13b** (new editorial-principle entry, recovered from commit `491917342`): non-mechanical; archaic postposed-negation pattern.
-- **§5 Rule 17 — Restrictive-vs-content-clause *that* disambiguation** (recovered from handoffs M7): subject-pronoun-after-*that* test distinguishes content-clause complement (Rule 17 applies) from restrictive relative (doesn't).
+- ~~**§1 Punctuation section — Em-dash convention** (recovered from handoffs M0)~~ **REVERTED post-audit 2026-04-22** (commit `4e3b88f`): directly contradicts §1 "Punctuation is not a break signal." Also reformatter-tool rule, not editorial methodology.
+- ~~**§5 Rule 13b** (new editorial-principle entry, recovered from commit `491917342`)~~ **REVERTED post-audit 2026-04-22** (commit `4e3b88f`): was deliberately removed from mechanical suite; re-adding unnecessary.
+- ~~**§5 Rule 17 — Restrictive-vs-content-clause *that* disambiguation** (recovered from handoffs M7)~~ **REVERTED post-audit 2026-04-22** (commit `4e3b88f`): handoffs M7 is reformatter heuristic, not editorial rule.
 - **§5 Rule 17 — Parallel *that*-series three-tier expansion** (recovered from git-log commit `b04cae9d`): two-member / three-or-more / direct-divine-recitativum handling.
 - **§6 Gold-standard regression fixtures** (GNT §4 import): 1 Nephi 1, 2 Nephi 8, Alma 7, Alma 42, Moroni 7 — diff check after any pipeline change.
 - **§6 Validator design constraint — no length caps** (recovered from handoffs 14): atomic-thought is the gate, not line length.
@@ -805,8 +806,8 @@ Parallel doc-audit sweeps across handoffs, retired v1 canon, git log, and sessio
 **Rejected / deferred:**
 - **Agent-proposed "Wayyehi variant FEF pattern" labeling REJECTED** (Stan 2026-04-22): Hebrew-parallelism terminology imports are resisted per memory `feedback_rhetoric_bandwagon`. The patterns exist ("it was their lot," "as it happened that") but are treated as AICTP-family variants without Hebrew-derived labels.
 - **"Behold" three-type typology** (deictic/mirative/logical-connective): UNPURSUED from v1, carried forward. Deferred to pending.md.
-- **Q1/Q2 Subordinating-vs-Coordinating diagnostic** from v1 §4: substantial restoration; deferred to pending.md as a Tier 2 canon refinement opportunity.
-- **Syntactic Affirmation Test formalization** (from git-log commits `2f4af560`, `108ebf10`): has named failure taxonomy + 8 corpus precedents; deferred to pending.md as a formalization task.
+- **Q1/Q2 Subordinating-vs-Coordinating diagnostic** from v1 §4: added to canon, then **REVERTED post-audit 2026-04-22** (commit `4e3b88f`): signatures mostly redundant with existing rules (Rule 10 V+DO, 13a ADP, 17 complement, 20 anchor). Consolidated diagnostic added structure without new content.
+- **Syntactic Affirmation Test formalization** (from git-log commits `2f4af560`, `108ebf10`): added to canon, then **REVERTED post-audit 2026-04-22** (commit `4e3b88f`): redundant with existing §1 "Syntax forbids splits" principle.
 - **R28 Textual-Asymmetry Override** (from GNT): evaluate applicability to BofM archaic English; deferred.
 - **Nested resumptive *that* pattern** (4 v1-flagged instances): requires Stan's judgment per original deferral; re-surfaced in pending.md.
 - **Exception/Save clause punchline test** (handoffs E8): moderate-frequency pattern; deferred.
