@@ -797,11 +797,13 @@ Parallel doc-audit sweeps across handoffs, retired v1 canon, git log, and sessio
 - **§6 Validator design constraint — no length caps** (recovered from handoffs 14): atomic-thought is the gate, not line length.
 - **§7 Change Protocol additions:** defensibility capture (WHY/HOW WE KNOW/SCOPE prospective-only), self-consistency audit trigger (≥2 additions → audit), re-evaluate-deferred-items-when-rules-change step.
 
-**Corpus applications (6 edits):**
-- 3 Nephi 11:23, 27:9, 27:21 — Verily formula splits (Rule 17 complement-integrity interaction with structural justification 3)
-- Alma 47:24 — cause-consequence beat (stab + fall) merged per M4 ad-hoc invocation
-- 1 Nephi 5:4 — counterfactual condition + consequence merged per M4
-- Ether 14:29 — approach + defeat merged per M4
+**Corpus applications (initially 6 edits; 3 reverted post-audit):**
+- 3 Nephi 11:23, 27:9, 27:21 — Verily formula splits (Rule 17 complement-integrity interaction with structural justification 3). **Retained.**
+- ~~Alma 47:24 — cause-consequence beat (stab + fall) merged per M4 ad-hoc invocation~~ **REVERTED post-audit 2026-04-22** (this commit): each fragment ("stabbed the king to the heart" / "he fell to the earth") passes atomic-thought independently; M4's actual test (§1 line 202-204) blocks over-splits that produce non-atomic fragments, not narrative beats whose completion is inferable. "Narrative-completion" reasoning is not the M4 test.
+- ~~1 Nephi 5:4 — counterfactual condition + consequence merged per M4~~ **REVERTED post-audit 2026-04-22** (this commit): fragments pass atomic-thought; re-split restored.
+- ~~Ether 14:29 — approach + defeat merged per M4~~ **REVERTED post-audit 2026-04-22** (this commit): the merge created intra-verse inconsistency — the first pair (*"came forth, / but were driven again"*) and third pair (*"came again the third time, / and the battle became exceedingly sore"*) stay split; merging only the middle pair broke the parallel narrative cadence of three repeating beats.
+
+**M4 scope-discipline lesson (added 2026-04-22 post-audit):** M4 is an over-split DETECTOR (see §1 line 215 — "the adversarial-auditor's primary over-split detection rule"), not a retroactive merge generator for narratively-linked beats. When both fragments of a coordinate pair pass atomic-thought independently, M4 does not fire, even if the two events are causally or narratively connected. Narrative-connection and atomic-thought-failure are different tests; do not conflate them.
 
 **Rejected / deferred:**
 - **Agent-proposed "Wayyehi variant FEF pattern" labeling REJECTED** (Stan 2026-04-22): Hebrew-parallelism terminology imports are resisted per memory `feedback_rhetoric_bandwagon`. The patterns exist ("it was their lot," "as it happened that") but are treated as AICTP-family variants without Hebrew-derived labels.
