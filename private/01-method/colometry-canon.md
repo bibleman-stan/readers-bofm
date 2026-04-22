@@ -92,8 +92,6 @@ Non-predicated units that function as atomic thoughts via formal-structural reco
 
 1. **Formally-marked parallel series.** Members connected by formal markers (*and also*, *nor*, correlative particles, polysyndetic *and*) where the shared predicate is recoverable from the parallel structure. Each member earns its own beat.
 
-    **Triad symmetry constraint (added 2026-04-22, recovered from handoffs E3).** A three-member series is ONE line or THREE lines — never two. Asymmetric splits that leave two members merged and one isolated, or two separate and one merged, are invalid regardless of individual atomic-thought status. The triad is the unit.
-
     **Compound list break signals (added 2026-04-22, recovered from v1 canon).** In a compound list governed by one preposition or verb, bare *"and [noun]"* items are compound objects and stay merged. A break inside a compound list is justified only when one of these signals is present:
     1. **Elided auxiliary + stacked participles** — each is an implied predication (covered by the primary justification 1 rule above)
     2. **Possessive restart** — *"and his"* appearing after items without possessive, OR changing from one possessor to another. *Repeated identical possessive* (*"and his X, and his Y, and his Z"*) is formulaic and does NOT alone justify stacking. Only a possessive RESTART justifies a break.
@@ -259,8 +257,6 @@ The canonical LDS text's punctuation is preserved for fidelity but has **no dete
 **Practical consequence.** A long sentence with multiple commas is not a multi-line signal; it is a one-clause signal to examine for atomic-thought boundaries on syntactic grounds. A semicolon is not a forced break. An em-dash is not a forced split (Rule 22 covers the specific interpolation case syntactically, independent of the dash itself).
 
 **What we DO preserve.** Every punctuation mark from the canonical LDS text stays in place. We do not alter, add, or remove punctuation. Line breaks are the only editorial tool.
-
-**Em-dash convention (added 2026-04-22, recovered from handoffs M0).** One editorial exception to "punctuation is not a break signal": when an em-dash (`--`) appears mid-line, the word immediately following the dash **launches the next thought and belongs on the next line**. This is Stan's editorial convention — it differs from Skousen's convention (which keeps the post-dash word on the same line). The em-dash signals a hard rhetorical pivot, and the word following it begins a new beat. Scope: ~37 instances in 2 Nephi were handled mechanically by the v8 reformatter under this convention. Do not revert em-dash splits as "punctuation-influenced" — this convention is editorial, not punctuation-deterministic.
 
 ---
 
@@ -443,14 +439,6 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 
 **Migrated to Layer 1** (2026-04-19). Generic English grammar. See [`data/syntax-reference/ud-taxonomy.md` §7](../../data/syntax-reference/ud-taxonomy.md) row: *line-final `ADP` with pending `case` relation* → `REQUIRED-MERGE`. Exceptions (phrasal-verb particles tagged `compound:prt`; stranded prepositions in relative clauses) are noted in the Layer 1 table. Validator: `validators/syntax/validate_line_final_tokens.py`.
 
-### Rule 13b — Line-Final Negation (Editorial Principle, Non-Mechanical)
-
-**Status:** Editorial principle, removed from mechanical validator suite 2026-04-18 (recovered from commit `491917342`, re-documented 2026-04-22).
-
-**Why non-mechanical.** Archaic BofM English frequently postposes negation: *"they knew not"* = *"they did not know"*. Line-final *not* in the BofM corpus is overwhelmingly this postposed pattern, NOT a split of negation from its scope. A mechanical validator flagging all line-final *not* would produce ~100% false positives.
-
-**When Rule 13b genuinely applies** (editorial-principle only, no validator): when negation scopes across a line boundary in a non-postposed construction — *"not / the power of God"* where *not* scopes forward to negate *"the power of God"*. This requires syntactic analysis of what the negation governs; no regex can reliably distinguish postposed-negation from scope-carrying-negation. Handle case-by-case at editorial review, not via sweep.
-
 ### Rule 15 — Vocative Units Are Indivisible
 
 **Grammatical basis.** Multi-word vocative addresses function as single direct-address units. Splitting them mid-address severs the addressee.
@@ -501,12 +489,6 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 **Delete-test diagnostic.** Remove any intervening noun phrase. If the sentence still reads as "[subject] [verb] that X," the *that* clause is a complement — MERGE. If the deletion breaks the sentence, the *that* clause is appositive to a noun — DNM (do not merge).
 
 **Precedence with Rule 19.** Rule 17 trumps Rule 19 when both apply. A *that*-clause that is both cataphoric AND the complement of a Rule 17 verb gets MERGED — complement integrity wins. Rule 19 governs cataphoric *that*-clauses in non-complement positions (appositives, adjuncts, free-standing elaborations).
-
-**Restrictive vs. content-clause *that* disambiguation (added 2026-04-22, recovered from handoffs M7).** When *that* follows a speech or cognition verb, check the word immediately after *that*:
-- **Subject pronoun or determiner** (*he, she, they, ye, I, we, it, the, a, there, this, my, his, our, thy, their, no, not*) → content clause → Rule 17 applies, MERGE candidate.
-- **Bare verb** → restrictive relative pronoun ("*that* rejecteth" = "the one who rejecteth") → Rule 17 does NOT apply, do not merge.
-
-Example: *"spake unto him that rejecteth my words"* — *that rejecteth* is restrictive relative, not content-clause. No Rule 17 merge. This is the most common false-positive class for Rule 17 scanners.
 
 **Parallel "*that*"-series (three-tier expansion, added 2026-04-22 from git-log recovery).** When a speech/cognition verb takes multiple coordinate *that*-complements:
 - **Two-member coordinate series**: merge frame + first *that*-clause; stack second as parallel beat. Example: *"declared unto them that they were a people who were under him, / and that they were a free people"* — frame with first, stack second.
