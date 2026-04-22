@@ -75,7 +75,11 @@ Produce four files in the current session folder:
 3. `decisions.md` — key decisions with rationale
 4. `pending.md` — carry-forward for next session
 
-Commit any code/corpus changes before wrapping. Session folder files live in gitignored `private/` so they don't need committing.
+Commit any code/corpus changes before wrapping. Session folder files live in gitignored `private/` so they don't need committing. Canon changes require `git add -f private/01-method/colometry-canon.md` per §Canon-to-git policy below.
+
+**Self-consistency audit trigger (added 2026-04-22 from GNT cross-project directive):** If the session added **≥2 new canon subsections/rules/merge-overrides**, run a light self-consistency audit before wrap — check that new cross-references resolve, no contradictions with existing rules, all three defensibility elements (WHY/HOW WE KNOW/SCOPE per canon §7) are present. Short pass. See canon §7 for the full trigger description.
+
+**Carry-forward discipline (added 2026-04-22):** Anything noted as "defer to future session" anywhere in the session's documentation MUST get a corresponding line in `pending.md`. Canon §8 notes, session-notes narratives, and agent reports do not survive session boundaries — only `pending.md` does. If you say "defer," write it to `pending.md`.
 
 ### Compaction-resume
 

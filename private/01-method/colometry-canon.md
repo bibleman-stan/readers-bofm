@@ -92,9 +92,32 @@ Non-predicated units that function as atomic thoughts via formal-structural reco
 
 1. **Formally-marked parallel series.** Members connected by formal markers (*and also*, *nor*, correlative particles, polysyndetic *and*) where the shared predicate is recoverable from the parallel structure. Each member earns its own beat.
 
+    **Triad symmetry constraint (added 2026-04-22, recovered from handoffs E3).** A three-member series is ONE line or THREE lines — never two. Asymmetric splits that leave two members merged and one isolated, or two separate and one merged, are invalid regardless of individual atomic-thought status. The triad is the unit.
+
+    **Compound list break signals (added 2026-04-22, recovered from v1 canon).** In a compound list governed by one preposition or verb, bare *"and [noun]"* items are compound objects and stay merged. A break inside a compound list is justified only when one of these signals is present:
+    1. **Elided auxiliary + stacked participles** — each is an implied predication (covered by the primary justification 1 rule above)
+    2. **Possessive restart** — *"and his"* appearing after items without possessive, OR changing from one possessor to another. *Repeated identical possessive* (*"and his X, and his Y, and his Z"*) is formulaic and does NOT alone justify stacking. Only a possessive RESTART justifies a break.
+    3. **Demonstrative** — *"and that/this/these"* signals a new specified noun phrase
+    4. **Relative clause attached** — *"which is/who was"* adds a predication to the item
+
+    Without one of these signals, bare *"and [noun]"* items merge. The possessive-restart vs. repeated-possessive distinction is a corpus-specific trap (king-lists and inheritance-lists frequently trigger false-positive stacking without this test).
+
+    **Semantic grouping principle (added 2026-04-22, recovered from v1 canon §8).** When splitting a compound list, breaks fall at SEMANTIC domain boundaries, not arbitrary coordinate positions. Named BofM semantic pairings that should stay together (even when the surrounding list breaks):
+    - Material-culture pairs: *gold + silver*, *copper + brass*, *iron + steel*, *swords + cimeters*, *bread + water*, *milk + honey*
+    - Social-scope pairs: *women + children*, *flocks + herds*
+    - Moral/judgment triads: *murder + plunder + steal*, *whoredoms + abominations*, *power + wisdom + understanding*
+    - Catastrophe pairs: *famine + pestilence*
+    - Legal/covenant triads: *statutes + judgments + commandments*
+
+    These are BofM-attested bonded semantic units. They merge as pairs/triads even when a longer list around them stacks. Extends M1 (gorgianic pair) from theological doublets to material/social/moral semantic domains.
+
 2. **Portrait accumulation.** A set of attributes building one mental picture, sharing a copular or attributive frame from context ("full of grace and mercy and truth"). Applies only when the stack IS the portrait, not when it is a catalogue.
 
 3. **Speech-act announcement.** Complete communicative predication introducing direct discourse ("And Aaron said unto the king:"). Announcement and quoted content are separate cognitive frames.
+
+    **Named pattern — Verily formula (added 2026-04-22 from GNT cross-project Amen-formula §3.6).** *"Verily I say unto you"* and *"Verily, verily, I say unto you"* are invariant speech-act announcements in the BofM (32 instances total, all in 3 Nephi). The formula stands on its own line; the content clause (typically *that*-introduced) leads the next line.
+    - **Test:** formula + content clause = two lines. Formula + short complete answer (*"Verily I say unto you, Nay"*, *"they have their reward"*, *"even as I am"*) = one line (the answer IS the content, not a separable clause).
+    - **Currently applied (2026-04-22):** 3 corpus splits — 3 Ne 11:23 (formula + *that*-clause), 3 Ne 27:9 (formula + *that*-clause), 3 Ne 27:21 (formula + doctrinal statement). 22 instances already correctly protected. 7 "PROTECTED-COMPLETE" (formula + short answer) correctly merged.
 
 4. **Classical commata.** Short fragmentary utterances carrying full communicative weight (*"Yea."*, *"If not so,"*). Typically 1-3 words; brevity + isolation = deliberate emphasis.
 
@@ -117,6 +140,8 @@ The list is extensible only by worked example + adversarial validation. A propos
 **Symmetric counterpart to structural justifications.** Where structural justifications describe cases where the default (merge under propositions-first) is overridden to produce a split, merge-overrides describe cases where an apparent split-trigger is itself overridden — returning the members to one line. The default is still merge; these overrides catch cases where naive application of split-triggers would fragment a unit that should stay whole.
 
 **Generating principle:** Even when a line looks like it could pass the structural prong (formal markers present), merge wins when the resulting fragments would fail on more basic grounds — the chunk is not actually two propositions, the clause nucleus would be ruptured, the fragment cannot stand as atomic thought, or the cognitive prong itself fails.
+
+**Strict-application caveat — rejection ≠ split license (added 2026-04-22 from GNT cross-project directive).** When a merge-override (M1–M4) does NOT apply to a given case, that does not automatically mean the case should split. It just means THAT override doesn't fire. The default behavior is still determined by the generative principle (proposition-first) and by other applicable rules (other merge-overrides, syntactic vetoes, structural justifications). Do not reason: "M1 rejected → must split." Reason instead: "M1 rejected → apply remaining analysis." Each merge-override's absence is silent, not authorizing.
 
 The list is extensible only by worked example + adversarial validation, same rule as the structural justifications.
 
@@ -143,6 +168,12 @@ The list is extensible only by worked example + adversarial validation, same rul
 - If the members are bonded-pair nouns/adjectives (not verbs) with unified rhetorical weight → M1 wins (MERGE).
 
 **Grammatical grounding:** CGEL Ch. 14 on coordination of semantically-bonded pairs; classical hendiadys.
+
+**M1 SPLIT-counterpart — passionate-enumerative register (stab-commata, added 2026-04-22 from retired v1 canon §8 + GNT cross-project convergence).** Where M1 fires on **calm unified** N=2 pairs to produce MERGE, the inverse register triggers STACK. **Stab-commata enumerations**: items serially enumerated in catalogs of judgment, casualty rolls, vice/virtue stacks, or passionate rhetorical sweeps where each item carries independent rhetorical weight earn their own lines. Test: would reading the items together in pairs dilute their individual force? If yes, stack individually.
+
+- **Named BofM registers where stab-commata fires:** Alma 5 interrogative chain ("Have ye" sequences), Alma 32 whosoever chains, 2 Ne 4 Nephi's psalm, Mormon 6 casualty rolls, Mosiah 11-17 Abinadi indictment chains, Helaman 13 / 3 Ne 9 woe formulas, 2 Ne 13:18-23 Isaiah ornaments catalog.
+- **Cross-language convergence (v1 finding):** GNT Marschall's rhetorical-treatise method independently identified the same register (stab-commata stacking in classical rhetorical catalogs). Two methodologies converge.
+- **Interaction with M1:** M1 and stab-commata are complementary — same coordinate structure, opposite register reading. M1 fires when the pair reads as unified bonded image; stab-commata fires when the enumeration reads as sequential rhetorical blows. Read register before applying.
 
 #### M2. Verb-Object Clause-Nucleus Bond
 
@@ -228,6 +259,8 @@ The canonical LDS text's punctuation is preserved for fidelity but has **no dete
 **Practical consequence.** A long sentence with multiple commas is not a multi-line signal; it is a one-clause signal to examine for atomic-thought boundaries on syntactic grounds. A semicolon is not a forced break. An em-dash is not a forced split (Rule 22 covers the specific interpolation case syntactically, independent of the dash itself).
 
 **What we DO preserve.** Every punctuation mark from the canonical LDS text stays in place. We do not alter, add, or remove punctuation. Line breaks are the only editorial tool.
+
+**Em-dash convention (added 2026-04-22, recovered from handoffs M0).** One editorial exception to "punctuation is not a break signal": when an em-dash (`--`) appears mid-line, the word immediately following the dash **launches the next thought and belongs on the next line**. This is Stan's editorial convention — it differs from Skousen's convention (which keeps the post-dash word on the same line). The em-dash signals a hard rhetorical pivot, and the word following it begins a new beat. Scope: ~37 instances in 2 Nephi were handled mechanically by the v8 reformatter under this convention. Do not revert em-dash splits as "punctuation-influenced" — this convention is editorial, not punctuation-deterministic.
 
 ---
 
@@ -410,6 +443,14 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 
 **Migrated to Layer 1** (2026-04-19). Generic English grammar. See [`data/syntax-reference/ud-taxonomy.md` §7](../../data/syntax-reference/ud-taxonomy.md) row: *line-final `ADP` with pending `case` relation* → `REQUIRED-MERGE`. Exceptions (phrasal-verb particles tagged `compound:prt`; stranded prepositions in relative clauses) are noted in the Layer 1 table. Validator: `validators/syntax/validate_line_final_tokens.py`.
 
+### Rule 13b — Line-Final Negation (Editorial Principle, Non-Mechanical)
+
+**Status:** Editorial principle, removed from mechanical validator suite 2026-04-18 (recovered from commit `491917342`, re-documented 2026-04-22).
+
+**Why non-mechanical.** Archaic BofM English frequently postposes negation: *"they knew not"* = *"they did not know"*. Line-final *not* in the BofM corpus is overwhelmingly this postposed pattern, NOT a split of negation from its scope. A mechanical validator flagging all line-final *not* would produce ~100% false positives.
+
+**When Rule 13b genuinely applies** (editorial-principle only, no validator): when negation scopes across a line boundary in a non-postposed construction — *"not / the power of God"* where *not* scopes forward to negate *"the power of God"*. This requires syntactic analysis of what the negation governs; no regex can reliably distinguish postposed-negation from scope-carrying-negation. Handle case-by-case at editorial review, not via sweep.
+
 ### Rule 15 — Vocative Units Are Indivisible
 
 **Grammatical basis.** Multi-word vocative addresses function as single direct-address units. Splitting them mid-address severs the addressee.
@@ -460,6 +501,17 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 **Delete-test diagnostic.** Remove any intervening noun phrase. If the sentence still reads as "[subject] [verb] that X," the *that* clause is a complement — MERGE. If the deletion breaks the sentence, the *that* clause is appositive to a noun — DNM (do not merge).
 
 **Precedence with Rule 19.** Rule 17 trumps Rule 19 when both apply. A *that*-clause that is both cataphoric AND the complement of a Rule 17 verb gets MERGED — complement integrity wins. Rule 19 governs cataphoric *that*-clauses in non-complement positions (appositives, adjuncts, free-standing elaborations).
+
+**Restrictive vs. content-clause *that* disambiguation (added 2026-04-22, recovered from handoffs M7).** When *that* follows a speech or cognition verb, check the word immediately after *that*:
+- **Subject pronoun or determiner** (*he, she, they, ye, I, we, it, the, a, there, this, my, his, our, thy, their, no, not*) → content clause → Rule 17 applies, MERGE candidate.
+- **Bare verb** → restrictive relative pronoun ("*that* rejecteth" = "the one who rejecteth") → Rule 17 does NOT apply, do not merge.
+
+Example: *"spake unto him that rejecteth my words"* — *that rejecteth* is restrictive relative, not content-clause. No Rule 17 merge. This is the most common false-positive class for Rule 17 scanners.
+
+**Parallel "*that*"-series (three-tier expansion, added 2026-04-22 from git-log recovery).** When a speech/cognition verb takes multiple coordinate *that*-complements:
+- **Two-member coordinate series**: merge frame + first *that*-clause; stack second as parallel beat. Example: *"declared unto them that they were a people who were under him, / and that they were a free people"* — frame with first, stack second.
+- **Three-or-more-member coordinate series**: merge frame + first; stack remaining as polysyndetic parallel series (structural justification 1). Example: Mormon 7:5 three-fold *that*-series — frame + first on one line, two remaining members stacked.
+- **Direct divine speech with recitativum *that***: *"saith the Lord, that [first-person content]"* — the *that* functions as a recitativum marker equivalent to direct-discourse colon. Keep split (like speech-act announcement).
 
 **Example (causative).** "He caused that his servants should stand forth" — MERGE.
 **Example (speech indirect).** "I say unto you that the time shall come" — MERGE.
@@ -679,6 +731,26 @@ Validators live in two subfolders reflecting the Layer 1 / Layer 3 split (restru
 
 See `validators/README.md` for the error-class convention and philosophy.
 
+### Gold-Standard Regression Fixtures (added 2026-04-22 from GNT cross-project §4)
+
+After any pipeline-changing pass (new rule, reformatter update, build script change, mechanical sweep), verify output against these five chapters before committing. Each fixture is chosen for diagnostic specificity: if a chapter breaks, it identifies which rule class regressed.
+
+| Fixture | Register | Primary rules tested |
+|---|---|---|
+| **1 Nephi 1** (20 vv, 98 lines) | Narrative | Rule 1 AICTP integrity + dangling-*that* variant (8 AICTP instances) |
+| **2 Nephi 8** (25 vv, 116 lines) | Poetic / Isaiah | Parallelism cola preservation, Rule 15 vocative, short-line integrity |
+| **Alma 7** (27 vv, 159 lines) | Sermonic | Rule 17 complement integrity (highest *that*-lead density in candidate set) |
+| **Alma 42** (31 vv, 136 lines) | Doctrinal argumentative | Periodic sentences, parentheticals, merge-override triggers |
+| **Moroni 7** (48 vv, 215 lines) | Extended rhetorical | Rule 17 at scale, anaphoric address headers, rhetorical questions |
+
+**Verification procedure:** diff the rebuilt `books/*.html` for each fixture chapter against the committed baseline after any pipeline change. Any line-count delta or content delta requires inspection before the commit lands.
+
+**Next candidate on the bench:** Alma 22 (dialogue register, 35 vv) — add as sixth fixture if a dialogue-specific rule is formalized.
+
+### Validator design constraint — no length caps on merge candidates
+
+Merge validators and sweep scripts must not reject a candidate merge because the resulting line would exceed N characters. The atomic-thought test is the gate, not line length. A long correctly-merged line is evidence that the original text contains a long single thought. Length is diagnostic (may trigger Category B/C review for unusually long results) but is never a mechanical gate. This overrides any intuition to add "safety" character caps. (Stan 2026-04-17 directive, recovered from handoffs 2026-04-22.)
+
 **Validator output is a work queue, not a review queue.** When a colometry validator categorizes instances as `STRONG-MERGE-CANDIDATE`, `STRONG-SPLIT-CANDIDATE`, or similar unambiguous labels, those items are **application-ready** — Category A by default per §2 "Mechanical-rule authority." Apply them mechanically. The only items that require per-item editorial judgment are those the validator itself flags as `REVIEW-REQUIRED` (heuristic-ambiguous — e.g., Rule 27's expletive-*there* cases prior to the 2026-04-19 PM refinement). Do not invert this discipline by treating the entire output as "candidates for review" — that replicates the failure mode §2 warns against.
 
 ---
@@ -693,7 +765,15 @@ Proposals to change an existing rule, add a new rule, or cull a rule must:
 2. **Provide corpus evidence.** Worked examples from the actual text — not hypotheticals.
 3. **Survive adversarial audit.** Either run the proposal past a skeptical agent, or document why no skeptical agent is needed.
 4. **Apply uniformly.** If the rule fires in one place, run the validator or equivalent sweep to catch every instance. Sedimented inconsistency is the primary failure mode.
-5. **Update this canon.** Append a dated entry to §8 Update Log and add/modify the relevant rule section. Never edit history silently.
+5. **Defensibility capture (prospective only, added 2026-04-22 from GNT cross-project directive).** Every new rule, sub-rule, or merge-override added to the canon must carry three elements:
+   - **WHY** — the editorial reason the rule exists (what failure mode does it prevent, what pattern does it reveal)
+   - **HOW WE KNOW** — corpus evidence + adversarial validation (worked examples, sweep counts, audit findings)
+   - **SCOPE** — where the rule applies, where it doesn't (named exclusions, interaction with other rules)
+   This is a prospective meta-rule; retroactive audit of older rules is optional, not required. The purpose is to ensure each new rule is documented well enough that a future reviewer can judge whether it earns its place.
+6. **Re-evaluate deferred items when the rule-set changes.** When a rule is adopted or refined, any corpus item previously classified as `REVIEW-REQUIRED` or `deferred-editorial` must be re-evaluated against the updated rule-set before being carried forward as still requiring Stan's judgment. Carrying forward stale classifications wastes session time and hides cases the current rule-set now handles cleanly.
+7. **Update this canon.** Append a dated entry to §8 Update Log and add/modify the relevant rule section. Never edit history silently.
+
+**Self-consistency audit trigger.** When a session adds ≥2 new canon subsections, rules, or merge-overrides, run a light self-consistency audit before wrap: check that (a) all new cross-references resolve, (b) no new rule contradicts an existing rule, (c) all three defensibility elements (WHY/HOW WE KNOW/SCOPE) are present for each addition. Short pass; catches stale cross-refs and incompatibilities cheaply.
 
 ### Proposed-rule adoption protocol (added 2026-04-19 PM)
 
@@ -713,6 +793,41 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-22 — Hidden-Decision-Point Sweep Additions (7 parallel agents)
+
+Parallel doc-audit sweeps across handoffs, retired v1 canon, git log, and session history surfaced 22 findings. Following the adoption protocol, today's session codified the high-confidence subset and corpus-applied the clean Category A hits.
+
+**Canon additions:**
+- **§3 structural justification 3 — Named pattern: Verily formula** (BofM calque of GNT's Amen-formula). 32 corpus instances, all in 3 Nephi. 3 applied splits (3 Ne 11:23, 27:9, 27:21); 22 already protected; 7 correctly merged as formula+short-answer.
+- **§1 structural justification 1 — Triad symmetry constraint** (recovered from handoffs E3): triad is 1 or 3 lines, never 2.
+- **§1 structural justification 1 — Compound list break signals** (recovered from v1): four-signal test (elided-aux, possessive-restart, demonstrative, relative attached); possessive-restart vs. repeated-possessive distinction named.
+- **§1 structural justification 1 — Semantic grouping principle** (recovered from v1 §8): named BofM semantic pairs (gold+silver, swords+cimeters, women+children, statutes+judgments+commandments, etc.) extend M1 to material/social/moral domains.
+- **§1 M1 counterpart — Stab-commata register** (triple-surfaced: recovered from v1 §8, flagged in git-log commits, flagged as forgotten cross-pollination). Passionate-enumerative register STACKS; named BofM passages (Alma 5 interrogative chain, Mormon 6 casualty rolls, Helaman 13 / 3 Ne 9 woe formulas, etc.).
+- **§1 M4 "yea, even X" sub-pattern exclusion** — already landed 2026-04-20 PM; reinforced today.
+- **§1 Merge-overrides strict-application caveat** — "rejection ≠ split license" (from GNT cross-project directive).
+- **§1 Punctuation section — Em-dash convention** (recovered from handoffs M0): word after `--` launches next line (Stan's convention, differs from Skousen).
+- **§5 Rule 13b** (new editorial-principle entry, recovered from commit `491917342`): non-mechanical; archaic postposed-negation pattern.
+- **§5 Rule 17 — Restrictive-vs-content-clause *that* disambiguation** (recovered from handoffs M7): subject-pronoun-after-*that* test distinguishes content-clause complement (Rule 17 applies) from restrictive relative (doesn't).
+- **§5 Rule 17 — Parallel *that*-series three-tier expansion** (recovered from git-log commit `b04cae9d`): two-member / three-or-more / direct-divine-recitativum handling.
+- **§6 Gold-standard regression fixtures** (GNT §4 import): 1 Nephi 1, 2 Nephi 8, Alma 7, Alma 42, Moroni 7 — diff check after any pipeline change.
+- **§6 Validator design constraint — no length caps** (recovered from handoffs 14): atomic-thought is the gate, not line length.
+- **§7 Change Protocol additions:** defensibility capture (WHY/HOW WE KNOW/SCOPE prospective-only), self-consistency audit trigger (≥2 additions → audit), re-evaluate-deferred-items-when-rules-change step.
+
+**Corpus applications (6 edits):**
+- 3 Nephi 11:23, 27:9, 27:21 — Verily formula splits (Rule 17 complement-integrity interaction with structural justification 3)
+- Alma 47:24 — cause-consequence beat (stab + fall) merged per M4 ad-hoc invocation
+- 1 Nephi 5:4 — counterfactual condition + consequence merged per M4
+- Ether 14:29 — approach + defeat merged per M4
+
+**Rejected / deferred:**
+- **Agent-proposed "Wayyehi variant FEF pattern" labeling REJECTED** (Stan 2026-04-22): Hebrew-parallelism terminology imports are resisted per memory `feedback_rhetoric_bandwagon`. The patterns exist ("it was their lot," "as it happened that") but are treated as AICTP-family variants without Hebrew-derived labels.
+- **"Behold" three-type typology** (deictic/mirative/logical-connective): UNPURSUED from v1, carried forward. Deferred to pending.md.
+- **Q1/Q2 Subordinating-vs-Coordinating diagnostic** from v1 §4: substantial restoration; deferred to pending.md as a Tier 2 canon refinement opportunity.
+- **Syntactic Affirmation Test formalization** (from git-log commits `2f4af560`, `108ebf10`): has named failure taxonomy + 8 corpus precedents; deferred to pending.md as a formalization task.
+- **R28 Textual-Asymmetry Override** (from GNT): evaluate applicability to BofM archaic English; deferred.
+- **Nested resumptive *that* pattern** (4 v1-flagged instances): requires Stan's judgment per original deferral; re-surfaced in pending.md.
+- **Exception/Save clause punchline test** (handoffs E8): moderate-frequency pattern; deferred.
 
 ### 2026-04-20 — Merge-Override Conditions Imported from GNT Canon
 
