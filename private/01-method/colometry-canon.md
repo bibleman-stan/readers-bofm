@@ -283,6 +283,25 @@ The canonical LDS text's punctuation is preserved for fidelity but has **no dete
 
 BofM verse divisions were imposed by Orson Pratt in 1879 — editorial overlay, same status as punctuation. No break versification imposes is canonical. If a cross-verse merge case is identified, flag Category B.
 
+### Authorial asymmetry overrides editorial symmetry (added 2026-04-23 from GNT cross-project §3.7, corpus-validated on BofM)
+
+When a passage contains a serial construction (wo/blessed series, positive/negative conditional pair, beatitude chain, interrogative chain) and the author treats members asymmetrically — expanded mechanism for some, compact for others — **preserve the authorial asymmetry**. Do not pressure compact members to expand, or expanded members to compress, in order to achieve uniform line-treatment across the series.
+
+**Test.** Count the finite verbs, elided verbs, and predicative heads in each member of the series. If counts differ between members in the received prose text, the asymmetry is authorial and the line-structure reflects it. If counts match but editorial line-treatment diverges, that is editorial drift and should converge.
+
+**BofM-attested trigger contexts:**
+- **Wo/blessed series with asymmetric member expansion.** Canonical case — 2 Nephi 9:27-38: 9:30 (*"wo to the rich"*) expands to 6 lines with full mechanism (despise poor / persecute meek / hearts upon treasures / treasure is god / treasure shall perish); 9:31-37 are compact 2-line *"Wo unto X, for Y"* treatments; 9:38 closes with an embedded triad (*"return to God, and behold his face, and remain in their sins"*). The asymmetry is authorial. A uniformity sweep asking "are all Wos treated the same?" would illegitimately pressure compression of 9:30 or expansion of 9:31-37 — R28 forbids that.
+- **Matthean-parallel Sermon at the Temple.** 3 Nephi 12-14 parallels Matthew 5-7 but with authorial expansions and compressions (3 Nephi 12:1-2 adds a doubled *"blessed are they who shall believe in your words"* preface absent from Matt 5; 12:11-12 expands the persecution/reward discourse). Editorial parallelism-pressure to conform 3 Nephi to Matthean line structure would violate 3 Nephi's distinctive authorial shape.
+- **Positive/negative conditional pairs.** *"If ye do X... but if ye do not..."* constructions sometimes have asymmetric treatment across the two halves.
+
+**SCOPE.** Does NOT apply to same-rule-uniformly-applied cases — the `feedback_application_consistency_vs_rule_coverage` discipline governs those (same rule, inconsistent application). R28 governs the distinct failure mode: **imposed uniform structure where the author wrote variation**. The author's finite-verb count, elided-verb count, and predicative-head count per member is the authoritative signal.
+
+**Distinction from §0 Mission.** §0 establishes the general text-honoring posture ("we are formatting the text... not revealing rhetorical parallelism"). R28 names a specific operational guardrail at the split-trigger level: don't symmetrize what the author wrote asymmetrically. §0 is the stance; R28 is the enforcement mechanism against this one failure mode.
+
+**Cross-reference.** Sibling rule at GNT canon §3.7 "Textual asymmetry overrides editorial symmetry" (Matt 25:35-36 positive vs. 42-43 negative as canonical case there). Imported 2026-04-23 on BofM corpus evidence from 2 Ne 9:27-38 and 3 Ne 12:1-12.
+
+**WHY / HOW WE KNOW / SCOPE summary.** WHY: authors' structural choices carry information editorial symmetry-pressure would erase. HOW WE KNOW: Phase-2 evaluation 2026-04-23 confirmed two BofM-attested cases of authorial asymmetry (2 Ne 9:27-38, 3 Ne 12:1-12). SCOPE: serial constructions where editorial uniformity-pressure could impose structure the author didn't write.
+
 ---
 
 ## 2. Autonomy Boundary — Categories A / B / C
@@ -838,6 +857,21 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-23 PM — R28 Imported (Authorial Asymmetry Principle) + Phase-2 Continuation
+
+Per pending.md, deferred item: "R28 Textual-Asymmetry Override — evaluate applicability to BofM archaic English." Started with provisional claim that R28 was cargo-cult (no BofM corpus analog) and therefore should be rejected. Hostile adversarial audit (required per Stan's directive: "subject whatever you choose to do to adversarial audit before implementation") pushed back and found two live BofM corpus cases:
+
+- **2 Nephi 9:27-38 Wo series.** 9:30 expands to 6 lines with full mechanism while 9:31-37 are compact 2-line *"Wo unto X, for Y"* treatments; 9:38 closes with embedded triad. Authorial asymmetry verified by direct corpus read.
+- **3 Nephi 12:1-12 vs Matt 5:3-12.** 3 Ne 12:1-2 adds doubled preface absent from Matt 5; 12:11-12 expands persecution discourse. Authorial expansion/compression pattern confirmed.
+
+Provisional claim retracted. Imported R28 as IMPORT-NARROWLY per audit recommendation: named as §1 structural principle "Authorial asymmetry overrides editorial symmetry" (not a numbered §5 rule, since the existing Rule 28 is "Speech-Act Announcement After Frame" and R28 here operates at the meta level). Placement alongside "Punctuation is not a break signal" and "Versification is not a break signal" as peer principles.
+
+**Test is mechanical** (count finite verbs / elided verbs / predicative heads per member; differ = authorial asymmetry). NOT a feel-test or doctrinal-weight dodge. The illustrative list of trigger contexts (Wo/blessed series, Matthean-parallel Sermon at the Temple, positive/negative conditional pairs) names grammatical patterns where the failure mode fires — not theological categories gating rule application. Distinction from the 2026-04-23 AM doctrinal-weight bump (which was a fake rule): here the list is illustrative; the mechanical test stands alone without it.
+
+**Distinct from existing discipline memories.** `feedback_application_consistency_vs_rule_coverage` covers the inverse failure (same rule, inconsistent application). `feedback_rhetoric_bandwagon` covers external-framework imports. `feedback_over_structuring_disposition` covers aesthetic default-splitting. None of the three catches R28's target — forcing uniform structure onto authorial asymmetry — so R28 fills a genuine gap.
+
+No corpus changes in this commit. The principle is forward-looking; it prevents future uniformity-sweeps from misfiring on the identified cases.
 
 ### 2026-04-23 PM — Hostile Audit Corrections + Phase-1.5 Structural Codifications
 
