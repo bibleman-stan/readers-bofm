@@ -100,15 +100,6 @@ Non-predicated units that function as atomic thoughts via formal-structural reco
 
     Without one of these signals, bare *"and [noun]"* items merge. The possessive-restart vs. repeated-possessive distinction is a corpus-specific trap (king-lists and inheritance-lists frequently trigger false-positive stacking without this test).
 
-    **Semantic grouping principle (added 2026-04-22, recovered from v1 canon §8).** When splitting a compound list, breaks fall at SEMANTIC domain boundaries, not arbitrary coordinate positions. Named BofM semantic pairings that should stay together (even when the surrounding list breaks):
-    - Material-culture pairs: *gold + silver*, *copper + brass*, *iron + steel*, *swords + cimeters*, *bread + water*, *milk + honey*
-    - Social-scope pairs: *women + children*, *flocks + herds*
-    - Moral/judgment triads: *murder + plunder + steal*, *whoredoms + abominations*, *power + wisdom + understanding*
-    - Catastrophe pairs: *famine + pestilence*
-    - Legal/covenant triads: *statutes + judgments + commandments*
-
-    These are BofM-attested bonded semantic units. They merge as pairs/triads even when a longer list around them stacks. Extends M1 (gorgianic pair) from theological doublets to material/social/moral semantic domains.
-
 2. **Portrait accumulation.** A set of attributes building one mental picture, sharing a copular or attributive frame from context ("full of grace and mercy and truth"). Applies only when the stack IS the portrait, not when it is a catalogue.
 
 3. **Speech-act announcement.** Complete communicative predication introducing direct discourse ("And Aaron said unto the king:"). Announcement and quoted content are separate cognitive frames.
@@ -166,13 +157,6 @@ The list is extensible only by worked example + adversarial validation, same rul
 - If the members are bonded-pair nouns/adjectives (not verbs) with unified rhetorical weight → M1 wins (MERGE).
 
 **Grammatical grounding:** CGEL Ch. 14 on coordination of semantically-bonded pairs; classical hendiadys.
-
-**M1 SPLIT-counterpart — passionate-enumerative register (stab-commata, added 2026-04-22 from retired v1 canon §8 + GNT cross-project convergence).** Where M1 fires on **calm unified** N=2 pairs to produce MERGE, the inverse register triggers STACK. **Stab-commata enumerations**: items serially enumerated in catalogs of judgment, casualty rolls, vice/virtue stacks, or passionate rhetorical sweeps where each item carries independent rhetorical weight earn their own lines. Test: would reading the items together in pairs dilute their individual force? If yes, stack individually.
-
-- **Named BofM registers where stab-commata fires:** Alma 5 interrogative chain ("Have ye" sequences), Alma 32 whosoever chains, 2 Ne 4 Nephi's psalm, Mormon 6 casualty rolls, Mosiah 11-17 Abinadi indictment chains, Helaman 13 / 3 Ne 9 woe formulas, 2 Ne 13:18-23 Isaiah ornaments catalog.
-- **Cross-language convergence (v1 finding):** GNT Marschall's rhetorical-treatise method independently identified the same register (stab-commata stacking in classical rhetorical catalogs). Two methodologies converge.
-- **Interaction with M1:** M1 and stab-commata are complementary — same coordinate structure, opposite register reading. M1 fires when the pair reads as unified bonded image; stab-commata fires when the enumeration reads as sequential rhetorical blows. Read register before applying.
-- **SCOPE exclusions (added 2026-04-22 post-audit):** stab-commata does NOT fire when (a) the series is a bonded pair already resolved by M1 (calm unified hendiadys wins over stab-commata reading for N=2), (b) items are short bare nouns without independent predicative or imagistic force (*"gold and silver and precious things"* is a compound DO catalog, not stab-commata enumeration — covered by the compound-list-break-signals rule above), or (c) the series is the formally-marked parallel type already handled by structural justification 1 with recoverable shared predicate (justification 1 covers; no need for stab-commata). Stab-commata is specifically the passionate-enumerative register where each member carries independent predicative or imagistic weight AND the passage rhetoric is indicting / lamenting / escalating. If those register conditions aren't present, don't invoke stab-commata.
 
 #### M2. Verb-Object Clause-Nucleus Bond
 
@@ -261,17 +245,7 @@ The canonical LDS text's punctuation is preserved for fidelity but has **no dete
 
 ### Versification is not a break signal (added 2026-04-22 from GNT cross-project §3.17 principle)
 
-BofM verse divisions were imposed by Orson Pratt in 1879 on a text that originally had only chapter divisions (per Skousen's original-chapter reconstruction). Like punctuation, versification is an editorial overlay — useful for citation, but not a structural constraint on sense-line formation.
-
-**Principle.** When a sense-line's atomic thought would naturally span a verse boundary, the sense-line wins and the versification is a secondary annotation. Verse boundaries do not override grammatical or rhetorical continuity.
-
-**Current BofM practice.** The v2-mine format treats each verse as a closed block separated by a `X:Y` header. No mechanism currently exists for a sense-line to straddle a verse boundary; the build pipeline and display are verse-bounded.
-
-**SCOPE — where this applies vs. defers.** The principle (versification is not a break signal) is canonical. The *mechanism* for cross-verse merges — GNT adopted NA-style inline superscript markers (`²`, `³⁶`, etc.) mid-line — is **not currently imported** because (a) BofM is not NA-formatted and the reader app has no such convention, (b) a corpus audit has not yet surfaced a concrete case where a BofM atomic thought is split at a Pratt verse boundary in a way that warrants the architectural change, and (c) any adoption would require format + build + display changes beyond one editorial pass.
-
-**If a concrete violation is identified,** flag it for Stan's review as Category B (rhetorical-shape implication; versification changes are visible to every reader). Do not unilaterally construct cross-verse merges in v2-mine without Stan's approval and an architectural plan for the inline-boundary marker.
-
-**WHY / HOW WE KNOW / SCOPE summary.** WHY: versification is editorial, not original; same status as punctuation. HOW WE KNOW: Pratt 1879 provenance + Skousen original-chapter reconstruction. SCOPE: principle imported; mechanism deferred pending corpus evidence of actual need.
+BofM verse divisions were imposed by Orson Pratt in 1879 — editorial overlay, same status as punctuation. No break versification imposes is canonical. If a cross-verse merge case is identified, flag Category B.
 
 ---
 
@@ -791,13 +765,32 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 
 ## 8. Update Log
 
+### 2026-04-23 — Hostile Cross-Project + Internal Audit Reverts
+
+Two hostile audits (one for GNT cross-project coherence, one for internal coherence / stupid-rule detection) surfaced three concrete issues with 2026-04-22 work. Approved reverts applied today.
+
+**Canon reverts:**
+- **Semantic Grouping Principle (§1 structural justification 1) — DELETED.** Audit found it is M1 with a named list; every specific pair is already an M1 canonical case or handled by compound-list-break-signals. Shape-matches `feedback_rhetoric_bandwagon` (ad-hoc curated list masquerading as mechanical). No distinct work done.
+- **Stab-commata register (§1 M1 SPLIT-counterpart) — DELETED.** The post-audit-2026-04-22 SCOPE exclusions (bonded pair → M1, short bare nouns → compound-list-signals, formally-marked parallel series → structural justification 1) consume the entire domain. Every named BofM passage already handled by structural justification 1. "Register" test is aesthetic, not mechanical. Rhetoric-bandwagon violation.
+- **§1 Versification subsection (2026-04-22 addition) — TRIMMED.** Reduced from 13 lines to 3. Eliminated triple-stated content (Current-BofM-practice paragraph, SCOPE paragraph, WHY/HOW/SCOPE recap) that duplicated the §8 Update Log entry. The principle stands; the prose weight doesn't.
+
+**R8-analog null-finding claim — corrected.** The 2026-04-22 null-finding claim missed two BofM-specific word classes: `behold,?$` (5 instances) and `yea,?$` (7 instances). On inspection:
+- The 5 `behold,?$` cases are overwhelmingly BofM-formulaic deictic announcements (*"And behold, / [content]"*), where "behold" leads its own speech-act-announcement line (structural justification 3 territory), not a trailing connective. 1 genuine R8-analog candidate identified: **1 Ne 19:5** (*"and then, behold, / I proceed according to that which I have spoken"*) — mid-clause deictic that may belong leading the next line. Flagged Category B pending Stan's review.
+- The 7 `yea,?$` cases are BofM-formulaic continuation-intensifier pattern (*"...; yea, / and ..."*). Moving "yea" changes the passage's characteristic delivery cadence. Category B (rhetorical shape), not mechanical Rule 9.
+
+Corrected claim: R8-analog sweep found no mechanical-rule violations requiring action, but the pattern is not entirely absent — 1 Category B candidate + 7 continuation-intensifier cases exist for Stan's editorial review at his discretion.
+
+**Memory filename correction.** `feedback_adversarial_agent_drift.md` was installed 2026-04-22 with BofM-specific content on filtering agent sweep findings — but under a filename that implied a faithful port of the GNT memo of the same name (GNT's is about adversarial-agent cross-group flip-rate outliers, a different topic). Renamed to `feedback_agent_sweep_filter.md` to reflect the actual BofM-specific content. MEMORY.md updated.
+
+**Meta-discipline lesson.** Two hostile audits run on the same session's output caught three real issues that the self-consistency audit at wrap-time missed (the consistency audit checks structural coherence of additions; it does not ask whether an addition earns its place). Post-addition hostile audits are a complementary discipline, not redundant. Consider dispatching one whenever a session adds ≥2 new canon items, independent of the self-consistency trigger.
+
 ### 2026-04-22 — GNT-Recent Imports (Post-Compaction Wrap)
 
 After the post-compaction adversarial audit that reverted the 3 M4 over-merges, the three GNT-recent items carried forward from the compaction-survival notes were addressed:
 
 **Canon addition — §1 Versification is not a break signal.** Imported from GNT canon §3.17 Cross-Verse Continuity Merge as a principle only. BofM verse divisions were imposed by Orson Pratt in 1879 — editorial overlay, same status as punctuation. The principle "versification does not override grammatical continuity" is canonical; the GNT mechanism (NA-style inline superscript markers mid-line) is not currently imported because BofM is not NA-formatted and no corpus audit has yet surfaced a concrete atomic-thought violation at a Pratt verse boundary warranting the architectural change. Future cross-verse cases are Category B pending Stan's review.
 
-**R8-analog trailing-discourse-adverb sweep — null finding.** GNT's 2026-04-22 sweep found 10 line-final trailing connectives (*ὁμοίως* etc.) violating R8 (discourse adverb should lead next line, not trail the current one). Corpus scan of v2-mine for the BofM-analog word class (*wherefore, therefore, moreover, furthermore, nevertheless, likewise, also*) found essentially zero violations: zero bare-trailing `nevertheless/moreover/furthermore/wherefore/therefore\s*$`; the 30 trailing `also,?$` instances are all modifier-use (*"did X also"* = *"also did X"*), not discourse-connector trailing. BofM's formulaic discipline already leads with *"wherefore, ..."* / *"therefore, ..."* / *"and also, ..."* (387+ lead-the-line instances). No sweep action needed. Pattern confirmed not present.
+**R8-analog trailing-discourse-adverb sweep.** GNT's 2026-04-22 sweep found 10 line-final trailing connectives (*ὁμοίως* etc.) violating R8 (discourse adverb should lead next line, not trail the current one). Corpus scan of v2-mine for the BofM-analog word class (*wherefore, therefore, moreover, furthermore, nevertheless, likewise, also*) found essentially zero violations. See 2026-04-23 Update Log entry for hostile-audit correction adding `behold,?$` and `yea,?$` to the swept set — those additional word classes turned up Category B candidates but no mechanical-rule violations.
 
 **Memory imports (3 of 10 GNT installs).** Imported cross-project-applicable discipline memories: `feedback_adversarial_agent_drift` (exact failure mode seen today — mechanical codification without skeptical filter of agent findings), `feedback_scripts_before_agents` (script before dispatching agents for mechanical corpus sweeps), `feedback_check_existing_tooling` (check validators/, ud-taxonomy, or Grep before building new scanners). Skipped: 7 GNT-specific memories (`two_check_cascade` requires GNT's two-phase cascade tools; `project_known_gloss_drift` and `project_gloss_exceptions` are Mark/Acts/1 Cor specific; `project_substrate_stable_api` is GNT infrastructure).
 
@@ -809,8 +802,8 @@ Parallel doc-audit sweeps across handoffs, retired v1 canon, git log, and sessio
 - **§3 structural justification 3 — Named pattern: Verily formula** (BofM calque of GNT's Amen-formula). 32 corpus instances, all in 3 Nephi. 3 applied splits (3 Ne 11:23, 27:9, 27:21); 22 already protected; 7 correctly merged as formula+short-answer.
 - ~~**§1 structural justification 1 — Triad symmetry constraint** (recovered from handoffs E3)~~ **REVERTED post-audit 2026-04-22** (commit `4e3b88f`): handoffs E3 is a reformatter-tool rule, not editorial methodology.
 - **§1 structural justification 1 — Compound list break signals** (recovered from v1): four-signal test (elided-aux, possessive-restart, demonstrative, relative attached); possessive-restart vs. repeated-possessive distinction named.
-- **§1 structural justification 1 — Semantic grouping principle** (recovered from v1 §8): named BofM semantic pairs (gold+silver, swords+cimeters, women+children, statutes+judgments+commandments, etc.) extend M1 to material/social/moral domains.
-- **§1 M1 counterpart — Stab-commata register** (triple-surfaced: recovered from v1 §8, flagged in git-log commits, flagged as forgotten cross-pollination). Passionate-enumerative register STACKS; named BofM passages (Alma 5 interrogative chain, Mormon 6 casualty rolls, Helaman 13 / 3 Ne 9 woe formulas, etc.).
+- ~~**§1 structural justification 1 — Semantic grouping principle** (recovered from v1 §8): named BofM semantic pairs (gold+silver, swords+cimeters, women+children, statutes+judgments+commandments, etc.) extend M1 to material/social/moral domains.~~ **REVERTED post-audit 2026-04-23** (hostile-audit round): M1 with a named list; every named pair is already handled by M1's canonical cases or by the compound-list-break-signals rule. No distinct work done. Shape-matches `feedback_rhetoric_bandwagon` (ad-hoc curated named-list masquerading as mechanical). "Recovered from v1" is provenance, not mechanical justification.
+- ~~**§1 M1 counterpart — Stab-commata register** (triple-surfaced: recovered from v1 §8, flagged in git-log commits, flagged as forgotten cross-pollination). Passionate-enumerative register STACKS; named BofM passages (Alma 5 interrogative chain, Mormon 6 casualty rolls, Helaman 13 / 3 Ne 9 woe formulas, etc.).~~ **REVERTED post-audit 2026-04-23** (hostile-audit round): the SCOPE exclusions added post-audit-2026-04-22 (bonded pair → M1, short bare nouns → compound-list-signals, formally-marked parallel series → structural justification 1) consume the entire domain. Every named BofM passage (Alma 5 "Have ye" chain, Mormon 6 casualty rolls, Helaman 13 woe formulas, 2 Ne 13 Isaiah ornaments) is already handled by structural justification 1 (parallel series with recoverable shared predicate). "Register" test (would reading the items together dilute their individual force?) is aesthetic not mechanical. Rhetoric-bandwagon violation. Triple-surfaced provenance is not a defense once the rule's domain is empty.
 - **§1 M4 "yea, even X" sub-pattern exclusion** — already landed 2026-04-20 PM; reinforced today.
 - **§1 Merge-overrides strict-application caveat** — "rejection ≠ split license" (from GNT cross-project directive).
 - ~~**§1 Punctuation section — Em-dash convention** (recovered from handoffs M0)~~ **REVERTED post-audit 2026-04-22** (commit `4e3b88f`): directly contradicts §1 "Punctuation is not a break signal." Also reformatter-tool rule, not editorial methodology.
