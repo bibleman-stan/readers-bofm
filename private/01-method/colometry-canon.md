@@ -100,6 +100,8 @@ Non-predicated units that function as atomic thoughts via formal-structural reco
 
     Without one of these signals, bare *"and [noun]"* items merge. The possessive-restart vs. repeated-possessive distinction is a corpus-specific trap (king-lists and inheritance-lists frequently trigger false-positive stacking without this test).
 
+    **M1 bonded-pair precedence inside compound lists (added 2026-04-23 from Phase-1.5 audit).** When a compound-list item is itself an M1 bonded pair (cognate / intensification / hendiadys — *"mercy and long-suffering,"* *"goodness and long-suffering,"* *"wickedness and abominations,"* *"statutes and judgments"*), the bonded pair is the item — the pair treats as one atomic unit within the larger series. None of the four compound-list break signals (including possessive restart) reaches inside a bonded pair to split it. Corpus already handles this uniformly (Helaman 14, Ether 14, Mosiah 8, Moroni 15) but the canon was silent on the precedence; this note documents and protects the practice.
+
 2. **Portrait accumulation.** A set of attributes building one mental picture, sharing a copular or attributive frame from context ("full of grace and mercy and truth"). Applies only when the stack IS the portrait, not when it is a catalogue.
 
 3. **Speech-act announcement.** Complete communicative predication introducing direct discourse ("And Aaron said unto the king:"). Announcement and quoted content are separate cognitive frames.
@@ -258,6 +260,8 @@ The framework is a default-merge with two closed lists of exceptions — five st
 **Diagnostic.** Apply the M1 verb-synonymy test (§1 Gorgianic Bonded Pair tie-breaker): *can the two members be paraphrased as a single unified image or proposition without loss of content?* If yes → merge. If the paraphrase requires dropping semantic content unique to one member → split.
 
 **Applies to.** M1 N=2 pairs; Rule 12 extended N=2 compound verbs under shared auxiliary; Rule 17 two-member *that*-series; future canon additions where a merge-rule and structural justification 1 both fire at N=2.
+
+**Does NOT apply to appositional constructions (added 2026-04-23 from Phase-1.5 audit).** Rule 22 (divine title appositives — *"Jesus Christ, the Son of God"*) and Rule 15 (vocative + close appositive — *"O God, the Eternal Father"*) are NOT adjudicated by the N=2 Principle's synonymy test. Appositives are semantically synonymous by definition — the second member re-names the first — so the synonymy test would mechanically fire "merge" on every appositive. Rule 22's formal-anchor diagnostic (INTRODUCING vs. REFERENCING) and Rule 15's vocative indivisibility are the correct adjudications for these cases. The N=2 Principle reaches only *and/or*-coordinated pairs where the two members are SEMANTICALLY DISTINCT CANDIDATES for unification — not re-naming appositives.
 
 **Does not apply at N=3+.** The Helaman 3:16 precedent (six-verb cascade *"murdered, plundered, and hunted, and driven forth, and slain, and scattered"*) establishes that at N=3+ formally-marked parallel series, structural justification 1 wins regardless of whether a merge-rule is also firing — cognitive-prong is formally recoverable from the series itself, and merge-rules defer. The N=2 vs. N=3+ cliff is principled: two items invite bonding (doublet reading); three or more invite cataloguing (series reading).
 
@@ -542,7 +546,7 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
     - **SCOPE sharpening (added 2026-04-23 post-sweep):**
         - **Closed-list-verb-class guard.** The M1 override fires ONLY when the frame verb is in Rule 17's closed-list six verb classes (causative / aspectual / speech / cognition / volition / FEF). Cognition-adjacent verbs outside the list (*wondereth that, marveleth that, feareth that, rejoiceth that*) do NOT trigger the override. For out-of-list verbs, the two-member *that*-series falls outside Rule 17 complement territory entirely; default handling (keep split) applies unless another rule governs.
         - **Rule 17 general exceptions inherit.** The main Rule 17 exceptions list (appositive-*that* on a predicate noun — *"there was a strict law... that X, and that Y"*; purpose-*that* with modal; direct-discourse with colon; formally-marked parallel series frames; meta-announcement BE-verb + predicate noun + appositive; divine recitativum) applies to this sub-clause in full. The M1 override reaches ONLY two-member *that*-series that are genuine Rule 17 COMPLEMENT territory per the six-verb-class test. Appositive-*that*-on-predicate-noun is NOT complement territory — do not apply the M1 override to such cases.
-        - **Doctrinal-weight Category-B bump.** When one or both *that*-clauses are part of a recognized doctrinal formula (2 Cor 5:17 *"old things passed away / all things become new"* calque, Moroni-closing-testimony cadence, sacrament-prayer phrasing, covenant/ordinance language, prophetic-rhythm passages of formulaic weight), bump to Category B per §2 autonomy boundary — flag for Stan's editorial review rather than apply the override mechanically. The synonymy test may still fire; the doctrinal weight overrides default-mechanical application.
+        - **Default-to-B under synonymy-test uncertainty.** Per §2's closing instruction ("when uncertain between A and B/C on editorial/rhetorical grounds, treat as Category B"), when the M1 synonymy test is non-obvious — i.e., the applier cannot confidently paraphrase the two *that*-clauses as a single unified proposition without reaching for extra-syntactic (thematic, rhetorical, theological) justification — treat the case as Category B and flag. This sub-clause names no specific text categories; it restates §2's general discretion for the N=2 Rule 17 context. **Replaces the 2026-04-23 AM "doctrinal-weight" enumerated list, which was withdrawn the same day upon hostile audit** — the enumerated list (Pauline-calque, testimony-cadence, sacrament-prayer, covenant/ordinance, prophetic-rhythm) failed the mechanical-identifiability test for four of its five items and shape-matched the `feedback_rhetoric_bandwagon` failure mode (ad-hoc curated named-list masquerading as mechanical).
     - **Sweep results (2026-04-23):** ~57 genuine Rule-17-scoped two-member series in the corpus. After scope sharpening applied: Tier-A (4 cognition-class clean-cognate cases) applied — 1 Ne 15:14, 1 Ne 18:4, Jacob 5:75, Alma 7:3. Tier-B (3 doctrinal-weight candidates: 3 Ne 15:2, 15:3, Moroni 10:19) deferred to Stan per Category-B bump. Tier-C/D (~17 beyond-40 and ~9 AMBIGUOUS) deferred for editorial review. Two initial Tier-A candidates scope-eliminated post-review: Mosiah 7:28 (*wondereth* not in closed list), Alma 1:21 (appositive-*that* on *law*).
 - **Three-or-more-member coordinate series**: merge frame + first; stack remaining as polysyndetic parallel series (structural justification 1). Example: Mormon 7:5 three-fold *that*-series — frame + first on one line, two remaining members stacked. Justification 1 always wins at N=3+ (per the N=2 Adjudication Principle's N=3+ cliff); M1 does not override.
 - **Direct divine speech with recitativum *that***: *"saith the Lord, that [first-person content]"* — the *that* functions as a recitativum marker equivalent to direct-discourse colon. Keep split (like speech-act announcement).
@@ -694,6 +698,8 @@ Pre-Phase-2, REVIEW-REQUIRED items are the honest output of the validator — th
 
 **Example (SPLIT — default).** "And he did minister unto them, / insomuch that his whole household were converted unto the Lord." (Alma 22:23) — result 9 words, new subject, camera shift.
 
+**Result-clause internal structure (added 2026-04-23 from Phase-1.5 audit).** Rule 27's 3-condition test governs the *insomuch that* OUTER boundary only — whether the result clause merges with its matrix. Once that boundary is resolved, internal structure of the result clause can still fire structural justifications (notably justification 5 on fronted temporals / locatives / causal PPs, or justification 1 on parallel series within the result) to generate breaks INSIDE the merged unit. Evaluate the result clause's internal structure against justifications 1 and 5 as a separate step after Rule 27's outer adjudication. Example — if a merged *insomuch that* unit contains a fronted substantive temporal PP (*"in the night before he cometh"*), justification 5 can license that temporal to earn its own line inside the merged frame.
+
 **Corpus status (2026-04-19).** 175 instances total, 125 split (71%), 50 merged (29%). First sweep pending with refined condition 2.
 
 ### Rule 28 — Speech-Act Announcement After Frame *(proposed 2026-04-19)*
@@ -832,6 +838,27 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-23 PM — Hostile Audit Corrections + Phase-1.5 Structural Codifications
+
+Two parallel hostile audits run post-sweep #1 scope refinement. Audit 1 targeted the "doctrinal-weight Category-B bump" sub-clause I had added that same session; Audit 2 covered the Phase-1.5 structural bundle (rule priority within layers + nested rule interactions + N=2 Principle downstream effects).
+
+**Audit 1 finding: doctrinal-weight bump was a fake rule.** Of five enumerated "recognized doctrinal formulas" (Pauline-calque, testimony-cadence, sacrament-phrasing, covenant/ordinance-language, prophetic-rhythm), only one (2 Cor 5:17 calque) passed the mechanical-identifiability test. The other four failed — subjective feel-tests. Shape-matched `feedback_rhetoric_bandwagon` (ad-hoc curated named-list masquerading as mechanical). §2's existing "when uncertain, treat as Category B" instruction already handled the legitimate concern. **Withdrawn and replaced with a §2-pointer sub-clause** that restates §2's general discretion for the N=2 Rule 17 context without enumerating text categories. The withdrawal is documented in the sub-clause itself.
+
+**Audit 2 load-bearing findings, all codified in this commit:**
+
+1. **Gap 1-A — M1 bonded-pair precedence inside compound lists** (§1 structural justification 1, compound-list-break-signals). When a compound-list item is itself an M1 bonded pair (*"mercy and long-suffering,"* *"goodness and long-suffering,"* *"statutes and judgments"*), the pair is atomic within the series — no break signal reaches inside. Documents corpus practice (Helaman 14, Ether 14, Mosiah 8, Moroni 15) the canon was previously silent on.
+
+2. **Gap 6-A — Rule 27 result-clause internal structure** (§5 Rule 27). Rule 27's 3-condition test governs only the outer *insomuch that* boundary. Internal structure of the merged result clause can still fire structural justifications 1 and 5. Prevents future "long-result-clause" sweeps from misfiring by treating Rule 27 as exhaustive for the whole clause.
+
+3. **Tension 10-B — N=2 Principle excludes appositives** (§1 N=2 Adjudication Principle). Rule 22 (divine title appositives) and Rule 15 (vocative + close appositive) are adjudicated by formal-anchor diagnostic and vocative indivisibility, respectively, NOT the synonymy test. Appositives are synonymous-by-definition; the Principle would mass-merge them if not excluded. Closes a scope gap the Principle's original *Applies to* clause left open.
+
+**Audit 2 deferred findings** (added to `pending.md` for next-session dogfood):
+- Tension 10-A (EP-5 vs N=2 Principle on virtue/vice pairs)
+- Gap 6-B (N=2 Principle propagation when one outer member is itself an M1 bonded pair)
+- Gap 1-B (Rule 28 proposed-status — defer until promotion)
+
+**Meta-observation.** The doctrinal-weight withdrawal is the second time in 48 hours that a hostile audit caught me in rhetoric-bandwagon shape (first: Stab-commata and Semantic Grouping deletions in `f883eab`; now: doctrinal-weight bump). Pattern: under pressure to codify a judgment call, I reach for a named-category carve-out rather than invoking existing framework (§2 Category A/B/C). Discipline memory to reinforce: **if the proposed carve-out can be satisfied by a §2 Category-B bump without adding named categories, don't add named categories**.
 
 ### 2026-04-23 — Sweep #1 + N=2 M1 Override Scope Refinement
 
