@@ -490,6 +490,27 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 | Volition | *desired that, willed that, wished that, intended that* | Yes |
 | FEF extraposition | *it was their lot to have fallen, it is expedient to do X* | Yes (infinitive) |
 
+**Topic-PP complement extension (added 2026-04-23 from Phase-1 hostile audit).** BofM-archaic speech-class verbs also take an obligatory topic-PP complement headed by *of, concerning, unto, against* that answers "spoken/preached/testified [about what / to whom]?" The topic-PP is a required argument, not an adjunct — the verb's predication is incomplete without it. MERGE verb and topic-PP.
+
+| Class | Examples | Merges with complement |
+|-------|----------|------------------------|
+| Speech-verb topic-PP | *speak/spake/spoken of\|concerning\|unto*, *declare unto*, *preach of\|concerning\|unto\|against*, *testify of\|unto\|against*, *prophesy of\|concerning\|unto*, *bear record/testimony/witness of\|unto\|against*, *write of\|concerning* | Yes (obligatory topic-PP) |
+
+**UD signature (topic-PP extension).** `obl(V, NP)` with `case` marker in {*of, concerning, unto, against*} where V is a speech-class verb.
+
+**Diagnostic (topic-PP extension).** Delete-test: if removing the PP breaks the sentence's reportability — i.e., the reader cannot recover "X spake/testified/preached [what]?" from the remaining structure — the PP is a required complement → MERGE. If the PP is adverbial scenery (answering *where / when / how*) and the verb reads as self-complete without it, SPLIT is licensed per structural justification 5.
+
+**Relative-clause environment is the primary violation site.** The pattern *"the words which X hath spoken / concerning Y"* consistently strands the topic-PP because the long subject-NP induces line-break pressure. Resist. MERGE — the speech verb's complement wins over line-length aesthetics. Corpus evidence: 8+ instances of this specific shape in 1 Ne / 2 Ne / Jacob / Alma / Helaman / 3 Ne currently split against the rule.
+
+**Adjacent pattern — obligatory *of*-PP for experience/action verbs (added same revision).** The BofM-archaic construction *"repent of X, partake of X, forgive [someone] of X"* extends the same complement-integrity principle to non-speech verbs where the *of*-PP specifies the content/object of the action. Apply the same delete-test: if removing the PP leaves the verb semantically incomplete, merge. Canonical case — **Alma 24:10** *"he hath forgiven us of those our many sins and murders which we have committed"* (restructured in commit `d9820cf`): *"hath forgiven us"* alone is a generic predication awaiting content-specification; the *of*-PP completes the forgiveness semantics. MERGE verb + PP.
+
+**Topic-PP SCOPE — does NOT apply to:**
+- *Speak + to/with* interlocutor PPs when no topic is named (the *to*-PP names the addressee, not the topic; the predication is complete without further topic-PP).
+- Cases where the *of*-PP is genitive on a preceding noun (*"the things of God,"* *"the people of the land,"* *"the word of the Lord"* — here *of* is a noun-modifier relation, not a verb complement).
+- Purely adverbial PPs answering *where / when / how* on the speech/action event (justification 5 territory when substantive).
+
+**WHY / HOW WE KNOW / SCOPE summary.** WHY: BofM-archaic speech and experience verbs exhibit discontinuous verb+PP predications where the PP is an obligatory argument completing the verb's meaning — the same complement-integrity principle Rule 17 applies to *that*-clauses. HOW WE KNOW: Phase-1 hostile audit 2026-04-23 surfaced corpus counts: ~265 merged / 10 split for `speak/spake/spoken + of|concerning|unto`; 46 merged for `testify`; 12 merged for `bear record/testimony/witness`; 68 merged for `repent of, partake of` (1 split pre-audit — Alma 24:10 now resolved). Corpus consistency is ~96% merge; the ~10 violations cluster in relative-clause environments. SCOPE: obligatory topic-PPs for the named speech-verb list + content-specification *of*-PPs for *repent/partake/forgive*; does not apply to addressee-PPs, noun-modifier *of*-PPs, or purely adverbial PPs.
+
 **Exceptions — complement integrity does NOT apply:**
 - Direct discourse (colon or "saying:" after speech verb → voice shift)
 - AICTP (Rule 16 forces break before *that*)
