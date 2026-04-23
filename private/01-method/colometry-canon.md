@@ -411,6 +411,8 @@ Each rule below follows the template:
 
 **Scope clarification.** Rule 7 targets **finite** purpose clauses only. **Non-finite infinitival purpose adjuncts** (*to + VERB + complement*, without subject or modal) are lighter and typically MERGE with their matrix motion verb (established 2026-04-19 at Alma 22:4).
 
+**Precedence with Rule 27 (added 2026-04-23 from Phase-1 hostile audit).** Rule 7's UD signature requires **simple** `mark=that`. When the subordinator is the **compound** *insomuch that*, Rule 27 governs — not Rule 7 — even when the result clause contains a modal auxiliary (*might, should, could*) that would otherwise fit Rule 7's signature. The modal in *insomuch that + MODAL* belongs to the consecutive-result semantics (*"to such an extent that X might happen"*) rather than purposive telic semantics, despite the English reading sometimes permitting a purposive gloss. The compound subordinator IS the mark of consecutive-result reading; Rule 27's 3-condition merge test (+ expletive-*there* and chained-*insomuch* sub-clauses) is the applicable adjudication.
+
 **Exceptions.** Short-line contexts where combined line passes atomic-thought and breath tests may merge.
 
 **Examples.**
@@ -678,6 +680,8 @@ Pre-Phase-2, REVIEW-REQUIRED items are the honest output of the validator — th
 1. Result clause ≤ 8 words
 2. Subject continuity between matrix and result clause (`nsubj` of result = `nsubj` of matrix, or elided and co-referential)
 3. No camera-angle shift (single-image diagnostic passes across the boundary)
+
+**Precedence with Rule 7 (added 2026-04-23 from Phase-1 hostile audit).** Rule 27 trumps Rule 7 when the subordinator is the compound *insomuch that*. Rule 7's UD signature requires simple `mark=that`; the compound subordinator is its own mark. Even when a modal (*might, should, could*) appears in the result clause — which would otherwise satisfy Rule 7's trigger — the modal belongs to the consecutive-result semantics (*"to such an extent that X might happen"*), not purposive telic semantics. Surface ambiguity (the English reading sometimes permits a purposive gloss) does not reassign the clause to Rule 7. The 3-condition Rule 27 test governs, with its expletive-*there* and chained-*insomuch* sub-clauses.
 
 **Expletive-*there* sub-clause (added 2026-04-19 PM).** When the result clause begins with expletive *there* + BE-verb (*there was*, *there were*, *there is*, *there are*, *there came*), condition 2 is evaluated against the **semantic subject** (the NP following *there were*), not the expletive. New-entity semantic subjects (e.g., *there were many slain*, *there were thousands converted*) fail condition 2 → default **SPLIT**. Rare continuing-entity semantic subjects (*there was the same man as before*) may pass condition 2; in those cases condition 1 (word count) is typically decisive.
 
