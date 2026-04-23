@@ -163,6 +163,12 @@ The list is extensible only by worked example + adversarial validation, same rul
 
 This tie-breaker is the canonical specific case of the cross-cutting **N=2 Adjudication Principle** (see §1, after the Decision Procedure). The same merge-vs-split logic applies to Rule 12 extended N=2 compound verbs and Rule 17 two-member *that*-series.
 
+**Asymmetric-modifier sub-clause (added 2026-04-23 from Phase-1 hostile audit).** When an M1-candidate bonded pair has one member carrying a PP modifier or relative clause the other lacks (*"repentance and faith on the Lord Jesus Christ,"* *"signs and wonders among the people,"* *"gold and silver of great worth"*), M1 still wins → MERGE if the modifier attaches semantically to the pair AS A UNIT (answering "in/on what?" where the modifier's referent is the joint object of both members). SPLIT only if the modifier scopes over only one member to the exclusion of the other, producing genuinely distinct predicative force (rare — requires explicit contrastive signal like *"repentance from sins and faith in Christ"* where the two members point to different referents).
+
+- **Joint-attachment test.** Paraphrase with the modifier distributed to both members: *"repentance on the Lord Jesus Christ and faith on the Lord Jesus Christ"*. If the paraphrase preserves meaning (both members naturally take the modifier), joint-attachment holds → MERGE. If the paraphrase distorts meaning (one member doesn't naturally take the modifier), asymmetric scoping → SPLIT.
+- **Corpus applications (2 merges applied 2026-04-23):** Mosiah 18:7 *"only through repentance / and faith on the name of the Lord God Omnipotent"* → MERGE (both repentance and faith are "on the name of the Lord"). Alma 37:33 *"Preach unto them repentance, / and faith on the Lord Jesus Christ;"* → MERGE (both repentance and faith aimed at Christ).
+- **WHY:** modifiers attaching to a bonded pair typically scope jointly; treating one member as carrying the modifier and the other as bare introduces a false asymmetry and fragments the hendiadic unity. **HOW WE KNOW:** Phase-1 hostile audit 2026-04-23 surfaced 2 corpus instances of the *repentance-and-faith-on-[Lord]* pattern currently split; both merge cleanly under joint-attachment. **SCOPE:** N=2 M1-candidate pairs where one member has a PP/relative modifier; joint-attachment test adjudicates; explicitly contrastive signals preserve split.
+
 **Grammatical grounding:** CGEL Ch. 14 on coordination of semantically-bonded pairs; classical hendiadys.
 
 #### M2. Verb-Object Clause-Nucleus Bond
