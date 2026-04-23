@@ -539,6 +539,11 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 
 **Parallel "*that*"-series (three-tier expansion, added 2026-04-22 from git-log recovery).** When a speech/cognition verb takes multiple coordinate *that*-complements:
 - **Two-member coordinate series**: default is to merge frame + first *that*-clause and stack second as parallel beat. Example: *"declared unto them that they were a people who were under him, / and that they were a free people"* — frame with first, stack second. **M1 override at N=2 (added 2026-04-23) per the N=2 Adjudication Principle (§1):** when the two *that*-contents are synonymous, cognate, or intensification variants of one claim (paraphrasable as a single unified proposition — *"know that X, and that X-restated"*), M1 wins → merge both *that*-clauses with the frame. Apply the M1 verb-synonymy test to the finite verb of each *that*-clause: distinct non-synonymous finite verbs → split per justification 1; synonymous or copular-identification restatements → merge per M1.
+    - **SCOPE sharpening (added 2026-04-23 post-sweep):**
+        - **Closed-list-verb-class guard.** The M1 override fires ONLY when the frame verb is in Rule 17's closed-list six verb classes (causative / aspectual / speech / cognition / volition / FEF). Cognition-adjacent verbs outside the list (*wondereth that, marveleth that, feareth that, rejoiceth that*) do NOT trigger the override. For out-of-list verbs, the two-member *that*-series falls outside Rule 17 complement territory entirely; default handling (keep split) applies unless another rule governs.
+        - **Rule 17 general exceptions inherit.** The main Rule 17 exceptions list (appositive-*that* on a predicate noun — *"there was a strict law... that X, and that Y"*; purpose-*that* with modal; direct-discourse with colon; formally-marked parallel series frames; meta-announcement BE-verb + predicate noun + appositive; divine recitativum) applies to this sub-clause in full. The M1 override reaches ONLY two-member *that*-series that are genuine Rule 17 COMPLEMENT territory per the six-verb-class test. Appositive-*that*-on-predicate-noun is NOT complement territory — do not apply the M1 override to such cases.
+        - **Doctrinal-weight Category-B bump.** When one or both *that*-clauses are part of a recognized doctrinal formula (2 Cor 5:17 *"old things passed away / all things become new"* calque, Moroni-closing-testimony cadence, sacrament-prayer phrasing, covenant/ordinance language, prophetic-rhythm passages of formulaic weight), bump to Category B per §2 autonomy boundary — flag for Stan's editorial review rather than apply the override mechanically. The synonymy test may still fire; the doctrinal weight overrides default-mechanical application.
+    - **Sweep results (2026-04-23):** ~57 genuine Rule-17-scoped two-member series in the corpus. After scope sharpening applied: Tier-A (4 cognition-class clean-cognate cases) applied — 1 Ne 15:14, 1 Ne 18:4, Jacob 5:75, Alma 7:3. Tier-B (3 doctrinal-weight candidates: 3 Ne 15:2, 15:3, Moroni 10:19) deferred to Stan per Category-B bump. Tier-C/D (~17 beyond-40 and ~9 AMBIGUOUS) deferred for editorial review. Two initial Tier-A candidates scope-eliminated post-review: Mosiah 7:28 (*wondereth* not in closed list), Alma 1:21 (appositive-*that* on *law*).
 - **Three-or-more-member coordinate series**: merge frame + first; stack remaining as polysyndetic parallel series (structural justification 1). Example: Mormon 7:5 three-fold *that*-series — frame + first on one line, two remaining members stacked. Justification 1 always wins at N=3+ (per the N=2 Adjudication Principle's N=3+ cliff); M1 does not override.
 - **Direct divine speech with recitativum *that***: *"saith the Lord, that [first-person content]"* — the *that* functions as a recitativum marker equivalent to direct-discourse colon. Keep split (like speech-act announcement).
 
@@ -827,6 +832,24 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-23 — Sweep #1 + N=2 M1 Override Scope Refinement
+
+Ran corpus sweep #1 (122-instance audit claim on two-member *that*-series) to dogfood the N=2 M1 override sub-clause added earlier today. Sweep found ~57 genuine Rule-17-scoped candidates after filtering purpose-*that*, relative-*that*, 3+ member series, and non-Rule-17 frames.
+
+**Tier-A applied (4 merges):** cognition-class frames with clearly synonymous/cognate *that*-clause pairs. 1 Ne 15:14 (know — canon exemplar, genealogical/covenant identity restatement), 1 Ne 18:4 (beheld — ship quality assessment), Jacob 5:75 (saw — vineyard quality assessment), Alma 7:3 (find — cognate spiritual posture: humility + supplication). Commit `64c68a9`.
+
+**Leakiness observed.** 2 initial Tier-A candidates scope-eliminated on review: Mosiah 7:28 (*wondereth* — not in Rule 17's closed-list six verb classes) and Alma 1:21 (*"there was a strict law... that X, and that Y"* — appositive-*that* on predicate noun, not complement-*that*). 9 AMBIGUOUS cases out of ~57 = 16% fuzziness rate. Tier-B (doctrinal-weight passages: 3 Ne 15:2/3 Pauline calque, Moroni 10:19 testimony closing) mechanically fires the synonymy test but rhetorical weight argues for split.
+
+**Refinement applied to the N=2 M1 override sub-clause** (three tightenings):
+
+1. **Closed-list-verb-class guard.** M1 override fires ONLY for frame verbs in Rule 17's six closed-list classes. Cognition-adjacent verbs outside the list (*wondereth, marveleth, feareth, rejoiceth*) do NOT trigger. Default: keep split.
+2. **Rule 17 general exceptions inherit.** The main Rule 17 exceptions (appositive-*that*, purpose-*that*, direct-discourse, meta-announcement, divine recitativum) apply to this sub-clause in full. M1 override reaches ONLY two-member series in genuine complement territory.
+3. **Doctrinal-weight Category-B bump.** When *that*-clauses are part of a recognized doctrinal formula (Pauline calques, testimony closings, sacrament-prayer, covenant language), bump to Category B per §2 — flag for Stan's review rather than apply mechanically.
+
+**Post-refinement clean-apply rate projection:** the 4 Tier-A cases remain clean under the tightened scope (all cognition-class, non-appositive, non-doctrinal). Tier-B, C, D remain deferred. The refinement is defensive — it prevents future sweep agents from misfiring on the two failure modes identified today.
+
+**Meta-observation.** The rule is not fundamentally broken — the ~84% clean-apply rate (46/55 after scope-elimination) passes canon §7's ≥80% adoption threshold. But the 16% ambiguity and the two scope-misses signal that "codify-and-sweep" was doing real work: operational use surfaced gaps that textual review didn't. Dogfood catches what static audit misses.
 
 ### 2026-04-23 — Phase-2 Tier-1 Codifications (from Phase-1 hostile-audit deferrals)
 
