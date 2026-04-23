@@ -108,6 +108,11 @@ Non-predicated units that function as atomic thoughts via formal-structural reco
     - **Test:** formula + content clause = two lines. Formula + short complete answer (*"Verily I say unto you, Nay"*, *"they have their reward"*, *"even as I am"*) = one line (the answer IS the content, not a separable clause).
     - **Currently applied (2026-04-22):** 3 corpus splits — 3 Ne 11:23 (formula + *that*-clause), 3 Ne 27:9 (formula + *that*-clause), 3 Ne 27:21 (formula + doctrinal statement). 22 instances already correctly protected. 7 "PROTECTED-COMPLETE" (formula + short answer) correctly merged.
 
+    **Named pattern — *saith the Lord* parenthetical (added 2026-04-23 from Phase-1 hostile audit).** The BofM-archaic formula *"saith the Lord"* (and epithet variants: *of Hosts, God of Hosts, God Almighty, God, that hath mercy on thee*) inserted mid-prophecy earns its own line. Flanking material is already direct first-person divine speech; the tag is parenthetical authentication, not a predicative proposition. Extends the speech-act announcement principle from utterance onset (introducing speech, colon-marked) to mid-utterance (interrupting ongoing speech for oracle-authority stamp) — same cognitive principle (announcement ≠ content, each is its own frame), applied at a different position.
+    - **Diagnostic.** (a) Surrounding material is direct first-person divine speech (*"I will..."*, *"my word..."*). (b) The *saith the Lord* phrase can be removed without breaking grammatical flow. (c) The phrase functions as oracle-authority stamp (retrospective or mid-utterance speaker attribution). All three hold → own line.
+    - **SCOPE exclusions:** *saith the Lord that [content]* → Rule 17 speech-indirect (*that*-complement merges, not parenthetical); *thus saith the Lord, [content]* → direct-discourse introduction (existing justification 3 announcement handling); first-person speech without *saith* attribution → no special handling; ordinary prophecy flow.
+    - **Currently applied (2026-04-23):** 19 corpus instances across 1 Ne, 2 Ne, Jacob, 3 Ne — all currently stacked as own lines by editorial instinct. This pattern codifies and protects that practice. No corpus changes applied in this codification.
+
 4. **Classical commata.** Short fragmentary utterances carrying full communicative weight (*"Yea."*, *"If not so,"*). Typically 1-3 words; brevity + isolation = deliberate emphasis.
 
 5. **Substantive adjunct as own focus.** *(added 2026-04-19 PM, replacing the retired "breath" diagnostic)* A fronted or trailing adjunct (temporal PP, locative PP, causal PP, etc.) that (a) is grammatically peripheral to the matrix predication's core truth AND (b) carries substantial content — enough that the reader processes it as an independent focus rather than background — earns its own line. These are the "slot-fillers" in narrative frames: AICTP projects who-did-what + when + where + why, and a substantive filling of a slot is its own focus-unit.
@@ -629,8 +634,11 @@ Pre-Phase-2, REVIEW-REQUIRED items are the honest output of the validator — th
 
 **Boundary case.** Repeated invocations within one passage settle on ONE treatment throughout. Do not oscillate within a unified rhetorical beat.
 
-**Example (STACK — first occurrence):** "his name shall be Jesus Christ, / the Son of God" (2 Ne 25:19).
+**Precedence with Rule 15 — vocative environment (added 2026-04-23 from Phase-1 hostile audit).** When a divine title appositive sits within a vocative unit (the phrase opens with *O* + title, addressing deity directly in second person), **Rule 15 wins** — the vocative + its close appositive stay whole as one direct-address unit. Rule 22's STACK SPLIT for INTRODUCING appositives applies only to non-vocative narrative or prophetic frames (third-person naming contexts). **Canonical case — Moroni 4:3 / 5:2 sacrament prayers:** *"O God, the Eternal Father,"* stays on one line. The appositive *"the Eternal Father"* is tightly bound to *"O God"* as a single direct-address unit in prayer; splitting severs the addressee. Category C territory (liturgical weight of sacrament-prayer text); the current corpus practice (merged as one line across all instances) is correct and this tie-breaker protects it.
+
+**Example (STACK — first occurrence, narrative):** "his name shall be Jesus Christ, / the Son of God" (2 Ne 25:19).
 **Example (MERGE — referential):** "I am a disciple of Jesus Christ, the Son of God" (3 Ne 5:13).
+**Example (MERGE — vocative, Rule 15 wins):** "O God, the Eternal Father," (Moroni 4:3, 5:2).
 
 ### Rule 23 — Date Colophon Integrity
 
