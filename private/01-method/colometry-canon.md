@@ -156,6 +156,8 @@ The list is extensible only by worked example + adversarial validation, same rul
 - If the two members are semantically synonymous, cognate, or intensification variants → M1 wins (MERGE). Example: *"repent and believe"* (synonymous soteriological pair under shared imperative force).
 - If the members are bonded-pair nouns/adjectives (not verbs) with unified rhetorical weight → M1 wins (MERGE).
 
+This tie-breaker is the canonical specific case of the cross-cutting **N=2 Adjudication Principle** (see §1, after the Decision Procedure). The same merge-vs-split logic applies to Rule 12 extended N=2 compound verbs and Rule 17 two-member *that*-series.
+
 **Grammatical grounding:** CGEL Ch. 14 on coordination of semantically-bonded pairs; classical hendiadys.
 
 #### M2. Verb-Object Clause-Nucleus Bond
@@ -186,6 +188,8 @@ M2 is named here for cross-canon consistency with GNT's merge-override framework
 **Definition:** If splitting a line would produce fragments that individually fail the atomic-thought test, merge. This is the inverse of the cognitive prong: the cognitive prong requires each resulting chunk to be its own atomic thought for a split to proceed; if any resulting fragment fails that test, the split is blocked.
 
 **Test:** Read each proposed resulting line aloud as a standalone unit. Does it constitute one focused-attention chunk with bounded information? If any resulting line fails, the split is over-fragmenting.
+
+**Scope discipline — prospective not retroactive (added 2026-04-23, promoted from §8 Update Log 2026-04-22 reverts).** M4 fires ONLY when evaluating a PROPOSED split. It is evaluated by reading each of the two proposed fragments as standalone units; if either fails atomic-thought, the proposed split is blocked → MERGE. **M4 is NOT a retrospective merge generator.** When an existing split shows both fragments individually passing atomic-thought, M4 does not fire, even if the two events are causally, narratively, or rhetorically linked. "Narrative completion" and "atomic-thought failure" are different tests; conflating them is the documented 2026-04-22 failure mode (three reverts in commit `6baf7d7`: Alma 47:24 stab+fall, 1 Ne 5:4 tarry+perish, Ether 14:29 approach+defeat). The operational rule: ask *"does THIS line, alone, constitute one focused-attention chunk?"* — not *"would merging produce a more complete narrative beat?"* The former fires M4 when appropriate; the latter is aesthetic reasoning outside M4's scope.
 
 **BofM canonical cases:**
 - Trailing prepositional modifiers orphaned from their predicate: *"...he spake,  / to your condemnation."* (short trailing PP with no independent image) — fails M4.
@@ -230,6 +234,23 @@ Putting generative, subtractive, and diagnostic forces together, the full editor
 The framework is a default-merge with two closed lists of exceptions — five structural justifications (add splits beyond propositions) and four merge-overrides (block splits that would fragment unity) — plus the syntax-subtractive veto and the image diagnostic.
 
 **Breath as a named diagnostic was retired 2026-04-19 PM.** Rationale: in a reading edition with optional audio narration, "breath" was doing cognitive-chunking work dressed up as oral-delivery theory. The actual cases breath was handling — long single-proposition lines with substantial adjuncts — are more accurately captured by structural justification #5 (substantive adjunct as own focus). This grounds the split in English grammar (peripheral adjunct detachability) rather than a fictional physical-breath constraint.
+
+### N=2 Adjudication Principle (added 2026-04-23)
+
+**The problem this solves.** Several canon rules mandate MERGE for N=2 coordinate constructions — M1 gorgianic pair, Rule 12 extended compound-verb under shared auxiliary, Rule 17 two-member *that*-series. Simultaneously, structural justification 1 (formally-marked parallel series) mandates SPLIT when each member earns its own atomic beat. At N=2 both rules can fire on the same construction; before this principle, the canon adjudicated only M1 (at §1 Gorgianic Bonded Pair tie-breaker), leaving Rule 12 and Rule 17 two-member silent. The silence produced real errors — Alma 24:10 compound-verb under shared *hath* (*"hath forgiven us ... and taken away the guilt"*) sat under Rule 12 extended's merge mandate while its fragments each pass atomic-thought as distinct non-synonymous actions.
+
+**The principle.** When a merge-mandating rule (M1, Rule 12 extended, Rule 17 two-member *that*-series) and a split-mandating rule (structural justification 1) both fire on the same N=2 coordinate construction:
+
+- **Bonded / synonymous / cognate / intensification variants → merge wins.** The two members form a single unified image, action, or proposition under one cognitive chunk. Examples: *"repent and believe"* (M1 synonymous imperatives), *"weeping and gnashing of teeth"* (M1 canonical), *"know that X, and that X-restated"* (Rule 17 two-member synonymous *that*-clauses).
+- **Distinct non-synonymous → split wins.** Each member is its own atomic beat per structural justification 1. Examples: *"hath forgiven us of X and taken away Y"* (Rule 12 extended with distinct non-synonymous verbs — Alma 24:10), *"know that they are of Israel, / and that they speak forth revelation"* (Rule 17 two-member distinct propositions).
+
+**Diagnostic.** Apply the M1 verb-synonymy test (§1 Gorgianic Bonded Pair tie-breaker): *can the two members be paraphrased as a single unified image or proposition without loss of content?* If yes → merge. If the paraphrase requires dropping semantic content unique to one member → split.
+
+**Applies to.** M1 N=2 pairs; Rule 12 extended N=2 compound verbs under shared auxiliary; Rule 17 two-member *that*-series; future canon additions where a merge-rule and structural justification 1 both fire at N=2.
+
+**Does not apply at N=3+.** The Helaman 3:16 precedent (six-verb cascade *"murdered, plundered, and hunted, and driven forth, and slain, and scattered"*) establishes that at N=3+ formally-marked parallel series, structural justification 1 wins regardless of whether a merge-rule is also firing — cognitive-prong is formally recoverable from the series itself, and merge-rules defer. The N=2 vs. N=3+ cliff is principled: two items invite bonding (doublet reading); three or more invite cataloguing (series reading).
+
+**Why one principle, not three.** M1's existing tie-breaker, Rule 12 extended's silent N=2 case, and Rule 17 two-member *that*-series all face the same adjudication question. Promoting it to a named cross-cutting principle (a) avoids re-stating the same logic in three places, (b) makes future N=2 rule-conflicts discoverable rather than silent, and (c) gives a uniform diagnostic for new N=2 constructions that may surface in future canon work.
 
 ### Punctuation is not a break signal
 
@@ -420,6 +441,8 @@ Each rule below follows the template:
 
 **Canonical example — Alma 12:26:** *"could have gone forth / and partaken of the tree of life"* — *"could have"* scopes over both participles; line 2 has no subject, no finite verb, only the dangling coordinate participle. Merge to one line. (Applied 2026-04-20.)
 
+**N=2 adjudication (added 2026-04-23).** At N=2 coordinated participles under shared auxiliary, Rule 12's merge mandate applies per the **N=2 Adjudication Principle** (§1, after the Decision Procedure): merge when the two participles are bonded / synonymous / cognate / intensification variants (*"rose and went,"* *"tried and failed,"* *"came and saw"*); split per structural justification 1 when they denote distinct non-synonymous actions with independent predicative force. Apply the M1 verb-synonymy test. **Canonical split example — Alma 24:10:** *"hath forgiven us of those our many sins and murders which we have committed, / and taken away the guilt from our hearts"* — shared *hath* scopes over *forgiven* and *taken away*; the two actions are distinct non-synonymous (act of forgiveness vs. internal consequence of guilt-removal), each with its own object; structural justification 1 wins → split. The "shared-auxiliary-via-ellipsis" diagnostic at line 440 identifies the structural class; the semantic-bondedness test determines merge-vs-split within it. The Helaman 3:16 six-verb cascade remains the N=3+ precedent (justification 1 always wins at N=3+).
+
 **Grammatical grounding:** CGEL Ch. 14 §2 on coordination of verb phrases under shared auxiliary. Standard English pseudo-coordination / hendiadic coordination.
 
 Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended with compound-verb check; currently covers simple AUX+V only).
@@ -480,8 +503,8 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 **Precedence with Rule 19.** Rule 17 trumps Rule 19 when both apply. A *that*-clause that is both cataphoric AND the complement of a Rule 17 verb gets MERGED — complement integrity wins. Rule 19 governs cataphoric *that*-clauses in non-complement positions (appositives, adjuncts, free-standing elaborations).
 
 **Parallel "*that*"-series (three-tier expansion, added 2026-04-22 from git-log recovery).** When a speech/cognition verb takes multiple coordinate *that*-complements:
-- **Two-member coordinate series**: merge frame + first *that*-clause; stack second as parallel beat. Example: *"declared unto them that they were a people who were under him, / and that they were a free people"* — frame with first, stack second.
-- **Three-or-more-member coordinate series**: merge frame + first; stack remaining as polysyndetic parallel series (structural justification 1). Example: Mormon 7:5 three-fold *that*-series — frame + first on one line, two remaining members stacked.
+- **Two-member coordinate series**: default is to merge frame + first *that*-clause and stack second as parallel beat. Example: *"declared unto them that they were a people who were under him, / and that they were a free people"* — frame with first, stack second. **M1 override at N=2 (added 2026-04-23) per the N=2 Adjudication Principle (§1):** when the two *that*-contents are synonymous, cognate, or intensification variants of one claim (paraphrasable as a single unified proposition — *"know that X, and that X-restated"*), M1 wins → merge both *that*-clauses with the frame. Apply the M1 verb-synonymy test to the finite verb of each *that*-clause: distinct non-synonymous finite verbs → split per justification 1; synonymous or copular-identification restatements → merge per M1.
+- **Three-or-more-member coordinate series**: merge frame + first; stack remaining as polysyndetic parallel series (structural justification 1). Example: Mormon 7:5 three-fold *that*-series — frame + first on one line, two remaining members stacked. Justification 1 always wins at N=3+ (per the N=2 Adjudication Principle's N=3+ cliff); M1 does not override.
 - **Direct divine speech with recitativum *that***: *"saith the Lord, that [first-person content]"* — the *that* functions as a recitativum marker equivalent to direct-discourse colon. Keep split (like speech-act announcement).
 
 **Example (causative).** "He caused that his servants should stand forth" — MERGE.
@@ -764,6 +787,31 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-23 — Phase-1 Canon Durability Fixes (Post-Hostile-Audit Triple Dispatch)
+
+Three parallel hostile adversarial audits ran against the canon (N-boundary probe, silence-and-interaction probe, BofM-archaic complement-integrity probe). Nine gaps surfaced across three tiers. Two in-session durability fixes applied to close the highest-risk holes (items the post-compaction session fell into); expansion-class gaps (Rule 17 topic-PP extension, speech-indirect long-complement exception, saith-the-Lord parenthetical) deferred to a fresh session with full context budget for corpus-sweep validation.
+
+**Canon additions:**
+
+1. **M4 Scope discipline — prospective not retroactive (§1 M4, promoted from §8 Update Log 2026-04-22 reverts).** The lesson from the three M4 over-merge reverts in commit `6baf7d7` (Alma 47:24, 1 Ne 5:4, Ether 14:29) previously lived only in the Update Log. A fresh-session agent reading only §1 could re-commit the same error. Promoted into the M4 rule text itself. WHY: documented failure mode recurred. HOW WE KNOW: three corpus reverts caught by post-compaction adversarial audit. SCOPE: M4 evaluates proposed splits only; existing splits with both fragments passing atomic-thought do NOT trigger retrospective merge, even under narrative dependency.
+
+2. **N=2 Adjudication Principle (§1, cross-cutting, after the Decision Procedure).** Unified the M1 N=2 tie-breaker, Rule 12 extended N=2 silent case, and Rule 17 two-member *that*-series silent case under one cross-cutting principle: bonded/synonymous/cognate/intensification → merge wins; distinct non-synonymous → split per structural justification 1. Does not apply at N=3+ (Helaman 3:16 precedent: justification 1 always wins). Cross-referenced from M1 tie-breaker, Rule 12 extended (with Alma 24:10 canonical split example), and Rule 17 two-member *that*-series. WHY: Alma 24:10 case revealed the N=2 adjudication was silent across three rules; same underlying question each time. HOW WE KNOW: N-boundary hostile audit surfaced 122 corpus instances of Rule 17 N=2 that-series with synonymous content that would merge under M1 + 24 corpus instances of Rule 12 extended N=2 with distinct verbs that would split. SCOPE: N=2 coordinate constructions where a merge-rule and structural justification 1 both fire; does not apply at N=1 (no coordination) or N=3+ (justification 1 always wins).
+
+**Self-consistency audit (triggered by ≥2 new canon additions per §7):**
+- Cross-references verified: M1 tie-breaker (line ~158) → N=2 Principle, Rule 12 extended (line ~442) → N=2 Principle, Rule 17 two-member *that*-series (line ~506) → N=2 Principle. All three resolve to the new §1 subsection.
+- No contradictions with existing rules: the N=2 Principle is strictly more specific than the pre-existing M1 tie-breaker (which remains the canonical case); Rule 12 and Rule 17 previously silent cases now adjudicated consistently with M1's precedent logic.
+- Defensibility (WHY/HOW WE KNOW/SCOPE) present for both additions.
+
+**Deferred to next session (expansion-class, require corpus-sweep validation):**
+- **Rule 17 topic-PP complement extension** (Tier-1 from hostile audit): adding speech-verbs + of/concerning/unto/against topic-PP as a 7th complement class. 10 current corpus splits (relative-clause environment); 458+ merged. Needs verb-class list finalization + sweep.
+- **Rule 17 speech-indirect long-complement exception** (Tier-1): 7 corpus instances of *"said unto them / that-clause"* currently split. Needs explicit SCOPE exception text.
+- **Saith-the-Lord parenthetical** (Tier-2): 19 corpus instances; no governing rule.
+- **Rule 22 vs Rule 15 divine-title-in-vocative** (Tier-2): sacrament-prayer pattern.
+- **M1 asymmetric-modifier sub-clause** (Tier-2): *"repentance and faith on the Lord"* pattern.
+- **Rule 27 vs Rule 7 SCOPE clarification** (Tier-2): currently resolved by coincidence of word-count gate.
+
+All six are tracked in `pending.md` for the next session's Phase 2 scrub work.
 
 ### 2026-04-23 — Hostile Cross-Project + Internal Audit Reverts
 
