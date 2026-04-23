@@ -858,6 +858,20 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 
 ## 8. Update Log
 
+### 2026-04-23 PM — Tension 10-A (EP-5 × N=2) Non-Issue Determination + Moroni 8:26 M1 Fix
+
+Pending-item clearance: Phase-1.5 deferrable "Tension 10-A — EP-5 (virtue/vice lists) vs. N=2 Principle." Per §7's "require full-corpus sweep before codification" discipline (added to `feedback_rhetoric_bandwagon` memory today), ran a corpus sweep before considering codification.
+
+**Sweep results.** 27 virtue/vice N=2 pairs across 7 books all treated consistently inline (merged). Zero split instances of the "distinct non-synonymous" class the Phase-1.5 audit's proposed Tension 10-A fix targeted.
+
+**Verdict: Tension 10-A is a NON-ISSUE.** Virtue/vice N=2 pairs in BofM are bonded-pair nouns with unified rhetorical weight — already correctly handled by M1's existing tie-breaker at §1 line 157 ("bonded-pair nouns/adjectives with unified rhetorical weight → M1 wins (MERGE)"). EP-5's "no pattern detected → merge" default aligns rather than conflicts with M1 at N=2. There is no actual rule conflict for the canon to adjudicate. Codifying Tension 10-A as the Phase-1.5 audit proposed would have been defensive codification of a non-problem — fake-rule territory.
+
+**Separate M1 miss — applied (Category A).** The sweep surfaced an unrelated corpus inconsistency: **Moroni 8:26** contains the bonded pair "meekness and lowliness of heart" TWICE — first occurrence split across two lines (*"meekness, / and lowliness of heart;"*); second occurrence inline (*"and because of meekness and lowliness of heart"*). Intra-verse inconsistency. Existing M1 bonded-pair + asymmetric-modifier sub-clause (one member bare, other has "of heart" PP modifier, joint-attachment test passes) both fire — merge. Applied as Category A.
+
+**Meta-discipline confirmed.** The full-corpus-sweep-before-codification discipline (just added today after EP-6 catch) immediately did its work: it caught Tension 10-A as a would-be fake-rule BEFORE codification, not after. The discipline prevents the catch rather than relying on post-audit correction.
+
+**Pending.md status: all Phase-1.5 deferrables closed.** Tension 10-A = non-issue. Gap 6-B (N=2 Principle propagation when one member is itself M1 bonded) = theoretical, no live corpus miss; remains deferred indefinitely. Gap 1-B (Rule 28 vs justification 5) = tied to Rule 28's proposed-status; revisit on Rule 28 promotion.
+
 ### 2026-04-23 PM — 1 Ne 19:5 Category-B Attempted Reclassification CAUGHT (fourth audit catch of session)
 
 Attempted to resolve the 1 Ne 19:5 Category-B flag from pending.md by reclassifying the restructure as Category A: proposed splitting at three semicolon-separated main-clause boundaries under "justification 1 (parallel series)" + existing Rule 7 purpose-that. Micro-audit correctly stopped the application.
