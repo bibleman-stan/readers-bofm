@@ -316,6 +316,14 @@ Every proposed change falls into one of three categories:
 
 **Default:** when uncertain between mechanical and non-mechanical, treat as mechanical if the UD signature is clean. When uncertain between A and B/C on editorial/rhetorical grounds, treat as Category B. A false Category A on rhetorical grounds (applying a change that warranted discussion) costs more than a false Category B (flagging something straightforward). A false Category B on mechanical grounds (flagging a clean rule hit for review) costs Stan's time and compounds across sessions.
 
+**Scope/precedence/closed-list diagnostic (added 2026-04-23 post-hostile-audit).** Canon additions that include ANY of the following are **Category B by default**, regardless of how they are framed in the commit message or §8 entry:
+- A scope claim (*"rule X applies to / does not apply to Y"*)
+- A precedence claim (*"rule A trumps rule B"*, *"X wins over Y when both fire"*)
+- A closed-list extension (adding a verb class, adding a named category, adding a SCOPE-exclusion item)
+- A named-category carve-out (introducing a new gating category, even if cross-referenced to an existing rule)
+
+This diagnostic catches the failure mode where a canon change is self-framed as "documenting existing practice" or "scope clarification" but substantively asserts a new judgment. Examples of the misclassification this prevents: Gap 1-A (compound-list × M1 precedence, initially framed as Low-tier "documenting practice" — actually Category B scope-claim); Rule 17 topic-PP extension (initially framed as "refinement" — actually Category B closed-list expansion). §7 Change Protocol's mandatory-audit trigger list operationalizes this diagnostic for commit-time discipline.
+
 ---
 
 # Part II — Operating Rules (for robots applying the method)
@@ -827,7 +835,30 @@ Proposals to change an existing rule, add a new rule, or cull a rule must:
 
 1. **State the English syntactic fact.** If you cannot cite it (UD label + CGEL/Quirk vocabulary), the proposal is insufficient.
 2. **Provide corpus evidence.** Worked examples from the actual text — not hypotheticals.
-3. **Survive adversarial audit.** Either run the proposal past a skeptical agent, or document why no skeptical agent is needed.
+3. **Survive adversarial audit.** For proposals matching any of the following **mandatory-audit triggers**, an adversarial audit (hostile agent or equivalent external skeptical review) MUST be dispatched and its findings must be reflected in the commit. Skipping audit on a triggered proposal is a protocol violation.
+
+   **Mandatory-audit triggers (11 categories):**
+   1. **New named rules / sub-clauses / categories** — including precedence cross-references between rules (e.g., "Rule A trumps Rule B at X"). Shape-matches feel-tests, enumerated lists, and subjective carve-outs particularly.
+   2. **Rule status promotions** — *proposed* → settled. Removes the hedge; stakes increase.
+   3. **Spot-check-based proposals** — any canon claim resting on <full-corpus-sweep evidence. Claims like "I checked 30 instances and the pattern is uniform" MUST be verified by a full-corpus classification before codification.
+   4. **Reclassification of canon-recorded Category B/C items** — once a verse, rule, or item is recorded as Category B/C in canon §8 or pending.md, subsequent sessions cannot silently reclassify it under a different rule-framing.
+   5. **Rule deletions or SCOPE narrowings that retire live applications** — retiring a rule is as high-stakes as adding one; audit prevents discarding legitimate work.
+   6. **Mechanical signature / validator changes under settled rules** — adding a verb class to a closed-list UD signature, refining a UD trigger, or changing validator conditions silently expands or contracts rule coverage.
+   7. **Corpus sweeps ≥5 instances under a settled rule** — a sweep asserts "the rule fires cleanly here" N times; the collective scope-claim needs audit even when individual instances are Category A.
+   8. **Canonical example additions to settled rules** — examples shape rule interpretation; a poorly-chosen example silently redefines the rule.
+   9. **Meta-rule changes to §7 Change Protocol itself** — changes to this protocol MUST be audited (this very trigger codified 2026-04-23 after hostile audit caught the blind-spot in an earlier 6-trigger draft).
+   10. **Discipline-shifting memory file additions** — new `feedback_*.md` or `project_*.md` files that shape how Claude approaches canon work are behaviorally-governing, not just observations; they need the same scrutiny as canon.
+   11. **Cross-project imports** (GNT ↔ BofM) **or recoveries from retired canon** (v1, handoffs) — provenance from a sibling project or older version is not validation; the imported claim must have BofM corpus evidence independent of its source.
+
+   **Audit dispatch protocol — parallel by default.** When a proposal triggers multiple audit dimensions (e.g., fake-rule test + corpus-full-sweep + scope-test), dispatch all in a single message with multiple Agent tool calls. Sequential only when audit A's verdict determines whether audit B should run. Parallelization substantially reduces friction; codified 2026-04-23 after demonstrating 3 parallel audits completed in ~26 seconds each vs. ~80+ seconds sequential.
+
+   **Audit-skippable categories (all must hold for the proposal to bypass audit):**
+   - Category A mechanical corpus edits per already-codified rules (sweep-scale ≥5 still triggers #7 regardless)
+   - Typo fixes, cross-reference updates that don't assert precedence, internal formatting cleanups
+   - Deletions of items already reverted in the same session (audit-trail cleanup)
+   - Defensibility-capture additions (WHY/HOW WE KNOW/SCOPE) to already-settled rules without changing the rule's scope
+
+   **Efficacy note (added 2026-04-23).** 5/5 audits this session produced material findings: 3 fake-rule prevents (Stab-commata, doctrinal-weight bump, EP-6), 1 reclassification-dodge catch (1 Ne 19:5), 1 reversed provisional-reject (R28). The discipline's qualitative value is established; a per-item catch-rate statistic would require randomized controls we don't have. Skip the statistics; keep the discipline.
 4. **Apply uniformly.** If the rule fires in one place, run the validator or equivalent sweep to catch every instance. Sedimented inconsistency is the primary failure mode.
 5. **Defensibility capture (prospective only, added 2026-04-22 from GNT cross-project directive).** Every new rule, sub-rule, or merge-override added to the canon must carry three elements:
    - **WHY** — the editorial reason the rule exists (what failure mode does it prevent, what pattern does it reveal)
@@ -857,6 +888,31 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-23 PM — Systematic Adversarial-Audit Discipline Codified
+
+Five adversarial-audit catches this session (Stab-commata, doctrinal-weight bump, EP-6 Exception/Save, 1 Ne 19:5 reclass, R28 import-correction) demonstrated that the ad-hoc audit discipline was producing material findings. Stan prompted: systematize the audits. After three parallel hostile audits on the meta-proposal itself (Audits A/B/C on the classification taxonomy, trigger list, and efficacy claim), the proposal was refined per audit findings and then codified.
+
+**Canon changes (this commit):**
+
+1. **§7 Change Protocol step 3 tightened.** The existing "Survive adversarial audit — either run past a skeptical agent or document why no agent is needed" was aspirational. Replaced with an 11-item mandatory-audit trigger list: new rules / sub-clauses / categories; rule status promotions; spot-check-based proposals; Category B/C reclassifications; rule deletions or scope-narrowings retiring live applications; mechanical signature / validator changes; corpus sweeps ≥5 instances; canonical example additions; meta-rule changes to §7 itself; discipline-shifting memory file additions; cross-project imports or recoveries from retired canon. Audit-skippable categories named explicitly (typo fixes, internal cross-references without precedence claims, same-session-revert audit-trail cleanup, defensibility-capture additions to settled rules).
+
+2. **§7 parallelization default.** Codified: dispatch independent audits in parallel (one message, multiple Agent tool calls). Sequential only when audit A determines whether B runs. Demonstration: 2026-04-23's Audit A/B/C parallel dispatch completed at ~26 seconds each instead of ~80+ seconds sequential.
+
+3. **§2 scope/precedence/closed-list/carve-out diagnostic.** Canon additions that include ANY scope claim, precedence claim, closed-list extension, or named-category carve-out default to Category B regardless of how they're framed in commit messages or §8 entries. Catches the failure mode where changes are self-framed as "documenting existing practice" (Gap 1-A) or "refinement" (Rule 17 topic-PP) when they substantively assert new judgments.
+
+4. **Efficacy framing corrected.** The earlier draft claimed "4/5 = 80% catch rate validates the discipline." Audit C caught this as statistical cherry-picking — n=5 CI is [38%, 96%], and §7's ≥80% threshold is for rule-application consistency on corpus sweeps, not audit-outcome rates. Replaced with qualitative: "5/5 audits produced material findings; the discipline's value is qualitative, a catch-rate statistic would require randomized controls we don't have."
+
+**CLAUDE.md changes (same commit):**
+
+- Added "parallelization default" to Agent dispatch section.
+- Added "Pre-commit adversarial-audit discipline" section with operational self-test (3 yes/no questions) and skip-safe catalog. References canon §2 and §7.3 for authoritative details.
+
+**Memory changes (same commit):**
+
+- Updated `feedback_rhetoric_bandwagon.md` with a "Systematic audit discipline" sub-section documenting the 5 catches as training examples, the operational discipline before canon commits, and the parallelization default.
+
+**Meta-recursive note.** The proposal to systematize audits was itself subjected to adversarial audit (three parallel agents) before codification — the meta-discipline applied to its own establishment. Audit A caught the three-tier classification as significantly-subjective (refined to binary Cat A vs. Cat B/C); Audit B caught 5 missing trigger categories (expanded from 6 to 11); Audit C caught the 80%-validation claim as statistical cherry-picking (stripped). The final codification is what survived the hostile checks — not what was initially proposed.
 
 ### 2026-04-23 PM — Tension 10-A (EP-5 × N=2) Non-Issue Determination + Moroni 8:26 M1 Fix
 

@@ -300,6 +300,24 @@ When dispatching subagents via the Agent tool:
 
 When in doubt, Sonnet is the right default. Stan shouldn't have to think about this — you make the call.
 
+**Parallelization default (added 2026-04-23).** When multiple audits are independent, dispatch them in parallel — one message with multiple Agent tool calls. Sequential only when audit A's verdict determines whether audit B should run. This substantially reduces audit friction (demonstrated 2026-04-23: 3 parallel audits at ~26 seconds each vs. ~80+ seconds sequential). Applies equally to non-audit subagent dispatches when they are independent.
+
+## Pre-commit adversarial-audit discipline (added 2026-04-23)
+
+**Before any commit that includes `git add -f private/01-method/colometry-canon.md`, check whether the change matches a mandatory-audit trigger per canon §7.3.** The 11 triggers are listed in canon §7; re-read them when uncertain. If the change matches any trigger, audit evidence (hostile-agent dispatch + verdict + application) must be present in the commit message or the canon §8 Update Log entry.
+
+**Audit-skippable.** Canon edits that do NOT match any trigger (typo fixes, cross-reference updates without precedence claims, deletions of same-session reverts, defensibility-capture additions to already-settled rules without scope changes, Category A mechanical corpus edits that are not part of a ≥5-instance sweep) proceed without audit.
+
+**When uncertain.** Dispatch the audit. The cost of a false-positive audit (Stan reads a no-op audit result) is small; the cost of a false-negative audit (fake rule commits) is large.
+
+**Self-test to run pre-commit** (faster than trigger-list scan):
+- Does this change include a scope claim, a precedence claim, a closed-list extension, or a named-category carve-out? → audit.
+- Does this change rest on spot-check evidence rather than a full-corpus classification? → audit.
+- Does this change reclassify or delete previously-settled canon content? → audit.
+- If no to all three → probably skip-safe.
+
+This discipline is codified in canon §2 (scope/precedence/closed-list/carve-out = Category B diagnostic) and canon §7.3 (mandatory-audit trigger list). See also the `feedback_rhetoric_bandwagon` memory's named-category-carve-out and biased-spot-check sub-patterns.
+
 ---
 
 ## Update Protocol
