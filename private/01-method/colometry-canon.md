@@ -259,6 +259,20 @@ The canonical LDS text's punctuation is preserved for fidelity but has **no dete
 
 **What we DO preserve.** Every punctuation mark from the canonical LDS text stays in place. We do not alter, add, or remove punctuation. Line breaks are the only editorial tool.
 
+### Versification is not a break signal (added 2026-04-22 from GNT cross-project §3.17 principle)
+
+BofM verse divisions were imposed by Orson Pratt in 1879 on a text that originally had only chapter divisions (per Skousen's original-chapter reconstruction). Like punctuation, versification is an editorial overlay — useful for citation, but not a structural constraint on sense-line formation.
+
+**Principle.** When a sense-line's atomic thought would naturally span a verse boundary, the sense-line wins and the versification is a secondary annotation. Verse boundaries do not override grammatical or rhetorical continuity.
+
+**Current BofM practice.** The v2-mine format treats each verse as a closed block separated by a `X:Y` header. No mechanism currently exists for a sense-line to straddle a verse boundary; the build pipeline and display are verse-bounded.
+
+**SCOPE — where this applies vs. defers.** The principle (versification is not a break signal) is canonical. The *mechanism* for cross-verse merges — GNT adopted NA-style inline superscript markers (`²`, `³⁶`, etc.) mid-line — is **not currently imported** because (a) BofM is not NA-formatted and the reader app has no such convention, (b) a corpus audit has not yet surfaced a concrete case where a BofM atomic thought is split at a Pratt verse boundary in a way that warrants the architectural change, and (c) any adoption would require format + build + display changes beyond one editorial pass.
+
+**If a concrete violation is identified,** flag it for Stan's review as Category B (rhetorical-shape implication; versification changes are visible to every reader). Do not unilaterally construct cross-verse merges in v2-mine without Stan's approval and an architectural plan for the inline-boundary marker.
+
+**WHY / HOW WE KNOW / SCOPE summary.** WHY: versification is editorial, not original; same status as punctuation. HOW WE KNOW: Pratt 1879 provenance + Skousen original-chapter reconstruction. SCOPE: principle imported; mechanism deferred pending corpus evidence of actual need.
+
 ---
 
 ## 2. Autonomy Boundary — Categories A / B / C
@@ -776,6 +790,16 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-22 — GNT-Recent Imports (Post-Compaction Wrap)
+
+After the post-compaction adversarial audit that reverted the 3 M4 over-merges, the three GNT-recent items carried forward from the compaction-survival notes were addressed:
+
+**Canon addition — §1 Versification is not a break signal.** Imported from GNT canon §3.17 Cross-Verse Continuity Merge as a principle only. BofM verse divisions were imposed by Orson Pratt in 1879 — editorial overlay, same status as punctuation. The principle "versification does not override grammatical continuity" is canonical; the GNT mechanism (NA-style inline superscript markers mid-line) is not currently imported because BofM is not NA-formatted and no corpus audit has yet surfaced a concrete atomic-thought violation at a Pratt verse boundary warranting the architectural change. Future cross-verse cases are Category B pending Stan's review.
+
+**R8-analog trailing-discourse-adverb sweep — null finding.** GNT's 2026-04-22 sweep found 10 line-final trailing connectives (*ὁμοίως* etc.) violating R8 (discourse adverb should lead next line, not trail the current one). Corpus scan of v2-mine for the BofM-analog word class (*wherefore, therefore, moreover, furthermore, nevertheless, likewise, also*) found essentially zero violations: zero bare-trailing `nevertheless/moreover/furthermore/wherefore/therefore\s*$`; the 30 trailing `also,?$` instances are all modifier-use (*"did X also"* = *"also did X"*), not discourse-connector trailing. BofM's formulaic discipline already leads with *"wherefore, ..."* / *"therefore, ..."* / *"and also, ..."* (387+ lead-the-line instances). No sweep action needed. Pattern confirmed not present.
+
+**Memory imports (3 of 10 GNT installs).** Imported cross-project-applicable discipline memories: `feedback_adversarial_agent_drift` (exact failure mode seen today — mechanical codification without skeptical filter of agent findings), `feedback_scripts_before_agents` (script before dispatching agents for mechanical corpus sweeps), `feedback_check_existing_tooling` (check validators/, ud-taxonomy, or Grep before building new scanners). Skipped: 7 GNT-specific memories (`two_check_cascade` requires GNT's two-phase cascade tools; `project_known_gloss_drift` and `project_gloss_exceptions` are Mark/Acts/1 Cor specific; `project_substrate_stable_api` is GNT infrastructure).
 
 ### 2026-04-22 — Hidden-Decision-Point Sweep Additions (7 parallel agents)
 
