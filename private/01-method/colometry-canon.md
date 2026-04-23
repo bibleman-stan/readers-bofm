@@ -518,6 +518,7 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 - Formally-marked parallel "that"-series (merge frame + first; stack remainder)
 - Meta-announcement (BE-verb + predicate noun + appositive *that* → the *that* clause is appositive to the noun, not complement of the verb)
 - Direct divine speech with recitativum *that* (*saith the Lord, that [first-person content]*)
+- **Speech-indirect long-complement (added 2026-04-23 from Phase-1 hostile audit).** When the speech tag is short (matrix verb + recipient pronoun, optionally preceded by AICTP but no participial scene-setting frame) AND the *that*-clause complement is a substantial proposition (≥8 words with own finite verb), the split is licensed — the tag functions as a structural-justification-3 speech-act announcement for indirect discourse, paralleling the colon-marked direct-discourse handling. **Diagnostic:** (a) Does the matrix-verb line read as a complete speech-act announcement — could the listener predict "and here is what was said" at the break? (b) Is the *that*-clause a substantial proposition in its own right with its own finite verb? If both yes, split is licensed. If either fails, Rule 17 merge applies. **Corpus evidence (7 instances, all currently split, protected by this exception):** 1 Ne 15:27 *"said unto them / that the water...was filthiness"*; 1 Ne 15:29 *"said unto them / that it was a representation of that awful hell..."*; 1 Ne 15:32 *"said unto them / that it was a representation of things both temporal and spiritual"*; 1 Ne 16:2 *"said unto them / that I knew that I had spoken hard things..."*; 1 Ne 16:25 *"said unto them / that they should murmur no more..."*; Alma 10:25 *"said unto them / that they were a hard-hearted and a stiffnecked people"*; Alma 10:26 *"said unto them / that they were a lost and a fallen people"*. **SCOPE exclusions:** short *that*-complements (<8 words) — Rule 17 merge applies as before; tags that are themselves complete narrative frames (participial preceding action-verbs beyond AICTP) — tag already carries frame weight; non-speech verbs (cognition, volition, causative) — this exception is speech-class only. **WHY:** substantial indirect-discourse complements function as their own cognitive frames, paralleling direct discourse; editorial practice reflects this across all 7 corpus instances. **HOW WE KNOW:** Phase-1 hostile audit 2026-04-23 surfaced the pattern; all 7 instances have complements ≥8 words and tag signatures fitting the short-tag criterion.
 
 **Delete-test diagnostic.** Remove any intervening noun phrase. If the sentence still reads as "[subject] [verb] that X," the *that* clause is a complement — MERGE. If the deletion breaks the sentence, the *that* clause is appositive to a noun — DNM (do not merge).
 
@@ -808,6 +809,23 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-23 — Phase-2 Tier-1 Codifications (from Phase-1 hostile-audit deferrals)
+
+The 2026-04-23 Phase-1 hostile audits surfaced 9 gaps across 3 tiers; 2 were applied in-session as durability fixes (see next entry). The 4 expansion-class Tier-1 items were deferred for corpus-sweep validation before codifying. This entry records Tier-1 items #1 and #2 now codified and, where appropriate, applied.
+
+**Tier-1 #1 — Rule 17 topic-PP complement extension.** Extended Rule 17 (Complement Integrity) to cover BofM-archaic speech-class verbs taking topic-PP complements headed by *of / concerning / unto / against*. Previously Rule 17 covered only *that*-clause and infinitive complements. 7 verb classes named (*speak/spake/spoken, declare, preach, testify, prophesy, bear record/testimony/witness, write*). Adjacent pattern note added for experience/action verbs (*repent of, partake of, forgive X of Y*) — the Alma 24:10 canonical case (restructured commit `d9820cf`) is covered here. SCOPE exclusions named (addressee PPs, noun-modifier *of*-PPs, purely adverbial PPs → justification 5 territory).
+
+**Corpus sweep results (Tier-1 #1):** 9 merges applied. All in relative-clause environments (the audit-predicted primary violation site where long subject-NPs induce premature break pressure). 1 Ne 3:17, 1 Ne 15:7, 2 Ne 6:5, Jacob 6:1, Alma 34:2, Helaman 8:22, 9:2, 14:?, 3 Ne 15:2. All Category A (clean mechanical trigger: speech-verb line-final followed by topic-PP line-initial). Committed as `ffc9108` with books rebuilt (1 Ne, 2 Ne, Jacob, Alma, Helaman, 3 Ne) and sw.js v168 → v169.
+
+**Tier-1 #2 — Rule 17 speech-indirect long-complement exception.** Added to Rule 17's exceptions list: when the speech tag is short (verb + recipient pronoun, optional AICTP, no participial scene-setting) AND the *that*-complement is a substantial proposition (≥8 words with own finite verb), split is licensed as a structural-justification-3 indirect-discourse announcement. Diagnostic: (a) tag reads as complete announcement? (b) complement is substantial proposition? Both yes → split licensed. Corpus evidence: 7 instances currently split (1 Ne 15:27, 15:29, 15:32, 16:2, 16:25; Alma 10:25, 10:26), all with complements ≥8 words. No corpus changes needed — the exception codifies existing practice and protects these splits from future Rule 17 merge sweeps.
+
+**Self-consistency audit (triggered by ≥2 additions):**
+- Cross-references resolve. Both additions reference Phase-1 audit, structural justification 3, and existing §1 principles.
+- No contradictions. Topic-PP extension and structural justification 5 divide labor cleanly (topic-PP = complement merge; adverbial-PP = justification 5 consideration). Long-complement exception extends structural justification 3's cognitive-frame logic from direct to substantive-indirect without contradicting existing Rule 17 merge mandate.
+- Defensibility present. Both additions carry WHY/HOW WE KNOW/SCOPE per §7 meta-rule.
+
+**Remaining Tier-1 items tracked in pending.md:** none — both Tier-1 items closed this session. Tier-2 items remain (saith-the-Lord parenthetical, Rule 22 vs Rule 15 divine-title-in-vocative, M1 asymmetric-modifier sub-clause, Rule 27 vs Rule 7 SCOPE).
 
 ### 2026-04-23 — Phase-1 Canon Durability Fixes (Post-Hostile-Audit Triple Dispatch)
 
