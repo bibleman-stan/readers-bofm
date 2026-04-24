@@ -248,6 +248,31 @@ The framework is a default-merge with two closed lists of exceptions — five st
 
 **Breath as a named diagnostic was retired 2026-04-19 PM.** Rationale: in a reading edition with optional audio narration, "breath" was doing cognitive-chunking work dressed up as oral-delivery theory. The actual cases breath was handling — long single-proposition lines with substantial adjuncts — are more accurately captured by structural justification #5 (substantive adjunct as own focus). This grounds the split in English grammar (peripheral adjunct detachability) rather than a fictional physical-breath constraint.
 
+### Application Order — explicit step-by-step (added 2026-04-23 post-structural-audit)
+
+**Purpose.** The Decision Procedure above gives the high-level 5-step ordering. This subsection makes the step-internal ordering explicit so that rule application is provably deterministic — two appliers following the canon converge on the same output regardless of which rule they check first within a step.
+
+**Provenance.** Four parallel hostile audits on rule-application reversibility (2026-04-23) found the canon is commutative in 8 of 9 tested corpus constructions, with one load-bearing gap (Rule 10 × justification 1 at N=3+ object lists, codified in §5 Rule 10). The remaining residual is cosmetic. This subsection consolidates the audits' findings.
+
+**Step 0 — Input filter.** Punctuation is never a break signal (see below). Versification is never a break signal (see below). R28 authorial asymmetry (see below) governs batch-sweep discipline — filters what counts as a candidate signal *before* generative evaluation begins. None of the three operate within the per-location procedure; they operate upstream of it.
+
+**Step 1 — Syntax veto (Three Closed-List Ways).** At most one fires per location (commutative within-step). The three classes:
+- **Layer 1 mid-phrase prohibitions** (Rules 9, 11, 12 simple-aux, 13a) — generic English grammar; a violation is MALFORMED (hard-fatal) and outranks any Layer-3 output.
+- **Complement-integrity rules** (Rules 17, 26) — verb/adjective + *that*-clause or infinitive complement stay together.
+- **Formula/vocative-integrity rules** (Rules 1 AICTP, 15 vocative, 18 fixed idiom, 23 date colophon) — protected multi-word units.
+
+Within this step, when both a Layer 1 and a Layer 3 rule could apply, Layer 1 wins. Scattered precedence notes in §5 (Rule 17 trumps Rule 19; Rule 27 vs Rule 7 for compound *insomuch that*; Rule 22 × Rule 15 in vocative environment) adjudicate intra-Layer-3 conflicts; these are listed in each rule's text.
+
+**Step 2 — Split-trigger (generative).** Proposition-first split, plus structural justifications 1-5. **Multiple justifications firing are co-compatible — they all agree on SPLIT; no adjudication needed.** N=2 Adjudication Principle governs coordinate-pair cases (see below). Helaman 3:16 precedent governs N=3+ (justification 1 always wins over merge-rules at N=3+ for coordinate *predications*, with the Rule 10 object-list exception — see §5 Rule 10). R28 authorial asymmetry acts at Step 0; justification 1 does not override authorial asymmetry within a series.
+
+**Step 3 — Merge-override (subtractive).** M1 gorgianic pair, M2 clause-nucleus bond (Rule 17 territory), M3 bare-governor indivisibility, M4 fragmented atomic thought-unit. Specialized merge rules (Rule 10 V+DO, Rule 12 extended compound-verb, Rule 22 REFERENCING default, Rule 27 *insomuch that* 3-condition) operate within this step as aliases or specializations of the M1-M4 generic classes. **Multiple merge-overrides firing are co-compatible — they all agree on MERGE; no adjudication needed.** M4's precedence refinements (§1 M4 section) govern M4 vs. justifications 1/5. Step 3 wins over Step 2 when both fire on the same location (per Decision Procedure step 4).
+
+**Step 4 — Editorial-pattern and image tiebreaker.** EP-1 through EP-5 and the image diagnostic fire only when Steps 1-3 leave the decision open. EPs and image are co-equal tiebreakers, not generators or vetoes. When an EP-rule and a structural justification would both apply to the same location, **the justification (Step 2) wins before the EP is consulted** — EPs are strictly post-hoc for cases Steps 1-3 under-determine.
+
+**Proposed rules (27, 28) apply at their named step when their conditions fire.** "Proposed" status gates corpus-wide sweep confidence (see §7 Proposed-rule adoption protocol), not per-instance authority within the procedure.
+
+**Commutativity guarantee.** With the above step-internal rules stated explicitly, the canon is provably deterministic for all rule-pair contentions the corpus has surfaced. The one residual gap (Rule 10 × justification 1 N=3+) is closed by Rule 10's own N=3+ coordinate object-list precedence sub-clause. No other known non-commutative rule pair exists.
+
 ### N=2 Adjudication Principle (added 2026-04-23)
 
 **The problem this solves.** Several canon rules mandate MERGE for N=2 coordinate constructions — M1 gorgianic pair, Rule 12 extended compound-verb under shared auxiliary, Rule 17 two-member *that*-series. Simultaneously, structural justification 1 (formally-marked parallel series) mandates SPLIT when each member earns its own atomic beat. At N=2 both rules can fire on the same construction; before this principle, the canon adjudicated only M1 (at §1 Gorgianic Bonded Pair tie-breaker), leaving Rule 12 and Rule 17 two-member silent. The silence produced real errors — Alma 24:10 compound-verb under shared *hath* (*"hath forgiven us ... and taken away the guilt"*) sat under Rule 12 extended's merge mandate while its fragments each pass atomic-thought as distinct non-synonymous actions.
@@ -264,6 +289,8 @@ The framework is a default-merge with two closed lists of exceptions — five st
 **Does NOT apply to appositional constructions (added 2026-04-23 from Phase-1.5 audit).** Rule 22 (divine title appositives — *"Jesus Christ, the Son of God"*) and Rule 15 (vocative + close appositive — *"O God, the Eternal Father"*) are NOT adjudicated by the N=2 Principle's synonymy test. Appositives are semantically synonymous by definition — the second member re-names the first — so the synonymy test would mechanically fire "merge" on every appositive. Rule 22's formal-anchor diagnostic (INTRODUCING vs. REFERENCING) and Rule 15's vocative indivisibility are the correct adjudications for these cases. The N=2 Principle reaches only *and/or*-coordinated pairs where the two members are SEMANTICALLY DISTINCT CANDIDATES for unification — not re-naming appositives.
 
 **Does not apply at N=3+.** The Helaman 3:16 precedent (six-verb cascade *"murdered, plundered, and hunted, and driven forth, and slain, and scattered"*) establishes that at N=3+ formally-marked parallel series, structural justification 1 wins regardless of whether a merge-rule is also firing — cognitive-prong is formally recoverable from the series itself, and merge-rules defer. The N=2 vs. N=3+ cliff is principled: two items invite bonding (doublet reading); three or more invite cataloguing (series reading).
+
+**Scope of the N=3+ cliff (added 2026-04-23 post-structural-audit).** The cliff applies to coordinate **predications** — compound verbs under shared auxiliary (Rule 12 extended), coordinate *that*-clauses (Rule 17 two-member series extended), coordinate finite clauses. It does NOT apply to coordinate **objects** under a single shared verb — those are governed by justification 1's compound-list-break-signals sub-rule (at §1 structural justification 1), whose default is to merge bare *"and [noun]"* items unless one of the four break-signals fires. See §5 Rule 10 Scope for the canonical object-list case (Mosiah 18:7).
 
 **Why one principle, not three.** M1's existing tie-breaker, Rule 12 extended's silent N=2 case, and Rule 17 two-member *that*-series all face the same adjudication question. Promoting it to a named cross-cutting principle (a) avoids re-stating the same logic in three places, (b) makes future N=2 rule-conflicts discoverable rather than silent, and (c) gives a uniform diagnostic for new N=2 constructions that may surface in future canon work.
 
@@ -465,7 +492,7 @@ Each rule below follows the template:
 **Scope — NOT covered by Rule 10:**
 - Already-complete clauses followed by a relative (use "Which"-clause decision tree or Class P)
 - Subject-NP continuations with their own predication (Rule 20 territory)
-- Parallel coordinate object series (structural justification #1)
+- Parallel coordinate object series at N≥2 under a shared verb (structural justification 1's compound-list-break-signals sub-rule governs). The N=2 Adjudication Principle's N=3+ cliff is scoped to coordinate *predications* (compound verbs, coordinate *that*-clauses, coordinate finite clauses), NOT coordinate objects under a single shared verb. For object lists, the compound-list-break-signals default is MERGE bare *"and [noun]"* items unless one of the four signals fires (elided-aux, possessive-restart, demonstrative, attached relative). **Canonical case: Mosiah 18:7** *"preach unto them / repentance, and redemption, and faith on the Lord"* — shared verb *preach unto them*, three bare *"and [noun]"* items, no break-signals → merge the object triad with the verb on one line (default compound-list behavior). Third item *"faith on the Lord"* has a trailing PP modifier that attaches to the joint object-set per M1 asymmetric-modifier sub-clause; still merges.
 
 **Example.** "have you sufficiently retained in remembrance / the captivity of your fathers?" → MERGE (Alma 5:6).
 
@@ -888,6 +915,29 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-23 PM — Application Order Codified (post-structural-audit)
+
+Four parallel hostile audits on rule-application ordering and reversibility (Agents A/B/C/D) examined whether the canon's rule application is coherent, commutative, and hierarchical. Findings converged:
+
+- **Canon is mostly commutative** (8 of 9 tested corpus constructions produce same outcome under different check orders).
+- **No precedence contradictions, no cycles** in the 54 explicit precedence statements across the canon.
+- **One load-bearing gap:** Rule 10 × justification 1 at N=3+ coordinate object lists. Canon practice is "merge the triad with the verb" (per Mosiah 18:7) but no explicit text stated the N=3+ cliff's scope exclusion for object lists.
+- **Several clarification opportunities:** EP-1–5 unstated position; meta-principles' operational position; within-step commutativity (M1-M4 agree on merge, justifications 1-5 agree on split).
+
+**Codification (this commit):**
+
+1. **§1 Application Order — explicit step-by-step subsection.** Added after the Decision Procedure. Makes the 5-step ordering explicit with step-internal rules: Step 0 input filter (punctuation/versification/R28), Step 1 syntax veto (three closed-list ways), Step 2 split-trigger (justifications 1-5 co-compatible), Step 3 merge-override (M1-M4 co-compatible), Step 4 EP + image tiebreakers. Within-step commutativity guaranteed. Specialized merge rules (Rule 10, 12 extended, 22, 27) placed as aliases within Step 3.
+
+2. **§5 Rule 10 Scope clarified.** Existing "parallel coordinate object series → justification 1" bullet expanded to make the deferral chain explicit: Rule 10 → justification 1's compound-list-break-signals sub-rule → default MERGE for bare *"and [noun]"* items unless one of four signals fires. Canonical case (Mosiah 18:7) added. Note that the N=2 Adjudication Principle's N=3+ cliff is scoped to predications, not objects.
+
+3. **§1 N=2 Adjudication Principle — N=3+ scope clarified.** Added a scope note stating the N=3+ cliff applies to coordinate *predications* (compound verbs, *that*-clauses, finite clauses) but NOT coordinate *objects* under a shared verb (which follow the compound-list-break-signals default).
+
+The load-bearing gap is now closed. The three additions together take the canon from "deterministic in practice" to "provably deterministic as specification" for all rule-pair contentions the corpus has surfaced.
+
+**Default-merge/split phrasing tension** (line 65 "each proposition splits by default" vs Decision Procedure step 1 "Default: merge") — NOT fixed this commit. Cosmetic; not load-bearing. Deferred as optional future cleanup.
+
+**Meta-observation.** The 4 parallel hostile audits ran in ~130 seconds wall-time. The audits' own quality: Audit A found 9 issues (2 critical, 7 recoverable); Audit B catalogued 54 precedence statements with 0 cycles/contradictions; Audit C ran 9 corpus cases and identified exactly 1 non-commutative gap; Audit D corrected my hypothesized 7-level hierarchy down to 5 levels. Convergent findings from independent probes = strong evidence the canon structure is sound and the codification is surgical rather than sprawling.
 
 ### 2026-04-23 PM — Systematic Adversarial-Audit Discipline Codified
 
