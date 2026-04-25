@@ -177,9 +177,71 @@ const NARRATION = (() => {
 
   // ── Playback ──
 
+  /**
+   * Find the line/verse currently nearest the top of the viewport.
+   * Returns the manifest lineIndex of that line, or -1 if none determinable.
+   * Used by startPlayback to begin audio at the verse the reader is looking at.
+   */
+  function findVisibleLineIndex() {
+    const activeBook = document.querySelector('.book-content[style*="display: block"]')
+                    || document.querySelector('.book-content:not([style*="display: none"])');
+    if (!activeBook) return -1;
+    const activeChapter = activeBook.querySelector('.chapter-content.chapter-active')
+                       || activeBook.querySelector('.chapter-content');
+    if (!activeChapter) return -1;
+
+    const isSenseLineMode = document.body.classList.contains('show-lines');
+    const topbar = document.querySelector('.topbar, header, .app-topbar');
+    const topbarHeight = topbar ? topbar.getBoundingClientRect().bottom : 60;
+
+    let idx = 0;
+    let bestIdx = -1;
+    let bestDist = Infinity;
+
+    const consider = (el, currentIdx) => {
+      const rect = el.getBoundingClientRect();
+      const dist = rect.top - topbarHeight;
+      // Pick first element at or below the topbar; tolerate small overshoot
+      if (dist > -20 && dist < bestDist) {
+        bestDist = dist;
+        bestIdx = currentIdx;
+      }
+    };
+
+    for (const child of activeChapter.children) {
+      if (typeof child.classList === 'undefined') continue;
+      const classes = child.classList;
+
+      if (classes.contains('pericope-header')) {
+        consider(child, idx);
+        idx++;
+        continue;
+      }
+      if (classes.contains('verse')) {
+        if (isSenseLineMode) {
+          const lines = Array.from(child.querySelectorAll(':scope > .line:not(.verse-diff)'));
+          for (const line of lines) {
+            consider(line, idx);
+            idx++;
+          }
+        } else {
+          const para = child.querySelector('.line-para');
+          if (para) {
+            consider(para, idx);
+            idx++;
+          }
+        }
+      }
+    }
+    return bestIdx;
+  }
+
   async function startPlayback() {
     if (playing) return;
     userStopped = false;
+
+    // Capture target line BEFORE play() so we can seek there once manifest loads
+    const pendingSeekIdx = findVisibleLineIndex();
 
     showPlayer();
 
@@ -242,6 +304,16 @@ const NARRATION = (() => {
           manifest = null;
         }
       }
+
+      // Seek to the line the reader was looking at when they pressed Listen
+      if (manifest && pendingSeekIdx > 0) {
+        const entry = manifest.lines.find(l => l.lineIndex === pendingSeekIdx);
+        if (entry) {
+          audioEl.currentTime = entry.start;
+          currentLineIdx = -1; // force highlight refresh on next tick
+        }
+      }
+
       startHighlightLoop();
     } catch (e) {
       console.error('Narration: play failed:', e);
@@ -522,8 +594,7 @@ const NARRATION = (() => {
 
       if (classes.contains('verse')) {
         if (isSenseLineMode) {
-          const senseLines = Array.from(child.querySelectorAll(':scope > .line'));
-          const lines = senseLines.filter(el => el.className.trim() === 'line');
+          const lines = Array.from(child.querySelectorAll(':scope > .line:not(.verse-diff)'));
           for (const line of lines) {
             if (line === targetEl || line.contains(targetEl)) return idx;
             idx++;
@@ -587,8 +658,11 @@ const NARRATION = (() => {
     // Walk up from click target to find a .line, .line-para, or .pericope-header
     let el = e.target;
     while (el && el !== e.currentTarget) {
-      const cl = el.className?.trim?.() || '';
-      if (cl === 'line' || cl === 'line-para' || el.classList?.contains('pericope-header')) {
+      const cls = el.classList;
+      if (cls && (cls.contains('pericope-header') ||
+                  cls.contains('line-para') ||
+                  (cls.contains('line') && !cls.contains('verse-diff') &&
+                   !cls.contains('line-para') && !cls.contains('line-parry')))) {
         break;
       }
       el = el.parentElement;
