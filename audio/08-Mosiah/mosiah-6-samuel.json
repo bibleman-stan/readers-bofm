@@ -1,0 +1,280 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 6,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 112.77,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.833,
+      "type": "line",
+      "text": "And now, king Benjamin thought it was expedient,",
+      "verse": "6:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.013,
+      "end": 5.521,
+      "type": "line",
+      "text": "after having finished speaking to the people,",
+      "verse": "6:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.701,
+      "end": 7.605,
+      "type": "line",
+      "text": "that he should take the names",
+      "verse": "6:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 7.785,
+      "end": 11.175,
+      "type": "line",
+      "text": "of all those who had entered into a covenant with God",
+      "verse": "6:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.355,
+      "end": 12.98,
+      "type": "line",
+      "text": "to keep his commandments.",
+      "verse": "6:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 13.66,
+      "end": 16.539,
+      "type": "line",
+      "text": "And it came to pass that there was not one soul,",
+      "verse": "6:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 16.719,
+      "end": 18.995,
+      "type": "line",
+      "text": "except it were little children,",
+      "verse": "6:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 19.175,
+      "end": 21.729,
+      "type": "line",
+      "text": "but who had entered into the covenant",
+      "verse": "6:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 21.909,
+      "end": 24.556,
+      "type": "line",
+      "text": "and had taken upon them the name of Christ.",
+      "verse": "6:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 25.236,
+      "end": 31.552,
+      "type": "line",
+      "text": "And again, it came to pass that when king Benjamin had made an end of all these things,",
+      "verse": "6:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 31.732,
+      "end": 34.1,
+      "type": "line",
+      "text": "and had consecrated his son Mosiah",
+      "verse": "6:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 34.28,
+      "end": 37.066,
+      "type": "line",
+      "text": "to be a ruler and a king over his people,",
+      "verse": "6:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 37.246,
+      "end": 40.311,
+      "type": "line",
+      "text": "and had given him all the charges concerning the kingdom,",
+      "verse": "6:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 40.491,
+      "end": 43.835,
+      "type": "line",
+      "text": "and also had appointed priests to teach the people,",
+      "verse": "6:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 44.015,
+      "end": 48.241,
+      "type": "line",
+      "text": "that thereby they might hear and know the commandments of God,",
+      "verse": "6:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 48.421,
+      "end": 51.997,
+      "type": "line",
+      "text": "and to stir them up in remembrance of the oath which they had made,",
+      "verse": "6:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 52.177,
+      "end": 54.174,
+      "type": "line",
+      "text": "he dismissed the multitude,",
+      "verse": "6:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 54.354,
+      "end": 55.887,
+      "type": "line",
+      "text": "and they returned,",
+      "verse": "6:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 56.067,
+      "end": 58.296,
+      "type": "line",
+      "text": "every one, according to their families,",
+      "verse": "6:3",
+      "lineIndex": 19
+    },
+    {
+      "start": 58.476,
+      "end": 60.194,
+      "type": "line",
+      "text": "to their own houses.",
+      "verse": "6:3",
+      "lineIndex": 20
+    },
+    {
+      "start": 60.874,
+      "end": 63.939,
+      "type": "line",
+      "text": "And Mosiah began to reign in his father's stead.",
+      "verse": "6:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 64.119,
+      "end": 67.556,
+      "type": "line",
+      "text": "And he began to reign in the thirtieth year of his age,",
+      "verse": "6:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 67.736,
+      "end": 73.913,
+      "type": "line",
+      "text": "making in the whole, about four hundred and seventy-six years from the time that Lehi left Jerusalem.",
+      "verse": "6:4",
+      "lineIndex": 23
+    },
+    {
+      "start": 74.593,
+      "end": 77.797,
+      "type": "line",
+      "text": "And king Benjamin lived three years and he died.",
+      "verse": "6:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 78.477,
+      "end": 83.771,
+      "type": "line",
+      "text": "And it came to pass that king Mosiah did walk in the ways of the Lord,",
+      "verse": "6:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 83.951,
+      "end": 87.016,
+      "type": "line",
+      "text": "and did observe his judgments and his statutes,",
+      "verse": "6:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 87.196,
+      "end": 91.376,
+      "type": "line",
+      "text": "and did keep his commandments in all things whatsoever he commanded him.",
+      "verse": "6:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 92.056,
+      "end": 96.654,
+      "type": "line",
+      "text": "And king Mosiah did cause his people that they should till the earth.",
+      "verse": "6:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 96.834,
+      "end": 99.342,
+      "type": "line",
+      "text": "And he also, himself, did till the earth,",
+      "verse": "6:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 99.522,
+      "end": 103.051,
+      "type": "line",
+      "text": "that thereby he might not become burdensome to his people,",
+      "verse": "6:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 103.231,
+      "end": 107.596,
+      "type": "line",
+      "text": "that he might do according to that which his father had done in all things.",
+      "verse": "6:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 107.776,
+      "end": 112.095,
+      "type": "line",
+      "text": "And there was no contention among all his people for the space of three years.",
+      "verse": "6:7",
+      "lineIndex": 32
+    }
+  ]
+}

@@ -1,0 +1,680 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 9,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 311.804,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.83,
+      "type": "line",
+      "text": "I, Zeniff, having been taught in all the language of the Nephites,",
+      "verse": "9:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.01,
+      "end": 8.121,
+      "type": "line",
+      "text": "and having had a knowledge of the land of Nephi,",
+      "verse": "9:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 8.301,
+      "end": 11.227,
+      "type": "line",
+      "text": "or of the land of our fathers' first inheritance,",
+      "verse": "9:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.407,
+      "end": 15.122,
+      "type": "line",
+      "text": "and having been sent as a spy among the Lamanites",
+      "verse": "9:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.302,
+      "end": 17.717,
+      "type": "line",
+      "text": "that I might spy out their forces,",
+      "verse": "9:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 17.897,
+      "end": 21.055,
+      "type": "line",
+      "text": "that our army might come upon them and destroy them\u2014",
+      "verse": "9:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 21.235,
+      "end": 24.021,
+      "type": "line",
+      "text": "but when I saw that which was good among them",
+      "verse": "9:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 24.201,
+      "end": 27.22,
+      "type": "line",
+      "text": "I was desirous that they should not be destroyed.",
+      "verse": "9:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 27.9,
+      "end": 31.569,
+      "type": "line",
+      "text": "Therefore, I contended with my brethren in the wilderness,",
+      "verse": "9:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 31.749,
+      "end": 35.371,
+      "type": "line",
+      "text": "for I would that our ruler should make a treaty with them;",
+      "verse": "9:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 35.551,
+      "end": 38.848,
+      "type": "line",
+      "text": "but he being an austere and a blood-thirsty man",
+      "verse": "9:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 39.028,
+      "end": 41.118,
+      "type": "line",
+      "text": "commanded that I should be slain;",
+      "verse": "9:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 41.298,
+      "end": 44.27,
+      "type": "line",
+      "text": "but I was rescued by the shedding of much blood;",
+      "verse": "9:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.45,
+      "end": 46.818,
+      "type": "line",
+      "text": "for father fought against father,",
+      "verse": "9:2",
+      "lineIndex": 14
+    },
+    {
+      "start": 46.998,
+      "end": 48.763,
+      "type": "line",
+      "text": "and brother against brother,",
+      "verse": "9:2",
+      "lineIndex": 15
+    },
+    {
+      "start": 48.943,
+      "end": 53.076,
+      "type": "line",
+      "text": "until the greater number of our army was destroyed in the wilderness;",
+      "verse": "9:2",
+      "lineIndex": 16
+    },
+    {
+      "start": 53.256,
+      "end": 54.696,
+      "type": "line",
+      "text": "and we returned,",
+      "verse": "9:2",
+      "lineIndex": 17
+    },
+    {
+      "start": 54.876,
+      "end": 58.591,
+      "type": "line",
+      "text": "those of us that were spared, to the land of Zarahemla,",
+      "verse": "9:2",
+      "lineIndex": 18
+    },
+    {
+      "start": 58.771,
+      "end": 61.929,
+      "type": "line",
+      "text": "to relate that tale to their wives and their children.",
+      "verse": "9:2",
+      "lineIndex": 19
+    },
+    {
+      "start": 62.609,
+      "end": 72.129,
+      "type": "line",
+      "text": "And yet, I being over-zealous to inherit the land of our fathers, collected as many as were desirous to go up to possess the land,",
+      "verse": "9:3",
+      "lineIndex": 20
+    },
+    {
+      "start": 72.309,
+      "end": 75.885,
+      "type": "line",
+      "text": "and started again on our journey into the wilderness",
+      "verse": "9:3",
+      "lineIndex": 21
+    },
+    {
+      "start": 76.065,
+      "end": 77.737,
+      "type": "line",
+      "text": "to go up to the land;",
+      "verse": "9:3",
+      "lineIndex": 22
+    },
+    {
+      "start": 77.917,
+      "end": 81.214,
+      "type": "line",
+      "text": "but we were smitten with famine and sore afflictions;",
+      "verse": "9:3",
+      "lineIndex": 23
+    },
+    {
+      "start": 81.394,
+      "end": 84.691,
+      "type": "line",
+      "text": "for we were slow to remember the Lord our God.",
+      "verse": "9:3",
+      "lineIndex": 24
+    },
+    {
+      "start": 85.371,
+      "end": 89.365,
+      "type": "line",
+      "text": "Nevertheless, after many days' wandering in the wilderness",
+      "verse": "9:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 89.545,
+      "end": 93.307,
+      "type": "line",
+      "text": "we pitched our tents in the place where our brethren were slain,",
+      "verse": "9:4",
+      "lineIndex": 26
+    },
+    {
+      "start": 93.487,
+      "end": 95.902,
+      "type": "line",
+      "text": "which was near to the land of our fathers.",
+      "verse": "9:4",
+      "lineIndex": 27
+    },
+    {
+      "start": 96.582,
+      "end": 102.573,
+      "type": "line",
+      "text": "And it came to pass that I went again with four of my men into the city, in unto the king,",
+      "verse": "9:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 102.753,
+      "end": 106.236,
+      "type": "line",
+      "text": "that I might know of the disposition of the king,",
+      "verse": "9:5",
+      "lineIndex": 29
+    },
+    {
+      "start": 106.416,
+      "end": 109.806,
+      "type": "line",
+      "text": "and that I might know if I might go in with my people",
+      "verse": "9:5",
+      "lineIndex": 30
+    },
+    {
+      "start": 109.986,
+      "end": 112.215,
+      "type": "line",
+      "text": "and possess the land in peace.",
+      "verse": "9:5",
+      "lineIndex": 31
+    },
+    {
+      "start": 112.895,
+      "end": 116.285,
+      "type": "line",
+      "text": "And I went in unto the king, and he covenanted with me",
+      "verse": "9:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 116.465,
+      "end": 120.923,
+      "type": "line",
+      "text": "that I might possess the land of Lehi-Nephi, and the land of Shilom.",
+      "verse": "9:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 121.603,
+      "end": 125.875,
+      "type": "line",
+      "text": "And he also commanded that his people should depart out of the land,",
+      "verse": "9:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 126.055,
+      "end": 130.049,
+      "type": "line",
+      "text": "and I and my people went into the land that we might possess it.",
+      "verse": "9:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 130.729,
+      "end": 132.772,
+      "type": "line",
+      "text": "And we began to build buildings,",
+      "verse": "9:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 132.952,
+      "end": 135.274,
+      "type": "line",
+      "text": "and to repair the walls of the city,",
+      "verse": "9:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 135.454,
+      "end": 140.098,
+      "type": "line",
+      "text": "yea, even the walls of the city of Lehi-Nephi, and the city of Shilom.",
+      "verse": "9:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 140.778,
+      "end": 143.193,
+      "type": "line",
+      "text": "And we began to till the ground,",
+      "verse": "9:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 143.373,
+      "end": 148.528,
+      "type": "line",
+      "text": "yea, even with all manner of seeds, with seeds of corn, and of wheat, and of barley,",
+      "verse": "9:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 148.708,
+      "end": 150.891,
+      "type": "line",
+      "text": "and with neas, and with sheum,",
+      "verse": "9:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 151.071,
+      "end": 153.672,
+      "type": "line",
+      "text": "and with seeds of all manner of fruits;",
+      "verse": "9:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 153.852,
+      "end": 156.963,
+      "type": "line",
+      "text": "and we did begin to multiply and prosper in the land.",
+      "verse": "9:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 157.643,
+      "end": 160.847,
+      "type": "line",
+      "text": "Now it was the cunning and the craftiness of king Laman,",
+      "verse": "9:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 161.027,
+      "end": 163.024,
+      "type": "line",
+      "text": "to bring my people into bondage,",
+      "verse": "9:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 163.204,
+      "end": 166.362,
+      "type": "line",
+      "text": "that he yielded up the land that we might possess it.",
+      "verse": "9:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 167.042,
+      "end": 172.383,
+      "type": "line",
+      "text": "Therefore it came to pass that after we had dwelt in the land for the space of twelve years",
+      "verse": "9:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 172.563,
+      "end": 175.21,
+      "type": "line",
+      "text": "that king Laman began to grow uneasy,",
+      "verse": "9:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 175.39,
+      "end": 179.012,
+      "type": "line",
+      "text": "lest by any means my people should wax strong in the land,",
+      "verse": "9:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 179.192,
+      "end": 183.418,
+      "type": "line",
+      "text": "and that they could not overpower them and bring them into bondage.",
+      "verse": "9:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 184.098,
+      "end": 187.488,
+      "type": "line",
+      "text": "Now they were a lazy and an idolatrous people;",
+      "verse": "9:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 187.668,
+      "end": 190.826,
+      "type": "line",
+      "text": "therefore they were desirous to bring us into bondage,",
+      "verse": "9:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 191.006,
+      "end": 195.0,
+      "type": "line",
+      "text": "that they might glut themselves with the labors of our hands;",
+      "verse": "9:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 195.18,
+      "end": 199.638,
+      "type": "line",
+      "text": "yea, that they might feast themselves upon the flocks of our fields.",
+      "verse": "9:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 200.318,
+      "end": 204.916,
+      "type": "line",
+      "text": "Therefore it came to pass that king Laman began to stir up his people",
+      "verse": "9:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 205.096,
+      "end": 207.511,
+      "type": "line",
+      "text": "that they should contend with my people;",
+      "verse": "9:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 207.691,
+      "end": 212.614,
+      "type": "line",
+      "text": "therefore there began to be wars and contentions in the land.",
+      "verse": "9:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 213.294,
+      "end": 220.074,
+      "type": "line",
+      "text": "For, in the thirteenth year of my reign in the land of Nephi, away on the south of the land of Shilom,",
+      "verse": "9:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 220.254,
+      "end": 223.365,
+      "type": "line",
+      "text": "when my people were watering and feeding their flocks,",
+      "verse": "9:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 223.545,
+      "end": 225.217,
+      "type": "line",
+      "text": "and tilling their lands,",
+      "verse": "9:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 225.397,
+      "end": 230.134,
+      "type": "line",
+      "text": "a numerous host of Lamanites came upon them and began to slay them,",
+      "verse": "9:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 230.314,
+      "end": 232.172,
+      "type": "line",
+      "text": "and to take off their flocks,",
+      "verse": "9:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 232.352,
+      "end": 234.163,
+      "type": "line",
+      "text": "and the corn of their fields.",
+      "verse": "9:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 234.843,
+      "end": 239.812,
+      "type": "line",
+      "text": "Yea, and it came to pass that they fled, all that were not overtaken,",
+      "verse": "9:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 239.992,
+      "end": 242.082,
+      "type": "line",
+      "text": "even into the city of Nephi,",
+      "verse": "9:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 242.262,
+      "end": 244.491,
+      "type": "line",
+      "text": "and did call upon me for protection.",
+      "verse": "9:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 245.171,
+      "end": 253.484,
+      "type": "line",
+      "text": "And it came to pass that I did arm them with bows, and with arrows, with swords, and with cimeters,",
+      "verse": "9:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 253.664,
+      "end": 255.893,
+      "type": "line",
+      "text": "and with clubs, and with slings,",
+      "verse": "9:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 256.073,
+      "end": 259.37,
+      "type": "line",
+      "text": "and with all manner of weapons which we could invent,",
+      "verse": "9:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 259.55,
+      "end": 263.59,
+      "type": "line",
+      "text": "and I and my people did go forth against the Lamanites to battle.",
+      "verse": "9:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 264.27,
+      "end": 268.821,
+      "type": "line",
+      "text": "Yea, in the strength of the Lord did we go forth to battle against the Lamanites;",
+      "verse": "9:17",
+      "lineIndex": 72
+    },
+    {
+      "start": 269.001,
+      "end": 272.484,
+      "type": "line",
+      "text": "for I and my people did cry mightily to the Lord",
+      "verse": "9:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 272.664,
+      "end": 276.101,
+      "type": "line",
+      "text": "that he would deliver us out of the hands of our enemies,",
+      "verse": "9:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 276.281,
+      "end": 281.343,
+      "type": "line",
+      "text": "for we were awakened to a remembrance of the deliverance of our fathers.",
+      "verse": "9:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 282.023,
+      "end": 285.181,
+      "type": "line",
+      "text": "And God did hear our cries and did answer our prayers;",
+      "verse": "9:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 285.361,
+      "end": 287.497,
+      "type": "line",
+      "text": "and we did go forth in his might;",
+      "verse": "9:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 287.677,
+      "end": 290.463,
+      "type": "line",
+      "text": "yea, we did go forth against the Lamanites,",
+      "verse": "9:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 290.643,
+      "end": 294.869,
+      "type": "line",
+      "text": "and in one day and a night we did slay three thousand and forty-three;",
+      "verse": "9:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 295.049,
+      "end": 299.043,
+      "type": "line",
+      "text": "we did slay them even until we had driven them out of our land.",
+      "verse": "9:18",
+      "lineIndex": 80
+    },
+    {
+      "start": 299.723,
+      "end": 304.228,
+      "type": "line",
+      "text": "And I, myself, with mine own hands, did help to bury their dead.",
+      "verse": "9:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 304.408,
+      "end": 307.612,
+      "type": "line",
+      "text": "And behold, to our great sorrow and lamentation,",
+      "verse": "9:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 307.792,
+      "end": 311.136,
+      "type": "line",
+      "text": "two hundred and seventy-nine of our brethren were slain.",
+      "verse": "9:19",
+      "lineIndex": 83
+    }
+  ]
+}

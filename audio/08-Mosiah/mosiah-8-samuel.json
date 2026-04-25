@@ -1,0 +1,864 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 8,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 344.155,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.69,
+      "type": "line",
+      "text": "And it came to pass that after king Limhi had made an end of speaking to his people,",
+      "verse": "8:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.87,
+      "end": 7.285,
+      "type": "line",
+      "text": "for he spake many things unto them",
+      "verse": "8:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.465,
+      "end": 10.251,
+      "type": "line",
+      "text": "and only a few of them have I written in this book,",
+      "verse": "8:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.431,
+      "end": 13.775,
+      "type": "line",
+      "text": "he told his people all the things concerning their brethren",
+      "verse": "8:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 13.955,
+      "end": 16.602,
+      "type": "line",
+      "text": "who were in the land of Zarahemla.",
+      "verse": "8:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 17.282,
+      "end": 20.997,
+      "type": "line",
+      "text": "And he caused that Ammon should stand up before the multitude,",
+      "verse": "8:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 21.177,
+      "end": 25.264,
+      "type": "line",
+      "text": "and rehearse unto them all that had happened unto their brethren",
+      "verse": "8:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 25.444,
+      "end": 28.788,
+      "type": "line",
+      "text": "from the time that Zeniff went up out of the land",
+      "verse": "8:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 28.968,
+      "end": 32.637,
+      "type": "line",
+      "text": "even until the time that he himself came up out of the land.",
+      "verse": "8:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 33.317,
+      "end": 36.475,
+      "type": "line",
+      "text": "And he also rehearsed unto them the last words",
+      "verse": "8:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 36.655,
+      "end": 39.116,
+      "type": "line",
+      "text": "which king Benjamin had taught them,",
+      "verse": "8:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 39.296,
+      "end": 42.129,
+      "type": "line",
+      "text": "and explained them to the people of king Limhi,",
+      "verse": "8:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 42.309,
+      "end": 45.838,
+      "type": "line",
+      "text": "so that they might understand all the words which he spake.",
+      "verse": "8:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 46.518,
+      "end": 49.769,
+      "type": "line",
+      "text": "And it came to pass that after he had done all this,",
+      "verse": "8:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 49.949,
+      "end": 52.457,
+      "type": "line",
+      "text": "king Limhi dismissed the multitude,",
+      "verse": "8:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 52.637,
+      "end": 56.956,
+      "type": "line",
+      "text": "and caused that they should return every one unto his own house.",
+      "verse": "8:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 57.636,
+      "end": 60.562,
+      "type": "line",
+      "text": "And it came to pass that he caused that the plates",
+      "verse": "8:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 60.742,
+      "end": 66.686,
+      "type": "line",
+      "text": "which contained the record of his people from the time that they left the land of Zarahemla,",
+      "verse": "8:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 66.866,
+      "end": 68.863,
+      "type": "line",
+      "text": "should be brought before Ammon,",
+      "verse": "8:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 69.043,
+      "end": 70.576,
+      "type": "line",
+      "text": "that he might read them.",
+      "verse": "8:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 71.256,
+      "end": 74.042,
+      "type": "line",
+      "text": "Now, as soon as Ammon had read the record,",
+      "verse": "8:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 74.222,
+      "end": 77.937,
+      "type": "line",
+      "text": "the king inquired of him to know if he could interpret languages,",
+      "verse": "8:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 78.117,
+      "end": 80.207,
+      "type": "line",
+      "text": "and Ammon told him that he could not.",
+      "verse": "8:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 80.887,
+      "end": 82.884,
+      "type": "line",
+      "text": "And the king said unto him:",
+      "verse": "8:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 83.064,
+      "end": 85.943,
+      "type": "line",
+      "text": "Being grieved for the afflictions of my people,",
+      "verse": "8:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 86.123,
+      "end": 88.584,
+      "type": "line",
+      "text": "I caused that forty and three of my people",
+      "verse": "8:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 88.764,
+      "end": 91.318,
+      "type": "line",
+      "text": "should take a journey into the wilderness,",
+      "verse": "8:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 91.498,
+      "end": 94.795,
+      "type": "line",
+      "text": "that thereby they might find the land of Zarahemla,",
+      "verse": "8:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 94.975,
+      "end": 99.201,
+      "type": "line",
+      "text": "that we might appeal unto our brethren to deliver us out of bondage.",
+      "verse": "8:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 99.881,
+      "end": 103.457,
+      "type": "line",
+      "text": "And they were lost in the wilderness for the space of many days,",
+      "verse": "8:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 103.637,
+      "end": 105.216,
+      "type": "line",
+      "text": "yet they were diligent,",
+      "verse": "8:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 105.396,
+      "end": 107.811,
+      "type": "line",
+      "text": "and found not the land of Zarahemla",
+      "verse": "8:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 107.991,
+      "end": 109.756,
+      "type": "line",
+      "text": "but returned to this land,",
+      "verse": "8:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 109.936,
+      "end": 113.047,
+      "type": "line",
+      "text": "having traveled in a land among many waters,",
+      "verse": "8:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 113.227,
+      "end": 114.992,
+      "type": "line",
+      "text": "having discovered a land",
+      "verse": "8:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 115.172,
+      "end": 118.887,
+      "type": "line",
+      "text": "which was covered with bones of men, and of beasts,",
+      "verse": "8:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 119.067,
+      "end": 122.782,
+      "type": "line",
+      "text": "and was also covered with ruins of buildings of every kind,",
+      "verse": "8:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 122.962,
+      "end": 126.909,
+      "type": "line",
+      "text": "having discovered a land which had been peopled with a people",
+      "verse": "8:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 127.089,
+      "end": 130.061,
+      "type": "line",
+      "text": "who were as numerous as the hosts of Israel.",
+      "verse": "8:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 130.741,
+      "end": 135.757,
+      "type": "line",
+      "text": "And for a testimony that the things that they had said are true",
+      "verse": "8:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 135.937,
+      "end": 138.677,
+      "type": "line",
+      "text": "they have brought twenty-four plates",
+      "verse": "8:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 138.857,
+      "end": 141.086,
+      "type": "line",
+      "text": "which are filled with engravings,",
+      "verse": "8:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 141.266,
+      "end": 143.031,
+      "type": "line",
+      "text": "and they are of pure gold.",
+      "verse": "8:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 143.711,
+      "end": 148.541,
+      "type": "line",
+      "text": "And behold, also, they have brought breastplates, which are large,",
+      "verse": "8:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 148.721,
+      "end": 151.043,
+      "type": "line",
+      "text": "and they are of brass and of copper,",
+      "verse": "8:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 151.223,
+      "end": 152.895,
+      "type": "line",
+      "text": "and are perfectly sound.",
+      "verse": "8:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 153.575,
+      "end": 155.99,
+      "type": "line",
+      "text": "And again, they have brought swords,",
+      "verse": "8:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 156.17,
+      "end": 158.213,
+      "type": "line",
+      "text": "the hilts thereof have perished,",
+      "verse": "8:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 158.393,
+      "end": 161.458,
+      "type": "line",
+      "text": "and the blades thereof were cankered with rust;",
+      "verse": "8:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 161.638,
+      "end": 166.003,
+      "type": "line",
+      "text": "and there is no one in the land that is able to interpret the language",
+      "verse": "8:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 166.183,
+      "end": 168.598,
+      "type": "line",
+      "text": "or the engravings that are on the plates.",
+      "verse": "8:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 168.778,
+      "end": 170.45,
+      "type": "line",
+      "text": "Therefore I said unto thee:",
+      "verse": "8:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 170.63,
+      "end": 172.302,
+      "type": "line",
+      "text": "Canst thou translate?",
+      "verse": "8:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 172.982,
+      "end": 174.7,
+      "type": "line",
+      "text": "And I say unto thee again:",
+      "verse": "8:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 174.88,
+      "end": 177.434,
+      "type": "line",
+      "text": "Knowest thou of any one that can translate?",
+      "verse": "8:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 177.614,
+      "end": 182.258,
+      "type": "line",
+      "text": "For I am desirous that these records should be translated into our language;",
+      "verse": "8:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 182.438,
+      "end": 187.593,
+      "type": "line",
+      "text": "for, perhaps, they will give us a knowledge of a remnant of the people",
+      "verse": "8:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 187.773,
+      "end": 189.445,
+      "type": "line",
+      "text": "who have been destroyed,",
+      "verse": "8:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 189.625,
+      "end": 191.854,
+      "type": "line",
+      "text": "from whence these records came;",
+      "verse": "8:12",
+      "lineIndex": 62
+    },
+    {
+      "start": 192.034,
+      "end": 195.935,
+      "type": "line",
+      "text": "or, perhaps, they will give us a knowledge of this very people",
+      "verse": "8:12",
+      "lineIndex": 63
+    },
+    {
+      "start": 196.115,
+      "end": 197.787,
+      "type": "line",
+      "text": "who have been destroyed;",
+      "verse": "8:12",
+      "lineIndex": 64
+    },
+    {
+      "start": 197.967,
+      "end": 201.589,
+      "type": "line",
+      "text": "and I am desirous to know the cause of their destruction.",
+      "verse": "8:12",
+      "lineIndex": 65
+    },
+    {
+      "start": 202.269,
+      "end": 204.173,
+      "type": "line",
+      "text": "Now Ammon said unto him:",
+      "verse": "8:13",
+      "lineIndex": 66
+    },
+    {
+      "start": 204.353,
+      "end": 206.629,
+      "type": "line",
+      "text": "I can assuredly tell thee, O king,",
+      "verse": "8:13",
+      "lineIndex": 67
+    },
+    {
+      "start": 206.809,
+      "end": 209.735,
+      "type": "line",
+      "text": "of a man that can translate the records;",
+      "verse": "8:13",
+      "lineIndex": 68
+    },
+    {
+      "start": 209.915,
+      "end": 212.423,
+      "type": "line",
+      "text": "for he has wherewith that he can look,",
+      "verse": "8:13",
+      "lineIndex": 69
+    },
+    {
+      "start": 212.603,
+      "end": 215.947,
+      "type": "line",
+      "text": "and translate all records that are of ancient date;",
+      "verse": "8:13",
+      "lineIndex": 70
+    },
+    {
+      "start": 216.127,
+      "end": 217.938,
+      "type": "line",
+      "text": "and it is a gift from God.",
+      "verse": "8:13",
+      "lineIndex": 71
+    },
+    {
+      "start": 218.118,
+      "end": 220.626,
+      "type": "line",
+      "text": "And the things are called interpreters,",
+      "verse": "8:13",
+      "lineIndex": 72
+    },
+    {
+      "start": 220.806,
+      "end": 224.103,
+      "type": "line",
+      "text": "and no man can look in them except he be commanded,",
+      "verse": "8:13",
+      "lineIndex": 73
+    },
+    {
+      "start": 224.283,
+      "end": 228.138,
+      "type": "line",
+      "text": "lest he should look for that he ought not and he should perish.",
+      "verse": "8:13",
+      "lineIndex": 74
+    },
+    {
+      "start": 228.318,
+      "end": 233.148,
+      "type": "line",
+      "text": "And whosoever is commanded to look in them, the same is called seer.",
+      "verse": "8:13",
+      "lineIndex": 75
+    },
+    {
+      "start": 233.828,
+      "end": 238.008,
+      "type": "line",
+      "text": "And behold, the king of the people who are in the land of Zarahemla",
+      "verse": "8:14",
+      "lineIndex": 76
+    },
+    {
+      "start": 238.188,
+      "end": 241.067,
+      "type": "line",
+      "text": "is the man that is commanded to do these things,",
+      "verse": "8:14",
+      "lineIndex": 77
+    },
+    {
+      "start": 241.247,
+      "end": 243.476,
+      "type": "line",
+      "text": "and who has this high gift from God.",
+      "verse": "8:14",
+      "lineIndex": 78
+    },
+    {
+      "start": 244.156,
+      "end": 247.685,
+      "type": "line",
+      "text": "And the king said that a seer is greater than a prophet.",
+      "verse": "8:15",
+      "lineIndex": 79
+    },
+    {
+      "start": 248.365,
+      "end": 252.591,
+      "type": "line",
+      "text": "And Ammon said that a seer is a revelator and a prophet also;",
+      "verse": "8:16",
+      "lineIndex": 80
+    },
+    {
+      "start": 252.771,
+      "end": 255.511,
+      "type": "line",
+      "text": "and a gift which is greater can no man have,",
+      "verse": "8:16",
+      "lineIndex": 81
+    },
+    {
+      "start": 255.691,
+      "end": 258.942,
+      "type": "line",
+      "text": "except he should possess the power of God, which no man can;",
+      "verse": "8:16",
+      "lineIndex": 82
+    },
+    {
+      "start": 259.122,
+      "end": 262.233,
+      "type": "line",
+      "text": "yet a man may have great power given him from God.",
+      "verse": "8:16",
+      "lineIndex": 83
+    },
+    {
+      "start": 262.913,
+      "end": 265.792,
+      "type": "line",
+      "text": "But a seer can know of things which are past,",
+      "verse": "8:17",
+      "lineIndex": 85
+    },
+    {
+      "start": 265.972,
+      "end": 268.387,
+      "type": "line",
+      "text": "and also of things which are to come,",
+      "verse": "8:17",
+      "lineIndex": 86
+    },
+    {
+      "start": 268.567,
+      "end": 270.889,
+      "type": "line",
+      "text": "and by them shall all things be revealed,",
+      "verse": "8:17",
+      "lineIndex": 87
+    },
+    {
+      "start": 271.069,
+      "end": 274.691,
+      "type": "line",
+      "text": "or, rather, shall secret things be made manifest,",
+      "verse": "8:17",
+      "lineIndex": 88
+    },
+    {
+      "start": 274.871,
+      "end": 277.332,
+      "type": "line",
+      "text": "and hidden things shall come to light,",
+      "verse": "8:17",
+      "lineIndex": 89
+    },
+    {
+      "start": 277.512,
+      "end": 281.784,
+      "type": "line",
+      "text": "and things which are not known shall be made known by them,",
+      "verse": "8:17",
+      "lineIndex": 90
+    },
+    {
+      "start": 281.964,
+      "end": 284.425,
+      "type": "line",
+      "text": "and also things shall be made known by them",
+      "verse": "8:17",
+      "lineIndex": 91
+    },
+    {
+      "start": 284.605,
+      "end": 286.973,
+      "type": "line",
+      "text": "which otherwise could not be known.",
+      "verse": "8:17",
+      "lineIndex": 92
+    },
+    {
+      "start": 287.653,
+      "end": 289.557,
+      "type": "line",
+      "text": "Thus God has provided a means",
+      "verse": "8:18",
+      "lineIndex": 93
+    },
+    {
+      "start": 289.737,
+      "end": 291.455,
+      "type": "line",
+      "text": "that man, through faith,",
+      "verse": "8:18",
+      "lineIndex": 94
+    },
+    {
+      "start": 291.635,
+      "end": 293.539,
+      "type": "line",
+      "text": "might work mighty miracles;",
+      "verse": "8:18",
+      "lineIndex": 95
+    },
+    {
+      "start": 293.719,
+      "end": 297.063,
+      "type": "line",
+      "text": "therefore he becometh a great benefit to his fellow beings.",
+      "verse": "8:18",
+      "lineIndex": 96
+    },
+    {
+      "start": 297.743,
+      "end": 301.04,
+      "type": "line",
+      "text": "And now, when Ammon had made an end of speaking these words",
+      "verse": "8:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 301.22,
+      "end": 303.356,
+      "type": "line",
+      "text": "the king rejoiced exceedingly,",
+      "verse": "8:19",
+      "lineIndex": 98
+    },
+    {
+      "start": 303.536,
+      "end": 305.626,
+      "type": "line",
+      "text": "and gave thanks to God, saying:",
+      "verse": "8:19",
+      "lineIndex": 99
+    },
+    {
+      "start": 305.806,
+      "end": 309.475,
+      "type": "line",
+      "text": "Doubtless a great mystery is contained within these plates,",
+      "verse": "8:19",
+      "lineIndex": 100
+    },
+    {
+      "start": 309.655,
+      "end": 316.993,
+      "type": "line",
+      "text": "and these interpreters were doubtless prepared for the purpose of unfolding all such mysteries to the children of men.",
+      "verse": "8:19",
+      "lineIndex": 101
+    },
+    {
+      "start": 317.673,
+      "end": 320.413,
+      "type": "line",
+      "text": "O how marvelous are the works of the Lord,",
+      "verse": "8:20",
+      "lineIndex": 102
+    },
+    {
+      "start": 320.593,
+      "end": 323.101,
+      "type": "line",
+      "text": "and how long doth he suffer with his people;",
+      "verse": "8:20",
+      "lineIndex": 103
+    },
+    {
+      "start": 323.281,
+      "end": 325.882,
+      "type": "line",
+      "text": "yea, and how blind and impenetrable",
+      "verse": "8:20",
+      "lineIndex": 104
+    },
+    {
+      "start": 326.062,
+      "end": 329.22,
+      "type": "line",
+      "text": "are the understandings of the children of men;",
+      "verse": "8:20",
+      "lineIndex": 105
+    },
+    {
+      "start": 329.4,
+      "end": 331.165,
+      "type": "line",
+      "text": "for they will not seek wisdom,",
+      "verse": "8:20",
+      "lineIndex": 106
+    },
+    {
+      "start": 331.345,
+      "end": 334.41,
+      "type": "line",
+      "text": "neither do they desire that she should rule over them!",
+      "verse": "8:20",
+      "lineIndex": 107
+    },
+    {
+      "start": 335.09,
+      "end": 338.341,
+      "type": "line",
+      "text": "Yea, they are as a wild flock which fleeth from the shepherd,",
+      "verse": "8:21",
+      "lineIndex": 109
+    },
+    {
+      "start": 338.521,
+      "end": 343.49,
+      "type": "line",
+      "text": "and scattereth, and are driven, and are devoured by the beasts of the forest.",
+      "verse": "8:21",
+      "lineIndex": 110
+    }
+  ]
+}

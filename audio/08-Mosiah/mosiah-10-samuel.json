@@ -1,0 +1,784 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 10,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 342.16,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.808,
+      "type": "line",
+      "text": "And it came to pass that we again began to establish the kingdom",
+      "verse": "10:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.988,
+      "end": 7.099,
+      "type": "line",
+      "text": "and we again began to possess the land in peace.",
+      "verse": "10:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.279,
+      "end": 11.969,
+      "type": "line",
+      "text": "And I caused that there should be weapons of war made of every kind,",
+      "verse": "10:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 12.149,
+      "end": 15.214,
+      "type": "line",
+      "text": "that thereby I might have weapons for my people",
+      "verse": "10:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.394,
+      "end": 20.642,
+      "type": "line",
+      "text": "against the time the Lamanites should come up again to war against my people.",
+      "verse": "10:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 21.322,
+      "end": 23.876,
+      "type": "line",
+      "text": "And I set guards round about the land,",
+      "verse": "10:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 24.056,
+      "end": 28.886,
+      "type": "line",
+      "text": "that the Lamanites might not come upon us again unawares and destroy us;",
+      "verse": "10:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 29.066,
+      "end": 32.177,
+      "type": "line",
+      "text": "and thus I did guard my people and my flocks,",
+      "verse": "10:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 32.357,
+      "end": 35.747,
+      "type": "line",
+      "text": "and keep them from falling into the hands of our enemies.",
+      "verse": "10:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 36.427,
+      "end": 41.071,
+      "type": "line",
+      "text": "And it came to pass that we did inherit the land of our fathers for many years,",
+      "verse": "10:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 41.251,
+      "end": 43.759,
+      "type": "line",
+      "text": "yea, for the space of twenty and two years.",
+      "verse": "10:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 44.439,
+      "end": 47.597,
+      "type": "line",
+      "text": "And I did cause that the men should till the ground,",
+      "verse": "10:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 47.777,
+      "end": 51.724,
+      "type": "line",
+      "text": "and raise all manner of grain and all manner of fruit of every kind.",
+      "verse": "10:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 52.404,
+      "end": 56.026,
+      "type": "line",
+      "text": "And I did cause that the women should spin, and toil,",
+      "verse": "10:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 56.206,
+      "end": 58.992,
+      "type": "line",
+      "text": "and work, and work all manner of fine linen,",
+      "verse": "10:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 59.172,
+      "end": 61.68,
+      "type": "line",
+      "text": "yea, and cloth of every kind,",
+      "verse": "10:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 61.86,
+      "end": 64.414,
+      "type": "line",
+      "text": "that we might clothe our nakedness;",
+      "verse": "10:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 64.594,
+      "end": 66.823,
+      "type": "line",
+      "text": "and thus we did prosper in the land\u2014",
+      "verse": "10:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 67.003,
+      "end": 72.019,
+      "type": "line",
+      "text": "thus we did have continual peace in the land for the space of twenty and two years.",
+      "verse": "10:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 72.699,
+      "end": 75.16,
+      "type": "line",
+      "text": "And it came to pass that king Laman died,",
+      "verse": "10:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 75.34,
+      "end": 78.034,
+      "type": "line",
+      "text": "and his son began to reign in his stead.",
+      "verse": "10:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 78.214,
+      "end": 81.929,
+      "type": "line",
+      "text": "And he began to stir his people up in rebellion against my people;",
+      "verse": "10:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 82.109,
+      "end": 84.385,
+      "type": "line",
+      "text": "therefore they began to prepare for war,",
+      "verse": "10:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 84.565,
+      "end": 87.119,
+      "type": "line",
+      "text": "and to come up to battle against my people.",
+      "verse": "10:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 87.799,
+      "end": 91.654,
+      "type": "line",
+      "text": "But I had sent my spies out round about the land of Shemlon,",
+      "verse": "10:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 91.834,
+      "end": 94.528,
+      "type": "line",
+      "text": "that I might discover their preparations,",
+      "verse": "10:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 94.708,
+      "end": 96.751,
+      "type": "line",
+      "text": "that I might guard against them,",
+      "verse": "10:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 96.931,
+      "end": 100.368,
+      "type": "line",
+      "text": "that they might not come upon my people and destroy them.",
+      "verse": "10:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 101.048,
+      "end": 108.2,
+      "type": "line",
+      "text": "And it came to pass that they came up upon the north of the land of Shilom, with their numerous hosts,",
+      "verse": "10:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 108.38,
+      "end": 111.074,
+      "type": "line",
+      "text": "men armed with bows, and with arrows,",
+      "verse": "10:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 111.254,
+      "end": 113.808,
+      "type": "line",
+      "text": "and with swords, and with cimeters,",
+      "verse": "10:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 113.988,
+      "end": 116.217,
+      "type": "line",
+      "text": "and with stones, and with slings;",
+      "verse": "10:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 116.397,
+      "end": 119.323,
+      "type": "line",
+      "text": "and they had their heads shaved that they were naked;",
+      "verse": "10:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 119.503,
+      "end": 123.032,
+      "type": "line",
+      "text": "and they were girded with a leathern girdle about their loins.",
+      "verse": "10:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 123.712,
+      "end": 128.495,
+      "type": "line",
+      "text": "And it came to pass that I caused that the women and children of my people",
+      "verse": "10:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 128.675,
+      "end": 130.904,
+      "type": "line",
+      "text": "should be hid in the wilderness;",
+      "verse": "10:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 131.084,
+      "end": 134.613,
+      "type": "line",
+      "text": "and I also caused that all my old men that could bear arms,",
+      "verse": "10:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 134.793,
+      "end": 139.994,
+      "type": "line",
+      "text": "and also all my young men that were able to bear arms, should gather themselves together",
+      "verse": "10:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 140.174,
+      "end": 142.635,
+      "type": "line",
+      "text": "to go to battle against the Lamanites;",
+      "verse": "10:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 142.815,
+      "end": 147.134,
+      "type": "line",
+      "text": "and I did place them in their ranks, every man according to his age.",
+      "verse": "10:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 147.814,
+      "end": 152.412,
+      "type": "line",
+      "text": "And it came to pass that we did go up to battle against the Lamanites;",
+      "verse": "10:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 152.592,
+      "end": 157.654,
+      "type": "line",
+      "text": "and I, even I, in my old age, did go up to battle against the Lamanites.",
+      "verse": "10:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 157.834,
+      "end": 162.014,
+      "type": "line",
+      "text": "And it came to pass that we did go up in the strength of the Lord to battle.",
+      "verse": "10:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 162.694,
+      "end": 165.898,
+      "type": "line",
+      "text": "Now, the Lamanites knew nothing concerning the Lord,",
+      "verse": "10:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 166.078,
+      "end": 168.028,
+      "type": "line",
+      "text": "nor the strength of the Lord,",
+      "verse": "10:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 168.208,
+      "end": 171.134,
+      "type": "line",
+      "text": "therefore they depended upon their own strength.",
+      "verse": "10:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 171.314,
+      "end": 173.404,
+      "type": "line",
+      "text": "Yet they were a strong people,",
+      "verse": "10:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 173.584,
+      "end": 175.163,
+      "type": "line",
+      "text": "as to the strength of men.",
+      "verse": "10:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 175.843,
+      "end": 179.976,
+      "type": "line",
+      "text": "They were a wild, and ferocious, and a blood-thirsty people,",
+      "verse": "10:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 180.156,
+      "end": 183.639,
+      "type": "line",
+      "text": "believing in the tradition of their fathers, which is this\u2014",
+      "verse": "10:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 183.819,
+      "end": 190.785,
+      "type": "line",
+      "text": "Believing that they were driven out of the land of Jerusalem because of the iniquities of their fathers,",
+      "verse": "10:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 190.965,
+      "end": 195.284,
+      "type": "line",
+      "text": "and that they were wronged in the wilderness by their brethren,",
+      "verse": "10:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 195.464,
+      "end": 198.297,
+      "type": "line",
+      "text": "and they were also wronged while crossing the sea;",
+      "verse": "10:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 198.977,
+      "end": 203.946,
+      "type": "line",
+      "text": "And again, that they were wronged while in the land of their first inheritance,",
+      "verse": "10:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 204.126,
+      "end": 206.262,
+      "type": "line",
+      "text": "after they had crossed the sea,",
+      "verse": "10:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 206.442,
+      "end": 211.597,
+      "type": "line",
+      "text": "and all this because that Nephi was more faithful in keeping the commandments of the Lord\u2014",
+      "verse": "10:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 211.777,
+      "end": 214.238,
+      "type": "line",
+      "text": "therefore he was favored of the Lord,",
+      "verse": "10:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 214.418,
+      "end": 217.204,
+      "type": "line",
+      "text": "for the Lord heard his prayers and answered them,",
+      "verse": "10:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 217.384,
+      "end": 220.635,
+      "type": "line",
+      "text": "and he took the lead of their journey in the wilderness.",
+      "verse": "10:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 221.315,
+      "end": 223.776,
+      "type": "line",
+      "text": "And his brethren were wroth with him",
+      "verse": "10:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 223.956,
+      "end": 227.207,
+      "type": "line",
+      "text": "because they understood not the dealings of the Lord;",
+      "verse": "10:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 227.387,
+      "end": 230.731,
+      "type": "line",
+      "text": "they were also wroth with him upon the waters",
+      "verse": "10:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 230.911,
+      "end": 233.651,
+      "type": "line",
+      "text": "because they hardened their hearts against the Lord.",
+      "verse": "10:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 234.331,
+      "end": 236.096,
+      "type": "line",
+      "text": "And again, they were wroth",
+      "verse": "10:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 236.276,
+      "end": 239.155,
+      "type": "line",
+      "text": "with him when they had arrived in the promised land,",
+      "verse": "10:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 239.335,
+      "end": 243.886,
+      "type": "line",
+      "text": "because they said that he had taken the ruling of the people out of their hands;",
+      "verse": "10:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 244.066,
+      "end": 245.645,
+      "type": "line",
+      "text": "and they sought to kill him.",
+      "verse": "10:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 246.325,
+      "end": 249.019,
+      "type": "line",
+      "text": "And again, they were wroth with him",
+      "verse": "10:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 249.199,
+      "end": 253.611,
+      "type": "line",
+      "text": "because he departed into the wilderness as the Lord had commanded him,",
+      "verse": "10:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 253.791,
+      "end": 258.203,
+      "type": "line",
+      "text": "and took the records which were engraven on the plates of brass,",
+      "verse": "10:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 258.383,
+      "end": 260.798,
+      "type": "line",
+      "text": "for they said that he robbed them.",
+      "verse": "10:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 261.478,
+      "end": 264.636,
+      "type": "line",
+      "text": "And thus they have taught their children that they should hate them,",
+      "verse": "10:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 264.816,
+      "end": 266.627,
+      "type": "line",
+      "text": "and that they should murder them,",
+      "verse": "10:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 266.807,
+      "end": 269.826,
+      "type": "line",
+      "text": "and that they should rob and plunder them,",
+      "verse": "10:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 270.006,
+      "end": 272.467,
+      "type": "line",
+      "text": "and do all they could to destroy them;",
+      "verse": "10:17",
+      "lineIndex": 76
+    },
+    {
+      "start": 272.647,
+      "end": 277.663,
+      "type": "line",
+      "text": "therefore they have an eternal hatred towards the children of Nephi.",
+      "verse": "10:17",
+      "lineIndex": 77
+    },
+    {
+      "start": 278.343,
+      "end": 285.263,
+      "type": "line",
+      "text": "For this very cause has king Laman, by his cunning, and lying craftiness, and his fair promises,",
+      "verse": "10:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 285.443,
+      "end": 290.18,
+      "type": "line",
+      "text": "deceived me, that I have brought this my people up into this land,",
+      "verse": "10:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 290.36,
+      "end": 291.846,
+      "type": "line",
+      "text": "that they may destroy them;",
+      "verse": "10:18",
+      "lineIndex": 80
+    },
+    {
+      "start": 292.026,
+      "end": 295.463,
+      "type": "line",
+      "text": "yea, and we have suffered these many years in the land.",
+      "verse": "10:18",
+      "lineIndex": 81
+    },
+    {
+      "start": 296.143,
+      "end": 297.629,
+      "type": "line",
+      "text": "And now I, Zeniff,",
+      "verse": "10:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 297.809,
+      "end": 302.314,
+      "type": "line",
+      "text": "after having told all these things unto my people concerning the Lamanites,",
+      "verse": "10:19",
+      "lineIndex": 83
+    },
+    {
+      "start": 302.494,
+      "end": 305.698,
+      "type": "line",
+      "text": "I did stimulate them to go to battle with their might,",
+      "verse": "10:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 305.878,
+      "end": 308.154,
+      "type": "line",
+      "text": "putting their trust in the Lord;",
+      "verse": "10:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 308.334,
+      "end": 311.678,
+      "type": "line",
+      "text": "therefore, we did contend with them, face to face.",
+      "verse": "10:19",
+      "lineIndex": 86
+    },
+    {
+      "start": 312.358,
+      "end": 316.77,
+      "type": "line",
+      "text": "And it came to pass that we did drive them again out of our land;",
+      "verse": "10:20",
+      "lineIndex": 87
+    },
+    {
+      "start": 316.95,
+      "end": 319.226,
+      "type": "line",
+      "text": "and we slew them with a great slaughter,",
+      "verse": "10:20",
+      "lineIndex": 88
+    },
+    {
+      "start": 319.406,
+      "end": 321.821,
+      "type": "line",
+      "text": "even so many that we did not number them.",
+      "verse": "10:20",
+      "lineIndex": 89
+    },
+    {
+      "start": 322.501,
+      "end": 326.123,
+      "type": "line",
+      "text": "And it came to pass that we returned again to our own land,",
+      "verse": "10:21",
+      "lineIndex": 90
+    },
+    {
+      "start": 326.303,
+      "end": 329.6,
+      "type": "line",
+      "text": "and my people again began to tend their flocks,",
+      "verse": "10:21",
+      "lineIndex": 91
+    },
+    {
+      "start": 329.78,
+      "end": 331.405,
+      "type": "line",
+      "text": "and to till their ground.",
+      "verse": "10:21",
+      "lineIndex": 92
+    },
+    {
+      "start": 332.085,
+      "end": 336.45,
+      "type": "line",
+      "text": "And now I, being old, did confer the kingdom upon one of my sons;",
+      "verse": "10:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 336.63,
+      "end": 338.255,
+      "type": "line",
+      "text": "therefore, I say no more.",
+      "verse": "10:22",
+      "lineIndex": 94
+    },
+    {
+      "start": 338.435,
+      "end": 340.478,
+      "type": "line",
+      "text": "And may the Lord bless my people.",
+      "verse": "10:22",
+      "lineIndex": 95
+    },
+    {
+      "start": 340.658,
+      "end": 341.494,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "10:22",
+      "lineIndex": 96
+    }
+  ]
+}
