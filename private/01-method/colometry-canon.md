@@ -917,6 +917,10 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 
 ## 8. Update Log
 
+### 2026-04-25 — 1 Ne 19:5 Resolved (Category-B → State B applied)
+
+Stan resolved the long-standing 1 Ne 19:5 deictic-placement call. *"And then, behold,"* moved from trailing line 1 to leading line 2 — *"and then, behold, I proceed according to that which I have spoken..."*. Reasoning: frame-attachment principle (deictic introduces what follows; co-locating with announced content is mechanically clean) plus break-as-natural-breath convention (line breaks are not theatrical pauses). Pending.md entry removed.
+
 ### 2026-04-25 — Goal-Fit / Application-Consistency / Self-Consistency / Smuggling Audits + §7.3 Trigger #12
 
 Four parallel hostile audits run on the canon's recent codifications (Rule 17 topic-PP extension, Rule 17 long-complement exception, M1 asymmetric-modifier sub-clause, N=2 Adjudication Principle, R28 Authorial Asymmetry, saith-the-Lord parenthetical, §1 Application Order). All four produced material findings, demonstrating that the prior §7.3 trigger list (11 categories) caught propose-channel risks but did NOT cover post-codification corpus-fit. New trigger #12 codified to close that gap.
