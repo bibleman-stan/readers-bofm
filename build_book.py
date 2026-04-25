@@ -2826,6 +2826,34 @@ def build_parallel_map(bid, ch_num, ch_verses):
     return result
 
 
+_LINE_INDEX_PATTERN = re.compile(
+    r'<div class="(pericope-header(?:\s+[^"]*)?)"'
+    r'|<span class="(line(?:\s+verse-normal)?)"'
+)
+
+
+def inject_line_indices(html):
+    """Walk chapter HTML in document order and tag each pericope-header div
+    and each .line / .line.verse-normal span with data-line-index="N",
+    matching exactly the walk order in scripts/generate_audio.py.
+
+    These attributes are the single source of truth that audio-manifest
+    `lineIndex` values map to. Skips .line.verse-diff (KJV-diff alternate),
+    .line-para (prose mode), and .line-parry (poetry mode) — none of those
+    receive audio.
+    """
+    counter = [0]
+
+    def repl(m):
+        idx = counter[0]
+        counter[0] += 1
+        if m.group(1) is not None:
+            return f'<div data-line-index="{idx}" class="{m.group(1)}"'
+        return f'<span data-line-index="{idx}" class="{m.group(2)}"'
+
+    return _LINE_INDEX_PATTERN.sub(repl, html)
+
+
 def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
     p = [f'<div id="ch-{bid}-{ch_num}" class="chapter-content">']
     p.append(f'<div class="chapter-title">Chapter {ch_num}</div>')
@@ -2858,7 +2886,7 @@ def gen_chapter(bid, ch_num, ch_verses, total_chapters, swap_list):
                            deep_structure_verses=deep_verset))
         p.append('')
     p.append('</div>')
-    return '\n'.join(p)
+    return inject_line_indices('\n'.join(p))
 
 def build_book(bid, source_file, swap_list):
     """Build a single book HTML fragment from a sense-line source file."""

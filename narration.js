@@ -177,62 +177,61 @@ const NARRATION = (() => {
 
   // ── Playback ──
 
-  /**
-   * Find the line/verse currently nearest the top of the viewport.
-   * Returns the manifest lineIndex of that line, or -1 if none determinable.
-   * Used by startPlayback to begin audio at the verse the reader is looking at.
-   */
-  function findVisibleLineIndex() {
-    const activeBook = document.querySelector('.book-content[style*="display: block"]')
-                    || document.querySelector('.book-content:not([style*="display: none"])');
-    if (!activeBook) return -1;
-    const activeChapter = activeBook.querySelector('.chapter-content.chapter-active')
-                       || activeBook.querySelector('.chapter-content');
-    if (!activeChapter) return -1;
-
-    const isSenseLineMode = document.body.classList.contains('show-lines');
+  function _topbarHeight() {
     const topbar = document.querySelector('.topbar, header, .app-topbar');
-    const topbarHeight = topbar ? topbar.getBoundingClientRect().bottom : 60;
+    return topbar ? topbar.getBoundingClientRect().bottom : 60;
+  }
 
-    let idx = 0;
-    let bestIdx = -1;
+  /**
+   * Return { bookId, chapter, lineIndex } describing what the reader is
+   * currently looking at, derived from scroll position via data-line-index
+   * attributes — no dependency on hash, .chapter-active, or any other
+   * state that may lag scroll.
+   */
+  function getChapterAtViewport() {
+    const topbarHeight = _topbarHeight();
+    let bestEl = null;
     let bestDist = Infinity;
-
-    const consider = (el, currentIdx) => {
+    document.querySelectorAll('.book-content [data-line-index]').forEach(el => {
+      // Skip elements inside hidden books
+      const book = el.closest('.book-content');
+      if (book && book.style.display === 'none') return;
       const rect = el.getBoundingClientRect();
       const dist = rect.top - topbarHeight;
-      // Pick first element at or below the topbar; tolerate small overshoot
       if (dist > -20 && dist < bestDist) {
         bestDist = dist;
-        bestIdx = currentIdx;
+        bestEl = el;
       }
+    });
+    if (!bestEl) return null;
+    const chapterDiv = bestEl.closest('.chapter-content');
+    if (!chapterDiv) return null;
+    const m = chapterDiv.id.match(/^ch-(.+)-(\d+)$/);
+    if (!m) return null;
+    return {
+      bookId: m[1],
+      chapter: parseInt(m[2], 10),
+      lineIndex: parseInt(bestEl.getAttribute('data-line-index'), 10),
     };
+  }
 
-    for (const child of activeChapter.children) {
-      if (typeof child.classList === 'undefined') continue;
-      const classes = child.classList;
-
-      if (classes.contains('pericope-header')) {
-        consider(child, idx);
-        idx++;
-        continue;
+  /**
+   * Find the data-line-index of the topmost on-screen element in the
+   * specified chapter div. Returns -1 if none.
+   */
+  function findVisibleLineIndexInChapter(chapterDiv) {
+    if (!chapterDiv) return -1;
+    const topbarHeight = _topbarHeight();
+    let bestIdx = -1;
+    let bestDist = Infinity;
+    chapterDiv.querySelectorAll('[data-line-index]').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const dist = rect.top - topbarHeight;
+      if (dist > -20 && dist < bestDist) {
+        bestDist = dist;
+        bestIdx = parseInt(el.getAttribute('data-line-index'), 10);
       }
-      if (classes.contains('verse')) {
-        if (isSenseLineMode) {
-          const lines = Array.from(child.querySelectorAll(':scope > .line:not(.verse-diff)'));
-          for (const line of lines) {
-            consider(line, idx);
-            idx++;
-          }
-        } else {
-          const para = child.querySelector('.line-para');
-          if (para) {
-            consider(para, idx);
-            idx++;
-          }
-        }
-      }
-    }
+    });
     return bestIdx;
   }
 
@@ -240,13 +239,15 @@ const NARRATION = (() => {
     if (playing) return;
     userStopped = false;
 
-    // Capture target line BEFORE play() so we can seek there once manifest loads
-    const pendingSeekIdx = findVisibleLineIndex();
+    // Determine what the reader is looking at — chapter AND seek target —
+    // from scroll position, ignoring stale hash/active-class state.
+    const target = getChapterAtViewport();
+    const ch = target ? { bookId: target.bookId, chapter: target.chapter }
+                      : getCurrentChapter();
+    const pendingSeekIdx = target ? target.lineIndex : -1;
+    if (!ch) return;
 
     showPlayer();
-
-    const ch = getCurrentChapter();
-    if (!ch) return;
 
     const folder = BOOK_FOLDERS[ch.bookId] || ch.bookId;
     const voice = voiceFor(ch.bookId);
@@ -565,50 +566,14 @@ const NARRATION = (() => {
   // ── Click-to-seek on lines ──
 
   /**
-   * Given a DOM element (a .line, .line-para, or .pericope-header),
-   * determine its lineIndex within the chapter by walking the same
-   * tree that findLineElement uses, but in reverse.
-   * Returns the manifest line index, or -1 if not found.
+   * Given a DOM element (or a descendant of one) carrying data-line-index,
+   * return the manifest line index, or -1 if none.
    */
   function getLineIndexFromElement(targetEl) {
-    const activeBook = document.querySelector('.book-content[style*="display: block"]')
-                    || document.querySelector('.book-content:not([style*="display: none"])');
-    if (!activeBook) return -1;
-
-    const activeChapter = activeBook.querySelector('.chapter-content.chapter-active')
-                       || activeBook.querySelector('.chapter-content');
-    if (!activeChapter) return -1;
-
-    const isSenseLineMode = document.body.classList.contains('show-lines');
-    let idx = 0;
-
-    for (const child of activeChapter.children) {
-      if (typeof child.classList === 'undefined') continue;
-      const classes = child.classList;
-
-      if (classes.contains('pericope-header')) {
-        if (child === targetEl || child.contains(targetEl)) return idx;
-        idx++;
-        continue;
-      }
-
-      if (classes.contains('verse')) {
-        if (isSenseLineMode) {
-          const lines = Array.from(child.querySelectorAll(':scope > .line:not(.verse-diff)'));
-          for (const line of lines) {
-            if (line === targetEl || line.contains(targetEl)) return idx;
-            idx++;
-          }
-        } else {
-          const para = child.querySelector('.line-para');
-          if (para) {
-            if (para === targetEl || para.contains(targetEl)) return idx;
-            idx++;
-          }
-        }
-      }
-    }
-    return -1;
+    const owner = targetEl.closest?.('[data-line-index]');
+    if (!owner) return -1;
+    const n = parseInt(owner.getAttribute('data-line-index'), 10);
+    return Number.isFinite(n) ? n : -1;
   }
 
   /**
@@ -681,6 +646,7 @@ const NARRATION = (() => {
   }
 
   let chapterClickBound = false;
+  let chapterClickBoundEl = null;
 
   function bindChapterClick() {
     if (chapterClickBound) return;
@@ -688,22 +654,21 @@ const NARRATION = (() => {
                     || document.querySelector('.book-content:not([style*="display: none"])');
     if (!activeBook) return;
 
-    const activeChapter = activeBook.querySelector('.chapter-content.chapter-active')
-                       || activeBook.querySelector('.chapter-content');
-    if (!activeChapter) return;
-
-    activeChapter.addEventListener('click', onChapterClick);
+    // Bind at the book level — works across all chapters in a continuous-scroll book
+    activeBook.addEventListener('click', onChapterClick);
     chapterClickBound = true;
+    chapterClickBoundEl = activeBook;
 
-    // Add class so CSS can show pointer cursors
     document.body.classList.add('narration-clickable');
   }
 
   function unbindChapterClick() {
     if (!chapterClickBound) return;
     document.body.classList.remove('narration-clickable');
-    // We leave the listener attached since chapter may change;
-    // the handler checks manifest !== null before acting
+    if (chapterClickBoundEl) {
+      chapterClickBoundEl.removeEventListener('click', onChapterClick);
+      chapterClickBoundEl = null;
+    }
     chapterClickBound = false;
   }
 
@@ -780,62 +745,29 @@ const NARRATION = (() => {
     const el = findLineElement(lineInfo);
     if (el) {
       el.classList.add('narration-active');
-      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Only auto-scroll if the reader is still looking at the audio's chapter.
+      // If they've scrolled or navigated elsewhere, leave them be.
+      const at = getChapterAtViewport();
+      const followingAudio = at &&
+        at.bookId === manifest.book &&
+        at.chapter === manifest.chapter;
+      if (followingAudio) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     }
   }
 
   /**
-   * Find the DOM element corresponding to a timing manifest line entry.
-   * Uses lineIndex which maps to the order of .line and .pericope-header elements
-   * within the visible chapter.
+   * Find the DOM element corresponding to a timing manifest entry.
+   * Uses the manifest's own book/chapter to scope the lookup so that
+   * highlights stay in the audio's chapter even when the user navigates
+   * elsewhere in the book.
    */
   function findLineElement(lineInfo) {
-    const activeBook = document.querySelector('.book-content[style*="display: block"]')
-                    || document.querySelector('.book-content:not([style*="display: none"])');
-    if (!activeBook) return null;
-
-    const activeChapter = activeBook.querySelector('.chapter-content.chapter-active')
-                       || activeBook.querySelector('.chapter-content');
-    if (!activeChapter) return null;
-
-    const isSenseLineMode = document.body.classList.contains('show-lines');
-
-    // Build an ordered list of highlightable elements matching the generation order
-    let idx = 0;
-    for (const child of activeChapter.children) {
-      if (typeof child.classList === 'undefined') continue;
-      const classes = child.classList;
-
-      if (classes.contains('pericope-header')) {
-        if (idx === lineInfo.lineIndex) return child;
-        idx++;
-        continue;
-      }
-
-      if (classes.contains('verse')) {
-        if (isSenseLineMode) {
-          // Sense-line mode: each .line is a separate item.
-          // In Isaiah/KJV-quoting verses the DOM also contains a .line.verse-diff
-          // alternate that's only visible when the KJV-diff toggle is on; exclude it
-          // here so the highlight index matches the audio manifest (which only
-          // generates audio for the canonical .line / .line.verse-normal).
-          const lines = Array.from(child.querySelectorAll(':scope > .line:not(.verse-diff)'));
-          for (const line of lines) {
-            if (idx === lineInfo.lineIndex) return line;
-            idx++;
-          }
-        } else {
-          // Prose mode: use .line-para
-          const para = child.querySelector('.line-para');
-          if (para) {
-            if (idx === lineInfo.lineIndex) return para;
-            idx++;
-          }
-        }
-      }
-    }
-
-    return null;
+    if (!manifest) return null;
+    const chapterDiv = document.getElementById(`ch-${manifest.book}-${manifest.chapter}`);
+    if (!chapterDiv) return null;
+    return chapterDiv.querySelector(`[data-line-index="${lineInfo.lineIndex}"]`);
   }
 
   function clearHighlight() {
