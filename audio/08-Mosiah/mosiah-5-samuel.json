@@ -1,0 +1,680 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 5,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 260.3,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.644,
+      "type": "line",
+      "text": "And now, it came to pass that when king Benjamin had thus spoken to his people,",
+      "verse": "5:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.824,
+      "end": 8.075,
+      "type": "line",
+      "text": "he sent among them, desiring to know of his people",
+      "verse": "5:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 8.255,
+      "end": 11.97,
+      "type": "line",
+      "text": "if they believed the words which he had spoken unto them.",
+      "verse": "5:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 12.65,
+      "end": 14.879,
+      "type": "line",
+      "text": "And they all cried with one voice, saying:",
+      "verse": "5:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.059,
+      "end": 18.728,
+      "type": "line",
+      "text": "Yea, we believe all the words which thou hast spoken unto us;",
+      "verse": "5:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 18.908,
+      "end": 25.735,
+      "type": "line",
+      "text": "and also, we know of their surety and truth, because of the Spirit of the Lord Omnipotent,",
+      "verse": "5:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.915,
+      "end": 29.584,
+      "type": "line",
+      "text": "which has wrought a mighty change in us, or in our hearts,",
+      "verse": "5:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 29.764,
+      "end": 32.783,
+      "type": "line",
+      "text": "that we have no more disposition to do evil,",
+      "verse": "5:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 32.963,
+      "end": 34.635,
+      "type": "line",
+      "text": "but to do good continually.",
+      "verse": "5:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 35.315,
+      "end": 39.587,
+      "type": "line",
+      "text": "And we, ourselves, also, through the infinite goodness of God,",
+      "verse": "5:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 39.767,
+      "end": 42.135,
+      "type": "line",
+      "text": "and the manifestations of his Spirit,",
+      "verse": "5:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 42.315,
+      "end": 44.776,
+      "type": "line",
+      "text": "have great views of that which is to come;",
+      "verse": "5:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 44.956,
+      "end": 48.3,
+      "type": "line",
+      "text": "and were it expedient, we could prophesy of all things.",
+      "verse": "5:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 48.98,
+      "end": 51.256,
+      "type": "line",
+      "text": "And it is the faith which we have had",
+      "verse": "5:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 51.436,
+      "end": 54.501,
+      "type": "line",
+      "text": "on the things which our king has spoken unto us",
+      "verse": "5:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 54.681,
+      "end": 57.189,
+      "type": "line",
+      "text": "that has brought us to this great knowledge,",
+      "verse": "5:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 57.369,
+      "end": 60.759,
+      "type": "line",
+      "text": "whereby we do rejoice with such exceedingly great joy.",
+      "verse": "5:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 61.439,
+      "end": 65.34,
+      "type": "line",
+      "text": "And we are willing to enter into a covenant with our God",
+      "verse": "5:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 65.52,
+      "end": 66.96,
+      "type": "line",
+      "text": "to do his will,",
+      "verse": "5:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 67.14,
+      "end": 69.555,
+      "type": "line",
+      "text": "and to be obedient to his commandments",
+      "verse": "5:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 69.735,
+      "end": 72.429,
+      "type": "line",
+      "text": "in all things that he shall command us,",
+      "verse": "5:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 72.609,
+      "end": 74.745,
+      "type": "line",
+      "text": "all the remainder of our days,",
+      "verse": "5:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 74.925,
+      "end": 79.058,
+      "type": "line",
+      "text": "that we may not bring upon ourselves a never-ending torment,",
+      "verse": "5:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 79.238,
+      "end": 81.467,
+      "type": "line",
+      "text": "as has been spoken by the angel,",
+      "verse": "5:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 81.647,
+      "end": 85.084,
+      "type": "line",
+      "text": "that we may not drink out of the cup of the wrath of God.",
+      "verse": "5:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 85.764,
+      "end": 90.129,
+      "type": "line",
+      "text": "And now, these are the words which king Benjamin desired of them;",
+      "verse": "5:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 90.309,
+      "end": 92.445,
+      "type": "line",
+      "text": "and therefore he said unto them:",
+      "verse": "5:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 92.625,
+      "end": 94.854,
+      "type": "line",
+      "text": "Ye have spoken the words that I desired;",
+      "verse": "5:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 95.034,
+      "end": 98.703,
+      "type": "line",
+      "text": "and the covenant which ye have made is a righteous covenant.",
+      "verse": "5:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 99.383,
+      "end": 102.634,
+      "type": "line",
+      "text": "And now, because of the covenant which ye have made",
+      "verse": "5:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 102.814,
+      "end": 105.182,
+      "type": "line",
+      "text": "ye shall be called the children of Christ,",
+      "verse": "5:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 105.362,
+      "end": 107.405,
+      "type": "line",
+      "text": "his sons, and his daughters;",
+      "verse": "5:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 107.585,
+      "end": 111.161,
+      "type": "line",
+      "text": "for behold, this day he hath spiritually begotten you;",
+      "verse": "5:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 111.341,
+      "end": 115.01,
+      "type": "line",
+      "text": "for ye say that your hearts are changed through faith on his name;",
+      "verse": "5:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 115.19,
+      "end": 117.233,
+      "type": "line",
+      "text": "therefore, ye are born of him",
+      "verse": "5:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 117.413,
+      "end": 119.874,
+      "type": "line",
+      "text": "and have become his sons and his daughters.",
+      "verse": "5:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 120.554,
+      "end": 122.922,
+      "type": "line",
+      "text": "And under this head ye are made free,",
+      "verse": "5:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 123.102,
+      "end": 126.353,
+      "type": "line",
+      "text": "and there is no other head whereby ye can be made free.",
+      "verse": "5:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 126.533,
+      "end": 130.155,
+      "type": "line",
+      "text": "There is no other name given whereby salvation cometh;",
+      "verse": "5:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 130.335,
+      "end": 134.097,
+      "type": "line",
+      "text": "therefore, I would that ye should take upon you the name of Christ,",
+      "verse": "5:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 134.277,
+      "end": 137.574,
+      "type": "line",
+      "text": "all you that have entered into the covenant with God",
+      "verse": "5:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 137.754,
+      "end": 140.726,
+      "type": "line",
+      "text": "that ye should be obedient unto the end of your lives.",
+      "verse": "5:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 141.406,
+      "end": 143.264,
+      "type": "line",
+      "text": "And it shall come to pass",
+      "verse": "5:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 143.444,
+      "end": 147.345,
+      "type": "line",
+      "text": "whosoever doeth this shall be found at the right hand of God,",
+      "verse": "5:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 147.525,
+      "end": 150.683,
+      "type": "line",
+      "text": "for he shall know the name by which he is called;",
+      "verse": "5:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 150.863,
+      "end": 153.742,
+      "type": "line",
+      "text": "for he shall be called by the name of Christ.",
+      "verse": "5:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 154.422,
+      "end": 156.372,
+      "type": "line",
+      "text": "And now it shall come to pass",
+      "verse": "5:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 156.552,
+      "end": 159.756,
+      "type": "line",
+      "text": "whosoever shall not take upon him the name of Christ",
+      "verse": "5:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 159.936,
+      "end": 162.119,
+      "type": "line",
+      "text": "must be called by some other name;",
+      "verse": "5:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 162.299,
+      "end": 165.41,
+      "type": "line",
+      "text": "therefore, he findeth himself on the left hand of God.",
+      "verse": "5:10",
+      "lineIndex": 51
+    },
+    {
+      "start": 166.09,
+      "end": 168.458,
+      "type": "line",
+      "text": "And I would that ye should remember also,",
+      "verse": "5:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 168.638,
+      "end": 171.842,
+      "type": "line",
+      "text": "that this is the name that I said I should give unto you",
+      "verse": "5:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 172.022,
+      "end": 174.669,
+      "type": "line",
+      "text": "that never should be blotted out,",
+      "verse": "5:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 174.849,
+      "end": 176.985,
+      "type": "line",
+      "text": "except it be through transgression;",
+      "verse": "5:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 177.165,
+      "end": 179.859,
+      "type": "line",
+      "text": "therefore, take heed that ye do not transgress,",
+      "verse": "5:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 180.039,
+      "end": 182.779,
+      "type": "line",
+      "text": "that the name be not blotted out of your hearts.",
+      "verse": "5:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 183.459,
+      "end": 184.945,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 185.125,
+      "end": 187.122,
+      "type": "line",
+      "text": "I would that ye should remember",
+      "verse": "5:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 187.302,
+      "end": 189.949,
+      "type": "line",
+      "text": "to retain the name written always in your hearts,",
+      "verse": "5:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 190.129,
+      "end": 193.055,
+      "type": "line",
+      "text": "that ye are not found on the left hand of God,",
+      "verse": "5:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 193.235,
+      "end": 197.415,
+      "type": "line",
+      "text": "but that ye hear and know the voice by which ye shall be called,",
+      "verse": "5:12",
+      "lineIndex": 62
+    },
+    {
+      "start": 197.595,
+      "end": 200.056,
+      "type": "line",
+      "text": "and also, the name by which he shall call you.",
+      "verse": "5:12",
+      "lineIndex": 63
+    },
+    {
+      "start": 200.736,
+      "end": 204.219,
+      "type": "line",
+      "text": "For how knoweth a man the master whom he has not served,",
+      "verse": "5:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 204.399,
+      "end": 206.721,
+      "type": "line",
+      "text": "and who is a stranger unto him,",
+      "verse": "5:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 206.901,
+      "end": 210.338,
+      "type": "line",
+      "text": "and is far from the thoughts and intents of his heart?",
+      "verse": "5:13",
+      "lineIndex": 66
+    },
+    {
+      "start": 211.018,
+      "end": 215.523,
+      "type": "line",
+      "text": "And again, doth a man take an ass which belongeth to his neighbor, and keep him?",
+      "verse": "5:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 215.703,
+      "end": 217.189,
+      "type": "line",
+      "text": "I say unto you, Nay;",
+      "verse": "5:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 217.369,
+      "end": 220.991,
+      "type": "line",
+      "text": "he will not even suffer that he shall feed among his flocks,",
+      "verse": "5:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 221.171,
+      "end": 222.75,
+      "type": "line",
+      "text": "but will drive him away,",
+      "verse": "5:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 222.93,
+      "end": 224.416,
+      "type": "line",
+      "text": "and cast him out.",
+      "verse": "5:14",
+      "lineIndex": 71
+    },
+    {
+      "start": 224.596,
+      "end": 227.661,
+      "type": "line",
+      "text": "I say unto you, that even so shall it be among you",
+      "verse": "5:14",
+      "lineIndex": 72
+    },
+    {
+      "start": 227.841,
+      "end": 230.906,
+      "type": "line",
+      "text": "if ye know not the name by which ye are called.",
+      "verse": "5:14",
+      "lineIndex": 73
+    },
+    {
+      "start": 231.586,
+      "end": 235.905,
+      "type": "line",
+      "text": "Therefore, I would that ye should be steadfast and immovable,",
+      "verse": "5:15",
+      "lineIndex": 74
+    },
+    {
+      "start": 236.085,
+      "end": 238.314,
+      "type": "line",
+      "text": "always abounding in good works,",
+      "verse": "5:15",
+      "lineIndex": 75
+    },
+    {
+      "start": 238.494,
+      "end": 239.748,
+      "type": "line",
+      "text": "that Christ,",
+      "verse": "5:15",
+      "lineIndex": 76
+    },
+    {
+      "start": 239.928,
+      "end": 241.786,
+      "type": "line",
+      "text": "the Lord God Omnipotent,",
+      "verse": "5:15",
+      "lineIndex": 77
+    },
+    {
+      "start": 241.966,
+      "end": 243.591,
+      "type": "line",
+      "text": "may seal you his,",
+      "verse": "5:15",
+      "lineIndex": 78
+    },
+    {
+      "start": 243.771,
+      "end": 245.861,
+      "type": "line",
+      "text": "that you may be brought to heaven,",
+      "verse": "5:15",
+      "lineIndex": 79
+    },
+    {
+      "start": 246.041,
+      "end": 253.007,
+      "type": "line",
+      "text": "that ye may have everlasting salvation and eternal life, through the wisdom, and power, and justice, and mercy",
+      "verse": "5:15",
+      "lineIndex": 80
+    },
+    {
+      "start": 253.187,
+      "end": 256.809,
+      "type": "line",
+      "text": "of him who created all things, in heaven and in earth,",
+      "verse": "5:15",
+      "lineIndex": 81
+    },
+    {
+      "start": 256.989,
+      "end": 258.614,
+      "type": "line",
+      "text": "who is God above all.",
+      "verse": "5:15",
+      "lineIndex": 82
+    },
+    {
+      "start": 258.794,
+      "end": 259.63,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "5:15",
+      "lineIndex": 83
+    }
+  ]
+}

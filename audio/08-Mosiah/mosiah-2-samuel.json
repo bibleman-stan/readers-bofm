@@ -1,0 +1,1840 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 2,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 758.021,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.737,
+      "type": "line",
+      "text": "And it came to pass that after Mosiah had done as his father had commanded him,",
+      "verse": "2:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.917,
+      "end": 8.168,
+      "type": "line",
+      "text": "and had made a proclamation throughout all the land,",
+      "verse": "2:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 8.348,
+      "end": 12.388,
+      "type": "line",
+      "text": "that the people gathered themselves together throughout all the land,",
+      "verse": "2:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 12.568,
+      "end": 15.308,
+      "type": "line",
+      "text": "that they might go up to the temple to hear the words",
+      "verse": "2:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.488,
+      "end": 17.996,
+      "type": "line",
+      "text": "which king Benjamin should speak unto them.",
+      "verse": "2:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 18.676,
+      "end": 20.719,
+      "type": "line",
+      "text": "And there were a great number,",
+      "verse": "2:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 20.899,
+      "end": 23.639,
+      "type": "line",
+      "text": "even so many that they did not number them;",
+      "verse": "2:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 23.819,
+      "end": 26.002,
+      "type": "line",
+      "text": "for they had multiplied exceedingly",
+      "verse": "2:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 26.182,
+      "end": 27.993,
+      "type": "line",
+      "text": "and waxed great in the land.",
+      "verse": "2:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 28.673,
+      "end": 31.784,
+      "type": "line",
+      "text": "And they also took of the firstlings of their flocks,",
+      "verse": "2:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 31.964,
+      "end": 37.63,
+      "type": "line",
+      "text": "that they might offer sacrifice and burnt offerings according to the law of Moses;",
+      "verse": "2:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 38.31,
+      "end": 41.189,
+      "type": "line",
+      "text": "And also that they might give thanks to the Lord their God,",
+      "verse": "2:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 41.369,
+      "end": 44.852,
+      "type": "line",
+      "text": "who had brought them out of the land of Jerusalem,",
+      "verse": "2:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 45.032,
+      "end": 48.654,
+      "type": "line",
+      "text": "and who had delivered them out of the hands of their enemies,",
+      "verse": "2:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 48.834,
+      "end": 55.011,
+      "type": "line",
+      "text": "and had appointed just men to be their teachers, and also a just man to be their king,",
+      "verse": "2:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 55.191,
+      "end": 58.163,
+      "type": "line",
+      "text": "who had established peace in the land of Zarahemla,",
+      "verse": "2:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 58.343,
+      "end": 61.454,
+      "type": "line",
+      "text": "and who had taught them to keep the commandments of God,",
+      "verse": "2:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 61.634,
+      "end": 63.538,
+      "type": "line",
+      "text": "that they might rejoice",
+      "verse": "2:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 63.718,
+      "end": 66.783,
+      "type": "line",
+      "text": "and be filled with love towards God and all men.",
+      "verse": "2:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 67.463,
+      "end": 70.667,
+      "type": "line",
+      "text": "And it came to pass that when they came up to the temple,",
+      "verse": "2:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 70.847,
+      "end": 73.448,
+      "type": "line",
+      "text": "they pitched their tents round about,",
+      "verse": "2:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 73.628,
+      "end": 75.811,
+      "type": "line",
+      "text": "every man according to his family,",
+      "verse": "2:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 75.991,
+      "end": 79.66,
+      "type": "line",
+      "text": "consisting of his wife, and his sons, and his daughters,",
+      "verse": "2:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 79.84,
+      "end": 83.88,
+      "type": "line",
+      "text": "and their sons, and their daughters, from the eldest down to the youngest,",
+      "verse": "2:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 84.06,
+      "end": 87.218,
+      "type": "line",
+      "text": "every family being separate one from another.",
+      "verse": "2:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 87.898,
+      "end": 91.009,
+      "type": "line",
+      "text": "And they pitched their tents round about the temple,",
+      "verse": "2:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 91.189,
+      "end": 95.833,
+      "type": "line",
+      "text": "every man having his tent with the door thereof towards the temple,",
+      "verse": "2:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 96.013,
+      "end": 99.124,
+      "type": "line",
+      "text": "that thereby they might remain in their tents",
+      "verse": "2:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 99.304,
+      "end": 103.112,
+      "type": "line",
+      "text": "and hear the words which king Benjamin should speak unto them;",
+      "verse": "2:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 103.792,
+      "end": 106.16,
+      "type": "line",
+      "text": "For the multitude being so great",
+      "verse": "2:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 106.34,
+      "end": 108.987,
+      "type": "line",
+      "text": "that king Benjamin could not teach them all",
+      "verse": "2:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 109.167,
+      "end": 111.582,
+      "type": "line",
+      "text": "within the walls of the temple,",
+      "verse": "2:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 111.762,
+      "end": 114.409,
+      "type": "line",
+      "text": "therefore he caused a tower to be erected,",
+      "verse": "2:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 114.589,
+      "end": 119.605,
+      "type": "line",
+      "text": "that thereby his people might hear the words which he should speak unto them.",
+      "verse": "2:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 120.285,
+      "end": 124.279,
+      "type": "line",
+      "text": "And it came to pass that he began to speak to his people from the tower;",
+      "verse": "2:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 124.459,
+      "end": 129.521,
+      "type": "line",
+      "text": "and they could not all hear his words because of the greatness of the multitude;",
+      "verse": "2:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 129.701,
+      "end": 133.927,
+      "type": "line",
+      "text": "therefore he caused that the words which he spake should be written",
+      "verse": "2:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 134.107,
+      "end": 138.658,
+      "type": "line",
+      "text": "and sent forth among those that were not under the sound of his voice,",
+      "verse": "2:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 138.838,
+      "end": 141.532,
+      "type": "line",
+      "text": "that they might also receive his words.",
+      "verse": "2:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 142.212,
+      "end": 147.135,
+      "type": "line",
+      "text": "And these are the words which he spake and caused to be written, saying:",
+      "verse": "2:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 147.315,
+      "end": 148.522,
+      "type": "line",
+      "text": "My brethren,",
+      "verse": "2:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 148.702,
+      "end": 151.628,
+      "type": "line",
+      "text": "all ye that have assembled yourselves together,",
+      "verse": "2:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 151.808,
+      "end": 155.802,
+      "type": "line",
+      "text": "you that can hear my words which I shall speak unto you this day;",
+      "verse": "2:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 155.982,
+      "end": 158.629,
+      "type": "line",
+      "text": "for I have not commanded you to come up hither",
+      "verse": "2:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 158.809,
+      "end": 161.781,
+      "type": "line",
+      "text": "to trifle with the words which I shall speak,",
+      "verse": "2:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 161.961,
+      "end": 164.283,
+      "type": "line",
+      "text": "but that you should hearken unto me,",
+      "verse": "2:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 164.463,
+      "end": 166.924,
+      "type": "line",
+      "text": "and open your ears that ye may hear,",
+      "verse": "2:9",
+      "lineIndex": 49
+    },
+    {
+      "start": 167.104,
+      "end": 169.565,
+      "type": "line",
+      "text": "and your hearts that ye may understand,",
+      "verse": "2:9",
+      "lineIndex": 50
+    },
+    {
+      "start": 169.745,
+      "end": 174.389,
+      "type": "line",
+      "text": "and your minds that the mysteries of God may be unfolded to your view.",
+      "verse": "2:9",
+      "lineIndex": 51
+    },
+    {
+      "start": 175.069,
+      "end": 178.831,
+      "type": "line",
+      "text": "I have not commanded you to come up hither that ye should fear me,",
+      "verse": "2:10",
+      "lineIndex": 52
+    },
+    {
+      "start": 179.011,
+      "end": 183.748,
+      "type": "line",
+      "text": "or that ye should think that I of myself am more than a mortal man.",
+      "verse": "2:10",
+      "lineIndex": 53
+    },
+    {
+      "start": 184.428,
+      "end": 186.611,
+      "type": "line",
+      "text": "But I am like as yourselves,",
+      "verse": "2:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 186.791,
+      "end": 190.088,
+      "type": "line",
+      "text": "subject to all manner of infirmities in body and mind;",
+      "verse": "2:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 190.268,
+      "end": 192.683,
+      "type": "line",
+      "text": "yet I have been chosen by this people,",
+      "verse": "2:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 192.863,
+      "end": 194.999,
+      "type": "line",
+      "text": "and consecrated by my father,",
+      "verse": "2:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 195.179,
+      "end": 197.78,
+      "type": "line",
+      "text": "and was suffered by the hand of the Lord",
+      "verse": "2:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 197.96,
+      "end": 201.257,
+      "type": "line",
+      "text": "that I should be a ruler and a king over this people;",
+      "verse": "2:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 201.437,
+      "end": 204.734,
+      "type": "line",
+      "text": "and have been kept and preserved by his matchless power,",
+      "verse": "2:11",
+      "lineIndex": 60
+    },
+    {
+      "start": 204.914,
+      "end": 208.211,
+      "type": "line",
+      "text": "to serve you with all the might, mind and strength",
+      "verse": "2:11",
+      "lineIndex": 61
+    },
+    {
+      "start": 208.391,
+      "end": 210.713,
+      "type": "line",
+      "text": "which the Lord hath granted unto me.",
+      "verse": "2:11",
+      "lineIndex": 62
+    },
+    {
+      "start": 211.393,
+      "end": 214.133,
+      "type": "line",
+      "text": "I say unto you that as I have been suffered",
+      "verse": "2:12",
+      "lineIndex": 63
+    },
+    {
+      "start": 214.313,
+      "end": 218.307,
+      "type": "line",
+      "text": "to spend my days in your service, even up to this time,",
+      "verse": "2:12",
+      "lineIndex": 64
+    },
+    {
+      "start": 218.487,
+      "end": 220.995,
+      "type": "line",
+      "text": "and have not sought gold nor silver",
+      "verse": "2:12",
+      "lineIndex": 65
+    },
+    {
+      "start": 221.175,
+      "end": 223.636,
+      "type": "line",
+      "text": "nor any manner of riches of you;",
+      "verse": "2:12",
+      "lineIndex": 66
+    },
+    {
+      "start": 224.316,
+      "end": 227.799,
+      "type": "line",
+      "text": "Neither have I suffered that ye should be confined in dungeons,",
+      "verse": "2:13",
+      "lineIndex": 67
+    },
+    {
+      "start": 227.979,
+      "end": 231.137,
+      "type": "line",
+      "text": "nor that ye should make slaves one of another,",
+      "verse": "2:13",
+      "lineIndex": 68
+    },
+    {
+      "start": 231.317,
+      "end": 235.915,
+      "type": "line",
+      "text": "nor that ye should murder, or plunder, or steal, or commit adultery;",
+      "verse": "2:13",
+      "lineIndex": 69
+    },
+    {
+      "start": 236.095,
+      "end": 240.507,
+      "type": "line",
+      "text": "nor even have I suffered that ye should commit any manner of wickedness,",
+      "verse": "2:13",
+      "lineIndex": 70
+    },
+    {
+      "start": 240.687,
+      "end": 244.959,
+      "type": "line",
+      "text": "and have taught you that ye should keep the commandments of the Lord,",
+      "verse": "2:13",
+      "lineIndex": 71
+    },
+    {
+      "start": 245.139,
+      "end": 247.786,
+      "type": "line",
+      "text": "in all things which he hath commanded you\u2014",
+      "verse": "2:13",
+      "lineIndex": 72
+    },
+    {
+      "start": 248.466,
+      "end": 251.02,
+      "type": "line",
+      "text": "And even I, myself, have labored",
+      "verse": "2:14",
+      "lineIndex": 73
+    },
+    {
+      "start": 251.2,
+      "end": 254.311,
+      "type": "line",
+      "text": "with mine own hands that I might serve you,",
+      "verse": "2:14",
+      "lineIndex": 74
+    },
+    {
+      "start": 254.491,
+      "end": 256.999,
+      "type": "line",
+      "text": "and that ye should not be laden with taxes,",
+      "verse": "2:14",
+      "lineIndex": 75
+    },
+    {
+      "start": 257.179,
+      "end": 259.733,
+      "type": "line",
+      "text": "and that there should nothing come upon you",
+      "verse": "2:14",
+      "lineIndex": 76
+    },
+    {
+      "start": 259.913,
+      "end": 262.003,
+      "type": "line",
+      "text": "which was grievous to be borne\u2014",
+      "verse": "2:14",
+      "lineIndex": 77
+    },
+    {
+      "start": 262.183,
+      "end": 264.691,
+      "type": "line",
+      "text": "and of all these things which I have spoken,",
+      "verse": "2:14",
+      "lineIndex": 78
+    },
+    {
+      "start": 264.871,
+      "end": 267.1,
+      "type": "line",
+      "text": "ye yourselves are witnesses this day.",
+      "verse": "2:14",
+      "lineIndex": 79
+    },
+    {
+      "start": 267.78,
+      "end": 272.099,
+      "type": "line",
+      "text": "Yet, my brethren, I have not done these things that I might boast,",
+      "verse": "2:15",
+      "lineIndex": 80
+    },
+    {
+      "start": 272.279,
+      "end": 276.412,
+      "type": "line",
+      "text": "neither do I tell these things that thereby I might accuse you;",
+      "verse": "2:15",
+      "lineIndex": 81
+    },
+    {
+      "start": 276.592,
+      "end": 282.211,
+      "type": "line",
+      "text": "but I tell you these things that ye may know that I can answer a clear conscience before God this day.",
+      "verse": "2:15",
+      "lineIndex": 82
+    },
+    {
+      "start": 282.891,
+      "end": 285.724,
+      "type": "line",
+      "text": "Behold, I say unto you that because I said unto you",
+      "verse": "2:16",
+      "lineIndex": 83
+    },
+    {
+      "start": 285.904,
+      "end": 288.319,
+      "type": "line",
+      "text": "that I had spent my days in your service,",
+      "verse": "2:16",
+      "lineIndex": 84
+    },
+    {
+      "start": 288.499,
+      "end": 290.357,
+      "type": "line",
+      "text": "I do not desire to boast,",
+      "verse": "2:16",
+      "lineIndex": 85
+    },
+    {
+      "start": 290.537,
+      "end": 292.998,
+      "type": "line",
+      "text": "for I have only been in the service of God.",
+      "verse": "2:16",
+      "lineIndex": 86
+    },
+    {
+      "start": 293.678,
+      "end": 297.161,
+      "type": "line",
+      "text": "And behold, I tell you these things that ye may learn wisdom;",
+      "verse": "2:17",
+      "lineIndex": 87
+    },
+    {
+      "start": 297.341,
+      "end": 301.892,
+      "type": "line",
+      "text": "that ye may learn that when ye are in the service of your fellow beings",
+      "verse": "2:17",
+      "lineIndex": 88
+    },
+    {
+      "start": 302.072,
+      "end": 304.44,
+      "type": "line",
+      "text": "ye are only in the service of your God.",
+      "verse": "2:17",
+      "lineIndex": 89
+    },
+    {
+      "start": 305.12,
+      "end": 307.303,
+      "type": "line",
+      "text": "Behold, ye have called me your king;",
+      "verse": "2:18",
+      "lineIndex": 90
+    },
+    {
+      "start": 307.483,
+      "end": 309.759,
+      "type": "line",
+      "text": "and if I, whom ye call your king,",
+      "verse": "2:18",
+      "lineIndex": 91
+    },
+    {
+      "start": 309.939,
+      "end": 311.657,
+      "type": "line",
+      "text": "do labor to serve you,",
+      "verse": "2:18",
+      "lineIndex": 92
+    },
+    {
+      "start": 311.837,
+      "end": 314.995,
+      "type": "line",
+      "text": "then ought not ye to labor to serve one another?",
+      "verse": "2:18",
+      "lineIndex": 93
+    },
+    {
+      "start": 315.675,
+      "end": 319.39,
+      "type": "line",
+      "text": "And behold also, if I, whom ye call your king,",
+      "verse": "2:19",
+      "lineIndex": 94
+    },
+    {
+      "start": 319.57,
+      "end": 322.356,
+      "type": "line",
+      "text": "who has spent his days in your service,",
+      "verse": "2:19",
+      "lineIndex": 95
+    },
+    {
+      "start": 322.536,
+      "end": 325.23,
+      "type": "line",
+      "text": "and yet has been in the service of God,",
+      "verse": "2:19",
+      "lineIndex": 96
+    },
+    {
+      "start": 325.41,
+      "end": 327.314,
+      "type": "line",
+      "text": "do merit any thanks from you,",
+      "verse": "2:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 327.494,
+      "end": 329.955,
+      "type": "line",
+      "text": "O how you ought to thank your heavenly King!",
+      "verse": "2:19",
+      "lineIndex": 98
+    },
+    {
+      "start": 330.635,
+      "end": 332.4,
+      "type": "line",
+      "text": "I say unto you, my brethren,",
+      "verse": "2:20",
+      "lineIndex": 99
+    },
+    {
+      "start": 332.58,
+      "end": 335.691,
+      "type": "line",
+      "text": "that if you should render all the thanks and praise",
+      "verse": "2:20",
+      "lineIndex": 100
+    },
+    {
+      "start": 335.871,
+      "end": 338.332,
+      "type": "line",
+      "text": "which your whole soul has power to possess,",
+      "verse": "2:20",
+      "lineIndex": 101
+    },
+    {
+      "start": 338.512,
+      "end": 340.788,
+      "type": "line",
+      "text": "to that God who has created you,",
+      "verse": "2:20",
+      "lineIndex": 102
+    },
+    {
+      "start": 340.968,
+      "end": 343.011,
+      "type": "line",
+      "text": "and has kept and preserved you,",
+      "verse": "2:20",
+      "lineIndex": 103
+    },
+    {
+      "start": 343.191,
+      "end": 346.024,
+      "type": "line",
+      "text": "and has caused that ye should rejoice,",
+      "verse": "2:20",
+      "lineIndex": 104
+    },
+    {
+      "start": 346.204,
+      "end": 349.78,
+      "type": "line",
+      "text": "and has granted that ye should live in peace one with another\u2014",
+      "verse": "2:20",
+      "lineIndex": 105
+    },
+    {
+      "start": 350.46,
+      "end": 351.76,
+      "type": "line",
+      "text": "I say unto you",
+      "verse": "2:21",
+      "lineIndex": 106
+    },
+    {
+      "start": 351.94,
+      "end": 355.562,
+      "type": "line",
+      "text": "that if ye should serve him who has created you from the beginning,",
+      "verse": "2:21",
+      "lineIndex": 107
+    },
+    {
+      "start": 355.742,
+      "end": 359.271,
+      "type": "line",
+      "text": "and is preserving you from day to day, by lending you breath,",
+      "verse": "2:21",
+      "lineIndex": 108
+    },
+    {
+      "start": 359.451,
+      "end": 363.027,
+      "type": "line",
+      "text": "that ye may live and move and do according to your own will,",
+      "verse": "2:21",
+      "lineIndex": 109
+    },
+    {
+      "start": 363.207,
+      "end": 366.179,
+      "type": "line",
+      "text": "and even supporting you from one moment to another\u2014",
+      "verse": "2:21",
+      "lineIndex": 110
+    },
+    {
+      "start": 366.359,
+      "end": 369.656,
+      "type": "line",
+      "text": "I say, if ye should serve him with all your whole souls",
+      "verse": "2:21",
+      "lineIndex": 111
+    },
+    {
+      "start": 369.836,
+      "end": 372.39,
+      "type": "line",
+      "text": "yet ye would be unprofitable servants.",
+      "verse": "2:21",
+      "lineIndex": 112
+    },
+    {
+      "start": 373.07,
+      "end": 376.971,
+      "type": "line",
+      "text": "And behold, all that he requires of you is to keep his commandments;",
+      "verse": "2:22",
+      "lineIndex": 113
+    },
+    {
+      "start": 377.151,
+      "end": 380.866,
+      "type": "line",
+      "text": "and he has promised you that if ye would keep his commandments",
+      "verse": "2:22",
+      "lineIndex": 114
+    },
+    {
+      "start": 381.046,
+      "end": 383.322,
+      "type": "line",
+      "text": "ye should prosper in the land;",
+      "verse": "2:22",
+      "lineIndex": 115
+    },
+    {
+      "start": 383.502,
+      "end": 386.846,
+      "type": "line",
+      "text": "and he never doth vary from that which he hath said;",
+      "verse": "2:22",
+      "lineIndex": 116
+    },
+    {
+      "start": 387.026,
+      "end": 389.58,
+      "type": "line",
+      "text": "therefore, if ye do keep his commandments",
+      "verse": "2:22",
+      "lineIndex": 117
+    },
+    {
+      "start": 389.76,
+      "end": 392.082,
+      "type": "line",
+      "text": "he doth bless you and prosper you.",
+      "verse": "2:22",
+      "lineIndex": 118
+    },
+    {
+      "start": 392.762,
+      "end": 395.038,
+      "type": "line",
+      "text": "And now, in the first place,",
+      "verse": "2:23",
+      "lineIndex": 119
+    },
+    {
+      "start": 395.218,
+      "end": 396.89,
+      "type": "line",
+      "text": "he hath created you,",
+      "verse": "2:23",
+      "lineIndex": 120
+    },
+    {
+      "start": 397.07,
+      "end": 399.392,
+      "type": "line",
+      "text": "and granted unto you your lives,",
+      "verse": "2:23",
+      "lineIndex": 121
+    },
+    {
+      "start": 399.572,
+      "end": 402.126,
+      "type": "line",
+      "text": "for which ye are indebted unto him.",
+      "verse": "2:23",
+      "lineIndex": 122
+    },
+    {
+      "start": 402.806,
+      "end": 405.128,
+      "type": "line",
+      "text": "And secondly, he doth require",
+      "verse": "2:24",
+      "lineIndex": 123
+    },
+    {
+      "start": 405.308,
+      "end": 408.28,
+      "type": "line",
+      "text": "that ye should do as he hath commanded you;",
+      "verse": "2:24",
+      "lineIndex": 124
+    },
+    {
+      "start": 408.46,
+      "end": 409.993,
+      "type": "line",
+      "text": "for which if ye do,",
+      "verse": "2:24",
+      "lineIndex": 125
+    },
+    {
+      "start": 410.173,
+      "end": 411.938,
+      "type": "line",
+      "text": "he doth immediately bless you;",
+      "verse": "2:24",
+      "lineIndex": 126
+    },
+    {
+      "start": 412.118,
+      "end": 413.697,
+      "type": "line",
+      "text": "and therefore he hath paid you.",
+      "verse": "2:24",
+      "lineIndex": 127
+    },
+    {
+      "start": 413.877,
+      "end": 416.478,
+      "type": "line",
+      "text": "And ye are still indebted unto him,",
+      "verse": "2:24",
+      "lineIndex": 128
+    },
+    {
+      "start": 416.658,
+      "end": 419.63,
+      "type": "line",
+      "text": "and are, and will be, forever and ever;",
+      "verse": "2:24",
+      "lineIndex": 129
+    },
+    {
+      "start": 419.81,
+      "end": 422.225,
+      "type": "line",
+      "text": "therefore, of what have ye to boast?",
+      "verse": "2:24",
+      "lineIndex": 130
+    },
+    {
+      "start": 422.905,
+      "end": 424.159,
+      "type": "line",
+      "text": "And now I ask,",
+      "verse": "2:25",
+      "lineIndex": 131
+    },
+    {
+      "start": 424.339,
+      "end": 426.289,
+      "type": "line",
+      "text": "can ye say aught of yourselves?",
+      "verse": "2:25",
+      "lineIndex": 132
+    },
+    {
+      "start": 426.469,
+      "end": 427.769,
+      "type": "line",
+      "text": "I answer you, Nay.",
+      "verse": "2:25",
+      "lineIndex": 133
+    },
+    {
+      "start": 427.949,
+      "end": 431.757,
+      "type": "line",
+      "text": "Ye cannot say that ye are even as much as the dust of the earth;",
+      "verse": "2:25",
+      "lineIndex": 134
+    },
+    {
+      "start": 431.937,
+      "end": 434.816,
+      "type": "line",
+      "text": "yet ye were created of the dust of the earth;",
+      "verse": "2:25",
+      "lineIndex": 135
+    },
+    {
+      "start": 434.996,
+      "end": 438.2,
+      "type": "line",
+      "text": "but behold, it belongeth to him who created you.",
+      "verse": "2:25",
+      "lineIndex": 136
+    },
+    {
+      "start": 438.88,
+      "end": 443.803,
+      "type": "line",
+      "text": "And I, even I, whom ye call your king, am no better than ye yourselves are;",
+      "verse": "2:26",
+      "lineIndex": 137
+    },
+    {
+      "start": 443.983,
+      "end": 445.98,
+      "type": "line",
+      "text": "for I am also of the dust.",
+      "verse": "2:26",
+      "lineIndex": 138
+    },
+    {
+      "start": 446.16,
+      "end": 448.203,
+      "type": "line",
+      "text": "And ye behold that I am old,",
+      "verse": "2:26",
+      "lineIndex": 139
+    },
+    {
+      "start": 448.383,
+      "end": 452.609,
+      "type": "line",
+      "text": "and am about to yield up this mortal frame to its mother earth.",
+      "verse": "2:26",
+      "lineIndex": 140
+    },
+    {
+      "start": 453.289,
+      "end": 456.772,
+      "type": "line",
+      "text": "Therefore, as I said unto you that I had served you,",
+      "verse": "2:27",
+      "lineIndex": 142
+    },
+    {
+      "start": 456.952,
+      "end": 459.646,
+      "type": "line",
+      "text": "walking with a clear conscience before God,",
+      "verse": "2:27",
+      "lineIndex": 143
+    },
+    {
+      "start": 459.826,
+      "end": 464.795,
+      "type": "line",
+      "text": "even so I at this time have caused that ye should assemble yourselves together,",
+      "verse": "2:27",
+      "lineIndex": 144
+    },
+    {
+      "start": 464.975,
+      "end": 466.925,
+      "type": "line",
+      "text": "that I might be found blameless,",
+      "verse": "2:27",
+      "lineIndex": 145
+    },
+    {
+      "start": 467.105,
+      "end": 469.473,
+      "type": "line",
+      "text": "and that your blood should not come upon me,",
+      "verse": "2:27",
+      "lineIndex": 146
+    },
+    {
+      "start": 469.653,
+      "end": 473.275,
+      "type": "line",
+      "text": "when I shall stand to be judged of God of the things",
+      "verse": "2:27",
+      "lineIndex": 147
+    },
+    {
+      "start": 473.455,
+      "end": 476.009,
+      "type": "line",
+      "text": "whereof he hath commanded me concerning you.",
+      "verse": "2:27",
+      "lineIndex": 148
+    },
+    {
+      "start": 476.689,
+      "end": 481.24,
+      "type": "line",
+      "text": "I say unto you that I have caused that ye should assemble yourselves together",
+      "verse": "2:28",
+      "lineIndex": 149
+    },
+    {
+      "start": 481.42,
+      "end": 484.206,
+      "type": "line",
+      "text": "that I might rid my garments of your blood,",
+      "verse": "2:28",
+      "lineIndex": 150
+    },
+    {
+      "start": 484.386,
+      "end": 488.333,
+      "type": "line",
+      "text": "at this period of time when I am about to go down to my grave,",
+      "verse": "2:28",
+      "lineIndex": 151
+    },
+    {
+      "start": 488.513,
+      "end": 490.603,
+      "type": "line",
+      "text": "that I might go down in peace,",
+      "verse": "2:28",
+      "lineIndex": 152
+    },
+    {
+      "start": 490.783,
+      "end": 494.173,
+      "type": "line",
+      "text": "and my immortal spirit may join the choirs above",
+      "verse": "2:28",
+      "lineIndex": 153
+    },
+    {
+      "start": 494.353,
+      "end": 496.582,
+      "type": "line",
+      "text": "in singing the praises of a just God.",
+      "verse": "2:28",
+      "lineIndex": 154
+    },
+    {
+      "start": 497.262,
+      "end": 499.166,
+      "type": "line",
+      "text": "And moreover, I say unto you",
+      "verse": "2:29",
+      "lineIndex": 155
+    },
+    {
+      "start": 499.346,
+      "end": 503.247,
+      "type": "line",
+      "text": "that I have caused that ye should assemble yourselves together,",
+      "verse": "2:29",
+      "lineIndex": 156
+    },
+    {
+      "start": 503.427,
+      "end": 508.303,
+      "type": "line",
+      "text": "that I might declare unto you that I can no longer be your teacher, nor your king;",
+      "verse": "2:29",
+      "lineIndex": 157
+    },
+    {
+      "start": 508.983,
+      "end": 510.655,
+      "type": "line",
+      "text": "For even at this time,",
+      "verse": "2:30",
+      "lineIndex": 158
+    },
+    {
+      "start": 510.835,
+      "end": 515.99,
+      "type": "line",
+      "text": "my whole frame doth tremble exceedingly while attempting to speak unto you;",
+      "verse": "2:30",
+      "lineIndex": 159
+    },
+    {
+      "start": 516.17,
+      "end": 518.26,
+      "type": "line",
+      "text": "but the Lord God doth support me,",
+      "verse": "2:30",
+      "lineIndex": 160
+    },
+    {
+      "start": 518.44,
+      "end": 521.459,
+      "type": "line",
+      "text": "and hath suffered me that I should speak unto you,",
+      "verse": "2:30",
+      "lineIndex": 161
+    },
+    {
+      "start": 521.639,
+      "end": 528.373,
+      "type": "line",
+      "text": "and hath commanded me that I should declare unto you this day, that my son Mosiah is a king and a ruler over you.",
+      "verse": "2:30",
+      "lineIndex": 162
+    },
+    {
+      "start": 529.053,
+      "end": 530.353,
+      "type": "line",
+      "text": "And now, my brethren,",
+      "verse": "2:31",
+      "lineIndex": 164
+    },
+    {
+      "start": 530.533,
+      "end": 533.737,
+      "type": "line",
+      "text": "I would that ye should do as ye have hitherto done.",
+      "verse": "2:31",
+      "lineIndex": 165
+    },
+    {
+      "start": 533.917,
+      "end": 536.146,
+      "type": "line",
+      "text": "As ye have kept my commandments,",
+      "verse": "2:31",
+      "lineIndex": 166
+    },
+    {
+      "start": 536.326,
+      "end": 538.741,
+      "type": "line",
+      "text": "and also the commandments of my father,",
+      "verse": "2:31",
+      "lineIndex": 167
+    },
+    {
+      "start": 538.921,
+      "end": 544.076,
+      "type": "line",
+      "text": "and have prospered, and have been kept from falling into the hands of your enemies,",
+      "verse": "2:31",
+      "lineIndex": 168
+    },
+    {
+      "start": 544.256,
+      "end": 547.693,
+      "type": "line",
+      "text": "even so if ye shall keep the commandments of my son,",
+      "verse": "2:31",
+      "lineIndex": 169
+    },
+    {
+      "start": 547.873,
+      "end": 552.192,
+      "type": "line",
+      "text": "or the commandments of God which shall be delivered unto you by him,",
+      "verse": "2:31",
+      "lineIndex": 170
+    },
+    {
+      "start": 552.372,
+      "end": 554.369,
+      "type": "line",
+      "text": "ye shall prosper in the land,",
+      "verse": "2:31",
+      "lineIndex": 171
+    },
+    {
+      "start": 554.549,
+      "end": 557.243,
+      "type": "line",
+      "text": "and your enemies shall have no power over you.",
+      "verse": "2:31",
+      "lineIndex": 172
+    },
+    {
+      "start": 557.923,
+      "end": 559.363,
+      "type": "line",
+      "text": "But, O my people,",
+      "verse": "2:32",
+      "lineIndex": 173
+    },
+    {
+      "start": 559.543,
+      "end": 563.072,
+      "type": "line",
+      "text": "beware lest there shall arise contentions among you,",
+      "verse": "2:32",
+      "lineIndex": 174
+    },
+    {
+      "start": 563.252,
+      "end": 565.667,
+      "type": "line",
+      "text": "and ye list to obey the evil spirit,",
+      "verse": "2:32",
+      "lineIndex": 175
+    },
+    {
+      "start": 565.847,
+      "end": 568.587,
+      "type": "line",
+      "text": "which was spoken of by my father Mosiah.",
+      "verse": "2:32",
+      "lineIndex": 176
+    },
+    {
+      "start": 569.267,
+      "end": 574.468,
+      "type": "line",
+      "text": "For behold, there is a wo pronounced upon him who listeth to obey that spirit;",
+      "verse": "2:33",
+      "lineIndex": 177
+    },
+    {
+      "start": 574.648,
+      "end": 576.97,
+      "type": "line",
+      "text": "for if he listeth to obey him,",
+      "verse": "2:33",
+      "lineIndex": 178
+    },
+    {
+      "start": 577.15,
+      "end": 579.658,
+      "type": "line",
+      "text": "and remaineth and dieth in his sins,",
+      "verse": "2:33",
+      "lineIndex": 179
+    },
+    {
+      "start": 579.838,
+      "end": 582.717,
+      "type": "line",
+      "text": "the same drinketh damnation to his own soul;",
+      "verse": "2:33",
+      "lineIndex": 180
+    },
+    {
+      "start": 582.897,
+      "end": 586.612,
+      "type": "line",
+      "text": "for he receiveth for his wages an everlasting punishment,",
+      "verse": "2:33",
+      "lineIndex": 181
+    },
+    {
+      "start": 586.792,
+      "end": 591.111,
+      "type": "line",
+      "text": "having transgressed the law of God contrary to his own knowledge.",
+      "verse": "2:33",
+      "lineIndex": 182
+    },
+    {
+      "start": 591.791,
+      "end": 594.624,
+      "type": "line",
+      "text": "I say unto you, that there are not any among you,",
+      "verse": "2:34",
+      "lineIndex": 183
+    },
+    {
+      "start": 594.804,
+      "end": 597.405,
+      "type": "line",
+      "text": "except it be your little children",
+      "verse": "2:34",
+      "lineIndex": 184
+    },
+    {
+      "start": 597.585,
+      "end": 600.696,
+      "type": "line",
+      "text": "that have not been taught concerning these things,",
+      "verse": "2:34",
+      "lineIndex": 185
+    },
+    {
+      "start": 600.876,
+      "end": 605.52,
+      "type": "line",
+      "text": "but what knoweth that ye are eternally indebted to your heavenly Father,",
+      "verse": "2:34",
+      "lineIndex": 186
+    },
+    {
+      "start": 605.7,
+      "end": 608.44,
+      "type": "line",
+      "text": "to render to him all that you have and are;",
+      "verse": "2:34",
+      "lineIndex": 187
+    },
+    {
+      "start": 608.62,
+      "end": 611.639,
+      "type": "line",
+      "text": "and also have been taught concerning the records",
+      "verse": "2:34",
+      "lineIndex": 188
+    },
+    {
+      "start": 611.819,
+      "end": 616.184,
+      "type": "line",
+      "text": "which contain the prophecies which have been spoken by the holy prophets,",
+      "verse": "2:34",
+      "lineIndex": 189
+    },
+    {
+      "start": 616.364,
+      "end": 619.986,
+      "type": "line",
+      "text": "even down to the time our father, Lehi, left Jerusalem;",
+      "verse": "2:34",
+      "lineIndex": 190
+    },
+    {
+      "start": 620.666,
+      "end": 624.242,
+      "type": "line",
+      "text": "And also, all that has been spoken by our fathers until now.",
+      "verse": "2:35",
+      "lineIndex": 191
+    },
+    {
+      "start": 624.422,
+      "end": 628.462,
+      "type": "line",
+      "text": "And behold, also, they spake that which was commanded them of the Lord;",
+      "verse": "2:35",
+      "lineIndex": 192
+    },
+    {
+      "start": 628.642,
+      "end": 630.871,
+      "type": "line",
+      "text": "therefore, they are just and true.",
+      "verse": "2:35",
+      "lineIndex": 193
+    },
+    {
+      "start": 631.551,
+      "end": 634.105,
+      "type": "line",
+      "text": "And now, I say unto you, my brethren",
+      "verse": "2:36",
+      "lineIndex": 194
+    },
+    {
+      "start": 634.285,
+      "end": 637.814,
+      "type": "line",
+      "text": "that after ye have known and have been taught all these things,",
+      "verse": "2:36",
+      "lineIndex": 195
+    },
+    {
+      "start": 637.994,
+      "end": 639.619,
+      "type": "line",
+      "text": "if ye should transgress",
+      "verse": "2:36",
+      "lineIndex": 196
+    },
+    {
+      "start": 639.799,
+      "end": 642.818,
+      "type": "line",
+      "text": "and go contrary to that which has been spoken,",
+      "verse": "2:36",
+      "lineIndex": 197
+    },
+    {
+      "start": 642.998,
+      "end": 646.295,
+      "type": "line",
+      "text": "that ye do withdraw yourselves from the Spirit of the Lord,",
+      "verse": "2:36",
+      "lineIndex": 198
+    },
+    {
+      "start": 646.475,
+      "end": 648.658,
+      "type": "line",
+      "text": "that it may have no place in you",
+      "verse": "2:36",
+      "lineIndex": 199
+    },
+    {
+      "start": 648.838,
+      "end": 651.021,
+      "type": "line",
+      "text": "to guide you in wisdom's paths",
+      "verse": "2:36",
+      "lineIndex": 200
+    },
+    {
+      "start": 651.201,
+      "end": 654.545,
+      "type": "line",
+      "text": "that ye may be blessed, prospered, and preserved\u2014",
+      "verse": "2:36",
+      "lineIndex": 201
+    },
+    {
+      "start": 655.225,
+      "end": 658.151,
+      "type": "line",
+      "text": "I say unto you, that the man that doeth this,",
+      "verse": "2:37",
+      "lineIndex": 202
+    },
+    {
+      "start": 658.331,
+      "end": 661.721,
+      "type": "line",
+      "text": "the same cometh out in open rebellion against God;",
+      "verse": "2:37",
+      "lineIndex": 203
+    },
+    {
+      "start": 661.901,
+      "end": 664.827,
+      "type": "line",
+      "text": "therefore he listeth to obey the evil spirit,",
+      "verse": "2:37",
+      "lineIndex": 204
+    },
+    {
+      "start": 665.007,
+      "end": 667.793,
+      "type": "line",
+      "text": "and becometh an enemy to all righteousness;",
+      "verse": "2:37",
+      "lineIndex": 205
+    },
+    {
+      "start": 667.973,
+      "end": 670.249,
+      "type": "line",
+      "text": "therefore, the Lord has no place in him,",
+      "verse": "2:37",
+      "lineIndex": 206
+    },
+    {
+      "start": 670.429,
+      "end": 672.751,
+      "type": "line",
+      "text": "for he dwelleth not in unholy temples.",
+      "verse": "2:37",
+      "lineIndex": 207
+    },
+    {
+      "start": 673.431,
+      "end": 675.985,
+      "type": "line",
+      "text": "Therefore if that man repenteth not,",
+      "verse": "2:38",
+      "lineIndex": 208
+    },
+    {
+      "start": 676.165,
+      "end": 679.091,
+      "type": "line",
+      "text": "and remaineth and dieth an enemy to God,",
+      "verse": "2:38",
+      "lineIndex": 209
+    },
+    {
+      "start": 679.271,
+      "end": 683.683,
+      "type": "line",
+      "text": "the demands of divine justice do awaken his immortal soul",
+      "verse": "2:38",
+      "lineIndex": 210
+    },
+    {
+      "start": 683.863,
+      "end": 686.417,
+      "type": "line",
+      "text": "to a lively sense of his own guilt,",
+      "verse": "2:38",
+      "lineIndex": 211
+    },
+    {
+      "start": 686.597,
+      "end": 690.405,
+      "type": "line",
+      "text": "which doth cause him to shrink from the presence of the Lord,",
+      "verse": "2:38",
+      "lineIndex": 212
+    },
+    {
+      "start": 690.585,
+      "end": 694.44,
+      "type": "line",
+      "text": "and doth fill his breast with guilt, and pain, and anguish,",
+      "verse": "2:38",
+      "lineIndex": 213
+    },
+    {
+      "start": 694.62,
+      "end": 697.221,
+      "type": "line",
+      "text": "which is like an unquenchable fire,",
+      "verse": "2:38",
+      "lineIndex": 214
+    },
+    {
+      "start": 697.401,
+      "end": 700.234,
+      "type": "line",
+      "text": "whose flame ascendeth up forever and ever.",
+      "verse": "2:38",
+      "lineIndex": 215
+    },
+    {
+      "start": 700.914,
+      "end": 704.49,
+      "type": "line",
+      "text": "And now I say unto you, that mercy hath no claim on that man;",
+      "verse": "2:39",
+      "lineIndex": 216
+    },
+    {
+      "start": 704.67,
+      "end": 708.571,
+      "type": "line",
+      "text": "therefore his final doom is to endure a never-ending torment.",
+      "verse": "2:39",
+      "lineIndex": 217
+    },
+    {
+      "start": 709.251,
+      "end": 712.27,
+      "type": "line",
+      "text": "O, all ye old men, and also ye young men,",
+      "verse": "2:40",
+      "lineIndex": 218
+    },
+    {
+      "start": 712.45,
+      "end": 715.376,
+      "type": "line",
+      "text": "and you little children who can understand my words,",
+      "verse": "2:40",
+      "lineIndex": 219
+    },
+    {
+      "start": 715.556,
+      "end": 719.503,
+      "type": "line",
+      "text": "for I have spoken plainly unto you that ye might understand,",
+      "verse": "2:40",
+      "lineIndex": 220
+    },
+    {
+      "start": 719.683,
+      "end": 725.256,
+      "type": "line",
+      "text": "I pray that ye should awake to a remembrance of the awful situation",
+      "verse": "2:40",
+      "lineIndex": 221
+    },
+    {
+      "start": 725.436,
+      "end": 728.408,
+      "type": "line",
+      "text": "of those that have fallen into transgression.",
+      "verse": "2:40",
+      "lineIndex": 222
+    },
+    {
+      "start": 729.088,
+      "end": 734.15,
+      "type": "line",
+      "text": "And moreover, I would desire that ye should consider on the blessed and happy state",
+      "verse": "2:41",
+      "lineIndex": 223
+    },
+    {
+      "start": 734.33,
+      "end": 736.838,
+      "type": "line",
+      "text": "of those that keep the commandments of God.",
+      "verse": "2:41",
+      "lineIndex": 224
+    },
+    {
+      "start": 737.018,
+      "end": 739.572,
+      "type": "line",
+      "text": "For behold, they are blessed in all things,",
+      "verse": "2:41",
+      "lineIndex": 225
+    },
+    {
+      "start": 739.752,
+      "end": 742.167,
+      "type": "line",
+      "text": "both temporal and spiritual;",
+      "verse": "2:41",
+      "lineIndex": 226
+    },
+    {
+      "start": 742.347,
+      "end": 744.855,
+      "type": "line",
+      "text": "and if they hold out faithful to the end",
+      "verse": "2:41",
+      "lineIndex": 227
+    },
+    {
+      "start": 745.035,
+      "end": 747.218,
+      "type": "line",
+      "text": "they are received into heaven,",
+      "verse": "2:41",
+      "lineIndex": 228
+    },
+    {
+      "start": 747.398,
+      "end": 751.717,
+      "type": "line",
+      "text": "that thereby they may dwell with God in a state of never-ending happiness.",
+      "verse": "2:41",
+      "lineIndex": 229
+    },
+    {
+      "start": 751.897,
+      "end": 755.008,
+      "type": "line",
+      "text": "O remember, remember that these things are true;",
+      "verse": "2:41",
+      "lineIndex": 230
+    },
+    {
+      "start": 755.188,
+      "end": 757.371,
+      "type": "line",
+      "text": "for the Lord God hath spoken it.",
+      "verse": "2:41",
+      "lineIndex": 231
+    }
+  ]
+}
