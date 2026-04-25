@@ -740,13 +740,12 @@ const NARRATION = (() => {
 
       if (classes.contains('verse')) {
         if (isSenseLineMode) {
-          // Sense-line mode: each .line is a separate item
-          const senseLines = Array.from(child.querySelectorAll(':scope > .line'));
-          // Filter to actual .line (not .line-para, .line-parry)
-          const lines = senseLines.filter(el => {
-            const cl = el.className.trim();
-            return cl === 'line';
-          });
+          // Sense-line mode: each .line is a separate item.
+          // In Isaiah/KJV-quoting verses the DOM also contains a .line.verse-diff
+          // alternate that's only visible when the KJV-diff toggle is on; exclude it
+          // here so the highlight index matches the audio manifest (which only
+          // generates audio for the canonical .line / .line.verse-normal).
+          const lines = Array.from(child.querySelectorAll(':scope > .line:not(.verse-diff)'));
           for (const line of lines) {
             if (idx === lineInfo.lineIndex) return line;
             idx++;

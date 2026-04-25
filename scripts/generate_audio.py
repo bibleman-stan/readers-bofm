@@ -165,7 +165,12 @@ def parse_chapter(html_path, book_id, chapter_num):
             vn_el = child.find(class_='verse-num')
             vn = vn_el.get_text().strip() if vn_el else ''
             for line_el in child.find_all('span', recursive=False):
-                if 'line' not in (line_el.get('class') or []):
+                cls = line_el.get('class') or []
+                if 'line' not in cls:
+                    continue
+                # Skip KJV-diff alternate (visible only when KJV-diff toggle is on);
+                # the audio reads the canonical sense-line version (.line or .line.verse-normal).
+                if 'verse-diff' in cls:
                     continue
                 text = get_text_from_element(line_el, use_modern=False)
                 if text:
@@ -475,7 +480,14 @@ def main():
         ch_chars = sum(len(i['text']) for i in speakable)
         print(f'  {len(speakable)} lines, ~{ch_chars} chars')
 
-        combined, timing, stats = stitch_chapter(items, api_key, use_cache)
+        try:
+            combined, timing, stats = stitch_chapter(items, api_key, use_cache)
+        except RuntimeError as e:
+            # Crash mid-chapter — save what we have so re-runs can spot the gap
+            print(f'  CRASH: {e}')
+            print(f'  No partial chapter saved. Per-line cache holds completed lines.')
+            print(f'  Chapter {ch} of {book_name} is incomplete — re-run will resume from cache.')
+            raise
 
         save_chapter(book_id, book_name, ch, audio_out, combined, timing)
 
