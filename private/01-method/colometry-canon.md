@@ -42,7 +42,7 @@ This canon serves two distinct audiences, and the sections are organized accordi
 
 **The mission is sense-driven. The method is syntax-constrained.** These are different things and they belong in different parts of this document.
 
-The method leads with syntax (§1 "The Gate") not because syntax is primary to the mission, but because **syntactic violation is fatal while sense ambiguity is recoverable within the permitted space.** A break that violates English grammar is always wrong no matter how strong the sense argument; a sense judgment inside the permitted space can be revisited by editorial review. Leading with syntax preserves the discipline that lets sense work — it doesn't demote the mission.
+The method leads with syntax (§1 "Syntax Forbids Splits") not because syntax is primary to the mission, but because **syntactic violation is fatal while sense ambiguity is recoverable within the permitted space.** A break that violates English grammar is always wrong no matter how strong the sense argument; a sense judgment inside the permitted space can be revisited by editorial review. Leading with syntax preserves the discipline that lets sense work — it doesn't demote the mission.
 
 Novel rules can and do originate from sense-driven observation (Alma 22:15's speech-act-after-frame is one such case). The method accommodates this: sense proposes, syntax filters, the combination becomes a rule. But every break that survives to the corpus must be affirmable by English syntax. This is the non-negotiable operational floor.
 
@@ -62,7 +62,7 @@ This canon governs where lines break in the v2-mine source texts. It does not go
 
 ## 1. The Framework — Proposition-First, Syntax-Constrained
 
-The framework is: **each proposition splits by default, unless syntax forbids.** Substantive adjuncts (slot-fillers in narrative frames) count as atomic thought units and also earn their own lines. Image sharpens ambiguous cases.
+The framework is: **each proposition splits by default, unless syntax forbids.** Substantive adjuncts (slot-fillers in narrative frames) count as atomic thought units and also earn their own lines. Image sharpens ambiguous cases. (Equivalently at the operational level: at any candidate boundary the default is merge — see §1 Decision Procedure step 1 — and a split is licensed only when a proposition or structural-justification boundary is identified. The two phrasings are scope-distinct: "splits by default" generates the proposition-level inventory; "merge by default" is the per-location heuristic. Same procedure, different vantage points.)
 
 ### The Generative Principle
 
@@ -86,7 +86,7 @@ These are the "unless" clauses of "split each proposition unless syntax forbids.
 
 **Single image / camera angle.** When proposition-first is ambiguous (e.g., a short participial absolute that could read as continuation of the prior frame or as its own frame), ask: does the mind's eye reposition between candidate frames? Camera-angle shift → SPLIT. No shift → MERGE. This is a tiebreaker for ambiguous cases, not a primary generator.
 
-### The Four Structural Justifications (Closed List)
+### The Five Structural Justifications (Closed List)
 
 Non-predicated units that function as atomic thoughts via formal-structural recoverability. The reader can reconstruct "who did what" because formal markers in the text make the missing predicate recoverable.
 
@@ -113,7 +113,7 @@ Non-predicated units that function as atomic thoughts via formal-structural reco
     **Named pattern — *saith the Lord* parenthetical (added 2026-04-23 from Phase-1 hostile audit).** The BofM-archaic formula *"saith the Lord"* (and epithet variants: *of Hosts, God of Hosts, God Almighty, God, that hath mercy on thee*) inserted mid-prophecy earns its own line. Flanking material is already direct first-person divine speech; the tag is parenthetical authentication, not a predicative proposition. Extends the speech-act announcement principle from utterance onset (introducing speech, colon-marked) to mid-utterance (interrupting ongoing speech for oracle-authority stamp) — same cognitive principle (announcement ≠ content, each is its own frame), applied at a different position.
     - **Diagnostic.** (a) Surrounding material is direct first-person divine speech (*"I will..."*, *"my word..."*). (b) The *saith the Lord* phrase can be removed without breaking grammatical flow. (c) The phrase functions as oracle-authority stamp (retrospective or mid-utterance speaker attribution). All three hold → own line.
     - **SCOPE exclusions:** *saith the Lord that [content]* → Rule 17 speech-indirect (*that*-complement merges, not parenthetical); *thus saith the Lord, [content]* → direct-discourse introduction (existing justification 3 announcement handling); first-person speech without *saith* attribution → no special handling; ordinary prophecy flow.
-    - **Currently applied (2026-04-23):** 19 corpus instances across 1 Ne, 2 Ne, Jacob, 3 Ne — all currently stacked as own lines by editorial instinct. This pattern codifies and protects that practice. No corpus changes applied in this codification.
+    - **Currently applied (updated 2026-04-25 post-corpus-fit audit):** ~54 corpus instances across 1 Ne, 2 Ne, Jacob, Helaman, 3 Ne, Mormon, Ether stacked as own lines. The original 2026-04-23 codification claimed 19 instances "all currently stacked as own lines by editorial instinct" — that empirical claim was materially undercounted. Full-corpus sweep 2026-04-25 found ~38 mid-line instances total: ~6 SCOPE-excluded (intro+colon, Lord-of-vineyard parable referent, extended divine appellation), ~3 deferred (mid-line with competing Rule 17 conflicts requiring case judgment), ~26 newly split as Category-A applications under this rule (1 Ne 17:53, 22:24; 2 Ne 6:11, 6:13, 13:1, 13:2; Jacob 2:5, 2:30, 2:33; Hel 13:10-32, 15:16-17 across two batches; 3 Ne 22:1, 22:8, 23:1, 24:1-17, 25:1; Mormon 8:20; Ether 4:7). The codifying sweep saw only the already-conformant subset; the full-corpus sweep was deferred to next session and ran 2026-04-25 — see §7 trigger #12 (post-codification corpus-fit audit, codified to prevent recurrence).
 
 4. **Classical commata.** Short fragmentary utterances carrying full communicative weight (*"Yea."*, *"If not so,"*). Typically 1-3 words; brevity + isolation = deliberate emphasis.
 
@@ -254,7 +254,7 @@ The framework is a default-merge with two closed lists of exceptions — five st
 
 **Provenance.** Four parallel hostile audits on rule-application reversibility (2026-04-23) found the canon is commutative in 8 of 9 tested corpus constructions, with one load-bearing gap (Rule 10 × justification 1 at N=3+ object lists, codified in §5 Rule 10). The remaining residual is cosmetic. This subsection consolidates the audits' findings.
 
-**Step 0 — Input filter.** Punctuation is never a break signal (see below). Versification is never a break signal (see below). R28 authorial asymmetry (see below) governs batch-sweep discipline — filters what counts as a candidate signal *before* generative evaluation begins. None of the three operate within the per-location procedure; they operate upstream of it.
+**Step 0 — Input filter.** Punctuation is never a break signal (see below). Versification is never a break signal (see below). R28 authorial asymmetry (see below — the §1 *Authorial Asymmetry Principle*; distinct from §5 *Rule 28 — Speech-Act Announcement After Frame*, which is unrelated) governs batch-sweep discipline — filters what counts as a candidate signal *before* generative evaluation begins. None of the three operate within the per-location procedure; they operate upstream of it.
 
 **Step 1 — Syntax veto (Three Closed-List Ways).** At most one fires per location (commutative within-step). The three classes:
 - **Layer 1 mid-phrase prohibitions** (Rules 9, 11, 12 simple-aux, 13a) — generic English grammar; a violation is MALFORMED (hard-fatal) and outranks any Layer-3 output.
@@ -410,7 +410,7 @@ See [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-reference/ud-taxo
 
 ---
 
-*BofM-specific data (Rule 17 verb classes, Rule 18 fixed-idiom list, Rule 19 which-clause tree) now lives inline in §5 with the rules themselves. The four structural justifications live in §1 "The Criterion — Atomic Thought" as core methodology, not reference data.*
+*BofM-specific data (Rule 17 verb classes, Rule 18 fixed-idiom list, Rule 19 which-clause tree) now lives inline in §5 with the rules themselves. The five structural justifications live in §1 "The Five Structural Justifications (Closed List)" as core methodology, not reference data.*
 
 ---
 
@@ -674,7 +674,7 @@ Pre-Phase-2, REVIEW-REQUIRED items are the honest output of the validator — th
 - (a) Single-line verses — atomic by definition
 - (b) Speech-intro prefixes
 - (c) Standalone sentence connectives (*Wherefore*, *And now*, *Therefore*)
-- (d) Lines that fail the anchor test but pass one of the four structural justifications (§1 "The Criterion — Atomic Thought")
+- (d) Lines that fail the anchor test but pass one of the five structural justifications (§1 "The Five Structural Justifications (Closed List)")
 
 **Corpus status (2026-04-13).** 28,683 lines scanned; 5 unanchored (99.98% compliance).
 
@@ -876,6 +876,7 @@ Proposals to change an existing rule, add a new rule, or cull a rule must:
    9. **Meta-rule changes to §7 Change Protocol itself** — changes to this protocol MUST be audited (this very trigger codified 2026-04-23 after hostile audit caught the blind-spot in an earlier 6-trigger draft).
    10. **Discipline-shifting memory file additions** — new `feedback_*.md` or `project_*.md` files that shape how Claude approaches canon work are behaviorally-governing, not just observations; they need the same scrutiny as canon.
    11. **Cross-project imports** (GNT ↔ BofM) **or recoveries from retired canon** (v1, handoffs) — provenance from a sibling project or older version is not validation; the imported claim must have BofM corpus evidence independent of its source.
+   12. **Post-codification corpus-fit verification** (added 2026-04-25). When a new rule, sub-clause, or named pattern is codified, the rule is **not "closed" until a corpus-wide goal-fit audit has confirmed (a) all eligible instances conform OR (b) all residuals are explicitly enumerated** in §8 / pending.md. Codifications based on partial-corpus evidence (specific cases, named patterns, "I checked the cases I knew about") are particularly vulnerable to undercount: the canon's empirical "HOW WE KNOW" claim must be verified against full-corpus reality, not just the cases the codifier looked at. **Audit-required:** any codification where the initial sweep was partial. **Audit-skippable:** rules whose initial codification WAS the full-corpus sweep (the sweep IS the audit). Run within the codifying session if practical, or as the FIRST item of the next session — not deferred indefinitely. **Precedent (added 2026-04-25):** the saith-the-Lord parenthetical pattern was codified 2026-04-23 with HOW WE KNOW claiming "19 corpus instances all currently stacked as own lines"; full-corpus sweep 2026-04-25 found ~38 mid-line instances total, ~26 not yet split — the empirical claim was materially undercounted because the codifying sweep was partial. Same audit found Rule 17 topic-PP residuals (5 cases) and Rule 17 long-complement under-merges (3 cases) for rules codified the same prior session. Goal-fit drift is the predictable failure mode of partial-sweep codifications; this trigger forces the corpus-fit pass.
 
    **Audit dispatch protocol — parallel by default.** When a proposal triggers multiple audit dimensions (e.g., fake-rule test + corpus-full-sweep + scope-test), dispatch all in a single message with multiple Agent tool calls. Sequential only when audit A's verdict determines whether audit B should run. Parallelization substantially reduces friction; codified 2026-04-23 after demonstrating 3 parallel audits completed in ~26 seconds each vs. ~80+ seconds sequential.
 
@@ -915,6 +916,48 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-25 — Goal-Fit / Application-Consistency / Self-Consistency / Smuggling Audits + §7.3 Trigger #12
+
+Four parallel hostile audits run on the canon's recent codifications (Rule 17 topic-PP extension, Rule 17 long-complement exception, M1 asymmetric-modifier sub-clause, N=2 Adjudication Principle, R28 Authorial Asymmetry, saith-the-Lord parenthetical, §1 Application Order). All four produced material findings, demonstrating that the prior §7.3 trigger list (11 categories) caught propose-channel risks but did NOT cover post-codification corpus-fit. New trigger #12 codified to close that gap.
+
+**Audits run (all parallel, single-message dispatch):**
+- **Goal-fit** — does corpus implement codified rules? Found: 5 Rule 17 topic-PP residuals, 3 Rule 17 long-complement under-merges, canon defect (Rule 17 long-complement exception cites Alma 10:25/26 — actual passages at Alma 9:31/32).
+- **Application-consistency** — formulaic-pattern drift. Found: saith-the-Lord parenthetical drift in Helaman 13 (~9 cases, applied) + corpus-wide ~26 additional cases (1 Ne, 2 Ne, Jacob, 3 Ne, Mormon, Ether — all applied this commit). AICTP, "It is expedient that," "I would that," vocatives, "Verily I say unto you" non-3-Nephi all CLEAN. "Wherefore" vs "Therefore" distribution = R28 authorial asymmetry (Skousen/Larsen-attested).
+- **Self-consistency** — cross-references, defensibility triplets, contradictions. Found: §1 "The Gate" stale label (line 45), Rule 20 exemption (d) cite to non-existent §1 subtitle, four-vs-five structural-justifications mismatch (lines 89, 413, 677), R28/Rule 28 naming collision unmarked at first occurrence, default-merge/split phrasing tension reconcilable.
+- **Smuggling check** — meta-audit on pending.md "judgment-handoff smuggling" (the failure mode named by GNT 2026-04-25). Found: Moroni 10:19 framing routes verb-synonymy question through theological-content categories ("divine-constancy + gifts-permanence — one claim or two?"), inheriting from withdrawn doctrinal-weight bump; mechanical answer is SPLIT per §1 line 162 (verbs *is* vs *be done away* distinct non-synonymous). 3 Ne 15:3 image-gate proposal: REJECT not audit (canon already fires correctly; failure was operator reach-past, not canon gap).
+
+**Canon changes (this commit):**
+1. **§7.3 trigger #12 — Post-codification corpus-fit verification.** Codifications based on partial-corpus evidence are vulnerable to undercount; rule is not "closed" until full-corpus sweep confirms conformance OR enumerates residuals. Saith-the-Lord precedent: codified 2026-04-23 with HOW WE KNOW claiming "19 instances all conformant" — sweep 2026-04-25 found 38+ mid-line instances total, 26 not yet split.
+2. **Rule 17 long-complement exception** — verse references corrected Alma 10:25/26 → Alma 9:31/32 (typo; same content, wrong references).
+3. **§1 "Five Structural Justifications (Closed List)" subsection retitled** (was "Four"; substantive-adjunct addition 2026-04-19 made it 5; references at lines 232/247 already said five; lines 413/677 still said four — corrected).
+4. **§1 R28 disambiguation** at first occurrence (Step 0): "R28 (the §1 Authorial Asymmetry Principle; distinct from §5 Rule 28 'Speech-Act Announcement After Frame', which is unrelated)."
+5. **§1 default-merge/split reconciliation** appended to line 65: explicit one-sentence note that "splits by default" (proposition-level inventory) and "merge by default" (per-location heuristic) are scope-distinct vantage points on the same procedure.
+6. **§1 cross-reference at line 45** — "§1 'The Gate'" replaced with "§1 'Syntax Forbids Splits'" (matches actual subsection name).
+7. **Saith-the-Lord HOW WE KNOW empirical update** — count corrected from "19 instances" to ~54 total stacked + ~6 SCOPE-excluded + ~3 deferred mid-line conflicts.
+
+**Corpus changes (this commit):**
+- **Saith-the-Lord parenthetical sweep, 26 splits**: 1 Ne 17:53, 22:24 (×2 in 1 Ne); 2 Ne 6:11, 6:13, 13:1, 13:2 (×4); Jacob 2:5, 2:30, 2:33 (×3); Hel 13:12, 13:17, 15:17 mid-line cases (×3); 3 Ne 22:1, 22:8, 23:1, 24:1, 24:5, 24:7, 24:10, 24:12, 24:13, 24:17, 25:1 (×2 in 25:1) (×12); Mormon 8:20; Ether 4:7. All Category-A mechanical applications of recently-codified parenthetical-attribution rule.
+
+**SCOPE-excluded (no application; documented as canon-conformant):**
+- 1 Ne 20:15 ("Also, saith the Lord;" — fragment-line current state acceptable)
+- 1 Ne 21:5 ("And now, saith the Lord-- that formed me from the womb..." — extended divine appellation, different shape from bare parenthetical)
+- 2 Ne 19:7 ("But behold, saith the Lord of Hosts:" — colon → direct-discourse intro)
+- Jacob 5:7 ("And behold, saith the Lord of the vineyard," — parable character, not divine referent)
+- Hel 14:11, 15:14 (intro-position with following content)
+
+**Deferred (mid-line cases with competing Rule 17 conflicts):**
+- Hel 13:19 ("For I will, saith the Lord that they shall hide..." — SCOPE excluded as recitativum-pattern under Rule 17 speech-indirect; volitional matrix complication)
+
+**Audit-discipline efficacy:** the same goal-fit failure mode that caught Rule 17 topic-PP residuals (5), Rule 17 long-complement under-merges (3), and saith-the-Lord drift (~26) was triggered by codifications from a SINGLE prior session. This concentration validates trigger #12: post-codification corpus-fit audit is a load-bearing discipline.
+
+**Pending.md cleanup applied:**
+- Moroni 10:19 entry removed (mechanically resolved by §1 line 162; verbs *is* vs *be done away* distinct non-synonymous → SPLIT, corpus already split, no decision point)
+- 3 Ne 15:3 completeness-of-image gate proposal removed (REJECT not audit — canon already fires correctly per Decision 15; failure was operator reach-past discipline, captured in `feedback_no_fake_dilemmas.md`)
+
+**New memory file:** `feedback_no_fake_dilemmas.md` — when canon mechanically resolves a case, apply it; do NOT route through Stan-deference framings ("borderline," "pending judgment," "want me to also"). Smuggling-channel sibling pattern; Stan-named 2026-04-25.
+
+**CLAUDE.md update:** Pre-commit self-test extended with question 4 — *did this session codify a new rule, sub-clause, or named pattern? If yes → run goal-fit + application-consistency audits before commit, OR enumerate residuals as next-session FIRST item.*
 
 ### 2026-04-23 PM — Application Order Codified (post-structural-audit)
 

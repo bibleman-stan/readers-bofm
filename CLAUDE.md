@@ -314,7 +314,8 @@ When in doubt, Sonnet is the right default. Stan shouldn't have to think about t
 - Does this change include a scope claim, a precedence claim, a closed-list extension, or a named-category carve-out? → audit.
 - Does this change rest on spot-check evidence rather than a full-corpus classification? → audit.
 - Does this change reclassify or delete previously-settled canon content? → audit.
-- If no to all three → probably skip-safe.
+- Did this session codify a new rule, sub-clause, or named pattern, AND has the corpus-fit sweep NOT yet been run on the full corpus (per canon §7.3 trigger #12, added 2026-04-25)? → run goal-fit + application-consistency audits before commit, OR enumerate residuals in pending.md as next-session FIRST item. The codifying sweep saw what the codifier looked at; the goal-fit sweep finds what they didn't.
+- If no to all four → probably skip-safe.
 
 This discipline is codified in canon §2 (scope/precedence/closed-list/carve-out = Category B diagnostic) and canon §7.3 (mandatory-audit trigger list). See also the `feedback_rhetoric_bandwagon` memory's named-category-carve-out and biased-spot-check sub-patterns.
 
