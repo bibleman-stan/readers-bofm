@@ -217,14 +217,33 @@ def tts_elevenlabs(text, api_key, use_cache=True):
         'voice_settings': VOICE_SETTINGS,
     }
 
-    resp = requests.post(url, json=payload, headers=headers)
-    if resp.status_code != 200:
-        print(f'  API ERROR {resp.status_code}: {resp.text[:200]}')
-        raise RuntimeError(f'ElevenLabs API error {resp.status_code}')
-
-    audio_seg = AudioSegment.from_mp3(io.BytesIO(resp.content))
-    save_to_cache(key, audio_seg)
-    return audio_seg, False
+    # Retry transient network failures (Windows often aborts long-lived TCP
+    # connections after sleep / antivirus interference). Auth/quota errors
+    # are not retried — they are not transient.
+    last_err = None
+    for attempt in range(5):
+        try:
+            resp = requests.post(url, json=payload, headers=headers, timeout=60)
+        except (requests.exceptions.ConnectionError,
+                requests.exceptions.Timeout) as e:
+            last_err = e
+            wait = 2 * (attempt + 1)
+            print(f'  NET ERR (attempt {attempt+1}/5): {type(e).__name__}; retry in {wait}s')
+            time.sleep(wait)
+            continue
+        if resp.status_code in (429, 500, 502, 503, 504):
+            last_err = RuntimeError(f'API {resp.status_code}: {resp.text[:160]}')
+            wait = 2 * (attempt + 1)
+            print(f'  API {resp.status_code} (attempt {attempt+1}/5); retry in {wait}s')
+            time.sleep(wait)
+            continue
+        if resp.status_code != 200:
+            print(f'  API ERROR {resp.status_code}: {resp.text[:200]}')
+            raise RuntimeError(f'ElevenLabs API error {resp.status_code}')
+        audio_seg = AudioSegment.from_mp3(io.BytesIO(resp.content))
+        save_to_cache(key, audio_seg)
+        return audio_seg, False
+    raise RuntimeError(f'ElevenLabs request failed after retries: {last_err}')
 
 
 # ══════════════════════════════════════════
