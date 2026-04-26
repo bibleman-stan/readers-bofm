@@ -1,0 +1,448 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 14,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 145.936,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.09,
+      "type": "line",
+      "text": "Yea, even doth not Isaiah say:",
+      "verse": "14:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.27,
+      "end": 4.081,
+      "type": "line",
+      "text": "Who hath believed our report,",
+      "verse": "14:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 4.261,
+      "end": 6.537,
+      "type": "line",
+      "text": "and to whom is the arm of the Lord revealed?",
+      "verse": "14:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 7.217,
+      "end": 10.654,
+      "type": "line",
+      "text": "For he shall grow up before him as a tender plant,",
+      "verse": "14:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 10.834,
+      "end": 13.156,
+      "type": "line",
+      "text": "and as a root out of dry ground;",
+      "verse": "14:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 13.336,
+      "end": 15.333,
+      "type": "line",
+      "text": "he hath no form nor comeliness;",
+      "verse": "14:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 15.513,
+      "end": 17.51,
+      "type": "line",
+      "text": "and when we shall see him",
+      "verse": "14:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 17.69,
+      "end": 20.198,
+      "type": "line",
+      "text": "there is no beauty that we should desire him.",
+      "verse": "14:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 20.878,
+      "end": 23.246,
+      "type": "line",
+      "text": "He is despised and rejected of men;",
+      "verse": "14:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 23.426,
+      "end": 24.912,
+      "type": "line",
+      "text": "a man of sorrows,",
+      "verse": "14:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 25.092,
+      "end": 26.857,
+      "type": "line",
+      "text": "and acquainted with grief;",
+      "verse": "14:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 27.037,
+      "end": 29.731,
+      "type": "line",
+      "text": "and we hid as it were our faces from him;",
+      "verse": "14:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 29.911,
+      "end": 31.444,
+      "type": "line",
+      "text": "he was despised,",
+      "verse": "14:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 31.624,
+      "end": 33.249,
+      "type": "line",
+      "text": "and we esteemed him not.",
+      "verse": "14:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 33.929,
+      "end": 36.39,
+      "type": "line",
+      "text": "Surely he has borne our griefs,",
+      "verse": "14:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 36.57,
+      "end": 38.428,
+      "type": "line",
+      "text": "and carried our sorrows;",
+      "verse": "14:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 38.608,
+      "end": 42.973,
+      "type": "line",
+      "text": "yet we did esteem him stricken, smitten of God, and afflicted.",
+      "verse": "14:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 43.653,
+      "end": 46.114,
+      "type": "line",
+      "text": "But he was wounded for our transgressions,",
+      "verse": "14:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 46.294,
+      "end": 48.848,
+      "type": "line",
+      "text": "he was bruised for our iniquities;",
+      "verse": "14:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 49.028,
+      "end": 51.768,
+      "type": "line",
+      "text": "the chastisement of our peace was upon him;",
+      "verse": "14:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 51.948,
+      "end": 54.316,
+      "type": "line",
+      "text": "and with his stripes we are healed.",
+      "verse": "14:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 54.996,
+      "end": 57.504,
+      "type": "line",
+      "text": "All we, like sheep, have gone astray;",
+      "verse": "14:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 57.684,
+      "end": 60.285,
+      "type": "line",
+      "text": "we have turned every one to his own way;",
+      "verse": "14:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 60.465,
+      "end": 63.809,
+      "type": "line",
+      "text": "and the Lord hath laid on him the iniquities of us all.",
+      "verse": "14:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 64.489,
+      "end": 66.857,
+      "type": "line",
+      "text": "He was oppressed, and he was afflicted,",
+      "verse": "14:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 67.037,
+      "end": 69.08,
+      "type": "line",
+      "text": "yet he opened not his mouth;",
+      "verse": "14:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 69.26,
+      "end": 71.814,
+      "type": "line",
+      "text": "he is brought as a lamb to the slaughter,",
+      "verse": "14:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 71.994,
+      "end": 74.92,
+      "type": "line",
+      "text": "and as a sheep before her shearers is dumb",
+      "verse": "14:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 75.1,
+      "end": 76.772,
+      "type": "line",
+      "text": "so he opened not his mouth.",
+      "verse": "14:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 77.452,
+      "end": 80.192,
+      "type": "line",
+      "text": "He was taken from prison and from judgment;",
+      "verse": "14:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 80.372,
+      "end": 82.74,
+      "type": "line",
+      "text": "and who shall declare his generation?",
+      "verse": "14:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 82.92,
+      "end": 85.846,
+      "type": "line",
+      "text": "For he was cut off out of the land of the living;",
+      "verse": "14:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 86.026,
+      "end": 89.509,
+      "type": "line",
+      "text": "for the transgressions of my people was he stricken.",
+      "verse": "14:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 90.189,
+      "end": 92.697,
+      "type": "line",
+      "text": "And he made his grave with the wicked,",
+      "verse": "14:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 92.877,
+      "end": 95.153,
+      "type": "line",
+      "text": "and with the rich in his death;",
+      "verse": "14:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 95.333,
+      "end": 97.376,
+      "type": "line",
+      "text": "because he had done no evil,",
+      "verse": "14:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 97.556,
+      "end": 99.878,
+      "type": "line",
+      "text": "neither was any deceit in his mouth.",
+      "verse": "14:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 100.558,
+      "end": 102.834,
+      "type": "line",
+      "text": "Yet it pleased the Lord to bruise him;",
+      "verse": "14:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 103.014,
+      "end": 104.825,
+      "type": "line",
+      "text": "he hath put him to grief;",
+      "verse": "14:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 105.005,
+      "end": 108.024,
+      "type": "line",
+      "text": "when thou shalt make his soul an offering for sin",
+      "verse": "14:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 108.204,
+      "end": 110.015,
+      "type": "line",
+      "text": "he shall see his seed,",
+      "verse": "14:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 110.195,
+      "end": 112.145,
+      "type": "line",
+      "text": "he shall prolong his days,",
+      "verse": "14:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 112.325,
+      "end": 115.715,
+      "type": "line",
+      "text": "and the pleasure of the Lord shall prosper in his hand.",
+      "verse": "14:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 116.395,
+      "end": 118.81,
+      "type": "line",
+      "text": "He shall see the travail of his soul,",
+      "verse": "14:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 118.99,
+      "end": 120.894,
+      "type": "line",
+      "text": "and shall be satisfied;",
+      "verse": "14:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 121.074,
+      "end": 124.743,
+      "type": "line",
+      "text": "by his knowledge shall my righteous servant justify many;",
+      "verse": "14:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 124.923,
+      "end": 127.57,
+      "type": "line",
+      "text": "for he shall bear their iniquities.",
+      "verse": "14:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 128.25,
+      "end": 131.64,
+      "type": "line",
+      "text": "Therefore will I divide him a portion with the great,",
+      "verse": "14:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 131.82,
+      "end": 134.328,
+      "type": "line",
+      "text": "and he shall divide the spoil with the strong;",
+      "verse": "14:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 134.508,
+      "end": 137.573,
+      "type": "line",
+      "text": "because he hath poured out his soul unto death;",
+      "verse": "14:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 137.753,
+      "end": 140.307,
+      "type": "line",
+      "text": "and he was numbered with the transgressors;",
+      "verse": "14:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 140.487,
+      "end": 142.484,
+      "type": "line",
+      "text": "and he bore the sins of many,",
+      "verse": "14:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 142.664,
+      "end": 145.265,
+      "type": "line",
+      "text": "and made intercession for the transgressors.",
+      "verse": "14:12",
+      "lineIndex": 54
+    }
+  ]
+}
