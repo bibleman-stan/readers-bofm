@@ -310,6 +310,39 @@ The canonical LDS text's punctuation is preserved for fidelity but has **no dete
 
 BofM verse divisions were imposed by Orson Pratt in 1879 — editorial overlay, same status as punctuation. No break versification imposes is canonical. If a cross-verse merge case is identified, flag Category B.
 
+### Parallel-List Uniformity Principle (added 2026-04-26)
+
+When a multi-verse list of parallel members exists with a shared explicit frame, list members receive uniform line-treatment regardless of their individual syntactic shape. Per-construction rules (e.g., Rule 7 finite-purpose-*that* split) yield to the list-uniformity principle within the list's scope.
+
+**Trigger.** All four conditions must hold:
+1. **Multi-verse list, N≥3 members.** Two-member coordinate cases are governed by §1 N=2 Adjudication Principle; isolated occurrences aren't a list.
+2. **Shared explicit frame.** A repeated lexical anchor introduces each member: *"And to another,"* / *"And again, to another,"* / *"Wo unto X,"* / *"Blessed are they who,"* / *"If ye do X / If ye do not."*
+3. **Parallel members.** Each list-item is the same kind of thought (a gift bestowed, a curse pronounced, a beatitude declared, a conditional outcome).
+4. **Authorial-symmetric.** Members do NOT have the finite-verb-count or predicative-head-count asymmetries that §1 R28 Authorial Asymmetry Principle protects.
+
+**Default direction — merge.** Each member's frame + content stays on one line per member. The atomic-thought unit at the list scale is *one bestowal / one pronouncement / one outcome* per member; a frame-fragment alone (*"And again, to another,"*) is not a self-standing atomic thought.
+
+**Why merge wins as the default direction:**
+- **Atomic-thought test.** Frame-fragments alone fail it; gifts/pronouncements as units pass it.
+- **Anti-Lowth (§0 Mission).** Split-dominant treatment with repeated visible frames IS the parallelism-display layout the project's stance opposes — *"we are formatting the text... not revealing rhetorical parallelism."*
+- **Audience.** ESL readers and read-aloud delivery favor one-line-per-member rhythm; double-breath-per-gift fragments cadence.
+- **Descriptive over interpretive.** Merge describes each member as a unit; split imposes a frame-content rhythmic structure on a syntactic surface that doesn't demand it.
+
+**Mechanical signature.**
+- Detect shared frame via repeated leading lexical pattern across N≥3 verses.
+- Identify dominant treatment among members (count: how many members are 1-line, how many 2-line?).
+- Bring outliers in line with dominant treatment; default-merge if no clear dominance OR if applying default-merge passes atomic-thought + breath tests for each member.
+
+**SCOPE — does NOT apply to:**
+- N=2 coordinate cases (governed by §1 N=2 Adjudication Principle).
+- Authorial-asymmetric series (§1 R28 takes precedence — preserve mechanism-count differences; do not flatten variation).
+- Lists without a repeated explicit frame (narrative sequences without lexical anchor).
+- Within-verse coordinate predications (governed by Helaman 3:16 precedent — justification 1 wins over merge-rules at N=3+).
+
+**Interaction with Rule 7.** Rule 7 (finite purpose-*that* breaks before *that*) yields to this principle when the purpose-*that* is a list member in an otherwise-merged list. The Rule 7 short-line exception (line 474) is the mechanical channel: in parallel-list context, the short-line exception fires whenever the list's dominant treatment is merge.
+
+**WHY / HOW WE KNOW / SCOPE summary.** WHY: same-pattern-different-treatment in a multi-verse list violates atomic-thought consistency at the list-scale and the project's anti-Lowth stance. HOW WE KNOW: Moroni 10:8-17 spiritual-gifts list 2026-04-26 — 3 outliers (vv 9, 12, 13 split via Rule 7 default) against 6 conforming members (vv 10, 11a, 11b, 14, 15, 16 merged). Stan and Claude converged on Stance B merge-dominant after walking through atomic-thought / anti-Lowth / audience tests. SCOPE: as above.
+
 ### Authorial asymmetry overrides editorial symmetry (added 2026-04-23 from GNT cross-project §3.7, corpus-validated on BofM)
 
 When a passage contains a serial construction (wo/blessed series, positive/negative conditional pair, beatitude chain, interrogative chain) and the author treats members asymmetrically — expanded mechanism for some, compact for others — **preserve the authorial asymmetry**. Do not pressure compact members to expand, or expanded members to compress, in order to achieve uniform line-treatment across the series.
@@ -876,7 +909,14 @@ Proposals to change an existing rule, add a new rule, or cull a rule must:
    9. **Meta-rule changes to §7 Change Protocol itself** — changes to this protocol MUST be audited (this very trigger codified 2026-04-23 after hostile audit caught the blind-spot in an earlier 6-trigger draft).
    10. **Discipline-shifting memory file additions** — new `feedback_*.md` or `project_*.md` files that shape how Claude approaches canon work are behaviorally-governing, not just observations; they need the same scrutiny as canon.
    11. **Cross-project imports** (GNT ↔ BofM) **or recoveries from retired canon** (v1, handoffs) — provenance from a sibling project or older version is not validation; the imported claim must have BofM corpus evidence independent of its source.
-   12. **Post-codification corpus-fit verification** (added 2026-04-25). When a new rule, sub-clause, or named pattern is codified, the rule is **not "closed" until a corpus-wide goal-fit audit has confirmed (a) all eligible instances conform OR (b) all residuals are explicitly enumerated** in §8 / pending.md. Codifications based on partial-corpus evidence (specific cases, named patterns, "I checked the cases I knew about") are particularly vulnerable to undercount: the canon's empirical "HOW WE KNOW" claim must be verified against full-corpus reality, not just the cases the codifier looked at. **Audit-required:** any codification where the initial sweep was partial. **Audit-skippable:** rules whose initial codification WAS the full-corpus sweep (the sweep IS the audit). Run within the codifying session if practical, or as the FIRST item of the next session — not deferred indefinitely. **Precedent (added 2026-04-25):** the saith-the-Lord parenthetical pattern was codified 2026-04-23 with HOW WE KNOW claiming "19 corpus instances all currently stacked as own lines"; full-corpus sweep 2026-04-25 found ~38 mid-line instances total, ~26 not yet split — the empirical claim was materially undercounted because the codifying sweep was partial. Same audit found Rule 17 topic-PP residuals (5 cases) and Rule 17 long-complement under-merges (3 cases) for rules codified the same prior session. Goal-fit drift is the predictable failure mode of partial-sweep codifications; this trigger forces the corpus-fit pass.
+   12. **Corpus-fit verification — post-codification AND post-detection** (added 2026-04-25; expanded 2026-04-26).
+       - **(a) Post-codification (original).** When a new rule, sub-clause, or named pattern is codified, the rule is **not "closed" until a corpus-wide goal-fit audit has confirmed (i) all eligible instances conform OR (ii) all residuals are explicitly enumerated** in §8 / pending.md. Codifications based on partial-corpus evidence are vulnerable to undercount; the canon's empirical "HOW WE KNOW" claim must be verified against full-corpus reality. **Audit-required:** any codification where the initial sweep was partial. **Audit-skippable:** rules whose initial codification WAS the full-corpus sweep (the sweep IS the audit). Run within the codifying session if practical, or as the FIRST item of the next session — not deferred indefinitely.
+       - **(b) Post-detection (added 2026-04-26).** This trigger ALSO fires when Stan-eyeball or any audit surfaces a violation of an **existing** (settled) rule. Application drift accumulates on long-codified rules through ongoing corpus modifications and prior partial-sweep gaps. When a violation is detected, schedule a same-rule full-corpus re-sweep within the same session if practical, or as the next session's first task. Goal-fit failures cluster — finding one of a shape elsewhere is the predictable outcome of partial-sweep history.
+       - **Audit dimensions to consider** (added 2026-04-26): goal-fit (does corpus implement codified rules), application-consistency on **formulaic phrases** (AICTP, "Yea verily," etc.), application-consistency on **parallel-list constructions** (gifts list, beatitudes, wo-series, blessed-series, conditional pairs — see §1 Parallel-List Uniformity Principle), self-consistency (cross-references, defensibility triplets), smuggling (judgment-handoff failure mode). Dispatch in parallel by default.
+       - **Precedents.**
+         - 2026-04-25 saith-the-Lord: codified with HOW WE KNOW claiming "19 corpus instances all stacked"; sweep found ~38 instances, ~26 not yet split — empirical undercount. Drove (a).
+         - 2026-04-26 Alma 27:1: Stan caught Rule 17 cognition-class violation on a settled rule (cognition + parenthetical-adverbial separation); re-sweep found 4 siblings (Mosiah 20:6, 22:15, Alma 47:12, 49:22), all the same AICTP-bracketed *when X found that Y* shape. Drove (b).
+         - 2026-04-26 Moroni 10:8-17 gifts list: Stan caught parallel-list inconsistency (vv 9, 12, 13 split where vv 10, 11, 14-16 merged); drove the **parallel-list audit dimension** addition.
 
    **Audit dispatch protocol — parallel by default.** When a proposal triggers multiple audit dimensions (e.g., fake-rule test + corpus-full-sweep + scope-test), dispatch all in a single message with multiple Agent tool calls. Sequential only when audit A's verdict determines whether audit B should run. Parallelization substantially reduces friction; codified 2026-04-23 after demonstrating 3 parallel audits completed in ~26 seconds each vs. ~80+ seconds sequential.
 
@@ -916,6 +956,29 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-26 — Parallel-List Uniformity Principle codified + Trigger #12 expanded + Moroni 10 corpus fix
+
+Stan flagged Moroni 10:12-13 as visually problematic. Initial diagnosis (Claude) leaned toward "merge per Rule 7 short-line exception"; Stan pushed back with "maybe they ARE correctly broken? if so, what's going on in vv 14-16?" — surfacing the deeper question: is per-construction rule outcome canonical, or does parallel-list visual uniformity override?
+
+**Stance picked:** Parallel-list uniformity overrides per-construction rule outcomes within multi-verse parallel-list scope (Stance B), with **merge-dominant** as the default direction. Reasoning convergence:
+- Atomic-thought test: frame-fragments alone (*"And again, to another,"*) fail it.
+- Anti-Lowth (§0): split-dominant repeated-frame layout IS the parallelism-display posture the project's stance opposes.
+- Audience: ESL + audio narration favor compact one-line-per-member rhythm.
+- Descriptive over interpretive: merge describes; split imposes rhythm.
+
+**Canon additions:**
+1. **§1 Parallel-List Uniformity Principle.** Multi-verse list (N≥3) with shared explicit frame → uniform line-treatment across members; merge default. SCOPE excludes N=2 cases (governed by N=2 Adjudication Principle), R28-protected authorial-asymmetric series, lists without explicit frame, within-verse coordinate (Helaman 3:16 precedent territory). Interacts with Rule 7's short-line exception as the mechanical channel for purpose-*that* members in merged lists.
+2. **§7.3 trigger #12 expansion.** Two fire conditions now: (a) post-codification (original), (b) post-detection (added today — Stan/audit catches a violation of a settled rule → dispatch same-rule full-corpus re-sweep). Audit dimensions list updated to include parallel-list application-consistency.
+
+**Corpus changes (this commit):**
+- Moroni 10:9: *"For behold, to one is given by the Spirit of God, / that he may teach the word of wisdom;"* → MERGE (one line)
+- Moroni 10:12: *"And again, to another, / that he may work mighty miracles;"* → MERGE
+- Moroni 10:13: *"And again, to another, / that he may prophesy concerning all things;"* → MERGE
+
+After these merges, the spiritual-gifts list (vv 8-17) is uniformly one-line-per-gift across all 8 members.
+
+**Corpus audit dispatched (post-codification per trigger #12-a):** parallel-list application-consistency sweep across the BofM corpus — gifts lists, beatitudes (3 Ne 12:1-12 vs Matt 5), wo-series (2 Ne 9:27-38, Hel 13), blessed-series, conditional pairs. Findings will surface in next session's first task or dispatched within this session if appetite permits.
 
 ### 2026-04-25 — 1 Ne 19:5 Resolved (Category-B → State B applied)
 
