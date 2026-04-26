@@ -1,0 +1,528 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 22,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 230.958,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.573,
+      "type": "line",
+      "text": "And now it came to pass that Ammon and king Limhi began to consult with the people",
+      "verse": "22:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.753,
+      "end": 8.911,
+      "type": "line",
+      "text": "how they should deliver themselves out of bondage;",
+      "verse": "22:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.091,
+      "end": 13.689,
+      "type": "line",
+      "text": "and even they did cause that all the people should gather themselves together;",
+      "verse": "22:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 13.869,
+      "end": 18.652,
+      "type": "line",
+      "text": "and this they did that they might have the voice of the people concerning the matter.",
+      "verse": "22:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.332,
+      "end": 22.676,
+      "type": "line",
+      "text": "And it came to pass that they could find no way",
+      "verse": "22:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.856,
+      "end": 25.317,
+      "type": "line",
+      "text": "to deliver themselves out of bondage,",
+      "verse": "22:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.497,
+      "end": 29.212,
+      "type": "line",
+      "text": "except it were to take their women and children,",
+      "verse": "22:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 29.392,
+      "end": 32.689,
+      "type": "line",
+      "text": "and their flocks, and their herds, and their tents,",
+      "verse": "22:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 32.869,
+      "end": 35.052,
+      "type": "line",
+      "text": "and depart into the wilderness;",
+      "verse": "22:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 35.232,
+      "end": 37.693,
+      "type": "line",
+      "text": "for the Lamanites being so numerous,",
+      "verse": "22:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 37.873,
+      "end": 42.099,
+      "type": "line",
+      "text": "it was impossible for the people of Limhi to contend with them,",
+      "verse": "22:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 42.279,
+      "end": 45.994,
+      "type": "line",
+      "text": "thinking to deliver themselves out of bondage by the sword.",
+      "verse": "22:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 46.674,
+      "end": 50.807,
+      "type": "line",
+      "text": "Now it came to pass that Gideon went forth and stood before the king,",
+      "verse": "22:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 50.987,
+      "end": 52.566,
+      "type": "line",
+      "text": "and said unto him:",
+      "verse": "22:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 52.746,
+      "end": 57.158,
+      "type": "line",
+      "text": "Now O king, thou hast hitherto hearkened unto my words many times",
+      "verse": "22:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 57.338,
+      "end": 61.471,
+      "type": "line",
+      "text": "when we have been contending with our brethren, the Lamanites.",
+      "verse": "22:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 62.151,
+      "end": 63.451,
+      "type": "line",
+      "text": "And now O king,",
+      "verse": "22:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 63.631,
+      "end": 67.068,
+      "type": "line",
+      "text": "if thou hast not found me to be an unprofitable servant,",
+      "verse": "22:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 67.248,
+      "end": 70.917,
+      "type": "line",
+      "text": "or if thou hast hitherto listened to my words in any degree,",
+      "verse": "22:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 71.097,
+      "end": 73.233,
+      "type": "line",
+      "text": "and they have been of service to thee,",
+      "verse": "22:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 73.413,
+      "end": 78.614,
+      "type": "line",
+      "text": "even so I desire that thou wouldst listen to my words at this time,",
+      "verse": "22:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 78.794,
+      "end": 83.438,
+      "type": "line",
+      "text": "and I will be thy servant and deliver this people out of bondage.",
+      "verse": "22:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 84.118,
+      "end": 87.322,
+      "type": "line",
+      "text": "And the king granted unto him that he might speak.",
+      "verse": "22:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 87.502,
+      "end": 89.22,
+      "type": "line",
+      "text": "And Gideon said unto him:",
+      "verse": "22:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 89.9,
+      "end": 94.08,
+      "type": "line",
+      "text": "Behold the back pass, through the back wall, on the back side of the city.",
+      "verse": "22:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 94.26,
+      "end": 95.653,
+      "type": "line",
+      "text": "The Lamanites,",
+      "verse": "22:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 95.833,
+      "end": 98.016,
+      "type": "line",
+      "text": "or the guards of the Lamanites,",
+      "verse": "22:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 98.196,
+      "end": 100.007,
+      "type": "line",
+      "text": "by night are drunken;",
+      "verse": "22:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 100.187,
+      "end": 103.763,
+      "type": "line",
+      "text": "therefore let us send a proclamation among all this people",
+      "verse": "22:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 103.943,
+      "end": 107.101,
+      "type": "line",
+      "text": "that they gather together their flocks and herds,",
+      "verse": "22:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 107.281,
+      "end": 110.996,
+      "type": "line",
+      "text": "that they may drive them into the wilderness by night.",
+      "verse": "22:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 111.676,
+      "end": 114.044,
+      "type": "line",
+      "text": "And I will go according to thy command",
+      "verse": "22:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 114.224,
+      "end": 117.521,
+      "type": "line",
+      "text": "and pay the last tribute of wine to the Lamanites,",
+      "verse": "22:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 117.701,
+      "end": 119.187,
+      "type": "line",
+      "text": "and they will be drunken;",
+      "verse": "22:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 119.367,
+      "end": 124.336,
+      "type": "line",
+      "text": "and we will pass through the secret pass on the left of their camp",
+      "verse": "22:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 124.516,
+      "end": 126.884,
+      "type": "line",
+      "text": "when they are drunken and asleep.",
+      "verse": "22:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 127.564,
+      "end": 133.88,
+      "type": "line",
+      "text": "Thus we will depart with our women and our children, our flocks and our herds into the wilderness;",
+      "verse": "22:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 134.06,
+      "end": 136.707,
+      "type": "line",
+      "text": "and we will travel around the land of Shilom.",
+      "verse": "22:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 137.387,
+      "end": 141.381,
+      "type": "line",
+      "text": "And it came to pass that the king hearkened unto the words of Gideon.",
+      "verse": "22:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 142.061,
+      "end": 146.984,
+      "type": "line",
+      "text": "And king Limhi caused that his people should gather their flocks together;",
+      "verse": "22:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 147.164,
+      "end": 150.461,
+      "type": "line",
+      "text": "and he sent the tribute of wine to the Lamanites;",
+      "verse": "22:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 150.641,
+      "end": 154.031,
+      "type": "line",
+      "text": "and he also sent more wine, as a present unto them;",
+      "verse": "22:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 154.211,
+      "end": 158.809,
+      "type": "line",
+      "text": "and they did drink freely of the wine which king Limhi did send unto them.",
+      "verse": "22:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 159.489,
+      "end": 167.152,
+      "type": "line",
+      "text": "And it came to pass that the people of king Limhi did depart by night into the wilderness with their flocks and their herds,",
+      "verse": "22:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 167.332,
+      "end": 170.954,
+      "type": "line",
+      "text": "and they went round about the land of Shilom in the wilderness,",
+      "verse": "22:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 171.134,
+      "end": 174.524,
+      "type": "line",
+      "text": "and bent their course towards the land of Zarahemla,",
+      "verse": "22:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 174.704,
+      "end": 177.119,
+      "type": "line",
+      "text": "being led by Ammon and his brethren.",
+      "verse": "22:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 177.799,
+      "end": 182.489,
+      "type": "line",
+      "text": "And they had taken all their gold, and silver, and their precious things,",
+      "verse": "22:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 182.669,
+      "end": 184.155,
+      "type": "line",
+      "text": "which they could carry,",
+      "verse": "22:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 184.335,
+      "end": 187.818,
+      "type": "line",
+      "text": "and also their provisions with them, into the wilderness;",
+      "verse": "22:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 187.998,
+      "end": 189.763,
+      "type": "line",
+      "text": "and they pursued their journey.",
+      "verse": "22:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 190.443,
+      "end": 193.322,
+      "type": "line",
+      "text": "And after being many days in the wilderness",
+      "verse": "22:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 193.502,
+      "end": 195.685,
+      "type": "line",
+      "text": "they arrived in the land of Zarahemla,",
+      "verse": "22:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 195.865,
+      "end": 197.723,
+      "type": "line",
+      "text": "and joined Mosiah's people,",
+      "verse": "22:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 197.903,
+      "end": 199.482,
+      "type": "line",
+      "text": "and became his subjects.",
+      "verse": "22:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 200.162,
+      "end": 203.227,
+      "type": "line",
+      "text": "And it came to pass that Mosiah received them with joy;",
+      "verse": "22:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 203.407,
+      "end": 205.775,
+      "type": "line",
+      "text": "and he also received their records,",
+      "verse": "22:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 205.955,
+      "end": 210.042,
+      "type": "line",
+      "text": "and also the records which had been found by the people of Limhi.",
+      "verse": "22:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 210.722,
+      "end": 218.385,
+      "type": "line",
+      "text": "And now it came to pass when the Lamanites had found that the people of Limhi had departed out of the land by night,",
+      "verse": "22:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 218.565,
+      "end": 222.094,
+      "type": "line",
+      "text": "that they sent an army into the wilderness to pursue them;",
+      "verse": "22:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 222.774,
+      "end": 224.864,
+      "type": "line",
+      "text": "And after they had pursued them two days,",
+      "verse": "22:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 225.044,
+      "end": 227.552,
+      "type": "line",
+      "text": "they could no longer follow their tracks;",
+      "verse": "22:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 227.732,
+      "end": 230.286,
+      "type": "line",
+      "text": "therefore they were lost in the wilderness.",
+      "verse": "22:16",
+      "lineIndex": 64
+    }
+  ]
+}
