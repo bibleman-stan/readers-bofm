@@ -1,0 +1,576 @@
+{
+  "book": "jacob",
+  "bookName": "Jacob",
+  "chapter": 3,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 233.406,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.272,
+      "type": "line",
+      "text": "But behold, I, Jacob, would speak unto you that are pure in heart.",
+      "verse": "3:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.452,
+      "end": 6.867,
+      "type": "line",
+      "text": "Look unto God with firmness of mind,",
+      "verse": "3:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.047,
+      "end": 9.694,
+      "type": "line",
+      "text": "and pray unto him with exceeding faith,",
+      "verse": "3:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.874,
+      "end": 12.289,
+      "type": "line",
+      "text": "and he will console you in your afflictions,",
+      "verse": "3:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 12.469,
+      "end": 14.234,
+      "type": "line",
+      "text": "and he will plead your cause,",
+      "verse": "3:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.414,
+      "end": 17.804,
+      "type": "line",
+      "text": "and send down justice upon those who seek your destruction.",
+      "verse": "3:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 18.484,
+      "end": 20.62,
+      "type": "line",
+      "text": "O all ye that are pure in heart,",
+      "verse": "3:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 20.8,
+      "end": 24.237,
+      "type": "line",
+      "text": "lift up your heads and receive the pleasing word of God,",
+      "verse": "3:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 24.417,
+      "end": 26.182,
+      "type": "line",
+      "text": "and feast upon his love;",
+      "verse": "3:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 26.362,
+      "end": 29.241,
+      "type": "line",
+      "text": "for ye may, if your minds are firm, forever.",
+      "verse": "3:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 29.921,
+      "end": 33.032,
+      "type": "line",
+      "text": "But, wo, wo, unto you that are not pure in heart,",
+      "verse": "3:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 33.212,
+      "end": 35.72,
+      "type": "line",
+      "text": "that are filthy this day before God;",
+      "verse": "3:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 35.9,
+      "end": 39.29,
+      "type": "line",
+      "text": "for except ye repent the land is cursed for your sakes;",
+      "verse": "3:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 39.47,
+      "end": 43.185,
+      "type": "line",
+      "text": "and the Lamanites, which are not filthy like unto you,",
+      "verse": "3:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 43.365,
+      "end": 46.662,
+      "type": "line",
+      "text": "nevertheless they are cursed with a sore cursing,",
+      "verse": "3:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 46.842,
+      "end": 49.35,
+      "type": "line",
+      "text": "shall scourge you even unto destruction.",
+      "verse": "3:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 50.03,
+      "end": 53.792,
+      "type": "line",
+      "text": "And the time speedily cometh, that except ye repent",
+      "verse": "3:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 53.972,
+      "end": 56.666,
+      "type": "line",
+      "text": "they shall possess the land of your inheritance,",
+      "verse": "3:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 56.846,
+      "end": 60.422,
+      "type": "line",
+      "text": "and the Lord God will lead away the righteous out from among you.",
+      "verse": "3:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 61.102,
+      "end": 68.486,
+      "type": "line",
+      "text": "Behold, the Lamanites your brethren, whom ye hate because of their filthiness and the cursing which hath come upon their skins,",
+      "verse": "3:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 68.666,
+      "end": 70.663,
+      "type": "line",
+      "text": "are more righteous than you;",
+      "verse": "3:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 70.843,
+      "end": 74.001,
+      "type": "line",
+      "text": "for they have not forgotten the commandment of the Lord,",
+      "verse": "3:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 74.181,
+      "end": 76.364,
+      "type": "line",
+      "text": "which was given unto our father\u2014",
+      "verse": "3:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 76.544,
+      "end": 79.423,
+      "type": "line",
+      "text": "that they should have save it were one wife,",
+      "verse": "3:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 79.603,
+      "end": 81.971,
+      "type": "line",
+      "text": "and concubines they should have none,",
+      "verse": "3:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 82.151,
+      "end": 85.309,
+      "type": "line",
+      "text": "and there should not be whoredoms committed among them.",
+      "verse": "3:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 85.989,
+      "end": 88.729,
+      "type": "line",
+      "text": "And now, this commandment they observe to keep;",
+      "verse": "3:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 88.909,
+      "end": 93.181,
+      "type": "line",
+      "text": "wherefore, because of this observance, in keeping this commandment,",
+      "verse": "3:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 93.361,
+      "end": 95.497,
+      "type": "line",
+      "text": "the Lord God will not destroy them,",
+      "verse": "3:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 95.677,
+      "end": 97.86,
+      "type": "line",
+      "text": "but will be merciful unto them;",
+      "verse": "3:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 98.04,
+      "end": 100.548,
+      "type": "line",
+      "text": "and one day they shall become a blessed people.",
+      "verse": "3:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 101.228,
+      "end": 103.411,
+      "type": "line",
+      "text": "Behold, their husbands love their wives,",
+      "verse": "3:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 103.591,
+      "end": 106.006,
+      "type": "line",
+      "text": "and their wives love their husbands;",
+      "verse": "3:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 106.186,
+      "end": 109.251,
+      "type": "line",
+      "text": "and their husbands and their wives love their children;",
+      "verse": "3:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 109.431,
+      "end": 112.635,
+      "type": "line",
+      "text": "and their unbelief and their hatred towards you",
+      "verse": "3:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 112.815,
+      "end": 116.019,
+      "type": "line",
+      "text": "is because of the iniquity of their fathers;",
+      "verse": "3:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 116.199,
+      "end": 120.75,
+      "type": "line",
+      "text": "wherefore, how much better are you than they, in the sight of your great Creator?",
+      "verse": "3:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 121.43,
+      "end": 122.684,
+      "type": "line",
+      "text": "O my brethren,",
+      "verse": "3:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 122.864,
+      "end": 125.883,
+      "type": "line",
+      "text": "I fear that unless ye shall repent of your sins",
+      "verse": "3:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 126.063,
+      "end": 128.803,
+      "type": "line",
+      "text": "that their skins will be whiter than yours,",
+      "verse": "3:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 128.983,
+      "end": 132.559,
+      "type": "line",
+      "text": "when ye shall be brought with them before the throne of God.",
+      "verse": "3:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 133.239,
+      "end": 137.744,
+      "type": "line",
+      "text": "Wherefore, a commandment I give unto you, which is the word of God,",
+      "verse": "3:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 137.924,
+      "end": 142.336,
+      "type": "line",
+      "text": "that ye revile no more against them because of the darkness of their skins;",
+      "verse": "3:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 142.516,
+      "end": 146.51,
+      "type": "line",
+      "text": "neither shall ye revile against them because of their filthiness;",
+      "verse": "3:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 146.69,
+      "end": 149.198,
+      "type": "line",
+      "text": "but ye shall remember your own filthiness,",
+      "verse": "3:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 149.378,
+      "end": 152.954,
+      "type": "line",
+      "text": "and remember that their filthiness came because of their fathers.",
+      "verse": "3:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 153.634,
+      "end": 156.467,
+      "type": "line",
+      "text": "Wherefore, ye shall remember your children,",
+      "verse": "3:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 156.647,
+      "end": 162.034,
+      "type": "line",
+      "text": "how that ye have grieved their hearts because of the example that ye have set before them;",
+      "verse": "3:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 162.214,
+      "end": 165.697,
+      "type": "line",
+      "text": "and also, remember that ye may, because of your filthiness,",
+      "verse": "3:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 165.877,
+      "end": 168.245,
+      "type": "line",
+      "text": "bring your children unto destruction,",
+      "verse": "3:10",
+      "lineIndex": 51
+    },
+    {
+      "start": 168.425,
+      "end": 172.047,
+      "type": "line",
+      "text": "and their sins be heaped upon your heads at the last day.",
+      "verse": "3:10",
+      "lineIndex": 52
+    },
+    {
+      "start": 172.727,
+      "end": 175.328,
+      "type": "line",
+      "text": "O my brethren, hearken unto my words;",
+      "verse": "3:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 175.508,
+      "end": 178.062,
+      "type": "line",
+      "text": "arouse the faculties of your souls;",
+      "verse": "3:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 178.242,
+      "end": 182.329,
+      "type": "line",
+      "text": "shake yourselves that ye may awake from the slumber of death;",
+      "verse": "3:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 182.509,
+      "end": 185.481,
+      "type": "line",
+      "text": "and loose yourselves from the pains of hell",
+      "verse": "3:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 185.661,
+      "end": 188.447,
+      "type": "line",
+      "text": "that ye may not become angels to the devil,",
+      "verse": "3:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 188.627,
+      "end": 193.085,
+      "type": "line",
+      "text": "to be cast into that lake of fire and brimstone which is the second death.",
+      "verse": "3:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 193.765,
+      "end": 197.898,
+      "type": "line",
+      "text": "And now I, Jacob, spake many more things unto the people of Nephi,",
+      "verse": "3:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 198.078,
+      "end": 201.468,
+      "type": "line",
+      "text": "warning them against fornication and lasciviousness,",
+      "verse": "3:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 201.648,
+      "end": 203.32,
+      "type": "line",
+      "text": "and every kind of sin,",
+      "verse": "3:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 203.5,
+      "end": 206.194,
+      "type": "line",
+      "text": "telling them the awful consequences of them.",
+      "verse": "3:12",
+      "lineIndex": 62
+    },
+    {
+      "start": 206.874,
+      "end": 210.032,
+      "type": "line",
+      "text": "And a hundredth part of the proceedings of this people,",
+      "verse": "3:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 210.212,
+      "end": 212.348,
+      "type": "line",
+      "text": "which now began to be numerous,",
+      "verse": "3:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 212.528,
+      "end": 214.896,
+      "type": "line",
+      "text": "cannot be written upon these plates;",
+      "verse": "3:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 215.076,
+      "end": 219.163,
+      "type": "line",
+      "text": "but many of their proceedings are written upon the larger plates,",
+      "verse": "3:13",
+      "lineIndex": 66
+    },
+    {
+      "start": 219.343,
+      "end": 224.266,
+      "type": "line",
+      "text": "and their wars, and their contentions, and the reigns of their kings.",
+      "verse": "3:13",
+      "lineIndex": 67
+    },
+    {
+      "start": 224.946,
+      "end": 227.593,
+      "type": "line",
+      "text": "These plates are called the plates of Jacob,",
+      "verse": "3:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 227.773,
+      "end": 230.141,
+      "type": "line",
+      "text": "and they were made by the hand of Nephi.",
+      "verse": "3:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 230.321,
+      "end": 232.736,
+      "type": "line",
+      "text": "And I make an end of speaking these words.",
+      "verse": "3:14",
+      "lineIndex": 70
+    }
+  ]
+}
