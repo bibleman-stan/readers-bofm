@@ -1,0 +1,1104 @@
+{
+  "book": "omni",
+  "bookName": "Omni",
+  "chapter": 1,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 511.807,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.988,
+      "type": "line",
+      "text": "Behold, it came to pass that I, Omni, being commanded by my father, Jarom, that I should write somewhat upon these plates,",
+      "verse": "1:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 8.168,
+      "end": 10.258,
+      "type": "line",
+      "text": "to preserve our genealogy\u2014",
+      "verse": "1:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.938,
+      "end": 19.762,
+      "type": "line",
+      "text": "Wherefore, in my days, I would that ye should know that I fought much with the sword to preserve my people, the Nephites,",
+      "verse": "1:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 19.942,
+      "end": 23.704,
+      "type": "line",
+      "text": "from falling into the hands of their enemies, the Lamanites.",
+      "verse": "1:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 23.884,
+      "end": 26.485,
+      "type": "line",
+      "text": "But behold, I of myself am a wicked man,",
+      "verse": "1:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 26.665,
+      "end": 31.959,
+      "type": "line",
+      "text": "and I have not kept the statutes and the commandments of the Lord as I ought to have done.",
+      "verse": "1:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 32.639,
+      "end": 36.819,
+      "type": "line",
+      "text": "And it came to pass that two hundred and seventy and six years had passed away,",
+      "verse": "1:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 36.999,
+      "end": 39.414,
+      "type": "line",
+      "text": "and we had many seasons of peace;",
+      "verse": "1:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 39.594,
+      "end": 42.659,
+      "type": "line",
+      "text": "and we had many seasons of serious war and bloodshed.",
+      "verse": "1:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 42.839,
+      "end": 47.158,
+      "type": "line",
+      "text": "Yea, and in fine, two hundred and eighty and two years had passed away,",
+      "verse": "1:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 47.338,
+      "end": 51.239,
+      "type": "line",
+      "text": "and I had kept these plates according to the commandments of my fathers;",
+      "verse": "1:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 51.419,
+      "end": 53.927,
+      "type": "line",
+      "text": "and I conferred them upon my son Amaron.",
+      "verse": "1:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 54.107,
+      "end": 55.314,
+      "type": "line",
+      "text": "And I make an end.",
+      "verse": "1:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 55.994,
+      "end": 60.266,
+      "type": "line",
+      "text": "And now I, Amaron, write the things whatsoever I write,",
+      "verse": "1:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 60.446,
+      "end": 63.0,
+      "type": "line",
+      "text": "which are few, in the book of my father.",
+      "verse": "1:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 63.68,
+      "end": 67.72,
+      "type": "line",
+      "text": "Behold, it came to pass that three hundred and twenty years had passed away,",
+      "verse": "1:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 67.9,
+      "end": 70.965,
+      "type": "line",
+      "text": "and the more wicked part of the Nephites were destroyed.",
+      "verse": "1:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 71.645,
+      "end": 73.595,
+      "type": "line",
+      "text": "For the Lord would not suffer,",
+      "verse": "1:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 73.775,
+      "end": 77.49,
+      "type": "line",
+      "text": "after he had led them out of the land of Jerusalem",
+      "verse": "1:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 77.67,
+      "end": 82.128,
+      "type": "line",
+      "text": "and kept and preserved them from falling into the hands of their enemies,",
+      "verse": "1:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 82.308,
+      "end": 86.627,
+      "type": "line",
+      "text": "yea, he would not suffer that the words should not be verified,",
+      "verse": "1:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 86.807,
+      "end": 89.686,
+      "type": "line",
+      "text": "which he spake unto our fathers, saying that:",
+      "verse": "1:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 89.866,
+      "end": 92.56,
+      "type": "line",
+      "text": "Inasmuch as ye will not keep my commandments",
+      "verse": "1:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 92.74,
+      "end": 94.969,
+      "type": "line",
+      "text": "ye shall not prosper in the land.",
+      "verse": "1:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 95.649,
+      "end": 99.875,
+      "type": "line",
+      "text": "Wherefore, the Lord did visit them in great judgment;",
+      "verse": "1:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 100.055,
+      "end": 104.235,
+      "type": "line",
+      "text": "nevertheless, he did spare the righteous that they should not perish,",
+      "verse": "1:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 104.415,
+      "end": 108.27,
+      "type": "line",
+      "text": "but did deliver them out of the hands of their enemies.",
+      "verse": "1:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 108.95,
+      "end": 113.501,
+      "type": "line",
+      "text": "And it came to pass that I did deliver the plates unto my brother Chemish.",
+      "verse": "1:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 114.181,
+      "end": 119.15,
+      "type": "line",
+      "text": "Now I, Chemish, write what few things I write, in the same book with my brother;",
+      "verse": "1:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 119.33,
+      "end": 124.253,
+      "type": "line",
+      "text": "for behold, I saw the last which he wrote, that he wrote it with his own hand;",
+      "verse": "1:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 124.433,
+      "end": 127.962,
+      "type": "line",
+      "text": "and he wrote it in the day that he delivered them unto me.",
+      "verse": "1:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 128.142,
+      "end": 130.789,
+      "type": "line",
+      "text": "And after this manner we keep the records,",
+      "verse": "1:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 130.969,
+      "end": 134.406,
+      "type": "line",
+      "text": "for it is according to the commandments of our fathers.",
+      "verse": "1:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 134.586,
+      "end": 135.793,
+      "type": "line",
+      "text": "And I make an end.",
+      "verse": "1:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 136.473,
+      "end": 139.167,
+      "type": "line",
+      "text": "Behold, I, Abinadom, am the son of Chemish.",
+      "verse": "1:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 139.347,
+      "end": 146.638,
+      "type": "line",
+      "text": "Behold, it came to pass that I saw much war and contention between my people, the Nephites, and the Lamanites;",
+      "verse": "1:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 146.818,
+      "end": 153.738,
+      "type": "line",
+      "text": "and I, with my own sword, have taken the lives of many of the Lamanites in the defence of my brethren.",
+      "verse": "1:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 154.418,
+      "end": 158.644,
+      "type": "line",
+      "text": "And behold, the record of this people is engraven upon plates",
+      "verse": "1:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 158.824,
+      "end": 162.214,
+      "type": "line",
+      "text": "which is had by the kings, according to the generations;",
+      "verse": "1:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 162.394,
+      "end": 166.063,
+      "type": "line",
+      "text": "and I know of no revelation save that which has been written,",
+      "verse": "1:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 166.243,
+      "end": 167.59,
+      "type": "line",
+      "text": "neither prophecy;",
+      "verse": "1:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 167.77,
+      "end": 170.464,
+      "type": "line",
+      "text": "wherefore, that which is sufficient is written.",
+      "verse": "1:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 170.644,
+      "end": 171.851,
+      "type": "line",
+      "text": "And I make an end.",
+      "verse": "1:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 172.531,
+      "end": 175.503,
+      "type": "line",
+      "text": "Behold, I am Amaleki, the son of Abinadom.",
+      "verse": "1:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 175.683,
+      "end": 183.021,
+      "type": "line",
+      "text": "Behold, I will speak unto you somewhat concerning Mosiah, who was made king over the land of Zarahemla;",
+      "verse": "1:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 183.201,
+      "end": 188.077,
+      "type": "line",
+      "text": "for behold, he being warned of the Lord that he should flee out of the land of Nephi,",
+      "verse": "1:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 188.257,
+      "end": 191.415,
+      "type": "line",
+      "text": "and as many as would hearken unto the voice of the Lord",
+      "verse": "1:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 191.595,
+      "end": 195.914,
+      "type": "line",
+      "text": "should also depart out of the land with him, into the wilderness\u2014",
+      "verse": "1:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 196.594,
+      "end": 201.702,
+      "type": "line",
+      "text": "And it came to pass that he did according as the Lord had commanded him.",
+      "verse": "1:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 201.882,
+      "end": 205.133,
+      "type": "line",
+      "text": "And they departed out of the land into the wilderness,",
+      "verse": "1:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 205.313,
+      "end": 208.285,
+      "type": "line",
+      "text": "as many as would hearken unto the voice of the Lord;",
+      "verse": "1:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 208.465,
+      "end": 211.762,
+      "type": "line",
+      "text": "and they were led by many preachings and prophesyings.",
+      "verse": "1:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 211.942,
+      "end": 215.1,
+      "type": "line",
+      "text": "And they were admonished continually by the word of God;",
+      "verse": "1:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 215.28,
+      "end": 219.785,
+      "type": "line",
+      "text": "and they were led by the power of his arm, through the wilderness",
+      "verse": "1:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 219.965,
+      "end": 224.934,
+      "type": "line",
+      "text": "until they came down into the land which is called the land of Zarahemla.",
+      "verse": "1:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 225.614,
+      "end": 230.026,
+      "type": "line",
+      "text": "And they discovered a people, who were called the people of Zarahemla.",
+      "verse": "1:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 230.206,
+      "end": 233.689,
+      "type": "line",
+      "text": "Now, there was great rejoicing among the people of Zarahemla;",
+      "verse": "1:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 233.869,
+      "end": 236.748,
+      "type": "line",
+      "text": "and also Zarahemla did rejoice exceedingly,",
+      "verse": "1:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 236.928,
+      "end": 243.383,
+      "type": "line",
+      "text": "because the Lord had sent the people of Mosiah with the plates of brass which contained the record of the Jews.",
+      "verse": "1:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 244.063,
+      "end": 251.354,
+      "type": "line",
+      "text": "Behold, it came to pass that Mosiah discovered that the people of Zarahemla came out from Jerusalem at the time",
+      "verse": "1:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 251.534,
+      "end": 256.085,
+      "type": "line",
+      "text": "that Zedekiah, king of Judah, was carried away captive into Babylon.",
+      "verse": "1:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 256.765,
+      "end": 258.948,
+      "type": "line",
+      "text": "And they journeyed in the wilderness,",
+      "verse": "1:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 259.128,
+      "end": 266.14,
+      "type": "line",
+      "text": "and were brought by the hand of the Lord across the great waters, into the land where Mosiah discovered them;",
+      "verse": "1:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 266.32,
+      "end": 269.292,
+      "type": "line",
+      "text": "and they had dwelt there from that time forth.",
+      "verse": "1:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 269.972,
+      "end": 272.805,
+      "type": "line",
+      "text": "And at the time that Mosiah discovered them,",
+      "verse": "1:17",
+      "lineIndex": 71
+    },
+    {
+      "start": 272.985,
+      "end": 275.214,
+      "type": "line",
+      "text": "they had become exceedingly numerous.",
+      "verse": "1:17",
+      "lineIndex": 72
+    },
+    {
+      "start": 275.394,
+      "end": 279.295,
+      "type": "line",
+      "text": "Nevertheless, they had had many wars and serious contentions,",
+      "verse": "1:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 279.475,
+      "end": 282.354,
+      "type": "line",
+      "text": "and had fallen by the sword from time to time;",
+      "verse": "1:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 282.534,
+      "end": 285.042,
+      "type": "line",
+      "text": "and their language had become corrupted;",
+      "verse": "1:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 285.222,
+      "end": 287.823,
+      "type": "line",
+      "text": "and they had brought no records with them;",
+      "verse": "1:17",
+      "lineIndex": 76
+    },
+    {
+      "start": 288.003,
+      "end": 290.789,
+      "type": "line",
+      "text": "and they denied the being of their Creator;",
+      "verse": "1:17",
+      "lineIndex": 77
+    },
+    {
+      "start": 290.969,
+      "end": 294.498,
+      "type": "line",
+      "text": "and Mosiah, nor the people of Mosiah, could understand them.",
+      "verse": "1:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 295.178,
+      "end": 300.472,
+      "type": "line",
+      "text": "But it came to pass that Mosiah caused that they should be taught in his language.",
+      "verse": "1:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 300.652,
+      "end": 304.924,
+      "type": "line",
+      "text": "And it came to pass that after they were taught in the language of Mosiah,",
+      "verse": "1:18",
+      "lineIndex": 80
+    },
+    {
+      "start": 305.104,
+      "end": 309.284,
+      "type": "line",
+      "text": "Zarahemla gave a genealogy of his fathers, according to his memory;",
+      "verse": "1:18",
+      "lineIndex": 81
+    },
+    {
+      "start": 309.464,
+      "end": 312.622,
+      "type": "line",
+      "text": "and they are written, but not in these plates.",
+      "verse": "1:18",
+      "lineIndex": 82
+    },
+    {
+      "start": 313.302,
+      "end": 316.413,
+      "type": "line",
+      "text": "And it came to pass that the people of Zarahemla,",
+      "verse": "1:19",
+      "lineIndex": 83
+    },
+    {
+      "start": 316.593,
+      "end": 319.24,
+      "type": "line",
+      "text": "and of Mosiah, did unite together;",
+      "verse": "1:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 319.42,
+      "end": 321.928,
+      "type": "line",
+      "text": "and Mosiah was appointed to be their king.",
+      "verse": "1:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 322.608,
+      "end": 325.209,
+      "type": "line",
+      "text": "And it came to pass in the days of Mosiah,",
+      "verse": "1:20",
+      "lineIndex": 87
+    },
+    {
+      "start": 325.389,
+      "end": 329.336,
+      "type": "line",
+      "text": "there was a large stone brought unto him with engravings on it;",
+      "verse": "1:20",
+      "lineIndex": 88
+    },
+    {
+      "start": 329.516,
+      "end": 332.906,
+      "type": "line",
+      "text": "and he did interpret the engravings by the gift and power of God.",
+      "verse": "1:20",
+      "lineIndex": 89
+    },
+    {
+      "start": 333.586,
+      "end": 336.419,
+      "type": "line",
+      "text": "And they gave an account of one Coriantumr,",
+      "verse": "1:21",
+      "lineIndex": 91
+    },
+    {
+      "start": 336.599,
+      "end": 338.503,
+      "type": "line",
+      "text": "and the slain of his people.",
+      "verse": "1:21",
+      "lineIndex": 92
+    },
+    {
+      "start": 338.683,
+      "end": 342.398,
+      "type": "line",
+      "text": "And Coriantumr was discovered by the people of Zarahemla;",
+      "verse": "1:21",
+      "lineIndex": 93
+    },
+    {
+      "start": 342.578,
+      "end": 345.736,
+      "type": "line",
+      "text": "and he dwelt with them for the space of nine moons.",
+      "verse": "1:21",
+      "lineIndex": 94
+    },
+    {
+      "start": 346.416,
+      "end": 349.945,
+      "type": "line",
+      "text": "It also spake a few words concerning his fathers.",
+      "verse": "1:22",
+      "lineIndex": 95
+    },
+    {
+      "start": 350.125,
+      "end": 356.069,
+      "type": "line",
+      "text": "And his first parents came out from the tower, at the time the Lord confounded the language of the people;",
+      "verse": "1:22",
+      "lineIndex": 96
+    },
+    {
+      "start": 356.249,
+      "end": 361.125,
+      "type": "line",
+      "text": "and the severity of the Lord fell upon them according to his judgments, which are just;",
+      "verse": "1:22",
+      "lineIndex": 97
+    },
+    {
+      "start": 361.305,
+      "end": 364.556,
+      "type": "line",
+      "text": "and their bones lay scattered in the land northward.",
+      "verse": "1:22",
+      "lineIndex": 98
+    },
+    {
+      "start": 365.236,
+      "end": 368.719,
+      "type": "line",
+      "text": "Behold, I, Amaleki, was born in the days of Mosiah;",
+      "verse": "1:23",
+      "lineIndex": 100
+    },
+    {
+      "start": 368.899,
+      "end": 371.082,
+      "type": "line",
+      "text": "and I have lived to see his death;",
+      "verse": "1:23",
+      "lineIndex": 101
+    },
+    {
+      "start": 371.262,
+      "end": 374.606,
+      "type": "line",
+      "text": "and Benjamin, his son, reigneth in his stead.",
+      "verse": "1:23",
+      "lineIndex": 102
+    },
+    {
+      "start": 375.286,
+      "end": 378.955,
+      "type": "line",
+      "text": "And behold, I have seen, in the days of king Benjamin,",
+      "verse": "1:24",
+      "lineIndex": 103
+    },
+    {
+      "start": 379.135,
+      "end": 383.733,
+      "type": "line",
+      "text": "a serious war and much bloodshed between the Nephites and the Lamanites.",
+      "verse": "1:24",
+      "lineIndex": 104
+    },
+    {
+      "start": 383.913,
+      "end": 387.814,
+      "type": "line",
+      "text": "But behold, the Nephites did obtain much advantage over them;",
+      "verse": "1:24",
+      "lineIndex": 105
+    },
+    {
+      "start": 387.994,
+      "end": 392.592,
+      "type": "line",
+      "text": "yea, insomuch that king Benjamin did drive them out of the land of Zarahemla.",
+      "verse": "1:24",
+      "lineIndex": 106
+    },
+    {
+      "start": 393.272,
+      "end": 396.012,
+      "type": "line",
+      "text": "And it came to pass that I began to be old;",
+      "verse": "1:25",
+      "lineIndex": 108
+    },
+    {
+      "start": 396.192,
+      "end": 397.817,
+      "type": "line",
+      "text": "and, having no seed,",
+      "verse": "1:25",
+      "lineIndex": 109
+    },
+    {
+      "start": 397.997,
+      "end": 401.852,
+      "type": "line",
+      "text": "and knowing king Benjamin to be a just man before the Lord,",
+      "verse": "1:25",
+      "lineIndex": 110
+    },
+    {
+      "start": 402.032,
+      "end": 405.376,
+      "type": "line",
+      "text": "wherefore, I shall deliver up these plates unto him,",
+      "verse": "1:25",
+      "lineIndex": 111
+    },
+    {
+      "start": 405.556,
+      "end": 408.203,
+      "type": "line",
+      "text": "exhorting all men to come unto God,",
+      "verse": "1:25",
+      "lineIndex": 112
+    },
+    {
+      "start": 408.383,
+      "end": 409.916,
+      "type": "line",
+      "text": "the Holy One of Israel,",
+      "verse": "1:25",
+      "lineIndex": 113
+    },
+    {
+      "start": 410.096,
+      "end": 411.907,
+      "type": "line",
+      "text": "and believe in prophesying,",
+      "verse": "1:25",
+      "lineIndex": 114
+    },
+    {
+      "start": 412.087,
+      "end": 413.666,
+      "type": "line",
+      "text": "and in revelations,",
+      "verse": "1:25",
+      "lineIndex": 115
+    },
+    {
+      "start": 413.846,
+      "end": 416.214,
+      "type": "line",
+      "text": "and in the ministering of angels,",
+      "verse": "1:25",
+      "lineIndex": 116
+    },
+    {
+      "start": 416.394,
+      "end": 418.855,
+      "type": "line",
+      "text": "and in the gift of speaking with tongues,",
+      "verse": "1:25",
+      "lineIndex": 117
+    },
+    {
+      "start": 419.035,
+      "end": 421.821,
+      "type": "line",
+      "text": "and in the gift of interpreting languages,",
+      "verse": "1:25",
+      "lineIndex": 118
+    },
+    {
+      "start": 422.001,
+      "end": 424.416,
+      "type": "line",
+      "text": "and in all things which are good;",
+      "verse": "1:25",
+      "lineIndex": 119
+    },
+    {
+      "start": 424.596,
+      "end": 428.033,
+      "type": "line",
+      "text": "for there is nothing which is good save it comes from the Lord:",
+      "verse": "1:25",
+      "lineIndex": 120
+    },
+    {
+      "start": 428.213,
+      "end": 431.278,
+      "type": "line",
+      "text": "and that which is evil cometh from the devil.",
+      "verse": "1:25",
+      "lineIndex": 121
+    },
+    {
+      "start": 431.958,
+      "end": 434.001,
+      "type": "line",
+      "text": "And now, my beloved brethren,",
+      "verse": "1:26",
+      "lineIndex": 122
+    },
+    {
+      "start": 434.181,
+      "end": 438.221,
+      "type": "line",
+      "text": "I would that ye should come unto Christ, who is the Holy One of Israel,",
+      "verse": "1:26",
+      "lineIndex": 123
+    },
+    {
+      "start": 438.401,
+      "end": 441.977,
+      "type": "line",
+      "text": "and partake of his salvation, and the power of his redemption.",
+      "verse": "1:26",
+      "lineIndex": 124
+    },
+    {
+      "start": 442.157,
+      "end": 443.69,
+      "type": "line",
+      "text": "Yea, come unto him,",
+      "verse": "1:26",
+      "lineIndex": 125
+    },
+    {
+      "start": 443.87,
+      "end": 447.167,
+      "type": "line",
+      "text": "and offer your whole souls as an offering unto him,",
+      "verse": "1:26",
+      "lineIndex": 126
+    },
+    {
+      "start": 447.347,
+      "end": 449.901,
+      "type": "line",
+      "text": "and continue in fasting and praying,",
+      "verse": "1:26",
+      "lineIndex": 127
+    },
+    {
+      "start": 450.081,
+      "end": 451.614,
+      "type": "line",
+      "text": "and endure to the end;",
+      "verse": "1:26",
+      "lineIndex": 128
+    },
+    {
+      "start": 451.794,
+      "end": 454.209,
+      "type": "line",
+      "text": "and as the Lord liveth ye will be saved.",
+      "verse": "1:26",
+      "lineIndex": 129
+    },
+    {
+      "start": 454.889,
+      "end": 458.651,
+      "type": "line",
+      "text": "And now I would speak somewhat concerning a certain number",
+      "verse": "1:27",
+      "lineIndex": 130
+    },
+    {
+      "start": 458.831,
+      "end": 462.964,
+      "type": "line",
+      "text": "who went up into the wilderness to return to the land of Nephi;",
+      "verse": "1:27",
+      "lineIndex": 131
+    },
+    {
+      "start": 463.144,
+      "end": 468.856,
+      "type": "line",
+      "text": "for there was a large number who were desirous to possess the land of their inheritance.",
+      "verse": "1:27",
+      "lineIndex": 132
+    },
+    {
+      "start": 469.536,
+      "end": 472.462,
+      "type": "line",
+      "text": "Wherefore, they went up into the wilderness.",
+      "verse": "1:28",
+      "lineIndex": 133
+    },
+    {
+      "start": 472.642,
+      "end": 475.382,
+      "type": "line",
+      "text": "And their leader being a strong and mighty man,",
+      "verse": "1:28",
+      "lineIndex": 134
+    },
+    {
+      "start": 475.562,
+      "end": 477.327,
+      "type": "line",
+      "text": "and a stiffnecked man,",
+      "verse": "1:28",
+      "lineIndex": 135
+    },
+    {
+      "start": 477.507,
+      "end": 480.526,
+      "type": "line",
+      "text": "wherefore he caused a contention among them;",
+      "verse": "1:28",
+      "lineIndex": 136
+    },
+    {
+      "start": 480.706,
+      "end": 484.561,
+      "type": "line",
+      "text": "and they were all slain, save fifty, in the wilderness,",
+      "verse": "1:28",
+      "lineIndex": 137
+    },
+    {
+      "start": 484.741,
+      "end": 487.713,
+      "type": "line",
+      "text": "and they returned again to the land of Zarahemla.",
+      "verse": "1:28",
+      "lineIndex": 138
+    },
+    {
+      "start": 488.393,
+      "end": 493.409,
+      "type": "line",
+      "text": "And it came to pass that they also took others to a considerable number,",
+      "verse": "1:29",
+      "lineIndex": 139
+    },
+    {
+      "start": 493.589,
+      "end": 496.84,
+      "type": "line",
+      "text": "and took their journey again into the wilderness.",
+      "verse": "1:29",
+      "lineIndex": 140
+    },
+    {
+      "start": 497.52,
+      "end": 501.282,
+      "type": "line",
+      "text": "And I, Amaleki, had a brother, who also went with them;",
+      "verse": "1:30",
+      "lineIndex": 141
+    },
+    {
+      "start": 501.462,
+      "end": 504.156,
+      "type": "line",
+      "text": "and I have not since known concerning them.",
+      "verse": "1:30",
+      "lineIndex": 142
+    },
+    {
+      "start": 504.336,
+      "end": 506.797,
+      "type": "line",
+      "text": "And I am about to lie down in my grave;",
+      "verse": "1:30",
+      "lineIndex": 143
+    },
+    {
+      "start": 506.977,
+      "end": 508.788,
+      "type": "line",
+      "text": "and these plates are full.",
+      "verse": "1:30",
+      "lineIndex": 144
+    },
+    {
+      "start": 508.968,
+      "end": 511.151,
+      "type": "line",
+      "text": "And I make an end of my speaking.",
+      "verse": "1:30",
+      "lineIndex": 145
+    }
+  ]
+}
