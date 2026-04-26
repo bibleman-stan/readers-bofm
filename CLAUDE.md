@@ -87,7 +87,7 @@ Compaction is a session boundary. When resuming from a compaction summary, still
 
 ### Canon-to-git policy (adopted 2026-04-20 PM from cross-project directive)
 
-**`private/` is gitignored EXCEPT for one legacy-tracked exception: `private/01-method/colometry-canon.md`.** The canon is tracked via `git add -f` so the public repo shows its current form to any future scholar or collaborator reading the method doc.
+**`private/` is gitignored EXCEPT for two tracked exceptions: `private/01-method/colometry-canon.md` and `private/01-method/pericope-canon.md`.** Both canons are tracked via `git add -f` so the public repo shows their current form to any future scholar or collaborator reading the method docs. Colometry governs LINE breaks (within-verse cola); pericope governs SECTION breaks (multi-verse natural-unit boundaries).
 
 - **Dropbox is the sole versioning substrate** for the canon. Micro-refinement history lives in Dropbox's sync, not git.
 - **Git tracks only publicly-published canon state** — the form a scholar would read, weighed on its merits, not wading through micro-commit history.
