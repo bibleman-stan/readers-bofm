@@ -1,0 +1,3240 @@
+{
+  "book": "jacob",
+  "bookName": "Jacob",
+  "chapter": 5,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 1364.358,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.461,
+      "type": "line",
+      "text": "Behold, my brethren, do ye not remember",
+      "verse": "5:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.641,
+      "end": 5.474,
+      "type": "line",
+      "text": "to have read the words of the prophet Zenos,",
+      "verse": "5:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.654,
+      "end": 8.394,
+      "type": "line",
+      "text": "which he spake unto the house of Israel, saying:",
+      "verse": "5:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.074,
+      "end": 11.814,
+      "type": "line",
+      "text": "Hearken, O ye house of Israel,",
+      "verse": "5:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.994,
+      "end": 14.966,
+      "type": "line",
+      "text": "and hear the words of me, a prophet of the Lord.",
+      "verse": "5:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 15.646,
+      "end": 17.736,
+      "type": "line",
+      "text": "For behold, thus saith the Lord,",
+      "verse": "5:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 17.916,
+      "end": 19.449,
+      "type": "line",
+      "text": "I will liken thee,",
+      "verse": "5:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 19.629,
+      "end": 21.115,
+      "type": "line",
+      "text": "O house of Israel,",
+      "verse": "5:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 21.295,
+      "end": 23.431,
+      "type": "line",
+      "text": "like unto a tame olive tree,",
+      "verse": "5:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 23.611,
+      "end": 26.815,
+      "type": "line",
+      "text": "which a man took and nourished in his vineyard;",
+      "verse": "5:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 26.995,
+      "end": 30.432,
+      "type": "line",
+      "text": "and it grew, and waxed old, and began to decay.",
+      "verse": "5:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 31.112,
+      "end": 35.245,
+      "type": "line",
+      "text": "And it came to pass that the master of the vineyard went forth,",
+      "verse": "5:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 35.425,
+      "end": 38.351,
+      "type": "line",
+      "text": "and he saw that his olive tree began to decay;",
+      "verse": "5:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 38.531,
+      "end": 39.831,
+      "type": "line",
+      "text": "and he said:",
+      "verse": "5:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 40.011,
+      "end": 43.169,
+      "type": "line",
+      "text": "I will prune it, and dig about it, and nourish it,",
+      "verse": "5:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 43.349,
+      "end": 47.343,
+      "type": "line",
+      "text": "that perhaps it may shoot forth young and tender branches,",
+      "verse": "5:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 47.523,
+      "end": 49.056,
+      "type": "line",
+      "text": "and it perish not.",
+      "verse": "5:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 49.736,
+      "end": 52.197,
+      "type": "line",
+      "text": "And it came to pass that he pruned it,",
+      "verse": "5:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 52.377,
+      "end": 54.095,
+      "type": "line",
+      "text": "and digged about it,",
+      "verse": "5:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 54.275,
+      "end": 56.69,
+      "type": "line",
+      "text": "and nourished it according to his word.",
+      "verse": "5:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 57.37,
+      "end": 59.971,
+      "type": "line",
+      "text": "And it came to pass that after many days",
+      "verse": "5:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 60.151,
+      "end": 65.631,
+      "type": "line",
+      "text": "it began to put forth somewhat a little, young and tender branches;",
+      "verse": "5:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 65.811,
+      "end": 69.015,
+      "type": "line",
+      "text": "but behold, the main top thereof began to perish.",
+      "verse": "5:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 69.695,
+      "end": 74.153,
+      "type": "line",
+      "text": "And it came to pass that the master of the vineyard saw it,",
+      "verse": "5:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 74.333,
+      "end": 76.098,
+      "type": "line",
+      "text": "and he said unto his servant:",
+      "verse": "5:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 76.278,
+      "end": 78.972,
+      "type": "line",
+      "text": "It grieveth me that I should lose this tree;",
+      "verse": "5:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 79.152,
+      "end": 82.356,
+      "type": "line",
+      "text": "wherefore, go and pluck the branches from a wild olive tree,",
+      "verse": "5:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 82.536,
+      "end": 84.533,
+      "type": "line",
+      "text": "and bring them hither unto me;",
+      "verse": "5:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 84.713,
+      "end": 87.128,
+      "type": "line",
+      "text": "and we will pluck off those main branches",
+      "verse": "5:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 87.308,
+      "end": 89.723,
+      "type": "line",
+      "text": "which are beginning to wither away,",
+      "verse": "5:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 89.903,
+      "end": 93.293,
+      "type": "line",
+      "text": "and we will cast them into the fire that they may be burned.",
+      "verse": "5:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 93.973,
+      "end": 97.038,
+      "type": "line",
+      "text": "And behold, saith the Lord of the vineyard,",
+      "verse": "5:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 97.218,
+      "end": 100.608,
+      "type": "line",
+      "text": "I take away many of these young and tender branches,",
+      "verse": "5:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 100.788,
+      "end": 103.389,
+      "type": "line",
+      "text": "and I will graft them whithersoever I will;",
+      "verse": "5:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 103.569,
+      "end": 108.399,
+      "type": "line",
+      "text": "and it mattereth not that if it so be that the root of this tree will perish,",
+      "verse": "5:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 108.579,
+      "end": 111.83,
+      "type": "line",
+      "text": "I may preserve the fruit thereof unto myself;",
+      "verse": "5:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 112.01,
+      "end": 115.214,
+      "type": "line",
+      "text": "wherefore, I will take these young and tender branches,",
+      "verse": "5:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 115.394,
+      "end": 117.948,
+      "type": "line",
+      "text": "and I will graft them whithersoever I will.",
+      "verse": "5:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 118.628,
+      "end": 121.6,
+      "type": "line",
+      "text": "Take thou the branches of the wild olive tree,",
+      "verse": "5:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 121.78,
+      "end": 124.148,
+      "type": "line",
+      "text": "and graft them in, in the stead thereof;",
+      "verse": "5:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 124.328,
+      "end": 126.186,
+      "type": "line",
+      "text": "and these which I have plucked off",
+      "verse": "5:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 126.366,
+      "end": 128.967,
+      "type": "line",
+      "text": "I will cast into the fire and burn them,",
+      "verse": "5:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 129.147,
+      "end": 132.119,
+      "type": "line",
+      "text": "that they may not cumber the ground of my vineyard.",
+      "verse": "5:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 132.799,
+      "end": 136.793,
+      "type": "line",
+      "text": "And it came to pass that the servant of the Lord of the vineyard",
+      "verse": "5:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 136.973,
+      "end": 140.549,
+      "type": "line",
+      "text": "did according to the word of the Lord of the vineyard,",
+      "verse": "5:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 140.729,
+      "end": 143.98,
+      "type": "line",
+      "text": "and grafted in the branches of the wild olive tree.",
+      "verse": "5:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 144.66,
+      "end": 149.304,
+      "type": "line",
+      "text": "And the Lord of the vineyard caused that it should be digged about,",
+      "verse": "5:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 149.484,
+      "end": 150.645,
+      "type": "line",
+      "text": "and pruned,",
+      "verse": "5:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 150.825,
+      "end": 152.172,
+      "type": "line",
+      "text": "and nourished,",
+      "verse": "5:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 152.352,
+      "end": 153.977,
+      "type": "line",
+      "text": "saying unto his servant:",
+      "verse": "5:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 154.157,
+      "end": 156.851,
+      "type": "line",
+      "text": "It grieveth me that I should lose this tree;",
+      "verse": "5:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 157.031,
+      "end": 160.886,
+      "type": "line",
+      "text": "wherefore, that perhaps I might preserve the roots thereof",
+      "verse": "5:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 161.066,
+      "end": 162.645,
+      "type": "line",
+      "text": "that they perish not,",
+      "verse": "5:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 162.825,
+      "end": 165.519,
+      "type": "line",
+      "text": "that I might preserve them unto myself,",
+      "verse": "5:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 165.699,
+      "end": 167.185,
+      "type": "line",
+      "text": "I have done this thing.",
+      "verse": "5:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 167.865,
+      "end": 169.444,
+      "type": "line",
+      "text": "Wherefore, go thy way;",
+      "verse": "5:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 169.624,
+      "end": 172.828,
+      "type": "line",
+      "text": "watch the tree, and nourish it, according to my words.",
+      "verse": "5:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 173.508,
+      "end": 177.409,
+      "type": "line",
+      "text": "And these will I place in the nethermost part of my vineyard,",
+      "verse": "5:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 177.589,
+      "end": 181.118,
+      "type": "line",
+      "text": "whithersoever I will, it mattereth not unto thee;",
+      "verse": "5:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 181.298,
+      "end": 186.917,
+      "type": "line",
+      "text": "and I do it that I may preserve unto myself the natural branches of the tree;",
+      "verse": "5:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 187.097,
+      "end": 192.298,
+      "type": "line",
+      "text": "and also, that I may lay up fruit thereof against the season, unto myself;",
+      "verse": "5:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 192.478,
+      "end": 196.518,
+      "type": "line",
+      "text": "for it grieveth me that I should lose this tree and the fruit thereof.",
+      "verse": "5:13",
+      "lineIndex": 66
+    },
+    {
+      "start": 197.198,
+      "end": 200.727,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard went his way,",
+      "verse": "5:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 200.907,
+      "end": 207.223,
+      "type": "line",
+      "text": "and hid the natural branches of the tame olive tree in the nethermost parts of the vineyard,",
+      "verse": "5:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 207.403,
+      "end": 212.883,
+      "type": "line",
+      "text": "some in one and some in another, according to his will and pleasure.",
+      "verse": "5:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 213.563,
+      "end": 216.721,
+      "type": "line",
+      "text": "And it came to pass that a long time passed away,",
+      "verse": "5:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 216.901,
+      "end": 220.152,
+      "type": "line",
+      "text": "and the Lord of the vineyard said unto his servant:",
+      "verse": "5:15",
+      "lineIndex": 73
+    },
+    {
+      "start": 220.332,
+      "end": 223.118,
+      "type": "line",
+      "text": "Come, let us go down into the vineyard,",
+      "verse": "5:15",
+      "lineIndex": 74
+    },
+    {
+      "start": 223.298,
+      "end": 225.806,
+      "type": "line",
+      "text": "that we may labor in the vineyard.",
+      "verse": "5:15",
+      "lineIndex": 75
+    },
+    {
+      "start": 226.486,
+      "end": 230.201,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard,",
+      "verse": "5:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 230.381,
+      "end": 233.91,
+      "type": "line",
+      "text": "and also the servant, went down into the vineyard to labor.",
+      "verse": "5:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 234.09,
+      "end": 237.387,
+      "type": "line",
+      "text": "And it came to pass that the servant said unto his master:",
+      "verse": "5:16",
+      "lineIndex": 78
+    },
+    {
+      "start": 237.567,
+      "end": 238.867,
+      "type": "line",
+      "text": "Behold, look here;",
+      "verse": "5:16",
+      "lineIndex": 79
+    },
+    {
+      "start": 239.047,
+      "end": 240.254,
+      "type": "line",
+      "text": "behold the tree.",
+      "verse": "5:16",
+      "lineIndex": 80
+    },
+    {
+      "start": 240.934,
+      "end": 244.463,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard looked",
+      "verse": "5:17",
+      "lineIndex": 81
+    },
+    {
+      "start": 244.643,
+      "end": 249.798,
+      "type": "line",
+      "text": "and beheld the tree in the which the wild olive branches had been grafted;",
+      "verse": "5:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 249.978,
+      "end": 252.95,
+      "type": "line",
+      "text": "and it had sprung forth and begun to bear fruit.",
+      "verse": "5:17",
+      "lineIndex": 83
+    },
+    {
+      "start": 253.13,
+      "end": 255.498,
+      "type": "line",
+      "text": "And he beheld that it was good;",
+      "verse": "5:17",
+      "lineIndex": 84
+    },
+    {
+      "start": 255.678,
+      "end": 258.65,
+      "type": "line",
+      "text": "and the fruit thereof was like unto the natural fruit.",
+      "verse": "5:17",
+      "lineIndex": 85
+    },
+    {
+      "start": 259.33,
+      "end": 261.606,
+      "type": "line",
+      "text": "And he said unto the servant:",
+      "verse": "5:18",
+      "lineIndex": 86
+    },
+    {
+      "start": 261.786,
+      "end": 264.433,
+      "type": "line",
+      "text": "Behold, the branches of the wild tree",
+      "verse": "5:18",
+      "lineIndex": 87
+    },
+    {
+      "start": 264.613,
+      "end": 268.142,
+      "type": "line",
+      "text": "have taken hold of the moisture of the root thereof,",
+      "verse": "5:18",
+      "lineIndex": 88
+    },
+    {
+      "start": 268.322,
+      "end": 271.573,
+      "type": "line",
+      "text": "that the root thereof hath brought forth much strength;",
+      "verse": "5:18",
+      "lineIndex": 89
+    },
+    {
+      "start": 271.753,
+      "end": 275.236,
+      "type": "line",
+      "text": "and because of the much strength of the root thereof",
+      "verse": "5:18",
+      "lineIndex": 90
+    },
+    {
+      "start": 275.416,
+      "end": 278.342,
+      "type": "line",
+      "text": "the wild branches have brought forth tame fruit.",
+      "verse": "5:18",
+      "lineIndex": 91
+    },
+    {
+      "start": 278.522,
+      "end": 281.541,
+      "type": "line",
+      "text": "Now, if we had not grafted in these branches,",
+      "verse": "5:18",
+      "lineIndex": 92
+    },
+    {
+      "start": 281.721,
+      "end": 283.997,
+      "type": "line",
+      "text": "the tree thereof would have perished.",
+      "verse": "5:18",
+      "lineIndex": 93
+    },
+    {
+      "start": 284.177,
+      "end": 287.01,
+      "type": "line",
+      "text": "And now, behold, I shall lay up much fruit,",
+      "verse": "5:18",
+      "lineIndex": 94
+    },
+    {
+      "start": 287.19,
+      "end": 289.791,
+      "type": "line",
+      "text": "which the tree thereof hath brought forth;",
+      "verse": "5:18",
+      "lineIndex": 95
+    },
+    {
+      "start": 289.971,
+      "end": 295.126,
+      "type": "line",
+      "text": "and the fruit thereof I shall lay up against the season, unto mine own self.",
+      "verse": "5:18",
+      "lineIndex": 96
+    },
+    {
+      "start": 295.806,
+      "end": 300.404,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard said unto the servant:",
+      "verse": "5:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 300.584,
+      "end": 303.974,
+      "type": "line",
+      "text": "Come, let us go to the nethermost part of the vineyard,",
+      "verse": "5:19",
+      "lineIndex": 98
+    },
+    {
+      "start": 304.154,
+      "end": 307.73,
+      "type": "line",
+      "text": "and behold if the natural branches of the tree",
+      "verse": "5:19",
+      "lineIndex": 99
+    },
+    {
+      "start": 307.91,
+      "end": 310.325,
+      "type": "line",
+      "text": "have not brought forth much fruit also,",
+      "verse": "5:19",
+      "lineIndex": 100
+    },
+    {
+      "start": 310.505,
+      "end": 315.149,
+      "type": "line",
+      "text": "that I may lay up of the fruit thereof against the season, unto mine own self.",
+      "verse": "5:19",
+      "lineIndex": 101
+    },
+    {
+      "start": 315.829,
+      "end": 318.383,
+      "type": "line",
+      "text": "And it came to pass that they went forth",
+      "verse": "5:20",
+      "lineIndex": 103
+    },
+    {
+      "start": 318.563,
+      "end": 322.418,
+      "type": "line",
+      "text": "whither the master had hid the natural branches of the tree,",
+      "verse": "5:20",
+      "lineIndex": 104
+    },
+    {
+      "start": 322.598,
+      "end": 324.641,
+      "type": "line",
+      "text": "and he said unto the servant:",
+      "verse": "5:20",
+      "lineIndex": 105
+    },
+    {
+      "start": 324.821,
+      "end": 325.982,
+      "type": "line",
+      "text": "Behold these;",
+      "verse": "5:20",
+      "lineIndex": 106
+    },
+    {
+      "start": 326.162,
+      "end": 327.88,
+      "type": "line",
+      "text": "and he beheld the first",
+      "verse": "5:20",
+      "lineIndex": 107
+    },
+    {
+      "start": 328.06,
+      "end": 330.8,
+      "type": "line",
+      "text": "that it had brought forth much fruit;",
+      "verse": "5:20",
+      "lineIndex": 108
+    },
+    {
+      "start": 330.98,
+      "end": 333.441,
+      "type": "line",
+      "text": "and he beheld also that it was good.",
+      "verse": "5:20",
+      "lineIndex": 109
+    },
+    {
+      "start": 333.621,
+      "end": 335.897,
+      "type": "line",
+      "text": "And he said unto the servant:",
+      "verse": "5:20",
+      "lineIndex": 110
+    },
+    {
+      "start": 336.077,
+      "end": 337.888,
+      "type": "line",
+      "text": "Take of the fruit thereof,",
+      "verse": "5:20",
+      "lineIndex": 111
+    },
+    {
+      "start": 338.068,
+      "end": 340.111,
+      "type": "line",
+      "text": "and lay it up against the season,",
+      "verse": "5:20",
+      "lineIndex": 112
+    },
+    {
+      "start": 340.291,
+      "end": 343.17,
+      "type": "line",
+      "text": "that I may preserve it unto mine own self;",
+      "verse": "5:20",
+      "lineIndex": 113
+    },
+    {
+      "start": 343.35,
+      "end": 344.929,
+      "type": "line",
+      "text": "for behold, said he,",
+      "verse": "5:20",
+      "lineIndex": 114
+    },
+    {
+      "start": 345.109,
+      "end": 347.617,
+      "type": "line",
+      "text": "this long time have I nourished it,",
+      "verse": "5:20",
+      "lineIndex": 115
+    },
+    {
+      "start": 347.797,
+      "end": 350.212,
+      "type": "line",
+      "text": "and it hath brought forth much fruit.",
+      "verse": "5:20",
+      "lineIndex": 116
+    },
+    {
+      "start": 350.892,
+      "end": 354.189,
+      "type": "line",
+      "text": "And it came to pass that the servant said unto his master:",
+      "verse": "5:21",
+      "lineIndex": 117
+    },
+    {
+      "start": 354.369,
+      "end": 356.97,
+      "type": "line",
+      "text": "How comest thou hither to plant this tree,",
+      "verse": "5:21",
+      "lineIndex": 118
+    },
+    {
+      "start": 357.15,
+      "end": 358.822,
+      "type": "line",
+      "text": "or this branch of the tree?",
+      "verse": "5:21",
+      "lineIndex": 119
+    },
+    {
+      "start": 359.002,
+      "end": 363.321,
+      "type": "line",
+      "text": "For behold, it was the poorest spot in all the land of thy vineyard.",
+      "verse": "5:21",
+      "lineIndex": 120
+    },
+    {
+      "start": 364.001,
+      "end": 366.602,
+      "type": "line",
+      "text": "And the Lord of the vineyard said unto him:",
+      "verse": "5:22",
+      "lineIndex": 121
+    },
+    {
+      "start": 366.782,
+      "end": 368.222,
+      "type": "line",
+      "text": "Counsel me not;",
+      "verse": "5:22",
+      "lineIndex": 122
+    },
+    {
+      "start": 368.402,
+      "end": 370.863,
+      "type": "line",
+      "text": "I knew that it was a poor spot of ground;",
+      "verse": "5:22",
+      "lineIndex": 123
+    },
+    {
+      "start": 371.043,
+      "end": 372.854,
+      "type": "line",
+      "text": "wherefore, I said unto thee,",
+      "verse": "5:22",
+      "lineIndex": 124
+    },
+    {
+      "start": 373.034,
+      "end": 375.31,
+      "type": "line",
+      "text": "I have nourished it this long time,",
+      "verse": "5:22",
+      "lineIndex": 125
+    },
+    {
+      "start": 375.49,
+      "end": 378.834,
+      "type": "line",
+      "text": "and thou beholdest that it hath brought forth much fruit.",
+      "verse": "5:22",
+      "lineIndex": 126
+    },
+    {
+      "start": 379.514,
+      "end": 384.297,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard said unto his servant:",
+      "verse": "5:23",
+      "lineIndex": 127
+    },
+    {
+      "start": 384.477,
+      "end": 385.731,
+      "type": "line",
+      "text": "Look hither;",
+      "verse": "5:23",
+      "lineIndex": 128
+    },
+    {
+      "start": 385.911,
+      "end": 389.069,
+      "type": "line",
+      "text": "behold I have planted another branch of the tree also;",
+      "verse": "5:23",
+      "lineIndex": 129
+    },
+    {
+      "start": 389.249,
+      "end": 393.057,
+      "type": "line",
+      "text": "and thou knowest that this spot of ground was poorer than the first.",
+      "verse": "5:23",
+      "lineIndex": 130
+    },
+    {
+      "start": 393.237,
+      "end": 394.584,
+      "type": "line",
+      "text": "But, behold the tree.",
+      "verse": "5:23",
+      "lineIndex": 131
+    },
+    {
+      "start": 394.764,
+      "end": 397.04,
+      "type": "line",
+      "text": "I have nourished it this long time,",
+      "verse": "5:23",
+      "lineIndex": 132
+    },
+    {
+      "start": 397.22,
+      "end": 399.821,
+      "type": "line",
+      "text": "and it hath brought forth much fruit;",
+      "verse": "5:23",
+      "lineIndex": 133
+    },
+    {
+      "start": 400.001,
+      "end": 401.58,
+      "type": "line",
+      "text": "therefore, gather it,",
+      "verse": "5:23",
+      "lineIndex": 134
+    },
+    {
+      "start": 401.76,
+      "end": 403.803,
+      "type": "line",
+      "text": "and lay it up against the season,",
+      "verse": "5:23",
+      "lineIndex": 135
+    },
+    {
+      "start": 403.983,
+      "end": 406.584,
+      "type": "line",
+      "text": "that I may preserve it unto mine own self.",
+      "verse": "5:23",
+      "lineIndex": 136
+    },
+    {
+      "start": 407.264,
+      "end": 412.14,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard said again unto his servant:",
+      "verse": "5:24",
+      "lineIndex": 137
+    },
+    {
+      "start": 412.32,
+      "end": 413.342,
+      "type": "line",
+      "text": "Look hither,",
+      "verse": "5:24",
+      "lineIndex": 138
+    },
+    {
+      "start": 413.522,
+      "end": 417.237,
+      "type": "line",
+      "text": "and behold another branch also, which I have planted;",
+      "verse": "5:24",
+      "lineIndex": 139
+    },
+    {
+      "start": 417.417,
+      "end": 419.832,
+      "type": "line",
+      "text": "behold that I have nourished it also,",
+      "verse": "5:24",
+      "lineIndex": 140
+    },
+    {
+      "start": 420.012,
+      "end": 422.473,
+      "type": "line",
+      "text": "and it hath brought forth fruit.",
+      "verse": "5:24",
+      "lineIndex": 141
+    },
+    {
+      "start": 423.153,
+      "end": 425.429,
+      "type": "line",
+      "text": "And he said unto the servant:",
+      "verse": "5:25",
+      "lineIndex": 143
+    },
+    {
+      "start": 425.609,
+      "end": 426.724,
+      "type": "line",
+      "text": "Look hither",
+      "verse": "5:25",
+      "lineIndex": 144
+    },
+    {
+      "start": 426.904,
+      "end": 428.576,
+      "type": "line",
+      "text": "and behold the last.",
+      "verse": "5:25",
+      "lineIndex": 145
+    },
+    {
+      "start": 428.756,
+      "end": 432.007,
+      "type": "line",
+      "text": "Behold, this have I planted in a good spot of ground;",
+      "verse": "5:25",
+      "lineIndex": 146
+    },
+    {
+      "start": 432.187,
+      "end": 434.602,
+      "type": "line",
+      "text": "and I have nourished it this long time,",
+      "verse": "5:25",
+      "lineIndex": 147
+    },
+    {
+      "start": 434.782,
+      "end": 438.451,
+      "type": "line",
+      "text": "and only a part of the tree hath brought forth tame fruit,",
+      "verse": "5:25",
+      "lineIndex": 148
+    },
+    {
+      "start": 438.631,
+      "end": 442.16,
+      "type": "line",
+      "text": "and the other part of the tree hath brought forth wild fruit;",
+      "verse": "5:25",
+      "lineIndex": 149
+    },
+    {
+      "start": 442.34,
+      "end": 445.173,
+      "type": "line",
+      "text": "behold, I have nourished this tree like unto the others.",
+      "verse": "5:25",
+      "lineIndex": 150
+    },
+    {
+      "start": 445.853,
+      "end": 450.451,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard said unto the servant:",
+      "verse": "5:26",
+      "lineIndex": 151
+    },
+    {
+      "start": 450.631,
+      "end": 454.625,
+      "type": "line",
+      "text": "Pluck off the branches that have not brought forth good fruit,",
+      "verse": "5:26",
+      "lineIndex": 152
+    },
+    {
+      "start": 454.805,
+      "end": 456.848,
+      "type": "line",
+      "text": "and cast them into the fire.",
+      "verse": "5:26",
+      "lineIndex": 153
+    },
+    {
+      "start": 457.528,
+      "end": 459.711,
+      "type": "line",
+      "text": "But behold, the servant said unto him:",
+      "verse": "5:27",
+      "lineIndex": 154
+    },
+    {
+      "start": 459.891,
+      "end": 462.259,
+      "type": "line",
+      "text": "Let us prune it, and dig about it,",
+      "verse": "5:27",
+      "lineIndex": 155
+    },
+    {
+      "start": 462.439,
+      "end": 464.761,
+      "type": "line",
+      "text": "and nourish it a little longer,",
+      "verse": "5:27",
+      "lineIndex": 156
+    },
+    {
+      "start": 464.941,
+      "end": 468.378,
+      "type": "line",
+      "text": "that perhaps it may bring forth good fruit unto thee,",
+      "verse": "5:27",
+      "lineIndex": 157
+    },
+    {
+      "start": 468.558,
+      "end": 471.205,
+      "type": "line",
+      "text": "that thou canst lay it up against the season.",
+      "verse": "5:27",
+      "lineIndex": 158
+    },
+    {
+      "start": 471.885,
+      "end": 477.736,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard and the servant of the Lord of the vineyard",
+      "verse": "5:28",
+      "lineIndex": 160
+    },
+    {
+      "start": 477.916,
+      "end": 480.238,
+      "type": "line",
+      "text": "did nourish all the fruit of the vineyard.",
+      "verse": "5:28",
+      "lineIndex": 161
+    },
+    {
+      "start": 480.918,
+      "end": 484.262,
+      "type": "line",
+      "text": "And it came to pass that a long time had passed away,",
+      "verse": "5:29",
+      "lineIndex": 162
+    },
+    {
+      "start": 484.442,
+      "end": 487.693,
+      "type": "line",
+      "text": "and the Lord of the vineyard said unto his servant:",
+      "verse": "5:29",
+      "lineIndex": 163
+    },
+    {
+      "start": 487.873,
+      "end": 490.659,
+      "type": "line",
+      "text": "Come, let us go down into the vineyard,",
+      "verse": "5:29",
+      "lineIndex": 164
+    },
+    {
+      "start": 490.839,
+      "end": 493.579,
+      "type": "line",
+      "text": "that we may labor again in the vineyard.",
+      "verse": "5:29",
+      "lineIndex": 165
+    },
+    {
+      "start": 493.759,
+      "end": 496.035,
+      "type": "line",
+      "text": "For behold, the time draweth near,",
+      "verse": "5:29",
+      "lineIndex": 166
+    },
+    {
+      "start": 496.215,
+      "end": 497.933,
+      "type": "line",
+      "text": "and the end soon cometh;",
+      "verse": "5:29",
+      "lineIndex": 167
+    },
+    {
+      "start": 498.113,
+      "end": 502.757,
+      "type": "line",
+      "text": "wherefore, I must lay up fruit against the season, unto mine own self.",
+      "verse": "5:29",
+      "lineIndex": 168
+    },
+    {
+      "start": 503.437,
+      "end": 508.499,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard and the servant went down into the vineyard;",
+      "verse": "5:30",
+      "lineIndex": 169
+    },
+    {
+      "start": 508.679,
+      "end": 512.998,
+      "type": "line",
+      "text": "and they came to the tree whose natural branches had been broken off,",
+      "verse": "5:30",
+      "lineIndex": 170
+    },
+    {
+      "start": 513.178,
+      "end": 515.918,
+      "type": "line",
+      "text": "and the wild branches had been grafted in;",
+      "verse": "5:30",
+      "lineIndex": 171
+    },
+    {
+      "start": 516.098,
+      "end": 518.977,
+      "type": "line",
+      "text": "and behold all sorts of fruit did cumber the tree.",
+      "verse": "5:30",
+      "lineIndex": 172
+    },
+    {
+      "start": 519.657,
+      "end": 524.905,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard did taste of the fruit,",
+      "verse": "5:31",
+      "lineIndex": 173
+    },
+    {
+      "start": 525.085,
+      "end": 527.314,
+      "type": "line",
+      "text": "every sort according to its number.",
+      "verse": "5:31",
+      "lineIndex": 174
+    },
+    {
+      "start": 527.494,
+      "end": 529.77,
+      "type": "line",
+      "text": "And the Lord of the vineyard said:",
+      "verse": "5:31",
+      "lineIndex": 175
+    },
+    {
+      "start": 529.95,
+      "end": 532.69,
+      "type": "line",
+      "text": "Behold, this long time have we nourished this tree,",
+      "verse": "5:31",
+      "lineIndex": 176
+    },
+    {
+      "start": 532.87,
+      "end": 536.771,
+      "type": "line",
+      "text": "and I have laid up unto myself against the season much fruit.",
+      "verse": "5:31",
+      "lineIndex": 177
+    },
+    {
+      "start": 537.451,
+      "end": 541.166,
+      "type": "line",
+      "text": "But behold, this time it hath brought forth much fruit,",
+      "verse": "5:32",
+      "lineIndex": 179
+    },
+    {
+      "start": 541.346,
+      "end": 543.761,
+      "type": "line",
+      "text": "and there is none of it which is good.",
+      "verse": "5:32",
+      "lineIndex": 180
+    },
+    {
+      "start": 543.941,
+      "end": 546.727,
+      "type": "line",
+      "text": "And behold, there are all kinds of bad fruit;",
+      "verse": "5:32",
+      "lineIndex": 181
+    },
+    {
+      "start": 546.907,
+      "end": 548.765,
+      "type": "line",
+      "text": "and it profiteth me nothing,",
+      "verse": "5:32",
+      "lineIndex": 182
+    },
+    {
+      "start": 548.945,
+      "end": 551.128,
+      "type": "line",
+      "text": "notwithstanding all our labor;",
+      "verse": "5:32",
+      "lineIndex": 183
+    },
+    {
+      "start": 551.308,
+      "end": 554.28,
+      "type": "line",
+      "text": "and now it grieveth me that I should lose this tree.",
+      "verse": "5:32",
+      "lineIndex": 184
+    },
+    {
+      "start": 554.96,
+      "end": 558.164,
+      "type": "line",
+      "text": "And the Lord of the vineyard said unto the servant:",
+      "verse": "5:33",
+      "lineIndex": 185
+    },
+    {
+      "start": 558.344,
+      "end": 560.48,
+      "type": "line",
+      "text": "What shall we do unto the tree,",
+      "verse": "5:33",
+      "lineIndex": 186
+    },
+    {
+      "start": 560.66,
+      "end": 564.84,
+      "type": "line",
+      "text": "that I may preserve again good fruit thereof unto mine own self?",
+      "verse": "5:33",
+      "lineIndex": 187
+    },
+    {
+      "start": 565.52,
+      "end": 567.935,
+      "type": "line",
+      "text": "And the servant said unto his master:",
+      "verse": "5:34",
+      "lineIndex": 188
+    },
+    {
+      "start": 568.115,
+      "end": 573.084,
+      "type": "line",
+      "text": "Behold, because thou didst graft in the branches of the wild olive tree",
+      "verse": "5:34",
+      "lineIndex": 189
+    },
+    {
+      "start": 573.264,
+      "end": 575.168,
+      "type": "line",
+      "text": "they have nourished the roots,",
+      "verse": "5:34",
+      "lineIndex": 190
+    },
+    {
+      "start": 575.348,
+      "end": 578.552,
+      "type": "line",
+      "text": "that they are alive and they have not perished;",
+      "verse": "5:34",
+      "lineIndex": 191
+    },
+    {
+      "start": 578.732,
+      "end": 581.936,
+      "type": "line",
+      "text": "wherefore thou beholdest that they are yet good.",
+      "verse": "5:34",
+      "lineIndex": 192
+    },
+    {
+      "start": 582.616,
+      "end": 587.399,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard said unto his servant:",
+      "verse": "5:35",
+      "lineIndex": 193
+    },
+    {
+      "start": 587.579,
+      "end": 589.529,
+      "type": "line",
+      "text": "The tree profiteth me nothing,",
+      "verse": "5:35",
+      "lineIndex": 194
+    },
+    {
+      "start": 589.709,
+      "end": 592.31,
+      "type": "line",
+      "text": "and the roots thereof profit me nothing",
+      "verse": "5:35",
+      "lineIndex": 195
+    },
+    {
+      "start": 592.49,
+      "end": 594.951,
+      "type": "line",
+      "text": "so long as it shall bring forth evil fruit.",
+      "verse": "5:35",
+      "lineIndex": 196
+    },
+    {
+      "start": 595.631,
+      "end": 598.278,
+      "type": "line",
+      "text": "Nevertheless, I know that the roots are good,",
+      "verse": "5:36",
+      "lineIndex": 197
+    },
+    {
+      "start": 598.458,
+      "end": 601.152,
+      "type": "line",
+      "text": "and for mine own purpose I have preserved them;",
+      "verse": "5:36",
+      "lineIndex": 198
+    },
+    {
+      "start": 601.332,
+      "end": 603.793,
+      "type": "line",
+      "text": "and because of their much strength",
+      "verse": "5:36",
+      "lineIndex": 199
+    },
+    {
+      "start": 603.973,
+      "end": 610.15,
+      "type": "line",
+      "text": "they have hitherto brought forth, from the wild branches, good fruit.",
+      "verse": "5:36",
+      "lineIndex": 200
+    },
+    {
+      "start": 610.83,
+      "end": 615.66,
+      "type": "line",
+      "text": "But behold, the wild branches have grown and have overrun the roots thereof;",
+      "verse": "5:37",
+      "lineIndex": 201
+    },
+    {
+      "start": 615.84,
+      "end": 620.345,
+      "type": "line",
+      "text": "and because that the wild branches have overcome the roots thereof",
+      "verse": "5:37",
+      "lineIndex": 202
+    },
+    {
+      "start": 620.525,
+      "end": 623.126,
+      "type": "line",
+      "text": "it hath brought forth much evil fruit;",
+      "verse": "5:37",
+      "lineIndex": 203
+    },
+    {
+      "start": 623.306,
+      "end": 626.789,
+      "type": "line",
+      "text": "and because that it hath brought forth so much evil fruit",
+      "verse": "5:37",
+      "lineIndex": 204
+    },
+    {
+      "start": 626.969,
+      "end": 629.57,
+      "type": "line",
+      "text": "thou beholdest that it beginneth to perish;",
+      "verse": "5:37",
+      "lineIndex": 205
+    },
+    {
+      "start": 629.75,
+      "end": 631.886,
+      "type": "line",
+      "text": "and it will soon become ripened,",
+      "verse": "5:37",
+      "lineIndex": 206
+    },
+    {
+      "start": 632.066,
+      "end": 634.295,
+      "type": "line",
+      "text": "that it may be cast into the fire,",
+      "verse": "5:37",
+      "lineIndex": 207
+    },
+    {
+      "start": 634.475,
+      "end": 638.469,
+      "type": "line",
+      "text": "except we should do something for it to preserve it.",
+      "verse": "5:37",
+      "lineIndex": 208
+    },
+    {
+      "start": 639.149,
+      "end": 643.932,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard said unto his servant:",
+      "verse": "5:38",
+      "lineIndex": 210
+    },
+    {
+      "start": 644.112,
+      "end": 647.781,
+      "type": "line",
+      "text": "Let us go down into the nethermost parts of the vineyard,",
+      "verse": "5:38",
+      "lineIndex": 211
+    },
+    {
+      "start": 647.961,
+      "end": 653.72,
+      "type": "line",
+      "text": "and behold if the natural branches have also brought forth evil fruit.",
+      "verse": "5:38",
+      "lineIndex": 212
+    },
+    {
+      "start": 654.4,
+      "end": 659.555,
+      "type": "line",
+      "text": "And it came to pass that they went down into the nethermost parts of the vineyard.",
+      "verse": "5:39",
+      "lineIndex": 213
+    },
+    {
+      "start": 659.735,
+      "end": 667.305,
+      "type": "line",
+      "text": "And it came to pass that they beheld that the fruit of the natural branches had become corrupt also;",
+      "verse": "5:39",
+      "lineIndex": 214
+    },
+    {
+      "start": 667.485,
+      "end": 670.736,
+      "type": "line",
+      "text": "yea, the first and the second and also the last;",
+      "verse": "5:39",
+      "lineIndex": 215
+    },
+    {
+      "start": 670.916,
+      "end": 672.913,
+      "type": "line",
+      "text": "and they had all become corrupt.",
+      "verse": "5:39",
+      "lineIndex": 216
+    },
+    {
+      "start": 673.593,
+      "end": 676.379,
+      "type": "line",
+      "text": "And the wild fruit of the last had overcome",
+      "verse": "5:40",
+      "lineIndex": 217
+    },
+    {
+      "start": 676.559,
+      "end": 679.531,
+      "type": "line",
+      "text": "that part of the tree which brought forth good fruit,",
+      "verse": "5:40",
+      "lineIndex": 218
+    },
+    {
+      "start": 679.711,
+      "end": 682.544,
+      "type": "line",
+      "text": "even that the branch had withered away and died.",
+      "verse": "5:40",
+      "lineIndex": 219
+    },
+    {
+      "start": 683.224,
+      "end": 686.8,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard wept,",
+      "verse": "5:41",
+      "lineIndex": 220
+    },
+    {
+      "start": 686.98,
+      "end": 688.652,
+      "type": "line",
+      "text": "and said unto the servant:",
+      "verse": "5:41",
+      "lineIndex": 221
+    },
+    {
+      "start": 688.832,
+      "end": 691.479,
+      "type": "line",
+      "text": "What could I have done more for my vineyard?",
+      "verse": "5:41",
+      "lineIndex": 222
+    },
+    {
+      "start": 692.159,
+      "end": 695.317,
+      "type": "line",
+      "text": "Behold, I knew that all the fruit of the vineyard,",
+      "verse": "5:42",
+      "lineIndex": 224
+    },
+    {
+      "start": 695.497,
+      "end": 698.098,
+      "type": "line",
+      "text": "save it were these, had become corrupted.",
+      "verse": "5:42",
+      "lineIndex": 225
+    },
+    {
+      "start": 698.278,
+      "end": 703.201,
+      "type": "line",
+      "text": "And now these which have once brought forth good fruit have also become corrupted;",
+      "verse": "5:42",
+      "lineIndex": 226
+    },
+    {
+      "start": 703.381,
+      "end": 707.282,
+      "type": "line",
+      "text": "and now all the trees of my vineyard are good for nothing",
+      "verse": "5:42",
+      "lineIndex": 227
+    },
+    {
+      "start": 707.462,
+      "end": 711.038,
+      "type": "line",
+      "text": "save it be to be hewn down and cast into the fire.",
+      "verse": "5:42",
+      "lineIndex": 228
+    },
+    {
+      "start": 711.718,
+      "end": 713.204,
+      "type": "line",
+      "text": "And behold this last,",
+      "verse": "5:43",
+      "lineIndex": 229
+    },
+    {
+      "start": 713.384,
+      "end": 715.613,
+      "type": "line",
+      "text": "whose branch hath withered away,",
+      "verse": "5:43",
+      "lineIndex": 230
+    },
+    {
+      "start": 715.793,
+      "end": 718.208,
+      "type": "line",
+      "text": "I did plant in a good spot of ground;",
+      "verse": "5:43",
+      "lineIndex": 231
+    },
+    {
+      "start": 718.388,
+      "end": 725.029,
+      "type": "line",
+      "text": "yea, even that which was choice unto me above all other parts of the land of my vineyard.",
+      "verse": "5:43",
+      "lineIndex": 232
+    },
+    {
+      "start": 725.709,
+      "end": 728.31,
+      "type": "line",
+      "text": "And thou beheldest that I also cut down",
+      "verse": "5:44",
+      "lineIndex": 233
+    },
+    {
+      "start": 728.49,
+      "end": 730.905,
+      "type": "line",
+      "text": "that which cumbered this spot of ground,",
+      "verse": "5:44",
+      "lineIndex": 234
+    },
+    {
+      "start": 731.085,
+      "end": 734.475,
+      "type": "line",
+      "text": "that I might plant this tree in the stead thereof.",
+      "verse": "5:44",
+      "lineIndex": 235
+    },
+    {
+      "start": 735.155,
+      "end": 739.427,
+      "type": "line",
+      "text": "And thou beheldest that a part thereof brought forth good fruit,",
+      "verse": "5:45",
+      "lineIndex": 236
+    },
+    {
+      "start": 739.607,
+      "end": 742.718,
+      "type": "line",
+      "text": "and a part thereof brought forth wild fruit;",
+      "verse": "5:45",
+      "lineIndex": 237
+    },
+    {
+      "start": 742.898,
+      "end": 748.424,
+      "type": "line",
+      "text": "and because I plucked not the branches thereof and cast them into the fire,",
+      "verse": "5:45",
+      "lineIndex": 238
+    },
+    {
+      "start": 748.604,
+      "end": 753.387,
+      "type": "line",
+      "text": "behold, they have overcome the good branch that it hath withered away.",
+      "verse": "5:45",
+      "lineIndex": 239
+    },
+    {
+      "start": 754.067,
+      "end": 757.132,
+      "type": "line",
+      "text": "And now, behold, notwithstanding all the care",
+      "verse": "5:46",
+      "lineIndex": 240
+    },
+    {
+      "start": 757.312,
+      "end": 760.052,
+      "type": "line",
+      "text": "which we have taken of my vineyard,",
+      "verse": "5:46",
+      "lineIndex": 241
+    },
+    {
+      "start": 760.232,
+      "end": 762.693,
+      "type": "line",
+      "text": "the trees thereof have become corrupted,",
+      "verse": "5:46",
+      "lineIndex": 242
+    },
+    {
+      "start": 762.873,
+      "end": 765.149,
+      "type": "line",
+      "text": "that they bring forth no good fruit;",
+      "verse": "5:46",
+      "lineIndex": 243
+    },
+    {
+      "start": 765.329,
+      "end": 767.651,
+      "type": "line",
+      "text": "and these I had hoped to preserve,",
+      "verse": "5:46",
+      "lineIndex": 244
+    },
+    {
+      "start": 767.831,
+      "end": 772.382,
+      "type": "line",
+      "text": "to have laid up fruit thereof against the season, unto mine own self.",
+      "verse": "5:46",
+      "lineIndex": 245
+    },
+    {
+      "start": 772.562,
+      "end": 776.277,
+      "type": "line",
+      "text": "But, behold, they have become like unto the wild olive tree,",
+      "verse": "5:46",
+      "lineIndex": 246
+    },
+    {
+      "start": 776.457,
+      "end": 780.869,
+      "type": "line",
+      "text": "and they are of no worth but to be hewn down and cast into the fire;",
+      "verse": "5:46",
+      "lineIndex": 247
+    },
+    {
+      "start": 781.049,
+      "end": 783.464,
+      "type": "line",
+      "text": "and it grieveth me that I should lose them.",
+      "verse": "5:46",
+      "lineIndex": 248
+    },
+    {
+      "start": 784.144,
+      "end": 787.348,
+      "type": "line",
+      "text": "But what could I have done more in my vineyard?",
+      "verse": "5:47",
+      "lineIndex": 249
+    },
+    {
+      "start": 787.528,
+      "end": 789.525,
+      "type": "line",
+      "text": "Have I slackened mine hand,",
+      "verse": "5:47",
+      "lineIndex": 250
+    },
+    {
+      "start": 789.705,
+      "end": 791.423,
+      "type": "line",
+      "text": "that I have not nourished it?",
+      "verse": "5:47",
+      "lineIndex": 251
+    },
+    {
+      "start": 791.603,
+      "end": 794.993,
+      "type": "line",
+      "text": "Nay, I have nourished it, and I have digged about it,",
+      "verse": "5:47",
+      "lineIndex": 252
+    },
+    {
+      "start": 795.173,
+      "end": 798.47,
+      "type": "line",
+      "text": "and I have pruned it, and I have dunged it;",
+      "verse": "5:47",
+      "lineIndex": 253
+    },
+    {
+      "start": 798.65,
+      "end": 802.319,
+      "type": "line",
+      "text": "and I have stretched forth mine hand almost all the day long,",
+      "verse": "5:47",
+      "lineIndex": 254
+    },
+    {
+      "start": 802.499,
+      "end": 804.171,
+      "type": "line",
+      "text": "and the end draweth nigh.",
+      "verse": "5:47",
+      "lineIndex": 255
+    },
+    {
+      "start": 804.351,
+      "end": 808.67,
+      "type": "line",
+      "text": "And it grieveth me that I should hew down all the trees of my vineyard,",
+      "verse": "5:47",
+      "lineIndex": 256
+    },
+    {
+      "start": 808.85,
+      "end": 811.915,
+      "type": "line",
+      "text": "and cast them into the fire that they should be burned.",
+      "verse": "5:47",
+      "lineIndex": 257
+    },
+    {
+      "start": 812.095,
+      "end": 814.649,
+      "type": "line",
+      "text": "Who is it that has corrupted my vineyard?",
+      "verse": "5:47",
+      "lineIndex": 258
+    },
+    {
+      "start": 815.329,
+      "end": 818.626,
+      "type": "line",
+      "text": "And it came to pass that the servant said unto his master:",
+      "verse": "5:48",
+      "lineIndex": 259
+    },
+    {
+      "start": 818.806,
+      "end": 821.592,
+      "type": "line",
+      "text": "Is it not the loftiness of thy vineyard\u2014",
+      "verse": "5:48",
+      "lineIndex": 260
+    },
+    {
+      "start": 821.772,
+      "end": 825.766,
+      "type": "line",
+      "text": "have not the branches thereof overcome the roots which are good?",
+      "verse": "5:48",
+      "lineIndex": 261
+    },
+    {
+      "start": 825.946,
+      "end": 829.986,
+      "type": "line",
+      "text": "And because the branches have overcome the roots thereof,",
+      "verse": "5:48",
+      "lineIndex": 262
+    },
+    {
+      "start": 830.166,
+      "end": 833.37,
+      "type": "line",
+      "text": "behold they grew faster than the strength of the roots,",
+      "verse": "5:48",
+      "lineIndex": 263
+    },
+    {
+      "start": 833.55,
+      "end": 835.547,
+      "type": "line",
+      "text": "taking strength unto themselves.",
+      "verse": "5:48",
+      "lineIndex": 264
+    },
+    {
+      "start": 835.727,
+      "end": 841.16,
+      "type": "line",
+      "text": "Behold, I say, is not this the cause that the trees of thy vineyard have become corrupted?",
+      "verse": "5:48",
+      "lineIndex": 265
+    },
+    {
+      "start": 841.84,
+      "end": 846.438,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard said unto the servant:",
+      "verse": "5:49",
+      "lineIndex": 266
+    },
+    {
+      "start": 846.618,
+      "end": 850.055,
+      "type": "line",
+      "text": "Let us go to and hew down the trees of the vineyard",
+      "verse": "5:49",
+      "lineIndex": 267
+    },
+    {
+      "start": 850.235,
+      "end": 852.093,
+      "type": "line",
+      "text": "and cast them into the fire,",
+      "verse": "5:49",
+      "lineIndex": 268
+    },
+    {
+      "start": 852.273,
+      "end": 855.338,
+      "type": "line",
+      "text": "that they shall not cumber the ground of my vineyard,",
+      "verse": "5:49",
+      "lineIndex": 269
+    },
+    {
+      "start": 855.518,
+      "end": 857.051,
+      "type": "line",
+      "text": "for I have done all.",
+      "verse": "5:49",
+      "lineIndex": 270
+    },
+    {
+      "start": 857.231,
+      "end": 859.878,
+      "type": "line",
+      "text": "What could I have done more for my vineyard?",
+      "verse": "5:49",
+      "lineIndex": 271
+    },
+    {
+      "start": 860.558,
+      "end": 864.273,
+      "type": "line",
+      "text": "But, behold, the servant said unto the Lord of the vineyard:",
+      "verse": "5:50",
+      "lineIndex": 273
+    },
+    {
+      "start": 864.453,
+      "end": 866.032,
+      "type": "line",
+      "text": "Spare it a little longer.",
+      "verse": "5:50",
+      "lineIndex": 274
+    },
+    {
+      "start": 866.712,
+      "end": 868.291,
+      "type": "line",
+      "text": "And the Lord said:",
+      "verse": "5:51",
+      "lineIndex": 275
+    },
+    {
+      "start": 868.471,
+      "end": 870.607,
+      "type": "line",
+      "text": "Yea, I will spare it a little longer,",
+      "verse": "5:51",
+      "lineIndex": 276
+    },
+    {
+      "start": 870.787,
+      "end": 874.409,
+      "type": "line",
+      "text": "for it grieveth me that I should lose the trees of my vineyard.",
+      "verse": "5:51",
+      "lineIndex": 277
+    },
+    {
+      "start": 875.089,
+      "end": 878.34,
+      "type": "line",
+      "text": "Wherefore, let us take of the branches of these",
+      "verse": "5:52",
+      "lineIndex": 279
+    },
+    {
+      "start": 878.52,
+      "end": 882.56,
+      "type": "line",
+      "text": "which I have planted in the nethermost parts of my vineyard,",
+      "verse": "5:52",
+      "lineIndex": 280
+    },
+    {
+      "start": 882.74,
+      "end": 885.851,
+      "type": "line",
+      "text": "and let us graft them into the tree from whence they came;",
+      "verse": "5:52",
+      "lineIndex": 281
+    },
+    {
+      "start": 886.031,
+      "end": 891.093,
+      "type": "line",
+      "text": "and let us pluck from the tree those branches whose fruit is most bitter,",
+      "verse": "5:52",
+      "lineIndex": 282
+    },
+    {
+      "start": 891.273,
+      "end": 895.917,
+      "type": "line",
+      "text": "and graft in the natural branches of the tree in the stead thereof.",
+      "verse": "5:52",
+      "lineIndex": 283
+    },
+    {
+      "start": 896.597,
+      "end": 899.43,
+      "type": "line",
+      "text": "And this will I do that the tree may not perish,",
+      "verse": "5:53",
+      "lineIndex": 284
+    },
+    {
+      "start": 899.61,
+      "end": 904.904,
+      "type": "line",
+      "text": "that, perhaps, I may preserve unto myself the roots thereof for mine own purpose.",
+      "verse": "5:53",
+      "lineIndex": 285
+    },
+    {
+      "start": 905.584,
+      "end": 909.346,
+      "type": "line",
+      "text": "And, behold, the roots of the natural branches of the tree",
+      "verse": "5:54",
+      "lineIndex": 286
+    },
+    {
+      "start": 909.526,
+      "end": 913.334,
+      "type": "line",
+      "text": "which I planted whithersoever I would are yet alive;",
+      "verse": "5:54",
+      "lineIndex": 287
+    },
+    {
+      "start": 913.514,
+      "end": 917.369,
+      "type": "line",
+      "text": "wherefore, that I may preserve them also for mine own purpose,",
+      "verse": "5:54",
+      "lineIndex": 288
+    },
+    {
+      "start": 917.549,
+      "end": 920.01,
+      "type": "line",
+      "text": "I will take of the branches of this tree,",
+      "verse": "5:54",
+      "lineIndex": 289
+    },
+    {
+      "start": 920.19,
+      "end": 922.466,
+      "type": "line",
+      "text": "and I will graft them in unto them.",
+      "verse": "5:54",
+      "lineIndex": 290
+    },
+    {
+      "start": 922.646,
+      "end": 926.268,
+      "type": "line",
+      "text": "Yea, I will graft in unto them the branches of their mother tree,",
+      "verse": "5:54",
+      "lineIndex": 291
+    },
+    {
+      "start": 926.448,
+      "end": 929.652,
+      "type": "line",
+      "text": "that I may preserve the roots also unto mine own self,",
+      "verse": "5:54",
+      "lineIndex": 292
+    },
+    {
+      "start": 929.832,
+      "end": 932.479,
+      "type": "line",
+      "text": "that when they shall be sufficiently strong",
+      "verse": "5:54",
+      "lineIndex": 293
+    },
+    {
+      "start": 932.659,
+      "end": 936.003,
+      "type": "line",
+      "text": "perhaps they may bring forth good fruit unto me,",
+      "verse": "5:54",
+      "lineIndex": 294
+    },
+    {
+      "start": 936.183,
+      "end": 939.62,
+      "type": "line",
+      "text": "and I may yet have glory in the fruit of my vineyard.",
+      "verse": "5:54",
+      "lineIndex": 295
+    },
+    {
+      "start": 940.3,
+      "end": 945.13,
+      "type": "line",
+      "text": "And it came to pass that they took from the natural tree which had become wild,",
+      "verse": "5:55",
+      "lineIndex": 297
+    },
+    {
+      "start": 945.31,
+      "end": 947.957,
+      "type": "line",
+      "text": "and grafted in unto the natural trees,",
+      "verse": "5:55",
+      "lineIndex": 298
+    },
+    {
+      "start": 948.137,
+      "end": 949.995,
+      "type": "line",
+      "text": "which also had become wild.",
+      "verse": "5:55",
+      "lineIndex": 299
+    },
+    {
+      "start": 950.675,
+      "end": 954.204,
+      "type": "line",
+      "text": "And they also took of the natural trees which had become wild,",
+      "verse": "5:56",
+      "lineIndex": 300
+    },
+    {
+      "start": 954.384,
+      "end": 956.985,
+      "type": "line",
+      "text": "and grafted into their mother tree.",
+      "verse": "5:56",
+      "lineIndex": 301
+    },
+    {
+      "start": 957.665,
+      "end": 960.869,
+      "type": "line",
+      "text": "And the Lord of the vineyard said unto the servant:",
+      "verse": "5:57",
+      "lineIndex": 302
+    },
+    {
+      "start": 961.049,
+      "end": 963.046,
+      "type": "line",
+      "text": "Pluck not the wild branches",
+      "verse": "5:57",
+      "lineIndex": 303
+    },
+    {
+      "start": 963.226,
+      "end": 967.173,
+      "type": "line",
+      "text": "from the trees, save it be those which are most bitter;",
+      "verse": "5:57",
+      "lineIndex": 304
+    },
+    {
+      "start": 967.353,
+      "end": 971.393,
+      "type": "line",
+      "text": "and in them ye shall graft according to that which I have said.",
+      "verse": "5:57",
+      "lineIndex": 305
+    },
+    {
+      "start": 972.073,
+      "end": 975.045,
+      "type": "line",
+      "text": "And we will nourish again the trees of the vineyard,",
+      "verse": "5:58",
+      "lineIndex": 306
+    },
+    {
+      "start": 975.225,
+      "end": 977.64,
+      "type": "line",
+      "text": "and we will trim up the branches thereof;",
+      "verse": "5:58",
+      "lineIndex": 307
+    },
+    {
+      "start": 977.82,
+      "end": 981.349,
+      "type": "line",
+      "text": "and we will pluck from the trees those branches",
+      "verse": "5:58",
+      "lineIndex": 308
+    },
+    {
+      "start": 981.529,
+      "end": 982.969,
+      "type": "line",
+      "text": "which are ripened,",
+      "verse": "5:58",
+      "lineIndex": 309
+    },
+    {
+      "start": 983.149,
+      "end": 986.214,
+      "type": "line",
+      "text": "that must perish, and cast them into the fire.",
+      "verse": "5:58",
+      "lineIndex": 310
+    },
+    {
+      "start": 986.894,
+      "end": 992.653,
+      "type": "line",
+      "text": "And this I do that, perhaps, the roots thereof may take strength because of their goodness;",
+      "verse": "5:59",
+      "lineIndex": 311
+    },
+    {
+      "start": 992.833,
+      "end": 995.341,
+      "type": "line",
+      "text": "and because of the change of the branches,",
+      "verse": "5:59",
+      "lineIndex": 312
+    },
+    {
+      "start": 995.521,
+      "end": 997.611,
+      "type": "line",
+      "text": "that the good may overcome the evil.",
+      "verse": "5:59",
+      "lineIndex": 313
+    },
+    {
+      "start": 998.291,
+      "end": 1001.402,
+      "type": "line",
+      "text": "And because that I have preserved the natural branches",
+      "verse": "5:60",
+      "lineIndex": 315
+    },
+    {
+      "start": 1001.582,
+      "end": 1003.3,
+      "type": "line",
+      "text": "and the roots thereof,",
+      "verse": "5:60",
+      "lineIndex": 316
+    },
+    {
+      "start": 1003.48,
+      "end": 1008.078,
+      "type": "line",
+      "text": "and that I have grafted in the natural branches again into their mother tree,",
+      "verse": "5:60",
+      "lineIndex": 317
+    },
+    {
+      "start": 1008.258,
+      "end": 1011.137,
+      "type": "line",
+      "text": "and have preserved the roots of their mother tree,",
+      "verse": "5:60",
+      "lineIndex": 318
+    },
+    {
+      "start": 1011.317,
+      "end": 1016.054,
+      "type": "line",
+      "text": "that, perhaps, the trees of my vineyard may bring forth again good fruit;",
+      "verse": "5:60",
+      "lineIndex": 319
+    },
+    {
+      "start": 1016.234,
+      "end": 1019.763,
+      "type": "line",
+      "text": "and that I may have joy again in the fruit of my vineyard,",
+      "verse": "5:60",
+      "lineIndex": 320
+    },
+    {
+      "start": 1019.943,
+      "end": 1023.147,
+      "type": "line",
+      "text": "and, perhaps, that I may rejoice exceedingly",
+      "verse": "5:60",
+      "lineIndex": 321
+    },
+    {
+      "start": 1023.327,
+      "end": 1027.367,
+      "type": "line",
+      "text": "that I have preserved the roots and the branches of the first fruit\u2014",
+      "verse": "5:60",
+      "lineIndex": 322
+    },
+    {
+      "start": 1028.047,
+      "end": 1030.508,
+      "type": "line",
+      "text": "Wherefore, go to, and call servants,",
+      "verse": "5:61",
+      "lineIndex": 323
+    },
+    {
+      "start": 1030.688,
+      "end": 1034.728,
+      "type": "line",
+      "text": "that we may labor diligently with our might in the vineyard,",
+      "verse": "5:61",
+      "lineIndex": 324
+    },
+    {
+      "start": 1034.908,
+      "end": 1036.719,
+      "type": "line",
+      "text": "that we may prepare the way,",
+      "verse": "5:61",
+      "lineIndex": 325
+    },
+    {
+      "start": 1036.899,
+      "end": 1039.918,
+      "type": "line",
+      "text": "that I may bring forth again the natural fruit,",
+      "verse": "5:61",
+      "lineIndex": 326
+    },
+    {
+      "start": 1040.098,
+      "end": 1045.717,
+      "type": "line",
+      "text": "which natural fruit is good and the most precious above all other fruit.",
+      "verse": "5:61",
+      "lineIndex": 327
+    },
+    {
+      "start": 1046.397,
+      "end": 1050.716,
+      "type": "line",
+      "text": "Wherefore, let us go to and labor with our might this last time,",
+      "verse": "5:62",
+      "lineIndex": 328
+    },
+    {
+      "start": 1050.896,
+      "end": 1053.172,
+      "type": "line",
+      "text": "for behold the end draweth nigh,",
+      "verse": "5:62",
+      "lineIndex": 329
+    },
+    {
+      "start": 1053.352,
+      "end": 1056.696,
+      "type": "line",
+      "text": "and this is for the last time that I shall prune my vineyard.",
+      "verse": "5:62",
+      "lineIndex": 330
+    },
+    {
+      "start": 1057.376,
+      "end": 1059.094,
+      "type": "line",
+      "text": "Graft in the branches;",
+      "verse": "5:63",
+      "lineIndex": 331
+    },
+    {
+      "start": 1059.274,
+      "end": 1062.06,
+      "type": "line",
+      "text": "begin at the last that they may be first,",
+      "verse": "5:63",
+      "lineIndex": 332
+    },
+    {
+      "start": 1062.24,
+      "end": 1064.376,
+      "type": "line",
+      "text": "and that the first may be last,",
+      "verse": "5:63",
+      "lineIndex": 333
+    },
+    {
+      "start": 1064.556,
+      "end": 1067.389,
+      "type": "line",
+      "text": "and dig about the trees, both old and young,",
+      "verse": "5:63",
+      "lineIndex": 334
+    },
+    {
+      "start": 1067.569,
+      "end": 1070.68,
+      "type": "line",
+      "text": "the first and the last; and the last and the first,",
+      "verse": "5:63",
+      "lineIndex": 335
+    },
+    {
+      "start": 1070.86,
+      "end": 1074.297,
+      "type": "line",
+      "text": "that all may be nourished once again for the last time.",
+      "verse": "5:63",
+      "lineIndex": 336
+    },
+    {
+      "start": 1074.977,
+      "end": 1077.671,
+      "type": "line",
+      "text": "Wherefore, dig about them, and prune them,",
+      "verse": "5:64",
+      "lineIndex": 337
+    },
+    {
+      "start": 1077.851,
+      "end": 1080.591,
+      "type": "line",
+      "text": "and dung them once more, for the last time,",
+      "verse": "5:64",
+      "lineIndex": 338
+    },
+    {
+      "start": 1080.771,
+      "end": 1082.35,
+      "type": "line",
+      "text": "for the end draweth nigh.",
+      "verse": "5:64",
+      "lineIndex": 339
+    },
+    {
+      "start": 1082.53,
+      "end": 1085.641,
+      "type": "line",
+      "text": "And if it be so that these last grafts shall grow,",
+      "verse": "5:64",
+      "lineIndex": 340
+    },
+    {
+      "start": 1085.821,
+      "end": 1088.097,
+      "type": "line",
+      "text": "and bring forth the natural fruit,",
+      "verse": "5:64",
+      "lineIndex": 341
+    },
+    {
+      "start": 1088.277,
+      "end": 1090.692,
+      "type": "line",
+      "text": "then shall ye prepare the way for them,",
+      "verse": "5:64",
+      "lineIndex": 342
+    },
+    {
+      "start": 1090.872,
+      "end": 1092.451,
+      "type": "line",
+      "text": "that they may grow.",
+      "verse": "5:64",
+      "lineIndex": 343
+    },
+    {
+      "start": 1093.131,
+      "end": 1094.989,
+      "type": "line",
+      "text": "And as they begin to grow",
+      "verse": "5:65",
+      "lineIndex": 345
+    },
+    {
+      "start": 1095.169,
+      "end": 1103.435,
+      "type": "line",
+      "text": "ye shall clear away the branches which bring forth bitter fruit, according to the strength of the good and the size thereof;",
+      "verse": "5:65",
+      "lineIndex": 346
+    },
+    {
+      "start": 1103.615,
+      "end": 1106.959,
+      "type": "line",
+      "text": "and ye shall not clear away the bad thereof all at once,",
+      "verse": "5:65",
+      "lineIndex": 347
+    },
+    {
+      "start": 1107.139,
+      "end": 1110.854,
+      "type": "line",
+      "text": "lest the roots thereof should be too strong for the graft,",
+      "verse": "5:65",
+      "lineIndex": 348
+    },
+    {
+      "start": 1111.034,
+      "end": 1113.402,
+      "type": "line",
+      "text": "and the graft thereof shall perish,",
+      "verse": "5:65",
+      "lineIndex": 349
+    },
+    {
+      "start": 1113.582,
+      "end": 1116.043,
+      "type": "line",
+      "text": "and I lose the trees of my vineyard.",
+      "verse": "5:65",
+      "lineIndex": 350
+    },
+    {
+      "start": 1116.723,
+      "end": 1120.531,
+      "type": "line",
+      "text": "For it grieveth me that I should lose the trees of my vineyard;",
+      "verse": "5:66",
+      "lineIndex": 351
+    },
+    {
+      "start": 1120.711,
+      "end": 1125.169,
+      "type": "line",
+      "text": "wherefore ye shall clear away the bad according as the good shall grow,",
+      "verse": "5:66",
+      "lineIndex": 352
+    },
+    {
+      "start": 1125.349,
+      "end": 1128.46,
+      "type": "line",
+      "text": "that the root and the top may be equal in strength,",
+      "verse": "5:66",
+      "lineIndex": 353
+    },
+    {
+      "start": 1128.64,
+      "end": 1131.148,
+      "type": "line",
+      "text": "until the good shall overcome the bad,",
+      "verse": "5:66",
+      "lineIndex": 354
+    },
+    {
+      "start": 1131.328,
+      "end": 1134.347,
+      "type": "line",
+      "text": "and the bad be hewn down and cast into the fire,",
+      "verse": "5:66",
+      "lineIndex": 355
+    },
+    {
+      "start": 1134.527,
+      "end": 1137.592,
+      "type": "line",
+      "text": "that they cumber not the ground of my vineyard;",
+      "verse": "5:66",
+      "lineIndex": 356
+    },
+    {
+      "start": 1137.772,
+      "end": 1141.348,
+      "type": "line",
+      "text": "and thus will I sweep away the bad out of my vineyard.",
+      "verse": "5:66",
+      "lineIndex": 357
+    },
+    {
+      "start": 1142.028,
+      "end": 1146.997,
+      "type": "line",
+      "text": "And the branches of the natural tree will I graft in again into the natural tree;",
+      "verse": "5:67",
+      "lineIndex": 358
+    },
+    {
+      "start": 1147.677,
+      "end": 1153.11,
+      "type": "line",
+      "text": "And the branches of the natural tree will I graft into the natural branches of the tree;",
+      "verse": "5:68",
+      "lineIndex": 359
+    },
+    {
+      "start": 1153.29,
+      "end": 1155.658,
+      "type": "line",
+      "text": "and thus will I bring them together again,",
+      "verse": "5:68",
+      "lineIndex": 360
+    },
+    {
+      "start": 1155.838,
+      "end": 1158.764,
+      "type": "line",
+      "text": "that they shall bring forth the natural fruit,",
+      "verse": "5:68",
+      "lineIndex": 361
+    },
+    {
+      "start": 1158.944,
+      "end": 1160.43,
+      "type": "line",
+      "text": "and they shall be one.",
+      "verse": "5:68",
+      "lineIndex": 362
+    },
+    {
+      "start": 1161.11,
+      "end": 1166.311,
+      "type": "line",
+      "text": "And the bad shall be cast away, yea, even out of all the land of my vineyard;",
+      "verse": "5:69",
+      "lineIndex": 363
+    },
+    {
+      "start": 1166.491,
+      "end": 1169.556,
+      "type": "line",
+      "text": "for behold, only this once will I prune my vineyard.",
+      "verse": "5:69",
+      "lineIndex": 364
+    },
+    {
+      "start": 1170.236,
+      "end": 1174.741,
+      "type": "line",
+      "text": "And it came to pass that the Lord of the vineyard sent his servant;",
+      "verse": "5:70",
+      "lineIndex": 366
+    },
+    {
+      "start": 1174.921,
+      "end": 1178.358,
+      "type": "line",
+      "text": "and the servant went and did as the Lord had commanded him,",
+      "verse": "5:70",
+      "lineIndex": 367
+    },
+    {
+      "start": 1178.538,
+      "end": 1181.557,
+      "type": "line",
+      "text": "and brought other servants; and they were few.",
+      "verse": "5:70",
+      "lineIndex": 368
+    },
+    {
+      "start": 1182.237,
+      "end": 1185.116,
+      "type": "line",
+      "text": "And the Lord of the vineyard said unto them:",
+      "verse": "5:71",
+      "lineIndex": 369
+    },
+    {
+      "start": 1185.296,
+      "end": 1188.965,
+      "type": "line",
+      "text": "Go to, and labor in the vineyard, with your might.",
+      "verse": "5:71",
+      "lineIndex": 370
+    },
+    {
+      "start": 1189.145,
+      "end": 1192.86,
+      "type": "line",
+      "text": "For behold, this is the last time that I shall nourish my vineyard;",
+      "verse": "5:71",
+      "lineIndex": 371
+    },
+    {
+      "start": 1193.04,
+      "end": 1194.99,
+      "type": "line",
+      "text": "for the end is nigh at hand,",
+      "verse": "5:71",
+      "lineIndex": 372
+    },
+    {
+      "start": 1195.17,
+      "end": 1197.446,
+      "type": "line",
+      "text": "and the season speedily cometh;",
+      "verse": "5:71",
+      "lineIndex": 373
+    },
+    {
+      "start": 1197.626,
+      "end": 1200.18,
+      "type": "line",
+      "text": "and if ye labor with your might with me",
+      "verse": "5:71",
+      "lineIndex": 374
+    },
+    {
+      "start": 1200.36,
+      "end": 1203.889,
+      "type": "line",
+      "text": "ye shall have joy in the fruit which I shall lay up unto myself",
+      "verse": "5:71",
+      "lineIndex": 375
+    },
+    {
+      "start": 1204.069,
+      "end": 1206.298,
+      "type": "line",
+      "text": "against the time which will soon come.",
+      "verse": "5:71",
+      "lineIndex": 376
+    },
+    {
+      "start": 1206.978,
+      "end": 1211.297,
+      "type": "line",
+      "text": "And it came to pass that the servants did go and labor with their mights;",
+      "verse": "5:72",
+      "lineIndex": 377
+    },
+    {
+      "start": 1211.477,
+      "end": 1214.728,
+      "type": "line",
+      "text": "and the Lord of the vineyard labored also with them;",
+      "verse": "5:72",
+      "lineIndex": 378
+    },
+    {
+      "start": 1214.908,
+      "end": 1219.273,
+      "type": "line",
+      "text": "and they did obey the commandments of the Lord of the vineyard in all things.",
+      "verse": "5:72",
+      "lineIndex": 379
+    },
+    {
+      "start": 1219.953,
+      "end": 1225.061,
+      "type": "line",
+      "text": "And there began to be the natural fruit again in the vineyard;",
+      "verse": "5:73",
+      "lineIndex": 380
+    },
+    {
+      "start": 1225.241,
+      "end": 1229.56,
+      "type": "line",
+      "text": "and the natural branches began to grow and thrive exceedingly;",
+      "verse": "5:73",
+      "lineIndex": 381
+    },
+    {
+      "start": 1229.74,
+      "end": 1233.641,
+      "type": "line",
+      "text": "and the wild branches began to be plucked off and to be cast away;",
+      "verse": "5:73",
+      "lineIndex": 382
+    },
+    {
+      "start": 1233.821,
+      "end": 1239.022,
+      "type": "line",
+      "text": "and they did keep the root and the top thereof equal, according to the strength thereof.",
+      "verse": "5:73",
+      "lineIndex": 383
+    },
+    {
+      "start": 1239.702,
+      "end": 1246.947,
+      "type": "line",
+      "text": "And thus they labored, with all diligence, according to the commandments of the Lord of the vineyard,",
+      "verse": "5:74",
+      "lineIndex": 384
+    },
+    {
+      "start": 1247.127,
+      "end": 1250.982,
+      "type": "line",
+      "text": "even until the bad had been cast away out of the vineyard,",
+      "verse": "5:74",
+      "lineIndex": 385
+    },
+    {
+      "start": 1251.162,
+      "end": 1253.623,
+      "type": "line",
+      "text": "and the Lord had preserved unto himself",
+      "verse": "5:74",
+      "lineIndex": 386
+    },
+    {
+      "start": 1253.803,
+      "end": 1258.308,
+      "type": "line",
+      "text": "that the trees had become again the natural fruit;",
+      "verse": "5:74",
+      "lineIndex": 387
+    },
+    {
+      "start": 1258.488,
+      "end": 1260.949,
+      "type": "line",
+      "text": "and they became like unto one body;",
+      "verse": "5:74",
+      "lineIndex": 388
+    },
+    {
+      "start": 1261.129,
+      "end": 1263.172,
+      "type": "line",
+      "text": "and the fruits were equal;",
+      "verse": "5:74",
+      "lineIndex": 389
+    },
+    {
+      "start": 1263.352,
+      "end": 1267.671,
+      "type": "line",
+      "text": "and the Lord of the vineyard had preserved unto himself the natural fruit,",
+      "verse": "5:74",
+      "lineIndex": 390
+    },
+    {
+      "start": 1267.851,
+      "end": 1271.102,
+      "type": "line",
+      "text": "which was most precious unto him from the beginning.",
+      "verse": "5:74",
+      "lineIndex": 391
+    },
+    {
+      "start": 1271.782,
+      "end": 1279.491,
+      "type": "line",
+      "text": "And it came to pass that when the Lord of the vineyard saw that his fruit was good, and that his vineyard was no more corrupt,",
+      "verse": "5:75",
+      "lineIndex": 392
+    },
+    {
+      "start": 1279.671,
+      "end": 1281.389,
+      "type": "line",
+      "text": "he called up his servants,",
+      "verse": "5:75",
+      "lineIndex": 393
+    },
+    {
+      "start": 1281.569,
+      "end": 1283.194,
+      "type": "line",
+      "text": "and said unto them:",
+      "verse": "5:75",
+      "lineIndex": 394
+    },
+    {
+      "start": 1283.374,
+      "end": 1286.393,
+      "type": "line",
+      "text": "Behold, for this last time have we nourished my vineyard;",
+      "verse": "5:75",
+      "lineIndex": 395
+    },
+    {
+      "start": 1286.573,
+      "end": 1289.731,
+      "type": "line",
+      "text": "and thou beholdest that I have done according to my will;",
+      "verse": "5:75",
+      "lineIndex": 396
+    },
+    {
+      "start": 1289.911,
+      "end": 1292.326,
+      "type": "line",
+      "text": "and I have preserved the natural fruit,",
+      "verse": "5:75",
+      "lineIndex": 397
+    },
+    {
+      "start": 1292.506,
+      "end": 1293.806,
+      "type": "line",
+      "text": "that it is good,",
+      "verse": "5:75",
+      "lineIndex": 398
+    },
+    {
+      "start": 1293.986,
+      "end": 1296.401,
+      "type": "line",
+      "text": "even like as it was in the beginning.",
+      "verse": "5:75",
+      "lineIndex": 399
+    },
+    {
+      "start": 1296.581,
+      "end": 1298.114,
+      "type": "line",
+      "text": "And blessed art thou;",
+      "verse": "5:75",
+      "lineIndex": 400
+    },
+    {
+      "start": 1298.294,
+      "end": 1302.984,
+      "type": "line",
+      "text": "for because ye have been diligent in laboring with me in my vineyard,",
+      "verse": "5:75",
+      "lineIndex": 401
+    },
+    {
+      "start": 1303.164,
+      "end": 1305.114,
+      "type": "line",
+      "text": "and have kept my commandments,",
+      "verse": "5:75",
+      "lineIndex": 402
+    },
+    {
+      "start": 1305.294,
+      "end": 1308.22,
+      "type": "line",
+      "text": "and have brought unto me again the natural fruit,",
+      "verse": "5:75",
+      "lineIndex": 403
+    },
+    {
+      "start": 1308.4,
+      "end": 1311.047,
+      "type": "line",
+      "text": "that my vineyard is no more corrupted,",
+      "verse": "5:75",
+      "lineIndex": 404
+    },
+    {
+      "start": 1311.227,
+      "end": 1313.224,
+      "type": "line",
+      "text": "and the bad is cast away,",
+      "verse": "5:75",
+      "lineIndex": 405
+    },
+    {
+      "start": 1313.404,
+      "end": 1317.723,
+      "type": "line",
+      "text": "behold ye shall have joy with me because of the fruit of my vineyard.",
+      "verse": "5:75",
+      "lineIndex": 406
+    },
+    {
+      "start": 1318.403,
+      "end": 1324.997,
+      "type": "line",
+      "text": "For behold, for a long time will I lay up of the fruit of my vineyard unto mine own self against the season,",
+      "verse": "5:76",
+      "lineIndex": 407
+    },
+    {
+      "start": 1325.177,
+      "end": 1326.988,
+      "type": "line",
+      "text": "which speedily cometh;",
+      "verse": "5:76",
+      "lineIndex": 408
+    },
+    {
+      "start": 1327.168,
+      "end": 1330.326,
+      "type": "line",
+      "text": "and for the last time have I nourished my vineyard,",
+      "verse": "5:76",
+      "lineIndex": 409
+    },
+    {
+      "start": 1330.506,
+      "end": 1331.667,
+      "type": "line",
+      "text": "and pruned it,",
+      "verse": "5:76",
+      "lineIndex": 410
+    },
+    {
+      "start": 1331.847,
+      "end": 1333.38,
+      "type": "line",
+      "text": "and dug about it,",
+      "verse": "5:76",
+      "lineIndex": 411
+    },
+    {
+      "start": 1333.56,
+      "end": 1334.953,
+      "type": "line",
+      "text": "and dunged it;",
+      "verse": "5:76",
+      "lineIndex": 412
+    },
+    {
+      "start": 1335.133,
+      "end": 1338.477,
+      "type": "line",
+      "text": "wherefore I will lay up unto mine own self of the fruit,",
+      "verse": "5:76",
+      "lineIndex": 413
+    },
+    {
+      "start": 1338.657,
+      "end": 1341.954,
+      "type": "line",
+      "text": "for a long time, according to that which I have spoken.",
+      "verse": "5:76",
+      "lineIndex": 414
+    },
+    {
+      "start": 1342.634,
+      "end": 1347.742,
+      "type": "line",
+      "text": "And when the time cometh that evil fruit shall again come into my vineyard,",
+      "verse": "5:77",
+      "lineIndex": 416
+    },
+    {
+      "start": 1347.922,
+      "end": 1350.941,
+      "type": "line",
+      "text": "then will I cause the good and the bad to be gathered;",
+      "verse": "5:77",
+      "lineIndex": 417
+    },
+    {
+      "start": 1351.121,
+      "end": 1353.722,
+      "type": "line",
+      "text": "and the good will I preserve unto myself,",
+      "verse": "5:77",
+      "lineIndex": 418
+    },
+    {
+      "start": 1353.902,
+      "end": 1357.385,
+      "type": "line",
+      "text": "and the bad will I cast away into its own place.",
+      "verse": "5:77",
+      "lineIndex": 419
+    },
+    {
+      "start": 1357.565,
+      "end": 1360.073,
+      "type": "line",
+      "text": "And then cometh the season and the end;",
+      "verse": "5:77",
+      "lineIndex": 420
+    },
+    {
+      "start": 1360.253,
+      "end": 1363.736,
+      "type": "line",
+      "text": "and my vineyard will I cause to be burned with fire.",
+      "verse": "5:77",
+      "lineIndex": 421
+    }
+  ]
+}
