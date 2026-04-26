@@ -1,0 +1,816 @@
+{
+  "book": "jacob",
+  "bookName": "Jacob",
+  "chapter": 4,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 351.515,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.619,
+      "type": "line",
+      "text": "Now behold, it came to pass that I, Jacob, having ministered much unto my people in word,",
+      "verse": "4:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.799,
+      "end": 12.672,
+      "type": "line",
+      "text": "(and I cannot write but a little of my words, because of the difficulty of engraving our words upon plates)",
+      "verse": "4:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 12.852,
+      "end": 17.96,
+      "type": "line",
+      "text": "and we know that the things which we write upon plates must remain;",
+      "verse": "4:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 18.64,
+      "end": 23.423,
+      "type": "line",
+      "text": "But whatsoever things we write upon anything save it be upon plates",
+      "verse": "4:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 23.603,
+      "end": 25.786,
+      "type": "line",
+      "text": "must perish and vanish away;",
+      "verse": "4:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 25.966,
+      "end": 28.799,
+      "type": "line",
+      "text": "but we can write a few words upon plates,",
+      "verse": "4:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 28.979,
+      "end": 31.162,
+      "type": "line",
+      "text": "which will give our children,",
+      "verse": "4:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 31.342,
+      "end": 33.385,
+      "type": "line",
+      "text": "and also our beloved brethren,",
+      "verse": "4:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.565,
+      "end": 36.212,
+      "type": "line",
+      "text": "a small degree of knowledge concerning us,",
+      "verse": "4:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 36.392,
+      "end": 38.25,
+      "type": "line",
+      "text": "or concerning their fathers\u2014",
+      "verse": "4:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 38.93,
+      "end": 41.159,
+      "type": "line",
+      "text": "Now in this thing we do rejoice;",
+      "verse": "4:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 41.339,
+      "end": 45.426,
+      "type": "line",
+      "text": "and we labor diligently to engraven these words upon plates,",
+      "verse": "4:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 45.606,
+      "end": 48.857,
+      "type": "line",
+      "text": "hoping that our beloved brethren and our children",
+      "verse": "4:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 49.037,
+      "end": 51.498,
+      "type": "line",
+      "text": "will receive them with thankful hearts,",
+      "verse": "4:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 51.678,
+      "end": 54.418,
+      "type": "line",
+      "text": "and look upon them that they may learn with joy",
+      "verse": "4:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 54.598,
+      "end": 57.709,
+      "type": "line",
+      "text": "and not with sorrow, neither with contempt,",
+      "verse": "4:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 57.889,
+      "end": 60.211,
+      "type": "line",
+      "text": "concerning their first parents.",
+      "verse": "4:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 60.891,
+      "end": 64.095,
+      "type": "line",
+      "text": "For, for this intent have we written these things,",
+      "verse": "4:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 64.275,
+      "end": 66.736,
+      "type": "line",
+      "text": "that they may know that we knew of Christ,",
+      "verse": "4:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 66.916,
+      "end": 71.188,
+      "type": "line",
+      "text": "and we had a hope of his glory many hundred years before his coming;",
+      "verse": "4:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 71.368,
+      "end": 74.851,
+      "type": "line",
+      "text": "and not only we ourselves had a hope of his glory,",
+      "verse": "4:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 75.031,
+      "end": 78.05,
+      "type": "line",
+      "text": "but also all the holy prophets which were before us.",
+      "verse": "4:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 78.73,
+      "end": 82.585,
+      "type": "line",
+      "text": "Behold, they believed in Christ and worshiped the Father in his name,",
+      "verse": "4:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 82.765,
+      "end": 85.133,
+      "type": "line",
+      "text": "and also we worship the Father in his name.",
+      "verse": "4:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 85.313,
+      "end": 88.099,
+      "type": "line",
+      "text": "And for this intent we keep the law of Moses,",
+      "verse": "4:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 88.279,
+      "end": 90.369,
+      "type": "line",
+      "text": "it pointing our souls to him;",
+      "verse": "4:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 90.549,
+      "end": 95.054,
+      "type": "line",
+      "text": "and for this cause it is sanctified unto us for righteousness,",
+      "verse": "4:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 95.234,
+      "end": 96.999,
+      "type": "line",
+      "text": "even as it was accounted",
+      "verse": "4:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 97.179,
+      "end": 103.82,
+      "type": "line",
+      "text": "unto Abraham in the wilderness to be obedient unto the commands of God in offering up his son Isaac,",
+      "verse": "4:5",
+      "lineIndex": 29
+    },
+    {
+      "start": 104.0,
+      "end": 107.808,
+      "type": "line",
+      "text": "which is a similitude of God and his Only Begotten Son.",
+      "verse": "4:5",
+      "lineIndex": 30
+    },
+    {
+      "start": 108.488,
+      "end": 110.578,
+      "type": "line",
+      "text": "Wherefore, we search the prophets,",
+      "verse": "4:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 110.758,
+      "end": 113.962,
+      "type": "line",
+      "text": "and we have many revelations and the spirit of prophecy;",
+      "verse": "4:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 114.142,
+      "end": 116.232,
+      "type": "line",
+      "text": "and having all these witnesses",
+      "verse": "4:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 116.412,
+      "end": 120.22,
+      "type": "line",
+      "text": "we obtain a hope, and our faith becometh unshaken,",
+      "verse": "4:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 120.4,
+      "end": 123.558,
+      "type": "line",
+      "text": "insomuch that we truly can command in the name of Jesus",
+      "verse": "4:6",
+      "lineIndex": 35
+    },
+    {
+      "start": 123.738,
+      "end": 125.828,
+      "type": "line",
+      "text": "and the very trees obey us,",
+      "verse": "4:6",
+      "lineIndex": 36
+    },
+    {
+      "start": 126.008,
+      "end": 127.401,
+      "type": "line",
+      "text": "or the mountains,",
+      "verse": "4:6",
+      "lineIndex": 37
+    },
+    {
+      "start": 127.581,
+      "end": 129.392,
+      "type": "line",
+      "text": "or the waves of the sea.",
+      "verse": "4:6",
+      "lineIndex": 38
+    },
+    {
+      "start": 130.072,
+      "end": 135.738,
+      "type": "line",
+      "text": "Nevertheless, the Lord God showeth us our weakness that we may know that it is by his grace,",
+      "verse": "4:7",
+      "lineIndex": 39
+    },
+    {
+      "start": 135.918,
+      "end": 139.308,
+      "type": "line",
+      "text": "and his great condescensions unto the children of men,",
+      "verse": "4:7",
+      "lineIndex": 40
+    },
+    {
+      "start": 139.488,
+      "end": 141.949,
+      "type": "line",
+      "text": "that we have power to do these things.",
+      "verse": "4:7",
+      "lineIndex": 41
+    },
+    {
+      "start": 142.629,
+      "end": 146.066,
+      "type": "line",
+      "text": "Behold, great and marvelous are the works of the Lord.",
+      "verse": "4:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 146.246,
+      "end": 150.054,
+      "type": "line",
+      "text": "How unsearchable are the depths of the mysteries of him;",
+      "verse": "4:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 150.234,
+      "end": 153.763,
+      "type": "line",
+      "text": "and it is impossible that man should find out all his ways.",
+      "verse": "4:8",
+      "lineIndex": 44
+    },
+    {
+      "start": 153.943,
+      "end": 158.169,
+      "type": "line",
+      "text": "And no man knoweth of his ways save it be revealed unto him;",
+      "verse": "4:8",
+      "lineIndex": 45
+    },
+    {
+      "start": 158.349,
+      "end": 162.111,
+      "type": "line",
+      "text": "wherefore, brethren, despise not the revelations of God.",
+      "verse": "4:8",
+      "lineIndex": 46
+    },
+    {
+      "start": 162.791,
+      "end": 165.206,
+      "type": "line",
+      "text": "For behold, by the power of his word",
+      "verse": "4:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 165.386,
+      "end": 167.847,
+      "type": "line",
+      "text": "man came upon the face of the earth,",
+      "verse": "4:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 168.027,
+      "end": 171.464,
+      "type": "line",
+      "text": "which earth was created by the power of his word.",
+      "verse": "4:9",
+      "lineIndex": 49
+    },
+    {
+      "start": 171.644,
+      "end": 175.22,
+      "type": "line",
+      "text": "Wherefore, if God being able to speak and the world was,",
+      "verse": "4:9",
+      "lineIndex": 50
+    },
+    {
+      "start": 175.4,
+      "end": 178.001,
+      "type": "line",
+      "text": "and to speak and man was created,",
+      "verse": "4:9",
+      "lineIndex": 51
+    },
+    {
+      "start": 178.181,
+      "end": 180.689,
+      "type": "line",
+      "text": "O then, why not able to command the earth,",
+      "verse": "4:9",
+      "lineIndex": 52
+    },
+    {
+      "start": 180.869,
+      "end": 186.395,
+      "type": "line",
+      "text": "or the workmanship of his hands upon the face of it, according to his will and pleasure?",
+      "verse": "4:9",
+      "lineIndex": 53
+    },
+    {
+      "start": 187.075,
+      "end": 190.233,
+      "type": "line",
+      "text": "Wherefore, brethren, seek not to counsel the Lord,",
+      "verse": "4:10",
+      "lineIndex": 55
+    },
+    {
+      "start": 190.413,
+      "end": 192.781,
+      "type": "line",
+      "text": "but to take counsel from his hand.",
+      "verse": "4:10",
+      "lineIndex": 56
+    },
+    {
+      "start": 192.961,
+      "end": 200.252,
+      "type": "line",
+      "text": "For behold, ye yourselves know that he counseleth in wisdom, and in justice, and in great mercy, over all his works.",
+      "verse": "4:10",
+      "lineIndex": 57
+    },
+    {
+      "start": 200.932,
+      "end": 207.573,
+      "type": "line",
+      "text": "Wherefore, beloved brethren, be reconciled unto him through the atonement of Christ, his Only Begotten Son,",
+      "verse": "4:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 207.753,
+      "end": 212.861,
+      "type": "line",
+      "text": "and ye may obtain a resurrection, according to the power of the resurrection which is in Christ,",
+      "verse": "4:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 213.041,
+      "end": 216.849,
+      "type": "line",
+      "text": "and be presented as the first-fruits of Christ unto God,",
+      "verse": "4:11",
+      "lineIndex": 60
+    },
+    {
+      "start": 217.029,
+      "end": 220.373,
+      "type": "line",
+      "text": "having faith, and obtained a good hope of glory in him",
+      "verse": "4:11",
+      "lineIndex": 61
+    },
+    {
+      "start": 220.553,
+      "end": 223.339,
+      "type": "line",
+      "text": "before he manifesteth himself in the flesh.",
+      "verse": "4:11",
+      "lineIndex": 62
+    },
+    {
+      "start": 224.019,
+      "end": 227.363,
+      "type": "line",
+      "text": "And now, beloved, marvel not that I tell you these things;",
+      "verse": "4:12",
+      "lineIndex": 63
+    },
+    {
+      "start": 227.543,
+      "end": 230.608,
+      "type": "line",
+      "text": "for why not speak of the atonement of Christ,",
+      "verse": "4:12",
+      "lineIndex": 64
+    },
+    {
+      "start": 230.788,
+      "end": 233.342,
+      "type": "line",
+      "text": "and attain to a perfect knowledge of him,",
+      "verse": "4:12",
+      "lineIndex": 65
+    },
+    {
+      "start": 233.522,
+      "end": 236.448,
+      "type": "line",
+      "text": "as to attain to the knowledge of a resurrection",
+      "verse": "4:12",
+      "lineIndex": 66
+    },
+    {
+      "start": 236.628,
+      "end": 238.253,
+      "type": "line",
+      "text": "and the world to come?",
+      "verse": "4:12",
+      "lineIndex": 67
+    },
+    {
+      "start": 238.933,
+      "end": 241.487,
+      "type": "line",
+      "text": "Behold, my brethren, he that prophesieth,",
+      "verse": "4:13",
+      "lineIndex": 68
+    },
+    {
+      "start": 241.667,
+      "end": 244.686,
+      "type": "line",
+      "text": "let him prophesy to the understanding of men;",
+      "verse": "4:13",
+      "lineIndex": 69
+    },
+    {
+      "start": 244.866,
+      "end": 247.838,
+      "type": "line",
+      "text": "for the Spirit speaketh the truth and lieth not.",
+      "verse": "4:13",
+      "lineIndex": 70
+    },
+    {
+      "start": 248.018,
+      "end": 251.315,
+      "type": "line",
+      "text": "Wherefore, it speaketh of things as they really are,",
+      "verse": "4:13",
+      "lineIndex": 71
+    },
+    {
+      "start": 251.495,
+      "end": 253.817,
+      "type": "line",
+      "text": "and of things as they really will be;",
+      "verse": "4:13",
+      "lineIndex": 72
+    },
+    {
+      "start": 253.997,
+      "end": 259.709,
+      "type": "line",
+      "text": "wherefore, these things are manifested unto us plainly, for the salvation of our souls.",
+      "verse": "4:13",
+      "lineIndex": 73
+    },
+    {
+      "start": 259.889,
+      "end": 263.279,
+      "type": "line",
+      "text": "But behold, we are not witnesses alone in these things;",
+      "verse": "4:13",
+      "lineIndex": 74
+    },
+    {
+      "start": 263.459,
+      "end": 266.524,
+      "type": "line",
+      "text": "for God also spake them unto prophets of old.",
+      "verse": "4:13",
+      "lineIndex": 75
+    },
+    {
+      "start": 267.204,
+      "end": 270.176,
+      "type": "line",
+      "text": "But behold, the Jews were a stiffnecked people;",
+      "verse": "4:14",
+      "lineIndex": 77
+    },
+    {
+      "start": 270.356,
+      "end": 272.817,
+      "type": "line",
+      "text": "and they despised the words of plainness,",
+      "verse": "4:14",
+      "lineIndex": 78
+    },
+    {
+      "start": 272.997,
+      "end": 274.483,
+      "type": "line",
+      "text": "and killed the prophets,",
+      "verse": "4:14",
+      "lineIndex": 79
+    },
+    {
+      "start": 274.663,
+      "end": 277.542,
+      "type": "line",
+      "text": "and sought for things that they could not understand.",
+      "verse": "4:14",
+      "lineIndex": 80
+    },
+    {
+      "start": 277.722,
+      "end": 279.998,
+      "type": "line",
+      "text": "Wherefore, because of their blindness,",
+      "verse": "4:14",
+      "lineIndex": 81
+    },
+    {
+      "start": 280.178,
+      "end": 283.15,
+      "type": "line",
+      "text": "which blindness came by looking beyond the mark,",
+      "verse": "4:14",
+      "lineIndex": 82
+    },
+    {
+      "start": 283.33,
+      "end": 284.955,
+      "type": "line",
+      "text": "they must needs fall;",
+      "verse": "4:14",
+      "lineIndex": 83
+    },
+    {
+      "start": 285.135,
+      "end": 288.061,
+      "type": "line",
+      "text": "for God hath taken away his plainness from them,",
+      "verse": "4:14",
+      "lineIndex": 84
+    },
+    {
+      "start": 288.241,
+      "end": 292.328,
+      "type": "line",
+      "text": "and delivered unto them many things which they cannot understand,",
+      "verse": "4:14",
+      "lineIndex": 85
+    },
+    {
+      "start": 292.508,
+      "end": 294.18,
+      "type": "line",
+      "text": "because they desired it.",
+      "verse": "4:14",
+      "lineIndex": 86
+    },
+    {
+      "start": 294.36,
+      "end": 296.264,
+      "type": "line",
+      "text": "And because they desired it",
+      "verse": "4:14",
+      "lineIndex": 87
+    },
+    {
+      "start": 296.444,
+      "end": 298.905,
+      "type": "line",
+      "text": "God hath done it, that they may stumble.",
+      "verse": "4:14",
+      "lineIndex": 88
+    },
+    {
+      "start": 299.585,
+      "end": 303.857,
+      "type": "line",
+      "text": "And now I, Jacob, am led on by the Spirit unto prophesying;",
+      "verse": "4:15",
+      "lineIndex": 89
+    },
+    {
+      "start": 304.037,
+      "end": 311.839,
+      "type": "line",
+      "text": "for I perceive by the workings of the Spirit which is in me, that by the stumbling of the Jews they will reject the stone",
+      "verse": "4:15",
+      "lineIndex": 90
+    },
+    {
+      "start": 312.019,
+      "end": 315.548,
+      "type": "line",
+      "text": "upon which they might build and have safe foundation.",
+      "verse": "4:15",
+      "lineIndex": 91
+    },
+    {
+      "start": 316.228,
+      "end": 318.689,
+      "type": "line",
+      "text": "But behold, according to the scriptures,",
+      "verse": "4:16",
+      "lineIndex": 92
+    },
+    {
+      "start": 318.869,
+      "end": 323.606,
+      "type": "line",
+      "text": "this stone shall become the great, and the last, and the only sure foundation,",
+      "verse": "4:16",
+      "lineIndex": 93
+    },
+    {
+      "start": 323.786,
+      "end": 325.876,
+      "type": "line",
+      "text": "upon which the Jews can build.",
+      "verse": "4:16",
+      "lineIndex": 94
+    },
+    {
+      "start": 326.556,
+      "end": 332.825,
+      "type": "line",
+      "text": "And now, my beloved, how is it possible that these, after having rejected the sure foundation,",
+      "verse": "4:17",
+      "lineIndex": 95
+    },
+    {
+      "start": 333.005,
+      "end": 334.863,
+      "type": "line",
+      "text": "can ever build upon it,",
+      "verse": "4:17",
+      "lineIndex": 96
+    },
+    {
+      "start": 335.043,
+      "end": 337.644,
+      "type": "line",
+      "text": "that it may become the head of their corner?",
+      "verse": "4:17",
+      "lineIndex": 97
+    },
+    {
+      "start": 338.324,
+      "end": 342.782,
+      "type": "line",
+      "text": "Behold, my beloved brethren, I will unfold this mystery unto you;",
+      "verse": "4:18",
+      "lineIndex": 98
+    },
+    {
+      "start": 342.962,
+      "end": 344.727,
+      "type": "line",
+      "text": "if I do not, by any means,",
+      "verse": "4:18",
+      "lineIndex": 99
+    },
+    {
+      "start": 344.907,
+      "end": 347.461,
+      "type": "line",
+      "text": "get shaken from my firmness in the Spirit,",
+      "verse": "4:18",
+      "lineIndex": 100
+    },
+    {
+      "start": 347.641,
+      "end": 350.845,
+      "type": "line",
+      "text": "and stumble because of my over anxiety for you.",
+      "verse": "4:18",
+      "lineIndex": 101
+    }
+  ]
+}
