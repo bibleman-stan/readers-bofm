@@ -1,0 +1,600 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 17,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 237.409,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.808,
+      "type": "line",
+      "text": "And now it came to pass that when Abinadi had finished these sayings,",
+      "verse": "17:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.988,
+      "end": 7.007,
+      "type": "line",
+      "text": "that the king commanded that the priests should take him",
+      "verse": "17:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.187,
+      "end": 9.463,
+      "type": "line",
+      "text": "and cause that he should be put to death.",
+      "verse": "17:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.143,
+      "end": 13.394,
+      "type": "line",
+      "text": "But there was one among them whose name was Alma,",
+      "verse": "17:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 13.574,
+      "end": 15.896,
+      "type": "line",
+      "text": "he also being a descendant of Nephi.",
+      "verse": "17:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 16.076,
+      "end": 17.748,
+      "type": "line",
+      "text": "And he was a young man,",
+      "verse": "17:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 17.928,
+      "end": 21.318,
+      "type": "line",
+      "text": "and he believed the words which Abinadi had spoken,",
+      "verse": "17:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 21.498,
+      "end": 26.328,
+      "type": "line",
+      "text": "for he knew concerning the iniquity which Abinadi had testified against them;",
+      "verse": "17:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 26.508,
+      "end": 29.202,
+      "type": "line",
+      "text": "therefore he began to plead with the king",
+      "verse": "17:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 29.382,
+      "end": 32.401,
+      "type": "line",
+      "text": "that he would not be angry with Abinadi,",
+      "verse": "17:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 32.581,
+      "end": 35.042,
+      "type": "line",
+      "text": "but suffer that he might depart in peace.",
+      "verse": "17:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 35.722,
+      "end": 37.672,
+      "type": "line",
+      "text": "But the king was more wroth,",
+      "verse": "17:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 37.852,
+      "end": 41.289,
+      "type": "line",
+      "text": "and caused that Alma should be cast out from among them,",
+      "verse": "17:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 41.469,
+      "end": 44.72,
+      "type": "line",
+      "text": "and sent his servants after him that they might slay him.",
+      "verse": "17:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 45.4,
+      "end": 47.443,
+      "type": "line",
+      "text": "But he fled from before them",
+      "verse": "17:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 47.623,
+      "end": 49.806,
+      "type": "line",
+      "text": "and hid himself that they found him not.",
+      "verse": "17:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 49.986,
+      "end": 54.676,
+      "type": "line",
+      "text": "And he being concealed for many days did write all the words which Abinadi had spoken.",
+      "verse": "17:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 55.356,
+      "end": 62.043,
+      "type": "line",
+      "text": "And it came to pass that the king caused that his guards should surround Abinadi and take him;",
+      "verse": "17:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 62.223,
+      "end": 64.777,
+      "type": "line",
+      "text": "and they bound him and cast him into prison.",
+      "verse": "17:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 65.457,
+      "end": 66.943,
+      "type": "line",
+      "text": "And after three days,",
+      "verse": "17:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 67.123,
+      "end": 69.352,
+      "type": "line",
+      "text": "having counseled with his priests,",
+      "verse": "17:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 69.532,
+      "end": 72.736,
+      "type": "line",
+      "text": "he caused that he should again be brought before him.",
+      "verse": "17:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 73.416,
+      "end": 75.088,
+      "type": "line",
+      "text": "And he said unto him:",
+      "verse": "17:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 75.268,
+      "end": 78.612,
+      "type": "line",
+      "text": "Abinadi, we have found an accusation against thee,",
+      "verse": "17:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 78.792,
+      "end": 80.371,
+      "type": "line",
+      "text": "and thou art worthy of death.",
+      "verse": "17:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 81.051,
+      "end": 85.649,
+      "type": "line",
+      "text": "For thou hast said that God himself should come down among the children of men;",
+      "verse": "17:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 85.829,
+      "end": 89.684,
+      "type": "line",
+      "text": "and now, for this cause thou shalt be put to death",
+      "verse": "17:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 89.864,
+      "end": 92.232,
+      "type": "line",
+      "text": "unless thou wilt recall all the words",
+      "verse": "17:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 92.412,
+      "end": 96.22,
+      "type": "line",
+      "text": "which thou hast spoken evil concerning me and my people.",
+      "verse": "17:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 96.9,
+      "end": 98.85,
+      "type": "line",
+      "text": "Now Abinadi said unto him:",
+      "verse": "17:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 99.03,
+      "end": 100.516,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "17:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 100.696,
+      "end": 105.619,
+      "type": "line",
+      "text": "I will not recall the words which I have spoken unto you concerning this people,",
+      "verse": "17:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 105.799,
+      "end": 107.378,
+      "type": "line",
+      "text": "for they are true;",
+      "verse": "17:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 107.558,
+      "end": 109.926,
+      "type": "line",
+      "text": "and that ye may know of their surety",
+      "verse": "17:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 110.106,
+      "end": 113.357,
+      "type": "line",
+      "text": "I have suffered myself that I have fallen into your hands.",
+      "verse": "17:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 114.037,
+      "end": 116.87,
+      "type": "line",
+      "text": "Yea, and I will suffer even until death,",
+      "verse": "17:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 117.05,
+      "end": 119.279,
+      "type": "line",
+      "text": "and I will not recall my words,",
+      "verse": "17:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 119.459,
+      "end": 122.431,
+      "type": "line",
+      "text": "and they shall stand as a testimony against you.",
+      "verse": "17:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 122.611,
+      "end": 125.63,
+      "type": "line",
+      "text": "And if ye slay me ye will shed innocent blood,",
+      "verse": "17:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 125.81,
+      "end": 130.315,
+      "type": "line",
+      "text": "and this shall also stand as a testimony against you at the last day.",
+      "verse": "17:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 130.995,
+      "end": 133.921,
+      "type": "line",
+      "text": "And now king Noah was about to release him,",
+      "verse": "17:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 134.101,
+      "end": 135.866,
+      "type": "line",
+      "text": "for he feared his word;",
+      "verse": "17:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 136.046,
+      "end": 139.343,
+      "type": "line",
+      "text": "for he feared that the judgments of God would come upon him.",
+      "verse": "17:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 140.023,
+      "end": 143.181,
+      "type": "line",
+      "text": "But the priests lifted up their voices against him,",
+      "verse": "17:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 143.361,
+      "end": 145.451,
+      "type": "line",
+      "text": "and began to accuse him, saying:",
+      "verse": "17:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 145.631,
+      "end": 147.396,
+      "type": "line",
+      "text": "He has reviled the king.",
+      "verse": "17:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 147.576,
+      "end": 151.245,
+      "type": "line",
+      "text": "Therefore the king was stirred up in anger against him,",
+      "verse": "17:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 151.425,
+      "end": 153.747,
+      "type": "line",
+      "text": "and he delivered him up that he might be slain.",
+      "verse": "17:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 154.427,
+      "end": 157.353,
+      "type": "line",
+      "text": "And it came to pass that they took him and bound him,",
+      "verse": "17:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 157.533,
+      "end": 159.901,
+      "type": "line",
+      "text": "and scourged his skin with faggots,",
+      "verse": "17:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 160.081,
+      "end": 161.66,
+      "type": "line",
+      "text": "yea, even unto death.",
+      "verse": "17:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 162.34,
+      "end": 164.941,
+      "type": "line",
+      "text": "And now when the flames began to scorch him,",
+      "verse": "17:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 165.121,
+      "end": 166.932,
+      "type": "line",
+      "text": "he cried unto them, saying:",
+      "verse": "17:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 167.612,
+      "end": 170.073,
+      "type": "line",
+      "text": "Behold, even as ye have done unto me,",
+      "verse": "17:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 170.253,
+      "end": 174.479,
+      "type": "line",
+      "text": "so shall it come to pass that thy seed shall cause that many",
+      "verse": "17:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 174.659,
+      "end": 177.492,
+      "type": "line",
+      "text": "shall suffer the pains that I do suffer,",
+      "verse": "17:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 177.672,
+      "end": 179.948,
+      "type": "line",
+      "text": "even the pains of death by fire;",
+      "verse": "17:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 180.128,
+      "end": 184.308,
+      "type": "line",
+      "text": "and this because they believe in the salvation of the Lord their God.",
+      "verse": "17:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 184.988,
+      "end": 192.093,
+      "type": "line",
+      "text": "And it will come to pass that ye shall be afflicted with all manner of diseases because of your iniquities.",
+      "verse": "17:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 192.773,
+      "end": 195.652,
+      "type": "line",
+      "text": "Yea, and ye shall be smitten on every hand,",
+      "verse": "17:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 195.832,
+      "end": 198.943,
+      "type": "line",
+      "text": "and shall be driven and scattered to and fro,",
+      "verse": "17:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 199.123,
+      "end": 203.303,
+      "type": "line",
+      "text": "even as a wild flock is driven by wild and ferocious beasts.",
+      "verse": "17:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 203.983,
+      "end": 206.305,
+      "type": "line",
+      "text": "And in that day ye shall be hunted,",
+      "verse": "17:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 206.485,
+      "end": 209.689,
+      "type": "line",
+      "text": "and ye shall be taken by the hand of your enemies,",
+      "verse": "17:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 209.869,
+      "end": 214.792,
+      "type": "line",
+      "text": "and then ye shall suffer, as I suffer, the pains of death by fire.",
+      "verse": "17:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 215.472,
+      "end": 219.791,
+      "type": "line",
+      "text": "Thus God executeth vengeance upon those that destroy his people.",
+      "verse": "17:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 219.971,
+      "end": 221.643,
+      "type": "line",
+      "text": "O God, receive my soul.",
+      "verse": "17:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 222.323,
+      "end": 224.924,
+      "type": "line",
+      "text": "And now, when Abinadi had said these words,",
+      "verse": "17:20",
+      "lineIndex": 71
+    },
+    {
+      "start": 225.104,
+      "end": 228.03,
+      "type": "line",
+      "text": "he fell, having suffered death by fire;",
+      "verse": "17:20",
+      "lineIndex": 72
+    },
+    {
+      "start": 228.21,
+      "end": 230.16,
+      "type": "line",
+      "text": "yea, having been put to death",
+      "verse": "17:20",
+      "lineIndex": 73
+    },
+    {
+      "start": 230.34,
+      "end": 233.219,
+      "type": "line",
+      "text": "because he would not deny the commandments of God,",
+      "verse": "17:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 233.399,
+      "end": 236.743,
+      "type": "line",
+      "text": "having sealed the truth of his words by his death.",
+      "verse": "17:20",
+      "lineIndex": 75
+    }
+  ]
+}
