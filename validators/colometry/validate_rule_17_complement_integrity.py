@@ -87,8 +87,23 @@ VOLITION_VERBS = {
     "seek", "sought", "seeketh",
 }
 
+# Emotion class (added 2026-04-26). Emotion verbs taking factive/content
+# *that*-complements parallel cognition class semantically. Caught by
+# Stan-eyeball at Moroni 8:2 ("I rejoice exceedingly / that...").
+EMOTION_VERBS = {
+    "rejoice", "rejoiced", "rejoiceth", "rejoicest",
+    "marvel", "marveled", "marvelled", "marveleth",
+    "fear", "feared", "feareth", "fearest",
+    "doubt", "doubted", "doubteth",
+    "lament", "lamented", "lamenteth",
+    "mourn", "mourned", "mourneth",
+    "grieve", "grieved", "grieveth",
+    "weep", "wept",
+}
+
 ALL_GOVERNING_VERBS = (
-    CAUSATIVE_VERBS | ASPECTUAL_VERBS | SPEECH_VERBS | COGNITION_VERBS | VOLITION_VERBS
+    CAUSATIVE_VERBS | ASPECTUAL_VERBS | SPEECH_VERBS | COGNITION_VERBS
+    | VOLITION_VERBS | EMOTION_VERBS
 )
 
 # Exception filters — these indicate the "that" should STAY split
@@ -140,18 +155,32 @@ ASPECTUAL_FOLLOWED_BY_TO_RE = re.compile(
 
 
 def tokenize_last_verb(line: str) -> str | None:
-    """Extract the last governing verb from a line (before trailing comma/whitespace)."""
-    # Strip trailing whitespace and punctuation
+    """Extract the last governing verb from a line. Scans the whole line, not
+    just the last word — handles cases like 'I rejoice exceedingly' where an
+    adverb follows the verb. Filters NP-context false positives where the
+    candidate is preceded by a determiner (their fear, the fear, etc.)."""
     stripped = line.rstrip().rstrip(",.;:!?\"'")
-    # Get last word
     words = stripped.split()
     if not words:
         return None
-    last = words[-1].lower()
-    # Strip any punctuation on the last word
-    last = re.sub(r"[^\w]", "", last)
-    if last in ALL_GOVERNING_VERBS:
-        return last
+
+    # Walk from rightmost word back; find last governing-verb-candidate
+    # whose preceding word is NOT a determiner (those would make it a noun).
+    DETERMINERS = {
+        "the", "a", "an", "my", "thy", "his", "her", "their", "our", "your",
+        "this", "that", "these", "those", "much", "great", "any", "all",
+        "no", "some", "every", "such", "exceeding", "exceedingly",
+    }
+    for i in range(len(words) - 1, -1, -1):
+        candidate = re.sub(r"[^\w]", "", words[i].lower())
+        if candidate not in ALL_GOVERNING_VERBS:
+            continue
+        # Check preceding word — if determiner-class, it's a noun, skip.
+        if i > 0:
+            prev = re.sub(r"[^\w]", "", words[i - 1].lower())
+            if prev in DETERMINERS:
+                continue
+        return candidate
     return None
 
 

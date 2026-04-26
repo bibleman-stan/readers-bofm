@@ -561,9 +561,29 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 
 **UD signature.** `vocative` relation chain containing optional `INTJ` (*O*) + `NOUN`/`PROPN` sequence.
 
-**Diagnostic.** Keep whole. The vocative may stand as its own line; it may not be split internally.
+**Diagnostic (tightened 2026-04-26 from permissive to prescriptive).** True vocatives (direct addresses to a 2nd-person audience) **earn their own line**. The vocative may not be merged with the main clause that follows. Splitting the vocative INTERNALLY remains forbidden.
 
-**Example.** "O Lord God, / how long wilt thou suffer..." is correct. "O Lord / God" is always wrong.
+**True vocative test.** A true vocative addresses the audience directly. Distinguish from NP-object uses where *my brethren / my son / my people* etc. is the object of a verb or preposition rather than an address. Diagnostic:
+- True vocative: surrounded by 2nd-person pronouns (*ye, thee, thou, you, thy, thine*) or imperative verbs (*remember, hearken, give ear, consider*) in the same predication. Examples: *"And now, my brethren, I would that ye should..."* / *"O Lord, wilt thou..."* / *"My son, give ear..."*
+- NP-object (NOT a vocative): the phrase is the syntactic object of a matrix verb. Examples: *"I went unto my brethren,"* / *"I spake unto my brethren, saying:"* / *"the seed of my brethren."* Rule 15 does not apply.
+
+**Mechanical signature.**
+- Identify vocative phrase: NP headed by *(O )?my [vocative-noun]* or *O [audience-NP]* or proper-name address.
+- Confirm true-vocative via 2nd-person co-occurrence or imperative shape.
+- If true vocative AND followed on the same line by main clause: SPLIT (vocative own line).
+- If true vocative AND alone on a line: CONFORMING.
+- If NP-object: out of scope.
+
+**Examples.**
+- ✅ *"O Lord God, / how long wilt thou suffer..."* (vocative own line; main clause follows)
+- ❌ *"O Lord / God"* (vocative split internally — always wrong)
+- ❌ *"My sons, I would that ye should remember..."* (vocative merged with main clause — current Mosiah 1:2 state, NON-CONFORMING)
+- ✅ *"My son, / I would that ye should make a proclamation..."* (current Mosiah 1:9 state, CONFORMING)
+- — *"I spake unto my brethren, saying:"* (NP-object, Rule 15 does not apply)
+
+**Audit precedent (added 2026-04-26).** Stan caught Moroni 8:2 *"My beloved son, Moroni, I rejoice exceedingly..."* (vocative merged); investigation found Mosiah 1:2 vs Mosiah 1:9 has both treatments within one chapter. Rule 15's prior permissive language (*"may stand as its own line"*) was the canon-coverage gap. Tightening to prescriptive closes the gap; corpus-wide vocative sweep follows under §7.3 trigger #12-b post-detection.
+
+**WHY / HOW WE KNOW / SCOPE.** WHY: vocatives are atomic-thought-distinct from main clauses (address vs. content); merging produces fragmented breath units and ESL-readers lose the "who is being spoken to" cue. HOW WE KNOW: 2026-04-26 corpus sweep found ~50/50 own-line vs merged drift across BofM (Mosiah 1:2 vs 1:9 same-chapter precedent); strict atomic-thought test favors uniform own-line. SCOPE: applies to true vocatives (2nd-person addresses); does NOT apply to NP-object uses of vocative-shaped nouns.
 
 ### Rule 16 — Dangling "That" After AICTP
 
@@ -592,6 +612,7 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 | Speech (indirect discourse) | *said that, declared that, testified that, swore that, spake that, proclaimed that, told that, confessed that, rehearsed that* | Yes |
 | Cognition | *knew that, believed that, perceived that, remembered that, saw that, heard that, understood that, supposed that* | Yes |
 | Volition | *desired that, willed that, wished that, intended that* | Yes |
+| Emotion (added 2026-04-26 from Moroni 8:2 catch) | *rejoice that, marvel that, fear that, doubt that, lament that, mourn that, grieve that, weep that* | Yes |
 | FEF extraposition | *it was their lot to have fallen, it is expedient to do X* | Yes (infinitive) |
 
 **Topic-PP complement extension (added 2026-04-23 from Phase-1 hostile audit).** BofM-archaic speech-class verbs also take an obligatory topic-PP complement headed by *of, concerning, unto, against* that answers "spoken/preached/testified [about what / to whom]?" The topic-PP is a required argument, not an adjunct — the verb's predication is incomplete without it. MERGE verb and topic-PP.
