@@ -1,0 +1,1296 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 12,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 474.856,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.529,
+      "type": "line",
+      "text": "And it came to pass that after the space of two years",
+      "verse": "12:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.709,
+      "end": 6.403,
+      "type": "line",
+      "text": "that Abinadi came among them in disguise,",
+      "verse": "12:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.583,
+      "end": 8.533,
+      "type": "line",
+      "text": "that they knew him not,",
+      "verse": "12:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 8.713,
+      "end": 11.267,
+      "type": "line",
+      "text": "and began to prophesy among them, saying:",
+      "verse": "12:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.447,
+      "end": 13.723,
+      "type": "line",
+      "text": "Thus has the Lord commanded me, saying\u2014",
+      "verse": "12:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 13.903,
+      "end": 16.875,
+      "type": "line",
+      "text": "Abinadi, go and prophesy unto this my people,",
+      "verse": "12:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 17.055,
+      "end": 20.352,
+      "type": "line",
+      "text": "for they have hardened their hearts against my words;",
+      "verse": "12:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 20.532,
+      "end": 23.318,
+      "type": "line",
+      "text": "they have repented not of their evil doings;",
+      "verse": "12:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 23.498,
+      "end": 25.774,
+      "type": "line",
+      "text": "therefore, I will visit them in my anger,",
+      "verse": "12:1",
+      "lineIndex": 9
+    },
+    {
+      "start": 25.954,
+      "end": 31.713,
+      "type": "line",
+      "text": "yea, in my fierce anger will I visit them in their iniquities and abominations.",
+      "verse": "12:1",
+      "lineIndex": 10
+    },
+    {
+      "start": 32.393,
+      "end": 34.483,
+      "type": "line",
+      "text": "Yea, wo be unto this generation!",
+      "verse": "12:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 34.663,
+      "end": 36.381,
+      "type": "line",
+      "text": "And the Lord said unto me:",
+      "verse": "12:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 36.561,
+      "end": 39.672,
+      "type": "line",
+      "text": "Stretch forth thy hand and prophesy, saying:",
+      "verse": "12:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 39.852,
+      "end": 41.338,
+      "type": "line",
+      "text": "Thus saith the Lord,",
+      "verse": "12:2",
+      "lineIndex": 14
+    },
+    {
+      "start": 41.518,
+      "end": 46.208,
+      "type": "line",
+      "text": "it shall come to pass that this generation, because of their iniquities,",
+      "verse": "12:2",
+      "lineIndex": 15
+    },
+    {
+      "start": 46.388,
+      "end": 48.478,
+      "type": "line",
+      "text": "shall be brought into bondage,",
+      "verse": "12:2",
+      "lineIndex": 16
+    },
+    {
+      "start": 48.658,
+      "end": 51.398,
+      "type": "line",
+      "text": "and shall be smitten on the cheek; yea,",
+      "verse": "12:2",
+      "lineIndex": 17
+    },
+    {
+      "start": 51.578,
+      "end": 54.736,
+      "type": "line",
+      "text": "and shall be driven by men, and shall be slain;",
+      "verse": "12:2",
+      "lineIndex": 18
+    },
+    {
+      "start": 54.916,
+      "end": 57.517,
+      "type": "line",
+      "text": "and the vultures of the air, and the dogs,",
+      "verse": "12:2",
+      "lineIndex": 19
+    },
+    {
+      "start": 57.697,
+      "end": 60.994,
+      "type": "line",
+      "text": "yea, and the wild beasts, shall devour their flesh.",
+      "verse": "12:2",
+      "lineIndex": 20
+    },
+    {
+      "start": 61.674,
+      "end": 66.132,
+      "type": "line",
+      "text": "And it shall come to pass that the life of king Noah shall be valued",
+      "verse": "12:3",
+      "lineIndex": 21
+    },
+    {
+      "start": 66.312,
+      "end": 68.68,
+      "type": "line",
+      "text": "even as a garment in a hot furnace;",
+      "verse": "12:3",
+      "lineIndex": 22
+    },
+    {
+      "start": 68.86,
+      "end": 71.089,
+      "type": "line",
+      "text": "for he shall know that I am the Lord.",
+      "verse": "12:3",
+      "lineIndex": 23
+    },
+    {
+      "start": 71.769,
+      "end": 76.552,
+      "type": "line",
+      "text": "And it shall come to pass that I will smite this my people with sore afflictions,",
+      "verse": "12:4",
+      "lineIndex": 24
+    },
+    {
+      "start": 76.732,
+      "end": 79.426,
+      "type": "line",
+      "text": "yea, with famine and with pestilence;",
+      "verse": "12:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 79.606,
+      "end": 82.996,
+      "type": "line",
+      "text": "and I will cause that they shall howl all the day long.",
+      "verse": "12:4",
+      "lineIndex": 26
+    },
+    {
+      "start": 83.676,
+      "end": 88.459,
+      "type": "line",
+      "text": "Yea, and I will cause that they shall have burdens lashed upon their backs;",
+      "verse": "12:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 88.639,
+      "end": 91.797,
+      "type": "line",
+      "text": "and they shall be driven before like a dumb ass.",
+      "verse": "12:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 92.477,
+      "end": 96.192,
+      "type": "line",
+      "text": "And it shall come to pass that I will send forth hail among them,",
+      "verse": "12:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 96.372,
+      "end": 97.997,
+      "type": "line",
+      "text": "and it shall smite them;",
+      "verse": "12:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 98.177,
+      "end": 101.242,
+      "type": "line",
+      "text": "and they shall also be smitten with the east wind;",
+      "verse": "12:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 101.422,
+      "end": 104.069,
+      "type": "line",
+      "text": "and insects shall pester their land also,",
+      "verse": "12:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 104.249,
+      "end": 105.967,
+      "type": "line",
+      "text": "and devour their grain.",
+      "verse": "12:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 106.647,
+      "end": 109.619,
+      "type": "line",
+      "text": "And they shall be smitten with a great pestilence\u2014",
+      "verse": "12:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 109.799,
+      "end": 114.582,
+      "type": "line",
+      "text": "and all this will I do because of their iniquities and abominations.",
+      "verse": "12:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 115.262,
+      "end": 118.42,
+      "type": "line",
+      "text": "And it shall come to pass that except they repent",
+      "verse": "12:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 118.6,
+      "end": 121.897,
+      "type": "line",
+      "text": "I will utterly destroy them from off the face of the earth;",
+      "verse": "12:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 122.077,
+      "end": 124.724,
+      "type": "line",
+      "text": "yet they shall leave a record behind them,",
+      "verse": "12:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 124.904,
+      "end": 129.455,
+      "type": "line",
+      "text": "and I will preserve them for other nations which shall possess the land;",
+      "verse": "12:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 129.635,
+      "end": 131.446,
+      "type": "line",
+      "text": "yea, even this will I do",
+      "verse": "12:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 131.626,
+      "end": 136.27,
+      "type": "line",
+      "text": "that I may discover the abominations of this people to other nations.",
+      "verse": "12:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 136.45,
+      "end": 140.072,
+      "type": "line",
+      "text": "And many things did Abinadi prophesy against this people.",
+      "verse": "12:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 140.752,
+      "end": 144.096,
+      "type": "line",
+      "text": "And it came to pass that they were angry with him;",
+      "verse": "12:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 144.276,
+      "end": 147.155,
+      "type": "line",
+      "text": "and they took him and carried him bound before the king,",
+      "verse": "12:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 147.335,
+      "end": 148.868,
+      "type": "line",
+      "text": "and said unto the king:",
+      "verse": "12:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 149.048,
+      "end": 151.695,
+      "type": "line",
+      "text": "Behold, we have brought a man before thee",
+      "verse": "12:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 151.875,
+      "end": 154.94,
+      "type": "line",
+      "text": "who has prophesied evil concerning thy people,",
+      "verse": "12:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 155.12,
+      "end": 157.07,
+      "type": "line",
+      "text": "and saith that God will destroy them.",
+      "verse": "12:9",
+      "lineIndex": 49
+    },
+    {
+      "start": 157.75,
+      "end": 161.047,
+      "type": "line",
+      "text": "And he also prophesieth evil concerning thy life,",
+      "verse": "12:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 161.227,
+      "end": 165.871,
+      "type": "line",
+      "text": "and saith that thy life shall be as a garment in a furnace of fire.",
+      "verse": "12:10",
+      "lineIndex": 51
+    },
+    {
+      "start": 166.551,
+      "end": 169.848,
+      "type": "line",
+      "text": "And again, he saith that thou shalt be as a stalk,",
+      "verse": "12:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 170.028,
+      "end": 172.257,
+      "type": "line",
+      "text": "even as a dry stalk of the field,",
+      "verse": "12:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 172.437,
+      "end": 175.966,
+      "type": "line",
+      "text": "which is run over by the beasts and trodden under foot.",
+      "verse": "12:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 176.646,
+      "end": 181.197,
+      "type": "line",
+      "text": "And again, he saith thou shalt be as the blossoms of a thistle,",
+      "verse": "12:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 181.377,
+      "end": 184.535,
+      "type": "line",
+      "text": "which, when it is fully ripe, if the wind bloweth,",
+      "verse": "12:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 184.715,
+      "end": 187.548,
+      "type": "line",
+      "text": "it is driven forth upon the face of the land.",
+      "verse": "12:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 187.728,
+      "end": 190.05,
+      "type": "line",
+      "text": "And he pretendeth the Lord hath spoken it.",
+      "verse": "12:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 190.23,
+      "end": 193.574,
+      "type": "line",
+      "text": "And he saith all this shall come upon thee except thou repent,",
+      "verse": "12:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 193.754,
+      "end": 195.844,
+      "type": "line",
+      "text": "and this because of thine iniquities.",
+      "verse": "12:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 196.524,
+      "end": 197.871,
+      "type": "line",
+      "text": "And now, O king,",
+      "verse": "12:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 198.051,
+      "end": 200.187,
+      "type": "line",
+      "text": "what great evil hast thou done,",
+      "verse": "12:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 200.367,
+      "end": 203.386,
+      "type": "line",
+      "text": "or what great sins have thy people committed,",
+      "verse": "12:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 203.566,
+      "end": 206.677,
+      "type": "line",
+      "text": "that we should be condemned of God or judged of this man?",
+      "verse": "12:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 207.357,
+      "end": 208.704,
+      "type": "line",
+      "text": "And now, O king,",
+      "verse": "12:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 208.884,
+      "end": 210.649,
+      "type": "line",
+      "text": "behold, we are guiltless,",
+      "verse": "12:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 210.829,
+      "end": 213.151,
+      "type": "line",
+      "text": "and thou, O king, hast not sinned;",
+      "verse": "12:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 213.331,
+      "end": 216.303,
+      "type": "line",
+      "text": "therefore, this man has lied concerning you,",
+      "verse": "12:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 216.483,
+      "end": 218.433,
+      "type": "line",
+      "text": "and he has prophesied in vain.",
+      "verse": "12:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 219.113,
+      "end": 220.924,
+      "type": "line",
+      "text": "And behold, we are strong,",
+      "verse": "12:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 221.104,
+      "end": 225.562,
+      "type": "line",
+      "text": "we shall not come into bondage, or be taken captive by our enemies;",
+      "verse": "12:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 225.742,
+      "end": 228.157,
+      "type": "line",
+      "text": "yea, and thou hast prospered in the land,",
+      "verse": "12:15",
+      "lineIndex": 73
+    },
+    {
+      "start": 228.337,
+      "end": 230.334,
+      "type": "line",
+      "text": "and thou shalt also prosper.",
+      "verse": "12:15",
+      "lineIndex": 74
+    },
+    {
+      "start": 231.014,
+      "end": 232.779,
+      "type": "line",
+      "text": "Behold, here is the man,",
+      "verse": "12:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 232.959,
+      "end": 235.095,
+      "type": "line",
+      "text": "we deliver him into thy hands;",
+      "verse": "12:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 235.275,
+      "end": 238.34,
+      "type": "line",
+      "text": "thou mayest do with him as seemeth thee good.",
+      "verse": "12:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 239.02,
+      "end": 244.361,
+      "type": "line",
+      "text": "And it came to pass that king Noah caused that Abinadi should be cast into prison;",
+      "verse": "12:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 244.541,
+      "end": 248.349,
+      "type": "line",
+      "text": "and he commanded that the priests should gather themselves together",
+      "verse": "12:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 248.529,
+      "end": 252.523,
+      "type": "line",
+      "text": "that he might hold a council with them what he should do with him.",
+      "verse": "12:17",
+      "lineIndex": 80
+    },
+    {
+      "start": 253.203,
+      "end": 255.897,
+      "type": "line",
+      "text": "And it came to pass that they said unto the king:",
+      "verse": "12:18",
+      "lineIndex": 81
+    },
+    {
+      "start": 256.077,
+      "end": 258.445,
+      "type": "line",
+      "text": "Bring him hither that we may question him;",
+      "verse": "12:18",
+      "lineIndex": 82
+    },
+    {
+      "start": 258.625,
+      "end": 261.69,
+      "type": "line",
+      "text": "and the king commanded that he should be brought before them.",
+      "verse": "12:18",
+      "lineIndex": 83
+    },
+    {
+      "start": 262.37,
+      "end": 264.646,
+      "type": "line",
+      "text": "And they began to question him,",
+      "verse": "12:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 264.826,
+      "end": 266.73,
+      "type": "line",
+      "text": "that they might cross him,",
+      "verse": "12:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 266.91,
+      "end": 270.393,
+      "type": "line",
+      "text": "that thereby they might have wherewith to accuse him;",
+      "verse": "12:19",
+      "lineIndex": 86
+    },
+    {
+      "start": 270.573,
+      "end": 272.477,
+      "type": "line",
+      "text": "but he answered them boldly,",
+      "verse": "12:19",
+      "lineIndex": 87
+    },
+    {
+      "start": 272.657,
+      "end": 275.165,
+      "type": "line",
+      "text": "and withstood all their questions,",
+      "verse": "12:19",
+      "lineIndex": 88
+    },
+    {
+      "start": 275.345,
+      "end": 277.156,
+      "type": "line",
+      "text": "yea, to their astonishment;",
+      "verse": "12:19",
+      "lineIndex": 89
+    },
+    {
+      "start": 277.336,
+      "end": 280.54,
+      "type": "line",
+      "text": "for he did withstand them in all their questions,",
+      "verse": "12:19",
+      "lineIndex": 90
+    },
+    {
+      "start": 280.72,
+      "end": 283.367,
+      "type": "line",
+      "text": "and did confound them in all their words.",
+      "verse": "12:19",
+      "lineIndex": 91
+    },
+    {
+      "start": 284.047,
+      "end": 287.298,
+      "type": "line",
+      "text": "And it came to pass that one of them said unto him:",
+      "verse": "12:20",
+      "lineIndex": 92
+    },
+    {
+      "start": 287.478,
+      "end": 289.986,
+      "type": "line",
+      "text": "What meaneth the words which are written,",
+      "verse": "12:20",
+      "lineIndex": 93
+    },
+    {
+      "start": 290.166,
+      "end": 293.417,
+      "type": "line",
+      "text": "and which have been taught by our fathers, saying:",
+      "verse": "12:20",
+      "lineIndex": 94
+    },
+    {
+      "start": 294.097,
+      "end": 296.419,
+      "type": "line",
+      "text": "How beautiful upon the mountains",
+      "verse": "12:21",
+      "lineIndex": 96
+    },
+    {
+      "start": 296.599,
+      "end": 299.525,
+      "type": "line",
+      "text": "are the feet of him that bringeth good tidings;",
+      "verse": "12:21",
+      "lineIndex": 97
+    },
+    {
+      "start": 299.705,
+      "end": 301.33,
+      "type": "line",
+      "text": "that publisheth peace;",
+      "verse": "12:21",
+      "lineIndex": 98
+    },
+    {
+      "start": 301.51,
+      "end": 303.832,
+      "type": "line",
+      "text": "that bringeth good tidings of good;",
+      "verse": "12:21",
+      "lineIndex": 99
+    },
+    {
+      "start": 304.012,
+      "end": 306.009,
+      "type": "line",
+      "text": "that publisheth salvation;",
+      "verse": "12:21",
+      "lineIndex": 100
+    },
+    {
+      "start": 306.189,
+      "end": 307.814,
+      "type": "line",
+      "text": "that saith unto Zion,",
+      "verse": "12:21",
+      "lineIndex": 101
+    },
+    {
+      "start": 307.994,
+      "end": 309.434,
+      "type": "line",
+      "text": "Thy God reigneth;",
+      "verse": "12:21",
+      "lineIndex": 102
+    },
+    {
+      "start": 310.114,
+      "end": 312.575,
+      "type": "line",
+      "text": "Thy watchmen shall lift up the voice;",
+      "verse": "12:22",
+      "lineIndex": 103
+    },
+    {
+      "start": 312.755,
+      "end": 315.123,
+      "type": "line",
+      "text": "with the voice together shall they sing;",
+      "verse": "12:22",
+      "lineIndex": 104
+    },
+    {
+      "start": 315.303,
+      "end": 317.486,
+      "type": "line",
+      "text": "for they shall see eye to eye",
+      "verse": "12:22",
+      "lineIndex": 105
+    },
+    {
+      "start": 317.666,
+      "end": 319.988,
+      "type": "line",
+      "text": "when the Lord shall bring again Zion;",
+      "verse": "12:22",
+      "lineIndex": 106
+    },
+    {
+      "start": 320.668,
+      "end": 322.293,
+      "type": "line",
+      "text": "Break forth into joy;",
+      "verse": "12:23",
+      "lineIndex": 107
+    },
+    {
+      "start": 322.473,
+      "end": 323.866,
+      "type": "line",
+      "text": "sing together",
+      "verse": "12:23",
+      "lineIndex": 108
+    },
+    {
+      "start": 324.046,
+      "end": 326.136,
+      "type": "line",
+      "text": "ye waste places of Jerusalem;",
+      "verse": "12:23",
+      "lineIndex": 109
+    },
+    {
+      "start": 326.316,
+      "end": 328.777,
+      "type": "line",
+      "text": "for the Lord hath comforted his people,",
+      "verse": "12:23",
+      "lineIndex": 110
+    },
+    {
+      "start": 328.957,
+      "end": 330.582,
+      "type": "line",
+      "text": "he hath redeemed Jerusalem;",
+      "verse": "12:23",
+      "lineIndex": 111
+    },
+    {
+      "start": 331.262,
+      "end": 335.674,
+      "type": "line",
+      "text": "The Lord hath made bare his holy arm in the eyes of all the nations,",
+      "verse": "12:24",
+      "lineIndex": 112
+    },
+    {
+      "start": 335.854,
+      "end": 337.99,
+      "type": "line",
+      "text": "and all the ends of the earth",
+      "verse": "12:24",
+      "lineIndex": 113
+    },
+    {
+      "start": 338.17,
+      "end": 340.585,
+      "type": "line",
+      "text": "shall see the salvation of our God?",
+      "verse": "12:24",
+      "lineIndex": 114
+    },
+    {
+      "start": 341.265,
+      "end": 343.355,
+      "type": "line",
+      "text": "And now Abinadi said unto them:",
+      "verse": "12:25",
+      "lineIndex": 116
+    },
+    {
+      "start": 343.535,
+      "end": 344.975,
+      "type": "line",
+      "text": "Are you priests,",
+      "verse": "12:25",
+      "lineIndex": 117
+    },
+    {
+      "start": 345.155,
+      "end": 347.384,
+      "type": "line",
+      "text": "and pretend to teach this people,",
+      "verse": "12:25",
+      "lineIndex": 118
+    },
+    {
+      "start": 347.564,
+      "end": 350.397,
+      "type": "line",
+      "text": "and to understand the spirit of prophesying,",
+      "verse": "12:25",
+      "lineIndex": 119
+    },
+    {
+      "start": 350.577,
+      "end": 353.642,
+      "type": "line",
+      "text": "and yet desire to know of me what these things mean?",
+      "verse": "12:25",
+      "lineIndex": 120
+    },
+    {
+      "start": 354.322,
+      "end": 355.808,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "12:26",
+      "lineIndex": 121
+    },
+    {
+      "start": 355.988,
+      "end": 359.378,
+      "type": "line",
+      "text": "wo be unto you for perverting the ways of the Lord!",
+      "verse": "12:26",
+      "lineIndex": 122
+    },
+    {
+      "start": 359.558,
+      "end": 363.041,
+      "type": "line",
+      "text": "For if ye understand these things ye have not taught them;",
+      "verse": "12:26",
+      "lineIndex": 123
+    },
+    {
+      "start": 363.221,
+      "end": 366.193,
+      "type": "line",
+      "text": "therefore, ye have perverted the ways of the Lord.",
+      "verse": "12:26",
+      "lineIndex": 124
+    },
+    {
+      "start": 366.873,
+      "end": 369.706,
+      "type": "line",
+      "text": "Ye have not applied your hearts to understanding;",
+      "verse": "12:27",
+      "lineIndex": 125
+    },
+    {
+      "start": 369.886,
+      "end": 371.976,
+      "type": "line",
+      "text": "therefore, ye have not been wise.",
+      "verse": "12:27",
+      "lineIndex": 126
+    },
+    {
+      "start": 372.156,
+      "end": 374.292,
+      "type": "line",
+      "text": "Therefore, what teach ye this people?",
+      "verse": "12:27",
+      "lineIndex": 127
+    },
+    {
+      "start": 374.972,
+      "end": 376.458,
+      "type": "line",
+      "text": "And they said:",
+      "verse": "12:28",
+      "lineIndex": 128
+    },
+    {
+      "start": 376.638,
+      "end": 378.449,
+      "type": "line",
+      "text": "We teach the law of Moses.",
+      "verse": "12:28",
+      "lineIndex": 129
+    },
+    {
+      "start": 379.129,
+      "end": 381.033,
+      "type": "line",
+      "text": "And again he said unto them:",
+      "verse": "12:29",
+      "lineIndex": 130
+    },
+    {
+      "start": 381.213,
+      "end": 384.232,
+      "type": "line",
+      "text": "If ye teach the law of Moses why do ye not keep it?",
+      "verse": "12:29",
+      "lineIndex": 131
+    },
+    {
+      "start": 384.412,
+      "end": 386.688,
+      "type": "line",
+      "text": "Why do ye set your hearts upon riches?",
+      "verse": "12:29",
+      "lineIndex": 132
+    },
+    {
+      "start": 386.868,
+      "end": 390.397,
+      "type": "line",
+      "text": "Why do ye commit whoredoms and spend your strength with harlots,",
+      "verse": "12:29",
+      "lineIndex": 133
+    },
+    {
+      "start": 390.577,
+      "end": 393.085,
+      "type": "line",
+      "text": "yea, and cause this people to commit sin,",
+      "verse": "12:29",
+      "lineIndex": 134
+    },
+    {
+      "start": 393.265,
+      "end": 397.398,
+      "type": "line",
+      "text": "that the Lord has cause to send me to prophesy against this people,",
+      "verse": "12:29",
+      "lineIndex": 135
+    },
+    {
+      "start": 397.578,
+      "end": 400.318,
+      "type": "line",
+      "text": "yea, even a great evil against this people?",
+      "verse": "12:29",
+      "lineIndex": 136
+    },
+    {
+      "start": 400.998,
+      "end": 403.227,
+      "type": "line",
+      "text": "Know ye not that I speak the truth?",
+      "verse": "12:30",
+      "lineIndex": 137
+    },
+    {
+      "start": 403.407,
+      "end": 405.775,
+      "type": "line",
+      "text": "Yea, ye know that I speak the truth;",
+      "verse": "12:30",
+      "lineIndex": 138
+    },
+    {
+      "start": 405.955,
+      "end": 407.952,
+      "type": "line",
+      "text": "and you ought to tremble before God.",
+      "verse": "12:30",
+      "lineIndex": 139
+    },
+    {
+      "start": 408.632,
+      "end": 410.49,
+      "type": "line",
+      "text": "And it shall come to pass",
+      "verse": "12:31",
+      "lineIndex": 140
+    },
+    {
+      "start": 410.67,
+      "end": 413.224,
+      "type": "line",
+      "text": "ye shall be smitten for your iniquities,",
+      "verse": "12:31",
+      "lineIndex": 141
+    },
+    {
+      "start": 413.404,
+      "end": 416.051,
+      "type": "line",
+      "text": "for ye have said that ye teach the law of Moses.",
+      "verse": "12:31",
+      "lineIndex": 142
+    },
+    {
+      "start": 416.231,
+      "end": 418.785,
+      "type": "line",
+      "text": "And what know ye concerning the law of Moses?",
+      "verse": "12:31",
+      "lineIndex": 143
+    },
+    {
+      "start": 418.965,
+      "end": 421.38,
+      "type": "line",
+      "text": "Doth salvation come by the law of Moses?",
+      "verse": "12:31",
+      "lineIndex": 144
+    },
+    {
+      "start": 421.56,
+      "end": 422.721,
+      "type": "line",
+      "text": "What say ye?",
+      "verse": "12:31",
+      "lineIndex": 145
+    },
+    {
+      "start": 423.401,
+      "end": 427.256,
+      "type": "line",
+      "text": "And they answered and said that salvation did come by the law of Moses.",
+      "verse": "12:32",
+      "lineIndex": 146
+    },
+    {
+      "start": 427.936,
+      "end": 430.119,
+      "type": "line",
+      "text": "But now Abinadi said unto them:",
+      "verse": "12:33",
+      "lineIndex": 147
+    },
+    {
+      "start": 430.299,
+      "end": 433.968,
+      "type": "line",
+      "text": "I know if ye keep the commandments of God ye shall be saved;",
+      "verse": "12:33",
+      "lineIndex": 148
+    },
+    {
+      "start": 434.148,
+      "end": 436.145,
+      "type": "line",
+      "text": "yea, if ye keep the commandments",
+      "verse": "12:33",
+      "lineIndex": 149
+    },
+    {
+      "start": 436.325,
+      "end": 440.505,
+      "type": "line",
+      "text": "which the Lord delivered unto Moses in the mount of Sinai, saying:",
+      "verse": "12:33",
+      "lineIndex": 150
+    },
+    {
+      "start": 441.185,
+      "end": 442.903,
+      "type": "line",
+      "text": "I am the Lord thy God,",
+      "verse": "12:34",
+      "lineIndex": 151
+    },
+    {
+      "start": 443.083,
+      "end": 447.123,
+      "type": "line",
+      "text": "who hath brought thee out of the land of Egypt, out of the house of bondage.",
+      "verse": "12:34",
+      "lineIndex": 152
+    },
+    {
+      "start": 447.803,
+      "end": 450.218,
+      "type": "line",
+      "text": "Thou shalt have no other God before me.",
+      "verse": "12:35",
+      "lineIndex": 153
+    },
+    {
+      "start": 450.898,
+      "end": 453.87,
+      "type": "line",
+      "text": "Thou shalt not make unto thee any graven image,",
+      "verse": "12:36",
+      "lineIndex": 154
+    },
+    {
+      "start": 454.05,
+      "end": 456.883,
+      "type": "line",
+      "text": "or any likeness of any thing in heaven above,",
+      "verse": "12:36",
+      "lineIndex": 155
+    },
+    {
+      "start": 457.063,
+      "end": 459.617,
+      "type": "line",
+      "text": "or things which are in the earth beneath.",
+      "verse": "12:36",
+      "lineIndex": 156
+    },
+    {
+      "start": 460.297,
+      "end": 462.015,
+      "type": "line",
+      "text": "Now Abinadi said unto them,",
+      "verse": "12:37",
+      "lineIndex": 157
+    },
+    {
+      "start": 462.195,
+      "end": 463.728,
+      "type": "line",
+      "text": "Have ye done all this?",
+      "verse": "12:37",
+      "lineIndex": 158
+    },
+    {
+      "start": 463.908,
+      "end": 465.394,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "12:37",
+      "lineIndex": 159
+    },
+    {
+      "start": 465.574,
+      "end": 467.06,
+      "type": "line",
+      "text": "Nay, ye have not.",
+      "verse": "12:37",
+      "lineIndex": 160
+    },
+    {
+      "start": 467.24,
+      "end": 470.862,
+      "type": "line",
+      "text": "And have ye taught this people that they should do all these things?",
+      "verse": "12:37",
+      "lineIndex": 161
+    },
+    {
+      "start": 471.042,
+      "end": 472.528,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "12:37",
+      "lineIndex": 162
+    },
+    {
+      "start": 472.708,
+      "end": 474.194,
+      "type": "line",
+      "text": "Nay, ye have not.",
+      "verse": "12:37",
+      "lineIndex": 163
+    }
+  ]
+}
