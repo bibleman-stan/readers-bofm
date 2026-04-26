@@ -1,0 +1,832 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 24,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 346.132,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.037,
+      "type": "line",
+      "text": "And it came to pass that Amulon did gain favor in the eyes of the king of the Lamanites;",
+      "verse": "24:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.217,
+      "end": 11.279,
+      "type": "line",
+      "text": "therefore, the king of the Lamanites granted unto him and his brethren",
+      "verse": "24:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 11.459,
+      "end": 16.567,
+      "type": "line",
+      "text": "that they should be appointed teachers over his people, yea, even over the people",
+      "verse": "24:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 16.747,
+      "end": 19.023,
+      "type": "line",
+      "text": "who were in the land of Shemlon,",
+      "verse": "24:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.203,
+      "end": 21.061,
+      "type": "line",
+      "text": "and in the land of Shilom,",
+      "verse": "24:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 21.241,
+      "end": 23.052,
+      "type": "line",
+      "text": "and in the land of Amulon.",
+      "verse": "24:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.732,
+      "end": 27.633,
+      "type": "line",
+      "text": "For the Lamanites had taken possession of all these lands;",
+      "verse": "24:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 27.813,
+      "end": 32.643,
+      "type": "line",
+      "text": "therefore, the king of the Lamanites had appointed kings over all these lands.",
+      "verse": "24:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.323,
+      "end": 36.806,
+      "type": "line",
+      "text": "And now the name of the king of the Lamanites was Laman,",
+      "verse": "24:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 36.986,
+      "end": 39.494,
+      "type": "line",
+      "text": "being called after the name of his father;",
+      "verse": "24:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 39.674,
+      "end": 42.089,
+      "type": "line",
+      "text": "and therefore he was called king Laman.",
+      "verse": "24:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 42.269,
+      "end": 44.916,
+      "type": "line",
+      "text": "And he was king over a numerous people.",
+      "verse": "24:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 45.596,
+      "end": 49.218,
+      "type": "line",
+      "text": "And he appointed teachers of the brethren of Amulon",
+      "verse": "24:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 49.398,
+      "end": 52.277,
+      "type": "line",
+      "text": "in every land which was possessed by his people;",
+      "verse": "24:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 52.457,
+      "end": 58.216,
+      "type": "line",
+      "text": "and thus the language of Nephi began to be taught among all the people of the Lamanites.",
+      "verse": "24:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 58.896,
+      "end": 61.868,
+      "type": "line",
+      "text": "And they were a people friendly one with another;",
+      "verse": "24:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 62.048,
+      "end": 64.277,
+      "type": "line",
+      "text": "nevertheless they knew not God;",
+      "verse": "24:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 64.457,
+      "end": 69.287,
+      "type": "line",
+      "text": "neither did the brethren of Amulon teach them anything concerning the Lord their God,",
+      "verse": "24:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 69.467,
+      "end": 71.278,
+      "type": "line",
+      "text": "neither the law of Moses;",
+      "verse": "24:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 71.458,
+      "end": 74.569,
+      "type": "line",
+      "text": "nor did they teach them the words of Abinadi;",
+      "verse": "24:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 75.249,
+      "end": 78.593,
+      "type": "line",
+      "text": "But they taught them that they should keep their record,",
+      "verse": "24:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 78.773,
+      "end": 81.467,
+      "type": "line",
+      "text": "and that they might write one to another.",
+      "verse": "24:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 82.147,
+      "end": 85.305,
+      "type": "line",
+      "text": "And thus the Lamanites began to increase in riches,",
+      "verse": "24:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 85.485,
+      "end": 89.107,
+      "type": "line",
+      "text": "and began to trade one with another and wax great,",
+      "verse": "24:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 89.287,
+      "end": 92.352,
+      "type": "line",
+      "text": "and began to be a cunning and a wise people,",
+      "verse": "24:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 92.532,
+      "end": 94.808,
+      "type": "line",
+      "text": "as to the wisdom of the world,",
+      "verse": "24:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 94.988,
+      "end": 96.892,
+      "type": "line",
+      "text": "yea, a very cunning people,",
+      "verse": "24:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 97.072,
+      "end": 100.137,
+      "type": "line",
+      "text": "delighting in all manner of wickedness and plunder,",
+      "verse": "24:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 100.317,
+      "end": 102.639,
+      "type": "line",
+      "text": "except it were among their own brethren.",
+      "verse": "24:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 103.319,
+      "end": 108.752,
+      "type": "line",
+      "text": "And now it came to pass that Amulon began to exercise authority over Alma and his brethren,",
+      "verse": "24:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 108.932,
+      "end": 110.975,
+      "type": "line",
+      "text": "and began to persecute him,",
+      "verse": "24:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 111.155,
+      "end": 114.638,
+      "type": "line",
+      "text": "and cause that his children should persecute their children.",
+      "verse": "24:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 115.318,
+      "end": 116.99,
+      "type": "line",
+      "text": "For Amulon knew Alma,",
+      "verse": "24:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 117.17,
+      "end": 125.669,
+      "type": "line",
+      "text": "that he had been one of the king's priests, and that it was he that believed the words of Abinadi and was driven out before the king,",
+      "verse": "24:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 125.849,
+      "end": 128.032,
+      "type": "line",
+      "text": "and therefore he was wroth with him;",
+      "verse": "24:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 128.212,
+      "end": 130.255,
+      "type": "line",
+      "text": "for he was subject to king Laman,",
+      "verse": "24:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 130.435,
+      "end": 132.85,
+      "type": "line",
+      "text": "yet he exercised authority over them,",
+      "verse": "24:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 133.03,
+      "end": 134.934,
+      "type": "line",
+      "text": "and put tasks upon them,",
+      "verse": "24:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 135.114,
+      "end": 137.297,
+      "type": "line",
+      "text": "and put task-masters over them.",
+      "verse": "24:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 137.977,
+      "end": 141.878,
+      "type": "line",
+      "text": "And it came to pass that so great were their afflictions",
+      "verse": "24:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 142.058,
+      "end": 144.752,
+      "type": "line",
+      "text": "that they began to cry mightily to God.",
+      "verse": "24:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 145.432,
+      "end": 149.147,
+      "type": "line",
+      "text": "And Amulon commanded them that they should stop their cries;",
+      "verse": "24:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 149.327,
+      "end": 152.299,
+      "type": "line",
+      "text": "and he put guards over them to watch them,",
+      "verse": "24:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 152.479,
+      "end": 157.123,
+      "type": "line",
+      "text": "that whosoever should be found calling upon God should be put to death.",
+      "verse": "24:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 157.803,
+      "end": 162.029,
+      "type": "line",
+      "text": "And Alma and his people did not raise their voices to the Lord their God,",
+      "verse": "24:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 162.209,
+      "end": 164.531,
+      "type": "line",
+      "text": "but did pour out their hearts to him;",
+      "verse": "24:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 164.711,
+      "end": 167.312,
+      "type": "line",
+      "text": "and he did know the thoughts of their hearts.",
+      "verse": "24:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 167.992,
+      "end": 173.193,
+      "type": "line",
+      "text": "And it came to pass that the voice of the Lord came to them in their afflictions, saying:",
+      "verse": "24:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 173.373,
+      "end": 176.02,
+      "type": "line",
+      "text": "Lift up your heads and be of good comfort,",
+      "verse": "24:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 176.2,
+      "end": 179.822,
+      "type": "line",
+      "text": "for I know of the covenant which ye have made unto me;",
+      "verse": "24:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 180.002,
+      "end": 183.857,
+      "type": "line",
+      "text": "and I will covenant with my people and deliver them out of bondage.",
+      "verse": "24:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 184.537,
+      "end": 188.624,
+      "type": "line",
+      "text": "And I will also ease the burdens which are put upon your shoulders,",
+      "verse": "24:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 188.804,
+      "end": 191.776,
+      "type": "line",
+      "text": "that even you cannot feel them upon your backs,",
+      "verse": "24:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 191.956,
+      "end": 193.906,
+      "type": "line",
+      "text": "even while you are in bondage;",
+      "verse": "24:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 194.086,
+      "end": 198.312,
+      "type": "line",
+      "text": "and this will I do that ye may stand as witnesses for me hereafter,",
+      "verse": "24:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 198.492,
+      "end": 201.0,
+      "type": "line",
+      "text": "and that ye may know of a surety",
+      "verse": "24:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 201.18,
+      "end": 202.713,
+      "type": "line",
+      "text": "that I, the Lord God,",
+      "verse": "24:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 202.893,
+      "end": 205.354,
+      "type": "line",
+      "text": "do visit my people in their afflictions.",
+      "verse": "24:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 206.034,
+      "end": 213.604,
+      "type": "line",
+      "text": "And now it came to pass that the burdens which were laid upon Alma and his brethren were made light;",
+      "verse": "24:15",
+      "lineIndex": 62
+    },
+    {
+      "start": 213.784,
+      "end": 216.106,
+      "type": "line",
+      "text": "yea, the Lord did strengthen them",
+      "verse": "24:15",
+      "lineIndex": 63
+    },
+    {
+      "start": 216.286,
+      "end": 219.305,
+      "type": "line",
+      "text": "that they could bear up their burdens with ease,",
+      "verse": "24:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 219.485,
+      "end": 222.643,
+      "type": "line",
+      "text": "and they did submit cheerfully and with patience",
+      "verse": "24:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 222.823,
+      "end": 224.541,
+      "type": "line",
+      "text": "to all the will of the Lord.",
+      "verse": "24:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 225.221,
+      "end": 229.633,
+      "type": "line",
+      "text": "And it came to pass that so great was their faith and their patience",
+      "verse": "24:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 229.813,
+      "end": 233.064,
+      "type": "line",
+      "text": "that the voice of the Lord came unto them again, saying:",
+      "verse": "24:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 233.244,
+      "end": 234.869,
+      "type": "line",
+      "text": "Be of good comfort,",
+      "verse": "24:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 235.049,
+      "end": 238.114,
+      "type": "line",
+      "text": "for on the morrow I will deliver you out of bondage.",
+      "verse": "24:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 238.794,
+      "end": 240.466,
+      "type": "line",
+      "text": "And he said unto Alma:",
+      "verse": "24:17",
+      "lineIndex": 71
+    },
+    {
+      "start": 240.646,
+      "end": 242.782,
+      "type": "line",
+      "text": "Thou shalt go before this people,",
+      "verse": "24:17",
+      "lineIndex": 72
+    },
+    {
+      "start": 242.962,
+      "end": 246.213,
+      "type": "line",
+      "text": "and I will go with thee and deliver this people out of bondage.",
+      "verse": "24:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 246.893,
+      "end": 252.698,
+      "type": "line",
+      "text": "Now it came to pass that Alma and his people in the night-time gathered their flocks together,",
+      "verse": "24:18",
+      "lineIndex": 74
+    },
+    {
+      "start": 252.878,
+      "end": 254.643,
+      "type": "line",
+      "text": "and also of their grain;",
+      "verse": "24:18",
+      "lineIndex": 75
+    },
+    {
+      "start": 254.823,
+      "end": 258.678,
+      "type": "line",
+      "text": "yea, even all the night-time were they gathering their flocks together.",
+      "verse": "24:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 259.358,
+      "end": 263.863,
+      "type": "line",
+      "text": "And in the morning the Lord caused a deep sleep to come upon the Lamanites,",
+      "verse": "24:19",
+      "lineIndex": 78
+    },
+    {
+      "start": 264.043,
+      "end": 267.805,
+      "type": "line",
+      "text": "yea, and all their task-masters were in a profound sleep.",
+      "verse": "24:19",
+      "lineIndex": 79
+    },
+    {
+      "start": 268.485,
+      "end": 271.736,
+      "type": "line",
+      "text": "And Alma and his people departed into the wilderness;",
+      "verse": "24:20",
+      "lineIndex": 80
+    },
+    {
+      "start": 271.916,
+      "end": 275.863,
+      "type": "line",
+      "text": "and when they had traveled all day they pitched their tents in a valley,",
+      "verse": "24:20",
+      "lineIndex": 81
+    },
+    {
+      "start": 276.043,
+      "end": 278.226,
+      "type": "line",
+      "text": "and they called the valley Alma,",
+      "verse": "24:20",
+      "lineIndex": 82
+    },
+    {
+      "start": 278.406,
+      "end": 281.007,
+      "type": "line",
+      "text": "because he led their way in the wilderness.",
+      "verse": "24:20",
+      "lineIndex": 83
+    },
+    {
+      "start": 281.687,
+      "end": 283.823,
+      "type": "line",
+      "text": "Yea, and in the valley of Alma",
+      "verse": "24:21",
+      "lineIndex": 84
+    },
+    {
+      "start": 284.003,
+      "end": 286.418,
+      "type": "line",
+      "text": "they poured out their thanks to God",
+      "verse": "24:21",
+      "lineIndex": 85
+    },
+    {
+      "start": 286.598,
+      "end": 288.92,
+      "type": "line",
+      "text": "because he had been merciful unto them,",
+      "verse": "24:21",
+      "lineIndex": 86
+    },
+    {
+      "start": 289.1,
+      "end": 291.004,
+      "type": "line",
+      "text": "and eased their burdens,",
+      "verse": "24:21",
+      "lineIndex": 87
+    },
+    {
+      "start": 291.184,
+      "end": 293.506,
+      "type": "line",
+      "text": "and had delivered them out of bondage;",
+      "verse": "24:21",
+      "lineIndex": 88
+    },
+    {
+      "start": 293.686,
+      "end": 295.311,
+      "type": "line",
+      "text": "for they were in bondage,",
+      "verse": "24:21",
+      "lineIndex": 89
+    },
+    {
+      "start": 295.491,
+      "end": 297.674,
+      "type": "line",
+      "text": "and none could deliver them",
+      "verse": "24:21",
+      "lineIndex": 90
+    },
+    {
+      "start": 297.854,
+      "end": 300.222,
+      "type": "line",
+      "text": "except it were the Lord their God.",
+      "verse": "24:21",
+      "lineIndex": 91
+    },
+    {
+      "start": 300.902,
+      "end": 302.852,
+      "type": "line",
+      "text": "And they gave thanks to God,",
+      "verse": "24:22",
+      "lineIndex": 92
+    },
+    {
+      "start": 303.032,
+      "end": 307.351,
+      "type": "line",
+      "text": "yea, all their men and all their women and all their children that could speak",
+      "verse": "24:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 307.531,
+      "end": 310.364,
+      "type": "line",
+      "text": "lifted their voices in the praises of their God.",
+      "verse": "24:22",
+      "lineIndex": 94
+    },
+    {
+      "start": 311.044,
+      "end": 313.134,
+      "type": "line",
+      "text": "And now the Lord said unto Alma:",
+      "verse": "24:23",
+      "lineIndex": 95
+    },
+    {
+      "start": 313.314,
+      "end": 316.797,
+      "type": "line",
+      "text": "Haste thee and get thou and this people out of this land,",
+      "verse": "24:23",
+      "lineIndex": 96
+    },
+    {
+      "start": 316.977,
+      "end": 320.553,
+      "type": "line",
+      "text": "for the Lamanites have awakened and do pursue thee;",
+      "verse": "24:23",
+      "lineIndex": 97
+    },
+    {
+      "start": 320.733,
+      "end": 323.101,
+      "type": "line",
+      "text": "therefore get thee out of this land,",
+      "verse": "24:23",
+      "lineIndex": 98
+    },
+    {
+      "start": 323.281,
+      "end": 326.067,
+      "type": "line",
+      "text": "and I will stop the Lamanites in this valley",
+      "verse": "24:23",
+      "lineIndex": 99
+    },
+    {
+      "start": 326.247,
+      "end": 329.312,
+      "type": "line",
+      "text": "that they come no further in pursuit of this people.",
+      "verse": "24:23",
+      "lineIndex": 100
+    },
+    {
+      "start": 329.992,
+      "end": 333.521,
+      "type": "line",
+      "text": "And it came to pass that they departed out of the valley,",
+      "verse": "24:24",
+      "lineIndex": 101
+    },
+    {
+      "start": 333.701,
+      "end": 336.162,
+      "type": "line",
+      "text": "and took their journey into the wilderness.",
+      "verse": "24:24",
+      "lineIndex": 102
+    },
+    {
+      "start": 336.842,
+      "end": 339.768,
+      "type": "line",
+      "text": "And after they had been in the wilderness twelve days",
+      "verse": "24:25",
+      "lineIndex": 103
+    },
+    {
+      "start": 339.948,
+      "end": 342.316,
+      "type": "line",
+      "text": "they arrived in the land of Zarahemla;",
+      "verse": "24:25",
+      "lineIndex": 104
+    },
+    {
+      "start": 342.496,
+      "end": 345.468,
+      "type": "line",
+      "text": "and king Mosiah did also receive them with joy.",
+      "verse": "24:25",
+      "lineIndex": 105
+    }
+  ]
+}
