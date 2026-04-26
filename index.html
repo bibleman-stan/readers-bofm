@@ -2882,12 +2882,27 @@
   // buildChapterGrid — no longer needed (picker is built once in buildPicker)
   function buildChapterGrid(bookId) { /* no-op — picker handles this */ }
 
-  function loadBook(bookId, callback) {
-    if (loadedBooks[bookId]) {
-      if (callback) callback();
+  // position: 'append' (default — for switchBook, hidden until shown), 'append-visible'
+  // (for endless-scroll forward extend, visible immediately), 'prepend-visible' (for
+  // endless-scroll backward extend; caller is responsible for scroll-anchor adjustment).
+  function loadBook(bookId, callback, position) {
+    position = position || 'append';
+    var container = document.getElementById('book-content-container');
+    if (loadedBooks[bookId] && loadedBooks[bookId] !== 'failed') {
+      var existing = document.getElementById('book-' + bookId);
+      if (existing && container && (position === 'append-visible' || position === 'prepend-visible')) {
+        // Move to the correct chain edge if not already there. Necessary
+        // because previously-loaded-then-hidden books may sit elsewhere in DOM.
+        if (position === 'append-visible' && container.lastElementChild !== existing) {
+          container.appendChild(existing);
+        } else if (position === 'prepend-visible' && container.firstElementChild !== existing) {
+          container.insertBefore(existing, container.firstChild);
+        }
+        existing.style.display = 'block';
+      }
+      if (callback) callback(existing);
       return;
     }
-    var container = document.getElementById('book-content-container');
     fetch('books/' + bookId + '.html')
       .then(function(response) {
         if (!response.ok) throw new Error('Book not found: ' + bookId);
@@ -2898,8 +2913,20 @@
         temp.innerHTML = html;
         var bookDiv = temp.firstElementChild;
         if (bookDiv) {
-          bookDiv.style.display = 'none';
-          container.appendChild(bookDiv);
+          if (position === 'append-visible') {
+            bookDiv.style.display = 'block';
+            container.appendChild(bookDiv);
+          } else if (position === 'prepend-visible') {
+            bookDiv.style.display = 'block';
+            if (container.firstChild) {
+              container.insertBefore(bookDiv, container.firstChild);
+            } else {
+              container.appendChild(bookDiv);
+            }
+          } else {
+            bookDiv.style.display = 'none';
+            container.appendChild(bookDiv);
+          }
         }
         loadedBooks[bookId] = true;
         if (aidOn && bookDiv) {
@@ -2908,12 +2935,19 @@
             el.textContent = el.getAttribute('data-mod');
           });
         }
-        if (callback) callback();
+        if (callback) callback(bookDiv);
       })
       .catch(function(err) {
         console.error(err);
-        container.innerHTML = '<p style="color: #cc6666; padding: 2em;">This book is not yet available in the reading edition. Check back soon!</p>';
-        if (callback) callback();
+        // Mark as loaded-failed so we don't retry endlessly.
+        loadedBooks[bookId] = 'failed';
+        // Only show the error placeholder if no other book content is currently loaded
+        // (i.e. this was a first-load picker action). Otherwise endless-scroll is silent
+        // about a missing-book fetch so the existing content isn't destroyed.
+        if (position === 'append' && !container.querySelector('.book-content')) {
+          container.innerHTML = '<p style="color: #cc6666; padding: 2em;">This book is not yet available in the reading edition. Check back soon!</p>';
+        }
+        if (callback) callback(null);
       });
   }
 
@@ -2942,6 +2976,110 @@
   window.beginReading = function(bookId) {
     switchBook(bookId);
   };
+
+  // ════════════════════════════════════════════════════════════
+  // CROSS-BOOK ENDLESS SCROLL
+  // ════════════════════════════════════════════════════════════
+  // When the user scrolls near the bottom of the last-loaded book, fetch and
+  // append the next book in canonical order so reading flows seamlessly across
+  // the BoM. Symmetric backward extend on top approach.
+  //
+  // Invariants:
+  //   - switchBook() (picker, hash, search, narration jumps) always hides other
+  //     books and shows only the target. After a switchBook, the visible chain
+  //     starts as a single book.
+  //   - Endless-scroll loaded books are inserted visible. They form a contiguous
+  //     visible chain seeded by the current switchBook target.
+  //   - Books loaded by switchBook in the past that are NOT part of the current
+  //     visible chain remain hidden (display: none) and DO NOT participate in
+  //     append/prepend chain math — only currently-visible loaded books count.
+  //   - currentBook tracks the book that owns the viewport's mid-line. It is
+  //     updated by onScrollUpdateChapter when the user scrolls past a boundary.
+
+  var ENDLESS_THRESHOLD_PX = 600;
+  var _extendingForward = false;
+  var _extendingBackward = false;
+
+  function _bookOrderIndex(bookId) { return bookOrder.indexOf(bookId); }
+
+  function _getVisibleBookChain() {
+    // Returns the contiguous list of currently-visible loaded book elements in
+    // DOM order. Hidden books (display: none) are skipped. Used to know which
+    // book sits at the top vs bottom of the visible chain so we know what to
+    // prepend or append next. Returns empty if the container itself is hidden
+    // (welcome page / about page state).
+    var chain = [];
+    var container = document.getElementById('book-content-container');
+    if (!container) return chain;
+    if (container.style.display === 'none') return chain;
+    var children = container.children;
+    for (var i = 0; i < children.length; i++) {
+      var el = children[i];
+      if (el.classList && el.classList.contains('book-content') && el.style.display !== 'none') {
+        chain.push(el);
+      }
+    }
+    return chain;
+  }
+
+  function _bookIdFromEl(el) {
+    if (!el || !el.id) return null;
+    return el.id.replace(/^book-/, '');
+  }
+
+  function _tryExtendForward() {
+    if (_extendingForward) return;
+    var chain = _getVisibleBookChain();
+    if (!chain.length) return;
+    var lastEl = chain[chain.length - 1];
+    var lastBookId = _bookIdFromEl(lastEl);
+    var idx = _bookOrderIndex(lastBookId);
+    if (idx < 0 || idx >= bookOrder.length - 1) return; // already at last book
+    // Are we within ENDLESS_THRESHOLD_PX of the bottom of the last book?
+    var rect = lastEl.getBoundingClientRect();
+    var distFromBottom = rect.bottom - window.innerHeight;
+    if (distFromBottom > ENDLESS_THRESHOLD_PX) return;
+    var nextId = bookOrder[idx + 1];
+    if (loadedBooks[nextId] === 'failed') return;
+    _extendingForward = true;
+    loadBook(nextId, function() {
+      _extendingForward = false;
+    }, 'append-visible');
+  }
+
+  function _tryExtendBackward() {
+    if (_extendingBackward) return;
+    var chain = _getVisibleBookChain();
+    if (!chain.length) return;
+    var firstEl = chain[0];
+    var firstBookId = _bookIdFromEl(firstEl);
+    var idx = _bookOrderIndex(firstBookId);
+    if (idx <= 0) return; // already at first book
+    var rect = firstEl.getBoundingClientRect();
+    // Distance from viewport top to the top of the first loaded book.
+    // Negative = first book's top is above viewport (we're scrolled down into it);
+    // positive = first book's top is below viewport top (we've scrolled near/above it).
+    var distFromTop = -rect.top;
+    if (distFromTop > ENDLESS_THRESHOLD_PX) return;
+    var prevId = bookOrder[idx - 1];
+    if (loadedBooks[prevId] === 'failed') return;
+    _extendingBackward = true;
+    // Capture scroll-anchor before insertion. After prepending the new book,
+    // its height shifts everything below it down — so we add that delta to
+    // scrollTop to keep the user's visual position stable (no jump).
+    var anchorEl = firstEl;
+    var anchorOffsetBefore = anchorEl.getBoundingClientRect().top;
+    loadBook(prevId, function(newBookDiv) {
+      _extendingBackward = false;
+      if (!newBookDiv) return;
+      // Compensate scroll: keep anchorEl at the same viewport position.
+      var anchorOffsetAfter = anchorEl.getBoundingClientRect().top;
+      var delta = anchorOffsetAfter - anchorOffsetBefore;
+      if (delta !== 0) {
+        window.scrollBy(0, delta);
+      }
+    }, 'prepend-visible');
+  }
 
   // ---- UI TOGGLES ----
   // ---- UI TOGGLES (simplified for new design) ----
@@ -3593,24 +3731,65 @@
   function pauseCollapse() {}
   function closeAllPanels() {}
 
-  // ---- CONTINUOUS-SCROLL CHAPTER TRACKING ----
-  // Fires on scroll (rAF-throttled). Determines the topmost visible chapter
-  // and updates topbar, hash, float nav, and chapter-active class.
+  // ---- CONTINUOUS-SCROLL CHAPTER + BOOK TRACKING ----
+  // Fires on scroll (rAF-throttled). Walks the visible-book chain, finds the
+  // book whose content owns the viewport's topbar-line, and the topmost
+  // chapter inside that book that has scrolled past the topbar. Updates
+  // topbar, hash, float nav, currentBook, and chapter-active class. Stops
+  // narration if the user scrolls across a book boundary while playing.
   var _scrollTicking = false;
   function onScrollUpdateChapter() {
     if (_scrollTicking) return;
     _scrollTicking = true;
     requestAnimationFrame(function() {
       _scrollTicking = false;
-      if (!currentBook) return;
-      var bookEl = document.getElementById('book-' + currentBook);
-      if (!bookEl || bookEl.style.display === 'none') return;
-      var chapters = bookEl.querySelectorAll('.chapter-content');
-      if (!chapters.length) return;
+      var chain = _getVisibleBookChain();
+      if (!chain.length) return;
       var topbarH = 52;
+      // Find which book contains the topbar reference line. Pick the visible
+      // book whose top is at or above the topbar AND whose bottom is below it.
+      // Fallback: first visible book intersecting the viewport.
+      var activeBookEl = null;
+      for (var i = 0; i < chain.length; i++) {
+        var rect = chain[i].getBoundingClientRect();
+        if (rect.top <= topbarH && rect.bottom > topbarH) {
+          activeBookEl = chain[i];
+          break;
+        }
+      }
+      if (!activeBookEl) {
+        for (var i = 0; i < chain.length; i++) {
+          var rect = chain[i].getBoundingClientRect();
+          if (rect.bottom > topbarH) { activeBookEl = chain[i]; break; }
+        }
+      }
+      if (!activeBookEl) activeBookEl = chain[0];
+      var activeBookId = _bookIdFromEl(activeBookEl);
+      if (!activeBookId) return;
+      // Detect book-boundary cross.
+      var bookChanged = (activeBookId !== currentBook);
+      if (bookChanged) {
+        // Stop narration on cross — narration tracks lineIndex within a chapter
+        // and a book change would desync it. v1 stops at boundary; user can
+        // restart narration on the new book.
+        try {
+          if (typeof NARRATION !== 'undefined' && NARRATION.isPlaying) {
+            NARRATION.stop();
+          }
+        } catch (e) { /* narration may not be loaded yet */ }
+        currentBook = activeBookId;
+        var newMeta = bookMeta[activeBookId];
+        if (newMeta) {
+          document.getElementById('topbar-book').textContent = newMeta.name;
+        }
+        highlightBookBtn(activeBookId);
+        removeDeityHighlights();
+      }
+      // Now find the active chapter within activeBookEl.
+      var chapters = activeBookEl.querySelectorAll('.chapter-content');
+      if (!chapters.length) return;
       var best = null;
       var bestTop = -Infinity;
-      // Find topmost chapter whose top has scrolled at or above the topbar line
       for (var i = 0; i < chapters.length; i++) {
         var rect = chapters[i].getBoundingClientRect();
         if (rect.top <= topbarH && rect.top > bestTop) {
@@ -3618,7 +3797,6 @@
           best = chapters[i];
         }
       }
-      // If none has scrolled past topbar, take first chapter with visible content
       if (!best) {
         for (var i = 0; i < chapters.length; i++) {
           var rect = chapters[i].getBoundingClientRect();
@@ -3626,17 +3804,17 @@
         }
       }
       if (!best) return;
-      // Extract chapter number from id: "ch-alma-32" → last segment
       var idParts = best.id.split('-');
       var chNum = parseInt(idParts[idParts.length - 1]);
-      if (isNaN(chNum) || currentChapterMap[currentBook] === chNum) return;
-      // Update state
+      if (isNaN(chNum)) return;
+      // Skip the rest if neither book nor chapter changed.
+      if (!bookChanged && currentChapterMap[currentBook] === chNum) return;
       currentChapterMap[currentBook] = chNum;
-      // chapter-active class
-      var prevActive = bookEl.querySelector('.chapter-content.chapter-active');
-      if (prevActive) prevActive.classList.remove('chapter-active');
+      // chapter-active class — clear previous globally; mark current.
+      var prevActive = document.querySelector('.chapter-content.chapter-active');
+      if (prevActive && prevActive !== best) prevActive.classList.remove('chapter-active');
       best.classList.add('chapter-active');
-      // Topbar
+      // Topbar chapter
       var meta = bookMeta[currentBook];
       if (meta) document.getElementById('topbar-chap').textContent = chNum;
       // Float nav
@@ -3663,8 +3841,11 @@
     var h = document.documentElement.scrollHeight - window.innerHeight;
     var pct = h > 0 ? (y / h * 100) : 0;
     document.getElementById('progress').style.width = pct + '%';
-    // Chapter tracking for continuous scroll
+    // Chapter + book tracking for continuous scroll
     onScrollUpdateChapter();
+    // Cross-book endless scroll: extend forward/backward when near edges
+    _tryExtendForward();
+    _tryExtendBackward();
   }, { passive: true });
 
   // ---- SWIPE TO CHANGE CHAPTERS ----
