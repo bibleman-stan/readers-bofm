@@ -1,0 +1,904 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 20,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 348.344,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.229,
+      "type": "line",
+      "text": "Now there was a place in Shemlon",
+      "verse": "20:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.409,
+      "end": 7.007,
+      "type": "line",
+      "text": "where the daughters of the Lamanites did gather themselves together to sing,",
+      "verse": "20:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.187,
+      "end": 8.394,
+      "type": "line",
+      "text": "and to dance,",
+      "verse": "20:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 8.574,
+      "end": 10.339,
+      "type": "line",
+      "text": "and to make themselves merry.",
+      "verse": "20:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.019,
+      "end": 13.527,
+      "type": "line",
+      "text": "And it came to pass that there was one day",
+      "verse": "20:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 13.707,
+      "end": 17.933,
+      "type": "line",
+      "text": "a small number of them gathered together to sing and to dance.",
+      "verse": "20:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 18.613,
+      "end": 20.842,
+      "type": "line",
+      "text": "And now the priests of king Noah,",
+      "verse": "20:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 21.022,
+      "end": 24.273,
+      "type": "line",
+      "text": "being ashamed to return to the city of Nephi,",
+      "verse": "20:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 24.453,
+      "end": 27.564,
+      "type": "line",
+      "text": "yea, and also fearing that the people would slay them,",
+      "verse": "20:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 27.744,
+      "end": 31.459,
+      "type": "line",
+      "text": "therefore they durst not return to their wives and their children.",
+      "verse": "20:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 32.139,
+      "end": 34.461,
+      "type": "line",
+      "text": "And having tarried in the wilderness,",
+      "verse": "20:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 34.641,
+      "end": 38.031,
+      "type": "line",
+      "text": "and having discovered the daughters of the Lamanites,",
+      "verse": "20:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 38.211,
+      "end": 40.254,
+      "type": "line",
+      "text": "they laid and watched them;",
+      "verse": "20:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 40.934,
+      "end": 45.067,
+      "type": "line",
+      "text": "And when there were but few of them gathered together to dance,",
+      "verse": "20:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 45.247,
+      "end": 48.033,
+      "type": "line",
+      "text": "they came forth out of their secret places",
+      "verse": "20:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 48.213,
+      "end": 51.696,
+      "type": "line",
+      "text": "and took them and carried them into the wilderness;",
+      "verse": "20:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 51.876,
+      "end": 55.22,
+      "type": "line",
+      "text": "yea, twenty and four of the daughters of the Lamanites",
+      "verse": "20:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 55.4,
+      "end": 57.722,
+      "type": "line",
+      "text": "they carried into the wilderness.",
+      "verse": "20:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 58.402,
+      "end": 64.161,
+      "type": "line",
+      "text": "And it came to pass that when the Lamanites found that their daughters had been missing,",
+      "verse": "20:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 64.341,
+      "end": 66.942,
+      "type": "line",
+      "text": "they were angry with the people of Limhi,",
+      "verse": "20:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 67.122,
+      "end": 69.676,
+      "type": "line",
+      "text": "for they thought it was the people of Limhi.",
+      "verse": "20:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 70.356,
+      "end": 72.632,
+      "type": "line",
+      "text": "Therefore they sent their armies forth;",
+      "verse": "20:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 72.812,
+      "end": 75.784,
+      "type": "line",
+      "text": "yea, even the king himself went before his people;",
+      "verse": "20:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 75.964,
+      "end": 80.19,
+      "type": "line",
+      "text": "and they went up to the land of Nephi to destroy the people of Limhi.",
+      "verse": "20:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 80.87,
+      "end": 83.749,
+      "type": "line",
+      "text": "And now Limhi had discovered them from the tower,",
+      "verse": "20:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 83.929,
+      "end": 87.133,
+      "type": "line",
+      "text": "even all their preparations for war did he discover;",
+      "verse": "20:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 87.313,
+      "end": 89.96,
+      "type": "line",
+      "text": "therefore he gathered his people together,",
+      "verse": "20:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 90.14,
+      "end": 93.669,
+      "type": "line",
+      "text": "and laid wait for them in the fields and in the forests.",
+      "verse": "20:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 94.349,
+      "end": 98.018,
+      "type": "line",
+      "text": "And it came to pass that when the Lamanites had come up,",
+      "verse": "20:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 98.198,
+      "end": 102.935,
+      "type": "line",
+      "text": "that the people of Limhi began to fall upon them from their waiting places,",
+      "verse": "20:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 103.115,
+      "end": 104.74,
+      "type": "line",
+      "text": "and began to slay them.",
+      "verse": "20:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 105.42,
+      "end": 108.857,
+      "type": "line",
+      "text": "And it came to pass that the battle became exceedingly sore,",
+      "verse": "20:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 109.037,
+      "end": 111.498,
+      "type": "line",
+      "text": "for they fought like lions for their prey.",
+      "verse": "20:10",
+      "lineIndex": 34
+    },
+    {
+      "start": 112.178,
+      "end": 117.704,
+      "type": "line",
+      "text": "And it came to pass that the people of Limhi began to drive the Lamanites before them;",
+      "verse": "20:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 117.884,
+      "end": 121.321,
+      "type": "line",
+      "text": "yet they were not half so numerous as the Lamanites.",
+      "verse": "20:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 121.501,
+      "end": 123.498,
+      "type": "line",
+      "text": "But they fought for their lives,",
+      "verse": "20:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 123.678,
+      "end": 125.35,
+      "type": "line",
+      "text": "and for their wives,",
+      "verse": "20:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 125.53,
+      "end": 127.248,
+      "type": "line",
+      "text": "and for their children;",
+      "verse": "20:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 127.428,
+      "end": 131.329,
+      "type": "line",
+      "text": "therefore they exerted themselves and like dragons did they fight.",
+      "verse": "20:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 132.009,
+      "end": 137.164,
+      "type": "line",
+      "text": "And it came to pass that they found the king of the Lamanites among the number of their dead;",
+      "verse": "20:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 137.344,
+      "end": 138.969,
+      "type": "line",
+      "text": "yet he was not dead,",
+      "verse": "20:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 139.149,
+      "end": 142.075,
+      "type": "line",
+      "text": "having been wounded and left upon the ground,",
+      "verse": "20:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 142.255,
+      "end": 144.809,
+      "type": "line",
+      "text": "so speedy was the flight of his people.",
+      "verse": "20:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 145.489,
+      "end": 147.857,
+      "type": "line",
+      "text": "And they took him and bound up his wounds,",
+      "verse": "20:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 148.037,
+      "end": 150.266,
+      "type": "line",
+      "text": "and brought him before Limhi, and said:",
+      "verse": "20:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 150.446,
+      "end": 153.186,
+      "type": "line",
+      "text": "Behold, here is the king of the Lamanites;",
+      "verse": "20:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 153.366,
+      "end": 156.849,
+      "type": "line",
+      "text": "he having received a wound has fallen among their dead",
+      "verse": "20:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 157.029,
+      "end": 158.515,
+      "type": "line",
+      "text": "and they have left him;",
+      "verse": "20:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 158.695,
+      "end": 161.435,
+      "type": "line",
+      "text": "and behold, we have brought him before you;",
+      "verse": "20:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 161.615,
+      "end": 163.194,
+      "type": "line",
+      "text": "and now let us slay him.",
+      "verse": "20:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 163.874,
+      "end": 165.685,
+      "type": "line",
+      "text": "But Limhi said unto them:",
+      "verse": "20:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 165.865,
+      "end": 167.351,
+      "type": "line",
+      "text": "Ye shall not slay him,",
+      "verse": "20:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 167.531,
+      "end": 169.899,
+      "type": "line",
+      "text": "but bring him hither that I may see him.",
+      "verse": "20:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 170.079,
+      "end": 171.658,
+      "type": "line",
+      "text": "And they brought him.",
+      "verse": "20:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 171.838,
+      "end": 173.603,
+      "type": "line",
+      "text": "And Limhi said unto him:",
+      "verse": "20:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 173.783,
+      "end": 177.034,
+      "type": "line",
+      "text": "What cause have ye to come up to war against my people?",
+      "verse": "20:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 177.214,
+      "end": 181.486,
+      "type": "line",
+      "text": "Behold, my people have not broken the oath that I made unto you;",
+      "verse": "20:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 181.666,
+      "end": 186.124,
+      "type": "line",
+      "text": "therefore, why should ye break the oath which ye made unto my people?",
+      "verse": "20:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 186.804,
+      "end": 188.337,
+      "type": "line",
+      "text": "And now the king said:",
+      "verse": "20:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 188.517,
+      "end": 190.328,
+      "type": "line",
+      "text": "I have broken the oath",
+      "verse": "20:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 190.508,
+      "end": 194.177,
+      "type": "line",
+      "text": "because thy people did carry away the daughters of my people;",
+      "verse": "20:15",
+      "lineIndex": 62
+    },
+    {
+      "start": 194.357,
+      "end": 196.261,
+      "type": "line",
+      "text": "therefore, in my anger",
+      "verse": "20:15",
+      "lineIndex": 63
+    },
+    {
+      "start": 196.441,
+      "end": 199.878,
+      "type": "line",
+      "text": "I did cause my people to come up to war against thy people.",
+      "verse": "20:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 200.558,
+      "end": 203.669,
+      "type": "line",
+      "text": "And now Limhi had heard nothing concerning this matter;",
+      "verse": "20:16",
+      "lineIndex": 65
+    },
+    {
+      "start": 203.849,
+      "end": 205.289,
+      "type": "line",
+      "text": "therefore he said:",
+      "verse": "20:16",
+      "lineIndex": 66
+    },
+    {
+      "start": 205.469,
+      "end": 207.559,
+      "type": "line",
+      "text": "I will search among my people",
+      "verse": "20:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 207.739,
+      "end": 210.525,
+      "type": "line",
+      "text": "and whosoever has done this thing shall perish.",
+      "verse": "20:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 210.705,
+      "end": 214.049,
+      "type": "line",
+      "text": "Therefore he caused a search to be made among his people.",
+      "verse": "20:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 214.729,
+      "end": 216.958,
+      "type": "line",
+      "text": "Now when Gideon had heard these things,",
+      "verse": "20:17",
+      "lineIndex": 70
+    },
+    {
+      "start": 217.138,
+      "end": 219.228,
+      "type": "line",
+      "text": "he being the king's captain,",
+      "verse": "20:17",
+      "lineIndex": 71
+    },
+    {
+      "start": 219.408,
+      "end": 221.916,
+      "type": "line",
+      "text": "he went forth and said unto the king:",
+      "verse": "20:17",
+      "lineIndex": 72
+    },
+    {
+      "start": 222.096,
+      "end": 225.161,
+      "type": "line",
+      "text": "I pray thee forbear, and do not search this people,",
+      "verse": "20:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 225.341,
+      "end": 227.431,
+      "type": "line",
+      "text": "and lay not this thing to their charge.",
+      "verse": "20:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 228.111,
+      "end": 230.851,
+      "type": "line",
+      "text": "For do ye not remember the priests of thy father,",
+      "verse": "20:18",
+      "lineIndex": 75
+    },
+    {
+      "start": 231.031,
+      "end": 233.214,
+      "type": "line",
+      "text": "whom this people sought to destroy?",
+      "verse": "20:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 233.394,
+      "end": 235.344,
+      "type": "line",
+      "text": "And are they not in the wilderness?",
+      "verse": "20:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 235.524,
+      "end": 240.586,
+      "type": "line",
+      "text": "And are not they the ones who have stolen the daughters of the Lamanites?",
+      "verse": "20:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 241.266,
+      "end": 244.331,
+      "type": "line",
+      "text": "And now, behold, and tell the king of these things,",
+      "verse": "20:19",
+      "lineIndex": 79
+    },
+    {
+      "start": 244.511,
+      "end": 248.458,
+      "type": "line",
+      "text": "that he may tell his people that they may be pacified towards us;",
+      "verse": "20:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 248.638,
+      "end": 251.842,
+      "type": "line",
+      "text": "for behold they are already preparing to come against us;",
+      "verse": "20:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 252.022,
+      "end": 254.344,
+      "type": "line",
+      "text": "and behold also there are but few of us.",
+      "verse": "20:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 255.024,
+      "end": 257.903,
+      "type": "line",
+      "text": "And behold, they come with their numerous hosts;",
+      "verse": "20:20",
+      "lineIndex": 83
+    },
+    {
+      "start": 258.083,
+      "end": 262.123,
+      "type": "line",
+      "text": "and except the king doth pacify them towards us we must perish.",
+      "verse": "20:20",
+      "lineIndex": 84
+    },
+    {
+      "start": 262.803,
+      "end": 265.775,
+      "type": "line",
+      "text": "For are not the words of Abinadi fulfilled,",
+      "verse": "20:21",
+      "lineIndex": 85
+    },
+    {
+      "start": 265.955,
+      "end": 268.184,
+      "type": "line",
+      "text": "which he prophesied against us\u2014",
+      "verse": "20:21",
+      "lineIndex": 86
+    },
+    {
+      "start": 268.364,
+      "end": 272.033,
+      "type": "line",
+      "text": "and all this because we would not hearken unto the words of the Lord,",
+      "verse": "20:21",
+      "lineIndex": 87
+    },
+    {
+      "start": 272.213,
+      "end": 274.303,
+      "type": "line",
+      "text": "and turn from our iniquities?",
+      "verse": "20:21",
+      "lineIndex": 88
+    },
+    {
+      "start": 274.983,
+      "end": 277.026,
+      "type": "line",
+      "text": "And now let us pacify the king,",
+      "verse": "20:22",
+      "lineIndex": 89
+    },
+    {
+      "start": 277.206,
+      "end": 280.039,
+      "type": "line",
+      "text": "and we fulfil the oath which we have made unto him;",
+      "verse": "20:22",
+      "lineIndex": 90
+    },
+    {
+      "start": 280.219,
+      "end": 283.145,
+      "type": "line",
+      "text": "for it is better that we should be in bondage",
+      "verse": "20:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 283.325,
+      "end": 285.786,
+      "type": "line",
+      "text": "than that we should lose our lives;",
+      "verse": "20:22",
+      "lineIndex": 92
+    },
+    {
+      "start": 285.966,
+      "end": 289.588,
+      "type": "line",
+      "text": "therefore, let us put a stop to the shedding of so much blood.",
+      "verse": "20:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 290.268,
+      "end": 294.123,
+      "type": "line",
+      "text": "And now Limhi told the king all the things concerning his father,",
+      "verse": "20:23",
+      "lineIndex": 94
+    },
+    {
+      "start": 294.303,
+      "end": 296.997,
+      "type": "line",
+      "text": "and the priests that had fled into the wilderness,",
+      "verse": "20:23",
+      "lineIndex": 95
+    },
+    {
+      "start": 297.177,
+      "end": 300.66,
+      "type": "line",
+      "text": "and attributed the carrying away of their daughters to them.",
+      "verse": "20:23",
+      "lineIndex": 96
+    },
+    {
+      "start": 301.34,
+      "end": 305.938,
+      "type": "line",
+      "text": "And it came to pass that the king was pacified towards his people;",
+      "verse": "20:24",
+      "lineIndex": 97
+    },
+    {
+      "start": 306.118,
+      "end": 307.743,
+      "type": "line",
+      "text": "and he said unto them:",
+      "verse": "20:24",
+      "lineIndex": 98
+    },
+    {
+      "start": 307.923,
+      "end": 310.756,
+      "type": "line",
+      "text": "Let us go forth to meet my people, without arms;",
+      "verse": "20:24",
+      "lineIndex": 99
+    },
+    {
+      "start": 310.936,
+      "end": 313.397,
+      "type": "line",
+      "text": "and I swear unto you with an oath",
+      "verse": "20:24",
+      "lineIndex": 100
+    },
+    {
+      "start": 313.577,
+      "end": 315.945,
+      "type": "line",
+      "text": "that my people shall not slay thy people.",
+      "verse": "20:24",
+      "lineIndex": 101
+    },
+    {
+      "start": 316.625,
+      "end": 319.411,
+      "type": "line",
+      "text": "And it came to pass that they followed the king,",
+      "verse": "20:25",
+      "lineIndex": 102
+    },
+    {
+      "start": 319.591,
+      "end": 323.028,
+      "type": "line",
+      "text": "and went forth without arms to meet the Lamanites.",
+      "verse": "20:25",
+      "lineIndex": 103
+    },
+    {
+      "start": 323.208,
+      "end": 326.087,
+      "type": "line",
+      "text": "And it came to pass that they did meet the Lamanites;",
+      "verse": "20:25",
+      "lineIndex": 104
+    },
+    {
+      "start": 326.267,
+      "end": 330.261,
+      "type": "line",
+      "text": "and the king of the Lamanites did bow himself down before them,",
+      "verse": "20:25",
+      "lineIndex": 105
+    },
+    {
+      "start": 330.441,
+      "end": 333.878,
+      "type": "line",
+      "text": "and did plead in behalf of the people of Limhi.",
+      "verse": "20:25",
+      "lineIndex": 106
+    },
+    {
+      "start": 334.558,
+      "end": 337.391,
+      "type": "line",
+      "text": "And when the Lamanites saw the people of Limhi,",
+      "verse": "20:26",
+      "lineIndex": 107
+    },
+    {
+      "start": 337.571,
+      "end": 339.243,
+      "type": "line",
+      "text": "that they were without arms,",
+      "verse": "20:26",
+      "lineIndex": 108
+    },
+    {
+      "start": 339.423,
+      "end": 341.606,
+      "type": "line",
+      "text": "they had compassion on them",
+      "verse": "20:26",
+      "lineIndex": 109
+    },
+    {
+      "start": 341.786,
+      "end": 344.062,
+      "type": "line",
+      "text": "and were pacified towards them,",
+      "verse": "20:26",
+      "lineIndex": 110
+    },
+    {
+      "start": 344.242,
+      "end": 347.679,
+      "type": "line",
+      "text": "and returned with their king in peace to their own land.",
+      "verse": "20:26",
+      "lineIndex": 111
+    }
+  ]
+}

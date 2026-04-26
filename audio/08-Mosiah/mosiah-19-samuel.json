@@ -1,0 +1,840 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 19,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 351.702,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.158,
+      "type": "line",
+      "text": "And it came to pass that the army of the king returned,",
+      "verse": "19:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.338,
+      "end": 6.124,
+      "type": "line",
+      "text": "having searched in vain for the people of the Lord.",
+      "verse": "19:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.804,
+      "end": 11.68,
+      "type": "line",
+      "text": "And now behold, the forces of the king were small, having been reduced,",
+      "verse": "19:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.86,
+      "end": 15.529,
+      "type": "line",
+      "text": "and there began to be a division among the remainder of the people.",
+      "verse": "19:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 16.209,
+      "end": 21.55,
+      "type": "line",
+      "text": "And the lesser part began to breathe out threatenings against the king,",
+      "verse": "19:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 21.73,
+      "end": 24.981,
+      "type": "line",
+      "text": "and there began to be a great contention among them.",
+      "verse": "19:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.661,
+      "end": 29.19,
+      "type": "line",
+      "text": "And now there was a man among them whose name was Gideon,",
+      "verse": "19:4",
+      "lineIndex": 7
+    },
+    {
+      "start": 29.37,
+      "end": 32.899,
+      "type": "line",
+      "text": "and he being a strong man and an enemy to the king,",
+      "verse": "19:4",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.079,
+      "end": 34.983,
+      "type": "line",
+      "text": "therefore he drew his sword",
+      "verse": "19:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 35.163,
+      "end": 37.81,
+      "type": "line",
+      "text": "and swore in his wrath that he would slay the king.",
+      "verse": "19:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 38.49,
+      "end": 41.137,
+      "type": "line",
+      "text": "And it came to pass that he fought with the king;",
+      "verse": "19:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 41.317,
+      "end": 44.846,
+      "type": "line",
+      "text": "and when the king saw that he was about to overpower him,",
+      "verse": "19:5",
+      "lineIndex": 12
+    },
+    {
+      "start": 45.026,
+      "end": 46.048,
+      "type": "line",
+      "text": "he fled",
+      "verse": "19:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 46.228,
+      "end": 47.11,
+      "type": "line",
+      "text": "and ran",
+      "verse": "19:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 47.29,
+      "end": 50.355,
+      "type": "line",
+      "text": "and got upon the tower which was near the temple.",
+      "verse": "19:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 51.035,
+      "end": 53.264,
+      "type": "line",
+      "text": "And Gideon pursued after him",
+      "verse": "19:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 53.444,
+      "end": 56.834,
+      "type": "line",
+      "text": "and was about to get upon the tower to slay the king,",
+      "verse": "19:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 57.014,
+      "end": 61.519,
+      "type": "line",
+      "text": "and the king cast his eyes round about towards the land of Shemlon,",
+      "verse": "19:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 61.699,
+      "end": 66.25,
+      "type": "line",
+      "text": "and behold, the army of the Lamanites were within the borders of the land.",
+      "verse": "19:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 66.93,
+      "end": 70.552,
+      "type": "line",
+      "text": "And now the king cried out in the anguish of his soul, saying:",
+      "verse": "19:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 70.732,
+      "end": 72.218,
+      "type": "line",
+      "text": "Gideon, spare me,",
+      "verse": "19:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 72.398,
+      "end": 74.674,
+      "type": "line",
+      "text": "for the Lamanites are upon us,",
+      "verse": "19:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 74.854,
+      "end": 76.433,
+      "type": "line",
+      "text": "and they will destroy us;",
+      "verse": "19:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 76.613,
+      "end": 78.563,
+      "type": "line",
+      "text": "yea, they will destroy my people.",
+      "verse": "19:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 79.243,
+      "end": 82.726,
+      "type": "line",
+      "text": "And now the king was not so much concerned about his people",
+      "verse": "19:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 82.906,
+      "end": 85.089,
+      "type": "line",
+      "text": "as he was about his own life;",
+      "verse": "19:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 85.269,
+      "end": 87.637,
+      "type": "line",
+      "text": "nevertheless, Gideon did spare his life.",
+      "verse": "19:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 88.317,
+      "end": 92.729,
+      "type": "line",
+      "text": "And the king commanded the people that they should flee before the Lamanites,",
+      "verse": "19:9",
+      "lineIndex": 28
+    },
+    {
+      "start": 92.909,
+      "end": 95.138,
+      "type": "line",
+      "text": "and he himself did go before them,",
+      "verse": "19:9",
+      "lineIndex": 29
+    },
+    {
+      "start": 95.318,
+      "end": 99.451,
+      "type": "line",
+      "text": "and they did flee into the wilderness, with their women and their children.",
+      "verse": "19:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 100.131,
+      "end": 103.382,
+      "type": "line",
+      "text": "And it came to pass that the Lamanites did pursue them,",
+      "verse": "19:10",
+      "lineIndex": 31
+    },
+    {
+      "start": 103.562,
+      "end": 105.42,
+      "type": "line",
+      "text": "and did overtake them,",
+      "verse": "19:10",
+      "lineIndex": 32
+    },
+    {
+      "start": 105.6,
+      "end": 107.225,
+      "type": "line",
+      "text": "and began to slay them.",
+      "verse": "19:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 107.905,
+      "end": 114.082,
+      "type": "line",
+      "text": "Now it came to pass that the king commanded them that all the men should leave their wives and their children,",
+      "verse": "19:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 114.262,
+      "end": 116.352,
+      "type": "line",
+      "text": "and flee before the Lamanites.",
+      "verse": "19:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 117.032,
+      "end": 119.4,
+      "type": "line",
+      "text": "Now there were many that would not leave them,",
+      "verse": "19:12",
+      "lineIndex": 36
+    },
+    {
+      "start": 119.58,
+      "end": 122.088,
+      "type": "line",
+      "text": "but had rather stay and perish with them.",
+      "verse": "19:12",
+      "lineIndex": 37
+    },
+    {
+      "start": 122.268,
+      "end": 125.24,
+      "type": "line",
+      "text": "And the rest left their wives and their children and fled.",
+      "verse": "19:12",
+      "lineIndex": 38
+    },
+    {
+      "start": 125.92,
+      "end": 130.146,
+      "type": "line",
+      "text": "And it came to pass that those who tarried with their wives and their children",
+      "verse": "19:13",
+      "lineIndex": 39
+    },
+    {
+      "start": 130.326,
+      "end": 135.574,
+      "type": "line",
+      "text": "caused that their fair daughters should stand forth and plead with the Lamanites",
+      "verse": "19:13",
+      "lineIndex": 40
+    },
+    {
+      "start": 135.754,
+      "end": 137.612,
+      "type": "line",
+      "text": "that they would not slay them.",
+      "verse": "19:13",
+      "lineIndex": 41
+    },
+    {
+      "start": 138.292,
+      "end": 142.704,
+      "type": "line",
+      "text": "And it came to pass that the Lamanites had compassion on them,",
+      "verse": "19:14",
+      "lineIndex": 42
+    },
+    {
+      "start": 142.884,
+      "end": 146.413,
+      "type": "line",
+      "text": "for they were charmed with the beauty of their women.",
+      "verse": "19:14",
+      "lineIndex": 43
+    },
+    {
+      "start": 147.093,
+      "end": 149.833,
+      "type": "line",
+      "text": "Therefore the Lamanites did spare their lives,",
+      "verse": "19:15",
+      "lineIndex": 45
+    },
+    {
+      "start": 150.013,
+      "end": 151.638,
+      "type": "line",
+      "text": "and took them captives",
+      "verse": "19:15",
+      "lineIndex": 46
+    },
+    {
+      "start": 151.818,
+      "end": 154.326,
+      "type": "line",
+      "text": "and carried them back to the land of Nephi,",
+      "verse": "19:15",
+      "lineIndex": 47
+    },
+    {
+      "start": 154.506,
+      "end": 157.71,
+      "type": "line",
+      "text": "and granted unto them that they might possess the land,",
+      "verse": "19:15",
+      "lineIndex": 48
+    },
+    {
+      "start": 157.89,
+      "end": 163.463,
+      "type": "line",
+      "text": "under the conditions that they would deliver up king Noah into the hands of the Lamanites,",
+      "verse": "19:15",
+      "lineIndex": 49
+    },
+    {
+      "start": 163.643,
+      "end": 165.779,
+      "type": "line",
+      "text": "and deliver up their property,",
+      "verse": "19:15",
+      "lineIndex": 50
+    },
+    {
+      "start": 165.959,
+      "end": 171.346,
+      "type": "line",
+      "text": "even one half of all they possessed, one half of their gold, and their silver, and all their precious things,",
+      "verse": "19:15",
+      "lineIndex": 51
+    },
+    {
+      "start": 171.526,
+      "end": 173.523,
+      "type": "line",
+      "text": "and thus they should pay tribute",
+      "verse": "19:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 173.703,
+      "end": 177.0,
+      "type": "line",
+      "text": "to the king of the Lamanites from year to year.",
+      "verse": "19:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 177.68,
+      "end": 180.745,
+      "type": "line",
+      "text": "And now there was one of the sons of the king",
+      "verse": "19:16",
+      "lineIndex": 54
+    },
+    {
+      "start": 180.925,
+      "end": 183.572,
+      "type": "line",
+      "text": "among those that were taken captive,",
+      "verse": "19:16",
+      "lineIndex": 55
+    },
+    {
+      "start": 183.752,
+      "end": 185.192,
+      "type": "line",
+      "text": "whose name was Limhi.",
+      "verse": "19:16",
+      "lineIndex": 56
+    },
+    {
+      "start": 185.872,
+      "end": 190.052,
+      "type": "line",
+      "text": "And now Limhi was desirous that his father should not be destroyed;",
+      "verse": "19:17",
+      "lineIndex": 57
+    },
+    {
+      "start": 190.232,
+      "end": 195.108,
+      "type": "line",
+      "text": "nevertheless, Limhi was not ignorant of the iniquities of his father,",
+      "verse": "19:17",
+      "lineIndex": 58
+    },
+    {
+      "start": 195.288,
+      "end": 197.192,
+      "type": "line",
+      "text": "he himself being a just man.",
+      "verse": "19:17",
+      "lineIndex": 59
+    },
+    {
+      "start": 197.872,
+      "end": 203.445,
+      "type": "line",
+      "text": "And it came to pass that Gideon sent men into the wilderness secretly,",
+      "verse": "19:18",
+      "lineIndex": 60
+    },
+    {
+      "start": 203.625,
+      "end": 206.969,
+      "type": "line",
+      "text": "to search for the king and those that were with him.",
+      "verse": "19:18",
+      "lineIndex": 61
+    },
+    {
+      "start": 207.149,
+      "end": 210.586,
+      "type": "line",
+      "text": "And it came to pass that they met the people in the wilderness,",
+      "verse": "19:18",
+      "lineIndex": 62
+    },
+    {
+      "start": 210.766,
+      "end": 213.274,
+      "type": "line",
+      "text": "all save the king and his priests.",
+      "verse": "19:18",
+      "lineIndex": 63
+    },
+    {
+      "start": 213.954,
+      "end": 218.737,
+      "type": "line",
+      "text": "Now they had sworn in their hearts that they would return to the land of Nephi,",
+      "verse": "19:19",
+      "lineIndex": 64
+    },
+    {
+      "start": 218.917,
+      "end": 221.889,
+      "type": "line",
+      "text": "and if their wives and their children were slain,",
+      "verse": "19:19",
+      "lineIndex": 65
+    },
+    {
+      "start": 222.069,
+      "end": 224.902,
+      "type": "line",
+      "text": "and also those that had tarried with them,",
+      "verse": "19:19",
+      "lineIndex": 66
+    },
+    {
+      "start": 225.082,
+      "end": 226.94,
+      "type": "line",
+      "text": "that they would seek revenge,",
+      "verse": "19:19",
+      "lineIndex": 67
+    },
+    {
+      "start": 227.12,
+      "end": 228.885,
+      "type": "line",
+      "text": "and also perish with them.",
+      "verse": "19:19",
+      "lineIndex": 68
+    },
+    {
+      "start": 229.565,
+      "end": 232.816,
+      "type": "line",
+      "text": "And the king commanded them that they should not return;",
+      "verse": "19:20",
+      "lineIndex": 69
+    },
+    {
+      "start": 232.996,
+      "end": 234.854,
+      "type": "line",
+      "text": "and they were angry with the king,",
+      "verse": "19:20",
+      "lineIndex": 70
+    },
+    {
+      "start": 235.034,
+      "end": 239.074,
+      "type": "line",
+      "text": "and caused that he should suffer, even unto death by fire.",
+      "verse": "19:20",
+      "lineIndex": 71
+    },
+    {
+      "start": 239.754,
+      "end": 242.587,
+      "type": "line",
+      "text": "And they were about to take the priests also",
+      "verse": "19:21",
+      "lineIndex": 72
+    },
+    {
+      "start": 242.767,
+      "end": 244.3,
+      "type": "line",
+      "text": "and put them to death,",
+      "verse": "19:21",
+      "lineIndex": 73
+    },
+    {
+      "start": 244.48,
+      "end": 246.245,
+      "type": "line",
+      "text": "and they fled before them.",
+      "verse": "19:21",
+      "lineIndex": 74
+    },
+    {
+      "start": 246.925,
+      "end": 251.848,
+      "type": "line",
+      "text": "And it came to pass that they were about to return to the land of Nephi,",
+      "verse": "19:22",
+      "lineIndex": 75
+    },
+    {
+      "start": 252.028,
+      "end": 254.211,
+      "type": "line",
+      "text": "and they met the men of Gideon.",
+      "verse": "19:22",
+      "lineIndex": 76
+    },
+    {
+      "start": 254.391,
+      "end": 256.62,
+      "type": "line",
+      "text": "And the men of Gideon told them",
+      "verse": "19:22",
+      "lineIndex": 77
+    },
+    {
+      "start": 256.8,
+      "end": 260.19,
+      "type": "line",
+      "text": "of all that had happened to their wives and their children;",
+      "verse": "19:22",
+      "lineIndex": 78
+    },
+    {
+      "start": 260.37,
+      "end": 265.618,
+      "type": "line",
+      "text": "and that the Lamanites had granted unto them that they might possess the land",
+      "verse": "19:22",
+      "lineIndex": 79
+    },
+    {
+      "start": 265.798,
+      "end": 270.303,
+      "type": "line",
+      "text": "by paying a tribute to the Lamanites of one half of all they possessed.",
+      "verse": "19:22",
+      "lineIndex": 80
+    },
+    {
+      "start": 270.983,
+      "end": 274.838,
+      "type": "line",
+      "text": "And the people told the men of Gideon that they had slain the king,",
+      "verse": "19:23",
+      "lineIndex": 81
+    },
+    {
+      "start": 275.018,
+      "end": 279.244,
+      "type": "line",
+      "text": "and his priests had fled from them farther into the wilderness.",
+      "verse": "19:23",
+      "lineIndex": 82
+    },
+    {
+      "start": 279.924,
+      "end": 283.175,
+      "type": "line",
+      "text": "And it came to pass that after they had ended the ceremony,",
+      "verse": "19:24",
+      "lineIndex": 83
+    },
+    {
+      "start": 283.355,
+      "end": 286.466,
+      "type": "line",
+      "text": "that they returned to the land of Nephi, rejoicing,",
+      "verse": "19:24",
+      "lineIndex": 84
+    },
+    {
+      "start": 286.646,
+      "end": 289.711,
+      "type": "line",
+      "text": "because their wives and their children were not slain;",
+      "verse": "19:24",
+      "lineIndex": 85
+    },
+    {
+      "start": 289.891,
+      "end": 292.724,
+      "type": "line",
+      "text": "and they told Gideon what they had done to the king.",
+      "verse": "19:24",
+      "lineIndex": 86
+    },
+    {
+      "start": 293.404,
+      "end": 298.652,
+      "type": "line",
+      "text": "And it came to pass that the king of the Lamanites made an oath unto them,",
+      "verse": "19:25",
+      "lineIndex": 87
+    },
+    {
+      "start": 298.832,
+      "end": 300.922,
+      "type": "line",
+      "text": "that his people should not slay them.",
+      "verse": "19:25",
+      "lineIndex": 88
+    },
+    {
+      "start": 301.602,
+      "end": 303.088,
+      "type": "line",
+      "text": "And also Limhi,",
+      "verse": "19:26",
+      "lineIndex": 89
+    },
+    {
+      "start": 303.268,
+      "end": 304.94,
+      "type": "line",
+      "text": "being the son of the king,",
+      "verse": "19:26",
+      "lineIndex": 90
+    },
+    {
+      "start": 305.12,
+      "end": 308.278,
+      "type": "line",
+      "text": "having the kingdom conferred upon him by the people,",
+      "verse": "19:26",
+      "lineIndex": 91
+    },
+    {
+      "start": 308.458,
+      "end": 311.755,
+      "type": "line",
+      "text": "made oath unto the king of the Lamanites",
+      "verse": "19:26",
+      "lineIndex": 92
+    },
+    {
+      "start": 311.935,
+      "end": 314.396,
+      "type": "line",
+      "text": "that his people should pay tribute unto him,",
+      "verse": "19:26",
+      "lineIndex": 93
+    },
+    {
+      "start": 314.576,
+      "end": 316.944,
+      "type": "line",
+      "text": "even one half of all they possessed.",
+      "verse": "19:26",
+      "lineIndex": 94
+    },
+    {
+      "start": 317.624,
+      "end": 320.968,
+      "type": "line",
+      "text": "And it came to pass that Limhi began to establish the kingdom",
+      "verse": "19:27",
+      "lineIndex": 95
+    },
+    {
+      "start": 321.148,
+      "end": 323.656,
+      "type": "line",
+      "text": "and to establish peace among his people.",
+      "verse": "19:27",
+      "lineIndex": 96
+    },
+    {
+      "start": 324.336,
+      "end": 328.423,
+      "type": "line",
+      "text": "And the king of the Lamanites set guards round about the land,",
+      "verse": "19:28",
+      "lineIndex": 97
+    },
+    {
+      "start": 328.603,
+      "end": 331.947,
+      "type": "line",
+      "text": "that he might keep the people of Limhi in the land,",
+      "verse": "19:28",
+      "lineIndex": 98
+    },
+    {
+      "start": 332.127,
+      "end": 335.471,
+      "type": "line",
+      "text": "that they might not depart into the wilderness;",
+      "verse": "19:28",
+      "lineIndex": 99
+    },
+    {
+      "start": 335.651,
+      "end": 338.577,
+      "type": "line",
+      "text": "and he did support his guards out of the tribute",
+      "verse": "19:28",
+      "lineIndex": 100
+    },
+    {
+      "start": 338.757,
+      "end": 341.033,
+      "type": "line",
+      "text": "which he did receive from the Nephites.",
+      "verse": "19:28",
+      "lineIndex": 101
+    },
+    {
+      "start": 341.713,
+      "end": 346.311,
+      "type": "line",
+      "text": "And now king Limhi did have continual peace in his kingdom for the space of two years,",
+      "verse": "19:29",
+      "lineIndex": 102
+    },
+    {
+      "start": 346.491,
+      "end": 351.042,
+      "type": "line",
+      "text": "that the Lamanites did not molest them nor seek to destroy them.",
+      "verse": "19:29",
+      "lineIndex": 103
+    }
+  ]
+}
