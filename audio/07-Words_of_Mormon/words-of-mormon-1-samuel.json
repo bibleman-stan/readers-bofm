@@ -1,0 +1,688 @@
+{
+  "book": "words-of-mormon",
+  "bookName": "Words of Mormon",
+  "chapter": 1,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 316.361,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 1.811,
+      "type": "line",
+      "text": "And now I, Mormon,",
+      "verse": "1:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 1.991,
+      "end": 7.796,
+      "type": "line",
+      "text": "being about to deliver up the record which I have been making into the hands of my son Moroni,",
+      "verse": "1:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.976,
+      "end": 12.527,
+      "type": "line",
+      "text": "behold I have witnessed almost all the destruction of my people, the Nephites.",
+      "verse": "1:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 13.207,
+      "end": 16.458,
+      "type": "line",
+      "text": "And it is many hundred years after the coming of Christ",
+      "verse": "1:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 16.638,
+      "end": 20.121,
+      "type": "line",
+      "text": "that I deliver these records into the hands of my son;",
+      "verse": "1:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 20.301,
+      "end": 24.991,
+      "type": "line",
+      "text": "and it supposeth me that he will witness the entire destruction of my people.",
+      "verse": "1:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.171,
+      "end": 27.725,
+      "type": "line",
+      "text": "But may God grant that he may survive them,",
+      "verse": "1:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 27.905,
+      "end": 30.599,
+      "type": "line",
+      "text": "that he may write somewhat concerning them,",
+      "verse": "1:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 30.779,
+      "end": 32.59,
+      "type": "line",
+      "text": "and somewhat concerning Christ,",
+      "verse": "1:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 32.77,
+      "end": 35.278,
+      "type": "line",
+      "text": "that perhaps some day it may profit them.",
+      "verse": "1:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 35.958,
+      "end": 39.813,
+      "type": "line",
+      "text": "And now, I speak somewhat concerning that which I have written;",
+      "verse": "1:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 39.993,
+      "end": 44.033,
+      "type": "line",
+      "text": "for after I had made a abridgment from the plates of Nephi,",
+      "verse": "1:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.213,
+      "end": 49.136,
+      "type": "line",
+      "text": "down to the reign of this king Benjamin, of whom Amaleki spake,",
+      "verse": "1:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 49.316,
+      "end": 53.588,
+      "type": "line",
+      "text": "I searched among the records which had been delivered into my hands,",
+      "verse": "1:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 53.768,
+      "end": 55.347,
+      "type": "line",
+      "text": "and I found these plates,",
+      "verse": "1:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 55.527,
+      "end": 63.422,
+      "type": "line",
+      "text": "which contained this small account of the prophets, from Jacob down to the reign of this king Benjamin,",
+      "verse": "1:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 63.602,
+      "end": 65.97,
+      "type": "line",
+      "text": "and also many of the words of Nephi.",
+      "verse": "1:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 66.65,
+      "end": 72.873,
+      "type": "line",
+      "text": "And the things which are upon these plates pleasing me, because of the prophecies of the coming of Christ;",
+      "verse": "1:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 73.053,
+      "end": 76.722,
+      "type": "line",
+      "text": "and my fathers knowing that many of them have been fulfilled;",
+      "verse": "1:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 76.902,
+      "end": 83.822,
+      "type": "line",
+      "text": "yea, and I also know that as many things as have been prophesied concerning us down to this day have been fulfilled,",
+      "verse": "1:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 84.002,
+      "end": 87.764,
+      "type": "line",
+      "text": "and as many as go beyond this day must surely come to pass\u2014",
+      "verse": "1:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 88.444,
+      "end": 90.766,
+      "type": "line",
+      "text": "Wherefore, I chose these things,",
+      "verse": "1:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 90.946,
+      "end": 93.268,
+      "type": "line",
+      "text": "to finish my record upon them,",
+      "verse": "1:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 93.448,
+      "end": 97.906,
+      "type": "line",
+      "text": "which remainder of my record I shall take from the plates of Nephi;",
+      "verse": "1:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 98.086,
+      "end": 101.801,
+      "type": "line",
+      "text": "and I cannot write the hundredth part of the things of my people.",
+      "verse": "1:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 102.481,
+      "end": 104.989,
+      "type": "line",
+      "text": "But behold, I shall take these plates,",
+      "verse": "1:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 105.169,
+      "end": 108.606,
+      "type": "line",
+      "text": "which contain these prophesyings and revelations,",
+      "verse": "1:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 108.786,
+      "end": 112.223,
+      "type": "line",
+      "text": "and put them with the remainder of my record,",
+      "verse": "1:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 112.403,
+      "end": 114.307,
+      "type": "line",
+      "text": "for they are choice unto me;",
+      "verse": "1:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 114.487,
+      "end": 117.134,
+      "type": "line",
+      "text": "and I know they will be choice unto my brethren.",
+      "verse": "1:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 117.814,
+      "end": 120.322,
+      "type": "line",
+      "text": "And I do this for a wise purpose;",
+      "verse": "1:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 120.502,
+      "end": 126.121,
+      "type": "line",
+      "text": "for thus it whispereth me, according to the workings of the Spirit of the Lord which is in me.",
+      "verse": "1:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 126.301,
+      "end": 128.669,
+      "type": "line",
+      "text": "And now, I do not know all things;",
+      "verse": "1:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 128.849,
+      "end": 132.193,
+      "type": "line",
+      "text": "but the Lord knoweth all things which are to come;",
+      "verse": "1:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 132.373,
+      "end": 134.695,
+      "type": "line",
+      "text": "wherefore, he worketh in me",
+      "verse": "1:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 134.875,
+      "end": 136.825,
+      "type": "line",
+      "text": "to do according to his will.",
+      "verse": "1:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 137.505,
+      "end": 140.524,
+      "type": "line",
+      "text": "And my prayer to God is concerning my brethren,",
+      "verse": "1:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 140.704,
+      "end": 143.908,
+      "type": "line",
+      "text": "that they may once again come to the knowledge of God,",
+      "verse": "1:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 144.088,
+      "end": 146.131,
+      "type": "line",
+      "text": "yea, the redemption of Christ;",
+      "verse": "1:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 146.311,
+      "end": 149.748,
+      "type": "line",
+      "text": "that they may once again be a delightsome people.",
+      "verse": "1:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 150.428,
+      "end": 157.162,
+      "type": "line",
+      "text": "And now I, Mormon, proceed to finish out my record, which I take from the plates of Nephi;",
+      "verse": "1:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 157.342,
+      "end": 161.8,
+      "type": "line",
+      "text": "and I make it according to the knowledge and the understanding which God has given me.",
+      "verse": "1:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 162.48,
+      "end": 169.353,
+      "type": "line",
+      "text": "Wherefore, it came to pass that after Amaleki had delivered up these plates into the hands of king Benjamin,",
+      "verse": "1:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 169.533,
+      "end": 172.366,
+      "type": "line",
+      "text": "he took them and put them with the other plates,",
+      "verse": "1:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 172.546,
+      "end": 180.301,
+      "type": "line",
+      "text": "which contained records which had been handed down by the kings, from generation to generation until the days of king Benjamin.",
+      "verse": "1:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 180.981,
+      "end": 186.136,
+      "type": "line",
+      "text": "And they were handed down from king Benjamin, from generation to generation",
+      "verse": "1:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 186.316,
+      "end": 188.777,
+      "type": "line",
+      "text": "until they have fallen into my hands.",
+      "verse": "1:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 188.957,
+      "end": 190.954,
+      "type": "line",
+      "text": "And I, Mormon, pray to God",
+      "verse": "1:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 191.134,
+      "end": 194.431,
+      "type": "line",
+      "text": "that they may be preserved from this time henceforth.",
+      "verse": "1:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 194.611,
+      "end": 196.794,
+      "type": "line",
+      "text": "And I know that they will be preserved;",
+      "verse": "1:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 196.974,
+      "end": 199.76,
+      "type": "line",
+      "text": "for there are great things written upon them,",
+      "verse": "1:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 199.94,
+      "end": 206.07,
+      "type": "line",
+      "text": "out of which my people and their brethren shall be judged at the great and last day, according to the word of God",
+      "verse": "1:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 206.25,
+      "end": 207.597,
+      "type": "line",
+      "text": "which is written.",
+      "verse": "1:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 208.277,
+      "end": 210.971,
+      "type": "line",
+      "text": "And now, concerning this king Benjamin\u2014",
+      "verse": "1:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 211.151,
+      "end": 214.216,
+      "type": "line",
+      "text": "he had somewhat of contentions among his own people.",
+      "verse": "1:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 214.896,
+      "end": 220.887,
+      "type": "line",
+      "text": "And it came to pass also that the armies of the Lamanites came down out of the land of Nephi,",
+      "verse": "1:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 221.067,
+      "end": 222.971,
+      "type": "line",
+      "text": "to battle against his people.",
+      "verse": "1:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 223.151,
+      "end": 226.913,
+      "type": "line",
+      "text": "But behold, king Benjamin gathered together his armies,",
+      "verse": "1:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 227.093,
+      "end": 228.997,
+      "type": "line",
+      "text": "and he did stand against them;",
+      "verse": "1:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 229.177,
+      "end": 233.728,
+      "type": "line",
+      "text": "and he did fight with the strength of his own arm, with the sword of Laban.",
+      "verse": "1:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 234.408,
+      "end": 238.82,
+      "type": "line",
+      "text": "And in the strength of the Lord they did contend against their enemies,",
+      "verse": "1:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 239.0,
+      "end": 242.437,
+      "type": "line",
+      "text": "until they had slain many thousands of the Lamanites.",
+      "verse": "1:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 242.617,
+      "end": 246.564,
+      "type": "line",
+      "text": "And it came to pass that they did contend against the Lamanites",
+      "verse": "1:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 246.744,
+      "end": 250.645,
+      "type": "line",
+      "text": "until they had driven them out of all the lands of their inheritance.",
+      "verse": "1:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 251.325,
+      "end": 255.365,
+      "type": "line",
+      "text": "And it came to pass that after there had been false Christs,",
+      "verse": "1:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 255.545,
+      "end": 257.635,
+      "type": "line",
+      "text": "and their mouths had been shut,",
+      "verse": "1:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 257.815,
+      "end": 260.044,
+      "type": "line",
+      "text": "and they punished according to their crimes;",
+      "verse": "1:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 260.724,
+      "end": 262.907,
+      "type": "line",
+      "text": "And after there had been false prophets,",
+      "verse": "1:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 263.087,
+      "end": 266.338,
+      "type": "line",
+      "text": "and false preachers and teachers among the people,",
+      "verse": "1:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 266.518,
+      "end": 269.676,
+      "type": "line",
+      "text": "and all these having been punished according to their crimes;",
+      "verse": "1:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 269.856,
+      "end": 272.875,
+      "type": "line",
+      "text": "and after there having been much contention",
+      "verse": "1:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 273.055,
+      "end": 276.259,
+      "type": "line",
+      "text": "and many dissensions away unto the Lamanites,",
+      "verse": "1:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 276.439,
+      "end": 279.365,
+      "type": "line",
+      "text": "behold, it came to pass that king Benjamin,",
+      "verse": "1:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 279.545,
+      "end": 283.539,
+      "type": "line",
+      "text": "with the assistance of the holy prophets who were among his people\u2014",
+      "verse": "1:16",
+      "lineIndex": 78
+    },
+    {
+      "start": 284.219,
+      "end": 286.913,
+      "type": "line",
+      "text": "For behold, king Benjamin was a holy man,",
+      "verse": "1:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 287.093,
+      "end": 290.019,
+      "type": "line",
+      "text": "and he did reign over his people in righteousness;",
+      "verse": "1:17",
+      "lineIndex": 80
+    },
+    {
+      "start": 290.199,
+      "end": 292.8,
+      "type": "line",
+      "text": "and there were many holy men in the land,",
+      "verse": "1:17",
+      "lineIndex": 81
+    },
+    {
+      "start": 292.98,
+      "end": 297.392,
+      "type": "line",
+      "text": "and they did speak the word of God with power and with authority;",
+      "verse": "1:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 297.572,
+      "end": 302.123,
+      "type": "line",
+      "text": "and they did use much sharpness because of the stiffneckedness of the people\u2014",
+      "verse": "1:17",
+      "lineIndex": 83
+    },
+    {
+      "start": 302.803,
+      "end": 304.939,
+      "type": "line",
+      "text": "Wherefore, with the help of these,",
+      "verse": "1:18",
+      "lineIndex": 85
+    },
+    {
+      "start": 305.119,
+      "end": 308.881,
+      "type": "line",
+      "text": "king Benjamin, by laboring with all the might of his body",
+      "verse": "1:18",
+      "lineIndex": 86
+    },
+    {
+      "start": 309.061,
+      "end": 311.197,
+      "type": "line",
+      "text": "and the faculty of his whole soul,",
+      "verse": "1:18",
+      "lineIndex": 87
+    },
+    {
+      "start": 311.377,
+      "end": 315.696,
+      "type": "line",
+      "text": "and also the prophets, did once more establish peace in the land.",
+      "verse": "1:18",
+      "lineIndex": 88
+    }
+  ]
+}
