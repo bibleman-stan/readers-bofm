@@ -1,0 +1,592 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 16,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 214.203,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.04,
+      "type": "line",
+      "text": "And now, it came to pass that after Abinadi had spoken these words",
+      "verse": "16:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.22,
+      "end": 6.403,
+      "type": "line",
+      "text": "he stretched forth his hand and said:",
+      "verse": "16:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.583,
+      "end": 10.391,
+      "type": "line",
+      "text": "The time shall come when all shall see the salvation of the Lord;",
+      "verse": "16:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.571,
+      "end": 16.19,
+      "type": "line",
+      "text": "when every nation, kindred, tongue, and people shall see eye to eye",
+      "verse": "16:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 16.37,
+      "end": 19.714,
+      "type": "line",
+      "text": "and shall confess before God that his judgments are just.",
+      "verse": "16:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 20.394,
+      "end": 22.809,
+      "type": "line",
+      "text": "And then shall the wicked be cast out,",
+      "verse": "16:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 22.989,
+      "end": 26.286,
+      "type": "line",
+      "text": "and they shall have cause to howl, and weep,",
+      "verse": "16:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 26.466,
+      "end": 28.602,
+      "type": "line",
+      "text": "and wail, and gnash their teeth;",
+      "verse": "16:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 28.782,
+      "end": 32.59,
+      "type": "line",
+      "text": "and this because they would not hearken unto the voice of the Lord;",
+      "verse": "16:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 32.77,
+      "end": 35.138,
+      "type": "line",
+      "text": "therefore the Lord redeemeth them not.",
+      "verse": "16:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 35.818,
+      "end": 38.279,
+      "type": "line",
+      "text": "For they are carnal and devilish,",
+      "verse": "16:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 38.459,
+      "end": 40.827,
+      "type": "line",
+      "text": "and the devil has power over them;",
+      "verse": "16:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 41.007,
+      "end": 44.954,
+      "type": "line",
+      "text": "yea, even that old serpent that did beguile our first parents,",
+      "verse": "16:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 45.134,
+      "end": 47.502,
+      "type": "line",
+      "text": "which was the cause of their fall;",
+      "verse": "16:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 47.682,
+      "end": 53.905,
+      "type": "line",
+      "text": "which was the cause of all mankind becoming carnal, sensual, devilish,",
+      "verse": "16:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 54.085,
+      "end": 55.85,
+      "type": "line",
+      "text": "knowing evil from good,",
+      "verse": "16:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 56.03,
+      "end": 58.259,
+      "type": "line",
+      "text": "subjecting themselves to the devil.",
+      "verse": "16:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 58.939,
+      "end": 60.889,
+      "type": "line",
+      "text": "Thus all mankind were lost;",
+      "verse": "16:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 61.069,
+      "end": 64.041,
+      "type": "line",
+      "text": "and behold, they would have been endlessly lost",
+      "verse": "16:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 64.221,
+      "end": 69.469,
+      "type": "line",
+      "text": "were it not that God redeemed his people from their lost and fallen state.",
+      "verse": "16:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 70.149,
+      "end": 74.004,
+      "type": "line",
+      "text": "But remember that he that persists in his own carnal nature,",
+      "verse": "16:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 74.184,
+      "end": 78.039,
+      "type": "line",
+      "text": "and goes on in the ways of sin and rebellion against God,",
+      "verse": "16:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 78.219,
+      "end": 80.541,
+      "type": "line",
+      "text": "remaineth in his fallen state",
+      "verse": "16:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 80.721,
+      "end": 83.415,
+      "type": "line",
+      "text": "and the devil hath all power over him.",
+      "verse": "16:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 83.595,
+      "end": 86.799,
+      "type": "line",
+      "text": "Therefore he is as though there was no redemption made,",
+      "verse": "16:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 86.979,
+      "end": 88.604,
+      "type": "line",
+      "text": "being an enemy to God;",
+      "verse": "16:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 88.784,
+      "end": 91.245,
+      "type": "line",
+      "text": "and also is the devil an enemy to God.",
+      "verse": "16:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 91.925,
+      "end": 94.526,
+      "type": "line",
+      "text": "And now if Christ had not come into the world,",
+      "verse": "16:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 94.706,
+      "end": 98.189,
+      "type": "line",
+      "text": "speaking of things to come as though they had already come,",
+      "verse": "16:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 98.369,
+      "end": 100.412,
+      "type": "line",
+      "text": "there could have been no redemption.",
+      "verse": "16:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 101.092,
+      "end": 103.646,
+      "type": "line",
+      "text": "And if Christ had not risen from the dead,",
+      "verse": "16:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 103.826,
+      "end": 106.009,
+      "type": "line",
+      "text": "or have broken the bands of death",
+      "verse": "16:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 106.189,
+      "end": 108.697,
+      "type": "line",
+      "text": "that the grave should have no victory,",
+      "verse": "16:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 108.877,
+      "end": 111.338,
+      "type": "line",
+      "text": "and that death should have no sting,",
+      "verse": "16:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 111.518,
+      "end": 113.654,
+      "type": "line",
+      "text": "there could have been no resurrection.",
+      "verse": "16:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 114.334,
+      "end": 116.099,
+      "type": "line",
+      "text": "But there is a resurrection,",
+      "verse": "16:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 116.279,
+      "end": 118.74,
+      "type": "line",
+      "text": "therefore the grave hath no victory,",
+      "verse": "16:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 118.92,
+      "end": 121.892,
+      "type": "line",
+      "text": "and the sting of death is swallowed up in Christ.",
+      "verse": "16:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 122.572,
+      "end": 125.126,
+      "type": "line",
+      "text": "He is the light and the life of the world;",
+      "verse": "16:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 125.306,
+      "end": 127.628,
+      "type": "line",
+      "text": "yea, a light that is endless,",
+      "verse": "16:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 127.808,
+      "end": 129.666,
+      "type": "line",
+      "text": "that can never be darkened;",
+      "verse": "16:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 129.846,
+      "end": 132.4,
+      "type": "line",
+      "text": "yea, and also a life which is endless,",
+      "verse": "16:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 132.58,
+      "end": 134.391,
+      "type": "line",
+      "text": "that there can be no more death.",
+      "verse": "16:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 135.071,
+      "end": 138.368,
+      "type": "line",
+      "text": "Even this mortal shall put on immortality,",
+      "verse": "16:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 138.548,
+      "end": 141.102,
+      "type": "line",
+      "text": "and this corruption shall put on incorruption,",
+      "verse": "16:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 141.282,
+      "end": 144.393,
+      "type": "line",
+      "text": "and shall be brought to stand before the bar of God,",
+      "verse": "16:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 144.573,
+      "end": 147.313,
+      "type": "line",
+      "text": "to be judged of him according to their works",
+      "verse": "16:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 147.493,
+      "end": 150.326,
+      "type": "line",
+      "text": "whether they be good or whether they be evil\u2014",
+      "verse": "16:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 151.006,
+      "end": 152.306,
+      "type": "line",
+      "text": "If they be good,",
+      "verse": "16:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 152.486,
+      "end": 155.644,
+      "type": "line",
+      "text": "to the resurrection of endless life and happiness;",
+      "verse": "16:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 155.824,
+      "end": 157.31,
+      "type": "line",
+      "text": "and if they be evil,",
+      "verse": "16:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 157.49,
+      "end": 160.044,
+      "type": "line",
+      "text": "to the resurrection of endless damnation,",
+      "verse": "16:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 160.224,
+      "end": 163.475,
+      "type": "line",
+      "text": "being delivered up to the devil, who hath subjected them,",
+      "verse": "16:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 163.655,
+      "end": 165.141,
+      "type": "line",
+      "text": "which is damnation\u2014",
+      "verse": "16:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 165.821,
+      "end": 169.165,
+      "type": "line",
+      "text": "Having gone according to their own carnal wills and desires;",
+      "verse": "16:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 169.345,
+      "end": 171.713,
+      "type": "line",
+      "text": "having never called upon the Lord",
+      "verse": "16:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 171.893,
+      "end": 174.865,
+      "type": "line",
+      "text": "while the arms of mercy were extended towards them;",
+      "verse": "16:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 175.045,
+      "end": 178.249,
+      "type": "line",
+      "text": "for the arms of mercy were extended towards them,",
+      "verse": "16:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 178.429,
+      "end": 179.962,
+      "type": "line",
+      "text": "and they would not;",
+      "verse": "16:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 180.142,
+      "end": 182.603,
+      "type": "line",
+      "text": "they being warned of their iniquities",
+      "verse": "16:12",
+      "lineIndex": 62
+    },
+    {
+      "start": 182.783,
+      "end": 185.012,
+      "type": "line",
+      "text": "and yet they would not depart from them;",
+      "verse": "16:12",
+      "lineIndex": 63
+    },
+    {
+      "start": 185.192,
+      "end": 187.653,
+      "type": "line",
+      "text": "and they were commanded to repent",
+      "verse": "16:12",
+      "lineIndex": 64
+    },
+    {
+      "start": 187.833,
+      "end": 189.783,
+      "type": "line",
+      "text": "and yet they would not repent.",
+      "verse": "16:12",
+      "lineIndex": 65
+    },
+    {
+      "start": 190.463,
+      "end": 193.296,
+      "type": "line",
+      "text": "And now, ought ye not to tremble",
+      "verse": "16:13",
+      "lineIndex": 66
+    },
+    {
+      "start": 193.476,
+      "end": 195.101,
+      "type": "line",
+      "text": "and repent of your sins,",
+      "verse": "16:13",
+      "lineIndex": 67
+    },
+    {
+      "start": 195.281,
+      "end": 198.95,
+      "type": "line",
+      "text": "and remember that only in and through Christ ye can be saved?",
+      "verse": "16:13",
+      "lineIndex": 68
+    },
+    {
+      "start": 199.63,
+      "end": 201.952,
+      "type": "line",
+      "text": "Therefore, if ye teach the law of Moses,",
+      "verse": "16:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 202.132,
+      "end": 205.987,
+      "type": "line",
+      "text": "also teach that it is a shadow of those things which are to come\u2014",
+      "verse": "16:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 206.667,
+      "end": 210.057,
+      "type": "line",
+      "text": "Teach them that redemption cometh through Christ the Lord,",
+      "verse": "16:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 210.237,
+      "end": 212.513,
+      "type": "line",
+      "text": "who is the very Eternal Father.",
+      "verse": "16:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 212.693,
+      "end": 213.529,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "16:15",
+      "lineIndex": 73
+    }
+  ]
+}

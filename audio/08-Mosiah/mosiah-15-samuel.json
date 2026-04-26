@@ -1,0 +1,1120 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 15,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 407.434,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.09,
+      "type": "line",
+      "text": "And now Abinadi said unto them:",
+      "verse": "15:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.27,
+      "end": 8.586,
+      "type": "line",
+      "text": "I would that ye should understand that God himself shall come down among the children of men,",
+      "verse": "15:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 8.766,
+      "end": 10.531,
+      "type": "line",
+      "text": "and shall redeem his people.",
+      "verse": "15:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.211,
+      "end": 13.347,
+      "type": "line",
+      "text": "And because he dwelleth in flesh",
+      "verse": "15:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 13.527,
+      "end": 15.617,
+      "type": "line",
+      "text": "he shall be called the Son of God,",
+      "verse": "15:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 15.797,
+      "end": 19.187,
+      "type": "line",
+      "text": "and having subjected the flesh to the will of the Father,",
+      "verse": "15:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 19.367,
+      "end": 21.039,
+      "type": "line",
+      "text": "being the Father and the Son\u2014",
+      "verse": "15:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 21.719,
+      "end": 25.063,
+      "type": "line",
+      "text": "The Father, because he was conceived by the power of God;",
+      "verse": "15:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 25.243,
+      "end": 27.519,
+      "type": "line",
+      "text": "and the Son, because of the flesh;",
+      "verse": "15:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 27.699,
+      "end": 29.742,
+      "type": "line",
+      "text": "thus becoming the Father and Son\u2014",
+      "verse": "15:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 30.422,
+      "end": 32.233,
+      "type": "line",
+      "text": "And they are one God,",
+      "verse": "15:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 32.413,
+      "end": 35.432,
+      "type": "line",
+      "text": "yea, the very Eternal Father of heaven and of earth.",
+      "verse": "15:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 36.112,
+      "end": 39.409,
+      "type": "line",
+      "text": "And thus the flesh becoming subject to the Spirit,",
+      "verse": "15:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 39.589,
+      "end": 41.214,
+      "type": "line",
+      "text": "or the Son to the Father,",
+      "verse": "15:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 41.394,
+      "end": 42.741,
+      "type": "line",
+      "text": "being one God,",
+      "verse": "15:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 42.921,
+      "end": 46.59,
+      "type": "line",
+      "text": "suffereth temptation, and yieldeth not to the temptation,",
+      "verse": "15:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 46.77,
+      "end": 48.86,
+      "type": "line",
+      "text": "but suffereth himself to be mocked,",
+      "verse": "15:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 49.04,
+      "end": 50.34,
+      "type": "line",
+      "text": "and scourged,",
+      "verse": "15:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 50.52,
+      "end": 51.82,
+      "type": "line",
+      "text": "and cast out,",
+      "verse": "15:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 52.0,
+      "end": 53.858,
+      "type": "line",
+      "text": "and disowned by his people.",
+      "verse": "15:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 54.538,
+      "end": 59.321,
+      "type": "line",
+      "text": "And after all this, after working many mighty miracles among the children of men,",
+      "verse": "15:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 59.501,
+      "end": 60.987,
+      "type": "line",
+      "text": "he shall be led,",
+      "verse": "15:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 61.167,
+      "end": 62.978,
+      "type": "line",
+      "text": "yea, even as Isaiah said,",
+      "verse": "15:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 63.158,
+      "end": 65.666,
+      "type": "line",
+      "text": "as a sheep before the shearer is dumb,",
+      "verse": "15:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 65.846,
+      "end": 67.518,
+      "type": "line",
+      "text": "so he opened not his mouth.",
+      "verse": "15:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 68.198,
+      "end": 71.449,
+      "type": "line",
+      "text": "Yea, even so he shall be led, crucified, and slain,",
+      "verse": "15:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 71.629,
+      "end": 74.555,
+      "type": "line",
+      "text": "the flesh becoming subject even unto death,",
+      "verse": "15:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 74.735,
+      "end": 78.311,
+      "type": "line",
+      "text": "the will of the Son being swallowed up in the will of the Father.",
+      "verse": "15:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 78.991,
+      "end": 81.638,
+      "type": "line",
+      "text": "And thus God breaketh the bands of death,",
+      "verse": "15:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 81.818,
+      "end": 84.326,
+      "type": "line",
+      "text": "having gained the victory over death;",
+      "verse": "15:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 84.506,
+      "end": 88.918,
+      "type": "line",
+      "text": "giving the Son power to make intercession for the children of men\u2014",
+      "verse": "15:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 89.598,
+      "end": 91.641,
+      "type": "line",
+      "text": "Having ascended into heaven,",
+      "verse": "15:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 91.821,
+      "end": 93.771,
+      "type": "line",
+      "text": "having the bowels of mercy;",
+      "verse": "15:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 93.951,
+      "end": 97.295,
+      "type": "line",
+      "text": "being filled with compassion towards the children of men;",
+      "verse": "15:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 97.475,
+      "end": 99.751,
+      "type": "line",
+      "text": "standing betwixt them and justice;",
+      "verse": "15:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 99.931,
+      "end": 102.207,
+      "type": "line",
+      "text": "having broken the bands of death,",
+      "verse": "15:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 102.387,
+      "end": 106.334,
+      "type": "line",
+      "text": "taken upon himself their iniquity and their transgressions,",
+      "verse": "15:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 106.514,
+      "end": 110.229,
+      "type": "line",
+      "text": "having redeemed them, and satisfied the demands of justice.",
+      "verse": "15:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 110.909,
+      "end": 112.534,
+      "type": "line",
+      "text": "And now I say unto you,",
+      "verse": "15:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 112.714,
+      "end": 114.943,
+      "type": "line",
+      "text": "who shall declare his generation?",
+      "verse": "15:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 115.123,
+      "end": 116.656,
+      "type": "line",
+      "text": "Behold, I say unto you",
+      "verse": "15:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 116.836,
+      "end": 121.526,
+      "type": "line",
+      "text": "that when his soul has been made an offering for sin he shall see his seed.",
+      "verse": "15:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 121.706,
+      "end": 123.239,
+      "type": "line",
+      "text": "And now what say ye?",
+      "verse": "15:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 123.419,
+      "end": 125.091,
+      "type": "line",
+      "text": "And who shall be his seed?",
+      "verse": "15:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 125.771,
+      "end": 127.489,
+      "type": "line",
+      "text": "Behold I say unto you",
+      "verse": "15:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 127.669,
+      "end": 130.641,
+      "type": "line",
+      "text": "that whosoever has heard the words of the prophets,",
+      "verse": "15:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 130.821,
+      "end": 135.001,
+      "type": "line",
+      "text": "yea, all the holy prophets who have prophesied concerning the coming of the Lord\u2014",
+      "verse": "15:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 135.181,
+      "end": 139.175,
+      "type": "line",
+      "text": "I say unto you, that all those who have hearkened unto their words,",
+      "verse": "15:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 139.355,
+      "end": 142.234,
+      "type": "line",
+      "text": "and believed that the Lord would redeem his people,",
+      "verse": "15:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 142.414,
+      "end": 146.686,
+      "type": "line",
+      "text": "and have looked forward to that day for a remission of their sins,",
+      "verse": "15:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 146.866,
+      "end": 149.42,
+      "type": "line",
+      "text": "I say unto you, that these are his seed,",
+      "verse": "15:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 149.6,
+      "end": 152.247,
+      "type": "line",
+      "text": "or they are the heirs of the kingdom of God.",
+      "verse": "15:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 152.927,
+      "end": 155.853,
+      "type": "line",
+      "text": "For these are they whose sins he has borne;",
+      "verse": "15:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 156.033,
+      "end": 158.309,
+      "type": "line",
+      "text": "these are they for whom he has died,",
+      "verse": "15:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 158.489,
+      "end": 160.95,
+      "type": "line",
+      "text": "to redeem them from their transgressions.",
+      "verse": "15:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 161.13,
+      "end": 163.22,
+      "type": "line",
+      "text": "And now, are they not his seed?",
+      "verse": "15:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 163.9,
+      "end": 165.943,
+      "type": "line",
+      "text": "Yea, and are not the prophets,",
+      "verse": "15:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 166.123,
+      "end": 169.095,
+      "type": "line",
+      "text": "every one that has opened his mouth to prophesy,",
+      "verse": "15:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 169.275,
+      "end": 171.69,
+      "type": "line",
+      "text": "that has not fallen into transgression,",
+      "verse": "15:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 171.87,
+      "end": 175.307,
+      "type": "line",
+      "text": "I mean all the holy prophets ever since the world began?",
+      "verse": "15:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 175.487,
+      "end": 177.763,
+      "type": "line",
+      "text": "I say unto you that they are his seed.",
+      "verse": "15:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 178.443,
+      "end": 181.183,
+      "type": "line",
+      "text": "And these are they who have published peace,",
+      "verse": "15:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 181.363,
+      "end": 183.871,
+      "type": "line",
+      "text": "who have brought good tidings of good,",
+      "verse": "15:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 184.051,
+      "end": 186.094,
+      "type": "line",
+      "text": "who have published salvation;",
+      "verse": "15:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 186.274,
+      "end": 187.76,
+      "type": "line",
+      "text": "and said unto Zion:",
+      "verse": "15:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 187.94,
+      "end": 189.24,
+      "type": "line",
+      "text": "Thy God reigneth!",
+      "verse": "15:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 189.92,
+      "end": 192.614,
+      "type": "line",
+      "text": "And O how beautiful upon the mountains",
+      "verse": "15:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 192.794,
+      "end": 194.28,
+      "type": "line",
+      "text": "were their feet!",
+      "verse": "15:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 194.96,
+      "end": 197.654,
+      "type": "line",
+      "text": "And again, how beautiful upon the mountains",
+      "verse": "15:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 197.834,
+      "end": 201.689,
+      "type": "line",
+      "text": "are the feet of those that are still publishing peace!",
+      "verse": "15:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 202.369,
+      "end": 205.063,
+      "type": "line",
+      "text": "And again, how beautiful upon the mountains",
+      "verse": "15:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 205.243,
+      "end": 208.587,
+      "type": "line",
+      "text": "are the feet of those who shall hereafter publish peace,",
+      "verse": "15:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 208.767,
+      "end": 211.553,
+      "type": "line",
+      "text": "yea, from this time henceforth and forever!",
+      "verse": "15:17",
+      "lineIndex": 76
+    },
+    {
+      "start": 212.233,
+      "end": 214.787,
+      "type": "line",
+      "text": "And behold, I say unto you, this is not all.",
+      "verse": "15:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 214.967,
+      "end": 217.893,
+      "type": "line",
+      "text": "For O how beautiful upon the mountains",
+      "verse": "15:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 218.073,
+      "end": 221.092,
+      "type": "line",
+      "text": "are the feet of him that bringeth good tidings,",
+      "verse": "15:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 221.272,
+      "end": 225.87,
+      "type": "line",
+      "text": "that is the founder of peace, yea, even the Lord, who has redeemed his people;",
+      "verse": "15:18",
+      "lineIndex": 80
+    },
+    {
+      "start": 226.05,
+      "end": 229.533,
+      "type": "line",
+      "text": "yea, him who has granted salvation unto his people;",
+      "verse": "15:18",
+      "lineIndex": 81
+    },
+    {
+      "start": 230.213,
+      "end": 232.721,
+      "type": "line",
+      "text": "For were it not for the redemption",
+      "verse": "15:19",
+      "lineIndex": 83
+    },
+    {
+      "start": 232.901,
+      "end": 235.037,
+      "type": "line",
+      "text": "which he hath made for his people,",
+      "verse": "15:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 235.217,
+      "end": 238.561,
+      "type": "line",
+      "text": "which was prepared from the foundation of the world,",
+      "verse": "15:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 238.741,
+      "end": 241.109,
+      "type": "line",
+      "text": "I say unto you, were it not for this,",
+      "verse": "15:19",
+      "lineIndex": 86
+    },
+    {
+      "start": 241.289,
+      "end": 243.565,
+      "type": "line",
+      "text": "all mankind must have perished.",
+      "verse": "15:19",
+      "lineIndex": 87
+    },
+    {
+      "start": 244.245,
+      "end": 247.449,
+      "type": "line",
+      "text": "But behold, the bands of death shall be broken,",
+      "verse": "15:20",
+      "lineIndex": 89
+    },
+    {
+      "start": 247.629,
+      "end": 249.208,
+      "type": "line",
+      "text": "and the Son reigneth,",
+      "verse": "15:20",
+      "lineIndex": 90
+    },
+    {
+      "start": 249.388,
+      "end": 251.478,
+      "type": "line",
+      "text": "and hath power over the dead;",
+      "verse": "15:20",
+      "lineIndex": 91
+    },
+    {
+      "start": 251.658,
+      "end": 255.698,
+      "type": "line",
+      "text": "therefore, he bringeth to pass the resurrection of the dead.",
+      "verse": "15:20",
+      "lineIndex": 92
+    },
+    {
+      "start": 256.378,
+      "end": 258.514,
+      "type": "line",
+      "text": "And there cometh a resurrection,",
+      "verse": "15:21",
+      "lineIndex": 93
+    },
+    {
+      "start": 258.694,
+      "end": 260.598,
+      "type": "line",
+      "text": "even a first resurrection;",
+      "verse": "15:21",
+      "lineIndex": 94
+    },
+    {
+      "start": 260.778,
+      "end": 264.168,
+      "type": "line",
+      "text": "yea, even a resurrection of those that have been",
+      "verse": "15:21",
+      "lineIndex": 95
+    },
+    {
+      "start": 264.348,
+      "end": 266.624,
+      "type": "line",
+      "text": "and who are, and who shall be,",
+      "verse": "15:21",
+      "lineIndex": 96
+    },
+    {
+      "start": 266.804,
+      "end": 270.659,
+      "type": "line",
+      "text": "even until the resurrection of Christ\u2014 for so shall he be called.",
+      "verse": "15:21",
+      "lineIndex": 97
+    },
+    {
+      "start": 271.339,
+      "end": 274.45,
+      "type": "line",
+      "text": "And now, the resurrection of all the prophets,",
+      "verse": "15:22",
+      "lineIndex": 98
+    },
+    {
+      "start": 274.63,
+      "end": 278.02,
+      "type": "line",
+      "text": "and all those that have believed in their words,",
+      "verse": "15:22",
+      "lineIndex": 99
+    },
+    {
+      "start": 278.2,
+      "end": 281.497,
+      "type": "line",
+      "text": "or all those that have kept the commandments of God,",
+      "verse": "15:22",
+      "lineIndex": 100
+    },
+    {
+      "start": 281.677,
+      "end": 284.463,
+      "type": "line",
+      "text": "shall come forth in the first resurrection;",
+      "verse": "15:22",
+      "lineIndex": 101
+    },
+    {
+      "start": 284.643,
+      "end": 287.197,
+      "type": "line",
+      "text": "therefore, they are the first resurrection.",
+      "verse": "15:22",
+      "lineIndex": 102
+    },
+    {
+      "start": 287.877,
+      "end": 291.221,
+      "type": "line",
+      "text": "They are raised to dwell with God who has redeemed them;",
+      "verse": "15:23",
+      "lineIndex": 103
+    },
+    {
+      "start": 291.401,
+      "end": 294.28,
+      "type": "line",
+      "text": "thus they have eternal life through Christ,",
+      "verse": "15:23",
+      "lineIndex": 104
+    },
+    {
+      "start": 294.46,
+      "end": 296.643,
+      "type": "line",
+      "text": "who has broken the bands of death.",
+      "verse": "15:23",
+      "lineIndex": 105
+    },
+    {
+      "start": 297.323,
+      "end": 300.574,
+      "type": "line",
+      "text": "And these are those who have part in the first resurrection;",
+      "verse": "15:24",
+      "lineIndex": 106
+    },
+    {
+      "start": 300.754,
+      "end": 304.748,
+      "type": "line",
+      "text": "and these are they that have died before Christ came,",
+      "verse": "15:24",
+      "lineIndex": 107
+    },
+    {
+      "start": 304.928,
+      "end": 308.504,
+      "type": "line",
+      "text": "in their ignorance, not having salvation declared unto them.",
+      "verse": "15:24",
+      "lineIndex": 108
+    },
+    {
+      "start": 308.684,
+      "end": 312.121,
+      "type": "line",
+      "text": "And thus the Lord bringeth about the restoration of these;",
+      "verse": "15:24",
+      "lineIndex": 109
+    },
+    {
+      "start": 312.301,
+      "end": 315.273,
+      "type": "line",
+      "text": "and they have a part in the first resurrection,",
+      "verse": "15:24",
+      "lineIndex": 110
+    },
+    {
+      "start": 315.453,
+      "end": 318.286,
+      "type": "line",
+      "text": "or have eternal life, being redeemed by the Lord.",
+      "verse": "15:24",
+      "lineIndex": 111
+    },
+    {
+      "start": 318.966,
+      "end": 321.567,
+      "type": "line",
+      "text": "And little children also have eternal life.",
+      "verse": "15:25",
+      "lineIndex": 113
+    },
+    {
+      "start": 322.247,
+      "end": 325.312,
+      "type": "line",
+      "text": "But behold, and fear, and tremble before God,",
+      "verse": "15:26",
+      "lineIndex": 114
+    },
+    {
+      "start": 325.492,
+      "end": 327.117,
+      "type": "line",
+      "text": "for ye ought to tremble;",
+      "verse": "15:26",
+      "lineIndex": 115
+    },
+    {
+      "start": 327.297,
+      "end": 330.873,
+      "type": "line",
+      "text": "for the Lord redeemeth none such that rebel against him",
+      "verse": "15:26",
+      "lineIndex": 116
+    },
+    {
+      "start": 331.053,
+      "end": 332.771,
+      "type": "line",
+      "text": "and die in their sins;",
+      "verse": "15:26",
+      "lineIndex": 117
+    },
+    {
+      "start": 332.951,
+      "end": 338.199,
+      "type": "line",
+      "text": "yea, even all those that have perished in their sins ever since the world began,",
+      "verse": "15:26",
+      "lineIndex": 118
+    },
+    {
+      "start": 338.379,
+      "end": 341.026,
+      "type": "line",
+      "text": "that have wilfully rebelled against God,",
+      "verse": "15:26",
+      "lineIndex": 119
+    },
+    {
+      "start": 341.206,
+      "end": 344.085,
+      "type": "line",
+      "text": "that have known the commandments of God,",
+      "verse": "15:26",
+      "lineIndex": 120
+    },
+    {
+      "start": 344.265,
+      "end": 345.844,
+      "type": "line",
+      "text": "and would not keep them;",
+      "verse": "15:26",
+      "lineIndex": 121
+    },
+    {
+      "start": 346.024,
+      "end": 349.461,
+      "type": "line",
+      "text": "these are they that have no part in the first resurrection.",
+      "verse": "15:26",
+      "lineIndex": 122
+    },
+    {
+      "start": 350.141,
+      "end": 352.417,
+      "type": "line",
+      "text": "Therefore ought ye not to tremble?",
+      "verse": "15:27",
+      "lineIndex": 123
+    },
+    {
+      "start": 352.597,
+      "end": 354.873,
+      "type": "line",
+      "text": "For salvation cometh to none such;",
+      "verse": "15:27",
+      "lineIndex": 124
+    },
+    {
+      "start": 355.053,
+      "end": 357.329,
+      "type": "line",
+      "text": "for the Lord hath redeemed none such;",
+      "verse": "15:27",
+      "lineIndex": 125
+    },
+    {
+      "start": 357.509,
+      "end": 359.831,
+      "type": "line",
+      "text": "yea, neither can the Lord redeem such;",
+      "verse": "15:27",
+      "lineIndex": 126
+    },
+    {
+      "start": 360.011,
+      "end": 362.054,
+      "type": "line",
+      "text": "for he cannot deny himself;",
+      "verse": "15:27",
+      "lineIndex": 127
+    },
+    {
+      "start": 362.234,
+      "end": 365.345,
+      "type": "line",
+      "text": "for he cannot deny justice when it has its claim.",
+      "verse": "15:27",
+      "lineIndex": 128
+    },
+    {
+      "start": 366.025,
+      "end": 369.044,
+      "type": "line",
+      "text": "And now I say unto you that the time shall come",
+      "verse": "15:28",
+      "lineIndex": 129
+    },
+    {
+      "start": 369.224,
+      "end": 371.871,
+      "type": "line",
+      "text": "that the salvation of the Lord shall be declared",
+      "verse": "15:28",
+      "lineIndex": 130
+    },
+    {
+      "start": 372.051,
+      "end": 375.348,
+      "type": "line",
+      "text": "to every nation, kindred, tongue, and people.",
+      "verse": "15:28",
+      "lineIndex": 131
+    },
+    {
+      "start": 376.028,
+      "end": 377.096,
+      "type": "line",
+      "text": "Yea, Lord,",
+      "verse": "15:29",
+      "lineIndex": 132
+    },
+    {
+      "start": 377.276,
+      "end": 379.691,
+      "type": "line",
+      "text": "thy watchmen shall lift up their voice;",
+      "verse": "15:29",
+      "lineIndex": 133
+    },
+    {
+      "start": 379.871,
+      "end": 382.239,
+      "type": "line",
+      "text": "with the voice together shall they sing;",
+      "verse": "15:29",
+      "lineIndex": 134
+    },
+    {
+      "start": 382.419,
+      "end": 384.787,
+      "type": "line",
+      "text": "for they shall see eye to eye,",
+      "verse": "15:29",
+      "lineIndex": 135
+    },
+    {
+      "start": 384.967,
+      "end": 387.289,
+      "type": "line",
+      "text": "when the Lord shall bring again Zion.",
+      "verse": "15:29",
+      "lineIndex": 136
+    },
+    {
+      "start": 387.969,
+      "end": 389.548,
+      "type": "line",
+      "text": "Break forth into joy,",
+      "verse": "15:30",
+      "lineIndex": 137
+    },
+    {
+      "start": 389.728,
+      "end": 391.075,
+      "type": "line",
+      "text": "sing together,",
+      "verse": "15:30",
+      "lineIndex": 138
+    },
+    {
+      "start": 391.255,
+      "end": 393.345,
+      "type": "line",
+      "text": "ye waste places of Jerusalem;",
+      "verse": "15:30",
+      "lineIndex": 139
+    },
+    {
+      "start": 393.525,
+      "end": 395.986,
+      "type": "line",
+      "text": "for the Lord hath comforted his people,",
+      "verse": "15:30",
+      "lineIndex": 140
+    },
+    {
+      "start": 396.166,
+      "end": 398.07,
+      "type": "line",
+      "text": "he hath redeemed Jerusalem.",
+      "verse": "15:30",
+      "lineIndex": 141
+    },
+    {
+      "start": 398.75,
+      "end": 402.93,
+      "type": "line",
+      "text": "The Lord hath made bare his holy arm in the eyes of all the nations;",
+      "verse": "15:31",
+      "lineIndex": 143
+    },
+    {
+      "start": 403.11,
+      "end": 406.779,
+      "type": "line",
+      "text": "and all the ends of the earth shall see the salvation of our God.",
+      "verse": "15:31",
+      "lineIndex": 144
+    }
+  ]
+}
