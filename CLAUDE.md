@@ -38,7 +38,7 @@ Before any substantive work, read the handoffs directory in order. Each file is 
 
 ## Session bookend protocol (revised 2026-04-20 — overseer deprecated)
 
-**The overseer system is deprecated as of 2026-04-20.** Do NOT read or update `private/OVERSEER-DIRECTIONS.md` or files under `overseer-workspace/` — those remain as historical archive but are no longer authoritative. Stan is the direct authority.
+**The overseer system is deprecated as of 2026-04-20.** Do NOT read or update `private/OVERSEER-DIRECTIONS.md` (no longer authoritative; left as historical archive). Stan is the direct authority.
 
 ### Session folder convention (clarified 2026-04-20 PM via cross-project directive)
 
@@ -104,7 +104,7 @@ Compaction is a session boundary. When resuming from a compaction summary, still
 |------|---------|
 | `index.html` | Main app shell — ALL CSS, HTML, JS inline (~4220 lines) |
 | `build_book.py` | Converts sense-line .txt sources → HTML fragments (~1090 lines) |
-| `senseline_reformat_v8.py` | 19-pass automated sense-line reformatter |
+| `scripts/senseline_reformat_v8.py` | 19-pass automated sense-line reformatter |
 | `narration.js` | Audio playback module (~1050 lines) |
 | `sw.js` | Service worker — bump version on every change |
 | `books/*.html` | Generated HTML fragments, one per book |
@@ -128,7 +128,7 @@ The files in `data/text-files/v2-mine/` are the canonical source. These are Stan
 - Save the original before any new upload could overwrite it
 - Make line-break changes only — the only editorial tool is where lines break
 
-**Rule-derivative changes are different and do NOT require per-item approval.** When a settled mechanical rule in the canon (Rules 1, 7, 9, 10, 11, 12, 13a, 15, 16, 17, 18, 19, 20, 21, 23, 26, 27, 28, etc.) fires unambiguously against the corpus — via its validator or a clean trigger match that the rule's UD signature catches — applying that rule IS the approval. The canon is the agreement. Rule-derivative changes on mechanical triggers are Category A by default and apply without per-item flagging.
+**Rule-derivative changes are different and do NOT require per-item approval.** When a settled mechanical rule in the canon (Rules 1, 5, 6, 7, 9, 10, 11, 12, 13a, 15, 16, 17, 18, 19, 20, 21, 22, 23, 26, 27, 28, plus EP-1/EP-3/EP-4/EP-5; canonical list in canon §3 Quick-Reference) fires unambiguously against the corpus — via its validator or a clean trigger match that the rule's UD signature catches — applying that rule IS the approval. The canon is the agreement. Rule-derivative changes on mechanical triggers are Category A by default and apply without per-item flagging.
 
 **Validator output is a work queue, not a review queue.** `STRONG-MERGE-CANDIDATE` and `STRONG-SPLIT-CANDIDATE` tags are application-ready. Only `REVIEW-REQUIRED` items (those the validator itself flags as heuristic-ambiguous) need per-item editorial judgment. Don't invert this discipline by treating clean mechanical hits as "candidates for review" — that's the over-cautious failure mode, and it creates toilsome friction for Stan who already authorized the rule.
 
@@ -229,7 +229,7 @@ TTS audio reads `data-orig` (authentic text), NOT `data-mod` (modern). Never cha
 3. Fix audio-highlight sync drift (pericope headers throw off lineIndex count)
 4. Fix 1 Ne 6:1 verse text
 5. Fix KJV diff display (currently destroys sense-line formatting when toggled)
-6. Fix build_kjv_diff.py hardcoded paths (lines 334, 348)
+6. Fix scripts/build_kjv_diff.py hardcoded paths (line numbers may have drifted; re-verify)
 7. Light mode CSS verification for new UI elements
 8. Surface book introductions (currently hidden in settings-panel-old)
 9. Restrict Google API key in Google Cloud Console
@@ -305,7 +305,7 @@ When in doubt, Sonnet is the right default. Stan shouldn't have to think about t
 
 ## Pre-commit adversarial-audit discipline (added 2026-04-23)
 
-**Before any commit that includes `git add -f private/01-method/colometry-canon.md`, check whether the change matches a mandatory-audit trigger per canon §7.3.** The 11 triggers are listed in canon §7; re-read them when uncertain. If the change matches any trigger, audit evidence (hostile-agent dispatch + verdict + application) must be present in the commit message or the canon §8 Update Log entry.
+**Before any commit that includes `git add -f private/01-method/colometry-canon.md`, check whether the change matches a mandatory-audit trigger per canon §7.3.** The 12 triggers are listed in canon §7; re-read them when uncertain. If the change matches any trigger, audit evidence (hostile-agent dispatch + verdict + application) must be present in the commit message or the canon §8 Update Log entry.
 
 **Audit-skippable.** Canon edits that do NOT match any trigger (typo fixes, cross-reference updates without precedence claims, deletions of same-session reverts, defensibility-capture additions to already-settled rules without scope changes, Category A mechanical corpus edits that are not part of a ≥5-instance sweep) proceed without audit.
 

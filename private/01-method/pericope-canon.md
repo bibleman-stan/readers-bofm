@@ -286,7 +286,7 @@ When a pericope is itself a quotation of another scripture (3 Ne 22 = Isaiah 54)
 
 This canon adopts the colometry canon §7 change protocol by reference. The 12 mandatory-audit triggers (cf. colometry canon §7.3) apply equally to pericope canon changes. In particular:
 
-- **Trigger #12 — Post-codification corpus-fit verification** is especially relevant for the initial v0.1→v1.0 cycle. The current `pericope_index.json` (1077 entries) was generated 2026-03 without a documented method; the v0.1 canon prescribes a corpus-wide re-sweep against the six triggers as the validation pass.
+- **Trigger #12 — Post-codification corpus-fit verification** is especially relevant for the initial v0.1→v1.0 cycle. The current `pericope_index.json` (909 entries (post 2026-04-27 sweeps)) was generated 2026-03 without a documented method; the v0.1 canon prescribes a corpus-wide re-sweep against the six triggers as the validation pass.
 
 ### v0.1 → v1.0 cycle plan
 
@@ -301,7 +301,7 @@ This canon adopts the colometry canon §7 change protocol by reference. The 12 m
 
 ### 2026-04-26 — v0.1 Initial Draft
 
-Triggered by Stan's observation that the existing `pericope_index.json` (1077 entries, hand-curated 2026-03) is inconsistent in accuracy and frequency with no documented rule. Density variance: Moroni at 2.4 pericopes/chapter (Moroni 1-5 each have a single pericope spanning the whole chapter) vs. corpus norm of 4-5/chapter. Title style varies between action-summary, topic-statement, event-marker, and genitive-noun-phrase shapes with no apparent rule. The 2026-03-10 commit message *"fix LDS language, correct misattributed titles, fill gaps"* implies known accuracy issues that were partially patched but not systematically resolved.
+Triggered by Stan's observation that the existing `pericope_index.json` (909 entries (post 2026-04-27 sweeps), hand-curated 2026-03) is inconsistent in accuracy and frequency with no documented rule. Density variance: Moroni at 2.4 pericopes/chapter (Moroni 1-5 each have a single pericope spanning the whole chapter) vs. corpus norm of 4-5/chapter. Title style varies between action-summary, topic-statement, event-marker, and genitive-noun-phrase shapes with no apparent rule. The 2026-03-10 commit message *"fix LDS language, correct misattributed titles, fill gaps"* implies known accuracy issues that were partially patched but not systematically resolved.
 
 **Choices made by Claude per Stan's "make a choice and we'll iterate" directive:**
 - 6-trigger closed list (speaker shift, genre shift, scene change, topic shift, addressee shift, formal-frame boundary)

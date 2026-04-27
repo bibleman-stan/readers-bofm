@@ -16,8 +16,11 @@ This directory contains structured project documentation organized by domain. Ea
 | 08 | `08-future-plans.md` | Spanish fork, Studying Edition, Read Along, shelved ideas |
 | 09 | `09-bugs-fixed.md` | Historical bug fixes, key design decisions |
 | 12 | `12-reformatter-rules.md` | Mechanical reformatter rules (M0-M10), editorial rules (E1-E11), calibration data, -eth conjugation, script thresholds |
+| 12g | `12-grammatical-glossary.md` | Grammatical-vocabulary reference for AICTP, atomic-thought test, complement clauses, FEF, etc. |
 | 13 | `13-preliminary-linguistic-data.md` | Quantified colometric metrics by book: AICTP rates, voice markers, structural metrics, preliminary voice taxonomy |
 | 14 | `14-operational-protocols.md` | "Work smarter" patterns: parallel agent dispatch, two-phase pipeline changes, find-the-class bug fixes, adversarial testing, cognitive hierarchy |
+
+*(Numbers 10/11 retired — `10-colometry.md` was migrated into `private/01-method/colometry-canon.md`; `11-*.md` slot intentionally vacant.)*
 
 ## Update Protocol
 
@@ -72,7 +75,7 @@ of the current state of the project.
 
 **Primary tool:** Claude Code (VSCode extension) — file reads/edits, git commits, colometry review, build pipeline. Stan pushes to GitHub.
 
-**Mobile/brainstorming:** Claude.ai chat — accessible on phone for design, research threads, ideation. Use Claude.ai Projects with key handoff docs uploaded (especially `10-colometry.md`) for persistent context. Conversations can be moved into the Project later from desktop.
+**Mobile/brainstorming:** Claude.ai chat — accessible on phone for design, research threads, ideation. Use Claude.ai Projects with key handoff docs uploaded (especially `private/01-method/colometry-canon.md`) for persistent context. Conversations can be moved into the Project later from desktop.
 
 **COWORK deprecated** as of 2026-03-19. Claude Code covers all its GitHub capabilities with better project memory.
 
@@ -95,13 +98,13 @@ These can be kept for historical reference or deleted.
 
 ---
 ### Update — 2026-03-29
-- Rules reclassification documented in 10-colometry.md: 26 settled rules now organized into three tiers (RULES — mechanical/reproducible, EDITORIAL PRINCIPLES — defensible but judgment-dependent, GUIDELINES — useful tendencies). Implication: the paper should claim only what the mechanical rules can support.
+- Rules reclassification documented in private/01-method/colometry-canon.md: 26 settled rules now organized into three tiers (RULES — mechanical/reproducible, EDITORIAL PRINCIPLES — defensible but judgment-dependent, GUIDELINES — useful tendencies). Implication: the paper should claim only what the mechanical rules can support.
 - Navigation refactor shipped; updates across 02, 04, 05, 06, 07.
 
 ---
 ### Update — 2026-04-12
 - Added `14-operational-protocols.md` — codifies the "work smarter" patterns ported from Reader's GNT project
-- Added cognitive hierarchy (chunking > oral > rhetorical) to `10-colometry.md`
+- Added cognitive hierarchy (chunking > oral > rhetorical) to `private/01-method/colometry-canon.md`
 - Standard Operating Procedures (find-the-class, two-phase pipeline pattern, parallel dispatch discipline, adversarial testing) are now mandatory operating discipline, not optional
 
 ---

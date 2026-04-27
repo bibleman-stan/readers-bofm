@@ -15,8 +15,8 @@
 Switch to `eleven_turbo_v2_5` (English-only model). The multilingual model is the hallucination risk.
 
 ## ElevenLabs API
-- **Key:** `c6b285e4b3751352d714f85a3ee92292f277de246b7ca46bf181338ed2155425`
-- **Credits:** EXHAUSTED as of Mar 18, 2026. Waiting on monthly reset.
+- **Key:** *(REDACTED 2026-04-27 — old key deleted by Stan after exposure was caught in audit. Replacement key not stored in repo; lives only in Stan's local environment / Colab secrets.)*
+- **Credits:** check ElevenLabs console for current state (the older "EXHAUSTED" note from Mar 18 is stale).
 - **Billing cycle:** Monthly (exact date unknown — Stan said "next month")
 
 ### Voice Settings (baked into cache key)

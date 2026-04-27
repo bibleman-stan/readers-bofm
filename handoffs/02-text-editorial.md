@@ -126,7 +126,7 @@ Utility script for automated sense-line rebalancing:
 
 ---
 ### Update — 2026-03-18
-- Applied sense-line edits to Mosiah chapters 4 and 15, adjusting line breaks per newly articulated colometry principles (see 10-colometry.md)
+- Applied sense-line edits to Mosiah chapters 4 and 15, adjusting line breaks per newly articulated colometry principles (see private/01-method/colometry-canon.md)
 - Mosiah 15:15–18 ("how beautiful upon the mountains") restructured to break after the recurring phrase rather than mid-clause
 - Mosiah 15:24 merged circumstantial clause pairing ("in their ignorance, not having salvation declared unto them" on one line)
 - Mosiah 15:24 adjusted equivalence restatement ("or have eternal life, being redeemed by the Lord" grouped together)
@@ -203,7 +203,7 @@ Utility script for automated sense-line rebalancing:
 ### Update — 2026-03-28–29
 - Navigation refactor implemented — hamburger menu, verse-level navigation with popover, standalone intro page, centered topbar. Multiple iterations to get layout right.
 - Alma 12:1 and 12:3 parallel breaks at verb phrase | prepositional adjunct boundary.
-- Verb + "that" audit completed — 131 instances tested, no verb-type rule found. Breaks governed by speech attribution, discourse formulas, and line length/breath (see 10-colometry.md for full analysis).
+- Verb + "that" audit completed — 131 instances tested, no verb-type rule found. Breaks governed by speech attribution, discourse formulas, and line length/breath (see private/01-method/colometry-canon.md for full analysis).
 
 ---
 *Last updated: 2026-03-29*
@@ -215,7 +215,7 @@ Utility script for automated sense-line rebalancing:
 
 Conducted an adversarial review of all 26 colometric rules. Key findings:
 
-**Rules reclassified into three tiers:** RULES (mechanical, reproducible), EDITORIAL PRINCIPLES (defensible but judgment-dependent), GUIDELINES (useful tendencies). See 10-colometry.md for full reclassification.
+**Rules reclassified into three tiers:** RULES (mechanical, reproducible), EDITORIAL PRINCIPLES (defensible but judgment-dependent), GUIDELINES (useful tendencies). See private/01-method/colometry-canon.md for full reclassification.
 
 **Verb + "that" audit:** Tested 131 instances. No verb-type rule exists — the proposed "declarative vs perceptive" distinction was a pseudo-rule. Breaks are governed by speech attribution formulas, line length/breath, and the foundational test. The "I would that ye should [verb]" formula is 50/50 broken/merged — NOT a consistent pattern.
 

@@ -68,7 +68,7 @@ The framework is: **each proposition splits by default, unless syntax forbids.**
 
 **Each proposition splits by default.** A proposition is the atomic thought-unit — a complete predication (subject + finite verb + complement) that the reader can process as a single cognitive bite. Propositions drive line breaks. There is no positive requirement to break beyond this; there is no positive requirement to merge beyond this. The question at every candidate location is: *is this a proposition boundary?*
 
-"Proposition" also includes the four structural-justification cases (below) — non-predicated units that function as atomic thoughts via formal-structural recoverability. These are the only non-strict-predication units that qualify.
+"Proposition" also includes the five structural-justification cases (below) — non-predicated units that function as atomic thoughts via formal-structural recoverability. These are the only non-strict-predication units that qualify.
 
 ### Syntax Forbids Splits — three closed-list ways
 
@@ -549,7 +549,7 @@ Each rule below follows the template:
 
 **Grammatical grounding:** CGEL Ch. 14 §2 on coordination of verb phrases under shared auxiliary. Standard English pseudo-coordination / hendiadic coordination.
 
-Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended with compound-verb check; currently covers simple AUX+V only).
+Validators: `validators/syntax/validate_line_final_tokens.py` (simple AUX+V) AND `validators/syntax/validate_rule_12_compound_verb.py` (compound-participle-shared-auxiliary case).
 
 ### Rule 13a — Never End a Line on a Preposition Seeking Its Object
 
@@ -869,17 +869,27 @@ Validators live in two subfolders reflecting the Layer 1 / Layer 3 split (restru
 
 | Validator | Covers |
 |-----------|--------|
-| `validate_line_final_tokens.py` | Rules 9, 11, 12, 13a (line-final POS prohibitions — migrated to Layer 1) |
+| `validate_line_final_tokens.py` | Rules 9, 11, 12, 13a (line-final POS prohibitions — migrated to Layer 1; simple-aux Rule 12 cases) |
+| `validate_rule_12_compound_verb.py` | Rule 12 compound-participle-shared-auxiliary case (extension to simple-aux check) |
 
 **Layer 3 — Colometry validators** at `validators/colometry/` (BofM-specific editorial-rule checks; violations tagged `[DEVIATION]` — editorial-policy deviations):
 
 | Validator | Covers |
 |-----------|--------|
-| `validate_rule_17_complement_integrity.py` | Rule 17 |
-| `validate_rule_16_aictp_dangling_that.py` | Rule 16 |
 | `validate_rule_10_verb_do_split.py` | Rule 10 |
+| `validate_rule_15_vocative.py` | Rule 15 (vocative own-line, true-vocative-vs-NP-object discriminator) |
+| `validate_rule_16_aictp_dangling_that.py` | Rule 16 |
+| `validate_rule_17_complement_integrity.py` | Rule 17 |
 | `validate_rule_18_fixed_idioms.py` | Rule 18 |
+| `validate_rule_19_anaphoric_relative.py` | Rule 19 |
 | `validate_rule_23_date_colophon.py` | Rule 23 |
+| `validate_rule_27_insomuch_that.py` | Rule 27 |
+| `validate_rule_28_speech_act_after_frame.py` | Rule 28 |
+| `validate_canon_retirement_residue.py` | Carry-forward-inertia residue (active references to retired/withdrawn/rescinded canon items) |
+
+**Audit dashboard.** `validators/run_all.py` runs all validators above and reports per-rule conformance counts. Modes: default (report-only), `--baseline-check` (compare to `validators/.baseline.json`; exit 1 on regression), `--update-baseline` (capture current state).
+
+**Pre-commit + commit-msg hooks.** `validators/hooks/pre-commit` runs the dashboard's baseline-check on canon/corpus/validator commits. `validators/hooks/commit-msg` runs `validators/check_canon_extensions.py` to detect §7.3 trigger #1 patterns and require audit-evidence in the message. Install both via `bash validators/hooks/install.sh`.
 
 See `validators/README.md` for the error-class convention and philosophy.
 
@@ -917,7 +927,7 @@ Proposals to change an existing rule, add a new rule, or cull a rule must:
 2. **Provide corpus evidence.** Worked examples from the actual text — not hypotheticals.
 3. **Survive adversarial audit.** For proposals matching any of the following **mandatory-audit triggers**, an adversarial audit (hostile agent or equivalent external skeptical review) MUST be dispatched and its findings must be reflected in the commit. Skipping audit on a triggered proposal is a protocol violation.
 
-   **Mandatory-audit triggers (11 categories):**
+   **Mandatory-audit triggers (12 categories):**
    1. **New named rules / sub-clauses / categories** — including precedence cross-references between rules (e.g., "Rule A trumps Rule B at X"). Shape-matches feel-tests, enumerated lists, and subjective carve-outs particularly.
    2. **Rule status promotions** — *proposed* → settled. Removes the hedge; stakes increase.
    3. **Spot-check-based proposals** — any canon claim resting on <full-corpus-sweep evidence. Claims like "I checked 30 instances and the pattern is uniform" MUST be verified by a full-corpus classification before codification.
@@ -1249,7 +1259,7 @@ The 2026-04-23 Phase-1 hostile audits surfaced 9 gaps across 3 tiers; 2 were app
 
 **Corpus sweep results (Tier-1 #1):** 9 merges applied. All in relative-clause environments (the audit-predicted primary violation site where long subject-NPs induce premature break pressure). 1 Ne 3:17, 1 Ne 15:7, 2 Ne 6:5, Jacob 6:1, Alma 34:2, Helaman 8:22, 9:2, 14:?, 3 Ne 15:2. All Category A (clean mechanical trigger: speech-verb line-final followed by topic-PP line-initial). Committed as `ffc9108` with books rebuilt (1 Ne, 2 Ne, Jacob, Alma, Helaman, 3 Ne) and sw.js v168 → v169.
 
-**Tier-1 #2 — Rule 17 speech-indirect long-complement exception.** Added to Rule 17's exceptions list: when the speech tag is short (verb + recipient pronoun, optional AICTP, no participial scene-setting) AND the *that*-complement is a substantial proposition (≥8 words with own finite verb), split is licensed as a structural-justification-3 indirect-discourse announcement. Diagnostic: (a) tag reads as complete announcement? (b) complement is substantial proposition? Both yes → split licensed. Corpus evidence: 7 instances currently split (1 Ne 15:27, 15:29, 15:32, 16:2, 16:25; Alma 10:25, 10:26), all with complements ≥8 words. No corpus changes needed — the exception codifies existing practice and protects these splits from future Rule 17 merge sweeps.
+**Tier-1 #2 — Rule 17 speech-indirect long-complement exception.** Added to Rule 17's exceptions list: when the speech tag is short (verb + recipient pronoun, optional AICTP, no participial scene-setting) AND the *that*-complement is a substantial proposition (≥8 words with own finite verb), split is licensed as a structural-justification-3 indirect-discourse announcement. Diagnostic: (a) tag reads as complete announcement? (b) complement is substantial proposition? Both yes → split licensed. Corpus evidence: 7 instances currently split (1 Ne 15:27, 15:29, 15:32, 16:2, 16:25; Alma 9:31, 9:32 — corrected 2026-04-25 from earlier typo "Alma 10:25, 10:26"), all with complements ≥8 words. No corpus changes needed — the exception codifies existing practice and protects these splits from future Rule 17 merge sweeps.
 
 **Self-consistency audit (triggered by ≥2 additions):**
 - Cross-references resolve. Both additions reference Phase-1 audit, structural justification 3, and existing §1 principles.

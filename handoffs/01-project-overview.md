@@ -20,7 +20,7 @@ A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL
 | `narration.js` | Audio playback module (~1050 lines, IIFE on window.NARRATION) |
 | `sw.js` | Service worker for offline caching |
 | `build_book.py` | Converts sense-line .txt sources → HTML book fragments (~1090 lines) |
-| `senseline_reformat_v8.py` | 19-pass automated sense-line reformatter (~32K) |
+| `scripts/senseline_reformat_v8.py` | 19-pass automated sense-line reformatter (~32K) |
 | `readalong.html` | Standalone beta Read Along mic/speech tool (extracted from index.html) |
 | `books/*.html` | Generated HTML fragments, one per book (15 total, loaded via fetch) |
 | `data/` | JSON data indexes for all layers (intertext, geography, pericopes, parallels, KJV diff) |
@@ -31,7 +31,7 @@ A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL
 
 ## How Content Gets Built
 1. Sense-line source files in `data/text-files/v2-mine/` (Stan's hand-edited)
-2. Optionally: `senseline_reformat_v8.py` applies 19 mechanical passes (for new/revised books)
+2. Optionally: `scripts/senseline_reformat_v8.py` applies 19 mechanical passes (for new/revised books)
 3. `build_book.py` applies archaic word swaps, injects intertext/geo/pericope layers, wraps punctuation, generates HTML
 4. Output: `books/{BOOKID}.html` as fragments
 5. `index.html` loads fragments via `fetch('books/' + bookId + '.html')`

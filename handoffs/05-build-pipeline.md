@@ -80,9 +80,9 @@ When KJV diff layer is toggled ON, CSS hides `.verse-normal` and shows `.verse-d
 - Has hardcoded paths from old session that need fixing to relative paths
 - Punctuation normalization was fixed (strips all non-alpha before comparison)
 
-## Firebase Annotations System
-- `annotations.js` connects to Firebase for user annotations (verse notes)
-- **SECURITY:** Google API key exposed at `annotations.js` line 26. GitHub flagged it. Key should be restricted in Google Cloud Console to the bomreader.com domain.
+## Firebase Annotations System (currently disabled)
+- `annotations.js` was wired to Firebase for user annotations (verse notes). **Currently disabled** — Firebase scripts commented out per 02-text-editorial.md update note.
+- **SECURITY (still pending):** Google API key exposed at `annotations.js` line 26. GitHub flagged it. Key should be restricted in Google Cloud Console to the bomreader.com domain.
 - System exists but not deeply documented — built before Claude's involvement.
 
 ---

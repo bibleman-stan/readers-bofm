@@ -157,15 +157,15 @@ When updating a handoff, explain *why* the change was made. The "what" can be de
 
 When colometric criteria conflict, the priority order is:
 
-**Chunking > Oral > Rhetorical**
+**Chunking > Oral > Rhetorical** *(historical hierarchy — see retirement note below)*
 
 1. **Cognitive chunking** — line breaks first serve comprehension. Each line is a unit the reader can process as one cognitive bite. This is the foundational purpose.
-2. **Oral delivery** — line breaks support read-aloud at natural breath pace. This is the ESL/youth/audio purpose.
+2. **Oral delivery** — line breaks support read-aloud delivery for the ESL/youth/audio purpose. (Earlier framing referenced "natural breath pace"; "breath" was retired as a diagnostic 2026-04-19 PM and confirmed not pragmatically relevant 2026-04-27. Atomic-thought is the surviving criterion.)
 3. **Rhetorical structure revelation** — line breaks make the author's compositional architecture visible (parallels, escalation, climax, chiasm). This is the literary purpose.
 
 When these conflict, chunking wins. A break that aids cognitive chunking but flattens rhetoric is acceptable. A break that reveals rhetoric but creates a fragment that can't be processed is not.
 
-This hierarchy was established in the Reader's GNT project (`readers-gnt/handoffs/04-editorial-workflow.md`, session 6 update). It governs editorial decisions when the four criteria leave ambiguity.
+This hierarchy was established in the Reader's GNT project (`readers-gnt/handoffs/04-editorial-workflow.md`, session 6 update). It governs editorial decisions in cases atomic-thought leaves ambiguous. (The earlier "four criteria" framing collapsed to single-criterion atomic-thought after 2026-04-19 PM breath retirement.)
 
 ---
 

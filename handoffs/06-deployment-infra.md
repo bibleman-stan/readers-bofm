@@ -8,8 +8,8 @@
 ## Service Worker (sw.js)
 - Strategy: cache app shell eagerly, cache books lazily (on first open)
 - Option to pre-cache all books at once via message from page
-- **Current version:** `bomreader-v62`
-- **Versioning:** Every CSS/JS/HTML change requires a cache version bump. Version jumped from v31 (Mar 14) to v61 (Mar 18) due to rapid iteration — this is normal.
+- **Current version:** see `sw.js` line 5 (`CACHE_NAME`); incremented per commit
+- **Versioning:** Every CSS/JS/HTML change requires a cache version bump. Versions advance rapidly during heavy iteration; that's normal.
 - Users need hard refresh (Ctrl+Shift+R) or wait for SW update cycle to see changes
 
 ## Git Workflow
@@ -17,12 +17,6 @@
 - Stan pushes from his local machine (sandbox can't push — gets 403 proxy error)
 - Commits should be made proactively without being asked
 - Audio files (large MP3s) are committed directly to the repo (no LFS)
-
-## UNPUSHED COMMITS (as of Mar 18 evening)
-Three commits need pushing:
-1. `21b57e3` — Switch all books to Samuel voice
-2. `0e78a9e` — Add 2 Nephi Sister M audio (superseded by next commit)
-3. `b2a6509` — Replace Sister M with Samuel ch 1-5
 
 ## Security Alerts
 - **GitHub secrets alert:** Google API key in `annotations.js` line 26. Needs restriction in Google Cloud Console.
