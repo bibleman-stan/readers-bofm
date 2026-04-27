@@ -1,0 +1,1568 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 29,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 688.356,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.043,
+      "type": "line",
+      "text": "Now when Mosiah had done this",
+      "verse": "29:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.223,
+      "end": 5.567,
+      "type": "line",
+      "text": "he sent out throughout all the land, among all the people,",
+      "verse": "29:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.747,
+      "end": 10.252,
+      "type": "line",
+      "text": "desiring to know their will concerning who should be their king.",
+      "verse": "29:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.932,
+      "end": 14.647,
+      "type": "line",
+      "text": "And it came to pass that the voice of the people came, saying:",
+      "verse": "29:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 14.827,
+      "end": 19.332,
+      "type": "line",
+      "text": "We are desirous that Aaron thy son should be our king and our ruler.",
+      "verse": "29:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 20.012,
+      "end": 22.706,
+      "type": "line",
+      "text": "Now Aaron had gone up to the land of Nephi,",
+      "verse": "29:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 22.886,
+      "end": 25.951,
+      "type": "line",
+      "text": "therefore the king could not confer the kingdom upon him;",
+      "verse": "29:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 26.131,
+      "end": 28.964,
+      "type": "line",
+      "text": "neither would Aaron take upon him the kingdom;",
+      "verse": "29:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 29.144,
+      "end": 33.649,
+      "type": "line",
+      "text": "neither were any of the sons of Mosiah willing to take upon them the kingdom.",
+      "verse": "29:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 34.329,
+      "end": 37.255,
+      "type": "line",
+      "text": "Therefore king Mosiah sent again among the people;",
+      "verse": "29:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 37.435,
+      "end": 40.825,
+      "type": "line",
+      "text": "yea, even a written word sent he among the people.",
+      "verse": "29:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 41.005,
+      "end": 44.209,
+      "type": "line",
+      "text": "And these were the words that were written, saying:",
+      "verse": "29:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 44.889,
+      "end": 47.629,
+      "type": "line",
+      "text": "Behold, O ye my people, or my brethren,",
+      "verse": "29:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 47.809,
+      "end": 49.62,
+      "type": "line",
+      "text": "for I esteem you as such,",
+      "verse": "29:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 49.8,
+      "end": 53.98,
+      "type": "line",
+      "text": "I desire that ye should consider the cause which ye are called to consider\u2014",
+      "verse": "29:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 54.16,
+      "end": 56.668,
+      "type": "line",
+      "text": "for ye are desirous to have a king.",
+      "verse": "29:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 57.348,
+      "end": 62.921,
+      "type": "line",
+      "text": "Now I declare unto you that he to whom the kingdom doth rightly belong has declined,",
+      "verse": "29:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 63.101,
+      "end": 65.423,
+      "type": "line",
+      "text": "and will not take upon him the kingdom.",
+      "verse": "29:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 66.103,
+      "end": 69.354,
+      "type": "line",
+      "text": "And now if there should be another appointed in his stead,",
+      "verse": "29:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 69.534,
+      "end": 73.063,
+      "type": "line",
+      "text": "behold I fear there would rise contentions among you.",
+      "verse": "29:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 73.243,
+      "end": 75.286,
+      "type": "line",
+      "text": "And who knoweth but what my son,",
+      "verse": "29:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 75.466,
+      "end": 77.649,
+      "type": "line",
+      "text": "to whom the kingdom doth belong,",
+      "verse": "29:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 77.829,
+      "end": 82.055,
+      "type": "line",
+      "text": "should turn to be angry and draw away a part of this people after him,",
+      "verse": "29:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 82.235,
+      "end": 85.764,
+      "type": "line",
+      "text": "which would cause wars and contentions among you,",
+      "verse": "29:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 85.944,
+      "end": 88.823,
+      "type": "line",
+      "text": "which would be the cause of shedding much blood",
+      "verse": "29:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 89.003,
+      "end": 91.464,
+      "type": "line",
+      "text": "and perverting the way of the Lord,",
+      "verse": "29:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 91.644,
+      "end": 93.873,
+      "type": "line",
+      "text": "yea, and destroy the souls of many people.",
+      "verse": "29:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 94.553,
+      "end": 96.086,
+      "type": "line",
+      "text": "Now I say unto you",
+      "verse": "29:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 96.266,
+      "end": 98.588,
+      "type": "line",
+      "text": "let us be wise and consider these things,",
+      "verse": "29:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 98.768,
+      "end": 101.322,
+      "type": "line",
+      "text": "for we have no right to destroy my son,",
+      "verse": "29:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 101.502,
+      "end": 104.66,
+      "type": "line",
+      "text": "neither should we have any right to destroy another",
+      "verse": "29:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 104.84,
+      "end": 107.719,
+      "type": "line",
+      "text": "if he should be appointed in his stead.",
+      "verse": "29:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 108.399,
+      "end": 112.532,
+      "type": "line",
+      "text": "And if my son should turn again to his pride and vain things",
+      "verse": "29:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 112.712,
+      "end": 115.545,
+      "type": "line",
+      "text": "he would recall the things which he had said,",
+      "verse": "29:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 115.725,
+      "end": 118.047,
+      "type": "line",
+      "text": "and claim his right to the kingdom,",
+      "verse": "29:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 118.227,
+      "end": 121.942,
+      "type": "line",
+      "text": "which would cause him and also this people to commit much sin.",
+      "verse": "29:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 122.622,
+      "end": 125.826,
+      "type": "line",
+      "text": "And now let us be wise and look forward to these things,",
+      "verse": "29:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 126.006,
+      "end": 129.21,
+      "type": "line",
+      "text": "and do that which will make for the peace of this people.",
+      "verse": "29:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 129.89,
+      "end": 133.373,
+      "type": "line",
+      "text": "Therefore I will be your king the remainder of my days;",
+      "verse": "29:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 133.553,
+      "end": 136.061,
+      "type": "line",
+      "text": "nevertheless, let us appoint judges,",
+      "verse": "29:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 136.241,
+      "end": 138.749,
+      "type": "line",
+      "text": "to judge this people according to our law;",
+      "verse": "29:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 138.929,
+      "end": 141.669,
+      "type": "line",
+      "text": "and we will newly arrange the affairs of this people,",
+      "verse": "29:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 141.849,
+      "end": 144.728,
+      "type": "line",
+      "text": "for we will appoint wise men to be judges,",
+      "verse": "29:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 144.908,
+      "end": 148.484,
+      "type": "line",
+      "text": "that will judge this people according to the commandments of God.",
+      "verse": "29:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 149.164,
+      "end": 153.39,
+      "type": "line",
+      "text": "Now it is better that a man should be judged of God than of man,",
+      "verse": "29:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 153.57,
+      "end": 156.264,
+      "type": "line",
+      "text": "for the judgments of God are always just,",
+      "verse": "29:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 156.444,
+      "end": 159.416,
+      "type": "line",
+      "text": "but the judgments of man are not always just.",
+      "verse": "29:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 160.096,
+      "end": 164.694,
+      "type": "line",
+      "text": "Therefore, if it were possible that you could have just men to be your kings,",
+      "verse": "29:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 164.874,
+      "end": 167.242,
+      "type": "line",
+      "text": "who would establish the laws of God,",
+      "verse": "29:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 167.422,
+      "end": 170.348,
+      "type": "line",
+      "text": "and judge this people according to his commandments,",
+      "verse": "29:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 170.528,
+      "end": 173.314,
+      "type": "line",
+      "text": "yea, if ye could have men for your kings",
+      "verse": "29:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 173.494,
+      "end": 177.534,
+      "type": "line",
+      "text": "who would do even as my father Benjamin did for this people\u2014",
+      "verse": "29:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 177.714,
+      "end": 179.2,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "29:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 179.38,
+      "end": 181.702,
+      "type": "line",
+      "text": "if this could always be the case",
+      "verse": "29:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 181.882,
+      "end": 186.433,
+      "type": "line",
+      "text": "then it would be expedient that ye should always have kings to rule over you.",
+      "verse": "29:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 187.113,
+      "end": 189.342,
+      "type": "line",
+      "text": "And even I myself have labored",
+      "verse": "29:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 189.522,
+      "end": 193.144,
+      "type": "line",
+      "text": "with all the power and faculties which I have possessed,",
+      "verse": "29:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 193.324,
+      "end": 195.739,
+      "type": "line",
+      "text": "to teach you the commandments of God,",
+      "verse": "29:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 195.919,
+      "end": 198.613,
+      "type": "line",
+      "text": "and to establish peace throughout the land,",
+      "verse": "29:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 198.793,
+      "end": 201.904,
+      "type": "line",
+      "text": "that there should be no wars nor contentions,",
+      "verse": "29:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 202.084,
+      "end": 204.034,
+      "type": "line",
+      "text": "no stealing, nor plundering,",
+      "verse": "29:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 204.214,
+      "end": 207.14,
+      "type": "line",
+      "text": "nor murdering, nor any manner of iniquity;",
+      "verse": "29:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 207.82,
+      "end": 210.142,
+      "type": "line",
+      "text": "And whosoever has committed iniquity,",
+      "verse": "29:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 210.322,
+      "end": 218.077,
+      "type": "line",
+      "text": "him have I punished according to the crime which he has committed, according to the law which has been given to us by our fathers.",
+      "verse": "29:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 218.757,
+      "end": 222.333,
+      "type": "line",
+      "text": "Now I say unto you, that because all men are not just",
+      "verse": "29:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 222.513,
+      "end": 227.436,
+      "type": "line",
+      "text": "it is not expedient that ye should have a king or kings to rule over you.",
+      "verse": "29:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 228.116,
+      "end": 232.76,
+      "type": "line",
+      "text": "For behold, how much iniquity doth one wicked king cause to be committed,",
+      "verse": "29:17",
+      "lineIndex": 69
+    },
+    {
+      "start": 232.94,
+      "end": 235.123,
+      "type": "line",
+      "text": "yea, and what great destruction!",
+      "verse": "29:17",
+      "lineIndex": 70
+    },
+    {
+      "start": 235.803,
+      "end": 237.428,
+      "type": "line",
+      "text": "Yea, remember king Noah,",
+      "verse": "29:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 237.608,
+      "end": 240.162,
+      "type": "line",
+      "text": "his wickedness and his abominations,",
+      "verse": "29:18",
+      "lineIndex": 72
+    },
+    {
+      "start": 240.342,
+      "end": 243.871,
+      "type": "line",
+      "text": "and also the wickedness and abominations of his people.",
+      "verse": "29:18",
+      "lineIndex": 73
+    },
+    {
+      "start": 244.051,
+      "end": 247.116,
+      "type": "line",
+      "text": "Behold what great destruction did come upon them;",
+      "verse": "29:18",
+      "lineIndex": 74
+    },
+    {
+      "start": 247.296,
+      "end": 252.219,
+      "type": "line",
+      "text": "and also because of their iniquities they were brought into bondage.",
+      "verse": "29:18",
+      "lineIndex": 75
+    },
+    {
+      "start": 252.899,
+      "end": 257.218,
+      "type": "line",
+      "text": "And were it not for the interposition of their all-wise Creator,",
+      "verse": "29:19",
+      "lineIndex": 76
+    },
+    {
+      "start": 257.398,
+      "end": 260.231,
+      "type": "line",
+      "text": "and this because of their sincere repentance,",
+      "verse": "29:19",
+      "lineIndex": 77
+    },
+    {
+      "start": 260.411,
+      "end": 263.755,
+      "type": "line",
+      "text": "they must unavoidably remain in bondage until now.",
+      "verse": "29:19",
+      "lineIndex": 78
+    },
+    {
+      "start": 264.435,
+      "end": 266.618,
+      "type": "line",
+      "text": "But behold, he did deliver them",
+      "verse": "29:20",
+      "lineIndex": 79
+    },
+    {
+      "start": 266.798,
+      "end": 269.677,
+      "type": "line",
+      "text": "because they did humble themselves before him;",
+      "verse": "29:20",
+      "lineIndex": 80
+    },
+    {
+      "start": 269.857,
+      "end": 272.365,
+      "type": "line",
+      "text": "and because they cried mightily unto him",
+      "verse": "29:20",
+      "lineIndex": 81
+    },
+    {
+      "start": 272.545,
+      "end": 275.099,
+      "type": "line",
+      "text": "he did deliver them out of bondage;",
+      "verse": "29:20",
+      "lineIndex": 82
+    },
+    {
+      "start": 275.279,
+      "end": 279.877,
+      "type": "line",
+      "text": "and thus doth the Lord work with his power in all cases among the children of men,",
+      "verse": "29:20",
+      "lineIndex": 83
+    },
+    {
+      "start": 280.057,
+      "end": 284.562,
+      "type": "line",
+      "text": "extending the arm of mercy towards them that put their trust in him.",
+      "verse": "29:20",
+      "lineIndex": 84
+    },
+    {
+      "start": 285.242,
+      "end": 287.518,
+      "type": "line",
+      "text": "And behold, now I say unto you,",
+      "verse": "29:21",
+      "lineIndex": 85
+    },
+    {
+      "start": 287.698,
+      "end": 290.484,
+      "type": "line",
+      "text": "ye cannot dethrone an iniquitous king",
+      "verse": "29:21",
+      "lineIndex": 86
+    },
+    {
+      "start": 290.664,
+      "end": 293.311,
+      "type": "line",
+      "text": "save it be through much contention,",
+      "verse": "29:21",
+      "lineIndex": 87
+    },
+    {
+      "start": 293.491,
+      "end": 295.488,
+      "type": "line",
+      "text": "and the shedding of much blood.",
+      "verse": "29:21",
+      "lineIndex": 88
+    },
+    {
+      "start": 296.168,
+      "end": 298.954,
+      "type": "line",
+      "text": "For behold, he has his friends in iniquity,",
+      "verse": "29:22",
+      "lineIndex": 89
+    },
+    {
+      "start": 299.134,
+      "end": 301.549,
+      "type": "line",
+      "text": "and he keepeth his guards about him;",
+      "verse": "29:22",
+      "lineIndex": 90
+    },
+    {
+      "start": 301.729,
+      "end": 303.865,
+      "type": "line",
+      "text": "and he teareth up the laws of those",
+      "verse": "29:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 304.045,
+      "end": 306.646,
+      "type": "line",
+      "text": "who have reigned in righteousness before him;",
+      "verse": "29:22",
+      "lineIndex": 92
+    },
+    {
+      "start": 306.826,
+      "end": 310.123,
+      "type": "line",
+      "text": "and he trampleth under his feet the commandments of God;",
+      "verse": "29:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 310.803,
+      "end": 312.614,
+      "type": "line",
+      "text": "And he enacteth laws,",
+      "verse": "29:23",
+      "lineIndex": 94
+    },
+    {
+      "start": 312.794,
+      "end": 315.255,
+      "type": "line",
+      "text": "and sendeth them forth among his people,",
+      "verse": "29:23",
+      "lineIndex": 95
+    },
+    {
+      "start": 315.435,
+      "end": 318.779,
+      "type": "line",
+      "text": "yea, laws after the manner of his own wickedness;",
+      "verse": "29:23",
+      "lineIndex": 96
+    },
+    {
+      "start": 318.959,
+      "end": 322.767,
+      "type": "line",
+      "text": "and whosoever doth not obey his laws he causeth to be destroyed;",
+      "verse": "29:23",
+      "lineIndex": 97
+    },
+    {
+      "start": 322.947,
+      "end": 325.501,
+      "type": "line",
+      "text": "and whosoever doth rebel against him",
+      "verse": "29:23",
+      "lineIndex": 98
+    },
+    {
+      "start": 325.681,
+      "end": 328.56,
+      "type": "line",
+      "text": "he will send his armies against them to war,",
+      "verse": "29:23",
+      "lineIndex": 99
+    },
+    {
+      "start": 328.74,
+      "end": 331.387,
+      "type": "line",
+      "text": "and if he can he will destroy them;",
+      "verse": "29:23",
+      "lineIndex": 100
+    },
+    {
+      "start": 331.567,
+      "end": 335.839,
+      "type": "line",
+      "text": "and thus an unrighteous king doth pervert the ways of all righteousness.",
+      "verse": "29:23",
+      "lineIndex": 101
+    },
+    {
+      "start": 336.519,
+      "end": 338.562,
+      "type": "line",
+      "text": "And now behold I say unto you,",
+      "verse": "29:24",
+      "lineIndex": 102
+    },
+    {
+      "start": 338.742,
+      "end": 342.457,
+      "type": "line",
+      "text": "it is not expedient that such abominations should come upon you.",
+      "verse": "29:24",
+      "lineIndex": 103
+    },
+    {
+      "start": 343.137,
+      "end": 346.62,
+      "type": "line",
+      "text": "Therefore, choose you by the voice of this people, judges,",
+      "verse": "29:25",
+      "lineIndex": 105
+    },
+    {
+      "start": 346.8,
+      "end": 349.401,
+      "type": "line",
+      "text": "that ye may be judged according to the laws",
+      "verse": "29:25",
+      "lineIndex": 106
+    },
+    {
+      "start": 349.581,
+      "end": 353.296,
+      "type": "line",
+      "text": "which have been given you by our fathers, which are correct,",
+      "verse": "29:25",
+      "lineIndex": 107
+    },
+    {
+      "start": 353.476,
+      "end": 356.727,
+      "type": "line",
+      "text": "and which were given them by the hand of the Lord.",
+      "verse": "29:25",
+      "lineIndex": 108
+    },
+    {
+      "start": 357.407,
+      "end": 361.122,
+      "type": "line",
+      "text": "Now it is not common that the voice of the people desireth anything",
+      "verse": "29:26",
+      "lineIndex": 110
+    },
+    {
+      "start": 361.302,
+      "end": 363.578,
+      "type": "line",
+      "text": "contrary to that which is right;",
+      "verse": "29:26",
+      "lineIndex": 111
+    },
+    {
+      "start": 363.758,
+      "end": 368.588,
+      "type": "line",
+      "text": "but it is common for the lesser part of the people to desire that which is not right;",
+      "verse": "29:26",
+      "lineIndex": 112
+    },
+    {
+      "start": 368.768,
+      "end": 372.019,
+      "type": "line",
+      "text": "therefore this shall ye observe and make it your law\u2014",
+      "verse": "29:26",
+      "lineIndex": 113
+    },
+    {
+      "start": 372.199,
+      "end": 374.846,
+      "type": "line",
+      "text": "to do your business by the voice of the people.",
+      "verse": "29:26",
+      "lineIndex": 114
+    },
+    {
+      "start": 375.526,
+      "end": 380.495,
+      "type": "line",
+      "text": "And if the time comes that the voice of the people doth choose iniquity,",
+      "verse": "29:27",
+      "lineIndex": 115
+    },
+    {
+      "start": 380.675,
+      "end": 384.901,
+      "type": "line",
+      "text": "then is the time that the judgments of God will come upon you;",
+      "verse": "29:27",
+      "lineIndex": 116
+    },
+    {
+      "start": 385.081,
+      "end": 389.214,
+      "type": "line",
+      "text": "yea, then is the time he will visit you with great destruction",
+      "verse": "29:27",
+      "lineIndex": 117
+    },
+    {
+      "start": 389.394,
+      "end": 391.948,
+      "type": "line",
+      "text": "even as he has hitherto visited this land.",
+      "verse": "29:27",
+      "lineIndex": 118
+    },
+    {
+      "start": 392.628,
+      "end": 394.393,
+      "type": "line",
+      "text": "And now if ye have judges,",
+      "verse": "29:28",
+      "lineIndex": 119
+    },
+    {
+      "start": 394.573,
+      "end": 398.242,
+      "type": "line",
+      "text": "and they do not judge you according to the law which has been given,",
+      "verse": "29:28",
+      "lineIndex": 120
+    },
+    {
+      "start": 398.422,
+      "end": 402.184,
+      "type": "line",
+      "text": "ye can cause that they may be judged of a higher judge.",
+      "verse": "29:28",
+      "lineIndex": 121
+    },
+    {
+      "start": 402.864,
+      "end": 406.208,
+      "type": "line",
+      "text": "If your higher judges do not judge righteous judgments,",
+      "verse": "29:29",
+      "lineIndex": 122
+    },
+    {
+      "start": 406.388,
+      "end": 411.543,
+      "type": "line",
+      "text": "ye shall cause that a small number of your lower judges should be gathered together,",
+      "verse": "29:29",
+      "lineIndex": 123
+    },
+    {
+      "start": 411.723,
+      "end": 416.321,
+      "type": "line",
+      "text": "and they shall judge your higher judges, according to the voice of the people.",
+      "verse": "29:29",
+      "lineIndex": 124
+    },
+    {
+      "start": 417.001,
+      "end": 420.252,
+      "type": "line",
+      "text": "And I command you to do these things in the fear of the Lord;",
+      "verse": "29:30",
+      "lineIndex": 125
+    },
+    {
+      "start": 420.432,
+      "end": 422.661,
+      "type": "line",
+      "text": "and I command you to do these things,",
+      "verse": "29:30",
+      "lineIndex": 126
+    },
+    {
+      "start": 422.841,
+      "end": 424.466,
+      "type": "line",
+      "text": "and that ye have no king;",
+      "verse": "29:30",
+      "lineIndex": 127
+    },
+    {
+      "start": 424.646,
+      "end": 427.99,
+      "type": "line",
+      "text": "that if these people commit sins and iniquities",
+      "verse": "29:30",
+      "lineIndex": 128
+    },
+    {
+      "start": 428.17,
+      "end": 430.771,
+      "type": "line",
+      "text": "they shall be answered upon their own heads.",
+      "verse": "29:30",
+      "lineIndex": 129
+    },
+    {
+      "start": 431.451,
+      "end": 433.262,
+      "type": "line",
+      "text": "For behold I say unto you,",
+      "verse": "29:31",
+      "lineIndex": 130
+    },
+    {
+      "start": 433.442,
+      "end": 438.643,
+      "type": "line",
+      "text": "the sins of many people have been caused by the iniquities of their kings;",
+      "verse": "29:31",
+      "lineIndex": 131
+    },
+    {
+      "start": 438.823,
+      "end": 443.885,
+      "type": "line",
+      "text": "therefore their iniquities are answered upon the heads of their kings.",
+      "verse": "29:31",
+      "lineIndex": 132
+    },
+    {
+      "start": 444.565,
+      "end": 449.72,
+      "type": "line",
+      "text": "And now I desire that this inequality should be no more in this land,",
+      "verse": "29:32",
+      "lineIndex": 133
+    },
+    {
+      "start": 449.9,
+      "end": 452.268,
+      "type": "line",
+      "text": "especially among this my people;",
+      "verse": "29:32",
+      "lineIndex": 134
+    },
+    {
+      "start": 452.448,
+      "end": 455.699,
+      "type": "line",
+      "text": "but I desire that this land be a land of liberty,",
+      "verse": "29:32",
+      "lineIndex": 135
+    },
+    {
+      "start": 455.879,
+      "end": 459.455,
+      "type": "line",
+      "text": "and every man may enjoy his rights and privileges alike,",
+      "verse": "29:32",
+      "lineIndex": 136
+    },
+    {
+      "start": 459.635,
+      "end": 464.047,
+      "type": "line",
+      "text": "so long as the Lord sees fit that we may live and inherit the land,",
+      "verse": "29:32",
+      "lineIndex": 137
+    },
+    {
+      "start": 464.227,
+      "end": 469.428,
+      "type": "line",
+      "text": "yea, even as long as any of our posterity remains upon the face of the land.",
+      "verse": "29:32",
+      "lineIndex": 138
+    },
+    {
+      "start": 470.108,
+      "end": 473.266,
+      "type": "line",
+      "text": "And many more things did king Mosiah write unto them,",
+      "verse": "29:33",
+      "lineIndex": 139
+    },
+    {
+      "start": 473.446,
+      "end": 477.811,
+      "type": "line",
+      "text": "unfolding unto them all the trials and troubles of a righteous king,",
+      "verse": "29:33",
+      "lineIndex": 140
+    },
+    {
+      "start": 477.991,
+      "end": 480.638,
+      "type": "line",
+      "text": "yea, all the travails of soul for their people,",
+      "verse": "29:33",
+      "lineIndex": 141
+    },
+    {
+      "start": 480.818,
+      "end": 483.837,
+      "type": "line",
+      "text": "and also all the murmurings of the people to their king;",
+      "verse": "29:33",
+      "lineIndex": 142
+    },
+    {
+      "start": 484.017,
+      "end": 485.967,
+      "type": "line",
+      "text": "and he explained it all unto them.",
+      "verse": "29:33",
+      "lineIndex": 143
+    },
+    {
+      "start": 486.647,
+      "end": 489.619,
+      "type": "line",
+      "text": "And he told them that these things ought not to be;",
+      "verse": "29:34",
+      "lineIndex": 144
+    },
+    {
+      "start": 489.799,
+      "end": 493.236,
+      "type": "line",
+      "text": "but that the burden should come upon all the people,",
+      "verse": "29:34",
+      "lineIndex": 145
+    },
+    {
+      "start": 493.416,
+      "end": 495.692,
+      "type": "line",
+      "text": "that every man might bear his part.",
+      "verse": "29:34",
+      "lineIndex": 146
+    },
+    {
+      "start": 496.372,
+      "end": 504.36,
+      "type": "line",
+      "text": "And he also unfolded unto them all the disadvantages they labored under, by having an unrighteous king to rule over them;",
+      "verse": "29:35",
+      "lineIndex": 147
+    },
+    {
+      "start": 505.04,
+      "end": 507.78,
+      "type": "line",
+      "text": "Yea, all his iniquities and abominations,",
+      "verse": "29:36",
+      "lineIndex": 148
+    },
+    {
+      "start": 507.96,
+      "end": 511.489,
+      "type": "line",
+      "text": "and all the wars, and contentions, and bloodshed,",
+      "verse": "29:36",
+      "lineIndex": 149
+    },
+    {
+      "start": 511.669,
+      "end": 514.037,
+      "type": "line",
+      "text": "and the stealing, and the plundering,",
+      "verse": "29:36",
+      "lineIndex": 150
+    },
+    {
+      "start": 514.217,
+      "end": 520.068,
+      "type": "line",
+      "text": "and the committing of whoredoms, and all manner of iniquities which cannot be enumerated\u2014",
+      "verse": "29:36",
+      "lineIndex": 151
+    },
+    {
+      "start": 520.248,
+      "end": 523.452,
+      "type": "line",
+      "text": "telling them that these things ought not to be,",
+      "verse": "29:36",
+      "lineIndex": 152
+    },
+    {
+      "start": 523.632,
+      "end": 527.208,
+      "type": "line",
+      "text": "that they were expressly repugnant to the commandments of God.",
+      "verse": "29:36",
+      "lineIndex": 153
+    },
+    {
+      "start": 527.888,
+      "end": 533.275,
+      "type": "line",
+      "text": "And now it came to pass, after king Mosiah had sent these things forth among the people",
+      "verse": "29:37",
+      "lineIndex": 154
+    },
+    {
+      "start": 533.455,
+      "end": 536.149,
+      "type": "line",
+      "text": "they were convinced of the truth of his words.",
+      "verse": "29:37",
+      "lineIndex": 155
+    },
+    {
+      "start": 536.829,
+      "end": 539.94,
+      "type": "line",
+      "text": "Therefore they relinquished their desires for a king,",
+      "verse": "29:38",
+      "lineIndex": 156
+    },
+    {
+      "start": 540.12,
+      "end": 542.21,
+      "type": "line",
+      "text": "and became exceedingly anxious",
+      "verse": "29:38",
+      "lineIndex": 157
+    },
+    {
+      "start": 542.39,
+      "end": 545.966,
+      "type": "line",
+      "text": "that every man should have an equal chance throughout all the land;",
+      "verse": "29:38",
+      "lineIndex": 158
+    },
+    {
+      "start": 546.146,
+      "end": 551.069,
+      "type": "line",
+      "text": "yea, and every man expressed a willingness to answer for his own sins.",
+      "verse": "29:38",
+      "lineIndex": 159
+    },
+    {
+      "start": 551.749,
+      "end": 557.554,
+      "type": "line",
+      "text": "Therefore, it came to pass that they assembled themselves together in bodies throughout the land,",
+      "verse": "29:39",
+      "lineIndex": 160
+    },
+    {
+      "start": 557.734,
+      "end": 561.31,
+      "type": "line",
+      "text": "to cast in their voices concerning who should be their judges,",
+      "verse": "29:39",
+      "lineIndex": 161
+    },
+    {
+      "start": 561.49,
+      "end": 565.577,
+      "type": "line",
+      "text": "to judge them according to the law which had been given them;",
+      "verse": "29:39",
+      "lineIndex": 162
+    },
+    {
+      "start": 565.757,
+      "end": 570.819,
+      "type": "line",
+      "text": "and they were exceedingly rejoiced because of the liberty which had been granted unto them.",
+      "verse": "29:39",
+      "lineIndex": 163
+    },
+    {
+      "start": 571.499,
+      "end": 574.796,
+      "type": "line",
+      "text": "And they did wax strong in love towards Mosiah;",
+      "verse": "29:40",
+      "lineIndex": 165
+    },
+    {
+      "start": 574.976,
+      "end": 578.227,
+      "type": "line",
+      "text": "yea, they did esteem him more than any other man;",
+      "verse": "29:40",
+      "lineIndex": 166
+    },
+    {
+      "start": 578.407,
+      "end": 582.679,
+      "type": "line",
+      "text": "for they did not look upon him as a tyrant who was seeking for gain,",
+      "verse": "29:40",
+      "lineIndex": 167
+    },
+    {
+      "start": 582.859,
+      "end": 585.831,
+      "type": "line",
+      "text": "yea, for that lucre which doth corrupt the soul;",
+      "verse": "29:40",
+      "lineIndex": 168
+    },
+    {
+      "start": 586.011,
+      "end": 588.472,
+      "type": "line",
+      "text": "for he had not exacted riches of them,",
+      "verse": "29:40",
+      "lineIndex": 169
+    },
+    {
+      "start": 588.652,
+      "end": 591.717,
+      "type": "line",
+      "text": "neither had he delighted in the shedding of blood;",
+      "verse": "29:40",
+      "lineIndex": 170
+    },
+    {
+      "start": 591.897,
+      "end": 594.312,
+      "type": "line",
+      "text": "but he had established peace in the land,",
+      "verse": "29:40",
+      "lineIndex": 171
+    },
+    {
+      "start": 594.492,
+      "end": 596.721,
+      "type": "line",
+      "text": "and he had granted unto his people",
+      "verse": "29:40",
+      "lineIndex": 172
+    },
+    {
+      "start": 596.901,
+      "end": 600.43,
+      "type": "line",
+      "text": "that they should be delivered from all manner of bondage;",
+      "verse": "29:40",
+      "lineIndex": 173
+    },
+    {
+      "start": 600.61,
+      "end": 602.607,
+      "type": "line",
+      "text": "therefore they did esteem him,",
+      "verse": "29:40",
+      "lineIndex": 174
+    },
+    {
+      "start": 602.787,
+      "end": 605.248,
+      "type": "line",
+      "text": "yea, exceedingly, beyond measure.",
+      "verse": "29:40",
+      "lineIndex": 175
+    },
+    {
+      "start": 605.928,
+      "end": 610.758,
+      "type": "line",
+      "text": "And it came to pass that they did appoint judges to rule over them,",
+      "verse": "29:41",
+      "lineIndex": 176
+    },
+    {
+      "start": 610.938,
+      "end": 613.074,
+      "type": "line",
+      "text": "or to judge them according to the law;",
+      "verse": "29:41",
+      "lineIndex": 177
+    },
+    {
+      "start": 613.254,
+      "end": 615.576,
+      "type": "line",
+      "text": "and this they did throughout all the land.",
+      "verse": "29:41",
+      "lineIndex": 178
+    },
+    {
+      "start": 616.256,
+      "end": 621.643,
+      "type": "line",
+      "text": "And it came to pass that Alma was appointed to be the first chief judge,",
+      "verse": "29:42",
+      "lineIndex": 179
+    },
+    {
+      "start": 621.823,
+      "end": 624.099,
+      "type": "line",
+      "text": "he being also the high priest,",
+      "verse": "29:42",
+      "lineIndex": 180
+    },
+    {
+      "start": 624.279,
+      "end": 627.576,
+      "type": "line",
+      "text": "his father having conferred the office upon him,",
+      "verse": "29:42",
+      "lineIndex": 181
+    },
+    {
+      "start": 627.756,
+      "end": 631.936,
+      "type": "line",
+      "text": "and having given him the charge concerning all the affairs of the church.",
+      "verse": "29:42",
+      "lineIndex": 182
+    },
+    {
+      "start": 632.616,
+      "end": 636.981,
+      "type": "line",
+      "text": "And now it came to pass that Alma did walk in the ways of the Lord,",
+      "verse": "29:43",
+      "lineIndex": 184
+    },
+    {
+      "start": 637.161,
+      "end": 639.251,
+      "type": "line",
+      "text": "and he did keep his commandments,",
+      "verse": "29:43",
+      "lineIndex": 185
+    },
+    {
+      "start": 639.431,
+      "end": 641.799,
+      "type": "line",
+      "text": "and he did judge righteous judgments;",
+      "verse": "29:43",
+      "lineIndex": 186
+    },
+    {
+      "start": 641.979,
+      "end": 644.673,
+      "type": "line",
+      "text": "and there was continual peace through the land.",
+      "verse": "29:43",
+      "lineIndex": 187
+    },
+    {
+      "start": 645.353,
+      "end": 649.997,
+      "type": "line",
+      "text": "And thus commenced the reign of the judges throughout all the land of Zarahemla,",
+      "verse": "29:44",
+      "lineIndex": 188
+    },
+    {
+      "start": 650.177,
+      "end": 653.149,
+      "type": "line",
+      "text": "among all the people who were called the Nephites;",
+      "verse": "29:44",
+      "lineIndex": 189
+    },
+    {
+      "start": 653.329,
+      "end": 655.651,
+      "type": "line",
+      "text": "and Alma was the first and chief judge.",
+      "verse": "29:44",
+      "lineIndex": 190
+    },
+    {
+      "start": 656.331,
+      "end": 659.257,
+      "type": "line",
+      "text": "And now it came to pass that his father died,",
+      "verse": "29:45",
+      "lineIndex": 191
+    },
+    {
+      "start": 659.437,
+      "end": 661.759,
+      "type": "line",
+      "text": "being eighty and two years old,",
+      "verse": "29:45",
+      "lineIndex": 192
+    },
+    {
+      "start": 661.939,
+      "end": 664.865,
+      "type": "line",
+      "text": "having lived to fulfil the commandments of God.",
+      "verse": "29:45",
+      "lineIndex": 193
+    },
+    {
+      "start": 665.545,
+      "end": 671.025,
+      "type": "line",
+      "text": "And it came to pass that Mosiah died also, in the thirty and third year of his reign,",
+      "verse": "29:46",
+      "lineIndex": 194
+    },
+    {
+      "start": 671.205,
+      "end": 673.341,
+      "type": "line",
+      "text": "being sixty and three years old;",
+      "verse": "29:46",
+      "lineIndex": 195
+    },
+    {
+      "start": 673.521,
+      "end": 677.979,
+      "type": "line",
+      "text": "making in the whole, five hundred and nine years from the time Lehi left Jerusalem.",
+      "verse": "29:46",
+      "lineIndex": 196
+    },
+    {
+      "start": 678.659,
+      "end": 682.839,
+      "type": "line",
+      "text": "And thus ended the reign of the kings over the people of Nephi;",
+      "verse": "29:47",
+      "lineIndex": 198
+    },
+    {
+      "start": 683.019,
+      "end": 685.062,
+      "type": "line",
+      "text": "and thus ended the days of Alma,",
+      "verse": "29:47",
+      "lineIndex": 199
+    },
+    {
+      "start": 685.242,
+      "end": 687.703,
+      "type": "line",
+      "text": "who was the founder of their church.",
+      "verse": "29:47",
+      "lineIndex": 200
+    }
+  ]
+}
