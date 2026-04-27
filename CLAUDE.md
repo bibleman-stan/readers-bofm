@@ -310,6 +310,10 @@ When in doubt, Sonnet is the right default. Stan shouldn't have to think about t
 
 **When uncertain.** Dispatch the audit. The cost of a false-positive audit (Stan reads a no-op audit result) is small; the cost of a false-negative audit (fake rule commits) is large.
 
+**Mechanical gates installed (2026-04-26 / 2026-04-27):**
+- `validators/run_all.py --baseline-check` runs all syntax/colometry validators against the corpus and blocks commits introducing regressions vs `validators/.baseline.json`. Wired as `.git/hooks/pre-commit` via `bash validators/hooks/install.sh`.
+- `validators/check_canon_extensions.py` analyzes staged canon diffs for §7.3 trigger #1 patterns (new closed-list rows, new rule sections, new merge-overrides, new dated principles, new trigger entries, new SCOPE-exclusion bullets) and requires the commit message to contain audit-evidence keywords (`audit`, `hostile audit`, `trigger #`, `§7.3`, `post-codification`, `post-detection`, `corpus-fit`, `RETRACT`, `§8 update log`) — or skip-safe claim (`typo fix`, `cross-reference update`, `defensibility-capture`, `audit-skippable`) — or `stan-authorized` / `stan-direct`. Wired as `.git/hooks/commit-msg`. Closes the gap that `--baseline-check` can't catch (new closed-list extensions don't necessarily increase any rule's existing violation count). Bypass: `git commit --no-verify` (Stan-only).
+
 **Self-test to run pre-commit** (faster than trigger-list scan):
 - Does this change include a scope claim, a precedence claim, a closed-list extension, or a named-category carve-out? → audit.
 - Does this change rest on spot-check evidence rather than a full-corpus classification? → audit.
