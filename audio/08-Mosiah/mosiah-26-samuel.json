@@ -1,0 +1,1072 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 26,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 440.168,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.152,
+      "type": "line",
+      "text": "Now it came to pass that there were many of the rising generation that could not understand the words of king Benjamin,",
+      "verse": "26:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.332,
+      "end": 10.676,
+      "type": "line",
+      "text": "being little children at the time he spake unto his people;",
+      "verse": "26:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.856,
+      "end": 14.246,
+      "type": "line",
+      "text": "and they did not believe the tradition of their fathers.",
+      "verse": "26:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.926,
+      "end": 19.384,
+      "type": "line",
+      "text": "They did not believe what had been said concerning the resurrection of the dead,",
+      "verse": "26:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.564,
+      "end": 22.675,
+      "type": "line",
+      "text": "neither did they believe concerning the coming of Christ.",
+      "verse": "26:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 23.355,
+      "end": 27.72,
+      "type": "line",
+      "text": "And now because of their unbelief they could not understand the word of God;",
+      "verse": "26:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 27.9,
+      "end": 29.572,
+      "type": "line",
+      "text": "and their hearts were hardened.",
+      "verse": "26:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 30.252,
+      "end": 32.017,
+      "type": "line",
+      "text": "And they would not be baptized;",
+      "verse": "26:4",
+      "lineIndex": 8
+    },
+    {
+      "start": 32.197,
+      "end": 34.194,
+      "type": "line",
+      "text": "neither would they join the church.",
+      "verse": "26:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 34.374,
+      "end": 37.485,
+      "type": "line",
+      "text": "And they were a separate people as to their faith,",
+      "verse": "26:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 37.665,
+      "end": 39.615,
+      "type": "line",
+      "text": "and remained so ever after,",
+      "verse": "26:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 39.795,
+      "end": 42.442,
+      "type": "line",
+      "text": "even in their carnal and sinful state;",
+      "verse": "26:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 42.622,
+      "end": 45.362,
+      "type": "line",
+      "text": "for they would not call upon the Lord their God.",
+      "verse": "26:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 46.042,
+      "end": 48.132,
+      "type": "line",
+      "text": "And now in the reign of Mosiah",
+      "verse": "26:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 48.312,
+      "end": 51.702,
+      "type": "line",
+      "text": "they were not half so numerous as the people of God;",
+      "verse": "26:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 51.882,
+      "end": 56.294,
+      "type": "line",
+      "text": "but because of the dissensions among the brethren they became more numerous.",
+      "verse": "26:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 56.974,
+      "end": 63.011,
+      "type": "line",
+      "text": "For it came to pass that they did deceive many with their flattering words, who were in the church,",
+      "verse": "26:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 63.191,
+      "end": 65.792,
+      "type": "line",
+      "text": "and did cause them to commit many sins;",
+      "verse": "26:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 65.972,
+      "end": 69.641,
+      "type": "line",
+      "text": "therefore it became expedient that those who committed sin,",
+      "verse": "26:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 69.821,
+      "end": 71.632,
+      "type": "line",
+      "text": "that were in the church,",
+      "verse": "26:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 71.812,
+      "end": 74.134,
+      "type": "line",
+      "text": "should be admonished by the church.",
+      "verse": "26:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 74.814,
+      "end": 79.04,
+      "type": "line",
+      "text": "And it came to pass that they were brought before the priests,",
+      "verse": "26:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 79.22,
+      "end": 82.657,
+      "type": "line",
+      "text": "and delivered up unto the priests by the teachers;",
+      "verse": "26:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 82.837,
+      "end": 85.345,
+      "type": "line",
+      "text": "and the priests brought them before Alma,",
+      "verse": "26:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 85.525,
+      "end": 87.058,
+      "type": "line",
+      "text": "who was the high priest.",
+      "verse": "26:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 87.738,
+      "end": 91.546,
+      "type": "line",
+      "text": "Now king Mosiah had given Alma the authority over the church.",
+      "verse": "26:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 92.226,
+      "end": 95.663,
+      "type": "line",
+      "text": "And it came to pass that Alma did not know concerning them;",
+      "verse": "26:9",
+      "lineIndex": 28
+    },
+    {
+      "start": 95.843,
+      "end": 98.908,
+      "type": "line",
+      "text": "but there were many witnesses against them;",
+      "verse": "26:9",
+      "lineIndex": 29
+    },
+    {
+      "start": 99.088,
+      "end": 104.15,
+      "type": "line",
+      "text": "yea, the people stood and testified of their iniquity in abundance.",
+      "verse": "26:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 104.83,
+      "end": 108.545,
+      "type": "line",
+      "text": "Now there had not any such thing happened before in the church;",
+      "verse": "26:10",
+      "lineIndex": 31
+    },
+    {
+      "start": 108.725,
+      "end": 111.326,
+      "type": "line",
+      "text": "therefore Alma was troubled in his spirit,",
+      "verse": "26:10",
+      "lineIndex": 32
+    },
+    {
+      "start": 111.506,
+      "end": 114.478,
+      "type": "line",
+      "text": "and he caused that they should be brought before the king.",
+      "verse": "26:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 115.158,
+      "end": 116.923,
+      "type": "line",
+      "text": "And he said unto the king:",
+      "verse": "26:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 117.103,
+      "end": 120.493,
+      "type": "line",
+      "text": "Behold, here are many whom we have brought before thee,",
+      "verse": "26:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 120.673,
+      "end": 122.902,
+      "type": "line",
+      "text": "who are accused of their brethren;",
+      "verse": "26:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 123.082,
+      "end": 126.379,
+      "type": "line",
+      "text": "yea, and they have been taken in divers iniquities.",
+      "verse": "26:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 126.559,
+      "end": 129.206,
+      "type": "line",
+      "text": "And they do not repent of their iniquities;",
+      "verse": "26:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 129.386,
+      "end": 131.754,
+      "type": "line",
+      "text": "therefore we have brought them before thee,",
+      "verse": "26:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 131.934,
+      "end": 135.371,
+      "type": "line",
+      "text": "that thou mayest judge them according to their crimes.",
+      "verse": "26:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 136.051,
+      "end": 138.094,
+      "type": "line",
+      "text": "But king Mosiah said unto Alma:",
+      "verse": "26:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 138.274,
+      "end": 139.946,
+      "type": "line",
+      "text": "Behold, I judge them not;",
+      "verse": "26:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 140.126,
+      "end": 143.748,
+      "type": "line",
+      "text": "therefore I deliver them into thy hands to be judged.",
+      "verse": "26:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 144.428,
+      "end": 147.354,
+      "type": "line",
+      "text": "And now the spirit of Alma was again troubled;",
+      "verse": "26:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 147.534,
+      "end": 152.132,
+      "type": "line",
+      "text": "and he went and inquired of the Lord what he should do concerning this matter,",
+      "verse": "26:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 152.312,
+      "end": 156.213,
+      "type": "line",
+      "text": "for he feared that he should do wrong in the sight of God.",
+      "verse": "26:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 156.893,
+      "end": 163.998,
+      "type": "line",
+      "text": "And it came to pass that after he had poured out his whole soul to God, the voice of the Lord came to him, saying:",
+      "verse": "26:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 164.678,
+      "end": 166.396,
+      "type": "line",
+      "text": "Blessed art thou, Alma,",
+      "verse": "26:15",
+      "lineIndex": 49
+    },
+    {
+      "start": 166.576,
+      "end": 169.966,
+      "type": "line",
+      "text": "and blessed are they who were baptized in the waters of Mormon.",
+      "verse": "26:15",
+      "lineIndex": 50
+    },
+    {
+      "start": 170.146,
+      "end": 175.997,
+      "type": "line",
+      "text": "Thou art blessed because of thy exceeding faith in the words alone of my servant Abinadi.",
+      "verse": "26:15",
+      "lineIndex": 51
+    },
+    {
+      "start": 176.677,
+      "end": 183.829,
+      "type": "line",
+      "text": "And blessed are they because of their exceeding faith in the words alone which thou hast spoken unto them.",
+      "verse": "26:16",
+      "lineIndex": 52
+    },
+    {
+      "start": 184.509,
+      "end": 185.995,
+      "type": "line",
+      "text": "And blessed art thou",
+      "verse": "26:17",
+      "lineIndex": 53
+    },
+    {
+      "start": 186.175,
+      "end": 189.286,
+      "type": "line",
+      "text": "because thou hast established a church among this people;",
+      "verse": "26:17",
+      "lineIndex": 54
+    },
+    {
+      "start": 189.466,
+      "end": 191.184,
+      "type": "line",
+      "text": "and they shall be established,",
+      "verse": "26:17",
+      "lineIndex": 55
+    },
+    {
+      "start": 191.364,
+      "end": 193.268,
+      "type": "line",
+      "text": "and they shall be my people.",
+      "verse": "26:17",
+      "lineIndex": 56
+    },
+    {
+      "start": 193.948,
+      "end": 197.385,
+      "type": "line",
+      "text": "Yea, blessed is this people who are willing to bear my name;",
+      "verse": "26:18",
+      "lineIndex": 57
+    },
+    {
+      "start": 197.565,
+      "end": 199.701,
+      "type": "line",
+      "text": "for in my name shall they be called;",
+      "verse": "26:18",
+      "lineIndex": 58
+    },
+    {
+      "start": 199.881,
+      "end": 201.181,
+      "type": "line",
+      "text": "and they are mine.",
+      "verse": "26:18",
+      "lineIndex": 59
+    },
+    {
+      "start": 201.861,
+      "end": 205.483,
+      "type": "line",
+      "text": "And because thou hast inquired of me concerning the transgressor,",
+      "verse": "26:19",
+      "lineIndex": 60
+    },
+    {
+      "start": 205.663,
+      "end": 207.056,
+      "type": "line",
+      "text": "thou art blessed.",
+      "verse": "26:19",
+      "lineIndex": 61
+    },
+    {
+      "start": 207.736,
+      "end": 209.315,
+      "type": "line",
+      "text": "Thou art my servant;",
+      "verse": "26:20",
+      "lineIndex": 62
+    },
+    {
+      "start": 209.495,
+      "end": 212.932,
+      "type": "line",
+      "text": "and I covenant with thee that thou shalt have eternal life;",
+      "verse": "26:20",
+      "lineIndex": 63
+    },
+    {
+      "start": 213.112,
+      "end": 215.991,
+      "type": "line",
+      "text": "and thou shalt serve me and go forth in my name,",
+      "verse": "26:20",
+      "lineIndex": 64
+    },
+    {
+      "start": 216.171,
+      "end": 218.447,
+      "type": "line",
+      "text": "and shalt gather together my sheep.",
+      "verse": "26:20",
+      "lineIndex": 65
+    },
+    {
+      "start": 219.127,
+      "end": 222.471,
+      "type": "line",
+      "text": "And he that will hear my voice shall be my sheep;",
+      "verse": "26:21",
+      "lineIndex": 66
+    },
+    {
+      "start": 222.651,
+      "end": 225.345,
+      "type": "line",
+      "text": "and him shall ye receive into the church,",
+      "verse": "26:21",
+      "lineIndex": 67
+    },
+    {
+      "start": 225.525,
+      "end": 227.29,
+      "type": "line",
+      "text": "and him will I also receive.",
+      "verse": "26:21",
+      "lineIndex": 68
+    },
+    {
+      "start": 227.97,
+      "end": 230.06,
+      "type": "line",
+      "text": "For behold, this is my church;",
+      "verse": "26:22",
+      "lineIndex": 69
+    },
+    {
+      "start": 230.24,
+      "end": 233.955,
+      "type": "line",
+      "text": "whosoever is baptized shall be baptized unto repentance.",
+      "verse": "26:22",
+      "lineIndex": 70
+    },
+    {
+      "start": 234.135,
+      "end": 236.875,
+      "type": "line",
+      "text": "And whomsoever ye receive shall believe in my name;",
+      "verse": "26:22",
+      "lineIndex": 71
+    },
+    {
+      "start": 237.055,
+      "end": 239.052,
+      "type": "line",
+      "text": "and him will I freely forgive.",
+      "verse": "26:22",
+      "lineIndex": 72
+    },
+    {
+      "start": 239.732,
+      "end": 243.076,
+      "type": "line",
+      "text": "For it is I that taketh upon me the sins of the world;",
+      "verse": "26:23",
+      "lineIndex": 74
+    },
+    {
+      "start": 243.256,
+      "end": 245.764,
+      "type": "line",
+      "text": "for it is I that hath created them;",
+      "verse": "26:23",
+      "lineIndex": 75
+    },
+    {
+      "start": 245.944,
+      "end": 251.703,
+      "type": "line",
+      "text": "and it is I that granteth unto him that believeth unto the end a place at my right hand.",
+      "verse": "26:23",
+      "lineIndex": 76
+    },
+    {
+      "start": 252.383,
+      "end": 254.659,
+      "type": "line",
+      "text": "For behold, in my name are they called;",
+      "verse": "26:24",
+      "lineIndex": 77
+    },
+    {
+      "start": 254.839,
+      "end": 256.325,
+      "type": "line",
+      "text": "and if they know me",
+      "verse": "26:24",
+      "lineIndex": 78
+    },
+    {
+      "start": 256.505,
+      "end": 258.177,
+      "type": "line",
+      "text": "they shall come forth,",
+      "verse": "26:24",
+      "lineIndex": 79
+    },
+    {
+      "start": 258.357,
+      "end": 261.561,
+      "type": "line",
+      "text": "and shall have a place eternally at my right hand.",
+      "verse": "26:24",
+      "lineIndex": 80
+    },
+    {
+      "start": 262.241,
+      "end": 264.099,
+      "type": "line",
+      "text": "And it shall come to pass",
+      "verse": "26:25",
+      "lineIndex": 81
+    },
+    {
+      "start": 264.279,
+      "end": 266.415,
+      "type": "line",
+      "text": "when the second trump shall sound",
+      "verse": "26:25",
+      "lineIndex": 82
+    },
+    {
+      "start": 266.595,
+      "end": 270.821,
+      "type": "line",
+      "text": "then shall they that never knew me come forth and shall stand before me.",
+      "verse": "26:25",
+      "lineIndex": 83
+    },
+    {
+      "start": 271.501,
+      "end": 274.473,
+      "type": "line",
+      "text": "And then shall they know that I am the Lord their God,",
+      "verse": "26:26",
+      "lineIndex": 84
+    },
+    {
+      "start": 274.653,
+      "end": 276.696,
+      "type": "line",
+      "text": "that I am their Redeemer;",
+      "verse": "26:26",
+      "lineIndex": 85
+    },
+    {
+      "start": 276.876,
+      "end": 279.059,
+      "type": "line",
+      "text": "but they would not be redeemed.",
+      "verse": "26:26",
+      "lineIndex": 86
+    },
+    {
+      "start": 279.739,
+      "end": 283.222,
+      "type": "line",
+      "text": "And then I will confess unto them that I never knew them;",
+      "verse": "26:27",
+      "lineIndex": 87
+    },
+    {
+      "start": 283.402,
+      "end": 288.325,
+      "type": "line",
+      "text": "and they shall depart into everlasting fire prepared for the devil and his angels.",
+      "verse": "26:27",
+      "lineIndex": 88
+    },
+    {
+      "start": 289.005,
+      "end": 292.116,
+      "type": "line",
+      "text": "Therefore I say unto you, that he that will not hear my voice,",
+      "verse": "26:28",
+      "lineIndex": 89
+    },
+    {
+      "start": 292.296,
+      "end": 295.407,
+      "type": "line",
+      "text": "the same shall ye not receive into my church,",
+      "verse": "26:28",
+      "lineIndex": 90
+    },
+    {
+      "start": 295.587,
+      "end": 298.095,
+      "type": "line",
+      "text": "for him I will not receive at the last day.",
+      "verse": "26:28",
+      "lineIndex": 91
+    },
+    {
+      "start": 298.775,
+      "end": 300.725,
+      "type": "line",
+      "text": "Therefore I say unto you, Go;",
+      "verse": "26:29",
+      "lineIndex": 92
+    },
+    {
+      "start": 300.905,
+      "end": 303.366,
+      "type": "line",
+      "text": "and whosoever transgresseth against me,",
+      "verse": "26:29",
+      "lineIndex": 93
+    },
+    {
+      "start": 303.546,
+      "end": 307.168,
+      "type": "line",
+      "text": "him shall ye judge according to the sins which he has committed;",
+      "verse": "26:29",
+      "lineIndex": 94
+    },
+    {
+      "start": 307.348,
+      "end": 309.995,
+      "type": "line",
+      "text": "and if he confess his sins before thee and me,",
+      "verse": "26:29",
+      "lineIndex": 95
+    },
+    {
+      "start": 310.175,
+      "end": 313.147,
+      "type": "line",
+      "text": "and repenteth in the sincerity of his heart,",
+      "verse": "26:29",
+      "lineIndex": 96
+    },
+    {
+      "start": 313.327,
+      "end": 314.952,
+      "type": "line",
+      "text": "him shall ye forgive,",
+      "verse": "26:29",
+      "lineIndex": 97
+    },
+    {
+      "start": 315.132,
+      "end": 316.99,
+      "type": "line",
+      "text": "and I will forgive him also.",
+      "verse": "26:29",
+      "lineIndex": 98
+    },
+    {
+      "start": 317.67,
+      "end": 320.271,
+      "type": "line",
+      "text": "Yea, and as often as my people repent",
+      "verse": "26:30",
+      "lineIndex": 99
+    },
+    {
+      "start": 320.451,
+      "end": 323.562,
+      "type": "line",
+      "text": "will I forgive them their trespasses against me.",
+      "verse": "26:30",
+      "lineIndex": 100
+    },
+    {
+      "start": 324.242,
+      "end": 327.679,
+      "type": "line",
+      "text": "And ye shall also forgive one another your trespasses;",
+      "verse": "26:31",
+      "lineIndex": 101
+    },
+    {
+      "start": 327.859,
+      "end": 330.042,
+      "type": "line",
+      "text": "for verily I say unto you,",
+      "verse": "26:31",
+      "lineIndex": 102
+    },
+    {
+      "start": 330.222,
+      "end": 334.82,
+      "type": "line",
+      "text": "he that forgiveth not his neighbor's trespasses when he says that he repents,",
+      "verse": "26:31",
+      "lineIndex": 103
+    },
+    {
+      "start": 335.0,
+      "end": 337.694,
+      "type": "line",
+      "text": "the same hath brought himself under condemnation.",
+      "verse": "26:31",
+      "lineIndex": 104
+    },
+    {
+      "start": 338.374,
+      "end": 340.046,
+      "type": "line",
+      "text": "Now I say unto you, Go;",
+      "verse": "26:32",
+      "lineIndex": 105
+    },
+    {
+      "start": 340.226,
+      "end": 342.687,
+      "type": "line",
+      "text": "and whosoever will not repent of his sins",
+      "verse": "26:32",
+      "lineIndex": 106
+    },
+    {
+      "start": 342.867,
+      "end": 345.978,
+      "type": "line",
+      "text": "the same shall not be numbered among my people;",
+      "verse": "26:32",
+      "lineIndex": 107
+    },
+    {
+      "start": 346.158,
+      "end": 348.898,
+      "type": "line",
+      "text": "and this shall be observed from this time forward.",
+      "verse": "26:32",
+      "lineIndex": 108
+    },
+    {
+      "start": 349.578,
+      "end": 354.594,
+      "type": "line",
+      "text": "And it came to pass when Alma had heard these words he wrote them down that he might have them,",
+      "verse": "26:33",
+      "lineIndex": 109
+    },
+    {
+      "start": 354.774,
+      "end": 359.604,
+      "type": "line",
+      "text": "and that he might judge the people of that church according to the commandments of God.",
+      "verse": "26:33",
+      "lineIndex": 110
+    },
+    {
+      "start": 360.284,
+      "end": 362.792,
+      "type": "line",
+      "text": "And it came to pass that Alma went",
+      "verse": "26:34",
+      "lineIndex": 111
+    },
+    {
+      "start": 362.972,
+      "end": 367.755,
+      "type": "line",
+      "text": "and judged those that had been taken in iniquity, according to the word of the Lord.",
+      "verse": "26:34",
+      "lineIndex": 112
+    },
+    {
+      "start": 368.435,
+      "end": 371.964,
+      "type": "line",
+      "text": "And whosoever repented of their sins and did confess them,",
+      "verse": "26:35",
+      "lineIndex": 113
+    },
+    {
+      "start": 372.144,
+      "end": 375.255,
+      "type": "line",
+      "text": "them he did number among the people of the church;",
+      "verse": "26:35",
+      "lineIndex": 114
+    },
+    {
+      "start": 375.935,
+      "end": 380.486,
+      "type": "line",
+      "text": "And those that would not confess their sins and repent of their iniquity,",
+      "verse": "26:36",
+      "lineIndex": 115
+    },
+    {
+      "start": 380.666,
+      "end": 384.335,
+      "type": "line",
+      "text": "the same were not numbered among the people of the church,",
+      "verse": "26:36",
+      "lineIndex": 116
+    },
+    {
+      "start": 384.515,
+      "end": 386.419,
+      "type": "line",
+      "text": "and their names were blotted out.",
+      "verse": "26:36",
+      "lineIndex": 117
+    },
+    {
+      "start": 387.099,
+      "end": 391.604,
+      "type": "line",
+      "text": "And it came to pass that Alma did regulate all the affairs of the church;",
+      "verse": "26:37",
+      "lineIndex": 119
+    },
+    {
+      "start": 391.784,
+      "end": 394.152,
+      "type": "line",
+      "text": "and they began again to have peace",
+      "verse": "26:37",
+      "lineIndex": 120
+    },
+    {
+      "start": 394.332,
+      "end": 397.676,
+      "type": "line",
+      "text": "and to prosper exceedingly in the affairs of the church,",
+      "verse": "26:37",
+      "lineIndex": 121
+    },
+    {
+      "start": 397.856,
+      "end": 400.317,
+      "type": "line",
+      "text": "walking circumspectly before God,",
+      "verse": "26:37",
+      "lineIndex": 122
+    },
+    {
+      "start": 400.497,
+      "end": 401.937,
+      "type": "line",
+      "text": "receiving many,",
+      "verse": "26:37",
+      "lineIndex": 123
+    },
+    {
+      "start": 402.117,
+      "end": 403.742,
+      "type": "line",
+      "text": "and baptizing many.",
+      "verse": "26:37",
+      "lineIndex": 124
+    },
+    {
+      "start": 404.422,
+      "end": 410.041,
+      "type": "line",
+      "text": "And now all these things did Alma and his fellow laborers do who were over the church,",
+      "verse": "26:38",
+      "lineIndex": 125
+    },
+    {
+      "start": 410.221,
+      "end": 412.032,
+      "type": "line",
+      "text": "walking in all diligence,",
+      "verse": "26:38",
+      "lineIndex": 126
+    },
+    {
+      "start": 412.212,
+      "end": 414.813,
+      "type": "line",
+      "text": "teaching the word of God in all things,",
+      "verse": "26:38",
+      "lineIndex": 127
+    },
+    {
+      "start": 414.993,
+      "end": 417.594,
+      "type": "line",
+      "text": "suffering all manner of afflictions,",
+      "verse": "26:38",
+      "lineIndex": 128
+    },
+    {
+      "start": 417.774,
+      "end": 422.65,
+      "type": "line",
+      "text": "being persecuted by all those who did not belong to the church of God.",
+      "verse": "26:38",
+      "lineIndex": 129
+    },
+    {
+      "start": 423.33,
+      "end": 425.513,
+      "type": "line",
+      "text": "And they did admonish their brethren;",
+      "verse": "26:39",
+      "lineIndex": 130
+    },
+    {
+      "start": 425.693,
+      "end": 427.551,
+      "type": "line",
+      "text": "and they were also admonished,",
+      "verse": "26:39",
+      "lineIndex": 131
+    },
+    {
+      "start": 427.731,
+      "end": 431.168,
+      "type": "line",
+      "text": "every one by the word of God, according to his sins,",
+      "verse": "26:39",
+      "lineIndex": 132
+    },
+    {
+      "start": 431.348,
+      "end": 433.949,
+      "type": "line",
+      "text": "or to the sins which he had committed,",
+      "verse": "26:39",
+      "lineIndex": 133
+    },
+    {
+      "start": 434.129,
+      "end": 437.287,
+      "type": "line",
+      "text": "being commanded of God to pray without ceasing,",
+      "verse": "26:39",
+      "lineIndex": 134
+    },
+    {
+      "start": 437.467,
+      "end": 439.51,
+      "type": "line",
+      "text": "and to give thanks in all things.",
+      "verse": "26:39",
+      "lineIndex": 135
+    }
+  ]
+}
