@@ -1,0 +1,1512 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 27,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 593.165,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 9.242,
+      "type": "line",
+      "text": "And now it came to pass that the persecutions which were inflicted on the church by the unbelievers became so great that the church began to murmur,",
+      "verse": "27:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 9.422,
+      "end": 12.162,
+      "type": "line",
+      "text": "and complain to their leaders concerning the matter;",
+      "verse": "27:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 12.342,
+      "end": 14.107,
+      "type": "line",
+      "text": "and they did complain to Alma.",
+      "verse": "27:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.287,
+      "end": 17.398,
+      "type": "line",
+      "text": "And Alma laid the case before their king, Mosiah.",
+      "verse": "27:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.578,
+      "end": 20.039,
+      "type": "line",
+      "text": "And Mosiah consulted with his priests.",
+      "verse": "27:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 20.719,
+      "end": 32.608,
+      "type": "line",
+      "text": "And it came to pass that king Mosiah sent a proclamation throughout the land round about that there should not any unbeliever persecute any of those",
+      "verse": "27:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 32.788,
+      "end": 34.831,
+      "type": "line",
+      "text": "who belonged to the church of God.",
+      "verse": "27:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 35.511,
+      "end": 38.855,
+      "type": "line",
+      "text": "And there was a strict command throughout all the churches",
+      "verse": "27:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 39.035,
+      "end": 42.239,
+      "type": "line",
+      "text": "that there should be no persecutions among them,",
+      "verse": "27:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 42.419,
+      "end": 45.298,
+      "type": "line",
+      "text": "that there should be an equality among all men;",
+      "verse": "27:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 45.978,
+      "end": 50.018,
+      "type": "line",
+      "text": "That they should let no pride nor haughtiness disturb their peace;",
+      "verse": "27:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 50.198,
+      "end": 53.402,
+      "type": "line",
+      "text": "that every man should esteem his neighbor as himself,",
+      "verse": "27:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 53.582,
+      "end": 56.508,
+      "type": "line",
+      "text": "laboring with their own hands for their support.",
+      "verse": "27:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 57.188,
+      "end": 62.668,
+      "type": "line",
+      "text": "Yea, and all their priests and teachers should labor with their own hands for their support,",
+      "verse": "27:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 62.848,
+      "end": 66.517,
+      "type": "line",
+      "text": "in all cases save it were in sickness, or in much want;",
+      "verse": "27:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 66.697,
+      "end": 68.276,
+      "type": "line",
+      "text": "and doing these things,",
+      "verse": "27:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 68.456,
+      "end": 71.103,
+      "type": "line",
+      "text": "they did abound in the grace of God.",
+      "verse": "27:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 71.783,
+      "end": 75.266,
+      "type": "line",
+      "text": "And there began to be much peace again in the land;",
+      "verse": "27:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 75.446,
+      "end": 78.14,
+      "type": "line",
+      "text": "and the people began to be very numerous,",
+      "verse": "27:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 78.32,
+      "end": 81.757,
+      "type": "line",
+      "text": "and began to scatter abroad upon the face of the earth,",
+      "verse": "27:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 81.937,
+      "end": 84.12,
+      "type": "line",
+      "text": "yea, on the north and on the south,",
+      "verse": "27:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 84.3,
+      "end": 86.668,
+      "type": "line",
+      "text": "on the east and on the west,",
+      "verse": "27:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 86.848,
+      "end": 91.074,
+      "type": "line",
+      "text": "building large cities and villages in all quarters of the land.",
+      "verse": "27:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 91.754,
+      "end": 94.726,
+      "type": "line",
+      "text": "And the Lord did visit them and prosper them,",
+      "verse": "27:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 94.906,
+      "end": 97.274,
+      "type": "line",
+      "text": "and they became a large and wealthy people.",
+      "verse": "27:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 97.954,
+      "end": 101.669,
+      "type": "line",
+      "text": "Now the sons of Mosiah were numbered among the unbelievers;",
+      "verse": "27:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 101.849,
+      "end": 105.193,
+      "type": "line",
+      "text": "and also one of the sons of Alma was numbered among them,",
+      "verse": "27:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 105.373,
+      "end": 107.881,
+      "type": "line",
+      "text": "he being called Alma, after his father;",
+      "verse": "27:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 108.061,
+      "end": 111.823,
+      "type": "line",
+      "text": "nevertheless, he became a very wicked and an idolatrous man.",
+      "verse": "27:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 112.003,
+      "end": 114.371,
+      "type": "line",
+      "text": "And he was a man of many words,",
+      "verse": "27:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 114.551,
+      "end": 117.105,
+      "type": "line",
+      "text": "and did speak much flattery to the people;",
+      "verse": "27:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 117.285,
+      "end": 119.653,
+      "type": "line",
+      "text": "therefore he led many of the people",
+      "verse": "27:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 119.833,
+      "end": 122.48,
+      "type": "line",
+      "text": "to do after the manner of his iniquities.",
+      "verse": "27:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 123.16,
+      "end": 127.665,
+      "type": "line",
+      "text": "And he became a great hinderment to the prosperity of the church of God;",
+      "verse": "27:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 127.845,
+      "end": 130.446,
+      "type": "line",
+      "text": "stealing away the hearts of the people;",
+      "verse": "27:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 130.626,
+      "end": 133.32,
+      "type": "line",
+      "text": "causing much dissension among the people;",
+      "verse": "27:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 133.5,
+      "end": 137.633,
+      "type": "line",
+      "text": "giving a chance for the enemy of God to exercise his power over them.",
+      "verse": "27:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 138.313,
+      "end": 143.236,
+      "type": "line",
+      "text": "And now it came to pass that while he was going about to destroy the church of God,",
+      "verse": "27:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 143.416,
+      "end": 146.806,
+      "type": "line",
+      "text": "for he did go about secretly with the sons of Mosiah",
+      "verse": "27:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 146.986,
+      "end": 149.029,
+      "type": "line",
+      "text": "seeking to destroy the church,",
+      "verse": "27:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 149.209,
+      "end": 151.856,
+      "type": "line",
+      "text": "and to lead astray the people of the Lord,",
+      "verse": "27:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 152.036,
+      "end": 155.24,
+      "type": "line",
+      "text": "contrary to the commandments of God, or even the king\u2014",
+      "verse": "27:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 155.92,
+      "end": 157.685,
+      "type": "line",
+      "text": "And as I said unto you,",
+      "verse": "27:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 157.865,
+      "end": 160.837,
+      "type": "line",
+      "text": "as they were going about rebelling against God,",
+      "verse": "27:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 161.017,
+      "end": 163.896,
+      "type": "line",
+      "text": "behold, the angel of the Lord appeared unto them;",
+      "verse": "27:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 164.076,
+      "end": 166.584,
+      "type": "line",
+      "text": "and he descended as it were in a cloud;",
+      "verse": "27:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 166.764,
+      "end": 169.829,
+      "type": "line",
+      "text": "and he spake as it were with a voice of thunder,",
+      "verse": "27:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 170.009,
+      "end": 173.26,
+      "type": "line",
+      "text": "which caused the earth to shake upon which they stood;",
+      "verse": "27:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 173.94,
+      "end": 176.401,
+      "type": "line",
+      "text": "And so great was their astonishment,",
+      "verse": "27:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 176.581,
+      "end": 178.717,
+      "type": "line",
+      "text": "that they fell to the earth,",
+      "verse": "27:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 178.897,
+      "end": 182.566,
+      "type": "line",
+      "text": "and understood not the words which he spake unto them.",
+      "verse": "27:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 183.246,
+      "end": 185.568,
+      "type": "line",
+      "text": "Nevertheless he cried again, saying:",
+      "verse": "27:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 185.748,
+      "end": 186.677,
+      "type": "line",
+      "text": "Alma,",
+      "verse": "27:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 186.857,
+      "end": 188.668,
+      "type": "line",
+      "text": "arise and stand forth,",
+      "verse": "27:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 188.848,
+      "end": 191.402,
+      "type": "line",
+      "text": "for why persecutest thou the church of God?",
+      "verse": "27:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 191.582,
+      "end": 193.207,
+      "type": "line",
+      "text": "For the Lord hath said:",
+      "verse": "27:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 193.387,
+      "end": 194.827,
+      "type": "line",
+      "text": "This is my church,",
+      "verse": "27:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 195.007,
+      "end": 196.586,
+      "type": "line",
+      "text": "and I will establish it;",
+      "verse": "27:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 196.766,
+      "end": 198.949,
+      "type": "line",
+      "text": "and nothing shall overthrow it,",
+      "verse": "27:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 199.129,
+      "end": 201.637,
+      "type": "line",
+      "text": "save it is the transgression of my people.",
+      "verse": "27:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 202.317,
+      "end": 203.989,
+      "type": "line",
+      "text": "And again, the angel said:",
+      "verse": "27:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 204.169,
+      "end": 207.002,
+      "type": "line",
+      "text": "Behold, the Lord hath heard the prayers of his people,",
+      "verse": "27:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 207.182,
+      "end": 211.037,
+      "type": "line",
+      "text": "and also the prayers of his servant, Alma, who is thy father;",
+      "verse": "27:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 211.217,
+      "end": 214.143,
+      "type": "line",
+      "text": "for he has prayed with much faith concerning thee",
+      "verse": "27:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 214.323,
+      "end": 218.038,
+      "type": "line",
+      "text": "that thou mightest be brought to the knowledge of the truth;",
+      "verse": "27:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 218.218,
+      "end": 220.679,
+      "type": "line",
+      "text": "therefore, for this purpose have I come",
+      "verse": "27:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 220.859,
+      "end": 224.11,
+      "type": "line",
+      "text": "to convince thee of the power and authority of God,",
+      "verse": "27:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 224.29,
+      "end": 228.47,
+      "type": "line",
+      "text": "that the prayers of his servants might be answered according to their faith.",
+      "verse": "27:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 229.15,
+      "end": 232.215,
+      "type": "line",
+      "text": "And now behold, can ye dispute the power of God?",
+      "verse": "27:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 232.395,
+      "end": 235.135,
+      "type": "line",
+      "text": "For behold, doth not my voice shake the earth?",
+      "verse": "27:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 235.315,
+      "end": 237.869,
+      "type": "line",
+      "text": "And can ye not also behold me before you?",
+      "verse": "27:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 238.049,
+      "end": 239.86,
+      "type": "line",
+      "text": "And I am sent from God.",
+      "verse": "27:15",
+      "lineIndex": 73
+    },
+    {
+      "start": 240.54,
+      "end": 241.98,
+      "type": "line",
+      "text": "Now I say unto thee:",
+      "verse": "27:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 242.16,
+      "end": 248.476,
+      "type": "line",
+      "text": "Go, and remember the captivity of thy fathers in the land of Helam, and in the land of Nephi;",
+      "verse": "27:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 248.656,
+      "end": 251.489,
+      "type": "line",
+      "text": "and remember how great things he has done for them;",
+      "verse": "27:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 251.669,
+      "end": 254.734,
+      "type": "line",
+      "text": "for they were in bondage, and he has delivered them.",
+      "verse": "27:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 254.914,
+      "end": 257.004,
+      "type": "line",
+      "text": "And now I say unto thee, Alma,",
+      "verse": "27:16",
+      "lineIndex": 78
+    },
+    {
+      "start": 257.184,
+      "end": 258.252,
+      "type": "line",
+      "text": "go thy way,",
+      "verse": "27:16",
+      "lineIndex": 79
+    },
+    {
+      "start": 258.432,
+      "end": 260.708,
+      "type": "line",
+      "text": "and seek to destroy the church no more,",
+      "verse": "27:16",
+      "lineIndex": 80
+    },
+    {
+      "start": 260.888,
+      "end": 262.978,
+      "type": "line",
+      "text": "that their prayers may be answered,",
+      "verse": "27:16",
+      "lineIndex": 81
+    },
+    {
+      "start": 263.158,
+      "end": 266.502,
+      "type": "line",
+      "text": "and this even if thou wilt of thyself be cast off.",
+      "verse": "27:16",
+      "lineIndex": 82
+    },
+    {
+      "start": 267.182,
+      "end": 274.38,
+      "type": "line",
+      "text": "And now it came to pass that these were the last words which the angel spake unto Alma, and he departed.",
+      "verse": "27:17",
+      "lineIndex": 83
+    },
+    {
+      "start": 275.06,
+      "end": 279.611,
+      "type": "line",
+      "text": "And now Alma and those that were with him fell again to the earth,",
+      "verse": "27:18",
+      "lineIndex": 84
+    },
+    {
+      "start": 279.791,
+      "end": 282.113,
+      "type": "line",
+      "text": "for great was their astonishment;",
+      "verse": "27:18",
+      "lineIndex": 85
+    },
+    {
+      "start": 282.293,
+      "end": 285.869,
+      "type": "line",
+      "text": "for with their own eyes they had beheld an angel of the Lord;",
+      "verse": "27:18",
+      "lineIndex": 86
+    },
+    {
+      "start": 286.049,
+      "end": 289.207,
+      "type": "line",
+      "text": "and his voice was as thunder, which shook the earth;",
+      "verse": "27:18",
+      "lineIndex": 87
+    },
+    {
+      "start": 289.387,
+      "end": 293.149,
+      "type": "line",
+      "text": "and they knew that there was nothing save the power of God",
+      "verse": "27:18",
+      "lineIndex": 88
+    },
+    {
+      "start": 293.329,
+      "end": 296.394,
+      "type": "line",
+      "text": "that could shake the earth and cause it to tremble",
+      "verse": "27:18",
+      "lineIndex": 89
+    },
+    {
+      "start": 296.574,
+      "end": 299.407,
+      "type": "line",
+      "text": "as though it would part asunder.",
+      "verse": "27:18",
+      "lineIndex": 90
+    },
+    {
+      "start": 300.087,
+      "end": 304.499,
+      "type": "line",
+      "text": "And now the astonishment of Alma was so great that he became dumb,",
+      "verse": "27:19",
+      "lineIndex": 91
+    },
+    {
+      "start": 304.679,
+      "end": 306.815,
+      "type": "line",
+      "text": "that he could not open his mouth;",
+      "verse": "27:19",
+      "lineIndex": 92
+    },
+    {
+      "start": 306.995,
+      "end": 308.713,
+      "type": "line",
+      "text": "yea, and he became weak,",
+      "verse": "27:19",
+      "lineIndex": 93
+    },
+    {
+      "start": 308.893,
+      "end": 311.308,
+      "type": "line",
+      "text": "even that he could not move his hands;",
+      "verse": "27:19",
+      "lineIndex": 94
+    },
+    {
+      "start": 311.488,
+      "end": 314.971,
+      "type": "line",
+      "text": "therefore he was taken by those that were with him,",
+      "verse": "27:19",
+      "lineIndex": 95
+    },
+    {
+      "start": 315.151,
+      "end": 316.684,
+      "type": "line",
+      "text": "and carried helpless,",
+      "verse": "27:19",
+      "lineIndex": 96
+    },
+    {
+      "start": 316.864,
+      "end": 319.325,
+      "type": "line",
+      "text": "even until he was laid before his father.",
+      "verse": "27:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 320.005,
+      "end": 324.417,
+      "type": "line",
+      "text": "And they rehearsed unto his father all that had happened unto them;",
+      "verse": "27:20",
+      "lineIndex": 98
+    },
+    {
+      "start": 324.597,
+      "end": 326.362,
+      "type": "line",
+      "text": "and his father rejoiced,",
+      "verse": "27:20",
+      "lineIndex": 99
+    },
+    {
+      "start": 326.542,
+      "end": 329.189,
+      "type": "line",
+      "text": "for he knew that it was the power of God.",
+      "verse": "27:20",
+      "lineIndex": 100
+    },
+    {
+      "start": 329.869,
+      "end": 333.631,
+      "type": "line",
+      "text": "And he caused that a multitude should be gathered together",
+      "verse": "27:21",
+      "lineIndex": 101
+    },
+    {
+      "start": 333.811,
+      "end": 336.922,
+      "type": "line",
+      "text": "that they might witness what the Lord had done for his son,",
+      "verse": "27:21",
+      "lineIndex": 102
+    },
+    {
+      "start": 337.102,
+      "end": 339.563,
+      "type": "line",
+      "text": "and also for those that were with him.",
+      "verse": "27:21",
+      "lineIndex": 103
+    },
+    {
+      "start": 340.243,
+      "end": 344.19,
+      "type": "line",
+      "text": "And he caused that the priests should assemble themselves together;",
+      "verse": "27:22",
+      "lineIndex": 104
+    },
+    {
+      "start": 344.37,
+      "end": 346.042,
+      "type": "line",
+      "text": "and they began to fast,",
+      "verse": "27:22",
+      "lineIndex": 105
+    },
+    {
+      "start": 346.222,
+      "end": 348.219,
+      "type": "line",
+      "text": "and to pray to the Lord their God",
+      "verse": "27:22",
+      "lineIndex": 106
+    },
+    {
+      "start": 348.399,
+      "end": 350.582,
+      "type": "line",
+      "text": "that he would open the mouth of Alma,",
+      "verse": "27:22",
+      "lineIndex": 107
+    },
+    {
+      "start": 350.762,
+      "end": 352.341,
+      "type": "line",
+      "text": "that he might speak,",
+      "verse": "27:22",
+      "lineIndex": 108
+    },
+    {
+      "start": 352.521,
+      "end": 355.958,
+      "type": "line",
+      "text": "and also that his limbs might receive their strength\u2014",
+      "verse": "27:22",
+      "lineIndex": 109
+    },
+    {
+      "start": 356.138,
+      "end": 358.646,
+      "type": "line",
+      "text": "that the eyes of the people might be opened",
+      "verse": "27:22",
+      "lineIndex": 110
+    },
+    {
+      "start": 358.826,
+      "end": 361.845,
+      "type": "line",
+      "text": "to see and know of the goodness and glory of God.",
+      "verse": "27:22",
+      "lineIndex": 111
+    },
+    {
+      "start": 362.525,
+      "end": 370.745,
+      "type": "line",
+      "text": "And it came to pass after they had fasted and prayed for the space of two days and two nights, the limbs of Alma received their strength,",
+      "verse": "27:23",
+      "lineIndex": 113
+    },
+    {
+      "start": 370.925,
+      "end": 373.99,
+      "type": "line",
+      "text": "and he stood up and began to speak unto them,",
+      "verse": "27:23",
+      "lineIndex": 114
+    },
+    {
+      "start": 374.17,
+      "end": 376.585,
+      "type": "line",
+      "text": "bidding them to be of good comfort:",
+      "verse": "27:23",
+      "lineIndex": 115
+    },
+    {
+      "start": 377.265,
+      "end": 380.005,
+      "type": "line",
+      "text": "For, said he, I have repented of my sins,",
+      "verse": "27:24",
+      "lineIndex": 116
+    },
+    {
+      "start": 380.185,
+      "end": 382.182,
+      "type": "line",
+      "text": "and have been redeemed of the Lord;",
+      "verse": "27:24",
+      "lineIndex": 117
+    },
+    {
+      "start": 382.362,
+      "end": 384.545,
+      "type": "line",
+      "text": "behold I am born of the Spirit.",
+      "verse": "27:24",
+      "lineIndex": 118
+    },
+    {
+      "start": 385.225,
+      "end": 386.943,
+      "type": "line",
+      "text": "And the Lord said unto me:",
+      "verse": "27:25",
+      "lineIndex": 119
+    },
+    {
+      "start": 387.123,
+      "end": 389.073,
+      "type": "line",
+      "text": "Marvel not that all mankind,",
+      "verse": "27:25",
+      "lineIndex": 120
+    },
+    {
+      "start": 389.253,
+      "end": 390.832,
+      "type": "line",
+      "text": "yea, men and women,",
+      "verse": "27:25",
+      "lineIndex": 121
+    },
+    {
+      "start": 391.012,
+      "end": 394.17,
+      "type": "line",
+      "text": "all nations, kindreds, tongues and people,",
+      "verse": "27:25",
+      "lineIndex": 122
+    },
+    {
+      "start": 394.35,
+      "end": 395.836,
+      "type": "line",
+      "text": "must be born again;",
+      "verse": "27:25",
+      "lineIndex": 123
+    },
+    {
+      "start": 396.016,
+      "end": 397.456,
+      "type": "line",
+      "text": "yea, born of God,",
+      "verse": "27:25",
+      "lineIndex": 124
+    },
+    {
+      "start": 397.636,
+      "end": 400.515,
+      "type": "line",
+      "text": "changed from their carnal and fallen state,",
+      "verse": "27:25",
+      "lineIndex": 125
+    },
+    {
+      "start": 400.695,
+      "end": 402.738,
+      "type": "line",
+      "text": "to a state of righteousness,",
+      "verse": "27:25",
+      "lineIndex": 126
+    },
+    {
+      "start": 402.918,
+      "end": 404.543,
+      "type": "line",
+      "text": "being redeemed of God,",
+      "verse": "27:25",
+      "lineIndex": 127
+    },
+    {
+      "start": 404.723,
+      "end": 407.091,
+      "type": "line",
+      "text": "becoming his sons and daughters;",
+      "verse": "27:25",
+      "lineIndex": 128
+    },
+    {
+      "start": 407.771,
+      "end": 410.0,
+      "type": "line",
+      "text": "And thus they become new creatures;",
+      "verse": "27:26",
+      "lineIndex": 129
+    },
+    {
+      "start": 410.18,
+      "end": 411.805,
+      "type": "line",
+      "text": "and unless they do this,",
+      "verse": "27:26",
+      "lineIndex": 130
+    },
+    {
+      "start": 411.985,
+      "end": 415.189,
+      "type": "line",
+      "text": "they can in nowise inherit the kingdom of God.",
+      "verse": "27:26",
+      "lineIndex": 131
+    },
+    {
+      "start": 415.869,
+      "end": 417.355,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "27:27",
+      "lineIndex": 132
+    },
+    {
+      "start": 417.535,
+      "end": 419.3,
+      "type": "line",
+      "text": "unless this be the case,",
+      "verse": "27:27",
+      "lineIndex": 133
+    },
+    {
+      "start": 419.48,
+      "end": 421.245,
+      "type": "line",
+      "text": "they must be cast off;",
+      "verse": "27:27",
+      "lineIndex": 134
+    },
+    {
+      "start": 421.425,
+      "end": 422.911,
+      "type": "line",
+      "text": "and this I know,",
+      "verse": "27:27",
+      "lineIndex": 135
+    },
+    {
+      "start": 423.091,
+      "end": 425.227,
+      "type": "line",
+      "text": "because I was like to be cast off.",
+      "verse": "27:27",
+      "lineIndex": 136
+    },
+    {
+      "start": 425.907,
+      "end": 429.158,
+      "type": "line",
+      "text": "Nevertheless, after wading through much tribulation,",
+      "verse": "27:28",
+      "lineIndex": 137
+    },
+    {
+      "start": 429.338,
+      "end": 431.242,
+      "type": "line",
+      "text": "repenting nigh unto death,",
+      "verse": "27:28",
+      "lineIndex": 138
+    },
+    {
+      "start": 431.422,
+      "end": 435.973,
+      "type": "line",
+      "text": "the Lord in mercy hath seen fit to snatch me out of an everlasting burning,",
+      "verse": "27:28",
+      "lineIndex": 139
+    },
+    {
+      "start": 436.153,
+      "end": 437.825,
+      "type": "line",
+      "text": "and I am born of God.",
+      "verse": "27:28",
+      "lineIndex": 140
+    },
+    {
+      "start": 438.505,
+      "end": 443.195,
+      "type": "line",
+      "text": "My soul hath been redeemed from the gall of bitterness and bonds of iniquity.",
+      "verse": "27:29",
+      "lineIndex": 141
+    },
+    {
+      "start": 443.375,
+      "end": 445.372,
+      "type": "line",
+      "text": "I was in the darkest abyss;",
+      "verse": "27:29",
+      "lineIndex": 142
+    },
+    {
+      "start": 445.552,
+      "end": 448.292,
+      "type": "line",
+      "text": "but now I behold the marvelous light of God.",
+      "verse": "27:29",
+      "lineIndex": 143
+    },
+    {
+      "start": 448.472,
+      "end": 451.073,
+      "type": "line",
+      "text": "My soul was racked with eternal torment;",
+      "verse": "27:29",
+      "lineIndex": 144
+    },
+    {
+      "start": 451.253,
+      "end": 454.225,
+      "type": "line",
+      "text": "but I am snatched, and my soul is pained no more.",
+      "verse": "27:29",
+      "lineIndex": 145
+    },
+    {
+      "start": 454.905,
+      "end": 456.577,
+      "type": "line",
+      "text": "I rejected my Redeemer,",
+      "verse": "27:30",
+      "lineIndex": 146
+    },
+    {
+      "start": 456.757,
+      "end": 460.379,
+      "type": "line",
+      "text": "and denied that which had been spoken of by our fathers;",
+      "verse": "27:30",
+      "lineIndex": 147
+    },
+    {
+      "start": 460.559,
+      "end": 463.763,
+      "type": "line",
+      "text": "but now that they may foresee that he will come,",
+      "verse": "27:30",
+      "lineIndex": 148
+    },
+    {
+      "start": 463.943,
+      "end": 467.658,
+      "type": "line",
+      "text": "and that he remembereth every creature of his creating,",
+      "verse": "27:30",
+      "lineIndex": 149
+    },
+    {
+      "start": 467.838,
+      "end": 470.346,
+      "type": "line",
+      "text": "he will make himself manifest unto all.",
+      "verse": "27:30",
+      "lineIndex": 150
+    },
+    {
+      "start": 471.026,
+      "end": 472.837,
+      "type": "line",
+      "text": "Yea, every knee shall bow,",
+      "verse": "27:31",
+      "lineIndex": 151
+    },
+    {
+      "start": 473.017,
+      "end": 475.339,
+      "type": "line",
+      "text": "and every tongue confess before him.",
+      "verse": "27:31",
+      "lineIndex": 152
+    },
+    {
+      "start": 475.519,
+      "end": 477.284,
+      "type": "line",
+      "text": "Yea, even at the last day,",
+      "verse": "27:31",
+      "lineIndex": 153
+    },
+    {
+      "start": 477.464,
+      "end": 480.575,
+      "type": "line",
+      "text": "when all men shall stand to be judged of him,",
+      "verse": "27:31",
+      "lineIndex": 154
+    },
+    {
+      "start": 480.755,
+      "end": 482.891,
+      "type": "line",
+      "text": "then shall they confess that he is God;",
+      "verse": "27:31",
+      "lineIndex": 155
+    },
+    {
+      "start": 483.071,
+      "end": 484.696,
+      "type": "line",
+      "text": "then shall they confess,",
+      "verse": "27:31",
+      "lineIndex": 156
+    },
+    {
+      "start": 484.876,
+      "end": 486.826,
+      "type": "line",
+      "text": "who live without God in the world,",
+      "verse": "27:31",
+      "lineIndex": 157
+    },
+    {
+      "start": 487.006,
+      "end": 491.511,
+      "type": "line",
+      "text": "that the judgment of an everlasting punishment is just upon them;",
+      "verse": "27:31",
+      "lineIndex": 158
+    },
+    {
+      "start": 491.691,
+      "end": 493.224,
+      "type": "line",
+      "text": "and they shall quake,",
+      "verse": "27:31",
+      "lineIndex": 159
+    },
+    {
+      "start": 493.404,
+      "end": 494.565,
+      "type": "line",
+      "text": "and tremble,",
+      "verse": "27:31",
+      "lineIndex": 160
+    },
+    {
+      "start": 494.745,
+      "end": 497.856,
+      "type": "line",
+      "text": "and shrink beneath the glance of his all-searching eye.",
+      "verse": "27:31",
+      "lineIndex": 161
+    },
+    {
+      "start": 498.536,
+      "end": 502.855,
+      "type": "line",
+      "text": "And now it came to pass that Alma began from this time forward to teach the people,",
+      "verse": "27:32",
+      "lineIndex": 162
+    },
+    {
+      "start": 503.035,
+      "end": 507.493,
+      "type": "line",
+      "text": "and those who were with Alma at the time the angel appeared unto them,",
+      "verse": "27:32",
+      "lineIndex": 163
+    },
+    {
+      "start": 507.673,
+      "end": 510.367,
+      "type": "line",
+      "text": "traveling round about through all the land,",
+      "verse": "27:32",
+      "lineIndex": 164
+    },
+    {
+      "start": 510.547,
+      "end": 515.098,
+      "type": "line",
+      "text": "publishing to all the people the things which they had heard and seen,",
+      "verse": "27:32",
+      "lineIndex": 165
+    },
+    {
+      "start": 515.278,
+      "end": 518.622,
+      "type": "line",
+      "text": "and preaching the word of God in much tribulation,",
+      "verse": "27:32",
+      "lineIndex": 166
+    },
+    {
+      "start": 518.802,
+      "end": 522.099,
+      "type": "line",
+      "text": "being greatly persecuted by those who were unbelievers,",
+      "verse": "27:32",
+      "lineIndex": 167
+    },
+    {
+      "start": 522.279,
+      "end": 524.462,
+      "type": "line",
+      "text": "being smitten by many of them.",
+      "verse": "27:32",
+      "lineIndex": 168
+    },
+    {
+      "start": 525.142,
+      "end": 527.0,
+      "type": "line",
+      "text": "But notwithstanding all this,",
+      "verse": "27:33",
+      "lineIndex": 169
+    },
+    {
+      "start": 527.18,
+      "end": 530.477,
+      "type": "line",
+      "text": "they did impart much consolation to the church,",
+      "verse": "27:33",
+      "lineIndex": 170
+    },
+    {
+      "start": 530.657,
+      "end": 532.282,
+      "type": "line",
+      "text": "confirming their faith,",
+      "verse": "27:33",
+      "lineIndex": 171
+    },
+    {
+      "start": 532.462,
+      "end": 536.317,
+      "type": "line",
+      "text": "and exhorting them with long-suffering and much travail",
+      "verse": "27:33",
+      "lineIndex": 172
+    },
+    {
+      "start": 536.497,
+      "end": 538.68,
+      "type": "line",
+      "text": "to keep the commandments of God.",
+      "verse": "27:33",
+      "lineIndex": 173
+    },
+    {
+      "start": 539.36,
+      "end": 542.054,
+      "type": "line",
+      "text": "And four of them were the sons of Mosiah;",
+      "verse": "27:34",
+      "lineIndex": 174
+    },
+    {
+      "start": 542.234,
+      "end": 546.506,
+      "type": "line",
+      "text": "and their names were Ammon, and Aaron, and Omner, and Himni;",
+      "verse": "27:34",
+      "lineIndex": 175
+    },
+    {
+      "start": 546.686,
+      "end": 549.38,
+      "type": "line",
+      "text": "these were the names of the sons of Mosiah.",
+      "verse": "27:34",
+      "lineIndex": 176
+    },
+    {
+      "start": 550.06,
+      "end": 553.311,
+      "type": "line",
+      "text": "And they traveled throughout all the land of Zarahemla,",
+      "verse": "27:35",
+      "lineIndex": 177
+    },
+    {
+      "start": 553.491,
+      "end": 557.346,
+      "type": "line",
+      "text": "and among all the people who were under the reign of king Mosiah,",
+      "verse": "27:35",
+      "lineIndex": 178
+    },
+    {
+      "start": 557.526,
+      "end": 562.867,
+      "type": "line",
+      "text": "zealously striving to repair all the injuries which they had done to the church,",
+      "verse": "27:35",
+      "lineIndex": 179
+    },
+    {
+      "start": 563.047,
+      "end": 564.997,
+      "type": "line",
+      "text": "confessing all their sins,",
+      "verse": "27:35",
+      "lineIndex": 180
+    },
+    {
+      "start": 565.177,
+      "end": 568.103,
+      "type": "line",
+      "text": "and publishing all the things which they had seen,",
+      "verse": "27:35",
+      "lineIndex": 181
+    },
+    {
+      "start": 568.283,
+      "end": 573.159,
+      "type": "line",
+      "text": "and explaining the prophecies and the scriptures to all who desired to hear them.",
+      "verse": "27:35",
+      "lineIndex": 182
+    },
+    {
+      "start": 573.839,
+      "end": 579.505,
+      "type": "line",
+      "text": "And thus they were instruments in the hands of God in bringing many to the knowledge of the truth,",
+      "verse": "27:36",
+      "lineIndex": 183
+    },
+    {
+      "start": 579.685,
+      "end": 582.053,
+      "type": "line",
+      "text": "yea, to the knowledge of their Redeemer.",
+      "verse": "27:36",
+      "lineIndex": 184
+    },
+    {
+      "start": 582.733,
+      "end": 584.219,
+      "type": "line",
+      "text": "And how blessed are they!",
+      "verse": "27:37",
+      "lineIndex": 185
+    },
+    {
+      "start": 584.399,
+      "end": 586.257,
+      "type": "line",
+      "text": "For they did publish peace;",
+      "verse": "27:37",
+      "lineIndex": 186
+    },
+    {
+      "start": 586.437,
+      "end": 589.223,
+      "type": "line",
+      "text": "they did publish good tidings of good;",
+      "verse": "27:37",
+      "lineIndex": 187
+    },
+    {
+      "start": 589.403,
+      "end": 592.514,
+      "type": "line",
+      "text": "and they did declare unto the people that the Lord reigneth.",
+      "verse": "27:37",
+      "lineIndex": 188
+    }
+  ]
+}
