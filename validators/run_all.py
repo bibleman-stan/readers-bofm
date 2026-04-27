@@ -26,7 +26,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 VALIDATORS_DIR = REPO_ROOT / "validators"
 
-VIOLATION_RE = re.compile(r"violations? found:?\s*(\d+)", re.IGNORECASE)
+VIOLATION_RE = re.compile(r"(?:violations? found|candidate violations|deviations? found|matches? found):?\s*(\d+)", re.IGNORECASE)
+# Fallback: count [DEVIATION] / [MALFORMED] / [INFO] / [REVIEW] markers in output
+DEVIATION_MARKER_RE = re.compile(r"^\[(?:DEVIATION|MALFORMED|INFO|REVIEW|FLAG)\]", re.MULTILINE)
 
 
 def discover_validators():
@@ -55,7 +57,12 @@ def run_one(path, verbose):
         return {"name": path.name, "exit": -1, "violations": None, "error": "timeout"}
     out = (proc.stdout or "") + "\n" + (proc.stderr or "")
     m = VIOLATION_RE.search(out)
-    violations = int(m.group(1)) if m else None
+    if m:
+        violations = int(m.group(1))
+    else:
+        # Fallback: count standard marker lines
+        marker_count = len(DEVIATION_MARKER_RE.findall(out))
+        violations = marker_count if marker_count > 0 or proc.returncode == 0 else None
     return {
         "name": path.name,
         "exit": proc.returncode,
