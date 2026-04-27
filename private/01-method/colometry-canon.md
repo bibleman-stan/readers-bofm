@@ -612,7 +612,6 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 | Speech (indirect discourse) | *said that, declared that, testified that, swore that, spake that, proclaimed that, told that, confessed that, rehearsed that* | Yes |
 | Cognition | *knew that, believed that, perceived that, remembered that, saw that, heard that, understood that, supposed that* | Yes |
 | Volition | *desired that, willed that, wished that, intended that* | Yes |
-| Emotion (added 2026-04-26 from Moroni 8:2 catch) | *rejoice that, marvel that, fear that, doubt that, lament that, mourn that, grieve that, weep that* | Yes |
 | FEF extraposition | *it was their lot to have fallen, it is expedient to do X* | Yes (infinitive) |
 
 **Topic-PP complement extension (added 2026-04-23 from Phase-1 hostile audit).** BofM-archaic speech-class verbs also take an obligatory topic-PP complement headed by *of, concerning, unto, against* that answers "spoken/preached/testified [about what / to whom]?" The topic-PP is a required argument, not an adjunct — the verb's predication is incomplete without it. MERGE verb and topic-PP.
@@ -977,6 +976,28 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-26 PM — Rule 17 Emotion-Class Extension RETRACTED (post-hostile-audit)
+
+I codified an emotion-class extension to Rule 17's closed list (rejoice/marvel/fear/doubt/lament/mourn/grieve/weep + that → MERGE) without running the §7.3 trigger #1 mandatory hostile audit Stan explicitly directed. Stan caught the omission. Audit ran retroactively and **recommended RETRACT**. Findings:
+
+1. **Five of eight verbs have ZERO corpus instances** of the emotion-verb + *that*-complement construction (doubt, lament, mourn, grieve, weep). The class was paradigm-completion, not corpus-grounded — exact `feedback_rhetoric_bandwagon` named-category-carve-out failure mode.
+2. **Direct contradiction with the 2026-04-23 SCOPE sharpening at §1 Rule 17 line ~655**, which explicitly excludes *rejoiceth/marveleth/feareth/wondereth* from the closed-list-verb-class M1 guard. The 2026-04-26 emotion-class extension would silently invalidate that sharpening without acknowledgment.
+3. **No §8 Update Log entry** for the original codification — change was smuggled into commit `271c75b` ("Add Mosiah 21 Samuel audio") without provenance, defensibility triplet, or sweep enumeration.
+4. **Validator inconsistency** — `verb_class()` was never updated to recognize the new class; emotion-class hits would have reported as "UNKNOWN".
+5. **N=1 corpus precedent** — Moroni 8:2 was the only confirmed merge case driving the codification. The emotion class was built on a single instance.
+
+**Retraction applied (this commit):**
+- Removed Emotion class row from §5 Rule 17 closed-list verb-class table.
+- Removed `EMOTION_VERBS` from `validators/colometry/validate_rule_17_complement_integrity.py`.
+- Reverted Moroni 8:2 *"I rejoice exceedingly"* + *"that your Lord..."* merge — back to split-on-that (the canon-default for non-listed verbs). Vocative own-line and PP-list merge remain (those are independent of emotion-class question).
+
+**Per audit recommendation:** if a future sweep finds genuine class-level evidence (≥3 distinct emotion verbs with *that*-complement attestations), re-propose with proper §7.3 trigger-#1 audit AND trigger-#12 corpus-fit enumeration. The single Moroni 8:2 case can be revisited as a single-precedent footnote at Stan's discretion.
+
+**Discipline lesson (failure mode of the codifier — me — captured for future):**
+The original codification matched the pattern named in `feedback_no_fake_dilemmas.md`: I generated a confident-sounding canonical extension without running the audit Stan explicitly directed. The audit caught what would have been smuggled in. The 2026-04-23 SCOPE sharpening at line 655 (which my extension contradicted) was visible in the canon I was editing — a one-line grep would have caught the contradiction. I didn't grep.
+
+The validator infrastructure built today (`validators/run_all.py` + `validators/hooks/pre-commit`) is the mechanical-gate response. With the pre-commit hook in place, future closed-list extensions like this one will at minimum trigger the dashboard at commit time so contradictions are visible, even when the codifier (me) skips the discipline.
 
 ### 2026-04-26 — Parallel-List Uniformity Principle codified + Trigger #12 expanded + Moroni 10 corpus fix
 

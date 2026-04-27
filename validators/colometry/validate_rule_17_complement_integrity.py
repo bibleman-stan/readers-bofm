@@ -87,23 +87,8 @@ VOLITION_VERBS = {
     "seek", "sought", "seeketh",
 }
 
-# Emotion class (added 2026-04-26). Emotion verbs taking factive/content
-# *that*-complements parallel cognition class semantically. Caught by
-# Stan-eyeball at Moroni 8:2 ("I rejoice exceedingly / that...").
-EMOTION_VERBS = {
-    "rejoice", "rejoiced", "rejoiceth", "rejoicest",
-    "marvel", "marveled", "marvelled", "marveleth",
-    "fear", "feared", "feareth", "fearest",
-    "doubt", "doubted", "doubteth",
-    "lament", "lamented", "lamenteth",
-    "mourn", "mourned", "mourneth",
-    "grieve", "grieved", "grieveth",
-    "weep", "wept",
-}
-
 ALL_GOVERNING_VERBS = (
-    CAUSATIVE_VERBS | ASPECTUAL_VERBS | SPEECH_VERBS | COGNITION_VERBS
-    | VOLITION_VERBS | EMOTION_VERBS
+    CAUSATIVE_VERBS | ASPECTUAL_VERBS | SPEECH_VERBS | COGNITION_VERBS | VOLITION_VERBS
 )
 
 # Exception filters — these indicate the "that" should STAY split
