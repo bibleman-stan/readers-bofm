@@ -98,9 +98,24 @@ AICTP_RE = re.compile(
     r"\b(?:it (?:came|shall come|had come) to pass|as it happened)\b", re.IGNORECASE
 )
 
-# Purpose clause (Rule 7): "that they might / that ye may"
+# Purpose clause (Rule 7): "that they might / that ye may / that the curse might / that X should be"
+# Broadened 2026-04-27 to catch noun-subject purpose clauses + broader modal list.
 PURPOSE_RE = re.compile(
-    r"^that\s+(?:they|ye|he|she|we|you|I|it)\s+(?:might|may|should|would)\b",
+    r"^that\s+"
+    # Subject: pronoun OR noun-phrase up to ~5 words before the modal
+    r"(?:"
+    r"(?:they|ye|he|she|we|you|I|it|thou|all|none|whoso|whosoever|none|some|those|these)"
+    r"|(?:(?:the|a|an|my|thy|his|her|their|our|your|this|that|these|those|much|all|any|no)\s+)?"
+    r"(?:[a-zA-Z][\w'-]*(?:\s+(?:and|of|in|to|the|a|an|my|thy|his|her|their|our|your)\s+[a-zA-Z][\w'-]*)*\s+){1,5}?"
+    r")"
+    r"(?:might|may|should|would|could|must|shall|will)\s+(?:not\s+)?\b",
+    re.IGNORECASE,
+)
+
+# "So X that Y" result clause — "so great was their fear that they fell to the earth"
+# Result clauses are not purpose but mimic the pattern; they're not Rule 17 territory either.
+SO_RESULT_RE = re.compile(
+    r"\bso\s+(?:great|long|much|many|sore|exceeding|exceedingly|that|fast|loud|terrible|fierce)\b",
     re.IGNORECASE,
 )
 
@@ -170,8 +185,15 @@ def tokenize_last_verb(line: str) -> str | None:
 
 
 def is_purpose_clause(line: str) -> bool:
-    """Detect purpose clauses ('that they might', 'that ye may', etc.)."""
+    """Detect purpose clauses ('that they might', 'that ye may', 'that the
+    curse might be taken', etc.). Also catches result clauses ('so great...
+    that they fell') via SO_RESULT_RE on the prior line."""
     return bool(PURPOSE_RE.match(line.lstrip()))
+
+
+def is_so_result_clause(prior_line: str) -> bool:
+    """Detect 'so X that Y' result clauses where the prior line has 'so + adjective'."""
+    return bool(SO_RESULT_RE.search(prior_line))
 
 
 def is_aictp(line: str) -> bool:
@@ -250,9 +272,13 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         elif is_aictp(line):
             reason_to_skip = "AICTP-rule-16"
 
-        # Exception 3: Purpose clause (that they might / that ye may)
+        # Exception 3: Purpose clause (that they might / that ye may / that the curse might be)
         elif is_purpose_clause(next_line):
             reason_to_skip = "purpose-clause-rule-7"
+
+        # Exception 3b: "So X that Y" result clause — not a Rule 17 complement
+        elif is_so_result_clause(line):
+            reason_to_skip = "so-X-that-Y-result-clause"
 
         # Exception 4: Verb is inside a "that which has been [verb]" relative
         # clause — it's not the main governing predicate. E.g., "go contrary
