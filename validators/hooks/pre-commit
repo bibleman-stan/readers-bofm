@@ -1,0 +1,44 @@
+#!/bin/sh
+# BofM Reader pre-commit hook
+# Runs all colometry validators automatically on commits that touch the canon
+# or corpus. Blocks commits that INCREASE violation counts vs baseline.
+#
+# To bypass (only with Stan's explicit authorization per CLAUDE.md):
+#   git commit --no-verify
+
+set -e
+
+# Only run validators if relevant files are staged.
+RELEVANT=$(git diff --cached --name-only | grep -E "^(data/text-files/v2-mine/|private/01-method/colometry-canon\.md|private/01-method/pericope-canon\.md|validators/)" || true)
+
+if [ -z "$RELEVANT" ]; then
+    exit 0
+fi
+
+echo ""
+echo "[pre-commit] Canon/corpus files staged. Running colometry validators..."
+echo ""
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT"
+
+# Run baseline-check mode. This blocks only on REGRESSIONS (violation count
+# increased vs validators/.baseline.json). Pre-existing violations don't block.
+PYTHONIOENCODING=utf-8 python3 validators/run_all.py --baseline-check
+RESULT=$?
+
+if [ $RESULT -ne 0 ]; then
+    echo ""
+    echo "[pre-commit] BLOCKED: validators report new violations relative to baseline."
+    echo "[pre-commit] Review the dashboard above, then either:"
+    echo "  (a) fix the new violations and re-stage, OR"
+    echo "  (b) update baseline if the increase is intentional:"
+    echo "      python3 validators/run_all.py --update-baseline"
+    echo ""
+    exit 1
+fi
+
+echo ""
+echo "[pre-commit] No new violations. Proceeding with commit."
+echo ""
+exit 0
