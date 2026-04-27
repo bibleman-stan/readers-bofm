@@ -51,7 +51,7 @@ Rewrote all entries for 2 Ne 12-24, 2 Ne 27, 3 Ne 22-25. Total: 648 → 710 entr
 ## Hebrew Poetry / Parallel Structure Layer
 
 ### Data Pipeline
-1. Source: `data/parry-parallels-full.txt` (14,544 lines, 1,530 structures)
+1. Source: `data/text-files/parry/parry-parallels-full.txt` (14,544 lines, 1,530 structures)
 2. Parser: `build_parallel_index.py` applies "lite" filter (chiasmus ≤3 deep + simple couplets)
 3. Output: 619 structures (60% reduction)
 

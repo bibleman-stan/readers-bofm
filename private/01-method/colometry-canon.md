@@ -772,7 +772,7 @@ Pre-Phase-2, REVIEW-REQUIRED items are the honest output of the validator — th
 
 **Diagnostic.** Keep whole.
 
-**Validator.** `validators/validate_rule_23_date_colophon.py`.
+**Validator.** `validators/colometry/validate_rule_23_date_colophon.py`.
 
 ### Rule 26 — Adjective + "That" Complement Stays Together
 
@@ -1000,7 +1000,7 @@ Stan confirmed the broader scope: **breath is not foundational and not pragmatic
 - CLAUDE.md "Foundational Test" updated: dropped "atomic breath unit" gate; remaining test is "each line must be an atomic thought."
 - CLAUDE.md project description + handoffs/01-project-overview.md + handoffs/02-text-editorial.md project descriptions updated.
 
-**Discipline lesson — carry-forward inertia.** When one canon section retires/withdraws/rescinds something, sweep adjacent sections for residue at the same time. Don't carry the contradiction forward as a "deferred" item across sessions when the deciding move has already been made elsewhere. Hostile audit on a proposed `feedback_carry_forward_inertia.md` memory recommended NOT committing the memory — it would duplicate two existing memories (`feedback_no_fake_dilemmas`, `feedback_application_consistency_vs_rule_coverage`) and fail its own mechanical-discriminator test on borderline cases. **Memory-as-discipline against memory-failure is circular**; the right gate is mechanical: build a `validators/canon_retirement_residue.py` that scans canon for retirement markers + flags active references to retired terms outside retirement contexts. That validator is the next commit.
+**Discipline lesson — carry-forward inertia.** When one canon section retires/withdraws/rescinds something, sweep adjacent sections for residue at the same time. Don't carry the contradiction forward as a "deferred" item across sessions when the deciding move has already been made elsewhere. Hostile audit on a proposed `feedback_carry_forward_inertia.md` memory recommended NOT committing the memory — it would duplicate two existing memories (`feedback_no_fake_dilemmas`, `feedback_application_consistency_vs_rule_coverage`) and fail its own mechanical-discriminator test on borderline cases. **Memory-as-discipline against memory-failure is circular**; the right gate is mechanical: build a `validators/colometry/validate_canon_retirement_residue.py` that scans canon for retirement markers + flags active references to retired terms outside retirement contexts. That validator is the next commit.
 
 The novel contribution worth capturing — the discriminator question *"has the deciding move already been made elsewhere?"* for pending-list review — is being appended to `feedback_no_fake_dilemmas.md` rather than spawning a redundant memory file.
 
