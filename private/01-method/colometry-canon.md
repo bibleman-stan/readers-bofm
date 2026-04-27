@@ -246,7 +246,7 @@ Putting generative, subtractive, and diagnostic forces together, the full editor
 
 The framework is a default-merge with two closed lists of exceptions — five structural justifications (add splits beyond propositions) and four merge-overrides (block splits that would fragment unity) — plus the syntax-subtractive veto and the image diagnostic.
 
-**Breath as a named diagnostic was retired 2026-04-19 PM.** Rationale: in a reading edition with optional audio narration, "breath" was doing cognitive-chunking work dressed up as oral-delivery theory. The actual cases breath was handling — long single-proposition lines with substantial adjuncts — are more accurately captured by structural justification #5 (substantive adjunct as own focus). This grounds the split in English grammar (peripheral adjunct detachability) rather than a fictional physical-breath constraint.
+**Breath retired entirely (2026-04-19 PM; scope confirmed 2026-04-27).** What started as a "fourth criterion" alongside atomic thought (oral-delivery fit) was retired when empirical work showed it was doing cognitive-chunking under oral-delivery cover. Pragmatic application across the corpus has confirmed the broader claim: **breath is not foundational and not pragmatically relevant to any aspect of the method.** The cognitive-chunking work it was informally doing — flagging long single-proposition lines with substantial adjuncts — is fully absorbed by structural justification #5 (substantive adjunct as own focus). Earlier "atomic breath unit" framing in CLAUDE.md / handoffs / rules-audit.md was never load-bearing in pragmatic application and is dropped 2026-04-27 as residue.
 
 ### Application Order — explicit step-by-step (added 2026-04-23 post-structural-audit)
 
@@ -325,13 +325,13 @@ When a multi-verse list of parallel members exists with a shared explicit frame,
 **Why merge wins as the default direction:**
 - **Atomic-thought test.** Frame-fragments alone fail it; gifts/pronouncements as units pass it.
 - **Anti-Lowth (§0 Mission).** Split-dominant treatment with repeated visible frames IS the parallelism-display layout the project's stance opposes — *"we are formatting the text... not revealing rhetorical parallelism."*
-- **Audience.** ESL readers and read-aloud delivery favor one-line-per-member rhythm; double-breath-per-gift fragments cadence.
+- **Audience.** ESL readers and read-aloud delivery favor one-line-per-member rhythm; per-gift fragmentation across two lines disrupts the list cadence.
 - **Descriptive over interpretive.** Merge describes each member as a unit; split imposes a frame-content rhythmic structure on a syntactic surface that doesn't demand it.
 
 **Mechanical signature.**
 - Detect shared frame via repeated leading lexical pattern across N≥3 verses.
 - Identify dominant treatment among members (count: how many members are 1-line, how many 2-line?).
-- Bring outliers in line with dominant treatment; default-merge if no clear dominance OR if applying default-merge passes atomic-thought + breath tests for each member.
+- Bring outliers in line with dominant treatment; default-merge if no clear dominance OR if applying default-merge passes the atomic-thought test for each member.
 
 **SCOPE — does NOT apply to:**
 - N=2 coordinate cases (governed by §1 N=2 Adjudication Principle).
@@ -488,7 +488,7 @@ Each rule below follows the template:
 
 **Diagnostic.** Break before *because*.
 
-**Exception.** Short-line contexts where combined line passes atomic-thought and breath tests may merge.
+**Exception.** Short-line contexts where the combined line passes the atomic-thought test may merge.
 
 **Example.** "they did murmur against their father / because he had brought them out of the land."
 
@@ -504,7 +504,7 @@ Each rule below follows the template:
 
 **Precedence with Rule 27 (added 2026-04-23 from Phase-1 hostile audit).** Rule 7's UD signature requires **simple** `mark=that`. When the subordinator is the **compound** *insomuch that*, Rule 27 governs — not Rule 7 — even when the result clause contains a modal auxiliary (*might, should, could*) that would otherwise fit Rule 7's signature. The modal in *insomuch that + MODAL* belongs to the consecutive-result semantics (*"to such an extent that X might happen"*) rather than purposive telic semantics, despite the English reading sometimes permitting a purposive gloss. The compound subordinator IS the mark of consecutive-result reading; Rule 27's 3-condition merge test (+ expletive-*there* and chained-*insomuch* sub-clauses) is the applicable adjudication.
 
-**Exceptions.** Short-line contexts where combined line passes atomic-thought and breath tests may merge.
+**Exceptions.** Short-line contexts where the combined line passes the atomic-thought test may merge.
 
 **Examples.**
 - Finite (SPLIT): "he went forth among the people / that he might preach the word of God unto them."
@@ -583,7 +583,7 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
 
 **Audit precedent (added 2026-04-26).** Stan caught Moroni 8:2 *"My beloved son, Moroni, I rejoice exceedingly..."* (vocative merged); investigation found Mosiah 1:2 vs Mosiah 1:9 has both treatments within one chapter. Rule 15's prior permissive language (*"may stand as its own line"*) was the canon-coverage gap. Tightening to prescriptive closes the gap; corpus-wide vocative sweep follows under §7.3 trigger #12-b post-detection.
 
-**WHY / HOW WE KNOW / SCOPE.** WHY: vocatives are atomic-thought-distinct from main clauses (address vs. content); merging produces fragmented breath units and ESL-readers lose the "who is being spoken to" cue. HOW WE KNOW: 2026-04-26 corpus sweep found ~50/50 own-line vs merged drift across BofM (Mosiah 1:2 vs 1:9 same-chapter precedent); strict atomic-thought test favors uniform own-line. SCOPE: applies to true vocatives (2nd-person addresses); does NOT apply to NP-object uses of vocative-shaped nouns.
+**WHY / HOW WE KNOW / SCOPE.** WHY: vocatives are atomic-thought-distinct from main clauses (address vs. content); merging fragments the address-then-content beat and ESL-readers lose the "who is being spoken to" cue. HOW WE KNOW: 2026-04-26 corpus sweep found ~50/50 own-line vs merged drift across BofM (Mosiah 1:2 vs 1:9 same-chapter precedent); strict atomic-thought test favors uniform own-line. SCOPE: applies to true vocatives (2nd-person addresses); does NOT apply to NP-object uses of vocative-shaped nouns.
 
 ### Rule 16 — Dangling "That" After AICTP
 
@@ -654,7 +654,7 @@ Validator: `validators/syntax/validate_line_final_tokens.py` (to be extended wit
         - **Closed-list-verb-class guard.** The M1 override fires ONLY when the frame verb is in Rule 17's closed-list six verb classes (causative / aspectual / speech / cognition / volition / FEF). Cognition-adjacent verbs outside the list (*wondereth that, marveleth that, feareth that, rejoiceth that*) do NOT trigger the override. For out-of-list verbs, the two-member *that*-series falls outside Rule 17 complement territory entirely; default handling (keep split) applies unless another rule governs.
         - **Rule 17 general exceptions inherit.** The main Rule 17 exceptions list (appositive-*that* on a predicate noun — *"there was a strict law... that X, and that Y"*; purpose-*that* with modal; direct-discourse with colon; formally-marked parallel series frames; meta-announcement BE-verb + predicate noun + appositive; divine recitativum) applies to this sub-clause in full. The M1 override reaches ONLY two-member *that*-series that are genuine Rule 17 COMPLEMENT territory per the six-verb-class test. Appositive-*that*-on-predicate-noun is NOT complement territory — do not apply the M1 override to such cases.
         - **Default-to-B under synonymy-test uncertainty.** Per §2's closing instruction ("when uncertain between A and B/C on editorial/rhetorical grounds, treat as Category B"), when the M1 synonymy test is non-obvious — i.e., the applier cannot confidently paraphrase the two *that*-clauses as a single unified proposition without reaching for extra-syntactic (thematic, rhetorical, theological) justification — treat the case as Category B and flag. This sub-clause names no specific text categories; it restates §2's general discretion for the N=2 Rule 17 context. **Replaces the 2026-04-23 AM "doctrinal-weight" enumerated list, which was withdrawn the same day upon hostile audit** — the enumerated list (Pauline-calque, testimony-cadence, sacrament-prayer, covenant/ordinance, prophetic-rhythm) failed the mechanical-identifiability test for four of its five items and shape-matched the `feedback_rhetoric_bandwagon` failure mode (ad-hoc curated named-list masquerading as mechanical).
-    - **Sweep results (2026-04-23):** ~57 genuine Rule-17-scoped two-member series in the corpus. After scope sharpening applied: Tier-A (4 cognition-class clean-cognate cases) applied — 1 Ne 15:14, 1 Ne 18:4, Jacob 5:75, Alma 7:3. Tier-B (3 doctrinal-weight candidates: 3 Ne 15:2, 15:3, Moroni 10:19) deferred to Stan per Category-B bump. Tier-C/D (~17 beyond-40 and ~9 AMBIGUOUS) deferred for editorial review. Two initial Tier-A candidates scope-eliminated post-review: Mosiah 7:28 (*wondereth* not in closed list), Alma 1:21 (appositive-*that* on *law*).
+    - **Sweep results (2026-04-23):** ~57 genuine Rule-17-scoped two-member series in the corpus. After scope sharpening applied: Tier-A (4 cognition-class clean-cognate cases) applied — 1 Ne 15:14, 1 Ne 18:4, Jacob 5:75, Alma 7:3. Tier-B (3 cases originally tagged "doctrinal-weight" under the that-day-withdrawn category — see line 656 for the withdrawal): 3 Ne 15:2, 15:3, Moroni 10:19. **Status (2026-04-27):** all three resolved — 3 Ne 15:3 KEEP-SPLIT per Decision 15; 3 Ne 15:2 KEEP-SPLIT by R28 within-passage uniformity inheriting from 15:3; Moroni 10:19 mechanically resolved per §1 line 162 (verbs *is* vs *be done away* distinct non-synonymous → SPLIT, corpus already split; meta-audit caught the "pending Stan" framing as smuggled doctrinal-weight residue). Tier-C/D (~17 beyond-40 and ~9 AMBIGUOUS) deferred for editorial review. Two initial Tier-A candidates scope-eliminated post-review: Mosiah 7:28 (*wondereth* not in closed list), Alma 1:21 (appositive-*that* on *law*).
 - **Three-or-more-member coordinate series**: merge frame + first; stack remaining as polysyndetic parallel series (structural justification 1). Example: Mormon 7:5 three-fold *that*-series — frame + first on one line, two remaining members stacked. Justification 1 always wins at N=3+ (per the N=2 Adjudication Principle's N=3+ cliff); M1 does not override.
 - **Direct divine speech with recitativum *that***: *"saith the Lord, that [first-person content]"* — the *that* functions as a recitativum marker equivalent to direct-discourse colon. Keep split (like speech-act announcement).
 
@@ -976,6 +976,25 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-04-27 — Breath fully retired (residue cleanup) + doctrinal-weight cases resolved
+
+Stan flagged a GNT sibling-project precedent where a retired diagnostic (breath as fourth criterion) survived as residue in adjacent canon sections. Hostile audit on BofM canon found the same pattern: §1 retired breath as a named diagnostic 2026-04-19 PM (line 249), but Rule 6/Rule 7 short-line exceptions (lines 491, 507) and the recently-codified Parallel-List Uniformity Principle (lines 328, 334) and Rule 15 vocative WHY (line 586) all still cited "breath tests" as parallel gates. Worse: I introduced two of those references on 2026-04-26, a week AFTER the 2026-04-19 retirement, while editing the canon — actively reinjecting a retired diagnostic.
+
+Stan confirmed the broader scope: **breath is not foundational and not pragmatically relevant to any aspect of the method.** The "atomic breath unit" framing in CLAUDE.md, handoffs/01-project-overview.md, handoffs/02-text-editorial.md was never load-bearing in pragmatic application — empirical work showed it never decided a line break alone.
+
+**Cleanup applied this commit:**
+- Canon §1 line 249 expanded to record full retirement scope (breath not foundational, not pragmatically relevant; "atomic breath unit" framing dropped).
+- Active "breath test" residue removed at canon lines 328, 334, 491, 507, 586. Replaced with atomic-thought-only language.
+- Doctrinal-weight residue at line 657 fixed: status of all 3 cases (3 Ne 15:2, 15:3, Moroni 10:19) now noted as resolved (Decision 15 / R28 inheritance / §1 line 162 mechanical answer).
+- CLAUDE.md "Foundational Test" updated: dropped "atomic breath unit" gate; remaining test is "each line must be an atomic thought."
+- CLAUDE.md project description + handoffs/01-project-overview.md + handoffs/02-text-editorial.md project descriptions updated.
+
+**Discipline lesson — carry-forward inertia.** When one canon section retires/withdraws/rescinds something, sweep adjacent sections for residue at the same time. Don't carry the contradiction forward as a "deferred" item across sessions when the deciding move has already been made elsewhere. Hostile audit on a proposed `feedback_carry_forward_inertia.md` memory recommended NOT committing the memory — it would duplicate two existing memories (`feedback_no_fake_dilemmas`, `feedback_application_consistency_vs_rule_coverage`) and fail its own mechanical-discriminator test on borderline cases. **Memory-as-discipline against memory-failure is circular**; the right gate is mechanical: build a `validators/canon_retirement_residue.py` that scans canon for retirement markers + flags active references to retired terms outside retirement contexts. That validator is the next commit.
+
+The novel contribution worth capturing — the discriminator question *"has the deciding move already been made elsewhere?"* for pending-list review — is being appended to `feedback_no_fake_dilemmas.md` rather than spawning a redundant memory file.
+
+Audit-skippable per §7.3: applying the prior 2026-04-19 retirement consistently across §X-§Y residue, plus Stan-direct authorization confirming breath is not foundational. No new scope claim, no new rule, no new closed-list extension — purely cross-reference cleanup applying retirement consistently.
 
 ### 2026-04-26 PM — Rule 17 Emotion-Class Extension RETRACTED (post-hostile-audit)
 

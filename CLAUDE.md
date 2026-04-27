@@ -6,7 +6,7 @@ Read this file completely before doing anything in this repo. It is your orienta
 
 ## What This Project Is
 
-A web-based reading app for the Book of Mormon at **bomreader.com**, designed for ESL readers, children, and newcomers. Text is presented in sense-line (cola) format — each line is a natural breath unit for read-aloud delivery. Archaic words can be toggled to modern equivalents. Multiple study layers (deity references, biblical quotations, geography, Hebrew poetry) can be overlaid. Audio narration per chapter.
+A web-based reading app for the Book of Mormon at **bomreader.com**, designed for ESL readers, children, and newcomers. Text is presented in sense-line (cola) format — each line is an atomic thought for read-aloud delivery. Archaic words can be toggled to modern equivalents. Multiple study layers (deity references, biblical quotations, geography, Hebrew poetry) can be overlaid. Audio narration per chapter.
 
 - **Repo:** github.com/bibleman-stan/readers-bofm (public)
 - **Hosting:** GitHub Pages from main branch
@@ -141,12 +141,13 @@ Do not work on copies of v2-mine files; edit them directly when applying rule-de
 This is the intellectual heart of the project. The full methodology canon lives at `private/01-method/colometry-canon.md` (gitignored). Key principles:
 
 ### The Foundational Test
-**Each line must be an atomic thought, an atomic breath unit, or ideally both.**
+**Each line must be an atomic thought.**
 
 This overrides all other rules. A line that passes this test is valid. A line that fails it needs revision.
 
 - **Atomic thought:** the reader can process this line as a single unit of meaning without needing the next line to resolve it
-- **Atomic breath unit:** the line can be delivered in one breath at natural reading pace
+
+(Earlier "atomic breath unit" framing was retired 2026-04-19 PM and confirmed not pragmatically relevant 2026-04-27; see canon §1 line 249 retirement note.)
 
 ### The Image Test
 Each line should paint a single image or picture in the mind. If a line contains two distinct images, it's a candidate for splitting. If a line contains no complete image, it may need merging with its neighbor.

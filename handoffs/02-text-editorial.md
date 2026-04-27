@@ -29,7 +29,7 @@ Amen.
 ## Editorial Principles (Sense-Line Breaking)
 
 ### Core Rules
-- Lines should be natural breath units for read-aloud delivery
+- Lines should be atomic thoughts for read-aloud delivery
 - Sense-line breaks are **editorial, not mechanical** — the reformatter handles common patterns but Stan hand-edits
 - No indentation. All lines flush left. Wrap indent is CSS-only
 - Parallel structures should be mirrored across lines
