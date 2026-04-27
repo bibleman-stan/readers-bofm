@@ -108,9 +108,18 @@ PURPOSE_RE = re.compile(
     r"|(?:(?:the|a|an|my|thy|his|her|their|our|your|this|that|these|those|much|all|any|no)\s+)?"
     r"(?:[a-zA-Z][\w'-]*(?:\s+(?:and|of|in|to|the|a|an|my|thy|his|her|their|our|your)\s+[a-zA-Z][\w'-]*)*\s+){1,5}?"
     r")"
-    r"(?:might|may|should|would|could|must|shall|will)\s+(?:not\s+)?\b",
+    # Modals: modern + archaic 2nd-person -est forms
+    r"(?:might|may|should|would|could|must|shall|will|wilt|shalt|canst|cans|mayst|mayest|mightest|wouldst|wouldest|shouldst|shouldest|couldst|couldest)\s+(?:not\s+)?\b",
     re.IGNORECASE,
 )
+
+# "That is" appositive resumption — "well did he say that... that is, if..."
+THAT_IS_APPOSITIVE_RE = re.compile(r"^that\s+is\s*,", re.IGNORECASE)
+
+# Resumptive-that after intervening "if"-clause: prior line ends with comma
+# after an if-protasis content; next line opens with "that" resuming the
+# main complement. E.g., "thou hast said, that if ye do X, / that thou wilt Y"
+RESUMPTIVE_AFTER_IF_RE = re.compile(r"\bif\b[^,]+,\s*$", re.IGNORECASE)
 
 # "So X that Y" result clause — "so great was their fear that they fell to the earth"
 # Result clauses are not purpose but mimic the pattern; they're not Rule 17 territory either.
@@ -196,6 +205,18 @@ def is_so_result_clause(prior_line: str) -> bool:
     return bool(SO_RESULT_RE.search(prior_line))
 
 
+def is_that_is_appositive(line: str) -> bool:
+    """Detect 'that is, ...' appositive resumption."""
+    return bool(THAT_IS_APPOSITIVE_RE.match(line.lstrip()))
+
+
+def is_resumptive_after_if(prior_line: str) -> bool:
+    """Detect resumptive-that pattern after an intervening 'if'-clause:
+    prior line ends with an if-protasis; current that-line is the main
+    complement resumption."""
+    return bool(RESUMPTIVE_AFTER_IF_RE.search(prior_line))
+
+
 def is_aictp(line: str) -> bool:
     """Detect AICTP formula."""
     return bool(AICTP_RE.search(line))
@@ -279,6 +300,15 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # Exception 3b: "So X that Y" result clause — not a Rule 17 complement
         elif is_so_result_clause(line):
             reason_to_skip = "so-X-that-Y-result-clause"
+
+        # Exception 3c: "That is, ..." appositive resumption — not Rule 17 ccomp
+        elif is_that_is_appositive(next_line):
+            reason_to_skip = "that-is-appositive"
+
+        # Exception 3d: Resumptive that after if-clause — main complement
+        # was already attached; this is a continuation, not a new ccomp split
+        elif is_resumptive_after_if(line):
+            reason_to_skip = "resumptive-that-after-if-clause"
 
         # Exception 4: Verb is inside a "that which has been [verb]" relative
         # clause — it's not the main governing predicate. E.g., "go contrary
