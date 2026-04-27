@@ -56,7 +56,7 @@ Before implementing a new colometric rule or swap rule:
 4. Compile a ranked recommendation with data BEFORE implementing anything
 5. Only implement the top-ranked approach (or top 2 if complementary)
 
-This prevents building the wrong solution and having to undo it. The "I'll just try it and see" approach has cost real time on this project — see the Wayyehi rule contradiction with Rule 16 that wasn't caught until the four-agent adversarial audit.
+This prevents building the wrong solution and having to undo it. The "I'll just try it and see" approach has cost real time on this project — see the AICTP/Rule 16 contradiction that wasn't caught until the four-agent adversarial audit.
 
 ### A4. When Running Adversarial Agents
 
@@ -92,7 +92,7 @@ After ANY significant change to merge/split rules, dispatch parallel adversarial
 
 3. **Benchmark regression adversary** — re-runs known-good test cases to check for regressions. "Check that 1 Nephi 8, Mosiah 3, Alma 5, Alma 32, Moroni 7 still look right."
 
-This pattern catches HIGH severity issues (rule interactions, sentence boundary violations, over-splitting) that code review alone misses. Established as a mandatory practice after the four-agent adversarial audit caught the Wayyehi/Rule 16 contradiction, the "know" obligatory complement gap, and 38 misclassified "insomuch that" instances.
+This pattern catches HIGH severity issues (rule interactions, sentence boundary violations, over-splitting) that code review alone misses. Established as a mandatory practice after the four-agent adversarial audit caught the AICTP/Rule 16 contradiction, the "know" obligatory complement gap, and 38 misclassified "insomuch that" instances.
 
 **The pattern: change → rebuild → dispatch adversaries → fix what they find → commit.** Not change → commit → discover issues later.
 
@@ -287,7 +287,7 @@ Two operational insights from the Alma 17-22 sweep session:
 
 **1. Length caps are a category error for atomic-thought scanning.**
 
-Previous scanners used hard line-length caps (140, 200 chars) to avoid producing "too long" merges. Stan's correction: *"line/character limit should not be arbitrary right, if something's not an atomic thought, it's not."* Later refined: *"breath unit should give us pause and ask if there IS another way to consider the text because people generally don't write/speak more than a coherent breath unit."*
+Previous scanners used hard line-length caps (140, 200 chars) to avoid producing "too long" merges. Stan's correction: *"line/character limit should not be arbitrary right, if something's not an atomic thought, it's not."* (An earlier follow-up framing referenced "breath unit" as a sanity gate; that framing was retired 2026-04-19 PM and confirmed not pragmatically relevant 2026-04-27. Atomic-thought is the only criterion that survived.)
 
 Protocol: **drop length caps from merge scanners.** The atomic-thought test is the only criterion. If a correctly-merged atomic thought happens to be long, that's information — either it genuinely is one thought, or the original text is doing something unusual at that spot that deserves a closer look. Length should inform Category B/C flagging, not be a mechanical gate.
 

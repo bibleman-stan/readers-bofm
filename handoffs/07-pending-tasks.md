@@ -177,7 +177,7 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 - "Insomuch that" degree/result rule: 44 merges
 - Semantic grouping principle: 36 compound list fixes + 17 semantic regrouping
 - Date/colophon formulas: 34 merges
-- Wayyehi rule revised to FEF framework: 7 AISCTP fixes
+- AICTP rule revised to FEF framework: 7 AISCTP fixes
 - Rule 25 eliminated: 13 merges
 - 28 stuck-word bugs fixed
 - 28 Category A audit fixes (fragments, participials, witness+that)

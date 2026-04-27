@@ -36,7 +36,7 @@ Amen.
 - Don't over-split short phrases; don't under-split long compound lines
 
 ### Specific Rules Established
-- **Wayyehi rule:** "And it came to pass that" stays on one line as a fixed formula — never break it
+- **AICTP rule:** "And it came to pass that" stays on one line as a fixed formula — never break it
 - **"Expedient that":** treated as single idiom, don't break at "that"
 - **Rhetorical address:** "And now, O king," kept as one unit
 - **"And now, O king, / what great evil hast thou done"** — the address formula stays together, the question breaks after
@@ -170,7 +170,7 @@ Utility script for automated sense-line rebalancing:
 
 ---
 ### Update — 2026-03-22–24
-- 2026-03-22: FEF consistency pass continued — AICTP merge candidates fixed across 1 Ne (7), 2 Ne (7), Jacob (3), Alma-Moroni (17). Full corpus now consistent on wayyehi rule.
+- 2026-03-22: FEF consistency pass continued — AICTP merge candidates fixed across 1 Ne (7), 2 Ne (7), Jacob (3), Alma-Moroni (17). Full corpus now consistent on AICTP rule.
 - 2026-03-23: Anaphoric clause audit — Rule 19 refined (expletive "it" in cleft constructions is cataphoric, not anaphoric; result clauses with new predication are cataphoric). 3 genuine violations fixed (Hel 14:27, 3 Ne 11:30, 3 Ne 23:12).
 - 2026-03-23: Escalatory appositive pass — 9 breaks applied across Mosiah (3:19, 4:6, 5:15, 15:5, 18:2), 2 Nephi (9:19, 9:26), Mormon (7:7), Moroni (9:25). Rule 20 (polysyndeton + repeated possessive = stack) codified.
 - 2026-03-23: Punctuation-dependency audit — 11 cases found where comma was sole basis for break. 7 manner adverbials merged back; 3 source/authority phrases correctly restored. Rule 21 (manner vs source/authority for "according to") codified. Principle established: punctuation must not have deterministic force.

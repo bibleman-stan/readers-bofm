@@ -11,11 +11,6 @@ A unit of meaning that a reader can process without needing the next line to res
 - **Colometric use:** Every line must pass this test or be merged with its neighbor.
 - **Example:** "And he will take upon him death," — complete thought. vs. "And he will take upon him" — incomplete without its object.
 
-### Atomic Breath Unit
-A line that can be delivered in one natural breath at reading pace. The secondary test after the atomic thought test.
-- **Colometric use:** When the atomic thought test is ambiguous, the breath test can decide.
-- **Example:** "through the blood of the Lamb." — one breath. Not in tension with being an atomic thought.
-
 ### Main Clause
 The core subject + verb construction that carries the primary assertion of a sentence. Other clauses depend on it.
 - **Colometric use:** FEF frames suspend resolution until the main clause arrives. The main verb typically begins a new line after the frame completes.
@@ -89,7 +84,7 @@ A structurally irreducible opening construction that suspends resolution until a
 - **Example:** "And now it came to pass that after I, Nephi, having heard all the words of my father," — the entire line is an irreducible FEF frame.
 
 ### AICTP (And It Came To Pass)
-The most frequent FEF in the BofM — the wayyehi formula. Functions as a narrative frame signaling "something is about to happen." Always anticipatory.
+The most frequent FEF in the BofM. Functions as a narrative frame signaling "something is about to happen." Always anticipatory.
 - **Colometric use:** "And it came to pass that" stays on one line (Rule 1). When followed by a temporal clause, the temporal reference completes on the same line; the main verb begins the next.
 - **Example:** "And it came to pass that in the commencement of the seventeenth year of the reign of the judges, / there was continual peace."
 
