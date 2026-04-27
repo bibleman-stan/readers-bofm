@@ -1,0 +1,648 @@
+{
+  "book": "mosiah",
+  "bookName": "Mosiah",
+  "chapter": 28,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 302.111,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.598,
+      "type": "line",
+      "text": "Now it came to pass that after the sons of Mosiah had done all these things,",
+      "verse": "28:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.778,
+      "end": 9.608,
+      "type": "line",
+      "text": "they took a small number with them and returned to their father, the king,",
+      "verse": "28:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.788,
+      "end": 19.633,
+      "type": "line",
+      "text": "and desired of him that he would grant unto them that they might, with these whom they had selected, go up to the land of Nephi",
+      "verse": "28:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 19.813,
+      "end": 22.924,
+      "type": "line",
+      "text": "that they might preach the things which they had heard,",
+      "verse": "28:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 23.104,
+      "end": 28.491,
+      "type": "line",
+      "text": "and that they might impart the word of God to their brethren, the Lamanites\u2014",
+      "verse": "28:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 29.171,
+      "end": 33.304,
+      "type": "line",
+      "text": "That perhaps they might bring them to the knowledge of the Lord their God,",
+      "verse": "28:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 33.484,
+      "end": 37.013,
+      "type": "line",
+      "text": "and convince them of the iniquity of their fathers;",
+      "verse": "28:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 37.193,
+      "end": 42.673,
+      "type": "line",
+      "text": "and that perhaps they might cure them of their hatred towards the Nephites,",
+      "verse": "28:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 42.853,
+      "end": 46.708,
+      "type": "line",
+      "text": "that they might also be brought to rejoice in the Lord their God,",
+      "verse": "28:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 46.888,
+      "end": 50.139,
+      "type": "line",
+      "text": "that they might become friendly to one another,",
+      "verse": "28:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 50.319,
+      "end": 53.198,
+      "type": "line",
+      "text": "and that there should be no more contentions",
+      "verse": "28:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 53.378,
+      "end": 56.536,
+      "type": "line",
+      "text": "in all the land which the Lord their God had given them.",
+      "verse": "28:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 57.216,
+      "end": 61.814,
+      "type": "line",
+      "text": "Now they were desirous that salvation should be declared to every creature,",
+      "verse": "28:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 61.994,
+      "end": 65.431,
+      "type": "line",
+      "text": "for they could not bear that any human soul should perish;",
+      "verse": "28:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 65.611,
+      "end": 70.069,
+      "type": "line",
+      "text": "yea, even the very thoughts that any soul should endure endless torment",
+      "verse": "28:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 70.249,
+      "end": 72.71,
+      "type": "line",
+      "text": "did cause them to quake and tremble.",
+      "verse": "28:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 73.39,
+      "end": 76.501,
+      "type": "line",
+      "text": "And thus did the Spirit of the Lord work upon them,",
+      "verse": "28:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 76.681,
+      "end": 79.421,
+      "type": "line",
+      "text": "for they were the very vilest of sinners.",
+      "verse": "28:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 79.601,
+      "end": 82.991,
+      "type": "line",
+      "text": "And the Lord saw fit in his infinite mercy to spare them;",
+      "verse": "28:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 83.171,
+      "end": 88.651,
+      "type": "line",
+      "text": "nevertheless they suffered much anguish of soul because of their iniquities,",
+      "verse": "28:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 88.831,
+      "end": 92.686,
+      "type": "line",
+      "text": "suffering much and fearing that they should be cast off forever.",
+      "verse": "28:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 93.366,
+      "end": 98.103,
+      "type": "line",
+      "text": "And it came to pass that they did plead with their father many days",
+      "verse": "28:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 98.283,
+      "end": 101.069,
+      "type": "line",
+      "text": "that they might go up to the land of Nephi.",
+      "verse": "28:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 101.749,
+      "end": 104.582,
+      "type": "line",
+      "text": "And king Mosiah went and inquired of the Lord",
+      "verse": "28:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 104.762,
+      "end": 109.081,
+      "type": "line",
+      "text": "if he should let his sons go up among the Lamanites to preach the word.",
+      "verse": "28:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 109.761,
+      "end": 111.851,
+      "type": "line",
+      "text": "And the Lord said unto Mosiah:",
+      "verse": "28:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 112.031,
+      "end": 113.424,
+      "type": "line",
+      "text": "Let them go up,",
+      "verse": "28:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 113.604,
+      "end": 116.251,
+      "type": "line",
+      "text": "for many shall believe on their words,",
+      "verse": "28:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 116.431,
+      "end": 118.753,
+      "type": "line",
+      "text": "and they shall have eternal life;",
+      "verse": "28:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 118.933,
+      "end": 123.066,
+      "type": "line",
+      "text": "and I will deliver thy sons out of the hands of the Lamanites.",
+      "verse": "28:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 123.746,
+      "end": 129.226,
+      "type": "line",
+      "text": "And it came to pass that Mosiah granted that they might go and do according to their request.",
+      "verse": "28:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 129.906,
+      "end": 132.646,
+      "type": "line",
+      "text": "And they took their journey into the wilderness",
+      "verse": "28:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 132.826,
+      "end": 135.845,
+      "type": "line",
+      "text": "to go up to preach the word among the Lamanites;",
+      "verse": "28:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 136.025,
+      "end": 139.462,
+      "type": "line",
+      "text": "and I shall give an account of their proceedings hereafter.",
+      "verse": "28:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 140.142,
+      "end": 143.579,
+      "type": "line",
+      "text": "Now king Mosiah had no one to confer the kingdom upon,",
+      "verse": "28:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 143.759,
+      "end": 147.799,
+      "type": "line",
+      "text": "for there was not any of his sons who would accept of the kingdom.",
+      "verse": "28:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 148.479,
+      "end": 154.098,
+      "type": "line",
+      "text": "Therefore he took the records which were engraven on the plates of brass,",
+      "verse": "28:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 154.278,
+      "end": 156.182,
+      "type": "line",
+      "text": "and also the plates of Nephi,",
+      "verse": "28:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 156.362,
+      "end": 161.052,
+      "type": "line",
+      "text": "and all the things which he had kept and preserved according to the commandments of God,",
+      "verse": "28:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 161.232,
+      "end": 164.576,
+      "type": "line",
+      "text": "after having translated and caused to be written",
+      "verse": "28:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 164.756,
+      "end": 167.96,
+      "type": "line",
+      "text": "the records which were on the plates of gold",
+      "verse": "28:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 168.14,
+      "end": 170.834,
+      "type": "line",
+      "text": "which had been found by the people of Limhi,",
+      "verse": "28:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 171.014,
+      "end": 174.172,
+      "type": "line",
+      "text": "which were delivered to him by the hand of Limhi;",
+      "verse": "28:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 174.852,
+      "end": 178.753,
+      "type": "line",
+      "text": "And this he did because of the great anxiety of his people;",
+      "verse": "28:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 178.933,
+      "end": 181.394,
+      "type": "line",
+      "text": "for they were desirous beyond measure",
+      "verse": "28:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 181.574,
+      "end": 184.825,
+      "type": "line",
+      "text": "to know concerning those people who had been destroyed.",
+      "verse": "28:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 185.505,
+      "end": 189.267,
+      "type": "line",
+      "text": "And now he translated them by the means of those two stones",
+      "verse": "28:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 189.447,
+      "end": 193.162,
+      "type": "line",
+      "text": "which were fastened into the two rims of a bow.",
+      "verse": "28:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 193.842,
+      "end": 196.489,
+      "type": "line",
+      "text": "Now these things were prepared from the beginning,",
+      "verse": "28:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 196.669,
+      "end": 202.242,
+      "type": "line",
+      "text": "and were handed down from generation to generation, for the purpose of interpreting languages;",
+      "verse": "28:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 202.922,
+      "end": 206.823,
+      "type": "line",
+      "text": "And they have been kept and preserved by the hand of the Lord,",
+      "verse": "28:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 207.003,
+      "end": 211.275,
+      "type": "line",
+      "text": "that he should discover to every creature who should possess the land",
+      "verse": "28:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 211.455,
+      "end": 214.845,
+      "type": "line",
+      "text": "the iniquities and abominations of his people;",
+      "verse": "28:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 215.525,
+      "end": 220.448,
+      "type": "line",
+      "text": "And whosoever has these things is called seer, after the manner of old times.",
+      "verse": "28:16",
+      "lineIndex": 56
+    },
+    {
+      "start": 221.128,
+      "end": 224.657,
+      "type": "line",
+      "text": "Now after Mosiah had finished translating these records,",
+      "verse": "28:17",
+      "lineIndex": 57
+    },
+    {
+      "start": 224.837,
+      "end": 228.738,
+      "type": "line",
+      "text": "behold, it gave an account of the people who were destroyed,",
+      "verse": "28:17",
+      "lineIndex": 58
+    },
+    {
+      "start": 228.918,
+      "end": 231.704,
+      "type": "line",
+      "text": "from the time that they were destroyed",
+      "verse": "28:17",
+      "lineIndex": 59
+    },
+    {
+      "start": 231.884,
+      "end": 237.643,
+      "type": "line",
+      "text": "back to the building of the great tower, at the time the Lord confounded the language of the people",
+      "verse": "28:17",
+      "lineIndex": 60
+    },
+    {
+      "start": 237.823,
+      "end": 241.306,
+      "type": "line",
+      "text": "and they were scattered abroad upon the face of all the earth,",
+      "verse": "28:17",
+      "lineIndex": 61
+    },
+    {
+      "start": 241.486,
+      "end": 245.108,
+      "type": "line",
+      "text": "yea, and even from that time back until the creation of Adam.",
+      "verse": "28:17",
+      "lineIndex": 62
+    },
+    {
+      "start": 245.788,
+      "end": 250.014,
+      "type": "line",
+      "text": "Now this account did cause the people of Mosiah to mourn exceedingly,",
+      "verse": "28:18",
+      "lineIndex": 63
+    },
+    {
+      "start": 250.194,
+      "end": 252.191,
+      "type": "line",
+      "text": "yea, they were filled with sorrow;",
+      "verse": "28:18",
+      "lineIndex": 64
+    },
+    {
+      "start": 252.371,
+      "end": 254.925,
+      "type": "line",
+      "text": "nevertheless it gave them much knowledge,",
+      "verse": "28:18",
+      "lineIndex": 65
+    },
+    {
+      "start": 255.105,
+      "end": 257.148,
+      "type": "line",
+      "text": "in the which they did rejoice.",
+      "verse": "28:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 257.828,
+      "end": 260.522,
+      "type": "line",
+      "text": "And this account shall be written hereafter;",
+      "verse": "28:19",
+      "lineIndex": 67
+    },
+    {
+      "start": 260.702,
+      "end": 266.414,
+      "type": "line",
+      "text": "for behold, it is expedient that all people should know the things which are written in this account.",
+      "verse": "28:19",
+      "lineIndex": 68
+    },
+    {
+      "start": 267.094,
+      "end": 269.602,
+      "type": "line",
+      "text": "And now, as I said unto you",
+      "verse": "28:20",
+      "lineIndex": 70
+    },
+    {
+      "start": 269.782,
+      "end": 272.429,
+      "type": "line",
+      "text": "that after king Mosiah had done these things,",
+      "verse": "28:20",
+      "lineIndex": 71
+    },
+    {
+      "start": 272.609,
+      "end": 274.652,
+      "type": "line",
+      "text": "he took the plates of brass,",
+      "verse": "28:20",
+      "lineIndex": 72
+    },
+    {
+      "start": 274.832,
+      "end": 277.061,
+      "type": "line",
+      "text": "and all the things which he had kept,",
+      "verse": "28:20",
+      "lineIndex": 73
+    },
+    {
+      "start": 277.241,
+      "end": 279.47,
+      "type": "line",
+      "text": "and conferred them upon Alma,",
+      "verse": "28:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 279.65,
+      "end": 281.647,
+      "type": "line",
+      "text": "who was the son of Alma;",
+      "verse": "28:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 281.827,
+      "end": 285.078,
+      "type": "line",
+      "text": "yea, all the records, and also the interpreters,",
+      "verse": "28:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 285.258,
+      "end": 287.301,
+      "type": "line",
+      "text": "and conferred them upon him,",
+      "verse": "28:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 287.481,
+      "end": 290.825,
+      "type": "line",
+      "text": "and commanded him that he should keep and preserve them,",
+      "verse": "28:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 291.005,
+      "end": 293.559,
+      "type": "line",
+      "text": "and also keep a record of the people,",
+      "verse": "28:20",
+      "lineIndex": 79
+    },
+    {
+      "start": 293.739,
+      "end": 296.804,
+      "type": "line",
+      "text": "handing them down from one generation to another,",
+      "verse": "28:20",
+      "lineIndex": 80
+    },
+    {
+      "start": 296.984,
+      "end": 301.442,
+      "type": "line",
+      "text": "even as they had been handed down from the time that Lehi left Jerusalem.",
+      "verse": "28:20",
+      "lineIndex": 81
+    }
+  ]
+}
