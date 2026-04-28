@@ -187,18 +187,27 @@ const NARRATION = (() => {
    * currently looking at, derived from scroll position via data-line-index
    * attributes — no dependency on hash, .chapter-active, or any other
    * state that may lag scroll.
+   *
+   * Implementation notes:
+   * - offsetParent === null catches every form of "not laid out": display:none
+   *   on the element OR any ancestor, detached from document, etc. The earlier
+   *   `book.style.display === 'none'` check only saw direct inline styles and
+   *   missed books hidden via parent or via CSS class.
+   * - We require rect.top >= topbar (with tiny 5px tolerance for rounding) so
+   *   the final line of the previous book — which sits just above the topbar
+   *   after a scroll-to-chapter — never wins over the new chapter's first line.
    */
   function getChapterAtViewport() {
     const topbarHeight = _topbarHeight();
     let bestEl = null;
     let bestDist = Infinity;
     document.querySelectorAll('.book-content [data-line-index]').forEach(el => {
-      // Skip elements inside hidden books
-      const book = el.closest('.book-content');
-      if (book && book.style.display === 'none') return;
+      if (el.offsetParent === null) return;
       const rect = el.getBoundingClientRect();
+      if (rect.height === 0) return;
       const dist = rect.top - topbarHeight;
-      if (dist > -20 && dist < bestDist) {
+      if (dist < -5) return;
+      if (dist < bestDist) {
         bestDist = dist;
         bestEl = el;
       }
@@ -225,9 +234,12 @@ const NARRATION = (() => {
     let bestIdx = -1;
     let bestDist = Infinity;
     chapterDiv.querySelectorAll('[data-line-index]').forEach(el => {
+      if (el.offsetParent === null) return;
       const rect = el.getBoundingClientRect();
+      if (rect.height === 0) return;
       const dist = rect.top - topbarHeight;
-      if (dist > -20 && dist < bestDist) {
+      if (dist < -5) return;
+      if (dist < bestDist) {
         bestDist = dist;
         bestIdx = parseInt(el.getAttribute('data-line-index'), 10);
       }
