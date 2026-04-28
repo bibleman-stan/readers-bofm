@@ -3769,14 +3769,13 @@
       // Detect book-boundary cross.
       var bookChanged = (activeBookId !== currentBook);
       if (bookChanged) {
-        // Stop narration on cross — narration tracks lineIndex within a chapter
-        // and a book change would desync it. v1 stops at boundary; user can
-        // restart narration on the new book.
-        try {
-          if (typeof NARRATION !== 'undefined' && NARRATION.isPlaying) {
-            NARRATION.stop();
-          }
-        } catch (e) { /* narration may not be loaded yet */ }
+        // Note: narration is no longer stopped on book cross. Narration is
+        // anchored to its own manifest.book/chapter and is independent of
+        // page scroll position; the previous stop was a stale guard from
+        // when findLineElement walked the .chapter-active DOM. Letting
+        // narration keep playing means scroll-driven endless-scroll loads
+        // (e.g., scrollIntoView dragging in the previous book) don't
+        // interrupt audio.
         currentBook = activeBookId;
         var newMeta = bookMeta[activeBookId];
         if (newMeta) {
