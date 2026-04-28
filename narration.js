@@ -395,24 +395,27 @@ const NARRATION = (() => {
   }
 
   /**
-   * Determine the next chapter after the current one.
-   * Returns { bookId, chapter } or null if at the very end (Moroni 10).
+   * Pure helper: given a {bookId, chapter}, return the next chapter
+   * (next chapter in same book, or first chapter of next book), or
+   * null at the end of the BoM. No DOM or URL reads.
    */
-  function getNextChapter() {
-    const ch = getCurrentChapter();
+  function nextChapterAfter(ch) {
     if (!ch) return null;
-
-    // Try next chapter in the same book
     const bookMeta = window.bookMeta;
     if (bookMeta && bookMeta[ch.bookId] && ch.chapter < bookMeta[ch.bookId].chapters) {
       return { bookId: ch.bookId, chapter: ch.chapter + 1 };
     }
-
-    // Move to first chapter of the next book
     const idx = BOOK_ORDER.indexOf(ch.bookId);
-    if (idx < 0 || idx >= BOOK_ORDER.length - 1) return null; // last book
-    const nextBook = BOOK_ORDER[idx + 1];
-    return { bookId: nextBook, chapter: 1 };
+    if (idx < 0 || idx >= BOOK_ORDER.length - 1) return null;
+    return { bookId: BOOK_ORDER[idx + 1], chapter: 1 };
+  }
+
+  /**
+   * Determine the next chapter after the current one (via URL/DOM).
+   * Returns { bookId, chapter } or null if at the very end (Moroni 10).
+   */
+  function getNextChapter() {
+    return nextChapterAfter(getCurrentChapter());
   }
 
   /**
@@ -478,10 +481,15 @@ const NARRATION = (() => {
   /**
    * Auto-advance to the next chapter and continue playing.
    * Called silently when the current chapter's audio ends.
+   * "Current" is taken from the manifest (the chapter that just finished),
+   * not from URL hash or .chapter-active — those reflect scroll position
+   * and may have drifted while audio was playing.
    */
   async function advanceToNextChapter() {
-    const cur = getCurrentChapter();
-    const next = getNextChapter();
+    const cur = manifest
+      ? { bookId: manifest.book, chapter: manifest.chapter }
+      : getCurrentChapter();
+    const next = nextChapterAfter(cur);
     if (!next) {
       // End of the Book of Mormon — stop gracefully
       updatePlayerState('stopped');
