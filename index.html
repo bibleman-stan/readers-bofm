@@ -166,6 +166,31 @@
     background: rgba(124,175,194,0.12);
   }
 
+  #listen-pill {
+    padding: 3px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--text-faint);
+    background: none;
+    color: var(--text-faint);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.62em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.02em;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: 4px;
+  }
+  #listen-pill:hover {
+    color: var(--text-dim);
+    border-color: var(--text-dim);
+  }
+  #listen-pill.active-listen {
+    color: #7cafc2;
+    border-color: #7cafc2;
+    background: rgba(124,175,194,0.12);
+  }
+
   .topbar-home {
     font-size: 0.78em;
     color: var(--text-faint);
@@ -2145,9 +2170,10 @@
     <span class="topbar-book" id="topbar-book">1 Nephi</span>
     <span class="topbar-chap" id="topbar-chap">1</span>
   </div>
-  <div class="topbar-home" id="topbar-home" style="flex:1; text-align:center;">bomreader.com</div>
+  <div class="topbar-home" id="topbar-home" style="flex:1; text-align:center;"></div>
   <div style="flex:1; display:flex; align-items:center; justify-content:flex-end;" class="topbar-icons">
     <button id="aid-pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
+    <button id="listen-pill" onclick="toggleListenPill()" aria-label="Listen" title="Toggle audio narration">Listen</button>
     <button class="topbar-icon" onclick="openSearch()" aria-label="Search" title="Search">
       <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
     </button>
@@ -2722,6 +2748,26 @@
     var aidToggle = document.getElementById('aid-toggle');
     if (aidToggle) aidToggle.checked = aidOn;
   };
+
+  // Listen pill — mirrors the bottom-sheet "Listen" toggle. Clicking the pill
+  // flips the checkbox and fires its change event so narration.js's existing
+  // handler runs (showPlayer / hidePlayer). The pill's active-listen class is
+  // kept in sync via a change listener so toggling from the bottom sheet
+  // updates the pill state too.
+  window.toggleListenPill = function() {
+    var listenToggle = document.getElementById('listen-toggle');
+    if (!listenToggle) return;
+    listenToggle.checked = !listenToggle.checked;
+    listenToggle.dispatchEvent(new Event('change'));
+  };
+  document.addEventListener('DOMContentLoaded', function() {
+    var listenToggle = document.getElementById('listen-toggle');
+    var listenPill = document.getElementById('listen-pill');
+    if (!listenToggle || !listenPill) return;
+    listenToggle.addEventListener('change', function() {
+      listenPill.classList.toggle('active-listen', listenToggle.checked);
+    });
+  });
 
   // ---- TEXT MODE TOGGLE (cycles: verses → lines → parallels → verses) ----
   // textMode: 0=verses, 1=lines, 2=parallels
@@ -3352,10 +3398,13 @@
             attempts++;
             if (scrollToVerse(bk, ch, verse) || attempts >= 40) {
               clearInterval(checker);
-              window._pendingVerseScroll = null;
               // Update hash to include verse
               lastHashWeSet = bk + '-' + ch + '-' + verse;
               window.location.hash = lastHashWeSet;
+              // Delay clearing so onScrollUpdateChapter stays gated until the
+              // smooth scroll has settled (otherwise the handler overwrites
+              // the chapter mid-animation).
+              setTimeout(function() { window._pendingVerseScroll = null; }, 800);
             }
           }, 100);
         };
@@ -3625,10 +3674,12 @@
           attempts++;
           if (scrollToVerse(bookId, chapter, verse) || attempts >= 40) {
             clearInterval(checker);
-            window._pendingVerseScroll = null;
             // Restore the full hash with verse
             lastHashWeSet = bookId + '-' + chapter + '-' + verse;
             window.location.hash = lastHashWeSet;
+            // Delay clearing so onScrollUpdateChapter stays gated until the
+            // smooth scroll has settled.
+            setTimeout(function() { window._pendingVerseScroll = null; }, 800);
           }
         }, 100);
       } else {
@@ -3637,7 +3688,10 @@
     }
   }
 
-  // scrollToVerse used by both search and hash routing
+  // scrollToVerse used by both search and hash routing.
+  // Lands the verse just below the 52px topbar with breathing room (target ~72px
+  // from top), rather than centered. block:'center' produced "lands close by,
+  // not directly on the verse" because the verse ended up mid-screen.
   function scrollToVerse(bookId, chapter, verse) {
     var verseRef = chapter + ':' + verse;
     var allVerses = document.querySelectorAll('#book-' + bookId + ' .verse-num');
@@ -3645,7 +3699,9 @@
       if (allVerses[i].textContent.trim() === verseRef) {
         var verseDiv = allVerses[i].closest('.verse');
         if (verseDiv) {
-          verseDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          var rect = verseDiv.getBoundingClientRect();
+          var y = rect.top + window.scrollY - 72;
+          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
           verseDiv.style.background = 'rgba(124,175,194,0.15)';
           setTimeout(function() { verseDiv.style.background = ''; }, 2000);
         }
@@ -3739,6 +3795,13 @@
   // narration if the user scrolls across a book boundary while playing.
   var _scrollTicking = false;
   function onScrollUpdateChapter() {
+    // Skip during programmatic verse navigation. The smooth-scroll animation
+    // triggered by scrollToVerse fires scroll events that would otherwise let
+    // this handler overwrite lastHashWeSet/currentChapterMap mid-animation,
+    // which surfaced as "Jacob 4:1 lands on Jacob 1:1" — the handler latched
+    // onto whichever chapter was at the topbar reference line as the smooth
+    // scroll passed through it.
+    if (window._pendingVerseScroll) return;
     if (_scrollTicking) return;
     _scrollTicking = true;
     requestAnimationFrame(function() {
@@ -4861,7 +4924,9 @@ function flushAndReload() {
       if (allVerses[i].textContent.trim() === verseRef) {
         var verseDiv = allVerses[i].closest('.verse');
         if (verseDiv) {
-          verseDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          var rect = verseDiv.getBoundingClientRect();
+          var y = rect.top + window.scrollY - 72;
+          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
           verseDiv.style.transition = 'background 0.3s';
           verseDiv.style.background = 'rgba(124,175,194,0.15)';
           setTimeout(function() { verseDiv.style.background = ''; }, 2000);
@@ -4928,9 +4993,11 @@ function flushAndReload() {
         attempts++;
         if (scrollToVerse(bookId, chapter, verse) || attempts >= maxAttempts) {
           clearInterval(checker);
-          window._pendingVerseScroll = null;
           // Show return button after navigation completes
           showReturnButton();
+          // Delay clearing so onScrollUpdateChapter stays gated until the
+          // smooth scroll has settled.
+          setTimeout(function() { window._pendingVerseScroll = null; }, 800);
         }
       }, 100);
     }
