@@ -2161,14 +2161,14 @@
 
 <!-- Top bar -->
 <div class="topbar" id="topbar">
-  <div style="flex:1; display:flex; align-items:center;">
+  <div style="flex:1; display:flex; align-items:center; gap:8px; min-width:0;">
     <button class="topbar-icon" id="topbar-hamburger" onclick="toggleNavPanel()" aria-label="Navigation" title="Navigation" style="display:none;">
       <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
     </button>
-  </div>
-  <div class="topbar-loc" id="topbar-loc" style="display:none; cursor:default; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
-    <span class="topbar-book" id="topbar-book">1 Nephi</span>
-    <span class="topbar-chap" id="topbar-chap">1</span>
+    <div class="topbar-loc" id="topbar-loc" style="display:none; cursor:default; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0;">
+      <span class="topbar-book" id="topbar-book">1 Nephi</span>
+      <span class="topbar-chap" id="topbar-chap">1</span>
+    </div>
   </div>
   <div class="topbar-home" id="topbar-home" style="flex:1; text-align:center;"></div>
   <div style="flex:1; display:flex; align-items:center; justify-content:flex-end;" class="topbar-icons">
