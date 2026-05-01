@@ -37,7 +37,7 @@ Shown when no hash (initial visit):
 Full-page feature guide. Shows when clicking header link. Toolbar stays functional.
 
 ### Text Mode
-Sense-lines are the ONLY mode for the Reading Edition. `applyTextMode(1)` forced on load. Three-layer data (prose, sense lines, Parry parallels) still exists in HTML for future Studying Edition.
+ATU presentation (one ATU per rendered line) is the ONLY mode for the Reading Edition. `applyTextMode(1)` forced on load. Three-layer data (prose, ATUs, Parry parallels) still exists in HTML for future Studying Edition.
 
 ## Navigation
 

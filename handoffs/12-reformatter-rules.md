@@ -1,8 +1,8 @@
 # 12 — Reformatter Rules & Calibration Data
 
-This document preserves the detailed mechanical rule specifications, calibration data, and known limitations of the sense-line reformatter pipeline. Originally developed during the `senseline_reformat_v8.py` era and the earlier `assemble_all.py` build system.
+This document preserves the detailed mechanical rule specifications, calibration data, and known limitations of the ATU/line reformatter pipeline. Originally developed during the `senseline_reformat_v8.py` era (filename retains the historical "senseline" term) and the earlier `assemble_all.py` build system.
 
-These rules document the *mechanical* layer of sense-line processing. The *editorial* layer — human judgment about breath, meaning, and rhetoric — is documented in `private/01-method/colometry-canon.md`.
+These rules document the *mechanical* layer of ATU/line processing. The *editorial* layer — human judgment about meaning and rhetoric — is documented in `private/01-method/colometry-canon.md`.
 
 ---
 

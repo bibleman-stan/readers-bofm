@@ -1,7 +1,7 @@
 # 01 — Project Overview & Architecture
 
 ## What This Is
-A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL readers, children, and newcomers. Text is presented in sense-line (cola) format — each line is an atomic thought for read-aloud delivery. Archaic words can be toggled to modern equivalents. Multiple study layers (deity references, biblical quotations, geography, etc.) can be overlaid. Audio narration per chapter.
+A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL readers, children, and newcomers. Text is presented as atomic thought units (ATUs) — each line on the page renders one ATU, a span the reader can take in as a single complete unit of meaning. Archaic words can be toggled to modern equivalents. Multiple study layers (deity references, biblical quotations, geography, etc.) can be overlaid. Audio narration per chapter.
 
 ## Core Details
 - **Site:** bomreader.com
@@ -19,8 +19,8 @@ A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL
 | `books/index.html` | Alternate book reading view with its own separate inline CSS |
 | `narration.js` | Audio playback module (~1050 lines, IIFE on window.NARRATION) |
 | `sw.js` | Service worker for offline caching |
-| `build_book.py` | Converts sense-line .txt sources → HTML book fragments (~1090 lines) |
-| `scripts/senseline_reformat_v8.py` | 19-pass automated sense-line reformatter (~32K) |
+| `build_book.py` | Converts ATU-formatted .txt sources (one ATU per line) → HTML book fragments (~1090 lines) |
+| `scripts/senseline_reformat_v8.py` | 19-pass automated ATU/line reformatter (~32K; filename retains historical "senseline") |
 | `readalong.html` | Standalone beta Read Along mic/speech tool (extracted from index.html) |
 | `books/*.html` | Generated HTML fragments, one per book (15 total, loaded via fetch) |
 | `data/` | JSON data indexes for all layers (intertext, geography, pericopes, parallels, KJV diff) |
@@ -30,7 +30,7 @@ A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL
 - **`books/index.html`** — An older/alternate reading view with its own CSS. Both are live and both need CSS changes applied when styling is updated. They share the same `books/*.html` fragments.
 
 ## How Content Gets Built
-1. Sense-line source files in `data/text-files/v2-mine/` (Stan's hand-edited)
+1. ATU-format source files in `data/text-files/v2-mine/` (Stan's hand-edited; one ATU per line)
 2. Optionally: `scripts/senseline_reformat_v8.py` applies 19 mechanical passes (for new/revised books)
 3. `build_book.py` applies archaic word swaps, injects intertext/geo/pericope layers, wraps punctuation, generates HTML
 4. Output: `books/{BOOKID}.html` as fragments

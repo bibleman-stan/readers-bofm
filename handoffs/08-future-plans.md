@@ -12,8 +12,8 @@ Raw data available in `data/spa/` — official LDS Spanish translation of entire
 ### Status: Not actively in progress. Filed as major future project.
 
 ## MAJOR: Studying Edition
-The current Reading Edition forces sense-line mode only. A future "Studying Edition" would restore:
-- Three-layer text toggle (prose, sense lines, Parry parallels)
+The current Reading Edition forces ATU presentation mode only. A future "Studying Edition" would restore:
+- Three-layer text toggle (prose, ATUs, Parry parallels)
 - Expanded toolbar with layer controls always visible
 - More scholarly features
 

@@ -1,6 +1,6 @@
 # 13 — Preliminary Linguistic & Colometric Data
 
-This document presents quantified metrics from the Book of Mormon sense-line corpus after the full mechanical scrub (178 fixes, March 2026). All data computed from the canonical v2 source files. Per-chapter data is in `data/colometric_metrics.csv`; the analysis script is `scripts/colometric_analysis.py`.
+This document presents quantified metrics from the Book of Mormon ATU corpus after the full mechanical scrub (178 fixes, March 2026). All data computed from the canonical v2 source files. Per-chapter data is in `data/colometric_metrics.csv`; the analysis script is `scripts/colometric_analysis.py`.
 
 ---
 

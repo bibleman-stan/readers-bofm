@@ -30,13 +30,13 @@ This canon serves two distinct audiences, and the sections are organized accordi
 
 ### Mission
 
-**We are revealing sense-lines — atomic thoughts the reader can process as discrete units.** Each line is a unit of meaning the reader can take in before needing the next. We are not doing English typography. We are not revealing rhetorical parallelism (Parry is a separate layer that may overlap with ours but is not our target). We are not prescribing oral delivery. We are formatting the text so that an ESL reader, a child, or a newcomer can take the scripture one atomic thought at a time.
+**We are revealing atomic thought units (ATUs) — units of meaning the reader can process discretely.** Each line on the page renders one ATU; each ATU is a span the reader can take in before needing the next. ("ATU" is a descriptive label for the unit this method reveals; see Pragmatic Stance below — we do not claim a cognitive-theoretic grounding.) We are not doing English typography. We are not revealing rhetorical parallelism (Parry is a separate layer that may overlap with ours but is not our target). We are not prescribing oral delivery. We are formatting the text so that an ESL reader, a child, or a newcomer can take the scripture one atomic thought at a time.
 
 ### Origin
 
-**Stan's premise:** *"Humans think, compose, and deconstruct (read and hear) in sense-lines — atomic thought-units that correspond to how ideas are generated, encoded, and recovered."* This is the working hypothesis that drives the project.
+**Stan's premise:** *"Humans think, compose, and deconstruct (read and hear) in atomic thought units (ATUs) — units that correspond to how ideas are generated, encoded, and recovered."* This is the working hypothesis that drives the project.
 
-**Intellectual lineage.** Royal Skousen's demonstration that the Book of Mormon could be reduced to sense-lines (*The Earliest Text*, 2009/2022) was the trigger. **This project is the parent** — Skousen's foundational work was on the BofM corpus. The sibling GNT Reader project is the analogical extension ("what is true for the Book of Mormon is likely true for the Greek New Testament, and perhaps any text"). The methodology itself — framework, rules, structural justifications, merge-overrides — emerged from hands-on editorial experimentation across all 15 books. It was not derived from scholarly framework.
+**Intellectual lineage.** Royal Skousen's demonstration that the Book of Mormon could be reduced to sense-lines (*The Earliest Text*, 2009/2022) was the trigger for what this method now formalizes as the ATU. **This project is the parent** — Skousen's foundational work was on the BofM corpus. The sibling GNT Reader project is the analogical extension ("what is true for the Book of Mormon is likely true for the Greek New Testament, and perhaps any text"). The methodology itself — framework, rules, structural justifications, merge-overrides — emerged from hands-on editorial experimentation across all 15 books. It was not derived from scholarly framework.
 
 ### Method
 
@@ -62,11 +62,11 @@ This canon governs where lines break in the v2-mine source texts. It does not go
 
 ## 1. The Framework — Proposition-First, Syntax-Constrained
 
-The framework is: **each proposition splits by default, unless syntax forbids.** Substantive adjuncts (slot-fillers in narrative frames) count as atomic thought units and also earn their own lines. Image sharpens ambiguous cases. (Equivalently at the operational level: at any candidate boundary the default is merge — see §1 Decision Procedure step 1 — and a split is licensed only when a proposition or structural-justification boundary is identified. The two phrasings are scope-distinct: "splits by default" generates the proposition-level inventory; "merge by default" is the per-location heuristic. Same procedure, different vantage points.)
+The framework is: **each proposition splits by default, unless syntax forbids.** Substantive adjuncts (slot-fillers in narrative frames) count as atomic thought units (ATUs) and also earn their own lines. Image sharpens ambiguous cases. (Equivalently at the operational level: at any candidate boundary the default is merge — see §1 Decision Procedure step 1 — and a split is licensed only when a proposition or structural-justification boundary is identified. The two phrasings are scope-distinct: "splits by default" generates the proposition-level inventory; "merge by default" is the per-location heuristic. Same procedure, different vantage points.)
 
 ### The Generative Principle
 
-**Each proposition splits by default.** A proposition is the atomic thought-unit — a complete predication (subject + finite verb + complement) that the reader can process as a single cognitive bite. Propositions drive line breaks. There is no positive requirement to break beyond this; there is no positive requirement to merge beyond this. The question at every candidate location is: *is this a proposition boundary?*
+**Each proposition splits by default.** A proposition is the prototypical ATU — a complete predication (subject + finite verb + complement) that the reader can process as a single cognitive bite. Propositions drive line breaks. There is no positive requirement to break beyond this; there is no positive requirement to merge beyond this. The question at every candidate location is: *is this a proposition boundary?*
 
 "Proposition" also includes the five structural-justification cases (below) — non-predicated units that function as atomic thoughts via formal-structural recoverability. These are the only non-strict-predication units that qualify.
 

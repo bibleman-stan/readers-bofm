@@ -7,13 +7,13 @@ Three stages in `data/text-files/`:
 | Folder | Contents |
 |--------|----------|
 | `v0-bofm-original/` | 2020 BofM base text (paragraph format) |
-| `v1-skousen-breaks/` | Skousen sense-line formatting (reformatter input) |
-| `v2-mine/` | **Stan's revised sense-lines** — the canonical source |
+| `v1-skousen-breaks/` | Skousen's sense-line formatting — the precursor that triggered this method (reformatter input) |
+| `v2-mine/` | **Stan's revised ATUs** — the canonical source |
 
 File naming: `01-1_nephi-2020-sb-v2.txt` through `15-moroni-2020-sb-v2.txt`
 
 ## File Format
-Plain text, verse markers + one sense-line per line:
+Plain text, verse markers + one ATU per line:
 ```
 5:15
 may seal you his,
@@ -87,8 +87,8 @@ Output format: `<span class="swap" data-orig="archaic" data-mod="modern">archaic
 - "loins" — figurative (lineage) → "lineage"; literal → "waist"
 
 ### TTS Text Preference
-Stan's stated rule: "I want our modified sense-lines, but I do NOT want modernized language for the voice. I want the authentic wording of the Book of Mormon." This means:
-- Sense-line BREAKS come from the reading edition (HTML structure)
+Stan's stated rule (paraphrased to current terminology): "I want our modified ATUs, but I do NOT want modernized language for the voice. I want the authentic wording of the Book of Mormon." This means:
+- ATU BREAKS come from the reading edition (HTML structure; one ATU per rendered line)
 - TTS TEXT uses `data-orig` (authentic BofM wording), NOT `data-mod` (modernized swaps)
 - Controlled by `get_text_from_element(el, use_modern=False)` in the Colab pipeline
 
@@ -109,7 +109,7 @@ The Isaiah block quotation chapters (2 Ne 12-24) have **zero** `.quote-bible` ma
 - Scope decision: only explicit/verbatim quotations, not allusions or echoes — "too much of a judgment call"
 
 ## rebreak.py
-Utility script for automated sense-line rebalancing:
+Utility script for automated ATU/line rebalancing:
 - Examines lines >78 chars for potential splits
 - Examines lines <25 chars for potential consolidation
 - Uses grammatical break-point patterns
@@ -126,7 +126,7 @@ Utility script for automated sense-line rebalancing:
 
 ---
 ### Update — 2026-03-18
-- Applied sense-line edits to Mosiah chapters 4 and 15, adjusting line breaks per newly articulated colometry principles (see private/01-method/colometry-canon.md)
+- Applied ATU edits to Mosiah chapters 4 and 15, adjusting line breaks per newly articulated colometry principles (see private/01-method/colometry-canon.md)
 - Mosiah 15:15–18 ("how beautiful upon the mountains") restructured to break after the recurring phrase rather than mid-clause
 - Mosiah 15:24 merged circumstantial clause pairing ("in their ignorance, not having salvation declared unto them" on one line)
 - Mosiah 15:24 adjusted equivalence restatement ("or have eternal life, being redeemed by the Lord" grouped together)

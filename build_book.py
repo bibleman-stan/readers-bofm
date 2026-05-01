@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Book of Mormon Reading Edition — Modular Book Builder
-Processes sense-line source files into individual book HTML fragments
-for the modular site structure (books/*.html).
+Processes ATU-format source files (one ATU per line) into individual
+book HTML fragments for the modular site structure (books/*.html).
 
 Usage:
   Single book:  python3 build_book.py BOOK_ID source.txt [--out books/]

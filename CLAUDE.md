@@ -6,7 +6,7 @@ Read this file completely before doing anything in this repo. It is your orienta
 
 ## What This Project Is
 
-A web-based reading app for the Book of Mormon at **bomreader.com**, designed for ESL readers, children, and newcomers. Text is presented in sense-line (cola) format — each line is an atomic thought for read-aloud delivery. Archaic words can be toggled to modern equivalents. Multiple study layers (deity references, biblical quotations, geography, Hebrew poetry) can be overlaid. Audio narration per chapter.
+A web-based reading app for the Book of Mormon at **bomreader.com**, designed for ESL readers, children, and newcomers. Text is presented as atomic thought units (ATUs) — each line on the page renders one ATU, a span of text the reader can take in as a single complete unit of meaning. Archaic words can be toggled to modern equivalents. Multiple study layers (deity references, biblical quotations, geography, Hebrew poetry) can be overlaid. Audio narration per chapter.
 
 - **Repo:** github.com/bibleman-stan/readers-bofm (public)
 - **Hosting:** GitHub Pages from main branch
@@ -103,20 +103,20 @@ Compaction is a session boundary. When resuming from a compaction summary, still
 | File | Purpose |
 |------|---------|
 | `index.html` | Main app shell — ALL CSS, HTML, JS inline (~4220 lines) |
-| `build_book.py` | Converts sense-line .txt sources → HTML fragments (~1090 lines) |
-| `scripts/senseline_reformat_v8.py` | 19-pass automated sense-line reformatter |
+| `build_book.py` | Converts ATU-formatted .txt sources (one ATU per line) → HTML fragments (~1090 lines) |
+| `scripts/senseline_reformat_v8.py` | 19-pass automated ATU/line reformatter (filename retains historical "senseline" — internal-only) |
 | `narration.js` | Audio playback module (~1050 lines) |
 | `sw.js` | Service worker — bump version on every change |
 | `books/*.html` | Generated HTML fragments, one per book |
 | `data/text-files/v2-mine/` | **Canonical source text files — see rules below** |
-| `data/text-files/v1-skousen-breaks/` | Skousen sense-line formatting (input only) |
+| `data/text-files/v1-skousen-breaks/` | Skousen's sense-line formatting — the precursor that triggered this method (input only) |
 | `data/text-files/v0-bofm-original/` | 2020 LDS base text (reference only) |
 
 ---
 
 ## CRITICAL: Source File Rules
 
-The files in `data/text-files/v2-mine/` are the canonical source. These are Stan's hand-edited sense-line files. They are sacred.
+The files in `data/text-files/v2-mine/` are the canonical source. These are Stan's hand-edited ATU-format source files (one ATU per line). They are sacred.
 
 **NEVER:**
 - Alter punctuation (punctuation belongs to the canonical LDS text)
@@ -228,7 +228,7 @@ TTS audio reads `data-orig` (authentic text), NOT `data-mod` (modern). Never cha
 2. Test audio playback on bomreader.com for 2 Ne 1-5
 3. Fix audio-highlight sync drift (pericope headers throw off lineIndex count)
 4. Fix 1 Ne 6:1 verse text
-5. Fix KJV diff display (currently destroys sense-line formatting when toggled)
+5. Fix KJV diff display (currently destroys ATU line formatting when toggled)
 6. Fix scripts/build_kjv_diff.py hardcoded paths (line numbers may have drifted; re-verify)
 7. Light mode CSS verification for new UI elements
 8. Surface book introductions (currently hidden in settings-panel-old)
@@ -285,7 +285,7 @@ Verse-number visibility is controlled by a body class (`body.hide-verse-num` hid
 ## Known Issues
 
 - Audio-highlight sync drift after pericope headers (lineIndex mismatch)
-- KJV diff layer destroys sense-line formatting when toggled
+- KJV diff layer destroys ATU line formatting when toggled
 - Light mode CSS unverified for new topbar/picker/sheet elements
 - Book introductions inaccessible (hidden in old panel)
 - Google API key exposed in annotations.js

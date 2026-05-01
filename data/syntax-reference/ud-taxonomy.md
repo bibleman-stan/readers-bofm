@@ -4,7 +4,7 @@
 
 **Standard:** Universal Dependencies v2 (universaldependencies.org). CC BY-SA.
 
-**Scope:** This doc is restricted to the POS tags and dependency relations that matter for sense-line line-break decisions. It is not a complete UD reference.
+**Scope:** This doc is restricted to the POS tags and dependency relations that matter for ATU line-break decisions. It is not a complete UD reference.
 
 ---
 

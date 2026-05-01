@@ -175,7 +175,7 @@ Before committing source text changes:
 
 1. ☐ All files saved and verified on disk (run `git diff` to confirm)
 2. ☐ Build pipeline successful (`PYTHONIOENCODING=utf-8 python3 build_book.py --all`)
-3. ☐ Spot-check the build output for obvious damage (sense-line view of one affected verse)
+3. ☐ Spot-check the build output for obvious damage (ATU/line view of one affected verse)
 4. ☐ Service worker cache version bumped in `sw.js`
 5. ☐ Commit message explains WHY, not just WHAT
 6. ☐ Co-author trailer included

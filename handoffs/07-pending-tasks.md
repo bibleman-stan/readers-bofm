@@ -28,7 +28,7 @@ Line highlight drifts from spoken text during playback. Pericope headers throw o
 Needs text fix in source file and audio re-patch.
 
 ### 8. KJV diff display
-Toggling KJV diff layer destroys sense-line formatting. Proposed fix: show diff as annotation below verse, don't hide verse-normal.
+Toggling KJV diff layer destroys ATU line formatting. Proposed fix: show diff as annotation below verse, don't hide verse-normal.
 
 ### 9. build_kjv_diff.py hardcoded paths
 Lines 334 and 348 reference old session paths. Need relative paths + rebuild.
@@ -36,7 +36,7 @@ Lines 334 and 348 reference old session paths. Need relative paths + rebuild.
 ## EDITORIAL / LOW PRIORITY
 
 ### 10. "Behold" vs "Lo" methodology
-Stan's linguistic framework for sense-line breaking. Test on Alma 5 or 2 Ne 4:15-35. See 02-text-editorial.md.
+Stan's linguistic framework for ATU breaking. Test on Alma 5 or 2 Ne 4:15-35. See 02-text-editorial.md.
 
 ### 11. rebreak.py uncommitted changes
 396-line diff, unclear if WIP. Check and commit or discard.
@@ -50,12 +50,12 @@ Previously in background panel, now hidden. Need to surface in About page or pic
 ### 14. GitHub secrets alert
 Google API key in `annotations.js:26` — restrict in Google Cloud Console.
 
-### 15. Parry alignment as sense-line diagnostic
-Use Parry break-points to identify sense-lines that merit revision. 209 split candidates in 2 Nephi alone.
+### 15. Parry alignment as ATU diagnostic
+Use Parry break-points to identify ATUs that merit revision. 209 split candidates in 2 Nephi alone.
 
 ---
 ### Update — 2026-03-18
-- Mosiah editorial work begun — sense-line revisions applied to chapters 4 and 15 as first pass, demonstrating newly articulated colometry principles
+- Mosiah editorial work begun — ATU revisions applied to chapters 4 and 15 as first pass, demonstrating newly articulated colometry principles
 - Remaining Mosiah chapters (1-3, 5-14, 16-29) still need systematic editorial review
 
 ---
@@ -123,7 +123,7 @@ Use Parry break-points to identify sense-lines that merit revision. 209 split ca
 
 #### TTS Preprocessing Pipeline (Specced, Not Yet Built)
 
-**Problem:** Canonical punctuation conflicts with sense-line structure. TTS pauses at commas that don't align with editorial breaks; no pauses at line breaks where commas are absent.
+**Problem:** Canonical punctuation conflicts with ATU structure. TTS pauses at commas that don't align with editorial breaks; no pauses at line breaks where commas are absent.
 
 **Solution:** A preprocessing function in the Colab audio pipeline that transforms v2 source text into TTS-optimized text at generation time. No separate file to maintain — reads v2 live and applies rules.
 

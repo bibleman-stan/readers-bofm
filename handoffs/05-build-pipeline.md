@@ -56,7 +56,7 @@ Rewrote all entries for 2 Ne 12-24, 2 Ne 27, 3 Ne 22-25. Total: 648 → 710 entr
 3. Output: 619 structures (60% reduction)
 
 ### Build Integration
-- Fuzzy-matches Parry's text fragments against sense-lines
+- Fuzzy-matches Parry's text fragments against ATUs
 - Injects `data-parallel-group` and `data-parallel-level` attributes
 - CSS: Parry-style cascading indentation with lowercase italic labels
 
@@ -64,7 +64,7 @@ Rewrote all entries for 2 Ne 12-24, 2 Ne 27, 3 Ne 22-25. Total: 648 → 710 entr
 Return side of chiasmus displays as a', b', c' (primes after the deepest point).
 
 ### Alignment Gap
-22% of structures have perfect sense-line alignment. 78% have mismatches. Parry's break-points can serve as a diagnostic for sense-lines that merit revision.
+22% of structures have perfect ATU alignment. 78% have mismatches. Parry's break-points can serve as a diagnostic for ATUs that merit revision.
 
 ## KJV Diff Layer
 
@@ -74,7 +74,7 @@ Return side of chiasmus displays as a', b', c' (primes after the deepest point).
 - Partial parallels (Mosiah 14 = Isaiah 53, 3 Ne 16:18-20 = Isaiah 52:8-10, etc.)
 
 ### Known Issue
-When KJV diff layer is toggled ON, CSS hides `.verse-normal` and shows `.verse-diff` as inline paragraph blob — **destroys sense-line formatting**. Fix proposed but not implemented: show diff as annotation below verse, don't hide sense-lines.
+When KJV diff layer is toggled ON, CSS hides `.verse-normal` and shows `.verse-diff` as inline paragraph blob — **destroys ATU line formatting**. Fix proposed but not implemented: show diff as annotation below verse, don't hide ATU lines.
 
 ### build_kjv_diff.py
 - Has hardcoded paths from old session that need fixing to relative paths
