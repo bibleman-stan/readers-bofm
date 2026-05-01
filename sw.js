@@ -2,7 +2,7 @@
 // Strategy: cache app shell eagerly, cache books lazily (on first open),
 // with option to pre-cache all books at once via message from page.
 
-const CACHE_NAME = 'bomreader-v199';
+const CACHE_NAME = 'bomreader-v200';
 
 // App shell — cached on install
 const SHELL_ASSETS = [

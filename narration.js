@@ -783,7 +783,11 @@ const NARRATION = (() => {
       const at = getChapterAtViewport();
       const followingAudio = at &&
         at.bookId === manifest.book &&
-        at.chapter === manifest.chapter;
+        at.chapter === manifest.chapter &&
+        // Don't fight a programmatic verse navigation in flight — the
+        // picker's smooth scroll is heading to a specific verse; the
+        // highlight loop's scrollIntoView would race it.
+        !window._pendingVerseScroll;
       if (followingAudio) {
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
