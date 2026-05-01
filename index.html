@@ -3077,6 +3077,11 @@
   }
 
   function _tryExtendForward() {
+    // Don't extend the visible book chain while a programmatic verse navigation
+    // is mid-flight. Appending a book triggers no scroll-anchor compensation,
+    // but the scroll events it produces compound the cross-book scroll race;
+    // safer to defer until the smooth scroll has settled.
+    if (window._pendingVerseScroll) return;
     if (_extendingForward) return;
     var chain = _getVisibleBookChain();
     if (!chain.length) return;
@@ -3097,6 +3102,15 @@
   }
 
   function _tryExtendBackward() {
+    // CRITICAL: don't prepend a book while a programmatic verse navigation is
+    // mid-flight. Prepending shifts every Y coordinate downward by the new
+    // book's height; the scrollBy compensation below keeps the visual anchor
+    // stable but invalidates the smooth-scroll target Y that
+    // window.scrollTo({behavior:'smooth'}) is animating toward. Surfaced as
+    // "navigate to Mosiah 5:1, land on Mosiah 1:3" because Mosiah's top is
+    // near scrollY=0 right after switchBook, which trips the backward-extend
+    // condition while the smooth scroll toward chapter 5 is in flight.
+    if (window._pendingVerseScroll) return;
     if (_extendingBackward) return;
     var chain = _getVisibleBookChain();
     if (!chain.length) return;
