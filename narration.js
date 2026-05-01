@@ -198,6 +198,19 @@ const NARRATION = (() => {
    *   after a scroll-to-chapter — never wins over the new chapter's first line.
    */
   function getChapterAtViewport() {
+    // If a programmatic verse navigation is in flight (verse picker / hash
+    // route / search jump), the smooth-scroll animation hasn't settled yet,
+    // and reading scroll position would land mid-animation — surfaced as
+    // "navigate to Jacob 3:1, click Listen, audio starts at Jacob 1:3"
+    // when the user clicks Listen during the smooth-scroll window. Trust
+    // the pending target instead. lineIndex:-1 means "no specific seek" —
+    // play the chapter from the start, which is correct for verse-1 picks
+    // and acceptable for higher verses (rather than playing the wrong
+    // chapter entirely).
+    if (window._pendingVerseScroll) {
+      const p = window._pendingVerseScroll;
+      return { bookId: p.bookId, chapter: p.chapter, lineIndex: -1 };
+    }
     const topbarHeight = _topbarHeight();
     let bestEl = null;
     let bestDist = Infinity;
