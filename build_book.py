@@ -543,7 +543,7 @@ SIMPLE_SWAPS = [
     ("tarried", "stayed"), ("Tarried", "Stayed"),
     ("tarry", "stay"), ("Tarry", "Stay"),
     ("wroth", "angry"), ("Wroth", "Angry"),
-    ("durst", "dared"), ("Durst", "Dared"),
+    ("durst", "dare"), ("Durst", "Dare"),
     ("affrighted", "frightened"), ("Affrighted", "Frightened"),
     # Removed 2026-04-12: see Class J audit — 3 Ne 17:19 produced "told them
     # arise" (missing "to"). Bade-X-infinitive doesn't map to told-X-bare-inf.
