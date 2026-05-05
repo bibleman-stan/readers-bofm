@@ -47,17 +47,16 @@ Before any substantive work, read the handoffs directory in order. Each file is 
 Each session has its own folder at `private/YYYY-MM-DD-brief_description/` where `YYYY-MM-DD` is the **session start date** (not today's date if the session crossed midnight) and `brief_description` distinguishes the session from others on the same date.
 
 Contents:
-- `transcript.md` — verbatim user + assistant text, generated from JSONL at session end (skip tool-use and tool-result entries for readability)
-- `session-notes.md` — narrative summary of the session arc: what happened, why, what was decided
-- `decisions.md` — key decisions made, one paragraph each with rationale
-- `pending.md` — explicit carry-forward items for the next session
+- `pending.md` — explicit carry-forward items for the next session.
+
+**Only `pending.md`.** The previous protocol prescribed four files (`transcript.md` / `session-notes.md` / `decisions.md` / `pending.md`); all but `pending.md` were dropped 2026-05-05 as redundant with the JSONL session log. The JSONL captures every user message, every response, every tool call, every result — verbatim with timestamps — so re-summarizing them in narrative or transcript form is duplicated work the JSONL already did better. `pending.md` is the one piece JSONL doesn't expose conveniently: a maintained carry-forward list survives across sessions and tells fresh-session Claude what's open without grepping multi-session JSONL history.
 
 ### CHECK-IN at session start
 
 **MANDATORY (read every wake):**
 1. This `CLAUDE.md` in full
 2. `private/01-method/colometry-canon.md` — especially §0 Mission, §1 Framework, §2 Autonomy Boundary, §5 Rule detail
-3. The most recent session folder under `private/YYYY-MM-DD-*/` — specifically its `pending.md` (carry-forward state) and `session-notes.md` (prior-session context)
+3. The most recent session folder under `private/YYYY-MM-DD-*/` — specifically its `pending.md` (carry-forward state). If prior context beyond carry-forwards is needed, search the JSONL session logs at `~/.claude/projects/.../*.jsonl` rather than expecting summary docs; only `pending.md` is maintained going forward.
 4. `git log --oneline -10`
 
 **CONSULT-ON-TRIGGER:**
@@ -69,17 +68,15 @@ Contents:
 
 ### At session end (WRAP-UP)
 
-Produce four files in the current session folder:
-1. `transcript.md` — dispatch a JSONL-filter agent (see `/chats/` path printed at session start; Claude Code writes JSONL per session)
-2. `session-notes.md` — narrative summary
-3. `decisions.md` — key decisions with rationale
-4. `pending.md` — carry-forward for next session
+**Update `pending.md`** in the current session folder. That's the entire wrap protocol. No transcript, no narrative session-notes, no decisions doc — the JSONL already has all of that and re-summarizing it is wasted bandwidth (Stan's directive 2026-05-05; see `feedback_drop_redundant_wrap_docs.md`).
+
+`pending.md` should be a tight bullet list: items deferred this session, items still open from prior sessions, HEAD pointer + cache version, anything fresh-session Claude needs to know that isn't already in CLAUDE.md or canon. Append, don't narrate. If a carry-forward item later closes, delete its bullet rather than rewriting history.
 
 Commit any code/corpus changes before wrapping. Session folder files live in gitignored `private/` so they don't need committing. Canon changes require `git add -f private/01-method/colometry-canon.md` per §Canon-to-git policy below.
 
 **Self-consistency audit trigger (added 2026-04-22 from GNT cross-project directive):** If the session added **≥2 new canon subsections/rules/merge-overrides**, run a light self-consistency audit before wrap — check that new cross-references resolve, no contradictions with existing rules, all three defensibility elements (WHY/HOW WE KNOW/SCOPE per canon §7) are present. Short pass. See canon §7 for the full trigger description.
 
-**Carry-forward discipline (added 2026-04-22):** Anything noted as "defer to future session" anywhere in the session's documentation MUST get a corresponding line in `pending.md`. Canon §8 notes, session-notes narratives, and agent reports do not survive session boundaries — only `pending.md` does. If you say "defer," write it to `pending.md`.
+**Carry-forward discipline (added 2026-04-22):** Anything noted as "defer to future session" anywhere in the session's documentation MUST get a corresponding line in `pending.md`. Canon §8 notes and agent reports do not survive session boundaries — only `pending.md` does. If you say "defer," write it to `pending.md`. (Even more important now that `pending.md` is the only wrap doc.)
 
 ### Compaction-resume
 
