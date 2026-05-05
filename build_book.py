@@ -543,7 +543,20 @@ SIMPLE_SWAPS = [
     ("tarried", "stayed"), ("Tarried", "Stayed"),
     ("tarry", "stay"), ("Tarry", "Stay"),
     ("wroth", "angry"), ("Wroth", "Angry"),
-    ("durst", "dare"), ("Durst", "Dare"),
+    # "durst" is past-tense in archaic English (= "dared"). The corpus uses it
+    # primarily in past-narrative ("they durst not contend", "had supposed
+    # the Lamanites durst not come"), so the default static swap is past-tense.
+    # However, four passages use "durst" inside present-tense direct speech
+    # (Korihor's accusation in Alma 30:27-28, Lamoni's soliloquy at Alma 18:11,
+    # Nephi's closing colophon at 1 Ne 22:29). These get phrase-level overrides
+    # to "dare" — phrase swaps are length-sorted to fire before the static word
+    # swap (build_swap_list line 913).
+    ("they durst not make use of that which is their own", "they dare not make use of that which is their own"),  # Alma 30:28 (Korihor)
+    ("they durst not look up with boldness", "they dare not look up with boldness"),  # Alma 30:27 (Korihor)
+    ("they durst not enjoy their rights", "they dare not enjoy their rights"),  # Alma 30:27 (Korihor)
+    ("I durst not speak further", "I dare not speak further"),  # 1 Ne 22:29 (Nephi colophon)
+    ("but I durst not", "but I dare not"),  # Alma 18:11 (Lamoni)
+    ("durst", "dared"), ("Durst", "Dared"),
     ("affrighted", "frightened"), ("Affrighted", "Frightened"),
     # Removed 2026-04-12: see Class J audit — 3 Ne 17:19 produced "told them
     # arise" (missing "to"). Bade-X-infinitive doesn't map to told-X-bare-inf.
