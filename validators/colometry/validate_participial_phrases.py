@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-Validate canon §1 M3 extension (added 2026-05-06): bare trailing
-participial heads merge with their matrix predication, with 8 carve-outs
-and guardrails.
+Validate canon §1 M3 extension: bare trailing participial heads merge
+with their matrix predication, with 4 structural guards + length backstop.
 
 Canon source: private/01-method/colometry-canon.md, M3 extension subsection.
 
@@ -13,10 +12,14 @@ Each candidate line gets classified as:
   KEEP-coord           — coordinate-list parallel beat
   KEEP-antecedent      — antecedent-locality fail (subject in PP / relative / fronted)
   KEEP-fronted         — participial precedes matrix verb
-  KEEP-theological     — Christological / divine-attribute appositive (hand-curated)
-  KEEP-antithetic      — antithetic / paired parallelism (hand-curated)
-  KEEP-gerund          — gerund-as-noun (hand-curated)
   REVIEW-length        — merged-line would exceed 130 characters
+
+NOTE on retired carve-outs: A prior version had three editorial carve-outs
+(KEEP-theological, KEEP-antithetic, KEEP-gerund) with hand-curated verse-
+lists. Retired 2026-05-06 PM as a category fudge inconsistent with §0 Mission
+objective (3). Cases that formerly fell into those classes are now classified
+case-by-case on the atomic-thought test directly — some stay KEEP- via the
+4 structural guards or REVIEW-length, others move to APPLY.
 
 Usage:
     python3 validate_participial_phrases.py            # text summary
@@ -69,37 +72,6 @@ PARTICIPIAL_VERBS = {
 EXCLUDED_ING = {
     "concerning", "according", "notwithstanding", "during", "regarding",
     "respecting",
-}
-
-THEOLOGICAL_VERSES_HIGH = {
-    ("mosiah", 3, 5),
-    ("mosiah", 15, 2),
-    ("mosiah", 15, 5),
-    ("mosiah", 15, 9),
-    ("2nephi", 2, 8),
-    ("2nephi", 26, 13),
-    ("moroni", 7, 22),
-}
-THEOLOGICAL_VERSES_MEDIUM = {
-    ("alma", 7, 11),
-    ("alma", 13, 3),
-    ("alma", 13, 5),
-    ("mormon", 9, 13),
-}
-THEOLOGICAL_VERSES = THEOLOGICAL_VERSES_HIGH | THEOLOGICAL_VERSES_MEDIUM
-
-ANTITHETIC_VERSES = {
-    ("mosiah", 18, 21),
-    ("alma", 9, 22),
-    ("2nephi", 2, 23),
-    ("helaman", 1, 27),
-    ("ether", 12, 3),
-}
-
-GERUND_VERSES = {
-    ("enos", 1, 23),
-    ("2nephi", 13, 24),
-    ("alma", 32, 43),
 }
 
 VERSE_RE = re.compile(r"^\s*(\d+):(\d+)\s*$")
@@ -218,16 +190,6 @@ def classify(book_lines: list[str], idx: int, fw: str, book_id: str) -> tuple[st
         except ValueError:
             pass
 
-    # Editorial verse-list carve-outs first
-    if chap is not None and verse is not None:
-        if (book_id, chap, verse) in THEOLOGICAL_VERSES:
-            tier = "HIGH" if (book_id, chap, verse) in THEOLOGICAL_VERSES_HIGH else "MEDIUM"
-            return "KEEP-theological", f"theological appositive ({tier}): {verse_ref}"
-        if (book_id, chap, verse) in ANTITHETIC_VERSES:
-            return "KEEP-antithetic", f"antithetic / paired parallelism: {verse_ref}"
-        if (book_id, chap, verse) in GERUND_VERSES:
-            return "KEEP-gerund", f"gerund-as-noun: {verse_ref}"
-
     # Stack-cap (verse-context-extended)
     in_verse = participials_in_verse(book_lines, marker_idx, end_idx)
     if len(in_verse) >= 3:
@@ -321,8 +283,7 @@ def main():
     print("By class:")
     classes_order = (
         "APPLY", "KEEP-stack", "KEEP-coord", "KEEP-antecedent",
-        "KEEP-fronted", "KEEP-theological", "KEEP-antithetic",
-        "KEEP-gerund", "REVIEW-length",
+        "KEEP-fronted", "REVIEW-length",
     )
     for cls in classes_order:
         n = counts.get(cls, 0)
