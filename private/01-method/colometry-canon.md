@@ -196,6 +196,40 @@ M2 is named here for cross-canon consistency with GNT's merge-override framework
 
 **Grammatical grounding:** CGEL Ch. 4 on finite vs. non-finite predications; complement requirements of governors. Bare governors lack the obligatory arguments their semantic class requires.
 
+##### M3 extension — Bare trailing participial heads (added 2026-05-06)
+
+**Triggering case.** Alma 32:1: *"And it came to pass that they did go forth, / and began to preach the word of God unto the people, / entering into their synagogues, and into their houses;"* — the third line is a bare participial head (*"entering"*) with PP complements but no own subject; it inherits the matrix subject *"they"* from two lines up. Stan caught this 2026-05-06; under the foundational atomic-thought test, the line is not a complete unit standing on its own — it is grammatical machinery awaiting matrix anchoring.
+
+**Rule.** Bare trailing participial heads (subject-inheriting; no own-named subject; in adjunct position relative to a matrix predication) are M3 cases — they merge with their matrix predication. Same shape as M3's existing *"telling them / that there could be no atonement..."* MERGE precedent, extended from leading-participial-with-pending-complement to trailing-participial-with-pending-subject-anchor.
+
+**Four structural carve-outs (these stay own-line):**
+
+1. **Stack-cap.** Adjacent participials stay own-line when the stacking IS the rhetorical structure: N≥3 adjacent participials, OR N≥2 with the same -ing lemma (anaphoric repetition: *"having... having... having..."*), OR merged-line would exceed 130 characters. Evaluate stack depth on the **full verse-context window** (include leading "and"-prefixed and capitalized participials), not a narrow line-pair window. Canonical cases: 2 Ne 1:10 (5-deep *"having..."* enumeration), Mosiah 15:9 (Christ's intercessory acts), Alma 7:23 (virtue-list embedding), Alma 13:29 (faith/hope/love triad), Helaman 4:12 (sin-list).
+
+2. **Coord-list member.** When the participial is a parallel beat in an open coordinate list of participial-fronted lines (each member co-equal, not modifying), the participial earns its own beat. Diagnostic: prev N≥2 lines are also participial-fronted with parallel structure (not just adjacent — parallel). Canonical cases: Alma 4:13 *"feeding the hungry"* inside *imparting / succoring / feeding / suffering*; Mosiah 21:13 *"submitting themselves"* inside *subjecting / submitting / driven / burdened*.
+
+3. **Antecedent-locality fail.** When the nearest preceding NP that supplies the participial subject is NOT the matrix subject — instead it is inside a PP, a relative clause, or other oblique position — the participial is not subject-inheriting from the matrix in the relevant sense; it modifies the embedded NP. Diagnostic: nearest preceding NP is object of preposition (*"concerning Giddianhi, demanding..."*), or subject of an embedded relative clause, or fronted between matrix subject and verb. Canonical cases: Ether 13:21, 3 Ne 3:11, 3 Ne 20:25, Helaman 11:23.
+
+4. **Fronted-position participial.** When the participial precedes the matrix verb (placed between subject and finite verb, or fronted before the subject), it is fronted-circumstantial — backward-merging would split subject from predicate. Diagnostic: the next non-blank line begins with *therefore* / *wherefore* / *then* + finite verb, or the matrix subject sits between the participial and the finite verb. Helaman 11:23 is the canonical case.
+
+**Three editorial carve-outs (Stan-call Category B/C, hand-curated verse-lists):**
+
+5. **Theological / Christological appositive.** Participial appositives that carry doctrinal weight (Christological identity, divine-attribute claims, atonement-defining statements) are Category C — hand-review only, never auto-merge. Hand-curated verse-list (HIGH confidence): Mosiah 3:5 (×2 lines), Mosiah 15:2, Mosiah 15:5, Mosiah 15:9, 2 Ne 2:8, 2 Ne 26:13, Moroni 7:22. MEDIUM (Stan's call to include or exclude): Alma 7:11, Alma 13:3, Alma 13:5, Mormon 9:13. Note: most BofM Christology rides on finite verbs and nominal predicates, not participial appositives; the carve-out is finite and stable, not a productive heuristic.
+
+6. **Antithetic / paired parallelism.** Participial pairs forming antithetic or parallel image-frames where merging would destroy the pairing. Hand-curated verse-list: Mosiah 18:21 (*"having one faith / having their hearts knit..."*), Alma 9:22 (4-fold *"having been..."* chain anchored by two A-class members), 2 Ne 2:23 (*"having no joy, for they knew no misery; / doing no good, for they knew no sin"* — the seed case), and borderline Helaman 1:27, Ether 12:3.
+
+7. **Gerund-as-noun.** When the -ing word is functioning as a deverbal noun (object of preposition, conjoined with other nouns under a determiner, in an elliptical Isaiah-style noun-list) rather than a participial verb, M3 does NOT fire — there is no matrix predication to merge into. Hand-curated verse-list: Enos 1:23 *"preaching and prophesying of wars"* (appositive to *"harshness"*), 2 Ne 13:24 *"burning instead of beauty"* (Isaiah 3:24 elliptical noun-list), Alma 32:43 *"waiting for the tree..."* (defensible noun-list reading).
+
+**Length backstop:**
+
+8. **Merged-line > 130 characters → REVIEW-REQUIRED.** Cases where applying the merge would produce a line exceeding ~130 characters route to human review rather than auto-apply. This catches the catalog-precedent catastrophe (Jarom 1:8's 199-character merge, where the matrix predicate is buried far back behind a long *"rich in X, and in Y..."* coordinate-NP catalog) and the Rule-17-bound-complement long merges (cases 22, 26 in the A-readability walk).
+
+**WHY / HOW WE KNOW / SCOPE.** WHY: bare trailing participial heads without resumptive structure fail the foundational atomic-thought test — they are non-finite grammatical machinery that requires matrix anchoring to become a complete unit. HOW WE KNOW: 2026-05-06 corpus survey (309 candidate lines across the corpus) + 5 parallel hand-walks (A-sample readability, stack-threshold, antithetic-hunt, gerund-hunt, theological-hunt) classified the merge population with a 70% true-positive rate at 30 samples, surfaced 8 carve-out / guardrail classes, identified ~210 mechanical-merge candidates net, ~100 stay-own-line under carve-outs, ~10-25 routed to REVIEW-REQUIRED. SCOPE: applies only to trailing/adjunct-position participials with no own-named subject and no resumptive structure; absolute phrases with own subject (Rule 21) unchanged; M3's leading-participial-with-pending-complement cases unchanged. Does NOT extend to gerund-as-noun usages (carve-out 7 excludes them).
+
+**Cross-rule precedence.** Rule 21 (participial absolute) wins when the participial has its own named subject — the participial absolute is a complete predication. M3 extension only catches BARE participials without subject. Rule 17 (complement integrity) and Rule 19 (anaphoric relative) post-merge re-splits are honored — if the merged line contains a Rule-17-bound that-clause that should split or a Rule-19 anaphoric relative, those rules fire afterward. Length-cap (carve-out 8) applies regardless of the other carve-outs.
+
+**Implementation.** `validators/colometry/validate_participial_phrases.py` (built 2026-05-06) implements all 8 checks and classifies each candidate as APPLY / KEEP / REVIEW. The canon's surface remains M3's existing definition; the extension lives entirely within M3's scope.
+
 #### M4. Fragmented Atomic Thought-Unit
 
 **Definition:** If splitting a line would produce fragments that individually fail the atomic-thought test, merge. This is the inverse of the cognitive prong: the cognitive prong requires each resulting chunk to be its own atomic thought for a split to proceed; if any resulting fragment fails that test, the split is blocked.
@@ -986,6 +1020,20 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 ---
 
 ## 8. Update Log
+
+### 2026-05-06 — M3 extension: bare trailing participials with 8 carve-outs/guardrails
+
+Stan caught Alma 32:1's *"entering into their synagogues, and into their houses;"* — a bare participial head inheriting the matrix subject from two lines up; under the foundational atomic-thought test it is grammatical machinery awaiting matrix anchoring, not a complete unit standing on its own. Initial framing proposed an "absolute vs. participial" form-binary as a primary diagnostic.
+
+**Hostile audit (2026-05-06) verdict: REJECT-as-framed; APPROVE-WITH-EDITS as M3 extension.** Three substantive catches: (a) the form-binary breaks badly — misclassifies headless participials, stacked cascades (which structural-justification 1 already splits as parallel beats), and semi-explicit participials; subject-inheritance per se isn't the failure. (b) Direct conflict with Rule 21 (Mosiah 9:3 precedent) and Helaman 3:16 N=3+ stack precedent. (c) Smuggling — formal-grammar terminology import, plus a "the reader has to mentally re-supply the subject" justification that violates §0 Pragmatic Stance's cognitive-theory disclaimer.
+
+**Reframed as M3 extension** — the canon's Bare-Governor Indivisibility rule already covers leading bare participials with pending complements (*"telling them / that there could be no atonement..."*). Extending to TRAILING bare participials with pending subject-anchor is a scope refinement, not a new rule.
+
+**Corpus walk (5 parallel hand-walk agents, 2026-05-06) identified 8 carve-outs / guardrails** — see M3 extension subsection above for full text. Net: ~309 candidate lines corpus-wide, ~210 mechanical-merge cases after carve-outs, ~100 stay-own-line via the 4 structural carve-outs (stack / coord-list / antecedent-locality / fronted-position) + 3 editorial verse-lists (theological / antithetic / gerund), ~10-25 routed to REVIEW-REQUIRED via the 130-char length cap. Theological carve-out grew from 1 hand-seeded case (Mosiah 15:2) to 7-11 verses identified.
+
+**Audit dispatched:** hostile audit (provenance + cross-rule coherence + smuggling) → RETHINK-then-reframe; corpus-fit survey → YELLOW with 4 carve-outs; A-sample readability (30 cases) → 70% TP rate, surfaced 4 additional guardrails; C-stack threshold → tightened to N≥3 OR (N≥2 same -ing lemma) OR (>130c); antithetic-hunt → 4 cases (small); gerund-hunt → 3 cases (small); theological-hunt → 11 cases (small-to-moderate).
+
+**Implementation:** `validators/colometry/validate_participial_phrases.py` enforces all 8 checks. Mechanical merges applied to APPLY-classified candidates; KEEP cases stay own-line; REVIEW cases routed to pending.md as Stan-call carry-forward.
 
 ### 2026-04-27 — Breath fully retired (residue cleanup) + doctrinal-weight cases resolved
 
