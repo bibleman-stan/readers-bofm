@@ -3290,8 +3290,10 @@
   window.openNavPanel = function() {
     var panel = document.getElementById('nav-panel');
     panel.classList.add('open');
-    // Reset to columns view (hide intro view)
-    document.getElementById('nav-columns').style.display = 'block';
+    // Reset to columns view (hide intro view). Clear the inline display so
+    // the stylesheet rule (display:grid 2-column) takes effect; setting
+    // 'block' here would inline-override the CSS and collapse to one column.
+    document.getElementById('nav-columns').style.display = '';
     document.getElementById('nav-intro-view').classList.remove('visible');
     // Highlight current book in right column
     highlightNavCurrentBook();
