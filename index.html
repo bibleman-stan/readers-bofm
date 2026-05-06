@@ -264,7 +264,14 @@
   }
 
   #nav-columns {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    /* dense flow lets the second column backfill below an expanded book —
+       e.g., if "1 Nephi" (row 1 col 1) is expanded, the chapter grid takes
+       row 2 spanning both cols; "2 Nephi" then backfills row 1 col 2 instead
+       of being pushed to row 3. */
+    grid-auto-flow: dense;
   }
 
   .nav-book-row {
@@ -295,6 +302,8 @@
     gap: 5px;
     padding: 6px 12px 14px;
     border-bottom: 1px solid var(--border);
+    /* span both columns of #nav-columns when visible */
+    grid-column: 1 / -1;
   }
   .nav-ch-grid.visible { display: flex; }
 
