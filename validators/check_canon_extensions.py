@@ -94,9 +94,6 @@ AUDIT_KEYWORDS = [
     "post-codification",
     "post-detection",
     "corpus-fit",
-    "§8 update log",
-    "§8 entry",
-    "update log",
     "stan-authorized",
     "stan-direct",
     # Audit + completion-verb phrases (paired so bare "audit" doesn't false-pass)
@@ -260,9 +257,9 @@ def main():
     print(file=sys.stderr)
     print("To proceed, the commit message MUST contain ONE of:", file=sys.stderr)
     print("  - An audit-evidence keyword: 'hostile audit', 'audit dispatched',", file=sys.stderr)
-    print("    'audit complete', 'trigger #', 'post-codification', '§7.3',", file=sys.stderr)
-    print("    '§8 update log'. (Bare 'audit' alone no longer passes -- pair it", file=sys.stderr)
-    print("    with a completion verb to confirm the audit actually ran.)", file=sys.stderr)
+    print("    'audit complete', 'trigger #', 'post-codification', '§7.3'.", file=sys.stderr)
+    print("    (Bare 'audit' alone no longer passes -- pair it with a completion", file=sys.stderr)
+    print("    verb to confirm the audit actually ran.)", file=sys.stderr)
     print("  - A skip-safe claim (e.g., 'typo fix', 'cross-reference update',", file=sys.stderr)
     print("    'defensibility-capture', 'audit-skippable') if change qualifies", file=sys.stderr)
     print("    per canon §7.3 audit-skippable categories.", file=sys.stderr)

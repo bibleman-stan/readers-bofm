@@ -36,11 +36,11 @@ Before any substantive work, read the handoffs directory in order. Each file is 
 
 ---
 
-## Session bookend protocol (revised 2026-04-20 — overseer deprecated)
+## Session bookend protocol
 
-**The overseer system is deprecated as of 2026-04-20.** Do NOT read or update `private/OVERSEER-DIRECTIONS.md` (no longer authoritative; left as historical archive). Stan is the direct authority.
+**The overseer system is deprecated.** Do NOT read or update `private/OVERSEER-DIRECTIONS.md` (no longer authoritative; left as historical archive). Stan is the direct authority.
 
-### Session folder convention (clarified 2026-04-20 PM via cross-project directive)
+### Session folder convention
 
 **A session = one Claude Code JSONL session**, not a calendar day. A compaction-wake starts a new session — create a new folder with a new descriptor even if the calendar date matches a pre-compaction folder. Multiple folders sharing a date with different descriptors is correct.
 
@@ -49,7 +49,7 @@ Each session has its own folder at `private/YYYY-MM-DD-brief_description/` where
 Contents:
 - `pending.md` — explicit carry-forward items for the next session.
 
-**Only `pending.md`.** The previous protocol prescribed four files (`transcript.md` / `session-notes.md` / `decisions.md` / `pending.md`); all but `pending.md` were dropped 2026-05-05 as redundant with the JSONL session log. The JSONL captures every user message, every response, every tool call, every result — verbatim with timestamps — so re-summarizing them in narrative or transcript form is duplicated work the JSONL already did better. `pending.md` is the one piece JSONL doesn't expose conveniently: a maintained carry-forward list survives across sessions and tells fresh-session Claude what's open without grepping multi-session JSONL history.
+**Only `pending.md`.** The previous protocol prescribed four files (`transcript.md` / `session-notes.md` / `decisions.md` / `pending.md`); all but `pending.md` were dropped as redundant with the JSONL session log. The JSONL captures every user message, every response, every tool call, every result — verbatim with timestamps — so re-summarizing them in narrative or transcript form is duplicated work the JSONL already did better. `pending.md` is the one piece JSONL doesn't expose conveniently: a maintained carry-forward list survives across sessions and tells fresh-session Claude what's open without grepping multi-session JSONL history.
 
 ### CHECK-IN at session start
 
@@ -68,21 +68,21 @@ Contents:
 
 ### At session end (WRAP-UP)
 
-**Update `pending.md`** in the current session folder. That's the entire wrap protocol. No transcript, no narrative session-notes, no decisions doc — the JSONL already has all of that and re-summarizing it is wasted bandwidth (Stan's directive 2026-05-05; see `feedback_drop_redundant_wrap_docs.md`).
+**Update `pending.md`** in the current session folder. That's the entire wrap protocol. No transcript, no narrative session-notes, no decisions doc — the JSONL already has all of that and re-summarizing it is wasted bandwidth (see `feedback_drop_redundant_wrap_docs.md`).
 
 `pending.md` should be a tight bullet list: items deferred this session, items still open from prior sessions, HEAD pointer + cache version, anything fresh-session Claude needs to know that isn't already in CLAUDE.md or canon. Append, don't narrate. If a carry-forward item later closes, delete its bullet rather than rewriting history.
 
 Commit any code/corpus changes before wrapping. Session folder files live in gitignored `private/` so they don't need committing. Canon changes require `git add -f private/01-method/colometry-canon.md` per §Canon-to-git policy below.
 
-**Self-consistency audit trigger (added 2026-04-22 from GNT cross-project directive):** If the session added **≥2 new canon subsections/rules/merge-overrides**, run a light self-consistency audit before wrap — check that new cross-references resolve, no contradictions with existing rules, all three defensibility elements (WHY/HOW WE KNOW/SCOPE per canon §7) are present. Short pass. See canon §7 for the full trigger description.
+**Self-consistency audit trigger:** If the session added **≥2 new canon subsections/rules/merge-overrides**, run a light self-consistency audit before wrap — check that new cross-references resolve, no contradictions with existing rules, all three defensibility elements (WHY/HOW WE KNOW/SCOPE per canon §7) are present. Short pass. See canon §7 for the full trigger description.
 
-**Carry-forward discipline (added 2026-04-22):** Anything noted as "defer to future session" anywhere in the session's documentation MUST get a corresponding line in `pending.md`. Canon §8 notes and agent reports do not survive session boundaries — only `pending.md` does. If you say "defer," write it to `pending.md`. (Even more important now that `pending.md` is the only wrap doc.)
+**Carry-forward discipline:** Anything noted as "defer to future session" anywhere in the session's documentation MUST get a corresponding line in `pending.md`. Agent reports and chat-window discussion do not survive session boundaries — only `pending.md` does. If you say "defer," write it to `pending.md`.
 
 ### Compaction-resume
 
 Compaction is a session boundary. When resuming from a compaction summary, still execute the full CHECK-IN protocol above. Compaction gives context but does not exercise the orientation muscles — silent skip is a check-in failure. Per the session folder convention: a compaction-wake creates a NEW session folder with a new descriptor, even if the calendar date matches the pre-compaction folder.
 
-### Canon-to-git policy (adopted 2026-04-20 PM from cross-project directive)
+### Canon-to-git policy
 
 **`private/` is gitignored EXCEPT for two tracked exceptions: `private/01-method/colometry-canon.md` and `private/01-method/pericope-canon.md`.** Both canons are tracked via `git add -f` so the public repo shows their current form to any future scholar or collaborator reading the method docs. Colometry governs LINE breaks (within-verse cola); pericope governs SECTION breaks (multi-verse natural-unit boundaries).
 
@@ -144,7 +144,7 @@ This overrides all other rules. A line that passes this test is valid. A line th
 
 - **Atomic thought:** the reader can process this line as a single unit of meaning without needing the next line to resolve it
 
-(Earlier "atomic breath unit" framing was retired 2026-04-19 PM and confirmed not pragmatically relevant 2026-04-27; see canon §1 line 249 retirement note.)
+(Earlier "atomic breath unit" framing was retired and confirmed not pragmatically relevant; see canon §1 line 249 retirement note.)
 
 ### The Image Test
 Each line should paint a single image or picture in the mind. If a line contains two distinct images, it's a candidate for splitting. If a line contains no complete image, it may need merging with its neighbor.
@@ -162,7 +162,7 @@ Full settled-rules list authoritative at `private/01-method/colometry-canon.md` 
 1. **AICTP integrity** — "And it came to pass that" stays on one line; never break mid-phrase. "Dangling that" variant: break BEFORE "that" so it leads the next line.
 2. **Never end a line on a conjunction or article** — "and," "or," "but," "nor," "the," "a," "an" dangling at line end is always wrong. Move to lead the next line.
 3. **Vocative units are indivisible** — "O Lord God," and "O Lord our God," stay whole; never split mid-address.
-4. **Complement Integrity (Rule 17, generalized 2026-04-17)** — causative, aspectual, speech (indirect), cognition, volition, and FEF verbs require their "that"-clause complement on the same line. Six explicit exceptions live in the canon.
+4. **Complement Integrity (Rule 17, generalized)** — causative, aspectual, speech (indirect), cognition, volition, and FEF verbs require their "that"-clause complement on the same line. Six explicit exceptions live in the canon.
 
 ### Three Categories for Proposed Changes
 
@@ -298,29 +298,29 @@ When dispatching subagents via the Agent tool:
 
 When in doubt, Sonnet is the right default. Stan shouldn't have to think about this — you make the call.
 
-**Parallelization default (added 2026-04-23).** When multiple audits are independent, dispatch them in parallel — one message with multiple Agent tool calls. Sequential only when audit A's verdict determines whether audit B should run. This substantially reduces audit friction (demonstrated 2026-04-23: 3 parallel audits at ~26 seconds each vs. ~80+ seconds sequential). Applies equally to non-audit subagent dispatches when they are independent.
+**Parallelization default.** When multiple audits are independent, dispatch them in parallel — one message with multiple Agent tool calls. Sequential only when audit A's verdict determines whether audit B should run. This substantially reduces audit friction (3 parallel audits at ~26 seconds each vs. ~80+ seconds sequential). Applies equally to non-audit subagent dispatches when they are independent.
 
-**Horde-amplification ceiling (added 2026-04-28, ported from tanakh).** The 3-audit baseline above is the floor, not the ceiling. When work decomposes into N≥4 independent units, dispatch all N — not 1 agent doing N dimensions sequentially. Stan's correction: *"4-8x more agents on everything going forward unless it's a genuine single-point exercise."* Decompose audits per-dimension, corpus surveys per-book, fixture inventories per-fixture, validator builds per-subcase. Pre-spawn next-wave verification/integration agents BEFORE the producing wave finishes so the next wave doesn't gate-stall on completion. See `feedback_parallel_horde_default.md` for the full discipline.
+**Horde-amplification ceiling.** The 3-audit baseline above is the floor, not the ceiling. When work decomposes into N≥4 independent units, dispatch all N — not 1 agent doing N dimensions sequentially. Stan's correction: *"4-8x more agents on everything going forward unless it's a genuine single-point exercise."* Decompose audits per-dimension, corpus surveys per-book, fixture inventories per-fixture, validator builds per-subcase. Pre-spawn next-wave verification/integration agents BEFORE the producing wave finishes so the next wave doesn't gate-stall on completion. See `feedback_parallel_horde_default.md` for the full discipline.
 
-## Pre-commit adversarial-audit discipline (added 2026-04-23)
+## Pre-commit adversarial-audit discipline
 
-**Before any commit that includes `git add -f private/01-method/colometry-canon.md`, check whether the change matches a mandatory-audit trigger per canon §7.3.** The 12 triggers are listed in canon §7; re-read them when uncertain. If the change matches any trigger, audit evidence (hostile-agent dispatch + verdict + application) must be present in the commit message or the canon §8 Update Log entry.
+**Before any commit that includes `git add -f private/01-method/colometry-canon.md`, check whether the change matches a mandatory-audit trigger per canon §7.3.** The 12 triggers are listed in canon §7; re-read them when uncertain. If the change matches any trigger, audit evidence (hostile-agent dispatch + verdict + application) must be present in the commit message itself.
 
 **Audit-skippable.** Canon edits that do NOT match any trigger (typo fixes, cross-reference updates without precedence claims, deletions of same-session reverts, defensibility-capture additions to already-settled rules without scope changes, Category A mechanical corpus edits that are not part of a ≥5-instance sweep) proceed without audit.
 
 **When uncertain.** Dispatch the audit. The cost of a false-positive audit (Stan reads a no-op audit result) is small; the cost of a false-negative audit (fake rule commits) is large.
 
-**Required commit-message declaration (added 2026-04-28, ported from tanakh-reader).** Every commit message that touches `private/01-method/colometry-canon.md` must declare audit-status explicitly: either `Audit-skippable per §7.3 ([reason])` with the reason citing one of the named audit-skippable categories above, OR `Audit dispatched: [evidence]` with concrete reference (parallel-agent verdicts, §8 entry, prior-commit pointer). Omission is itself a discipline failure — visible at a glance in `git log`. The mechanical gate (`validators/hooks/commit-msg` via `check_canon_extensions.py`) detects extension patterns and requires an audit-evidence keyword; the explicit declaration is the editor-side discipline that front-loads (and complements) the gate.
+**Required commit-message declaration.** Every commit message that touches `private/01-method/colometry-canon.md` must declare audit-status explicitly: either `Audit-skippable per §7.3 ([reason])` with the reason citing one of the named audit-skippable categories above, OR `Audit dispatched: [evidence]` with concrete reference (parallel-agent verdicts, prior-commit pointer). Omission is itself a discipline failure — visible at a glance in `git log`. The mechanical gate (`validators/hooks/commit-msg` via `check_canon_extensions.py`) detects extension patterns and requires an audit-evidence keyword; the explicit declaration is the editor-side discipline that front-loads (and complements) the gate.
 
-**Mechanical gates installed (2026-04-26 / 2026-04-27, hardened 2026-04-28):**
+**Mechanical gates installed:**
 - `validators/run_all.py --baseline-check` runs all syntax/colometry validators against the corpus and blocks commits introducing regressions vs `validators/.baseline.json`. Wired as `.git/hooks/pre-commit` via `bash validators/hooks/install.sh`.
-- `validators/check_canon_extensions.py` analyzes staged canon diffs for §7.3 trigger #1 patterns (new closed-list rows, new rule sections, new merge-overrides, new dated principles, new trigger entries, new SCOPE-exclusion bullets, **plus catch-all H3 principle headings and bolded-label bullets — c-bis/g, ported from tanakh 2026-04-28**) and requires the commit message to contain a strong-signal audit keyword (`hostile audit`, `audit dispatched`, `audit complete`/`completed`/`verified`/`verdict`/`run`, `trigger #`, `§7.3`, `§7`, `post-codification`, `post-detection`, `corpus-fit`, `RETRACT`, `§8 update log`) — bare `audit` alone no longer passes — or skip-safe claim (`typo fix`, `cross-reference update`, `defensibility-capture`, `audit-skippable`) — or `stan-authorized` / `stan-direct`. **Negation guards**: phrases like `no audit`, `without audit`, `audit pending`, `todo: audit`, `fake commit` fail the gate regardless of any positive keyword. Wired as `.git/hooks/commit-msg`. Closes the gap that `--baseline-check` can't catch. Bypass: `git commit --no-verify` (Stan-only).
+- `validators/check_canon_extensions.py` analyzes staged canon diffs for §7.3 trigger #1 patterns (new closed-list rows, new rule sections, new merge-overrides, new dated principles, new trigger entries, new SCOPE-exclusion bullets, **plus catch-all H3 principle headings and bolded-label bullets — c-bis/g**) and requires the commit message to contain a strong-signal audit keyword (`hostile audit`, `audit dispatched`, `audit complete`/`completed`/`verified`/`verdict`/`run`, `trigger #`, `§7.3`, `§7`, `post-codification`, `post-detection`, `corpus-fit`, `RETRACT`) — bare `audit` alone no longer passes — or skip-safe claim (`typo fix`, `cross-reference update`, `defensibility-capture`, `audit-skippable`) — or `stan-authorized` / `stan-direct`. **Negation guards**: phrases like `no audit`, `without audit`, `audit pending`, `todo: audit`, `fake commit` fail the gate regardless of any positive keyword. Wired as `.git/hooks/commit-msg`. Closes the gap that `--baseline-check` can't catch. Bypass: `git commit --no-verify` (Stan-only).
 
 **Self-test to run pre-commit** (faster than trigger-list scan):
 - Does this change include a scope claim, a precedence claim, a closed-list extension, or a named-category carve-out? → audit.
 - Does this change rest on spot-check evidence rather than a full-corpus classification? → audit.
 - Does this change reclassify or delete previously-settled canon content? → audit.
-- Did this session codify a new rule, sub-clause, or named pattern, AND has the corpus-fit sweep NOT yet been run on the full corpus (per canon §7.3 trigger #12, added 2026-04-25)? → run goal-fit + application-consistency audits before commit, OR enumerate residuals in pending.md as next-session FIRST item. The codifying sweep saw what the codifier looked at; the goal-fit sweep finds what they didn't.
+- Did this session codify a new rule, sub-clause, or named pattern, AND has the corpus-fit sweep NOT yet been run on the full corpus (per canon §7.3 trigger #12)? → run goal-fit + application-consistency audits before commit, OR enumerate residuals in pending.md as next-session FIRST item. The codifying sweep saw what the codifier looked at; the goal-fit sweep finds what they didn't.
 - If no to all four → probably skip-safe.
 
 This discipline is codified in canon §2 (scope/precedence/closed-list/carve-out = Category B diagnostic) and canon §7.3 (mandatory-audit trigger list). See also the `feedback_rhetoric_bandwagon` memory's named-category-carve-out and biased-spot-check sub-patterns.
