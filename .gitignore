@@ -1,6 +1,9 @@
 __pycache__/
 *.pyc
 
+# Python virtualenv (NLP parsers, etc.)
+.venv/
+
 # Audio zip bundles (too large for GitHub; individual MP3s are fine)
 audio/*.zip
 
