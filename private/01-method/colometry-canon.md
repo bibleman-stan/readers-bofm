@@ -631,11 +631,11 @@ Validators: `validators/syntax/validate_line_final_tokens.py` (simple AUX+V) AND
 
 ### Rule 17 — Complement Integrity
 
-**Grammatical basis.** Verbs and predicative adjectives requiring a clausal complement (a *that*-clause or infinitive) form one integrated predication with their complement. The matrix verb alone does not express a complete thought.
+**Grammatical basis.** Verbs and predicative adjectives requiring a clausal complement form one integrated predication with their complement. The matrix verb alone does not express a complete thought. The complement may be marked by *that*, an infinitival *to*, or an indirect-interrogative marker (*whether*, *if*, or a WH-word — *to know whether...*, *to ask how...*, *to see what...*).
 
-**UD signature.** `ccomp(V, clause)` with `mark(clause, that)` where V belongs to one of six closed-list verb classes (table below).
+**UD signature.** `ccomp(V, clause)` with `mark(clause)` ∈ {*that*, *whether*, *if*, WH-word} OR `xcomp(V, infinitive)`, where V belongs to one of six closed-list verb classes (table below).
 
-**Diagnostic.** Matrix verb and its *that*-clause complement stay on the same line. When combined length exceeds a natural line, prefer an alternative restructuring over a mid-predication break.
+**Diagnostic.** Matrix verb and its clausal complement stay on the same line. When combined length exceeds a natural line, prefer an alternative restructuring over a mid-predication break.
 
 **Verb classes in scope:**
 
