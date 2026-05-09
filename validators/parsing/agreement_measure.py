@@ -123,24 +123,31 @@ def align_by_surface(parser_tokens: dict[str, list[Token]]) -> list[dict[str, To
 
 
 def categorize_agreement(aligned: list[dict[str, Token]]) -> dict:
-    """Categorize each aligned position by signature agreement."""
+    """Categorize each aligned position by signature agreement.
+
+    For N parsers:
+      FULL    — all N agree
+      STRONG  — N-1 agree (one minority), only meaningful for N >= 3
+      SPLIT   — exactly 2 distinct signatures (any split)
+      NONE    — N distinct signatures (max diversity)
+    """
     parser_names = list(aligned[0].keys()) if aligned else []
     categories = {"FULL": [], "STRONG": [], "SPLIT": [], "NONE": []}
     feature_agreement = {
         "pos": 0, "lemma": 0, "head": 0, "deprel": 0
     }
+    n = len(parser_names)
 
     for pos_idx, tokens in enumerate(aligned):
         sigs = [t.signature() for t in tokens.values()]
         sig_counts = Counter(sigs)
         most_common, count = sig_counts.most_common(1)[0]
 
-        n = len(parser_names)
         if count == n:
             cat = "FULL"
-        elif count == n - 1:
+        elif n >= 3 and count == n - 1:
             cat = "STRONG"
-        elif count >= 2 and len(sig_counts) == 2:
+        elif len(sig_counts) == 2:
             cat = "SPLIT"
         else:
             cat = "NONE"
@@ -220,20 +227,22 @@ def report(agreement: dict, sample_size: int = 5) -> None:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--stanza", type=Path, required=True)
-    ap.add_argument("--spacy", type=Path, required=True)
-    ap.add_argument("--trankit", type=Path, required=True)
-    ap.add_argument("--udpipe", type=Path, required=True)
+    ap.add_argument("--stanza", type=Path)
+    ap.add_argument("--spacy", type=Path)
+    ap.add_argument("--trankit", type=Path)
+    ap.add_argument("--udpipe", type=Path)
     ap.add_argument("--sample-size", type=int, default=5,
                     help="Number of disagreements to show per category (default 5)")
     args = ap.parse_args()
 
     parser_paths = {
-        "stanza": args.stanza,
-        "spacy": args.spacy,
-        "trankit": args.trankit,
-        "udpipe": args.udpipe,
+        name: getattr(args, name)
+        for name in ("stanza", "spacy", "trankit", "udpipe")
+        if getattr(args, name) is not None
     }
+    if len(parser_paths) < 2:
+        print("ERROR: at least 2 parsers required for agreement measurement", file=sys.stderr)
+        sys.exit(2)
 
     # Load each parser's output
     parser_tokens = {}

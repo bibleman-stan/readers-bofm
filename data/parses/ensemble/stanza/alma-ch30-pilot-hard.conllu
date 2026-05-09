@@ -1,0 +1,57 @@
+# text = Now their dead were not numbered because of the greatness of their numbers; neither were the dead of the Nephites numbered.
+# sent_id = pilot-hard-1
+1	Now	now	ADV	RB	_	6	advmod	_	start_char=0|end_char=3
+2	their	their	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	start_char=4|end_char=9
+3	dead	dead	ADJ	JJ	Degree=Pos	6	nsubj:pass	_	start_char=10|end_char=14
+4	were	be	AUX	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	_	start_char=15|end_char=19
+5	not	not	PART	RB	Polarity=Neg	6	advmod	_	start_char=20|end_char=23
+6	numbered	number	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	start_char=24|end_char=32
+7	because	because	ADP	IN	ExtPos=ADP	10	case	_	start_char=33|end_char=40
+8	of	of	ADP	IN	_	7	fixed	_	start_char=41|end_char=43
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	start_char=44|end_char=47
+10	greatness	greatness	NOUN	NN	Number=Sing	6	obl	_	start_char=48|end_char=57
+11	of	of	ADP	IN	_	13	case	_	start_char=58|end_char=60
+12	their	their	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	start_char=61|end_char=66
+13	numbers	number	NOUN	NNS	Number=Plur	10	nmod	_	SpaceAfter=No|start_char=67|end_char=74
+14	;	;	PUNCT	:	_	18	punct	_	start_char=74|end_char=75
+15	neither	neither	CCONJ	CC	Polarity=Neg	18	nsubj	_	start_char=76|end_char=83
+16	were	be	AUX	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	cop	_	start_char=84|end_char=88
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	start_char=89|end_char=92
+18	dead	dead	ADJ	JJ	Degree=Pos	22	nsubj	_	start_char=93|end_char=97
+19	of	of	ADP	IN	_	21	case	_	start_char=98|end_char=100
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	start_char=101|end_char=104
+21	Nephites	Nephites	PROPN	NNPS	Number=Plur	18	nmod	_	start_char=105|end_char=113
+22	numbered	number	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	parataxis	_	SpaceAfter=No|start_char=114|end_char=122
+23	.	.	PUNCT	.	_	6	punct	_	SpaceAfter=No|start_char=122|end_char=123
+
+# text = Behold, these things which ye call prophecies, which ye say are handed down by holy prophets, behold, they are foolish traditions of your fathers.
+# sent_id = pilot-hard-2
+1	Behold	behold	INTJ	UH	_	25	discourse	_	SpaceAfter=No|start_char=0|end_char=6
+2	,	,	PUNCT	,	_	1	punct	_	start_char=6|end_char=7
+3	these	this	DET	DT	Number=Plur|PronType=Dem	4	det	_	start_char=8|end_char=13
+4	things	thing	NOUN	NNS	Number=Plur	25	nsubj	_	start_char=14|end_char=20
+5	which	which	PRON	WDT	PronType=Rel	7	obj	_	start_char=21|end_char=26
+6	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	start_char=27|end_char=29
+7	call	call	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	start_char=30|end_char=34
+8	prophecies	prophecy	NOUN	NNS	Number=Plur	7	obj	_	SpaceAfter=No|start_char=35|end_char=45
+9	,	,	PUNCT	,	_	12	punct	_	start_char=45|end_char=46
+10	which	which	PRON	WDT	PronType=Rel	14	nsubj:pass	_	start_char=47|end_char=52
+11	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	12	nsubj	_	start_char=53|end_char=55
+12	say	say	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	start_char=56|end_char=59
+13	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	_	start_char=60|end_char=63
+14	handed	hand	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	acl:relcl	_	start_char=64|end_char=70
+15	down	down	ADP	RP	_	14	compound:prt	_	start_char=71|end_char=75
+16	by	by	ADP	IN	_	18	case	_	start_char=76|end_char=78
+17	holy	holy	ADJ	JJ	Degree=Pos	18	amod	_	start_char=79|end_char=83
+18	prophets	prophet	NOUN	NNS	Number=Plur	14	obl:agent	_	SpaceAfter=No|start_char=84|end_char=92
+19	,	,	PUNCT	,	_	4	punct	_	start_char=92|end_char=93
+20	behold	behold	INTJ	UH	_	25	discourse	_	SpaceAfter=No|start_char=94|end_char=100
+21	,	,	PUNCT	,	_	20	punct	_	start_char=100|end_char=101
+22	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	25	nsubj	_	start_char=102|end_char=106
+23	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	start_char=107|end_char=110
+24	foolish	foolish	ADJ	JJ	Degree=Pos	25	amod	_	start_char=111|end_char=118
+25	traditions	tradition	NOUN	NNS	Number=Plur	0	root	_	start_char=119|end_char=129
+26	of	of	ADP	IN	_	28	case	_	start_char=130|end_char=132
+27	your	your	PRON	PRP$	Case=Gen|Person=2|Poss=Yes|PronType=Prs	28	nmod:poss	_	start_char=133|end_char=137
+28	fathers	father	NOUN	NNS	Number=Plur	25	nmod	_	SpaceAfter=No|start_char=138|end_char=145
+29	.	.	PUNCT	.	_	25	punct	_	SpaceAfter=No|start_char=145|end_char=146
