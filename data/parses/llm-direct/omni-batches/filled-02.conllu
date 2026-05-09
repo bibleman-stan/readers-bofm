@@ -1,0 +1,550 @@
+# text = Behold, it came to pass that I saw much war and contention between my people, the Nephites, and the Lamanites; and I, with my own sword, have taken the lives of many of the Lamanites in the defence of my brethren.
+# sent_id = 15
+# llm_note = AICTP; "Nephites" appos of "people"(16); second clause "I...have taken" conj of "saw"(9), subject "I"(26); "with my own sword" obl instrument; "many of the Lamanites" — "many" head, "of the Lamanites" nmod.
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	expl	_	_
+4	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	9	mark	_	_
+8	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	9	nsubj	_	_
+9	saw	see	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	6	ccomp	_	_
+10	much	much	ADJ	JJ	_	11	amod	_	_
+11	war	war	NOUN	NN	Number=Sing	9	obj	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	contention	contention	NOUN	NN	Number=Sing	11	conj	_	_
+14	between	between	ADP	IN	_	16	case	_	_
+15	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	16	nmod:poss	_	_
+16	people	people	NOUN	NN	Number=Sing	9	obl	_	_
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	Nephites	Nephite	PROPN	NNPS	Number=Plur	16	appos	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	16	conj	_	_
+24	;	;	PUNCT	,	_	34	punct	_	_
+25	and	and	CCONJ	CC	_	34	cc	_	_
+26	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	34	nsubj	_	_
+27	,	,	PUNCT	,	_	31	punct	_	_
+28	with	with	ADP	IN	_	31	case	_	_
+29	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	31	nmod:poss	_	_
+30	own	own	ADJ	JJ	_	31	amod	_	_
+31	sword	sword	NOUN	NN	Number=Sing	34	obl	_	_
+32	,	,	PUNCT	,	_	31	punct	_	_
+33	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	34	aux	_	_
+34	taken	take	VERB	VBN	Tense=Past|VerbForm=Part	9	conj	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	lives	life	NOUN	NNS	Number=Plur	34	obj	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	many	many	PRON	JJ	_	36	nmod	_	_
+39	of	of	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	Definite=Def|PronType=Art	41	det	_	_
+41	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	38	nmod	_	_
+42	in	in	ADP	IN	_	44	case	_	_
+43	the	the	DET	DT	Definite=Def|PronType=Art	44	det	_	_
+44	defence	defence	NOUN	NN	Number=Sing	34	obl	_	_
+45	of	of	ADP	IN	_	47	case	_	_
+46	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	47	nmod:poss	_	_
+47	brethren	brethren	NOUN	NNS	Number=Plur	44	nmod	_	_
+48	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And behold, the record of this people is engraven upon plates which is had by the kings, according to the generations; and I know of no revelation save that which has been written, neither prophecy; wherefore, that which is sufficient is written.
+# sent_id = 16
+# llm_note = "behold" INTJ; "engraven" — passive participle (archaic past-part of "engrave"), "is"(9) cop/aux:pass; "which is had by the kings" — acl:relcl on "plates"(12), "had" VBN passive, "is"(14) aux:pass; "neither prophecy" — "neither" ADV, "prophecy"(39) conj of "revelation"(30) under negation; "wherefore" ADV; final clause "that which is sufficient is written" — "that"(43) DEM pronoun, "which is sufficient" acl:relcl, "is written" passive.
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	behold	behold	INTJ	UH	_	10	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	record	record	NOUN	NN	Number=Sing	10	nsubj:pass	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	this	this	DET	DT	Number=Sing|PronType=Dem	8	det	_	_
+8	people	people	NOUN	NN	Number=Sing	5	nmod	_	_
+9	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_
+10	engraven	engrave	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+11	upon	upon	ADP	IN	_	12	case	_	_
+12	plates	plate	NOUN	NNS	Number=Plur	10	obl	_	_
+13	which	which	PRON	WDT	PronType=Rel	15	nsubj:pass	_	_
+14	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_
+15	had	have	VERB	VBN	Tense=Past|VerbForm=Part	12	acl:relcl	_	_
+16	by	by	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	kings	king	NOUN	NNS	Number=Plur	15	obl:agent	_	_
+19	,	,	PUNCT	,	_	15	punct	_	_
+20	according	according	ADP	IN	_	23	case	_	_
+21	to	to	ADP	IN	_	20	fixed	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	generations	generation	NOUN	NNS	Number=Plur	15	obl	_	_
+24	;	;	PUNCT	,	_	27	punct	_	_
+25	and	and	CCONJ	CC	_	27	cc	_	_
+26	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	27	nsubj	_	_
+27	know	know	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	conj	_	_
+28	of	of	ADP	IN	_	30	case	_	_
+29	no	no	DET	DT	Polarity=Neg	30	det	_	_
+30	revelation	revelation	NOUN	NN	Number=Sing	27	obl	_	_
+31	save	save	SCONJ	IN	_	36	mark	_	_
+32	that	that	PRON	DT	PronType=Dem	36	nsubj:pass	_	_
+33	which	which	PRON	WDT	PronType=Rel	36	nsubj:pass	_	_
+34	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	aux	_	_
+35	been	be	AUX	VBN	Tense=Past|VerbForm=Part	36	aux:pass	_	_
+36	written	write	VERB	VBN	Tense=Past|VerbForm=Part	30	acl	_	_
+37	,	,	PUNCT	,	_	39	punct	_	_
+38	neither	neither	ADV	RB	_	39	advmod	_	_
+39	prophecy	prophecy	NOUN	NN	Number=Sing	30	conj	_	_
+40	;	;	PUNCT	,	_	48	punct	_	_
+41	wherefore	wherefore	ADV	RB	_	48	advmod	_	_
+42	,	,	PUNCT	,	_	41	punct	_	_
+43	that	that	PRON	DT	PronType=Dem	48	nsubj:pass	_	_
+44	which	which	PRON	WDT	PronType=Rel	46	nsubj	_	_
+45	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	46	cop	_	_
+46	sufficient	sufficient	ADJ	JJ	_	43	acl:relcl	_	_
+47	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	48	aux:pass	_	_
+48	written	write	VERB	VBN	Tense=Past|VerbForm=Part	10	conj	_	_
+49	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And I make an end.
+# sent_id = 17
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	make	make	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	an	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
+5	end	end	NOUN	NN	Number=Sing	3	obj	_	_
+6	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, I am Amaleki, the son of Abinadom.
+# sent_id = 18
+# llm_note = Copular; "am" cop; "Amaleki" predicative root; "the son of Abinadom" appos of Amaleki.
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	5	nsubj	_	_
+4	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	Amaleki	Amaleki	PROPN	NNP	_	0	root	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	son	son	NOUN	NN	Number=Sing	5	appos	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Abinadom	Abinadom	PROPN	NNP	_	8	nmod	_	_
+11	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Behold, I will speak unto you somewhat concerning Mosiah, who was made king over the land of Zarahemla; for behold, he being warned of the Lord that he should flee out of the land of Nephi, and as many as would hearken unto the voice of the Lord should also depart out of the land with him, into the wilderness--
+# sent_id = 19
+# llm_note = Complex sentence with an interrupted "for behold" subordinate clause. Root is "speak"(5). "Mosiah" is obl of "speak" (via "concerning"); "who was made king" acl:relcl on "Mosiah"; "for behold" introduces causal explanation: "he being warned..." is an absolute participial construction; "warned"(27) is the participial head, "he"(25) its nsubj; "that he should flee" (31-34) is a ccomp of "warned"; "and as many as would hearken...should also depart" is a conj clause sharing the broader "for behold" causal context; "as many as would hearken" — "many"(44) is head, "as...as" correlative relative; "should also depart" has "depart"(56) as head; "into the wilderness" obl of "depart"; "--" PUNCT trailing dash.
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	5	nsubj	_	_
+4	will	will	AUX	MD	VerbForm=Fin	5	aux	_	_
+5	speak	speak	VERB	VB	VerbForm=Inf	0	root	_	_
+6	unto	unto	ADP	IN	_	7	case	_	_
+7	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	5	obl	_	_
+8	somewhat	somewhat	ADV	RB	_	5	advmod	_	_
+9	concerning	concerning	ADP	IN	_	10	case	_	_
+10	Mosiah	Mosiah	PROPN	NNP	_	5	obl	_	_
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	who	who	PRON	WP	PronType=Rel	14	nsubj:pass	_	_
+13	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	aux:pass	_	_
+14	made	make	VERB	VBN	Tense=Past|VerbForm=Part	10	acl:relcl	_	_
+15	king	king	NOUN	NN	Number=Sing	14	xcomp	_	_
+16	over	over	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	land	land	NOUN	NN	Number=Sing	15	nmod	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Zarahemla	Zarahemla	PROPN	NNP	_	18	nmod	_	_
+21	;	;	PUNCT	,	_	27	punct	_	_
+22	for	for	SCONJ	IN	_	27	mark	_	_
+23	behold	behold	INTJ	UH	_	27	discourse	_	_
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	27	nsubj	_	_
+26	being	be	AUX	VBG	VerbForm=Part	27	aux:pass	_	_
+27	warned	warn	VERB	VBN	Tense=Past|VerbForm=Part	5	advcl	_	_
+28	of	of	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	Lord	Lord	PROPN	NNP	_	27	obl:agent	_	_
+31	that	that	SCONJ	IN	_	34	mark	_	_
+32	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	34	nsubj	_	_
+33	should	shall	AUX	MD	VerbForm=Fin	34	aux	_	_
+34	flee	flee	VERB	VB	VerbForm=Inf	27	ccomp	_	_
+35	out	out	ADP	RP	_	38	case	_	_
+36	of	of	ADP	IN	_	35	fixed	_	_
+37	the	the	DET	DT	Definite=Def|PronType=Art	38	det	_	_
+38	land	land	NOUN	NN	Number=Sing	34	obl	_	_
+39	of	of	ADP	IN	_	40	case	_	_
+40	Nephi	Nephi	PROPN	NNP	_	38	nmod	_	_
+41	,	,	PUNCT	,	_	56	punct	_	_
+42	and	and	CCONJ	CC	_	56	cc	_	_
+43	as	as	ADV	RB	_	44	advmod	_	_
+44	many	many	PRON	JJ	_	56	nsubj	_	_
+45	as	as	SCONJ	IN	_	47	mark	_	_
+46	would	will	AUX	MD	VerbForm=Fin	47	aux	_	_
+47	hearken	hearken	VERB	VB	VerbForm=Inf	44	acl:relcl	_	_
+48	unto	unto	ADP	IN	_	50	case	_	_
+49	the	the	DET	DT	Definite=Def|PronType=Art	50	det	_	_
+50	voice	voice	NOUN	NN	Number=Sing	47	obl	_	_
+51	of	of	ADP	IN	_	53	case	_	_
+52	the	the	DET	DT	Definite=Def|PronType=Art	53	det	_	_
+53	Lord	Lord	PROPN	NNP	_	50	nmod	_	_
+54	should	shall	AUX	MD	VerbForm=Fin	56	aux	_	_
+55	also	also	ADV	RB	_	56	advmod	_	_
+56	depart	depart	VERB	VB	VerbForm=Inf	34	conj	_	_
+57	out	out	ADP	RP	_	60	case	_	_
+58	of	of	ADP	IN	_	57	fixed	_	_
+59	the	the	DET	DT	Definite=Def|PronType=Art	60	det	_	_
+60	land	land	NOUN	NN	Number=Sing	56	obl	_	_
+61	with	with	ADP	IN	_	62	case	_	_
+62	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	56	obl	_	_
+63	,	,	PUNCT	,	_	66	punct	_	_
+64	into	into	ADP	IN	_	66	case	_	_
+65	the	the	DET	DT	Definite=Def|PronType=Art	66	det	_	_
+66	wilderness	wilderness	NOUN	NN	Number=Sing	56	obl	_	_
+67	--	--	PUNCT	:	_	5	punct	_	_
+
+# text = And it came to pass that he did according as the Lord had commanded him.
+# sent_id = 20
+# llm_note = AICTP; "did according as the Lord had commanded him" — "did" is main VERB here (meaning "acted/performed"), "according as" is SCONJ introducing advcl "the Lord had commanded him".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_
+8	did	do	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	according	according	ADV	RB	_	8	advmod	_	_
+10	as	as	SCONJ	IN	_	14	mark	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	Lord	Lord	PROPN	NNP	_	14	nsubj	_	_
+13	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	aux	_	_
+14	commanded	command	VERB	VBN	Tense=Past|VerbForm=Part	8	advcl	_	_
+15	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	obj	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And they departed out of the land into the wilderness, as many as would hearken unto the voice of the Lord; and they were led by many preachings and prophesyings.
+# sent_id = 21
+# llm_note = "departed out of the land" — "out of" compound preposition, "land" obl; "as many as would hearken" — free relative/appositive phrase, "many"(13) head; second clause "they were led" passive, conj of "departed"(3).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	3	nsubj	_	_
+3	departed	depart	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	out	out	ADP	RP	_	7	case	_	_
+5	of	of	ADP	IN	_	4	fixed	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	land	land	NOUN	NN	Number=Sing	3	obl	_	_
+8	into	into	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	wilderness	wilderness	NOUN	NN	Number=Sing	3	obl	_	_
+11	,	,	PUNCT	,	_	13	punct	_	_
+12	as	as	ADV	RB	_	13	advmod	_	_
+13	many	many	PRON	JJ	_	3	appos	_	_
+14	as	as	SCONJ	IN	_	16	mark	_	_
+15	would	will	AUX	MD	VerbForm=Fin	16	aux	_	_
+16	hearken	hearken	VERB	VB	VerbForm=Inf	13	acl:relcl	_	_
+17	unto	unto	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	voice	voice	NOUN	NN	Number=Sing	16	obl	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	Lord	Lord	PROPN	NNP	_	19	nmod	_	_
+23	;	;	PUNCT	,	_	27	punct	_	_
+24	and	and	CCONJ	CC	_	27	cc	_	_
+25	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	27	nsubj:pass	_	_
+26	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	aux:pass	_	_
+27	led	lead	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	_
+28	by	by	ADP	IN	_	30	case	_	_
+29	many	many	ADJ	JJ	_	30	amod	_	_
+30	preachings	preaching	NOUN	NNS	Number=Plur	27	obl:agent	_	_
+31	and	and	CCONJ	CC	_	32	cc	_	_
+32	prophesyings	prophesying	NOUN	NNS	Number=Plur	30	conj	_	_
+33	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And they were admonished continually by the word of God; and they were led by the power of his arm, through the wilderness until they came down into the land which is called the land of Zarahemla.
+# sent_id = 22
+# llm_note = Two passive clauses conjoined. "came down" — "down" compound:prt; "into the land" obl of "came"; "which is called the land of Zarahemla" — acl:relcl on "land"(32); "the land of Zarahemla"(37-39) is xcomp of "called"(35).
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	4	nsubj:pass	_	_
+3	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
+4	admonished	admonish	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	continually	continually	ADV	RB	_	4	advmod	_	_
+6	by	by	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	word	word	NOUN	NN	Number=Sing	4	obl:agent	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	God	God	PROPN	NNP	_	8	nmod	_	_
+11	;	;	PUNCT	,	_	15	punct	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	15	nsubj:pass	_	_
+14	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	aux:pass	_	_
+15	led	lead	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	_
+16	by	by	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	power	power	NOUN	NN	Number=Sing	15	obl:agent	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	his	he	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes	21	nmod:poss	_	_
+21	arm	arm	NOUN	NN	Number=Sing	18	nmod	_	_
+22	,	,	PUNCT	,	_	25	punct	_	_
+23	through	through	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	wilderness	wilderness	NOUN	NN	Number=Sing	15	obl	_	_
+26	until	until	SCONJ	IN	_	28	mark	_	_
+27	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	28	nsubj	_	_
+28	came	come	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	15	advcl	_	_
+29	down	down	ADV	RB	_	28	compound:prt	_	_
+30	into	into	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	land	land	NOUN	NN	Number=Sing	28	obl	_	_
+33	which	which	PRON	WDT	PronType=Rel	35	nsubj:pass	_	_
+34	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux:pass	_	_
+35	called	call	VERB	VBN	Tense=Past|VerbForm=Part	32	acl:relcl	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+37	land	land	NOUN	NN	Number=Sing	35	xcomp	_	_
+38	of	of	ADP	IN	_	39	case	_	_
+39	Zarahemla	Zarahemla	PROPN	NNP	_	37	nmod	_	_
+40	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And they discovered a people, who were called the people of Zarahemla.
+# sent_id = 23
+# llm_note = "who were called the people of Zarahemla" — acl:relcl on "people"(5); "the people of Zarahemla" xcomp of "called"(9).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	3	nsubj	_	_
+3	discovered	discover	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
+5	people	people	NOUN	NN	Number=Sing	3	obj	_	_
+6	,	,	PUNCT	,	_	9	punct	_	_
+7	who	who	PRON	WP	PronType=Rel	9	nsubj:pass	_	_
+8	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	aux:pass	_	_
+9	called	call	VERB	VBN	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	people	people	NOUN	NN	Number=Sing	9	xcomp	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	Zarahemla	Zarahemla	PROPN	NNP	_	11	nmod	_	_
+14	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now, there was great rejoicing among the people of Zarahemla; and also Zarahemla did rejoice exceedingly, because the Lord had sent the people of Mosiah with the plates of brass which contained the record of the Jews.
+# sent_id = 24
+# llm_note = "there was great rejoicing" — existential, "there"(3) expl, "rejoicing"(6) nsubj of "was"(4); "Zarahemla did rejoice" — proper name subject, "also" advmod; "because...Jews" advcl of "rejoice"(17); "which contained the record of the Jews" acl:relcl on "plates"(31).
+1	Now	now	ADV	RB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	there	there	PRON	EX	_	4	expl	_	_
+4	was	be	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	great	great	ADJ	JJ	_	6	amod	_	_
+6	rejoicing	rejoice	NOUN	NN	Number=Sing	4	nsubj	_	_
+7	among	among	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	people	people	NOUN	NN	Number=Sing	4	obl	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	Zarahemla	Zarahemla	PROPN	NNP	_	9	nmod	_	_
+12	;	;	PUNCT	,	_	17	punct	_	_
+13	and	and	CCONJ	CC	_	17	cc	_	_
+14	also	also	ADV	RB	_	17	advmod	_	_
+15	Zarahemla	Zarahemla	PROPN	NNP	_	17	nsubj	_	_
+16	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	17	aux	_	_
+17	rejoice	rejoice	VERB	VB	VerbForm=Inf	4	conj	_	_
+18	exceedingly	exceedingly	ADV	RB	_	17	advmod	_	_
+19	,	,	PUNCT	,	_	24	punct	_	_
+20	because	because	SCONJ	IN	_	24	mark	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	Lord	Lord	PROPN	NNP	_	24	nsubj	_	_
+23	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	24	aux	_	_
+24	sent	send	VERB	VBN	Tense=Past|VerbForm=Part	17	advcl	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	people	people	NOUN	NN	Number=Sing	24	obj	_	_
+27	of	of	ADP	IN	_	28	case	_	_
+28	Mosiah	Mosiah	PROPN	NNP	_	26	nmod	_	_
+29	with	with	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
+31	plates	plate	NOUN	NNS	Number=Plur	24	obl	_	_
+32	of	of	ADP	IN	_	33	case	_	_
+33	brass	brass	NOUN	NN	Number=Sing	31	nmod	_	_
+34	which	which	PRON	WDT	PronType=Rel	35	nsubj	_	_
+35	contained	contain	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	31	acl:relcl	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+37	record	record	NOUN	NN	Number=Sing	35	obj	_	_
+38	of	of	ADP	IN	_	40	case	_	_
+39	the	the	DET	DT	Definite=Def|PronType=Art	40	det	_	_
+40	Jews	Jew	PROPN	NNPS	Number=Plur	37	nmod	_	_
+41	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Behold, it came to pass that Mosiah discovered that the people of Zarahemla came out from Jerusalem at the time that Zedekiah, king of Judah, was carried away captive into Babylon.
+# sent_id = 25
+# llm_note = AICTP; "discovered that..." — cognition verb taking ccomp; "came out from Jerusalem" — "out from" compound prep; "at the time that Zedekiah...was carried away captive" — obl temporal, "that"(22) SCONJ introducing acl:relcl on "time"(21); "king of Judah" appos of "Zedekiah"(23); "carried away captive" — "away" compound:prt, "captive" xcomp/depictive.
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	expl	_	_
+4	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	9	mark	_	_
+8	Mosiah	Mosiah	PROPN	NNP	_	9	nsubj	_	_
+9	discovered	discover	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	_	_
+10	that	that	SCONJ	IN	_	15	mark	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	people	people	NOUN	NN	Number=Sing	15	nsubj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Zarahemla	Zarahemla	PROPN	NNP	_	12	nmod	_	_
+15	came	come	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	9	ccomp	_	_
+16	out	out	ADP	RP	_	18	case	_	_
+17	from	from	ADP	IN	_	16	fixed	_	_
+18	Jerusalem	Jerusalem	PROPN	NNP	_	15	obl	_	_
+19	at	at	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	time	time	NOUN	NN	Number=Sing	15	obl	_	_
+22	that	that	SCONJ	IN	_	30	mark	_	_
+23	Zedekiah	Zedekiah	PROPN	NNP	_	30	nsubj:pass	_	_
+24	,	,	PUNCT	,	_	25	punct	_	_
+25	king	king	NOUN	NN	Number=Sing	23	appos	_	_
+26	of	of	ADP	IN	_	27	case	_	_
+27	Judah	Judah	PROPN	NNP	_	25	nmod	_	_
+28	,	,	PUNCT	,	_	25	punct	_	_
+29	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	30	aux:pass	_	_
+30	carried	carry	VERB	VBN	Tense=Past|VerbForm=Part	21	acl:relcl	_	_
+31	away	away	ADV	RB	_	30	compound:prt	_	_
+32	captive	captive	ADJ	JJ	_	30	xcomp	_	_
+33	into	into	ADP	IN	_	34	case	_	_
+34	Babylon	Babylon	PROPN	NNP	_	30	obl	_	_
+35	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And they journeyed in the wilderness, and were brought by the hand of the Lord across the great waters, into the land where Mosiah discovered them; and they had dwelt there from that time forth.
+# sent_id = 26
+# llm_note = Two conjoined clauses: "journeyed" root, "were brought" conj; "across the great waters" and "into the land" both obl of "brought"; "where Mosiah discovered them" — acl:relcl on "land"(24); "they had dwelt there from that time forth" — third conj clause; "from that time forth" — "forth" ADV modifying the PP "from that time".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	3	nsubj	_	_
+3	journeyed	journey	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	in	in	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	wilderness	wilderness	NOUN	NN	Number=Sing	3	obl	_	_
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	and	and	CCONJ	CC	_	10	cc	_	_
+9	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	aux:pass	_	_
+10	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	_
+11	by	by	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	hand	hand	NOUN	NN	Number=Sing	10	obl:agent	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	Lord	Lord	PROPN	NNP	_	13	nmod	_	_
+17	across	across	ADP	IN	_	20	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+19	great	great	ADJ	JJ	_	20	amod	_	_
+20	waters	water	NOUN	NNS	Number=Plur	10	obl	_	_
+21	,	,	PUNCT	,	_	24	punct	_	_
+22	into	into	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	land	land	NOUN	NN	Number=Sing	10	obl	_	_
+25	where	where	ADV	WRB	PronType=Rel	27	advmod	_	_
+26	Mosiah	Mosiah	PROPN	NNP	_	27	nsubj	_	_
+27	discovered	discover	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	24	acl:relcl	_	_
+28	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	27	obj	_	_
+29	;	;	PUNCT	,	_	33	punct	_	_
+30	and	and	CCONJ	CC	_	33	cc	_	_
+31	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	33	nsubj	_	_
+32	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	33	aux	_	_
+33	dwelt	dwell	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	_
+34	there	there	ADV	RB	_	33	advmod	_	_
+35	from	from	ADP	IN	_	37	case	_	_
+36	that	that	DET	DT	Number=Sing|PronType=Dem	37	det	_	_
+37	time	time	NOUN	NN	Number=Sing	33	obl	_	_
+38	forth	forth	ADV	RB	_	37	advmod	_	_
+39	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And at the time that Mosiah discovered them, they had become exceedingly numerous.
+# sent_id = 27
+# llm_note = "at the time that Mosiah discovered them" is obl temporal of "become"(12); "had become exceedingly numerous" — "become" copula-like verb taking ADJ xcomp.
+1	And	and	CCONJ	CC	_	12	cc	_	_
+2	at	at	ADP	IN	_	4	case	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	time	time	NOUN	NN	Number=Sing	12	obl	_	_
+5	that	that	SCONJ	IN	_	7	mark	_	_
+6	Mosiah	Mosiah	PROPN	NNP	_	7	nsubj	_	_
+7	discovered	discover	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	acl:relcl	_	_
+8	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	7	obj	_	_
+9	,	,	PUNCT	,	_	12	punct	_	_
+10	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	12	nsubj	_	_
+11	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	aux	_	_
+12	become	become	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+13	exceedingly	exceedingly	ADV	RB	_	14	advmod	_	_
+14	numerous	numerous	ADJ	JJ	_	12	xcomp	_	_
+15	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = Nevertheless, they had had many wars and serious contentions, and had fallen by the sword from time to time; and their language had become corrupted; and they had brought no records with them; and they denied the being of their Creator; and Mosiah, nor the people of Mosiah, could understand them.
+# sent_id = 28
+# llm_note = Long sentence with five conjoined predicate clauses. Root "had had"(4-5); "had fallen" conj; "had become corrupted" conj — "corrupted" xcomp of "become"(27); "had brought no records" conj; "denied the being of their Creator" — "being" is a gerund noun here; "Mosiah, nor the people of Mosiah, could understand them" — "Mosiah"(49) nsubj, "nor the people of Mosiah" added via "nor" CC to the subject (treated as flat negated coord subject), "could" AUX, "understand" VERB.
+1	Nevertheless	nevertheless	ADV	RB	_	5	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	5	nsubj	_	_
+4	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux	_	_
+5	had	have	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	many	many	ADJ	JJ	_	7	amod	_	_
+7	wars	war	NOUN	NNS	Number=Plur	5	obj	_	_
+8	and	and	CCONJ	CC	_	10	cc	_	_
+9	serious	serious	ADJ	JJ	_	10	amod	_	_
+10	contentions	contention	NOUN	NNS	Number=Plur	7	conj	_	_
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	aux	_	_
+14	fallen	fall	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	_
+15	by	by	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	sword	sword	NOUN	NN	Number=Sing	14	obl	_	_
+18	from	from	ADP	IN	_	19	case	_	_
+19	time	time	NOUN	NN	Number=Sing	14	obl	_	_
+20	to	to	ADP	IN	_	21	case	_	_
+21	time	time	NOUN	NN	Number=Sing	19	nmod	_	_
+22	;	;	PUNCT	,	_	27	punct	_	_
+23	and	and	CCONJ	CC	_	27	cc	_	_
+24	their	they	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes	25	nmod:poss	_	_
+25	language	language	NOUN	NN	Number=Sing	27	nsubj	_	_
+26	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	aux	_	_
+27	become	become	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	_
+28	corrupted	corrupt	ADJ	JJ	_	27	xcomp	_	_
+29	;	;	PUNCT	,	_	33	punct	_	_
+30	and	and	CCONJ	CC	_	33	cc	_	_
+31	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	33	nsubj	_	_
+32	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	33	aux	_	_
+33	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	_
+34	no	no	DET	DT	Polarity=Neg	35	det	_	_
+35	records	record	NOUN	NNS	Number=Plur	33	obj	_	_
+36	with	with	ADP	IN	_	37	case	_	_
+37	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	33	obl	_	_
+38	;	;	PUNCT	,	_	41	punct	_	_
+39	and	and	CCONJ	CC	_	41	cc	_	_
+40	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	41	nsubj	_	_
+41	denied	deny	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	43	det	_	_
+43	being	being	NOUN	NN	Number=Sing	41	obj	_	_
+44	of	of	ADP	IN	_	46	case	_	_
+45	their	they	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes	46	nmod:poss	_	_
+46	Creator	Creator	PROPN	NNP	_	43	nmod	_	_
+47	;	;	PUNCT	,	_	58	punct	_	_
+48	and	and	CCONJ	CC	_	58	cc	_	_
+49	Mosiah	Mosiah	PROPN	NNP	_	58	nsubj	_	_
+50	,	,	PUNCT	,	_	53	punct	_	_
+51	nor	nor	CCONJ	CC	_	53	cc	_	_
+52	the	the	DET	DT	Definite=Def|PronType=Art	53	det	_	_
+53	people	people	NOUN	NN	Number=Sing	49	conj	_	_
+54	of	of	ADP	IN	_	55	case	_	_
+55	Mosiah	Mosiah	PROPN	NNP	_	53	nmod	_	_
+56	,	,	PUNCT	,	_	53	punct	_	_
+57	could	can	AUX	MD	VerbForm=Fin	58	aux	_	_
+58	understand	understand	VERB	VB	VerbForm=Inf	5	conj	_	_
+59	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	58	obj	_	_
+60	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = But it came to pass that Mosiah caused that they should be taught in his language.
+# sent_id = 29
+# llm_note = AICTP with "But"; "caused that they should be taught" — causative verb taking ccomp; "be taught" passive, "they"(10) nsubj:pass.
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	Mosiah	Mosiah	PROPN	NNP	_	8	nsubj	_	_
+8	caused	cause	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	that	that	SCONJ	IN	_	13	mark	_	_
+10	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	13	nsubj:pass	_	_
+11	should	shall	AUX	MD	VerbForm=Fin	13	aux	_	_
+12	be	be	AUX	VB	VerbForm=Inf	13	aux:pass	_	_
+13	taught	teach	VERB	VBN	Tense=Past|VerbForm=Part	8	ccomp	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	his	he	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes	16	nmod:poss	_	_
+16	language	language	NOUN	NN	Number=Sing	13	obl	_	_
+17	.	.	PUNCT	.	_	3	punct	_	_
+

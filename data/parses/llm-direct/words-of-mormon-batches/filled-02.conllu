@@ -1,0 +1,360 @@
+# text = And now, concerning this king Benjamin-- he had somewhat of contentions among his own people.
+# sent_id = 15
+# llm_note = "concerning this king Benjamin--" is a topicalized/dislocated PP; "he" resumes it as nsubj of "had"; "somewhat of contentions" — "somewhat" is PRON/head, "of contentions" is nmod; em-dash (--) is PUNCT attaching to "Benjamin".
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	now	now	ADV	RB	_	10	advmod	_	_
+3	,	,	PUNCT	,	_	10	punct	_	_
+4	concerning	concern	ADP	IN	_	7	case	_	_
+5	this	this	DET	DT	_	6	det	_	_
+6	king	king	NOUN	NN	_	7	compound	_	_
+7	Benjamin	Benjamin	PROPN	NNP	_	10	dislocated	_	_
+8	--	--	PUNCT	,	_	7	punct	_	_
+9	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	10	nsubj	_	_
+10	had	have	VERB	VBD	_	0	root	_	_
+11	somewhat	somewhat	PRON	NN	_	10	obj	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	contentions	contention	NOUN	NNS	_	11	nmod	_	_
+14	among	among	ADP	IN	_	17	case	_	_
+15	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	17	nmod:poss	_	_
+16	own	own	ADJ	JJ	_	17	amod	_	_
+17	people	people	NOUN	NNS	_	10	obl	_	_
+18	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And it came to pass also that the armies of the Lamanites came down out of the land of Nephi, to battle against his people.
+# sent_id = 16
+# llm_note = AICTP frame with "also" (6) as advmod of "came" (3); "pass" is xcomp of "came"; "that" (7) introduces complement clause whose root is "came" (13) — narrative verb; "to battle" is purpose advcl of "came" (13).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	also	also	ADV	RB	_	3	advmod	_	_
+7	that	that	SCONJ	IN	_	13	mark	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	armies	army	NOUN	NNS	_	13	nsubj	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	Lamanites	Lamanite	PROPN	NNPS	_	9	nmod	_	_
+13	came	come	VERB	VBD	_	3	ccomp	_	_
+14	down	down	ADP	RP	_	13	compound:prt	_	_
+15	out	out	ADP	IN	_	18	case	_	_
+16	of	of	ADP	IN	_	15	fixed	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	land	land	NOUN	NN	_	13	obl	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Nephi	Nephi	PROPN	NNP	_	18	nmod	_	_
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	to	to	PART	TO	_	23	mark	_	_
+23	battle	battle	VERB	VB	_	13	advcl	_	_
+24	against	against	ADP	IN	_	26	case	_	_
+25	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	26	nmod:poss	_	_
+26	people	people	NOUN	NNS	_	23	obl	_	_
+27	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But behold, king Benjamin gathered together his armies, and he did stand against them; and he did fight with the strength of his own arm, with the sword of Laban.
+# sent_id = 17
+# llm_note = "behold" is INTJ discourse of "gathered"; "king Benjamin" — "king" is compound, "Benjamin" PROPN nsubj; "gathered together" — "together" is advmod; "did stand" — "did" AUX emphatic; "did fight" — same; "with the strength" and "with the sword" are both obl of "fight" (second PP is conjoined).
+1	But	but	CCONJ	CC	_	6	cc	_	_
+2	behold	behold	INTJ	UH	_	6	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	king	king	NOUN	NN	_	5	compound	_	_
+5	Benjamin	Benjamin	PROPN	NNP	_	6	nsubj	_	_
+6	gathered	gather	VERB	VBD	_	0	root	_	_
+7	together	together	ADV	RB	_	6	advmod	_	_
+8	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	9	nmod:poss	_	_
+9	armies	army	NOUN	NNS	_	6	obj	_	_
+10	,	,	PUNCT	,	_	14	punct	_	_
+11	and	and	CCONJ	CC	_	14	cc	_	_
+12	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	14	nsubj	_	_
+13	did	do	AUX	VBD	_	14	aux	_	_
+14	stand	stand	VERB	VB	_	6	conj	_	_
+15	against	against	ADP	IN	_	16	case	_	_
+16	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	14	obl	_	_
+17	;	;	PUNCT	,	_	21	punct	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	21	nsubj	_	_
+20	did	do	AUX	VBD	_	21	aux	_	_
+21	fight	fight	VERB	VB	_	6	conj	_	_
+22	with	with	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	strength	strength	NOUN	NN	_	21	obl	_	_
+25	of	of	ADP	IN	_	28	case	_	_
+26	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	28	nmod:poss	_	_
+27	own	own	ADJ	JJ	_	28	amod	_	_
+28	arm	arm	NOUN	NN	_	24	nmod	_	_
+29	,	,	PUNCT	,	_	32	punct	_	_
+30	with	with	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	sword	sword	NOUN	NN	_	21	obl	_	_
+33	of	of	ADP	IN	_	34	case	_	_
+34	Laban	Laban	PROPN	NNP	_	32	nmod	_	_
+35	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And in the strength of the Lord they did contend against their enemies, until they had slain many thousands of the Lamanites.
+# sent_id = 18
+# llm_note = "did contend" — emphatic AUX; "in the strength of the Lord" is obl of "contend"; "until" introduces advcl; "many thousands" — "many" is amod of "thousands".
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	in	in	ADP	IN	_	4	case	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	strength	strength	NOUN	NN	_	10	obl	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	Lord	Lord	PROPN	NNP	_	4	nmod	_	_
+8	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	10	nsubj	_	_
+9	did	do	AUX	VBD	_	10	aux	_	_
+10	contend	contend	VERB	VB	_	0	root	_	_
+11	against	against	ADP	IN	_	13	case	_	_
+12	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	13	nmod:poss	_	_
+13	enemies	enemy	NOUN	NNS	_	10	obl	_	_
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	until	until	SCONJ	IN	_	18	mark	_	_
+16	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	18	nsubj	_	_
+17	had	have	AUX	VBD	_	18	aux	_	_
+18	slain	slay	VERB	VBN	_	10	advcl	_	_
+19	many	many	ADJ	JJ	_	20	amod	_	_
+20	thousands	thousand	NOUN	NNS	_	18	obj	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	Lamanites	Lamanite	PROPN	NNPS	_	20	nmod	_	_
+24	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And it came to pass that they did contend against the Lamanites until they had driven them out of all the lands of their inheritance.
+# sent_id = 19
+# llm_note = Standard AICTP; complement verb "contend" (9); "driven them out" — "out" is compound:prt of "driven"; "of all the lands" is obl.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	9	nsubj	_	_
+8	did	do	AUX	VBD	_	9	aux	_	_
+9	contend	contend	VERB	VB	_	3	ccomp	_	_
+10	against	against	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	Lamanites	Lamanite	PROPN	NNPS	_	9	obl	_	_
+13	until	until	SCONJ	IN	_	16	mark	_	_
+14	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	16	nsubj	_	_
+15	had	have	AUX	VBD	_	16	aux	_	_
+16	driven	drive	VERB	VBN	_	9	advcl	_	_
+17	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	16	obj	_	_
+18	out	out	ADP	RP	_	16	compound:prt	_	_
+19	of	of	ADP	IN	_	22	case	_	_
+20	all	all	DET	PDT	_	22	det:predet	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	lands	land	NOUN	NNS	_	16	obl	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	25	nmod:poss	_	_
+25	inheritance	inheritance	NOUN	NN	_	22	nmod	_	_
+26	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that after there had been false Christs, and their mouths had been shut, and they punished according to their crimes;
+# sent_id = 20
+# llm_note = AICTP — but this sentence is a fragment trailing into sent_id=21 (both form one discourse unit ending in semicolon). Treating as complete sentence with "came" as root. "after" introduces three conjoined advcl clauses: (1) "there had been false Christs" (existential), (2) "their mouths had been shut" (passive), (3) "they punished" (short passive/ellipsis of "were punished"). The main narrative event is the AICTP frame itself; the "that" complement clause is elided (the sentence ends at semicolon, with continuation in sent_id=21). Treating the whole as root="came" with no overt ccomp — or the fragment is paratactically structured.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	12	mark	_	_
+7	after	after	SCONJ	IN	_	12	mark	_	_
+8	there	there	PRON	EX	_	12	expl	_	_
+9	had	have	AUX	VBD	_	12	aux	_	_
+10	been	be	AUX	VBN	_	12	aux	_	_
+11	false	false	ADJ	JJ	_	12	amod	_	_
+12	Christs	Christ	PROPN	NNPS	_	3	advcl	_	_
+13	,	,	PUNCT	,	_	19	punct	_	_
+14	and	and	CCONJ	CC	_	19	cc	_	_
+15	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	16	nmod:poss	_	_
+16	mouths	mouth	NOUN	NNS	_	19	nsubj:pass	_	_
+17	had	have	AUX	VBD	_	19	aux	_	_
+18	been	be	AUX	VBN	_	19	aux:pass	_	_
+19	shut	shut	VERB	VBN	_	12	conj	_	_
+20	,	,	PUNCT	,	_	23	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	23	nsubj:pass	_	_
+23	punished	punish	VERB	VBD	_	12	conj	_	_
+24	according	accord	ADP	IN	_	27	case	_	_
+25	to	to	ADP	IN	_	24	fixed	_	_
+26	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	27	nmod:poss	_	_
+27	crimes	crime	NOUN	NNS	_	23	obl	_	_
+28	;	;	PUNCT	,	_	3	punct	_	_
+
+# text = And after there had been false prophets, and false preachers and teachers among the people, and all these having been punished according to their crimes; and after there having been much contention and many dissensions away unto the Lamanites, behold, it came to pass that king Benjamin, with the assistance of the holy prophets who were among his people--
+# sent_id = 21
+# llm_note = Long anacoluthon continuing from sent_id=20. The main AICTP frame appears at tok 46-49: "it came to pass that king Benjamin ... [did establish peace -- cont. in sent_id=23]". The sentence ends with "--" (66) indicating a dash-continuation. Root is "came" (47). All the "after ... having been" clauses are advcl modifiers of "came". "behold" (44) is INTJ discourse of "came". The sentence is technically incomplete (predicate of "king Benjamin" follows in sent_id=23 in the source), but we parse what is present, with "came" as root and "Benjamin" (52) as nsubj of the complement (though elided — treating the embedded "that"-clause as having "Benjamin" as a dangling nsubj pointing to "establish" which appears in the next sentence; for this sentence, mark "Benjamin" as nsubj of an implicit predicate, attaching to "came" ccomp at 0-level).
+1	And	and	CCONJ	CC	_	47	cc	_	_
+2	after	after	SCONJ	IN	_	7	mark	_	_
+3	there	there	PRON	EX	_	7	expl	_	_
+4	had	have	AUX	VBD	_	7	aux	_	_
+5	been	be	AUX	VBN	_	7	aux	_	_
+6	false	false	ADJ	JJ	_	7	amod	_	_
+7	prophets	prophet	NOUN	NNS	_	47	advcl	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	false	false	ADJ	JJ	_	11	amod	_	_
+11	preachers	preacher	NOUN	NNS	_	7	conj	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	teachers	teacher	NOUN	NNS	_	11	conj	_	_
+14	among	among	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	people	people	NOUN	NNS	_	7	obl	_	_
+17	,	,	PUNCT	,	_	23	punct	_	_
+18	and	and	CCONJ	CC	_	23	cc	_	_
+19	all	all	DET	PDT	_	20	det:predet	_	_
+20	these	this	PRON	DT	_	23	nsubj:pass	_	_
+21	having	have	AUX	VBG	_	23	aux	_	_
+22	been	be	AUX	VBN	_	23	aux:pass	_	_
+23	punished	punish	VERB	VBN	_	7	conj	_	_
+24	according	accord	ADP	IN	_	27	case	_	_
+25	to	to	ADP	IN	_	24	fixed	_	_
+26	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	27	nmod:poss	_	_
+27	crimes	crime	NOUN	NNS	_	23	obl	_	_
+28	;	;	PUNCT	,	_	35	punct	_	_
+29	and	and	CCONJ	CC	_	35	cc	_	_
+30	after	after	SCONJ	IN	_	35	mark	_	_
+31	there	there	PRON	EX	_	35	expl	_	_
+32	having	have	AUX	VBG	_	35	aux	_	_
+33	been	be	AUX	VBN	_	35	aux	_	_
+34	much	much	ADJ	JJ	_	35	amod	_	_
+35	contention	contention	NOUN	NN	_	47	advcl	_	_
+36	and	and	CCONJ	CC	_	38	cc	_	_
+37	many	many	ADJ	JJ	_	38	amod	_	_
+38	dissensions	dissension	NOUN	NNS	_	35	conj	_	_
+39	away	away	ADV	RB	_	35	advmod	_	_
+40	unto	unto	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	_	42	det	_	_
+42	Lamanites	Lamanite	PROPN	NNPS	_	39	obl	_	_
+43	,	,	PUNCT	,	_	47	punct	_	_
+44	behold	behold	INTJ	UH	_	47	discourse	_	_
+45	,	,	PUNCT	,	_	44	punct	_	_
+46	it	it	PRON	PRP	_	47	expl	_	_
+47	came	come	VERB	VBD	_	0	root	_	_
+48	to	to	PART	TO	_	49	mark	_	_
+49	pass	pass	VERB	VB	_	47	xcomp	_	_
+50	that	that	SCONJ	IN	_	52	mark	_	_
+51	king	king	NOUN	NN	_	52	compound	_	_
+52	Benjamin	Benjamin	PROPN	NNP	_	47	ccomp	_	_
+53	,	,	PUNCT	,	_	52	punct	_	_
+54	with	with	ADP	IN	_	56	case	_	_
+55	the	the	DET	DT	_	56	det	_	_
+56	assistance	assistance	NOUN	NN	_	52	obl	_	_
+57	of	of	ADP	IN	_	60	case	_	_
+58	the	the	DET	DT	_	60	det	_	_
+59	holy	holy	ADJ	JJ	_	60	amod	_	_
+60	prophets	prophet	NOUN	NNS	_	56	nmod	_	_
+61	who	who	PRON	WP	_	62	nsubj	_	_
+62	were	be	VERB	VBD	_	60	acl:relcl	_	_
+63	among	among	ADP	IN	_	65	case	_	_
+64	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	65	nmod:poss	_	_
+65	people	people	NOUN	NNS	_	62	obl	_	_
+66	--	--	PUNCT	,	_	47	punct	_	_
+
+# text = For behold, king Benjamin was a holy man, and he did reign over his people in righteousness; and there were many holy men in the land, and they did speak the word of God with power and with authority; and they did use much sharpness because of the stiffneckedness of the people--
+# sent_id = 22
+# llm_note = "For" is SCONJ introducing the explanation clause; "behold" INTJ discourse; "was a holy man" copular — "was" cop, "man" root; then three conjoined clauses: "he did reign", "there were many holy men", "they did speak", "they did use"; each introduced by "and". "stiffneckedness" is a BoM-specific lexeme, NOUN. Sentence ends with "--".
+1	For	for	SCONJ	IN	_	6	mark	_	_
+2	behold	behold	INTJ	UH	_	6	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	king	king	NOUN	NN	_	5	compound	_	_
+5	Benjamin	Benjamin	PROPN	NNP	_	6	nsubj	_	_
+6	was	be	AUX	VBD	_	0	root	_	_
+7	a	a	DET	DT	_	9	det	_	_
+8	holy	holy	ADJ	JJ	_	9	amod	_	_
+9	man	man	NOUN	NN	_	6	xcomp	_	_
+10	,	,	PUNCT	,	_	14	punct	_	_
+11	and	and	CCONJ	CC	_	14	cc	_	_
+12	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	14	nsubj	_	_
+13	did	do	AUX	VBD	_	14	aux	_	_
+14	reign	reign	VERB	VB	_	6	conj	_	_
+15	over	over	ADP	IN	_	17	case	_	_
+16	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	17	nmod:poss	_	_
+17	people	people	NOUN	NNS	_	14	obl	_	_
+18	in	in	ADP	IN	_	19	case	_	_
+19	righteousness	righteousness	NOUN	NN	_	14	obl	_	_
+20	;	;	PUNCT	,	_	23	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	there	there	PRON	EX	_	23	expl	_	_
+23	were	be	VERB	VBD	_	6	conj	_	_
+24	many	many	ADJ	JJ	_	26	amod	_	_
+25	holy	holy	ADJ	JJ	_	26	amod	_	_
+26	men	man	NOUN	NNS	_	23	nsubj	_	_
+27	in	in	ADP	IN	_	29	case	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	land	land	NOUN	NN	_	23	obl	_	_
+30	,	,	PUNCT	,	_	34	punct	_	_
+31	and	and	CCONJ	CC	_	34	cc	_	_
+32	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	34	nsubj	_	_
+33	did	do	AUX	VBD	_	34	aux	_	_
+34	speak	speak	VERB	VB	_	6	conj	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	word	word	NOUN	NN	_	34	obj	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	God	God	PROPN	NNP	_	36	nmod	_	_
+39	with	with	ADP	IN	_	40	case	_	_
+40	power	power	NOUN	NN	_	34	obl	_	_
+41	and	and	CCONJ	CC	_	43	cc	_	_
+42	with	with	ADP	IN	_	43	case	_	_
+43	authority	authority	NOUN	NN	_	40	conj	_	_
+44	;	;	PUNCT	,	_	48	punct	_	_
+45	and	and	CCONJ	CC	_	48	cc	_	_
+46	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	48	nsubj	_	_
+47	did	do	AUX	VBD	_	48	aux	_	_
+48	use	use	VERB	VB	_	6	conj	_	_
+49	much	much	ADJ	JJ	_	50	amod	_	_
+50	sharpness	sharpness	NOUN	NN	_	48	obj	_	_
+51	because	because	SCONJ	IN	_	54	mark	_	_
+52	of	of	ADP	IN	_	54	case	_	_
+53	the	the	DET	DT	_	54	det	_	_
+54	stiffneckedness	stiffneckedness	NOUN	NN	_	48	advcl	_	_
+55	of	of	ADP	IN	_	57	case	_	_
+56	the	the	DET	DT	_	57	det	_	_
+57	people	people	NOUN	NNS	_	54	nmod	_	_
+58	--	--	PUNCT	,	_	6	punct	_	_
+
+# text = Wherefore, with the help of these, king Benjamin, by laboring with all the might of his body and the faculty of his whole soul, and also the prophets, did once more establish peace in the land.
+# sent_id = 23
+# llm_note = "Wherefore" ADV; "king Benjamin" (9-10) is nsubj of "establish" (37); "did" (34) is AUX emphatic; "by laboring" (12-13) is instrumental advcl of "establish"; "with all the might of his body and the faculty of his whole soul" are two coordinated obl PP of "laboring"; "and also the prophets" (29-32) is a second conjoined nsubj of "establish" (coordinated with "Benjamin"); "once more" — "once" ADV modifying "more", both are advmod of "establish".
+1	Wherefore	wherefore	ADV	RB	_	37	advmod	_	_
+2	,	,	PUNCT	,	_	37	punct	_	_
+3	with	with	ADP	IN	_	5	case	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	help	help	NOUN	NN	_	37	obl	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	these	this	PRON	DT	_	5	nmod	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	king	king	NOUN	NN	_	10	compound	_	_
+10	Benjamin	Benjamin	PROPN	NNP	_	37	nsubj	_	_
+11	,	,	PUNCT	,	_	13	punct	_	_
+12	by	by	ADP	IN	_	13	mark	_	_
+13	laboring	labor	VERB	VBG	_	37	advcl	_	_
+14	with	with	ADP	IN	_	17	case	_	_
+15	all	all	DET	PDT	_	17	det:predet	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	might	might	NOUN	NN	_	13	obl	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	20	nmod:poss	_	_
+20	body	body	NOUN	NN	_	17	nmod	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	faculty	faculty	NOUN	NN	_	17	conj	_	_
+24	of	of	ADP	IN	_	27	case	_	_
+25	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	27	nmod:poss	_	_
+26	whole	whole	ADJ	JJ	_	27	amod	_	_
+27	soul	soul	NOUN	NN	_	23	nmod	_	_
+28	,	,	PUNCT	,	_	32	punct	_	_
+29	and	and	CCONJ	CC	_	32	cc	_	_
+30	also	also	ADV	RB	_	32	advmod	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	prophets	prophet	NOUN	NNS	_	10	conj	_	_
+33	,	,	PUNCT	,	_	37	punct	_	_
+34	did	do	AUX	VBD	_	37	aux	_	_
+35	once	once	ADV	RB	_	36	advmod	_	_
+36	more	more	ADV	RBR	_	37	advmod	_	_
+37	establish	establish	VERB	VB	_	0	root	_	_
+38	peace	peace	NOUN	NN	_	37	obj	_	_
+39	in	in	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	_	41	det	_	_
+41	land	land	NOUN	NN	_	37	obl	_	_
+42	.	.	PUNCT	.	_	37	punct	_	_
+

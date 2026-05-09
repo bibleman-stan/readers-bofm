@@ -1,0 +1,474 @@
+# text = And it came to pass that two hundred and forty and four years had passed away, and thus were the affairs of the people.
+# sent_id = 45
+# llm_note = AICTP; "two hundred and forty and four years" = complex numeral nsubj; "thus were the affairs of the people" = copular inversion (affairs=nsubj, were=cop, thus=advmod)
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	15	mark	_	_
+7	two	two	NUM	CD	NumType=Card	8	nummod	_	_
+8	hundred	hundred	NUM	CD	NumType=Card	13	nummod	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	forty	forty	NUM	CD	NumType=Card	8	conj	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	four	four	NUM	CD	NumType=Card	8	conj	_	_
+13	years	year	NOUN	NNS	Number=Plur	15	nsubj	_	_
+14	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	aux	_	_
+15	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+16	away	away	ADV	RB	_	15	advmod	_	_
+17	,	,	PUNCT	,	_	15	punct	_	_
+18	and	and	CCONJ	CC	_	22	cc	_	_
+19	thus	thus	ADV	RB	_	20	advmod	_	_
+20	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	cop	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	affairs	affair	NOUN	NNS	Number=Plur	15	conj	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	people	people	NOUN	NNS	Number=Plur	22	nmod	_	_
+26	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And the more wicked part of the people did wax strong, and became exceedingly more numerous than were the people of God.
+# sent_id = 46
+# llm_note = "the more wicked part" = NP with comparative amod; "wax strong" = idiom (wax=VERB, strong=xcomp); "became exceedingly more numerous than were the people of God" = comparative copular advcl
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+3	more	more	ADV	RBR	_	4	advmod	_	_
+4	wicked	wicked	ADJ	JJ	Degree=Pos	5	amod	_	_
+5	part	part	NOUN	NN	Number=Sing	10	nsubj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	people	people	NOUN	NNS	Number=Plur	5	nmod	_	_
+9	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	aux	_	_
+10	wax	wax	VERB	VB	VerbForm=Inf	0	root	_	_
+11	strong	strong	ADJ	JJ	Degree=Pos	10	xcomp	_	_
+12	,	,	PUNCT	,	_	10	punct	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	conj	_	_
+15	exceedingly	exceedingly	ADV	RB	_	17	advmod	_	_
+16	more	more	ADV	RBR	_	17	advmod	_	_
+17	numerous	numerous	ADJ	JJ	Degree=Pos	14	xcomp	_	_
+18	than	than	SCONJ	IN	_	19	mark	_	_
+19	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	17	advcl	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	people	people	NOUN	NNS	Number=Plur	19	nsubj	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	God	God	PROPN	NNP	Number=Sing	21	nmod	_	_
+24	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And they did still continue to build up churches unto themselves, and adorn them with all manner of precious things.
+# sent_id = 47
+# llm_note = "did still continue to build up" = AUX + advmod + VERB + xcomp; "build up" = compound:prt; "and adorn" = conj of build (sharing subject and "continue to"); "with all manner of precious things" = obl
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux	_	_
+4	still	still	ADV	RB	_	5	advmod	_	_
+5	continue	continue	VERB	VB	VerbForm=Inf	0	root	_	_
+6	to	to	PART	TO	_	7	mark	_	_
+7	build	build	VERB	VB	VerbForm=Inf	5	xcomp	_	_
+8	up	up	ADP	RP	_	7	compound:prt	_	_
+9	churches	church	NOUN	NNS	Number=Plur	7	obj	_	_
+10	unto	unto	ADP	IN	_	11	case	_	_
+11	themselves	themselves	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	7	obl	_	_
+12	,	,	PUNCT	,	_	7	punct	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	adorn	adorn	VERB	VB	VerbForm=Inf	7	conj	_	_
+15	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	14	obj	_	_
+16	with	with	ADP	IN	_	19	case	_	_
+17	all	all	DET	PDT	_	19	det:predet	_	_
+18	manner	manner	NOUN	NN	Number=Sing	19	nmod	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	precious	precious	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	things	thing	NOUN	NNS	Number=Plur	14	obl	_	_
+22	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And thus did two hundred and fifty years pass away, and also two hundred and sixty years.
+# sent_id = 48
+# llm_note = Inverted "thus did ... years pass away"; "two hundred and fifty years" = subject; "two hundred and sixty years" = conj of subject
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	thus	thus	ADV	RB	_	9	advmod	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	aux	_	_
+4	two	two	NUM	CD	NumType=Card	5	nummod	_	_
+5	hundred	hundred	NUM	CD	NumType=Card	8	nummod	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	fifty	fifty	NUM	CD	NumType=Card	5	conj	_	_
+8	years	year	NOUN	NNS	Number=Plur	9	nsubj	_	_
+9	pass	pass	VERB	VB	VerbForm=Inf	0	root	_	_
+10	away	away	ADV	RB	_	9	advmod	_	_
+11	,	,	PUNCT	,	_	9	punct	_	_
+12	and	and	CCONJ	CC	_	18	cc	_	_
+13	also	also	ADV	RB	_	18	advmod	_	_
+14	two	two	NUM	CD	NumType=Card	15	nummod	_	_
+15	hundred	hundred	NUM	CD	NumType=Card	18	nummod	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	sixty	sixty	NUM	CD	NumType=Card	15	conj	_	_
+18	years	year	NOUN	NNS	Number=Plur	8	conj	_	_
+19	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And it came to pass that the wicked part of the people began again to build up the secret oaths and combinations of Gadianton.
+# sent_id = 49
+# llm_note = AICTP; "the wicked part" = nsubj of began; "began again to build up" = began=VERB + xcomp; "build up" = compound:prt; "oaths and combinations" = coordinate obj; "of Gadianton" = nmod
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	13	mark	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+8	wicked	wicked	ADJ	JJ	Degree=Pos	9	amod	_	_
+9	part	part	NOUN	NN	Number=Sing	13	nsubj	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	people	people	NOUN	NNS	Number=Plur	9	nmod	_	_
+13	began	begin	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+14	again	again	ADV	RB	_	13	advmod	_	_
+15	to	to	PART	TO	_	16	mark	_	_
+16	build	build	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+17	up	up	ADP	RP	_	16	compound:prt	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+19	secret	secret	ADJ	JJ	Degree=Pos	20	amod	_	_
+20	oaths	oath	NOUN	NNS	Number=Plur	16	obj	_	_
+21	and	and	CCONJ	CC	_	22	cc	_	_
+22	combinations	combination	NOUN	NNS	Number=Plur	20	conj	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	Gadianton	Gadianton	PROPN	NNP	Number=Sing	20	nmod	_	_
+25	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And also the people who were called the people of Nephi began to be proud in their hearts, because of their exceeding riches, and become vain like unto their brethren, the Lamanites.
+# sent_id = 50
+# llm_note = "And also" = cc+advmod; "the people who were called the people of Nephi" = complex NP subject; "began to be proud" = began+xcomp(proud); "and become vain" = second xcomp conj (sharing "began"); "like unto their brethren" = comparative obl; "the Lamanites" = appos to brethren
+1	And	and	CCONJ	CC	_	12	cc	_	_
+2	also	also	ADV	RB	_	12	advmod	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	people	people	NOUN	NNS	Number=Plur	12	nsubj	_	_
+5	who	who	PRON	WP	PronType=Rel	7	nsubj:pass	_	_
+6	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	7	aux:pass	_	_
+7	called	call	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	acl:relcl	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	people	people	NOUN	NNS	Number=Plur	7	xcomp	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	Nephi	Nephi	PROPN	NNP	Number=Sing	9	nmod	_	_
+12	began	begin	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+13	to	to	PART	TO	_	15	mark	_	_
+14	be	be	VERB	VB	VerbForm=Inf	15	cop	_	_
+15	proud	proud	ADJ	JJ	Degree=Pos	12	xcomp	_	_
+16	in	in	ADP	IN	_	18	case	_	_
+17	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	_
+18	hearts	heart	NOUN	NNS	Number=Plur	15	obl	_	_
+19	,	,	PUNCT	,	_	15	punct	_	_
+20	because	because	ADP	IN	_	24	case	_	_
+21	of	of	ADP	IN	_	20	fixed	_	_
+22	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
+23	exceeding	exceeding	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	riches	rich	NOUN	NNS	Number=Plur	15	obl	_	_
+25	,	,	PUNCT	,	_	15	punct	_	_
+26	and	and	CCONJ	CC	_	27	cc	_	_
+27	become	become	VERB	VB	VerbForm=Inf	15	conj	_	_
+28	vain	vain	ADJ	JJ	Degree=Pos	27	xcomp	_	_
+29	like	like	ADP	IN	_	32	case	_	_
+30	unto	unto	ADP	IN	_	29	fixed	_	_
+31	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	32	nmod:poss	_	_
+32	brethren	brethren	NOUN	NNS	Number=Plur	28	obl	_	_
+33	,	,	PUNCT	,	_	32	punct	_	_
+34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
+35	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	32	appos	_	_
+36	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = And from this time the disciples began to sorrow for the sins of the world.
+# sent_id = 51
+# llm_note = "from this time" = obl temporal; "began to sorrow" = begun+xcomp; "for the sins" = obl
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	from	from	ADP	IN	_	4	case	_	_
+3	this	this	DET	DT	Number=Sing|PronType=Dem	4	det	_	_
+4	time	time	NOUN	NN	Number=Sing	7	obl	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	disciples	disciple	NOUN	NNS	Number=Plur	7	nsubj	_	_
+7	began	begin	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+8	to	to	PART	TO	_	9	mark	_	_
+9	sorrow	sorrow	VERB	VB	VerbForm=Inf	7	xcomp	_	_
+10	for	for	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	sins	sin	NOUN	NNS	Number=Plur	9	obl	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	world	world	NOUN	NN	Number=Sing	12	nmod	_	_
+16	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And it came to pass that when three hundred years had passed away, both the people of Nephi and the Lamanites had become exceedingly wicked one like unto another.
+# sent_id = 52
+# llm_note = AICTP; "when" temporal advcl; "both ... the people of Nephi and the Lamanites" = coordinate subject with cc "both...and"; "had become exceedingly wicked" = main predicate; "one like unto another" = reciprocal obl phrase
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	24	mark	_	_
+7	when	when	SCONJ	WRB	_	12	mark	_	_
+8	three	three	NUM	CD	NumType=Card	9	nummod	_	_
+9	hundred	hundred	NUM	CD	NumType=Card	10	nummod	_	_
+10	years	year	NOUN	NNS	Number=Plur	12	nsubj	_	_
+11	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	aux	_	_
+12	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	24	advcl	_	_
+13	away	away	ADV	RB	_	12	advmod	_	_
+14	,	,	PUNCT	,	_	12	punct	_	_
+15	both	both	CCONJ	CC	_	17	cc	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	people	people	NOUN	NNS	Number=Plur	24	nsubj	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	Nephi	Nephi	PROPN	NNP	Number=Sing	17	nmod	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	17	conj	_	_
+23	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	24	aux	_	_
+24	become	become	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+25	exceedingly	exceedingly	ADV	RB	_	26	advmod	_	_
+26	wicked	wicked	ADJ	JJ	Degree=Pos	24	xcomp	_	_
+27	one	one	PRON	PRP	_	24	obl	_	_
+28	like	like	ADP	IN	_	30	case	_	_
+29	unto	unto	ADP	IN	_	28	fixed	_	_
+30	another	another	PRON	DT	_	27	nmod	_	_
+31	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that the robbers of Gadianton did spread over all the face of the land; and there were none that were righteous save it were the disciples of Jesus.
+# sent_id = 53
+# llm_note = AICTP; "robbers of Gadianton" = NP; "did spread over all the face" = spread=VERB, "over" = case; "none that were righteous" = PRON + acl:relcl; "save it were the disciples" = advcl exception
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	12	mark	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	robbers	robber	NOUN	NNS	Number=Plur	12	nsubj	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Gadianton	Gadianton	PROPN	NNP	Number=Sing	8	nmod	_	_
+11	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	aux	_	_
+12	spread	spread	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+13	over	over	ADP	IN	_	16	case	_	_
+14	all	all	DET	PDT	_	16	det:predet	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	face	face	NOUN	NN	Number=Sing	12	obl	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	land	land	NOUN	NN	Number=Sing	16	nmod	_	_
+20	;	;	PUNCT	,	_	12	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	there	there	PRON	EX	_	23	expl	_	_
+23	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	conj	_	_
+24	none	none	PRON	NN	_	23	nsubj	_	_
+25	that	that	SCONJ	IN	_	27	mark	_	_
+26	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	cop	_	_
+27	righteous	righteous	ADJ	JJ	Degree=Pos	24	acl	_	_
+28	save	save	SCONJ	IN	_	30	mark	_	_
+29	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	30	nsubj	_	_
+30	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	advcl	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	disciples	disciple	NOUN	NNS	Number=Plur	30	nsubj	_	_
+33	of	of	ADP	IN	_	34	case	_	_
+34	Jesus	Jesus	PROPN	NNP	Number=Sing	32	nmod	_	_
+35	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And gold and silver did they lay up in store in abundance, and did traffic in all manner of traffic.
+# sent_id = 54
+# llm_note = Topicalized coordinate object "gold and silver" fronted; "did they lay up" = inverted AUX+subject+VERB; "lay up in store" = lay=VERB + "up" compound:prt + "in store" obl; "did traffic in all manner of traffic" = conj
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	gold	gold	NOUN	NN	Number=Sing	7	obj	_	_
+3	and	and	CCONJ	CC	_	4	cc	_	_
+4	silver	silver	NOUN	NN	Number=Sing	2	conj	_	_
+5	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	7	aux	_	_
+6	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_
+7	lay	lay	VERB	VB	VerbForm=Inf	0	root	_	_
+8	up	up	ADP	RP	_	7	compound:prt	_	_
+9	in	in	ADP	IN	_	10	case	_	_
+10	store	store	NOUN	NN	Number=Sing	7	obl	_	_
+11	in	in	ADP	IN	_	12	case	_	_
+12	abundance	abundance	NOUN	NN	Number=Sing	7	obl	_	_
+13	,	,	PUNCT	,	_	7	punct	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	aux	_	_
+16	traffic	traffic	VERB	VB	VerbForm=Inf	7	conj	_	_
+17	in	in	ADP	IN	_	20	case	_	_
+18	all	all	DET	PDT	_	20	det:predet	_	_
+19	manner	manner	NOUN	NN	Number=Sing	20	nmod	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	traffic	traffic	NOUN	NN	Number=Sing	16	obl	_	_
+22	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And it came to pass that after three hundred and five years had passed away, (and the people did still remain in wickedness)
+# sent_id = 55
+# llm_note = AICTP fragment (sentence continues into sent_id 56); "after ... had passed away" = advcl temporal; parenthetical "(and the people did still remain in wickedness)" = parataxis
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	14	mark	_	_
+7	after	after	SCONJ	IN	_	14	mark	_	_
+8	three	three	NUM	CD	NumType=Card	9	nummod	_	_
+9	hundred	hundred	NUM	CD	NumType=Card	12	nummod	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	five	five	NUM	CD	NumType=Card	9	conj	_	_
+12	years	year	NOUN	NNS	Number=Plur	14	nsubj	_	_
+13	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	aux	_	_
+14	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+15	away	away	ADV	RB	_	14	advmod	_	_
+16	,	,	PUNCT	,	_	14	punct	_	_
+17	(	(	PUNCT	-LRB-	_	23	punct	_	_
+18	and	and	CCONJ	CC	_	23	cc	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	people	people	NOUN	NNS	Number=Plur	23	nsubj	_	_
+21	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	aux	_	_
+22	still	still	ADV	RB	_	23	advmod	_	_
+23	remain	remain	VERB	VB	VerbForm=Inf	3	parataxis	_	_
+24	in	in	ADP	IN	_	25	case	_	_
+25	wickedness	wickedness	NOUN	NN	Number=Sing	23	obl	_	_
+26	)	)	PUNCT	-RRB-	_	23	punct	_	_
+
+# text = Amos died; and his brother, Ammaron, did keep the record in his stead.
+# sent_id = 56
+# llm_note = Simple coordinated main clauses; "his brother, Ammaron" = NP with appos; "did keep" = AUX+VERB; "in his stead" = obl
+1	Amos	Amos	PROPN	NNP	Number=Sing	2	nsubj	_	_
+2	died	die	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	;	;	PUNCT	,	_	2	punct	_	_
+4	and	and	CCONJ	CC	_	11	cc	_	_
+5	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	_
+6	brother	brother	NOUN	NN	Number=Sing	11	nsubj	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	Ammaron	Ammaron	PROPN	NNP	Number=Sing	6	appos	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	aux	_	_
+11	keep	keep	VERB	VB	VerbForm=Inf	2	conj	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	record	record	NOUN	NN	Number=Sing	11	obj	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+16	stead	stead	NOUN	NN	Number=Sing	11	obl	_	_
+17	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = And it came to pass that when three hundred and twenty years had passed away, Ammaron, being constrained by the Holy Ghost, did hide up the records which were sacred-- yea, even all the sacred records which had been handed down from generation to generation, which were sacred-- even until the three hundred and twentieth year from the coming of Christ.
+# sent_id = 57
+# llm_note = AICTP with "when" temporal advcl; "being constrained by the Holy Ghost" = advcl participial passive on Ammaron; "did hide up" = VERB+compound:prt; "which were sacred" = acl:relcl (twice, on "records"); dashes = PUNCT; "yea, even all the sacred records" = appos resumption; "which had been handed down" = acl:relcl; "from generation to generation" = obl fixed; "even until the three hundred and twentieth year" = advcl temporal
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	27	mark	_	_
+7	when	when	SCONJ	WRB	_	14	mark	_	_
+8	three	three	NUM	CD	NumType=Card	9	nummod	_	_
+9	hundred	hundred	NUM	CD	NumType=Card	12	nummod	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	twenty	twenty	NUM	CD	NumType=Card	9	conj	_	_
+12	years	year	NOUN	NNS	Number=Plur	14	nsubj	_	_
+13	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	aux	_	_
+14	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	27	advcl	_	_
+15	away	away	ADV	RB	_	14	advmod	_	_
+16	,	,	PUNCT	,	_	14	punct	_	_
+17	Ammaron	Ammaron	PROPN	NNP	Number=Sing	27	nsubj	_	_
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	being	be	AUX	VBG	VerbForm=Part	20	aux:pass	_	_
+20	constrained	constrain	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	17	advcl	_	_
+21	by	by	ADP	IN	_	24	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+23	Holy	Holy	ADJ	NNP	_	24	amod	_	_
+24	Ghost	Ghost	PROPN	NNP	Number=Sing	20	obl:agent	_	_
+25	,	,	PUNCT	,	_	20	punct	_	_
+26	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	aux	_	_
+27	hide	hide	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+28	up	up	ADP	RP	_	27	compound:prt	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	records	record	NOUN	NNS	Number=Plur	27	obj	_	_
+31	which	which	PRON	WDT	PronType=Rel	33	nsubj	_	_
+32	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	33	cop	_	_
+33	sacred	sacred	ADJ	JJ	Degree=Pos	30	acl:relcl	_	_
+34	--	--	PUNCT	:	_	33	punct	_	_
+35	yea	yea	INTJ	UH	_	27	discourse	_	_
+36	,	,	PUNCT	,	_	35	punct	_	_
+37	even	even	ADV	RB	_	41	advmod	_	_
+38	all	all	DET	PDT	_	41	det:predet	_	_
+39	the	the	DET	DT	Definite=Def|PronType=Art	41	det	_	_
+40	sacred	sacred	ADJ	JJ	Degree=Pos	41	amod	_	_
+41	records	record	NOUN	NNS	Number=Plur	30	appos	_	_
+42	which	which	PRON	WDT	PronType=Rel	45	nsubj:pass	_	_
+43	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	45	aux	_	_
+44	been	be	AUX	VBN	Tense=Past|VerbForm=Part	45	aux:pass	_	_
+45	handed	hand	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	41	acl:relcl	_	_
+46	down	down	ADP	RP	_	45	compound:prt	_	_
+47	from	from	ADP	IN	_	48	case	_	_
+48	generation	generation	NOUN	NN	Number=Sing	45	obl	_	_
+49	to	to	ADP	IN	_	50	case	_	_
+50	generation	generation	NOUN	NN	Number=Sing	48	nmod	_	_
+51	,	,	PUNCT	,	_	45	punct	_	_
+52	which	which	PRON	WDT	PronType=Rel	54	nsubj	_	_
+53	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	54	cop	_	_
+54	sacred	sacred	ADJ	JJ	Degree=Pos	41	acl:relcl	_	_
+55	--	--	PUNCT	:	_	54	punct	_	_
+56	even	even	ADV	RB	_	57	advmod	_	_
+57	until	until	SCONJ	IN	_	63	mark	_	_
+58	the	the	DET	DT	Definite=Def|PronType=Art	63	det	_	_
+59	three	three	NUM	CD	NumType=Card	60	nummod	_	_
+60	hundred	hundred	NUM	CD	NumType=Card	62	nummod	_	_
+61	and	and	CCONJ	CC	_	62	cc	_	_
+62	twentieth	twentieth	ADJ	JJ	NumType=Ord	63	amod	_	_
+63	year	year	NOUN	NN	Number=Sing	27	advcl	_	_
+64	from	from	ADP	IN	_	66	case	_	_
+65	the	the	DET	DT	Definite=Def|PronType=Art	66	det	_	_
+66	coming	coming	NOUN	NN	Number=Sing	63	nmod	_	_
+67	of	of	ADP	IN	_	68	case	_	_
+68	Christ	Christ	PROPN	NNP	Number=Sing	66	nmod	_	_
+69	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he did hide them up unto the Lord, that they might come again unto the remnant of the house of Jacob, according to the prophecies and the promises of the Lord.
+# sent_id = 58
+# llm_note = "did hide them up" = VERB+compound:prt+obj; "unto the Lord" = obl; "that they might come again" = purpose advcl; "according to" = complex case; "prophecies and promises" = coordinate nmod
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	hide	hide	VERB	VB	VerbForm=Inf	0	root	_	_
+5	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	4	obj	_	_
+6	up	up	ADP	RP	_	4	compound:prt	_	_
+7	unto	unto	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	Lord	Lord	PROPN	NNP	Number=Sing	4	obl	_	_
+10	,	,	PUNCT	,	_	4	punct	_	_
+11	that	that	SCONJ	IN	_	14	mark	_	_
+12	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	14	nsubj	_	_
+13	might	may	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	come	come	VERB	VB	VerbForm=Inf	4	advcl	_	_
+15	again	again	ADV	RB	_	14	advmod	_	_
+16	unto	unto	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	remnant	remnant	NOUN	NN	Number=Sing	14	obl	_	_
+19	of	of	ADP	IN	_	22	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+21	house	house	NOUN	NN	Number=Sing	22	compound	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	Jacob	Jacob	PROPN	NNP	Number=Sing	18	nmod	_	_
+24	,	,	PUNCT	,	_	14	punct	_	_
+25	according	accord	ADP	IN	_	28	case	_	_
+26	to	to	ADP	IN	_	25	fixed	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	prophecies	prophecy	NOUN	NNS	Number=Plur	14	obl	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
+31	promises	promise	NOUN	NNS	Number=Plur	28	conj	_	_
+32	of	of	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	Lord	Lord	PROPN	NNP	Number=Sing	28	nmod	_	_
+35	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And thus is the end of the record of Ammaron.
+# sent_id = 59
+# llm_note = "And thus" + copular; "is" = cop; "the end" = nsubj; "of the record of Ammaron" = nested nmod chain
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	end	end	NOUN	NN	Number=Sing	3	nsubj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	record	record	NOUN	NN	Number=Sing	5	nmod	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Ammaron	Ammaron	PROPN	NNP	Number=Sing	8	nmod	_	_
+11	.	.	PUNCT	.	_	3	punct	_	_
+

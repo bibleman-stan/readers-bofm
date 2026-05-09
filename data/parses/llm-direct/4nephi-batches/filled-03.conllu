@@ -1,0 +1,572 @@
+# text = And again, there was another church which denied the Christ; and they did persecute the true church of Christ, because of their humility and their belief in Christ; and they did despise them because of the many miracles which were wrought among them.
+# sent_id = 30
+# llm_note = "again" = ADV discourse; existential "there was another church"; "which denied" = acl:relcl; "they did persecute" = conj (the persecuting group); "because of their humility and their belief" = complex ADP obls; "which were wrought" = acl:relcl on miracles
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	again	again	ADV	RB	_	5	advmod	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	there	there	PRON	EX	_	5	expl	_	_
+5	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+6	another	another	DET	DT	_	7	det	_	_
+7	church	church	NOUN	NN	Number=Sing	5	nsubj	_	_
+8	which	which	PRON	WDT	PronType=Rel	9	nsubj	_	_
+9	denied	deny	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	7	acl:relcl	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	Christ	Christ	PROPN	NNP	Number=Sing	9	obj	_	_
+12	;	;	PUNCT	,	_	5	punct	_	_
+13	and	and	CCONJ	CC	_	16	cc	_	_
+14	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	16	nsubj	_	_
+15	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	aux	_	_
+16	persecute	persecute	VERB	VB	VerbForm=Inf	5	conj	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+18	true	true	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	church	church	NOUN	NN	Number=Sing	16	obj	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	Christ	Christ	PROPN	NNP	Number=Sing	19	nmod	_	_
+22	,	,	PUNCT	,	_	16	punct	_	_
+23	because	because	ADP	IN	_	26	case	_	_
+24	of	of	ADP	IN	_	23	fixed	_	_
+25	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	26	nmod:poss	_	_
+26	humility	humility	NOUN	NN	Number=Sing	16	obl	_	_
+27	and	and	CCONJ	CC	_	29	cc	_	_
+28	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	29	nmod:poss	_	_
+29	belief	belief	NOUN	NN	Number=Sing	26	conj	_	_
+30	in	in	ADP	IN	_	31	case	_	_
+31	Christ	Christ	PROPN	NNP	Number=Sing	29	nmod	_	_
+32	;	;	PUNCT	,	_	16	punct	_	_
+33	and	and	CCONJ	CC	_	36	cc	_	_
+34	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	36	nsubj	_	_
+35	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	36	aux	_	_
+36	despise	despise	VERB	VB	VerbForm=Inf	5	conj	_	_
+37	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	36	obj	_	_
+38	because	because	ADP	IN	_	42	case	_	_
+39	of	of	ADP	IN	_	38	fixed	_	_
+40	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+41	many	many	ADJ	JJ	Degree=Pos	42	amod	_	_
+42	miracles	miracle	NOUN	NNS	Number=Plur	36	obl	_	_
+43	which	which	PRON	WDT	PronType=Rel	45	nsubj:pass	_	_
+44	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	45	aux:pass	_	_
+45	wrought	work	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	42	acl:relcl	_	_
+46	among	among	ADP	IN	_	47	case	_	_
+47	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	45	obl	_	_
+48	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Therefore they did exercise power and authority over the disciples of Jesus who did tarry with them, and they did cast them into prison; but by the power of the word of God, which was in them, the prisons were rent in twain, and they went forth doing mighty miracles among them.
+# sent_id = 31
+# llm_note = "Therefore" = ADV; coordinate VPs "exercise" and "cast"; "who did tarry" = acl:relcl; "by the power of the word of God" = obl:agent; "which was in them" = acl:relcl; "went forth doing mighty miracles" = main verb + advcl participial
+1	Therefore	therefore	ADV	RB	_	4	advmod	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	exercise	exercise	VERB	VB	VerbForm=Inf	0	root	_	_
+5	power	power	NOUN	NN	Number=Sing	4	obj	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	authority	authority	NOUN	NN	Number=Sing	5	conj	_	_
+8	over	over	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	disciples	disciple	NOUN	NNS	Number=Plur	4	obl	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	Jesus	Jesus	PROPN	NNP	Number=Sing	10	nmod	_	_
+13	who	who	PRON	WP	PronType=Rel	15	nsubj	_	_
+14	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	aux	_	_
+15	tarry	tarry	VERB	VB	VerbForm=Inf	10	acl:relcl	_	_
+16	with	with	ADP	IN	_	17	case	_	_
+17	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	15	obl	_	_
+18	,	,	PUNCT	,	_	4	punct	_	_
+19	and	and	CCONJ	CC	_	22	cc	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_
+21	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	aux	_	_
+22	cast	cast	VERB	VB	VerbForm=Inf	4	conj	_	_
+23	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	22	obj	_	_
+24	into	into	ADP	IN	_	25	case	_	_
+25	prison	prison	NOUN	NN	Number=Sing	22	obl	_	_
+26	;	;	PUNCT	,	_	22	punct	_	_
+27	but	but	CCONJ	CC	_	45	cc	_	_
+28	by	by	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	power	power	NOUN	NN	Number=Sing	45	obl	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+33	word	word	NOUN	NN	Number=Sing	30	nmod	_	_
+34	of	of	ADP	IN	_	35	case	_	_
+35	God	God	PROPN	NNP	Number=Sing	33	nmod	_	_
+36	,	,	PUNCT	,	_	33	punct	_	_
+37	which	which	PRON	WDT	PronType=Rel	38	nsubj	_	_
+38	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	33	acl:relcl	_	_
+39	in	in	ADP	IN	_	40	case	_	_
+40	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	38	obl	_	_
+41	,	,	PUNCT	,	_	38	punct	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	43	det	_	_
+43	prisons	prison	NOUN	NNS	Number=Plur	45	nsubj:pass	_	_
+44	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	45	aux:pass	_	_
+45	rent	rend	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	conj	_	_
+46	in	in	ADP	IN	_	47	case	_	_
+47	twain	twain	NOUN	NN	Number=Sing	45	obl	_	_
+48	,	,	PUNCT	,	_	45	punct	_	_
+49	and	and	CCONJ	CC	_	51	cc	_	_
+50	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	51	nsubj	_	_
+51	went	go	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	45	conj	_	_
+52	forth	forth	ADV	RB	_	51	advmod	_	_
+53	doing	do	VERB	VBG	VerbForm=Part	51	advcl	_	_
+54	mighty	mighty	ADJ	JJ	Degree=Pos	55	amod	_	_
+55	miracles	miracle	NOUN	NNS	Number=Plur	53	obj	_	_
+56	among	among	ADP	IN	_	57	case	_	_
+57	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	53	obl	_	_
+58	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Nevertheless, and notwithstanding all these miracles, the people did harden their hearts, and did seek to kill them, even as the Jews at Jerusalem sought to kill Jesus, according to his word.
+# sent_id = 32
+# llm_note = "Nevertheless" = ADV; "notwithstanding all these miracles" = ADP+NP obl concessive; "even as the Jews ... sought to kill Jesus" = advcl comparative; "according to his word" = obl
+1	Nevertheless	nevertheless	ADV	RB	_	12	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	and	and	CCONJ	CC	_	12	cc	_	_
+4	notwithstanding	notwithstand	ADP	IN	_	7	case	_	_
+5	all	all	DET	PDT	_	7	det:predet	_	_
+6	these	this	DET	DT	Number=Plur|PronType=Dem	7	det	_	_
+7	miracles	miracle	NOUN	NNS	Number=Plur	12	obl	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	people	people	NOUN	NNS	Number=Plur	12	nsubj	_	_
+11	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	aux	_	_
+12	harden	harden	VERB	VB	VerbForm=Inf	0	root	_	_
+13	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	_
+14	hearts	heart	NOUN	NNS	Number=Plur	12	obj	_	_
+15	,	,	PUNCT	,	_	12	punct	_	_
+16	and	and	CCONJ	CC	_	18	cc	_	_
+17	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	18	aux	_	_
+18	seek	seek	VERB	VB	VerbForm=Inf	12	conj	_	_
+19	to	to	PART	TO	_	20	mark	_	_
+20	kill	kill	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+21	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	20	obj	_	_
+22	,	,	PUNCT	,	_	18	punct	_	_
+23	even	even	ADV	RB	_	24	advmod	_	_
+24	as	as	SCONJ	IN	_	29	mark	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	Jews	Jew	PROPN	NNPS	Number=Plur	29	nsubj	_	_
+27	at	at	ADP	IN	_	28	case	_	_
+28	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	26	nmod	_	_
+29	sought	seek	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	18	advcl	_	_
+30	to	to	PART	TO	_	31	mark	_	_
+31	kill	kill	VERB	VB	VerbForm=Inf	29	xcomp	_	_
+32	Jesus	Jesus	PROPN	NNP	Number=Sing	31	obj	_	_
+33	,	,	PUNCT	,	_	29	punct	_	_
+34	according	accord	ADP	IN	_	37	case	_	_
+35	to	to	ADP	IN	_	34	fixed	_	_
+36	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes|PronType=Prs	37	nmod:poss	_	_
+37	word	word	NOUN	NN	Number=Sing	12	obl	_	_
+38	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = And they did cast them into furnaces of fire, and they came forth receiving no harm.
+# sent_id = 33
+# llm_note = "came forth receiving no harm" = came=main, forth=advmod, receiving=advcl participial; "no harm" = obj of receiving
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	cast	cast	VERB	VB	VerbForm=Inf	0	root	_	_
+5	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	4	obj	_	_
+6	into	into	ADP	IN	_	8	case	_	_
+7	furnaces	furnace	NOUN	NNS	Number=Plur	4	obl	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	fire	fire	NOUN	NN	Number=Sing	7	nmod	_	_
+10	,	,	PUNCT	,	_	4	punct	_	_
+11	and	and	CCONJ	CC	_	13	cc	_	_
+12	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	13	nsubj	_	_
+13	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	conj	_	_
+14	forth	forth	ADV	RB	_	13	advmod	_	_
+15	receiving	receive	VERB	VBG	VerbForm=Part	13	advcl	_	_
+16	no	no	DET	DT	_	17	det	_	_
+17	harm	harm	NOUN	NN	Number=Sing	15	obj	_	_
+18	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And they also cast them into dens of wild beasts, and they did play with the wild beasts even as a child with a lamb; and they did come forth from among them, receiving no harm.
+# sent_id = 34
+# llm_note = "even as a child with a lamb" = comparative advcl (elliptical: "even as [they played as] a child [plays] with a lamb"); "come forth from among" = compound prt chain; "receiving no harm" = advcl participial
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	also	also	ADV	RB	_	4	advmod	_	_
+4	cast	cast	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	4	obj	_	_
+6	into	into	ADP	IN	_	7	case	_	_
+7	dens	den	NOUN	NNS	Number=Plur	4	obl	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	wild	wild	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	beasts	beast	NOUN	NNS	Number=Plur	7	nmod	_	_
+11	,	,	PUNCT	,	_	4	punct	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_
+14	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	aux	_	_
+15	play	play	VERB	VB	VerbForm=Inf	4	conj	_	_
+16	with	with	ADP	IN	_	19	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+18	wild	wild	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	beasts	beast	NOUN	NNS	Number=Plur	15	obl	_	_
+20	even	even	ADV	RB	_	21	advmod	_	_
+21	as	as	SCONJ	IN	_	23	mark	_	_
+22	a	a	DET	DT	Definite=Ind|PronType=Art	23	det	_	_
+23	child	child	NOUN	NN	Number=Sing	15	advcl	_	_
+24	with	with	ADP	IN	_	26	case	_	_
+25	a	a	DET	DT	Definite=Ind|PronType=Art	26	det	_	_
+26	lamb	lamb	NOUN	NN	Number=Sing	23	obl	_	_
+27	;	;	PUNCT	,	_	15	punct	_	_
+28	and	and	CCONJ	CC	_	31	cc	_	_
+29	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	31	nsubj	_	_
+30	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	31	aux	_	_
+31	come	come	VERB	VB	VerbForm=Inf	4	conj	_	_
+32	forth	forth	ADV	RB	_	31	advmod	_	_
+33	from	from	ADP	IN	_	35	case	_	_
+34	among	among	ADP	IN	_	33	fixed	_	_
+35	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	31	obl	_	_
+36	,	,	PUNCT	,	_	31	punct	_	_
+37	receiving	receive	VERB	VBG	VerbForm=Part	31	advcl	_	_
+38	no	no	DET	DT	_	39	det	_	_
+39	harm	harm	NOUN	NN	Number=Sing	37	obj	_	_
+40	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Nevertheless, the people did harden their hearts, for they were led by many priests and false prophets to build up many churches, and to do all manner of iniquity.
+# sent_id = 35
+# llm_note = "for" = SCONJ causal; "were led by" = passive; "to build up ... and to do" = purpose infinitivals (xcomp/advcl of led); "build up" = compound:prt
+1	Nevertheless	nevertheless	ADV	RB	_	6	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	people	people	NOUN	NNS	Number=Plur	6	nsubj	_	_
+5	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	aux	_	_
+6	harden	harden	VERB	VB	VerbForm=Inf	0	root	_	_
+7	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	_
+8	hearts	heart	NOUN	NNS	Number=Plur	6	obj	_	_
+9	,	,	PUNCT	,	_	6	punct	_	_
+10	for	for	SCONJ	IN	_	13	mark	_	_
+11	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	13	nsubj:pass	_	_
+12	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	aux:pass	_	_
+13	led	lead	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	6	advcl	_	_
+14	by	by	ADP	IN	_	16	case	_	_
+15	many	many	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	priests	priest	NOUN	NNS	Number=Plur	13	obl:agent	_	_
+17	and	and	CCONJ	CC	_	19	cc	_	_
+18	false	false	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	prophets	prophet	NOUN	NNS	Number=Plur	16	conj	_	_
+20	to	to	PART	TO	_	21	mark	_	_
+21	build	build	VERB	VB	VerbForm=Inf	13	advcl	_	_
+22	up	up	ADP	RP	_	21	compound:prt	_	_
+23	many	many	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	churches	church	NOUN	NNS	Number=Plur	21	obj	_	_
+25	,	,	PUNCT	,	_	21	punct	_	_
+26	and	and	CCONJ	CC	_	28	cc	_	_
+27	to	to	PART	TO	_	28	mark	_	_
+28	do	do	VERB	VB	VerbForm=Inf	21	conj	_	_
+29	all	all	DET	PDT	_	31	det:predet	_	_
+30	manner	manner	NOUN	NN	Number=Sing	31	nmod	_	_
+31	of	of	ADP	IN	_	32	case	_	_
+32	iniquity	iniquity	NOUN	NN	Number=Sing	28	obj	_	_
+33	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And they did smite upon the people of Jesus; but the people of Jesus did not smite again.
+# sent_id = 36
+# llm_note = "smite upon" = VERB + ADP obl; "did not smite again" = negated AUX+VERB
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	smite	smite	VERB	VB	VerbForm=Inf	0	root	_	_
+5	upon	upon	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	people	people	NOUN	NNS	Number=Plur	4	obl	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	Jesus	Jesus	PROPN	NNP	Number=Sing	7	nmod	_	_
+10	;	;	PUNCT	,	_	4	punct	_	_
+11	but	but	CCONJ	CC	_	18	cc	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	people	people	NOUN	NNS	Number=Plur	18	nsubj	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	Jesus	Jesus	PROPN	NNP	Number=Sing	13	nmod	_	_
+16	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	18	aux	_	_
+17	not	not	PART	RB	_	18	advmod	_	_
+18	smite	smite	VERB	VB	VerbForm=Inf	4	conj	_	_
+19	again	again	ADV	RB	_	18	advmod	_	_
+20	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And thus they did dwindle in unbelief and wickedness, from year to year, even until two hundred and thirty years had passed away.
+# sent_id = 37
+# llm_note = "thus" = ADV; "from year to year" = fixed idiomatic temporal PP; "even until" = advcl temporal
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	thus	thus	ADV	RB	_	5	advmod	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+4	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux	_	_
+5	dwindle	dwindle	VERB	VB	VerbForm=Inf	0	root	_	_
+6	in	in	ADP	IN	_	7	case	_	_
+7	unbelief	unbelief	NOUN	NN	Number=Sing	5	obl	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	wickedness	wickedness	NOUN	NN	Number=Sing	7	conj	_	_
+10	,	,	PUNCT	,	_	5	punct	_	_
+11	from	from	ADP	IN	_	12	case	_	_
+12	year	year	NOUN	NN	Number=Sing	5	obl	_	_
+13	to	to	ADP	IN	_	14	case	_	_
+14	year	year	NOUN	NN	Number=Sing	12	nmod	_	_
+15	,	,	PUNCT	,	_	12	punct	_	_
+16	even	even	ADV	RB	_	17	advmod	_	_
+17	until	until	SCONJ	IN	_	24	mark	_	_
+18	two	two	NUM	CD	NumType=Card	19	nummod	_	_
+19	hundred	hundred	NUM	CD	NumType=Card	22	nummod	_	_
+20	and	and	CCONJ	CC	_	21	cc	_	_
+21	thirty	thirty	NUM	CD	NumType=Card	19	conj	_	_
+22	years	year	NOUN	NNS	Number=Plur	24	nsubj	_	_
+23	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	24	aux	_	_
+24	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	5	advcl	_	_
+25	away	away	ADV	RB	_	24	advmod	_	_
+26	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And now it came to pass in this year, yea, in the two hundred and thirty and first year, there was a great division among the people.
+# sent_id = 38
+# llm_note = AICTP without "that"; time PP "in this year" and appositive "in the two hundred ... year"; main ccomp = "there was a great division"
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	expl	_	_
+4	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	this	this	DET	DT	Number=Sing|PronType=Dem	9	det	_	_
+9	year	year	NOUN	NN	Number=Sing	24	obl	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	yea	yea	INTJ	UH	_	4	discourse	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	in	in	ADP	IN	_	21	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+15	two	two	NUM	CD	NumType=Card	17	compound	_	_
+16	hundred	hundred	NUM	CD	NumType=Card	20	compound	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	thirty	thirty	NUM	CD	NumType=Card	16	conj	_	_
+19	and	and	CCONJ	CC	_	20	cc	_	_
+20	first	first	ADJ	JJ	NumType=Ord	21	amod	_	_
+21	year	year	NOUN	NN	Number=Sing	9	appos	_	_
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	there	there	PRON	EX	_	24	expl	_	_
+24	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	ccomp	_	_
+25	a	a	DET	DT	Definite=Ind|PronType=Art	27	det	_	_
+26	great	great	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	division	division	NOUN	NN	Number=Sing	24	nsubj	_	_
+28	among	among	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	people	people	NOUN	NNS	Number=Plur	27	nmod	_	_
+31	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that in this year there arose a people who were called the Nephites, and they were true believers in Christ; and among them there were those who were called by the Lamanites--
+# sent_id = 39
+# llm_note = AICTP; "there arose a people" = existential; "who were called the Nephites" = acl:relcl; second clause "they were true believers" = conj; third clause "among them there were those" = conj; "--" = PUNCT (dash, sentence continues to sent_id 40)
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	11	mark	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	this	this	DET	DT	Number=Sing|PronType=Dem	9	det	_	_
+9	year	year	NOUN	NN	Number=Sing	11	obl	_	_
+10	there	there	PRON	EX	_	11	expl	_	_
+11	arose	arise	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+12	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
+13	people	people	NOUN	NNS	Number=Plur	11	nsubj	_	_
+14	who	who	PRON	WP	PronType=Rel	16	nsubj:pass	_	_
+15	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	aux:pass	_	_
+16	called	call	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	13	acl:relcl	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	Nephites	Nephite	PROPN	NNPS	Number=Plur	16	xcomp	_	_
+19	,	,	PUNCT	,	_	11	punct	_	_
+20	and	and	CCONJ	CC	_	24	cc	_	_
+21	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	24	nsubj	_	_
+22	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	24	cop	_	_
+23	true	true	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	believers	believer	NOUN	NNS	Number=Plur	11	conj	_	_
+25	in	in	ADP	IN	_	26	case	_	_
+26	Christ	Christ	PROPN	NNP	Number=Sing	24	nmod	_	_
+27	;	;	PUNCT	,	_	11	punct	_	_
+28	and	and	CCONJ	CC	_	33	cc	_	_
+29	among	among	ADP	IN	_	30	case	_	_
+30	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	33	obl	_	_
+31	there	there	PRON	EX	_	32	expl	_	_
+32	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	33	cop	_	_
+33	those	those	PRON	DT	Number=Plur|PronType=Dem	11	conj	_	_
+34	who	who	PRON	WP	PronType=Rel	36	nsubj:pass	_	_
+35	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	36	aux:pass	_	_
+36	called	call	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	33	acl:relcl	_	_
+37	by	by	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+39	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	36	obl:agent	_	_
+40	--	--	PUNCT	:	_	36	punct	_	_
+
+# text = Jacobites, and Josephites, and Zoramites;
+# sent_id = 40
+# llm_note = Fragment sentence continuing the list from sent 39; Jacobites = root (head of the nominal list), others = conj
+1	Jacobites	Jacobite	PROPN	NNPS	Number=Plur	0	root	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	and	and	CCONJ	CC	_	4	cc	_	_
+4	Josephites	Josephite	PROPN	NNPS	Number=Plur	1	conj	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	Zoramites	Zoramite	PROPN	NNPS	Number=Plur	1	conj	_	_
+8	;	;	PUNCT	,	_	1	punct	_	_
+
+# text = Therefore the true believers in Christ, and the true worshipers of Christ, (among whom were the three disciples of Jesus who should tarry) were called Nephites, and Jacobites, and Josephites, and Zoramites.
+# sent_id = 41
+# llm_note = "Therefore"; compound subject "believers and worshipers"; parenthetical "(among whom were...)" = parataxis/appos on subject; "were called ... Nephites" = passive + xcomp list; tribe names all conj of Nephites
+1	Therefore	therefore	ADV	RB	_	29	advmod	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+3	true	true	ADJ	JJ	Degree=Pos	4	amod	_	_
+4	believers	believer	NOUN	NNS	Number=Plur	29	nsubj:pass	_	_
+5	in	in	ADP	IN	_	6	case	_	_
+6	Christ	Christ	PROPN	NNP	Number=Sing	4	nmod	_	_
+7	,	,	PUNCT	,	_	4	punct	_	_
+8	and	and	CCONJ	CC	_	11	cc	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+10	true	true	ADJ	JJ	Degree=Pos	11	amod	_	_
+11	worshipers	worshiper	NOUN	NNS	Number=Plur	4	conj	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	Christ	Christ	PROPN	NNP	Number=Sing	11	nmod	_	_
+14	,	,	PUNCT	,	_	4	punct	_	_
+15	(	(	PUNCT	-LRB-	_	18	punct	_	_
+16	among	among	ADP	IN	_	17	case	_	_
+17	whom	whom	PRON	WP	Case=Acc|PronType=Rel	18	nsubj	_	_
+18	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	parataxis	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+20	three	three	NUM	CD	NumType=Card	21	nummod	_	_
+21	disciples	disciple	NOUN	NNS	Number=Plur	18	nsubj	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	Jesus	Jesus	PROPN	NNP	Number=Sing	21	nmod	_	_
+24	who	who	PRON	WP	PronType=Rel	26	nsubj	_	_
+25	should	shall	AUX	MD	VerbForm=Fin	26	aux	_	_
+26	tarry	tarry	VERB	VB	VerbForm=Inf	21	acl:relcl	_	_
+27	)	)	PUNCT	-RRB-	_	18	punct	_	_
+28	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	29	aux:pass	_	_
+29	called	call	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+30	Nephites	Nephite	PROPN	NNPS	Number=Plur	29	xcomp	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	and	and	CCONJ	CC	_	33	cc	_	_
+33	Jacobites	Jacobite	PROPN	NNPS	Number=Plur	30	conj	_	_
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	Josephites	Josephite	PROPN	NNPS	Number=Plur	30	conj	_	_
+37	,	,	PUNCT	,	_	36	punct	_	_
+38	and	and	CCONJ	CC	_	39	cc	_	_
+39	Zoramites	Zoramite	PROPN	NNPS	Number=Plur	30	conj	_	_
+40	.	.	PUNCT	.	_	29	punct	_	_
+
+# text = And it came to pass that they who rejected the gospel were called Lamanites, and Lemuelites, and Ishmaelites; and they did not dwindle in unbelief, but they did wilfully rebel against the gospel of Christ; and they did teach their children that they should not believe, even as their fathers, from the beginning, did dwindle.
+# sent_id = 42
+# llm_note = AICTP; "they who rejected the gospel" = subject with acl:relcl; "were called Lamanites" = passive; tribe names conj; "they did not dwindle ... but they did wilfully rebel" = contrastive conj pair; "they did teach their children that..." = ccomp of teach; "even as their fathers ... did dwindle" = comparative advcl
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	13	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	13	nsubj:pass	_	_
+8	who	who	PRON	WP	PronType=Rel	9	nsubj	_	_
+9	rejected	reject	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	7	acl:relcl	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	gospel	gospel	NOUN	NN	Number=Sing	9	obj	_	_
+12	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	aux:pass	_	_
+13	called	call	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	ccomp	_	_
+14	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	13	xcomp	_	_
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	Lemuelites	Lemuelite	PROPN	NNPS	Number=Plur	14	conj	_	_
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	and	and	CCONJ	CC	_	20	cc	_	_
+20	Ishmaelites	Ishmaelite	PROPN	NNPS	Number=Plur	14	conj	_	_
+21	;	;	PUNCT	,	_	13	punct	_	_
+22	and	and	CCONJ	CC	_	26	cc	_	_
+23	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	26	nsubj	_	_
+24	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	26	aux	_	_
+25	not	not	PART	RB	_	26	advmod	_	_
+26	dwindle	dwindle	VERB	VB	VerbForm=Inf	13	conj	_	_
+27	in	in	ADP	IN	_	28	case	_	_
+28	unbelief	unbelief	NOUN	NN	Number=Sing	26	obl	_	_
+29	,	,	PUNCT	,	_	26	punct	_	_
+30	but	but	CCONJ	CC	_	34	cc	_	_
+31	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	34	nsubj	_	_
+32	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	34	aux	_	_
+33	wilfully	wilfully	ADV	RB	_	34	advmod	_	_
+34	rebel	rebel	VERB	VB	VerbForm=Inf	26	conj	_	_
+35	against	against	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+37	gospel	gospel	NOUN	NN	Number=Sing	34	obl	_	_
+38	of	of	ADP	IN	_	39	case	_	_
+39	Christ	Christ	PROPN	NNP	Number=Sing	37	nmod	_	_
+40	;	;	PUNCT	,	_	34	punct	_	_
+41	and	and	CCONJ	CC	_	44	cc	_	_
+42	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	44	nsubj	_	_
+43	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	44	aux	_	_
+44	teach	teach	VERB	VB	VerbForm=Inf	34	conj	_	_
+45	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	46	nmod:poss	_	_
+46	children	child	NOUN	NNS	Number=Plur	44	obj	_	_
+47	that	that	SCONJ	IN	_	51	mark	_	_
+48	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	51	nsubj	_	_
+49	should	shall	AUX	MD	VerbForm=Fin	51	aux	_	_
+50	not	not	PART	RB	_	51	advmod	_	_
+51	believe	believe	VERB	VB	VerbForm=Inf	44	ccomp	_	_
+52	,	,	PUNCT	,	_	51	punct	_	_
+53	even	even	ADV	RB	_	54	advmod	_	_
+54	as	as	SCONJ	IN	_	63	mark	_	_
+55	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	56	nmod:poss	_	_
+56	fathers	father	NOUN	NNS	Number=Plur	63	nsubj	_	_
+57	,	,	PUNCT	,	_	56	punct	_	_
+58	from	from	ADP	IN	_	60	case	_	_
+59	the	the	DET	DT	Definite=Def|PronType=Art	60	det	_	_
+60	beginning	beginning	NOUN	NN	Number=Sing	63	obl	_	_
+61	,	,	PUNCT	,	_	60	punct	_	_
+62	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	63	aux	_	_
+63	dwindle	dwindle	VERB	VB	VerbForm=Inf	51	advcl	_	_
+64	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it was because of the wickedness and abomination of their fathers, even as it was in the beginning.
+# sent_id = 43
+# llm_note = "it was because of" = copular construction with complex ADP complement; "even as it was in the beginning" = comparative advcl
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	because	because	ADP	IN	_	7	case	_	_
+5	of	of	ADP	IN	_	4	fixed	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	wickedness	wickedness	NOUN	NN	Number=Sing	3	obl	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	abomination	abomination	NOUN	NN	Number=Sing	7	conj	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	_
+12	fathers	father	NOUN	NNS	Number=Plur	7	nmod	_	_
+13	,	,	PUNCT	,	_	3	punct	_	_
+14	even	even	ADV	RB	_	15	advmod	_	_
+15	as	as	SCONJ	IN	_	17	mark	_	_
+16	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+17	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	advcl	_	_
+18	in	in	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	beginning	beginning	NOUN	NN	Number=Sing	17	obl	_	_
+21	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And they were taught to hate the children of God, even as the Lamanites were taught to hate the children of Nephi from the beginning.
+# sent_id = 44
+# llm_note = Two parallel passive constructions: "they were taught to hate" (main) and "as the Lamanites were taught to hate" (comparative advcl); "from the beginning" = obl of second were-taught
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj:pass	_	_
+3	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
+4	taught	teach	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	hate	hate	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	children	child	NOUN	NNS	Number=Plur	6	obj	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	God	God	PROPN	NNP	Number=Sing	8	nmod	_	_
+11	,	,	PUNCT	,	_	4	punct	_	_
+12	even	even	ADV	RB	_	13	advmod	_	_
+13	as	as	SCONJ	IN	_	17	mark	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	17	nsubj:pass	_	_
+16	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	17	aux:pass	_	_
+17	taught	teach	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	advcl	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	hate	hate	VERB	VB	VerbForm=Inf	17	xcomp	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	children	child	NOUN	NNS	Number=Plur	19	obj	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	Nephi	Nephi	PROPN	NNP	Number=Sing	21	nmod	_	_
+24	from	from	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	beginning	beginning	NOUN	NN	Number=Sing	17	obl	_	_
+27	.	.	PUNCT	.	_	4	punct	_	_
+

@@ -1,0 +1,510 @@
+# text = Behold, it came to pass that I, Omni, being commanded by my father, Jarom, that I should write somewhat upon these plates, to preserve our genealogy--
+# sent_id = 0
+# llm_note = Truncated/elliptical AICTP: matrix "came to pass" has an unusual structure—"that I, Omni, being commanded...that I should write" where the first "that" clause has a participial absolute ("being commanded") and a second "that" clause ("that I should write") as the actual content. "came" is root; "it" expl; "Behold" discourse; first "that"(7) marks ccomp of "came"; "being commanded" is an advcl within that clause headed by "write"(23); second "that"(20) marks the ccomp complement of "commanded"(13); "Omni"(10) is appos of "I"(8).
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	expl	_	_
+4	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	23	mark	_	_
+8	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	23	nsubj	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	Omni	Omni	PROPN	NNP	_	8	appos	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	being	be	AUX	VBG	VerbForm=Part	13	aux:pass	_	_
+13	commanded	command	VERB	VBN	Tense=Past|VerbForm=Part	23	advcl	_	_
+14	by	by	ADP	IN	_	16	case	_	_
+15	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	16	nmod:poss	_	_
+16	father	father	NOUN	NN	Number=Sing	13	obl:agent	_	_
+17	,	,	PUNCT	,	_	18	punct	_	_
+18	Jarom	Jarom	PROPN	NNP	_	16	appos	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	that	that	SCONJ	IN	_	23	mark	_	_
+21	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	23	nsubj	_	_
+22	should	shall	AUX	MD	VerbForm=Fin	23	aux	_	_
+23	write	write	VERB	VB	VerbForm=Inf	6	ccomp	_	_
+24	somewhat	somewhat	ADV	RB	_	23	advmod	_	_
+25	upon	upon	ADP	IN	_	27	case	_	_
+26	these	this	DET	DT	Number=Plur|PronType=Dem	27	det	_	_
+27	plates	plate	NOUN	NNS	Number=Plur	23	obl	_	_
+28	,	,	PUNCT	,	_	30	punct	_	_
+29	to	to	PART	TO	_	30	mark	_	_
+30	preserve	preserve	VERB	VB	VerbForm=Inf	23	advcl	_	_
+31	our	our	PRON	PRP$	Case=Gen|Number=Plur|Person=1|Poss=Yes	32	nmod:poss	_	_
+32	genealogy	genealogy	NOUN	NN	Number=Sing	30	obj	_	_
+33	--	--	PUNCT	:	_	4	punct	_	_
+
+# text = Wherefore, in my days, I would that ye should know that I fought much with the sword to preserve my people, the Nephites, from falling into the hands of their enemies, the Lamanites.
+# sent_id = 1
+# llm_note = "would that ye should know" — "would" is a volition verb taking "that"-clause ccomp; "Wherefore" is ADV advmod; "Nephites" is appos of "people"(23); "Lamanites" is appos of "enemies"(35).
+1	Wherefore	wherefore	ADV	RB	_	8	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	in	in	ADP	IN	_	5	case	_	_
+4	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	5	nmod:poss	_	_
+5	days	day	NOUN	NNS	Number=Plur	8	obl	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	would	will	AUX	MD	VerbForm=Fin	0	root	_	_
+9	that	that	SCONJ	IN	_	12	mark	_	_
+10	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	12	nsubj	_	_
+11	should	shall	AUX	MD	VerbForm=Fin	12	aux	_	_
+12	know	know	VERB	VB	VerbForm=Inf	8	ccomp	_	_
+13	that	that	SCONJ	IN	_	15	mark	_	_
+14	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	15	nsubj	_	_
+15	fought	fight	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	12	ccomp	_	_
+16	much	much	ADV	RB	_	15	advmod	_	_
+17	with	with	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	sword	sword	NOUN	NN	Number=Sing	15	obl	_	_
+20	to	to	PART	TO	_	21	mark	_	_
+21	preserve	preserve	VERB	VB	VerbForm=Inf	15	advcl	_	_
+22	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	23	nmod:poss	_	_
+23	people	people	NOUN	NN	Number=Sing	21	obj	_	_
+24	,	,	PUNCT	,	_	26	punct	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	Nephites	Nephite	PROPN	NNPS	Number=Plur	23	appos	_	_
+27	,	,	PUNCT	,	_	26	punct	_	_
+28	from	from	ADP	IN	_	29	case	_	_
+29	falling	fall	VERB	VBG	VerbForm=Part	21	obl	_	_
+30	into	into	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	hands	hand	NOUN	NNS	Number=Plur	29	obl	_	_
+33	of	of	ADP	IN	_	35	case	_	_
+34	their	they	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes	35	nmod:poss	_	_
+35	enemies	enemy	NOUN	NNS	Number=Plur	32	nmod	_	_
+36	,	,	PUNCT	,	_	38	punct	_	_
+37	the	the	DET	DT	Definite=Def|PronType=Art	38	det	_	_
+38	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	35	appos	_	_
+39	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = But behold, I of myself am a wicked man, and I have not kept the statutes and the commandments of the Lord as I ought to have done.
+# sent_id = 2
+# llm_note = "of myself" is an intensifying reflexive PP modifying "I"(4); "am" is cop of "man"(10); second clause "I have not kept...done" is conj of "man"(10) via root; "as I ought to have done" is an advcl comparative of degree modifying "kept"(16).
+1	But	but	CCONJ	CC	_	10	cc	_	_
+2	behold	behold	INTJ	UH	_	10	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	10	nsubj	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	myself	myself	PRON	PRP	Case=Acc|Number=Sing|Person=1|Reflex=Yes	4	nmod	_	_
+7	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	cop	_	_
+8	a	a	DET	DT	Definite=Ind|PronType=Art	10	det	_	_
+9	wicked	wicked	ADJ	JJ	_	10	amod	_	_
+10	man	man	NOUN	NN	Number=Sing	0	root	_	_
+11	,	,	PUNCT	,	_	16	punct	_	_
+12	and	and	CCONJ	CC	_	16	cc	_	_
+13	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	16	nsubj	_	_
+14	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	16	aux	_	_
+15	not	not	PART	RB	Polarity=Neg	16	advmod	_	_
+16	kept	keep	VERB	VBN	Tense=Past|VerbForm=Part	10	conj	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	statutes	statute	NOUN	NNS	Number=Plur	16	obj	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	commandments	commandment	NOUN	NNS	Number=Plur	18	conj	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	Lord	Lord	PROPN	NNP	_	21	nmod	_	_
+25	as	as	SCONJ	IN	_	27	mark	_	_
+26	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	27	nsubj	_	_
+27	ought	ought	AUX	MD	VerbForm=Fin	16	advcl	_	_
+28	to	to	PART	TO	_	30	mark	_	_
+29	have	have	AUX	VB	VerbForm=Inf	30	aux	_	_
+30	done	do	VERB	VBN	Tense=Past|VerbForm=Part	27	xcomp	_	_
+31	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And it came to pass that two hundred and seventy and six years had passed away, and we had many seasons of peace; and we had many seasons of serious war and bloodshed.
+# sent_id = 3
+# llm_note = AICTP frame. "two hundred and seventy and six" is a compound numeral; "hundred"(8) is head, "two"(7) nummod, "seventy"(10) conj, "six"(12) conj; "years"(13) nsubj of "passed"(15); semicolon separates coordinated clauses all under root "came"; "passed away" — "away" is compound:prt of "passed".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	15	mark	_	_
+7	two	two	NUM	CD	NumType=Card	8	nummod	_	_
+8	hundred	hundred	NUM	CD	NumType=Card	13	nummod	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	seventy	seventy	NUM	CD	NumType=Card	8	conj	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	six	six	NUM	CD	NumType=Card	10	conj	_	_
+13	years	year	NOUN	NNS	Number=Plur	15	nsubj	_	_
+14	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	aux	_	_
+15	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+16	away	away	ADV	RB	_	15	compound:prt	_	_
+17	,	,	PUNCT	,	_	20	punct	_	_
+18	and	and	CCONJ	CC	_	20	cc	_	_
+19	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	20	nsubj	_	_
+20	had	have	VERB	VBD	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	15	conj	_	_
+21	many	many	ADJ	JJ	_	22	amod	_	_
+22	seasons	season	NOUN	NNS	Number=Plur	20	obj	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	peace	peace	NOUN	NN	Number=Sing	22	nmod	_	_
+25	;	;	PUNCT	,	_	28	punct	_	_
+26	and	and	CCONJ	CC	_	28	cc	_	_
+27	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	28	nsubj	_	_
+28	had	have	VERB	VBD	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	20	conj	_	_
+29	many	many	ADJ	JJ	_	30	amod	_	_
+30	seasons	season	NOUN	NNS	Number=Plur	28	obj	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	serious	serious	ADJ	JJ	_	33	amod	_	_
+33	war	war	NOUN	NN	Number=Sing	30	nmod	_	_
+34	and	and	CCONJ	CC	_	35	cc	_	_
+35	bloodshed	bloodshed	NOUN	NN	Number=Sing	33	conj	_	_
+36	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Yea, and in fine, two hundred and eighty and two years had passed away, and I had kept these plates according to the commandments of my fathers; and I conferred them upon my son Amaron.
+# sent_id = 4
+# llm_note = "Yea" is INTJ discourse marker; "in fine" is fixed idiomatic ADV phrase ("in fine" = in sum); "passed away"— "away" compound:prt; "I had kept" conj of "passed"; "I conferred" conj of "kept"; "Amaron" is flat/compound with "son"(38).
+1	Yea	yea	INTJ	UH	_	15	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	and	and	CCONJ	CC	_	15	cc	_	_
+4	in	in	ADP	IN	_	5	case	_	_
+5	fine	fine	NOUN	NN	Number=Sing	15	obl	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	two	two	NUM	CD	NumType=Card	8	nummod	_	_
+8	hundred	hundred	NUM	CD	NumType=Card	13	nummod	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	eighty	eighty	NUM	CD	NumType=Card	8	conj	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	two	two	NUM	CD	NumType=Card	10	conj	_	_
+13	years	year	NOUN	NNS	Number=Plur	15	nsubj	_	_
+14	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	aux	_	_
+15	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+16	away	away	ADV	RB	_	15	compound:prt	_	_
+17	,	,	PUNCT	,	_	21	punct	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	21	nsubj	_	_
+20	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	21	aux	_	_
+21	kept	keep	VERB	VBN	Tense=Past|VerbForm=Part	15	conj	_	_
+22	these	this	DET	DT	Number=Plur|PronType=Dem	23	det	_	_
+23	plates	plate	NOUN	NNS	Number=Plur	21	obj	_	_
+24	according	according	ADP	IN	_	27	case	_	_
+25	to	to	ADP	IN	_	24	fixed	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	commandments	commandment	NOUN	NNS	Number=Plur	21	obl	_	_
+28	of	of	ADP	IN	_	30	case	_	_
+29	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	30	nmod:poss	_	_
+30	fathers	father	NOUN	NNS	Number=Plur	27	nmod	_	_
+31	;	;	PUNCT	,	_	34	punct	_	_
+32	and	and	CCONJ	CC	_	34	cc	_	_
+33	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	34	nsubj	_	_
+34	conferred	confer	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	21	conj	_	_
+35	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	34	obj	_	_
+36	upon	upon	ADP	IN	_	38	case	_	_
+37	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	38	nmod:poss	_	_
+38	son	son	NOUN	NN	Number=Sing	34	obl	_	_
+39	Amaron	Amaron	PROPN	NNP	_	38	flat	_	_
+40	.	.	PUNCT	.	_	15	punct	_	_
+
+# text = And I make an end.
+# sent_id = 5
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	make	make	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	an	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
+5	end	end	NOUN	NN	Number=Sing	3	obj	_	_
+6	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now I, Amaron, write the things whatsoever I write, which are few, in the book of my father.
+# sent_id = 6
+# llm_note = "Amaron" is appos of "I"(3); "whatsoever I write" is an acl:relcl modifying "things"(9); "which are few" is another acl:relcl on "things"; "in the book" is obl of "write"(7).
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	now	now	ADV	RB	_	7	advmod	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+4	,	,	PUNCT	,	_	5	punct	_	_
+5	Amaron	Amaron	PROPN	NNP	_	3	appos	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	write	write	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	things	thing	NOUN	NNS	Number=Plur	7	obj	_	_
+10	whatsoever	whatsoever	PRON	WDT	PronType=Rel	12	obj	_	_
+11	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	12	nsubj	_	_
+12	write	write	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_
+13	,	,	PUNCT	,	_	16	punct	_	_
+14	which	which	PRON	WDT	PronType=Rel	16	nsubj	_	_
+15	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	16	cop	_	_
+16	few	few	ADJ	JJ	_	9	acl:relcl	_	_
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	in	in	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	book	book	NOUN	NN	Number=Sing	7	obl	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	23	nmod:poss	_	_
+23	father	father	NOUN	NN	Number=Sing	20	nmod	_	_
+24	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = Behold, it came to pass that three hundred and twenty years had passed away, and the more wicked part of the Nephites were destroyed.
+# sent_id = 7
+# llm_note = AICTP; "three hundred and twenty years" — "hundred" head, "three" nummod, "twenty" conj; "passed away" with "away" compound:prt; "more wicked part" — "more wicked" is amod of "part"; "were destroyed" passive, "part"(21) nsubj:pass.
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	4	expl	_	_
+4	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	15	mark	_	_
+8	three	three	NUM	CD	NumType=Card	9	nummod	_	_
+9	hundred	hundred	NUM	CD	NumType=Card	12	nummod	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	twenty	twenty	NUM	CD	NumType=Card	9	conj	_	_
+12	years	year	NOUN	NNS	Number=Plur	15	nsubj	_	_
+13	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	aux	_	_
+14	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	15	aux:pass	_	_
+15	away	away	ADV	RB	_	6	ccomp	_	_
+16	,	,	PUNCT	,	_	26	punct	_	_
+17	and	and	CCONJ	CC	_	26	cc	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+19	more	more	ADV	RBR	_	20	advmod	_	_
+20	wicked	wicked	ADJ	JJR	_	21	amod	_	_
+21	part	part	NOUN	NN	Number=Sing	26	nsubj:pass	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	Nephites	Nephite	PROPN	NNPS	Number=Plur	21	nmod	_	_
+25	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	26	aux:pass	_	_
+26	destroyed	destroy	VERB	VBN	Tense=Past|VerbForm=Part	15	conj	_	_
+27	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = For the Lord would not suffer, after he had led them out of the land of Jerusalem and kept and preserved them from falling into the hands of their enemies, yea, he would not suffer that the words should not be verified, which he spake unto our fathers, saying that: Inasmuch as ye will not keep my commandments ye shall not prosper in the land.
+# sent_id = 8
+# llm_note = Complex sentence. Root is "suffer"(6): "Lord"(3) nsubj, "would"(4) aux, "not"(5) advmod. "after...enemies" is advcl of suffer(6), with three conjoined past-perf verbs: "led"(11) head, "kept"(20) conj, "preserved"(22) conj. "he would not suffer that...verified" (35-45) is a second main clause (conj of root "suffer"(6) via coord resuming subject "he"(35)); "which he spake" is acl:relcl on "words"(41); "saying that: Inasmuch as..." — "saying"(54) is advcl of "spake"(49), "that"(55) marks "prosper"(68) as ccomp of "saying"; "Inasmuch as ye will not keep..." is advcl of "prosper"(68).
+1	For	for	SCONJ	IN	_	6	mark	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	Lord	Lord	PROPN	NNP	_	6	nsubj	_	_
+4	would	will	AUX	MD	VerbForm=Fin	6	aux	_	_
+5	not	not	PART	RB	Polarity=Neg	6	advmod	_	_
+6	suffer	suffer	VERB	VB	VerbForm=Inf	0	root	_	_
+7	,	,	PUNCT	,	_	11	punct	_	_
+8	after	after	SCONJ	IN	_	11	mark	_	_
+9	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+10	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	aux	_	_
+11	led	lead	VERB	VBN	Tense=Past|VerbForm=Part	6	advcl	_	_
+12	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	11	obj	_	_
+13	out	out	ADP	RP	_	16	case	_	_
+14	of	of	ADP	IN	_	13	fixed	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	land	land	NOUN	NN	Number=Sing	11	obl	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	Jerusalem	Jerusalem	PROPN	NNP	_	16	nmod	_	_
+19	and	and	CCONJ	CC	_	20	cc	_	_
+20	kept	keep	VERB	VBN	Tense=Past|VerbForm=Part	11	conj	_	_
+21	and	and	CCONJ	CC	_	22	cc	_	_
+22	preserved	preserve	VERB	VBN	Tense=Past|VerbForm=Part	20	conj	_	_
+23	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	22	obj	_	_
+24	from	from	ADP	IN	_	25	case	_	_
+25	falling	fall	VERB	VBG	VerbForm=Part	22	obl	_	_
+26	into	into	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	hands	hand	NOUN	NNS	Number=Plur	25	obl	_	_
+29	of	of	ADP	IN	_	31	case	_	_
+30	their	they	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes	31	nmod:poss	_	_
+31	enemies	enemy	NOUN	NNS	Number=Plur	28	nmod	_	_
+32	,	,	PUNCT	,	_	33	punct	_	_
+33	yea	yea	INTJ	UH	_	38	discourse	_	_
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	38	nsubj	_	_
+36	would	will	AUX	MD	VerbForm=Fin	38	aux	_	_
+37	not	not	PART	RB	Polarity=Neg	38	advmod	_	_
+38	suffer	suffer	VERB	VB	VerbForm=Inf	6	conj	_	_
+39	that	that	SCONJ	IN	_	45	mark	_	_
+40	the	the	DET	DT	Definite=Def|PronType=Art	41	det	_	_
+41	words	word	NOUN	NNS	Number=Plur	45	nsubj:pass	_	_
+42	should	shall	AUX	MD	VerbForm=Fin	45	aux	_	_
+43	not	not	PART	RB	Polarity=Neg	45	advmod	_	_
+44	be	be	AUX	VB	VerbForm=Inf	45	aux:pass	_	_
+45	verified	verify	VERB	VBN	Tense=Past|VerbForm=Part	38	ccomp	_	_
+46	,	,	PUNCT	,	_	49	punct	_	_
+47	which	which	PRON	WDT	PronType=Rel	49	obj	_	_
+48	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	49	nsubj	_	_
+49	spake	speak	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	acl:relcl	_	_
+50	unto	unto	ADP	IN	_	52	case	_	_
+51	our	our	PRON	PRP$	Case=Gen|Number=Plur|Person=1|Poss=Yes	52	nmod:poss	_	_
+52	fathers	father	NOUN	NNS	Number=Plur	49	obl	_	_
+53	,	,	PUNCT	,	_	54	punct	_	_
+54	saying	say	VERB	VBG	VerbForm=Part	49	advcl	_	_
+55	that	that	SCONJ	IN	_	68	mark	_	_
+56	:	:	PUNCT	:	_	54	punct	_	_
+57	Inasmuch	inasmuch	ADV	RB	_	62	advmod	_	_
+58	as	as	SCONJ	IN	_	57	fixed	_	_
+59	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	62	nsubj	_	_
+60	will	will	AUX	MD	VerbForm=Fin	62	aux	_	_
+61	not	not	PART	RB	Polarity=Neg	62	advmod	_	_
+62	keep	keep	VERB	VB	VerbForm=Inf	68	advcl	_	_
+63	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	64	nmod:poss	_	_
+64	commandments	commandment	NOUN	NNS	Number=Plur	62	obj	_	_
+65	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	68	nsubj	_	_
+66	shall	shall	AUX	MD	VerbForm=Fin	68	aux	_	_
+67	not	not	PART	RB	Polarity=Neg	68	advmod	_	_
+68	prosper	prosper	VERB	VB	VerbForm=Inf	54	ccomp	_	_
+69	in	in	ADP	IN	_	71	case	_	_
+70	the	the	DET	DT	Definite=Def|PronType=Art	71	det	_	_
+71	land	land	NOUN	NN	Number=Sing	68	obl	_	_
+72	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Wherefore, the Lord did visit them in great judgment; nevertheless, he did spare the righteous that they should not perish, but did deliver them out of the hands of their enemies.
+# sent_id = 9
+# llm_note = "did visit" — did is AUX of "visit"; "nevertheless" ADV advmod; "spare...that they should not perish" — "that" SCONJ marks advcl purpose clause; "but did deliver" conj of "spare"(16), sharing subject "he"(14).
+1	Wherefore	wherefore	ADV	RB	_	6	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	Lord	Lord	PROPN	NNP	_	6	nsubj	_	_
+5	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	aux	_	_
+6	visit	visit	VERB	VB	VerbForm=Inf	0	root	_	_
+7	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	6	obj	_	_
+8	in	in	ADP	IN	_	10	case	_	_
+9	great	great	ADJ	JJ	_	10	amod	_	_
+10	judgment	judgment	NOUN	NN	Number=Sing	6	obl	_	_
+11	;	;	PUNCT	,	_	16	punct	_	_
+12	nevertheless	nevertheless	ADV	RB	_	16	advmod	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	nsubj	_	_
+15	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	aux	_	_
+16	spare	spare	VERB	VB	VerbForm=Inf	6	conj	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	righteous	righteous	ADJ	JJ	_	16	obj	_	_
+19	that	that	SCONJ	IN	_	23	mark	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	23	nsubj	_	_
+21	should	shall	AUX	MD	VerbForm=Fin	23	aux	_	_
+22	not	not	PART	RB	Polarity=Neg	23	advmod	_	_
+23	perish	perish	VERB	VB	VerbForm=Inf	16	advcl	_	_
+24	,	,	PUNCT	,	_	27	punct	_	_
+25	but	but	CCONJ	CC	_	27	cc	_	_
+26	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	aux	_	_
+27	deliver	deliver	VERB	VB	VerbForm=Inf	16	conj	_	_
+28	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	27	obj	_	_
+29	out	out	ADP	RP	_	32	case	_	_
+30	of	of	ADP	IN	_	29	fixed	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	hands	hand	NOUN	NNS	Number=Plur	27	obl	_	_
+33	of	of	ADP	IN	_	35	case	_	_
+34	their	they	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes	35	nmod:poss	_	_
+35	enemies	enemy	NOUN	NNS	Number=Plur	32	nmod	_	_
+36	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And it came to pass that I did deliver the plates unto my brother Chemish.
+# sent_id = 10
+# llm_note = AICTP; "did deliver" — did AUX; "Chemish" flat with "brother".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	9	nsubj	_	_
+8	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	aux	_	_
+9	deliver	deliver	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	plates	plate	NOUN	NNS	Number=Plur	9	obj	_	_
+12	unto	unto	ADP	IN	_	14	case	_	_
+13	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	14	nmod:poss	_	_
+14	brother	brother	NOUN	NN	Number=Sing	9	obl	_	_
+15	Chemish	Chemish	PROPN	NNP	_	14	flat	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now I, Chemish, write what few things I write, in the same book with my brother; for behold, I saw the last which he wrote, that he wrote it with his own hand; and he wrote it in the day that he delivered them unto me.
+# sent_id = 11
+# llm_note = "Chemish" appos of "I"(2); "what few things I write" — "things" is obj of outer "write"(6); "what"(7) det:predet or DET, "few"(8) det/amod; "I write"(10-11) is acl:relcl on "things"; "which he wrote" acl:relcl on "last"(27); "that he wrote it with his own hand" — ccomp of "saw"(25) via "that"(32) SCONJ; second "he wrote it" (41-44) conj of first "wrote"(25); "in the day that he delivered" — "day" obl, "that he delivered" acl:relcl.
+1	Now	now	ADV	RB	_	6	advmod	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	6	nsubj	_	_
+3	,	,	PUNCT	,	_	4	punct	_	_
+4	Chemish	Chemish	PROPN	NNP	_	2	appos	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	write	write	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	what	what	DET	WDT	PronType=Int	9	det:predet	_	_
+8	few	few	ADJ	JJ	_	9	amod	_	_
+9	things	thing	NOUN	NNS	Number=Plur	6	obj	_	_
+10	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	11	nsubj	_	_
+11	write	write	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	in	in	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+15	same	same	ADJ	JJ	_	16	amod	_	_
+16	book	book	NOUN	NN	Number=Sing	6	obl	_	_
+17	with	with	ADP	IN	_	19	case	_	_
+18	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	19	nmod:poss	_	_
+19	brother	brother	NOUN	NN	Number=Sing	16	nmod	_	_
+20	;	;	PUNCT	,	_	25	punct	_	_
+21	for	for	SCONJ	IN	_	25	mark	_	_
+22	behold	behold	INTJ	UH	_	25	discourse	_	_
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	25	nsubj	_	_
+25	saw	see	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	6	advcl	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	last	last	NOUN	NN	Number=Sing	25	obj	_	_
+28	which	which	PRON	WDT	PronType=Rel	30	obj	_	_
+29	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	30	nsubj	_	_
+30	wrote	write	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	acl:relcl	_	_
+31	,	,	PUNCT	,	_	34	punct	_	_
+32	that	that	SCONJ	IN	_	34	mark	_	_
+33	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	34	nsubj	_	_
+34	wrote	write	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	ccomp	_	_
+35	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	34	obj	_	_
+36	with	with	ADP	IN	_	39	case	_	_
+37	his	he	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes	39	nmod:poss	_	_
+38	own	own	ADJ	JJ	_	39	amod	_	_
+39	hand	hand	NOUN	NN	Number=Sing	34	obl	_	_
+40	;	;	PUNCT	,	_	43	punct	_	_
+41	and	and	CCONJ	CC	_	43	cc	_	_
+42	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	43	nsubj	_	_
+43	wrote	write	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
+44	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	43	obj	_	_
+45	in	in	ADP	IN	_	47	case	_	_
+46	the	the	DET	DT	Definite=Def|PronType=Art	47	det	_	_
+47	day	day	NOUN	NN	Number=Sing	43	obl	_	_
+48	that	that	SCONJ	IN	_	50	mark	_	_
+49	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	50	nsubj	_	_
+50	delivered	deliver	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	47	acl:relcl	_	_
+51	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	50	obj	_	_
+52	unto	unto	ADP	IN	_	53	case	_	_
+53	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	50	obl	_	_
+54	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And after this manner we keep the records, for it is according to the commandments of our fathers.
+# sent_id = 12
+# llm_note = "after this manner" is obl of "keep"(6); "for it is according to..." is an advcl causal clause, "it"(11) expl-like subj, "is"(12) cop, "according to the commandments" predicative PP.
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	after	after	ADP	IN	_	4	case	_	_
+3	this	this	DET	DT	Number=Sing|PronType=Dem	4	det	_	_
+4	manner	manner	NOUN	NN	Number=Sing	6	obl	_	_
+5	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	6	nsubj	_	_
+6	keep	keep	VERB	VBP	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	records	record	NOUN	NNS	Number=Plur	6	obj	_	_
+9	,	,	PUNCT	,	_	12	punct	_	_
+10	for	for	SCONJ	IN	_	12	mark	_	_
+11	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	12	nsubj	_	_
+12	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
+13	according	according	ADP	IN	_	16	case	_	_
+14	to	to	ADP	IN	_	13	fixed	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	commandments	commandment	NOUN	NNS	Number=Plur	12	obl	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	our	our	PRON	PRP$	Case=Gen|Number=Plur|Person=1|Poss=Yes	19	nmod:poss	_	_
+19	fathers	father	NOUN	NNS	Number=Plur	16	nmod	_	_
+20	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And I make an end.
+# sent_id = 13
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	make	make	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	an	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
+5	end	end	NOUN	NN	Number=Sing	3	obj	_	_
+6	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, I, Abinadom, am the son of Chemish.
+# sent_id = 14
+# llm_note = "Abinadom" appos of "I"(3); copular construction with "am"(7) cop, "son"(9) predicative head.
+1	Behold	behold	INTJ	UH	_	9	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	9	nsubj	_	_
+4	,	,	PUNCT	,	_	5	punct	_	_
+5	Abinadom	Abinadom	PROPN	NNP	_	3	appos	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	son	son	NOUN	NN	Number=Sing	0	root	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	Chemish	Chemish	PROPN	NNP	_	9	nmod	_	_
+12	.	.	PUNCT	.	_	9	punct	_	_
+
