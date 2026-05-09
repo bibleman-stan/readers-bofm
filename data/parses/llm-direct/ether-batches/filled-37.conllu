@@ -1,0 +1,48 @@
+# text = Whether the Lord will that I be translated, or that I suffer the will of the Lord in the flesh, it mattereth not, if it so be that I am saved in the kingdom of God.
+# sent_id = 540
+1	Whether	whether	SCONJ	IN	_	4	mark	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	Lord	Lord	PROPN	NNP	_	4	nsubj	_	_
+4	will	will	VERB	VBZ	_	24	advcl	_	_
+5	that	that	SCONJ	IN	_	8	mark	_	_
+6	I	I	PRON	PRP	_	8	nsubj:pass	_	_
+7	be	be	AUX	VBZ	_	8	aux:pass	_	_
+8	translated	translate	VERB	VBN	_	4	ccomp	_	_
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	or	or	CCONJ	CC	_	13	cc	_	_
+11	that	that	SCONJ	IN	_	13	mark	_	_
+12	I	I	PRON	PRP	_	13	nsubj	_	_
+13	suffer	suffer	VERB	VB	_	8	conj	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	will	will	NOUN	NN	_	13	obj	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	Lord	Lord	PROPN	NNP	_	15	nmod	_	_
+19	in	in	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	flesh	flesh	NOUN	NN	_	13	obl	_	_
+22	,	,	PUNCT	,	_	24	punct	_	_
+23	it	it	PRON	PRP	_	24	nsubj	_	_
+24	mattereth	matter	VERB	VBZ	_	0	root	_	_
+25	not	not	PART	RB	_	24	advmod	_	_
+26	,	,	PUNCT	,	_	30	punct	_	_
+27	if	if	SCONJ	IN	_	30	mark	_	_
+28	it	it	PRON	PRP	_	30	expl	_	_
+29	so	so	ADV	RB	_	30	advmod	_	_
+30	be	be	VERB	VBZ	_	24	advcl	_	_
+31	that	that	SCONJ	IN	_	34	mark	_	_
+32	I	I	PRON	PRP	_	34	nsubj:pass	_	_
+33	am	be	AUX	VBZ	_	34	aux:pass	_	_
+34	saved	save	VERB	VBN	_	30	ccomp	_	_
+35	in	in	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	kingdom	kingdom	NOUN	NN	_	34	obl	_	_
+38	of	of	ADP	IN	_	39	case	_	_
+39	God	God	PROPN	NNP	_	37	nmod	_	_
+40	.	.	PUNCT	.	_	24	punct	_	_
+
+# text = Amen.
+# sent_id = 541
+1	Amen	amen	INTJ	UH	_	0	root	_	_
+2	.	.	PUNCT	.	_	1	punct	_	_
+
