@@ -1,0 +1,883 @@
+# text = And then shall the power of heaven come down among them; and I also will be in the midst.
+# sent_id = 725
+# llm_note = inverted "shall the power of heaven come down"; second clause "I also will be in the midst" is conj
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	then	then	ADV	RB	_	8	advmod	_	_
+3	shall	shall	AUX	MD	_	8	aux	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	power	power	NOUN	NN	_	8	nsubj	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	heaven	heaven	NOUN	NN	_	5	nmod	_	_
+8	come	come	VERB	VB	_	0	root	_	_
+9	down	down	ADP	RP	_	8	compound:prt	_	_
+10	among	among	ADP	IN	_	11	case	_	_
+11	them	they	PRON	PRP	_	8	obl	_	_
+12	;	;	PUNCT	:	_	8	punct	_	_
+13	and	and	CCONJ	CC	_	17	cc	_	_
+14	I	I	PRON	PRP	_	17	nsubj	_	_
+15	also	also	ADV	RB	_	17	advmod	_	_
+16	will	will	AUX	MD	_	17	aux	_	_
+17	be	be	VERB	VB	_	8	conj	_	_
+18	in	in	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	midst	midst	NOUN	NN	_	17	obl	_	_
+21	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And then shall the work of the Father commence at that day, even when this gospel shall be preached among the remnant of this people.
+# sent_id = 726
+# llm_note = inverted "shall the work of the Father commence"; "even when this gospel shall be preached" is advcl clarifying "at that day"
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	then	then	ADV	RB	_	9	advmod	_	_
+3	shall	shall	AUX	MD	_	9	aux	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	work	work	NOUN	NN	_	9	nsubj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	Father	Father	PROPN	NNP	_	5	nmod	_	_
+9	commence	commence	VERB	VB	_	0	root	_	_
+10	at	at	ADP	IN	_	12	case	_	_
+11	that	that	DET	DT	_	12	det	_	_
+12	day	day	NOUN	NN	_	9	obl	_	_
+13	,	,	PUNCT	,	_	9	punct	_	_
+14	even	even	ADV	RB	_	20	advmod	_	_
+15	when	when	SCONJ	WRB	_	20	mark	_	_
+16	this	this	DET	DT	_	17	det	_	_
+17	gospel	gospel	NOUN	NN	_	20	nsubj:pass	_	_
+18	shall	shall	AUX	MD	_	20	aux	_	_
+19	be	be	AUX	VB	_	20	aux:pass	_	_
+20	preached	preach	VERB	VBN	_	9	advcl	_	_
+21	among	among	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	remnant	remnant	NOUN	NN	_	20	obl	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	this	this	DET	DT	_	26	det	_	_
+26	people	people	NOUN	NNS	_	23	nmod	_	_
+27	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = Verily I say unto you, at that day shall the work of the Father commence among all the dispersed of my people, yea, even the tribes which have been lost, which the Father hath led away out of Jerusalem.
+# sent_id = 727
+# llm_note = "Verily I say unto you" is discourse frame/parataxis; main clause inverted "shall the work of the Father commence"; "yea" discourse; "even the tribes which have been lost" is appositive on "dispersed of my people"; second relative "which the Father hath led away" is acl:relcl on "tribes"
+1	Verily	verily	ADV	RB	_	3	advmod	_	_
+2	I	I	PRON	PRP	_	3	nsubj	_	_
+3	say	say	VERB	VBP	_	16	parataxis	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	you	you	PRON	PRP	_	3	obl	_	_
+6	,	,	PUNCT	,	_	3	punct	_	_
+7	at	at	ADP	IN	_	9	case	_	_
+8	that	that	DET	DT	_	9	det	_	_
+9	day	day	NOUN	NN	_	16	obl	_	_
+10	shall	shall	AUX	MD	_	16	aux	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	work	work	NOUN	NN	_	16	nsubj	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	Father	Father	PROPN	NNP	_	12	nmod	_	_
+16	commence	commence	VERB	VB	_	0	root	_	_
+17	among	among	ADP	IN	_	19	case	_	_
+18	all	all	DET	PDT	_	20	det:predet	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	dispersed	dispersed	NOUN	NN	_	16	obl	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	my	I	PRON	PRP$	_	23	nmod:poss	_	_
+23	people	people	NOUN	NNS	_	20	nmod	_	_
+24	,	,	PUNCT	,	_	16	punct	_	_
+25	yea	yea	INTJ	UH	_	16	discourse	_	_
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	even	even	ADV	RB	_	29	advmod	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	tribes	tribe	NOUN	NNS	_	20	appos	_	_
+30	which	which	PRON	WDT	_	33	nsubj:pass	_	_
+31	have	have	AUX	VBP	_	33	aux	_	_
+32	been	be	AUX	VBN	_	33	aux:pass	_	_
+33	lost	lose	VERB	VBN	_	29	acl:relcl	_	_
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	which	which	PRON	WDT	_	39	obj	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	Father	Father	PROPN	NNP	_	39	nsubj	_	_
+38	hath	have	AUX	VBZ	_	39	aux	_	_
+39	led	lead	VERB	VBN	_	29	acl:relcl	_	_
+40	away	away	ADP	RP	_	39	compound:prt	_	_
+41	out	out	ADP	IN	_	43	case	_	_
+42	of	of	ADP	IN	_	43	case	_	_
+43	Jerusalem	Jerusalem	PROPN	NNP	_	39	obl	_	_
+44	.	.	PUNCT	.	_	16	punct	_	_
+
+# text = Yea, the work shall commence among all the dispersed of my people, with the Father to prepare the way whereby they may come unto me, that they may call on the Father in my name.
+# sent_id = 728
+# llm_note = "yea" is discourse; main clause "the work shall commence"; "with the Father to prepare the way" is an adjunct — "with the Father" is accompaniment obl, "to prepare the way" is purpose infinitival advcl on "commence"; "whereby they may come unto me" is relative advcl on "way"; "that they may call" is purpose advcl
+1	Yea	yea	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	work	work	NOUN	NN	_	6	nsubj	_	_
+5	shall	shall	AUX	MD	_	6	aux	_	_
+6	commence	commence	VERB	VB	_	0	root	_	_
+7	among	among	ADP	IN	_	9	case	_	_
+8	all	all	DET	PDT	_	10	det:predet	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	dispersed	dispersed	NOUN	NN	_	6	obl	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	my	I	PRON	PRP$	_	13	nmod:poss	_	_
+13	people	people	NOUN	NNS	_	10	nmod	_	_
+14	,	,	PUNCT	,	_	6	punct	_	_
+15	with	with	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	Father	Father	PROPN	NNP	_	6	obl	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	prepare	prepare	VERB	VB	_	6	advcl	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	way	way	NOUN	NN	_	19	obj	_	_
+22	whereby	whereby	ADV	WRB	_	25	mark	_	_
+23	they	they	PRON	PRP	_	25	nsubj	_	_
+24	may	may	AUX	MD	_	25	aux	_	_
+25	come	come	VERB	VB	_	21	acl:relcl	_	_
+26	unto	unto	ADP	IN	_	27	case	_	_
+27	me	I	PRON	PRP	_	25	obl	_	_
+28	,	,	PUNCT	,	_	6	punct	_	_
+29	that	that	SCONJ	IN	_	32	mark	_	_
+30	they	they	PRON	PRP	_	32	nsubj	_	_
+31	may	may	AUX	MD	_	32	aux	_	_
+32	call	call	VERB	VB	_	6	advcl	_	_
+33	on	on	ADP	IN	_	35	case	_	_
+34	the	the	DET	DT	_	35	det	_	_
+35	Father	Father	PROPN	NNP	_	32	obl	_	_
+36	in	in	ADP	IN	_	38	case	_	_
+37	my	I	PRON	PRP$	_	38	nmod:poss	_	_
+38	name	name	NOUN	NN	_	32	obl	_	_
+39	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Yea, and then shall the work commence, with the Father among all nations in preparing the way whereby his people may be gathered home to the land of their inheritance.
+# sent_id = 729
+# llm_note = inverted "shall the work commence"; "with the Father among all nations" is obl accompaniment; "in preparing the way" is gerundive advcl; "whereby his people may be gathered home" is relative clause on "way"
+1	Yea	yea	INTJ	UH	_	8	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	and	and	CCONJ	CC	_	8	cc	_	_
+4	then	then	ADV	RB	_	8	advmod	_	_
+5	shall	shall	AUX	MD	_	8	aux	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	work	work	NOUN	NN	_	8	nsubj	_	_
+8	commence	commence	VERB	VB	_	0	root	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	with	with	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	Father	Father	PROPN	NNP	_	8	obl	_	_
+13	among	among	ADP	IN	_	15	case	_	_
+14	all	all	DET	PDT	_	15	det:predet	_	_
+15	nations	nation	NOUN	NNS	_	12	nmod	_	_
+16	in	in	SCONJ	IN	_	17	mark	_	_
+17	preparing	prepare	VERB	VBG	_	8	advcl	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	way	way	NOUN	NN	_	17	obj	_	_
+20	whereby	whereby	ADV	WRB	_	25	mark	_	_
+21	his	he	PRON	PRP$	_	22	nmod:poss	_	_
+22	people	people	NOUN	NNS	_	25	nsubj:pass	_	_
+23	may	may	AUX	MD	_	25	aux	_	_
+24	be	be	AUX	VB	_	25	aux:pass	_	_
+25	gathered	gather	VERB	VBN	_	19	acl:relcl	_	_
+26	home	home	ADV	RB	_	25	advmod	_	_
+27	to	to	ADP	IN	_	29	case	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	land	land	NOUN	NN	_	25	obl	_	_
+30	of	of	ADP	IN	_	32	case	_	_
+31	their	they	PRON	PRP$	_	32	nmod:poss	_	_
+32	inheritance	inheritance	NOUN	NN	_	29	nmod	_	_
+33	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And they shall go out from all nations; and they shall not go out in haste, nor go by flight, for I will go before them, saith the Father, and I will be their rearward.
+# sent_id = 730
+# llm_note = three coordinate clauses; "nor go by flight" is conj of "not go out" with "nor" as advmod; "saith the Father" is parenthetical parataxis; "and I will be their rearward" is conj
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	_	4	nsubj	_	_
+3	shall	shall	AUX	MD	_	4	aux	_	_
+4	go	go	VERB	VB	_	0	root	_	_
+5	out	out	ADP	RP	_	4	compound:prt	_	_
+6	from	from	ADP	IN	_	8	case	_	_
+7	all	all	DET	PDT	_	8	det:predet	_	_
+8	nations	nation	NOUN	NNS	_	4	obl	_	_
+9	;	;	PUNCT	:	_	4	punct	_	_
+10	and	and	CCONJ	CC	_	14	cc	_	_
+11	they	they	PRON	PRP	_	14	nsubj	_	_
+12	shall	shall	AUX	MD	_	14	aux	_	_
+13	not	not	PART	RB	_	14	advmod	_	_
+14	go	go	VERB	VB	_	4	conj	_	_
+15	out	out	ADP	RP	_	14	compound:prt	_	_
+16	in	in	ADP	IN	_	17	case	_	_
+17	haste	haste	NOUN	NN	_	14	obl	_	_
+18	,	,	PUNCT	,	_	14	punct	_	_
+19	nor	nor	ADV	CC	_	20	advmod	_	_
+20	go	go	VERB	VB	_	14	conj	_	_
+21	by	by	ADP	IN	_	22	case	_	_
+22	flight	flight	NOUN	NN	_	20	obl	_	_
+23	,	,	PUNCT	,	_	14	punct	_	_
+24	for	for	SCONJ	IN	_	27	mark	_	_
+25	I	I	PRON	PRP	_	27	nsubj	_	_
+26	will	will	AUX	MD	_	27	aux	_	_
+27	go	go	VERB	VB	_	14	advcl	_	_
+28	before	before	ADP	IN	_	29	case	_	_
+29	them	they	PRON	PRP	_	27	obl	_	_
+30	,	,	PUNCT	,	_	31	punct	_	_
+31	saith	say	VERB	VBZ	_	27	parataxis	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	Father	Father	PROPN	NNP	_	31	nsubj	_	_
+34	,	,	PUNCT	,	_	31	punct	_	_
+35	and	and	CCONJ	CC	_	40	cc	_	_
+36	I	I	PRON	PRP	_	40	nsubj	_	_
+37	will	will	AUX	MD	_	40	aux	_	_
+38	be	be	VERB	VB	_	40	cop	_	_
+39	their	they	PRON	PRP$	_	40	nmod:poss	_	_
+40	rearward	rearward	NOUN	NN	_	4	conj	_	_
+41	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And then shall that which is written come to pass: Sing, O barren, thou that didst not bear; break forth into singing, and cry aloud, thou that didst not travail with child; for more are the children of the desolate than the children of the married wife, saith the Lord.
+# sent_id = 731
+# llm_note = "that which is written" is the subject of "come to pass"; "come to pass" root; after colon, quoted imperatives: "Sing" and "break forth" and "cry aloud" are parataxis; "O barren" is vocative; "thou that didst not bear" is appositive; "for more are the children of the desolate" is inverted predicate clause — "more" is the adj xcomp; "saith the Lord" is parenthetical parataxis
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	then	then	ADV	RB	_	8	advmod	_	_
+3	shall	shall	AUX	MD	_	8	aux	_	_
+4	that	that	PRON	DT	_	8	nsubj	_	_
+5	which	which	PRON	WDT	_	6	nsubj:pass	_	_
+6	is	be	AUX	VBZ	_	7	aux:pass	_	_
+7	written	write	VERB	VBN	_	4	acl:relcl	_	_
+8	come	come	VERB	VB	_	0	root	_	_
+9	to	to	PART	TO	_	10	mark	_	_
+10	pass	pass	VERB	VB	_	8	xcomp	_	_
+11	:	:	PUNCT	:	_	8	punct	_	_
+12	Sing	sing	VERB	VB	_	8	parataxis	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	O	o	INTJ	UH	_	15	discourse	_	_
+15	barren	barren	ADJ	JJ	_	12	vocative	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	thou	thou	PRON	PRP	_	12	vocative	_	_
+18	that	that	SCONJ	IN	_	21	mark	_	_
+19	didst	do	AUX	VBD	_	21	aux	_	_
+20	not	not	PART	RB	_	21	advmod	_	_
+21	bear	bear	VERB	VB	_	17	acl	_	_
+22	;	;	PUNCT	:	_	12	punct	_	_
+23	break	break	VERB	VB	_	12	conj	_	_
+24	forth	forth	ADV	RB	_	23	advmod	_	_
+25	into	into	ADP	IN	_	26	case	_	_
+26	singing	singing	NOUN	NN	_	23	obl	_	_
+27	,	,	PUNCT	,	_	23	punct	_	_
+28	and	and	CCONJ	CC	_	29	cc	_	_
+29	cry	cry	VERB	VB	_	23	conj	_	_
+30	aloud	aloud	ADV	RB	_	29	advmod	_	_
+31	,	,	PUNCT	,	_	29	punct	_	_
+32	thou	thou	PRON	PRP	_	29	vocative	_	_
+33	that	that	SCONJ	IN	_	36	mark	_	_
+34	didst	do	AUX	VBD	_	36	aux	_	_
+35	not	not	PART	RB	_	36	advmod	_	_
+36	travail	travail	VERB	VB	_	32	acl	_	_
+37	with	with	ADP	IN	_	38	case	_	_
+38	child	child	NOUN	NN	_	36	obl	_	_
+39	;	;	PUNCT	:	_	12	punct	_	_
+40	for	for	SCONJ	IN	_	42	mark	_	_
+41	more	more	ADJ	JJR	_	44	xcomp	_	_
+42	are	be	VERB	VBZ	_	44	cop	_	_
+43	the	the	DET	DT	_	44	det	_	_
+44	children	child	NOUN	NNS	_	12	advcl	_	_
+45	of	of	ADP	IN	_	47	case	_	_
+46	the	the	DET	DT	_	47	det	_	_
+47	desolate	desolate	ADJ	JJ	_	44	nmod	_	_
+48	than	than	ADP	IN	_	50	case	_	_
+49	the	the	DET	DT	_	50	det	_	_
+50	children	child	NOUN	NNS	_	41	obl	_	_
+51	of	of	ADP	IN	_	54	case	_	_
+52	the	the	DET	DT	_	54	det	_	_
+53	married	married	ADJ	JJ	_	54	amod	_	_
+54	wife	wife	NOUN	NN	_	50	nmod	_	_
+55	,	,	PUNCT	,	_	56	punct	_	_
+56	saith	say	VERB	VBZ	_	44	parataxis	_	_
+57	the	the	DET	DT	_	58	det	_	_
+58	Lord	Lord	PROPN	NNP	_	56	nsubj	_	_
+59	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = Enlarge the place of thy tent, and let them stretch forth the curtains of thy habitations; spare not, lengthen thy cords and strengthen thy stakes;
+# sent_id = 732
+# llm_note = imperatives: "Enlarge", "let them stretch", "spare not", "lengthen", "strengthen" all conjoined; "let them stretch forth" — "let" is causative VERB with "them" obj and "stretch" as xcomp
+1	Enlarge	enlarge	VERB	VB	_	0	root	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	place	place	NOUN	NN	_	1	obj	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	thy	thou	PRON	PRP$	_	6	nmod:poss	_	_
+6	tent	tent	NOUN	NN	_	3	nmod	_	_
+7	,	,	PUNCT	,	_	1	punct	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	let	let	VERB	VB	_	1	conj	_	_
+10	them	they	PRON	PRP	_	9	obj	_	_
+11	stretch	stretch	VERB	VB	_	9	xcomp	_	_
+12	forth	forth	ADV	RB	_	11	advmod	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	curtains	curtain	NOUN	NNS	_	11	obj	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	thy	thou	PRON	PRP$	_	17	nmod:poss	_	_
+17	habitations	habitation	NOUN	NNS	_	14	nmod	_	_
+18	;	;	PUNCT	:	_	1	punct	_	_
+19	spare	spare	VERB	VB	_	1	conj	_	_
+20	not	not	PART	RB	_	19	advmod	_	_
+21	,	,	PUNCT	,	_	19	punct	_	_
+22	lengthen	lengthen	VERB	VB	_	1	conj	_	_
+23	thy	thou	PRON	PRP$	_	24	nmod:poss	_	_
+24	cords	cord	NOUN	NNS	_	22	obj	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	strengthen	strengthen	VERB	VB	_	22	conj	_	_
+27	thy	thou	PRON	PRP$	_	28	nmod:poss	_	_
+28	stakes	stake	NOUN	NNS	_	26	obj	_	_
+29	;	;	PUNCT	:	_	1	punct	_	_
+
+# text = For thou shalt break forth on the right hand and on the left, and thy seed shall inherit the Gentiles and make the desolate cities to be inhabited.
+# sent_id = 733
+# llm_note = "thou shalt break forth on the right hand and on the left" — "on the right hand" and "on the left" are parallel obls; "thy seed shall inherit" conj; "and make the desolate cities to be inhabited" is second conj verb under "seed"
+1	For	for	SCONJ	IN	_	4	mark	_	_
+2	thou	thou	PRON	PRP	_	4	nsubj	_	_
+3	shalt	shall	AUX	MD	_	4	aux	_	_
+4	break	break	VERB	VB	_	0	root	_	_
+5	forth	forth	ADV	RB	_	4	advmod	_	_
+6	on	on	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	right	right	ADJ	JJ	_	9	amod	_	_
+9	hand	hand	NOUN	NN	_	4	obl	_	_
+10	and	and	CCONJ	CC	_	12	cc	_	_
+11	on	on	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	left	left	NOUN	NN	_	9	conj	_	_
+14	,	,	PUNCT	,	_	4	punct	_	_
+15	and	and	CCONJ	CC	_	19	cc	_	_
+16	thy	thou	PRON	PRP$	_	17	nmod:poss	_	_
+17	seed	seed	NOUN	NN	_	19	nsubj	_	_
+18	shall	shall	AUX	MD	_	19	aux	_	_
+19	inherit	inherit	VERB	VB	_	4	conj	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	Gentiles	Gentile	PROPN	NNPS	_	19	obj	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	make	make	VERB	VB	_	19	conj	_	_
+24	the	the	DET	DT	_	26	det	_	_
+25	desolate	desolate	ADJ	JJ	_	26	amod	_	_
+26	cities	city	NOUN	NNS	_	23	obj	_	_
+27	to	to	PART	TO	_	29	mark	_	_
+28	be	be	AUX	VB	_	29	aux:pass	_	_
+29	inhabited	inhabit	VERB	VBN	_	23	xcomp	_	_
+30	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Fear not, for thou shalt not be ashamed; neither be thou confounded, for thou shalt not be put to shame; for thou shalt forget the shame of thy youth, and shalt not remember the reproach of thy youth, and shalt not remember the reproach of thy widowhood any more.
+# sent_id = 734
+# llm_note = imperative "Fear not" root; "for thou shalt not be ashamed" advcl; "neither be thou confounded" is inverted conj — "neither" as advmod on "confounded", "be" AUX, "thou" nsubj; "for thou shalt not be put to shame" is advcl; "for thou shalt forget...and shalt not remember...and shalt not remember" are three conj under advcl
+1	Fear	fear	VERB	VB	_	0	root	_	_
+2	not	not	PART	RB	_	1	advmod	_	_
+3	,	,	PUNCT	,	_	1	punct	_	_
+4	for	for	SCONJ	IN	_	9	mark	_	_
+5	thou	thou	PRON	PRP	_	9	nsubj:pass	_	_
+6	shalt	shall	AUX	MD	_	9	aux	_	_
+7	not	not	PART	RB	_	9	advmod	_	_
+8	be	be	AUX	VB	_	9	aux:pass	_	_
+9	ashamed	ashamed	ADJ	JJ	_	1	advcl	_	_
+10	;	;	PUNCT	:	_	1	punct	_	_
+11	neither	neither	ADV	RB	_	14	advmod	_	_
+12	be	be	AUX	VB	_	14	aux:pass	_	_
+13	thou	thou	PRON	PRP	_	14	nsubj:pass	_	_
+14	confounded	confound	VERB	VBN	_	1	conj	_	_
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	for	for	SCONJ	IN	_	21	mark	_	_
+17	thou	thou	PRON	PRP	_	21	nsubj:pass	_	_
+18	shalt	shall	AUX	MD	_	21	aux	_	_
+19	not	not	PART	RB	_	21	advmod	_	_
+20	be	be	AUX	VB	_	21	aux:pass	_	_
+21	put	put	VERB	VBN	_	14	advcl	_	_
+22	to	to	ADP	IN	_	23	case	_	_
+23	shame	shame	NOUN	NN	_	21	obl	_	_
+24	;	;	PUNCT	:	_	14	punct	_	_
+25	for	for	SCONJ	IN	_	28	mark	_	_
+26	thou	thou	PRON	PRP	_	28	nsubj	_	_
+27	shalt	shall	AUX	MD	_	28	aux	_	_
+28	forget	forget	VERB	VB	_	14	advcl	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	shame	shame	NOUN	NN	_	28	obj	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	thy	thou	PRON	PRP$	_	33	nmod:poss	_	_
+33	youth	youth	NOUN	NN	_	30	nmod	_	_
+34	,	,	PUNCT	,	_	28	punct	_	_
+35	and	and	CCONJ	CC	_	38	cc	_	_
+36	shalt	shall	AUX	MD	_	38	aux	_	_
+37	not	not	PART	RB	_	38	advmod	_	_
+38	remember	remember	VERB	VB	_	28	conj	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	reproach	reproach	NOUN	NN	_	38	obj	_	_
+41	of	of	ADP	IN	_	43	case	_	_
+42	thy	thou	PRON	PRP$	_	43	nmod:poss	_	_
+43	youth	youth	NOUN	NN	_	40	nmod	_	_
+44	,	,	PUNCT	,	_	38	punct	_	_
+45	and	and	CCONJ	CC	_	48	cc	_	_
+46	shalt	shall	AUX	MD	_	48	aux	_	_
+47	not	not	PART	RB	_	48	advmod	_	_
+48	remember	remember	VERB	VB	_	28	conj	_	_
+49	the	the	DET	DT	_	50	det	_	_
+50	reproach	reproach	NOUN	NN	_	48	obj	_	_
+51	of	of	ADP	IN	_	53	case	_	_
+52	thy	thou	PRON	PRP$	_	53	nmod:poss	_	_
+53	widowhood	widowhood	NOUN	NN	_	50	nmod	_	_
+54	any	any	ADV	RB	_	55	advmod	_	_
+55	more	more	ADV	RBR	_	48	advmod	_	_
+56	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = For thy maker, thy husband, the Lord of Hosts is his name; and thy Redeemer, the Holy One of Israel-- the God of the whole earth shall he be called.
+# sent_id = 735
+# llm_note = "thy maker, thy husband, the Lord of Hosts" are appositive subjects; "is his name" predicative; second clause: "the God of the whole earth shall he be called" — inverted passive; "thy Redeemer, the Holy One of Israel" are dislocated subjects; "he" is nsubj:pass; "called" root of second clause
+1	For	for	SCONJ	IN	_	12	mark	_	_
+2	thy	thou	PRON	PRP$	_	3	nmod:poss	_	_
+3	maker	maker	NOUN	NN	_	12	nsubj	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	thy	thou	PRON	PRP$	_	6	nmod:poss	_	_
+6	husband	husband	NOUN	NN	_	3	appos	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Lord	Lord	PROPN	NNP	_	3	appos	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	Hosts	Host	PROPN	NNPS	_	9	nmod	_	_
+12	is	be	VERB	VBZ	_	0	root	_	_
+13	his	he	PRON	PRP$	_	14	nmod:poss	_	_
+14	name	name	NOUN	NN	_	12	xcomp	_	_
+15	;	;	PUNCT	:	_	12	punct	_	_
+16	and	and	CCONJ	CC	_	35	cc	_	_
+17	thy	thou	PRON	PRP$	_	18	nmod:poss	_	_
+18	Redeemer	Redeemer	PROPN	NNP	_	35	dislocated	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	the	the	DET	DT	_	22	det	_	_
+21	Holy	Holy	ADJ	JJ	_	22	amod	_	_
+22	One	One	PROPN	NNP	_	18	appos	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	Israel	Israel	PROPN	NNP	_	22	nmod	_	_
+25	--	--	PUNCT	:	_	18	punct	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	God	God	PROPN	NNP	_	35	dislocated	_	_
+28	of	of	ADP	IN	_	31	case	_	_
+29	the	the	DET	DT	_	31	det	_	_
+30	whole	whole	ADJ	JJ	_	31	amod	_	_
+31	earth	earth	NOUN	NN	_	27	nmod	_	_
+32	shall	shall	AUX	MD	_	35	aux	_	_
+33	he	he	PRON	PRP	_	35	nsubj:pass	_	_
+34	be	be	AUX	VB	_	35	aux:pass	_	_
+35	called	call	VERB	VBN	_	12	conj	_	_
+36	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = For the Lord hath called thee as a woman forsaken and grieved in spirit, and a wife of youth, when thou wast refused, saith thy God.
+# sent_id = 736
+# llm_note = "the Lord hath called thee as a woman forsaken and grieved in spirit" — "as a woman" obl comparison; "forsaken" and "grieved" are past participial modifiers (amod) of "woman"; "and a wife of youth" is conj appositive on "woman"; "when thou wast refused" is advcl; "saith thy God" is parenthetical parataxis
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	Lord	Lord	PROPN	NNP	_	5	nsubj	_	_
+4	hath	have	AUX	VBZ	_	5	aux	_	_
+5	called	call	VERB	VBN	_	0	root	_	_
+6	thee	thou	PRON	PRP	_	5	obj	_	_
+7	as	as	ADP	IN	_	9	case	_	_
+8	a	a	DET	DT	_	9	det	_	_
+9	woman	woman	NOUN	NN	_	5	obl	_	_
+10	forsaken	forsake	VERB	VBN	_	9	amod	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	grieved	grieve	VERB	VBN	_	10	conj	_	_
+13	in	in	ADP	IN	_	14	case	_	_
+14	spirit	spirit	NOUN	NN	_	12	obl	_	_
+15	,	,	PUNCT	,	_	9	punct	_	_
+16	and	and	CCONJ	CC	_	18	cc	_	_
+17	a	a	DET	DT	_	18	det	_	_
+18	wife	wife	NOUN	NN	_	9	conj	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	youth	youth	NOUN	NN	_	18	nmod	_	_
+21	,	,	PUNCT	,	_	9	punct	_	_
+22	when	when	SCONJ	WRB	_	25	mark	_	_
+23	thou	thou	PRON	PRP	_	25	nsubj:pass	_	_
+24	wast	be	AUX	VBD	_	25	aux:pass	_	_
+25	refused	refuse	VERB	VBN	_	5	advcl	_	_
+26	,	,	PUNCT	,	_	27	punct	_	_
+27	saith	say	VERB	VBZ	_	5	parataxis	_	_
+28	thy	thou	PRON	PRP$	_	29	nmod:poss	_	_
+29	God	God	PROPN	NNP	_	27	nsubj	_	_
+30	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = For a small moment have I forsaken thee, but with great mercies will I gather thee.
+# sent_id = 737
+# llm_note = fronted "For a small moment" obl; inverted "have I forsaken thee"; second clause "but with great mercies will I gather thee" — inverted, "I" nsubj, "gather" root conj
+1	For	for	ADP	IN	_	4	case	_	_
+2	a	a	DET	DT	_	4	det	_	_
+3	small	small	ADJ	JJ	_	4	amod	_	_
+4	moment	moment	NOUN	NN	_	7	obl	_	_
+5	have	have	AUX	VBP	_	7	aux	_	_
+6	I	I	PRON	PRP	_	7	nsubj	_	_
+7	forsaken	forsake	VERB	VBN	_	0	root	_	_
+8	thee	thou	PRON	PRP	_	7	obj	_	_
+9	,	,	PUNCT	,	_	7	punct	_	_
+10	but	but	CCONJ	CC	_	16	cc	_	_
+11	with	with	ADP	IN	_	13	case	_	_
+12	great	great	ADJ	JJ	_	13	amod	_	_
+13	mercies	mercy	NOUN	NNS	_	16	obl	_	_
+14	will	will	AUX	MD	_	16	aux	_	_
+15	I	I	PRON	PRP	_	16	nsubj	_	_
+16	gather	gather	VERB	VB	_	7	conj	_	_
+17	thee	thou	PRON	PRP	_	16	obj	_	_
+18	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = In a little wrath I hid my face from thee for a moment, but with everlasting kindness will I have mercy on thee, saith the Lord thy Redeemer.
+# sent_id = 738
+# llm_note = fronted "In a little wrath" obl; main clause "I hid my face from thee for a moment"; second clause inverted "will I have mercy on thee" conj; "saith the Lord thy Redeemer" is parataxis; "thy Redeemer" is appos on "Lord"
+1	In	in	ADP	IN	_	4	case	_	_
+2	a	a	DET	DT	_	4	det	_	_
+3	little	little	ADJ	JJ	_	4	amod	_	_
+4	wrath	wrath	NOUN	NN	_	6	obl	_	_
+5	I	I	PRON	PRP	_	6	nsubj	_	_
+6	hid	hide	VERB	VBD	_	0	root	_	_
+7	my	I	PRON	PRP$	_	8	nmod:poss	_	_
+8	face	face	NOUN	NN	_	6	obj	_	_
+9	from	from	ADP	IN	_	10	case	_	_
+10	thee	thou	PRON	PRP	_	6	obl	_	_
+11	for	for	ADP	IN	_	13	case	_	_
+12	a	a	DET	DT	_	13	det	_	_
+13	moment	moment	NOUN	NN	_	6	obl	_	_
+14	,	,	PUNCT	,	_	6	punct	_	_
+15	but	but	CCONJ	CC	_	21	cc	_	_
+16	with	with	ADP	IN	_	18	case	_	_
+17	everlasting	everlasting	ADJ	JJ	_	18	amod	_	_
+18	kindness	kindness	NOUN	NN	_	21	obl	_	_
+19	will	will	AUX	MD	_	21	aux	_	_
+20	I	I	PRON	PRP	_	21	nsubj	_	_
+21	have	have	VERB	VB	_	6	conj	_	_
+22	mercy	mercy	NOUN	NN	_	21	obj	_	_
+23	on	on	ADP	IN	_	24	case	_	_
+24	thee	thou	PRON	PRP	_	21	obl	_	_
+25	,	,	PUNCT	,	_	26	punct	_	_
+26	saith	say	VERB	VBZ	_	6	parataxis	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	Lord	Lord	PROPN	NNP	_	26	nsubj	_	_
+29	thy	thou	PRON	PRP$	_	30	nmod:poss	_	_
+30	Redeemer	Redeemer	PROPN	NNP	_	28	appos	_	_
+31	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = For this, the waters of Noah unto me, for as I have sworn that the waters of Noah should no more go over the earth, so have I sworn that I would not be wroth with thee.
+# sent_id = 739
+# llm_note = elliptical opening: "For this, the waters of Noah unto me" — "this" is an elliptical reference, "the waters of Noah unto me" is appositive/elaboration, functioning as a paratactic bridge before the "for as...so" comparative construction; main structure: "for as I have sworn..., so have I sworn..."; "that the waters...should go over" is ccomp of first "sworn"; "that I would not be wroth" is ccomp of second "sworn"; root = second "sworn"(32)
+1	For	for	ADP	IN	_	2	case	_	_
+2	this	this	PRON	DT	_	32	dislocated	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	waters	water	NOUN	NNS	_	2	appos	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Noah	Noah	PROPN	NNP	_	5	nmod	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	me	I	PRON	PRP	_	5	nmod	_	_
+10	,	,	PUNCT	,	_	2	punct	_	_
+11	for	for	SCONJ	IN	_	15	mark	_	_
+12	as	as	SCONJ	IN	_	15	mark	_	_
+13	I	I	PRON	PRP	_	15	nsubj	_	_
+14	have	have	AUX	VBP	_	15	aux	_	_
+15	sworn	swear	VERB	VBN	_	32	advcl	_	_
+16	that	that	SCONJ	IN	_	24	mark	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	waters	water	NOUN	NNS	_	24	nsubj	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Noah	Noah	PROPN	NNP	_	18	nmod	_	_
+21	should	should	AUX	MD	_	24	aux	_	_
+22	no	no	ADV	RB	_	23	advmod	_	_
+23	more	more	ADV	RBR	_	24	advmod	_	_
+24	go	go	VERB	VB	_	15	ccomp	_	_
+25	over	over	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	earth	earth	NOUN	NN	_	24	obl	_	_
+28	,	,	PUNCT	,	_	15	punct	_	_
+29	so	so	ADV	RB	_	32	advmod	_	_
+30	have	have	AUX	VBP	_	32	aux	_	_
+31	I	I	PRON	PRP	_	32	nsubj	_	_
+32	sworn	swear	VERB	VBN	_	0	root	_	_
+33	that	that	SCONJ	IN	_	37	mark	_	_
+34	I	I	PRON	PRP	_	37	nsubj	_	_
+35	would	would	AUX	MD	_	37	aux	_	_
+36	not	not	PART	RB	_	37	advmod	_	_
+37	be	be	VERB	VB	_	32	ccomp	_	_
+38	wroth	wroth	ADJ	JJ	_	37	xcomp	_	_
+39	with	with	ADP	IN	_	40	case	_	_
+40	thee	thou	PRON	PRP	_	38	obl	_	_
+41	.	.	PUNCT	.	_	32	punct	_	_
+
+# text = For the mountains shall depart and the hills be removed, but my kindness shall not depart from thee, neither shall the covenant of my peace be removed, saith the Lord that hath mercy on thee.
+# sent_id = 740
+# llm_note = "the mountains shall depart and the hills be removed" — two coord clauses (ellipsis of "shall" in second); main contrast: "my kindness shall not depart"; "neither shall the covenant...be removed" — inverted with "neither" as advmod; "saith the Lord" is parataxis; "that hath mercy on thee" is acl:relcl on "Lord"
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	mountains	mountain	NOUN	NNS	_	5	nsubj	_	_
+4	shall	shall	AUX	MD	_	5	aux	_	_
+5	depart	depart	VERB	VB	_	17	advcl	_	_
+6	and	and	CCONJ	CC	_	10	cc	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	hills	hill	NOUN	NNS	_	10	nsubj:pass	_	_
+9	be	be	AUX	VB	_	10	aux:pass	_	_
+10	removed	remove	VERB	VBN	_	5	conj	_	_
+11	,	,	PUNCT	,	_	5	punct	_	_
+12	but	but	CCONJ	CC	_	17	cc	_	_
+13	my	I	PRON	PRP$	_	14	nmod:poss	_	_
+14	kindness	kindness	NOUN	NN	_	17	nsubj	_	_
+15	shall	shall	AUX	MD	_	17	aux	_	_
+16	not	not	PART	RB	_	17	advmod	_	_
+17	depart	depart	VERB	VB	_	0	root	_	_
+18	from	from	ADP	IN	_	19	case	_	_
+19	thee	thou	PRON	PRP	_	17	obl	_	_
+20	,	,	PUNCT	,	_	17	punct	_	_
+21	neither	neither	ADV	RB	_	29	advmod	_	_
+22	shall	shall	AUX	MD	_	29	aux	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	covenant	covenant	NOUN	NN	_	29	nsubj:pass	_	_
+25	of	of	ADP	IN	_	27	case	_	_
+26	my	I	PRON	PRP$	_	27	nmod:poss	_	_
+27	peace	peace	NOUN	NN	_	24	nmod	_	_
+28	be	be	AUX	VB	_	29	aux:pass	_	_
+29	removed	remove	VERB	VBN	_	17	conj	_	_
+30	,	,	PUNCT	,	_	31	punct	_	_
+31	saith	say	VERB	VBZ	_	17	parataxis	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	Lord	Lord	PROPN	NNP	_	31	nsubj	_	_
+34	that	that	PRON	WDT	_	36	nsubj	_	_
+35	hath	have	AUX	VBZ	_	36	aux	_	_
+36	mercy	mercy	NOUN	NN	_	33	acl:relcl	_	_
+37	on	on	ADP	IN	_	38	case	_	_
+38	thee	thou	PRON	PRP	_	36	obl	_	_
+39	.	.	PUNCT	.	_	17	punct	_	_
+
+# text = O thou afflicted, tossed with tempest, and not comforted!
+# sent_id = 741
+# llm_note = vocative exclamation; "O" is discourse; "thou afflicted" is the vocative — "afflicted" is amod; "tossed with tempest" and "not comforted" are further participial predicatives (amod/conj on "afflicted"); root = "afflicted"
+1	O	o	INTJ	UH	_	3	discourse	_	_
+2	thou	thou	PRON	PRP	_	3	vocative	_	_
+3	afflicted	afflict	VERB	VBN	_	0	root	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	tossed	toss	VERB	VBN	_	3	conj	_	_
+6	with	with	ADP	IN	_	7	case	_	_
+7	tempest	tempest	NOUN	NN	_	5	obl	_	_
+8	,	,	PUNCT	,	_	5	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	not	not	PART	RB	_	11	advmod	_	_
+11	comforted	comfort	VERB	VBN	_	3	conj	_	_
+12	!	!	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, I will lay thy stones with fair colors, and lay thy foundations with sapphires.
+# sent_id = 742
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	_	5	nsubj	_	_
+4	will	will	AUX	MD	_	5	aux	_	_
+5	lay	lay	VERB	VB	_	0	root	_	_
+6	thy	thou	PRON	PRP$	_	7	nmod:poss	_	_
+7	stones	stone	NOUN	NNS	_	5	obj	_	_
+8	with	with	ADP	IN	_	10	case	_	_
+9	fair	fair	ADJ	JJ	_	10	amod	_	_
+10	colors	color	NOUN	NNS	_	5	obl	_	_
+11	,	,	PUNCT	,	_	5	punct	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	lay	lay	VERB	VB	_	5	conj	_	_
+14	thy	thou	PRON	PRP$	_	15	nmod:poss	_	_
+15	foundations	foundation	NOUN	NNS	_	13	obj	_	_
+16	with	with	ADP	IN	_	17	case	_	_
+17	sapphires	sapphire	NOUN	NNS	_	13	obl	_	_
+18	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And I will make thy windows of agates, and thy gates of carbuncles, and all thy borders of pleasant stones.
+# sent_id = 743
+# llm_note = "make thy windows of agates" — "of agates" is material nmod; three coordinate obj: "thy windows", "thy gates", "all thy borders" all under "make"
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	_	4	nsubj	_	_
+3	will	will	AUX	MD	_	4	aux	_	_
+4	make	make	VERB	VB	_	0	root	_	_
+5	thy	thou	PRON	PRP$	_	6	nmod:poss	_	_
+6	windows	window	NOUN	NNS	_	4	obj	_	_
+7	of	of	ADP	IN	_	8	case	_	_
+8	agates	agate	NOUN	NNS	_	6	nmod	_	_
+9	,	,	PUNCT	,	_	6	punct	_	_
+10	and	and	CCONJ	CC	_	12	cc	_	_
+11	thy	thou	PRON	PRP$	_	12	nmod:poss	_	_
+12	gates	gate	NOUN	NNS	_	6	conj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	carbuncles	carbuncle	NOUN	NNS	_	12	nmod	_	_
+15	,	,	PUNCT	,	_	12	punct	_	_
+16	and	and	CCONJ	CC	_	19	cc	_	_
+17	all	all	DET	PDT	_	19	det:predet	_	_
+18	thy	thou	PRON	PRP$	_	19	nmod:poss	_	_
+19	borders	border	NOUN	NNS	_	6	conj	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	pleasant	pleasant	ADJ	JJ	_	22	amod	_	_
+22	stones	stone	NOUN	NNS	_	19	nmod	_	_
+23	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And all thy children shall be taught of the Lord; and great shall be the peace of thy children.
+# sent_id = 744
+# llm_note = "all thy children shall be taught of the Lord" — "of the Lord" is obl:agent; second clause inverted "great shall be the peace" — "great" is xcomp/predicative adj, "peace" nsubj, "be" cop; root = "taught"(7)
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	all	all	DET	PDT	_	4	det:predet	_	_
+3	thy	thou	PRON	PRP$	_	4	nmod:poss	_	_
+4	children	child	NOUN	NNS	_	7	nsubj:pass	_	_
+5	shall	shall	AUX	MD	_	7	aux	_	_
+6	be	be	AUX	VB	_	7	aux:pass	_	_
+7	taught	teach	VERB	VBN	_	0	root	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	Lord	Lord	PROPN	NNP	_	7	obl:agent	_	_
+11	;	;	PUNCT	:	_	7	punct	_	_
+12	and	and	CCONJ	CC	_	17	cc	_	_
+13	great	great	ADJ	JJ	_	17	xcomp	_	_
+14	shall	shall	AUX	MD	_	17	aux	_	_
+15	be	be	VERB	VB	_	17	cop	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	peace	peace	NOUN	NN	_	7	conj	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	thy	thou	PRON	PRP$	_	20	nmod:poss	_	_
+20	children	child	NOUN	NNS	_	17	nmod	_	_
+21	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = In righteousness shalt thou be established; thou shalt be far from oppression for thou shalt not fear, and from terror for it shall not come near thee.
+# sent_id = 745
+# llm_note = "In righteousness shalt thou be established" — inverted passive; second clause "thou shalt be far from oppression" — "far" is predicative adj; "for thou shalt not fear" is advcl; "and from terror for it shall not come near thee" — "from terror" is conj obl parallel to "from oppression"; "for it shall not come near thee" is advcl
+1	In	in	ADP	IN	_	2	case	_	_
+2	righteousness	righteousness	NOUN	NN	_	6	obl	_	_
+3	shalt	shall	AUX	MD	_	6	aux	_	_
+4	thou	thou	PRON	PRP	_	6	nsubj:pass	_	_
+5	be	be	AUX	VB	_	6	aux:pass	_	_
+6	established	establish	VERB	VBN	_	0	root	_	_
+7	;	;	PUNCT	:	_	6	punct	_	_
+8	thou	thou	PRON	PRP	_	11	nsubj	_	_
+9	shalt	shall	AUX	MD	_	11	aux	_	_
+10	be	be	VERB	VB	_	11	cop	_	_
+11	far	far	ADJ	JJ	_	6	conj	_	_
+12	from	from	ADP	IN	_	13	case	_	_
+13	oppression	oppression	NOUN	NN	_	11	obl	_	_
+14	for	for	SCONJ	IN	_	18	mark	_	_
+15	thou	thou	PRON	PRP	_	18	nsubj	_	_
+16	shalt	shall	AUX	MD	_	18	aux	_	_
+17	not	not	PART	RB	_	18	advmod	_	_
+18	fear	fear	VERB	VB	_	11	advcl	_	_
+19	,	,	PUNCT	,	_	11	punct	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	from	from	ADP	IN	_	22	case	_	_
+22	terror	terror	NOUN	NN	_	13	conj	_	_
+23	for	for	SCONJ	IN	_	27	mark	_	_
+24	it	it	PRON	PRP	_	27	nsubj	_	_
+25	shall	shall	AUX	MD	_	27	aux	_	_
+26	not	not	PART	RB	_	27	advmod	_	_
+27	come	come	VERB	VB	_	22	advcl	_	_
+28	near	near	ADP	IN	_	29	case	_	_
+29	thee	thou	PRON	PRP	_	27	obl	_	_
+30	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Behold, they shall surely gather together against thee, not by me; whosoever shall gather together against thee shall fall for thy sake.
+# sent_id = 746
+# llm_note = "Behold" discourse on "gather"; "not by me" is adverbial negation obl modifying the gathering — "not" PART, "by me" obl; "whosoever shall gather together against thee" is subject of "shall fall"
+1	Behold	behold	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	they	they	PRON	PRP	_	6	nsubj	_	_
+4	shall	shall	AUX	MD	_	6	aux	_	_
+5	surely	surely	ADV	RB	_	6	advmod	_	_
+6	gather	gather	VERB	VB	_	0	root	_	_
+7	together	together	ADV	RB	_	6	advmod	_	_
+8	against	against	ADP	IN	_	9	case	_	_
+9	thee	thou	PRON	PRP	_	6	obl	_	_
+10	,	,	PUNCT	,	_	6	punct	_	_
+11	not	not	PART	RB	_	6	advmod	_	_
+12	by	by	ADP	IN	_	13	case	_	_
+13	me	I	PRON	PRP	_	6	obl	_	_
+14	;	;	PUNCT	:	_	6	punct	_	_
+15	whosoever	whosoever	PRON	WP	_	22	nsubj	_	_
+16	shall	shall	AUX	MD	_	17	aux	_	_
+17	gather	gather	VERB	VB	_	15	acl	_	_
+18	together	together	ADV	RB	_	17	advmod	_	_
+19	against	against	ADP	IN	_	20	case	_	_
+20	thee	thou	PRON	PRP	_	17	obl	_	_
+21	shall	shall	AUX	MD	_	22	aux	_	_
+22	fall	fall	VERB	VB	_	6	conj	_	_
+23	for	for	ADP	IN	_	25	case	_	_
+24	thy	thou	PRON	PRP$	_	25	nmod:poss	_	_
+25	sake	sake	NOUN	NN	_	22	obl	_	_
+26	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Behold, I have created the smith that bloweth the coals in the fire, and that bringeth forth an instrument for his work; and I have created the waster to destroy.
+# sent_id = 747
+# llm_note = "Behold" discourse; "I have created the smith" main clause; "that bloweth the coals in the fire" is acl:relcl on "smith"; "and that bringeth forth an instrument" is second conj acl:relcl on "smith"; "I have created the waster" is conj of first clause; "to destroy" is purpose xcomp/advcl on "waster"
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	_	5	nsubj	_	_
+4	have	have	AUX	VBP	_	5	aux	_	_
+5	created	create	VERB	VBN	_	0	root	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	smith	smith	NOUN	NN	_	5	obj	_	_
+8	that	that	PRON	WDT	_	9	nsubj	_	_
+9	bloweth	blow	VERB	VBZ	_	7	acl:relcl	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	coals	coal	NOUN	NNS	_	9	obj	_	_
+12	in	in	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	fire	fire	NOUN	NN	_	9	obl	_	_
+15	,	,	PUNCT	,	_	9	punct	_	_
+16	and	and	CCONJ	CC	_	18	cc	_	_
+17	that	that	PRON	WDT	_	18	nsubj	_	_
+18	bringeth	bring	VERB	VBZ	_	9	conj	_	_
+19	forth	forth	ADV	RB	_	18	advmod	_	_
+20	an	a	DET	DT	_	21	det	_	_
+21	instrument	instrument	NOUN	NN	_	18	obj	_	_
+22	for	for	ADP	IN	_	24	case	_	_
+23	his	he	PRON	PRP$	_	24	nmod:poss	_	_
+24	work	work	NOUN	NN	_	21	nmod	_	_
+25	;	;	PUNCT	:	_	5	punct	_	_
+26	and	and	CCONJ	CC	_	29	cc	_	_
+27	I	I	PRON	PRP	_	29	nsubj	_	_
+28	have	have	AUX	VBP	_	29	aux	_	_
+29	created	create	VERB	VBN	_	5	conj	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	waster	waster	NOUN	NN	_	29	obj	_	_
+32	to	to	PART	TO	_	33	mark	_	_
+33	destroy	destroy	VERB	VB	_	31	acl	_	_
+34	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = No weapon that is formed against thee shall prosper; and every tongue that shall revile against thee in judgment thou shalt condemn.
+# sent_id = 748
+# llm_note = "No weapon...shall prosper" — "No" is det on "weapon"; "that is formed against thee" is acl:relcl; "every tongue that shall revile against thee in judgment thou shalt condemn" — OVS order: "tongue" dislocated obj, "thou" nsubj, "condemn" root of second clause
+1	No	no	DET	DT	_	2	det	_	_
+2	weapon	weapon	NOUN	NN	_	9	nsubj	_	_
+3	that	that	PRON	WDT	_	5	nsubj:pass	_	_
+4	is	be	AUX	VBZ	_	5	aux:pass	_	_
+5	formed	form	VERB	VBN	_	2	acl:relcl	_	_
+6	against	against	ADP	IN	_	7	case	_	_
+7	thee	thou	PRON	PRP	_	5	obl	_	_
+8	shall	shall	AUX	MD	_	9	aux	_	_
+9	prosper	prosper	VERB	VB	_	0	root	_	_
+10	;	;	PUNCT	:	_	9	punct	_	_
+11	and	and	CCONJ	CC	_	23	cc	_	_
+12	every	every	DET	DT	_	13	det	_	_
+13	tongue	tongue	NOUN	NN	_	23	dislocated	_	_
+14	that	that	PRON	WDT	_	16	nsubj	_	_
+15	shall	shall	AUX	MD	_	16	aux	_	_
+16	revile	revile	VERB	VB	_	13	acl:relcl	_	_
+17	against	against	ADP	IN	_	18	case	_	_
+18	thee	thou	PRON	PRP	_	16	obl	_	_
+19	in	in	ADP	IN	_	20	case	_	_
+20	judgment	judgment	NOUN	NN	_	16	obl	_	_
+21	thou	thou	PRON	PRP	_	23	nsubj	_	_
+22	shalt	shall	AUX	MD	_	23	aux	_	_
+23	condemn	condemn	VERB	VB	_	9	conj	_	_
+24	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = This is the heritage of the servants of the Lord, and their righteousness is of me, saith the Lord.
+# sent_id = 749
+# llm_note = two coordinate clauses; "saith the Lord" is parataxis
+1	This	this	PRON	DT	_	2	nsubj	_	_
+2	is	be	VERB	VBZ	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	heritage	heritage	NOUN	NN	_	2	xcomp	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	servants	servant	NOUN	NNS	_	4	nmod	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	Lord	Lord	PROPN	NNP	_	7	nmod	_	_
+11	,	,	PUNCT	,	_	2	punct	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	their	they	PRON	PRP$	_	14	nmod:poss	_	_
+14	righteousness	righteousness	NOUN	NN	_	15	nsubj	_	_
+15	is	be	VERB	VBZ	_	2	conj	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	me	I	PRON	PRP	_	15	obl	_	_
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	saith	say	VERB	VBZ	_	2	parataxis	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	Lord	Lord	PROPN	NNP	_	19	nsubj	_	_
+22	.	.	PUNCT	.	_	2	punct	_	_
+

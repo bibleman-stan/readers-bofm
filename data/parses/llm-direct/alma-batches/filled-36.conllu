@@ -1,0 +1,948 @@
+# text = Behold, this is the thing which doth trouble me.
+# sent_id = 875
+# llm_note = "Behold" INTJ discourse; "doth trouble" = archaic 3sg present (hath-pattern); "doth" = AUX
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	this	this	PRON	DT	_	4	nsubj	_	_
+4	is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	thing	thing	NOUN	NN	Number=Sing	4	xcomp	_	_
+7	which	which	PRON	WDT	_	9	obj	_	_
+8	doth	do	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	9	aux	_	_
+9	trouble	trouble	VERB	VB	VerbForm=Inf	6	acl:relcl	_	_
+10	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	9	obj	_	_
+11	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And also, what is this that Ammon said--
+# sent_id = 876
+# llm_note = fragment/open sentence; "also" advmod; "what" interrogative; "that Ammon said" rel-cl; dash indicates continuation in next sentence
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	also	also	ADV	RB	_	5	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	what	what	PRON	WP	_	5	nsubj	_	_
+5	is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	this	this	PRON	DT	_	5	xcomp	_	_
+7	that	that	SCONJ	IN	_	9	mark	_	_
+8	Ammon	Ammon	PROPN	NNP	_	9	nsubj	_	_
+9	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	acl:relcl	_	_
+10	--	--	PUNCT	:	_	5	punct	_	_
+
+# text = If ye will repent ye shall be saved, and if ye will not repent, ye shall be cast off at the last day?
+# sent_id = 877
+# llm_note = continuation of quoted speech from 876; "if...ye shall be saved" first conditional; "if ye will not repent...be cast off" second coord conditional; "cast off" = passive + particle
+1	If	if	SCONJ	IN	_	4	mark	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	4	nsubj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	repent	repent	VERB	VB	VerbForm=Inf	8	advcl	_	_
+5	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj:pass	_	_
+6	shall	shall	AUX	MD	VerbForm=Fin	8	aux	_	_
+7	be	be	AUX	VB	VerbForm=Inf	8	aux:pass	_	_
+8	saved	save	VERB	VBN	VerbForm=Part	0	root	_	_
+9	,	,	PUNCT	,	_	20	punct	_	_
+10	and	and	CCONJ	CC	_	20	cc	_	_
+11	if	if	SCONJ	IN	_	15	mark	_	_
+12	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	15	nsubj	_	_
+13	will	will	AUX	MD	VerbForm=Fin	15	aux	_	_
+14	not	not	PART	RB	_	15	advmod	_	_
+15	repent	repent	VERB	VB	VerbForm=Inf	20	advcl	_	_
+16	,	,	PUNCT	,	_	20	punct	_	_
+17	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	20	nsubj:pass	_	_
+18	shall	shall	AUX	MD	VerbForm=Fin	20	aux	_	_
+19	be	be	AUX	VB	VerbForm=Inf	20	aux:pass	_	_
+20	cast	cast	VERB	VBN	VerbForm=Part	8	conj	_	_
+21	off	off	ADP	RP	_	20	compound:prt	_	_
+22	at	at	ADP	IN	_	25	case	_	_
+23	the	the	DET	DT	_	25	det	_	_
+24	last	last	ADJ	JJ	_	25	amod	_	_
+25	day	day	NOUN	NN	Number=Sing	20	obl	_	_
+26	?	?	PUNCT	.	_	8	punct	_	_
+
+# text = And Aaron answered him and said unto him: Believest thou that there is a God?
+# sent_id = 878
+# llm_note = "answered him and said" — conj; "Believest thou" = archaic inversion (nsubj post-V); "that there is a God" ccomp of "Believest"
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Aaron	Aaron	PROPN	NNP	_	3	nsubj	_	_
+3	answered	answer	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	3	obj	_	_
+5	and	and	CCONJ	CC	_	6	cc	_	_
+6	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	conj	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	6	obl	_	_
+9	:	:	PUNCT	:	_	6	punct	_	_
+10	Believest	believe	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	6	ccomp	_	_
+11	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	10	nsubj	_	_
+12	that	that	SCONJ	IN	_	15	mark	_	_
+13	there	there	PRON	EX	_	15	expl	_	_
+14	is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	15	cop	_	_
+15	a	a	DET	DT	_	10	ccomp	_	_
+16	God	God	PROPN	NNP	_	15	nsubj	_	_
+17	?	?	PUNCT	.	_	10	punct	_	_
+
+# text = And the king said: I know that the Amalekites say that there is a God, and I have granted unto them that they should build sanctuaries, that they may assemble themselves together to worship him.
+# sent_id = 879
+# llm_note = "I know that ... say that there is a God" — nested ccomps; "I have granted ... that they should build" — ccomp of granted; "that they may assemble" purpose clause; "to worship" purpose infinitive
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	king	king	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	:	:	PUNCT	:	_	4	punct	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+7	know	know	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
+8	that	that	SCONJ	IN	_	11	mark	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	Amalekites	Amalekite	PROPN	NNPS	Number=Plur	11	nsubj	_	_
+11	say	say	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
+12	that	that	SCONJ	IN	_	15	mark	_	_
+13	there	there	PRON	EX	_	15	expl	_	_
+14	is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	15	cop	_	_
+15	a	a	DET	DT	_	11	ccomp	_	_
+16	God	God	PROPN	NNP	_	15	nsubj	_	_
+17	,	,	PUNCT	,	_	21	punct	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	21	nsubj	_	_
+20	have	have	AUX	VBP	_	21	aux	_	_
+21	granted	grant	VERB	VBN	VerbForm=Part	7	conj	_	_
+22	unto	unto	ADP	IN	_	23	case	_	_
+23	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	21	obl	_	_
+24	that	that	SCONJ	IN	_	27	mark	_	_
+25	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	27	nsubj	_	_
+26	should	shall	AUX	MD	VerbForm=Fin	27	aux	_	_
+27	build	build	VERB	VB	VerbForm=Inf	21	ccomp	_	_
+28	sanctuaries	sanctuary	NOUN	NNS	Number=Plur	27	obj	_	_
+29	,	,	PUNCT	,	_	33	punct	_	_
+30	that	that	SCONJ	IN	_	33	mark	_	_
+31	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	33	nsubj	_	_
+32	may	may	AUX	MD	VerbForm=Fin	33	aux	_	_
+33	assemble	assemble	VERB	VB	VerbForm=Inf	27	advcl	_	_
+34	themselves	themselves	PRON	PRP	Case=Acc|Number=Plur|Person=3	33	obj	_	_
+35	together	together	ADV	RB	_	33	advmod	_	_
+36	to	to	PART	TO	_	37	mark	_	_
+37	worship	worship	VERB	VB	VerbForm=Inf	33	advcl	_	_
+38	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	37	obj	_	_
+39	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And if now thou sayest there is a God, behold I will believe.
+# sent_id = 880
+# llm_note = "if thou sayest there is a God" conditional; "behold" INTJ; "I will believe" main apodosis
+1	And	and	CCONJ	CC	_	14	cc	_	_
+2	if	if	SCONJ	IN	_	5	mark	_	_
+3	now	now	ADV	RB	_	5	advmod	_	_
+4	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	5	nsubj	_	_
+5	sayest	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	14	advcl	_	_
+6	there	there	PRON	EX	_	8	expl	_	_
+7	is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	a	a	DET	DT	_	5	ccomp	_	_
+9	God	God	PROPN	NNP	_	8	nsubj	_	_
+10	,	,	PUNCT	,	_	14	punct	_	_
+11	behold	behold	INTJ	UH	_	14	discourse	_	_
+12	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	14	nsubj	_	_
+13	will	will	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	believe	believe	VERB	VB	VerbForm=Inf	0	root	_	_
+15	.	.	PUNCT	.	_	14	punct	_	_
+
+# text = And now when Aaron heard this, his heart began to rejoice, and he said: Behold, assuredly as thou livest, O king, there is a God.
+# sent_id = 881
+# llm_note = "when Aaron heard this" temporal advcl; "his heart began to rejoice" main clause; "said: Behold..." speech; "assuredly as thou livest" = swearing formula (advcl)
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	now	now	ADV	RB	_	10	advmod	_	_
+3	when	when	SCONJ	WRB	_	5	mark	_	_
+4	Aaron	Aaron	PROPN	NNP	_	5	nsubj	_	_
+5	heard	hear	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	advcl	_	_
+6	this	this	PRON	DT	_	5	obj	_	_
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	9	nmod:poss	_	_
+9	heart	heart	NOUN	NN	Number=Sing	10	nsubj	_	_
+10	began	begin	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+11	to	to	PART	TO	_	12	mark	_	_
+12	rejoice	rejoice	VERB	VB	VerbForm=Inf	10	xcomp	_	_
+13	,	,	PUNCT	,	_	16	punct	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	16	nsubj	_	_
+16	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	conj	_	_
+17	:	:	PUNCT	:	_	16	punct	_	_
+18	Behold	behold	INTJ	UH	_	29	discourse	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	assuredly	assuredly	ADV	RB	_	29	advmod	_	_
+21	as	as	SCONJ	IN	_	23	mark	_	_
+22	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	23	nsubj	_	_
+23	livest	live	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	29	advcl	_	_
+24	,	,	PUNCT	,	_	26	punct	_	_
+25	O	O	INTJ	UH	_	26	discourse	_	_
+26	king	king	NOUN	NN	Number=Sing	29	vocative	_	_
+27	,	,	PUNCT	,	_	26	punct	_	_
+28	there	there	PRON	EX	_	29	expl	_	_
+29	is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	16	ccomp	_	_
+30	a	a	DET	DT	_	31	det	_	_
+31	God	God	PROPN	NNP	_	29	nsubj	_	_
+32	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And the king said: Is God that Great Spirit that brought our fathers out of the land of Jerusalem?
+# sent_id = 882
+# llm_note = interrogative copular; "that Great Spirit" = predicate NP; "that brought..." rel-cl on Spirit
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	king	king	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	:	:	PUNCT	:	_	4	punct	_	_
+6	Is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
+7	God	God	PROPN	NNP	_	6	nsubj	_	_
+8	that	that	DET	DT	_	10	det	_	_
+9	Great	great	ADJ	JJ	_	10	amod	_	_
+10	Spirit	Spirit	PROPN	NNP	_	6	xcomp	_	_
+11	that	that	PRON	WDT	_	12	nsubj	_	_
+12	brought	bring	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	acl:relcl	_	_
+13	our	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes	14	nmod:poss	_	_
+14	fathers	father	NOUN	NNS	Number=Plur	12	obj	_	_
+15	out	out	ADP	RP	_	16	case	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	land	land	NOUN	NN	Number=Sing	12	obl	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Jerusalem	Jerusalem	PROPN	NNP	_	18	nmod	_	_
+21	?	?	PUNCT	.	_	6	punct	_	_
+
+# text = And Aaron said unto him: Yea, he is that Great Spirit, and he created all things both in heaven and in earth.
+# sent_id = 883
+# llm_note = "Yea" discourse; "he is that Great Spirit" copular; "both in heaven and in earth" — "both" coordinates the PPs
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Aaron	Aaron	PROPN	NNP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	3	obl	_	_
+6	:	:	PUNCT	:	_	3	punct	_	_
+7	Yea	yea	INTJ	UH	_	10	discourse	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	10	nsubj	_	_
+10	is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+11	that	that	DET	DT	_	13	det	_	_
+12	Great	great	ADJ	JJ	_	13	amod	_	_
+13	Spirit	Spirit	PROPN	NNP	_	10	xcomp	_	_
+14	,	,	PUNCT	,	_	17	punct	_	_
+15	and	and	CCONJ	CC	_	17	cc	_	_
+16	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	17	nsubj	_	_
+17	created	create	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	conj	_	_
+18	all	all	DET	PDT	_	19	det:predet	_	_
+19	things	thing	NOUN	NNS	Number=Plur	17	obj	_	_
+20	both	both	CCONJ	CC	_	22	cc	_	_
+21	in	in	ADP	IN	_	22	case	_	_
+22	heaven	heaven	NOUN	NN	Number=Sing	17	obl	_	_
+23	and	and	CCONJ	CC	_	25	cc	_	_
+24	in	in	ADP	IN	_	25	case	_	_
+25	earth	earth	NOUN	NN	Number=Sing	22	conj	_	_
+26	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Believest thou this?
+# sent_id = 884
+1	Believest	believe	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	0	root	_	_
+2	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	1	nsubj	_	_
+3	this	this	PRON	DT	_	1	obj	_	_
+4	?	?	PUNCT	.	_	1	punct	_	_
+
+# text = And he said: Yea, I believe that the Great Spirit created all things, and I desire that ye should tell me concerning all these things, and I will believe thy words.
+# sent_id = 885
+# llm_note = "I believe that..." ccomp; "I desire that ye should tell" ccomp; "I will believe thy words" coord
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	Yea	yea	INTJ	UH	_	8	discourse	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	believe	believe	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+9	that	that	SCONJ	IN	_	13	mark	_	_
+10	the	the	DET	DT	_	12	det	_	_
+11	Great	great	ADJ	JJ	_	12	amod	_	_
+12	Spirit	Spirit	PROPN	NNP	_	13	nsubj	_	_
+13	created	create	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	ccomp	_	_
+14	all	all	DET	PDT	_	15	det:predet	_	_
+15	things	thing	NOUN	NNS	Number=Plur	13	obj	_	_
+16	,	,	PUNCT	,	_	19	punct	_	_
+17	and	and	CCONJ	CC	_	19	cc	_	_
+18	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	19	nsubj	_	_
+19	desire	desire	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	8	conj	_	_
+20	that	that	SCONJ	IN	_	23	mark	_	_
+21	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	23	nsubj	_	_
+22	should	shall	AUX	MD	VerbForm=Fin	23	aux	_	_
+23	tell	tell	VERB	VB	VerbForm=Inf	19	ccomp	_	_
+24	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	23	iobj	_	_
+25	concerning	concerning	ADP	IN	_	28	case	_	_
+26	all	all	DET	PDT	_	28	det:predet	_	_
+27	these	this	DET	DT	Number=Plur	28	det	_	_
+28	things	thing	NOUN	NNS	Number=Plur	23	obl	_	_
+29	,	,	PUNCT	,	_	33	punct	_	_
+30	and	and	CCONJ	CC	_	33	cc	_	_
+31	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	33	nsubj	_	_
+32	will	will	AUX	MD	VerbForm=Fin	33	aux	_	_
+33	believe	believe	VERB	VB	VerbForm=Inf	8	conj	_	_
+34	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	35	nmod:poss	_	_
+35	words	word	NOUN	NNS	Number=Plur	33	obj	_	_
+36	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that when Aaron saw that the king would believe his words, he began from the creation of Adam, reading the scriptures unto the king-- how God created man after his own image, and that God gave him commandments, and that because of transgression, man had fallen.
+# sent_id = 886
+# llm_note = AICTP; "when Aaron saw" temporal advcl; "he began from the creation" matrix; "reading the scriptures" participial; "how God created..." indirect question/ccomp of "reading" (content of scriptures); parallel "and that" clauses
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	when	when	SCONJ	WRB	_	9	mark	_	_
+8	Aaron	Aaron	PROPN	NNP	_	9	nsubj	_	_
+9	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	19	advcl	_	_
+10	that	that	SCONJ	IN	_	14	mark	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	king	king	NOUN	NN	Number=Sing	14	nsubj	_	_
+13	would	will	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	believe	believe	VERB	VB	VerbForm=Inf	9	ccomp	_	_
+15	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	16	nmod:poss	_	_
+16	words	word	NOUN	NNS	Number=Plur	14	obj	_	_
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	19	nsubj	_	_
+19	began	begin	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+20	from	from	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	creation	creation	NOUN	NN	Number=Sing	19	obl	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	Adam	Adam	PROPN	NNP	_	22	nmod	_	_
+25	,	,	PUNCT	,	_	26	punct	_	_
+26	reading	read	VERB	VBG	VerbForm=Part	19	advcl	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	scriptures	scripture	NOUN	NNS	Number=Plur	26	obj	_	_
+29	unto	unto	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	king	king	NOUN	NN	Number=Sing	26	obl	_	_
+32	--	--	PUNCT	:	_	26	punct	_	_
+33	how	how	ADV	WRB	_	35	advmod	_	_
+34	God	God	PROPN	NNP	_	35	nsubj	_	_
+35	created	create	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	26	ccomp	_	_
+36	man	man	NOUN	NN	Number=Sing	35	obj	_	_
+37	after	after	ADP	IN	_	40	case	_	_
+38	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	40	nmod:poss	_	_
+39	own	own	ADJ	JJ	_	40	amod	_	_
+40	image	image	NOUN	NN	Number=Sing	35	obl	_	_
+41	,	,	PUNCT	,	_	45	punct	_	_
+42	and	and	CCONJ	CC	_	45	cc	_	_
+43	that	that	SCONJ	IN	_	45	mark	_	_
+44	God	God	PROPN	NNP	_	45	nsubj	_	_
+45	gave	give	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	35	conj	_	_
+46	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	45	iobj	_	_
+47	commandments	commandment	NOUN	NNS	Number=Plur	45	obj	_	_
+48	,	,	PUNCT	,	_	57	punct	_	_
+49	and	and	CCONJ	CC	_	57	cc	_	_
+50	that	that	SCONJ	IN	_	57	mark	_	_
+51	because	because	SCONJ	IN	_	53	mark	_	_
+52	of	of	ADP	IN	_	51	fixed	_	_
+53	transgression	transgression	NOUN	NN	Number=Sing	57	advcl	_	_
+54	,	,	PUNCT	,	_	57	punct	_	_
+55	man	man	NOUN	NN	Number=Sing	57	nsubj	_	_
+56	had	have	AUX	VBD	_	57	aux	_	_
+57	fallen	fall	VERB	VBN	VerbForm=Part	35	conj	_	_
+58	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Aaron did expound unto him the scriptures from the creation of Adam, laying the fall of man before him, and their carnal state, and also the plan of redemption, which was prepared from the foundation of the world, through Christ, for all whosoever would believe on his name.
+# sent_id = 887
+# llm_note = "did expound" AUX+VERB; "laying...before him" participial advcl; coord NPs "their carnal state" and "the plan of redemption" as further obj; rel-cl on "plan"
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	Aaron	Aaron	PROPN	NNP	_	4	nsubj	_	_
+3	did	do	AUX	VBD	VerbForm=Fin	4	aux	_	_
+4	expound	expound	VERB	VB	VerbForm=Inf	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	4	obl	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	scriptures	scripture	NOUN	NNS	Number=Plur	4	obj	_	_
+9	from	from	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	creation	creation	NOUN	NN	Number=Sing	4	obl	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	Adam	Adam	PROPN	NNP	_	11	nmod	_	_
+14	,	,	PUNCT	,	_	15	punct	_	_
+15	laying	lay	VERB	VBG	VerbForm=Part	4	advcl	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	fall	fall	NOUN	NN	Number=Sing	15	obj	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	man	man	NOUN	NN	Number=Sing	17	nmod	_	_
+20	before	before	ADP	IN	_	21	case	_	_
+21	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	15	obl	_	_
+22	,	,	PUNCT	,	_	26	punct	_	_
+23	and	and	CCONJ	CC	_	26	cc	_	_
+24	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	26	nmod:poss	_	_
+25	carnal	carnal	ADJ	JJ	_	26	amod	_	_
+26	state	state	NOUN	NN	Number=Sing	17	conj	_	_
+27	,	,	PUNCT	,	_	31	punct	_	_
+28	and	and	CCONJ	CC	_	31	cc	_	_
+29	also	also	ADV	RB	_	31	advmod	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	plan	plan	NOUN	NN	Number=Sing	26	conj	_	_
+32	of	of	ADP	IN	_	33	case	_	_
+33	redemption	redemption	NOUN	NN	Number=Sing	31	nmod	_	_
+34	,	,	PUNCT	,	_	37	punct	_	_
+35	which	which	PRON	WDT	_	37	nsubj:pass	_	_
+36	was	be	AUX	VBD	_	37	aux:pass	_	_
+37	prepared	prepare	VERB	VBN	VerbForm=Part	31	acl:relcl	_	_
+38	from	from	ADP	IN	_	40	case	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	foundation	foundation	NOUN	NN	Number=Sing	37	obl	_	_
+41	of	of	ADP	IN	_	43	case	_	_
+42	the	the	DET	DT	_	43	det	_	_
+43	world	world	NOUN	NN	Number=Sing	40	nmod	_	_
+44	,	,	PUNCT	,	_	46	punct	_	_
+45	through	through	ADP	IN	_	46	case	_	_
+46	Christ	Christ	PROPN	NNP	_	37	obl	_	_
+47	,	,	PUNCT	,	_	52	punct	_	_
+48	for	for	ADP	IN	_	50	case	_	_
+49	all	all	DET	PDT	_	50	det:predet	_	_
+50	whosoever	whosoever	PRON	WP	_	37	obl	_	_
+51	would	will	AUX	MD	VerbForm=Fin	52	aux	_	_
+52	believe	believe	VERB	VB	VerbForm=Inf	50	acl:relcl	_	_
+53	on	on	ADP	IN	_	55	case	_	_
+54	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	55	nmod:poss	_	_
+55	name	name	NOUN	NN	Number=Sing	52	obl	_	_
+56	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And since man had fallen he could not merit anything of himself; but the sufferings and death of Christ atone for their sins, through faith and repentance, and so forth; and that he breaketh the bands of death, that the grave shall have no victory, and that the sting of death should be swallowed up in the hopes of glory; and Aaron did expound all these things unto the king.
+# sent_id = 888
+# llm_note = complex passage; "since man had fallen" = causal advcl; "he could not merit" matrix; "but...atone" contrast coord; "and so forth" fixed; "and that he breaketh" — coord "that"-clause continuing list from expound (888 is narrative summary); "and Aaron did expound" caps it
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	since	since	SCONJ	IN	_	5	mark	_	_
+3	man	man	NOUN	NN	Number=Sing	5	nsubj	_	_
+4	had	have	AUX	VBD	_	5	aux	_	_
+5	fallen	fall	VERB	VBN	VerbForm=Part	9	advcl	_	_
+6	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	9	nsubj	_	_
+7	could	can	AUX	MD	VerbForm=Fin	9	aux	_	_
+8	not	not	PART	RB	_	9	advmod	_	_
+9	merit	merit	VERB	VB	VerbForm=Inf	0	root	_	_
+10	anything	anything	PRON	NN	_	9	obj	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	himself	himself	PRON	PRP	Case=Acc|Number=Sing|Person=3	9	obl	_	_
+13	;	;	PUNCT	.	_	21	punct	_	_
+14	but	but	CCONJ	CC	_	21	cc	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	sufferings	suffering	NOUN	NNS	Number=Plur	21	nsubj	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	death	death	NOUN	NN	Number=Sing	16	conj	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Christ	Christ	PROPN	NNP	_	16	nmod	_	_
+21	atone	atone	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	9	conj	_	_
+22	for	for	ADP	IN	_	24	case	_	_
+23	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	24	nmod:poss	_	_
+24	sins	sin	NOUN	NNS	Number=Plur	21	obl	_	_
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	through	through	ADP	IN	_	27	case	_	_
+27	faith	faith	NOUN	NN	Number=Sing	21	obl	_	_
+28	and	and	CCONJ	CC	_	29	cc	_	_
+29	repentance	repentance	NOUN	NN	Number=Sing	27	conj	_	_
+30	,	,	PUNCT	,	_	21	punct	_	_
+31	and	and	CCONJ	CC	_	33	cc	_	_
+32	so	so	ADV	RB	_	33	advmod	_	_
+33	forth	forth	ADV	RB	_	21	conj	_	_
+34	;	;	PUNCT	.	_	38	punct	_	_
+35	and	and	CCONJ	CC	_	38	cc	_	_
+36	that	that	SCONJ	IN	_	38	mark	_	_
+37	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	38	nsubj	_	_
+38	breaketh	break	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	9	conj	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	bands	band	NOUN	NNS	Number=Plur	38	obj	_	_
+41	of	of	ADP	IN	_	42	case	_	_
+42	death	death	NOUN	NN	Number=Sing	40	nmod	_	_
+43	,	,	PUNCT	,	_	48	punct	_	_
+44	that	that	SCONJ	IN	_	48	mark	_	_
+45	the	the	DET	DT	_	46	det	_	_
+46	grave	grave	NOUN	NN	Number=Sing	48	nsubj	_	_
+47	shall	shall	AUX	MD	VerbForm=Fin	48	aux	_	_
+48	have	have	VERB	VB	VerbForm=Inf	38	advcl	_	_
+49	no	no	DET	DT	_	50	det	_	_
+50	victory	victory	NOUN	NN	Number=Sing	48	obj	_	_
+51	,	,	PUNCT	,	_	60	punct	_	_
+52	and	and	CCONJ	CC	_	60	cc	_	_
+53	that	that	SCONJ	IN	_	60	mark	_	_
+54	the	the	DET	DT	_	55	det	_	_
+55	sting	sting	NOUN	NN	Number=Sing	60	nsubj:pass	_	_
+56	of	of	ADP	IN	_	57	case	_	_
+57	death	death	NOUN	NN	Number=Sing	55	nmod	_	_
+58	should	shall	AUX	MD	VerbForm=Fin	60	aux	_	_
+59	be	be	AUX	VB	VerbForm=Inf	60	aux:pass	_	_
+60	swallowed	swallow	VERB	VBN	VerbForm=Part	38	conj	_	_
+61	up	up	ADP	RP	_	60	compound:prt	_	_
+62	in	in	ADP	IN	_	64	case	_	_
+63	the	the	DET	DT	_	64	det	_	_
+64	hopes	hope	NOUN	NNS	Number=Plur	60	obl	_	_
+65	of	of	ADP	IN	_	66	case	_	_
+66	glory	glory	NOUN	NN	Number=Sing	64	nmod	_	_
+67	;	;	PUNCT	.	_	71	punct	_	_
+68	and	and	CCONJ	CC	_	71	cc	_	_
+69	Aaron	Aaron	PROPN	NNP	_	71	nsubj	_	_
+70	did	do	AUX	VBD	VerbForm=Fin	71	aux	_	_
+71	expound	expound	VERB	VB	VerbForm=Inf	9	conj	_	_
+72	all	all	DET	PDT	_	74	det:predet	_	_
+73	these	this	DET	DT	Number=Plur	74	det	_	_
+74	things	thing	NOUN	NNS	Number=Plur	71	obj	_	_
+75	unto	unto	ADP	IN	_	77	case	_	_
+76	the	the	DET	DT	_	77	det	_	_
+77	king	king	NOUN	NN	Number=Sing	71	obl	_	_
+78	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And it came to pass that after Aaron had expounded these things unto him, the king said:
+# sent_id = 889
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	after	after	SCONJ	IN	_	10	mark	_	_
+8	Aaron	Aaron	PROPN	NNP	_	10	nsubj	_	_
+9	had	have	AUX	VBD	_	10	aux	_	_
+10	expounded	expound	VERB	VBN	VerbForm=Part	18	advcl	_	_
+11	these	this	DET	DT	Number=Plur	12	det	_	_
+12	things	thing	NOUN	NNS	Number=Plur	10	obj	_	_
+13	unto	unto	ADP	IN	_	14	case	_	_
+14	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	10	obl	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	king	king	NOUN	NN	Number=Sing	18	nsubj	_	_
+18	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+19	:	:	PUNCT	:	_	18	punct	_	_
+
+# text = What shall I do that I may have this eternal life of which thou hast spoken?
+# sent_id = 890
+# llm_note = interrogative; "What" = obj of "do"; "that I may have" purpose advcl; "of which thou hast spoken" rel-cl on "life"
+1	What	what	PRON	WP	_	4	obj	_	_
+2	shall	shall	AUX	MD	VerbForm=Fin	4	aux	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	do	do	VERB	VB	VerbForm=Inf	0	root	_	_
+5	that	that	SCONJ	IN	_	8	mark	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+7	may	may	AUX	MD	VerbForm=Fin	8	aux	_	_
+8	have	have	VERB	VB	VerbForm=Inf	4	advcl	_	_
+9	this	this	DET	DT	_	11	det	_	_
+10	eternal	eternal	ADJ	JJ	_	11	amod	_	_
+11	life	life	NOUN	NN	Number=Sing	8	obj	_	_
+12	of	of	ADP	IN	_	11	case	_	_
+13	which	which	PRON	WDT	_	16	obl	_	_
+14	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	16	nsubj	_	_
+15	hast	have	AUX	VBZ	Number=Sing|Person=2|Tense=Pres	16	aux	_	_
+16	spoken	speak	VERB	VBN	VerbForm=Part	11	acl:relcl	_	_
+17	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = Yea, what shall I do that I may be born of God, having this wicked spirit rooted out of my breast, and receive his Spirit, that I may be filled with joy, that I may not be cast off at the last day?
+# sent_id = 891
+# llm_note = "Yea" discourse; "what shall I do" interrogative root; "that I may be born of God" purpose advcl; "having this wicked spirit rooted out" participial (absolute); "and receive" coord xcomp; "that I may be filled" purpose; "that I may not be cast off" coord purpose
+1	Yea	yea	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	what	what	PRON	WP	_	6	obj	_	_
+4	shall	shall	AUX	MD	VerbForm=Fin	6	aux	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	6	nsubj	_	_
+6	do	do	VERB	VB	VerbForm=Inf	0	root	_	_
+7	that	that	SCONJ	IN	_	11	mark	_	_
+8	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	11	nsubj:pass	_	_
+9	may	may	AUX	MD	VerbForm=Fin	11	aux	_	_
+10	be	be	AUX	VB	VerbForm=Inf	11	aux:pass	_	_
+11	born	bear	VERB	VBN	VerbForm=Part	6	advcl	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	God	God	PROPN	NNP	_	11	obl	_	_
+14	,	,	PUNCT	,	_	15	punct	_	_
+15	having	have	VERB	VBG	VerbForm=Part	11	advcl	_	_
+16	this	this	DET	DT	_	18	det	_	_
+17	wicked	wicked	ADJ	JJ	_	18	amod	_	_
+18	spirit	spirit	NOUN	NN	Number=Sing	15	obj	_	_
+19	rooted	root	VERB	VBN	VerbForm=Part	18	acl	_	_
+20	out	out	ADP	RP	_	21	case	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	23	nmod:poss	_	_
+23	breast	breast	NOUN	NN	Number=Sing	19	obl	_	_
+24	,	,	PUNCT	,	_	26	punct	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	receive	receive	VERB	VB	VerbForm=Inf	11	conj	_	_
+27	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	28	nmod:poss	_	_
+28	Spirit	Spirit	PROPN	NNP	_	26	obj	_	_
+29	,	,	PUNCT	,	_	34	punct	_	_
+30	that	that	SCONJ	IN	_	34	mark	_	_
+31	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	34	nsubj:pass	_	_
+32	may	may	AUX	MD	VerbForm=Fin	34	aux	_	_
+33	be	be	AUX	VB	VerbForm=Inf	34	aux:pass	_	_
+34	filled	fill	VERB	VBN	VerbForm=Part	26	advcl	_	_
+35	with	with	ADP	IN	_	36	case	_	_
+36	joy	joy	NOUN	NN	Number=Sing	34	obl	_	_
+37	,	,	PUNCT	,	_	43	punct	_	_
+38	that	that	SCONJ	IN	_	43	mark	_	_
+39	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	43	nsubj:pass	_	_
+40	may	may	AUX	MD	VerbForm=Fin	43	aux	_	_
+41	not	not	PART	RB	_	43	advmod	_	_
+42	be	be	AUX	VB	VerbForm=Inf	43	aux:pass	_	_
+43	cast	cast	VERB	VBN	VerbForm=Part	34	conj	_	_
+44	off	off	ADP	RP	_	43	compound:prt	_	_
+45	at	at	ADP	IN	_	48	case	_	_
+46	the	the	DET	DT	_	48	det	_	_
+47	last	last	ADJ	JJ	_	48	amod	_	_
+48	day	day	NOUN	NN	Number=Sing	43	obl	_	_
+49	?	?	PUNCT	.	_	6	punct	_	_
+
+# text = Behold, said he, I will give up all that I possess, yea, I will forsake my kingdom, that I may receive this great joy.
+# sent_id = 892
+# llm_note = "Behold" INTJ; "said he" parenthetical (parataxis); "I will give up all that I possess" main clause; "yea" discourse; "I will forsake" conj; "that I may receive" purpose advcl
+1	Behold	behold	INTJ	UH	_	8	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	parataxis	_	_
+4	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
+5	,	,	PUNCT	,	_	3	punct	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+7	will	will	AUX	MD	VerbForm=Fin	8	aux	_	_
+8	give	give	VERB	VB	VerbForm=Inf	0	root	_	_
+9	up	up	ADP	RP	_	8	compound:prt	_	_
+10	all	all	PRON	NN	_	8	obj	_	_
+11	that	that	SCONJ	IN	_	13	mark	_	_
+12	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	13	nsubj	_	_
+13	possess	possess	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
+14	,	,	PUNCT	,	_	19	punct	_	_
+15	yea	yea	INTJ	UH	_	19	discourse	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	19	nsubj	_	_
+18	will	will	AUX	MD	VerbForm=Fin	19	aux	_	_
+19	forsake	forsake	VERB	VB	VerbForm=Inf	8	conj	_	_
+20	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	21	nmod:poss	_	_
+21	kingdom	kingdom	NOUN	NN	Number=Sing	19	obj	_	_
+22	,	,	PUNCT	,	_	26	punct	_	_
+23	that	that	SCONJ	IN	_	26	mark	_	_
+24	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	26	nsubj	_	_
+25	may	may	AUX	MD	VerbForm=Fin	26	aux	_	_
+26	receive	receive	VERB	VB	VerbForm=Inf	19	advcl	_	_
+27	this	this	DET	DT	_	29	det	_	_
+28	great	great	ADJ	JJ	_	29	amod	_	_
+29	joy	joy	NOUN	NN	Number=Sing	26	obj	_	_
+30	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = But Aaron said unto him:
+# sent_id = 893
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	Aaron	Aaron	PROPN	NNP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	3	obl	_	_
+6	:	:	PUNCT	:	_	3	punct	_	_
+
+# text = If thou desirest this thing, if thou wilt bow down before God, yea, if thou wilt repent of all thy sins, and will bow down before God, and call on his name in faith, believing that ye shall receive, then shalt thou receive the hope which thou desirest.
+# sent_id = 894
+# llm_note = three stacked conditional "if" clauses; "yea" discourse; apodosis "then shalt thou receive" (inverted); "believing that ye shall receive" participial; "which thou desirest" rel-cl
+1	If	if	SCONJ	IN	_	3	mark	_	_
+2	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	3	nsubj	_	_
+3	desirest	desire	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	50	advcl	_	_
+4	this	this	DET	DT	_	5	det	_	_
+5	thing	thing	NOUN	NN	Number=Sing	3	obj	_	_
+6	,	,	PUNCT	,	_	10	punct	_	_
+7	if	if	SCONJ	IN	_	10	mark	_	_
+8	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	10	nsubj	_	_
+9	wilt	will	AUX	MD	VerbForm=Fin	10	aux	_	_
+10	bow	bow	VERB	VB	VerbForm=Inf	3	conj	_	_
+11	down	down	ADP	RP	_	10	compound:prt	_	_
+12	before	before	ADP	IN	_	13	case	_	_
+13	God	God	PROPN	NNP	_	10	obl	_	_
+14	,	,	PUNCT	,	_	20	punct	_	_
+15	yea	yea	INTJ	UH	_	20	discourse	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	if	if	SCONJ	IN	_	20	mark	_	_
+18	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	20	nsubj	_	_
+19	wilt	will	AUX	MD	VerbForm=Fin	20	aux	_	_
+20	repent	repent	VERB	VB	VerbForm=Inf	3	conj	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	all	all	DET	PDT	_	24	det:predet	_	_
+23	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	24	nmod:poss	_	_
+24	sins	sin	NOUN	NNS	Number=Plur	20	obl	_	_
+25	,	,	PUNCT	,	_	28	punct	_	_
+26	and	and	CCONJ	CC	_	28	cc	_	_
+27	will	will	AUX	MD	VerbForm=Fin	28	aux	_	_
+28	bow	bow	VERB	VB	VerbForm=Inf	20	conj	_	_
+29	down	down	ADP	RP	_	28	compound:prt	_	_
+30	before	before	ADP	IN	_	31	case	_	_
+31	God	God	PROPN	NNP	_	28	obl	_	_
+32	,	,	PUNCT	,	_	34	punct	_	_
+33	and	and	CCONJ	CC	_	34	cc	_	_
+34	call	call	VERB	VB	VerbForm=Inf	20	conj	_	_
+35	on	on	ADP	IN	_	37	case	_	_
+36	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	37	nmod:poss	_	_
+37	name	name	NOUN	NN	Number=Sing	34	obl	_	_
+38	in	in	ADP	IN	_	39	case	_	_
+39	faith	faith	NOUN	NN	Number=Sing	34	obl	_	_
+40	,	,	PUNCT	,	_	41	punct	_	_
+41	believing	believe	VERB	VBG	VerbForm=Part	34	advcl	_	_
+42	that	that	SCONJ	IN	_	45	mark	_	_
+43	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	45	nsubj	_	_
+44	shall	shall	AUX	MD	VerbForm=Fin	45	aux	_	_
+45	receive	receive	VERB	VB	VerbForm=Inf	41	ccomp	_	_
+46	,	,	PUNCT	,	_	50	punct	_	_
+47	then	then	ADV	RB	_	50	advmod	_	_
+48	shalt	shall	AUX	MD	VerbForm=Fin	50	aux	_	_
+49	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	50	nsubj	_	_
+50	receive	receive	VERB	VB	VerbForm=Inf	0	root	_	_
+51	the	the	DET	DT	_	52	det	_	_
+52	hope	hope	NOUN	NN	Number=Sing	50	obj	_	_
+53	which	which	PRON	WDT	_	55	obj	_	_
+54	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	55	nsubj	_	_
+55	desirest	desire	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	52	acl:relcl	_	_
+56	.	.	PUNCT	.	_	50	punct	_	_
+
+# text = And it came to pass that when Aaron had said these words, the king did bow down before the Lord, upon his knees; yea, even he did prostrate himself upon the earth, and cried mightily, saying: O God, Aaron hath told me that there is a God; and if there is a God, and if thou art God, wilt thou make thyself known unto me, and I will give away all my sins to know thee, and that I may be raised from the dead, and be saved at the last day.
+# sent_id = 895
+# llm_note = AICTP; "when Aaron had said" temporal; "the king did bow down" matrix; "yea, even he" — emphatic coord; "saying: O God..." — speech; multiple coord clauses in the prayer; "wilt thou make" inverted; "art" = 2sg archaic be
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	when	when	SCONJ	WRB	_	10	mark	_	_
+8	Aaron	Aaron	PROPN	NNP	_	10	nsubj	_	_
+9	had	have	AUX	VBD	_	10	aux	_	_
+10	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	17	advcl	_	_
+11	these	this	DET	DT	Number=Plur	12	det	_	_
+12	words	word	NOUN	NNS	Number=Plur	10	obj	_	_
+13	,	,	PUNCT	,	_	17	punct	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	king	king	NOUN	NN	Number=Sing	17	nsubj	_	_
+16	did	do	AUX	VBD	VerbForm=Fin	17	aux	_	_
+17	bow	bow	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+18	down	down	ADP	RP	_	17	compound:prt	_	_
+19	before	before	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	Lord	Lord	PROPN	NNP	_	17	obl	_	_
+22	,	,	PUNCT	,	_	25	punct	_	_
+23	upon	upon	ADP	IN	_	25	case	_	_
+24	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	25	nmod:poss	_	_
+25	knees	knee	NOUN	NNS	Number=Plur	17	obl	_	_
+26	;	;	PUNCT	.	_	32	punct	_	_
+27	yea	yea	INTJ	UH	_	32	discourse	_	_
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	even	even	ADV	RB	_	30	advmod	_	_
+30	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	32	nsubj	_	_
+31	did	do	AUX	VBD	VerbForm=Fin	32	aux	_	_
+32	prostrate	prostrate	VERB	VB	VerbForm=Inf	17	conj	_	_
+33	himself	himself	PRON	PRP	Case=Acc|Number=Sing|Person=3	32	obj	_	_
+34	upon	upon	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	earth	earth	NOUN	NN	Number=Sing	32	obl	_	_
+37	,	,	PUNCT	,	_	39	punct	_	_
+38	and	and	CCONJ	CC	_	39	cc	_	_
+39	cried	cry	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	conj	_	_
+40	mightily	mightily	ADV	RB	_	39	advmod	_	_
+41	,	,	PUNCT	,	_	42	punct	_	_
+42	saying	say	VERB	VBG	VerbForm=Part	39	advcl	_	_
+43	:	:	PUNCT	:	_	42	punct	_	_
+44	O	O	INTJ	UH	_	45	discourse	_	_
+45	God	God	PROPN	NNP	_	49	vocative	_	_
+46	,	,	PUNCT	,	_	45	punct	_	_
+47	Aaron	Aaron	PROPN	NNP	_	49	nsubj	_	_
+48	hath	have	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	49	aux	_	_
+49	told	tell	VERB	VBN	VerbForm=Part	42	ccomp	_	_
+50	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	49	iobj	_	_
+51	that	that	SCONJ	IN	_	54	mark	_	_
+52	there	there	PRON	EX	_	54	expl	_	_
+53	is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	54	cop	_	_
+54	a	a	DET	DT	_	49	ccomp	_	_
+55	God	God	PROPN	NNP	_	54	nsubj	_	_
+56	;	;	PUNCT	.	_	72	punct	_	_
+57	and	and	CCONJ	CC	_	72	cc	_	_
+58	if	if	SCONJ	IN	_	62	mark	_	_
+59	there	there	PRON	EX	_	62	expl	_	_
+60	is	be	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	61	cop	_	_
+61	a	a	DET	DT	_	62	nsubj	_	_
+62	God	God	PROPN	NNP	_	72	advcl	_	_
+63	,	,	PUNCT	,	_	68	punct	_	_
+64	and	and	CCONJ	CC	_	68	cc	_	_
+65	if	if	SCONJ	IN	_	68	mark	_	_
+66	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	68	nsubj	_	_
+67	art	be	VERB	VBP	Mood=Ind|Number=Sing|Person=2|Tense=Pres	68	cop	_	_
+68	God	God	PROPN	NNP	_	62	conj	_	_
+69	,	,	PUNCT	,	_	72	punct	_	_
+70	wilt	will	AUX	MD	VerbForm=Fin	72	aux	_	_
+71	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	72	nsubj	_	_
+72	make	make	VERB	VB	VerbForm=Inf	49	conj	_	_
+73	thyself	thyself	PRON	PRP	Case=Acc|Number=Sing|Person=2	72	obj	_	_
+74	known	know	VERB	VBN	VerbForm=Part	72	xcomp	_	_
+75	unto	unto	ADP	IN	_	76	case	_	_
+76	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	74	obl	_	_
+77	,	,	PUNCT	,	_	81	punct	_	_
+78	and	and	CCONJ	CC	_	81	cc	_	_
+79	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	81	nsubj	_	_
+80	will	will	AUX	MD	VerbForm=Fin	81	aux	_	_
+81	give	give	VERB	VB	VerbForm=Inf	72	conj	_	_
+82	away	away	ADP	RP	_	81	compound:prt	_	_
+83	all	all	DET	PDT	_	85	det:predet	_	_
+84	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	85	nmod:poss	_	_
+85	sins	sin	NOUN	NNS	Number=Plur	81	obj	_	_
+86	to	to	PART	TO	_	87	mark	_	_
+87	know	know	VERB	VB	VerbForm=Inf	81	advcl	_	_
+88	thee	thee	PRON	PRP	Case=Acc|Number=Sing|Person=2	87	obj	_	_
+89	,	,	PUNCT	,	_	95	punct	_	_
+90	and	and	CCONJ	CC	_	95	cc	_	_
+91	that	that	SCONJ	IN	_	95	mark	_	_
+92	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	95	nsubj:pass	_	_
+93	may	may	AUX	MD	VerbForm=Fin	95	aux	_	_
+94	be	be	AUX	VB	VerbForm=Inf	95	aux:pass	_	_
+95	raised	raise	VERB	VBN	VerbForm=Part	81	conj	_	_
+96	from	from	ADP	IN	_	98	case	_	_
+97	the	the	DET	DT	_	98	det	_	_
+98	dead	dead	NOUN	NN	Number=Sing	95	obl	_	_
+99	,	,	PUNCT	,	_	102	punct	_	_
+100	and	and	CCONJ	CC	_	102	cc	_	_
+101	be	be	AUX	VB	VerbForm=Inf	102	aux:pass	_	_
+102	saved	save	VERB	VBN	VerbForm=Part	95	conj	_	_
+103	at	at	ADP	IN	_	106	case	_	_
+104	the	the	DET	DT	_	106	det	_	_
+105	last	last	ADJ	JJ	_	106	amod	_	_
+106	day	day	NOUN	NN	Number=Sing	102	obl	_	_
+107	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now when the king had said these words, he was struck as if he were dead.
+# sent_id = 896
+# llm_note = "when the king had said" temporal; "he was struck" passive matrix; "as if he were dead" comparative/manner advcl
+1	And	and	CCONJ	CC	_	13	cc	_	_
+2	now	now	ADV	RB	_	13	advmod	_	_
+3	when	when	SCONJ	WRB	_	7	mark	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	king	king	NOUN	NN	Number=Sing	7	nsubj	_	_
+6	had	have	AUX	VBD	_	7	aux	_	_
+7	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	advcl	_	_
+8	these	this	DET	DT	Number=Plur	9	det	_	_
+9	words	word	NOUN	NNS	Number=Plur	7	obj	_	_
+10	,	,	PUNCT	,	_	13	punct	_	_
+11	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	13	nsubj:pass	_	_
+12	was	be	AUX	VBD	_	13	aux:pass	_	_
+13	struck	strike	VERB	VBN	VerbForm=Part	0	root	_	_
+14	as	as	SCONJ	IN	_	18	mark	_	_
+15	if	if	SCONJ	IN	_	14	fixed	_	_
+16	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	18	nsubj	_	_
+17	were	be	AUX	VBD	Mood=Sub|Tense=Past|VerbForm=Fin	18	cop	_	_
+18	dead	dead	ADJ	JJ	_	13	advcl	_	_
+19	.	.	PUNCT	.	_	13	punct	_	_
+
+# text = And it came to pass that his servants ran and told the queen all that had happened unto the king.
+# sent_id = 897
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	8	nmod:poss	_	_
+8	servants	servant	NOUN	NNS	Number=Plur	9	nsubj	_	_
+9	ran	run	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	told	tell	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	conj	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	queen	queen	NOUN	NN	Number=Sing	11	iobj	_	_
+14	all	all	PRON	NN	_	11	obj	_	_
+15	that	that	PRON	WDT	_	17	nsubj	_	_
+16	had	have	AUX	VBD	_	17	aux	_	_
+17	happened	happen	VERB	VBN	VerbForm=Part	14	acl:relcl	_	_
+18	unto	unto	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	king	king	NOUN	NN	Number=Sing	17	obl	_	_
+21	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And she came in unto the king; and when she saw him lay as if he were dead, and also Aaron and his brethren standing as though they had been the cause of his fall, she was angry with them, and commanded that her servants, or the servants of the king, should take them and slay them.
+# sent_id = 898
+# llm_note = "she came in" matrix; "when she saw him lay as if he were dead" temporal advcl; "also Aaron and his brethren standing" absolute participial (obj + part); "as though they had been the cause" comparative advcl; "commanded that...should take them and slay them" ccomp; "or the servants of the king" appos
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	she	she	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	in	in	ADP	RP	_	3	compound:prt	_	_
+5	unto	unto	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	king	king	NOUN	NN	Number=Sing	3	obl	_	_
+8	;	;	PUNCT	.	_	46	punct	_	_
+9	and	and	CCONJ	CC	_	46	cc	_	_
+10	when	when	SCONJ	WRB	_	12	mark	_	_
+11	she	she	PRON	PRP	Case=Nom|Number=Sing|Person=3	12	nsubj	_	_
+12	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	46	advcl	_	_
+13	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	14	nsubj	_	_
+14	lay	lie	VERB	VB	VerbForm=Inf	12	ccomp	_	_
+15	as	as	SCONJ	IN	_	19	mark	_	_
+16	if	if	SCONJ	IN	_	15	fixed	_	_
+17	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	19	nsubj	_	_
+18	were	be	AUX	VBD	Mood=Sub|Tense=Past|VerbForm=Fin	19	cop	_	_
+19	dead	dead	ADJ	JJ	_	14	advcl	_	_
+20	,	,	PUNCT	,	_	27	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	also	also	ADV	RB	_	23	advmod	_	_
+23	Aaron	Aaron	PROPN	NNP	_	14	conj	_	_
+24	and	and	CCONJ	CC	_	26	cc	_	_
+25	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	26	nmod:poss	_	_
+26	brethren	brethren	NOUN	NNS	Number=Plur	23	conj	_	_
+27	standing	stand	VERB	VBG	VerbForm=Part	23	advcl	_	_
+28	as	as	SCONJ	IN	_	32	mark	_	_
+29	though	though	SCONJ	IN	_	28	fixed	_	_
+30	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	32	nsubj	_	_
+31	had	have	AUX	VBD	_	32	aux	_	_
+32	been	be	VERB	VBN	VerbForm=Part	27	advcl	_	_
+33	the	the	DET	DT	_	34	det	_	_
+34	cause	cause	NOUN	NN	Number=Sing	32	xcomp	_	_
+35	of	of	ADP	IN	_	37	case	_	_
+36	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	37	nmod:poss	_	_
+37	fall	fall	NOUN	NN	Number=Sing	34	nmod	_	_
+38	,	,	PUNCT	,	_	46	punct	_	_
+39	she	she	PRON	PRP	Case=Nom|Number=Sing|Person=3	41	nsubj	_	_
+40	was	be	AUX	VBD	_	41	cop	_	_
+41	angry	angry	ADJ	JJ	_	46	advcl	_	_
+42	with	with	ADP	IN	_	43	case	_	_
+43	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	41	obl	_	_
+44	,	,	PUNCT	,	_	46	punct	_	_
+45	and	and	CCONJ	CC	_	46	cc	_	_
+46	commanded	command	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	conj	_	_
+47	that	that	SCONJ	IN	_	59	mark	_	_
+48	her	she	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	49	nmod:poss	_	_
+49	servants	servant	NOUN	NNS	Number=Plur	59	nsubj	_	_
+50	,	,	PUNCT	,	_	53	punct	_	_
+51	or	or	CCONJ	CC	_	53	cc	_	_
+52	the	the	DET	DT	_	53	det	_	_
+53	servants	servant	NOUN	NNS	Number=Plur	49	appos	_	_
+54	of	of	ADP	IN	_	56	case	_	_
+55	the	the	DET	DT	_	56	det	_	_
+56	king	king	NOUN	NN	Number=Sing	53	nmod	_	_
+57	,	,	PUNCT	,	_	59	punct	_	_
+58	should	shall	AUX	MD	VerbForm=Fin	59	aux	_	_
+59	take	take	VERB	VB	VerbForm=Inf	46	ccomp	_	_
+60	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	59	obj	_	_
+61	and	and	CCONJ	CC	_	62	cc	_	_
+62	slay	slay	VERB	VB	VerbForm=Inf	59	conj	_	_
+63	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	62	obj	_	_
+64	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now the servants had seen the cause of the king's fall, therefore they durst not lay their hands on Aaron and his brethren; and they pled with the queen saying:
+# sent_id = 899
+# llm_note = MWT "king's" rows 10-11; "durst" = archaic past of "dare" (modal-like VERB); "pled with the queen saying" = gerund complement; "therefore" ADV
+1	Now	now	ADV	RB	_	5	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	servants	servant	NOUN	NNS	Number=Plur	5	nsubj	_	_
+4	had	have	AUX	VBD	_	5	aux	_	_
+5	seen	see	VERB	VBN	VerbForm=Part	0	root	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	cause	cause	NOUN	NN	Number=Sing	5	obj	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10-11	king's	_	_	_	_	_	_	_	_
+10	king	king	NOUN	NN	Number=Sing	12	nmod:poss	_	_
+11	's	's	PART	POS	_	10	case	_	_
+12	fall	fall	NOUN	NN	Number=Sing	7	nmod	_	_
+13	,	,	PUNCT	,	_	18	punct	_	_
+14	therefore	therefore	ADV	RB	_	18	advmod	_	_
+15	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	18	nsubj	_	_
+16	durst	dare	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	18	aux	_	_
+17	not	not	PART	RB	_	18	advmod	_	_
+18	lay	lay	VERB	VB	VerbForm=Inf	5	conj	_	_
+19	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	20	nmod:poss	_	_
+20	hands	hand	NOUN	NNS	Number=Plur	18	obj	_	_
+21	on	on	ADP	IN	_	22	case	_	_
+22	Aaron	Aaron	PROPN	NNP	_	18	obl	_	_
+23	and	and	CCONJ	CC	_	25	cc	_	_
+24	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	25	nmod:poss	_	_
+25	brethren	brethren	NOUN	NNS	Number=Plur	22	conj	_	_
+26	;	;	PUNCT	.	_	29	punct	_	_
+27	and	and	CCONJ	CC	_	29	cc	_	_
+28	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	29	nsubj	_	_
+29	pled	plead	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	conj	_	_
+30	with	with	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	queen	queen	NOUN	NN	Number=Sing	29	obl	_	_
+33	saying	say	VERB	VBG	VerbForm=Part	29	advcl	_	_
+34	:	:	PUNCT	:	_	29	punct	_	_
+

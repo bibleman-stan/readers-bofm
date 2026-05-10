@@ -1,0 +1,442 @@
+# text = And he said unto the servant:
+# sent_id = 135
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	unto	unto	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	servant	servant	NOUN	NN	Number=Sing	3	obl	_	_
+7	:	:	PUNCT	:	_	3	punct	_	_
+
+# text = Take of the fruit thereof, and lay it up against the season, that I may preserve it unto mine own self; for behold, said he, this long time have I nourished it, and it hath brought forth much fruit.
+# sent_id = 136
+1	Take	take	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	of	of	ADP	IN	_	4	case	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	fruit	fruit	NOUN	NN	Number=Sing	1	obl	_	_
+5	thereof	thereof	ADV	RB	_	4	advmod	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	lay	lay	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	_
+9	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	8	obj	_	_
+10	up	up	ADP	RP	_	8	compound:prt	_	_
+11	against	against	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	season	season	NOUN	NN	Number=Sing	8	obl	_	_
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	that	that	SCONJ	IN	_	18	mark	_	_
+16	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	18	nsubj	_	_
+17	may	may	AUX	MD	VerbForm=Fin	18	aux	_	_
+18	preserve	preserve	VERB	VB	VerbForm=Inf	8	advcl	_	_
+19	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	18	obj	_	_
+20	unto	unto	ADP	IN	_	23	case	_	_
+21	mine	mine	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	23	nmod:poss	_	_
+22	own	own	ADJ	JJ	Degree=Pos	23	amod	_	_
+23	self	self	NOUN	NN	Number=Sing	18	obl	_	_
+24	;	;	PUNCT	:	_	36	punct	_	_
+25	for	for	SCONJ	IN	_	36	mark	_	_
+26	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	36	discourse	_	_
+27	,	,	PUNCT	,	_	26	punct	_	_
+28	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	36	parataxis	_	_
+29	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	28	nsubj	_	_
+30	,	,	PUNCT	,	_	28	punct	_	_
+31	this	this	DET	DT	Number=Sing|PronType=Dem	33	det	_	_
+32	long	long	ADJ	JJ	Degree=Pos	33	amod	_	_
+33	time	time	NOUN	NN	Number=Sing	36	obl	_	_
+34	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	36	aux	_	_
+35	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	36	nsubj	_	_
+36	nourished	nourish	VERB	VBN	Tense=Past|VerbForm=Part	1	advcl	_	_
+37	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	36	obj	_	_
+38	,	,	PUNCT	,	_	42	punct	_	_
+39	and	and	CCONJ	CC	_	42	cc	_	_
+40	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	42	nsubj	_	_
+41	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	42	aux	_	_
+42	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	36	conj	_	_
+43	forth	forth	ADV	RB	_	42	advmod	_	_
+44	much	much	ADJ	JJ	Degree=Pos	45	amod	_	_
+45	fruit	fruit	NOUN	NN	Number=Sing	42	obj	_	_
+46	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = And it came to pass that the servant said unto his master:
+# sent_id = 137
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	servant	servant	NOUN	NN	Number=Sing	9	nsubj	_	_
+9	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	advcl	_	_
+10	unto	unto	ADP	IN	_	12	case	_	_
+11	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes	12	nmod:poss	_	_
+12	master	master	NOUN	NN	Number=Sing	9	obl	_	_
+13	:	:	PUNCT	:	_	9	punct	_	_
+
+# text = How comest thou hither to plant this tree, or this branch of the tree?
+# sent_id = 138
+# llm_note: "comest" = EME 2sg present VERB (come); "thou" = archaic 2sg subject; "hither" = adverb of place; fronted "How" = manner interrogative advmod
+1	How	how	ADV	WRB	PronType=Int	2	advmod	_	_
+2	comest	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	2	nsubj	_	_
+4	hither	hither	ADV	RB	_	2	advmod	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	plant	plant	VERB	VB	VerbForm=Inf	2	advcl	_	_
+7	this	this	DET	DT	Number=Sing|PronType=Dem	8	det	_	_
+8	tree	tree	NOUN	NN	Number=Sing	6	obj	_	_
+9	,	,	PUNCT	,	_	12	punct	_	_
+10	or	or	CCONJ	CC	_	12	cc	_	_
+11	this	this	DET	DT	Number=Sing|PronType=Dem	12	det	_	_
+12	branch	branch	NOUN	NN	Number=Sing	8	conj	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	tree	tree	NOUN	NN	Number=Sing	12	nmod	_	_
+16	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = For behold, it was the poorest spot in all the land of thy vineyard.
+# sent_id = 139
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	5	nsubj	_	_
+5	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+7	poorest	poor	ADJ	JJS	Degree=Sup	8	amod	_	_
+8	spot	spot	NOUN	NN	Number=Sing	5	nsubj	_	_
+9	in	in	ADP	IN	_	12	case	_	_
+10	all	all	DET	PDT	_	12	det:predet	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	land	land	NOUN	NN	Number=Sing	5	obl	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	thy	thy	PRON	PRP$	Case=Gen|Number=Sing|Person=2|Poss=Yes	15	nmod:poss	_	_
+15	vineyard	vineyard	NOUN	NN	Number=Sing	12	nmod	_	_
+16	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And the Lord of the vineyard said unto him: Counsel me not; I knew that it was a poor spot of ground; wherefore, I said unto thee, I have nourished it this long time, and thou beholdest that it hath brought forth much fruit.
+# sent_id = 140
+# llm_note: "beholdest" = EME 2sg present VERB (behold); "thee" = archaic 2sg accusative; "said unto thee" introduces reported speech
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	Lord	Lord	NOUN	NN	Number=Sing	7	nsubj	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	vineyard	vineyard	NOUN	NN	Number=Sing	3	nmod	_	_
+7	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	obl	_	_
+10	:	:	PUNCT	:	_	7	punct	_	_
+11	Counsel	counsel	VERB	VB	Mood=Imp|VerbForm=Fin	7	ccomp	_	_
+12	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	11	obj	_	_
+13	not	not	PART	RB	Polarity=Neg	11	advmod	_	_
+14	;	;	PUNCT	:	_	16	punct	_	_
+15	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	16	nsubj	_	_
+16	knew	know	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	conj	_	_
+17	that	that	SCONJ	IN	_	20	mark	_	_
+18	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	20	nsubj	_	_
+19	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	cop	_	_
+20	a	a	DET	DT	Definite=Ind|PronType=Art	22	det	_	_
+21	poor	poor	ADJ	JJ	Degree=Pos	22	amod	_	_
+22	spot	spot	NOUN	NN	Number=Sing	16	ccomp	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	ground	ground	NOUN	NN	Number=Sing	22	nmod	_	_
+25	;	;	PUNCT	:	_	29	punct	_	_
+26	wherefore	wherefore	ADV	WRB	_	29	advmod	_	_
+27	,	,	PUNCT	,	_	26	punct	_	_
+28	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	29	nsubj	_	_
+29	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	conj	_	_
+30	unto	unto	ADP	IN	_	31	case	_	_
+31	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	29	obl	_	_
+32	,	,	PUNCT	,	_	35	punct	_	_
+33	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	35	nsubj	_	_
+34	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	35	aux	_	_
+35	nourished	nourish	VERB	VBN	Tense=Past|VerbForm=Part	29	ccomp	_	_
+36	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	35	obj	_	_
+37	this	this	DET	DT	Number=Sing|PronType=Dem	39	det	_	_
+38	long	long	ADJ	JJ	Degree=Pos	39	amod	_	_
+39	time	time	NOUN	NN	Number=Sing	35	obl	_	_
+40	,	,	PUNCT	,	_	43	punct	_	_
+41	and	and	CCONJ	CC	_	43	cc	_	_
+42	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	43	nsubj	_	_
+43	beholdest	behold	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	35	conj	_	_
+44	that	that	SCONJ	IN	_	47	mark	_	_
+45	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	47	nsubj	_	_
+46	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	47	aux	_	_
+47	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	43	ccomp	_	_
+48	forth	forth	ADV	RB	_	47	advmod	_	_
+49	much	much	ADJ	JJ	Degree=Pos	50	amod	_	_
+50	fruit	fruit	NOUN	NN	Number=Sing	47	obj	_	_
+51	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And it came to pass that the Lord of the vineyard said unto his servant:
+# sent_id = 141
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	12	mark	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	Lord	Lord	NOUN	NN	Number=Sing	12	nsubj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	vineyard	vineyard	NOUN	NN	Number=Sing	8	nmod	_	_
+12	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	advcl	_	_
+13	unto	unto	ADP	IN	_	15	case	_	_
+14	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes	15	nmod:poss	_	_
+15	servant	servant	NOUN	NN	Number=Sing	12	obl	_	_
+16	:	:	PUNCT	:	_	12	punct	_	_
+
+# text = Look hither; behold I have planted another branch of the tree also; and thou knowest that this spot of ground was poorer than the first.
+# sent_id = 142
+# llm_note: "knowest" = EME 2sg present VERB; "thou" = archaic 2sg subject
+1	Look	look	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	hither	hither	ADV	RB	_	1	advmod	_	_
+3	;	;	PUNCT	:	_	4	punct	_	_
+4	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+6	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	planted	plant	VERB	VBN	Tense=Past|VerbForm=Part	4	ccomp	_	_
+8	another	another	DET	DT	_	9	det	_	_
+9	branch	branch	NOUN	NN	Number=Sing	7	obj	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	tree	tree	NOUN	NN	Number=Sing	9	nmod	_	_
+13	also	also	ADV	RB	_	7	advmod	_	_
+14	;	;	PUNCT	:	_	17	punct	_	_
+15	and	and	CCONJ	CC	_	17	cc	_	_
+16	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	17	nsubj	_	_
+17	knowest	know	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	_
+18	that	that	SCONJ	IN	_	23	mark	_	_
+19	this	this	DET	DT	Number=Sing|PronType=Dem	21	det	_	_
+20	spot	spot	NOUN	NN	Number=Sing	21	compound	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	ground	ground	NOUN	NN	Number=Sing	23	nsubj	_	_
+23	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	ccomp	_	_
+24	poorer	poor	ADJ	JJR	Degree=Cmp	23	acomp	_	_
+25	than	than	SCONJ	IN	_	27	mark	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	first	first	ADJ	JJ	Degree=Pos	24	advcl	_	_
+28	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = But, behold the tree.
+# sent_id = 143
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	tree	tree	NOUN	NN	Number=Sing	3	obj	_	_
+6	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = I have nourished it this long time, and it hath brought forth much fruit; therefore, gather it, and lay it up against the season, that I may preserve it unto mine own self.
+# sent_id = 144
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+2	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	nourished	nourish	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	3	obj	_	_
+5	this	this	DET	DT	Number=Sing|PronType=Dem	7	det	_	_
+6	long	long	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	time	time	NOUN	NN	Number=Sing	3	obl	_	_
+8	,	,	PUNCT	,	_	12	punct	_	_
+9	and	and	CCONJ	CC	_	12	cc	_	_
+10	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	12	nsubj	_	_
+11	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+12	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	3	conj	_	_
+13	forth	forth	ADV	RB	_	12	advmod	_	_
+14	much	much	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	fruit	fruit	NOUN	NN	Number=Sing	12	obj	_	_
+16	;	;	PUNCT	:	_	19	punct	_	_
+17	therefore	therefore	ADV	RB	_	19	advmod	_	_
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	gather	gather	VERB	VB	Mood=Imp|VerbForm=Fin	3	conj	_	_
+20	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	19	obj	_	_
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	lay	lay	VERB	VB	Mood=Imp|VerbForm=Fin	3	conj	_	_
+24	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	23	obj	_	_
+25	up	up	ADP	RP	_	23	compound:prt	_	_
+26	against	against	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	season	season	NOUN	NN	Number=Sing	23	obl	_	_
+29	,	,	PUNCT	,	_	33	punct	_	_
+30	that	that	SCONJ	IN	_	33	mark	_	_
+31	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	33	nsubj	_	_
+32	may	may	AUX	MD	VerbForm=Fin	33	aux	_	_
+33	preserve	preserve	VERB	VB	VerbForm=Inf	23	advcl	_	_
+34	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	33	obj	_	_
+35	unto	unto	ADP	IN	_	38	case	_	_
+36	mine	mine	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes	38	nmod:poss	_	_
+37	own	own	ADJ	JJ	Degree=Pos	38	amod	_	_
+38	self	self	NOUN	NN	Number=Sing	33	obl	_	_
+39	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that the Lord of the vineyard said again unto his servant:
+# sent_id = 145
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	12	mark	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	Lord	Lord	NOUN	NN	Number=Sing	12	nsubj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	vineyard	vineyard	NOUN	NN	Number=Sing	8	nmod	_	_
+12	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	advcl	_	_
+13	again	again	ADV	RB	_	12	advmod	_	_
+14	unto	unto	ADP	IN	_	16	case	_	_
+15	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes	16	nmod:poss	_	_
+16	servant	servant	NOUN	NN	Number=Sing	12	obl	_	_
+17	:	:	PUNCT	:	_	12	punct	_	_
+
+# text = Look hither, and behold another branch also, which I have planted; behold that I have nourished it also, and it hath brought forth fruit.
+# sent_id = 146
+1	Look	look	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	hither	hither	ADV	RB	_	1	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	_
+6	another	another	DET	DT	_	7	det	_	_
+7	branch	branch	NOUN	NN	Number=Sing	5	obj	_	_
+8	also	also	ADV	RB	_	5	advmod	_	_
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	which	which	PRON	WDT	PronType=Rel	13	obj	_	_
+11	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	13	nsubj	_	_
+12	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	13	aux	_	_
+13	planted	plant	VERB	VBN	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
+14	;	;	PUNCT	:	_	15	punct	_	_
+15	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	_
+16	that	that	SCONJ	IN	_	19	mark	_	_
+17	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	19	nsubj	_	_
+18	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	19	aux	_	_
+19	nourished	nourish	VERB	VBN	Tense=Past|VerbForm=Part	15	ccomp	_	_
+20	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	19	obj	_	_
+21	also	also	ADV	RB	_	19	advmod	_	_
+22	,	,	PUNCT	,	_	26	punct	_	_
+23	and	and	CCONJ	CC	_	26	cc	_	_
+24	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	26	nsubj	_	_
+25	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux	_	_
+26	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	19	conj	_	_
+27	forth	forth	ADV	RB	_	26	advmod	_	_
+28	fruit	fruit	NOUN	NN	Number=Sing	26	obj	_	_
+29	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = And he said unto the servant: Look hither and behold the last.
+# sent_id = 147
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	unto	unto	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	servant	servant	NOUN	NN	Number=Sing	3	obl	_	_
+7	:	:	PUNCT	:	_	3	punct	_	_
+8	Look	look	VERB	VB	Mood=Imp|VerbForm=Fin	3	ccomp	_	_
+9	hither	hither	ADV	RB	_	8	advmod	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	8	conj	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	last	last	ADJ	JJ	Degree=Pos	11	obj	_	_
+14	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, this have I planted in a good spot of ground; and I have nourished it this long time, and only a part of the tree hath brought forth tame fruit, and the other part of the tree hath brought forth wild fruit; behold, I have nourished this tree like unto the others.
+# sent_id = 148
+# llm_note: "this have I planted" = fronted demonstrative object with subject-auxiliary inversion for emphasis
+1	Behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	this	this	PRON	DT	Number=Sing|PronType=Dem	6	obj	_	_
+4	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	6	nsubj	_	_
+6	planted	plant	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	in	in	ADP	IN	_	10	case	_	_
+8	a	a	DET	DT	Definite=Ind|PronType=Art	10	det	_	_
+9	good	good	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	spot	spot	NOUN	NN	Number=Sing	6	obl	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	ground	ground	NOUN	NN	Number=Sing	10	nmod	_	_
+13	;	;	PUNCT	:	_	17	punct	_	_
+14	and	and	CCONJ	CC	_	17	cc	_	_
+15	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	17	nsubj	_	_
+16	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	17	aux	_	_
+17	nourished	nourish	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+18	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3	17	obj	_	_
+19	this	this	DET	DT	Number=Sing|PronType=Dem	21	det	_	_
+20	long	long	ADJ	JJ	Degree=Pos	21	amod	_	_
+21	time	time	NOUN	NN	Number=Sing	17	obl	_	_
+22	,	,	PUNCT	,	_	31	punct	_	_
+23	and	and	CCONJ	CC	_	31	cc	_	_
+24	only	only	ADV	RB	_	26	advmod	_	_
+25	a	a	DET	DT	Definite=Ind|PronType=Art	26	det	_	_
+26	part	part	NOUN	NN	Number=Sing	31	nsubj	_	_
+27	of	of	ADP	IN	_	29	case	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+29	tree	tree	NOUN	NN	Number=Sing	26	nmod	_	_
+30	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	aux	_	_
+31	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+32	forth	forth	ADV	RB	_	31	advmod	_	_
+33	tame	tame	ADJ	JJ	Degree=Pos	34	amod	_	_
+34	fruit	fruit	NOUN	NN	Number=Sing	31	obj	_	_
+35	,	,	PUNCT	,	_	44	punct	_	_
+36	and	and	CCONJ	CC	_	44	cc	_	_
+37	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+38	other	other	ADJ	JJ	Degree=Pos	39	amod	_	_
+39	part	part	NOUN	NN	Number=Sing	44	nsubj	_	_
+40	of	of	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	tree	tree	NOUN	NN	Number=Sing	39	nmod	_	_
+43	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	aux	_	_
+44	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+45	forth	forth	ADV	RB	_	44	advmod	_	_
+46	wild	wild	ADJ	JJ	Degree=Pos	47	amod	_	_
+47	fruit	fruit	NOUN	NN	Number=Sing	44	obj	_	_
+48	;	;	PUNCT	:	_	53	punct	_	_
+49	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	53	discourse	_	_
+50	,	,	PUNCT	,	_	49	punct	_	_
+51	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	53	nsubj	_	_
+52	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	53	aux	_	_
+53	nourished	nourish	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+54	this	this	DET	DT	Number=Sing|PronType=Dem	55	det	_	_
+55	tree	tree	NOUN	NN	Number=Sing	53	obj	_	_
+56	like	like	ADP	IN	_	53	case	_	_
+57	unto	unto	ADP	IN	_	56	fixed	_	_
+58	the	the	DET	DT	Definite=Def|PronType=Art	59	det	_	_
+59	others	other	NOUN	NNS	Number=Plur	53	obl	_	_
+60	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And it came to pass that the Lord of the vineyard said unto the servant: Pluck off the branches that have not brought forth good fruit, and cast them into the fire.
+# sent_id = 149
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	12	mark	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	Lord	Lord	NOUN	NN	Number=Sing	12	nsubj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	vineyard	vineyard	NOUN	NN	Number=Sing	8	nmod	_	_
+12	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	advcl	_	_
+13	unto	unto	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	servant	servant	NOUN	NN	Number=Sing	12	obl	_	_
+16	:	:	PUNCT	:	_	12	punct	_	_
+17	Pluck	pluck	VERB	VB	Mood=Imp|VerbForm=Fin	12	ccomp	_	_
+18	off	off	ADP	RP	_	17	compound:prt	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	branches	branch	NOUN	NNS	Number=Plur	17	obj	_	_
+21	that	that	PRON	WDT	PronType=Rel	24	nsubj	_	_
+22	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	24	aux	_	_
+23	not	not	PART	RB	Polarity=Neg	24	advmod	_	_
+24	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	20	acl:relcl	_	_
+25	forth	forth	ADV	RB	_	24	advmod	_	_
+26	good	good	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	fruit	fruit	NOUN	NN	Number=Sing	24	obj	_	_
+28	,	,	PUNCT	,	_	30	punct	_	_
+29	and	and	CCONJ	CC	_	30	cc	_	_
+30	cast	cast	VERB	VB	Mood=Imp|VerbForm=Fin	17	conj	_	_
+31	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	30	obj	_	_
+32	into	into	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	fire	fire	NOUN	NN	Number=Sing	30	obl	_	_
+35	.	.	PUNCT	.	_	3	punct	_	_
+

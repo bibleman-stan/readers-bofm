@@ -1,0 +1,987 @@
+# text = Therefore, being grieved for the hardness of their hearts and the blindness of their minds-- went forth among them in that same year, and began to testify, boldly, repentance and remission of sins through faith on the Lord Jesus Christ.
+# sent_id = 200
+# llm_note = Fragment sentence (continuation from sent_id 199); subject omitted. "being grieved" = advcl (absolute participial). "went forth" = root+prt. "began to testify" = aspectual. -- = punct(dash) attached to minds.
+1	Therefore	therefore	ADV	RB	_	18	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	being	be	AUX	VBG	Tense=Pres|VerbForm=Part	4	aux	_	_
+4	grieved	grieve	VERB	VBN	Tense=Past|VerbForm=Part	18	advcl	_	_
+5	for	for	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	hardness	hardness	NOUN	NN	Number=Sing	4	obl	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	_
+10	hearts	heart	NOUN	NNS	Number=Plur	7	nmod	_	_
+11	and	and	CCONJ	CC	_	13	cc	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	blindness	blindness	NOUN	NN	Number=Sing	7	conj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+16	minds	mind	NOUN	NNS	Number=Plur	13	nmod	_	_
+17	--	--	PUNCT	:	_	16	punct	_	_
+18	went	go	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+19	forth	forth	ADV	RB	_	18	advmod	_	_
+20	among	among	ADP	IN	_	21	case	_	_
+21	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	18	obl	_	_
+22	in	in	ADP	IN	_	25	case	_	_
+23	that	that	DET	DT	Number=Sing|PronType=Dem	25	det	_	_
+24	same	same	ADJ	JJ	_	25	amod	_	_
+25	year	year	NOUN	NN	Number=Sing	18	obl	_	_
+26	,	,	PUNCT	,	_	28	punct	_	_
+27	and	and	CCONJ	CC	_	28	cc	_	_
+28	began	begin	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	18	conj	_	_
+29	to	to	PART	TO	_	30	mark	_	_
+30	testify	testify	VERB	VB	VerbForm=Inf	28	xcomp	_	_
+31	,	,	PUNCT	,	_	32	punct	_	_
+32	boldly	boldly	ADV	RB	_	30	advmod	_	_
+33	,	,	PUNCT	,	_	32	punct	_	_
+34	repentance	repentance	NOUN	NN	Number=Sing	30	obj	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	remission	remission	NOUN	NN	Number=Sing	34	conj	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	sins	sin	NOUN	NNS	Number=Plur	36	nmod	_	_
+39	through	through	ADP	IN	_	40	case	_	_
+40	faith	faith	NOUN	NN	Number=Sing	30	obl	_	_
+41	on	on	ADP	IN	_	43	case	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	43	det	_	_
+43	Lord	Lord	PROPN	NNP	Number=Sing	40	nmod	_	_
+44	Jesus	Jesus	PROPN	NNP	Number=Sing	43	flat	_	_
+45	Christ	Christ	PROPN	NNP	Number=Sing	43	flat	_	_
+46	.	.	PUNCT	.	_	18	punct	_	_
+
+# text = And he did minister many things unto them; and all of them cannot be written, and a part of them would not suffice, therefore they are not written in this book.
+# sent_id = 201
+# llm_note = "did minister" = emphatic AUX+VERB. MWT 14-15 "cannot" = "can"+"not". "cannot be written" = passive. "a part...would not suffice" = modal. "therefore" = connective ADV.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	minister	minister	VERB	VB	VerbForm=Inf	0	root	_	_
+5	many	many	ADJ	JJ	_	6	amod	_	_
+6	things	thing	NOUN	NNS	Number=Plur	4	obj	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	4	obl	_	_
+9	;	;	PUNCT	:	_	17	punct	_	_
+10	and	and	CCONJ	CC	_	17	cc	_	_
+11	all	all	PRON	NN	_	17	nsubj	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	11	nmod	_	_
+14-15	cannot	_	_	_	_	_	_	_	_
+14	can	can	AUX	MD	VerbForm=Fin	17	aux	_	_
+15	not	not	PART	RB	Polarity=Neg	17	advmod	_	_
+16	be	be	AUX	VB	VerbForm=Inf	17	aux:pass	_	_
+17	written	write	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	conj	_	_
+18	,	,	PUNCT	,	_	26	punct	_	_
+19	and	and	CCONJ	CC	_	26	cc	_	_
+20	a	a	DET	DT	Definite=Ind|PronType=Art	21	det	_	_
+21	part	part	NOUN	NN	Number=Sing	26	nsubj	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	21	nmod	_	_
+24	would	would	AUX	MD	VerbForm=Fin	26	aux	_	_
+25	not	not	PART	RB	Polarity=Neg	26	advmod	_	_
+26	suffice	suffice	VERB	VB	VerbForm=Inf	4	conj	_	_
+27	,	,	PUNCT	,	_	32	punct	_	_
+28	therefore	therefore	ADV	RB	_	32	advmod	_	_
+29	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	32	nsubj	_	_
+30	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	aux:pass	_	_
+31	not	not	PART	RB	Polarity=Neg	32	advmod	_	_
+32	written	write	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	conj	_	_
+33	in	in	ADP	IN	_	35	case	_	_
+34	this	this	DET	DT	Number=Sing|PronType=Dem	35	det	_	_
+35	book	book	NOUN	NN	Number=Sing	32	obl	_	_
+36	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And Nephi did minister with power and with great authority.
+# sent_id = 202
+# llm_note = "did minister" = emphatic AUX+VERB. Two PP adjuncts coordinated.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	Nephi	Nephi	PROPN	NNP	Number=Sing	4	nsubj	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	minister	minister	VERB	VB	VerbForm=Inf	0	root	_	_
+5	with	with	ADP	IN	_	6	case	_	_
+6	power	power	NOUN	NN	Number=Sing	4	obl	_	_
+7	and	and	CCONJ	CC	_	10	cc	_	_
+8	with	with	ADP	IN	_	10	case	_	_
+9	great	great	ADJ	JJ	_	10	amod	_	_
+10	authority	authority	NOUN	NN	Number=Sing	6	conj	_	_
+11	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that they were angry with him, even because he had greater power than they, for it were not possible that they could disbelieve his words, for so great was his faith on the Lord Jesus Christ that angels did minister unto him daily.
+# sent_id = 203
+# llm_note = AICTP frame: it=expl→came, came=root, to/pass=xcomp chain, that=mark. "even because" = emphatic advcl. "it were not possible that" = extraposed subject: it=expl, were=root of embedded clause, possible=xcomp, that-clause=csubj. Final "so great was his faith...that" = inverted result: great=xcomp, was=root(embedded), faith=nsubj, that=mark for result advcl.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
+8	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	cop	_	_
+9	angry	angry	ADJ	JJ	_	5	ccomp	_	_
+10	with	with	ADP	IN	_	11	case	_	_
+11	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	obl	_	_
+12	,	,	PUNCT	,	_	9	punct	_	_
+13	even	even	ADV	RB	_	14	advmod	_	_
+14	because	because	SCONJ	IN	_	9	advcl	_	_
+15	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+16	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	advcl	_	_
+17	greater	great	ADJ	JJR	Degree=Cmp	18	amod	_	_
+18	power	power	NOUN	NN	Number=Sing	16	obj	_	_
+19	than	than	SCONJ	IN	_	20	mark	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	16	advcl	_	_
+21	,	,	PUNCT	,	_	26	punct	_	_
+22	for	for	SCONJ	IN	_	26	mark	_	_
+23	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	26	expl	_	_
+24	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	26	cop	_	_
+25	not	not	PART	RB	Polarity=Neg	26	advmod	_	_
+26	possible	possible	ADJ	JJ	_	9	advcl	_	_
+27	that	that	SCONJ	IN	_	30	mark	_	_
+28	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	30	nsubj	_	_
+29	could	could	AUX	MD	VerbForm=Fin	30	aux	_	_
+30	disbelieve	disbelieve	VERB	VB	VerbForm=Inf	26	csubj	_	_
+31	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	32	nmod:poss	_	_
+32	words	word	NOUN	NNS	Number=Plur	30	obj	_	_
+33	,	,	PUNCT	,	_	37	punct	_	_
+34	for	for	SCONJ	IN	_	37	mark	_	_
+35	so	so	ADV	RB	_	36	advmod	_	_
+36	great	great	ADJ	JJ	_	37	xcomp	_	_
+37	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	advcl	_	_
+38	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	39	nmod:poss	_	_
+39	faith	faith	NOUN	NN	Number=Sing	37	nsubj	_	_
+40	on	on	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	Lord	Lord	PROPN	NNP	Number=Sing	39	nmod	_	_
+43	Jesus	Jesus	PROPN	NNP	Number=Sing	42	flat	_	_
+44	Christ	Christ	PROPN	NNP	Number=Sing	42	flat	_	_
+45	that	that	SCONJ	IN	_	48	mark	_	_
+46	angels	angel	NOUN	NNS	Number=Plur	48	nsubj	_	_
+47	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	48	aux	_	_
+48	minister	minister	VERB	VB	VerbForm=Inf	37	advcl	_	_
+49	unto	unto	ADP	IN	_	50	case	_	_
+50	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	48	obl	_	_
+51	daily	daily	ADV	RB	_	48	advmod	_	_
+52	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And in the name of Jesus did he cast out devils and unclean spirits; and even his brother did he raise from the dead, after he had been stoned and suffered death by the people.
+# sent_id = 204
+# llm_note = Two inverted constructions: "in the name of Jesus did he cast" (PP fronted) and "even his brother did he raise" (obj fronted). In each, "did" is emphatic AUX and the fronted element is the topic/dislocated obj. "after he had been stoned and suffered death" = temporal advcl.
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	in	in	ADP	IN	_	4	case	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	name	name	NOUN	NN	Number=Sing	9	obl	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	Jesus	Jesus	PROPN	NNP	Number=Sing	4	nmod	_	_
+7	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	aux	_	_
+8	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	cast	cast	VERB	VB	VerbForm=Inf	0	root	_	_
+10	out	out	ADP	RP	_	9	compound:prt	_	_
+11	devils	devil	NOUN	NNS	Number=Plur	9	obj	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	unclean	unclean	ADJ	JJ	_	14	amod	_	_
+14	spirits	spirit	NOUN	NNS	Number=Plur	11	conj	_	_
+15	;	;	PUNCT	:	_	22	punct	_	_
+16	and	and	CCONJ	CC	_	22	cc	_	_
+17	even	even	ADV	RB	_	19	advmod	_	_
+18	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+19	brother	brother	NOUN	NN	Number=Sing	22	dislocated	_	_
+20	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	aux	_	_
+21	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+22	raise	raise	VERB	VB	VerbForm=Inf	9	conj	_	_
+23	from	from	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	dead	dead	NOUN	NN	Number=Sing	22	obl	_	_
+26	,	,	PUNCT	,	_	31	punct	_	_
+27	after	after	SCONJ	IN	_	31	mark	_	_
+28	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	nsubj	_	_
+29	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	31	aux	_	_
+30	been	be	AUX	VBN	Tense=Past|VerbForm=Part	31	aux:pass	_	_
+31	stoned	stone	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	22	advcl	_	_
+32	and	and	CCONJ	CC	_	33	cc	_	_
+33	suffered	suffer	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	31	conj	_	_
+34	death	death	NOUN	NN	Number=Sing	33	obj	_	_
+35	by	by	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+37	people	people	NOUN	NNS	Number=Plur	33	obl:agent	_	_
+38	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And the people saw it, and did witness of it, and were angry with him because of his power; and he did also do many more miracles, in the sight of the people, in the name of Jesus.
+# sent_id = 205
+# llm_note = Three conjoined VPs on "the people" subject: "saw", "did witness", "were angry". Second clause with new subject "he": "did also do". "did witness of it" = emphatic AUX. "did...do" = emphatic AUX for "do" as main verb.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	people	people	NOUN	NNS	Number=Plur	4	nsubj	_	_
+4	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+6	,	,	PUNCT	,	_	9	punct	_	_
+7	and	and	CCONJ	CC	_	9	cc	_	_
+8	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	aux	_	_
+9	witness	witness	VERB	VB	VerbForm=Inf	4	conj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	9	obl	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	cop	_	_
+15	angry	angry	ADJ	JJ	_	4	conj	_	_
+16	with	with	ADP	IN	_	17	case	_	_
+17	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	obl	_	_
+18	because	because	ADP	IN	_	20	case	_	_
+19	of	of	ADP	IN	_	18	fixed	_	_
+20	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	obl	_	_
+21	power	power	NOUN	NN	Number=Sing	20	nmod:poss	_	_
+22	;	;	PUNCT	:	_	27	punct	_	_
+23	and	and	CCONJ	CC	_	27	cc	_	_
+24	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
+25	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	aux	_	_
+26	also	also	ADV	RB	_	27	advmod	_	_
+27	do	do	VERB	VB	VerbForm=Inf	4	conj	_	_
+28	many	many	ADJ	JJ	_	30	amod	_	_
+29	more	more	ADJ	JJR	Degree=Cmp	30	amod	_	_
+30	miracles	miracle	NOUN	NNS	Number=Plur	27	obj	_	_
+31	,	,	PUNCT	,	_	27	punct	_	_
+32	in	in	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	sight	sight	NOUN	NN	Number=Sing	27	obl	_	_
+35	of	of	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+37	people	people	NOUN	NNS	Number=Plur	34	nmod	_	_
+38	,	,	PUNCT	,	_	27	punct	_	_
+39	in	in	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	Definite=Def|PronType=Art	41	det	_	_
+41	name	name	NOUN	NN	Number=Sing	27	obl	_	_
+42	of	of	ADP	IN	_	43	case	_	_
+43	Jesus	Jesus	PROPN	NNP	Number=Sing	41	nmod	_	_
+44	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that the thirty and first year did pass away, and there were but few who were converted unto the Lord; but as many as were converted did truly signify unto the people that they had been visited by the power and Spirit of God, which was in Jesus Christ, in whom they believed.
+# sent_id = 206
+# llm_note = AICTP frame. "thirty and first year did pass away" = "did" emphatic AUX+main verb "pass". "there were but few" = existential: there=expl, were=root, few=nsubj. "as many as were converted" = free relative clause as nsubj of "signify". "did truly signify" = emphatic AUX. "which was in Jesus Christ" = relcl. "in whom they believed" = relcl with pied-piped preposition.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	13	mark	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+8	thirty	thirty	NUM	CD	NumType=Card	11	nummod	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	first	first	ADJ	JJ	_	8	conj	_	_
+11	year	year	NOUN	NN	Number=Sing	13	nsubj	_	_
+12	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	aux	_	_
+13	pass	pass	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+14	away	away	ADV	RB	_	13	advmod	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	and	and	CCONJ	CC	_	18	cc	_	_
+17	there	there	PRON	EX	_	18	expl	_	_
+18	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	conj	_	_
+19	but	but	ADV	RB	_	20	advmod	_	_
+20	few	few	ADJ	JJ	_	18	nsubj	_	_
+21	who	who	PRON	WP	PronType=Rel	23	nsubjpass	_	_
+22	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	aux:pass	_	_
+23	converted	convert	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	20	relcl	_	_
+24	unto	unto	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	Lord	Lord	PROPN	NNP	Number=Sing	23	obl	_	_
+27	;	;	PUNCT	:	_	36	punct	_	_
+28	but	but	CCONJ	CC	_	36	cc	_	_
+29	as	as	ADV	RB	_	30	advmod	_	_
+30	many	many	ADJ	JJ	_	36	nsubj	_	_
+31	as	as	SCONJ	IN	_	33	mark	_	_
+32	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	33	aux:pass	_	_
+33	converted	convert	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	30	relcl	_	_
+34	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	36	aux	_	_
+35	truly	truly	ADV	RB	_	36	advmod	_	_
+36	signify	signify	VERB	VB	VerbForm=Inf	13	conj	_	_
+37	unto	unto	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+39	people	people	NOUN	NNS	Number=Plur	36	obl	_	_
+40	that	that	SCONJ	IN	_	44	mark	_	_
+41	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	44	nsubjpass	_	_
+42	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	44	aux	_	_
+43	been	be	AUX	VBN	Tense=Past|VerbForm=Part	44	aux:pass	_	_
+44	visited	visit	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	36	ccomp	_	_
+45	by	by	ADP	IN	_	47	case	_	_
+46	the	the	DET	DT	Definite=Def|PronType=Art	47	det	_	_
+47	power	power	NOUN	NN	Number=Sing	44	obl:agent	_	_
+48	and	and	CCONJ	CC	_	49	cc	_	_
+49	Spirit	Spirit	PROPN	NNP	Number=Sing	47	conj	_	_
+50	of	of	ADP	IN	_	51	case	_	_
+51	God	God	PROPN	NNP	Number=Sing	49	nmod	_	_
+52	,	,	PUNCT	,	_	54	punct	_	_
+53	which	which	PRON	WDT	PronType=Rel	54	nsubj	_	_
+54	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	47	relcl	_	_
+55	in	in	ADP	IN	_	57	case	_	_
+56	Jesus	Jesus	PROPN	NNP	Number=Sing	57	compound	_	_
+57	Christ	Christ	PROPN	NNP	Number=Sing	54	obl	_	_
+58	,	,	PUNCT	,	_	62	punct	_	_
+59	in	in	ADP	IN	_	60	case	_	_
+60	whom	who	PRON	WP	Case=Acc|PronType=Rel	62	obl	_	_
+61	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	62	nsubj	_	_
+62	believed	believe	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	57	relcl	_	_
+63	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And as many as had devils cast out from them, and were healed of their sicknesses and their infirmities, did truly manifest unto the people that they had been wrought upon by the Spirit of God, and had been healed; and they did show forth signs also and did do some miracles among the people.
+# sent_id = 207
+# llm_note = Subject = "as many as had devils cast out from them, and were healed" (free relative). "did truly manifest" = emphatic AUX. "wrought upon by the Spirit of God" = passive with idiom "wrought upon". "they did show forth" and "did do" = emphatic AUX constructions.
+1	And	and	CCONJ	CC	_	24	cc	_	_
+2	as	as	ADV	RB	_	3	advmod	_	_
+3	many	many	ADJ	JJ	_	24	nsubj	_	_
+4	as	as	SCONJ	IN	_	5	mark	_	_
+5	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	relcl	_	_
+6	devils	devil	NOUN	NNS	Number=Plur	7	nsubj	_	_
+7	cast	cast	VERB	VBN	Tense=Past|VerbForm=Part	5	xcomp	_	_
+8	out	out	ADP	RP	_	7	compound:prt	_	_
+9	from	from	ADP	IN	_	10	case	_	_
+10	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	7	obl	_	_
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	aux:pass	_	_
+14	healed	heal	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	conj	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	sicknesses	sickness	NOUN	NNS	Number=Plur	14	obl	_	_
+18	and	and	CCONJ	CC	_	20	cc	_	_
+19	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+20	infirmities	infirmity	NOUN	NNS	Number=Plur	17	conj	_	_
+21	,	,	PUNCT	,	_	24	punct	_	_
+22	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	24	aux	_	_
+23	truly	truly	ADV	RB	_	24	advmod	_	_
+24	manifest	manifest	VERB	VB	VerbForm=Inf	0	root	_	_
+25	unto	unto	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	people	people	NOUN	NNS	Number=Plur	24	obl	_	_
+28	that	that	SCONJ	IN	_	32	mark	_	_
+29	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	32	nsubjpass	_	_
+30	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	aux	_	_
+31	been	be	AUX	VBN	Tense=Past|VerbForm=Part	32	aux:pass	_	_
+32	wrought	work	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	24	ccomp	_	_
+33	upon	upon	ADP	IN	_	32	compound:prt	_	_
+34	by	by	ADP	IN	_	37	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	Spirit	Spirit	PROPN	NNP	Number=Sing	32	obl:agent	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	God	God	PROPN	NNP	Number=Sing	36	nmod	_	_
+39	,	,	PUNCT	,	_	43	punct	_	_
+40	and	and	CCONJ	CC	_	43	cc	_	_
+41	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	43	aux	_	_
+42	been	be	AUX	VBN	Tense=Past|VerbForm=Part	43	aux:pass	_	_
+43	healed	heal	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	32	conj	_	_
+44	;	;	PUNCT	:	_	48	punct	_	_
+45	and	and	CCONJ	CC	_	48	cc	_	_
+46	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	48	nsubj	_	_
+47	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	48	aux	_	_
+48	show	show	VERB	VB	VerbForm=Inf	24	conj	_	_
+49	forth	forth	ADV	RP	_	48	compound:prt	_	_
+50	signs	sign	NOUN	NNS	Number=Plur	48	obj	_	_
+51	also	also	ADV	RB	_	48	advmod	_	_
+52	and	and	CCONJ	CC	_	54	cc	_	_
+53	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	54	aux	_	_
+54	do	do	VERB	VB	VerbForm=Inf	48	conj	_	_
+55	some	some	DET	DT	_	56	det	_	_
+56	miracles	miracle	NOUN	NNS	Number=Plur	54	obj	_	_
+57	among	among	ADP	IN	_	59	case	_	_
+58	the	the	DET	DT	Definite=Def|PronType=Art	59	det	_	_
+59	people	people	NOUN	NNS	Number=Plur	54	obl	_	_
+60	.	.	PUNCT	.	_	24	punct	_	_
+
+# text = Thus passed away the thirty and second year also.
+# sent_id = 208
+# llm_note = Inverted subject: "passed away" is root, "year" is nsubj (post-verbal). "Thus" = manner advmod. "thirty and second" = ordinal numeral phrase modifying year.
+1	Thus	thus	ADV	RB	_	2	advmod	_	_
+2	passed	pass	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	away	away	ADV	RB	_	2	advmod	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+5	thirty	thirty	NUM	CD	NumType=Card	8	nummod	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	second	second	ADJ	JJ	_	5	conj	_	_
+8	year	year	NOUN	NN	Number=Sing	2	nsubj	_	_
+9	also	also	ADV	RB	_	2	advmod	_	_
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = And Nephi did cry unto the people in the commencement of the thirty and third year; and he did preach unto them repentance and remission of sins.
+# sent_id = 209
+# llm_note = "did cry" = emphatic AUX. "did preach" = emphatic AUX. "repentance and remission of sins" = coordinated objects of preach.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	Nephi	Nephi	PROPN	NNP	Number=Sing	4	nsubj	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	cry	cry	VERB	VB	VerbForm=Inf	0	root	_	_
+5	unto	unto	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	people	people	NOUN	NNS	Number=Plur	4	obl	_	_
+8	in	in	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	commencement	commencement	NOUN	NN	Number=Sing	4	obl	_	_
+11	of	of	ADP	IN	_	16	case	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+13	thirty	thirty	NUM	CD	NumType=Card	16	nummod	_	_
+14	and	and	CCONJ	CC	_	15	cc	_	_
+15	third	third	ADJ	JJ	_	13	conj	_	_
+16	year	year	NOUN	NN	Number=Sing	10	nmod	_	_
+17	;	;	PUNCT	:	_	21	punct	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+20	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	21	aux	_	_
+21	preach	preach	VERB	VB	VerbForm=Inf	4	conj	_	_
+22	unto	unto	ADP	IN	_	23	case	_	_
+23	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	21	obl	_	_
+24	repentance	repentance	NOUN	NN	Number=Sing	21	obj	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	remission	remission	NOUN	NN	Number=Sing	24	conj	_	_
+27	of	of	ADP	IN	_	28	case	_	_
+28	sins	sin	NOUN	NNS	Number=Plur	26	nmod	_	_
+29	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Now I would have you to remember also, that there were none who were brought unto repentance who were not baptized with water.
+# sent_id = 210
+# llm_note = "would have you to remember" = causative/desiderative: "would" modal, "have" = causative verb, "you" = obj, "to remember" = xcomp. Two relative clauses on "none": "who were brought unto repentance" and "who were not baptized with water".
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	would	would	AUX	MD	VerbForm=Fin	0	root	_	_
+4	have	have	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+5	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	4	obj	_	_
+6	to	to	PART	TO	_	7	mark	_	_
+7	remember	remember	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+8	also	also	ADV	RB	_	7	advmod	_	_
+9	,	,	PUNCT	,	_	7	punct	_	_
+10	that	that	SCONJ	IN	_	12	mark	_	_
+11	there	there	PRON	EX	_	12	expl	_	_
+12	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	7	ccomp	_	_
+13	none	none	PRON	NN	_	12	nsubj	_	_
+14	who	who	PRON	WP	PronType=Rel	16	nsubjpass	_	_
+15	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	aux:pass	_	_
+16	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	13	relcl	_	_
+17	unto	unto	ADP	IN	_	18	case	_	_
+18	repentance	repentance	NOUN	NN	Number=Sing	16	obl	_	_
+19	who	who	PRON	WP	PronType=Rel	22	nsubjpass	_	_
+20	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	aux:pass	_	_
+21	not	not	PART	RB	Polarity=Neg	22	advmod	_	_
+22	baptized	baptize	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	13	relcl	_	_
+23	with	with	ADP	IN	_	24	case	_	_
+24	water	water	NOUN	NN	Number=Sing	22	obl	_	_
+25	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore, there were ordained of Nephi, men unto this ministry, that all such as should come unto them should be baptized with water, and this as a witness and a testimony before God, and unto the people, that they had repented and received a remission of their sins.
+# sent_id = 211
+# llm_note = Passive existential inversion: "there were ordained of Nephi, men" — there=expl, were=root, ordained=pass part (xcomp/predicative), men=nsubj. "of Nephi" = obl:agent. "unto this ministry" = purpose obl. "that all such as...should be baptized" = purpose advcl. "this as a witness" = nominal predicate clause (elliptical). "that they had repented" = content clause specifying witness/testimony.
+1	Therefore	therefore	ADV	RB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	there	there	PRON	EX	_	4	expl	_	_
+4	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	ordained	ordain	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Nephi	Nephi	PROPN	NNP	Number=Sing	5	obl:agent	_	_
+8	,	,	PUNCT	,	_	9	punct	_	_
+9	men	man	NOUN	NNS	Number=Plur	4	nsubj	_	_
+10	unto	unto	ADP	IN	_	12	case	_	_
+11	this	this	DET	DT	Number=Sing|PronType=Dem	12	det	_	_
+12	ministry	ministry	NOUN	NN	Number=Sing	9	nmod	_	_
+13	,	,	PUNCT	,	_	24	punct	_	_
+14	that	that	SCONJ	IN	_	24	mark	_	_
+15	all	all	DET	DT	_	16	det	_	_
+16	such	such	PRON	NN	_	24	nsubjpass	_	_
+17	as	as	SCONJ	IN	_	19	mark	_	_
+18	should	should	AUX	MD	VerbForm=Fin	19	aux	_	_
+19	come	come	VERB	VB	VerbForm=Inf	16	relcl	_	_
+20	unto	unto	ADP	IN	_	21	case	_	_
+21	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	19	obl	_	_
+22	should	should	AUX	MD	VerbForm=Fin	24	aux	_	_
+23	be	be	AUX	VB	VerbForm=Inf	24	aux:pass	_	_
+24	baptized	baptize	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	advcl	_	_
+25	with	with	ADP	IN	_	26	case	_	_
+26	water	water	NOUN	NN	Number=Sing	24	obl	_	_
+27	,	,	PUNCT	,	_	29	punct	_	_
+28	and	and	CCONJ	CC	_	29	cc	_	_
+29	this	this	PRON	DT	Number=Sing|PronType=Dem	4	conj	_	_
+30	as	as	ADP	IN	_	32	case	_	_
+31	a	a	DET	DT	Definite=Ind|PronType=Art	32	det	_	_
+32	witness	witness	NOUN	NN	Number=Sing	29	nmod	_	_
+33	and	and	CCONJ	CC	_	35	cc	_	_
+34	a	a	DET	DT	Definite=Ind|PronType=Art	35	det	_	_
+35	testimony	testimony	NOUN	NN	Number=Sing	32	conj	_	_
+36	before	before	ADP	IN	_	37	case	_	_
+37	God	God	PROPN	NNP	Number=Sing	32	nmod	_	_
+38	,	,	PUNCT	,	_	32	punct	_	_
+39	and	and	CCONJ	CC	_	42	cc	_	_
+40	unto	unto	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	people	people	NOUN	NNS	Number=Plur	32	conj	_	_
+43	,	,	PUNCT	,	_	47	punct	_	_
+44	that	that	SCONJ	IN	_	47	mark	_	_
+45	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	47	nsubj	_	_
+46	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	47	aux	_	_
+47	repented	repent	VERB	VBN	Tense=Past|VerbForm=Part	32	ccomp	_	_
+48	and	and	CCONJ	CC	_	49	cc	_	_
+49	received	receive	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	47	conj	_	_
+50	a	a	DET	DT	Definite=Ind|PronType=Art	51	det	_	_
+51	remission	remission	NOUN	NN	Number=Sing	49	obj	_	_
+52	of	of	ADP	IN	_	54	case	_	_
+53	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	54	nmod:poss	_	_
+54	sins	sin	NOUN	NNS	Number=Plur	51	nmod	_	_
+55	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And there were many in the commencement of this year that were baptized unto repentance; and thus the more part of the year did pass away.
+# sent_id = 212
+# llm_note = "there were many" = existential. "that were baptized" = relative clause on "many". "did pass away" = emphatic AUX. "thus" = manner advmod.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	many	many	ADJ	JJ	_	3	nsubj	_	_
+5	in	in	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	commencement	commencement	NOUN	NN	Number=Sing	3	obl	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	this	this	DET	DT	Number=Sing|PronType=Dem	10	det	_	_
+10	year	year	NOUN	NN	Number=Sing	7	nmod	_	_
+11	that	that	PRON	WDT	PronType=Rel	13	nsubjpass	_	_
+12	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	aux:pass	_	_
+13	baptized	baptize	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	relcl	_	_
+14	unto	unto	ADP	IN	_	15	case	_	_
+15	repentance	repentance	NOUN	NN	Number=Sing	13	obl	_	_
+16	;	;	PUNCT	:	_	26	punct	_	_
+17	and	and	CCONJ	CC	_	26	cc	_	_
+18	thus	thus	ADV	RB	_	26	advmod	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+20	more	more	ADJ	JJR	Degree=Cmp	21	amod	_	_
+21	part	part	NOUN	NN	Number=Sing	26	nsubj	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	year	year	NOUN	NN	Number=Sing	21	nmod	_	_
+25	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	26	aux	_	_
+26	pass	pass	VERB	VB	VerbForm=Inf	3	conj	_	_
+27	away	away	ADV	RB	_	26	advmod	_	_
+28	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now it came to pass that according to our record, and we know our record to be true, for behold, it was a just man who did keep the record-- for he truly did many miracles in the name of Jesus; and there was not any man who could do a miracle in the name of Jesus save he were cleansed every whit from his iniquity--
+# sent_id = 213
+# llm_note = AICTP frame. "according to our record" = parenthetical obl. "we know our record to be true" = parenthetical advcl (evaluative). "behold" = INTJ discourse. Existential: "it was a just man" (identificational copula). "who did keep the record" = relcl, "did" = emphatic AUX. Dash = punct attached to record (word 34). "for he truly did many miracles" = new clause: "did" as auxiliary to a zero main verb (or bare "do": he did [do] many miracles) — treat as emphatic: he=nsubj, did=AUX, many miracles=obj, main verb elided; attach obj to "did" and treat did as VERB here (alternative: treat as "he did [do]" with elided V). Best: "he truly did many miracles" — did=VERB (past tense of "do" meaning "performed"), miracles=obj. Second "there was not any man" = negative existential. "save he were cleansed" = conditional exception: save=SCONJ.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	expl	_	_
+4	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	26	mark	_	_
+8	according	according	ADP	IN	_	11	case	_	_
+9	to	to	ADP	IN	_	8	fixed	_	_
+10	our	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	_
+11	record	record	NOUN	NN	Number=Sing	26	obl	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	15	nsubj	_	_
+15	know	know	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	11	conj	_	_
+16	our	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	record	record	NOUN	NN	Number=Sing	15	obj	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	be	be	AUX	VB	VerbForm=Inf	15	xcomp	_	_
+20	true	true	ADJ	JJ	_	19	xcomp	_	_
+21	,	,	PUNCT	,	_	26	punct	_	_
+22	for	for	SCONJ	IN	_	26	mark	_	_
+23	behold	behold	INTJ	UH	_	26	discourse	_	_
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
+26	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	ccomp	_	_
+27	a	a	DET	DT	Definite=Ind|PronType=Art	29	det	_	_
+28	just	just	ADJ	JJ	_	29	amod	_	_
+29	man	man	NOUN	NN	Number=Sing	26	xcomp	_	_
+30	who	who	PRON	WP	PronType=Rel	32	nsubj	_	_
+31	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	aux	_	_
+32	keep	keep	VERB	VB	VerbForm=Inf	29	relcl	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	record	record	NOUN	NN	Number=Sing	32	obj	_	_
+35	--	--	PUNCT	:	_	34	punct	_	_
+36	for	for	SCONJ	IN	_	39	mark	_	_
+37	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	nsubj	_	_
+38	truly	truly	ADV	RB	_	39	advmod	_	_
+39	did	do	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	26	advcl	_	_
+40	many	many	ADJ	JJ	_	41	amod	_	_
+41	miracles	miracle	NOUN	NNS	Number=Plur	39	obj	_	_
+42	in	in	ADP	IN	_	44	case	_	_
+43	the	the	DET	DT	Definite=Def|PronType=Art	44	det	_	_
+44	name	name	NOUN	NN	Number=Sing	39	obl	_	_
+45	of	of	ADP	IN	_	46	case	_	_
+46	Jesus	Jesus	PROPN	NNP	Number=Sing	44	nmod	_	_
+47	;	;	PUNCT	:	_	50	punct	_	_
+48	and	and	CCONJ	CC	_	50	cc	_	_
+49	there	there	PRON	EX	_	50	expl	_	_
+50	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	39	conj	_	_
+51	not	not	PART	RB	Polarity=Neg	50	advmod	_	_
+52	any	any	DET	DT	_	53	det	_	_
+53	man	man	NOUN	NN	Number=Sing	50	nsubj	_	_
+54	who	who	PRON	WP	PronType=Rel	56	nsubj	_	_
+55	could	could	AUX	MD	VerbForm=Fin	56	aux	_	_
+56	do	do	VERB	VB	VerbForm=Inf	53	relcl	_	_
+57	a	a	DET	DT	Definite=Ind|PronType=Art	58	det	_	_
+58	miracle	miracle	NOUN	NN	Number=Sing	56	obj	_	_
+59	in	in	ADP	IN	_	61	case	_	_
+60	the	the	DET	DT	Definite=Def|PronType=Art	61	det	_	_
+61	name	name	NOUN	NN	Number=Sing	56	obl	_	_
+62	of	of	ADP	IN	_	63	case	_	_
+63	Jesus	Jesus	PROPN	NNP	Number=Sing	61	nmod	_	_
+64	save	save	SCONJ	IN	_	67	mark	_	_
+65	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	67	nsubjpass	_	_
+66	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	67	aux:pass	_	_
+67	cleansed	cleanse	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	56	advcl	_	_
+68	every	every	DET	DT	_	69	det	_	_
+69	whit	whit	NOUN	NN	Number=Sing	67	obl	_	_
+70	from	from	ADP	IN	_	72	case	_	_
+71	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	72	nmod:poss	_	_
+72	iniquity	iniquity	NOUN	NN	Number=Sing	67	obl	_	_
+73	--	--	PUNCT	:	_	72	punct	_	_
+
+# text = And now it came to pass, if there was no mistake made by this man in the reckoning of our time, the thirty and third year had passed away;
+# sent_id = 214
+# llm_note = AICTP frame with conditional parenthetical: "if there was no mistake made by this man in the reckoning of our time" = advcl on main clause "the thirty and third year had passed away". Sentence ends with semicolon (fragment/suspended period). "had passed away" = pluperfect.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	expl	_	_
+4	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	,	,	PUNCT	,	_	31	punct	_	_
+8	if	if	SCONJ	IN	_	12	mark	_	_
+9	there	there	PRON	EX	_	12	expl	_	_
+10	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	31	advcl	_	_
+11	no	no	DET	DT	_	12	det	_	_
+12	mistake	mistake	NOUN	NN	Number=Sing	10	nsubj	_	_
+13	made	make	VERB	VBN	Tense=Past|VerbForm=Part	12	acl	_	_
+14	by	by	ADP	IN	_	16	case	_	_
+15	this	this	DET	DT	Number=Sing|PronType=Dem	16	det	_	_
+16	man	man	NOUN	NN	Number=Sing	13	obl:agent	_	_
+17	in	in	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	reckoning	reckoning	NOUN	NN	Number=Sing	13	obl	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	our	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+22	time	time	NOUN	NN	Number=Sing	19	nmod	_	_
+23	,	,	PUNCT	,	_	31	punct	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+25	thirty	thirty	NUM	CD	NumType=Card	28	nummod	_	_
+26	and	and	CCONJ	CC	_	27	cc	_	_
+27	third	third	ADJ	JJ	_	25	conj	_	_
+28	year	year	NOUN	NN	Number=Sing	31	nsubj	_	_
+29	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	31	aux	_	_
+30	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	31	aux	_	_
+31	away	away	ADV	RB	_	6	ccomp	_	_
+32	;	;	PUNCT	:	_	31	punct	_	_
+
+# text = And the people began to look with great earnestness for the sign which had been given by the prophet Samuel, the Lamanite, yea, for the time that there should be darkness for the space of three days over the face of the land.
+# sent_id = 215
+# llm_note = "began to look" = aspectual. "yea" = INTJ discourse. "for the time that there should be darkness" = second PP object of look (parallel to "for the sign"). Existential "there should be darkness" = embedded: there=expl, be=VERB, darkness=nsubj.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	people	people	NOUN	NNS	Number=Plur	4	nsubj	_	_
+4	began	begin	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	look	look	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	with	with	ADP	IN	_	9	case	_	_
+8	great	great	ADJ	JJ	_	9	amod	_	_
+9	earnestness	earnestness	NOUN	NN	Number=Sing	6	obl	_	_
+10	for	for	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	sign	sign	NOUN	NN	Number=Sing	6	obl	_	_
+13	which	which	PRON	WDT	PronType=Rel	16	nsubjpass	_	_
+14	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	aux	_	_
+15	been	be	AUX	VBN	Tense=Past|VerbForm=Part	16	aux:pass	_	_
+16	given	give	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	12	relcl	_	_
+17	by	by	ADP	IN	_	20	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+19	prophet	prophet	NOUN	NN	Number=Sing	20	compound	_	_
+20	Samuel	Samuel	PROPN	NNP	Number=Sing	16	obl:agent	_	_
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	Lamanite	Lamanite	PROPN	NNP	Number=Sing	20	appos	_	_
+24	,	,	PUNCT	,	_	25	punct	_	_
+25	yea	yea	INTJ	UH	_	6	discourse	_	_
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	for	for	ADP	IN	_	29	case	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+29	time	time	NOUN	NN	Number=Sing	6	obl	_	_
+30	that	that	SCONJ	IN	_	33	mark	_	_
+31	there	there	PRON	EX	_	33	expl	_	_
+32	should	should	AUX	MD	VerbForm=Fin	33	aux	_	_
+33	be	be	VERB	VB	VerbForm=Inf	29	relcl	_	_
+34	darkness	darkness	NOUN	NN	Number=Sing	33	nsubj	_	_
+35	for	for	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+37	space	space	NOUN	NN	Number=Sing	33	obl	_	_
+38	of	of	ADP	IN	_	40	case	_	_
+39	three	three	NUM	CD	NumType=Card	40	nummod	_	_
+40	days	day	NOUN	NNS	Number=Plur	37	nmod	_	_
+41	over	over	ADP	IN	_	44	case	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	43	det	_	_
+43	face	face	NOUN	NN	Number=Sing	33	obl	_	_
+44	of	of	ADP	IN	_	46	case	_	_
+45	the	the	DET	DT	Definite=Def|PronType=Art	46	det	_	_
+46	land	land	NOUN	NN	Number=Sing	43	nmod	_	_
+47	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And there began to be great doubtings and disputations among the people, notwithstanding so many signs had been given.
+# sent_id = 216
+# llm_note = Existential-like: "there began to be great doubtings" = there=expl, began=root, "to be" aspectual, "doubtings and disputations" = nsubj. "notwithstanding so many signs had been given" = concessive advcl.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	began	begin	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	be	be	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	great	great	ADJ	JJ	_	7	amod	_	_
+7	doubtings	doubting	NOUN	NNS	Number=Plur	3	nsubj	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	disputations	disputation	NOUN	NNS	Number=Plur	7	conj	_	_
+10	among	among	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	people	people	NOUN	NNS	Number=Plur	3	obl	_	_
+13	,	,	PUNCT	,	_	20	punct	_	_
+14	notwithstanding	notwithstanding	SCONJ	IN	_	20	mark	_	_
+15	so	so	ADV	RB	_	16	advmod	_	_
+16	many	many	ADJ	JJ	_	17	amod	_	_
+17	signs	sign	NOUN	NNS	Number=Plur	20	nsubjpass	_	_
+18	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	20	aux	_	_
+19	been	be	AUX	VBN	Tense=Past|VerbForm=Part	20	aux:pass	_	_
+20	given	give	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	3	advcl	_	_
+21	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass in the thirty and fourth year, in the first month, on the fourth day of the month, there arose a great storm, such an one as never had been known in all the land.
+# sent_id = 217
+# llm_note = AICTP without "that": "it came to pass [in NPs], there arose a great storm" — the main clause is "there arose a great storm" (existential inversion). The temporal PPs are adjuncts of the main clause. "such an one as never had been known" = comparative clause modifying "storm".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	in	in	ADP	IN	_	11	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+8	thirty	thirty	NUM	CD	NumType=Card	11	nummod	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	fourth	fourth	ADJ	JJ	_	8	conj	_	_
+11	year	year	NOUN	NN	Number=Sing	27	obl	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	in	in	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+15	first	first	ADJ	JJ	_	16	amod	_	_
+16	month	month	NOUN	NN	Number=Sing	27	obl	_	_
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	on	on	ADP	IN	_	21	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+20	fourth	fourth	ADJ	JJ	_	21	amod	_	_
+21	day	day	NOUN	NN	Number=Sing	27	obl	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	month	month	NOUN	NN	Number=Sing	21	nmod	_	_
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	there	there	PRON	EX	_	27	expl	_	_
+27	arose	arise	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+28	a	a	DET	DT	Definite=Ind|PronType=Art	30	det	_	_
+29	great	great	ADJ	JJ	_	30	amod	_	_
+30	storm	storm	NOUN	NN	Number=Sing	27	nsubj	_	_
+31	,	,	PUNCT	,	_	34	punct	_	_
+32	such	such	ADJ	JJ	_	34	amod	_	_
+33	an	a	DET	DT	Definite=Ind|PronType=Art	34	det	_	_
+34	one	one	PRON	NN	_	30	appos	_	_
+35	as	as	SCONJ	IN	_	39	mark	_	_
+36	never	never	ADV	RB	_	39	advmod	_	_
+37	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	39	aux	_	_
+38	been	be	AUX	VBN	Tense=Past|VerbForm=Part	39	aux:pass	_	_
+39	known	know	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	34	acl:relcl	_	_
+40	in	in	ADP	IN	_	43	case	_	_
+41	all	all	DET	DT	_	43	det	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	43	det	_	_
+43	land	land	NOUN	NN	Number=Sing	39	obl	_	_
+44	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And there was also a great and terrible tempest; and there was terrible thunder, insomuch that it did shake the whole earth as if it was about to divide asunder.
+# sent_id = 218
+# llm_note = Two existential clauses. "insomuch that" = result advcl on "thunder". "did shake" = emphatic AUX. "as if it was about to divide asunder" = comparative conditional: "as if" = SCONJ, "about to divide" = xcomp of "was".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	also	also	ADV	RB	_	3	advmod	_	_
+5	a	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
+6	great	great	ADJ	JJ	_	9	amod	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	terrible	terrible	ADJ	JJ	_	6	conj	_	_
+9	tempest	tempest	NOUN	NN	Number=Sing	3	nsubj	_	_
+10	;	;	PUNCT	:	_	13	punct	_	_
+11	and	and	CCONJ	CC	_	13	cc	_	_
+12	there	there	PRON	EX	_	13	expl	_	_
+13	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	conj	_	_
+14	terrible	terrible	ADJ	JJ	_	15	amod	_	_
+15	thunder	thunder	NOUN	NN	Number=Sing	13	nsubj	_	_
+16	,	,	PUNCT	,	_	21	punct	_	_
+17	insomuch	insomuch	ADV	RB	_	18	advmod	_	_
+18	that	that	SCONJ	IN	_	21	mark	_	_
+19	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+20	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	21	aux	_	_
+21	shake	shake	VERB	VB	VerbForm=Inf	13	advcl	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+23	whole	whole	ADJ	JJ	_	24	amod	_	_
+24	earth	earth	NOUN	NN	Number=Sing	21	obj	_	_
+25	as	as	SCONJ	IN	_	31	mark	_	_
+26	if	if	SCONJ	IN	_	25	fixed	_	_
+27	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	28	nsubj	_	_
+28	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	21	advcl	_	_
+29	about	about	ADV	RB	_	31	advmod	_	_
+30	to	to	PART	TO	_	31	mark	_	_
+31	divide	divide	VERB	VB	VerbForm=Inf	28	xcomp	_	_
+32	asunder	asunder	ADV	RB	_	31	advmod	_	_
+33	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And there were exceedingly sharp lightnings, such as never had been known in all the land.
+# sent_id = 219
+# llm_note = Existential. "such as never had been known" = comparative relative modifying lightnings.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	exceedingly	exceedingly	ADV	RB	_	5	advmod	_	_
+5	sharp	sharp	ADJ	JJ	_	6	amod	_	_
+6	lightnings	lightning	NOUN	NNS	Number=Plur	3	nsubj	_	_
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	such	such	ADJ	JJ	_	6	acl	_	_
+9	as	as	SCONJ	IN	_	13	mark	_	_
+10	never	never	ADV	RB	_	13	advmod	_	_
+11	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	aux	_	_
+12	been	be	AUX	VBN	Tense=Past|VerbForm=Part	13	aux:pass	_	_
+13	known	know	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	8	advcl	_	_
+14	in	in	ADP	IN	_	17	case	_	_
+15	all	all	DET	DT	_	17	det	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	land	land	NOUN	NN	Number=Sing	13	obl	_	_
+18	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And the city of Zarahemla did take fire.
+# sent_id = 220
+# llm_note = "did take fire" = emphatic AUX + "take fire" idiom (VERB + NOUN compound idiom: "take fire" = catch fire). "fire" = obj of "take".
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	city	city	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	of	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	Zarahemla	take	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+6	did	fire	NOUN	NN	Number=Sing	5	obj	_	_
+7	take	of	ADP	IN	_	8	case	_	_
+8	fire	Zarahemla	PROPN	NNP	Number=Sing	3	nmod	_	_
+9	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And the city of Moroni did sink into the depths of the sea, and the inhabitants thereof were drowned.
+# sent_id = 221
+# llm_note = "did sink" = emphatic AUX. "thereof" = archaic pronominal adverb = ADV modifying inhabitants.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	city	city	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	of	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	Moroni	sink	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+6	did	into	ADP	IN	_	9	case	_	_
+7	sink	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	into	depth	NOUN	NNS	Number=Plur	5	obl	_	_
+9	the	of	ADP	IN	_	12	case	_	_
+10	depths	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	of	sea	NOUN	NN	Number=Sing	8	nmod	_	_
+12	the	of	ADP	IN	_	13	case	_	_
+13	sea	Moroni	PROPN	NNP	Number=Sing	3	nmod	_	_
+14	,	,	PUNCT	,	_	20	punct	_	_
+15	and	and	CCONJ	CC	_	20	cc	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	inhabitants	inhabitant	NOUN	NNS	Number=Plur	20	nsubjpass	_	_
+18	thereof	thereof	ADV	RB	_	17	advmod	_	_
+19	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	20	aux:pass	_	_
+20	drowned	drown	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	conj	_	_
+21	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And the earth was carried up upon the city of Moronihah, that in the place of the city there became a great mountain.
+# sent_id = 222
+# llm_note = Passive: "the earth was carried up". "that" = result conjunction (so that). "there became a great mountain" = existential result clause: there=expl, became=VERB, mountain=nsubj.
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	earth	earth	NOUN	NN	Number=Sing	5	nsubjpass	_	_
+4	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux:pass	_	_
+5	carried	carry	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	up	up	ADP	RP	_	5	compound:prt	_	_
+7	upon	upon	ADP	IN	_	10	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	city	city	NOUN	NN	Number=Sing	5	obl	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	Moronihah	Moronihah	PROPN	NNP	Number=Sing	9	nmod	_	_
+12	,	,	PUNCT	,	_	21	punct	_	_
+13	that	that	SCONJ	IN	_	21	mark	_	_
+14	in	in	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	place	place	NOUN	NN	Number=Sing	21	obl	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	city	city	NOUN	NN	Number=Sing	16	nmod	_	_
+20	there	there	PRON	EX	_	21	expl	_	_
+21	became	become	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	advcl	_	_
+22	a	a	DET	DT	Definite=Ind|PronType=Art	24	det	_	_
+23	great	great	ADJ	JJ	_	24	amod	_	_
+24	mountain	mountain	NOUN	NN	Number=Sing	21	nsubj	_	_
+25	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And there was a great and terrible destruction in the land southward.
+# sent_id = 223
+# llm_note = Existential. "southward" = ADV modifying land (direction).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
+5	great	great	ADJ	JJ	_	8	amod	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	terrible	terrible	ADJ	JJ	_	5	conj	_	_
+8	destruction	destruction	NOUN	NN	Number=Sing	3	nsubj	_	_
+9	in	in	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	land	land	NOUN	NN	Number=Sing	3	obl	_	_
+12	southward	southward	ADV	RB	_	11	advmod	_	_
+13	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But behold, there was a more great and terrible destruction in the land northward; for behold, the whole face of the land was changed, because of the tempest and the whirlwinds, and the thunderings and the lightnings, and the exceedingly great quaking of the whole earth;
+# sent_id = 224
+# llm_note = "behold" = INTJ discourse (x2). Existential: "there was...destruction". Sentence ends with semicolon (continues). "because of" = multi-word ADP. Long nominal coordination in "because of" phrase: tempest, whirlwinds, thunderings, lightnings, quaking.
+1	But	but	CCONJ	CC	_	5	cc	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	there	there	PRON	EX	_	5	expl	_	_
+5	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+6	a	a	DET	DT	Definite=Ind|PronType=Art	11	det	_	_
+7	more	more	ADV	RB	Degree=Cmp	8	advmod	_	_
+8	great	great	ADJ	JJ	_	11	amod	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	terrible	terrible	ADJ	JJ	_	8	conj	_	_
+11	destruction	destruction	NOUN	NN	Number=Sing	5	nsubj	_	_
+12	in	in	ADP	IN	_	15	case	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	land	land	NOUN	NN	Number=Sing	5	obl	_	_
+15	northward	northward	ADV	RB	_	14	advmod	_	_
+16	;	;	PUNCT	:	_	27	punct	_	_
+17	for	for	SCONJ	IN	_	27	mark	_	_
+18	behold	behold	INTJ	UH	_	27	discourse	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+21	whole	whole	ADJ	JJ	_	23	amod	_	_
+22	face	face	NOUN	NN	Number=Sing	23	compound	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	land	land	NOUN	NN	Number=Sing	27	nsubjpass	_	_
+26	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	27	aux:pass	_	_
+27	changed	change	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	advcl	_	_
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	because	because	ADP	IN	_	32	case	_	_
+30	of	of	ADP	IN	_	29	fixed	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	tempest	tempest	NOUN	NN	Number=Sing	27	obl	_	_
+33	and	and	CCONJ	CC	_	35	cc	_	_
+34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
+35	whirlwinds	whirlwind	NOUN	NNS	Number=Plur	32	conj	_	_
+36	,	,	PUNCT	,	_	39	punct	_	_
+37	and	and	CCONJ	CC	_	39	cc	_	_
+38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+39	thunderings	thundering	NOUN	NNS	Number=Plur	32	conj	_	_
+40	and	and	CCONJ	CC	_	42	cc	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	lightnings	lightning	NOUN	NNS	Number=Plur	39	conj	_	_
+43	,	,	PUNCT	,	_	48	punct	_	_
+44	and	and	CCONJ	CC	_	48	cc	_	_
+45	the	the	DET	DT	Definite=Def|PronType=Art	48	det	_	_
+46	exceedingly	exceedingly	ADV	RB	_	47	advmod	_	_
+47	great	great	ADJ	JJ	_	48	amod	_	_
+48	quaking	quaking	NOUN	NN	Number=Sing	32	conj	_	_
+49	of	of	ADP	IN	_	52	case	_	_
+50	the	the	DET	DT	Definite=Def|PronType=Art	52	det	_	_
+51	whole	whole	ADJ	JJ	_	52	amod	_	_
+52	earth	earth	NOUN	NN	Number=Sing	48	nmod	_	_
+53	;	;	PUNCT	:	_	27	punct	_	_
+

@@ -1,0 +1,735 @@
+# text = And I beheld the city of Nazareth; and in the city of Nazareth I beheld a virgin, and she was exceedingly fair and white.
+# sent_id = 300
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	beheld	behold	VERB	VBD	Tense=Past	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	city	city	NOUN	NN	Number=Sing	3	obj	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Nazareth	Nazareth	PROPN	NNP	Number=Sing	5	nmod	_	_
+8	;	;	PUNCT	:	_	16	punct	_	_
+9	and	and	CCONJ	CC	_	16	cc	_	_
+10	in	in	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	city	city	NOUN	NN	Number=Sing	16	obl	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Nazareth	Nazareth	PROPN	NNP	Number=Sing	12	nmod	_	_
+15	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	16	nsubj	_	_
+16	beheld	behold	VERB	VBD	Tense=Past	3	conj	_	_
+17	a	a	DET	DT	_	18	det	_	_
+18	virgin	virgin	NOUN	NN	Number=Sing	16	obj	_	_
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	she	she	PRON	PRP	Case=Nom|Number=Sing|Person=3	22	nsubj	_	_
+22	was	be	VERB	VBD	Tense=Past	16	conj	_	_
+23	exceedingly	exceedingly	ADV	RB	_	24	advmod	_	_
+24	fair	fair	ADJ	JJ	_	22	xcomp	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	white	white	ADJ	JJ	_	24	conj	_	_
+27	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that I saw the heavens open; and an angel came down and stood before me; and he said unto me: Nephi, what beholdest thou?
+# sent_id = 301
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	saw	see	VERB	VBD	Tense=Past	3	ccomp	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	heavens	heaven	NOUN	NNS	Number=Plur	8	obj	_	_
+11	open	open	VERB	VB	VerbForm=Inf	8	xcomp	_	_
+12	;	;	PUNCT	:	_	16	punct	_	_
+13	and	and	CCONJ	CC	_	16	cc	_	_
+14	an	a	DET	DT	_	15	det	_	_
+15	angel	angel	NOUN	NN	Number=Sing	16	nsubj	_	_
+16	came	come	VERB	VBD	Tense=Past	8	conj	_	_
+17	down	down	ADV	RB	_	16	advmod	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	stood	stand	VERB	VBD	Tense=Past	16	conj	_	_
+20	before	before	ADP	IN	_	21	case	_	_
+21	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	19	obl	_	_
+22	;	;	PUNCT	:	_	25	punct	_	_
+23	and	and	CCONJ	CC	_	25	cc	_	_
+24	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	25	nsubj	_	_
+25	said	say	VERB	VBD	Tense=Past	8	conj	_	_
+26	unto	unto	ADP	IN	_	27	case	_	_
+27	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	25	obl	_	_
+28	:	:	PUNCT	:	_	32	punct	_	_
+29	Nephi	Nephi	PROPN	NNP	Number=Sing	32	vocative	_	_
+30	,	,	PUNCT	,	_	29	punct	_	_
+31	what	what	PRON	WP	_	32	obj	_	_
+32	beholdest	behold	VERB	VBZ	Number=Sing|Person=2|Tense=Pres	25	ccomp	_	_
+33	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	32	nsubj	_	_
+34	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And I said unto him: A virgin, most beautiful and fair above all other virgins.
+# sent_id = 302
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	said	say	VERB	VBD	Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	3	obl	_	_
+6	:	:	PUNCT	:	_	8	punct	_	_
+7	A	a	DET	DT	_	8	det	_	_
+8	virgin	virgin	NOUN	NN	Number=Sing	3	ccomp	_	_
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	most	most	ADV	RBS	_	11	advmod	_	_
+11	beautiful	beautiful	ADJ	JJ	_	8	amod	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	fair	fair	ADJ	JJ	_	11	conj	_	_
+14	above	above	ADP	IN	_	17	case	_	_
+15	all	all	DET	PDT	_	17	det:predet	_	_
+16	other	other	ADJ	JJ	_	17	amod	_	_
+17	virgins	virgin	NOUN	NNS	Number=Plur	11	obl	_	_
+18	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he said unto me: Knowest thou the condescension of God?
+# sent_id = 303
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
+3	said	say	VERB	VBD	Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	3	obl	_	_
+6	:	:	PUNCT	:	_	7	punct	_	_
+7	Knowest	know	VERB	VBZ	Number=Sing|Person=2|Tense=Pres	3	ccomp	_	_
+8	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	7	nsubj	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	condescension	condescension	NOUN	NN	Number=Sing	7	obj	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	God	God	PROPN	NNP	Number=Sing	10	nmod	_	_
+13	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And I said unto him: I know that he loveth his children; nevertheless, I do not know the meaning of all things.
+# sent_id = 304
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	said	say	VERB	VBD	Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	3	obl	_	_
+6	:	:	PUNCT	:	_	8	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	know	know	VERB	VBP	Tense=Pres	3	ccomp	_	_
+9	that	that	SCONJ	IN	_	11	mark	_	_
+10	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	11	nsubj	_	_
+11	loveth	love	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	8	ccomp	_	_
+12	his	his	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	13	nmod:poss	_	_
+13	children	child	NOUN	NNS	Number=Plur	11	obj	_	_
+14	;	;	PUNCT	:	_	20	punct	_	_
+15	nevertheless	nevertheless	ADV	RB	_	20	advmod	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	20	nsubj	_	_
+18	do	do	AUX	VBP	Tense=Pres	20	aux	_	_
+19	not	not	PART	RB	_	20	advmod	_	_
+20	know	know	VERB	VB	VerbForm=Inf	8	conj	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	meaning	meaning	NOUN	NN	Number=Sing	20	obj	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	all	all	DET	PDT	_	25	det:predet	_	_
+25	things	thing	NOUN	NNS	Number=Plur	22	nmod	_	_
+26	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he said unto me: Behold, the virgin whom thou seest is the mother of the Son of God, after the manner of the flesh.
+# sent_id = 305
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
+3	said	say	VERB	VBD	Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	3	obl	_	_
+6	:	:	PUNCT	:	_	7	punct	_	_
+7	Behold	behold	INTJ	UH	_	14	discourse	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	virgin	virgin	NOUN	NN	Number=Sing	14	nsubj	_	_
+11	whom	whom	PRON	WP	_	13	obj	_	_
+12	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	13	nsubj	_	_
+13	seest	see	VERB	VBZ	Number=Sing|Person=2|Tense=Pres	10	acl:relcl	_	_
+14	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	3	ccomp	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	mother	mother	NOUN	NN	Number=Sing	14	xcomp	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	Son	Son	PROPN	NNP	Number=Sing	16	nmod	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	God	God	PROPN	NNP	Number=Sing	19	nmod	_	_
+22	,	,	PUNCT	,	_	25	punct	_	_
+23	after	after	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	manner	manner	NOUN	NN	Number=Sing	14	obl	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	flesh	flesh	NOUN	NN	Number=Sing	25	nmod	_	_
+29	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that I beheld that she was carried away in the Spirit; and after she had been carried away in the Spirit for the space of a time the angel spake unto me, saying: Look!
+# sent_id = 306
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	beheld	behold	VERB	VBD	Tense=Past	3	ccomp	_	_
+9	that	that	SCONJ	IN	_	12	mark	_	_
+10	she	she	PRON	PRP	Case=Nom|Number=Sing|Person=3	12	nsubj:pass	_	_
+11	was	be	AUX	VBD	Tense=Past	12	aux:pass	_	_
+12	carried	carry	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	8	ccomp	_	_
+13	away	away	ADV	RB	_	12	advmod	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	Spirit	Spirit	PROPN	NNP	Number=Sing	12	obl	_	_
+17	;	;	PUNCT	:	_	36	punct	_	_
+18	and	and	CCONJ	CC	_	36	cc	_	_
+19	after	after	SCONJ	IN	_	23	mark	_	_
+20	she	she	PRON	PRP	Case=Nom|Number=Sing|Person=3	23	nsubj:pass	_	_
+21	had	have	AUX	VBD	Tense=Past	23	aux	_	_
+22	been	be	AUX	VBN	VerbForm=Part	23	aux:pass	_	_
+23	carried	carry	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	36	advcl	_	_
+24	away	away	ADV	RB	_	23	advmod	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	Spirit	Spirit	PROPN	NNP	Number=Sing	23	obl	_	_
+28	for	for	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	space	space	NOUN	NN	Number=Sing	23	obl	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	a	a	DET	DT	_	33	det	_	_
+33	time	time	NOUN	NN	Number=Sing	30	nmod	_	_
+34	the	the	DET	DT	_	35	det	_	_
+35	angel	angel	NOUN	NN	Number=Sing	36	nsubj	_	_
+36	spake	speak	VERB	VBD	Tense=Past	3	conj	_	_
+37	unto	unto	ADP	IN	_	38	case	_	_
+38	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	36	obl	_	_
+39	,	,	PUNCT	,	_	40	punct	_	_
+40	saying	say	VERB	VBG	VerbForm=Part	36	advcl	_	_
+41	:	:	PUNCT	:	_	42	punct	_	_
+42	Look	look	VERB	VB	VerbForm=Inf	40	ccomp	_	_
+43	!	!	PUNCT	.	_	3	punct	_	_
+
+# text = And I looked and beheld the virgin again, bearing a child in her arms.
+# sent_id = 307
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	looked	look	VERB	VBD	Tense=Past	0	root	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	beheld	behold	VERB	VBD	Tense=Past	3	conj	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	virgin	virgin	NOUN	NN	Number=Sing	5	obj	_	_
+8	again	again	ADV	RB	_	5	advmod	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	bearing	bear	VERB	VBG	VerbForm=Part	5	advcl	_	_
+11	a	a	DET	DT	_	12	det	_	_
+12	child	child	NOUN	NN	Number=Sing	10	obj	_	_
+13	in	in	ADP	IN	_	15	case	_	_
+14	her	her	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	15	nmod:poss	_	_
+15	arms	arm	NOUN	NNS	Number=Plur	10	obl	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And the angel said unto me: Behold the Lamb of God, yea, even the Son of the Eternal Father!
+# sent_id = 308
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	angel	angel	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	said	say	VERB	VBD	Tense=Past	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	4	obl	_	_
+7	:	:	PUNCT	:	_	8	punct	_	_
+8	Behold	behold	INTJ	UH	_	10	discourse	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	Lamb	Lamb	PROPN	NNP	Number=Sing	4	ccomp	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	God	God	PROPN	NNP	Number=Sing	10	nmod	_	_
+13	,	,	PUNCT	,	_	14	punct	_	_
+14	yea	yea	INTJ	UH	_	10	discourse	_	_
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	even	even	ADV	RB	_	18	advmod	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	Son	Son	PROPN	NNP	Number=Sing	10	appos	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	Eternal	Eternal	PROPN	NNP	Number=Sing	22	amod	_	_
+22	Father	Father	PROPN	NNP	Number=Sing	18	nmod	_	_
+23	!	!	PUNCT	.	_	4	punct	_	_
+
+# text = Knowest thou the meaning of the tree which thy father saw?
+# sent_id = 309
+1	Knowest	know	VERB	VBZ	Number=Sing|Person=2|Tense=Pres	0	root	_	_
+2	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	1	nsubj	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	meaning	meaning	NOUN	NN	Number=Sing	1	obj	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	tree	tree	NOUN	NN	Number=Sing	4	nmod	_	_
+8	which	which	PRON	WDT	_	11	obj	_	_
+9	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	10	nmod:poss	_	_
+10	father	father	NOUN	NN	Number=Sing	11	nsubj	_	_
+11	saw	see	VERB	VBD	Tense=Past	7	acl:relcl	_	_
+12	?	?	PUNCT	.	_	1	punct	_	_
+
+# text = And I answered him, saying: Yea, it is the love of God, which sheddeth itself abroad in the hearts of the children of men; wherefore, it is the most desirable above all things.
+# sent_id = 310
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	answered	answer	VERB	VBD	Tense=Past	0	root	_	_
+4	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	3	obj	_	_
+5	,	,	PUNCT	,	_	6	punct	_	_
+6	saying	say	VERB	VBG	VerbForm=Part	3	advcl	_	_
+7	:	:	PUNCT	:	_	11	punct	_	_
+8	Yea	yea	INTJ	UH	_	11	discourse	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	11	nsubj	_	_
+11	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	6	ccomp	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	love	love	NOUN	NN	Number=Sing	11	xcomp	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	God	God	PROPN	NNP	Number=Sing	13	nmod	_	_
+16	,	,	PUNCT	,	_	18	punct	_	_
+17	which	which	PRON	WDT	_	18	nsubj	_	_
+18	sheddeth	shed	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	13	acl:relcl	_	_
+19	itself	itself	PRON	PRP	Case=Acc|Number=Sing|Person=3|Reflex=Yes	18	obj	_	_
+20	abroad	abroad	ADV	RB	_	18	advmod	_	_
+21	in	in	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	hearts	heart	NOUN	NNS	Number=Plur	18	obl	_	_
+24	of	of	ADP	IN	_	27	case	_	_
+25	the	the	DET	DT	_	27	det	_	_
+26	children	children	NOUN	NNS	Number=Plur	27	nmod:poss	_	_
+27	of	of	ADP	IN	_	28	case	_	_
+28	men	man	NOUN	NNS	Number=Plur	23	nmod	_	_
+29	;	;	PUNCT	:	_	33	punct	_	_
+30	wherefore	wherefore	ADV	WRB	_	33	advmod	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	33	nsubj	_	_
+33	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	11	conj	_	_
+34	the	the	DET	DT	_	36	det	_	_
+35	most	most	ADV	RBS	_	36	advmod	_	_
+36	desirable	desirable	ADJ	JJ	_	33	xcomp	_	_
+37	above	above	ADP	IN	_	39	case	_	_
+38	all	all	DET	PDT	_	39	det:predet	_	_
+39	things	thing	NOUN	NNS	Number=Plur	36	obl	_	_
+40	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he spake unto me, saying: Yea, and the most joyous to the soul.
+# sent_id = 311
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
+3	spake	speak	VERB	VBD	Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	3	obl	_	_
+6	,	,	PUNCT	,	_	7	punct	_	_
+7	saying	say	VERB	VBG	VerbForm=Part	3	advcl	_	_
+8	:	:	PUNCT	:	_	9	punct	_	_
+9	Yea	yea	INTJ	UH	_	14	discourse	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	and	and	CCONJ	CC	_	14	cc	_	_
+12	the	the	DET	DT	_	14	det	_	_
+13	most	most	ADV	RBS	_	14	advmod	_	_
+14	joyous	joyous	ADJ	JJ	_	7	ccomp	_	_
+15	to	to	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	soul	soul	NOUN	NN	Number=Sing	14	obl	_	_
+18	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And after he had said these words, he said unto me: Look!
+# sent_id = 312
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	after	after	SCONJ	IN	_	5	mark	_	_
+3	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	5	nsubj	_	_
+4	had	have	AUX	VBD	Tense=Past	5	aux	_	_
+5	said	say	VERB	VBN	Tense=Past|VerbForm=Part	10	advcl	_	_
+6	these	these	DET	DT	_	7	det	_	_
+7	words	word	NOUN	NNS	Number=Plur	5	obj	_	_
+8	,	,	PUNCT	,	_	5	punct	_	_
+9	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	10	nsubj	_	_
+10	said	say	VERB	VBD	Tense=Past	0	root	_	_
+11	unto	unto	ADP	IN	_	12	case	_	_
+12	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	10	obl	_	_
+13	:	:	PUNCT	:	_	14	punct	_	_
+14	Look	look	VERB	VB	VerbForm=Inf	10	ccomp	_	_
+15	!	!	PUNCT	.	_	10	punct	_	_
+
+# text = And I looked, and I beheld the Son of God going forth among the children of men; and I saw many fall down at his feet and worship him.
+# sent_id = 313
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	looked	look	VERB	VBD	Tense=Past	0	root	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	and	and	CCONJ	CC	_	7	cc	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+7	beheld	behold	VERB	VBD	Tense=Past	3	conj	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Son	Son	PROPN	NNP	Number=Sing	7	obj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	God	God	PROPN	NNP	Number=Sing	9	nmod	_	_
+12	going	go	VERB	VBG	VerbForm=Part	9	acl	_	_
+13	forth	forth	ADV	RB	_	12	advmod	_	_
+14	among	among	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	_	17	det	_	_
+16	children	children	NOUN	NNS	Number=Plur	17	nmod:poss	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	men	man	NOUN	NNS	Number=Plur	12	obl	_	_
+19	;	;	PUNCT	:	_	22	punct	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	22	nsubj	_	_
+22	saw	see	VERB	VBD	Tense=Past	3	conj	_	_
+23	many	many	ADJ	JJ	_	24	amod	_	_
+24	fall	fall	VERB	VB	VerbForm=Inf	22	xcomp	_	_
+25	down	down	ADV	RB	_	24	advmod	_	_
+26	at	at	ADP	IN	_	28	case	_	_
+27	his	his	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	28	nmod:poss	_	_
+28	feet	foot	NOUN	NNS	Number=Plur	24	obl	_	_
+29	and	and	CCONJ	CC	_	30	cc	_	_
+30	worship	worship	VERB	VB	VerbForm=Inf	24	conj	_	_
+31	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	30	obj	_	_
+32	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that I beheld that the rod of iron, which my father had seen, was the word of God, which led to the fountain of living waters, or to the tree of life; which waters are a representation of the love of God; and I also beheld that the tree of life was a representation of the love of God.
+# sent_id = 314
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	beheld	behold	VERB	VBD	Tense=Past	3	ccomp	_	_
+9	that	that	SCONJ	IN	_	21	mark	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	rod	rod	NOUN	NN	Number=Sing	21	nsubj	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	iron	iron	NOUN	NN	Number=Sing	11	nmod	_	_
+14	,	,	PUNCT	,	_	19	punct	_	_
+15	which	which	PRON	WDT	_	19	obj	_	_
+16	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	17	nmod:poss	_	_
+17	father	father	NOUN	NN	Number=Sing	19	nsubj	_	_
+18	had	have	AUX	VBD	Tense=Past	19	aux	_	_
+19	seen	see	VERB	VBN	Tense=Past|VerbForm=Part	11	acl:relcl	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	was	be	AUX	VBD	Tense=Past	22	cop	_	_
+22	the	the	DET	DT	_	8	ccomp	_	_
+23	word	word	NOUN	NN	Number=Sing	22	nmod	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	God	God	PROPN	NNP	Number=Sing	23	nmod	_	_
+26	,	,	PUNCT	,	_	28	punct	_	_
+27	which	which	PRON	WDT	_	28	nsubj	_	_
+28	led	lead	VERB	VBD	Tense=Past	22	acl:relcl	_	_
+29	to	to	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	fountain	fountain	NOUN	NN	Number=Sing	28	obl	_	_
+32	of	of	ADP	IN	_	34	case	_	_
+33	living	live	VERB	VBG	VerbForm=Part	34	amod	_	_
+34	waters	water	NOUN	NNS	Number=Plur	31	nmod	_	_
+35	,	,	PUNCT	,	_	37	punct	_	_
+36	or	or	CCONJ	CC	_	37	cc	_	_
+37	to	to	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	_	39	det	_	_
+39	tree	tree	NOUN	NN	Number=Sing	31	conj	_	_
+40	of	of	ADP	IN	_	41	case	_	_
+41	life	life	NOUN	NN	Number=Sing	39	nmod	_	_
+42	;	;	PUNCT	:	_	45	punct	_	_
+43	which	which	PRON	WDT	_	44	nsubj	_	_
+44	waters	water	NOUN	NNS	Number=Plur	45	dislocated	_	_
+45	are	be	VERB	VBZ	Number=Plur|Person=3|Tense=Pres	22	acl:relcl	_	_
+46	a	a	DET	DT	_	47	det	_	_
+47	representation	representation	NOUN	NN	Number=Sing	45	xcomp	_	_
+48	of	of	ADP	IN	_	51	case	_	_
+49	the	the	DET	DT	_	51	det	_	_
+50	love	love	NOUN	NN	Number=Sing	51	nmod:poss	_	_
+51	of	of	ADP	IN	_	52	case	_	_
+52	God	God	PROPN	NNP	Number=Sing	47	nmod	_	_
+53	;	;	PUNCT	:	_	57	punct	_	_
+54	and	and	CCONJ	CC	_	57	cc	_	_
+55	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	57	nsubj	_	_
+56	also	also	ADV	RB	_	57	advmod	_	_
+57	beheld	behold	VERB	VBD	Tense=Past	8	conj	_	_
+58	that	that	SCONJ	IN	_	63	mark	_	_
+59	the	the	DET	DT	_	61	det	_	_
+60	tree	tree	NOUN	NN	Number=Sing	61	nmod:poss	_	_
+61	of	of	ADP	IN	_	62	case	_	_
+62	life	life	NOUN	NN	Number=Sing	63	nsubj	_	_
+63	was	be	AUX	VBD	Tense=Past	57	ccomp	_	_
+64	a	a	DET	DT	_	65	det	_	_
+65	representation	representation	NOUN	NN	Number=Sing	63	xcomp	_	_
+66	of	of	ADP	IN	_	69	case	_	_
+67	the	the	DET	DT	_	69	det	_	_
+68	love	love	NOUN	NN	Number=Sing	69	nmod:poss	_	_
+69	of	of	ADP	IN	_	70	case	_	_
+70	God	God	PROPN	NNP	Number=Sing	65	nmod	_	_
+71	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And the angel said unto me again: Look and behold the condescension of God!
+# sent_id = 315
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	angel	angel	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	said	say	VERB	VBD	Tense=Past	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	4	obl	_	_
+7	again	again	ADV	RB	_	4	advmod	_	_
+8	:	:	PUNCT	:	_	9	punct	_	_
+9	Look	look	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	behold	behold	VERB	VB	VerbForm=Inf	9	conj	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	condescension	condescension	NOUN	NN	Number=Sing	11	obj	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	God	God	PROPN	NNP	Number=Sing	13	nmod	_	_
+16	!	!	PUNCT	.	_	4	punct	_	_
+
+# text = And I looked and beheld the Redeemer of the world, of whom my father had spoken; and I also beheld the prophet who should prepare the way before him.
+# sent_id = 316
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	looked	look	VERB	VBD	Tense=Past	0	root	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	beheld	behold	VERB	VBD	Tense=Past	3	conj	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	Redeemer	Redeemer	PROPN	NNP	Number=Sing	5	obj	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	world	world	NOUN	NN	Number=Sing	7	nmod	_	_
+11	,	,	PUNCT	,	_	17	punct	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	whom	whom	PRON	WP	_	17	obl	_	_
+14	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	15	nmod:poss	_	_
+15	father	father	NOUN	NN	Number=Sing	17	nsubj	_	_
+16	had	have	AUX	VBD	Tense=Past	17	aux	_	_
+17	spoken	speak	VERB	VBN	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
+18	;	;	PUNCT	:	_	22	punct	_	_
+19	and	and	CCONJ	CC	_	22	cc	_	_
+20	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	22	nsubj	_	_
+21	also	also	ADV	RB	_	22	advmod	_	_
+22	beheld	behold	VERB	VBD	Tense=Past	3	conj	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	prophet	prophet	NOUN	NN	Number=Sing	22	obj	_	_
+25	who	who	PRON	WP	_	27	nsubj	_	_
+26	should	shall	AUX	MD	_	27	aux	_	_
+27	prepare	prepare	VERB	VB	VerbForm=Inf	24	acl:relcl	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	way	way	NOUN	NN	Number=Sing	27	obj	_	_
+30	before	before	ADP	IN	_	31	case	_	_
+31	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	27	obl	_	_
+32	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And the Lamb of God went forth and was baptized of him; and after he was baptized, I beheld the heavens open, and the Holy Ghost come down out of heaven and abide upon him in the form of a dove.
+# sent_id = 317
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	Lamb	Lamb	PROPN	NNP	Number=Sing	6	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	God	God	PROPN	NNP	Number=Sing	3	nmod	_	_
+6	went	go	VERB	VBD	Tense=Past	0	root	_	_
+7	forth	forth	ADV	RB	_	6	advmod	_	_
+8	and	and	CCONJ	CC	_	10	cc	_	_
+9	was	be	AUX	VBD	Tense=Past	10	aux:pass	_	_
+10	baptized	baptize	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	6	conj	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	10	obl:agent	_	_
+13	;	;	PUNCT	:	_	21	punct	_	_
+14	and	and	CCONJ	CC	_	21	cc	_	_
+15	after	after	SCONJ	IN	_	18	mark	_	_
+16	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	18	nsubj:pass	_	_
+17	was	be	AUX	VBD	Tense=Past	18	aux:pass	_	_
+18	baptized	baptize	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	21	advcl	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	21	nsubj	_	_
+21	beheld	behold	VERB	VBD	Tense=Past	6	conj	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	heavens	heaven	NOUN	NNS	Number=Plur	21	obj	_	_
+24	open	open	VERB	VB	VerbForm=Inf	21	xcomp	_	_
+25	,	,	PUNCT	,	_	29	punct	_	_
+26	and	and	CCONJ	CC	_	29	cc	_	_
+27	the	the	DET	DT	_	29	det	_	_
+28	Holy	Holy	ADJ	NNP	_	29	amod	_	_
+29	Ghost	Ghost	PROPN	NNP	Number=Sing	24	conj	_	_
+30	come	come	VERB	VB	VerbForm=Inf	21	xcomp	_	_
+31	down	down	ADV	RB	_	30	advmod	_	_
+32	out	out	ADP	RP	_	33	case	_	_
+33	of	of	ADP	IN	_	34	case	_	_
+34	heaven	heaven	NOUN	NN	Number=Sing	30	obl	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	abide	abide	VERB	VB	VerbForm=Inf	30	conj	_	_
+37	upon	upon	ADP	IN	_	38	case	_	_
+38	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	36	obl	_	_
+39	in	in	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	_	41	det	_	_
+41	form	form	NOUN	NN	Number=Sing	36	obl	_	_
+42	of	of	ADP	IN	_	44	case	_	_
+43	a	a	DET	DT	_	44	det	_	_
+44	dove	dove	NOUN	NN	Number=Sing	41	nmod	_	_
+45	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And I beheld that he went forth ministering unto the people, in power and great glory; and the multitudes were gathered together to hear him; and I beheld that they cast him out from among them.
+# sent_id = 318
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	beheld	behold	VERB	VBD	Tense=Past	0	root	_	_
+4	that	that	SCONJ	IN	_	6	mark	_	_
+5	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	6	nsubj	_	_
+6	went	go	VERB	VBD	Tense=Past	3	ccomp	_	_
+7	forth	forth	ADV	RB	_	6	advmod	_	_
+8	ministering	minister	VERB	VBG	VerbForm=Part	6	advcl	_	_
+9	unto	unto	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	people	people	NOUN	NNS	Number=Plur	8	obl	_	_
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	in	in	ADP	IN	_	14	case	_	_
+14	power	power	NOUN	NN	Number=Sing	6	obl	_	_
+15	and	and	CCONJ	CC	_	17	cc	_	_
+16	great	great	ADJ	JJ	_	17	amod	_	_
+17	glory	glory	NOUN	NN	Number=Sing	14	conj	_	_
+18	;	;	PUNCT	:	_	23	punct	_	_
+19	and	and	CCONJ	CC	_	23	cc	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	multitudes	multitude	NOUN	NNS	Number=Plur	23	nsubj:pass	_	_
+22	were	be	AUX	VBD	Tense=Past	23	aux:pass	_	_
+23	gathered	gather	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	3	conj	_	_
+24	together	together	ADV	RB	_	23	advmod	_	_
+25	to	to	PART	TO	_	26	mark	_	_
+26	hear	hear	VERB	VB	VerbForm=Inf	23	advcl	_	_
+27	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	26	obj	_	_
+28	;	;	PUNCT	:	_	31	punct	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	31	nsubj	_	_
+31	beheld	behold	VERB	VBD	Tense=Past	3	conj	_	_
+32	that	that	SCONJ	IN	_	34	mark	_	_
+33	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	34	nsubj	_	_
+34	cast	cast	VERB	VBD	Tense=Past	31	ccomp	_	_
+35	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	34	obj	_	_
+36	out	out	ADP	RP	_	34	compound:prt	_	_
+37	from	from	ADP	IN	_	39	case	_	_
+38	among	among	ADP	IN	_	39	case	_	_
+39	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	34	obl	_	_
+40	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And I also beheld twelve others following him.
+# sent_id = 319
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+3	also	also	ADV	RB	_	4	advmod	_	_
+4	beheld	behold	VERB	VBD	Tense=Past	0	root	_	_
+5	twelve	twelve	NUM	CD	NumType=Card	6	nummod	_	_
+6	others	other	NOUN	NNS	Number=Plur	4	obj	_	_
+7	following	follow	VERB	VBG	VerbForm=Part	6	acl	_	_
+8	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	7	obj	_	_
+9	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that they were carried away in the Spirit from before my face, and I saw them not.
+# sent_id = 320
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	9	nsubj:pass	_	_
+8	were	be	AUX	VBD	Tense=Past	9	aux:pass	_	_
+9	carried	carry	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	3	ccomp	_	_
+10	away	away	ADV	RB	_	9	advmod	_	_
+11	in	in	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	Spirit	Spirit	PROPN	NNP	Number=Sing	9	obl	_	_
+14	from	from	ADP	IN	_	16	case	_	_
+15	before	before	ADP	IN	_	17	case	_	_
+16	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	17	nmod:poss	_	_
+17	face	face	NOUN	NN	Number=Sing	9	obl	_	_
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	21	nsubj	_	_
+21	saw	see	VERB	VBD	Tense=Past	9	conj	_	_
+22	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	21	obj	_	_
+23	not	not	PART	RB	_	21	advmod	_	_
+24	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that the angel spake unto me again, saying: Look!
+# sent_id = 321
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	angel	angel	NOUN	NN	Number=Sing	9	nsubj	_	_
+9	spake	speak	VERB	VBD	Tense=Past	3	ccomp	_	_
+10	unto	unto	ADP	IN	_	11	case	_	_
+11	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	9	obl	_	_
+12	again	again	ADV	RB	_	9	advmod	_	_
+13	,	,	PUNCT	,	_	14	punct	_	_
+14	saying	say	VERB	VBG	VerbForm=Part	9	advcl	_	_
+15	:	:	PUNCT	:	_	16	punct	_	_
+16	Look	look	VERB	VB	VerbForm=Inf	14	ccomp	_	_
+17	!	!	PUNCT	.	_	3	punct	_	_
+
+# text = And I looked, and I beheld the heavens open again, and I saw angels descending upon the children of men; and they did minister unto them.
+# sent_id = 322
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	looked	look	VERB	VBD	Tense=Past	0	root	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	and	and	CCONJ	CC	_	7	cc	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+7	beheld	behold	VERB	VBD	Tense=Past	3	conj	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	heavens	heaven	NOUN	NNS	Number=Plur	7	obj	_	_
+10	open	open	VERB	VB	VerbForm=Inf	7	xcomp	_	_
+11	again	again	ADV	RB	_	10	advmod	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	15	nsubj	_	_
+15	saw	see	VERB	VBD	Tense=Past	3	conj	_	_
+16	angels	angel	NOUN	NNS	Number=Plur	15	obj	_	_
+17	descending	descend	VERB	VBG	VerbForm=Part	16	acl	_	_
+18	upon	upon	ADP	IN	_	21	case	_	_
+19	the	the	DET	DT	_	21	det	_	_
+20	children	children	NOUN	NNS	Number=Plur	21	nmod:poss	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	men	man	NOUN	NNS	Number=Plur	17	obl	_	_
+23	;	;	PUNCT	:	_	27	punct	_	_
+24	and	and	CCONJ	CC	_	27	cc	_	_
+25	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	27	nsubj	_	_
+26	did	do	AUX	VBD	Tense=Past	27	aux	_	_
+27	minister	minister	VERB	VB	VerbForm=Inf	3	conj	_	_
+28	unto	unto	ADP	IN	_	29	case	_	_
+29	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	27	obl	_	_
+30	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he spake unto me again, saying: Look!
+# sent_id = 323
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
+3	spake	speak	VERB	VBD	Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	3	obl	_	_
+6	again	again	ADV	RB	_	3	advmod	_	_
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	saying	say	VERB	VBG	VerbForm=Part	3	advcl	_	_
+9	:	:	PUNCT	:	_	10	punct	_	_
+10	Look	look	VERB	VB	VerbForm=Inf	8	ccomp	_	_
+11	!	!	PUNCT	.	_	3	punct	_	_
+
+# text = And I looked, and I beheld the Lamb of God going forth among the children of men.
+# sent_id = 324
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	looked	look	VERB	VBD	Tense=Past	0	root	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	and	and	CCONJ	CC	_	7	cc	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+7	beheld	behold	VERB	VBD	Tense=Past	3	conj	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Lamb	Lamb	PROPN	NNP	Number=Sing	7	obj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	God	God	PROPN	NNP	Number=Sing	9	nmod	_	_
+12	going	go	VERB	VBG	VerbForm=Part	9	acl	_	_
+13	forth	forth	ADV	RB	_	12	advmod	_	_
+14	among	among	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	_	17	det	_	_
+16	children	children	NOUN	NNS	Number=Plur	17	nmod:poss	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	men	man	NOUN	NNS	Number=Plur	12	obl	_	_
+19	.	.	PUNCT	.	_	3	punct	_	_
+

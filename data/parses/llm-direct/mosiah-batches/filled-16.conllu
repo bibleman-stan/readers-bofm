@@ -1,0 +1,717 @@
+# text = And have ye taught this people that they should do all these things?
+# sent_id = 375
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	have	have	AUX	VBP	_	4	aux	_	_
+3	ye	ye	PRON	PRP	_	4	nsubj	_	_
+4	taught	teach	VERB	VBN	_	0	root	_	_
+5	this	this	DET	DT	_	6	det	_	_
+6	people	people	NOUN	NNS	_	4	obj	_	_
+7	that	that	SCONJ	IN	_	10	mark	_	_
+8	they	they	PRON	PRP	_	10	nsubj	_	_
+9	should	should	AUX	MD	_	10	aux	_	_
+10	do	do	VERB	VB	_	4	ccomp	_	_
+11	all	all	DET	PDT	_	13	det:predet	_	_
+12	these	these	DET	DT	_	13	det	_	_
+13	things	thing	NOUN	NNS	_	10	obj	_	_
+14	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = I say unto you, Nay, ye have not.
+# sent_id = 376
+1	I	I	PRON	PRP	_	2	nsubj	_	_
+2	say	say	VERB	VBP	_	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	_	2	obl	_	_
+5	,	,	PUNCT	,	_	2	punct	_	_
+6	Nay	nay	INTJ	UH	_	2	discourse	_	_
+7	,	,	PUNCT	,	_	2	punct	_	_
+8	ye	ye	PRON	PRP	_	9	nsubj	_	_
+9	have	have	VERB	VBP	_	2	parataxis	_	_
+10	not	not	PART	RB	_	9	advmod	_	_
+11	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = And now when the king had heard these words, he said unto his priests:
+# sent_id = 377
+1	And	and	CCONJ	CC	_	12	cc	_	_
+2	now	now	ADV	RB	_	12	advmod	_	_
+3	when	when	SCONJ	WRB	_	7	mark	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	king	king	NOUN	NN	_	7	nsubj	_	_
+6	had	have	AUX	VBD	_	7	aux	_	_
+7	heard	hear	VERB	VBN	_	12	advcl	_	_
+8	these	these	DET	DT	_	9	det	_	_
+9	words	word	NOUN	NNS	_	7	obj	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	he	he	PRON	PRP	_	12	nsubj	_	_
+12	said	say	VERB	VBD	_	0	root	_	_
+13	unto	unto	ADP	IN	_	15	case	_	_
+14	his	he	PRON	PRP$	_	15	nmod:poss	_	_
+15	priests	priest	NOUN	NNS	_	12	obl	_	_
+16	:	:	PUNCT	:	_	12	punct	_	_
+
+# text = Away with this fellow, and slay him; for what have we to do with him, for he is mad.
+# sent_id = 378
+1	Away	away	ADV	RB	_	0	root	_	_
+2	with	with	ADP	IN	_	4	case	_	_
+3	this	this	DET	DT	_	4	det	_	_
+4	fellow	fellow	NOUN	NN	_	1	obl	_	_
+5	,	,	PUNCT	,	_	1	punct	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	slay	slay	VERB	VB	_	1	conj	_	_
+8	him	he	PRON	PRP	_	7	obj	_	_
+9	;	;	PUNCT	;	_	1	punct	_	_
+10	for	for	SCONJ	IN	_	15	mark	_	_
+11	what	what	PRON	WP	_	15	obj	_	_
+12	have	have	AUX	VBP	_	15	aux	_	_
+13	we	we	PRON	PRP	_	15	nsubj	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	do	do	VERB	VB	_	1	advcl	_	_
+16	with	with	ADP	IN	_	17	case	_	_
+17	him	he	PRON	PRP	_	15	obl	_	_
+18	,	,	PUNCT	,	_	1	punct	_	_
+19	for	for	SCONJ	IN	_	22	mark	_	_
+20	he	he	PRON	PRP	_	22	nsubj	_	_
+21	is	be	AUX	VBZ	_	22	cop	_	_
+22	mad	mad	ADJ	JJ	_	1	advcl	_	_
+23	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = And they stood forth and attempted to lay their hands on him; but he withstood them, and said unto them:
+# sent_id = 379
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	they	they	PRON	PRP	_	3	nsubj	_	_
+3	stood	stand	VERB	VBD	_	0	root	_	_
+4	forth	forth	ADV	RB	_	3	advmod	_	_
+5	and	and	CCONJ	CC	_	6	cc	_	_
+6	attempted	attempt	VERB	VBD	_	3	conj	_	_
+7	to	to	PART	TO	_	8	mark	_	_
+8	lay	lay	VERB	VB	_	6	xcomp	_	_
+9	their	they	PRON	PRP$	_	10	nmod:poss	_	_
+10	hands	hand	NOUN	NNS	_	8	obj	_	_
+11	on	on	ADP	IN	_	12	case	_	_
+12	him	he	PRON	PRP	_	8	obl	_	_
+13	;	;	PUNCT	;	_	3	punct	_	_
+14	but	but	CCONJ	CC	_	16	cc	_	_
+15	he	he	PRON	PRP	_	16	nsubj	_	_
+16	withstood	withstand	VERB	VBD	_	3	conj	_	_
+17	them	they	PRON	PRP	_	16	obj	_	_
+18	,	,	PUNCT	,	_	3	punct	_	_
+19	and	and	CCONJ	CC	_	20	cc	_	_
+20	said	say	VERB	VBD	_	3	conj	_	_
+21	unto	unto	ADP	IN	_	22	case	_	_
+22	them	they	PRON	PRP	_	20	obl	_	_
+23	:	:	PUNCT	:	_	3	punct	_	_
+
+# text = Touch me not, for God shall smite you if ye lay your hands upon me, for I have not delivered the message which the Lord sent me to deliver; neither have I told you that which ye requested that I should tell; therefore, God will not suffer that I shall be destroyed at this time.
+# sent_id = 380
+1	Touch	touch	VERB	VB	_	0	root	_	_
+2	me	I	PRON	PRP	_	1	obj	_	_
+3	not	not	PART	RB	_	1	advmod	_	_
+4	,	,	PUNCT	,	_	1	punct	_	_
+5	for	for	SCONJ	IN	_	8	mark	_	_
+6	God	God	PROPN	NNP	_	8	nsubj	_	_
+7	shall	shall	AUX	MD	_	8	aux	_	_
+8	smite	smite	VERB	VB	_	1	advcl	_	_
+9	you	you	PRON	PRP	_	8	obj	_	_
+10	if	if	SCONJ	IN	_	12	mark	_	_
+11	ye	ye	PRON	PRP	_	12	nsubj	_	_
+12	lay	lay	VERB	VBP	_	8	advcl	_	_
+13	your	you	PRON	PRP$	_	14	nmod:poss	_	_
+14	hands	hand	NOUN	NNS	_	12	obj	_	_
+15	upon	upon	ADP	IN	_	16	case	_	_
+16	me	I	PRON	PRP	_	12	obl	_	_
+17	,	,	PUNCT	,	_	1	punct	_	_
+18	for	for	SCONJ	IN	_	22	mark	_	_
+19	I	I	PRON	PRP	_	22	nsubj	_	_
+20	have	have	AUX	VBP	_	22	aux	_	_
+21	not	not	PART	RB	_	22	advmod	_	_
+22	delivered	deliver	VERB	VBN	_	1	advcl	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	message	message	NOUN	NN	_	22	obj	_	_
+25	which	which	PRON	WDT	_	28	obj	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	Lord	Lord	PROPN	NNP	_	28	nsubj	_	_
+28	sent	send	VERB	VBD	_	24	acl:relcl	_	_
+29	me	I	PRON	PRP	_	28	obj	_	_
+30	to	to	PART	TO	_	31	mark	_	_
+31	deliver	deliver	VERB	VB	_	28	xcomp	_	_
+32	;	;	PUNCT	;	_	1	punct	_	_
+33	neither	neither	ADV	RB	_	36	advmod	_	_
+34	have	have	AUX	VBP	_	36	aux	_	_
+35	I	I	PRON	PRP	_	36	nsubj	_	_
+36	told	tell	VERB	VBN	_	22	conj	_	_
+37	you	you	PRON	PRP	_	36	iobj	_	_
+38	that	that	PRON	DT	_	36	obj	_	_
+39	which	which	PRON	WDT	_	41	obj	_	_
+40	ye	ye	PRON	PRP	_	41	nsubj	_	_
+41	requested	request	VERB	VBD	_	38	acl:relcl	_	_
+42	that	that	SCONJ	IN	_	45	mark	_	_
+43	I	I	PRON	PRP	_	45	nsubj	_	_
+44	should	should	AUX	MD	_	45	aux	_	_
+45	tell	tell	VERB	VB	_	41	ccomp	_	_
+46	;	;	PUNCT	;	_	1	punct	_	_
+47	therefore	therefore	ADV	RB	_	52	advmod	_	_
+48	,	,	PUNCT	,	_	52	punct	_	_
+49	God	God	PROPN	NNP	_	52	nsubj	_	_
+50	will	will	AUX	MD	_	52	aux	_	_
+51	not	not	PART	RB	_	52	advmod	_	_
+52	suffer	suffer	VERB	VB	_	1	advcl	_	_
+53	that	that	SCONJ	IN	_	57	mark	_	_
+54	I	I	PRON	PRP	_	57	nsubj:pass	_	_
+55	shall	shall	AUX	MD	_	57	aux	_	_
+56	be	be	AUX	VB	_	57	aux:pass	_	_
+57	destroyed	destroy	VERB	VBN	_	52	ccomp	_	_
+58	at	at	ADP	IN	_	60	case	_	_
+59	this	this	DET	DT	_	60	det	_	_
+60	time	time	NOUN	NN	_	57	obl	_	_
+61	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = But I must fulfil the commandments wherewith God has commanded me; and because I have told you the truth ye are angry with me.
+# sent_id = 381
+1	But	but	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	_	4	nsubj	_	_
+3	must	must	AUX	MD	_	4	aux	_	_
+4	fulfil	fulfil	VERB	VB	_	0	root	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	commandments	commandment	NOUN	NNS	_	4	obj	_	_
+7	wherewith	wherewith	ADV	WRB	_	10	obl	_	_
+8	God	God	PROPN	NNP	_	10	nsubj	_	_
+9	has	have	AUX	VBZ	_	10	aux	_	_
+10	commanded	command	VERB	VBN	_	6	acl:relcl	_	_
+11	me	I	PRON	PRP	_	10	obj	_	_
+12	;	;	PUNCT	;	_	4	punct	_	_
+13	and	and	CCONJ	CC	_	23	cc	_	_
+14	because	because	SCONJ	IN	_	19	mark	_	_
+15	I	I	PRON	PRP	_	19	nsubj	_	_
+16	have	have	AUX	VBP	_	19	aux	_	_
+17	told	tell	VERB	VBN	_	19	ccomp	_	_
+18	you	you	PRON	PRP	_	17	iobj	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	truth	truth	NOUN	NN	_	17	obj	_	_
+21	ye	ye	PRON	PRP	_	23	nsubj	_	_
+22	are	be	AUX	VBZ	_	23	cop	_	_
+23	angry	angry	ADJ	JJ	_	4	advcl	_	_
+24	with	with	ADP	IN	_	25	case	_	_
+25	me	I	PRON	PRP	_	23	obl	_	_
+26	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And again, because I have spoken the word of God ye have judged me that I am mad.
+# sent_id = 382
+1	And	and	CCONJ	CC	_	14	cc	_	_
+2	again	again	ADV	RB	_	14	advmod	_	_
+3	,	,	PUNCT	,	_	14	punct	_	_
+4	because	because	SCONJ	IN	_	8	mark	_	_
+5	I	I	PRON	PRP	_	8	nsubj	_	_
+6	have	have	AUX	VBP	_	8	aux	_	_
+7	spoken	speak	VERB	VBN	_	8	ccomp	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	word	word	NOUN	NN	_	7	obj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	God	God	PROPN	NNP	_	9	nmod	_	_
+12	ye	ye	PRON	PRP	_	14	nsubj	_	_
+13	have	have	AUX	VBP	_	14	aux	_	_
+14	judged	judge	VERB	VBN	_	0	root	_	_
+15	me	I	PRON	PRP	_	14	obj	_	_
+16	that	that	SCONJ	IN	_	18	mark	_	_
+17	I	I	PRON	PRP	_	18	nsubj	_	_
+18	am	be	AUX	VBP	_	14	advcl	_	_
+19	mad	mad	ADJ	JJ	_	18	xcomp	_	_
+20	.	.	PUNCT	.	_	14	punct	_	_
+
+# text = Now it came to pass after Abinadi had spoken these words that the people of king Noah durst not lay their hands on him, for the Spirit of the Lord was upon him; and his face shone with exceeding luster, even as Moses' did while in the mount of Sinai, while speaking with the Lord.
+# sent_id = 383
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	after	after	SCONJ	IN	_	9	mark	_	_
+7	Abinadi	Abinadi	PROPN	NNP	_	9	nsubj	_	_
+8	had	have	AUX	VBD	_	9	aux	_	_
+9	spoken	speak	VERB	VBN	_	5	advcl	_	_
+10	these	these	DET	DT	_	11	det	_	_
+11	words	word	NOUN	NNS	_	9	obj	_	_
+12	that	that	SCONJ	IN	_	20	mark	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	people	people	NOUN	NNS	_	20	nsubj	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	king	king	NOUN	NN	_	17	compound	_	_
+17	Noah	Noah	PROPN	NNP	_	14	nmod	_	_
+18	durst	dare	AUX	VBD	_	20	aux	_	_
+19	not	not	PART	RB	_	20	advmod	_	_
+20	lay	lay	VERB	VB	_	5	ccomp	_	_
+21	their	they	PRON	PRP$	_	22	nmod:poss	_	_
+22	hands	hand	NOUN	NNS	_	20	obj	_	_
+23	on	on	ADP	IN	_	24	case	_	_
+24	him	he	PRON	PRP	_	20	obl	_	_
+25	,	,	PUNCT	,	_	20	punct	_	_
+26	for	for	SCONJ	IN	_	32	mark	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	Spirit	Spirit	PROPN	NNP	_	32	nsubj	_	_
+29	of	of	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	Lord	Lord	PROPN	NNP	_	28	nmod	_	_
+32	was	be	AUX	VBD	_	20	advcl	_	_
+33	upon	upon	ADP	IN	_	34	case	_	_
+34	him	he	PRON	PRP	_	32	obl	_	_
+35	;	;	PUNCT	;	_	3	punct	_	_
+36	and	and	CCONJ	CC	_	39	cc	_	_
+37	his	he	PRON	PRP$	_	38	nmod:poss	_	_
+38	face	face	NOUN	NN	_	39	nsubj	_	_
+39	shone	shine	VERB	VBD	_	3	conj	_	_
+40	with	with	ADP	IN	_	42	case	_	_
+41	exceeding	exceeding	ADJ	JJ	_	42	amod	_	_
+42	luster	luster	NOUN	NN	_	39	obl	_	_
+43	,	,	PUNCT	,	_	39	punct	_	_
+44	even	even	ADV	RB	_	45	advmod	_	_
+45	as	as	SCONJ	IN	_	48	mark	_	_
+46	Moses	Moses	PROPN	NNP	_	47	nmod:poss	_	_
+47	'	's	PART	POS	_	48	nsubj	_	_
+48	did	do	VERB	VBD	_	39	advcl	_	_
+49	while	while	SCONJ	IN	_	51	mark	_	_
+50	in	in	ADP	IN	_	51	case	_	_
+51	the	the	DET	DT	_	52	det	_	_
+52	mount	mount	NOUN	NN	_	48	advcl	_	_
+53	of	of	ADP	IN	_	54	case	_	_
+54	Sinai	Sinai	PROPN	NNP	_	52	nmod	_	_
+55	,	,	PUNCT	,	_	39	punct	_	_
+56	while	while	SCONJ	IN	_	57	mark	_	_
+57	speaking	speak	VERB	VBG	_	39	advcl	_	_
+58	with	with	ADP	IN	_	60	case	_	_
+59	the	the	DET	DT	_	60	det	_	_
+60	Lord	Lord	PROPN	NNP	_	57	obl	_	_
+61	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he spake with power and authority from God; and he continued his words, saying:
+# sent_id = 384
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	_	3	nsubj	_	_
+3	spake	speak	VERB	VBD	_	0	root	_	_
+4	with	with	ADP	IN	_	5	case	_	_
+5	power	power	NOUN	NN	_	3	obl	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	authority	authority	NOUN	NN	_	5	conj	_	_
+8	from	from	ADP	IN	_	9	case	_	_
+9	God	God	PROPN	NNP	_	5	nmod	_	_
+10	;	;	PUNCT	;	_	3	punct	_	_
+11	and	and	CCONJ	CC	_	13	cc	_	_
+12	he	he	PRON	PRP	_	13	nsubj	_	_
+13	continued	continue	VERB	VBD	_	3	conj	_	_
+14	his	he	PRON	PRP$	_	15	nmod:poss	_	_
+15	words	word	NOUN	NNS	_	13	obj	_	_
+16	,	,	PUNCT	,	_	13	punct	_	_
+17	saying	say	VERB	VBG	_	13	advcl	_	_
+18	:	:	PUNCT	:	_	13	punct	_	_
+
+# text = Ye see that ye have not power to slay me, therefore I finish my message.
+# sent_id = 385
+1	Ye	ye	PRON	PRP	_	2	nsubj	_	_
+2	see	see	VERB	VBP	_	0	root	_	_
+3	that	that	SCONJ	IN	_	7	mark	_	_
+4	ye	ye	PRON	PRP	_	7	nsubj	_	_
+5	have	have	AUX	VBP	_	7	aux	_	_
+6	not	not	PART	RB	_	7	advmod	_	_
+7	power	power	NOUN	NN	_	2	ccomp	_	_
+8	to	to	PART	TO	_	9	mark	_	_
+9	slay	slay	VERB	VB	_	7	acl	_	_
+10	me	I	PRON	PRP	_	9	obj	_	_
+11	,	,	PUNCT	,	_	2	punct	_	_
+12	therefore	therefore	ADV	RB	_	14	advmod	_	_
+13	I	I	PRON	PRP	_	14	nsubj	_	_
+14	finish	finish	VERB	VBP	_	2	conj	_	_
+15	my	I	PRON	PRP$	_	16	nmod:poss	_	_
+16	message	message	NOUN	NN	_	14	obj	_	_
+17	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = Yea, and I perceive that it cuts you to your hearts because I tell you the truth concerning your iniquities.
+# sent_id = 386
+1	Yea	yea	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	and	and	CCONJ	CC	_	5	cc	_	_
+4	I	I	PRON	PRP	_	5	nsubj	_	_
+5	perceive	perceive	VERB	VBP	_	0	root	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	it	it	PRON	PRP	_	8	nsubj	_	_
+8	cuts	cut	VERB	VBZ	_	5	ccomp	_	_
+9	you	you	PRON	PRP	_	8	obj	_	_
+10	to	to	ADP	IN	_	12	case	_	_
+11	your	you	PRON	PRP$	_	12	nmod:poss	_	_
+12	hearts	heart	NOUN	NNS	_	8	obl	_	_
+13	because	because	SCONJ	IN	_	15	mark	_	_
+14	I	I	PRON	PRP	_	15	nsubj	_	_
+15	tell	tell	VERB	VBP	_	8	advcl	_	_
+16	you	you	PRON	PRP	_	15	iobj	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	truth	truth	NOUN	NN	_	15	obj	_	_
+19	concerning	concerning	ADP	IN	_	21	case	_	_
+20	your	you	PRON	PRP$	_	21	nmod:poss	_	_
+21	iniquities	iniquity	NOUN	NNS	_	15	obl	_	_
+22	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Yea, and my words fill you with wonder and amazement, and with anger.
+# sent_id = 387
+1	Yea	yea	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	6	punct	_	_
+3	and	and	CCONJ	CC	_	6	cc	_	_
+4	my	I	PRON	PRP$	_	5	nmod:poss	_	_
+5	words	word	NOUN	NNS	_	6	nsubj	_	_
+6	fill	fill	VERB	VBP	_	0	root	_	_
+7	you	you	PRON	PRP	_	6	obj	_	_
+8	with	with	ADP	IN	_	9	case	_	_
+9	wonder	wonder	NOUN	NN	_	6	obl	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	amazement	amazement	NOUN	NN	_	9	conj	_	_
+12	,	,	PUNCT	,	_	9	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	with	with	ADP	IN	_	15	case	_	_
+15	anger	anger	NOUN	NN	_	9	conj	_	_
+16	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = But I finish my message; and then it matters not whither I go, if it so be that I am saved.
+# sent_id = 388
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	_	3	nsubj	_	_
+3	finish	finish	VERB	VBP	_	0	root	_	_
+4	my	I	PRON	PRP$	_	5	nmod:poss	_	_
+5	message	message	NOUN	NN	_	3	obj	_	_
+6	;	;	PUNCT	;	_	3	punct	_	_
+7	and	and	CCONJ	CC	_	10	cc	_	_
+8	then	then	ADV	RB	_	10	advmod	_	_
+9	it	it	PRON	PRP	_	10	nsubj	_	_
+10	matters	matter	VERB	VBZ	_	3	conj	_	_
+11	not	not	PART	RB	_	10	advmod	_	_
+12	whither	whither	ADV	WRB	_	14	advmod	_	_
+13	I	I	PRON	PRP	_	14	nsubj	_	_
+14	go	go	VERB	VBP	_	10	ccomp	_	_
+15	,	,	PUNCT	,	_	10	punct	_	_
+16	if	if	SCONJ	IN	_	19	mark	_	_
+17	it	it	PRON	PRP	_	19	expl	_	_
+18	so	so	ADV	RB	_	19	advmod	_	_
+19	be	be	VERB	VBP	_	10	advcl	_	_
+20	that	that	SCONJ	IN	_	23	mark	_	_
+21	I	I	PRON	PRP	_	23	nsubj:pass	_	_
+22	am	be	AUX	VBP	_	23	aux:pass	_	_
+23	saved	save	VERB	VBN	_	19	ccomp	_	_
+24	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But this much I tell you, what you do with me, after this, shall be as a type and a shadow of things which are to come.
+# sent_id = 389
+1	But	but	CCONJ	CC	_	5	cc	_	_
+2	this	this	DET	DT	_	3	det	_	_
+3	much	much	ADV	RB	_	5	advmod	_	_
+4	I	I	PRON	PRP	_	5	nsubj	_	_
+5	tell	tell	VERB	VBP	_	0	root	_	_
+6	you	you	PRON	PRP	_	5	iobj	_	_
+7	,	,	PUNCT	,	_	5	punct	_	_
+8	what	what	PRON	WP	_	10	nsubj	_	_
+9	you	you	PRON	PRP	_	10	nsubj	_	_
+10	do	do	VERB	VBP	_	18	csubj	_	_
+11	with	with	ADP	IN	_	12	case	_	_
+12	me	I	PRON	PRP	_	10	obl	_	_
+13	,	,	PUNCT	,	_	10	punct	_	_
+14	after	after	ADP	IN	_	15	case	_	_
+15	this	this	PRON	DT	_	10	obl	_	_
+16	,	,	PUNCT	,	_	18	punct	_	_
+17	shall	shall	AUX	MD	_	18	aux	_	_
+18	be	be	VERB	VB	_	5	ccomp	_	_
+19	as	as	ADP	IN	_	21	case	_	_
+20	a	a	DET	DT	_	21	det	_	_
+21	type	type	NOUN	NN	_	18	obl	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	a	a	DET	DT	_	24	det	_	_
+24	shadow	shadow	NOUN	NN	_	21	conj	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	things	thing	NOUN	NNS	_	21	nmod	_	_
+27	which	which	PRON	WDT	_	29	nsubj	_	_
+28	are	be	AUX	VBP	_	29	aux	_	_
+29	to	to	PART	TO	_	30	mark	_	_
+30	come	come	VERB	VB	_	26	acl:relcl	_	_
+31	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And now I read unto you the remainder of the commandments of God, for I perceive that they are not written in your hearts; I perceive that ye have studied and taught iniquity the most part of your lives.
+# sent_id = 390
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	I	I	PRON	PRP	_	4	nsubj	_	_
+4	read	read	VERB	VBP	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	you	you	PRON	PRP	_	4	obl	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	remainder	remainder	NOUN	NN	_	4	obj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	commandments	commandment	NOUN	NNS	_	8	nmod	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	God	God	PROPN	NNP	_	11	nmod	_	_
+14	,	,	PUNCT	,	_	4	punct	_	_
+15	for	for	SCONJ	IN	_	17	mark	_	_
+16	I	I	PRON	PRP	_	17	nsubj	_	_
+17	perceive	perceive	VERB	VBP	_	4	advcl	_	_
+18	that	that	SCONJ	IN	_	22	mark	_	_
+19	they	they	PRON	PRP	_	22	nsubj:pass	_	_
+20	are	be	AUX	VBP	_	22	aux:pass	_	_
+21	not	not	PART	RB	_	22	advmod	_	_
+22	written	write	VERB	VBN	_	17	ccomp	_	_
+23	in	in	ADP	IN	_	25	case	_	_
+24	your	you	PRON	PRP$	_	25	nmod:poss	_	_
+25	hearts	heart	NOUN	NNS	_	22	obl	_	_
+26	;	;	PUNCT	;	_	4	punct	_	_
+27	I	I	PRON	PRP	_	28	nsubj	_	_
+28	perceive	perceive	VERB	VBP	_	4	conj	_	_
+29	that	that	SCONJ	IN	_	32	mark	_	_
+30	ye	ye	PRON	PRP	_	32	nsubj	_	_
+31	have	have	AUX	VBP	_	32	aux	_	_
+32	studied	study	VERB	VBN	_	28	ccomp	_	_
+33	and	and	CCONJ	CC	_	34	cc	_	_
+34	taught	teach	VERB	VBN	_	32	conj	_	_
+35	iniquity	iniquity	NOUN	NN	_	32	obj	_	_
+36	the	the	DET	DT	_	38	det	_	_
+37	most	most	ADJ	JJS	_	38	amod	_	_
+38	part	part	NOUN	NN	_	32	obl:tmod	_	_
+39	of	of	ADP	IN	_	41	case	_	_
+40	your	you	PRON	PRP$	_	41	nmod:poss	_	_
+41	lives	life	NOUN	NNS	_	38	nmod	_	_
+42	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And now, ye remember that I said unto you:
+# sent_id = 391
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	now	now	ADV	RB	_	5	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	ye	ye	PRON	PRP	_	5	nsubj	_	_
+5	remember	remember	VERB	VBP	_	0	root	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	I	I	PRON	PRP	_	8	nsubj	_	_
+8	said	say	VERB	VBD	_	5	ccomp	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	you	you	PRON	PRP	_	8	obl	_	_
+11	:	:	PUNCT	:	_	5	punct	_	_
+
+# text = Thou shalt not make unto thee any graven image, or any likeness of things which are in heaven above, or which are in the earth beneath, or which are in the water under the earth.
+# sent_id = 392
+1	Thou	thou	PRON	PRP	_	4	nsubj	_	_
+2	shalt	shall	AUX	MD	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	make	make	VERB	VB	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	thee	thou	PRON	PRP	_	4	obl	_	_
+7	any	any	DET	DT	_	9	det	_	_
+8	graven	graven	ADJ	JJ	_	9	amod	_	_
+9	image	image	NOUN	NN	_	4	obj	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	or	or	CCONJ	CC	_	13	cc	_	_
+12	any	any	DET	DT	_	13	det	_	_
+13	likeness	likeness	NOUN	NN	_	9	conj	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	things	thing	NOUN	NNS	_	13	nmod	_	_
+16	which	which	PRON	WDT	_	18	nsubj	_	_
+17	are	be	VERB	VBP	_	18	cop	_	_
+18	in	in	ADP	IN	_	15	acl:relcl	_	_
+19	heaven	heaven	NOUN	NN	_	18	nmod	_	_
+20	above	above	ADV	RB	_	18	advmod	_	_
+21	,	,	PUNCT	,	_	15	punct	_	_
+22	or	or	CCONJ	CC	_	24	cc	_	_
+23	which	which	PRON	WDT	_	24	nsubj	_	_
+24	are	be	VERB	VBP	_	15	acl:relcl	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	earth	earth	NOUN	NN	_	24	obl	_	_
+28	beneath	beneath	ADV	RB	_	24	advmod	_	_
+29	,	,	PUNCT	,	_	15	punct	_	_
+30	or	or	CCONJ	CC	_	32	cc	_	_
+31	which	which	PRON	WDT	_	32	nsubj	_	_
+32	are	be	VERB	VBP	_	15	acl:relcl	_	_
+33	in	in	ADP	IN	_	35	case	_	_
+34	the	the	DET	DT	_	35	det	_	_
+35	water	water	NOUN	NN	_	32	obl	_	_
+36	under	under	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	earth	earth	NOUN	NN	_	35	nmod	_	_
+39	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And again:
+# sent_id = 393
+1	And	and	CCONJ	CC	_	2	cc	_	_
+2	again	again	ADV	RB	_	0	root	_	_
+3	:	:	PUNCT	:	_	2	punct	_	_
+
+# text = Thou shalt not bow down thyself unto them, nor serve them; for I the Lord thy God am a jealous God, visiting the iniquities of the fathers upon the children, unto the third and fourth generations of them that hate me;
+# sent_id = 394
+1	Thou	thou	PRON	PRP	_	4	nsubj	_	_
+2	shalt	shall	AUX	MD	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	bow	bow	VERB	VB	_	0	root	_	_
+5	down	down	ADP	RP	_	4	compound:prt	_	_
+6	thyself	thyself	PRON	PRP	_	4	obj	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	them	they	PRON	PRP	_	4	obl	_	_
+9	,	,	PUNCT	,	_	4	punct	_	_
+10	nor	nor	CCONJ	CC	_	11	cc	_	_
+11	serve	serve	VERB	VB	_	4	conj	_	_
+12	them	they	PRON	PRP	_	11	obj	_	_
+13	;	;	PUNCT	;	_	4	punct	_	_
+14	for	for	SCONJ	IN	_	20	mark	_	_
+15	I	I	PRON	PRP	_	20	nsubj	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	Lord	Lord	PROPN	NNP	_	15	appos	_	_
+18	thy	thou	PRON	PRP$	_	19	nmod:poss	_	_
+19	God	God	PROPN	NNP	_	17	appos	_	_
+20	am	be	AUX	VBP	_	4	advcl	_	_
+21	a	a	DET	DT	_	23	det	_	_
+22	jealous	jealous	ADJ	JJ	_	23	amod	_	_
+23	God	God	PROPN	NNP	_	20	nsubj	_	_
+24	,	,	PUNCT	,	_	20	punct	_	_
+25	visiting	visit	VERB	VBG	_	20	advcl	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	iniquities	iniquity	NOUN	NNS	_	25	obj	_	_
+28	of	of	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	fathers	father	NOUN	NNS	_	27	nmod	_	_
+31	upon	upon	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	children	child	NOUN	NNS	_	25	obl	_	_
+34	,	,	PUNCT	,	_	25	punct	_	_
+35	unto	unto	ADP	IN	_	40	case	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	third	third	ADJ	JJ	_	40	amod	_	_
+38	and	and	CCONJ	CC	_	39	cc	_	_
+39	fourth	fourth	ADJ	JJ	_	37	conj	_	_
+40	generations	generation	NOUN	NNS	_	25	obl	_	_
+41	of	of	ADP	IN	_	42	case	_	_
+42	them	they	PRON	PRP	_	40	nmod	_	_
+43	that	that	PRON	WDT	_	44	nsubj	_	_
+44	hate	hate	VERB	VBP	_	42	acl:relcl	_	_
+45	me	I	PRON	PRP	_	44	obj	_	_
+46	;	;	PUNCT	;	_	4	punct	_	_
+
+# text = And showing mercy unto thousands of them that love me and keep my commandments.
+# sent_id = 395
+1	And	and	CCONJ	CC	_	2	cc	_	_
+2	showing	show	VERB	VBG	_	0	root	_	_
+3	mercy	mercy	NOUN	NN	_	2	obj	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	thousands	thousand	NOUN	NNS	_	2	obl	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	them	they	PRON	PRP	_	5	nmod	_	_
+8	that	that	PRON	WDT	_	9	nsubj	_	_
+9	love	love	VERB	VBP	_	7	acl:relcl	_	_
+10	me	I	PRON	PRP	_	9	obj	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	keep	keep	VERB	VBP	_	9	conj	_	_
+13	my	I	PRON	PRP$	_	14	nmod:poss	_	_
+14	commandments	commandment	NOUN	NNS	_	12	obj	_	_
+15	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = Thou shalt not take the name of the Lord thy God in vain; for the Lord will not hold him guiltless that taketh his name in vain.
+# sent_id = 396
+1	Thou	thou	PRON	PRP	_	4	nsubj	_	_
+2	shalt	shall	AUX	MD	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	take	take	VERB	VB	_	0	root	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	name	name	NOUN	NN	_	4	obj	_	_
+7	of	of	ADP	IN	_	10	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Lord	Lord	PROPN	NNP	_	10	compound	_	_
+10	thy	thou	PRON	PRP$	_	6	nmod	_	_
+11	God	God	PROPN	NNP	_	9	appos	_	_
+12	in	in	ADP	IN	_	13	case	_	_
+13	vain	vain	NOUN	NN	_	4	obl	_	_
+14	;	;	PUNCT	;	_	4	punct	_	_
+15	for	for	SCONJ	IN	_	20	mark	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	Lord	Lord	PROPN	NNP	_	20	nsubj	_	_
+18	will	will	AUX	MD	_	20	aux	_	_
+19	not	not	PART	RB	_	20	advmod	_	_
+20	hold	hold	VERB	VB	_	4	advcl	_	_
+21	him	he	PRON	PRP	_	20	obj	_	_
+22	guiltless	guiltless	ADJ	JJ	_	20	xcomp	_	_
+23	that	that	PRON	WDT	_	24	nsubj	_	_
+24	taketh	take	VERB	VBZ	_	22	acl:relcl	_	_
+25	his	he	PRON	PRP$	_	26	nmod:poss	_	_
+26	name	name	NOUN	NN	_	24	obj	_	_
+27	in	in	ADP	IN	_	28	case	_	_
+28	vain	vain	NOUN	NN	_	24	obl	_	_
+29	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Remember the sabbath day, to keep it holy.
+# sent_id = 397
+1	Remember	remember	VERB	VB	_	0	root	_	_
+2	the	the	DET	DT	_	4	det	_	_
+3	sabbath	sabbath	NOUN	NN	_	4	compound	_	_
+4	day	day	NOUN	NN	_	1	obj	_	_
+5	,	,	PUNCT	,	_	1	punct	_	_
+6	to	to	PART	TO	_	7	mark	_	_
+7	keep	keep	VERB	VB	_	1	advcl	_	_
+8	it	it	PRON	PRP	_	7	obj	_	_
+9	holy	holy	ADJ	JJ	_	7	xcomp	_	_
+10	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = Six days shalt thou labor, and do all thy work;
+# sent_id = 398
+1	Six	six	NUM	CD	_	2	nummod	_	_
+2	days	day	NOUN	NNS	_	5	obl:tmod	_	_
+3	shalt	shall	AUX	MD	_	5	aux	_	_
+4	thou	thou	PRON	PRP	_	5	nsubj	_	_
+5	labor	labor	VERB	VB	_	0	root	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	do	do	VERB	VB	_	5	conj	_	_
+9	all	all	DET	PDT	_	11	det:predet	_	_
+10	thy	thou	PRON	PRP$	_	11	nmod:poss	_	_
+11	work	work	NOUN	NN	_	8	obj	_	_
+12	;	;	PUNCT	;	_	5	punct	_	_
+
+# text = But the seventh day, the sabbath of the Lord thy God, thou shalt not do any work, thou, nor thy son, nor thy daughter, thy man-servant, nor thy maid-servant, nor thy cattle, nor thy stranger that is within thy gates;
+# sent_id = 399
+1	But	but	CCONJ	CC	_	17	cc	_	_
+2	the	the	DET	DT	_	4	det	_	_
+3	seventh	seventh	ADJ	JJ	_	4	amod	_	_
+4	day	day	NOUN	NN	_	17	obl:tmod	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	sabbath	sabbath	NOUN	NN	_	4	appos	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	Lord	Lord	PROPN	NNP	_	7	nmod	_	_
+11	thy	thou	PRON	PRP$	_	12	nmod:poss	_	_
+12	God	God	PROPN	NNP	_	10	appos	_	_
+13	,	,	PUNCT	,	_	4	punct	_	_
+14	thou	thou	PRON	PRP	_	17	nsubj	_	_
+15	shalt	shall	AUX	MD	_	17	aux	_	_
+16	not	not	PART	RB	_	17	advmod	_	_
+17	do	do	VERB	VB	_	0	root	_	_
+18	any	any	DET	DT	_	19	det	_	_
+19	work	work	NOUN	NN	_	17	obj	_	_
+20	,	,	PUNCT	,	_	17	punct	_	_
+21	thou	thou	PRON	PRP	_	17	nsubj	_	_
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	nor	nor	CCONJ	CC	_	25	cc	_	_
+24	thy	thou	PRON	PRP$	_	25	nmod:poss	_	_
+25	son	son	NOUN	NN	_	21	conj	_	_
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	nor	nor	CCONJ	CC	_	29	cc	_	_
+28	thy	thou	PRON	PRP$	_	29	nmod:poss	_	_
+29	daughter	daughter	NOUN	NN	_	25	conj	_	_
+30	,	,	PUNCT	,	_	25	punct	_	_
+31	thy	thou	PRON	PRP$	_	32	nmod:poss	_	_
+32	man-servant	man-servant	NOUN	NN	_	25	conj	_	_
+33	,	,	PUNCT	,	_	32	punct	_	_
+34	nor	nor	CCONJ	CC	_	36	cc	_	_
+35	thy	thou	PRON	PRP$	_	36	nmod:poss	_	_
+36	maid	maid	NOUN	NN	_	32	conj	_	_
+37	-	-	PUNCT	HYPH	_	38	punct	_	_
+38	servant	servant	NOUN	NN	_	36	flat	_	_
+39	,	,	PUNCT	,	_	36	punct	_	_
+40	nor	nor	CCONJ	CC	_	42	cc	_	_
+41	thy	thou	PRON	PRP$	_	42	nmod:poss	_	_
+42	cattle	cattle	NOUN	NNS	_	32	conj	_	_
+43	,	,	PUNCT	,	_	42	punct	_	_
+44	nor	nor	CCONJ	CC	_	46	cc	_	_
+45	thy	thou	PRON	PRP$	_	46	nmod:poss	_	_
+46	stranger	stranger	NOUN	NN	_	32	conj	_	_
+47	that	that	PRON	WDT	_	48	nsubj	_	_
+48	is	be	VERB	VBP	_	46	acl:relcl	_	_
+49	within	within	ADP	IN	_	51	case	_	_
+50	thy	thou	PRON	PRP$	_	51	nmod:poss	_	_
+51	gates	gate	NOUN	NNS	_	48	obl	_	_
+52	;	;	PUNCT	;	_	17	punct	_	_
+

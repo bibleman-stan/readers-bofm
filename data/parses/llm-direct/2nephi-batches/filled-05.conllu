@@ -1,0 +1,976 @@
+# text = And great were the covenants of the Lord which he made unto Joseph.
+# sent_id = 100
+# llm_note = inverted predicate adjective; great=xcomp; covenants=nsubj; 'which he made' = acl:relcl
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	great	great	ADJ	JJ	Degree=Pos	3	xcomp	_	_
+3	were	be	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	covenants	covenant	NOUN	NNS	Number=Plur	3	nsubj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	Lord	Lord	PROPN	NNP	Number=Sing	5	nmod	_	_
+9	which	which	PRON	WDT	_	11	obj	_	_
+10	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	made	make	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	_	_
+12	unto	unto	ADP	IN	_	13	case	_	_
+13	Joseph	Joseph	PROPN	NNP	Number=Sing	11	obl	_	_
+14	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Wherefore, Joseph truly saw our day.
+# sent_id = 101
+1	Wherefore	wherefore	ADV	RB	_	5	advmod	_	_
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	Joseph	Joseph	PROPN	NNP	Number=Sing	5	nsubj	_	_
+4	truly	truly	ADV	RB	_	5	advmod	_	_
+5	saw	see	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	our	our	PRON	PRP$	Number=Plur|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	day	day	NOUN	NN	Number=Sing	5	obj	_	_
+8	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And he obtained a promise of the Lord, that out of the fruit of his loins the Lord God would raise up a righteous branch unto the house of Israel; not the Messiah, but a branch which was to be broken off, nevertheless, to be remembered in the covenants of the Lord that the Messiah should be made manifest unto them in the latter days, in the spirit of power, unto the bringing of them out of darkness unto light-- yea, out of hidden darkness and out of captivity unto freedom.
+# sent_id = 102
+# llm_note = obtained=root; 'a promise of the Lord' = obj; 'that...would raise up' = ccomp; 'not the Messiah but a branch' = appositive clarification of branch(26); 'which was to be broken off' = acl:relcl; 'to be remembered' = advcl purpose; '--' = PUNCT dash; 'yea out of hidden darkness' = elaboration; parallelism 'out of X unto Y'
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	obtained	obtain	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
+5	promise	promise	NOUN	NN	Number=Sing	3	obj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	Lord	Lord	PROPN	NNP	Number=Sing	5	nmod	_	_
+9	,	,	PUNCT	,	_	3	punct	_	_
+10	that	that	SCONJ	IN	_	22	mark	_	_
+11	out	out	ADP	IN	_	14	case	_	_
+12	of	of	ADP	IN	_	11	fixed	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	fruit	fruit	NOUN	NN	Number=Sing	22	obl	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	loins	loin	NOUN	NNS	Number=Plur	14	nmod	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+19	Lord	Lord	PROPN	NNP	Number=Sing	20	compound	_	_
+20	God	God	PROPN	NNP	Number=Sing	22	nsubj	_	_
+21	would	would	AUX	MD	VerbForm=Fin	22	aux	_	_
+22	raise	raise	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+23	up	up	ADP	RP	_	22	compound:prt	_	_
+24	a	a	DET	DT	Definite=Ind|PronType=Art	26	det	_	_
+25	righteous	righteous	ADJ	JJ	Degree=Pos	26	amod	_	_
+26	branch	branch	NOUN	NN	Number=Sing	22	obj	_	_
+27	unto	unto	ADP	IN	_	30	case	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+29	house	house	NOUN	NN	Number=Sing	22	obl	_	_
+30	of	of	ADP	IN	_	31	case	_	_
+31	Israel	Israel	PROPN	NNP	Number=Sing	29	nmod	_	_
+32	;	;	PUNCT	:	_	3	punct	_	_
+33	not	not	PART	RB	_	35	advmod	_	_
+34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
+35	Messiah	Messiah	PROPN	NNP	Number=Sing	26	appos	_	_
+36	,	,	PUNCT	,	_	35	punct	_	_
+37	but	but	CCONJ	CC	_	39	cc	_	_
+38	a	a	DET	DT	Definite=Ind|PronType=Art	39	det	_	_
+39	branch	branch	NOUN	NN	Number=Sing	35	conj	_	_
+40	which	which	PRON	WDT	_	44	nsubj:pass	_	_
+41	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	44	aux	_	_
+42	to	to	PART	TO	_	44	mark	_	_
+43	be	be	AUX	VB	VerbForm=Inf	44	aux:pass	_	_
+44	broken	break	VERB	VBN	VerbForm=Part	39	acl:relcl	_	_
+45	off	off	ADP	RP	_	44	compound:prt	_	_
+46	,	,	PUNCT	,	_	44	punct	_	_
+47	nevertheless	nevertheless	ADV	RB	_	51	advmod	_	_
+48	,	,	PUNCT	,	_	47	punct	_	_
+49	to	to	PART	TO	_	51	mark	_	_
+50	be	be	AUX	VB	VerbForm=Inf	51	aux:pass	_	_
+51	remembered	remember	VERB	VBN	VerbForm=Part	39	advcl	_	_
+52	in	in	ADP	IN	_	55	case	_	_
+53	the	the	DET	DT	Definite=Def|PronType=Art	55	det	_	_
+54	covenants	covenant	NOUN	NNS	Number=Plur	51	obl	_	_
+55	of	of	ADP	IN	_	57	case	_	_
+56	the	the	DET	DT	Definite=Def|PronType=Art	57	det	_	_
+57	Lord	Lord	PROPN	NNP	Number=Sing	54	nmod	_	_
+58	that	that	SCONJ	IN	_	64	mark	_	_
+59	the	the	DET	DT	Definite=Def|PronType=Art	60	det	_	_
+60	Messiah	Messiah	PROPN	NNP	Number=Sing	64	nsubj:pass	_	_
+61	should	should	AUX	MD	VerbForm=Fin	64	aux	_	_
+62	be	be	AUX	VB	VerbForm=Inf	64	aux:pass	_	_
+63	made	make	AUX	VBN	VerbForm=Part	64	aux:pass	_	_
+64	manifest	manifest	VERB	JJ	Degree=Pos	54	ccomp	_	_
+65	unto	unto	ADP	IN	_	66	case	_	_
+66	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	64	obl	_	_
+67	in	in	ADP	IN	_	70	case	_	_
+68	the	the	DET	DT	Definite=Def|PronType=Art	70	det	_	_
+69	latter	latter	ADJ	JJR	Degree=Cmp	70	amod	_	_
+70	days	day	NOUN	NNS	Number=Plur	64	obl	_	_
+71	,	,	PUNCT	,	_	64	punct	_	_
+72	in	in	ADP	IN	_	75	case	_	_
+73	the	the	DET	DT	Definite=Def|PronType=Art	75	det	_	_
+74	spirit	spirit	NOUN	NN	Number=Sing	64	obl	_	_
+75	of	of	ADP	IN	_	76	case	_	_
+76	power	power	NOUN	NN	Number=Sing	74	nmod	_	_
+77	,	,	PUNCT	,	_	64	punct	_	_
+78	unto	unto	ADP	IN	_	80	case	_	_
+79	the	the	DET	DT	Definite=Def|PronType=Art	80	det	_	_
+80	bringing	bring	NOUN	NN	Number=Sing	64	obl	_	_
+81	of	of	ADP	IN	_	82	case	_	_
+82	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	80	nmod	_	_
+83	out	out	ADP	IN	_	85	case	_	_
+84	of	of	ADP	IN	_	83	fixed	_	_
+85	darkness	darkness	NOUN	NN	Number=Sing	80	nmod	_	_
+86	unto	unto	ADP	IN	_	87	case	_	_
+87	light	light	NOUN	NN	Number=Sing	85	nmod	_	_
+88	--	--	PUNCT	:	_	3	punct	_	_
+89	yea	yea	INTJ	UH	_	3	discourse	_	_
+90	,	,	PUNCT	,	_	89	punct	_	_
+91	out	out	ADP	IN	_	94	case	_	_
+92	of	of	ADP	IN	_	91	fixed	_	_
+93	hidden	hidden	ADJ	JJ	Degree=Pos	94	amod	_	_
+94	darkness	darkness	NOUN	NN	Number=Sing	87	appos	_	_
+95	and	and	CCONJ	CC	_	98	cc	_	_
+96	out	out	ADP	IN	_	98	case	_	_
+97	of	of	ADP	IN	_	96	fixed	_	_
+98	captivity	captivity	NOUN	NN	Number=Sing	94	conj	_	_
+99	unto	unto	ADP	IN	_	100	case	_	_
+100	freedom	freedom	NOUN	NN	Number=Sing	94	nmod	_	_
+101	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = For Joseph truly testified, saying: A seer shall the Lord my God raise up, who shall be a choice seer unto the fruit of my loins.
+# sent_id = 103
+# llm_note = testified=root; saying=advcl; fronted OBJ 'A seer shall the Lord my God raise up' (inverted); 'who shall be a choice seer' = acl:relcl on seer(9)
+1	For	for	SCONJ	IN	_	4	mark	_	_
+2	Joseph	Joseph	PROPN	NNP	Number=Sing	4	nsubj	_	_
+3	truly	truly	ADV	RB	_	4	advmod	_	_
+4	testified	testify	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	,	,	PUNCT	,	_	6	punct	_	_
+6	saying	say	VERB	VBG	VerbForm=Part	4	advcl	_	_
+7	:	:	PUNCT	:	_	6	punct	_	_
+8	A	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
+9	seer	seer	NOUN	NN	Number=Sing	15	obj	_	_
+10	shall	shall	AUX	MD	VerbForm=Fin	15	aux	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+12	Lord	Lord	PROPN	NNP	Number=Sing	13	compound	_	_
+13	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	nmod:poss	_	_
+14	God	God	PROPN	NNP	Number=Sing	15	nsubj	_	_
+15	raise	raise	VERB	VB	VerbForm=Inf	6	ccomp	_	_
+16	up	up	ADP	RP	_	15	compound:prt	_	_
+17	,	,	PUNCT	,	_	9	punct	_	_
+18	who	who	PRON	WP	PronType=Rel	20	nsubj	_	_
+19	shall	shall	AUX	MD	VerbForm=Fin	20	aux	_	_
+20	be	be	VERB	VB	VerbForm=Inf	9	acl:relcl	_	_
+21	a	a	DET	DT	Definite=Ind|PronType=Art	23	det	_	_
+22	choice	choice	ADJ	JJ	Degree=Pos	23	amod	_	_
+23	seer	seer	NOUN	NN	Number=Sing	20	xcomp	_	_
+24	unto	unto	ADP	IN	_	27	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	fruit	fruit	NOUN	NN	Number=Sing	20	obl	_	_
+27	of	of	ADP	IN	_	29	case	_	_
+28	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	29	nmod:poss	_	_
+29	loins	loin	NOUN	NNS	Number=Plur	26	nmod	_	_
+30	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Yea, Joseph truly said:
+# sent_id = 104
+# llm_note = yea=discourse; said=root with colon introducing quoted speech
+1	Yea	yea	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	Joseph	Joseph	PROPN	NNP	Number=Sing	5	nsubj	_	_
+4	truly	truly	ADV	RB	_	5	advmod	_	_
+5	said	say	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	:	:	PUNCT	:	_	5	punct	_	_
+
+# text = Thus saith the Lord unto me: A choice seer will I raise up out of the fruit of thy loins; and he shall be esteemed highly among the fruit of thy loins.
+# sent_id = 105
+# llm_note = saith=EME 3sg; saith the Lord = root; direct speech introduced by colon; fronted 'A choice seer will I raise up'; 'and he shall be esteemed highly' = conj
+1	Thus	thus	ADV	RB	_	2	advmod	_	_
+2	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	Lord	Lord	PROPN	NNP	Number=Sing	2	nsubj	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	2	obl	_	_
+7	:	:	PUNCT	:	_	2	punct	_	_
+8	A	a	DET	DT	Definite=Ind|PronType=Art	10	det	_	_
+9	choice	choice	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	seer	seer	NOUN	NN	Number=Sing	13	obj	_	_
+11	will	will	AUX	MD	VerbForm=Fin	13	aux	_	_
+12	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_
+13	raise	raise	VERB	VB	VerbForm=Inf	2	parataxis	_	_
+14	up	up	ADP	RP	_	13	compound:prt	_	_
+15	out	out	ADP	IN	_	18	case	_	_
+16	of	of	ADP	IN	_	15	fixed	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	fruit	fruit	NOUN	NN	Number=Sing	13	obl	_	_
+19	of	of	ADP	IN	_	22	case	_	_
+20	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+21	loins	loin	NOUN	NNS	Number=Plur	18	nmod	_	_
+22	;	;	PUNCT	:	_	13	punct	_	_
+23	and	and	CCONJ	CC	_	27	cc	_	_
+24	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj:pass	_	_
+25	shall	shall	AUX	MD	VerbForm=Fin	27	aux	_	_
+26	be	be	AUX	VB	VerbForm=Inf	27	aux:pass	_	_
+27	esteemed	esteem	VERB	VBN	VerbForm=Part	13	conj	_	_
+28	highly	highly	ADV	RB	_	27	advmod	_	_
+29	among	among	ADP	IN	_	32	case	_	_
+30	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
+31	fruit	fruit	NOUN	NN	Number=Sing	27	obl	_	_
+32	of	of	ADP	IN	_	34	case	_	_
+33	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	34	nmod:poss	_	_
+34	loins	loin	NOUN	NNS	Number=Plur	31	nmod	_	_
+35	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = And unto him will I give commandment that he shall do a work for the fruit of thy loins, his brethren, which shall be of great worth unto them, even to the bringing of them to the knowledge of the covenants which I have made with thy fathers.
+# sent_id = 106
+# llm_note = fronted 'unto him will I give commandment'; 'that he shall do a work' = ccomp; 'his brethren' = appositive of 'the fruit of thy loins'; 'which shall be of great worth' = acl:relcl; 'even to the bringing' = appositive/elaboration of obl
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	unto	unto	ADP	IN	_	3	case	_	_
+3	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	iobj	_	_
+4	will	will	AUX	MD	VerbForm=Fin	6	aux	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	give	give	VERB	VB	VerbForm=Inf	0	root	_	_
+7	commandment	commandment	NOUN	NN	Number=Sing	6	obj	_	_
+8	that	that	SCONJ	IN	_	11	mark	_	_
+9	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+10	shall	shall	AUX	MD	VerbForm=Fin	11	aux	_	_
+11	do	do	VERB	VB	VerbForm=Inf	7	ccomp	_	_
+12	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
+13	work	work	NOUN	NN	Number=Sing	11	obj	_	_
+14	for	for	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	fruit	fruit	NOUN	NN	Number=Sing	11	obl	_	_
+17	of	of	ADP	IN	_	20	case	_	_
+18	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+19	loins	loin	NOUN	NNS	Number=Plur	16	nmod	_	_
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+22	brethren	brethren	NOUN	NNS	Number=Plur	16	appos	_	_
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	which	which	PRON	WDT	_	27	nsubj	_	_
+25	shall	shall	AUX	MD	VerbForm=Fin	27	aux	_	_
+26	be	be	AUX	VB	VerbForm=Inf	27	cop	_	_
+27	of	of	ADP	IN	_	22	acl:relcl	_	_
+28	great	great	ADJ	JJ	Degree=Pos	29	amod	_	_
+29	worth	worth	NOUN	NN	Number=Sing	27	nmod	_	_
+30	unto	unto	ADP	IN	_	31	case	_	_
+31	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	27	obl	_	_
+32	,	,	PUNCT	,	_	27	punct	_	_
+33	even	even	ADV	RB	_	36	advmod	_	_
+34	to	to	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	bringing	bring	NOUN	NN	Number=Sing	29	appos	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	36	nmod	_	_
+39	to	to	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	Definite=Def|PronType=Art	41	det	_	_
+41	knowledge	knowledge	NOUN	NN	Number=Sing	36	obl	_	_
+42	of	of	ADP	IN	_	44	case	_	_
+43	the	the	DET	DT	Definite=Def|PronType=Art	44	det	_	_
+44	covenants	covenant	NOUN	NNS	Number=Plur	41	nmod	_	_
+45	which	which	PRON	WDT	_	48	obj	_	_
+46	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	48	nsubj	_	_
+47	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	48	aux	_	_
+48	made	make	VERB	VBN	VerbForm=Part	44	acl:relcl	_	_
+49	with	with	ADP	IN	_	51	case	_	_
+50	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	51	nmod:poss	_	_
+51	fathers	father	NOUN	NNS	Number=Plur	48	obl	_	_
+52	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And I will give unto him a commandment that he shall do none other work, save the work which I shall command him.
+# sent_id = 107
+# llm_note = give=root; 'unto him' = iobj; 'a commandment that he shall do' = obj + ccomp; 'none other work' = obj of do; 'save the work which' = exception clause with acl:relcl
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	give	give	VERB	VB	VerbForm=Inf	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	iobj	_	_
+7	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
+8	commandment	commandment	NOUN	NN	Number=Sing	4	obj	_	_
+9	that	that	SCONJ	IN	_	12	mark	_	_
+10	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+11	shall	shall	AUX	MD	VerbForm=Fin	12	aux	_	_
+12	do	do	VERB	VB	VerbForm=Inf	8	ccomp	_	_
+13	none	none	DET	DT	PronType=Neg	15	det	_	_
+14	other	other	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	work	work	NOUN	NN	Number=Sing	12	obj	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	save	save	SCONJ	IN	_	19	mark	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	work	work	NOUN	NN	Number=Sing	15	acl	_	_
+20	which	which	PRON	WDT	_	23	obj	_	_
+21	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	23	nsubj	_	_
+22	shall	shall	AUX	MD	VerbForm=Fin	23	aux	_	_
+23	command	command	VERB	VB	VerbForm=Inf	19	acl:relcl	_	_
+24	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	obj	_	_
+25	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And I will make him great in mine eyes; for he shall do my work.
+# sent_id = 108
+# llm_note = make=root; 'him great' = obj + xcomp; 'in mine eyes' = obl; mine=EME 1sg poss; second clause causal
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	make	make	VERB	VB	VerbForm=Inf	0	root	_	_
+5	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+6	great	great	ADJ	JJ	Degree=Pos	4	xcomp	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	nmod:poss	_	_
+9	eyes	eye	NOUN	NNS	Number=Plur	4	obl	_	_
+10	;	;	PUNCT	:	_	4	punct	_	_
+11	for	for	SCONJ	IN	_	14	mark	_	_
+12	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+13	shall	shall	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	do	do	VERB	VB	VerbForm=Inf	4	advcl	_	_
+15	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+16	work	work	NOUN	NN	Number=Sing	14	obj	_	_
+17	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And he shall be great like unto Moses, whom I have said I would raise up unto you, to deliver my people, O house of Israel.
+# sent_id = 109
+# llm_note = 'shall be great' = root; 'like unto Moses' = obl comparison; 'whom I have said I would raise up' = acl:relcl with ccomp; 'O house of Israel' = vocative
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	shall	shall	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	be	be	VERB	VB	VerbForm=Inf	0	root	_	_
+5	great	great	ADJ	JJ	Degree=Pos	4	xcomp	_	_
+6	like	like	ADP	IN	_	8	case	_	_
+7	unto	unto	ADP	IN	_	6	fixed	_	_
+8	Moses	Moses	PROPN	NNP	Number=Sing	4	obl	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	whom	whom	PRON	WP	Case=Acc|PronType=Rel	13	obj	_	_
+11	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_
+12	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	13	aux	_	_
+13	said	say	VERB	VBN	VerbForm=Part	8	acl:relcl	_	_
+14	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	17	nsubj	_	_
+15	would	would	AUX	MD	VerbForm=Fin	17	aux	_	_
+16	raise	raise	VERB	VB	VerbForm=Inf	17	xcomp	_	_
+17	up	up	ADP	RP	_	16	compound:prt	_	_
+18	unto	unto	ADP	IN	_	19	case	_	_
+19	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	16	obl	_	_
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	to	to	PART	TO	_	22	mark	_	_
+22	deliver	deliver	VERB	VB	VerbForm=Inf	16	advcl	_	_
+23	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
+24	people	people	NOUN	NN	Number=Sing	22	obj	_	_
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	O	O	INTJ	UH	_	27	discourse	_	_
+27	house	house	NOUN	NN	Number=Sing	4	vocative	_	_
+28	of	of	ADP	IN	_	29	case	_	_
+29	Israel	Israel	PROPN	NNP	Number=Sing	27	nmod	_	_
+30	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And Moses will I raise up, to deliver thy people out of the land of Egypt.
+# sent_id = 110
+# llm_note = fronted OBJ 'Moses will I raise up'; purpose infinitive 'to deliver'; thy=EME 2sg poss
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	Moses	Moses	PROPN	NNP	Number=Sing	5	obj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	raise	raise	VERB	VB	VerbForm=Inf	0	root	_	_
+6	up	up	ADP	RP	_	5	compound:prt	_	_
+7	,	,	PUNCT	,	_	9	punct	_	_
+8	to	to	PART	TO	_	9	mark	_	_
+9	deliver	deliver	VERB	VB	VerbForm=Inf	5	advcl	_	_
+10	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	11	nmod:poss	_	_
+11	people	people	NOUN	NN	Number=Sing	9	obj	_	_
+12	out	out	ADP	IN	_	15	case	_	_
+13	of	of	ADP	IN	_	12	fixed	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	land	land	NOUN	NN	Number=Sing	9	obl	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	Egypt	Egypt	PROPN	NNP	Number=Sing	15	nmod	_	_
+18	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = But a seer will I raise up out of the fruit of thy loins; and unto him will I give power to bring forth my word unto the seed of thy loins-- and not to the bringing forth my word only, saith the Lord, but to the convincing them of my word, which shall have already gone forth among them.
+# sent_id = 111
+# llm_note = fronted 'a seer will I raise up'; 'unto him will I give power'; 'to bring forth' = xcomp/purpose; '--' dash = PUNCT; 'not to the bringing forth...but to the convincing' = correlative negation; saith the Lord = parenthetical; 'which shall have already gone forth' = acl:relcl on word
+1	But	but	CCONJ	CC	_	6	cc	_	_
+2	a	a	DET	DT	Definite=Ind|PronType=Art	3	det	_	_
+3	seer	seer	NOUN	NN	Number=Sing	6	obj	_	_
+4	will	will	AUX	MD	VerbForm=Fin	6	aux	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	raise	raise	VERB	VB	VerbForm=Inf	0	root	_	_
+7	up	up	ADP	RP	_	6	compound:prt	_	_
+8	out	out	ADP	IN	_	11	case	_	_
+9	of	of	ADP	IN	_	8	fixed	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	fruit	fruit	NOUN	NN	Number=Sing	6	obl	_	_
+12	of	of	ADP	IN	_	15	case	_	_
+13	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	14	nmod:poss	_	_
+14	loins	loin	NOUN	NNS	Number=Plur	11	nmod	_	_
+15	;	;	PUNCT	:	_	6	punct	_	_
+16	and	and	CCONJ	CC	_	21	cc	_	_
+17	unto	unto	ADP	IN	_	18	case	_	_
+18	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	iobj	_	_
+19	will	will	AUX	MD	VerbForm=Fin	21	aux	_	_
+20	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	21	nsubj	_	_
+21	give	give	VERB	VB	VerbForm=Inf	6	conj	_	_
+22	power	power	NOUN	NN	Number=Sing	21	obj	_	_
+23	to	to	PART	TO	_	24	mark	_	_
+24	bring	bring	VERB	VB	VerbForm=Inf	22	acl	_	_
+25	forth	forth	ADV	RP	_	24	compound:prt	_	_
+26	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	27	nmod:poss	_	_
+27	word	word	NOUN	NN	Number=Sing	24	obj	_	_
+28	unto	unto	ADP	IN	_	31	case	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	seed	seed	NOUN	NN	Number=Sing	24	obl	_	_
+31	of	of	ADP	IN	_	34	case	_	_
+32	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	33	nmod:poss	_	_
+33	loins	loin	NOUN	NNS	Number=Plur	30	nmod	_	_
+34	--	--	PUNCT	:	_	21	punct	_	_
+35	and	and	CCONJ	CC	_	39	cc	_	_
+36	not	not	PART	RB	_	39	advmod	_	_
+37	to	to	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+39	bringing	bring	NOUN	NN	Number=Sing	21	conj	_	_
+40	forth	forth	ADV	RP	_	39	compound:prt	_	_
+41	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	42	nmod:poss	_	_
+42	word	word	NOUN	NN	Number=Sing	39	obj	_	_
+43	only	only	ADV	RB	_	39	advmod	_	_
+44	,	,	PUNCT	,	_	45	punct	_	_
+45	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	parataxis	_	_
+46	the	the	DET	DT	Definite=Def|PronType=Art	47	det	_	_
+47	Lord	Lord	PROPN	NNP	Number=Sing	45	nsubj	_	_
+48	,	,	PUNCT	,	_	45	punct	_	_
+49	but	but	CCONJ	CC	_	52	cc	_	_
+50	to	to	ADP	IN	_	52	case	_	_
+51	the	the	DET	DT	Definite=Def|PronType=Art	52	det	_	_
+52	convincing	convince	NOUN	NN	Number=Sing	39	conj	_	_
+53	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	52	obj	_	_
+54	of	of	ADP	IN	_	56	case	_	_
+55	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	56	nmod:poss	_	_
+56	word	word	NOUN	NN	Number=Sing	52	obl	_	_
+57	,	,	PUNCT	,	_	56	punct	_	_
+58	which	which	PRON	WDT	_	62	nsubj	_	_
+59	shall	shall	AUX	MD	VerbForm=Fin	62	aux	_	_
+60	have	have	AUX	VB	VerbForm=Inf	62	aux	_	_
+61	already	already	ADV	RB	_	62	advmod	_	_
+62	gone	go	VERB	VBN	VerbForm=Part	56	acl:relcl	_	_
+63	forth	forth	ADV	RP	_	62	compound:prt	_	_
+64	among	among	ADP	IN	_	65	case	_	_
+65	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	62	obl	_	_
+66	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Wherefore, the fruit of thy loins shall write; and the fruit of the loins of Judah shall write; and that which shall be written by the fruit of thy loins, and also that which shall be written by the fruit of the loins of Judah, shall grow together, unto the confounding of false doctrines and laying down of contentions, and establishing peace among the fruit of thy loins, and bringing them to the knowledge of their fathers in the latter days, and also to the knowledge of my covenants, saith the Lord.
+# sent_id = 112
+# llm_note = Three coordinated clauses: 'fruit of thy loins shall write'; 'fruit of loins of Judah shall write'; 'that which...and also that which...shall grow together'; several gerundial obliques following 'grow together'; saith the Lord=parenthetical
+1	Wherefore	wherefore	ADV	RB	_	9	advmod	_	_
+2	,	,	PUNCT	,	_	9	punct	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	fruit	fruit	NOUN	NN	Number=Sing	9	nsubj	_	_
+5	of	of	ADP	IN	_	8	case	_	_
+6	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	loins	loin	NOUN	NNS	Number=Plur	4	nmod	_	_
+8	shall	shall	AUX	MD	VerbForm=Fin	9	aux	_	_
+9	write	write	VERB	VB	VerbForm=Inf	0	root	_	_
+10	;	;	PUNCT	:	_	9	punct	_	_
+11	and	and	CCONJ	CC	_	20	cc	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	fruit	fruit	NOUN	NN	Number=Sing	20	nsubj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	loins	loin	NOUN	NNS	Number=Plur	13	nmod	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	Judah	Judah	PROPN	NNP	Number=Sing	16	nmod	_	_
+19	shall	shall	AUX	MD	VerbForm=Fin	20	aux	_	_
+20	write	write	VERB	VB	VerbForm=Inf	9	conj	_	_
+21	;	;	PUNCT	:	_	20	punct	_	_
+22	and	and	CCONJ	CC	_	52	cc	_	_
+23	that	that	PRON	WDT	_	27	nsubj:pass	_	_
+24	which	which	PRON	WDT	_	27	nsubj:pass	_	_
+25	shall	shall	AUX	MD	VerbForm=Fin	27	aux	_	_
+26	be	be	AUX	VB	VerbForm=Inf	27	aux:pass	_	_
+27	written	write	VERB	VBN	VerbForm=Part	52	nsubj	_	_
+28	by	by	ADP	IN	_	31	case	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	fruit	fruit	NOUN	NN	Number=Sing	27	obl:agent	_	_
+31	of	of	ADP	IN	_	34	case	_	_
+32	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	33	nmod:poss	_	_
+33	loins	loin	NOUN	NNS	Number=Plur	30	nmod	_	_
+34	,	,	PUNCT	,	_	27	punct	_	_
+35	and	and	CCONJ	CC	_	41	cc	_	_
+36	also	also	ADV	RB	_	41	advmod	_	_
+37	that	that	PRON	WDT	_	41	nsubj:pass	_	_
+38	which	which	PRON	WDT	_	41	nsubj:pass	_	_
+39	shall	shall	AUX	MD	VerbForm=Fin	41	aux	_	_
+40	be	be	AUX	VB	VerbForm=Inf	41	aux:pass	_	_
+41	written	write	VERB	VBN	VerbForm=Part	27	conj	_	_
+42	by	by	ADP	IN	_	45	case	_	_
+43	the	the	DET	DT	Definite=Def|PronType=Art	44	det	_	_
+44	fruit	fruit	NOUN	NN	Number=Sing	41	obl:agent	_	_
+45	of	of	ADP	IN	_	47	case	_	_
+46	the	the	DET	DT	Definite=Def|PronType=Art	47	det	_	_
+47	loins	loin	NOUN	NNS	Number=Plur	44	nmod	_	_
+48	of	of	ADP	IN	_	49	case	_	_
+49	Judah	Judah	PROPN	NNP	Number=Sing	47	nmod	_	_
+50	,	,	PUNCT	,	_	27	punct	_	_
+51	shall	shall	AUX	MD	VerbForm=Fin	52	aux	_	_
+52	grow	grow	VERB	VB	VerbForm=Inf	9	conj	_	_
+53	together	together	ADV	RB	_	52	advmod	_	_
+54	,	,	PUNCT	,	_	52	punct	_	_
+55	unto	unto	ADP	IN	_	58	case	_	_
+56	the	the	DET	DT	Definite=Def|PronType=Art	57	det	_	_
+57	confounding	confound	NOUN	NN	Number=Sing	52	obl	_	_
+58	of	of	ADP	IN	_	60	case	_	_
+59	false	false	ADJ	JJ	Degree=Pos	60	amod	_	_
+60	doctrines	doctrine	NOUN	NNS	Number=Plur	57	nmod	_	_
+61	and	and	CCONJ	CC	_	63	cc	_	_
+62	laying	lay	VERB	VBG	VerbForm=Part	57	conj	_	_
+63	down	down	ADP	RP	_	62	compound:prt	_	_
+64	of	of	ADP	IN	_	65	case	_	_
+65	contentions	contention	NOUN	NNS	Number=Plur	62	obl	_	_
+66	,	,	PUNCT	,	_	57	punct	_	_
+67	and	and	CCONJ	CC	_	68	cc	_	_
+68	establishing	establish	VERB	VBG	VerbForm=Part	57	conj	_	_
+69	peace	peace	NOUN	NN	Number=Sing	68	obj	_	_
+70	among	among	ADP	IN	_	73	case	_	_
+71	the	the	DET	DT	Definite=Def|PronType=Art	72	det	_	_
+72	fruit	fruit	NOUN	NN	Number=Sing	68	obl	_	_
+73	of	of	ADP	IN	_	76	case	_	_
+74	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	75	nmod:poss	_	_
+75	loins	loin	NOUN	NNS	Number=Plur	72	nmod	_	_
+76	,	,	PUNCT	,	_	68	punct	_	_
+77	and	and	CCONJ	CC	_	78	cc	_	_
+78	bringing	bring	VERB	VBG	VerbForm=Part	57	conj	_	_
+79	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	78	obj	_	_
+80	to	to	ADP	IN	_	82	case	_	_
+81	the	the	DET	DT	Definite=Def|PronType=Art	82	det	_	_
+82	knowledge	knowledge	NOUN	NN	Number=Sing	78	obl	_	_
+83	of	of	ADP	IN	_	85	case	_	_
+84	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	85	nmod:poss	_	_
+85	fathers	father	NOUN	NNS	Number=Plur	82	nmod	_	_
+86	in	in	ADP	IN	_	89	case	_	_
+87	the	the	DET	DT	Definite=Def|PronType=Art	89	det	_	_
+88	latter	latter	ADJ	JJR	Degree=Cmp	89	amod	_	_
+89	days	day	NOUN	NNS	Number=Plur	82	obl	_	_
+90	,	,	PUNCT	,	_	82	punct	_	_
+91	and	and	CCONJ	CC	_	95	cc	_	_
+92	also	also	ADV	RB	_	95	advmod	_	_
+93	to	to	ADP	IN	_	95	case	_	_
+94	the	the	DET	DT	Definite=Def|PronType=Art	95	det	_	_
+95	knowledge	knowledge	NOUN	NN	Number=Sing	82	conj	_	_
+96	of	of	ADP	IN	_	98	case	_	_
+97	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	98	nmod:poss	_	_
+98	covenants	covenant	NOUN	NNS	Number=Plur	95	nmod	_	_
+99	,	,	PUNCT	,	_	100	punct	_	_
+100	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	parataxis	_	_
+101	the	the	DET	DT	Definite=Def|PronType=Art	102	det	_	_
+102	Lord	Lord	PROPN	NNP	Number=Sing	100	nsubj	_	_
+103	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And out of weakness he shall be made strong, in that day when my work shall commence among all my people, unto the restoring thee, O house of Israel, saith the Lord.
+# sent_id = 113
+# llm_note = 'out of weakness' = fronted obl; 'shall be made strong' = root passive; 'in that day when' = obl + acl:relcl; 'unto the restoring thee' = obl; 'O house of Israel' = vocative; saith the Lord = parenthetical
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	out	out	ADP	IN	_	4	case	_	_
+3	of	of	ADP	IN	_	2	fixed	_	_
+4	weakness	weakness	NOUN	NN	Number=Sing	8	obl	_	_
+5	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj:pass	_	_
+6	shall	shall	AUX	MD	VerbForm=Fin	8	aux	_	_
+7	be	be	AUX	VB	VerbForm=Inf	8	aux:pass	_	_
+8	made	make	VERB	VBN	VerbForm=Part	0	root	_	_
+9	strong	strong	ADJ	JJ	Degree=Pos	8	xcomp	_	_
+10	,	,	PUNCT	,	_	8	punct	_	_
+11	in	in	ADP	IN	_	13	case	_	_
+12	that	that	DET	DT	Number=Sing|PronType=Dem	13	det	_	_
+13	day	day	NOUN	NN	Number=Sing	8	obl	_	_
+14	when	when	SCONJ	WRB	_	18	mark	_	_
+15	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+16	work	work	NOUN	NN	Number=Sing	18	nsubj	_	_
+17	shall	shall	AUX	MD	VerbForm=Fin	18	aux	_	_
+18	commence	commence	VERB	VB	VerbForm=Inf	13	acl:relcl	_	_
+19	among	among	ADP	IN	_	22	case	_	_
+20	all	all	DET	DT	_	22	det	_	_
+21	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+22	people	people	NOUN	NN	Number=Sing	18	obl	_	_
+23	,	,	PUNCT	,	_	8	punct	_	_
+24	unto	unto	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	restoring	restore	NOUN	NN	Number=Sing	8	obl	_	_
+27	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	26	obj	_	_
+28	,	,	PUNCT	,	_	30	punct	_	_
+29	O	O	INTJ	UH	_	30	discourse	_	_
+30	house	house	NOUN	NN	Number=Sing	8	vocative	_	_
+31	of	of	ADP	IN	_	32	case	_	_
+32	Israel	Israel	PROPN	NNP	Number=Sing	30	nmod	_	_
+33	,	,	PUNCT	,	_	34	punct	_	_
+34	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	Lord	Lord	PROPN	NNP	Number=Sing	34	nsubj	_	_
+37	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And thus prophesied Joseph, saying: Behold, that seer will the Lord bless; and they that seek to destroy him shall be confounded; for this promise, which I have obtained of the Lord, of the fruit of my loins, shall be fulfilled.
+# sent_id = 114
+# llm_note = prophesied=root; fronted 'that seer will the Lord bless'; 'they that seek to destroy him' = nsubj with acl:relcl; 'for this promise...shall be fulfilled' = advcl causal; 'which I have obtained' = acl:relcl; 'of the fruit of my loins' = parenthetical nmod
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	prophesied	prophesy	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	Joseph	Joseph	PROPN	NNP	Number=Sing	3	nsubj	_	_
+5	,	,	PUNCT	,	_	6	punct	_	_
+6	saying	say	VERB	VBG	VerbForm=Part	3	advcl	_	_
+7	:	:	PUNCT	:	_	6	punct	_	_
+8	Behold	behold	INTJ	UH	_	15	discourse	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	that	that	DET	DT	Number=Sing|PronType=Dem	11	det	_	_
+11	seer	seer	NOUN	NN	Number=Sing	15	obj	_	_
+12	will	will	AUX	MD	VerbForm=Fin	15	aux	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	Lord	Lord	PROPN	NNP	Number=Sing	15	nsubj	_	_
+15	bless	bless	VERB	VB	VerbForm=Inf	6	ccomp	_	_
+16	;	;	PUNCT	:	_	15	punct	_	_
+17	and	and	CCONJ	CC	_	26	cc	_	_
+18	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	26	nsubj:pass	_	_
+19	that	that	PRON	WDT	_	20	nsubj	_	_
+20	seek	seek	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_
+21	to	to	PART	TO	_	22	mark	_	_
+22	destroy	destroy	VERB	VB	VerbForm=Inf	20	xcomp	_	_
+23	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	obj	_	_
+24	shall	shall	AUX	MD	VerbForm=Fin	26	aux	_	_
+25	be	be	AUX	VB	VerbForm=Inf	26	aux:pass	_	_
+26	confounded	confound	VERB	VBN	VerbForm=Part	15	conj	_	_
+27	;	;	PUNCT	:	_	26	punct	_	_
+28	for	for	SCONJ	IN	_	49	mark	_	_
+29	this	this	DET	DT	Number=Sing|PronType=Dem	30	det	_	_
+30	promise	promise	NOUN	NN	Number=Sing	49	nsubj:pass	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	which	which	PRON	WDT	_	35	obj	_	_
+33	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	35	nsubj	_	_
+34	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	35	aux	_	_
+35	obtained	obtain	VERB	VBN	VerbForm=Part	30	acl:relcl	_	_
+36	of	of	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	Definite=Def|PronType=Art	38	det	_	_
+38	Lord	Lord	PROPN	NNP	Number=Sing	35	obl	_	_
+39	,	,	PUNCT	,	_	30	punct	_	_
+40	of	of	ADP	IN	_	43	case	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	fruit	fruit	NOUN	NN	Number=Sing	30	appos	_	_
+43	of	of	ADP	IN	_	45	case	_	_
+44	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	45	nmod:poss	_	_
+45	loins	loin	NOUN	NNS	Number=Plur	42	nmod	_	_
+46	,	,	PUNCT	,	_	30	punct	_	_
+47	shall	shall	AUX	MD	VerbForm=Fin	49	aux	_	_
+48	be	be	AUX	VB	VerbForm=Inf	49	aux:pass	_	_
+49	fulfilled	fulfill	VERB	VBN	VerbForm=Part	15	advcl	_	_
+50	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, I am sure of the fulfilling of this promise;
+# sent_id = 115
+# llm_note = behold=discourse; am sure=root copula with xcomp; 'of the fulfilling of this promise' = obl; ends with semicolon
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	am	be	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	sure	sure	ADJ	JJ	Degree=Pos	4	xcomp	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	fulfilling	fulfilling	NOUN	NN	Number=Sing	4	obl	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	this	this	DET	DT	Number=Sing|PronType=Dem	11	det	_	_
+11	promise	promise	NOUN	NN	Number=Sing	8	nmod	_	_
+12	;	;	PUNCT	:	_	4	punct	_	_
+
+# text = And his name shall be called after me; and it shall be after the name of his father.
+# sent_id = 116
+# llm_note = 'shall be called' = root passive; 'after me' = obl; 'it shall be after the name of his father' = conj (copular)
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
+3	name	name	NOUN	NN	Number=Sing	6	nsubj:pass	_	_
+4	shall	shall	AUX	MD	VerbForm=Fin	6	aux	_	_
+5	be	be	AUX	VB	VerbForm=Inf	6	aux:pass	_	_
+6	called	call	VERB	VBN	VerbForm=Part	0	root	_	_
+7	after	after	ADP	IN	_	8	case	_	_
+8	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	6	obl	_	_
+9	;	;	PUNCT	:	_	6	punct	_	_
+10	and	and	CCONJ	CC	_	13	cc	_	_
+11	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+12	shall	shall	AUX	MD	VerbForm=Fin	13	aux	_	_
+13	be	be	VERB	VB	VerbForm=Inf	6	conj	_	_
+14	after	after	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	name	name	NOUN	NN	Number=Sing	13	obl	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+19	father	father	NOUN	NN	Number=Sing	16	nmod	_	_
+20	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And he shall be like unto me; for the thing, which the Lord shall bring forth by his hand, by the power of the Lord shall bring my people unto salvation.
+# sent_id = 117
+# llm_note = 'he shall be like unto me' = root; 'the thing which the Lord shall bring forth' = nsubj of second 'bring'; 'by the power of the Lord shall bring my people unto salvation' = conj/main clause; two acl:relcl on 'thing'
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	shall	shall	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	be	be	VERB	VB	VerbForm=Inf	0	root	_	_
+5	like	like	ADP	IN	_	7	case	_	_
+6	unto	unto	ADP	IN	_	5	fixed	_	_
+7	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	4	obl	_	_
+8	;	;	PUNCT	:	_	4	punct	_	_
+9	for	for	SCONJ	IN	_	30	mark	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	thing	thing	NOUN	NN	Number=Sing	30	nsubj	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	which	which	PRON	WDT	_	18	obj	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	Lord	Lord	PROPN	NNP	Number=Sing	18	nsubj	_	_
+16	shall	shall	AUX	MD	VerbForm=Fin	18	aux	_	_
+17	bring	bring	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+18	forth	forth	ADV	RP	_	11	acl:relcl	_	_
+19	by	by	ADP	IN	_	21	case	_	_
+20	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	nmod:poss	_	_
+21	hand	hand	NOUN	NN	Number=Sing	18	obl	_	_
+22	,	,	PUNCT	,	_	11	punct	_	_
+23	by	by	ADP	IN	_	26	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	power	power	NOUN	NN	Number=Sing	30	obl	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	Lord	Lord	PROPN	NNP	Number=Sing	25	nmod	_	_
+29	shall	shall	AUX	MD	VerbForm=Fin	30	aux	_	_
+30	bring	bring	VERB	VB	VerbForm=Inf	4	advcl	_	_
+31	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	32	nmod:poss	_	_
+32	people	people	NOUN	NN	Number=Sing	30	obj	_	_
+33	unto	unto	ADP	IN	_	34	case	_	_
+34	salvation	salvation	NOUN	NN	Number=Sing	30	obl	_	_
+35	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Yea, thus prophesied Joseph: I am sure of this thing, even as I am sure of the promise of Moses; for the Lord hath said unto me, I will preserve thy seed forever.
+# sent_id = 118
+# llm_note = Yea=discourse; prophesied=root (inverted V-subj); 'I am sure of this thing' = ccomp; 'even as I am sure of the promise of Moses' = advcl (comparison); 'for the Lord hath said unto me' = advcl causal; 'I will preserve thy seed forever' = ccomp of said
+1	Yea	yea	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	thus	thus	ADV	RB	_	4	advmod	_	_
+4	prophesied	prophesy	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	Joseph	Joseph	PROPN	NNP	Number=Sing	4	nsubj	_	_
+6	:	:	PUNCT	:	_	4	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+8	am	be	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	sure	sure	ADJ	JJ	Degree=Pos	4	ccomp	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	this	this	DET	DT	Number=Sing|PronType=Dem	12	det	_	_
+12	thing	thing	NOUN	NN	Number=Sing	9	obl	_	_
+13	,	,	PUNCT	,	_	9	punct	_	_
+14	even	even	ADV	RB	_	15	advmod	_	_
+15	as	as	SCONJ	IN	_	18	mark	_	_
+16	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	18	nsubj	_	_
+17	am	be	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	18	cop	_	_
+18	sure	sure	ADJ	JJ	Degree=Pos	9	advcl	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	promise	promise	NOUN	NN	Number=Sing	18	obl	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	Moses	Moses	PROPN	NNP	Number=Sing	21	nmod	_	_
+24	;	;	PUNCT	:	_	4	punct	_	_
+25	for	for	SCONJ	IN	_	29	mark	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	Lord	Lord	PROPN	NNP	Number=Sing	29	nsubj	_	_
+28	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux	_	_
+29	said	say	VERB	VBN	VerbForm=Part	4	advcl	_	_
+30	unto	unto	ADP	IN	_	31	case	_	_
+31	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	29	obl	_	_
+32	,	,	PUNCT	,	_	29	punct	_	_
+33	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	35	nsubj	_	_
+34	will	will	AUX	MD	VerbForm=Fin	35	aux	_	_
+35	preserve	preserve	VERB	VB	VerbForm=Inf	29	ccomp	_	_
+36	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	37	nmod:poss	_	_
+37	seed	seed	NOUN	NN	Number=Sing	35	obj	_	_
+38	forever	forever	ADV	RB	_	35	advmod	_	_
+39	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And the Lord hath said: I will raise up a Moses; and I will give power unto him in a rod; and I will give judgment unto him in writing.
+# sent_id = 119
+# llm_note = hath said=root (AUX+VERB); 'raise up' compound:prt; three ccomp clauses (raise/give/give) coordinated; 'unto him' = obl; 'in a rod / in writing' = obl
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	Lord	Lord	PROPN	NNP	Number=Sing	5	nsubj	_	_
+4	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	said	say	VERB	VBN	VerbForm=Part	0	root	_	_
+6	:	:	PUNCT	:	_	5	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+8	will	will	AUX	MD	VerbForm=Fin	9	aux	_	_
+9	raise	raise	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+10	up	up	ADP	RP	_	9	compound:prt	_	_
+11	a	a	DET	DT	Definite=Ind|PronType=Art	12	det	_	_
+12	Moses	Moses	PROPN	NNP	Number=Sing	9	obj	_	_
+13	;	;	PUNCT	:	_	9	punct	_	_
+14	and	and	CCONJ	CC	_	17	cc	_	_
+15	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	17	nsubj	_	_
+16	will	will	AUX	MD	VerbForm=Fin	17	aux	_	_
+17	give	give	VERB	VB	VerbForm=Inf	9	conj	_	_
+18	power	power	NOUN	NN	Number=Sing	17	obj	_	_
+19	unto	unto	ADP	IN	_	20	case	_	_
+20	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	obl	_	_
+21	in	in	ADP	IN	_	23	case	_	_
+22	a	a	DET	DT	Definite=Ind|PronType=Art	23	det	_	_
+23	rod	rod	NOUN	NN	Number=Sing	17	obl	_	_
+24	;	;	PUNCT	:	_	17	punct	_	_
+25	and	and	CCONJ	CC	_	28	cc	_	_
+26	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	28	nsubj	_	_
+27	will	will	AUX	MD	VerbForm=Fin	28	aux	_	_
+28	give	give	VERB	VB	VerbForm=Inf	9	conj	_	_
+29	judgment	judgment	NOUN	NN	Number=Sing	28	obj	_	_
+30	unto	unto	ADP	IN	_	31	case	_	_
+31	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	obl	_	_
+32	in	in	ADP	IN	_	33	case	_	_
+33	writing	write	NOUN	NN	Number=Sing	28	obl	_	_
+34	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Yet I will not loose his tongue, that he shall speak much, for I will not make him mighty in speaking.
+# sent_id = 120
+# llm_note = loose=root; 'that he shall speak much' = result advcl (negative purpose/result); 'for I will not make him mighty in speaking' = advcl causal; 'make him mighty' = causative xcomp; 'in speaking' = obl
+1	Yet	yet	ADV	RB	_	5	advmod	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	not	not	PART	RB	_	5	advmod	_	_
+5	loose	loose	VERB	VB	VerbForm=Inf	0	root	_	_
+6	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	tongue	tongue	NOUN	NN	Number=Sing	5	obj	_	_
+8	,	,	PUNCT	,	_	5	punct	_	_
+9	that	that	SCONJ	IN	_	12	mark	_	_
+10	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+11	shall	shall	AUX	MD	VerbForm=Fin	12	aux	_	_
+12	speak	speak	VERB	VB	VerbForm=Inf	5	advcl	_	_
+13	much	much	ADV	RB	_	12	advmod	_	_
+14	,	,	PUNCT	,	_	5	punct	_	_
+15	for	for	SCONJ	IN	_	19	mark	_	_
+16	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	19	nsubj	_	_
+17	will	will	AUX	MD	VerbForm=Fin	19	aux	_	_
+18	not	not	PART	RB	_	19	advmod	_	_
+19	make	make	VERB	VB	VerbForm=Inf	5	advcl	_	_
+20	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
+21	mighty	mighty	ADJ	JJ	Degree=Pos	19	xcomp	_	_
+22	in	in	ADP	IN	_	23	case	_	_
+23	speaking	speak	NOUN	NN	Number=Sing	19	obl	_	_
+24	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = But I will write unto him my law, by the finger of mine own hand; and I will make a spokesman for him.
+# sent_id = 121
+# llm_note = write=root; 'unto him' = obl (recipient); 'my law' = obj; 'by the finger of mine own hand' = obl instrument; mine=EME 1sg poss PRON; 'make a spokesman for him' = conj; spokesman=obj
+1	But	but	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	write	write	VERB	VB	VerbForm=Inf	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+7	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	_
+8	law	law	NOUN	NN	Number=Sing	4	obj	_	_
+9	,	,	PUNCT	,	_	4	punct	_	_
+10	by	by	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	finger	finger	NOUN	NN	Number=Sing	4	obl	_	_
+13	of	of	ADP	IN	_	16	case	_	_
+14	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+15	own	own	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	hand	hand	NOUN	NN	Number=Sing	12	nmod	_	_
+17	;	;	PUNCT	:	_	4	punct	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	21	nsubj	_	_
+20	will	will	AUX	MD	VerbForm=Fin	21	aux	_	_
+21	make	make	VERB	VB	VerbForm=Inf	4	conj	_	_
+22	a	a	DET	DT	Definite=Ind|PronType=Art	23	det	_	_
+23	spokesman	spokesman	NOUN	NN	Number=Sing	21	obj	_	_
+24	for	for	ADP	IN	_	25	case	_	_
+25	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	obl	_	_
+26	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And the Lord said unto me also: I will raise up unto the fruit of thy loins; and I will make for him a spokesman.
+# sent_id = 122
+# llm_note = said=root; 'raise up' = ccomp (intransitive here, 'unto the fruit of thy loins' = obl benefactive); conj 'make for him a spokesman'
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	Lord	Lord	PROPN	NNP	Number=Sing	4	nsubj	_	_
+4	said	say	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	4	obl	_	_
+7	also	also	ADV	RB	_	4	advmod	_	_
+8	:	:	PUNCT	:	_	4	punct	_	_
+9	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_
+10	will	will	AUX	MD	VerbForm=Fin	11	aux	_	_
+11	raise	raise	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+12	up	up	ADP	RP	_	11	compound:prt	_	_
+13	unto	unto	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	fruit	fruit	NOUN	NN	Number=Sing	11	obl	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	18	nmod:poss	_	_
+18	loins	loin	NOUN	NNS	Number=Plur	15	nmod	_	_
+19	;	;	PUNCT	:	_	11	punct	_	_
+20	and	and	CCONJ	CC	_	23	cc	_	_
+21	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	23	nsubj	_	_
+22	will	will	AUX	MD	VerbForm=Fin	23	aux	_	_
+23	make	make	VERB	VB	VerbForm=Inf	11	conj	_	_
+24	for	for	ADP	IN	_	25	case	_	_
+25	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	obl	_	_
+26	a	a	DET	DT	Definite=Ind|PronType=Art	27	det	_	_
+27	spokesman	spokesman	NOUN	NN	Number=Sing	23	obj	_	_
+28	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And I, behold, I will give unto him that he shall write the writing of the fruit of thy loins, unto the fruit of thy loins; and the spokesman of thy loins shall declare it.
+# sent_id = 123
+# llm_note = 'And I, behold, I' = left-dislocation: first I=dislocated subj (appos or parataxis), behold=discourse, second I=true nsubj of give; give=root; 'that he shall write' = ccomp; 'the writing of the fruit of thy loins' = obj of write; 'unto the fruit of thy loins' = obl of write (recipient); 'the spokesman...shall declare it' = conj
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+3	,	,	PUNCT	,	_	4	punct	_	_
+4	behold	behold	INTJ	UH	_	8	discourse	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+7	will	will	AUX	MD	VerbForm=Fin	8	aux	_	_
+8	give	give	VERB	VB	VerbForm=Inf	0	root	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obl	_	_
+11	that	that	SCONJ	IN	_	14	mark	_	_
+12	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+13	shall	shall	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	write	write	VERB	VB	VerbForm=Inf	8	ccomp	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	writing	writing	NOUN	NN	Number=Sing	14	obj	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	fruit	fruit	NOUN	NN	Number=Sing	16	nmod	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+22	loins	loin	NOUN	NNS	Number=Plur	19	nmod	_	_
+23	,	,	PUNCT	,	_	14	punct	_	_
+24	unto	unto	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	fruit	fruit	NOUN	NN	Number=Sing	14	obl	_	_
+27	of	of	ADP	IN	_	29	case	_	_
+28	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	29	nmod:poss	_	_
+29	loins	loin	NOUN	NNS	Number=Plur	26	nmod	_	_
+30	;	;	PUNCT	:	_	8	punct	_	_
+31	and	and	CCONJ	CC	_	38	cc	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+33	spokesman	spokesman	NOUN	NN	Number=Sing	38	nsubj	_	_
+34	of	of	ADP	IN	_	36	case	_	_
+35	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	36	nmod:poss	_	_
+36	loins	loin	NOUN	NNS	Number=Plur	33	nmod	_	_
+37	shall	shall	AUX	MD	VerbForm=Fin	38	aux	_	_
+38	declare	declare	VERB	VB	VerbForm=Inf	8	conj	_	_
+39	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	38	obj	_	_
+40	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And the words which he shall write shall be the words which are expedient in my wisdom should go forth unto the fruit of thy loins.
+# sent_id = 124
+# llm_note = pseudocleft: 'the words which he shall write' = nsubj of 'shall be'; 'the words which are expedient...should go forth' = xcomp/predicate; 'which are expedient in my wisdom' = inner acl:relcl on outer 'words'; 'should go forth' = advcl or ccomp continuing 'expedient'; 'unto the fruit of thy loins' = obl of 'go forth'
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	words	word	NOUN	NNS	Number=Plur	9	nsubj	_	_
+4	which	which	PRON	WDT	_	7	obj	_	_
+5	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+6	shall	shall	AUX	MD	VerbForm=Fin	7	aux	_	_
+7	write	write	VERB	VB	VerbForm=Inf	3	acl:relcl	_	_
+8	shall	shall	AUX	MD	VerbForm=Fin	9	aux	_	_
+9	be	be	VERB	VB	VerbForm=Inf	0	root	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	words	word	NOUN	NNS	Number=Plur	9	xcomp	_	_
+12	which	which	PRON	WDT	_	14	nsubj	_	_
+13	are	be	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_
+14	expedient	expedient	ADJ	JJ	Degree=Pos	11	acl:relcl	_	_
+15	in	in	ADP	IN	_	17	case	_	_
+16	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	wisdom	wisdom	NOUN	NN	Number=Sing	14	obl	_	_
+18	should	should	AUX	MD	VerbForm=Fin	19	aux	_	_
+19	go	go	VERB	VB	VerbForm=Inf	14	advcl	_	_
+20	forth	forth	ADV	RP	_	19	compound:prt	_	_
+21	unto	unto	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	fruit	fruit	NOUN	NN	Number=Sing	19	obl	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	26	nmod:poss	_	_
+26	loins	loin	NOUN	NNS	Number=Plur	23	nmod	_	_
+27	.	.	PUNCT	.	_	9	punct	_	_
+

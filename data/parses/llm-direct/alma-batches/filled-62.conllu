@@ -1,0 +1,861 @@
+# text = Now this is what I have against thee; thou didst go on unto boasting in thy strength and thy wisdom.
+# sent_id = 1525
+# llm_note = copular cleft: "this is what I have against thee"; second clause thou/didst/go with compound prt "on"; "unto boasting" = obl of go; "in thy strength and thy wisdom" = obl of boasting
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	this	this	PRON	DT	Number=Sing	3	nsubj	_	_
+3	is	be	AUX	VBZ	_	0	root	_	_
+4	what	what	PRON	WP	_	6	obj	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	6	nsubj	_	_
+6	have	have	VERB	VBP	_	3	ccomp	_	_
+7	against	against	ADP	IN	_	8	case	_	_
+8	thee	thee	PRON	PRP	Case=Acc|Number=Sing|Person=2	6	obl	_	_
+9	;	;	PUNCT	:	_	12	punct	_	_
+10	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	12	nsubj	_	_
+11	didst	do	AUX	VBD	_	12	aux	_	_
+12	go	go	VERB	VB	_	3	parataxis	_	_
+13	on	on	ADP	RP	_	12	compound:prt	_	_
+14	unto	unto	ADP	IN	_	15	case	_	_
+15	boasting	boast	VERB	VBG	_	12	obl	_	_
+16	in	in	ADP	IN	_	18	case	_	_
+17	thy	thou	PRON	PRP$	_	18	nmod:poss	_	_
+18	strength	strength	NOUN	NN	_	15	obl	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	thy	thou	PRON	PRP$	_	21	nmod:poss	_	_
+21	wisdom	wisdom	NOUN	NN	_	18	conj	_	_
+22	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And this is not all, my son.
+# sent_id = 1526
+# llm_note = vocative "my son" attached to root; "not all" negated predicate
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	this	this	PRON	DT	Number=Sing	3	nsubj	_	_
+3	is	be	AUX	VBZ	_	0	root	_	_
+4	not	not	PART	RB	_	3	advmod	_	_
+5	all	all	PRON	DT	_	3	xcomp	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	my	I	PRON	PRP$	_	8	nmod:poss	_	_
+8	son	son	NOUN	NN	_	3	vocative	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Thou didst do that which was grievous unto me; for thou didst forsake the ministry, and did go over into the land of Siron among the borders of the Lamanites, after the harlot Isabel.
+# sent_id = 1527
+# llm_note = two main clauses conjoined; "that which was grievous" = obj of do, rel-cl on "that"; second clause: "thou didst forsake" with conj "did go over"
+1	Thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	3	nsubj	_	_
+2	didst	do	AUX	VBD	_	3	aux	_	_
+3	do	do	VERB	VB	_	0	root	_	_
+4	that	that	PRON	DT	_	3	obj	_	_
+5	which	which	PRON	WDT	_	6	nsubj	_	_
+6	was	be	AUX	VBD	_	4	acl:relcl	_	_
+7	grievous	grievous	ADJ	JJ	_	6	xcomp	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	7	obl	_	_
+10	;	;	PUNCT	:	_	14	punct	_	_
+11	for	for	SCONJ	IN	_	14	mark	_	_
+12	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	14	nsubj	_	_
+13	didst	do	AUX	VBD	_	14	aux	_	_
+14	forsake	forsake	VERB	VB	_	3	advcl	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	ministry	ministry	NOUN	NN	_	14	obj	_	_
+17	,	,	PUNCT	,	_	20	punct	_	_
+18	and	and	CCONJ	CC	_	20	cc	_	_
+19	did	do	AUX	VBD	_	20	aux	_	_
+20	go	go	VERB	VB	_	14	conj	_	_
+21	over	over	ADP	RP	_	20	compound:prt	_	_
+22	into	into	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	land	land	NOUN	NN	_	20	obl	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	Siron	Siron	PROPN	NNP	_	24	nmod	_	_
+27	among	among	ADP	IN	_	29	case	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	borders	border	NOUN	NNS	_	20	obl	_	_
+30	of	of	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	Lamanites	Lamanite	PROPN	NNPS	_	29	nmod	_	_
+33	,	,	PUNCT	,	_	37	punct	_	_
+34	after	after	ADP	IN	_	37	case	_	_
+35	the	the	DET	DT	_	37	det	_	_
+36	harlot	harlot	NOUN	NN	_	37	compound	_	_
+37	Isabel	Isabel	PROPN	NNP	_	20	obl	_	_
+38	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Yea, she did steal away the hearts of many; but this was no excuse for thee, my son.
+# sent_id = 1528
+# llm_note = "Yea" = discourse; "did steal away" = aux+verb+prt; second clause conjoined via "but"
+1	Yea	yea	ADV	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	she	she	PRON	PRP	Case=Nom|Number=Sing|Person=3	5	nsubj	_	_
+4	did	do	AUX	VBD	_	5	aux	_	_
+5	steal	steal	VERB	VB	_	0	root	_	_
+6	away	away	ADV	RP	_	5	compound:prt	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	hearts	heart	NOUN	NNS	_	5	obj	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	many	many	PRON	DT	_	8	nmod	_	_
+11	;	;	PUNCT	:	_	14	punct	_	_
+12	but	but	CCONJ	CC	_	14	cc	_	_
+13	this	this	PRON	DT	Number=Sing	14	nsubj	_	_
+14	was	be	AUX	VBD	_	5	conj	_	_
+15	no	no	DET	DT	_	16	det	_	_
+16	excuse	excuse	NOUN	NN	_	14	xcomp	_	_
+17	for	for	ADP	IN	_	18	case	_	_
+18	thee	thee	PRON	PRP	Case=Acc|Number=Sing|Person=2	16	nmod	_	_
+19	,	,	PUNCT	,	_	21	punct	_	_
+20	my	I	PRON	PRP$	_	21	nmod:poss	_	_
+21	son	son	NOUN	NN	_	14	vocative	_	_
+22	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Thou shouldst have tended to the ministry wherewith thou wast entrusted.
+# sent_id = 1529
+# llm_note = modal perfect "shouldst have tended"; "wherewith" = relative adverb heading rel-cl on ministry
+1	Thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	4	nsubj	_	_
+2	shouldst	shall	AUX	MD	_	4	aux	_	_
+3	have	have	AUX	VB	_	4	aux	_	_
+4	tended	tend	VERB	VBN	_	0	root	_	_
+5	to	to	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	ministry	ministry	NOUN	NN	_	4	obl	_	_
+8	wherewith	wherewith	ADV	WRB	_	11	obl	_	_
+9	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	11	nsubj:pass	_	_
+10	wast	be	AUX	VBD	_	11	aux:pass	_	_
+11	entrusted	entrust	VERB	VBN	_	7	acl:relcl	_	_
+12	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Know ye not, my son, that these things are an abomination in the sight of the Lord; yea, most abominable above all sins save it be the shedding of innocent blood or denying the Holy Ghost?
+# sent_id = 1530
+# llm_note = inverted polar question "Know ye not"; "that"-clause = ccomp of Know; "yea, most abominable" = appos/elaboration on abomination; "save it be" = conditional advcl
+1	Know	know	VERB	VB	_	0	root	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	1	nsubj	_	_
+3	not	not	PART	RB	_	1	advmod	_	_
+4	,	,	PUNCT	,	_	6	punct	_	_
+5	my	I	PRON	PRP$	_	6	nmod:poss	_	_
+6	son	son	NOUN	NN	_	1	vocative	_	_
+7	,	,	PUNCT	,	_	1	punct	_	_
+8	that	that	SCONJ	IN	_	11	mark	_	_
+9	these	this	DET	DT	_	10	det	_	_
+10	things	thing	NOUN	NNS	_	11	nsubj	_	_
+11	are	be	AUX	VBZ	_	1	ccomp	_	_
+12	an	a	DET	DT	_	13	det	_	_
+13	abomination	abomination	NOUN	NN	_	11	xcomp	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	sight	sight	NOUN	NN	_	13	nmod	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	Lord	Lord	PROPN	NNP	_	16	nmod	_	_
+20	;	;	PUNCT	:	_	24	punct	_	_
+21	yea	yea	ADV	UH	_	24	discourse	_	_
+22	,	,	PUNCT	,	_	24	punct	_	_
+23	most	most	ADV	RBS	_	24	advmod	_	_
+24	abominable	abominable	ADJ	JJ	_	13	conj	_	_
+25	above	above	ADP	IN	_	27	case	_	_
+26	all	all	DET	PDT	_	27	det:predet	_	_
+27	sins	sin	NOUN	NNS	_	24	obl	_	_
+28	save	save	SCONJ	IN	_	30	mark	_	_
+29	it	it	PRON	PRP	_	30	nsubj	_	_
+30	be	be	VERB	VB	_	27	acl:relcl	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	shedding	shedding	NOUN	NN	_	30	xcomp	_	_
+33	of	of	ADP	IN	_	35	case	_	_
+34	innocent	innocent	ADJ	JJ	_	35	amod	_	_
+35	blood	blood	NOUN	NN	_	32	nmod	_	_
+36	or	or	CCONJ	CC	_	37	cc	_	_
+37	denying	deny	VERB	VBG	_	32	conj	_	_
+38	the	the	DET	DT	_	40	det	_	_
+39	Holy	holy	ADJ	JJ	_	40	amod	_	_
+40	Ghost	Ghost	PROPN	NNP	_	37	obj	_	_
+41	?	?	PUNCT	.	_	1	punct	_	_
+
+# text = For behold, if ye deny the Holy Ghost when it once has had place in you, and ye know that ye deny it, behold, this is a sin which is unpardonable; yea, and whosoever murdereth against the light and knowledge of God, it is not easy for him to obtain forgiveness; yea, I say unto you, my son, that it is not easy for him to obtain a forgiveness.
+# sent_id = 1531
+# llm_note = "For" = mark on root; "behold" = discourse; large conditional "if ye deny...": advcl of main "this is a sin"; "whosoever murdereth" clause = parataxis; final "I say..." = parataxis; expletive "it" heads the easy-for-him clause
+1	For	for	SCONJ	IN	_	30	mark	_	_
+2	behold	behold	INTJ	UH	_	30	discourse	_	_
+3	,	,	PUNCT	,	_	30	punct	_	_
+4	if	if	SCONJ	IN	_	6	mark	_	_
+5	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	6	nsubj	_	_
+6	deny	deny	VERB	VBP	_	30	advcl	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	Holy	holy	ADJ	JJ	_	9	amod	_	_
+9	Ghost	Ghost	PROPN	NNP	_	6	obj	_	_
+10	when	when	SCONJ	WRB	_	13	mark	_	_
+11	it	it	PRON	PRP	_	13	nsubj	_	_
+12	once	once	ADV	RB	_	13	advmod	_	_
+13	has	have	AUX	VBZ	_	6	advcl	_	_
+14	had	have	VERB	VBN	_	13	xcomp	_	_
+15	place	place	NOUN	NN	_	14	obj	_	_
+16	in	in	ADP	IN	_	17	case	_	_
+17	you	you	PRON	PRP	_	14	obl	_	_
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	21	nsubj	_	_
+21	know	know	VERB	VBP	_	6	conj	_	_
+22	that	that	SCONJ	IN	_	24	mark	_	_
+23	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	24	nsubj	_	_
+24	deny	deny	VERB	VBP	_	21	ccomp	_	_
+25	it	it	PRON	PRP	_	24	obj	_	_
+26	,	,	PUNCT	,	_	30	punct	_	_
+27	behold	behold	INTJ	UH	_	30	discourse	_	_
+28	,	,	PUNCT	,	_	30	punct	_	_
+29	this	this	PRON	DT	Number=Sing	30	nsubj	_	_
+30	is	be	AUX	VBZ	_	0	root	_	_
+31	a	a	DET	DT	_	32	det	_	_
+32	sin	sin	NOUN	NN	_	30	xcomp	_	_
+33	which	which	PRON	WDT	_	34	nsubj	_	_
+34	is	be	AUX	VBZ	_	32	acl:relcl	_	_
+35	unpardonable	unpardonable	ADJ	JJ	_	34	xcomp	_	_
+36	;	;	PUNCT	:	_	53	punct	_	_
+37	yea	yea	ADV	UH	_	53	discourse	_	_
+38	,	,	PUNCT	,	_	53	punct	_	_
+39	and	and	CCONJ	CC	_	53	cc	_	_
+40	whosoever	whosoever	PRON	WP	_	41	nsubj	_	_
+41	murdereth	murder	VERB	VBZ	_	53	advcl	_	_
+42	against	against	ADP	IN	_	44	case	_	_
+43	the	the	DET	DT	_	44	det	_	_
+44	light	light	NOUN	NN	_	41	obl	_	_
+45	and	and	CCONJ	CC	_	46	cc	_	_
+46	knowledge	knowledge	NOUN	NN	_	44	conj	_	_
+47	of	of	ADP	IN	_	48	case	_	_
+48	God	God	PROPN	NNP	_	46	nmod	_	_
+49	,	,	PUNCT	,	_	53	punct	_	_
+50	it	it	PRON	PRP	_	53	expl	_	_
+51	is	be	AUX	VBZ	_	53	cop	_	_
+52	not	not	PART	RB	_	53	advmod	_	_
+53	easy	easy	ADJ	JJ	_	30	parataxis	_	_
+54	for	for	ADP	IN	_	55	case	_	_
+55	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	53	obl	_	_
+56	to	to	PART	TO	_	57	mark	_	_
+57	obtain	obtain	VERB	VB	_	53	xcomp	_	_
+58	forgiveness	forgiveness	NOUN	NN	_	57	obj	_	_
+59	;	;	PUNCT	:	_	63	punct	_	_
+60	yea	yea	ADV	UH	_	63	discourse	_	_
+61	,	,	PUNCT	,	_	63	punct	_	_
+62	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	63	nsubj	_	_
+63	say	say	VERB	VBP	_	30	parataxis	_	_
+64	unto	unto	ADP	IN	_	65	case	_	_
+65	you	you	PRON	PRP	_	63	obl	_	_
+66	,	,	PUNCT	,	_	68	punct	_	_
+67	my	I	PRON	PRP$	_	68	nmod:poss	_	_
+68	son	son	NOUN	NN	_	63	vocative	_	_
+69	,	,	PUNCT	,	_	63	punct	_	_
+70	that	that	SCONJ	IN	_	74	mark	_	_
+71	it	it	PRON	PRP	_	74	expl	_	_
+72	is	be	AUX	VBZ	_	74	cop	_	_
+73	not	not	PART	RB	_	74	advmod	_	_
+74	easy	easy	ADJ	JJ	_	63	ccomp	_	_
+75	for	for	ADP	IN	_	76	case	_	_
+76	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	74	obl	_	_
+77	to	to	PART	TO	_	78	mark	_	_
+78	obtain	obtain	VERB	VB	_	74	xcomp	_	_
+79	a	a	DET	DT	_	80	det	_	_
+80	forgiveness	forgiveness	NOUN	NN	_	78	obj	_	_
+81	.	.	PUNCT	.	_	30	punct	_	_
+
+# text = And now, my son, I would to God that ye had not been guilty of so great a crime.
+# sent_id = 1532
+# llm_note = "would to God that" = optative idiom; "that"-clause = ccomp of would; "so great a crime" = predicate adj with measure
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	now	now	ADV	RB	_	8	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	my	I	PRON	PRP$	_	5	nmod:poss	_	_
+5	son	son	NOUN	NN	_	8	vocative	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	would	would	AUX	MD	_	0	root	_	_
+9	to	to	ADP	IN	_	10	case	_	_
+10	God	God	PROPN	NNP	_	8	obl	_	_
+11	that	that	SCONJ	IN	_	16	mark	_	_
+12	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	16	nsubj	_	_
+13	had	have	AUX	VBD	_	16	aux	_	_
+14	not	not	PART	RB	_	16	advmod	_	_
+15	been	be	AUX	VBN	_	16	cop	_	_
+16	guilty	guilty	ADJ	JJ	_	8	ccomp	_	_
+17	of	of	ADP	IN	_	21	case	_	_
+18	so	so	ADV	RB	_	19	advmod	_	_
+19	great	great	ADJ	JJ	_	21	amod	_	_
+20	a	a	DET	DT	_	21	det	_	_
+21	crime	crime	NOUN	NN	_	16	obl	_	_
+22	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = I would not dwell upon your crimes, to harrow up your soul, if it were not for your good.
+# sent_id = 1533
+# llm_note = "to harrow up" = purpose infinitive; "if it were not for your good" = advcl
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+2	would	would	AUX	MD	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	dwell	dwell	VERB	VB	_	0	root	_	_
+5	upon	upon	ADP	IN	_	7	case	_	_
+6	your	you	PRON	PRP$	_	7	nmod:poss	_	_
+7	crimes	crime	NOUN	NNS	_	4	obl	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	to	to	PART	TO	_	10	mark	_	_
+10	harrow	harrow	VERB	VB	_	4	advcl	_	_
+11	up	up	ADP	RP	_	10	compound:prt	_	_
+12	your	you	PRON	PRP$	_	13	nmod:poss	_	_
+13	soul	soul	NOUN	NN	_	10	obj	_	_
+14	,	,	PUNCT	,	_	4	punct	_	_
+15	if	if	SCONJ	IN	_	17	mark	_	_
+16	it	it	PRON	PRP	_	17	nsubj	_	_
+17	were	be	AUX	VBD	_	4	advcl	_	_
+18	not	not	PART	RB	_	17	advmod	_	_
+19	for	for	ADP	IN	_	21	case	_	_
+20	your	you	PRON	PRP$	_	21	nmod:poss	_	_
+21	good	good	NOUN	NN	_	17	obl	_	_
+22	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = But behold, ye cannot hide your crimes from God; and except ye repent they will stand as a testimony against you at the last day.
+# sent_id = 1534
+# llm_note = MWT "cannot" = can+not; "except ye repent" = advcl of stand; "as a testimony" = obl of stand
+1	But	but	CCONJ	CC	_	7	cc	_	_
+2	behold	behold	INTJ	UH	_	7	discourse	_	_
+3	,	,	PUNCT	,	_	7	punct	_	_
+4	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	7	nsubj	_	_
+5-6	cannot	_	_	_	_	_	_	_	_
+5	can	can	AUX	MD	_	7	aux	_	_
+6	not	not	PART	RB	_	7	advmod	_	_
+7	hide	hide	VERB	VB	_	0	root	_	_
+8	your	you	PRON	PRP$	_	9	nmod:poss	_	_
+9	crimes	crime	NOUN	NNS	_	7	obj	_	_
+10	from	from	ADP	IN	_	11	case	_	_
+11	God	God	PROPN	NNP	_	7	obl	_	_
+12	;	;	PUNCT	:	_	19	punct	_	_
+13	and	and	CCONJ	CC	_	19	cc	_	_
+14	except	except	SCONJ	IN	_	16	mark	_	_
+15	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	16	nsubj	_	_
+16	repent	repent	VERB	VBP	_	19	advcl	_	_
+17	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	19	nsubj	_	_
+18	will	will	AUX	MD	_	19	aux	_	_
+19	stand	stand	VERB	VB	_	7	conj	_	_
+20	as	as	ADP	IN	_	22	case	_	_
+21	a	a	DET	DT	_	22	det	_	_
+22	testimony	testimony	NOUN	NN	_	19	obl	_	_
+23	against	against	ADP	IN	_	24	case	_	_
+24	you	you	PRON	PRP	_	22	nmod	_	_
+25	at	at	ADP	IN	_	28	case	_	_
+26	the	the	DET	DT	_	28	det	_	_
+27	last	last	ADJ	JJ	_	28	amod	_	_
+28	day	day	NOUN	NN	_	19	obl	_	_
+29	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = Now my son, I would that ye should repent and forsake your sins, and go no more after the lusts of your eyes, but cross yourself in all these things; for except ye do this ye can in nowise inherit the kingdom of God.
+# sent_id = 1535
+# llm_note = "I would that" = volition + ccomp; conjoined bare verbs "repent and forsake and go and cross"; "no more" = advmod; "in nowise" = advmod; second clause "except ye do" = advcl of inherit
+1	Now	now	ADV	RB	_	6	advmod	_	_
+2	my	I	PRON	PRP$	_	3	nmod:poss	_	_
+3	son	son	NOUN	NN	_	6	vocative	_	_
+4	,	,	PUNCT	,	_	6	punct	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	6	nsubj	_	_
+6	would	would	AUX	MD	_	0	root	_	_
+7	that	that	SCONJ	IN	_	10	mark	_	_
+8	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	10	nsubj	_	_
+9	should	shall	AUX	MD	_	10	aux	_	_
+10	repent	repent	VERB	VB	_	6	ccomp	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	forsake	forsake	VERB	VB	_	10	conj	_	_
+13	your	you	PRON	PRP$	_	14	nmod:poss	_	_
+14	sins	sin	NOUN	NNS	_	12	obj	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	go	go	VERB	VB	_	10	conj	_	_
+18	no	no	ADV	RB	_	19	advmod	_	_
+19	more	more	ADV	RBR	_	17	advmod	_	_
+20	after	after	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	lusts	lust	NOUN	NNS	_	17	obl	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	your	you	PRON	PRP$	_	25	nmod:poss	_	_
+25	eyes	eye	NOUN	NNS	_	22	nmod	_	_
+26	,	,	PUNCT	,	_	28	punct	_	_
+27	but	but	CCONJ	CC	_	28	cc	_	_
+28	cross	cross	VERB	VB	_	10	conj	_	_
+29	yourself	yourself	PRON	PRP	_	28	obj	_	_
+30	in	in	ADP	IN	_	33	case	_	_
+31	all	all	DET	PDT	_	33	det:predet	_	_
+32	these	this	DET	DT	_	33	det	_	_
+33	things	thing	NOUN	NNS	_	28	obl	_	_
+34	;	;	PUNCT	:	_	44	punct	_	_
+35	for	for	SCONJ	IN	_	44	mark	_	_
+36	except	except	SCONJ	IN	_	38	mark	_	_
+37	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	38	nsubj	_	_
+38	do	do	VERB	VBP	_	44	advcl	_	_
+39	this	this	PRON	DT	_	38	obj	_	_
+40	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	44	nsubj	_	_
+41	can	can	AUX	MD	_	44	aux	_	_
+42	in	in	ADP	IN	_	43	case	_	_
+43	nowise	nowise	ADV	RB	_	44	advmod	_	_
+44	inherit	inherit	VERB	VB	_	6	advcl	_	_
+45	the	the	DET	DT	_	46	det	_	_
+46	kingdom	kingdom	NOUN	NN	_	44	obj	_	_
+47	of	of	ADP	IN	_	48	case	_	_
+48	God	God	PROPN	NNP	_	46	nmod	_	_
+49	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Oh, remember, and take it upon you, and cross yourself in these things.
+# sent_id = 1536
+# llm_note = "Oh" = INTJ discourse; three conjoined imperatives: remember, take, cross
+1	Oh	oh	INTJ	UH	_	3	discourse	_	_
+2	,	,	PUNCT	,	_	3	punct	_	_
+3	remember	remember	VERB	VB	_	0	root	_	_
+4	,	,	PUNCT	,	_	6	punct	_	_
+5	and	and	CCONJ	CC	_	6	cc	_	_
+6	take	take	VERB	VB	_	3	conj	_	_
+7	it	it	PRON	PRP	_	6	obj	_	_
+8	upon	upon	ADP	IN	_	9	case	_	_
+9	you	you	PRON	PRP	_	6	obl	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	cross	cross	VERB	VB	_	3	conj	_	_
+13	yourself	yourself	PRON	PRP	_	12	obj	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	these	this	DET	DT	_	16	det	_	_
+16	things	thing	NOUN	NNS	_	12	obl	_	_
+17	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And I command you to take it upon you to counsel with your elder brothers in your undertakings; for behold, thou art in thy youth, and ye stand in need to be nourished by your brothers.
+# sent_id = 1537
+# llm_note = "command you to take" = xcomp chain; "to counsel" = xcomp of take; second main clause conjoined "ye stand in need to be nourished"
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	command	command	VERB	VBP	_	0	root	_	_
+4	you	you	PRON	PRP	_	3	obj	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	take	take	VERB	VB	_	3	xcomp	_	_
+7	it	it	PRON	PRP	_	6	obj	_	_
+8	upon	upon	ADP	IN	_	9	case	_	_
+9	you	you	PRON	PRP	_	6	obl	_	_
+10	to	to	PART	TO	_	11	mark	_	_
+11	counsel	counsel	VERB	VB	_	6	xcomp	_	_
+12	with	with	ADP	IN	_	15	case	_	_
+13	your	you	PRON	PRP$	_	15	nmod:poss	_	_
+14	elder	elder	ADJ	JJR	_	15	amod	_	_
+15	brothers	brother	NOUN	NNS	_	11	obl	_	_
+16	in	in	ADP	IN	_	18	case	_	_
+17	your	you	PRON	PRP$	_	18	nmod:poss	_	_
+18	undertakings	undertaking	NOUN	NNS	_	11	obl	_	_
+19	;	;	PUNCT	:	_	24	punct	_	_
+20	for	for	SCONJ	IN	_	24	mark	_	_
+21	behold	behold	INTJ	UH	_	24	discourse	_	_
+22	,	,	PUNCT	,	_	24	punct	_	_
+23	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	24	nsubj	_	_
+24	art	be	AUX	VBZ	_	3	advcl	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	thy	thou	PRON	PRP$	_	27	nmod:poss	_	_
+27	youth	youth	NOUN	NN	_	24	obl	_	_
+28	,	,	PUNCT	,	_	31	punct	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	31	nsubj	_	_
+31	stand	stand	VERB	VBP	_	3	conj	_	_
+32	in	in	ADP	IN	_	33	case	_	_
+33	need	need	NOUN	NN	_	31	obl	_	_
+34	to	to	PART	TO	_	36	mark	_	_
+35	be	be	AUX	VB	_	36	aux:pass	_	_
+36	nourished	nourish	VERB	VBN	_	33	acl	_	_
+37	by	by	ADP	IN	_	39	case	_	_
+38	your	you	PRON	PRP$	_	39	nmod:poss	_	_
+39	brothers	brother	NOUN	NNS	_	36	obl:agent	_	_
+40	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And give heed to their counsel.
+# sent_id = 1538
+1	And	and	CCONJ	CC	_	2	cc	_	_
+2	give	give	VERB	VB	_	0	root	_	_
+3	heed	heed	NOUN	NN	_	2	obj	_	_
+4	to	to	ADP	IN	_	6	case	_	_
+5	their	they	PRON	PRP$	_	6	nmod:poss	_	_
+6	counsel	counsel	NOUN	NN	_	3	nmod	_	_
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = Suffer not yourself to be led away by any vain or foolish thing; suffer not the devil to lead away your heart again after those wicked harlots.
+# sent_id = 1539
+# llm_note = two parallel imperative clauses with "suffer not X to do Y"; "led away" = passive verb + prt; "lead away" = bare verb + prt
+1	Suffer	suffer	VERB	VB	_	0	root	_	_
+2	not	not	PART	RB	_	1	advmod	_	_
+3	yourself	yourself	PRON	PRP	_	1	obj	_	_
+4	to	to	PART	TO	_	6	mark	_	_
+5	be	be	AUX	VB	_	6	aux:pass	_	_
+6	led	lead	VERB	VBN	_	1	xcomp	_	_
+7	away	away	ADV	RP	_	6	compound:prt	_	_
+8	by	by	ADP	IN	_	13	case	_	_
+9	any	any	DET	DT	_	13	det	_	_
+10	vain	vain	ADJ	JJ	_	13	amod	_	_
+11	or	or	CCONJ	CC	_	12	cc	_	_
+12	foolish	foolish	ADJ	JJ	_	10	conj	_	_
+13	thing	thing	NOUN	NN	_	6	obl:agent	_	_
+14	;	;	PUNCT	:	_	15	punct	_	_
+15	suffer	suffer	VERB	VB	_	1	conj	_	_
+16	not	not	PART	RB	_	15	advmod	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	devil	devil	NOUN	NN	_	15	obj	_	_
+19	to	to	PART	TO	_	20	mark	_	_
+20	lead	lead	VERB	VB	_	15	xcomp	_	_
+21	away	away	ADV	RP	_	20	compound:prt	_	_
+22	your	you	PRON	PRP$	_	23	nmod:poss	_	_
+23	heart	heart	NOUN	NN	_	20	obj	_	_
+24	again	again	ADV	RB	_	20	advmod	_	_
+25	after	after	ADP	IN	_	28	case	_	_
+26	those	that	DET	DT	_	28	det	_	_
+27	wicked	wicked	ADJ	JJ	_	28	amod	_	_
+28	harlots	harlot	NOUN	NNS	_	20	obl	_	_
+29	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = Behold, O my son, how great iniquity ye brought upon the Zoramites; for when they saw your conduct they would not believe in my words.
+# sent_id = 1540
+# llm_note = "O my son" = vocative (O marks vocative here); "how great iniquity" = degree-modified obj of brought; "for when they saw" = causal+temporal advcl
+1	Behold	behold	INTJ	UH	_	11	discourse	_	_
+2	,	,	PUNCT	,	_	11	punct	_	_
+3	O	O	INTJ	UH	_	5	discourse	_	_
+4	my	I	PRON	PRP$	_	5	nmod:poss	_	_
+5	son	son	NOUN	NN	_	11	vocative	_	_
+6	,	,	PUNCT	,	_	11	punct	_	_
+7	how	how	ADV	WRB	_	8	advmod	_	_
+8	great	great	ADJ	JJ	_	9	amod	_	_
+9	iniquity	iniquity	NOUN	NN	_	11	obj	_	_
+10	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	11	nsubj	_	_
+11	brought	bring	VERB	VBD	_	0	root	_	_
+12	upon	upon	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	Zoramites	Zoramite	PROPN	NNPS	_	11	obl	_	_
+15	;	;	PUNCT	:	_	25	punct	_	_
+16	for	for	SCONJ	IN	_	19	mark	_	_
+17	when	when	SCONJ	WRB	_	19	mark	_	_
+18	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	19	nsubj	_	_
+19	saw	see	VERB	VBD	_	25	advcl	_	_
+20	your	you	PRON	PRP$	_	21	nmod:poss	_	_
+21	conduct	conduct	NOUN	NN	_	19	obj	_	_
+22	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	25	nsubj	_	_
+23	would	would	AUX	MD	_	25	aux	_	_
+24	not	not	PART	RB	_	25	advmod	_	_
+25	believe	believe	VERB	VB	_	11	advcl	_	_
+26	in	in	ADP	IN	_	28	case	_	_
+27	my	I	PRON	PRP$	_	28	nmod:poss	_	_
+28	words	word	NOUN	NNS	_	25	obl	_	_
+29	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = And now the Spirit of the Lord doth say unto me: Command thy children to do good, lest they lead away the hearts of many people to destruction; therefore I command you, my son, in the fear of God, that ye refrain from your iniquities;
+# sent_id = 1541
+# llm_note = direct speech introduced by colon after "say unto me"; reported speech root is "Command"; "lest they lead" = advcl of Command; "therefore I command" = new main clause parataxis off root "say"
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	now	now	ADV	RB	_	9	advmod	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	Spirit	Spirit	PROPN	NNP	_	9	nsubj	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	Lord	Lord	PROPN	NNP	_	4	nmod	_	_
+8	doth	do	AUX	VBZ	_	9	aux	_	_
+9	say	say	VERB	VB	_	0	root	_	_
+10	unto	unto	ADP	IN	_	11	case	_	_
+11	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	9	obl	_	_
+12	:	:	PUNCT	:	_	13	punct	_	_
+13	Command	command	VERB	VB	_	9	ccomp	_	_
+14	thy	thou	PRON	PRP$	_	15	nmod:poss	_	_
+15	children	child	NOUN	NNS	_	13	obj	_	_
+16	to	to	PART	TO	_	17	mark	_	_
+17	do	do	VERB	VB	_	13	xcomp	_	_
+18	good	good	ADJ	JJ	_	17	obj	_	_
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	lest	lest	SCONJ	IN	_	22	mark	_	_
+21	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	22	nsubj	_	_
+22	lead	lead	VERB	VBP	_	13	advcl	_	_
+23	away	away	ADV	RP	_	22	compound:prt	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	hearts	heart	NOUN	NNS	_	22	obj	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	many	many	ADJ	JJ	_	28	amod	_	_
+28	people	people	NOUN	NNS	_	25	nmod	_	_
+29	to	to	ADP	IN	_	30	case	_	_
+30	destruction	destruction	NOUN	NN	_	22	obl	_	_
+31	;	;	PUNCT	:	_	34	punct	_	_
+32	therefore	therefore	ADV	RB	_	34	advmod	_	_
+33	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	34	nsubj	_	_
+34	command	command	VERB	VBP	_	9	parataxis	_	_
+35	you	you	PRON	PRP	_	34	obj	_	_
+36	,	,	PUNCT	,	_	38	punct	_	_
+37	my	I	PRON	PRP$	_	38	nmod:poss	_	_
+38	son	son	NOUN	NN	_	34	vocative	_	_
+39	,	,	PUNCT	,	_	34	punct	_	_
+40	in	in	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	_	42	det	_	_
+42	fear	fear	NOUN	NN	_	34	obl	_	_
+43	of	of	ADP	IN	_	44	case	_	_
+44	God	God	PROPN	NNP	_	42	nmod	_	_
+45	,	,	PUNCT	,	_	34	punct	_	_
+46	that	that	SCONJ	IN	_	48	mark	_	_
+47	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	48	nsubj	_	_
+48	refrain	refrain	VERB	VBP	_	34	ccomp	_	_
+49	from	from	ADP	IN	_	51	case	_	_
+50	your	you	PRON	PRP$	_	51	nmod:poss	_	_
+51	iniquities	iniquity	NOUN	NNS	_	48	obl	_	_
+52	;	;	PUNCT	:	_	34	punct	_	_
+
+# text = That ye turn to the Lord with all your mind, might, and strength; that ye lead away the hearts of no more to do wickedly; but rather return unto them, and acknowledge your faults and that wrong which ye have done.
+# sent_id = 1542
+# llm_note = continuation of prior command chain; three parallel "that"-purpose clauses; "no more" = quantifier on obj of lead away; "that wrong which ye have done" = obj of acknowledge, conjoined with "faults"
+1	That	that	SCONJ	IN	_	3	mark	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	turn	turn	VERB	VBP	_	0	root	_	_
+4	to	to	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	Lord	Lord	PROPN	NNP	_	3	obl	_	_
+7	with	with	ADP	IN	_	10	case	_	_
+8	all	all	DET	PDT	_	10	det:predet	_	_
+9	your	you	PRON	PRP$	_	10	nmod:poss	_	_
+10	mind	mind	NOUN	NN	_	3	obl	_	_
+11	,	,	PUNCT	,	_	12	punct	_	_
+12	might	might	NOUN	NN	_	10	conj	_	_
+13	,	,	PUNCT	,	_	15	punct	_	_
+14	and	and	CCONJ	CC	_	15	cc	_	_
+15	strength	strength	NOUN	NN	_	10	conj	_	_
+16	;	;	PUNCT	:	_	19	punct	_	_
+17	that	that	SCONJ	IN	_	19	mark	_	_
+18	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	19	nsubj	_	_
+19	lead	lead	VERB	VBP	_	3	conj	_	_
+20	away	away	ADV	RP	_	19	compound:prt	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	hearts	heart	NOUN	NNS	_	19	obj	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	no	no	DET	DT	_	25	det	_	_
+25	more	more	PRON	DT	_	22	nmod	_	_
+26	to	to	PART	TO	_	27	mark	_	_
+27	do	do	VERB	VB	_	19	advcl	_	_
+28	wickedly	wickedly	ADV	RB	_	27	advmod	_	_
+29	;	;	PUNCT	:	_	32	punct	_	_
+30	but	but	CCONJ	CC	_	32	cc	_	_
+31	rather	rather	ADV	RB	_	32	advmod	_	_
+32	return	return	VERB	VB	_	3	conj	_	_
+33	unto	unto	ADP	IN	_	34	case	_	_
+34	them	they	PRON	PRP	_	32	obl	_	_
+35	,	,	PUNCT	,	_	37	punct	_	_
+36	and	and	CCONJ	CC	_	37	cc	_	_
+37	acknowledge	acknowledge	VERB	VB	_	32	conj	_	_
+38	your	you	PRON	PRP$	_	39	nmod:poss	_	_
+39	faults	fault	NOUN	NNS	_	37	obj	_	_
+40	and	and	CCONJ	CC	_	42	cc	_	_
+41	that	that	DET	DT	_	42	det	_	_
+42	wrong	wrong	NOUN	NN	_	39	conj	_	_
+43	which	which	PRON	WDT	_	46	obj	_	_
+44	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	46	nsubj	_	_
+45	have	have	AUX	VBP	_	46	aux	_	_
+46	done	do	VERB	VBN	_	42	acl:relcl	_	_
+47	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Seek not after riches nor the vain things of this world; for behold, you cannot carry them with you.
+# sent_id = 1543
+# llm_note = MWT "cannot"; "nor the vain things" = negative conj obj; "behold" = discourse
+1	Seek	seek	VERB	VB	_	0	root	_	_
+2	not	not	PART	RB	_	1	advmod	_	_
+3	after	after	ADP	IN	_	4	case	_	_
+4	riches	riches	NOUN	NNS	_	1	obl	_	_
+5	nor	nor	CCONJ	CC	_	8	cc	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	vain	vain	ADJ	JJ	_	8	amod	_	_
+8	things	thing	NOUN	NNS	_	4	conj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	this	this	DET	DT	_	11	det	_	_
+11	world	world	NOUN	NN	_	8	nmod	_	_
+12	;	;	PUNCT	:	_	19	punct	_	_
+13	for	for	SCONJ	IN	_	19	mark	_	_
+14	behold	behold	INTJ	UH	_	19	discourse	_	_
+15	,	,	PUNCT	,	_	19	punct	_	_
+16	you	you	PRON	PRP	_	19	nsubj	_	_
+17-18	cannot	_	_	_	_	_	_	_	_
+17	can	can	AUX	MD	_	19	aux	_	_
+18	not	not	PART	RB	_	19	advmod	_	_
+19	carry	carry	VERB	VB	_	1	advcl	_	_
+20	them	they	PRON	PRP	_	19	obj	_	_
+21	with	with	ADP	IN	_	22	case	_	_
+22	you	you	PRON	PRP	_	19	obl	_	_
+23	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = And now, my son, I would say somewhat unto you concerning the coming of Christ.
+# sent_id = 1544
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	now	now	ADV	RB	_	9	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	my	I	PRON	PRP$	_	5	nmod:poss	_	_
+5	son	son	NOUN	NN	_	9	vocative	_	_
+6	,	,	PUNCT	,	_	9	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	9	nsubj	_	_
+8	would	would	AUX	MD	_	9	aux	_	_
+9	say	say	VERB	VB	_	0	root	_	_
+10	somewhat	somewhat	ADV	RB	_	9	advmod	_	_
+11	unto	unto	ADP	IN	_	12	case	_	_
+12	you	you	PRON	PRP	_	9	obl	_	_
+13	concerning	concerning	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	coming	coming	NOUN	NN	_	9	obl	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	Christ	Christ	PROPN	NNP	_	15	nmod	_	_
+18	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = Behold, I say unto you, that it is he that surely shall come to take away the sins of the world; yea, he cometh to declare glad tidings of salvation unto his people.
+# sent_id = 1545
+# llm_note = "I say unto you" = reporting verb; "that it is he that surely shall come" = ccomp; cleft "it is he"; "he cometh to declare" = second independent clause
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	say	say	VERB	VBP	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	you	you	PRON	PRP	_	4	obl	_	_
+7	,	,	PUNCT	,	_	4	punct	_	_
+8	that	that	SCONJ	IN	_	10	mark	_	_
+9	it	it	PRON	PRP	_	10	expl	_	_
+10	is	be	AUX	VBZ	_	4	ccomp	_	_
+11	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	10	xcomp	_	_
+12	that	that	PRON	WDT	_	15	nsubj	_	_
+13	surely	surely	ADV	RB	_	15	advmod	_	_
+14	shall	shall	AUX	MD	_	15	aux	_	_
+15	come	come	VERB	VB	_	11	acl:relcl	_	_
+16	to	to	PART	TO	_	17	mark	_	_
+17	take	take	VERB	VB	_	15	advcl	_	_
+18	away	away	ADV	RP	_	17	compound:prt	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	sins	sin	NOUN	NNS	_	17	obj	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	world	world	NOUN	NN	_	20	nmod	_	_
+24	;	;	PUNCT	:	_	28	punct	_	_
+25	yea	yea	ADV	UH	_	28	discourse	_	_
+26	,	,	PUNCT	,	_	28	punct	_	_
+27	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	28	nsubj	_	_
+28	cometh	come	VERB	VBZ	_	4	parataxis	_	_
+29	to	to	PART	TO	_	30	mark	_	_
+30	declare	declare	VERB	VB	_	28	advcl	_	_
+31	glad	glad	ADJ	JJ	_	32	amod	_	_
+32	tidings	tiding	NOUN	NNS	_	30	obj	_	_
+33	of	of	ADP	IN	_	34	case	_	_
+34	salvation	salvation	NOUN	NN	_	32	nmod	_	_
+35	unto	unto	ADP	IN	_	37	case	_	_
+36	his	he	PRON	PRP$	_	37	nmod:poss	_	_
+37	people	people	NOUN	NNS	_	30	obl	_	_
+38	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And now, my son, this was the ministry unto which ye were called, to declare these glad tidings unto this people, to prepare their minds; or rather that salvation might come unto them, that they may prepare the minds of their children to hear the word at the time of his coming.
+# sent_id = 1546
+# llm_note = "unto which ye were called" = acl:relcl on ministry; "to declare" "to prepare" = purpose xcomp/advcl; "or rather that salvation might come" = conjoined purpose clause with correction marker
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	now	now	ADV	RB	_	8	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	my	I	PRON	PRP$	_	5	nmod:poss	_	_
+5	son	son	NOUN	NN	_	8	vocative	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	this	this	PRON	DT	Number=Sing	8	nsubj	_	_
+8	was	be	AUX	VBD	_	0	root	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	ministry	ministry	NOUN	NN	_	8	xcomp	_	_
+11	unto	unto	ADP	IN	_	12	case	_	_
+12	which	which	PRON	WDT	_	15	obl	_	_
+13	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	15	nsubj:pass	_	_
+14	were	be	AUX	VBD	_	15	aux:pass	_	_
+15	called	call	VERB	VBN	_	10	acl:relcl	_	_
+16	,	,	PUNCT	,	_	18	punct	_	_
+17	to	to	PART	TO	_	18	mark	_	_
+18	declare	declare	VERB	VB	_	15	advcl	_	_
+19	these	this	DET	DT	_	21	det	_	_
+20	glad	glad	ADJ	JJ	_	21	amod	_	_
+21	tidings	tiding	NOUN	NNS	_	18	obj	_	_
+22	unto	unto	ADP	IN	_	24	case	_	_
+23	this	this	DET	DT	_	24	det	_	_
+24	people	people	NOUN	NNS	_	18	obl	_	_
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	to	to	PART	TO	_	27	mark	_	_
+27	prepare	prepare	VERB	VB	_	18	conj	_	_
+28	their	they	PRON	PRP$	_	29	nmod:poss	_	_
+29	minds	mind	NOUN	NNS	_	27	obj	_	_
+30	;	;	PUNCT	:	_	36	punct	_	_
+31	or	or	CCONJ	CC	_	36	cc	_	_
+32	rather	rather	ADV	RB	_	36	advmod	_	_
+33	that	that	SCONJ	IN	_	36	mark	_	_
+34	salvation	salvation	NOUN	NN	_	36	nsubj	_	_
+35	might	might	AUX	MD	_	36	aux	_	_
+36	come	come	VERB	VB	_	27	conj	_	_
+37	unto	unto	ADP	IN	_	38	case	_	_
+38	them	they	PRON	PRP	_	36	obl	_	_
+39	,	,	PUNCT	,	_	43	punct	_	_
+40	that	that	SCONJ	IN	_	43	mark	_	_
+41	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	43	nsubj	_	_
+42	may	may	AUX	MD	_	43	aux	_	_
+43	prepare	prepare	VERB	VB	_	36	advcl	_	_
+44	the	the	DET	DT	_	45	det	_	_
+45	minds	mind	NOUN	NNS	_	43	obj	_	_
+46	of	of	ADP	IN	_	48	case	_	_
+47	their	they	PRON	PRP$	_	48	nmod:poss	_	_
+48	children	child	NOUN	NNS	_	45	nmod	_	_
+49	to	to	PART	TO	_	50	mark	_	_
+50	hear	hear	VERB	VB	_	43	advcl	_	_
+51	the	the	DET	DT	_	52	det	_	_
+52	word	word	NOUN	NN	_	50	obj	_	_
+53	at	at	ADP	IN	_	55	case	_	_
+54	the	the	DET	DT	_	55	det	_	_
+55	time	time	NOUN	NN	_	50	obl	_	_
+56	of	of	ADP	IN	_	58	case	_	_
+57	his	he	PRON	PRP$	_	58	nmod:poss	_	_
+58	coming	coming	NOUN	NN	_	55	nmod	_	_
+59	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And now I will ease your mind somewhat on this subject.
+# sent_id = 1547
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	now	now	ADV	RB	_	5	advmod	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	5	nsubj	_	_
+4	will	will	AUX	MD	_	5	aux	_	_
+5	ease	ease	VERB	VB	_	0	root	_	_
+6	your	you	PRON	PRP$	_	7	nmod:poss	_	_
+7	mind	mind	NOUN	NN	_	5	obj	_	_
+8	somewhat	somewhat	ADV	RB	_	5	advmod	_	_
+9	on	on	ADP	IN	_	11	case	_	_
+10	this	this	DET	DT	_	11	det	_	_
+11	subject	subject	NOUN	NN	_	5	obl	_	_
+12	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Behold, you marvel why these things should be known so long beforehand.
+# sent_id = 1548
+# llm_note = "you marvel" = root; "why...beforehand" = ccomp (indirect question)
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	you	you	PRON	PRP	_	4	nsubj	_	_
+4	marvel	marvel	VERB	VBP	_	0	root	_	_
+5	why	why	ADV	WRB	_	10	advmod	_	_
+6	these	this	DET	DT	_	7	det	_	_
+7	things	thing	NOUN	NNS	_	10	nsubj:pass	_	_
+8	should	shall	AUX	MD	_	10	aux	_	_
+9	be	be	AUX	VB	_	10	aux:pass	_	_
+10	known	know	VERB	VBN	_	4	ccomp	_	_
+11	so	so	ADV	RB	_	12	advmod	_	_
+12	long	long	ADV	RB	_	13	advmod	_	_
+13	beforehand	beforehand	ADV	RB	_	10	advmod	_	_
+14	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Behold, I say unto you, is not a soul at this time as precious unto God as a soul will be at the time of his coming?
+# sent_id = 1549
+# llm_note = "I say unto you" parenthetical; inverted copular question "is not a soul...as precious...as"; comparative "as precious...as a soul will be"
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	say	say	VERB	VBP	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	you	you	PRON	PRP	_	4	obl	_	_
+7	,	,	PUNCT	,	_	4	punct	_	_
+8	is	be	AUX	VBZ	_	16	cop	_	_
+9	not	not	PART	RB	_	16	advmod	_	_
+10	a	a	DET	DT	_	11	det	_	_
+11	soul	soul	NOUN	NN	_	16	nsubj	_	_
+12	at	at	ADP	IN	_	14	case	_	_
+13	this	this	DET	DT	_	14	det	_	_
+14	time	time	NOUN	NN	_	16	obl	_	_
+15	as	as	ADV	RB	_	16	advmod	_	_
+16	precious	precious	ADJ	JJ	_	4	ccomp	_	_
+17	unto	unto	ADP	IN	_	18	case	_	_
+18	God	God	PROPN	NNP	_	16	obl	_	_
+19	as	as	SCONJ	IN	_	23	mark	_	_
+20	a	a	DET	DT	_	21	det	_	_
+21	soul	soul	NOUN	NN	_	23	nsubj	_	_
+22	will	will	AUX	MD	_	23	aux	_	_
+23	be	be	AUX	VB	_	16	advcl	_	_
+24	at	at	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	_	26	det	_	_
+26	time	time	NOUN	NN	_	23	obl	_	_
+27	of	of	ADP	IN	_	29	case	_	_
+28	his	he	PRON	PRP$	_	29	nmod:poss	_	_
+29	coming	coming	NOUN	NN	_	26	nmod	_	_
+30	?	?	PUNCT	.	_	4	punct	_	_
+

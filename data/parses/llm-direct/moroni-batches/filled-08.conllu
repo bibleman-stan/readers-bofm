@@ -1,0 +1,507 @@
+# text = Wo be unto them that shall pervert the ways of the Lord after this manner, for they shall perish except they repent.
+# sent_id = 105
+# llm_note = "Wo be unto them" = archaic imprecation; "Wo" = INTJ root; "be" = VERB existential cop; "unto them" = obl; "that shall pervert" = rel clause; "after this manner" = obl manner; "for they shall perish" = causal advcl; "except they repent" = "except" = SCONJ conditional
+1	Wo	wo	INTJ	UH	_	0	root	_	_
+2	be	be	VERB	VB	VerbForm=Inf	1	ccomp	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	2	obl	_	_
+5	that	that	PRON	WDT	PronType=Rel	7	nsubj	_	_
+6	shall	shall	AUX	MD	VerbForm=Fin	7	aux	_	_
+7	pervert	pervert	VERB	VB	VerbForm=Inf	4	acl:relcl	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	ways	way	NOUN	NNS	Number=Plur	7	obj	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	Lord	Lord	PROPN	NNP	Number=Sing	9	nmod	_	_
+13	after	after	ADP	IN	_	15	case	_	_
+14	this	this	DET	DT	Number=Sing|PronType=Dem	15	det	_	_
+15	manner	manner	NOUN	NN	Number=Sing	7	obl	_	_
+16	,	,	PUNCT	,	_	20	punct	_	_
+17	for	for	SCONJ	IN	_	20	mark	_	_
+18	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	20	nsubj	_	_
+19	shall	shall	AUX	MD	VerbForm=Fin	20	aux	_	_
+20	perish	perish	VERB	VB	VerbForm=Inf	2	advcl	_	_
+21	except	except	SCONJ	IN	_	23	mark	_	_
+22	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	_
+23	repent	repent	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	20	advcl	_	_
+24	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = Behold, I speak with boldness, having authority from God; and I fear not what man can do; for perfect love casteth out all fear.
+# sent_id = 106
+# llm_note = "Behold" = discourse INTJ; "having authority from God" = depictive participial; "I fear not what man can do" = ccomp object is free relative; "casteth out" = EME VBZ + compound:prt; "casteth" = cast+eth VBZ
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	speak	speak	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	with	with	ADP	IN	_	6	case	_	_
+6	boldness	boldness	NOUN	NN	Number=Sing	4	obl	_	_
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	having	have	VERB	VBG	VerbForm=Part	4	advcl	_	_
+9	authority	authority	NOUN	NN	Number=Sing	8	obj	_	_
+10	from	from	ADP	IN	_	11	case	_	_
+11	God	God	PROPN	NNP	Number=Sing	9	obl	_	_
+12	;	;	PUNCT	:	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_
+15	fear	fear	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	conj	_	_
+16	not	not	PART	RB	Polarity=Neg	15	advmod	_	_
+17	what	what	PRON	WP	PronType=Int	20	obj	_	_
+18	man	man	NOUN	NN	Number=Sing	20	nsubj	_	_
+19	can	can	AUX	MD	VerbForm=Fin	20	aux	_	_
+20	do	do	VERB	VB	VerbForm=Inf	15	ccomp	_	_
+21	;	;	PUNCT	:	_	25	punct	_	_
+22	for	for	SCONJ	IN	_	25	mark	_	_
+23	perfect	perfect	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	love	love	NOUN	NN	Number=Sing	25	nsubj	_	_
+25	casteth	cast	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
+26	out	out	ADP	RP	_	25	compound:prt	_	_
+27	all	all	DET	DT	_	28	det	_	_
+28	fear	fear	NOUN	NN	Number=Sing	25	obj	_	_
+29	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And I am filled with charity, which is everlasting love; wherefore, all children are alike unto me; wherefore, I love little children with a perfect love; and they are all alike and partakers of salvation.
+# sent_id = 107
+# llm_note = "filled with charity" = passive; "which is everlasting love" = rel clause defining charity; "all children are alike unto me" = second main clause; "alike" = predicate ADJ; "I love little children with a perfect love" = third main clause; "they are all alike and partakers" = fourth main clause; "alike and partakers" = coordinate predicates (ADJ + NOUN)
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj:pass	_	_
+3	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
+4	filled	fill	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	with	with	ADP	IN	_	6	case	_	_
+6	charity	charity	NOUN	NN	Number=Sing	4	obl	_	_
+7	,	,	PUNCT	,	_	9	punct	_	_
+8	which	which	PRON	WDT	PronType=Rel	9	nsubj	_	_
+9	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_
+10	everlasting	everlasting	ADJ	JJ	Degree=Pos	11	amod	_	_
+11	love	love	NOUN	NN	Number=Sing	9	xcomp	_	_
+12	;	;	PUNCT	:	_	16	punct	_	_
+13	wherefore	wherefore	ADV	RB	_	16	advmod	_	_
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	all	all	DET	DT	_	16	det	_	_
+16	children	child	NOUN	NNS	Number=Plur	18	nsubj	_	_
+17	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	18	cop	_	_
+18	alike	alike	ADJ	JJ	Degree=Pos	4	parataxis	_	_
+19	unto	unto	ADP	IN	_	20	case	_	_
+20	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	18	obl	_	_
+21	;	;	PUNCT	:	_	25	punct	_	_
+22	wherefore	wherefore	ADV	RB	_	25	advmod	_	_
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	25	nsubj	_	_
+25	love	love	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	parataxis	_	_
+26	little	little	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	children	child	NOUN	NNS	Number=Plur	25	obj	_	_
+28	with	with	ADP	IN	_	31	case	_	_
+29	a	a	DET	DT	Definite=Ind|PronType=Art	31	det	_	_
+30	perfect	perfect	ADJ	JJ	Degree=Pos	31	amod	_	_
+31	love	love	NOUN	NN	Number=Sing	25	obl	_	_
+32	;	;	PUNCT	:	_	37	punct	_	_
+33	and	and	CCONJ	CC	_	37	cc	_	_
+34	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	37	nsubj	_	_
+35	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	37	cop	_	_
+36	all	all	DET	DT	_	34	det	_	_
+37	alike	alike	ADJ	JJ	Degree=Pos	4	conj	_	_
+38	and	and	CCONJ	CC	_	39	cc	_	_
+39	partakers	partaker	NOUN	NNS	Number=Plur	37	conj	_	_
+40	of	of	ADP	IN	_	41	case	_	_
+41	salvation	salvation	NOUN	NN	Number=Sing	39	nmod	_	_
+42	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = For I know that God is not a partial God, neither a changeable being; but he is unchangeable from all eternity to all eternity.
+# sent_id = 108
+# llm_note = "I know that God is not a partial God" = ccomp; "neither a changeable being" = negative conj alternative; "but he is unchangeable" = contrastive parataxis; "from all eternity to all eternity" = obl extent
+1	For	for	ADV	RB	_	3	advmod	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	know	know	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	that	that	SCONJ	IN	_	6	mark	_	_
+5	God	God	PROPN	NNP	Number=Sing	6	nsubj	_	_
+6	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+7	not	not	PART	RB	Polarity=Neg	6	advmod	_	_
+8	a	a	DET	DT	Definite=Ind|PronType=Art	10	det	_	_
+9	partial	partial	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	God	God	PROPN	NNP	Number=Sing	6	xcomp	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	neither	neither	CCONJ	CC	_	15	cc	_	_
+13	a	a	DET	DT	Definite=Ind|PronType=Art	15	det	_	_
+14	changeable	changeable	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	being	being	NOUN	NN	Number=Sing	10	conj	_	_
+16	;	;	PUNCT	:	_	19	punct	_	_
+17	but	but	CCONJ	CC	_	19	cc	_	_
+18	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+19	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+20	unchangeable	unchangeable	ADJ	JJ	Degree=Pos	19	xcomp	_	_
+21	from	from	ADP	IN	_	23	case	_	_
+22	all	all	DET	DT	_	23	det	_	_
+23	eternity	eternity	NOUN	NN	Number=Sing	20	obl	_	_
+24	to	to	ADP	IN	_	26	case	_	_
+25	all	all	DET	DT	_	26	det	_	_
+26	eternity	eternity	NOUN	NN	Number=Sing	23	nmod	_	_
+27	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Little children cannot repent; wherefore, it is awful wickedness to deny the pure mercies of God unto them, for they are all alive in him because of his mercy.
+# sent_id = 109
+# llm_note = MWT 3-4 "cannot" = can+not; "it is awful wickedness" = expl+cop+predNP; "to deny...mercies" = csubj infinitive; "for they are all alive" = causal advcl; "alive in him" = predicate adj + obl
+1	Little	little	ADJ	JJ	Degree=Pos	2	amod	_	_
+2	children	child	NOUN	NNS	Number=Plur	5	nsubj	_	_
+3-4	cannot	_	_	_	_	_	_	_	_
+3	can	can	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	not	not	PART	RB	Polarity=Neg	5	advmod	_	_
+5	repent	repent	VERB	VB	VerbForm=Inf	0	root	_	_
+6	;	;	PUNCT	:	_	10	punct	_	_
+7	wherefore	wherefore	ADV	RB	_	10	advmod	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	10	expl	_	_
+10	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	_	_
+11	awful	awful	ADJ	JJ	Degree=Pos	12	amod	_	_
+12	wickedness	wickedness	NOUN	NN	Number=Sing	10	xcomp	_	_
+13	to	to	PART	TO	_	14	mark	_	_
+14	deny	deny	VERB	VB	VerbForm=Inf	12	csubj	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+16	pure	pure	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	mercies	mercy	NOUN	NNS	Number=Plur	14	obj	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	God	God	PROPN	NNP	Number=Sing	17	nmod	_	_
+20	unto	unto	ADP	IN	_	21	case	_	_
+21	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	14	obl	_	_
+22	,	,	PUNCT	,	_	27	punct	_	_
+23	for	for	SCONJ	IN	_	27	mark	_	_
+24	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	27	nsubj	_	_
+25	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	27	cop	_	_
+26	all	all	DET	DT	_	24	det	_	_
+27	alive	alive	ADJ	JJ	Degree=Pos	5	advcl	_	_
+28	in	in	ADP	IN	_	29	case	_	_
+29	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	obl	_	_
+30	because	because	ADP	IN	_	33	case	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	his	his	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	33	nmod:poss	_	_
+33	mercy	mercy	NOUN	NN	Number=Sing	27	obl	_	_
+34	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And he that saith that little children need baptism denieth the mercies of Christ, and setteth at naught the atonement of him and the power of his redemption.
+# sent_id = 110
+# llm_note = "he that saith...denieth" = relative subject with EME VBZ predicates; "saith" = say+eth; "denieth" = deny+eth; "setteth at naught" = idiom set-at-naught (setteth = set+eth); "the atonement of him and the power of his redemption" = two conj objects of "setteth at naught"
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+3	that	that	PRON	WDT	PronType=Rel	4	nsubj	_	_
+4	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
+5	that	that	SCONJ	IN	_	8	mark	_	_
+6	little	little	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	children	child	NOUN	NNS	Number=Plur	8	nsubj	_	_
+8	need	need	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
+9	baptism	baptism	NOUN	NN	Number=Sing	8	obj	_	_
+10	denieth	deny	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	mercies	mercy	NOUN	NNS	Number=Plur	10	obj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Christ	Christ	PROPN	NNP	Number=Sing	12	nmod	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	setteth	set	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
+18	at	at	ADP	IN	_	19	case	_	_
+19	naught	naught	NOUN	NN	Number=Sing	17	obl	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	atonement	atonement	NOUN	NN	Number=Sing	17	obj	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nmod	_	_
+24	and	and	CCONJ	CC	_	26	cc	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	power	power	NOUN	NN	Number=Sing	21	conj	_	_
+27	of	of	ADP	IN	_	29	case	_	_
+28	his	his	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	29	nmod:poss	_	_
+29	redemption	redemption	NOUN	NN	Number=Sing	26	nmod	_	_
+30	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = Wo unto such, for they are in danger of death, hell, and an endless torment.
+# sent_id = 111
+# llm_note = "Wo unto such" = imprecation; "such" = PRON dem referential; "death, hell, and an endless torment" = three conj nouns in PP
+1	Wo	wo	INTJ	UH	_	0	root	_	_
+2	unto	unto	ADP	IN	_	3	case	_	_
+3	such	such	PRON	DT	PronType=Dem	1	obl	_	_
+4	,	,	PUNCT	,	_	8	punct	_	_
+5	for	for	SCONJ	IN	_	8	mark	_	_
+6	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
+7	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	in	in	ADP	IN	_	1	advcl	_	_
+9	danger	danger	NOUN	NN	Number=Sing	8	obl	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	death	death	NOUN	NN	Number=Sing	9	nmod	_	_
+12	,	,	PUNCT	,	_	13	punct	_	_
+13	hell	hell	NOUN	NN	Number=Sing	11	conj	_	_
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	and	and	CCONJ	CC	_	18	cc	_	_
+16	an	a	DET	DT	Definite=Ind|PronType=Art	18	det	_	_
+17	endless	endless	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	torment	torment	NOUN	NN	Number=Sing	11	conj	_	_
+19	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = I speak it boldly; God hath commanded me.
+# sent_id = 112
+# llm_note = "it" = object pronoun (referential); "hath commanded" = AUX+VBN EME perf
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	speak	speak	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	boldly	boldly	ADV	RB	_	2	advmod	_	_
+5	;	;	PUNCT	:	_	8	punct	_	_
+6	God	God	PROPN	NNP	Number=Sing	8	nsubj	_	_
+7	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+8	commanded	command	VERB	VBN	Tense=Past|VerbForm=Part	2	parataxis	_	_
+9	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	8	obj	_	_
+10	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = Listen unto them and give heed, or they stand against you at the judgment-seat of Christ.
+# sent_id = 113
+# llm_note = "Listen...and give heed" = two conj imperatives; "or they stand against you" = parataxis consequence (or = CCONJ); "judgment-seat" = compound NOUN (hyphenated)
+1	Listen	listen	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	unto	unto	ADP	IN	_	3	case	_	_
+3	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	1	obl	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	give	give	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	_
+6	heed	heed	NOUN	NN	Number=Sing	5	obj	_	_
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	or	or	CCONJ	CC	_	10	cc	_	_
+9	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
+10	stand	stand	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	1	conj	_	_
+11	against	against	ADP	IN	_	12	case	_	_
+12	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2|PronType=Prs	10	obl	_	_
+13	at	at	ADP	IN	_	17	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+15	judgment	judgment	NOUN	NN	Number=Sing	17	compound	_	_
+16	-	-	PUNCT	HYPH	_	15	punct	_	_
+17	seat	seat	NOUN	NN	Number=Sing	10	obl	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	Christ	Christ	PROPN	NNP	Number=Sing	17	nmod	_	_
+20	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = For behold that all little children are alive in Christ, and also all they that are without the law.
+# sent_id = 114
+# llm_note = "behold that" = VERB + SCONJ complement; "all little children are alive in Christ" = main content of behold-ccomp; "all they that are without the law" = second subject conj; "without the law" = PP obl
+1	For	for	ADV	RB	_	2	advmod	_	_
+2	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+3	that	that	SCONJ	IN	_	8	mark	_	_
+4	all	all	DET	DT	_	6	det	_	_
+5	little	little	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	children	child	NOUN	NNS	Number=Plur	8	nsubj	_	_
+7	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	alive	alive	ADJ	JJ	Degree=Pos	2	ccomp	_	_
+9	in	in	ADP	IN	_	10	case	_	_
+10	Christ	Christ	PROPN	NNP	Number=Sing	8	obl	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	also	also	ADV	RB	_	15	advmod	_	_
+14	all	all	DET	DT	_	15	det	_	_
+15	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	conj	_	_
+16	that	that	PRON	WDT	PronType=Rel	18	nsubj	_	_
+17	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	18	cop	_	_
+18	without	without	ADP	IN	_	15	acl:relcl	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	law	law	NOUN	NN	Number=Sing	18	obl	_	_
+21	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = For the power of redemption cometh on all them that have no law; wherefore, he that is not condemned, or he that is under no condemnation, cannot repent; and unto such baptism availeth nothing--
+# sent_id = 115
+# llm_note = "cometh" = come+eth EME VBZ; MWT 31-32 "cannot"; "availeth" = avail+eth; "unto such baptism availeth nothing" = inverted subject (baptism is postverbal nsubj); dash at end = open continuation; "he that is not condemned, or he that is under no condemnation" = two alternate subjects of "cannot repent"
+1	For	for	ADV	RB	_	6	advmod	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	power	power	NOUN	NN	Number=Sing	6	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	redemption	redemption	NOUN	NN	Number=Sing	3	nmod	_	_
+6	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	on	on	ADP	IN	_	9	case	_	_
+8	all	all	DET	DT	_	9	det	_	_
+9	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	6	obl	_	_
+10	that	that	PRON	WDT	PronType=Rel	11	nsubj	_	_
+11	have	have	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_
+12	no	no	DET	DT	PronType=Neg	13	det	_	_
+13	law	law	NOUN	NN	Number=Sing	11	obj	_	_
+14	;	;	PUNCT	:	_	33	punct	_	_
+15	wherefore	wherefore	ADV	RB	_	33	advmod	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	nsubj	_	_
+18	that	that	PRON	WDT	PronType=Rel	21	nsubj:pass	_	_
+19	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:pass	_	_
+20	not	not	PART	RB	Polarity=Neg	21	advmod	_	_
+21	condemned	condemn	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	17	acl:relcl	_	_
+22	,	,	PUNCT	,	_	24	punct	_	_
+23	or	or	CCONJ	CC	_	24	cc	_	_
+24	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	conj	_	_
+25	that	that	PRON	WDT	PronType=Rel	28	nsubj	_	_
+26	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	_
+27	under	under	ADP	IN	_	29	case	_	_
+28	no	no	DET	DT	PronType=Neg	29	det	_	_
+29	condemnation	condemnation	NOUN	NN	Number=Sing	24	acl:relcl	_	_
+30	,	,	PUNCT	,	_	33	punct	_	_
+31-32	cannot	_	_	_	_	_	_	_	_
+31	can	can	AUX	MD	VerbForm=Fin	33	aux	_	_
+32	not	not	PART	RB	Polarity=Neg	33	advmod	_	_
+33	repent	repent	VERB	VB	VerbForm=Inf	6	parataxis	_	_
+34	;	;	PUNCT	:	_	39	punct	_	_
+35	and	and	CCONJ	CC	_	39	cc	_	_
+36	unto	unto	ADP	IN	_	37	case	_	_
+37	such	such	PRON	DT	PronType=Dem	39	obl	_	_
+38	baptism	baptism	NOUN	NN	Number=Sing	39	nsubj	_	_
+39	availeth	avail	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
+40	nothing	nothing	PRON	NN	Number=Sing|PronType=Neg	39	obj	_	_
+41	--	--	PUNCT	:	_	39	punct	_	_
+
+# text = But it is mockery before God, denying the mercies of Christ, and the power of his Holy Spirit, and putting trust in dead works.
+# sent_id = 116
+# llm_note = "it is mockery" = expl-it + cop + predNP; "denying...and...putting" = participial advcl pair conj; "the mercies of Christ and the power of his Holy Spirit" = two conj objects of "denying"; "putting trust in dead works" = second participial
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	mockery	mockery	NOUN	NN	Number=Sing	3	xcomp	_	_
+5	before	before	ADP	IN	_	6	case	_	_
+6	God	God	PROPN	NNP	Number=Sing	4	obl	_	_
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	denying	deny	VERB	VBG	VerbForm=Part	3	advcl	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	mercies	mercy	NOUN	NNS	Number=Plur	8	obj	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	Christ	Christ	PROPN	NNP	Number=Sing	10	nmod	_	_
+13	,	,	PUNCT	,	_	16	punct	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	power	power	NOUN	NN	Number=Sing	10	conj	_	_
+17	of	of	ADP	IN	_	20	case	_	_
+18	his	his	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+19	Holy	Holy	ADJ	NNP	Degree=Pos	20	amod	_	_
+20	Spirit	Spirit	PROPN	NNP	Number=Sing	16	nmod	_	_
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	putting	put	VERB	VBG	VerbForm=Part	8	conj	_	_
+24	trust	trust	NOUN	NN	Number=Sing	23	obj	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	dead	dead	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	works	work	NOUN	NNS	Number=Plur	23	obl	_	_
+28	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, my son, this thing ought not to be; for repentance is unto them that are under condemnation and under the curse of a broken law.
+# sent_id = 117
+# llm_note = "my son" = vocative; "this thing ought not to be" = modal negative existential; "for repentance is unto them" = causal advcl; "that are under condemnation and under the curse" = rel clause with conj PP
+1	Behold	behold	INTJ	UH	_	8	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	_
+4	son	son	NOUN	NN	Number=Sing	8	vocative	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	this	this	DET	DT	Number=Sing|PronType=Dem	7	det	_	_
+7	thing	thing	NOUN	NN	Number=Sing	8	nsubj	_	_
+8	ought	ought	AUX	MD	VerbForm=Fin	0	root	_	_
+9	not	not	PART	RB	Polarity=Neg	11	advmod	_	_
+10	to	to	PART	TO	_	11	mark	_	_
+11	be	be	VERB	VB	VerbForm=Inf	8	xcomp	_	_
+12	;	;	PUNCT	:	_	15	punct	_	_
+13	for	for	SCONJ	IN	_	15	mark	_	_
+14	repentance	repentance	NOUN	NN	Number=Sing	15	nsubj	_	_
+15	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	_
+16	unto	unto	ADP	IN	_	17	case	_	_
+17	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	15	obl	_	_
+18	that	that	PRON	WDT	PronType=Rel	20	nsubj	_	_
+19	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	20	cop	_	_
+20	under	under	ADP	IN	_	17	acl:relcl	_	_
+21	condemnation	condemnation	NOUN	NN	Number=Sing	20	obl	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	under	under	ADP	IN	_	20	conj	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	curse	curse	NOUN	NN	Number=Sing	23	obl	_	_
+26	of	of	ADP	IN	_	29	case	_	_
+27	a	a	DET	DT	Definite=Ind|PronType=Art	29	det	_	_
+28	broken	broken	ADJ	JJ	Degree=Pos	29	amod	_	_
+29	law	law	NOUN	NN	Number=Sing	25	nmod	_	_
+30	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And the first fruits of repentance is baptism; and baptism cometh by faith unto the fulfilling the commandments; and the fulfilling the commandments bringeth remission of sins;
+# sent_id = 118
+# llm_note = "the first fruits of repentance is baptism" = copular; "cometh" = come+eth; "baptism cometh by faith unto the fulfilling the commandments" = three-step chain; "fulfilling" = gerundive NOUN; "bringeth" = bring+eth; sentence ends with semicolon (continues in 119)
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+3	first	first	ADJ	JJ	Degree=Pos	4	amod	_	_
+4	fruits	fruit	NOUN	NNS	Number=Plur	7	nsubj	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	repentance	repentance	NOUN	NN	Number=Sing	4	nmod	_	_
+7	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	baptism	baptism	NOUN	NN	Number=Sing	7	xcomp	_	_
+9	;	;	PUNCT	:	_	12	punct	_	_
+10	and	and	CCONJ	CC	_	12	cc	_	_
+11	baptism	baptism	NOUN	NN	Number=Sing	12	nsubj	_	_
+12	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+13	by	by	ADP	IN	_	14	case	_	_
+14	faith	faith	NOUN	NN	Number=Sing	12	obl	_	_
+15	unto	unto	ADP	IN	_	18	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+17	fulfilling	fulfil	VERB	VBG	VerbForm=Part	12	advcl	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	commandments	commandment	NOUN	NNS	Number=Plur	17	obj	_	_
+20	;	;	PUNCT	:	_	26	punct	_	_
+21	and	and	CCONJ	CC	_	26	cc	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+23	fulfilling	fulfil	VERB	VBG	VerbForm=Part	26	nsubj	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	commandments	commandment	NOUN	NNS	Number=Plur	23	obj	_	_
+26	bringeth	bring	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+27	remission	remission	NOUN	NN	Number=Sing	26	obj	_	_
+28	of	of	ADP	IN	_	29	case	_	_
+29	sins	sin	NOUN	NNS	Number=Plur	27	nmod	_	_
+30	;	;	PUNCT	:	_	7	punct	_	_
+
+# text = And the remission of sins bringeth meekness and lowliness of heart; and because of meekness and lowliness of heart cometh the visitation of the Holy Ghost, which Comforter filleth with hope and perfect love, which love endureth by diligence unto prayer, until the end shall come, when all the saints shall dwell with God.
+# sent_id = 119
+# llm_note = "bringeth meekness and lowliness of heart" = two conj objects; "because of meekness and lowliness of heart cometh the visitation" = causal PP fronted with subject inversion (cometh = inverted); "which Comforter filleth" = rel pronoun referring to Ghost; "Comforter" = appos/title for Holy Ghost; "filleth with hope and perfect love" = with two conj objects; "which love endureth" = second rel clause; "until the end shall come" = temporal advcl; "when all the saints shall dwell with God" = time relative advcl
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	remission	remission	NOUN	NN	Number=Sing	6	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	sins	sin	NOUN	NNS	Number=Plur	3	nmod	_	_
+6	bringeth	bring	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	meekness	meekness	NOUN	NN	Number=Sing	6	obj	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	lowliness	lowliness	NOUN	NN	Number=Sing	7	conj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	heart	heart	NOUN	NN	Number=Sing	9	nmod	_	_
+12	;	;	PUNCT	:	_	21	punct	_	_
+13	and	and	CCONJ	CC	_	21	cc	_	_
+14	because	because	ADP	IN	_	16	case	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	meekness	meekness	NOUN	NN	Number=Sing	21	obl	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	lowliness	lowliness	NOUN	NN	Number=Sing	16	conj	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	heart	heart	NOUN	NN	Number=Sing	18	nmod	_	_
+21	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	visitation	visitation	NOUN	NN	Number=Sing	21	nsubj	_	_
+24	of	of	ADP	IN	_	27	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+26	Holy	Holy	ADJ	NNP	Degree=Pos	27	amod	_	_
+27	Ghost	Ghost	PROPN	NNP	Number=Sing	23	nmod	_	_
+28	,	,	PUNCT	,	_	31	punct	_	_
+29	which	which	PRON	WDT	PronType=Rel	31	nsubj	_	_
+30	Comforter	Comforter	PROPN	NNP	Number=Sing	29	appos	_	_
+31	filleth	fill	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_
+32	with	with	ADP	IN	_	33	case	_	_
+33	hope	hope	NOUN	NN	Number=Sing	31	obl	_	_
+34	and	and	CCONJ	CC	_	36	cc	_	_
+35	perfect	perfect	ADJ	JJ	Degree=Pos	36	amod	_	_
+36	love	love	NOUN	NN	Number=Sing	33	conj	_	_
+37	,	,	PUNCT	,	_	40	punct	_	_
+38	which	which	PRON	WDT	PronType=Rel	40	nsubj	_	_
+39	love	love	NOUN	NN	Number=Sing	38	appos	_	_
+40	endureth	endure	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	acl:relcl	_	_
+41	by	by	ADP	IN	_	42	case	_	_
+42	diligence	diligence	NOUN	NN	Number=Sing	40	obl	_	_
+43	unto	unto	ADP	IN	_	44	case	_	_
+44	prayer	prayer	NOUN	NN	Number=Sing	40	obl	_	_
+45	,	,	PUNCT	,	_	50	punct	_	_
+46	until	until	SCONJ	IN	_	50	mark	_	_
+47	the	the	DET	DT	Definite=Def|PronType=Art	48	det	_	_
+48	end	end	NOUN	NN	Number=Sing	50	nsubj	_	_
+49	shall	shall	AUX	MD	VerbForm=Fin	50	aux	_	_
+50	come	come	VERB	VB	VerbForm=Inf	40	advcl	_	_
+51	,	,	PUNCT	,	_	57	punct	_	_
+52	when	when	ADV	WRB	PronType=Rel	57	advmod	_	_
+53	all	all	DET	DT	_	55	det	_	_
+54	the	the	DET	DT	Definite=Def|PronType=Art	55	det	_	_
+55	saints	saint	NOUN	NNS	Number=Plur	57	nsubj	_	_
+56	shall	shall	AUX	MD	VerbForm=Fin	57	aux	_	_
+57	dwell	dwell	VERB	VB	VerbForm=Inf	50	advcl	_	_
+58	with	with	ADP	IN	_	59	case	_	_
+59	God	God	PROPN	NNP	Number=Sing	57	obl	_	_
+60	.	.	PUNCT	.	_	6	punct	_	_
+

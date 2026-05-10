@@ -1,0 +1,740 @@
+# text = And thy seed shall be numbered with his seed; and thou shalt be even like unto thy brother, and thy seed like unto his seed; and thou shalt be blessed in all thy days.
+# sent_id = 150
+# llm_note = 'shall be numbered' = root passive; 'like unto' = ADP fixed pair x2; 'thy seed like unto his seed' = elliptical comparison (be implied); 'shalt be blessed' = conj passive
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
+3	seed	seed	NOUN	NN	Number=Sing	6	nsubj:pass	_	_
+4	shall	shall	AUX	MD	VerbForm=Fin	6	aux	_	_
+5	be	be	AUX	VB	VerbForm=Inf	6	aux:pass	_	_
+6	numbered	number	VERB	VBN	VerbForm=Part	0	root	_	_
+7	with	with	ADP	IN	_	9	case	_	_
+8	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	_
+9	seed	seed	NOUN	NN	Number=Sing	6	obl	_	_
+10	;	;	PUNCT	:	_	6	punct	_	_
+11	and	and	CCONJ	CC	_	14	cc	_	_
+12	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2|PronType=Prs	14	nsubj	_	_
+13	shalt	shall	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	be	be	VERB	VB	VerbForm=Inf	6	conj	_	_
+15	even	even	ADV	RB	_	16	advmod	_	_
+16	like	like	ADP	IN	_	19	case	_	_
+17	unto	unto	ADP	IN	_	16	fixed	_	_
+18	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+19	brother	brother	NOUN	NN	Number=Sing	14	obl	_	_
+20	,	,	PUNCT	,	_	14	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	23	nmod:poss	_	_
+23	seed	seed	NOUN	NN	Number=Sing	14	conj	_	_
+24	like	like	ADP	IN	_	27	case	_	_
+25	unto	unto	ADP	IN	_	24	fixed	_	_
+26	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	27	nmod:poss	_	_
+27	seed	seed	NOUN	NN	Number=Sing	23	obl	_	_
+28	;	;	PUNCT	:	_	6	punct	_	_
+29	and	and	CCONJ	CC	_	33	cc	_	_
+30	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2|PronType=Prs	33	nsubj:pass	_	_
+31	shalt	shall	AUX	MD	VerbForm=Fin	33	aux	_	_
+32	be	be	AUX	VB	VerbForm=Inf	33	aux:pass	_	_
+33	blessed	bless	VERB	VBN	VerbForm=Part	6	conj	_	_
+34	in	in	ADP	IN	_	36	case	_	_
+35	all	all	DET	DT	_	36	det	_	_
+36	thy	thou	PRON	PRP$	Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	33	obl	_	_
+37	days	day	NOUN	NNS	Number=Plur	36	nmod	_	_
+38	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And it came to pass after my father, Lehi, had spoken unto all his household, according to the feelings of his heart and the Spirit of the Lord which was in him, he waxed old.
+# sent_id = 151
+# llm_note = AICTP variant without 'that': 'And it came to pass after..., he waxed old'; waxed=ccomp root; 'after my father, Lehi, had spoken' = advcl temporal; Lehi=appos; 'according to the feelings' = obl; 'the Spirit of the Lord which was in him' = conj coordination with 'feelings' in obl; 'which was in him' = acl:relcl on Spirit
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	xcomp	_	_
+4	to	to	PART	TO	_	0	root	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+6	after	after	SCONJ	IN	_	13	mark	_	_
+7	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	_
+8	father	father	NOUN	NN	Number=Sing	13	nsubj	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	Lehi	Lehi	PROPN	NNP	Number=Sing	8	appos	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	aux	_	_
+13	spoken	speak	VERB	VBN	VerbForm=Part	39	advcl	_	_
+14	unto	unto	ADP	IN	_	16	case	_	_
+15	all	all	DET	DT	_	16	det	_	_
+16	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	obl	_	_
+17	household	household	NOUN	NN	Number=Sing	16	nmod	_	_
+18	,	,	PUNCT	,	_	13	punct	_	_
+19	according	according	ADP	IN	_	22	case	_	_
+20	to	to	ADP	IN	_	19	fixed	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	feelings	feelings	NOUN	NNS	Number=Plur	13	obl	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	nmod:poss	_	_
+25	heart	heart	NOUN	NN	Number=Sing	22	nmod	_	_
+26	and	and	CCONJ	CC	_	28	cc	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	Spirit	Spirit	PROPN	NNP	Number=Sing	22	conj	_	_
+29	of	of	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
+31	Lord	Lord	PROPN	NNP	Number=Sing	28	nmod	_	_
+32	which	which	PRON	WDT	_	34	nsubj	_	_
+33	was	be	AUX	VBD	Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	34	cop	_	_
+34	in	in	ADP	IN	_	28	acl:relcl	_	_
+35	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	nmod	_	_
+36	,	,	PUNCT	,	_	39	punct	_	_
+37	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	nsubj	_	_
+38	waxed	wax	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	cop	_	_
+39	old	old	ADJ	JJ	Degree=Pos	5	ccomp	_	_
+40	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that he died, and was buried.
+# sent_id = 152
+# llm_note = AICTP; died=ccomp main verb; 'was buried' = passive conj
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	xcomp	_	_
+4	to	to	PART	TO	_	0	root	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+8	died	die	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	and	and	CCONJ	CC	_	12	cc	_	_
+11	was	be	AUX	VBD	Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	12	aux:pass	_	_
+12	buried	bury	VERB	VBN	VerbForm=Part	8	conj	_	_
+13	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that not many days after his death, Laman and Lemuel and the sons of Ishmael were angry with me because of the admonitions of the Lord.
+# sent_id = 153
+# llm_note = AICTP; 'not many days after his death' = temporal advcl/obl; 'Laman and Lemuel and the sons of Ishmael' = coordinated nsubj; 'were angry with me' = root copula; 'because of the admonitions of the Lord' = obl causal
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	xcomp	_	_
+4	to	to	PART	TO	_	0	root	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+6	that	that	SCONJ	IN	_	22	mark	_	_
+7	not	not	ADV	RB	_	9	advmod	_	_
+8	many	many	ADJ	JJ	Degree=Pos	9	amod	_	_
+9	days	day	NOUN	NNS	Number=Plur	22	obl	_	_
+10	after	after	ADP	IN	_	12	case	_	_
+11	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	_
+12	death	death	NOUN	NN	Number=Sing	9	nmod	_	_
+13	,	,	PUNCT	,	_	22	punct	_	_
+14	Laman	Laman	PROPN	NNP	Number=Sing	22	nsubj	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	Lemuel	Lemuel	PROPN	NNP	Number=Sing	14	conj	_	_
+17	and	and	CCONJ	CC	_	19	cc	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	sons	son	NOUN	NNS	Number=Plur	14	conj	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	Ishmael	Ishmael	PROPN	NNP	Number=Sing	19	nmod	_	_
+22	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+23	angry	angry	ADJ	JJ	Degree=Pos	22	xcomp	_	_
+24	with	with	ADP	IN	_	25	case	_	_
+25	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	22	obl	_	_
+26	because	because	SCONJ	IN	_	27	mark	_	_
+27	of	of	ADP	IN	_	26	fixed	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+29	admonitions	admonitions	NOUN	NNS	Number=Plur	22	advcl	_	_
+30	of	of	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	Lord	Lord	PROPN	NNP	Number=Sing	29	nmod	_	_
+33	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = For I, Nephi, was constrained to speak unto them, according to his word; for I had spoken many things unto them, and also my father, before his death; many of which sayings are written upon mine other plates; for a more history part are written upon mine other plates.
+# sent_id = 154
+# llm_note = 'I, Nephi' left-dislocation; 'was constrained to speak' = root passive + infinitive xcomp; 'according to his word' = obl; 'for I had spoken many things...and also my father' = advcl (my father = conj nsubj ellipsis); 'many of which sayings' = relative construction as nsubj; 'for a more history part' = catachrestic/archaic nominal phrase as nsubj; mine=EME 1sg poss
+1	For	for	SCONJ	IN	_	7	mark	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj:pass	_	_
+3	,	,	PUNCT	,	_	4	punct	_	_
+4	Nephi	Nephi	PROPN	NNP	Number=Sing	2	appos	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	was	be	AUX	VBD	Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	7	aux:pass	_	_
+7	constrained	constrain	VERB	VBN	VerbForm=Part	0	root	_	_
+8	to	to	PART	TO	_	9	mark	_	_
+9	speak	speak	VERB	VB	VerbForm=Inf	7	xcomp	_	_
+10	unto	unto	ADP	IN	_	11	case	_	_
+11	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	9	obl	_	_
+12	,	,	PUNCT	,	_	9	punct	_	_
+13	according	according	ADP	IN	_	15	case	_	_
+14	to	to	ADP	IN	_	13	fixed	_	_
+15	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	obl	_	_
+16	word	word	NOUN	NN	Number=Sing	15	nmod	_	_
+17	;	;	PUNCT	:	_	7	punct	_	_
+18	for	for	SCONJ	IN	_	21	mark	_	_
+19	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	21	nsubj	_	_
+20	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	21	aux	_	_
+21	spoken	speak	VERB	VBN	VerbForm=Part	7	advcl	_	_
+22	many	many	ADJ	JJ	Degree=Pos	23	amod	_	_
+23	things	thing	NOUN	NNS	Number=Plur	21	obj	_	_
+24	unto	unto	ADP	IN	_	25	case	_	_
+25	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	21	obl	_	_
+26	,	,	PUNCT	,	_	21	punct	_	_
+27	and	and	CCONJ	CC	_	29	cc	_	_
+28	also	also	ADV	RB	_	29	advmod	_	_
+29	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	21	conj	_	_
+30	father	father	NOUN	NN	Number=Sing	29	nmod	_	_
+31	,	,	PUNCT	,	_	21	punct	_	_
+32	before	before	ADP	IN	_	34	case	_	_
+33	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	34	nmod:poss	_	_
+34	death	death	NOUN	NN	Number=Sing	21	obl	_	_
+35	;	;	PUNCT	:	_	21	punct	_	_
+36	many	many	ADJ	JJ	Degree=Pos	41	nsubj:pass	_	_
+37	of	of	ADP	IN	_	39	case	_	_
+38	which	which	PRON	WDT	_	39	det	_	_
+39	sayings	saying	NOUN	NNS	Number=Plur	36	nmod	_	_
+40	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	41	aux:pass	_	_
+41	written	write	VERB	VBN	VerbForm=Part	7	parataxis	_	_
+42	upon	upon	ADP	IN	_	45	case	_	_
+43	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	45	nmod:poss	_	_
+44	other	other	ADJ	JJ	Degree=Pos	45	amod	_	_
+45	plates	plate	NOUN	NNS	Number=Plur	41	obl	_	_
+46	;	;	PUNCT	:	_	41	punct	_	_
+47	for	for	SCONJ	IN	_	53	mark	_	_
+48	a	a	DET	DT	Definite=Ind|PronType=Art	51	det	_	_
+49	more	more	ADV	RBR	Degree=Cmp	50	advmod	_	_
+50	history	history	NOUN	NN	Number=Sing	51	compound	_	_
+51	part	part	NOUN	NN	Number=Sing	53	nsubj:pass	_	_
+52	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	53	aux:pass	_	_
+53	written	write	VERB	VBN	VerbForm=Part	41	conj	_	_
+54	upon	upon	ADP	IN	_	57	case	_	_
+55	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	57	nmod:poss	_	_
+56	other	other	ADJ	JJ	Degree=Pos	57	amod	_	_
+57	plates	plate	NOUN	NNS	Number=Plur	53	obl	_	_
+58	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And upon these I write the things of my soul, and many of the scriptures which are engraven upon the plates of brass.
+# sent_id = 155
+# llm_note = 'upon these' = fronted obl; write=root; 'the things of my soul' = obj; 'many of the scriptures which are engraven' = second obj conj; 'engraven' = EME/archaic past participle passive
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	upon	upon	ADP	IN	_	3	case	_	_
+3	these	this	PRON	DT	Number=Plur|PronType=Dem	5	obl	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	write	write	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	things	thing	NOUN	NNS	Number=Plur	5	obj	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	_
+10	soul	soul	NOUN	NN	Number=Sing	7	nmod	_	_
+11	,	,	PUNCT	,	_	5	punct	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	many	many	ADJ	JJ	Degree=Pos	7	conj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	scriptures	scriptures	NOUN	NNS	Number=Plur	13	nmod	_	_
+17	which	which	PRON	WDT	_	19	nsubj:pass	_	_
+18	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	19	aux:pass	_	_
+19	engraven	engrave	VERB	VBN	VerbForm=Part	16	acl:relcl	_	_
+20	upon	upon	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	plates	plate	NOUN	NNS	Number=Plur	19	obl	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	brass	brass	NOUN	NN	Number=Sing	22	nmod	_	_
+25	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = For my soul delighteth in the scriptures, and my heart pondereth them, and writeth them for the learning and the profit of my children.
+# sent_id = 156
+# llm_note = delighteth/pondereth/writeth = EME 3sg present -eth forms; three coordinated verbs with soul/heart as subjects; 'for the learning and the profit of my children' = purpose obl
+1	For	for	SCONJ	IN	_	4	mark	_	_
+2	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
+3	soul	soul	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	delighteth	delight	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	in	in	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	scriptures	scriptures	NOUN	NNS	Number=Plur	4	obl	_	_
+8	,	,	PUNCT	,	_	4	punct	_	_
+9	and	and	CCONJ	CC	_	12	cc	_	_
+10	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	_
+11	heart	heart	NOUN	NN	Number=Sing	12	nsubj	_	_
+12	pondereth	ponder	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+13	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	12	obj	_	_
+14	,	,	PUNCT	,	_	12	punct	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	writeth	write	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+17	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	16	obj	_	_
+18	for	for	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	learning	learn	NOUN	NN	Number=Sing	16	obl	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	profit	profit	NOUN	NN	Number=Sing	20	conj	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	26	nmod:poss	_	_
+26	children	child	NOUN	NNS	Number=Plur	20	nmod	_	_
+27	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Behold, my soul delighteth in the things of the Lord; and my heart pondereth continually upon the things which I have seen and heard.
+# sent_id = 157
+# llm_note = behold=discourse; delighteth=root; pondereth=conj; 'continually' = advmod; 'which I have seen and heard' = acl:relcl, two conjoined past participles
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	_
+4	soul	soul	NOUN	NN	Number=Sing	5	nsubj	_	_
+5	delighteth	delight	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	in	in	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	things	thing	NOUN	NNS	Number=Plur	5	obl	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	Lord	Lord	PROPN	NNP	Number=Sing	8	nmod	_	_
+12	;	;	PUNCT	:	_	5	punct	_	_
+13	and	and	CCONJ	CC	_	16	cc	_	_
+14	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	_
+15	heart	heart	NOUN	NN	Number=Sing	16	nsubj	_	_
+16	pondereth	ponder	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+17	continually	continually	ADV	RB	_	16	advmod	_	_
+18	upon	upon	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	things	thing	NOUN	NNS	Number=Plur	16	obl	_	_
+21	which	which	PRON	WDT	_	24	obj	_	_
+22	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	24	nsubj	_	_
+23	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	24	aux	_	_
+24	seen	see	VERB	VBN	VerbForm=Part	20	acl:relcl	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	heard	hear	VERB	VBN	VerbForm=Part	24	conj	_	_
+27	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Nevertheless, notwithstanding the great goodness of the Lord, in showing me his great and marvelous works, my heart exclaimeth: O wretched man that I am!
+# sent_id = 158
+# llm_note = Nevertheless=advmod; 'notwithstanding the great goodness of the Lord' = concessive ADP obl; 'in showing me his great and marvelous works' = obl gerundial; exclaimeth=root; 'O wretched man that I am!' = exclamatory ccomp; 'O' = discourse; 'wretched man' = predicate; 'that I am' = relative
+1	Nevertheless	nevertheless	ADV	RB	_	22	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	notwithstanding	notwithstanding	ADP	IN	_	7	case	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+5	great	great	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	goodness	goodness	NOUN	NN	Number=Sing	7	compound	_	_
+7	of	of	ADP	IN	_	22	obl	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	Lord	Lord	PROPN	NNP	Number=Sing	7	nmod	_	_
+10	,	,	PUNCT	,	_	7	punct	_	_
+11	in	in	ADP	IN	_	12	case	_	_
+12	showing	show	VERB	VBG	VerbForm=Part	22	obl	_	_
+13	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	12	iobj	_	_
+14	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	nmod:poss	_	_
+15	great	great	ADJ	JJ	Degree=Pos	18	amod	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	marvelous	marvelous	ADJ	JJ	Degree=Pos	15	conj	_	_
+18	works	work	NOUN	NNS	Number=Plur	12	obj	_	_
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	21	nmod:poss	_	_
+21	heart	heart	NOUN	NN	Number=Sing	22	nsubj	_	_
+22	exclaimeth	exclaim	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+23	:	:	PUNCT	:	_	22	punct	_	_
+24	O	O	INTJ	UH	_	26	discourse	_	_
+25	wretched	wretched	ADJ	JJ	Degree=Pos	26	amod	_	_
+26	man	man	NOUN	NN	Number=Sing	22	ccomp	_	_
+27	that	that	PRON	WDT	_	29	nsubj	_	_
+28	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	27	nsubj	_	_
+29	am	be	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	26	acl:relcl	_	_
+30	!	!	PUNCT	.	_	22	punct	_	_
+
+# text = Yea, my heart sorroweth because of my flesh; my soul grieveth because of mine iniquities.
+# sent_id = 159
+# llm_note = Yea=discourse; sorroweth/grieveth = EME -eth forms; two coordinate clauses with causal 'because of'
+1	Yea	yea	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	_
+4	heart	heart	NOUN	NN	Number=Sing	5	nsubj	_	_
+5	sorroweth	sorrow	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	because	because	SCONJ	IN	_	7	mark	_	_
+7	of	of	ADP	IN	_	6	fixed	_	_
+8	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	nmod:poss	_	_
+9	flesh	flesh	NOUN	NN	Number=Sing	5	advcl	_	_
+10	;	;	PUNCT	:	_	5	punct	_	_
+11	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	_
+12	soul	soul	NOUN	NN	Number=Sing	13	nsubj	_	_
+13	grieveth	grieve	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+14	because	because	SCONJ	IN	_	15	mark	_	_
+15	of	of	ADP	IN	_	14	fixed	_	_
+16	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	iniquities	iniquity	NOUN	NNS	Number=Plur	13	advcl	_	_
+18	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = I am encompassed about, because of the temptations and the sins which do so easily beset me.
+# sent_id = 160
+# llm_note = 'encompassed about' = passive compound:prt; 'because of' = causal obl; 'which do so easily beset me' = acl:relcl on sins
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj:pass	_	_
+2	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_
+3	encompassed	encompass	VERB	VBN	VerbForm=Part	0	root	_	_
+4	about	about	ADP	RP	_	3	compound:prt	_	_
+5	,	,	PUNCT	,	_	3	punct	_	_
+6	because	because	SCONJ	IN	_	7	mark	_	_
+7	of	of	ADP	IN	_	6	fixed	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	temptations	temptation	NOUN	NNS	Number=Plur	3	advcl	_	_
+10	and	and	CCONJ	CC	_	12	cc	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	sins	sin	NOUN	NNS	Number=Plur	9	conj	_	_
+13	which	which	PRON	WDT	_	17	obj	_	_
+14	do	do	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	17	aux	_	_
+15	so	so	ADV	RB	_	16	advmod	_	_
+16	easily	easily	ADV	RB	_	17	advmod	_	_
+17	beset	beset	VERB	VB	VerbForm=Inf	12	acl:relcl	_	_
+18	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	17	obj	_	_
+19	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And when I desire to rejoice, my heart groaneth because of my sins; nevertheless, I know in whom I have trusted.
+# sent_id = 161
+# llm_note = 'when I desire to rejoice' = temporal advcl; groaneth=root; 'because of my sins' = obl causal; 'I know in whom I have trusted' = cognition ccomp; 'in whom I have trusted' = indirect question relative
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	when	when	SCONJ	WRB	_	5	mark	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	desire	desire	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	xcomp	_	_
+5	to	to	PART	TO	_	10	advcl	_	_
+6	rejoice	rejoice	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	,	,	PUNCT	,	_	5	punct	_	_
+8	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	nmod:poss	_	_
+9	heart	heart	NOUN	NN	Number=Sing	10	nsubj	_	_
+10	groaneth	groan	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	because	because	SCONJ	IN	_	12	mark	_	_
+12	of	of	ADP	IN	_	11	fixed	_	_
+13	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	nmod:poss	_	_
+14	sins	sin	NOUN	NNS	Number=Plur	10	advcl	_	_
+15	;	;	PUNCT	:	_	10	punct	_	_
+16	nevertheless	nevertheless	ADV	RB	_	19	advmod	_	_
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	19	nsubj	_	_
+19	know	know	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	conj	_	_
+20	in	in	ADP	IN	_	21	case	_	_
+21	whom	who	PRON	WP	_	24	obl	_	_
+22	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	24	nsubj	_	_
+23	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	24	aux	_	_
+24	trusted	trust	VERB	VBN	VerbForm=Part	19	ccomp	_	_
+25	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = My God hath been my support; he hath led me through mine afflictions in the wilderness; and he hath preserved me upon the waters of the great deep.
+# sent_id = 162
+# llm_note = hath been=root perfect (been=xcomp/predicate); 'my support' = xcomp noun predicate; hath led/preserved = conj; mine=EME 1sg poss; 'through mine afflictions in the wilderness' = obl
+1	My	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	_
+2	God	God	PROPN	NNP	Number=Sing	4	nsubj	_	_
+3	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	been	be	VERB	VBN	VerbForm=Part	0	root	_	_
+5	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	_
+6	support	support	NOUN	NN	Number=Sing	4	xcomp	_	_
+7	;	;	PUNCT	:	_	4	punct	_	_
+8	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+9	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+10	led	lead	VERB	VBN	VerbForm=Part	4	conj	_	_
+11	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	10	obj	_	_
+12	through	through	ADP	IN	_	14	case	_	_
+13	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	nmod:poss	_	_
+14	afflictions	affliction	NOUN	NNS	Number=Plur	10	obl	_	_
+15	in	in	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	wilderness	wilderness	NOUN	NN	Number=Sing	14	nmod	_	_
+18	;	;	PUNCT	:	_	4	punct	_	_
+19	and	and	CCONJ	CC	_	22	cc	_	_
+20	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+21	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	_	_
+22	preserved	preserve	VERB	VBN	VerbForm=Part	4	conj	_	_
+23	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	22	obj	_	_
+24	upon	upon	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	waters	water	NOUN	NNS	Number=Plur	22	obl	_	_
+27	of	of	ADP	IN	_	30	case	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+29	great	great	ADJ	JJ	Degree=Pos	30	amod	_	_
+30	deep	deep	NOUN	NN	Number=Sing	26	nmod	_	_
+31	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = He hath filled me with his love, even unto the consuming of my flesh.
+# sent_id = 163
+# llm_note = hath filled=root; 'with his love' = obl instrument; 'even unto the consuming of my flesh' = obl result
+1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	filled	fill	VERB	VBN	VerbForm=Part	0	root	_	_
+4	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
+5	with	with	ADP	IN	_	7	case	_	_
+6	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	love	love	NOUN	NN	Number=Sing	3	obl	_	_
+8	,	,	PUNCT	,	_	3	punct	_	_
+9	even	even	ADV	RB	_	10	advmod	_	_
+10	unto	unto	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	consuming	consume	NOUN	NN	Number=Sing	3	obl	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	_
+15	flesh	flesh	NOUN	NN	Number=Sing	12	nmod	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He hath confounded mine enemies, unto the causing of them to quake before me.
+# sent_id = 164
+# llm_note = hath confounded=root; mine=EME 1sg poss; 'unto the causing of them to quake before me' = result obl gerundial; 'causing...to quake' = causative infinitival
+1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	confounded	confound	VERB	VBN	VerbForm=Part	0	root	_	_
+4	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	_
+5	enemies	enemy	NOUN	NNS	Number=Plur	3	obj	_	_
+6	,	,	PUNCT	,	_	3	punct	_	_
+7	unto	unto	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	causing	cause	NOUN	NN	Number=Sing	3	obl	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	9	nmod	_	_
+12	to	to	PART	TO	_	13	mark	_	_
+13	quake	quake	VERB	VB	VerbForm=Inf	9	acl	_	_
+14	before	before	ADP	IN	_	15	case	_	_
+15	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	13	obl	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, he hath heard my cry by day, and he hath given me knowledge by visions in the night-time.
+# sent_id = 165
+# llm_note = behold=discourse; hath heard=root; 'by day' = obl temporal; hath given=conj; 'me' = iobj; 'by visions' = obl; 'in the night-time' = obl temporal; 'night-time' = NOUN compound: night+hyphen+time (3 tokens)
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+4	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	heard	hear	VERB	VBN	VerbForm=Part	0	root	_	_
+6	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	cry	cry	NOUN	NN	Number=Sing	5	obj	_	_
+8	by	by	ADP	IN	_	9	case	_	_
+9	day	day	NOUN	NN	Number=Sing	5	obl	_	_
+10	,	,	PUNCT	,	_	5	punct	_	_
+11	and	and	CCONJ	CC	_	14	cc	_	_
+12	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+13	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
+14	given	give	VERB	VBN	VerbForm=Part	5	conj	_	_
+15	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	14	iobj	_	_
+16	knowledge	knowledge	NOUN	NN	Number=Sing	14	obj	_	_
+17	by	by	ADP	IN	_	18	case	_	_
+18	visions	vision	NOUN	NNS	Number=Plur	14	obl	_	_
+19	in	in	ADP	IN	_	23	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+21	night	night	NOUN	NN	Number=Sing	23	compound	_	_
+22	-	-	PUNCT	HYPH	_	21	punct	_	_
+23	time	time	NOUN	NN	Number=Sing	14	obl	_	_
+24	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And by day have I waxed bold in mighty prayer before him; yea, my voice have I sent up on high; and angels came down and ministered unto me.
+# sent_id = 166
+# llm_note = fronted 'by day' + inverted perfect 'have I waxed bold'; waxed bold = root (waxed=cop, bold=predicate adj); yea=discourse; 'my voice have I sent up on high' = fronted obj + inverted; 'sent up' = compound:prt; 'on high' = obl; angels came down=conj; ministered=conj
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	by	by	ADP	IN	_	3	case	_	_
+3	day	day	NOUN	NN	Number=Sing	6	obl	_	_
+4	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	waxed	wax	VERB	VBN	VerbForm=Part	0	root	_	_
+7	bold	bold	ADJ	JJ	Degree=Pos	6	xcomp	_	_
+8	in	in	ADP	IN	_	10	case	_	_
+9	mighty	mighty	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	prayer	prayer	NOUN	NN	Number=Sing	6	obl	_	_
+11	before	before	ADP	IN	_	12	case	_	_
+12	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obl	_	_
+13	;	;	PUNCT	:	_	6	punct	_	_
+14	yea	yea	INTJ	UH	_	20	discourse	_	_
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	voice	voice	NOUN	NN	Number=Sing	20	obj	_	_
+18	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	20	aux	_	_
+19	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	20	nsubj	_	_
+20	sent	send	VERB	VBN	VerbForm=Part	6	conj	_	_
+21	up	up	ADP	RP	_	20	compound:prt	_	_
+22	on	on	ADP	IN	_	23	case	_	_
+23	high	high	NOUN	NN	Number=Sing	20	obl	_	_
+24	;	;	PUNCT	:	_	6	punct	_	_
+25	and	and	CCONJ	CC	_	27	cc	_	_
+26	angels	angel	NOUN	NNS	Number=Plur	27	nsubj	_	_
+27	came	come	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
+28	down	down	ADP	RP	_	27	compound:prt	_	_
+29	and	and	CCONJ	CC	_	30	cc	_	_
+30	ministered	minister	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	27	conj	_	_
+31	unto	unto	ADP	IN	_	32	case	_	_
+32	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	30	obl	_	_
+33	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And upon the wings of his Spirit hath my body been carried away upon exceedingly high mountains.
+# sent_id = 167
+# llm_note = fronted 'upon the wings of his Spirit' + inverted 'hath my body been carried away'; 'carried away' = passive compound:prt; 'upon exceedingly high mountains' = obl
+1	And	and	CCONJ	CC	_	12	cc	_	_
+2	upon	upon	ADP	IN	_	5	case	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+4	wings	wing	NOUN	NNS	Number=Plur	5	compound	_	_
+5	of	of	ADP	IN	_	12	obl	_	_
+6	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	Spirit	Spirit	PROPN	NNP	Number=Sing	5	nmod	_	_
+8	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+9	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	_
+10	body	body	NOUN	NN	Number=Sing	12	nsubj:pass	_	_
+11	been	be	AUX	VBN	VerbForm=Part	12	aux:pass	_	_
+12	carried	carry	VERB	VBN	VerbForm=Part	0	root	_	_
+13	away	away	ADP	RP	_	12	compound:prt	_	_
+14	upon	upon	ADP	IN	_	17	case	_	_
+15	exceedingly	exceedingly	ADV	RB	_	16	advmod	_	_
+16	high	high	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	mountains	mountain	NOUN	NNS	Number=Plur	12	obl	_	_
+18	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = And mine eyes have beheld great things, yea, even too great for man; therefore I was bidden that I should not write them.
+# sent_id = 168
+# llm_note = mine=EME 1sg poss; 'have beheld' = root perfect; 'yea, even too great for man' = appositive elaboration; 'too great for man' = ADJP; therefore=advmod; 'I was bidden' = passive; 'that I should not write them' = ccomp of bidden
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
+3	eyes	eye	NOUN	NNS	Number=Plur	5	nsubj	_	_
+4	have	have	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	beheld	behold	VERB	VBN	VerbForm=Part	0	root	_	_
+6	great	great	ADJ	JJ	Degree=Pos	7	amod	_	_
+7	things	thing	NOUN	NNS	Number=Plur	5	obj	_	_
+8	,	,	PUNCT	,	_	5	punct	_	_
+9	yea	yea	INTJ	UH	_	13	discourse	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	even	even	ADV	RB	_	13	advmod	_	_
+12	too	too	ADV	RB	_	13	advmod	_	_
+13	great	great	ADJ	JJ	Degree=Pos	7	appos	_	_
+14	for	for	ADP	IN	_	15	case	_	_
+15	man	man	NOUN	NN	Number=Sing	13	obl	_	_
+16	;	;	PUNCT	:	_	5	punct	_	_
+17	therefore	therefore	ADV	RB	_	20	advmod	_	_
+18	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	20	nsubj:pass	_	_
+19	was	be	AUX	VBD	Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	20	aux:pass	_	_
+20	bidden	bid	VERB	VBN	VerbForm=Part	5	conj	_	_
+21	that	that	SCONJ	IN	_	25	mark	_	_
+22	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	25	nsubj	_	_
+23	should	should	AUX	MD	VerbForm=Fin	25	aux	_	_
+24	not	not	PART	RB	_	25	advmod	_	_
+25	write	write	VERB	VB	VerbForm=Inf	20	ccomp	_	_
+26	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	25	obj	_	_
+27	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = O then, if I have seen so great things, if the Lord in his condescension unto the children of men hath visited men in so much mercy, why should my heart weep and my soul linger in the valley of sorrow, and my flesh waste away, and my strength slacken, because of mine afflictions?
+# sent_id = 169
+# llm_note = O=discourse; then=advmod; double 'if' protasis; apodosis = rhetorical question 'why should my heart weep'; weep/linger/waste/slacken = coordinated verbs; 'waste away' = compound:prt; mine=EME 1sg poss
+1	O	O	INTJ	UH	_	35	discourse	_	_
+2	then	then	ADV	RB	_	35	advmod	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	if	if	SCONJ	IN	_	7	mark	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+6	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	seen	see	VERB	VBN	VerbForm=Part	35	advcl	_	_
+8	so	so	ADV	RB	_	9	advmod	_	_
+9	great	great	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	things	thing	NOUN	NNS	Number=Plur	7	obj	_	_
+11	,	,	PUNCT	,	_	7	punct	_	_
+12	if	if	SCONJ	IN	_	24	mark	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	Lord	Lord	PROPN	NNP	Number=Sing	24	nsubj	_	_
+15	in	in	ADP	IN	_	17	case	_	_
+16	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	condescension	condescension	NOUN	NN	Number=Sing	14	obl	_	_
+18	unto	unto	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	children	child	NOUN	NNS	Number=Plur	17	nmod	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	men	man	NOUN	NNS	Number=Plur	20	nmod	_	_
+23	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
+24	visited	visit	VERB	VBN	VerbForm=Part	35	advcl	_	_
+25	men	man	NOUN	NNS	Number=Plur	24	obj	_	_
+26	in	in	ADP	IN	_	29	case	_	_
+27	so	so	ADV	RB	_	28	advmod	_	_
+28	much	much	ADJ	JJ	Degree=Pos	29	amod	_	_
+29	mercy	mercy	NOUN	NN	Number=Sing	24	obl	_	_
+30	,	,	PUNCT	,	_	24	punct	_	_
+31	why	why	ADV	WRB	_	35	advmod	_	_
+32	should	should	AUX	MD	VerbForm=Fin	35	aux	_	_
+33	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	34	nmod:poss	_	_
+34	heart	heart	NOUN	NN	Number=Sing	35	nsubj	_	_
+35	weep	weep	VERB	VB	VerbForm=Inf	0	root	_	_
+36	and	and	CCONJ	CC	_	38	cc	_	_
+37	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	38	nmod:poss	_	_
+38	soul	soul	NOUN	NN	Number=Sing	39	nsubj	_	_
+39	linger	linger	VERB	VB	VerbForm=Inf	35	conj	_	_
+40	in	in	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	valley	valley	NOUN	NN	Number=Sing	39	obl	_	_
+43	of	of	ADP	IN	_	44	case	_	_
+44	sorrow	sorrow	NOUN	NN	Number=Sing	42	nmod	_	_
+45	,	,	PUNCT	,	_	35	punct	_	_
+46	and	and	CCONJ	CC	_	48	cc	_	_
+47	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	48	nmod:poss	_	_
+48	flesh	flesh	NOUN	NN	Number=Sing	49	nsubj	_	_
+49	waste	waste	VERB	VB	VerbForm=Inf	35	conj	_	_
+50	away	away	ADP	RP	_	49	compound:prt	_	_
+51	,	,	PUNCT	,	_	35	punct	_	_
+52	and	and	CCONJ	CC	_	54	cc	_	_
+53	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	54	nmod:poss	_	_
+54	strength	strength	NOUN	NN	Number=Sing	55	nsubj	_	_
+55	slacken	slacken	VERB	VB	VerbForm=Inf	35	conj	_	_
+56	,	,	PUNCT	,	_	35	punct	_	_
+57	because	because	SCONJ	IN	_	58	mark	_	_
+58	of	of	ADP	IN	_	57	fixed	_	_
+59	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	60	nmod:poss	_	_
+60	afflictions	affliction	NOUN	NNS	Number=Plur	35	advcl	_	_
+61	?	?	PUNCT	.	_	35	punct	_	_
+
+# text = And why should I yield to sin, because of my flesh?
+# sent_id = 170
+# llm_note = rhetorical question; why=advmod; yield=root; 'to sin' = obl; 'because of my flesh' = obl causal
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	why	why	ADV	WRB	_	5	advmod	_	_
+3	should	should	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	yield	yield	VERB	VB	VerbForm=Inf	0	root	_	_
+6	to	to	ADP	IN	_	7	case	_	_
+7	sin	sin	NOUN	NN	Number=Sing	5	obl	_	_
+8	,	,	PUNCT	,	_	5	punct	_	_
+9	because	because	SCONJ	IN	_	10	mark	_	_
+10	of	of	ADP	IN	_	9	fixed	_	_
+11	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	_
+12	flesh	flesh	NOUN	NN	Number=Sing	5	advcl	_	_
+13	?	?	PUNCT	.	_	5	punct	_	_
+
+# text = Yea, why should I give way to temptations, that the evil one have place in my heart to destroy my peace and afflict my soul?
+# sent_id = 171
+# llm_note = 'give way' = idiom VERB+NOUN; 'to temptations' = obl; 'that the evil one have place' = result advcl (subjunctive 'have'); 'to destroy...and afflict' = purpose infinitival
+1	Yea	yea	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	why	why	ADV	WRB	_	6	advmod	_	_
+4	should	should	AUX	MD	VerbForm=Fin	6	aux	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	give	give	VERB	VB	VerbForm=Inf	0	root	_	_
+7	way	way	NOUN	NN	Number=Sing	6	obj	_	_
+8	to	to	ADP	IN	_	9	case	_	_
+9	temptations	temptation	NOUN	NNS	Number=Plur	6	obl	_	_
+10	,	,	PUNCT	,	_	6	punct	_	_
+11	that	that	SCONJ	IN	_	16	mark	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+13	evil	evil	ADJ	JJ	Degree=Pos	14	amod	_	_
+14	one	one	NOUN	NN	Number=Sing	16	nsubj	_	_
+15	have	have	VERB	VBP	Mood=Sub|VerbForm=Fin	16	aux	_	_
+16	place	place	NOUN	NN	Number=Sing	6	advcl	_	_
+17	in	in	ADP	IN	_	19	case	_	_
+18	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+19	heart	heart	NOUN	NN	Number=Sing	16	obl	_	_
+20	to	to	PART	TO	_	21	mark	_	_
+21	destroy	destroy	VERB	VB	VerbForm=Inf	16	advcl	_	_
+22	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	23	nmod:poss	_	_
+23	peace	peace	NOUN	NN	Number=Sing	21	obj	_	_
+24	and	and	CCONJ	CC	_	25	cc	_	_
+25	afflict	afflict	VERB	VB	VerbForm=Inf	21	conj	_	_
+26	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	27	nmod:poss	_	_
+27	soul	soul	NOUN	NN	Number=Sing	25	obj	_	_
+28	?	?	PUNCT	.	_	6	punct	_	_
+
+# text = Why am I angry because of mine enemy?
+# sent_id = 172
+# llm_note = rhetorical question; why=advmod; am=cop; angry=root predicate adj; 'because of mine enemy' = obl causal; mine=EME 1sg poss
+1	Why	why	ADV	WRB	_	4	advmod	_	_
+2	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	angry	angry	ADJ	JJ	Degree=Pos	0	root	_	_
+5	because	because	SCONJ	IN	_	6	mark	_	_
+6	of	of	ADP	IN	_	5	fixed	_	_
+7	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	_
+8	enemy	enemy	NOUN	NN	Number=Sing	4	advcl	_	_
+9	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = Awake, my soul!
+# sent_id = 173
+# llm_note = imperative root; 'my soul' = vocative
+1	Awake	awake	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	,	,	PUNCT	,	_	3	punct	_	_
+3	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	_
+4	soul	soul	NOUN	NN	Number=Sing	1	vocative	_	_
+5	!	!	PUNCT	.	_	1	punct	_	_
+
+# text = No longer droop in sin.
+# sent_id = 174
+# llm_note = imperative root; 'no longer' = negation advmod; 'in sin' = obl
+1	No	no	ADV	RB	_	2	advmod	_	_
+2	longer	long	ADV	RBR	Degree=Cmp	3	advmod	_	_
+3	droop	droop	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+4	in	in	ADP	IN	_	5	case	_	_
+5	sin	sin	NOUN	NN	Number=Sing	3	obl	_	_
+6	.	.	PUNCT	.	_	3	punct	_	_
+

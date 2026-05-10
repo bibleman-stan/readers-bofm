@@ -1,0 +1,458 @@
+# text = And ye may know that he is, by the power of the Holy Ghost; wherefore I would exhort you that ye deny not the power of God; for he worketh by power, according to the faith of the children of men, the same today and tomorrow, and forever.
+# sent_id = 165
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	ye	ye	PRON	PRP	Number=Plur|Person=2	4	nsubj	_	_
+3	may	may	AUX	MD	_	4	aux	_	_
+4	know	know	VERB	VB	_	0	root	_	_
+5	that	that	SCONJ	IN	_	7	mark	_	_
+6	he	he	PRON	PRP	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_
+7	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	4	ccomp	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	by	by	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	power	power	NOUN	NN	Number=Sing	7	obl	_	_
+12	of	of	ADP	IN	_	15	case	_	_
+13	the	the	DET	DT	_	15	det	_	_
+14	Holy	Holy	ADJ	NNP	_	15	amod	_	_
+15	Ghost	Ghost	PROPN	NNP	Number=Sing	11	nmod	_	_
+16	;	;	PUNCT	:	_	4	punct	_	_
+17	wherefore	wherefore	ADV	WRB	_	20	advmod	_	_
+18	I	I	PRON	PRP	Number=Sing|Person=1	20	nsubj	_	_
+19	would	would	AUX	MD	_	20	aux	_	_
+20	exhort	exhort	VERB	VB	_	4	parataxis	_	_
+21	you	you	PRON	PRP	Number=Plur|Person=2	20	obj	_	_
+22	that	that	SCONJ	IN	_	24	mark	_	_
+23	ye	ye	PRON	PRP	Number=Plur|Person=2	24	nsubj	_	_
+24	deny	deny	VERB	VB	_	20	ccomp	_	_
+25	not	not	PART	RB	_	24	advmod	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	power	power	NOUN	NN	Number=Sing	24	obj	_	_
+28	of	of	ADP	IN	_	29	case	_	_
+29	God	God	PROPN	NNP	Number=Sing	27	nmod	_	_
+30	;	;	PUNCT	:	_	20	punct	_	_
+31	for	for	SCONJ	IN	_	33	mark	_	_
+32	he	he	PRON	PRP	Gender=Masc|Number=Sing|Person=3	33	nsubj	_	_
+33	worketh	work	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	20	advcl	_	_
+34	by	by	ADP	IN	_	35	case	_	_
+35	power	power	NOUN	NN	Number=Sing	33	obl	_	_
+36	,	,	PUNCT	,	_	33	punct	_	_
+37	according	according	ADP	IN	_	40	case	_	_
+38	to	to	ADP	TO	_	37	fixed	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	faith	faith	NOUN	NN	Number=Sing	33	obl	_	_
+41	of	of	ADP	IN	_	43	case	_	_
+42	the	the	DET	DT	_	43	det	_	_
+43	children	child	NOUN	NNS	Number=Plur	40	nmod	_	_
+44	of	of	ADP	IN	_	45	case	_	_
+45	men	man	NOUN	NNS	Number=Plur	43	nmod	_	_
+46	,	,	PUNCT	,	_	48	punct	_	_
+47	the	the	DET	DT	_	48	det	_	_
+48	same	same	ADJ	JJ	_	40	appos	_	_
+49	today	today	ADV	RB	_	48	advmod	_	_
+50	and	and	CCONJ	CC	_	51	cc	_	_
+51	tomorrow	tomorrow	ADV	RB	_	49	conj	_	_
+52	,	,	PUNCT	,	_	49	punct	_	_
+53	and	and	CCONJ	CC	_	54	cc	_	_
+54	forever	forever	ADV	RB	_	49	conj	_	_
+55	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And again, I exhort you, my brethren, that ye deny not the gifts of God, for they are many; and they come from the same God.
+# sent_id = 166
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	again	again	ADV	RB	_	5	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	I	I	PRON	PRP	Number=Sing|Person=1	5	nsubj	_	_
+5	exhort	exhort	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres	0	root	_	_
+6	you	you	PRON	PRP	Number=Plur|Person=2	5	obj	_	_
+7	,	,	PUNCT	,	_	9	punct	_	_
+8	my	my	DET	PRP$	Number=Sing|Person=1|Poss=Yes	9	det	_	_
+9	brethren	brethren	NOUN	NNS	Number=Plur	5	vocative	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	that	that	SCONJ	IN	_	13	mark	_	_
+12	ye	ye	PRON	PRP	Number=Plur|Person=2	13	nsubj	_	_
+13	deny	deny	VERB	VB	_	5	ccomp	_	_
+14	not	not	PART	RB	_	13	advmod	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	gifts	gift	NOUN	NNS	Number=Plur	13	obj	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	God	God	PROPN	NNP	Number=Sing	16	nmod	_	_
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	for	for	SCONJ	IN	_	22	mark	_	_
+21	they	they	PRON	PRP	Number=Plur|Person=3	23	nsubj	_	_
+22	are	be	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres	13	advcl	_	_
+23	many	many	ADJ	JJ	_	22	xcomp	_	_
+24	;	;	PUNCT	:	_	13	punct	_	_
+25	and	and	CCONJ	CC	_	27	cc	_	_
+26	they	they	PRON	PRP	Number=Plur|Person=3	27	nsubj	_	_
+27	come	come	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres	13	conj	_	_
+28	from	from	ADP	IN	_	31	case	_	_
+29	the	the	DET	DT	_	31	det	_	_
+30	same	same	ADJ	JJ	_	31	amod	_	_
+31	God	God	PROPN	NNP	Number=Sing	27	obl	_	_
+32	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And there are different ways that these gifts are administered; but it is the same God who worketh all in all; and they are given by the manifestations of the Spirit of God unto men, to profit them.
+# sent_id = 167
+# llm_note = Existential "there are ways"; second clause "it is...God" is cleft; "worketh" is EME 3sg VBZ; "who worketh all in all" is proverbial idiom; third conjunct is passive "are given".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	are	be	VERB	VBZ	Mood=Ind|Number=Plur|Person=3|Tense=Pres	0	root	_	_
+4	different	different	ADJ	JJ	_	5	amod	_	_
+5	ways	way	NOUN	NNS	Number=Plur	3	nsubj	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	these	these	DET	DT	_	8	det	_	_
+8	gifts	gift	NOUN	NNS	Number=Plur	10	nsubj:pass	_	_
+9	are	be	AUX	VBP	_	10	aux:pass	_	_
+10	administered	administer	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	acl:relcl	_	_
+11	;	;	PUNCT	:	_	3	punct	_	_
+12	but	but	CCONJ	CC	_	14	cc	_	_
+13	it	it	PRON	PRP	Gender=Neut|Number=Sing|Person=3	14	nsubj	_	_
+14	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	3	conj	_	_
+15	the	the	DET	DT	_	17	det	_	_
+16	same	same	ADJ	JJ	_	17	amod	_	_
+17	God	God	PROPN	NNP	Number=Sing	14	xcomp	_	_
+18	who	who	PRON	WP	_	19	nsubj	_	_
+19	worketh	work	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	17	acl:relcl	_	_
+20	all	all	PRON	DT	_	19	obj	_	_
+21	in	in	ADP	IN	_	22	case	_	_
+22	all	all	PRON	DT	_	19	obl	_	_
+23	;	;	PUNCT	:	_	3	punct	_	_
+24	and	and	CCONJ	CC	_	27	cc	_	_
+25	they	they	PRON	PRP	Number=Plur|Person=3	27	nsubj:pass	_	_
+26	are	be	AUX	VBP	_	27	aux:pass	_	_
+27	given	give	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	3	conj	_	_
+28	by	by	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	manifestations	manifestation	NOUN	NNS	Number=Plur	27	obl	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	Spirit	Spirit	PROPN	NNP	Number=Sing	30	nmod	_	_
+34	of	of	ADP	IN	_	35	case	_	_
+35	God	God	PROPN	NNP	Number=Sing	33	nmod	_	_
+36	unto	unto	ADP	IN	_	37	case	_	_
+37	men	man	NOUN	NNS	Number=Plur	27	obl	_	_
+38	,	,	PUNCT	,	_	40	punct	_	_
+39	to	to	PART	TO	_	40	mark	_	_
+40	profit	profit	VERB	VB	_	27	advcl	_	_
+41	them	them	PRON	PRP	Number=Plur|Person=3	40	obj	_	_
+42	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = For behold, to one is given by the Spirit of God, that he may teach the word of wisdom;
+# sent_id = 168
+# llm_note = Passive "is given" with dative beneficiary "to one"; "that he may teach" is purpose advcl; "behold" = discourse particle.
+1	For	for	SCONJ	IN	_	7	mark	_	_
+2	behold	behold	INTJ	UH	_	7	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	to	to	ADP	IN	_	5	case	_	_
+5	one	one	PRON	PRP	Number=Sing	7	nsubj:pass	_	_
+6	is	be	AUX	VBZ	_	7	aux:pass	_	_
+7	given	give	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+8	by	by	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	Spirit	Spirit	PROPN	NNP	Number=Sing	7	obl	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	God	God	PROPN	NNP	Number=Sing	10	nmod	_	_
+13	,	,	PUNCT	,	_	17	punct	_	_
+14	that	that	SCONJ	IN	_	17	mark	_	_
+15	he	he	PRON	PRP	Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_
+16	may	may	AUX	MD	_	17	aux	_	_
+17	teach	teach	VERB	VB	_	7	advcl	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	word	word	NOUN	NN	Number=Sing	17	obj	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	wisdom	wisdom	NOUN	NN	Number=Sing	19	nmod	_	_
+22	;	;	PUNCT	:	_	7	punct	_	_
+
+# text = And to another, that he may teach the word of knowledge by the same Spirit;
+# sent_id = 169
+# llm_note = Elliptical gift-list item; "is given" elided; "another" promoted to root as beneficiary; "that"-clause is purpose advcl.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	to	to	ADP	IN	_	3	case	_	_
+3	another	another	PRON	PRP	Number=Sing	0	root	_	_
+4	,	,	PUNCT	,	_	8	punct	_	_
+5	that	that	SCONJ	IN	_	8	mark	_	_
+6	he	he	PRON	PRP	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_
+7	may	may	AUX	MD	_	8	aux	_	_
+8	teach	teach	VERB	VB	_	3	advcl	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	word	word	NOUN	NN	Number=Sing	8	obj	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	knowledge	knowledge	NOUN	NN	Number=Sing	10	nmod	_	_
+13	by	by	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	_	16	det	_	_
+15	same	same	ADJ	JJ	_	16	amod	_	_
+16	Spirit	Spirit	PROPN	NNP	Number=Sing	8	obl	_	_
+17	;	;	PUNCT	:	_	3	punct	_	_
+
+# text = And to another, exceedingly great faith; and to another, the gifts of healing by the same Spirit;
+# sent_id = 170
+# llm_note = Two elliptical gift items coordinated; "faith" and "gifts" are the gift nouns promoted as roots of their respective clauses; "healing" is gerund nmod; "another" is obl dative in each.
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	to	to	ADP	IN	_	3	case	_	_
+3	another	another	PRON	PRP	Number=Sing	7	obl	_	_
+4	,	,	PUNCT	,	_	7	punct	_	_
+5	exceedingly	exceedingly	ADV	RB	_	6	advmod	_	_
+6	great	great	ADJ	JJ	_	7	amod	_	_
+7	faith	faith	NOUN	NN	Number=Sing	0	root	_	_
+8	;	;	PUNCT	:	_	7	punct	_	_
+9	and	and	CCONJ	CC	_	14	cc	_	_
+10	to	to	ADP	IN	_	11	case	_	_
+11	another	another	PRON	PRP	Number=Sing	14	obl	_	_
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	gifts	gift	NOUN	NNS	Number=Plur	7	conj	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	healing	heal	NOUN	NN	Number=Sing	14	nmod	_	_
+17	by	by	ADP	IN	_	20	case	_	_
+18	the	the	DET	DT	_	20	det	_	_
+19	same	same	ADJ	JJ	_	20	amod	_	_
+20	Spirit	Spirit	PROPN	NNP	Number=Sing	14	obl	_	_
+21	;	;	PUNCT	:	_	7	punct	_	_
+
+# text = And again, to another, that he may work mighty miracles;
+# sent_id = 171
+# llm_note = Elliptical gift item; "another" promoted to root; purpose "that"-clause as advcl.
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	again	again	ADV	RB	_	5	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	to	to	ADP	IN	_	5	case	_	_
+5	another	another	PRON	PRP	Number=Sing	0	root	_	_
+6	,	,	PUNCT	,	_	10	punct	_	_
+7	that	that	SCONJ	IN	_	10	mark	_	_
+8	he	he	PRON	PRP	Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_
+9	may	may	AUX	MD	_	10	aux	_	_
+10	work	work	VERB	VB	_	5	advcl	_	_
+11	mighty	mighty	ADJ	JJ	_	12	amod	_	_
+12	miracles	miracle	NOUN	NNS	Number=Plur	10	obj	_	_
+13	;	;	PUNCT	:	_	5	punct	_	_
+
+# text = And again, to another, that he may prophesy concerning all things;
+# sent_id = 172
+# llm_note = Elliptical gift item parallel to sent_id 171; "prophesy" takes "concerning all things" as obl.
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	again	again	ADV	RB	_	5	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	to	to	ADP	IN	_	5	case	_	_
+5	another	another	PRON	PRP	Number=Sing	0	root	_	_
+6	,	,	PUNCT	,	_	10	punct	_	_
+7	that	that	SCONJ	IN	_	10	mark	_	_
+8	he	he	PRON	PRP	Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_
+9	may	may	AUX	MD	_	10	aux	_	_
+10	prophesy	prophesy	VERB	VB	_	5	advcl	_	_
+11	concerning	concerning	ADP	IN	_	13	case	_	_
+12	all	all	DET	DT	_	13	det	_	_
+13	things	thing	NOUN	NNS	Number=Plur	10	obl	_	_
+14	;	;	PUNCT	:	_	5	punct	_	_
+
+# text = And again, to another, the beholding of angels and ministering spirits;
+# sent_id = 173
+# llm_note = Elliptical nominal gift item; "beholding" is gerund-noun (NOUN NN) as root; "of angels" nmod; "ministering spirits" coordinated.
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	again	again	ADV	RB	_	8	advmod	_	_
+3	,	,	PUNCT	,	_	8	punct	_	_
+4	to	to	ADP	IN	_	5	case	_	_
+5	another	another	PRON	PRP	Number=Sing	8	obl	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	beholding	behold	NOUN	NN	Number=Sing	0	root	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	angels	angel	NOUN	NNS	Number=Plur	8	nmod	_	_
+11	and	and	CCONJ	CC	_	13	cc	_	_
+12	ministering	minister	ADJ	VBG	_	13	amod	_	_
+13	spirits	spirit	NOUN	NNS	Number=Plur	10	conj	_	_
+14	;	;	PUNCT	:	_	8	punct	_	_
+
+# text = And again, to another, all kinds of tongues;
+# sent_id = 174
+# llm_note = Elliptical nominal gift item; "kinds" promoted to root.
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	again	again	ADV	RB	_	8	advmod	_	_
+3	,	,	PUNCT	,	_	8	punct	_	_
+4	to	to	ADP	IN	_	5	case	_	_
+5	another	another	PRON	PRP	Number=Sing	8	obl	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	all	all	DET	DT	_	8	det	_	_
+8	kinds	kind	NOUN	NNS	Number=Plur	0	root	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	tongues	tongue	NOUN	NNS	Number=Plur	8	nmod	_	_
+11	;	;	PUNCT	:	_	8	punct	_	_
+
+# text = And again, to another, the interpretation of languages and of divers kinds of tongues.
+# sent_id = 175
+# llm_note = Elliptical nominal gift item; "interpretation" as root; "languages" and "kinds" coordinated as nmod via parallel "of" phrases; "divers" = archaic ADJ for "various/diverse".
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	again	again	ADV	RB	_	8	advmod	_	_
+3	,	,	PUNCT	,	_	8	punct	_	_
+4	to	to	ADP	IN	_	5	case	_	_
+5	another	another	PRON	PRP	Number=Sing	8	obl	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	interpretation	interpretation	NOUN	NN	Number=Sing	0	root	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	languages	language	NOUN	NNS	Number=Plur	8	nmod	_	_
+11	and	and	CCONJ	CC	_	14	cc	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	divers	divers	ADJ	JJ	_	14	amod	_	_
+14	kinds	kind	NOUN	NNS	Number=Plur	10	conj	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	tongues	tongue	NOUN	NNS	Number=Plur	14	nmod	_	_
+17	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And all these gifts come by the Spirit of Christ; and they come unto every man severally, according as he will.
+# sent_id = 176
+# llm_note = "severally" = archaic ADV meaning "individually"; "according as he will" = conditional/manner advcl with "according as" as complex SCONJ; "will" = modal (elliptical "as he will [give]").
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	all	all	DET	DT	_	4	det	_	_
+3	these	these	DET	DT	_	4	det	_	_
+4	gifts	gift	NOUN	NNS	Number=Plur	5	nsubj	_	_
+5	come	come	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres	0	root	_	_
+6	by	by	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	Spirit	Spirit	PROPN	NNP	Number=Sing	5	obl	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Christ	Christ	PROPN	NNP	Number=Sing	8	nmod	_	_
+11	;	;	PUNCT	:	_	5	punct	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	they	they	PRON	PRP	Number=Plur|Person=3	14	nsubj	_	_
+14	come	come	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres	5	conj	_	_
+15	unto	unto	ADP	IN	_	17	case	_	_
+16	every	every	DET	DT	_	17	det	_	_
+17	man	man	NOUN	NN	Number=Sing	14	obl	_	_
+18	severally	severally	ADV	RB	_	14	advmod	_	_
+19	,	,	PUNCT	,	_	14	punct	_	_
+20	according	according	ADV	RB	_	23	advmod	_	_
+21	as	as	SCONJ	IN	_	23	mark	_	_
+22	he	he	PRON	PRP	Gender=Masc|Number=Sing|Person=3	23	nsubj	_	_
+23	will	will	AUX	MD	_	14	advcl	_	_
+24	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And I would exhort you, my beloved brethren, that ye remember that every good gift cometh of Christ.
+# sent_id = 177
+# llm_note = Double "that"-clause: "exhort...that ye remember that..." — outer is ccomp of exhort, inner is ccomp of remember; "cometh" = EME 3sg VBZ; "of Christ" = obl source.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Number=Sing|Person=1	4	nsubj	_	_
+3	would	would	AUX	MD	_	4	aux	_	_
+4	exhort	exhort	VERB	VB	_	0	root	_	_
+5	you	you	PRON	PRP	Number=Plur|Person=2	4	obj	_	_
+6	,	,	PUNCT	,	_	9	punct	_	_
+7	my	my	DET	PRP$	Number=Sing|Person=1|Poss=Yes	9	det	_	_
+8	beloved	beloved	ADJ	JJ	_	9	amod	_	_
+9	brethren	brethren	NOUN	NNS	Number=Plur	4	vocative	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	that	that	SCONJ	IN	_	13	mark	_	_
+12	ye	ye	PRON	PRP	Number=Plur|Person=2	13	nsubj	_	_
+13	remember	remember	VERB	VB	_	4	ccomp	_	_
+14	that	that	SCONJ	IN	_	18	mark	_	_
+15	every	every	DET	DT	_	17	det	_	_
+16	good	good	ADJ	JJ	_	17	amod	_	_
+17	gift	gift	NOUN	NN	Number=Sing	18	nsubj	_	_
+18	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	13	ccomp	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Christ	Christ	PROPN	NNP	Number=Sing	18	obl	_	_
+21	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And I would exhort you, my beloved brethren, that ye remember that he is the same yesterday, today, and forever, and that all these gifts of which I have spoken, which are spiritual, never will be done away, even as long as the world shall stand, only according to the unbelief of the children of men.
+# sent_id = 178
+# llm_note = Two coordinate "that"-clauses as ccomp of "remember": (1) "that he is the same yesterday..."; (2) "that all these gifts...never will be done away"; "done away" = compound:prt passive; "as long as the world shall stand" = temporal advcl; "only according to the unbelief" = exception obl.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Number=Sing|Person=1	4	nsubj	_	_
+3	would	would	AUX	MD	_	4	aux	_	_
+4	exhort	exhort	VERB	VB	_	0	root	_	_
+5	you	you	PRON	PRP	Number=Plur|Person=2	4	obj	_	_
+6	,	,	PUNCT	,	_	9	punct	_	_
+7	my	my	DET	PRP$	Number=Sing|Person=1|Poss=Yes	9	det	_	_
+8	beloved	beloved	ADJ	JJ	_	9	amod	_	_
+9	brethren	brethren	NOUN	NNS	Number=Plur	4	vocative	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	that	that	SCONJ	IN	_	13	mark	_	_
+12	ye	ye	PRON	PRP	Number=Plur|Person=2	13	nsubj	_	_
+13	remember	remember	VERB	VB	_	4	ccomp	_	_
+14	that	that	SCONJ	IN	_	16	mark	_	_
+15	he	he	PRON	PRP	Gender=Masc|Number=Sing|Person=3	16	nsubj	_	_
+16	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	13	ccomp	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	same	same	ADJ	JJ	_	16	xcomp	_	_
+19	yesterday	yesterday	ADV	RB	_	18	advmod	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	today	today	ADV	RB	_	19	conj	_	_
+22	,	,	PUNCT	,	_	19	punct	_	_
+23	and	and	CCONJ	CC	_	24	cc	_	_
+24	forever	forever	ADV	RB	_	19	conj	_	_
+25	,	,	PUNCT	,	_	16	punct	_	_
+26	and	and	CCONJ	CC	_	44	cc	_	_
+27	that	that	SCONJ	IN	_	44	mark	_	_
+28	all	all	DET	DT	_	30	det	_	_
+29	these	these	DET	DT	_	30	det	_	_
+30	gifts	gift	NOUN	NNS	Number=Plur	44	nsubj:pass	_	_
+31	of	of	ADP	IN	_	32	case	_	_
+32	which	which	PRON	WDT	_	35	obl	_	_
+33	I	I	PRON	PRP	Number=Sing|Person=1	35	nsubj	_	_
+34	have	have	AUX	VBP	_	35	aux	_	_
+35	spoken	speak	VERB	VBN	Tense=Past|VerbForm=Part	30	acl:relcl	_	_
+36	,	,	PUNCT	,	_	30	punct	_	_
+37	which	which	PRON	WDT	_	39	nsubj	_	_
+38	are	be	AUX	VBP	_	39	cop	_	_
+39	spiritual	spiritual	ADJ	JJ	_	30	acl:relcl	_	_
+40	,	,	PUNCT	,	_	44	punct	_	_
+41	never	never	ADV	RB	_	44	advmod	_	_
+42	will	will	AUX	MD	_	44	aux	_	_
+43	be	be	AUX	VB	_	44	aux:pass	_	_
+44	done	do	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	13	conj	_	_
+45	away	away	ADP	RP	_	44	compound:prt	_	_
+46	,	,	PUNCT	,	_	44	punct	_	_
+47	even	even	ADV	RB	_	54	advmod	_	_
+48	as	as	SCONJ	IN	_	54	mark	_	_
+49	long	long	ADV	RB	_	48	fixed	_	_
+50	as	as	SCONJ	IN	_	48	fixed	_	_
+51	the	the	DET	DT	_	52	det	_	_
+52	world	world	NOUN	NN	Number=Sing	54	nsubj	_	_
+53	shall	shall	AUX	MD	_	54	aux	_	_
+54	stand	stand	VERB	VB	_	44	advcl	_	_
+55	,	,	PUNCT	,	_	44	punct	_	_
+56	only	only	ADV	RB	_	60	advmod	_	_
+57	according	according	ADP	IN	_	60	case	_	_
+58	to	to	ADP	TO	_	57	fixed	_	_
+59	the	the	DET	DT	_	60	det	_	_
+60	unbelief	unbelief	NOUN	NN	Number=Sing	44	obl	_	_
+61	of	of	ADP	IN	_	63	case	_	_
+62	the	the	DET	DT	_	63	det	_	_
+63	children	child	NOUN	NNS	Number=Plur	60	nmod	_	_
+64	of	of	ADP	IN	_	65	case	_	_
+65	men	man	NOUN	NNS	Number=Plur	63	nmod	_	_
+66	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Wherefore, there must be faith; and if there must be faith there must also be hope; and if there must be hope there must also be charity.
+# sent_id = 179
+# llm_note = Three-member existential chain with logical escalation: faith → hope → charity; second and third members are conditional (if-then) structures; "there" = existential EX in each clause; "must be" = deontic modal + copular BE; the main clauses (tok5, tok17, tok29) are conjoined.
+1	Wherefore	wherefore	ADV	WRB	_	5	advmod	_	_
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	there	there	PRON	EX	_	5	expl	_	_
+4	must	must	AUX	MD	_	5	aux	_	_
+5	be	be	VERB	VB	_	0	root	_	_
+6	faith	faith	NOUN	NN	Number=Sing	5	nsubj	_	_
+7	;	;	PUNCT	:	_	5	punct	_	_
+8	and	and	CCONJ	CC	_	17	cc	_	_
+9	if	if	SCONJ	IN	_	12	mark	_	_
+10	there	there	PRON	EX	_	12	expl	_	_
+11	must	must	AUX	MD	_	12	aux	_	_
+12	be	be	VERB	VB	_	17	advcl	_	_
+13	faith	faith	NOUN	NN	Number=Sing	12	nsubj	_	_
+14	there	there	PRON	EX	_	17	expl	_	_
+15	must	must	AUX	MD	_	17	aux	_	_
+16	also	also	ADV	RB	_	17	advmod	_	_
+17	be	be	VERB	VB	_	5	conj	_	_
+18	hope	hope	NOUN	NN	Number=Sing	17	nsubj	_	_
+19	;	;	PUNCT	:	_	17	punct	_	_
+20	and	and	CCONJ	CC	_	29	cc	_	_
+21	if	if	SCONJ	IN	_	24	mark	_	_
+22	there	there	PRON	EX	_	24	expl	_	_
+23	must	must	AUX	MD	_	24	aux	_	_
+24	be	be	VERB	VB	_	29	advcl	_	_
+25	hope	hope	NOUN	NN	Number=Sing	24	nsubj	_	_
+26	there	there	PRON	EX	_	29	expl	_	_
+27	must	must	AUX	MD	_	29	aux	_	_
+28	also	also	ADV	RB	_	29	advmod	_	_
+29	be	be	VERB	VB	_	5	conj	_	_
+30	charity	charity	NOUN	NN	Number=Sing	29	nsubj	_	_
+31	.	.	PUNCT	.	_	5	punct	_	_
+

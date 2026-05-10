@@ -1,0 +1,953 @@
+# text = And it came to pass that the people came to him throughout all the borders of the land which was by the wilderness side.
+# sent_id = 275
+# llm_note = AICTP frame; "the people came to him" = main ccomp; "throughout all the borders" = obl; "which was by the wilderness side" = rel clause (locative predicate)
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	people	people	NOUN	NN	Number=Plur	9	nsubj	_	_
+9	came	come	VERB	VBD	_	3	ccomp	_	_
+10	to	to	ADP	IN	_	11	case	_	_
+11	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	9	obl	_	_
+12	throughout	throughout	ADP	IN	_	15	case	_	_
+13	all	all	DET	DT	_	15	det	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	borders	border	NOUN	NNS	Number=Plur	9	obl	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	land	land	NOUN	NN	Number=Sing	15	nmod	_	_
+19	which	which	PRON	WDT	_	20	nsubj	_	_
+20	was	be	VERB	VBD	_	18	acl:relcl	_	_
+21	by	by	ADP	IN	_	24	case	_	_
+22	the	the	DET	DT	_	24	det	_	_
+23	wilderness	wilderness	NOUN	NN	Number=Sing	24	compound	_	_
+24	side	side	NOUN	NN	Number=Sing	20	obl	_	_
+25	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And they were baptized throughout all the land;
+# sent_id = 276
+# llm_note = short passive clause; fragment ending in semicolon; baptized = passive verb; "throughout all the land" = obl
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	4	nsubj:pass	_	_
+3	were	be	AUX	VBD	_	4	aux:pass	_	_
+4	baptized	baptize	VERB	VBN	_	0	root	_	_
+5	throughout	throughout	ADP	IN	_	8	case	_	_
+6	all	all	DET	DT	_	8	det	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	land	land	NOUN	NN	Number=Sing	4	obl	_	_
+9	;	;	PUNCT	:	_	4	punct	_	_
+
+# text = So that when he had finished his work at Melek he departed thence, and traveled three days' journey on the north of the land of Melek; and he came to a city which was called Ammonihah.
+# sent_id = 277
+# llm_note = "So that" = consecutive conjunction; "when" clause = temporal advcl; "days'" = MWT (18-19) days+'; "three days' journey" = NP measure; "departed thence...and traveled" = conjoined predicates; "which was called Ammonihah" = passive rel clause
+1	So	so	ADV	RB	_	3	advmod	_	_
+2	that	that	SCONJ	IN	_	12	mark	_	_
+3	when	when	SCONJ	IN	_	12	mark	_	_
+4	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	6	nsubj	_	_
+5	had	have	AUX	VBD	_	6	aux	_	_
+6	finished	finish	VERB	VBN	_	12	advcl	_	_
+7	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	8	nmod:poss	_	_
+8	work	work	NOUN	NN	Number=Sing	6	obj	_	_
+9	at	at	ADP	IN	_	10	case	_	_
+10	Melek	Melek	PROPN	NNP	Number=Sing	6	obl	_	_
+11	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	12	nsubj	_	_
+12	departed	depart	VERB	VBD	_	0	root	_	_
+13	thence	thence	ADV	RB	_	12	advmod	_	_
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	traveled	travel	VERB	VBD	_	12	conj	_	_
+17	three	three	NUM	CD	NumType=Card	20	nummod	_	_
+18-19	days'	_	_	_	_	_	_	_	_
+18	days	day	NOUN	NNS	Number=Plur	20	compound	_	_
+19	'	'	PART	POS	_	18	case	_	_
+20	journey	journey	NOUN	NN	Number=Sing	16	obj	_	_
+21	on	on	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	north	north	NOUN	NN	Number=Sing	16	obl	_	_
+24	of	of	ADP	IN	_	27	case	_	_
+25	the	the	DET	DT	_	27	det	_	_
+26	land	land	NOUN	NN	Number=Sing	27	compound	_	_
+27	of	of	ADP	IN	_	23	nmod	_	_
+28	Melek	Melek	PROPN	NNP	Number=Sing	27	nmod	_	_
+29	;	;	PUNCT	:	_	32	punct	_	_
+30	and	and	CCONJ	CC	_	32	cc	_	_
+31	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	32	nsubj	_	_
+32	came	come	VERB	VBD	_	12	conj	_	_
+33	to	to	ADP	IN	_	35	case	_	_
+34	a	a	DET	DT	_	35	det	_	_
+35	city	city	NOUN	NN	Number=Sing	32	obl	_	_
+36	which	which	PRON	WDT	_	38	nsubj:pass	_	_
+37	was	be	AUX	VBD	_	38	aux:pass	_	_
+38	called	call	VERB	VBN	_	35	acl:relcl	_	_
+39	Ammonihah	Ammonihah	PROPN	NNP	Number=Sing	38	xcomp	_	_
+40	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = Now it was the custom of the people of Nephi to call their lands, and their cities, and their villages, yea, even all their small villages, after the name of him who first possessed them; and thus it was with the land of Ammonihah.
+# sent_id = 278
+# llm_note = expletive "it" = expl with extraposed "to call" (xcomp of "was" predicate "custom"); "yea, even all their small villages" = discourse + appositive; "after the name of him who first possessed them" = PP obl; "and thus it was with" = parallel clause
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	custom	custom	NOUN	NN	Number=Sing	3	xcomp	_	_
+6	of	of	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	people	people	NOUN	NN	Number=Plur	9	compound	_	_
+9	of	of	ADP	IN	_	5	nmod	_	_
+10	Nephi	Nephi	PROPN	NNP	Number=Sing	9	nmod	_	_
+11	to	to	PART	TO	_	12	mark	_	_
+12	call	call	VERB	VB	_	5	xcomp	_	_
+13	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	14	nmod:poss	_	_
+14	lands	land	NOUN	NNS	Number=Plur	12	obj	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	and	and	CCONJ	CC	_	18	cc	_	_
+17	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	18	nmod:poss	_	_
+18	cities	city	NOUN	NNS	Number=Plur	14	conj	_	_
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	22	nmod:poss	_	_
+22	villages	village	NOUN	NNS	Number=Plur	14	conj	_	_
+23	,	,	PUNCT	,	_	30	punct	_	_
+24	yea	yea	INTJ	UH	_	30	discourse	_	_
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	even	even	ADV	RB	_	30	advmod	_	_
+27	all	all	DET	DT	_	30	det	_	_
+28	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	30	nmod:poss	_	_
+29	small	small	ADJ	JJ	_	30	amod	_	_
+30	villages	village	NOUN	NNS	Number=Plur	14	conj	_	_
+31	,	,	PUNCT	,	_	34	punct	_	_
+32	after	after	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	_	34	det	_	_
+34	name	name	NOUN	NN	Number=Sing	12	obl	_	_
+35	of	of	ADP	IN	_	36	case	_	_
+36	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	34	nmod	_	_
+37	who	who	PRON	WP	_	39	nsubj	_	_
+38	first	first	ADV	RB	_	39	advmod	_	_
+39	possessed	possess	VERB	VBD	_	36	acl:relcl	_	_
+40	them	them	PRON	PRP	Case=Acc|Number=Plur|Person=3	39	obj	_	_
+41	;	;	PUNCT	:	_	45	punct	_	_
+42	and	and	CCONJ	CC	_	45	cc	_	_
+43	thus	thus	ADV	RB	_	45	advmod	_	_
+44	it	it	PRON	PRP	_	45	nsubj	_	_
+45	was	be	VERB	VBD	_	3	conj	_	_
+46	with	with	ADP	IN	_	50	case	_	_
+47	the	the	DET	DT	_	50	det	_	_
+48	land	land	NOUN	NN	Number=Sing	50	compound	_	_
+49	of	of	ADP	IN	_	50	nmod	_	_
+50	Ammonihah	Ammonihah	PROPN	NNP	Number=Sing	45	obl	_	_
+51	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that when Alma had come to the city of Ammonihah he began to preach the word of God unto them.
+# sent_id = 279
+# llm_note = AICTP with embedded "when" clause; "began to preach" = aspectual+inf; "the word of God" = obj; "unto them" = obl
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	17	mark	_	_
+7	when	when	SCONJ	IN	_	17	mark	_	_
+8	Alma	Alma	PROPN	NNP	Number=Sing	10	nsubj	_	_
+9	had	have	AUX	VBD	_	10	aux	_	_
+10	come	come	VERB	VBN	_	17	advcl	_	_
+11	to	to	ADP	IN	_	14	case	_	_
+12	the	the	DET	DT	_	14	det	_	_
+13	city	city	NOUN	NN	Number=Sing	14	compound	_	_
+14	of	of	ADP	IN	_	10	obl	_	_
+15	Ammonihah	Ammonihah	PROPN	NNP	Number=Sing	14	nmod	_	_
+16	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	17	nsubj	_	_
+17	began	begin	VERB	VBD	_	3	ccomp	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	preach	preach	VERB	VB	_	17	xcomp	_	_
+20	the	the	DET	DT	_	22	det	_	_
+21	word	word	NOUN	NN	Number=Sing	22	compound	_	_
+22	of	of	ADP	IN	_	19	obj	_	_
+23	God	God	PROPN	NNP	Number=Sing	22	nmod	_	_
+24	unto	unto	ADP	IN	_	25	case	_	_
+25	them	them	PRON	PRP	Case=Acc|Number=Plur|Person=3	19	obl	_	_
+26	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now Satan had gotten great hold upon the hearts of the people of the city of Ammonihah; therefore they would not hearken unto the words of Alma.
+# sent_id = 280
+# llm_note = "Now" = discourse; "had gotten" = pluperfect; "great hold upon the hearts" = obj+PP; "therefore" = advmod; "would not hearken" = modal+neg+V; "unto" = archaic ADP
+1	Now	now	ADV	RB	_	4	advmod	_	_
+2	Satan	Satan	PROPN	NNP	Number=Sing	4	nsubj	_	_
+3	had	have	AUX	VBD	_	4	aux	_	_
+4	gotten	get	VERB	VBN	_	0	root	_	_
+5	great	great	ADJ	JJ	_	6	amod	_	_
+6	hold	hold	NOUN	NN	Number=Sing	4	obj	_	_
+7	upon	upon	ADP	IN	_	10	case	_	_
+8	the	the	DET	DT	_	10	det	_	_
+9	hearts	heart	NOUN	NNS	Number=Plur	10	compound	_	_
+10	of	of	ADP	IN	_	6	obl	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	people	people	NOUN	NN	Number=Plur	10	nmod	_	_
+13	of	of	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	_	16	det	_	_
+15	city	city	NOUN	NN	Number=Sing	16	compound	_	_
+16	of	of	ADP	IN	_	12	nmod	_	_
+17	Ammonihah	Ammonihah	PROPN	NNP	Number=Sing	16	nmod	_	_
+18	;	;	PUNCT	:	_	23	punct	_	_
+19	therefore	therefore	ADV	RB	_	23	advmod	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	23	nsubj	_	_
+21	would	would	AUX	MD	_	23	aux	_	_
+22	not	not	PART	RB	_	23	advmod	_	_
+23	hearken	hearken	VERB	VB	_	4	conj	_	_
+24	unto	unto	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	_	26	det	_	_
+26	words	word	NOUN	NNS	Number=Plur	23	obl	_	_
+27	of	of	ADP	IN	_	28	case	_	_
+28	Alma	Alma	PROPN	NNP	Number=Sing	26	nmod	_	_
+29	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Nevertheless Alma labored much in the spirit, wrestling with God in mighty prayer, that he would pour out his Spirit upon the people who were in the city; that he would also grant that he might baptize them unto repentance.
+# sent_id = 281
+# llm_note = "Nevertheless" = ADV concessive; "wrestling with God" = advcl participial; two purpose "that"-clauses; second "that he would also grant that" = ccomp+ccomp (grant=volition verb)
+1	Nevertheless	nevertheless	ADV	RB	_	3	advmod	_	_
+2	Alma	Alma	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	labored	labor	VERB	VBD	_	0	root	_	_
+4	much	much	ADV	RB	_	3	advmod	_	_
+5	in	in	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	spirit	spirit	NOUN	NN	Number=Sing	3	obl	_	_
+8	,	,	PUNCT	,	_	9	punct	_	_
+9	wrestling	wrestle	VERB	VBG	_	3	advcl	_	_
+10	with	with	ADP	IN	_	11	case	_	_
+11	God	God	PROPN	NNP	Number=Sing	9	obl	_	_
+12	in	in	ADP	IN	_	14	case	_	_
+13	mighty	mighty	ADJ	JJ	_	14	amod	_	_
+14	prayer	prayer	NOUN	NN	Number=Sing	9	obl	_	_
+15	,	,	PUNCT	,	_	19	punct	_	_
+16	that	that	SCONJ	IN	_	19	mark	_	_
+17	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	19	nsubj	_	_
+18	would	would	AUX	MD	_	19	aux	_	_
+19	pour	pour	VERB	VB	_	3	advcl	_	_
+20	out	out	ADP	RP	_	19	compound:prt	_	_
+21	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	22	nmod:poss	_	_
+22	Spirit	Spirit	NOUN	NN	Number=Sing	19	obj	_	_
+23	upon	upon	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	people	people	NOUN	NN	Number=Plur	19	obl	_	_
+26	who	who	PRON	WP	_	27	nsubj	_	_
+27	were	be	VERB	VBD	_	25	acl:relcl	_	_
+28	in	in	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	city	city	NOUN	NN	Number=Sing	27	obl	_	_
+31	;	;	PUNCT	:	_	36	punct	_	_
+32	that	that	SCONJ	IN	_	36	mark	_	_
+33	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	36	nsubj	_	_
+34	would	would	AUX	MD	_	36	aux	_	_
+35	also	also	ADV	RB	_	36	advmod	_	_
+36	grant	grant	VERB	VB	_	3	advcl	_	_
+37	that	that	SCONJ	IN	_	40	mark	_	_
+38	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	40	nsubj	_	_
+39	might	may	AUX	MD	_	40	aux	_	_
+40	baptize	baptize	VERB	VB	_	36	ccomp	_	_
+41	them	them	PRON	PRP	Case=Acc|Number=Plur|Person=3	40	obj	_	_
+42	unto	unto	ADP	IN	_	43	case	_	_
+43	repentance	repentance	NOUN	NN	Number=Sing	40	obl	_	_
+44	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Nevertheless, they hardened their hearts, saying unto him: Behold, we know that thou art Alma; and we know that thou art high priest over the church which thou hast established in many parts of the land, according to your tradition; and we are not of thy church, and we do not believe in such foolish traditions.
+# sent_id = 282
+# llm_note = "hardened their hearts" = idiom; "saying unto him" = depictive advcl; Behold = INTJ discourse; "thou art Alma" = copular (art=be archaic 2sg); "thou art high priest" = copular NP predicate; "thou hast established" = archaic 2sg perf; three conjoined clauses after semicolons
+1	Nevertheless	nevertheless	ADV	RB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	4	nsubj	_	_
+4	hardened	harden	VERB	VBD	_	0	root	_	_
+5	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	6	nmod:poss	_	_
+6	hearts	heart	NOUN	NNS	Number=Plur	4	obj	_	_
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	saying	say	VERB	VBG	_	4	advcl	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	8	obl	_	_
+11	:	:	PUNCT	:	_	12	punct	_	_
+12	Behold	behold	INTJ	UH	_	15	discourse	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	15	nsubj	_	_
+15	know	know	VERB	VBP	_	8	ccomp	_	_
+16	that	that	SCONJ	IN	_	19	mark	_	_
+17	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	19	nsubj	_	_
+18	art	be	AUX	VBP	_	19	cop	_	_
+19	Alma	Alma	PROPN	NNP	Number=Sing	15	ccomp	_	_
+20	;	;	PUNCT	:	_	23	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	23	nsubj	_	_
+23	know	know	VERB	VBP	_	15	conj	_	_
+24	that	that	SCONJ	IN	_	28	mark	_	_
+25	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	28	nsubj	_	_
+26	art	be	AUX	VBP	_	28	cop	_	_
+27	high	high	ADJ	JJ	_	28	amod	_	_
+28	priest	priest	NOUN	NN	Number=Sing	23	ccomp	_	_
+29	over	over	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	church	church	NOUN	NN	Number=Sing	28	nmod	_	_
+32	which	which	PRON	WDT	_	35	obj	_	_
+33	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	35	nsubj	_	_
+34	hast	have	AUX	VBP	_	35	aux	_	_
+35	established	establish	VERB	VBN	_	31	acl:relcl	_	_
+36	in	in	ADP	IN	_	38	case	_	_
+37	many	many	ADJ	JJ	_	38	amod	_	_
+38	parts	part	NOUN	NNS	Number=Plur	35	obl	_	_
+39	of	of	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	_	41	det	_	_
+41	land	land	NOUN	NN	Number=Sing	38	nmod	_	_
+42	,	,	PUNCT	,	_	44	punct	_	_
+43	according	according	ADP	IN	_	46	case	_	_
+44	to	to	ADP	IN	_	43	fixed	_	_
+45	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	46	nmod:poss	_	_
+46	tradition	tradition	NOUN	NN	Number=Sing	35	obl	_	_
+47	;	;	PUNCT	:	_	50	punct	_	_
+48	and	and	CCONJ	CC	_	50	cc	_	_
+49	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	50	nsubj	_	_
+50	are	be	VERB	VBP	_	15	conj	_	_
+51	not	not	PART	RB	_	50	advmod	_	_
+52	of	of	ADP	IN	_	54	case	_	_
+53	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	54	nmod:poss	_	_
+54	church	church	NOUN	NN	Number=Sing	50	obl	_	_
+55	,	,	PUNCT	,	_	58	punct	_	_
+56	and	and	CCONJ	CC	_	58	cc	_	_
+57	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	58	nsubj	_	_
+58	do	do	AUX	VBP	_	50	conj	_	_
+59	not	not	PART	RB	_	60	advmod	_	_
+60	believe	believe	VERB	VB	_	58	xcomp	_	_
+61	in	in	ADP	IN	_	64	case	_	_
+62	such	such	DET	PDT	_	64	det	_	_
+63	foolish	foolish	ADJ	JJ	_	64	amod	_	_
+64	traditions	tradition	NOUN	NNS	Number=Plur	60	obl	_	_
+65	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And now we know that because we are not of thy church we know that thou hast no power over us; and thou hast delivered up the judgment-seat unto Nephihah; therefore thou art not the chief judge over us.
+# sent_id = 283
+# llm_note = "judgment-seat" = 3-token compound (judgment PUNCT(-) seat); "hast" = archaic 2sg; "thou art not the chief judge" = copular NP predicate with negation; "therefore" = conjunctive adverb
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	4	nsubj	_	_
+4	know	know	VERB	VBP	_	0	root	_	_
+5	that	that	SCONJ	IN	_	14	mark	_	_
+6	because	because	SCONJ	IN	_	9	mark	_	_
+7	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	9	nsubj	_	_
+8	are	be	AUX	VBP	_	9	cop	_	_
+9	not	not	ADV	RB	_	14	advcl	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	12	nmod:poss	_	_
+12	church	church	NOUN	NN	Number=Sing	9	obl	_	_
+13	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	14	nsubj	_	_
+14	know	know	VERB	VBP	_	4	ccomp	_	_
+15	that	that	SCONJ	IN	_	19	mark	_	_
+16	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	19	nsubj	_	_
+17	hast	have	AUX	VBP	_	19	aux	_	_
+18	no	no	DET	DT	_	19	det	_	_
+19	power	power	NOUN	NN	Number=Sing	14	ccomp	_	_
+20	over	over	ADP	IN	_	21	case	_	_
+21	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1	19	nmod	_	_
+22	;	;	PUNCT	:	_	26	punct	_	_
+23	and	and	CCONJ	CC	_	26	cc	_	_
+24	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	26	nsubj	_	_
+25	hast	have	AUX	VBP	_	26	aux	_	_
+26	delivered	deliver	VERB	VBN	_	4	conj	_	_
+27	up	up	ADP	RP	_	26	compound:prt	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	judgment	judgment	NOUN	NN	Number=Sing	26	obj	_	_
+30	-	-	PUNCT	HYPH	_	31	punct	_	_
+31	seat	seat	NOUN	NN	Number=Sing	29	flat	_	_
+32	unto	unto	ADP	IN	_	33	case	_	_
+33	Nephihah	Nephihah	PROPN	NNP	Number=Sing	26	obl	_	_
+34	;	;	PUNCT	:	_	41	punct	_	_
+35	therefore	therefore	ADV	RB	_	41	advmod	_	_
+36	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	41	nsubj	_	_
+37	art	be	AUX	VBP	_	41	cop	_	_
+38	not	not	PART	RB	_	41	advmod	_	_
+39	the	the	DET	DT	_	41	det	_	_
+40	chief	chief	ADJ	JJ	_	41	amod	_	_
+41	judge	judge	NOUN	NN	Number=Sing	4	conj	_	_
+42	over	over	ADP	IN	_	43	case	_	_
+43	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1	41	nmod	_	_
+44	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Now when the people had said this, and withstood all his words, and reviled him, and spit upon him, and caused that he should be cast out of their city, he departed thence and took his journey towards the city which was called Aaron.
+# sent_id = 284
+# llm_note = "when the people had said this" = temporal advcl; "withstood...and reviled...and spit...and caused" = conjoined predicates inside advcl; "caused that" = causative+complement; "he departed thence and took his journey" = main conjoined predicates; "towards the city which was called Aaron" = goal PP
+1	Now	now	ADV	RB	_	36	advmod	_	_
+2	when	when	SCONJ	IN	_	36	mark	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	people	people	NOUN	NN	Number=Plur	6	nsubj	_	_
+5	had	have	AUX	VBD	_	6	aux	_	_
+6	said	say	VERB	VBN	_	36	advcl	_	_
+7	this	this	PRON	DT	_	6	obj	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	withstood	withstand	VERB	VBD	_	6	conj	_	_
+11	all	all	DET	DT	_	13	det	_	_
+12	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	13	nmod:poss	_	_
+13	words	word	NOUN	NNS	Number=Plur	10	obj	_	_
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	reviled	revile	VERB	VBD	_	6	conj	_	_
+17	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	16	obj	_	_
+18	,	,	PUNCT	,	_	20	punct	_	_
+19	and	and	CCONJ	CC	_	20	cc	_	_
+20	spit	spit	VERB	VBD	_	6	conj	_	_
+21	upon	upon	ADP	IN	_	22	case	_	_
+22	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	20	obl	_	_
+23	,	,	PUNCT	,	_	25	punct	_	_
+24	and	and	CCONJ	CC	_	25	cc	_	_
+25	caused	cause	VERB	VBD	_	6	conj	_	_
+26	that	that	SCONJ	IN	_	30	mark	_	_
+27	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	30	nsubj:pass	_	_
+28	should	shall	AUX	MD	_	30	aux	_	_
+29	be	be	AUX	VB	_	30	aux:pass	_	_
+30	cast	cast	VERB	VBN	_	25	ccomp	_	_
+31	out	out	ADP	RP	_	30	compound:prt	_	_
+32	of	of	ADP	IN	_	34	case	_	_
+33	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	34	nmod:poss	_	_
+34	city	city	NOUN	NN	Number=Sing	30	obl	_	_
+35	,	,	PUNCT	,	_	36	punct	_	_
+36	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	37	nsubj	_	_
+37	departed	depart	VERB	VBD	_	0	root	_	_
+38	thence	thence	ADV	RB	_	37	advmod	_	_
+39	and	and	CCONJ	CC	_	40	cc	_	_
+40	took	take	VERB	VBD	_	37	conj	_	_
+41	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	42	nmod:poss	_	_
+42	journey	journey	NOUN	NN	Number=Sing	40	obj	_	_
+43	towards	towards	ADP	IN	_	46	case	_	_
+44	the	the	DET	DT	_	46	det	_	_
+45	city	city	NOUN	NN	Number=Sing	46	compound	_	_
+46	which	which	PRON	WDT	_	40	obl	_	_
+47	was	be	AUX	VBD	_	48	aux:pass	_	_
+48	called	call	VERB	VBN	_	46	acl:relcl	_	_
+49	Aaron	Aaron	PROPN	NNP	Number=Sing	48	xcomp	_	_
+50	.	.	PUNCT	.	_	37	punct	_	_
+
+# text = And it came to pass that while he was journeying thither, being weighed down with sorrow, wading through much tribulation and anguish of soul, because of the wickedness of the people who were in the city of Ammonihah, it came to pass while Alma was thus weighed down with sorrow, behold an angel of the Lord appeared unto him, saying: Blessed art thou, Alma; therefore, lift up thy head and rejoice, for thou hast great cause to rejoice; for thou hast been faithful in keeping the commandments of God from the time which thou receivedst thy first message from him.
+# sent_id = 285
+# llm_note = Double AICTP; first AICTP (1-5) with internal while-clause + participials; second AICTP (43-46) resets; "behold" = INTJ discourse; "Blessed art thou" = inverted copular predicate; "receivedst" = archaic 2sg past; three imperatives: "lift up thy head and rejoice"; two "for" causal clauses
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	while	while	SCONJ	IN	_	10	mark	_	_
+8	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	10	nsubj	_	_
+9	was	be	AUX	VBD	_	10	aux	_	_
+10	journeying	journey	VERB	VBG	_	62	advcl	_	_
+11	thither	thither	ADV	RB	_	10	advmod	_	_
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	being	be	AUX	VBG	_	14	aux:pass	_	_
+14	weighed	weigh	VERB	VBN	_	10	advcl	_	_
+15	down	down	ADP	RP	_	14	compound:prt	_	_
+16	with	with	ADP	IN	_	17	case	_	_
+17	sorrow	sorrow	NOUN	NN	Number=Sing	14	obl	_	_
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	wading	wade	VERB	VBG	_	10	advcl	_	_
+20	through	through	ADP	IN	_	22	case	_	_
+21	much	much	ADJ	JJ	_	22	amod	_	_
+22	tribulation	tribulation	NOUN	NN	Number=Sing	19	obl	_	_
+23	and	and	CCONJ	CC	_	24	cc	_	_
+24	anguish	anguish	NOUN	NN	Number=Sing	22	conj	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	soul	soul	NOUN	NN	Number=Sing	24	nmod	_	_
+27	,	,	PUNCT	,	_	28	punct	_	_
+28	because	because	ADP	IN	_	31	case	_	_
+29	of	of	ADP	IN	_	28	fixed	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	wickedness	wickedness	NOUN	NN	Number=Sing	10	obl	_	_
+32	of	of	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	_	34	det	_	_
+34	people	people	NOUN	NN	Number=Plur	31	nmod	_	_
+35	who	who	PRON	WP	_	36	nsubj	_	_
+36	were	be	VERB	VBD	_	34	acl:relcl	_	_
+37	in	in	ADP	IN	_	40	case	_	_
+38	the	the	DET	DT	_	40	det	_	_
+39	city	city	NOUN	NN	Number=Sing	40	compound	_	_
+40	of	of	ADP	IN	_	36	obl	_	_
+41	Ammonihah	Ammonihah	PROPN	NNP	Number=Sing	40	nmod	_	_
+42	,	,	PUNCT	,	_	44	punct	_	_
+43	it	it	PRON	PRP	_	44	expl	_	_
+44	came	come	VERB	VBD	_	3	parataxis	_	_
+45	to	to	PART	TO	_	46	mark	_	_
+46	pass	pass	VERB	VB	_	44	xcomp	_	_
+47	while	while	SCONJ	IN	_	62	mark	_	_
+48	Alma	Alma	PROPN	NNP	Number=Sing	51	nsubj	_	_
+49	was	be	AUX	VBD	_	51	aux:pass	_	_
+50	thus	thus	ADV	RB	_	51	advmod	_	_
+51	weighed	weigh	VERB	VBN	_	62	advcl	_	_
+52	down	down	ADP	RP	_	51	compound:prt	_	_
+53	with	with	ADP	IN	_	54	case	_	_
+54	sorrow	sorrow	NOUN	NN	Number=Sing	51	obl	_	_
+55	,	,	PUNCT	,	_	56	punct	_	_
+56	behold	behold	INTJ	UH	_	62	discourse	_	_
+57	an	a	DET	DT	_	58	det	_	_
+58	angel	angel	NOUN	NN	Number=Sing	62	nsubj	_	_
+59	of	of	ADP	IN	_	61	case	_	_
+60	the	the	DET	DT	_	61	det	_	_
+61	Lord	Lord	PROPN	NNP	Number=Sing	58	nmod	_	_
+62	appeared	appear	VERB	VBD	_	44	ccomp	_	_
+63	unto	unto	ADP	IN	_	64	case	_	_
+64	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	62	obl	_	_
+65	,	,	PUNCT	,	_	66	punct	_	_
+66	saying	say	VERB	VBG	_	62	advcl	_	_
+67	:	:	PUNCT	:	_	68	punct	_	_
+68	Blessed	blessed	ADJ	JJ	_	71	xcomp	_	_
+69	art	be	AUX	VBP	_	71	cop	_	_
+70	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	71	nsubj	_	_
+71	,	Alma	PROPN	NNP	Number=Sing	66	ccomp	_	_
+72	Alma	,	PUNCT	,	_	71	punct	_	_
+73	;	;	PUNCT	:	_	76	punct	_	_
+74	therefore	therefore	ADV	RB	_	76	advmod	_	_
+75	,	,	PUNCT	,	_	76	punct	_	_
+76	lift	lift	VERB	VB	_	66	ccomp	_	_
+77	up	up	ADP	RP	_	76	compound:prt	_	_
+78	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	79	nmod:poss	_	_
+79	head	head	NOUN	NN	Number=Sing	76	obj	_	_
+80	and	and	CCONJ	CC	_	81	cc	_	_
+81	rejoice	rejoice	VERB	VB	_	76	conj	_	_
+82	,	,	PUNCT	,	_	87	punct	_	_
+83	for	for	SCONJ	IN	_	87	mark	_	_
+84	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	87	nsubj	_	_
+85	hast	have	AUX	VBP	_	87	aux	_	_
+86	great	great	ADJ	JJ	_	87	amod	_	_
+87	cause	cause	NOUN	NN	Number=Sing	76	advcl	_	_
+88	to	to	PART	TO	_	89	mark	_	_
+89	rejoice	rejoice	VERB	VB	_	87	xcomp	_	_
+90	;	;	PUNCT	:	_	95	punct	_	_
+91	for	for	SCONJ	IN	_	95	mark	_	_
+92	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	95	nsubj	_	_
+93	hast	have	AUX	VBP	_	95	aux	_	_
+94	been	be	AUX	VBN	_	95	aux	_	_
+95	faithful	faithful	ADJ	JJ	_	76	advcl	_	_
+96	in	in	SCONJ	IN	_	97	mark	_	_
+97	keeping	keep	VERB	VBG	_	95	xcomp	_	_
+98	the	the	DET	DT	_	99	det	_	_
+99	commandments	commandment	NOUN	NNS	Number=Plur	97	obj	_	_
+100	of	of	ADP	IN	_	101	case	_	_
+101	God	God	PROPN	NNP	Number=Sing	99	nmod	_	_
+102	from	from	ADP	IN	_	104	case	_	_
+103	the	the	DET	DT	_	104	det	_	_
+104	time	time	NOUN	NN	Number=Sing	97	obl	_	_
+105	which	which	PRON	WDT	_	107	obj	_	_
+106	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	107	nsubj	_	_
+107	receivedst	receive	VERB	VBD	_	104	acl:relcl	_	_
+108	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	110	nmod:poss	_	_
+109	first	first	ADJ	JJ	NumType=Ord	110	amod	_	_
+110	message	message	NOUN	NN	Number=Sing	107	obj	_	_
+111	from	from	ADP	IN	_	112	case	_	_
+112	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	107	obl	_	_
+113	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, I am he that delivered it unto you.
+# sent_id = 286
+# llm_note = Behold = INTJ discourse; "I am he" = copular; "that delivered it unto you" = rel clause on "he" (restrictive)
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	am	be	VERB	VBP	_	0	root	_	_
+5	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	4	xcomp	_	_
+6	that	that	PRON	WDT	_	7	nsubj	_	_
+7	delivered	deliver	VERB	VBD	_	5	acl:relcl	_	_
+8	it	it	PRON	PRP	_	7	obj	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	7	obl	_	_
+11	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And behold, I am sent to command thee that thou return to the city of Ammonihah, and preach again unto the people of the city; yea, preach unto them.
+# sent_id = 287
+# llm_note = behold = INTJ discourse; "I am sent" = passive; "to command" = purpose inf; "thee that thou return" = command[ACC+SCONJ] double complement; "preach...and preach" = conjoined imperatives; "yea" = discourse
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	behold	behold	INTJ	UH	_	6	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	6	nsubj:pass	_	_
+5	am	be	AUX	VBP	_	6	aux:pass	_	_
+6	sent	send	VERB	VBN	_	0	root	_	_
+7	to	to	PART	TO	_	8	mark	_	_
+8	command	command	VERB	VB	_	6	advcl	_	_
+9	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	8	obj	_	_
+10	that	that	SCONJ	IN	_	12	mark	_	_
+11	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	12	nsubj	_	_
+12	return	return	VERB	VB	_	8	ccomp	_	_
+13	to	to	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	_	16	det	_	_
+15	city	city	NOUN	NN	Number=Sing	16	compound	_	_
+16	of	of	ADP	IN	_	12	obl	_	_
+17	Ammonihah	Ammonihah	PROPN	NNP	Number=Sing	16	nmod	_	_
+18	,	,	PUNCT	,	_	20	punct	_	_
+19	and	and	CCONJ	CC	_	20	cc	_	_
+20	preach	preach	VERB	VB	_	12	conj	_	_
+21	again	again	ADV	RB	_	20	advmod	_	_
+22	unto	unto	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	people	people	NOUN	NN	Number=Plur	20	obl	_	_
+25	of	of	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	city	city	NOUN	NN	Number=Sing	24	nmod	_	_
+28	;	;	PUNCT	:	_	31	punct	_	_
+29	yea	yea	INTJ	UH	_	31	discourse	_	_
+30	,	,	PUNCT	,	_	29	punct	_	_
+31	preach	preach	VERB	VB	_	6	parataxis	_	_
+32	unto	unto	ADP	IN	_	33	case	_	_
+33	them	them	PRON	PRP	Case=Acc|Number=Plur|Person=3	31	obl	_	_
+34	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Yea, say unto them, except they repent the Lord God will destroy them.
+# sent_id = 288
+# llm_note = "Yea" = discourse; "say unto them" = imperative main; "except they repent" = conditional advcl (except=SCONJ); "the Lord God will destroy them" = ccomp of "say"
+1	Yea	yea	INTJ	UH	_	3	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	say	say	VERB	VB	_	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	them	them	PRON	PRP	Case=Acc|Number=Plur|Person=3	3	obl	_	_
+6	,	,	PUNCT	,	_	9	punct	_	_
+7	except	except	SCONJ	IN	_	9	mark	_	_
+8	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	9	nsubj	_	_
+9	repent	repent	VERB	VBP	_	14	advcl	_	_
+10	the	the	DET	DT	_	12	det	_	_
+11	Lord	Lord	PROPN	NNP	Number=Sing	12	compound	_	_
+12	God	God	PROPN	NNP	Number=Sing	14	nsubj	_	_
+13	will	will	AUX	MD	_	14	aux	_	_
+14	destroy	destroy	VERB	VB	_	3	ccomp	_	_
+15	them	them	PRON	PRP	Case=Acc|Number=Plur|Person=3	14	obj	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = For behold, they do study at this time that they may destroy the liberty of thy people, (for thus saith the Lord) which is contrary to the statutes, and judgments, and commandments which he has given unto his people.
+# sent_id = 289
+# llm_note = behold = INTJ; "do study" = emphatic AUX+V; "that they may destroy" = purpose advcl; "(for thus saith the Lord)" = parenthetical parataxis; "which is contrary to..." = rel clause on "liberty"; three coordinated nouns: statutes, judgments, commandments; second "which" rel clause on "commandments"
+1	For	for	SCONJ	IN	_	6	mark	_	_
+2	behold	behold	INTJ	UH	_	6	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	6	nsubj	_	_
+5	do	do	AUX	VBP	_	6	aux	_	_
+6	study	study	VERB	VB	_	0	root	_	_
+7	at	at	ADP	IN	_	9	case	_	_
+8	this	this	DET	DT	_	9	det	_	_
+9	time	time	NOUN	NN	Number=Sing	6	obl	_	_
+10	that	that	SCONJ	IN	_	13	mark	_	_
+11	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	13	nsubj	_	_
+12	may	may	AUX	MD	_	13	aux	_	_
+13	destroy	destroy	VERB	VB	_	6	advcl	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	liberty	liberty	NOUN	NN	Number=Sing	13	obj	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	18	nmod:poss	_	_
+18	people	people	NOUN	NN	Number=Plur	15	nmod	_	_
+19	,	,	PUNCT	,	_	23	punct	_	_
+20	(	(	PUNCT	-LRB-	_	23	punct	_	_
+21	for	for	SCONJ	IN	_	23	mark	_	_
+22	thus	thus	ADV	RB	_	23	advmod	_	_
+23	saith	say	VERB	VBZ	_	6	parataxis	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	Lord	Lord	PROPN	NNP	Number=Sing	23	nsubj	_	_
+26	)	)	PUNCT	-RRB-	_	23	punct	_	_
+27	which	which	PRON	WDT	_	29	nsubj	_	_
+28	is	be	AUX	VBP	_	29	cop	_	_
+29	contrary	contrary	ADJ	JJ	_	15	acl:relcl	_	_
+30	to	to	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	statutes	statute	NOUN	NNS	Number=Plur	29	obl	_	_
+33	,	,	PUNCT	,	_	35	punct	_	_
+34	and	and	CCONJ	CC	_	35	cc	_	_
+35	judgments	judgment	NOUN	NNS	Number=Plur	32	conj	_	_
+36	,	,	PUNCT	,	_	38	punct	_	_
+37	and	and	CCONJ	CC	_	38	cc	_	_
+38	commandments	commandment	NOUN	NNS	Number=Plur	32	conj	_	_
+39	which	which	PRON	WDT	_	42	obj	_	_
+40	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	42	nsubj	_	_
+41	has	have	AUX	VBZ	_	42	aux	_	_
+42	given	give	VERB	VBN	_	38	acl:relcl	_	_
+43	unto	unto	ADP	IN	_	45	case	_	_
+44	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	45	nmod:poss	_	_
+45	people	people	NOUN	NN	Number=Plur	42	obl	_	_
+46	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Now it came to pass that after Alma had received his message from the angel of the Lord he returned speedily to the land of Ammonihah.
+# sent_id = 290
+# llm_note = AICTP with "after" temporal advcl; "speedily" = manner adverb; "to the land of Ammonihah" = goal PP
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	20	mark	_	_
+7	after	after	SCONJ	IN	_	20	mark	_	_
+8	Alma	Alma	PROPN	NNP	Number=Sing	10	nsubj	_	_
+9	had	have	AUX	VBD	_	10	aux	_	_
+10	received	receive	VERB	VBN	_	20	advcl	_	_
+11	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	12	nmod:poss	_	_
+12	message	message	NOUN	NN	Number=Sing	10	obj	_	_
+13	from	from	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	_	16	det	_	_
+15	angel	angel	NOUN	NN	Number=Sing	16	compound	_	_
+16	of	of	ADP	IN	_	10	obl	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	Lord	Lord	PROPN	NNP	Number=Sing	16	nmod	_	_
+19	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	20	nsubj	_	_
+20	returned	return	VERB	VBD	_	3	ccomp	_	_
+21	speedily	speedily	ADV	RB	_	20	advmod	_	_
+22	to	to	ADP	IN	_	25	case	_	_
+23	the	the	DET	DT	_	25	det	_	_
+24	land	land	NOUN	NN	Number=Sing	25	compound	_	_
+25	of	of	ADP	IN	_	20	obl	_	_
+26	Ammonihah	Ammonihah	PROPN	NNP	Number=Sing	25	nmod	_	_
+27	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he entered the city by another way, yea, by the way which is on the south of the city of Ammonihah.
+# sent_id = 291
+# llm_note = "yea" = discourse; second "by the way" = appositive PP amplifying first; "which is on the south" = rel clause
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
+3	entered	enter	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	city	city	NOUN	NN	Number=Sing	3	obj	_	_
+6	by	by	ADP	IN	_	8	case	_	_
+7	another	another	DET	DT	_	8	det	_	_
+8	way	way	NOUN	NN	Number=Sing	3	obl	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	yea	yea	INTJ	UH	_	3	discourse	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	by	by	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	way	way	NOUN	NN	Number=Sing	3	obl	_	_
+15	which	which	PRON	WDT	_	16	nsubj	_	_
+16	is	be	VERB	VBP	_	14	acl:relcl	_	_
+17	on	on	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	south	south	NOUN	NN	Number=Sing	16	obl	_	_
+20	of	of	ADP	IN	_	23	case	_	_
+21	the	the	DET	DT	_	23	det	_	_
+22	city	city	NOUN	NN	Number=Sing	23	compound	_	_
+23	of	of	ADP	IN	_	19	nmod	_	_
+24	Ammonihah	Ammonihah	PROPN	NNP	Number=Sing	23	nmod	_	_
+25	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And as he entered the city he was an hungered, and he said to a man:
+# sent_id = 292
+# llm_note = "as he entered" = temporal advcl; "was an hungered" = archaic predicate ("an hungered" = adj phrase; an=old intensifier); colon = start of direct speech (next sentence)
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	as	as	SCONJ	IN	_	8	mark	_	_
+3	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	4	nsubj	_	_
+4	entered	enter	VERB	VBD	_	8	advcl	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	city	city	NOUN	NN	Number=Sing	4	obj	_	_
+7	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	8	nsubj	_	_
+8	was	be	VERB	VBD	_	0	root	_	_
+9	an	a	DET	DT	_	10	det	_	_
+10	hungered	hunger	ADJ	JJ	_	8	xcomp	_	_
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	14	nsubj	_	_
+14	said	say	VERB	VBD	_	8	conj	_	_
+15	to	to	ADP	IN	_	17	case	_	_
+16	a	a	DET	DT	_	17	det	_	_
+17	man	man	NOUN	NN	Number=Sing	14	obl	_	_
+18	:	:	PUNCT	:	_	14	punct	_	_
+
+# text = Will ye give to an humble servant of God something to eat?
+# sent_id = 293
+# llm_note = polar interrogative; "Will ye give" = inverted aux+subject; "to an humble servant of God" = indirect object PP; "something to eat" = indefinite NP + purpose infinitive
+1	Will	will	AUX	MD	_	3	aux	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	give	give	VERB	VB	_	0	root	_	_
+4	to	to	ADP	IN	_	7	case	_	_
+5	an	a	DET	DT	_	7	det	_	_
+6	humble	humble	ADJ	JJ	_	7	amod	_	_
+7	servant	servant	NOUN	NN	Number=Sing	3	obl	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	God	God	PROPN	NNP	Number=Sing	7	nmod	_	_
+10	something	something	PRON	NN	_	3	obj	_	_
+11	to	to	PART	TO	_	12	mark	_	_
+12	eat	eat	VERB	VB	_	10	acl	_	_
+13	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And the man said unto him: I am a Nephite, and I know that thou art a holy prophet of God, for thou art the man whom an angel said in a vision:
+# sent_id = 294
+# llm_note = "said unto him" = main; colon introduces direct speech; "I am a Nephite" = copular NP; "I know that" = cognition + complement; "thou art a holy prophet" = copular NP; "for thou art the man" = causal clause; "whom an angel said in a vision" = rel clause (whom = obj of said, cataphoric to next sentence)
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	man	man	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	said	say	VERB	VBD	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	4	obl	_	_
+7	:	:	PUNCT	:	_	4	punct	_	_
+8	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	9	nsubj	_	_
+9	am	be	VERB	VBP	_	4	ccomp	_	_
+10	a	a	DET	DT	_	11	det	_	_
+11	Nephite	Nephite	PROPN	NNP	Number=Sing	9	xcomp	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	15	nsubj	_	_
+15	know	know	VERB	VBP	_	9	conj	_	_
+16	that	that	SCONJ	IN	_	20	mark	_	_
+17	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	20	nsubj	_	_
+18	art	be	AUX	VBP	_	20	cop	_	_
+19	a	a	DET	DT	_	21	det	_	_
+20	holy	holy	ADJ	JJ	_	15	ccomp	_	_
+21	prophet	prophet	NOUN	NN	Number=Sing	20	xcomp	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	God	God	PROPN	NNP	Number=Sing	21	nmod	_	_
+24	,	,	PUNCT	,	_	29	punct	_	_
+25	for	for	SCONJ	IN	_	29	mark	_	_
+26	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	29	nsubj	_	_
+27	art	be	AUX	VBP	_	29	cop	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	man	man	NOUN	NN	Number=Sing	15	advcl	_	_
+30	whom	whom	PRON	WP	Case=Acc|Number=Sing|Person=3	33	obj	_	_
+31	an	a	DET	DT	_	32	det	_	_
+32	angel	angel	NOUN	NN	Number=Sing	33	nsubj	_	_
+33	said	say	VERB	VBD	_	29	acl:relcl	_	_
+34	in	in	ADP	IN	_	36	case	_	_
+35	a	a	DET	DT	_	36	det	_	_
+36	vision	vision	NOUN	NN	Number=Sing	33	obl	_	_
+37	:	:	PUNCT	:	_	33	punct	_	_
+
+# text = Thou shalt receive.
+# sent_id = 295
+# llm_note = cataphoric resolution of "whom an angel said...Thou shalt receive"; future modal "shalt" archaic 2sg; minimal sentence
+1	Thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	3	nsubj	_	_
+2	shalt	shall	AUX	MD	_	3	aux	_	_
+3	receive	receive	VERB	VB	_	0	root	_	_
+4	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore, go with me into my house and I will impart unto thee of my food; and I know that thou wilt be a blessing unto me and my house.
+# sent_id = 296
+# llm_note = "Therefore" = conjunctive advmod; "go...and I will impart" = imperative + conjoined indicative; "unto thee of my food" = double oblique; "thou wilt be a blessing" = copular + NP predicate; "wilt" = archaic 2sg future
+1	Therefore	therefore	ADV	RB	_	3	advmod	_	_
+2	,	,	PUNCT	,	_	3	punct	_	_
+3	go	go	VERB	VB	_	0	root	_	_
+4	with	with	ADP	IN	_	5	case	_	_
+5	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	3	obl	_	_
+6	into	into	ADP	IN	_	8	case	_	_
+7	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	8	nmod:poss	_	_
+8	house	house	NOUN	NN	Number=Sing	3	obl	_	_
+9	and	and	CCONJ	CC	_	12	cc	_	_
+10	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	12	nsubj	_	_
+11	will	will	AUX	MD	_	12	aux	_	_
+12	impart	impart	VERB	VB	_	3	conj	_	_
+13	unto	unto	ADP	IN	_	14	case	_	_
+14	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	12	obl	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	17	nmod:poss	_	_
+17	food	food	NOUN	NN	Number=Sing	12	obl	_	_
+18	;	;	PUNCT	:	_	21	punct	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	21	nsubj	_	_
+21	know	know	VERB	VBP	_	3	conj	_	_
+22	that	that	SCONJ	IN	_	26	mark	_	_
+23	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	26	nsubj	_	_
+24	wilt	will	AUX	MD	_	26	aux	_	_
+25	be	be	AUX	VB	_	26	cop	_	_
+26	a	a	DET	DT	_	21	ccomp	_	_
+27	blessing	blessing	NOUN	NN	Number=Sing	26	xcomp	_	_
+28	unto	unto	ADP	IN	_	30	case	_	_
+29	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	30	conj	_	_
+30	and	and	CCONJ	CC	_	27	obl	_	_
+31	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	32	nmod:poss	_	_
+32	house	house	NOUN	NN	Number=Sing	29	conj	_	_
+33	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that the man received him into his house; and the man was called Amulek; and he brought forth bread and meat and set before Alma.
+# sent_id = 297
+# llm_note = AICTP; three conjoined clauses: (1) man received him, (2) man was called Amulek (passive copular with name), (3) he brought forth...and set; "bread and meat" = coordinated NP objects; "set before Alma" = elided object ("it" understood)
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	man	man	NOUN	NN	Number=Sing	9	nsubj	_	_
+9	received	receive	VERB	VBD	_	3	ccomp	_	_
+10	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	9	obj	_	_
+11	into	into	ADP	IN	_	13	case	_	_
+12	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	13	nmod:poss	_	_
+13	house	house	NOUN	NN	Number=Sing	9	obl	_	_
+14	;	;	PUNCT	:	_	19	punct	_	_
+15	and	and	CCONJ	CC	_	19	cc	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	man	man	NOUN	NN	Number=Sing	19	nsubj:pass	_	_
+18	was	be	AUX	VBD	_	19	aux:pass	_	_
+19	called	call	VERB	VBN	_	9	conj	_	_
+20	Amulek	Amulek	PROPN	NNP	Number=Sing	19	xcomp	_	_
+21	;	;	PUNCT	:	_	24	punct	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	24	nsubj	_	_
+24	brought	bring	VERB	VBD	_	9	conj	_	_
+25	forth	forth	ADV	RB	_	24	advmod	_	_
+26	bread	bread	NOUN	NN	Number=Sing	24	obj	_	_
+27	and	and	CCONJ	CC	_	28	cc	_	_
+28	meat	meat	NOUN	NN	Number=Sing	26	conj	_	_
+29	and	and	CCONJ	CC	_	30	cc	_	_
+30	set	set	VERB	VBD	_	24	conj	_	_
+31	before	before	ADP	IN	_	32	case	_	_
+32	Alma	Alma	PROPN	NNP	Number=Sing	30	obl	_	_
+33	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that Alma ate bread and was filled; and he blessed Amulek and his house, and he gave thanks unto God.
+# sent_id = 298
+# llm_note = AICTP; "ate bread and was filled" = conjoined predicates (shared subject Alma); "blessed Amulek and his house" = obj coordinate; "gave thanks unto God" = idiom
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	Alma	Alma	PROPN	NNP	Number=Sing	8	nsubj	_	_
+8	ate	eat	VERB	VBD	_	3	ccomp	_	_
+9	bread	bread	NOUN	NN	Number=Sing	8	obj	_	_
+10	and	and	CCONJ	CC	_	12	cc	_	_
+11	was	be	AUX	VBD	_	12	aux:pass	_	_
+12	filled	fill	VERB	VBN	_	8	conj	_	_
+13	;	;	PUNCT	:	_	16	punct	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	16	nsubj	_	_
+16	blessed	bless	VERB	VBD	_	8	conj	_	_
+17	Amulek	Amulek	PROPN	NNP	Number=Sing	16	obj	_	_
+18	and	and	CCONJ	CC	_	20	cc	_	_
+19	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	20	nmod:poss	_	_
+20	house	house	NOUN	NN	Number=Sing	17	conj	_	_
+21	,	,	PUNCT	,	_	24	punct	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	24	nsubj	_	_
+24	gave	give	VERB	VBD	_	8	conj	_	_
+25	thanks	thanks	NOUN	NNS	Number=Plur	24	obj	_	_
+26	unto	unto	ADP	IN	_	27	case	_	_
+27	God	God	PROPN	NNP	Number=Sing	24	obl	_	_
+28	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And after he had eaten and was filled he said unto Amulek: I am Alma, and am the high priest over the church of God throughout the land.
+# sent_id = 299
+# llm_note = "after he had eaten and was filled" = temporal advcl; "said unto Amulek" = main; "I am Alma" = copular identity; "and am the high priest" = conjoined copular (shared subject I); "over the church of God" = PP modifier on priest; "throughout the land" = obl
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	after	after	SCONJ	IN	_	10	mark	_	_
+3	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	5	nsubj	_	_
+4	had	have	AUX	VBD	_	5	aux	_	_
+5	eaten	eat	VERB	VBN	_	10	advcl	_	_
+6	and	and	CCONJ	CC	_	8	cc	_	_
+7	was	be	AUX	VBD	_	8	aux:pass	_	_
+8	filled	fill	VERB	VBN	_	5	conj	_	_
+9	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	10	nsubj	_	_
+10	said	say	VERB	VBD	_	0	root	_	_
+11	unto	unto	ADP	IN	_	12	case	_	_
+12	Amulek	Amulek	PROPN	NNP	Number=Sing	10	obl	_	_
+13	:	:	PUNCT	:	_	10	punct	_	_
+14	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	15	nsubj	_	_
+15	am	be	VERB	VBP	_	10	ccomp	_	_
+16	Alma	Alma	PROPN	NNP	Number=Sing	15	xcomp	_	_
+17	,	,	PUNCT	,	_	21	punct	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	am	be	AUX	VBP	_	21	cop	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	high	high	ADJ	JJ	_	15	conj	_	_
+22	priest	priest	NOUN	NN	Number=Sing	21	xcomp	_	_
+23	over	over	ADP	IN	_	26	case	_	_
+24	the	the	DET	DT	_	26	det	_	_
+25	church	church	NOUN	NN	Number=Sing	26	compound	_	_
+26	of	of	ADP	IN	_	22	nmod	_	_
+27	God	God	PROPN	NNP	Number=Sing	26	nmod	_	_
+28	throughout	throughout	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	land	land	NOUN	NN	Number=Sing	22	obl	_	_
+31	.	.	PUNCT	.	_	10	punct	_	_
+

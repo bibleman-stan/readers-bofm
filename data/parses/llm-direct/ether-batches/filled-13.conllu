@@ -1,0 +1,342 @@
+# text = And accordingly the people were gathered together.
+# sent_id = 180
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	accordingly	accordingly	ADV	RB	_	6	advmod	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	people	people	NOUN	NNS	Number=Plur	6	nsubj:pass	_	_
+5	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	aux:pass	_	_
+6	gathered	gather	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+7	together	together	ADV	RB	_	6	advmod	_	_
+8	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Now the number of the sons and the daughters of the brother of Jared were twenty and two souls; and the number of sons and daughters of Jared were twelve, he having four sons.
+# sent_id = 181
+1	Now	now	ADV	RB	_	15	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	number	number	NOUN	NN	Number=Sing	15	nsubj	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	sons	son	NOUN	NNS	Number=Plur	3	nmod	_	_
+7	and	and	CCONJ	CC	_	9	cc	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	daughters	daughter	NOUN	NNS	Number=Plur	6	conj	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	brother	brother	NOUN	NN	Number=Sing	6	nmod	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Jared	Jared	PROPN	NNP	Number=Sing	12	nmod	_	_
+15	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+16	twenty	twenty	NUM	CD	NumType=Card	15	xcomp	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	two	two	NUM	CD	NumType=Card	16	conj	_	_
+19	souls	soul	NOUN	NNS	Number=Plur	16	nmod	_	_
+20	;	;	PUNCT	:	_	30	punct	_	_
+21	and	and	CCONJ	CC	_	30	cc	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	number	number	NOUN	NN	Number=Sing	30	nsubj	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	sons	son	NOUN	NNS	Number=Plur	23	nmod	_	_
+26	and	and	CCONJ	CC	_	27	cc	_	_
+27	daughters	daughter	NOUN	NNS	Number=Plur	25	conj	_	_
+28	of	of	ADP	IN	_	29	case	_	_
+29	Jared	Jared	PROPN	NNP	Number=Sing	23	nmod	_	_
+30	were	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	conj	_	_
+31	twelve	twelve	NUM	CD	NumType=Card	30	xcomp	_	_
+32	,	,	PUNCT	,	_	34	punct	_	_
+33	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	34	nsubj	_	_
+34	having	have	VERB	VBG	VerbForm=Part	30	advcl	_	_
+35	four	four	NUM	CD	NumType=Card	36	nummod	_	_
+36	sons	son	NOUN	NNS	Number=Plur	34	obj	_	_
+37	.	.	PUNCT	.	_	15	punct	_	_
+
+# text = And it came to pass that they did number their people; and after that they had numbered them, they did desire of them the things which they would that they should do before they went down to their graves.
+# sent_id = 182
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Number=Sing|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	9	nsubj	_	_
+8	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	aux	_	_
+9	number	number	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+10	their	they	PRON	PRP$	Number=Plur|Poss=Yes|PronType=Prs	11	nmod:poss	_	_
+11	people	people	NOUN	NNS	Number=Plur	9	obj	_	_
+12	;	;	PUNCT	:	_	23	punct	_	_
+13	and	and	CCONJ	CC	_	23	cc	_	_
+14	after	after	SCONJ	IN	_	18	mark	_	_
+15	that	that	SCONJ	IN	_	14	fixed	_	_
+16	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	18	nsubj	_	_
+17	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	18	aux	_	_
+18	numbered	number	VERB	VBN	Tense=Past|VerbForm=Part	23	advcl	_	_
+19	them	they	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	18	obj	_	_
+20	,	,	PUNCT	,	_	23	punct	_	_
+21	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	23	nsubj	_	_
+22	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	aux	_	_
+23	desire	desire	VERB	VB	VerbForm=Inf	9	conj	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	them	they	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	23	obl	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	things	thing	NOUN	NNS	Number=Plur	23	obj	_	_
+28	which	which	PRON	WDT	PronType=Rel	34	obj	_	_
+29	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	30	nsubj	_	_
+30	would	would	AUX	MD	VerbForm=Fin	27	acl:relcl	_	_
+31	that	that	SCONJ	IN	_	34	mark	_	_
+32	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	34	nsubj	_	_
+33	should	should	AUX	MD	VerbForm=Fin	34	aux	_	_
+34	do	do	VERB	VB	VerbForm=Inf	30	ccomp	_	_
+35	before	before	SCONJ	IN	_	37	mark	_	_
+36	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	37	nsubj	_	_
+37	went	go	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	34	advcl	_	_
+38	down	down	ADV	RB	_	37	advmod	_	_
+39	to	to	ADP	IN	_	41	case	_	_
+40	their	they	PRON	PRP$	Number=Plur|Poss=Yes|PronType=Prs	41	nmod:poss	_	_
+41	graves	grave	NOUN	NNS	Number=Plur	37	obl	_	_
+42	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that the people desired of them that they should anoint one of their sons to be a king over them.
+# sent_id = 183
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Number=Sing|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	people	people	NOUN	NNS	Number=Plur	9	nsubj	_	_
+9	desired	desire	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	them	they	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	9	obl	_	_
+12	that	that	SCONJ	IN	_	15	mark	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	15	nsubj	_	_
+14	should	should	AUX	MD	VerbForm=Fin	15	aux	_	_
+15	anoint	anoint	VERB	VB	VerbForm=Inf	9	ccomp	_	_
+16	one	one	NUM	CD	NumType=Card	15	obj	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	their	they	PRON	PRP$	Number=Plur|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+19	sons	son	NOUN	NNS	Number=Plur	16	nmod	_	_
+20	to	to	PART	TO	_	21	mark	_	_
+21	be	be	AUX	VB	VerbForm=Inf	15	xcomp	_	_
+22	a	a	DET	DT	_	23	det	_	_
+23	king	king	NOUN	NN	Number=Sing	21	xcomp	_	_
+24	over	over	ADP	IN	_	25	case	_	_
+25	them	they	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	23	nmod	_	_
+26	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now behold, this was grievous unto them.
+# sent_id = 184
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	now	now	ADV	RB	_	7	advmod	_	_
+3	behold	behold	VERB	VB	Mood=Imp|VerbForm=Fin	7	discourse	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	this	this	PRON	DT	Number=Sing|PronType=Dem	7	nsubj	_	_
+6	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	7	cop	_	_
+7	grievous	grievous	ADJ	JJ	_	0	root	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	them	they	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	7	obl	_	_
+10	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And the brother of Jared said unto them:
+# sent_id = 185
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	brother	brother	NOUN	NN	Number=Sing	6	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	Jared	Jared	PROPN	NNP	Number=Sing	3	nmod	_	_
+6	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	them	they	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	6	obl	_	_
+9	:	:	PUNCT	:	_	6	punct	_	_
+
+# text = Surely this thing leadeth into captivity.
+# sent_id = 186
+1	Surely	surely	ADV	RB	_	4	advmod	_	_
+2	this	this	DET	DT	Number=Sing|PronType=Dem	3	det	_	_
+3	thing	thing	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	leadeth	lead	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	into	into	ADP	IN	_	6	case	_	_
+6	captivity	captivity	NOUN	NN	Number=Sing	4	obl	_	_
+7	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = But Jared said unto his brother: Suffer them that they may have a king.
+# sent_id = 187
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	Jared	Jared	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	unto	unto	ADP	IN	_	6	case	_	_
+5	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	nmod:poss	_	_
+6	brother	brother	NOUN	NN	Number=Sing	3	obl	_	_
+7	:	:	PUNCT	:	_	8	punct	_	_
+8	Suffer	suffer	VERB	VB	Mood=Imp|VerbForm=Fin	3	ccomp	_	_
+9	them	they	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	8	obj	_	_
+10	that	that	SCONJ	IN	_	13	mark	_	_
+11	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	13	nsubj	_	_
+12	may	may	AUX	MD	VerbForm=Fin	13	aux	_	_
+13	have	have	VERB	VB	VerbForm=Inf	8	advcl	_	_
+14	a	a	DET	DT	_	15	det	_	_
+15	king	king	NOUN	NN	Number=Sing	13	obj	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And therefore he said unto them:
+# sent_id = 188
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	therefore	therefore	ADV	RB	_	4	advmod	_	_
+3	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	4	nsubj	_	_
+4	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	them	they	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	4	obl	_	_
+7	:	:	PUNCT	:	_	4	punct	_	_
+
+# text = Choose ye out from among our sons a king, even whom ye will.
+# sent_id = 189
+1	Choose	choose	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	1	nsubj	_	_
+3	out	out	ADV	RB	_	1	advmod	_	_
+4	from	from	ADP	IN	_	6	case	_	_
+5	among	among	ADP	IN	_	4	fixed	_	_
+6	our	we	PRON	PRP$	Number=Plur|Poss=Yes|PronType=Prs	1	obl	_	_
+7	sons	son	NOUN	NNS	Number=Plur	6	nmod	_	_
+8	a	a	DET	DT	_	9	det	_	_
+9	king	king	NOUN	NN	Number=Sing	1	obj	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	even	even	ADV	RB	_	12	advmod	_	_
+12	whom	whom	PRON	WP	Case=Acc|PronType=Rel	14	obj	_	_
+13	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	14	nsubj	_	_
+14	will	will	AUX	MD	VerbForm=Fin	9	acl:relcl	_	_
+15	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = And it came to pass that they chose even the firstborn of the brother of Jared; and his name was Pagag.
+# sent_id = 190
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Number=Sing|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	8	nsubj	_	_
+8	chose	choose	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	even	even	ADV	RB	_	11	advmod	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	firstborn	firstborn	NOUN	NN	Number=Sing	8	obj	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	brother	brother	NOUN	NN	Number=Sing	11	nmod	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	Jared	Jared	PROPN	NNP	Number=Sing	14	nmod	_	_
+17	;	;	PUNCT	:	_	21	punct	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+20	name	name	NOUN	NN	Number=Sing	21	nsubj	_	_
+21	was	be	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	parataxis	_	_
+22	Pagag	Pagag	PROPN	NNP	Number=Sing	21	xcomp	_	_
+23	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that he refused and would not be their king.
+# sent_id = 191
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Number=Sing|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	8	nsubj	_	_
+8	refused	refuse	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	and	and	CCONJ	CC	_	13	cc	_	_
+10	would	would	AUX	MD	VerbForm=Fin	13	aux	_	_
+11	not	not	PART	RB	_	13	advmod	_	_
+12	be	be	AUX	VB	VerbForm=Inf	13	cop	_	_
+13	their	they	PRON	PRP$	Number=Plur|Poss=Yes|PronType=Prs	8	conj	_	_
+14	king	king	NOUN	NN	Number=Sing	13	xcomp	_	_
+15	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And the people would that his father should constrain him, but his father would not; and he commanded them that they should constrain no man to be their king.
+# sent_id = 192
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	people	people	NOUN	NNS	Number=Plur	4	nsubj	_	_
+4	would	would	AUX	MD	VerbForm=Fin	0	root	_	_
+5	that	that	SCONJ	IN	_	9	mark	_	_
+6	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	father	father	NOUN	NN	Number=Sing	9	nsubj	_	_
+8	should	should	AUX	MD	VerbForm=Fin	9	aux	_	_
+9	constrain	constrain	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+10	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|PronType=Prs	9	obj	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	but	but	CCONJ	CC	_	15	cc	_	_
+13	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	14	nmod:poss	_	_
+14	father	father	NOUN	NN	Number=Sing	15	nsubj	_	_
+15	would	would	AUX	MD	VerbForm=Fin	4	conj	_	_
+16	not	not	PART	RB	_	15	advmod	_	_
+17	;	;	PUNCT	:	_	20	punct	_	_
+18	and	and	CCONJ	CC	_	20	cc	_	_
+19	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs	20	nsubj	_	_
+20	commanded	command	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	conj	_	_
+21	them	they	PRON	PRP	Case=Acc|Number=Plur|PronType=Prs	20	obj	_	_
+22	that	that	SCONJ	IN	_	25	mark	_	_
+23	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	25	nsubj	_	_
+24	should	should	AUX	MD	VerbForm=Fin	25	aux	_	_
+25	constrain	constrain	VERB	VB	VerbForm=Inf	20	ccomp	_	_
+26	no	no	DET	DT	_	27	det	_	_
+27	man	man	NOUN	NN	Number=Sing	25	obj	_	_
+28	to	to	PART	TO	_	29	mark	_	_
+29	be	be	AUX	VB	VerbForm=Inf	25	xcomp	_	_
+30	their	they	PRON	PRP$	Number=Plur|Poss=Yes|PronType=Prs	31	nmod:poss	_	_
+31	king	king	NOUN	NN	Number=Sing	29	xcomp	_	_
+32	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that they chose all the brothers of Pagag, and they would not.
+# sent_id = 193
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Number=Sing|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	8	nsubj	_	_
+8	chose	choose	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	all	all	DET	PDT	_	11	det:predet	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	brothers	brother	NOUN	NNS	Number=Plur	8	obj	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	Pagag	Pagag	PROPN	NNP	Number=Sing	11	nmod	_	_
+14	,	,	PUNCT	,	_	17	punct	_	_
+15	and	and	CCONJ	CC	_	17	cc	_	_
+16	they	they	PRON	PRP	Case=Nom|Number=Plur|PronType=Prs	17	nsubj	_	_
+17	would	would	AUX	MD	VerbForm=Fin	8	conj	_	_
+18	not	not	PART	RB	_	17	advmod	_	_
+19	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that neither would the sons of Jared, even all save it were one; and Orihah was anointed to be king over the people.
+# sent_id = 194
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Number=Sing|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	neither	neither	ADV	RB	_	8	advmod	_	_
+8	would	would	AUX	MD	VerbForm=Fin	5	ccomp	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	sons	son	NOUN	NNS	Number=Plur	8	nsubj	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	Jared	Jared	PROPN	NNP	Number=Sing	10	nmod	_	_
+13	,	,	PUNCT	,	_	15	punct	_	_
+14	even	even	ADV	RB	_	15	advmod	_	_
+15	all	all	DET	DT	_	10	appos	_	_
+16	save	save	SCONJ	IN	_	19	mark	_	_
+17	it	it	PRON	PRP	Number=Sing|PronType=Prs	19	nsubj	_	_
+18	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	19	cop	_	_
+19	one	one	NUM	CD	NumType=Card	8	advcl	_	_
+20	;	;	PUNCT	:	_	24	punct	_	_
+21	and	and	CCONJ	CC	_	24	cc	_	_
+22	Orihah	Orihah	PROPN	NNP	Number=Sing	24	nsubj:pass	_	_
+23	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	24	aux:pass	_	_
+24	anointed	anoint	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	8	conj	_	_
+25	to	to	PART	TO	_	26	mark	_	_
+26	be	be	AUX	VB	VerbForm=Inf	24	xcomp	_	_
+27	king	king	NOUN	NN	Number=Sing	26	xcomp	_	_
+28	over	over	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	people	people	NOUN	NNS	Number=Plur	27	nmod	_	_
+31	.	.	PUNCT	.	_	3	punct	_	_
+

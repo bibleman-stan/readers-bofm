@@ -1,0 +1,893 @@
+# text = And because he had fallen from heaven, and had become miserable forever, he sought also the misery of all mankind.
+# sent_id = 75
+1	And	and	CCONJ	CC	_	16	cc	_	_
+2	because	because	SCONJ	IN	_	5	mark	_	_
+3	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+4	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux	_	_
+5	fallen	fall	VERB	VBN	VerbForm=Part	16	advcl	_	_
+6	from	from	ADP	IN	_	7	case	_	_
+7	heaven	heaven	NOUN	NN	Number=Sing	5	obl	_	_
+8	,	,	PUNCT	,	_	5	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	aux	_	_
+11	become	become	VERB	VBN	VerbForm=Part	5	conj	_	_
+12	miserable	miserable	ADJ	JJ	Degree=Pos	11	xcomp	_	_
+13	forever	forever	ADV	RB	_	11	advmod	_	_
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+16	sought	seek	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+17	also	also	ADV	RB	_	16	advmod	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	misery	misery	NOUN	NN	Number=Sing	16	obj	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	all	all	DET	DT	_	22	det	_	_
+22	mankind	mankind	NOUN	NN	Number=Sing	19	nmod	_	_
+23	.	.	PUNCT	.	_	16	punct	_	_
+
+# text = Wherefore, he said unto Eve, yea, even that old serpent, who is the devil, who is the father of all lies, wherefore he said: Partake of the forbidden fruit, and ye shall not die, but ye shall be as God, knowing good and evil.
+# sent_id = 76
+# llm_note = appositive serpent; two acl:relcl; parataxis; Partake=ccomp; knowing=advcl
+1	Wherefore	wherefore	ADV	RB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	Eve	Eve	PROPN	NNP	Number=Sing	4	obl	_	_
+7	,	,	PUNCT	,	_	13	punct	_	_
+8	yea	yea	INTJ	UH	_	13	discourse	_	_
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	even	even	ADV	RB	_	13	advmod	_	_
+11	that	that	DET	DT	Number=Sing|PronType=Dem	13	det	_	_
+12	old	old	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	serpent	serpent	NOUN	NN	Number=Sing	3	appos	_	_
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	who	who	PRON	WP	PronType=Rel	16	nsubj	_	_
+16	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	devil	devil	NOUN	NN	Number=Sing	16	xcomp	_	_
+19	,	,	PUNCT	,	_	16	punct	_	_
+20	who	who	PRON	WP	PronType=Rel	21	nsubj	_	_
+21	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	father	father	NOUN	NN	Number=Sing	21	xcomp	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	all	all	DET	DT	_	26	det	_	_
+26	lies	lie	NOUN	NNS	Number=Plur	23	nmod	_	_
+27	,	,	PUNCT	,	_	4	punct	_	_
+28	wherefore	wherefore	ADV	RB	_	30	advmod	_	_
+29	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	30	nsubj	_	_
+30	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	parataxis	_	_
+31	:	:	PUNCT	:	_	30	punct	_	_
+32	Partake	partake	VERB	VB	Mood=Imp|VerbForm=Fin	30	ccomp	_	_
+33	of	of	ADP	IN	_	36	case	_	_
+34	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+35	forbidden	forbid	VERB	VBN	VerbForm=Part	36	amod	_	_
+36	fruit	fruit	NOUN	NN	Number=Sing	32	obl	_	_
+37	,	,	PUNCT	,	_	32	punct	_	_
+38	and	and	CCONJ	CC	_	42	cc	_	_
+39	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	42	nsubj	_	_
+40	shall	shall	AUX	MD	VerbForm=Fin	42	aux	_	_
+41	not	not	PART	RB	_	42	advmod	_	_
+42	die	die	VERB	VB	VerbForm=Inf	32	conj	_	_
+43	,	,	PUNCT	,	_	42	punct	_	_
+44	but	but	CCONJ	CC	_	47	cc	_	_
+45	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	47	nsubj	_	_
+46	shall	shall	AUX	MD	VerbForm=Fin	47	aux	_	_
+47	be	be	VERB	VB	VerbForm=Inf	42	conj	_	_
+48	as	as	ADP	IN	_	49	case	_	_
+49	God	God	PROPN	NNP	Number=Sing	47	obl	_	_
+50	,	,	PUNCT	,	_	47	punct	_	_
+51	knowing	know	VERB	VBG	VerbForm=Part	47	advcl	_	_
+52	good	good	NOUN	NN	Number=Sing	51	obj	_	_
+53	and	and	CCONJ	CC	_	54	cc	_	_
+54	evil	evil	NOUN	NN	Number=Sing	52	conj	_	_
+55	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And after Adam and Eve had partaken of the forbidden fruit they were driven out of the garden of Eden, to till the earth.
+# sent_id = 77
+1	And	and	CCONJ	CC	_	14	cc	_	_
+2	after	after	SCONJ	IN	_	7	mark	_	_
+3	Adam	Adam	PROPN	NNP	Number=Sing	7	nsubj	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	Eve	Eve	PROPN	NNP	Number=Sing	3	conj	_	_
+6	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	7	aux	_	_
+7	partaken	partake	VERB	VBN	VerbForm=Part	14	advcl	_	_
+8	of	of	ADP	IN	_	11	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+10	forbidden	forbid	VERB	VBN	VerbForm=Part	11	amod	_	_
+11	fruit	fruit	NOUN	NN	Number=Sing	7	obl	_	_
+12	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	14	nsubj:pass	_	_
+13	were	be	AUX	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	_	_
+14	driven	drive	VERB	VBN	VerbForm=Part	0	root	_	_
+15	out	out	ADP	IN	_	14	compound:prt	_	_
+16	of	of	ADP	IN	_	15	fixed	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	garden	garden	NOUN	NN	Number=Sing	14	obl	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Eden	Eden	PROPN	NNP	Number=Sing	18	nmod	_	_
+21	,	,	PUNCT	,	_	14	punct	_	_
+22	to	to	PART	TO	_	23	mark	_	_
+23	till	till	VERB	VB	VerbForm=Inf	14	advcl	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	earth	earth	NOUN	NN	Number=Sing	23	obj	_	_
+26	.	.	PUNCT	.	_	14	punct	_	_
+
+# text = And they have brought forth children; yea, even the family of all the earth.
+# sent_id = 78
+# llm_note = yea even the family of all the earth = appositive of children
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	have	have	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	brought	bring	VERB	VBN	VerbForm=Part	0	root	_	_
+5	forth	forth	ADV	RP	_	4	compound:prt	_	_
+6	children	child	NOUN	NNS	Number=Plur	4	obj	_	_
+7	;	;	PUNCT	:	_	4	punct	_	_
+8	yea	yea	INTJ	UH	_	12	discourse	_	_
+9	,	,	PUNCT	,	_	12	punct	_	_
+10	even	even	ADV	RB	_	12	advmod	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	family	family	NOUN	NN	Number=Sing	6	appos	_	_
+13	of	of	ADP	IN	_	16	case	_	_
+14	all	all	DET	DT	_	16	det	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	earth	earth	NOUN	NN	Number=Sing	12	nmod	_	_
+17	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And the days of the children of men were prolonged, according to the will of God, that they might repent while in the flesh; wherefore, their state became a state of probation, and their time was lengthened, according to the commandments which the Lord God gave unto the children of men.
+# sent_id = 79
+# llm_note = prolonged=root passive; "according to the will of God" = obl; "that they might repent" = advcl purpose; "while in the flesh" = advcl temporal (elliptical); wherefore introduces second clause; "their state became a state of probation" = conj coord; "their time was lengthened" = conj; "according to the commandments" = obl; "which the Lord God gave" = acl:relcl
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	days	day	NOUN	NNS	Number=Plur	10	nsubj:pass	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	children	child	NOUN	NNS	Number=Plur	3	nmod	_	_
+7	of	of	ADP	IN	_	8	case	_	_
+8	men	man	NOUN	NNS	Number=Plur	6	nmod	_	_
+9	were	be	AUX	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	_	_
+10	prolonged	prolong	VERB	VBN	VerbForm=Part	0	root	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	according	according	ADP	IN	_	15	case	_	_
+13	to	to	ADP	IN	_	12	fixed	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	will	will	NOUN	NN	Number=Sing	10	obl	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	God	God	PROPN	NNP	Number=Sing	15	nmod	_	_
+18	,	,	PUNCT	,	_	10	punct	_	_
+19	that	that	SCONJ	IN	_	22	mark	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_
+21	might	might	AUX	MD	VerbForm=Fin	22	aux	_	_
+22	repent	repent	VERB	VB	VerbForm=Inf	10	advcl	_	_
+23	while	while	SCONJ	IN	_	26	mark	_	_
+24	in	in	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	flesh	flesh	NOUN	NN	Number=Sing	22	advcl	_	_
+27	;	;	PUNCT	:	_	10	punct	_	_
+28	wherefore	wherefore	ADV	RB	_	32	advmod	_	_
+29	,	,	PUNCT	,	_	32	punct	_	_
+30	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	31	nmod:poss	_	_
+31	state	state	NOUN	NN	Number=Sing	32	nsubj	_	_
+32	became	become	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_
+33	a	a	DET	DT	Definite=Ind|PronType=Art	34	det	_	_
+34	state	state	NOUN	NN	Number=Sing	32	xcomp	_	_
+35	of	of	ADP	IN	_	36	case	_	_
+36	probation	probation	NOUN	NN	Number=Sing	34	nmod	_	_
+37	,	,	PUNCT	,	_	32	punct	_	_
+38	and	and	CCONJ	CC	_	42	cc	_	_
+39	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	40	nmod:poss	_	_
+40	time	time	NOUN	NN	Number=Sing	42	nsubj:pass	_	_
+41	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	42	aux:pass	_	_
+42	lengthened	lengthen	VERB	VBN	VerbForm=Part	32	conj	_	_
+43	,	,	PUNCT	,	_	42	punct	_	_
+44	according	according	ADP	IN	_	47	case	_	_
+45	to	to	ADP	IN	_	44	fixed	_	_
+46	the	the	DET	DT	Definite=Def|PronType=Art	47	det	_	_
+47	commandments	commandment	NOUN	NNS	Number=Plur	42	obl	_	_
+48	which	which	PRON	WDT	_	52	obj	_	_
+49	the	the	DET	DT	Definite=Def|PronType=Art	51	det	_	_
+50	Lord	Lord	PROPN	NNP	Number=Sing	51	compound	_	_
+51	God	God	PROPN	NNP	Number=Sing	52	nsubj	_	_
+52	gave	give	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	47	acl:relcl	_	_
+53	unto	unto	ADP	IN	_	55	case	_	_
+54	the	the	DET	DT	Definite=Def|PronType=Art	55	det	_	_
+55	children	child	NOUN	NNS	Number=Plur	52	obl	_	_
+56	of	of	ADP	IN	_	57	case	_	_
+57	men	man	NOUN	NNS	Number=Plur	55	nmod	_	_
+58	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = For he gave commandment that all men must repent; for he showed unto all men that they were lost, because of the transgression of their parents.
+# sent_id = 80
+# llm_note = gave=root; "commandment that all men must repent" = obj + ccomp (volition frame); second "for" clause = causal advcl; showed=VERB; "that they were lost" = ccomp of showed; "because of the transgression" = because-of ADP fixed + obl
+1	For	for	SCONJ	IN	_	3	mark	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	gave	give	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	commandment	commandment	NOUN	NN	Number=Sing	3	obj	_	_
+5	that	that	SCONJ	IN	_	9	mark	_	_
+6	all	all	DET	DT	_	7	det	_	_
+7	men	man	NOUN	NNS	Number=Plur	9	nsubj	_	_
+8	must	must	AUX	MD	VerbForm=Fin	9	aux	_	_
+9	repent	repent	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+10	;	;	PUNCT	:	_	3	punct	_	_
+11	for	for	SCONJ	IN	_	13	mark	_	_
+12	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+13	showed	show	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
+14	unto	unto	ADP	IN	_	16	case	_	_
+15	all	all	DET	DT	_	16	det	_	_
+16	men	man	NOUN	NNS	Number=Plur	13	obl	_	_
+17	that	that	SCONJ	IN	_	20	mark	_	_
+18	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	20	nsubj	_	_
+19	were	be	AUX	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	20	cop	_	_
+20	lost	lost	ADJ	JJ	Degree=Pos	13	ccomp	_	_
+21	,	,	PUNCT	,	_	13	punct	_	_
+22	because	because	ADP	IN	_	25	case	_	_
+23	of	of	ADP	IN	_	22	fixed	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	transgression	transgression	NOUN	NN	Number=Sing	20	obl	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	28	nmod:poss	_	_
+28	parents	parent	NOUN	NNS	Number=Plur	25	nmod	_	_
+29	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now, behold, if Adam had not transgressed he would not have fallen, but he would have remained in the garden of Eden.
+# sent_id = 81
+# llm_note = counterfactual conditional; behold=discourse; "if Adam had not transgressed" = advcl; "he would not have fallen" = root; "but he would have remained" = conj adversative
+1	And	and	CCONJ	CC	_	15	cc	_	_
+2	now	now	ADV	RB	_	15	advmod	_	_
+3	,	,	PUNCT	,	_	15	punct	_	_
+4	behold	behold	INTJ	UH	_	15	discourse	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	if	if	SCONJ	IN	_	10	mark	_	_
+7	Adam	Adam	PROPN	NNP	Number=Sing	10	nsubj	_	_
+8	had	have	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
+9	not	not	PART	RB	_	10	advmod	_	_
+10	transgressed	transgress	VERB	VBN	VerbForm=Part	15	advcl	_	_
+11	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+12	would	would	AUX	MD	VerbForm=Fin	15	aux	_	_
+13	not	not	PART	RB	_	15	advmod	_	_
+14	have	have	AUX	VB	VerbForm=Inf	15	aux	_	_
+15	fallen	fall	VERB	VBN	VerbForm=Part	0	root	_	_
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	but	but	CCONJ	CC	_	21	cc	_	_
+18	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+19	would	would	AUX	MD	VerbForm=Fin	21	aux	_	_
+20	have	have	AUX	VB	VerbForm=Inf	21	aux	_	_
+21	remained	remain	VERB	VBN	VerbForm=Part	15	conj	_	_
+22	in	in	ADP	IN	_	25	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+24	garden	garden	NOUN	NN	Number=Sing	21	obl	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	Eden	Eden	PROPN	NNP	Number=Sing	24	nmod	_	_
+27	.	.	PUNCT	.	_	15	punct	_	_
+
+# text = And all things which were created must have remained in the same state in which they were after they were created; and they must have remained forever, and had no end.
+# sent_id = 82
+# llm_note = "all things which were created" = nsubj + acl:relcl; "must have remained" = root; "in the same state" = obl; "in which they were" = acl:relcl on state; "after they were created" = advcl; second clause = conj via "and"; "had no end" = conj of remained
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	all	all	DET	DT	_	3	det	_	_
+3	things	thing	NOUN	NNS	Number=Plur	9	nsubj	_	_
+4	which	which	PRON	WDT	_	6	nsubj:pass	_	_
+5	were	be	AUX	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	_	_
+6	created	create	VERB	VBN	VerbForm=Part	3	acl:relcl	_	_
+7	must	must	AUX	MD	VerbForm=Fin	9	aux	_	_
+8	have	have	AUX	VB	VerbForm=Inf	9	aux	_	_
+9	remained	remain	VERB	VBN	VerbForm=Part	0	root	_	_
+10	in	in	ADP	IN	_	13	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+12	same	same	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	state	state	NOUN	NN	Number=Sing	9	obl	_	_
+14	in	in	ADP	IN	_	17	case	_	_
+15	which	which	PRON	WDT	_	17	nsubj	_	_
+16	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	17	nsubj	_	_
+17	were	be	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	13	acl:relcl	_	_
+18	after	after	SCONJ	IN	_	21	mark	_	_
+19	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	21	nsubj:pass	_	_
+20	were	be	AUX	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	_	_
+21	created	create	VERB	VBN	VerbForm=Part	17	advcl	_	_
+22	;	;	PUNCT	:	_	9	punct	_	_
+23	and	and	CCONJ	CC	_	27	cc	_	_
+24	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	27	nsubj	_	_
+25	must	must	AUX	MD	VerbForm=Fin	27	aux	_	_
+26	have	have	AUX	VB	VerbForm=Inf	27	aux	_	_
+27	remained	remain	VERB	VBN	VerbForm=Part	9	conj	_	_
+28	forever	forever	ADV	RB	_	27	advmod	_	_
+29	,	,	PUNCT	,	_	27	punct	_	_
+30	and	and	CCONJ	CC	_	32	cc	_	_
+31	had	have	AUX	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	32	aux	_	_
+32	no	no	DET	DT	PronType=Neg	27	conj	_	_
+33	end	end	NOUN	NN	Number=Sing	32	obj	_	_
+34	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And they would have had no children; wherefore they would have remained in a state of innocence, having no joy, for they knew no misery; doing no good, for they knew no sin.
+# sent_id = 83
+# llm_note = "would have had no children" = root; "wherefore they would have remained" = conj; "having no joy" = advcl participial; "for they knew no misery" = advcl causal; "doing no good" = conj participial of having; "for they knew no sin" = advcl causal
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+3	would	would	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	have	have	AUX	VB	VerbForm=Inf	5	aux	_	_
+5	had	have	VERB	VBN	VerbForm=Part	0	root	_	_
+6	no	no	DET	DT	PronType=Neg	7	det	_	_
+7	children	child	NOUN	NNS	Number=Plur	5	obj	_	_
+8	;	;	PUNCT	:	_	5	punct	_	_
+9	wherefore	wherefore	ADV	RB	_	13	advmod	_	_
+10	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	13	nsubj	_	_
+11	would	would	AUX	MD	VerbForm=Fin	13	aux	_	_
+12	have	have	AUX	VB	VerbForm=Inf	13	aux	_	_
+13	remained	remain	VERB	VBN	VerbForm=Part	5	conj	_	_
+14	in	in	ADP	IN	_	17	case	_	_
+15	a	a	DET	DT	Definite=Ind|PronType=Art	17	det	_	_
+16	state	state	NOUN	NN	Number=Sing	13	obl	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	innocence	innocence	NOUN	NN	Number=Sing	16	nmod	_	_
+19	,	,	PUNCT	,	_	13	punct	_	_
+20	having	have	VERB	VBG	VerbForm=Part	13	advcl	_	_
+21	no	no	DET	DT	PronType=Neg	22	det	_	_
+22	joy	joy	NOUN	NN	Number=Sing	20	obj	_	_
+23	,	,	PUNCT	,	_	20	punct	_	_
+24	for	for	SCONJ	IN	_	26	mark	_	_
+25	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	26	nsubj	_	_
+26	knew	know	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	20	advcl	_	_
+27	no	no	DET	DT	PronType=Neg	28	det	_	_
+28	misery	misery	NOUN	NN	Number=Sing	26	obj	_	_
+29	;	;	PUNCT	:	_	13	punct	_	_
+30	doing	do	VERB	VBG	VerbForm=Part	20	conj	_	_
+31	no	no	DET	DT	PronType=Neg	32	det	_	_
+32	good	good	NOUN	NN	Number=Sing	30	obj	_	_
+33	,	,	PUNCT	,	_	30	punct	_	_
+34	for	for	SCONJ	IN	_	36	mark	_	_
+35	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	36	nsubj	_	_
+36	knew	know	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	30	advcl	_	_
+37	no	no	DET	DT	PronType=Neg	38	det	_	_
+38	sin	sin	NOUN	NN	Number=Sing	36	obj	_	_
+39	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = But behold, all things have been done in the wisdom of him who knoweth all things.
+# sent_id = 84
+# llm_note = behold=discourse; "all things have been done" = root passive; "in the wisdom of him" = obl; "who knoweth all things" = acl:relcl on him; knoweth=EME 3sg VBZ
+1	But	but	CCONJ	CC	_	8	cc	_	_
+2	behold	behold	INTJ	UH	_	8	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	all	all	DET	DT	_	5	det	_	_
+5	things	thing	NOUN	NNS	Number=Plur	8	nsubj:pass	_	_
+6	have	have	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+7	been	be	AUX	VBN	VerbForm=Part	8	aux:pass	_	_
+8	done	do	VERB	VBN	VerbForm=Part	0	root	_	_
+9	in	in	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	wisdom	wisdom	NOUN	NN	Number=Sing	8	obl	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nmod	_	_
+14	who	who	PRON	WP	PronType=Rel	15	nsubj	_	_
+15	knoweth	know	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_
+16	all	all	DET	DT	_	17	det	_	_
+17	things	thing	NOUN	NNS	Number=Plur	15	obj	_	_
+18	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = Adam fell that men might be; and men are, that they might have joy.
+# sent_id = 85
+# llm_note = Classic parallelism; fell=root; "that men might be" = advcl purpose; "men are" = conj; "that they might have joy" = advcl purpose; "be" here = exist (intransitive)
+1	Adam	Adam	PROPN	NNP	Number=Sing	2	nsubj	_	_
+2	fell	fall	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	that	that	SCONJ	IN	_	6	mark	_	_
+4	men	man	NOUN	NNS	Number=Plur	6	nsubj	_	_
+5	might	might	AUX	MD	VerbForm=Fin	6	aux	_	_
+6	be	be	VERB	VB	VerbForm=Inf	2	advcl	_	_
+7	;	;	PUNCT	:	_	2	punct	_	_
+8	and	and	CCONJ	CC	_	10	cc	_	_
+9	men	man	NOUN	NNS	Number=Plur	10	nsubj	_	_
+10	are	be	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	that	that	SCONJ	IN	_	16	mark	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	16	nsubj	_	_
+14	might	might	AUX	MD	VerbForm=Fin	16	aux	_	_
+15	have	have	AUX	VB	VerbForm=Inf	16	aux	_	_
+16	joy	joy	NOUN	NN	Number=Sing	10	advcl	_	_
+17	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = And the Messiah cometh in the fulness of time, that he may redeem the children of men from the fall.
+# sent_id = 86
+# llm_note = cometh=EME 3sg present VBZ; "in the fulness of time" = obl; "that he may redeem" = advcl purpose
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	Messiah	Messiah	PROPN	NNP	Number=Sing	4	nsubj	_	_
+4	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	in	in	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	fulness	fulness	NOUN	NN	Number=Sing	4	obl	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	time	time	NOUN	NN	Number=Sing	7	nmod	_	_
+10	,	,	PUNCT	,	_	4	punct	_	_
+11	that	that	SCONJ	IN	_	14	mark	_	_
+12	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+13	may	may	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	redeem	redeem	VERB	VB	VerbForm=Inf	4	advcl	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	children	child	NOUN	NNS	Number=Plur	14	obj	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	men	man	NOUN	NNS	Number=Plur	16	nmod	_	_
+19	from	from	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	fall	fall	NOUN	NN	Number=Sing	14	obl	_	_
+22	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And because that they are redeemed from the fall they have become free forever, knowing good from evil; to act for themselves and not to be acted upon, save it be by the punishment of the law at the great and last day, according to the commandments which God hath given.
+# sent_id = 87
+# llm_note = "because that" = causal SCONJ+fixed; "have become free" = root; "knowing good from evil" = advcl participial; "to act for themselves and not to be acted upon" = purpose infinitives modifying free; "save it be" = exception SCONJ + subjunctive; "by the punishment" = obl; "according to the commandments" = obl; hath=AUX (perfect)
+1	And	and	CCONJ	CC	_	12	cc	_	_
+2	because	because	SCONJ	IN	_	6	mark	_	_
+3	that	that	SCONJ	IN	_	2	fixed	_	_
+4	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj:pass	_	_
+5	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_
+6	redeemed	redeem	VERB	VBN	VerbForm=Part	12	advcl	_	_
+7	from	from	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	fall	fall	NOUN	NN	Number=Sing	6	obl	_	_
+10	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	12	nsubj	_	_
+11	have	have	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+12	become	become	VERB	VBN	VerbForm=Part	0	root	_	_
+13	free	free	ADJ	JJ	Degree=Pos	12	xcomp	_	_
+14	forever	forever	ADV	RB	_	12	advmod	_	_
+15	,	,	PUNCT	,	_	12	punct	_	_
+16	knowing	know	VERB	VBG	VerbForm=Part	12	advcl	_	_
+17	good	good	NOUN	NN	Number=Sing	16	obj	_	_
+18	from	from	ADP	IN	_	19	case	_	_
+19	evil	evil	NOUN	NN	Number=Sing	17	nmod	_	_
+20	;	;	PUNCT	:	_	12	punct	_	_
+21	to	to	PART	TO	_	22	mark	_	_
+22	act	act	VERB	VB	VerbForm=Inf	13	advcl	_	_
+23	for	for	ADP	IN	_	24	case	_	_
+24	themselves	themselves	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	22	obl	_	_
+25	and	and	CCONJ	CC	_	29	cc	_	_
+26	not	not	PART	RB	_	29	advmod	_	_
+27	to	to	PART	TO	_	29	mark	_	_
+28	be	be	AUX	VB	VerbForm=Inf	29	aux:pass	_	_
+29	acted	act	VERB	VBN	VerbForm=Part	22	conj	_	_
+30	upon	upon	ADP	IN	_	29	compound:prt	_	_
+31	,	,	PUNCT	,	_	22	punct	_	_
+32	save	save	SCONJ	IN	_	34	mark	_	_
+33	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	34	nsubj	_	_
+34	be	be	VERB	VBP	Mood=Sub|VerbForm=Fin	22	advcl	_	_
+35	by	by	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+37	punishment	punishment	NOUN	NN	Number=Sing	34	obl	_	_
+38	of	of	ADP	IN	_	40	case	_	_
+39	the	the	DET	DT	Definite=Def|PronType=Art	40	det	_	_
+40	law	law	NOUN	NN	Number=Sing	37	nmod	_	_
+41	at	at	ADP	IN	_	45	case	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	45	det	_	_
+43	great	great	ADJ	JJ	Degree=Pos	45	amod	_	_
+44	and	and	CCONJ	CC	_	45	cc	_	_
+45	last	last	ADJ	JJ	Degree=Pos	37	obl	_	_
+46	day	day	NOUN	NN	Number=Sing	45	nmod	_	_
+47	,	,	PUNCT	,	_	34	punct	_	_
+48	according	according	ADP	IN	_	51	case	_	_
+49	to	to	ADP	IN	_	48	fixed	_	_
+50	the	the	DET	DT	Definite=Def|PronType=Art	51	det	_	_
+51	commandments	commandment	NOUN	NNS	Number=Plur	34	obl	_	_
+52	which	which	PRON	WDT	_	55	obj	_	_
+53	God	God	PROPN	NNP	Number=Sing	55	nsubj	_	_
+54	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	55	aux	_	_
+55	given	give	VERB	VBN	VerbForm=Part	51	acl:relcl	_	_
+56	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = Wherefore, men are free according to the flesh; and all things are given them which are expedient unto man.
+# sent_id = 88
+# llm_note = "men are free" = root; "according to the flesh" = obl; "all things are given them" = conj passive; "which are expedient unto man" = acl:relcl on things; expedient=ADJ
+1	Wherefore	wherefore	ADV	RB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	men	man	NOUN	NNS	Number=Plur	4	nsubj	_	_
+4	are	be	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	free	free	ADJ	JJ	Degree=Pos	4	xcomp	_	_
+6	according	according	ADP	IN	_	9	case	_	_
+7	to	to	ADP	IN	_	6	fixed	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	flesh	flesh	NOUN	NN	Number=Sing	4	obl	_	_
+10	;	;	PUNCT	:	_	4	punct	_	_
+11	and	and	CCONJ	CC	_	15	cc	_	_
+12	all	all	DET	DT	_	13	det	_	_
+13	things	thing	NOUN	NNS	Number=Plur	15	nsubj:pass	_	_
+14	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_
+15	given	give	VERB	VBN	VerbForm=Part	4	conj	_	_
+16	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	15	iobj	_	_
+17	which	which	PRON	WDT	_	19	nsubj	_	_
+18	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_
+19	expedient	expedient	ADJ	JJ	Degree=Pos	13	acl:relcl	_	_
+20	unto	unto	ADP	IN	_	21	case	_	_
+21	man	man	NOUN	NN	Number=Sing	19	obl	_	_
+22	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And they are free to choose liberty and eternal life, through the great Mediator of all men, or to choose captivity and death, according to the captivity and power of the devil; for he seeketh that all men might be miserable like unto himself.
+# sent_id = 89
+# llm_note = "are free to choose X or to choose Y" = xcomp infinitives; "through the great Mediator" = obl instrumental; "according to the captivity and power of the devil" = obl; seeketh=EME 3sg; "that all men might be miserable" = ccomp of seeketh
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	are	be	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	free	free	ADJ	JJ	Degree=Pos	3	xcomp	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	choose	choose	VERB	VB	VerbForm=Inf	4	advcl	_	_
+7	liberty	liberty	NOUN	NN	Number=Sing	6	obj	_	_
+8	and	and	CCONJ	CC	_	10	cc	_	_
+9	eternal	eternal	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	life	life	NOUN	NN	Number=Sing	7	conj	_	_
+11	,	,	PUNCT	,	_	6	punct	_	_
+12	through	through	ADP	IN	_	15	case	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+14	great	great	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	Mediator	Mediator	PROPN	NNP	Number=Sing	6	obl	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	all	all	DET	DT	_	18	det	_	_
+18	men	man	NOUN	NNS	Number=Plur	15	nmod	_	_
+19	,	,	PUNCT	,	_	6	punct	_	_
+20	or	or	CCONJ	CC	_	22	cc	_	_
+21	to	to	PART	TO	_	22	mark	_	_
+22	choose	choose	VERB	VB	VerbForm=Inf	6	conj	_	_
+23	captivity	captivity	NOUN	NN	Number=Sing	22	obj	_	_
+24	and	and	CCONJ	CC	_	25	cc	_	_
+25	death	death	NOUN	NN	Number=Sing	23	conj	_	_
+26	,	,	PUNCT	,	_	22	punct	_	_
+27	according	according	ADP	IN	_	31	case	_	_
+28	to	to	ADP	IN	_	27	fixed	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	captivity	captivity	NOUN	NN	Number=Sing	22	obl	_	_
+31	and	and	CCONJ	CC	_	32	cc	_	_
+32	power	power	NOUN	NN	Number=Sing	30	conj	_	_
+33	of	of	ADP	IN	_	35	case	_	_
+34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
+35	devil	devil	NOUN	NN	Number=Sing	30	nmod	_	_
+36	;	;	PUNCT	:	_	3	punct	_	_
+37	for	for	SCONJ	IN	_	39	mark	_	_
+38	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	nsubj	_	_
+39	seeketh	seek	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+40	that	that	SCONJ	IN	_	44	mark	_	_
+41	all	all	DET	DT	_	42	det	_	_
+42	men	man	NOUN	NNS	Number=Plur	44	nsubj	_	_
+43	might	might	AUX	MD	VerbForm=Fin	44	aux	_	_
+44	be	be	VERB	VB	VerbForm=Inf	39	ccomp	_	_
+45	miserable	miserable	ADJ	JJ	Degree=Pos	44	xcomp	_	_
+46	like	like	ADP	IN	_	48	case	_	_
+47	unto	unto	ADP	IN	_	46	fixed	_	_
+48	himself	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	45	obl	_	_
+49	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now, my sons, I would that ye should look to the great Mediator, and hearken unto his great commandments; and be faithful unto his words, and choose eternal life, according to the will of his Holy Spirit;
+# sent_id = 90
+# llm_note = "I would that ye should look" = root + ccomp (volition); "hearken...be faithful...choose" = coordinated infinitival complements of should; ends with semicolon (continuation in sent 91)
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	now	now	ADV	RB	_	8	advmod	_	_
+3	,	,	PUNCT	,	_	8	punct	_	_
+4	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	_
+5	sons	son	NOUN	NNS	Number=Plur	8	vocative	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	would	would	VERB	MD	VerbForm=Fin	0	root	_	_
+9	that	that	SCONJ	IN	_	12	mark	_	_
+10	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	12	nsubj	_	_
+11	should	should	AUX	MD	VerbForm=Fin	12	aux	_	_
+12	look	look	VERB	VB	VerbForm=Inf	8	ccomp	_	_
+13	to	to	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+15	great	great	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	Mediator	Mediator	PROPN	NNP	Number=Sing	12	obl	_	_
+17	,	,	PUNCT	,	_	12	punct	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	hearken	hearken	VERB	VB	VerbForm=Inf	12	conj	_	_
+20	unto	unto	ADP	IN	_	23	case	_	_
+21	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	nmod:poss	_	_
+22	great	great	ADJ	JJ	Degree=Pos	23	amod	_	_
+23	commandments	commandment	NOUN	NNS	Number=Plur	19	obl	_	_
+24	;	;	PUNCT	:	_	8	punct	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	be	be	VERB	VB	VerbForm=Inf	12	conj	_	_
+27	faithful	faithful	ADJ	JJ	Degree=Pos	26	xcomp	_	_
+28	unto	unto	ADP	IN	_	30	case	_	_
+29	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	30	nmod:poss	_	_
+30	words	word	NOUN	NNS	Number=Plur	26	obl	_	_
+31	,	,	PUNCT	,	_	26	punct	_	_
+32	and	and	CCONJ	CC	_	33	cc	_	_
+33	choose	choose	VERB	VB	VerbForm=Inf	12	conj	_	_
+34	eternal	eternal	ADJ	JJ	Degree=Pos	35	amod	_	_
+35	life	life	NOUN	NN	Number=Sing	33	obj	_	_
+36	,	,	PUNCT	,	_	33	punct	_	_
+37	according	according	ADP	IN	_	40	case	_	_
+38	to	to	ADP	IN	_	37	fixed	_	_
+39	the	the	DET	DT	Definite=Def|PronType=Art	40	det	_	_
+40	will	will	NOUN	NN	Number=Sing	33	obl	_	_
+41	of	of	ADP	IN	_	44	case	_	_
+42	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	44	nmod:poss	_	_
+43	Holy	Holy	ADJ	NNP	Degree=Pos	44	amod	_	_
+44	Spirit	Spirit	PROPN	NNP	Number=Sing	40	nmod	_	_
+45	;	;	PUNCT	:	_	8	punct	_	_
+
+# text = And not choose eternal death, according to the will of the flesh and the evil which is therein, which giveth the spirit of the devil power to captivate, to bring you down to hell, that he may reign over you in his own kingdom.
+# sent_id = 91
+# llm_note = Continuation of sent 90 (negative imperative); "not choose" = root neg imperative; "according to the will of the flesh" = obl; "and the evil" = conj of flesh/will; "which is therein" = acl:relcl; "which giveth the spirit power" = acl:relcl on evil; giveth=EME; "to captivate" = xcomp/purpose; "to bring you down to hell" = conj; "that he may reign" = advcl purpose
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	not	not	PART	RB	_	3	advmod	_	_
+3	choose	choose	VERB	VB	VerbForm=Inf	0	root	_	_
+4	eternal	eternal	ADJ	JJ	Degree=Pos	5	amod	_	_
+5	death	death	NOUN	NN	Number=Sing	3	obj	_	_
+6	,	,	PUNCT	,	_	3	punct	_	_
+7	according	according	ADP	IN	_	10	case	_	_
+8	to	to	ADP	IN	_	7	fixed	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	will	will	NOUN	NN	Number=Sing	3	obl	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	flesh	flesh	NOUN	NN	Number=Sing	10	nmod	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	evil	evil	NOUN	NN	Number=Sing	13	conj	_	_
+17	which	which	PRON	WDT	_	19	nsubj	_	_
+18	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_
+19	therein	therein	ADV	RB	_	16	acl:relcl	_	_
+20	,	,	PUNCT	,	_	16	punct	_	_
+21	which	which	PRON	WDT	_	22	nsubj	_	_
+22	giveth	give	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+24	spirit	spirit	NOUN	NN	Number=Sing	22	iobj	_	_
+25	of	of	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	devil	devil	NOUN	NN	Number=Sing	24	nmod	_	_
+28	power	power	NOUN	NN	Number=Sing	22	obj	_	_
+29	to	to	PART	TO	_	30	mark	_	_
+30	captivate	captivate	VERB	VB	VerbForm=Inf	28	acl	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	to	to	PART	TO	_	33	mark	_	_
+33	bring	bring	VERB	VB	VerbForm=Inf	30	conj	_	_
+34	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	33	obj	_	_
+35	down	down	ADV	RP	_	33	compound:prt	_	_
+36	to	to	ADP	IN	_	37	case	_	_
+37	hell	hell	NOUN	NN	Number=Sing	33	obl	_	_
+38	,	,	PUNCT	,	_	33	punct	_	_
+39	that	that	SCONJ	IN	_	42	mark	_	_
+40	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	42	nsubj	_	_
+41	may	may	AUX	MD	VerbForm=Fin	42	aux	_	_
+42	reign	reign	VERB	VB	VerbForm=Inf	33	advcl	_	_
+43	over	over	ADP	IN	_	44	case	_	_
+44	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	42	obl	_	_
+45	in	in	ADP	IN	_	48	case	_	_
+46	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	48	nmod:poss	_	_
+47	own	own	ADJ	JJ	Degree=Pos	48	amod	_	_
+48	kingdom	kingdom	NOUN	NN	Number=Sing	42	obl	_	_
+49	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = I have spoken these few words unto you all, my sons, in the last days of my probation; and I have chosen the good part, according to the words of the prophet.
+# sent_id = 92
+# llm_note = "have spoken" = root perfect; "these few words" = obj; "unto you all" = obl; "my sons" = vocative; "in the last days of my probation" = obl; "and I have chosen" = conj
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+2	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	spoken	speak	VERB	VBN	VerbForm=Part	0	root	_	_
+4	these	these	DET	DT	Number=Plur|PronType=Dem	6	det	_	_
+5	few	few	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	words	word	NOUN	NNS	Number=Plur	3	obj	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	3	obl	_	_
+9	all	all	DET	DT	_	8	det	_	_
+10	,	,	PUNCT	,	_	8	punct	_	_
+11	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	_
+12	sons	son	NOUN	NNS	Number=Plur	3	vocative	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	in	in	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+16	last	last	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	days	day	NOUN	NNS	Number=Plur	3	obl	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+20	probation	probation	NOUN	NN	Number=Sing	17	nmod	_	_
+21	;	;	PUNCT	:	_	3	punct	_	_
+22	and	and	CCONJ	CC	_	25	cc	_	_
+23	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	25	nsubj	_	_
+24	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	25	aux	_	_
+25	chosen	choose	VERB	VBN	VerbForm=Part	3	conj	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+27	good	good	ADJ	JJ	Degree=Pos	28	amod	_	_
+28	part	part	NOUN	NN	Number=Sing	25	obj	_	_
+29	,	,	PUNCT	,	_	25	punct	_	_
+30	according	according	ADP	IN	_	33	case	_	_
+31	to	to	ADP	IN	_	30	fixed	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+33	words	word	NOUN	NNS	Number=Plur	25	obl	_	_
+34	of	of	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	prophet	prophet	NOUN	NN	Number=Sing	33	nmod	_	_
+37	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And I have none other object save it be the everlasting welfare of your souls.
+# sent_id = 93
+# llm_note = "have none other object" = root; "save it be the everlasting welfare" = exception clause (save=SCONJ + subjunctive be); welfare=nsubj of be (copular)
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	have	have	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	none	none	DET	DT	PronType=Neg	6	det	_	_
+5	other	other	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	object	object	NOUN	NN	Number=Sing	3	obj	_	_
+7	save	save	SCONJ	IN	_	9	mark	_	_
+8	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	be	be	VERB	VBP	Mood=Sub|VerbForm=Fin	6	acl	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+11	everlasting	everlasting	ADJ	JJ	Degree=Pos	12	amod	_	_
+12	welfare	welfare	NOUN	NN	Number=Sing	9	xcomp	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	your	your	PRON	PRP$	Number=Plur|Person=2|Poss=Yes|PronType=Prs	15	nmod:poss	_	_
+15	souls	soul	NOUN	NNS	Number=Plur	12	nmod	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Amen.
+# sent_id = 94
+1	Amen	amen	INTJ	UH	_	0	root	_	_
+2	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = And now I speak unto you, Joseph, my last-born.
+# sent_id = 95
+# llm_note = speak=root; Joseph=vocative; my last-born=appos; last-born as 3 tokens
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	speak	speak	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	4	obl	_	_
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	Joseph	Joseph	PROPN	NNP	Number=Sing	4	vocative	_	_
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	_
+11	last	last	ADJ	JJ	Degree=Pos	8	appos	_	_
+12	-	-	PUNCT	HYPH	_	11	punct	_	_
+13	born	born	ADJ	JJ	Degree=Pos	11	conj	_	_
+14	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Thou wast born in the wilderness of mine afflictions; yea, in the days of my greatest sorrow did thy mother bear thee.
+# sent_id = 96
+# llm_note = wast=EME 2sg past passive aux; mine=EME 1sg poss; yea=discourse; inverted do-support; thy=EME 2sg poss
+1	Thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj:pass	_	_
+2	wast	be	AUX	VBD	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin	3	aux:pass	_	_
+3	born	bear	VERB	VBN	VerbForm=Part	0	root	_	_
+4	in	in	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	wilderness	wilderness	NOUN	NN	Number=Sing	3	obl	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	nmod:poss	_	_
+9	afflictions	affliction	NOUN	NNS	Number=Plur	6	nmod	_	_
+10	;	;	PUNCT	:	_	3	punct	_	_
+11	yea	yea	INTJ	UH	_	23	discourse	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	in	in	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	days	day	NOUN	NNS	Number=Plur	23	obl	_	_
+16	of	of	ADP	IN	_	19	case	_	_
+17	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+18	greatest	great	ADJ	JJS	Degree=Sup	19	amod	_	_
+19	sorrow	sorrow	NOUN	NN	Number=Sing	15	nmod	_	_
+20	did	do	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
+21	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+22	mother	mother	NOUN	NN	Number=Sing	23	nsubj	_	_
+23	bear	bear	VERB	VB	VerbForm=Inf	3	conj	_	_
+24	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	23	obj	_	_
+25	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And may the Lord consecrate also unto thee this land, which is a most precious land, for thine inheritance and the inheritance of thy seed with thy brethren, for thy security forever, if it so be that ye shall keep the commandments of the Holy One of Israel.
+# sent_id = 97
+# llm_note = optative 'may the Lord consecrate'; thee/thine/thy=EME 2sg; 'which is a most precious land' = acl:relcl on land; 'for thine inheritance' = obl; 'if it so be that ye shall keep' = advcl conditional
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	may	may	AUX	MD	VerbForm=Fin	5	aux	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	Lord	Lord	PROPN	NNP	Number=Sing	5	nsubj	_	_
+5	consecrate	consecrate	VERB	VB	VerbForm=Inf	0	root	_	_
+6	also	also	ADV	RB	_	5	advmod	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	5	iobj	_	_
+9	this	this	DET	DT	Number=Sing|PronType=Dem	10	det	_	_
+10	land	land	NOUN	NN	Number=Sing	5	obj	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	which	which	PRON	WDT	_	14	nsubj	_	_
+13	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_
+14	a	a	DET	DT	Definite=Ind|PronType=Art	10	acl:relcl	_	_
+15	most	most	ADV	RBS	_	16	advmod	_	_
+16	precious	precious	ADJ	JJ	Degree=Pos	14	amod	_	_
+17	land	land	NOUN	NN	Number=Sing	14	nmod	_	_
+18	,	,	PUNCT	,	_	10	punct	_	_
+19	for	for	ADP	IN	_	21	case	_	_
+20	thine	thine	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	21	nmod:poss	_	_
+21	inheritance	inheritance	NOUN	NN	Number=Sing	5	obl	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	inheritance	inheritance	NOUN	NN	Number=Sing	21	conj	_	_
+25	of	of	ADP	IN	_	27	case	_	_
+26	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	27	nmod:poss	_	_
+27	seed	seed	NOUN	NN	Number=Sing	24	nmod	_	_
+28	with	with	ADP	IN	_	30	case	_	_
+29	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	30	nmod:poss	_	_
+30	brethren	brethren	NOUN	NNS	Number=Plur	27	nmod	_	_
+31	,	,	PUNCT	,	_	21	punct	_	_
+32	for	for	ADP	IN	_	34	case	_	_
+33	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	34	nmod:poss	_	_
+34	security	security	NOUN	NN	Number=Sing	5	obl	_	_
+35	forever	forever	ADV	RB	_	34	advmod	_	_
+36	,	,	PUNCT	,	_	5	punct	_	_
+37	if	if	SCONJ	IN	_	40	mark	_	_
+38	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	40	nsubj	_	_
+39	so	so	ADV	RB	_	40	advmod	_	_
+40	be	be	VERB	VBP	Mood=Sub|VerbForm=Fin	5	advcl	_	_
+41	that	that	SCONJ	IN	_	44	mark	_	_
+42	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	44	nsubj	_	_
+43	shall	shall	AUX	MD	VerbForm=Fin	44	aux	_	_
+44	keep	keep	VERB	VB	VerbForm=Inf	40	ccomp	_	_
+45	the	the	DET	DT	Definite=Def|PronType=Art	46	det	_	_
+46	commandments	commandment	NOUN	NNS	Number=Plur	44	obj	_	_
+47	of	of	ADP	IN	_	50	case	_	_
+48	the	the	DET	DT	Definite=Def|PronType=Art	50	det	_	_
+49	Holy	Holy	ADJ	NNP	Degree=Pos	50	amod	_	_
+50	One	One	PROPN	NNP	Number=Sing	46	nmod	_	_
+51	of	of	ADP	IN	_	52	case	_	_
+52	Israel	Israel	PROPN	NNP	Number=Sing	50	nmod	_	_
+53	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And now, Joseph, my last-born, whom I have brought out of the wilderness of mine afflictions, may the Lord bless thee forever, for thy seed shall not utterly be destroyed.
+# sent_id = 98
+# llm_note = Joseph=vocative with appositive 'my last-born' (3 tokens); 'whom I have brought out' = acl:relcl; optative 'may the Lord bless thee'; 'for thy seed shall not be destroyed' = advcl causal
+1	And	and	CCONJ	CC	_	26	cc	_	_
+2	now	now	ADV	RB	_	26	advmod	_	_
+3	,	,	PUNCT	,	_	4	punct	_	_
+4	Joseph	Joseph	PROPN	NNP	Number=Sing	26	vocative	_	_
+5	,	,	PUNCT	,	_	7	punct	_	_
+6	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	last	last	ADJ	JJ	Degree=Pos	4	appos	_	_
+8	-	-	PUNCT	HYPH	_	7	punct	_	_
+9	born	born	ADJ	JJ	Degree=Pos	7	conj	_	_
+10	,	,	PUNCT	,	_	4	punct	_	_
+11	whom	whom	PRON	WP	Case=Acc|PronType=Rel	14	obj	_	_
+12	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_
+13	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	aux	_	_
+14	brought	bring	VERB	VBN	VerbForm=Part	4	acl:relcl	_	_
+15	out	out	ADP	RP	_	14	compound:prt	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	wilderness	wilderness	NOUN	NN	Number=Sing	14	obl	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	mine	mine	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	21	nmod:poss	_	_
+21	afflictions	affliction	NOUN	NNS	Number=Plur	18	nmod	_	_
+22	,	,	PUNCT	,	_	4	punct	_	_
+23	may	may	AUX	MD	VerbForm=Fin	26	aux	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	Lord	Lord	PROPN	NNP	Number=Sing	26	nsubj	_	_
+26	bless	bless	VERB	VB	VerbForm=Inf	0	root	_	_
+27	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	26	obj	_	_
+28	forever	forever	ADV	RB	_	26	advmod	_	_
+29	,	,	PUNCT	,	_	26	punct	_	_
+30	for	for	SCONJ	IN	_	37	mark	_	_
+31	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	32	nmod:poss	_	_
+32	seed	seed	NOUN	NN	Number=Sing	37	nsubj:pass	_	_
+33	shall	shall	AUX	MD	VerbForm=Fin	37	aux	_	_
+34	not	not	PART	RB	_	37	advmod	_	_
+35	utterly	utterly	ADV	RB	_	37	advmod	_	_
+36	be	be	AUX	VB	VerbForm=Inf	37	aux:pass	_	_
+37	destroyed	destroy	VERB	VBN	VerbForm=Part	26	advcl	_	_
+38	.	.	PUNCT	.	_	26	punct	_	_
+
+# text = For behold, thou art the fruit of my loins; and I am a descendant of Joseph who was carried captive into Egypt.
+# sent_id = 99
+# llm_note = behold=discourse; thou/art=EME 2sg; 'fruit of my loins' = xcomp; 'and I am a descendant' = conj; 'of Joseph who was carried captive into Egypt' = nmod + acl:relcl
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+5	art	be	VERB	VBP	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	fruit	fruit	NOUN	NN	Number=Sing	5	xcomp	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	_
+10	loins	loin	NOUN	NNS	Number=Plur	7	nmod	_	_
+11	;	;	PUNCT	:	_	5	punct	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_
+14	am	be	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	conj	_	_
+15	a	a	DET	DT	Definite=Ind|PronType=Art	16	det	_	_
+16	descendant	descendant	NOUN	NN	Number=Sing	14	xcomp	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	Joseph	Joseph	PROPN	NNP	Number=Sing	16	nmod	_	_
+19	who	who	PRON	WP	PronType=Rel	21	nsubj:pass	_	_
+20	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	_	_
+21	carried	carry	VERB	VBN	VerbForm=Part	18	acl:relcl	_	_
+22	captive	captive	ADJ	JJ	Degree=Pos	21	xcomp	_	_
+23	into	into	ADP	IN	_	24	case	_	_
+24	Egypt	Egypt	PROPN	NNP	Number=Sing	21	obl	_	_
+25	.	.	PUNCT	.	_	5	punct	_	_
+

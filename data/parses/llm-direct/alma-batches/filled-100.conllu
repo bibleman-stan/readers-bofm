@@ -1,0 +1,138 @@
+# text = And it came to pass also in this year that there were some dissenters who had gone forth unto the Lamanites; and they were stirred up again to anger against the Nephites.
+# sent_id = 2475
+# llm_note = AICTP with "also in this year" as temporal modifier; existential "there were some dissenters"; "who had gone forth unto the Lamanites" acl:relcl on "dissenters"; "they were stirred up again to anger" is passive conj clause; "to anger" is obl (purpose/result PP).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	also	also	ADV	RB	_	5	advmod	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	this	this	DET	DT	_	9	det	_	_
+9	year	year	NOUN	NN	Number=Sing	5	obl	_	_
+10	that	that	SCONJ	IN	_	12	mark	_	_
+11	there	there	PRON	EX	_	12	expl	_	_
+12	were	be	VERB	VBD	Tense=Past	5	ccomp	_	_
+13	some	some	DET	DT	_	14	det	_	_
+14	dissenters	dissenter	NOUN	NNS	Number=Plur	12	nsubj	_	_
+15	who	who	PRON	WP	_	17	nsubj	_	_
+16	had	have	AUX	VBD	Tense=Past	17	aux	_	_
+17	gone	go	VERB	VBN	Tense=Past|VerbForm=Part	14	acl:relcl	_	_
+18	forth	forth	ADV	RB	_	17	advmod	_	_
+19	unto	unto	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	17	obl	_	_
+22	;	;	PUNCT	,	_	26	punct	_	_
+23	and	and	CCONJ	CC	_	26	cc	_	_
+24	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	26	nsubj:pass	_	_
+25	were	be	AUX	VBD	Tense=Past	26	aux:pass	_	_
+26	stirred	stir	VERB	VBN	Tense=Past|VerbForm=Part	12	conj	_	_
+27	up	up	ADP	RP	_	26	compound:prt	_	_
+28	again	again	ADV	RB	_	26	advmod	_	_
+29	to	to	ADP	IN	_	30	case	_	_
+30	anger	anger	NOUN	NN	Number=Sing	26	obl	_	_
+31	against	against	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	Nephites	Nephite	PROPN	NNPS	Number=Plur	26	obl	_	_
+34	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And also in this same year they came down with a numerous army to war against the people of Moronihah, or against the army of Moronihah, in the which they were beaten and driven back again to their own lands, suffering great loss.
+# sent_id = 2476
+# llm_note = "And also in this same year" — "also" ADV advmod; "they came down" main; "to war against" is advcl (purpose) of "came"; "or against the army of Moronihah" is conj/appos alternative to first "against the people of Moronihah"; "in the which they were beaten and driven back" — "in the which" = "in which" (archaic); "which" is nmod:poss or obl antecedent of relative (treat as advcl/relcl on "war" / the coming event — attach as acl:relcl on nearest NP "army" or more naturally as advcl of "came"); "suffering great loss" is advcl of "were beaten/driven" (participial).
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	also	also	ADV	RB	_	8	advmod	_	_
+3	in	in	ADP	IN	_	6	case	_	_
+4	this	this	DET	DT	_	6	det	_	_
+5	same	same	ADJ	JJ	_	6	amod	_	_
+6	year	year	NOUN	NN	Number=Sing	8	obl	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	8	nsubj	_	_
+8	came	come	VERB	VBD	Tense=Past	0	root	_	_
+9	down	down	ADP	RP	_	8	compound:prt	_	_
+10	with	with	ADP	IN	_	13	case	_	_
+11	a	a	DET	DT	_	13	det	_	_
+12	numerous	numerous	ADJ	JJ	_	13	amod	_	_
+13	army	army	NOUN	NN	Number=Sing	8	obl	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	war	war	VERB	VB	_	8	advcl	_	_
+16	against	against	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	people	people	NOUN	NN	Number=Sing	15	obl	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Moronihah	Moronihah	PROPN	NNP	Number=Sing	18	nmod	_	_
+21	,	,	PUNCT	,	_	25	punct	_	_
+22	or	or	CCONJ	CC	_	25	cc	_	_
+23	against	against	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	army	army	NOUN	NN	Number=Sing	18	conj	_	_
+26	of	of	ADP	IN	_	27	case	_	_
+27	Moronihah	Moronihah	PROPN	NNP	Number=Sing	25	nmod	_	_
+28	,	,	PUNCT	,	_	34	punct	_	_
+29	in	in	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	which	which	PRON	WDT	_	34	obl	_	_
+32	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	34	nsubj:pass	_	_
+33	were	be	AUX	VBD	Tense=Past	34	aux:pass	_	_
+34	beaten	beat	VERB	VBN	Tense=Past|VerbForm=Part	8	advcl	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	driven	drive	VERB	VBN	Tense=Past|VerbForm=Part	34	conj	_	_
+37	back	back	ADV	RB	_	36	advmod	_	_
+38	again	again	ADV	RB	_	36	advmod	_	_
+39	to	to	ADP	IN	_	42	case	_	_
+40	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	42	nmod:poss	_	_
+41	own	own	ADJ	JJ	_	42	amod	_	_
+42	lands	land	NOUN	NNS	Number=Plur	36	obl	_	_
+43	,	,	PUNCT	,	_	45	punct	_	_
+44	suffering	suffer	VERB	VBG	VerbForm=Part	34	advcl	_	_
+45	great	great	ADJ	JJ	_	46	amod	_	_
+46	loss	loss	NOUN	NN	Number=Sing	44	obj	_	_
+47	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And thus ended the thirty and ninth year of the reign of the judges over the people of Nephi.
+# sent_id = 2477
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	ended	end	VERB	VBD	Tense=Past	0	root	_	_
+4	the	the	DET	DT	_	8	det	_	_
+5	thirty	thirty	NUM	CD	_	7	compound	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	ninth	ninth	ADJ	JJ	_	8	amod	_	_
+8	year	year	NOUN	NN	Number=Sing	3	nsubj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	reign	reign	NOUN	NN	Number=Sing	8	nmod	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	judges	judge	NOUN	NNS	Number=Plur	11	nmod	_	_
+15	over	over	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	people	people	NOUN	NN	Number=Sing	14	nmod	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	Nephi	Nephi	PROPN	NNP	Number=Sing	17	nmod	_	_
+20	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And thus ended the account of Alma, and Helaman his son, and also Shiblon, who was his son.
+# sent_id = 2478
+# llm_note = "the account of Alma" is nsubj of "ended"; "Helaman his son" is conj of "Alma" (appositional: "his son" is appos of "Helaman"); "Shiblon" is further conj; "who was his son" is acl:relcl on "Shiblon".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	ended	end	VERB	VBD	Tense=Past	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	account	account	NOUN	NN	Number=Sing	3	nsubj	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Alma	Alma	PROPN	NNP	Number=Sing	5	nmod	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	Helaman	Helaman	PROPN	NNP	Number=Sing	7	conj	_	_
+11	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	12	nmod:poss	_	_
+12	son	son	NOUN	NN	Number=Sing	10	appos	_	_
+13	,	,	PUNCT	,	_	16	punct	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	also	also	ADV	RB	_	16	advmod	_	_
+16	Shiblon	Shiblon	PROPN	NNP	Number=Sing	7	conj	_	_
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	who	who	PRON	WP	_	19	nsubj	_	_
+19	was	be	VERB	VBD	Tense=Past	16	acl:relcl	_	_
+20	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	21	nmod:poss	_	_
+21	son	son	NOUN	NN	Number=Sing	19	xcomp	_	_
+22	.	.	PUNCT	.	_	3	punct	_	_
+

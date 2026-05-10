@@ -1,0 +1,931 @@
+# text = And it came to pass that Lamoni rehearsed unto him whither he was going, for he feared to offend him.
+# sent_id = 800
+# llm_note = AICTP; "rehearsed unto him whither he was going" — whither clause = ccomp of rehearsed; "for he feared" = causal advcl; "to offend" = xcomp of feared
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	Lamoni	Lamoni	PROPN	NNP	_	8	nsubj	_	_
+8	rehearsed	rehearse	VERB	VBD	_	3	ccomp	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	8	obl	_	_
+11	whither	whither	ADV	WRB	_	14	advmod	_	_
+12	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	14	nsubj	_	_
+13	was	be	AUX	VBD	_	14	aux	_	_
+14	going	go	VERB	VBG	_	8	ccomp	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	for	for	SCONJ	IN	_	18	mark	_	_
+17	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	18	nsubj	_	_
+18	feared	fear	VERB	VBD	_	8	advcl	_	_
+19	to	to	PART	TO	_	20	mark	_	_
+20	offend	offend	VERB	VB	_	18	xcomp	_	_
+21	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	20	obj	_	_
+22	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he also told him all the cause of his tarrying in his own kingdom, that he did not go unto his father to the feast which he had prepared.
+# sent_id = 801
+# llm_note = "told him all the cause" = obj; "of his tarrying" = nmod on cause; "that he did not go" = acl/appos elaborating cause; "which he had prepared" = acl:relcl on feast
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	4	nsubj	_	_
+3	also	also	ADV	RB	_	4	advmod	_	_
+4	told	tell	VERB	VBD	_	0	root	_	_
+5	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	4	iobj	_	_
+6	all	all	DET	PDT	_	8	det:predet	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	cause	cause	NOUN	NN	_	4	obj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	his	he	PRON	PRP$	_	11	nmod:poss	_	_
+11	tarrying	tarry	VERB	VBG	_	8	nmod	_	_
+12	in	in	ADP	IN	_	15	case	_	_
+13	his	he	PRON	PRP$	_	15	nmod:poss	_	_
+14	own	own	ADJ	JJ	_	15	amod	_	_
+15	kingdom	kingdom	NOUN	NN	_	11	obl	_	_
+16	,	,	PUNCT	,	_	8	punct	_	_
+17	that	that	SCONJ	IN	_	21	mark	_	_
+18	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	21	nsubj	_	_
+19	did	do	AUX	VBD	_	21	aux	_	_
+20	not	not	PART	RB	_	21	advmod	_	_
+21	go	go	VERB	VB	_	8	acl	_	_
+22	unto	unto	ADP	IN	_	24	case	_	_
+23	his	he	PRON	PRP$	_	24	nmod:poss	_	_
+24	father	father	NOUN	NN	_	21	obl	_	_
+25	to	to	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	feast	feast	NOUN	NN	_	21	obl	_	_
+28	which	which	PRON	WDT	_	31	obj	_	_
+29	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	31	nsubj	_	_
+30	had	have	AUX	VBD	_	31	aux	_	_
+31	prepared	prepare	VERB	VBN	_	27	acl:relcl	_	_
+32	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And now when Lamoni had rehearsed unto him all these things, behold, to his astonishment, his father was angry with him, and said: Lamoni, thou art going to deliver these Nephites, who are sons of a liar.
+# sent_id = 802
+# llm_note = temporal advcl "when Lamoni had rehearsed"; behold=discourse of main clause; "to his astonishment"=obl; "was angry" = cop+adj; direct speech with vocative "Lamoni"; "thou art going to deliver" = progressive; relative clause "who are sons of a liar"
+1	And	and	CCONJ	CC	_	21	cc	_	_
+2	now	now	ADV	RB	_	21	advmod	_	_
+3	when	when	SCONJ	WRB	_	6	mark	_	_
+4	Lamoni	Lamoni	PROPN	NNP	_	6	nsubj	_	_
+5	had	have	AUX	VBD	_	6	aux	_	_
+6	rehearsed	rehearse	VERB	VBN	_	21	advcl	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	6	obl	_	_
+9	all	all	DET	PDT	_	11	det:predet	_	_
+10	these	this	DET	DT	_	11	det	_	_
+11	things	thing	NOUN	NNS	_	6	obj	_	_
+12	,	,	PUNCT	,	_	6	punct	_	_
+13	behold	behold	INTJ	UH	_	21	discourse	_	_
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	to	to	ADP	IN	_	17	case	_	_
+16	his	he	PRON	PRP$	_	17	nmod:poss	_	_
+17	astonishment	astonishment	NOUN	NN	_	21	obl	_	_
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	his	he	PRON	PRP$	_	20	nmod:poss	_	_
+20	father	father	NOUN	NN	_	21	nsubj	_	_
+21	was	be	AUX	VBD	_	0	root	_	_
+22	angry	angry	ADJ	JJ	_	21	xcomp	_	_
+23	with	with	ADP	IN	_	24	case	_	_
+24	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	22	obl	_	_
+25	,	,	PUNCT	,	_	21	punct	_	_
+26	and	and	CCONJ	CC	_	27	cc	_	_
+27	said	say	VERB	VBD	_	21	conj	_	_
+28	:	:	PUNCT	:	_	27	punct	_	_
+29	Lamoni	Lamoni	PROPN	NNP	_	33	vocative	_	_
+30	,	,	PUNCT	,	_	29	punct	_	_
+31	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	33	nsubj	_	_
+32	art	be	AUX	VBZ	_	33	aux	_	_
+33	going	go	VERB	VBG	_	27	ccomp	_	_
+34	to	to	PART	TO	_	35	mark	_	_
+35	deliver	deliver	VERB	VB	_	33	xcomp	_	_
+36	these	this	DET	DT	_	37	det	_	_
+37	Nephites	Nephite	PROPN	NNPS	_	35	obj	_	_
+38	,	,	PUNCT	,	_	37	punct	_	_
+39	who	who	PRON	WP	_	41	nsubj	_	_
+40	are	be	AUX	VBZ	_	41	cop	_	_
+41	sons	son	NOUN	NNS	_	37	acl:relcl	_	_
+42	of	of	ADP	IN	_	44	case	_	_
+43	a	a	DET	DT	_	44	det	_	_
+44	liar	liar	NOUN	NN	_	41	nmod	_	_
+45	.	.	PUNCT	.	_	21	punct	_	_
+
+# text = Behold, he robbed our fathers; and now his children are also come amongst us that they may, by their cunning and their lyings, deceive us, that they again may rob us of our property.
+# sent_id = 803
+# llm_note = behold=discourse of "robbed"; second main clause "his children are also come"; purpose clause "that they may...deceive"; nested purpose "that they again may rob"
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	4	nsubj	_	_
+4	robbed	rob	VERB	VBD	_	0	root	_	_
+5	our	we	PRON	PRP$	_	6	nmod:poss	_	_
+6	fathers	father	NOUN	NNS	_	4	obj	_	_
+7	;	;	PUNCT	,	_	14	punct	_	_
+8	and	and	CCONJ	CC	_	14	cc	_	_
+9	now	now	ADV	RB	_	14	advmod	_	_
+10	his	he	PRON	PRP$	_	11	nmod:poss	_	_
+11	children	child	NOUN	NNS	_	14	nsubj	_	_
+12	are	be	AUX	VBP	_	14	aux	_	_
+13	also	also	ADV	RB	_	14	advmod	_	_
+14	come	come	VERB	VBN	_	4	conj	_	_
+15	amongst	amongst	ADP	IN	_	16	case	_	_
+16	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1	14	obl	_	_
+17	that	that	SCONJ	IN	_	28	mark	_	_
+18	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	28	nsubj	_	_
+19	may	may	AUX	MD	_	28	aux	_	_
+20	,	,	PUNCT	,	_	28	punct	_	_
+21	by	by	ADP	IN	_	23	case	_	_
+22	their	they	PRON	PRP$	_	23	nmod:poss	_	_
+23	cunning	cunning	NOUN	NN	_	28	obl	_	_
+24	and	and	CCONJ	CC	_	26	cc	_	_
+25	their	they	PRON	PRP$	_	26	nmod:poss	_	_
+26	lyings	lying	NOUN	NNS	_	23	conj	_	_
+27	,	,	PUNCT	,	_	28	punct	_	_
+28	deceive	deceive	VERB	VB	_	14	advcl	_	_
+29	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1	28	obj	_	_
+30	,	,	PUNCT	,	_	28	punct	_	_
+31	that	that	SCONJ	IN	_	35	mark	_	_
+32	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	35	nsubj	_	_
+33	again	again	ADV	RB	_	35	advmod	_	_
+34	may	may	AUX	MD	_	35	aux	_	_
+35	rob	rob	VERB	VB	_	28	advcl	_	_
+36	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1	35	obj	_	_
+37	of	of	ADP	IN	_	39	case	_	_
+38	our	we	PRON	PRP$	_	39	nmod:poss	_	_
+39	property	property	NOUN	NN	_	35	obl	_	_
+40	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Now the father of Lamoni commanded him that he should slay Ammon with the sword.
+# sent_id = 804
+# llm_note = causative/command "commanded him that": ccomp; "with the sword" = obl instrument
+1	Now	now	ADV	RB	_	6	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	father	father	NOUN	NN	_	6	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	Lamoni	Lamoni	PROPN	NNP	_	3	nmod	_	_
+6	commanded	command	VERB	VBD	_	0	root	_	_
+7	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	6	iobj	_	_
+8	that	that	SCONJ	IN	_	11	mark	_	_
+9	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	11	nsubj	_	_
+10	should	shall	AUX	MD	_	11	aux	_	_
+11	slay	slay	VERB	VB	_	6	ccomp	_	_
+12	Ammon	Ammon	PROPN	NNP	_	11	obj	_	_
+13	with	with	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	sword	sword	NOUN	NN	_	11	obl	_	_
+16	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And he also commanded him that he should not go to the land of Middoni, but that he should return with him to the land of Ishmael.
+# sent_id = 805
+# llm_note = Coordinate "commanded" clause; two that-clauses (neg+pos) as ccomp via "but"
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	4	nsubj	_	_
+3	also	also	ADV	RB	_	4	advmod	_	_
+4	commanded	command	VERB	VBD	_	0	root	_	_
+5	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	4	iobj	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	10	nsubj	_	_
+8	should	shall	AUX	MD	_	10	aux	_	_
+9	not	not	PART	RB	_	10	advmod	_	_
+10	go	go	VERB	VB	_	4	ccomp	_	_
+11	to	to	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	land	land	NOUN	NN	_	10	obl	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	Middoni	Middoni	PROPN	NNP	_	13	nmod	_	_
+16	,	,	PUNCT	,	_	10	punct	_	_
+17	but	but	CCONJ	CC	_	21	cc	_	_
+18	that	that	SCONJ	IN	_	21	mark	_	_
+19	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	21	nsubj	_	_
+20	should	shall	AUX	MD	_	21	aux	_	_
+21	return	return	VERB	VB	_	10	conj	_	_
+22	with	with	ADP	IN	_	23	case	_	_
+23	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	21	obl	_	_
+24	to	to	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	_	26	det	_	_
+26	land	land	NOUN	NN	_	21	obl	_	_
+27	of	of	ADP	IN	_	28	case	_	_
+28	Ishmael	Ishmael	PROPN	NNP	_	26	nmod	_	_
+29	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = But Lamoni said unto him: I will not slay Ammon, neither will I return to the land of Ishmael, but I go to the land of Middoni that I may release the brethren of Ammon, for I know that they are just men and holy prophets of the true God.
+# sent_id = 806
+# llm_note = Three coord clauses (slay/return/go); "neither will I return" = formal inversion per §5; "that I may release" = purpose advcl; "for I know that" = causal advcl with ccomp
+1	But	but	CCONJ	CC	_	10	cc	_	_
+2	Lamoni	Lamoni	PROPN	NNP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	_	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	3	obl	_	_
+6	:	:	PUNCT	:	_	3	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	10	nsubj	_	_
+8	will	will	AUX	MD	_	10	aux	_	_
+9	not	not	PART	RB	_	10	advmod	_	_
+10	slay	slay	VERB	VB	_	3	ccomp	_	_
+11	Ammon	Ammon	PROPN	NNP	_	10	obj	_	_
+12	,	,	PUNCT	,	_	10	punct	_	_
+13	neither	neither	ADV	RB	_	16	advmod	_	_
+14	will	will	AUX	MD	_	16	aux	_	_
+15	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	16	nsubj	_	_
+16	return	return	VERB	VB	_	10	conj	_	_
+17	to	to	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	land	land	NOUN	NN	_	16	obl	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	Ishmael	Ishmael	PROPN	NNP	_	19	nmod	_	_
+22	,	,	PUNCT	,	_	16	punct	_	_
+23	but	but	CCONJ	CC	_	25	cc	_	_
+24	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	25	nsubj	_	_
+25	go	go	VERB	VBP	_	10	conj	_	_
+26	to	to	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	land	land	NOUN	NN	_	25	obl	_	_
+29	of	of	ADP	IN	_	30	case	_	_
+30	Middoni	Middoni	PROPN	NNP	_	28	nmod	_	_
+31	that	that	SCONJ	IN	_	34	mark	_	_
+32	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	34	nsubj	_	_
+33	may	may	AUX	MD	_	34	aux	_	_
+34	release	release	VERB	VB	_	25	advcl	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	brethren	brethren	NOUN	NNS	_	34	obj	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	Ammon	Ammon	PROPN	NNP	_	36	nmod	_	_
+39	,	,	PUNCT	,	_	34	punct	_	_
+40	for	for	SCONJ	IN	_	42	mark	_	_
+41	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	42	nsubj	_	_
+42	know	know	VERB	VBP	_	25	advcl	_	_
+43	that	that	SCONJ	IN	_	46	mark	_	_
+44	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	46	nsubj	_	_
+45	are	be	AUX	VBP	_	46	cop	_	_
+46	just	man	NOUN	NNS	_	42	ccomp	_	_
+47	men	just	ADJ	JJ	_	46	amod	_	_
+48	and	and	CCONJ	CC	_	50	cc	_	_
+49	holy	holy	ADJ	JJ	_	50	amod	_	_
+50	prophets	prophet	NOUN	NNS	_	46	conj	_	_
+51	of	of	ADP	IN	_	54	case	_	_
+52	the	the	DET	DT	_	54	det	_	_
+53	true	true	ADJ	JJ	_	54	amod	_	_
+54	God	God	PROPN	NNP	_	50	nmod	_	_
+55	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now when his father had heard these words, he was angry with him, and he drew his sword that he might smite him to the earth.
+# sent_id = 807
+# llm_note = temporal advcl; two coord main verbs (was angry / drew); "that he might smite" = purpose advcl of drew
+1	Now	now	ADV	RB	_	10	advmod	_	_
+2	when	when	SCONJ	WRB	_	6	mark	_	_
+3	his	he	PRON	PRP$	_	4	nmod:poss	_	_
+4	father	father	NOUN	NN	_	6	nsubj	_	_
+5	had	have	AUX	VBD	_	6	aux	_	_
+6	heard	hear	VERB	VBN	_	10	advcl	_	_
+7	these	this	DET	DT	_	8	det	_	_
+8	words	word	NOUN	NNS	_	6	obj	_	_
+9	,	,	PUNCT	,	_	6	punct	_	_
+10	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	12	nsubj	_	_
+11	was	be	AUX	VBD	_	12	cop	_	_
+12	angry	angry	ADJ	JJ	_	0	root	_	_
+13	with	with	ADP	IN	_	14	case	_	_
+14	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	12	obl	_	_
+15	,	,	PUNCT	,	_	12	punct	_	_
+16	and	and	CCONJ	CC	_	18	cc	_	_
+17	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	18	nsubj	_	_
+18	drew	draw	VERB	VBD	_	12	conj	_	_
+19	his	he	PRON	PRP$	_	20	nmod:poss	_	_
+20	sword	sword	NOUN	NN	_	18	obj	_	_
+21	that	that	SCONJ	IN	_	24	mark	_	_
+22	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	24	nsubj	_	_
+23	might	may	AUX	MD	_	24	aux	_	_
+24	smite	smite	VERB	VB	_	18	advcl	_	_
+25	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	24	obj	_	_
+26	to	to	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	earth	earth	NOUN	NN	_	24	obl	_	_
+29	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = But Ammon stood forth and said unto him: Behold, thou shalt not slay thy son; nevertheless, it were better that he should fall than thee, for behold, he has repented of his sins; but if thou shouldst fall at this time, in thine anger, thy soul could not be saved.
+# sent_id = 808
+# llm_note = "stood forth" = main verb + advmod; "said" = conj; direct speech: Behold(discourse); "it were better that" = extraposition with "it" expl, "better" xcomp, "that-clause" csubj; "than thee" = obl of better; "for behold he has repented" = causal advcl; "but if thou shouldst fall...thy soul could not be saved" = advcl+apodosis
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	Ammon	Ammon	PROPN	NNP	_	3	nsubj	_	_
+3	stood	stand	VERB	VBD	_	0	root	_	_
+4	forth	forth	ADV	RB	_	3	advmod	_	_
+5	and	and	CCONJ	CC	_	6	cc	_	_
+6	said	say	VERB	VBD	_	3	conj	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	6	obl	_	_
+9	:	:	PUNCT	:	_	6	punct	_	_
+10	Behold	behold	INTJ	UH	_	15	discourse	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	15	nsubj	_	_
+13	shalt	shall	AUX	MD	_	15	aux	_	_
+14	not	not	PART	RB	_	15	advmod	_	_
+15	slay	slay	VERB	VB	_	6	ccomp	_	_
+16	thy	thou	PRON	PRP$	_	17	nmod:poss	_	_
+17	son	son	NOUN	NN	_	15	obj	_	_
+18	;	;	PUNCT	,	_	23	punct	_	_
+19	nevertheless	nevertheless	ADV	RB	_	23	advmod	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	it	it	PRON	PRP	_	23	expl	_	_
+22	were	be	AUX	VBD	_	23	cop	_	_
+23	better	good	ADJ	JJR	_	15	conj	_	_
+24	that	that	SCONJ	IN	_	27	mark	_	_
+25	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	27	nsubj	_	_
+26	should	shall	AUX	MD	_	27	aux	_	_
+27	fall	fall	VERB	VB	_	23	csubj	_	_
+28	than	than	ADP	IN	_	29	case	_	_
+29	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	23	obl	_	_
+30	,	,	PUNCT	,	_	23	punct	_	_
+31	for	for	SCONJ	IN	_	36	mark	_	_
+32	behold	behold	INTJ	UH	_	36	discourse	_	_
+33	,	,	PUNCT	,	_	32	punct	_	_
+34	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	36	nsubj	_	_
+35	has	have	AUX	VBZ	_	36	aux	_	_
+36	repented	repent	VERB	VBN	_	23	advcl	_	_
+37	of	of	ADP	IN	_	39	case	_	_
+38	his	he	PRON	PRP$	_	39	nmod:poss	_	_
+39	sins	sin	NOUN	NNS	_	36	obl	_	_
+40	;	;	PUNCT	,	_	59	punct	_	_
+41	but	but	CCONJ	CC	_	59	cc	_	_
+42	if	if	SCONJ	IN	_	45	mark	_	_
+43	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	45	nsubj	_	_
+44	shouldst	shall	AUX	MD	_	45	aux	_	_
+45	fall	fall	VERB	VB	_	59	advcl	_	_
+46	at	at	ADP	IN	_	48	case	_	_
+47	this	this	DET	DT	_	48	det	_	_
+48	time	time	NOUN	NN	_	45	obl	_	_
+49	,	,	PUNCT	,	_	45	punct	_	_
+50	in	in	ADP	IN	_	52	case	_	_
+51	thine	thou	PRON	PRP$	_	52	nmod:poss	_	_
+52	anger	anger	NOUN	NN	_	45	obl	_	_
+53	,	,	PUNCT	,	_	45	punct	_	_
+54	thy	thou	PRON	PRP$	_	55	nmod:poss	_	_
+55	soul	soul	NOUN	NN	_	59	nsubj:pass	_	_
+56	could	can	AUX	MD	_	59	aux	_	_
+57	not	not	PART	RB	_	59	advmod	_	_
+58	be	be	AUX	VB	_	59	aux:pass	_	_
+59	saved	save	VERB	VBN	_	15	conj	_	_
+60	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And again, it is expedient that thou shouldst forbear; for if thou shouldst slay thy son, he being an innocent man, his blood would cry from the ground to the Lord his God, for vengeance to come upon thee; and perhaps thou wouldst lose thy soul.
+# sent_id = 809
+# llm_note = "it is expedient that" = extraposition: it=expl, expedient=adj root, "that"-clause=csubj; conditional advcl "for if thou shouldst slay"; "he being an innocent man" = absolute participial (advcl); "for vengeance to come" = purpose advcl; final coord "thou wouldst lose"
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	again	again	ADV	RB	_	6	advmod	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	it	it	PRON	PRP	_	6	expl	_	_
+5	is	be	AUX	VBZ	_	6	cop	_	_
+6	expedient	expedient	ADJ	JJ	_	0	root	_	_
+7	that	that	SCONJ	IN	_	10	mark	_	_
+8	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	10	nsubj	_	_
+9	shouldst	shall	AUX	MD	_	10	aux	_	_
+10	forbear	forbear	VERB	VB	_	6	csubj	_	_
+11	;	;	PUNCT	,	_	29	punct	_	_
+12	for	for	SCONJ	IN	_	16	mark	_	_
+13	if	if	SCONJ	IN	_	16	mark	_	_
+14	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	16	nsubj	_	_
+15	shouldst	shall	AUX	MD	_	16	aux	_	_
+16	slay	slay	VERB	VB	_	29	advcl	_	_
+17	thy	thou	PRON	PRP$	_	18	nmod:poss	_	_
+18	son	son	NOUN	NN	_	16	obj	_	_
+19	,	,	PUNCT	,	_	21	punct	_	_
+20	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	21	nsubj	_	_
+21	being	be	VERB	VBG	_	16	advcl	_	_
+22	an	a	DET	DT	_	24	det	_	_
+23	innocent	innocent	ADJ	JJ	_	24	amod	_	_
+24	man	man	NOUN	NN	_	21	xcomp	_	_
+25	,	,	PUNCT	,	_	21	punct	_	_
+26	his	he	PRON	PRP$	_	27	nmod:poss	_	_
+27	blood	blood	NOUN	NN	_	29	nsubj	_	_
+28	would	will	AUX	MD	_	29	aux	_	_
+29	cry	cry	VERB	VB	_	6	conj	_	_
+30	from	from	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	ground	ground	NOUN	NN	_	29	obl	_	_
+33	to	to	ADP	IN	_	36	case	_	_
+34	the	the	DET	DT	_	36	det	_	_
+35	Lord	Lord	PROPN	NNP	_	36	compound	_	_
+36	his	he	PRON	PRP$	_	37	nmod:poss	_	_
+37	God	God	PROPN	NNP	_	29	obl	_	_
+38	,	,	PUNCT	,	_	29	punct	_	_
+39	for	for	SCONJ	IN	_	42	mark	_	_
+40	vengeance	vengeance	NOUN	NN	_	42	nsubj	_	_
+41	to	to	PART	TO	_	42	mark	_	_
+42	come	come	VERB	VB	_	29	advcl	_	_
+43	upon	upon	ADP	IN	_	44	case	_	_
+44	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	42	obl	_	_
+45	;	;	PUNCT	,	_	50	punct	_	_
+46	and	and	CCONJ	CC	_	50	cc	_	_
+47	perhaps	perhaps	ADV	RB	_	50	advmod	_	_
+48	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	50	nsubj	_	_
+49	wouldst	will	AUX	MD	_	50	aux	_	_
+50	lose	lose	VERB	VB	_	6	conj	_	_
+51	thy	thou	PRON	PRP$	_	52	nmod:poss	_	_
+52	soul	soul	NOUN	NN	_	50	obj	_	_
+53	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Now when Ammon had said these words unto him, he answered him, saying: I know that if I should slay my son, that I should shed innocent blood; for it is thou that hast sought to destroy him.
+# sent_id = 810
+# llm_note = temporal advcl; "answered him saying" = verb+depict; "I know that if I should slay...that I should shed" = nested ccomp; "for it is thou that hast sought" = identificational cleft: it=expl, thou=xcomp, "that hast sought"=acl:relcl
+1	Now	now	ADV	RB	_	12	advmod	_	_
+2	when	when	SCONJ	WRB	_	5	mark	_	_
+3	Ammon	Ammon	PROPN	NNP	_	5	nsubj	_	_
+4	had	have	AUX	VBD	_	5	aux	_	_
+5	said	say	VERB	VBN	_	12	advcl	_	_
+6	these	this	DET	DT	_	7	det	_	_
+7	words	word	NOUN	NNS	_	5	obj	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	5	obl	_	_
+10	,	,	PUNCT	,	_	5	punct	_	_
+11	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	12	nsubj	_	_
+12	answered	answer	VERB	VBD	_	0	root	_	_
+13	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	12	obj	_	_
+14	,	,	PUNCT	,	_	15	punct	_	_
+15	saying	say	VERB	VBG	_	12	advcl	_	_
+16	:	:	PUNCT	:	_	15	punct	_	_
+17	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	18	nsubj	_	_
+18	know	know	VERB	VBP	_	12	ccomp	_	_
+19	that	that	SCONJ	IN	_	23	mark	_	_
+20	if	if	SCONJ	IN	_	23	mark	_	_
+21	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	23	nsubj	_	_
+22	should	shall	AUX	MD	_	23	aux	_	_
+23	slay	slay	VERB	VB	_	18	ccomp	_	_
+24	my	I	PRON	PRP$	_	25	nmod:poss	_	_
+25	son	son	NOUN	NN	_	23	obj	_	_
+26	,	,	PUNCT	,	_	23	punct	_	_
+27	that	that	SCONJ	IN	_	30	mark	_	_
+28	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	30	nsubj	_	_
+29	should	shall	AUX	MD	_	30	aux	_	_
+30	shed	shed	VERB	VB	_	23	conj	_	_
+31	innocent	innocent	ADJ	JJ	_	32	amod	_	_
+32	blood	blood	NOUN	NN	_	30	obj	_	_
+33	;	;	PUNCT	,	_	36	punct	_	_
+34	for	for	SCONJ	IN	_	36	mark	_	_
+35	it	it	PRON	PRP	_	36	expl	_	_
+36	is	be	VERB	VBZ	_	18	advcl	_	_
+37	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	36	xcomp	_	_
+38	that	that	SCONJ	IN	_	40	mark	_	_
+39	hast	have	AUX	VBZ	_	40	aux	_	_
+40	sought	seek	VERB	VBN	_	37	acl:relcl	_	_
+41	to	to	PART	TO	_	42	mark	_	_
+42	destroy	destroy	VERB	VB	_	40	xcomp	_	_
+43	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	42	obj	_	_
+44	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = And he stretched forth his hand to slay Ammon.
+# sent_id = 811
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	3	nsubj	_	_
+3	stretched	stretch	VERB	VBD	_	0	root	_	_
+4	forth	forth	ADV	RB	_	3	advmod	_	_
+5	his	he	PRON	PRP$	_	6	nmod:poss	_	_
+6	hand	hand	NOUN	NN	_	3	obj	_	_
+7	to	to	PART	TO	_	8	mark	_	_
+8	slay	slay	VERB	VB	_	3	advcl	_	_
+9	Ammon	Ammon	PROPN	NNP	_	8	obj	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But Ammon withstood his blows, and also smote his arm that he could not use it.
+# sent_id = 812
+# llm_note = "withstood...and...smote" coord; "that he could not use it" = result/purpose advcl
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	Ammon	Ammon	PROPN	NNP	_	3	nsubj	_	_
+3	withstood	withstand	VERB	VBD	_	0	root	_	_
+4	his	he	PRON	PRP$	_	5	nmod:poss	_	_
+5	blows	blow	NOUN	NNS	_	3	obj	_	_
+6	,	,	PUNCT	,	_	3	punct	_	_
+7	and	and	CCONJ	CC	_	9	cc	_	_
+8	also	also	ADV	RB	_	9	advmod	_	_
+9	smote	smite	VERB	VBD	_	3	conj	_	_
+10	his	he	PRON	PRP$	_	11	nmod:poss	_	_
+11	arm	arm	NOUN	NN	_	9	obj	_	_
+12	that	that	SCONJ	IN	_	16	mark	_	_
+13	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	16	nsubj	_	_
+14	could	can	AUX	MD	_	16	aux	_	_
+15	not	not	PART	RB	_	16	advmod	_	_
+16	use	use	VERB	VB	_	9	advcl	_	_
+17	it	it	PRON	PRP	_	16	obj	_	_
+18	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now when the king saw that Ammon could slay him, he began to plead with Ammon that he would spare his life.
+# sent_id = 813
+# llm_note = temporal advcl; "began to plead" = aspectual; "that he would spare" = purpose/ccomp of plead
+1	Now	now	ADV	RB	_	13	advmod	_	_
+2	when	when	SCONJ	WRB	_	5	mark	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	king	king	NOUN	NN	_	5	nsubj	_	_
+5	saw	see	VERB	VBD	_	13	advcl	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	Ammon	Ammon	PROPN	NNP	_	9	nsubj	_	_
+8	could	can	AUX	MD	_	9	aux	_	_
+9	slay	slay	VERB	VB	_	5	ccomp	_	_
+10	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	9	obj	_	_
+11	,	,	PUNCT	,	_	5	punct	_	_
+12	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	13	nsubj	_	_
+13	began	begin	VERB	VBD	_	0	root	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	plead	plead	VERB	VB	_	13	xcomp	_	_
+16	with	with	ADP	IN	_	17	case	_	_
+17	Ammon	Ammon	PROPN	NNP	_	15	obl	_	_
+18	that	that	SCONJ	IN	_	21	mark	_	_
+19	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	21	nsubj	_	_
+20	would	will	AUX	MD	_	21	aux	_	_
+21	spare	spare	VERB	VB	_	15	ccomp	_	_
+22	his	he	PRON	PRP$	_	23	nmod:poss	_	_
+23	life	life	NOUN	NN	_	21	obj	_	_
+24	.	.	PUNCT	.	_	13	punct	_	_
+
+# text = But Ammon raised his sword, and said unto him: Behold, I will smite thee except thou wilt grant unto me that my brethren may be cast out of prison.
+# sent_id = 814
+# llm_note = "raised...and said" coord; "Behold" discourse; "except thou wilt grant" = conditional advcl; "that my brethren may be cast out" = ccomp of grant; "cast out" compound:prt
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	Ammon	Ammon	PROPN	NNP	_	3	nsubj	_	_
+3	raised	raise	VERB	VBD	_	0	root	_	_
+4	his	he	PRON	PRP$	_	5	nmod:poss	_	_
+5	sword	sword	NOUN	NN	_	3	obj	_	_
+6	,	,	PUNCT	,	_	3	punct	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	said	say	VERB	VBD	_	3	conj	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	8	obl	_	_
+11	:	:	PUNCT	:	_	8	punct	_	_
+12	Behold	behold	INTJ	UH	_	16	discourse	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	16	nsubj	_	_
+15	will	will	AUX	MD	_	16	aux	_	_
+16	smite	smite	VERB	VB	_	8	ccomp	_	_
+17	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	16	obj	_	_
+18	except	except	SCONJ	IN	_	21	mark	_	_
+19	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	21	nsubj	_	_
+20	wilt	will	AUX	MD	_	21	aux	_	_
+21	grant	grant	VERB	VB	_	16	advcl	_	_
+22	unto	unto	ADP	IN	_	23	case	_	_
+23	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	21	obl	_	_
+24	that	that	SCONJ	IN	_	27	mark	_	_
+25	my	I	PRON	PRP$	_	26	nmod:poss	_	_
+26	brethren	brethren	NOUN	NNS	_	29	nsubj:pass	_	_
+27	may	may	AUX	MD	_	29	aux	_	_
+28	be	be	AUX	VB	_	29	aux:pass	_	_
+29	cast	cast	VERB	VBN	_	21	ccomp	_	_
+30	out	out	ADP	RP	_	29	compound:prt	_	_
+31	of	of	ADP	IN	_	32	case	_	_
+32	prison	prison	NOUN	NN	_	30	nmod	_	_
+33	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now the king, fearing he should lose his life, said:
+# sent_id = 815
+# llm_note = "fearing he should lose his life" = advcl of said; "fearing" = participial
+1	Now	now	ADV	RB	_	12	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	king	king	NOUN	NN	_	12	nsubj	_	_
+4	,	,	PUNCT	,	_	5	punct	_	_
+5	fearing	fear	VERB	VBG	_	12	advcl	_	_
+6	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	8	nsubj	_	_
+7	should	shall	AUX	MD	_	8	aux	_	_
+8	lose	lose	VERB	VB	_	5	ccomp	_	_
+9	his	he	PRON	PRP$	_	10	nmod:poss	_	_
+10	life	life	NOUN	NN	_	8	obj	_	_
+11	,	,	PUNCT	,	_	5	punct	_	_
+12	said	say	VERB	VBD	_	0	root	_	_
+13	:	:	PUNCT	:	_	12	punct	_	_
+
+# text = If thou wilt spare me I will grant unto thee whatsoever thou wilt ask, even to half of the kingdom.
+# sent_id = 816
+# llm_note = conditional advcl "If thou wilt spare me"; "grant unto thee whatsoever thou wilt ask" = ccomp with free relative "whatsoever"; "even to half of the kingdom" = obl
+1	If	if	SCONJ	IN	_	4	mark	_	_
+2	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	4	nsubj	_	_
+3	wilt	will	AUX	MD	_	4	aux	_	_
+4	spare	spare	VERB	VB	_	8	advcl	_	_
+5	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	4	obj	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+7	will	will	AUX	MD	_	8	aux	_	_
+8	grant	grant	VERB	VB	_	0	root	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	8	obl	_	_
+11	whatsoever	whatsoever	PRON	WDT	_	14	obj	_	_
+12	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	14	nsubj	_	_
+13	wilt	will	AUX	MD	_	14	aux	_	_
+14	ask	ask	VERB	VB	_	8	ccomp	_	_
+15	,	,	PUNCT	,	_	8	punct	_	_
+16	even	even	ADV	RB	_	17	advmod	_	_
+17	to	to	ADP	IN	_	19	case	_	_
+18	half	half	NOUN	NN	_	8	obl	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	kingdom	kingdom	NOUN	NN	_	18	nmod	_	_
+22	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = Now when Ammon saw that he had wrought upon the old king according to his desire, he said unto him:
+# sent_id = 817
+1	Now	now	ADV	RB	_	19	advmod	_	_
+2	when	when	SCONJ	WRB	_	4	mark	_	_
+3	Ammon	Ammon	PROPN	NNP	_	4	nsubj	_	_
+4	saw	see	VERB	VBD	_	19	advcl	_	_
+5	that	that	SCONJ	IN	_	8	mark	_	_
+6	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	8	nsubj	_	_
+7	had	have	AUX	VBD	_	8	aux	_	_
+8	wrought	work	VERB	VBN	_	4	ccomp	_	_
+9	upon	upon	ADP	IN	_	12	case	_	_
+10	the	the	DET	DT	_	12	det	_	_
+11	old	old	ADJ	JJ	_	12	amod	_	_
+12	king	king	NOUN	NN	_	8	obl	_	_
+13	according	according	ADP	IN	_	15	case	_	_
+14	to	to	ADP	IN	_	13	fixed	_	_
+15	his	he	PRON	PRP$	_	16	nmod:poss	_	_
+16	desire	desire	NOUN	NN	_	8	obl	_	_
+17	,	,	PUNCT	,	_	4	punct	_	_
+18	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	19	nsubj	_	_
+19	said	say	VERB	VBD	_	0	root	_	_
+20	unto	unto	ADP	IN	_	21	case	_	_
+21	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	19	obl	_	_
+22	:	:	PUNCT	:	_	19	punct	_	_
+
+# text = If thou wilt grant that my brethren may be cast out of prison, and also that Lamoni may retain his kingdom, and that ye be not displeased with him, but grant that he may do according to his own desires in whatsoever thing he thinketh, then will I spare thee; otherwise I will smite thee to the earth.
+# sent_id = 818
+# llm_note = Long conditional ("If thou wilt grant...then will I spare thee"); four that-clauses as ccomp of grant; "then will I spare" = formal inversion; "otherwise I will smite" = conj
+1	If	if	SCONJ	IN	_	4	mark	_	_
+2	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	4	nsubj	_	_
+3	wilt	will	AUX	MD	_	4	aux	_	_
+4	grant	grant	VERB	VB	_	53	advcl	_	_
+5	that	that	SCONJ	IN	_	10	mark	_	_
+6	my	I	PRON	PRP$	_	7	nmod:poss	_	_
+7	brethren	brethren	NOUN	NNS	_	10	nsubj:pass	_	_
+8	may	may	AUX	MD	_	10	aux	_	_
+9	be	be	AUX	VB	_	10	aux:pass	_	_
+10	cast	cast	VERB	VBN	_	4	ccomp	_	_
+11	out	out	ADP	RP	_	10	compound:prt	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	prison	prison	NOUN	NN	_	11	nmod	_	_
+14	,	,	PUNCT	,	_	10	punct	_	_
+15	and	and	CCONJ	CC	_	20	cc	_	_
+16	also	also	ADV	RB	_	20	advmod	_	_
+17	that	that	SCONJ	IN	_	20	mark	_	_
+18	Lamoni	Lamoni	PROPN	NNP	_	20	nsubj	_	_
+19	may	may	AUX	MD	_	20	aux	_	_
+20	retain	retain	VERB	VB	_	10	conj	_	_
+21	his	he	PRON	PRP$	_	22	nmod:poss	_	_
+22	kingdom	kingdom	NOUN	NN	_	20	obj	_	_
+23	,	,	PUNCT	,	_	20	punct	_	_
+24	and	and	CCONJ	CC	_	29	cc	_	_
+25	that	that	SCONJ	IN	_	29	mark	_	_
+26	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	29	nsubj:pass	_	_
+27	be	be	AUX	VBP	_	29	aux:pass	_	_
+28	not	not	PART	RB	_	29	advmod	_	_
+29	displeased	displease	VERB	VBN	_	10	conj	_	_
+30	with	with	ADP	IN	_	31	case	_	_
+31	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	29	obl	_	_
+32	,	,	PUNCT	,	_	29	punct	_	_
+33	but	but	CCONJ	CC	_	34	cc	_	_
+34	grant	grant	VERB	VB	_	10	conj	_	_
+35	that	that	SCONJ	IN	_	38	mark	_	_
+36	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	38	nsubj	_	_
+37	may	may	AUX	MD	_	38	aux	_	_
+38	do	do	VERB	VB	_	34	ccomp	_	_
+39	according	according	ADP	IN	_	41	case	_	_
+40	to	to	ADP	IN	_	39	fixed	_	_
+41	his	he	PRON	PRP$	_	43	nmod:poss	_	_
+42	own	own	ADJ	JJ	_	43	amod	_	_
+43	desires	desire	NOUN	NNS	_	38	obl	_	_
+44	in	in	ADP	IN	_	46	case	_	_
+45	whatsoever	whatsoever	DET	WDT	_	46	det	_	_
+46	thing	thing	NOUN	NN	_	43	nmod	_	_
+47	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	48	nsubj	_	_
+48	thinketh	think	VERB	VBZ	_	46	acl:relcl	_	_
+49	,	,	PUNCT	,	_	53	punct	_	_
+50	then	then	ADV	RB	_	53	advmod	_	_
+51	will	will	AUX	MD	_	53	aux	_	_
+52	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	53	nsubj	_	_
+53	spare	spare	VERB	VB	_	0	root	_	_
+54	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	53	obj	_	_
+55	;	;	PUNCT	,	_	59	punct	_	_
+56	otherwise	otherwise	ADV	RB	_	59	advmod	_	_
+57	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	59	nsubj	_	_
+58	will	will	AUX	MD	_	59	aux	_	_
+59	smite	smite	VERB	VB	_	53	conj	_	_
+60	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	59	obj	_	_
+61	to	to	ADP	IN	_	63	case	_	_
+62	the	the	DET	DT	_	63	det	_	_
+63	earth	earth	NOUN	NN	_	59	obl	_	_
+64	.	.	PUNCT	.	_	53	punct	_	_
+
+# text = Now when Ammon had said these words, the king began to rejoice because of his life.
+# sent_id = 819
+1	Now	now	ADV	RB	_	11	advmod	_	_
+2	when	when	SCONJ	WRB	_	5	mark	_	_
+3	Ammon	Ammon	PROPN	NNP	_	5	nsubj	_	_
+4	had	have	AUX	VBD	_	5	aux	_	_
+5	said	say	VERB	VBN	_	11	advcl	_	_
+6	these	this	DET	DT	_	7	det	_	_
+7	words	word	NOUN	NNS	_	5	obj	_	_
+8	,	,	PUNCT	,	_	5	punct	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	king	king	NOUN	NN	_	11	nsubj	_	_
+11	began	begin	VERB	VBD	_	0	root	_	_
+12	to	to	PART	TO	_	13	mark	_	_
+13	rejoice	rejoice	VERB	VB	_	11	xcomp	_	_
+14	because	because	ADP	IN	_	17	case	_	_
+15	of	of	ADP	IN	_	14	fixed	_	_
+16	his	he	PRON	PRP$	_	17	nmod:poss	_	_
+17	life	life	NOUN	NN	_	13	obl	_	_
+18	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = And when he saw that Ammon had no desire to destroy him, and when he also saw the great love he had for his son Lamoni, he was astonished exceedingly, and said:
+# sent_id = 820
+# llm_note = Two parallel temporal "when"-clauses preceding main clause "he was astonished"; "said:" introduces following speech
+1	And	and	CCONJ	CC	_	30	cc	_	_
+2	when	when	SCONJ	WRB	_	4	mark	_	_
+3	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	4	nsubj	_	_
+4	saw	see	VERB	VBD	_	30	advcl	_	_
+5	that	that	SCONJ	IN	_	7	mark	_	_
+6	Ammon	Ammon	PROPN	NNP	_	7	nsubj	_	_
+7	had	have	VERB	VBD	_	4	ccomp	_	_
+8	no	no	DET	DT	_	9	det	_	_
+9	desire	desire	NOUN	NN	_	7	obj	_	_
+10	to	to	PART	TO	_	11	mark	_	_
+11	destroy	destroy	VERB	VB	_	9	acl	_	_
+12	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	11	obj	_	_
+13	,	,	PUNCT	,	_	4	punct	_	_
+14	and	and	CCONJ	CC	_	18	cc	_	_
+15	when	when	SCONJ	WRB	_	18	mark	_	_
+16	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	18	nsubj	_	_
+17	also	also	ADV	RB	_	18	advmod	_	_
+18	saw	see	VERB	VBD	_	4	conj	_	_
+19	the	the	DET	DT	_	21	det	_	_
+20	great	great	ADJ	JJ	_	21	amod	_	_
+21	love	love	NOUN	NN	_	18	obj	_	_
+22	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	23	nsubj	_	_
+23	had	have	VERB	VBD	_	21	acl:relcl	_	_
+24	for	for	ADP	IN	_	27	case	_	_
+25	his	he	PRON	PRP$	_	27	nmod:poss	_	_
+26	son	son	NOUN	NN	_	27	compound	_	_
+27	Lamoni	Lamoni	PROPN	NNP	_	23	obl	_	_
+28	,	,	PUNCT	,	_	4	punct	_	_
+29	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	30	nsubj	_	_
+30	was	be	AUX	VBD	_	0	root	_	_
+31	astonished	astonish	VERB	VBN	_	30	xcomp	_	_
+32	exceedingly	exceedingly	ADV	RB	_	31	advmod	_	_
+33	,	,	PUNCT	,	_	30	punct	_	_
+34	and	and	CCONJ	CC	_	35	cc	_	_
+35	said	say	VERB	VBD	_	30	conj	_	_
+36	:	:	PUNCT	:	_	35	punct	_	_
+
+# text = Because this is all that thou hast desired, that I would release thy brethren, and suffer that my son Lamoni should retain his kingdom, behold, I will grant unto you that my son may retain his kingdom from this time and forever; and I will govern him no more--
+# sent_id = 821
+# llm_note = causal advcl "Because this is all that thou hast desired" (fronted); "that I would release" = appos of "all"/"that thou hast desired"; "and suffer that" = conj; main clause "I will grant"; "and I will govern him no more" = conj; "no more" = advmod
+1	Because	because	SCONJ	IN	_	32	mark	_	_
+2	this	this	PRON	DT	_	4	nsubj	_	_
+3	is	be	AUX	VBZ	_	4	cop	_	_
+4	all	all	PRON	NN	_	32	advcl	_	_
+5	that	that	SCONJ	IN	_	8	mark	_	_
+6	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	8	nsubj	_	_
+7	hast	have	AUX	VBZ	_	8	aux	_	_
+8	desired	desire	VERB	VBN	_	4	acl	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	that	that	SCONJ	IN	_	13	mark	_	_
+11	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	13	nsubj	_	_
+12	would	will	AUX	MD	_	13	aux	_	_
+13	release	release	VERB	VB	_	4	acl	_	_
+14	thy	thou	PRON	PRP$	_	15	nmod:poss	_	_
+15	brethren	brethren	NOUN	NNS	_	13	obj	_	_
+16	,	,	PUNCT	,	_	13	punct	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	suffer	suffer	VERB	VB	_	13	conj	_	_
+19	that	that	SCONJ	IN	_	24	mark	_	_
+20	my	I	PRON	PRP$	_	22	nmod:poss	_	_
+21	son	son	NOUN	NN	_	22	compound	_	_
+22	Lamoni	Lamoni	PROPN	NNP	_	24	nsubj	_	_
+23	should	shall	AUX	MD	_	24	aux	_	_
+24	retain	retain	VERB	VB	_	18	ccomp	_	_
+25	his	he	PRON	PRP$	_	26	nmod:poss	_	_
+26	kingdom	kingdom	NOUN	NN	_	24	obj	_	_
+27	,	,	PUNCT	,	_	32	punct	_	_
+28	behold	behold	INTJ	UH	_	32	discourse	_	_
+29	,	,	PUNCT	,	_	28	punct	_	_
+30	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	32	nsubj	_	_
+31	will	will	AUX	MD	_	32	aux	_	_
+32	grant	grant	VERB	VB	_	0	root	_	_
+33	unto	unto	ADP	IN	_	34	case	_	_
+34	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	32	obl	_	_
+35	that	that	SCONJ	IN	_	39	mark	_	_
+36	my	I	PRON	PRP$	_	38	nmod:poss	_	_
+37	son	son	NOUN	NN	_	38	compound	_	_
+38	may	may	AUX	MD	_	39	aux	_	_
+39	retain	retain	VERB	VB	_	32	ccomp	_	_
+40	his	he	PRON	PRP$	_	41	nmod:poss	_	_
+41	kingdom	kingdom	NOUN	NN	_	39	obj	_	_
+42	from	from	ADP	IN	_	44	case	_	_
+43	this	this	DET	DT	_	44	det	_	_
+44	time	time	NOUN	NN	_	39	obl	_	_
+45	and	and	CCONJ	CC	_	46	cc	_	_
+46	forever	forever	ADV	RB	_	44	conj	_	_
+47	;	;	PUNCT	,	_	51	punct	_	_
+48	and	and	CCONJ	CC	_	51	cc	_	_
+49	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	51	nsubj	_	_
+50	will	will	AUX	MD	_	51	aux	_	_
+51	govern	govern	VERB	VB	_	32	conj	_	_
+52	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	51	obj	_	_
+53	no	no	ADV	RB	_	54	advmod	_	_
+54	more	more	ADV	RBR	_	51	advmod	_	_
+55	--	--	PUNCT	:	_	51	punct	_	_
+
+# text = And I will also grant unto thee that thy brethren may be cast out of prison, and thou and thy brethren may come unto me, in my kingdom; for I shall greatly desire to see thee.
+# sent_id = 822
+# llm_note = "grant...that thy brethren may be cast out" = ccomp; "and thou and thy brethren may come" = conj; "for I shall greatly desire to see thee" = causal advcl
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	5	nsubj	_	_
+3	will	will	AUX	MD	_	5	aux	_	_
+4	also	also	ADV	RB	_	5	advmod	_	_
+5	grant	grant	VERB	VB	_	0	root	_	_
+6	unto	unto	ADP	IN	_	7	case	_	_
+7	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	5	obl	_	_
+8	that	that	SCONJ	IN	_	13	mark	_	_
+9	thy	thou	PRON	PRP$	_	10	nmod:poss	_	_
+10	brethren	brethren	NOUN	NNS	_	13	nsubj:pass	_	_
+11	may	may	AUX	MD	_	13	aux	_	_
+12	be	be	AUX	VB	_	13	aux:pass	_	_
+13	cast	cast	VERB	VBN	_	5	ccomp	_	_
+14	out	out	ADP	RP	_	13	compound:prt	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	prison	prison	NOUN	NN	_	14	nmod	_	_
+17	,	,	PUNCT	,	_	13	punct	_	_
+18	and	and	CCONJ	CC	_	24	cc	_	_
+19	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	24	nsubj	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	thy	thou	PRON	PRP$	_	22	nmod:poss	_	_
+22	brethren	brethren	NOUN	NNS	_	19	conj	_	_
+23	may	may	AUX	MD	_	24	aux	_	_
+24	come	come	VERB	VB	_	13	conj	_	_
+25	unto	unto	ADP	IN	_	26	case	_	_
+26	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	24	obl	_	_
+27	,	,	PUNCT	,	_	24	punct	_	_
+28	in	in	ADP	IN	_	30	case	_	_
+29	my	I	PRON	PRP$	_	30	nmod:poss	_	_
+30	kingdom	kingdom	NOUN	NN	_	24	obl	_	_
+31	;	;	PUNCT	,	_	36	punct	_	_
+32	for	for	SCONJ	IN	_	36	mark	_	_
+33	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	36	nsubj	_	_
+34	shall	shall	AUX	MD	_	36	aux	_	_
+35	greatly	greatly	ADV	RB	_	36	advmod	_	_
+36	desire	desire	VERB	VB	_	5	advcl	_	_
+37	to	to	PART	TO	_	38	mark	_	_
+38	see	see	VERB	VB	_	36	xcomp	_	_
+39	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2	38	obj	_	_
+40	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = For the king was greatly astonished at the words which he had spoken, and also at the words which had been spoken by his son Lamoni, therefore he was desirous to learn them.
+# sent_id = 823
+# llm_note = causal "For"; two obl "at the words" (coord via "and also at"); two relative clauses; main clause "he was desirous to learn them"
+1	For	for	SCONJ	IN	_	6	mark	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	king	king	NOUN	NN	_	6	nsubj	_	_
+4	was	be	AUX	VBD	_	6	cop	_	_
+5	greatly	greatly	ADV	RB	_	6	advmod	_	_
+6	astonished	astonish	ADJ	JJ	_	0	root	_	_
+7	at	at	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	words	word	NOUN	NNS	_	6	obl	_	_
+10	which	which	PRON	WDT	_	13	obj	_	_
+11	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	13	nsubj	_	_
+12	had	have	AUX	VBD	_	13	aux	_	_
+13	spoken	speak	VERB	VBN	_	9	acl:relcl	_	_
+14	,	,	PUNCT	,	_	9	punct	_	_
+15	and	and	CCONJ	CC	_	19	cc	_	_
+16	also	also	ADV	RB	_	19	advmod	_	_
+17	at	at	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	words	word	NOUN	NNS	_	9	conj	_	_
+20	which	which	PRON	WDT	_	23	nsubj:pass	_	_
+21	had	have	AUX	VBD	_	23	aux	_	_
+22	been	be	AUX	VBN	_	23	aux:pass	_	_
+23	spoken	speak	VERB	VBN	_	19	acl:relcl	_	_
+24	by	by	ADP	IN	_	27	case	_	_
+25	his	he	PRON	PRP$	_	27	nmod:poss	_	_
+26	son	son	NOUN	NN	_	27	compound	_	_
+27	Lamoni	Lamoni	PROPN	NNP	_	23	obl:agent	_	_
+28	,	,	PUNCT	,	_	6	punct	_	_
+29	therefore	therefore	ADV	RB	_	32	advmod	_	_
+30	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	32	nsubj	_	_
+31	was	be	AUX	VBD	_	32	cop	_	_
+32	desirous	desirous	ADJ	JJ	_	6	conj	_	_
+33	to	to	PART	TO	_	34	mark	_	_
+34	learn	learn	VERB	VB	_	32	xcomp	_	_
+35	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	34	obj	_	_
+36	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And it came to pass that Ammon and Lamoni proceeded on their journey towards the land of Middoni.
+# sent_id = 824
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	Ammon	Ammon	PROPN	NNP	_	10	nsubj	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	Lamoni	Lamoni	PROPN	NNP	_	7	conj	_	_
+10	proceeded	proceed	VERB	VBD	_	3	ccomp	_	_
+11	on	on	ADP	IN	_	13	case	_	_
+12	their	they	PRON	PRP$	_	13	nmod:poss	_	_
+13	journey	journey	NOUN	NN	_	10	obl	_	_
+14	towards	towards	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	land	land	NOUN	NN	_	13	nmod	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	Middoni	Middoni	PROPN	NNP	_	16	nmod	_	_
+19	.	.	PUNCT	.	_	3	punct	_	_
+

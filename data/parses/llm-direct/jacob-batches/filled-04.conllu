@@ -1,0 +1,441 @@
+# text = And all flesh is of the dust; and for the selfsame end hath he created them, that they should keep his commandments and glorify him forever.
+# sent_id = 45
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	all	all	DET	DT	_	3	det	_	_
+3	flesh	flesh	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	dust	dust	NOUN	NN	Number=Sing	4	obl	_	_
+8	;	;	PUNCT	:	_	4	punct	_	_
+9	and	and	CCONJ	CC	_	16	cc	_	_
+10	for	for	ADP	IN	_	13	case	_	_
+11	the	the	DET	DT	_	13	det	_	_
+12	selfsame	selfsame	ADJ	JJ	_	13	amod	_	_
+13	end	end	NOUN	NN	Number=Sing	16	obl	_	_
+14	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
+15	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+16	created	create	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	_
+17	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	16	obj	_	_
+18	,	,	PUNCT	,	_	22	punct	_	_
+19	that	that	SCONJ	IN	_	22	mark	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_
+21	should	should	AUX	MD	VerbForm=Fin	22	aux	_	_
+22	keep	keep	VERB	VB	VerbForm=Inf	16	advcl	_	_
+23	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
+24	commandments	commandment	NOUN	NNS	Number=Plur	22	obj	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	glorify	glorify	VERB	VB	VerbForm=Inf	22	conj	_	_
+27	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	obj	_	_
+28	forever	forever	ADV	RB	_	26	advmod	_	_
+29	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And now I make an end of speaking unto you concerning this pride.
+# sent_id = 46
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	make	make	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	an	a	DET	DT	_	6	det	_	_
+6	end	end	NOUN	NN	Number=Sing	4	obj	_	_
+7	of	of	ADP	IN	_	8	mark	_	_
+8	speaking	speak	VERB	VBG	VerbForm=Ger	6	nmod	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	8	obl	_	_
+11	concerning	concerning	ADP	IN	_	13	case	_	_
+12	this	this	DET	DT	Number=Sing|PronType=Dem	13	det	_	_
+13	pride	pride	NOUN	NN	Number=Sing	8	obl	_	_
+14	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And were it not that I must speak unto you concerning a grosser crime, my heart would rejoice exceedingly because of you.
+# sent_id = 47
+# llm_note = Inverted conditional: "were it not that" = fronted conditional clause; main clause = "my heart would rejoice"
+1	And	and	CCONJ	CC	_	19	cc	_	_
+2	were	be	AUX	VBD	Mood=Sub|Tense=Past|VerbForm=Fin	19	advcl	_	_
+3	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	not	not	PART	RB	Polarity=Neg	2	advmod	_	_
+5	that	that	SCONJ	IN	_	8	mark	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+7	must	must	AUX	MD	VerbForm=Fin	8	aux	_	_
+8	speak	speak	VERB	VB	VerbForm=Inf	2	csubj	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	8	obl	_	_
+11	concerning	concerning	ADP	IN	_	14	case	_	_
+12	a	a	DET	DT	_	14	det	_	_
+13	grosser	gross	ADJ	JJR	Degree=Cmp	14	amod	_	_
+14	crime	crime	NOUN	NN	Number=Sing	8	obl	_	_
+15	,	,	PUNCT	,	_	19	punct	_	_
+16	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	heart	heart	NOUN	NN	Number=Sing	19	nsubj	_	_
+18	would	would	AUX	MD	VerbForm=Fin	19	aux	_	_
+19	rejoice	rejoice	VERB	VB	VerbForm=Inf	0	root	_	_
+20	exceedingly	exceedingly	ADV	RB	_	19	advmod	_	_
+21	because	because	ADP	IN	_	23	case	_	_
+22	of	of	ADP	IN	_	21	fixed	_	_
+23	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	19	obl	_	_
+24	.	.	PUNCT	.	_	19	punct	_	_
+
+# text = But the word of God burdens me because of your grosser crimes.
+# sent_id = 48
+1	But	but	CCONJ	CC	_	6	cc	_	_
+2	the	the	DET	DT	_	4	det	_	_
+3	word	word	NOUN	NN	Number=Sing	4	nmod	_	_
+4	of	of	ADP	IN	_	3	case	_	_
+5	God	God	PROPN	NNP	Number=Sing	3	nmod	_	_
+6	burdens	burden	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+8	because	because	ADP	IN	_	12	case	_	_
+9	of	of	ADP	IN	_	8	fixed	_	_
+10	your	you	PRON	PRP$	Person=2|Poss=Yes|PronType=Prs	12	nmod:poss	_	_
+11	grosser	gross	ADJ	JJR	Degree=Cmp	12	amod	_	_
+12	crimes	crime	NOUN	NNS	Number=Plur	6	obl	_	_
+13	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = For behold, thus saith the Lord:
+# sent_id = 49
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	thus	thus	ADV	RB	_	5	advmod	_	_
+5	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	Lord	Lord	PROPN	NNP	Number=Sing	5	nsubj	_	_
+8	:	:	PUNCT	:	_	5	punct	_	_
+
+# text = This people begin to wax in iniquity; they understand not the scriptures, for they seek to excuse themselves in committing whoredoms, because of the things which were written concerning David, and Solomon his son.
+# sent_id = 50
+1	This	this	DET	DT	Number=Sing|PronType=Dem	2	det	_	_
+2	people	people	NOUN	NN	Number=Sing	3	nsubj	_	_
+3	begin	begin	VERB	VBP	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	wax	wax	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	in	in	ADP	IN	_	7	case	_	_
+7	iniquity	iniquity	NOUN	NN	Number=Sing	5	obl	_	_
+8	;	;	PUNCT	:	_	3	punct	_	_
+9	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
+10	understand	understand	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+11	not	not	PART	RB	Polarity=Neg	10	advmod	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	scriptures	scripture	NOUN	NNS	Number=Plur	10	obj	_	_
+14	,	,	PUNCT	,	_	17	punct	_	_
+15	for	for	SCONJ	IN	_	17	mark	_	_
+16	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	17	nsubj	_	_
+17	seek	seek	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	excuse	excuse	VERB	VB	VerbForm=Inf	17	xcomp	_	_
+20	themselves	themselves	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	19	obj	_	_
+21	in	in	ADP	IN	_	22	mark	_	_
+22	committing	commit	VERB	VBG	VerbForm=Ger	19	advcl	_	_
+23	whoredoms	whoredom	NOUN	NNS	Number=Plur	22	obj	_	_
+24	,	,	PUNCT	,	_	22	punct	_	_
+25	because	because	ADP	IN	_	28	case	_	_
+26	of	of	ADP	IN	_	25	fixed	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	things	thing	NOUN	NNS	Number=Plur	22	obl	_	_
+29	which	which	PRON	WDT	PronType=Rel	31	nsubj:pass	_	_
+30	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	31	aux:pass	_	_
+31	written	write	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	28	acl:relcl	_	_
+32	concerning	concerning	ADP	IN	_	33	case	_	_
+33	David	David	PROPN	NNP	Number=Sing	31	obl	_	_
+34	,	,	PUNCT	,	_	36	punct	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	Solomon	Solomon	PROPN	NNP	Number=Sing	33	conj	_	_
+37	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	38	nmod:poss	_	_
+38	son	son	NOUN	NN	Number=Sing	36	appos	_	_
+39	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, David and Solomon truly had many wives and concubines, which thing was abominable before me, saith the Lord.
+# sent_id = 51
+# llm_note = "which thing" = cataphoric relative; "saith the Lord" = parataxis parenthetical at sentence end
+1	Behold	behold	INTJ	UH	_	7	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	David	David	PROPN	NNP	Number=Sing	7	nsubj	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	Solomon	Solomon	PROPN	NNP	Number=Sing	3	conj	_	_
+6	truly	truly	ADV	RB	_	7	advmod	_	_
+7	had	have	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+8	many	many	DET	JJ	_	10	det	_	_
+9	wives	wife	NOUN	NNS	Number=Plur	10	nmod	_	_
+10	and	and	CCONJ	CC	_	9	cc	_	_
+11	concubines	concubine	NOUN	NNS	Number=Plur	9	conj	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	which	which	PRON	WDT	PronType=Rel	14	det	_	_
+14	thing	thing	NOUN	NN	Number=Sing	15	nsubj	_	_
+15	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	parataxis	_	_
+16	abominable	abominable	ADJ	JJ	_	15	xcomp	_	_
+17	before	before	ADP	IN	_	18	case	_	_
+18	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	16	obl	_	_
+19	,	,	PUNCT	,	_	20	punct	_	_
+20	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	Lord	Lord	PROPN	NNP	Number=Sing	20	nsubj	_	_
+23	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = Wherefore, thus saith the Lord, I have led this people forth out of the land of Jerusalem by the power of mine arm, that I might raise up unto me a righteous branch from the fruit of the loins of Joseph.
+# sent_id = 52
+# llm_note = "thus saith the Lord" = parataxis introductory attribution; main speech = "I have led..."
+1	Wherefore	wherefore	ADV	RB	_	10	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	thus	thus	ADV	RB	_	4	advmod	_	_
+4	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	parataxis	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	Lord	Lord	PROPN	NNP	Number=Sing	4	nsubj	_	_
+7	,	,	PUNCT	,	_	4	punct	_	_
+8	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_
+9	have	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	aux	_	_
+10	led	lead	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+11	this	this	DET	DT	Number=Sing|PronType=Dem	12	det	_	_
+12	people	people	NOUN	NN	Number=Sing	10	obj	_	_
+13	forth	forth	ADV	RB	_	10	advmod	_	_
+14	out	out	ADP	IN	_	17	case	_	_
+15	of	of	ADP	IN	_	14	fixed	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	land	land	NOUN	NN	Number=Sing	10	obl	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	17	nmod	_	_
+20	by	by	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	power	power	NOUN	NN	Number=Sing	10	obl	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	mine	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	25	nmod:poss	_	_
+25	arm	arm	NOUN	NN	Number=Sing	22	nmod	_	_
+26	,	,	PUNCT	,	_	30	punct	_	_
+27	that	that	SCONJ	IN	_	30	mark	_	_
+28	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	30	nsubj	_	_
+29	might	might	AUX	MD	VerbForm=Fin	30	aux	_	_
+30	raise	raise	VERB	VB	VerbForm=Inf	10	advcl	_	_
+31	up	up	ADP	RP	_	30	compound:prt	_	_
+32	unto	unto	ADP	IN	_	33	case	_	_
+33	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	30	obl	_	_
+34	a	a	DET	DT	_	36	det	_	_
+35	righteous	righteous	ADJ	JJ	_	36	amod	_	_
+36	branch	branch	NOUN	NN	Number=Sing	30	obj	_	_
+37	from	from	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	_	39	det	_	_
+39	fruit	fruit	NOUN	NN	Number=Sing	36	nmod	_	_
+40	of	of	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	_	42	det	_	_
+42	loins	loin	NOUN	NNS	Number=Plur	39	nmod	_	_
+43	of	of	ADP	IN	_	44	case	_	_
+44	Joseph	Joseph	PROPN	NNP	Number=Sing	42	nmod	_	_
+45	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = Wherefore, I the Lord God will not suffer that this people shall do like unto them of old.
+# sent_id = 53
+# llm_note = "I the Lord God" = appositive title; "suffer that" = volition verb + ccomp
+1	Wherefore	wherefore	ADV	RB	_	9	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+4	the	the	DET	DT	_	6	det	_	_
+5	Lord	Lord	PROPN	NNP	Number=Sing	6	compound	_	_
+6	God	God	PROPN	NNP	Number=Sing	3	appos	_	_
+7	will	will	AUX	MD	VerbForm=Fin	9	aux	_	_
+8	not	not	PART	RB	Polarity=Neg	9	advmod	_	_
+9	suffer	suffer	VERB	VB	VerbForm=Inf	0	root	_	_
+10	that	that	SCONJ	IN	_	14	mark	_	_
+11	this	this	DET	DT	Number=Sing|PronType=Dem	12	det	_	_
+12	people	people	NOUN	NN	Number=Sing	14	nsubj	_	_
+13	shall	shall	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	do	do	VERB	VB	VerbForm=Inf	9	ccomp	_	_
+15	like	like	ADP	IN	_	17	case	_	_
+16	unto	unto	ADP	IN	_	15	fixed	_	_
+17	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	14	obl	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	old	old	ADJ	JJ	_	17	nmod	_	_
+20	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = Wherefore, my brethren, hear me, and hearken to the word of the Lord:
+# sent_id = 54
+1	Wherefore	wherefore	ADV	RB	_	6	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	_
+4	brethren	brother	NOUN	NNS	Number=Plur	6	vocative	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	hear	hear	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+7	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	hearken	hearken	VERB	VB	Mood=Imp|VerbForm=Fin	6	conj	_	_
+11	to	to	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	word	word	NOUN	NN	Number=Sing	10	obl	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	Lord	Lord	PROPN	NNP	Number=Sing	13	nmod	_	_
+17	:	:	PUNCT	:	_	6	punct	_	_
+
+# text = For there shall not any man among you have save it be one wife; and concubines he shall have none; For I, the Lord God, delight in the chastity of women.
+# sent_id = 55
+# llm_note = "there shall not any man ... have" = existential construction, man=nsubj; "save it be one wife" = save=SCONJ conditional; second clause "concubines he shall have none" = fronted obj; "I, the Lord God" = appositive
+1	For	for	SCONJ	IN	_	9	mark	_	_
+2	there	there	PRON	EX	_	9	expl	_	_
+3	shall	shall	AUX	MD	VerbForm=Fin	9	aux	_	_
+4	not	not	PART	RB	Polarity=Neg	9	advmod	_	_
+5	any	any	DET	DT	_	6	det	_	_
+6	man	man	NOUN	NN	Number=Sing	9	nsubj	_	_
+7	among	among	ADP	IN	_	8	case	_	_
+8	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	6	nmod	_	_
+9	have	have	VERB	VB	VerbForm=Inf	0	root	_	_
+10	save	save	SCONJ	IN	_	12	mark	_	_
+11	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	be	be	VERB	VB	Mood=Sub|VerbForm=Fin	9	advcl	_	_
+13	one	one	NUM	CD	NumType=Card	14	nummod	_	_
+14	wife	wife	NOUN	NN	Number=Sing	12	nsubj	_	_
+15	;	;	PUNCT	:	_	9	punct	_	_
+16	and	and	CCONJ	CC	_	20	cc	_	_
+17	concubines	concubine	NOUN	NNS	Number=Plur	20	obj	_	_
+18	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_
+19	shall	shall	AUX	MD	VerbForm=Fin	20	aux	_	_
+20	have	have	VERB	VB	VerbForm=Inf	9	conj	_	_
+21	none	none	PRON	NN	Number=Sing|PronType=Neg	20	obj	_	_
+22	;	;	PUNCT	:	_	9	punct	_	_
+23	For	for	SCONJ	IN	_	30	mark	_	_
+24	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	30	nsubj	_	_
+25	,	,	PUNCT	,	_	28	punct	_	_
+26	the	the	DET	DT	_	28	det	_	_
+27	Lord	Lord	PROPN	NNP	Number=Sing	28	compound	_	_
+28	God	God	PROPN	NNP	Number=Sing	24	appos	_	_
+29	,	,	PUNCT	,	_	28	punct	_	_
+30	delight	delight	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	conj	_	_
+31	in	in	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	chastity	chastity	NOUN	NN	Number=Sing	30	obl	_	_
+34	of	of	ADP	IN	_	35	case	_	_
+35	women	woman	NOUN	NNS	Number=Plur	33	nmod	_	_
+36	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And whoredoms are an abomination before me; thus saith the Lord of Hosts.
+# sent_id = 56
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	whoredoms	whoredom	NOUN	NNS	Number=Plur	3	nsubj	_	_
+3	are	be	AUX	VBZ	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	an	a	DET	DT	_	5	det	_	_
+5	abomination	abomination	NOUN	NN	Number=Sing	3	xcomp	_	_
+6	before	before	ADP	IN	_	7	case	_	_
+7	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	5	obl	_	_
+8	;	;	PUNCT	:	_	3	punct	_	_
+9	thus	thus	ADV	RB	_	10	advmod	_	_
+10	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	Lord	Lord	PROPN	NNP	Number=Sing	10	nsubj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Hosts	host	PROPN	NNPS	Number=Plur	12	nmod	_	_
+15	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Wherefore, this people shall keep my commandments, saith the Lord of Hosts, or cursed be the land for their sakes.
+# sent_id = 57
+# llm_note = "saith the Lord of Hosts" = mid-sentence parataxis; "or cursed be the land" = optative/subjunctive inverted
+1	Wherefore	wherefore	ADV	RB	_	6	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	this	this	DET	DT	Number=Sing|PronType=Dem	4	det	_	_
+4	people	people	NOUN	NN	Number=Sing	6	nsubj	_	_
+5	shall	shall	AUX	MD	VerbForm=Fin	6	aux	_	_
+6	keep	keep	VERB	VB	VerbForm=Inf	0	root	_	_
+7	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	_
+8	commandments	commandment	NOUN	NNS	Number=Plur	6	obj	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	Lord	Lord	PROPN	NNP	Number=Sing	10	nsubj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Hosts	host	PROPN	NNPS	Number=Plur	12	nmod	_	_
+15	,	,	PUNCT	,	_	10	punct	_	_
+16	or	or	CCONJ	CC	_	18	cc	_	_
+17	cursed	curse	VERB	VBN	Tense=Past|VerbForm=Part	18	xcomp	_	_
+18	be	be	AUX	VB	Mood=Sub|VerbForm=Fin	6	conj	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	land	land	NOUN	NN	Number=Sing	18	nsubj	_	_
+21	for	for	ADP	IN	_	23	case	_	_
+22	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	23	nmod:poss	_	_
+23	sakes	sake	NOUN	NNS	Number=Plur	18	obl	_	_
+24	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = For if I will, saith the Lord of Hosts, raise up seed unto me, I will command my people; otherwise they shall hearken unto these things.
+# sent_id = 58
+# llm_note = "saith the Lord of Hosts" = mid-sentence parataxis interrupting the conditional; "if I will ... raise" = conditional with main V=raise; main clause = "I will command"
+1	For	for	SCONJ	IN	_	20	mark	_	_
+2	if	if	SCONJ	IN	_	12	mark	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_
+4	will	will	AUX	MD	VerbForm=Fin	12	aux	_	_
+5	,	,	PUNCT	,	_	6	punct	_	_
+6	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	parataxis	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	Lord	Lord	PROPN	NNP	Number=Sing	6	nsubj	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Hosts	host	PROPN	NNPS	Number=Plur	8	nmod	_	_
+11	,	,	PUNCT	,	_	6	punct	_	_
+12	raise	raise	VERB	VB	VerbForm=Inf	20	advcl	_	_
+13	up	up	ADP	RP	_	12	compound:prt	_	_
+14	seed	seed	NOUN	NN	Number=Sing	12	obj	_	_
+15	unto	unto	ADP	IN	_	16	case	_	_
+16	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	12	obl	_	_
+17	,	,	PUNCT	,	_	12	punct	_	_
+18	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	20	nsubj	_	_
+19	will	will	AUX	MD	VerbForm=Fin	20	aux	_	_
+20	command	command	VERB	VB	VerbForm=Inf	0	root	_	_
+21	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+22	people	people	NOUN	NN	Number=Sing	20	obj	_	_
+23	;	;	PUNCT	:	_	20	punct	_	_
+24	otherwise	otherwise	ADV	RB	_	27	advmod	_	_
+25	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	27	nsubj	_	_
+26	shall	shall	AUX	MD	VerbForm=Fin	27	aux	_	_
+27	hearken	hearken	VERB	VB	VerbForm=Inf	20	conj	_	_
+28	unto	unto	ADP	IN	_	30	case	_	_
+29	these	these	DET	DT	Number=Plur|PronType=Dem	30	det	_	_
+30	things	thing	NOUN	NNS	Number=Plur	27	obl	_	_
+31	.	.	PUNCT	.	_	20	punct	_	_
+
+# text = For behold, I, the Lord, have seen the sorrow, and heard the mourning of the daughters of my people in the land of Jerusalem, yea, and in all the lands of my people, because of the wickedness and abominations of their husbands.
+# sent_id = 59
+# llm_note = "I, the Lord," = appositive parenthetical; "yea" = discourse particle; two conjoined objects: sorrow + mourning
+1	For	for	SCONJ	IN	_	10	mark	_	_
+2	behold	behold	INTJ	UH	_	10	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_
+5	,	,	PUNCT	,	_	7	punct	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	Lord	Lord	PROPN	NNP	Number=Sing	4	appos	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	aux	_	_
+10	seen	see	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	sorrow	sorrow	NOUN	NN	Number=Sing	10	obj	_	_
+13	,	,	PUNCT	,	_	15	punct	_	_
+14	and	and	CCONJ	CC	_	15	cc	_	_
+15	heard	hear	VERB	VBN	Tense=Past|VerbForm=Part	10	conj	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	mourning	mourning	NOUN	NN	Number=Sing	15	obj	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	daughters	daughter	NOUN	NNS	Number=Plur	17	nmod	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	23	nmod:poss	_	_
+23	people	people	NOUN	NN	Number=Sing	20	nmod	_	_
+24	in	in	ADP	IN	_	27	case	_	_
+25	the	the	DET	DT	_	27	det	_	_
+26	land	land	NOUN	NN	Number=Sing	27	nmod	_	_
+27	of	of	ADP	IN	_	26	case	_	_
+28	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	26	nmod	_	_
+29	,	,	PUNCT	,	_	10	punct	_	_
+30	yea	yea	INTJ	UH	_	10	discourse	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	and	and	CCONJ	CC	_	36	cc	_	_
+33	in	in	ADP	IN	_	36	case	_	_
+34	all	all	DET	PDT	_	36	det:predet	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	lands	land	NOUN	NNS	Number=Plur	24	conj	_	_
+37	of	of	ADP	IN	_	39	case	_	_
+38	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	39	nmod:poss	_	_
+39	people	people	NOUN	NN	Number=Sing	36	nmod	_	_
+40	,	,	PUNCT	,	_	10	punct	_	_
+41	because	because	ADP	IN	_	44	case	_	_
+42	of	of	ADP	IN	_	41	fixed	_	_
+43	the	the	DET	DT	_	44	det	_	_
+44	wickedness	wickedness	NOUN	NN	Number=Sing	10	obl	_	_
+45	and	and	CCONJ	CC	_	46	cc	_	_
+46	abominations	abomination	NOUN	NNS	Number=Plur	44	conj	_	_
+47	of	of	ADP	IN	_	49	case	_	_
+48	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	49	nmod:poss	_	_
+49	husbands	husband	NOUN	NNS	Number=Plur	44	nmod	_	_
+50	.	.	PUNCT	.	_	10	punct	_	_
+

@@ -1,0 +1,820 @@
+# text = Have ye received his image in your countenances?
+# sent_id = 150
+1	Have	have	AUX	VBP	Mood=Int|Number=Plur|Person=2|Tense=Pres	3	aux	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	received	receive	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	5	nmod:poss	_	_
+5	image	image	NOUN	NN	Number=Sing	3	obj	_	_
+6	in	in	ADP	IN	_	8	case	_	_
+7	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	8	nmod:poss	_	_
+8	countenances	countenance	NOUN	NNS	Number=Plur	3	obl	_	_
+9	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Have ye experienced this mighty change in your hearts?
+# sent_id = 151
+1	Have	have	AUX	VBP	Mood=Int|Number=Plur|Person=2|Tense=Pres	3	aux	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	experienced	experience	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	this	this	DET	DT	Number=Sing	6	det	_	_
+5	mighty	mighty	ADJ	JJ	_	6	amod	_	_
+6	change	change	NOUN	NN	Number=Sing	3	obj	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	9	nmod:poss	_	_
+9	hearts	heart	NOUN	NNS	Number=Plur	3	obl	_	_
+10	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Do ye exercise faith in the redemption of him who created you?
+# sent_id = 152
+1	Do	do	AUX	VBP	Mood=Int|Number=Plur|Person=2|Tense=Pres	3	aux	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	exercise	exercise	VERB	VB	VerbForm=Inf	0	root	_	_
+4	faith	faith	NOUN	NN	Number=Sing	3	obj	_	_
+5	in	in	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	redemption	redemption	NOUN	NN	Number=Sing	3	obl	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	7	nmod	_	_
+10	who	who	PRON	WP	PronType=Rel	11	nsubj	_	_
+11	created	create	VERB	VBD	Tense=Past|VerbForm=Fin	9	acl:relcl	_	_
+12	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	11	obj	_	_
+13	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Do you look forward with an eye of faith, and view this mortal body raised in immortality, and this corruption raised in incorruption, to stand before God to be judged according to the deeds which have been done in the mortal body?
+# sent_id = 153
+# llm_note = Main structure: "Do you look forward ... and view ...". "view" is conj of "look". "body raised in immortality" = obj of "view" with participial "raised". "to stand" and "to be judged" are purpose infinitives attached to "view"/"look".
+1	Do	do	AUX	VBP	Mood=Int|Number=Sing|Person=2|Tense=Pres	3	aux	_	_
+2	you	you	PRON	PRP	Case=Nom|Number=Sing|Person=2	3	nsubj	_	_
+3	look	look	VERB	VB	VerbForm=Inf	0	root	_	_
+4	forward	forward	ADV	RB	_	3	advmod	_	_
+5	with	with	ADP	IN	_	7	case	_	_
+6	an	a	DET	DT	_	7	det	_	_
+7	eye	eye	NOUN	NN	Number=Sing	3	obl	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	faith	faith	NOUN	NN	Number=Sing	7	nmod	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	view	view	VERB	VB	VerbForm=Inf	3	conj	_	_
+13	this	this	DET	DT	Number=Sing	15	det	_	_
+14	mortal	mortal	ADJ	JJ	_	15	amod	_	_
+15	body	body	NOUN	NN	Number=Sing	12	obj	_	_
+16	raised	raise	VERB	VBN	Tense=Past|VerbForm=Part	15	acl	_	_
+17	in	in	ADP	IN	_	18	case	_	_
+18	immortality	immortality	NOUN	NN	Number=Sing	16	obl	_	_
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	this	this	DET	DT	Number=Sing	22	det	_	_
+22	corruption	corruption	NOUN	NN	Number=Sing	15	conj	_	_
+23	raised	raise	VERB	VBN	Tense=Past|VerbForm=Part	22	acl	_	_
+24	in	in	ADP	IN	_	25	case	_	_
+25	incorruption	incorruption	NOUN	NN	Number=Sing	23	obl	_	_
+26	,	,	PUNCT	,	_	28	punct	_	_
+27	to	to	PART	TO	_	28	mark	_	_
+28	stand	stand	VERB	VB	VerbForm=Inf	12	advcl	_	_
+29	before	before	ADP	IN	_	30	case	_	_
+30	God	God	PROPN	NNP	Number=Sing	28	obl	_	_
+31	to	to	PART	TO	_	33	mark	_	_
+32	be	be	AUX	VB	VerbForm=Inf	33	aux:pass	_	_
+33	judged	judge	VERB	VBN	Tense=Past|VerbForm=Part	28	advcl	_	_
+34	according	according	ADP	IN	_	35	case	_	_
+35	to	to	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	deeds	deed	NOUN	NNS	Number=Plur	33	obl	_	_
+38	which	which	PRON	WDT	PronType=Rel	41	nsubj:pass	_	_
+39	have	have	AUX	VBP	Tense=Pres	41	aux	_	_
+40	been	be	AUX	VBN	Tense=Past|VerbForm=Part	41	aux:pass	_	_
+41	done	do	VERB	VBN	Tense=Past|VerbForm=Part	37	acl:relcl	_	_
+42	in	in	ADP	IN	_	45	case	_	_
+43	the	the	DET	DT	_	45	det	_	_
+44	mortal	mortal	ADJ	JJ	_	45	amod	_	_
+45	body	body	NOUN	NN	Number=Sing	41	obl	_	_
+46	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = I say unto you, can you imagine to yourselves that ye hear the voice of the Lord, saying unto you, in that day: Come unto me ye blessed, for behold, your works have been the works of righteousness upon the face of the earth?
+# sent_id = 154
+# llm_note = "I say unto you" is parenthetical; main interrogative is "can you imagine". "saying unto you" is a participial modifying "Lord"/"voice". The colon introduces direct speech: "Come...". "behold" = INTJ discourse attaching to root of that clause (have).
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	2	obl	_	_
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	can	can	AUX	MD	_	8	aux	_	_
+7	you	you	PRON	PRP	Case=Nom|Number=Sing|Person=2	8	nsubj	_	_
+8	imagine	imagine	VERB	VB	VerbForm=Inf	2	ccomp	_	_
+9	to	to	ADP	IN	_	10	case	_	_
+10	yourselves	yourself	PRON	PRP	Case=Acc|Number=Plur|Person=2|Reflex=Yes	8	obl	_	_
+11	that	that	SCONJ	IN	_	13	mark	_	_
+12	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	13	nsubj	_	_
+13	hear	hear	VERB	VBP	Tense=Pres	8	ccomp	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	voice	voice	NOUN	NN	Number=Sing	13	obj	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	Lord	Lord	PROPN	NNP	Number=Sing	15	nmod	_	_
+19	,	,	PUNCT	,	_	20	punct	_	_
+20	saying	say	VERB	VBG	VerbForm=Part	18	acl	_	_
+21	unto	unto	ADP	IN	_	22	case	_	_
+22	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	20	obl	_	_
+23	,	,	PUNCT	,	_	20	punct	_	_
+24	in	in	ADP	IN	_	26	case	_	_
+25	that	that	DET	DT	Number=Sing	26	det	_	_
+26	day	day	NOUN	NN	Number=Sing	20	obl	_	_
+27	:	:	PUNCT	:	_	28	punct	_	_
+28	Come	come	VERB	VB	Mood=Imp|VerbForm=Fin	20	ccomp	_	_
+29	unto	unto	ADP	IN	_	30	case	_	_
+30	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	28	obl	_	_
+31	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	28	nsubj	_	_
+32	blessed	blessed	ADJ	JJ	_	31	amod	_	_
+33	,	,	PUNCT	,	_	35	punct	_	_
+34	for	for	SCONJ	IN	_	40	mark	_	_
+35	behold	behold	INTJ	UH	_	40	discourse	_	_
+36	,	,	PUNCT	,	_	35	punct	_	_
+37	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	38	nmod:poss	_	_
+38	works	work	NOUN	NNS	Number=Plur	40	nsubj	_	_
+39	have	have	AUX	VBP	Tense=Pres	40	aux	_	_
+40	been	be	VERB	VBN	Tense=Past|VerbForm=Part	28	advcl	_	_
+41	the	the	DET	DT	_	42	det	_	_
+42	works	work	NOUN	NNS	Number=Plur	40	xcomp	_	_
+43	of	of	ADP	IN	_	44	case	_	_
+44	righteousness	righteousness	NOUN	NN	Number=Sing	42	nmod	_	_
+45	upon	upon	ADP	IN	_	47	case	_	_
+46	the	the	DET	DT	_	47	det	_	_
+47	face	face	NOUN	NN	Number=Sing	44	nmod	_	_
+48	of	of	ADP	IN	_	50	case	_	_
+49	the	the	DET	DT	_	50	det	_	_
+50	earth	earth	NOUN	NN	Number=Sing	47	nmod	_	_
+51	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = Or do ye imagine to yourselves that ye can lie unto the Lord in that day, and say--
+# sent_id = 155
+# llm_note = "Or" is ADV (connective/disjunctive here, fronted), advmod of "imagine". "say" is conj of "lie" via "and".
+1	Or	or	ADV	RB	_	4	advmod	_	_
+2	do	do	AUX	VBP	Mood=Int|Number=Plur|Person=2|Tense=Pres	4	aux	_	_
+3	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	4	nsubj	_	_
+4	imagine	imagine	VERB	VB	VerbForm=Inf	0	root	_	_
+5	to	to	ADP	IN	_	6	case	_	_
+6	yourselves	yourself	PRON	PRP	Case=Acc|Number=Plur|Person=2|Reflex=Yes	4	obl	_	_
+7	that	that	SCONJ	IN	_	10	mark	_	_
+8	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	10	nsubj	_	_
+9	can	can	AUX	MD	_	10	aux	_	_
+10	lie	lie	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+11	unto	unto	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	Lord	Lord	PROPN	NNP	Number=Sing	10	obl	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	that	that	DET	DT	Number=Sing	16	det	_	_
+16	day	day	NOUN	NN	Number=Sing	10	obl	_	_
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	say	say	VERB	VB	VerbForm=Inf	10	conj	_	_
+20	--	--	PUNCT	:	_	19	punct	_	_
+
+# text = Lord, our works have been righteous works upon the face of the earth-- and that he will save you?
+# sent_id = 156
+# llm_note = This is the quoted speech begun in s155. "Lord" is vocative. Root is "been" (copular). "and that he will save you" is a coordinate complement clause following the em-dash, resuming the embedding in s155. Root of this sentence taken as "been" (the main predicate of the quoted speech).
+1	Lord	Lord	PROPN	NNP	Number=Sing	5	vocative	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	our	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes	4	nmod:poss	_	_
+4	works	work	NOUN	NNS	Number=Plur	5	nsubj	_	_
+5	have	have	AUX	VBP	Tense=Pres	6	aux	_	_
+6	been	be	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	righteous	righteous	ADJ	JJ	_	8	amod	_	_
+8	works	work	NOUN	NNS	Number=Plur	6	xcomp	_	_
+9	upon	upon	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	face	face	NOUN	NN	Number=Sing	8	nmod	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	earth	earth	NOUN	NN	Number=Sing	11	nmod	_	_
+15	--	--	PUNCT	:	_	20	punct	_	_
+16	and	and	CCONJ	CC	_	20	cc	_	_
+17	that	that	SCONJ	IN	_	20	mark	_	_
+18	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	nsubj	_	_
+19	will	will	AUX	MD	_	20	aux	_	_
+20	save	save	VERB	VB	VerbForm=Inf	6	conj	_	_
+21	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	20	obj	_	_
+22	?	?	PUNCT	.	_	6	punct	_	_
+
+# text = Or otherwise, can ye imagine yourselves brought before the tribunal of God with your souls filled with guilt and remorse, having a remembrance of all your guilt, yea, a perfect remembrance of all your wickedness, yea, a remembrance that ye have set at defiance the commandments of God?
+# sent_id = 157
+# llm_note = "Or otherwise" = disjunctive connective, advmod of "imagine". "yourselves brought" = object + xcomp (accusative + passive participle). "having" = advcl of "imagine" (subject is ye/yourselves). "yea, a perfect remembrance" and "yea, a remembrance that..." are appositive NPs conjoined to first "a remembrance".
+1	Or	or	ADV	RB	_	6	advmod	_	_
+2	otherwise	otherwise	ADV	RB	_	6	advmod	_	_
+3	,	,	PUNCT	,	_	6	punct	_	_
+4	can	can	AUX	MD	_	6	aux	_	_
+5	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	6	nsubj	_	_
+6	imagine	imagine	VERB	VB	VerbForm=Inf	0	root	_	_
+7	yourselves	yourself	PRON	PRP	Case=Acc|Number=Plur|Person=2|Reflex=Yes	6	obj	_	_
+8	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	7	xcomp	_	_
+9	before	before	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	tribunal	tribunal	NOUN	NN	Number=Sing	8	obl	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	God	God	PROPN	NNP	Number=Sing	11	nmod	_	_
+14	with	with	ADP	IN	_	16	case	_	_
+15	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	16	nmod:poss	_	_
+16	souls	soul	NOUN	NNS	Number=Plur	8	obl	_	_
+17	filled	fill	VERB	VBN	Tense=Past|VerbForm=Part	16	acl	_	_
+18	with	with	ADP	IN	_	19	case	_	_
+19	guilt	guilt	NOUN	NN	Number=Sing	17	obl	_	_
+20	and	and	CCONJ	CC	_	21	cc	_	_
+21	remorse	remorse	NOUN	NN	Number=Sing	19	conj	_	_
+22	,	,	PUNCT	,	_	23	punct	_	_
+23	having	have	VERB	VBG	VerbForm=Part	6	advcl	_	_
+24	a	a	DET	DT	_	25	det	_	_
+25	remembrance	remembrance	NOUN	NN	Number=Sing	23	obj	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	all	all	DET	PDT	_	29	det:predet	_	_
+28	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	29	nmod:poss	_	_
+29	guilt	guilt	NOUN	NN	Number=Sing	25	nmod	_	_
+30	,	,	PUNCT	,	_	35	punct	_	_
+31	yea	yea	ADV	UH	_	35	discourse	_	_
+32	,	,	PUNCT	,	_	31	punct	_	_
+33	a	a	DET	DT	_	35	det	_	_
+34	perfect	perfect	ADJ	JJ	_	35	amod	_	_
+35	remembrance	remembrance	NOUN	NN	Number=Sing	25	conj	_	_
+36	of	of	ADP	IN	_	38	case	_	_
+37	all	all	DET	PDT	_	39	det:predet	_	_
+38	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	39	nmod:poss	_	_
+39	wickedness	wickedness	NOUN	NN	Number=Sing	35	nmod	_	_
+40	,	,	PUNCT	,	_	44	punct	_	_
+41	yea	yea	ADV	UH	_	44	discourse	_	_
+42	,	,	PUNCT	,	_	41	punct	_	_
+43	a	a	DET	DT	_	44	det	_	_
+44	remembrance	remembrance	NOUN	NN	Number=Sing	25	conj	_	_
+45	that	that	SCONJ	IN	_	48	mark	_	_
+46	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	48	nsubj	_	_
+47	have	have	AUX	VBP	Tense=Pres	48	aux	_	_
+48	set	set	VERB	VBN	Tense=Past|VerbForm=Part	44	acl	_	_
+49	at	at	ADP	IN	_	50	case	_	_
+50	defiance	defiance	NOUN	NN	Number=Sing	48	obl	_	_
+51	the	the	DET	DT	_	52	det	_	_
+52	commandments	commandment	NOUN	NNS	Number=Plur	48	obj	_	_
+53	of	of	ADP	IN	_	54	case	_	_
+54	God	God	PROPN	NNP	Number=Sing	52	nmod	_	_
+55	?	?	PUNCT	.	_	6	punct	_	_
+
+# text = I say unto you, can ye look up to God at that day with a pure heart and clean hands?
+# sent_id = 158
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	2	obl	_	_
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	can	can	AUX	MD	_	8	aux	_	_
+7	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj	_	_
+8	look	look	VERB	VB	VerbForm=Inf	2	ccomp	_	_
+9	up	up	ADP	RP	_	8	compound:prt	_	_
+10	to	to	ADP	IN	_	11	case	_	_
+11	God	God	PROPN	NNP	Number=Sing	8	obl	_	_
+12	at	at	ADP	IN	_	14	case	_	_
+13	that	that	DET	DT	Number=Sing	14	det	_	_
+14	day	day	NOUN	NN	Number=Sing	8	obl	_	_
+15	with	with	ADP	IN	_	18	case	_	_
+16	a	a	DET	DT	_	18	det	_	_
+17	pure	pure	ADJ	JJ	_	18	amod	_	_
+18	heart	heart	NOUN	NN	Number=Sing	8	obl	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	clean	clean	ADJ	JJ	_	21	amod	_	_
+21	hands	hand	NOUN	NNS	Number=Plur	18	conj	_	_
+22	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = I say unto you, can you look up, having the image of God engraven upon your countenances?
+# sent_id = 159
+# llm_note = "having the image of God engraven upon your countenances" = advcl (participial) of "look".
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	2	obl	_	_
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	can	can	AUX	MD	_	8	aux	_	_
+7	you	you	PRON	PRP	Case=Nom|Number=Sing|Person=2	8	nsubj	_	_
+8	look	look	VERB	VB	VerbForm=Inf	2	ccomp	_	_
+9	up	up	ADP	RP	_	8	compound:prt	_	_
+10	,	,	PUNCT	,	_	11	punct	_	_
+11	having	have	VERB	VBG	VerbForm=Part	8	advcl	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	image	image	NOUN	NN	Number=Sing	11	obj	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	God	God	PROPN	NNP	Number=Sing	13	nmod	_	_
+16	engraven	engrave	VERB	VBN	Tense=Past|VerbForm=Part	13	acl	_	_
+17	upon	upon	ADP	IN	_	19	case	_	_
+18	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	19	nmod:poss	_	_
+19	countenances	countenance	NOUN	NNS	Number=Plur	16	obl	_	_
+20	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = I say unto you, can ye think of being saved when you have yielded yourselves to become subjects to the devil?
+# sent_id = 160
+# llm_note = "think of being saved" = think + PP + gerundive. "when you have yielded yourselves to become subjects to the devil" = advcl of "think".
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	2	obl	_	_
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	can	can	AUX	MD	_	8	aux	_	_
+7	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj	_	_
+8	think	think	VERB	VB	VerbForm=Inf	2	ccomp	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	being	be	AUX	VBG	VerbForm=Part	11	aux:pass	_	_
+11	saved	save	VERB	VBN	Tense=Past|VerbForm=Part	8	obl	_	_
+12	when	when	SCONJ	WRB	_	15	mark	_	_
+13	you	you	PRON	PRP	Case=Nom|Number=Sing|Person=2	15	nsubj	_	_
+14	have	have	AUX	VBP	Tense=Pres	15	aux	_	_
+15	yielded	yield	VERB	VBN	Tense=Past|VerbForm=Part	8	advcl	_	_
+16	yourselves	yourself	PRON	PRP	Case=Acc|Number=Plur|Person=2|Reflex=Yes	15	obj	_	_
+17	to	to	PART	TO	_	18	mark	_	_
+18	become	become	VERB	VB	VerbForm=Inf	15	advcl	_	_
+19	subjects	subject	NOUN	NNS	Number=Plur	18	xcomp	_	_
+20	to	to	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	devil	devil	NOUN	NN	Number=Sing	19	nmod	_	_
+23	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = I say unto you, ye will know at that day that ye cannot be saved; for there can no man be saved except his garments are washed white; yea, his garments must be purified until they are cleansed from all stain, through the blood of him of whom it has been spoken by our fathers, who should come to redeem his people from their sins.
+# sent_id = 161
+# llm_note = MWT 14-15 "cannot"=can+not. MWT 31-32 not present (separate tokens). "there can no man be saved" = existential with "there" expl, "man" nsubj:pass of "saved", "no" det. "except his garments are washed white" = advcl of "saved"(25). "yea his garments must be purified" = conj of main clause (know). "until they are cleansed" = advcl of "purified". "through the blood" = obl of "cleansed". "of him of whom it has been spoken" = nmod chain. "who should come to redeem" = acl:relcl of "fathers".
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	2	obl	_	_
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj	_	_
+7	will	will	AUX	MD	_	8	aux	_	_
+8	know	know	VERB	VB	VerbForm=Inf	2	ccomp	_	_
+9	at	at	ADP	IN	_	11	case	_	_
+10	that	that	DET	DT	Number=Sing	11	det	_	_
+11	day	day	NOUN	NN	Number=Sing	8	obl	_	_
+12	that	that	SCONJ	IN	_	17	mark	_	_
+13	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	17	nsubj:pass	_	_
+14-15	cannot	_	_	_	_	_	_	_	_
+14	can	can	AUX	MD	_	17	aux	_	_
+15	not	not	PART	RB	_	17	advmod	_	_
+16	be	be	AUX	VB	VerbForm=Inf	17	aux:pass	_	_
+17	saved	save	VERB	VBN	Tense=Past|VerbForm=Part	8	ccomp	_	_
+18	;	;	PUNCT	,	_	25	punct	_	_
+19	for	for	SCONJ	IN	_	25	mark	_	_
+20	there	there	PRON	EX	_	25	expl	_	_
+21	can	can	AUX	MD	_	25	aux	_	_
+22	no	no	DET	DT	_	23	det	_	_
+23	man	man	NOUN	NN	Number=Sing	25	nsubj:pass	_	_
+24	be	be	AUX	VB	VerbForm=Inf	25	aux:pass	_	_
+25	saved	save	VERB	VBN	Tense=Past|VerbForm=Part	17	advcl	_	_
+26	except	except	SCONJ	IN	_	30	mark	_	_
+27	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	28	nmod:poss	_	_
+28	garments	garment	NOUN	NNS	Number=Plur	30	nsubj:pass	_	_
+29	are	be	AUX	VBP	Tense=Pres	30	aux:pass	_	_
+30	washed	wash	VERB	VBN	Tense=Past|VerbForm=Part	25	advcl	_	_
+31	white	white	ADJ	JJ	_	30	xcomp	_	_
+32	;	;	PUNCT	,	_	39	punct	_	_
+33	yea	yea	ADV	UH	_	39	discourse	_	_
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	36	nmod:poss	_	_
+36	garments	garment	NOUN	NNS	Number=Plur	39	nsubj:pass	_	_
+37	must	must	AUX	MD	_	39	aux	_	_
+38	be	be	AUX	VB	VerbForm=Inf	39	aux:pass	_	_
+39	purified	purify	VERB	VBN	Tense=Past|VerbForm=Part	8	conj	_	_
+40	until	until	SCONJ	IN	_	43	mark	_	_
+41	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	43	nsubj:pass	_	_
+42	are	be	AUX	VBP	Tense=Pres	43	aux:pass	_	_
+43	cleansed	cleanse	VERB	VBN	Tense=Past|VerbForm=Part	39	advcl	_	_
+44	from	from	ADP	IN	_	46	case	_	_
+45	all	all	DET	PDT	_	46	det:predet	_	_
+46	stain	stain	NOUN	NN	Number=Sing	43	obl	_	_
+47	,	,	PUNCT	,	_	43	punct	_	_
+48	through	through	ADP	IN	_	50	case	_	_
+49	the	the	DET	DT	_	50	det	_	_
+50	blood	blood	NOUN	NN	Number=Sing	43	obl	_	_
+51	of	of	ADP	IN	_	52	case	_	_
+52	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	50	nmod	_	_
+53	of	of	ADP	IN	_	54	case	_	_
+54	whom	who	PRON	WP	Case=Acc|PronType=Rel	58	nsubj:pass	_	_
+55	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3	58	expl	_	_
+56	has	have	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	58	aux	_	_
+57	been	be	AUX	VBN	Tense=Past|VerbForm=Part	58	aux:pass	_	_
+58	spoken	speak	VERB	VBN	Tense=Past|VerbForm=Part	52	acl:relcl	_	_
+59	by	by	ADP	IN	_	61	case	_	_
+60	our	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes	61	nmod:poss	_	_
+61	fathers	father	NOUN	NNS	Number=Plur	58	obl:agent	_	_
+62	,	,	PUNCT	,	_	65	punct	_	_
+63	who	who	PRON	WP	PronType=Rel	65	nsubj	_	_
+64	should	shall	AUX	MD	_	65	aux	_	_
+65	come	come	VERB	VB	VerbForm=Inf	61	acl:relcl	_	_
+66	to	to	PART	TO	_	67	mark	_	_
+67	redeem	redeem	VERB	VB	VerbForm=Inf	65	advcl	_	_
+68	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	69	nmod:poss	_	_
+69	people	people	NOUN	NN	Number=Sing	67	obj	_	_
+70	from	from	ADP	IN	_	72	case	_	_
+71	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	72	nmod:poss	_	_
+72	sins	sin	NOUN	NNS	Number=Plur	67	obl	_	_
+73	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = And now I ask of you, my brethren, how will any of you feel, if ye shall stand before the bar of God, having your garments stained with blood and all manner of filthiness?
+# sent_id = 162
+# llm_note = "how will any of you feel" = root interrogative. "if ye shall stand before the bar of God" = advcl of "feel". "having your garments stained" = advcl (participial) of "stand".
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	ask	ask	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	4	obl	_	_
+7	,	,	PUNCT	,	_	9	punct	_	_
+8	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	9	nmod:poss	_	_
+9	brethren	brethren	NOUN	NNS	Number=Plur	4	vocative	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	how	how	ADV	WRB	_	16	advmod	_	_
+12	will	will	AUX	MD	_	16	aux	_	_
+13	any	any	PRON	NN	_	16	nsubj	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	13	nmod	_	_
+16	feel	feel	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+17	,	,	PUNCT	,	_	21	punct	_	_
+18	if	if	SCONJ	IN	_	21	mark	_	_
+19	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	21	nsubj	_	_
+20	shall	shall	AUX	MD	_	21	aux	_	_
+21	stand	stand	VERB	VB	VerbForm=Inf	16	advcl	_	_
+22	before	before	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	bar	bar	NOUN	NN	Number=Sing	21	obl	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	God	God	PROPN	NNP	Number=Sing	24	nmod	_	_
+27	,	,	PUNCT	,	_	28	punct	_	_
+28	having	have	VERB	VBG	VerbForm=Part	21	advcl	_	_
+29	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	30	nmod:poss	_	_
+30	garments	garment	NOUN	NNS	Number=Plur	28	obj	_	_
+31	stained	stain	VERB	VBN	Tense=Past|VerbForm=Part	30	xcomp	_	_
+32	with	with	ADP	IN	_	33	case	_	_
+33	blood	blood	NOUN	NN	Number=Sing	31	obl	_	_
+34	and	and	CCONJ	CC	_	36	cc	_	_
+35	all	all	DET	PDT	_	36	det:predet	_	_
+36	manner	manner	NOUN	NN	Number=Sing	33	conj	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	filthiness	filthiness	NOUN	NN	Number=Sing	36	nmod	_	_
+39	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = Behold, what will these things testify against you?
+# sent_id = 163
+1	Behold	behold	INTJ	UH	_	7	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	what	what	PRON	WP	PronType=Int	7	obj	_	_
+4	will	will	AUX	MD	_	7	aux	_	_
+5	these	this	DET	DT	Number=Plur	6	det	_	_
+6	things	thing	NOUN	NNS	Number=Plur	7	nsubj	_	_
+7	testify	testify	VERB	VB	VerbForm=Inf	0	root	_	_
+8	against	against	ADP	IN	_	9	case	_	_
+9	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	7	obl	_	_
+10	?	?	PUNCT	.	_	7	punct	_	_
+
+# text = Behold will they not testify that ye are murderers, yea, and also that ye are guilty of all manner of wickedness?
+# sent_id = 164
+# llm_note = "Behold" = INTJ discourse. Main: "will they not testify". Two ccomp clauses: "that ye are murderers" and "that ye are guilty of all manner of wickedness" (coordinated via "and also").
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	will	will	AUX	MD	_	5	aux	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	5	nsubj	_	_
+4	not	not	PART	RB	_	5	advmod	_	_
+5	testify	testify	VERB	VB	VerbForm=Inf	0	root	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	9	nsubj	_	_
+8	are	be	AUX	VBP	Tense=Pres	9	cop	_	_
+9	murderers	murderer	NOUN	NNS	Number=Plur	5	ccomp	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	yea	yea	ADV	UH	_	9	discourse	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	and	and	CCONJ	CC	_	18	cc	_	_
+14	also	also	ADV	RB	_	18	advmod	_	_
+15	that	that	SCONJ	IN	_	18	mark	_	_
+16	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	18	nsubj	_	_
+17	are	be	AUX	VBP	Tense=Pres	18	cop	_	_
+18	guilty	guilty	ADJ	JJ	_	5	ccomp	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	all	all	DET	PDT	_	21	det:predet	_	_
+21	manner	manner	NOUN	NN	Number=Sing	18	obl	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	wickedness	wickedness	NOUN	NN	Number=Sing	21	nmod	_	_
+24	?	?	PUNCT	.	_	5	punct	_	_
+
+# text = Behold, my brethren, do ye suppose that such an one can have a place to sit down in the kingdom of God, with Abraham, with Isaac, and with Jacob, and also all the holy prophets, whose garments are cleansed and are spotless, pure and white?
+# sent_id = 165
+# llm_note = "such an one" = idiomatic NP; "such" = DET det of "one". "to sit down" = infinitive modifying "place". "with Abraham, with Isaac, and with Jacob, and also all the holy prophets" = obl phrases coordinated. "whose garments are cleansed and are spotless" = acl:relcl on "prophets". "pure and white" = additional predicates in same relcl.
+1	Behold	behold	INTJ	UH	_	8	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	4	nmod:poss	_	_
+4	brethren	brethren	NOUN	NNS	Number=Plur	8	vocative	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	do	do	AUX	VBP	Mood=Int|Number=Plur|Person=2|Tense=Pres	8	aux	_	_
+7	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj	_	_
+8	suppose	suppose	VERB	VB	VerbForm=Inf	0	root	_	_
+9	that	that	SCONJ	IN	_	14	mark	_	_
+10	such	such	DET	PDT	_	12	det:predet	_	_
+11	an	a	DET	DT	_	12	det	_	_
+12	one	one	PRON	NN	_	14	nsubj	_	_
+13	can	can	AUX	MD	_	14	aux	_	_
+14	have	have	VERB	VB	VerbForm=Inf	8	ccomp	_	_
+15	a	a	DET	DT	_	16	det	_	_
+16	place	place	NOUN	NN	Number=Sing	14	obj	_	_
+17	to	to	PART	TO	_	18	mark	_	_
+18	sit	sit	VERB	VB	VerbForm=Inf	16	acl	_	_
+19	down	down	ADP	RP	_	18	compound:prt	_	_
+20	in	in	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	kingdom	kingdom	NOUN	NN	Number=Sing	18	obl	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	God	God	PROPN	NNP	Number=Sing	22	nmod	_	_
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	with	with	ADP	IN	_	27	case	_	_
+27	Abraham	Abraham	PROPN	NNP	Number=Sing	14	obl	_	_
+28	,	,	PUNCT	,	_	30	punct	_	_
+29	with	with	ADP	IN	_	30	case	_	_
+30	Isaac	Isaac	PROPN	NNP	Number=Sing	27	conj	_	_
+31	,	,	PUNCT	,	_	34	punct	_	_
+32	and	and	CCONJ	CC	_	34	cc	_	_
+33	with	with	ADP	IN	_	34	case	_	_
+34	Jacob	Jacob	PROPN	NNP	Number=Sing	27	conj	_	_
+35	,	,	PUNCT	,	_	41	punct	_	_
+36	and	and	CCONJ	CC	_	41	cc	_	_
+37	also	also	ADV	RB	_	41	advmod	_	_
+38	all	all	DET	PDT	_	41	det:predet	_	_
+39	the	the	DET	DT	_	41	det	_	_
+40	holy	holy	ADJ	JJ	_	41	amod	_	_
+41	prophets	prophet	NOUN	NNS	Number=Plur	27	conj	_	_
+42	,	,	PUNCT	,	_	46	punct	_	_
+43	whose	who	PRON	WP$	Poss=Yes|PronType=Rel	44	nmod:poss	_	_
+44	garments	garment	NOUN	NNS	Number=Plur	46	nsubj:pass	_	_
+45	are	be	AUX	VBP	Tense=Pres	46	aux:pass	_	_
+46	cleansed	cleanse	VERB	VBN	Tense=Past|VerbForm=Part	41	acl:relcl	_	_
+47	and	and	CCONJ	CC	_	49	cc	_	_
+48	are	be	AUX	VBP	Tense=Pres	49	cop	_	_
+49	spotless	spotless	ADJ	JJ	_	46	conj	_	_
+50	,	,	PUNCT	,	_	51	punct	_	_
+51	pure	pure	ADJ	JJ	_	49	conj	_	_
+52	and	and	CCONJ	CC	_	53	cc	_	_
+53	white	white	ADJ	JJ	_	51	conj	_	_
+54	?	?	PUNCT	.	_	8	punct	_	_
+
+# text = I say unto you, Nay; except ye make our Creator a liar from the beginning, or suppose that he is a liar from the beginning, ye cannot suppose that such can have place in the kingdom of heaven; but they shall be cast out for they are the children of the kingdom of the devil.
+# sent_id = 166
+# llm_note = "Nay" = INTJ. MWT 31-32 cannot. "except ye make our Creator a liar... or suppose that..." = advcl of "suppose"(33). "make our Creator a liar" = caus VERB + obj + xcomp. "ye cannot suppose that such can have place" = main clause. "but they shall be cast out" = conj. "for they are the children" = advcl of "cast out".
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	2	obl	_	_
+5	,	,	PUNCT	,	_	6	punct	_	_
+6	Nay	nay	INTJ	UH	_	2	discourse	_	_
+7	;	;	PUNCT	,	_	33	punct	_	_
+8	except	except	SCONJ	IN	_	10	mark	_	_
+9	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	10	nsubj	_	_
+10	make	make	VERB	VB	VerbForm=Inf	33	advcl	_	_
+11	our	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes	12	nmod:poss	_	_
+12	Creator	Creator	PROPN	NNP	Number=Sing	10	obj	_	_
+13	a	a	DET	DT	_	14	det	_	_
+14	liar	liar	NOUN	NN	Number=Sing	10	xcomp	_	_
+15	from	from	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	beginning	beginning	NOUN	NN	Number=Sing	14	nmod	_	_
+18	,	,	PUNCT	,	_	20	punct	_	_
+19	or	or	CCONJ	CC	_	20	cc	_	_
+20	suppose	suppose	VERB	VB	VerbForm=Inf	10	conj	_	_
+21	that	that	SCONJ	IN	_	24	mark	_	_
+22	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	24	nsubj	_	_
+23	is	be	AUX	VBP	Number=Sing|Person=3|Tense=Pres	24	cop	_	_
+24	a	a	DET	DT	_	20	ccomp	_	_
+25	liar	liar	NOUN	NN	Number=Sing	24	nmod	_	_
+26	from	from	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	beginning	beginning	NOUN	NN	Number=Sing	25	nmod	_	_
+29	,	,	PUNCT	,	_	33	punct	_	_
+30	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	33	nsubj	_	_
+31-32	cannot	_	_	_	_	_	_	_	_
+31	can	can	AUX	MD	_	33	aux	_	_
+32	not	not	PART	RB	_	33	advmod	_	_
+33	suppose	suppose	VERB	VB	VerbForm=Inf	2	ccomp	_	_
+34	that	that	SCONJ	IN	_	37	mark	_	_
+35	such	such	PRON	NN	_	37	nsubj	_	_
+36	can	can	AUX	MD	_	37	aux	_	_
+37	have	have	VERB	VB	VerbForm=Inf	33	ccomp	_	_
+38	place	place	NOUN	NN	Number=Sing	37	obj	_	_
+39	in	in	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	_	41	det	_	_
+41	kingdom	kingdom	NOUN	NN	Number=Sing	37	obl	_	_
+42	of	of	ADP	IN	_	43	case	_	_
+43	heaven	heaven	NOUN	NN	Number=Sing	41	nmod	_	_
+44	;	;	PUNCT	,	_	49	punct	_	_
+45	but	but	CCONJ	CC	_	49	cc	_	_
+46	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	49	nsubj:pass	_	_
+47	shall	shall	AUX	MD	_	49	aux	_	_
+48	be	be	AUX	VB	VerbForm=Inf	49	aux:pass	_	_
+49	cast	cast	VERB	VBN	Tense=Past|VerbForm=Part	33	conj	_	_
+50	out	out	ADP	RP	_	49	compound:prt	_	_
+51	for	for	SCONJ	IN	_	53	mark	_	_
+52	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	53	nsubj	_	_
+53	are	be	VERB	VBP	Tense=Pres	49	advcl	_	_
+54	the	the	DET	DT	_	55	det	_	_
+55	children	child	NOUN	NNS	Number=Plur	53	xcomp	_	_
+56	of	of	ADP	IN	_	58	case	_	_
+57	the	the	DET	DT	_	58	det	_	_
+58	kingdom	kingdom	NOUN	NN	Number=Sing	55	nmod	_	_
+59	of	of	ADP	IN	_	61	case	_	_
+60	the	the	DET	DT	_	61	det	_	_
+61	devil	devil	NOUN	NN	Number=Sing	58	nmod	_	_
+62	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = And now behold, I say unto you, my brethren, if ye have experienced a change of heart, and if ye have felt to sing the song of redeeming love, I would ask, can ye feel so now?
+# sent_id = 167
+# llm_note = "behold" = INTJ discourse. Main clause: "I would ask". Two if-clauses are advcl of "ask". "can ye feel so now" = ccomp of "ask". "felt to sing" = "felt" VERB with "to sing" as xcomp.
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	now	now	ADV	RB	_	6	advmod	_	_
+3	behold	behold	INTJ	UH	_	6	discourse	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	6	nsubj	_	_
+6	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	6	obl	_	_
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	11	nmod:poss	_	_
+11	brethren	brethren	NOUN	NNS	Number=Plur	6	vocative	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	if	if	SCONJ	IN	_	16	mark	_	_
+14	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	16	nsubj	_	_
+15	have	have	AUX	VBP	Tense=Pres	16	aux	_	_
+16	experienced	experience	VERB	VBN	Tense=Past|VerbForm=Part	37	advcl	_	_
+17	a	a	DET	DT	_	18	det	_	_
+18	change	change	NOUN	NN	Number=Sing	16	obj	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	heart	heart	NOUN	NN	Number=Sing	18	nmod	_	_
+21	,	,	PUNCT	,	_	26	punct	_	_
+22	and	and	CCONJ	CC	_	26	cc	_	_
+23	if	if	SCONJ	IN	_	26	mark	_	_
+24	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	26	nsubj	_	_
+25	have	have	AUX	VBP	Tense=Pres	26	aux	_	_
+26	felt	feel	VERB	VBN	Tense=Past|VerbForm=Part	16	conj	_	_
+27	to	to	PART	TO	_	28	mark	_	_
+28	sing	sing	VERB	VB	VerbForm=Inf	26	xcomp	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	song	song	NOUN	NN	Number=Sing	28	obj	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	redeeming	redeem	VERB	VBG	VerbForm=Part	33	amod	_	_
+33	love	love	NOUN	NN	Number=Sing	30	nmod	_	_
+34	,	,	PUNCT	,	_	37	punct	_	_
+35	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	37	nsubj	_	_
+36	would	would	AUX	MD	_	37	aux	_	_
+37	ask	ask	VERB	VB	VerbForm=Inf	6	ccomp	_	_
+38	,	,	PUNCT	,	_	41	punct	_	_
+39	can	can	AUX	MD	_	41	aux	_	_
+40	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	41	nsubj	_	_
+41	feel	feel	VERB	VB	VerbForm=Inf	37	ccomp	_	_
+42	so	so	ADV	RB	_	41	advmod	_	_
+43	now	now	ADV	RB	_	41	advmod	_	_
+44	?	?	PUNCT	.	_	6	punct	_	_
+
+# text = Have ye walked, keeping yourselves blameless before God?
+# sent_id = 168
+# llm_note = "keeping yourselves blameless before God" = advcl (participial manner) of "walked".
+1	Have	have	AUX	VBP	Mood=Int|Number=Plur|Person=2|Tense=Pres	3	aux	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	walked	walk	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+4	,	,	PUNCT	,	_	5	punct	_	_
+5	keeping	keep	VERB	VBG	VerbForm=Part	3	advcl	_	_
+6	yourselves	yourself	PRON	PRP	Case=Acc|Number=Plur|Person=2|Reflex=Yes	5	obj	_	_
+7	blameless	blameless	ADJ	JJ	_	5	xcomp	_	_
+8	before	before	ADP	IN	_	9	case	_	_
+9	God	God	PROPN	NNP	Number=Sing	7	obl	_	_
+10	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Could ye say, if ye were called to die at this time, within yourselves, that ye have been sufficiently humble?
+# sent_id = 169
+# llm_note = "Could ye say ... that ye have been sufficiently humble" = main. "if ye were called to die at this time" = advcl of "say". "within yourselves" = obl modifying "say" or parenthetical. "that ye have been sufficiently humble" = ccomp of "say".
+1	Could	can	AUX	MD	_	3	aux	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	say	say	VERB	VB	VerbForm=Inf	0	root	_	_
+4	,	,	PUNCT	,	_	8	punct	_	_
+5	if	if	SCONJ	IN	_	8	mark	_	_
+6	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj:pass	_	_
+7	were	be	AUX	VBD	Tense=Past	8	aux:pass	_	_
+8	called	call	VERB	VBN	Tense=Past|VerbForm=Part	3	advcl	_	_
+9	to	to	PART	TO	_	10	mark	_	_
+10	die	die	VERB	VB	VerbForm=Inf	8	xcomp	_	_
+11	at	at	ADP	IN	_	13	case	_	_
+12	this	this	DET	DT	Number=Sing	13	det	_	_
+13	time	time	NOUN	NN	Number=Sing	10	obl	_	_
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	within	within	ADP	IN	_	16	case	_	_
+16	yourselves	yourself	PRON	PRP	Case=Acc|Number=Plur|Person=2|Reflex=Yes	3	obl	_	_
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	that	that	SCONJ	IN	_	22	mark	_	_
+19	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	22	nsubj	_	_
+20	have	have	AUX	VBP	Tense=Pres	22	aux	_	_
+21	been	be	AUX	VBN	Tense=Past|VerbForm=Part	22	cop	_	_
+22	sufficiently	humble	ADJ	JJ	_	3	ccomp	_	_
+23	humble	sufficiently	ADV	RB	_	22	advmod	_	_
+24	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = That your garments have been cleansed and made white through the blood of Christ, who will come to redeem his people from their sins?
+# sent_id = 170
+# llm_note = Continuation/elaboration of s169. "That" = SCONJ mark, this is a that-clause functioning as ccomp/continuation (orphan clause). Root taken as "cleansed". "made white" = conj of "cleansed".
+1	That	that	SCONJ	IN	_	6	mark	_	_
+2	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	3	nmod:poss	_	_
+3	garments	garment	NOUN	NNS	Number=Plur	6	nsubj:pass	_	_
+4	have	have	AUX	VBP	Tense=Pres	6	aux	_	_
+5	been	be	AUX	VBN	Tense=Past|VerbForm=Part	6	aux:pass	_	_
+6	cleansed	cleanse	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	made	make	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+9	white	white	ADJ	JJ	_	8	xcomp	_	_
+10	through	through	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	blood	blood	NOUN	NN	Number=Sing	6	obl	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Christ	Christ	PROPN	NNP	Number=Sing	12	nmod	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	who	who	PRON	WP	PronType=Rel	18	nsubj	_	_
+17	will	will	AUX	MD	_	18	aux	_	_
+18	come	come	VERB	VB	VerbForm=Inf	14	acl:relcl	_	_
+19	to	to	PART	TO	_	20	mark	_	_
+20	redeem	redeem	VERB	VB	VerbForm=Inf	18	advcl	_	_
+21	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	22	nmod:poss	_	_
+22	people	people	NOUN	NN	Number=Sing	20	obj	_	_
+23	from	from	ADP	IN	_	25	case	_	_
+24	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	25	nmod:poss	_	_
+25	sins	sin	NOUN	NNS	Number=Plur	20	obl	_	_
+26	?	?	PUNCT	.	_	6	punct	_	_
+
+# text = Behold, are ye stripped of pride?
+# sent_id = 171
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	are	be	AUX	VBP	Mood=Int|Number=Plur|Person=2|Tense=Pres	5	aux:pass	_	_
+4	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	5	nsubj:pass	_	_
+5	stripped	strip	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	pride	pride	NOUN	NN	Number=Sing	5	obl	_	_
+8	?	?	PUNCT	.	_	5	punct	_	_
+
+# text = I say unto you, if ye are not ye are not prepared to meet God.
+# sent_id = 172
+# llm_note = Elliptical: "if ye are not [stripped of pride], ye are not prepared". First "ye are not" is an advcl (if-clause, elliptical). Second "ye are not prepared" is the main clause. Root = "prepared".
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	2	obl	_	_
+5	,	,	PUNCT	,	_	13	punct	_	_
+6	if	if	SCONJ	IN	_	8	mark	_	_
+7	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj	_	_
+8	are	be	VERB	VBP	Tense=Pres	13	advcl	_	_
+9	not	not	PART	RB	_	8	advmod	_	_
+10	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	13	nsubj:pass	_	_
+11	are	be	AUX	VBP	Tense=Pres	13	aux:pass	_	_
+12	not	not	PART	RB	_	13	advmod	_	_
+13	prepared	prepare	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	meet	meet	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+16	God	God	PROPN	NNP	Number=Sing	15	obj	_	_
+17	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = Behold ye must prepare quickly; for the kingdom of heaven is soon at hand, and such an one hath not eternal life.
+# sent_id = 173
+# llm_note = "Behold" = INTJ discourse. Two main clauses joined by semicolon and "for": "ye must prepare quickly" and "the kingdom of heaven is soon at hand" and "such an one hath not eternal life". "for" = SCONJ mark on causal clause. "and such an one hath not eternal life" = conj of "is ... at hand".
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	4	nsubj	_	_
+3	must	must	AUX	MD	_	4	aux	_	_
+4	prepare	prepare	VERB	VB	VerbForm=Inf	0	root	_	_
+5	quickly	quickly	ADV	RB	_	4	advmod	_	_
+6	;	;	PUNCT	,	_	12	punct	_	_
+7	for	for	SCONJ	IN	_	12	mark	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	kingdom	kingdom	NOUN	NN	Number=Sing	12	nsubj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	heaven	heaven	NOUN	NN	Number=Sing	9	nmod	_	_
+12	is	be	VERB	VBP	Number=Sing|Person=3|Tense=Pres	4	advcl	_	_
+13	soon	soon	ADV	RB	_	12	advmod	_	_
+14	at	at	ADP	IN	_	15	case	_	_
+15	hand	hand	NOUN	NN	Number=Sing	12	obl	_	_
+16	,	,	PUNCT	,	_	21	punct	_	_
+17	and	and	CCONJ	CC	_	21	cc	_	_
+18	such	such	DET	PDT	_	20	det:predet	_	_
+19	an	a	DET	DT	_	20	det	_	_
+20	one	one	PRON	NN	_	21	nsubj	_	_
+21	hath	have	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	12	conj	_	_
+22	not	not	PART	RB	_	21	advmod	_	_
+23	eternal	eternal	ADJ	JJ	_	24	amod	_	_
+24	life	life	NOUN	NN	Number=Sing	21	obj	_	_
+25	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Behold, I say, is there one among you who is not stripped of envy?
+# sent_id = 174
+# llm_note = "I say" = parenthetical. Main: "is there one among you who is not stripped of envy?". "there" = expl, "one" = nsubj of "is". "who is not stripped of envy" = acl:relcl of "one".
+1	Behold	behold	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	6	parataxis	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	is	be	VERB	VBP	Mood=Int|Number=Sing|Person=3|Tense=Pres	0	root	_	_
+7	there	there	PRON	EX	_	6	expl	_	_
+8	one	one	PRON	NN	_	6	nsubj	_	_
+9	among	among	ADP	IN	_	10	case	_	_
+10	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	8	nmod	_	_
+11	who	who	PRON	WP	PronType=Rel	14	nsubj:pass	_	_
+12	is	be	AUX	VBP	Tense=Pres	14	aux:pass	_	_
+13	not	not	PART	RB	_	14	advmod	_	_
+14	stripped	strip	VERB	VBN	Tense=Past|VerbForm=Part	8	acl:relcl	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	envy	envy	NOUN	NN	Number=Sing	14	obl	_	_
+17	?	?	PUNCT	.	_	6	punct	_	_
+

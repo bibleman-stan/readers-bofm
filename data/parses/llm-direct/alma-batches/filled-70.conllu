@@ -1,0 +1,940 @@
+# text = Now as ye are in our hands we will spill your blood upon the ground, or ye shall submit to the conditions which I have proposed.
+# sent_id = 1725
+# llm_note = "as ye are in our hands" = conditional/temporal advcl. "we will spill...or ye shall submit" = conjoined alternative main clauses. Root = "spill".
+1	Now	now	ADV	RB	_	10	advmod	_	_
+2	as	as	SCONJ	IN	_	4	mark	_	_
+3	ye	ye	PRON	PRP	_	4	nsubj	_	_
+4	are	be	VERB	VBP	_	10	advcl	_	_
+5	in	in	ADP	IN	_	7	case	_	_
+6	our	we	PRON	PRP$	_	7	nmod:poss	_	_
+7	hands	hand	NOUN	NNS	_	4	obl	_	_
+8	we	we	PRON	PRP	_	10	nsubj	_	_
+9	will	will	AUX	MD	_	10	aux	_	_
+10	spill	spill	VERB	VB	_	0	root	_	_
+11	your	you	PRON	PRP$	_	12	nmod:poss	_	_
+12	blood	blood	NOUN	NN	_	10	obj	_	_
+13	upon	upon	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	ground	ground	NOUN	NN	_	10	obl	_	_
+16	,	,	PUNCT	,	_	20	punct	_	_
+17	or	or	CCONJ	CC	_	20	cc	_	_
+18	ye	ye	PRON	PRP	_	20	nsubj	_	_
+19	shall	shall	AUX	MD	_	20	aux	_	_
+20	submit	submit	VERB	VB	_	10	conj	_	_
+21	to	to	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	conditions	condition	NOUN	NNS	_	20	obl	_	_
+24	which	which	PRON	WDT	_	27	obj	_	_
+25	I	I	PRON	PRP	_	27	nsubj	_	_
+26	have	have	AUX	VBP	_	27	aux	_	_
+27	proposed	propose	VERB	VBN	_	23	acl:relcl	_	_
+28	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And now when Moroni had said these words, Zerahemnah retained his sword, and he was angry with Moroni, and he rushed forward that he might slay Moroni; but as he raised his sword, behold, one of Moroni's soldiers smote it even to the earth, and it broke by the hilt; and he also smote Zerahemnah that he took off his scalp and it fell to the earth.
+# sent_id = 1726
+# llm_note = MWT 43-44 "Moroni's" = "Moroni" + "'s". Span row left blank. Complex sentence with many conjoined clauses. Root = "retained". "that he might slay" = purpose advcl. "behold" = INTJ. "that he took off" = result advcl of "smote".
+1	And	and	CCONJ	CC	_	11	cc	_	_
+2	now	now	ADV	RB	_	11	advmod	_	_
+3	when	when	SCONJ	WRB	_	6	mark	_	_
+4	Moroni	Moroni	PROPN	NNP	_	6	nsubj	_	_
+5	had	have	AUX	VBD	_	6	aux	_	_
+6	said	say	VERB	VBN	_	11	advcl	_	_
+7	these	this	DET	DT	_	8	det	_	_
+8	words	word	NOUN	NNS	_	6	obj	_	_
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	Zerahemnah	Zerahemnah	PROPN	NNP	_	11	nsubj	_	_
+11	retained	retain	VERB	VBD	_	0	root	_	_
+12	his	he	PRON	PRP$	_	13	nmod:poss	_	_
+13	sword	sword	NOUN	NN	_	11	obj	_	_
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	and	and	CCONJ	CC	_	18	cc	_	_
+16	he	he	PRON	PRP	_	18	nsubj	_	_
+17	was	be	AUX	VBD	_	18	cop	_	_
+18	angry	angry	ADJ	JJ	_	11	conj	_	_
+19	with	with	ADP	IN	_	20	case	_	_
+20	Moroni	Moroni	PROPN	NNP	_	18	obl	_	_
+21	,	,	PUNCT	,	_	24	punct	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	he	he	PRON	PRP	_	24	nsubj	_	_
+24	rushed	rush	VERB	VBD	_	11	conj	_	_
+25	forward	forward	ADV	RB	_	24	advmod	_	_
+26	that	that	SCONJ	IN	_	29	mark	_	_
+27	he	he	PRON	PRP	_	29	nsubj	_	_
+28	might	may	AUX	MD	_	29	aux	_	_
+29	slay	slay	VERB	VB	_	24	advcl	_	_
+30	Moroni	Moroni	PROPN	NNP	_	29	obj	_	_
+31	;	;	PUNCT	,	_	46	punct	_	_
+32	but	but	CCONJ	CC	_	46	cc	_	_
+33	as	as	SCONJ	IN	_	35	mark	_	_
+34	he	he	PRON	PRP	_	35	nsubj	_	_
+35	raised	raise	VERB	VBD	_	46	advcl	_	_
+36	his	he	PRON	PRP$	_	37	nmod:poss	_	_
+37	sword	sword	NOUN	NN	_	35	obj	_	_
+38	,	,	PUNCT	,	_	46	punct	_	_
+39	behold	behold	INTJ	UH	_	46	discourse	_	_
+40	,	,	PUNCT	,	_	39	punct	_	_
+41	one	one	PRON	NN	_	46	nsubj	_	_
+42	of	of	ADP	IN	_	45	case	_	_
+43-44	Moroni's	_	_	_	_	_	_	_	_
+43	Moroni	Moroni	PROPN	NNP	_	45	nmod:poss	_	_
+44	's	's	PART	POS	_	43	case	_	_
+45	soldiers	soldier	NOUN	NNS	_	41	nmod	_	_
+46	smote	smite	VERB	VBD	_	11	conj	_	_
+47	it	it	PRON	PRP	_	46	obj	_	_
+48	even	even	ADV	RB	_	49	advmod	_	_
+49	to	to	ADP	IN	_	51	case	_	_
+50	the	the	DET	DT	_	51	det	_	_
+51	earth	earth	NOUN	NN	_	46	obl	_	_
+52	,	,	PUNCT	,	_	55	punct	_	_
+53	and	and	CCONJ	CC	_	55	cc	_	_
+54	it	it	PRON	PRP	_	55	nsubj	_	_
+55	broke	break	VERB	VBD	_	46	conj	_	_
+56	by	by	ADP	IN	_	58	case	_	_
+57	the	the	DET	DT	_	58	det	_	_
+58	hilt	hilt	NOUN	NN	_	55	obl	_	_
+59	;	;	PUNCT	,	_	63	punct	_	_
+60	and	and	CCONJ	CC	_	63	cc	_	_
+61	he	he	PRON	PRP	_	63	nsubj	_	_
+62	also	also	ADV	RB	_	63	advmod	_	_
+63	smote	smite	VERB	VBD	_	46	conj	_	_
+64	Zerahemnah	Zerahemnah	PROPN	NNP	_	63	obj	_	_
+65	that	that	SCONJ	IN	_	67	mark	_	_
+66	he	he	PRON	PRP	_	67	nsubj	_	_
+67	took	take	VERB	VBD	_	63	advcl	_	_
+68	off	off	ADP	RP	_	67	compound:prt	_	_
+69	his	he	PRON	PRP$	_	70	nmod:poss	_	_
+70	scalp	scalp	NOUN	NN	_	67	obj	_	_
+71	and	and	CCONJ	CC	_	73	cc	_	_
+72	it	it	PRON	PRP	_	73	nsubj	_	_
+73	fell	fall	VERB	VBD	_	67	conj	_	_
+74	to	to	ADP	IN	_	76	case	_	_
+75	the	the	DET	DT	_	76	det	_	_
+76	earth	earth	NOUN	NN	_	73	obl	_	_
+77	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = And Zerahemnah withdrew from before them into the midst of his soldiers.
+# sent_id = 1727
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Zerahemnah	Zerahemnah	PROPN	NNP	_	3	nsubj	_	_
+3	withdrew	withdraw	VERB	VBD	_	0	root	_	_
+4	from	from	ADP	IN	_	6	case	_	_
+5	before	before	ADP	IN	_	4	fixed	_	_
+6	them	they	PRON	PRP	_	3	obl	_	_
+7	into	into	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	midst	midst	NOUN	NN	_	3	obl	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	his	he	PRON	PRP$	_	12	nmod:poss	_	_
+12	soldiers	soldier	NOUN	NNS	_	9	nmod	_	_
+13	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that the soldier who stood by, who smote off the scalp of Zerahemnah, took up the scalp from off the ground by the hair, and laid it upon the point of his sword, and stretched it forth unto them, saying unto them with a loud voice: Even as this scalp has fallen to the earth, which is the scalp of your chief, so shall ye fall to the earth except ye will deliver up your weapons of war and depart with a covenant of peace.
+# sent_id = 1728
+# llm_note = AICTP. Main subject = "the soldier". Two relative clauses on "soldier". Three conjoined verbs: "took up", "laid", "stretched". "saying" = participial advcl. The speech contains an "Even as...so shall" comparative construction.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	21	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	soldier	soldier	NOUN	NN	_	21	nsubj	_	_
+9	who	who	PRON	WP	_	10	nsubj	_	_
+10	stood	stand	VERB	VBD	_	8	acl:relcl	_	_
+11	by	by	ADV	RB	_	10	advmod	_	_
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	who	who	PRON	WP	_	14	nsubj	_	_
+14	smote	smite	VERB	VBD	_	8	acl:relcl	_	_
+15	off	off	ADP	RP	_	14	compound:prt	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	scalp	scalp	NOUN	NN	_	14	obj	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	Zerahemnah	Zerahemnah	PROPN	NNP	_	17	nmod	_	_
+20	,	,	PUNCT	,	_	21	punct	_	_
+21	took	take	VERB	VBD	_	3	ccomp	_	_
+22	up	up	ADP	RP	_	21	compound:prt	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	scalp	scalp	NOUN	NN	_	21	obj	_	_
+25	from	from	ADP	IN	_	27	case	_	_
+26	off	off	ADP	IN	_	25	fixed	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	ground	ground	NOUN	NN	_	21	obl	_	_
+29	by	by	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	hair	hair	NOUN	NN	_	21	obl	_	_
+32	,	,	PUNCT	,	_	34	punct	_	_
+33	and	and	CCONJ	CC	_	34	cc	_	_
+34	laid	lay	VERB	VBD	_	21	conj	_	_
+35	it	it	PRON	PRP	_	34	obj	_	_
+36	upon	upon	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	point	point	NOUN	NN	_	34	obl	_	_
+39	of	of	ADP	IN	_	41	case	_	_
+40	his	he	PRON	PRP$	_	41	nmod:poss	_	_
+41	sword	sword	NOUN	NN	_	38	nmod	_	_
+42	,	,	PUNCT	,	_	44	punct	_	_
+43	and	and	CCONJ	CC	_	44	cc	_	_
+44	stretched	stretch	VERB	VBD	_	21	conj	_	_
+45	it	it	PRON	PRP	_	44	obj	_	_
+46	forth	forth	ADV	RB	_	44	advmod	_	_
+47	unto	unto	ADP	IN	_	48	case	_	_
+48	them	they	PRON	PRP	_	44	obl	_	_
+49	,	,	PUNCT	,	_	50	punct	_	_
+50	saying	say	VERB	VBG	_	21	advcl	_	_
+51	unto	unto	ADP	IN	_	52	case	_	_
+52	them	they	PRON	PRP	_	50	obl	_	_
+53	with	with	ADP	IN	_	56	case	_	_
+54	a	a	DET	DT	_	56	det	_	_
+55	loud	loud	ADJ	JJ	_	56	amod	_	_
+56	voice	voice	NOUN	NN	_	50	obl	_	_
+57	:	:	PUNCT	:	_	50	punct	_	_
+58	Even	even	ADV	RB	_	63	advmod	_	_
+59	as	as	SCONJ	IN	_	63	mark	_	_
+60	this	this	DET	DT	_	61	det	_	_
+61	scalp	scalp	NOUN	NN	_	63	nsubj	_	_
+62	has	have	AUX	VBZ	_	63	aux	_	_
+63	fallen	fall	VERB	VBN	_	79	advcl	_	_
+64	to	to	ADP	IN	_	66	case	_	_
+65	the	the	DET	DT	_	66	det	_	_
+66	earth	earth	NOUN	NN	_	63	obl	_	_
+67	,	,	PUNCT	,	_	70	punct	_	_
+68	which	which	PRON	WDT	_	70	nsubj	_	_
+69	is	be	VERB	VBZ	_	61	acl:relcl	_	_
+70	the	the	DET	DT	_	71	det	_	_
+71	scalp	scalp	NOUN	NN	_	69	xcomp	_	_
+72	of	of	ADP	IN	_	74	case	_	_
+73	your	you	PRON	PRP$	_	74	nmod:poss	_	_
+74	chief	chief	NOUN	NN	_	71	nmod	_	_
+75	,	,	PUNCT	,	_	79	punct	_	_
+76	so	so	ADV	RB	_	79	advmod	_	_
+77	shall	shall	AUX	MD	_	79	aux	_	_
+78	ye	ye	PRON	PRP	_	79	nsubj	_	_
+79	fall	fall	VERB	VB	_	50	ccomp	_	_
+80	to	to	ADP	IN	_	82	case	_	_
+81	the	the	DET	DT	_	82	det	_	_
+82	earth	earth	NOUN	NN	_	79	obl	_	_
+83	except	except	SCONJ	IN	_	86	mark	_	_
+84	ye	ye	PRON	PRP	_	86	nsubj	_	_
+85	will	will	AUX	MD	_	86	aux	_	_
+86	deliver	deliver	VERB	VB	_	79	advcl	_	_
+87	up	up	ADP	RP	_	86	compound:prt	_	_
+88	your	you	PRON	PRP$	_	89	nmod:poss	_	_
+89	weapons	weapon	NOUN	NNS	_	86	obj	_	_
+90	of	of	ADP	IN	_	91	case	_	_
+91	war	war	NOUN	NN	_	89	nmod	_	_
+92	and	and	CCONJ	CC	_	93	cc	_	_
+93	depart	depart	VERB	VB	_	86	conj	_	_
+94	with	with	ADP	IN	_	96	case	_	_
+95	a	a	DET	DT	_	96	det	_	_
+96	covenant	covenant	NOUN	NN	_	93	obl	_	_
+97	of	of	ADP	IN	_	98	case	_	_
+98	peace	peace	NOUN	NN	_	96	nmod	_	_
+99	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now there were many, when they heard these words and saw the scalp which was upon the sword, that were struck with fear; and many came forth and threw down their weapons of war at the feet of Moroni, and entered into a covenant of peace.
+# sent_id = 1729
+# llm_note = "there were many" = existential. "when they heard...and saw" = temporal advcl. "that were struck with fear" = relative clause on "many" (postposed). Second main clause: "many came forth and threw down...and entered".
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	were	be	VERB	VBD	_	0	root	_	_
+4	many	many	ADJ	JJ	_	3	nsubj	_	_
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	when	when	SCONJ	WRB	_	8	mark	_	_
+7	they	they	PRON	PRP	_	8	nsubj	_	_
+8	heard	hear	VERB	VBD	_	23	advcl	_	_
+9	these	this	DET	DT	_	10	det	_	_
+10	words	word	NOUN	NNS	_	8	obj	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	saw	see	VERB	VBD	_	8	conj	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	scalp	scalp	NOUN	NN	_	12	obj	_	_
+15	which	which	PRON	WDT	_	16	nsubj	_	_
+16	was	be	VERB	VBD	_	14	acl:relcl	_	_
+17	upon	upon	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	sword	sword	NOUN	NN	_	16	obl	_	_
+20	,	,	PUNCT	,	_	23	punct	_	_
+21	that	that	PRON	WDT	_	23	nsubj:pass	_	_
+22	were	be	AUX	VBD	_	23	aux:pass	_	_
+23	struck	strike	VERB	VBN	_	3	ccomp	_	_
+24	with	with	ADP	IN	_	25	case	_	_
+25	fear	fear	NOUN	NN	_	23	obl	_	_
+26	;	;	PUNCT	,	_	29	punct	_	_
+27	and	and	CCONJ	CC	_	29	cc	_	_
+28	many	many	ADJ	JJ	_	29	nsubj	_	_
+29	came	come	VERB	VBD	_	3	conj	_	_
+30	forth	forth	ADV	RB	_	29	advmod	_	_
+31	and	and	CCONJ	CC	_	32	cc	_	_
+32	threw	throw	VERB	VBD	_	29	conj	_	_
+33	down	down	ADP	RP	_	32	compound:prt	_	_
+34	their	they	PRON	PRP$	_	35	nmod:poss	_	_
+35	weapons	weapon	NOUN	NNS	_	32	obj	_	_
+36	of	of	ADP	IN	_	37	case	_	_
+37	war	war	NOUN	NN	_	35	nmod	_	_
+38	at	at	ADP	IN	_	40	case	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	feet	foot	NOUN	NNS	_	32	obl	_	_
+41	of	of	ADP	IN	_	42	case	_	_
+42	Moroni	Moroni	PROPN	NNP	_	40	nmod	_	_
+43	,	,	PUNCT	,	_	45	punct	_	_
+44	and	and	CCONJ	CC	_	45	cc	_	_
+45	entered	enter	VERB	VBD	_	29	conj	_	_
+46	into	into	ADP	IN	_	48	case	_	_
+47	a	a	DET	DT	_	48	det	_	_
+48	covenant	covenant	NOUN	NN	_	45	obl	_	_
+49	of	of	ADP	IN	_	50	case	_	_
+50	peace	peace	NOUN	NN	_	48	nmod	_	_
+51	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And as many as entered into a covenant they suffered to depart into the wilderness.
+# sent_id = 1730
+# llm_note = "as many as entered into a covenant" = fused relative (quantified) = nsubj of "suffered". "suffered to depart" = permit construction, xcomp.
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	as	as	SCONJ	IN	_	5	mark	_	_
+3	many	many	PRON	DT	_	10	nsubj	_	_
+4	as	as	SCONJ	IN	_	3	fixed	_	_
+5	entered	enter	VERB	VBD	_	3	acl:relcl	_	_
+6	into	into	ADP	IN	_	8	case	_	_
+7	a	a	DET	DT	_	8	det	_	_
+8	covenant	covenant	NOUN	NN	_	5	obl	_	_
+9	they	they	PRON	PRP	_	10	nsubj	_	_
+10	suffered	suffer	VERB	VBD	_	0	root	_	_
+11	to	to	PART	TO	_	12	mark	_	_
+12	depart	depart	VERB	VB	_	10	xcomp	_	_
+13	into	into	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	wilderness	wilderness	NOUN	NN	_	12	obl	_	_
+16	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = Now it came to pass that Zerahemnah was exceedingly wroth, and he did stir up the remainder of his soldiers to anger, to contend more powerfully against the Nephites.
+# sent_id = 1731
+# llm_note = AICTP variant with "Now". "was wroth" = copular. "did stir up" = emphatic. "to anger" = purpose/result obl. "to contend" = purpose infinitive advcl.
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	Zerahemnah	Zerahemnah	PROPN	NNP	_	8	nsubj	_	_
+8	was	be	VERB	VBD	_	3	ccomp	_	_
+9	exceedingly	exceedingly	ADV	RB	_	10	advmod	_	_
+10	wroth	wroth	ADJ	JJ	_	8	xcomp	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	he	he	PRON	PRP	_	15	nsubj	_	_
+14	did	do	AUX	VBD	_	15	aux	_	_
+15	stir	stir	VERB	VB	_	8	conj	_	_
+16	up	up	ADP	RP	_	15	compound:prt	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	remainder	remainder	NOUN	NN	_	15	obj	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	his	he	PRON	PRP$	_	21	nmod:poss	_	_
+21	soldiers	soldier	NOUN	NNS	_	18	nmod	_	_
+22	to	to	ADP	IN	_	23	case	_	_
+23	anger	anger	NOUN	NN	_	15	obl	_	_
+24	,	,	PUNCT	,	_	26	punct	_	_
+25	to	to	PART	TO	_	26	mark	_	_
+26	contend	contend	VERB	VB	_	15	advcl	_	_
+27	more	more	ADV	RBR	_	28	advmod	_	_
+28	powerfully	powerfully	ADV	RB	_	26	advmod	_	_
+29	against	against	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	Nephites	Nephite	PROPN	NNPS	_	26	obl	_	_
+32	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now Moroni was angry, because of the stubbornness of the Lamanites; therefore he commanded his people that they should fall upon them and slay them.
+# sent_id = 1732
+# llm_note = "was angry" = copular stative. "because of" = complex prep. "commanded...that" = ccomp.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	Moroni	Moroni	PROPN	NNP	_	4	nsubj	_	_
+4	was	be	VERB	VBD	_	0	root	_	_
+5	angry	angry	ADJ	JJ	_	4	xcomp	_	_
+6	,	,	PUNCT	,	_	4	punct	_	_
+7	because	because	ADP	IN	_	10	case	_	_
+8	of	of	ADP	IN	_	7	fixed	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	stubbornness	stubbornness	NOUN	NN	_	4	obl	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	Lamanites	Lamanite	PROPN	NNPS	_	10	nmod	_	_
+14	;	;	PUNCT	,	_	17	punct	_	_
+15	therefore	therefore	ADV	RB	_	17	advmod	_	_
+16	he	he	PRON	PRP	_	17	nsubj	_	_
+17	commanded	command	VERB	VBD	_	4	conj	_	_
+18	his	he	PRON	PRP$	_	19	nmod:poss	_	_
+19	people	people	NOUN	NNS	_	17	obj	_	_
+20	that	that	SCONJ	IN	_	23	mark	_	_
+21	they	they	PRON	PRP	_	23	nsubj	_	_
+22	should	shall	AUX	MD	_	23	aux	_	_
+23	fall	fall	VERB	VB	_	17	ccomp	_	_
+24	upon	upon	ADP	IN	_	25	case	_	_
+25	them	they	PRON	PRP	_	23	obl	_	_
+26	and	and	CCONJ	CC	_	27	cc	_	_
+27	slay	slay	VERB	VB	_	23	conj	_	_
+28	them	they	PRON	PRP	_	27	obj	_	_
+29	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that they began to slay them; yea, and the Lamanites did contend with their swords and their might.
+# sent_id = 1733
+# llm_note = AICTP. "began to slay" in ccomp. "yea" = discourse. Second clause = "did contend" = emphatic.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	they	they	PRON	PRP	_	8	nsubj	_	_
+8	began	begin	VERB	VBD	_	3	ccomp	_	_
+9	to	to	PART	TO	_	10	mark	_	_
+10	slay	slay	VERB	VB	_	8	xcomp	_	_
+11	them	they	PRON	PRP	_	10	obj	_	_
+12	;	;	PUNCT	,	_	19	punct	_	_
+13	yea	yea	INTJ	UH	_	19	discourse	_	_
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	and	and	CCONJ	CC	_	19	cc	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	Lamanites	Lamanite	PROPN	NNPS	_	19	nsubj	_	_
+18	did	do	AUX	VBD	_	19	aux	_	_
+19	contend	contend	VERB	VB	_	8	conj	_	_
+20	with	with	ADP	IN	_	22	case	_	_
+21	their	they	PRON	PRP$	_	22	nmod:poss	_	_
+22	swords	sword	NOUN	NNS	_	19	obl	_	_
+23	and	and	CCONJ	CC	_	25	cc	_	_
+24	their	they	PRON	PRP$	_	25	nmod:poss	_	_
+25	might	might	NOUN	NN	_	22	conj	_	_
+26	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But behold, their naked skins and their bare heads were exposed to the sharp swords of the Nephites; yea, behold they were pierced and smitten, yea, and did fall exceedingly fast before the swords of the Nephites; and they began to be swept down, even as the soldier of Moroni had prophesied.
+# sent_id = 1734
+# llm_note = "behold" first = INTJ discourse. "were exposed" = passive root. "behold" second = INTJ discourse. "were pierced and smitten" = passive conjoined. "did fall" = emphatic. "began to be swept down" = inchoative + passive. "even as...had prophesied" = comparative/manner advcl.
+1	But	but	CCONJ	CC	_	12	cc	_	_
+2	behold	behold	INTJ	UH	_	12	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	their	they	PRON	PRP$	_	6	nmod:poss	_	_
+5	naked	naked	ADJ	JJ	_	6	amod	_	_
+6	skins	skin	NOUN	NNS	_	12	nsubj:pass	_	_
+7	and	and	CCONJ	CC	_	10	cc	_	_
+8	their	they	PRON	PRP$	_	10	nmod:poss	_	_
+9	bare	bare	ADJ	JJ	_	10	amod	_	_
+10	heads	head	NOUN	NNS	_	6	conj	_	_
+11	were	be	AUX	VBD	_	12	aux:pass	_	_
+12	exposed	expose	VERB	VBN	_	0	root	_	_
+13	to	to	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	_	16	det	_	_
+15	sharp	sharp	ADJ	JJ	_	16	amod	_	_
+16	swords	sword	NOUN	NNS	_	12	obl	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	Nephites	Nephite	PROPN	NNPS	_	16	nmod	_	_
+20	;	;	PUNCT	,	_	26	punct	_	_
+21	yea	yea	INTJ	UH	_	26	discourse	_	_
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	behold	behold	INTJ	UH	_	26	discourse	_	_
+24	they	they	PRON	PRP	_	26	nsubj:pass	_	_
+25	were	be	AUX	VBD	_	26	aux:pass	_	_
+26	pierced	pierce	VERB	VBN	_	12	conj	_	_
+27	and	and	CCONJ	CC	_	28	cc	_	_
+28	smitten	smite	VERB	VBN	_	26	conj	_	_
+29	,	,	PUNCT	,	_	34	punct	_	_
+30	yea	yea	INTJ	UH	_	34	discourse	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	and	and	CCONJ	CC	_	34	cc	_	_
+33	did	do	AUX	VBD	_	34	aux	_	_
+34	fall	fall	VERB	VB	_	26	conj	_	_
+35	exceedingly	exceedingly	ADV	RB	_	36	advmod	_	_
+36	fast	fast	ADV	RB	_	34	advmod	_	_
+37	before	before	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	_	39	det	_	_
+39	swords	sword	NOUN	NNS	_	34	obl	_	_
+40	of	of	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	_	42	det	_	_
+42	Nephites	Nephite	PROPN	NNPS	_	39	nmod	_	_
+43	;	;	PUNCT	,	_	46	punct	_	_
+44	and	and	CCONJ	CC	_	46	cc	_	_
+45	they	they	PRON	PRP	_	46	nsubj	_	_
+46	began	begin	VERB	VBD	_	12	conj	_	_
+47	to	to	PART	TO	_	50	mark	_	_
+48	be	be	AUX	VB	_	50	aux:pass	_	_
+49	swept	sweep	VERB	VBN	_	50	aux:pass	_	_
+50	down	down	ADP	RP	_	46	xcomp	_	_
+51	,	,	PUNCT	,	_	59	punct	_	_
+52	even	even	ADV	RB	_	59	advmod	_	_
+53	as	as	SCONJ	IN	_	59	mark	_	_
+54	the	the	DET	DT	_	55	det	_	_
+55	soldier	soldier	NOUN	NN	_	59	nsubj	_	_
+56	of	of	ADP	IN	_	57	case	_	_
+57	Moroni	Moroni	PROPN	NNP	_	55	nmod	_	_
+58	had	have	AUX	VBD	_	59	aux	_	_
+59	prophesied	prophesy	VERB	VBN	_	46	advcl	_	_
+60	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = Now Zerahemnah, when he saw that they were all about to be destroyed, cried mightily unto Moroni, promising that he would covenant and also his people with them, if they would spare the remainder of their lives, that they never would come to war again against them.
+# sent_id = 1735
+# llm_note = "when he saw that" = temporal advcl with ccomp. "cried" = root. "promising" = participial advcl of "cried". "that he would covenant" = ccomp of "promising". "and also his people" = conj subject. "if they would spare" = conditional advcl. "that they never would come" = purpose/result advcl.
+1	Now	now	ADV	RB	_	16	advmod	_	_
+2	Zerahemnah	Zerahemnah	PROPN	NNP	_	16	nsubj	_	_
+3	,	,	PUNCT	,	_	6	punct	_	_
+4	when	when	SCONJ	WRB	_	6	mark	_	_
+5	he	he	PRON	PRP	_	6	nsubj	_	_
+6	saw	see	VERB	VBD	_	16	advcl	_	_
+7	that	that	SCONJ	IN	_	9	mark	_	_
+8	they	they	PRON	PRP	_	9	nsubj:pass	_	_
+9	were	be	AUX	VBD	_	11	aux	_	_
+10	all	all	DET	DT	_	11	advmod	_	_
+11	about	about	ADV	RB	_	6	ccomp	_	_
+12	to	to	PART	TO	_	14	mark	_	_
+13	be	be	AUX	VB	_	14	aux:pass	_	_
+14	destroyed	destroy	VERB	VBN	_	11	xcomp	_	_
+15	,	,	PUNCT	,	_	16	punct	_	_
+16	cried	cry	VERB	VBD	_	0	root	_	_
+17	mightily	mightily	ADV	RB	_	16	advmod	_	_
+18	unto	unto	ADP	IN	_	19	case	_	_
+19	Moroni	Moroni	PROPN	NNP	_	16	obl	_	_
+20	,	,	PUNCT	,	_	21	punct	_	_
+21	promising	promise	VERB	VBG	_	16	advcl	_	_
+22	that	that	SCONJ	IN	_	25	mark	_	_
+23	he	he	PRON	PRP	_	25	nsubj	_	_
+24	would	will	AUX	MD	_	25	aux	_	_
+25	covenant	covenant	VERB	VB	_	21	ccomp	_	_
+26	and	and	CCONJ	CC	_	29	cc	_	_
+27	also	also	ADV	RB	_	29	advmod	_	_
+28	his	he	PRON	PRP$	_	29	nmod:poss	_	_
+29	people	people	NOUN	NNS	_	23	conj	_	_
+30	with	with	ADP	IN	_	31	case	_	_
+31	them	they	PRON	PRP	_	25	obl	_	_
+32	,	,	PUNCT	,	_	36	punct	_	_
+33	if	if	SCONJ	IN	_	36	mark	_	_
+34	they	they	PRON	PRP	_	36	nsubj	_	_
+35	would	will	AUX	MD	_	36	aux	_	_
+36	spare	spare	VERB	VB	_	25	advcl	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	remainder	remainder	NOUN	NN	_	36	obj	_	_
+39	of	of	ADP	IN	_	41	case	_	_
+40	their	they	PRON	PRP$	_	41	nmod:poss	_	_
+41	lives	life	NOUN	NNS	_	38	nmod	_	_
+42	,	,	PUNCT	,	_	47	punct	_	_
+43	that	that	SCONJ	IN	_	47	mark	_	_
+44	they	they	PRON	PRP	_	47	nsubj	_	_
+45	never	never	ADV	RB	_	47	advmod	_	_
+46	would	will	AUX	MD	_	47	aux	_	_
+47	come	come	VERB	VB	_	36	advcl	_	_
+48	to	to	PART	TO	_	49	mark	_	_
+49	war	war	VERB	VB	_	47	advcl	_	_
+50	again	again	ADV	RB	_	47	advmod	_	_
+51	against	against	ADP	IN	_	52	case	_	_
+52	them	they	PRON	PRP	_	47	obl	_	_
+53	.	.	PUNCT	.	_	16	punct	_	_
+
+# text = And it came to pass that Moroni caused that the work of death should cease again among the people.
+# sent_id = 1736
+# llm_note = AICTP. "caused that" = causative ccomp.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	Moroni	Moroni	PROPN	NNP	_	8	nsubj	_	_
+8	caused	cause	VERB	VBD	_	3	ccomp	_	_
+9	that	that	SCONJ	IN	_	15	mark	_	_
+10	the	the	DET	DT	_	12	det	_	_
+11	work	work	NOUN	NN	_	15	nsubj	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	death	death	NOUN	NN	_	11	nmod	_	_
+14	should	shall	AUX	MD	_	15	aux	_	_
+15	cease	cease	VERB	VB	_	8	ccomp	_	_
+16	again	again	ADV	RB	_	15	advmod	_	_
+17	among	among	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	people	people	NOUN	NNS	_	15	obl	_	_
+20	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he took the weapons of war from the Lamanites; and after they had entered into a covenant with him of peace they were suffered to depart into the wilderness.
+# sent_id = 1737
+# llm_note = "took" = root. "after they had entered" = temporal advcl of "suffered". "were suffered to depart" = passive permit construction.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	_	3	nsubj	_	_
+3	took	take	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	weapons	weapon	NOUN	NNS	_	3	obj	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	war	war	NOUN	NN	_	5	nmod	_	_
+8	from	from	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	Lamanites	Lamanite	PROPN	NNPS	_	3	obl	_	_
+11	;	;	PUNCT	,	_	26	punct	_	_
+12	and	and	CCONJ	CC	_	26	cc	_	_
+13	after	after	SCONJ	IN	_	16	mark	_	_
+14	they	they	PRON	PRP	_	16	nsubj	_	_
+15	had	have	AUX	VBD	_	16	aux	_	_
+16	entered	enter	VERB	VBN	_	26	advcl	_	_
+17	into	into	ADP	IN	_	19	case	_	_
+18	a	a	DET	DT	_	19	det	_	_
+19	covenant	covenant	NOUN	NN	_	16	obl	_	_
+20	with	with	ADP	IN	_	21	case	_	_
+21	him	he	PRON	PRP	_	19	nmod	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	peace	peace	NOUN	NN	_	19	nmod	_	_
+24	they	they	PRON	PRP	_	26	nsubj:pass	_	_
+25	were	be	AUX	VBD	_	26	aux:pass	_	_
+26	suffered	suffer	VERB	VBN	_	3	conj	_	_
+27	to	to	PART	TO	_	28	mark	_	_
+28	depart	depart	VERB	VB	_	26	xcomp	_	_
+29	into	into	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	wilderness	wilderness	NOUN	NN	_	28	obl	_	_
+32	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now the number of their dead was not numbered because of the greatness of the number; yea, the number of their dead was exceedingly great, both on the Nephites and on the Lamanites.
+# sent_id = 1738
+# llm_note = "was not numbered" = passive. "because of the greatness" = obl reason. "yea" = discourse. Second clause parataxis. "both on...and on" = correlative conj.
+1	Now	now	ADV	RB	_	9	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	number	number	NOUN	NN	_	9	nsubj:pass	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	their	they	PRON	PRP$	_	6	nmod:poss	_	_
+6	dead	dead	NOUN	NN	_	3	nmod	_	_
+7	was	be	AUX	VBD	_	9	aux:pass	_	_
+8	not	not	PART	RB	_	9	advmod	_	_
+9	numbered	number	VERB	VBN	_	0	root	_	_
+10	because	because	ADP	IN	_	13	case	_	_
+11	of	of	ADP	IN	_	10	fixed	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	greatness	greatness	NOUN	NN	_	9	obl	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	number	number	NOUN	NN	_	13	nmod	_	_
+17	;	;	PUNCT	,	_	25	punct	_	_
+18	yea	yea	INTJ	UH	_	25	discourse	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	number	number	NOUN	NN	_	25	nsubj	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	their	they	PRON	PRP$	_	24	nmod:poss	_	_
+24	dead	dead	NOUN	NN	_	21	nmod	_	_
+25	was	be	VERB	VBD	_	9	parataxis	_	_
+26	exceedingly	exceedingly	ADV	RB	_	27	advmod	_	_
+27	great	great	ADJ	JJ	_	25	xcomp	_	_
+28	,	,	PUNCT	,	_	29	punct	_	_
+29	both	both	DET	PDT	_	32	det:predet	_	_
+30	on	on	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	Nephites	Nephite	PROPN	NNPS	_	27	obl	_	_
+33	and	and	CCONJ	CC	_	36	cc	_	_
+34	on	on	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	Lamanites	Lamanite	PROPN	NNPS	_	32	conj	_	_
+37	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And it came to pass that they did cast their dead into the waters of Sidon, and they have gone forth and are buried in the depths of the sea.
+# sent_id = 1739
+# llm_note = AICTP. "did cast" = emphatic. "have gone forth and are buried" = conjoined perfect/passive in second clause — present perfect tense shift (narrator's perspective).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	_	9	nsubj	_	_
+8	did	do	AUX	VBD	_	9	aux	_	_
+9	cast	cast	VERB	VB	_	3	ccomp	_	_
+10	their	they	PRON	PRP$	_	11	nmod:poss	_	_
+11	dead	dead	NOUN	NN	_	9	obj	_	_
+12	into	into	ADP	IN	_	15	case	_	_
+13	the	the	DET	DT	_	15	det	_	_
+14	waters	water	NOUN	NNS	_	15	compound	_	_
+15	of	of	ADP	IN	_	9	obl	_	_
+16	Sidon	Sidon	PROPN	NNP	_	15	nmod	_	_
+17	,	,	PUNCT	,	_	21	punct	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	they	they	PRON	PRP	_	21	nsubj	_	_
+20	have	have	AUX	VBP	_	21	aux	_	_
+21	gone	go	VERB	VBN	_	9	conj	_	_
+22	forth	forth	ADV	RB	_	21	advmod	_	_
+23	and	and	CCONJ	CC	_	25	cc	_	_
+24	are	be	AUX	VBP	_	25	aux:pass	_	_
+25	buried	bury	VERB	VBN	_	21	conj	_	_
+26	in	in	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	depths	depth	NOUN	NNS	_	25	obl	_	_
+29	of	of	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	sea	sea	NOUN	NN	_	28	nmod	_	_
+32	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And the armies of the Nephites, or of Moroni, returned and came to their houses and their lands.
+# sent_id = 1740
+# llm_note = "or of Moroni" = appositive alternative. "returned and came" = conjoined.
+1	And	and	CCONJ	CC	_	12	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	armies	army	NOUN	NNS	_	12	nsubj	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	Nephites	Nephite	PROPN	NNPS	_	3	nmod	_	_
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	or	or	CCONJ	CC	_	10	cc	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Moroni	Moroni	PROPN	NNP	_	6	conj	_	_
+11	,	,	PUNCT	,	_	12	punct	_	_
+12	returned	return	VERB	VBD	_	0	root	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	came	come	VERB	VBD	_	12	conj	_	_
+15	to	to	ADP	IN	_	17	case	_	_
+16	their	they	PRON	PRP$	_	17	nmod:poss	_	_
+17	houses	house	NOUN	NNS	_	14	obl	_	_
+18	and	and	CCONJ	CC	_	20	cc	_	_
+19	their	they	PRON	PRP$	_	20	nmod:poss	_	_
+20	lands	land	NOUN	NNS	_	17	conj	_	_
+21	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = And thus ended the eighteenth year of the reign of the judges over the people of Nephi.
+# sent_id = 1741
+# llm_note = Inverted order: "ended" root, "the eighteenth year" = nsubj (postposed). "thus" = ADV advmod.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	ended	end	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	6	det	_	_
+5	eighteenth	eighteenth	ADJ	JJ	_	6	amod	_	_
+6	year	year	NOUN	NN	_	3	nsubj	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	reign	reign	NOUN	NN	_	6	nmod	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	judges	judge	NOUN	NNS	_	9	nmod	_	_
+13	over	over	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	people	people	NOUN	NNS	_	9	nmod	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	Nephi	Nephi	PROPN	NNP	_	15	nmod	_	_
+18	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And thus ended the record of Alma, which was written upon the plates of Nephi.
+# sent_id = 1742
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	ended	end	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	record	record	NOUN	NN	_	3	nsubj	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Alma	Alma	PROPN	NNP	_	5	nmod	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	which	which	PRON	WDT	_	11	nsubj:pass	_	_
+10	was	be	AUX	VBD	_	11	aux:pass	_	_
+11	written	write	VERB	VBN	_	5	acl:relcl	_	_
+12	upon	upon	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	plates	plate	NOUN	NNS	_	11	obl	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	Nephi	Nephi	PROPN	NNP	_	14	nmod	_	_
+17	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, now it came to pass that the people of Nephi were exceedingly rejoiced, because the Lord had again delivered them out of the hands of their enemies; therefore they gave thanks unto the Lord their God; yea, and they did fast much and pray much, and they did worship God with exceedingly great joy.
+# sent_id = 1743
+# llm_note = "Behold" = INTJ discourse. AICTP with "now" as additional adverb. "were rejoiced" = passive/stative. "because the Lord had delivered" = causal advcl (no "of"). "therefore they gave thanks" = result clause. "yea" = discourse. Multiple "did" emphatic clauses conjoined.
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	now	now	ADV	RB	_	5	advmod	_	_
+4	it	it	PRON	PRP	_	5	expl	_	_
+5	came	come	VERB	VBD	_	0	root	_	_
+6	to	to	PART	TO	_	7	mark	_	_
+7	pass	pass	VERB	VB	_	5	xcomp	_	_
+8	that	that	SCONJ	IN	_	11	mark	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	people	people	NOUN	NNS	_	15	nsubj:pass	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	Nephi	Nephi	PROPN	NNP	_	10	nmod	_	_
+13	were	be	AUX	VBD	_	15	aux:pass	_	_
+14	exceedingly	exceedingly	ADV	RB	_	15	advmod	_	_
+15	rejoiced	rejoice	VERB	VBN	_	5	ccomp	_	_
+16	,	,	PUNCT	,	_	22	punct	_	_
+17	because	because	SCONJ	IN	_	22	mark	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	Lord	Lord	PROPN	NNP	_	22	nsubj	_	_
+20	had	have	AUX	VBD	_	22	aux	_	_
+21	again	again	ADV	RB	_	22	advmod	_	_
+22	delivered	deliver	VERB	VBN	_	15	advcl	_	_
+23	them	they	PRON	PRP	_	22	obj	_	_
+24	out	out	ADV	RB	_	22	advmod	_	_
+25	of	of	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	hands	hand	NOUN	NNS	_	22	obl	_	_
+28	of	of	ADP	IN	_	30	case	_	_
+29	their	they	PRON	PRP$	_	30	nmod:poss	_	_
+30	enemies	enemy	NOUN	NNS	_	27	nmod	_	_
+31	;	;	PUNCT	,	_	34	punct	_	_
+32	therefore	therefore	ADV	RB	_	34	advmod	_	_
+33	they	they	PRON	PRP	_	34	nsubj	_	_
+34	gave	give	VERB	VBD	_	15	conj	_	_
+35	thanks	thank	NOUN	NNS	_	34	obj	_	_
+36	unto	unto	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	Lord	Lord	PROPN	NNP	_	34	obl	_	_
+39	their	they	PRON	PRP$	_	40	nmod:poss	_	_
+40	God	God	PROPN	NNP	_	38	appos	_	_
+41	;	;	PUNCT	,	_	47	punct	_	_
+42	yea	yea	INTJ	UH	_	47	discourse	_	_
+43	,	,	PUNCT	,	_	42	punct	_	_
+44	and	and	CCONJ	CC	_	47	cc	_	_
+45	they	they	PRON	PRP	_	47	nsubj	_	_
+46	did	do	AUX	VBD	_	47	aux	_	_
+47	fast	fast	VERB	VB	_	15	conj	_	_
+48	much	much	ADV	RB	_	47	advmod	_	_
+49	and	and	CCONJ	CC	_	50	cc	_	_
+50	pray	pray	VERB	VB	_	47	conj	_	_
+51	much	much	ADV	RB	_	50	advmod	_	_
+52	,	,	PUNCT	,	_	56	punct	_	_
+53	and	and	CCONJ	CC	_	56	cc	_	_
+54	they	they	PRON	PRP	_	56	nsubj	_	_
+55	did	do	AUX	VBD	_	56	aux	_	_
+56	worship	worship	VERB	VB	_	47	conj	_	_
+57	God	God	PROPN	NNP	_	56	obj	_	_
+58	with	with	ADP	IN	_	61	case	_	_
+59	exceedingly	exceedingly	ADV	RB	_	60	advmod	_	_
+60	great	great	ADJ	JJ	_	61	amod	_	_
+61	joy	joy	NOUN	NN	_	56	obl	_	_
+62	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And it came to pass in the nineteenth year of the reign of the judges over the people of Nephi, that Alma came unto his son Helaman and said unto him: Believest thou the words which I spake unto thee concerning those records which have been kept?
+# sent_id = 1744
+# llm_note = AICTP with temporal obl "in the nineteenth year". Main event = "came...and said". Speech = "Believest thou the words..." = direct question. "Believest" = inverted VSO order; VERB head.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	in	in	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	nineteenth	nineteenth	ADJ	JJ	_	9	amod	_	_
+9	year	year	NOUN	NN	_	3	obl	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	reign	reign	NOUN	NN	_	9	nmod	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	judges	judge	NOUN	NNS	_	12	nmod	_	_
+16	over	over	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	people	people	NOUN	NNS	_	12	nmod	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Nephi	Nephi	PROPN	NNP	_	18	nmod	_	_
+21	,	,	PUNCT	,	_	24	punct	_	_
+22	that	that	SCONJ	IN	_	24	mark	_	_
+23	Alma	Alma	PROPN	NNP	_	24	nsubj	_	_
+24	came	come	VERB	VBD	_	3	ccomp	_	_
+25	unto	unto	ADP	IN	_	28	case	_	_
+26	his	he	PRON	PRP$	_	28	nmod:poss	_	_
+27	son	son	NOUN	NN	_	28	compound	_	_
+28	Helaman	Helaman	PROPN	NNP	_	24	obl	_	_
+29	and	and	CCONJ	CC	_	30	cc	_	_
+30	said	say	VERB	VBD	_	24	conj	_	_
+31	unto	unto	ADP	IN	_	32	case	_	_
+32	him	he	PRON	PRP	_	30	obl	_	_
+33	:	:	PUNCT	:	_	30	punct	_	_
+34	Believest	believe	VERB	VBZ	_	30	ccomp	_	_
+35	thou	thou	PRON	PRP	_	34	nsubj	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	words	word	NOUN	NNS	_	34	obj	_	_
+38	which	which	PRON	WDT	_	40	obj	_	_
+39	I	I	PRON	PRP	_	40	nsubj	_	_
+40	spake	speak	VERB	VBD	_	37	acl:relcl	_	_
+41	unto	unto	ADP	IN	_	42	case	_	_
+42	thee	thee	PRON	PRP	_	40	obl	_	_
+43	concerning	concern	ADP	VBG	_	45	case	_	_
+44	those	that	DET	DT	_	45	det	_	_
+45	records	record	NOUN	NNS	_	40	obl	_	_
+46	which	which	PRON	WDT	_	49	nsubj:pass	_	_
+47	have	have	AUX	VBP	_	49	aux	_	_
+48	been	be	AUX	VBN	_	49	aux:pass	_	_
+49	kept	keep	VERB	VBN	_	45	acl:relcl	_	_
+50	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And Helaman said unto him: Yea, I believe.
+# sent_id = 1745
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Helaman	Helaman	PROPN	NNP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	_	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	_	3	obl	_	_
+6	:	:	PUNCT	:	_	3	punct	_	_
+7	Yea	yea	INTJ	UH	_	9	discourse	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	I	I	PRON	PRP	_	10	nsubj	_	_
+10	believe	believe	VERB	VBP	_	3	ccomp	_	_
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Alma said again: Believest thou in Jesus Christ, who shall come?
+# sent_id = 1746
+# llm_note = "Believest thou" = inverted question. "who shall come" = relative clause on "Christ".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Alma	Alma	PROPN	NNP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	_	0	root	_	_
+4	again	again	ADV	RB	_	3	advmod	_	_
+5	:	:	PUNCT	:	_	3	punct	_	_
+6	Believest	believe	VERB	VBZ	_	3	ccomp	_	_
+7	thou	thou	PRON	PRP	_	6	nsubj	_	_
+8	in	in	ADP	IN	_	10	case	_	_
+9	Jesus	Jesus	PROPN	NNP	_	10	compound	_	_
+10	Christ	Christ	PROPN	NNP	_	6	obl	_	_
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	who	who	PRON	WP	_	14	nsubj	_	_
+13	shall	shall	AUX	MD	_	14	aux	_	_
+14	come	come	VERB	VB	_	10	acl:relcl	_	_
+15	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And he said: Yea, I believe all the words which thou hast spoken.
+# sent_id = 1747
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	_	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	Yea	yea	INTJ	UH	_	8	discourse	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	I	I	PRON	PRP	_	8	nsubj	_	_
+8	believe	believe	VERB	VBP	_	3	ccomp	_	_
+9	all	all	DET	PDT	_	11	det:predet	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	words	word	NOUN	NNS	_	8	obj	_	_
+12	which	which	PRON	WDT	_	15	obj	_	_
+13	thou	thou	PRON	PRP	_	15	nsubj	_	_
+14	hast	have	AUX	VBZ	_	15	aux	_	_
+15	spoken	speak	VERB	VBN	_	11	acl:relcl	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Alma said unto him again: Will ye keep my commandments?
+# sent_id = 1748
+# llm_note = "Will ye keep" = inverted question.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Alma	Alma	PROPN	NNP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	_	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	_	3	obl	_	_
+6	again	again	ADV	RB	_	3	advmod	_	_
+7	:	:	PUNCT	:	_	3	punct	_	_
+8	Will	will	AUX	MD	_	10	aux	_	_
+9	ye	ye	PRON	PRP	_	10	nsubj	_	_
+10	keep	keep	VERB	VB	_	3	ccomp	_	_
+11	my	I	PRON	PRP$	_	12	nmod:poss	_	_
+12	commandments	commandment	NOUN	NNS	_	10	obj	_	_
+13	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And he said: Yea, I will keep thy commandments with all my heart.
+# sent_id = 1749
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	_	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	Yea	yea	INTJ	UH	_	9	discourse	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	I	I	PRON	PRP	_	9	nsubj	_	_
+8	will	will	AUX	MD	_	9	aux	_	_
+9	keep	keep	VERB	VB	_	3	ccomp	_	_
+10	thy	thou	PRON	PRP$	_	11	nmod:poss	_	_
+11	commandments	commandment	NOUN	NNS	_	9	obj	_	_
+12	with	with	ADP	IN	_	15	case	_	_
+13	all	all	DET	PDT	_	15	det:predet	_	_
+14	my	I	PRON	PRP$	_	15	nmod:poss	_	_
+15	heart	heart	NOUN	NN	_	9	obl	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+

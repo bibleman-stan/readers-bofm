@@ -1,0 +1,935 @@
+# text = And now, I would prophesy somewhat more concerning the Jews and the Gentiles.
+# sent_id = 950
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	now	now	ADV	RB	_	6	advmod	_	_
+3	,	,	PUNCT	,	_	6	punct	_	_
+4	I	I	PRON	PRP	_	6	nsubj	_	_
+5	would	would	AUX	MD	_	6	aux	_	_
+6	prophesy	prophesy	VERB	VB	_	0	root	_	_
+7	somewhat	somewhat	ADV	RB	_	8	advmod	_	_
+8	more	more	ADV	RBR	_	6	advmod	_	_
+9	concerning	concerning	ADP	VBG	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	Jews	Jew	PROPN	NNPS	_	6	obl	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	Gentiles	Gentile	PROPN	NNPS	_	11	conj	_	_
+15	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = For after the book of which I have spoken shall come forth, and be written unto the Gentiles, and sealed up again unto the Lord, there shall be many which shall believe the words which are written; and they shall carry them forth unto the remnant of our seed.
+# sent_id = 951
+# llm_note: "after the book...shall come forth, and be written...and sealed up" — fronted temporal advcl. Three coordinated VPs in that advcl (come forth / be written / sealed up). Main clause: existential "there shall be many which shall believe...". Second coord clause: "they shall carry them forth...".
+1	For	for	SCONJ	IN	_	31	mark	_	_
+2	after	after	SCONJ	IN	_	11	mark	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	book	book	NOUN	NN	_	11	nsubj	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	which	which	PRON	WDT	_	9	obl	_	_
+7	I	I	PRON	PRP	_	9	nsubj	_	_
+8	have	have	AUX	VBP	_	9	aux	_	_
+9	spoken	speak	VERB	VBN	_	4	acl:relcl	_	_
+10	shall	shall	AUX	MD	_	11	aux	_	_
+11	come	come	VERB	VB	_	31	advcl	_	_
+12	forth	forth	ADV	RB	_	11	compound:prt	_	_
+13	,	,	PUNCT	,	_	11	punct	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	be	be	AUX	VB	_	16	aux:pass	_	_
+16	written	write	VERB	VBN	_	11	conj	_	_
+17	unto	unto	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	Gentiles	Gentile	PROPN	NNPS	_	16	obl	_	_
+20	,	,	PUNCT	,	_	16	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	sealed	seal	VERB	VBN	_	23	aux	_	_
+23	up	up	ADP	RP	_	11	conj	_	_
+24	again	again	ADV	RB	_	23	advmod	_	_
+25	unto	unto	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	Lord	Lord	PROPN	NNP	_	23	obl	_	_
+28	,	,	PUNCT	,	_	11	punct	_	_
+29	there	there	PRON	EX	_	31	expl	_	_
+30	shall	shall	AUX	MD	_	31	aux	_	_
+31	be	be	VERB	VB	_	0	root	_	_
+32	many	many	PRON	JJ	_	31	nsubj	_	_
+33	which	which	PRON	WDT	_	35	nsubj	_	_
+34	shall	shall	AUX	MD	_	35	aux	_	_
+35	believe	believe	VERB	VB	_	32	acl:relcl	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	words	word	NOUN	NNS	_	35	obj	_	_
+38	which	which	PRON	WDT	_	40	nsubj:pass	_	_
+39	are	be	AUX	VBP	_	40	aux:pass	_	_
+40	written	write	VERB	VBN	_	37	acl:relcl	_	_
+41	;	;	PUNCT	:	_	31	punct	_	_
+42	and	and	CCONJ	CC	_	46	cc	_	_
+43	they	they	PRON	PRP	_	46	nsubj	_	_
+44	shall	shall	AUX	MD	_	46	aux	_	_
+45	carry	carry	VERB	VB	_	46	aux	_	_
+46	them	they	PRON	PRP	_	31	conj	_	_
+47	forth	forth	ADV	RB	_	45	compound:prt	_	_
+48	unto	unto	ADP	IN	_	50	case	_	_
+49	the	the	DET	DT	_	50	det	_	_
+50	remnant	remnant	NOUN	NN	_	46	obl	_	_
+51	of	of	ADP	IN	_	53	case	_	_
+52	our	we	PRON	PRP$	_	53	nmod:poss	_	_
+53	seed	seed	NOUN	NN	_	50	nmod	_	_
+54	.	.	PUNCT	.	_	31	punct	_	_
+
+# text = And then shall the remnant of our seed know concerning us, how that we came out from Jerusalem, and that they are descendants of the Jews.
+# sent_id = 952
+# llm_note: Inverted "shall the remnant...know". "concerning us" obl on "know". "how that we came out" — "how that" = fixed SCONJ compound; ccomp of "know". "and that they are" — conj of "how that" clause.
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	then	then	ADV	RB	_	9	advmod	_	_
+3	shall	shall	AUX	MD	_	9	aux	_	_
+4	the	the	DET	DT	_	6	det	_	_
+5	remnant	remnant	NOUN	NN	_	9	nsubj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	our	we	PRON	PRP$	_	8	nmod:poss	_	_
+8	seed	seed	NOUN	NN	_	5	nmod	_	_
+9	know	know	VERB	VB	_	0	root	_	_
+10	concerning	concerning	ADP	VBG	_	11	case	_	_
+11	us	we	PRON	PRP	_	9	obl	_	_
+12	,	,	PUNCT	,	_	9	punct	_	_
+13	how	how	SCONJ	WRB	_	16	mark	_	_
+14	that	that	SCONJ	IN	_	13	fixed	_	_
+15	we	we	PRON	PRP	_	16	nsubj	_	_
+16	came	come	VERB	VBD	_	9	ccomp	_	_
+17	out	out	ADP	RP	_	16	compound:prt	_	_
+18	from	from	ADP	IN	_	19	case	_	_
+19	Jerusalem	Jerusalem	PROPN	NNP	_	16	obl	_	_
+20	,	,	PUNCT	,	_	16	punct	_	_
+21	and	and	CCONJ	CC	_	25	cc	_	_
+22	that	that	SCONJ	IN	_	25	mark	_	_
+23	they	they	PRON	PRP	_	25	nsubj	_	_
+24	are	be	AUX	VBP	_	25	cop	_	_
+25	descendants	descendant	NOUN	NNS	_	16	conj	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	Jews	Jew	PROPN	NNPS	_	25	nmod	_	_
+29	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And the gospel of Jesus Christ shall be declared among them; wherefore, they shall be restored unto the knowledge of their fathers, and also to the knowledge of Jesus Christ, which was had among their fathers.
+# sent_id = 953
+# llm_note: Two clauses: "the gospel...shall be declared" and "they shall be restored". "which was had among their fathers" — acl:relcl on "Jesus Christ" (token 33); archaic "was had" = was present.
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	the	the	DET	DT	_	4	det	_	_
+3	gospel	gospel	NOUN	NN	_	9	nsubj:pass	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	Jesus	Jesus	PROPN	NNP	_	6	flat	_	_
+6	Christ	Christ	PROPN	NNP	_	3	nmod	_	_
+7	shall	shall	AUX	MD	_	9	aux	_	_
+8	be	be	AUX	VB	_	9	aux:pass	_	_
+9	declared	declare	VERB	VBN	_	0	root	_	_
+10	among	among	ADP	IN	_	11	case	_	_
+11	them	they	PRON	PRP	_	9	obl	_	_
+12	;	;	PUNCT	:	_	9	punct	_	_
+13	wherefore	wherefore	ADV	WRB	_	18	advmod	_	_
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	they	they	PRON	PRP	_	18	nsubj:pass	_	_
+16	shall	shall	AUX	MD	_	18	aux	_	_
+17	be	be	AUX	VB	_	18	aux:pass	_	_
+18	restored	restore	VERB	VBN	_	9	conj	_	_
+19	unto	unto	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	knowledge	knowledge	NOUN	NN	_	18	obl	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	their	they	PRON	PRP$	_	24	nmod:poss	_	_
+24	fathers	father	NOUN	NNS	_	21	nmod	_	_
+25	,	,	PUNCT	,	_	21	punct	_	_
+26	and	and	CCONJ	CC	_	29	cc	_	_
+27	also	also	ADV	RB	_	29	advmod	_	_
+28	to	to	ADP	IN	_	29	case	_	_
+29	the	the	DET	DT	_	21	conj	_	_
+30	knowledge	knowledge	NOUN	NN	_	29	nsubj	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	Jesus	Jesus	PROPN	NNP	_	33	flat	_	_
+33	Christ	Christ	PROPN	NNP	_	30	nmod	_	_
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	which	which	PRON	WDT	_	37	nsubj:pass	_	_
+36	was	be	AUX	VBD	_	37	aux:pass	_	_
+37	had	have	VERB	VBN	_	33	acl:relcl	_	_
+38	among	among	ADP	IN	_	40	case	_	_
+39	their	they	PRON	PRP$	_	40	nmod:poss	_	_
+40	fathers	father	NOUN	NNS	_	37	obl	_	_
+41	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And then shall they rejoice; for they shall know that it is a blessing unto them from the hand of God; and their scales of darkness shall begin to fall from their eyes; and many generations shall not pass away among them, save they shall be a pure and a delightsome people.
+# sent_id = 954
+# llm_note: Four coordinated clauses. "shall they rejoice" — inverted. "for they shall know that..." — causal advcl. "their scales of darkness shall begin to fall" — aspectual begin+xcomp. "save they shall be a pure and a delightsome people" — exceptive advcl.
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	then	then	ADV	RB	_	5	advmod	_	_
+3	shall	shall	AUX	MD	_	5	aux	_	_
+4	they	they	PRON	PRP	_	5	nsubj	_	_
+5	rejoice	rejoice	VERB	VB	_	0	root	_	_
+6	;	;	PUNCT	:	_	5	punct	_	_
+7	for	for	SCONJ	IN	_	10	mark	_	_
+8	they	they	PRON	PRP	_	10	nsubj	_	_
+9	shall	shall	AUX	MD	_	10	aux	_	_
+10	know	know	VERB	VB	_	5	advcl	_	_
+11	that	that	SCONJ	IN	_	14	mark	_	_
+12	it	it	PRON	PRP	_	14	nsubj	_	_
+13	is	be	AUX	VBZ	_	14	cop	_	_
+14	a	a	DET	DT	_	15	det	_	_
+15	blessing	blessing	NOUN	NN	_	10	ccomp	_	_
+16	unto	unto	ADP	IN	_	17	case	_	_
+17	them	they	PRON	PRP	_	15	nmod	_	_
+18	from	from	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	hand	hand	NOUN	NN	_	15	nmod	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	God	God	PROPN	NNP	_	20	nmod	_	_
+23	;	;	PUNCT	:	_	10	punct	_	_
+24	and	and	CCONJ	CC	_	30	cc	_	_
+25	their	they	PRON	PRP$	_	27	nmod:poss	_	_
+26	scales	scale	NOUN	NNS	_	30	nsubj	_	_
+27	of	of	ADP	IN	_	28	case	_	_
+28	darkness	darkness	NOUN	NN	_	26	nmod	_	_
+29	shall	shall	AUX	MD	_	30	aux	_	_
+30	begin	begin	VERB	VB	_	5	conj	_	_
+31	to	to	PART	TO	_	32	mark	_	_
+32	fall	fall	VERB	VB	_	30	xcomp	_	_
+33	from	from	ADP	IN	_	35	case	_	_
+34	their	they	PRON	PRP$	_	35	nmod:poss	_	_
+35	eyes	eye	NOUN	NNS	_	32	obl	_	_
+36	;	;	PUNCT	:	_	30	punct	_	_
+37	and	and	CCONJ	CC	_	42	cc	_	_
+38	many	many	ADJ	JJ	_	39	amod	_	_
+39	generations	generation	NOUN	NNS	_	42	nsubj	_	_
+40	shall	shall	AUX	MD	_	42	aux	_	_
+41	not	not	PART	RB	_	42	advmod	_	_
+42	pass	pass	VERB	VB	_	5	conj	_	_
+43	away	away	ADV	RB	_	42	compound:prt	_	_
+44	among	among	ADP	IN	_	45	case	_	_
+45	them	they	PRON	PRP	_	42	obl	_	_
+46	,	,	PUNCT	,	_	42	punct	_	_
+47	save	save	SCONJ	IN	_	50	mark	_	_
+48	they	they	PRON	PRP	_	50	nsubj	_	_
+49	shall	shall	AUX	MD	_	50	aux	_	_
+50	be	be	VERB	VB	_	42	advcl	_	_
+51	a	a	DET	DT	_	52	det	_	_
+52	pure	pure	ADJ	JJ	_	56	amod	_	_
+53	and	and	CCONJ	CC	_	55	cc	_	_
+54	a	a	DET	DT	_	55	det	_	_
+55	delightsome	delightsome	ADJ	JJ	_	52	conj	_	_
+56	people	people	NOUN	NNS	_	50	nsubj:pass	_	_
+57	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And it shall come to pass that the Jews which are scattered also shall begin to believe in Christ; and they shall begin to gather in upon the face of the land; and as many as shall believe in Christ shall also become a delightsome people.
+# sent_id = 955
+# llm_note: AICTP frame. "which are scattered" acl:relcl on "Jews". Three coordinated clauses. "as many as shall believe in Christ" — "as many" PRON, "as" SCONJ acl; nsubj of "shall...become".
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	_	4	nsubj	_	_
+3	shall	shall	AUX	MD	_	4	aux	_	_
+4	come	come	VERB	VB	_	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	_	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	15	mark	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Jews	Jew	PROPN	NNPS	_	15	nsubj	_	_
+10	which	which	PRON	WDT	_	12	nsubj:pass	_	_
+11	are	be	AUX	VBP	_	12	aux:pass	_	_
+12	scattered	scatter	VERB	VBN	_	9	acl:relcl	_	_
+13	also	also	ADV	RB	_	15	advmod	_	_
+14	shall	shall	AUX	MD	_	15	aux	_	_
+15	begin	begin	VERB	VB	_	6	ccomp	_	_
+16	to	to	PART	TO	_	17	mark	_	_
+17	believe	believe	VERB	VB	_	15	xcomp	_	_
+18	in	in	ADP	IN	_	19	case	_	_
+19	Christ	Christ	PROPN	NNP	_	17	obl	_	_
+20	;	;	PUNCT	:	_	15	punct	_	_
+21	and	and	CCONJ	CC	_	25	cc	_	_
+22	they	they	PRON	PRP	_	25	nsubj	_	_
+23	shall	shall	AUX	MD	_	25	aux	_	_
+24	begin	begin	VERB	VB	_	25	aux	_	_
+25	to	to	PART	TO	_	15	conj	_	_
+26	gather	gather	VERB	VB	_	25	xcomp	_	_
+27	in	in	ADP	RP	_	26	compound:prt	_	_
+28	upon	upon	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	face	face	NOUN	NN	_	26	obl	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	land	land	NOUN	NN	_	30	nmod	_	_
+34	;	;	PUNCT	:	_	25	punct	_	_
+35	and	and	CCONJ	CC	_	45	cc	_	_
+36	as	as	ADV	RB	_	37	advmod	_	_
+37	many	many	PRON	JJ	_	45	nsubj	_	_
+38	as	as	SCONJ	IN	_	40	mark	_	_
+39	shall	shall	AUX	MD	_	40	aux	_	_
+40	believe	believe	VERB	VB	_	37	acl	_	_
+41	in	in	ADP	IN	_	42	case	_	_
+42	Christ	Christ	PROPN	NNP	_	40	obl	_	_
+43	shall	shall	AUX	MD	_	45	aux	_	_
+44	also	also	ADV	RB	_	45	advmod	_	_
+45	become	become	VERB	VB	_	15	conj	_	_
+46	a	a	DET	DT	_	48	det	_	_
+47	delightsome	delightsome	ADJ	JJ	_	48	amod	_	_
+48	people	people	NOUN	NNS	_	45	xcomp	_	_
+49	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it shall come to pass that the Lord God shall commence his work among all nations, kindreds, tongues, and people, to bring about the restoration of his people upon the earth.
+# sent_id = 956
+# llm_note: AICTP frame. "nations, kindreds, tongues, and people" — four coordinated objects of "among". "to bring about the restoration" — purpose advcl.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	_	4	nsubj	_	_
+3	shall	shall	AUX	MD	_	4	aux	_	_
+4	come	come	VERB	VB	_	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	_	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	12	mark	_	_
+8	the	the	DET	DT	_	10	det	_	_
+9	Lord	Lord	PROPN	NNP	_	10	compound	_	_
+10	God	God	PROPN	NNP	_	12	nsubj	_	_
+11	shall	shall	AUX	MD	_	12	aux	_	_
+12	commence	commence	VERB	VB	_	6	ccomp	_	_
+13	his	he	PRON	PRP$	_	14	nmod:poss	_	_
+14	work	work	NOUN	NN	_	12	obj	_	_
+15	among	among	ADP	IN	_	17	case	_	_
+16	all	all	DET	PDT	_	17	det:predet	_	_
+17	nations	nation	NOUN	NNS	_	12	obl	_	_
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	kindreds	kindred	NOUN	NNS	_	17	conj	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	tongues	tongue	NOUN	NNS	_	17	conj	_	_
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	and	and	CCONJ	CC	_	24	cc	_	_
+24	people	people	NOUN	NNS	_	17	conj	_	_
+25	,	,	PUNCT	,	_	12	punct	_	_
+26	to	to	PART	TO	_	27	mark	_	_
+27	bring	bring	VERB	VB	_	12	advcl	_	_
+28	about	about	ADP	RP	_	27	compound:prt	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	restoration	restoration	NOUN	NN	_	27	obj	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	his	he	PRON	PRP$	_	33	nmod:poss	_	_
+33	people	people	NOUN	NNS	_	30	nmod	_	_
+34	upon	upon	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	earth	earth	NOUN	NN	_	30	nmod	_	_
+37	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And with righteousness shall the Lord God judge the poor, and reprove with equity for the meek of the earth.
+# sent_id = 957
+# llm_note: Inverted "shall the Lord God judge". "with righteousness" obl manner fronted. "reprove with equity for the meek" — conj of "judge".
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	with	with	ADP	IN	_	3	case	_	_
+3	righteousness	righteousness	NOUN	NN	_	8	obl	_	_
+4	shall	shall	AUX	MD	_	8	aux	_	_
+5	the	the	DET	DT	_	7	det	_	_
+6	Lord	Lord	PROPN	NNP	_	7	compound	_	_
+7	God	God	PROPN	NNP	_	8	nsubj	_	_
+8	judge	judge	VERB	VB	_	0	root	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	poor	poor	ADJ	JJ	_	8	obj	_	_
+11	,	,	PUNCT	,	_	8	punct	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	reprove	reprove	VERB	VB	_	8	conj	_	_
+14	with	with	ADP	IN	_	15	case	_	_
+15	equity	equity	NOUN	NN	_	13	obl	_	_
+16	for	for	ADP	IN	_	19	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	meek	meek	ADJ	JJ	_	13	obl	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	earth	earth	NOUN	NN	_	18	nmod	_	_
+22	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And he shall smite the earth with the rod of his mouth; and with the breath of his lips shall he slay the wicked.
+# sent_id = 958
+# llm_note: Two clauses. Second: inverted "shall he slay" with fronted "with the breath of his lips".
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	_	4	nsubj	_	_
+3	shall	shall	AUX	MD	_	4	aux	_	_
+4	smite	smite	VERB	VB	_	0	root	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	earth	earth	NOUN	NN	_	4	obj	_	_
+7	with	with	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	rod	rod	NOUN	NN	_	4	obl	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	his	he	PRON	PRP$	_	12	nmod:poss	_	_
+12	mouth	mouth	NOUN	NN	_	9	nmod	_	_
+13	;	;	PUNCT	:	_	4	punct	_	_
+14	and	and	CCONJ	CC	_	23	cc	_	_
+15	with	with	ADP	IN	_	18	case	_	_
+16	the	the	DET	DT	_	18	det	_	_
+17	breath	breath	NOUN	NN	_	23	obl	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	his	he	PRON	PRP$	_	20	nmod:poss	_	_
+20	lips	lip	NOUN	NNS	_	17	nmod	_	_
+21	shall	shall	AUX	MD	_	23	aux	_	_
+22	he	he	PRON	PRP	_	23	nsubj	_	_
+23	slay	slay	VERB	VB	_	4	conj	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	wicked	wicked	ADJ	JJ	_	23	obj	_	_
+26	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = For the time speedily cometh that the Lord God shall cause a great division among the people, and the wicked will he destroy; and he will spare his people, yea, even if it so be that he must destroy the wicked by fire.
+# sent_id = 959
+# llm_note: "the time speedily cometh that..." — "that" introduces ccomp of "cometh". Inverted "the wicked will he destroy" — obj fronted, aux-nsubj inverted. "yea, even if it so be that" — conditional; "it so be" = "it be so" with "so" as predicative advmod.
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	time	time	NOUN	NN	_	5	nsubj	_	_
+4	speedily	speedily	ADV	RB	_	5	advmod	_	_
+5	cometh	come	VERB	VBZ	_	0	root	_	_
+6	that	that	SCONJ	IN	_	11	mark	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	Lord	Lord	PROPN	NNP	_	9	compound	_	_
+9	God	God	PROPN	NNP	_	11	nsubj	_	_
+10	shall	shall	AUX	MD	_	11	aux	_	_
+11	cause	cause	VERB	VB	_	5	ccomp	_	_
+12	a	a	DET	DT	_	14	det	_	_
+13	great	great	ADJ	JJ	_	14	amod	_	_
+14	division	division	NOUN	NN	_	11	obj	_	_
+15	among	among	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	people	people	NOUN	NNS	_	11	obl	_	_
+18	,	,	PUNCT	,	_	11	punct	_	_
+19	and	and	CCONJ	CC	_	24	cc	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	wicked	wicked	ADJ	JJ	_	24	obj	_	_
+22	will	will	AUX	MD	_	24	aux	_	_
+23	he	he	PRON	PRP	_	24	nsubj	_	_
+24	destroy	destroy	VERB	VB	_	11	conj	_	_
+25	;	;	PUNCT	:	_	24	punct	_	_
+26	and	and	CCONJ	CC	_	29	cc	_	_
+27	he	he	PRON	PRP	_	29	nsubj	_	_
+28	will	will	AUX	MD	_	29	aux	_	_
+29	spare	spare	VERB	VB	_	11	conj	_	_
+30	his	he	PRON	PRP$	_	31	nmod:poss	_	_
+31	people	people	NOUN	NNS	_	29	obj	_	_
+32	,	,	PUNCT	,	_	29	punct	_	_
+33	yea	yea	ADV	UH	_	29	discourse	_	_
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	even	even	ADV	RB	_	39	advmod	_	_
+36	if	if	SCONJ	IN	_	39	mark	_	_
+37	it	it	PRON	PRP	_	39	nsubj	_	_
+38	so	so	ADV	RB	_	39	advmod	_	_
+39	be	be	AUX	VBZ	_	29	advcl	_	_
+40	that	that	SCONJ	IN	_	43	mark	_	_
+41	he	he	PRON	PRP	_	43	nsubj	_	_
+42	must	must	AUX	MD	_	43	aux	_	_
+43	destroy	destroy	VERB	VB	_	39	ccomp	_	_
+44	the	the	DET	DT	_	45	det	_	_
+45	wicked	wicked	ADJ	JJ	_	43	obj	_	_
+46	by	by	ADP	IN	_	47	case	_	_
+47	fire	fire	NOUN	NN	_	43	obl	_	_
+48	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And righteousness shall be the girdle of his loins, and faithfulness the girdle of his reins.
+# sent_id = 960
+# llm_note: Two predicative clauses. Second: "faithfulness the girdle of his reins" — ellipsis of "shall be"; treating "faithfulness" as nsubj of implicit cop, coord with first clause. Annotate second as conj of first with "faithfulness" nsubj, "girdle" nsubj:pass (of elided cop), or simplest: second clause conj with "girdle" as root nominal via cop ellipsis. Best: treat whole as conj, "faithfulness" nsubj, "girdle" pred via implied "shall be" (mark as conj with head=5 "be").
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	righteousness	righteousness	NOUN	NN	_	5	nsubj	_	_
+3	shall	shall	AUX	MD	_	5	aux	_	_
+4	be	be	AUX	VB	_	5	cop	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	girdle	girdle	NOUN	NN	_	0	root	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	his	he	PRON	PRP$	_	9	nmod:poss	_	_
+9	loins	loin	NOUN	NNS	_	6	nmod	_	_
+10	,	,	PUNCT	,	_	6	punct	_	_
+11	and	and	CCONJ	CC	_	14	cc	_	_
+12	faithfulness	faithfulness	NOUN	NN	_	14	nsubj	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	girdle	girdle	NOUN	NN	_	6	conj	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	his	he	PRON	PRP$	_	17	nmod:poss	_	_
+17	reins	rein	NOUN	NNS	_	14	nmod	_	_
+18	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And then shall the wolf dwell with the lamb; and the leopard shall lie down with the kid, and the calf, and the young lion, and the fatling, together; and a little child shall lead them.
+# sent_id = 961
+# llm_note: Three coordinated clauses. First: inverted "shall the wolf dwell". Second: "the leopard shall lie down with the kid, and the calf, and the young lion, and the fatling, together" — series of companions coordinated as obl. Third: "a little child shall lead them".
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	then	then	ADV	RB	_	6	advmod	_	_
+3	shall	shall	AUX	MD	_	6	aux	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	wolf	wolf	NOUN	NN	_	6	nsubj	_	_
+6	dwell	dwell	VERB	VB	_	0	root	_	_
+7	with	with	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	lamb	lamb	NOUN	NN	_	6	obl	_	_
+10	;	;	PUNCT	:	_	6	punct	_	_
+11	and	and	CCONJ	CC	_	15	cc	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	leopard	leopard	NOUN	NN	_	15	nsubj	_	_
+14	shall	shall	AUX	MD	_	15	aux	_	_
+15	lie	lie	VERB	VB	_	6	conj	_	_
+16	down	down	ADV	RP	_	15	compound:prt	_	_
+17	with	with	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	kid	kid	NOUN	NN	_	15	obl	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	calf	calf	NOUN	NN	_	19	conj	_	_
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	and	and	CCONJ	CC	_	28	cc	_	_
+26	the	the	DET	DT	_	28	det	_	_
+27	young	young	ADJ	JJ	_	28	amod	_	_
+28	lion	lion	NOUN	NN	_	19	conj	_	_
+29	,	,	PUNCT	,	_	28	punct	_	_
+30	and	and	CCONJ	CC	_	32	cc	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	fatling	fatling	NOUN	NN	_	19	conj	_	_
+33	,	,	PUNCT	,	_	32	punct	_	_
+34	together	together	ADV	RB	_	15	advmod	_	_
+35	;	;	PUNCT	:	_	15	punct	_	_
+36	and	and	CCONJ	CC	_	41	cc	_	_
+37	a	a	DET	DT	_	39	det	_	_
+38	little	little	ADJ	JJ	_	39	amod	_	_
+39	child	child	NOUN	NN	_	41	nsubj	_	_
+40	shall	shall	AUX	MD	_	41	aux	_	_
+41	lead	lead	VERB	VB	_	6	conj	_	_
+42	them	they	PRON	PRP	_	41	obj	_	_
+43	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And the cow and the bear shall feed; their young ones shall lie down together; and the lion shall eat straw like the ox.
+# sent_id = 962
+# llm_note: Three coordinated clauses. "their young ones" = offspring of both. "like the ox" — comparative ADP phrase modifying "eat".
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	cow	cow	NOUN	NN	_	8	nsubj	_	_
+4	and	and	CCONJ	CC	_	6	cc	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	bear	bear	NOUN	NN	_	3	conj	_	_
+7	shall	shall	AUX	MD	_	8	aux	_	_
+8	feed	feed	VERB	VB	_	0	root	_	_
+9	;	;	PUNCT	:	_	8	punct	_	_
+10	their	they	PRON	PRP$	_	12	nmod:poss	_	_
+11	young	young	ADJ	JJ	_	12	amod	_	_
+12	ones	one	NOUN	NNS	_	14	nsubj	_	_
+13	shall	shall	AUX	MD	_	14	aux	_	_
+14	lie	lie	VERB	VB	_	8	conj	_	_
+15	down	down	ADV	RP	_	14	compound:prt	_	_
+16	together	together	ADV	RB	_	14	advmod	_	_
+17	;	;	PUNCT	:	_	14	punct	_	_
+18	and	and	CCONJ	CC	_	22	cc	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	lion	lion	NOUN	NN	_	22	nsubj	_	_
+21	shall	shall	AUX	MD	_	22	aux	_	_
+22	eat	eat	VERB	VB	_	8	conj	_	_
+23	straw	straw	NOUN	NN	_	22	obj	_	_
+24	like	like	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	_	26	det	_	_
+26	ox	ox	NOUN	NN	_	22	obl	_	_
+27	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And the sucking child shall play on the hole of the asp, and the weaned child shall put his hand on the cockatrice's den.
+# sent_id = 963
+# llm_note: Two coordinated clauses. MWT "cockatrice's" at 24-25: 24=cockatrice NOUN, 25='s PART (genitive marker, case relation).
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	the	the	DET	DT	_	4	det	_	_
+3	sucking	suck	VERB	VBG	_	4	amod	_	_
+4	child	child	NOUN	NN	_	6	nsubj	_	_
+5	shall	shall	AUX	MD	_	6	aux	_	_
+6	play	play	VERB	VB	_	0	root	_	_
+7	on	on	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	hole	hole	NOUN	NN	_	6	obl	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	asp	asp	NOUN	NN	_	9	nmod	_	_
+13	,	,	PUNCT	,	_	6	punct	_	_
+14	and	and	CCONJ	CC	_	19	cc	_	_
+15	the	the	DET	DT	_	17	det	_	_
+16	weaned	wean	VERB	VBN	_	17	amod	_	_
+17	child	child	NOUN	NN	_	19	nsubj	_	_
+18	shall	shall	AUX	MD	_	19	aux	_	_
+19	put	put	VERB	VB	_	6	conj	_	_
+20	his	he	PRON	PRP$	_	21	nmod:poss	_	_
+21	hand	hand	NOUN	NN	_	19	obj	_	_
+22	on	on	ADP	IN	_	26	case	_	_
+23	the	the	DET	DT	_	26	det	_	_
+24-25	cockatrice's	_	_	_	_	_	_	_	_
+24	cockatrice	cockatrice	NOUN	NN	_	26	nmod:poss	_	_
+25	's	's	PART	POS	_	24	case	_	_
+26	den	den	NOUN	NN	_	19	obl	_	_
+27	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = They shall not hurt nor destroy in all my holy mountain; for the earth shall be full of the knowledge of the Lord as the waters cover the sea.
+# sent_id = 964
+# llm_note: "hurt nor destroy" — coordinated VPs with "nor" as CCONJ. "in all my holy mountain" obl. "for" introduces advcl reason. "as the waters cover the sea" — advcl comparative.
+1	They	they	PRON	PRP	_	4	nsubj	_	_
+2	shall	shall	AUX	MD	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	hurt	hurt	VERB	VB	_	0	root	_	_
+5	nor	nor	CCONJ	CC	_	6	cc	_	_
+6	destroy	destroy	VERB	VB	_	4	conj	_	_
+7	in	in	ADP	IN	_	11	case	_	_
+8	all	all	DET	PDT	_	11	det:predet	_	_
+9	my	my	PRON	PRP$	_	11	nmod:poss	_	_
+10	holy	holy	ADJ	JJ	_	11	amod	_	_
+11	mountain	mountain	NOUN	NN	_	4	obl	_	_
+12	;	;	PUNCT	:	_	4	punct	_	_
+13	for	for	SCONJ	IN	_	18	mark	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	earth	earth	NOUN	NN	_	18	nsubj	_	_
+16	shall	shall	AUX	MD	_	18	aux	_	_
+17	be	be	AUX	VB	_	18	cop	_	_
+18	full	full	ADJ	JJ	_	4	advcl	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	knowledge	knowledge	NOUN	NN	_	18	obl	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	Lord	Lord	PROPN	NNP	_	21	nmod	_	_
+25	as	as	SCONJ	IN	_	28	mark	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	waters	water	NOUN	NNS	_	28	nsubj	_	_
+28	cover	cover	VERB	VBP	_	18	advcl	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	sea	sea	NOUN	NN	_	28	obj	_	_
+31	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Wherefore, the things of all nations shall be made known; yea, all things shall be made known unto the children of men.
+# sent_id = 965
+# llm_note: Two parallel passive clauses. "yea" discourse. "unto the children of men" obl of second clause.
+1	Wherefore	wherefore	ADV	WRB	_	10	advmod	_	_
+2	,	,	PUNCT	,	_	10	punct	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	things	thing	NOUN	NNS	_	10	nsubj:pass	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	all	all	DET	PDT	_	7	det:predet	_	_
+7	nations	nation	NOUN	NNS	_	4	nmod	_	_
+8	shall	shall	AUX	MD	_	10	aux	_	_
+9	be	be	AUX	VB	_	10	aux:pass	_	_
+10	made	make	VERB	VBN	_	0	root	_	_
+11	known	know	VERB	VBN	_	10	xcomp	_	_
+12	;	;	PUNCT	:	_	10	punct	_	_
+13	yea	yea	ADV	UH	_	10	discourse	_	_
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	all	all	DET	PDT	_	16	det:predet	_	_
+16	things	thing	NOUN	NNS	_	19	nsubj:pass	_	_
+17	shall	shall	AUX	MD	_	19	aux	_	_
+18	be	be	AUX	VB	_	19	aux:pass	_	_
+19	made	make	VERB	VBN	_	10	conj	_	_
+20	known	know	VERB	VBN	_	19	xcomp	_	_
+21	unto	unto	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	children	child	NOUN	NNS	_	19	obl	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	men	man	NOUN	NNS	_	23	nmod	_	_
+26	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = There is nothing which is secret save it shall be revealed; there is no work of darkness save it shall be made manifest in the light; and there is nothing which is sealed upon the earth save it shall be loosed.
+# sent_id = 966
+# llm_note: Three parallel existential clauses each with "save it shall be" exceptive advcl. "which is secret/sealed" acl:relcl on "nothing". "made manifest" = VERB+ADJ predicate.
+1	There	there	PRON	EX	_	2	expl	_	_
+2	is	be	VERB	VBZ	_	0	root	_	_
+3	nothing	nothing	PRON	NN	_	2	nsubj	_	_
+4	which	which	PRON	WDT	_	6	nsubj	_	_
+5	is	be	AUX	VBZ	_	6	cop	_	_
+6	secret	secret	ADJ	JJ	_	3	acl:relcl	_	_
+7	save	save	SCONJ	IN	_	10	mark	_	_
+8	it	it	PRON	PRP	_	10	nsubj:pass	_	_
+9	shall	shall	AUX	MD	_	10	aux	_	_
+10	be	be	AUX	VB	_	2	advcl	_	_
+11	revealed	reveal	VERB	VBN	_	10	xcomp	_	_
+12	;	;	PUNCT	:	_	2	punct	_	_
+13	there	there	PRON	EX	_	14	expl	_	_
+14	is	be	VERB	VBZ	_	2	conj	_	_
+15	no	no	DET	DT	_	16	det	_	_
+16	work	work	NOUN	NN	_	14	nsubj	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	darkness	darkness	NOUN	NN	_	16	nmod	_	_
+19	save	save	SCONJ	IN	_	22	mark	_	_
+20	it	it	PRON	PRP	_	22	nsubj:pass	_	_
+21	shall	shall	AUX	MD	_	22	aux	_	_
+22	be	be	AUX	VB	_	14	advcl	_	_
+23	made	make	VERB	VBN	_	22	xcomp	_	_
+24	manifest	manifest	ADJ	JJ	_	23	xcomp	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	light	light	NOUN	NN	_	24	obl	_	_
+28	;	;	PUNCT	:	_	14	punct	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	there	there	PRON	EX	_	31	expl	_	_
+31	is	be	VERB	VBZ	_	2	conj	_	_
+32	nothing	nothing	PRON	NN	_	31	nsubj	_	_
+33	which	which	PRON	WDT	_	35	nsubj:pass	_	_
+34	is	be	AUX	VBZ	_	35	aux:pass	_	_
+35	sealed	seal	VERB	VBN	_	32	acl:relcl	_	_
+36	upon	upon	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	earth	earth	NOUN	NN	_	35	obl	_	_
+39	save	save	SCONJ	IN	_	42	mark	_	_
+40	it	it	PRON	PRP	_	42	nsubj:pass	_	_
+41	shall	shall	AUX	MD	_	42	aux	_	_
+42	be	be	AUX	VB	_	31	advcl	_	_
+43	loosed	loose	VERB	VBN	_	42	xcomp	_	_
+44	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = Wherefore, all things which have been revealed unto the children of men shall at that day be revealed; and Satan shall have power over the hearts of the children of men no more, for a long time.
+# sent_id = 967
+# llm_note: "which have been revealed" acl:relcl on "things". "shall at that day be revealed" passive. "no more, for a long time" — "no more" = advmod negation; "for a long time" = obl duration.
+1	Wherefore	wherefore	ADV	WRB	_	19	advmod	_	_
+2	,	,	PUNCT	,	_	19	punct	_	_
+3	all	all	DET	PDT	_	4	det:predet	_	_
+4	things	thing	NOUN	NNS	_	19	nsubj:pass	_	_
+5	which	which	PRON	WDT	_	8	nsubj:pass	_	_
+6	have	have	AUX	VBP	_	8	aux	_	_
+7	been	be	AUX	VBN	_	8	aux:pass	_	_
+8	revealed	reveal	VERB	VBN	_	4	acl:relcl	_	_
+9	unto	unto	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	children	child	NOUN	NNS	_	8	obl	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	men	man	NOUN	NNS	_	11	nmod	_	_
+14	shall	shall	AUX	MD	_	19	aux	_	_
+15	at	at	ADP	IN	_	17	case	_	_
+16	that	that	DET	DT	_	17	det	_	_
+17	day	day	NOUN	NN	_	19	obl	_	_
+18	be	be	AUX	VB	_	19	aux:pass	_	_
+19	revealed	reveal	VERB	VBN	_	0	root	_	_
+20	;	;	PUNCT	:	_	19	punct	_	_
+21	and	and	CCONJ	CC	_	24	cc	_	_
+22	Satan	Satan	PROPN	NNP	_	24	nsubj	_	_
+23	shall	shall	AUX	MD	_	24	aux	_	_
+24	have	have	VERB	VB	_	19	conj	_	_
+25	power	power	NOUN	NN	_	24	obj	_	_
+26	over	over	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	hearts	heart	NOUN	NNS	_	24	obl	_	_
+29	of	of	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	children	child	NOUN	NNS	_	28	nmod	_	_
+32	of	of	ADP	IN	_	33	case	_	_
+33	men	man	NOUN	NNS	_	31	nmod	_	_
+34	no	no	ADV	RB	_	35	advmod	_	_
+35	more	more	ADV	RBR	_	24	advmod	_	_
+36	,	,	PUNCT	,	_	35	punct	_	_
+37	for	for	ADP	IN	_	40	case	_	_
+38	a	a	DET	DT	_	40	det	_	_
+39	long	long	ADJ	JJ	_	40	amod	_	_
+40	time	time	NOUN	NN	_	24	obl	_	_
+41	.	.	PUNCT	.	_	19	punct	_	_
+
+# text = And now, my beloved brethren, I make an end of my sayings.
+# sent_id = 968
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	now	now	ADV	RB	_	9	advmod	_	_
+3	,	,	PUNCT	,	_	9	punct	_	_
+4	my	my	PRON	PRP$	_	6	nmod:poss	_	_
+5	beloved	beloved	ADJ	JJ	_	6	amod	_	_
+6	brethren	brethren	NOUN	NNS	_	9	vocative	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	I	I	PRON	PRP	_	9	nsubj	_	_
+9	make	make	VERB	VBP	_	0	root	_	_
+10	an	a	DET	DT	_	11	det	_	_
+11	end	end	NOUN	NN	_	9	obj	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	my	my	PRON	PRP$	_	14	nmod:poss	_	_
+14	sayings	saying	NOUN	NNS	_	11	nmod	_	_
+15	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And now I, Nephi, make an end of my prophesying unto you, my beloved brethren.
+# sent_id = 969
+# llm_note: "I, Nephi" — "Nephi" appositive to "I". "my beloved brethren" vocative.
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	now	now	ADV	RB	_	7	advmod	_	_
+3	I	I	PRON	PRP	_	7	nsubj	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	Nephi	Nephi	PROPN	NNP	_	3	appos	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	make	make	VERB	VBP	_	0	root	_	_
+8	an	a	DET	DT	_	9	det	_	_
+9	end	end	NOUN	NN	_	7	obj	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	my	my	PRON	PRP$	_	12	nmod:poss	_	_
+12	prophesying	prophesy	VERB	VBG	_	9	nmod	_	_
+13	unto	unto	ADP	IN	_	14	case	_	_
+14	you	you	PRON	PRP	_	12	obl	_	_
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	my	my	PRON	PRP$	_	18	nmod:poss	_	_
+17	beloved	beloved	ADJ	JJ	_	18	amod	_	_
+18	brethren	brethren	NOUN	NNS	_	14	appos	_	_
+19	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And I cannot write but a few things, which I know must surely come to pass; neither can I write but a few of the words of my brother Jacob.
+# sent_id = 970
+# llm_note: MWT "cannot" at 3-4. "but a few things" — "but" here is restrictive ADV meaning "only"; obj of "write". "which I know must surely come to pass" — acl:relcl on "things"; "know" has ccomp "must...come to pass". Second clause "neither can I write but a few of the words..." — inverted, conj of main.
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	I	I	PRON	PRP	_	5	nsubj	_	_
+3-4	cannot	_	_	_	_	_	_	_	_
+3	can	can	AUX	MD	_	5	aux	_	_
+4	not	not	PART	RB	_	5	advmod	_	_
+5	write	write	VERB	VB	_	0	root	_	_
+6	but	but	ADV	RB	_	8	advmod	_	_
+7	a	a	DET	DT	_	8	det	_	_
+8	few	few	ADJ	JJ	_	9	amod	_	_
+9	things	thing	NOUN	NNS	_	5	obj	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	which	which	PRON	WDT	_	13	obj	_	_
+12	I	I	PRON	PRP	_	13	nsubj	_	_
+13	know	know	VERB	VBP	_	9	acl:relcl	_	_
+14	must	must	AUX	MD	_	16	aux	_	_
+15	surely	surely	ADV	RB	_	16	advmod	_	_
+16	come	come	VERB	VB	_	13	ccomp	_	_
+17	to	to	PART	TO	_	18	mark	_	_
+18	pass	pass	VERB	VB	_	16	xcomp	_	_
+19	;	;	PUNCT	:	_	5	punct	_	_
+20	neither	neither	ADV	RB	_	23	advmod	_	_
+21	can	can	AUX	MD	_	23	aux	_	_
+22	I	I	PRON	PRP	_	23	nsubj	_	_
+23	write	write	VERB	VB	_	5	conj	_	_
+24	but	but	ADV	RB	_	26	advmod	_	_
+25	a	a	DET	DT	_	26	det	_	_
+26	few	few	ADJ	JJ	_	23	obj	_	_
+27	of	of	ADP	IN	_	29	case	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	words	word	NOUN	NNS	_	26	nmod	_	_
+30	of	of	ADP	IN	_	33	case	_	_
+31	my	my	PRON	PRP$	_	33	nmod:poss	_	_
+32	brother	brother	NOUN	NN	_	33	compound	_	_
+33	Jacob	Jacob	PROPN	NNP	_	29	nmod	_	_
+34	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Wherefore, the things which I have written sufficeth me, save it be a few words which I must speak concerning the doctrine of Christ; wherefore, I shall speak unto you plainly, according to the plainness of my prophesying.
+# sent_id = 971
+# llm_note: "sufficeth" = archaic 3sg VBZ (suffice). "save it be a few words" — exceptive advcl. "which I must speak concerning the doctrine of Christ" — acl:relcl on "words". Second clause: "I shall speak unto you plainly, according to the plainness of my prophesying" — conj of main.
+1	Wherefore	wherefore	ADV	WRB	_	9	advmod	_	_
+2	,	,	PUNCT	,	_	9	punct	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	things	thing	NOUN	NNS	_	9	nsubj	_	_
+5	which	which	PRON	WDT	_	8	obj	_	_
+6	I	I	PRON	PRP	_	8	nsubj	_	_
+7	have	have	AUX	VBP	_	8	aux	_	_
+8	written	write	VERB	VBN	_	4	acl:relcl	_	_
+9	sufficeth	suffice	VERB	VBZ	_	0	root	_	_
+10	me	I	PRON	PRP	_	9	obj	_	_
+11	,	,	PUNCT	,	_	9	punct	_	_
+12	save	save	SCONJ	IN	_	15	mark	_	_
+13	it	it	PRON	PRP	_	15	nsubj	_	_
+14	be	be	AUX	VBZ	_	15	cop	_	_
+15	a	a	DET	DT	_	16	det	_	_
+16	few	few	ADJ	JJ	_	9	advcl	_	_
+17	words	word	NOUN	NNS	_	16	nsubj	_	_
+18	which	which	PRON	WDT	_	20	obj	_	_
+19	I	I	PRON	PRP	_	20	nsubj	_	_
+20	must	must	AUX	MD	_	17	acl:relcl	_	_
+21	speak	speak	VERB	VB	_	20	xcomp	_	_
+22	concerning	concerning	ADP	VBG	_	24	case	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	doctrine	doctrine	NOUN	NN	_	21	obl	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	Christ	Christ	PROPN	NNP	_	24	nmod	_	_
+27	;	;	PUNCT	:	_	9	punct	_	_
+28	wherefore	wherefore	ADV	WRB	_	32	advmod	_	_
+29	,	,	PUNCT	,	_	32	punct	_	_
+30	I	I	PRON	PRP	_	32	nsubj	_	_
+31	shall	shall	AUX	MD	_	32	aux	_	_
+32	speak	speak	VERB	VB	_	9	conj	_	_
+33	unto	unto	ADP	IN	_	34	case	_	_
+34	you	you	PRON	PRP	_	32	obl	_	_
+35	plainly	plainly	ADV	RB	_	32	advmod	_	_
+36	,	,	PUNCT	,	_	35	punct	_	_
+37	according	according	ADP	VBG	_	40	case	_	_
+38	to	to	ADP	IN	_	37	fixed	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	plainness	plainness	NOUN	NN	_	32	obl	_	_
+41	of	of	ADP	IN	_	43	case	_	_
+42	my	my	PRON	PRP$	_	43	nmod:poss	_	_
+43	prophesying	prophesy	VERB	VBG	_	40	nmod	_	_
+44	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = For my soul delighteth in plainness; for after this manner doth the Lord God work among the children of men.
+# sent_id = 972
+# llm_note: "delighteth" archaic 3sg VBZ. "for after this manner doth the Lord God work" — "doth" auxiliary, inverted; "the Lord God" nsubj; "work" main verb.
+1	For	for	SCONJ	IN	_	4	mark	_	_
+2	my	my	PRON	PRP$	_	3	nmod:poss	_	_
+3	soul	soul	NOUN	NN	_	4	nsubj	_	_
+4	delighteth	delight	VERB	VBZ	_	0	root	_	_
+5	in	in	ADP	IN	_	6	case	_	_
+6	plainness	plainness	NOUN	NN	_	4	obl	_	_
+7	;	;	PUNCT	:	_	4	punct	_	_
+8	for	for	SCONJ	IN	_	16	mark	_	_
+9	after	after	ADP	IN	_	11	case	_	_
+10	this	this	DET	DT	_	11	det	_	_
+11	manner	manner	NOUN	NN	_	16	obl	_	_
+12	doth	do	AUX	VBZ	_	16	aux	_	_
+13	the	the	DET	DT	_	15	det	_	_
+14	Lord	Lord	PROPN	NNP	_	15	compound	_	_
+15	God	God	PROPN	NNP	_	16	nsubj	_	_
+16	work	work	VERB	VB	_	4	advcl	_	_
+17	among	among	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	children	child	NOUN	NNS	_	16	obl	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	men	man	NOUN	NNS	_	19	nmod	_	_
+22	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = For the Lord God giveth light unto the understanding; for he speaketh unto men according to their language, unto their understanding.
+# sent_id = 973
+# llm_note: "giveth" and "speaketh" — archaic 3sg VBZ. "according to their language, unto their understanding" — two parallel obl phrases on "speaketh".
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	the	the	DET	DT	_	4	det	_	_
+3	Lord	Lord	PROPN	NNP	_	4	compound	_	_
+4	God	God	PROPN	NNP	_	5	nsubj	_	_
+5	giveth	give	VERB	VBZ	_	0	root	_	_
+6	light	light	NOUN	NN	_	5	obj	_	_
+7	unto	unto	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	understanding	understanding	NOUN	NN	_	5	obl	_	_
+10	;	;	PUNCT	:	_	5	punct	_	_
+11	for	for	SCONJ	IN	_	13	mark	_	_
+12	he	he	PRON	PRP	_	13	nsubj	_	_
+13	speaketh	speak	VERB	VBZ	_	5	advcl	_	_
+14	unto	unto	ADP	IN	_	15	case	_	_
+15	men	man	NOUN	NNS	_	13	obl	_	_
+16	according	according	ADP	VBG	_	19	case	_	_
+17	to	to	ADP	IN	_	16	fixed	_	_
+18	their	they	PRON	PRP$	_	19	nmod:poss	_	_
+19	language	language	NOUN	NN	_	13	obl	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	unto	unto	ADP	IN	_	23	case	_	_
+22	their	they	PRON	PRP$	_	23	nmod:poss	_	_
+23	understanding	understanding	NOUN	NN	_	13	obl	_	_
+24	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Wherefore, I would that ye should remember that I have spoken unto you concerning that prophet which the Lord showed unto me, that should baptize the Lamb of God, which should take away the sins of the world.
+# sent_id = 974
+# llm_note: "I would that ye should remember" — volition verb "would" + ccomp "that ye should remember". "that I have spoken" ccomp of "remember". "concerning that prophet" obl on "spoken". "which the Lord showed unto me" acl:relcl on "prophet". "that should baptize the Lamb of God" — "that" is a relative pronoun (= who), acl:relcl on "prophet"; should = aux. "which should take away the sins of the world" — acl:relcl on "Lamb of God" (token 29).
+1	Wherefore	wherefore	ADV	WRB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	I	I	PRON	PRP	_	4	nsubj	_	_
+4	would	would	VERB	VBD	_	0	root	_	_
+5	that	that	SCONJ	IN	_	8	mark	_	_
+6	ye	ye	PRON	PRP	_	8	nsubj	_	_
+7	should	should	AUX	MD	_	8	aux	_	_
+8	remember	remember	VERB	VB	_	4	ccomp	_	_
+9	that	that	SCONJ	IN	_	12	mark	_	_
+10	I	I	PRON	PRP	_	12	nsubj	_	_
+11	have	have	AUX	VBP	_	12	aux	_	_
+12	spoken	speak	VERB	VBN	_	8	ccomp	_	_
+13	unto	unto	ADP	IN	_	14	case	_	_
+14	you	you	PRON	PRP	_	12	obl	_	_
+15	concerning	concerning	ADP	VBG	_	17	case	_	_
+16	that	that	DET	DT	_	17	det	_	_
+17	prophet	prophet	NOUN	NN	_	12	obl	_	_
+18	which	which	PRON	WDT	_	21	obj	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	Lord	Lord	PROPN	NNP	_	21	nsubj	_	_
+21	showed	show	VERB	VBD	_	17	acl:relcl	_	_
+22	unto	unto	ADP	IN	_	23	case	_	_
+23	me	I	PRON	PRP	_	21	obl	_	_
+24	,	,	PUNCT	,	_	21	punct	_	_
+25	that	that	PRON	WDT	_	27	nsubj	_	_
+26	should	should	AUX	MD	_	27	aux	_	_
+27	baptize	baptize	VERB	VB	_	17	acl:relcl	_	_
+28	the	the	DET	DT	_	30	det	_	_
+29	Lamb	Lamb	PROPN	NNP	_	27	obj	_	_
+30	of	of	ADP	IN	_	31	case	_	_
+31	God	God	PROPN	NNP	_	29	nmod	_	_
+32	,	,	PUNCT	,	_	29	punct	_	_
+33	which	which	PRON	WDT	_	35	nsubj	_	_
+34	should	should	AUX	MD	_	35	aux	_	_
+35	take	take	VERB	VB	_	29	acl:relcl	_	_
+36	away	away	ADP	RP	_	35	compound:prt	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	sins	sin	NOUN	NNS	_	35	obj	_	_
+39	of	of	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	_	41	det	_	_
+41	world	world	NOUN	NN	_	38	nmod	_	_
+42	.	.	PUNCT	.	_	4	punct	_	_
+

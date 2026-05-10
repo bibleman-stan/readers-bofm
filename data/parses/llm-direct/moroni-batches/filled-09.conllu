@@ -1,0 +1,542 @@
+# text = Behold, my son, I will write unto you again if I go not out soon against the Lamanites.
+# sent_id = 120
+# llm_note = "my son" = vocative; "I will write unto you again" = main clause; "if I go not out soon against the Lamanites" = conditional advcl; "go out" = compound:prt (go+out)
+1	Behold	behold	INTJ	UH	_	8	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	_
+4	son	son	NOUN	NN	Number=Sing	8	vocative	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+7	will	will	AUX	MD	VerbForm=Fin	8	aux	_	_
+8	write	write	VERB	VB	VerbForm=Inf	0	root	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	you	you	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	8	obl	_	_
+11	again	again	ADV	RB	_	8	advmod	_	_
+12	if	if	SCONJ	IN	_	14	mark	_	_
+13	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_
+14	go	go	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	advcl	_	_
+15	not	not	PART	RB	Polarity=Neg	14	advmod	_	_
+16	out	out	ADP	RP	_	14	compound:prt	_	_
+17	soon	soon	ADV	RB	_	14	advmod	_	_
+18	against	against	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	Lamanites	Lamanites	PROPN	NNPS	Number=Plur	14	obl	_	_
+21	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = Behold, the pride of this nation, or the people of the Nephites, hath proven their destruction except they should repent.
+# sent_id = 121
+# llm_note = "or the people of the Nephites" = appositive clarification of "this nation"; "hath proven" = AUX+VBN EME perf; "their destruction" = obj; "except they should repent" = conditional exception SCONJ
+1	Behold	behold	INTJ	UH	_	9	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	pride	pride	NOUN	NN	Number=Sing	9	nsubj	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	this	this	DET	DT	Number=Sing|PronType=Dem	7	det	_	_
+7	nation	nation	NOUN	NN	Number=Sing	4	nmod	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	or	or	CCONJ	CC	_	4	cc	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	people	people	NOUN	NN	Number=Plur	4	conj	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	Nephites	Nephites	PROPN	NNPS	Number=Plur	11	nmod	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
+17	proven	prove	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+18	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+19	destruction	destruction	NOUN	NN	Number=Sing	17	obj	_	_
+20	except	except	SCONJ	IN	_	23	mark	_	_
+21	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	_
+22	should	should	AUX	MD	VerbForm=Fin	23	aux	_	_
+23	repent	repent	VERB	VB	VerbForm=Inf	17	advcl	_	_
+24	.	.	PUNCT	.	_	17	punct	_	_
+
+# text = Pray for them, my son, that repentance may come unto them.
+# sent_id = 122
+# llm_note = "Pray for them" = imperative; "my son" = vocative; "that repentance may come" = purpose advcl
+1	Pray	pray	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	for	for	ADP	IN	_	3	case	_	_
+3	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	1	obl	_	_
+4	,	,	PUNCT	,	_	6	punct	_	_
+5	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	_
+6	son	son	NOUN	NN	Number=Sing	1	vocative	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	that	that	SCONJ	IN	_	11	mark	_	_
+9	repentance	repentance	NOUN	NN	Number=Sing	11	nsubj	_	_
+10	may	may	AUX	MD	VerbForm=Fin	11	aux	_	_
+11	come	come	VERB	VB	VerbForm=Inf	1	advcl	_	_
+12	unto	unto	ADP	IN	_	13	case	_	_
+13	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	11	obl	_	_
+14	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = But behold, I fear lest the Spirit hath ceased striving with them; and in this part of the land they are also seeking to put down all power and authority which cometh from God; and they are denying the Holy Ghost.
+# sent_id = 123
+# llm_note = "I fear lest" = fear + lest-clause (SCONJ); "hath ceased striving" = AUX+VBN+VBG (cease is aspectual, so "striving" is xcomp); "in this part of the land" = fronted obl; "seeking to put down" = prog VERB + inf; "put down" = compound:prt; "cometh from God" = EME VBZ; "denying the Holy Ghost" = prog
+1	But	but	CCONJ	CC	_	5	cc	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	fear	fear	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	lest	lest	SCONJ	IN	_	10	mark	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	Spirit	Spirit	PROPN	NNP	Number=Sing	10	nsubj	_	_
+9	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+10	ceased	cease	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+11	striving	strive	VERB	VBG	VerbForm=Part	10	xcomp	_	_
+12	with	with	ADP	IN	_	13	case	_	_
+13	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	11	obl	_	_
+14	;	;	PUNCT	:	_	25	punct	_	_
+15	and	and	CCONJ	CC	_	25	cc	_	_
+16	in	in	ADP	IN	_	18	case	_	_
+17	this	this	DET	DT	Number=Sing|PronType=Dem	18	det	_	_
+18	part	part	NOUN	NN	Number=Sing	25	obl	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	land	land	NOUN	NN	Number=Sing	18	nmod	_	_
+22	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	25	nsubj	_	_
+23	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	25	aux	_	_
+24	also	also	ADV	RB	_	25	advmod	_	_
+25	seeking	seek	VERB	VBG	VerbForm=Part	5	conj	_	_
+26	to	to	PART	TO	_	27	mark	_	_
+27	put	put	VERB	VB	VerbForm=Inf	25	xcomp	_	_
+28	down	down	ADP	RP	_	27	compound:prt	_	_
+29	all	all	DET	DT	_	30	det	_	_
+30	power	power	NOUN	NN	Number=Sing	27	obj	_	_
+31	and	and	CCONJ	CC	_	32	cc	_	_
+32	authority	authority	NOUN	NN	Number=Sing	30	conj	_	_
+33	which	which	PRON	WDT	PronType=Rel	34	nsubj	_	_
+34	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl:relcl	_	_
+35	from	from	ADP	IN	_	36	case	_	_
+36	God	God	PROPN	NNP	Number=Sing	34	obl	_	_
+37	;	;	PUNCT	:	_	41	punct	_	_
+38	and	and	CCONJ	CC	_	41	cc	_	_
+39	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	41	nsubj	_	_
+40	are	be	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	41	aux	_	_
+41	denying	deny	VERB	VBG	VerbForm=Part	5	conj	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	44	det	_	_
+43	Holy	Holy	ADJ	NNP	Degree=Pos	44	amod	_	_
+44	Ghost	Ghost	PROPN	NNP	Number=Sing	41	obj	_	_
+45	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And after rejecting so great a knowledge, my son, they must perish soon, unto the fulfilling of the prophecies which were spoken by the prophets, as well as the words of our Savior himself.
+# sent_id = 124
+# llm_note = "after rejecting so great a knowledge" = PP advcl with gerundive; "my son" = vocative; "they must perish" = main clause; "unto the fulfilling of the prophecies" = purpose obl; "which were spoken by the prophets" = passive rel clause; "as well as the words of our Savior" = additive conj comparative; "himself" = emphatic reflexive
+1	And	and	CCONJ	CC	_	14	cc	_	_
+2	after	after	ADP	IN	_	3	case	_	_
+3	rejecting	reject	VERB	VBG	VerbForm=Part	14	advcl	_	_
+4	so	so	ADV	RB	_	5	advmod	_	_
+5	great	great	ADJ	JJ	Degree=Pos	7	amod	_	_
+6	a	a	DET	DT	Definite=Ind|PronType=Art	7	det	_	_
+7	knowledge	knowledge	NOUN	NN	Number=Sing	3	obj	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	_
+10	son	son	NOUN	NN	Number=Sing	14	vocative	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	14	nsubj	_	_
+13	must	must	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	perish	perish	VERB	VB	VerbForm=Inf	0	root	_	_
+15	soon	soon	ADV	RB	_	14	advmod	_	_
+16	,	,	PUNCT	,	_	19	punct	_	_
+17	unto	unto	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	fulfilling	fulfil	VERB	VBG	VerbForm=Part	14	advcl	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	prophecies	prophecy	NOUN	NNS	Number=Plur	19	obj	_	_
+23	which	which	PRON	WDT	PronType=Rel	25	nsubj:pass	_	_
+24	were	be	AUX	VBD	Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	25	aux:pass	_	_
+25	spoken	speak	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	22	acl:relcl	_	_
+26	by	by	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	prophets	prophet	NOUN	NNS	Number=Plur	25	obl:agent	_	_
+29	,	,	PUNCT	,	_	34	punct	_	_
+30	as	as	ADV	RB	_	31	advmod	_	_
+31	well	well	ADV	RB	_	32	advmod	_	_
+32	as	as	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	words	word	NOUN	NNS	Number=Plur	28	conj	_	_
+35	of	of	ADP	IN	_	37	case	_	_
+36	our	our	PRON	PRP$	Number=Plur|Person=1|Poss=Yes|PronType=Prs	37	nmod:poss	_	_
+37	Savior	Savior	PROPN	NNP	Number=Sing	34	nmod	_	_
+38	himself	himself	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	37	nmod	_	_
+39	.	.	PUNCT	.	_	14	punct	_	_
+
+# text = Farewell, my son, until I shall write unto you, or shall meet you again.
+# sent_id = 125
+# llm_note = "Farewell" = INTJ valediction root; "my son" = vocative; "until I shall write...or shall meet" = two conj temporal advcl
+1	Farewell	farewell	INTJ	UH	_	0	root	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	_
+4	son	son	NOUN	NN	Number=Sing	1	vocative	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	until	until	SCONJ	IN	_	9	mark	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+8	shall	shall	AUX	MD	VerbForm=Fin	9	aux	_	_
+9	write	write	VERB	VB	VerbForm=Inf	1	advcl	_	_
+10	unto	unto	ADP	IN	_	11	case	_	_
+11	you	you	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	9	obl	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	or	or	CCONJ	CC	_	15	cc	_	_
+14	shall	shall	AUX	MD	VerbForm=Fin	15	aux	_	_
+15	meet	meet	VERB	VB	VerbForm=Inf	9	conj	_	_
+16	you	you	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	15	obj	_	_
+17	again	again	ADV	RB	_	15	advmod	_	_
+18	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = Amen.
+# sent_id = 126
+1	Amen	Amen	INTJ	UH	_	0	root	_	_
+2	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = My beloved son, I write unto you again that ye may know that I am yet alive; but I write somewhat of that which is grievous.
+# sent_id = 127
+# llm_note = "My beloved son" = vocative; "I write unto you again" = main clause; "that ye may know" = purpose advcl; "that I am yet alive" = ccomp of know; "but I write somewhat of that which is grievous" = contrastive parataxis; "that which is grievous" = free rel noun as obl
+1	My	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
+2	beloved	beloved	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	son	son	NOUN	NN	Number=Sing	6	vocative	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	write	write	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	you	you	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	6	obl	_	_
+9	again	again	ADV	RB	_	6	advmod	_	_
+10	that	that	SCONJ	IN	_	13	mark	_	_
+11	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	13	nsubj	_	_
+12	may	may	AUX	MD	VerbForm=Fin	13	aux	_	_
+13	know	know	VERB	VB	VerbForm=Inf	6	advcl	_	_
+14	that	that	SCONJ	IN	_	18	mark	_	_
+15	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	18	nsubj	_	_
+16	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	18	cop	_	_
+17	yet	yet	ADV	RB	_	18	advmod	_	_
+18	alive	alive	ADJ	JJ	Degree=Pos	13	ccomp	_	_
+19	;	;	PUNCT	:	_	22	punct	_	_
+20	but	but	CCONJ	CC	_	22	cc	_	_
+21	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	22	nsubj	_	_
+22	write	write	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	conj	_	_
+23	somewhat	somewhat	ADV	RB	_	22	advmod	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	that	that	PRON	DT	Number=Sing|PronType=Dem	26	det	_	_
+26	which	which	PRON	WDT	PronType=Rel	22	obl	_	_
+27	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	_
+28	grievous	grievous	ADJ	JJ	Degree=Pos	26	acl:relcl	_	_
+29	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = For behold, I have had a sore battle with the Lamanites, in which we did not conquer; and Archeantus has fallen by the sword, and also Luram and Emron; yea, and we have lost a great number of our choice men.
+# sent_id = 128
+# llm_note = "For behold" = discourse; "in which we did not conquer" = rel clause; "Archeantus has fallen by the sword" = second main clause; "and also Luram and Emron" = conj subjects that have also fallen (gapped predicate); "yea" = discourse; "we have lost a great number" = third main clause
+1	For	for	ADV	RB	_	6	advmod	_	_
+2	behold	behold	INTJ	UH	_	6	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+5	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux	_	_
+6	had	have	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	a	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
+8	sore	sore	ADJ	JJ	Degree=Pos	9	amod	_	_
+9	battle	battle	NOUN	NN	Number=Sing	6	obj	_	_
+10	with	with	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	Lamanites	Lamanites	PROPN	NNPS	Number=Plur	9	obl	_	_
+13	,	,	PUNCT	,	_	19	punct	_	_
+14	in	in	ADP	IN	_	15	case	_	_
+15	which	which	PRON	WDT	PronType=Rel	19	obl	_	_
+16	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	19	nsubj	_	_
+17	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	19	aux	_	_
+18	not	not	PART	RB	Polarity=Neg	19	advmod	_	_
+19	conquer	conquer	VERB	VB	VerbForm=Inf	9	acl:relcl	_	_
+20	;	;	PUNCT	:	_	24	punct	_	_
+21	and	and	CCONJ	CC	_	24	cc	_	_
+22	Archeantus	Archeantus	PROPN	NNP	Number=Sing	24	nsubj	_	_
+23	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
+24	fallen	fall	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+25	by	by	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	sword	sword	NOUN	NN	Number=Sing	24	obl	_	_
+28	,	,	PUNCT	,	_	31	punct	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	also	also	ADV	RB	_	31	advmod	_	_
+31	Luram	Luram	PROPN	NNP	Number=Sing	22	conj	_	_
+32	and	and	CCONJ	CC	_	33	cc	_	_
+33	Emron	Emron	PROPN	NNP	Number=Sing	31	conj	_	_
+34	;	;	PUNCT	:	_	40	punct	_	_
+35	yea	yea	ADV	RB	_	40	advmod	_	_
+36	,	,	PUNCT	,	_	35	punct	_	_
+37	and	and	CCONJ	CC	_	40	cc	_	_
+38	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	40	nsubj	_	_
+39	have	have	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	40	aux	_	_
+40	lost	lose	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+41	a	a	DET	DT	Definite=Ind|PronType=Art	43	det	_	_
+42	great	great	ADJ	JJ	Degree=Pos	43	amod	_	_
+43	number	number	NOUN	NN	Number=Sing	40	obj	_	_
+44	of	of	ADP	IN	_	47	case	_	_
+45	our	our	PRON	PRP$	Number=Plur|Person=1|Poss=Yes|PronType=Prs	47	nmod:poss	_	_
+46	choice	choice	ADJ	JJ	Degree=Pos	47	amod	_	_
+47	men	man	NOUN	NNS	Number=Plur	43	nmod	_	_
+48	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And now behold, my son, I fear lest the Lamanites shall destroy this people; for they do not repent, and Satan stirreth them up continually to anger one with another.
+# sent_id = 129
+# llm_note = "behold" = discourse INTJ; "my son" = vocative; "fear lest" = SCONJ; "do not repent" = emphatic do negation; "stirreth them up" = compound:prt up; "to anger one with another" = purpose infinitive
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	now	now	ADV	RB	_	9	advmod	_	_
+3	behold	behold	INTJ	UH	_	9	discourse	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	_
+6	son	son	NOUN	NN	Number=Sing	9	vocative	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+9	fear	fear	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	lest	lest	SCONJ	IN	_	14	mark	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	Lamanites	Lamanites	PROPN	NNPS	Number=Plur	14	nsubj	_	_
+13	shall	shall	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	destroy	destroy	VERB	VB	VerbForm=Inf	9	ccomp	_	_
+15	this	this	DET	DT	Number=Sing|PronType=Dem	16	det	_	_
+16	people	people	NOUN	NN	Number=Sing	14	obj	_	_
+17	;	;	PUNCT	:	_	22	punct	_	_
+18	for	for	SCONJ	IN	_	22	mark	_	_
+19	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_
+20	do	do	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	22	aux	_	_
+21	not	not	PART	RB	Polarity=Neg	22	advmod	_	_
+22	repent	repent	VERB	VB	VerbForm=Inf	9	advcl	_	_
+23	,	,	PUNCT	,	_	26	punct	_	_
+24	and	and	CCONJ	CC	_	26	cc	_	_
+25	Satan	Satan	PROPN	NNP	Number=Sing	26	nsubj	_	_
+26	stirreth	stir	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	conj	_	_
+27	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	26	obj	_	_
+28	up	up	ADP	RP	_	26	compound:prt	_	_
+29	continually	continually	ADV	RB	_	26	advmod	_	_
+30	to	to	PART	TO	_	31	mark	_	_
+31	anger	anger	VERB	VB	VerbForm=Inf	26	advcl	_	_
+32	one	one	PRON	PRP	Case=Nom|Number=Sing|PronType=Ind	31	obj	_	_
+33	with	with	ADP	IN	_	34	case	_	_
+34	another	another	PRON	DT	Number=Sing|PronType=Ind	32	obl	_	_
+35	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = Behold, I am laboring with them continually; and when I speak the word of God with sharpness they tremble and anger against me; and when I use no sharpness they harden their hearts against it; wherefore, I fear lest the Spirit of the Lord hath ceased striving with them.
+# sent_id = 130
+# llm_note = "I am laboring with them continually" = progressive; two "when"-clauses with their apodoses; "anger against" = VERB; "harden their hearts against it" = idiom; "Spirit of the Lord hath ceased striving" = aspectual "ceased" + VBG xcomp
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	laboring	labor	VERB	VBG	VerbForm=Part	0	root	_	_
+6	with	with	ADP	IN	_	7	case	_	_
+7	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	5	obl	_	_
+8	continually	continually	ADV	RB	_	5	advmod	_	_
+9	;	;	PUNCT	:	_	21	punct	_	_
+10	and	and	CCONJ	CC	_	21	cc	_	_
+11	when	when	ADV	WRB	PronType=Rel	13	advmod	_	_
+12	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_
+13	speak	speak	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	21	advcl	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	word	word	NOUN	NN	Number=Sing	13	obj	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	God	God	PROPN	NNP	Number=Sing	15	nmod	_	_
+18	with	with	ADP	IN	_	19	case	_	_
+19	sharpness	sharpness	NOUN	NN	Number=Sing	13	obl	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	21	nsubj	_	_
+21	tremble	tremble	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	5	conj	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	anger	anger	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	21	conj	_	_
+24	against	against	ADP	IN	_	25	case	_	_
+25	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	23	obl	_	_
+26	;	;	PUNCT	:	_	34	punct	_	_
+27	and	and	CCONJ	CC	_	34	cc	_	_
+28	when	when	ADV	WRB	PronType=Rel	30	advmod	_	_
+29	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	30	nsubj	_	_
+30	use	use	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	34	advcl	_	_
+31	no	no	DET	DT	PronType=Neg	32	det	_	_
+32	sharpness	sharpness	NOUN	NN	Number=Sing	30	obj	_	_
+33	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	34	nsubj	_	_
+34	harden	harden	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	5	conj	_	_
+35	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	36	nmod:poss	_	_
+36	hearts	heart	NOUN	NNS	Number=Plur	34	obj	_	_
+37	against	against	ADP	IN	_	38	case	_	_
+38	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	34	obl	_	_
+39	;	;	PUNCT	:	_	43	punct	_	_
+40	wherefore	wherefore	ADV	RB	_	43	advmod	_	_
+41	,	,	PUNCT	,	_	40	punct	_	_
+42	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	43	nsubj	_	_
+43	fear	fear	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	conj	_	_
+44	lest	lest	SCONJ	IN	_	48	mark	_	_
+45	the	the	DET	DT	Definite=Def|PronType=Art	47	det	_	_
+46	Spirit	Spirit	PROPN	NNP	Number=Sing	48	nsubj	_	_
+47	of	of	ADP	IN	_	49	case	_	_
+48	the	the	DET	DT	Definite=Def|PronType=Art	49	det	_	_
+49	Lord	Lord	PROPN	NNP	Number=Sing	46	nmod	_	_
+50	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	51	aux	_	_
+51	ceased	cease	VERB	VBN	Tense=Past|VerbForm=Part	43	ccomp	_	_
+52	striving	strive	VERB	VBG	VerbForm=Part	51	xcomp	_	_
+53	with	with	ADP	IN	_	54	case	_	_
+54	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	52	obl	_	_
+55	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = For so exceedingly do they anger that it seemeth me that they have no fear of death; and they have lost their love, one towards another; and they thirst after blood and revenge continually.
+# sent_id = 131
+# llm_note = "so exceedingly do they anger that" = inverted emphatic + result clause; "seemeth" = seem+eth EME VBZ; "it seemeth me that they have no fear" = impers construction with dative "me" and ccomp; "one towards another" = reciprocal appositive; "thirst after blood and revenge" = VERB+obl
+1	For	for	ADV	RB	_	6	advmod	_	_
+2	so	so	ADV	RB	_	3	advmod	_	_
+3	exceedingly	exceedingly	ADV	RB	_	6	advmod	_	_
+4	do	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	6	aux	_	_
+5	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_
+6	anger	anger	VERB	VB	VerbForm=Inf	0	root	_	_
+7	that	that	SCONJ	IN	_	9	mark	_	_
+8	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	seemeth	seem	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
+10	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	9	obj	_	_
+11	that	that	SCONJ	IN	_	15	mark	_	_
+12	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_
+13	have	have	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	15	aux	_	_
+14	no	no	DET	DT	PronType=Neg	15	advmod	_	_
+15	fear	fear	NOUN	NN	Number=Sing	9	ccomp	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	death	death	NOUN	NN	Number=Sing	15	nmod	_	_
+18	;	;	PUNCT	:	_	22	punct	_	_
+19	and	and	CCONJ	CC	_	22	cc	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_
+21	have	have	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	22	aux	_	_
+22	lost	lose	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+23	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
+24	love	love	NOUN	NN	Number=Sing	22	obj	_	_
+25	,	,	PUNCT	,	_	26	punct	_	_
+26	one	one	PRON	PRP	Case=Nom|Number=Sing|PronType=Ind	22	parataxis	_	_
+27	towards	towards	ADP	IN	_	28	case	_	_
+28	another	another	PRON	DT	Number=Sing|PronType=Ind	26	obl	_	_
+29	;	;	PUNCT	:	_	32	punct	_	_
+30	and	and	CCONJ	CC	_	32	cc	_	_
+31	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	32	nsubj	_	_
+32	thirst	thirst	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	6	conj	_	_
+33	after	after	ADP	IN	_	34	case	_	_
+34	blood	blood	NOUN	NN	Number=Sing	32	obl	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	revenge	revenge	NOUN	NN	Number=Sing	34	conj	_	_
+37	continually	continually	ADV	RB	_	32	advmod	_	_
+38	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And now, my beloved son, notwithstanding their hardness, let us labor diligently; for if we should cease to labor, we should be brought under condemnation; for we have a labor to perform whilst in this tabernacle of clay, that we may conquer the enemy of all righteousness, and rest our souls in the kingdom of God.
+# sent_id = 132
+# llm_note = "notwithstanding their hardness" = concessive PP; "let us labor" = hortative; "if we should cease to labor...we should be brought" = conditional; "cease to labor" = aspectual + inf; "whilst in this tabernacle" = temporal SCONJ PP; "that we may conquer...and rest" = two conj purpose advcl verbs
+1	And	and	CCONJ	CC	_	14	cc	_	_
+2	now	now	ADV	RB	_	14	advmod	_	_
+3	,	,	PUNCT	,	_	6	punct	_	_
+4	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	_
+5	beloved	beloved	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	son	son	NOUN	NN	Number=Sing	14	vocative	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	notwithstanding	notwithstanding	ADP	IN	_	10	case	_	_
+9	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	_
+10	hardness	hardness	NOUN	NN	Number=Sing	14	obl	_	_
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	let	let	AUX	VB	Mood=Imp|VerbForm=Fin	14	aux	_	_
+13	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1|PronType=Prs	14	nsubj	_	_
+14	labor	labor	VERB	VB	VerbForm=Inf	0	root	_	_
+15	diligently	diligently	ADV	RB	_	14	advmod	_	_
+16	;	;	PUNCT	:	_	28	punct	_	_
+17	for	for	SCONJ	IN	_	28	mark	_	_
+18	if	if	SCONJ	IN	_	21	mark	_	_
+19	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	21	nsubj	_	_
+20	should	should	AUX	MD	VerbForm=Fin	21	aux	_	_
+21	cease	cease	VERB	VB	VerbForm=Inf	28	advcl	_	_
+22	to	to	PART	TO	_	23	mark	_	_
+23	labor	labor	VERB	VB	VerbForm=Inf	21	xcomp	_	_
+24	,	,	PUNCT	,	_	28	punct	_	_
+25	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	28	nsubj:pass	_	_
+26	should	should	AUX	MD	VerbForm=Fin	28	aux	_	_
+27	be	be	AUX	VB	VerbForm=Inf	28	aux:pass	_	_
+28	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	14	advcl	_	_
+29	under	under	ADP	IN	_	30	case	_	_
+30	condemnation	condemnation	NOUN	NN	Number=Sing	28	obl	_	_
+31	;	;	PUNCT	:	_	34	punct	_	_
+32	for	for	SCONJ	IN	_	34	mark	_	_
+33	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	34	nsubj	_	_
+34	have	have	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	14	advcl	_	_
+35	a	a	DET	DT	Definite=Ind|PronType=Art	36	det	_	_
+36	labor	labor	NOUN	NN	Number=Sing	34	obj	_	_
+37	to	to	PART	TO	_	38	mark	_	_
+38	perform	perform	VERB	VB	VerbForm=Inf	36	acl	_	_
+39	whilst	whilst	SCONJ	IN	_	41	mark	_	_
+40	in	in	ADP	IN	_	42	case	_	_
+41	this	this	DET	DT	Number=Sing|PronType=Dem	42	det	_	_
+42	tabernacle	tabernacle	NOUN	NN	Number=Sing	38	advcl	_	_
+43	of	of	ADP	IN	_	44	case	_	_
+44	clay	clay	NOUN	NN	Number=Sing	42	nmod	_	_
+45	,	,	PUNCT	,	_	49	punct	_	_
+46	that	that	SCONJ	IN	_	49	mark	_	_
+47	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	49	nsubj	_	_
+48	may	may	AUX	MD	VerbForm=Fin	49	aux	_	_
+49	conquer	conquer	VERB	VB	VerbForm=Inf	38	advcl	_	_
+50	the	the	DET	DT	Definite=Def|PronType=Art	51	det	_	_
+51	enemy	enemy	NOUN	NN	Number=Sing	49	obj	_	_
+52	of	of	ADP	IN	_	54	case	_	_
+53	all	all	DET	DT	_	54	det	_	_
+54	righteousness	righteousness	NOUN	NN	Number=Sing	51	nmod	_	_
+55	,	,	PUNCT	,	_	57	punct	_	_
+56	and	and	CCONJ	CC	_	57	cc	_	_
+57	rest	rest	VERB	VB	VerbForm=Inf	49	conj	_	_
+58	our	our	PRON	PRP$	Number=Plur|Person=1|Poss=Yes|PronType=Prs	59	nmod:poss	_	_
+59	souls	soul	NOUN	NNS	Number=Plur	57	obj	_	_
+60	in	in	ADP	IN	_	62	case	_	_
+61	the	the	DET	DT	Definite=Def|PronType=Art	62	det	_	_
+62	kingdom	kingdom	NOUN	NN	Number=Sing	57	obl	_	_
+63	of	of	ADP	IN	_	64	case	_	_
+64	God	God	PROPN	NNP	Number=Sing	62	nmod	_	_
+65	.	.	PUNCT	.	_	14	punct	_	_
+
+# text = And now I write somewhat concerning the sufferings of this people.
+# sent_id = 133
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	write	write	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	somewhat	somewhat	ADV	RB	_	4	advmod	_	_
+6	concerning	concerning	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	sufferings	suffering	NOUN	NNS	Number=Plur	4	obl	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	this	this	DET	DT	Number=Sing|PronType=Dem	11	det	_	_
+11	people	people	NOUN	NN	Number=Sing	8	nmod	_	_
+12	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = For according to the knowledge which I have received from Amoron, behold, the Lamanites have many prisoners, which they took from the tower of Sherrizah; and there were men, women, and children.
+# sent_id = 134
+# llm_note = "according to the knowledge which I have received" = PP advcl + rel; "Amoron" = PROPN; "Sherrizah" = PROPN; existential "there were men, women, and children" = three conj nsubj
+1	For	for	ADV	RB	_	17	advmod	_	_
+2	according	according	ADP	IN	_	5	case	_	_
+3	to	to	ADP	IN	_	5	case	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	knowledge	knowledge	NOUN	NN	Number=Sing	17	obl	_	_
+6	which	which	PRON	WDT	PronType=Rel	9	obj	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+8	have	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	received	receive	VERB	VBN	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+10	from	from	ADP	IN	_	11	case	_	_
+11	Amoron	Amoron	PROPN	NNP	Number=Sing	9	obl	_	_
+12	,	,	PUNCT	,	_	13	punct	_	_
+13	behold	behold	INTJ	UH	_	17	discourse	_	_
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	Lamanites	Lamanites	PROPN	NNPS	Number=Plur	17	nsubj	_	_
+17	have	have	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
+18	many	many	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	prisoners	prisoner	NOUN	NNS	Number=Plur	17	obj	_	_
+20	,	,	PUNCT	,	_	23	punct	_	_
+21	which	which	PRON	WDT	PronType=Rel	23	obj	_	_
+22	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	_
+23	took	take	VERB	VBD	Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	19	acl:relcl	_	_
+24	from	from	ADP	IN	_	27	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+26	tower	tower	NOUN	NN	Number=Sing	23	obl	_	_
+27	of	of	ADP	IN	_	28	case	_	_
+28	Sherrizah	Sherrizah	PROPN	NNP	Number=Sing	26	nmod	_	_
+29	;	;	PUNCT	:	_	32	punct	_	_
+30	and	and	CCONJ	CC	_	32	cc	_	_
+31	there	there	ADV	EX	PronType=Dem	32	expl	_	_
+32	were	be	VERB	VBD	Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	17	conj	_	_
+33	men	man	NOUN	NNS	Number=Plur	32	nsubj	_	_
+34	,	,	PUNCT	,	_	35	punct	_	_
+35	women	woman	NOUN	NNS	Number=Plur	33	conj	_	_
+36	,	,	PUNCT	,	_	37	punct	_	_
+37	and	and	CCONJ	CC	_	38	cc	_	_
+38	children	child	NOUN	NNS	Number=Plur	33	conj	_	_
+39	.	.	PUNCT	.	_	17	punct	_	_
+

@@ -1,0 +1,837 @@
+# text = Yea, there are many who do say:
+# sent_id = 1275
+1	Yea	yea	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	there	there	PRON	EX	_	4	expl	_	_
+4	are	be	VERB	VBP	Number=Plur|Person=3|Tense=Pres	0	root	_	_
+5	many	many	PRON	NN	_	4	nsubj	_	_
+6	who	who	PRON	WP	_	8	nsubj	_	_
+7	do	do	AUX	VBP	Number=Plur|Person=3|Tense=Pres	8	aux	_	_
+8	say	say	VERB	VB	VerbForm=Inf	5	acl:relcl	_	_
+9	:	:	PUNCT	:	_	8	punct	_	_
+
+# text = If thou wilt show unto us a sign from heaven, then we shall know of a surety; then we shall believe.
+# sent_id = 1276
+1	If	if	SCONJ	IN	_	4	mark	_	_
+2	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	4	nsubj	_	_
+3	wilt	will	AUX	MD	_	4	aux	_	_
+4	show	show	VERB	VB	VerbForm=Inf	15	advcl	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1	4	obl	_	_
+7	a	a	DET	DT	_	8	det	_	_
+8	sign	sign	NOUN	NN	Number=Sing	4	obj	_	_
+9	from	from	ADP	IN	_	10	case	_	_
+10	heaven	heaven	NOUN	NN	Number=Sing	8	nmod	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	then	then	ADV	RB	_	15	advmod	_	_
+13	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	15	nsubj	_	_
+14	shall	shall	AUX	MD	_	15	aux	_	_
+15	know	know	VERB	VB	VerbForm=Inf	0	root	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	a	a	DET	DT	_	18	det	_	_
+18	surety	surety	NOUN	NN	Number=Sing	15	obl	_	_
+19	;	;	PUNCT	:	_	23	punct	_	_
+20	then	then	ADV	RB	_	23	advmod	_	_
+21	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	23	nsubj	_	_
+22	shall	shall	AUX	MD	_	23	aux	_	_
+23	believe	believe	VERB	VB	VerbForm=Inf	15	conj	_	_
+24	.	.	PUNCT	.	_	15	punct	_	_
+
+# text = Now I ask, is this faith?
+# sent_id = 1277
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	ask	ask	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	is	be	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	7	cop	_	_
+6	this	this	PRON	DT	_	7	nsubj	_	_
+7	faith	faith	NOUN	NN	Number=Sing	3	ccomp	_	_
+8	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Behold, I say unto you, Nay; for if a man knoweth a thing he hath no cause to believe, for he knoweth it.
+# sent_id = 1278
+# llm_note = "Nay" is INTJ / discourse response. "hath no cause to believe" = has no cause/reason, "cause" is obj of "hath", "to believe" is acl of "cause".
+1	Behold	behold	INTJ	UH	_	3	discourse	_	_
+2	,	,	PUNCT	,	_	3	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	4	obl	_	_
+7	,	,	PUNCT	,	_	4	punct	_	_
+8	Nay	nay	INTJ	UH	_	4	discourse	_	_
+9	;	;	PUNCT	:	_	18	punct	_	_
+10	for	for	SCONJ	IN	_	18	mark	_	_
+11	if	if	SCONJ	IN	_	14	mark	_	_
+12	a	a	DET	DT	_	13	det	_	_
+13	man	man	NOUN	NN	Number=Sing	14	nsubj	_	_
+14	knoweth	know	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	18	advcl	_	_
+15	a	a	DET	DT	_	16	det	_	_
+16	thing	thing	NOUN	NN	Number=Sing	14	obj	_	_
+17	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	18	nsubj	_	_
+18	hath	have	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	4	advcl	_	_
+19	no	no	DET	DT	_	20	det	_	_
+20	cause	cause	NOUN	NN	Number=Sing	18	obj	_	_
+21	to	to	PART	TO	_	22	mark	_	_
+22	believe	believe	VERB	VB	VerbForm=Inf	20	acl	_	_
+23	,	,	PUNCT	,	_	26	punct	_	_
+24	for	for	SCONJ	IN	_	26	mark	_	_
+25	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	26	nsubj	_	_
+26	knoweth	know	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	18	advcl	_	_
+27	it	it	PRON	PRP	Case=Acc|Number=Sing|Person=3	26	obj	_	_
+28	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And now, how much more cursed is he that knoweth the will of God and doeth it not, than he that only believeth, or only hath cause to believe, and falleth into transgression?
+# sent_id = 1279
+# llm_note = Exclamatory/rhetorical "how much more cursed is he". Copular inversion: "cursed" is xcomp. "than he that..." is comparative obl.
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	now	now	ADV	RB	_	8	advmod	_	_
+3	,	,	PUNCT	,	_	8	punct	_	_
+4	how	how	ADV	WRB	_	5	advmod	_	_
+5	much	much	ADV	RB	_	7	advmod	_	_
+6	more	more	ADV	RBR	_	7	advmod	_	_
+7	cursed	cursed	ADJ	JJ	_	8	xcomp	_	_
+8	is	be	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	0	root	_	_
+9	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	8	nsubj	_	_
+10	that	that	PRON	WDT	_	11	nsubj	_	_
+11	knoweth	know	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	9	acl:relcl	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	will	will	NOUN	NN	Number=Sing	11	obj	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	God	God	PROPN	NNP	_	13	nmod	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	doeth	do	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	11	conj	_	_
+18	it	it	PRON	PRP	Case=Acc|Number=Sing|Person=3	17	obj	_	_
+19	not	not	PART	RB	_	17	advmod	_	_
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	than	than	ADP	IN	_	22	case	_	_
+22	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	7	obl	_	_
+23	that	that	PRON	WDT	_	25	nsubj	_	_
+24	only	only	ADV	RB	_	25	advmod	_	_
+25	believeth	believe	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	22	acl:relcl	_	_
+26	,	,	PUNCT	,	_	30	punct	_	_
+27	or	or	CCONJ	CC	_	30	cc	_	_
+28	only	only	ADV	RB	_	30	advmod	_	_
+29	hath	have	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	30	aux	_	_
+30	cause	cause	NOUN	NN	Number=Sing	25	conj	_	_
+31	to	to	PART	TO	_	32	mark	_	_
+32	believe	believe	VERB	VB	VerbForm=Inf	30	acl	_	_
+33	,	,	PUNCT	,	_	35	punct	_	_
+34	and	and	CCONJ	CC	_	35	cc	_	_
+35	falleth	fall	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	25	conj	_	_
+36	into	into	ADP	IN	_	37	case	_	_
+37	transgression	transgression	NOUN	NN	Number=Sing	35	obl	_	_
+38	?	?	PUNCT	.	_	8	punct	_	_
+
+# text = Now of this thing ye must judge.
+# sent_id = 1280
+1	Now	now	ADV	RB	_	7	advmod	_	_
+2	of	of	ADP	IN	_	4	case	_	_
+3	this	this	DET	DT	_	4	det	_	_
+4	thing	thing	NOUN	NN	Number=Sing	7	obl	_	_
+5	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	7	nsubj	_	_
+6	must	must	AUX	MD	_	7	aux	_	_
+7	judge	judge	VERB	VB	VerbForm=Inf	0	root	_	_
+8	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = Behold, I say unto you that it is on the one hand even as it is on the other; and it shall be unto every man according to his work.
+# sent_id = 1281
+# llm_note = "on the one hand even as it is on the other" — correlative comparison. "even as" is SCONJ comparative.
+1	Behold	behold	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	4	obl	_	_
+7	that	that	SCONJ	IN	_	9	mark	_	_
+8	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	9	nsubj	_	_
+9	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	4	ccomp	_	_
+10	on	on	ADP	IN	_	13	case	_	_
+11	the	the	DET	DT	_	13	det	_	_
+12	one	one	NUM	CD	_	13	nummod	_	_
+13	hand	hand	NOUN	NN	Number=Sing	9	obl	_	_
+14	even	even	ADV	RB	_	15	advmod	_	_
+15	as	as	SCONJ	IN	_	17	mark	_	_
+16	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	17	nsubj	_	_
+17	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	9	advcl	_	_
+18	on	on	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	other	other	PRON	DT	_	17	obl	_	_
+21	;	;	PUNCT	:	_	25	punct	_	_
+22	and	and	CCONJ	CC	_	25	cc	_	_
+23	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	25	nsubj	_	_
+24	shall	shall	AUX	MD	_	25	aux	_	_
+25	be	be	VERB	VB	VerbForm=Inf	9	conj	_	_
+26	unto	unto	ADP	IN	_	29	case	_	_
+27	every	every	DET	DT	_	29	det	_	_
+28	man	man	NOUN	NN	Number=Sing	29	compound	_	_
+29	according	according	ADP	IN	_	25	obl	_	_
+30	to	to	ADP	IN	_	29	fixed	_	_
+31	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	32	nmod:poss	_	_
+32	work	work	NOUN	NN	Number=Sing	29	nmod	_	_
+33	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And now as I said concerning faith-- faith is not to have a perfect knowledge of things; therefore if ye have faith ye hope for things which are not seen, which are true.
+# sent_id = 1282
+# llm_note = "faith is not to have a perfect knowledge" = copular with infinitive xcomp. Two coordinate relative clauses on "things" (which are not seen / which are true).
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	now	now	ADV	RB	_	10	advmod	_	_
+3	as	as	SCONJ	IN	_	5	mark	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	5	nsubj	_	_
+5	said	say	VERB	VBD	Tense=Past	10	advcl	_	_
+6	concerning	concerning	ADP	IN	_	7	case	_	_
+7	faith	faith	NOUN	NN	Number=Sing	5	obl	_	_
+8	--	--	PUNCT	:	_	10	punct	_	_
+9	faith	faith	NOUN	NN	Number=Sing	10	nsubj	_	_
+10	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	0	root	_	_
+11	not	not	PART	RB	_	13	advmod	_	_
+12	to	to	PART	TO	_	13	mark	_	_
+13	have	have	VERB	VB	VerbForm=Inf	10	xcomp	_	_
+14	a	a	DET	DT	_	16	det	_	_
+15	perfect	perfect	ADJ	JJ	_	16	amod	_	_
+16	knowledge	knowledge	NOUN	NN	Number=Sing	13	obj	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	things	thing	NOUN	NNS	Number=Plur	16	nmod	_	_
+19	;	;	PUNCT	:	_	26	punct	_	_
+20	therefore	therefore	ADV	RB	_	26	advmod	_	_
+21	if	if	SCONJ	IN	_	24	mark	_	_
+22	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	24	nsubj	_	_
+23	have	have	VERB	VBP	Number=Plur|Person=2|Tense=Pres	26	advcl	_	_
+24	faith	faith	NOUN	NN	Number=Sing	23	obj	_	_
+25	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	26	nsubj	_	_
+26	hope	hope	VERB	VBP	Number=Plur|Person=2|Tense=Pres	10	conj	_	_
+27	for	for	ADP	IN	_	28	case	_	_
+28	things	thing	NOUN	NNS	Number=Plur	26	obl	_	_
+29	which	which	PRON	WDT	_	32	nsubj:pass	_	_
+30	are	be	AUX	VBP	Number=Plur|Person=3|Tense=Pres	32	aux:pass	_	_
+31	not	not	PART	RB	_	32	advmod	_	_
+32	seen	see	VERB	VBN	VerbForm=Part	28	acl:relcl	_	_
+33	,	,	PUNCT	,	_	36	punct	_	_
+34	which	which	PRON	WDT	_	35	nsubj	_	_
+35	are	be	VERB	VBP	Number=Plur|Person=3|Tense=Pres	28	acl:relcl	_	_
+36	true	true	ADJ	JJ	_	35	xcomp	_	_
+37	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And now, behold, I say unto you, and I would that ye should remember, that God is merciful unto all who believe on his name; therefore he desireth, in the first place, that ye should believe, yea, even on his word.
+# sent_id = 1283
+# llm_note = Two coordinate reporting clauses: "I say unto you" and "I would that ye should remember". Parenthetical "in the first place" is obl of "desireth".
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	now	now	ADV	RB	_	7	advmod	_	_
+3	,	,	PUNCT	,	_	7	punct	_	_
+4	behold	behold	INTJ	UH	_	7	discourse	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+7	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	7	obl	_	_
+10	,	,	PUNCT	,	_	13	punct	_	_
+11	and	and	CCONJ	CC	_	13	cc	_	_
+12	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	13	nsubj	_	_
+13	would	would	VERB	MD	_	7	conj	_	_
+14	that	that	SCONJ	IN	_	17	mark	_	_
+15	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	17	nsubj	_	_
+16	should	should	AUX	MD	_	17	aux	_	_
+17	remember	remember	VERB	VB	VerbForm=Inf	13	ccomp	_	_
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	that	that	SCONJ	IN	_	21	mark	_	_
+20	God	God	PROPN	NNP	_	21	nsubj	_	_
+21	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	17	ccomp	_	_
+22	merciful	merciful	ADJ	JJ	_	21	xcomp	_	_
+23	unto	unto	ADP	IN	_	24	case	_	_
+24	all	all	PRON	DT	_	21	obl	_	_
+25	who	who	PRON	WP	_	26	nsubj	_	_
+26	believe	believe	VERB	VBP	Number=Plur|Person=3|Tense=Pres	24	acl:relcl	_	_
+27	on	on	ADP	IN	_	29	case	_	_
+28	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	29	nmod:poss	_	_
+29	name	name	NOUN	NN	Number=Sing	26	obl	_	_
+30	;	;	PUNCT	:	_	33	punct	_	_
+31	therefore	therefore	ADV	RB	_	33	advmod	_	_
+32	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	33	nsubj	_	_
+33	desireth	desire	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	7	conj	_	_
+34	,	,	PUNCT	,	_	38	punct	_	_
+35	in	in	ADP	IN	_	38	case	_	_
+36	the	the	DET	DT	_	38	det	_	_
+37	first	first	ADJ	JJ	_	38	amod	_	_
+38	place	place	NOUN	NN	Number=Sing	33	obl	_	_
+39	,	,	PUNCT	,	_	43	punct	_	_
+40	that	that	SCONJ	IN	_	43	mark	_	_
+41	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	43	nsubj	_	_
+42	should	should	AUX	MD	_	43	aux	_	_
+43	believe	believe	VERB	VB	VerbForm=Inf	33	ccomp	_	_
+44	,	,	PUNCT	,	_	47	punct	_	_
+45	yea	yea	INTJ	UH	_	47	discourse	_	_
+46	,	,	PUNCT	,	_	45	punct	_	_
+47	even	even	ADV	RB	_	48	advmod	_	_
+48	on	on	ADP	IN	_	50	case	_	_
+49	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	50	nmod:poss	_	_
+50	word	word	NOUN	NN	Number=Sing	43	obl	_	_
+51	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And now, he imparteth his word by angels unto men, yea, not only men but women also.
+# sent_id = 1284
+# llm_note = "not only men but women also" = correlative coordination, "men" and "women" are conj objects of "unto".
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	now	now	ADV	RB	_	5	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	5	nsubj	_	_
+5	imparteth	impart	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	0	root	_	_
+6	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	7	nmod:poss	_	_
+7	word	word	NOUN	NN	Number=Sing	5	obj	_	_
+8	by	by	ADP	IN	_	9	case	_	_
+9	angels	angel	NOUN	NNS	Number=Plur	5	obl	_	_
+10	unto	unto	ADP	IN	_	11	case	_	_
+11	men	man	NOUN	NNS	Number=Plur	5	obl	_	_
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	yea	yea	INTJ	UH	_	5	discourse	_	_
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	not	not	PART	RB	_	17	advmod	_	_
+16	only	only	ADV	RB	_	15	fixed	_	_
+17	men	man	NOUN	NNS	Number=Plur	11	conj	_	_
+18	but	but	CCONJ	CC	_	19	cc	_	_
+19	women	woman	NOUN	NNS	Number=Plur	17	conj	_	_
+20	also	also	ADV	RB	_	19	advmod	_	_
+21	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Now this is not all; little children do have words given unto them many times, which confound the wise and the learned.
+# sent_id = 1285
+# llm_note = "words given unto them" = NP with participial postmodifier. "which confound" is relative clause modifying "words".
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	this	this	PRON	DT	_	3	nsubj	_	_
+3	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	0	root	_	_
+4	not	not	PART	RB	_	5	advmod	_	_
+5	all	all	PRON	DT	_	3	xcomp	_	_
+6	;	;	PUNCT	:	_	10	punct	_	_
+7	little	little	ADJ	JJ	_	8	amod	_	_
+8	children	child	NOUN	NNS	Number=Plur	10	nsubj	_	_
+9	do	do	AUX	VBP	Number=Plur|Person=3|Tense=Pres	10	aux	_	_
+10	have	have	VERB	VB	VerbForm=Inf	3	conj	_	_
+11	words	word	NOUN	NNS	Number=Plur	10	obj	_	_
+12	given	give	VERB	VBN	VerbForm=Part	11	acl	_	_
+13	unto	unto	ADP	IN	_	14	case	_	_
+14	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	12	obl	_	_
+15	many	many	ADJ	JJ	_	16	amod	_	_
+16	times	time	NOUN	NNS	Number=Plur	12	obl	_	_
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	which	which	PRON	WDT	_	19	nsubj	_	_
+19	confound	confound	VERB	VBP	Number=Plur|Person=3|Tense=Pres	11	acl:relcl	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	wise	wise	NOUN	NN	Number=Sing	19	obj	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	learned	learned	NOUN	NN	Number=Sing	21	conj	_	_
+25	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now, my beloved brethren, as ye have desired to know of me what ye shall do because ye are afflicted and cast out-- now I do not desire that ye should suppose that I mean to judge you only according to that which is true--
+# sent_id = 1286
+# llm_note = "as ye have desired to know" = advcl of "desire". "my beloved brethren" is vocative. Two nested "that" clauses under "desire" and "suppose".
+1	And	and	CCONJ	CC	_	32	cc	_	_
+2	now	now	ADV	RB	_	32	advmod	_	_
+3	,	,	PUNCT	,	_	32	punct	_	_
+4	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	6	nmod:poss	_	_
+5	beloved	beloved	ADJ	JJ	_	6	amod	_	_
+6	brethren	brethren	NOUN	NNS	Number=Plur	32	vocative	_	_
+7	,	,	PUNCT	,	_	32	punct	_	_
+8	as	as	SCONJ	IN	_	11	mark	_	_
+9	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	11	nsubj	_	_
+10	have	have	AUX	VBP	Number=Plur|Person=2|Tense=Pres	11	aux	_	_
+11	desired	desire	VERB	VBN	VerbForm=Part	32	advcl	_	_
+12	to	to	PART	TO	_	13	mark	_	_
+13	know	know	VERB	VB	VerbForm=Inf	11	xcomp	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	13	obl	_	_
+16	what	what	PRON	WP	_	19	obj	_	_
+17	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	19	nsubj	_	_
+18	shall	shall	AUX	MD	_	19	aux	_	_
+19	do	do	VERB	VB	VerbForm=Inf	13	ccomp	_	_
+20	because	because	SCONJ	IN	_	23	mark	_	_
+21	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	23	nsubj:pass	_	_
+22	are	be	AUX	VBP	Number=Plur|Person=2|Tense=Pres	23	aux:pass	_	_
+23	afflicted	afflict	VERB	VBN	VerbForm=Part	19	advcl	_	_
+24	and	and	CCONJ	CC	_	25	cc	_	_
+25	cast	cast	VERB	VBN	VerbForm=Part	23	conj	_	_
+26	out	out	ADP	RP	_	25	compound:prt	_	_
+27	--	--	PUNCT	:	_	32	punct	_	_
+28	now	now	ADV	RB	_	32	advmod	_	_
+29	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	32	nsubj	_	_
+30	do	do	AUX	VBP	Number=Sing|Person=1|Tense=Pres	32	aux	_	_
+31	not	not	PART	RB	_	32	advmod	_	_
+32	desire	desire	VERB	VB	VerbForm=Inf	0	root	_	_
+33	that	that	SCONJ	IN	_	36	mark	_	_
+34	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	36	nsubj	_	_
+35	should	should	AUX	MD	_	36	aux	_	_
+36	suppose	suppose	VERB	VB	VerbForm=Inf	32	ccomp	_	_
+37	that	that	SCONJ	IN	_	39	mark	_	_
+38	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	39	nsubj	_	_
+39	mean	mean	VERB	VBP	Number=Sing|Person=1|Tense=Pres	36	ccomp	_	_
+40	to	to	PART	TO	_	41	mark	_	_
+41	judge	judge	VERB	VB	VerbForm=Inf	39	xcomp	_	_
+42	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	41	obj	_	_
+43	only	only	ADV	RB	_	44	advmod	_	_
+44	according	according	ADP	IN	_	47	case	_	_
+45	to	to	ADP	IN	_	44	fixed	_	_
+46	that	that	PRON	DT	_	47	nmod	_	_
+47	which	which	PRON	WDT	_	49	nsubj	_	_
+48	is	be	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	49	cop	_	_
+49	true	true	ADJ	JJ	_	41	obl	_	_
+50	--	--	PUNCT	:	_	32	punct	_	_
+
+# text = For I do not mean that ye all of you have been compelled to humble yourselves; for I verily believe that there are some among you who would humble themselves, let them be in whatsoever circumstances they might.
+# sent_id = 1287
+# llm_note = "ye all of you" = emphatic subject; "all of you" is appositive/floating quantifier to "ye". "let them be in whatsoever circumstances" = concessive subjunctive adjunct.
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	5	nsubj	_	_
+3	do	do	AUX	VBP	Number=Sing|Person=1|Tense=Pres	5	aux	_	_
+4	not	not	PART	RB	_	5	advmod	_	_
+5	mean	mean	VERB	VB	VerbForm=Inf	0	root	_	_
+6	that	that	SCONJ	IN	_	13	mark	_	_
+7	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	13	nsubj	_	_
+8	all	all	DET	PDT	_	10	det:predet	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	7	appos	_	_
+11	have	have	AUX	VBP	Number=Plur|Person=2|Tense=Pres	13	aux	_	_
+12	been	be	AUX	VBN	VerbForm=Part	13	aux:pass	_	_
+13	compelled	compel	VERB	VBN	VerbForm=Part	5	ccomp	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	humble	humble	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+16	yourselves	yourselves	PRON	PRP	Case=Acc|Number=Plur|Person=2	15	obj	_	_
+17	;	;	PUNCT	:	_	21	punct	_	_
+18	for	for	SCONJ	IN	_	21	mark	_	_
+19	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	21	nsubj	_	_
+20	verily	verily	ADV	RB	_	21	advmod	_	_
+21	believe	believe	VERB	VBP	Number=Sing|Person=1|Tense=Pres	5	conj	_	_
+22	that	that	SCONJ	IN	_	24	mark	_	_
+23	there	there	PRON	EX	_	24	expl	_	_
+24	are	be	VERB	VBP	Number=Plur|Person=3|Tense=Pres	21	ccomp	_	_
+25	some	some	PRON	DT	_	24	nsubj	_	_
+26	among	among	ADP	IN	_	27	case	_	_
+27	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	25	nmod	_	_
+28	who	who	PRON	WP	_	30	nsubj	_	_
+29	would	would	AUX	MD	_	30	aux	_	_
+30	humble	humble	VERB	VB	VerbForm=Inf	25	acl:relcl	_	_
+31	themselves	themselves	PRON	PRP	Case=Acc|Number=Plur|Person=3	30	obj	_	_
+32	,	,	PUNCT	,	_	35	punct	_	_
+33	let	let	VERB	VB	VerbForm=Inf	30	advcl	_	_
+34	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	35	nsubj	_	_
+35	be	be	VERB	VB	VerbForm=Inf	33	ccomp	_	_
+36	in	in	ADP	IN	_	38	case	_	_
+37	whatsoever	whatsoever	DET	WDT	_	38	det	_	_
+38	circumstances	circumstance	NOUN	NNS	Number=Plur	35	obl	_	_
+39	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	40	nsubj	_	_
+40	might	might	AUX	MD	_	35	advcl	_	_
+41	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Now, as I said concerning faith--that it was not a perfect knowledge-- even so it is with my words.
+# sent_id = 1288
+# llm_note = Appositive dash-clause "that it was not a perfect knowledge" restates "faith". Main clause "even so it is with my words" = correlative comparison.
+1	Now	now	ADV	RB	_	20	advmod	_	_
+2	,	,	PUNCT	,	_	20	punct	_	_
+3	as	as	SCONJ	IN	_	5	mark	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	5	nsubj	_	_
+5	said	say	VERB	VBD	Tense=Past	20	advcl	_	_
+6	concerning	concerning	ADP	IN	_	7	case	_	_
+7	faith	faith	NOUN	NN	Number=Sing	5	obl	_	_
+8	--	--	PUNCT	:	_	11	punct	_	_
+9	that	that	SCONJ	IN	_	11	mark	_	_
+10	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	11	nsubj	_	_
+11	was	be	VERB	VBD	Tense=Past	5	parataxis	_	_
+12	not	not	PART	RB	_	15	advmod	_	_
+13	a	a	DET	DT	_	15	det	_	_
+14	perfect	perfect	ADJ	JJ	_	15	amod	_	_
+15	knowledge	knowledge	NOUN	NN	Number=Sing	11	xcomp	_	_
+16	--	--	PUNCT	:	_	20	punct	_	_
+17	even	even	ADV	RB	_	18	advmod	_	_
+18	so	so	ADV	RB	_	20	advmod	_	_
+19	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	20	nsubj	_	_
+20	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	0	root	_	_
+21	with	with	ADP	IN	_	23	case	_	_
+22	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	23	nmod:poss	_	_
+23	words	word	NOUN	NNS	Number=Plur	20	obl	_	_
+24	.	.	PUNCT	.	_	20	punct	_	_
+
+# text = Ye cannot know of their surety at first, unto perfection, any more than faith is a perfect knowledge.
+# sent_id = 1289
+# llm_note = MWT "cannot" at 2-3. "any more than faith is a perfect knowledge" = comparative advcl.
+1	Ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	4	nsubj	_	_
+2-3	cannot	_	_	_	_	_	_	_	_
+2	can	can	AUX	MD	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	know	know	VERB	VB	VerbForm=Inf	0	root	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	7	nmod:poss	_	_
+7	surety	surety	NOUN	NN	Number=Sing	4	obl	_	_
+8	at	at	ADP	IN	_	9	case	_	_
+9	first	first	ADV	RB	_	4	obl	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	unto	unto	ADP	IN	_	12	case	_	_
+12	perfection	perfection	NOUN	NN	Number=Sing	4	obl	_	_
+13	,	,	PUNCT	,	_	15	punct	_	_
+14	any	any	ADV	RB	_	15	advmod	_	_
+15	more	more	ADV	RBR	_	4	advmod	_	_
+16	than	than	SCONJ	IN	_	18	mark	_	_
+17	faith	faith	NOUN	NN	Number=Sing	18	nsubj	_	_
+18	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	15	advcl	_	_
+19	a	a	DET	DT	_	21	det	_	_
+20	perfect	perfect	ADJ	JJ	_	21	amod	_	_
+21	knowledge	knowledge	NOUN	NN	Number=Sing	18	xcomp	_	_
+22	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = But behold, if ye will awake and arouse your faculties, even to an experiment upon my words, and exercise a particle of faith, yea, even if ye can no more than desire to believe, let this desire work in you, even until ye believe in a manner that ye can give place for a portion of my words.
+# sent_id = 1290
+# llm_note = Complex conditional. "awake and arouse" coordinated verbs under "will". "let this desire work" = imperative subjunctive. "even until ye believe" = advcl of "work".
+1	But	but	CCONJ	CC	_	44	cc	_	_
+2	behold	behold	INTJ	UH	_	44	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	if	if	SCONJ	IN	_	7	mark	_	_
+5	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	7	nsubj	_	_
+6	will	will	AUX	MD	_	7	aux	_	_
+7	awake	awake	VERB	VB	VerbForm=Inf	44	advcl	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	arouse	arouse	VERB	VB	VerbForm=Inf	7	conj	_	_
+10	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	11	nmod:poss	_	_
+11	faculties	faculty	NOUN	NNS	Number=Plur	9	obj	_	_
+12	,	,	PUNCT	,	_	16	punct	_	_
+13	even	even	ADV	RB	_	14	advmod	_	_
+14	to	to	ADP	IN	_	16	case	_	_
+15	an	a	DET	DT	_	16	det	_	_
+16	experiment	experiment	NOUN	NN	Number=Sing	9	obl	_	_
+17	upon	upon	ADP	IN	_	19	case	_	_
+18	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	19	nmod:poss	_	_
+19	words	word	NOUN	NNS	Number=Plur	16	nmod	_	_
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	and	and	CCONJ	CC	_	22	cc	_	_
+22	exercise	exercise	VERB	VB	VerbForm=Inf	7	conj	_	_
+23	a	a	DET	DT	_	25	det	_	_
+24	particle	particle	NOUN	NN	Number=Sing	25	compound	_	_
+25	of	of	ADP	IN	_	22	obj	_	_
+26	faith	faith	NOUN	NN	Number=Sing	25	nmod	_	_
+27	,	,	PUNCT	,	_	28	punct	_	_
+28	yea	yea	INTJ	UH	_	44	discourse	_	_
+29	,	,	PUNCT	,	_	28	punct	_	_
+30	even	even	ADV	RB	_	31	advmod	_	_
+31	if	if	SCONJ	IN	_	37	mark	_	_
+32	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	37	nsubj	_	_
+33	can	can	AUX	MD	_	37	aux	_	_
+34	no	no	ADV	RB	_	35	advmod	_	_
+35	more	more	ADV	RBR	_	37	advmod	_	_
+36	than	than	SCONJ	IN	_	37	mark	_	_
+37	desire	desire	VERB	VB	VerbForm=Inf	7	advcl	_	_
+38	to	to	PART	TO	_	39	mark	_	_
+39	believe	believe	VERB	VB	VerbForm=Inf	37	xcomp	_	_
+40	,	,	PUNCT	,	_	44	punct	_	_
+41	let	let	VERB	VB	VerbForm=Inf	44	parataxis	_	_
+42	this	this	DET	DT	_	43	det	_	_
+43	desire	desire	NOUN	NN	Number=Sing	44	nsubj	_	_
+44	work	work	VERB	VBP	Number=Sing|Person=3|Tense=Pres	0	root	_	_
+45	in	in	ADP	IN	_	46	case	_	_
+46	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	44	obl	_	_
+47	,	,	PUNCT	,	_	49	punct	_	_
+48	even	even	ADV	RB	_	49	advmod	_	_
+49	until	until	SCONJ	IN	_	51	mark	_	_
+50	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	51	nsubj	_	_
+51	believe	believe	VERB	VBP	Number=Plur|Person=2|Tense=Pres	44	advcl	_	_
+52	in	in	ADP	IN	_	54	case	_	_
+53	a	a	DET	DT	_	54	det	_	_
+54	manner	manner	NOUN	NN	Number=Sing	51	obl	_	_
+55	that	that	SCONJ	IN	_	58	mark	_	_
+56	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	58	nsubj	_	_
+57	can	can	AUX	MD	_	58	aux	_	_
+58	give	give	VERB	VB	VerbForm=Inf	54	acl	_	_
+59	place	place	NOUN	NN	Number=Sing	58	obj	_	_
+60	for	for	ADP	IN	_	62	case	_	_
+61	a	a	DET	DT	_	62	det	_	_
+62	portion	portion	NOUN	NN	Number=Sing	58	obl	_	_
+63	of	of	ADP	IN	_	65	case	_	_
+64	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	65	nmod:poss	_	_
+65	words	word	NOUN	NNS	Number=Plur	62	nmod	_	_
+66	.	.	PUNCT	.	_	44	punct	_	_
+
+# text = Now, we will compare the word unto a seed.
+# sent_id = 1291
+1	Now	now	ADV	RB	_	5	advmod	_	_
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	5	nsubj	_	_
+4	will	will	AUX	MD	_	5	aux	_	_
+5	compare	compare	VERB	VB	VerbForm=Inf	0	root	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	word	word	NOUN	NN	Number=Sing	5	obj	_	_
+8	unto	unto	ADP	IN	_	10	case	_	_
+9	a	a	DET	DT	_	10	det	_	_
+10	seed	seed	NOUN	NN	Number=Sing	5	obl	_	_
+11	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Now, if ye give place, that a seed may be planted in your heart, behold, if it be a true seed, or a good seed, if ye do not cast it out by your unbelief, that ye will resist the Spirit of the Lord, behold, it will begin to swell within your breasts; and when you feel these swelling motions, ye will begin to say within yourselves--
+# sent_id = 1292
+# llm_note = Complex conditional chain. Main clause "it will begin to swell". "that ye will resist..." = purpose/result advcl of casting-out clause. Mid-sentence "behold" tokens are discourse markers.
+1	Now	now	ADV	RB	_	57	advmod	_	_
+2	,	,	PUNCT	,	_	57	punct	_	_
+3	if	if	SCONJ	IN	_	5	mark	_	_
+4	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	5	nsubj	_	_
+5	give	give	VERB	VBP	Number=Plur|Person=2|Tense=Pres	57	advcl	_	_
+6	place	place	NOUN	NN	Number=Sing	5	obj	_	_
+7	,	,	PUNCT	,	_	13	punct	_	_
+8	that	that	SCONJ	IN	_	13	mark	_	_
+9	a	a	DET	DT	_	10	det	_	_
+10	seed	seed	NOUN	NN	Number=Sing	13	nsubj:pass	_	_
+11	may	may	AUX	MD	_	13	aux	_	_
+12	be	be	AUX	VB	VerbForm=Inf	13	aux:pass	_	_
+13	planted	plant	VERB	VBN	VerbForm=Part	5	advcl	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	16	nmod:poss	_	_
+16	heart	heart	NOUN	NN	Number=Sing	13	obl	_	_
+17	,	,	PUNCT	,	_	18	punct	_	_
+18	behold	behold	INTJ	UH	_	57	discourse	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	if	if	SCONJ	IN	_	22	mark	_	_
+21	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	22	nsubj	_	_
+22	be	be	VERB	VBP	VerbForm=Inf	57	advcl	_	_
+23	a	a	DET	DT	_	25	det	_	_
+24	true	true	ADJ	JJ	_	25	amod	_	_
+25	seed	seed	NOUN	NN	Number=Sing	22	xcomp	_	_
+26	,	,	PUNCT	,	_	30	punct	_	_
+27	or	or	CCONJ	CC	_	30	cc	_	_
+28	a	a	DET	DT	_	30	det	_	_
+29	good	good	ADJ	JJ	_	30	amod	_	_
+30	seed	seed	NOUN	NN	Number=Sing	25	conj	_	_
+31	,	,	PUNCT	,	_	36	punct	_	_
+32	if	if	SCONJ	IN	_	36	mark	_	_
+33	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	36	nsubj	_	_
+34	do	do	AUX	VBP	Number=Plur|Person=2|Tense=Pres	36	aux	_	_
+35	not	not	PART	RB	_	36	advmod	_	_
+36	cast	cast	VERB	VB	VerbForm=Inf	57	advcl	_	_
+37	it	it	PRON	PRP	Case=Acc|Number=Sing|Person=3	36	obj	_	_
+38	out	out	ADP	RP	_	36	compound:prt	_	_
+39	by	by	ADP	IN	_	41	case	_	_
+40	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	41	nmod:poss	_	_
+41	unbelief	unbelief	NOUN	NN	Number=Sing	36	obl	_	_
+42	,	,	PUNCT	,	_	46	punct	_	_
+43	that	that	SCONJ	IN	_	46	mark	_	_
+44	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	46	nsubj	_	_
+45	will	will	AUX	MD	_	46	aux	_	_
+46	resist	resist	VERB	VB	VerbForm=Inf	36	advcl	_	_
+47	the	the	DET	DT	_	48	det	_	_
+48	Spirit	Spirit	PROPN	NNP	_	46	obj	_	_
+49	of	of	ADP	IN	_	51	case	_	_
+50	the	the	DET	DT	_	51	det	_	_
+51	Lord	Lord	PROPN	NNP	_	48	nmod	_	_
+52	,	,	PUNCT	,	_	53	punct	_	_
+53	behold	behold	INTJ	UH	_	57	discourse	_	_
+54	,	,	PUNCT	,	_	53	punct	_	_
+55	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	57	nsubj	_	_
+56	will	will	AUX	MD	_	57	aux	_	_
+57	begin	begin	VERB	VB	VerbForm=Inf	0	root	_	_
+58	to	to	PART	TO	_	59	mark	_	_
+59	swell	swell	VERB	VB	VerbForm=Inf	57	xcomp	_	_
+60	within	within	ADP	IN	_	62	case	_	_
+61	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	62	nmod:poss	_	_
+62	breasts	breast	NOUN	NNS	Number=Plur	59	obl	_	_
+63	;	;	PUNCT	:	_	74	punct	_	_
+64	and	and	CCONJ	CC	_	74	cc	_	_
+65	when	when	SCONJ	IN	_	67	mark	_	_
+66	you	you	PRON	PRP	Case=Nom|Number=Plur|Person=2	67	nsubj	_	_
+67	feel	feel	VERB	VBP	Number=Plur|Person=2|Tense=Pres	74	advcl	_	_
+68	these	this	DET	DT	_	70	det	_	_
+69	swelling	swelling	ADJ	JJ	_	70	amod	_	_
+70	motions	motion	NOUN	NNS	Number=Plur	67	obj	_	_
+71	,	,	PUNCT	,	_	74	punct	_	_
+72	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	74	nsubj	_	_
+73	will	will	AUX	MD	_	74	aux	_	_
+74	begin	begin	VERB	VB	VerbForm=Inf	57	conj	_	_
+75	to	to	PART	TO	_	76	mark	_	_
+76	say	say	VERB	VB	VerbForm=Inf	74	xcomp	_	_
+77	within	within	ADP	IN	_	78	case	_	_
+78	yourselves	yourselves	PRON	PRP	Case=Acc|Number=Plur|Person=2	76	obl	_	_
+79	--	--	PUNCT	:	_	76	punct	_	_
+
+# text = It must needs be that this is a good seed, or that the word is good, for it beginneth to enlarge my soul; yea, it beginneth to enlighten my understanding, yea, it beginneth to be delicious to me.
+# sent_id = 1293
+# llm_note = "must needs be that" = expletive/modal complex. "it" is expl of "be". Three parallel "it beginneth to" clauses are conj of root.
+1	It	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	4	expl	_	_
+2	must	must	AUX	MD	_	4	aux	_	_
+3	needs	needs	ADV	RB	_	4	advmod	_	_
+4	be	be	VERB	VB	VerbForm=Inf	0	root	_	_
+5	that	that	SCONJ	IN	_	7	mark	_	_
+6	this	this	PRON	DT	_	7	nsubj	_	_
+7	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	4	csubj	_	_
+8	a	a	DET	DT	_	10	det	_	_
+9	good	good	ADJ	JJ	_	10	amod	_	_
+10	seed	seed	NOUN	NN	Number=Sing	7	xcomp	_	_
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	or	or	CCONJ	CC	_	14	cc	_	_
+13	that	that	SCONJ	IN	_	15	mark	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	word	word	NOUN	NN	Number=Sing	16	nsubj	_	_
+16	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	7	conj	_	_
+17	good	good	ADJ	JJ	_	16	xcomp	_	_
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	for	for	SCONJ	IN	_	21	mark	_	_
+20	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	21	nsubj	_	_
+21	beginneth	begin	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	4	advcl	_	_
+22	to	to	PART	TO	_	23	mark	_	_
+23	enlarge	enlarge	VERB	VB	VerbForm=Inf	21	xcomp	_	_
+24	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	25	nmod:poss	_	_
+25	soul	soul	NOUN	NN	Number=Sing	23	obj	_	_
+26	;	;	PUNCT	:	_	30	punct	_	_
+27	yea	yea	INTJ	UH	_	30	discourse	_	_
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	30	nsubj	_	_
+30	beginneth	begin	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	4	conj	_	_
+31	to	to	PART	TO	_	32	mark	_	_
+32	enlighten	enlighten	VERB	VB	VerbForm=Inf	30	xcomp	_	_
+33	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	34	nmod:poss	_	_
+34	understanding	understanding	NOUN	NN	Number=Sing	32	obj	_	_
+35	,	,	PUNCT	,	_	39	punct	_	_
+36	yea	yea	INTJ	UH	_	39	discourse	_	_
+37	,	,	PUNCT	,	_	36	punct	_	_
+38	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	39	nsubj	_	_
+39	beginneth	begin	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	4	conj	_	_
+40	to	to	PART	TO	_	41	mark	_	_
+41	be	be	AUX	VB	VerbForm=Inf	42	cop	_	_
+42	delicious	delicious	ADJ	JJ	_	39	xcomp	_	_
+43	to	to	ADP	IN	_	44	case	_	_
+44	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	42	obl	_	_
+45	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Now behold, would not this increase your faith?
+# sent_id = 1294
+1	Now	now	ADV	RB	_	7	advmod	_	_
+2	behold	behold	INTJ	UH	_	7	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	would	would	AUX	MD	_	7	aux	_	_
+5	not	not	PART	RB	_	7	advmod	_	_
+6	this	this	PRON	DT	_	7	nsubj	_	_
+7	increase	increase	VERB	VB	VerbForm=Inf	0	root	_	_
+8	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	9	nmod:poss	_	_
+9	faith	faith	NOUN	NN	Number=Sing	7	obj	_	_
+10	?	?	PUNCT	.	_	7	punct	_	_
+
+# text = I say unto you, Yea; nevertheless it hath not grown up to a perfect knowledge.
+# sent_id = 1295
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	say	say	VERB	VBP	Number=Sing|Person=1|Tense=Pres	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	2	obl	_	_
+5	,	,	PUNCT	,	_	2	punct	_	_
+6	Yea	yea	INTJ	UH	_	2	discourse	_	_
+7	;	;	PUNCT	:	_	12	punct	_	_
+8	nevertheless	nevertheless	ADV	RB	_	12	advmod	_	_
+9	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	12	nsubj	_	_
+10	hath	have	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	12	aux	_	_
+11	not	not	PART	RB	_	12	advmod	_	_
+12	grown	grow	VERB	VBN	VerbForm=Part	2	parataxis	_	_
+13	up	up	ADP	RP	_	12	compound:prt	_	_
+14	to	to	ADP	IN	_	17	case	_	_
+15	a	a	DET	DT	_	17	det	_	_
+16	perfect	perfect	ADJ	JJ	_	17	amod	_	_
+17	knowledge	knowledge	NOUN	NN	Number=Sing	12	obl	_	_
+18	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = But behold, as the seed swelleth, and sprouteth, and beginneth to grow, then you must needs say that the seed is good; for behold it swelleth, and sprouteth, and beginneth to grow.
+# sent_id = 1296
+# llm_note = "as the seed swelleth, and sprouteth, and beginneth to grow" is advcl of "say". Three verbs coordinate. Second "behold" is INTJ discourse marker of explanatory clause.
+1	But	but	CCONJ	CC	_	21	cc	_	_
+2	behold	behold	INTJ	UH	_	21	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	as	as	SCONJ	IN	_	7	mark	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	seed	seed	NOUN	NN	Number=Sing	7	nsubj	_	_
+7	swelleth	swell	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	21	advcl	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	sprouteth	sprout	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	7	conj	_	_
+11	,	,	PUNCT	,	_	13	punct	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	beginneth	begin	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	7	conj	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	grow	grow	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+16	,	,	PUNCT	,	_	21	punct	_	_
+17	then	then	ADV	RB	_	21	advmod	_	_
+18	you	you	PRON	PRP	Case=Nom|Number=Plur|Person=2	21	nsubj	_	_
+19	must	must	AUX	MD	_	21	aux	_	_
+20	needs	needs	ADV	RB	_	21	advmod	_	_
+21	say	say	VERB	VB	VerbForm=Inf	0	root	_	_
+22	that	that	SCONJ	IN	_	25	mark	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	seed	seed	NOUN	NN	Number=Sing	25	nsubj	_	_
+25	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	21	ccomp	_	_
+26	good	good	ADJ	JJ	_	25	xcomp	_	_
+27	;	;	PUNCT	:	_	29	punct	_	_
+28	for	for	SCONJ	IN	_	29	mark	_	_
+29	behold	behold	INTJ	UH	_	31	discourse	_	_
+30	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	31	nsubj	_	_
+31	swelleth	swell	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	21	advcl	_	_
+32	,	,	PUNCT	,	_	34	punct	_	_
+33	and	and	CCONJ	CC	_	34	cc	_	_
+34	sprouteth	sprout	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	31	conj	_	_
+35	,	,	PUNCT	,	_	37	punct	_	_
+36	and	and	CCONJ	CC	_	37	cc	_	_
+37	beginneth	begin	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	31	conj	_	_
+38	to	to	PART	TO	_	39	mark	_	_
+39	grow	grow	VERB	VB	VerbForm=Inf	37	xcomp	_	_
+40	.	.	PUNCT	.	_	21	punct	_	_
+
+# text = And now, behold, will not this strengthen your faith?
+# sent_id = 1297
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	now	now	ADV	RB	_	9	advmod	_	_
+3	,	,	PUNCT	,	_	9	punct	_	_
+4	behold	behold	INTJ	UH	_	9	discourse	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	will	will	AUX	MD	_	9	aux	_	_
+7	not	not	PART	RB	_	9	advmod	_	_
+8	this	this	PRON	DT	_	9	nsubj	_	_
+9	strengthen	strengthen	VERB	VB	VerbForm=Inf	0	root	_	_
+10	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	11	nmod:poss	_	_
+11	faith	faith	NOUN	NN	Number=Sing	9	obj	_	_
+12	?	?	PUNCT	.	_	9	punct	_	_
+
+# text = Yea, it will strengthen your faith: for ye will say I know that this is a good seed; for behold it sprouteth and beginneth to grow.
+# sent_id = 1298
+# llm_note = "ye will say I know that this is a good seed" = indirect speech with embedded cognition verb ("I know") without complementizer. "say" ccomp of main; "know" is ccomp of "say"; "this is a good seed" is ccomp of "know".
+1	Yea	yea	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	5	nsubj	_	_
+4	will	will	AUX	MD	_	5	aux	_	_
+5	strengthen	strengthen	VERB	VB	VerbForm=Inf	0	root	_	_
+6	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	7	nmod:poss	_	_
+7	faith	faith	NOUN	NN	Number=Sing	5	obj	_	_
+8	:	:	PUNCT	:	_	5	punct	_	_
+9	for	for	SCONJ	IN	_	12	mark	_	_
+10	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	12	nsubj	_	_
+11	will	will	AUX	MD	_	12	aux	_	_
+12	say	say	VERB	VB	VerbForm=Inf	5	advcl	_	_
+13	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	14	nsubj	_	_
+14	know	know	VERB	VBP	Number=Sing|Person=1|Tense=Pres	12	ccomp	_	_
+15	that	that	SCONJ	IN	_	17	mark	_	_
+16	this	this	PRON	DT	_	17	nsubj	_	_
+17	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	14	ccomp	_	_
+18	a	a	DET	DT	_	20	det	_	_
+19	good	good	ADJ	JJ	_	20	amod	_	_
+20	seed	seed	NOUN	NN	Number=Sing	17	xcomp	_	_
+21	;	;	PUNCT	:	_	29	punct	_	_
+22	for	for	SCONJ	IN	_	29	mark	_	_
+23	behold	behold	INTJ	UH	_	25	discourse	_	_
+24	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	25	nsubj	_	_
+25	sprouteth	sprout	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	12	advcl	_	_
+26	and	and	CCONJ	CC	_	27	cc	_	_
+27	beginneth	begin	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	25	conj	_	_
+28	to	to	PART	TO	_	29	mark	_	_
+29	grow	grow	VERB	VB	VerbForm=Inf	27	xcomp	_	_
+30	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And now, behold, are ye sure that this is a good seed?
+# sent_id = 1299
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	now	now	ADV	RB	_	6	advmod	_	_
+3	,	,	PUNCT	,	_	6	punct	_	_
+4	behold	behold	INTJ	UH	_	6	discourse	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	are	be	AUX	VBZ	Number=Plur|Person=2|Tense=Pres	0	root	_	_
+7	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj	_	_
+8	sure	sure	ADJ	JJ	_	6	xcomp	_	_
+9	that	that	SCONJ	IN	_	11	mark	_	_
+10	this	this	PRON	DT	_	11	nsubj	_	_
+11	is	be	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	8	ccomp	_	_
+12	a	a	DET	DT	_	14	det	_	_
+13	good	good	ADJ	JJ	_	14	amod	_	_
+14	seed	seed	NOUN	NN	Number=Sing	11	xcomp	_	_
+15	?	?	PUNCT	.	_	6	punct	_	_
+

@@ -1,0 +1,753 @@
+# text = Then flew one of the seraphim unto me, having a live coal in his hand, which he had taken with the tongs from off the altar;
+# sent_id = 550
+1	Then	then	ADV	RB	_	2	advmod	_	_
+2	flew	fly	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	one	one	PRON	NN	Number=Sing	2	nsubj	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	seraphim	seraphim	NOUN	NN	Number=Plur	3	nmod	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	2	obl	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	having	have	VERB	VBG	VerbForm=Part	2	advcl	_	_
+11	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
+12	live	live	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	coal	coal	NOUN	NN	Number=Sing	10	obj	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+16	hand	hand	NOUN	NN	Number=Sing	10	obl	_	_
+17	,	,	PUNCT	,	_	21	punct	_	_
+18	which	which	PRON	WDT	PronType=Rel	21	obj	_	_
+19	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+20	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	21	aux	_	_
+21	taken	take	VERB	VBN	Tense=Past|VerbForm=Part	13	acl:relcl	_	_
+22	with	with	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	tongs	tong	NOUN	NNS	Number=Plur	21	obl	_	_
+25	from	from	ADP	IN	_	27	case	_	_
+26	off	off	ADP	IN	_	25	fixed	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	altar	altar	NOUN	NN	Number=Sing	21	obl	_	_
+29	;	;	PUNCT	:	_	2	punct	_	_
+
+# text = And he laid it upon my mouth, and said: Lo, this has touched thy lips; and thine iniquity is taken away, and thy sin purged.
+# sent_id = 551
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	laid	lay	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
+5	upon	upon	ADP	IN	_	7	case	_	_
+6	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	mouth	mouth	NOUN	NN	Number=Sing	3	obl	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	conj	_	_
+11	:	:	PUNCT	:	_	10	punct	_	_
+12	Lo	lo	INTJ	UH	_	16	discourse	_	_
+13	,	,	PUNCT	,	_	12	punct	_	_
+14	this	this	PRON	DT	Number=Sing|PronType=Dem	16	nsubj	_	_
+15	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
+16	touched	touch	VERB	VBN	Tense=Past|VerbForm=Part	10	ccomp	_	_
+17	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	18	nmod:poss	_	_
+18	lips	lip	NOUN	NNS	Number=Plur	16	obj	_	_
+19	;	;	PUNCT	:	_	24	punct	_	_
+20	and	and	CCONJ	CC	_	24	cc	_	_
+21	thine	thine	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+22	iniquity	iniquity	NOUN	NN	Number=Sing	24	nsubj:pass	_	_
+23	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:pass	_	_
+24	taken	take	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	10	conj	_	_
+25	away	away	ADV	RB	_	24	advmod	_	_
+26	,	,	PUNCT	,	_	30	punct	_	_
+27	and	and	CCONJ	CC	_	30	cc	_	_
+28	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	29	nmod:poss	_	_
+29	sin	sin	NOUN	NN	Number=Sing	30	nsubj:pass	_	_
+30	purged	purge	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	10	conj	_	_
+31	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Also I heard the voice of the Lord, saying: Whom shall I send, and who will go for us?
+# sent_id = 552
+1	Also	also	ADV	RB	_	3	advmod	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	heard	hear	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	voice	voice	NOUN	NN	Number=Sing	3	obj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	Lord	Lord	PROPN	NNP	Number=Sing	5	nmod	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	saying	say	VERB	VBG	VerbForm=Part	3	advcl	_	_
+11	:	:	PUNCT	:	_	10	punct	_	_
+12	Whom	whom	PRON	WP	Case=Acc|PronType=Int	15	obj	_	_
+13	shall	shall	AUX	MD	VerbForm=Fin	15	aux	_	_
+14	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_
+15	send	send	VERB	VB	VerbForm=Inf	10	ccomp	_	_
+16	,	,	PUNCT	,	_	20	punct	_	_
+17	and	and	CCONJ	CC	_	20	cc	_	_
+18	who	who	PRON	WP	PronType=Int	20	nsubj	_	_
+19	will	will	AUX	MD	VerbForm=Fin	20	aux	_	_
+20	go	go	VERB	VB	VerbForm=Inf	15	conj	_	_
+21	for	for	ADP	IN	_	22	case	_	_
+22	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1|PronType=Prs	20	obl	_	_
+23	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Then I said: Here am I; send me.
+# sent_id = 553
+1	Then	then	ADV	RB	_	3	advmod	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	Here	here	ADV	RB	_	6	advmod	_	_
+6	am	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+8	;	;	PUNCT	:	_	9	punct	_	_
+9	send	send	VERB	VB	Mood=Imp|VerbForm=Fin	3	conj	_	_
+10	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	9	obj	_	_
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he said: Go and tell this people--
+# sent_id = 554
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	Go	go	VERB	VB	Mood=Imp|VerbForm=Fin	3	ccomp	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	tell	tell	VERB	VB	Mood=Imp|VerbForm=Fin	5	conj	_	_
+8	this	this	DET	DT	Number=Sing|PronType=Dem	9	det	_	_
+9	people	people	NOUN	NNS	Number=Plur	7	obj	_	_
+10	--	--	PUNCT	:	_	3	punct	_	_
+
+# text = Hear ye indeed, but they understood not; and see ye indeed, but they perceived not.
+# sent_id = 555
+1	Hear	hear	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	1	nsubj	_	_
+3	indeed	indeed	ADV	RB	_	1	advmod	_	_
+4	,	,	PUNCT	,	_	7	punct	_	_
+5	but	but	CCONJ	CC	_	7	cc	_	_
+6	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_
+7	understood	understand	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	1	conj	_	_
+8	not	not	PART	RB	_	7	advmod	_	_
+9	;	;	PUNCT	:	_	11	punct	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	see	see	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	_
+12	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	11	nsubj	_	_
+13	indeed	indeed	ADV	RB	_	11	advmod	_	_
+14	,	,	PUNCT	,	_	17	punct	_	_
+15	but	but	CCONJ	CC	_	17	cc	_	_
+16	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	17	nsubj	_	_
+17	perceived	perceive	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	1	conj	_	_
+18	not	not	PART	RB	_	17	advmod	_	_
+19	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = Make the heart of this people fat, and make their ears heavy, and shut their eyes-- lest they see with their eyes, and hear with their ears, and understand with their heart, and be converted and be healed.
+# sent_id = 556
+1	Make	make	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	heart	heart	NOUN	NN	Number=Sing	1	obj	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	this	this	DET	DT	Number=Sing|PronType=Dem	6	det	_	_
+6	people	people	NOUN	NNS	Number=Plur	3	nmod	_	_
+7	fat	fat	ADJ	JJ	Degree=Pos	1	xcomp	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	make	make	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	_
+11	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	_
+12	ears	ear	NOUN	NNS	Number=Plur	10	obj	_	_
+13	heavy	heavy	ADJ	JJ	Degree=Pos	10	xcomp	_	_
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	shut	shut	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	_
+17	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	_
+18	eyes	eye	NOUN	NNS	Number=Plur	16	obj	_	_
+19	--	--	PUNCT	:	_	16	punct	_	_
+20	lest	lest	SCONJ	IN	_	22	mark	_	_
+21	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_
+22	see	see	VERB	VB	VerbForm=Inf	16	advcl	_	_
+23	with	with	ADP	IN	_	25	case	_	_
+24	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	25	nmod:poss	_	_
+25	eyes	eye	NOUN	NNS	Number=Plur	22	obl	_	_
+26	,	,	PUNCT	,	_	28	punct	_	_
+27	and	and	CCONJ	CC	_	28	cc	_	_
+28	hear	hear	VERB	VB	VerbForm=Inf	22	conj	_	_
+29	with	with	ADP	IN	_	31	case	_	_
+30	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	31	nmod:poss	_	_
+31	ears	ear	NOUN	NNS	Number=Plur	28	obl	_	_
+32	,	,	PUNCT	,	_	34	punct	_	_
+33	and	and	CCONJ	CC	_	34	cc	_	_
+34	understand	understand	VERB	VB	VerbForm=Inf	22	conj	_	_
+35	with	with	ADP	IN	_	37	case	_	_
+36	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	37	nmod:poss	_	_
+37	heart	heart	NOUN	NN	Number=Sing	34	obl	_	_
+38	,	,	PUNCT	,	_	41	punct	_	_
+39	and	and	CCONJ	CC	_	41	cc	_	_
+40	be	be	AUX	VB	VerbForm=Inf	41	aux:pass	_	_
+41	converted	convert	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	22	conj	_	_
+42	and	and	CCONJ	CC	_	44	cc	_	_
+43	be	be	AUX	VB	VerbForm=Inf	44	aux:pass	_	_
+44	healed	heal	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	41	conj	_	_
+45	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = Then said I: Lord, how long?
+# sent_id = 557
+1	Then	then	ADV	RB	_	2	advmod	_	_
+2	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+4	:	:	PUNCT	:	_	2	punct	_	_
+5	Lord	Lord	PROPN	NNP	Number=Sing	8	vocative	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	how	how	ADV	WRB	PronType=Int	8	advmod	_	_
+8	long	long	ADV	RB	_	2	ccomp	_	_
+9	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = And he said: Until the cities be wasted without inhabitant, and the houses without man, and the land be utterly desolate;
+# sent_id = 558
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	Until	until	SCONJ	IN	_	9	mark	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	cities	city	NOUN	NNS	Number=Plur	9	nsubj:pass	_	_
+8	be	be	AUX	VB	VerbForm=Inf	9	aux:pass	_	_
+9	wasted	waste	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	3	ccomp	_	_
+10	without	without	ADP	IN	_	11	case	_	_
+11	inhabitant	inhabitant	NOUN	NN	Number=Sing	9	obl	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	houses	house	NOUN	NNS	Number=Plur	9	conj	_	_
+16	without	without	ADP	IN	_	17	case	_	_
+17	man	man	NOUN	NN	Number=Sing	15	obl	_	_
+18	,	,	PUNCT	,	_	24	punct	_	_
+19	and	and	CCONJ	CC	_	24	cc	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	land	land	NOUN	NN	Number=Sing	24	nsubj	_	_
+22	be	be	AUX	VB	VerbForm=Inf	24	aux	_	_
+23	utterly	utterly	ADV	RB	_	24	advmod	_	_
+24	desolate	desolate	ADJ	JJ	Degree=Pos	9	conj	_	_
+25	;	;	PUNCT	:	_	3	punct	_	_
+
+# text = And the Lord have removed men far away, for there shall be a great forsaking in the midst of the land.
+# sent_id = 559
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	Lord	Lord	PROPN	NNP	Number=Sing	5	nsubj	_	_
+4	have	have	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	removed	remove	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	men	man	NOUN	NNS	Number=Plur	5	obj	_	_
+7	far	far	ADV	RB	_	5	advmod	_	_
+8	away	away	ADV	RB	_	7	advmod	_	_
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	for	for	SCONJ	IN	_	13	mark	_	_
+11	there	there	PRON	EX	_	13	expl	_	_
+12	shall	shall	AUX	MD	VerbForm=Fin	13	aux	_	_
+13	be	be	VERB	VB	VerbForm=Inf	5	advcl	_	_
+14	a	a	DET	DT	Definite=Ind|PronType=Art	16	det	_	_
+15	great	great	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	forsaking	forsaking	NOUN	NN	Number=Sing	13	nsubj	_	_
+17	in	in	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	midst	midst	NOUN	NN	Number=Sing	13	obl	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	land	land	NOUN	NN	Number=Sing	19	nmod	_	_
+23	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = But yet there shall be a tenth, and they shall return, and shall be eaten, as a teil tree, and as an oak whose substance is in them when they cast their leaves; so the holy seed shall be the substance thereof.
+# sent_id = 560
+1	But	but	CCONJ	CC	_	5	cc	_	_
+2	yet	yet	ADV	RB	_	5	advmod	_	_
+3	there	there	PRON	EX	_	5	expl	_	_
+4	shall	shall	AUX	MD	VerbForm=Fin	5	aux	_	_
+5	be	be	VERB	VB	VerbForm=Inf	0	root	_	_
+6	a	a	DET	DT	Definite=Ind|PronType=Art	7	det	_	_
+7	tenth	tenth	NOUN	NN	Number=Sing	5	nsubj	_	_
+8	,	,	PUNCT	,	_	12	punct	_	_
+9	and	and	CCONJ	CC	_	12	cc	_	_
+10	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	12	nsubj	_	_
+11	shall	shall	AUX	MD	VerbForm=Fin	12	aux	_	_
+12	return	return	VERB	VB	VerbForm=Inf	5	conj	_	_
+13	,	,	PUNCT	,	_	17	punct	_	_
+14	and	and	CCONJ	CC	_	17	cc	_	_
+15	shall	shall	AUX	MD	VerbForm=Fin	17	aux	_	_
+16	be	be	AUX	VB	VerbForm=Inf	17	aux:pass	_	_
+17	eaten	eat	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	conj	_	_
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	as	as	ADP	IN	_	22	case	_	_
+20	a	a	DET	DT	Definite=Ind|PronType=Art	22	det	_	_
+21	teil	teil	NOUN	NN	Number=Sing	22	compound	_	_
+22	tree	tree	NOUN	NN	Number=Sing	17	obl	_	_
+23	,	,	PUNCT	,	_	27	punct	_	_
+24	and	and	CCONJ	CC	_	27	cc	_	_
+25	as	as	ADP	IN	_	27	case	_	_
+26	an	a	DET	DT	Definite=Ind|PronType=Art	27	det	_	_
+27	oak	oak	NOUN	NN	Number=Sing	22	conj	_	_
+28	whose	whose	PRON	WP$	Poss=Yes|PronType=Rel	29	nmod:poss	_	_
+29	substance	substance	NOUN	NN	Number=Sing	30	nsubj	_	_
+30	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_
+31	in	in	ADP	IN	_	32	case	_	_
+32	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	30	obl	_	_
+33	when	when	SCONJ	WRB	_	35	mark	_	_
+34	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	35	nsubj	_	_
+35	cast	cast	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	advcl	_	_
+36	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	37	nmod:poss	_	_
+37	leaves	leaf	NOUN	NNS	Number=Plur	35	obj	_	_
+38	;	;	PUNCT	:	_	44	punct	_	_
+39	so	so	ADV	RB	_	44	advmod	_	_
+40	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+41	holy	holy	ADJ	JJ	Degree=Pos	42	amod	_	_
+42	seed	seed	NOUN	NN	Number=Sing	44	nsubj	_	_
+43	shall	shall	AUX	MD	VerbForm=Fin	44	aux	_	_
+44	be	be	VERB	VB	VerbForm=Inf	5	conj	_	_
+45	the	the	DET	DT	Definite=Def|PronType=Art	46	det	_	_
+46	substance	substance	NOUN	NN	Number=Sing	44	xcomp	_	_
+47	thereof	thereof	ADV	RB	_	46	advmod	_	_
+48	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And it came to pass in the days of Ahaz the son of Jotham, the son of Uzziah, king of Judah that Rezin, king of Syria, and Pekah the son of Remaliah, king of Israel, went up toward Jerusalem to war against it, but could not prevail against it.
+# sent_id = 561
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	in	in	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	days	day	NOUN	NNS	Number=Plur	5	obl	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Ahaz	Ahaz	PROPN	NNP	Number=Sing	8	nmod	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	son	son	NOUN	NN	Number=Sing	10	appos	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Jotham	Jotham	PROPN	NNP	Number=Sing	12	nmod	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	son	son	NOUN	NN	Number=Sing	12	appos	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	Uzziah	Uzziah	PROPN	NNP	Number=Sing	17	nmod	_	_
+20	,	,	PUNCT	,	_	21	punct	_	_
+21	king	king	NOUN	NN	Number=Sing	10	appos	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	Judah	Judah	PROPN	NNP	Number=Sing	21	nmod	_	_
+24	that	that	SCONJ	IN	_	42	mark	_	_
+25	Rezin	Rezin	PROPN	NNP	Number=Sing	42	nsubj	_	_
+26	,	,	PUNCT	,	_	27	punct	_	_
+27	king	king	NOUN	NN	Number=Sing	25	appos	_	_
+28	of	of	ADP	IN	_	29	case	_	_
+29	Syria	Syria	PROPN	NNP	Number=Sing	27	nmod	_	_
+30	,	,	PUNCT	,	_	32	punct	_	_
+31	and	and	CCONJ	CC	_	32	cc	_	_
+32	Pekah	Pekah	PROPN	NNP	Number=Sing	25	conj	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	son	son	NOUN	NN	Number=Sing	32	appos	_	_
+35	of	of	ADP	IN	_	36	case	_	_
+36	Remaliah	Remaliah	PROPN	NNP	Number=Sing	34	nmod	_	_
+37	,	,	PUNCT	,	_	38	punct	_	_
+38	king	king	NOUN	NN	Number=Sing	32	appos	_	_
+39	of	of	ADP	IN	_	40	case	_	_
+40	Israel	Israel	PROPN	NNP	Number=Sing	38	nmod	_	_
+41	,	,	PUNCT	,	_	42	punct	_	_
+42	went	go	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	advcl	_	_
+43	up	up	ADP	RP	_	42	compound:prt	_	_
+44	toward	toward	ADP	IN	_	45	case	_	_
+45	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	42	obl	_	_
+46	to	to	PART	TO	_	47	mark	_	_
+47	war	war	VERB	VB	VerbForm=Inf	42	advcl	_	_
+48	against	against	ADP	IN	_	49	case	_	_
+49	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	47	obl	_	_
+50	,	,	PUNCT	,	_	54	punct	_	_
+51	but	but	CCONJ	CC	_	54	cc	_	_
+52	could	can	AUX	MD	VerbForm=Fin	54	aux	_	_
+53	not	not	PART	RB	_	54	advmod	_	_
+54	prevail	prevail	VERB	VB	VerbForm=Inf	42	conj	_	_
+55	against	against	ADP	IN	_	56	case	_	_
+56	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	54	obl	_	_
+57	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it was told the house of David, saying: Syria is confederate with Ephraim.
+# sent_id = 562
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj:pass	_	_
+3	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
+4	told	tell	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	house	house	NOUN	NN	Number=Sing	4	iobj	_	_
+7	of	of	ADP	IN	_	8	case	_	_
+8	David	David	PROPN	NNP	Number=Sing	6	nmod	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	saying	say	VERB	VBG	VerbForm=Part	4	advcl	_	_
+11	:	:	PUNCT	:	_	10	punct	_	_
+12	Syria	Syria	PROPN	NNP	Number=Sing	14	nsubj	_	_
+13	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_
+14	confederate	confederate	ADJ	JJ	Degree=Pos	10	ccomp	_	_
+15	with	with	ADP	IN	_	16	case	_	_
+16	Ephraim	Ephraim	PROPN	NNP	Number=Sing	14	obl	_	_
+17	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And his heart was moved, and the heart of his people, as the trees of the wood are moved with the wind.
+# sent_id = 563
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	_
+3	heart	heart	NOUN	NN	Number=Sing	5	nsubj:pass	_	_
+4	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux:pass	_	_
+5	moved	move	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	,	,	PUNCT	,	_	9	punct	_	_
+7	and	and	CCONJ	CC	_	9	cc	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	heart	heart	NOUN	NN	Number=Sing	5	conj	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	_
+12	people	people	NOUN	NNS	Number=Plur	9	nmod	_	_
+13	,	,	PUNCT	,	_	21	punct	_	_
+14	as	as	SCONJ	IN	_	21	mark	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	trees	tree	NOUN	NNS	Number=Plur	21	nsubj:pass	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	wood	wood	NOUN	NN	Number=Sing	16	nmod	_	_
+20	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	aux:pass	_	_
+21	moved	move	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	advcl	_	_
+22	with	with	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	wind	wind	NOUN	NN	Number=Sing	21	obl	_	_
+25	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Then said the Lord unto Isaiah: Go forth now to meet Ahaz, thou and Shearjashub thy son, at the end of the conduit of the upper pool in the highway of the fuller's field;
+# sent_id = 564
+1	Then	then	ADV	RB	_	2	advmod	_	_
+2	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	Lord	Lord	PROPN	NNP	Number=Sing	2	nsubj	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	Isaiah	Isaiah	PROPN	NNP	Number=Sing	2	obl	_	_
+7	:	:	PUNCT	:	_	2	punct	_	_
+8	Go	go	VERB	VB	Mood=Imp|VerbForm=Fin	2	ccomp	_	_
+9	forth	forth	ADV	RB	_	8	advmod	_	_
+10	now	now	ADV	RB	_	8	advmod	_	_
+11	to	to	PART	TO	_	12	mark	_	_
+12	meet	meet	VERB	VB	VerbForm=Inf	8	advcl	_	_
+13	Ahaz	Ahaz	PROPN	NNP	Number=Sing	12	obj	_	_
+14	,	,	PUNCT	,	_	15	punct	_	_
+15	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2|PronType=Prs	12	nsubj	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	Shearjashub	Shearjashub	PROPN	NNP	Number=Sing	15	conj	_	_
+18	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
+19	son	son	NOUN	NN	Number=Sing	17	appos	_	_
+20	,	,	PUNCT	,	_	23	punct	_	_
+21	at	at	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	end	end	NOUN	NN	Number=Sing	8	obl	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	conduit	conduit	NOUN	NN	Number=Sing	23	nmod	_	_
+27	of	of	ADP	IN	_	30	case	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+29	upper	upper	ADJ	JJ	Degree=Pos	30	amod	_	_
+30	pool	pool	NOUN	NN	Number=Sing	26	nmod	_	_
+31	in	in	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+33	highway	highway	NOUN	NN	Number=Sing	26	nmod	_	_
+34	of	of	ADP	IN	_	37	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+36-37	fuller's	_	_	_	_	_	_	_	_
+36	fuller	fuller	NOUN	NN	Number=Sing	38	nmod:poss	_	_
+37	's	's	PART	POS	_	36	case	_	_
+38	field	field	NOUN	NN	Number=Sing	33	nmod	_	_
+39	;	;	PUNCT	:	_	2	punct	_	_
+
+# text = And say unto him: Take heed, and be quiet; fear not, neither be faint-hearted for the two tails of these smoking firebrands, for the fierce anger of Rezin with Syria, and of the son of Remaliah.
+# sent_id = 565
+1	And	and	CCONJ	CC	_	2	cc	_	_
+2	say	say	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
+5	:	:	PUNCT	:	_	2	punct	_	_
+6	Take	take	VERB	VB	Mood=Imp|VerbForm=Fin	2	ccomp	_	_
+7	heed	heed	NOUN	NN	Number=Sing	6	obj	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	be	be	AUX	VB	VerbForm=Inf	11	cop	_	_
+11	quiet	quiet	ADJ	JJ	Degree=Pos	6	conj	_	_
+12	;	;	PUNCT	:	_	13	punct	_	_
+13	fear	fear	VERB	VB	Mood=Imp|VerbForm=Fin	6	conj	_	_
+14	not	not	PART	RB	_	13	advmod	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	neither	neither	ADV	RB	_	18	advmod	_	_
+17	be	be	AUX	VB	VerbForm=Inf	18	cop	_	_
+18	faint	faint	ADJ	JJ	Degree=Pos	13	conj	_	_
+19	-	-	PUNCT	HYPH	_	20	punct	_	_
+20	hearted	hearted	ADJ	JJ	Degree=Pos	18	conj	_	_
+21	for	for	ADP	IN	_	24	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+23	two	two	NUM	CD	NumType=Card	24	nummod	_	_
+24	tails	tail	NOUN	NNS	Number=Plur	13	obl	_	_
+25	of	of	ADP	IN	_	28	case	_	_
+26	these	these	DET	DT	Number=Plur|PronType=Dem	28	det	_	_
+27	smoking	smoking	ADJ	JJ	Degree=Pos	28	amod	_	_
+28	firebrands	firebrand	NOUN	NNS	Number=Plur	24	nmod	_	_
+29	,	,	PUNCT	,	_	33	punct	_	_
+30	for	for	ADP	IN	_	33	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+32	fierce	fierce	ADJ	JJ	Degree=Pos	33	amod	_	_
+33	anger	anger	NOUN	NN	Number=Sing	13	obl	_	_
+34	of	of	ADP	IN	_	35	case	_	_
+35	Rezin	Rezin	PROPN	NNP	Number=Sing	33	nmod	_	_
+36	with	with	ADP	IN	_	37	case	_	_
+37	Syria	Syria	PROPN	NNP	Number=Sing	35	nmod	_	_
+38	,	,	PUNCT	,	_	42	punct	_	_
+39	and	and	CCONJ	CC	_	42	cc	_	_
+40	of	of	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	son	son	NOUN	NN	Number=Sing	33	conj	_	_
+43	of	of	ADP	IN	_	44	case	_	_
+44	Remaliah	Remaliah	PROPN	NNP	Number=Sing	42	nmod	_	_
+45	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = Because Syria, Ephraim, and the son of Remaliah, have taken evil counsel against thee, saying:
+# sent_id = 566
+1	Because	because	SCONJ	IN	_	13	mark	_	_
+2	Syria	Syria	PROPN	NNP	Number=Sing	13	nsubj	_	_
+3	,	,	PUNCT	,	_	4	punct	_	_
+4	Ephraim	Ephraim	PROPN	NNP	Number=Sing	2	conj	_	_
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	and	and	CCONJ	CC	_	8	cc	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	son	son	NOUN	NN	Number=Sing	2	conj	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Remaliah	Remaliah	PROPN	NNP	Number=Sing	8	nmod	_	_
+11	,	,	PUNCT	,	_	13	punct	_	_
+12	have	have	AUX	VBP	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	13	aux	_	_
+13	taken	take	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+14	evil	evil	ADJ	JJ	Degree=Pos	15	amod	_	_
+15	counsel	counsel	NOUN	NN	Number=Sing	13	obj	_	_
+16	against	against	ADP	IN	_	17	case	_	_
+17	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	13	obl	_	_
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	saying	say	VERB	VBG	VerbForm=Part	13	advcl	_	_
+20	:	:	PUNCT	:	_	19	punct	_	_
+
+# text = Let us go up against Judah and vex it, and let us make a breach therein for us, and set a king in the midst of it, yea, the son of Tabeal.
+# sent_id = 567
+1	Let	let	VERB	VB	VerbForm=Inf	0	root	_	_
+2	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1|PronType=Prs	1	obj	_	_
+3	go	go	VERB	VB	VerbForm=Inf	1	xcomp	_	_
+4	up	up	ADP	RP	_	3	compound:prt	_	_
+5	against	against	ADP	IN	_	6	case	_	_
+6	Judah	Judah	PROPN	NNP	Number=Sing	3	obl	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	vex	vex	VERB	VB	VerbForm=Inf	3	conj	_	_
+9	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	let	let	VERB	VB	VerbForm=Inf	1	conj	_	_
+13	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1|PronType=Prs	12	obj	_	_
+14	make	make	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+15	a	a	DET	DT	Definite=Ind|PronType=Art	16	det	_	_
+16	breach	breach	NOUN	NN	Number=Sing	14	obj	_	_
+17	therein	therein	ADV	RB	_	14	advmod	_	_
+18	for	for	ADP	IN	_	19	case	_	_
+19	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1|PronType=Prs	14	obl	_	_
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	and	and	CCONJ	CC	_	22	cc	_	_
+22	set	set	VERB	VB	VerbForm=Inf	14	conj	_	_
+23	a	a	DET	DT	Definite=Ind|PronType=Art	24	det	_	_
+24	king	king	NOUN	NN	Number=Sing	22	obj	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	midst	midst	NOUN	NN	Number=Sing	22	obl	_	_
+28	of	of	ADP	IN	_	29	case	_	_
+29	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	27	nmod	_	_
+30	,	,	PUNCT	,	_	31	punct	_	_
+31	yea	yea	INTJ	UH	_	24	discourse	_	_
+32	,	,	PUNCT	,	_	31	punct	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	son	son	NOUN	NN	Number=Sing	24	appos	_	_
+35	of	of	ADP	IN	_	36	case	_	_
+36	Tabeal	Tabeal	PROPN	NNP	Number=Sing	34	nmod	_	_
+37	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = Thus saith the Lord God: It shall not stand, neither shall it come to pass.
+# sent_id = 568
+1	Thus	thus	ADV	RB	_	2	advmod	_	_
+2	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	Lord	Lord	PROPN	NNP	Number=Sing	2	nsubj	_	_
+5	God	God	PROPN	NNP	Number=Sing	4	appos	_	_
+6	:	:	PUNCT	:	_	2	punct	_	_
+7	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+8	shall	shall	AUX	MD	VerbForm=Fin	10	aux	_	_
+9	not	not	PART	RB	_	10	advmod	_	_
+10	stand	stand	VERB	VB	VerbForm=Inf	2	ccomp	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	neither	neither	ADV	RB	_	15	advmod	_	_
+13	shall	shall	AUX	MD	VerbForm=Fin	15	aux	_	_
+14	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+15	come	come	VERB	VB	VerbForm=Inf	10	conj	_	_
+16	to	to	PART	TO	_	17	mark	_	_
+17	pass	pass	VERB	VB	VerbForm=Inf	15	xcomp	_	_
+18	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = For the head of Syria is Damascus, and the head of Damascus, Rezin; and within threescore and five years shall Ephraim be broken that it be not a people.
+# sent_id = 569
+1	For	for	SCONJ	IN	_	6	mark	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	head	head	NOUN	NN	Number=Sing	6	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	Syria	Syria	PROPN	NNP	Number=Sing	3	nmod	_	_
+6	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	Damascus	Damascus	PROPN	NNP	Number=Sing	6	xcomp	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	head	head	NOUN	NN	Number=Sing	6	conj	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	Damascus	Damascus	PROPN	NNP	Number=Sing	11	nmod	_	_
+14	,	,	PUNCT	,	_	15	punct	_	_
+15	Rezin	Rezin	PROPN	NNP	Number=Sing	11	xcomp	_	_
+16	;	;	PUNCT	:	_	26	punct	_	_
+17	and	and	CCONJ	CC	_	26	cc	_	_
+18	within	within	ADP	IN	_	22	case	_	_
+19	threescore	threescore	NUM	CD	NumType=Card	22	nummod	_	_
+20	and	and	CCONJ	CC	_	21	cc	_	_
+21	five	five	NUM	CD	NumType=Card	19	conj	_	_
+22	years	year	NOUN	NNS	Number=Plur	26	obl	_	_
+23	shall	shall	AUX	MD	VerbForm=Fin	26	aux	_	_
+24	Ephraim	Ephraim	PROPN	NNP	Number=Sing	26	nsubj:pass	_	_
+25	be	be	AUX	VB	VerbForm=Inf	26	aux:pass	_	_
+26	broken	break	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	6	conj	_	_
+27	that	that	SCONJ	IN	_	29	mark	_	_
+28	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
+29	be	be	VERB	VB	VerbForm=Inf	26	advcl	_	_
+30	not	not	PART	RB	_	29	advmod	_	_
+31	a	a	DET	DT	Definite=Ind|PronType=Art	32	det	_	_
+32	people	people	NOUN	NNS	Number=Plur	29	xcomp	_	_
+33	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And the head of Ephraim is Samaria, and the head of Samaria is Remaliah's son.
+# sent_id = 570
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	head	head	NOUN	NN	Number=Sing	6	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	Ephraim	Ephraim	PROPN	NNP	Number=Sing	3	nmod	_	_
+6	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	Samaria	Samaria	PROPN	NNP	Number=Sing	6	xcomp	_	_
+8	,	,	PUNCT	,	_	14	punct	_	_
+9	and	and	CCONJ	CC	_	14	cc	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	head	head	NOUN	NN	Number=Sing	14	nsubj	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	Samaria	Samaria	PROPN	NNP	Number=Sing	11	nmod	_	_
+14	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
+15-16	Remaliah's	_	_	_	_	_	_	_	_
+15	Remaliah	Remaliah	PROPN	NNP	Number=Sing	17	nmod:poss	_	_
+16	's	's	PART	POS	_	15	case	_	_
+17	son	son	NOUN	NN	Number=Sing	14	xcomp	_	_
+18	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = If ye will not believe surely ye shall not be established.
+# sent_id = 571
+1	If	if	SCONJ	IN	_	5	mark	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	not	not	PART	RB	_	5	advmod	_	_
+5	believe	believe	VERB	VB	VerbForm=Inf	11	advcl	_	_
+6	surely	surely	ADV	RB	_	11	advmod	_	_
+7	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	11	nsubj:pass	_	_
+8	shall	shall	AUX	MD	VerbForm=Fin	11	aux	_	_
+9	not	not	PART	RB	_	11	advmod	_	_
+10	be	be	AUX	VB	VerbForm=Inf	11	aux:pass	_	_
+11	established	establish	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+12	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = Moreover, the Lord spake again unto Ahaz, saying: Ask thee a sign of the Lord thy God; ask it either in the depths, or in the heights above.
+# sent_id = 572
+1	Moreover	moreover	ADV	RB	_	5	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	Lord	Lord	PROPN	NNP	Number=Sing	5	nsubj	_	_
+5	spake	speak	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+6	again	again	ADV	RB	_	5	advmod	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	Ahaz	Ahaz	PROPN	NNP	Number=Sing	5	obl	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	saying	say	VERB	VBG	VerbForm=Part	5	advcl	_	_
+11	:	:	PUNCT	:	_	10	punct	_	_
+12	Ask	ask	VERB	VB	Mood=Imp|VerbForm=Fin	10	ccomp	_	_
+13	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	12	iobj	_	_
+14	a	a	DET	DT	Definite=Ind|PronType=Art	15	det	_	_
+15	sign	sign	NOUN	NN	Number=Sing	12	obj	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+18	Lord	Lord	PROPN	NNP	Number=Sing	15	nmod	_	_
+19	thy	thy	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+20	God	God	PROPN	NNP	Number=Sing	18	appos	_	_
+21	;	;	PUNCT	:	_	22	punct	_	_
+22	ask	ask	VERB	VB	Mood=Imp|VerbForm=Fin	12	conj	_	_
+23	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	22	obj	_	_
+24	either	either	CCONJ	CC	_	27	cc:preconj	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	depths	depth	NOUN	NNS	Number=Plur	22	obl	_	_
+28	,	,	PUNCT	,	_	32	punct	_	_
+29	or	or	CCONJ	CC	_	32	cc	_	_
+30	in	in	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	heights	height	NOUN	NNS	Number=Plur	27	conj	_	_
+33	above	above	ADV	RB	_	32	advmod	_	_
+34	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = But Ahaz said: I will not ask, neither will I tempt the Lord.
+# sent_id = 573
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	Ahaz	Ahaz	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+6	will	will	AUX	MD	VerbForm=Fin	8	aux	_	_
+7	not	not	PART	RB	_	8	advmod	_	_
+8	ask	ask	VERB	VB	VerbForm=Inf	3	ccomp	_	_
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	neither	neither	ADV	RB	_	13	advmod	_	_
+11	will	will	AUX	MD	VerbForm=Fin	13	aux	_	_
+12	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_
+13	tempt	tempt	VERB	VB	VerbForm=Inf	8	conj	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	Lord	Lord	PROPN	NNP	Number=Sing	13	obj	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he said: Hear ye now, O house of David; is it a small thing for you to weary men, but will ye weary my God also?
+# sent_id = 574
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	Hear	hear	VERB	VB	Mood=Imp|VerbForm=Fin	3	ccomp	_	_
+6	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_
+7	now	now	ADV	RB	_	5	advmod	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	O	O	INTJ	UH	_	10	discourse	_	_
+10	house	house	NOUN	NN	Number=Sing	5	vocative	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	David	David	PROPN	NNP	Number=Sing	10	nmod	_	_
+13	;	;	PUNCT	:	_	14	punct	_	_
+14	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_
+15	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+16	a	a	DET	DT	Definite=Ind|PronType=Art	18	det	_	_
+17	small	small	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	thing	thing	NOUN	NN	Number=Sing	5	ccomp	_	_
+19	for	for	ADP	IN	_	20	case	_	_
+20	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2|PronType=Prs	22	nsubj	_	_
+21	to	to	PART	TO	_	22	mark	_	_
+22	weary	weary	VERB	VB	VerbForm=Inf	18	acl	_	_
+23	men	man	NOUN	NNS	Number=Plur	22	obj	_	_
+24	,	,	PUNCT	,	_	28	punct	_	_
+25	but	but	CCONJ	CC	_	28	cc	_	_
+26	will	will	AUX	MD	VerbForm=Fin	28	aux	_	_
+27	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	28	nsubj	_	_
+28	weary	weary	VERB	VB	VerbForm=Inf	18	conj	_	_
+29	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	30	nmod:poss	_	_
+30	God	God	PROPN	NNP	Number=Sing	28	obj	_	_
+31	also	also	ADV	RB	_	28	advmod	_	_
+32	?	?	PUNCT	.	_	3	punct	_	_
+

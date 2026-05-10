@@ -1,0 +1,743 @@
+# text = And Lamoni found favor in the eyes of the king of the land; therefore the brethren of Ammon were brought forth out of prison.
+# sent_id = 825
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Lamoni	Lamoni	PROPN	NNP	_	3	nsubj	_	_
+3	found	find	VERB	VBD	_	0	root	_	_
+4	favor	favor	NOUN	NN	_	3	obj	_	_
+5	in	in	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	eyes	eye	NOUN	NNS	_	3	obl	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	king	king	NOUN	NN	_	7	nmod	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	land	land	NOUN	NN	_	10	nmod	_	_
+14	;	;	PUNCT	,	_	21	punct	_	_
+15	therefore	therefore	ADV	RB	_	21	advmod	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	brethren	brethren	NOUN	NNS	_	21	nsubj:pass	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	Ammon	Ammon	PROPN	NNP	_	17	nmod	_	_
+20	were	be	AUX	VBD	_	21	aux:pass	_	_
+21	brought	bring	VERB	VBN	_	3	conj	_	_
+22	forth	forth	ADV	RB	_	21	advmod	_	_
+23	out	out	ADP	IN	_	25	case	_	_
+24	of	of	ADP	IN	_	23	fixed	_	_
+25	prison	prison	NOUN	NN	_	21	obl	_	_
+26	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And when Ammon did meet them he was exceedingly sorrowful, for behold they were naked, and their skins were worn exceedingly because of being bound with strong cords.
+# sent_id = 826
+# llm_note = temporal advcl; "did meet" emphatic; "was exceedingly sorrowful" = cop+adj; "for behold they were naked" = causal advcl; "their skins were worn" = conj; "because of being bound" = causal advcl
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	when	when	SCONJ	WRB	_	5	mark	_	_
+3	Ammon	Ammon	PROPN	NNP	_	5	nsubj	_	_
+4	did	do	AUX	VBD	_	5	aux	_	_
+5	meet	meet	VERB	VB	_	8	advcl	_	_
+6	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	5	obj	_	_
+7	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	8	nsubj	_	_
+8	was	be	AUX	VBD	_	0	root	_	_
+9	exceedingly	exceedingly	ADV	RB	_	10	advmod	_	_
+10	sorrowful	sorrowful	ADJ	JJ	_	8	xcomp	_	_
+11	,	,	PUNCT	,	_	10	punct	_	_
+12	for	for	SCONJ	IN	_	16	mark	_	_
+13	behold	behold	INTJ	UH	_	16	discourse	_	_
+14	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	16	nsubj	_	_
+15	were	be	AUX	VBD	_	16	cop	_	_
+16	naked	naked	ADJ	JJ	_	10	advcl	_	_
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	and	and	CCONJ	CC	_	22	cc	_	_
+19	their	they	PRON	PRP$	_	20	nmod:poss	_	_
+20	skins	skin	NOUN	NNS	_	22	nsubj:pass	_	_
+21	were	be	AUX	VBD	_	22	aux:pass	_	_
+22	worn	wear	VERB	VBN	_	16	conj	_	_
+23	exceedingly	exceedingly	ADV	RB	_	22	advmod	_	_
+24	because	because	ADP	IN	_	27	case	_	_
+25	of	of	ADP	IN	_	24	fixed	_	_
+26	being	be	AUX	VBG	_	27	aux:pass	_	_
+27	bound	bind	VERB	VBN	_	22	advcl	_	_
+28	with	with	ADP	IN	_	30	case	_	_
+29	strong	strong	ADJ	JJ	_	30	amod	_	_
+30	cords	cord	NOUN	NNS	_	27	obl	_	_
+31	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And they also had suffered hunger, thirst, and all kinds of afflictions; nevertheless they were patient in all their sufferings.
+# sent_id = 827
+# llm_note = "had suffered" perfect; three coordinate objects (hunger, thirst, kinds); "nevertheless they were patient" = concessive conj
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	5	nsubj	_	_
+3	also	also	ADV	RB	_	5	advmod	_	_
+4	had	have	AUX	VBD	_	5	aux	_	_
+5	suffered	suffer	VERB	VBN	_	0	root	_	_
+6	hunger	hunger	NOUN	NN	_	5	obj	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	thirst	thirst	NOUN	NN	_	6	conj	_	_
+9	,	,	PUNCT	,	_	6	punct	_	_
+10	and	and	CCONJ	CC	_	12	cc	_	_
+11	all	all	DET	PDT	_	12	det:predet	_	_
+12	kinds	kind	NOUN	NNS	_	6	conj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	afflictions	affliction	NOUN	NNS	_	12	nmod	_	_
+15	;	;	PUNCT	,	_	19	punct	_	_
+16	nevertheless	nevertheless	ADV	RB	_	19	advmod	_	_
+17	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	19	nsubj	_	_
+18	were	be	AUX	VBD	_	19	cop	_	_
+19	patient	patient	ADJ	JJ	_	5	conj	_	_
+20	in	in	ADP	IN	_	23	case	_	_
+21	all	all	DET	PDT	_	23	det:predet	_	_
+22	their	they	PRON	PRP$	_	23	nmod:poss	_	_
+23	sufferings	suffering	NOUN	NNS	_	19	obl	_	_
+24	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And, as it happened, it was their lot to have fallen into the hands of a more hardened and a more stiffnecked people; therefore they would not hearken unto their words, and they had cast them out, and had smitten them, and had driven them from house to house, and from place to place, even until they had arrived in the land of Middoni; and there they were taken and cast into prison, and bound with strong cords, and kept in prison for many days, and were delivered by Lamoni and Ammon.
+# sent_id = 828
+# llm_note = Long narrative sentence; "as it happened"=parenthetical advcl; "it was their lot to have fallen"=extraposition (it=expl, lot=nsubj, "to have fallen"=csubj); main coord chain: "they would not hearken", "they had cast", "had smitten", "had driven"; "even until they had arrived" = advcl; second half after semicolon: "they were taken and cast into prison, and bound...and kept...and were delivered"
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	as	as	SCONJ	IN	_	5	mark	_	_
+4	it	it	PRON	PRP	_	5	nsubj	_	_
+5	happened	happen	VERB	VBD	_	8	advcl	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	it	it	PRON	PRP	_	8	expl	_	_
+8	was	be	AUX	VBD	_	0	root	_	_
+9	their	they	PRON	PRP$	_	10	nmod:poss	_	_
+10	lot	lot	NOUN	NN	_	8	nsubj	_	_
+11	to	to	PART	TO	_	13	mark	_	_
+12	have	have	AUX	VB	_	13	aux	_	_
+13	fallen	fall	VERB	VBN	_	10	acl	_	_
+14	into	into	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	hands	hand	NOUN	NNS	_	13	obl	_	_
+17	of	of	ADP	IN	_	25	case	_	_
+18	a	a	DET	DT	_	25	det	_	_
+19	more	more	ADV	RBR	_	20	advmod	_	_
+20	hardened	harden	ADJ	JJ	_	25	amod	_	_
+21	and	and	CCONJ	CC	_	24	cc	_	_
+22	a	a	DET	DT	_	24	det	_	_
+23	more	more	ADV	RBR	_	24	advmod	_	_
+24	stiffnecked	stiffnecked	ADJ	JJ	_	20	conj	_	_
+25	people	people	NOUN	NN	_	16	nmod	_	_
+26	;	;	PUNCT	,	_	31	punct	_	_
+27	therefore	therefore	ADV	RB	_	31	advmod	_	_
+28	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	31	nsubj	_	_
+29	would	will	AUX	MD	_	31	aux	_	_
+30	not	not	PART	RB	_	31	advmod	_	_
+31	hearken	hearken	VERB	VB	_	8	conj	_	_
+32	unto	unto	ADP	IN	_	34	case	_	_
+33	their	they	PRON	PRP$	_	34	nmod:poss	_	_
+34	words	word	NOUN	NNS	_	31	obl	_	_
+35	,	,	PUNCT	,	_	31	punct	_	_
+36	and	and	CCONJ	CC	_	39	cc	_	_
+37	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	39	nsubj	_	_
+38	had	have	AUX	VBD	_	39	aux	_	_
+39	cast	cast	VERB	VBN	_	31	conj	_	_
+40	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	39	obj	_	_
+41	out	out	ADP	RP	_	39	compound:prt	_	_
+42	,	,	PUNCT	,	_	39	punct	_	_
+43	and	and	CCONJ	CC	_	45	cc	_	_
+44	had	have	AUX	VBD	_	45	aux	_	_
+45	smitten	smite	VERB	VBN	_	39	conj	_	_
+46	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	45	obj	_	_
+47	,	,	PUNCT	,	_	45	punct	_	_
+48	and	and	CCONJ	CC	_	50	cc	_	_
+49	had	have	AUX	VBD	_	50	aux	_	_
+50	driven	drive	VERB	VBN	_	39	conj	_	_
+51	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	50	obj	_	_
+52	from	from	ADP	IN	_	53	case	_	_
+53	house	house	NOUN	NN	_	50	obl	_	_
+54	to	to	ADP	IN	_	55	case	_	_
+55	house	house	NOUN	NN	_	53	nmod	_	_
+56	,	,	PUNCT	,	_	53	punct	_	_
+57	and	and	CCONJ	CC	_	59	cc	_	_
+58	from	from	ADP	IN	_	59	case	_	_
+59	place	place	NOUN	NN	_	53	conj	_	_
+60	to	to	ADP	IN	_	61	case	_	_
+61	place	place	NOUN	NN	_	59	nmod	_	_
+62	,	,	PUNCT	,	_	50	punct	_	_
+63	even	even	ADV	RB	_	64	advmod	_	_
+64	until	until	SCONJ	IN	_	67	mark	_	_
+65	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	67	nsubj	_	_
+66	had	have	AUX	VBD	_	67	aux	_	_
+67	arrived	arrive	VERB	VBN	_	50	advcl	_	_
+68	in	in	ADP	IN	_	70	case	_	_
+69	the	the	DET	DT	_	70	det	_	_
+70	land	land	NOUN	NN	_	67	obl	_	_
+71	of	of	ADP	IN	_	72	case	_	_
+72	Middoni	Middoni	PROPN	NNP	_	70	nmod	_	_
+73	;	;	PUNCT	,	_	78	punct	_	_
+74	and	and	CCONJ	CC	_	78	cc	_	_
+75	there	there	ADV	RB	_	78	advmod	_	_
+76	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	78	nsubj:pass	_	_
+77	were	be	AUX	VBD	_	78	aux:pass	_	_
+78	taken	take	VERB	VBN	_	39	conj	_	_
+79	and	and	CCONJ	CC	_	80	cc	_	_
+80	cast	cast	VERB	VBN	_	78	conj	_	_
+81	into	into	ADP	IN	_	82	case	_	_
+82	prison	prison	NOUN	NN	_	80	obl	_	_
+83	,	,	PUNCT	,	_	78	punct	_	_
+84	and	and	CCONJ	CC	_	85	cc	_	_
+85	bound	bind	VERB	VBN	_	78	conj	_	_
+86	with	with	ADP	IN	_	88	case	_	_
+87	strong	strong	ADJ	JJ	_	88	amod	_	_
+88	cords	cord	NOUN	NNS	_	85	obl	_	_
+89	,	,	PUNCT	,	_	85	punct	_	_
+90	and	and	CCONJ	CC	_	91	cc	_	_
+91	kept	keep	VERB	VBN	_	78	conj	_	_
+92	in	in	ADP	IN	_	93	case	_	_
+93	prison	prison	NOUN	NN	_	91	obl	_	_
+94	for	for	ADP	IN	_	96	case	_	_
+95	many	many	ADJ	JJ	_	96	amod	_	_
+96	days	day	NOUN	NNS	_	91	obl	_	_
+97	,	,	PUNCT	,	_	91	punct	_	_
+98	and	and	CCONJ	CC	_	100	cc	_	_
+99	were	be	AUX	VBD	_	100	aux:pass	_	_
+100	delivered	deliver	VERB	VBN	_	78	conj	_	_
+101	by	by	ADP	IN	_	102	case	_	_
+102	Lamoni	Lamoni	PROPN	NNP	_	100	obl:agent	_	_
+103	and	and	CCONJ	CC	_	104	cc	_	_
+104	Ammon	Ammon	PROPN	NNP	_	102	conj	_	_
+105	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = Now when Ammon and his brethren separated themselves in the borders of the land of the Lamanites, behold Aaron took his journey towards the land which was called by the Lamanites, Jerusalem, calling it after the land of their fathers' nativity; and it was away joining the borders of Mormon.
+# sent_id = 829
+# llm_note = temporal advcl "when Ammon and his brethren separated themselves"; "behold" discourse; "Aaron took his journey" = main clause; relative clause "which was called by the Lamanites"; "Jerusalem" = appos of land; "calling it" = advcl; MWT "fathers'" = 43-44 span (leave span row cols as _, annotate 43+44 sub-tokens); "it was away joining" = progressive-like
+1	Now	now	ADV	RB	_	21	advmod	_	_
+2	when	when	SCONJ	WRB	_	7	mark	_	_
+3	Ammon	Ammon	PROPN	NNP	_	7	nsubj	_	_
+4	and	and	CCONJ	CC	_	6	cc	_	_
+5	his	he	PRON	PRP$	_	6	nmod:poss	_	_
+6	brethren	brethren	NOUN	NNS	_	3	conj	_	_
+7	separated	separate	VERB	VBD	_	21	advcl	_	_
+8	themselves	they	PRON	PRP	_	7	obj	_	_
+9	in	in	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	borders	border	NOUN	NNS	_	7	obl	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	land	land	NOUN	NN	_	11	nmod	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	Lamanites	Lamanite	PROPN	NNPS	_	14	nmod	_	_
+18	,	,	PUNCT	,	_	7	punct	_	_
+19	behold	behold	INTJ	UH	_	21	discourse	_	_
+20	Aaron	Aaron	PROPN	NNP	_	21	nsubj	_	_
+21	took	take	VERB	VBD	_	0	root	_	_
+22	his	he	PRON	PRP$	_	23	nmod:poss	_	_
+23	journey	journey	NOUN	NN	_	21	obj	_	_
+24	towards	towards	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	_	26	det	_	_
+26	land	land	NOUN	NN	_	21	obl	_	_
+27	which	which	PRON	WDT	_	29	nsubj:pass	_	_
+28	was	be	AUX	VBD	_	29	aux:pass	_	_
+29	called	call	VERB	VBN	_	26	acl:relcl	_	_
+30	by	by	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	Lamanites	Lamanite	PROPN	NNPS	_	29	obl:agent	_	_
+33	,	,	PUNCT	,	_	26	punct	_	_
+34	Jerusalem	Jerusalem	PROPN	NNP	_	26	appos	_	_
+35	,	,	PUNCT	,	_	34	punct	_	_
+36	calling	call	VERB	VBG	_	21	advcl	_	_
+37	it	it	PRON	PRP	_	36	obj	_	_
+38	after	after	ADP	IN	_	40	case	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	land	land	NOUN	NN	_	36	obl	_	_
+41	of	of	ADP	IN	_	45	case	_	_
+42	their	they	PRON	PRP$	_	45	nmod:poss	_	_
+43-44	fathers'	_	_	_	_	_	_	_	_
+43	fathers	father	NOUN	NNS	_	45	compound	_	_
+44	'	's	PART	POS	_	43	case	_	_
+45	nativity	nativity	NOUN	NN	_	40	nmod	_	_
+46	;	;	PUNCT	,	_	49	punct	_	_
+47	and	and	CCONJ	CC	_	49	cc	_	_
+48	it	it	PRON	PRP	_	49	nsubj	_	_
+49	was	be	AUX	VBD	_	21	conj	_	_
+50	away	away	ADV	RB	_	51	advmod	_	_
+51	joining	join	VERB	VBG	_	49	xcomp	_	_
+52	the	the	DET	DT	_	53	det	_	_
+53	borders	border	NOUN	NNS	_	51	obj	_	_
+54	of	of	ADP	IN	_	55	case	_	_
+55	Mormon	Mormon	PROPN	NNP	_	53	nmod	_	_
+56	.	.	PUNCT	.	_	21	punct	_	_
+
+# text = Now the Lamanites and the Amalekites and the people of Amulon had built a great city, which was called Jerusalem.
+# sent_id = 830
+# llm_note = Three-subject coord NP; "had built" perfect; relative clause "which was called Jerusalem" (passive)
+1	Now	now	ADV	RB	_	13	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	Lamanites	Lamanite	PROPN	NNPS	_	13	nsubj	_	_
+4	and	and	CCONJ	CC	_	6	cc	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	Amalekites	Amalekite	PROPN	NNPS	_	3	conj	_	_
+7	and	and	CCONJ	CC	_	9	cc	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	people	people	NOUN	NN	_	3	conj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	Amulon	Amulon	PROPN	NNP	_	9	nmod	_	_
+12	had	have	AUX	VBD	_	13	aux	_	_
+13	built	build	VERB	VBN	_	0	root	_	_
+14	a	a	DET	DT	_	16	det	_	_
+15	great	great	ADJ	JJ	_	16	amod	_	_
+16	city	city	NOUN	NN	_	13	obj	_	_
+17	,	,	PUNCT	,	_	16	punct	_	_
+18	which	which	PRON	WDT	_	20	nsubj:pass	_	_
+19	was	be	AUX	VBD	_	20	aux:pass	_	_
+20	called	call	VERB	VBN	_	16	acl:relcl	_	_
+21	Jerusalem	Jerusalem	PROPN	NNP	_	20	xcomp	_	_
+22	.	.	PUNCT	.	_	13	punct	_	_
+
+# text = Now the Lamanites of themselves were sufficiently hardened, but the Amalekites and the Amulonites were still harder; therefore they did cause the Lamanites that they should harden their hearts, that they should wax strong in wickedness and their abominations.
+# sent_id = 831
+# llm_note = Two contrast clauses; "of themselves" = obl; "were sufficiently hardened" = pass; "were still harder" = cop+adj; causative "did cause the Lamanites that they should harden"; two purpose "that"-clauses (harden/wax); "wax strong" = VERB + xcomp(adj)
+1	Now	now	ADV	RB	_	8	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	Lamanites	Lamanite	PROPN	NNPS	_	8	nsubj:pass	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	themselves	they	PRON	PRP	_	3	nmod	_	_
+6	were	be	AUX	VBD	_	8	aux:pass	_	_
+7	sufficiently	sufficiently	ADV	RB	_	8	advmod	_	_
+8	hardened	harden	VERB	VBN	_	0	root	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	but	but	CCONJ	CC	_	18	cc	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	Amalekites	Amalekite	PROPN	NNPS	_	18	nsubj	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	Amulonites	Amulonite	PROPN	NNPS	_	12	conj	_	_
+16	were	be	AUX	VBD	_	18	cop	_	_
+17	still	still	ADV	RB	_	18	advmod	_	_
+18	harder	hard	ADJ	JJR	_	8	conj	_	_
+19	;	;	PUNCT	,	_	23	punct	_	_
+20	therefore	therefore	ADV	RB	_	23	advmod	_	_
+21	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	23	nsubj	_	_
+22	did	do	AUX	VBD	_	23	aux	_	_
+23	cause	cause	VERB	VB	_	8	conj	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	Lamanites	Lamanite	PROPN	NNPS	_	23	obj	_	_
+26	that	that	SCONJ	IN	_	29	mark	_	_
+27	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	29	nsubj	_	_
+28	should	shall	AUX	MD	_	29	aux	_	_
+29	harden	harden	VERB	VB	_	23	ccomp	_	_
+30	their	they	PRON	PRP$	_	31	nmod:poss	_	_
+31	hearts	heart	NOUN	NNS	_	29	obj	_	_
+32	,	,	PUNCT	,	_	29	punct	_	_
+33	that	that	SCONJ	IN	_	36	mark	_	_
+34	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	36	nsubj	_	_
+35	should	shall	AUX	MD	_	36	aux	_	_
+36	wax	wax	VERB	VB	_	29	advcl	_	_
+37	strong	strong	ADJ	JJ	_	36	xcomp	_	_
+38	in	in	ADP	IN	_	39	case	_	_
+39	wickedness	wickedness	NOUN	NN	_	37	obl	_	_
+40	and	and	CCONJ	CC	_	42	cc	_	_
+41	their	they	PRON	PRP$	_	42	nmod:poss	_	_
+42	abominations	abomination	NOUN	NNS	_	39	conj	_	_
+43	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And it came to pass that Aaron came to the city of Jerusalem, and first began to preach to the Amalekites.
+# sent_id = 832
+# llm_note = AICTP; "Aaron came" = main; "first began to preach" = conj with aspectual began
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	Aaron	Aaron	PROPN	NNP	_	8	nsubj	_	_
+8	came	come	VERB	VBD	_	3	ccomp	_	_
+9	to	to	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	city	city	NOUN	NN	_	8	obl	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	Jerusalem	Jerusalem	PROPN	NNP	_	11	nmod	_	_
+14	,	,	PUNCT	,	_	8	punct	_	_
+15	and	and	CCONJ	CC	_	17	cc	_	_
+16	first	first	ADV	RB	_	17	advmod	_	_
+17	began	begin	VERB	VBD	_	8	conj	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	preach	preach	VERB	VB	_	17	xcomp	_	_
+20	to	to	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	Amalekites	Amalekite	PROPN	NNPS	_	19	obl	_	_
+23	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he began to preach to them in their synagogues, for they had built synagogues after the order of the Nehors; for many of the Amalekites and the Amulonites were after the order of the Nehors.
+# sent_id = 833
+# llm_note = "began to preach" = aspectual; two "for" clauses explaining context; "after the order of the Nehors" = obl
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	3	nsubj	_	_
+3	began	begin	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	preach	preach	VERB	VB	_	3	xcomp	_	_
+6	to	to	ADP	IN	_	7	case	_	_
+7	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	5	obl	_	_
+8	in	in	ADP	IN	_	10	case	_	_
+9	their	they	PRON	PRP$	_	10	nmod:poss	_	_
+10	synagogues	synagogue	NOUN	NNS	_	5	obl	_	_
+11	,	,	PUNCT	,	_	3	punct	_	_
+12	for	for	SCONJ	IN	_	15	mark	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	15	nsubj	_	_
+14	had	have	AUX	VBD	_	15	aux	_	_
+15	built	build	VERB	VBN	_	3	advcl	_	_
+16	synagogues	synagogue	NOUN	NNS	_	15	obj	_	_
+17	after	after	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	order	order	NOUN	NN	_	15	obl	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	Nehors	Nehor	PROPN	NNPS	_	19	nmod	_	_
+23	;	;	PUNCT	,	_	32	punct	_	_
+24	for	for	SCONJ	IN	_	32	mark	_	_
+25	many	many	PRON	NN	_	32	nsubj	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	Amalekites	Amalekite	PROPN	NNPS	_	25	nmod	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	Amulonites	Amulonite	PROPN	NNPS	_	28	conj	_	_
+32	were	be	VERB	VBD	_	3	advcl	_	_
+33	after	after	ADP	IN	_	35	case	_	_
+34	the	the	DET	DT	_	35	det	_	_
+35	order	order	NOUN	NN	_	32	obl	_	_
+36	of	of	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	Nehors	Nehor	PROPN	NNPS	_	35	nmod	_	_
+39	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore, as Aaron entered into one of their synagogues to preach unto the people, and as he was speaking unto them, behold there arose an Amalekite and began to contend with him, saying:
+# sent_id = 834
+# llm_note = Two parallel temporal "as"-clauses; "behold there arose an Amalekite" = existential (there=expl, Amalekite=nsubj); "and began to contend" = conj of arose; "saying:" = advcl/parataxis of arose
+1	Therefore	therefore	ADV	RB	_	27	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	as	as	SCONJ	IN	_	5	mark	_	_
+4	Aaron	Aaron	PROPN	NNP	_	5	nsubj	_	_
+5	entered	enter	VERB	VBD	_	27	advcl	_	_
+6	into	into	ADP	IN	_	7	case	_	_
+7	one	one	NUM	CD	_	5	obl	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	their	they	PRON	PRP$	_	10	nmod:poss	_	_
+10	synagogues	synagogue	NOUN	NNS	_	7	nmod	_	_
+11	to	to	PART	TO	_	12	mark	_	_
+12	preach	preach	VERB	VB	_	5	advcl	_	_
+13	unto	unto	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	people	people	NOUN	NN	_	12	obl	_	_
+16	,	,	PUNCT	,	_	5	punct	_	_
+17	and	and	CCONJ	CC	_	21	cc	_	_
+18	as	as	SCONJ	IN	_	21	mark	_	_
+19	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|Gender=Masc	21	nsubj	_	_
+20	was	be	AUX	VBD	_	21	aux	_	_
+21	speaking	speak	VERB	VBG	_	5	conj	_	_
+22	unto	unto	ADP	IN	_	23	case	_	_
+23	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	21	obl	_	_
+24	,	,	PUNCT	,	_	21	punct	_	_
+25	behold	behold	INTJ	UH	_	27	discourse	_	_
+26	there	there	PRON	EX	_	27	expl	_	_
+27	arose	arise	VERB	VBD	_	0	root	_	_
+28	an	a	DET	DT	_	29	det	_	_
+29	Amalekite	Amalekite	PROPN	NNP	_	27	nsubj	_	_
+30	and	and	CCONJ	CC	_	31	cc	_	_
+31	began	begin	VERB	VBD	_	27	conj	_	_
+32	to	to	PART	TO	_	33	mark	_	_
+33	contend	contend	VERB	VB	_	31	xcomp	_	_
+34	with	with	ADP	IN	_	35	case	_	_
+35	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	33	obl	_	_
+36	,	,	PUNCT	,	_	37	punct	_	_
+37	saying	say	VERB	VBG	_	27	advcl	_	_
+38	:	:	PUNCT	:	_	37	punct	_	_
+
+# text = What is that thou hast testified?
+# sent_id = 835
+# llm_note = Cleft-like question: "What is that thou hast testified" — "What" = nsubj of "is", "that thou hast testified" = ccomp/acl relative
+1	What	what	PRON	WP	_	2	nsubj	_	_
+2	is	be	VERB	VBZ	_	0	root	_	_
+3	that	that	SCONJ	IN	_	6	mark	_	_
+4	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	6	nsubj	_	_
+5	hast	have	AUX	VBZ	_	6	aux	_	_
+6	testified	testify	VERB	VBN	_	2	ccomp	_	_
+7	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = Hast thou seen an angel?
+# sent_id = 836
+# llm_note = "Hast thou seen" = present perfect interrogative inversion; "Hast"=AUX
+1	Hast	have	AUX	VBZ	_	3	aux	_	_
+2	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	3	nsubj	_	_
+3	seen	see	VERB	VBN	_	0	root	_	_
+4	an	a	DET	DT	_	5	det	_	_
+5	angel	angel	NOUN	NN	_	3	obj	_	_
+6	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Why do not angels appear unto us?
+# sent_id = 837
+1	Why	why	ADV	WRB	_	5	advmod	_	_
+2	do	do	AUX	VBP	_	5	aux	_	_
+3	not	not	PART	RB	_	5	advmod	_	_
+4	angels	angel	NOUN	NNS	_	5	nsubj	_	_
+5	appear	appear	VERB	VB	_	0	root	_	_
+6	unto	unto	ADP	IN	_	7	case	_	_
+7	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1	5	obl	_	_
+8	?	?	PUNCT	.	_	5	punct	_	_
+
+# text = Behold are not this people as good as thy people?
+# sent_id = 838
+# llm_note = Interrogative with "Behold" as discourse; "are not this people as good as thy people" = copular; "this people"=nsubj; "as good as thy people" = degree comparison
+1	Behold	behold	INTJ	UH	_	2	discourse	_	_
+2	are	be	AUX	VBP	_	0	root	_	_
+3	not	not	PART	RB	_	2	advmod	_	_
+4	this	this	DET	DT	_	5	det	_	_
+5	people	people	NOUN	NN	_	2	nsubj	_	_
+6	as	as	ADV	RB	_	7	advmod	_	_
+7	good	good	ADJ	JJ	_	2	xcomp	_	_
+8	as	as	ADP	IN	_	10	case	_	_
+9	thy	thou	PRON	PRP$	_	10	nmod:poss	_	_
+10	people	people	NOUN	NN	_	7	obl	_	_
+11	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = Thou also sayest, except we repent we shall perish.
+# sent_id = 839
+# llm_note = "sayest" speech/cognition verb with ccomp; "except we repent" = conditional advcl of "perish"; "we shall perish" = main ccomp
+1	Thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	3	nsubj	_	_
+2	also	also	ADV	RB	_	3	advmod	_	_
+3	sayest	say	VERB	VBZ	_	0	root	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	except	except	SCONJ	IN	_	7	mark	_	_
+6	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	7	nsubj	_	_
+7	repent	repent	VERB	VBP	_	10	advcl	_	_
+8	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	10	nsubj	_	_
+9	shall	shall	AUX	MD	_	10	aux	_	_
+10	perish	perish	VERB	VB	_	3	ccomp	_	_
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = How knowest thou the thought and intent of our hearts?
+# sent_id = 840
+# llm_note = interrogative inversion "knowest thou"; "the thought and intent" = coord obj; "of our hearts" = nmod
+1	How	how	ADV	WRB	_	2	advmod	_	_
+2	knowest	know	VERB	VBZ	_	0	root	_	_
+3	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	2	nsubj	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	thought	thought	NOUN	NN	_	2	obj	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	intent	intent	NOUN	NN	_	5	conj	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	our	we	PRON	PRP$	_	10	nmod:poss	_	_
+10	hearts	heart	NOUN	NNS	_	5	nmod	_	_
+11	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = How knowest thou that we have cause to repent?
+# sent_id = 841
+1	How	how	ADV	WRB	_	2	advmod	_	_
+2	knowest	know	VERB	VBZ	_	0	root	_	_
+3	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	2	nsubj	_	_
+4	that	that	SCONJ	IN	_	7	mark	_	_
+5	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	7	nsubj	_	_
+6	have	have	VERB	VBP	_	7	aux	_	_
+7	cause	cause	NOUN	NN	_	2	ccomp	_	_
+8	to	to	PART	TO	_	9	mark	_	_
+9	repent	repent	VERB	VB	_	7	acl	_	_
+10	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = How knowest thou that we are not a righteous people?
+# sent_id = 842
+1	How	how	ADV	WRB	_	2	advmod	_	_
+2	knowest	know	VERB	VBZ	_	0	root	_	_
+3	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	2	nsubj	_	_
+4	that	that	SCONJ	IN	_	10	mark	_	_
+5	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	10	nsubj	_	_
+6	are	be	AUX	VBP	_	10	cop	_	_
+7	not	not	PART	RB	_	10	advmod	_	_
+8	a	a	DET	DT	_	10	det	_	_
+9	righteous	righteous	ADJ	JJ	_	10	amod	_	_
+10	people	people	NOUN	NN	_	2	ccomp	_	_
+11	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = Behold, we have built sanctuaries, and we do assemble ourselves together to worship God.
+# sent_id = 843
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	5	nsubj	_	_
+4	have	have	AUX	VBP	_	5	aux	_	_
+5	built	build	VERB	VBN	_	0	root	_	_
+6	sanctuaries	sanctuary	NOUN	NNS	_	5	obj	_	_
+7	,	,	PUNCT	,	_	5	punct	_	_
+8	and	and	CCONJ	CC	_	11	cc	_	_
+9	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	11	nsubj	_	_
+10	do	do	AUX	VBP	_	11	aux	_	_
+11	assemble	assemble	VERB	VB	_	5	conj	_	_
+12	ourselves	we	PRON	PRP	_	11	obj	_	_
+13	together	together	ADV	RB	_	11	advmod	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	worship	worship	VERB	VB	_	11	advcl	_	_
+16	God	God	PROPN	NNP	_	15	obj	_	_
+17	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = We do believe that God will save all men.
+# sent_id = 844
+# llm_note = "do believe" emphatic; "that God will save all men" = ccomp
+1	We	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	3	nsubj	_	_
+2	do	do	AUX	VBP	_	3	aux	_	_
+3	believe	believe	VERB	VB	_	0	root	_	_
+4	that	that	SCONJ	IN	_	7	mark	_	_
+5	God	God	PROPN	NNP	_	7	nsubj	_	_
+6	will	will	AUX	MD	_	7	aux	_	_
+7	save	save	VERB	VB	_	3	ccomp	_	_
+8	all	all	DET	PDT	_	9	det:predet	_	_
+9	men	man	NOUN	NNS	_	7	obj	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now Aaron said unto him: Believest thou that the Son of God shall come to redeem mankind from their sins?
+# sent_id = 845
+# llm_note = "Believest thou" = inverted question; "that the Son of God shall come to redeem" = ccomp
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	Aaron	Aaron	PROPN	NNP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	_	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	3	obl	_	_
+6	:	:	PUNCT	:	_	3	punct	_	_
+7	Believest	believe	VERB	VBZ	_	3	ccomp	_	_
+8	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	7	nsubj	_	_
+9	that	that	SCONJ	IN	_	15	mark	_	_
+10	the	the	DET	DT	_	12	det	_	_
+11	Son	Son	PROPN	NNP	_	15	nsubj	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	God	God	PROPN	NNP	_	11	nmod	_	_
+14	shall	shall	AUX	MD	_	15	aux	_	_
+15	come	come	VERB	VB	_	7	ccomp	_	_
+16	to	to	PART	TO	_	17	mark	_	_
+17	redeem	redeem	VERB	VB	_	15	advcl	_	_
+18	mankind	mankind	NOUN	NN	_	17	obj	_	_
+19	from	from	ADP	IN	_	21	case	_	_
+20	their	they	PRON	PRP$	_	21	nmod:poss	_	_
+21	sins	sin	NOUN	NNS	_	17	obl	_	_
+22	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And the man said unto him: We do not believe that thou knowest any such thing.
+# sent_id = 846
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	man	man	NOUN	NN	_	4	nsubj	_	_
+4	said	say	VERB	VBD	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3|Gender=Masc	4	obl	_	_
+7	:	:	PUNCT	:	_	4	punct	_	_
+8	We	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	11	nsubj	_	_
+9	do	do	AUX	VBP	_	11	aux	_	_
+10	not	not	PART	RB	_	11	advmod	_	_
+11	believe	believe	VERB	VB	_	4	ccomp	_	_
+12	that	that	SCONJ	IN	_	14	mark	_	_
+13	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	14	nsubj	_	_
+14	knowest	know	VERB	VBZ	_	11	ccomp	_	_
+15	any	any	DET	DT	_	17	det	_	_
+16	such	such	ADJ	JJ	_	17	amod	_	_
+17	thing	thing	NOUN	NN	_	14	obj	_	_
+18	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = We do not believe in these foolish traditions.
+# sent_id = 847
+1	We	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	4	nsubj	_	_
+2	do	do	AUX	VBP	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	believe	believe	VERB	VB	_	0	root	_	_
+5	in	in	ADP	IN	_	8	case	_	_
+6	these	this	DET	DT	_	8	det	_	_
+7	foolish	foolish	ADJ	JJ	_	8	amod	_	_
+8	traditions	tradition	NOUN	NNS	_	4	obl	_	_
+9	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = We do not believe that thou knowest of things to come, neither do we believe that thy fathers and also that our fathers did know concerning the things which they spake, of that which is to come.
+# sent_id = 848
+# llm_note = Two parallel negated "believe" clauses (conj via "neither"); "neither do we believe" = formal inversion per §5; second ccomp has complex structure: "thy fathers and also that our fathers did know"; "of that which is to come" = nmod on "things"
+1	We	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	4	nsubj	_	_
+2	do	do	AUX	VBP	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	believe	believe	VERB	VB	_	0	root	_	_
+5	that	that	SCONJ	IN	_	7	mark	_	_
+6	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	7	nsubj	_	_
+7	knowest	know	VERB	VBZ	_	4	ccomp	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	things	thing	NOUN	NNS	_	7	obl	_	_
+10	to	to	PART	TO	_	11	mark	_	_
+11	come	come	VERB	VB	_	9	acl	_	_
+12	,	,	PUNCT	,	_	4	punct	_	_
+13	neither	neither	ADV	RB	_	16	advmod	_	_
+14	do	do	AUX	VBP	_	16	aux	_	_
+15	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	16	nsubj	_	_
+16	believe	believe	VERB	VB	_	4	conj	_	_
+17	that	that	SCONJ	IN	_	19	mark	_	_
+18	thy	thou	PRON	PRP$	_	19	nmod:poss	_	_
+19	fathers	father	NOUN	NNS	_	26	nsubj	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	also	also	ADV	RB	_	22	advmod	_	_
+22	that	that	SCONJ	IN	_	24	mark	_	_
+23	our	we	PRON	PRP$	_	24	nmod:poss	_	_
+24	fathers	father	NOUN	NNS	_	19	conj	_	_
+25	did	do	AUX	VBD	_	26	aux	_	_
+26	know	know	VERB	VB	_	16	ccomp	_	_
+27	concerning	concerning	ADP	IN	_	29	case	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	things	thing	NOUN	NNS	_	26	obl	_	_
+30	which	which	PRON	WDT	_	32	obj	_	_
+31	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	32	nsubj	_	_
+32	spake	speak	VERB	VBD	_	29	acl:relcl	_	_
+33	,	,	PUNCT	,	_	29	punct	_	_
+34	of	of	ADP	IN	_	35	case	_	_
+35	that	that	PRON	DT	_	29	nmod	_	_
+36	which	which	PRON	WDT	_	38	nsubj	_	_
+37	is	be	AUX	VBZ	_	38	cop	_	_
+38	to	to	PART	TO	_	39	mark	_	_
+39	come	come	VERB	VB	_	35	acl:relcl	_	_
+40	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Now Aaron began to open the scriptures unto them concerning the coming of Christ, and also concerning the resurrection of the dead, and that there could be no redemption for mankind save it were through the death and sufferings of Christ, and the atonement of his blood.
+# sent_id = 849
+# llm_note = "began to open" = aspectual; three parallel "concerning/and that" phrases as obl/ccomp of open; "save it were through" = conditional exception (save=SCONJ); "the death and sufferings" coord; "the atonement of his blood" = conj of "death and sufferings"
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	Aaron	Aaron	PROPN	NNP	_	3	nsubj	_	_
+3	began	begin	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	open	open	VERB	VB	_	3	xcomp	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	scriptures	scripture	NOUN	NNS	_	5	obj	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	5	obl	_	_
+10	concerning	concerning	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	coming	coming	NOUN	NN	_	5	obl	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Christ	Christ	PROPN	NNP	_	12	nmod	_	_
+15	,	,	PUNCT	,	_	12	punct	_	_
+16	and	and	CCONJ	CC	_	20	cc	_	_
+17	also	also	ADV	RB	_	20	advmod	_	_
+18	concerning	concerning	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	resurrection	resurrection	NOUN	NN	_	12	conj	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	dead	dead	NOUN	NN	_	20	nmod	_	_
+24	,	,	PUNCT	,	_	20	punct	_	_
+25	and	and	CCONJ	CC	_	31	cc	_	_
+26	that	that	SCONJ	IN	_	31	mark	_	_
+27	there	there	PRON	EX	_	31	expl	_	_
+28	could	can	AUX	MD	_	31	aux	_	_
+29	be	be	AUX	VB	_	31	aux	_	_
+30	no	no	DET	DT	_	31	det	_	_
+31	redemption	redemption	NOUN	NN	_	12	conj	_	_
+32	for	for	ADP	IN	_	33	case	_	_
+33	mankind	mankind	NOUN	NN	_	31	nmod	_	_
+34	save	save	SCONJ	IN	_	36	mark	_	_
+35	it	it	PRON	PRP	_	36	nsubj	_	_
+36	were	be	VERB	VBD	_	31	advcl	_	_
+37	through	through	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	_	39	det	_	_
+39	death	death	NOUN	NN	_	36	obl	_	_
+40	and	and	CCONJ	CC	_	41	cc	_	_
+41	sufferings	suffering	NOUN	NNS	_	39	conj	_	_
+42	of	of	ADP	IN	_	43	case	_	_
+43	Christ	Christ	PROPN	NNP	_	39	nmod	_	_
+44	,	,	PUNCT	,	_	39	punct	_	_
+45	and	and	CCONJ	CC	_	47	cc	_	_
+46	the	the	DET	DT	_	47	det	_	_
+47	atonement	atonement	NOUN	NN	_	39	conj	_	_
+48	of	of	ADP	IN	_	50	case	_	_
+49	his	he	PRON	PRP$	_	50	nmod:poss	_	_
+50	blood	blood	NOUN	NN	_	47	nmod	_	_
+51	.	.	PUNCT	.	_	3	punct	_	_
+

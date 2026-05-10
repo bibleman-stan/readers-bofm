@@ -1,0 +1,865 @@
+# text = The Father having raised me up unto you first, and sent me to bless you in turning away every one of you from his iniquities; and this because ye are the children of the covenant--
+# sent_id = 675
+# llm_note = nominative absolute: "The Father having raised me up" = advcl (participial absolute) attached to implied main verb; "sent" coordinated with "raised" under same participial; "and this because" = explanatory; sentence breaks off with em-dash; treating "having raised" as root of the nominative absolute, attaching to main discourse
+1	The	the	DET	DT	Definite=Def	2	det	_	_
+2	Father	father	NOUN	NN	Number=Sing	4	nsubj	_	_
+3	having	have	AUX	VBG	VerbForm=Part	4	aux	_	_
+4	raised	raise	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	4	obj	_	_
+6	up	up	ADP	RP	_	4	compound:prt	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	4	obl	_	_
+9	first	first	ADV	RB	_	4	advmod	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	sent	send	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	_
+13	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	12	obj	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	bless	bless	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+16	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	15	obj	_	_
+17	in	in	ADP	IN	_	18	case	_	_
+18	turning	turn	VERB	VBG	VerbForm=Ger	15	obl	_	_
+19	away	away	ADP	RP	_	18	compound:prt	_	_
+20	every	every	DET	DT	_	21	det	_	_
+21	one	one	NOUN	NN	Number=Sing	18	obj	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	21	nmod	_	_
+24	from	from	ADP	IN	_	26	case	_	_
+25	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	26	nmod:poss	_	_
+26	iniquities	iniquity	NOUN	NNS	Number=Plur	18	obl	_	_
+27	;	;	PUNCT	,	_	32	punct	_	_
+28	and	and	CCONJ	CC	_	32	cc	_	_
+29	this	this	PRON	DT	Number=Sing	32	nsubj	_	_
+30	because	because	SCONJ	IN	_	32	mark	_	_
+31	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	32	nsubj	_	_
+32	are	be	VERB	VBP	Mood=Ind|Tense=Pres	4	parataxis	_	_
+33	the	the	DET	DT	Definite=Def	34	det	_	_
+34	children	child	NOUN	NNS	Number=Plur	32	xcomp	_	_
+35	of	of	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	Definite=Def	37	det	_	_
+37	covenant	covenant	NOUN	NN	Number=Sing	34	nmod	_	_
+38	--	--	PUNCT	,	_	4	punct	_	_
+
+# text = And after that ye were blessed then fulfilleth the Father the covenant which he made with Abraham, saying:
+# sent_id = 676
+# llm_note = "after that ye were blessed" = temporal advcl; main verb "fulfilleth" = inverted present 3sg; "the Father" = nsubj postposed; "the covenant" = obj fronted partially; "which he made with Abraham" = acl:relcl; "saying:" = advcl
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	after	after	SCONJ	IN	_	6	mark	_	_
+3	that	that	SCONJ	IN	_	2	fixed	_	_
+4	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	6	nsubj:pass	_	_
+5	were	be	AUX	VBD	Mood=Ind|Tense=Past	6	aux:pass	_	_
+6	blessed	bless	VERB	VBN	Tense=Past|VerbForm=Part	8	advcl	_	_
+7	then	then	ADV	RB	_	8	advmod	_	_
+8	fulfilleth	fulfill	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	_
+9	the	the	DET	DT	Definite=Def	10	det	_	_
+10	Father	father	NOUN	NN	Number=Sing	8	nsubj	_	_
+11	the	the	DET	DT	Definite=Def	12	det	_	_
+12	covenant	covenant	NOUN	NN	Number=Sing	8	obj	_	_
+13	which	which	PRON	WDT	_	15	obj	_	_
+14	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	15	nsubj	_	_
+15	made	make	VERB	VBD	Mood=Ind|Tense=Past	12	acl:relcl	_	_
+16	with	with	ADP	IN	_	17	case	_	_
+17	Abraham	Abraham	PROPN	NNP	Number=Sing	15	obl	_	_
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	saying	say	VERB	VBG	VerbForm=Part	8	advcl	_	_
+20	:	:	PUNCT	:	_	19	punct	_	_
+
+# text = In thy seed shall all the kindreds of the earth be blessed-- unto the pouring out of the Holy Ghost through me upon the Gentiles, which blessing upon the Gentiles shall make them mighty above all, unto the scattering of my people, O house of Israel.
+# sent_id = 677
+# llm_note = inverted passive "shall...be blessed" with "kindreds" nsubj:pass; em-dash marks amplification: "unto the pouring out" = obl of "blessed" or appositive; "which blessing" = subject of "shall make"; "O house of Israel" = vocative
+1	In	in	ADP	IN	_	3	case	_	_
+2	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	3	nmod:poss	_	_
+3	seed	seed	NOUN	NN	Number=Sing	12	obl	_	_
+4	shall	shall	AUX	MD	_	12	aux	_	_
+5	all	all	DET	PDT	_	7	det:predet	_	_
+6	the	the	DET	DT	Definite=Def	7	det	_	_
+7	kindreds	kindred	NOUN	NNS	Number=Plur	12	nsubj:pass	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def	10	det	_	_
+10	earth	earth	NOUN	NN	Number=Sing	7	nmod	_	_
+11	be	be	AUX	VB	VerbForm=Inf	12	aux:pass	_	_
+12	blessed	bless	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+13	--	--	PUNCT	,	_	16	punct	_	_
+14	unto	unto	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	Definite=Def	16	det	_	_
+16	pouring	pouring	NOUN	NN	Number=Sing	12	obl	_	_
+17	out	out	ADP	RP	_	16	compound:prt	_	_
+18	of	of	ADP	IN	_	21	case	_	_
+19	the	the	DET	DT	Definite=Def	20	det	_	_
+20	Holy	Holy	ADJ	NNP	_	21	amod	_	_
+21	Ghost	Ghost	NOUN	NNP	Number=Sing	16	nmod	_	_
+22	through	through	ADP	IN	_	23	case	_	_
+23	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	16	obl	_	_
+24	upon	upon	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def	26	det	_	_
+26	Gentiles	Gentile	PROPN	NNPS	Number=Plur	16	obl	_	_
+27	,	,	PUNCT	,	_	34	punct	_	_
+28	which	which	PRON	WDT	_	29	det	_	_
+29	blessing	blessing	NOUN	NN	Number=Sing	34	nsubj	_	_
+30	upon	upon	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	Definite=Def	32	det	_	_
+32	Gentiles	Gentile	PROPN	NNPS	Number=Plur	29	nmod	_	_
+33	shall	shall	AUX	MD	_	34	aux	_	_
+34	make	make	VERB	VB	VerbForm=Inf	12	advcl	_	_
+35	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	34	obj	_	_
+36	mighty	mighty	ADJ	JJ	_	34	xcomp	_	_
+37	above	above	ADP	IN	_	38	case	_	_
+38	all	all	PRON	DT	_	36	obl	_	_
+39	,	,	PUNCT	,	_	42	punct	_	_
+40	unto	unto	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	Definite=Def	42	det	_	_
+42	scattering	scattering	NOUN	NN	Number=Sing	36	obl	_	_
+43	of	of	ADP	IN	_	45	case	_	_
+44	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	45	nmod:poss	_	_
+45	people	people	NOUN	NNS	Number=Plur	42	nmod	_	_
+46	,	,	PUNCT	,	_	48	punct	_	_
+47	O	o	INTJ	UH	_	48	discourse	_	_
+48	house	house	NOUN	NN	Number=Sing	12	vocative	_	_
+49	of	of	ADP	IN	_	50	case	_	_
+50	Israel	Israel	PROPN	NNP	Number=Sing	48	nmod	_	_
+51	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = And they shall be a scourge unto the people of this land.
+# sent_id = 678
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	4	nsubj	_	_
+3	shall	shall	AUX	MD	_	4	aux	_	_
+4	be	be	VERB	VB	VerbForm=Inf	0	root	_	_
+5	a	a	DET	DT	Definite=Ind	6	det	_	_
+6	scourge	scourge	NOUN	NN	Number=Sing	4	xcomp	_	_
+7	unto	unto	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def	9	det	_	_
+9	people	people	NOUN	NNS	Number=Plur	6	obl	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	this	this	DET	DT	Number=Sing	12	det	_	_
+12	land	land	NOUN	NN	Number=Sing	9	nmod	_	_
+13	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Nevertheless, when they shall have received the fulness of my gospel, then if they shall harden their hearts against me I will return their iniquities upon their own heads, saith the Father.
+# sent_id = 679
+# llm_note = "Nevertheless" ADV; temporal "when" advcl; conditional "if" advcl; main clause "I will return"; "saith the Father" = parenthetical parataxis
+1	Nevertheless	nevertheless	ADV	RB	_	25	advmod	_	_
+2	,	,	PUNCT	,	_	25	punct	_	_
+3	when	when	SCONJ	WRB	_	7	mark	_	_
+4	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	7	nsubj	_	_
+5	shall	shall	AUX	MD	_	7	aux	_	_
+6	have	have	AUX	VB	VerbForm=Inf	7	aux	_	_
+7	received	receive	VERB	VBN	Tense=Past|VerbForm=Part	25	advcl	_	_
+8	the	the	DET	DT	Definite=Def	9	det	_	_
+9	fulness	fulness	NOUN	NN	Number=Sing	7	obj	_	_
+10	of	of	ADP	IN	_	12	case	_	_
+11	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	12	nmod:poss	_	_
+12	gospel	gospel	NOUN	NN	Number=Sing	9	nmod	_	_
+13	,	,	PUNCT	,	_	25	punct	_	_
+14	then	then	ADV	RB	_	25	advmod	_	_
+15	if	if	SCONJ	IN	_	18	mark	_	_
+16	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	18	nsubj	_	_
+17	shall	shall	AUX	MD	_	18	aux	_	_
+18	harden	harden	VERB	VB	VerbForm=Inf	25	advcl	_	_
+19	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	20	nmod:poss	_	_
+20	hearts	heart	NOUN	NNS	Number=Plur	18	obj	_	_
+21	against	against	ADP	IN	_	22	case	_	_
+22	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	18	obl	_	_
+23	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	25	nsubj	_	_
+24	will	will	AUX	MD	_	25	aux	_	_
+25	return	return	VERB	VB	VerbForm=Inf	0	root	_	_
+26	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	27	nmod:poss	_	_
+27	iniquities	iniquity	NOUN	NNS	Number=Plur	25	obj	_	_
+28	upon	upon	ADP	IN	_	31	case	_	_
+29	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	31	nmod:poss	_	_
+30	own	own	ADJ	JJ	_	31	amod	_	_
+31	heads	head	NOUN	NNS	Number=Plur	25	obl	_	_
+32	,	,	PUNCT	,	_	34	punct	_	_
+33	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	25	parataxis	_	_
+34	the	the	DET	DT	Definite=Def	35	det	_	_
+35	Father	father	NOUN	NN	Number=Sing	33	nsubj	_	_
+36	.	.	PUNCT	.	_	25	punct	_	_
+
+# text = And I will remember the covenant which I have made with my people; and I have covenanted with them that I would gather them together in mine own due time, that I would give unto them again the land of their fathers for their inheritance, which is the land of Jerusalem, which is the promised land unto them forever, saith the Father.
+# sent_id = 680
+# llm_note = two main clauses coordinated; "which I have made" = acl:relcl of "covenant"; "that I would gather" = ccomp of "covenanted"; second "that I would give" = conj of first "that I would gather"; two "which is" appositive relative clauses; "saith the Father" = final parataxis
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+3	will	will	AUX	MD	_	4	aux	_	_
+4	remember	remember	VERB	VB	VerbForm=Inf	0	root	_	_
+5	the	the	DET	DT	Definite=Def	6	det	_	_
+6	covenant	covenant	NOUN	NN	Number=Sing	4	obj	_	_
+7	which	which	PRON	WDT	_	10	obj	_	_
+8	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	10	nsubj	_	_
+9	have	have	AUX	VBP	Mood=Ind|Tense=Pres	10	aux	_	_
+10	made	make	VERB	VBN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
+11	with	with	ADP	IN	_	13	case	_	_
+12	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	13	nmod:poss	_	_
+13	people	people	NOUN	NNS	Number=Plur	10	obl	_	_
+14	;	;	PUNCT	,	_	18	punct	_	_
+15	and	and	CCONJ	CC	_	18	cc	_	_
+16	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	18	nsubj	_	_
+17	have	have	AUX	VBP	Mood=Ind|Tense=Pres	18	aux	_	_
+18	covenanted	covenant	VERB	VBN	Tense=Past|VerbForm=Part	4	conj	_	_
+19	with	with	ADP	IN	_	20	case	_	_
+20	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	18	obl	_	_
+21	that	that	SCONJ	IN	_	24	mark	_	_
+22	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	24	nsubj	_	_
+23	would	will	AUX	MD	_	24	aux	_	_
+24	gather	gather	VERB	VB	VerbForm=Inf	18	ccomp	_	_
+25	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	24	obj	_	_
+26	together	together	ADV	RB	_	24	advmod	_	_
+27	in	in	ADP	IN	_	30	case	_	_
+28	mine	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	30	nmod:poss	_	_
+29	own	own	ADJ	JJ	_	30	amod	_	_
+30	due	due	ADJ	JJ	_	31	amod	_	_
+31	time	time	NOUN	NN	Number=Sing	24	obl	_	_
+32	,	,	PUNCT	,	_	36	punct	_	_
+33	that	that	SCONJ	IN	_	36	mark	_	_
+34	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	36	nsubj	_	_
+35	would	will	AUX	MD	_	36	aux	_	_
+36	give	give	VERB	VB	VerbForm=Inf	24	conj	_	_
+37	unto	unto	ADP	IN	_	38	case	_	_
+38	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	36	obl	_	_
+39	again	again	ADV	RB	_	36	advmod	_	_
+40	the	the	DET	DT	Definite=Def	41	det	_	_
+41	land	land	NOUN	NN	Number=Sing	36	obj	_	_
+42	of	of	ADP	IN	_	44	case	_	_
+43	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	44	nmod:poss	_	_
+44	fathers	father	NOUN	NNS	Number=Plur	41	nmod	_	_
+45	for	for	ADP	IN	_	47	case	_	_
+46	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	47	nmod:poss	_	_
+47	inheritance	inheritance	NOUN	NN	Number=Sing	36	obl	_	_
+48	,	,	PUNCT	,	_	50	punct	_	_
+49	which	which	PRON	WDT	_	50	nsubj	_	_
+50	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	41	acl:relcl	_	_
+51	the	the	DET	DT	Definite=Def	52	det	_	_
+52	land	land	NOUN	NN	Number=Sing	50	xcomp	_	_
+53	of	of	ADP	IN	_	54	case	_	_
+54	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	52	nmod	_	_
+55	,	,	PUNCT	,	_	57	punct	_	_
+56	which	which	PRON	WDT	_	57	nsubj	_	_
+57	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	52	acl:relcl	_	_
+58	the	the	DET	DT	Definite=Def	60	det	_	_
+59	promised	promise	VERB	VBN	Tense=Past|VerbForm=Part	60	amod	_	_
+60	land	land	NOUN	NN	Number=Sing	57	xcomp	_	_
+61	unto	unto	ADP	IN	_	62	case	_	_
+62	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	60	obl	_	_
+63	forever	forever	ADV	RB	_	60	advmod	_	_
+64	,	,	PUNCT	,	_	66	punct	_	_
+65	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	4	parataxis	_	_
+66	the	the	DET	DT	Definite=Def	67	det	_	_
+67	Father	father	NOUN	NN	Number=Sing	65	nsubj	_	_
+68	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it shall come to pass that the time cometh, when the fulness of my gospel shall be preached unto them;
+# sent_id = 681
+# llm_note = future AICTP variant; "the time cometh" = ccomp of "come to pass" via "pass"; "when...shall be preached" = temporal acl:relcl of "time"
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	4	expl	_	_
+3	shall	shall	AUX	MD	_	4	aux	_	_
+4	come	come	VERB	VB	VerbForm=Inf	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	10	mark	_	_
+8	the	the	DET	DT	Definite=Def	9	det	_	_
+9	time	time	NOUN	NN	Number=Sing	10	nsubj	_	_
+10	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	4	ccomp	_	_
+11	,	,	PUNCT	,	_	20	punct	_	_
+12	when	when	SCONJ	WRB	_	20	mark	_	_
+13	the	the	DET	DT	Definite=Def	14	det	_	_
+14	fulness	fulness	NOUN	NN	Number=Sing	20	nsubj:pass	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	17	nmod:poss	_	_
+17	gospel	gospel	NOUN	NN	Number=Sing	14	nmod	_	_
+18	shall	shall	AUX	MD	_	20	aux	_	_
+19	be	be	AUX	VB	VerbForm=Inf	20	aux:pass	_	_
+20	preached	preach	VERB	VBN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
+21	unto	unto	ADP	IN	_	22	case	_	_
+22	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	20	obl	_	_
+23	;	;	PUNCT	,	_	4	punct	_	_
+
+# text = And they shall believe in me, that I am Jesus Christ, the Son of God, and shall pray unto the Father in my name.
+# sent_id = 682
+# llm_note = "that I am Jesus Christ" = ccomp of "believe"; "the Son of God" = appos of "Jesus Christ"; "and shall pray" = conj of "shall believe"
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	4	nsubj	_	_
+3	shall	shall	AUX	MD	_	4	aux	_	_
+4	believe	believe	VERB	VB	VerbForm=Inf	0	root	_	_
+5	in	in	ADP	IN	_	6	case	_	_
+6	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	4	obl	_	_
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	that	that	SCONJ	IN	_	10	mark	_	_
+9	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	10	nsubj	_	_
+10	am	be	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres	4	ccomp	_	_
+11	Jesus	Jesus	PROPN	NNP	Number=Sing	10	xcomp	_	_
+12	Christ	Christ	PROPN	NNP	Number=Sing	11	flat	_	_
+13	,	,	PUNCT	,	_	15	punct	_	_
+14	the	the	DET	DT	Definite=Def	15	det	_	_
+15	Son	Son	PROPN	NNP	Number=Sing	11	appos	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	God	God	PROPN	NNP	Number=Sing	15	nmod	_	_
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	shall	shall	AUX	MD	_	21	aux	_	_
+21	pray	pray	VERB	VB	VerbForm=Inf	4	conj	_	_
+22	unto	unto	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def	24	det	_	_
+24	Father	father	NOUN	NN	Number=Sing	21	obl	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	27	nmod:poss	_	_
+27	name	name	NOUN	NN	Number=Sing	21	obl	_	_
+28	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Then shall their watchmen lift up their voice, and with the voice together shall they sing; for they shall see eye to eye.
+# sent_id = 683
+# llm_note = inverted future: "watchmen" nsubj of "lift"; "and...shall they sing" = second inversion: "they" nsubj; "with the voice together" = obl; "eye to eye" = fixed idiomatic obl
+1	Then	then	ADV	RB	_	5	advmod	_	_
+2	shall	shall	AUX	MD	_	5	aux	_	_
+3	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	4	nmod:poss	_	_
+4	watchmen	watchman	NOUN	NNS	Number=Plur	5	nsubj	_	_
+5	lift	lift	VERB	VB	VerbForm=Inf	0	root	_	_
+6	up	up	ADP	RP	_	5	compound:prt	_	_
+7	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	8	nmod:poss	_	_
+8	voice	voice	NOUN	NN	Number=Sing	5	obj	_	_
+9	,	,	PUNCT	,	_	17	punct	_	_
+10	and	and	CCONJ	CC	_	17	cc	_	_
+11	with	with	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	Definite=Def	13	det	_	_
+13	voice	voice	NOUN	NN	Number=Sing	17	obl	_	_
+14	together	together	ADV	RB	_	17	advmod	_	_
+15	shall	shall	AUX	MD	_	17	aux	_	_
+16	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	17	nsubj	_	_
+17	sing	sing	VERB	VB	VerbForm=Inf	5	conj	_	_
+18	;	;	PUNCT	,	_	22	punct	_	_
+19	for	for	SCONJ	IN	_	22	mark	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	22	nsubj	_	_
+21	shall	shall	AUX	MD	_	22	aux	_	_
+22	see	see	VERB	VB	VerbForm=Inf	5	advcl	_	_
+23	eye	eye	NOUN	NN	Number=Sing	22	obl	_	_
+24	to	to	ADP	IN	_	25	case	_	_
+25	eye	eye	NOUN	NN	Number=Sing	23	nmod	_	_
+26	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Then will the Father gather them together again, and give unto them Jerusalem for the land of their inheritance.
+# sent_id = 684
+# llm_note = inverted future: "Father" nsubj of "gather"; "give" conj of "gather"; "Jerusalem" = obj of "give"; "for the land" = purpose obl
+1	Then	then	ADV	RB	_	5	advmod	_	_
+2	will	will	AUX	MD	_	5	aux	_	_
+3	the	the	DET	DT	Definite=Def	4	det	_	_
+4	Father	father	NOUN	NN	Number=Sing	5	nsubj	_	_
+5	gather	gather	VERB	VB	VerbForm=Inf	0	root	_	_
+6	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	5	obj	_	_
+7	together	together	ADV	RB	_	5	advmod	_	_
+8	again	again	ADV	RB	_	5	advmod	_	_
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	give	give	VERB	VB	VerbForm=Inf	5	conj	_	_
+12	unto	unto	ADP	IN	_	13	case	_	_
+13	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	11	obl	_	_
+14	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	11	obj	_	_
+15	for	for	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	Definite=Def	17	det	_	_
+17	land	land	NOUN	NN	Number=Sing	11	obl	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	20	nmod:poss	_	_
+20	inheritance	inheritance	NOUN	NN	Number=Sing	17	nmod	_	_
+21	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Then shall they break forth into joy--
+# sent_id = 685
+1	Then	then	ADV	RB	_	4	advmod	_	_
+2	shall	shall	AUX	MD	_	4	aux	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	4	nsubj	_	_
+4	break	break	VERB	VB	VerbForm=Inf	0	root	_	_
+5	forth	forth	ADV	RB	_	4	advmod	_	_
+6	into	into	ADP	IN	_	7	case	_	_
+7	joy	joy	NOUN	NN	Number=Sing	4	obl	_	_
+8	--	--	PUNCT	,	_	4	punct	_	_
+
+# text = Sing together, ye waste places of Jerusalem; for the Father hath comforted his people, he hath redeemed Jerusalem.
+# sent_id = 686
+# llm_note = imperative "Sing" with vocative "ye waste places of Jerusalem"; "waste places" = appos/modifier; "for" introduces causal advcl; two coord clauses; "he hath redeemed" = conj of "hath comforted"
+1	Sing	sing	VERB	VB	Mood=Imp	0	root	_	_
+2	together	together	ADV	RB	_	1	advmod	_	_
+3	,	,	PUNCT	,	_	6	punct	_	_
+4	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	1	vocative	_	_
+5	waste	waste	ADJ	JJ	_	6	amod	_	_
+6	places	place	NOUN	NNS	Number=Plur	4	appos	_	_
+7	of	of	ADP	IN	_	8	case	_	_
+8	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	6	nmod	_	_
+9	;	;	PUNCT	,	_	14	punct	_	_
+10	for	for	SCONJ	IN	_	14	mark	_	_
+11	the	the	DET	DT	Definite=Def	12	det	_	_
+12	Father	father	NOUN	NN	Number=Sing	14	nsubj	_	_
+13	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	14	aux	_	_
+14	comforted	comfort	VERB	VBN	Tense=Past|VerbForm=Part	1	advcl	_	_
+15	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	16	nmod:poss	_	_
+16	people	people	NOUN	NNS	Number=Plur	14	obj	_	_
+17	,	,	PUNCT	,	_	20	punct	_	_
+18	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	20	nsubj	_	_
+19	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	20	aux	_	_
+20	redeemed	redeem	VERB	VBN	Tense=Past|VerbForm=Part	14	conj	_	_
+21	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	20	obj	_	_
+22	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = The Father hath made bare his holy arm in the eyes of all the nations; and all the ends of the earth shall see the salvation of the Father; and the Father and I are one.
+# sent_id = 687
+# llm_note = "made bare" = idiom, "bare" xcomp/resultative; three coordinate main clauses; "the Father and I are one" = copular with compound subject
+1	The	the	DET	DT	Definite=Def	2	det	_	_
+2	Father	father	NOUN	NN	Number=Sing	4	nsubj	_	_
+3	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	4	aux	_	_
+4	made	make	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	bare	bare	ADJ	JJ	_	4	xcomp	_	_
+6	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	8	nmod:poss	_	_
+7	holy	holy	ADJ	JJ	_	8	amod	_	_
+8	arm	arm	NOUN	NN	Number=Sing	4	obj	_	_
+9	in	in	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def	11	det	_	_
+11	eyes	eye	NOUN	NNS	Number=Plur	4	obl	_	_
+12	of	of	ADP	IN	_	15	case	_	_
+13	all	all	DET	PDT	_	15	det:predet	_	_
+14	the	the	DET	DT	Definite=Def	15	det	_	_
+15	nations	nation	NOUN	NNS	Number=Plur	11	nmod	_	_
+16	;	;	PUNCT	,	_	25	punct	_	_
+17	and	and	CCONJ	CC	_	25	cc	_	_
+18	all	all	DET	PDT	_	20	det:predet	_	_
+19	the	the	DET	DT	Definite=Def	20	det	_	_
+20	ends	end	NOUN	NNS	Number=Plur	25	nsubj	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	Definite=Def	23	det	_	_
+23	earth	earth	NOUN	NN	Number=Sing	20	nmod	_	_
+24	shall	shall	AUX	MD	_	25	aux	_	_
+25	see	see	VERB	VB	VerbForm=Inf	4	conj	_	_
+26	the	the	DET	DT	Definite=Def	27	det	_	_
+27	salvation	salvation	NOUN	NN	Number=Sing	25	obj	_	_
+28	of	of	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	Definite=Def	30	det	_	_
+30	Father	father	NOUN	NN	Number=Sing	27	nmod	_	_
+31	;	;	PUNCT	,	_	37	punct	_	_
+32	and	and	CCONJ	CC	_	37	cc	_	_
+33	the	the	DET	DT	Definite=Def	34	det	_	_
+34	Father	father	NOUN	NN	Number=Sing	37	nsubj	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	34	conj	_	_
+37	are	be	VERB	VBP	Mood=Ind|Tense=Pres	4	conj	_	_
+38	one	one	NUM	CD	NumType=Card	37	xcomp	_	_
+39	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And then shall be brought to pass that which is written:
+# sent_id = 688
+# llm_note = passive inversion: "that which is written" = nsubj:pass postposed; "that" PRON relative antecedent of "which is written"; "to pass" = xcomp of "brought" in AICTP-like construction
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	then	then	ADV	RB	_	5	advmod	_	_
+3	shall	shall	AUX	MD	_	5	aux	_	_
+4	be	be	AUX	VB	VerbForm=Inf	5	aux:pass	_	_
+5	brought	bring	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	to	to	PART	TO	_	7	mark	_	_
+7	pass	pass	VERB	VB	VerbForm=Inf	5	xcomp	_	_
+8	that	that	PRON	DT	_	5	nsubj:pass	_	_
+9	which	which	PRON	WDT	_	11	nsubj	_	_
+10	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	11	aux:pass	_	_
+11	written	write	VERB	VBN	Tense=Past|VerbForm=Part	8	acl:relcl	_	_
+12	:	:	PUNCT	:	_	5	punct	_	_
+
+# text = Awake, awake again, and put on thy strength, O Zion; put on thy beautiful garments, O Jerusalem, the holy city, for henceforth there shall no more come into thee the uncircumcised and the unclean.
+# sent_id = 689
+# llm_note = imperative series: "Awake", "awake again", "put on thy strength", "put on thy beautiful garments"; "O Zion" and "O Jerusalem" = vocatives; "the holy city" = appos of Jerusalem; "for henceforth...come into thee" = advcl; existential "there"; "uncircumcised...and the unclean" = coordinated nsubj:pass
+1	Awake	awake	VERB	VB	Mood=Imp	0	root	_	_
+2	,	,	PUNCT	,	_	3	punct	_	_
+3	awake	awake	VERB	VB	Mood=Imp	1	conj	_	_
+4	again	again	ADV	RB	_	3	advmod	_	_
+5	,	,	PUNCT	,	_	7	punct	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	put	put	VERB	VB	Mood=Imp	1	conj	_	_
+8	on	on	ADP	RP	_	7	compound:prt	_	_
+9	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	10	nmod:poss	_	_
+10	strength	strength	NOUN	NN	Number=Sing	7	obj	_	_
+11	,	,	PUNCT	,	_	13	punct	_	_
+12	O	o	INTJ	UH	_	13	discourse	_	_
+13	Zion	Zion	PROPN	NNP	Number=Sing	7	vocative	_	_
+14	;	;	PUNCT	,	_	15	punct	_	_
+15	put	put	VERB	VB	Mood=Imp	1	conj	_	_
+16	on	on	ADP	RP	_	15	compound:prt	_	_
+17	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	19	nmod:poss	_	_
+18	beautiful	beautiful	ADJ	JJ	_	19	amod	_	_
+19	garments	garment	NOUN	NNS	Number=Plur	15	obj	_	_
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	O	o	INTJ	UH	_	22	discourse	_	_
+22	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	15	vocative	_	_
+23	,	,	PUNCT	,	_	26	punct	_	_
+24	the	the	DET	DT	Definite=Def	26	det	_	_
+25	holy	holy	ADJ	JJ	_	26	amod	_	_
+26	city	city	NOUN	NN	Number=Sing	22	appos	_	_
+27	,	,	PUNCT	,	_	34	punct	_	_
+28	for	for	SCONJ	IN	_	34	mark	_	_
+29	henceforth	henceforth	ADV	RB	_	34	advmod	_	_
+30	there	there	PRON	EX	_	34	expl	_	_
+31	shall	shall	AUX	MD	_	34	aux	_	_
+32	no	no	ADV	RB	_	33	advmod	_	_
+33	more	more	ADV	RBR	_	34	advmod	_	_
+34	come	come	VERB	VB	VerbForm=Inf	15	advcl	_	_
+35	into	into	ADP	IN	_	36	case	_	_
+36	thee	thee	PRON	PRP	Case=Acc|Number=Sing|Person=2	34	obl	_	_
+37	the	the	DET	DT	Definite=Def	38	det	_	_
+38	uncircumcised	uncircumcised	NOUN	NN	Number=Sing	34	nsubj	_	_
+39	and	and	CCONJ	CC	_	41	cc	_	_
+40	the	the	DET	DT	Definite=Def	41	det	_	_
+41	unclean	unclean	NOUN	NN	Number=Sing	38	conj	_	_
+42	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = Shake thyself from the dust; arise, sit down, O Jerusalem; loose thyself from the bands of thy neck, O captive daughter of Zion.
+# sent_id = 690
+# llm_note = series of imperatives: "Shake", "arise", "sit down", "loose"; "O Jerusalem" and "O captive daughter of Zion" = vocatives; "captive daughter" = compound noun; "of Zion" = nmod
+1	Shake	shake	VERB	VB	Mood=Imp	0	root	_	_
+2	thyself	thyself	PRON	PRP	Case=Acc|Number=Sing|Person=2|Reflex=Yes	1	obj	_	_
+3	from	from	ADP	IN	_	5	case	_	_
+4	the	the	DET	DT	Definite=Def	5	det	_	_
+5	dust	dust	NOUN	NN	Number=Sing	1	obl	_	_
+6	;	;	PUNCT	,	_	7	punct	_	_
+7	arise	arise	VERB	VB	Mood=Imp	1	conj	_	_
+8	,	,	PUNCT	,	_	9	punct	_	_
+9	sit	sit	VERB	VB	Mood=Imp	1	conj	_	_
+10	down	down	ADP	RP	_	9	compound:prt	_	_
+11	,	,	PUNCT	,	_	13	punct	_	_
+12	O	o	INTJ	UH	_	13	discourse	_	_
+13	Jerusalem	Jerusalem	PROPN	NNP	Number=Sing	9	vocative	_	_
+14	;	;	PUNCT	,	_	15	punct	_	_
+15	loose	loose	VERB	VB	Mood=Imp	1	conj	_	_
+16	thyself	thyself	PRON	PRP	Case=Acc|Number=Sing|Person=2|Reflex=Yes	15	obj	_	_
+17	from	from	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	Definite=Def	19	det	_	_
+19	bands	band	NOUN	NNS	Number=Plur	15	obl	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	22	nmod:poss	_	_
+22	neck	neck	NOUN	NN	Number=Sing	19	nmod	_	_
+23	,	,	PUNCT	,	_	25	punct	_	_
+24	O	o	INTJ	UH	_	26	discourse	_	_
+25	captive	captive	ADJ	JJ	_	26	amod	_	_
+26	daughter	daughter	NOUN	NN	Number=Sing	15	vocative	_	_
+27	of	of	ADP	IN	_	28	case	_	_
+28	Zion	Zion	PROPN	NNP	Number=Sing	26	nmod	_	_
+29	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = For thus saith the Lord: Ye have sold yourselves for naught, and ye shall be redeemed without money.
+# sent_id = 691
+# llm_note = "thus saith the Lord" = speech-reporting frame; inverted: "the Lord" nsubj; "Ye have sold yourselves" + "ye shall be redeemed" = coordinated clauses
+1	For	for	SCONJ	IN	_	3	mark	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	_
+4	the	the	DET	DT	Definite=Def	5	det	_	_
+5	Lord	Lord	PROPN	NNP	Number=Sing	3	nsubj	_	_
+6	:	:	PUNCT	:	_	3	punct	_	_
+7	Ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	9	nsubj	_	_
+8	have	have	AUX	VBP	Mood=Ind|Tense=Pres	9	aux	_	_
+9	sold	sell	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
+10	yourselves	yourself	PRON	PRP	Case=Acc|Number=Plur|Person=2|Reflex=Yes	9	obj	_	_
+11	for	for	ADP	IN	_	12	case	_	_
+12	naught	naught	NOUN	NN	Number=Sing	9	obl	_	_
+13	,	,	PUNCT	,	_	18	punct	_	_
+14	and	and	CCONJ	CC	_	18	cc	_	_
+15	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	18	nsubj:pass	_	_
+16	shall	shall	AUX	MD	_	18	aux	_	_
+17	be	be	AUX	VB	VerbForm=Inf	18	aux:pass	_	_
+18	redeemed	redeem	VERB	VBN	Tense=Past|VerbForm=Part	9	conj	_	_
+19	without	without	ADP	IN	_	20	case	_	_
+20	money	money	NOUN	NN	Number=Sing	18	obl	_	_
+21	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Verily, verily, I say unto you, that my people shall know my name; yea, in that day they shall know that I am he that doth speak.
+# sent_id = 692
+# llm_note = "Verily, verily" discourse; "that my people shall know my name" = ccomp of "say"; "yea" discourse of second clause; "in that day" = obl of second "know"; "that I am he that doth speak" = ccomp of second "know"; "he that doth speak" = acl:relcl of "he"
+1	Verily	verily	ADV	RB	_	6	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	verily	verily	ADV	RB	_	6	advmod	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	6	nsubj	_	_
+6	say	say	VERB	VBP	Mood=Ind|Tense=Pres	0	root	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	6	obl	_	_
+9	,	,	PUNCT	,	_	14	punct	_	_
+10	that	that	SCONJ	IN	_	14	mark	_	_
+11	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	12	nmod:poss	_	_
+12	people	people	NOUN	NNS	Number=Plur	14	nsubj	_	_
+13	shall	shall	AUX	MD	_	14	aux	_	_
+14	know	know	VERB	VB	VerbForm=Inf	6	ccomp	_	_
+15	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	16	nmod:poss	_	_
+16	name	name	NOUN	NN	Number=Sing	14	obj	_	_
+17	;	;	PUNCT	,	_	25	punct	_	_
+18	yea	yea	INTJ	UH	_	25	discourse	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	in	in	ADP	IN	_	22	case	_	_
+21	that	that	DET	DT	Number=Sing	22	det	_	_
+22	day	day	NOUN	NN	Number=Sing	25	obl	_	_
+23	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	25	nsubj	_	_
+24	shall	shall	AUX	MD	_	25	aux	_	_
+25	know	know	VERB	VB	VerbForm=Inf	14	conj	_	_
+26	that	that	SCONJ	IN	_	28	mark	_	_
+27	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	28	nsubj	_	_
+28	am	be	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres	25	ccomp	_	_
+29	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	28	xcomp	_	_
+30	that	that	PRON	WDT	_	31	nsubj	_	_
+31	doth	do	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	32	aux	_	_
+32	speak	speak	VERB	VB	VerbForm=Inf	29	acl:relcl	_	_
+33	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And then shall they say: How beautiful upon the mountains are the feet of him that bringeth good tidings unto them, that publisheth peace; that bringeth good tidings unto them of good, that publisheth salvation; that saith unto Zion: Thy God reigneth!
+# sent_id = 693
+# llm_note = "shall they say" = inverted future; quotation begins "How beautiful"; exclamative/copular inversion: "beautiful" xcomp, "are" cop, "feet" nsubj; three parallel "that" clauses (relative) modifying "him": "that bringeth...that publisheth...that bringeth...that publisheth...that saith"; final "Thy God reigneth!" = ccomp of "saith"
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	then	then	ADV	RB	_	5	advmod	_	_
+3	shall	shall	AUX	MD	_	5	aux	_	_
+4	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	5	nsubj	_	_
+5	say	say	VERB	VB	VerbForm=Inf	0	root	_	_
+6	:	:	PUNCT	:	_	5	punct	_	_
+7	How	how	ADV	WRB	_	8	advmod	_	_
+8	beautiful	beautiful	ADJ	JJ	_	12	xcomp	_	_
+9	upon	upon	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def	11	det	_	_
+11	mountains	mountain	NOUN	NNS	Number=Plur	8	obl	_	_
+12	are	be	VERB	VBP	Mood=Ind|Tense=Pres	5	ccomp	_	_
+13	the	the	DET	DT	Definite=Def	14	det	_	_
+14	feet	foot	NOUN	NNS	Number=Plur	12	nsubj	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	14	nmod	_	_
+17	that	that	PRON	WDT	_	18	nsubj	_	_
+18	bringeth	bring	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	16	acl:relcl	_	_
+19	good	good	ADJ	JJ	_	20	amod	_	_
+20	tidings	tiding	NOUN	NNS	Number=Plur	18	obj	_	_
+21	unto	unto	ADP	IN	_	22	case	_	_
+22	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	18	obl	_	_
+23	,	,	PUNCT	,	_	25	punct	_	_
+24	that	that	PRON	WDT	_	25	nsubj	_	_
+25	publisheth	publish	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	16	acl:relcl	_	_
+26	peace	peace	NOUN	NN	Number=Sing	25	obj	_	_
+27	;	;	PUNCT	,	_	29	punct	_	_
+28	that	that	PRON	WDT	_	29	nsubj	_	_
+29	bringeth	bring	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	16	acl:relcl	_	_
+30	good	good	ADJ	JJ	_	31	amod	_	_
+31	tidings	tiding	NOUN	NNS	Number=Plur	29	obj	_	_
+32	unto	unto	ADP	IN	_	33	case	_	_
+33	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	29	obl	_	_
+34	of	of	ADP	IN	_	35	case	_	_
+35	good	good	NOUN	NN	Number=Sing	29	obl	_	_
+36	,	,	PUNCT	,	_	38	punct	_	_
+37	that	that	PRON	WDT	_	38	nsubj	_	_
+38	publisheth	publish	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	16	acl:relcl	_	_
+39	salvation	salvation	NOUN	NN	Number=Sing	38	obj	_	_
+40	;	;	PUNCT	,	_	42	punct	_	_
+41	that	that	PRON	WDT	_	42	nsubj	_	_
+42	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	16	acl:relcl	_	_
+43	unto	unto	ADP	IN	_	44	case	_	_
+44	Zion	Zion	PROPN	NNP	Number=Sing	42	obl	_	_
+45	:	:	PUNCT	:	_	42	punct	_	_
+46	Thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	47	nmod:poss	_	_
+47	God	God	PROPN	NNP	Number=Sing	48	nsubj	_	_
+48	reigneth	reign	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	42	ccomp	_	_
+49	!	!	PUNCT	.	_	5	punct	_	_
+
+# text = And then shall a cry go forth: Depart ye, depart ye, go ye out from thence, touch not that which is unclean; go ye out of the midst of her; be ye clean that bear the vessels of the Lord.
+# sent_id = 694
+# llm_note = inverted future "shall a cry go forth"; quoted imperatives follow colon: "Depart ye" x2, "go ye out", "touch not", "go ye out", "be ye clean"; "that which is unclean" = obj of "touch"; "that bear the vessels" = acl:relcl of "clean" or "ye"
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	then	then	ADV	RB	_	6	advmod	_	_
+3	shall	shall	AUX	MD	_	6	aux	_	_
+4	a	a	DET	DT	Definite=Ind	5	det	_	_
+5	cry	cry	NOUN	NN	Number=Sing	6	nsubj	_	_
+6	go	go	VERB	VB	VerbForm=Inf	0	root	_	_
+7	forth	forth	ADV	RB	_	6	advmod	_	_
+8	:	:	PUNCT	:	_	6	punct	_	_
+9	Depart	depart	VERB	VB	Mood=Imp	6	ccomp	_	_
+10	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	9	nsubj	_	_
+11	,	,	PUNCT	,	_	12	punct	_	_
+12	depart	depart	VERB	VB	Mood=Imp	9	conj	_	_
+13	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	12	nsubj	_	_
+14	,	,	PUNCT	,	_	15	punct	_	_
+15	go	go	VERB	VB	Mood=Imp	9	conj	_	_
+16	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	15	nsubj	_	_
+17	out	out	ADP	RP	_	15	compound:prt	_	_
+18	from	from	ADP	IN	_	19	case	_	_
+19	thence	thence	ADV	RB	_	15	obl	_	_
+20	,	,	PUNCT	,	_	21	punct	_	_
+21	touch	touch	VERB	VB	Mood=Imp	9	conj	_	_
+22	not	not	PART	RB	_	21	advmod	_	_
+23	that	that	PRON	DT	_	21	obj	_	_
+24	which	which	PRON	WDT	_	26	nsubj	_	_
+25	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	26	aux:pass	_	_
+26	unclean	unclean	ADJ	JJ	_	23	acl:relcl	_	_
+27	;	;	PUNCT	,	_	28	punct	_	_
+28	go	go	VERB	VB	Mood=Imp	9	conj	_	_
+29	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	28	nsubj	_	_
+30	out	out	ADP	RP	_	28	compound:prt	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	Definite=Def	33	det	_	_
+33	midst	midst	NOUN	NN	Number=Sing	28	obl	_	_
+34	of	of	ADP	IN	_	35	case	_	_
+35	her	she	PRON	PRP	Case=Acc|Number=Sing|Person=3	33	nmod	_	_
+36	;	;	PUNCT	,	_	37	punct	_	_
+37	be	be	VERB	VB	Mood=Imp	9	conj	_	_
+38	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	37	nsubj	_	_
+39	clean	clean	ADJ	JJ	_	37	xcomp	_	_
+40	that	that	PRON	WDT	_	41	nsubj	_	_
+41	bear	bear	VERB	VBP	Mood=Ind|Tense=Pres	38	acl:relcl	_	_
+42	the	the	DET	DT	Definite=Def	43	det	_	_
+43	vessels	vessel	NOUN	NNS	Number=Plur	41	obj	_	_
+44	of	of	ADP	IN	_	46	case	_	_
+45	the	the	DET	DT	Definite=Def	46	det	_	_
+46	Lord	Lord	PROPN	NNP	Number=Sing	43	nmod	_	_
+47	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = For ye shall not go out with haste nor go by flight; for the Lord will go before you, and the God of Israel shall be your rearward.
+# sent_id = 695
+# llm_note = "nor go by flight" = conj of "go out"; second main clause with "for" = causal; "the God of Israel shall be your rearward" = copular
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	5	nsubj	_	_
+3	shall	shall	AUX	MD	_	5	aux	_	_
+4	not	not	PART	RB	_	5	advmod	_	_
+5	go	go	VERB	VB	VerbForm=Inf	0	root	_	_
+6	out	out	ADP	RP	_	5	compound:prt	_	_
+7	with	with	ADP	IN	_	8	case	_	_
+8	haste	haste	NOUN	NN	Number=Sing	5	obl	_	_
+9	nor	nor	CCONJ	CC	_	10	cc	_	_
+10	go	go	VERB	VB	VerbForm=Inf	5	conj	_	_
+11	by	by	ADP	IN	_	12	case	_	_
+12	flight	flight	NOUN	NN	Number=Sing	10	obl	_	_
+13	;	;	PUNCT	,	_	18	punct	_	_
+14	for	for	SCONJ	IN	_	18	mark	_	_
+15	the	the	DET	DT	Definite=Def	16	det	_	_
+16	Lord	Lord	PROPN	NNP	Number=Sing	18	nsubj	_	_
+17	will	will	AUX	MD	_	18	aux	_	_
+18	go	go	VERB	VB	VerbForm=Inf	5	advcl	_	_
+19	before	before	ADP	IN	_	20	case	_	_
+20	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	18	obl	_	_
+21	,	,	PUNCT	,	_	28	punct	_	_
+22	and	and	CCONJ	CC	_	28	cc	_	_
+23	the	the	DET	DT	Definite=Def	25	det	_	_
+24	God	God	PROPN	NNP	Number=Sing	28	nsubj	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	Israel	Israel	PROPN	NNP	Number=Sing	24	nmod	_	_
+27	shall	shall	AUX	MD	_	28	aux	_	_
+28	be	be	VERB	VB	VerbForm=Inf	5	conj	_	_
+29	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	30	nmod:poss	_	_
+30	rearward	rearward	NOUN	NN	Number=Sing	28	xcomp	_	_
+31	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Behold, my servant shall deal prudently; he shall be exalted and extolled and be very high.
+# sent_id = 696
+# llm_note = "Behold" INTJ; "deal prudently" = main verb; three coordinate passives: "be exalted", "extolled" (shared aux), "be very high"
+1	Behold	behold	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	4	nmod:poss	_	_
+4	servant	servant	NOUN	NN	Number=Sing	6	nsubj	_	_
+5	shall	shall	AUX	MD	_	6	aux	_	_
+6	deal	deal	VERB	VB	VerbForm=Inf	0	root	_	_
+7	prudently	prudently	ADV	RB	_	6	advmod	_	_
+8	;	;	PUNCT	,	_	12	punct	_	_
+9	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	12	nsubj:pass	_	_
+10	shall	shall	AUX	MD	_	12	aux	_	_
+11	be	be	AUX	VB	VerbForm=Inf	12	aux:pass	_	_
+12	exalted	exalt	VERB	VBN	Tense=Past|VerbForm=Part	6	conj	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	extolled	extol	VERB	VBN	Tense=Past|VerbForm=Part	12	conj	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	be	be	VERB	VB	VerbForm=Inf	12	conj	_	_
+17	very	very	ADV	RB	_	18	advmod	_	_
+18	high	high	ADJ	JJ	_	16	xcomp	_	_
+19	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = As many were astonished at thee-- his visage was so marred, more than any man, and his form more than the sons of men--
+# sent_id = 697
+# llm_note = comparative opening "As many were astonished at thee" = advcl (correlative with "so shall he sprinkle" in next sentence); em-dash marks parenthetical: "his visage was so marred" = parenthetical explaining degree; sentence cuts off with dash
+1	As	as	SCONJ	IN	_	4	mark	_	_
+2	many	many	ADJ	JJ	_	4	nsubj	_	_
+3	were	be	AUX	VBD	Mood=Ind|Tense=Past	4	aux:pass	_	_
+4	astonished	astonish	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+5	at	at	ADP	IN	_	6	case	_	_
+6	thee	thee	PRON	PRP	Case=Acc|Number=Sing|Person=2	4	obl	_	_
+7	--	--	PUNCT	,	_	12	punct	_	_
+8	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	9	nmod:poss	_	_
+9	visage	visage	NOUN	NN	Number=Sing	12	nsubj	_	_
+10	was	be	VERB	VBD	Mood=Ind|Tense=Past	12	cop	_	_
+11	so	so	ADV	RB	_	12	advmod	_	_
+12	marred	marred	ADJ	JJ	_	4	parataxis	_	_
+13	,	,	PUNCT	,	_	14	punct	_	_
+14	more	more	ADV	RBR	_	12	advmod	_	_
+15	than	than	SCONJ	IN	_	17	mark	_	_
+16	any	any	DET	DT	_	17	det	_	_
+17	man	man	NOUN	NN	Number=Sing	14	advcl	_	_
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	21	nmod:poss	_	_
+21	form	form	NOUN	NN	Number=Sing	12	conj	_	_
+22	more	more	ADV	RBR	_	21	advmod	_	_
+23	than	than	SCONJ	IN	_	25	mark	_	_
+24	the	the	DET	DT	Definite=Def	25	det	_	_
+25	sons	son	NOUN	NNS	Number=Plur	22	advcl	_	_
+26	of	of	ADP	IN	_	27	case	_	_
+27	men	man	NOUN	NNS	Number=Plur	25	nmod	_	_
+28	--	--	PUNCT	,	_	4	punct	_	_
+
+# text = So shall he sprinkle many nations; the kings shall shut their mouths at him, for that which had not been told them shall they see; and that which they had not heard shall they consider.
+# sent_id = 698
+# llm_note = "So shall he sprinkle" = inverted future (correlative with "as many"); "the kings shall shut" = second clause; "for that which...shall they see" = formal inversion: "they" nsubj, "that" obj (fronted); "and that which...shall they consider" = parallel inversion
+1	So	so	ADV	RB	_	4	advmod	_	_
+2	shall	shall	AUX	MD	_	4	aux	_	_
+3	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	4	nsubj	_	_
+4	sprinkle	sprinkle	VERB	VB	VerbForm=Inf	0	root	_	_
+5	many	many	ADJ	JJ	_	6	amod	_	_
+6	nations	nation	NOUN	NNS	Number=Plur	4	obj	_	_
+7	;	;	PUNCT	,	_	11	punct	_	_
+8	the	the	DET	DT	Definite=Def	9	det	_	_
+9	kings	king	NOUN	NNS	Number=Plur	11	nsubj	_	_
+10	shall	shall	AUX	MD	_	11	aux	_	_
+11	shut	shut	VERB	VB	VerbForm=Inf	4	conj	_	_
+12	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	13	nmod:poss	_	_
+13	mouths	mouth	NOUN	NNS	Number=Plur	11	obj	_	_
+14	at	at	ADP	IN	_	15	case	_	_
+15	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	11	obl	_	_
+16	,	,	PUNCT	,	_	27	punct	_	_
+17	for	for	SCONJ	IN	_	27	mark	_	_
+18	that	that	PRON	DT	_	27	obj	_	_
+19	which	which	PRON	WDT	_	23	nsubj:pass	_	_
+20	had	have	AUX	VBD	Mood=Ind|Tense=Past	23	aux	_	_
+21	not	not	PART	RB	_	23	advmod	_	_
+22	been	be	AUX	VBN	VerbForm=Part	23	aux:pass	_	_
+23	told	tell	VERB	VBN	Tense=Past|VerbForm=Part	18	acl:relcl	_	_
+24	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	23	obl	_	_
+25	shall	shall	AUX	MD	_	27	aux	_	_
+26	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	27	nsubj	_	_
+27	see	see	VERB	VB	VerbForm=Inf	4	advcl	_	_
+28	;	;	PUNCT	,	_	38	punct	_	_
+29	and	and	CCONJ	CC	_	38	cc	_	_
+30	that	that	PRON	DT	_	38	obj	_	_
+31	which	which	PRON	WDT	_	35	nsubj	_	_
+32	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	35	nsubj	_	_
+33	had	have	AUX	VBD	Mood=Ind|Tense=Past	35	aux	_	_
+34	not	not	PART	RB	_	35	advmod	_	_
+35	heard	hear	VERB	VBN	Tense=Past|VerbForm=Part	30	acl:relcl	_	_
+36	shall	shall	AUX	MD	_	38	aux	_	_
+37	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	38	nsubj	_	_
+38	consider	consider	VERB	VB	VerbForm=Inf	4	conj	_	_
+39	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Verily, verily, I say unto you, all these things shall surely come, even as the Father hath commanded me.
+# sent_id = 699
+# llm_note = "Verily, verily" discourse; main clause "all these things shall surely come"; "even as the Father hath commanded me" = comparative advcl
+1	Verily	verily	ADV	RB	_	6	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	verily	verily	ADV	RB	_	6	advmod	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	6	nsubj	_	_
+6	say	say	VERB	VBP	Mood=Ind|Tense=Pres	0	root	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	6	obl	_	_
+9	,	,	PUNCT	,	_	15	punct	_	_
+10	all	all	DET	PDT	_	12	det:predet	_	_
+11	these	this	DET	DT	Number=Plur	12	det	_	_
+12	things	thing	NOUN	NNS	Number=Plur	15	nsubj	_	_
+13	shall	shall	AUX	MD	_	15	aux	_	_
+14	surely	surely	ADV	RB	_	15	advmod	_	_
+15	come	come	VERB	VB	VerbForm=Inf	6	ccomp	_	_
+16	,	,	PUNCT	,	_	22	punct	_	_
+17	even	even	ADV	RB	_	18	advmod	_	_
+18	as	as	SCONJ	IN	_	22	mark	_	_
+19	the	the	DET	DT	Definite=Def	20	det	_	_
+20	Father	father	NOUN	NN	Number=Sing	22	nsubj	_	_
+21	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	22	aux	_	_
+22	commanded	command	VERB	VBN	Tense=Past|VerbForm=Part	15	advcl	_	_
+23	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	22	obj	_	_
+24	.	.	PUNCT	.	_	6	punct	_	_
+

@@ -1,0 +1,172 @@
+# sent_id = 15
+# text = And Amnigaddah was the son of Aaron.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Amnigaddah	Amnigaddah	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Aaron	Aaron	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 16
+# text = And Aaron was a descendant of Heth, who was the son of Hearthom.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Aaron	Aaron	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	a	a	DET	DT	_	5	det	_	_
+5	descendant	descendant	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Heth	Heth	PROPN	NNP	_	5	nmod	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	who	who	PRON	WP	_	10	nsubj	_	_
+10	was	be	VERB	VBD	_	7	acl:relcl	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	son	son	NOUN	NN	_	10	xcomp	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Hearthom	Hearthom	PROPN	NNP	_	12	nmod	_	_
+15	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 17
+# text = And Hearthom was the son of Lib.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Hearthom	Hearthom	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Lib	Lib	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 18
+# text = And Lib was the son of Kish.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Lib	Lib	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Kish	Kish	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 19
+# text = And Kish was the son of Corom.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Kish	Kish	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Corom	Corom	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 20
+# text = And Corom was the son of Levi.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Corom	Corom	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Levi	Levi	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 21
+# text = And Levi was the son of Kim.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Levi	Levi	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Kim	Kim	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 22
+# text = And Kim was the son of Morianton.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Kim	Kim	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Morianton	Morianton	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 23
+# text = And Morianton was a descendant of Riplakish.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Morianton	Morianton	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	a	a	DET	DT	_	5	det	_	_
+5	descendant	descendant	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Riplakish	Riplakish	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 24
+# text = And Riplakish was the son of Shez.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Riplakish	Riplakish	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Shez	Shez	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 25
+# text = And Shez was the son of Heth.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Shez	Shez	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Heth	Heth	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 26
+# text = And Heth was the son of Com.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Heth	Heth	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Com	Com	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 27
+# text = And Com was the son of Coriantum.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Com	Com	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Coriantum	Coriantum	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 28
+# text = And Coriantum was the son of Emer.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Coriantum	Coriantum	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Emer	Emer	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 29
+# text = And Emer was the son of Omer.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Emer	Emer	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Omer	Omer	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+

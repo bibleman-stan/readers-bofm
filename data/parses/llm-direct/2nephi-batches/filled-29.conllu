@@ -1,0 +1,879 @@
+# text = The noise of the multitude in the mountains like as of a great people, a tumultuous noise of the kingdoms of nations gathered together, the Lord of Hosts mustereth the hosts of the battle.
+# sent_id = 700
+# llm_note = Nominal sentence (no finite verb until "mustereth" in final clause). First half is an extended appositive NP describing "noise"; final clause is the main predication.
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	noise	noise	NOUN	NN	Number=Sing	31	nsubj	_	_
+3	of	of	ADP	IN	_	5	case	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	multitude	multitude	NOUN	NN	Number=Sing	2	nmod	_	_
+6	in	in	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	mountains	mountain	NOUN	NNS	Number=Plur	2	nmod	_	_
+9	like	like	ADP	IN	_	14	case	_	_
+10	as	as	ADP	IN	_	9	fixed	_	_
+11	of	of	ADP	IN	_	9	fixed	_	_
+12	a	a	DET	DT	Definite=Ind|PronType=Art	14	det	_	_
+13	great	great	ADJ	JJ	Degree=Pos	14	amod	_	_
+14	people	people	NOUN	NN	Number=Plur	2	nmod	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	a	a	DET	DT	Definite=Ind|PronType=Art	18	det	_	_
+17	tumultuous	tumultuous	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	noise	noise	NOUN	NN	Number=Sing	2	appos	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	kingdoms	kingdom	NOUN	NNS	Number=Plur	18	nmod	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	nations	nation	NOUN	NNS	Number=Plur	21	nmod	_	_
+24	gathered	gather	VERB	VBN	Tense=Past|VerbForm=Part	23	acl	_	_
+25	together	together	ADV	RB	_	24	advmod	_	_
+26	,	,	PUNCT	,	_	31	punct	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	Lord	Lord	PROPN	NNP	Number=Sing	31	nsubj	_	_
+29	of	of	ADP	IN	_	30	case	_	_
+30	Hosts	Hosts	PROPN	NNPS	Number=Plur	28	nmod	_	_
+31	mustereth	muster	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	0	root	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+33	hosts	host	NOUN	NNS	Number=Plur	31	obj	_	_
+34	of	of	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	battle	battle	NOUN	NN	Number=Sing	33	nmod	_	_
+37	.	.	PUNCT	.	_	31	punct	_	_
+
+# text = They come from a far country, from the end of heaven, yea, the Lord, and the weapons of his indignation, to destroy the whole land.
+# sent_id = 701
+# llm_note = "yea, the Lord, and the weapons" — expanded subject appositive to "They". "to destroy" is purpose infinitive.
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	come	come	VERB	VBP	Tense=Pres|VerbForm=Fin	0	root	_	_
+3	from	from	ADP	IN	_	6	case	_	_
+4	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	_
+5	far	far	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	country	country	NOUN	NN	Number=Sing	2	obl	_	_
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	from	from	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	end	end	NOUN	NN	Number=Sing	2	obl	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	heaven	heaven	NOUN	NN	Number=Sing	10	nmod	_	_
+13	,	,	PUNCT	,	_	17	punct	_	_
+14	yea	yea	ADV	UH	_	2	discourse	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	Lord	Lord	PROPN	NNP	Number=Sing	1	appos	_	_
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	weapons	weapon	NOUN	NNS	Number=Plur	17	conj	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
+24	indignation	indignation	NOUN	NN	Number=Sing	21	nmod	_	_
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	to	to	PART	TO	_	27	mark	_	_
+27	destroy	destroy	VERB	VB	VerbForm=Inf	2	advcl	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+29	whole	whole	ADJ	JJ	Degree=Pos	30	amod	_	_
+30	land	land	NOUN	NN	Number=Sing	27	obj	_	_
+31	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = Howl ye, for the day of the Lord is at hand; it shall come as a destruction from the Almighty.
+# sent_id = 702
+1	Howl	howl	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2|PronType=Prs	1	nsubj	_	_
+3	,	,	PUNCT	,	_	1	punct	_	_
+4	for	for	SCONJ	IN	_	7	mark	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	day	day	NOUN	NN	Number=Sing	7	nsubj	_	_
+7	of	be	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	1	advcl	_	_
+8	the	of	ADP	IN	_	9	case	_	_
+9	Lord	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	is	Lord	PROPN	NNP	Number=Sing	6	nmod	_	_
+11	at	at	ADP	IN	_	12	case	_	_
+12	hand	hand	NOUN	NN	Number=Sing	7	obl	_	_
+13	;	;	PUNCT	,	_	16	punct	_	_
+14	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+15	shall	shall	AUX	MD	VerbForm=Fin	16	aux	_	_
+16	come	come	VERB	VB	VerbForm=Inf	1	parataxis	_	_
+17	as	as	ADP	IN	_	19	case	_	_
+18	a	a	DET	DT	Definite=Ind|PronType=Art	19	det	_	_
+19	destruction	destruction	NOUN	NN	Number=Sing	16	obl	_	_
+20	from	from	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	Almighty	Almighty	PROPN	NNP	Number=Sing	19	nmod	_	_
+23	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = Therefore shall all hands be faint, every man's heart shall melt;
+# sent_id = 703
+# llm_note = Subject-auxiliary inversion ("shall all hands be"). MWT row 9-10 "man's" left as _ per rules; annotate sub-tokens.
+1	Therefore	therefore	ADV	RB	_	5	advmod	_	_
+2	shall	shall	AUX	MD	VerbForm=Fin	5	aux	_	_
+3	all	all	DET	DT	_	4	det	_	_
+4	hands	hand	NOUN	NNS	Number=Plur	5	nsubj	_	_
+5	be	be	AUX	VB	VerbForm=Inf	0	root	_	_
+6	faint	faint	ADJ	JJ	Degree=Pos	5	xcomp	_	_
+7	,	,	PUNCT	,	_	12	punct	_	_
+8	every	every	DET	DT	_	11	det	_	_
+9-10	man's	_	_	_	_	_	_	_	_
+9	man	man	NOUN	NN	Number=Sing	11	nmod:poss	_	_
+10	's	's	PART	POS	_	9	case	_	_
+11	heart	heart	NOUN	NN	Number=Sing	12	nsubj	_	_
+12	shall	shall	AUX	MD	VerbForm=Fin	5	conj	_	_
+13	melt	melt	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+14	;	;	PUNCT	,	_	5	punct	_	_
+
+# text = And they shall be afraid; pangs and sorrows shall take hold of them; they shall be amazed one at another; their faces shall be as flames.
+# sent_id = 704
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	shall	shall	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	be	be	AUX	VB	VerbForm=Inf	0	root	_	_
+5	afraid	afraid	ADJ	JJ	Degree=Pos	4	xcomp	_	_
+6	;	;	PUNCT	,	_	11	punct	_	_
+7	pangs	pang	NOUN	NNS	Number=Plur	11	nsubj	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	sorrows	sorrow	NOUN	NNS	Number=Plur	7	conj	_	_
+10	shall	shall	AUX	MD	VerbForm=Fin	11	aux	_	_
+11	take	take	VERB	VB	VerbForm=Inf	4	parataxis	_	_
+12	hold	hold	NOUN	NN	Number=Sing	11	obj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	12	nmod	_	_
+15	;	;	PUNCT	,	_	18	punct	_	_
+16	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	_
+17	shall	shall	AUX	MD	VerbForm=Fin	18	aux	_	_
+18	be	be	AUX	VB	VerbForm=Inf	4	parataxis	_	_
+19	amazed	amaze	VERB	VBN	Tense=Past|VerbForm=Part	18	xcomp	_	_
+20	one	one	PRON	PRP	_	19	obl	_	_
+21	at	at	ADP	IN	_	22	case	_	_
+22	another	another	PRON	DT	_	20	nmod	_	_
+23	;	;	PUNCT	,	_	27	punct	_	_
+24	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	25	nmod:poss	_	_
+25	faces	face	NOUN	NNS	Number=Plur	27	nsubj	_	_
+26	shall	shall	AUX	MD	VerbForm=Fin	27	aux	_	_
+27	be	be	AUX	VB	VerbForm=Inf	4	parataxis	_	_
+28	as	as	ADP	IN	_	29	case	_	_
+29	flames	flame	NOUN	NNS	Number=Plur	27	xcomp	_	_
+30	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Behold, the day of the Lord cometh, cruel both with wrath and fierce anger, to lay the land desolate; and he shall destroy the sinners thereof out of it.
+# sent_id = 705
+# llm_note = "Behold" = INTJ discourse, attaches to root "cometh". "cruel" = predicative adjective (xcomp of cometh, describing subject "day"). "to lay" = purpose infinitive.
+1	Behold	behold	INTJ	UH	_	8	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	day	day	NOUN	NN	Number=Sing	8	nsubj	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	Lord	Lord	PROPN	NNP	Number=Sing	4	nmod	_	_
+8	cometh	come	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	0	root	_	_
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	cruel	cruel	ADJ	JJ	Degree=Pos	8	xcomp	_	_
+11	both	both	ADV	RB	_	10	advmod	_	_
+12	with	with	ADP	IN	_	13	case	_	_
+13	wrath	wrath	NOUN	NN	Number=Sing	10	obl	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	fierce	fierce	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	anger	anger	NOUN	NN	Number=Sing	13	conj	_	_
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	lay	lay	VERB	VB	VerbForm=Inf	8	advcl	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	land	land	NOUN	NN	Number=Sing	19	obj	_	_
+22	desolate	desolate	ADJ	JJ	Degree=Pos	19	xcomp	_	_
+23	;	;	PUNCT	,	_	27	punct	_	_
+24	and	and	CCONJ	CC	_	27	cc	_	_
+25	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
+26	shall	shall	AUX	MD	VerbForm=Fin	27	aux	_	_
+27	destroy	destroy	VERB	VB	VerbForm=Inf	8	conj	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+29	sinners	sinner	NOUN	NNS	Number=Plur	27	obj	_	_
+30	thereof	thereof	ADV	RB	_	27	advmod	_	_
+31	out	out	ADP	IN	_	33	case	_	_
+32	of	of	ADP	IN	_	31	fixed	_	_
+33	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	27	obl	_	_
+34	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = For the stars of heaven and the constellations thereof shall not give their light; the sun shall be darkened in his going forth, and the moon shall not cause her light to shine.
+# sent_id = 706
+1	For	for	SCONJ	IN	_	12	mark	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	stars	star	NOUN	NNS	Number=Plur	12	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	heaven	heaven	NOUN	NN	Number=Sing	3	nmod	_	_
+6	and	and	CCONJ	CC	_	8	cc	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	constellations	constellation	NOUN	NNS	Number=Plur	3	conj	_	_
+9	thereof	thereof	ADV	RB	_	8	advmod	_	_
+10	shall	shall	AUX	MD	VerbForm=Fin	12	aux	_	_
+11	not	not	PART	RB	Polarity=Neg	12	advmod	_	_
+12	give	give	VERB	VB	VerbForm=Inf	0	root	_	_
+13	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	_
+14	light	light	NOUN	NN	Number=Sing	12	obj	_	_
+15	;	;	PUNCT	,	_	20	punct	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	sun	sun	NOUN	NN	Number=Sing	20	nsubj	_	_
+18	shall	shall	AUX	MD	VerbForm=Fin	20	aux	_	_
+19	be	be	AUX	VB	VerbForm=Inf	20	aux	_	_
+20	darkened	darken	VERB	VBN	Tense=Past|VerbForm=Part	12	parataxis	_	_
+21	in	in	ADP	IN	_	23	case	_	_
+22	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	nmod:poss	_	_
+23	going	go	VERB	VBG	VerbForm=Ger	20	obl	_	_
+24	forth	forth	ADV	RB	_	23	advmod	_	_
+25	,	,	PUNCT	,	_	31	punct	_	_
+26	and	and	CCONJ	CC	_	31	cc	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	moon	moon	NOUN	NN	Number=Sing	31	nsubj	_	_
+29	shall	shall	AUX	MD	VerbForm=Fin	31	aux	_	_
+30	not	not	PART	RB	Polarity=Neg	31	advmod	_	_
+31	cause	cause	VERB	VB	VerbForm=Inf	20	conj	_	_
+32	her	she	PRON	PRP$	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	33	nmod:poss	_	_
+33	light	light	NOUN	NN	Number=Sing	31	obj	_	_
+34	to	to	PART	TO	_	35	mark	_	_
+35	shine	shine	VERB	VB	VerbForm=Inf	31	xcomp	_	_
+36	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = And I will punish the world for evil, and the wicked for their iniquity; I will cause the arrogancy of the proud to cease, and will lay down the haughtiness of the terrible.
+# sent_id = 707
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	punish	punish	VERB	VB	VerbForm=Inf	0	root	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	world	world	NOUN	NN	Number=Sing	4	obj	_	_
+7	for	for	ADP	IN	_	8	case	_	_
+8	evil	evil	NOUN	NN	Number=Sing	4	obl	_	_
+9	,	,	PUNCT	,	_	4	punct	_	_
+10	and	and	CCONJ	CC	_	12	cc	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	wicked	wicked	ADJ	JJ	Degree=Pos	6	conj	_	_
+13	for	for	ADP	IN	_	15	case	_	_
+14	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	15	nmod:poss	_	_
+15	iniquity	iniquity	NOUN	NN	Number=Sing	12	obl	_	_
+16	;	;	PUNCT	,	_	19	punct	_	_
+17	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	19	nsubj	_	_
+18	will	will	AUX	MD	VerbForm=Fin	19	aux	_	_
+19	cause	cause	VERB	VB	VerbForm=Inf	4	parataxis	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	arrogancy	arrogancy	NOUN	NN	Number=Sing	19	obj	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	proud	proud	ADJ	JJ	Degree=Pos	21	nmod	_	_
+25	to	to	PART	TO	_	26	mark	_	_
+26	cease	cease	VERB	VB	VerbForm=Inf	19	xcomp	_	_
+27	,	,	PUNCT	,	_	30	punct	_	_
+28	and	and	CCONJ	CC	_	30	cc	_	_
+29	will	will	AUX	MD	VerbForm=Fin	30	aux	_	_
+30	lay	lay	VERB	VB	VerbForm=Inf	19	conj	_	_
+31	down	down	ADP	RP	_	30	compound:prt	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	33	det	_	_
+33	haughtiness	haughtiness	NOUN	NN	Number=Sing	30	obj	_	_
+34	of	of	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	terrible	terrible	ADJ	JJ	Degree=Pos	33	nmod	_	_
+37	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = I will make a man more precious than fine gold; even a man than the golden wedge of Ophir.
+# sent_id = 708
+# llm_note = "even a man than the golden wedge of Ophir" — elliptical parallel clause; "even" = ADV emphasis, "a man" = subject of elided comparative; attached as parataxis.
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+2	will	will	AUX	MD	VerbForm=Fin	3	aux	_	_
+3	make	make	VERB	VB	VerbForm=Inf	0	root	_	_
+4	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
+5	man	man	NOUN	NN	Number=Sing	3	obj	_	_
+6	more	more	ADV	RBR	Degree=Cmp	7	advmod	_	_
+7	precious	precious	ADJ	JJR	Degree=Cmp	5	xcomp	_	_
+8	than	than	ADP	IN	_	10	case	_	_
+9	fine	fine	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	gold	gold	NOUN	NN	Number=Sing	7	obl	_	_
+11	;	;	PUNCT	,	_	14	punct	_	_
+12	even	even	ADV	RB	_	14	advmod	_	_
+13	a	a	DET	DT	Definite=Ind|PronType=Art	14	det	_	_
+14	man	man	NOUN	NN	Number=Sing	3	parataxis	_	_
+15	than	than	ADP	IN	_	18	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	_
+17	golden	golden	ADJ	JJ	Degree=Pos	18	amod	_	_
+18	wedge	wedge	NOUN	NN	Number=Sing	14	nmod	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	Ophir	Ophir	PROPN	NNP	Number=Sing	18	nmod	_	_
+21	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore, I will shake the heavens, and the earth shall remove out of her place, in the wrath of the Lord of Hosts, and in the day of his fierce anger.
+# sent_id = 709
+1	Therefore	therefore	ADV	RB	_	5	advmod	_	_
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	will	will	AUX	MD	VerbForm=Fin	5	aux	_	_
+5	shake	shake	VERB	VB	VerbForm=Inf	0	root	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	heavens	heaven	NOUN	NNS	Number=Plur	5	obj	_	_
+8	,	,	PUNCT	,	_	13	punct	_	_
+9	and	and	CCONJ	CC	_	13	cc	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	earth	earth	NOUN	NN	Number=Sing	13	nsubj	_	_
+12	shall	shall	AUX	MD	VerbForm=Fin	13	aux	_	_
+13	remove	remove	VERB	VB	VerbForm=Inf	5	conj	_	_
+14	out	out	ADP	IN	_	16	case	_	_
+15	of	of	ADP	IN	_	14	fixed	_	_
+16	her	she	PRON	PRP$	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	place	place	NOUN	NN	Number=Sing	13	obl	_	_
+18	,	,	PUNCT	,	_	21	punct	_	_
+19	in	in	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	wrath	wrath	NOUN	NN	Number=Sing	13	obl	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	Lord	Lord	PROPN	NNP	Number=Sing	21	nmod	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	Hosts	Hosts	PROPN	NNPS	Number=Plur	24	nmod	_	_
+27	,	,	PUNCT	,	_	31	punct	_	_
+28	and	and	CCONJ	CC	_	31	cc	_	_
+29	in	in	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
+31	day	day	NOUN	NN	Number=Sing	21	conj	_	_
+32	of	of	ADP	IN	_	35	case	_	_
+33	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	35	nmod:poss	_	_
+34	fierce	fierce	ADJ	JJ	Degree=Pos	35	amod	_	_
+35	anger	anger	NOUN	NN	Number=Sing	31	nmod	_	_
+36	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And it shall be as the chased roe, and as a sheep that no man taketh up; and they shall every man turn to his own people, and flee every one into his own land.
+# sent_id = 710
+# llm_note = "every man" is a floating quantifier/appositive inside "they shall...turn". "flee every one" similarly.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	shall	shall	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	be	be	AUX	VB	VerbForm=Inf	0	root	_	_
+5	as	as	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+7	chased	chase	VERB	VBN	Tense=Past|VerbForm=Part	8	amod	_	_
+8	roe	roe	NOUN	NN	Number=Sing	4	xcomp	_	_
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	and	and	CCONJ	CC	_	13	cc	_	_
+11	as	as	ADP	IN	_	13	case	_	_
+12	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
+13	sheep	sheep	NOUN	NN	Number=Sing	8	conj	_	_
+14	that	that	PRON	WDT	PronType=Rel	17	nsubj	_	_
+15	no	no	DET	DT	_	16	det	_	_
+16	man	man	NOUN	NN	Number=Sing	14	nmod	_	_
+17	taketh	take	VERB	VBZ	Number=Sing|Person=3|Tense=Pres	13	acl:relcl	_	_
+18	up	up	ADP	RP	_	17	compound:prt	_	_
+19	;	;	PUNCT	,	_	25	punct	_	_
+20	and	and	CCONJ	CC	_	25	cc	_	_
+21	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	25	nsubj	_	_
+22	shall	shall	AUX	MD	VerbForm=Fin	25	aux	_	_
+23	every	every	DET	DT	_	24	det	_	_
+24	man	man	NOUN	NN	Number=Sing	21	appos	_	_
+25	turn	turn	VERB	VB	VerbForm=Inf	4	conj	_	_
+26	to	to	ADP	IN	_	29	case	_	_
+27	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	29	nmod:poss	_	_
+28	own	own	ADJ	JJ	Degree=Pos	29	amod	_	_
+29	people	people	NOUN	NN	Number=Plur	25	obl	_	_
+30	,	,	PUNCT	,	_	32	punct	_	_
+31	and	and	CCONJ	CC	_	32	cc	_	_
+32	flee	flee	VERB	VB	VerbForm=Inf	25	conj	_	_
+33	every	every	DET	DT	_	34	det	_	_
+34	one	one	PRON	PRP	_	32	nsubj	_	_
+35	into	into	ADP	IN	_	38	case	_	_
+36	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	38	nmod:poss	_	_
+37	own	own	ADJ	JJ	Degree=Pos	38	amod	_	_
+38	land	land	NOUN	NN	Number=Sing	32	obl	_	_
+39	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Every one that is proud shall be thrust through; yea, and every one that is joined to the wicked shall fall by the sword.
+# sent_id = 711
+1	Every	every	DET	DT	_	2	det	_	_
+2	one	one	PRON	PRP	_	8	nsubj	_	_
+3	that	that	PRON	WDT	PronType=Rel	5	nsubj	_	_
+4	is	be	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	5	cop	_	_
+5	proud	proud	ADJ	JJ	Degree=Pos	2	acl:relcl	_	_
+6	shall	shall	AUX	MD	VerbForm=Fin	8	aux	_	_
+7	be	be	AUX	VB	VerbForm=Inf	8	aux	_	_
+8	thrust	thrust	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+9	through	through	ADP	RP	_	8	compound:prt	_	_
+10	;	;	PUNCT	,	_	23	punct	_	_
+11	yea	yea	ADV	UH	_	8	discourse	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	and	and	CCONJ	CC	_	23	cc	_	_
+14	every	every	DET	DT	_	15	det	_	_
+15	one	one	PRON	PRP	_	23	nsubj	_	_
+16	that	that	PRON	WDT	PronType=Rel	18	nsubj	_	_
+17	is	be	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	18	aux	_	_
+18	joined	join	VERB	VBN	Tense=Past|VerbForm=Part	15	acl:relcl	_	_
+19	to	to	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	wicked	wicked	ADJ	JJ	Degree=Pos	18	obl	_	_
+22	shall	shall	AUX	MD	VerbForm=Fin	23	aux	_	_
+23	fall	fall	VERB	VB	VerbForm=Inf	8	conj	_	_
+24	by	by	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	sword	sword	NOUN	NN	Number=Sing	23	obl	_	_
+27	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = Their children also shall be dashed to pieces before their eyes; their houses shall be spoiled and their wives ravished.
+# sent_id = 712
+1	Their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	_
+2	children	child	NOUN	NNS	Number=Plur	6	nsubj	_	_
+3	also	also	ADV	RB	_	6	advmod	_	_
+4	shall	shall	AUX	MD	VerbForm=Fin	6	aux	_	_
+5	be	be	AUX	VB	VerbForm=Inf	6	aux	_	_
+6	dashed	dash	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+7	to	to	ADP	IN	_	8	case	_	_
+8	pieces	piece	NOUN	NNS	Number=Plur	6	obl	_	_
+9	before	before	ADP	IN	_	11	case	_	_
+10	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	_
+11	eyes	eye	NOUN	NNS	Number=Plur	6	obl	_	_
+12	;	;	PUNCT	,	_	17	punct	_	_
+13	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	_
+14	houses	house	NOUN	NNS	Number=Plur	17	nsubj	_	_
+15	shall	shall	AUX	MD	VerbForm=Fin	17	aux	_	_
+16	be	be	AUX	VB	VerbForm=Inf	17	aux	_	_
+17	spoiled	spoil	VERB	VBN	Tense=Past|VerbForm=Part	6	parataxis	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+20	wives	wife	NOUN	NNS	Number=Plur	21	nsubj	_	_
+21	ravished	ravish	VERB	VBN	Tense=Past|VerbForm=Part	17	conj	_	_
+22	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Behold, I will stir up the Medes against them, which shall not regard silver and gold, nor shall they delight in it.
+# sent_id = 713
+# llm_note = "Behold" = INTJ discourse. "nor shall they delight" = formal inversion with "nor" as ADV, not CCONJ.
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	will	will	AUX	MD	VerbForm=Fin	5	aux	_	_
+5	stir	stir	VERB	VB	VerbForm=Inf	0	root	_	_
+6	up	up	ADP	RP	_	5	compound:prt	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	Medes	Medes	PROPN	NNPS	Number=Plur	5	obj	_	_
+9	against	against	ADP	IN	_	10	case	_	_
+10	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	5	obl	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	which	which	PRON	WDT	PronType=Rel	15	nsubj	_	_
+13	shall	shall	AUX	MD	VerbForm=Fin	15	aux	_	_
+14	not	not	PART	RB	Polarity=Neg	15	advmod	_	_
+15	regard	regard	VERB	VB	VerbForm=Inf	8	acl:relcl	_	_
+16	silver	silver	NOUN	NN	Number=Sing	15	obj	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	gold	gold	NOUN	NN	Number=Sing	16	conj	_	_
+19	,	,	PUNCT	,	_	23	punct	_	_
+20	nor	nor	ADV	RB	_	23	advmod	_	_
+21	shall	shall	AUX	MD	VerbForm=Fin	23	aux	_	_
+22	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	_
+23	delight	delight	VERB	VB	VerbForm=Inf	15	conj	_	_
+24	in	in	ADP	IN	_	25	case	_	_
+25	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	23	obl	_	_
+26	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Their bows shall also dash the young men to pieces; and they shall have no pity on the fruit of the womb; their eyes shall not spare children.
+# sent_id = 714
+1	Their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	_
+2	bows	bow	NOUN	NNS	Number=Plur	5	nsubj	_	_
+3	shall	shall	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	also	also	ADV	RB	_	5	advmod	_	_
+5	dash	dash	VERB	VB	VerbForm=Inf	0	root	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+7	young	young	ADJ	JJ	Degree=Pos	8	amod	_	_
+8	men	man	NOUN	NNS	Number=Plur	5	obj	_	_
+9	to	to	ADP	IN	_	10	case	_	_
+10	pieces	piece	NOUN	NNS	Number=Plur	5	obl	_	_
+11	;	;	PUNCT	,	_	15	punct	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_
+14	shall	shall	AUX	MD	VerbForm=Fin	15	aux	_	_
+15	have	have	VERB	VB	VerbForm=Inf	5	conj	_	_
+16	no	no	DET	DT	Polarity=Neg	17	det	_	_
+17	pity	pity	NOUN	NN	Number=Sing	15	obj	_	_
+18	on	on	ADP	IN	_	21	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	fruit	fruit	NOUN	NN	Number=Sing	15	obl	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	womb	womb	NOUN	NN	Number=Sing	20	nmod	_	_
+24	;	;	PUNCT	,	_	29	punct	_	_
+25	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	26	nmod:poss	_	_
+26	eyes	eye	NOUN	NNS	Number=Plur	29	nsubj	_	_
+27	shall	shall	AUX	MD	VerbForm=Fin	29	aux	_	_
+28	not	not	PART	RB	Polarity=Neg	29	advmod	_	_
+29	spare	spare	VERB	VB	VerbForm=Inf	5	conj	_	_
+30	children	child	NOUN	NNS	Number=Plur	29	obj	_	_
+31	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And Babylon, the glory of kingdoms, the beauty of the Chaldees' excellency, shall be as when God overthrew Sodom and Gomorrah.
+# sent_id = 715
+# llm_note = MWT 13-14 "Chaldees'" left as _ per rules. "the glory of kingdoms" and "the beauty of the Chaldees' excellency" are appositives to Babylon. "as when God overthrew" = comparative clause.
+1	And	and	CCONJ	CC	_	17	cc	_	_
+2	Babylon	Babylon	PROPN	NNP	Number=Sing	17	nsubj	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	glory	glory	NOUN	NN	Number=Sing	2	appos	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	kingdoms	kingdom	NOUN	NNS	Number=Plur	5	nmod	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	beauty	beauty	NOUN	NN	Number=Sing	2	appos	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+13-14	Chaldees'	_	_	_	_	_	_	_	_
+13	Chaldees	Chaldee	PROPN	NNPS	Number=Plur	15	nmod:poss	_	_
+14	'	'	PART	POS	_	13	case	_	_
+15	excellency	excellency	NOUN	NN	Number=Sing	10	nmod	_	_
+16	,	,	PUNCT	,	_	17	punct	_	_
+17	shall	shall	AUX	MD	VerbForm=Fin	0	root	_	_
+18	be	be	AUX	VB	VerbForm=Inf	17	xcomp	_	_
+19	as	as	SCONJ	IN	_	22	mark	_	_
+20	when	when	ADV	WRB	PronType=Int	22	advmod	_	_
+21	God	God	PROPN	NNP	Number=Sing	22	nsubj	_	_
+22	overthrew	overthrow	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	18	advcl	_	_
+23	Sodom	Sodom	PROPN	NNP	Number=Sing	22	obj	_	_
+24	and	and	CCONJ	CC	_	25	cc	_	_
+25	Gomorrah	Gomorrah	PROPN	NNP	Number=Sing	23	conj	_	_
+26	.	.	PUNCT	.	_	17	punct	_	_
+
+# text = It shall never be inhabited, neither shall it be dwelt in from generation to generation: neither shall the Arabian pitch tent there; neither shall the shepherds make their fold there.
+# sent_id = 716
+# llm_note = Three "neither...shall" clauses = formal inversions; "neither" = ADV advmod.
+1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+2	shall	shall	AUX	MD	VerbForm=Fin	5	aux	_	_
+3	never	never	ADV	RB	_	5	advmod	_	_
+4	be	be	AUX	VB	VerbForm=Inf	5	aux	_	_
+5	inhabited	inhabit	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	,	,	PUNCT	,	_	11	punct	_	_
+7	neither	neither	ADV	RB	_	11	advmod	_	_
+8	shall	shall	AUX	MD	VerbForm=Fin	11	aux	_	_
+9	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+10	be	be	AUX	VB	VerbForm=Inf	11	aux	_	_
+11	dwelt	dwell	VERB	VBN	Tense=Past|VerbForm=Part	5	parataxis	_	_
+12	in	in	ADP	RP	_	11	compound:prt	_	_
+13	from	from	ADP	IN	_	14	case	_	_
+14	generation	generation	NOUN	NN	Number=Sing	11	obl	_	_
+15	to	to	ADP	IN	_	16	case	_	_
+16	generation	generation	NOUN	NN	Number=Sing	14	nmod	_	_
+17	:	:	PUNCT	,	_	22	punct	_	_
+18	neither	neither	ADV	RB	_	22	advmod	_	_
+19	shall	shall	AUX	MD	VerbForm=Fin	22	aux	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	Arabian	Arabian	PROPN	NNP	Number=Sing	22	nsubj	_	_
+22	pitch	pitch	VERB	VB	VerbForm=Inf	5	parataxis	_	_
+23	tent	tent	NOUN	NN	Number=Sing	22	obj	_	_
+24	there	there	ADV	RB	_	22	advmod	_	_
+25	;	;	PUNCT	,	_	30	punct	_	_
+26	neither	neither	ADV	RB	_	30	advmod	_	_
+27	shall	shall	AUX	MD	VerbForm=Fin	30	aux	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+29	shepherds	shepherd	NOUN	NNS	Number=Plur	30	nsubj	_	_
+30	make	make	VERB	VB	VerbForm=Inf	5	parataxis	_	_
+31	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	32	nmod:poss	_	_
+32	fold	fold	NOUN	NN	Number=Sing	30	obj	_	_
+33	there	there	ADV	RB	_	30	advmod	_	_
+34	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = But wild beasts of the desert shall lie there; and their houses shall be full of doleful creatures; and owls shall dwell there, and satyrs shall dance there.
+# sent_id = 717
+1	But	but	CCONJ	CC	_	8	cc	_	_
+2	wild	wild	ADJ	JJ	Degree=Pos	3	amod	_	_
+3	beasts	beast	NOUN	NNS	Number=Plur	8	nsubj	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
+6	desert	desert	NOUN	NN	Number=Sing	3	nmod	_	_
+7	shall	shall	AUX	MD	VerbForm=Fin	8	aux	_	_
+8	lie	lie	VERB	VB	VerbForm=Inf	0	root	_	_
+9	there	there	ADV	RB	_	8	advmod	_	_
+10	;	;	PUNCT	,	_	15	punct	_	_
+11	and	and	CCONJ	CC	_	15	cc	_	_
+12	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	_
+13	houses	house	NOUN	NNS	Number=Plur	15	nsubj	_	_
+14	shall	shall	AUX	MD	VerbForm=Fin	15	aux	_	_
+15	be	be	AUX	VB	VerbForm=Inf	8	conj	_	_
+16	full	full	ADJ	JJ	Degree=Pos	15	xcomp	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	doleful	doleful	ADJ	JJ	Degree=Pos	19	amod	_	_
+19	creatures	creature	NOUN	NNS	Number=Plur	16	obl	_	_
+20	;	;	PUNCT	,	_	24	punct	_	_
+21	and	and	CCONJ	CC	_	24	cc	_	_
+22	owls	owl	NOUN	NNS	Number=Plur	24	nsubj	_	_
+23	shall	shall	AUX	MD	VerbForm=Fin	24	aux	_	_
+24	dwell	dwell	VERB	VB	VerbForm=Inf	8	conj	_	_
+25	there	there	ADV	RB	_	24	advmod	_	_
+26	,	,	PUNCT	,	_	30	punct	_	_
+27	and	and	CCONJ	CC	_	30	cc	_	_
+28	satyrs	satyr	NOUN	NNS	Number=Plur	30	nsubj	_	_
+29	shall	shall	AUX	MD	VerbForm=Fin	30	aux	_	_
+30	dance	dance	VERB	VB	VerbForm=Inf	8	conj	_	_
+31	there	there	ADV	RB	_	30	advmod	_	_
+32	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And the wild beasts of the islands shall cry in their desolate houses, and dragons in their pleasant palaces; and her time is near to come, and her day shall not be prolonged.
+# sent_id = 718
+# llm_note = "dragons in their pleasant palaces" — elliptical, "shall cry" elided; attached as conj to "cry".
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+3	wild	wild	ADJ	JJ	Degree=Pos	4	amod	_	_
+4	beasts	beast	NOUN	NNS	Number=Plur	9	nsubj	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
+7	islands	island	NOUN	NNS	Number=Plur	4	nmod	_	_
+8	shall	shall	AUX	MD	VerbForm=Fin	9	aux	_	_
+9	cry	cry	VERB	VB	VerbForm=Inf	0	root	_	_
+10	in	in	ADP	IN	_	13	case	_	_
+11	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	_
+12	desolate	desolate	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	houses	house	NOUN	NNS	Number=Plur	9	obl	_	_
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	dragons	dragon	NOUN	NNS	Number=Plur	9	conj	_	_
+17	in	in	ADP	IN	_	20	case	_	_
+18	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+19	pleasant	pleasant	ADJ	JJ	Degree=Pos	20	amod	_	_
+20	palaces	palace	NOUN	NNS	Number=Plur	16	obl	_	_
+21	;	;	PUNCT	,	_	24	punct	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	her	she	PRON	PRP$	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	nmod:poss	_	_
+24	time	time	NOUN	NN	Number=Sing	25	nsubj	_	_
+25	is	be	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	9	parataxis	_	_
+26	near	near	ADJ	JJ	Degree=Pos	25	xcomp	_	_
+27	to	to	PART	TO	_	28	mark	_	_
+28	come	come	VERB	VB	VerbForm=Inf	26	xcomp	_	_
+29	,	,	PUNCT	,	_	36	punct	_	_
+30	and	and	CCONJ	CC	_	36	cc	_	_
+31	her	she	PRON	PRP$	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	32	nmod:poss	_	_
+32	day	day	NOUN	NN	Number=Sing	36	nsubj	_	_
+33	shall	shall	AUX	MD	VerbForm=Fin	36	aux	_	_
+34	not	not	PART	RB	Polarity=Neg	36	advmod	_	_
+35	be	be	AUX	VB	VerbForm=Inf	36	aux	_	_
+36	prolonged	prolong	VERB	VBN	Tense=Past|VerbForm=Part	9	conj	_	_
+37	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = For I will destroy her speedily; yea, for I will be merciful unto my people, but the wicked shall perish.
+# sent_id = 719
+1	For	for	SCONJ	IN	_	4	mark	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	destroy	destroy	VERB	VB	VerbForm=Inf	0	root	_	_
+5	her	she	PRON	PRP$	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	obj	_	_
+6	speedily	speedily	ADV	RB	_	4	advmod	_	_
+7	;	;	PUNCT	,	_	13	punct	_	_
+8	yea	yea	ADV	UH	_	4	discourse	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	for	for	SCONJ	IN	_	13	mark	_	_
+11	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_
+12	will	will	AUX	MD	VerbForm=Fin	13	aux	_	_
+13	be	be	AUX	VB	VerbForm=Inf	4	advcl	_	_
+14	merciful	merciful	ADJ	JJ	Degree=Pos	13	xcomp	_	_
+15	unto	unto	ADP	IN	_	17	case	_	_
+16	my	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
+17	people	people	NOUN	NN	Number=Plur	13	obl	_	_
+18	,	,	PUNCT	,	_	23	punct	_	_
+19	but	but	CCONJ	CC	_	23	cc	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	wicked	wicked	ADJ	JJ	Degree=Pos	23	nsubj	_	_
+22	shall	shall	AUX	MD	VerbForm=Fin	23	aux	_	_
+23	perish	perish	VERB	VB	VerbForm=Inf	4	conj	_	_
+24	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = For the Lord will have mercy on Jacob, and will yet choose Israel, and set them in their own land; and the strangers shall be joined with them, and they shall cleave to the house of Jacob.
+# sent_id = 720
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	Lord	Lord	PROPN	NNP	Number=Sing	5	nsubj	_	_
+4	will	will	AUX	MD	VerbForm=Fin	5	aux	_	_
+5	have	have	VERB	VB	VerbForm=Inf	0	root	_	_
+6	mercy	mercy	NOUN	NN	Number=Sing	5	obj	_	_
+7	on	on	ADP	IN	_	8	case	_	_
+8	Jacob	Jacob	PROPN	NNP	Number=Sing	5	obl	_	_
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	and	and	CCONJ	CC	_	13	cc	_	_
+11	will	will	AUX	MD	VerbForm=Fin	13	aux	_	_
+12	yet	yet	ADV	RB	_	13	advmod	_	_
+13	choose	choose	VERB	VB	VerbForm=Inf	5	conj	_	_
+14	Israel	Israel	PROPN	NNP	Number=Sing	13	obj	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	set	set	VERB	VB	VerbForm=Inf	13	conj	_	_
+18	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	17	obj	_	_
+19	in	in	ADP	IN	_	22	case	_	_
+20	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+21	own	own	ADJ	JJ	Degree=Pos	22	amod	_	_
+22	land	land	NOUN	NN	Number=Sing	17	obl	_	_
+23	;	;	PUNCT	,	_	29	punct	_	_
+24	and	and	CCONJ	CC	_	29	cc	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	strangers	stranger	NOUN	NNS	Number=Plur	29	nsubj	_	_
+27	shall	shall	AUX	MD	VerbForm=Fin	29	aux	_	_
+28	be	be	AUX	VB	VerbForm=Inf	29	aux	_	_
+29	joined	join	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	_
+30	with	with	ADP	IN	_	31	case	_	_
+31	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	29	obl	_	_
+32	,	,	PUNCT	,	_	36	punct	_	_
+33	and	and	CCONJ	CC	_	36	cc	_	_
+34	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	36	nsubj	_	_
+35	shall	shall	AUX	MD	VerbForm=Fin	36	aux	_	_
+36	cleave	cleave	VERB	VB	VerbForm=Inf	29	conj	_	_
+37	to	to	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+39	house	house	NOUN	NN	Number=Sing	36	obl	_	_
+40	of	of	ADP	IN	_	41	case	_	_
+41	Jacob	Jacob	PROPN	NNP	Number=Sing	39	nmod	_	_
+42	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And the people shall take them and bring them to their place; yea, from far unto the ends of the earth; and they shall return to their lands of promise.
+# sent_id = 721
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	people	people	NOUN	NN	Number=Plur	5	nsubj	_	_
+4	shall	shall	AUX	MD	VerbForm=Fin	5	aux	_	_
+5	take	take	VERB	VB	VerbForm=Inf	0	root	_	_
+6	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	5	obj	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	bring	bring	VERB	VB	VerbForm=Inf	5	conj	_	_
+9	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	8	obj	_	_
+10	to	to	ADP	IN	_	12	case	_	_
+11	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	_
+12	place	place	NOUN	NN	Number=Sing	8	obl	_	_
+13	;	;	PUNCT	,	_	17	punct	_	_
+14	yea	yea	ADV	UH	_	5	discourse	_	_
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	from	from	ADP	IN	_	17	case	_	_
+17	far	far	ADV	RB	_	5	obl	_	_
+18	unto	unto	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	ends	end	NOUN	NNS	Number=Plur	17	nmod	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	earth	earth	NOUN	NN	Number=Sing	20	nmod	_	_
+24	;	;	PUNCT	,	_	28	punct	_	_
+25	and	and	CCONJ	CC	_	28	cc	_	_
+26	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	28	nsubj	_	_
+27	shall	shall	AUX	MD	VerbForm=Fin	28	aux	_	_
+28	return	return	VERB	VB	VerbForm=Inf	5	conj	_	_
+29	to	to	ADP	IN	_	31	case	_	_
+30	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	31	nmod:poss	_	_
+31	lands	land	NOUN	NNS	Number=Plur	28	obl	_	_
+32	of	of	ADP	IN	_	33	case	_	_
+33	promise	promise	NOUN	NN	Number=Sing	31	nmod	_	_
+34	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And the house of Israel shall possess them, and the land of the Lord shall be for servants and handmaids; and they shall take them captives unto whom they were captives; and they shall rule over their oppressors.
+# sent_id = 722
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	house	house	NOUN	NN	Number=Sing	7	nsubj	_	_
+4	of	of	ADP	IN	_	5	case	_	_
+5	Israel	Israel	PROPN	NNP	Number=Sing	3	nmod	_	_
+6	shall	shall	AUX	MD	VerbForm=Fin	7	aux	_	_
+7	possess	possess	VERB	VB	VerbForm=Inf	0	root	_	_
+8	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	7	obj	_	_
+9	,	,	PUNCT	,	_	17	punct	_	_
+10	and	and	CCONJ	CC	_	17	cc	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	land	land	NOUN	NN	Number=Sing	17	nsubj	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	Lord	Lord	PROPN	NNP	Number=Sing	12	nmod	_	_
+16	shall	shall	AUX	MD	VerbForm=Fin	17	aux	_	_
+17	be	be	AUX	VB	VerbForm=Inf	7	conj	_	_
+18	for	for	ADP	IN	_	19	case	_	_
+19	servants	servant	NOUN	NNS	Number=Plur	17	obl	_	_
+20	and	and	CCONJ	CC	_	21	cc	_	_
+21	handmaids	handmaid	NOUN	NNS	Number=Plur	19	conj	_	_
+22	;	;	PUNCT	,	_	26	punct	_	_
+23	and	and	CCONJ	CC	_	26	cc	_	_
+24	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	26	nsubj	_	_
+25	shall	shall	AUX	MD	VerbForm=Fin	26	aux	_	_
+26	take	take	VERB	VB	VerbForm=Inf	7	conj	_	_
+27	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	26	obj	_	_
+28	captives	captive	NOUN	NNS	Number=Plur	26	xcomp	_	_
+29	unto	unto	ADP	IN	_	30	case	_	_
+30	whom	who	PRON	WP	PronType=Rel	33	obl	_	_
+31	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	33	nsubj	_	_
+32	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	33	cop	_	_
+33	captives	captive	NOUN	NNS	Number=Plur	28	acl:relcl	_	_
+34	;	;	PUNCT	,	_	38	punct	_	_
+35	and	and	CCONJ	CC	_	38	cc	_	_
+36	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	38	nsubj	_	_
+37	shall	shall	AUX	MD	VerbForm=Fin	38	aux	_	_
+38	rule	rule	VERB	VB	VerbForm=Inf	7	conj	_	_
+39	over	over	ADP	IN	_	41	case	_	_
+40	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	41	nmod:poss	_	_
+41	oppressors	oppressor	NOUN	NNS	Number=Plur	38	obl	_	_
+42	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And it shall come to pass in that day that the Lord shall give thee rest, from thy sorrow, and from thy fear, and from the hard bondage wherein thou wast made to serve.
+# sent_id = 723
+# llm_note = AICTP frame: "came" is root, "it" is expl, "to pass" is xcomp. "that the Lord shall give" = embedded clause.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	expl	_	_
+3	shall	shall	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	come	come	VERB	VB	VerbForm=Inf	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	that	that	DET	DT	Definite=Def|PronType=Dem	9	det	_	_
+9	day	day	NOUN	NN	Number=Sing	4	obl	_	_
+10	that	that	SCONJ	IN	_	14	mark	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	Lord	Lord	PROPN	NNP	Number=Sing	14	nsubj	_	_
+13	shall	shall	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	give	give	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+15	thee	thou	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs	14	iobj	_	_
+16	rest	rest	NOUN	NN	Number=Sing	14	obj	_	_
+17	,	,	PUNCT	,	_	20	punct	_	_
+18	from	from	ADP	IN	_	20	case	_	_
+19	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+20	sorrow	sorrow	NOUN	NN	Number=Sing	14	obl	_	_
+21	,	,	PUNCT	,	_	25	punct	_	_
+22	and	and	CCONJ	CC	_	25	cc	_	_
+23	from	from	ADP	IN	_	25	case	_	_
+24	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes|PronType=Prs	25	nmod:poss	_	_
+25	fear	fear	NOUN	NN	Number=Sing	20	conj	_	_
+26	,	,	PUNCT	,	_	31	punct	_	_
+27	and	and	CCONJ	CC	_	31	cc	_	_
+28	from	from	ADP	IN	_	31	case	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
+30	hard	hard	ADJ	JJ	Degree=Pos	31	amod	_	_
+31	bondage	bondage	NOUN	NN	Number=Sing	20	conj	_	_
+32	wherein	wherein	ADV	WRB	PronType=Rel	35	advmod	_	_
+33	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2|PronType=Prs	35	nsubj	_	_
+34	wast	be	AUX	VBD	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin	35	aux	_	_
+35	made	make	VERB	VBN	Tense=Past|VerbForm=Part	31	acl:relcl	_	_
+36	to	to	PART	TO	_	37	mark	_	_
+37	serve	serve	VERB	VB	VerbForm=Inf	35	xcomp	_	_
+38	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it shall come to pass in that day, that thou shalt take up this proverb against the king of Babylon, and say: How hath the oppressor ceased, the golden city ceased!
+# sent_id = 724
+# llm_note = AICTP frame. "How hath the oppressor ceased" = exclamatory clause, subject-verb inversion. "hath" here = AUX (perfective) with "ceased". "the golden city ceased" = elliptical parallel.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	expl	_	_
+3	shall	shall	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	come	come	VERB	VB	VerbForm=Inf	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	VerbForm=Inf	4	xcomp	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	that	that	DET	DT	Definite=Def|PronType=Dem	9	det	_	_
+9	day	day	NOUN	NN	Number=Sing	4	obl	_	_
+10	,	,	PUNCT	,	_	4	punct	_	_
+11	that	that	SCONJ	IN	_	14	mark	_	_
+12	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2|PronType=Prs	14	nsubj	_	_
+13	shalt	shall	AUX	MD	VerbForm=Fin	14	aux	_	_
+14	take	take	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+15	up	up	ADP	RP	_	14	compound:prt	_	_
+16	this	this	DET	DT	Definite=Def|PronType=Dem	17	det	_	_
+17	proverb	proverb	NOUN	NN	Number=Sing	14	obj	_	_
+18	against	against	ADP	IN	_	21	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	king	king	NOUN	NN	Number=Sing	14	obl	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	Babylon	Babylon	PROPN	NNP	Number=Sing	20	nmod	_	_
+23	,	,	PUNCT	,	_	25	punct	_	_
+24	and	and	CCONJ	CC	_	25	cc	_	_
+25	say	say	VERB	VB	VerbForm=Inf	14	conj	_	_
+26	:	:	PUNCT	,	_	25	punct	_	_
+27	How	how	ADV	WRB	PronType=Int	31	advmod	_	_
+28	hath	have	AUX	VBZ	Number=Sing|Person=3|Tense=Pres	31	aux	_	_
+29	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
+30	oppressor	oppressor	NOUN	NN	Number=Sing	31	nsubj	_	_
+31	ceased	cease	VERB	VBN	Tense=Past|VerbForm=Part	25	ccomp	_	_
+32	,	,	PUNCT	,	_	35	punct	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
+34	golden	golden	ADJ	JJ	Degree=Pos	35	amod	_	_
+35	city	city	NOUN	NN	Number=Sing	31	parataxis	_	_
+36	ceased	cease	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	35	acl:relcl	_	_
+37	!	!	PUNCT	.	_	31	punct	_	_
+

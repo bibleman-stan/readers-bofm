@@ -1,0 +1,761 @@
+# text = Now, how could a man repent except he should sin?
+# sent_id = 1625
+# llm_note = rhetorical question; 'how' advmod of 'repent'; 'could' = aux; 'except he should sin' = advcl
+1	Now	now	ADV	RB	_	7	advmod	_	_
+2	,	,	PUNCT	,	_	7	punct	_	_
+3	how	how	ADV	WRB	_	7	advmod	_	_
+4	could	could	AUX	MD	_	7	aux	_	_
+5	a	a	DET	DT	_	6	det	_	_
+6	man	man	NOUN	NN	_	7	nsubj	_	_
+7	repent	repent	VERB	VB	_	0	root	_	_
+8	except	except	SCONJ	IN	_	11	mark	_	_
+9	he	he	PRON	PRP	_	11	nsubj	_	_
+10	should	should	AUX	MD	_	11	aux	_	_
+11	sin	sin	VERB	VB	_	7	advcl	_	_
+12	?	?	PUNCT	.	_	7	punct	_	_
+
+# text = How could he sin if there was no law?
+# sent_id = 1626
+# llm_note = 'there'(6) expletive of 'was'; 'law' = nsubj of 'was'; 'if there was no law' = advcl
+1	How	how	ADV	WRB	_	4	advmod	_	_
+2	could	could	AUX	MD	_	4	aux	_	_
+3	he	he	PRON	PRP	_	4	nsubj	_	_
+4	sin	sin	VERB	VB	_	0	root	_	_
+5	if	if	SCONJ	IN	_	7	mark	_	_
+6	there	there	PRON	EX	_	7	expl	_	_
+7	was	be	VERB	VBD	_	4	advcl	_	_
+8	no	no	DET	DT	_	9	det	_	_
+9	law	law	NOUN	NN	_	7	nsubj	_	_
+10	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = How could there be a law save there was a punishment?
+# sent_id = 1627
+# llm_note = 'save' = SCONJ (archaic 'unless'); both 'there'(3) and 'there'(8) are expletives of their respective verbs
+1	How	how	ADV	WRB	_	4	advmod	_	_
+2	could	could	AUX	MD	_	4	aux	_	_
+3	there	there	PRON	EX	_	4	expl	_	_
+4	be	be	VERB	VB	_	0	root	_	_
+5	a	a	DET	DT	_	6	det	_	_
+6	law	law	NOUN	NN	_	4	nsubj	_	_
+7	save	save	SCONJ	IN	_	9	mark	_	_
+8	there	there	PRON	EX	_	9	expl	_	_
+9	was	be	VERB	VBD	_	4	advcl	_	_
+10	a	a	DET	DT	_	11	det	_	_
+11	punishment	punishment	NOUN	NN	_	9	nsubj	_	_
+12	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = Now, there was a punishment affixed, and a just law given, which brought remorse of conscience unto man.
+# sent_id = 1628
+# llm_note = existential 'there was'; 'punishment'(6) nsubj; 'law'(12) conj of 'punishment'; 'which brought remorse' = acl:relcl on 'law'
+1	Now	now	ADV	RB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	there	there	PRON	EX	_	4	expl	_	_
+4	was	be	VERB	VBD	_	0	root	_	_
+5	a	a	DET	DT	_	6	det	_	_
+6	punishment	punishment	NOUN	NN	_	4	nsubj	_	_
+7	affixed	affix	VERB	VBN	_	6	acl	_	_
+8	,	,	PUNCT	,	_	12	punct	_	_
+9	and	and	CCONJ	CC	_	12	cc	_	_
+10	a	a	DET	DT	_	12	det	_	_
+11	just	just	ADJ	JJ	_	12	amod	_	_
+12	law	law	NOUN	NN	_	6	conj	_	_
+13	given	give	VERB	VBN	_	12	acl	_	_
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	which	which	PRON	WDT	_	16	nsubj	_	_
+16	brought	bring	VERB	VBD	_	12	acl:relcl	_	_
+17	remorse	remorse	NOUN	NN	_	16	obj	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	conscience	conscience	NOUN	NN	_	17	nmod	_	_
+20	unto	unto	ADP	IN	_	21	case	_	_
+21	man	man	NOUN	NN	_	16	obl	_	_
+22	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Now, if there was no law given--if a man murdered he should die-- would he be afraid he would die if he should murder?
+# sent_id = 1629
+# llm_note = main inverted question 'would he be afraid'; 'afraid' = adj xcomp of 'be'(20); first 'if' clause (3-8) = advcl; second 'if' clause (10-16) = conj advcl; 'he would die'(22-24) = ccomp of 'afraid'; final 'if he should murder' = advcl of 'die'
+1	Now	now	ADV	RB	_	21	advmod	_	_
+2	,	,	PUNCT	,	_	21	punct	_	_
+3	if	if	SCONJ	IN	_	8	mark	_	_
+4	there	there	PRON	EX	_	5	expl	_	_
+5	was	be	VERB	VBD	_	8	advcl	_	_
+6	no	no	DET	DT	_	7	det	_	_
+7	law	law	NOUN	NN	_	5	nsubj	_	_
+8	given	give	VERB	VBN	_	21	advcl	_	_
+9	--	--	PUNCT	:	_	8	punct	_	_
+10	if	if	SCONJ	IN	_	13	mark	_	_
+11	a	a	DET	DT	_	12	det	_	_
+12	man	man	NOUN	NN	_	13	nsubj	_	_
+13	murdered	murder	VERB	VBD	_	8	conj	_	_
+14	he	he	PRON	PRP	_	16	nsubj	_	_
+15	should	should	AUX	MD	_	16	aux	_	_
+16	die	die	VERB	VB	_	13	ccomp	_	_
+17	--	--	PUNCT	:	_	16	punct	_	_
+18	would	would	AUX	MD	_	21	aux	_	_
+19	he	he	PRON	PRP	_	21	nsubj	_	_
+20	be	be	AUX	VB	_	21	cop	_	_
+21	afraid	afraid	ADJ	JJ	_	0	root	_	_
+22	he	he	PRON	PRP	_	24	nsubj	_	_
+23	would	would	AUX	MD	_	24	aux	_	_
+24	die	die	VERB	VB	_	21	ccomp	_	_
+25	if	if	SCONJ	IN	_	28	mark	_	_
+26	he	he	PRON	PRP	_	28	nsubj	_	_
+27	should	should	AUX	MD	_	28	aux	_	_
+28	murder	murder	VERB	VB	_	24	advcl	_	_
+29	?	?	PUNCT	.	_	21	punct	_	_
+
+# text = And also, if there was no law given against sin men would not be afraid to sin.
+# sent_id = 1630
+# llm_note = 'men would not be afraid' = main; 'if there was no law given against sin' = advcl; 'afraid'(16) = adj root
+1	And	and	CCONJ	CC	_	16	cc	_	_
+2	also	also	ADV	RB	_	16	advmod	_	_
+3	,	,	PUNCT	,	_	16	punct	_	_
+4	if	if	SCONJ	IN	_	9	mark	_	_
+5	there	there	PRON	EX	_	9	expl	_	_
+6	was	be	VERB	VBD	_	9	advcl	_	_
+7	no	no	DET	DT	_	8	det	_	_
+8	law	law	NOUN	NN	_	6	nsubj	_	_
+9	given	give	VERB	VBN	_	16	advcl	_	_
+10	against	against	ADP	IN	_	11	case	_	_
+11	sin	sin	NOUN	NN	_	9	obl	_	_
+12	men	man	NOUN	NNS	_	16	nsubj	_	_
+13	would	would	AUX	MD	_	16	aux	_	_
+14	not	not	PART	RB	_	16	advmod	_	_
+15	be	be	AUX	VB	_	16	cop	_	_
+16	afraid	afraid	ADJ	JJ	_	0	root	_	_
+17	to	to	PART	TO	_	18	mark	_	_
+18	sin	sin	VERB	VB	_	16	xcomp	_	_
+19	.	.	PUNCT	.	_	16	punct	_	_
+
+# text = And if there was no law given, if men sinned what could justice do, or mercy either, for they would have no claim upon the creature?
+# sent_id = 1631
+# llm_note = main question 'what could justice do'(12-15); 'or mercy either' = conj of 'justice'; 'for they would have no claim' = causal advcl; two 'if' advcls
+1	And	and	CCONJ	CC	_	15	cc	_	_
+2	if	if	SCONJ	IN	_	7	mark	_	_
+3	there	there	PRON	EX	_	7	expl	_	_
+4	was	be	VERB	VBD	_	7	advcl	_	_
+5	no	no	DET	DT	_	6	det	_	_
+6	law	law	NOUN	NN	_	4	nsubj	_	_
+7	given	give	VERB	VBN	_	15	advcl	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	if	if	SCONJ	IN	_	11	mark	_	_
+10	men	man	NOUN	NNS	_	11	nsubj	_	_
+11	sinned	sin	VERB	VBD	_	7	conj	_	_
+12	what	what	PRON	WP	_	15	obj	_	_
+13	could	could	AUX	MD	_	15	aux	_	_
+14	justice	justice	NOUN	NN	_	15	nsubj	_	_
+15	do	do	VERB	VB	_	0	root	_	_
+16	,	,	PUNCT	,	_	18	punct	_	_
+17	or	or	CCONJ	CC	_	18	cc	_	_
+18	mercy	mercy	NOUN	NN	_	14	conj	_	_
+19	either	either	ADV	RB	_	18	advmod	_	_
+20	,	,	PUNCT	,	_	24	punct	_	_
+21	for	for	SCONJ	IN	_	24	mark	_	_
+22	they	they	PRON	PRP	_	24	nsubj	_	_
+23	would	would	AUX	MD	_	24	aux	_	_
+24	have	have	VERB	VB	_	15	advcl	_	_
+25	no	no	DET	DT	_	26	det	_	_
+26	claim	claim	NOUN	NN	_	24	obj	_	_
+27	upon	upon	ADP	IN	_	29	case	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	creature	creature	NOUN	NN	_	26	nmod	_	_
+30	?	?	PUNCT	.	_	15	punct	_	_
+
+# text = But there is a law given, and a punishment affixed, and a repentance granted; which repentance, mercy claimeth; otherwise, justice claimeth the creature and executeth the law, and the law inflicteth the punishment; if not so, the works of justice would be destroyed, and God would cease to be God.
+# sent_id = 1632
+# llm_note = existential 'there is'; 'law'(5), 'punishment'(10), 'repentance'(15) are three conjoined nsubj; 'which repentance mercy claimeth' = parataxis with dislocated 'repentance'; 'otherwise justice claimeth' parataxis; chain of conjoined verbs; 'if not so' advcl; 'cease to be God' xcomp
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	is	be	VERB	VBZ	_	0	root	_	_
+4	a	a	DET	DT	_	5	det	_	_
+5	law	law	NOUN	NN	_	3	nsubj	_	_
+6	given	give	VERB	VBN	_	5	acl	_	_
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	and	and	CCONJ	CC	_	10	cc	_	_
+9	a	a	DET	DT	_	10	det	_	_
+10	punishment	punishment	NOUN	NN	_	5	conj	_	_
+11	affixed	affix	VERB	VBN	_	10	acl	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	a	a	DET	DT	_	15	det	_	_
+15	repentance	repentance	NOUN	NN	_	5	conj	_	_
+16	granted	grant	VERB	VBN	_	15	acl	_	_
+17	;	;	PUNCT	:	_	22	punct	_	_
+18	which	which	PRON	WDT	_	19	det	_	_
+19	repentance	repentance	NOUN	NN	_	22	dislocated	_	_
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	mercy	mercy	NOUN	NN	_	22	nsubj	_	_
+22	claimeth	claim	VERB	VBZ	_	3	parataxis	_	_
+23	;	;	PUNCT	:	_	27	punct	_	_
+24	otherwise	otherwise	ADV	RB	_	27	advmod	_	_
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	justice	justice	NOUN	NN	_	27	nsubj	_	_
+27	claimeth	claim	VERB	VBZ	_	3	conj	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	creature	creature	NOUN	NN	_	27	obj	_	_
+30	and	and	CCONJ	CC	_	31	cc	_	_
+31	executeth	execute	VERB	VBZ	_	27	conj	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	law	law	NOUN	NN	_	31	obj	_	_
+34	,	,	PUNCT	,	_	38	punct	_	_
+35	and	and	CCONJ	CC	_	38	cc	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	law	law	NOUN	NN	_	38	nsubj	_	_
+38	inflicteth	inflict	VERB	VBZ	_	27	conj	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	punishment	punishment	NOUN	NN	_	38	obj	_	_
+41	;	;	PUNCT	:	_	52	punct	_	_
+42	if	if	SCONJ	IN	_	44	mark	_	_
+43	not	not	PART	RB	_	44	advmod	_	_
+44	so	so	ADV	RB	_	52	advcl	_	_
+45	,	,	PUNCT	,	_	52	punct	_	_
+46	the	the	DET	DT	_	47	det	_	_
+47	works	work	NOUN	NNS	_	52	nsubj:pass	_	_
+48	of	of	ADP	IN	_	49	case	_	_
+49	justice	justice	NOUN	NN	_	47	nmod	_	_
+50	would	would	AUX	MD	_	52	aux	_	_
+51	be	be	AUX	VB	_	52	aux:pass	_	_
+52	destroyed	destroy	VERB	VBN	_	3	conj	_	_
+53	,	,	PUNCT	,	_	57	punct	_	_
+54	and	and	CCONJ	CC	_	57	cc	_	_
+55	God	God	PROPN	NNP	_	57	nsubj	_	_
+56	would	would	AUX	MD	_	57	aux	_	_
+57	cease	cease	VERB	VB	_	3	conj	_	_
+58	to	to	PART	TO	_	59	mark	_	_
+59	be	be	AUX	VB	_	57	xcomp	_	_
+60	God	God	PROPN	NNP	_	59	xcomp	_	_
+61	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But God ceaseth not to be God, and mercy claimeth the penitent, and mercy cometh because of the atonement; and the atonement bringeth to pass the resurrection of the dead; and the resurrection of the dead bringeth back men into the presence of God; and thus they are restored into his presence, to be judged according to their works, according to the law and justice.
+# sent_id = 1633
+# llm_note = 'ceaseth'(3) root; chain of conj clauses; 'to be God' xcomp; 'because of' complex preposition; 'bringeth to pass' idiom with xcomp; 'restored' passive; 'to be judged' = advcl purpose
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	God	God	PROPN	NNP	_	3	nsubj	_	_
+3	ceaseth	cease	VERB	VBZ	_	0	root	_	_
+4	not	not	PART	RB	_	3	advmod	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	be	be	AUX	VB	_	3	xcomp	_	_
+7	God	God	PROPN	NNP	_	6	xcomp	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	mercy	mercy	NOUN	NN	_	11	nsubj	_	_
+11	claimeth	claim	VERB	VBZ	_	3	conj	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	penitent	penitent	NOUN	NN	_	11	obj	_	_
+14	,	,	PUNCT	,	_	17	punct	_	_
+15	and	and	CCONJ	CC	_	17	cc	_	_
+16	mercy	mercy	NOUN	NN	_	17	nsubj	_	_
+17	cometh	come	VERB	VBZ	_	3	conj	_	_
+18	because	because	ADP	IN	_	21	case	_	_
+19	of	of	ADP	IN	_	18	fixed	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	atonement	atonement	NOUN	NN	_	17	obl	_	_
+22	;	;	PUNCT	:	_	26	punct	_	_
+23	and	and	CCONJ	CC	_	26	cc	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	atonement	atonement	NOUN	NN	_	26	nsubj	_	_
+26	bringeth	bring	VERB	VBZ	_	3	conj	_	_
+27	to	to	PART	TO	_	28	mark	_	_
+28	pass	pass	VERB	VB	_	26	xcomp	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	resurrection	resurrection	NOUN	NN	_	28	obj	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	dead	dead	NOUN	NN	_	30	nmod	_	_
+34	;	;	PUNCT	:	_	41	punct	_	_
+35	and	and	CCONJ	CC	_	41	cc	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	resurrection	resurrection	NOUN	NN	_	41	nsubj	_	_
+38	of	of	ADP	IN	_	40	case	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	dead	dead	NOUN	NN	_	37	nmod	_	_
+41	bringeth	bring	VERB	VBZ	_	3	conj	_	_
+42	back	back	ADV	RB	_	41	advmod	_	_
+43	men	man	NOUN	NNS	_	41	obj	_	_
+44	into	into	ADP	IN	_	46	case	_	_
+45	the	the	DET	DT	_	46	det	_	_
+46	presence	presence	NOUN	NN	_	41	obl	_	_
+47	of	of	ADP	IN	_	48	case	_	_
+48	God	God	PROPN	NNP	_	46	nmod	_	_
+49	;	;	PUNCT	:	_	54	punct	_	_
+50	and	and	CCONJ	CC	_	54	cc	_	_
+51	thus	thus	ADV	RB	_	54	advmod	_	_
+52	they	they	PRON	PRP	_	54	nsubj:pass	_	_
+53	are	be	AUX	VBP	_	54	aux:pass	_	_
+54	restored	restore	VERB	VBN	_	3	conj	_	_
+55	into	into	ADP	IN	_	57	case	_	_
+56	his	he	PRON	PRP$	_	57	nmod:poss	_	_
+57	presence	presence	NOUN	NN	_	54	obl	_	_
+58	,	,	PUNCT	,	_	61	punct	_	_
+59	to	to	PART	TO	_	61	mark	_	_
+60	be	be	AUX	VB	_	61	aux:pass	_	_
+61	judged	judge	VERB	VBN	_	54	advcl	_	_
+62	according	according	ADP	IN	_	65	case	_	_
+63	to	to	ADP	IN	_	62	fixed	_	_
+64	their	they	PRON	PRP$	_	65	nmod:poss	_	_
+65	works	work	NOUN	NNS	_	61	obl	_	_
+66	,	,	PUNCT	,	_	70	punct	_	_
+67	according	according	ADP	IN	_	70	case	_	_
+68	to	to	ADP	IN	_	67	fixed	_	_
+69	the	the	DET	DT	_	70	det	_	_
+70	law	law	NOUN	NN	_	61	obl	_	_
+71	and	and	CCONJ	CC	_	72	cc	_	_
+72	justice	justice	NOUN	NN	_	70	conj	_	_
+73	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = For behold, justice exerciseth all his demands, and also mercy claimeth all which is her own; and thus, none but the truly penitent are saved.
+# sent_id = 1634
+# llm_note = 'For' SCONJ marks the whole as causal; 'behold' INTJ discourse; 'exerciseth' root; 'mercy claimeth' conj; 'which is her own' relcl; 'none but the truly penitent are saved' conj
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	justice	justice	NOUN	NN	_	5	nsubj	_	_
+5	exerciseth	exercise	VERB	VBZ	_	0	root	_	_
+6	all	all	DET	PDT	_	8	det:predet	_	_
+7	his	he	PRON	PRP$	_	8	nmod:poss	_	_
+8	demands	demand	NOUN	NNS	_	5	obj	_	_
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	and	and	CCONJ	CC	_	13	cc	_	_
+11	also	also	ADV	RB	_	13	advmod	_	_
+12	mercy	mercy	NOUN	NN	_	13	nsubj	_	_
+13	claimeth	claim	VERB	VBZ	_	5	conj	_	_
+14	all	all	PRON	DT	_	13	obj	_	_
+15	which	which	PRON	WDT	_	16	nsubj	_	_
+16	is	be	VERB	VBZ	_	14	acl:relcl	_	_
+17	her	she	PRON	PRP$	_	18	nmod:poss	_	_
+18	own	own	ADJ	JJ	_	16	xcomp	_	_
+19	;	;	PUNCT	:	_	29	punct	_	_
+20	and	and	CCONJ	CC	_	29	cc	_	_
+21	thus	thus	ADV	RB	_	29	advmod	_	_
+22	,	,	PUNCT	,	_	29	punct	_	_
+23	none	none	PRON	NN	_	29	nsubj:pass	_	_
+24	but	but	ADP	IN	_	27	case	_	_
+25	the	the	DET	DT	_	27	det	_	_
+26	truly	truly	ADV	RB	_	27	advmod	_	_
+27	penitent	penitent	ADJ	JJ	_	23	nmod	_	_
+28	are	be	AUX	VBP	_	29	aux:pass	_	_
+29	saved	save	VERB	VBN	_	5	conj	_	_
+30	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = What, do ye suppose that mercy can rob justice?
+# sent_id = 1635
+# llm_note = 'What' = INTJ rhetorical exclamation; 'do' = aux of 'suppose'; 'ye' nsubj; 'that mercy can rob justice' = ccomp
+1	What	what	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	5	punct	_	_
+3	do	do	AUX	VBP	_	5	aux	_	_
+4	ye	ye	PRON	PRP	_	5	nsubj	_	_
+5	suppose	suppose	VERB	VB	_	0	root	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	mercy	mercy	NOUN	NN	_	9	nsubj	_	_
+8	can	can	AUX	MD	_	9	aux	_	_
+9	rob	rob	VERB	VB	_	5	ccomp	_	_
+10	justice	justice	NOUN	NN	_	9	obj	_	_
+11	?	?	PUNCT	.	_	5	punct	_	_
+
+# text = I say unto you, Nay; not one whit.
+# sent_id = 1636
+# llm_note = 'I say unto you' main; 'Nay' INTJ parataxis; 'not one whit' = elliptical parataxis
+1	I	I	PRON	PRP	_	2	nsubj	_	_
+2	say	say	VERB	VBP	_	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	_	2	obl	_	_
+5	,	,	PUNCT	,	_	6	punct	_	_
+6	Nay	nay	INTJ	UH	_	2	parataxis	_	_
+7	;	;	PUNCT	:	_	10	punct	_	_
+8	not	not	PART	RB	_	10	advmod	_	_
+9	one	one	NUM	CD	_	10	nummod	_	_
+10	whit	whit	NOUN	NN	_	2	parataxis	_	_
+11	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = If so, God would cease to be God.
+# sent_id = 1637
+# llm_note = 'if so' conditional advcl; 'cease to be God' with xcomp chain
+1	If	if	SCONJ	IN	_	2	mark	_	_
+2	so	so	ADV	RB	_	6	advcl	_	_
+3	,	,	PUNCT	,	_	6	punct	_	_
+4	God	God	PROPN	NNP	_	6	nsubj	_	_
+5	would	would	AUX	MD	_	6	aux	_	_
+6	cease	cease	VERB	VB	_	0	root	_	_
+7	to	to	PART	TO	_	8	mark	_	_
+8	be	be	AUX	VB	_	6	xcomp	_	_
+9	God	God	PROPN	NNP	_	8	xcomp	_	_
+10	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And thus God bringeth about his great and eternal purposes, which were prepared from the foundation of the world.
+# sent_id = 1638
+# llm_note = 'bringeth about' V+particle; 'purposes' obj; 'which were prepared' passive relcl
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	thus	thus	ADV	RB	_	4	advmod	_	_
+3	God	God	PROPN	NNP	_	4	nsubj	_	_
+4	bringeth	bring	VERB	VBZ	_	0	root	_	_
+5	about	about	ADP	RP	_	4	compound:prt	_	_
+6	his	he	PRON	PRP$	_	10	nmod:poss	_	_
+7	great	great	ADJ	JJ	_	10	amod	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	eternal	eternal	ADJ	JJ	_	7	conj	_	_
+10	purposes	purpose	NOUN	NNS	_	4	obj	_	_
+11	,	,	PUNCT	,	_	14	punct	_	_
+12	which	which	PRON	WDT	_	14	nsubj:pass	_	_
+13	were	be	AUX	VBD	_	14	aux:pass	_	_
+14	prepared	prepare	VERB	VBN	_	10	acl:relcl	_	_
+15	from	from	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	foundation	foundation	NOUN	NN	_	14	obl	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	world	world	NOUN	NN	_	17	nmod	_	_
+21	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And thus cometh about the salvation and the redemption of men, and also their destruction and misery.
+# sent_id = 1639
+# llm_note = inverted 'cometh about'; 'salvation' postverbal nsubj; 'redemption' conj; 'destruction' and 'misery' further conj
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	cometh	come	VERB	VBZ	_	0	root	_	_
+4	about	about	ADP	RP	_	3	compound:prt	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	salvation	salvation	NOUN	NN	_	3	nsubj	_	_
+7	and	and	CCONJ	CC	_	9	cc	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	redemption	redemption	NOUN	NN	_	6	conj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	men	man	NOUN	NNS	_	9	nmod	_	_
+12	,	,	PUNCT	,	_	16	punct	_	_
+13	and	and	CCONJ	CC	_	16	cc	_	_
+14	also	also	ADV	RB	_	16	advmod	_	_
+15	their	they	PRON	PRP$	_	16	nmod:poss	_	_
+16	destruction	destruction	NOUN	NN	_	6	conj	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	misery	misery	NOUN	NN	_	16	conj	_	_
+19	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore, O my son, whosoever will come may come and partake of the waters of life freely; and whosoever will not come the same is not compelled to come; but in the last day it shall be restored unto him according to his deeds.
+# sent_id = 1640
+# llm_note = 'O my son' vocative; 'whosoever will come'(7-9) = free-relative nsubj of 'may come'(10-11); 'partake' conj of 'come'; 'whosoever will not come the same is not compelled' second conj clause; 'it shall be restored' third conj after 'but'
+1	Therefore	therefore	ADV	RB	_	11	advmod	_	_
+2	,	,	PUNCT	,	_	11	punct	_	_
+3	O	o	INTJ	UH	_	5	discourse	_	_
+4	my	I	PRON	PRP$	_	5	nmod:poss	_	_
+5	son	son	NOUN	NN	_	11	vocative	_	_
+6	,	,	PUNCT	,	_	11	punct	_	_
+7	whosoever	whosoever	PRON	WP	_	9	nsubj	_	_
+8	will	will	AUX	MD	_	9	aux	_	_
+9	come	come	VERB	VB	_	11	advcl	_	_
+10	may	may	AUX	MD	_	11	aux	_	_
+11	come	come	VERB	VB	_	0	root	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	partake	partake	VERB	VB	_	11	conj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	waters	water	NOUN	NNS	_	13	obl	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	life	life	NOUN	NN	_	16	nmod	_	_
+19	freely	freely	ADV	RB	_	11	advmod	_	_
+20	;	;	PUNCT	:	_	30	punct	_	_
+21	and	and	CCONJ	CC	_	30	cc	_	_
+22	whosoever	whosoever	PRON	WP	_	25	nsubj	_	_
+23	will	will	AUX	MD	_	25	aux	_	_
+24	not	not	PART	RB	_	25	advmod	_	_
+25	come	come	VERB	VB	_	30	advcl	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	same	same	PRON	DT	_	30	nsubj:pass	_	_
+28	is	be	AUX	VBZ	_	30	aux:pass	_	_
+29	not	not	PART	RB	_	30	advmod	_	_
+30	compelled	compel	VERB	VBN	_	11	conj	_	_
+31	to	to	PART	TO	_	32	mark	_	_
+32	come	come	VERB	VB	_	30	xcomp	_	_
+33	;	;	PUNCT	:	_	42	punct	_	_
+34	but	but	CCONJ	CC	_	42	cc	_	_
+35	in	in	ADP	IN	_	38	case	_	_
+36	the	the	DET	DT	_	38	det	_	_
+37	last	last	ADJ	JJ	_	38	amod	_	_
+38	day	day	NOUN	NN	_	42	obl	_	_
+39	it	it	PRON	PRP	_	42	nsubj:pass	_	_
+40	shall	shall	AUX	MD	_	42	aux	_	_
+41	be	be	AUX	VB	_	42	aux:pass	_	_
+42	restored	restore	VERB	VBN	_	11	conj	_	_
+43	unto	unto	ADP	IN	_	44	case	_	_
+44	him	he	PRON	PRP	_	42	obl	_	_
+45	according	according	ADP	IN	_	48	case	_	_
+46	to	to	ADP	IN	_	45	fixed	_	_
+47	his	he	PRON	PRP$	_	48	nmod:poss	_	_
+48	deeds	deed	NOUN	NNS	_	42	obl	_	_
+49	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = If he has desired to do evil, and has not repented in his days, behold, evil shall be done unto him, according to the restoration of God.
+# sent_id = 1641
+# llm_note = conditional 'if he has desired...and has not repented' = advcl of 'done'; 'behold' INTJ discourse; 'evil'(19) nsubj:pass of 'done'(22)
+1	If	if	SCONJ	IN	_	4	mark	_	_
+2	he	he	PRON	PRP	_	4	nsubj	_	_
+3	has	have	AUX	VBZ	_	4	aux	_	_
+4	desired	desire	VERB	VBN	_	22	advcl	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	do	do	VERB	VB	_	4	xcomp	_	_
+7	evil	evil	NOUN	NN	_	6	obj	_	_
+8	,	,	PUNCT	,	_	12	punct	_	_
+9	and	and	CCONJ	CC	_	12	cc	_	_
+10	has	have	AUX	VBZ	_	12	aux	_	_
+11	not	not	PART	RB	_	12	advmod	_	_
+12	repented	repent	VERB	VBN	_	4	conj	_	_
+13	in	in	ADP	IN	_	15	case	_	_
+14	his	he	PRON	PRP$	_	15	nmod:poss	_	_
+15	days	day	NOUN	NNS	_	12	obl	_	_
+16	,	,	PUNCT	,	_	17	punct	_	_
+17	behold	behold	INTJ	UH	_	22	discourse	_	_
+18	,	,	PUNCT	,	_	22	punct	_	_
+19	evil	evil	NOUN	NN	_	22	nsubj:pass	_	_
+20	shall	shall	AUX	MD	_	22	aux	_	_
+21	be	be	AUX	VB	_	22	aux:pass	_	_
+22	done	do	VERB	VBN	_	0	root	_	_
+23	unto	unto	ADP	IN	_	24	case	_	_
+24	him	he	PRON	PRP	_	22	obl	_	_
+25	,	,	PUNCT	,	_	29	punct	_	_
+26	according	according	ADP	IN	_	29	case	_	_
+27	to	to	ADP	IN	_	26	fixed	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	restoration	restoration	NOUN	NN	_	22	obl	_	_
+30	of	of	ADP	IN	_	31	case	_	_
+31	God	God	PROPN	NNP	_	29	nmod	_	_
+32	.	.	PUNCT	.	_	22	punct	_	_
+
+# text = And now, my son, I desire that ye should let these things trouble you no more, and only let your sins trouble you, with that trouble which shall bring you down unto repentance.
+# sent_id = 1642
+# llm_note = vocative 'my son'; 'I desire that ye should let...' = volition+ccomp; 'let'(12) causative: 'things'(14) obj, 'trouble'(15) xcomp; second 'let'(22) conj of first; 'with that trouble' obl; 'which shall bring' = acl:relcl on 'trouble'(30)
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	now	now	ADV	RB	_	8	advmod	_	_
+3	,	,	PUNCT	,	_	8	punct	_	_
+4	my	I	PRON	PRP$	_	5	nmod:poss	_	_
+5	son	son	NOUN	NN	_	8	vocative	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	I	I	PRON	PRP	_	8	nsubj	_	_
+8	desire	desire	VERB	VBP	_	0	root	_	_
+9	that	that	SCONJ	IN	_	12	mark	_	_
+10	ye	ye	PRON	PRP	_	12	nsubj	_	_
+11	should	should	AUX	MD	_	12	aux	_	_
+12	let	let	VERB	VB	_	8	ccomp	_	_
+13	these	this	DET	DT	_	14	det	_	_
+14	things	thing	NOUN	NNS	_	15	nsubj	_	_
+15	trouble	trouble	VERB	VB	_	12	xcomp	_	_
+16	you	you	PRON	PRP	_	15	obj	_	_
+17	no	no	ADV	RB	_	18	advmod	_	_
+18	more	more	ADV	RBR	_	15	advmod	_	_
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	only	only	ADV	RB	_	22	advmod	_	_
+22	let	let	VERB	VB	_	12	conj	_	_
+23	your	you	PRON	PRP$	_	24	nmod:poss	_	_
+24	sins	sin	NOUN	NNS	_	25	nsubj	_	_
+25	trouble	trouble	VERB	VB	_	22	xcomp	_	_
+26	you	you	PRON	PRP	_	25	obj	_	_
+27	,	,	PUNCT	,	_	30	punct	_	_
+28	with	with	ADP	IN	_	30	case	_	_
+29	that	that	DET	DT	_	30	det	_	_
+30	trouble	trouble	NOUN	NN	_	22	obl	_	_
+31	which	which	PRON	WDT	_	33	nsubj	_	_
+32	shall	shall	AUX	MD	_	33	aux	_	_
+33	bring	bring	VERB	VB	_	30	acl:relcl	_	_
+34	you	you	PRON	PRP	_	33	obj	_	_
+35	down	down	ADV	RP	_	33	compound:prt	_	_
+36	unto	unto	ADP	IN	_	37	case	_	_
+37	repentance	repentance	NOUN	NN	_	33	obl	_	_
+38	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = O my son, I desire that ye should deny the justice of God no more.
+# sent_id = 1643
+# llm_note = 'O my son' vocative; 'desire that ye should deny' = volition+ccomp
+1	O	o	INTJ	UH	_	3	discourse	_	_
+2	my	I	PRON	PRP$	_	3	nmod:poss	_	_
+3	son	son	NOUN	NN	_	6	vocative	_	_
+4	,	,	PUNCT	,	_	6	punct	_	_
+5	I	I	PRON	PRP	_	6	nsubj	_	_
+6	desire	desire	VERB	VBP	_	0	root	_	_
+7	that	that	SCONJ	IN	_	10	mark	_	_
+8	ye	ye	PRON	PRP	_	10	nsubj	_	_
+9	should	should	AUX	MD	_	10	aux	_	_
+10	deny	deny	VERB	VB	_	6	ccomp	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	justice	justice	NOUN	NN	_	10	obj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	God	God	PROPN	NNP	_	12	nmod	_	_
+15	no	no	ADV	RB	_	16	advmod	_	_
+16	more	more	ADV	RBR	_	10	advmod	_	_
+17	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Do not endeavor to excuse yourself in the least point because of your sins, by denying the justice of God; but do you let the justice of God, and his mercy, and his long-suffering have full sway in your heart; and let it bring you down to the dust in humility.
+# sent_id = 1644
+# llm_note = 'Do not endeavor' imperative root; 'to excuse' xcomp; 'because of your sins' advcl; 'by denying' advcl; second 'do you let' imperative conj; 'long'(38)+'-'(39)+'suffering'(40) tokenized compound; 'have full sway' xcomp of 'let'; 'and let it bring' third conj
+1	Do	do	AUX	VBP	_	3	aux	_	_
+2	not	not	PART	RB	_	3	advmod	_	_
+3	endeavor	endeavor	VERB	VB	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	excuse	excuse	VERB	VB	_	3	xcomp	_	_
+6	yourself	you	PRON	PRP	_	5	obj	_	_
+7	in	in	ADP	IN	_	10	case	_	_
+8	the	the	DET	DT	_	10	det	_	_
+9	least	least	ADJ	JJS	_	10	amod	_	_
+10	point	point	NOUN	NN	_	5	obl	_	_
+11	because	because	SCONJ	IN	_	14	mark	_	_
+12	of	of	ADP	IN	_	11	fixed	_	_
+13	your	you	PRON	PRP$	_	14	nmod:poss	_	_
+14	sins	sin	NOUN	NNS	_	5	advcl	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	by	by	SCONJ	IN	_	17	mark	_	_
+17	denying	deny	VERB	VBG	_	3	advcl	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	justice	justice	NOUN	NN	_	17	obj	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	God	God	PROPN	NNP	_	19	nmod	_	_
+22	;	;	PUNCT	:	_	26	punct	_	_
+23	but	but	CCONJ	CC	_	26	cc	_	_
+24	do	do	AUX	VBP	_	26	aux	_	_
+25	you	you	PRON	PRP	_	26	nsubj	_	_
+26	let	let	VERB	VB	_	3	conj	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	justice	justice	NOUN	NN	_	41	nsubj	_	_
+29	of	of	ADP	IN	_	30	case	_	_
+30	God	God	PROPN	NNP	_	28	nmod	_	_
+31	,	,	PUNCT	,	_	34	punct	_	_
+32	and	and	CCONJ	CC	_	34	cc	_	_
+33	his	he	PRON	PRP$	_	34	nmod:poss	_	_
+34	mercy	mercy	NOUN	NN	_	28	conj	_	_
+35	,	,	PUNCT	,	_	40	punct	_	_
+36	and	and	CCONJ	CC	_	40	cc	_	_
+37	his	he	PRON	PRP$	_	40	nmod:poss	_	_
+38	long	long	ADJ	JJ	_	40	compound	_	_
+39	-	-	PUNCT	HYPH	_	38	punct	_	_
+40	suffering	suffering	NOUN	NN	_	28	conj	_	_
+41	have	have	VERB	VB	_	26	xcomp	_	_
+42	full	full	ADJ	JJ	_	43	amod	_	_
+43	sway	sway	NOUN	NN	_	41	obj	_	_
+44	in	in	ADP	IN	_	46	case	_	_
+45	your	you	PRON	PRP$	_	46	nmod:poss	_	_
+46	heart	heart	NOUN	NN	_	41	obl	_	_
+47	;	;	PUNCT	:	_	49	punct	_	_
+48	and	and	CCONJ	CC	_	49	cc	_	_
+49	let	let	VERB	VB	_	3	conj	_	_
+50	it	it	PRON	PRP	_	51	nsubj	_	_
+51	bring	bring	VERB	VB	_	49	xcomp	_	_
+52	you	you	PRON	PRP	_	51	obj	_	_
+53	down	down	ADV	RP	_	51	compound:prt	_	_
+54	to	to	ADP	IN	_	56	case	_	_
+55	the	the	DET	DT	_	56	det	_	_
+56	dust	dust	NOUN	NN	_	51	obl	_	_
+57	in	in	ADP	IN	_	58	case	_	_
+58	humility	humility	NOUN	NN	_	51	obl	_	_
+59	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now, O my son, ye are called of God to preach the word unto this people.
+# sent_id = 1645
+# llm_note = 'O my son' vocative; 'ye are called' passive; 'of God' = obl:agent; 'to preach' = advcl purpose
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	now	now	ADV	RB	_	10	advmod	_	_
+3	,	,	PUNCT	,	_	10	punct	_	_
+4	O	o	INTJ	UH	_	6	discourse	_	_
+5	my	I	PRON	PRP$	_	6	nmod:poss	_	_
+6	son	son	NOUN	NN	_	10	vocative	_	_
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	ye	ye	PRON	PRP	_	10	nsubj:pass	_	_
+9	are	be	AUX	VBP	_	10	aux:pass	_	_
+10	called	call	VERB	VBN	_	0	root	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	God	God	PROPN	NNP	_	10	obl:agent	_	_
+13	to	to	PART	TO	_	14	mark	_	_
+14	preach	preach	VERB	VB	_	10	advcl	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	word	word	NOUN	NN	_	14	obj	_	_
+17	unto	unto	ADP	IN	_	19	case	_	_
+18	this	this	DET	DT	_	19	det	_	_
+19	people	people	NOUN	NN	_	14	obl	_	_
+20	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And now, my son, go thy way, declare the word with truth and soberness, that thou mayest bring souls unto repentance, that the great plan of mercy may have claim upon them.
+# sent_id = 1646
+# llm_note = imperative chain 'go'(7) root, 'declare'(11) conj; 'that thou mayest bring' purpose advcl of 'declare'; 'that the great plan may have claim' purpose advcl of 'bring'
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	now	now	ADV	RB	_	7	advmod	_	_
+3	,	,	PUNCT	,	_	7	punct	_	_
+4	my	I	PRON	PRP$	_	5	nmod:poss	_	_
+5	son	son	NOUN	NN	_	7	vocative	_	_
+6	,	,	PUNCT	,	_	7	punct	_	_
+7	go	go	VERB	VB	_	0	root	_	_
+8	thy	thou	PRON	PRP$	_	9	nmod:poss	_	_
+9	way	way	NOUN	NN	_	7	obj	_	_
+10	,	,	PUNCT	,	_	11	punct	_	_
+11	declare	declare	VERB	VB	_	7	conj	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	word	word	NOUN	NN	_	11	obj	_	_
+14	with	with	ADP	IN	_	15	case	_	_
+15	truth	truth	NOUN	NN	_	11	obl	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	soberness	soberness	NOUN	NN	_	15	conj	_	_
+18	,	,	PUNCT	,	_	22	punct	_	_
+19	that	that	SCONJ	IN	_	22	mark	_	_
+20	thou	thou	PRON	PRP	_	22	nsubj	_	_
+21	mayest	may	AUX	MD	_	22	aux	_	_
+22	bring	bring	VERB	VB	_	11	advcl	_	_
+23	souls	soul	NOUN	NNS	_	22	obj	_	_
+24	unto	unto	ADP	IN	_	25	case	_	_
+25	repentance	repentance	NOUN	NN	_	22	obl	_	_
+26	,	,	PUNCT	,	_	34	punct	_	_
+27	that	that	SCONJ	IN	_	34	mark	_	_
+28	the	the	DET	DT	_	30	det	_	_
+29	great	great	ADJ	JJ	_	30	amod	_	_
+30	plan	plan	NOUN	NN	_	34	nsubj	_	_
+31	of	of	ADP	IN	_	32	case	_	_
+32	mercy	mercy	NOUN	NN	_	30	nmod	_	_
+33	may	may	AUX	MD	_	34	aux	_	_
+34	have	have	VERB	VB	_	22	advcl	_	_
+35	claim	claim	NOUN	NN	_	34	obj	_	_
+36	upon	upon	ADP	IN	_	37	case	_	_
+37	them	they	PRON	PRP	_	35	nmod	_	_
+38	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And may God grant unto you even according to my words.
+# sent_id = 1647
+# llm_note = optative 'may God grant'; 'even according to my words' = obl with 'even' advmod
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	may	may	AUX	MD	_	4	aux	_	_
+3	God	God	PROPN	NNP	_	4	nsubj	_	_
+4	grant	grant	VERB	VB	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	you	you	PRON	PRP	_	4	obl	_	_
+7	even	even	ADV	RB	_	8	advmod	_	_
+8	according	according	ADP	IN	_	11	case	_	_
+9	to	to	ADP	IN	_	8	fixed	_	_
+10	my	I	PRON	PRP$	_	11	nmod:poss	_	_
+11	words	word	NOUN	NNS	_	4	obl	_	_
+12	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Amen.
+# sent_id = 1648
+1	Amen	amen	INTJ	UH	_	0	root	_	_
+2	.	.	PUNCT	.	_	1	punct	_	_
+
+# text = And now it came to pass that the sons of Alma did go forth among the people, to declare the word unto them.
+# sent_id = 1649
+# llm_note = AICTP frame per spec §1; 'it'(3) expletive of 'came'(4); 'to pass' xcomp; 'that' marks ccomp of 'pass'; 'did go' emphatic AUX+verb; 'forth' advmod; 'to declare' purpose advcl
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	it	it	PRON	PRP	_	4	expl	_	_
+4	came	come	VERB	VBD	_	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	_	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	13	mark	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	sons	son	NOUN	NNS	_	13	nsubj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	Alma	Alma	PROPN	NNP	_	9	nmod	_	_
+12	did	do	AUX	VBD	_	13	aux	_	_
+13	go	go	VERB	VB	_	6	ccomp	_	_
+14	forth	forth	ADV	RB	_	13	advmod	_	_
+15	among	among	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	people	people	NOUN	NN	_	13	obl	_	_
+18	,	,	PUNCT	,	_	20	punct	_	_
+19	to	to	PART	TO	_	20	mark	_	_
+20	declare	declare	VERB	VB	_	13	advcl	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	word	word	NOUN	NN	_	20	obj	_	_
+23	unto	unto	ADP	IN	_	24	case	_	_
+24	them	they	PRON	PRP	_	20	obl	_	_
+25	.	.	PUNCT	.	_	4	punct	_	_
+

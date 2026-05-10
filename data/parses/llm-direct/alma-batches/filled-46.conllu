@@ -1,0 +1,891 @@
+# text = And thus the people did have no disturbance in all the sixteenth year of the reign of the judges over the people of Nephi.
+# sent_id = 1125
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	thus	thus	ADV	RB	_	6	advmod	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	people	people	NOUN	NNS	_	6	nsubj	_	_
+5	did	do	AUX	VBD	_	6	aux	_	_
+6	have	have	VERB	VB	_	0	root	_	_
+7	no	no	DET	DT	_	8	det	_	_
+8	disturbance	disturbance	NOUN	NN	_	6	obj	_	_
+9	in	in	ADP	IN	_	10	case	_	_
+10	all	all	DET	PDT	_	13	det:predet	_	_
+11	the	the	DET	DT	_	13	det	_	_
+12	sixteenth	sixteenth	ADJ	JJ	_	13	amod	_	_
+13	year	year	NOUN	NN	_	6	obl	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	reign	reign	NOUN	NN	_	13	nmod	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	judges	judge	NOUN	NNS	_	16	nmod	_	_
+20	over	over	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	people	people	NOUN	NNS	_	19	nmod	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	Nephi	Nephi	PROPN	NNP	_	22	nmod	_	_
+25	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And it came to pass that in the commencement of the seventeenth year of the reign of the judges, there was continual peace.
+# sent_id = 1126
+# llm_note = AICTP frame: it=expl of came; pass=xcomp of came; that marks advcl complement; main clause "there was continual peace" with there=expl of was
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	22	mark	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	commencement	commencement	NOUN	NN	_	22	obl	_	_
+10	of	of	ADP	IN	_	13	case	_	_
+11	the	the	DET	DT	_	13	det	_	_
+12	seventeenth	seventeenth	ADJ	JJ	_	13	amod	_	_
+13	year	year	NOUN	NN	_	9	nmod	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	reign	reign	NOUN	NN	_	13	nmod	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	judges	judge	NOUN	NNS	_	16	nmod	_	_
+20	,	,	PUNCT	,	_	22	punct	_	_
+21	there	there	PRON	EX	_	22	expl	_	_
+22	was	be	VERB	VBD	_	5	ccomp	_	_
+23	continual	continual	ADJ	JJ	_	24	amod	_	_
+24	peace	peace	NOUN	NN	_	22	nsubj	_	_
+25	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But it came to pass in the latter end of the seventeenth year, there came a man into the land of Zarahemla, and he was Anti-Christ, for he began to preach unto the people against the prophecies which had been spoken by the prophets, concerning the coming of Christ.
+# sent_id = 1127
+# llm_note = AICTP-like but no "that": "came a man" is the main event clause (existential); he was Anti-Christ is copular predicate via conj; Anti-Christ split across tokens 28(-Christ) and 28(Anti)=compound
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	in	in	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	latter	latter	ADJ	JJ	_	9	amod	_	_
+9	end	end	NOUN	NN	_	16	obl	_	_
+10	of	of	ADP	IN	_	13	case	_	_
+11	the	the	DET	DT	_	13	det	_	_
+12	seventeenth	seventeenth	ADJ	JJ	_	13	amod	_	_
+13	year	year	NOUN	NN	_	9	nmod	_	_
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	there	there	PRON	EX	_	16	expl	_	_
+16	came	come	VERB	VBD	_	3	ccomp	_	_
+17	a	a	DET	DT	_	18	det	_	_
+18	man	man	NOUN	NN	_	16	nsubj	_	_
+19	into	into	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	land	land	NOUN	NN	_	16	obl	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	Zarahemla	Zarahemla	PROPN	NNP	_	21	nmod	_	_
+24	,	,	PUNCT	,	_	27	punct	_	_
+25	and	and	CCONJ	CC	_	27	cc	_	_
+26	he	he	PRON	PRP	_	27	nsubj	_	_
+27	was	be	VERB	VBD	_	16	conj	_	_
+28	Anti	Anti	PROPN	NNP	_	27	nsubj:pass	_	_
+29	-Christ	-Christ	PROPN	NNP	_	28	compound	_	_
+30	,	,	PUNCT	,	_	33	punct	_	_
+31	for	for	SCONJ	IN	_	33	mark	_	_
+32	he	he	PRON	PRP	_	33	nsubj	_	_
+33	began	begin	VERB	VBD	_	27	advcl	_	_
+34	to	to	PART	TO	_	35	mark	_	_
+35	preach	preach	VERB	VB	_	33	xcomp	_	_
+36	unto	unto	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	people	people	NOUN	NNS	_	35	obl	_	_
+39	against	against	ADP	IN	_	41	case	_	_
+40	the	the	DET	DT	_	41	det	_	_
+41	prophecies	prophecy	NOUN	NNS	_	35	obl	_	_
+42	which	which	PRON	WDT	_	45	nsubj:pass	_	_
+43	had	have	AUX	VBD	_	45	aux	_	_
+44	been	be	AUX	VBN	_	45	aux:pass	_	_
+45	spoken	speak	VERB	VBN	_	41	acl:relcl	_	_
+46	by	by	ADP	IN	_	48	case	_	_
+47	the	the	DET	DT	_	48	det	_	_
+48	prophets	prophet	NOUN	NNS	_	45	obl:agent	_	_
+49	,	,	PUNCT	,	_	52	punct	_	_
+50	concerning	concern	ADP	IN	_	52	case	_	_
+51	the	the	DET	DT	_	52	det	_	_
+52	coming	coming	NOUN	NN	_	45	obl	_	_
+53	of	of	ADP	IN	_	54	case	_	_
+54	Christ	Christ	PROPN	NNP	_	52	nmod	_	_
+55	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now there was no law against a man's belief; for it was strictly contrary to the commands of God that there should be a law which should bring men on to unequal grounds.
+# sent_id = 1128
+# llm_note = MWT 8-9 "man's" splits to man+POS; "contrary to" functions as ADP phrase; "that there should be..." is a ccomp of "contrary"; second "there" is expl of "be"
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	no	no	DET	DT	_	5	det	_	_
+5	law	law	NOUN	NN	_	3	nsubj	_	_
+6	against	against	ADP	IN	_	10	case	_	_
+7	a	a	DET	DT	_	8	det	_	_
+8-9	man's	_	_	_	_	_	_	_	_
+8	man	man	NOUN	NN	_	10	nmod:poss	_	_
+9	's	's	PART	POS	_	8	case	_	_
+10	belief	belief	NOUN	NN	_	5	nmod	_	_
+11	;	;	PUNCT	,	_	14	punct	_	_
+12	for	for	SCONJ	IN	_	14	mark	_	_
+13	it	it	PRON	PRP	_	14	nsubj	_	_
+14	was	be	VERB	VBD	_	3	parataxis	_	_
+15	strictly	strictly	ADV	RB	_	16	advmod	_	_
+16	contrary	contrary	ADJ	JJ	_	14	xcomp	_	_
+17	to	to	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	commands	command	NOUN	NNS	_	16	obl	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	God	God	PROPN	NNP	_	19	nmod	_	_
+22	that	that	SCONJ	IN	_	25	mark	_	_
+23	there	there	PRON	EX	_	25	expl	_	_
+24	should	shall	AUX	MD	_	25	aux	_	_
+25	be	be	VERB	VB	_	16	ccomp	_	_
+26	a	a	DET	DT	_	27	det	_	_
+27	law	law	NOUN	NN	_	25	nsubj	_	_
+28	which	which	PRON	WDT	_	30	nsubj	_	_
+29	should	shall	AUX	MD	_	30	aux	_	_
+30	bring	bring	VERB	VB	_	27	acl:relcl	_	_
+31	men	man	NOUN	NNS	_	30	obj	_	_
+32	on	on	ADP	IN	_	33	case	_	_
+33	to	to	ADP	IN	_	35	case	_	_
+34	unequal	unequal	ADJ	JJ	_	35	amod	_	_
+35	grounds	ground	NOUN	NNS	_	30	obl	_	_
+36	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = For thus saith the scripture: Choose ye this day, whom ye will serve.
+# sent_id = 1129
+# llm_note = "saith" is VERB root (archaic 3sg present of "say"); reported speech follows colon as parataxis; Choose=imperative VERB root of inner clause attached via parataxis; "whom ye will serve" is a relative/embedded clause modifying nothing syntactically (it's a fused relative as obj of choose)
+1	For	for	SCONJ	IN	_	3	mark	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	saith	say	VERB	VBZ	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	scripture	scripture	NOUN	NN	_	3	nsubj	_	_
+6	:	:	PUNCT	:	_	7	punct	_	_
+7	Choose	choose	VERB	VB	_	3	parataxis	_	_
+8	ye	ye	PRON	PRP	_	7	nsubj	_	_
+9	this	this	DET	DT	_	10	det	_	_
+10	day	day	NOUN	NN	_	7	obl	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	whom	whom	PRON	WP	_	15	obj	_	_
+13	ye	ye	PRON	PRP	_	15	nsubj	_	_
+14	will	will	AUX	MD	_	15	aux	_	_
+15	serve	serve	VERB	VB	_	7	ccomp	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now if a man desired to serve God, it was his privilege; or rather, if he believed in God it was his privilege to serve him; but if he did not believe in him there was no law to punish him.
+# sent_id = 1130
+# llm_note = Three parallel conditional clauses. First: "if a man desired" advcl of "was(11)"; "it was his privilege" is the main clause. Second: "or rather" marks the refinement; "if he believed" is advcl of "was(24)". Third: "but if he did not believe" advcl of "was(40)"; "there was no law" main clause with expl there.
+1	Now	now	ADV	RB	_	11	advmod	_	_
+2	if	if	SCONJ	IN	_	5	mark	_	_
+3	a	a	DET	DT	_	4	det	_	_
+4	man	man	NOUN	NN	_	5	nsubj	_	_
+5	desired	desire	VERB	VBD	_	11	advcl	_	_
+6	to	to	PART	TO	_	7	mark	_	_
+7	serve	serve	VERB	VB	_	5	xcomp	_	_
+8	God	God	PROPN	NNP	_	7	obj	_	_
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	it	it	PRON	PRP	_	11	nsubj	_	_
+11	was	be	VERB	VBD	_	0	root	_	_
+12	his	he	PRON	PRP$	_	13	nmod:poss	_	_
+13	privilege	privilege	NOUN	NN	_	11	nsubj:pass	_	_
+14	;	;	PUNCT	,	_	24	punct	_	_
+15	or	or	CCONJ	CC	_	16	cc	_	_
+16	rather	rather	ADV	RB	_	24	advmod	_	_
+17	,	,	PUNCT	,	_	24	punct	_	_
+18	if	if	SCONJ	IN	_	20	mark	_	_
+19	he	he	PRON	PRP	_	20	nsubj	_	_
+20	believed	believe	VERB	VBD	_	24	advcl	_	_
+21	in	in	ADP	IN	_	22	case	_	_
+22	God	God	PROPN	NNP	_	20	obl	_	_
+23	it	it	PRON	PRP	_	24	nsubj	_	_
+24	was	be	VERB	VBD	_	11	conj	_	_
+25	his	he	PRON	PRP$	_	26	nmod:poss	_	_
+26	privilege	privilege	NOUN	NN	_	24	nsubj:pass	_	_
+27	to	to	PART	TO	_	28	mark	_	_
+28	serve	serve	VERB	VB	_	26	acl	_	_
+29	him	he	PRON	PRP	_	28	obj	_	_
+30	;	;	PUNCT	,	_	40	punct	_	_
+31	but	but	CCONJ	CC	_	40	cc	_	_
+32	if	if	SCONJ	IN	_	36	mark	_	_
+33	he	he	PRON	PRP	_	36	nsubj	_	_
+34	did	do	AUX	VBD	_	36	aux	_	_
+35	not	not	PART	RB	_	36	advmod	_	_
+36	believe	believe	VERB	VB	_	40	advcl	_	_
+37	in	in	ADP	IN	_	38	case	_	_
+38	him	he	PRON	PRP	_	36	obl	_	_
+39	there	there	PRON	EX	_	40	expl	_	_
+40	was	be	VERB	VBD	_	11	conj	_	_
+41	no	no	DET	DT	_	42	det	_	_
+42	law	law	NOUN	NN	_	40	nsubj	_	_
+43	to	to	PART	TO	_	44	mark	_	_
+44	punish	punish	VERB	VB	_	42	acl	_	_
+45	him	he	PRON	PRP	_	44	obj	_	_
+46	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = But if he murdered he was punished unto death; and if he robbed he was also punished; and if he stole he was also punished; and if he committed adultery he was also punished; yea, for all this wickedness they were punished.
+# sent_id = 1131
+# llm_note = Four parallel if-then passive clauses coordinated with "and"; final clause (yea, for all this wickedness they were punished) is the summary conj. Each "punished" is the root of its clause in passive; main root is "punished"(7).
+1	But	but	CCONJ	CC	_	7	cc	_	_
+2	if	if	SCONJ	IN	_	4	mark	_	_
+3	he	he	PRON	PRP	_	4	nsubj	_	_
+4	murdered	murder	VERB	VBD	_	7	advcl	_	_
+5	he	he	PRON	PRP	_	7	nsubj:pass	_	_
+6	was	be	AUX	VBD	_	7	aux:pass	_	_
+7	punished	punish	VERB	VBN	_	0	root	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	death	death	NOUN	NN	_	7	obl	_	_
+10	;	;	PUNCT	,	_	18	punct	_	_
+11	and	and	CCONJ	CC	_	18	cc	_	_
+12	if	if	SCONJ	IN	_	14	mark	_	_
+13	he	he	PRON	PRP	_	14	nsubj	_	_
+14	robbed	rob	VERB	VBD	_	18	advcl	_	_
+15	he	he	PRON	PRP	_	18	nsubj:pass	_	_
+16	was	be	AUX	VBD	_	18	aux:pass	_	_
+17	also	also	ADV	RB	_	18	advmod	_	_
+18	punished	punish	VERB	VBN	_	7	conj	_	_
+19	;	;	PUNCT	,	_	27	punct	_	_
+20	and	and	CCONJ	CC	_	27	cc	_	_
+21	if	if	SCONJ	IN	_	23	mark	_	_
+22	he	he	PRON	PRP	_	23	nsubj	_	_
+23	stole	steal	VERB	VBD	_	27	advcl	_	_
+24	he	he	PRON	PRP	_	27	nsubj:pass	_	_
+25	was	be	AUX	VBD	_	27	aux:pass	_	_
+26	also	also	ADV	RB	_	27	advmod	_	_
+27	punished	punish	VERB	VBN	_	7	conj	_	_
+28	;	;	PUNCT	,	_	37	punct	_	_
+29	and	and	CCONJ	CC	_	37	cc	_	_
+30	if	if	SCONJ	IN	_	32	mark	_	_
+31	he	he	PRON	PRP	_	32	nsubj	_	_
+32	committed	commit	VERB	VBD	_	37	advcl	_	_
+33	adultery	adultery	NOUN	NN	_	32	obj	_	_
+34	he	he	PRON	PRP	_	37	nsubj:pass	_	_
+35	was	be	AUX	VBD	_	37	aux:pass	_	_
+36	also	also	ADV	RB	_	37	advmod	_	_
+37	punished	punish	VERB	VBN	_	7	conj	_	_
+38	;	;	PUNCT	,	_	47	punct	_	_
+39	yea	yea	INTJ	UH	_	47	discourse	_	_
+40	,	,	PUNCT	,	_	39	punct	_	_
+41	for	for	ADP	IN	_	44	case	_	_
+42	all	all	DET	PDT	_	44	det:predet	_	_
+43	this	this	DET	DT	_	44	det	_	_
+44	wickedness	wickedness	NOUN	NN	_	47	obl	_	_
+45	they	they	PRON	PRP	_	47	nsubj:pass	_	_
+46	were	be	AUX	VBD	_	47	aux:pass	_	_
+47	punished	punish	VERB	VBN	_	7	conj	_	_
+48	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = For there was a law that men should be judged according to their crimes.
+# sent_id = 1132
+1	For	for	SCONJ	IN	_	3	mark	_	_
+2	there	there	PRON	EX	_	3	expl	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	a	a	DET	DT	_	5	det	_	_
+5	law	law	NOUN	NN	_	3	nsubj	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	men	man	NOUN	NNS	_	10	nsubj:pass	_	_
+8	should	shall	AUX	MD	_	10	aux	_	_
+9	be	be	AUX	VB	_	10	aux:pass	_	_
+10	judged	judge	VERB	VBN	_	5	acl	_	_
+11	according	accord	ADP	IN	_	14	case	_	_
+12	to	to	ADP	IN	_	11	fixed	_	_
+13	their	they	PRON	PRP$	_	14	nmod:poss	_	_
+14	crimes	crime	NOUN	NNS	_	10	obl	_	_
+15	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Nevertheless, there was no law against a man's belief; therefore, a man was punished only for the crimes which he had done; therefore all men were on equal grounds.
+# sent_id = 1133
+# llm_note = MWT 9-10 "man's"; three clauses: (1) nevertheless-there was no law, (2) therefore a man was punished, (3) therefore all men were on equal grounds — clauses 2 and 3 are conj of clause 1's root "was(4)". "were on equal grounds" = copular: were=cop, grounds=root, on equal grounds=predicative obl
+1	Nevertheless	nevertheless	ADV	RB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	there	there	PRON	EX	_	4	expl	_	_
+4	was	be	VERB	VBD	_	0	root	_	_
+5	no	no	DET	DT	_	6	det	_	_
+6	law	law	NOUN	NN	_	4	nsubj	_	_
+7	against	against	ADP	IN	_	11	case	_	_
+8	a	a	DET	DT	_	9	det	_	_
+9-10	man's	_	_	_	_	_	_	_	_
+9	man	man	NOUN	NN	_	11	nmod:poss	_	_
+10	's	's	PART	POS	_	9	case	_	_
+11	belief	belief	NOUN	NN	_	6	nmod	_	_
+12	;	;	PUNCT	,	_	18	punct	_	_
+13	therefore	therefore	ADV	RB	_	18	advmod	_	_
+14	,	,	PUNCT	,	_	13	punct	_	_
+15	a	a	DET	DT	_	16	det	_	_
+16	man	man	NOUN	NN	_	18	nsubj:pass	_	_
+17	was	be	AUX	VBD	_	18	aux:pass	_	_
+18	punished	punish	VERB	VBN	_	4	conj	_	_
+19	only	only	ADV	RB	_	18	advmod	_	_
+20	for	for	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	crimes	crime	NOUN	NNS	_	18	obl	_	_
+23	which	which	PRON	WDT	_	26	obj	_	_
+24	he	he	PRON	PRP	_	26	nsubj	_	_
+25	had	have	AUX	VBD	_	26	aux	_	_
+26	done	do	VERB	VBN	_	22	acl:relcl	_	_
+27	;	;	PUNCT	,	_	31	punct	_	_
+28	therefore	therefore	ADV	RB	_	31	advmod	_	_
+29	all	all	DET	PDT	_	30	det:predet	_	_
+30	men	man	NOUN	NNS	_	31	nsubj	_	_
+31	were	be	VERB	VBD	_	4	conj	_	_
+32	on	on	ADP	IN	_	34	case	_	_
+33	equal	equal	ADJ	JJ	_	34	amod	_	_
+34	grounds	ground	NOUN	NNS	_	31	obl	_	_
+35	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And this Anti-Christ, whose name was Korihor, (and the law could have no hold upon him) began to preach unto the people that there should be no Christ.
+# sent_id = 1134
+# llm_note = Subject is "Anti-Christ" (tokens 3+4, compound); "began" is main verb root; parenthetical "and the law could have no hold upon him" is parataxis off "began"; "that there should be no Christ" is ccomp of "preach"
+1	And	and	CCONJ	CC	_	22	cc	_	_
+2	this	this	DET	DT	_	3	det	_	_
+3	Anti	Anti	PROPN	NNP	_	22	nsubj	_	_
+4	-Christ	-Christ	PROPN	NNP	_	3	compound	_	_
+5	,	,	PUNCT	,	_	7	punct	_	_
+6	whose	whose	PRON	WP$	_	7	nmod:poss	_	_
+7	name	name	NOUN	NN	_	3	acl:relcl	_	_
+8	was	be	VERB	VBD	_	7	cop	_	_
+9	Korihor	Korihor	PROPN	NNP	_	7	nsubj	_	_
+10	,	,	PUNCT	,	_	16	punct	_	_
+11	(	(	PUNCT	-LRB-	_	16	punct	_	_
+12	and	and	CCONJ	CC	_	16	cc	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	law	law	NOUN	NN	_	16	nsubj	_	_
+15	could	can	AUX	MD	_	16	aux	_	_
+16	have	have	VERB	VB	_	22	parataxis	_	_
+17	no	no	DET	DT	_	18	det	_	_
+18	hold	hold	NOUN	NN	_	16	obj	_	_
+19	upon	upon	ADP	IN	_	20	case	_	_
+20	him	he	PRON	PRP	_	18	nmod	_	_
+21	)	)	PUNCT	-RRB-	_	16	punct	_	_
+22	began	begin	VERB	VBD	_	0	root	_	_
+23	to	to	PART	TO	_	24	mark	_	_
+24	preach	preach	VERB	VB	_	22	xcomp	_	_
+25	unto	unto	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	people	people	NOUN	NNS	_	24	obl	_	_
+28	that	that	SCONJ	IN	_	31	mark	_	_
+29	there	there	PRON	EX	_	31	expl	_	_
+30	should	shall	AUX	MD	_	31	aux	_	_
+31	be	be	VERB	VB	_	24	ccomp	_	_
+32	no	no	DET	DT	_	33	det	_	_
+33	Christ	Christ	PROPN	NNP	_	31	nsubj	_	_
+34	.	.	PUNCT	.	_	22	punct	_	_
+
+# text = And after this manner did he preach, saying: O ye that are bound down under a foolish and a vain hope, why do ye yoke yourselves with such foolish things?
+# sent_id = 1135
+# llm_note = "did he preach" = emphatic inversion; did=AUX, he=nsubj, preach=root; "saying" is advcl (bare participial) of preach; "O ye" vocative marker O=INTJ, ye=vocative; "that are bound down" rel clause on ye; "why do ye yoke" is the main embedded quoted clause, parataxis of "saying"; "O ye" is dislocated/vocative of "yoke"
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	after	after	ADP	IN	_	4	case	_	_
+3	this	this	DET	DT	_	4	det	_	_
+4	manner	manner	NOUN	NN	_	7	obl	_	_
+5	did	do	AUX	VBD	_	7	aux	_	_
+6	he	he	PRON	PRP	_	7	nsubj	_	_
+7	preach	preach	VERB	VB	_	0	root	_	_
+8	,	,	PUNCT	,	_	9	punct	_	_
+9	saying	say	VERB	VBG	_	7	advcl	_	_
+10	:	:	PUNCT	:	_	9	punct	_	_
+11	O	O	INTJ	UH	_	12	discourse	_	_
+12	ye	ye	PRON	PRP	_	28	vocative	_	_
+13	that	that	SCONJ	IN	_	15	mark	_	_
+14	are	be	AUX	VBP	_	15	aux:pass	_	_
+15	bound	bind	VERB	VBN	_	12	acl:relcl	_	_
+16	down	down	ADV	RB	_	15	compound:prt	_	_
+17	under	under	ADP	IN	_	23	case	_	_
+18	a	a	DET	DT	_	19	det	_	_
+19	foolish	foolish	ADJ	JJ	_	23	amod	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	a	a	DET	DT	_	22	det	_	_
+22	vain	vain	ADJ	JJ	_	19	conj	_	_
+23	hope	hope	NOUN	NN	_	15	obl	_	_
+24	,	,	PUNCT	,	_	28	punct	_	_
+25	why	why	ADV	WRB	_	28	advmod	_	_
+26	do	do	AUX	VBP	_	28	aux	_	_
+27	ye	ye	PRON	PRP	_	28	nsubj	_	_
+28	yoke	yoke	VERB	VB	_	9	ccomp	_	_
+29	yourselves	yourself	PRON	PRP	_	28	obj	_	_
+30	with	with	ADP	IN	_	33	case	_	_
+31	such	such	ADJ	JJ	_	33	amod	_	_
+32	foolish	foolish	ADJ	JJ	_	33	amod	_	_
+33	things	thing	NOUN	NNS	_	28	obl	_	_
+34	?	?	PUNCT	.	_	7	punct	_	_
+
+# text = Why do ye look for a Christ?
+# sent_id = 1136
+1	Why	why	ADV	WRB	_	4	advmod	_	_
+2	do	do	AUX	VBP	_	4	aux	_	_
+3	ye	ye	PRON	PRP	_	4	nsubj	_	_
+4	look	look	VERB	VB	_	0	root	_	_
+5	for	for	ADP	IN	_	7	case	_	_
+6	a	a	DET	DT	_	7	det	_	_
+7	Christ	Christ	PROPN	NNP	_	4	obl	_	_
+8	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = For no man can know of anything which is to come.
+# sent_id = 1137
+# llm_note = "no man" = negated subject; "can know" = modal+verb; "of anything" obl; "which is to come" = relative clause on anything; "is to come" = copular + infinitive / or: is=AUX, come=VERB acl
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	no	no	DET	DT	_	3	det	_	_
+3	man	man	NOUN	NN	_	5	nsubj	_	_
+4	can	can	AUX	MD	_	5	aux	_	_
+5	know	know	VERB	VB	_	0	root	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	anything	anything	PRON	NN	_	5	obl	_	_
+8	which	which	PRON	WDT	_	11	nsubj	_	_
+9	is	be	AUX	VBZ	_	11	aux	_	_
+10	to	to	PART	TO	_	11	mark	_	_
+11	come	come	VERB	VB	_	7	acl:relcl	_	_
+12	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Behold, these things which ye call prophecies, which ye say are handed down by holy prophets, behold, they are foolish traditions of your fathers.
+# sent_id = 1138
+# llm_note = Topicalization/dislocation per spec §7: "these things" is dislocated topic resumed by "they"; first Behold=INTJ discourse; second behold=INTJ discourse; "which ye call prophecies" rel on things; "which ye say are handed down" rel on things; "they are foolish traditions" main clause with they=nsubj. Root = "are(23)".
+1	Behold	behold	INTJ	UH	_	23	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	these	this	DET	DT	_	4	det	_	_
+4	things	thing	NOUN	NNS	_	23	dislocated	_	_
+5	which	which	PRON	WDT	_	7	obj	_	_
+6	ye	ye	PRON	PRP	_	7	nsubj	_	_
+7	call	call	VERB	VBP	_	4	acl:relcl	_	_
+8	prophecies	prophecy	NOUN	NNS	_	7	xcomp	_	_
+9	,	,	PUNCT	,	_	12	punct	_	_
+10	which	which	PRON	WDT	_	14	nsubj:pass	_	_
+11	ye	ye	PRON	PRP	_	12	nsubj	_	_
+12	say	say	VERB	VBP	_	4	acl:relcl	_	_
+13	are	be	AUX	VBP	_	14	aux:pass	_	_
+14	handed	hand	VERB	VBN	_	12	ccomp	_	_
+15	down	down	ADV	RB	_	14	compound:prt	_	_
+16	by	by	ADP	IN	_	18	case	_	_
+17	holy	holy	ADJ	JJ	_	18	amod	_	_
+18	prophets	prophet	NOUN	NNS	_	14	obl:agent	_	_
+19	,	,	PUNCT	,	_	20	punct	_	_
+20	behold	behold	INTJ	UH	_	23	discourse	_	_
+21	,	,	PUNCT	,	_	20	punct	_	_
+22	they	they	PRON	PRP	_	23	nsubj	_	_
+23	are	be	VERB	VBP	_	0	root	_	_
+24	foolish	foolish	ADJ	JJ	_	25	amod	_	_
+25	traditions	tradition	NOUN	NNS	_	23	nsubj:pass	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	your	you	PRON	PRP$	_	28	nmod:poss	_	_
+28	fathers	father	NOUN	NNS	_	25	nmod	_	_
+29	.	.	PUNCT	.	_	23	punct	_	_
+
+# text = How do ye know of their surety?
+# sent_id = 1139
+1	How	how	ADV	WRB	_	4	advmod	_	_
+2	do	do	AUX	VBP	_	4	aux	_	_
+3	ye	ye	PRON	PRP	_	4	nsubj	_	_
+4	know	know	VERB	VB	_	0	root	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	their	they	PRON	PRP$	_	7	nmod:poss	_	_
+7	surety	surety	NOUN	NN	_	4	obl	_	_
+8	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = Behold, ye cannot know of things which ye do not see; therefore ye cannot know that there shall be a Christ.
+# sent_id = 1140
+# llm_note = MWT 4-5 "cannot"->can+not; MWT 17-18 second "cannot"->can+not; Behold=INTJ discourse; two main clauses joined by "therefore": first "ye cannot know of things...", second "ye cannot know that..."; "which ye do not see" acl:relcl on things; "that there shall be a Christ" = ccomp of second "know"
+1	Behold	behold	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	ye	ye	PRON	PRP	_	6	nsubj	_	_
+4-5	cannot	_	_	_	_	_	_	_	_
+4	can	can	AUX	MD	_	6	aux	_	_
+5	not	not	PART	RB	_	6	advmod	_	_
+6	know	know	VERB	VB	_	0	root	_	_
+7	of	of	ADP	IN	_	8	case	_	_
+8	things	thing	NOUN	NNS	_	6	obl	_	_
+9	which	which	PRON	WDT	_	13	obj	_	_
+10	ye	ye	PRON	PRP	_	13	nsubj	_	_
+11	do	do	AUX	VBP	_	13	aux	_	_
+12	not	not	PART	RB	_	13	advmod	_	_
+13	see	see	VERB	VB	_	8	acl:relcl	_	_
+14	;	;	PUNCT	,	_	19	punct	_	_
+15	therefore	therefore	ADV	RB	_	19	advmod	_	_
+16	ye	ye	PRON	PRP	_	19	nsubj	_	_
+17-18	cannot	_	_	_	_	_	_	_	_
+17	can	can	AUX	MD	_	19	aux	_	_
+18	not	not	PART	RB	_	19	advmod	_	_
+19	know	know	VERB	VB	_	6	conj	_	_
+20	that	that	SCONJ	IN	_	23	mark	_	_
+21	there	there	PRON	EX	_	23	expl	_	_
+22	shall	shall	AUX	MD	_	23	aux	_	_
+23	be	be	VERB	VB	_	19	ccomp	_	_
+24	a	a	DET	DT	_	25	det	_	_
+25	Christ	Christ	PROPN	NNP	_	23	nsubj	_	_
+26	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Ye look forward and say that ye see a remission of your sins.
+# sent_id = 1141
+# llm_note = "look forward" = verb + particle; "say" conj of "look"; "that ye see a remission" = ccomp of "say"
+1	Ye	ye	PRON	PRP	_	2	nsubj	_	_
+2	look	look	VERB	VBP	_	0	root	_	_
+3	forward	forward	ADV	RB	_	2	compound:prt	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	say	say	VERB	VBP	_	2	conj	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	ye	ye	PRON	PRP	_	8	nsubj	_	_
+8	see	see	VERB	VBP	_	5	ccomp	_	_
+9	a	a	DET	DT	_	10	det	_	_
+10	remission	remission	NOUN	NN	_	8	obj	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	your	you	PRON	PRP$	_	13	nmod:poss	_	_
+13	sins	sin	NOUN	NNS	_	10	nmod	_	_
+14	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = But behold, it is the effect of a frenzied mind; and this derangement of your minds comes because of the traditions of your fathers, which lead you away into a belief of things which are not so.
+# sent_id = 1142
+# llm_note = Two main clauses: "it is the effect..." and "this derangement...comes..." coordinated with "and". "behold" = INTJ discourse. "because of the traditions" = obl cause of "comes". "which lead you away" rel on traditions. "into a belief of things" = obl of "lead". "which are not so" = rel on things.
+1	But	but	CCONJ	CC	_	5	cc	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	it	it	PRON	PRP	_	5	nsubj	_	_
+5	is	be	VERB	VBZ	_	0	root	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	effect	effect	NOUN	NN	_	5	nsubj:pass	_	_
+8	of	of	ADP	IN	_	11	case	_	_
+9	a	a	DET	DT	_	11	det	_	_
+10	frenzied	frenzied	ADJ	JJ	_	11	amod	_	_
+11	mind	mind	NOUN	NN	_	7	nmod	_	_
+12	;	;	PUNCT	,	_	19	punct	_	_
+13	and	and	CCONJ	CC	_	19	cc	_	_
+14	this	this	DET	DT	_	15	det	_	_
+15	derangement	derangement	NOUN	NN	_	19	nsubj	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	your	you	PRON	PRP$	_	18	nmod:poss	_	_
+18	minds	mind	NOUN	NNS	_	15	nmod	_	_
+19	comes	come	VERB	VBZ	_	5	conj	_	_
+20	because	because	SCONJ	IN	_	23	mark	_	_
+21	of	of	ADP	IN	_	20	fixed	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	traditions	tradition	NOUN	NNS	_	19	advcl	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	your	you	PRON	PRP$	_	26	nmod:poss	_	_
+26	fathers	father	NOUN	NNS	_	23	nmod	_	_
+27	,	,	PUNCT	,	_	29	punct	_	_
+28	which	which	PRON	WDT	_	29	nsubj	_	_
+29	lead	lead	VERB	VBP	_	23	acl:relcl	_	_
+30	you	you	PRON	PRP	_	29	obj	_	_
+31	away	away	ADV	RB	_	29	compound:prt	_	_
+32	into	into	ADP	IN	_	34	case	_	_
+33	a	a	DET	DT	_	34	det	_	_
+34	belief	belief	NOUN	NN	_	29	obl	_	_
+35	of	of	ADP	IN	_	36	case	_	_
+36	things	thing	NOUN	NNS	_	34	nmod	_	_
+37	which	which	PRON	WDT	_	36	acl:relcl	_	_
+38	are	be	VERB	VBP	_	37	cop	_	_
+39	not	not	PART	RB	_	40	advmod	_	_
+40	so	so	ADV	RB	_	37	root	_	_
+41	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And many more such things did he say unto them, telling them that there could be no atonement made for the sins of men, but every man fared in this life according to the management of the creature; therefore every man prospered according to his genius, and that every man conquered according to his strength; and whatsoever a man did was no crime.
+# sent_id = 1143
+# llm_note = "did he say" emphatic inversion; "telling" bare participial advcl of "say"; "that there could be no atonement..." ccomp of "telling"; "but every man fared" conj of "be(17)"; "therefore every man prospered" conj continuing; "and that every man conquered" conj; "and whatsoever a man did was no crime" final conj clause; "whatsoever" is the fused-relative subject of "was".
+1	And	and	CCONJ	CC	_	8	cc	_	_
+2	many	many	ADJ	JJ	_	5	det:predet	_	_
+3	more	more	ADJ	JJR	_	5	amod	_	_
+4	such	such	ADJ	JJ	_	5	amod	_	_
+5	things	thing	NOUN	NNS	_	8	obj	_	_
+6	did	do	AUX	VBD	_	8	aux	_	_
+7	he	he	PRON	PRP	_	8	nsubj	_	_
+8	say	say	VERB	VB	_	0	root	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	them	they	PRON	PRP	_	8	obl	_	_
+11	,	,	PUNCT	,	_	12	punct	_	_
+12	telling	tell	VERB	VBG	_	8	advcl	_	_
+13	them	they	PRON	PRP	_	12	obj	_	_
+14	that	that	SCONJ	IN	_	17	mark	_	_
+15	there	there	PRON	EX	_	17	expl	_	_
+16	could	can	AUX	MD	_	17	aux	_	_
+17	be	be	VERB	VB	_	12	ccomp	_	_
+18	no	no	DET	DT	_	19	det	_	_
+19	atonement	atonement	NOUN	NN	_	17	nsubj	_	_
+20	made	make	VERB	VBN	_	19	acl	_	_
+21	for	for	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	sins	sin	NOUN	NNS	_	20	obl	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	men	man	NOUN	NNS	_	23	nmod	_	_
+26	,	,	PUNCT	,	_	30	punct	_	_
+27	but	but	CCONJ	CC	_	30	cc	_	_
+28	every	every	DET	DT	_	29	det	_	_
+29	man	man	NOUN	NN	_	30	nsubj	_	_
+30	fared	fare	VERB	VBD	_	17	conj	_	_
+31	in	in	ADP	IN	_	33	case	_	_
+32	this	this	DET	DT	_	33	det	_	_
+33	life	life	NOUN	NN	_	30	obl	_	_
+34	according	accord	ADP	IN	_	37	case	_	_
+35	to	to	ADP	IN	_	34	fixed	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	management	management	NOUN	NN	_	30	obl	_	_
+38	of	of	ADP	IN	_	40	case	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	creature	creature	NOUN	NN	_	37	nmod	_	_
+41	;	;	PUNCT	,	_	45	punct	_	_
+42	therefore	therefore	ADV	RB	_	45	advmod	_	_
+43	every	every	DET	DT	_	44	det	_	_
+44	man	man	NOUN	NN	_	45	nsubj	_	_
+45	prospered	prosper	VERB	VBD	_	8	conj	_	_
+46	according	accord	ADP	IN	_	49	case	_	_
+47	to	to	ADP	IN	_	46	fixed	_	_
+48	his	he	PRON	PRP$	_	49	nmod:poss	_	_
+49	genius	genius	NOUN	NN	_	45	obl	_	_
+50	,	,	PUNCT	,	_	55	punct	_	_
+51	and	and	CCONJ	CC	_	55	cc	_	_
+52	that	that	SCONJ	IN	_	55	mark	_	_
+53	every	every	DET	DT	_	54	det	_	_
+54	man	man	NOUN	NN	_	55	nsubj	_	_
+55	conquered	conquer	VERB	VBD	_	8	conj	_	_
+56	according	accord	ADP	IN	_	59	case	_	_
+57	to	to	ADP	IN	_	56	fixed	_	_
+58	his	he	PRON	PRP$	_	59	nmod:poss	_	_
+59	strength	strength	NOUN	NN	_	55	obl	_	_
+60	;	;	PUNCT	,	_	66	punct	_	_
+61	and	and	CCONJ	CC	_	66	cc	_	_
+62	whatsoever	whatsoever	PRON	WDT	_	65	nsubj	_	_
+63	a	a	DET	DT	_	64	det	_	_
+64	man	man	NOUN	NN	_	65	nsubj	_	_
+65	did	do	VERB	VBD	_	66	csubj	_	_
+66	was	be	VERB	VBD	_	8	conj	_	_
+67	no	no	DET	DT	_	68	det	_	_
+68	crime	crime	NOUN	NN	_	66	nsubj:pass	_	_
+69	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And thus he did preach unto them, leading away the hearts of many, causing them to lift up their heads in their wickedness, yea, leading away many women, and also men, to commit whoredoms-- telling them that when a man was dead, that was the end thereof.
+# sent_id = 1144
+# llm_note = "did preach" emphatic; coordinate participials: "leading(9)", "causing(16)", "leading(29)", "telling(42)" per spec §6 — all advcl of "preach"; "yea" = discourse INTJ; "causing them to lift up" = causative; "to commit whoredoms" is xcomp/purpose of second leading; "--" = PUNCT; "that when a man was dead, that was the end" ccomp of telling: outer "that"=SCONJ, inner "that"=PRON (anaphoric) subject of "was(52)"
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	thus	thus	ADV	RB	_	5	advmod	_	_
+3	he	he	PRON	PRP	_	5	nsubj	_	_
+4	did	do	AUX	VBD	_	5	aux	_	_
+5	preach	preach	VERB	VB	_	0	root	_	_
+6	unto	unto	ADP	IN	_	7	case	_	_
+7	them	they	PRON	PRP	_	5	obl	_	_
+8	,	,	PUNCT	,	_	9	punct	_	_
+9	leading	lead	VERB	VBG	_	5	advcl	_	_
+10	away	away	ADV	RB	_	9	compound:prt	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	hearts	heart	NOUN	NNS	_	9	obj	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	many	many	PRON	NN	_	12	nmod	_	_
+15	,	,	PUNCT	,	_	16	punct	_	_
+16	causing	cause	VERB	VBG	_	5	advcl	_	_
+17	them	they	PRON	PRP	_	19	obj	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	lift	lift	VERB	VB	_	16	xcomp	_	_
+20	up	up	ADV	RB	_	19	compound:prt	_	_
+21	their	they	PRON	PRP$	_	22	nmod:poss	_	_
+22	heads	head	NOUN	NNS	_	19	obj	_	_
+23	in	in	ADP	IN	_	25	case	_	_
+24	their	they	PRON	PRP$	_	25	nmod:poss	_	_
+25	wickedness	wickedness	NOUN	NN	_	19	obl	_	_
+26	,	,	PUNCT	,	_	27	punct	_	_
+27	yea	yea	INTJ	UH	_	29	discourse	_	_
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	leading	lead	VERB	VBG	_	5	advcl	_	_
+30	away	away	ADV	RB	_	29	compound:prt	_	_
+31	many	many	ADJ	JJ	_	32	det	_	_
+32	women	woman	NOUN	NNS	_	29	obj	_	_
+33	,	,	PUNCT	,	_	36	punct	_	_
+34	and	and	CCONJ	CC	_	36	cc	_	_
+35	also	also	ADV	RB	_	36	advmod	_	_
+36	men	man	NOUN	NNS	_	32	conj	_	_
+37	,	,	PUNCT	,	_	39	punct	_	_
+38	to	to	PART	TO	_	39	mark	_	_
+39	commit	commit	VERB	VB	_	29	xcomp	_	_
+40	whoredoms	whoredom	NOUN	NNS	_	39	obj	_	_
+41	--	--	PUNCT	:	_	42	punct	_	_
+42	telling	tell	VERB	VBG	_	5	advcl	_	_
+43	them	they	PRON	PRP	_	42	obj	_	_
+44	that	that	SCONJ	IN	_	52	mark	_	_
+45	when	when	SCONJ	IN	_	49	mark	_	_
+46	a	a	DET	DT	_	47	det	_	_
+47	man	man	NOUN	NN	_	49	nsubj	_	_
+48	was	be	AUX	VBD	_	49	cop	_	_
+49	dead	dead	ADJ	JJ	_	52	advcl	_	_
+50	,	,	PUNCT	,	_	52	punct	_	_
+51	that	that	PRON	DT	_	52	nsubj	_	_
+52	was	be	VERB	VBD	_	42	ccomp	_	_
+53	the	the	DET	DT	_	54	det	_	_
+54	end	end	NOUN	NN	_	52	nsubj:pass	_	_
+55	thereof	thereof	ADV	RB	_	54	advmod	_	_
+56	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Now this man went over to the land of Jershon also, to preach these things among the people of Ammon, who were once the people of the Lamanites.
+# sent_id = 1145
+# llm_note = "went over" = verb+particle; "to the land of Jershon" = obl destination; "to preach" = purpose advcl; "who were once the people" = acl:relcl on Ammon; "were once the people" = copular
+1	Now	now	ADV	RB	_	4	advmod	_	_
+2	this	this	DET	DT	_	3	det	_	_
+3	man	man	NOUN	NN	_	4	nsubj	_	_
+4	went	go	VERB	VBD	_	0	root	_	_
+5	over	over	ADV	RB	_	4	compound:prt	_	_
+6	to	to	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	land	land	NOUN	NN	_	4	obl	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Jershon	Jershon	PROPN	NNP	_	8	nmod	_	_
+11	also	also	ADV	RB	_	4	advmod	_	_
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	to	to	PART	TO	_	14	mark	_	_
+14	preach	preach	VERB	VB	_	4	advcl	_	_
+15	these	this	DET	DT	_	16	det	_	_
+16	things	thing	NOUN	NNS	_	14	obj	_	_
+17	among	among	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	people	people	NOUN	NNS	_	14	obl	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	Ammon	Ammon	PROPN	NNP	_	19	nmod	_	_
+22	,	,	PUNCT	,	_	24	punct	_	_
+23	who	who	PRON	WP	_	24	nsubj	_	_
+24	were	be	VERB	VBD	_	21	acl:relcl	_	_
+25	once	once	ADV	RB	_	24	advmod	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	people	people	NOUN	NNS	_	24	nsubj:pass	_	_
+28	of	of	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	Lamanites	Lamanite	PROPN	NNPS	_	27	nmod	_	_
+31	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = But behold they were more wise than many of the Nephites; for they took him, and bound him, and carried him before Ammon, who was a high priest over that people.
+# sent_id = 1146
+# llm_note = "behold" = INTJ discourse; "more wise than many" comparative adjective phrase; "for they took him, and bound him, and carried him" = advcl of "were", three conjoined verbs; "who was a high priest" rel on Ammon; "high priest" = compound noun
+1	But	but	CCONJ	CC	_	4	cc	_	_
+2	behold	behold	INTJ	UH	_	4	discourse	_	_
+3	they	they	PRON	PRP	_	4	nsubj	_	_
+4	were	be	VERB	VBD	_	0	root	_	_
+5	more	more	ADV	RBR	_	6	advmod	_	_
+6	wise	wise	ADJ	JJ	_	4	xcomp	_	_
+7	than	than	ADP	IN	_	8	case	_	_
+8	many	many	PRON	NN	_	6	obl	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	Nephites	Nephite	PROPN	NNPS	_	8	nmod	_	_
+12	;	;	PUNCT	,	_	15	punct	_	_
+13	for	for	SCONJ	IN	_	15	mark	_	_
+14	they	they	PRON	PRP	_	15	nsubj	_	_
+15	took	take	VERB	VBD	_	4	advcl	_	_
+16	him	he	PRON	PRP	_	15	obj	_	_
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	bound	bind	VERB	VBD	_	15	conj	_	_
+20	him	he	PRON	PRP	_	19	obj	_	_
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	carried	carry	VERB	VBD	_	15	conj	_	_
+24	him	he	PRON	PRP	_	23	obj	_	_
+25	before	before	ADP	IN	_	26	case	_	_
+26	Ammon	Ammon	PROPN	NNP	_	23	obl	_	_
+27	,	,	PUNCT	,	_	29	punct	_	_
+28	who	who	PRON	WP	_	29	nsubj	_	_
+29	was	be	VERB	VBD	_	26	acl:relcl	_	_
+30	a	a	DET	DT	_	32	det	_	_
+31	high	high	ADJ	JJ	_	32	amod	_	_
+32	priest	priest	NOUN	NN	_	29	nsubj:pass	_	_
+33	over	over	ADP	IN	_	35	case	_	_
+34	that	that	DET	DT	_	35	det	_	_
+35	people	people	NOUN	NNS	_	32	nmod	_	_
+36	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that he caused that he should be carried out of the land.
+# sent_id = 1147
+# llm_note = AICTP frame; "caused that he should be carried" = causative verb with ccomp; "carried out" = passive + particle; "out of the land" = obl
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	he	he	PRON	PRP	_	8	nsubj	_	_
+8	caused	cause	VERB	VBD	_	5	ccomp	_	_
+9	that	that	SCONJ	IN	_	13	mark	_	_
+10	he	he	PRON	PRP	_	13	nsubj:pass	_	_
+11	should	shall	AUX	MD	_	13	aux	_	_
+12	be	be	AUX	VB	_	13	aux:pass	_	_
+13	carried	carry	VERB	VBN	_	8	ccomp	_	_
+14	out	out	ADV	RB	_	13	compound:prt	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	land	land	NOUN	NN	_	13	obl	_	_
+18	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he came over into the land of Gideon, and began to preach unto them also; and here he did not have much success, for he was taken and bound and carried before the high priest, and also the chief judge over the land.
+# sent_id = 1148
+# llm_note = "came over" = verb+particle; "began to preach" conj; "did not have" emphatic neg with AUX did; "for he was taken and bound and carried" advcl/reason; three passive participles coordinated: taken, bound, carried; "the high priest" and "the chief judge" are conjoined objects of "before"
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	_	3	nsubj	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	over	over	ADV	RB	_	3	compound:prt	_	_
+5	into	into	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	land	land	NOUN	NN	_	3	obl	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	Gideon	Gideon	PROPN	NNP	_	7	nmod	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	began	begin	VERB	VBD	_	3	conj	_	_
+13	to	to	PART	TO	_	14	mark	_	_
+14	preach	preach	VERB	VB	_	12	xcomp	_	_
+15	unto	unto	ADP	IN	_	16	case	_	_
+16	them	they	PRON	PRP	_	14	obl	_	_
+17	also	also	ADV	RB	_	14	advmod	_	_
+18	;	;	PUNCT	,	_	24	punct	_	_
+19	and	and	CCONJ	CC	_	24	cc	_	_
+20	here	here	ADV	RB	_	24	advmod	_	_
+21	he	he	PRON	PRP	_	24	nsubj	_	_
+22	did	do	AUX	VBD	_	24	aux	_	_
+23	not	not	PART	RB	_	24	advmod	_	_
+24	have	have	VERB	VB	_	3	conj	_	_
+25	much	much	ADJ	JJ	_	26	amod	_	_
+26	success	success	NOUN	NN	_	24	obj	_	_
+27	,	,	PUNCT	,	_	31	punct	_	_
+28	for	for	SCONJ	IN	_	31	mark	_	_
+29	he	he	PRON	PRP	_	31	nsubj:pass	_	_
+30	was	be	AUX	VBD	_	31	aux:pass	_	_
+31	taken	take	VERB	VBN	_	24	advcl	_	_
+32	and	and	CCONJ	CC	_	33	cc	_	_
+33	bound	bind	VERB	VBN	_	31	conj	_	_
+34	and	and	CCONJ	CC	_	35	cc	_	_
+35	carried	carry	VERB	VBN	_	31	conj	_	_
+36	before	before	ADP	IN	_	39	case	_	_
+37	the	the	DET	DT	_	39	det	_	_
+38	high	high	ADJ	JJ	_	39	amod	_	_
+39	priest	priest	NOUN	NN	_	35	obl	_	_
+40	,	,	PUNCT	,	_	45	punct	_	_
+41	and	and	CCONJ	CC	_	45	cc	_	_
+42	also	also	ADV	RB	_	45	advmod	_	_
+43	the	the	DET	DT	_	45	det	_	_
+44	chief	chief	ADJ	JJ	_	45	amod	_	_
+45	judge	judge	NOUN	NN	_	39	conj	_	_
+46	over	over	ADP	IN	_	48	case	_	_
+47	the	the	DET	DT	_	48	det	_	_
+48	land	land	NOUN	NN	_	45	nmod	_	_
+49	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that the high priest said unto him: Why do ye go about perverting the ways of the Lord?
+# sent_id = 1149
+# llm_note = AICTP; "the high priest said unto him" = main clause of ccomp; "Why do ye go about perverting the ways of the Lord?" = parataxis (direct speech after colon); "go about perverting" = verb + gerund complement (perverting=xcomp)
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	high	high	ADJ	JJ	_	9	amod	_	_
+9	priest	priest	NOUN	NN	_	10	nsubj	_	_
+10	said	say	VERB	VBD	_	5	ccomp	_	_
+11	unto	unto	ADP	IN	_	12	case	_	_
+12	him	he	PRON	PRP	_	10	obl	_	_
+13	:	:	PUNCT	:	_	17	punct	_	_
+14	Why	why	ADV	WRB	_	17	advmod	_	_
+15	do	do	AUX	VBP	_	17	aux	_	_
+16	ye	ye	PRON	PRP	_	17	nsubj	_	_
+17	go	go	VERB	VB	_	10	parataxis	_	_
+18	about	about	ADV	RB	_	17	compound:prt	_	_
+19	perverting	pervert	VERB	VBG	_	17	xcomp	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	ways	way	NOUN	NNS	_	19	obj	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	Lord	Lord	PROPN	NNP	_	21	nmod	_	_
+25	?	?	PUNCT	.	_	3	punct	_	_
+

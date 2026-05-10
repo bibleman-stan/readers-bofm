@@ -1,0 +1,834 @@
+# text = And they began to grow exceedingly rich.
+# sent_id = 2450
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	3	nsubj	_	_
+3	began	begin	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	grow	grow	VERB	VB	_	3	xcomp	_	_
+6	exceedingly	exceedingly	ADV	RB	_	7	advmod	_	_
+7	rich	rich	ADJ	JJ	_	5	xcomp	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But notwithstanding their riches, or their strength, or their prosperity, they were not lifted up in the pride of their eyes; neither were they slow to remember the Lord their God; but they did humble themselves exceedingly before him.
+# sent_id = 2451
+# llm_note = "notwithstanding their riches, or their strength, or their prosperity" — "notwithstanding" is ADP case on "riches" (first item), whole PP is obl of "lifted"; "riches/strength/prosperity" are conj chain; "lifted up" passive; "neither were they slow" per spec §5: "neither" is ADV advmod of "slow", "were" is aux:pass (actually here copular since "slow" is adj — treat as cop), "they" is nsubj; "to remember" is xcomp of "slow"; "but they did humble themselves" is conj; "the Lord their God" — "God" appos of "Lord".
+1	But	but	CCONJ	CC	_	17	cc	_	_
+2	notwithstanding	notwithstanding	ADP	IN	_	4	case	_	_
+3	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	4	nmod:poss	_	_
+4	riches	rich	NOUN	NNS	Number=Plur	17	obl	_	_
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	or	or	CCONJ	CC	_	8	cc	_	_
+7	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	8	nmod:poss	_	_
+8	strength	strength	NOUN	NN	Number=Sing	4	conj	_	_
+9	,	,	PUNCT	,	_	12	punct	_	_
+10	or	or	CCONJ	CC	_	12	cc	_	_
+11	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	12	nmod:poss	_	_
+12	prosperity	prosperity	NOUN	NN	Number=Sing	4	conj	_	_
+13	,	,	PUNCT	,	_	17	punct	_	_
+14	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	17	nsubj:pass	_	_
+15	were	be	AUX	VBD	Tense=Past	17	aux:pass	_	_
+16	not	not	PART	RB	_	17	advmod	_	_
+17	lifted	lift	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+18	up	up	ADP	RP	_	17	compound:prt	_	_
+19	in	in	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	pride	pride	NOUN	NN	Number=Sing	17	obl	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	24	nmod:poss	_	_
+24	eyes	eye	NOUN	NNS	Number=Plur	21	nmod	_	_
+25	;	;	PUNCT	,	_	29	punct	_	_
+26	neither	neither	ADV	RB	_	29	advmod	_	_
+27	were	be	AUX	VBD	Tense=Past	29	cop	_	_
+28	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	29	nsubj	_	_
+29	slow	slow	ADJ	JJ	_	17	conj	_	_
+30	to	to	PART	TO	_	31	mark	_	_
+31	remember	remember	VERB	VB	_	29	xcomp	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	Lord	Lord	PROPN	NNP	Number=Sing	31	obj	_	_
+34	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	35	nmod:poss	_	_
+35	God	God	PROPN	NNP	Number=Sing	33	appos	_	_
+36	;	;	PUNCT	,	_	40	punct	_	_
+37	but	but	CCONJ	CC	_	40	cc	_	_
+38	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	40	nsubj	_	_
+39	did	do	AUX	VBD	Tense=Past	40	aux	_	_
+40	humble	humble	VERB	VB	_	17	conj	_	_
+41	themselves	themselves	PRON	PRP	Case=Acc|Number=Plur|Person=3|Reflex=Yes	40	obj	_	_
+42	exceedingly	exceedingly	ADV	RB	_	40	advmod	_	_
+43	before	before	ADP	IN	_	44	case	_	_
+44	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	40	obl	_	_
+45	.	.	PUNCT	.	_	17	punct	_	_
+
+# text = Yea, they did remember how great things the Lord had done for them, that he had delivered them from death, and from bonds, and from prisons, and from all manner of afflictions, and he had delivered them out of the hands of their enemies.
+# sent_id = 2452
+# llm_note = "Yea" is INTJ discourse; "how great things the Lord had done" — "how great things" is a free relative / interrogative clause as obj of "remember": "things" is the head obj, "how great" is amod+advmod ("how" modifies "great"); "that he had delivered" is additional ccomp/appos of "things" (explanatory "that" clause); the "from" PP series are parallel obls of "delivered"; final "and he had delivered them out of" is conj of "had delivered" (first instance).
+1	Yea	yea	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	5	nsubj	_	_
+4	did	do	AUX	VBD	Tense=Past	5	aux	_	_
+5	remember	remember	VERB	VB	_	0	root	_	_
+6	how	how	ADV	WRB	_	7	advmod	_	_
+7	great	great	ADJ	JJ	_	8	amod	_	_
+8	things	thing	NOUN	NNS	Number=Plur	5	obj	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	Lord	Lord	PROPN	NNP	Number=Sing	12	nsubj	_	_
+11	had	have	AUX	VBD	Tense=Past	12	aux	_	_
+12	done	do	VERB	VBN	Tense=Past|VerbForm=Part	8	acl:relcl	_	_
+13	for	for	ADP	IN	_	14	case	_	_
+14	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	12	obl	_	_
+15	,	,	PUNCT	,	_	19	punct	_	_
+16	that	that	SCONJ	IN	_	19	mark	_	_
+17	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	19	nsubj	_	_
+18	had	have	AUX	VBD	Tense=Past	19	aux	_	_
+19	delivered	deliver	VERB	VBN	Tense=Past|VerbForm=Part	8	acl	_	_
+20	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	19	obj	_	_
+21	from	from	ADP	IN	_	22	case	_	_
+22	death	death	NOUN	NN	Number=Sing	19	obl	_	_
+23	,	,	PUNCT	,	_	25	punct	_	_
+24	and	and	CCONJ	CC	_	26	cc	_	_
+25	from	from	ADP	IN	_	26	case	_	_
+26	bonds	bond	NOUN	NNS	Number=Plur	22	conj	_	_
+27	,	,	PUNCT	,	_	29	punct	_	_
+28	and	and	CCONJ	CC	_	30	cc	_	_
+29	from	from	ADP	IN	_	30	case	_	_
+30	prisons	prison	NOUN	NNS	Number=Plur	22	conj	_	_
+31	,	,	PUNCT	,	_	35	punct	_	_
+32	and	and	CCONJ	CC	_	35	cc	_	_
+33	from	from	ADP	IN	_	35	case	_	_
+34	all	all	DET	PDT	_	35	det:predet	_	_
+35	manner	manner	NOUN	NN	Number=Sing	22	conj	_	_
+36	of	of	ADP	IN	_	37	case	_	_
+37	afflictions	affliction	NOUN	NNS	Number=Plur	35	nmod	_	_
+38	,	,	PUNCT	,	_	42	punct	_	_
+39	and	and	CCONJ	CC	_	42	cc	_	_
+40	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	42	nsubj	_	_
+41	had	have	AUX	VBD	Tense=Past	42	aux	_	_
+42	delivered	deliver	VERB	VBN	Tense=Past|VerbForm=Part	19	conj	_	_
+43	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	42	obj	_	_
+44	out	out	ADP	RP	_	42	compound:prt	_	_
+45	of	of	ADP	IN	_	47	case	_	_
+46	the	the	DET	DT	_	47	det	_	_
+47	hands	hand	NOUN	NNS	Number=Plur	42	obl	_	_
+48	of	of	ADP	IN	_	50	case	_	_
+49	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	50	nmod:poss	_	_
+50	enemies	enemy	NOUN	NNS	Number=Plur	47	nmod	_	_
+51	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And they did pray unto the Lord their God continually, insomuch that the Lord did bless them, according to his word, so that they did wax strong and prosper in the land.
+# sent_id = 2453
+# llm_note = Main "they did pray"; "insomuch that" result advcl; "according to his word" is obl of "bless"; "so that they did wax strong and prosper" is further result advcl of "bless".
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	4	nsubj	_	_
+3	did	do	AUX	VBD	Tense=Past	4	aux	_	_
+4	pray	pray	VERB	VB	_	0	root	_	_
+5	unto	unto	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	Lord	Lord	PROPN	NNP	Number=Sing	4	obl	_	_
+8	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	9	nmod:poss	_	_
+9	God	God	PROPN	NNP	Number=Sing	7	appos	_	_
+10	continually	continually	ADV	RB	_	4	advmod	_	_
+11	,	,	PUNCT	,	_	17	punct	_	_
+12	insomuch	insomuch	ADV	RB	_	17	advmod	_	_
+13	that	that	SCONJ	IN	_	17	mark	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	Lord	Lord	PROPN	NNP	Number=Sing	17	nsubj	_	_
+16	did	do	AUX	VBD	Tense=Past	17	aux	_	_
+17	bless	bless	VERB	VB	_	4	advcl	_	_
+18	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	17	obj	_	_
+19	,	,	PUNCT	,	_	17	punct	_	_
+20	according	accord	VERB	VBG	VerbForm=Part	23	case	_	_
+21	to	to	ADP	IN	_	20	fixed	_	_
+22	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	23	nmod:poss	_	_
+23	word	word	NOUN	NN	Number=Sing	17	obl	_	_
+24	,	,	PUNCT	,	_	29	punct	_	_
+25	so	so	ADV	RB	_	26	advmod	_	_
+26	that	that	SCONJ	IN	_	29	mark	_	_
+27	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	29	nsubj	_	_
+28	did	do	AUX	VBD	Tense=Past	29	aux	_	_
+29	wax	wax	VERB	VB	_	17	advcl	_	_
+30	strong	strong	ADJ	JJ	_	29	xcomp	_	_
+31	and	and	CCONJ	CC	_	32	cc	_	_
+32	prosper	prosper	VERB	VB	_	29	conj	_	_
+33	in	in	ADP	IN	_	35	case	_	_
+34	the	the	DET	DT	_	35	det	_	_
+35	land	land	NOUN	NN	Number=Sing	29	obl	_	_
+36	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that all these things were done.
+# sent_id = 2454
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	11	mark	_	_
+7	all	all	DET	PDT	_	9	det:predet	_	_
+8	these	these	DET	DT	_	9	det	_	_
+9	things	thing	NOUN	NNS	Number=Plur	11	nsubj:pass	_	_
+10	were	be	AUX	VBD	Tense=Past	11	aux:pass	_	_
+11	done	do	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+12	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Helaman died, in the thirty and fifth year of the reign of the judges over the people of Nephi.
+# sent_id = 2455
+# llm_note = "in the thirty and fifth year" is obl of "died"; ordinal compound "thirty and fifth" same as 2439.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Helaman	Helaman	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	died	die	VERB	VBD	Tense=Past	0	root	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	in	in	ADP	IN	_	10	case	_	_
+6	the	the	DET	DT	_	10	det	_	_
+7	thirty	thirty	NUM	CD	_	9	compound	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	fifth	fifth	ADJ	JJ	_	10	amod	_	_
+10	year	year	NOUN	NN	Number=Sing	3	obl	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	reign	reign	NOUN	NN	Number=Sing	10	nmod	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	judges	judge	NOUN	NNS	Number=Plur	13	nmod	_	_
+17	over	over	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	people	people	NOUN	NN	Number=Sing	16	nmod	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	Nephi	Nephi	PROPN	NNP	Number=Sing	19	nmod	_	_
+22	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass in the commencement of the thirty and sixth year of the reign of the judges over the people of Nephi, that Shiblon took possession of those sacred things which had been delivered unto Helaman by Alma.
+# sent_id = 2456
+# llm_note = AICTP variant: "came to pass in [temporal PP]" — the temporal phrase "in the commencement..." is obl of "came/pass"; "that Shiblon took" is ccomp of "pass"; "which had been delivered" is acl:relcl on "things".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	in	in	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	commencement	commencement	NOUN	NN	Number=Sing	5	obl	_	_
+9	of	of	ADP	IN	_	14	case	_	_
+10	the	the	DET	DT	_	14	det	_	_
+11	thirty	thirty	NUM	CD	_	13	compound	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	sixth	sixth	ADJ	JJ	_	14	amod	_	_
+14	year	year	NOUN	NN	Number=Sing	8	nmod	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	reign	reign	NOUN	NN	Number=Sing	14	nmod	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	judges	judge	NOUN	NNS	Number=Plur	17	nmod	_	_
+21	over	over	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	people	people	NOUN	NN	Number=Sing	20	nmod	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	Nephi	Nephi	PROPN	NNP	Number=Sing	23	nmod	_	_
+26	,	,	PUNCT	,	_	29	punct	_	_
+27	that	that	SCONJ	IN	_	29	mark	_	_
+28	Shiblon	Shiblon	PROPN	NNP	Number=Sing	29	nsubj	_	_
+29	took	take	VERB	VBD	Tense=Past	5	ccomp	_	_
+30	possession	possession	NOUN	NN	Number=Sing	29	obj	_	_
+31	of	of	ADP	IN	_	34	case	_	_
+32	those	those	DET	DT	_	34	det	_	_
+33	sacred	sacred	ADJ	JJ	_	34	amod	_	_
+34	things	thing	NOUN	NNS	Number=Plur	30	nmod	_	_
+35	which	which	PRON	WDT	_	38	nsubj:pass	_	_
+36	had	have	AUX	VBD	Tense=Past	38	aux	_	_
+37	been	be	AUX	VBN	_	38	aux:pass	_	_
+38	delivered	deliver	VERB	VBN	Tense=Past|VerbForm=Part	34	acl:relcl	_	_
+39	unto	unto	ADP	IN	_	40	case	_	_
+40	Helaman	Helaman	PROPN	NNP	Number=Sing	38	obl	_	_
+41	by	by	ADP	IN	_	42	case	_	_
+42	Alma	Alma	PROPN	NNP	Number=Sing	38	obl:agent	_	_
+43	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he was a just man, and he did walk uprightly before God; and he did observe to do good continually, to keep the commandments of the Lord his God; and also did his brother.
+# sent_id = 2457
+# llm_note = Three main clauses conj-chained: "he was a just man" (copular), "he did walk uprightly" (conj), "he did observe to do good" (conj); "to do good continually" is xcomp of "observe"; "to keep the commandments" is additional xcomp/advcl of "observe" (purpose); "and also did his brother" — elliptical, "did" = did likewise, "his brother" nsubj, "did" root of final short clause; "the Lord his God" — "God" appos of "Lord".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	nsubj	_	_
+3	was	be	VERB	VBD	Tense=Past	0	root	_	_
+4	a	a	DET	DT	_	6	det	_	_
+5	just	just	ADJ	JJ	_	6	amod	_	_
+6	man	man	NOUN	NN	Number=Sing	3	xcomp	_	_
+7	,	,	PUNCT	,	_	11	punct	_	_
+8	and	and	CCONJ	CC	_	11	cc	_	_
+9	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	11	nsubj	_	_
+10	did	do	AUX	VBD	Tense=Past	11	aux	_	_
+11	walk	walk	VERB	VB	_	3	conj	_	_
+12	uprightly	uprightly	ADV	RB	_	11	advmod	_	_
+13	before	before	ADP	IN	_	14	case	_	_
+14	God	God	PROPN	NNP	Number=Sing	11	obl	_	_
+15	;	;	PUNCT	,	_	19	punct	_	_
+16	and	and	CCONJ	CC	_	19	cc	_	_
+17	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	19	nsubj	_	_
+18	did	do	AUX	VBD	Tense=Past	19	aux	_	_
+19	observe	observe	VERB	VB	_	3	conj	_	_
+20	to	to	PART	TO	_	21	mark	_	_
+21	do	do	VERB	VB	_	19	xcomp	_	_
+22	good	good	ADJ	JJ	_	21	obj	_	_
+23	continually	continually	ADV	RB	_	21	advmod	_	_
+24	,	,	PUNCT	,	_	26	punct	_	_
+25	to	to	PART	TO	_	26	mark	_	_
+26	keep	keep	VERB	VB	_	19	advcl	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	commandments	commandment	NOUN	NNS	Number=Plur	26	obj	_	_
+29	of	of	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	Lord	Lord	PROPN	NNP	Number=Sing	28	nmod	_	_
+32	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	33	nmod:poss	_	_
+33	God	God	PROPN	NNP	Number=Sing	31	appos	_	_
+34	;	;	PUNCT	,	_	37	punct	_	_
+35	and	and	CCONJ	CC	_	37	cc	_	_
+36	also	also	ADV	RB	_	37	advmod	_	_
+37	did	do	VERB	VBD	Tense=Past	3	conj	_	_
+38	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	39	nmod:poss	_	_
+39	brother	brother	NOUN	NN	Number=Sing	37	nsubj	_	_
+40	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that Moroni died also.
+# sent_id = 2458
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	Moroni	Moroni	PROPN	NNP	Number=Sing	8	nsubj	_	_
+8	died	die	VERB	VBD	Tense=Past	5	ccomp	_	_
+9	also	also	ADV	RB	_	8	advmod	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And thus ended the thirty and sixth year of the reign of the judges.
+# sent_id = 2459
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	ended	end	VERB	VBD	Tense=Past	0	root	_	_
+4	the	the	DET	DT	_	8	det	_	_
+5	thirty	thirty	NUM	CD	_	7	compound	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	sixth	sixth	ADJ	JJ	_	8	amod	_	_
+8	year	year	NOUN	NN	Number=Sing	3	nsubj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	reign	reign	NOUN	NN	Number=Sing	8	nmod	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	judges	judge	NOUN	NNS	Number=Plur	11	nmod	_	_
+15	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that in the thirty and seventh year of the reign of the judges, there was a large company of men, even to the amount of five thousand and four hundred men, with their wives and their children, departed out of the land of Zarahemla into the land which was northward.
+# sent_id = 2460
+# llm_note = AICTP; main clause is existential "there was a large company"; "even to the amount of five thousand and four hundred men" — "even" emphatic ADV, whole PP is appos/obl of "company"; "with their wives and their children" obl of the company/departure; "departed out of the land" — "departed" is acl modifying "company" (participial); "into the land which was northward" — "northward" is pred adj in relcl "which was northward".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	21	mark	_	_
+7	in	in	ADP	IN	_	12	case	_	_
+8	the	the	DET	DT	_	12	det	_	_
+9	thirty	thirty	NUM	CD	_	11	compound	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	seventh	seventh	ADJ	JJ	_	12	amod	_	_
+12	year	year	NOUN	NN	Number=Sing	21	obl	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	reign	reign	NOUN	NN	Number=Sing	12	nmod	_	_
+16	of	of	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	judges	judge	NOUN	NNS	Number=Plur	15	nmod	_	_
+19	,	,	PUNCT	,	_	21	punct	_	_
+20	there	there	PRON	EX	_	21	expl	_	_
+21	was	be	VERB	VBD	Tense=Past	5	ccomp	_	_
+22	a	a	DET	DT	_	24	det	_	_
+23	large	large	ADJ	JJ	_	24	amod	_	_
+24	company	company	NOUN	NN	Number=Sing	21	nsubj	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	men	man	NOUN	NNS	Number=Plur	24	nmod	_	_
+27	,	,	PUNCT	,	_	24	punct	_	_
+28	even	even	ADV	RB	_	31	advmod	_	_
+29	to	to	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	amount	amount	NOUN	NN	Number=Sing	24	appos	_	_
+32	of	of	ADP	IN	_	36	case	_	_
+33	five	five	NUM	CD	_	36	nummod	_	_
+34	thousand	thousand	NUM	CD	_	33	flat	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	four	four	NUM	CD	_	31	nmod	_	_
+37	hundred	hundred	NUM	CD	_	36	flat	_	_
+38	men	man	NOUN	NNS	Number=Plur	36	nmod	_	_
+39	,	,	PUNCT	,	_	24	punct	_	_
+40	with	with	ADP	IN	_	42	case	_	_
+41	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	42	nmod:poss	_	_
+42	wives	wife	NOUN	NNS	Number=Plur	24	nmod	_	_
+43	and	and	CCONJ	CC	_	45	cc	_	_
+44	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	45	nmod:poss	_	_
+45	children	child	NOUN	NNS	Number=Plur	42	conj	_	_
+46	,	,	PUNCT	,	_	47	punct	_	_
+47	departed	depart	VERB	VBD	Tense=Past	24	acl	_	_
+48	out	out	ADP	RP	_	47	compound:prt	_	_
+49	of	of	ADP	IN	_	51	case	_	_
+50	the	the	DET	DT	_	51	det	_	_
+51	land	land	NOUN	NN	Number=Sing	47	obl	_	_
+52	of	of	ADP	IN	_	53	case	_	_
+53	Zarahemla	Zarahemla	PROPN	NNP	Number=Sing	51	nmod	_	_
+54	into	into	ADP	IN	_	56	case	_	_
+55	the	the	DET	DT	_	56	det	_	_
+56	land	land	NOUN	NN	Number=Sing	47	obl	_	_
+57	which	which	PRON	WDT	_	59	nsubj	_	_
+58	was	be	AUX	VBD	Tense=Past	59	cop	_	_
+59	northward	northward	ADV	RB	_	56	acl:relcl	_	_
+60	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that Hagoth, he being an exceedingly curious man, therefore he went forth and built him an exceedingly large ship, on the borders of the land Bountiful, by the land Desolation, and launched it forth into the west sea, by the narrow neck which led into the land northward.
+# sent_id = 2461
+# llm_note = AICTP; "Hagoth" is nsubj of "went"; "he being an exceedingly curious man" is absolute participial (appos/parataxis of "Hagoth" — treat as parataxis); "therefore" connects consequent clause; "built him an exceedingly large ship" — "him" is iobj (benefactive), "ship" is obj; "launched it forth" is conj of "built"; "on the borders" is obl of "built"; "by the land Desolation" is conj of "on the borders"; "which led into the land northward" is acl:relcl on "neck"; "land Bountiful" and "land Desolation" — "Bountiful"/"Desolation" are PROPN flat-modifying "land".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	18	mark	_	_
+7	Hagoth	Hagoth	PROPN	NNP	Number=Sing	18	nsubj	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	10	nsubj	_	_
+10	being	be	VERB	VBG	VerbForm=Part	7	parataxis	_	_
+11	an	a	DET	DT	_	14	det	_	_
+12	exceedingly	exceedingly	ADV	RB	_	13	advmod	_	_
+13	curious	curious	ADJ	JJ	_	14	amod	_	_
+14	man	man	NOUN	NN	Number=Sing	10	xcomp	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	therefore	therefore	ADV	RB	_	18	advmod	_	_
+17	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	18	nsubj	_	_
+18	went	go	VERB	VBD	Tense=Past	5	ccomp	_	_
+19	forth	forth	ADV	RB	_	18	advmod	_	_
+20	and	and	CCONJ	CC	_	21	cc	_	_
+21	built	build	VERB	VBD	Tense=Past	18	conj	_	_
+22	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	21	iobj	_	_
+23	an	a	DET	DT	_	26	det	_	_
+24	exceedingly	exceedingly	ADV	RB	_	25	advmod	_	_
+25	large	large	ADJ	JJ	_	26	amod	_	_
+26	ship	ship	NOUN	NN	Number=Sing	21	obj	_	_
+27	,	,	PUNCT	,	_	21	punct	_	_
+28	on	on	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	borders	border	NOUN	NNS	Number=Plur	21	obl	_	_
+31	of	of	ADP	IN	_	33	case	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	land	land	NOUN	NN	Number=Sing	30	nmod	_	_
+34	Bountiful	Bountiful	PROPN	NNP	Number=Sing	33	flat	_	_
+35	,	,	PUNCT	,	_	38	punct	_	_
+36	by	by	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	land	land	NOUN	NN	Number=Sing	30	conj	_	_
+39	Desolation	Desolation	PROPN	NNP	Number=Sing	38	flat	_	_
+40	,	,	PUNCT	,	_	42	punct	_	_
+41	and	and	CCONJ	CC	_	42	cc	_	_
+42	launched	launch	VERB	VBD	Tense=Past	21	conj	_	_
+43	it	it	PRON	PRP	Case=Acc|Number=Sing|Person=3	42	obj	_	_
+44	forth	forth	ADV	RB	_	42	advmod	_	_
+45	into	into	ADP	IN	_	48	case	_	_
+46	the	the	DET	DT	_	48	det	_	_
+47	west	west	NOUN	NN	Number=Sing	48	compound	_	_
+48	sea	sea	NOUN	NN	Number=Sing	42	obl	_	_
+49	,	,	PUNCT	,	_	53	punct	_	_
+50	by	by	ADP	IN	_	53	case	_	_
+51	the	the	DET	DT	_	53	det	_	_
+52	narrow	narrow	ADJ	JJ	_	53	amod	_	_
+53	neck	neck	NOUN	NN	Number=Sing	42	obl	_	_
+54	which	which	PRON	WDT	_	55	nsubj	_	_
+55	led	lead	VERB	VBD	Tense=Past	53	acl:relcl	_	_
+56	into	into	ADP	IN	_	58	case	_	_
+57	the	the	DET	DT	_	58	det	_	_
+58	land	land	NOUN	NN	Number=Sing	55	obl	_	_
+59	northward	northward	ADV	RB	_	58	advmod	_	_
+60	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And behold, there were many of the Nephites who did enter therein and did sail forth with much provisions, and also many women and children; and they took their course northward.
+# sent_id = 2462
+# llm_note = "behold" INTJ discourse; existential "there were many"; "who did enter therein and did sail forth" acl:relcl on "many"; "also many women and children" — "also" ADV, "many women and children" is appos/conj to earlier "many"; second main clause "they took their course northward" is conj.
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	there	there	PRON	EX	_	5	expl	_	_
+5	were	be	VERB	VBD	Tense=Past	0	root	_	_
+6	many	many	PRON	JJ	_	5	nsubj	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Nephites	Nephite	PROPN	NNPS	Number=Plur	6	nmod	_	_
+10	who	who	PRON	WP	_	12	nsubj	_	_
+11	did	do	AUX	VBD	Tense=Past	12	aux	_	_
+12	enter	enter	VERB	VB	_	6	acl:relcl	_	_
+13	therein	therein	ADV	RB	_	12	advmod	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	did	do	AUX	VBD	Tense=Past	16	aux	_	_
+16	sail	sail	VERB	VB	_	12	conj	_	_
+17	forth	forth	ADV	RB	_	16	advmod	_	_
+18	with	with	ADP	IN	_	20	case	_	_
+19	much	much	ADJ	JJ	_	20	amod	_	_
+20	provisions	provision	NOUN	NNS	Number=Plur	16	obl	_	_
+21	,	,	PUNCT	,	_	25	punct	_	_
+22	and	and	CCONJ	CC	_	25	cc	_	_
+23	also	also	ADV	RB	_	25	advmod	_	_
+24	many	many	ADJ	JJ	_	25	amod	_	_
+25	women	woman	NOUN	NNS	Number=Plur	6	conj	_	_
+26	and	and	CCONJ	CC	_	27	cc	_	_
+27	children	child	NOUN	NNS	Number=Plur	25	conj	_	_
+28	;	;	PUNCT	,	_	31	punct	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	31	nsubj	_	_
+31	took	take	VERB	VBD	Tense=Past	5	conj	_	_
+32	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	33	nmod:poss	_	_
+33	course	course	NOUN	NN	Number=Sing	31	obj	_	_
+34	northward	northward	ADV	RB	_	31	advmod	_	_
+35	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And thus ended the thirty and seventh year.
+# sent_id = 2463
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	ended	end	VERB	VBD	Tense=Past	0	root	_	_
+4	the	the	DET	DT	_	8	det	_	_
+5	thirty	thirty	NUM	CD	_	7	compound	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	seventh	seventh	ADJ	JJ	_	8	amod	_	_
+8	year	year	NOUN	NN	Number=Sing	3	nsubj	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And in the thirty and eighth year, this man built other ships.
+# sent_id = 2464
+1	And	and	CCONJ	CC	_	11	cc	_	_
+2	in	in	ADP	IN	_	7	case	_	_
+3	the	the	DET	DT	_	7	det	_	_
+4	thirty	thirty	NUM	CD	_	6	compound	_	_
+5	and	and	CCONJ	CC	_	6	cc	_	_
+6	eighth	eighth	ADJ	JJ	_	7	amod	_	_
+7	year	year	NOUN	NN	Number=Sing	11	obl	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	this	this	DET	DT	_	10	det	_	_
+10	man	man	NOUN	NN	Number=Sing	11	nsubj	_	_
+11	built	build	VERB	VBD	Tense=Past	0	root	_	_
+12	other	other	ADJ	JJ	_	13	amod	_	_
+13	ships	ship	NOUN	NNS	Number=Plur	11	obj	_	_
+14	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = And the first ship did also return, and many more people did enter into it; and they also took much provisions, and set out again to the land northward.
+# sent_id = 2465
+# llm_note = "the first ship did also return" main; "and many more people did enter into it" is conj; "they also took much provisions" is second main conj; "set out again" is conj of "took".
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	the	the	DET	DT	_	4	det	_	_
+3	first	first	ADJ	JJ	_	4	amod	_	_
+4	ship	ship	NOUN	NN	Number=Sing	7	nsubj	_	_
+5	did	do	AUX	VBD	Tense=Past	7	aux	_	_
+6	also	also	ADV	RB	_	7	advmod	_	_
+7	return	return	VERB	VB	_	0	root	_	_
+8	,	,	PUNCT	,	_	14	punct	_	_
+9	and	and	CCONJ	CC	_	14	cc	_	_
+10	many	many	ADJ	JJ	_	12	amod	_	_
+11	more	more	ADJ	JJR	_	12	amod	_	_
+12	people	people	NOUN	NN	Number=Sing	14	nsubj	_	_
+13	did	do	AUX	VBD	Tense=Past	14	aux	_	_
+14	enter	enter	VERB	VB	_	7	conj	_	_
+15	into	into	ADP	IN	_	16	case	_	_
+16	it	it	PRON	PRP	Case=Acc|Number=Sing|Person=3	14	obl	_	_
+17	;	;	PUNCT	,	_	21	punct	_	_
+18	and	and	CCONJ	CC	_	21	cc	_	_
+19	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	21	nsubj	_	_
+20	also	also	ADV	RB	_	21	advmod	_	_
+21	took	take	VERB	VBD	Tense=Past	7	conj	_	_
+22	much	much	ADJ	JJ	_	23	amod	_	_
+23	provisions	provision	NOUN	NNS	Number=Plur	21	obj	_	_
+24	,	,	PUNCT	,	_	26	punct	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	set	set	VERB	VBD	Tense=Past	21	conj	_	_
+27	out	out	ADP	RP	_	26	compound:prt	_	_
+28	again	again	ADV	RB	_	26	advmod	_	_
+29	to	to	ADP	IN	_	31	case	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	land	land	NOUN	NN	Number=Sing	26	obl	_	_
+32	northward	northward	ADV	RB	_	31	advmod	_	_
+33	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And it came to pass that they were never heard of more.
+# sent_id = 2466
+# llm_note = AICTP; "heard of more" — passive "were heard"; "of more" is obl ("more" = ADV/pronoun here, "of" is case); treat "more" as ADV.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	10	nsubj:pass	_	_
+8	were	be	AUX	VBD	Tense=Past	10	aux:pass	_	_
+9	never	never	ADV	RB	_	10	advmod	_	_
+10	heard	hear	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	more	more	ADV	RBR	_	10	obl	_	_
+13	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And we suppose that they were drowned in the depths of the sea.
+# sent_id = 2467
+# llm_note = "suppose" is cognition verb with ccomp "that they were drowned".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	3	nsubj	_	_
+3	suppose	suppose	VERB	VBP	Tense=Pres	0	root	_	_
+4	that	that	SCONJ	IN	_	7	mark	_	_
+5	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	7	nsubj:pass	_	_
+6	were	be	AUX	VBD	Tense=Past	7	aux:pass	_	_
+7	drowned	drown	VERB	VBN	Tense=Past|VerbForm=Part	3	ccomp	_	_
+8	in	in	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	depths	depth	NOUN	NNS	Number=Plur	7	obl	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	sea	sea	NOUN	NN	Number=Sing	10	nmod	_	_
+14	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that one other ship also did sail forth; and whither she did go we know not.
+# sent_id = 2468
+# llm_note = AICTP; main clause "one other ship also did sail forth"; second clause "whither she did go we know not" — fronted interrogative-adverb "whither" is advmod of "go"; "she did go" is embedded as obj/ccomp of "know" (indirect question); "not" is advmod of "know".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	12	mark	_	_
+7	one	one	NUM	CD	_	9	nummod	_	_
+8	other	other	ADJ	JJ	_	9	amod	_	_
+9	ship	ship	NOUN	NN	Number=Sing	12	nsubj	_	_
+10	also	also	ADV	RB	_	12	advmod	_	_
+11	did	do	AUX	VBD	Tense=Past	12	aux	_	_
+12	sail	sail	VERB	VB	_	5	ccomp	_	_
+13	forth	forth	ADV	RB	_	12	advmod	_	_
+14	;	;	PUNCT	,	_	21	punct	_	_
+15	and	and	CCONJ	CC	_	21	cc	_	_
+16	whither	whither	ADV	WRB	_	19	advmod	_	_
+17	she	she	PRON	PRP	Case=Nom|Number=Sing|Person=3	19	nsubj	_	_
+18	did	do	AUX	VBD	Tense=Past	19	aux	_	_
+19	go	go	VERB	VB	_	21	ccomp	_	_
+20	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	21	nsubj	_	_
+21	know	know	VERB	VBP	Tense=Pres	12	conj	_	_
+22	not	not	PART	RB	_	21	advmod	_	_
+23	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that in this year there were many people who went forth into the land northward.
+# sent_id = 2469
+# llm_note = AICTP; "in this year" temporal obl of "were"; existential "there were many people"; "who went forth into the land northward" acl:relcl on "people".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	11	mark	_	_
+7	in	in	ADP	IN	_	9	case	_	_
+8	this	this	DET	DT	_	9	det	_	_
+9	year	year	NOUN	NN	Number=Sing	11	obl	_	_
+10	there	there	PRON	EX	_	11	expl	_	_
+11	were	be	VERB	VBD	Tense=Past	5	ccomp	_	_
+12	many	many	ADJ	JJ	_	13	amod	_	_
+13	people	people	NOUN	NN	Number=Sing	11	nsubj	_	_
+14	who	who	PRON	WP	_	15	nsubj	_	_
+15	went	go	VERB	VBD	Tense=Past	13	acl:relcl	_	_
+16	forth	forth	ADV	RB	_	15	advmod	_	_
+17	into	into	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	land	land	NOUN	NN	Number=Sing	15	obl	_	_
+20	northward	northward	ADV	RB	_	19	advmod	_	_
+21	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And thus ended the thirty and eighth year.
+# sent_id = 2470
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	thus	thus	ADV	RB	_	3	advmod	_	_
+3	ended	end	VERB	VBD	Tense=Past	0	root	_	_
+4	the	the	DET	DT	_	8	det	_	_
+5	thirty	thirty	NUM	CD	_	7	compound	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	eighth	eighth	ADJ	JJ	_	8	amod	_	_
+8	year	year	NOUN	NN	Number=Sing	3	nsubj	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass in the thirty and ninth year of the reign of the judges, Shiblon died also, and Corianton had gone forth to the land northward in a ship, to carry forth provisions unto the people who had gone forth into that land.
+# sent_id = 2471
+# llm_note = AICTP variant with temporal PP; two coordinated clauses in the "that"-complement: "Shiblon died also" and "Corianton had gone forth"; "to carry forth provisions" is advcl (purpose) of "gone forth"; "who had gone forth into that land" is acl:relcl on "people".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	in	in	ADP	IN	_	11	case	_	_
+7	the	the	DET	DT	_	11	det	_	_
+8	thirty	thirty	NUM	CD	_	10	compound	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	ninth	ninth	ADJ	JJ	_	11	amod	_	_
+11	year	year	NOUN	NN	Number=Sing	5	obl	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	reign	reign	NOUN	NN	Number=Sing	11	nmod	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	judges	judge	NOUN	NNS	Number=Plur	14	nmod	_	_
+18	,	,	PUNCT	,	_	20	punct	_	_
+19	Shiblon	Shiblon	PROPN	NNP	Number=Sing	20	nsubj	_	_
+20	died	die	VERB	VBD	Tense=Past	5	ccomp	_	_
+21	also	also	ADV	RB	_	20	advmod	_	_
+22	,	,	PUNCT	,	_	26	punct	_	_
+23	and	and	CCONJ	CC	_	26	cc	_	_
+24	Corianton	Corianton	PROPN	NNP	Number=Sing	26	nsubj	_	_
+25	had	have	AUX	VBD	Tense=Past	26	aux	_	_
+26	gone	go	VERB	VBN	Tense=Past|VerbForm=Part	20	conj	_	_
+27	forth	forth	ADV	RB	_	26	advmod	_	_
+28	to	to	ADP	IN	_	30	case	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	land	land	NOUN	NN	Number=Sing	26	obl	_	_
+31	northward	northward	ADV	RB	_	30	advmod	_	_
+32	in	in	ADP	IN	_	34	case	_	_
+33	a	a	DET	DT	_	34	det	_	_
+34	ship	ship	NOUN	NN	Number=Sing	26	obl	_	_
+35	,	,	PUNCT	,	_	37	punct	_	_
+36	to	to	PART	TO	_	37	mark	_	_
+37	carry	carry	VERB	VB	_	26	advcl	_	_
+38	forth	forth	ADV	RB	_	37	advmod	_	_
+39	provisions	provision	NOUN	NNS	Number=Plur	37	obj	_	_
+40	unto	unto	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	_	42	det	_	_
+42	people	people	NOUN	NN	Number=Sing	37	obl	_	_
+43	who	who	PRON	WP	_	45	nsubj	_	_
+44	had	have	AUX	VBD	Tense=Past	45	aux	_	_
+45	gone	go	VERB	VBN	Tense=Past|VerbForm=Part	42	acl:relcl	_	_
+46	forth	forth	ADV	RB	_	45	advmod	_	_
+47	into	into	ADP	IN	_	49	case	_	_
+48	that	that	DET	DT	_	49	det	_	_
+49	land	land	NOUN	NN	Number=Sing	45	obl	_	_
+50	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore it became expedient for Shiblon to confer those sacred things, before his death, upon the son of Helaman, who was called Helaman, being called after the name of his father.
+# sent_id = 2472
+# llm_note = "it became expedient" — "it" is expl, "became" is the main verb, "expedient" is xcomp, "for Shiblon to confer" is the real subject clause (csubj or xcomp); treat "for Shiblon to confer" as csubj:pass of "expedient" or as xcomp — here use ccomp pattern: "it" expl, "became" head, "expedient" xcomp, "for" mark of infinitive subject "Shiblon", "to confer" is the csubj; "who was called Helaman" acl:relcl on "son"; "being called after the name" — participial advcl of the "who" clause or additional acl on the son.
+1	Therefore	therefore	ADV	RB	_	3	advmod	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	3	expl	_	_
+3	became	become	VERB	VBD	Tense=Past	0	root	_	_
+4	expedient	expedient	ADJ	JJ	_	3	xcomp	_	_
+5	for	for	SCONJ	IN	_	6	mark	_	_
+6	Shiblon	Shiblon	PROPN	NNP	Number=Sing	8	nsubj	_	_
+7	to	to	PART	TO	_	8	mark	_	_
+8	confer	confer	VERB	VB	_	4	csubj	_	_
+9	those	those	DET	DT	_	11	det	_	_
+10	sacred	sacred	ADJ	JJ	_	11	amod	_	_
+11	things	thing	NOUN	NNS	Number=Plur	8	obj	_	_
+12	,	,	PUNCT	,	_	8	punct	_	_
+13	before	before	ADP	IN	_	15	case	_	_
+14	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	15	nmod:poss	_	_
+15	death	death	NOUN	NN	Number=Sing	8	obl	_	_
+16	,	,	PUNCT	,	_	8	punct	_	_
+17	upon	upon	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	son	son	NOUN	NN	Number=Sing	8	obl	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	Helaman	Helaman	PROPN	NNP	Number=Sing	19	nmod	_	_
+22	,	,	PUNCT	,	_	25	punct	_	_
+23	who	who	PRON	WP	_	25	nsubj:pass	_	_
+24	was	be	AUX	VBD	Tense=Past	25	aux:pass	_	_
+25	called	call	VERB	VBN	Tense=Past|VerbForm=Part	19	acl:relcl	_	_
+26	Helaman	Helaman	PROPN	NNP	Number=Sing	25	xcomp	_	_
+27	,	,	PUNCT	,	_	29	punct	_	_
+28	being	be	AUX	VBG	VerbForm=Part	29	aux:pass	_	_
+29	called	call	VERB	VBN	Tense=Past|VerbForm=Part	25	advcl	_	_
+30	after	after	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	name	name	NOUN	NN	Number=Sing	29	obl	_	_
+33	of	of	ADP	IN	_	35	case	_	_
+34	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	35	nmod:poss	_	_
+35	father	father	NOUN	NN	Number=Sing	32	nmod	_	_
+36	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now behold, all those engravings which were in the possession of Helaman were written and sent forth among the children of men throughout all the land, save it were those parts which had been commanded by Alma should not go forth.
+# sent_id = 2473
+# llm_note = "behold" INTJ discourse; main clause "all those engravings...were written and sent forth"; "which were in the possession of Helaman" acl:relcl on "engravings"; "save it were those parts which had been commanded by Alma should not go forth" — "save" SCONJ; "it were" = existential exception (it=expl, were=root of exception clause); "those parts" = xcomp/predicative; "which had been commanded by Alma should not go forth" — acl:relcl on "parts"; "should not go forth" is ccomp of "commanded".
+1	Now	now	ADV	RB	_	15	advmod	_	_
+2	behold	behold	INTJ	UH	_	15	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	all	all	DET	PDT	_	6	det:predet	_	_
+5	those	those	DET	DT	_	6	det	_	_
+6	engravings	engraving	NOUN	NNS	Number=Plur	15	nsubj:pass	_	_
+7	which	which	PRON	WDT	_	9	nsubj	_	_
+8	were	be	AUX	VBD	Tense=Past	9	cop	_	_
+9	in	in	ADP	IN	_	6	acl:relcl	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	possession	possession	NOUN	NN	Number=Sing	9	nmod	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	Helaman	Helaman	PROPN	NNP	Number=Sing	11	nmod	_	_
+14	were	be	AUX	VBD	Tense=Past	15	aux:pass	_	_
+15	written	write	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	sent	send	VERB	VBN	Tense=Past|VerbForm=Part	15	conj	_	_
+18	forth	forth	ADV	RB	_	17	advmod	_	_
+19	among	among	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	children	child	NOUN	NNS	Number=Plur	15	obl	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	men	man	NOUN	NNS	Number=Plur	21	nmod	_	_
+24	throughout	throughout	ADP	IN	_	27	case	_	_
+25	all	all	DET	PDT	_	27	det:predet	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	land	land	NOUN	NN	Number=Sing	15	obl	_	_
+28	,	,	PUNCT	,	_	31	punct	_	_
+29	save	save	SCONJ	IN	_	31	mark	_	_
+30	it	it	PRON	PRP	_	31	expl	_	_
+31	were	be	VERB	VBD	Tense=Past	15	advcl	_	_
+32	those	those	DET	DT	_	33	det	_	_
+33	parts	part	NOUN	NNS	Number=Plur	31	xcomp	_	_
+34	which	which	PRON	WDT	_	37	nsubj:pass	_	_
+35	had	have	AUX	VBD	Tense=Past	37	aux	_	_
+36	been	be	AUX	VBN	_	37	aux:pass	_	_
+37	commanded	command	VERB	VBN	Tense=Past|VerbForm=Part	33	acl:relcl	_	_
+38	by	by	ADP	IN	_	39	case	_	_
+39	Alma	Alma	PROPN	NNP	Number=Sing	37	obl:agent	_	_
+40	should	shall	AUX	MD	_	42	aux	_	_
+41	not	not	PART	RB	_	42	advmod	_	_
+42	go	go	VERB	VB	_	37	ccomp	_	_
+43	forth	forth	ADV	RB	_	42	advmod	_	_
+44	.	.	PUNCT	.	_	15	punct	_	_
+
+# text = Nevertheless, these things were to be kept sacred, and handed down from one generation to another; therefore, in this year, they had been conferred upon Helaman, before the death of Shiblon.
+# sent_id = 2474
+# llm_note = "Nevertheless" is ADV advmod; "were to be kept sacred" — "were" aux, "to" mark, "be" aux:pass, "kept" main verb (passive infinitive), "sacred" xcomp/depictive; "handed down" conj of "kept"; second main clause "they had been conferred upon Helaman" is conj after semicolon; "before the death of Shiblon" is advcl/obl of "conferred".
+1	Nevertheless	nevertheless	ADV	RB	_	5	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	these	these	DET	DT	_	4	det	_	_
+4	things	thing	NOUN	NNS	Number=Plur	5	nsubj:pass	_	_
+5	were	be	AUX	VBD	Tense=Past	8	aux	_	_
+6	to	to	PART	TO	_	8	mark	_	_
+7	be	be	AUX	VB	_	8	aux:pass	_	_
+8	kept	keep	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+9	sacred	sacred	ADJ	JJ	_	8	xcomp	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	handed	hand	VERB	VBN	Tense=Past|VerbForm=Part	8	conj	_	_
+13	down	down	ADP	RP	_	12	compound:prt	_	_
+14	from	from	ADP	IN	_	16	case	_	_
+15	one	one	NUM	CD	_	16	nummod	_	_
+16	generation	generation	NOUN	NN	Number=Sing	12	obl	_	_
+17	to	to	ADP	IN	_	18	case	_	_
+18	another	another	PRON	DT	_	16	nmod	_	_
+19	;	;	PUNCT	,	_	29	punct	_	_
+20	therefore	therefore	ADV	RB	_	29	advmod	_	_
+21	,	,	PUNCT	,	_	20	punct	_	_
+22	in	in	ADP	IN	_	24	case	_	_
+23	this	this	DET	DT	_	24	det	_	_
+24	year	year	NOUN	NN	Number=Sing	29	obl	_	_
+25	,	,	PUNCT	,	_	24	punct	_	_
+26	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	29	nsubj:pass	_	_
+27	had	have	AUX	VBD	Tense=Past	29	aux	_	_
+28	been	be	AUX	VBN	_	29	aux:pass	_	_
+29	conferred	confer	VERB	VBN	Tense=Past|VerbForm=Part	8	conj	_	_
+30	upon	upon	ADP	IN	_	31	case	_	_
+31	Helaman	Helaman	PROPN	NNP	Number=Sing	29	obl	_	_
+32	,	,	PUNCT	,	_	29	punct	_	_
+33	before	before	ADP	IN	_	35	case	_	_
+34	the	the	DET	DT	_	35	det	_	_
+35	death	death	NOUN	NN	Number=Sing	29	obl	_	_
+36	of	of	ADP	IN	_	37	case	_	_
+37	Shiblon	Shiblon	PROPN	NNP	Number=Sing	35	nmod	_	_
+38	.	.	PUNCT	.	_	8	punct	_	_
+

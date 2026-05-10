@@ -1,0 +1,573 @@
+# text = Thy watchmen shall lift up the voice; with the voice together shall they sing; for they shall see eye to eye when the Lord shall bring again Zion; Break forth into joy; sing together ye waste places of Jerusalem; for the Lord hath comforted his people, he hath redeemed Jerusalem;
+# sent_id = 350
+1	Thy	thou	PRON	PRP$	_	2	nmod:poss	_	_
+2	watchmen	watchman	NOUN	NNS	_	4	nsubj	_	_
+3	shall	shall	AUX	MD	_	4	aux	_	_
+4	lift	lift	VERB	VB	_	0	root	_	_
+5	up	up	ADP	RP	_	4	compound:prt	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	voice	voice	NOUN	NN	_	4	obj	_	_
+8	;	;	PUNCT	;	_	4	punct	_	_
+9	with	with	ADP	IN	_	15	obl	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	voice	voice	NOUN	NN	_	9	nmod	_	_
+12	together	together	ADV	RB	_	15	advmod	_	_
+13	shall	shall	AUX	MD	_	15	aux	_	_
+14	they	they	PRON	PRP	_	15	nsubj	_	_
+15	sing	sing	VERB	VB	_	4	conj	_	_
+16	;	;	PUNCT	;	_	4	punct	_	_
+17	for	for	SCONJ	IN	_	20	mark	_	_
+18	they	they	PRON	PRP	_	20	nsubj	_	_
+19	shall	shall	AUX	MD	_	20	aux	_	_
+20	see	see	VERB	VB	_	4	advcl	_	_
+21	eye	eye	NOUN	NN	_	20	obj	_	_
+22	to	to	ADP	IN	_	23	case	_	_
+23	eye	eye	NOUN	NN	_	21	nmod	_	_
+24	when	when	SCONJ	WRB	_	28	mark	_	_
+25	the	the	DET	DT	_	26	det	_	_
+26	Lord	Lord	PROPN	NNP	_	28	nsubj	_	_
+27	shall	shall	AUX	MD	_	28	aux	_	_
+28	bring	bring	VERB	VB	_	20	advcl	_	_
+29	again	again	ADV	RB	_	28	advmod	_	_
+30	Zion	Zion	PROPN	NNP	_	28	obj	_	_
+31	;	;	PUNCT	;	_	4	punct	_	_
+32	Break	break	VERB	VB	_	4	conj	_	_
+33	forth	forth	ADV	RB	_	32	advmod	_	_
+34	into	into	ADP	IN	_	35	case	_	_
+35	joy	joy	NOUN	NN	_	32	obl	_	_
+36	;	;	PUNCT	;	_	4	punct	_	_
+37	sing	sing	VERB	VB	_	32	conj	_	_
+38	together	together	ADV	RB	_	37	advmod	_	_
+39	ye	ye	PRON	PRP	_	37	nsubj	_	_
+40	waste	waste	ADJ	JJ	_	41	amod	_	_
+41	places	place	NOUN	NNS	_	39	appos	_	_
+42	of	of	ADP	IN	_	43	case	_	_
+43	Jerusalem	Jerusalem	PROPN	NNP	_	41	nmod	_	_
+44	;	;	PUNCT	;	_	4	punct	_	_
+45	for	for	SCONJ	IN	_	49	mark	_	_
+46	the	the	DET	DT	_	47	det	_	_
+47	Lord	Lord	PROPN	NNP	_	49	nsubj	_	_
+48	hath	have	AUX	VBZ	_	49	aux	_	_
+49	comforted	comfort	VERB	VBN	_	4	advcl	_	_
+50	his	he	PRON	PRP$	_	51	nmod:poss	_	_
+51	people	people	NOUN	NNS	_	49	obj	_	_
+52	,	,	PUNCT	,	_	49	punct	_	_
+53	he	he	PRON	PRP	_	55	nsubj	_	_
+54	hath	have	AUX	VBZ	_	55	aux	_	_
+55	redeemed	redeem	VERB	VBN	_	49	conj	_	_
+56	Jerusalem	Jerusalem	PROPN	NNP	_	55	obj	_	_
+57	;	;	PUNCT	;	_	4	punct	_	_
+
+# text = The Lord hath made bare his holy arm in the eyes of all the nations, and all the ends of the earth shall see the salvation of our God?
+# sent_id = 351
+1	The	the	DET	DT	_	2	det	_	_
+2	Lord	Lord	PROPN	NNP	_	4	nsubj	_	_
+3	hath	have	AUX	VBZ	_	4	aux	_	_
+4	made	make	VERB	VBN	_	0	root	_	_
+5	bare	bare	ADJ	JJ	_	4	xcomp	_	_
+6	his	he	PRON	PRP$	_	8	nmod:poss	_	_
+7	holy	holy	ADJ	JJ	_	8	amod	_	_
+8	arm	arm	NOUN	NN	_	4	obj	_	_
+9	in	in	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	eyes	eye	NOUN	NNS	_	4	obl	_	_
+12	of	of	ADP	IN	_	15	case	_	_
+13	all	all	DET	PDT	_	15	det:predet	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	nations	nation	NOUN	NNS	_	11	nmod	_	_
+16	,	,	PUNCT	,	_	4	punct	_	_
+17	and	and	CCONJ	CC	_	25	cc	_	_
+18	all	all	DET	PDT	_	20	det:predet	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	ends	end	NOUN	NNS	_	25	nsubj	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	earth	earth	NOUN	NN	_	20	nmod	_	_
+24	shall	shall	AUX	MD	_	25	aux	_	_
+25	see	see	VERB	VB	_	4	conj	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	salvation	salvation	NOUN	NN	_	25	obj	_	_
+28	of	of	ADP	IN	_	30	case	_	_
+29	our	we	PRON	PRP$	_	30	nmod:poss	_	_
+30	God	God	PROPN	NNP	_	27	nmod	_	_
+31	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = And now Abinadi said unto them:
+# sent_id = 352
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	Abinadi	Abinadi	PROPN	NNP	_	4	nsubj	_	_
+4	said	say	VERB	VBD	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	them	they	PRON	PRP	_	4	obl	_	_
+7	:	:	PUNCT	:	_	4	punct	_	_
+
+# text = Are you priests, and pretend to teach this people, and to understand the spirit of prophesying, and yet desire to know of me what these things mean?
+# sent_id = 353
+1	Are	be	AUX	VBP	_	3	cop	_	_
+2	you	you	PRON	PRP	_	3	nsubj	_	_
+3	priests	priest	NOUN	NNS	_	0	root	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	and	and	CCONJ	CC	_	6	cc	_	_
+6	pretend	pretend	VERB	VBP	_	3	conj	_	_
+7	to	to	PART	TO	_	8	mark	_	_
+8	teach	teach	VERB	VB	_	6	xcomp	_	_
+9	this	this	DET	DT	_	10	det	_	_
+10	people	people	NOUN	NNS	_	8	obj	_	_
+11	,	,	PUNCT	,	_	6	punct	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	to	to	PART	TO	_	14	mark	_	_
+14	understand	understand	VERB	VB	_	6	conj	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	spirit	spirit	NOUN	NN	_	14	obj	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	prophesying	prophesy	VERB	VBG	_	16	nmod	_	_
+19	,	,	PUNCT	,	_	6	punct	_	_
+20	and	and	CCONJ	CC	_	22	cc	_	_
+21	yet	yet	ADV	RB	_	22	advmod	_	_
+22	desire	desire	VERB	VBP	_	6	conj	_	_
+23	to	to	PART	TO	_	24	mark	_	_
+24	know	know	VERB	VB	_	22	xcomp	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	me	I	PRON	PRP	_	24	obl	_	_
+27	what	what	PRON	WP	_	30	nsubj	_	_
+28	these	these	DET	DT	_	29	det	_	_
+29	things	thing	NOUN	NNS	_	27	nmod	_	_
+30	mean	mean	VERB	VBP	_	24	ccomp	_	_
+31	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = I say unto you, wo be unto you for perverting the ways of the Lord!
+# sent_id = 354
+1	I	I	PRON	PRP	_	2	nsubj	_	_
+2	say	say	VERB	VBP	_	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	_	2	obl	_	_
+5	,	,	PUNCT	,	_	2	punct	_	_
+6	wo	wo	INTJ	UH	_	7	discourse	_	_
+7	be	be	VERB	VB	_	2	parataxis	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	you	you	PRON	PRP	_	7	obl	_	_
+10	for	for	ADP	IN	_	11	case	_	_
+11	perverting	pervert	VERB	VBG	_	7	obl	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	ways	way	NOUN	NNS	_	11	obj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	Lord	Lord	PROPN	NNP	_	13	nmod	_	_
+17	!	!	PUNCT	.	_	2	punct	_	_
+
+# text = For if ye understand these things ye have not taught them; therefore, ye have perverted the ways of the Lord.
+# sent_id = 355
+1	For	for	SCONJ	IN	_	10	mark	_	_
+2	if	if	SCONJ	IN	_	4	mark	_	_
+3	ye	ye	PRON	PRP	_	4	nsubj	_	_
+4	understand	understand	VERB	VBP	_	10	advcl	_	_
+5	these	these	DET	DT	_	6	det	_	_
+6	things	thing	NOUN	NNS	_	4	obj	_	_
+7	ye	ye	PRON	PRP	_	10	nsubj	_	_
+8	have	have	AUX	VBP	_	10	aux	_	_
+9	not	not	PART	RB	_	10	advmod	_	_
+10	taught	teach	VERB	VBN	_	0	root	_	_
+11	them	they	PRON	PRP	_	10	obj	_	_
+12	;	;	PUNCT	;	_	10	punct	_	_
+13	therefore	therefore	ADV	RB	_	17	advmod	_	_
+14	,	,	PUNCT	,	_	17	punct	_	_
+15	ye	ye	PRON	PRP	_	17	nsubj	_	_
+16	have	have	AUX	VBP	_	17	aux	_	_
+17	perverted	pervert	VERB	VBN	_	10	conj	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	ways	way	NOUN	NNS	_	17	obj	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	Lord	Lord	PROPN	NNP	_	19	nmod	_	_
+23	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = Ye have not applied your hearts to understanding; therefore, ye have not been wise.
+# sent_id = 356
+1	Ye	ye	PRON	PRP	_	4	nsubj	_	_
+2	have	have	AUX	VBP	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	applied	apply	VERB	VBN	_	0	root	_	_
+5	your	you	PRON	PRP$	_	6	nmod:poss	_	_
+6	hearts	heart	NOUN	NNS	_	4	obj	_	_
+7	to	to	ADP	IN	_	8	case	_	_
+8	understanding	understand	VERB	VBG	_	4	obl	_	_
+9	;	;	PUNCT	;	_	4	punct	_	_
+10	therefore	therefore	ADV	RB	_	16	advmod	_	_
+11	,	,	PUNCT	,	_	16	punct	_	_
+12	ye	ye	PRON	PRP	_	16	nsubj	_	_
+13	have	have	AUX	VBP	_	16	aux	_	_
+14	not	not	PART	RB	_	16	advmod	_	_
+15	been	be	AUX	VBN	_	16	cop	_	_
+16	wise	wise	ADJ	JJ	_	4	conj	_	_
+17	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Therefore, what teach ye this people?
+# sent_id = 357
+1	Therefore	therefore	ADV	RB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	what	what	PRON	WP	_	4	obj	_	_
+4	teach	teach	VERB	VBP	_	0	root	_	_
+5	ye	ye	PRON	PRP	_	4	nsubj	_	_
+6	this	this	DET	DT	_	7	det	_	_
+7	people	people	NOUN	NNS	_	4	iobj	_	_
+8	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = And they said: We teach the law of Moses.
+# sent_id = 358
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	they	they	PRON	PRP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	_	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	We	we	PRON	PRP	_	6	nsubj	_	_
+6	teach	teach	VERB	VBP	_	3	ccomp	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	law	law	NOUN	NN	_	6	obj	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Moses	Moses	PROPN	NNP	_	8	nmod	_	_
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And again he said unto them:
+# sent_id = 359
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	again	again	ADV	RB	_	4	advmod	_	_
+3	he	he	PRON	PRP	_	4	nsubj	_	_
+4	said	say	VERB	VBD	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	them	they	PRON	PRP	_	4	obl	_	_
+7	:	:	PUNCT	:	_	4	punct	_	_
+
+# text = If ye teach the law of Moses why do ye not keep it?
+# sent_id = 360
+1	If	if	SCONJ	IN	_	3	mark	_	_
+2	ye	ye	PRON	PRP	_	3	nsubj	_	_
+3	teach	teach	VERB	VBP	_	12	advcl	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	law	law	NOUN	NN	_	3	obj	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Moses	Moses	PROPN	NNP	_	5	nmod	_	_
+8	why	why	ADV	WRB	_	12	advmod	_	_
+9	do	do	AUX	VBP	_	12	aux	_	_
+10	ye	ye	PRON	PRP	_	12	nsubj	_	_
+11	not	not	PART	RB	_	12	advmod	_	_
+12	keep	keep	VERB	VB	_	0	root	_	_
+13	it	it	PRON	PRP	_	12	obj	_	_
+14	?	?	PUNCT	.	_	12	punct	_	_
+
+# text = Why do ye set your hearts upon riches?
+# sent_id = 361
+1	Why	why	ADV	WRB	_	4	advmod	_	_
+2	do	do	AUX	VBP	_	4	aux	_	_
+3	ye	ye	PRON	PRP	_	4	nsubj	_	_
+4	set	set	VERB	VB	_	0	root	_	_
+5	your	you	PRON	PRP$	_	6	nmod:poss	_	_
+6	hearts	heart	NOUN	NNS	_	4	obj	_	_
+7	upon	upon	ADP	IN	_	8	case	_	_
+8	riches	rich	NOUN	NNS	_	4	obl	_	_
+9	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = Why do ye commit whoredoms and spend your strength with harlots, yea, and cause this people to commit sin, that the Lord has cause to send me to prophesy against this people, yea, even a great evil against this people?
+# sent_id = 362
+1	Why	why	ADV	WRB	_	4	advmod	_	_
+2	do	do	AUX	VBP	_	4	aux	_	_
+3	ye	ye	PRON	PRP	_	4	nsubj	_	_
+4	commit	commit	VERB	VB	_	0	root	_	_
+5	whoredoms	whoredom	NOUN	NNS	_	4	obj	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	spend	spend	VERB	VB	_	4	conj	_	_
+8	your	you	PRON	PRP$	_	9	nmod:poss	_	_
+9	strength	strength	NOUN	NN	_	7	obj	_	_
+10	with	with	ADP	IN	_	11	case	_	_
+11	harlots	harlot	NOUN	NNS	_	7	obl	_	_
+12	,	,	PUNCT	,	_	4	punct	_	_
+13	yea	yea	INTJ	UH	_	4	discourse	_	_
+14	,	,	PUNCT	,	_	4	punct	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	cause	cause	VERB	VB	_	4	conj	_	_
+17	this	this	DET	DT	_	18	det	_	_
+18	people	people	NOUN	NNS	_	16	obj	_	_
+19	to	to	PART	TO	_	20	mark	_	_
+20	commit	commit	VERB	VB	_	16	xcomp	_	_
+21	sin	sin	NOUN	NN	_	20	obj	_	_
+22	,	,	PUNCT	,	_	4	punct	_	_
+23	that	that	SCONJ	IN	_	27	mark	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	Lord	Lord	PROPN	NNP	_	27	nsubj	_	_
+26	has	have	AUX	VBZ	_	27	aux	_	_
+27	cause	cause	NOUN	NN	_	4	advcl	_	_
+28	to	to	PART	TO	_	29	mark	_	_
+29	send	send	VERB	VB	_	27	acl	_	_
+30	me	I	PRON	PRP	_	29	obj	_	_
+31	to	to	PART	TO	_	32	mark	_	_
+32	prophesy	prophesy	VERB	VB	_	29	xcomp	_	_
+33	against	against	ADP	IN	_	35	case	_	_
+34	this	this	DET	DT	_	35	det	_	_
+35	people	people	NOUN	NNS	_	32	obl	_	_
+36	,	,	PUNCT	,	_	4	punct	_	_
+37	yea	yea	INTJ	UH	_	4	discourse	_	_
+38	,	,	PUNCT	,	_	4	punct	_	_
+39	even	even	ADV	RB	_	42	advmod	_	_
+40	a	a	DET	DT	_	42	det	_	_
+41	great	great	ADJ	JJ	_	42	amod	_	_
+42	evil	evil	NOUN	NN	_	27	appos	_	_
+43	against	against	ADP	IN	_	45	case	_	_
+44	this	this	DET	DT	_	45	det	_	_
+45	people	people	NOUN	NNS	_	42	nmod	_	_
+46	?	?	PUNCT	.	_	4	punct	_	_
+
+# text = Know ye not that I speak the truth?
+# sent_id = 363
+1	Know	know	VERB	VBP	_	0	root	_	_
+2	ye	ye	PRON	PRP	_	1	nsubj	_	_
+3	not	not	PART	RB	_	1	advmod	_	_
+4	that	that	SCONJ	IN	_	6	mark	_	_
+5	I	I	PRON	PRP	_	6	nsubj	_	_
+6	speak	speak	VERB	VBP	_	1	ccomp	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	truth	truth	NOUN	NN	_	6	obj	_	_
+9	?	?	PUNCT	.	_	1	punct	_	_
+
+# text = Yea, ye know that I speak the truth; and you ought to tremble before God.
+# sent_id = 364
+1	Yea	yea	INTJ	UH	_	4	discourse	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	ye	ye	PRON	PRP	_	4	nsubj	_	_
+4	know	know	VERB	VBP	_	0	root	_	_
+5	that	that	SCONJ	IN	_	7	mark	_	_
+6	I	I	PRON	PRP	_	7	nsubj	_	_
+7	speak	speak	VERB	VBP	_	4	ccomp	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	truth	truth	NOUN	NN	_	7	obj	_	_
+10	;	;	PUNCT	;	_	4	punct	_	_
+11	and	and	CCONJ	CC	_	15	cc	_	_
+12	you	you	PRON	PRP	_	15	nsubj	_	_
+13	ought	ought	AUX	MD	_	15	aux	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	tremble	tremble	VERB	VB	_	4	conj	_	_
+16	before	before	ADP	IN	_	17	case	_	_
+17	God	God	PROPN	NNP	_	15	obl	_	_
+18	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it shall come to pass that ye shall be smitten for your iniquities, for ye have said that ye teach the law of Moses.
+# sent_id = 365
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	_	4	expl	_	_
+3	shall	shall	AUX	MD	_	4	aux	_	_
+4	come	come	VERB	VB	_	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	_	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	11	mark	_	_
+8	ye	ye	PRON	PRP	_	11	nsubj:pass	_	_
+9	shall	shall	AUX	MD	_	11	aux	_	_
+10	be	be	AUX	VB	_	11	aux:pass	_	_
+11	smitten	smite	VERB	VBN	_	6	ccomp	_	_
+12	for	for	ADP	IN	_	14	case	_	_
+13	your	you	PRON	PRP$	_	14	nmod:poss	_	_
+14	iniquities	iniquity	NOUN	NNS	_	11	obl	_	_
+15	,	,	PUNCT	,	_	11	punct	_	_
+16	for	for	SCONJ	IN	_	19	mark	_	_
+17	ye	ye	PRON	PRP	_	19	nsubj	_	_
+18	have	have	AUX	VBP	_	19	aux	_	_
+19	said	say	VERB	VBN	_	11	advcl	_	_
+20	that	that	SCONJ	IN	_	22	mark	_	_
+21	ye	ye	PRON	PRP	_	22	nsubj	_	_
+22	teach	teach	VERB	VBP	_	19	ccomp	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	law	law	NOUN	NN	_	22	obj	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	Moses	Moses	PROPN	NNP	_	24	nmod	_	_
+27	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And what know ye concerning the law of Moses?
+# sent_id = 366
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	what	what	PRON	WP	_	3	obj	_	_
+3	know	know	VERB	VBP	_	0	root	_	_
+4	ye	ye	PRON	PRP	_	3	nsubj	_	_
+5	concerning	concerning	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	law	law	NOUN	NN	_	3	obl	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	Moses	Moses	PROPN	NNP	_	7	nmod	_	_
+10	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Doth salvation come by the law of Moses?
+# sent_id = 367
+1	Doth	do	AUX	VBZ	_	3	aux	_	_
+2	salvation	salvation	NOUN	NN	_	3	nsubj	_	_
+3	come	come	VERB	VB	_	0	root	_	_
+4	by	by	ADP	IN	_	7	case	_	_
+5	the	the	DET	DT	_	7	det	_	_
+6	law	law	NOUN	NN	_	7	compound	_	_
+7	of	of	ADP	IN	_	3	obl	_	_
+8	Moses	Moses	PROPN	NNP	_	7	nmod	_	_
+9	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = What say ye?
+# sent_id = 368
+1	What	what	PRON	WP	_	2	obj	_	_
+2	say	say	VERB	VBP	_	0	root	_	_
+3	ye	ye	PRON	PRP	_	2	nsubj	_	_
+4	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = And they answered and said that salvation did come by the law of Moses.
+# sent_id = 369
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	they	they	PRON	PRP	_	3	nsubj	_	_
+3	answered	answer	VERB	VBD	_	0	root	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	said	say	VERB	VBD	_	3	conj	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	salvation	salvation	NOUN	NN	_	9	nsubj	_	_
+8	did	do	AUX	VBD	_	9	aux	_	_
+9	come	come	VERB	VB	_	5	ccomp	_	_
+10	by	by	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	law	law	NOUN	NN	_	9	obl	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Moses	Moses	PROPN	NNP	_	12	nmod	_	_
+15	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But now Abinadi said unto them: I know if ye keep the commandments of God ye shall be saved; yea, if ye keep the commandments which the Lord delivered unto Moses in the mount of Sinai, saying: I am the Lord thy God, who hath brought thee out of the land of Egypt, out of the house of bondage.
+# sent_id = 370
+1	But	but	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	Abinadi	Abinadi	PROPN	NNP	_	4	nsubj	_	_
+4	said	say	VERB	VBD	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	them	they	PRON	PRP	_	4	obl	_	_
+7	:	:	PUNCT	:	_	4	punct	_	_
+8	I	I	PRON	PRP	_	9	nsubj	_	_
+9	know	know	VERB	VBP	_	4	ccomp	_	_
+10	if	if	SCONJ	IN	_	12	mark	_	_
+11	ye	ye	PRON	PRP	_	12	nsubj	_	_
+12	keep	keep	VERB	VBP	_	9	advcl	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	commandments	commandment	NOUN	NNS	_	12	obj	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	God	God	PROPN	NNP	_	14	nmod	_	_
+17	ye	ye	PRON	PRP	_	20	nsubj:pass	_	_
+18	shall	shall	AUX	MD	_	20	aux	_	_
+19	be	be	AUX	VB	_	20	aux:pass	_	_
+20	saved	save	VERB	VBN	_	9	ccomp	_	_
+21	;	;	PUNCT	;	_	9	punct	_	_
+22	yea	yea	INTJ	UH	_	9	discourse	_	_
+23	,	,	PUNCT	,	_	9	punct	_	_
+24	if	if	SCONJ	IN	_	26	mark	_	_
+25	ye	ye	PRON	PRP	_	26	nsubj	_	_
+26	keep	keep	VERB	VBP	_	20	advcl	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	commandments	commandment	NOUN	NNS	_	26	obj	_	_
+29	which	which	PRON	WDT	_	32	obj	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	Lord	Lord	PROPN	NNP	_	32	nsubj	_	_
+32	delivered	deliver	VERB	VBD	_	28	acl:relcl	_	_
+33	unto	unto	ADP	IN	_	34	case	_	_
+34	Moses	Moses	PROPN	NNP	_	32	obl	_	_
+35	in	in	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	mount	mount	NOUN	NN	_	32	obl	_	_
+38	of	of	ADP	IN	_	39	case	_	_
+39	Sinai	Sinai	PROPN	NNP	_	37	nmod	_	_
+40	,	,	PUNCT	,	_	41	punct	_	_
+41	saying	say	VERB	VBG	_	32	advcl	_	_
+42	:	:	PUNCT	:	_	41	punct	_	_
+43	I	I	PRON	PRP	_	44	nsubj	_	_
+44	am	be	AUX	VBP	_	41	ccomp	_	_
+45	the	the	DET	DT	_	46	det	_	_
+46	Lord	Lord	PROPN	NNP	_	44	obj	_	_
+47	thy	thou	PRON	PRP$	_	48	nmod:poss	_	_
+48	God	God	PROPN	NNP	_	46	appos	_	_
+49	,	,	PUNCT	,	_	46	punct	_	_
+50	who	who	PRON	WP	_	52	nsubj	_	_
+51	hath	have	AUX	VBZ	_	52	aux	_	_
+52	brought	bring	VERB	VBN	_	46	acl:relcl	_	_
+53	thee	thou	PRON	PRP	_	52	obj	_	_
+54	out	out	ADV	RB	_	52	advmod	_	_
+55	of	of	ADP	IN	_	57	case	_	_
+56	the	the	DET	DT	_	57	det	_	_
+57	land	land	NOUN	NN	_	54	nmod	_	_
+58	of	of	ADP	IN	_	59	case	_	_
+59	Egypt	Egypt	PROPN	NNP	_	57	nmod	_	_
+60	,	,	PUNCT	,	_	64	punct	_	_
+61	out	out	ADV	RB	_	64	advmod	_	_
+62	of	of	ADP	IN	_	64	case	_	_
+63	the	the	DET	DT	_	64	det	_	_
+64	house	house	NOUN	NN	_	54	conj	_	_
+65	of	of	ADP	IN	_	66	case	_	_
+66	bondage	bondage	NOUN	NN	_	64	nmod	_	_
+67	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Thou shalt have no other God before me.
+# sent_id = 371
+1	Thou	thou	PRON	PRP	_	3	nsubj	_	_
+2	shalt	shall	AUX	MD	_	3	aux	_	_
+3	have	have	VERB	VB	_	0	root	_	_
+4	no	no	DET	DT	_	6	det	_	_
+5	other	other	ADJ	JJ	_	6	amod	_	_
+6	God	God	PROPN	NNP	_	3	obj	_	_
+7	before	before	ADP	IN	_	8	case	_	_
+8	me	I	PRON	PRP	_	3	obl	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Thou shalt not make unto thee any graven image, or any likeness of any thing in heaven above, or things which are in the earth beneath.
+# sent_id = 372
+1	Thou	thou	PRON	PRP	_	4	nsubj	_	_
+2	shalt	shall	AUX	MD	_	4	aux	_	_
+3	not	not	PART	RB	_	4	advmod	_	_
+4	make	make	VERB	VB	_	0	root	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	thee	thou	PRON	PRP	_	4	obl	_	_
+7	any	any	DET	DT	_	9	det	_	_
+8	graven	graven	ADJ	JJ	_	9	amod	_	_
+9	image	image	NOUN	NN	_	4	obj	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	or	or	CCONJ	CC	_	13	cc	_	_
+12	any	any	DET	DT	_	13	det	_	_
+13	likeness	likeness	NOUN	NN	_	9	conj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	any	any	DET	DT	_	16	det	_	_
+16	thing	thing	NOUN	NN	_	13	nmod	_	_
+17	in	in	ADP	IN	_	18	case	_	_
+18	heaven	heaven	NOUN	NN	_	16	nmod	_	_
+19	above	above	ADV	RB	_	18	advmod	_	_
+20	,	,	PUNCT	,	_	13	punct	_	_
+21	or	or	CCONJ	CC	_	22	cc	_	_
+22	things	thing	NOUN	NNS	_	13	conj	_	_
+23	which	which	PRON	WDT	_	24	nsubj	_	_
+24	are	be	VERB	VBP	_	22	acl:relcl	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	earth	earth	NOUN	NN	_	24	obl	_	_
+28	beneath	beneath	ADV	RB	_	24	advmod	_	_
+29	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Now Abinadi said unto them, Have ye done all this?
+# sent_id = 373
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	Abinadi	Abinadi	PROPN	NNP	_	3	nsubj	_	_
+3	said	say	VERB	VBD	_	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	them	they	PRON	PRP	_	3	obl	_	_
+6	,	,	PUNCT	,	_	3	punct	_	_
+7	Have	have	AUX	VBP	_	9	aux	_	_
+8	ye	ye	PRON	PRP	_	9	nsubj	_	_
+9	done	do	VERB	VBN	_	3	ccomp	_	_
+10	all	all	DET	PDT	_	11	det:predet	_	_
+11	this	this	PRON	DT	_	9	obj	_	_
+12	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = I say unto you, Nay, ye have not.
+# sent_id = 374
+1	I	I	PRON	PRP	_	2	nsubj	_	_
+2	say	say	VERB	VBP	_	0	root	_	_
+3	unto	unto	ADP	IN	_	4	case	_	_
+4	you	you	PRON	PRP	_	2	obl	_	_
+5	,	,	PUNCT	,	_	2	punct	_	_
+6	Nay	nay	INTJ	UH	_	2	discourse	_	_
+7	,	,	PUNCT	,	_	2	punct	_	_
+8	ye	ye	PRON	PRP	_	9	nsubj	_	_
+9	have	have	VERB	VBP	_	2	parataxis	_	_
+10	not	not	PART	RB	_	9	advmod	_	_
+11	.	.	PUNCT	.	_	2	punct	_	_
+

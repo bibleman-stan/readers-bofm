@@ -1,0 +1,327 @@
+# sent_id = 0
+# text = And now I, Moroni, proceed to give an account of those ancient inhabitants who were destroyed by the hand of the Lord upon the face of this north country.
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	now	now	ADV	RB	_	7	advmod	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+4	,	,	PUNCT	,	_	5	punct	_	_
+5	Moroni	Moroni	PROPN	NNP	_	3	appos	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	proceed	proceed	VERB	VBP	_	0	root	_	_
+8	to	to	PART	TO	_	9	mark	_	_
+9	give	give	VERB	VB	_	7	xcomp	_	_
+10	an	a	DET	DT	_	11	det	_	_
+11	account	account	NOUN	NN	_	9	obj	_	_
+12	of	of	ADP	IN	_	15	case	_	_
+13	those	that	DET	DT	_	15	det	_	_
+14	ancient	ancient	ADJ	JJ	_	15	amod	_	_
+15	inhabitants	inhabitant	NOUN	NNS	_	11	nmod	_	_
+16	who	who	PRON	WP	_	18	nsubj:pass	_	_
+17	were	be	AUX	VBD	_	18	aux:pass	_	_
+18	destroyed	destroy	VERB	VBN	_	15	acl:relcl	_	_
+19	by	by	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	hand	hand	NOUN	NN	_	18	obl:agent	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	Lord	Lord	PROPN	NNP	_	21	nmod	_	_
+25	upon	upon	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	face	face	NOUN	NN	_	18	obl	_	_
+28	of	of	ADP	IN	_	31	case	_	_
+29	this	this	DET	DT	_	31	det	_	_
+30	north	north	ADJ	JJ	_	31	amod	_	_
+31	country	country	NOUN	NN	_	27	nmod	_	_
+32	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 1
+# text = And I take mine account from the twenty and four plates which were found by the people of Limhi, which is called the Book of Ether.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	take	take	VERB	VBP	_	0	root	_	_
+4	mine	I	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	5	det	_	_
+5	account	account	NOUN	NN	_	3	obj	_	_
+6	from	from	ADP	IN	_	11	case	_	_
+7	the	the	DET	DT	_	11	det	_	_
+8	twenty	twenty	NUM	CD	_	10	compound	_	_
+9	and	and	CCONJ	CC	_	10	cc	_	_
+10	four	four	NUM	CD	_	8	conj	_	_
+11	plates	plate	NOUN	NNS	_	5	nmod	_	_
+12	which	which	PRON	WDT	_	14	nsubj:pass	_	_
+13	were	be	AUX	VBD	_	14	aux:pass	_	_
+14	found	find	VERB	VBN	_	11	acl:relcl	_	_
+15	by	by	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	people	people	NOUN	NN	_	14	obl:agent	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	Limhi	Limhi	PROPN	NNP	_	17	nmod	_	_
+20	,	,	PUNCT	,	_	23	punct	_	_
+21	which	which	PRON	WDT	_	23	nsubj:pass	_	_
+22	is	be	AUX	VBZ	_	23	aux:pass	_	_
+23	called	call	VERB	VBN	_	11	acl:relcl	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	Book	Book	PROPN	NNP	_	23	xcomp	_	_
+26	of	of	ADP	IN	_	27	case	_	_
+27	Ether	Ether	PROPN	NNP	_	25	nmod	_	_
+28	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 2
+# text = And as I suppose that the first part of this record, which speaks concerning the creation of the world, and also of Adam, and an account from that time even to the great tower, and whatsoever things transpired among the children of men until that time, is had among the Jews--
+# llm_note = Long complex sentence; "is had" = passive of "have" (exists/is found); "as I suppose that" is an embedded epistemic complement functioning as a parenthetical adverbial frame; the main clause is "the first part ... is had among the Jews"; "had" is the passive main verb
+1	And	and	CCONJ	CC	_	53	cc	_	_
+2	as	as	SCONJ	IN	_	4	mark	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	suppose	suppose	VERB	VBP	_	53	advcl	_	_
+5	that	that	SCONJ	IN	_	53	mark	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	first	first	ADJ	JJ	_	8	amod	_	_
+8	part	part	NOUN	NN	_	53	nsubj:pass	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	this	this	DET	DT	_	11	det	_	_
+11	record	record	NOUN	NN	_	8	nmod	_	_
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	which	which	PRON	WDT	_	14	nsubj	_	_
+14	speaks	speak	VERB	VBZ	_	11	acl:relcl	_	_
+15	concerning	concerning	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	creation	creation	NOUN	NN	_	14	obl	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	world	world	NOUN	NN	_	17	nmod	_	_
+21	,	,	PUNCT	,	_	25	punct	_	_
+22	and	and	CCONJ	CC	_	25	cc	_	_
+23	also	also	ADV	RB	_	25	advmod	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	Adam	Adam	PROPN	NNP	_	17	conj	_	_
+26	,	,	PUNCT	,	_	29	punct	_	_
+27	and	and	CCONJ	CC	_	29	cc	_	_
+28	an	a	DET	DT	_	29	det	_	_
+29	account	account	NOUN	NN	_	17	conj	_	_
+30	from	from	ADP	IN	_	32	case	_	_
+31	that	that	DET	DT	_	32	det	_	_
+32	time	time	NOUN	NN	_	29	nmod	_	_
+33	even	even	ADV	RB	_	34	advmod	_	_
+34	to	to	ADP	IN	_	37	case	_	_
+35	the	the	DET	DT	_	37	det	_	_
+36	great	great	ADJ	JJ	_	37	amod	_	_
+37	tower	tower	NOUN	NN	_	29	nmod	_	_
+38	,	,	PUNCT	,	_	41	punct	_	_
+39	and	and	CCONJ	CC	_	41	cc	_	_
+40	whatsoever	whatsoever	DET	WDT	_	41	det	_	_
+41	things	thing	NOUN	NNS	_	29	conj	_	_
+42	transpired	transpire	VERB	VBD	_	41	acl:relcl	_	_
+43	among	among	ADP	IN	_	45	case	_	_
+44	the	the	DET	DT	_	45	det	_	_
+45	children	child	NOUN	NNS	_	42	obl	_	_
+46	of	of	ADP	IN	_	47	case	_	_
+47	men	man	NOUN	NNS	_	45	nmod	_	_
+48	until	until	ADP	IN	_	50	case	_	_
+49	that	that	DET	DT	_	50	det	_	_
+50	time	time	NOUN	NN	_	42	obl	_	_
+51	,	,	PUNCT	,	_	53	punct	_	_
+52	is	be	AUX	VBZ	_	53	aux:pass	_	_
+53	had	have	VERB	VBN	_	0	root	_	_
+54	among	among	ADP	IN	_	56	case	_	_
+55	the	the	DET	DT	_	56	det	_	_
+56	Jews	Jew	PROPN	NNPS	_	53	obl	_	_
+57	--	--	PUNCT	:	_	53	punct	_	_
+
+# sent_id = 3
+# text = Therefore I do not write those things which transpired from the days of Adam until that time; but they are had upon the plates; and whoso findeth them, the same will have power that he may get the full account.
+# llm_note = Multi-clause sentence with semicolons; "are had" = passive "are found/exist"; "whoso findeth" = generic subject relative; "the same" = resumptive pronoun for "whoso"
+1	Therefore	therefore	ADV	RB	_	5	advmod	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	5	nsubj	_	_
+3	do	do	AUX	VBP	_	5	aux	_	_
+4	not	not	PART	RB	_	5	advmod	_	_
+5	write	write	VERB	VB	_	0	root	_	_
+6	those	that	DET	DT	_	7	det	_	_
+7	things	thing	NOUN	NNS	_	5	obj	_	_
+8	which	which	PRON	WDT	_	9	nsubj	_	_
+9	transpired	transpire	VERB	VBD	_	7	acl:relcl	_	_
+10	from	from	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	days	day	NOUN	NNS	_	9	obl	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	Adam	Adam	PROPN	NNP	_	12	nmod	_	_
+15	until	until	ADP	IN	_	17	case	_	_
+16	that	that	DET	DT	_	17	det	_	_
+17	time	time	NOUN	NN	_	9	obl	_	_
+18	;	;	PUNCT	:	_	5	punct	_	_
+19	but	but	CCONJ	CC	_	22	cc	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	22	nsubj:pass	_	_
+21	are	be	AUX	VBP	_	22	aux:pass	_	_
+22	had	have	VERB	VBN	_	5	conj	_	_
+23	upon	upon	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	plates	plate	NOUN	NNS	_	22	obl	_	_
+26	;	;	PUNCT	:	_	5	punct	_	_
+27	and	and	CCONJ	CC	_	35	cc	_	_
+28	whoso	whoso	PRON	WP	_	29	nsubj	_	_
+29	findeth	find	VERB	VBZ	_	35	advcl	_	_
+30	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	29	obj	_	_
+31	,	,	PUNCT	,	_	35	punct	_	_
+32	the	the	DET	DT	_	33	det	_	_
+33	same	same	PRON	DT	_	35	nsubj	_	_
+34	will	will	AUX	MD	_	35	aux	_	_
+35	have	have	VERB	VB	_	5	conj	_	_
+36	power	power	NOUN	NN	_	35	obj	_	_
+37	that	that	SCONJ	IN	_	40	mark	_	_
+38	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	40	nsubj	_	_
+39	may	may	AUX	MD	_	40	aux	_	_
+40	get	get	VERB	VB	_	36	acl	_	_
+41	the	the	DET	DT	_	43	det	_	_
+42	full	full	ADJ	JJ	_	43	amod	_	_
+43	account	account	NOUN	NN	_	40	obj	_	_
+44	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 4
+# text = But behold, I give not the full account, but a part of the account I give, from the tower down until they were destroyed.
+# llm_note = "behold" is INTJ discourse; "I give" (token 18) is topicalized object clause — "a part of the account I give" with "I give" as relative clause on "account"; "down" is particle/adverb modifying "from the tower"
+1	But	but	CCONJ	CC	_	5	cc	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	5	nsubj	_	_
+5	give	give	VERB	VBP	_	0	root	_	_
+6	not	not	PART	RB	_	5	advmod	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	full	full	ADJ	JJ	_	9	amod	_	_
+9	account	account	NOUN	NN	_	5	obj	_	_
+10	,	,	PUNCT	,	_	13	punct	_	_
+11	but	but	CCONJ	CC	_	13	cc	_	_
+12	a	a	DET	DT	_	13	det	_	_
+13	part	part	NOUN	NN	_	9	conj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	account	account	NOUN	NN	_	13	nmod	_	_
+17	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	18	nsubj	_	_
+18	give	give	VERB	VBP	_	16	acl:relcl	_	_
+19	,	,	PUNCT	,	_	5	punct	_	_
+20	from	from	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	tower	tower	NOUN	NN	_	5	obl	_	_
+23	down	down	ADV	RB	_	22	advmod	_	_
+24	until	until	SCONJ	IN	_	27	mark	_	_
+25	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	27	nsubj:pass	_	_
+26	were	be	AUX	VBD	_	27	aux:pass	_	_
+27	destroyed	destroy	VERB	VBN	_	5	advcl	_	_
+28	.	.	PUNCT	.	_	5	punct	_	_
+
+# sent_id = 5
+# text = And on this wise do I give the account.
+# llm_note = "on this wise" = prepositional phrase meaning "in this manner"; "do" is AUX for emphasis; inverted subject "I"
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	on	on	ADP	IN	_	4	case	_	_
+3	this	this	DET	DT	_	4	det	_	_
+4	wise	wise	NOUN	NN	_	7	obl	_	_
+5	do	do	AUX	VBP	_	7	aux	_	_
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+7	give	give	VERB	VB	_	0	root	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	account	account	NOUN	NN	_	7	obj	_	_
+10	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 6
+# text = He that wrote this record was Ether, and he was a descendant of Coriantor.
+1	He	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	6	nsubj	_	_
+2	that	that	PRON	WDT	_	3	nsubj	_	_
+3	wrote	write	VERB	VBD	_	1	acl:relcl	_	_
+4	this	this	DET	DT	_	5	det	_	_
+5	record	record	NOUN	NN	_	3	obj	_	_
+6	was	be	VERB	VBD	_	0	root	_	_
+7	Ether	Ether	PROPN	NNP	_	6	xcomp	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	11	nsubj	_	_
+11	was	be	VERB	VBD	_	6	conj	_	_
+12	a	a	DET	DT	_	13	det	_	_
+13	descendant	descendant	NOUN	NN	_	11	xcomp	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	Coriantor	Coriantor	PROPN	NNP	_	13	nmod	_	_
+16	.	.	PUNCT	.	_	6	punct	_	_
+
+# sent_id = 7
+# text = Coriantor was the son of Moron.
+1	Coriantor	Coriantor	PROPN	NNP	_	2	nsubj	_	_
+2	was	be	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	son	son	NOUN	NN	_	2	xcomp	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	Moron	Moron	PROPN	NNP	_	4	nmod	_	_
+7	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 8
+# text = And Moron was the son of Ethem.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Moron	Moron	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Ethem	Ethem	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 9
+# text = And Ethem was the son of Ahah.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Ethem	Ethem	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Ahah	Ahah	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 10
+# text = And Ahah was the son of Seth.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Ahah	Ahah	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Seth	Seth	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 11
+# text = And Seth was the son of Shiblon.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Seth	Seth	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Shiblon	Shiblon	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 12
+# text = And Shiblon was the son of Com.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Shiblon	Shiblon	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Com	Com	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 13
+# text = And Com was the son of Coriantum.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Com	Com	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Coriantum	Coriantum	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 14
+# text = And Coriantum was the son of Amnigaddah.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Coriantum	Coriantum	PROPN	NNP	_	3	nsubj	_	_
+3	was	be	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	son	son	NOUN	NN	_	3	xcomp	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Amnigaddah	Amnigaddah	PROPN	NNP	_	5	nmod	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+

@@ -1,0 +1,967 @@
+# text = And it came to pass that I beckoned unto them; and I also did say unto them with a loud voice that they should come unto me, and partake of the fruit, which was desirable above all other fruit.
+# sent_id = 225
+# llm_note = AICTP. Two coordinate clauses: "I beckoned"(8) and "I also did say"(16=emphatic did+VB). "that they should come...and partake" = ccomp of "say"; "partake"=conj of "come". "which was desirable" = relative clause on "fruit"(34).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	beckoned	beckon	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	8	obl	_	_
+11	;	;	PUNCT	:	_	16	punct	_	_
+12	and	and	CCONJ	CC	_	16	cc	_	_
+13	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_
+14	also	also	ADV	RB	_	16	advmod	_	_
+15	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	aux	_	_
+16	say	say	VERB	VB	VerbForm=Inf	8	conj	_	_
+17	unto	unto	ADP	IN	_	18	case	_	_
+18	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	16	obl	_	_
+19	with	with	ADP	IN	_	22	case	_	_
+20	a	a	DET	DT	Definite=Ind|PronType=Art	22	det	_	_
+21	loud	loud	ADJ	JJ	Degree=Pos	22	amod	_	_
+22	voice	voice	NOUN	NN	Number=Sing	16	obl	_	_
+23	that	that	SCONJ	IN	_	26	mark	_	_
+24	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	26	nsubj	_	_
+25	should	should	AUX	MD	VerbForm=Fin	26	aux	_	_
+26	come	come	VERB	VB	VerbForm=Inf	16	ccomp	_	_
+27	unto	unto	ADP	IN	_	28	case	_	_
+28	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	26	obl	_	_
+29	,	,	PUNCT	,	_	31	punct	_	_
+30	and	and	CCONJ	CC	_	31	cc	_	_
+31	partake	partake	VERB	VB	VerbForm=Inf	26	conj	_	_
+32	of	of	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	fruit	fruit	NOUN	NN	Number=Sing	31	obl	_	_
+35	,	,	PUNCT	,	_	34	punct	_	_
+36	which	which	PRON	WDT	PronType=Rel	38	nsubj	_	_
+37	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	38	cop	_	_
+38	desirable	desirable	ADJ	JJ	Degree=Pos	34	acl:relcl	_	_
+39	above	above	ADP	IN	_	42	case	_	_
+40	all	all	DET	PDT	_	42	det:predet	_	_
+41	other	other	ADJ	JJ	Degree=Pos	42	amod	_	_
+42	fruit	fruit	NOUN	NN	Number=Sing	38	obl	_	_
+43	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that they did come unto me and partake of the fruit also.
+# sent_id = 226
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
+8	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	aux	_	_
+9	come	come	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+10	unto	unto	ADP	IN	_	11	case	_	_
+11	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	9	obl	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	partake	partake	VERB	VB	VerbForm=Inf	9	conj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	fruit	fruit	NOUN	NN	Number=Sing	13	obl	_	_
+17	also	also	ADV	RB	_	13	advmod	_	_
+18	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that I was desirous that Laman and Lemuel should come and partake of the fruit also; wherefore, I cast mine eyes towards the head of the river, that perhaps I might see them.
+# sent_id = 227
+# llm_note = AICTP. "was desirous that" = adj pred + csubj complement. "wherefore, I cast mine eyes" = result coord clause; "mine"=archaic first-person possessive PRP$.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+8	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	cop	_	_
+9	desirous	desirous	ADJ	JJ	Degree=Pos	5	ccomp	_	_
+10	that	that	SCONJ	IN	_	15	mark	_	_
+11	Laman	Laman	PROPN	NNP	Number=Sing	15	nsubj	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	Lemuel	Lemuel	PROPN	NNP	Number=Sing	11	conj	_	_
+14	should	should	AUX	MD	VerbForm=Fin	15	aux	_	_
+15	come	come	VERB	VB	VerbForm=Inf	9	csubj	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	partake	partake	VERB	VB	VerbForm=Inf	15	conj	_	_
+18	of	of	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	fruit	fruit	NOUN	NN	Number=Sing	17	obl	_	_
+21	also	also	ADV	RB	_	17	advmod	_	_
+22	;	;	PUNCT	:	_	26	punct	_	_
+23	wherefore	wherefore	ADV	WRB	_	26	advmod	_	_
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	26	nsubj	_	_
+26	cast	cast	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	conj	_	_
+27	mine	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	28	nmod:poss	_	_
+28	eyes	eye	NOUN	NNS	Number=Plur	26	obj	_	_
+29	towards	towards	ADP	IN	_	32	case	_	_
+30	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	_
+31	head	head	NOUN	NN	Number=Sing	26	obl	_	_
+32	of	of	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+34	river	river	NOUN	NN	Number=Sing	31	nmod	_	_
+35	,	,	PUNCT	,	_	40	punct	_	_
+36	that	that	SCONJ	IN	_	40	mark	_	_
+37	perhaps	perhaps	ADV	RB	_	40	advmod	_	_
+38	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	40	nsubj	_	_
+39	might	might	AUX	MD	VerbForm=Fin	40	aux	_	_
+40	see	see	VERB	VB	VerbForm=Inf	26	advcl	_	_
+41	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	40	obj	_	_
+42	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that I saw them, but they would not come unto me and partake of the fruit.
+# sent_id = 228
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	8	obj	_	_
+10	,	,	PUNCT	,	_	15	punct	_	_
+11	but	but	CCONJ	CC	_	15	cc	_	_
+12	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_
+13	would	would	AUX	MD	VerbForm=Fin	15	aux	_	_
+14	not	not	PART	RB	Polarity=Neg	15	advmod	_	_
+15	come	come	VERB	VB	VerbForm=Inf	8	conj	_	_
+16	unto	unto	ADP	IN	_	17	case	_	_
+17	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	15	obl	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	partake	partake	VERB	VB	VerbForm=Inf	15	conj	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	fruit	fruit	NOUN	NN	Number=Sing	19	obl	_	_
+23	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And I beheld a rod of iron, and it extended along the bank of the river, and led to the tree by which I stood.
+# sent_id = 229
+# llm_note = Three coordinate clauses: "I beheld a rod"(3), "it extended along the bank"(11), "led to the tree"(20 — shares subject "it"). Relative clause "by which I stood" on "tree"(23).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	beheld	behold	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
+5	rod	rod	NOUN	NN	Number=Sing	3	obj	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	iron	iron	NOUN	NN	Number=Sing	5	nmod	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	extended	extend	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	conj	_	_
+12	along	along	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	bank	bank	NOUN	NN	Number=Sing	11	obl	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	river	river	NOUN	NN	Number=Sing	14	nmod	_	_
+18	,	,	PUNCT	,	_	20	punct	_	_
+19	and	and	CCONJ	CC	_	20	cc	_	_
+20	led	lead	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	conj	_	_
+21	to	to	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	tree	tree	NOUN	NN	Number=Sing	20	obl	_	_
+24	by	by	ADP	IN	_	25	case	_	_
+25	which	which	PRON	WDT	PronType=Rel	27	obl	_	_
+26	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	27	nsubj	_	_
+27	stood	stand	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	acl:relcl	_	_
+28	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And I also beheld a strait and narrow path, which came along by the rod of iron, even to the tree by which I stood; and it also led by the head of the fountain, unto a large and spacious field, as if it had been a world.
+# sent_id = 230
+# llm_note = Two main clauses: "I also beheld a...path"(4) and "it also led"(32). Relative clause "which came along by the rod of iron, even to the tree by which I stood" on "path"(9). "as if it had been a world" = comparative advcl.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	also	also	ADV	RB	_	4	advmod	_	_
+4	beheld	behold	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	a	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
+6	strait	strait	ADJ	JJ	Degree=Pos	9	amod	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	narrow	narrow	ADJ	JJ	Degree=Pos	6	conj	_	_
+9	path	path	NOUN	NN	Number=Sing	4	obj	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	which	which	PRON	WDT	PronType=Rel	12	nsubj	_	_
+12	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	acl:relcl	_	_
+13	along	along	ADV	RB	_	12	advmod	_	_
+14	by	by	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	rod	rod	NOUN	NN	Number=Sing	12	obl	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	iron	iron	NOUN	NN	Number=Sing	16	nmod	_	_
+19	,	,	PUNCT	,	_	12	punct	_	_
+20	even	even	ADV	RB	_	12	advmod	_	_
+21	to	to	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	tree	tree	NOUN	NN	Number=Sing	12	obl	_	_
+24	by	by	ADP	IN	_	25	case	_	_
+25	which	which	PRON	WDT	PronType=Rel	27	obl	_	_
+26	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	27	nsubj	_	_
+27	stood	stand	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	23	acl:relcl	_	_
+28	;	;	PUNCT	:	_	32	punct	_	_
+29	and	and	CCONJ	CC	_	32	cc	_	_
+30	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	32	nsubj	_	_
+31	also	also	ADV	RB	_	32	advmod	_	_
+32	led	lead	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	conj	_	_
+33	by	by	ADP	IN	_	36	case	_	_
+34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
+35	head	head	NOUN	NN	Number=Sing	32	obl	_	_
+36	of	of	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	Definite=Def|PronType=Art	38	det	_	_
+38	fountain	fountain	NOUN	NN	Number=Sing	35	nmod	_	_
+39	,	,	PUNCT	,	_	32	punct	_	_
+40	unto	unto	ADP	IN	_	45	case	_	_
+41	a	a	DET	DT	Definite=Ind|PronType=Art	45	det	_	_
+42	large	large	ADJ	JJ	Degree=Pos	45	amod	_	_
+43	and	and	CCONJ	CC	_	44	cc	_	_
+44	spacious	spacious	ADJ	JJ	Degree=Pos	42	conj	_	_
+45	field	field	NOUN	NN	Number=Sing	32	obl	_	_
+46	,	,	PUNCT	,	_	32	punct	_	_
+47	as	as	SCONJ	IN	_	51	mark	_	_
+48	if	if	SCONJ	IN	_	51	mark	_	_
+49	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	51	nsubj	_	_
+50	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	51	aux	_	_
+51	been	be	AUX	VBN	Tense=Past|VerbForm=Part	32	advcl	_	_
+52	a	a	DET	DT	Definite=Ind|PronType=Art	53	det	_	_
+53	world	world	NOUN	NN	Number=Sing	51	xcomp	_	_
+54	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And I saw numberless concourses of people, many of whom were pressing forward, that they might obtain the path which led unto the tree by which I stood.
+# sent_id = 231
+# llm_note = "numberless concourses of people" = complex NP; "many of whom were pressing forward" = relative clause (partitive) on "people". "that they might obtain the path" = purpose advcl on "pressing forward". "which led unto the tree" = relcl on "path". "by which I stood" = relcl on "tree".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	numberless	numberless	ADJ	JJ	Degree=Pos	5	amod	_	_
+5	concourses	concourse	NOUN	NNS	Number=Plur	3	obj	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	people	people	NOUN	NNS	Number=Plur	5	nmod	_	_
+8	,	,	PUNCT	,	_	5	punct	_	_
+9	many	many	ADJ	JJ	Degree=Pos	13	nsubj	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	whom	who	PRON	WP	Case=Acc|PronType=Rel	9	nmod	_	_
+12	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	13	aux	_	_
+13	pressing	press	VERB	VBG	VerbForm=Part	7	acl:relcl	_	_
+14	forward	forward	ADV	RB	_	13	advmod	_	_
+15	,	,	PUNCT	,	_	19	punct	_	_
+16	that	that	SCONJ	IN	_	19	mark	_	_
+17	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	19	nsubj	_	_
+18	might	might	AUX	MD	VerbForm=Fin	19	aux	_	_
+19	obtain	obtain	VERB	VB	VerbForm=Inf	13	advcl	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	path	path	NOUN	NN	Number=Sing	19	obj	_	_
+22	which	which	PRON	WDT	PronType=Rel	23	nsubj	_	_
+23	led	lead	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	21	acl:relcl	_	_
+24	unto	unto	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	tree	tree	NOUN	NN	Number=Sing	23	obl	_	_
+27	by	by	ADP	IN	_	28	case	_	_
+28	which	which	PRON	WDT	PronType=Rel	30	obl	_	_
+29	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	30	nsubj	_	_
+30	stood	stand	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	26	acl:relcl	_	_
+31	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that they did come forth, and commence in the path which led to the tree.
+# sent_id = 232
+# llm_note = AICTP. Two conjoined emphatic did+VB clauses: "did come forth"(9) and "commence in the path"(13 — shares did AUX, bare-VB).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
+8	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	aux	_	_
+9	come	come	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+10	forth	forth	ADV	RB	_	9	advmod	_	_
+11	,	,	PUNCT	,	_	13	punct	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	commence	commence	VERB	VB	VerbForm=Inf	9	conj	_	_
+14	in	in	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	path	path	NOUN	NN	Number=Sing	13	obl	_	_
+17	which	which	PRON	WDT	PronType=Rel	18	nsubj	_	_
+18	led	lead	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	16	acl:relcl	_	_
+19	to	to	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	tree	tree	NOUN	NN	Number=Sing	18	obl	_	_
+22	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that there arose a mist of darkness; yea, even an exceedingly great mist of darkness, insomuch that they who had commenced in the path did lose their way, that they wandered off and were lost.
+# sent_id = 233
+# llm_note = AICTP. Existential "there arose a mist" (there=expl). "yea, even an exceedingly great mist of darkness" = elaborative apposition to "mist"(10). "insomuch that...did lose their way" = result advcl. "they who had commenced in the path" = subject with relative clause. "that they wandered off and were lost" = result clause of "lose their way".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	there	there	PRON	EX	_	8	expl	_	_
+8	arose	arise	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	a	a	DET	DT	Definite=Ind|PronType=Art	10	det	_	_
+10	mist	mist	NOUN	NN	Number=Sing	8	nsubj	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	darkness	darkness	NOUN	NN	Number=Sing	10	nmod	_	_
+13	;	;	PUNCT	:	_	10	punct	_	_
+14	yea	yea	INTJ	UH	_	20	discourse	_	_
+15	,	,	PUNCT	,	_	14	punct	_	_
+16	even	even	ADV	RB	_	20	advmod	_	_
+17	an	a	DET	DT	Definite=Ind|PronType=Art	20	det	_	_
+18	exceedingly	exceedingly	ADV	RB	_	19	advmod	_	_
+19	great	great	ADJ	JJ	Degree=Pos	20	amod	_	_
+20	mist	mist	NOUN	NN	Number=Sing	10	appos	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	darkness	darkness	NOUN	NN	Number=Sing	20	nmod	_	_
+23	,	,	PUNCT	,	_	34	punct	_	_
+24	insomuch	insomuch	ADV	RB	_	34	advmod	_	_
+25	that	that	SCONJ	IN	_	34	mark	_	_
+26	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	34	nsubj	_	_
+27	who	who	PRON	WP	PronType=Rel	29	nsubj	_	_
+28	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	29	aux	_	_
+29	commenced	commence	VERB	VBN	Tense=Past|VerbForm=Part	26	acl:relcl	_	_
+30	in	in	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	path	path	NOUN	NN	Number=Sing	29	obl	_	_
+33	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	34	aux	_	_
+34	lose	lose	VERB	VB	VerbForm=Inf	8	advcl	_	_
+35	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	36	nmod:poss	_	_
+36	way	way	NOUN	NN	Number=Sing	34	obj	_	_
+37	,	,	PUNCT	,	_	40	punct	_	_
+38	that	that	SCONJ	IN	_	40	mark	_	_
+39	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	40	nsubj	_	_
+40	wandered	wander	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	34	advcl	_	_
+41	off	off	ADP	RP	_	40	compound:prt	_	_
+42	and	and	CCONJ	CC	_	44	cc	_	_
+43	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	44	aux:pass	_	_
+44	lost	lose	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	40	conj	_	_
+45	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that I beheld others pressing forward, and they came forth and caught hold of the end of the rod of iron; and they did press forward through the mist of darkness, clinging to the rod of iron, even until they did come forth and partake of the fruit of the tree.
+# sent_id = 234
+# llm_note = AICTP. Multiple clauses: "I beheld others pressing forward"(8), "they came forth and caught hold"(15+18), "they did press forward...clinging"(32=emphatic, with adverbial participle "clinging"), "until they did come forth and partake"(51+54 = temporal advcl).
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	beheld	behold	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	others	other	PRON	NNS	Number=Plur	8	obj	_	_
+10	pressing	press	VERB	VBG	VerbForm=Part	9	xcomp	_	_
+11	forward	forward	ADV	RB	_	10	advmod	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_
+15	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	conj	_	_
+16	forth	forth	ADV	RB	_	15	advmod	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	caught	catch	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	15	conj	_	_
+19	hold	hold	NOUN	NN	Number=Sing	18	obj	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	_
+22	end	end	NOUN	NN	Number=Sing	19	nmod	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	rod	rod	NOUN	NN	Number=Sing	22	nmod	_	_
+26	of	of	ADP	IN	_	27	case	_	_
+27	iron	iron	NOUN	NN	Number=Sing	25	nmod	_	_
+28	;	;	PUNCT	:	_	32	punct	_	_
+29	and	and	CCONJ	CC	_	32	cc	_	_
+30	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	32	nsubj	_	_
+31	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	aux	_	_
+32	press	press	VERB	VB	VerbForm=Inf	8	conj	_	_
+33	forward	forward	ADV	RB	_	32	advmod	_	_
+34	through	through	ADP	IN	_	37	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	mist	mist	NOUN	NN	Number=Sing	32	obl	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	darkness	darkness	NOUN	NN	Number=Sing	36	nmod	_	_
+39	,	,	PUNCT	,	_	40	punct	_	_
+40	clinging	cling	VERB	VBG	VerbForm=Part	32	advcl	_	_
+41	to	to	ADP	IN	_	44	case	_	_
+42	the	the	DET	DT	Definite=Def|PronType=Art	43	det	_	_
+43	rod	rod	NOUN	NN	Number=Sing	40	obl	_	_
+44	of	of	ADP	IN	_	45	case	_	_
+45	iron	iron	NOUN	NN	Number=Sing	43	nmod	_	_
+46	,	,	PUNCT	,	_	32	punct	_	_
+47	even	even	ADV	RB	_	32	advmod	_	_
+48	until	until	SCONJ	IN	_	51	mark	_	_
+49	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	51	nsubj	_	_
+50	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	51	aux	_	_
+51	come	come	VERB	VB	VerbForm=Inf	32	advcl	_	_
+52	forth	forth	ADV	RB	_	51	advmod	_	_
+53	and	and	CCONJ	CC	_	54	cc	_	_
+54	partake	partake	VERB	VB	VerbForm=Inf	51	conj	_	_
+55	of	of	ADP	IN	_	57	case	_	_
+56	the	the	DET	DT	Definite=Def|PronType=Art	57	det	_	_
+57	fruit	fruit	NOUN	NN	Number=Sing	54	obl	_	_
+58	of	of	ADP	IN	_	60	case	_	_
+59	the	the	DET	DT	Definite=Def|PronType=Art	60	det	_	_
+60	tree	tree	NOUN	NN	Number=Sing	57	nmod	_	_
+61	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And after they had partaken of the fruit of the tree they did cast their eyes about as if they were ashamed.
+# sent_id = 235
+# llm_note = "after they had partaken" = temporal advcl. "did cast their eyes about" = emphatic did+VB. "as if they were ashamed" = comparative advcl.
+1	And	and	CCONJ	CC	_	14	cc	_	_
+2	after	after	SCONJ	IN	_	5	mark	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+4	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux	_	_
+5	partaken	partake	VERB	VBN	Tense=Past|VerbForm=Part	14	advcl	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	fruit	fruit	NOUN	NN	Number=Sing	5	obl	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
+11	tree	tree	NOUN	NN	Number=Sing	8	nmod	_	_
+12	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	14	nsubj	_	_
+13	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	14	aux	_	_
+14	cast	cast	VERB	VB	VerbForm=Inf	0	root	_	_
+15	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+16	eyes	eye	NOUN	NNS	Number=Plur	14	obj	_	_
+17	about	about	ADP	RP	_	14	compound:prt	_	_
+18	as	as	SCONJ	IN	_	22	mark	_	_
+19	if	if	SCONJ	IN	_	22	mark	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_
+21	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	cop	_	_
+22	ashamed	ashamed	ADJ	JJ	Degree=Pos	14	advcl	_	_
+23	.	.	PUNCT	.	_	14	punct	_	_
+
+# text = And I also cast my eyes round about, and beheld, on the other side of the river of water, a great and spacious building; and it stood as it were in the air, high above the earth.
+# sent_id = 236
+# llm_note = Two coordinate main clauses: "I also cast my eyes round about"(4) and "beheld...a great and spacious building"(11). "on the other side of the river of water" = PP obl of beheld. "it stood as it were in the air" = "as it were" = idiomatic advcl (lit. "as if it were"); "high above the earth" = degree PP.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	also	also	ADV	RB	_	4	advmod	_	_
+4	cast	cast	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	_
+6	eyes	eye	NOUN	NNS	Number=Plur	4	obj	_	_
+7	round	round	ADP	RP	_	4	compound:prt	_	_
+8	about	about	ADP	RP	_	4	compound:prt	_	_
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	beheld	behold	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	conj	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	on	on	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	other	other	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	side	side	NOUN	NN	Number=Sing	11	obl	_	_
+17	of	of	ADP	IN	_	20	case	_	_
+18	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	_
+19	river	river	NOUN	NN	Number=Sing	16	nmod	_	_
+20	of	of	ADP	IN	_	21	case	_	_
+21	water	water	NOUN	NN	Number=Sing	19	nmod	_	_
+22	,	,	PUNCT	,	_	11	punct	_	_
+23	a	a	DET	DT	Definite=Ind|PronType=Art	27	det	_	_
+24	great	great	ADJ	JJ	Degree=Pos	27	amod	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	spacious	spacious	ADJ	JJ	Degree=Pos	24	conj	_	_
+27	building	building	NOUN	NN	Number=Sing	11	obj	_	_
+28	;	;	PUNCT	:	_	31	punct	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	31	nsubj	_	_
+31	stood	stand	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	conj	_	_
+32	as	as	SCONJ	IN	_	35	mark	_	_
+33	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_
+34	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	35	cop	_	_
+35	in	in	ADP	IN	_	31	advcl	_	_
+36	the	the	DET	DT	Definite=Def|PronType=Art	37	det	_	_
+37	air	air	NOUN	NN	Number=Sing	35	obl	_	_
+38	,	,	PUNCT	,	_	31	punct	_	_
+39	high	high	ADV	RB	_	31	advmod	_	_
+40	above	above	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	earth	earth	NOUN	NN	Number=Sing	39	obl	_	_
+43	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it was filled with people, both old and young, both male and female; and their manner of dress was exceedingly fine; and they were in the attitude of mocking and pointing their fingers towards those who had come at and were partaking of the fruit.
+# sent_id = 237
+# llm_note = Three coordinate main clauses. "both old and young, both male and female" = NP elaborations on "people" (appositive list). "their manner of dress was exceedingly fine" = copular. "they were in the attitude of mocking and pointing" = copular PP; "mocking and pointing" = gerundial conj objs of "of". "who had come at and were partaking of the fruit" = relative clause on "those"; "come at" = VPC.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:pass	_	_
+3	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
+4	filled	fill	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	with	with	ADP	IN	_	6	case	_	_
+6	people	people	NOUN	NNS	Number=Plur	4	obl	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	both	both	CCONJ	CC	_	9	cc:preconj	_	_
+9	old	old	ADJ	JJ	Degree=Pos	6	amod	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	young	young	ADJ	JJ	Degree=Pos	9	conj	_	_
+12	,	,	PUNCT	,	_	13	punct	_	_
+13	both	both	CCONJ	CC	_	14	cc:preconj	_	_
+14	male	male	ADJ	JJ	Degree=Pos	6	amod	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	female	female	ADJ	JJ	Degree=Pos	14	conj	_	_
+17	;	;	PUNCT	:	_	22	punct	_	_
+18	and	and	CCONJ	CC	_	22	cc	_	_
+19	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
+20	manner	manner	NOUN	NN	Number=Sing	22	nsubj	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	dress	dress	NOUN	NN	Number=Sing	4	conj	_	_
+23	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	25	cop	_	_
+24	exceedingly	exceedingly	ADV	RB	_	25	advmod	_	_
+25	fine	fine	ADJ	JJ	Degree=Pos	22	xcomp	_	_
+26	;	;	PUNCT	:	_	29	punct	_	_
+27	and	and	CCONJ	CC	_	29	cc	_	_
+28	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	29	nsubj	_	_
+29	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	cop	_	_
+30	in	in	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	attitude	attitude	NOUN	NN	Number=Sing	4	conj	_	_
+33	of	of	ADP	IN	_	34	case	_	_
+34	mocking	mock	VERB	VBG	VerbForm=Ger	32	nmod	_	_
+35	and	and	CCONJ	CC	_	36	cc	_	_
+36	pointing	point	VERB	VBG	VerbForm=Ger	34	conj	_	_
+37	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	38	nmod:poss	_	_
+38	fingers	finger	NOUN	NNS	Number=Plur	36	obj	_	_
+39	towards	towards	ADP	IN	_	40	case	_	_
+40	those	those	PRON	DT	Number=Plur|PronType=Dem	34	obl	_	_
+41	who	who	PRON	WP	PronType=Rel	43	nsubj	_	_
+42	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	43	aux	_	_
+43	come	come	VERB	VBN	Tense=Past|VerbForm=Part	40	acl:relcl	_	_
+44	at	at	ADP	RP	_	43	compound:prt	_	_
+45	and	and	CCONJ	CC	_	47	cc	_	_
+46	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	47	aux	_	_
+47	partaking	partake	VERB	VBG	VerbForm=Part	43	conj	_	_
+48	of	of	ADP	IN	_	50	case	_	_
+49	the	the	DET	DT	Definite=Def|PronType=Art	50	det	_	_
+50	fruit	fruit	NOUN	NN	Number=Sing	47	obl	_	_
+51	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And after they had tasted of the fruit they were ashamed, because of those that were scoffing at them; and they fell away into forbidden paths and were lost.
+# sent_id = 238
+# llm_note = "after they had tasted" = temporal advcl. "were ashamed" = copular. "because of those that were scoffing" = causal PP; relative clause on "those". "fell away into forbidden paths and were lost" = two coord predicates.
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	after	after	SCONJ	IN	_	5	mark	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+4	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux	_	_
+5	tasted	taste	VERB	VBN	Tense=Past|VerbForm=Part	10	advcl	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	fruit	fruit	NOUN	NN	Number=Sing	5	obl	_	_
+9	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
+10	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	cop	_	_
+11	ashamed	ashamed	ADJ	JJ	Degree=Pos	0	root	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	because	because	ADP	IN	_	15	case	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	those	those	PRON	DT	Number=Plur|PronType=Dem	11	obl	_	_
+16	that	that	PRON	WDT	PronType=Rel	18	nsubj	_	_
+17	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	18	aux	_	_
+18	scoffing	scoff	VERB	VBG	VerbForm=Part	15	acl:relcl	_	_
+19	at	at	ADP	IN	_	20	case	_	_
+20	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	18	obl	_	_
+21	;	;	PUNCT	:	_	24	punct	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	24	nsubj	_	_
+24	fell	fall	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	conj	_	_
+25	away	away	ADP	RP	_	24	compound:prt	_	_
+26	into	into	ADP	IN	_	28	case	_	_
+27	forbidden	forbid	VERB	VBN	Tense=Past|VerbForm=Part	28	amod	_	_
+28	paths	path	NOUN	NNS	Number=Plur	24	obl	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	31	aux:pass	_	_
+31	lost	lose	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	24	conj	_	_
+32	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = And now I, Nephi, do not speak all the words of my father.
+# sent_id = 239
+# llm_note = Editorial parenthesis; Nephi=appos of I.
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	now	now	ADV	RB	_	9	advmod	_	_
+3	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+4	,	,	PUNCT	,	_	5	punct	_	_
+5	Nephi	Nephi	PROPN	NNP	Number=Sing	3	appos	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	do	do	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	9	aux	_	_
+8	not	not	PART	RB	Polarity=Neg	9	advmod	_	_
+9	speak	speak	VERB	VB	VerbForm=Inf	0	root	_	_
+10	all	all	DET	PDT	_	12	det:predet	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	words	word	NOUN	NNS	Number=Plur	9	obj	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	_
+15	father	father	NOUN	NN	Number=Sing	12	nmod	_	_
+16	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = But, to be short in writing, behold, he saw other multitudes pressing forward; and they came and caught hold of the end of the rod of iron; and they did press their way forward, continually holding fast to the rod of iron, until they came forth and fell down and partook of the fruit of the tree.
+# sent_id = 240
+# llm_note = "to be short in writing" = purpose infinitival advcl. "behold"=INTJ. Main clause: "he saw other multitudes pressing forward"(12). "they came and caught hold" = two coord VBD. "they did press their way forward" = emphatic, "their way" = cognate obj/idiom. "holding fast to the rod of iron" = adverbial participial. "until they came forth and fell down and partook" = temporal advcl with three coord VBD predicates.
+1	But	but	CCONJ	CC	_	12	cc	_	_
+2	,	,	PUNCT	,	_	12	punct	_	_
+3	to	to	PART	TO	_	5	mark	_	_
+4	be	be	AUX	VB	VerbForm=Inf	5	cop	_	_
+5	short	short	ADJ	JJ	Degree=Pos	12	advcl	_	_
+6	in	in	ADP	IN	_	7	case	_	_
+7	writing	writing	NOUN	NN	Number=Sing	5	obl	_	_
+8	,	,	PUNCT	,	_	12	punct	_	_
+9	behold	behold	INTJ	UH	_	12	discourse	_	_
+10	,	,	PUNCT	,	_	9	punct	_	_
+11	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+13	other	other	ADJ	JJ	Degree=Pos	14	amod	_	_
+14	multitudes	multitude	NOUN	NNS	Number=Plur	12	obj	_	_
+15	pressing	press	VERB	VBG	VerbForm=Part	14	xcomp	_	_
+16	forward	forward	ADV	RB	_	15	advmod	_	_
+17	;	;	PUNCT	:	_	20	punct	_	_
+18	and	and	CCONJ	CC	_	20	cc	_	_
+19	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	20	nsubj	_	_
+20	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	12	conj	_	_
+21	and	and	CCONJ	CC	_	22	cc	_	_
+22	caught	catch	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	20	conj	_	_
+23	hold	hold	NOUN	NN	Number=Sing	22	obj	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
+26	end	end	NOUN	NN	Number=Sing	23	nmod	_	_
+27	of	of	ADP	IN	_	29	case	_	_
+28	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
+29	rod	rod	NOUN	NN	Number=Sing	26	nmod	_	_
+30	of	of	ADP	IN	_	31	case	_	_
+31	iron	iron	NOUN	NN	Number=Sing	29	nmod	_	_
+32	;	;	PUNCT	:	_	36	punct	_	_
+33	and	and	CCONJ	CC	_	36	cc	_	_
+34	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	36	nsubj	_	_
+35	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	36	aux	_	_
+36	press	press	VERB	VB	VerbForm=Inf	12	conj	_	_
+37	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	38	nmod:poss	_	_
+38	way	way	NOUN	NN	Number=Sing	36	obj	_	_
+39	forward	forward	ADV	RB	_	36	advmod	_	_
+40	,	,	PUNCT	,	_	42	punct	_	_
+41	continually	continually	ADV	RB	_	42	advmod	_	_
+42	holding	hold	VERB	VBG	VerbForm=Part	36	advcl	_	_
+43	fast	fast	ADV	RB	_	42	advmod	_	_
+44	to	to	ADP	IN	_	47	case	_	_
+45	the	the	DET	DT	Definite=Def|PronType=Art	46	det	_	_
+46	rod	rod	NOUN	NN	Number=Sing	42	obl	_	_
+47	of	of	ADP	IN	_	48	case	_	_
+48	iron	iron	NOUN	NN	Number=Sing	46	nmod	_	_
+49	,	,	PUNCT	,	_	36	punct	_	_
+50	until	until	SCONJ	IN	_	52	mark	_	_
+51	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	52	nsubj	_	_
+52	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	36	advcl	_	_
+53	forth	forth	ADV	RB	_	52	advmod	_	_
+54	and	and	CCONJ	CC	_	55	cc	_	_
+55	fell	fall	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	52	conj	_	_
+56	down	down	ADP	RP	_	55	compound:prt	_	_
+57	and	and	CCONJ	CC	_	58	cc	_	_
+58	partook	partake	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	52	conj	_	_
+59	of	of	ADP	IN	_	61	case	_	_
+60	the	the	DET	DT	Definite=Def|PronType=Art	61	det	_	_
+61	fruit	fruit	NOUN	NN	Number=Sing	58	obl	_	_
+62	of	of	ADP	IN	_	64	case	_	_
+63	the	the	DET	DT	Definite=Def|PronType=Art	64	det	_	_
+64	tree	tree	NOUN	NN	Number=Sing	61	nmod	_	_
+65	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = And he also saw other multitudes feeling their way towards that great and spacious building.
+# sent_id = 241
+# llm_note = "feeling their way towards" = idiomatic participial; "multitudes feeling their way" = obj + xcomp participial.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	also	also	ADV	RB	_	4	advmod	_	_
+4	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	other	other	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	multitudes	multitude	NOUN	NNS	Number=Plur	4	obj	_	_
+7	feeling	feel	VERB	VBG	VerbForm=Part	6	xcomp	_	_
+8	their	their	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	_
+9	way	way	NOUN	NN	Number=Sing	7	obj	_	_
+10	towards	towards	ADP	IN	_	15	case	_	_
+11	that	that	DET	DT	Number=Sing|PronType=Dem	15	det	_	_
+12	great	great	ADJ	JJ	Degree=Pos	15	amod	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	spacious	spacious	ADJ	JJ	Degree=Pos	12	conj	_	_
+15	building	building	NOUN	NN	Number=Sing	7	obl	_	_
+16	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that many were drowned in the depths of the fountain; and many were lost from his view, wandering in strange roads.
+# sent_id = 242
+# llm_note = AICTP. Two coord clauses: "many were drowned"(8-9=passive) and "many were lost from his view"(18-20=passive). "wandering in strange roads" = adverbial participial on "were lost".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	many	many	ADJ	JJ	Degree=Pos	9	nsubj:pass	_	_
+8	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	9	aux:pass	_	_
+9	drowned	drown	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	5	ccomp	_	_
+10	in	in	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
+12	depths	depth	NOUN	NNS	Number=Plur	9	obl	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	_
+15	fountain	fountain	NOUN	NN	Number=Sing	12	nmod	_	_
+16	;	;	PUNCT	:	_	20	punct	_	_
+17	and	and	CCONJ	CC	_	20	cc	_	_
+18	many	many	ADJ	JJ	Degree=Pos	20	nsubj:pass	_	_
+19	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	20	aux:pass	_	_
+20	lost	lose	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	9	conj	_	_
+21	from	from	ADP	IN	_	23	case	_	_
+22	his	his	PRON	PRP$	Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	nmod:poss	_	_
+23	view	view	NOUN	NN	Number=Sing	20	obl	_	_
+24	,	,	PUNCT	,	_	25	punct	_	_
+25	wandering	wander	VERB	VBG	VerbForm=Part	20	advcl	_	_
+26	in	in	ADP	IN	_	28	case	_	_
+27	strange	strange	ADJ	JJ	Degree=Pos	28	amod	_	_
+28	roads	road	NOUN	NNS	Number=Plur	25	obl	_	_
+29	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And great was the multitude that did enter into that strange building.
+# sent_id = 243
+# llm_note = Inverted predicate-adjective fronting: "great was the multitude" = ADJ fronted for emphasis (great=pred adj, was=cop, multitude=nsubj). "that did enter" = relative clause on "multitude".
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	great	great	ADJ	JJ	Degree=Pos	3	xcomp	_	_
+3	was	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	multitude	multitude	NOUN	NN	Number=Sing	3	nsubj	_	_
+6	that	that	PRON	WDT	PronType=Rel	8	nsubj	_	_
+7	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	aux	_	_
+8	enter	enter	VERB	VB	VerbForm=Inf	5	acl:relcl	_	_
+9	into	into	ADP	IN	_	12	case	_	_
+10	that	that	DET	DT	Number=Sing|PronType=Dem	12	det	_	_
+11	strange	strange	ADJ	JJ	Degree=Pos	12	amod	_	_
+12	building	building	NOUN	NN	Number=Sing	8	obl	_	_
+13	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And after they did enter into that building they did point the finger of scorn at me and those that were partaking of the fruit also; but we heeded them not.
+# sent_id = 244
+# llm_note = "after they did enter" = temporal advcl (emphatic did+VB). Main clause: "they did point the finger of scorn"(10=emphatic). "at me and those that were partaking of the fruit also" = PP obl with conjoined prons. "we heeded them not" = negated by postverbal "not".
+1	And	and	CCONJ	CC	_	11	cc	_	_
+2	after	after	SCONJ	IN	_	5	mark	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+4	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux	_	_
+5	enter	enter	VERB	VB	VerbForm=Inf	11	advcl	_	_
+6	into	into	ADP	IN	_	8	case	_	_
+7	that	that	DET	DT	Number=Sing|PronType=Dem	8	det	_	_
+8	building	building	NOUN	NN	Number=Sing	5	obl	_	_
+9	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	_
+10	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	aux	_	_
+11	point	point	VERB	VB	VerbForm=Inf	0	root	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	finger	finger	NOUN	NN	Number=Sing	11	obj	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	scorn	scorn	NOUN	NN	Number=Sing	13	nmod	_	_
+16	at	at	ADP	IN	_	17	case	_	_
+17	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	11	obl	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	those	those	PRON	DT	Number=Plur|PronType=Dem	17	conj	_	_
+20	that	that	PRON	WDT	PronType=Rel	22	nsubj	_	_
+21	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	aux	_	_
+22	partaking	partake	VERB	VBG	VerbForm=Part	19	acl:relcl	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
+25	fruit	fruit	NOUN	NN	Number=Sing	22	obl	_	_
+26	also	also	ADV	RB	_	22	advmod	_	_
+27	;	;	PUNCT	:	_	30	punct	_	_
+28	but	but	CCONJ	CC	_	30	cc	_	_
+29	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	30	nsubj	_	_
+30	heeded	heed	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	conj	_	_
+31	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	30	obj	_	_
+32	not	not	PART	RB	Polarity=Neg	30	advmod	_	_
+33	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = These are the words of my father: For as many as heeded them, had fallen away.
+# sent_id = 245
+# llm_note = Editorial attribution: "These are the words of my father". Then quote: "For as many as heeded them, had fallen away" — "as many as heeded them" = free relative subject; "had fallen away" = pluperfect main pred.
+1	These	this	PRON	DT	Number=Plur|PronType=Dem	2	nsubj	_	_
+2	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	words	word	NOUN	NNS	Number=Plur	2	xcomp	_	_
+5	of	of	ADP	IN	_	7	case	_	_
+6	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	_
+7	father	father	NOUN	NN	Number=Sing	4	nmod	_	_
+8	:	:	PUNCT	:	_	2	punct	_	_
+9	For	for	SCONJ	IN	_	17	mark	_	_
+10	as	as	ADV	RB	_	11	advmod	_	_
+11	many	many	ADJ	JJ	Degree=Pos	17	nsubj	_	_
+12	as	as	SCONJ	IN	_	13	mark	_	_
+13	heeded	heed	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	11	acl:relcl	_	_
+14	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	13	obj	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	17	aux	_	_
+17	fallen	fall	VERB	VBN	Tense=Past|VerbForm=Part	2	ccomp	_	_
+18	away	away	ADP	RP	_	17	compound:prt	_	_
+19	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = And Laman and Lemuel partook not of the fruit, said my father.
+# sent_id = 246
+# llm_note = Inverted speech attribution: "said my father" = parenthetical parataxis (said=VERB, my father=nsubj, fronted main clause is obj). Treat "partook" as root; "said my father" as parataxis.
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	Laman	Laman	PROPN	NNP	Number=Sing	5	nsubj	_	_
+3	and	and	CCONJ	CC	_	4	cc	_	_
+4	Lemuel	Lemuel	PROPN	NNP	Number=Sing	2	conj	_	_
+5	partook	partake	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+6	not	not	PART	RB	Polarity=Neg	5	advmod	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	fruit	fruit	NOUN	NN	Number=Sing	5	obl	_	_
+10	,	,	PUNCT	,	_	11	punct	_	_
+11	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	parataxis	_	_
+12	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	13	nmod:poss	_	_
+13	father	father	NOUN	NN	Number=Sing	11	nsubj	_	_
+14	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And it came to pass after my father had spoken all the words of his dream or vision, which were many, he said unto us, because of these things which he saw in a vision, he exceedingly feared for Laman and Lemuel; yea, he feared lest they should be cast off from the presence of the Lord.
+# sent_id = 247
+# llm_note = AICTP variant without "that": "it came to pass after...he said" — temporal advcl + main clause. "which were many" = relative clause on "words". "because of these things which he saw" = causal PP with relative clause. "he exceedingly feared for Laman and Lemuel" = main ccomp of "said". "yea, he feared lest" = conj; "lest" = SCONJ mark for negative purpose.
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+3	came	come	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	after	after	SCONJ	IN	_	10	mark	_	_
+7	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	_
+8	father	father	NOUN	NN	Number=Sing	10	nsubj	_	_
+9	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	aux	_	_
+10	spoken	speak	VERB	VBN	Tense=Past|VerbForm=Part	25	advcl	_	_
+11	all	all	DET	PDT	_	13	det:predet	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	words	word	NOUN	NNS	Number=Plur	10	obj	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	his	his	PRON	PRP$	Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	_
+16	dream	dream	NOUN	NN	Number=Sing	13	nmod	_	_
+17	or	or	CCONJ	CC	_	18	cc	_	_
+18	vision	vision	NOUN	NN	Number=Sing	16	conj	_	_
+19	,	,	PUNCT	,	_	22	punct	_	_
+20	which	which	PRON	WDT	PronType=Rel	22	nsubj	_	_
+21	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	cop	_	_
+22	many	many	ADJ	JJ	Degree=Pos	16	acl:relcl	_	_
+23	,	,	PUNCT	,	_	25	punct	_	_
+24	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	25	nsubj	_	_
+25	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	ccomp	_	_
+26	unto	unto	ADP	IN	_	27	case	_	_
+27	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1|PronType=Prs	25	obl	_	_
+28	,	,	PUNCT	,	_	42	punct	_	_
+29	because	because	ADP	IN	_	32	case	_	_
+30	of	of	ADP	IN	_	32	case	_	_
+31	these	this	DET	DT	Number=Plur|PronType=Dem	32	det	_	_
+32	things	thing	NOUN	NNS	Number=Plur	42	obl	_	_
+33	which	which	PRON	WDT	PronType=Rel	35	obj	_	_
+34	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_
+35	saw	see	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	acl:relcl	_	_
+36	in	in	ADP	IN	_	38	case	_	_
+37	a	a	DET	DT	Definite=Ind|PronType=Art	38	det	_	_
+38	vision	vision	NOUN	NN	Number=Sing	35	obl	_	_
+39	,	,	PUNCT	,	_	42	punct	_	_
+40	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	42	nsubj	_	_
+41	exceedingly	exceedingly	ADV	RB	_	42	advmod	_	_
+42	feared	fear	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	25	ccomp	_	_
+43	for	for	ADP	IN	_	44	case	_	_
+44	Laman	Laman	PROPN	NNP	Number=Sing	42	obl	_	_
+45	and	and	CCONJ	CC	_	46	cc	_	_
+46	Lemuel	Lemuel	PROPN	NNP	Number=Sing	44	conj	_	_
+47	;	;	PUNCT	:	_	51	punct	_	_
+48	yea	yea	INTJ	UH	_	51	discourse	_	_
+49	,	,	PUNCT	,	_	48	punct	_	_
+50	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	51	nsubj	_	_
+51	feared	fear	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	42	conj	_	_
+52	lest	lest	SCONJ	IN	_	56	mark	_	_
+53	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	56	nsubj:pass	_	_
+54	should	should	AUX	MD	VerbForm=Fin	56	aux	_	_
+55	be	be	AUX	VB	VerbForm=Inf	56	aux:pass	_	_
+56	cast	cast	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	51	ccomp	_	_
+57	off	off	ADP	RP	_	56	compound:prt	_	_
+58	from	from	ADP	IN	_	60	case	_	_
+59	the	the	DET	DT	Definite=Def|PronType=Art	60	det	_	_
+60	presence	presence	NOUN	NN	Number=Sing	56	obl	_	_
+61	of	of	ADP	IN	_	63	case	_	_
+62	the	the	DET	DT	Definite=Def|PronType=Art	63	det	_	_
+63	Lord	Lord	PROPN	NNP	Number=Sing	60	nmod	_	_
+64	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And he did exhort them then with all the feeling of a tender parent, that they would hearken to his words, that perhaps the Lord would be merciful to them, and not cast them off; yea, my father did preach unto them.
+# sent_id = 248
+# llm_note = "did exhort...that they would hearken" = emphatic did+VB + ccomp. "that perhaps the Lord would be merciful...and not cast them off" = purpose/content advcl of "hearken"; "not cast them off" = negated conj VB under "would". "yea, my father did preach" = coord conj clause.
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	exhort	exhort	VERB	VB	VerbForm=Inf	0	root	_	_
+5	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	4	obj	_	_
+6	then	then	ADV	RB	_	4	advmod	_	_
+7	with	with	ADP	IN	_	10	case	_	_
+8	all	all	DET	PDT	_	10	det:predet	_	_
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+10	feeling	feeling	NOUN	NN	Number=Sing	4	obl	_	_
+11	of	of	ADP	IN	_	14	case	_	_
+12	a	a	DET	DT	Definite=Ind|PronType=Art	14	det	_	_
+13	tender	tender	ADJ	JJ	Degree=Pos	14	amod	_	_
+14	parent	parent	NOUN	NN	Number=Sing	10	nmod	_	_
+15	,	,	PUNCT	,	_	19	punct	_	_
+16	that	that	SCONJ	IN	_	19	mark	_	_
+17	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	19	nsubj	_	_
+18	would	would	AUX	MD	VerbForm=Fin	19	aux	_	_
+19	hearken	hearken	VERB	VB	VerbForm=Inf	4	ccomp	_	_
+20	to	to	ADP	IN	_	22	case	_	_
+21	his	his	PRON	PRP$	Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	nmod:poss	_	_
+22	words	word	NOUN	NNS	Number=Plur	19	obl	_	_
+23	,	,	PUNCT	,	_	30	punct	_	_
+24	that	that	SCONJ	IN	_	30	mark	_	_
+25	perhaps	perhaps	ADV	RB	_	30	advmod	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	Lord	Lord	PROPN	NNP	Number=Sing	30	nsubj	_	_
+28	would	would	AUX	MD	VerbForm=Fin	30	aux	_	_
+29	be	be	AUX	VB	VerbForm=Inf	30	cop	_	_
+30	merciful	merciful	ADJ	JJ	Degree=Pos	19	advcl	_	_
+31	to	to	ADP	IN	_	32	case	_	_
+32	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	30	obl	_	_
+33	,	,	PUNCT	,	_	36	punct	_	_
+34	and	and	CCONJ	CC	_	36	cc	_	_
+35	not	not	PART	RB	Polarity=Neg	36	advmod	_	_
+36	cast	cast	VERB	VB	VerbForm=Inf	30	conj	_	_
+37	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	36	obj	_	_
+38	off	off	ADP	RP	_	36	compound:prt	_	_
+39	;	;	PUNCT	:	_	45	punct	_	_
+40	yea	yea	INTJ	UH	_	45	discourse	_	_
+41	,	,	PUNCT	,	_	40	punct	_	_
+42	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	43	nmod:poss	_	_
+43	father	father	NOUN	NN	Number=Sing	45	nsubj	_	_
+44	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	45	aux	_	_
+45	preach	preach	VERB	VB	VerbForm=Inf	4	conj	_	_
+46	unto	unto	ADP	IN	_	47	case	_	_
+47	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	45	obl	_	_
+48	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And after he had preached unto them, and also prophesied unto them of many things, he bade them to keep the commandments of the Lord; and he did cease speaking unto them.
+# sent_id = 249
+# llm_note = "after he had preached...and also prophesied" = temporal advcl with conjoined VBN predicates. "bade them to keep" = causative bade+obj+to-infinitive. "did cease speaking" = emphatic did + aspectual "cease"+VBG.
+1	And	and	CCONJ	CC	_	19	cc	_	_
+2	after	after	SCONJ	IN	_	5	mark	_	_
+3	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+4	had	have	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	5	aux	_	_
+5	preached	preach	VERB	VBN	Tense=Past|VerbForm=Part	19	advcl	_	_
+6	unto	unto	ADP	IN	_	7	case	_	_
+7	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	5	obl	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	also	also	ADV	RB	_	11	advmod	_	_
+11	prophesied	prophesy	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	_
+12	unto	unto	ADP	IN	_	13	case	_	_
+13	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	11	obl	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	many	many	ADJ	JJ	Degree=Pos	16	amod	_	_
+16	things	thing	NOUN	NNS	Number=Plur	11	obl	_	_
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+19	bade	bid	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+20	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	19	obj	_	_
+21	to	to	PART	TO	_	22	mark	_	_
+22	keep	keep	VERB	VB	VerbForm=Inf	19	xcomp	_	_
+23	the	the	DET	DT	Definite=Def|PronType=Art	24	det	_	_
+24	commandments	commandment	NOUN	NNS	Number=Plur	22	obj	_	_
+25	of	of	ADP	IN	_	27	case	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
+27	Lord	Lord	PROPN	NNP	Number=Sing	24	nmod	_	_
+28	;	;	PUNCT	:	_	32	punct	_	_
+29	and	and	CCONJ	CC	_	32	cc	_	_
+30	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3|PronType=Prs	32	nsubj	_	_
+31	did	do	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	32	aux	_	_
+32	cease	cease	VERB	VB	VerbForm=Inf	19	conj	_	_
+33	speaking	speak	VERB	VBG	VerbForm=Part	32	xcomp	_	_
+34	unto	unto	ADP	IN	_	35	case	_	_
+35	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	33	obl	_	_
+36	.	.	PUNCT	.	_	19	punct	_	_
+

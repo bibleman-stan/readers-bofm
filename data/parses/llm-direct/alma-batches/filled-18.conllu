@@ -1,0 +1,809 @@
+# text = And now behold, for this great evil thou shalt have thy reward.
+# sent_id = 425
+# llm_note = 'behold' = INTJ discourse; 'for this great evil' = obl reason; 'thou shalt have thy reward' = main clause
+1	And	and	CCONJ	CC	_	11	cc	_	_
+2	now	now	ADV	RB	_	11	advmod	_	_
+3	behold	behold	INTJ	UH	_	11	discourse	_	_
+4	,	,	PUNCT	,	_	11	punct	_	_
+5	for	for	ADP	IN	_	8	case	_	_
+6	this	this	DET	DT	Number=Sing|PronType=Dem	8	det	_	_
+7	great	great	ADJ	JJ	_	8	amod	_	_
+8	evil	evil	NOUN	NN	Number=Sing	11	obl	_	_
+9	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	11	nsubj	_	_
+10	shalt	shall	AUX	MD	VerbForm=Fin	11	aux	_	_
+11	have	have	VERB	VB	VerbForm=Inf	0	root	_	_
+12	thy	thou	PRON	PRP$	Number=Sing|Person=2|Poss=Yes	13	nmod:poss	_	_
+13	reward	reward	NOUN	NN	Number=Sing	11	obj	_	_
+14	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = And Zeezrom said unto him: Thou sayest there is a true and living God?
+# sent_id = 426
+# llm_note = 'said' = root; direct speech: 'Thou sayest' = matrix; 'there is a true and living God' = ccomp (existential/presentative); question mark = yes/no question intonation on ccomp
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Zeezrom	Zeezrom	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	obl	_	_
+6	:	:	PUNCT	:	_	3	punct	_	_
+7	Thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	8	nsubj	_	_
+8	sayest	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	3	ccomp	_	_
+9	there	there	PRON	EX	_	10	expl	_	_
+10	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	8	ccomp	_	_
+11	a	a	DET	DT	Definite=Ind	15	det	_	_
+12	true	true	ADJ	JJ	_	15	amod	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	living	live	VERB	VBG	VerbForm=Part	12	conj	_	_
+15	God	God	PROPN	NNP	Number=Sing	10	nsubj	_	_
+16	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And Amulek said: Yea, there is a true and living God.
+# sent_id = 427
+# llm_note = 'Yea' = INTJ discourse; existential 'there is'; 'God' = nsubj of 'is'
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Amulek	Amulek	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	Yea	yea	INTJ	UH	_	8	discourse	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	there	there	PRON	EX	_	8	expl	_	_
+8	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	3	ccomp	_	_
+9	a	a	DET	DT	Definite=Ind	13	det	_	_
+10	true	true	ADJ	JJ	_	13	amod	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	living	live	VERB	VBG	VerbForm=Part	10	conj	_	_
+13	God	God	PROPN	NNP	Number=Sing	8	nsubj	_	_
+14	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now Zeezrom said: Is there more than one God?
+# sent_id = 428
+# llm_note = 'said' = root; interrogative direct speech: 'Is there more than one God'; existential; 'more than one God' = nsubj of 'Is'; 'more than one' = nummod+comparative structure
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	Zeezrom	Zeezrom	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	Is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	3	ccomp	_	_
+6	there	there	PRON	EX	_	5	expl	_	_
+7	more	more	ADJ	JJR	Degree=Cmp	10	amod	_	_
+8	than	than	ADP	IN	_	9	case	_	_
+9	one	one	NUM	CD	NumType=Card	7	obl	_	_
+10	God	God	PROPN	NNP	Number=Sing	5	nsubj	_	_
+11	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And he answered, No. Now Zeezrom said unto him again:
+# sent_id = 429
+# llm_note = 'No.' = INTJ/particle within reported answer; 'answered' = root; 'No.' treated as parataxis (direct response); 'Now Zeezrom said unto him again' = parataxis of 'answered'; ':' introduces next speech
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+3	answered	answer	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	,	,	PUNCT	,	_	5	punct	_	_
+5	No.	no	INTJ	UH	_	3	parataxis	_	_
+6	Now	now	ADV	RB	_	8	advmod	_	_
+7	Zeezrom	Zeezrom	PROPN	NNP	Number=Sing	8	nsubj	_	_
+8	said	say	VERB	VBD	Mood=Ind|Tense=Past	3	parataxis	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	8	obl	_	_
+11	again	again	ADV	RB	_	8	advmod	_	_
+12	:	:	PUNCT	:	_	8	punct	_	_
+
+# text = How knowest thou these things?
+# sent_id = 430
+# llm_note = archaic 2sg inversion; 'knowest' = root; 'thou' = nsubj; 'How' = advmod; 'these things' = obj
+1	How	how	ADV	WRB	PronType=Int	2	advmod	_	_
+2	knowest	know	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	0	root	_	_
+3	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	2	nsubj	_	_
+4	these	this	DET	DT	Number=Plur|PronType=Dem	5	det	_	_
+5	things	thing	NOUN	NNS	Number=Plur	2	obj	_	_
+6	?	?	PUNCT	.	_	2	punct	_	_
+
+# text = And he said: An angel hath made them known unto me.
+# sent_id = 431
+# llm_note = 'said' = root; 'An angel hath made them known' = causative; 'hath made' = PERF causative; 'them known' = obj + xcomp (resultative); 'unto me' = obl
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	:	:	PUNCT	:	_	3	punct	_	_
+5	An	a	DET	DT	Definite=Ind	6	det	_	_
+6	angel	angel	NOUN	NN	Number=Sing	8	nsubj	_	_
+7	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	8	aux	_	_
+8	made	make	VERB	VBN	VerbForm=Part	3	ccomp	_	_
+9	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	8	obj	_	_
+10	known	know	ADJ	JJ	_	8	xcomp	_	_
+11	unto	unto	ADP	IN	_	12	case	_	_
+12	me	I	PRON	PRP	Case=Acc|Number=Sing|Person=1	8	obl	_	_
+13	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Zeezrom said again: Who is he that shall come?
+# sent_id = 432
+# llm_note = 'said again' = root; 'Who is he that shall come?' = interrogative direct speech ccomp; 'he' = predicative complement of 'is'; 'that shall come' = relcl on 'he'
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Zeezrom	Zeezrom	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	again	again	ADV	RB	_	3	advmod	_	_
+5	:	:	PUNCT	:	_	3	punct	_	_
+6	Who	who	PRON	WP	PronType=Int	7	xcomp	_	_
+7	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	3	ccomp	_	_
+8	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_
+9	that	that	PRON	WDT	PronType=Rel	11	nsubj	_	_
+10	shall	shall	AUX	MD	VerbForm=Fin	11	aux	_	_
+11	come	come	VERB	VB	VerbForm=Inf	8	acl:relcl	_	_
+12	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Is it the Son of God?
+# sent_id = 433
+# llm_note = yes/no interrogative; 'Is' = cop; 'it' = nsubj; 'Son of God' = xcomp
+1	Is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	_
+2	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	1	nsubj	_	_
+3	the	the	DET	DT	Definite=Def	4	det	_	_
+4	Son	Son	PROPN	NNP	Number=Sing	1	xcomp	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	God	God	PROPN	NNP	Number=Sing	4	nmod	_	_
+7	?	?	PUNCT	.	_	1	punct	_	_
+
+# text = And he said unto him, Yea.
+# sent_id = 434
+# llm_note = 'said' = root; 'Yea' = INTJ ccomp (direct answer); 'unto him' = obl
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	obl	_	_
+6	,	,	PUNCT	,	_	7	punct	_	_
+7	Yea	yea	INTJ	UH	_	3	ccomp	_	_
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Zeezrom said again:
+# sent_id = 435
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Zeezrom	Zeezrom	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	again	again	ADV	RB	_	3	advmod	_	_
+5	:	:	PUNCT	:	_	3	punct	_	_
+
+# text = Shall he save his people in their sins?
+# sent_id = 436
+# llm_note = interrogative; 'save' = root; 'Shall' = aux modal; 'he' = nsubj; 'his people' = obj; 'in their sins' = obl
+1	Shall	shall	AUX	MD	VerbForm=Fin	3	aux	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+3	save	save	VERB	VB	VerbForm=Inf	0	root	_	_
+4	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	5	nmod:poss	_	_
+5	people	people	NOUN	NNS	Number=Plur	3	obj	_	_
+6	in	in	ADP	IN	_	8	case	_	_
+7	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	8	nmod:poss	_	_
+8	sins	sin	NOUN	NNS	Number=Plur	3	obl	_	_
+9	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And Amulek answered and said unto him: I say unto you he shall not, for it is impossible for him to deny his word.
+# sent_id = 437
+# llm_note = 'answered and said' = conjoined verbs; 'answered' = root; 'said' = conj; 'I say unto you' = matrix speech-act; 'he shall not' = ccomp (elliptical: shall not save); 'for it is impossible for him to deny his word' = advcl causal; 'it is impossible' = expletive-it; 'for him to deny his word' = csubj of 'impossible' (or xcomp)
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Amulek	Amulek	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	answered	answer	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	and	and	CCONJ	CC	_	5	cc	_	_
+5	said	say	VERB	VBD	Mood=Ind|Tense=Past	3	conj	_	_
+6	unto	unto	ADP	IN	_	7	case	_	_
+7	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	5	obl	_	_
+8	:	:	PUNCT	:	_	5	punct	_	_
+9	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	10	nsubj	_	_
+10	say	say	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres	5	ccomp	_	_
+11	unto	unto	ADP	IN	_	12	case	_	_
+12	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	10	obl	_	_
+13	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	nsubj	_	_
+14	shall	shall	AUX	MD	VerbForm=Fin	15	aux	_	_
+15	not	not	PART	RB	_	10	ccomp	_	_
+16	,	,	PUNCT	,	_	20	punct	_	_
+17	for	for	SCONJ	IN	_	20	mark	_	_
+18	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	20	expl	_	_
+19	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	20	cop	_	_
+20	impossible	impossible	ADJ	JJ	_	10	advcl	_	_
+21	for	for	ADP	IN	_	22	case	_	_
+22	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	24	nsubj	_	_
+23	to	to	PART	TO	_	24	mark	_	_
+24	deny	deny	VERB	VB	VerbForm=Inf	20	csubj	_	_
+25	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	26	nmod:poss	_	_
+26	word	word	NOUN	NN	Number=Sing	24	obj	_	_
+27	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now Zeezrom said unto the people: See that ye remember these things; for he said there is but one God; yet he saith that the Son of God shall come, but he shall not save his people-- as though he had authority to command God.
+# sent_id = 438
+# llm_note = 'said' = root; 'See that ye remember' = imperative ccomp; 'for he said there is but one God' = advcl; 'but one God' = 'only one God' (emphatic); 'yet he saith that the Son...shall come' = parataxis; 'but he shall not save his people' = conj; dash + 'as though he had authority to command God' = advcl of manner/comparison
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	Zeezrom	Zeezrom	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	Definite=Def	6	det	_	_
+6	people	people	NOUN	NNS	Number=Plur	3	obl	_	_
+7	:	:	PUNCT	:	_	3	punct	_	_
+8	See	see	VERB	VB	Mood=Imp|VerbForm=Fin	3	ccomp	_	_
+9	that	that	SCONJ	IN	_	11	mark	_	_
+10	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	11	nsubj	_	_
+11	remember	remember	VERB	VB	VerbForm=Inf	8	ccomp	_	_
+12	these	this	DET	DT	Number=Plur|PronType=Dem	13	det	_	_
+13	things	thing	NOUN	NNS	Number=Plur	11	obj	_	_
+14	;	;	PUNCT	:	_	17	punct	_	_
+15	for	for	SCONJ	IN	_	17	mark	_	_
+16	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_
+17	said	say	VERB	VBD	Mood=Ind|Tense=Past	8	advcl	_	_
+18	there	there	PRON	EX	_	19	expl	_	_
+19	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	17	ccomp	_	_
+20	but	but	ADV	RB	_	22	advmod	_	_
+21	one	one	NUM	CD	NumType=Card	22	nummod	_	_
+22	God	God	PROPN	NNP	Number=Sing	19	nsubj	_	_
+23	;	;	PUNCT	:	_	26	punct	_	_
+24	yet	yet	ADV	RB	_	26	advmod	_	_
+25	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	26	nsubj	_	_
+26	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	8	parataxis	_	_
+27	that	that	SCONJ	IN	_	33	mark	_	_
+28	the	the	DET	DT	Definite=Def	29	det	_	_
+29	Son	Son	PROPN	NNP	Number=Sing	33	nsubj	_	_
+30	of	of	ADP	IN	_	31	case	_	_
+31	God	God	PROPN	NNP	Number=Sing	29	nmod	_	_
+32	shall	shall	AUX	MD	VerbForm=Fin	33	aux	_	_
+33	come	come	VERB	VB	VerbForm=Inf	26	ccomp	_	_
+34	,	,	PUNCT	,	_	39	punct	_	_
+35	but	but	CCONJ	CC	_	39	cc	_	_
+36	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	39	nsubj	_	_
+37	shall	shall	AUX	MD	VerbForm=Fin	39	aux	_	_
+38	not	not	PART	RB	_	39	advmod	_	_
+39	save	save	VERB	VB	VerbForm=Inf	33	conj	_	_
+40	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	41	nmod:poss	_	_
+41	people	people	NOUN	NNS	Number=Plur	39	obj	_	_
+42	--	--	PUNCT	:	_	39	punct	_	_
+43	as	as	SCONJ	IN	_	46	mark	_	_
+44	though	though	SCONJ	IN	_	43	fixed	_	_
+45	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	46	nsubj	_	_
+46	had	have	VERB	VBD	Mood=Sub|Tense=Past	39	advcl	_	_
+47	authority	authority	NOUN	NN	Number=Sing	46	obj	_	_
+48	to	to	PART	TO	_	49	mark	_	_
+49	command	command	VERB	VB	VerbForm=Inf	47	acl	_	_
+50	God	God	PROPN	NNP	Number=Sing	49	obj	_	_
+51	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now Amulek saith again unto him: Behold thou hast lied, for thou sayest that I spake as though I had authority to command God because I said he shall not save his people in their sins.
+# sent_id = 439
+# llm_note = 'saith again' = historical present; 'saith' = root; 'Behold' = INTJ discourse; 'thou hast lied' = ccomp; 'for thou sayest that...' = advcl causal; 'that I spake as though I had authority' = ccomp of 'sayest'; 'as though I had authority to command God' = advcl; 'because I said he shall not save...' = advcl
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	Amulek	Amulek	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	_
+4	again	again	ADV	RB	_	3	advmod	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	obl	_	_
+7	:	:	PUNCT	:	_	3	punct	_	_
+8	Behold	behold	INTJ	UH	_	11	discourse	_	_
+9	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	11	nsubj	_	_
+10	hast	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	11	aux	_	_
+11	lied	lie	VERB	VBN	VerbForm=Part	3	ccomp	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	for	for	SCONJ	IN	_	15	mark	_	_
+14	thou	thou	PRON	PRP	Case=Nom|Number=Sing|Person=2	15	nsubj	_	_
+15	sayest	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=2|Tense=Pres	11	advcl	_	_
+16	that	that	SCONJ	IN	_	18	mark	_	_
+17	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	18	nsubj	_	_
+18	spake	speak	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past	15	ccomp	_	_
+19	as	as	SCONJ	IN	_	22	mark	_	_
+20	though	though	SCONJ	IN	_	19	fixed	_	_
+21	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	22	nsubj	_	_
+22	had	have	VERB	VBD	Mood=Sub|Tense=Past	18	advcl	_	_
+23	authority	authority	NOUN	NN	Number=Sing	22	obj	_	_
+24	to	to	PART	TO	_	25	mark	_	_
+25	command	command	VERB	VB	VerbForm=Inf	23	acl	_	_
+26	God	God	PROPN	NNP	Number=Sing	25	obj	_	_
+27	because	because	SCONJ	IN	_	29	mark	_	_
+28	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	29	nsubj	_	_
+29	said	say	VERB	VBD	Mood=Ind|Tense=Past	22	advcl	_	_
+30	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	33	nsubj	_	_
+31	shall	shall	AUX	MD	VerbForm=Fin	33	aux	_	_
+32	not	not	PART	RB	_	33	advmod	_	_
+33	save	save	VERB	VB	VerbForm=Inf	29	ccomp	_	_
+34	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	35	nmod:poss	_	_
+35	people	people	NOUN	NNS	Number=Plur	33	obj	_	_
+36	in	in	ADP	IN	_	38	case	_	_
+37	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	38	nmod:poss	_	_
+38	sins	sin	NOUN	NNS	Number=Plur	33	obl	_	_
+39	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And I say unto you again that he cannot save them in their sins; for I cannot deny his word, and he hath said that no unclean thing can inherit the kingdom of heaven; therefore, how can ye be saved, except ye inherit the kingdom of heaven?
+# sent_id = 440
+# llm_note = MWT span rows 9-10 and 19-20: leave span rows as _; annotate sub-tokens 9(can) and 10(not), 19(can) and 20(not); 'say' = root; 'that he cannot save' = ccomp; 'for I cannot deny' = advcl; 'and he hath said' = conj; 'that no unclean thing can inherit' = ccomp of 'said'; 'therefore how can ye be saved' = parataxis (rhetorical question); 'except ye inherit' = advcl
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	say	say	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	3	obl	_	_
+6	again	again	ADV	RB	_	3	advmod	_	_
+7	that	that	SCONJ	IN	_	11	mark	_	_
+8	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+9-10	cannot	_	_	_	_	_	_	_	_
+9	can	can	AUX	MD	VerbForm=Fin	11	aux	_	_
+10	not	not	PART	RB	_	11	advmod	_	_
+11	save	save	VERB	VB	VerbForm=Inf	3	ccomp	_	_
+12	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	11	obj	_	_
+13	in	in	ADP	IN	_	15	case	_	_
+14	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	15	nmod:poss	_	_
+15	sins	sin	NOUN	NNS	Number=Plur	11	obl	_	_
+16	;	;	PUNCT	:	_	21	punct	_	_
+17	for	for	SCONJ	IN	_	21	mark	_	_
+18	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	21	nsubj	_	_
+19-20	cannot	_	_	_	_	_	_	_	_
+19	can	can	AUX	MD	VerbForm=Fin	21	aux	_	_
+20	not	not	PART	RB	_	21	advmod	_	_
+21	deny	deny	VERB	VB	VerbForm=Inf	3	advcl	_	_
+22	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	23	nmod:poss	_	_
+23	word	word	NOUN	NN	Number=Sing	21	obj	_	_
+24	,	,	PUNCT	,	_	28	punct	_	_
+25	and	and	CCONJ	CC	_	28	cc	_	_
+26	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	28	nsubj	_	_
+27	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	28	aux	_	_
+28	said	say	VERB	VBN	VerbForm=Part	21	conj	_	_
+29	that	that	SCONJ	IN	_	34	mark	_	_
+30	no	no	DET	DT	_	32	det	_	_
+31	unclean	unclean	ADJ	JJ	_	32	amod	_	_
+32	thing	thing	NOUN	NN	Number=Sing	34	nsubj	_	_
+33	can	can	AUX	MD	VerbForm=Fin	34	aux	_	_
+34	inherit	inherit	VERB	VB	VerbForm=Inf	28	ccomp	_	_
+35	the	the	DET	DT	Definite=Def	36	det	_	_
+36	kingdom	kingdom	NOUN	NN	Number=Sing	34	obj	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	heaven	heaven	NOUN	NN	Number=Sing	36	nmod	_	_
+39	;	;	PUNCT	:	_	46	punct	_	_
+40	therefore	therefore	ADV	RB	_	46	advmod	_	_
+41	,	,	PUNCT	,	_	46	punct	_	_
+42	how	how	ADV	WRB	PronType=Int	46	advmod	_	_
+43	can	can	AUX	MD	VerbForm=Fin	46	aux	_	_
+44	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	46	nsubj:pass	_	_
+45	be	be	AUX	VB	VerbForm=Inf	46	aux:pass	_	_
+46	saved	save	VERB	VBN	VerbForm=Part|Voice=Pass	3	parataxis	_	_
+47	,	,	PUNCT	,	_	50	punct	_	_
+48	except	except	SCONJ	IN	_	50	mark	_	_
+49	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	50	nsubj	_	_
+50	inherit	inherit	VERB	VB	VerbForm=Inf	46	advcl	_	_
+51	the	the	DET	DT	Definite=Def	52	det	_	_
+52	kingdom	kingdom	NOUN	NN	Number=Sing	50	obj	_	_
+53	of	of	ADP	IN	_	54	case	_	_
+54	heaven	heaven	NOUN	NN	Number=Sing	52	nmod	_	_
+55	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore, ye cannot be saved in your sins.
+# sent_id = 441
+# llm_note = MWT span row 4-5 (cannot); leave span row as _; annotate sub-tokens 4(can) and 5(not); passive
+1	Therefore	therefore	ADV	RB	_	7	advmod	_	_
+2	,	,	PUNCT	,	_	7	punct	_	_
+3	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	7	nsubj:pass	_	_
+4-5	cannot	_	_	_	_	_	_	_	_
+4	can	can	AUX	MD	VerbForm=Fin	7	aux	_	_
+5	not	not	PART	RB	_	7	advmod	_	_
+6	be	be	AUX	VB	VerbForm=Inf	7	aux:pass	_	_
+7	saved	save	VERB	VBN	VerbForm=Part|Voice=Pass	0	root	_	_
+8	in	in	ADP	IN	_	10	case	_	_
+9	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	10	nmod:poss	_	_
+10	sins	sin	NOUN	NNS	Number=Plur	7	obl	_	_
+11	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = Now Zeezrom saith again unto him: Is the Son of God the very Eternal Father?
+# sent_id = 442
+# llm_note = 'saith' = root; interrogative direct speech: 'Is the Son of God the very Eternal Father?'; 'Son of God' = nsubj; 'the very Eternal Father' = xcomp
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	Zeezrom	Zeezrom	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	saith	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	_
+4	again	again	ADV	RB	_	3	advmod	_	_
+5	unto	unto	ADP	IN	_	6	case	_	_
+6	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	obl	_	_
+7	:	:	PUNCT	:	_	3	punct	_	_
+8	Is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	3	ccomp	_	_
+9	the	the	DET	DT	Definite=Def	10	det	_	_
+10	Son	Son	PROPN	NNP	Number=Sing	8	nsubj	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	God	God	PROPN	NNP	Number=Sing	10	nmod	_	_
+13	the	the	DET	DT	Definite=Def	16	det	_	_
+14	very	very	ADV	RB	_	15	advmod	_	_
+15	Eternal	Eternal	ADJ	JJ	_	16	amod	_	_
+16	Father	Father	PROPN	NNP	Number=Sing	8	xcomp	_	_
+17	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = And Amulek said unto him: Yea, he is the very Eternal Father of heaven and of earth, and all things which in them are; he is the beginning and the end, the first and the last;
+# sent_id = 443
+# llm_note = 'said' = root; direct speech: 'Yea' = INTJ discourse; 'he is the very Eternal Father' = main; 'of heaven and of earth' = nmod; 'and all things which in them are' = conj (all things = appos/conj of Father); 'which in them are' = relcl, inverted; second 'he is the beginning' = parataxis; 'the end' = conj; 'the first' = parataxis; 'the last' = conj
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Amulek	Amulek	PROPN	NNP	Number=Sing	3	nsubj	_	_
+3	said	say	VERB	VBD	Mood=Ind|Tense=Past	0	root	_	_
+4	unto	unto	ADP	IN	_	5	case	_	_
+5	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	3	obl	_	_
+6	:	:	PUNCT	:	_	3	punct	_	_
+7	Yea	yea	INTJ	UH	_	10	discourse	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_
+10	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	3	ccomp	_	_
+11	the	the	DET	DT	Definite=Def	14	det	_	_
+12	very	very	ADV	RB	_	13	advmod	_	_
+13	Eternal	Eternal	ADJ	JJ	_	14	amod	_	_
+14	Father	Father	PROPN	NNP	Number=Sing	10	xcomp	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	heaven	heaven	NOUN	NN	Number=Sing	14	nmod	_	_
+17	and	and	CCONJ	CC	_	19	cc	_	_
+18	of	of	ADP	IN	_	19	case	_	_
+19	earth	earth	NOUN	NN	Number=Sing	16	conj	_	_
+20	,	,	PUNCT	,	_	23	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	all	all	DET	PDT	_	23	det:predet	_	_
+23	things	thing	NOUN	NNS	Number=Plur	14	conj	_	_
+24	which	which	PRON	WDT	PronType=Rel	27	nsubj	_	_
+25	in	in	ADP	IN	_	26	case	_	_
+26	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	27	obl	_	_
+27	are	be	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres	23	acl:relcl	_	_
+28	;	;	PUNCT	:	_	30	punct	_	_
+29	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	30	nsubj	_	_
+30	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	10	parataxis	_	_
+31	the	the	DET	DT	Definite=Def	32	det	_	_
+32	beginning	beginning	NOUN	NN	Number=Sing	30	xcomp	_	_
+33	and	and	CCONJ	CC	_	35	cc	_	_
+34	the	the	DET	DT	Definite=Def	35	det	_	_
+35	end	end	NOUN	NN	Number=Sing	32	conj	_	_
+36	,	,	PUNCT	,	_	38	punct	_	_
+37	the	the	DET	DT	Definite=Def	38	det	_	_
+38	first	first	ADJ	JJ	_	30	parataxis	_	_
+39	and	and	CCONJ	CC	_	41	cc	_	_
+40	the	the	DET	DT	Definite=Def	41	det	_	_
+41	last	last	ADJ	JJ	_	38	conj	_	_
+42	;	;	PUNCT	:	_	3	punct	_	_
+
+# text = And he shall come into the world to redeem his people; and he shall take upon him the transgressions of those who believe on his name; and these are they that shall have eternal life, and salvation cometh to none else.
+# sent_id = 444
+# llm_note = 'come' = root; 'to redeem his people' = purpose advcl; semicolons separate coordinate main clauses; 'he shall take upon him' = conj of 'come'; 'the transgressions...of those who believe on his name' = obj; 'and these are they that shall have eternal life' = conj; 'salvation cometh to none else' = conj
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_
+3	shall	shall	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	come	come	VERB	VB	VerbForm=Inf	0	root	_	_
+5	into	into	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	Definite=Def	7	det	_	_
+7	world	world	NOUN	NN	Number=Sing	4	obl	_	_
+8	to	to	PART	TO	_	9	mark	_	_
+9	redeem	redeem	VERB	VB	VerbForm=Inf	4	advcl	_	_
+10	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	11	nmod:poss	_	_
+11	people	people	NOUN	NNS	Number=Plur	9	obj	_	_
+12	;	;	PUNCT	:	_	16	punct	_	_
+13	and	and	CCONJ	CC	_	16	cc	_	_
+14	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	16	nsubj	_	_
+15	shall	shall	AUX	MD	VerbForm=Fin	16	aux	_	_
+16	take	take	VERB	VB	VerbForm=Inf	4	conj	_	_
+17	upon	upon	ADP	IN	_	18	case	_	_
+18	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	16	obl	_	_
+19	the	the	DET	DT	Definite=Def	20	det	_	_
+20	transgressions	transgression	NOUN	NNS	Number=Plur	16	obj	_	_
+21	of	of	ADP	IN	_	22	case	_	_
+22	those	those	PRON	DT	Number=Plur|PronType=Dem	20	nmod	_	_
+23	who	who	PRON	WP	PronType=Rel	24	nsubj	_	_
+24	believe	believe	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres	22	acl:relcl	_	_
+25	on	on	ADP	IN	_	27	case	_	_
+26	his	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes	27	nmod:poss	_	_
+27	name	name	NOUN	NN	Number=Sing	24	obl	_	_
+28	;	;	PUNCT	:	_	31	punct	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	these	this	PRON	DT	Number=Plur|PronType=Dem	31	nsubj	_	_
+31	are	be	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres	4	conj	_	_
+32	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	31	xcomp	_	_
+33	that	that	PRON	WDT	PronType=Rel	35	nsubj	_	_
+34	shall	shall	AUX	MD	VerbForm=Fin	35	aux	_	_
+35	have	have	VERB	VB	VerbForm=Inf	32	acl:relcl	_	_
+36	eternal	eternal	ADJ	JJ	_	37	amod	_	_
+37	life	life	NOUN	NN	Number=Sing	35	obj	_	_
+38	,	,	PUNCT	,	_	41	punct	_	_
+39	and	and	CCONJ	CC	_	41	cc	_	_
+40	salvation	salvation	NOUN	NN	Number=Sing	41	nsubj	_	_
+41	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	4	conj	_	_
+42	to	to	ADP	IN	_	43	case	_	_
+43	none	none	PRON	NN	Number=Sing	41	obl	_	_
+44	else	else	ADV	RB	_	43	advmod	_	_
+45	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Therefore the wicked remain as though there had been no redemption made, except it be the loosing of the bands of death; for behold, the day cometh that all shall rise from the dead and stand before God, and be judged according to their works.
+# sent_id = 445
+# llm_note = 'remain' = root; 'as though there had been no redemption made' = advcl comparison; 'except it be the loosing' = advcl exception; 'for behold, the day cometh that...' = advcl causal; 'that all shall rise' = ccomp of 'cometh'; 'and stand before God' = conj of 'rise'; 'and be judged' = conj of 'rise'
+1	Therefore	therefore	ADV	RB	_	4	advmod	_	_
+2	the	the	DET	DT	Definite=Def	3	det	_	_
+3	wicked	wicked	NOUN	NN	Number=Sing	4	nsubj	_	_
+4	remain	remain	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres	0	root	_	_
+5	as	as	SCONJ	IN	_	8	mark	_	_
+6	though	though	SCONJ	IN	_	5	fixed	_	_
+7	there	there	PRON	EX	_	8	expl	_	_
+8	had	have	AUX	VBD	Mood=Sub|Tense=Past	4	advcl	_	_
+9	been	be	AUX	VBN	VerbForm=Part	12	aux:pass	_	_
+10	no	no	DET	DT	_	11	det	_	_
+11	redemption	redemption	NOUN	NN	Number=Sing	12	nsubj:pass	_	_
+12	made	make	VERB	VBN	VerbForm=Part|Voice=Pass	8	xcomp	_	_
+13	,	,	PUNCT	,	_	16	punct	_	_
+14	except	except	SCONJ	IN	_	16	mark	_	_
+15	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	16	nsubj	_	_
+16	be	be	VERB	VBZ	Mood=Sub|Number=Sing|Person=3|Tense=Pres	4	advcl	_	_
+17	the	the	DET	DT	Definite=Def	18	det	_	_
+18	loosing	loosen	NOUN	NN	Number=Sing	16	xcomp	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	Definite=Def	21	det	_	_
+21	bands	band	NOUN	NNS	Number=Plur	18	nmod	_	_
+22	of	of	ADP	IN	_	23	case	_	_
+23	death	death	NOUN	NN	Number=Sing	21	nmod	_	_
+24	;	;	PUNCT	:	_	30	punct	_	_
+25	for	for	SCONJ	IN	_	30	mark	_	_
+26	behold	behold	INTJ	UH	_	30	discourse	_	_
+27	,	,	PUNCT	,	_	30	punct	_	_
+28	the	the	DET	DT	Definite=Def	29	det	_	_
+29	day	day	NOUN	NN	Number=Sing	30	nsubj	_	_
+30	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	4	advcl	_	_
+31	that	that	SCONJ	IN	_	34	mark	_	_
+32	all	all	PRON	DT	_	34	nsubj	_	_
+33	shall	shall	AUX	MD	VerbForm=Fin	34	aux	_	_
+34	rise	rise	VERB	VB	VerbForm=Inf	30	ccomp	_	_
+35	from	from	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	Definite=Def	37	det	_	_
+37	dead	dead	NOUN	NN	Number=Sing	34	obl	_	_
+38	and	and	CCONJ	CC	_	39	cc	_	_
+39	stand	stand	VERB	VB	VerbForm=Inf	34	conj	_	_
+40	before	before	ADP	IN	_	41	case	_	_
+41	God	God	PROPN	NNP	Number=Sing	39	obl	_	_
+42	,	,	PUNCT	,	_	45	punct	_	_
+43	and	and	CCONJ	CC	_	45	cc	_	_
+44	be	be	AUX	VB	VerbForm=Inf	45	aux:pass	_	_
+45	judged	judge	VERB	VBN	VerbForm=Part|Voice=Pass	34	conj	_	_
+46	according	accord	ADP	IN	_	49	case	_	_
+47	to	to	ADP	IN	_	46	fixed	_	_
+48	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	49	nmod:poss	_	_
+49	works	work	NOUN	NNS	Number=Plur	45	obl	_	_
+50	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Now, there is a death which is called a temporal death; and the death of Christ shall loose the bands of this temporal death, that all shall be raised from this temporal death.
+# sent_id = 446
+# llm_note = existential 'there is a death'; 'which is called a temporal death' = relcl; 'the death of Christ shall loose' = conj of root; 'that all shall be raised' = purpose advcl
+1	Now	now	ADV	RB	_	4	advmod	_	_
+2	,	,	PUNCT	,	_	4	punct	_	_
+3	there	there	PRON	EX	_	4	expl	_	_
+4	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	_
+5	a	a	DET	DT	Definite=Ind	6	det	_	_
+6	death	death	NOUN	NN	Number=Sing	4	nsubj	_	_
+7	which	which	PRON	WDT	PronType=Rel	9	nsubj:pass	_	_
+8	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	9	aux:pass	_	_
+9	called	call	VERB	VBN	VerbForm=Part|Voice=Pass	6	acl:relcl	_	_
+10	a	a	DET	DT	Definite=Ind	12	det	_	_
+11	temporal	temporal	ADJ	JJ	_	12	amod	_	_
+12	death	death	NOUN	NN	Number=Sing	9	xcomp	_	_
+13	;	;	PUNCT	:	_	20	punct	_	_
+14	and	and	CCONJ	CC	_	20	cc	_	_
+15	the	the	DET	DT	Definite=Def	16	det	_	_
+16	death	death	NOUN	NN	Number=Sing	20	nsubj	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	Christ	Christ	PROPN	NNP	Number=Sing	16	nmod	_	_
+19	shall	shall	AUX	MD	VerbForm=Fin	20	aux	_	_
+20	loose	loosen	VERB	VB	VerbForm=Inf	4	conj	_	_
+21	the	the	DET	DT	Definite=Def	22	det	_	_
+22	bands	band	NOUN	NNS	Number=Plur	20	obj	_	_
+23	of	of	ADP	IN	_	26	case	_	_
+24	this	this	DET	DT	Number=Sing|PronType=Dem	26	det	_	_
+25	temporal	temporal	ADJ	JJ	_	26	amod	_	_
+26	death	death	NOUN	NN	Number=Sing	22	nmod	_	_
+27	,	,	PUNCT	,	_	32	punct	_	_
+28	that	that	SCONJ	IN	_	32	mark	_	_
+29	all	all	PRON	DT	_	32	nsubj:pass	_	_
+30	shall	shall	AUX	MD	VerbForm=Fin	32	aux	_	_
+31	be	be	AUX	VB	VerbForm=Inf	32	aux:pass	_	_
+32	raised	raise	VERB	VBN	VerbForm=Part|Voice=Pass	20	advcl	_	_
+33	from	from	ADP	IN	_	36	case	_	_
+34	this	this	DET	DT	Number=Sing|PronType=Dem	36	det	_	_
+35	temporal	temporal	ADJ	JJ	_	36	amod	_	_
+36	death	death	NOUN	NN	Number=Sing	32	obl	_	_
+37	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = The spirit and the body shall be reunited again in its perfect form; both limb and joint shall be restored to its proper frame, even as we now are at this time; and we shall be brought to stand before God, knowing even as we know now, and have a bright recollection of all our guilt.
+# sent_id = 447
+# llm_note = 'spirit' + 'body' = compound nsubj of 'reunited'; 'reunited' = root; 'both limb and joint' = conj clause; 'shall be restored' = conj of root; 'even as we now are at this time' = advcl comparative; 'and we shall be brought to stand before God' = conj; 'knowing even as we know now' = advcl participial; 'and have a bright recollection' = conj of 'knowing'
+1	The	the	DET	DT	Definite=Def	2	det	_	_
+2	spirit	spirit	NOUN	NN	Number=Sing	8	nsubj:pass	_	_
+3	and	and	CCONJ	CC	_	5	cc	_	_
+4	the	the	DET	DT	Definite=Def	5	det	_	_
+5	body	body	NOUN	NN	Number=Sing	2	conj	_	_
+6	shall	shall	AUX	MD	VerbForm=Fin	8	aux	_	_
+7	be	be	AUX	VB	VerbForm=Inf	8	aux:pass	_	_
+8	reunited	reunite	VERB	VBN	VerbForm=Part|Voice=Pass	0	root	_	_
+9	again	again	ADV	RB	_	8	advmod	_	_
+10	in	in	ADP	IN	_	13	case	_	_
+11	its	it	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes	13	nmod:poss	_	_
+12	perfect	perfect	ADJ	JJ	_	13	amod	_	_
+13	form	form	NOUN	NN	Number=Sing	8	obl	_	_
+14	;	;	PUNCT	:	_	21	punct	_	_
+15	both	both	DET	PDT	_	17	det:predet	_	_
+16	limb	limb	NOUN	NN	Number=Sing	21	nsubj:pass	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	joint	joint	NOUN	NN	Number=Sing	16	conj	_	_
+19	shall	shall	AUX	MD	VerbForm=Fin	21	aux	_	_
+20	be	be	AUX	VB	VerbForm=Inf	21	aux:pass	_	_
+21	restored	restore	VERB	VBN	VerbForm=Part|Voice=Pass	8	conj	_	_
+22	to	to	ADP	IN	_	25	case	_	_
+23	its	it	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes	25	nmod:poss	_	_
+24	proper	proper	ADJ	JJ	_	25	amod	_	_
+25	frame	frame	NOUN	NN	Number=Sing	21	obl	_	_
+26	,	,	PUNCT	,	_	31	punct	_	_
+27	even	even	ADV	RB	_	28	advmod	_	_
+28	as	as	SCONJ	IN	_	31	mark	_	_
+29	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	31	nsubj	_	_
+30	now	now	ADV	RB	_	31	advmod	_	_
+31	are	be	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres	21	advcl	_	_
+32	at	at	ADP	IN	_	34	case	_	_
+33	this	this	DET	DT	Number=Sing|PronType=Dem	34	det	_	_
+34	time	time	NOUN	NN	Number=Sing	31	obl	_	_
+35	;	;	PUNCT	:	_	40	punct	_	_
+36	and	and	CCONJ	CC	_	40	cc	_	_
+37	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	40	nsubj:pass	_	_
+38	shall	shall	AUX	MD	VerbForm=Fin	40	aux	_	_
+39	be	be	AUX	VB	VerbForm=Inf	40	aux:pass	_	_
+40	brought	bring	VERB	VBN	VerbForm=Part|Voice=Pass	8	conj	_	_
+41	to	to	PART	TO	_	42	mark	_	_
+42	stand	stand	VERB	VB	VerbForm=Inf	40	xcomp	_	_
+43	before	before	ADP	IN	_	44	case	_	_
+44	God	God	PROPN	NNP	Number=Sing	42	obl	_	_
+45	,	,	PUNCT	,	_	46	punct	_	_
+46	knowing	know	VERB	VBG	VerbForm=Part	40	advcl	_	_
+47	even	even	ADV	RB	_	48	advmod	_	_
+48	as	as	SCONJ	IN	_	50	mark	_	_
+49	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	50	nsubj	_	_
+50	know	know	VERB	VBP	Mood=Ind|Number=Plur|Tense=Pres	46	advcl	_	_
+51	now	now	ADV	RB	_	50	advmod	_	_
+52	,	,	PUNCT	,	_	54	punct	_	_
+53	and	and	CCONJ	CC	_	54	cc	_	_
+54	have	have	VERB	VB	VerbForm=Inf	46	conj	_	_
+55	a	a	DET	DT	Definite=Ind	57	det	_	_
+56	bright	bright	ADJ	JJ	_	57	amod	_	_
+57	recollection	recollection	NOUN	NN	Number=Sing	54	obj	_	_
+58	of	of	ADP	IN	_	61	case	_	_
+59	all	all	DET	PDT	_	61	det:predet	_	_
+60	our	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes	61	nmod:poss	_	_
+61	guilt	guilt	NOUN	NN	Number=Sing	57	nmod	_	_
+62	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = Now, this restoration shall come to all, both old and young, both bond and free, both male and female, both the wicked and the righteous; and even there shall not so much as a hair of their heads be lost; but every thing shall be restored to its perfect frame, as it is now, or in the body, and shall be brought and be arraigned before the bar of Christ the Son, and God the Father, and the Holy Spirit, which is one Eternal God, to be judged according to their works, whether they be good or whether they be evil.
+# sent_id = 448
+# llm_note = very long sentence; 'come' = root; 'both old and young...both the wicked and the righteous' = appos series on 'all'; semicolons separate coordinate main clauses; 'and even there shall not...be lost' = conj; 'but every thing shall be restored' = conj; 'as it is now, or in the body' = advcl comparative + coord; 'and shall be brought and be arraigned' = conj; 'before the bar of Christ the Son, and God the Father, and the Holy Spirit' = obl; 'which is one Eternal God' = relcl on 'Holy Spirit'; 'to be judged' = purpose advcl; 'whether they be good or whether they be evil' = advcl alternation on 'judged'
+1	Now	now	ADV	RB	_	6	advmod	_	_
+2	,	,	PUNCT	,	_	6	punct	_	_
+3	this	this	DET	DT	Number=Sing|PronType=Dem	4	det	_	_
+4	restoration	restoration	NOUN	NN	Number=Sing	6	nsubj	_	_
+5	shall	shall	AUX	MD	VerbForm=Fin	6	aux	_	_
+6	come	come	VERB	VB	VerbForm=Inf	0	root	_	_
+7	to	to	ADP	IN	_	8	case	_	_
+8	all	all	PRON	DT	_	6	obl	_	_
+9	,	,	PUNCT	,	_	8	punct	_	_
+10	both	both	DET	PDT	_	11	det:predet	_	_
+11	old	old	ADJ	JJ	_	8	appos	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	young	young	ADJ	JJ	_	11	conj	_	_
+14	,	,	PUNCT	,	_	11	punct	_	_
+15	both	both	DET	PDT	_	16	det:predet	_	_
+16	bond	bond	ADJ	JJ	_	8	appos	_	_
+17	and	and	CCONJ	CC	_	18	cc	_	_
+18	free	free	ADJ	JJ	_	16	conj	_	_
+19	,	,	PUNCT	,	_	16	punct	_	_
+20	both	both	DET	PDT	_	21	det:predet	_	_
+21	male	male	ADJ	JJ	_	8	appos	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	female	female	ADJ	JJ	_	21	conj	_	_
+24	,	,	PUNCT	,	_	21	punct	_	_
+25	both	both	DET	PDT	_	27	det:predet	_	_
+26	the	the	DET	DT	Definite=Def	27	det	_	_
+27	wicked	wicked	NOUN	NN	Number=Sing	8	appos	_	_
+28	and	and	CCONJ	CC	_	30	cc	_	_
+29	the	the	DET	DT	Definite=Def	30	det	_	_
+30	righteous	righteous	NOUN	NN	Number=Sing	27	conj	_	_
+31	;	;	PUNCT	:	_	46	punct	_	_
+32	and	and	CCONJ	CC	_	46	cc	_	_
+33	even	even	ADV	RB	_	46	advmod	_	_
+34	there	there	PRON	EX	_	46	expl	_	_
+35	shall	shall	AUX	MD	VerbForm=Fin	46	aux	_	_
+36	not	not	PART	RB	_	46	advmod	_	_
+37	so	so	ADV	RB	_	38	advmod	_	_
+38	much	much	ADV	RB	_	46	advmod	_	_
+39	as	as	ADP	IN	_	41	case	_	_
+40	a	a	DET	DT	Definite=Ind	41	det	_	_
+41	hair	hair	NOUN	NN	Number=Sing	46	nsubj:pass	_	_
+42	of	of	ADP	IN	_	44	case	_	_
+43	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	44	nmod:poss	_	_
+44	heads	head	NOUN	NNS	Number=Plur	41	nmod	_	_
+45	be	be	AUX	VB	VerbForm=Inf	46	aux:pass	_	_
+46	lost	lose	VERB	VBN	VerbForm=Part|Voice=Pass	6	conj	_	_
+47	;	;	PUNCT	:	_	53	punct	_	_
+48	but	but	CCONJ	CC	_	53	cc	_	_
+49	every	every	DET	DT	_	50	det	_	_
+50	thing	thing	NOUN	NN	Number=Sing	53	nsubj:pass	_	_
+51	shall	shall	AUX	MD	VerbForm=Fin	53	aux	_	_
+52	be	be	AUX	VB	VerbForm=Inf	53	aux:pass	_	_
+53	restored	restore	VERB	VBN	VerbForm=Part|Voice=Pass	6	conj	_	_
+54	to	to	ADP	IN	_	57	case	_	_
+55	its	it	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes	57	nmod:poss	_	_
+56	perfect	perfect	ADJ	JJ	_	57	amod	_	_
+57	frame	frame	NOUN	NN	Number=Sing	53	obl	_	_
+58	,	,	PUNCT	,	_	61	punct	_	_
+59	as	as	SCONJ	IN	_	61	mark	_	_
+60	it	it	PRON	PRP	Case=Nom|Number=Sing|Person=3	61	nsubj	_	_
+61	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	53	advcl	_	_
+62	now	now	ADV	RB	_	61	advmod	_	_
+63	,	,	PUNCT	,	_	61	punct	_	_
+64	or	or	CCONJ	CC	_	67	cc	_	_
+65	in	in	ADP	IN	_	67	case	_	_
+66	the	the	DET	DT	Definite=Def	67	det	_	_
+67	body	body	NOUN	NN	Number=Sing	61	conj	_	_
+68	,	,	PUNCT	,	_	72	punct	_	_
+69	and	and	CCONJ	CC	_	72	cc	_	_
+70	shall	shall	AUX	MD	VerbForm=Fin	72	aux	_	_
+71	be	be	AUX	VB	VerbForm=Inf	72	aux:pass	_	_
+72	brought	bring	VERB	VBN	VerbForm=Part|Voice=Pass	53	conj	_	_
+73	and	and	CCONJ	CC	_	75	cc	_	_
+74	be	be	AUX	VB	VerbForm=Inf	75	aux:pass	_	_
+75	arraigned	arraign	VERB	VBN	VerbForm=Part|Voice=Pass	72	conj	_	_
+76	before	before	ADP	IN	_	78	case	_	_
+77	the	the	DET	DT	Definite=Def	78	det	_	_
+78	bar	bar	NOUN	NN	Number=Sing	75	obl	_	_
+79	of	of	ADP	IN	_	80	case	_	_
+80	Christ	Christ	PROPN	NNP	Number=Sing	78	nmod	_	_
+81	the	the	DET	DT	Definite=Def	82	det	_	_
+82	Son	Son	PROPN	NNP	Number=Sing	80	appos	_	_
+83	,	,	PUNCT	,	_	85	punct	_	_
+84	and	and	CCONJ	CC	_	85	cc	_	_
+85	God	God	PROPN	NNP	Number=Sing	80	conj	_	_
+86	the	the	DET	DT	Definite=Def	87	det	_	_
+87	Father	Father	PROPN	NNP	Number=Sing	85	appos	_	_
+88	,	,	PUNCT	,	_	92	punct	_	_
+89	and	and	CCONJ	CC	_	92	cc	_	_
+90	the	the	DET	DT	Definite=Def	92	det	_	_
+91	Holy	Holy	ADJ	JJ	_	92	amod	_	_
+92	Spirit	Spirit	PROPN	NNP	Number=Sing	80	conj	_	_
+93	,	,	PUNCT	,	_	92	punct	_	_
+94	which	which	PRON	WDT	PronType=Rel	95	nsubj	_	_
+95	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres	92	acl:relcl	_	_
+96	one	one	NUM	CD	NumType=Card	98	nummod	_	_
+97	Eternal	Eternal	ADJ	JJ	_	98	amod	_	_
+98	God	God	PROPN	NNP	Number=Sing	95	xcomp	_	_
+99	,	,	PUNCT	,	_	102	punct	_	_
+100	to	to	PART	TO	_	102	mark	_	_
+101	be	be	AUX	VB	VerbForm=Inf	102	aux:pass	_	_
+102	judged	judge	VERB	VBN	VerbForm=Part|Voice=Pass	75	advcl	_	_
+103	according	accord	ADP	IN	_	106	case	_	_
+104	to	to	ADP	IN	_	103	fixed	_	_
+105	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	106	nmod:poss	_	_
+106	works	work	NOUN	NNS	Number=Plur	102	obl	_	_
+107	,	,	PUNCT	,	_	110	punct	_	_
+108	whether	whether	SCONJ	IN	_	110	mark	_	_
+109	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	110	nsubj	_	_
+110	be	be	VERB	VBZ	Mood=Sub|Number=Plur|Person=3|Tense=Pres	102	advcl	_	_
+111	good	good	ADJ	JJ	_	110	xcomp	_	_
+112	or	or	CCONJ	CC	_	114	cc	_	_
+113	whether	whether	SCONJ	IN	_	114	mark	_	_
+114	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	115	nsubj	_	_
+115	be	be	VERB	VBZ	Mood=Sub|Number=Plur|Person=3|Tense=Pres	110	conj	_	_
+116	evil	evil	ADJ	JJ	_	115	xcomp	_	_
+117	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Now, behold, I have spoken unto you concerning the death of the mortal body, and also concerning the resurrection of the mortal body.
+# sent_id = 449
+# llm_note = 'behold' = INTJ discourse; 'have spoken' = PERF root; 'concerning the death' = obl; 'and also concerning the resurrection' = conj obl
+1	Now	now	ADV	RB	_	7	advmod	_	_
+2	,	,	PUNCT	,	_	7	punct	_	_
+3	behold	behold	INTJ	UH	_	7	discourse	_	_
+4	,	,	PUNCT	,	_	7	punct	_	_
+5	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	7	nsubj	_	_
+6	have	have	AUX	VBP	Mood=Ind|Number=Sing|Tense=Pres	7	aux	_	_
+7	spoken	speak	VERB	VBN	VerbForm=Part	0	root	_	_
+8	unto	unto	ADP	IN	_	9	case	_	_
+9	you	you	PRON	PRP	Case=Acc|Number=Plur|Person=2	7	obl	_	_
+10	concerning	concerning	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	Definite=Def	12	det	_	_
+12	death	death	NOUN	NN	Number=Sing	7	obl	_	_
+13	of	of	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	Definite=Def	16	det	_	_
+15	mortal	mortal	ADJ	JJ	_	16	amod	_	_
+16	body	body	NOUN	NN	Number=Sing	12	nmod	_	_
+17	,	,	PUNCT	,	_	12	punct	_	_
+18	and	and	CCONJ	CC	_	22	cc	_	_
+19	also	also	ADV	RB	_	22	advmod	_	_
+20	concerning	concerning	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	Definite=Def	22	det	_	_
+22	resurrection	resurrection	NOUN	NN	Number=Sing	12	conj	_	_
+23	of	of	ADP	IN	_	26	case	_	_
+24	the	the	DET	DT	Definite=Def	26	det	_	_
+25	mortal	mortal	ADJ	JJ	_	26	amod	_	_
+26	body	body	NOUN	NN	Number=Sing	22	nmod	_	_
+27	.	.	PUNCT	.	_	7	punct	_	_
+

@@ -1,0 +1,998 @@
+# text = Therefore he caused that Teancum should take a small number of men and march down near the seashore; and Moroni and his army, by night, marched in the wilderness, on the west of the city Mulek; and thus, on the morrow, when the guards of the Lamanites had discovered Teancum, they ran and told it unto Jacob, their leader.
+# sent_id = 2025
+# llm_note = 'caused that' = volition/speech verb + that-clause complement (Rule 17 analog); 'took' head=caused; matrix root=caused; second clause 'marched' is conj of caused; third main clause 'ran' is also conj; 'told' conj of ran; 'Jacob' obl:agent of told via 'unto'; 'leader' appos of Jacob; 'west' head of 'on the west of the city Mulek' obl chain
+1	Therefore	therefore	ADV	RB	_	3	advmod	_	_
+2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_
+3	caused	cause	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	that	that	SCONJ	IN	_	7	mark	_	_
+5	Teancum	Teancum	PROPN	NNP	_	7	nsubj	_	_
+6	should	should	AUX	MD	VerbForm=Fin	7	aux	_	_
+7	take	take	VERB	VB	VerbForm=Inf	3	ccomp	_	_
+8	a	a	DET	DT	_	10	det	_	_
+9	small	small	ADJ	JJ	_	10	amod	_	_
+10	number	number	NOUN	NN	Number=Sing	7	obj	_	_
+11	of	of	ADP	IN	_	12	case	_	_
+12	men	man	NOUN	NNS	Number=Plur	10	nmod	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	march	march	VERB	VB	VerbForm=Inf	7	conj	_	_
+15	down	down	ADV	RB	_	14	advmod	_	_
+16	near	near	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	seashore	seashore	NOUN	NN	Number=Sing	14	obl	_	_
+19	;	;	PUNCT	:	_	29	punct	_	_
+20	and	and	CCONJ	CC	_	29	cc	_	_
+21	Moroni	Moroni	PROPN	NNP	_	29	nsubj	_	_
+22	and	and	CCONJ	CC	_	24	cc	_	_
+23	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	24	nmod:poss	_	_
+24	army	army	NOUN	NN	Number=Sing	21	conj	_	_
+25	,	,	PUNCT	,	_	29	punct	_	_
+26	by	by	ADP	IN	_	27	case	_	_
+27	night	night	NOUN	NN	Number=Sing	29	obl	_	_
+28	,	,	PUNCT	,	_	29	punct	_	_
+29	marched	march	VERB	VBD	Tense=Past|VerbForm=Fin	3	conj	_	_
+30	in	in	ADP	IN	_	32	case	_	_
+31	the	the	DET	DT	_	32	det	_	_
+32	wilderness	wilderness	NOUN	NN	Number=Sing	29	obl	_	_
+33	,	,	PUNCT	,	_	29	punct	_	_
+34	on	on	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	west	west	NOUN	NN	Number=Sing	29	obl	_	_
+37	of	of	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	_	39	det	_	_
+39	city	city	NOUN	NN	Number=Sing	36	nmod	_	_
+40	Mulek	Mulek	PROPN	NNP	_	39	flat	_	_
+41	;	;	PUNCT	:	_	60	punct	_	_
+42	and	and	CCONJ	CC	_	60	cc	_	_
+43	thus	thus	ADV	RB	_	60	advmod	_	_
+44	,	,	PUNCT	,	_	60	punct	_	_
+45	on	on	ADP	IN	_	47	case	_	_
+46	the	the	DET	DT	_	47	det	_	_
+47	morrow	morrow	NOUN	NN	Number=Sing	60	obl	_	_
+48	,	,	PUNCT	,	_	60	punct	_	_
+49	when	when	SCONJ	WRB	_	56	mark	_	_
+50	the	the	DET	DT	_	51	det	_	_
+51	guards	guard	NOUN	NNS	Number=Plur	56	nsubj	_	_
+52	of	of	ADP	IN	_	54	case	_	_
+53	the	the	DET	DT	_	54	det	_	_
+54	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	51	nmod	_	_
+55	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	56	aux	_	_
+56	discovered	discover	VERB	VBN	Tense=Past|VerbForm=Part	60	advcl	_	_
+57	Teancum	Teancum	PROPN	NNP	_	56	obj	_	_
+58	,	,	PUNCT	,	_	60	punct	_	_
+59	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	60	nsubj	_	_
+60	ran	run	VERB	VBD	Tense=Past|VerbForm=Fin	3	conj	_	_
+61	and	and	CCONJ	CC	_	62	cc	_	_
+62	told	tell	VERB	VBD	Tense=Past|VerbForm=Fin	60	conj	_	_
+63	it	it	PRON	PRP	Case=Acc|Number=Sing|Person=3	62	obj	_	_
+64	unto	unto	ADP	IN	_	65	case	_	_
+65	Jacob	Jacob	PROPN	NNP	_	62	obl	_	_
+66	,	,	PUNCT	,	_	65	punct	_	_
+67	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	68	nmod:poss	_	_
+68	leader	leader	NOUN	NN	Number=Sing	65	appos	_	_
+69	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that the armies of the Lamanites did march forth against Teancum, supposing by their numbers to overpower Teancum because of the smallness of his numbers.
+# sent_id = 2026
+# llm_note = AICTP frame: came=root, it=expl, pass=xcomp; 'did march' = AUX+VERB; 'supposing' = advcl of march; 'to overpower' = xcomp of supposing; 'because of the smallness' = obl of overpower
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	13	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	armies	army	NOUN	NNS	Number=Plur	13	nsubj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	8	nmod	_	_
+12	did	do	AUX	VBD	Tense=Past|VerbForm=Fin	13	aux	_	_
+13	march	march	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+14	forth	forth	ADV	RB	_	13	advmod	_	_
+15	against	against	ADP	IN	_	16	case	_	_
+16	Teancum	Teancum	PROPN	NNP	_	13	obl	_	_
+17	,	,	PUNCT	,	_	18	punct	_	_
+18	supposing	suppose	VERB	VBG	VerbForm=Part	13	advcl	_	_
+19	by	by	ADP	IN	_	21	case	_	_
+20	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	21	nmod:poss	_	_
+21	numbers	number	NOUN	NNS	Number=Plur	18	obl	_	_
+22	to	to	PART	TO	_	23	mark	_	_
+23	overpower	overpower	VERB	VB	VerbForm=Inf	18	xcomp	_	_
+24	Teancum	Teancum	PROPN	NNP	_	23	obj	_	_
+25	because	because	SCONJ	IN	_	28	mark	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	smallness	smallness	NOUN	NN	Number=Sing	23	obl	_	_
+29	of	of	ADP	IN	_	31	case	_	_
+30	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	31	nmod:poss	_	_
+31	numbers	number	NOUN	NNS	Number=Plur	28	nmod	_	_
+32	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And as Teancum saw the armies of the Lamanites coming out against him he began to retreat down by the seashore, northward.
+# sent_id = 2027
+# llm_note = 'as Teancum saw' = temporal advcl of 'began'; 'coming out against him' = xcomp/acl of armies (small-clause perception complement); 'to retreat' = xcomp of began; 'northward' = advmod of retreat
+1	And	and	CCONJ	CC	_	15	cc	_	_
+2	as	as	SCONJ	IN	_	4	mark	_	_
+3	Teancum	Teancum	PROPN	NNP	_	4	nsubj	_	_
+4	saw	see	VERB	VBD	Tense=Past|VerbForm=Fin	15	advcl	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	armies	army	NOUN	NNS	Number=Plur	4	obj	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	6	nmod	_	_
+10	coming	come	VERB	VBG	VerbForm=Part	4	xcomp	_	_
+11	out	out	ADV	RP	_	10	compound:prt	_	_
+12	against	against	ADP	IN	_	13	case	_	_
+13	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	10	obl	_	_
+14	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	15	nsubj	_	_
+15	began	begin	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+16	to	to	PART	TO	_	17	mark	_	_
+17	retreat	retreat	VERB	VB	VerbForm=Inf	15	xcomp	_	_
+18	down	down	ADV	RB	_	17	advmod	_	_
+19	by	by	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	seashore	seashore	NOUN	NN	Number=Sing	17	obl	_	_
+22	,	,	PUNCT	,	_	23	punct	_	_
+23	northward	northward	ADV	RB	_	17	advmod	_	_
+24	.	.	PUNCT	.	_	15	punct	_	_
+
+# text = And it came to pass that when the Lamanites saw that he began to flee, they took courage and pursued them with vigor.
+# sent_id = 2028
+# llm_note = AICTP; embedded 'when' advcl inside the 'that' complement of pass; 'that he began to flee' = ccomp of saw; 'took courage' = main clause; 'pursued' = conj of took
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	18	mark	_	_
+7	when	when	SCONJ	WRB	_	10	mark	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	10	nsubj	_	_
+10	saw	see	VERB	VBD	Tense=Past|VerbForm=Fin	18	advcl	_	_
+11	that	that	SCONJ	IN	_	13	mark	_	_
+12	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	13	nsubj	_	_
+13	began	begin	VERB	VBD	Tense=Past|VerbForm=Fin	10	ccomp	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	flee	flee	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+16	,	,	PUNCT	,	_	18	punct	_	_
+17	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	18	nsubj	_	_
+18	took	take	VERB	VBD	Tense=Past|VerbForm=Fin	5	ccomp	_	_
+19	courage	courage	NOUN	NN	Number=Sing	18	obj	_	_
+20	and	and	CCONJ	CC	_	21	cc	_	_
+21	pursued	pursue	VERB	VBD	Tense=Past|VerbForm=Fin	18	conj	_	_
+22	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	21	obj	_	_
+23	with	with	ADP	IN	_	24	case	_	_
+24	vigor	vigor	NOUN	NN	Number=Sing	21	obl	_	_
+25	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And while Teancum was thus leading away the Lamanites who were pursuing them in vain, behold, Moroni commanded that a part of his army who were with him should march forth into the city, and take possession of it.
+# sent_id = 2029
+# llm_note = 'while' advcl of commanded; 'behold' = INTJ discourse of commanded; 'commanded that...march' = ccomp; 'take' = conj of march (shared modal 'should'); 'who were pursuing' = acl:relcl on Lamanites; 'who were with him' = acl:relcl on army
+1	And	and	CCONJ	CC	_	20	cc	_	_
+2	while	while	SCONJ	IN	_	6	mark	_	_
+3	Teancum	Teancum	PROPN	NNP	_	6	nsubj	_	_
+4	was	be	AUX	VBD	Tense=Past|VerbForm=Fin	6	aux	_	_
+5	thus	thus	ADV	RB	_	6	advmod	_	_
+6	leading	lead	VERB	VBG	VerbForm=Part	20	advcl	_	_
+7	away	away	ADV	RP	_	6	compound:prt	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	6	obj	_	_
+10	who	who	PRON	WP	_	12	nsubj	_	_
+11	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	12	aux	_	_
+12	pursuing	pursue	VERB	VBG	VerbForm=Part	9	acl:relcl	_	_
+13	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	12	obj	_	_
+14	in	in	ADP	IN	_	15	case	_	_
+15	vain	vain	NOUN	NN	Number=Sing	12	obl	_	_
+16	,	,	PUNCT	,	_	20	punct	_	_
+17	behold	behold	INTJ	UH	_	20	discourse	_	_
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	Moroni	Moroni	PROPN	NNP	_	20	nsubj	_	_
+20	commanded	command	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+21	that	that	SCONJ	IN	_	32	mark	_	_
+22	a	a	DET	DT	_	23	det	_	_
+23	part	part	NOUN	NN	Number=Sing	32	nsubj	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	26	nmod:poss	_	_
+26	army	army	NOUN	NN	Number=Sing	23	nmod	_	_
+27	who	who	PRON	WP	_	29	nsubj	_	_
+28	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	29	cop	_	_
+29	with	with	ADP	IN	_	26	acl:relcl	_	_
+30	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3	29	obl	_	_
+31	should	should	AUX	MD	VerbForm=Fin	32	aux	_	_
+32	march	march	VERB	VB	VerbForm=Inf	20	ccomp	_	_
+33	forth	forth	ADV	RB	_	32	advmod	_	_
+34	into	into	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	city	city	NOUN	NN	Number=Sing	32	obl	_	_
+37	,	,	PUNCT	,	_	32	punct	_	_
+38	and	and	CCONJ	CC	_	39	cc	_	_
+39	take	take	VERB	VB	VerbForm=Inf	32	conj	_	_
+40	possession	possession	NOUN	NN	Number=Sing	39	obj	_	_
+41	of	of	ADP	IN	_	42	case	_	_
+42	it	it	PRON	PRP	Case=Acc|Number=Sing|Person=3	40	nmod	_	_
+43	.	.	PUNCT	.	_	20	punct	_	_
+
+# text = And thus they did, and slew all those who had been left to protect the city, yea, all those who would not yield up their weapons of war.
+# sent_id = 2030
+# llm_note = 'did' is main VERB (pro-verb, anaphoric); 'slew' = conj of did; 'all those who...' = obj of slew; second 'all those' = appos (yea-introduced appositive); 'yield up' = particle verb
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	thus	thus	ADV	RB	_	4	advmod	_	_
+3	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	4	nsubj	_	_
+4	did	do	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	slew	slay	VERB	VBD	Tense=Past|VerbForm=Fin	4	conj	_	_
+8	all	all	DET	PDT	_	9	det:predet	_	_
+9	those	those	PRON	DT	_	7	obj	_	_
+10	who	who	PRON	WP	_	13	nsubj:pass	_	_
+11	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	13	aux	_	_
+12	been	be	AUX	VBN	VerbForm=Part	13	aux:pass	_	_
+13	left	leave	VERB	VBN	Tense=Past|VerbForm=Part	9	acl:relcl	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	protect	protect	VERB	VB	VerbForm=Inf	13	xcomp	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	city	city	NOUN	NN	Number=Sing	15	obj	_	_
+18	,	,	PUNCT	,	_	9	punct	_	_
+19	yea	yea	INTJ	UH	_	22	discourse	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	all	all	DET	PDT	_	22	det:predet	_	_
+22	those	those	PRON	DT	_	9	appos	_	_
+23	who	who	PRON	WP	_	26	nsubj	_	_
+24	would	would	AUX	MD	VerbForm=Fin	26	aux	_	_
+25	not	not	PART	RB	_	26	advmod	_	_
+26	yield	yield	VERB	VB	VerbForm=Inf	22	acl:relcl	_	_
+27	up	up	ADV	RP	_	26	compound:prt	_	_
+28	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	29	nmod:poss	_	_
+29	weapons	weapon	NOUN	NNS	Number=Plur	26	obj	_	_
+30	of	of	ADP	IN	_	31	case	_	_
+31	war	war	NOUN	NN	Number=Sing	29	nmod	_	_
+32	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And thus Moroni had obtained possession of the city Mulek with a part of his army, while he marched with the remainder to meet the Lamanites when they should return from the pursuit of Teancum.
+# sent_id = 2031
+# llm_note = 'had obtained' = pluperfect main; 'while he marched' = advcl; 'to meet' = purpose advcl/xcomp of marched; 'when they should return' = advcl of meet; 'city Mulek' = flat
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	thus	thus	ADV	RB	_	5	advmod	_	_
+3	Moroni	Moroni	PROPN	NNP	_	5	nsubj	_	_
+4	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	5	aux	_	_
+5	obtained	obtain	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	_
+6	possession	possession	NOUN	NN	Number=Sing	5	obj	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	city	city	NOUN	NN	Number=Sing	6	nmod	_	_
+10	Mulek	Mulek	PROPN	NNP	_	9	flat	_	_
+11	with	with	ADP	IN	_	13	case	_	_
+12	a	a	DET	DT	_	13	det	_	_
+13	part	part	NOUN	NN	Number=Sing	5	obl	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	16	nmod:poss	_	_
+16	army	army	NOUN	NN	Number=Sing	13	nmod	_	_
+17	,	,	PUNCT	,	_	5	punct	_	_
+18	while	while	SCONJ	IN	_	20	mark	_	_
+19	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	20	nsubj	_	_
+20	marched	march	VERB	VBD	Tense=Past|VerbForm=Fin	5	advcl	_	_
+21	with	with	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	remainder	remainder	NOUN	NN	Number=Sing	20	obl	_	_
+24	to	to	PART	TO	_	25	mark	_	_
+25	meet	meet	VERB	VB	VerbForm=Inf	20	advcl	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	25	obj	_	_
+28	when	when	SCONJ	WRB	_	31	mark	_	_
+29	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	31	nsubj	_	_
+30	should	should	AUX	MD	VerbForm=Fin	31	aux	_	_
+31	return	return	VERB	VB	VerbForm=Inf	25	advcl	_	_
+32	from	from	ADP	IN	_	34	case	_	_
+33	the	the	DET	DT	_	34	det	_	_
+34	pursuit	pursuit	NOUN	NN	Number=Sing	31	obl	_	_
+35	of	of	ADP	IN	_	36	case	_	_
+36	Teancum	Teancum	PROPN	NNP	_	34	nmod	_	_
+37	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And it came to pass that the Lamanites did pursue Teancum until they came near the city Bountiful, and then they were met by Lehi and a small army, which had been left to protect the city Bountiful.
+# sent_id = 2032
+# llm_note = AICTP; 'did pursue' = AUX+VERB; 'until they came near' = advcl; 'and then they were met' = conj of pursue (second main clause); 'by Lehi and a small army' = obl:agent; 'which had been left' = acl:relcl on army; 'city Bountiful' = flat
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	10	nsubj	_	_
+9	did	do	AUX	VBD	Tense=Past|VerbForm=Fin	10	aux	_	_
+10	pursue	pursue	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+11	Teancum	Teancum	PROPN	NNP	_	10	obj	_	_
+12	until	until	SCONJ	IN	_	14	mark	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	14	nsubj	_	_
+14	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	10	advcl	_	_
+15	near	near	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	city	city	NOUN	NN	Number=Sing	14	obl	_	_
+18	Bountiful	Bountiful	PROPN	NNP	_	17	flat	_	_
+19	,	,	PUNCT	,	_	24	punct	_	_
+20	and	and	CCONJ	CC	_	24	cc	_	_
+21	then	then	ADV	RB	_	24	advmod	_	_
+22	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	24	nsubj:pass	_	_
+23	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	24	aux:pass	_	_
+24	met	meet	VERB	VBN	Tense=Past|VerbForm=Part	10	conj	_	_
+25	by	by	ADP	IN	_	26	case	_	_
+26	Lehi	Lehi	PROPN	NNP	_	24	obl:agent	_	_
+27	and	and	CCONJ	CC	_	30	cc	_	_
+28	a	a	DET	DT	_	30	det	_	_
+29	small	small	ADJ	JJ	_	30	amod	_	_
+30	army	army	NOUN	NN	Number=Sing	26	conj	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	which	which	PRON	WDT	_	35	nsubj:pass	_	_
+33	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	35	aux	_	_
+34	been	be	AUX	VBN	VerbForm=Part	35	aux:pass	_	_
+35	left	leave	VERB	VBN	Tense=Past|VerbForm=Part	30	acl:relcl	_	_
+36	to	to	PART	TO	_	37	mark	_	_
+37	protect	protect	VERB	VB	VerbForm=Inf	35	xcomp	_	_
+38	the	the	DET	DT	_	39	det	_	_
+39	city	city	NOUN	NN	Number=Sing	37	obj	_	_
+40	Bountiful	Bountiful	PROPN	NNP	_	39	flat	_	_
+41	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now behold, when the chief captains of the Lamanites had beheld Lehi with his army coming against them, they fled in much confusion, lest perhaps they should not obtain the city Mulek before Lehi should overtake them; for they were wearied because of their march, and the men of Lehi were fresh.
+# sent_id = 2033
+# llm_note = 'behold' = INTJ discourse of fled; 'when' advcl of fled; 'coming against them' = xcomp (small-clause) of beheld; 'lest' = SCONJ advcl purpose-fear clause of fled; 'perhaps' = advmod inside lest-clause; 'before Lehi should overtake them' = advcl inside lest-clause on obtain; 'for' = SCONJ advcl causal; second clause 'men of Lehi were fresh' = conj of wearied-clause
+1	And	and	CCONJ	CC	_	23	cc	_	_
+2	now	now	ADV	RB	_	23	advmod	_	_
+3	behold	behold	INTJ	UH	_	23	discourse	_	_
+4	,	,	PUNCT	,	_	3	punct	_	_
+5	when	when	SCONJ	WRB	_	13	mark	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	chief	chief	ADJ	JJ	_	8	amod	_	_
+8	captains	captain	NOUN	NNS	Number=Plur	13	nsubj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	8	nmod	_	_
+12	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	13	aux	_	_
+13	beheld	behold	VERB	VBN	Tense=Past|VerbForm=Part	23	advcl	_	_
+14	Lehi	Lehi	PROPN	NNP	_	13	obj	_	_
+15	with	with	ADP	IN	_	17	case	_	_
+16	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	17	nmod:poss	_	_
+17	army	army	NOUN	NN	Number=Sing	14	nmod	_	_
+18	coming	come	VERB	VBG	VerbForm=Part	13	xcomp	_	_
+19	against	against	ADP	IN	_	20	case	_	_
+20	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	18	obl	_	_
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	23	nsubj	_	_
+23	fled	flee	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+24	in	in	ADP	IN	_	26	case	_	_
+25	much	much	ADJ	JJ	_	26	amod	_	_
+26	confusion	confusion	NOUN	NN	Number=Sing	23	obl	_	_
+27	,	,	PUNCT	,	_	23	punct	_	_
+28	lest	lest	SCONJ	IN	_	33	mark	_	_
+29	perhaps	perhaps	ADV	RB	_	33	advmod	_	_
+30	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	33	nsubj	_	_
+31	should	should	AUX	MD	VerbForm=Fin	33	aux	_	_
+32	not	not	PART	RB	_	33	advmod	_	_
+33	obtain	obtain	VERB	VB	VerbForm=Inf	23	advcl	_	_
+34	the	the	DET	DT	_	35	det	_	_
+35	city	city	NOUN	NN	Number=Sing	33	obj	_	_
+36	Mulek	Mulek	PROPN	NNP	_	35	flat	_	_
+37	before	before	SCONJ	IN	_	40	mark	_	_
+38	Lehi	Lehi	PROPN	NNP	_	40	nsubj	_	_
+39	should	should	AUX	MD	VerbForm=Fin	40	aux	_	_
+40	overtake	overtake	VERB	VB	VerbForm=Inf	33	advcl	_	_
+41	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	40	obj	_	_
+42	;	;	PUNCT	:	_	46	punct	_	_
+43	for	for	SCONJ	IN	_	46	mark	_	_
+44	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	46	nsubj	_	_
+45	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	46	cop	_	_
+46	wearied	weary	ADJ	JJ	_	23	advcl	_	_
+47	because	because	SCONJ	IN	_	50	mark	_	_
+48	of	of	ADP	IN	_	50	case	_	_
+49	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	50	nmod:poss	_	_
+50	march	march	NOUN	NN	Number=Sing	46	obl	_	_
+51	,	,	PUNCT	,	_	58	punct	_	_
+52	and	and	CCONJ	CC	_	58	cc	_	_
+53	the	the	DET	DT	_	54	det	_	_
+54	men	man	NOUN	NNS	Number=Plur	58	nsubj	_	_
+55	of	of	ADP	IN	_	56	case	_	_
+56	Lehi	Lehi	PROPN	NNP	_	54	nmod	_	_
+57	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	58	cop	_	_
+58	fresh	fresh	ADJ	JJ	_	46	conj	_	_
+59	.	.	PUNCT	.	_	23	punct	_	_
+
+# text = Now the Lamanites did not know that Moroni had been in their rear with his army; and all they feared was Lehi and his men.
+# sent_id = 2034
+# llm_note = 'did not know' = AUX+NEG+VERB; 'that Moroni had been...' = ccomp of know; second clause 'all they feared was Lehi' = cleft/pseudo-cleft: 'all' = nsubj, 'feared' in rel-clause, 'was' = cop, 'Lehi' = xcomp/root predicate; treat 'all they feared' as free relative functioning as nsubj of 'was'; Lehi = xcomp (predicate nominative)
+1	Now	now	ADV	RB	_	6	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	6	nsubj	_	_
+4	did	do	AUX	VBD	Tense=Past|VerbForm=Fin	6	aux	_	_
+5	not	not	PART	RB	_	6	advmod	_	_
+6	know	know	VERB	VB	VerbForm=Inf	0	root	_	_
+7	that	that	SCONJ	IN	_	10	mark	_	_
+8	Moroni	Moroni	PROPN	NNP	_	10	nsubj	_	_
+9	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	10	aux	_	_
+10	been	be	VERB	VBN	Tense=Past|VerbForm=Part	6	ccomp	_	_
+11	in	in	ADP	IN	_	13	case	_	_
+12	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	13	nmod:poss	_	_
+13	rear	rear	NOUN	NN	Number=Sing	10	obl	_	_
+14	with	with	ADP	IN	_	16	case	_	_
+15	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	16	nmod:poss	_	_
+16	army	army	NOUN	NN	Number=Sing	10	obl	_	_
+17	;	;	PUNCT	:	_	22	punct	_	_
+18	and	and	CCONJ	CC	_	22	cc	_	_
+19	all	all	PRON	DT	_	22	nsubj	_	_
+20	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	21	nsubj	_	_
+21	feared	fear	VERB	VBD	Tense=Past|VerbForm=Fin	19	acl:relcl	_	_
+22	was	be	VERB	VBD	Tense=Past|VerbForm=Fin	6	conj	_	_
+23	Lehi	Lehi	PROPN	NNP	_	22	xcomp	_	_
+24	and	and	CCONJ	CC	_	26	cc	_	_
+25	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	26	nmod:poss	_	_
+26	men	man	NOUN	NNS	Number=Plur	23	conj	_	_
+27	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Now Lehi was not desirous to overtake them till they should meet Moroni and his army.
+# sent_id = 2035
+# llm_note = 'desirous' = ADJ predicate; 'to overtake' = xcomp of desirous; 'till' = SCONJ advcl of desirous/overtake
+1	Now	now	ADV	RB	_	5	advmod	_	_
+2	Lehi	Lehi	PROPN	NNP	_	5	nsubj	_	_
+3	was	be	AUX	VBD	Tense=Past|VerbForm=Fin	5	cop	_	_
+4	not	not	PART	RB	_	5	advmod	_	_
+5	desirous	desirous	ADJ	JJ	_	0	root	_	_
+6	to	to	PART	TO	_	7	mark	_	_
+7	overtake	overtake	VERB	VB	VerbForm=Inf	5	xcomp	_	_
+8	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	7	obj	_	_
+9	till	till	SCONJ	IN	_	12	mark	_	_
+10	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	12	nsubj	_	_
+11	should	should	AUX	MD	VerbForm=Fin	12	aux	_	_
+12	meet	meet	VERB	VB	VerbForm=Inf	7	advcl	_	_
+13	Moroni	Moroni	PROPN	NNP	_	12	obj	_	_
+14	and	and	CCONJ	CC	_	16	cc	_	_
+15	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	16	nmod:poss	_	_
+16	army	army	NOUN	NN	Number=Sing	13	conj	_	_
+17	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And it came to pass that before the Lamanites had retreated far they were surrounded by the Nephites, by the men of Moroni on one hand, and the men of Lehi on the other, all of whom were fresh and full of strength; but the Lamanites were wearied because of their long march.
+# sent_id = 2036
+# llm_note = AICTP; 'before the Lamanites had retreated far' = advcl of surrounded; 'by the Nephites' = obl:agent; 'by the men of Moroni on one hand' = appositive detail of Nephites; 'all of whom were fresh and full of strength' = acl:relcl on Nephites; 'but the Lamanites were wearied' = conj contrast; 'full of strength' = xcomp/amod coordinated with fresh
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	15	mark	_	_
+7	before	before	SCONJ	IN	_	11	mark	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	11	nsubj	_	_
+10	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	11	aux	_	_
+11	retreated	retreat	VERB	VBN	Tense=Past|VerbForm=Part	15	advcl	_	_
+12	far	far	ADV	RB	_	11	advmod	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	15	nsubj:pass	_	_
+14	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	15	aux:pass	_	_
+15	surrounded	surround	VERB	VBN	Tense=Past|VerbForm=Part	5	ccomp	_	_
+16	by	by	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	Nephites	Nephite	PROPN	NNPS	Number=Plur	15	obl:agent	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	by	by	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	men	man	NOUN	NNS	Number=Plur	18	appos	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	Moroni	Moroni	PROPN	NNP	_	22	nmod	_	_
+25	on	on	ADP	IN	_	27	case	_	_
+26	one	one	NUM	CD	_	27	nummod	_	_
+27	hand	hand	NOUN	NN	Number=Sing	22	obl	_	_
+28	,	,	PUNCT	,	_	22	punct	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	men	man	NOUN	NNS	Number=Plur	22	conj	_	_
+32	of	of	ADP	IN	_	33	case	_	_
+33	Lehi	Lehi	PROPN	NNP	_	31	nmod	_	_
+34	on	on	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	other	other	NOUN	NN	Number=Sing	31	obl	_	_
+37	,	,	PUNCT	,	_	42	punct	_	_
+38	all	all	PRON	DT	_	42	nsubj	_	_
+39	of	of	ADP	IN	_	40	case	_	_
+40	whom	who	PRON	WP	_	38	nmod	_	_
+41	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	42	cop	_	_
+42	fresh	fresh	ADJ	JJ	_	18	acl:relcl	_	_
+43	and	and	CCONJ	CC	_	44	cc	_	_
+44	full	full	ADJ	JJ	_	42	conj	_	_
+45	of	of	ADP	IN	_	46	case	_	_
+46	strength	strength	NOUN	NN	Number=Sing	44	obl	_	_
+47	;	;	PUNCT	:	_	52	punct	_	_
+48	but	but	CCONJ	CC	_	52	cc	_	_
+49	the	the	DET	DT	_	50	det	_	_
+50	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	52	nsubj	_	_
+51	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	52	cop	_	_
+52	wearied	weary	ADJ	JJ	_	15	conj	_	_
+53	because	because	SCONJ	IN	_	57	mark	_	_
+54	of	of	ADP	IN	_	57	case	_	_
+55	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	57	nmod:poss	_	_
+56	long	long	ADJ	JJ	_	57	amod	_	_
+57	march	march	NOUN	NN	Number=Sing	52	obl	_	_
+58	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Moroni commanded his men that they should fall upon them until they had given up their weapons of war.
+# sent_id = 2037
+# llm_note = 'commanded that' = volition verb + ccomp; 'fall upon' = particle verb; 'until they had given up' = advcl of fall; 'given up' = particle verb
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Moroni	Moroni	PROPN	NNP	_	3	nsubj	_	_
+3	commanded	command	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	5	nmod:poss	_	_
+5	men	man	NOUN	NNS	Number=Plur	3	obj	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	9	nsubj	_	_
+8	should	should	AUX	MD	VerbForm=Fin	9	aux	_	_
+9	fall	fall	VERB	VB	VerbForm=Inf	3	ccomp	_	_
+10	upon	upon	ADP	IN	_	11	case	_	_
+11	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	9	obl	_	_
+12	until	until	SCONJ	IN	_	15	mark	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	15	nsubj	_	_
+14	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	15	aux	_	_
+15	given	give	VERB	VBN	Tense=Past|VerbForm=Part	9	advcl	_	_
+16	up	up	ADV	RP	_	15	compound:prt	_	_
+17	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	18	nmod:poss	_	_
+18	weapons	weapon	NOUN	NNS	Number=Plur	15	obj	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	war	war	NOUN	NN	Number=Sing	18	nmod	_	_
+21	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that Jacob, being their leader, being also a Zoramite, and having an unconquerable spirit, he led the Lamanites forth to battle with exceeding fury against Moroni.
+# sent_id = 2038
+# llm_note = AICTP; 'Jacob' = dislocated topic resumed by 'he'; three participial appositives ('being their leader', 'being also a Zoramite', 'having an unconquerable spirit') are advcl/appos of Jacob; 'led forth to battle' = main verb; 'to battle' = obl purpose
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	25	mark	_	_
+7	Jacob	Jacob	PROPN	NNP	_	25	dislocated	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	being	be	VERB	VBG	VerbForm=Part	7	advcl	_	_
+10	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	11	nmod:poss	_	_
+11	leader	leader	NOUN	NN	Number=Sing	9	xcomp	_	_
+12	,	,	PUNCT	,	_	9	punct	_	_
+13	being	be	VERB	VBG	VerbForm=Part	7	advcl	_	_
+14	also	also	ADV	RB	_	13	advmod	_	_
+15	a	a	DET	DT	_	16	det	_	_
+16	Zoramite	Zoramite	PROPN	NNP	_	13	xcomp	_	_
+17	,	,	PUNCT	,	_	13	punct	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	having	have	VERB	VBG	VerbForm=Part	7	advcl	_	_
+20	an	a	DET	DT	_	22	det	_	_
+21	unconquerable	unconquerable	ADJ	JJ	_	22	amod	_	_
+22	spirit	spirit	NOUN	NN	Number=Sing	19	obj	_	_
+23	,	,	PUNCT	,	_	19	punct	_	_
+24	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	25	nsubj	_	_
+25	led	lead	VERB	VBD	Tense=Past|VerbForm=Fin	5	ccomp	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	25	obj	_	_
+28	forth	forth	ADV	RB	_	25	advmod	_	_
+29	to	to	ADP	IN	_	30	case	_	_
+30	battle	battle	NOUN	NN	Number=Sing	25	obl	_	_
+31	with	with	ADP	IN	_	33	case	_	_
+32	exceeding	exceed	VERB	VBG	VerbForm=Part	33	amod	_	_
+33	fury	fury	NOUN	NN	Number=Sing	25	obl	_	_
+34	against	against	ADP	IN	_	35	case	_	_
+35	Moroni	Moroni	PROPN	NNP	_	25	obl	_	_
+36	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Moroni being in their course of march, therefore Jacob was determined to slay them and cut his way through to the city of Mulek.
+# sent_id = 2039
+# llm_note = 'Moroni being in their course of march' = absolute construction (advcl) causal; 'Jacob was determined' = main; 'to slay' = xcomp of determined; 'cut' = conj of slay (shared 'to')
+1	Moroni	Moroni	PROPN	NNP	_	2	nsubj	_	_
+2	being	be	VERB	VBG	VerbForm=Part	12	advcl	_	_
+3	in	in	ADP	IN	_	5	case	_	_
+4	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	5	nmod:poss	_	_
+5	course	course	NOUN	NN	Number=Sing	2	obl	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	march	march	NOUN	NN	Number=Sing	5	nmod	_	_
+8	,	,	PUNCT	,	_	2	punct	_	_
+9	therefore	therefore	ADV	RB	_	12	advmod	_	_
+10	Jacob	Jacob	PROPN	NNP	_	12	nsubj	_	_
+11	was	be	AUX	VBD	Tense=Past|VerbForm=Fin	12	cop	_	_
+12	determined	determined	ADJ	JJ	_	0	root	_	_
+13	to	to	PART	TO	_	14	mark	_	_
+14	slay	slay	VERB	VB	VerbForm=Inf	12	xcomp	_	_
+15	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	14	obj	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	cut	cut	VERB	VB	VerbForm=Inf	14	conj	_	_
+18	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	19	nmod:poss	_	_
+19	way	way	NOUN	NN	Number=Sing	17	obj	_	_
+20	through	through	ADV	RB	_	17	advmod	_	_
+21	to	to	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	city	city	NOUN	NN	Number=Sing	17	obl	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	Mulek	Mulek	PROPN	NNP	_	23	nmod	_	_
+26	.	.	PUNCT	.	_	12	punct	_	_
+
+# text = But behold, Moroni and his men were more powerful; therefore they did not give way before the Lamanites.
+# sent_id = 2040
+# llm_note = 'behold' = INTJ discourse of 'were'; 'more powerful' = ADJ predicate (comparative); semicolon splits into two coordinate clauses; 'give way' = phrasal
+1	But	but	CCONJ	CC	_	8	cc	_	_
+2	behold	behold	INTJ	UH	_	8	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	Moroni	Moroni	PROPN	NNP	_	8	nsubj	_	_
+5	and	and	CCONJ	CC	_	7	cc	_	_
+6	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	7	nmod:poss	_	_
+7	men	man	NOUN	NNS	Number=Plur	4	conj	_	_
+8	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	10	cop	_	_
+9	more	more	ADV	RBR	_	10	advmod	_	_
+10	powerful	powerful	ADJ	JJ	_	0	root	_	_
+11	;	;	PUNCT	:	_	16	punct	_	_
+12	therefore	therefore	ADV	RB	_	16	advmod	_	_
+13	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	16	nsubj	_	_
+14	did	do	AUX	VBD	Tense=Past|VerbForm=Fin	16	aux	_	_
+15	not	not	PART	RB	_	16	advmod	_	_
+16	give	give	VERB	VB	VerbForm=Inf	10	conj	_	_
+17	way	way	NOUN	NN	Number=Sing	16	obj	_	_
+18	before	before	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	16	obl	_	_
+21	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And it came to pass that they fought on both hands with exceeding fury; and there were many slain on both sides; yea, and Moroni was wounded and Jacob was killed.
+# sent_id = 2041
+# llm_note = AICTP; three coordinate clauses after 'pass': fought / there were many slain / Moroni was wounded; 'Jacob was killed' conj of 'Moroni was wounded'; 'there' = expl of 'were'; 'many slain' = nsubj+past-part predicate
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	8	nsubj	_	_
+8	fought	fight	VERB	VBD	Tense=Past|VerbForm=Fin	5	ccomp	_	_
+9	on	on	ADP	IN	_	11	case	_	_
+10	both	both	DET	DT	_	11	det	_	_
+11	hands	hand	NOUN	NNS	Number=Plur	8	obl	_	_
+12	with	with	ADP	IN	_	14	case	_	_
+13	exceeding	exceed	VERB	VBG	VerbForm=Part	14	amod	_	_
+14	fury	fury	NOUN	NN	Number=Sing	8	obl	_	_
+15	;	;	PUNCT	:	_	18	punct	_	_
+16	and	and	CCONJ	CC	_	18	cc	_	_
+17	there	there	PRON	EX	_	18	expl	_	_
+18	were	be	VERB	VBD	Tense=Past|VerbForm=Fin	8	conj	_	_
+19	many	many	ADJ	JJ	_	20	amod	_	_
+20	slain	slay	VERB	VBN	Tense=Past|VerbForm=Part	18	nsubj	_	_
+21	on	on	ADP	IN	_	23	case	_	_
+22	both	both	DET	DT	_	23	det	_	_
+23	sides	side	NOUN	NNS	Number=Plur	18	obl	_	_
+24	;	;	PUNCT	:	_	30	punct	_	_
+25	yea	yea	INTJ	UH	_	30	discourse	_	_
+26	,	,	PUNCT	,	_	25	punct	_	_
+27	and	and	CCONJ	CC	_	30	cc	_	_
+28	Moroni	Moroni	PROPN	NNP	_	30	nsubj:pass	_	_
+29	was	be	AUX	VBD	Tense=Past|VerbForm=Fin	30	aux:pass	_	_
+30	wounded	wound	VERB	VBN	Tense=Past|VerbForm=Part	8	conj	_	_
+31	and	and	CCONJ	CC	_	34	cc	_	_
+32	Jacob	Jacob	PROPN	NNP	_	34	nsubj:pass	_	_
+33	was	be	AUX	VBD	Tense=Past|VerbForm=Fin	34	aux:pass	_	_
+34	killed	kill	VERB	VBN	Tense=Past|VerbForm=Part	30	conj	_	_
+35	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Lehi pressed upon their rear with such fury with his strong men, that the Lamanites in the rear delivered up their weapons of war; and the remainder of them, being much confused, knew not whither to go or to strike.
+# sent_id = 2042
+# llm_note = 'such...that' = result clause (advcl); 'deliver up' = particle verb; second clause 'knew not whither to go or to strike' = conj of delivered; 'whither to go' = indirect question / ccomp of knew; 'being much confused' = advcl of knew (participial)
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Lehi	Lehi	PROPN	NNP	_	3	nsubj	_	_
+3	pressed	press	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	upon	upon	ADP	IN	_	6	case	_	_
+5	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	6	nmod:poss	_	_
+6	rear	rear	NOUN	NN	Number=Sing	3	obl	_	_
+7	with	with	ADP	IN	_	9	case	_	_
+8	such	such	ADJ	JJ	_	9	amod	_	_
+9	fury	fury	NOUN	NN	Number=Sing	3	obl	_	_
+10	with	with	ADP	IN	_	13	case	_	_
+11	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	13	nmod:poss	_	_
+12	strong	strong	ADJ	JJ	_	13	amod	_	_
+13	men	man	NOUN	NNS	Number=Plur	3	obl	_	_
+14	,	,	PUNCT	,	_	21	punct	_	_
+15	that	that	SCONJ	IN	_	21	mark	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	21	nsubj	_	_
+18	in	in	ADP	IN	_	20	case	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	rear	rear	NOUN	NN	Number=Sing	17	nmod	_	_
+21	delivered	deliver	VERB	VBD	Tense=Past|VerbForm=Fin	3	advcl	_	_
+22	up	up	ADV	RP	_	21	compound:prt	_	_
+23	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	24	nmod:poss	_	_
+24	weapons	weapon	NOUN	NNS	Number=Plur	21	obj	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	war	war	NOUN	NN	Number=Sing	24	nmod	_	_
+27	;	;	PUNCT	:	_	38	punct	_	_
+28	and	and	CCONJ	CC	_	38	cc	_	_
+29	the	the	DET	DT	_	30	det	_	_
+30	remainder	remainder	NOUN	NN	Number=Sing	38	nsubj	_	_
+31	of	of	ADP	IN	_	32	case	_	_
+32	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	30	nmod	_	_
+33	,	,	PUNCT	,	_	34	punct	_	_
+34	being	be	VERB	VBG	VerbForm=Part	38	advcl	_	_
+35	much	much	ADV	RB	_	36	advmod	_	_
+36	confused	confuse	VERB	VBN	VerbForm=Part	34	xcomp	_	_
+37	,	,	PUNCT	,	_	34	punct	_	_
+38	knew	know	VERB	VBD	Tense=Past|VerbForm=Fin	3	conj	_	_
+39	not	not	PART	RB	_	38	advmod	_	_
+40	whither	whither	ADV	WRB	_	42	advmod	_	_
+41	to	to	PART	TO	_	42	mark	_	_
+42	go	go	VERB	VB	VerbForm=Inf	38	ccomp	_	_
+43	or	or	CCONJ	CC	_	45	cc	_	_
+44	to	to	PART	TO	_	45	mark	_	_
+45	strike	strike	VERB	VB	VerbForm=Inf	42	conj	_	_
+46	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Now Moroni seeing their confusion, he said unto them:
+# sent_id = 2043
+# llm_note = 'Moroni seeing their confusion' = absolute/participial advcl of said; 'he' resumes Moroni as nsubj of said; 'unto them' = obl of said
+1	Now	now	ADV	RB	_	8	advmod	_	_
+2	Moroni	Moroni	PROPN	NNP	_	3	nsubj	_	_
+3	seeing	see	VERB	VBG	VerbForm=Part	8	advcl	_	_
+4	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	5	nmod:poss	_	_
+5	confusion	confusion	NOUN	NN	Number=Sing	3	obj	_	_
+6	,	,	PUNCT	,	_	3	punct	_	_
+7	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_
+8	said	say	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+9	unto	unto	ADP	IN	_	10	case	_	_
+10	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	8	obl	_	_
+11	:	:	PUNCT	:	_	8	punct	_	_
+
+# text = If ye will bring forth your weapons of war and deliver them up, behold we will forbear shedding your blood.
+# sent_id = 2044
+# llm_note = conditional: 'if ye will bring...and deliver them up' = advcl of forbear; 'behold' = INTJ discourse of forbear; 'forbear shedding' = VERB+gerund (xcomp or obj)
+1	If	if	SCONJ	IN	_	4	mark	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	4	nsubj	_	_
+3	will	will	AUX	MD	VerbForm=Fin	4	aux	_	_
+4	bring	bring	VERB	VB	VerbForm=Inf	18	advcl	_	_
+5	forth	forth	ADV	RB	_	4	advmod	_	_
+6	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	7	nmod:poss	_	_
+7	weapons	weapon	NOUN	NNS	Number=Plur	4	obj	_	_
+8	of	of	ADP	IN	_	9	case	_	_
+9	war	war	NOUN	NN	Number=Sing	7	nmod	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	deliver	deliver	VERB	VB	VerbForm=Inf	4	conj	_	_
+12	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	11	obj	_	_
+13	up	up	ADV	RP	_	11	compound:prt	_	_
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	behold	behold	INTJ	UH	_	18	discourse	_	_
+16	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1	18	nsubj	_	_
+17	will	will	AUX	MD	VerbForm=Fin	18	aux	_	_
+18	forbear	forbear	VERB	VB	VerbForm=Inf	0	root	_	_
+19	shedding	shed	VERB	VBG	VerbForm=Part	18	xcomp	_	_
+20	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	21	nmod:poss	_	_
+21	blood	blood	NOUN	NN	Number=Sing	19	obj	_	_
+22	.	.	PUNCT	.	_	18	punct	_	_
+
+# text = And it came to pass that when the Lamanites had heard these words, their chief captains, all those who were not slain, came forth and threw down their weapons of war at the feet of Moroni, and also commanded their men that they should do the same.
+# sent_id = 2045
+# llm_note = AICTP; 'when the Lamanites had heard' = advcl of came; 'their chief captains' = nsubj of came; 'all those who were not slain' = appos of captains; 'threw down' = conj of came; 'commanded' = conj of came (and also); 'that they should do the same' = ccomp of commanded
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	26	mark	_	_
+7	when	when	SCONJ	WRB	_	11	mark	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	11	nsubj	_	_
+10	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	11	aux	_	_
+11	heard	hear	VERB	VBN	Tense=Past|VerbForm=Part	26	advcl	_	_
+12	these	this	DET	DT	_	13	det	_	_
+13	words	word	NOUN	NNS	Number=Plur	11	obj	_	_
+14	,	,	PUNCT	,	_	26	punct	_	_
+15	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	17	nmod:poss	_	_
+16	chief	chief	ADJ	JJ	_	17	amod	_	_
+17	captains	captain	NOUN	NNS	Number=Plur	26	nsubj	_	_
+18	,	,	PUNCT	,	_	17	punct	_	_
+19	all	all	DET	PDT	_	20	det:predet	_	_
+20	those	those	PRON	DT	_	17	appos	_	_
+21	who	who	PRON	WP	_	24	nsubj:pass	_	_
+22	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	24	aux:pass	_	_
+23	not	not	PART	RB	_	24	advmod	_	_
+24	slain	slay	VERB	VBN	Tense=Past|VerbForm=Part	20	acl:relcl	_	_
+25	,	,	PUNCT	,	_	26	punct	_	_
+26	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	5	ccomp	_	_
+27	forth	forth	ADV	RB	_	26	advmod	_	_
+28	and	and	CCONJ	CC	_	29	cc	_	_
+29	threw	throw	VERB	VBD	Tense=Past|VerbForm=Fin	26	conj	_	_
+30	down	down	ADV	RP	_	29	compound:prt	_	_
+31	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	32	nmod:poss	_	_
+32	weapons	weapon	NOUN	NNS	Number=Plur	29	obj	_	_
+33	of	of	ADP	IN	_	34	case	_	_
+34	war	war	NOUN	NN	Number=Sing	32	nmod	_	_
+35	at	at	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	feet	foot	NOUN	NNS	Number=Plur	29	obl	_	_
+38	of	of	ADP	IN	_	39	case	_	_
+39	Moroni	Moroni	PROPN	NNP	_	37	nmod	_	_
+40	,	,	PUNCT	,	_	43	punct	_	_
+41	and	and	CCONJ	CC	_	43	cc	_	_
+42	also	also	ADV	RB	_	43	advmod	_	_
+43	commanded	command	VERB	VBD	Tense=Past|VerbForm=Fin	26	conj	_	_
+44	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	45	nmod:poss	_	_
+45	men	man	NOUN	NNS	Number=Plur	43	obj	_	_
+46	that	that	SCONJ	IN	_	49	mark	_	_
+47	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	49	nsubj	_	_
+48	should	should	AUX	MD	VerbForm=Fin	49	aux	_	_
+49	do	do	VERB	VB	VerbForm=Inf	43	ccomp	_	_
+50	the	the	DET	DT	_	51	det	_	_
+51	same	same	ADJ	JJ	_	49	obj	_	_
+52	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But behold, there were many that would not; and those who would not deliver up their swords were taken and bound, and their weapons of war were taken from them, and they were compelled to march with their brethren forth into the land Bountiful.
+# sent_id = 2046
+# llm_note = 'behold' = INTJ discourse of 'were'; 'there were many that would not' = existential; 'that would not' = acl:relcl on many (ellipsis of VP); three passive coordinate clauses follow semicolon: taken and bound / weapons were taken / compelled to march; 'land Bountiful' = flat
+1	But	but	CCONJ	CC	_	5	cc	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	there	there	PRON	EX	_	5	expl	_	_
+5	were	be	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+6	many	many	PRON	DT	_	5	nsubj	_	_
+7	that	that	PRON	WDT	_	9	nsubj	_	_
+8	would	would	AUX	MD	VerbForm=Fin	9	aux	_	_
+9	not	not	VERB	VB	VerbForm=Inf	6	acl:relcl	_	_
+10	;	;	PUNCT	:	_	21	punct	_	_
+11	and	and	CCONJ	CC	_	21	cc	_	_
+12	those	those	PRON	DT	_	21	nsubj:pass	_	_
+13	who	who	PRON	WP	_	16	nsubj	_	_
+14	would	would	AUX	MD	VerbForm=Fin	16	aux	_	_
+15	not	not	PART	RB	_	16	advmod	_	_
+16	deliver	deliver	VERB	VB	VerbForm=Inf	12	acl:relcl	_	_
+17	up	up	ADV	RP	_	16	compound:prt	_	_
+18	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	19	nmod:poss	_	_
+19	swords	sword	NOUN	NNS	Number=Plur	16	obj	_	_
+20	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	21	aux:pass	_	_
+21	taken	take	VERB	VBN	Tense=Past|VerbForm=Part	5	conj	_	_
+22	and	and	CCONJ	CC	_	23	cc	_	_
+23	bound	bind	VERB	VBN	Tense=Past|VerbForm=Part	21	conj	_	_
+24	,	,	PUNCT	,	_	31	punct	_	_
+25	and	and	CCONJ	CC	_	31	cc	_	_
+26	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	27	nmod:poss	_	_
+27	weapons	weapon	NOUN	NNS	Number=Plur	31	nsubj:pass	_	_
+28	of	of	ADP	IN	_	29	case	_	_
+29	war	war	NOUN	NN	Number=Sing	27	nmod	_	_
+30	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	31	aux:pass	_	_
+31	taken	take	VERB	VBN	Tense=Past|VerbForm=Part	21	conj	_	_
+32	from	from	ADP	IN	_	33	case	_	_
+33	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	31	obl	_	_
+34	,	,	PUNCT	,	_	38	punct	_	_
+35	and	and	CCONJ	CC	_	38	cc	_	_
+36	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	38	nsubj:pass	_	_
+37	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	38	aux:pass	_	_
+38	compelled	compel	VERB	VBN	Tense=Past|VerbForm=Part	21	conj	_	_
+39	to	to	PART	TO	_	40	mark	_	_
+40	march	march	VERB	VB	VerbForm=Inf	38	xcomp	_	_
+41	with	with	ADP	IN	_	43	case	_	_
+42	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	43	nmod:poss	_	_
+43	brethren	brethren	NOUN	NNS	Number=Plur	40	obl	_	_
+44	forth	forth	ADV	RB	_	40	advmod	_	_
+45	into	into	ADP	IN	_	47	case	_	_
+46	the	the	DET	DT	_	47	det	_	_
+47	land	land	NOUN	NN	Number=Sing	40	obl	_	_
+48	Bountiful	Bountiful	PROPN	NNP	_	47	flat	_	_
+49	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And now the number of prisoners who were taken exceeded more than the number of those who had been slain, yea, more than those who had been slain on both sides.
+# sent_id = 2047
+# llm_note = 'exceeded more than' = comparative construction; 'who were taken' = acl:relcl on prisoners; 'the number of those who had been slain' = obl (comparee); 'yea, more than those...' = appositive elaboration of comparison; second 'who had been slain' = acl:relcl
+1	And	and	CCONJ	CC	_	10	cc	_	_
+2	now	now	ADV	RB	_	10	advmod	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	number	number	NOUN	NN	Number=Sing	10	nsubj	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	prisoners	prisoner	NOUN	NNS	Number=Plur	4	nmod	_	_
+7	who	who	PRON	WP	_	9	nsubj:pass	_	_
+8	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	9	aux:pass	_	_
+9	taken	take	VERB	VBN	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
+10	exceeded	exceed	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+11	more	more	ADV	RBR	_	12	advmod	_	_
+12	than	than	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	number	number	NOUN	NN	Number=Sing	10	obl	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	those	those	PRON	DT	_	14	nmod	_	_
+17	who	who	PRON	WP	_	20	nsubj:pass	_	_
+18	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	20	aux	_	_
+19	been	be	AUX	VBN	VerbForm=Part	20	aux:pass	_	_
+20	slain	slay	VERB	VBN	Tense=Past|VerbForm=Part	16	acl:relcl	_	_
+21	,	,	PUNCT	,	_	24	punct	_	_
+22	yea	yea	INTJ	UH	_	24	discourse	_	_
+23	,	,	PUNCT	,	_	22	punct	_	_
+24	more	more	ADV	RBR	_	10	parataxis	_	_
+25	than	than	ADP	IN	_	26	case	_	_
+26	those	those	PRON	DT	_	24	obl	_	_
+27	who	who	PRON	WP	_	30	nsubj:pass	_	_
+28	had	have	AUX	VBD	Tense=Past|VerbForm=Fin	30	aux	_	_
+29	been	be	AUX	VBN	VerbForm=Part	30	aux:pass	_	_
+30	slain	slay	VERB	VBN	Tense=Past|VerbForm=Part	26	acl:relcl	_	_
+31	on	on	ADP	IN	_	33	case	_	_
+32	both	both	DET	DT	_	33	det	_	_
+33	sides	side	NOUN	NNS	Number=Plur	30	obl	_	_
+34	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And it came to pass that they did set guards over the prisoners of the Lamanites, and did compel them to go forth and bury their dead, yea, and also the dead of the Nephites who were slain; and Moroni placed men over them to guard them while they should perform their labors.
+# sent_id = 2048
+# llm_note = AICTP; 'did set...and did compel' = two coordinate predicates; 'to go forth and bury' = xcomp of compel; 'go forth' and 'bury' = conj pair; 'yea, and also the dead of the Nephites' = appositive to 'their dead'; 'who were slain' = acl:relcl on Nephites; second main clause 'Moroni placed men' = conj of set; 'to guard them' = advcl purpose; 'while they should perform their labors' = advcl of guard
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	VerbForm=Inf	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	9	nsubj	_	_
+8	did	do	AUX	VBD	Tense=Past|VerbForm=Fin	9	aux	_	_
+9	set	set	VERB	VB	VerbForm=Inf	5	ccomp	_	_
+10	guards	guard	NOUN	NNS	Number=Plur	9	obj	_	_
+11	over	over	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	prisoners	prisoner	NOUN	NNS	Number=Plur	9	obl	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	Lamanites	Lamanite	PROPN	NNPS	Number=Plur	13	nmod	_	_
+17	,	,	PUNCT	,	_	9	punct	_	_
+18	and	and	CCONJ	CC	_	20	cc	_	_
+19	did	do	AUX	VBD	Tense=Past|VerbForm=Fin	20	aux	_	_
+20	compel	compel	VERB	VB	VerbForm=Inf	9	conj	_	_
+21	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	20	obj	_	_
+22	to	to	PART	TO	_	23	mark	_	_
+23	go	go	VERB	VB	VerbForm=Inf	20	xcomp	_	_
+24	forth	forth	ADV	RB	_	23	advmod	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	bury	bury	VERB	VB	VerbForm=Inf	23	conj	_	_
+27	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	28	nmod:poss	_	_
+28	dead	dead	NOUN	NN	Number=Sing	26	obj	_	_
+29	,	,	PUNCT	,	_	35	punct	_	_
+30	yea	yea	INTJ	UH	_	35	discourse	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	and	and	CCONJ	CC	_	35	cc	_	_
+33	also	also	ADV	RB	_	35	advmod	_	_
+34	the	the	DET	DT	_	35	det	_	_
+35	dead	dead	NOUN	NN	Number=Sing	28	appos	_	_
+36	of	of	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	Nephites	Nephite	PROPN	NNPS	Number=Plur	35	nmod	_	_
+39	who	who	PRON	WP	_	41	nsubj:pass	_	_
+40	were	be	AUX	VBD	Tense=Past|VerbForm=Fin	41	aux:pass	_	_
+41	slain	slay	VERB	VBN	Tense=Past|VerbForm=Part	38	acl:relcl	_	_
+42	;	;	PUNCT	:	_	45	punct	_	_
+43	and	and	CCONJ	CC	_	45	cc	_	_
+44	Moroni	Moroni	PROPN	NNP	_	45	nsubj	_	_
+45	placed	place	VERB	VBD	Tense=Past|VerbForm=Fin	9	conj	_	_
+46	men	man	NOUN	NNS	Number=Plur	45	obj	_	_
+47	over	over	ADP	IN	_	48	case	_	_
+48	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	45	obl	_	_
+49	to	to	PART	TO	_	50	mark	_	_
+50	guard	guard	VERB	VB	VerbForm=Inf	45	advcl	_	_
+51	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	50	obj	_	_
+52	while	while	SCONJ	IN	_	55	mark	_	_
+53	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	55	nsubj	_	_
+54	should	should	AUX	MD	VerbForm=Fin	55	aux	_	_
+55	perform	perform	VERB	VB	VerbForm=Inf	50	advcl	_	_
+56	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	57	nmod:poss	_	_
+57	labors	labor	NOUN	NNS	Number=Plur	55	obj	_	_
+58	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Moroni went to the city of Mulek with Lehi, and took command of the city and gave it unto Lehi.
+# sent_id = 2049
+# llm_note = three coordinate predicates: went / took / gave; 'to the city of Mulek' = obl of went; 'with Lehi' = obl of went; 'command of the city' = obj of took; 'unto Lehi' = obl of gave
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	Moroni	Moroni	PROPN	NNP	_	3	nsubj	_	_
+3	went	go	VERB	VBD	Tense=Past|VerbForm=Fin	0	root	_	_
+4	to	to	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	city	city	NOUN	NN	Number=Sing	3	obl	_	_
+7	of	of	ADP	IN	_	8	case	_	_
+8	Mulek	Mulek	PROPN	NNP	_	6	nmod	_	_
+9	with	with	ADP	IN	_	10	case	_	_
+10	Lehi	Lehi	PROPN	NNP	_	3	obl	_	_
+11	,	,	PUNCT	,	_	3	punct	_	_
+12	and	and	CCONJ	CC	_	13	cc	_	_
+13	took	take	VERB	VBD	Tense=Past|VerbForm=Fin	3	conj	_	_
+14	command	command	NOUN	NN	Number=Sing	13	obj	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	city	city	NOUN	NN	Number=Sing	14	nmod	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	gave	give	VERB	VBD	Tense=Past|VerbForm=Fin	3	conj	_	_
+20	it	it	PRON	PRP	Case=Acc|Number=Sing|Person=3	19	obj	_	_
+21	unto	unto	ADP	IN	_	22	case	_	_
+22	Lehi	Lehi	PROPN	NNP	_	19	obl	_	_
+23	.	.	PUNCT	.	_	3	punct	_	_
+

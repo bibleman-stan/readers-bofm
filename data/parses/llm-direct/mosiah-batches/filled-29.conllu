@@ -1,0 +1,793 @@
+# text = And now, Alma was their high priest, he being the founder of their church.
+# sent_id = 700
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	now	now	ADV	RB	_	5	advmod	_	_
+3	,	,	PUNCT	,	_	5	punct	_	_
+4	Alma	Alma	PROPN	NNP	_	5	nsubj	_	_
+5	was	be	AUX	VBD	_	0	root	_	_
+6	their	they	PRON	PRP$	_	8	nmod:poss	_	_
+7	high	high	ADJ	JJ	_	8	amod	_	_
+8	priest	priest	NOUN	NN	_	5	xcomp	_	_
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	he	he	PRON	PRP	_	11	nsubj	_	_
+11	being	be	VERB	VBG	_	5	advcl	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	founder	founder	NOUN	NN	_	11	xcomp	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	their	they	PRON	PRP$	_	16	nmod:poss	_	_
+16	church	church	NOUN	NN	_	13	nmod	_	_
+17	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And it came to pass that none received authority to preach or to teach except it were by him from God.
+# sent_id = 701
+# llm_note = AICTP frame; 'none' = nsubj of 'received'; 'except it were' = advcl of 'received'; 'to preach' / 'to teach' = xcomp of 'authority' (via infinitival rel)
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	none	none	PRON	NN	_	8	nsubj	_	_
+8	received	receive	VERB	VBD	_	5	ccomp	_	_
+9	authority	authority	NOUN	NN	_	8	obj	_	_
+10	to	to	PART	TO	_	11	mark	_	_
+11	preach	preach	VERB	VB	_	9	acl	_	_
+12	or	or	CCONJ	CC	_	14	cc	_	_
+13	to	to	PART	TO	_	14	mark	_	_
+14	teach	teach	VERB	VB	_	11	conj	_	_
+15	except	except	SCONJ	IN	_	17	mark	_	_
+16	it	it	PRON	PRP	_	17	nsubj	_	_
+17	were	be	AUX	VBD	_	8	advcl	_	_
+18	by	by	ADP	IN	_	19	case	_	_
+19	him	he	PRON	PRP	_	17	obl	_	_
+20	from	from	ADP	IN	_	21	case	_	_
+21	God	God	PROPN	NNP	_	19	nmod	_	_
+22	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore he consecrated all their priests and all their teachers; and none were consecrated except they were just men.
+# sent_id = 702
+1	Therefore	therefore	ADV	RB	_	3	advmod	_	_
+2	he	he	PRON	PRP	_	3	nsubj	_	_
+3	consecrated	consecrate	VERB	VBD	_	0	root	_	_
+4	all	all	DET	PDT	_	6	det:predet	_	_
+5	their	they	PRON	PRP$	_	6	nmod:poss	_	_
+6	priests	priest	NOUN	NNS	_	3	obj	_	_
+7	and	and	CCONJ	CC	_	10	cc	_	_
+8	all	all	DET	PDT	_	10	det:predet	_	_
+9	their	they	PRON	PRP$	_	10	nmod:poss	_	_
+10	teachers	teacher	NOUN	NNS	_	6	conj	_	_
+11	;	;	PUNCT	,	_	15	punct	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	none	none	PRON	NN	_	15	nsubj:pass	_	_
+14	were	be	AUX	VBD	_	15	aux:pass	_	_
+15	consecrated	consecrate	VERB	VBN	_	3	conj	_	_
+16	except	except	SCONJ	IN	_	18	mark	_	_
+17	they	they	PRON	PRP	_	18	nsubj	_	_
+18	were	be	AUX	VBD	_	15	advcl	_	_
+19	just	just	ADJ	JJ	_	20	amod	_	_
+20	men	man	NOUN	NNS	_	18	xcomp	_	_
+21	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore they did watch over their people, and did nourish them with things pertaining to righteousness.
+# sent_id = 703
+1	Therefore	therefore	ADV	RB	_	4	advmod	_	_
+2	they	they	PRON	PRP	_	4	nsubj	_	_
+3	did	do	AUX	VBD	_	4	aux	_	_
+4	watch	watch	VERB	VB	_	0	root	_	_
+5	over	over	ADP	IN	_	7	case	_	_
+6	their	they	PRON	PRP$	_	7	nmod:poss	_	_
+7	people	people	NOUN	NNS	_	4	obl	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	did	do	AUX	VBD	_	11	aux	_	_
+11	nourish	nourish	VERB	VB	_	4	conj	_	_
+12	them	they	PRON	PRP	_	11	obj	_	_
+13	with	with	ADP	IN	_	14	case	_	_
+14	things	thing	NOUN	NNS	_	11	obl	_	_
+15	pertaining	pertain	VERB	VBG	_	14	acl	_	_
+16	to	to	ADP	IN	_	17	case	_	_
+17	righteousness	righteousness	NOUN	NN	_	15	obl	_	_
+18	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it came to pass that they began to prosper exceedingly in the land; and they called the land Helam.
+# sent_id = 704
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	8	mark	_	_
+7	they	they	PRON	PRP	_	8	nsubj	_	_
+8	began	begin	VERB	VBD	_	5	ccomp	_	_
+9	to	to	PART	TO	_	10	mark	_	_
+10	prosper	prosper	VERB	VB	_	8	xcomp	_	_
+11	exceedingly	exceedingly	ADV	RB	_	10	advmod	_	_
+12	in	in	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	land	land	NOUN	NN	_	10	obl	_	_
+15	;	;	PUNCT	,	_	18	punct	_	_
+16	and	and	CCONJ	CC	_	18	cc	_	_
+17	they	they	PRON	PRP	_	18	nsubj	_	_
+18	called	call	VERB	VBD	_	3	conj	_	_
+19	the	the	DET	DT	_	20	det	_	_
+20	land	land	NOUN	NN	_	18	obj	_	_
+21	Helam	Helam	PROPN	NNP	_	20	xcomp	_	_
+22	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that they did multiply and prosper exceedingly in the land of Helam; and they built a city, which they called the city of Helam.
+# sent_id = 705
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	they	they	PRON	PRP	_	9	nsubj	_	_
+8	did	do	AUX	VBD	_	9	aux	_	_
+9	multiply	multiply	VERB	VB	_	5	ccomp	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	prosper	prosper	VERB	VB	_	9	conj	_	_
+12	exceedingly	exceedingly	ADV	RB	_	11	advmod	_	_
+13	in	in	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	land	land	NOUN	NN	_	11	obl	_	_
+16	of	of	ADP	IN	_	17	case	_	_
+17	Helam	Helam	PROPN	NNP	_	15	nmod	_	_
+18	;	;	PUNCT	,	_	21	punct	_	_
+19	and	and	CCONJ	CC	_	21	cc	_	_
+20	they	they	PRON	PRP	_	21	nsubj	_	_
+21	built	build	VERB	VBD	_	3	conj	_	_
+22	a	a	DET	DT	_	23	det	_	_
+23	city	city	NOUN	NN	_	21	obj	_	_
+24	,	,	PUNCT	,	_	27	punct	_	_
+25	which	which	PRON	WDT	_	27	obj	_	_
+26	they	they	PRON	PRP	_	27	nsubj	_	_
+27	called	call	VERB	VBD	_	23	acl:relcl	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	city	city	NOUN	NN	_	27	xcomp	_	_
+30	of	of	ADP	IN	_	31	case	_	_
+31	Helam	Helam	PROPN	NNP	_	29	nmod	_	_
+32	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Nevertheless the Lord seeth fit to chasten his people; yea, he trieth their patience and their faith.
+# sent_id = 706
+# llm_note = 'seeth' = archaic 3sg present of 'see'; 'fit' = xcomp (predicative adj); 'to chasten' = xcomp of 'fit'; 'trieth' = archaic 3sg
+1	Nevertheless	nevertheless	ADV	RB	_	4	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	Lord	Lord	PROPN	NNP	_	4	nsubj	_	_
+4	seeth	see	VERB	VBZ	_	0	root	_	_
+5	fit	fit	ADJ	JJ	_	4	xcomp	_	_
+6	to	to	PART	TO	_	7	mark	_	_
+7	chasten	chasten	VERB	VB	_	5	xcomp	_	_
+8	his	he	PRON	PRP$	_	9	nmod:poss	_	_
+9	people	people	NOUN	NNS	_	7	obj	_	_
+10	;	;	PUNCT	,	_	14	punct	_	_
+11	yea	yea	INTJ	UH	_	14	discourse	_	_
+12	,	,	PUNCT	,	_	11	punct	_	_
+13	he	he	PRON	PRP	_	14	nsubj	_	_
+14	trieth	try	VERB	VBZ	_	4	conj	_	_
+15	their	they	PRON	PRP$	_	16	nmod:poss	_	_
+16	patience	patience	NOUN	NN	_	14	obj	_	_
+17	and	and	CCONJ	CC	_	19	cc	_	_
+18	their	they	PRON	PRP$	_	19	nmod:poss	_	_
+19	faith	faith	NOUN	NN	_	16	conj	_	_
+20	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Nevertheless--whosoever putteth his trust in him the same shall be lifted up at the last day.
+# sent_id = 707
+# llm_note = 'whosoever putteth his trust in him' = fronted subject relative; 'the same' = resumptive nsubj of 'lifted'; '--' treated as PUNCT attached to nevertheless; 'putteth' = archaic VBZ
+1	Nevertheless	nevertheless	ADV	RB	_	13	advmod	_	_
+2	--	--	PUNCT	:	_	1	punct	_	_
+3	whosoever	whosoever	PRON	WP	_	4	nsubj	_	_
+4	putteth	put	VERB	VBZ	_	10	advcl	_	_
+5	his	he	PRON	PRP$	_	6	nmod:poss	_	_
+6	trust	trust	NOUN	NN	_	4	obj	_	_
+7	in	in	ADP	IN	_	8	case	_	_
+8	him	he	PRON	PRP	_	4	obl	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	same	same	PRON	NN	_	13	nsubj:pass	_	_
+11	shall	shall	AUX	MD	_	13	aux	_	_
+12	be	be	AUX	VB	_	13	aux:pass	_	_
+13	lifted	lift	VERB	VBN	_	0	root	_	_
+14	up	up	ADP	RP	_	13	compound:prt	_	_
+15	at	at	ADP	IN	_	18	case	_	_
+16	the	the	DET	DT	_	18	det	_	_
+17	last	last	ADJ	JJ	_	18	amod	_	_
+18	day	day	NOUN	NN	_	13	obl	_	_
+19	.	.	PUNCT	.	_	13	punct	_	_
+
+# text = Yea, and thus it was with this people.
+# sent_id = 708
+1	Yea	yea	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	and	and	CCONJ	CC	_	6	cc	_	_
+4	thus	thus	ADV	RB	_	6	advmod	_	_
+5	it	it	PRON	PRP	_	6	nsubj	_	_
+6	was	be	AUX	VBD	_	0	root	_	_
+7	with	with	ADP	IN	_	9	case	_	_
+8	this	this	DET	DT	_	9	det	_	_
+9	people	people	NOUN	NNS	_	6	obl	_	_
+10	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = For behold, I will show unto you that they were brought into bondage, and none could deliver them but the Lord their God, yea, even the God of Abraham and Isaac and of Jacob.
+# sent_id = 709
+# llm_note = 'behold' = INTJ discourse; 'show unto you that...' = show+ccomp; 'but the Lord their God' = exceptive, treated as nsubj of 'deliver'; 'yea, even the God of Abraham...' = appos to 'Lord their God'
+1	For	for	SCONJ	IN	_	6	mark	_	_
+2	behold	behold	INTJ	UH	_	6	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	I	I	PRON	PRP	_	6	nsubj	_	_
+5	will	will	AUX	MD	_	6	aux	_	_
+6	show	show	VERB	VB	_	0	root	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	you	you	PRON	PRP	_	6	obl	_	_
+9	that	that	SCONJ	IN	_	12	mark	_	_
+10	they	they	PRON	PRP	_	12	nsubj:pass	_	_
+11	were	be	AUX	VBD	_	12	aux:pass	_	_
+12	brought	bring	VERB	VBN	_	6	ccomp	_	_
+13	into	into	ADP	IN	_	14	case	_	_
+14	bondage	bondage	NOUN	NN	_	12	obl	_	_
+15	,	,	PUNCT	,	_	19	punct	_	_
+16	and	and	CCONJ	CC	_	19	cc	_	_
+17	none	none	PRON	NN	_	19	nsubj	_	_
+18	could	can	AUX	MD	_	19	aux	_	_
+19	deliver	deliver	VERB	VB	_	12	conj	_	_
+20	them	they	PRON	PRP	_	19	obj	_	_
+21	but	but	ADP	IN	_	25	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	Lord	Lord	PROPN	NNP	_	19	obl	_	_
+24	their	they	PRON	PRP$	_	25	nmod:poss	_	_
+25	God	God	PROPN	NNP	_	23	appos	_	_
+26	,	,	PUNCT	,	_	31	punct	_	_
+27	yea	yea	INTJ	UH	_	31	discourse	_	_
+28	,	,	PUNCT	,	_	27	punct	_	_
+29	even	even	ADV	RB	_	31	advmod	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	God	God	PROPN	NNP	_	25	appos	_	_
+32	of	of	ADP	IN	_	33	case	_	_
+33	Abraham	Abraham	PROPN	NNP	_	31	nmod	_	_
+34	and	and	CCONJ	CC	_	35	cc	_	_
+35	Isaac	Isaac	PROPN	NNP	_	33	conj	_	_
+36	and	and	CCONJ	CC	_	38	cc	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	Jacob	Jacob	PROPN	NNP	_	33	conj	_	_
+39	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And it came to pass that he did deliver them, and he did show forth his mighty power unto them, and great were their rejoicings.
+# sent_id = 710
+# llm_note = 'great were their rejoicings' = inverted predicative; 'great' = xcomp/predicate adjective, 'rejoicings' = nsubj, 'were' = cop
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	he	he	PRON	PRP	_	9	nsubj	_	_
+8	did	do	AUX	VBD	_	9	aux	_	_
+9	deliver	deliver	VERB	VB	_	5	ccomp	_	_
+10	them	they	PRON	PRP	_	9	obj	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	he	he	PRON	PRP	_	15	nsubj	_	_
+14	did	do	AUX	VBD	_	15	aux	_	_
+15	show	show	VERB	VB	_	9	conj	_	_
+16	forth	forth	ADV	RB	_	15	advmod	_	_
+17	his	he	PRON	PRP$	_	19	nmod:poss	_	_
+18	mighty	mighty	ADJ	JJ	_	19	amod	_	_
+19	power	power	NOUN	NN	_	15	obj	_	_
+20	unto	unto	ADP	IN	_	21	case	_	_
+21	them	they	PRON	PRP	_	15	obl	_	_
+22	,	,	PUNCT	,	_	27	punct	_	_
+23	and	and	CCONJ	CC	_	27	cc	_	_
+24	great	great	ADJ	JJ	_	27	xcomp	_	_
+25	were	be	AUX	VBD	_	27	cop	_	_
+26	their	they	PRON	PRP$	_	27	nmod:poss	_	_
+27	rejoicings	rejoicing	NOUN	NNS	_	3	conj	_	_
+28	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = For behold, it came to pass that while they were in the land of Helam, yea, in the city of Helam, while tilling the land round about, behold an army of the Lamanites was in the borders of the land.
+# sent_id = 711
+# llm_note = AICTP frame; outer 'behold'=INTJ; inner 'behold'=INTJ attached to 'was' (main clause verb); 'while tilling' = advcl with ellipsis; 'round about' = fixed adverb phrase modifying 'land'
+1	For	for	SCONJ	IN	_	5	mark	_	_
+2	behold	behold	INTJ	UH	_	5	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	it	it	PRON	PRP	_	5	expl	_	_
+5	came	come	VERB	VBD	_	0	root	_	_
+6	to	to	PART	TO	_	7	mark	_	_
+7	pass	pass	VERB	VB	_	5	xcomp	_	_
+8	that	that	SCONJ	IN	_	39	mark	_	_
+9	while	while	SCONJ	IN	_	11	mark	_	_
+10	they	they	PRON	PRP	_	11	nsubj	_	_
+11	were	be	AUX	VBD	_	39	advcl	_	_
+12	in	in	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	land	land	NOUN	NN	_	11	xcomp	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	Helam	Helam	PROPN	NNP	_	14	nmod	_	_
+17	,	,	PUNCT	,	_	22	punct	_	_
+18	yea	yea	INTJ	UH	_	22	discourse	_	_
+19	,	,	PUNCT	,	_	18	punct	_	_
+20	in	in	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	city	city	NOUN	NN	_	14	conj	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	Helam	Helam	PROPN	NNP	_	22	nmod	_	_
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	while	while	SCONJ	IN	_	27	mark	_	_
+27	tilling	till	VERB	VBG	_	39	advcl	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	land	land	NOUN	NN	_	27	obj	_	_
+30	round	round	ADV	RB	_	29	advmod	_	_
+31	about	about	ADP	RB	_	30	fixed	_	_
+32	,	,	PUNCT	,	_	33	punct	_	_
+33	behold	behold	INTJ	UH	_	39	discourse	_	_
+34	an	a	DET	DT	_	35	det	_	_
+35	army	army	NOUN	NN	_	39	nsubj	_	_
+36	of	of	ADP	IN	_	38	case	_	_
+37	the	the	DET	DT	_	38	det	_	_
+38	Lamanites	Lamanite	PROPN	NNPS	_	35	nmod	_	_
+39	was	be	AUX	VBD	_	7	ccomp	_	_
+40	in	in	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	_	42	det	_	_
+42	borders	border	NOUN	NNS	_	39	xcomp	_	_
+43	of	of	ADP	IN	_	45	case	_	_
+44	the	the	DET	DT	_	45	det	_	_
+45	land	land	NOUN	NN	_	42	nmod	_	_
+46	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Now it came to pass that the brethren of Alma fled from their fields, and gathered themselves together in the city of Helam; and they were much frightened because of the appearance of the Lamanites.
+# sent_id = 712
+1	Now	now	ADV	RB	_	3	advmod	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	11	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	brethren	brethren	NOUN	NNS	_	11	nsubj	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Alma	Alma	PROPN	NNP	_	8	nmod	_	_
+11	fled	flee	VERB	VBD	_	5	ccomp	_	_
+12	from	from	ADP	IN	_	14	case	_	_
+13	their	they	PRON	PRP$	_	14	nmod:poss	_	_
+14	fields	field	NOUN	NNS	_	11	obl	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	gathered	gather	VERB	VBD	_	11	conj	_	_
+18	themselves	themselves	PRON	PRP	_	17	obj	_	_
+19	together	together	ADV	RB	_	17	advmod	_	_
+20	in	in	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	city	city	NOUN	NN	_	17	obl	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	Helam	Helam	PROPN	NNP	_	22	nmod	_	_
+25	;	;	PUNCT	,	_	30	punct	_	_
+26	and	and	CCONJ	CC	_	30	cc	_	_
+27	they	they	PRON	PRP	_	30	nsubj:pass	_	_
+28	were	be	AUX	VBD	_	30	aux:pass	_	_
+29	much	much	ADV	RB	_	30	advmod	_	_
+30	frightened	frighten	VERB	VBN	_	3	conj	_	_
+31	because	because	ADP	IN	_	34	case	_	_
+32	of	of	ADP	IN	_	31	fixed	_	_
+33	the	the	DET	DT	_	34	det	_	_
+34	appearance	appearance	NOUN	NN	_	30	obl	_	_
+35	of	of	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	Lamanites	Lamanite	PROPN	NNPS	_	34	nmod	_	_
+38	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But Alma went forth and stood among them, and exhorted them that they should not be frightened, but that they should remember the Lord their God and he would deliver them.
+# sent_id = 713
+# llm_note = 'exhorted them that...' = volition verb + ccomp; two 'that' clauses: 'that they should not be frightened' and 'that they should remember'; the second 'but that' is a conj of the first ccomp
+1	But	but	CCONJ	CC	_	3	cc	_	_
+2	Alma	Alma	PROPN	NNP	_	3	nsubj	_	_
+3	went	go	VERB	VBD	_	0	root	_	_
+4	forth	forth	ADV	RB	_	3	advmod	_	_
+5	and	and	CCONJ	CC	_	6	cc	_	_
+6	stood	stand	VERB	VBD	_	3	conj	_	_
+7	among	among	ADP	IN	_	8	case	_	_
+8	them	they	PRON	PRP	_	6	obl	_	_
+9	,	,	PUNCT	,	_	11	punct	_	_
+10	and	and	CCONJ	CC	_	11	cc	_	_
+11	exhorted	exhort	VERB	VBD	_	3	conj	_	_
+12	them	they	PRON	PRP	_	11	obj	_	_
+13	that	that	SCONJ	IN	_	18	mark	_	_
+14	they	they	PRON	PRP	_	18	nsubj	_	_
+15	should	shall	AUX	MD	_	18	aux	_	_
+16	not	not	PART	RB	_	18	advmod	_	_
+17	be	be	AUX	VB	_	18	aux:pass	_	_
+18	frightened	frighten	VERB	VBN	_	11	ccomp	_	_
+19	,	,	PUNCT	,	_	24	punct	_	_
+20	but	but	CCONJ	CC	_	24	cc	_	_
+21	that	that	SCONJ	IN	_	24	mark	_	_
+22	they	they	PRON	PRP	_	24	nsubj	_	_
+23	should	shall	AUX	MD	_	24	aux	_	_
+24	remember	remember	VERB	VB	_	18	conj	_	_
+25	the	the	DET	DT	_	26	det	_	_
+26	Lord	Lord	PROPN	NNP	_	24	obj	_	_
+27	their	they	PRON	PRP$	_	28	nmod:poss	_	_
+28	God	God	PROPN	NNP	_	26	appos	_	_
+29	and	and	CCONJ	CC	_	32	cc	_	_
+30	he	he	PRON	PRP	_	32	nsubj	_	_
+31	would	will	AUX	MD	_	32	aux	_	_
+32	deliver	deliver	VERB	VB	_	24	conj	_	_
+33	them	they	PRON	PRP	_	32	obj	_	_
+34	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = Therefore they hushed their fears, and began to cry unto the Lord that he would soften the hearts of the Lamanites that they would spare them, and their wives, and their children.
+# sent_id = 714
+# llm_note = 'began to cry unto the Lord' = main verb; first 'that' = purpose/result advcl of 'cry'; second 'that' (23) = purpose advcl of 'soften'; 'their wives' and 'their children' = conj of 'them' (obj of 'spare')
+1	Therefore	therefore	ADV	RB	_	3	advmod	_	_
+2	they	they	PRON	PRP	_	3	nsubj	_	_
+3	hushed	hush	VERB	VBD	_	0	root	_	_
+4	their	they	PRON	PRP$	_	5	nmod:poss	_	_
+5	fears	fear	NOUN	NNS	_	3	obj	_	_
+6	,	,	PUNCT	,	_	8	punct	_	_
+7	and	and	CCONJ	CC	_	8	cc	_	_
+8	began	begin	VERB	VBD	_	3	conj	_	_
+9	to	to	PART	TO	_	10	mark	_	_
+10	cry	cry	VERB	VB	_	8	xcomp	_	_
+11	unto	unto	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	Lord	Lord	PROPN	NNP	_	10	obl	_	_
+14	that	that	SCONJ	IN	_	17	mark	_	_
+15	he	he	PRON	PRP	_	17	nsubj	_	_
+16	would	will	AUX	MD	_	17	aux	_	_
+17	soften	soften	VERB	VB	_	10	advcl	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	hearts	heart	NOUN	NNS	_	17	obj	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	Lamanites	Lamanite	PROPN	NNPS	_	19	nmod	_	_
+23	that	that	SCONJ	IN	_	26	mark	_	_
+24	they	they	PRON	PRP	_	26	nsubj	_	_
+25	would	will	AUX	MD	_	26	aux	_	_
+26	spare	spare	VERB	VB	_	17	advcl	_	_
+27	them	they	PRON	PRP	_	26	obj	_	_
+28	,	,	PUNCT	,	_	31	punct	_	_
+29	and	and	CCONJ	CC	_	31	cc	_	_
+30	their	they	PRON	PRP$	_	31	nmod:poss	_	_
+31	wives	wife	NOUN	NNS	_	27	conj	_	_
+32	,	,	PUNCT	,	_	35	punct	_	_
+33	and	and	CCONJ	CC	_	35	cc	_	_
+34	their	they	PRON	PRP$	_	35	nmod:poss	_	_
+35	children	child	NOUN	NNS	_	27	conj	_	_
+36	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And it came to pass that the Lord did soften the hearts of the Lamanites.
+# sent_id = 715
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	10	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	Lord	Lord	PROPN	NNP	_	10	nsubj	_	_
+9	did	do	AUX	VBD	_	10	aux	_	_
+10	soften	soften	VERB	VB	_	5	ccomp	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	hearts	heart	NOUN	NNS	_	10	obj	_	_
+13	of	of	ADP	IN	_	15	case	_	_
+14	the	the	DET	DT	_	15	det	_	_
+15	Lamanites	Lamanite	PROPN	NNPS	_	12	nmod	_	_
+16	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And Alma and his brethren went forth and delivered themselves up into their hands; and the Lamanites took possession of the land of Helam.
+# sent_id = 716
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	Alma	Alma	PROPN	NNP	_	6	nsubj	_	_
+3	and	and	CCONJ	CC	_	5	cc	_	_
+4	his	he	PRON	PRP$	_	5	nmod:poss	_	_
+5	brethren	brethren	NOUN	NNS	_	2	conj	_	_
+6	went	go	VERB	VBD	_	0	root	_	_
+7	forth	forth	ADV	RB	_	6	advmod	_	_
+8	and	and	CCONJ	CC	_	9	cc	_	_
+9	delivered	deliver	VERB	VBD	_	6	conj	_	_
+10	themselves	themselves	PRON	PRP	_	9	obj	_	_
+11	up	up	ADP	RP	_	9	compound:prt	_	_
+12	into	into	ADP	IN	_	14	case	_	_
+13	their	they	PRON	PRP$	_	14	nmod:poss	_	_
+14	hands	hand	NOUN	NNS	_	9	obl	_	_
+15	;	;	PUNCT	,	_	19	punct	_	_
+16	and	and	CCONJ	CC	_	19	cc	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	Lamanites	Lamanite	PROPN	NNPS	_	19	nsubj	_	_
+19	took	take	VERB	VBD	_	6	conj	_	_
+20	possession	possession	NOUN	NN	_	19	obj	_	_
+21	of	of	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	land	land	NOUN	NN	_	20	nmod	_	_
+24	of	of	ADP	IN	_	25	case	_	_
+25	Helam	Helam	PROPN	NNP	_	23	nmod	_	_
+26	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Now the armies of the Lamanites, which had followed after the people of king Limhi, had been lost in the wilderness for many days.
+# sent_id = 717
+1	Now	now	ADV	RB	_	20	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	armies	army	NOUN	NNS	_	20	nsubj:pass	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	Lamanites	Lamanite	PROPN	NNPS	_	3	nmod	_	_
+7	,	,	PUNCT	,	_	10	punct	_	_
+8	which	which	PRON	WDT	_	10	nsubj	_	_
+9	had	have	AUX	VBD	_	10	aux	_	_
+10	followed	follow	VERB	VBN	_	3	acl:relcl	_	_
+11	after	after	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	people	people	NOUN	NNS	_	10	obl	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	king	king	NOUN	NN	_	16	compound	_	_
+16	Limhi	Limhi	PROPN	NNP	_	13	nmod	_	_
+17	,	,	PUNCT	,	_	20	punct	_	_
+18	had	have	AUX	VBD	_	20	aux	_	_
+19	been	be	AUX	VBN	_	20	aux:pass	_	_
+20	lost	lose	VERB	VBN	_	0	root	_	_
+21	in	in	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	wilderness	wilderness	NOUN	NN	_	20	obl	_	_
+24	for	for	ADP	IN	_	26	case	_	_
+25	many	many	ADJ	JJ	_	26	amod	_	_
+26	days	day	NOUN	NNS	_	20	obl	_	_
+27	.	.	PUNCT	.	_	20	punct	_	_
+
+# text = And behold, they had found those priests of king Noah, in a place which they called Amulon; and they had begun to possess the land of Amulon and had begun to till the ground.
+# sent_id = 718
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	behold	behold	INTJ	UH	_	6	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	they	they	PRON	PRP	_	6	nsubj	_	_
+5	had	have	AUX	VBD	_	6	aux	_	_
+6	found	find	VERB	VBN	_	0	root	_	_
+7	those	those	DET	DT	_	8	det	_	_
+8	priests	priest	NOUN	NNS	_	6	obj	_	_
+9	of	of	ADP	IN	_	11	case	_	_
+10	king	king	NOUN	NN	_	11	compound	_	_
+11	Noah	Noah	PROPN	NNP	_	8	nmod	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	in	in	ADP	IN	_	15	case	_	_
+14	a	a	DET	DT	_	15	det	_	_
+15	place	place	NOUN	NN	_	6	obl	_	_
+16	which	which	PRON	WDT	_	18	obj	_	_
+17	they	they	PRON	PRP	_	18	nsubj	_	_
+18	called	call	VERB	VBD	_	15	acl:relcl	_	_
+19	Amulon	Amulon	PROPN	NNP	_	18	xcomp	_	_
+20	;	;	PUNCT	,	_	24	punct	_	_
+21	and	and	CCONJ	CC	_	24	cc	_	_
+22	they	they	PRON	PRP	_	24	nsubj	_	_
+23	had	have	AUX	VBD	_	24	aux	_	_
+24	begun	begin	VERB	VBN	_	6	conj	_	_
+25	to	to	PART	TO	_	26	mark	_	_
+26	possess	possess	VERB	VB	_	24	xcomp	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	land	land	NOUN	NN	_	26	obj	_	_
+29	of	of	ADP	IN	_	30	case	_	_
+30	Amulon	Amulon	PROPN	NNP	_	28	nmod	_	_
+31	and	and	CCONJ	CC	_	33	cc	_	_
+32	had	have	AUX	VBD	_	33	aux	_	_
+33	begun	begin	VERB	VBN	_	24	conj	_	_
+34	to	to	PART	TO	_	35	mark	_	_
+35	till	till	VERB	VB	_	33	xcomp	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	ground	ground	NOUN	NN	_	35	obj	_	_
+38	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Now the name of the leader of those priests was Amulon.
+# sent_id = 719
+1	Now	now	ADV	RB	_	10	advmod	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	name	name	NOUN	NN	_	10	nsubj	_	_
+4	of	of	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	leader	leader	NOUN	NN	_	3	nmod	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	those	those	DET	DT	_	9	det	_	_
+9	priests	priest	NOUN	NNS	_	6	nmod	_	_
+10	was	be	AUX	VBD	_	0	root	_	_
+11	Amulon	Amulon	PROPN	NNP	_	10	xcomp	_	_
+12	.	.	PUNCT	.	_	10	punct	_	_
+
+# text = And it came to pass that Amulon did plead with the Lamanites; and he also sent forth their wives, who were the daughters of the Lamanites, to plead with their brethren, that they should not destroy their husbands.
+# sent_id = 720
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	Amulon	Amulon	PROPN	NNP	_	9	nsubj	_	_
+8	did	do	AUX	VBD	_	9	aux	_	_
+9	plead	plead	VERB	VB	_	5	ccomp	_	_
+10	with	with	ADP	IN	_	12	case	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	Lamanites	Lamanite	PROPN	NNPS	_	9	obl	_	_
+13	;	;	PUNCT	,	_	17	punct	_	_
+14	and	and	CCONJ	CC	_	17	cc	_	_
+15	he	he	PRON	PRP	_	17	nsubj	_	_
+16	also	also	ADV	RB	_	17	advmod	_	_
+17	sent	send	VERB	VBD	_	3	conj	_	_
+18	forth	forth	ADV	RB	_	17	advmod	_	_
+19	their	they	PRON	PRP$	_	20	nmod:poss	_	_
+20	wives	wife	NOUN	NNS	_	17	obj	_	_
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	who	who	PRON	WP	_	23	nsubj	_	_
+23	were	be	AUX	VBD	_	20	acl:relcl	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	daughters	daughter	NOUN	NNS	_	23	xcomp	_	_
+26	of	of	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	Lamanites	Lamanite	PROPN	NNPS	_	25	nmod	_	_
+29	,	,	PUNCT	,	_	31	punct	_	_
+30	to	to	PART	TO	_	31	mark	_	_
+31	plead	plead	VERB	VB	_	17	advcl	_	_
+32	with	with	ADP	IN	_	34	case	_	_
+33	their	they	PRON	PRP$	_	34	nmod:poss	_	_
+34	brethren	brethren	NOUN	NNS	_	31	obl	_	_
+35	,	,	PUNCT	,	_	40	punct	_	_
+36	that	that	SCONJ	IN	_	40	mark	_	_
+37	they	they	PRON	PRP	_	40	nsubj	_	_
+38	should	shall	AUX	MD	_	40	aux	_	_
+39	not	not	PART	RB	_	40	advmod	_	_
+40	destroy	destroy	VERB	VB	_	31	advcl	_	_
+41	their	they	PRON	PRP$	_	42	nmod:poss	_	_
+42	husbands	husband	NOUN	NNS	_	40	obj	_	_
+43	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And the Lamanites had compassion on Amulon and his brethren, and did not destroy them, because of their wives.
+# sent_id = 721
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	the	the	DET	DT	_	3	det	_	_
+3	Lamanites	Lamanite	PROPN	NNPS	_	4	nsubj	_	_
+4	had	have	VERB	VBD	_	0	root	_	_
+5	compassion	compassion	NOUN	NN	_	4	obj	_	_
+6	on	on	ADP	IN	_	7	case	_	_
+7	Amulon	Amulon	PROPN	NNP	_	5	nmod	_	_
+8	and	and	CCONJ	CC	_	10	cc	_	_
+9	his	he	PRON	PRP$	_	10	nmod:poss	_	_
+10	brethren	brethren	NOUN	NNS	_	7	conj	_	_
+11	,	,	PUNCT	,	_	15	punct	_	_
+12	and	and	CCONJ	CC	_	15	cc	_	_
+13	did	do	AUX	VBD	_	15	aux	_	_
+14	not	not	PART	RB	_	15	advmod	_	_
+15	destroy	destroy	VERB	VB	_	4	conj	_	_
+16	them	they	PRON	PRP	_	15	obj	_	_
+17	,	,	PUNCT	,	_	15	punct	_	_
+18	because	because	ADP	IN	_	21	case	_	_
+19	of	of	ADP	IN	_	18	fixed	_	_
+20	their	they	PRON	PRP$	_	21	nmod:poss	_	_
+21	wives	wife	NOUN	NNS	_	15	obl	_	_
+22	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And Amulon and his brethren did join the Lamanites, and they were traveling in the wilderness in search of the land of Nephi when they discovered the land of Helam, which was possessed by Alma and his brethren.
+# sent_id = 722
+1	And	and	CCONJ	CC	_	7	cc	_	_
+2	Amulon	Amulon	PROPN	NNP	_	7	nsubj	_	_
+3	and	and	CCONJ	CC	_	5	cc	_	_
+4	his	he	PRON	PRP$	_	5	nmod:poss	_	_
+5	brethren	brethren	NOUN	NNS	_	2	conj	_	_
+6	did	do	AUX	VBD	_	7	aux	_	_
+7	join	join	VERB	VB	_	0	root	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	Lamanites	Lamanite	PROPN	NNPS	_	7	obj	_	_
+10	,	,	PUNCT	,	_	14	punct	_	_
+11	and	and	CCONJ	CC	_	14	cc	_	_
+12	they	they	PRON	PRP	_	14	nsubj	_	_
+13	were	be	AUX	VBD	_	14	aux	_	_
+14	traveling	travel	VERB	VBG	_	7	conj	_	_
+15	in	in	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	wilderness	wilderness	NOUN	NN	_	14	obl	_	_
+18	in	in	ADP	IN	_	19	case	_	_
+19	search	search	NOUN	NN	_	14	obl	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	land	land	NOUN	NN	_	19	nmod	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	Nephi	Nephi	PROPN	NNP	_	22	nmod	_	_
+25	when	when	SCONJ	WRB	_	27	mark	_	_
+26	they	they	PRON	PRP	_	27	nsubj	_	_
+27	discovered	discover	VERB	VBD	_	14	advcl	_	_
+28	the	the	DET	DT	_	29	det	_	_
+29	land	land	NOUN	NN	_	27	obj	_	_
+30	of	of	ADP	IN	_	31	case	_	_
+31	Helam	Helam	PROPN	NNP	_	29	nmod	_	_
+32	,	,	PUNCT	,	_	35	punct	_	_
+33	which	which	PRON	WDT	_	35	nsubj:pass	_	_
+34	was	be	AUX	VBD	_	35	aux:pass	_	_
+35	possessed	possess	VERB	VBN	_	29	acl:relcl	_	_
+36	by	by	ADP	IN	_	37	case	_	_
+37	Alma	Alma	PROPN	NNP	_	35	obl:agent	_	_
+38	and	and	CCONJ	CC	_	40	cc	_	_
+39	his	he	PRON	PRP$	_	40	nmod:poss	_	_
+40	brethren	brethren	NOUN	NNS	_	37	conj	_	_
+41	.	.	PUNCT	.	_	7	punct	_	_
+
+# text = And it came to pass that the Lamanites promised unto Alma and his brethren, that if they would show them the way which led to the land of Nephi that they would grant unto them their lives and their liberty.
+# sent_id = 723
+# llm_note = two 'that' clauses: first (6) marks ccomp of 'promised'; inside, 'if they would show' is advcl of 'grant'; second 'that' (31) introduces apodosis
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	it	it	PRON	PRP	_	3	expl	_	_
+3	came	come	VERB	VBD	_	0	root	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	pass	pass	VERB	VB	_	3	xcomp	_	_
+6	that	that	SCONJ	IN	_	9	mark	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	Lamanites	Lamanite	PROPN	NNPS	_	9	nsubj	_	_
+9	promised	promise	VERB	VBD	_	5	ccomp	_	_
+10	unto	unto	ADP	IN	_	11	case	_	_
+11	Alma	Alma	PROPN	NNP	_	9	obl	_	_
+12	and	and	CCONJ	CC	_	14	cc	_	_
+13	his	he	PRON	PRP$	_	14	nmod:poss	_	_
+14	brethren	brethren	NOUN	NNS	_	11	conj	_	_
+15	,	,	PUNCT	,	_	34	punct	_	_
+16	that	that	SCONJ	IN	_	34	mark	_	_
+17	if	if	SCONJ	IN	_	20	mark	_	_
+18	they	they	PRON	PRP	_	20	nsubj	_	_
+19	would	will	AUX	MD	_	20	aux	_	_
+20	show	show	VERB	VB	_	34	advcl	_	_
+21	them	they	PRON	PRP	_	20	obj	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	way	way	NOUN	NN	_	20	obj	_	_
+24	which	which	PRON	WDT	_	25	nsubj	_	_
+25	led	lead	VERB	VBD	_	23	acl:relcl	_	_
+26	to	to	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	land	land	NOUN	NN	_	25	obl	_	_
+29	of	of	ADP	IN	_	30	case	_	_
+30	Nephi	Nephi	PROPN	NNP	_	28	nmod	_	_
+31	that	that	SCONJ	IN	_	34	mark	_	_
+32	they	they	PRON	PRP	_	34	nsubj	_	_
+33	would	will	AUX	MD	_	34	aux	_	_
+34	grant	grant	VERB	VB	_	9	ccomp	_	_
+35	unto	unto	ADP	IN	_	36	case	_	_
+36	them	they	PRON	PRP	_	34	obl	_	_
+37	their	they	PRON	PRP$	_	38	nmod:poss	_	_
+38	lives	life	NOUN	NNS	_	34	obj	_	_
+39	and	and	CCONJ	CC	_	41	cc	_	_
+40	their	they	PRON	PRP$	_	41	nmod:poss	_	_
+41	liberty	liberty	NOUN	NN	_	38	conj	_	_
+42	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = But after Alma had shown them the way that led to the land of Nephi the Lamanites would not keep their promise; but they set guards round about the land of Helam, over Alma and his brethren.
+# sent_id = 724
+1	But	but	CCONJ	CC	_	20	cc	_	_
+2	after	after	SCONJ	IN	_	5	mark	_	_
+3	Alma	Alma	PROPN	NNP	_	5	nsubj	_	_
+4	had	have	AUX	VBD	_	5	aux	_	_
+5	shown	show	VERB	VBN	_	20	advcl	_	_
+6	them	they	PRON	PRP	_	5	obj	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	way	way	NOUN	NN	_	5	obj	_	_
+9	that	that	PRON	WDT	_	10	nsubj	_	_
+10	led	lead	VERB	VBD	_	8	acl:relcl	_	_
+11	to	to	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	land	land	NOUN	NN	_	10	obl	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	Nephi	Nephi	PROPN	NNP	_	13	nmod	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	Lamanites	Lamanite	PROPN	NNPS	_	20	nsubj	_	_
+18	would	will	AUX	MD	_	20	aux	_	_
+19	not	not	PART	RB	_	20	advmod	_	_
+20	keep	keep	VERB	VB	_	0	root	_	_
+21	their	they	PRON	PRP$	_	22	nmod:poss	_	_
+22	promise	promise	NOUN	NN	_	20	obj	_	_
+23	;	;	PUNCT	,	_	26	punct	_	_
+24	but	but	CCONJ	CC	_	26	cc	_	_
+25	they	they	PRON	PRP	_	26	nsubj	_	_
+26	set	set	VERB	VBD	_	20	conj	_	_
+27	guards	guard	NOUN	NNS	_	26	obj	_	_
+28	round	round	ADV	RB	_	27	advmod	_	_
+29	about	about	ADP	RB	_	28	fixed	_	_
+30	the	the	DET	DT	_	31	det	_	_
+31	land	land	NOUN	NN	_	27	nmod	_	_
+32	of	of	ADP	IN	_	33	case	_	_
+33	Helam	Helam	PROPN	NNP	_	31	nmod	_	_
+34	,	,	PUNCT	,	_	36	punct	_	_
+35	over	over	ADP	IN	_	36	case	_	_
+36	Alma	Alma	PROPN	NNP	_	27	nmod	_	_
+37	and	and	CCONJ	CC	_	39	cc	_	_
+38	his	he	PRON	PRP$	_	39	nmod:poss	_	_
+39	brethren	brethren	NOUN	NNS	_	36	conj	_	_
+40	.	.	PUNCT	.	_	20	punct	_	_
+

@@ -1,0 +1,616 @@
+# text = And now, behold, my brethren, as I said unto you that I would prophesy, behold, this is my prophecy-- that the things which this prophet Zenos spake concerning the house of Israel, in the which he likened them unto a tame olive tree, must surely come to pass.
+# sent_id = 225
+# llm_note = "behold" (token 4) INTJ discourse; "my brethren" vocative; "as I said ... that I would prophesy" is advcl of "is"; "this is my prophecy" main clause; "--" PUNCT; "that the things ... must come to pass" is ccomp of "is"; relative "which this prophet Zenos spake" on "things"; "in the which he likened" second relative; "must surely come to pass" — "come to pass" phrasal
+1	And	and	CCONJ	CC	_	22	cc	_	_
+2	now	now	ADV	RB	_	22	advmod	_	_
+3	,	,	PUNCT	,	_	22	punct	_	_
+4	behold	behold	INTJ	UH	_	22	discourse	_	_
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	7	nmod:poss	_	_
+7	brethren	brethren	NOUN	NNS	Number=Plur	22	vocative	_	_
+8	,	,	PUNCT	,	_	7	punct	_	_
+9	as	as	SCONJ	IN	_	11	mark	_	_
+10	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	11	nsubj	_	_
+11	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	22	advcl	_	_
+12	unto	unto	ADP	IN	_	13	case	_	_
+13	you	you	PRON	PRP	Case=Acc|Person=2	11	obl	_	_
+14	that	that	SCONJ	IN	_	17	mark	_	_
+15	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	17	nsubj	_	_
+16	would	would	AUX	MD	VerbForm=Fin	17	aux	_	_
+17	prophesy	prophesy	VERB	VB	VerbForm=Inf	11	ccomp	_	_
+18	,	,	PUNCT	,	_	22	punct	_	_
+19	behold	behold	INTJ	UH	_	22	discourse	_	_
+20	,	,	PUNCT	,	_	19	punct	_	_
+21	this	this	PRON	DT	Number=Sing|PronType=Dem	22	nsubj	_	_
+22	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+23	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	24	nmod:poss	_	_
+24	prophecy	prophecy	NOUN	NN	Number=Sing	22	xcomp	_	_
+25	--	--	PUNCT	:	_	22	punct	_	_
+26	that	that	SCONJ	IN	_	54	mark	_	_
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+28	things	thing	NOUN	NNS	Number=Plur	54	nsubj	_	_
+29	which	which	PRON	WDT	PronType=Rel	33	obj	_	_
+30	this	this	DET	DT	Number=Sing|PronType=Dem	31	det	_	_
+31	prophet	prophet	NOUN	NN	Number=Sing	33	nsubj	_	_
+32	Zenos	Zenos	PROPN	NNP	_	31	flat	_	_
+33	spake	speak	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	28	acl:relcl	_	_
+34	concerning	concern	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	house	house	NOUN	NN	Number=Sing	33	obl	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	Israel	Israel	PROPN	NNP	_	36	nmod	_	_
+39	,	,	PUNCT	,	_	44	punct	_	_
+40	in	in	ADP	IN	_	42	case	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	which	which	PRON	WDT	PronType=Rel	44	obl	_	_
+43	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	44	nsubj	_	_
+44	likened	liken	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	28	acl:relcl	_	_
+45	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	44	obj	_	_
+46	unto	unto	ADP	IN	_	50	case	_	_
+47	a	a	DET	DT	Definite=Ind|PronType=Art	50	det	_	_
+48	tame	tame	ADJ	JJ	Degree=Pos	50	amod	_	_
+49	olive	olive	NOUN	NN	Number=Sing	50	compound	_	_
+50	tree	tree	NOUN	NN	Number=Sing	44	obl	_	_
+51	,	,	PUNCT	,	_	54	punct	_	_
+52	must	must	AUX	MD	VerbForm=Fin	54	aux	_	_
+53	surely	surely	ADV	RB	_	54	advmod	_	_
+54	come	come	VERB	VB	VerbForm=Inf	22	ccomp	_	_
+55	to	to	PART	TO	_	56	mark	_	_
+56	pass	pass	VERB	VB	VerbForm=Inf	54	xcomp	_	_
+57	.	.	PUNCT	.	_	22	punct	_	_
+
+# text = And the day that he shall set his hand again the second time to recover his people, is the day, yea, even the last time, that the servants of the Lord shall go forth in his power, to nourish and prune his vineyard; and after that the end soon cometh.
+# sent_id = 226
+# llm_note = Cleft-like: "the day that he shall set his hand ... is the day"; "yea, even the last time" is appos of second "day"; "that the servants ... shall go forth" is acl:relcl on second "day"; "to nourish and prune" is purpose advcl; "after that the end soon cometh" is conj parataxis
+1	And	and	CCONJ	CC	_	19	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	day	day	NOUN	NN	Number=Sing	19	nsubj	_	_
+4	that	that	SCONJ	IN	_	7	mark	_	_
+5	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	7	nsubj	_	_
+6	shall	shall	AUX	MD	VerbForm=Fin	7	aux	_	_
+7	set	set	VERB	VB	VerbForm=Inf	3	acl:relcl	_	_
+8	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	9	nmod:poss	_	_
+9	hand	hand	NOUN	NN	Number=Sing	7	obj	_	_
+10	again	again	ADV	RB	_	7	advmod	_	_
+11	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+12	second	second	ADJ	JJ	Degree=Pos	13	amod	_	_
+13	time	time	NOUN	NN	Number=Sing	7	obl	_	_
+14	to	to	PART	TO	_	15	mark	_	_
+15	recover	recover	VERB	VB	VerbForm=Inf	7	advcl	_	_
+16	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	17	nmod:poss	_	_
+17	people	people	NOUN	NNS	Number=Plur	15	obj	_	_
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	_
+21	day	day	NOUN	NN	Number=Sing	19	xcomp	_	_
+22	,	,	PUNCT	,	_	23	punct	_	_
+23	yea	yea	INTJ	UH	_	21	discourse	_	_
+24	,	,	PUNCT	,	_	23	punct	_	_
+25	even	even	ADV	RB	_	28	advmod	_	_
+26	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	_
+27	last	last	ADJ	JJ	Degree=Pos	28	amod	_	_
+28	time	time	NOUN	NN	Number=Sing	21	appos	_	_
+29	,	,	PUNCT	,	_	37	punct	_	_
+30	that	that	SCONJ	IN	_	37	mark	_	_
+31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+32	servants	servant	NOUN	NNS	Number=Plur	37	nsubj	_	_
+33	of	of	ADP	IN	_	35	case	_	_
+34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	_
+35	Lord	Lord	PROPN	NNP	_	32	nmod	_	_
+36	shall	shall	AUX	MD	VerbForm=Fin	37	aux	_	_
+37	go	go	VERB	VB	VerbForm=Inf	21	acl:relcl	_	_
+38	forth	forth	ADV	RB	_	37	advmod	_	_
+39	in	in	ADP	IN	_	41	case	_	_
+40	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	41	nmod:poss	_	_
+41	power	power	NOUN	NN	Number=Sing	37	obl	_	_
+42	,	,	PUNCT	,	_	44	punct	_	_
+43	to	to	PART	TO	_	44	mark	_	_
+44	nourish	nourish	VERB	VB	VerbForm=Inf	37	advcl	_	_
+45	and	and	CCONJ	CC	_	46	cc	_	_
+46	prune	prune	VERB	VB	VerbForm=Inf	44	conj	_	_
+47	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	48	nmod:poss	_	_
+48	vineyard	vineyard	NOUN	NN	Number=Sing	44	obj	_	_
+49	;	;	PUNCT	.	_	56	punct	_	_
+50	and	and	CCONJ	CC	_	56	cc	_	_
+51	after	after	ADP	IN	_	52	case	_	_
+52	that	that	PRON	DT	_	56	obl	_	_
+53	the	the	DET	DT	Definite=Def|PronType=Art	54	det	_	_
+54	end	end	NOUN	NN	Number=Sing	56	nsubj	_	_
+55	soon	soon	ADV	RB	_	56	advmod	_	_
+56	cometh	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	conj	_	_
+57	.	.	PUNCT	.	_	19	punct	_	_
+
+# text = And how blessed are they who have labored diligently in his vineyard; and how cursed are they who shall be cast out into their own place!
+# sent_id = 227
+# llm_note = Two parallel exclamatory clauses; "how blessed are they" — "how" advmod, "blessed" predicate adj, "are" cop, "they" nsubj; "who have labored diligently" acl:relcl on "they"; second clause coordinate with "and how cursed are they who shall be cast out"
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	how	how	ADV	WRB	PronType=Int	3	advmod	_	_
+3	blessed	bless	ADJ	JJ	Degree=Pos	4	xcomp	_	_
+4	are	be	VERB	VBZ	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	4	nsubj	_	_
+6	who	who	PRON	WP	PronType=Rel	8	nsubj	_	_
+7	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+8	labored	labor	VERB	VBN	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+9	diligently	diligently	ADV	RB	_	8	advmod	_	_
+10	in	in	ADP	IN	_	12	case	_	_
+11	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	12	nmod:poss	_	_
+12	vineyard	vineyard	NOUN	NN	Number=Sing	8	obl	_	_
+13	;	;	PUNCT	.	_	17	punct	_	_
+14	and	and	CCONJ	CC	_	17	cc	_	_
+15	how	how	ADV	WRB	PronType=Int	16	advmod	_	_
+16	cursed	curse	ADJ	JJ	Degree=Pos	17	xcomp	_	_
+17	are	be	VERB	VBZ	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+18	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	17	nsubj	_	_
+19	who	who	PRON	WP	PronType=Rel	22	nsubj:pass	_	_
+20	shall	shall	AUX	MD	VerbForm=Fin	22	aux	_	_
+21	be	be	AUX	VB	VerbForm=Inf	22	aux:pass	_	_
+22	cast	cast	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	18	acl:relcl	_	_
+23	out	out	ADP	RP	_	22	compound:prt	_	_
+24	into	into	ADP	IN	_	27	case	_	_
+25	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	27	nmod:poss	_	_
+26	own	own	ADJ	JJ	Degree=Pos	27	amod	_	_
+27	place	place	NOUN	NN	Number=Sing	22	obl	_	_
+28	!	!	PUNCT	.	_	4	punct	_	_
+
+# text = And the world shall be burned with fire.
+# sent_id = 228
+# llm_note = Simple passive sentence
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	world	world	NOUN	NN	Number=Sing	6	nsubj:pass	_	_
+4	shall	shall	AUX	MD	VerbForm=Fin	6	aux	_	_
+5	be	be	AUX	VB	VerbForm=Inf	6	aux:pass	_	_
+6	burned	burn	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+7	with	with	ADP	IN	_	8	case	_	_
+8	fire	fire	NOUN	NN	Number=Sing	6	obl	_	_
+9	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And how merciful is our God unto us, for he remembereth the house of Israel, both roots and branches; and he stretches forth his hands unto them all the day long; and they are a stiffnecked and a gainsaying people; but as many as will not harden their hearts shall be saved in the kingdom of God.
+# sent_id = 229
+# llm_note = Exclamatory "how merciful is our God"; "for" introduces causal advcl; "remembereth" EME 3sg; "both roots and branches" appos of "house of Israel"; three semicolon-joined coordinate clauses; "as many as will not harden" = "as many as" is the subject of "shall be saved", relative construction; "stretches forth" compound:prt
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	how	how	ADV	WRB	PronType=Int	3	advmod	_	_
+3	merciful	merciful	ADJ	JJ	Degree=Pos	4	xcomp	_	_
+4	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	our	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes	6	nmod:poss	_	_
+6	God	God	PROPN	NNP	_	4	nsubj	_	_
+7	unto	unto	ADP	IN	_	8	case	_	_
+8	us	we	PRON	PRP	Case=Acc|Number=Plur|Person=1	4	obl	_	_
+9	,	,	PUNCT	,	_	12	punct	_	_
+10	for	for	SCONJ	IN	_	12	mark	_	_
+11	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	12	nsubj	_	_
+12	remembereth	remember	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	house	house	NOUN	NN	Number=Sing	12	obj	_	_
+15	of	of	ADP	IN	_	16	case	_	_
+16	Israel	Israel	PROPN	NNP	_	14	nmod	_	_
+17	,	,	PUNCT	,	_	19	punct	_	_
+18	both	both	CCONJ	CC	_	19	cc	_	_
+19	roots	root	NOUN	NNS	Number=Plur	14	appos	_	_
+20	and	and	CCONJ	CC	_	21	cc	_	_
+21	branches	branch	NOUN	NNS	Number=Plur	19	conj	_	_
+22	;	;	PUNCT	.	_	25	punct	_	_
+23	and	and	CCONJ	CC	_	25	cc	_	_
+24	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	25	nsubj	_	_
+25	stretches	stretch	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+26	forth	forth	ADP	RP	_	25	compound:prt	_	_
+27	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	28	nmod:poss	_	_
+28	hands	hand	NOUN	NNS	Number=Plur	25	obj	_	_
+29	unto	unto	ADP	IN	_	30	case	_	_
+30	them	they	PRON	PRP	Case=Acc|Number=Plur|Person=3	25	obl	_	_
+31	all	all	DET	DT	_	34	det:predet	_	_
+32	the	the	DET	DT	Definite=Def|PronType=Art	34	det	_	_
+33	day	day	NOUN	NN	Number=Sing	34	compound	_	_
+34	long	long	ADJ	JJ	Degree=Pos	25	obl	_	_
+35	;	;	PUNCT	.	_	38	punct	_	_
+36	and	and	CCONJ	CC	_	38	cc	_	_
+37	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3	38	nsubj	_	_
+38	are	be	VERB	VBZ	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+39	a	a	DET	DT	Definite=Ind|PronType=Art	40	det	_	_
+40	stiffnecked	stiffnecked	ADJ	JJ	Degree=Pos	44	amod	_	_
+41	and	and	CCONJ	CC	_	43	cc	_	_
+42	a	a	DET	DT	Definite=Ind|PronType=Art	43	det	_	_
+43	gainsaying	gainsay	VERB	VBG	VerbForm=Part	40	conj	_	_
+44	people	people	NOUN	NNS	Number=Plur	38	xcomp	_	_
+45	;	;	PUNCT	.	_	57	punct	_	_
+46	but	but	CCONJ	CC	_	57	cc	_	_
+47	as	as	ADV	RB	_	48	advmod	_	_
+48	many	many	PRON	JJ	_	57	nsubj:pass	_	_
+49	as	as	SCONJ	IN	_	52	mark	_	_
+50	will	will	AUX	MD	VerbForm=Fin	52	aux	_	_
+51	not	not	PART	RB	_	52	advmod	_	_
+52	harden	harden	VERB	VB	VerbForm=Inf	48	acl:relcl	_	_
+53	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes	54	nmod:poss	_	_
+54	hearts	heart	NOUN	NNS	Number=Plur	52	obj	_	_
+55	shall	shall	AUX	MD	VerbForm=Fin	57	aux	_	_
+56	be	be	AUX	VB	VerbForm=Inf	57	aux:pass	_	_
+57	saved	save	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	4	conj	_	_
+58	in	in	ADP	IN	_	60	case	_	_
+59	the	the	DET	DT	Definite=Def|PronType=Art	60	det	_	_
+60	kingdom	kingdom	NOUN	NN	Number=Sing	57	obl	_	_
+61	of	of	ADP	IN	_	62	case	_	_
+62	God	God	PROPN	NNP	_	60	nmod	_	_
+63	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Wherefore, my beloved brethren, I beseech of you in words of soberness that ye would repent, and come with full purpose of heart, and cleave unto God as he cleaveth unto you.
+# sent_id = 230
+# llm_note = "Wherefore" adv connector; "my beloved brethren" vocative; "beseech of you" — "of you" is the object-of-beseeching as obl; "in words of soberness" obl manner; "that ye would repent" is ccomp of "beseech"; three coordinate verbs "repent", "come", "cleave" in that-clause; "as he cleaveth unto you" is advcl of "cleave"
+1	Wherefore	wherefore	ADV	RB	_	8	advmod	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	5	nmod:poss	_	_
+4	beloved	beloved	ADJ	JJ	Degree=Pos	5	amod	_	_
+5	brethren	brethren	NOUN	NNS	Number=Plur	8	vocative	_	_
+6	,	,	PUNCT	,	_	5	punct	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	beseech	beseech	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	you	you	PRON	PRP	Case=Acc|Person=2	8	obl	_	_
+11	in	in	ADP	IN	_	12	case	_	_
+12	words	word	NOUN	NNS	Number=Plur	8	obl	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	soberness	soberness	NOUN	NN	Number=Sing	12	nmod	_	_
+15	that	that	SCONJ	IN	_	18	mark	_	_
+16	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	18	nsubj	_	_
+17	would	would	AUX	MD	VerbForm=Fin	18	aux	_	_
+18	repent	repent	VERB	VB	VerbForm=Inf	8	ccomp	_	_
+19	,	,	PUNCT	,	_	21	punct	_	_
+20	and	and	CCONJ	CC	_	21	cc	_	_
+21	come	come	VERB	VB	VerbForm=Inf	18	conj	_	_
+22	with	with	ADP	IN	_	24	case	_	_
+23	full	full	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	purpose	purpose	NOUN	NN	Number=Sing	21	obl	_	_
+25	of	of	ADP	IN	_	26	case	_	_
+26	heart	heart	NOUN	NN	Number=Sing	24	nmod	_	_
+27	,	,	PUNCT	,	_	29	punct	_	_
+28	and	and	CCONJ	CC	_	29	cc	_	_
+29	cleave	cleave	VERB	VB	VerbForm=Inf	18	conj	_	_
+30	unto	unto	ADP	IN	_	31	case	_	_
+31	God	God	PROPN	NNP	_	29	obl	_	_
+32	as	as	SCONJ	IN	_	34	mark	_	_
+33	he	he	PRON	PRP	Case=Nom|Number=Sing|Person=3	34	nsubj	_	_
+34	cleaveth	cleave	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	advcl	_	_
+35	unto	unto	ADP	IN	_	36	case	_	_
+36	you	you	PRON	PRP	Case=Acc|Person=2	34	obl	_	_
+37	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And while his arm of mercy is extended towards you in the light of the day, harden not your hearts.
+# sent_id = 231
+# llm_note = "while" introduces advcl temporal; "is extended" passive; main clause "harden not your hearts" is imperative; "in the light of the day" is obl of "is extended"
+1	And	and	CCONJ	CC	_	18	cc	_	_
+2	while	while	SCONJ	IN	_	8	mark	_	_
+3	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	4	nmod:poss	_	_
+4	arm	arm	NOUN	NN	Number=Sing	8	nsubj:pass	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	mercy	mercy	NOUN	NN	Number=Sing	4	nmod	_	_
+7	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_
+8	extended	extend	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	18	advcl	_	_
+9	towards	towards	ADP	IN	_	10	case	_	_
+10	you	you	PRON	PRP	Case=Acc|Person=2	8	obl	_	_
+11	in	in	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+13	light	light	NOUN	NN	Number=Sing	8	obl	_	_
+14	of	of	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	day	day	NOUN	NN	Number=Sing	13	nmod	_	_
+17	,	,	PUNCT	,	_	18	punct	_	_
+18	harden	harden	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+19	not	not	PART	RB	_	18	advmod	_	_
+20	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	21	nmod:poss	_	_
+21	hearts	heart	NOUN	NNS	Number=Plur	18	obj	_	_
+22	.	.	PUNCT	.	_	18	punct	_	_
+
+# text = Yea, today, if ye will hear his voice, harden not your hearts; for why will ye die?
+# sent_id = 232
+# llm_note = "Yea" INTJ discourse; "today" temporal advmod; "if ye will hear his voice" is conditional advcl; main imperative "harden not your hearts"; "for why will ye die?" is rhetorical question parataxis
+1	Yea	yea	INTJ	UH	_	12	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	today	today	ADV	RB	_	12	advmod	_	_
+4	,	,	PUNCT	,	_	12	punct	_	_
+5	if	if	SCONJ	IN	_	8	mark	_	_
+6	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj	_	_
+7	will	will	AUX	MD	VerbForm=Fin	8	aux	_	_
+8	hear	hear	VERB	VB	VerbForm=Inf	12	advcl	_	_
+9	his	he	PRON	PRP$	Number=Sing|Person=3|Poss=Yes	10	nmod:poss	_	_
+10	voice	voice	NOUN	NN	Number=Sing	8	obj	_	_
+11	,	,	PUNCT	,	_	12	punct	_	_
+12	harden	harden	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+13	not	not	PART	RB	_	12	advmod	_	_
+14	your	you	PRON	PRP$	Number=Plur|Person=2|Poss=Yes	15	nmod:poss	_	_
+15	hearts	heart	NOUN	NNS	Number=Plur	12	obj	_	_
+16	;	;	PUNCT	.	_	21	punct	_	_
+17	for	for	SCONJ	IN	_	21	mark	_	_
+18	why	why	ADV	WRB	PronType=Int	21	advmod	_	_
+19	will	will	AUX	MD	VerbForm=Fin	21	aux	_	_
+20	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	21	nsubj	_	_
+21	die	die	VERB	VB	VerbForm=Inf	12	parataxis	_	_
+22	?	?	PUNCT	.	_	12	punct	_	_
+
+# text = For behold, after ye have been nourished by the good word of God all the day long, will ye bring forth evil fruit, that ye must be hewn down and cast into the fire?
+# sent_id = 233
+# llm_note = "For behold" frame; "after ye have been nourished" advcl; "all the day long" temporal obl; "will ye bring forth evil fruit" — inverted rhetorical question; "bring forth" compound:prt; "that ye must be hewn down and cast" purpose/result advcl
+1	For	for	SCONJ	IN	_	22	mark	_	_
+2	behold	behold	INTJ	UH	_	22	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	after	after	SCONJ	IN	_	8	mark	_	_
+5	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj:pass	_	_
+6	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+7	been	be	AUX	VBN	Tense=Past|VerbForm=Part	8	aux:pass	_	_
+8	nourished	nourish	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	22	advcl	_	_
+9	by	by	ADP	IN	_	13	case	_	_
+10	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
+11	good	good	ADJ	JJ	Degree=Pos	12	amod	_	_
+12	word	word	NOUN	NN	Number=Sing	13	compound	_	_
+13	God	God	PROPN	NNP	_	8	obl:agent	_	_
+14	all	all	DET	DT	_	17	det:predet	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+16	day	day	NOUN	NN	Number=Sing	17	compound	_	_
+17	long	long	ADJ	JJ	Degree=Pos	8	obl	_	_
+18	,	,	PUNCT	,	_	22	punct	_	_
+19	will	will	AUX	MD	VerbForm=Fin	22	aux	_	_
+20	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	22	nsubj	_	_
+21	bring	bring	VERB	VB	VerbForm=Inf	22	aux	_	_
+22	forth	forth	ADP	RP	_	0	root	_	_
+23	evil	evil	ADJ	JJ	Degree=Pos	24	amod	_	_
+24	fruit	fruit	NOUN	NN	Number=Sing	21	obj	_	_
+25	,	,	PUNCT	,	_	31	punct	_	_
+26	that	that	SCONJ	IN	_	31	mark	_	_
+27	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	31	nsubj:pass	_	_
+28	must	must	AUX	MD	VerbForm=Fin	31	aux	_	_
+29	be	be	AUX	VB	VerbForm=Inf	31	aux:pass	_	_
+30	hewn	hew	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	31	aux	_	_
+31	down	down	ADP	RP	_	21	advcl	_	_
+32	and	and	CCONJ	CC	_	33	cc	_	_
+33	cast	cast	VERB	VBN	Tense=Past|VerbForm=Part	31	conj	_	_
+34	into	into	ADP	IN	_	36	case	_	_
+35	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+36	fire	fire	NOUN	NN	Number=Sing	33	obl	_	_
+37	of	of	ADP	IN	_	36	case	_	_
+38	?	?	PUNCT	.	_	22	punct	_	_
+
+# text = Behold, will ye reject these words?
+# sent_id = 234
+# llm_note = "Behold" INTJ discourse; simple inverted interrogative "will ye reject"
+1	Behold	behold	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	will	will	AUX	MD	VerbForm=Fin	5	aux	_	_
+4	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	5	nsubj	_	_
+5	reject	reject	VERB	VB	VerbForm=Inf	0	root	_	_
+6	these	this	DET	DT	Number=Plur|PronType=Dem	7	det	_	_
+7	words	word	NOUN	NNS	Number=Plur	5	obj	_	_
+8	?	?	PUNCT	.	_	5	punct	_	_
+
+# text = Will ye reject the words of the prophets; and will ye reject all the words which have been spoken concerning Christ, after so many have spoken concerning him; and deny the good word of Christ, and the power of God, and the gift of the Holy Ghost, and quench the Holy Spirit, and make a mock of the great plan of redemption, which hath been laid for you?
+# sent_id = 235
+# llm_note = Three-part rhetorical question joined by semicolons; first clause "will ye reject the words of the prophets"; second "will ye reject all the words..."; third shifts to imperatives-as-questions "deny ... quench ... make a mock"; "which hath been laid" acl:relcl on "plan"; "Holy Ghost" and "Holy Spirit" are fixed proper expressions
+1	Will	will	AUX	MD	VerbForm=Fin	3	aux	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	reject	reject	VERB	VB	VerbForm=Inf	0	root	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	words	word	NOUN	NNS	Number=Plur	3	obj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
+8	prophets	prophet	NOUN	NNS	Number=Plur	5	nmod	_	_
+9	;	;	PUNCT	.	_	13	punct	_	_
+10	and	and	CCONJ	CC	_	13	cc	_	_
+11	will	will	AUX	MD	VerbForm=Fin	13	aux	_	_
+12	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	13	nsubj	_	_
+13	reject	reject	VERB	VB	VerbForm=Inf	3	conj	_	_
+14	all	all	DET	DT	_	16	det:predet	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
+16	words	word	NOUN	NNS	Number=Plur	13	obj	_	_
+17	which	which	PRON	WDT	PronType=Rel	20	nsubj:pass	_	_
+18	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	20	aux	_	_
+19	been	be	AUX	VBN	Tense=Past|VerbForm=Part	20	aux:pass	_	_
+20	spoken	speak	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	16	acl:relcl	_	_
+21	concerning	concern	ADP	IN	_	22	case	_	_
+22	Christ	Christ	PROPN	NNP	_	20	obl	_	_
+23	,	,	PUNCT	,	_	28	punct	_	_
+24	after	after	SCONJ	IN	_	28	mark	_	_
+25	so	so	ADV	RB	_	26	advmod	_	_
+26	many	many	PRON	JJ	_	28	nsubj	_	_
+27	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	28	aux	_	_
+28	spoken	speak	VERB	VBN	Tense=Past|VerbForm=Part	13	advcl	_	_
+29	concerning	concern	ADP	IN	_	30	case	_	_
+30	him	he	PRON	PRP	Case=Acc|Number=Sing|Person=3	28	obl	_	_
+31	;	;	PUNCT	.	_	33	punct	_	_
+32	and	and	CCONJ	CC	_	33	cc	_	_
+33	deny	deny	VERB	VB	VerbForm=Inf	3	conj	_	_
+34	the	the	DET	DT	Definite=Def|PronType=Art	36	det	_	_
+35	good	good	ADJ	JJ	Degree=Pos	36	amod	_	_
+36	word	word	NOUN	NN	Number=Sing	33	obj	_	_
+37	of	of	ADP	IN	_	38	case	_	_
+38	Christ	Christ	PROPN	NNP	_	36	nmod	_	_
+39	,	,	PUNCT	,	_	42	punct	_	_
+40	and	and	CCONJ	CC	_	42	cc	_	_
+41	the	the	DET	DT	Definite=Def|PronType=Art	42	det	_	_
+42	power	power	NOUN	NN	Number=Sing	36	conj	_	_
+43	of	of	ADP	IN	_	44	case	_	_
+44	God	God	PROPN	NNP	_	42	nmod	_	_
+45	,	,	PUNCT	,	_	48	punct	_	_
+46	and	and	CCONJ	CC	_	48	cc	_	_
+47	the	the	DET	DT	Definite=Def|PronType=Art	48	det	_	_
+48	gift	gift	NOUN	NN	Number=Sing	36	conj	_	_
+49	of	of	ADP	IN	_	52	case	_	_
+50	the	the	DET	DT	Definite=Def|PronType=Art	52	det	_	_
+51	Holy	Holy	ADJ	JJ	Degree=Pos	52	amod	_	_
+52	Ghost	Ghost	PROPN	NNP	_	48	nmod	_	_
+53	,	,	PUNCT	,	_	55	punct	_	_
+54	and	and	CCONJ	CC	_	55	cc	_	_
+55	quench	quench	VERB	VB	VerbForm=Inf	3	conj	_	_
+56	the	the	DET	DT	Definite=Def|PronType=Art	58	det	_	_
+57	Holy	Holy	ADJ	JJ	Degree=Pos	58	amod	_	_
+58	Spirit	Spirit	PROPN	NNP	_	55	obj	_	_
+59	,	,	PUNCT	,	_	61	punct	_	_
+60	and	and	CCONJ	CC	_	61	cc	_	_
+61	make	make	VERB	VB	VerbForm=Inf	3	conj	_	_
+62	a	a	DET	DT	Definite=Ind|PronType=Art	63	det	_	_
+63	mock	mock	NOUN	NN	Number=Sing	61	obj	_	_
+64	of	of	ADP	IN	_	67	case	_	_
+65	the	the	DET	DT	Definite=Def|PronType=Art	67	det	_	_
+66	great	great	ADJ	JJ	Degree=Pos	67	amod	_	_
+67	plan	plan	NOUN	NN	Number=Sing	63	nmod	_	_
+68	of	of	ADP	IN	_	69	case	_	_
+69	redemption	redemption	NOUN	NN	Number=Sing	67	nmod	_	_
+70	,	,	PUNCT	,	_	74	punct	_	_
+71	which	which	PRON	WDT	PronType=Rel	74	nsubj:pass	_	_
+72	hath	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	74	aux	_	_
+73	been	be	AUX	VBN	Tense=Past|VerbForm=Part	74	aux:pass	_	_
+74	laid	lay	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	67	acl:relcl	_	_
+75	for	for	ADP	IN	_	76	case	_	_
+76	you	you	PRON	PRP	Case=Acc|Person=2	74	obl	_	_
+77	?	?	PUNCT	.	_	3	punct	_	_
+
+# text = Know ye not that if ye will do these things, that the power of the redemption and the resurrection, which is in Christ, will bring you to stand with shame and awful guilt before the bar of God?
+# sent_id = 236
+# llm_note = Rhetorical question; "know ye not that..." — "ye" nsubj of "know", "not" negation; outer "that" marks ccomp of "know"; conditional "if ye will do these things"; inner "that the power ... will bring" is the apodosis in ccomp; "which is in Christ" acl:relcl on "power ... and resurrection"; "bring you to stand" — "to stand" is xcomp
+1	Know	know	VERB	VB	Mood=Ind|VerbForm=Fin	0	root	_	_
+2	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	1	nsubj	_	_
+3	not	not	PART	RB	_	1	advmod	_	_
+4	that	that	SCONJ	IN	_	28	mark	_	_
+5	if	if	SCONJ	IN	_	9	mark	_	_
+6	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	9	nsubj	_	_
+7	will	will	AUX	MD	VerbForm=Fin	9	aux	_	_
+8	do	do	VERB	VB	VerbForm=Inf	9	aux	_	_
+9	these	this	DET	DT	Number=Plur|PronType=Dem	10	det	_	_
+10	things	thing	NOUN	NNS	Number=Plur	28	advcl	_	_
+11	,	,	PUNCT	,	_	28	punct	_	_
+12	that	that	SCONJ	IN	_	28	mark	_	_
+13	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
+14	power	power	NOUN	NN	Number=Sing	28	nsubj	_	_
+15	of	of	ADP	IN	_	17	case	_	_
+16	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+17	redemption	redemption	NOUN	NN	Number=Sing	14	nmod	_	_
+18	and	and	CCONJ	CC	_	20	cc	_	_
+19	the	the	DET	DT	Definite=Def|PronType=Art	20	det	_	_
+20	resurrection	resurrection	NOUN	NN	Number=Sing	14	conj	_	_
+21	,	,	PUNCT	,	_	23	punct	_	_
+22	which	which	PRON	WDT	PronType=Rel	23	nsubj	_	_
+23	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_
+24	in	in	ADP	IN	_	25	case	_	_
+25	Christ	Christ	PROPN	NNP	_	23	obl	_	_
+26	,	,	PUNCT	,	_	28	punct	_	_
+27	will	will	AUX	MD	VerbForm=Fin	28	aux	_	_
+28	bring	bring	VERB	VB	VerbForm=Inf	1	ccomp	_	_
+29	you	you	PRON	PRP	Case=Acc|Person=2	28	obj	_	_
+30	to	to	PART	TO	_	31	mark	_	_
+31	stand	stand	VERB	VB	VerbForm=Inf	28	xcomp	_	_
+32	with	with	ADP	IN	_	33	case	_	_
+33	shame	shame	NOUN	NN	Number=Sing	31	obl	_	_
+34	and	and	CCONJ	CC	_	36	cc	_	_
+35	awful	awful	ADJ	JJ	Degree=Pos	36	amod	_	_
+36	guilt	guilt	NOUN	NN	Number=Sing	33	conj	_	_
+37	before	before	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	_
+39	bar	bar	NOUN	NN	Number=Sing	31	obl	_	_
+40	of	of	ADP	IN	_	41	case	_	_
+41	God	God	PROPN	NNP	_	39	nmod	_	_
+42	?	?	PUNCT	.	_	1	punct	_	_
+
+# text = And according to the power of justice, for justice cannot be denied, ye must go away into that lake of fire and brimstone, whose flames are unquenchable, and whose smoke ascendeth up forever and ever, which lake of fire and brimstone is endless torment.
+# sent_id = 237
+# llm_note = MWT span row 11-12 "cannot" = "can"+"not" — leave span row cols as _; "according to the power of justice" obl frame; "for justice cannot be denied" parenthetical advcl; main clause "ye must go away into that lake"; "whose flames are unquenchable" acl:relcl; "whose smoke ascendeth up" coordinate acl:relcl; "forever and ever" fixed; "which lake of fire and brimstone is endless torment" final acl:relcl
+1	And	and	CCONJ	CC	_	18	cc	_	_
+2	according	accord	ADP	IN	_	18	advmod	_	_
+3	to	to	ADP	IN	_	5	case	_	_
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+5	power	power	NOUN	NN	Number=Sing	2	obl	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	justice	justice	NOUN	NN	Number=Sing	5	nmod	_	_
+8	,	,	PUNCT	,	_	14	punct	_	_
+9	for	for	SCONJ	IN	_	14	mark	_	_
+10	justice	justice	NOUN	NN	Number=Sing	14	nsubj:pass	_	_
+11-12	cannot	_	_	_	_	_	_	_	_
+11	can	can	AUX	MD	VerbForm=Fin	14	aux	_	_
+12	not	not	PART	RB	_	14	advmod	_	_
+13	be	be	AUX	VB	VerbForm=Inf	14	aux:pass	_	_
+14	denied	deny	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	18	advcl	_	_
+15	,	,	PUNCT	,	_	18	punct	_	_
+16	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	18	nsubj	_	_
+17	must	must	AUX	MD	VerbForm=Fin	18	aux	_	_
+18	go	go	VERB	VB	VerbForm=Inf	0	root	_	_
+19	away	away	ADV	RB	_	18	advmod	_	_
+20	into	into	ADP	IN	_	22	case	_	_
+21	that	that	DET	DT	Number=Sing|PronType=Dem	22	det	_	_
+22	lake	lake	NOUN	NN	Number=Sing	18	obl	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	fire	fire	NOUN	NN	Number=Sing	22	nmod	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	brimstone	brimstone	NOUN	NN	Number=Sing	24	conj	_	_
+27	,	,	PUNCT	,	_	30	punct	_	_
+28	whose	whose	PRON	WP$	Poss=Yes|PronType=Rel	29	nmod:poss	_	_
+29	flames	flame	NOUN	NNS	Number=Plur	30	nsubj	_	_
+30	are	be	VERB	VBZ	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_
+31	unquenchable	unquenchable	ADJ	JJ	Degree=Pos	30	xcomp	_	_
+32	,	,	PUNCT	,	_	36	punct	_	_
+33	and	and	CCONJ	CC	_	36	cc	_	_
+34	whose	whose	PRON	WP$	Poss=Yes|PronType=Rel	35	nmod:poss	_	_
+35	smoke	smoke	NOUN	NN	Number=Sing	36	nsubj	_	_
+36	ascendeth	ascend	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	conj	_	_
+37	up	up	ADV	RB	_	36	advmod	_	_
+38	forever	forever	ADV	RB	_	36	advmod	_	_
+39	and	and	CCONJ	CC	_	40	cc	_	_
+40	ever	ever	ADV	RB	_	38	conj	_	_
+41	,	,	PUNCT	,	_	50	punct	_	_
+42	which	which	PRON	WDT	PronType=Rel	50	nsubj	_	_
+43	lake	lake	NOUN	NN	Number=Sing	42	appos	_	_
+44	of	of	ADP	IN	_	45	case	_	_
+45	fire	fire	NOUN	NN	Number=Sing	43	nmod	_	_
+46	and	and	CCONJ	CC	_	47	cc	_	_
+47	brimstone	brimstone	NOUN	NN	Number=Sing	45	conj	_	_
+48	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	50	cop	_	_
+49	endless	endless	ADJ	JJ	Degree=Pos	50	amod	_	_
+50	torment	torment	NOUN	NN	Number=Sing	22	acl:relcl	_	_
+51	.	.	PUNCT	.	_	18	punct	_	_
+
+# text = O then, my beloved brethren, repent ye, and enter in at the strait gate, and continue in the way which is narrow, until ye shall obtain eternal life.
+# sent_id = 238
+# llm_note = "O then" — "O" INTJ vocative particle; "my beloved brethren" vocative; three coordinate imperatives "repent", "enter in", "continue"; "enter in" compound:prt; "at the strait gate" obl; "the way which is narrow" — relative clause; "until ye shall obtain eternal life" advcl of "continue"
+1	O	O	INTJ	UH	_	8	discourse	_	_
+2	then	then	ADV	RB	_	8	advmod	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	my	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes	6	nmod:poss	_	_
+5	beloved	beloved	ADJ	JJ	Degree=Pos	6	amod	_	_
+6	brethren	brethren	NOUN	NNS	Number=Plur	8	vocative	_	_
+7	,	,	PUNCT	,	_	6	punct	_	_
+8	repent	repent	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+9	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	8	nsubj	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	and	and	CCONJ	CC	_	12	cc	_	_
+12	enter	enter	VERB	VB	Mood=Imp|VerbForm=Fin	8	conj	_	_
+13	in	in	ADP	RP	_	12	compound:prt	_	_
+14	at	at	ADP	IN	_	17	case	_	_
+15	the	the	DET	DT	Definite=Def|PronType=Art	17	det	_	_
+16	strait	strait	ADJ	JJ	Degree=Pos	17	amod	_	_
+17	gate	gate	NOUN	NN	Number=Sing	12	obl	_	_
+18	,	,	PUNCT	,	_	20	punct	_	_
+19	and	and	CCONJ	CC	_	20	cc	_	_
+20	continue	continue	VERB	VB	Mood=Imp|VerbForm=Fin	8	conj	_	_
+21	in	in	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	Definite=Def|PronType=Art	23	det	_	_
+23	way	way	NOUN	NN	Number=Sing	20	obl	_	_
+24	which	which	PRON	WDT	PronType=Rel	25	nsubj	_	_
+25	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	_	_
+26	narrow	narrow	ADJ	JJ	Degree=Pos	25	xcomp	_	_
+27	,	,	PUNCT	,	_	31	punct	_	_
+28	until	until	SCONJ	IN	_	31	mark	_	_
+29	ye	ye	PRON	PRP	Case=Nom|Number=Plur|Person=2	31	nsubj	_	_
+30	shall	shall	AUX	MD	VerbForm=Fin	31	aux	_	_
+31	obtain	obtain	VERB	VB	VerbForm=Inf	20	advcl	_	_
+32	eternal	eternal	ADJ	JJ	Degree=Pos	33	amod	_	_
+33	life	life	NOUN	NN	Number=Sing	31	obj	_	_
+34	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = O be wise; what can I say more?
+# sent_id = 239
+# llm_note = "O" INTJ; "be wise" imperative copular; "what can I say more" rhetorical question joined by semicolon as parataxis; "more" advmod of "say"
+1	O	O	INTJ	UH	_	3	discourse	_	_
+2	be	be	AUX	VB	Mood=Imp|VerbForm=Fin	3	cop	_	_
+3	wise	wise	ADJ	JJ	Degree=Pos	0	root	_	_
+4	;	;	PUNCT	.	_	8	punct	_	_
+5	what	what	PRON	WP	PronType=Int	8	obj	_	_
+6	can	can	AUX	MD	VerbForm=Fin	8	aux	_	_
+7	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	say	say	VERB	VB	VerbForm=Inf	3	parataxis	_	_
+9	more	more	ADV	RBR	Degree=Cmp	8	advmod	_	_
+10	?	?	PUNCT	.	_	3	punct	_	_
+

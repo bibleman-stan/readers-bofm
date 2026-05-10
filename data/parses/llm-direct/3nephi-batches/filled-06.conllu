@@ -1,0 +1,963 @@
+# text = Therefore they did forsake all their sins, and their abominations, and their whoredoms, and did serve God with all diligence day and night.
+# sent_id = 125
+# llm_note = 'did forsake...did serve' — parallel did+VB; 'sins, abominations, whoredoms' — conjoined obj; 'day and night'=advmod of serve
+1	Therefore	therefore	ADV	RB	_	4	advmod	_	_
+2	they	they	PRON	PRP	_	4	nsubj	_	_
+3	did	do	AUX	VBD	_	4	aux	_	_
+4	forsake	forsake	VERB	VB	_	0	root	_	_
+5	all	all	DET	PDT	_	7	det:predet	_	_
+6	their	they	PRON	PRP$	_	7	nmod:poss	_	_
+7	sins	sin	NOUN	NNS	_	4	obj	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	and	and	CCONJ	CC	_	11	cc	_	_
+10	their	they	PRON	PRP$	_	11	nmod:poss	_	_
+11	abominations	abomination	NOUN	NNS	_	7	conj	_	_
+12	,	,	PUNCT	,	_	15	punct	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	their	they	PRON	PRP$	_	15	nmod:poss	_	_
+15	whoredoms	whoredom	NOUN	NNS	_	7	conj	_	_
+16	,	,	PUNCT	,	_	19	punct	_	_
+17	and	and	CCONJ	CC	_	19	cc	_	_
+18	did	do	AUX	VBD	_	19	aux	_	_
+19	serve	serve	VERB	VB	_	4	conj	_	_
+20	God	God	PROPN	NNP	_	19	obj	_	_
+21	with	with	ADP	IN	_	23	case	_	_
+22	all	all	DET	PDT	_	23	det:predet	_	_
+23	diligence	diligence	NOUN	NN	_	19	obl	_	_
+24	day	day	NOUN	NN	_	19	advmod	_	_
+25	and	and	CCONJ	CC	_	26	cc	_	_
+26	night	night	NOUN	NN	_	24	conj	_	_
+27	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And now it came to pass that when they had taken all the robbers prisoners, insomuch that none did escape who were not slain, they did cast their prisoners into prison, and did cause the word of God to be preached unto them; and as many as would repent of their sins and enter into a covenant that they would murder no more were set at liberty.
+# sent_id = 126
+# llm_note = AICTP with 'now'; 'prisoners'=xcomp of taken (obj complement); 'did cause...to be preached'=causative; 'as many as would repent...were set at liberty'=free relative nsubj
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	it	it	PRON	PRP	Expl=Yes	4	expl	_	_
+4	came	come	VERB	VBD	_	0	root	_	_
+5	to	to	PART	TO	_	6	mark	_	_
+6	pass	pass	VERB	VB	_	4	xcomp	_	_
+7	that	that	SCONJ	IN	_	29	mark	_	_
+8	when	when	SCONJ	IN	_	11	mark	_	_
+9	they	they	PRON	PRP	_	11	nsubj	_	_
+10	had	have	AUX	VBD	_	11	aux	_	_
+11	taken	take	VERB	VBN	_	29	advcl	_	_
+12	all	all	DET	PDT	_	14	det:predet	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	robbers	robber	NOUN	NNS	_	11	obj	_	_
+15	prisoners	prisoner	NOUN	NNS	_	11	xcomp	_	_
+16	,	,	PUNCT	,	_	21	punct	_	_
+17	insomuch	insomuch	ADV	RB	_	21	mark	_	_
+18	that	that	SCONJ	IN	_	17	fixed	_	_
+19	none	none	PRON	NN	_	21	nsubj	_	_
+20	did	do	AUX	VBD	_	21	aux	_	_
+21	escape	escape	VERB	VB	_	11	advcl	_	_
+22	who	who	PRON	WP	_	25	nsubj:pass	_	_
+23	were	be	AUX	VBD	_	25	aux:pass	_	_
+24	not	not	PART	RB	_	25	advmod	_	_
+25	slain	slay	VERB	VBN	_	21	acl:relcl	_	_
+26	,	,	PUNCT	,	_	29	punct	_	_
+27	they	they	PRON	PRP	_	29	nsubj	_	_
+28	did	do	AUX	VBD	_	29	aux	_	_
+29	cast	cast	VERB	VB	_	6	ccomp	_	_
+30	their	they	PRON	PRP$	_	31	nmod:poss	_	_
+31	prisoners	prisoner	NOUN	NNS	_	29	obj	_	_
+32	into	into	ADP	IN	_	33	case	_	_
+33	prison	prison	NOUN	NN	_	29	obl	_	_
+34	,	,	PUNCT	,	_	37	punct	_	_
+35	and	and	CCONJ	CC	_	37	cc	_	_
+36	did	do	AUX	VBD	_	37	aux	_	_
+37	cause	cause	VERB	VB	_	29	conj	_	_
+38	the	the	DET	DT	_	39	det	_	_
+39	word	word	NOUN	NN	_	37	obj	_	_
+40	of	of	ADP	IN	_	41	case	_	_
+41	God	God	PROPN	NNP	_	39	nmod	_	_
+42	to	to	PART	TO	_	44	mark	_	_
+43	be	be	AUX	VB	_	44	aux:pass	_	_
+44	preached	preach	VERB	VBN	_	37	xcomp	_	_
+45	unto	unto	ADP	IN	_	46	case	_	_
+46	them	they	PRON	PRP	_	44	obl	_	_
+47	;	;	PUNCT	,	_	69	punct	_	_
+48	and	and	CCONJ	CC	_	69	cc	_	_
+49	as	as	ADV	RB	_	50	advmod	_	_
+50	many	many	ADJ	JJ	_	69	nsubj:pass	_	_
+51	as	as	SCONJ	IN	_	53	mark	_	_
+52	would	will	AUX	MD	_	53	aux	_	_
+53	repent	repent	VERB	VB	_	50	acl:relcl	_	_
+54	of	of	ADP	IN	_	56	case	_	_
+55	their	they	PRON	PRP$	_	56	nmod:poss	_	_
+56	sins	sin	NOUN	NNS	_	53	obl	_	_
+57	and	and	CCONJ	CC	_	58	cc	_	_
+58	enter	enter	VERB	VB	_	53	conj	_	_
+59	into	into	ADP	IN	_	61	case	_	_
+60	a	a	DET	DT	_	61	det	_	_
+61	covenant	covenant	NOUN	NN	_	58	obl	_	_
+62	that	that	SCONJ	IN	_	65	mark	_	_
+63	they	they	PRON	PRP	_	65	nsubj	_	_
+64	would	will	AUX	MD	_	65	aux	_	_
+65	murder	murder	VERB	VB	_	61	acl	_	_
+66	no	no	ADV	RB	_	67	advmod	_	_
+67	more	more	ADV	RBR	_	65	advmod	_	_
+68	were	be	AUX	VBD	_	69	aux:pass	_	_
+69	set	set	VERB	VBN	_	29	conj	_	_
+70	at	at	ADP	IN	_	71	case	_	_
+71	liberty	liberty	NOUN	NN	_	69	obl	_	_
+72	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = But as many as there were who did not enter into a covenant, and who did still continue to have those secret murders in their hearts, yea, as many as were found breathing out threatenings against their brethren were condemned and punished according to the law.
+# sent_id = 127
+# llm_note = 'as many as there were who...were condemned' — free relative nsubj of condemned; 'yea'=INTJ discourse; 'breathing out threatenings'=participial acl of many(32)
+1	But	but	CCONJ	CC	_	43	cc	_	_
+2	as	as	ADV	RB	_	3	advmod	_	_
+3	many	many	ADJ	JJ	_	43	nsubj:pass	_	_
+4	as	as	SCONJ	IN	_	6	mark	_	_
+5	there	there	PRON	EX	_	6	expl	_	_
+6	were	be	VERB	VBD	_	3	acl:relcl	_	_
+7	who	who	PRON	WP	_	10	nsubj	_	_
+8	did	do	AUX	VBD	_	10	aux	_	_
+9	not	not	PART	RB	_	10	advmod	_	_
+10	enter	enter	VERB	VB	_	6	acl:relcl	_	_
+11	into	into	ADP	IN	_	13	case	_	_
+12	a	a	DET	DT	_	13	det	_	_
+13	covenant	covenant	NOUN	NN	_	10	obl	_	_
+14	,	,	PUNCT	,	_	19	punct	_	_
+15	and	and	CCONJ	CC	_	19	cc	_	_
+16	who	who	PRON	WP	_	19	nsubj	_	_
+17	did	do	AUX	VBD	_	19	aux	_	_
+18	still	still	ADV	RB	_	19	advmod	_	_
+19	continue	continue	VERB	VB	_	10	conj	_	_
+20	to	to	PART	TO	_	21	mark	_	_
+21	have	have	VERB	VB	_	19	xcomp	_	_
+22	those	that	DET	DT	_	24	det	_	_
+23	secret	secret	ADJ	JJ	_	24	amod	_	_
+24	murders	murder	NOUN	NNS	_	21	obj	_	_
+25	in	in	ADP	IN	_	27	case	_	_
+26	their	they	PRON	PRP$	_	27	nmod:poss	_	_
+27	hearts	heart	NOUN	NNS	_	21	obl	_	_
+28	,	,	PUNCT	,	_	29	punct	_	_
+29	yea	yea	INTJ	UH	_	43	discourse	_	_
+30	,	,	PUNCT	,	_	29	punct	_	_
+31	as	as	ADV	RB	_	32	advmod	_	_
+32	many	many	ADJ	JJ	_	43	nsubj:pass	_	_
+33	as	as	SCONJ	IN	_	35	mark	_	_
+34	were	be	AUX	VBD	_	35	aux:pass	_	_
+35	found	find	VERB	VBN	_	32	acl:relcl	_	_
+36	breathing	breathe	VERB	VBG	_	35	xcomp	_	_
+37	out	out	ADP	RP	_	36	compound:prt	_	_
+38	threatenings	threatening	NOUN	NNS	_	36	obj	_	_
+39	against	against	ADP	IN	_	41	case	_	_
+40	their	they	PRON	PRP$	_	41	nmod:poss	_	_
+41	brethren	brethren	NOUN	NNS	_	36	obl	_	_
+42	were	be	AUX	VBD	_	43	aux:pass	_	_
+43	condemned	condemn	VERB	VBN	_	0	root	_	_
+44	and	and	CCONJ	CC	_	45	cc	_	_
+45	punished	punish	VERB	VBN	_	43	conj	_	_
+46	according	accord	ADP	IN	_	47	case	_	_
+47	to	to	ADP	IN	_	43	obl	_	_
+48	the	the	DET	DT	_	49	det	_	_
+49	law	law	NOUN	NN	_	47	nmod	_	_
+50	.	.	PUNCT	.	_	43	punct	_	_
+
+# text = And thus they did put an end to all those wicked, and secret, and abominable combinations, in the which there was so much wickedness, and so many murders committed.
+# sent_id = 128
+# llm_note = 'put an end to'=MWV idiom; 'in the which'=archaic relative; 'so many murders committed'=small-clause/participial postmod
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	thus	thus	ADV	RB	_	5	advmod	_	_
+3	they	they	PRON	PRP	_	5	nsubj	_	_
+4	did	do	AUX	VBD	_	5	aux	_	_
+5	put	put	VERB	VB	_	0	root	_	_
+6	an	a	DET	DT	_	7	det	_	_
+7	end	end	NOUN	NN	_	5	obj	_	_
+8	to	to	ADP	IN	_	18	case	_	_
+9	all	all	DET	PDT	_	18	det:predet	_	_
+10	those	that	DET	DT	_	18	det	_	_
+11	wicked	wicked	ADJ	JJ	_	18	amod	_	_
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	and	and	CCONJ	CC	_	14	cc	_	_
+14	secret	secret	ADJ	JJ	_	11	conj	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	abominable	abominable	ADJ	JJ	_	11	conj	_	_
+18	combinations	combination	NOUN	NNS	_	7	obl	_	_
+19	,	,	PUNCT	,	_	24	punct	_	_
+20	in	in	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	which	which	PRON	WDT	_	18	acl:relcl	_	_
+23	there	there	PRON	EX	_	24	expl	_	_
+24	was	be	VERB	VBD	_	22	acl:relcl	_	_
+25	so	so	ADV	RB	_	26	advmod	_	_
+26	much	much	DET	JJ	_	27	det	_	_
+27	wickedness	wickedness	NOUN	NN	_	24	nsubj	_	_
+28	,	,	PUNCT	,	_	32	punct	_	_
+29	and	and	CCONJ	CC	_	32	cc	_	_
+30	so	so	ADV	RB	_	31	advmod	_	_
+31	many	many	DET	JJ	_	32	det	_	_
+32	murders	murder	NOUN	NNS	_	27	conj	_	_
+33	committed	commit	VERB	VBN	_	32	acl	_	_
+34	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And thus had the twenty and second year passed away, and the twenty and third year also, and the twenty and fourth, and the twenty and fifth; and thus had twenty and five years passed away.
+# sent_id = 129
+# llm_note = Inverted perfective 'thus had...passed' — had=AUX fronted; ellipsis in later conjuncts ('passed away' elided); final clause resumes full form
+1	And	and	CCONJ	CC	_	9	cc	_	_
+2	thus	thus	ADV	RB	_	9	advmod	_	_
+3	had	have	AUX	VBD	_	9	aux	_	_
+4	the	the	DET	DT	_	8	det	_	_
+5	twenty	twenty	NUM	CD	_	8	nummod	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	second	second	ADJ	JJ	_	5	conj	_	_
+8	year	year	NOUN	NN	_	9	nsubj	_	_
+9	passed	pass	VERB	VBN	_	0	root	_	_
+10	away	away	ADV	RB	_	9	advmod	_	_
+11	,	,	PUNCT	,	_	17	punct	_	_
+12	and	and	CCONJ	CC	_	17	cc	_	_
+13	the	the	DET	DT	_	17	det	_	_
+14	twenty	twenty	NUM	CD	_	17	nummod	_	_
+15	and	and	CCONJ	CC	_	16	cc	_	_
+16	third	third	ADJ	JJ	_	14	conj	_	_
+17	year	year	NOUN	NN	_	9	conj	_	_
+18	also	also	ADV	RB	_	17	advmod	_	_
+19	,	,	PUNCT	,	_	24	punct	_	_
+20	and	and	CCONJ	CC	_	24	cc	_	_
+21	the	the	DET	DT	_	24	det	_	_
+22	twenty	twenty	NUM	CD	_	24	nummod	_	_
+23	and	and	CCONJ	CC	_	24	cc	_	_
+24	fourth	fourth	ADJ	JJ	_	9	conj	_	_
+25	,	,	PUNCT	,	_	30	punct	_	_
+26	and	and	CCONJ	CC	_	30	cc	_	_
+27	the	the	DET	DT	_	30	det	_	_
+28	twenty	twenty	NUM	CD	_	30	nummod	_	_
+29	and	and	CCONJ	CC	_	30	cc	_	_
+30	fifth	fifth	ADJ	JJ	_	9	conj	_	_
+31	;	;	PUNCT	,	_	39	punct	_	_
+32	and	and	CCONJ	CC	_	39	cc	_	_
+33	thus	thus	ADV	RB	_	39	advmod	_	_
+34	had	have	AUX	VBD	_	39	aux	_	_
+35	twenty	twenty	NUM	CD	_	38	nummod	_	_
+36	and	and	CCONJ	CC	_	37	cc	_	_
+37	five	five	NUM	CD	_	35	conj	_	_
+38	years	year	NOUN	NNS	_	39	nsubj	_	_
+39	passed	pass	VERB	VBN	_	9	conj	_	_
+40	away	away	ADV	RB	_	39	advmod	_	_
+41	.	.	PUNCT	.	_	9	punct	_	_
+
+# text = And there had many things transpired which, in the eyes of some, would be great and marvelous; nevertheless, they cannot all be written in this book; yea, this book cannot contain even a hundredth part of what was done among so many people in the space of twenty and five years;
+# sent_id = 130
+# llm_note = MWT 'cannot' (24-25 and 37-38): leave span rows as _; annotate sub-tokens; 'there had many things transpired'=existential inverted; 'which...would be great'=acl:relcl; 'nevertheless'=ADV advmod
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	there	there	PRON	EX	_	6	expl	_	_
+3	had	have	AUX	VBD	_	6	aux	_	_
+4	many	many	DET	JJ	_	5	det	_	_
+5	things	thing	NOUN	NNS	_	6	nsubj	_	_
+6	transpired	transpire	VERB	VBN	_	0	root	_	_
+7	which	which	PRON	WDT	_	16	nsubj	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	in	in	ADP	IN	_	11	case	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	eyes	eye	NOUN	NNS	_	16	obl	_	_
+12	of	of	ADP	IN	_	13	case	_	_
+13	some	some	PRON	NN	_	11	nmod	_	_
+14	,	,	PUNCT	,	_	16	punct	_	_
+15	would	will	AUX	MD	_	16	aux	_	_
+16	be	be	VERB	VB	_	5	acl:relcl	_	_
+17	great	great	ADJ	JJ	_	16	xcomp	_	_
+18	and	and	CCONJ	CC	_	19	cc	_	_
+19	marvelous	marvelous	ADJ	JJ	_	17	conj	_	_
+20	;	;	PUNCT	,	_	28	punct	_	_
+21	nevertheless	nevertheless	ADV	RB	_	28	advmod	_	_
+22	,	,	PUNCT	,	_	21	punct	_	_
+23	they	they	PRON	PRP	_	28	nsubj:pass	_	_
+24-25	cannot	_	_	_	_	_	_	_	_
+24	can	can	AUX	MD	_	28	aux	_	_
+25	not	not	PART	RB	_	28	advmod	_	_
+26	all	all	ADV	RB	_	28	advmod	_	_
+27	be	be	AUX	VB	_	28	aux:pass	_	_
+28	written	write	VERB	VBN	_	6	parataxis	_	_
+29	in	in	ADP	IN	_	31	case	_	_
+30	this	this	DET	DT	_	31	det	_	_
+31	book	book	NOUN	NN	_	28	obl	_	_
+32	;	;	PUNCT	,	_	39	punct	_	_
+33	yea	yea	INTJ	UH	_	39	discourse	_	_
+34	,	,	PUNCT	,	_	33	punct	_	_
+35	this	this	DET	DT	_	36	det	_	_
+36	book	book	NOUN	NN	_	39	nsubj	_	_
+37-38	cannot	_	_	_	_	_	_	_	_
+37	can	can	AUX	MD	_	39	aux	_	_
+38	not	not	PART	RB	_	39	advmod	_	_
+39	contain	contain	VERB	VB	_	28	conj	_	_
+40	even	even	ADV	RB	_	43	advmod	_	_
+41	a	a	DET	DT	_	43	det	_	_
+42	hundredth	hundredth	ADJ	JJ	_	43	amod	_	_
+43	part	part	NOUN	NN	_	39	obj	_	_
+44	of	of	ADP	IN	_	45	case	_	_
+45	what	what	PRON	WP	_	39	obl	_	_
+46	was	be	AUX	VBD	_	47	aux:pass	_	_
+47	done	do	VERB	VBN	_	45	acl:relcl	_	_
+48	among	among	ADP	IN	_	51	case	_	_
+49	so	so	ADV	RB	_	50	advmod	_	_
+50	many	many	DET	JJ	_	51	det	_	_
+51	people	people	NOUN	NNS	_	47	obl	_	_
+52	in	in	ADP	IN	_	54	case	_	_
+53	the	the	DET	DT	_	54	det	_	_
+54	space	space	NOUN	NN	_	47	obl	_	_
+55	of	of	ADP	IN	_	59	case	_	_
+56	twenty	twenty	NUM	CD	_	59	nummod	_	_
+57	and	and	CCONJ	CC	_	58	cc	_	_
+58	five	five	NUM	CD	_	56	conj	_	_
+59	years	year	NOUN	NNS	_	54	nmod	_	_
+60	;	;	PUNCT	,	_	6	punct	_	_
+
+# text = But behold there are records which do contain all the proceedings of this people; and a shorter but true account was given by Nephi.
+# sent_id = 131
+# llm_note = 'behold'=INTJ; existential 'there are records'; 'which do contain'=acl:relcl; 'shorter but true account'=conj adj
+1	But	but	CCONJ	CC	_	4	cc	_	_
+2	behold	behold	INTJ	UH	_	4	discourse	_	_
+3	there	there	PRON	EX	_	4	expl	_	_
+4	are	be	VERB	VBZ	_	0	root	_	_
+5	records	record	NOUN	NNS	_	4	nsubj	_	_
+6	which	which	PRON	WDT	_	8	nsubj	_	_
+7	do	do	AUX	VBZ	_	8	aux	_	_
+8	contain	contain	VERB	VB	_	5	acl:relcl	_	_
+9	all	all	DET	PDT	_	11	det:predet	_	_
+10	the	the	DET	DT	_	11	det	_	_
+11	proceedings	proceeding	NOUN	NNS	_	8	obj	_	_
+12	of	of	ADP	IN	_	14	case	_	_
+13	this	this	DET	DT	_	14	det	_	_
+14	people	people	NOUN	NN	_	11	nmod	_	_
+15	;	;	PUNCT	,	_	23	punct	_	_
+16	and	and	CCONJ	CC	_	23	cc	_	_
+17	a	a	DET	DT	_	21	det	_	_
+18	shorter	short	ADJ	JJR	_	21	amod	_	_
+19	but	but	CCONJ	CC	_	20	cc	_	_
+20	true	true	ADJ	JJ	_	18	conj	_	_
+21	account	account	NOUN	NN	_	23	nsubj:pass	_	_
+22	was	be	AUX	VBD	_	23	aux:pass	_	_
+23	given	give	VERB	VBN	_	4	conj	_	_
+24	by	by	ADP	IN	_	25	case	_	_
+25	Nephi	Nephi	PROPN	NNP	_	23	obl:agent	_	_
+26	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = Therefore I have made my record of these things according to the record of Nephi, which was engraven on the plates which were called the plates of Nephi.
+# sent_id = 132
+# llm_note = 'engraven'=archaic passive participle; 'which were called the plates of Nephi'=acl:relcl on plates
+1	Therefore	therefore	ADV	RB	_	4	advmod	_	_
+2	I	I	PRON	PRP	_	4	nsubj	_	_
+3	have	have	AUX	VBZ	_	4	aux	_	_
+4	made	make	VERB	VBN	_	0	root	_	_
+5	my	I	PRON	PRP$	_	6	nmod:poss	_	_
+6	record	record	NOUN	NN	_	4	obj	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	these	this	DET	DT	_	9	det	_	_
+9	things	thing	NOUN	NNS	_	6	nmod	_	_
+10	according	accord	ADP	IN	_	11	case	_	_
+11	to	to	ADP	IN	_	4	obl	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	record	record	NOUN	NN	_	11	nmod	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	Nephi	Nephi	PROPN	NNP	_	13	nmod	_	_
+16	,	,	PUNCT	,	_	19	punct	_	_
+17	which	which	PRON	WDT	_	19	nsubj:pass	_	_
+18	was	be	AUX	VBD	_	19	aux:pass	_	_
+19	engraven	engrave	VERB	VBN	_	13	acl:relcl	_	_
+20	on	on	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	plates	plate	NOUN	NNS	_	19	obl	_	_
+23	which	which	PRON	WDT	_	25	nsubj:pass	_	_
+24	were	be	AUX	VBD	_	25	aux:pass	_	_
+25	called	call	VERB	VBN	_	22	acl:relcl	_	_
+26	the	the	DET	DT	_	27	det	_	_
+27	plates	plate	NOUN	NNS	_	25	xcomp	_	_
+28	of	of	ADP	IN	_	29	case	_	_
+29	Nephi	Nephi	PROPN	NNP	_	27	nmod	_	_
+30	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And behold, I do make the record on plates which I have made with mine own hands.
+# sent_id = 133
+# llm_note = 'I do make'=emphatic auxiliary do; 'mine own'=archaic possessive, mine=DET/PRON, own=ADJ
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	behold	behold	INTJ	UH	_	6	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	I	I	PRON	PRP	_	6	nsubj	_	_
+5	do	do	AUX	VBZ	_	6	aux	_	_
+6	make	make	VERB	VB	_	0	root	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	record	record	NOUN	NN	_	6	obj	_	_
+9	on	on	ADP	IN	_	10	case	_	_
+10	plates	plate	NOUN	NNS	_	6	obl	_	_
+11	which	which	PRON	WDT	_	14	obj	_	_
+12	I	I	PRON	PRP	_	14	nsubj	_	_
+13	have	have	AUX	VBZ	_	14	aux	_	_
+14	made	make	VERB	VBN	_	10	acl:relcl	_	_
+15	with	with	ADP	IN	_	18	case	_	_
+16	mine	I	PRON	PRP$	_	18	nmod:poss	_	_
+17	own	own	ADJ	JJ	_	18	amod	_	_
+18	hands	hand	NOUN	NNS	_	14	obl	_	_
+19	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = And behold, I am called Mormon, being called after the land of Mormon, the land in which Alma did establish the church among the people, yea, the first church which was established among them after their transgression.
+# sent_id = 134
+# llm_note = 'I am called Mormon'=pass, Mormon=xcomp; 'being called after the land'=advcl participial; 'the land in which Alma did establish'=appos of Mormon(land); 'yea, the first church'=appos of church
+1	And	and	CCONJ	CC	_	6	cc	_	_
+2	behold	behold	INTJ	UH	_	6	discourse	_	_
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	I	I	PRON	PRP	_	6	nsubj:pass	_	_
+5	am	be	AUX	VBZ	_	6	aux:pass	_	_
+6	called	call	VERB	VBN	_	0	root	_	_
+7	Mormon	Mormon	PROPN	NNP	_	6	xcomp	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	being	be	AUX	VBG	_	10	aux:pass	_	_
+10	called	call	VERB	VBN	_	6	advcl	_	_
+11	after	after	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	land	land	NOUN	NN	_	10	obl	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	Mormon	Mormon	PROPN	NNP	_	13	nmod	_	_
+16	,	,	PUNCT	,	_	18	punct	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	land	land	NOUN	NN	_	13	appos	_	_
+19	in	in	ADP	IN	_	20	case	_	_
+20	which	which	PRON	WDT	_	18	acl:relcl	_	_
+21	Alma	Alma	PROPN	NNP	_	23	nsubj	_	_
+22	did	do	AUX	VBD	_	23	aux	_	_
+23	establish	establish	VERB	VB	_	20	acl:relcl	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	church	church	NOUN	NN	_	23	obj	_	_
+26	among	among	ADP	IN	_	28	case	_	_
+27	the	the	DET	DT	_	28	det	_	_
+28	people	people	NOUN	NN	_	23	obl	_	_
+29	,	,	PUNCT	,	_	30	punct	_	_
+30	yea	yea	INTJ	UH	_	6	discourse	_	_
+31	,	,	PUNCT	,	_	30	punct	_	_
+32	the	the	DET	DT	_	34	det	_	_
+33	first	first	ADJ	JJ	_	34	amod	_	_
+34	church	church	NOUN	NN	_	25	appos	_	_
+35	which	which	PRON	WDT	_	37	nsubj:pass	_	_
+36	was	be	AUX	VBD	_	37	aux:pass	_	_
+37	established	establish	VERB	VBN	_	34	acl:relcl	_	_
+38	among	among	ADP	IN	_	39	case	_	_
+39	them	they	PRON	PRP	_	37	obl	_	_
+40	after	after	ADP	IN	_	42	case	_	_
+41	their	they	PRON	PRP$	_	42	nmod:poss	_	_
+42	transgression	transgression	NOUN	NN	_	37	obl	_	_
+43	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = Behold, I am a disciple of Jesus Christ, the Son of God.
+# sent_id = 135
+# llm_note = Behold=INTJ discourse; 'the Son of God'=appos of Christ
+1	Behold	behold	INTJ	UH	_	6	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	I	I	PRON	PRP	_	6	nsubj	_	_
+4	am	be	AUX	VBZ	_	6	cop	_	_
+5	a	a	DET	DT	_	6	det	_	_
+6	disciple	disciple	NOUN	NN	_	0	root	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	Jesus	Jesus	PROPN	NNP	_	9	flat	_	_
+9	Christ	Christ	PROPN	NNP	_	6	nmod	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	Son	Son	PROPN	NNP	_	9	appos	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	God	God	PROPN	NNP	_	12	nmod	_	_
+15	.	.	PUNCT	.	_	6	punct	_	_
+
+# text = I have been called of him to declare his word among his people, that they might have everlasting life.
+# sent_id = 136
+# llm_note = 'called of him'=pass, 'of him'=obl:agent (archaic 'of' for 'by'); 'to declare'=advcl purpose; 'that they might have'=advcl purpose
+1	I	I	PRON	PRP	_	4	nsubj:pass	_	_
+2	have	have	AUX	VBZ	_	4	aux	_	_
+3	been	be	AUX	VBN	_	4	aux:pass	_	_
+4	called	call	VERB	VBN	_	0	root	_	_
+5	of	of	ADP	IN	_	6	case	_	_
+6	him	he	PRON	PRP	_	4	obl:agent	_	_
+7	to	to	PART	TO	_	8	mark	_	_
+8	declare	declare	VERB	VB	_	4	advcl	_	_
+9	his	he	PRON	PRP$	_	10	nmod:poss	_	_
+10	word	word	NOUN	NN	_	8	obj	_	_
+11	among	among	ADP	IN	_	13	case	_	_
+12	his	he	PRON	PRP$	_	13	nmod:poss	_	_
+13	people	people	NOUN	NN	_	8	obl	_	_
+14	,	,	PUNCT	,	_	18	punct	_	_
+15	that	that	SCONJ	IN	_	18	mark	_	_
+16	they	they	PRON	PRP	_	18	nsubj	_	_
+17	might	may	AUX	MD	_	18	aux	_	_
+18	have	have	VERB	VB	_	8	advcl	_	_
+19	everlasting	everlasting	ADJ	JJ	_	20	amod	_	_
+20	life	life	NOUN	NN	_	18	obj	_	_
+21	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And it hath become expedient that I, according to the will of God, that the prayers of those who have gone hence, who were the holy ones, should be fulfilled according to their faith, should make a record of these things which have been done--
+# sent_id = 137
+# llm_note = Complex embedding: 'it hath become expedient that I...should make' — it=expl, expedient=xcomp, 'I should make'=ccomp; long parenthetical 'according to the will of God...should be fulfilled' is an embedded purpose clause modifying expedient/context; second 'that'(16) introduces another purpose clause; root=make(41)
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	it	it	PRON	PRP	Expl=Yes	4	expl	_	_
+3	hath	have	AUX	VBZ	_	4	aux	_	_
+4	become	become	VERB	VBN	_	0	root	_	_
+5	expedient	expedient	ADJ	JJ	_	4	xcomp	_	_
+6	that	that	SCONJ	IN	_	41	mark	_	_
+7	I	I	PRON	PRP	_	41	nsubj	_	_
+8	,	,	PUNCT	,	_	10	punct	_	_
+9	according	accord	ADP	IN	_	10	case	_	_
+10	to	to	ADP	IN	_	41	obl	_	_
+11	the	the	DET	DT	_	12	det	_	_
+12	will	will	NOUN	NN	_	10	nmod	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	God	God	PROPN	NNP	_	12	nmod	_	_
+15	,	,	PUNCT	,	_	34	punct	_	_
+16	that	that	SCONJ	IN	_	34	mark	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	prayers	prayer	NOUN	NNS	_	34	nsubj:pass	_	_
+19	of	of	ADP	IN	_	20	case	_	_
+20	those	that	PRON	DT	_	18	nmod	_	_
+21	who	who	PRON	WP	_	23	nsubj	_	_
+22	have	have	AUX	VBZ	_	23	aux	_	_
+23	gone	go	VERB	VBN	_	20	acl:relcl	_	_
+24	hence	hence	ADV	RB	_	23	advmod	_	_
+25	,	,	PUNCT	,	_	27	punct	_	_
+26	who	who	PRON	WP	_	27	nsubj	_	_
+27	were	be	VERB	VBD	_	20	acl:relcl	_	_
+28	the	the	DET	DT	_	30	det	_	_
+29	holy	holy	ADJ	JJ	_	30	amod	_	_
+30	ones	one	NOUN	NNS	_	27	xcomp	_	_
+31	,	,	PUNCT	,	_	34	punct	_	_
+32	should	shall	AUX	MD	_	34	aux:pass	_	_
+33	be	be	AUX	VB	_	34	aux:pass	_	_
+34	fulfilled	fulfill	VERB	VBN	_	5	advcl	_	_
+35	according	accord	ADP	IN	_	36	case	_	_
+36	to	to	ADP	IN	_	34	obl	_	_
+37	their	they	PRON	PRP$	_	38	nmod:poss	_	_
+38	faith	faith	NOUN	NN	_	36	nmod	_	_
+39	,	,	PUNCT	,	_	41	punct	_	_
+40	should	shall	AUX	MD	_	41	aux	_	_
+41	make	make	VERB	VB	_	4	ccomp	_	_
+42	a	a	DET	DT	_	43	det	_	_
+43	record	record	NOUN	NN	_	41	obj	_	_
+44	of	of	ADP	IN	_	46	case	_	_
+45	these	this	DET	DT	_	46	det	_	_
+46	things	thing	NOUN	NNS	_	43	nmod	_	_
+47	which	which	PRON	WDT	_	50	nsubj:pass	_	_
+48	have	have	AUX	VBZ	_	50	aux	_	_
+49	been	be	AUX	VBN	_	50	aux:pass	_	_
+50	done	do	VERB	VBN	_	46	acl:relcl	_	_
+51	--	--	PUNCT	,	_	41	punct	_	_
+
+# text = Yea, a small record of that which hath taken place from the time that Lehi left Jerusalem, even down until the present time.
+# sent_id = 138
+# llm_note = Fragment continuing from sent 137; 'Yea, a small record'=discourse continuation, record=root (nominal head in appos to sent 137); 'that which hath taken place'=rel clause; 'hath'=AUX (taken=perf participle)
+1	Yea	yea	INTJ	UH	_	5	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	a	a	DET	DT	_	5	det	_	_
+4	small	small	ADJ	JJ	_	5	amod	_	_
+5	record	record	NOUN	NN	_	0	root	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	that	that	PRON	DT	_	5	nmod	_	_
+8	which	which	PRON	WDT	_	11	nsubj	_	_
+9	hath	have	AUX	VBZ	_	11	aux	_	_
+10	taken	take	VERB	VBN	_	11	aux	_	_
+11	place	place	NOUN	NN	_	7	acl:relcl	_	_
+12	from	from	ADP	IN	_	14	case	_	_
+13	the	the	DET	DT	_	14	det	_	_
+14	time	time	NOUN	NN	_	11	obl	_	_
+15	that	that	SCONJ	IN	_	17	mark	_	_
+16	Lehi	Lehi	PROPN	NNP	_	17	nsubj	_	_
+17	left	leave	VERB	VBD	_	14	acl	_	_
+18	Jerusalem	Jerusalem	PROPN	NNP	_	17	obj	_	_
+19	,	,	PUNCT	,	_	21	punct	_	_
+20	even	even	ADV	RB	_	21	advmod	_	_
+21	down	down	ADV	RB	_	22	advmod	_	_
+22	until	until	ADP	IN	_	25	case	_	_
+23	the	the	DET	DT	_	25	det	_	_
+24	present	present	ADJ	JJ	_	25	amod	_	_
+25	time	time	NOUN	NN	_	5	obl	_	_
+26	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = Therefore I do make my record from the accounts which have been given by those who were before me, until the commencement of my day;
+# sent_id = 139
+# llm_note = 'I do make'=emphatic aux do; 'from the accounts'=obl source; 'which have been given'=acl:relcl; 'until the commencement'=obl temporal
+1	Therefore	therefore	ADV	RB	_	4	advmod	_	_
+2	I	I	PRON	PRP	_	4	nsubj	_	_
+3	do	do	AUX	VBZ	_	4	aux	_	_
+4	make	make	VERB	VB	_	0	root	_	_
+5	my	I	PRON	PRP$	_	6	nmod:poss	_	_
+6	record	record	NOUN	NN	_	4	obj	_	_
+7	from	from	ADP	IN	_	9	case	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	accounts	account	NOUN	NNS	_	4	obl	_	_
+10	which	which	PRON	WDT	_	13	nsubj:pass	_	_
+11	have	have	AUX	VBZ	_	13	aux	_	_
+12	been	be	AUX	VBN	_	13	aux:pass	_	_
+13	given	give	VERB	VBN	_	9	acl:relcl	_	_
+14	by	by	ADP	IN	_	15	case	_	_
+15	those	that	PRON	DT	_	13	obl:agent	_	_
+16	who	who	PRON	WP	_	17	nsubj	_	_
+17	were	be	VERB	VBD	_	15	acl:relcl	_	_
+18	before	before	ADP	IN	_	19	case	_	_
+19	me	I	PRON	PRP	_	17	obl	_	_
+20	,	,	PUNCT	,	_	23	punct	_	_
+21	until	until	ADP	IN	_	23	case	_	_
+22	the	the	DET	DT	_	23	det	_	_
+23	commencement	commencement	NOUN	NN	_	4	obl	_	_
+24	of	of	ADP	IN	_	26	case	_	_
+25	my	I	PRON	PRP$	_	26	nmod:poss	_	_
+26	day	day	NOUN	NN	_	23	nmod	_	_
+27	;	;	PUNCT	,	_	4	punct	_	_
+
+# text = And then I do make a record of the things which I have seen with mine own eyes.
+# sent_id = 140
+1	And	and	CCONJ	CC	_	5	cc	_	_
+2	then	then	ADV	RB	_	5	advmod	_	_
+3	I	I	PRON	PRP	_	5	nsubj	_	_
+4	do	do	AUX	VBZ	_	5	aux	_	_
+5	make	make	VERB	VB	_	0	root	_	_
+6	a	a	DET	DT	_	7	det	_	_
+7	record	record	NOUN	NN	_	5	obj	_	_
+8	of	of	ADP	IN	_	10	case	_	_
+9	the	the	DET	DT	_	10	det	_	_
+10	things	thing	NOUN	NNS	_	7	nmod	_	_
+11	which	which	PRON	WDT	_	14	obj	_	_
+12	I	I	PRON	PRP	_	14	nsubj	_	_
+13	have	have	AUX	VBZ	_	14	aux	_	_
+14	seen	see	VERB	VBN	_	10	acl:relcl	_	_
+15	with	with	ADP	IN	_	18	case	_	_
+16	mine	I	PRON	PRP$	_	18	nmod:poss	_	_
+17	own	own	ADJ	JJ	_	18	amod	_	_
+18	eyes	eye	NOUN	NNS	_	14	obl	_	_
+19	.	.	PUNCT	.	_	5	punct	_	_
+
+# text = And I know the record which I make to be a just and a true record; nevertheless there are many things which, according to our language, we are not able to write.
+# sent_id = 141
+# llm_note = 'know the record...to be a just...record'=cognition verb + xcomp (small clause: record=subj of to be); 'nevertheless'=ADV
+1	And	and	CCONJ	CC	_	3	cc	_	_
+2	I	I	PRON	PRP	_	3	nsubj	_	_
+3	know	know	VERB	VBZ	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	record	record	NOUN	NN	_	3	obj	_	_
+6	which	which	PRON	WDT	_	8	obj	_	_
+7	I	I	PRON	PRP	_	8	nsubj	_	_
+8	make	make	VERB	VBZ	_	5	acl:relcl	_	_
+9	to	to	PART	TO	_	10	mark	_	_
+10	be	be	VERB	VB	_	3	xcomp	_	_
+11	a	a	DET	DT	_	12	det	_	_
+12	just	just	ADJ	JJ	_	16	amod	_	_
+13	and	and	CCONJ	CC	_	15	cc	_	_
+14	a	a	DET	DT	_	15	det	_	_
+15	true	true	ADJ	JJ	_	12	conj	_	_
+16	record	record	NOUN	NN	_	10	xcomp	_	_
+17	;	;	PUNCT	,	_	20	punct	_	_
+18	nevertheless	nevertheless	ADV	RB	_	20	advmod	_	_
+19	there	there	PRON	EX	_	20	expl	_	_
+20	are	be	VERB	VBZ	_	3	parataxis	_	_
+21	many	many	DET	JJ	_	22	det	_	_
+22	things	thing	NOUN	NNS	_	20	nsubj	_	_
+23	which	which	PRON	WDT	_	35	nsubj	_	_
+24	,	,	PUNCT	,	_	26	punct	_	_
+25	according	accord	ADP	IN	_	26	case	_	_
+26	to	to	ADP	IN	_	35	obl	_	_
+27	our	we	PRON	PRP$	_	28	nmod:poss	_	_
+28	language	language	NOUN	NN	_	26	nmod	_	_
+29	,	,	PUNCT	,	_	35	punct	_	_
+30	we	we	PRON	PRP	_	35	nsubj	_	_
+31	are	be	AUX	VBZ	_	35	aux	_	_
+32	not	not	PART	RB	_	35	advmod	_	_
+33	able	able	ADJ	JJ	_	35	xcomp	_	_
+34	to	to	PART	TO	_	35	mark	_	_
+35	write	write	VERB	VB	_	22	acl:relcl	_	_
+36	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = And now I make an end of my saying, which is of myself, and proceed to give my account of the things which have been before me.
+# sent_id = 142
+# llm_note = 'make an end of my saying'=idiom; 'which is of myself'=acl:relcl on saying; 'proceed to give'=conj of make
+1	And	and	CCONJ	CC	_	4	cc	_	_
+2	now	now	ADV	RB	_	4	advmod	_	_
+3	I	I	PRON	PRP	_	4	nsubj	_	_
+4	make	make	VERB	VBZ	_	0	root	_	_
+5	an	a	DET	DT	_	6	det	_	_
+6	end	end	NOUN	NN	_	4	obj	_	_
+7	of	of	ADP	IN	_	9	case	_	_
+8	my	I	PRON	PRP$	_	9	nmod:poss	_	_
+9	saying	say	VERB	VBG	_	6	nmod	_	_
+10	,	,	PUNCT	,	_	12	punct	_	_
+11	which	which	PRON	WDT	_	12	nsubj	_	_
+12	is	be	VERB	VBZ	_	9	acl:relcl	_	_
+13	of	of	ADP	IN	_	14	case	_	_
+14	myself	myself	PRON	PRP	_	12	obl	_	_
+15	,	,	PUNCT	,	_	17	punct	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	proceed	proceed	VERB	VBZ	_	4	conj	_	_
+18	to	to	PART	TO	_	19	mark	_	_
+19	give	give	VERB	VB	_	17	xcomp	_	_
+20	my	I	PRON	PRP$	_	21	nmod:poss	_	_
+21	account	account	NOUN	NN	_	19	obj	_	_
+22	of	of	ADP	IN	_	24	case	_	_
+23	the	the	DET	DT	_	24	det	_	_
+24	things	thing	NOUN	NNS	_	21	nmod	_	_
+25	which	which	PRON	WDT	_	27	nsubj	_	_
+26	have	have	AUX	VBZ	_	27	aux	_	_
+27	been	be	VERB	VBN	_	24	acl:relcl	_	_
+28	before	before	ADP	IN	_	29	case	_	_
+29	me	I	PRON	PRP	_	27	obl	_	_
+30	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = I am Mormon, and a pure descendant of Lehi.
+# sent_id = 143
+1	I	I	PRON	PRP	_	3	nsubj	_	_
+2	am	be	AUX	VBZ	_	3	cop	_	_
+3	Mormon	Mormon	PROPN	NNP	_	0	root	_	_
+4	,	,	PUNCT	,	_	8	punct	_	_
+5	and	and	CCONJ	CC	_	8	cc	_	_
+6	a	a	DET	DT	_	8	det	_	_
+7	pure	pure	ADJ	JJ	_	8	amod	_	_
+8	descendant	descendant	NOUN	NN	_	3	conj	_	_
+9	of	of	ADP	IN	_	10	case	_	_
+10	Lehi	Lehi	PROPN	NNP	_	8	nmod	_	_
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = I have reason to bless my God and my Savior Jesus Christ, that he brought our fathers out of the land of Jerusalem, (and no one knew it save it were himself and those whom he brought out of that land) and that he hath given me and my people so much knowledge unto the salvation of our souls.
+# sent_id = 144
+# llm_note = 'have reason to bless'=reason=obj, to bless=acl; 'God and my Savior Jesus Christ'=conj NPs; parenthetical '(and no one knew it save it were himself and those...)'=parataxis; second 'that'=complement of reason; 'hath given'=AUX+VBN
+1	I	I	PRON	PRP	_	2	nsubj	_	_
+2	have	have	VERB	VBZ	_	0	root	_	_
+3	reason	reason	NOUN	NN	_	2	obj	_	_
+4	to	to	PART	TO	_	5	mark	_	_
+5	bless	bless	VERB	VB	_	3	acl	_	_
+6	my	I	PRON	PRP$	_	7	nmod:poss	_	_
+7	God	God	PROPN	NNP	_	5	obj	_	_
+8	and	and	CCONJ	CC	_	10	cc	_	_
+9	my	I	PRON	PRP$	_	10	nmod:poss	_	_
+10	Savior	Savior	PROPN	NNP	_	7	conj	_	_
+11	Jesus	Jesus	PROPN	NNP	_	10	flat	_	_
+12	Christ	Christ	PROPN	NNP	_	10	flat	_	_
+13	,	,	PUNCT	,	_	16	punct	_	_
+14	that	that	SCONJ	IN	_	16	mark	_	_
+15	he	he	PRON	PRP	_	16	nsubj	_	_
+16	brought	bring	VERB	VBD	_	2	ccomp	_	_
+17	our	we	PRON	PRP$	_	18	nmod:poss	_	_
+18	fathers	father	NOUN	NNS	_	16	obj	_	_
+19	out	out	ADP	RP	_	16	compound:prt	_	_
+20	of	of	ADP	IN	_	22	case	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	land	land	NOUN	NN	_	16	obl	_	_
+23	of	of	ADP	IN	_	24	case	_	_
+24	Jerusalem	Jerusalem	PROPN	NNP	_	22	nmod	_	_
+25	,	,	PUNCT	,	_	30	punct	_	_
+26	(	(	PUNCT	-LRB-	_	30	punct	_	_
+27	and	and	CCONJ	CC	_	30	cc	_	_
+28	no	no	DET	DT	_	29	det	_	_
+29	one	one	PRON	NN	_	30	nsubj	_	_
+30	knew	know	VERB	VBD	_	16	parataxis	_	_
+31	it	it	PRON	PRP	_	30	obj	_	_
+32	save	save	SCONJ	IN	_	35	mark	_	_
+33	it	it	PRON	PRP	_	35	nsubj	_	_
+34	were	be	AUX	VBD	_	35	cop	_	_
+35	himself	himself	PRON	PRP	_	30	advcl	_	_
+36	and	and	CCONJ	CC	_	37	cc	_	_
+37	those	that	PRON	DT	_	35	conj	_	_
+38	whom	whom	PRON	WP	_	40	obj	_	_
+39	he	he	PRON	PRP	_	40	nsubj	_	_
+40	brought	bring	VERB	VBD	_	37	acl:relcl	_	_
+41	out	out	ADP	RP	_	40	compound:prt	_	_
+42	of	of	ADP	IN	_	44	case	_	_
+43	that	that	DET	DT	_	44	det	_	_
+44	land	land	NOUN	NN	_	40	obl	_	_
+45	)	)	PUNCT	-RRB-	_	30	punct	_	_
+46	and	and	CCONJ	CC	_	50	cc	_	_
+47	that	that	SCONJ	IN	_	50	mark	_	_
+48	he	he	PRON	PRP	_	50	nsubj	_	_
+49	hath	have	AUX	VBZ	_	50	aux	_	_
+50	given	give	VERB	VBN	_	16	conj	_	_
+51	me	I	PRON	PRP	_	50	iobj	_	_
+52	and	and	CCONJ	CC	_	54	cc	_	_
+53	my	I	PRON	PRP$	_	54	nmod:poss	_	_
+54	people	people	NOUN	NN	_	51	conj	_	_
+55	so	so	ADV	RB	_	56	advmod	_	_
+56	much	much	DET	JJ	_	57	det	_	_
+57	knowledge	knowledge	NOUN	NN	_	50	obj	_	_
+58	unto	unto	ADP	IN	_	60	case	_	_
+59	the	the	DET	DT	_	60	det	_	_
+60	salvation	salvation	NOUN	NN	_	50	obl	_	_
+61	of	of	ADP	IN	_	63	case	_	_
+62	our	we	PRON	PRP$	_	63	nmod:poss	_	_
+63	souls	soul	NOUN	NNS	_	60	nmod	_	_
+64	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = Surely he hath blessed the house of Jacob, and hath been merciful unto the seed of Joseph.
+# sent_id = 145
+# llm_note = 'hath blessed'=PERF; 'hath been merciful'=PERF cop construction; conj of blessed
+1	Surely	surely	ADV	RB	_	4	advmod	_	_
+2	he	he	PRON	PRP	_	4	nsubj	_	_
+3	hath	have	AUX	VBZ	_	4	aux	_	_
+4	blessed	bless	VERB	VBN	_	0	root	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	house	house	NOUN	NN	_	4	obj	_	_
+7	of	of	ADP	IN	_	8	case	_	_
+8	Jacob	Jacob	PROPN	NNP	_	6	nmod	_	_
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	and	and	CCONJ	CC	_	13	cc	_	_
+11	hath	have	AUX	VBZ	_	13	aux	_	_
+12	been	be	AUX	VBN	_	13	cop	_	_
+13	merciful	merciful	ADJ	JJ	_	4	conj	_	_
+14	unto	unto	ADP	IN	_	16	case	_	_
+15	the	the	DET	DT	_	16	det	_	_
+16	seed	seed	NOUN	NN	_	13	obl	_	_
+17	of	of	ADP	IN	_	18	case	_	_
+18	Joseph	Joseph	PROPN	NNP	_	16	nmod	_	_
+19	.	.	PUNCT	.	_	4	punct	_	_
+
+# text = And insomuch as the children of Lehi have kept his commandments he hath blessed them and prospered them according to his word.
+# sent_id = 146
+# llm_note = 'insomuch as'=SCONJ conditional; 'hath blessed...and prospered'=coord verbs; 'according to his word'=obl
+1	And	and	CCONJ	CC	_	14	cc	_	_
+2	insomuch	insomuch	SCONJ	IN	_	9	mark	_	_
+3	as	as	SCONJ	IN	_	2	fixed	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	children	child	NOUN	NNS	_	9	nsubj	_	_
+6	of	of	ADP	IN	_	7	case	_	_
+7	Lehi	Lehi	PROPN	NNP	_	5	nmod	_	_
+8	have	have	AUX	VBZ	_	9	aux	_	_
+9	kept	keep	VERB	VBN	_	14	advcl	_	_
+10	his	he	PRON	PRP$	_	11	nmod:poss	_	_
+11	commandments	commandment	NOUN	NNS	_	9	obj	_	_
+12	he	he	PRON	PRP	_	14	nsubj	_	_
+13	hath	have	AUX	VBZ	_	14	aux	_	_
+14	blessed	bless	VERB	VBN	_	0	root	_	_
+15	them	they	PRON	PRP	_	14	obj	_	_
+16	and	and	CCONJ	CC	_	17	cc	_	_
+17	prospered	prosper	VERB	VBD	_	14	conj	_	_
+18	them	they	PRON	PRP	_	17	obj	_	_
+19	according	accord	ADP	IN	_	20	case	_	_
+20	to	to	ADP	IN	_	14	obl	_	_
+21	his	he	PRON	PRP$	_	22	nmod:poss	_	_
+22	word	word	NOUN	NN	_	20	nmod	_	_
+23	.	.	PUNCT	.	_	14	punct	_	_
+
+# text = Yea, and surely shall he again bring a remnant of the seed of Joseph to the knowledge of the Lord their God.
+# sent_id = 147
+# llm_note = Inverted future 'shall he bring'; shall=AUX fronted; bring=root; 'Yea'=INTJ discourse
+1	Yea	yea	INTJ	UH	_	8	discourse	_	_
+2	,	,	PUNCT	,	_	1	punct	_	_
+3	and	and	CCONJ	CC	_	8	cc	_	_
+4	surely	surely	ADV	RB	_	8	advmod	_	_
+5	shall	shall	AUX	MD	_	8	aux	_	_
+6	he	he	PRON	PRP	_	8	nsubj	_	_
+7	again	again	ADV	RB	_	8	advmod	_	_
+8	bring	bring	VERB	VB	_	0	root	_	_
+9	a	a	DET	DT	_	10	det	_	_
+10	remnant	remnant	NOUN	NN	_	8	obj	_	_
+11	of	of	ADP	IN	_	13	case	_	_
+12	the	the	DET	DT	_	13	det	_	_
+13	seed	seed	NOUN	NN	_	10	nmod	_	_
+14	of	of	ADP	IN	_	15	case	_	_
+15	Joseph	Joseph	PROPN	NNP	_	13	nmod	_	_
+16	to	to	ADP	IN	_	18	case	_	_
+17	the	the	DET	DT	_	18	det	_	_
+18	knowledge	knowledge	NOUN	NN	_	8	obl	_	_
+19	of	of	ADP	IN	_	21	case	_	_
+20	the	the	DET	DT	_	21	det	_	_
+21	Lord	Lord	PROPN	NNP	_	18	nmod	_	_
+22	their	they	PRON	PRP$	_	23	nmod:poss	_	_
+23	God	God	PROPN	NNP	_	21	appos	_	_
+24	.	.	PUNCT	.	_	8	punct	_	_
+
+# text = And as surely as the Lord liveth, will he gather in from the four quarters of the earth all the remnant of the seed of Jacob, who are scattered abroad upon all the face of the earth.
+# sent_id = 148
+# llm_note = 'as surely as the Lord liveth'=comparative advcl of degree; 'will he gather'=inverted future; 'who are scattered'=acl:relcl on remnant
+1	And	and	CCONJ	CC	_	11	cc	_	_
+2	as	as	ADV	RB	_	3	advmod	_	_
+3	surely	surely	ADV	RB	_	11	advmod	_	_
+4	as	as	SCONJ	IN	_	7	mark	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	Lord	Lord	PROPN	NNP	_	7	nsubj	_	_
+7	liveth	live	VERB	VBZ	_	3	advcl	_	_
+8	,	,	PUNCT	,	_	11	punct	_	_
+9	will	will	AUX	MD	_	11	aux	_	_
+10	he	he	PRON	PRP	_	11	nsubj	_	_
+11	gather	gather	VERB	VB	_	0	root	_	_
+12	in	in	ADP	RP	_	11	compound:prt	_	_
+13	from	from	ADP	IN	_	16	case	_	_
+14	the	the	DET	DT	_	16	det	_	_
+15	four	four	NUM	CD	_	16	nummod	_	_
+16	quarters	quarter	NOUN	NNS	_	11	obl	_	_
+17	of	of	ADP	IN	_	19	case	_	_
+18	the	the	DET	DT	_	19	det	_	_
+19	earth	earth	NOUN	NN	_	16	nmod	_	_
+20	all	all	DET	PDT	_	22	det:predet	_	_
+21	the	the	DET	DT	_	22	det	_	_
+22	remnant	remnant	NOUN	NN	_	11	obj	_	_
+23	of	of	ADP	IN	_	25	case	_	_
+24	the	the	DET	DT	_	25	det	_	_
+25	seed	seed	NOUN	NN	_	22	nmod	_	_
+26	of	of	ADP	IN	_	27	case	_	_
+27	Jacob	Jacob	PROPN	NNP	_	25	nmod	_	_
+28	,	,	PUNCT	,	_	31	punct	_	_
+29	who	who	PRON	WP	_	31	nsubj:pass	_	_
+30	are	be	AUX	VBZ	_	31	aux:pass	_	_
+31	scattered	scatter	VERB	VBN	_	22	acl:relcl	_	_
+32	abroad	abroad	ADV	RB	_	31	advmod	_	_
+33	upon	upon	ADP	IN	_	36	case	_	_
+34	all	all	DET	PDT	_	36	det:predet	_	_
+35	the	the	DET	DT	_	36	det	_	_
+36	face	face	NOUN	NN	_	31	obl	_	_
+37	of	of	ADP	IN	_	39	case	_	_
+38	the	the	DET	DT	_	39	det	_	_
+39	earth	earth	NOUN	NN	_	36	nmod	_	_
+40	.	.	PUNCT	.	_	11	punct	_	_
+
+# text = And as he hath covenanted with all the house of Jacob, even so shall the covenant wherewith he hath covenanted with the house of Jacob be fulfilled in his own due time, unto the restoring all the house of Jacob unto the knowledge of the covenant that he hath covenanted with them.
+# sent_id = 149
+# llm_note = 'as he hath covenanted...even so shall the covenant...be fulfilled'=correlative comparison; 'wherewith'=archaic relative adverb; 'unto the restoring'=purpose obl; 'that he hath covenanted'=acl on covenant
+1	And	and	CCONJ	CC	_	28	cc	_	_
+2	as	as	SCONJ	IN	_	5	mark	_	_
+3	he	he	PRON	PRP	_	5	nsubj	_	_
+4	hath	have	AUX	VBZ	_	5	aux	_	_
+5	covenanted	covenant	VERB	VBN	_	28	advcl	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	all	all	DET	PDT	_	9	det:predet	_	_
+8	the	the	DET	DT	_	9	det	_	_
+9	house	house	NOUN	NN	_	5	obl	_	_
+10	of	of	ADP	IN	_	11	case	_	_
+11	Jacob	Jacob	PROPN	NNP	_	9	nmod	_	_
+12	,	,	PUNCT	,	_	28	punct	_	_
+13	even	even	ADV	RB	_	14	advmod	_	_
+14	so	so	ADV	RB	_	28	advmod	_	_
+15	shall	shall	AUX	MD	_	28	aux	_	_
+16	the	the	DET	DT	_	17	det	_	_
+17	covenant	covenant	NOUN	NN	_	28	nsubj:pass	_	_
+18	wherewith	wherewith	ADV	WRB	_	21	obl	_	_
+19	he	he	PRON	PRP	_	21	nsubj	_	_
+20	hath	have	AUX	VBZ	_	21	aux	_	_
+21	covenanted	covenant	VERB	VBN	_	17	acl:relcl	_	_
+22	with	with	ADP	IN	_	25	case	_	_
+23	the	the	DET	DT	_	25	det	_	_
+24	house	house	NOUN	NN	_	25	compound	_	_
+25	of	of	ADP	IN	_	21	obl	_	_
+26	Jacob	Jacob	PROPN	NNP	_	25	nmod	_	_
+27	be	be	AUX	VB	_	28	aux:pass	_	_
+28	fulfilled	fulfill	VERB	VBN	_	0	root	_	_
+29	in	in	ADP	IN	_	33	case	_	_
+30	his	he	PRON	PRP$	_	33	nmod:poss	_	_
+31	own	own	ADJ	JJ	_	33	amod	_	_
+32	due	due	ADJ	JJ	_	33	amod	_	_
+33	time	time	NOUN	NN	_	28	obl	_	_
+34	,	,	PUNCT	,	_	37	punct	_	_
+35	unto	unto	ADP	IN	_	37	case	_	_
+36	the	the	DET	DT	_	37	det	_	_
+37	restoring	restore	VERB	VBG	_	28	obl	_	_
+38	all	all	DET	PDT	_	40	det:predet	_	_
+39	the	the	DET	DT	_	40	det	_	_
+40	house	house	NOUN	NN	_	37	obj	_	_
+41	of	of	ADP	IN	_	42	case	_	_
+42	Jacob	Jacob	PROPN	NNP	_	40	nmod	_	_
+43	unto	unto	ADP	IN	_	45	case	_	_
+44	the	the	DET	DT	_	45	det	_	_
+45	knowledge	knowledge	NOUN	NN	_	37	obl	_	_
+46	of	of	ADP	IN	_	48	case	_	_
+47	the	the	DET	DT	_	48	det	_	_
+48	covenant	covenant	NOUN	NN	_	45	nmod	_	_
+49	that	that	SCONJ	IN	_	52	mark	_	_
+50	he	he	PRON	PRP	_	52	nsubj	_	_
+51	hath	have	AUX	VBZ	_	52	aux	_	_
+52	covenanted	covenant	VERB	VBN	_	48	acl	_	_
+53	with	with	ADP	IN	_	54	case	_	_
+54	them	they	PRON	PRP	_	52	obl	_	_
+55	.	.	PUNCT	.	_	28	punct	_	_
+
