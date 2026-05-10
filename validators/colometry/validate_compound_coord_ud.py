@@ -149,6 +149,37 @@ def scan_book(book_id: str) -> list[dict]:
                 "conj_line": conj_line,
                 "v2_path": str(v2_path),
             })
+
+    # Antimetabole filter: within a single sentence, if a (head=X, conj=Y, gov=G)
+    # finding has a mirror (head=Y, conj=X, gov=G) finding, both are members of
+    # an antimetabole chiasm (e.g., 1 Ne 22:7-8 "manifested unto the Jews / and
+    # also unto the Gentiles ... unto the Gentiles / and also unto the Jews"). The
+    # mirroring is a deliberate rhetorical structure — preserving the visual
+    # parallelism is the editorial intent. Demote both members to REVIEW.
+    by_sent: dict[str, list[dict]] = {}
+    for v in violations:
+        by_sent.setdefault(v["sent_id"], []).append(v)
+    for vs in by_sent.values():
+        forms_to_v = {
+            (v["head_form"].lower(), v["conj_form"].lower(), v["governor_lemma"]): v
+            for v in vs
+        }
+        for v in vs:
+            head_l = v["head_form"].lower()
+            conj_l = v["conj_form"].lower()
+            # Antimetabole requires distinct mirrored elements (X != Y); a
+            # same-form coord (year/year/year/year list) is catalog repetition,
+            # not antimetabole.
+            if head_l == conj_l:
+                v["bucket"] = "STRONG-MERGE-CANDIDATE"
+                continue
+            mirror_key = (conj_l, head_l, v["governor_lemma"])
+            mirror = forms_to_v.get(mirror_key)
+            if mirror is not None and mirror is not v:
+                v["bucket"] = "REVIEW-REQUIRED"
+                v["review_reason"] = "antimetabole-mirror"
+            else:
+                v["bucket"] = "STRONG-MERGE-CANDIDATE"
     return violations
 
 
@@ -171,23 +202,35 @@ def main():
         if args.verbose:
             print(f"{bid}: {len(vs)} violations")
 
+    strong = [v for v in all_violations if v.get("bucket") == "STRONG-MERGE-CANDIDATE"]
+    review = [v for v in all_violations if v.get("bucket") == "REVIEW-REQUIRED"]
+
     print("=" * 72)
     print("Compound coordinate argument under shared verb — UD-query")
     print("=" * 72)
-    print(f"Books scanned: {len(book_ids)}")
-    print(f"Violations:    {len(all_violations)}")
+    print(f"Books scanned:           {len(book_ids)}")
+    print(f"STRONG-MERGE-CANDIDATE:  {len(strong)}")
+    print(f"REVIEW-REQUIRED:         {len(review)}")
     print()
 
-    if all_violations:
-        print("Sample (first 10):")
-        for v in all_violations[:10]:
+    if strong:
+        print("STRONG sample (first 10):")
+        for v in strong[:10]:
             print(f"  [{v['book']}] sent={v['sent_id']}  "
                   f"head={v['head_form']!r} conj={v['conj_form']!r}  "
                   f"gov={v['governor']!r}({v['governor_lemma']})  "
                   f"lines {v['head_line']}->{v['conj_line']}")
 
-    print(f"RESULT: violations={len(all_violations)} strong={len(all_violations)} review=0")
-    sys.exit(1 if all_violations else 0)
+    if review and args.verbose:
+        print()
+        print(f"REVIEW (filtered, e.g., antimetabole — first 10):")
+        for v in review[:10]:
+            print(f"  [{v['book']}] sent={v['sent_id']}  "
+                  f"head={v['head_form']!r} conj={v['conj_form']!r}  "
+                  f"({v.get('review_reason', '')})")
+
+    print(f"RESULT: violations={len(strong)} strong={len(strong)} review={len(review)}")
+    sys.exit(1 if strong else 0)
 
 
 if __name__ == "__main__":
