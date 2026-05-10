@@ -456,6 +456,128 @@ This diagnostic catches the failure mode where a canon change is self-framed as 
 
 ---
 
+## 3.5. Precedence Hierarchy
+
+When two or more rules fire on the same v2-mine location, the following precedence resolves them. Higher tiers win over lower tiers; within a tier, more specific rules win over more general ones. Detectors should encode this hierarchy by filtering candidates that match higher-tier rules out of lower-tier buckets.
+
+**TIER 0 — Input filters** (operate before split/merge analysis)
+- Punctuation is not a break signal (see §1)
+- Versification is not a break signal (see §1)
+- **R28 Authorial Asymmetry** — preserves asymmetric series before any uniformity sweep (see §1)
+- **Parallel-List Uniformity** — multi-verse list with shared frame settles uniform treatment (see §1; e.g., Moroni 10:8-17 spiritual gifts)
+
+**TIER 1 — Layer 1 syntax vetoes** (generic English; hard-fatal)
+- **R9** Line-final CCONJ forbidden — REQUIRED-MERGE
+- **R11** Line-final DET (article) forbidden — REQUIRED-MERGE
+- **R12** Line-final AUX seeking main verb forbidden (simple case) — REQUIRED-MERGE
+- **R13a** Line-final ADP seeking object forbidden — REQUIRED-MERGE
+- **R10** V + DO bond — REQUIRED-MERGE
+
+Layer 1 violations are MALFORMED, not editorial. Always wins. *Note:* R12 simple-case is the within-predication AUX+verb bond; it does NOT apply BETWEEN coordinate members of a polysyndetic chain that share AUX (see Tier 5 / Justification 1 below; Helaman 3:16 precedent).
+
+**TIER 2 — Indivisibility / formula / vocative**
+- **R1** AICTP formula integrity (most specific — closed token sequence)
+- **R16** AICTP dangling "that" (couples to R1)
+- **R23** Date colophon integrity
+- **R18** Fixed idiom integrity
+- **R15** Vocative indivisibility (wins over R22 inside vocative environment; wins over R17 when vocative on matrix line)
+
+Lexicalized closed-list units. Triggers leave no room for proposition-level analysis inside the frame.
+
+**TIER 3 — Complement integrity**
+- **R26** Adjective + that complement (most specific — direct ADJ head)
+  - Wins over R7 when matrix lemma ∈ {expedient, needful, necessary, possible, desirous, impossible, wisdom, meet}
+- **R17** Verb + complement (six closed verb classes + topic-PP extension)
+  - Yields to R26 when ADJ is the direct head; wins over R19 when both apply
+  - Yields to **J3 (speech-act announcement)** when the ccomp body is ≥8 word tokens under a short speech-tag (see §5 R17 speech-indirect long-complement exception)
+  - Yields to **J1 (formally-marked parallel that-series)** at N≥3 — coordinate that-clauses under one matrix verb fall under Justification 1 stacking
+  - Other named exceptions (§5 R17): direct discourse, AICTP-that, purpose-that, divine recitativum
+
+Matrix predication is grammatically incomplete without complement.
+
+**TIER 4 — Default-merge precedence over split-triggers (M-overrides)**
+- **M1** Gorgianic Bonded Pair (N=2 synonymy/cognate/hendiadys merge)
+  - True synonymy only; sequential narrative bonding is NOT M1 (see §1 M1 SCOPE)
+- **M2** = R17 (alias)
+- **M3** Bare-Governor Indivisibility (extension: bare trailing participials)
+- **M4** Fragmented atomic thought-unit
+  - Does NOT fire on members of justification-1 series at N≥3 or justification-5 substantive adjuncts (§1 M4 SCOPE)
+
+Split-trigger fires but resulting fragment fails atomic-thought.
+
+**TIER 5 — Split-triggers (generative principle + structural justifications)**
+- **Generative principle:** each proposition splits by default (see §1)
+- **Justification 1:** formally-marked parallel series — at N≥3 wins over Tier 4 merge-overrides (Helaman 3:16 cliff). At N=2, see Tier 6 N=2 adjudication.
+  - Compound-list break-signals govern object-lists
+  - Polysyndetic verb-chains: each member earns own beat, even with shared AUX (R12 protects WITHIN one predication, not BETWEEN coordinate members)
+- **Justification 2:** portrait accumulation
+- **Justification 3:** speech-act announcement (incl. *saith the Lord* parenthetical)
+- **Justification 4:** classical commata
+- **Justification 5:** substantive adjunct as own focus
+- **R6** Causal "because" — yields to "because of NP" PP-construction (advcl head must be VERB or ADJ); fronted-because routes to REVIEW
+- **R7** Purpose finite "that + MODAL"
+  - Yields to **R27** when compound mark is *insomuch that*
+  - Yields to **R26** when matrix is ADJ in the {expedient, needful, necessary, possible, desirous, impossible, wisdom, meet} class
+  - Yields to **result-clause reading** when *so/such* (as advmod or amod) scopes the matrix's modifier AND the *that*-clause is in advcl-result attachment (consecutive consequence). Surface presence of *so/such* alone is not sufficient — *such great X (NP) that ye may Y* is genuine R7 purpose.
+  - Yields to **Parallel-List Uniformity** within multi-verse lists (e.g., Moroni 10:8-17)
+- **R19** Cataphoric vs anaphoric "that"/which
+  - Cataphoric STRONG-SPLIT requires PRON or DET head (generic forward-pointer)
+  - PROPN head → STRONG-MERGE (anaphoric, named referent)
+  - NOUN head → REVIEW (ambiguous without discourse context)
+  - Yields to R17 when both apply
+- **R21** Participial absolute (subject-bearing)
+- **R22** Divine title appositive INTRODUCING (yields to R15 in vocative env)
+- **R27** *Insomuch that* consecutive (3-condition test for merge: rc≤8 words, subject continuity, no camera shift)
+- **R28** Speech-act announcement after intervening frame
+
+These GENERATE breaks. Each yields to higher tiers when those fire.
+
+**TIER 6 — N=2 adjudication** (cross-cuts Tier 4 vs Tier 5)
+
+When a coordinate construction has exactly 2 members, apply the M1 verb-synonymy paraphrase test:
+- Synonymous / cognate / intensification → merge (Tier 4 wins)
+- Distinct non-synonymous → split (Tier 5 wins)
+
+Applies to: M1 pairs, R12 N=2 compound-verb under shared AUX, R17 N=2 that-series.
+Does NOT apply to: appositives (R22, R15+appositive).
+
+At **N≥3** the test is moot — Justification 1 wins over merge-rules unconditionally (Helaman 3:16 cliff).
+
+**TIER 7 — Editorial tiebreakers** (post-hoc only; fire after Tiers 1-6 settle)
+- **EP-1** *according to* manner vs source
+- **EP-3** Inverted predicate
+- **EP-4** Title + domain
+- **EP-5** Virtue/vice lists
+- Single-image / camera-angle diagnostic (image-test)
+
+**TIER 8 — Structural fallback**
+- **R20** No-anchor: every line must carry an anchor; failures resolve via merge or restructure
+  - Exemptions: single-line verses, speech-intro prefixes, sentence-connectives, lines passing any structural justification (J1-J5)
+
+Floor-check after all generative/subtractive rules have fired.
+
+### 3.5.1 Sub-hierarchy: the "that"-cluster
+
+The "that" complementizer is the most-collided token in the canon. Six rules can fire on a "that"-clause; precedence is most-specific-first:
+
+1. **R1 / R16** AICTP "that" — token sequence "And it came to pass that"
+2. **R26** ADJ + that complement — head_upos == ADJ, or head copular+ADJ
+3. **R17** VERB + that — head_upos == VERB, lemma ∈ governor classes
+4. **R27** Insomuch that — advcl with mark "insomuch that" (multi-token MWE)
+5. **R7** Purpose advcl + modal — advcl with mark "that" + modal aux
+6. **R19** Relative "that"/which — acl:relcl
+
+Detectors should test in this order; the first match wins.
+
+### 3.5.2 N=2 vs N=3+ cliff
+
+The N=2 Adjudication Principle and the N≥3 Justification-1 cliff (Helaman 3:16 precedent) are load-bearing across M1, R12, R17, and the polysyndetic-verb-chain detector. Any rule operating on a coordinate construction must distinguish the two cases:
+
+- **N=2:** apply the M1 synonymy test (Tier 6 above)
+- **N≥3:** Justification 1 wins; each member earns its own beat regardless of shared AUX
+
+---
+
 ## 4. Layer 1 Reference Pointers
 
 Data tables that belong to generic English grammar live in the Layer 1 reference, not here. This section holds the cross-references.
