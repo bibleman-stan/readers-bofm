@@ -74,7 +74,12 @@ M1_BONDED_VERB_PAIRS: frozenset = frozenset({
     frozenset({"wail", "gnash"}),           # by analogy
     frozenset({"pray", "supplicate"}),      # synonymous prayer
     frozenset({"fight", "quarrel"}),        # synonymous discord
-    frozenset({"spare", "stay"}),           # synonymous withholding
+    frozenset({"spare", "stay"}),           # synonymous withholding (PENDING Stan-direct verification per audit C-3)
+    # Audit-driven additions (2026-05-10 hostile audit B-4):
+    frozenset({"bless", "sanctify"}),       # liturgical synonymy (Moroni 4:3, 5:2 — sacrament prayer)
+    frozenset({"fear", "tremble"}),         # cognate emotional+somatic state (1 Ne 16:28, 2 Ne 1:25)
+    frozenset({"murmur", "complain"}),      # synonymous discontent verbalization (1 Ne 17:48)
+    frozenset({"hunger", "thirst"}),        # cognate appetitive (3 Ne 12:6)
 })
 
 # Stative head lemmas — these head a different predication-class than

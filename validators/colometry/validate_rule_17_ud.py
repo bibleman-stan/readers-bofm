@@ -126,7 +126,7 @@ GOVERNING_LEMMAS = CAUSATIVE | ASPECTUAL | SPEECH | COGNITION | VOLITION
 # reads ambiguously between content (UD ccomp) and purpose (UD advcl).
 # When matrix lemma is in this set AND the ccomp body has a modal aux,
 # bucket as REVIEW-REQUIRED instead of STRONG-MERGE-CANDIDATE.
-DIRECTIVE_PETITION = {"cry", "pray", "beseech", "ask", "seek"}
+DIRECTIVE_PETITION = {"cry", "pray", "beseech", "ask", "seek", "plead"}
 
 # Modal aux lemmas that mark the ambiguity. Lemma 'will' covers will/would;
 # lemma 'shall' covers shall/should; etc.
