@@ -70,6 +70,17 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
             if advcl_tok.upos not in {"VERB", "ADJ"}:
                 continue
 
+            # Audit-driven filter (2026-05-10): "because of NP" leaks through
+            # when the parser tags a gerund/nominalization as VERB. If the
+            # advcl head has a 'case' dependent with form/lemma 'of', this is
+            # a "because of" PP-equivalent, not a finite causal clause.
+            has_of_case = any(
+                d.deprel == "case" and (d.form.lower() == "of" or d.lemma.lower() == "of")
+                for d in sent.dependents_of(advcl_tok)
+            )
+            if has_of_case:
+                continue
+
             # The matrix is the head of the advcl
             matrix = sent.head_of(advcl_tok)
             if matrix is None:
@@ -83,13 +94,25 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
             if matrix_line != because_line:
                 continue  # already split — no violation
 
+            # Audit-driven filter (2026-05-10): fronted causal clauses.
+            # "(For/And now,) because X, they Y" — the natural break is
+            # AFTER the fronted clause, not before "because". Detect:
+            # mark token id < matrix token id (because precedes matrix).
+            # The current detector flags these because they're on the same
+            # line, but the right action would be to break after the advcl
+            # subtree, not before the mark. Bucket as REVIEW.
+            because_fronted = mark.id < matrix.id
+
             # Both on the same line — violation.
             # Measure combined length for short-line exception.
             advcl_size = content_count(sent, advcl_tok)
             matrix_size = content_count(sent, matrix)
             combined = advcl_size + matrix_size  # rough (may double-count matrix deps)
 
-            if combined <= SHORT_LINE_THRESHOLD:
+            if because_fronted:
+                bucket = "REVIEW-REQUIRED"
+                review_reason = "fronted-because-needs-break-after"
+            elif combined <= SHORT_LINE_THRESHOLD:
                 bucket = "REVIEW-REQUIRED"
                 review_reason = "short-combined-line"
             else:

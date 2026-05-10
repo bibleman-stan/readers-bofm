@@ -87,23 +87,29 @@ BOOKS = [
 ]
 
 
-def _is_frame_advcl(sent: Sentence, advcl: Token) -> bool:
+def _is_frame_advcl(sent: Sentence, advcl: Token, *, speech_verb: Token | None = None) -> bool:
     """
-    Return True if this advcl is a genuine temporal/causal/locative frame —
-    not a participial speech-continuation marker or comparative clause.
+    Return True if this advcl is a genuine scene-setting frame BEFORE speech —
+    not a result/consequence clause AFTER speech, a participial speech-
+    continuation marker, or a comparative clause.
 
-    Heuristics:
-    1. advcl lemma must not be in ADVCL_EXCLUDED_LEMMAS ("say" / "saying:").
-    2. advcl must have a mark dependent in FRAME_MARK_LEMMAS (temporal/causal
-       subordinator), OR be a passive participle (has aux:pass dependent) which
-       indicates a circumstantial frame like "being filled with the Spirit".
-    3. "as if" comparative clauses are excluded even though "as" is in
-       FRAME_MARK_LEMMAS — these set a manner of action, not a scene frame.
+    Audit-driven filters (2026-05-10):
+    - Result-direction filter: when speech_verb precedes advcl in token order
+      AND advcl's mark is in RESULT_MARK_LEMMAS, it's a result not a frame.
+      Example: "I did speak many words ... that they were pacified" — frame
+      direction is inverted.
+    - Tightened aux:pass: passive participle alone isn't a scene frame; it's
+      manner ("being filled with the Spirit"). Require ALSO a temporal/locative
+      subordinator OR true absolute construction.
+
+    Existing filters:
+    - advcl lemma must not be in ADVCL_EXCLUDED_LEMMAS ("say" / "saying:")
+    - "as if" comparative clauses excluded
     """
     if advcl.lemma in ADVCL_EXCLUDED_LEMMAS:
         return False
 
-    # Check for a temporal/causal mark; also exclude "as if" comparative
+    # Check for a temporal/causal mark
     all_marks = [m for m in sent.dependents_of(advcl, deprel="mark")]
     mark_lemmas = {m.lemma.lower() for m in all_marks}
 
@@ -111,18 +117,38 @@ def _is_frame_advcl(sent: Sentence, advcl: Token) -> bool:
     if "as" in mark_lemmas and "if" in mark_lemmas:
         return False
 
+    # Result-direction filter: if speech VERB precedes advcl AND mark is
+    # result-introducing ("that"/"insomuch"/"until"), it's consequence not
+    # frame. Skip.
+    RESULT_MARK_LEMMAS = {"that", "insomuch", "until"}
+    if speech_verb is not None and speech_verb.id < advcl.id:
+        if mark_lemmas & RESULT_MARK_LEMMAS:
+            return False
+
     if mark_lemmas & FRAME_MARK_LEMMAS:
         return True
 
-    # Check for passive participle (circumstantial frame): "being filled with"
+    # Tightened aux:pass branch: passive participle alone is too permissive
+    # (catches circumstantial-manner like "being filled with the Spirit").
+    # Require either a temporal subordinator (already handled above) or a
+    # true absolute construction (no shared subject — i.e., advcl has its
+    # own nsubj that differs from the matrix).
     aux_pass = [a for a in sent.aux_of(advcl) if a.deprel == "aux:pass"]
     if aux_pass:
-        return True
+        # Check for own nsubj
+        advcl_nsubj = sent.dependents_of(advcl, deprel="nsubj")
+        if advcl_nsubj and speech_verb is not None:
+            speech_nsubj = sent.dependents_of(speech_verb, deprel="nsubj")
+            if speech_nsubj and advcl_nsubj[0].lemma != speech_nsubj[0].lemma:
+                # True absolute: different subjects
+                return True
+        # Otherwise it's manner-circumstantial — not a frame
+        return False
 
     return False
 
 
-def _find_advcl_sibling(sent: Sentence, verb: Token) -> Token | None:
+def _find_advcl_sibling(sent: Sentence, verb: Token) -> Token | None:  # noqa: ARG001 (used via closure)
     """
     Return the first genuine frame-advcl sibling of `verb` — a token whose
     head is the same as verb.head and whose deprel is "advcl", and which
@@ -134,7 +160,7 @@ def _find_advcl_sibling(sent: Sentence, verb: Token) -> Token | None:
     """
     # Case 1: advcl as a dependent of the speech verb
     for child in sent.dependents_of(verb, deprel="advcl"):
-        if _is_frame_advcl(sent, child):
+        if _is_frame_advcl(sent, child, speech_verb=verb):
             return child
 
     # Case 2: advcl as a sibling (shares the same head as the speech verb)
@@ -144,7 +170,7 @@ def _find_advcl_sibling(sent: Sentence, verb: Token) -> Token | None:
     if parent is None:
         return None
     for sib in sent.dependents_of(parent, deprel="advcl"):
-        if sib.id != verb.id and _is_frame_advcl(sent, sib):
+        if sib.id != verb.id and _is_frame_advcl(sent, sib, speech_verb=verb):
             return sib
     return None
 
