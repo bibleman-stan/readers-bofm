@@ -40,33 +40,41 @@ from validators.parsing.line_mapping import build_line_map, book_paths
 
 COORDINATORS = {"and", "or", "nor"}
 
-# M1 Gorgianic Bonded Pair lemma sets — synonymous/cognate/intensification
-# verb pairs that canon §1 licenses to MERGE despite polysyndetic 'and'.
-# When such a pair sits as head + first-conj of a chain, the split between
-# them is suppressed; later members in the chain still split normally.
+# M1 Gorgianic Bonded Pair lemma sets — synonymous/cognate/hendiadic verb
+# pairs that canon §1 licenses to MERGE despite polysyndetic 'and'.
 #
-# Seeded from canon §1 M1 explicit cases plus auditor corpus survey
-# (2026-05-10 hostile audit). Extensible — add lemma pairs as canon
-# precedent + corpus evidence accumulate.
+# CRITICAL DISTINCTION (Stan correction 2026-05-10): M1 covers synonymy,
+# cognate-acts, and hendiadys (one act named twice for emphasis or
+# rhetorical pairing). It does NOT cover sequential narrative bonding,
+# thematic clustering, or "rhetorically bonded" sequences. Per
+# feedback_rhetorical_force.md and feedback_rhetoric_bandwagon.md,
+# rhetorical/narrative bonding is NOT structural-rule territory —
+# sequential distinct actions split per the generative principle even
+# when they form a recognizable rhetorical figure.
+#
+# Examples that are NOT M1:
+#   - "lifted + crucified + buried" — three sequential passion events
+#   - "draw + smite" — sequential (draw weapon, then strike)
+#   - "torture + bind" — sequential cruelties
+#   - "took + came" — sequential travel
+#   - "stone + cast" — sequential persecution
+#   - "preach + prophesy" — distinct speech acts (prophet does both)
+#
+# Examples that ARE M1:
+#   - "weep + gnash" — same act of suffering manifestation
+#   - "repent + believe" — paired soteriological response (canon-named)
+#   - "wail + gnash" — synonymous expressions of grief
+#   - "pray + supplicate" — synonymous prayer-acts
+#   - "fight + quarrel" — synonymous discord
+#   - "spare + stay" — synonymous withholding (stay-hand = spare)
 M1_BONDED_VERB_PAIRS: frozenset = frozenset({
-    # Canon §1 named cases
-    frozenset({"repent", "believe"}),
-    # Corpus survey from hostile audit (2026-05-10)
-    frozenset({"stumble", "fall"}),
-    frozenset({"preach", "prophesy"}),
-    frozenset({"weep", "wail"}),
-    frozenset({"weep", "gnash"}),
-    frozenset({"wail", "gnash"}),
-    frozenset({"pray", "supplicate"}),
-    frozenset({"exhort", "preach"}),
-    frozenset({"draw", "smite"}),
-    frozenset({"torture", "bind"}),
-    frozenset({"fight", "quarrel"}),
-    frozenset({"stone", "cast"}),
-    frozenset({"spare", "stay"}),
-    frozenset({"leave", "go"}),
-    frozenset({"take", "come"}),  # travel-bonded ("took X and came over")
-    frozenset({"creep", "slay"}),  # assassination-bonded
+    frozenset({"repent", "believe"}),       # canon §1 named
+    frozenset({"weep", "gnash"}),           # canon §1 named
+    frozenset({"weep", "wail"}),            # synonymous suffering
+    frozenset({"wail", "gnash"}),           # by analogy
+    frozenset({"pray", "supplicate"}),      # synonymous prayer
+    frozenset({"fight", "quarrel"}),        # synonymous discord
+    frozenset({"spare", "stay"}),           # synonymous withholding
 })
 
 # Stative head lemmas — these head a different predication-class than
@@ -104,6 +112,25 @@ def is_polysyndetic_member(sent: Sentence, tok: Token) -> bool:
     return True
 
 
+def shares_head_aux(sent: Sentence, head: Token, member: Token) -> bool:
+    """True if the conj member depends on a shared auxiliary from the head
+    (member has no own aux but head has one).
+
+    Splitting such a chain would orphan the AUX from the conj-member
+    participle, violating Rule 12 (compound-verb under shared aux). The
+    polysyndetic principle yields to Rule 12 here.
+
+    Examples:
+        "shall be scattered, and smitten"  — both share 'shall be'
+        "did fight, and quarrel, and vex"  — all share 'did'
+    """
+    head_aux = sent.aux_of(head)
+    member_aux = sent.aux_of(member)
+    if head_aux and not member_aux:
+        return True
+    return False
+
+
 def find_chains(sent: Sentence) -> list[tuple[Token, list[Token]]]:
     """Return [(head, members), ...] for chains where head is VERB and
     has ≥2 polysyndetic VERB conj members (chain length ≥3 total)."""
@@ -136,6 +163,22 @@ def scan_book(book_id: str) -> tuple[list[dict], list[dict]]:
             # Stative heads (be/have) with action-verb conj members are
             # parse-noise rather than true polysyndetic series.
             if head.lemma in STATIVE_HEAD_LEMMAS:
+                continue
+
+            # Filter (2026-05-10, Rule 12 collision): if any conj member
+            # shares the head's auxiliary (head has aux, member has no own
+            # aux), splitting would orphan the AUX from the participle.
+            # Rule 12 (don't split AUX from its main verb) takes precedence
+            # over polysyndetic Justification 1 in this case.
+            if any(shares_head_aux(sent, head, m) for m in members):
+                review.append({
+                    "book": book_id,
+                    "sent_id": sent.sent_id,
+                    "head_form": head.form,
+                    "head_lemma": head.lemma,
+                    "skip_reason": "shared-aux-Rule-12-precedence",
+                    "v2_path": str(v2_path),
+                })
                 continue
 
             # Collect (token, line) for head + all members
