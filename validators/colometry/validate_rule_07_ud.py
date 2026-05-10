@@ -33,7 +33,14 @@ MODAL_AUX_LEMMAS = {
 # Filter: matrix-class adjectives that route to Rule 26 (ADJ + that ccomp),
 # not Rule 7 advcl-purpose. When the advcl head's parent is one of these,
 # the LLM annotation likely misclassified what should be ccomp.
-RULE_26_HEAD_LEMMAS = {"expedient", "needful", "necessary", "wisdom", "meet"}
+#
+# 2026-05-10 Stan-direct decision: union of detector list + canon §5 R26
+# prose list (8 lemmas total). Conservative — no live applications retired.
+RULE_26_HEAD_LEMMAS = {
+    "expedient", "needful", "necessary",        # both lists
+    "wisdom", "meet",                            # detector-original
+    "possible", "desirous", "impossible",        # canon §5 R26 prose
+}
 
 # Filter: result-clause / consecutive-result degree markers ("so X that Y",
 # "such X that Y"). When one of these adverbs scopes the matrix verb's

@@ -74,7 +74,10 @@ M1_BONDED_VERB_PAIRS: frozenset = frozenset({
     frozenset({"wail", "gnash"}),           # by analogy
     frozenset({"pray", "supplicate"}),      # synonymous prayer
     frozenset({"fight", "quarrel"}),        # synonymous discord
-    frozenset({"spare", "stay"}),           # synonymous withholding (PENDING Stan-direct verification per audit C-3)
+    # NOTE: {spare, stay} dropped per Stan-direct 2026-05-10 — corpus
+    # attestations all read as sequential-narrative ("did not strike,
+    # then withdrew weapon"), not simultaneous-synonymy. Same shape as
+    # {draw, smite}, {torture, bind}, {take, come} — withdrawn earlier.
     # Audit-driven additions (2026-05-10 hostile audit B-4):
     frozenset({"bless", "sanctify"}),       # liturgical synonymy (Moroni 4:3, 5:2 — sacrament prayer)
     frozenset({"fear", "tremble"}),         # cognate emotional+somatic state (1 Ne 16:28, 2 Ne 1:25)
