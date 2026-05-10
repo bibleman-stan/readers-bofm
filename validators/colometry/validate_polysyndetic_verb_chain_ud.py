@@ -40,6 +40,45 @@ from validators.parsing.line_mapping import build_line_map, book_paths
 
 COORDINATORS = {"and", "or", "nor"}
 
+# M1 Gorgianic Bonded Pair lemma sets — synonymous/cognate/intensification
+# verb pairs that canon §1 licenses to MERGE despite polysyndetic 'and'.
+# When such a pair sits as head + first-conj of a chain, the split between
+# them is suppressed; later members in the chain still split normally.
+#
+# Seeded from canon §1 M1 explicit cases plus auditor corpus survey
+# (2026-05-10 hostile audit). Extensible — add lemma pairs as canon
+# precedent + corpus evidence accumulate.
+M1_BONDED_VERB_PAIRS: frozenset = frozenset({
+    # Canon §1 named cases
+    frozenset({"repent", "believe"}),
+    # Corpus survey from hostile audit (2026-05-10)
+    frozenset({"stumble", "fall"}),
+    frozenset({"preach", "prophesy"}),
+    frozenset({"weep", "wail"}),
+    frozenset({"weep", "gnash"}),
+    frozenset({"wail", "gnash"}),
+    frozenset({"pray", "supplicate"}),
+    frozenset({"exhort", "preach"}),
+    frozenset({"draw", "smite"}),
+    frozenset({"torture", "bind"}),
+    frozenset({"fight", "quarrel"}),
+    frozenset({"stone", "cast"}),
+    frozenset({"spare", "stay"}),
+    frozenset({"leave", "go"}),
+    frozenset({"take", "come"}),  # travel-bonded ("took X and came over")
+    frozenset({"creep", "slay"}),  # assassination-bonded
+})
+
+# Stative head lemmas — these head a different predication-class than
+# action-verb conj members and indicate parse-noise rather than a true
+# polysyndetic series.
+STATIVE_HEAD_LEMMAS = frozenset({"be", "have"})
+
+
+def is_m1_bonded(a, b) -> bool:
+    """True if (a.lemma, b.lemma) is a canonical M1 bonded pair."""
+    return frozenset({a.lemma, b.lemma}) in M1_BONDED_VERB_PAIRS
+
 
 BOOKS = [
     "1nephi", "2nephi", "jacob", "enos", "jarom", "omni",
@@ -84,14 +123,21 @@ def find_chains(sent: Sentence) -> list[tuple[Token, list[Token]]]:
     return result
 
 
-def scan_book(book_id: str) -> list[dict]:
+def scan_book(book_id: str) -> tuple[list[dict], list[dict]]:
     v2_path, conllu_path = book_paths(book_id)
     sentences = load_conllu(conllu_path)
     line_map = build_line_map(v2_path, conllu_path)
 
     findings: list[dict] = []
+    review: list[dict] = []
     for sent in sentences:
         for head, members in find_chains(sent):
+            # Audit-driven filter (2026-05-10): cross-class head guard.
+            # Stative heads (be/have) with action-verb conj members are
+            # parse-noise rather than true polysyndetic series.
+            if head.lemma in STATIVE_HEAD_LEMMAS:
+                continue
+
             # Collect (token, line) for head + all members
             chain_tokens = [head] + members
             tok_lines = []
@@ -110,13 +156,38 @@ def scan_book(book_id: str) -> list[dict]:
                 if len(by_line[ln]) < 2:
                     continue
                 shared = by_line[ln]
-                # The split point is before the second chain member on this
-                # line — find the second-or-later conj member (not the head).
-                # Members are sorted by token id; second-or-later is the one
-                # to split before.
                 shared_sorted = sorted(shared, key=lambda x: x.id)
-                # First on line is fine; need split before any subsequent.
-                later = shared_sorted[1:]
+
+                # Audit-driven filter (2026-05-10): M1 bonded-pair
+                # protection. If the two earliest tokens on the shared
+                # line are a canonical M1 verb pair, the split between
+                # them is suppressed by canon §1 M1.
+                first_two = shared_sorted[:2]
+                if len(first_two) == 2 and is_m1_bonded(first_two[0], first_two[1]):
+                    # If only those two share the line, no real violation.
+                    if len(shared_sorted) == 2:
+                        # M1 protects this — bucket as REVIEW for visibility,
+                        # do not flag as STRONG.
+                        review.append({
+                            "book": book_id,
+                            "sent_id": sent.sent_id,
+                            "head_form": head.form,
+                            "head_lemma": head.lemma,
+                            "shared_line": ln,
+                            "shared_tokens": [(t.form, t.lemma) for t in shared_sorted],
+                            "skip_reason": "M1-bonded-pair-merge-protected",
+                            "v2_path": str(v2_path),
+                        })
+                        break
+                    # If a third+ chain member also on this line, still
+                    # split before the later (post-pair) member.
+                    later = shared_sorted[2:]
+                    split_before = later[0]
+                else:
+                    # First member on line is fine; split before second.
+                    later = shared_sorted[1:]
+                    split_before = later[0]
+
                 findings.append({
                     "book": book_id,
                     "sent_id": sent.sent_id,
@@ -126,13 +197,13 @@ def scan_book(book_id: str) -> list[dict]:
                     "chain_members": [(m.form, m.lemma) for m in members],
                     "shared_line": ln,
                     "shared_tokens": [(t.form, t.lemma) for t in shared_sorted],
-                    "split_before_form": later[0].form,
-                    "split_before_lemma": later[0].lemma,
+                    "split_before_form": split_before.form,
+                    "split_before_lemma": split_before.lemma,
                     "v2_path": str(v2_path),
                 })
                 # Only report the first shared-line violation per chain
                 break
-    return findings
+    return findings, review
 
 
 def main() -> int:
@@ -143,21 +214,24 @@ def main() -> int:
 
     book_ids = [args.book] if args.book else BOOKS
     all_findings: list[dict] = []
+    all_review: list[dict] = []
     for bid in book_ids:
         try:
-            fs = scan_book(bid)
+            fs, rev = scan_book(bid)
         except FileNotFoundError as e:
             print(f"[skip] {bid}: {e}", file=sys.stderr)
             continue
         all_findings.extend(fs)
+        all_review.extend(rev)
         if args.verbose:
-            print(f"{bid}: {len(fs)} chain violations")
+            print(f"{bid}: {len(fs)} STRONG, {len(rev)} REVIEW")
 
     print("=" * 72)
     print("Polysyndetic verb-chain UD-query (N>=3 chain with shared-line break missing)")
     print("=" * 72)
     print(f"Books scanned:           {len(book_ids)}")
     print(f"STRONG-SPLIT-CANDIDATE:  {len(all_findings)}")
+    print(f"REVIEW (M1 protected):   {len(all_review)}")
     print()
 
     for f in all_findings[:25]:
