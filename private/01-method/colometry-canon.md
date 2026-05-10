@@ -158,6 +158,32 @@ The list is extensible only by worked example + adversarial validation, same rul
 - *"soul and body"* — anthropological pair
 - *"repent and believe"* (2 Ne 1603, 4692) — hendiadic soteriological response
 
+**BoFM-corpus bonded verb pairs (closed list).** Where the canonical-cases list above covers paired nouns and one canonical verb pair, the corpus exhibits a stable closed list of additional verb pairs treated as M1 bonded — true synonymy, cognate-acts, or hendiadys (one act named twice for emphasis):
+
+| Pair | Type | Corpus citations |
+|------|------|------------------|
+| repent + believe | paired soteriological response | 2 Ne 1603, 4692 (canonical) |
+| weep + gnash | suffering manifestation | inferred from nominal hendiadys *"weeping and gnashing of teeth"*; no verbal N=2 corpus instance |
+| fight + quarrel | synonymous discord | corpus-attested |
+| bless + sanctify | liturgical synonymy | Moroni 4:3, 5:2 (sacrament prayer) |
+| fear + tremble | cognate emotional+somatic state | 1 Ne 16:28, 2 Ne 1:25 |
+| murmur + complain | synonymous discontent verbalization | 1 Ne 17:48 |
+| hunger + thirst | cognate appetitive (verbal) | 3 Ne 12:6 |
+
+**N=2-only caveat.** M1 verb-pair protection fires ONLY on N=2 verb-coordination (two coordinated finite verbs or two coordinated participles under shared aux). It does NOT fire on:
+- N=3+ chains (Justification 1 wins per the N=3+ cliff — Helaman 3:16 precedent)
+- Nominal occurrences (*"weeping and gnashing of teeth"* is a nominal compound, not a verbal pair — the *weep+gnash* listing above is verbal-extrapolated from the nominal hendiadys, not corpus-attested as a verbal N=2)
+- Mixed-class coordinates (one finite + one participial, or one verb + one noun)
+
+**CRITICAL DISTINCTION — what M1 does NOT cover.** M1 covers true synonymy / cognate acts / hendiadys (one act named twice for emphasis). It does NOT cover:
+- **Sequential narrative bonding** — *draw + smite* (draw weapon, then strike), *torture + bind* (sequential cruelties), *stone + cast out* (sequential persecution), *take + come* (sequential travel), *creep + slay* (sequential assassination), *lifted + crucified + buried* (passion sequence)
+- **Distinct speech acts** — *preach + prophesy* (a prophet does both as distinct activities), *exhort + preach*, *pray + supplicate* (the latter dropped 2026-05-10 per Wave 6 audit; only attestation was the N=6 list at Moroni 6:9 — same shape as the rejected *preach+exhort* and *preach+prophesy*)
+- **Rhetorical/thematic clustering** that names sequential or distinct actions
+
+Per `feedback_rhetoric_bandwagon.md` and `feedback_rhetorical_force.md`, rhetorical/narrative bonding is NOT structural-rule territory — sequential distinct actions split per the generative principle even when they form a recognizable rhetorical figure.
+
+**Detector reference.** `validators/colometry/validate_polysyndetic_verb_chain_ud.py` `M1_BONDED_VERB_PAIRS` set + `is_m1_bonded` function. The list is extensible only by worked corpus example + adversarial validation, same rule as the structural justifications.
+
 **Tie-breaker when M1 and structural justification 1 both seem to apply (N=2 formally-marked pair):**
 - If each member has a distinct non-synonymous finite verb → structural justification 1 wins (SPLIT). Example: two members with genuinely different actions.
 - If the two members are semantically synonymous, cognate, or intensification variants → M1 wins (MERGE). Example: *"repent and believe"* (synonymous soteriological pair under shared imperative force).
@@ -658,6 +684,23 @@ Each rule below follows the template:
 
 **Scope clarification.** Rule 7 targets **finite** purpose clauses only. **Non-finite infinitival purpose adjuncts** (*to + VERB + complement*, without subject or modal) are lighter and typically MERGE with their matrix motion verb (established 2026-04-19 at Alma 22:4).
 
+**SCOPE — result-clause exclusion.** Rule 7 does NOT fire when the *that*-clause is a consecutive-result clause introduced by a degree-scoping adverb. Surface-level test:
+
+- The matrix's modifier (ADJ or ADV) carries an `advmod` or `amod` dependent in `{so, such}`
+- The *that*-clause is in `advcl` attachment as the consequence
+- The combination reads as *"to such an extent that X (modal/result)"* — consecutive consequence, not purposive telic
+
+Examples:
+- **Result (no R7 split):** *"so numerous that they could not be numbered"* — *so* scopes *numerous*; *that*-clause is the consequence
+- **Result (no R7 split):** *"such great force that the city was destroyed"* — *such* scopes *force*; *that*-clause is the consequence
+- **Genuine R7 (split applies):** *"such great X (NP) that ye may Y"* — `such` attaches as `det` to the head noun, not as `advmod`/`amod` scoping a modifier; the *that*-clause is purposive (modal aux). Surface `such` alone is not the discriminator.
+
+The discriminator is the UD attachment of *so/such*: as `advmod`/`amod` scoping a modifier of the matrix, the result-clause reading governs and Rule 7 yields. Surface presence of *so/such* alone is not sufficient.
+
+**Corpus empirics.** Zero `such X that` consecutive-result hits in v2-mine; the construction is realized overwhelmingly with `so`. *Such* is included in the closed list `{so, such}` for English-grammatical completeness, not corpus necessity.
+
+**Detector reference.** `validators/colometry/validate_rule_07_ud.py` `RESULT_DEGREE_MARKERS = {so, such}` and `is_result_so_X_that` filter.
+
 **Precedence with Rule 27.** Rule 7's UD signature requires **simple** `mark=that`. When the subordinator is the **compound** *insomuch that*, Rule 27 governs — not Rule 7 — even when the result clause contains a modal auxiliary (*might, should, could*) that would otherwise fit Rule 7's signature. The modal in *insomuch that + MODAL* belongs to the consecutive-result semantics (*"to such an extent that X might happen"*) rather than purposive telic semantics, despite the English reading sometimes permitting a purposive gloss. The compound subordinator IS the mark of consecutive-result reading; Rule 27's 3-condition merge test (+ expletive-*there* and chained-*insomuch* sub-clauses) is the applicable adjudication.
 
 **Exceptions.** Short-line contexts where the combined line passes the atomic-thought test may merge.
@@ -798,6 +841,16 @@ Validators: `validators/syntax/validate_line_final_tokens.py` (simple AUX+V) AND
 - Formally-marked parallel "that"-series (merge frame + first; stack remainder)
 - Meta-announcement (BE-verb + predicate noun + appositive *that* → the *that* clause is appositive to the noun, not complement of the verb)
 - Direct divine speech with recitativum *that* (*saith the Lord, that [first-person content]*)
+- **Petition-frame ambiguity filter (REVIEW-tier).** A subset of speech- and volition-class verbs naming petitional or directive speech acts is treated specially when paired with a modal-aux *that*-clause. The semantics are genuinely ambiguous between content (UD `ccomp`) and purpose (UD `advcl`):
+
+  - *"I cried unto God that he would preserve the records"* — content of prayer? Or purpose of the cry?
+  - *"plead with the king that he will cast away his hatred"* — content of pleading? Or purpose?
+
+  Even though the LLM annotation tags `ccomp`, the semantic ambiguity warrants editorial review rather than mechanical merge.
+
+  **Lemmas (closed list, BoFM corpus-attested):** `{cry, pray, beseech, ask, seek, plead}`. *Cry, beseech, ask, plead* are speech-class; *pray, seek* are volition-class — the filter spans both classes by design (the mechanical trigger conjunction is verb-set × modal-aux, not ontological speech-act class). When the matrix verb's lemma is in this set AND the *that*-clause body has a modal aux (*may, might, will, would, shall, should, can, could, must*), bucket as **REVIEW-REQUIRED** rather than STRONG-MERGE-CANDIDATE. The clean-content cases (declarative-speech sub-class — *say, declare, testify, proclaim, tell, confess, rehearse, answer*) are not affected.
+
+  **Detector reference.** `validators/colometry/validate_rule_17_ud.py` `PETITION_FRAME_VERBS` set + `MODAL_AUX_LEMMAS` set + `categorize` function. Codified 2026-05-10 per Wave 6 closed-list audit; renamed from prior `DIRECTIVE_PETITION` label (speech-act-theory terminology) to descriptive mechanical-trigger naming.
 - **Speech-indirect long-complement.** When the speech tag is short (matrix verb + recipient pronoun, optionally preceded by AICTP but no participial scene-setting frame) AND the *that*-clause complement is a substantial proposition (≥8 words with own finite verb), the split is licensed — the tag functions as a structural-justification-3 speech-act announcement for indirect discourse, paralleling the colon-marked direct-discourse handling. **Diagnostic:** (a) Does the matrix-verb line read as a complete speech-act announcement — could the listener predict "and here is what was said" at the break? (b) Is the *that*-clause a substantial proposition in its own right with its own finite verb? If both yes, split is licensed. If either fails, Rule 17 merge applies. **Corpus evidence (7 instances, all currently split, protected by this exception):** 1 Ne 15:27 *"said unto them / that the water...was filthiness"*; 1 Ne 15:29 *"said unto them / that it was a representation of that awful hell..."*; 1 Ne 15:32 *"said unto them / that it was a representation of things both temporal and spiritual"*; 1 Ne 16:2 *"said unto them / that I knew that I had spoken hard things..."*; 1 Ne 16:25 *"said unto them / that they should murmur no more..."*; Alma 9:31 *"said unto them / that they were a hard-hearted and a stiffnecked people"*; Alma 9:32 *"said unto them / that they were a lost and a fallen people"*. **SCOPE exclusions:** short *that*-complements (<8 words) — Rule 17 merge applies as before; tags that are themselves complete narrative frames (participial preceding action-verbs beyond AICTP) — tag already carries frame weight; non-speech verbs (cognition, volition, causative) — this exception is speech-class only. **WHY:** substantial indirect-discourse complements function as their own cognitive frames, paralleling direct discourse; editorial practice reflects this across all 7 corpus instances. **HOW WE KNOW:** Phase-1 hostile audit 2026-04-23 surfaced the pattern; all 7 instances have complements ≥8 words and tag signatures fitting the short-tag criterion.
 
 **Delete-test diagnostic.** Remove any intervening noun phrase. If the sentence still reads as "[subject] [verb] that X," the *that* clause is a complement — MERGE. If the deletion breaks the sentence, the *that* clause is appositive to a noun — DNM (do not merge).
@@ -930,15 +983,29 @@ Pre-Phase-2, REVIEW-REQUIRED items are the honest output of the validator — th
 
 **Validator.** `validators/colometry/validate_rule_23_date_colophon.py`.
 
-### Rule 26 — Adjective + "That" Complement Stays Together
+### Rule 26 — Adjective (or NOUN-as-Predicate) + "That" Complement Stays Together
 
-**Grammatical basis.** Some adjectives (*possible, expedient, desirous, necessary, needful, impossible*) require a clausal complement. The predicate is incomplete without it.
+**Grammatical basis.** A closed list of predicate complement-takers requires a clausal complement. The predicate is incomplete without it.
 
-**UD signature.** `ccomp(ADJ, clause)` with `mark(clause, that)`.
+**Closed list — ADJ predicate (9 lemmas):** `{possible, expedient, desirous, necessary, needful, impossible, better, well, requisite}`
+
+The first six are canonical Rule 26 territory (predicates of *it is X that*-frames). *Better*, *well*, and *requisite* were added 2026-05-10 per Wave 6 closed-list audit — corpus-attested but previously uncovered: *better* 7 hits across 1 Ne / Mosiah / Alma / 3 Ne; *well* 1 hit Alma 6341; *requisite* 1 hit Alma 7979.
+
+**Closed list — NOUN-as-predicate (1 lemma):** `{wisdom}`
+
+*Wisdom* parses as a noun, not an adjective; the construction *"it is wisdom in God that X"* takes the same predicate-complement frame (`cop(wisdom, is) + acl(wisdom, that-clause)`). It earns Rule 26 protection on the same complement-integrity grounds, in a separate sub-class because the head UPOS differs.
+
+**Dropped (Wave 6 audit):** *meet* — zero matrix-predicate `it is meet that` hits in v2-mine. The construction takes a `for`-infinitive (1 Ne 812) or appears as noun-modifier (Moroni 108), not as predicate complement-taker. Removed from closed list.
+
+**UD signature.** `ccomp(ADJ, clause)` or `acl(NOUN-as-predicate, clause)` with `mark(clause, that)`, where the head lemma is in one of the two closed lists above.
 
 **Diagnostic.** MERGE.
 
-**Distinction.** Verbs of speaking/perceiving may be complete without specifying content ("he said"). Adjectives in this class cannot ("it is expedient" → expedient WHAT?).
+**Distinction.** Verbs of speaking/perceiving may be complete without specifying content ("he said"). Predicate complement-takers in this class cannot ("it is expedient" → expedient WHAT?).
+
+**Precedence over Rule 7 (purpose).** When the matrix lemma is in this set AND the LLM annotates the *that*-clause as `advcl`, the annotation is likely mistagged — the structural truth is `ccomp(ADJ, clause)` or `acl(NOUN, clause)`. Rule 26 governs in this case, and Rule 7's purpose-clause split does not apply.
+
+**Detector reference.** `validators/colometry/validate_rule_07_ud.py` `RULE_26_HEAD_LEMMAS` set + `is_rule_26_class` filter (Rule 7 detector applies the precedence by routing R26-class matches away from R7).
 
 **Example.** "if it were possible that our first parents..." — MERGE.
 

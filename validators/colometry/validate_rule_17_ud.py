@@ -120,19 +120,21 @@ COGNITION = {
 }
 VOLITION = {"wish", "desire", "hope", "long", "trust", "pray", "seek"}
 
+# {beseech, ask, plead} added 2026-05-10 per Wave 6 audit (Defect A): they were
+# previously in PETITION_FRAME_VERBS but NOT in GOVERNING_LEMMAS, so 14 corpus
+# cases (5 beseech + 1 ask + 8 plead) were silently unrouted by categorize().
 GOVERNING_LEMMAS = CAUSATIVE | ASPECTUAL | SPEECH | COGNITION | VOLITION | {"beseech", "ask", "plead"}
 
-# Directive-petition matrix verbs whose "that"-complement with a modal aux
+# Petition-frame ambiguity filter (canon §5 Rule 17 exception).
+# Speech- and volition-class verbs whose "that"-complement with a modal aux
 # reads ambiguously between content (UD ccomp) and purpose (UD advcl).
+# {cry, beseech, ask, plead} are speech-class; {pray, seek} are volition-class.
 # When matrix lemma is in this set AND the ccomp body has a modal aux,
 # bucket as REVIEW-REQUIRED instead of STRONG-MERGE-CANDIDATE.
-DIRECTIVE_PETITION = {"cry", "pray", "beseech", "ask", "seek", "plead"}
-
-# Audit-driven coverage fix (2026-05-10 Wave 6): {beseech, ask, plead}
-# were in DIRECTIVE_PETITION but NOT in GOVERNING_LEMMAS, so 14 corpus
-# cases (5 beseech + 1 ask + 8 plead) were silently unrouted. Adding
-# them as DIRECTIVE_SPEECH_PETITION lets categorize() see them.
-DIRECTIVE_SPEECH_PETITION = {"beseech", "ask", "plead"}
+# Renamed 2026-05-10 from DIRECTIVE_PETITION per Wave 6 audit (Defect C):
+# speech-act-theory label was bandwagon-shape; mechanical-trigger naming
+# describes the verb-set × modal-aux conjunction faithfully.
+PETITION_FRAME_VERBS = {"cry", "pray", "beseech", "ask", "seek", "plead"}
 
 # Modal aux lemmas that mark the ambiguity. Lemma 'will' covers will/would;
 # lemma 'shall' covers shall/should; etc.
@@ -153,7 +155,7 @@ def categorize(sent, ccomp_root, head, head_line, mark_line, v2_path) -> tuple[s
 
     Filters per audit findings (2026-05-10):
     0. Vocative on matrix line → Rule 15 collision (highest priority)
-    1. Directive-petition matrix (cry/pray/beseech/ask/seek) + modal-aux on
+    1. Petition-frame matrix (cry/pray/beseech/ask/seek/plead) + modal-aux on
        ccomp body → ambiguous content vs purpose
     2. Speech-indirect long-complement: matrix in {say, speak, tell, declare}
        AND ccomp body has ≥8 word tokens (canon §5 Rule 17 exception)
@@ -166,11 +168,11 @@ def categorize(sent, ccomp_root, head, head_line, mark_line, v2_path) -> tuple[s
     if is_vocative_on_matrix_line(Path(v2_path), head_line):
         return ("REVIEW-REQUIRED", "vocative-on-matrix-line-Rule-15-collision")
 
-    # Filter 1: directive-petition + modal aux
-    if head.lemma in DIRECTIVE_PETITION:
+    # Filter 1: petition-frame + modal aux
+    if head.lemma in PETITION_FRAME_VERBS:
         for aux in sent.aux_of(ccomp_root):
             if aux.lemma in MODAL_AUX_LEMMAS:
-                return ("REVIEW-REQUIRED", "directive-petition+modal-aux")
+                return ("REVIEW-REQUIRED", "petition-frame+modal-aux")
 
     # Filter 2: speech-indirect long-complement exception (canon §5 Rule 17)
     if head.lemma in {"say", "speak", "tell", "declare"}:
@@ -280,8 +282,8 @@ def main():
     if review:
         by_reason: dict[str, int] = {}
         for v in review:
-            by_reason[v.get("review_reason") or "directive-petition+modal-aux"] = (
-                by_reason.get(v.get("review_reason") or "directive-petition+modal-aux", 0) + 1
+            by_reason[v.get("review_reason") or "petition-frame+modal-aux"] = (
+                by_reason.get(v.get("review_reason") or "petition-frame+modal-aux", 0) + 1
             )
         for reason, n in sorted(by_reason.items()):
             print(f"    {reason}: {n}")

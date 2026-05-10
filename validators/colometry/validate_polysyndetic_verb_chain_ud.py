@@ -61,24 +61,29 @@ COORDINATORS = {"and", "or", "nor"}
 #   - "preach + prophesy" — distinct speech acts (prophet does both)
 #
 # Examples that ARE M1:
-#   - "weep + gnash" — same act of suffering manifestation
+#   - "weep + gnash" — verbal-extrapolated from the canonical nominal
+#     hendiadys "weeping and gnashing of teeth" (no verbal N=2 instance
+#     in corpus; retained by analogy with the canon-named nominal pair)
 #   - "repent + believe" — paired soteriological response (canon-named)
-#   - "wail + gnash" — synonymous expressions of grief
-#   - "pray + supplicate" — synonymous prayer-acts
 #   - "fight + quarrel" — synonymous discord
-#   - "spare + stay" — synonymous withholding (stay-hand = spare)
+#   - "bless + sanctify" — liturgical synonymy (sacrament prayer)
+#   - "fear + tremble" — cognate emotional+somatic state
+#   - "murmur + complain" — synonymous discontent verbalization
+#   - "hunger + thirst" — cognate appetitive (verbal)
 M1_BONDED_VERB_PAIRS: frozenset = frozenset({
     frozenset({"repent", "believe"}),       # canon §1 named
-    frozenset({"weep", "gnash"}),           # canon §1 named
-    frozenset({"weep", "wail"}),            # synonymous suffering
-    frozenset({"wail", "gnash"}),           # by analogy
+    frozenset({"weep", "gnash"}),           # canon §1 named (verbal-extrapolated from nominal)
+    # {weep, wail} and {wail, gnash} DROPPED 2026-05-10 Wave 6 audit:
+    # zero N=2 verbal corpus instances; extrapolation-only (Mosiah 16:2
+    # has the N=3 chain "weep, wail, gnash" — Justification 1 wins per
+    # the N=3+ cliff). Detector should not protect zero-corpus pairs.
     # {pray, supplicate} DROPPED 2026-05-10 Wave 6 audit: only corpus
     # attestation is Moroni 6:9 N=6 worship-list (preach/exhort/pray/
     # supplicate/sing/speak) — DISTINCT-ACTS, same shape as canon-rejected
     # {preach,prophesy} and {exhort,preach}. Sixth catch of rhetoric-
     # bandwagon failure mode.
     frozenset({"fight", "quarrel"}),        # synonymous discord
-    # NOTE: {spare, stay} dropped per Stan-direct 2026-05-10 — corpus
+    # {spare, stay} dropped per Stan-direct 2026-05-10 — corpus
     # attestations all read as sequential-narrative ("did not strike,
     # then withdrew weapon"), not simultaneous-synonymy. Same shape as
     # {draw, smite}, {torture, bind}, {take, come} — withdrawn earlier.
