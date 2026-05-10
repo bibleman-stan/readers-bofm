@@ -120,13 +120,19 @@ COGNITION = {
 }
 VOLITION = {"wish", "desire", "hope", "long", "trust", "pray", "seek"}
 
-GOVERNING_LEMMAS = CAUSATIVE | ASPECTUAL | SPEECH | COGNITION | VOLITION
+GOVERNING_LEMMAS = CAUSATIVE | ASPECTUAL | SPEECH | COGNITION | VOLITION | {"beseech", "ask", "plead"}
 
 # Directive-petition matrix verbs whose "that"-complement with a modal aux
 # reads ambiguously between content (UD ccomp) and purpose (UD advcl).
 # When matrix lemma is in this set AND the ccomp body has a modal aux,
 # bucket as REVIEW-REQUIRED instead of STRONG-MERGE-CANDIDATE.
 DIRECTIVE_PETITION = {"cry", "pray", "beseech", "ask", "seek", "plead"}
+
+# Audit-driven coverage fix (2026-05-10 Wave 6): {beseech, ask, plead}
+# were in DIRECTIVE_PETITION but NOT in GOVERNING_LEMMAS, so 14 corpus
+# cases (5 beseech + 1 ask + 8 plead) were silently unrouted. Adding
+# them as DIRECTIVE_SPEECH_PETITION lets categorize() see them.
+DIRECTIVE_SPEECH_PETITION = {"beseech", "ask", "plead"}
 
 # Modal aux lemmas that mark the ambiguity. Lemma 'will' covers will/would;
 # lemma 'shall' covers shall/should; etc.

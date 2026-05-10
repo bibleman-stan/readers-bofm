@@ -38,8 +38,12 @@ MODAL_AUX_LEMMAS = {
 # prose list (8 lemmas total). Conservative — no live applications retired.
 RULE_26_HEAD_LEMMAS = {
     "expedient", "needful", "necessary",        # both lists
-    "wisdom", "meet",                            # detector-original
+    "wisdom",                                    # NOUN-as-predicate (audit Wave 6: factual ADJ-error correction)
     "possible", "desirous", "impossible",        # canon §5 R26 prose
+    # {meet} DROPPED 2026-05-10 Wave 6 audit: 0 BoFM matrix-predicate hits
+    # (takes for-infinitive or appears as noun-modifier acl)
+    # Audit-driven additions (Wave 6 Draft 3 Defect C):
+    "better", "well", "requisite",               # corpus-attested R26 territory previously uncovered
 }
 
 # Filter: result-clause / consecutive-result degree markers ("so X that Y",

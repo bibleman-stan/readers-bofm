@@ -72,7 +72,11 @@ M1_BONDED_VERB_PAIRS: frozenset = frozenset({
     frozenset({"weep", "gnash"}),           # canon §1 named
     frozenset({"weep", "wail"}),            # synonymous suffering
     frozenset({"wail", "gnash"}),           # by analogy
-    frozenset({"pray", "supplicate"}),      # synonymous prayer
+    # {pray, supplicate} DROPPED 2026-05-10 Wave 6 audit: only corpus
+    # attestation is Moroni 6:9 N=6 worship-list (preach/exhort/pray/
+    # supplicate/sing/speak) — DISTINCT-ACTS, same shape as canon-rejected
+    # {preach,prophesy} and {exhort,preach}. Sixth catch of rhetoric-
+    # bandwagon failure mode.
     frozenset({"fight", "quarrel"}),        # synonymous discord
     # NOTE: {spare, stay} dropped per Stan-direct 2026-05-10 — corpus
     # attestations all read as sequential-narrative ("did not strike,
