@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Reader's Book of Mormon: A Colometric Edition"
+authors:
+  - name: "Stan the Bible Man"
+    email: "thebibleman77@gmail.com"
+date-released: "2026-05-10"
+repository-code: "https://github.com/bibleman-stan/readers-bofm"
+url: "https://bomreader.com"
+license: MIT
+abstract: >-
+  A colometric reading edition of the Book of Mormon (2020 LDS text)
+  designed for ESL readers, students, and newcomers. Each line on the
+  page renders one atomic thought unit (ATU). The edition is produced
+  via the ATU apparatus (atu-method) — a proposition-first generative
+  framework with structural justifications, merge-overrides, and
+  Universal-Dependencies-driven mechanical validation. Includes
+  optional archaic-word modernization layer, audio narration, and
+  per-chapter study overlays.
+keywords:
+  - Book of Mormon
+  - colometric edition
+  - reading edition
+  - atomic thought unit
+  - ATU
+  - sense-lines
+  - scripture
+references:
+  - type: software
+    title: "ATU Method: Computational Colometry for Canonical Texts"
+    authors:
+      - name: "Stan the Bible Man"
+        email: "thebibleman77@gmail.com"
+    repository-code: "https://github.com/bibleman-stan/atu-method"
+    notes: "Methodology and apparatus used to produce this edition."
