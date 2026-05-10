@@ -34,6 +34,11 @@ data/text-files/v1-skousen-breaks/
 # Applier transaction logs (local only — rollback artefacts)
 validators/.tx/*.json
 
+# Scratch / debug artefacts at repo root (detector output redirects, pickle dumps)
+/*.pkl
+/*_full.txt
+/c:*
+
 # Proprietary indexes (local only — not needed at runtime)
 data/parry_index.json
 data/hardy_intertext.json
