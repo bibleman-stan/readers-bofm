@@ -57,7 +57,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from validators.parsing.conllu_query import load_conllu, Sentence, Token
-from validators.parsing.line_mapping import build_line_map, book_paths
+from validators.parsing.line_mapping import build_line_map, build_line_map_full, book_paths
 
 
 SPEECH_LEMMAS = {"say", "speak", "declare", "cry", "answer"}
@@ -175,11 +175,62 @@ def _find_advcl_sibling(sent: Sentence, verb: Token) -> Token | None:  # noqa: A
     return None
 
 
+def _split_col_for_speech_clause(sent: Sentence, verb: Token, advcl: Token,
+                                 verb_line: int, line_map_full: dict) -> int | None:
+    """Return the column on `verb_line` where the speech-clause begins.
+
+    Pattern: [optional CCONJ] [advcl frame] [comma] [matrix nsubj + speech verb + ...]
+    Split happens between advcl frame and matrix clause. Find the rightmost
+    advcl-subtree token on the line (advcl_end_id); split before the
+    leftmost speech-only token whose id > advcl_end_id.
+
+    The applier inserts a line break BEFORE the returned column:
+        line N    -> advcl frame, ending at split_col-1
+        line N+1  -> speech clause, starting at split_col
+
+    Returns None if no speech-only token follows the advcl on this line.
+    """
+    speech_ids = {t.id for t in sent.subtree(verb)}
+    advcl_ids = {t.id for t in sent.subtree(advcl)}
+
+    # Rightmost advcl token on verb_line (the boundary marker)
+    advcl_ids_on_line = [
+        tid for tid in advcl_ids
+        if (lc := line_map_full.get((sent.sent_id, tid))) and lc[0] == verb_line
+    ]
+    if not advcl_ids_on_line:
+        return None
+    advcl_end_id = max(advcl_ids_on_line)
+
+    # Leftmost NON-PUNCT speech-only token that follows advcl_end_id on the
+    # same line. Skipping punct tokens (comma) keeps any frame-closing comma
+    # on the BEFORE line where it belongs grammatically.
+    speech_only_after = [
+        tok for tok in (sent.subtree(verb))
+        if tok.id > advcl_end_id
+        and tok.id not in advcl_ids
+        and tok.upos != "PUNCT"
+        and (lc := line_map_full.get((sent.sent_id, tok.id))) and lc[0] == verb_line
+    ]
+    if not speech_only_after:
+        return None
+    leftmost = min(speech_only_after, key=lambda t: t.id)
+    return line_map_full[(sent.sent_id, leftmost.id)][1]
+
+
 def scan_book(book_id: str) -> tuple[list[dict], list[dict]]:
-    """Return (pass_instances, violations)."""
+    """Return (pass_instances, violations).
+
+    Violations bucket includes both STRONG-SPLIT-CANDIDATE (clean split_col)
+    and REVIEW-REQUIRED (verb_line == advcl_line but no clean split_col —
+    speech subtree minus advcl yields no tokens after advcl on the line,
+    indicating the speech-tag is structurally inside the advcl rather than
+    after it; not a true Rule 28 case).
+    """
     v2_path, conllu_path = book_paths(book_id)
     sentences = load_conllu(conllu_path)
     line_map = build_line_map(v2_path, conllu_path)
+    line_map_full = build_line_map_full(v2_path, conllu_path)
 
     passes: list[dict] = []
     violations: list[dict] = []
@@ -218,8 +269,20 @@ def scan_book(book_id: str) -> tuple[list[dict], list[dict]]:
             }
 
             if verb_line == advcl_line:
-                # Speech verb merged with the advcl on the same line
-                record["bucket"] = "STRONG-SPLIT-CANDIDATE"
+                # Speech verb merged with the advcl on the same line.
+                # Compute char-offset split position for the applier.
+                split_col = _split_col_for_speech_clause(
+                    sent, verb, advcl, verb_line, line_map_full
+                )
+                record["split_col"] = split_col
+                record["v2_path"] = str(v2_path)
+                if split_col is None or split_col == 0:
+                    # Speech-tag structurally inside (or before) advcl —
+                    # not a true Rule 28 frame+announcement shape.
+                    record["bucket"] = "REVIEW-REQUIRED"
+                    record["review_reason"] = "no-clean-split-col"
+                else:
+                    record["bucket"] = "STRONG-SPLIT-CANDIDATE"
                 violations.append(record)
             else:
                 # Speech verb already on a different line from the advcl
@@ -258,23 +321,27 @@ def main():
     print("=" * 72)
     print("Rule 28 UD-query (Speech-Act Announcement After Frame) — BofM corpus")
     print("=" * 72)
+    strong_violations = [v for v in all_violations if v.get("bucket") == "STRONG-SPLIT-CANDIDATE"]
+    review_violations = [v for v in all_violations if v.get("bucket") == "REVIEW-REQUIRED"]
+
     print(f"Books scanned:              {books_scanned}")
     print(f"Speech+advcl instances:     {total}")
     print(f"  PASS (already split):     {len(all_passes)}")
-    print(f"  STRONG-SPLIT-CANDIDATE:   {len(all_violations)}")
+    print(f"  STRONG-SPLIT-CANDIDATE:   {len(strong_violations)}")
+    print(f"  REVIEW-REQUIRED:          {len(review_violations)}")
     print()
 
-    if all_violations:
+    if strong_violations:
         print("STRONG-SPLIT-CANDIDATE instances (first 5):")
         print("-" * 72)
-        for v in all_violations[:5]:
+        for v in strong_violations[:5]:
             print(f"  [{v['book']}] sent={v['sent_id']}")
             print(f"    speech verb: {v['verb_form']!r} (lemma={v['verb_lemma']}) "
                   f"line {v['verb_line']}")
             print(f"    advcl root:  {v['advcl_form']!r} line {v['advcl_line']}")
             print(f"    nsubj:       {v['nsubj_form']!r}")
-        if len(all_violations) > 5:
-            print(f"  ... +{len(all_violations) - 5} more")
+        if len(strong_violations) > 5:
+            print(f"  ... +{len(strong_violations) - 5} more")
         print()
     else:
         print("No STRONG-SPLIT-CANDIDATE instances found.")
@@ -292,8 +359,10 @@ def main():
         print("  (none detected)")
     print()
 
-    print(f"RESULT: violations={len(all_violations)} strong={len(all_violations)} review=0")
-    sys.exit(1 if all_violations else 0)
+    strong_count = sum(1 for v in all_violations if v.get("bucket") == "STRONG-SPLIT-CANDIDATE")
+    review_count = sum(1 for v in all_violations if v.get("bucket") == "REVIEW-REQUIRED")
+    print(f"RESULT: violations={strong_count} strong={strong_count} review={review_count}")
+    sys.exit(1 if strong_count else 0)
 
 
 if __name__ == "__main__":
