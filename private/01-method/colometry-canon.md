@@ -1104,7 +1104,7 @@ Validators live in two subfolders reflecting the Layer 1 / Layer 3 split (restru
 | `validate_rule_16_aictp_dangling_that.py` | Rule 16 |
 | `validate_rule_17_complement_integrity.py` | Rule 17 |
 | `validate_rule_18_fixed_idioms.py` | Rule 18 |
-| `validate_rule_19_anaphoric_relative.py` | Rule 19 |
+| `validate_rule_19_ud.py` | Rule 19 (UD-only; regex retired 2026-05-10 per parity-test READY-TO-RETIRE-REGEX) |
 | `validate_rule_23_date_colophon.py` | Rule 23 |
 | `validate_rule_27_insomuch_that.py` | Rule 27 |
 | `validate_rule_28_speech_act_after_frame.py` | Rule 28 |

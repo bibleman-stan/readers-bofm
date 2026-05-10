@@ -37,7 +37,8 @@ sys.path.insert(0, str(REPO))
 PARITY_PAIRS = [
     ("rule_17",            "Complement Integrity"),
     ("rule_18",            "Fixed Idiom Integrity"),
-    ("rule_19",            "Anaphoric Relative"),
+    # rule_19 retired 2026-05-10: parity-test verdict READY-TO-RETIRE-REGEX;
+    # validate_rule_19_anaphoric_relative.py removed.
     ("rule_27",            "Insomuch That Binding"),
     ("rule_28",            "Speech-Act After Frame"),
     ("severed_complement", "Severed Complement-Spanning-Frame"),
@@ -176,33 +177,9 @@ def _extract_rule_18():
     return regex_set, ud_strong_set, ud_review_set, regex_raw, ud_strong, ud_review
 
 
-# ---- Rule 19 ----
-
-def _extract_rule_19():
-    from validators.colometry.validate_rule_19_anaphoric_relative import scan_file as regex_scan
-    from validators.colometry.validate_rule_19_ud import scan_book as ud_scan
-
-    # Regex: line_num is the NP-anchor line (line N, the head-noun line)
-    # Only flag STRONG-MERGE and STRONG-MERGE-PREDICATIVE-IDENTIFIER as
-    # the regex equivalent of UD's STRONG-MERGE bucket.
-    STRONG_CATEGORIES = {"STRONG-MERGE", "STRONG-MERGE-PREDICATIVE-IDENTIFIER"}
-    regex_raw_all = _scan_all_regex_files(regex_scan)
-    regex_raw = [r for r in regex_raw_all if r.get("category") in STRONG_CATEGORIES]
-    regex_review_raw = [r for r in regex_raw_all if r.get("category") == "REVIEW-REQUIRED"]
-
-    # line_num in regex is the NP line (line N). UD's head_line is the head noun line.
-    # They should align.
-    regex_set = {(r["_book"], int(r["line_num"])) for r in regex_raw}
-
-    ud_raw = _scan_all_ud_books(ud_scan)
-    # UD STRONG-MERGE = anaphoric head on different lines → merge
-    ud_strong = [v for v in ud_raw if v.get("bucket") == "STRONG-MERGE"]
-    ud_review = [v for v in ud_raw if v.get("bucket") == "REVIEW-REQUIRED"]
-    # head_line = the line the head noun is on
-    ud_strong_set = normalize_findings(ud_strong, line_key="head_line")
-    ud_review_set = normalize_findings(ud_review, line_key="head_line")
-
-    return regex_set, ud_strong_set, ud_review_set, regex_raw, ud_strong, ud_review
+# ---- Rule 19 (retired 2026-05-10) ----
+# parity-test verdict READY-TO-RETIRE-REGEX confirmed prior to retirement;
+# UD detector covers all regex findings. Regex validator deleted.
 
 
 # ---- Rule 27 ----
@@ -281,7 +258,6 @@ def _extract_severed_complement():
 EXTRACTORS = {
     "rule_17":            _extract_rule_17,
     "rule_18":            _extract_rule_18,
-    "rule_19":            _extract_rule_19,
     "rule_27":            _extract_rule_27,
     "rule_28":            _extract_rule_28,
     "severed_complement": _extract_severed_complement,
@@ -390,7 +366,6 @@ def _sample_ud_only(ud_only_set: set, ud_strong: list, rule_name: str, n: int = 
     lk_map = {
         "rule_17": "head_line",
         "rule_18": "line_min",
-        "rule_19": "head_line",
         "rule_27": "mark_line",
         "rule_28": "verb_line",
         "severed_complement": "advcl_line",
