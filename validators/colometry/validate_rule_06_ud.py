@@ -29,7 +29,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from validators.parsing.conllu_query import load_conllu, Sentence, Token
-from validators.parsing.line_mapping import build_line_map, book_paths
+from validators.parsing.line_mapping import build_line_map_full, book_paths
 
 BOOKS = [
     "1nephi", "2nephi", "jacob", "enos", "jarom", "omni",
@@ -49,7 +49,8 @@ def content_count(sent: Sentence, tok: Token) -> int:
 def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
     v2_path, conllu_path = book_paths(book_id)
     sentences = load_conllu(conllu_path)
-    line_map = build_line_map(v2_path, conllu_path)
+    line_map_full = build_line_map_full(v2_path, conllu_path)
+    line_map = {k: v[0] for k, v in line_map_full.items()}
 
     findings = []
     for sent in sentences:
@@ -119,6 +120,11 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
                 bucket = "STRONG-SPLIT-CANDIDATE"
                 review_reason = None
 
+            # Char-offset of the 'because' mark token within its v2-mine line.
+            # Applier splits before this column — no regex needed.
+            mark_line_col = line_map_full.get((sent.sent_id, mark.id))
+            split_col = mark_line_col[1] if mark_line_col is not None else None
+
             findings.append({
                 "book": book_id,
                 "sent_id": sent.sent_id,
@@ -131,6 +137,8 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
                 "combined_size": combined,
                 "bucket": bucket,
                 "review_reason": review_reason,
+                "split_col": split_col,
+                "v2_path": str(v2_path),
                 "sent_text": sent.text,
             })
 

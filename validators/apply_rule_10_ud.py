@@ -9,6 +9,11 @@ Re-runs the detector internally to get fresh line numbers.
 Usage:
     python validators/apply_rule_10_ud.py            # dry-run
     python validators/apply_rule_10_ud.py --apply    # write
+
+Each --apply run writes a transaction log to validators/.tx/ so the changes
+can be reversed in 30 seconds if a pre-commit regression check fires:
+
+    python validators/rollback.py --latest
 """
 from __future__ import annotations
 
@@ -19,6 +24,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO))
 
 from validators.colometry.validate_rule_10_ud import scan_book, BOOKS  # noqa: E402
+from validators.tx_log import TxLog  # noqa: E402
 
 
 def main() -> int:
@@ -76,6 +82,7 @@ def main() -> int:
         print("\n(dry run — pass --apply to write)")
         return 0
 
+    tx = TxLog("rule_10")
     total_applied = 0
     for v2_path, items in by_file.items():
         with open(v2_path, encoding="utf-8") as f:
@@ -87,13 +94,22 @@ def main() -> int:
                 continue
             a = lines[line_idx].rstrip()
             b = lines[line_idx + 1].strip()
-            lines[line_idx] = a + " " + b
+            merged = a + " " + b
+            # Record BEFORE the mutation so indices are still valid
+            tx.record_merge(str(v2_path), line_idx, lines[line_idx], lines[line_idx + 1], merged)
+            lines[line_idx] = merged
             del lines[line_idx + 1]
             total_applied += 1
         with open(v2_path, "w", encoding="utf-8") as f:
             f.write("\n".join(lines))
         print(f"  {v2_path.name}: {len(set(items))} merges applied")
     print(f"\nTotal Rule 10 merges applied: {total_applied}")
+
+    if total_applied:
+        tx_path = tx.commit()
+        print(f"\nTransaction log: {tx_path}")
+        print("To undo: python validators/rollback.py --latest")
+
     return 0
 
 

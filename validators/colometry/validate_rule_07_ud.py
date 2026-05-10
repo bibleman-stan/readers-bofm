@@ -22,7 +22,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from validators.parsing.conllu_query import load_conllu
-from validators.parsing.line_mapping import build_line_map, book_paths
+from validators.parsing.line_mapping import build_line_map_full, book_paths
 
 
 MODAL_AUX_LEMMAS = {
@@ -127,7 +127,8 @@ def is_moroni_gifts_list(book_id: str, line_num: int, v2_path: Path) -> bool:
 def scan_book(book_id: str) -> list[dict]:
     v2_path, conllu_path = book_paths(book_id)
     sentences = load_conllu(conllu_path)
-    line_map = build_line_map(v2_path, conllu_path)
+    line_map_full = build_line_map_full(v2_path, conllu_path)
+    line_map = {k: v[0] for k, v in line_map_full.items()}
 
     violations = []
     review = []
@@ -162,6 +163,11 @@ def scan_book(book_id: str) -> list[dict]:
             elif is_moroni_gifts_list(book_id, head_line, v2_path):
                 skip_reason = "Moroni-10-gifts-list-uniformity"
 
+            # Char-offset of the 'that' mark token within its v2-mine line.
+            # Applier splits before this column — no regex needed.
+            mark_line_col = line_map_full.get((sent.sent_id, mark.id))
+            split_col = mark_line_col[1] if mark_line_col is not None else None
+
             entry = {
                 "book": book_id,
                 "sent_id": sent.sent_id,
@@ -170,6 +176,7 @@ def scan_book(book_id: str) -> list[dict]:
                 "advcl_form": advcl.form,
                 "modal": modals[0].form,
                 "line": head_line,
+                "split_col": split_col,
                 "v2_path": str(v2_path),
             }
             if skip_reason:
