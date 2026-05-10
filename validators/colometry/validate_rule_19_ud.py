@@ -6,24 +6,25 @@ UD signature (per canon §3 / §5 Rule 19):
 
 Rule: cataphoric relative clauses SPLIT; anaphoric relatives MERGE.
   - Cataphoric: information-advancing — head is a forward-pointing generic
-    reference ("those who shall keep my commandments", "all things which are
+    reference ("those who shall keep my commandments", "all which are
     written"). BREAK before the relative.
   - Anaphoric: resolving — head is a specific named referent already
     established ("the brass plates which Lehi obtained"). MERGE.
 
-Heuristic for cataphoric vs anaphoric:
-  - Cataphoric signals: head lemma in GENERIC_HEADS (people, those, all, any,
-    one, whosoever, whatsoever, things, thing, everyone, anyone, whoever);
-    OR head token is a demonstrative pronoun (DET upos + cataphoric form).
-  - Anaphoric signals: head is a specific named referent (PROPN, or a
-    lower-frequency concrete noun not in the generic-head list).
-  - Ambiguous: everything else → REVIEW-REQUIRED.
+Heuristic (v2 — UPOS-gated):
+  - PROPN head → anaphoric (95% TP, audit-confirmed). STRONG-MERGE.
+  - PRON or DET head → cataphoric (80% TP, audit-confirmed). STRONG-SPLIT.
+    Common BofM examples: those, whoso, whatsoever, all, any, every, this, that.
+  - NOUN head → ambiguous. Cannot determine cataphoric vs anaphoric without
+    discourse tracking. Route to REVIEW-REQUIRED.
+    Rationale: audit showed most "things/words/men" cases are anaphoric, making
+    a GENERIC_HEADS lemma-list over-fire badly (was: ~1458 false STRONG-SPLITs).
+  - All other UPOS → REVIEW-REQUIRED with labelled reason.
 
 Violation classes:
-  STRONG-MERGE   — anaphoric, matrix and relative on DIFFERENT lines → merge.
-  STRONG-SPLIT   — cataphoric, matrix and relative on SAME line → split.
-  REVIEW-REQUIRED — ambiguous head type, or head/relative cross-line pattern
-                    does not match the canonical corrective.
+  STRONG-MERGE    — PROPN head, matrix and relative on DIFFERENT lines → merge.
+  STRONG-SPLIT    — PRON/DET head, matrix and relative on SAME line → split.
+  REVIEW-REQUIRED — NOUN head (discourse-ambiguous) or unclassified UPOS.
 
 NOTE: Rule 17 takes precedence. acl:relcl tokens where the head is in a
 ccomp position are NOT surfaced here (Rule 17 governs complement integrity).
@@ -40,26 +41,16 @@ from validators.parsing.conllu_query import load_conllu
 from validators.parsing.line_mapping import build_line_map, book_paths
 
 
-# Generic / forward-pointing head lemmas that signal cataphoric reading.
-# A relative clause restricting a generic head typically introduces new info.
-GENERIC_HEADS = {
-    "people", "person", "those", "all", "any", "one", "everyone", "everyone",
-    "anyone", "whoever", "whosoever", "whatever", "whatsoever", "thing",
-    "things", "he", "they", "she", "it", "we", "them", "others", "other",
-    "such", "same", "this", "these", "that", "those",
-    # BofM-specific generics
-    "soul", "souls", "man", "men", "woman", "women", "child", "children",
-    "nation", "nations", "generation", "generations", "place", "places",
-}
+# UPOS sets for direct dispatch (v2 heuristic).
+# The old GENERIC_HEADS lemma list caused ~1400+ false STRONG-SPLITs on NOUN
+# heads ("things", "words", "men", etc.) — audit confirmed most are anaphoric.
+# NOUN heads are now unconditionally routed to REVIEW-REQUIRED.
 
-# Demonstrative pronoun heads (DET upos, typically pointing forward):
-CATAPHORIC_UPOS = {"PRON"}          # head upos = PRON
-CATAPHORIC_DET_LEMMAS = {           # head upos = DET + one of these lemmas
-    "this", "these", "those", "that", "all", "any", "every", "such",
-    "whosoever", "whatsoever", "whoever", "whatever",
-}
+# PRON or DET head → cataphoric → STRONG-SPLIT (80% TP, audit-confirmed).
+# Typical BofM heads: those, whoso, whatsoever, all, any, every, this, that, these.
+CATAPHORIC_UPOS = {"PRON", "DET"}
 
-# Named / proper referents strongly signal anaphoric reading:
+# PROPN head → anaphoric → STRONG-MERGE (95% TP, audit-confirmed).
 ANAPHORIC_UPOS = {"PROPN"}
 
 BOOKS = [
@@ -69,34 +60,25 @@ BOOKS = [
 ]
 
 
-def classify_head(head_token) -> str:
-    """Return 'cataphoric', 'anaphoric', or 'ambiguous' based on head token."""
-    lemma = (head_token.lemma or "").lower()
+def classify_head(head_token) -> tuple[str, str | None]:
+    """Return (direction, reason) where direction ∈ {'cataphoric','anaphoric','ambiguous'}.
+
+    v2 heuristic: UPOS-gated only — no lemma list.
+      PROPN  → anaphoric  (95% TP)
+      PRON   → cataphoric (80% TP)
+      DET    → cataphoric (80% TP)
+      NOUN   → ambiguous  (cannot classify without discourse tracking)
+      other  → ambiguous  (unclassified)
+    """
     upos = head_token.upos
 
-    # Proper noun head → anaphoric
-    if upos in ANAPHORIC_UPOS:
-        return "anaphoric"
-
-    # Pronoun head → cataphoric (forward-pointing or generic reference)
-    if upos in CATAPHORIC_UPOS:
-        return "cataphoric"
-
-    # DET head with demonstrative lemma → cataphoric
-    if upos == "DET" and lemma in CATAPHORIC_DET_LEMMAS:
-        return "cataphoric"
-
-    # Lemma-based generic-head check
-    if lemma in GENERIC_HEADS:
-        return "cataphoric"
-
-    # Common nouns (NOUN) with specific referent are the ambiguous middle ground.
-    # Without discourse context we can't tell if the noun was already established.
-    # Route to REVIEW.
+    if upos in ANAPHORIC_UPOS:          # PROPN
+        return "anaphoric", None
+    if upos in CATAPHORIC_UPOS:         # PRON, DET
+        return "cataphoric", None
     if upos == "NOUN":
-        return "ambiguous"
-
-    return "ambiguous"
+        return "ambiguous", "noun-head-ambiguous-needs-discourse-context"
+    return "ambiguous", f"unclassified-head-upos-{upos}"
 
 
 def scan_book(book_id: str) -> list[dict]:
@@ -125,21 +107,23 @@ def scan_book(book_id: str) -> list[dict]:
                 continue
 
             on_same_line = (head_line == rel_line)
-            direction = classify_head(head)
+            direction, reason = classify_head(head)
 
-            # Determine bucket
+            # Determine bucket (v2: UPOS-gated dispatch)
             if direction == "cataphoric":
+                # PRON/DET head → cataphoric → split required
                 if on_same_line:
                     bucket = "STRONG-SPLIT"
                 else:
                     bucket = None   # already split, conforms → skip
             elif direction == "anaphoric":
+                # PROPN head → anaphoric → merge required
                 if not on_same_line:
                     bucket = "STRONG-MERGE"
                 else:
                     bucket = None   # already merged, conforms → skip
-            else:  # ambiguous
-                # Surface for review regardless of current state
+            else:
+                # NOUN head or unclassified UPOS → needs discourse context
                 bucket = "REVIEW-REQUIRED"
 
             if bucket is None:
@@ -157,6 +141,7 @@ def scan_book(book_id: str) -> list[dict]:
                 "rel_root_lemma": rel_root.lemma,
                 "rel_line": rel_line,
                 "direction": direction,
+                "reason": reason,
                 "bucket": bucket,
                 "sent_text": sent.text[:120],
             })
@@ -203,8 +188,9 @@ def main():
         print(f"--- {label} (up to {n} samples) ---")
         for r in items[:n]:
             print(f"  [{r['book']}] sent={r['sent_id']}")
+            reason_str = f"  reason={r['reason']}" if r.get("reason") else ""
             print(f"    head: {r['head_form']!r} (lemma={r['head_lemma']}, upos={r['head_upos']}) "
-                  f"line {r['head_line']}")
+                  f"line {r['head_line']}{reason_str}")
             print(f"    rel:  {r['rel_root_form']!r} (lemma={r['rel_root_lemma']}) "
                   f"line {r['rel_line']}")
             print(f"    text: {r['sent_text']}")

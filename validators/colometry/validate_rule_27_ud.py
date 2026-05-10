@@ -28,6 +28,19 @@ Detection strategy:
      contains 'insomuch' — treat as insomuch-that binding.
   4. Also check for a single 'mark' token with form/lemma 'insomuch that'
      (MWE tokenization).
+
+Word-count strategy (Cond 1):
+  Count only non-PUNCT tokens in the advcl subtree that sit on the SAME
+  v2-mine line as the 'insomuch' mark token, excluding the 'insomuch' and
+  'that' tokens themselves.  This mirrors the regex validator's approach of
+  measuring only the text after 'insomuch that' on the same v2 line, rather
+  than the full syntactic subtree which may span several continuation lines.
+
+  Two tokenization patterns occur in the corpus:
+    Sig-A: insomuch=ADV/advmod + that=SCONJ/mark, both children of advcl head.
+    Sig-B: insomuch=ADV/mark + that=SCONJ/fixed(head=insomuch), insomuch child
+           of advcl head.
+  Both are handled by _is_insomuch_that(); the word-count fix applies to both.
 """
 from __future__ import annotations
 
@@ -112,21 +125,58 @@ def _is_insomuch_that(sent, advcl_tok) -> bool:
     return False
 
 
-def _result_word_count(sent, advcl_tok) -> int:
-    """Count non-PUNCT tokens in the advcl subtree (the result clause)."""
-    return sum(1 for t in sent.subtree(advcl_tok) if t.upos != "PUNCT")
+# Forms to exclude from result-clause word count (the subordinator itself)
+_INSOMUCH_THAT_FORMS = {"insomuch", "that"}
 
 
-def _subject_continuity(sent, advcl_tok, matrix_tok) -> str:
+def _result_word_count(sent, advcl_tok, line_map: dict, sent_id: str,
+                       mark_line: int) -> int:
+    """Count result-clause content words.
+
+    Counts non-PUNCT tokens in the advcl subtree that sit on the *same*
+    v2-mine line as the 'insomuch' mark token (mark_line), excluding the
+    'insomuch' and 'that' tokens themselves.
+
+    Rationale: the regex validator measures only the text after 'insomuch that'
+    on the same v2-mine line (line N).  The full syntactic subtree spans
+    continuation lines that the regex never sees, inflating the UD count.
+    Restricting to mark_line tokens makes Cond 1 comparable across both
+    detectors.
+    """
+    count = 0
+    for t in sent.subtree(advcl_tok):
+        if t.upos == "PUNCT":
+            continue
+        if (t.form or "").lower() in _INSOMUCH_THAT_FORMS:
+            continue
+        if (t.lemma or "").lower() in _INSOMUCH_THAT_FORMS:
+            continue
+        if line_map.get((sent_id, t.id)) != mark_line:
+            continue
+        count += 1
+    return count
+
+
+def _subject_continuity(sent, advcl_tok, matrix_tok,
+                        line_map: dict | None = None,
+                        sent_id: str | None = None,
+                        mark_line: int | None = None) -> str:
     """
     Returns 'continuous', 'shift', or 'ambiguous'.
 
     Checks whether the result clause shares a subject with the matrix.
     Strategy: look for nsubj of advcl_tok; compare to nsubj of matrix.
     Fall back to first-word heuristic from the subtree when no explicit nsubj.
+
+    When line_map / sent_id / mark_line are supplied, the heuristic fallback
+    restricts to tokens on mark_line only.  This prevents matrix-line discourse
+    particles (e.g. "yea," attached as advcl children) from being mistaken for
+    the first word of the result clause.
     """
     # Find explicit nsubj of result clause
     result_subjects = sent.dependents_of(advcl_tok, deprel="nsubj")
+    # Also accept nsubj:pass (passive)
+    result_subjects += sent.dependents_of(advcl_tok, deprel="nsubj:pass")
 
     if result_subjects:
         subj = result_subjects[0]
@@ -139,11 +189,20 @@ def _subject_continuity(sent, advcl_tok, matrix_tok) -> str:
     # No explicit nsubj → check first word of subtree (heuristic)
     subtree = sorted(sent.subtree(advcl_tok), key=lambda t: t.id)
     # Skip the 'insomuch' / 'that' mark tokens at the front
+    # Also restrict to mark_line if we have the mapping (avoids pre-mark
+    # discourse tokens like "yea," that attach to advcl but sit on the
+    # matrix line)
+    def _on_mark_line(t) -> bool:
+        if line_map is None or sent_id is None or mark_line is None:
+            return True
+        return line_map.get((sent_id, t.id)) == mark_line
+
     content_tokens = [
         t for t in subtree
         if "insomuch" not in (t.lemma or "").lower()
         and (t.lemma or "").lower() != "that"
         and t.upos != "PUNCT"
+        and _on_mark_line(t)
     ]
     if not content_tokens:
         return "ambiguous"
@@ -192,11 +251,15 @@ def scan_book(book_id: str) -> list[dict]:
                 continue
 
             # Line of the insomuch-that mark token (first mark in subtree)
+            # Sig-A: insomuch is advmod child of advcl; Sig-B: insomuch is mark.
             marks = sent.dependents_of(advcl_tok, deprel="mark")
-            # Find the 'insomuch' mark token (leftmost)
-            insomuch_marks = [m for m in marks
-                              if "insomuch" in (m.lemma or "").lower()
-                              or "insomuch" in (m.form or "").lower()]
+            advmods = sent.dependents_of(advcl_tok, deprel="advmod")
+            # Find the 'insomuch' token (leftmost among mark + advmod children)
+            insomuch_marks = [
+                m for m in (marks + advmods)
+                if "insomuch" in (m.lemma or "").lower()
+                or "insomuch" in (m.form or "").lower()
+            ]
             if not insomuch_marks:
                 # fallback to first mark
                 insomuch_marks = marks if marks else []
@@ -214,12 +277,17 @@ def scan_book(book_id: str) -> list[dict]:
             # or MERGED (mark on same line as matrix)
             state = "SPLIT" if mark_line != matrix_line else "MERGED"
 
-            # Condition 1
-            rc_words = _result_word_count(sent, advcl_tok)
+            # Condition 1: count only same-line tokens (excluding insomuch/that)
+            rc_words = _result_word_count(
+                sent, advcl_tok, line_map, sent.sent_id, mark_line
+            )
             cond1 = rc_words <= 8
 
-            # Condition 2
-            subj = _subject_continuity(sent, advcl_tok, matrix_tok)
+            # Condition 2: pass line context so heuristic ignores pre-mark tokens
+            subj = _subject_continuity(
+                sent, advcl_tok, matrix_tok,
+                line_map=line_map, sent_id=sent.sent_id, mark_line=mark_line,
+            )
             cond2_holds = (subj == "continuous")
             cond2_ambiguous = (subj == "ambiguous")
 

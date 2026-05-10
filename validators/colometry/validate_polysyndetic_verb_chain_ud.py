@@ -131,6 +131,58 @@ def shares_head_aux(sent: Sentence, head: Token, member: Token) -> bool:
     return False
 
 
+def has_heterogeneous_aux(sent: Sentence, head: Token, members: list[Token]) -> bool:
+    """True when the chain is heterogeneous in auxiliary — i.e. the head and
+    at least one member carry *different* auxiliaries, meaning they are
+    separate predications that happen to be coordinated rather than a genuine
+    polysyndetic series sharing one predicate frame.
+
+    Decision matrix (head_aux / member_aux):
+        both bare-finite (no aux)  → homogeneous — False
+        head has aux, member bare  → Justification 1 territory (member shares
+                                     head's aux elliptically) — False
+        head bare, member has aux  → heterogeneous — True
+        both have aux, SAME lemma  → homogeneous — False
+        both have aux, DIFF lemma  → heterogeneous — True
+
+    Examples that should return True (route to REVIEW):
+        "had fled … were slain … were taken"  — had ≠ were
+        "brought … were smitten … were driven" — bare ≠ were
+
+    Examples that should return False (leave as STRONG):
+        "took + bound + carried"              — all bare-finite
+        "shall be scattered, and smitten"     — head has shall+be, member bare
+        "did fight, and quarrel, and vex"     — head has did, members bare
+    """
+    head_aux_lemmas = frozenset(t.lemma.lower() for t in sent.aux_of(head))
+
+    for member in members:
+        member_aux_lemmas = frozenset(t.lemma.lower() for t in sent.aux_of(member))
+
+        # Both bare-finite: homogeneous
+        if not head_aux_lemmas and not member_aux_lemmas:
+            continue
+
+        # Head has aux, member bare: Justification 1 ellipsis — homogeneous
+        if head_aux_lemmas and not member_aux_lemmas:
+            continue
+
+        # Member has aux but head is bare: heterogeneous
+        if not head_aux_lemmas and member_aux_lemmas:
+            return True
+
+        # Both have aux — check whether they overlap
+        if head_aux_lemmas and member_aux_lemmas:
+            # If the member's aux set is a subset of the head's, homogeneous
+            # (e.g. head: {shall, be}, member: {be} — both passive)
+            if member_aux_lemmas <= head_aux_lemmas:
+                continue
+            # Otherwise the member carries a distinct aux: heterogeneous
+            return True
+
+    return False
+
+
 def find_chains(sent: Sentence) -> list[tuple[Token, list[Token]]]:
     """Return [(head, members), ...] for chains where head is VERB and
     has ≥2 polysyndetic VERB conj members (chain length ≥3 total)."""
@@ -173,6 +225,23 @@ def scan_book(book_id: str) -> tuple[list[dict], list[dict]]:
             # the second member. Rule 12 protects WITHIN a single AUX+verb
             # predication ("he had / done X" — wrong), not BETWEEN
             # coordinate members of a polysyndetic chain. Filter removed.
+
+            # Heterogeneous-AUX filter (2026-05-10): chains where the head
+            # and at least one member carry *different* auxiliaries are not
+            # a genuine polysyndetic series — they are separate predications
+            # coordinated syntactically. Route to REVIEW rather than STRONG.
+            if has_heterogeneous_aux(sent, head, members):
+                review.append({
+                    "book": book_id,
+                    "sent_id": sent.sent_id,
+                    "head_form": head.form,
+                    "head_lemma": head.lemma,
+                    "head_line": line_map.get((sent.sent_id, head.id)),
+                    "chain_members": [(m.form, m.lemma) for m in members],
+                    "skip_reason": "heterogeneous-aux-chain",
+                    "v2_path": str(v2_path),
+                })
+                continue
 
             # Collect (token, line) for head + all members
             chain_tokens = [head] + members
@@ -262,12 +331,17 @@ def main() -> int:
         if args.verbose:
             print(f"{bid}: {len(fs)} STRONG, {len(rev)} REVIEW")
 
+    m1_review = [r for r in all_review if r.get("skip_reason") == "M1-bonded-pair-merge-protected"]
+    hetaux_review = [r for r in all_review if r.get("skip_reason") == "heterogeneous-aux-chain"]
+
     print("=" * 72)
     print("Polysyndetic verb-chain UD-query (N>=3 chain with shared-line break missing)")
     print("=" * 72)
-    print(f"Books scanned:           {len(book_ids)}")
-    print(f"STRONG-SPLIT-CANDIDATE:  {len(all_findings)}")
-    print(f"REVIEW (M1 protected):   {len(all_review)}")
+    print(f"Books scanned:                    {len(book_ids)}")
+    print(f"STRONG-SPLIT-CANDIDATE:           {len(all_findings)}")
+    print(f"REVIEW (M1 protected):            {len(m1_review)}")
+    print(f"REVIEW (heterogeneous-aux-chain): {len(hetaux_review)}")
+    print(f"REVIEW (total):                   {len(all_review)}")
     print()
 
     for f in all_findings[:25]:
@@ -278,6 +352,15 @@ def main() -> int:
               f"shared on line {f['shared_line']}; split before '{f['split_before_form']}'")
     if len(all_findings) > 25:
         print(f"  ... +{len(all_findings) - 25} more")
+
+    if hetaux_review:
+        print()
+        print("REVIEW — heterogeneous-aux-chain:")
+        for r in hetaux_review:
+            chain_str = " + ".join(form for form, _ in r["chain_members"])
+            print(f"  [{r['book']}] sent={r['sent_id']} "
+                  f"head='{r['head_form']}' (line {r.get('head_line', '?')}) "
+                  f"+ chain [{chain_str}] — {r['skip_reason']}")
 
     print(f"RESULT: violations={len(all_findings)} strong={len(all_findings)} review={len(all_review)}")
     sys.exit(1 if all_findings else 0)

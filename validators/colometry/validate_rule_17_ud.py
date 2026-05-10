@@ -22,6 +22,7 @@ Comparison target: validators/colometry/validate_rule_17_complement_integrity.py
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -30,6 +31,80 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from validators.parsing.conllu_query import load_conllu
 from validators.parsing.line_mapping import build_line_map, book_paths
+
+
+# ---------------------------------------------------------------------------
+# Vocative detection — Rule 15 collision guard
+# ---------------------------------------------------------------------------
+# Conservative seed matching canon Rule 15 true-vocative patterns.
+# We only test the MATRIX LINE (head_line), not the ccomp body.  A vocative
+# on the matrix line would — after the Rule 17 merge — sit inline in the
+# merged line, violating Rule 15's "vocative earns its own line" prescription.
+#
+# Pattern design mirrors the VOCATIVE_PHRASES list in validate_rule_15_vocative.py
+# but expressed as compiled regexes for direct line-level matching.
+
+VOCATIVE_PATTERNS = [
+    # "O Lord", "O God", "O Father", "O ye ...", "O my ...", "O house of Israel"
+    re.compile(r"\bO\s+(?:Lord|God|Father|ye|my|house)\b", re.IGNORECASE),
+    # Comma-preceded "my <vocative-noun>" mid-line: ", my son", ", my brethren", etc.
+    re.compile(
+        r",\s*my\s+(?:son|sons|brethren|beloved|people|father|friend|friends|"
+        r"kindred|children|daughter|daughters|brother|brothers|sister|sisters|"
+        r"fellow\s+servant|fellow\s+servants|fellow\s+labor)s?\b",
+        re.IGNORECASE,
+    ),
+    # Line-initial "My <vocative-noun>" (address opening, not possessive object)
+    re.compile(
+        r"^\s*My\s+(?:son|sons|brethren|beloved|people|friend|friends|"
+        r"kindred|children|daughter|daughters|brother|brothers|sister|sisters)\b",
+        re.IGNORECASE,
+    ),
+]
+
+# NP-object disqualifier: if the matrix line contains one of these verbs
+# immediately before "my ...", the phrase is a syntactic object, not a vocative.
+# We apply this only when no O-vocative is present (O-vocatives are never objects).
+_NP_OBJECT_VERBS_RE = re.compile(
+    r"\b(unto|with|of|among|to|for|by|upon|against|"
+    r"spake|preach(?:ed)?|teach|teach(?:ed)?|sent|commanded|exhort(?:ed)?|"
+    r"cried unto|went unto|went to)\s+my\b",
+    re.IGNORECASE,
+)
+
+
+def is_vocative_on_matrix_line(v2_path: Path, head_line: int) -> bool:
+    """Return True if the matrix line (head_line) contains a true vocative.
+
+    Reads the single line at head_line from v2_path.  Applies the VOCATIVE_PATTERNS
+    regex battery.  If an O-vocative fires, returns True immediately (O-vocatives
+    are never NP-objects).  For "my <noun>" patterns, additionally checks the
+    NP-object disqualifier before confirming.
+    """
+    try:
+        with open(v2_path, encoding="utf-8") as fh:
+            for i, raw in enumerate(fh, start=1):
+                if i == head_line:
+                    line = raw.rstrip("\n")
+                    break
+            else:
+                return False
+    except OSError:
+        return False
+
+    # O-vocative patterns (INTJ "O" + noun-phrase) are never NP-objects.
+    if VOCATIVE_PATTERNS[0].search(line):
+        return True
+
+    # "my <noun>" mid-line (comma-preceded) or line-initial — check disqualifier.
+    for pat in VOCATIVE_PATTERNS[1:]:
+        if pat.search(line):
+            # Disqualify if a transitive/prepositional verb precedes "my"
+            if _NP_OBJECT_VERBS_RE.search(line):
+                return False
+            return True
+
+    return False
 
 
 # Governing-verb lemmas, by class. Matches canon §5 Rule 17.
@@ -71,6 +146,7 @@ def categorize(sent, ccomp_root, head, head_line, mark_line, v2_path) -> tuple[s
     """Return (bucket, reason). Buckets: STRONG-MERGE-CANDIDATE or REVIEW-REQUIRED.
 
     Filters per audit findings (2026-05-10):
+    0. Vocative on matrix line → Rule 15 collision (highest priority)
     1. Directive-petition matrix (cry/pray/beseech/ask/seek) + modal-aux on
        ccomp body → ambiguous content vs purpose
     2. Speech-indirect long-complement: matrix in {say, speak, tell, declare}
@@ -78,6 +154,12 @@ def categorize(sent, ccomp_root, head, head_line, mark_line, v2_path) -> tuple[s
     3. Multi-line gap with intervening polysyndetic series
     4. Coordinate that-series (N=2 adjudication territory)
     """
+    # Filter 0 (highest priority): vocative on matrix line → Rule 15 collision.
+    # Merging would fold the vocative inline, violating Rule 15's prescriptive
+    # "vocative earns its own line" requirement.
+    if is_vocative_on_matrix_line(Path(v2_path), head_line):
+        return ("REVIEW-REQUIRED", "vocative-on-matrix-line-Rule-15-collision")
+
     # Filter 1: directive-petition + modal aux
     if head.lemma in DIRECTIVE_PETITION:
         for aux in sent.aux_of(ccomp_root):
