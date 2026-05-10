@@ -51,24 +51,27 @@ def _v2_content_lines(v2_path: Path) -> list[tuple[int, str]]:
     return out
 
 
-def build_line_map(
+def build_line_map_full(
     v2_mine_path: Path,
     conllu_path: Path,
     *,
     verbose: bool = False,
-) -> dict[tuple[str, int], int]:
-    """Return {(sent_id, token_id): v2_mine_line_num} for every parsed token.
+) -> dict[tuple[str, int], tuple[int, int]]:
+    """Return {(sent_id, token_id): (v2_line_num, col_offset)} for every
+    parsed token.
 
-    Tokens that cannot be aligned (FORM not found forward of cursor) are
-    omitted from the dict; a warning is printed to stderr.
+    `col_offset` is the character offset of the token's first character
+    *within* its v2-mine line. Appliers can use this to know exactly where
+    to insert a line break (split before col_offset → ATU break exactly
+    before the token).
+
+    Tokens that cannot be aligned are omitted; warning to stderr if verbose.
     """
     content = _v2_content_lines(v2_mine_path)
 
     # Build a flat character stream with line-start offsets recorded.
-    # Each content line is followed by " " (single space) so token boundaries
-    # are preserved across line breaks.
     full_text_parts: list[str] = []
-    line_starts: list[tuple[int, int]] = []  # (v2_line_num, char_offset)
+    line_starts: list[tuple[int, int]] = []  # (v2_line_num, char_offset_in_full_text)
     cursor = 0
     for line_num, text in content:
         line_starts.append((line_num, cursor))
@@ -77,22 +80,23 @@ def build_line_map(
         cursor += len(text) + 1
     full_text = "".join(full_text_parts)
 
-    # Helper: which line is the character at `idx` on? Binary search on
-    # line_starts so it's correct under non-monotonic anchor jumps.
     import bisect
-    char_offsets = [c for _, c in line_starts]
+    line_offsets = [c for _, c in line_starts]
 
-    def line_at(idx: int) -> int:
-        i = bisect.bisect_right(char_offsets, idx) - 1
+    def line_and_col(idx: int) -> tuple[int, int]:
+        """Return (v2_line_num, col_offset_within_line) for char position idx."""
+        i = bisect.bisect_right(line_offsets, idx) - 1
         if i < 0:
             i = 0
-        return line_starts[i][0]
+        line_num, line_start_offset = line_starts[i]
+        col_offset = idx - line_start_offset
+        return (line_num, col_offset)
 
     sentences = load_conllu(conllu_path)
 
-    pos = 0  # cursor in full_text for token-level alignment
-    prev_anchor = 0  # previous sentence's anchor, for forward search
-    out: dict[tuple[str, int], int] = {}
+    pos = 0
+    prev_anchor = 0
+    out: dict[tuple[str, int], tuple[int, int]] = {}
     misses = 0
     anchor_misses = 0
 
@@ -100,15 +104,10 @@ def build_line_map(
         return " ".join(s.split())
 
     for sent in sentences:
-        # Anchor: find the sentence's # text in full_text. This bounds drift
-        # to within one sentence's span. Without anchoring, common short tokens
-        # (the, and, of) accumulate mismatches across the whole book.
         sent_text_norm = normalize(sent.text)
         if sent_text_norm:
             anchor_key = sent_text_norm[:60] if len(sent_text_norm) >= 60 else sent_text_norm
-            # Try forward of previous anchor first (sentences are in reading order)
             anchor_idx = full_text.find(anchor_key, prev_anchor)
-            # Fall back to global search if not found ahead
             if anchor_idx < 0:
                 anchor_idx = full_text.find(anchor_key)
             if anchor_idx >= 0:
@@ -129,7 +128,7 @@ def build_line_map(
                     print(f"[miss] sent={sent.sent_id} tok={tok.id} form={form!r}",
                           file=sys.stderr)
                 continue
-            out[(sent.sent_id, tok.id)] = line_at(idx)
+            out[(sent.sent_id, tok.id)] = line_and_col(idx)
             pos = idx + len(form)
 
     if (misses or anchor_misses) and verbose:
@@ -138,6 +137,21 @@ def build_line_map(
               f"(of {total} tokens, {len(sentences)} sentences)", file=sys.stderr)
 
     return out
+
+
+def build_line_map(
+    v2_mine_path: Path,
+    conllu_path: Path,
+    *,
+    verbose: bool = False,
+) -> dict[tuple[str, int], int]:
+    """Backward-compat wrapper: return {(sent_id, token_id): v2_line_num}.
+
+    For new appliers that need char-offset precision, use
+    build_line_map_full() instead.
+    """
+    full = build_line_map_full(v2_mine_path, conllu_path, verbose=verbose)
+    return {key: line_col[0] for key, line_col in full.items()}
 
 
 def book_paths(book_id: str) -> tuple[Path, Path]:

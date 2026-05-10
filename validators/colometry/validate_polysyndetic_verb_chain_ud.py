@@ -35,7 +35,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from validators.parsing.conllu_query import load_conllu, Sentence, Token
-from validators.parsing.line_mapping import build_line_map, book_paths
+from validators.parsing.line_mapping import build_line_map, build_line_map_full, book_paths
 
 
 COORDINATORS = {"and", "or", "nor"}
@@ -205,7 +205,8 @@ def find_chains(sent: Sentence) -> list[tuple[Token, list[Token]]]:
 def scan_book(book_id: str) -> tuple[list[dict], list[dict]]:
     v2_path, conllu_path = book_paths(book_id)
     sentences = load_conllu(conllu_path)
-    line_map = build_line_map(v2_path, conllu_path)
+    line_map_full = build_line_map_full(v2_path, conllu_path)
+    line_map = {k: v[0] for k, v in line_map_full.items()}
 
     findings: list[dict] = []
     review: list[dict] = []
@@ -293,6 +294,18 @@ def scan_book(book_id: str) -> tuple[list[dict], list[dict]]:
                     later = shared_sorted[1:]
                     split_before = later[0]
 
+                # Find the cc token (the "and"/"or"/"nor") that introduces
+                # split_before in the chain — this is where the line break
+                # should go (per Rule 9: split BEFORE conjunction so it leads
+                # the new line). Char offset of the cc token gives precise
+                # split position.
+                cc_deps = sent.dependents_of(split_before, deprel="cc")
+                split_before_token = cc_deps[0] if cc_deps else split_before
+                split_before_line_col = line_map_full.get(
+                    (sent.sent_id, split_before_token.id)
+                )
+                split_col = split_before_line_col[1] if split_before_line_col else None
+
                 findings.append({
                     "book": book_id,
                     "sent_id": sent.sent_id,
@@ -302,6 +315,7 @@ def scan_book(book_id: str) -> tuple[list[dict], list[dict]]:
                     "chain_members": [(m.form, m.lemma) for m in members],
                     "shared_line": ln,
                     "shared_tokens": [(t.form, t.lemma) for t in shared_sorted],
+                    "split_col": split_col,
                     "split_before_form": split_before.form,
                     "split_before_lemma": split_before.lemma,
                     "v2_path": str(v2_path),

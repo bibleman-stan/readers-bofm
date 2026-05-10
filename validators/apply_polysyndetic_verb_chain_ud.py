@@ -1,8 +1,14 @@
 """
 Apply polysyndetic verb-chain STRONG-SPLIT-CANDIDATE findings.
 
-For each finding: split before 'and|or|nor <member_form>' on the shared line,
-where member_form is the conj VERB whose split should be inserted.
+T1.1 (2026-05-10): now uses char-offset positions emitted directly by
+the detector via build_line_map_full. No more regex-position-finder
+ambiguity — the detector knows the exact column where the cc token
+("and"/"or"/"nor") starts; the applier splits before that column.
+
+The 32 cases that previously skipped as "no-unique-and-X" (multiple
+matches on the line) now resolve trivially because the detector
+distinguishes them by token id, not surface form.
 
 Re-runs the detector internally for fresh line numbers.
 
@@ -17,7 +23,6 @@ can be reversed in 30 seconds if a pre-commit regression check fires:
 """
 from __future__ import annotations
 
-import re
 import sys
 from pathlib import Path
 
@@ -28,23 +33,6 @@ from validators.colometry.validate_polysyndetic_verb_chain_ud import (  # noqa: 
     scan_book, BOOKS,
 )
 from validators.tx_log import TxLog  # noqa: E402
-
-
-COORDINATORS = ["and", "or", "nor"]
-
-
-def find_split_position(line: str, member_form: str) -> int | None:
-    """Find char index where 'and|or|nor <member_form>' begins on the line.
-    Returns None if not exactly one match (ambiguous or absent)."""
-    for coord in COORDINATORS:
-        pattern = re.compile(
-            rf"\b{coord}\s+{re.escape(member_form)}\b",
-            re.IGNORECASE,
-        )
-        matches = list(pattern.finditer(line))
-        if len(matches) == 1:
-            return matches[0].start()
-    return None
 
 
 def main() -> int:
@@ -62,20 +50,24 @@ def main() -> int:
             total_strong += 1
             v2_path = Path(f["v2_path"])
             line_idx = f["shared_line"] - 1
+            split_col = f.get("split_col")
+            if split_col is None:
+                skipped.append(
+                    (book_id, f["shared_line"], "no-split-col-from-detector")
+                )
+                continue
             with open(v2_path, encoding="utf-8") as fh:
                 lines = fh.read().split("\n")
             if line_idx < 0 or line_idx >= len(lines):
                 skipped.append((book_id, f["shared_line"], "out-of-range"))
                 continue
-            line = lines[line_idx]
-            split_at = find_split_position(line, f["split_before_form"])
-            if split_at is None:
+            if split_col == 0:
+                # Already at line-start; no break needed (defensive)
                 skipped.append(
-                    (book_id, f["shared_line"],
-                     f"no-unique-and-{f['split_before_form']!r}")
+                    (book_id, f["shared_line"], "split-col-0-already-at-start")
                 )
                 continue
-            by_file.setdefault(v2_path, []).append((line_idx, split_at))
+            by_file.setdefault(v2_path, []).append((line_idx, split_col))
 
     plan_count = sum(len(items) for items in by_file.values())
     print(f"Polysyndetic verb-chain STRONG: {total_strong}")
