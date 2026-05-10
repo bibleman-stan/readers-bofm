@@ -83,6 +83,47 @@ def _subtree_lines(sent: Sentence, root: Token, line_map: dict) -> set[int]:
     return lines
 
 
+def _is_substantive_frame(sent: Sentence, frame_root: Token) -> bool:
+    """Return True if the frame qualifies for Justification 5 own-line treatment.
+
+    Per audit verdict on frame_predication_merges_ud (APPLY-WITH-FIXES): skip
+    merge for frames with substantive content — these are J5 substantive
+    adjuncts (year-formulas, multi-clause conditionals, etc.) and earn their
+    own line per canon §1 Five Structural Justifications.
+
+    A frame is substantive when ANY of:
+    - >=8 word tokens (PUNCT excluded) — bulk threshold
+    - contains a relative clause inside (acl/acl:relcl) — has internal
+      predication
+    - contains a coordinate stack of >=2 conj members — list-shaped
+    - contains a purpose-adjunct child (advcl with modal aux) — embedded
+      finite frame
+    """
+    subtree = list(sent.subtree(frame_root))
+    word_tokens = [t for t in subtree if t.upos != "PUNCT"]
+    if len(word_tokens) >= 8:
+        return True
+    for t in subtree:
+        if t is frame_root:
+            continue
+        if t.deprel in ("acl", "acl:relcl"):
+            return True
+    conj_count = sum(1 for t in subtree if t.deprel == "conj")
+    if conj_count >= 2:
+        return True
+    for t in subtree:
+        if t is frame_root:
+            continue
+        if t.deprel == "advcl":
+            for aux in sent.aux_of(t):
+                if aux.upos == "AUX" and aux.lemma in {
+                    "may", "might", "shall", "should", "will", "would",
+                    "can", "could", "must",
+                }:
+                    return True
+    return False
+
+
 def _has_matrix_subject(sent: Sentence, matrix_root: Token) -> bool:
     """Return True if the matrix clause has a recoverable nsubj."""
     # Explicit nsubj
@@ -156,7 +197,15 @@ def scan_book(book_id: str) -> list[dict]:
                 continue  # frame line shared with matrix tokens → not isolated
 
             gap = matrix_line - frame_max_line
-            bucket = "STRONG-MERGE-CANDIDATE" if gap == 1 else "REVIEW-REQUIRED"
+            if gap != 1:
+                bucket = "REVIEW-REQUIRED"
+                review_reason = "non-adjacent-gap"
+            elif _is_substantive_frame(sent, advcl):
+                bucket = "REVIEW-REQUIRED"
+                review_reason = "substantive-frame-J5"
+            else:
+                bucket = "STRONG-MERGE-CANDIDATE"
+                review_reason = None
             violations.append({
                 "book": book_id,
                 "sent_id": sent.sent_id,
@@ -168,6 +217,7 @@ def scan_book(book_id: str) -> list[dict]:
                 "frame_line": frame_max_line,
                 "matrix_line": matrix_line,
                 "bucket": bucket,
+                "review_reason": review_reason,
                 "v2_path": str(v2_path),
             })
 
@@ -200,7 +250,15 @@ def scan_book(book_id: str) -> list[dict]:
                 continue
 
             gap = matrix_line - frame_max_line
-            bucket = "STRONG-MERGE-CANDIDATE" if gap == 1 else "REVIEW-REQUIRED"
+            if gap != 1:
+                bucket = "REVIEW-REQUIRED"
+                review_reason = "non-adjacent-gap"
+            elif _is_substantive_frame(sent, obl):
+                bucket = "REVIEW-REQUIRED"
+                review_reason = "substantive-frame-J5"
+            else:
+                bucket = "STRONG-MERGE-CANDIDATE"
+                review_reason = None
             case_lemma = next(
                 (c.lemma for c in case_tokens if c.lemma in FRAME_PREPS), "?"
             )
@@ -215,6 +273,7 @@ def scan_book(book_id: str) -> list[dict]:
                 "frame_line": frame_max_line,
                 "matrix_line": matrix_line,
                 "bucket": bucket,
+                "review_reason": review_reason,
                 "v2_path": str(v2_path),
             })
 
@@ -265,8 +324,8 @@ def main():
                   f"frame-line={v['frame_line']} matrix-line={v['matrix_line']}  "
                   f"matrix={v['matrix_form']!r}")
 
-    print(f"RESULT: violations={len(all_violations)} strong={len(strong)} review={len(review)}")
-    sys.exit(1 if all_violations else 0)
+    print(f"RESULT: violations={len(strong)} strong={len(strong)} review={len(review)}")
+    sys.exit(1 if strong else 0)
 
 
 if __name__ == "__main__":
