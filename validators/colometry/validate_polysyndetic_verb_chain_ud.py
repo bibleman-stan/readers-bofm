@@ -165,21 +165,14 @@ def scan_book(book_id: str) -> tuple[list[dict], list[dict]]:
             if head.lemma in STATIVE_HEAD_LEMMAS:
                 continue
 
-            # Filter (2026-05-10, Rule 12 collision): if any conj member
-            # shares the head's auxiliary (head has aux, member has no own
-            # aux), splitting would orphan the AUX from the participle.
-            # Rule 12 (don't split AUX from its main verb) takes precedence
-            # over polysyndetic Justification 1 in this case.
-            if any(shares_head_aux(sent, head, m) for m in members):
-                review.append({
-                    "book": book_id,
-                    "sent_id": sent.sent_id,
-                    "head_form": head.form,
-                    "head_lemma": head.lemma,
-                    "skip_reason": "shared-aux-Rule-12-precedence",
-                    "v2_path": str(v2_path),
-                })
-                continue
+            # CORRECTION (2026-05-10, Stan): the prior shared-AUX filter was
+            # over-conservative. Justification 1 explicitly licenses splits
+            # in chains where the predicate (including AUX) is recoverable
+            # from parallel structure: "shall be scattered, and smitten" →
+            # split each member; the reader carries "shall be" mentally to
+            # the second member. Rule 12 protects WITHIN a single AUX+verb
+            # predication ("he had / done X" — wrong), not BETWEEN
+            # coordinate members of a polysyndetic chain. Filter removed.
 
             # Collect (token, line) for head + all members
             chain_tokens = [head] + members
