@@ -67,19 +67,45 @@ def lemma_class(lemma: str) -> str:
     return "unknown"
 
 
-def categorize(sent, ccomp_root, head) -> str:
-    """Return 'STRONG-MERGE-CANDIDATE' or 'REVIEW-REQUIRED'.
+def categorize(sent, ccomp_root, head, head_line, mark_line, v2_path) -> tuple[str, str | None]:
+    """Return (bucket, reason). Buckets: STRONG-MERGE-CANDIDATE or REVIEW-REQUIRED.
 
-    REVIEW-REQUIRED when matrix is a directive-petition verb AND the
-    ccomp body has a modal aux — that combination reads ambiguously
-    between content and purpose, and may indicate an advcl-purpose
-    mistagged as ccomp by the LLM annotator.
+    Filters per audit findings (2026-05-10):
+    1. Directive-petition matrix (cry/pray/beseech/ask/seek) + modal-aux on
+       ccomp body → ambiguous content vs purpose
+    2. Speech-indirect long-complement: matrix in {say, speak, tell, declare}
+       AND ccomp body has ≥8 word tokens (canon §5 Rule 17 exception)
+    3. Multi-line gap with intervening polysyndetic series
+    4. Coordinate that-series (N=2 adjudication territory)
     """
+    # Filter 1: directive-petition + modal aux
     if head.lemma in DIRECTIVE_PETITION:
         for aux in sent.aux_of(ccomp_root):
             if aux.lemma in MODAL_AUX_LEMMAS:
-                return "REVIEW-REQUIRED"
-    return "STRONG-MERGE-CANDIDATE"
+                return ("REVIEW-REQUIRED", "directive-petition+modal-aux")
+
+    # Filter 2: speech-indirect long-complement exception (canon §5 Rule 17)
+    if head.lemma in {"say", "speak", "tell", "declare"}:
+        body_tokens = sent.subtree(ccomp_root)
+        word_count = sum(1 for t in body_tokens if t.upos != "PUNCT")
+        if word_count >= 8:
+            return ("REVIEW-REQUIRED", "speech-long-complement")
+
+    # Filter 3: multi-line gap. Mechanical merge across gap>1 risks
+    # collapsing intermediate lines that may carry independent thought
+    # units (parenthetical adjuncts, polysyndetic series members,
+    # anaphoric resumptions). Route gap>1 to REVIEW unconditionally.
+    if abs(mark_line - head_line) > 1:
+        return ("REVIEW-REQUIRED", "multi-line-gap")
+
+    # Filter 4: coordinate that-series (N=2 adjudication)
+    for child in sent.dependents_of(ccomp_root, deprel="conj"):
+        if sent.mark_of(child) is not None:
+            child_mark = sent.mark_of(child)
+            if child_mark and child_mark.lemma == "that":
+                return ("REVIEW-REQUIRED", "coordinate-that-series-N2")
+
+    return ("STRONG-MERGE-CANDIDATE", None)
 
 
 # All 15 BofM books in the corpus.
@@ -118,6 +144,7 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
                 continue
             if head_line == mark_line:
                 continue  # already merged; not a violation
+            bucket, reason = categorize(sent, ccomp, head, head_line, mark_line, v2_path)
             violations.append({
                 "book": book_id,
                 "sent_id": sent.sent_id,
@@ -128,7 +155,8 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
                 "head_line": head_line,
                 "mark_line": mark_line,
                 "v2_path": str(v2_path),
-                "bucket": categorize(sent, ccomp, head),
+                "bucket": bucket,
+                "review_reason": reason,
             })
     return violations
 
@@ -161,6 +189,14 @@ def main():
     review = [v for v in all_violations if v["bucket"] == "REVIEW-REQUIRED"]
     print(f"  STRONG-MERGE-CANDIDATE: {len(strong)}")
     print(f"  REVIEW-REQUIRED:        {len(review)}")
+    if review:
+        by_reason: dict[str, int] = {}
+        for v in review:
+            by_reason[v.get("review_reason") or "directive-petition+modal-aux"] = (
+                by_reason.get(v.get("review_reason") or "directive-petition+modal-aux", 0) + 1
+            )
+        for reason, n in sorted(by_reason.items()):
+            print(f"    {reason}: {n}")
     print()
 
     if all_violations:
