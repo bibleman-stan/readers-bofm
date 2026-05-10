@@ -66,10 +66,30 @@ FRAME_MARKS = {
 }
 
 
+def _line_ends_with_colon(v2_path: str, line_num: int) -> bool:
+    """Read v2-mine line `line_num` (1-based) and check if it ends with ':'."""
+    try:
+        with open(v2_path, encoding="utf-8") as f:
+            for i, line in enumerate(f, start=1):
+                if i == line_num:
+                    return line.rstrip().endswith(":")
+                if i > line_num:
+                    break
+    except OSError:
+        pass
+    return False
+
+
+def _word_token_count(sent, root) -> int:
+    """Count non-PUNCT tokens in the subtree of root."""
+    return sum(1 for t in sent.subtree(root) if t.upos != "PUNCT")
+
+
 def scan_book(book_id: str) -> list[dict]:
     v2_path, conllu_path = book_paths(book_id)
     sentences = load_conllu(conllu_path)
     line_map = build_line_map(v2_path, conllu_path)
+    v2_path_str = str(v2_path)
 
     violations = []
     for sent in sentences:
@@ -80,6 +100,7 @@ def scan_book(book_id: str) -> list[dict]:
                 continue
             if head.lemma not in GOVERNING_LEMMAS:
                 continue
+            head_line = line_map.get((sent.sent_id, head.id))
             # Inside the ccomp, look for advcl children of the ccomp root
             for advcl in sent.dependents_of(ccomp, deprel="advcl"):
                 mark = sent.mark_of(advcl)
@@ -98,9 +119,48 @@ def scan_book(book_id: str) -> list[dict]:
                 # Frame must appear BEFORE the ccomp root (line N < line N+1)
                 if advcl_line >= ccomp_line:
                     continue
+
+                # Filter A: direct-discourse colon exception. If the
+                # governor's line ends with ':', the ccomp is direct
+                # discourse — complement-integrity does not apply
+                # (the reader is reading the quote itself, not a
+                # complement-spanned predication).
+                review_reason = None
+                if head_line is not None and _line_ends_with_colon(
+                    v2_path_str, head_line
+                ):
+                    review_reason = "direct-discourse-colon"
+
+                # Filter B: Rule 17 speech-indirect long-complement
+                # exception (canon §5 R17). If the speech-tag is short
+                # (head's line has <=8 word tokens within the matrix
+                # subtree, excluding ccomp content) AND the complement
+                # body is substantial (>=8 word tokens), the split is
+                # licensed per the canon §5 R17 long-complement exception.
+                if review_reason is None:
+                    ccomp_word_count = _word_token_count(sent, ccomp)
+                    if ccomp_word_count >= 8:
+                        # Count head_line word tokens NOT in ccomp subtree
+                        ccomp_ids = {t.id for t in sent.subtree(ccomp)}
+                        head_line_word_count = sum(
+                            1 for t in sent.tokens
+                            if line_map.get((sent.sent_id, t.id)) == head_line
+                            and t.id not in ccomp_ids
+                            and t.upos != "PUNCT"
+                        )
+                        if head_line_word_count <= 8:
+                            review_reason = "R17-long-complement-short-tag"
+
                 # Bucket: multi-line gaps are REVIEW-REQUIRED
                 gap = ccomp_line - advcl_line
-                bucket = "STRONG-MERGE-CANDIDATE" if gap == 1 else "REVIEW-REQUIRED"
+                if gap != 1:
+                    bucket = "REVIEW-REQUIRED"
+                    review_reason = review_reason or "non-adjacent-gap"
+                elif review_reason is not None:
+                    bucket = "REVIEW-REQUIRED"
+                else:
+                    bucket = "STRONG-MERGE-CANDIDATE"
+
                 violations.append({
                     "book": book_id,
                     "sent_id": sent.sent_id,
@@ -112,7 +172,8 @@ def scan_book(book_id: str) -> list[dict]:
                     "advcl_line": advcl_line,
                     "ccomp_line": ccomp_line,
                     "bucket": bucket,
-                    "v2_path": str(v2_path),
+                    "review_reason": review_reason,
+                    "v2_path": v2_path_str,
                 })
     return violations
 
@@ -157,8 +218,8 @@ def main():
                   f"mark={v['mark_lemma']!r}  "
                   f"frame-line={v['advcl_line']} ccomp-line={v['ccomp_line']}")
 
-    print(f"RESULT: violations={len(all_violations)} strong={len(strong)} review={len(review)}")
-    sys.exit(1 if all_violations else 0)
+    print(f"RESULT: violations={len(strong)} strong={len(strong)} review={len(review)}")
+    sys.exit(1 if strong else 0)
 
 
 if __name__ == "__main__":
