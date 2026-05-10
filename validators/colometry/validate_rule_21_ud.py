@@ -330,6 +330,7 @@ def main():
     if len(all_candidates) > 30:
         print(f"  ... +{len(all_candidates) - 30} more")
 
+    print(f"RESULT: violations={len(all_candidates)} strong={len(all_candidates)} review=0")
     sys.exit(1 if all_candidates else 0)
 
 

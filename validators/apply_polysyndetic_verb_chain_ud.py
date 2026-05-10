@@ -9,6 +9,11 @@ Re-runs the detector internally for fresh line numbers.
 Usage:
     python validators/apply_polysyndetic_verb_chain_ud.py            # dry-run
     python validators/apply_polysyndetic_verb_chain_ud.py --apply    # write
+
+Each --apply run writes a transaction log to validators/.tx/ so the changes
+can be reversed in 30 seconds if a pre-commit regression check fires:
+
+    python validators/rollback.py --latest
 """
 from __future__ import annotations
 
@@ -22,6 +27,7 @@ sys.path.insert(0, str(REPO))
 from validators.colometry.validate_polysyndetic_verb_chain_ud import (  # noqa: E402
     scan_book, BOOKS,
 )
+from validators.tx_log import TxLog  # noqa: E402
 
 
 COORDINATORS = ["and", "or", "nor"]
@@ -98,6 +104,7 @@ def main() -> int:
         print("\n(dry run -- pass --apply to write)")
         return 0
 
+    tx = TxLog("polysyndetic_verb_chain")
     total_applied = 0
     for v2_path, items in by_file.items():
         with open(v2_path, encoding="utf-8") as fh:
@@ -113,6 +120,8 @@ def main() -> int:
                 continue
             left = line[:split_at].rstrip()
             right = line[split_at:].lstrip()
+            # Record BEFORE the mutation so indices are still valid
+            tx.record_split(str(v2_path), line_idx, line, left, right)
             lines[line_idx] = left
             lines.insert(line_idx + 1, right)
             total_applied += 1
@@ -120,6 +129,12 @@ def main() -> int:
             fh.write("\n".join(lines))
         print(f"  {v2_path.name}: {len(unique_items)} splits applied")
     print(f"\nTotal polysyndetic splits applied: {total_applied}")
+
+    if total_applied:
+        tx_path = tx.commit()
+        print(f"\nTransaction log: {tx_path}")
+        print("To undo: python validators/rollback.py --latest")
+
     return 0
 
 

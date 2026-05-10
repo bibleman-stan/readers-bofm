@@ -165,6 +165,7 @@ def main():
     show_samples("STRONG-MERGE-CANDIDATE", strong)
     show_samples("REVIEW-REQUIRED", review)
 
+    print(f"RESULT: violations={len(strong)} strong={len(strong)} review={len(review)}")
     sys.exit(1 if strong else 0)
 
 

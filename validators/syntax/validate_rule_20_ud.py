@@ -243,6 +243,7 @@ def main():
     if len(all_violations) > 30:
         print(f"  ... +{len(all_violations) - 30} more")
 
+    print(f"RESULT: violations={len(all_violations)} malformed={len(all_violations)}")
     sys.exit(1 if all_violations else 0)
 
 

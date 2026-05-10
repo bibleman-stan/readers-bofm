@@ -265,6 +265,7 @@ def main():
                   f"frame-line={v['frame_line']} matrix-line={v['matrix_line']}  "
                   f"matrix={v['matrix_form']!r}")
 
+    print(f"RESULT: violations={len(all_violations)} strong={len(strong)} review={len(review)}")
     sys.exit(1 if all_violations else 0)
 
 

@@ -186,6 +186,7 @@ def main():
                   f"gov={v['governor']!r}({v['governor_lemma']})  "
                   f"lines {v['head_line']}->{v['conj_line']}")
 
+    print(f"RESULT: violations={len(all_violations)} strong={len(all_violations)} review=0")
     sys.exit(1 if all_violations else 0)
 
 

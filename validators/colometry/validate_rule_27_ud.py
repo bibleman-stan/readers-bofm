@@ -324,6 +324,9 @@ def main():
     has_candidates = (
         cats["STRONG-SPLIT-CANDIDATE"] or cats["STRONG-MERGE-CANDIDATE"]
     )
+    _strong_27 = len(cats["STRONG-SPLIT-CANDIDATE"]) + len(cats["STRONG-MERGE-CANDIDATE"])
+    _review_27 = len(cats["REVIEW-REQUIRED"])
+    print(f"RESULT: violations={_strong_27} strong={_strong_27} review={_review_27}")
     sys.exit(1 if has_candidates else 0)
 
 

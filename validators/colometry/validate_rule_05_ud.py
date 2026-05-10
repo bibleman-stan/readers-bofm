@@ -172,6 +172,7 @@ def main():
         if len(review) > 8:
             print(f"  ... +{len(review) - 8} more")
 
+    print(f"RESULT: violations={len(all_findings)} strong={len(strong)} review={len(review)}")
     sys.exit(1 if all_findings else 0)
 
 

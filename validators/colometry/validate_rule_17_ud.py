@@ -218,6 +218,7 @@ def main():
                 print(f"      ... +{len(items) - 8} more")
             print()
 
+    print(f"RESULT: violations={len(all_violations)} strong={len(strong)} review={len(review)}")
     sys.exit(1 if all_violations else 0)
 
 

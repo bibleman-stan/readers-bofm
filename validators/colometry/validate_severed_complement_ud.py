@@ -157,6 +157,7 @@ def main():
                   f"mark={v['mark_lemma']!r}  "
                   f"frame-line={v['advcl_line']} ccomp-line={v['ccomp_line']}")
 
+    print(f"RESULT: violations={len(all_violations)} strong={len(strong)} review={len(review)}")
     sys.exit(1 if all_violations else 0)
 
 

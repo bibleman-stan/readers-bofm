@@ -26,6 +26,14 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 VALIDATORS_DIR = REPO_ROOT / "validators"
 
+RESULT_RE = re.compile(
+    r"^RESULT:\s+violations=(\d+)"
+    r"(?:\s+strong=(\d+))?"
+    r"(?:\s+review=(\d+))?"
+    r"(?:\s+malformed=(\d+))?"
+    r"\s*$",
+    re.MULTILINE,
+)
 VIOLATION_RE = re.compile(r"(?:violations? found|candidate violations|deviations? found|matches? found):?\s*(\d+)", re.IGNORECASE)
 # Fallback: count [DEVIATION] / [MALFORMED] / [INFO] / [REVIEW] markers in output
 DEVIATION_MARKER_RE = re.compile(r"^\[(?:DEVIATION|MALFORMED|INFO|REVIEW|FLAG)\]", re.MULTILINE)
@@ -56,13 +64,17 @@ def run_one(path, verbose):
     except subprocess.TimeoutExpired:
         return {"name": path.name, "exit": -1, "violations": None, "error": "timeout"}
     out = (proc.stdout or "") + "\n" + (proc.stderr or "")
-    m = VIOLATION_RE.search(out)
+    m = RESULT_RE.search(out)
     if m:
         violations = int(m.group(1))
     else:
-        # Fallback: count standard marker lines
-        marker_count = len(DEVIATION_MARKER_RE.findall(out))
-        violations = marker_count if marker_count > 0 or proc.returncode == 0 else None
+        m2 = VIOLATION_RE.search(out)
+        if m2:
+            violations = int(m2.group(1))
+        else:
+            # Fallback: count standard marker lines
+            marker_count = len(DEVIATION_MARKER_RE.findall(out))
+            violations = marker_count if marker_count > 0 or proc.returncode == 0 else None
     return {
         "name": path.name,
         "exit": proc.returncode,
@@ -119,9 +131,9 @@ def main():
             status = "TIMEOUT"
             any_failed = True
         elif violations is None:
-            status = "?"
-            any_failed = exit_code != 0 or any_failed
-            violations = 0  # treat unknown as 0 for baseline-tracking
+            status = "PARSE-FAIL"
+            any_failed = True
+            violations = 0  # sentinel; baseline-check will reject this below
         elif violations == 0:
             status = "CLEAN"
         else:
@@ -152,6 +164,15 @@ def main():
             print("No baseline found. Run with --update-baseline to create one.")
             print("(For now, treating absence-of-baseline as PASS.)")
             return 0
+        parse_failures = [(name, status) for sub, name, status, exit_code, violations in rows if status == "PARSE-FAIL"]
+        if parse_failures:
+            print("=" * 72)
+            print("HARD FAIL — unparseable output (cannot verify regression safety):")
+            print("=" * 72)
+            for name, status in parse_failures:
+                print(f"  {name}: {status}")
+            print()
+            return 1
         regressions = []
         for sub, name, status, exit_code, violations in rows:
             base = baseline.get(name, 0)
@@ -162,7 +183,7 @@ def main():
             print("REGRESSIONS DETECTED (violation count increased vs baseline):")
             print("=" * 72)
             for name, base, current in regressions:
-                print(f"  {name}: baseline={base} → current={current}  (+{current - base})")
+                print(f"  {name}: baseline={base} -> current={current}  (+{current - base})")
             print()
             return 1
         print("No regressions vs baseline.")

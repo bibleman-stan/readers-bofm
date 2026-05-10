@@ -279,6 +279,7 @@ def main() -> int:
     if len(all_findings) > 25:
         print(f"  ... +{len(all_findings) - 25} more")
 
+    print(f"RESULT: violations={len(all_findings)} strong={len(all_findings)} review={len(all_review)}")
     sys.exit(1 if all_findings else 0)
 
 

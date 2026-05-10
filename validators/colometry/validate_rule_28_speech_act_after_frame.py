@@ -248,6 +248,7 @@ def main():
         print("  (none detected)")
     print()
 
+    print(f"RESULT: violations={len(all_violations)} strong={len(all_violations)} review=0")
     sys.exit(1 if all_violations else 0)
 
 

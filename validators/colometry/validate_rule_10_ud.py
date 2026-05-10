@@ -157,6 +157,7 @@ def main():
         for reason, n in sorted(by_reason.items()):
             print(f"  {reason}: {n}")
 
+    print(f"RESULT: violations={len(all_violations)} strong={len(all_violations)} review={len(all_review)}")
     sys.exit(1 if all_violations else 0)
 
 

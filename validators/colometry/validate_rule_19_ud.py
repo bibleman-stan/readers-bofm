@@ -214,6 +214,8 @@ def main():
     show_samples("STRONG-MERGE", strong_merge)
     show_samples("REVIEW-REQUIRED", review)
 
+    _violations_19 = len(strong_split) + len(strong_merge)
+    print(f"RESULT: violations={_violations_19} strong={_violations_19} review={len(review)}")
     sys.exit(1 if (strong_split or strong_merge) else 0)
 
 

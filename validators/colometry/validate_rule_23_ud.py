@@ -250,6 +250,7 @@ def main():
     else:
         print("No violations found. Rule 23 compliance is clean.")
 
+    print(f"RESULT: violations={len(all_violations)} strong={len(strong)} review={len(review)}")
     sys.exit(1 if all_violations else 0)
 
 
