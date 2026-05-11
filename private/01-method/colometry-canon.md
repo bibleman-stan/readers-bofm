@@ -1,448 +1,61 @@
 # BofM Colometry — Operating Canon
 
-**Version:** 2.0 (2026-04-19 rewrite)
-**Predecessor:** `archive/colometry-canon-v1-retired-2026-04-19.md` — retained for reference, no longer authoritative.
+**Version:** 3.0 (2026-05-11 — four-plane architectural restructuring; framework extracted to atu-method/docs/framework.md)
+**Predecessors:**
+- v2.0 (2026-04-19) — superseded; framework material lived in §0/§1/§2/§7 prose. Now pointered to atu-method.
+- v1.0 (`archive/colometry-canon-v1-retired-2026-04-19.md`) — retained for reference, no longer authoritative.
 
 ---
 
 ## How to use this document
 
-This canon serves two distinct audiences, and the sections are organized accordingly.
+This canon is the BoFM-corpus instantiation of the ATU methodology framework. Universal framework material (mission, generative principle, structural justifications, merge-overrides, decision procedure, change protocol) lives in [`atu-method/docs/framework.md`](../../atu-method/docs/framework.md); this document holds BoFM-specific rule detail and operational artefacts.
 
-**If you are a HUMAN** (Stan, a collaborator, a scholar reading to understand the method):
-- Read **Part I — Method** (§0 Purpose, §1 Framework, §2 Categories A/B/C). This explains *what* we are doing and *why*.
-- Read **Part III — Process** (§7 Change Protocol) to understand how the canon evolves; see `git log -- private/01-method/colometry-canon.md` for per-change rationale.
-- Consult **Part II — Operating Rules** only for a specific rule's detail (§5) when reviewing an editorial decision.
+**For humans** reviewing the method or wanting WHY-content: see [`atu-method/docs/framework.md`](../../atu-method/docs/framework.md) (universal framework) + [`atu-method/scholarship/bofm/`](../../atu-method/scholarship/bofm/) (per-rule rationale, grammatical grounding, empirical evidence, intellectual lineage, adversarial history).
 
-**If you are a ROBOT** (a Claude agent, a validator, an automated sweep applying rules):
-- Read **Part II — Operating Rules** (§3 Quick-Reference, §4 Layer 1 Pointers, §5 Rule Detail, §6 Validator Suite). This is your work queue and reference.
-- Read **Part I §1 "The Framework"** once to understand the gate/criterion/diagnostics — it governs rule priority when multiple fire.
-- Read **Part I §2 "Autonomy Boundary"** to know when to apply vs. flag.
-- Validator output is a **work queue**, not a review queue. `STRONG-*-CANDIDATE` tags are application-ready Category A by default; `REVIEW-REQUIRED` items are the only flags that need per-item editorial judgment.
+**For robots** applying the method to v2-mine sources: read **Part II — Operating Rules** below (§3 Quick-Reference, §3.5 Precedence Hierarchy, §4 Layer 1 Pointers, §5 Rule Detail, §6 Validator Suite). The §3.5 Precedence Hierarchy is the single source of cross-rule precedence ordering — per-rule Precedence fields reference it by tier. Validator output is a **work queue**, not a review queue. `STRONG-*-CANDIDATE` tags are application-ready Category A by default; `REVIEW-REQUIRED` items are the only flags requiring per-item editorial judgment.
 
-**If you are updating this document**: read Part III §7 Change Protocol first.
+**For updating this document:** see [`atu-method/docs/framework.md §7 Change Protocol`](../../atu-method/docs/framework.md) for the universal change protocol (12 mandatory-audit triggers, audit-skippable categories, commit-msg discipline). BoFM-canon-specific extensions to that protocol (audit-trail file convention, scholarship-companion convention) are noted in §7 below.
 
 ---
 
-# Part I — Method (for humans understanding what we are doing)
+# Part I — Method (pointer-only; framework material in atu-method)
 
 ## 0. Purpose and Stance
 
-### Mission
+**Pointer to framework.** Universal mission, method (sense-driven mission + syntax-constrained method), pragmatic stance, and scope statements are codified at [`atu-method/docs/framework.md §0`](../../atu-method/docs/framework.md). This canon does not duplicate that prose.
 
-**We are revealing atomic thought units (ATUs) — units of meaning the reader can process discretely.** Each line on the page renders one ATU; each ATU is a span the reader can take in before needing the next. ("ATU" is a descriptive label for the unit this method reveals; see Pragmatic Stance below — we do not claim a cognitive-theoretic grounding.) We are not doing English typography. We are not revealing rhetorical parallelism (Parry is a separate layer that may overlap with ours but is not our target). We are not prescribing oral delivery. We are formatting the text so that an ESL reader, a child, or a newcomer can take the scripture one atomic thought at a time.
-
-### Origin
-
-**Stan's premise:** *"Humans think, compose, and deconstruct (read and hear) in atomic thought units (ATUs) — units that correspond to how ideas are generated, encoded, and recovered."* This is the working hypothesis that drives the project.
-
-**Intellectual lineage.** Royal Skousen's demonstration that the Book of Mormon could be reduced to sense-lines (*The Earliest Text*, 2009/2022) was the trigger for what this method now formalizes as the ATU. **This project is the parent** — Skousen's foundational work was on the BofM corpus. The sibling GNT Reader project is the analogical extension ("what is true for the Book of Mormon is likely true for the Greek New Testament, and perhaps any text"). The methodology itself — framework, rules, structural justifications, merge-overrides — emerged from hands-on editorial experimentation across all 15 books. It was not derived from scholarly framework.
-
-### Method
-
-**The mission is sense-driven. The method is syntax-constrained.** These are different things and they belong in different parts of this document.
-
-The method leads with syntax (§1 "Syntax Forbids Splits") not because syntax is primary to the mission, but because **syntactic violation is fatal while sense ambiguity is recoverable within the permitted space.** A break that violates English grammar is always wrong no matter how strong the sense argument; a sense judgment inside the permitted space can be revisited by editorial review. Leading with syntax preserves the discipline that lets sense work — it doesn't demote the mission.
-
-Novel rules can and do originate from sense-driven observation (Alma 22:15's speech-act-after-frame is one such case). The method accommodates this: sense proposes, syntax filters, the combination becomes a rule. But every break that survives to the corpus must be affirmable by English syntax. This is the non-negotiable operational floor.
-
-### Pragmatic stance
-
-This methodology is a set of conventions that reflect what we are trying to reveal. It is not derived from a cognitive theory; we are not claiming otherwise. Later work may investigate why it works. For now, we operate it honestly as what it is: a consistently-applied editorial practice grounded in English syntax, tested against the corpus, and refined by validator sweeps.
-
-### Ground
-
-Every rule here cites an English grammatical fact (anchored in Universal Dependencies labels — see [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-reference/ud-taxonomy.md) — and in traditional grammar vocabulary from CGEL / Quirk et al.). Rules that cannot be grounded in English syntax are editorial principles and labeled as such.
-
-### Scope
-
-This canon governs where lines break in the v2-mine source texts. It does not govern punctuation (canonical LDS text, untouched), words (never added, removed, or altered), or layout beyond break positions.
+BoFM-specific framing — Royal Skousen's *The Earliest Text* (2009/2022) as the intellectual-lineage trigger; v2-mine source-file conventions for editorial work; BoFM-archaic English register (KJV-derivative) governing the rule-set's lexical choices — is referenced in §5 rule entries where applicable. Skousen's sense-line work was the parent precedent for BoFM; the sibling readers-gnt and readers-tanakh projects extend the methodology analogically.
 
 ---
 
 ## 1. The Framework — Proposition-First, Syntax-Constrained
 
-The framework is: **each proposition splits by default, unless syntax forbids.** Substantive adjuncts (slot-fillers in narrative frames) count as atomic thought units (ATUs) and also earn their own lines. Image sharpens ambiguous cases. (Equivalently at the operational level: at any candidate boundary the default is merge — see §1 Decision Procedure step 1 — and a split is licensed only when a proposition or structural-justification boundary is identified. The two phrasings are scope-distinct: "splits by default" generates the proposition-level inventory; "merge by default" is the per-location heuristic. Same procedure, different vantage points.)
-
-### The Generative Principle
-
-**Each proposition splits by default.** A proposition is the prototypical ATU — a complete predication (subject + finite verb + complement) that the reader can process as a single cognitive bite. Propositions drive line breaks. There is no positive requirement to break beyond this; there is no positive requirement to merge beyond this. The question at every candidate location is: *is this a proposition boundary?*
-
-"Proposition" also includes the five structural-justification cases (below) — non-predicated units that function as atomic thoughts via formal-structural recoverability. These are the only non-strict-predication units that qualify.
-
-### Syntax Forbids Splits — three closed-list ways
-
-Syntax does not generate breaks. Syntax only vetoes them. A split that proposition-first would generate is forbidden when one of these three applies:
-
-1. **Layer 1 mid-phrase prohibitions.** Splits mid-predication, mid-phrase, or mid-lexical-unit — line-final CCONJ, DET, AUX+pending V, ADP+pending NP, V+DO split, fixed multi-word unit, vocative unit, etc. See [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-reference/ud-taxonomy.md) §7 Break Legality Reference.
-
-2. **Layer 3 complement integrity (Rules 17, 26).** When the matrix verb's or adjective's valence is unsatisfied without its clausal complement — *he said that X*, *it is expedient that X*. The matrix is grammatically incomplete on its own; the complement must merge.
-
-3. **Layer 3 formula integrity (Rules 1, 18, 23).** Lexicalized multi-word frames (*And it came to pass*, *it is expedient that*, date colophons, fixed idioms) function as single units. Never break inside the frame.
-
-These are the "unless" clauses of "split each proposition unless syntax forbids."
-
-### Image Sharpens Ambiguous Proposition Boundaries
-
-**Single image / camera angle.** When proposition-first is ambiguous (e.g., a short participial absolute that could read as continuation of the prior frame or as its own frame), ask: does the mind's eye reposition between candidate frames? Camera-angle shift → SPLIT. No shift → MERGE. This is a tiebreaker for ambiguous cases, not a primary generator.
-
-### The Five Structural Justifications (Closed List)
-
-Non-predicated units that function as atomic thoughts via formal-structural recoverability. The reader can reconstruct "who did what" because formal markers in the text make the missing predicate recoverable.
-
-1. **Formally-marked parallel series.** Members connected by formal markers (*and also*, *nor*, correlative particles, polysyndetic *and*) where the shared predicate is recoverable from the parallel structure. Each member earns its own beat.
-
- **Compound list break signals.** In a compound list governed by one preposition or verb, bare *"and [noun]"* items are compound objects and stay merged. A break inside a compound list is justified only when one of these signals is present:
- 1. **Elided auxiliary + stacked participles** — each is an implied predication (covered by the primary justification 1 rule above)
- 2. **Possessive restart** — *"and his"* appearing after items without possessive, OR changing from one possessor to another. *Repeated identical possessive* (*"and his X, and his Y, and his Z"*) is formulaic and does NOT alone justify stacking. Only a possessive RESTART justifies a break.
- 3. **Demonstrative** — *"and that/this/these"* signals a new specified noun phrase
- 4. **Relative clause attached** — *"which is/who was"* adds a predication to the item
-
- Without one of these signals, bare *"and [noun]"* items merge. The possessive-restart vs. repeated-possessive distinction is a corpus-specific trap (king-lists and inheritance-lists frequently trigger false-positive stacking without this test).
-
- **M1 bonded-pair precedence inside compound lists.** When a compound-list item is itself an M1 bonded pair (cognate / intensification / hendiadys — *"mercy and long-suffering,"* *"goodness and long-suffering,"* *"wickedness and abominations,"* *"statutes and judgments"*), the bonded pair is the item — the pair treats as one atomic unit within the larger series. None of the four compound-list break signals (including possessive restart) reaches inside a bonded pair to split it. Corpus already handles this uniformly (Helaman 14, Ether 14, Mosiah 8, Moroni 15).
-
-2. **Portrait accumulation.** A set of attributes building one mental picture, sharing a copular or attributive frame from context ("full of grace and mercy and truth"). Applies only when the stack IS the portrait, not when it is a catalogue.
-
-3. **Speech-act announcement.** Complete communicative predication introducing direct discourse ("And Aaron said unto the king:"). Announcement and quoted content are separate cognitive frames.
-
- **Named pattern — Verily formula.** *"Verily I say unto you"* and *"Verily, verily, I say unto you"* are invariant speech-act announcements in the BofM (32 instances total, all in 3 Nephi). The formula stands on its own line; the content clause (typically *that*-introduced) leads the next line.
- - **Test:** formula + content clause = two lines. Formula + short complete answer (*"Verily I say unto you, Nay"*, *"they have their reward"*, *"even as I am"*) = one line (the answer IS the content, not a separable clause).
- - **Corpus application:** 3 corpus splits — 3 Ne 11:23 (formula + *that*-clause), 3 Ne 27:9 (formula + *that*-clause), 3 Ne 27:21 (formula + doctrinal statement). 22 instances already correctly protected. 7 "PROTECTED-COMPLETE" (formula + short answer) correctly merged.
-
- **Named pattern — *saith the Lord* parenthetical.** The BofM-archaic formula *"saith the Lord"* (and epithet variants: *of Hosts, God of Hosts, God Almighty, God, that hath mercy on thee*) inserted mid-prophecy earns its own line. Flanking material is already direct first-person divine speech; the tag is parenthetical authentication, not a predicative proposition. Extends the speech-act announcement principle from utterance onset (introducing speech, colon-marked) to mid-utterance (interrupting ongoing speech for oracle-authority stamp) — same cognitive principle (announcement ≠ content, each is its own frame), applied at a different position.
- - **Diagnostic.** (a) Surrounding material is direct first-person divine speech (*"I will..."*, *"my word..."*). (b) The *saith the Lord* phrase can be removed without breaking grammatical flow. (c) The phrase functions as oracle-authority stamp (retrospective or mid-utterance speaker attribution). All three hold → own line.
- - **SCOPE exclusions:** *saith the Lord that [content]* → Rule 17 speech-indirect (*that*-complement merges, not parenthetical); *thus saith the Lord, [content]* → direct-discourse introduction (existing justification 3 announcement handling); first-person speech without *saith* attribution → no special handling; ordinary prophecy flow.
- - **Corpus application:** ~54 corpus instances across 1 Ne, 2 Ne, Jacob, Helaman, 3 Ne, Mormon, Ether stacked as own lines. ~38 mid-line instances total: ~6 SCOPE-excluded (intro+colon, Lord-of-vineyard parable referent, extended divine appellation), ~3 deferred (mid-line with competing Rule 17 conflicts requiring case judgment), ~26 split as Category-A applications under this rule (1 Ne 17:53, 22:24; 2 Ne 6:11, 6:13, 13:1, 13:2; Jacob 2:5, 2:30, 2:33; Hel 13:10-32, 15:16-17 across two batches; 3 Ne 22:1, 22:8, 23:1, 24:1-17, 25:1; Mormon 8:20; Ether 4:7).
-
-4. **Classical commata.** Short fragmentary utterances carrying full communicative weight (*"Yea."*, *"If not so,"*). Typically 1-3 words; brevity + isolation = deliberate emphasis.
-
-5. **Substantive adjunct as own focus.** A fronted or trailing adjunct (temporal PP, locative PP, causal PP, etc.) that (a) is grammatically peripheral to the matrix predication's core truth AND (b) carries substantial content — enough that the reader processes it as an independent focus rather than background — earns its own line. These are the "slot-fillers" in narrative frames: AICTP projects who-did-what + when + where + why, and a substantive filling of a slot is its own focus-unit.
-
- **Grammatical grounding:** English treats peripheral adjuncts as syntactically detachable — they can front, trail, or be omitted without breaking the matrix. When the content is substantial, the detachability becomes cognitively active.
-
- **Test:** can the adjunct be paraphrased as its own "when/where/why/how" clause answering a question the matrix leaves open? If yes, it is a slot-filler and earns its own line.
-
- **Example (canonical):** *Alma 52:18* — *"And it came to pass that Moroni did arrive with his army at the land of Bountiful, / in the latter end of the twenty and seventh year of the reign of the judges over the people of Nephi."* The temporal PP is a 15-word filling of the AICTP "when" slot — substantive own focus, earns its own line. Not a proposition, but a slot-filler.
-
- **Pattern: year-formula temporal PPs.** Phrases of the form *"in the Nth year of the reign of the judges"* or *"in the Nth year of X"* reliably earn their own line when they follow a matrix predication (Alma 9:464, Helaman 536, 3 Nephi 915, Ether 2151 all resolve this way). They are substantive (typically 10-15 words), peripheral, and clearly answer the "when" slot.
-
- **Exclusion: degree quantifiers.** Short PPs that modify the **degree** of a predicate (*"in some degree,"* *"in great measure,"* *"in part"*) do NOT pass the slot-paraphrase test — they modify how-much, not when/where/why. They are predicate modifiers, not slot-fillers. Do not treat them as substantive adjuncts earning their own line.
-
-The list is extensible only by worked example + adversarial validation. A proposed sixth justification must demonstrate (a) that it is a genuinely distinct instance of the same generating principle — formal structure in the text enables cognitive recovery of the full predication, or substantive content independently warrants own focus — and (b) that it survives an adversarial challenge.
-
-### The Four Merge-Override Conditions (Closed List)
-
-**Symmetric counterpart to structural justifications.** Where structural justifications describe cases where the default (merge under propositions-first) is overridden to produce a split, merge-overrides describe cases where an apparent split-trigger is itself overridden — returning the members to one line. The default is still merge; these overrides catch cases where naive application of split-triggers would fragment a unit that should stay whole.
-
-**Generating principle:** Even when a line looks like it could pass the structural prong (formal markers present), merge wins when the resulting fragments would fail on more basic grounds — the chunk is not actually two propositions, the clause nucleus would be ruptured, the fragment cannot stand as atomic thought, or the cognitive prong itself fails.
-
-**Strict-application caveat — rejection ≠ split license.** When a merge-override (M1–M4) does NOT apply to a given case, that does not automatically mean the case should split. It just means THAT override doesn't fire. The default behavior is still determined by the generative principle (proposition-first) and by other applicable rules (other merge-overrides, syntactic vetoes, structural justifications). Do not reason: "M1 rejected → must split." Reason instead: "M1 rejected → apply remaining analysis." Each merge-override's absence is silent, not authorizing.
-
-The list is extensible only by worked example + adversarial validation, same rule as the structural justifications.
-
-#### M1. Gorgianic Bonded Pair
-
-**Definition:** N=2 coordinate members joined by *and* / *or* where the pair functions as a single unified hendiadys or bonded rhetorical image — not two independent propositions. Even under formal *and*-linkage (which would normally trigger structural justification 1), if the pair is bonded, merge.
-
-**Test:** Can the two members be paraphrased as a single unified image or hendiadys? Do they carry shared rhetorical weight without independent predicative force?
-
-**BofM canonical cases:**
-- *"weeping and gnashing of teeth"* (judgment passages) — one image of suffering
-- *"weeping, and wailing, and gnashing of teeth"* (Alma 40:13) — the full formulaic triad, bonded
-- *"grace and mercy"* / *"grace and truth"* — paired divine attributes
-- *"faith and repentance"* (Alma 13:14-ish cases) — paired soteriological acts
-- *"heaven and earth"* — cosmic pair
-- *"dust and ashes"* — humility formula
-- *"flesh and blood"* — mortality formula
-- *"soul and body"* — anthropological pair
-- *"repent and believe"* (2 Ne 1603, 4692) — hendiadic soteriological response
-
-**BoFM-corpus bonded verb pairs (closed list).** Where the canonical-cases list above covers paired nouns and one canonical verb pair, the corpus exhibits a stable closed list of additional verb pairs treated as M1 bonded — true synonymy, cognate-acts, or hendiadys (one act named twice for emphasis):
-
-| Pair | Type | Corpus citations |
-|------|------|------------------|
-| repent + believe | paired soteriological response | 2 Ne 1603, 4692 (canonical) |
-| weep + gnash | suffering manifestation | inferred from nominal hendiadys *"weeping and gnashing of teeth"*; no verbal N=2 corpus instance |
-| fight + quarrel | synonymous discord | corpus-attested |
-| bless + sanctify | liturgical synonymy | Moroni 4:3, 5:2 (sacrament prayer) |
-| fear + tremble | cognate emotional+somatic state | 1 Ne 16:28, 2 Ne 1:25 |
-| murmur + complain | synonymous discontent verbalization | 1 Ne 17:48 |
-| hunger + thirst | cognate appetitive (verbal) | 3 Ne 12:6 |
-
-**N=2-only caveat.** M1 verb-pair protection fires ONLY on N=2 verb-coordination (two coordinated finite verbs or two coordinated participles under shared aux). It does NOT fire on:
-- N=3+ chains (Justification 1 wins per the N=3+ cliff — Helaman 3:16 precedent)
-- Nominal occurrences (*"weeping and gnashing of teeth"* is a nominal compound, not a verbal pair — the *weep+gnash* listing above is verbal-extrapolated from the nominal hendiadys, not corpus-attested as a verbal N=2)
-- Mixed-class coordinates (one finite + one participial, or one verb + one noun)
-
-**CRITICAL DISTINCTION — what M1 does NOT cover.** M1 covers true synonymy / cognate acts / hendiadys (one act named twice for emphasis). It does NOT cover:
-- **Sequential narrative bonding** — *draw + smite* (draw weapon, then strike), *torture + bind* (sequential cruelties), *stone + cast out* (sequential persecution), *take + come* (sequential travel), *creep + slay* (sequential assassination), *lifted + crucified + buried* (passion sequence)
-- **Distinct speech acts** — *preach + prophesy* (a prophet does both as distinct activities), *exhort + preach*, *pray + supplicate* (the latter dropped 2026-05-10 per Wave 6 audit; only attestation was the N=6 list at Moroni 6:9 — same shape as the rejected *preach+exhort* and *preach+prophesy*)
-- **Rhetorical/thematic clustering** that names sequential or distinct actions
-
-Per `feedback_rhetoric_bandwagon.md` and `feedback_rhetorical_force.md`, rhetorical/narrative bonding is NOT structural-rule territory — sequential distinct actions split per the generative principle even when they form a recognizable rhetorical figure.
-
-**Detector reference.** `validators/colometry/validate_polysyndetic_verb_chain_ud.py` `M1_BONDED_VERB_PAIRS` set + `is_m1_bonded` function. The list is extensible only by worked corpus example + adversarial validation, same rule as the structural justifications.
-
-**Tie-breaker when M1 and structural justification 1 both seem to apply (N=2 formally-marked pair):**
-- If each member has a distinct non-synonymous finite verb → structural justification 1 wins (SPLIT). Example: two members with genuinely different actions.
-- If the two members are semantically synonymous, cognate, or intensification variants → M1 wins (MERGE). Example: *"repent and believe"* (synonymous soteriological pair under shared imperative force).
-- If the members are bonded-pair nouns/adjectives (not verbs) with unified rhetorical weight → M1 wins (MERGE).
-
-This tie-breaker is the canonical specific case of the cross-cutting **N=2 Adjudication Principle** (see §1, after the Decision Procedure). The same merge-vs-split logic applies to Rule 12 extended N=2 compound verbs and Rule 17 two-member *that*-series.
-
-**Asymmetric-modifier sub-clause.** When an M1-candidate bonded pair has one member carrying a PP modifier or relative clause the other lacks (*"repentance and faith on the Lord Jesus Christ,"* *"signs and wonders among the people,"* *"gold and silver of great worth"*), M1 still wins → MERGE if the modifier attaches semantically to the pair AS A UNIT (answering "in/on what?" where the modifier's referent is the joint object of both members). SPLIT only if the modifier scopes over only one member to the exclusion of the other, producing genuinely distinct predicative force (rare — requires explicit contrastive signal like *"repentance from sins and faith in Christ"* where the two members point to different referents).
-
-- **Joint-attachment test.** Paraphrase with the modifier distributed to both members: *"repentance on the Lord Jesus Christ and faith on the Lord Jesus Christ"*. If the paraphrase preserves meaning (both members naturally take the modifier), joint-attachment holds → MERGE. If the paraphrase distorts meaning (one member doesn't naturally take the modifier), asymmetric scoping → SPLIT.
-- **Corpus applications:** Mosiah 18:7 *"only through repentance / and faith on the name of the Lord God Omnipotent"* → MERGE (both repentance and faith are "on the name of the Lord"). Alma 37:33 *"Preach unto them repentance, / and faith on the Lord Jesus Christ;"* → MERGE (both repentance and faith aimed at Christ).
-- **WHY:** modifiers attaching to a bonded pair typically scope jointly; treating one member as carrying the modifier and the other as bare introduces a false asymmetry and fragments the hendiadic unity. **HOW WE KNOW:** corpus survey surfaced 2 instances of the *repentance-and-faith-on-[Lord]* pattern currently split; both merge cleanly under joint-attachment. **SCOPE:** N=2 M1-candidate pairs where one member has a PP/relative modifier; joint-attachment test adjudicates; explicitly contrastive signals preserve split.
-
-**Grammatical grounding:** CGEL Ch. 14 on coordination of semantically-bonded pairs; classical hendiadys.
-
-#### M2. Verb-Object Clause-Nucleus Bond
-
-Covered by existing **Rule 17 (Complement Integrity)**. A governing verb or adjective requiring a clausal complement forms one integrated predication with its complement. The matrix verb alone does not carry complete predication. See §5 Rule 17 for full treatment including the six-class verb list, exceptions, and delete-test diagnostic.
-
-M2 is named here for cross-canon consistency with GNT's merge-override framework; operationally it's Rule 17 territory.
-
-#### M3. Bare-Governor Indivisibility
-
-**Definition:** A head word — participial adjective (*full, mighty, great* functioning predicatively), governing participle (*having, being, telling, desirous, instructed*), or discourse particle standing alone — cannot stand on its own line without at least one complement, object, or dependent. The bare governor fails the atomic-thought test because it is grammatical machinery awaiting content, not a complete predication.
-
-**Test:** Can the isolated head-word be read as a complete thought? Or does the reader's attention dangle forward, expecting completion on the next line?
-
-**BofM canonical cases:**
-- Participial frame + pending complement: *"telling them / that there could be no atonement..."* → bare "telling them" awaits its that-clause complement (merge)
-- Adjectival frame + pending infinitive: *"were desirous / to throw me into the depths of the sea"* → "desirous" requires its to-infinitive complement (merge)
-- Bare discourse particles: *"Wherefore,"* / *"Therefore,"* / *"And now,"* alone on their own line WITHOUT following content — fails M3 unless explicitly licensed by Rule 20 Exemption (c) as a sentence connective with its content merged on the next line.
-
-**Contrast with speech-intro (structural justification 3):** Finite speech-act formulas (*"said unto them:"*, *"declared:"*, *"cried:"* with colon) ARE complete speech-act predications — the speech act itself is the content. Bare participial frames (*"telling"* without complement, *"saying"* without following speech) are not; they await content.
-
-**Contrast with Rule 21 (participial absolute):** A full participial absolute ("X having Y-ed,") with its own subject + participle + optional complement IS a complete predication and earns its own line. M3 catches BARE participial heads WITHOUT the subject-bearing absolute structure.
-
-**Grammatical grounding:** CGEL Ch. 4 on finite vs. non-finite predications; complement requirements of governors. Bare governors lack the obligatory arguments their semantic class requires.
-
-##### M3 extension — Bare trailing participial heads
-
-**Triggering case.** Alma 32:1: *"And it came to pass that they did go forth, / and began to preach the word of God unto the people, / entering into their synagogues, and into their houses;"* — the third line is a bare participial head (*"entering"*) with PP complements but no own subject; it inherits the matrix subject *"they"* from two lines up. Under the foundational atomic-thought test, the line is not a complete unit standing on its own — it is grammatical machinery awaiting matrix anchoring.
-
-**Rule.** Bare trailing participial heads (subject-inheriting; no own-named subject; in adjunct position relative to a matrix predication) are M3 cases — they merge with their matrix predication. Same shape as M3's existing *"telling them / that there could be no atonement..."* MERGE precedent, extended from leading-participial-with-pending-complement to trailing-participial-with-pending-subject-anchor.
-
-**Four structural carve-outs (these stay own-line):**
-
-1. **Stack-cap.** Adjacent participials stay own-line when the stacking IS the rhetorical structure: N≥3 adjacent participials, OR N≥2 with the same -ing lemma (anaphoric repetition: *"having... having... having..."*), OR merged-line would exceed 130 characters. Evaluate stack depth on the **full verse-context window** (include leading "and"-prefixed and capitalized participials), not a narrow line-pair window. Canonical cases: 2 Ne 1:10 (5-deep *"having..."* enumeration), Mosiah 15:9 (Christ's intercessory acts), Alma 7:23 (virtue-list embedding), Alma 13:29 (faith/hope/love triad), Helaman 4:12 (sin-list).
-
-2. **Coord-list member.** When the participial is a parallel beat in an open coordinate list of participial-fronted lines (each member co-equal, not modifying), the participial earns its own beat. Diagnostic: prev N≥2 lines are also participial-fronted with parallel structure (not just adjacent — parallel). Canonical cases: Alma 4:13 *"feeding the hungry"* inside *imparting / succoring / feeding / suffering*; Mosiah 21:13 *"submitting themselves"* inside *subjecting / submitting / driven / burdened*.
-
-3. **Antecedent-locality fail.** When the nearest preceding NP that supplies the participial subject is NOT the matrix subject — instead it is inside a PP, a relative clause, or other oblique position — the participial is not subject-inheriting from the matrix in the relevant sense; it modifies the embedded NP. Diagnostic: nearest preceding NP is object of preposition (*"concerning Giddianhi, demanding..."*), or subject of an embedded relative clause, or fronted between matrix subject and verb. Canonical cases: Ether 13:21, 3 Ne 3:11, 3 Ne 20:25, Helaman 11:23.
-
-4. **Fronted-position participial.** When the participial precedes the matrix verb (placed between subject and finite verb, or fronted before the subject), it is fronted-circumstantial — backward-merging would split subject from predicate. Diagnostic: the next non-blank line begins with *therefore* / *wherefore* / *then* + finite verb, or the matrix subject sits between the participial and the finite verb. Helaman 11:23 is the canonical case.
-
-**Length backstop:**
-
-5. **Merged-line > 130 characters → REVIEW-REQUIRED.** Cases where applying the merge would produce a line exceeding ~130 characters route to human review rather than auto-apply. This catches the catalog-precedent catastrophe (Jarom 1:8's 199-character merge, where the matrix predicate is buried far back behind a long *"rich in X, and in Y..."* coordinate-NP catalog) and the Rule-17-bound-complement long merges.
-
-**No editorial carve-outs.** A prior draft of this extension proposed three editorial carve-outs (theological / Christological appositive, antithetic / paired parallelism, gerund-as-noun) as named categories with hand-curated verse-lists. These were retired as a category fudge inconsistent with the project's stated mission — see §0 Mission objective (3): the project seeks to *expose* rhetorical and theological structure that has been obscured, not to preserve it on doctrinal-weight grounds. The discriminator for ATU-status is the atomic-thought test, not the doctrinal weight of the content. Each former carve-out resolves cleanly under the general rule:
-
-- *Christological / theological participials* (former list: Mosiah 15:2 *"being the Father and the Son"*, etc.) — each case is evaluated as ATU on its merits. Mosiah 15:2's *"being the Father and the Son"* is its own predication-equivalent (subject + predicate-nominative) → own line under the *general rule*, not because it is theological. Theology is irrelevant to the test.
-- *Antithetic / paired participials* (former list: Mosiah 18:21, Alma 9:22, 2 Ne 2:23) — each member is its own predication. Already covered by the generative principle (each proposition splits) and the Parallel-List Uniformity Principle (§1). The "antithetic" naming was a redundant description.
-- *Gerund-as-noun* (former list: Enos 1:23, 2 Ne 13:24, Alma 32:43) — these are not participial verbs at all; they are deverbal nouns inside coordinate noun-lists. The participial-merge rule should not type-match on them in the first place. This is a validator type-detection issue, not a canon-level carve-out.
-
-The validator implementation may include syntactic precision-checks for gerund-as-noun shapes (to avoid the rule firing on non-participials) and may flag verses where editorial review is warranted, but these are implementation concerns; the canon does not name them as exception categories.
-
-**WHY / HOW WE KNOW / SCOPE.** WHY: bare trailing participial heads without resumptive structure fail the foundational atomic-thought test — they are non-finite grammatical machinery that requires matrix anchoring to become a complete unit. HOW WE KNOW: corpus survey + 5 parallel hand-walks classified the merge population, and a mission-alignment audit retired the editorial carve-outs as inconsistent with §0 Mission objective (3). SCOPE: applies only to trailing/adjunct-position participials with no own-named subject and no resumptive structure; absolute phrases with own subject (Rule 21) unchanged; M3's leading-participial-with-pending-complement cases unchanged.
-
-**Cross-rule precedence.** Rule 21 (participial absolute) wins when the participial has its own named subject — the participial absolute is a complete predication. M3 extension only catches BARE participials without subject. Rule 17 (complement integrity) and Rule 19 (anaphoric relative) post-merge re-splits are honored — if the merged line contains a Rule-17-bound that-clause that should split or a Rule-19 anaphoric relative, those rules fire afterward. Length-cap (guard 5) applies regardless of the other guards.
-
-**Implementation.** `validators/colometry/validate_participial_phrases.py` implements the 4 structural guards + length backstop. Cases that the prior carve-out lists protected are now re-evaluated case-by-case against the atomic-thought test; some remain own-line as ATUs in their own right (general rule, not as named exceptions), others merge per the rule.
-
-#### M4. Fragmented Atomic Thought-Unit
-
-**Definition:** If splitting a line would produce fragments that individually fail the atomic-thought test, merge. This is the inverse of the cognitive prong: the cognitive prong requires each resulting chunk to be its own atomic thought for a split to proceed; if any resulting fragment fails that test, the split is blocked.
-
-**Test:** Read each proposed resulting line aloud as a standalone unit. Does it constitute one focused-attention chunk with bounded information? If any resulting line fails, the split is over-fragmenting.
-
-**Scope discipline — prospective not retroactive.** M4 fires ONLY when evaluating a PROPOSED split. It is evaluated by reading each of the two proposed fragments as standalone units; if either fails atomic-thought, the proposed split is blocked → MERGE. **M4 is NOT a retrospective merge generator.** When an existing split shows both fragments individually passing atomic-thought, M4 does not fire, even if the two events are causally, narratively, or rhetorically linked. "Narrative completion" and "atomic-thought failure" are different tests; conflating them is the documented failure mode behind three reverts in commit `6baf7d7`: Alma 47:24 stab+fall, 1 Ne 5:4 tarry+perish, Ether 14:29 approach+defeat. The operational rule: ask *"does THIS line, alone, constitute one focused-attention chunk?"* — not *"would merging produce a more complete narrative beat?"* The former fires M4 when appropriate; the latter is aesthetic reasoning outside M4's scope.
-
-**BofM canonical cases:**
-- Trailing prepositional modifiers orphaned from their predicate: *"...he spake, / to your condemnation."* (short trailing PP with no independent image) — fails M4.
-- Dangling discourse particles: *"alla"* alone on a line without a complete clause.
-- Orphaned appositives separated from their head noun when the appositive alone has no independent image.
-- **"Yea, even X" emphatic appositive (partial-adoption sub-rule):** a short emphatic appositive introduced by *"yea, even"* that lacks independent predicative weight — merely reinforces the preceding clause's referent. Sweep classifiers:
- - **3-condition test** for mechanical merge: (1) line starts with *"yea, even"*, (2) line contains no finite verb (no independent predication), (3) preceding line is a complete clause. All three hold → MERGE.
- - **Exclusion clause:** when the *"yea, even X"* appositive contains a **year-formula temporal reference** (e.g., *"in the Nth year of the reign of the judges"*) or a **proper-noun entity** (named character, place, people, or government/institutional body), the appositive is a substantive slot-filler under **structural justification #5 (substantive adjunct as own focus)**, not an M4 fragment. KEEP SPLIT. Canonical case — Alma 50:23 *"...than in the days of Moroni, yea, even at this time, in the twenty and first year of the reign of the judges"* — the year-formula trailing appositive is exactly the substantive slot-filler that justification #5 protects. Justification #5 wins over M4 when the appositive carries substantive temporal, entity, or institutional content.
- - **Sweep results:** 182 corpus instances of *"yea, even"* line-starts. **53 net applied** across 10 books (1 Ne, 2 Ne, Jacob, Mosiah, Alma, Helaman, 3 Ne, Mormon, Ether, Moroni). **69 KEEP-SPLIT** (line has own finite verb → independent predication, not M4 fragment). **59 REVIEW-REQUIRED** (ambiguous — per-item judgment). Adoption threshold ≥80% not met (68% clean categorization); sub-rule remains **heuristic-trigger-for-review**, not mechanical-apply. The 53 applied merges each passed the 3-condition test individually plus the exclusion check.
-
-**This is the adversarial-auditor's primary over-split detection rule.** Corpus audit enumerated 211 M4 candidates: 23 HIGH-confidence, 126 MEDIUM, 62 LOW. Follow-up sweep surfaced 182 *"yea, even"* line-starts total (the HIGH subset was a conservative filter).
-
-**Precedence over structural justifications — critical refinement.** M4 fires ONLY when splitting produces a fragment that **fails** the atomic-thought test. A fragment that PASSES atomic-thought via another structural justification's cognitive prong does NOT fail. Specifically:
-- **Formally-marked parallel series (justification 1):** members of a 3+ member series pass cognitive-prong via shared-predicate recovery. M4 does NOT fire on series members. Example: Alma 8:7 *"their lands, and their cities, and their villages, yea, even all their small villages"* is a 4-member catalog; the yea-even member is a parallel-series beat, not an M4 fragment. Decision procedure: justification 1 cognitive-prong passes → M4 does not block → STACK.
-- **Substantive adjunct (justification 5):** substantial adjuncts (year-formulas, proper-noun entities, institutional bodies) earn own lines. M4 does NOT fire on these. Example: Alma 50:23 year-formula PP; Alma 60:14 *"the slothfulness of our government"* (institutional body). KEEP SPLIT.
-
-**Parallel interaction with Rule 12 compound-verb extension.** Rule 12's shared-auxiliary merge also defers to justification 1 when the coordinated participles are members of a 3+ member parallel series. Example: Helaman 3:16 6-verb cascade *"murdered, plundered, and hunted, and driven forth, and slain, and scattered"* — shared aux *"have been"* normally triggers Rule 12 merge, but 6-member parallel series passes cognitive-prong, so justification 1 wins → STACK. Same logic for Mosiah 27:35 participial series (striving/confessing/publishing/explaining).
-
-**Unified principle:** merge-overrides (M1–M4) and Rule 12 compound-verb merge block split-triggers ONLY when splitting would produce true atomic-thought failure. Fragments that pass atomic-thought via a structural justification's cognitive prong are not M4 fragments; the structural justification wins.
-
-**Extensibility note:** new M4 sub-patterns can be promoted to named status when corpus audit surfaces 10+ instances with unified structural signature AND sweep passes ≥80% clean categorization. Patterns that hit the first threshold but not the second (like *"yea, even X"*) remain trigger-for-review sub-patterns — useful as validator input, not as mechanical-apply rules.
-
-### Summary: the four forces
-
-| Force | Direction | Role |
-|-------|-----------|------|
-| Propositions (+ 5 structural justifications, including substantive adjunct) | GENERATIVE | Default split at every proposition or justified non-proposition boundary |
-| Syntax (Layer 1 + Rule 17/26 + Rule 1/18/23) | SUBTRACTIVE | Forbids some splits the generative principle would produce |
-| Merge-overrides (M1–M4) | SUBTRACTIVE | Block split-triggers when resulting fragments fail on more basic grounds |
-| Image (camera angle) | DIAGNOSTIC | Sharpens ambiguous boundaries |
-
-### The Complete Framework — Decision Procedure
-
-Putting generative, subtractive, and diagnostic forces together, the full editorial decision procedure is:
-
-1. **Default:** merge (propositions share one predicate; atomic-thought test applies at the predication level).
-2. **Split-trigger fires** (any of: proposition boundary; one of structural justifications 1–5): tentative split.
-3. **Syntax veto** (Layer 1 mid-phrase prohibition; Rule 17 / Rule 26 complement integrity; Rule 1 / Rule 18 / Rule 23 formula integrity): blocks the split → **merge**.
-4. **Merge-override fires** (M1 gorgianic pair, M2 clause-nucleus bond, M3 bare-governor, M4 fragmented fragment): blocks the split → **merge**. **When split-trigger and merge-override both fire on the same line, merge-override wins.** The merge-override list is the mechanism that prevents split-triggers from producing non-atomic or bonded-pair fragments.
-5. **Image diagnostic** (camera angle): sharpens cases where 1–4 leave room for editorial judgment.
-
-The framework is a default-merge with two closed lists of exceptions — five structural justifications (add splits beyond propositions) and four merge-overrides (block splits that would fragment unity) — plus the syntax-subtractive veto and the image diagnostic.
-
-**Breath retired entirely.** What started as a "fourth criterion" alongside atomic thought (oral-delivery fit) was retired when empirical work showed it was doing cognitive-chunking under oral-delivery cover. **Breath is not foundational and not pragmatically relevant to any aspect of the method.** The cognitive-chunking work it was informally doing — flagging long single-proposition lines with substantial adjuncts — is fully absorbed by structural justification #5 (substantive adjunct as own focus). Earlier "atomic breath unit" framing in CLAUDE.md / handoffs / rules-audit.md was never load-bearing in pragmatic application and has been dropped as residue.
-
-### Application Order — explicit step-by-step
-
-**Purpose.** The Decision Procedure above gives the high-level 5-step ordering. This subsection makes the step-internal ordering explicit so that rule application is provably deterministic — two appliers following the canon converge on the same output regardless of which rule they check first within a step.
-
-**Provenance.** Parallel hostile audits on rule-application reversibility found the canon is commutative in 8 of 9 tested corpus constructions, with one load-bearing gap (Rule 10 × justification 1 at N=3+ object lists, codified in §5 Rule 10). The remaining residual is cosmetic. This subsection consolidates the audits' findings.
-
-**Step 0 — Input filter.** Punctuation is never a break signal (see below). Versification is never a break signal (see below). R28 authorial asymmetry (see below — the §1 *Authorial Asymmetry Principle*; distinct from §5 *Rule 28 — Speech-Act Announcement After Frame*, which is unrelated) governs batch-sweep discipline — filters what counts as a candidate signal *before* generative evaluation begins. None of the three operate within the per-location procedure; they operate upstream of it.
-
-**Step 1 — Syntax veto (Three Closed-List Ways).** At most one fires per location (commutative within-step). The three classes:
-- **Layer 1 mid-phrase prohibitions** (Rules 9, 11, 12 simple-aux, 13a) — generic English grammar; a violation is MALFORMED (hard-fatal) and outranks any Layer-3 output.
-- **Complement-integrity rules** (Rules 17, 26) — verb/adjective + *that*-clause or infinitive complement stay together.
-- **Formula/vocative-integrity rules** (Rules 1 AICTP, 15 vocative, 18 fixed idiom, 23 date colophon) — protected multi-word units.
-
-Within this step, when both a Layer 1 and a Layer 3 rule could apply, Layer 1 wins. Scattered precedence notes in §5 (Rule 17 trumps Rule 19; Rule 27 vs Rule 7 for compound *insomuch that*; Rule 22 × Rule 15 in vocative environment) adjudicate intra-Layer-3 conflicts; these are listed in each rule's text.
-
-**Step 2 — Split-trigger (generative).** Proposition-first split, plus structural justifications 1-5. **Multiple justifications firing are co-compatible — they all agree on SPLIT; no adjudication needed.** N=2 Adjudication Principle governs coordinate-pair cases (see below). Helaman 3:16 precedent governs N=3+ (justification 1 always wins over merge-rules at N=3+ for coordinate *predications*, with the Rule 10 object-list exception — see §5 Rule 10). R28 authorial asymmetry acts at Step 0; justification 1 does not override authorial asymmetry within a series.
-
-**Step 3 — Merge-override (subtractive).** M1 gorgianic pair, M2 clause-nucleus bond (Rule 17 territory), M3 bare-governor indivisibility, M4 fragmented atomic thought-unit. Specialized merge rules (Rule 10 V+DO, Rule 12 extended compound-verb, Rule 22 REFERENCING default, Rule 27 *insomuch that* 3-condition) operate within this step as aliases or specializations of the M1-M4 generic classes. **Multiple merge-overrides firing are co-compatible — they all agree on MERGE; no adjudication needed.** M4's precedence refinements (§1 M4 section) govern M4 vs. justifications 1/5. Step 3 wins over Step 2 when both fire on the same location (per Decision Procedure step 4).
-
-**Step 4 — Editorial-pattern and image tiebreaker.** EP-1 through EP-5 and the image diagnostic fire only when Steps 1-3 leave the decision open. EPs and image are co-equal tiebreakers, not generators or vetoes. When an EP-rule and a structural justification would both apply to the same location, **the justification (Step 2) wins before the EP is consulted** — EPs are strictly post-hoc for cases Steps 1-3 under-determine.
-
-**Proposed rules (27, 28) apply at their named step when their conditions fire.** "Proposed" status gates corpus-wide sweep confidence (see §7 Proposed-rule adoption protocol), not per-instance authority within the procedure.
-
-**Commutativity guarantee.** With the above step-internal rules stated explicitly, the canon is provably deterministic for all rule-pair contentions the corpus has surfaced. The one residual gap (Rule 10 × justification 1 N=3+) is closed by Rule 10's own N=3+ coordinate object-list precedence sub-clause. No other known non-commutative rule pair exists.
-
-### N=2 Adjudication Principle
-
-**The problem this solves.** Several canon rules mandate MERGE for N=2 coordinate constructions — M1 gorgianic pair, Rule 12 extended compound-verb under shared auxiliary, Rule 17 two-member *that*-series. Simultaneously, structural justification 1 (formally-marked parallel series) mandates SPLIT when each member earns its own atomic beat. At N=2 both rules can fire on the same construction; before this principle, the canon adjudicated only M1 (at §1 Gorgianic Bonded Pair tie-breaker), leaving Rule 12 and Rule 17 two-member silent. The silence produced real errors — Alma 24:10 compound-verb under shared *hath* (*"hath forgiven us... and taken away the guilt"*) sat under Rule 12 extended's merge mandate while its fragments each pass atomic-thought as distinct non-synonymous actions.
-
-**The principle.** When a merge-mandating rule (M1, Rule 12 extended, Rule 17 two-member *that*-series) and a split-mandating rule (structural justification 1) both fire on the same N=2 coordinate construction:
-
-- **Bonded / synonymous / cognate / intensification variants → merge wins.** The two members form a single unified image, action, or proposition under one cognitive chunk. Examples: *"repent and believe"* (M1 synonymous imperatives), *"weeping and gnashing of teeth"* (M1 canonical), *"know that X, and that X-restated"* (Rule 17 two-member synonymous *that*-clauses).
-- **Distinct non-synonymous → split wins.** Each member is its own atomic beat per structural justification 1. Examples: *"hath forgiven us of X and taken away Y"* (Rule 12 extended with distinct non-synonymous verbs — Alma 24:10), *"know that they are of Israel, / and that they speak forth revelation"* (Rule 17 two-member distinct propositions).
-
-**Diagnostic.** Apply the M1 verb-synonymy test (§1 Gorgianic Bonded Pair tie-breaker): *can the two members be paraphrased as a single unified image or proposition without loss of content?* If yes → merge. If the paraphrase requires dropping semantic content unique to one member → split.
-
-**Applies to.** M1 N=2 pairs; Rule 12 extended N=2 compound verbs under shared auxiliary; Rule 17 two-member *that*-series; future canon additions where a merge-rule and structural justification 1 both fire at N=2.
-
-**Does NOT apply to appositional constructions.** Rule 22 (divine title appositives — *"Jesus Christ, the Son of God"*) and Rule 15 (vocative + close appositive — *"O God, the Eternal Father"*) are NOT adjudicated by the N=2 Principle's synonymy test. Appositives are semantically synonymous by definition — the second member re-names the first — so the synonymy test would mechanically fire "merge" on every appositive. Rule 22's formal-anchor diagnostic (INTRODUCING vs. REFERENCING) and Rule 15's vocative indivisibility are the correct adjudications for these cases. The N=2 Principle reaches only *and/or*-coordinated pairs where the two members are SEMANTICALLY DISTINCT CANDIDATES for unification — not re-naming appositives.
-
-**Does not apply at N=3+.** The Helaman 3:16 precedent (six-verb cascade *"murdered, plundered, and hunted, and driven forth, and slain, and scattered"*) establishes that at N=3+ formally-marked parallel series, structural justification 1 wins regardless of whether a merge-rule is also firing — cognitive-prong is formally recoverable from the series itself, and merge-rules defer. The N=2 vs. N=3+ cliff is principled: two items invite bonding (doublet reading); three or more invite cataloguing (series reading).
-
-**Scope of the N=3+ cliff.** The cliff applies to coordinate **predications** — compound verbs under shared auxiliary (Rule 12 extended), coordinate *that*-clauses (Rule 17 two-member series extended), coordinate finite clauses. It does NOT apply to coordinate **objects** under a single shared verb — those are governed by justification 1's compound-list-break-signals sub-rule (at §1 structural justification 1), whose default is to merge bare *"and [noun]"* items unless one of the four break-signals fires. See §5 Rule 10 Scope for the canonical object-list case (Mosiah 18:7).
-
-**Why one principle, not three.** M1's existing tie-breaker, Rule 12 extended's silent N=2 case, and Rule 17 two-member *that*-series all face the same adjudication question. Promoting it to a named cross-cutting principle (a) avoids re-stating the same logic in three places, (b) makes future N=2 rule-conflicts discoverable rather than silent, and (c) gives a uniform diagnostic for new N=2 constructions that may surface in future canon work.
-
-### Punctuation is not a break signal
-
-The canonical LDS text's punctuation is preserved for fidelity but has **no deterministic role** in line-break decisions. Periods, commas, semicolons, colons, em-dashes, and question marks mark orthographic and grammatical pauses in the printed text, but they do not encode the atomic-thought boundaries we are revealing. A break may coincide with a punctuation mark, but the mark does not license the break — syntax does.
-
-**Test.** If the only reason you can cite for a break is "there's a comma here" or "the sentence ends," the break is not affirmed. Find the syntactic feature or merge.
-
-**Why this matters.** Punctuation in the 1829 text and its descendants was added by editors (Oliver Cowdery, John Gilbert, and later revisers including Skousen) and has been revised multiple times across printings. It does not derive from the original oral/dictated register, and it reflects editorial decisions we are not trying to preserve or privilege. Treating punctuation as authoritative would import nineteenth- and twentieth-century editorial punctuation conventions as if they were part of the text's structure — which is exactly the "impose, not reveal" failure mode this methodology is designed to avoid.
-
-**Practical consequence.** A long sentence with multiple commas is not a multi-line signal; it is a one-clause signal to examine for atomic-thought boundaries on syntactic grounds. A semicolon is not a forced break. An em-dash is not a forced split (Rule 22 covers the specific interpolation case syntactically, independent of the dash itself).
-
-**What we DO preserve.** Every punctuation mark from the canonical LDS text stays in place. We do not alter, add, or remove punctuation. Line breaks are the only editorial tool.
-
-### Versification is not a break signal
-
-BofM verse divisions were imposed by Orson Pratt in 1879 — editorial overlay, same status as punctuation. No break versification imposes is canonical. If a cross-verse merge case is identified, flag Category B.
-
-### Parallel-List Uniformity Principle
-
-When a multi-verse list of parallel members exists with a shared explicit frame, list members receive uniform line-treatment regardless of their individual syntactic shape. Per-construction rules (e.g., Rule 7 finite-purpose-*that* split) yield to the list-uniformity principle within the list's scope.
-
-**Trigger.** All four conditions must hold:
-1. **Multi-verse list, N≥3 members.** Two-member coordinate cases are governed by §1 N=2 Adjudication Principle; isolated occurrences aren't a list.
-2. **Shared explicit frame.** A repeated lexical anchor introduces each member: *"And to another,"* / *"And again, to another,"* / *"Wo unto X,"* / *"Blessed are they who,"* / *"If ye do X / If ye do not."*
-3. **Parallel members.** Each list-item is the same kind of thought (a gift bestowed, a curse pronounced, a beatitude declared, a conditional outcome).
-4. **Authorial-symmetric.** Members do NOT have the finite-verb-count or predicative-head-count asymmetries that §1 R28 Authorial Asymmetry Principle protects.
-
-**Default direction — merge.** Each member's frame + content stays on one line per member. The atomic-thought unit at the list scale is *one bestowal / one pronouncement / one outcome* per member; a frame-fragment alone (*"And again, to another,"*) is not a self-standing atomic thought.
-
-**Why merge wins as the default direction:**
-- **Atomic-thought test.** Frame-fragments alone fail it; gifts/pronouncements as units pass it.
-- **Anti-Lowth (§0 Mission).** Split-dominant treatment with repeated visible frames IS the parallelism-display layout the project's stance opposes — *"we are formatting the text... not revealing rhetorical parallelism."*
-- **Audience.** ESL readers and read-aloud delivery favor one-line-per-member rhythm; per-gift fragmentation across two lines disrupts the list cadence.
-- **Descriptive over interpretive.** Merge describes each member as a unit; split imposes a frame-content rhythmic structure on a syntactic surface that doesn't demand it.
-
-**Mechanical signature.**
-- Detect shared frame via repeated leading lexical pattern across N≥3 verses.
-- Identify dominant treatment among members (count: how many members are 1-line, how many 2-line?).
-- Bring outliers in line with dominant treatment; default-merge if no clear dominance OR if applying default-merge passes the atomic-thought test for each member.
-
-**SCOPE — does NOT apply to:**
-- N=2 coordinate cases (governed by §1 N=2 Adjudication Principle).
-- Authorial-asymmetric series (§1 R28 takes precedence — preserve mechanism-count differences; do not flatten variation).
-- Lists without a repeated explicit frame (narrative sequences without lexical anchor).
-- Within-verse coordinate predications (governed by Helaman 3:16 precedent — justification 1 wins over merge-rules at N=3+).
-
-**Interaction with Rule 7.** Rule 7 (finite purpose-*that* breaks before *that*) yields to this principle when the purpose-*that* is a list member in an otherwise-merged list. The Rule 7 short-line exception (line 474) is the mechanical channel: in parallel-list context, the short-line exception fires whenever the list's dominant treatment is merge.
-
-**WHY / HOW WE KNOW / SCOPE summary.** WHY: same-pattern-different-treatment in a multi-verse list violates atomic-thought consistency at the list-scale and the project's anti-Lowth stance. HOW WE KNOW: Moroni 10:8-17 spiritual-gifts list — 3 outliers (vv 9, 12, 13 split via Rule 7 default) against 6 conforming members (vv 10, 11a, 11b, 14, 15, 16 merged). Stance B merge-dominant emerged after walking through atomic-thought / anti-Lowth / audience tests. SCOPE: as above.
-
-### Authorial asymmetry overrides editorial symmetry
-
-When a passage contains a serial construction (wo/blessed series, positive/negative conditional pair, beatitude chain, interrogative chain) and the author treats members asymmetrically — expanded mechanism for some, compact for others — **preserve the authorial asymmetry**. Do not pressure compact members to expand, or expanded members to compress, in order to achieve uniform line-treatment across the series.
-
-**Test.** Count the finite verbs, elided verbs, and predicative heads in each member of the series. If counts differ between members in the received prose text, the asymmetry is authorial and the line-structure reflects it. If counts match but editorial line-treatment diverges, that is editorial drift and should converge.
-
-**BofM-attested trigger contexts:**
-- **Wo/blessed series with asymmetric member expansion.** Canonical case — 2 Nephi 9:27-38: 9:30 (*"wo to the rich"*) expands to 6 lines with full mechanism (despise poor / persecute meek / hearts upon treasures / treasure is god / treasure shall perish); 9:31-37 are compact 2-line *"Wo unto X, for Y"* treatments; 9:38 closes with an embedded triad (*"return to God, and behold his face, and remain in their sins"*). The asymmetry is authorial. A uniformity sweep asking "are all Wos treated the same?" would illegitimately pressure compression of 9:30 or expansion of 9:31-37 — R28 forbids that.
-- **Matthean-parallel Sermon at the Temple.** 3 Nephi 12-14 parallels Matthew 5-7 but with authorial expansions and compressions (3 Nephi 12:1-2 adds a doubled *"blessed are they who shall believe in your words"* preface absent from Matt 5; 12:11-12 expands the persecution/reward discourse). Editorial parallelism-pressure to conform 3 Nephi to Matthean line structure would violate 3 Nephi's distinctive authorial shape.
-- **Positive/negative conditional pairs.** *"If ye do X... but if ye do not..."* constructions sometimes have asymmetric treatment across the two halves.
-
-**SCOPE.** Does NOT apply to same-rule-uniformly-applied cases — the `feedback_application_consistency_vs_rule_coverage` discipline governs those (same rule, inconsistent application). R28 governs the distinct failure mode: **imposed uniform structure where the author wrote variation**. The author's finite-verb count, elided-verb count, and predicative-head count per member is the authoritative signal.
-
-**Distinction from §0 Mission.** §0 establishes the general text-honoring posture ("we are formatting the text... not revealing rhetorical parallelism"). R28 names a specific operational guardrail at the split-trigger level: don't symmetrize what the author wrote asymmetrically. §0 is the stance; R28 is the enforcement mechanism against this one failure mode.
-
-**Cross-reference.** Sibling rule at GNT canon §3.7 "Textual asymmetry overrides editorial symmetry" (Matt 25:35-36 positive vs. 42-43 negative as canonical case there). BofM corpus evidence from 2 Ne 9:27-38 and 3 Ne 12:1-12.
-
-**WHY / HOW WE KNOW / SCOPE summary.** WHY: authors' structural choices carry information editorial symmetry-pressure would erase. HOW WE KNOW: BofM-attested cases of authorial asymmetry confirmed at 2 Ne 9:27-38 and 3 Ne 12:1-12. SCOPE: serial constructions where editorial uniformity-pressure could impose structure the author didn't write.
+**Pointer to framework.** The framework specification — generative principle (each proposition splits by default); three closed-list ways syntax forbids splits (Layer 1 mid-phrase prohibitions, complement integrity, formula integrity); image diagnostic (camera-angle test); five structural justifications J1–J5 (formally-marked parallel series, portrait accumulation, speech-act announcement, classical commata, substantive adjunct); four merge-overrides M1–M4 (Gorgianic bonded pair, verb-object clause-nucleus bond, bare-governor indivisibility, fragmented atomic thought-unit); the four forces summary; the five-step decision procedure; the application-order step-by-step (Step 0 input filter through Step 4 diagnostic); the N=2 Adjudication Principle and N=3+ cliff (Helaman 3:16 precedent); the punctuation-not-a-signal and versification-not-a-signal stances; the Parallel-List Uniformity Principle (Moroni 10:8-17 spiritual-gifts list canonical case); and the Authorial Asymmetry Principle (2 Nephi 9:27-38 wo-series canonical case) — is codified at [`atu-method/docs/framework.md §1`](../../atu-method/docs/framework.md). This canon does not duplicate that prose.
+
+**BoFM-corpus instantiations of the framework:**
+
+- **M1 bonded-pair list (verb pairs, corpus-attested):** `{repent, believe}`, `{weep, gnash}` (verbal-extrapolated from canonical nominal hendiadys), `{fight, quarrel}`, `{bless, sanctify}`, `{fear, tremble}`, `{murmur, complain}`, `{hunger, thirst}`. M1 verb-pair protection fires only on N=2 verb-coordination per the N=2-only caveat in atu-method/docs/framework.md §1.5. Detector reference: `validators/colometry/validate_polysyndetic_verb_chain_ud.py`.
+- **M1 nominal-pair canonical cases:** *grace and mercy*, *heaven and earth*, *dust and ashes*, *flesh and blood*, *soul and body*, *weeping and gnashing of teeth*, *faith and repentance*.
+- **J3 named patterns** (operational sub-rules under speech-act announcement):
+  - **Verily formula** — *"Verily I say unto you"* / *"Verily, verily, I say unto you"*: 32 instances total, all in 3 Nephi. Formula stands on its own line; content clause leads next line. See §5 J3-pattern documentation.
+  - ***Saith the Lord* parenthetical** — mid-prophecy oracle-authentication tag. ~54 corpus instances stacked as own line; ~26 corpus splits applied per the 2026-04-26 sweep. See §5 J3-pattern documentation.
+- **J5 substantive-adjunct canonical case:** Alma 52:18 year-formula temporal PP (15-word filling of AICTP "when" slot). See §5 R23 (Date Colophon) for the year-formula operational signature.
+- **Authorial Asymmetry corpus precedents:** 2 Nephi 9:27-38 wo-series (9:30 expanded; 9:31-37 compact; 9:38 closes with embedded triad); 3 Nephi 12:1-12 Sermon-at-the-Temple expansions vs Matthean parallels.
+- **Parallel-List Uniformity canonical case:** Moroni 10:8-17 spiritual-gifts list (9 members; 3 outliers per 2026-04-26 sweep; merge-dominant treatment).
 
 ---
 
 ## 2. Autonomy Boundary — Categories A / B / C
 
-Every proposed change falls into one of three categories:
+**Pointer to framework.** Categories A (Mechanical, mandatory), B (Editorial, judgment-required), C (Theological / textual-critical), the Mechanical-Rule Authority principle, the default-handling under uncertainty, and the Scope/Precedence/Closed-List Diagnostic are codified at [`atu-method/docs/framework.md §2`](../../atu-method/docs/framework.md). This canon does not duplicate that prose.
 
-- **Category A — Editorial slippage.** Suboptimal break with no theological or rhetorical stakes. Apply confidently.
-- **Category B — Rhetorical shape.** The break changes how the speaker builds an argument. Flag and ask before applying.
-- **Category C — Theological weight.** Break placement carries a doctrinal implication. Flag and discuss before touching.
+Per-rule Category assignments are in each §5 entry's `Category:` header field.
 
-**Mechanical-rule authority.** When a settled mechanical rule's UD signature fires unambiguously and the rule's heuristics resolve without ambiguity, the change is **Category A by default**. The canon IS the approval — no per-item flagging is required. Bump to Category B only when rhetorical weight is independently implicated (e.g., breaking a covenant formula, altering a prophetic rhythm). Bump to Category C only when theological weight is independently implicated. Default-bumping mechanical hits to B out of caution is a failure mode — it inverts the canon's authority and creates unnecessary friction.
-
-**Default:** when uncertain between mechanical and non-mechanical, treat as mechanical if the UD signature is clean. When uncertain between A and B/C on editorial/rhetorical grounds, treat as Category B. A false Category A on rhetorical grounds (applying a change that warranted discussion) costs more than a false Category B (flagging something straightforward). A false Category B on mechanical grounds (flagging a clean rule hit for review) costs Stan's time and compounds across sessions.
-
-**Scope/precedence/closed-list diagnostic.** Canon additions that include ANY of the following are **Category B by default**, regardless of how they are framed in the commit message:
-- A scope claim (*"rule X applies to / does not apply to Y"*)
-- A precedence claim (*"rule A trumps rule B"*, *"X wins over Y when both fire"*)
-- A closed-list extension (adding a verb class, adding a named category, adding a SCOPE-exclusion item)
-- A named-category carve-out (introducing a new gating category, even if cross-referenced to an existing rule)
-
-This diagnostic catches the failure mode where a canon change is self-framed as "documenting existing practice" or "scope clarification" but substantively asserts a new judgment. Examples of the misclassification this prevents: Gap 1-A (compound-list × M1 precedence, initially framed as Low-tier "documenting practice" — actually Category B scope-claim); Rule 17 topic-PP extension (initially framed as "refinement" — actually Category B closed-list expansion). §7 Change Protocol's mandatory-audit trigger list operationalizes this diagnostic for commit-time discipline.
+**BoFM-specific instances:**
+- Category A: clean mechanical-rule hits per §5 detector verdicts (e.g., R7 purpose-clauses, R17 complement integrity, R10 V+DO bond).
+- Category B: rhetorical-shape decisions (e.g., R22 INTRODUCING-vs-REFERENCING divine title appositive at first occurrence; EP-3 inverted-predicate own-line treatment).
+- Category C: doctrinal weight (e.g., Moroni 4:3 / 5:2 sacrament-prayer divine-title vocative under R15 precedence; 1 Nephi 22 millennial-prophecy line breaks where break placement affects covenant theology).
 
 ---
 
@@ -2758,67 +2371,15 @@ Merge validators and sweep scripts must not reject a candidate merge because the
 
 ## 7. Change Protocol
 
-Proposals to change an existing rule, add a new rule, or cull a rule must:
+**Pointer to framework.** The universal change protocol — proposal requirements (state the syntactic fact, provide corpus evidence, survive adversarial audit, apply uniformly, defensibility capture, re-evaluate deferred items, update the canon); the 12 mandatory-audit triggers; audit-skippable categories; audit-evidence-in-commit-message conventions; self-test before commit; self-consistency audit trigger; and the proposed-rule adoption protocol (≥80% clean categorization threshold, sweep-then-decide workflow) — is codified at [`atu-method/docs/framework.md §7`](../../atu-method/docs/framework.md). This canon does not duplicate that prose.
 
-1. **State the English syntactic fact.** If you cannot cite it (UD label + CGEL/Quirk vocabulary), the proposal is insufficient.
-2. **Provide corpus evidence.** Worked examples from the actual text — not hypotheticals.
-3. **Survive adversarial audit.** For proposals matching any of the following **mandatory-audit triggers**, an adversarial audit (hostile agent or equivalent external skeptical review) MUST be dispatched and its findings must be reflected in the commit. Skipping audit on a triggered proposal is a protocol violation.
+**BoFM-canon-specific change-protocol artefacts:**
 
- **Mandatory-audit triggers (12 categories):**
- 1. **New named rules / sub-clauses / categories** — including precedence cross-references between rules (e.g., "Rule A trumps Rule B at X"). Shape-matches feel-tests, enumerated lists, and subjective carve-outs particularly.
- 2. **Rule status promotions** — *proposed* → settled. Removes the hedge; stakes increase.
- 3. **Spot-check-based proposals** — any canon claim resting on <full-corpus-sweep evidence. Claims like "I checked 30 instances and the pattern is uniform" MUST be verified by a full-corpus classification before codification.
- 4. **Reclassification of canon-recorded Category B/C items** — once a verse, rule, or item is recorded as Category B/C in canon prose or pending.md, subsequent sessions cannot silently reclassify it under a different rule-framing.
- 5. **Rule deletions or SCOPE narrowings that retire live applications** — retiring a rule is as high-stakes as adding one; audit prevents discarding legitimate work.
- 6. **Mechanical signature / validator changes under settled rules** — adding a verb class to a closed-list UD signature, refining a UD trigger, or changing validator conditions silently expands or contracts rule coverage.
- 7. **Corpus sweeps ≥5 instances under a settled rule** — a sweep asserts "the rule fires cleanly here" N times; the collective scope-claim needs audit even when individual instances are Category A.
- 8. **Canonical example additions to settled rules** — examples shape rule interpretation; a poorly-chosen example silently redefines the rule.
- 9. **Meta-rule changes to §7 Change Protocol itself** — changes to this protocol MUST be audited (this very trigger codified 2026-04-23 after hostile audit caught the blind-spot in an earlier 6-trigger draft).
- 10. **Discipline-shifting memory file additions** — new `feedback_*.md` or `project_*.md` files that shape how Claude approaches canon work are behaviorally-governing, not just observations; they need the same scrutiny as canon.
- 11. **Cross-project imports** (GNT ↔ BofM) **or recoveries from retired canon** (v1, handoffs) — provenance from a sibling project or older version is not validation; the imported claim must have BofM corpus evidence independent of its source.
- 12. **Corpus-fit verification — post-codification AND post-detection**.
- - **(a) Post-codification (original).** When a new rule, sub-clause, or named pattern is codified, the rule is **not "closed" until a corpus-wide goal-fit audit has confirmed (i) all eligible instances conform OR (ii) all residuals are explicitly enumerated** in pending.md. Codifications based on partial-corpus evidence are vulnerable to undercount; the canon's empirical "HOW WE KNOW" claim must be verified against full-corpus reality. **Audit-required:** any codification where the initial sweep was partial. **Audit-skippable:** rules whose initial codification WAS the full-corpus sweep (the sweep IS the audit). Run within the codifying session if practical, or as the FIRST item of the next session — not deferred indefinitely.
- - **(b) Post-detection.** This trigger ALSO fires when Stan-eyeball or any audit surfaces a violation of an **existing** (settled) rule. Application drift accumulates on long-codified rules through ongoing corpus modifications and prior partial-sweep gaps. When a violation is detected, schedule a same-rule full-corpus re-sweep within the same session if practical, or as the next session's first task. Goal-fit failures cluster — finding one of a shape elsewhere is the predictable outcome of partial-sweep history.
- - **Audit dimensions to consider**: goal-fit (does corpus implement codified rules), application-consistency on **formulaic phrases** (AICTP, "Yea verily," etc.), application-consistency on **parallel-list constructions** (gifts list, beatitudes, wo-series, blessed-series, conditional pairs — see §1 Parallel-List Uniformity Principle), self-consistency (cross-references, defensibility triplets), smuggling (judgment-handoff failure mode). Dispatch in parallel by default.
- - **Precedents.**
- - 2026-04-25 saith-the-Lord: codified with HOW WE KNOW claiming "19 corpus instances all stacked"; sweep found ~38 instances, ~26 not yet split — empirical undercount. Drove (a).
- - 2026-04-26 Alma 27:1: Stan caught Rule 17 cognition-class violation on a settled rule (cognition + parenthetical-adverbial separation); re-sweep found 4 siblings (Mosiah 20:6, 22:15, Alma 47:12, 49:22), all the same AICTP-bracketed *when X found that Y* shape. Drove (b).
- - 2026-04-26 Moroni 10:8-17 gifts list: Stan caught parallel-list inconsistency (vv 9, 12, 13 split where vv 10, 11, 14-16 merged); drove the **parallel-list audit dimension** addition.
+- **Audit-trail per rule:** `private/audit-trail/<rule-id>.md` — populated as rules are migrated; captures sweep results, retirement events, dated decisions that would otherwise bloat the canon's operational entries.
+- **Scholarship companion per rule:** [`atu-method/scholarship/bofm/<rule-id>.md`](../../atu-method/scholarship/bofm/) — captures rationale, grammatical-grounding citations, empirical-validation evidence, intellectual lineage, and adversarial history. Per the framework's two-audience principle (operational entry for the robot; scholarship companion for the scholar), substantive WHY content lives there, not here.
+- **Commit-msg gate:** `validators/check_canon_extensions.py` — detects §7.3 mandatory-audit-trigger patterns in staged canon diffs; requires audit-evidence keywords in commit body.
+- **Baseline-check pre-commit:** `validators/hooks/install.sh` wires `validators/run_all.py --baseline-check` as pre-commit; blocks regressions vs `validators/.baseline.json`.
 
- **Audit dispatch protocol — parallel by default.** When a proposal triggers multiple audit dimensions (e.g., fake-rule test + corpus-full-sweep + scope-test), dispatch all in a single message with multiple Agent tool calls. Sequential only when audit A's verdict determines whether audit B should run. Parallelization substantially reduces friction; codified 2026-04-23 after demonstrating 3 parallel audits completed in ~26 seconds each vs. ~80+ seconds sequential.
-
- **Audit-skippable categories (all must hold for the proposal to bypass audit):**
- - Category A mechanical corpus edits per already-codified rules (sweep-scale ≥5 still triggers #7 regardless)
- - Typo fixes, cross-reference updates that don't assert precedence, internal formatting cleanups
- - Deletions of items already reverted in the same session (audit-trail cleanup)
- - Defensibility-capture additions (WHY/HOW WE KNOW/SCOPE) to already-settled rules without changing the rule's scope
-
- **Efficacy note.** 5/5 audits this session produced material findings: 3 fake-rule prevents (Stab-commata, doctrinal-weight bump, EP-6), 1 reclassification-dodge catch (1 Ne 19:5), 1 reversed provisional-reject (R28). The discipline's qualitative value is established; a per-item catch-rate statistic would require randomized controls we don't have. Skip the statistics; keep the discipline.
-4. **Apply uniformly.** If the rule fires in one place, run the validator or equivalent sweep to catch every instance. Sedimented inconsistency is the primary failure mode.
-5. **Defensibility capture (prospective only from GNT cross-project directive).** Every new rule, sub-rule, or merge-override added to the canon must carry three elements:
- - **WHY** — the editorial reason the rule exists (what failure mode does it prevent, what pattern does it reveal)
- - **HOW WE KNOW** — corpus evidence + adversarial validation (worked examples, sweep counts, audit findings)
- - **SCOPE** — where the rule applies, where it doesn't (named exclusions, interaction with other rules)
- This is a prospective meta-rule; retroactive audit of older rules is optional, not required. The purpose is to ensure each new rule is documented well enough that a future reviewer can judge whether it earns its place.
-6. **Re-evaluate deferred items when the rule-set changes.** When a rule is adopted or refined, any corpus item previously classified as `REVIEW-REQUIRED` or `deferred-editorial` must be re-evaluated against the updated rule-set before being carried forward as still requiring Stan's judgment. Carrying forward stale classifications wastes session time and hides cases the current rule-set now handles cleanly.
-7. **Update this canon.** Edit the relevant rule section to its new state. Per-change rationale (audit-dispatch evidence, retraction precedent, scope claim) lives in the commit message, which is the durable audit trail; the canon prose itself reads as the current method. Never edit history silently.
-
-**Self-consistency audit trigger.** When a session adds ≥2 new canon subsections, rules, or merge-overrides, run a light self-consistency audit before wrap: check that (a) all new cross-references resolve, (b) no new rule contradicts an existing rule, (c) all three defensibility elements (WHY/HOW WE KNOW/SCOPE) are present for each addition. Short pass; catches stale cross-refs and incompatibilities cheaply.
-
-### Proposed-rule adoption protocol
-
-A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is a testable state, not a hedging license.
-
-**Adoption criteria.** A proposed rule is adopted when its first corpus sweep produces **≥80% clean categorization** — i.e., 80%+ of matched instances resolve to unambiguous SPLIT or MERGE decisions without heuristic ambiguity. Ambiguous residue (`REVIEW-REQUIRED`) ≥20% signals the rule needs refinement before adoption.
-
-**Sweep-then-decide workflow.**
-1. Write validator implementing the rule's conditions.
-2. Run against full corpus.
-3. If clean ≥80% → apply clean decisions mechanically (Category A per §2), remove "proposed" label; capture the adoption evidence (sweep counts, audit verdicts) in the commit message.
-4. If clean <80% → identify the ambiguity pattern, refine the rule with an explicit sub-clause, re-run.
-5. Repeat until clean ≥80%, then adopt.
-
-**Do not flag clean categorizations for per-item review.** A proposed rule whose conditions are met is as authoritative as an adopted rule on those specific instances; the "proposed" label only gates corpus-wide sweep confidence, not per-instance application.
 
 ---
 
