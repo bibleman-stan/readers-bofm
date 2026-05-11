@@ -124,6 +124,7 @@ SKIP_PATHS = {
 SKIP_PREFIXES = (
     "C:/", "c:/", "/",
     "readers-",      # sibling projects
+    "atu-method/",   # sibling repo: shared framework, scholarship, memories
     "archive/",
     "private/",      # gitignored session folders, sub-method docs
 )
