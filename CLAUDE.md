@@ -201,7 +201,7 @@ TTS audio reads `data-orig` (authentic text), NOT `data-mod` (modern). Never cha
 ## Git Workflow
 
 - All work on `main` branch
-- Stan pushes from his local machine — Claude Code cannot push (403 proxy error)
+- Pushes: Claude can push when Git Credential Manager auth resolves (verified atu-method 2026-05-11). Treat each push as user-confirmation territory — propose first, push on thumbs-up. The prior "cannot push (403 proxy error)" note reflected readers-bofm's older credential state, not a general limitation; don't preemptively refuse.
 - Bump service worker cache version with every CSS/JS/HTML change
 - Audio files (.mp3) are committed directly to repo (no LFS)
 - **Security alert:** Google API key exposed at `annotations.js` line 26 — needs restriction in Google Cloud Console
@@ -348,7 +348,7 @@ Never overwrite history — always append.
 **Stan:**
 - Makes all final editorial decisions on line breaks
 - Reviews all proposed changes before they touch canonical files
-- Pushes to GitHub
+- Authorizes pushes (Claude executes on thumbs-up — see Git Workflow)
 - Has final say on all Category B and C colometry decisions
 
 **Claude Code:**
