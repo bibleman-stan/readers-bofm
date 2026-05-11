@@ -135,7 +135,7 @@ Lexicalized closed-list units. Triggers leave no room for proposition-level anal
 
 **TIER 3 — Complement integrity**
 - **R26** Adjective + that complement (most specific — direct ADJ head)
-  - Wins over R7 when matrix lemma ∈ {expedient, needful, necessary, possible, desirous, impossible, wisdom, meet}
+  - Wins over R7 when matrix lemma ∈ R26 closed list (see §5 R26 `R26_ADJ_PREDICATES` + `R26_NOUN_PREDICATES`; current state: `{possible, expedient, desirous, necessary, needful, impossible, better, well, requisite}` ADJ + `{wisdom}` NOUN-as-predicate; `meet` dropped 2026-05-10 per zero-corpus-fit)
 - **R17** Verb + complement (six closed verb classes + topic-PP extension)
   - Yields to R26 when ADJ is the direct head; wins over R19 when both apply
   - Yields to **J3 (speech-act announcement)** when the ccomp body is ≥8 word tokens under a short speech-tag (see §5 R17 speech-indirect long-complement exception)
@@ -166,7 +166,7 @@ Split-trigger fires but resulting fragment fails atomic-thought.
 - **R6** Causal "because" — yields to "because of NP" PP-construction (advcl head must be VERB or ADJ); fronted-because routes to REVIEW
 - **R7** Purpose finite "that + MODAL"
   - Yields to **R27** when compound mark is *insomuch that*
-  - Yields to **R26** when matrix is ADJ in the {expedient, needful, necessary, possible, desirous, impossible, wisdom, meet} class
+  - Yields to **R26** when matrix is ADJ/NOUN in the R26 closed list (see §5 R26; pointer-only here to avoid drift)
   - Yields to **result-clause reading** when *so/such* (as advmod or amod) scopes the matrix's modifier AND the *that*-clause is in advcl-result attachment (consecutive consequence). Surface presence of *so/such* alone is not sufficient — *such great X (NP) that ye may Y* is genuine R7 purpose.
   - Yields to **Parallel-List Uniformity** within multi-verse lists (e.g., Moroni 10:8-17)
 - **R19** Cataphoric vs anaphoric "that"/which
