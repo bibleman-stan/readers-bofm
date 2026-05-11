@@ -80,6 +80,7 @@ Per-rule operational detail lives in §5. Each rule's full template entry (Statu
 | R16 | AICTP dangling "that" | Active | A | 3 | §5 R16 |
 | R17 | Complement integrity | Active | A | 3 | §5 R17 |
 | R18 | Fixed idiom integrity | Active | A | 3 | §5 R18 |
+| R18a | Patriarch-deity-triad fixed formula | Active | A | 3 | §5 R18a |
 | R19 | Cataphoric / anaphoric relative | Active | A (PROPN/PRON/DET) + B (NOUN-REVIEW) | 3 | §5 R19 |
 | R20 | No-anchor (structural floor) | Active | B | 3 | §5 R20 |
 | R21 | Participial absolute integrity | Active | A | 3 | §5 R21 |
@@ -1112,6 +1113,71 @@ Date-colophon formulas are governed by R23 (sister rule, same KEEP_WHOLE logic; 
 - Closed-list definitions: §Fixed-Idioms-R18 (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R18.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/scholarship/bofm/R18.md`](atu-method/scholarship/bofm/R18.md)
+
+<!-- ===== R18a ===== -->
+### R18a: Patriarch-Deity-Triad Fixed Formula
+
+**Status:** Active
+**Category:** A (Mechanical, mandatory)
+**Decidability:** Surface-pattern
+**Layer:** 3
+
+**Rule.** A v2-mine line containing the patriarch-deity-triad surface pattern — the substring `God of Abraham` followed (within the same line, in order, with arbitrary intervening conjunctions/prepositions/punctuation) by `Isaac` followed by `Jacob` — MUST keep the entire spanning sequence (from `God of Abraham` through the final `Jacob` token) whole on a single line. No internal line break MAY occur within the matched span, regardless of resulting line length. The triad functions as a single fixed referring expression to YHWH; severing it across lines fractures a unitary deity-reference into the apparent enumeration of three deities.
+
+**UD signature.**
+~~~yaml
+trigger:
+  surface_pattern: PATRIARCH_DEITY_TRIAD
+  match: spanning_sequence_within_single_line
+  required_tokens_in_order:
+    - "God of Abraham"
+    - "Isaac"
+    - "Jacob"
+action: KEEP_WHOLE
+~~~
+
+**Closed lists** (machine-readable). Variant surface forms attested in the BoFM corpus, listed for documentation; the operational matcher uses the spanning-sequence rule above rather than exact-string lookup.
+~~~yaml
+PATRIARCH_DEITY_TRIAD_VARIANTS:
+  # Fully-distributed (each patriarch gets its own "the God of")
+  - "the God of Abraham, the God of Isaac, and the God of Jacob"
+  - "the God of Abraham, and the God of Isaac, and the God of Jacob"
+  - "even the God of Abraham, and the God of Isaac, and the God of Jacob"
+  # Partially-distributed (shared "the God of"; subsequent patriarchs share via "of" or bare)
+  - "the God of Abraham, and of Isaac, and the God of Jacob"
+  - "the God of Abraham and Isaac and of Jacob"
+  - "the God of Abraham, and Isaac, and Jacob"
+  # Permissive matcher: any surface form containing the spanning sequence
+  # "God of Abraham" ... "Isaac" ... "Jacob" within a single line
+~~~
+
+**Scope.** Triadic deity-formula references to YHWH where the formula is anchored by `God of` governing the first patriarch (Abraham). The formula is functionally a fixed-lexical-item proper-noun-equivalent: a single long referring expression that names the LORD by the covenantal-patriarch genealogy. The BoFM register treats this formula as a single referring unit (as the KJV register does), parallel to how `Lord of Hosts` functions as a fixed appellation rather than a head-modifier construction subject to compositional break analysis. R18a is a sister rule to R18 (multi-word lexicalized idioms), R1 (AICTP), and R23 (date-colophon formulas) — each governs a closed-list span of formula-protected token sequences.
+
+**Exclusions (closed list).**
+1. **Patriarch personal-name list without `God of` prefix.** `Abraham, Isaac, and Jacob` appearing as a coordinate-NP list referring to the three persons (not the deity) — e.g., *"covenanted with Abraham, Isaac, and Jacob"* (1 Ne 17:40), *"to sit down with Abraham, Isaac, and Jacob"* (Alma 7:25) — falls outside R18a. These are coordinate personal-name references governed by default coordinate-NP-object merge per §1.9 scope (coordinate predications only earn N≥3 stacking; coordinate objects merge). Discrimination: presence of `God of` immediately preceding `Abraham` is the diagnostic anchor.
+2. **Non-canonical triad orderings.** R18a recognizes only the canonical order `Abraham → Isaac → Jacob`. The BoFM corpus exhibits no reversed orderings; any future hypothetical reversal would NOT match the spanning-sequence rule and would NOT be governed by R18a.
+3. **Embedded narrative tokens within the span.** When the matcher finds `God of Abraham` and `Isaac` and `Jacob` in order within the same line, intervening tokens are part of the protected span (e.g., `the Lord God, the God of Abraham, the God of Isaac, and the God of Jacob` — the `the Lord God,` clause-internal anchor and the `, the` connective tokens are all inside the protected span when present on the same line).
+
+**Precedence.** §3.5 Tier 2. Indivisibility tier; wins over all subtractive vetoes and merge-overrides at the formula-internal level. Coexists with R1, R15, R16, R18, R23 in Tier 2 (each governs a distinct closed-list formula span). Where the protected span overlaps a vocative (R15) or AICTP (R1) on the same line, the longer-anchored Tier 2 formula prevails at the overlap boundary; in practice the triad and AICTP do not co-occur on a single line in the BoFM corpus.
+
+**Examples.**
+
+- *Compliant (fully-distributed merged):* `except it was the God of Abraham, and the God of Isaac, and the God of Jacob;` (Alma 36:2 — span whole on one line)
+- *Compliant (with matrix-anchor inside span):* `yea, the Lord God, the God of Abraham, the God of Isaac, and the God of Jacob, did deliver them out of bondage.` (Alma 29:11 after merge — entire span whole including the `yea, the Lord God,` anchor)
+- *Compliant (partially-distributed):* `yea, the God of Abraham, and of Isaac, and the God of Jacob,` (1 Ne 19:10 — span whole on one line)
+- *Compliant (compressed):* `in that God who was the God of Abraham, and Isaac, and Jacob;` (Mosiah 7:19 — span whole on one line)
+- *Non-compliant:* `For the fulness of mine intent is that I may persuade men to come unto the God of Abraham, / and the God of Isaac, / and the God of Jacob,` (1 Ne 6:4 split state — three lines violate KEEP_WHOLE)
+- *Non-compliant:* `even the God of Abraham, and the God of Isaac, / and the God of Jacob;` (Mormon 9:11 split state — two lines violate KEEP_WHOLE)
+- *Excluded (Exclusion #1 — personal-name list):* `yea, even Abraham, Isaac, and Jacob;` (1 Ne 17:40 — no `God of` anchor; coordinate personal-name list, R18a does not fire)
+- *Excluded (Exclusion #1 — personal-name list):* `that ye may at last be brought to sit down with Abraham, Isaac, and Jacob,` (Alma 7:25 — no `God of` anchor; R18a does not fire)
+
+**Implementation.**
+
+- Validator (surface-pattern): [`validators/colometry/validate_rule_18a_patriarch_triad.py`](../../../../readers-bofm/validators/colometry/validate_rule_18a_patriarch_triad.py)
+- Applier: (none — surface-pattern keep-whole; validator reports violations for hand-correction or merge-applier dispatch)
+- Closed-list definitions: §Patriarch-Deity-Triad-R18a (this section)
+- Audit trail: `readers-bofm/private/audit-trail/R18a.md` (to be populated)
+- Scholarship: `atu-method/scholarship/bofm/R18a.md` (to be authored)
 
 <!-- ===== R19 ===== -->
 ### R19: Cataphoric "That"/Relative Clauses Break; Anaphoric Merge
