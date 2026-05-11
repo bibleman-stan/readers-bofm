@@ -201,7 +201,7 @@ TTS audio reads `data-orig` (authentic text), NOT `data-mod` (modern). Never cha
 ## Git Workflow
 
 - All work on `main` branch
-- Pushes: Claude pushes autonomously by default after committing — Stan explicitly authorized blanket push 2026-05-11 to remove unnecessary middle-man friction. Exceptions that still warrant confirmation: force-pushes (push --force / --force-with-lease), pushes to non-main branches, pushes where the diff hasn't been shown to Stan yet (e.g., agent-applied bulk corpus changes). Git Credential Manager auth resolves cleanly; the historical "cannot push (403 proxy error)" note was readers-bofm-specific credential state.
+- Pushes: Claude pushes autonomously by default after committing — Stan explicitly authorized blanket push 2026-05-11 to remove unnecessary middle-man friction. Exceptions that still warrant confirmation: force-pushes (push --force / --force-with-lease), pushes to non-main branches, pushes where the diff hasn't been shown to Stan yet (e.g., agent-applied bulk corpus changes). Transport: SSH (since 2026-05-11) — silent, no browser prompts. All four sibling repos (readers-bofm, atu-method, readers-gnt, readers-tanakh) use `git@github.com:bibleman-stan/<repo>.git` remotes against the `bibleman-windows-desktop` SSH key.
 - Bump service worker cache version with every CSS/JS/HTML change
 - Audio files (.mp3) are committed directly to repo (no LFS)
 - **Security alert:** Google API key exposed at `annotations.js` line 26 — needs restriction in Google Cloud Console
