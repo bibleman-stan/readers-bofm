@@ -63,33 +63,41 @@ Per-rule Category assignments are in each §5 entry's `Category:` header field.
 
 ## 3. Quick-Reference Rule Table
 
-| # | Name | Type | Trigger (UD signature) | Action |
-|---|------|------|------------------------|--------|
-| 1 | AICTP formula integrity | Mechanical | `expl(came, it)` + token sequence *"And it came to pass"* | Keep whole; line ends at or after "that" per Rule 16 |
-| 5 | Equivalence "or" as appositive | Mechanical | `cc(conj, or)` where *that is to say* could substitute | MERGE |
-| 6 | Causal clauses break | Mechanical | `advcl` with `mark` = *because* | BREAK before *because* |
-| 7 | Purpose clauses break | Mechanical | `advcl` with `mark` = *that* + `aux` = MODAL (*may, might, shall, should*) | BREAK before *that* |
-| 9 | Line-final CCONJ forbidden | **Layer 1** → [ud-taxonomy §7](../../data/syntax-reference/ud-taxonomy.md) | Line-final token POS = `CCONJ` | Move to lead next line |
-| 10 | V + DO split forbidden | Mechanical | Line-final `VERB` with `obj` on following line (bare NP continuation) | MERGE |
-| 11 | Line-final DET (article) forbidden | **Layer 1** → [ud-taxonomy §7](../../data/syntax-reference/ud-taxonomy.md) | Line-final token POS = `DET` | MERGE forward |
-| 12 | Line-final AUX forbidden | **Layer 1** → [ud-taxonomy §7](../../data/syntax-reference/ud-taxonomy.md) | Line-final `AUX` with `aux` relation to VERB on next line | MERGE forward |
-| 13a | Line-final ADP (preposition) forbidden | **Layer 1** → [ud-taxonomy §7](../../data/syntax-reference/ud-taxonomy.md) | Line-final POS = `ADP` or `case` relation pending | MERGE forward (exceptions: phrasal-verb particles, stranded prepositions in relatives) |
-| 15 | Vocative indivisible | Mechanical | Multi-word vocative phrase (INTJ *O* + NOUN chain, tagged `vocative`) | Keep whole |
-| 16 | AICTP dangling "that" | Mechanical | *that* after AICTP would be line-final | BREAK before *that* |
-| 17 | Complement integrity | Mechanical | `ccomp(V, clause)` with `mark(clause, that)` where V ∈ {causative, aspectual, speech-indirect, cognition, volition, FEF} | MERGE across boundary |
-| 18 | Fixed idiom integrity | Mechanical | Token sequence matches fixed-idiom list | Never break inside |
-| 19 | Relative clauses — cataphoric vs anaphoric | Mechanical + judgment | `acl:relcl(head, clause)` — judgment on information-advancement | Cataphoric → BREAK; anaphoric → MERGE |
-| 20 | No-anchor rule | Mechanical | Line lacks any of: finite VERB, infinitive, predicative participle, independently predicated substantive | Line is invalid; merge or restructure |
-| 21 | Participial absolute integrity | Mechanical | Subject-bearing participial clause (form: X having Y-ed / X being Y) | Earns own line |
-| 22 | Divine title appositives | Editorial | Appositional divine-title NP after a named referent | INTRODUCING (formal anchor present) → STACK SPLIT; REFERENCING (default) → MERGE |
-| 23 | Date colophon integrity | Mechanical | Token sequence *"in the Nth year of the reign of the judges"* | Keep whole |
-| 26 | Adjective + "that" complement stays | Mechanical | `ccomp` of `ADJ` predicate with `mark` = *that* | MERGE |
-| 27 *(proposed)* | "Insomuch that" binding | Mechanical + judgment | `advcl` with `mark` = *insomuch that* | Default SPLIT; MERGE only if result ≤8 words AND subject-continuity AND no camera-angle shift |
-| 28 *(proposed)* | Speech-act announcement after frame | Mechanical | Main-clause speech VERB with `nsubj` separated from direct discourse by intervening `advcl` | Speech-tag earns its own line |
-| EP-1 | "According to" manner vs. source | Editorial | PP headed by *according to* | Manner (HOW) → MERGE; source/authority (BY WHAT) → SPLIT |
-| EP-3 | Inverted predicate | Editorial | Predicate-fronted copular construction | Earns own line |
-| EP-4 | Title/role + domain | Editorial | Title-NP + headed `nmod` domain PP | Keep together |
-| EP-5 | Virtue/vice lists | Editorial | Stacked moral qualities | Examine for parallel; apply pattern if detected; else merge |
+Per-rule operational detail lives in §5. Each rule's full template entry (Status / Category / Decidability / Layer / Rule / UD signature / Scope / Exclusions / Precedence / Examples / Implementation) is at §5; this table is the index.
+
+| # | Name | Status | Category | Layer | §5 Anchor |
+|---|------|--------|----------|-------|----------|
+| R1 | AICTP formula integrity | Active | A | 3 | §5 R1 |
+| R5 | Equivalence "or" as appositive | Active | B | 3 | §5 R5 |
+| R6 | Causal clauses break | Active | A | 3 | §5 R6 |
+| R7 | Purpose clauses break | Active | A | 3 | §5 R7 |
+| R9 | Line-final CCONJ forbidden | Active | A | 1 | §5 R9 (Layer-1 pointer) |
+| R10 | V + DO split forbidden | Active | A | 1 | §5 R10 |
+| R11 | Line-final DET forbidden | Active | A | 1 | §5 R11 (Layer-1 pointer) |
+| R12 | Line-final AUX / compound-verb under shared aux | Active | A | 1+3 (mixed) | §5 R12 |
+| R13a | Line-final ADP forbidden | Active | A | 1 | §5 R13a (Layer-1 pointer) |
+| R15 | Vocative indivisible | Active | A | 3 | §5 R15 |
+| R16 | AICTP dangling "that" | Active | A | 3 | §5 R16 |
+| R17 | Complement integrity | Active | A | 3 | §5 R17 |
+| R18 | Fixed idiom integrity | Active | A | 3 | §5 R18 |
+| R19 | Cataphoric / anaphoric relative | Active | A (PROPN/PRON/DET) + B (NOUN-REVIEW) | 3 | §5 R19 |
+| R20 | No-anchor (structural floor) | Active | B | 3 | §5 R20 |
+| R21 | Participial absolute integrity | Active | A | 3 | §5 R21 |
+| R22 | Divine title appositives | Active | B | 3 | §5 R22 |
+| R23 | Date colophon integrity | Active | A | 3 | §5 R23 |
+| R26 | Adjective (or NOUN-as-predicate) + "that" | Active | A | 3 | §5 R26 |
+| R27 | "Insomuch that" binding | Proposed | A | 3 | §5 R27 |
+| R28 | Speech-act announcement after frame | Active | A | 3 | §5 R28 |
+| EP-1 | "According to" manner vs. source | Active | B | 3 | §5 EP-1 |
+| EP-3 | Inverted predicate | Active | B | 3 | §5 EP-3 |
+| EP-4 | Title/role + domain | Active | B | 3 | §5 EP-4 |
+| EP-5 | Virtue/vice lists | Active | B | 3 | §5 EP-5 |
+
+**Status semantics:** Active = settled, fires per detector signatures. Proposed = awaiting corpus-sweep verification per the framework's adoption protocol at [`atu-method/docs/framework.md §7.8`](../../atu-method/docs/framework.md). Retired = no longer governs (none in current canon; retired rules would be archived).
+
+**Category semantics:** A = Mechanical, mandatory (rule firing IS the approval; auto-apply by default). B = Editorial, judgment-required (flag and discuss). C = Theological / textual-critical (hand-curation only).
+
+**Layer semantics:** 1 = generic English-grammar break-legality (refer to [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-reference/ud-taxonomy.md) §7). 3 = project-specific editorial overlay (BoFM rule detail in §5). Layer-1 pointer rules (R9, R11, R13a) have short §5 entries that cross-reference the ud-taxonomy table.
 
 **Guidelines** (useful tendencies, not strict rules): line length as signal; vocative splitting nuances; fronted adverbials; line reordering (rare). (Compound list break signals are now a named sub-rule under structural justification 1 — no longer in this guideline list.)
 
