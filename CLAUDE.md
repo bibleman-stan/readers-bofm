@@ -223,12 +223,12 @@ TTS audio reads `data-orig` (authentic text), NOT `data-mod` (modern). Never cha
 
 1. Generate 2 Nephi ch 25-33 audio (~49k chars) when credits reset
 2. Test audio playback on bomreader.com for 2 Ne 1-5
-3. Fix audio-highlight sync drift (pericope headers throw off lineIndex count)
-4. Fix 1 Ne 6:1 verse text
-5. Fix KJV diff display (currently destroys ATU line formatting when toggled)
+3. ~~Fix audio-highlight sync drift (pericope headers throw off lineIndex count)~~ — **Investigated 2026-05-11; static analysis shows indices align correctly.** `build_book.py inject_line_indices` + `scripts/generate_audio.py` both count pericope-headers as +1 in the same index space (1 Ne 1: pericope @ data-line-index=0, first sense-line @ data-line-index=1, manifest first entry lineIndex=1 — match). Any actual playback drift is timing-related (audio rate vs manifest timestamps), not indexing. Re-open only with runtime evidence of misalignment.
+4. ~~Fix 1 Ne 6:1 verse text~~ — **Done 2026-05-11.** v2-mine had stray break at `after / upon these plates`; merged onto one line per v0/v1 baselines.
+5. ~~Fix KJV diff display (currently destroys ATU line formatting when toggled)~~ — **Investigated 2026-05-11; bug is dormant.** Toggle UI not surfaced in current app (line 3768 removes `show-kjv-diff` on load, no handler adds it). CSS already shows diff as annotation below sense-lines (lines 1469-1484); the originally-feared `verse-normal` hide does not exist in current code. Surface the toggle if needed; rule is correct.
 6. Fix scripts/build_kjv_diff.py hardcoded paths (line numbers may have drifted; re-verify)
 7. Light mode CSS verification for new UI elements
-8. Surface book introductions (currently hidden in settings-panel-old)
+8. ~~Surface book introductions (currently hidden in settings-panel-old)~~ — **Done.** Book intros are in the nav panel (line 3493 builds the page; line 2392 in-app explainer copy points users at "Open the navigation panel and tap a book name").
 9. Restrict Google API key in Google Cloud Console
 
 ---
