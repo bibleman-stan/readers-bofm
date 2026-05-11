@@ -72,6 +72,24 @@ FRAME_PREPS = {
     "on", "upon", "before", "until", "since",
 }
 
+# Liturgical-formula filter (Category C — hostile-audit 2026-05-10):
+# Sacred-formula PP frames ("In the name of Jesus Christ", etc.) must NOT
+# auto-merge; they carry their own formulaic weight as Category C boundaries.
+# Detection: Pattern B obl-PP where case lemma is "in" AND the obl head's
+# form/lemma matches a deity or sacred-name token.
+DEITY_SACRED_NAMES = {
+    "jesus", "christ", "god", "lord", "father", "son",
+    "holy", "ghost", "spirit",
+}
+
+# Matrix-completeness filter (hostile-audit 2026-05-10):
+# Skip merge when the matrix ROOT is a copula ("be") that has no predicate
+# complement (xcomp/ccomp/nsubj:pass/obj) on the same line — the proposition
+# is grammatically open and continues on the next line.
+# Operationally: matrix lemma in COPULA_LEMMAS AND no xcomp/ccomp dependent
+# inside the matrix line.
+COPULA_LEMMAS = {"be", "is", "was", "were", "am", "are"}
+
 
 def _subtree_lines(sent: Sentence, root: Token, line_map: dict) -> set[int]:
     """Return the set of v2-mine lines occupied by the subtree of `root`."""
@@ -122,6 +140,47 @@ def _is_substantive_frame(sent: Sentence, frame_root: Token) -> bool:
                 }:
                     return True
     return False
+
+
+def _is_liturgical_formula(sent: Sentence, obl: Token, case_tokens: list) -> bool:
+    """Return True if this Pattern B PP is a sacred/liturgical formula.
+
+    Condition: case lemma is "in" AND the obl head's lowercased form or lemma
+    appears in DEITY_SACRED_NAMES.  Catches "In the name of Jesus Christ" and
+    similar.  Category C — must not auto-merge (hostile-audit 2026-05-10).
+    """
+    if not any(c.lemma == "in" for c in case_tokens):
+        return False
+    form_lc = obl.form.lower()
+    lemma_lc = obl.lemma.lower()
+    if form_lc in DEITY_SACRED_NAMES or lemma_lc in DEITY_SACRED_NAMES:
+        return True
+    # Also check immediate children of the obl for a deity name
+    # (handles "In the name of Jesus Christ" where obl head is "name")
+    for t in sent.dependents_of(obl):
+        if t.form.lower() in DEITY_SACRED_NAMES or t.lemma.lower() in DEITY_SACRED_NAMES:
+            return True
+    return False
+
+
+def _is_incomplete_matrix(sent: Sentence, matrix_root: Token,
+                           matrix_lines: set[int], line_map: dict) -> bool:
+    """Return True if the matrix clause is grammatically incomplete.
+
+    Condition: matrix ROOT lemma is a copula (be/is/was/were) AND the matrix
+    line contains no predicate complement (xcomp, ccomp) that would complete
+    the proposition — meaning the copula is awaiting a predicate on a
+    subsequent line.  (hostile-audit 2026-05-10: 2 Ne 4952/4953 case.)
+    """
+    if matrix_root.lemma not in COPULA_LEMMAS:
+        return False
+    # Look for xcomp or ccomp dependents on the same matrix line
+    for dep in sent.dependents_of(matrix_root):
+        if dep.deprel in ("xcomp", "ccomp"):
+            dep_line = line_map.get((sent.sent_id, dep.id))
+            if dep_line is not None and dep_line in matrix_lines:
+                return False  # predicate complement IS present on this line
+    return True  # copula with no predicate complement → incomplete
 
 
 def _has_matrix_subject(sent: Sentence, matrix_root: Token) -> bool:
@@ -196,6 +255,11 @@ def scan_book(book_id: str) -> list[dict]:
             if frame_max_line in non_frame_lines:
                 continue  # frame line shared with matrix tokens → not isolated
 
+            # Matrix lines for completeness filter
+            matrix_lines = _matrix_tokens_lines(
+                sent, matrix_root, frame_subtree_ids, line_map
+            )
+
             gap = matrix_line - frame_max_line
             if gap != 1:
                 bucket = "REVIEW-REQUIRED"
@@ -203,6 +267,9 @@ def scan_book(book_id: str) -> list[dict]:
             elif _is_substantive_frame(sent, advcl):
                 bucket = "REVIEW-REQUIRED"
                 review_reason = "substantive-frame-J5"
+            elif _is_incomplete_matrix(sent, matrix_root, matrix_lines, line_map):
+                bucket = "REVIEW-REQUIRED"
+                review_reason = "incomplete-matrix-copula"
             else:
                 bucket = "STRONG-MERGE-CANDIDATE"
                 review_reason = None
@@ -249,13 +316,24 @@ def scan_book(book_id: str) -> list[dict]:
             if frame_max_line in non_frame_lines:
                 continue
 
+            # Matrix lines for completeness filter
+            matrix_lines_b = _matrix_tokens_lines(
+                sent, matrix_root, frame_subtree_ids, line_map
+            )
+
             gap = matrix_line - frame_max_line
             if gap != 1:
                 bucket = "REVIEW-REQUIRED"
                 review_reason = "non-adjacent-gap"
+            elif _is_liturgical_formula(sent, obl, case_tokens):
+                bucket = "REVIEW-REQUIRED"
+                review_reason = "liturgical-formula-C"
             elif _is_substantive_frame(sent, obl):
                 bucket = "REVIEW-REQUIRED"
                 review_reason = "substantive-frame-J5"
+            elif _is_incomplete_matrix(sent, matrix_root, matrix_lines_b, line_map):
+                bucket = "REVIEW-REQUIRED"
+                review_reason = "incomplete-matrix-copula"
             else:
                 bucket = "STRONG-MERGE-CANDIDATE"
                 review_reason = None

@@ -40,7 +40,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from validators.parsing.conllu_query import load_conllu
+from validators.parsing.conllu_query import load_conllu, Sentence, Token
 from validators.parsing.line_mapping import build_line_map, book_paths
 
 BOOKS = [
@@ -80,9 +80,49 @@ def _line_ends_with_colon(v2_path: str, line_num: int) -> bool:
     return False
 
 
-def _word_token_count(sent, root) -> int:
+def _word_token_count(sent: Sentence, root: Token) -> int:
     """Count non-PUNCT tokens in the subtree of root."""
     return sum(1 for t in sent.subtree(root) if t.upos != "PUNCT")
+
+
+def _is_substantive_advcl(sent: Sentence, advcl_root: Token) -> bool:
+    """Return True if the advcl frame is substantive and earns its own line.
+
+    Mirrors _is_substantive_frame from validate_frame_predication_merges_ud.py.
+    A severed-complement advcl (the conditional/temporal frame inside a ccomp)
+    is substantive — and therefore REVIEW-REQUIRED rather than STRONG — when
+    ANY of:
+    - >=8 word tokens (PUNCT excluded) — bulk threshold
+    - contains a relative clause inside (acl/acl:relcl) — internal predication
+    - contains a coordinate stack of >=2 conj members — list-shaped
+    - contains a purpose-adjunct child (advcl with modal aux) — embedded frame
+
+    See: validate_frame_predication_merges_ud._is_substantive_frame for the
+    parallel application of this heuristic on frame+matrix violations.
+    """
+    subtree = list(sent.subtree(advcl_root))
+    word_tokens = [t for t in subtree if t.upos != "PUNCT"]
+    if len(word_tokens) >= 8:
+        return True
+    for t in subtree:
+        if t is advcl_root:
+            continue
+        if t.deprel in ("acl", "acl:relcl"):
+            return True
+    conj_count = sum(1 for t in subtree if t.deprel == "conj")
+    if conj_count >= 2:
+        return True
+    for t in subtree:
+        if t is advcl_root:
+            continue
+        if t.deprel == "advcl":
+            for aux in sent.aux_of(t):
+                if aux.upos == "AUX" and aux.lemma in {
+                    "may", "might", "shall", "should", "will", "would",
+                    "can", "could", "must",
+                }:
+                    return True
+    return False
 
 
 def scan_book(book_id: str) -> list[dict]:
@@ -150,6 +190,16 @@ def scan_book(book_id: str) -> list[dict]:
                         )
                         if head_line_word_count <= 8:
                             review_reason = "R17-long-complement-short-tag"
+
+                # Filter C: advcl-substantive exception. If the advcl frame
+                # itself is substantive (>=8 word tokens, contains relcl,
+                # coordinate stack, or embedded modal advcl), it earns its own
+                # line per J5 and the split is not a violation.  Mirrors the
+                # _is_substantive_frame filter in
+                # validate_frame_predication_merges_ud.py.
+                if review_reason is None:
+                    if _is_substantive_advcl(sent, advcl):
+                        review_reason = "substantive-advcl-J5"
 
                 # Bucket: multi-line gaps are REVIEW-REQUIRED
                 gap = ccomp_line - advcl_line

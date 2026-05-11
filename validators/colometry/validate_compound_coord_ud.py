@@ -150,12 +150,52 @@ def scan_book(book_id: str) -> list[dict]:
                 "v2_path": str(v2_path),
             })
 
-    # Antimetabole filter: within a single sentence, if a (head=X, conj=Y, gov=G)
-    # finding has a mirror (head=Y, conj=X, gov=G) finding, both are members of
-    # an antimetabole chiasm (e.g., 1 Ne 22:7-8 "manifested unto the Jews / and
-    # also unto the Gentiles ... unto the Gentiles / and also unto the Jews"). The
-    # mirroring is a deliberate rhetorical structure — preserving the visual
-    # parallelism is the editorial intent. Demote both members to REVIEW.
+    # -----------------------------------------------------------------------
+    # Post-detection filters — each can demote STRONG → REVIEW
+    # Applied in order; once demoted, later filters still run but can't
+    # re-promote.
+    # -----------------------------------------------------------------------
+
+    # FILTER 1 — Over-length-cap: if merging head_line + conj_line would
+    # produce a line longer than LENGTH_CAP characters, the merge is not
+    # authorized (length-cap discipline, 2026-05-09 session).  The pattern
+    # is still worth noting, so demote to REVIEW rather than discard.
+    LENGTH_CAP = 85
+    v2_line_cache: dict[str, list[str]] = {}
+    for v in violations:
+        path = v["v2_path"]
+        if path not in v2_line_cache:
+            with open(path, encoding="utf-8") as fh:
+                v2_line_cache[path] = fh.readlines()
+        file_lines = v2_line_cache[path]
+        h_text = file_lines[v["head_line"] - 1].rstrip()
+        c_text = file_lines[v["conj_line"] - 1].rstrip()
+        merged_len = len(h_text) + 1 + len(c_text.lstrip())
+        if merged_len > LENGTH_CAP:
+            v["bucket"] = "REVIEW-REQUIRED"
+            v["review_reason"] = f"over-length-cap ({merged_len}>{LENGTH_CAP})"
+
+    # FILTER 2 — Non-adjacent multi-line spread: if the conj line is more
+    # than 1 line away from the head line, intervening lines already provide
+    # enumeration members — this is a catalog/list spread, not a simple
+    # dangling conjunct.  Merging the tail member onto the (distant) head
+    # would skip over the intervening items.  Demote to REVIEW.
+    for v in violations:
+        gap = v["conj_line"] - v["head_line"]
+        if gap > 1:
+            if v.get("bucket") != "REVIEW-REQUIRED":
+                v["bucket"] = "REVIEW-REQUIRED"
+                v["review_reason"] = f"non-adjacent-spread (gap={gap})"
+            elif "non-adjacent" not in v.get("review_reason", ""):
+                v["review_reason"] += f"; non-adjacent-spread (gap={gap})"
+
+    # FILTER 3 — Antimetabole: within a single sentence, if a (head=X, conj=Y,
+    # gov=G) finding has a mirror (head=Y, conj=X, gov=G) finding, both are
+    # members of an antimetabole chiasm (e.g., 1 Ne 22:7-8 "manifested unto
+    # the Jews / and also unto the Gentiles ... unto the Gentiles / and also
+    # unto the Jews"). The mirroring is a deliberate rhetorical structure —
+    # preserving the visual parallelism is the editorial intent. Demote both
+    # members to REVIEW.
     by_sent: dict[str, list[dict]] = {}
     for v in violations:
         by_sent.setdefault(v["sent_id"], []).append(v)
@@ -171,15 +211,26 @@ def scan_book(book_id: str) -> list[dict]:
             # same-form coord (year/year/year/year list) is catalog repetition,
             # not antimetabole.
             if head_l == conj_l:
-                v["bucket"] = "STRONG-MERGE-CANDIDATE"
+                if "bucket" not in v:
+                    v["bucket"] = "STRONG-MERGE-CANDIDATE"
                 continue
             mirror_key = (conj_l, head_l, v["governor_lemma"])
             mirror = forms_to_v.get(mirror_key)
             if mirror is not None and mirror is not v:
-                v["bucket"] = "REVIEW-REQUIRED"
-                v["review_reason"] = "antimetabole-mirror"
+                if v.get("bucket") != "REVIEW-REQUIRED":
+                    v["bucket"] = "REVIEW-REQUIRED"
+                    v["review_reason"] = "antimetabole-mirror"
+                elif "antimetabole" not in v.get("review_reason", ""):
+                    v["review_reason"] += "; antimetabole-mirror"
             else:
-                v["bucket"] = "STRONG-MERGE-CANDIDATE"
+                if "bucket" not in v:
+                    v["bucket"] = "STRONG-MERGE-CANDIDATE"
+
+    # Any violation not yet assigned a bucket is STRONG by default
+    for v in violations:
+        if "bucket" not in v:
+            v["bucket"] = "STRONG-MERGE-CANDIDATE"
+
     return violations
 
 

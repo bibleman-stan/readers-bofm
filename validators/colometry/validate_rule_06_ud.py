@@ -31,6 +31,54 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from validators.parsing.conllu_query import load_conllu, Sentence, Token
 from validators.parsing.line_mapping import build_line_map_full, book_paths
 
+# ---------------------------------------------------------------------------
+# Rule 17 precedence guard (canon §3.5 Tier 1 > Tier 3).
+# If the advcl is nested inside a ccomp whose head is a Rule-17 governing verb,
+# complement-integrity wins and R6 must not produce a STRONG-SPLIT candidate.
+# Governor list imported from the R17 validator (source of truth).
+# ---------------------------------------------------------------------------
+from validators.colometry.validate_rule_17_ud import GOVERNING_LEMMAS as _R17_GOVERNING_LEMMAS
+
+
+def _inside_r17_ccomp(sent: Sentence, advcl_tok: Token) -> bool:
+    """Return True if the advcl_tok's because-clause is structurally subordinate
+    to a Rule-17 complement-integrity relationship, meaning Rule 17 takes
+    Tier-1 precedence over R6's Tier-3 split.
+
+    Two patterns are guarded:
+
+    Pattern A — advcl nested inside a ccomp:
+        Walk the ancestor chain of advcl_tok.  If any link is
+        current.deprel == 'ccomp' with a R17-governor head, R17 wins.
+
+    Pattern B — advcl is a sibling of a ccomp under a R17-governor head:
+        The advcl's direct head is a R17-governing verb AND that same verb
+        has a ccomp dependent marked with 'that'.  The because-clause is an
+        intervening modifier between the governor and its complement; splitting
+        it severs the governor+ccomp bond (the Alma 41:10 pattern).
+    """
+    # Pattern A: walk ancestors
+    current = advcl_tok
+    while True:
+        parent = sent.head_of(current)
+        if parent is None:
+            break
+        if current.deprel == "ccomp":
+            if parent.lemma.lower() in _R17_GOVERNING_LEMMAS:
+                return True
+        current = parent
+
+    # Pattern B: advcl head is R17 governor AND has a ccomp+that sibling
+    head = sent.head_of(advcl_tok)
+    if head is not None and head.lemma.lower() in _R17_GOVERNING_LEMMAS:
+        for sibling in sent.dependents_of(head):
+            if sibling.deprel == "ccomp" and sibling.id != advcl_tok.id:
+                sibling_mark = sent.mark_of(sibling)
+                if sibling_mark is not None and sibling_mark.lemma.lower() == "that":
+                    return True
+
+    return False
+
 BOOKS = [
     "1nephi", "2nephi", "jacob", "enos", "jarom", "omni",
     "words-of-mormon", "mosiah", "alma", "helaman",
@@ -110,7 +158,15 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
             matrix_size = content_count(sent, matrix)
             combined = advcl_size + matrix_size  # rough (may double-count matrix deps)
 
-            if because_fronted:
+            # Rule 17 precedence guard (canon §3.5 Tier 1 > Tier 3):
+            # if the because-advcl sits inside a ccomp under a R17 governor,
+            # complement integrity wins — demote to REVIEW-REQUIRED.
+            inside_r17 = _inside_r17_ccomp(sent, advcl_tok)
+
+            if inside_r17:
+                bucket = "REVIEW-REQUIRED"
+                review_reason = "r17-ccomp-precedence"
+            elif because_fronted:
                 bucket = "REVIEW-REQUIRED"
                 review_reason = "fronted-because-needs-break-after"
             elif combined <= SHORT_LINE_THRESHOLD:

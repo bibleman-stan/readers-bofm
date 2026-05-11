@@ -95,6 +95,10 @@ PROPER_NAME_APPOSITIVE_RE = re.compile(
     r"^[A-Z][a-zA-Z]+,?\s*(?:and\s+(?:also\s+)?[A-Z][a-zA-Z]+,?\s*)*$"
 )
 
+# R17 ccomp signal: rest after vocative starts with "that " — matrix verb
+# + vocative + that-clause requires 3-way split to honour both R15 and R17.
+THAT_CCOMP_RE = re.compile(r"^that\s+\S", re.IGNORECASE)
+
 SECOND_PERSON_RE = re.compile(
     r"\b(ye|thee|thou|thy|thine|your|yourself|yourselves)\b", re.IGNORECASE
 )
@@ -166,6 +170,20 @@ def split_line_at_vocative(line: str) -> str | None:
         comma_idx = line.find(",", voc_end)
         if comma_idx == -1:
             continue
+
+        # R17 collision check: if there is matrix-clause text BEFORE the
+        # vocative AND the material after the vocative-comma is a "that"-led
+        # ccomp, produce a 3-way split (matrix prefix / vocative / complement)
+        # rather than a 2-way merge of vocative onto the matrix line.
+        prefix = line[:voc_start].strip().rstrip(",").strip()
+        rest_after_voc = line[comma_idx + 1:].lstrip()
+        if prefix and THAT_CCOMP_RE.match(rest_after_voc):
+            # Isolate the vocative span: from voc_start to comma_idx (inclusive)
+            voc_span = line[voc_start:comma_idx + 1].strip().lstrip(",").strip()
+            # Preserve original prefix text including trailing comma if present
+            # (e.g. "And I know," stays as-is — the comma belongs to the text)
+            prefix_end = line[:voc_start].rstrip()
+            return prefix_end + "\n" + voc_span + "\n" + rest_after_voc
         return line[: comma_idx + 1] + "\n" + line[comma_idx + 1:].lstrip()
     return None
 
