@@ -1124,6 +1124,8 @@ Date-colophon formulas are governed by R23 (sister rule, same KEEP_WHOLE logic; 
 
 **Rule.** A v2-mine line containing the patriarch-deity-triad surface pattern — the substring `God of Abraham` followed (within the same line, in order, with arbitrary intervening conjunctions/prepositions/punctuation) by `Isaac` followed by `Jacob` — MUST keep the entire spanning sequence (from `God of Abraham` through the final `Jacob` token) whole on a single line. No internal line break MAY occur within the matched span, regardless of resulting line length. The triad functions as a single fixed referring expression to YHWH; severing it across lines fractures a unitary deity-reference into the apparent enumeration of three deities.
 
+**Predicate-completion extension (R18a sub-rule).** When the triad functions as the grammatical subject of a finite-verb predicate on the immediately-following v2-mine line, AND that predicate-line has no independent subject NP (the predicate's grammatical subject IS the triad on the prior line), the predicate MUST be merged onto the triad-line as part of the protected KEEP_WHOLE span. The atomic-thought principle governs: `[triad-subject], [bare-predicate].` is one proposition / one image; splitting it leaves the subject NP standing alone (a referent without predication) and the predicate standing alone (a predication without anchor on the same line). The merged subject+predicate is one ATU. The extension applies only when the triad is grammatical subject of a finite predicate; it does NOT fire when the triad is PP-object (Exclusion #4) or when the following line introduces its own independent subject (Exclusion #5).
+
 **UD signature.**
 ~~~yaml
 trigger:
@@ -1134,6 +1136,16 @@ trigger:
     - "Isaac"
     - "Jacob"
 action: KEEP_WHOLE
+
+# Predicate-completion extension (R18a sub-rule)
+predicate_completion:
+  trigger:
+    line_A: contains_triad_pattern
+    line_A_terminates_in: comma_or_semicolon
+    line_B: starts_with_finite_verb_predicate
+    line_B_has_no_independent_nsubj: true
+    triad_role: nsubj_of_matrix_verb_on_line_B
+  action: MERGE_FORWARD
 ~~~
 
 **Closed lists** (machine-readable). Variant surface forms attested in the BoFM corpus, listed for documentation; the operational matcher uses the spanning-sequence rule above rather than exact-string lookup.
@@ -1157,19 +1169,22 @@ PATRIARCH_DEITY_TRIAD_VARIANTS:
 1. **Patriarch personal-name list without `God of` prefix.** `Abraham, Isaac, and Jacob` appearing as a coordinate-NP list referring to the three persons (not the deity) — e.g., *"covenanted with Abraham, Isaac, and Jacob"* (1 Ne 17:40), *"to sit down with Abraham, Isaac, and Jacob"* (Alma 7:25) — falls outside R18a. These are coordinate personal-name references governed by default coordinate-NP-object merge per §1.9 scope (coordinate predications only earn N≥3 stacking; coordinate objects merge). Discrimination: presence of `God of` immediately preceding `Abraham` is the diagnostic anchor.
 2. **Non-canonical triad orderings.** R18a recognizes only the canonical order `Abraham → Isaac → Jacob`. The BoFM corpus exhibits no reversed orderings; any future hypothetical reversal would NOT match the spanning-sequence rule and would NOT be governed by R18a.
 3. **Embedded narrative tokens within the span.** When the matcher finds `God of Abraham` and `Isaac` and `Jacob` in order within the same line, intervening tokens are part of the protected span (e.g., `the Lord God, the God of Abraham, the God of Isaac, and the God of Jacob` — the `the Lord God,` clause-internal anchor and the `, the` connective tokens are all inside the protected span when present on the same line).
+4. **Predicate-completion does NOT fire when triad is PP-object.** When the triad sits inside a prepositional phrase as object of `come unto`, `with`, etc., the triad is not the grammatical subject of any following predicate. The "and be saved" continuation on 1 Ne 6:4 line ~795 is a coordinate-verb continuation of the prior matrix predicate `may persuade`, not a triad-completion. Predicate-completion extension does NOT apply to this case.
+5. **Predicate-completion does NOT fire when line-B has its own subject.** When the following line introduces a new independent subject NP (e.g., Alma 36:2: `and he surely did deliver them in their afflictions.` — line-B subject is `he`, beginning a coordinate clause), the line-B clause is structurally separate from the triad-line and predicate-completion does NOT apply.
 
 **Precedence.** §3.5 Tier 2. Indivisibility tier; wins over all subtractive vetoes and merge-overrides at the formula-internal level. Coexists with R1, R15, R16, R18, R23 in Tier 2 (each governs a distinct closed-list formula span). Where the protected span overlaps a vocative (R15) or AICTP (R1) on the same line, the longer-anchored Tier 2 formula prevails at the overlap boundary; in practice the triad and AICTP do not co-occur on a single line in the BoFM corpus.
 
 **Examples.**
 
-- *Compliant (fully-distributed merged):* `except it was the God of Abraham, and the God of Isaac, and the God of Jacob;` (Alma 36:2 — span whole on one line)
-- *Compliant (with matrix-anchor inside span):* `yea, the Lord God, the God of Abraham, the God of Isaac, and the God of Jacob, did deliver them out of bondage.` (Alma 29:11 after merge — entire span whole including the `yea, the Lord God,` anchor)
-- *Compliant (partially-distributed):* `yea, the God of Abraham, and of Isaac, and the God of Jacob,` (1 Ne 19:10 — span whole on one line)
+- *Compliant (fully-distributed merged):* `except it was the God of Abraham, and the God of Isaac, and the God of Jacob;` (Alma 36:2 — span whole on one line; line-B `and he surely did deliver them...` has its own subject `he`, so predicate-completion does NOT fire)
+- *Compliant (predicate-completion merged):* `yea, the Lord God, the God of Abraham, the God of Isaac, and the God of Jacob, did deliver them out of bondage.` (Alma 29:11 after predicate-completion merge — subject+predicate as one ATU; the triad is grammatical subject of `did deliver`)
+- *Compliant (predicate-completion merged):* `May the God of Abraham, and the God of Isaac, and the God of Jacob, protect this people in righteousness,` (3 Ne 4:30 after predicate-completion merge — modal-imperative subject + predicate as one ATU)
+- *Compliant (partially-distributed):* `yea, the God of Abraham, and of Isaac, and the God of Jacob,` (1 Ne 19:10 — span whole on one line; predicate-completion to `yieldeth himself` is Category B Stan-review due to multi-line J5 substantive-PP interaction with the following `according to the words of the angel,`)
 - *Compliant (compressed):* `in that God who was the God of Abraham, and Isaac, and Jacob;` (Mosiah 7:19 — span whole on one line)
-- *Non-compliant:* `For the fulness of mine intent is that I may persuade men to come unto the God of Abraham, / and the God of Isaac, / and the God of Jacob,` (1 Ne 6:4 split state — three lines violate KEEP_WHOLE)
-- *Non-compliant:* `even the God of Abraham, and the God of Isaac, / and the God of Jacob;` (Mormon 9:11 split state — two lines violate KEEP_WHOLE)
+- *Non-compliant (predicate-completion fragmenting):* `[triad on line A,] / [finite-verb predicate alone on line B]` — the subject NP standing alone is not an atomic thought; predicate-completion merge required.
 - *Excluded (Exclusion #1 — personal-name list):* `yea, even Abraham, Isaac, and Jacob;` (1 Ne 17:40 — no `God of` anchor; coordinate personal-name list, R18a does not fire)
 - *Excluded (Exclusion #1 — personal-name list):* `that ye may at last be brought to sit down with Abraham, Isaac, and Jacob,` (Alma 7:25 — no `God of` anchor; R18a does not fire)
+- *Excluded (Exclusion #4 — PP-object):* `For the fulness of mine intent is that I may persuade men to come unto the God of Abraham, and the God of Isaac, and the God of Jacob,` / `and be saved.` (1 Ne 6:4 — triad is object of `come unto`; the `and be saved` continuation is a coordinate verb of the matrix `may persuade`, not a triad-completion; predicate-completion does NOT fire)
 
 **Implementation.**
 
