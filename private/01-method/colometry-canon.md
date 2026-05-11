@@ -93,6 +93,7 @@ Per-rule operational detail lives in §5. Each rule's full template entry (Statu
 | EP-3 | Inverted predicate | Active | B | 3 | §5 EP-3 |
 | EP-4 | Title/role + domain | Active | B | 3 | §5 EP-4 |
 | EP-5 | Virtue/vice lists | Active | B | 3 | §5 EP-5 |
+| M4-BoFM-1 | Subject-orphan predicate completion | Active | A (closed-list shapes) + B (length-backstop) | 3 | §5 M4-BoFM-1 |
 
 **Status semantics:** Active = settled, fires per detector signatures. Proposed = awaiting corpus-sweep verification per the framework's adoption protocol at [`atu-method/docs/framework.md §7.8`](../../atu-method/docs/framework.md). Retired = no longer governs (none in current canon; retired rules would be archived).
 
@@ -1124,7 +1125,7 @@ Date-colophon formulas are governed by R23 (sister rule, same KEEP_WHOLE logic; 
 
 **Rule.** A v2-mine line containing the patriarch-deity-triad surface pattern — the substring `God of Abraham` followed (within the same line, in order, with arbitrary intervening conjunctions/prepositions/punctuation) by `Isaac` followed by `Jacob` — MUST keep the entire spanning sequence (from `God of Abraham` through the final `Jacob` token) whole on a single line. No internal line break MAY occur within the matched span, regardless of resulting line length. The triad functions as a single fixed referring expression to YHWH; severing it across lines fractures a unitary deity-reference into the apparent enumeration of three deities.
 
-**Predicate-completion extension (R18a sub-rule).** When the triad functions as the grammatical subject of a finite-verb predicate on the immediately-following v2-mine line, AND that predicate-line has no independent subject NP (the predicate's grammatical subject IS the triad on the prior line), the predicate MUST be merged onto the triad-line as part of the protected KEEP_WHOLE span. The atomic-thought principle governs: `[triad-subject], [bare-predicate].` is one proposition / one image; splitting it leaves the subject NP standing alone (a referent without predication) and the predicate standing alone (a predication without anchor on the same line). The merged subject+predicate is one ATU. The extension applies only when the triad is grammatical subject of a finite predicate; it does NOT fire when the triad is PP-object (Exclusion #4) or when the following line introduces its own independent subject (Exclusion #5).
+**Note:** the subject-orphan-predicate fragmenting pattern (when the triad functions as grammatical subject of a finite-verb predicate orphaned on the following line) is governed by the corpus-wide rule **M4-BoFM-1** (§5 M4-BoFM-1, codified 2026-05-11 after a broader hostile audit revealed the pattern recurs across many non-triad subject shapes). The triad-as-subject case is one instance of that broader rule; R18a's KEEP_WHOLE mandate covers only the triad-internal token sequence.
 
 **UD signature.**
 ~~~yaml
@@ -1136,16 +1137,6 @@ trigger:
     - "Isaac"
     - "Jacob"
 action: KEEP_WHOLE
-
-# Predicate-completion extension (R18a sub-rule)
-predicate_completion:
-  trigger:
-    line_A: contains_triad_pattern
-    line_A_terminates_in: comma_or_semicolon
-    line_B: starts_with_finite_verb_predicate
-    line_B_has_no_independent_nsubj: true
-    triad_role: nsubj_of_matrix_verb_on_line_B
-  action: MERGE_FORWARD
 ~~~
 
 **Closed lists** (machine-readable). Variant surface forms attested in the BoFM corpus, listed for documentation; the operational matcher uses the spanning-sequence rule above rather than exact-string lookup.
@@ -1169,22 +1160,18 @@ PATRIARCH_DEITY_TRIAD_VARIANTS:
 1. **Patriarch personal-name list without `God of` prefix.** `Abraham, Isaac, and Jacob` appearing as a coordinate-NP list referring to the three persons (not the deity) — e.g., *"covenanted with Abraham, Isaac, and Jacob"* (1 Ne 17:40), *"to sit down with Abraham, Isaac, and Jacob"* (Alma 7:25) — falls outside R18a. These are coordinate personal-name references governed by default coordinate-NP-object merge per §1.9 scope (coordinate predications only earn N≥3 stacking; coordinate objects merge). Discrimination: presence of `God of` immediately preceding `Abraham` is the diagnostic anchor.
 2. **Non-canonical triad orderings.** R18a recognizes only the canonical order `Abraham → Isaac → Jacob`. The BoFM corpus exhibits no reversed orderings; any future hypothetical reversal would NOT match the spanning-sequence rule and would NOT be governed by R18a.
 3. **Embedded narrative tokens within the span.** When the matcher finds `God of Abraham` and `Isaac` and `Jacob` in order within the same line, intervening tokens are part of the protected span (e.g., `the Lord God, the God of Abraham, the God of Isaac, and the God of Jacob` — the `the Lord God,` clause-internal anchor and the `, the` connective tokens are all inside the protected span when present on the same line).
-4. **Predicate-completion does NOT fire when triad is PP-object.** When the triad sits inside a prepositional phrase as object of `come unto`, `with`, etc., the triad is not the grammatical subject of any following predicate. The "and be saved" continuation on 1 Ne 6:4 line ~795 is a coordinate-verb continuation of the prior matrix predicate `may persuade`, not a triad-completion. Predicate-completion extension does NOT apply to this case.
-5. **Predicate-completion does NOT fire when line-B has its own subject.** When the following line introduces a new independent subject NP (e.g., Alma 36:2: `and he surely did deliver them in their afflictions.` — line-B subject is `he`, beginning a coordinate clause), the line-B clause is structurally separate from the triad-line and predicate-completion does NOT apply.
 
 **Precedence.** §3.5 Tier 2. Indivisibility tier; wins over all subtractive vetoes and merge-overrides at the formula-internal level. Coexists with R1, R15, R16, R18, R23 in Tier 2 (each governs a distinct closed-list formula span). Where the protected span overlaps a vocative (R15) or AICTP (R1) on the same line, the longer-anchored Tier 2 formula prevails at the overlap boundary; in practice the triad and AICTP do not co-occur on a single line in the BoFM corpus.
 
 **Examples.**
 
-- *Compliant (fully-distributed merged):* `except it was the God of Abraham, and the God of Isaac, and the God of Jacob;` (Alma 36:2 — span whole on one line; line-B `and he surely did deliver them...` has its own subject `he`, so predicate-completion does NOT fire)
-- *Compliant (predicate-completion merged):* `yea, the Lord God, the God of Abraham, the God of Isaac, and the God of Jacob, did deliver them out of bondage.` (Alma 29:11 after predicate-completion merge — subject+predicate as one ATU; the triad is grammatical subject of `did deliver`)
-- *Compliant (predicate-completion merged):* `May the God of Abraham, and the God of Isaac, and the God of Jacob, protect this people in righteousness,` (3 Ne 4:30 after predicate-completion merge — modal-imperative subject + predicate as one ATU)
-- *Compliant (partially-distributed):* `yea, the God of Abraham, and of Isaac, and the God of Jacob,` (1 Ne 19:10 — span whole on one line; predicate-completion to `yieldeth himself` is Category B Stan-review due to multi-line J5 substantive-PP interaction with the following `according to the words of the angel,`)
+- *Compliant (fully-distributed merged):* `except it was the God of Abraham, and the God of Isaac, and the God of Jacob;` (Alma 36:2 — span whole on one line)
+- *Compliant (with subject-predicate merged per M4-BoFM-1):* `yea, the Lord God, the God of Abraham, the God of Isaac, and the God of Jacob, did deliver them out of bondage.` (Alma 29:11 after merge — triad-as-subject + finite predicate; the triad-internal span obeys R18a KEEP_WHOLE; the subject+predicate merge is governed by M4-BoFM-1)
+- *Compliant (partially-distributed):* `yea, the God of Abraham, and of Isaac, and the God of Jacob,` (1 Ne 19:10 — span whole on one line)
 - *Compliant (compressed):* `in that God who was the God of Abraham, and Isaac, and Jacob;` (Mosiah 7:19 — span whole on one line)
-- *Non-compliant (predicate-completion fragmenting):* `[triad on line A,] / [finite-verb predicate alone on line B]` — the subject NP standing alone is not an atomic thought; predicate-completion merge required.
 - *Excluded (Exclusion #1 — personal-name list):* `yea, even Abraham, Isaac, and Jacob;` (1 Ne 17:40 — no `God of` anchor; coordinate personal-name list, R18a does not fire)
 - *Excluded (Exclusion #1 — personal-name list):* `that ye may at last be brought to sit down with Abraham, Isaac, and Jacob,` (Alma 7:25 — no `God of` anchor; R18a does not fire)
-- *Excluded (Exclusion #4 — PP-object):* `For the fulness of mine intent is that I may persuade men to come unto the God of Abraham, and the God of Isaac, and the God of Jacob,` / `and be saved.` (1 Ne 6:4 — triad is object of `come unto`; the `and be saved` continuation is a coordinate verb of the matrix `may persuade`, not a triad-completion; predicate-completion does NOT fire)
+- *Excluded (triad-as-PP-object):* `For the fulness of mine intent is that I may persuade men to come unto the God of Abraham, and the God of Isaac, and the God of Jacob,` / `and be saved.` (1 Ne 6:4 — triad is object of `come unto`; `and be saved.` is a coordinate verb of the matrix `may persuade`. Both R18a KEEP_WHOLE and M4-BoFM-1 are satisfied as-is.)
 
 **Implementation.**
 
@@ -2394,6 +2381,98 @@ FORMULAIC_VIRTUE_TRIADS:
 - Closed-list definitions: §EP-5-Indicators (in BoFM canon, supplementary section — heuristic indicators only).
 - Audit trail: `readers-bofm/private/audit-trail/EP-5.md` (to be populated during BoFM canon migration).
 - Scholarship: [`atu-method/scholarship/bofm/EP-5.md`](atu-method/scholarship/bofm/EP-5.md).
+
+---
+
+<!-- ===== M4-BoFM-1 ===== -->
+### M4-BoFM-1: Subject-Orphan Predicate Completion
+
+**Status:** Active
+**Category:** A (Mechanical, mandatory) for closed-list-eligible subject shapes; B (Editorial) for length-backstop or multi-line restructuring cases
+**Decidability:** Surface-pattern + UD-aware (Stage 2 filter recommended; surface-only viable with explicit SCOPE-exclusions)
+**Layer:** 3
+**Framework anchor:** Corpus-specific operational instantiation of framework M4 (fragmented atomic thought-unit; see [`atu-method/docs/framework.md §1.5`](../../atu-method/docs/framework.md)).
+
+**Rule.** When a v2-mine line whose content is a **subject NP** (any of the closed-list-eligible shapes below) terminates in `,` or `;`, AND the immediately-next v2-mine line is a **bare finite predicate** (starts with auxiliary or finite main verb; has no leading connective; has no independent subject NP on the same line), the predicate-line MUST be merged onto the subject-line as a single ATU. The atomic-thought principle governs: a subject NP standing alone is not an atomic thought (no predication), a bare predicate standing alone is not an atomic thought (no anchor on the line), and the merged subject+predicate IS one atomic thought (one proposition / one image).
+
+**UD signature.**
+~~~yaml
+trigger:
+  line_A:
+    role: subject_NP_of_eligible_shape  # see SUBJECT_SHAPES_M4_BOFM1 closed list
+    terminal_punct: comma_or_semicolon
+    contains_nsubj_to_matrix_verb_on_line_B: true   # UD-confirmable
+  line_B:
+    has_finite_root: true
+    no_independent_nsubj: true
+    no_leading_connective: true
+    not_participial_lead: true   # not "being|having|saying"
+    not_J3_speech_tag: true      # not "saith X"
+    not_J5_save_clause: true     # not "save ..."
+action: MERGE_FORWARD
+length_backstop: merged > 130 chars -> REVIEW
+~~~
+
+**Closed lists** (machine-readable).
+~~~yaml
+SUBJECT_SHAPES_M4_BOFM1:
+  - A1_triad             # R18a patriarch-deity-triad as subject
+  - A2_aictp_head_np     # "And it came to pass that <subject NP>," + bare predicate
+  - B1_np_with_relcl     # NP-with-relative-clause subject ("that same God who...")
+  - B2_np_with_appositive  # NP-with-appositive subject ("the Lord God, the Holy One of Israel,")
+  - B3_np_with_participial # NP-with-participial-modifier subject ("Alma, having authority...,")
+  - B5_self_id_pronoun   # "I, X, who am..." self-identifying pronoun + RC/appositive
+
+PREDICATE_LEAD_LEMMAS:
+  auxiliaries: [did, doth, do, shall, will, would, hath, have, hast, may, might, must]
+  main_verbs_observed: [came, cometh, went, spake, said, gave, took, brought, made, sent,
+                        deliver, protect, yield, save, bless, come, go, repent, perish,
+                        prosper, fall, rise, stand, sit, dwell, see, hear, know]
+  # Augmented as new instances are observed. Detection prefix-anchored on these.
+
+LEADING_CONNECTIVES_BLOCK_FIRE:
+  # If line B begins with any of these, M4-BoFM-1 does NOT fire (the line is a
+  # coordinate clause or subordinate clause, not a bare-predicate orphan).
+  - and, or, but, for, because, that, which, who, whoso, whosoever, when, while, if,
+    though, unless, until, to, in, on, at, of, with, by, from, upon
+~~~
+
+**Scope.** A v2-mine line whose content is a subject NP of one of the closed-list-eligible shapes, with the matrix predicate orphaned on the immediately-next v2-mine line. The rule applies after Tier 1 vetoes, Tier 2 formula integrity, and Tier 3 complement integrity have settled. M4-BoFM-1 is the BoFM-specific Tier 4 merge-override operationalization of framework M4 (fragmented atomic thought-unit; canon §1.5).
+
+**Exclusions (closed list — each cites the dominating rule).**
+1. **Vocative on line A** (R15 territory). When line A is a bare R15 vocative (`O Lord,`), the vocative is not the predicate's subject — the subject sits on line B (typically `wilt thou X` or `thou art Y`). R15 governs the vocative's own-line status; M4-BoFM-1 does NOT fire.
+2. **J1 stacked-coordinate-subject tail.** When line A is the final element of a parallel-series stack of coordinate subjects (per framework J1), the parallel-series convention wins. M4-BoFM-1 yields per the §1.5 M4 scope discipline (M4 is prospective, not retroactive against J1 series).
+3. **J3 speech-act parentheticals** (`saith the Lord`, `saith the prophet`, `saith the Lord of Hosts`). These are J3-territory substantive adjuncts; not predicate-completions of any prior subject NP.
+4. **J5 substantive-adjunct line B** (`save it were ...`, `save they shall ...`). Line A already has its own finite predicate; line B is a J5 exception clause, not a predicate-completion.
+5. **R21 participial-absolute line B** (`being X`, `having Y`). Participial absolutes are own-line per R21; not bare finite predicates.
+6. **Line A is PP-object, not subject** (e.g., 1 Ne 6:4: triad sits inside `come unto` PP). The PP-object NP is not the grammatical subject of any following predicate. The line-B verb's subject is the matrix subject of the prior clause, not the orphan NP.
+7. **Line A is already a finite clause** (its own subject + predicate). When line A is a complete clause and line B is a separate coordinate clause, M4-BoFM-1 does NOT fire.
+
+**Precedence.** §3.5 Tier 4 (merge-overrides). Within Tier 4, M4-BoFM-1 fires when no Tier 1-3 rule has resolved the line boundary. M4-BoFM-1 yields to Tier 1-3 rules (Layer 1 vetoes, formula integrity, complement integrity, vocative integrity). M4-BoFM-1 yields to J1 (parallel-series) per framework §1.5 M4 scope discipline (M4 is prospective; J1-stack tails stay split). Where R18a's triad-keep-whole and M4-BoFM-1 fire on the same locus (triad as subject + orphan predicate), both apply consistently: R18a holds the triad-internal span whole; M4-BoFM-1 merges the predicate onto the triad-line.
+
+**Examples.**
+
+- *Compliant (B1 NP-with-relative-clause subject):* `and that same God who delivered them out of the hands of the Egyptians did deliver them out of bondage.` (Alma 29:12 after M4-BoFM-1 merge — extended NP with RC + finite predicate as one ATU)
+- *Compliant (A1 triad subject, also under R18a):* `yea, the Lord God, the God of Abraham, the God of Isaac, and the God of Jacob, did deliver them out of bondage.` (Alma 29:11 after merge — R18a holds the triad whole; M4-BoFM-1 merges the predicate)
+- *Compliant (B2 NP-with-appositive subject):* `the Lord God, the Holy One of Israel, should manifest himself unto them in the flesh;` (2 Ne 6:9 after merge)
+- *Compliant (B3 NP-with-participial subject):* `Laman and Lemuel, being the eldest, did murmur against their father.` (1 Ne 2:12 after merge)
+- *Compliant (B5 self-identifying pronoun):* `I, Pahoran, who am the chief governor of this land, do send these words unto Moroni, the chief captain over the army.` (Alma 61:2 after merge)
+- *Excluded (R15 vocative):* `O Lord,` / `wilt thou hear my prayer?` — vocative is R15-own-line; M4-BoFM-1 does NOT fire
+- *Excluded (J3 speech-tag):* `behold the Lord shall come, saith the Lord,` / `and shall destroy the wicked.` — line A's `saith the Lord` is J3 parenthetical; M4-BoFM-1 does NOT fire on this configuration
+- *Excluded (R21 participial):* `the king, having discovered a movement,` / `being aware of the conspiracy, summoned his servants.` — line B starts with `being`, R21 territory; M4-BoFM-1 does NOT fire (separate decision tree)
+- *Non-compliant (subject-predicate fragmenting):* `[long NP subject ending in comma],` / `[bare finite predicate].` — subject NP standing alone is not an ATU; predicate standing alone is not an ATU; merge required.
+
+**Implementation.**
+
+- Validator: `validators/colometry/validate_m4_bofm_1_subject_orphan.py` (surface-pattern with named exclusions; UD-aware Stage 2 filter recommended for future precision improvement)
+- Applier: surface-pattern MERGE_FORWARD; one-shot Python script over v2-mine corpus after Stage 1 + 2 verdicts settle
+- Closed-list definitions: §SUBJECT_SHAPES_M4_BOFM1 (inline above)
+- Audit trail: `readers-bofm/private/audit-trail/M4-BoFM-1.md` (audit task id: aec7492d96ab06a3c, codification commit forthcoming)
+- Scholarship: `atu-method/scholarship/bofm/M4-BoFM-1.md` (to be authored; cross-corpus relevance — GNT and Tanakh likely exhibit analogous patterns)
+
+**Defensibility (WHY this rule exists).** The canon's pre-existing rules were predominantly **prohibitive** (don't break here) and **protective** (keep these tokens together). Subject→predicate integrity — the dual of R17's predicate→complement integrity — was not operationally codified prior to 2026-05-11. The atomic-thought test in §1 served as foundational principle but was enforced editorially (Stan's eye), not mechanically. The Alma 29:11 case Stan flagged on 2026-05-11 surfaced the gap; the broader audit then found ~27 corpus instances of the same fragmenting failure mode across non-triad subject shapes (NP-with-RC, NP-with-appositive, NP-with-participial). M4-BoFM-1 codifies the missing dual rule operationally.
+
+**Cross-corpus implications.** The principle (subject NP + its predicate form one ATU when their combination is one image) is universal; the per-corpus closed-list of eligible subject shapes is BoFM-specific. Sibling readers (readers-gnt, readers-tanakh) should run parallel corpus sweeps for analogous M4-GNT-1, M4-TNK-1 operationalizations. Framework-level M4 in [`atu-method/docs/framework.md §1.5`](../../atu-method/docs/framework.md) is the universal anchor.
 
 ---
 
