@@ -4105,27 +4105,36 @@ function downloadAllForOffline() {
   navigator.serviceWorker.controller.postMessage({ type: 'CACHE_ALL_BOOKS' }, [channel.port2]);
 }
 
-function flushAndReload() {
+async function flushAndReload() {
+  // 2026-05-11: Android Chrome hardening — FLUSH_CACHE alone clears only the
+  // SW cache; Chrome's HTTP cache layer survived, so Android users continued
+  // seeing stale content. Now: clear all caches, unregister all SWs, and
+  // reload with a cache-busting query string so Chrome cannot satisfy the
+  // request from its HTTP cache.
   var btn = document.getElementById('flush-btn');
   if (btn) { btn.textContent = 'Clearing...'; btn.disabled = true; }
-  if (navigator.serviceWorker && navigator.serviceWorker.controller) {
-    var channel = new MessageChannel();
-    channel.port1.onmessage = function() {
-      window.location.reload(true);
-    };
-    navigator.serviceWorker.controller.postMessage({ type: 'FLUSH_CACHE' }, [channel.port2]);
-    // Fallback: reload after 2s even if SW doesn't respond
-    setTimeout(function() { window.location.reload(true); }, 2000);
-  } else {
-    // No SW — just clear caches directly and reload
+
+  try {
+    // 1. Wipe every Cache Storage entry (covers SW caches AND any others)
     if ('caches' in window) {
-      caches.keys().then(function(names) {
-        return Promise.all(names.map(function(n) { return caches.delete(n); }));
-      }).then(function() { window.location.reload(true); });
-    } else {
-      window.location.reload(true);
+      var names = await caches.keys();
+      await Promise.all(names.map(function(n) { return caches.delete(n); }));
     }
+    // 2. Unregister every service worker registration so the next page load
+    //    triggers a fresh install of the current sw.js.
+    if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
+      var regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(function(r) { return r.unregister(); }));
+    }
+  } catch (err) {
+    // Continue to reload even if cleanup partially failed.
+    if (window.console) console.warn('flushAndReload cleanup error', err);
   }
+
+  // 3. Cache-bust the URL so Chrome's HTTP cache cannot serve the old HTML.
+  //    Using location.replace + a fresh query param forces a new round-trip.
+  var base = window.location.href.split('?')[0].split('#')[0];
+  window.location.replace(base + '?_=' + Date.now());
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
