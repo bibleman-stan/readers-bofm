@@ -62,6 +62,7 @@ Contents:
 **CONSULT-ON-TRIGGER:**
 - `data/syntax-reference/ud-taxonomy.md` §7 Break Legality Reference — **trigger:** any Layer 1 mechanical-rule work or validator design.
 - `validators/README.md` — **trigger:** writing or modifying a validator.
+- `../atu-method/docs/apparatus.md` + `../atu-method/docs/architecture.md` — **trigger:** any cross-corpus migration work, sibling-reader port (gnt/tanakh), or work where pending.md holds a multi-phase plan. These are the picture-shaped docs — they tell you what the user sees when the work is done. Pull back to them whenever an architectural fork appears mid-work (per `feedback_endstate_first_orientation`).
 - `C:\vaults-nano\my_brain\00_Inbox\claude-brainstorming.md` — **trigger:** Stan references a mobile-inbox item.
 
 **Self-report** before first substantive response: one-line-per-file confirmation of what you read, with any red flags surfaced.
