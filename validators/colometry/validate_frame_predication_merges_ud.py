@@ -92,9 +92,17 @@ COPULA_LEMMAS = {"be", "is", "was", "were", "am", "are"}
 
 
 def _subtree_lines(sent: Sentence, root: Token, line_map: dict) -> set[int]:
-    """Return the set of v2-mine lines occupied by the subtree of `root`."""
+    """Return the set of v2-mine lines occupied by the subtree of `root`.
+
+    PUNCT-exclusion (2026-05-13, class-fix sweep): punctuation tokens are
+    inherited text, never adjudication evidence
+    (feedback_punctuation_not_evidence). Excluded so this helper is safe
+    for routing-sensitive consumers.
+    """
     lines = set()
     for t in sent.subtree(root):
+        if t.upos == "PUNCT":
+            continue
         ln = line_map.get((sent.sent_id, t.id))
         if ln is not None:
             lines.add(ln)
@@ -232,8 +240,21 @@ def scan_book(book_id: str) -> list[dict]:
                 continue
             frame_subtree = sent.subtree(advcl)
             frame_subtree_ids = {t.id for t in frame_subtree}
+            # PUNCT-exclusion fix (2026-05-13, class-fix sweep): UD parsers
+            # attach the comma at frame-end to the advcl head via
+            # `deprel=punct`. That comma's line equals matrix_line in the
+            # canonical "frame, matrix" layout (line N ends with comma,
+            # matrix begins line N+1 — but the COMMA itself sits on line N+1
+            # in some parses, or worse, the parser places it on N where the
+            # word-tokens end). Either way, including PUNCT in frame_lines
+            # makes frame_max_line punctuation-sensitive, which collides with
+            # the `frame_max_line >= matrix_line` short-circuit and the
+            # adjacency gap calc — suppressing legitimate merges.
+            # Per feedback_punctuation_not_evidence: routing rests on grammar.
             frame_lines = set()
             for t in frame_subtree:
+                if t.upos == "PUNCT":
+                    continue
                 ln = line_map.get((sent.sent_id, t.id))
                 if ln is not None:
                     frame_lines.add(ln)
@@ -298,8 +319,15 @@ def scan_book(book_id: str) -> list[dict]:
                 continue
             frame_subtree = sent.subtree(obl)
             frame_subtree_ids = {t.id for t in frame_subtree}
+            # PUNCT-exclusion fix (2026-05-13, class-fix sweep) — see
+            # parallel Pattern A explanation above. Same class-bug:
+            # PUNCT in the obl subtree would inflate frame_max_line and
+            # suppress legitimate merges. Routing must not be punctuation-
+            # sensitive (feedback_punctuation_not_evidence).
             frame_lines = set()
             for t in frame_subtree:
+                if t.upos == "PUNCT":
+                    continue
                 ln = line_map.get((sent.sent_id, t.id))
                 if ln is not None:
                     frame_lines.add(ln)

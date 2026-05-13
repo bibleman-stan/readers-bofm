@@ -53,7 +53,16 @@ def _has_feature(tok: Token, feat: str, val: str) -> bool:
 
 
 def find_noun_infinitival(sent: Sentence, line_map: dict) -> list[dict]:
-    """NOUN head + acl/xcomp child whose subtree is infinitival."""
+    """NOUN head + acl/xcomp child whose subtree is infinitival.
+
+    PUNCT-exclusion fix (2026-05-13, class-fix sweep): UD parsers attach
+    head-line-end punctuation to the child verb via `deprel=punct`. That
+    punctuation token would sit at head_line, falsely placing the child
+    subtree onto head_line and suppressing the legitimate split detection
+    (head_line == child_line short-circuit). Excluding PUNCT from the
+    subtree-min calculation honors `feedback_punctuation_not_evidence`:
+    routing must rest on grammar, not punctuation placement.
+    """
     hits = []
     for tok in sent.tokens:
         if tok.upos != "NOUN":
@@ -74,9 +83,11 @@ def find_noun_infinitival(sent: Sentence, line_map: dict) -> list[dict]:
             if not (is_inf or mark_to):
                 continue
             head_line = _line_of(line_map, sent, tok)
-            # Pick the leftmost token of the child subtree to determine "child line"
+            # Pick the leftmost non-PUNCT token of the child subtree to
+            # determine child_line. PUNCT is post-1830 editorial overlay,
+            # not adjudication evidence (per feedback_punctuation_not_evidence).
             subtree = sent.subtree(child)
-            child_lines = [_line_of(line_map, sent, t) for t in subtree]
+            child_lines = [_line_of(line_map, sent, t) for t in subtree if t.upos != "PUNCT"]
             child_lines = [l for l in child_lines if l is not None]
             if not child_lines or head_line is None:
                 continue

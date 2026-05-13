@@ -190,8 +190,15 @@ def _split_col_for_speech_clause(sent: Sentence, verb: Token, advcl: Token,
 
     Returns None if no speech-only token follows the advcl on this line.
     """
-    speech_ids = {t.id for t in sent.subtree(verb)}
-    advcl_ids = {t.id for t in sent.subtree(advcl)}
+    # PUNCT-exclusion fix (2026-05-13, class-fix sweep): exclude PUNCT
+    # tokens from advcl_ids so the rightmost-advcl-token computation
+    # below uses grammar (word tokens), not punctuation placement.
+    # Without this, a comma attached as `deprel=punct` to the advcl
+    # head can have the maximum id in advcl_ids_on_line and become
+    # advcl_end_id — making the split_col routing punctuation-sensitive
+    # (feedback_punctuation_not_evidence). speech_ids removed as it
+    # was previously dead code (no consumer).
+    advcl_ids = {t.id for t in sent.subtree(advcl) if t.upos != "PUNCT"}
 
     # Rightmost advcl token on verb_line (the boundary marker)
     advcl_ids_on_line = [

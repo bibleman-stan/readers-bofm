@@ -96,10 +96,20 @@ def scan_book(book_id: str) -> list[dict]:
             # Resolve the leftmost token of the relative clause for line lookup.
             # The acl:relcl root token is the head of the relative; mark/wh-word
             # typically precedes it.
+            # PUNCT-exclusion fix (2026-05-13, class-fix sweep): UD parsers
+            # routinely attach the non-restrictive-comma at head-line-end to
+            # the relative verb as `deprel=punct`. That comma's id is the
+            # smallest in the subtree (comma precedes "which"), so without
+            # exclusion `first_rel_tok` = comma — and its line is head_line,
+            # not the rel-clause line. That collapses `on_same_line` to True
+            # and short-circuits the STRONG-SPLIT/STRONG-MERGE routing.
+            # Per feedback_punctuation_not_evidence: routing must rest on
+            # grammar (the wh-word's position), not punctuation placement.
             subtree_tokens = sent.subtree(rel_root)
-            if not subtree_tokens:
+            content_tokens = [t for t in subtree_tokens if t.upos != "PUNCT"]
+            if not content_tokens:
                 continue
-            first_rel_tok = subtree_tokens[0]   # leftmost token in the clause
+            first_rel_tok = content_tokens[0]   # leftmost content (non-PUNCT) token
 
             head_line = line_map.get((sent.sent_id, head.id))
             rel_line = line_map.get((sent.sent_id, first_rel_tok.id))
