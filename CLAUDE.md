@@ -55,6 +55,17 @@ When Stan names a verse with a specific desired partition or proposes a fix: lin
 
 Same FP class in 2+ rules OR 2+ validators OR 2+ verses in one session = engine-level fix at `validators/_shared/*` / `scripts/apply_*.py` / canon rule extension. Per-verse / per-validator guard the second time = whack-a-mole. **Stan's mantra: *swat the bug class, not the instance.***
 
+### Grammar constrains ATU boundaries; it does not determine them
+
+Stan codified verbatim 2026-05-13: *"grammar doesn't determine ATUs boundaries, but it can constrain them."*
+
+- **Grammar gives PROHIBITIONS, not PRESCRIPTIONS.** Layer 1 vetoes (R9/R11/R13a/R10), complement integrity (R17, R26), formula integrity (R1, R18, R23), and restrictive-relative bonds (R19 closed-list) constrain where breaks **can't** go.
+- **Atomic-thought is the determination engine.** The generative principle (each proposition splits by default) + J1–J5 structural justifications + image/camera-angle/period tests determine where breaks **should** go. The force is propositional/psycholinguistic, not grammatical.
+- **When proposing a new rule:** ask "does this rule encode a CONSTRAINT (prohibition on illegal breaks) or a DETERMINATION (prescription of correct breaks)?" Determinations require the atomic-thought test to fire — that test is propositional, not grammatical. Grammar can confirm a determination is safe; grammar alone cannot generate it.
+- **For closed-list extensions specifically:** the threshold for inclusion is "is the head referentially content-empty without the relative such that breaking here leaves a line with no atomic thought?" — the atomic-thought-failure test, applied through grammar-as-constraint. The closed-list is the operationalization of where atomic-thought-failure fires under specific grammatical conditions; it is NOT a grammatical-pattern catalog.
+
+See `feedback_grammar_constrains_not_determines.md` for the full discipline + cross-cutting connections to `feedback_rhetoric_bandwagon` (don't import external grammatical frameworks as forces) and `feedback_audit_outputs_need_canon_check` (reject grammatical-pattern-only carve-out framings).
+
 ### Use the UD layer FIRST. Agents are a last resort for corpus questions.
 
 The BoFM Macula-equivalent already exists: full-corpus UD parses at `data/parses/ensemble/stanza/*.conllu`, queried via `validators/parsing/conllu_query.py` + `validators/parsing/line_mapping.py` (which gives v2-mine-line-of-each-token). Every active canon rule has a UD validator at `validators/colometry/validate_rule_*_ud.py`. The infrastructure for "find all tokens X whose head Y sits on a different ATU line, optionally filtered by deprel/upos/lemma" is **already built**.
