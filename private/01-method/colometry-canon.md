@@ -81,7 +81,7 @@ Per-rule operational detail lives in §5. Each rule's full template entry (Statu
 | R17 | Complement integrity | Active | A | 3 | §5 R17 | `validators/colometry/validate_rule_17_ud.py` |
 | R18 | Fixed idiom integrity | Active | A | 3 | §5 R18 | `validators/colometry/validate_rule_18_ud.py` |
 | R18a | Patriarch-deity-triad fixed formula | Active | A | 3 | §5 R18a | `validators/colometry/validate_rule_18a_patriarch_triad.py` |
-| R19 | Cataphoric / anaphoric relative | Active | A (PROPN/PRON/DET) + B (NOUN-REVIEW) | 3 | §5 R19 | `validators/colometry/validate_rule_19_ud.py` |
+| R19 | Cataphoric / anaphoric relative | Active | A (PROPN/PRON/DET + obligatory-reference NOUN closed-list) + B (NOUN-REVIEW for non-closed-list) | 3 | §5 R19 | `validators/colometry/validate_rule_19_ud.py` |
 | R20 | No-anchor (structural floor) | Active | B | 3 | §5 R20 | `validators/syntax/validate_rule_20_ud.py` |
 | R21 | Participial absolute integrity | Active | A | 3 | §5 R21 | `validators/colometry/validate_rule_21_ud.py` + `validators/colometry/validate_participial_phrases.py` |
 | R22 | Divine title appositives | Active | B | 3 | §5 R22 | (no dedicated validator yet; Cat B = Stan-eye-check) |
@@ -1218,6 +1218,18 @@ trigger_predicative_identifier:
   relative_body_pattern: "(is|was|are|were|became) + classifier-NP"
   semantic_role: predicative-identifier   # classifies/identifies head; advances no new action
 action: MERGE_HEAD_AND_DEPENDENT
+
+trigger_noun_head_obligatory_reference:
+  relation: acl:relcl
+  head: { upos: NOUN, lemma_in: R19_OBLIGATORY_REF_NOUN_HEADS }
+  excludes:
+    - { relation_at_head: ccomp }                                    # R17 wins
+    - { head_amod_lemma_in: R19_REFERENTIAL_COMPLETING_ADJ }         # adj-modified `one` etc. is referentially complete
+    - { coord_relatives_n_ge_2_under_one_head: true, position: nonfirst }  # J1 N=2+ coord-parallel relatives stack
+    - { child_line_le_head_line: true }                              # forward-only attachment (Alma 24:26 line-map precedent)
+    - { line_gap_greater_than: 2 }                                   # adjacency cap (relaxes Exclusion #9 from >1 to >2)
+    - { mark_lemma: as }                                             # comparative `so/such X as Y` UD mis-tag
+action: MERGE_HEAD_AND_DEPENDENT
 ```
 
 **Closed lists** (machine-readable).
@@ -1238,11 +1250,45 @@ PREDICATIVE_IDENTIFIER_COPULAS:
   - are
   - were
   - became
+
+# R19 closed-list of obligatory-reference NOUN heads. The head is
+# referentially content-empty without the restrictive relative (the
+# relative IS the head's identifying content). Codified 2026-05-12
+# per audit α+β verdicts (PARTIAL / MOSTLY-CLEAN 99.1% post-filter).
+R19_OBLIGATORY_REF_NOUN_HEADS:
+  # Tier 1 — indefinite/abstract reference
+  - thing
+  - way
+  - manner
+  - means
+  - one
+  - part
+  - place
+  # Tier 2 — abstract event/speech-product
+  - word
+  - prophecy
+  - commandment
+  - scripture
+  - name
+
+# Content-bearing adjective modifiers that referentially-complete the
+# `one`-head, disqualifying auto-merge (route to REVIEW). Cardinality
+# quantifiers (only, same, very) are NOT in this list — they don't
+# complete the reference.
+R19_REFERENTIAL_COMPLETING_ADJ:
+  - evil
+  - good
+  - holy
+  - wicked
+  - righteous
+  - mighty
+  - beloved
+  - anointed
 ```
 
 The `CATAPHORIC_UPOS` set captures the generic forward-pointer heads characteristic of BoFM-English: *those*, *whoso*, *whatsoever*, *all*, *any*, *every*, *this*, *that*, *these*. Membership is determined by the UD parser's UPOS tag, not by a lexical list.
 
-**Scope.** Non-complement *that*-clauses and relative clauses (`acl:relcl` or `acl`) attached to a noun-phrase head. The rule fires on the head token's UPOS only; lemma membership is not consulted. The unified "which"-clause decision tree (predicative-identifier MERGE, completing-predication MERGE, non-restrictive-relative-introducing-new-info SPLIT, cataphoric-advancing SPLIT, anaphoric-backward-referring MERGE) operates as a sub-rule of the three UPOS branches above: predicative-identifier and completing-predication patterns under NOUN heads are MERGE; all other NOUN-head cases route to REVIEW pending discourse-context resolution.
+**Scope.** Non-complement *that*-clauses and relative clauses (`acl:relcl` or `acl`) attached to a noun-phrase head. PROPN/PRON/DET branches fire on head UPOS only (lemma membership not consulted). The NOUN branch has lemma-driven sub-routing: (a) predicative-identifier and completing-predication patterns under NOUN heads MERGE; (b) NOUN heads whose lemma is in `R19_OBLIGATORY_REF_NOUN_HEADS` MERGE (closed-list of 12 lemmas where the head is referentially content-empty without the restrictive relative); (c) all other NOUN-head cases route to REVIEW pending discourse-context resolution.
 
 **Exclusions (closed list — each cites dominating rule).**
 
@@ -1254,8 +1300,11 @@ The `CATAPHORIC_UPOS` set captures the generic forward-pointer heads characteris
 6. Fixed-idiom contexts (*it is expedient that*, etc., per Rule 18 fixed-idiom list) → R18 wins
 7. Expletive *it* in cleft constructions (*"that it is by his grace"*) — structural placeholder, NOT anaphoric; routes per other applicable rules
 8. Result/purpose clauses with new predication (*"that it is good"*) — cataphoric semantics override anaphor-like surface form; the relative-pronoun head test does not apply
-9. Cross-line attachments where the relative is NOT adjacent to its head (gap > 1 v2 line) → REVIEW-REQUIRED (parser ambiguity guard)
+9. Cross-line attachments where the relative is NOT within 2 v2 lines of its head (gap > 2) → REVIEW-REQUIRED (parser ambiguity guard; relaxed from gap > 1 per audit β 2026-05-12 — the gap=2 cases catch parenthetical-intervening lines that are still rule-derivative)
 10. Merged-line length > 130 characters → REVIEW-REQUIRED (length backstop, per applier convention)
+11. Cross-line attachment where `child_subtree_min_line ≤ head_line` (backward attachment) → REVIEW-REQUIRED (UD-parser subtree fan-out artifact, per Alma 24:26 line-map-FP precedent codified 2026-05-12)
+12. Comparative-correlative `so/such X as Y` patterns where the parser mis-tags the comparative `advcl` as `acl:relcl` → REVIEW-REQUIRED (mark lemma `as` with the head clause containing `so` or `such` indicates comparative, not relative)
+13. R19 NOUN-head obligatory-reference closed-list merge yields to: J1 coordinate-parallel relatives sharing one head at N≥2 — when the head has N≥2 acl:relcl children and the merge target is the 2nd-or-later coordinate relative, route per J1 §3.5 Tier 5 (the 2nd+ relative does NOT auto-merge; instead each coordinate relative member stands on its own line at N≥3, or N=2 adjudication applies)
 
 **Precedence.** §3.5 Tier 5. Yields to R1/R16 (AICTP), R17 (complement integrity), R26 (predicate complement), R7 (purpose + modal), R18 (fixed idiom), R27 (insomuch-that). Per §3.5.1 "that"-cluster sub-hierarchy, R19 is the residual-relative branch — the most-specific-first detection order routes R1/R16, R26, R17, R27, and R7 ahead of R19. R19 fires only on `acl:relcl` (and non-complement `acl`) attachments after all complement / formulaic / purposive readings have been excluded.
 
@@ -1271,6 +1320,10 @@ The `CATAPHORIC_UPOS` set captures the generic forward-pointer heads characteris
 - *Excluded by R17 (complement integrity wins):* "He caused that his servants should stand forth" — *that*-clause is the `ccomp` of the causative VERB *cause*; R17 governs the merge, R19 does not fire
 - *Excluded by R26:* "if it were possible that our first parents..." — matrix is ADJ *possible* in `RULE_26_HEAD_LEMMAS`; R26 governs the merge
 - *Routed to REVIEW (NOUN head, ambiguous):* "records which were engraven upon the plates of brass" — anaphoricity depends on whether *plates of brass* was established earlier in the passage; mechanical resolution not authorized
+- *Compliant (R19 NOUN-head obligatory-reference MERGE, closed-list):* "the things which he had seen / and the things which the Lord had shown unto him" → merged to one line because *things* is content-empty without the relative (referent IS the things-which-X); per 2026-05-12 closed-list codification, *thing/way/manner/means/one/part/place/word/prophecy/commandment/scripture/name* head lemmas with `acl:relcl` MERGE
+- *Excluded by SE-3 (adj-modified `one`):* "Gadianton and the evil one / who seeketh to destroy" — *evil* is content-bearing amod on *one*, the head is referentially complete (the evil one = Satan), the relative is supplementary → REVIEW
+- *Excluded by SE-1 (J1 coord-parallel):* "the things which he had seen, / yea, which the Lord had shown unto him, / and which he prophesied" — head *things* has N=3 acl:relcl children → J1 N≥3 cliff governs; each relative stands on its own line
+- *Excluded by Exclusion #12 (comparative):* "so great and marvelous things / as we both saw and heard Jesus speak" — UD-mistagged as acl:relcl; the *so X as Y* surface signature flags this as comparative `advcl` → REVIEW
 
 **Implementation.**
 
