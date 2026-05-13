@@ -125,7 +125,13 @@ def find_comparative_tail(sent: Sentence, line_map: dict) -> list[dict]:
 
 
 def find_np_relcl(sent: Sentence, line_map: dict) -> list[dict]:
-    """NOUN head + acl:relcl child, split across lines."""
+    """NOUN head + acl:relcl child, split across lines.
+
+    PUNCT-exclusion fix (2026-05-12): UD parsers attach the comma at
+    head-line-end to the relative's verb as `punct`. That makes the
+    relative's subtree include a token at head_line, falsely triggering
+    the forward-only filter. Exclude PUNCT tokens from subtree-min.
+    """
     hits = []
     for tok in sent.tokens:
         if tok.upos not in ("NOUN", "PROPN"):
@@ -135,7 +141,7 @@ def find_np_relcl(sent: Sentence, line_map: dict) -> list[dict]:
                 continue
             head_line = _line_of(line_map, sent, tok)
             subtree = sent.subtree(child)
-            child_lines = [_line_of(line_map, sent, t) for t in subtree]
+            child_lines = [_line_of(line_map, sent, t) for t in subtree if t.upos != "PUNCT"]
             child_lines = [l for l in child_lines if l is not None]
             if not child_lines or head_line is None:
                 continue
