@@ -66,6 +66,22 @@ Stan codified verbatim 2026-05-13: *"grammar doesn't determine ATUs boundaries, 
 
 See `feedback_grammar_constrains_not_determines.md` for the full discipline + cross-cutting connections to `feedback_rhetoric_bandwagon` (don't import external grammatical frameworks as forces) and `feedback_audit_outputs_need_canon_check` (reject grammatical-pattern-only carve-out framings).
 
+### The atomic-thought test is bidirectional
+
+Codified at [`../atu-method/docs/framework.md §1.1`](../atu-method/docs/framework.md) tail (2026-05-13). The §1.1 generative principle's "single cognitive bite" requires **referential** self-containment, not just **grammatical** closure.
+
+- **Anaphoric failure (blocks standalone-ATU):** line content depends on UPSTREAM context. Deictic demonstratives ("these things", "that day", "the same"), discourse-anaphoric particles ("therefore", "thus", causal "for"), pronouns without on-line antecedent — fail the test, must merge into a context-providing line.
+- **Cataphoric standing (allowed, does NOT fail):** line introduces new content with forward-pointing apparatus. *"Behold + indefinite NP"*, *"thus saith the Lord:"* + content. Forward expectation, not backward dependency.
+
+**BoFM-specific implications:**
+- **R1 AICTP merge is principle-rooted, not just formula-integrity-rooted.** *"And it came to pass [after these things]"* is anaphoric — the *these things* references undefined prior narrative. R1's merge mandate flows from the bidirectional test failing standalone, deepening R1's defensibility.
+- **J5 SCOPE narrows.** J5 substantive-adjunct test requires referential self-containment. Deictic-pointer adjuncts (e.g., bare "after these things" without on-line antecedent) don't qualify and must merge.
+- **Length is NOT the criterion.** A long line whose subject pronoun lacks on-line antecedent still fails. A short cataphoric line (*"Behold, the Lord cometh"*) can stand.
+- **When auditing a Stan-flagged verse:** run BOTH forward closure AND backward referential-self-containment. Fail in EITHER direction = atomic-thought failure.
+- **Cite §1.1 bidirectional, not M3/M4, when invoking.** Backward-anaphoric failure is caught at test-level, not at merge-override-level. M3 (forward-dangling head) and M4 (symmetric fragmentation) are §1.5 mechanisms; backward-anaphoric is upstream of both.
+
+See `feedback_atu_test_is_bidirectional.md` for full discipline. Cross-cutting connection to `feedback_grammar_constrains_not_determines` (grammar = constraint; bidirectional atomic-thought = determination).
+
 ### Use the UD layer FIRST. Agents are a last resort for corpus questions.
 
 The BoFM Macula-equivalent already exists: full-corpus UD parses at `data/parses/ensemble/stanza/*.conllu`, queried via `validators/parsing/conllu_query.py` + `validators/parsing/line_mapping.py` (which gives v2-mine-line-of-each-token). Every active canon rule has a UD validator at `validators/colometry/validate_rule_*_ud.py`. The infrastructure for "find all tokens X whose head Y sits on a different ATU line, optionally filtered by deprel/upos/lemma" is **already built**.
