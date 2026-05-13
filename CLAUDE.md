@@ -1,376 +1,172 @@
 # BOM Reader — Claude Code Instructions
 
-Read this file completely before doing anything in this repo. It is your orientation document for every session.
+A web-based colometric reading edition of the Book of Mormon at **bomreader.com**, designed for ESL readers, children, and newcomers. Each line on the page is an atomic thought unit (ATU); the modern-mode pill toggles archaic→modern in place (`hath`→`has`, `unto`→`to`); optional audio narration per chapter. Reference implementation for the gnt-reader / tanakh-reader siblings (same UX shell, same swap-system, same ATU rhythm; KJV is the unifying English voice across siblings).
 
 ---
 
-## What This Project Is
+## Orientation reads
 
-A web-based reading app for the Book of Mormon at **bomreader.com**, designed for ESL readers, children, and newcomers. Text is presented as atomic thought units (ATUs) — each line on the page renders one ATU, a span of text the reader can take in as a single complete unit of meaning. Archaic words can be toggled to modern equivalents. Multiple study layers (deity references, biblical quotations, geography, Hebrew poetry) can be overlaid. Audio narration per chapter.
-
-- **Repo:** github.com/bibleman-stan/readers-bofm (public)
-- **Hosting:** GitHub Pages from main branch
-- **Stack:** Vanilla HTML/CSS/JS single-page app, Python 3 build scripts
-- **Local dev:** `python -m http.server 8000` (file:// won't work)
-- **User:** Stan (thebibleman77@gmail.com)
-
----
-
-## Read the Handoff Docs First
-
-Before any substantive work, read the handoffs directory in order. Each file is independently readable:
-
-| File | Covers |
-|------|--------|
-| `handoffs/00-index.md` | Index and update protocol |
-| `handoffs/01-project-overview.md` | Architecture, key files, book metadata, CSS variables |
-| `handoffs/02-text-editorial.md` | Source text pipeline, editorial principles, swap system |
-| `handoffs/03-audio-voice.md` | Voice decisions, ElevenLabs config, Colab pipeline |
-| `handoffs/04-ui-ux.md` | UI structure, navigation, scroll behavior, known issues |
-| `handoffs/05-build-pipeline.md` | build_book.py, data layers, pericopes, Hebrew poetry |
-| `handoffs/06-deployment-infra.md` | GitHub Pages, service worker, git workflow |
-| `handoffs/07-pending-tasks.md` | Prioritized task list |
-| `handoffs/08-future-plans.md` | Spanish fork, Studying Edition, shelved ideas |
-| `handoffs/09-bugs-fixed.md` | Historical bug fixes and key design decisions |
-| `handoffs/14-operational-protocols.md` | "Work smarter" patterns: parallel dispatch, two-phase pipeline, find-the-class fixes — READ THIS CAREFULLY |
-
----
-
-## Session bookend protocol
-
-**The overseer system is deprecated.** Do NOT read or update `private/OVERSEER-DIRECTIONS.md` (no longer authoritative; left as historical archive). Stan is the direct authority.
-
-### Session folder convention
-
-**A session = one Claude Code JSONL session**, not a calendar day. A compaction-wake starts a new session — create a new folder with a new descriptor even if the calendar date matches a pre-compaction folder. Multiple folders sharing a date with different descriptors is correct.
-
-Each session has its own folder at `private/YYYY-MM-DD-brief_description/` where `YYYY-MM-DD` is the **session start date** (not today's date if the session crossed midnight) and `brief_description` distinguishes the session from others on the same date.
-
-Contents:
-- `pending.md` — explicit carry-forward items for the next session.
-
-**Only `pending.md`.** The previous protocol prescribed four files (`transcript.md` / `session-notes.md` / `decisions.md` / `pending.md`); all but `pending.md` were dropped as redundant with the JSONL session log. The JSONL captures every user message, every response, every tool call, every result — verbatim with timestamps — so re-summarizing them in narrative or transcript form is duplicated work the JSONL already did better. `pending.md` is the one piece JSONL doesn't expose conveniently: a maintained carry-forward list survives across sessions and tells fresh-session Claude what's open without grepping multi-session JSONL history.
-
-### CHECK-IN at session start
-
-**MANDATORY (read every wake):**
-1. This `CLAUDE.md` in full
-2. `private/01-method/colometry-canon.md` — especially §0 Mission, §1 Framework, §2 Autonomy Boundary, §5 Rule detail
-3. The most recent session folder under `private/YYYY-MM-DD-*/` — specifically its `pending.md` (carry-forward state). If prior context beyond carry-forwards is needed, search the JSONL session logs at `~/.claude/projects/.../*.jsonl` rather than expecting summary docs; only `pending.md` is maintained going forward.
+**MANDATORY at every wake (including short pings; compaction-resume runs from scratch):**
+1. This CLAUDE.md
+2. `private/01-method/colometry-canon.md` — at least §0/§1/§2 (framework pointers) + §3 Quick-Reference + §3.5 Precedence Hierarchy
+3. The most recent session folder's `pending.md` if present
 4. `git log --oneline -10`
 
 **CONSULT-ON-TRIGGER:**
-- `data/syntax-reference/ud-taxonomy.md` §7 Break Legality Reference — **trigger:** any Layer 1 mechanical-rule work or validator design.
-- `validators/README.md` — **trigger:** writing or modifying a validator.
-- `../atu-method/docs/apparatus.md` + `../atu-method/docs/architecture.md` — **trigger:** any cross-corpus migration work, sibling-reader port (gnt/tanakh), or work where pending.md holds a multi-phase plan. These are the picture-shaped docs — they tell you what the user sees when the work is done. Pull back to them whenever an architectural fork appears mid-work (per `feedback_endstate_first_orientation`).
-- `C:\vaults-nano\my_brain\00_Inbox\claude-brainstorming.md` — **trigger:** Stan references a mobile-inbox item.
+- `data/syntax-reference/ud-taxonomy.md` §7 — any Layer 1 mechanical-rule work or validator design.
+- `validators/README.md` — writing or modifying a validator.
+- `../atu-method/docs/apparatus.md` + `architecture.md` — cross-corpus migration work, sibling-reader port, or work where the picture matters more than the phase list. Picture-shaped: what the user sees on bomreader.com / gnt-reader.com / tanakh-reader.com when done.
+- `../atu-method/docs/framework.md` — methodology, rule-design, autonomy-boundary. Authoritative cross-corpus body; per-repo canon §0/§1/§2 are pointer-only.
+- `../atu-method/docs/change-protocol.md` — any canon revision.
+- `../atu-method/docs/glossary.md` — ambiguous term (ATU, M1–M4, J1–J5, N=2 adjudication, etc.).
 
-**Self-report** before first substantive response: one-line-per-file confirmation of what you read, with any red flags surfaced.
+**Self-report before first substantive response:** one line per mandatory file read; pending-item disposition (each = executing-now / retired-with-rationale / re-deferred-with-concrete-trigger; "awaiting Stan direction" / "until Stan re-surfaces" are drift not defers); red flags. Silent skip = orientation failure.
 
-### At session end (WRAP-UP)
-
-**Update `pending.md`** in the current session folder. That's the entire wrap protocol. No transcript, no narrative session-notes, no decisions doc — the JSONL already has all of that and re-summarizing it is wasted bandwidth (see `feedback_drop_redundant_wrap_docs.md`).
-
-`pending.md` should be a tight bullet list: items deferred this session, items still open from prior sessions, HEAD pointer + cache version, anything fresh-session Claude needs to know that isn't already in CLAUDE.md or canon. Append, don't narrate. If a carry-forward item later closes, delete its bullet rather than rewriting history.
-
-Commit any code/corpus changes before wrapping. Session folder files live in gitignored `private/` so they don't need committing. Canon changes require `git add -f private/01-method/colometry-canon.md` per §Canon-to-git policy below.
-
-**Self-consistency audit trigger:** If the session added **≥2 new canon subsections/rules/merge-overrides**, run a light self-consistency audit before wrap — check that new cross-references resolve, no contradictions with existing rules, all three defensibility elements (WHY/HOW WE KNOW/SCOPE per canon §7) are present. Short pass. See canon §7 for the full trigger description.
-
-**Carry-forward discipline:** Anything noted as "defer to future session" anywhere in the session's documentation MUST get a corresponding line in `pending.md`. Agent reports and chat-window discussion do not survive session boundaries — only `pending.md` does. If you say "defer," write it to `pending.md`.
-
-### Compaction-resume
-
-Compaction is a session boundary. When resuming from a compaction summary, still execute the full CHECK-IN protocol above. Compaction gives context but does not exercise the orientation muscles — silent skip is a check-in failure. Per the session folder convention: a compaction-wake creates a NEW session folder with a new descriptor, even if the calendar date matches the pre-compaction folder.
-
-### Canon-to-git policy
-
-**`private/` is gitignored EXCEPT for two tracked exceptions: `private/01-method/colometry-canon.md` and `private/01-method/pericope-canon.md`.** Both canons are tracked via `git add -f` so the public repo shows their current form to any future scholar or collaborator reading the method docs. Colometry governs LINE breaks (within-verse cola); pericope governs SECTION breaks (multi-verse natural-unit boundaries).
-
-- **Dropbox is the sole versioning substrate** for the canon. Micro-refinement history lives in Dropbox's sync, not git.
-- **Git tracks only publicly-published canon state** — the form a scholar would read, weighed on its merits, not wading through micro-commit history.
-- When the canon changes, update the tracked file via `git add -f private/01-method/colometry-canon.md` in the same commit as any code/corpus changes that accompany it.
-- Other files under `private/` (session folders, research notes, sub-method docs) stay gitignored and unversioned in git. They live in Dropbox only.
-
-**Rationale:** the target audience for the tracked canon is a future scholar reading the final-form method doc. Micro-commit granularity obscures the method; a single tracked current-state file exposes it clearly.
+JSONL at `~/.claude/projects/c--Users-bibleman-repos-readers-bofm/<session-id>.jsonl` is the verbatim record. After compaction, grep into it. Don't write wrap artifacts / session-notes / full-transcript dumps; surface state inline. `pending.md` only for extended multi-cycle hand-offs.
 
 ---
 
-## Key Files
+## Editorial discipline (highest-violation surface)
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Main app shell — ALL CSS, HTML, JS inline (~4220 lines) |
-| `build_book.py` | Converts ATU-formatted .txt sources (one ATU per line) → HTML fragments (~1090 lines) |
-| `scripts/senseline_reformat_v8.py` | 19-pass automated ATU/line reformatter (filename retains historical "senseline" — internal-only) |
-| `narration.js` | Audio playback module (~1050 lines) |
-| `sw.js` | Service worker — bump version on every change |
-| `books/*.html` | Generated HTML fragments, one per book |
-| `data/text-files/v2-mine/` | **Canonical source text files — see rules below** |
-| `data/text-files/v1-skousen-breaks/` | Skousen's sense-line formatting — the precursor that triggered this method (input only) |
-| `data/text-files/v0-bofm-original/` | 2020 LDS base text (reference only) |
+### Stan-flagged verse = class-investigation directive
 
----
+When Stan flags a problem at a specific verse, that's a directive to investigate the rule set, NOT patch the verse. Right shape:
 
-## CRITICAL: Source File Rules
+1. Diagnose: what's the underlying class/pattern Stan's intuition is responding to?
+2. **Audit yourself FIRST** — walk M1 / M2 / M3 / M4 / J1–J5 / formula-integrity / R-rules / EP-rules / N=2 / N=3+ explicitly against the actual canon. Pay attention to **explicit exclusions** (e.g., M1 §1.5 excludes sequential narrative bonding; R17 SCOPE excludes direct discourse). If the framework's existing answer is "split, this is excluded," that's a real answer — not a gap.
+3. Only if step 2 finds a real gap, investigate corpus-wide for the pattern's frequency + variants.
+4. **New rules trigger §7.3 mandatory-audit** — ≥2 parallel adversarial agents BEFORE any validator infrastructure. NO scanner / applier / closed-list entry until the rule passes. Building infrastructure first is the "fake rule" failure mode.
+5. If audit holds: codify with WHY/HOW WE KNOW/SCOPE per canon §6 defensibility-capture, build the validator with UD signature, apply mechanically corpus-wide.
+6. If audit fails or framework already answers: report Stan the actual framework answer; offer Category B per-verse editorial-judgment fallback ONLY if genuinely needed.
 
-The files in `data/text-files/v2-mine/` are the canonical source. These are Stan's hand-edited ATU-format source files (one ATU per line). They are sacred.
+**Never offer Option A / Option B menus on rule-derivative cases.** Per `feedback_no_eyeball_offers` + `feedback_no_fake_dilemmas`: when canon resolves it, apply. When canon has a gap, investigate the gap, don't manufacture a menu.
 
-**NEVER:**
-- Alter punctuation (punctuation belongs to the canonical LDS text)
-- Add, remove, or change words
-- Apply **ad-hoc / novel** changes (changes not derived from a settled rule in `private/01-method/colometry-canon.md`) without Stan's explicit approval
+### Anchor in BoFM EME grammar via UD parse, not modern intuition
 
-**ALWAYS:**
-- Present ad-hoc / novel proposed changes for review before touching any canonical file
-- Save the original before any new upload could overwrite it
-- Make line-break changes only — the only editorial tool is where lines break
+BoFM is in KJV-style Early Modern English with documented archaic constructions (Skousen 2009): nominative-absolute "they having", flat compound predicates, distinctive subordination, archaic complementizer "for to". Before agreeing OR disagreeing with an editorial intuition sourced from modern reading habits, check the UD parse: `data/text-files/v2-mine/...` corresponding `.conllu` (or run a query via `atu_method.conllu_query` / similar). Modern reading turbo-charges false-positive splits at archaic constructions that the UD signature would protect.
 
-**Rule-derivative changes are different and do NOT require per-item approval.** When a settled mechanical rule in the canon (Rules 1, 5, 6, 7, 9, 10, 11, 12, 13a, 15, 16, 17, 18, 19, 20, 21, 22, 23, 26, 27, 28, plus EP-1/EP-3/EP-4/EP-5; canonical list in canon §3 Quick-Reference) fires unambiguously against the corpus — via its validator or a clean trigger match that the rule's UD signature catches — applying that rule IS the approval. The canon is the agreement. Rule-derivative changes on mechanical triggers are Category A by default and apply without per-item flagging.
+### Editorial-call structure
 
-**Validator output is a work queue, not a review queue.** `STRONG-MERGE-CANDIDATE` and `STRONG-SPLIT-CANDIDATE` tags are application-ready. Only `REVIEW-REQUIRED` items (those the validator itself flags as heuristic-ambiguous) need per-item editorial judgment. Don't invert this discipline by treating clean mechanical hits as "candidates for review" — that's the over-cautious failure mode, and it creates toilsome friction for Stan who already authorized the rule.
+When Stan names a verse with a specific desired partition or proposes a fix: line 1 = "Got it — [Stan's reading]"; line 2-N = the diff. **NO leading analytical defense of an alternative.** Analysis is value-add ONLY when Stan asks "what should it be?" or "explain what's going on there."
 
-Do not work on copies of v2-mine files; edit them directly when applying rule-derivative changes. Git and the canonical-LDS-text punctuation-preservation rule are the safeguards, not file-copy rituals.
+### Class-fix vs instance-fix
 
----
+Same FP class in 2+ rules OR 2+ validators OR 2+ verses in one session = engine-level fix at `validators/_shared/*` / `scripts/apply_*.py` / canon rule extension. Per-verse / per-validator guard the second time = whack-a-mole. **Stan's mantra: *swat the bug class, not the instance.***
 
-## Sense-Line Editorial Methodology
+### Adversarial-audit discipline (pre-implementation)
 
-This is the intellectual heart of the project. The full methodology canon lives at `private/01-method/colometry-canon.md` (gitignored). Key principles:
+Before non-trivial implementation (new validator with classification logic, new rule subsection, new closed-list extension, new shared helper, **OR ANY edit to `../atu-method/atu_method/*` cross-corpus shared infrastructure**), FIRST tool call must be ≥2 parallel Agent adversarial dispatches in one message OR an explicit `Audit-skippable: <named-trivial-class>` declaration.
 
-### The Foundational Test
-**Each line must be an atomic thought.**
+**Pre-commit on canon-touching commits:** every commit message touching `private/01-method/colometry-canon.md` includes `Audit-skippable per §7.3 ([reason])` OR `Audit dispatched: [evidence]`. When uncertain, dispatch. The mechanical commit-msg hook detects canon-extension patterns and requires the declaration.
 
-This overrides all other rules. A line that passes this test is valid. A line that fails it needs revision.
+### Apply causes regression
 
-- **Atomic thought:** the reader can process this line as a single unit of meaning without needing the next line to resolve it
+Revert the apply → root-cause why → fix the apply → re-attempt with integrity gate verified post-apply. Do NOT build downstream-recovery tools first. Cluster-agent "pass" reports don't substitute for the integrity gate.
 
-(Earlier "atomic breath unit" framing was retired and confirmed not pragmatically relevant; see canon §1 line 249 retirement note.)
+### Stan-escalation phrasing ("WHY are you still doing this", "stop wasting my time", "you screwed up again", "did i or did i not say...")
 
-### The Image Test
-Each line should paint a single image or picture in the mind. If a line contains two distinct images, it's a candidate for splitting. If a line contains no complete image, it may need merging with its neighbor.
+STOP iterating on the surface fix. Frame-reset to class level. Ask: what's the COMMON pattern across recent attempts that I've been treating as separate instances? The escalation is a signal that the loop has run too long; the meta-pattern is what needs the answer, not another surface iteration.
 
-### Grammar Reveals Structure — It Doesn't Create It
-Line breaks follow grammatical structure that already exists in the text. Breaking at causal clauses ("because"), purpose clauses ("that they might"), relative clauses, and parallel structures makes visible what is already encoded. The breaks are descriptive, not interpretive.
+### Proactive open-item surfacing
 
-### Verb Breaks
-Breaking *on* verbs (giving each verb its own line) is often correct — verbs are where the action is. Each verb is a frame, an image, a moment.
-
-### Settled Rules (examples)
-
-Full settled-rules list authoritative at `private/01-method/colometry-canon.md` §Settled Rules. The canon has greater depth (WHY/HOW/SCOPE per rule, precedent cases, diagnostic tests). Fresh-read the canon before any editorial or rule work. Representative examples for orientation:
-
-1. **AICTP integrity** — "And it came to pass that" stays on one line; never break mid-phrase. "Dangling that" variant: break BEFORE "that" so it leads the next line.
-2. **Never end a line on a conjunction or article** — "and," "or," "but," "nor," "the," "a," "an" dangling at line end is always wrong. Move to lead the next line.
-3. **Vocative units are indivisible** — "O Lord God," and "O Lord our God," stay whole; never split mid-address.
-4. **Complement Integrity (Rule 17, generalized)** — causative, aspectual, speech (indirect), cognition, volition, and FEF verbs require their "that"-clause complement on the same line. Six explicit exceptions live in the canon.
-
-### Three Categories for Proposed Changes
-
-- **Category A — Editorial slippage:** suboptimal break, no theological or rhetorical stakes. Propose confidently.
-- **Category B — Rhetorical shape:** changing the break changes how the speaker builds an argument. Flag and ask before proposing.
-- **Category C — Theological weight:** break placement makes a doctrinal point. Flag and discuss before touching.
-
-### What Never Changes
-- Punctuation (always canonical LDS text)
-- Words (never add, remove, or alter)
-- Only line break positions change
+Every deferred item must be visible in chat (per `feedback_decisions_in_chat_not_files.md` — chat is the decision surface; pending.md is status-tracker only). Periodically re-examine whether held items have become canon/code/precedent-derivable as the method matures. If yes, surface "I previously needed your input on X; canon now resolves it via Y; applying unless you say stop" — don't re-defer derivable items.
 
 ---
 
-## Build Pipeline
+## Source file rules
 
-After any source text changes:
+`data/text-files/v2-mine/` is the canonical source. Hand-edited by Stan, one ATU per line. **Sacred.**
 
-```bash
-python3 build_book.py --all
-```
+NEVER alter punctuation (post-1830 editorial overlay, canonical to LDS text). NEVER add, remove, or change words. NEVER apply ad-hoc / novel changes without Stan approval. ALWAYS preserve verse-refs. The ONLY editorial tool is where lines break.
 
-This rebuilds all `books/*.html` fragments from the v2 source files. Also bump the service worker cache version in `sw.js` — find `bomreader-vXX` and increment XX.
-
-The pipeline per line: `wrap_punctuation(fix_participles(apply_swaps(line, swap_list)))`
-
-### Swap System
-Archaic words are wrapped in `<span class="swap" data-orig="archaic" data-mod="modern">archaic</span>`. Two classes:
-- `.swap` — visible dotted underline (vocabulary modernization)
-- `.swap.swap-quiet` — no decoration (high-frequency grammar words: thee, hath, unto)
-
-TTS audio reads `data-orig` (authentic text), NOT `data-mod` (modern). Never change this.
+**Rule-derivative changes are different and do NOT require per-item approval.** When a settled mechanical rule in canon (Category A: R1, R5–R7, R9–R23, R26, R28, EP-1/3/4/5, M-overrides per §3 Quick-Reference) fires unambiguously via its validator or a clean trigger match, applying that rule IS the approval. STRONG-MERGE-CANDIDATE / STRONG-SPLIT-CANDIDATE validator tags are application-ready. Only `REVIEW-REQUIRED` items need per-item editorial judgment.
 
 ---
 
-## Git Workflow
+## Methodology stack
 
-- All work on `main` branch
-- Pushes: Claude pushes autonomously by default after committing — Stan explicitly authorized blanket push 2026-05-11 to remove unnecessary middle-man friction. Exceptions that still warrant confirmation: force-pushes (push --force / --force-with-lease), pushes to non-main branches, pushes where the diff hasn't been shown to Stan yet (e.g., agent-applied bulk corpus changes). Transport: SSH (since 2026-05-11) — silent, no browser prompts. All four sibling repos (readers-bofm, atu-method, readers-gnt, readers-tanakh) use `git@github.com:bibleman-stan/<repo>.git` remotes against the `bibleman-windows-desktop` SSH key.
-- Bump service worker cache version with every CSS/JS/HTML change
-- Audio files (.mp3) are committed directly to repo (no LFS)
-- **Security alert:** Google API key exposed at `annotations.js` line 26 — needs restriction in Google Cloud Console
+Three forces operating simultaneously: **generative** (atomic thought drives line creation; J1–J5 structural justifications), **subtractive** (Layer 1 syntax + complement + formula integrity trigger merges; M1–M4 merge-overrides), **diagnostic** (single-image / camera-angle as tiebreaker). Authoritative body: [`../atu-method/docs/framework.md`](../atu-method/docs/framework.md). BoFM-specific rule detail: `private/01-method/colometry-canon.md` §5.
 
----
+**Categories** (autonomy boundary per `../atu-method/docs/framework.md` §2):
+- **Category A** (Mechanical, mandatory) — rule firing IS the approval; auto-apply.
+- **Category B** (Editorial, judgment-required) — flag and discuss with Stan.
+- **Category C** (Theological / textual-critical) — hand-curation only.
 
-## Audio Pipeline
-
-- **Voice:** Samuel only (`ddDFRErfhdc2asyySOG5`), `eleven_multilingual_v2` model
-- **Credits:** ElevenLabs, ~100k chars/month
-- **Pipeline:** `colab/samuel_pipeline.ipynb` — parameterized, has Google Drive persistence
-- **CRITICAL:** Always use Drive persistence. Cache on ephemeral VM = lost files.
-- TTS reads authentic BofM text (`data-orig`), NOT modernized swaps
-- Audio inventory: 1 Nephi complete, 2 Nephi ch 1-5 only, Enos complete
+**No editorial overlay has interpretive force.** Punctuation is preserved for fidelity but is post-1830 editorial overlay; never used as break/merge evidence (per `feedback_punctuation_not_evidence`).
 
 ---
 
-## Pending Tasks (Priority Order)
+## Pipeline & files
 
-1. Generate 2 Nephi ch 25-33 audio (~49k chars) when credits reset
-2. Test audio playback on bomreader.com for 2 Ne 1-5
-3. ~~Fix audio-highlight sync drift (pericope headers throw off lineIndex count)~~ — **Investigated 2026-05-11; static analysis shows indices align correctly.** `build_book.py inject_line_indices` + `scripts/generate_audio.py` both count pericope-headers as +1 in the same index space (1 Ne 1: pericope @ data-line-index=0, first sense-line @ data-line-index=1, manifest first entry lineIndex=1 — match). Any actual playback drift is timing-related (audio rate vs manifest timestamps), not indexing. Re-open only with runtime evidence of misalignment.
-4. ~~Fix 1 Ne 6:1 verse text~~ — **Done 2026-05-11.** v2-mine had stray break at `after / upon these plates`; merged onto one line per v0/v1 baselines.
-5. ~~Fix KJV diff display (currently destroys ATU line formatting when toggled)~~ — **Investigated 2026-05-11; bug is dormant.** Toggle UI not surfaced in current app (line 3768 removes `show-kjv-diff` on load, no handler adds it). CSS already shows diff as annotation below sense-lines (lines 1469-1484); the originally-feared `verse-normal` hide does not exist in current code. Surface the toggle if needed; rule is correct.
-6. Fix scripts/build_kjv_diff.py hardcoded paths (line numbers may have drifted; re-verify)
-7. Light mode CSS verification for new UI elements
-8. ~~Surface book introductions (currently hidden in settings-panel-old)~~ — **Done.** Book intros are in the nav panel (line 3493 builds the page; line 2392 in-app explainer copy points users at "Open the navigation panel and tap a book name").
-9. Restrict Google API key in Google Cloud Console
+**Source → render pipeline:**
 
----
+| Tier | Directory | Engine |
+|---|---|---|
+| v0 | `data/text-files/v0-bofm-original/` | 2020 LDS base text, never edited |
+| v1 | `data/text-files/v1-skousen-breaks/` | Skousen sense-line precursor, input only |
+| v2 | `data/text-files/v2-mine/` | Stan + Claude hand-edited, single source of truth |
 
-## Book Inventory
+`build_book.py --all` → `books/*.html` per line: `wrap_punctuation(fix_participles(apply_swaps(line, swap_list)))`. After source text changes, bump `sw.js` cache version (`bomreader-vXX` → `+1`).
 
-| ID | Name | Chapters | Audio |
-|----|------|----------|-------|
-| `1nephi` | 1 Nephi | 22 | ✅ Complete |
-| `2nephi` | 2 Nephi | 33 | ⚠️ Ch 1-5 only |
-| `jacob` | Jacob | 7 | ❌ None |
-| `enos` | Enos | 1 | ✅ Complete |
-| `jarom` | Jarom | 1 | ❌ None |
-| `omni` | Omni | 1 | ❌ None |
-| `words-of-mormon` | Words of Mormon | 1 | ❌ None |
-| `mosiah` | Mosiah | 29 | ❌ None |
-| `alma` | Alma | 63 | ❌ None |
-| `helaman` | Helaman | 16 | ❌ None |
-| `3nephi` | 3 Nephi | 30 | ❌ None |
-| `4nephi` | 4 Nephi | 1 | ❌ None |
-| `mormon` | Mormon | 9 | ❌ None |
-| `ether` | Ether | 15 | ❌ None |
-| `moroni` | Moroni | 10 | ❌ None |
+**Swap system** (reference implementation, ported to siblings via `../atu-method/atu_method/swaps/`): archaic words wrapped `<span class="swap" data-orig="archaic" data-mod="modern">archaic</span>`. `.swap` (dotted underline, vocabulary modernization) + `.swap.swap-quiet` (no decoration, high-frequency grammar words). TTS reads `data-orig` (authentic text), NEVER `data-mod`.
+
+**Audio** (Samuel voice `ddDFRErfhdc2asyySOG5`, `eleven_multilingual_v2`, ~100k chars/month). Pipeline: `colab/samuel_pipeline.ipynb` with Drive persistence (cache on ephemeral VM = lost files). 1 Nephi complete; 2 Nephi ch 1–5 only; Enos complete.
 
 ---
 
-## UI Architecture (Post-Mar 16 Redesign)
+## Validators & mechanical gates
 
-- **Thin persistent topbar** (44px): book/chapter name left, Modern pill + Search + Settings right
-- **Full-screen picker:** opens on tap of book/chapter in topbar
-- **Bottom sheet:** settings (modern words, listen, section headings, text size, light mode)
-- **Hash routing:** `#bookId` or `#bookId-chapterNumber` (e.g. `#alma-45`)
-- **Two entry points:** `index.html` (main SPA) and `books/index.html` (alternate view) — CSS changes must be applied to both
-- **Sense-lines only** for Reading Edition — `applyTextMode(1)` forced on load
+Layer 1 = generic English-grammar break-legality (`data/syntax-reference/ud-taxonomy.md` §7) — permission/prohibition. Layer 3 = BoFM editorial methodology (canon §5) — operates within L1's permitted space. Mixing the two is a regression.
 
-### CSS Variables
-```css
-:root {
-  --line-height: 2.35;
-  --wrap-indent: 0.75em;
-  --verse-gap: 2px;
-  --punct-opacity: 0;
-  --font-size: 17px;
-}
-```
+**Validator findings = work queue, not review queue.** STRONG-MERGE / STRONG-SPLIT → mechanical apply (Category A). REVIEW-REQUIRED → per-item judgment. Walking Stan through verse-level confirmations on rule-derivative changes is the inverted-discipline failure mode.
 
-Verse-number visibility is controlled by a body class (`body.hide-verse-num` hides them) toggled from the bottom settings sheet, not by a CSS variable. Default state: visible. Persisted to localStorage as `bomreader-verse-num`. Punctuation visibility is similarly controlled by `body.hide-punct` (default: hidden); the `--punct-opacity` variable above is the older mechanism and may be retired in the future.
+**Mechanical gates:**
+- `validators/run_all.py --baseline-check` blocks regressions vs `validators/.baseline.json`. Wired as `.git/hooks/pre-commit` via `bash validators/hooks/install.sh`.
+- `validators/check_canon_extensions.py` detects canon-extension patterns in staged diffs; requires audit-evidence keyword (`Audit dispatched`, `hostile audit`, `§7.3`, etc.) or skip-safe claim (`Audit-skippable per §7.3 (...)`) in the commit message. Wired as `.git/hooks/commit-msg`.
+
+**Bypass:** `git commit --no-verify` = Stan-only explicit override. New validators stage `--update-baseline` in the same commit. Canon commits include the audit-status declaration substring or fail the hook.
 
 ---
 
-## Known Issues
+## Canon-to-git policy
 
-- Audio-highlight sync drift after pericope headers (lineIndex mismatch)
-- KJV diff layer destroys ATU line formatting when toggled
-- Light mode CSS unverified for new topbar/picker/sheet elements
-- Book introductions inaccessible (hidden in old panel)
-- Google API key exposed in annotations.js
+`private/` is gitignored EXCEPT two tracked exceptions: `private/01-method/colometry-canon.md` and `private/01-method/pericope-canon.md`. Both tracked via `git add -f` so the public repo shows current canon state to any future scholar.
 
----
-
-## Agent dispatch — match model to task
-
-When dispatching subagents via the Agent tool:
-- **Haiku** — mechanical work: file moves, glob/ls formatting, reference lookups, yes/no checks against file content, corpus-wide pattern scans with defined rules
-- **Sonnet** — templated/narrow: scanner runs with defined rules, quick consistency checks, documentation updates following a template, cross-project consistency checks once both sides are stable
-- **Opus** — reasoning-heavy: multi-angle adversarial audits, methodology synthesis, restructuring major documents, novel rule design, anything where the judgment IS the work product
-
-When in doubt, Sonnet is the right default. Stan shouldn't have to think about this — you make the call.
-
-**Parallelization default.** When multiple audits are independent, dispatch them in parallel — one message with multiple Agent tool calls. Sequential only when audit A's verdict determines whether audit B should run. This substantially reduces audit friction (3 parallel audits at ~26 seconds each vs. ~80+ seconds sequential). Applies equally to non-audit subagent dispatches when they are independent.
-
-**Horde-amplification ceiling.** The 3-audit baseline above is the floor, not the ceiling. When work decomposes into N≥4 independent units, dispatch all N — not 1 agent doing N dimensions sequentially. Stan's correction: *"4-8x more agents on everything going forward unless it's a genuine single-point exercise."* Decompose audits per-dimension, corpus surveys per-book, fixture inventories per-fixture, validator builds per-subcase. Pre-spawn next-wave verification/integration agents BEFORE the producing wave finishes so the next wave doesn't gate-stall on completion. See `feedback_parallel_horde_default.md` for the full discipline.
-
-## Pre-commit adversarial-audit discipline
-
-**Before any commit that includes `git add -f private/01-method/colometry-canon.md`, check whether the change matches a mandatory-audit trigger per canon §7.3.** The 12 triggers are listed in canon §7; re-read them when uncertain. If the change matches any trigger, audit evidence (hostile-agent dispatch + verdict + application) must be present in the commit message itself.
-
-**Audit-skippable.** Canon edits that do NOT match any trigger (typo fixes, cross-reference updates without precedence claims, deletions of same-session reverts, defensibility-capture additions to already-settled rules without scope changes, Category A mechanical corpus edits that are not part of a ≥5-instance sweep) proceed without audit.
-
-**When uncertain.** Dispatch the audit. The cost of a false-positive audit (Stan reads a no-op audit result) is small; the cost of a false-negative audit (fake rule commits) is large.
-
-**Required commit-message declaration.** Every commit message that touches `private/01-method/colometry-canon.md` must declare audit-status explicitly: either `Audit-skippable per §7.3 ([reason])` with the reason citing one of the named audit-skippable categories above, OR `Audit dispatched: [evidence]` with concrete reference (parallel-agent verdicts, prior-commit pointer). Omission is itself a discipline failure — visible at a glance in `git log`. The mechanical gate (`validators/hooks/commit-msg` via `check_canon_extensions.py`) detects extension patterns and requires an audit-evidence keyword; the explicit declaration is the editor-side discipline that front-loads (and complements) the gate.
-
-**Mechanical gates installed:**
-- `validators/run_all.py --baseline-check` runs all syntax/colometry validators against the corpus and blocks commits introducing regressions vs `validators/.baseline.json`. Wired as `.git/hooks/pre-commit` via `bash validators/hooks/install.sh`.
-- `validators/check_canon_extensions.py` analyzes staged canon diffs for §7.3 trigger #1 patterns (new closed-list rows, new rule sections, new merge-overrides, new dated principles, new trigger entries, new SCOPE-exclusion bullets, **plus catch-all H3 principle headings and bolded-label bullets — c-bis/g**) and requires the commit message to contain a strong-signal audit keyword (`hostile audit`, `audit dispatched`, `audit complete`/`completed`/`verified`/`verdict`/`run`, `trigger #`, `§7.3`, `§7`, `post-codification`, `post-detection`, `corpus-fit`, `RETRACT`) — bare `audit` alone no longer passes — or skip-safe claim (`typo fix`, `cross-reference update`, `defensibility-capture`, `audit-skippable`) — or `stan-authorized` / `stan-direct`. **Negation guards**: phrases like `no audit`, `without audit`, `audit pending`, `todo: audit`, `fake commit` fail the gate regardless of any positive keyword. Wired as `.git/hooks/commit-msg`. Closes the gap that `--baseline-check` can't catch. Bypass: `git commit --no-verify` (Stan-only).
-
-**Self-test to run pre-commit** (faster than trigger-list scan):
-- Does this change include a scope claim, a precedence claim, a closed-list extension, or a named-category carve-out? → audit.
-- Does this change rest on spot-check evidence rather than a full-corpus classification? → audit.
-- Does this change reclassify or delete previously-settled canon content? → audit.
-- Did this session codify a new rule, sub-clause, or named pattern, AND has the corpus-fit sweep NOT yet been run on the full corpus (per canon §7.3 trigger #12)? → run goal-fit + application-consistency audits before commit, OR enumerate residuals in pending.md as next-session FIRST item. The codifying sweep saw what the codifier looked at; the goal-fit sweep finds what they didn't.
-- If no to all four → probably skip-safe.
-
-This discipline is codified in canon §2 (scope/precedence/closed-list/carve-out = Category B diagnostic) and canon §7.3 (mandatory-audit trigger list). See also the `feedback_rhetoric_bandwagon` memory's named-category-carve-out and biased-spot-check sub-patterns.
+- Dropbox is the sole versioning substrate for canon micro-refinement history.
+- Git tracks publicly-published canon state — the form a scholar would weigh on its merits.
+- Other `private/` files (session folders, research notes, sub-method docs) stay gitignored and unversioned in git.
 
 ---
 
-## Update Protocol
+## Default decisions (do NOT surface as menus to Stan)
 
-When updating handoff docs, append a dated block at the bottom of the relevant file:
+| Decision point | Standing answer |
+|---|---|
+| Adversarial audit on non-trivial implementation | ≥2 parallel Agent dispatches in one message, OR `Audit-skippable: <named-trivial-class>`. Never sequential. |
+| Extending existing validator vs creating new | Extension. New = explicit justification with substantive criterion (per `feedback_check_existing_tooling`). |
+| Same FP class in 2+ rules/validators/verses in session | STOP. Engine-level / canon-level fix. No more per-instance guards. |
+| Apply causes regression | Revert → root-cause → fix → re-apply with integrity gate. NEVER build recovery tools first. |
+| Commit attempt fails | Diagnose `git log -3` + `git status --short` BEFORE retry. Use `git commit -m "$(cat <<'EOF'...EOF)"` (NEVER `-F /dev/stdin` — Linux-only). Never run two `git commit` in parallel — they race on HEAD lock. |
+| "Should I commit now or wait?" | Commit substantive work proactively; status claims AFTER commit (per `feedback_commit_workflow`). |
+| Cascade rebuild after pipeline change | Parallel cluster agents; never one agent on 15 books. |
+| Per-item judgment work at corpus scale | Parallel cluster-Opus dispatch; never hand-pass. |
+| Stan asks "explain what's going on there" / "what is the correct approach" | Diagnose the rule-set gap. Do NOT propose Option A / Option B menus on the surface verse. |
+| Stan names a verse with a desired partition | "Got it — [reading]" + diff. No leading analytical defense. |
 
-```markdown
----
-### Update — 2026-MM-DD
-- What changed
-- What was decided
-- New state
-```
+When outside this table, surface. When inside, dispatch the standing answer and report the result.
 
-Never overwrite history — always append.
+**Corpus clusters** (for cluster-cascade routing): Small Plates (1 Ne, 2 Ne, Jacob, Enos, Jarom, Omni, WofM) / Mosian Era (Mosiah, Alma 1–44) / War Narrative (Alma 45–63, Helaman) / 3 Nephi–4 Nephi / Mormon–Ether–Moroni. Threshold: any batch ≥25 surgical fixes spanning 3+ clusters MUST be split.
 
----
-
-## What Stan Does / What Claude Does
-
-**Stan:**
-- Makes all final editorial decisions on line breaks
-- Reviews all proposed changes before they touch canonical files
-- Has authorized blanket push (Claude pushes after committing — see Git Workflow)
-- Has final say on all Category B and C colometry decisions
-
-**Claude Code:**
-- **Mechanical passes:** find and APPLY rule-derivative changes (dangling conjunctions per Rule 9, complement-integrity merges per Rule 17, insomuch-that binding per Rule 27, etc.). Canon is authority; no per-item flagging needed for clean mechanical hits.
-- **Ad-hoc / novel proposals:** present in clear before/after format for Stan's review. These are Category B/C changes, not rule-derivative.
-- **Apply approved changes directly to canonical files.** File-copy rituals are not the safeguard — the safeguards are the punctuation-preservation rule, the words-never-change rule, git history, and the rule-derivative vs. ad-hoc distinction.
-- Run build pipeline after source text changes (`python3 build_book.py --all` + bump `sw.js` cache version).
-- Never alter punctuation, words, or structure — line breaks only
-- **Colometry review partner:** on request, agree/challenge/suggest on Stan's edits using the settled rules and category framework
-- **Handoff maintenance:** after any session where decisions are made, principles are refined, or new patterns identified, update the relevant handoff file (append dated block, never overwrite history)
-- **"Do an update" means:** update ALL relevant handoffs, memory files, research files, and any other documentation so that a fresh session can resume with full context
-- **Hedging discipline:** do not ask for confirmation on rule-derivative actions Stan has already implicitly authorized by adopting the rule. "Yes that's fine" after clear prior direction is a friction cost that compounds across a session. If the rule says to do X and conditions are unambiguous, do X.
+**Agent model routing:** Haiku for mechanical lookups; Sonnet for narrow-scope scans where rules are defined; Opus for adversarial audits / methodology synthesis / novel rule design / cross-corpus shared-infrastructure edits. Sonnet default; reserve Opus for reasoning-heavy work.
 
 ---
 
-## Connected Resources
+## Git workflow
 
-### Academic Vault
-Stan's academic Obsidian vault at `C:\vaults-nano\my_brain\` contains his OTC dissertation materials, bibliographic records (332 sources), scholar hub notes (~230), and 838 zettels. The vault's `CLAUDE.md` has full orientation. Read it for context when work touches Hebrew poetry, oral tradition, stylometry, or the FEF paper.
+All work on `main`. **Commit AND push autonomously after any clean commit on main** (Stan blanket-authorized 2026-05-11; SSH transport `bibleman-windows-desktop` key, silent pushes). Sequence: `git commit` → if exit 0 → `git push origin main` → THEN report.
 
-The BOM Reader `research/` folder is symlinked into the vault at `10_Projects/BOM-Reader-Research/`. Files live in the vault; the repo path is a symlink. The folder is gitignored.
+**Confirm BEFORE push:** force-pushes (`--force` / `--force-with-lease`); pushes to non-main; pushes containing agent-applied bulk corpus changes Stan hasn't diff-reviewed.
 
-### Two-AI Workflow
-Claude Code (this tool) handles file access, commits, mechanical analysis. Claude.ai chat handles brainstorming, design, paper strategy. Stan bridges between them. Handoff docs and research files are the shared ground truth — keep them current so either AI can spin up with full context.
+**Tree-state self-check before commit (mandatory):** `git status --short`. If unrelated work is staged, separate it before committing — commit titles must describe actual scope. Either ask first, commit separately, or `git stash --keep-index`.
+
+**Agent commit discipline:** when briefing committing agents, mandate targeted `git add <specific-path>` per file. Never `git add -A` (sweeps parallel uncommitted work, misattributes — per `feedback_agent_git_add_discipline`).
