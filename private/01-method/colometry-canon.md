@@ -87,7 +87,7 @@ Per-rule operational detail lives in §5. Each rule's full template entry (Statu
 | R22 | Divine title appositives | Active | B | 3 | §5 R22 | (no dedicated validator yet; Cat B = Stan-eye-check) |
 | R23 | Date colophon integrity | Active | A | 3 | §5 R23 | `validators/colometry/validate_rule_23_ud.py` |
 | R26 | Adjective (or NOUN-as-predicate) + "that" | Active | A | 3 | §5 R26 | `validators/colometry/validate_rule_26_ud.py` |
-| R27 | "Insomuch that" binding | Proposed | A | 3 | §5 R27 | `validators/colometry/validate_rule_27_ud.py` |
+| R27 | "Insomuch that" binding | Active | A | 3 | §5 R27 | `validators/colometry/validate_rule_27_ud.py` |
 | R28 | Speech-act announcement after frame | Active | A | 3 | §5 R28 | `validators/colometry/validate_rule_28_ud.py` |
 | EP-1 | "According to" manner vs. source | Active | B | 3 | §5 EP-1 | (no dedicated validator yet; Cat B = Stan-eye-check) |
 | EP-3 | Inverted predicate | Active | B | 3 | §5 EP-3 | (no dedicated validator yet; Cat B = Stan-eye-check) |
@@ -1270,6 +1270,15 @@ R19_OBLIGATORY_REF_NOUN_HEADS:
   - commandment
   - scripture
   - name
+  # Tier 3 — temporal head with deictic/restrictive complement
+  # Codified 2026-05-12 per audit α'/β' verdicts. Only `time` passes
+  # the head-content-emptiness threshold cleanly (100% obligatory across
+  # 5 corpus hits in pattern "the/that time when/that X"). Candidate
+  # lemmas record/book/day/year/law/sign/covenant/oath rejected this
+  # cycle pending a future audit on the head-of-NP-specifier
+  # SCOPE-exclusion (cases where the head is already referentially
+  # specified by an `nmod:of` dependent → relative is supplementary).
+  - time
 
 # Content-bearing adjective modifiers that referentially-complete the
 # `one`-head, disqualifying auto-merge (route to REVIEW). Cardinality
@@ -1814,7 +1823,7 @@ R26_NOUN_PREDICATES:
 <!-- ===== R27 ===== -->
 ### R27: "Insomuch That" Binding
 
-**Status:** Proposed
+**Status:** Active (promoted from Proposed 2026-05-12; corpus-fit verified 96.5% clean categorization, well over §7.8 adoption threshold of 80%)
 **Category:** A (Mechanical, mandatory)
 **Decidability:** UD-pattern
 **Layer:** 3
