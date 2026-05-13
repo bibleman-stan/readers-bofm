@@ -15,7 +15,7 @@ A web-based colometric reading edition of the Book of Mormon at **bomreader.com*
 **CONSULT-ON-TRIGGER:**
 - `data/syntax-reference/ud-taxonomy.md` §7 — any Layer 1 mechanical-rule work or validator design.
 - `validators/README.md` — writing or modifying a validator.
-- `../atu-method/docs/apparatus.md` + `architecture.md` — cross-corpus migration work, sibling-reader port, or work where the picture matters more than the phase list. Picture-shaped: what the user sees on bomreader.com / gnt-reader.com / tanakh-reader.com when done.
+- `../atu-method/docs/apparatus.md` + `../atu-method/docs/architecture.md` — cross-corpus migration work, sibling-reader port, or work where the picture matters more than the phase list. Picture-shaped: what the user sees on bomreader.com / gnt-reader.com / tanakh-reader.com when done.
 - `../atu-method/docs/framework.md` — methodology, rule-design, autonomy-boundary. Authoritative cross-corpus body; per-repo canon §0/§1/§2 are pointer-only.
 - `../atu-method/docs/change-protocol.md` — any canon revision.
 - `../atu-method/docs/glossary.md` — ambiguous term (ATU, M1–M4, J1–J5, N=2 adjudication, etc.).
@@ -55,7 +55,7 @@ Same FP class in 2+ rules OR 2+ validators OR 2+ verses in one session = engine-
 
 ### Use the UD layer FIRST. Agents are a last resort for corpus questions.
 
-The BoFM Macula-equivalent already exists: full-corpus UD parses at `data/parses/ensemble/stanza/*.conllu`, queried via `validators/parsing/conllu_query.py` + `line_mapping.py` (which gives v2-mine-line-of-each-token). Every active canon rule has a UD validator at `validators/colometry/validate_rule_*_ud.py`. The infrastructure for "find all tokens X whose head Y sits on a different ATU line, optionally filtered by deprel/upos/lemma" is **already built**.
+The BoFM Macula-equivalent already exists: full-corpus UD parses at `data/parses/ensemble/stanza/*.conllu`, queried via `validators/parsing/conllu_query.py` + `validators/parsing/line_mapping.py` (which gives v2-mine-line-of-each-token). Every active canon rule has a UD validator at `validators/colometry/validate_rule_*_ud.py`. The infrastructure for "find all tokens X whose head Y sits on a different ATU line, optionally filtered by deprel/upos/lemma" is **already built**.
 
 **Before dispatching ANY agent for a corpus pattern survey, the answer is almost always a 30-50 line Python script using this infrastructure.** It returns deterministic results instantly — no FP filtering, no agent tokens, no wall-clock minutes. Per `feedback_scripts_before_agents` + `feedback_check_existing_tooling`.
 

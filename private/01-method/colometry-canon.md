@@ -65,35 +65,35 @@ Per-rule Category assignments are in each §5 entry's `Category:` header field.
 
 Per-rule operational detail lives in §5. Each rule's full template entry (Status / Category / Decidability / Layer / Rule / UD signature / Scope / Exclusions / Precedence / Examples / Implementation) is at §5; this table is the index.
 
-| # | Name | Status | Category | Layer | §5 Anchor |
-|---|------|--------|----------|-------|----------|
-| R1 | AICTP formula integrity | Active | A | 3 | §5 R1 |
-| R5 | Equivalence "or" as appositive | Active | B | 3 | §5 R5 |
-| R6 | Causal clauses break | Active | A | 3 | §5 R6 |
-| R7 | Purpose clauses break | Active | A | 3 | §5 R7 |
-| R9 | Line-final CCONJ forbidden | Active | A | 1 | §5 R9 (Layer-1 pointer) |
-| R10 | V + DO split forbidden | Active | A | 1 | §5 R10 |
-| R11 | Line-final DET forbidden | Active | A | 1 | §5 R11 (Layer-1 pointer) |
-| R12 | Line-final AUX / compound-verb under shared aux | Active | A | 1+3 (mixed) | §5 R12 |
-| R13a | Line-final ADP forbidden | Active | A | 1 | §5 R13a (Layer-1 pointer) |
-| R15 | Vocative indivisible | Active | A | 3 | §5 R15 |
-| R16 | AICTP dangling "that" | Active | A | 3 | §5 R16 |
-| R17 | Complement integrity | Active | A | 3 | §5 R17 |
-| R18 | Fixed idiom integrity | Active | A | 3 | §5 R18 |
-| R18a | Patriarch-deity-triad fixed formula | Active | A | 3 | §5 R18a |
-| R19 | Cataphoric / anaphoric relative | Active | A (PROPN/PRON/DET) + B (NOUN-REVIEW) | 3 | §5 R19 |
-| R20 | No-anchor (structural floor) | Active | B | 3 | §5 R20 |
-| R21 | Participial absolute integrity | Active | A | 3 | §5 R21 |
-| R22 | Divine title appositives | Active | B | 3 | §5 R22 |
-| R23 | Date colophon integrity | Active | A | 3 | §5 R23 |
-| R26 | Adjective (or NOUN-as-predicate) + "that" | Active | A | 3 | §5 R26 |
-| R27 | "Insomuch that" binding | Proposed | A | 3 | §5 R27 |
-| R28 | Speech-act announcement after frame | Active | A | 3 | §5 R28 |
-| EP-1 | "According to" manner vs. source | Active | B | 3 | §5 EP-1 |
-| EP-3 | Inverted predicate | Active | B | 3 | §5 EP-3 |
-| EP-4 | Title/role + domain | Active | B | 3 | §5 EP-4 |
-| EP-5 | Virtue/vice lists | Active | B | 3 | §5 EP-5 |
-| M4-BoFM-1 | Subject-orphan predicate completion | Active | A (closed-list shapes) + B (length-backstop) | 3 | §5 M4-BoFM-1 |
+| # | Name | Status | Category | Layer | §5 Anchor | Detector |
+|---|------|--------|----------|-------|----------|----------|
+| R1 | AICTP formula integrity | Active | A | 3 | §5 R1 | `validators/colometry/validate_rule_01_ud.py` |
+| R5 | Equivalence "or" as appositive | Active | B | 3 | §5 R5 | `validators/colometry/validate_rule_05_ud.py` |
+| R6 | Causal clauses break | Active | A | 3 | §5 R6 | `validators/colometry/validate_rule_06_ud.py` |
+| R7 | Purpose clauses break | Active | A | 3 | §5 R7 | `validators/colometry/validate_rule_07_ud.py` |
+| R9 | Line-final CCONJ forbidden | Active | A | 1 | §5 R9 (Layer-1 pointer) | `validators/syntax/validate_line_final_tokens.py` |
+| R10 | V + DO split forbidden | Active | A | 1 | §5 R10 | `validators/colometry/validate_rule_10_ud.py` |
+| R11 | Line-final DET forbidden | Active | A | 1 | §5 R11 (Layer-1 pointer) | `validators/syntax/validate_line_final_tokens.py` |
+| R12 | Line-final AUX / compound-verb under shared aux | Active | A | 1+3 (mixed) | §5 R12 | `validators/syntax/validate_line_final_tokens.py` + `validators/syntax/validate_rule_12_compound_verb.py` |
+| R13a | Line-final ADP forbidden | Active | A | 1 | §5 R13a (Layer-1 pointer) | `validators/syntax/validate_line_final_tokens.py` |
+| R15 | Vocative indivisible | Active | A | 3 | §5 R15 | `validators/colometry/validate_rule_15_vocative.py` |
+| R16 | AICTP dangling "that" | Active | A | 3 | §5 R16 | `validators/colometry/validate_rule_16_ud.py` |
+| R17 | Complement integrity | Active | A | 3 | §5 R17 | `validators/colometry/validate_rule_17_ud.py` |
+| R18 | Fixed idiom integrity | Active | A | 3 | §5 R18 | `validators/colometry/validate_rule_18_ud.py` |
+| R18a | Patriarch-deity-triad fixed formula | Active | A | 3 | §5 R18a | `validators/colometry/validate_rule_18a_patriarch_triad.py` |
+| R19 | Cataphoric / anaphoric relative | Active | A (PROPN/PRON/DET) + B (NOUN-REVIEW) | 3 | §5 R19 | `validators/colometry/validate_rule_19_ud.py` |
+| R20 | No-anchor (structural floor) | Active | B | 3 | §5 R20 | `validators/syntax/validate_rule_20_ud.py` |
+| R21 | Participial absolute integrity | Active | A | 3 | §5 R21 | `validators/colometry/validate_rule_21_ud.py` + `validators/colometry/validate_participial_phrases.py` |
+| R22 | Divine title appositives | Active | B | 3 | §5 R22 | (no dedicated validator yet; Cat B = Stan-eye-check) |
+| R23 | Date colophon integrity | Active | A | 3 | §5 R23 | `validators/colometry/validate_rule_23_ud.py` |
+| R26 | Adjective (or NOUN-as-predicate) + "that" | Active | A | 3 | §5 R26 | `validators/colometry/validate_rule_26_ud.py` |
+| R27 | "Insomuch that" binding | Proposed | A | 3 | §5 R27 | `validators/colometry/validate_rule_27_ud.py` |
+| R28 | Speech-act announcement after frame | Active | A | 3 | §5 R28 | `validators/colometry/validate_rule_28_ud.py` |
+| EP-1 | "According to" manner vs. source | Active | B | 3 | §5 EP-1 | (no dedicated validator yet; Cat B = Stan-eye-check) |
+| EP-3 | Inverted predicate | Active | B | 3 | §5 EP-3 | (no dedicated validator yet; Cat B = Stan-eye-check) |
+| EP-4 | Title/role + domain | Active | B | 3 | §5 EP-4 | (no dedicated validator yet; Cat B = Stan-eye-check) |
+| EP-5 | Virtue/vice lists | Active | B | 3 | §5 EP-5 | (no dedicated validator yet; Cat B = Stan-eye-check) |
+| M4-BoFM-1 | Subject-orphan predicate completion | Active | A (closed-list shapes) + B (length-backstop) | 3 | §5 M4-BoFM-1 | `validators/colometry/validate_m4_bofm_1_subject_orphan.py` |
 
 **Status semantics:** Active = settled, fires per detector signatures. Proposed = awaiting corpus-sweep verification per the framework's adoption protocol at [`atu-method/docs/framework.md §7.8`](../../atu-method/docs/framework.md). Retired = no longer governs (none in current canon; retired rules would be archived).
 
