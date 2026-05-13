@@ -53,6 +53,20 @@ When Stan names a verse with a specific desired partition or proposes a fix: lin
 
 Same FP class in 2+ rules OR 2+ validators OR 2+ verses in one session = engine-level fix at `validators/_shared/*` / `scripts/apply_*.py` / canon rule extension. Per-verse / per-validator guard the second time = whack-a-mole. **Stan's mantra: *swat the bug class, not the instance.***
 
+### Use the UD layer FIRST. Agents are a last resort for corpus questions.
+
+The BoFM Macula-equivalent already exists: full-corpus UD parses at `data/parses/ensemble/stanza/*.conllu`, queried via `validators/parsing/conllu_query.py` + `line_mapping.py` (which gives v2-mine-line-of-each-token). Every active canon rule has a UD validator at `validators/colometry/validate_rule_*_ud.py`. The infrastructure for "find all tokens X whose head Y sits on a different ATU line, optionally filtered by deprel/upos/lemma" is **already built**.
+
+**Before dispatching ANY agent for a corpus pattern survey, the answer is almost always a 30-50 line Python script using this infrastructure.** It returns deterministic results instantly — no FP filtering, no agent tokens, no wall-clock minutes. Per `feedback_scripts_before_agents` + `feedback_check_existing_tooling`.
+
+Agent dispatch on a corpus question is only correct when:
+- The pattern genuinely requires per-instance judgment the UD signature can't encode (e.g., restrictive vs non-restrictive relative clause without a discourse-tracked entity).
+- You've ALREADY run the UD query and need agents to triage REVIEW-REQUIRED residuals.
+
+When tempted to dispatch a survey agent, the test is: "Can I write the UD query in 30 lines?" If yes, **write it**. If you can't even articulate the UD signature, that's the signal to first study the pattern, not to substitute agent-grep for the missing signature.
+
+**Failure mode this section codifies (hit 2026-05-12):** Stan flagged Alma 31:5. I dispatched 4 parallel grep agents to survey the corpus when the existing `validate_rule_17_ud.py` already has an inline comment marking the exact gap I was surveying for. The right move was a 50-line UD query, not 4 agents × ~80 sec each + ~80k tokens. Stan's correction: *"we created a macula-like layer, correct? is that not the syntactic mapping that should allow you to be triaging and manipulating the text mechanically instantly instead of these costly waves of agents."*
+
 ### Adversarial-audit discipline (pre-implementation)
 
 Before non-trivial implementation (new validator with classification logic, new rule subsection, new closed-list extension, new shared helper, **OR ANY edit to `../atu-method/atu_method/*` cross-corpus shared infrastructure**), FIRST tool call must be ≥2 parallel Agent adversarial dispatches in one message OR an explicit `Audit-skippable: <named-trivial-class>` declaration.
@@ -142,6 +156,7 @@ Layer 1 = generic English-grammar break-legality (`data/syntax-reference/ud-taxo
 
 | Decision point | Standing answer |
 |---|---|
+| Corpus pattern survey / "how many instances of X in BoFM" | UD query script against `data/parses/ensemble/stanza/*.conllu` via `validators/parsing/conllu_query.py`. ~30-50 lines, instant, deterministic. NEVER dispatch agents to grep the corpus for syntactic patterns — the Macula-equivalent already exists. |
 | Adversarial audit on non-trivial implementation | ≥2 parallel Agent dispatches in one message, OR `Audit-skippable: <named-trivial-class>`. Never sequential. |
 | Extending existing validator vs creating new | Extension. New = explicit justification with substantive criterion (per `feedback_check_existing_tooling`). |
 | Same FP class in 2+ rules/validators/verses in session | STOP. Engine-level / canon-level fix. No more per-instance guards. |
