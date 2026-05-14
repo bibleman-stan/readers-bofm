@@ -118,7 +118,13 @@ COGNITION = {
     "know", "believe", "perceive", "remember", "understand", "hear",
     "see", "suppose", "imagine", "forget", "think",
 }
-VOLITION = {"wish", "desire", "hope", "long", "trust", "pray", "seek"}
+VOLITION = {"wish", "desire", "hope", "long", "trust", "pray", "seek",
+            # 2026-05-13: EME effort/heed verbs taking obligatory INF complement
+            # (Alma 31:9 "would not observe / to keep"). Same principle as the
+            # original 7 — mental-state/effort verb + obligatory complement.
+            # Canon-grounded in §1.2 complement integrity + bidirectional ATU
+            # forward-failure on the bare matrix line.
+            "observe", "endeavor", "attempt"}
 
 # {beseech, ask, plead} added 2026-05-10 per Wave 6 audit (Defect A): they were
 # previously in PETITION_FRAME_VERBS but NOT in GOVERNING_LEMMAS, so 14 corpus
@@ -206,6 +212,26 @@ BOOKS = [
 ]
 
 
+def categorize_xcomp(sent, head, head_line, mark_line, v2_path) -> tuple[str, str | None]:
+    """Filter logic for xcomp+to-mark cases (volition-class effort/heed verbs
+    + obligatory infinitival complement).
+
+    Smaller filter battery than ccomp+that:
+    - Vocative on matrix line → Rule 15 collision (same as ccomp path)
+    - Multi-line gap > 1 → REVIEW (same as ccomp path)
+
+    Petition-frame+modal-aux does NOT apply (xcomp is non-finite — no modal aux
+    on the complement). Speech-long-complement does NOT apply (xcomp typically
+    short and volition class isn't in {say,speak,tell,declare}). Coordinate
+    that-series does NOT apply (xcomp doesn't use 'that').
+    """
+    if is_vocative_on_matrix_line(Path(v2_path), head_line):
+        return ("REVIEW-REQUIRED", "vocative-on-matrix-line-Rule-15-collision")
+    if abs(mark_line - head_line) > 1:
+        return ("REVIEW-REQUIRED", "multi-line-gap")
+    return ("STRONG-MERGE-CANDIDATE", None)
+
+
 def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
     v2_path, conllu_path = book_paths(book_id)
     sentences = load_conllu(conllu_path)
@@ -213,6 +239,7 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
 
     violations = []
     for sent in sentences:
+        # Path 1: ccomp + finite mark (that/whether/if/WH)
         for ccomp in sent.find(deprel="ccomp"):
             head = sent.head_of(ccomp)
             if head is None:
@@ -247,6 +274,46 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
                 "v2_path": str(v2_path),
                 "bucket": bucket,
                 "review_reason": reason,
+                "complement_type": "ccomp+that",
+            })
+
+        # Path 2: xcomp + infinitival 'to' mark (added 2026-05-13).
+        # Canon §5 R17 trigger_clausal scopes [ccomp, xcomp] with mark in
+        # [that, whether, if, WH-*, to]. The validator previously scanned
+        # only ccomp+that; xcomp+to was uncaught — operational gap surfaced
+        # by Stan-flagged Alma 31:9 ("would not observe / to keep").
+        # Volition class (wish/desire/hope/seek + observe/endeavor/attempt)
+        # is the primary xcomp+to taker; cognition/causative occasionally
+        # surface here too via control structures.
+        for xcomp in sent.find(deprel="xcomp"):
+            head = sent.head_of(xcomp)
+            if head is None or head.upos != "VERB":
+                continue
+            if head.lemma not in GOVERNING_LEMMAS:
+                continue
+            mark = sent.mark_of(xcomp)
+            if mark is None or mark.lemma != "to":
+                continue
+            head_line = line_map.get((sent.sent_id, head.id))
+            mark_line = line_map.get((sent.sent_id, mark.id))
+            if head_line is None or mark_line is None:
+                continue
+            if head_line == mark_line:
+                continue
+            bucket, reason = categorize_xcomp(sent, head, head_line, mark_line, v2_path)
+            violations.append({
+                "book": book_id,
+                "sent_id": sent.sent_id,
+                "head_id": head.id,
+                "head_form": head.form,
+                "head_lemma": head.lemma,
+                "head_class": lemma_class(head.lemma),
+                "head_line": head_line,
+                "mark_line": mark_line,
+                "v2_path": str(v2_path),
+                "bucket": bucket,
+                "review_reason": reason,
+                "complement_type": "xcomp+to",
             })
     return violations
 

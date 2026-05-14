@@ -1002,7 +1002,7 @@ action: MERGE_VERB_AND_OF_PP
   - **Aspectual:** `begin`, `cease`, `continue`
   - **Speech-indirect:** `say`, `speak`, `declare`, `testify`, `swear`, `proclaim`, `tell`, `confess`, `rehearse`, `preach`, `answer`, `cry`, `beseech`, `ask`, `plead`
   - **Cognition:** `know`, `believe`, `perceive`, `remember`, `understand`, `hear`, `see`, `suppose`, `imagine`, `forget`, `think`
-  - **Volition:** `wish`, `desire`, `hope`, `long`, `trust`, `pray`, `seek`
+  - **Volition:** `wish`, `desire`, `hope`, `long`, `trust`, `pray`, `seek`, `observe` (EME "take care to / heed to"), `endeavor`, `attempt` (codified 2026-05-13: EME effort/heed verbs taking obligatory INF complement; canon-grounded in §1.2 complement integrity + bidirectional ATU forward-failure on the bare matrix line; same principle as the original 7 — mental-state/effort verb + obligatory complement)
   - **FEF-extraposition:** `it was their lot to`, `it is expedient to`, copular extraposition patterns
 - `SPEECH_CLASS_R17` — subset of GOVERNING_LEMMAS_R17 taking obligatory topic-PP: `speak`, `declare`, `preach`, `testify`, `prophesy`, `bear record`, `bear testimony`, `bear witness`, `say`, `cry`, `write`
 - `PETITION_FRAME_VERBS` — speech- and volition-class verbs whose modal-aux *that*-complement reads ambiguously between content and purpose: `cry`, `pray`, `beseech`, `ask`, `seek`, `plead`
