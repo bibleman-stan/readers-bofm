@@ -1,0 +1,808 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 3,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 385.323,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.387,
+      "type": "line",
+      "text": "And it came to pass that the Nephites who were not slain by the weapons of war,",
+      "verse": "3:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.567,
+      "end": 8.168,
+      "type": "line",
+      "text": "after having buried those who had been slain\u2014",
+      "verse": "3:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 8.348,
+      "end": 13.967,
+      "type": "line",
+      "text": "now the number of the slain were not numbered, because of the greatness of their number\u2014",
+      "verse": "3:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.147,
+      "end": 17.026,
+      "type": "line",
+      "text": "after they had finished burying their dead",
+      "verse": "3:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.206,
+      "end": 19.342,
+      "type": "line",
+      "text": "they all returned to their lands,",
+      "verse": "3:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.522,
+      "end": 22.773,
+      "type": "line",
+      "text": "and to their houses, and their wives, and their children.",
+      "verse": "3:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.453,
+      "end": 30.233,
+      "type": "line",
+      "text": "Now many women and children had been slain with the sword, and also many of their flocks and their herds;",
+      "verse": "3:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 30.413,
+      "end": 33.478,
+      "type": "line",
+      "text": "and also many of their fields of grain were destroyed,",
+      "verse": "3:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.658,
+      "end": 36.677,
+      "type": "line",
+      "text": "for they were trodden down by the hosts of men.",
+      "verse": "3:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 37.357,
+      "end": 44.787,
+      "type": "line",
+      "text": "And now as many of the Lamanites and the Amlicites who had been slain upon the bank of the river Sidon",
+      "verse": "3:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 44.967,
+      "end": 47.475,
+      "type": "line",
+      "text": "were cast into the waters of Sidon;",
+      "verse": "3:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 47.655,
+      "end": 50.999,
+      "type": "line",
+      "text": "and behold their bones are in the depths of the sea,",
+      "verse": "3:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 51.179,
+      "end": 52.619,
+      "type": "line",
+      "text": "and they are many.",
+      "verse": "3:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 53.299,
+      "end": 56.225,
+      "type": "line",
+      "text": "And the Amlicites were distinguished from the Nephites,",
+      "verse": "3:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 56.405,
+      "end": 62.396,
+      "type": "line",
+      "text": "for they had marked themselves with red in their foreheads after the manner of the Lamanites;",
+      "verse": "3:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 62.576,
+      "end": 66.848,
+      "type": "line",
+      "text": "nevertheless they had not shorn their heads like unto the Lamanites.",
+      "verse": "3:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 67.528,
+      "end": 70.036,
+      "type": "line",
+      "text": "Now the heads of the Lamanites were shorn;",
+      "verse": "3:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 70.216,
+      "end": 71.609,
+      "type": "line",
+      "text": "and they were naked,",
+      "verse": "3:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 71.789,
+      "end": 75.922,
+      "type": "line",
+      "text": "save it were skin which was girded about their loins,",
+      "verse": "3:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 76.102,
+      "end": 79.446,
+      "type": "line",
+      "text": "and also their armor, which was girded about them,",
+      "verse": "3:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 79.626,
+      "end": 84.92,
+      "type": "line",
+      "text": "and their bows, and their arrows, and their stones, and their slings, and so forth.",
+      "verse": "3:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 85.6,
+      "end": 91.359,
+      "type": "line",
+      "text": "And the skins of the Lamanites were dark, according to the mark which was set upon their fathers,",
+      "verse": "3:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 91.539,
+      "end": 97.762,
+      "type": "line",
+      "text": "which was a curse upon them because of their transgression and their rebellion against their brethren,",
+      "verse": "3:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 97.942,
+      "end": 101.518,
+      "type": "line",
+      "text": "who consisted of Nephi, Jacob, and Joseph, and Sam,",
+      "verse": "3:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 101.698,
+      "end": 103.556,
+      "type": "line",
+      "text": "who were just and holy men.",
+      "verse": "3:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 104.236,
+      "end": 106.697,
+      "type": "line",
+      "text": "And their brethren sought to destroy them,",
+      "verse": "3:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 106.877,
+      "end": 108.735,
+      "type": "line",
+      "text": "therefore they were cursed;",
+      "verse": "3:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 108.915,
+      "end": 111.516,
+      "type": "line",
+      "text": "and the Lord God set a mark upon them,",
+      "verse": "3:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 111.696,
+      "end": 117.222,
+      "type": "line",
+      "text": "yea, upon Laman and Lemuel, and also the sons of Ishmael, and Ishmaelitish women.",
+      "verse": "3:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 117.902,
+      "end": 119.574,
+      "type": "line",
+      "text": "And this was done",
+      "verse": "3:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 119.754,
+      "end": 124.398,
+      "type": "line",
+      "text": "that their seed might be distinguished from the seed of their brethren,",
+      "verse": "3:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 124.578,
+      "end": 127.736,
+      "type": "line",
+      "text": "that thereby the Lord God might preserve his people,",
+      "verse": "3:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 127.916,
+      "end": 133.814,
+      "type": "line",
+      "text": "that they might not mix and believe in incorrect traditions which would prove their destruction.",
+      "verse": "3:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 134.494,
+      "end": 139.927,
+      "type": "line",
+      "text": "And it came to pass that whosoever did mingle his seed with that of the Lamanites",
+      "verse": "3:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 140.107,
+      "end": 142.336,
+      "type": "line",
+      "text": "did bring the same curse upon his seed.",
+      "verse": "3:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 143.016,
+      "end": 147.288,
+      "type": "line",
+      "text": "Therefore, whosoever suffered himself to be led away by the Lamanites",
+      "verse": "3:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 147.468,
+      "end": 149.326,
+      "type": "line",
+      "text": "was called under that head,",
+      "verse": "3:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 149.506,
+      "end": 151.735,
+      "type": "line",
+      "text": "and there was a mark set upon him.",
+      "verse": "3:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 152.415,
+      "end": 157.756,
+      "type": "line",
+      "text": "And it came to pass that whosoever would not believe in the tradition of the Lamanites,",
+      "verse": "3:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 157.936,
+      "end": 162.58,
+      "type": "line",
+      "text": "but believed those records which were brought out of the land of Jerusalem,",
+      "verse": "3:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 162.76,
+      "end": 166.893,
+      "type": "line",
+      "text": "and also in the tradition of their fathers, which were correct,",
+      "verse": "3:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 167.073,
+      "end": 170.324,
+      "type": "line",
+      "text": "who believed in the commandments of God and kept them,",
+      "verse": "3:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 170.504,
+      "end": 175.194,
+      "type": "line",
+      "text": "were called the Nephites, or the people of Nephi, from that time forth\u2014",
+      "verse": "3:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 175.874,
+      "end": 184.094,
+      "type": "line",
+      "text": "And it is they who have kept the records which are true of their people, and also of the people of the Lamanites.",
+      "verse": "3:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 184.774,
+      "end": 187.793,
+      "type": "line",
+      "text": "Now we will return again to the Amlicites,",
+      "verse": "3:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 187.973,
+      "end": 190.667,
+      "type": "line",
+      "text": "for they also had a mark set upon them;",
+      "verse": "3:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 190.847,
+      "end": 193.169,
+      "type": "line",
+      "text": "yea, they set the mark upon themselves,",
+      "verse": "3:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 193.349,
+      "end": 196.553,
+      "type": "line",
+      "text": "yea, even a mark of red upon their foreheads.",
+      "verse": "3:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 197.233,
+      "end": 199.462,
+      "type": "line",
+      "text": "Thus the word of God is fulfilled,",
+      "verse": "3:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 199.642,
+      "end": 202.475,
+      "type": "line",
+      "text": "for these are the words which he said to Nephi:",
+      "verse": "3:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 202.655,
+      "end": 205.023,
+      "type": "line",
+      "text": "Behold, the Lamanites have I cursed,",
+      "verse": "3:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 205.203,
+      "end": 207.339,
+      "type": "line",
+      "text": "and I will set a mark on them",
+      "verse": "3:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 207.519,
+      "end": 212.302,
+      "type": "line",
+      "text": "that they and their seed may be separated from thee and thy seed,",
+      "verse": "3:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 212.482,
+      "end": 215.036,
+      "type": "line",
+      "text": "from this time henceforth and forever,",
+      "verse": "3:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 215.216,
+      "end": 218.606,
+      "type": "line",
+      "text": "except they repent of their wickedness and turn to me",
+      "verse": "3:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 218.786,
+      "end": 221.154,
+      "type": "line",
+      "text": "that I may have mercy upon them.",
+      "verse": "3:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 221.834,
+      "end": 223.041,
+      "type": "line",
+      "text": "And again:",
+      "verse": "3:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 223.221,
+      "end": 227.772,
+      "type": "line",
+      "text": "I will set a mark upon him that mingleth his seed with thy brethren",
+      "verse": "3:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 227.952,
+      "end": 230.274,
+      "type": "line",
+      "text": "that they may be cursed also.",
+      "verse": "3:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 230.954,
+      "end": 232.161,
+      "type": "line",
+      "text": "And again:",
+      "verse": "3:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 232.341,
+      "end": 236.939,
+      "type": "line",
+      "text": "I will set a mark upon him that fighteth against thee and thy seed.",
+      "verse": "3:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 237.619,
+      "end": 239.152,
+      "type": "line",
+      "text": "And again, I say",
+      "verse": "3:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 239.332,
+      "end": 243.14,
+      "type": "line",
+      "text": "he that departeth from thee shall no more be called thy seed;",
+      "verse": "3:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 243.32,
+      "end": 244.806,
+      "type": "line",
+      "text": "and I will bless thee,",
+      "verse": "3:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 244.986,
+      "end": 247.865,
+      "type": "line",
+      "text": "and whomsoever shall be called thy seed,",
+      "verse": "3:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 248.045,
+      "end": 249.578,
+      "type": "line",
+      "text": "henceforth and forever;",
+      "verse": "3:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 249.758,
+      "end": 254.263,
+      "type": "line",
+      "text": "and these were the promises of the Lord unto Nephi and to his seed.",
+      "verse": "3:17",
+      "lineIndex": 68
+    },
+    {
+      "start": 254.943,
+      "end": 259.959,
+      "type": "line",
+      "text": "Now the Amlicites knew not that they were fulfilling the words of God",
+      "verse": "3:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 260.139,
+      "end": 263.39,
+      "type": "line",
+      "text": "when they began to mark themselves in their foreheads;",
+      "verse": "3:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 263.57,
+      "end": 267.517,
+      "type": "line",
+      "text": "nevertheless they had come out in open rebellion against God;",
+      "verse": "3:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 267.697,
+      "end": 271.459,
+      "type": "line",
+      "text": "therefore it was expedient that the curse should fall upon them.",
+      "verse": "3:18",
+      "lineIndex": 72
+    },
+    {
+      "start": 272.139,
+      "end": 277.015,
+      "type": "line",
+      "text": "Now I would that ye should see that they brought upon themselves the curse;",
+      "verse": "3:19",
+      "lineIndex": 74
+    },
+    {
+      "start": 277.195,
+      "end": 279.842,
+      "type": "line",
+      "text": "and even so doth every man that is cursed",
+      "verse": "3:19",
+      "lineIndex": 75
+    },
+    {
+      "start": 280.022,
+      "end": 282.669,
+      "type": "line",
+      "text": "bring upon himself his own condemnation.",
+      "verse": "3:19",
+      "lineIndex": 76
+    },
+    {
+      "start": 283.349,
+      "end": 293.287,
+      "type": "line",
+      "text": "Now it came to pass that not many days after the battle which was fought in the land of Zarahemla, by the Lamanites and the Amlicites,",
+      "verse": "3:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 293.467,
+      "end": 302.151,
+      "type": "line",
+      "text": "there was another army of the Lamanites came in upon the people of Nephi, in the same place where the first army met the Amlicites.",
+      "verse": "3:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 302.831,
+      "end": 307.754,
+      "type": "line",
+      "text": "And it came to pass that there was an army sent to drive them out of their land.",
+      "verse": "3:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 308.434,
+      "end": 311.592,
+      "type": "line",
+      "text": "Now Alma himself being afflicted with a wound",
+      "verse": "3:22",
+      "lineIndex": 80
+    },
+    {
+      "start": 311.772,
+      "end": 315.441,
+      "type": "line",
+      "text": "did not go up to battle at this time against the Lamanites;",
+      "verse": "3:22",
+      "lineIndex": 81
+    },
+    {
+      "start": 316.121,
+      "end": 318.815,
+      "type": "line",
+      "text": "But he sent up a numerous army against them;",
+      "verse": "3:23",
+      "lineIndex": 82
+    },
+    {
+      "start": 318.995,
+      "end": 320.945,
+      "type": "line",
+      "text": "and they went up",
+      "verse": "3:23",
+      "lineIndex": 83
+    },
+    {
+      "start": 321.125,
+      "end": 323.215,
+      "type": "line",
+      "text": "and slew many of the Lamanites,",
+      "verse": "3:23",
+      "lineIndex": 84
+    },
+    {
+      "start": 323.395,
+      "end": 327.946,
+      "type": "line",
+      "text": "and drove the remainder of them out of the borders of their land.",
+      "verse": "3:23",
+      "lineIndex": 85
+    },
+    {
+      "start": 328.626,
+      "end": 330.948,
+      "type": "line",
+      "text": "And then they returned again",
+      "verse": "3:24",
+      "lineIndex": 86
+    },
+    {
+      "start": 331.128,
+      "end": 337.769,
+      "type": "line",
+      "text": "and began to establish peace in the land, being troubled no more for a time with their enemies.",
+      "verse": "3:24",
+      "lineIndex": 87
+    },
+    {
+      "start": 338.449,
+      "end": 340.353,
+      "type": "line",
+      "text": "Now all these things were done,",
+      "verse": "3:25",
+      "lineIndex": 88
+    },
+    {
+      "start": 340.533,
+      "end": 343.087,
+      "type": "line",
+      "text": "yea, all these wars and contentions",
+      "verse": "3:25",
+      "lineIndex": 89
+    },
+    {
+      "start": 343.267,
+      "end": 348.329,
+      "type": "line",
+      "text": "were commenced and ended in the fifth year of the reign of the judges.",
+      "verse": "3:25",
+      "lineIndex": 90
+    },
+    {
+      "start": 349.009,
+      "end": 352.631,
+      "type": "line",
+      "text": "And in one year were thousands and tens of thousands of souls",
+      "verse": "3:26",
+      "lineIndex": 91
+    },
+    {
+      "start": 352.811,
+      "end": 354.669,
+      "type": "line",
+      "text": "sent to the eternal world,",
+      "verse": "3:26",
+      "lineIndex": 92
+    },
+    {
+      "start": 354.849,
+      "end": 358.378,
+      "type": "line",
+      "text": "that they might reap their rewards according to their works,",
+      "verse": "3:26",
+      "lineIndex": 93
+    },
+    {
+      "start": 358.558,
+      "end": 361.669,
+      "type": "line",
+      "text": "whether they were good or whether they were bad,",
+      "verse": "3:26",
+      "lineIndex": 94
+    },
+    {
+      "start": 361.849,
+      "end": 367.608,
+      "type": "line",
+      "text": "to reap eternal happiness or eternal misery, according to the spirit which they listed to obey,",
+      "verse": "3:26",
+      "lineIndex": 95
+    },
+    {
+      "start": 367.788,
+      "end": 370.574,
+      "type": "line",
+      "text": "whether it be a good spirit or a bad one.",
+      "verse": "3:26",
+      "lineIndex": 96
+    },
+    {
+      "start": 371.254,
+      "end": 375.155,
+      "type": "line",
+      "text": "For every man receiveth wages of him whom he listeth to obey,",
+      "verse": "3:27",
+      "lineIndex": 97
+    },
+    {
+      "start": 375.335,
+      "end": 378.632,
+      "type": "line",
+      "text": "and this according to the words of the spirit of prophecy;",
+      "verse": "3:27",
+      "lineIndex": 98
+    },
+    {
+      "start": 378.812,
+      "end": 380.855,
+      "type": "line",
+      "text": "therefore let it be according to the truth.",
+      "verse": "3:27",
+      "lineIndex": 99
+    },
+    {
+      "start": 381.035,
+      "end": 384.657,
+      "type": "line",
+      "text": "And thus endeth the fifth year of the reign of the judges.",
+      "verse": "3:27",
+      "lineIndex": 100
+    }
+  ]
+}
