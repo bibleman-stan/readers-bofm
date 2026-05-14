@@ -1,0 +1,624 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 19,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 224.192,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.69,
+      "type": "line",
+      "text": "Nevertheless, the dimness shall not be such as was in her vexation,",
+      "verse": "19:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.87,
+      "end": 7.935,
+      "type": "line",
+      "text": "when at first he lightly afflicted the land of Zebulun,",
+      "verse": "19:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 8.115,
+      "end": 10.112,
+      "type": "line",
+      "text": "and the land of Naphtali,",
+      "verse": "19:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.292,
+      "end": 17.537,
+      "type": "line",
+      "text": "and afterwards did more grievously afflict by the way of the Red Sea beyond Jordan in Galilee of the nations.",
+      "verse": "19:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 18.217,
+      "end": 21.839,
+      "type": "line",
+      "text": "The people that walked in darkness have seen a great light;",
+      "verse": "19:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.019,
+      "end": 27.313,
+      "type": "line",
+      "text": "they that dwell in the land of the shadow of death, upon them hath the light shined.",
+      "verse": "19:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 27.993,
+      "end": 29.897,
+      "type": "line",
+      "text": "Thou hast multiplied the nation,",
+      "verse": "19:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 30.077,
+      "end": 31.517,
+      "type": "line",
+      "text": "and increased the joy\u2014",
+      "verse": "19:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 31.697,
+      "end": 34.808,
+      "type": "line",
+      "text": "they joy before thee according to the joy in harvest,",
+      "verse": "19:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 34.988,
+      "end": 38.146,
+      "type": "line",
+      "text": "and as men rejoice when they divide the spoil.",
+      "verse": "19:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 38.826,
+      "end": 41.334,
+      "type": "line",
+      "text": "For thou hast broken the yoke of his burden,",
+      "verse": "19:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 41.514,
+      "end": 43.418,
+      "type": "line",
+      "text": "and the staff of his shoulder,",
+      "verse": "19:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 43.598,
+      "end": 45.223,
+      "type": "line",
+      "text": "the rod of his oppressor.",
+      "verse": "19:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 45.903,
+      "end": 49.061,
+      "type": "line",
+      "text": "For every battle of the warrior is with confused noise,",
+      "verse": "19:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 49.241,
+      "end": 51.238,
+      "type": "line",
+      "text": "and garments rolled in blood;",
+      "verse": "19:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 51.418,
+      "end": 54.622,
+      "type": "line",
+      "text": "but this shall be with burning and fuel of fire.",
+      "verse": "19:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 55.302,
+      "end": 57.392,
+      "type": "line",
+      "text": "For unto us a child is born,",
+      "verse": "19:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 57.572,
+      "end": 59.43,
+      "type": "line",
+      "text": "unto us a son is given;",
+      "verse": "19:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 59.61,
+      "end": 62.211,
+      "type": "line",
+      "text": "and the government shall be upon his shoulder;",
+      "verse": "19:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 62.391,
+      "end": 66.153,
+      "type": "line",
+      "text": "and his name shall be called, Wonderful, Counselor,",
+      "verse": "19:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 66.333,
+      "end": 67.726,
+      "type": "line",
+      "text": "The Mighty God,",
+      "verse": "19:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 67.906,
+      "end": 69.485,
+      "type": "line",
+      "text": "The Everlasting Father,",
+      "verse": "19:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 69.665,
+      "end": 71.198,
+      "type": "line",
+      "text": "The Prince of Peace.",
+      "verse": "19:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 71.878,
+      "end": 76.94,
+      "type": "line",
+      "text": "Of the increase of government and peace there is no end, upon the throne of David,",
+      "verse": "19:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 77.12,
+      "end": 79.396,
+      "type": "line",
+      "text": "and upon his kingdom to order it,",
+      "verse": "19:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 79.576,
+      "end": 82.037,
+      "type": "line",
+      "text": "and to establish it with judgment",
+      "verse": "19:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 82.217,
+      "end": 85.236,
+      "type": "line",
+      "text": "and with justice from henceforth, even forever.",
+      "verse": "19:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 85.416,
+      "end": 88.156,
+      "type": "line",
+      "text": "The zeal of the Lord of Hosts will perform this.",
+      "verse": "19:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 88.836,
+      "end": 91.112,
+      "type": "line",
+      "text": "The Lord sent his word unto Jacob",
+      "verse": "19:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 91.292,
+      "end": 93.66,
+      "type": "line",
+      "text": "and it hath lighted upon Israel.",
+      "verse": "19:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 94.34,
+      "end": 96.058,
+      "type": "line",
+      "text": "And all the people shall know,",
+      "verse": "19:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 96.238,
+      "end": 99.675,
+      "type": "line",
+      "text": "even Ephraim and the inhabitants of Samaria,",
+      "verse": "19:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 99.855,
+      "end": 102.688,
+      "type": "line",
+      "text": "that say in the pride and stoutness of heart:",
+      "verse": "19:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 103.368,
+      "end": 105.272,
+      "type": "line",
+      "text": "The bricks are fallen down,",
+      "verse": "19:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 105.452,
+      "end": 107.542,
+      "type": "line",
+      "text": "but we will build with hewn stones;",
+      "verse": "19:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 107.722,
+      "end": 109.765,
+      "type": "line",
+      "text": "the sycamores are cut down,",
+      "verse": "19:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 109.945,
+      "end": 112.453,
+      "type": "line",
+      "text": "but we will change them into cedars.",
+      "verse": "19:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 113.133,
+      "end": 117.08,
+      "type": "line",
+      "text": "Therefore the Lord shall set up the adversaries of Rezin against him,",
+      "verse": "19:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 117.26,
+      "end": 119.35,
+      "type": "line",
+      "text": "and join his enemies together;",
+      "verse": "19:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 120.03,
+      "end": 123.281,
+      "type": "line",
+      "text": "The Syrians before and the Philistines behind;",
+      "verse": "19:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 123.461,
+      "end": 126.155,
+      "type": "line",
+      "text": "and they shall devour Israel with open mouth.",
+      "verse": "19:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 126.335,
+      "end": 128.75,
+      "type": "line",
+      "text": "For all this his anger is not turned away,",
+      "verse": "19:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 128.93,
+      "end": 131.298,
+      "type": "line",
+      "text": "but his hand is stretched out still.",
+      "verse": "19:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 131.978,
+      "end": 134.997,
+      "type": "line",
+      "text": "For the people turneth not unto him that smiteth them,",
+      "verse": "19:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 135.177,
+      "end": 137.499,
+      "type": "line",
+      "text": "neither do they seek the Lord of Hosts.",
+      "verse": "19:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 138.179,
+      "end": 141.616,
+      "type": "line",
+      "text": "Therefore will the Lord cut off from Israel head and tail,",
+      "verse": "19:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 141.796,
+      "end": 143.607,
+      "type": "line",
+      "text": "branch and rush in one day.",
+      "verse": "19:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 144.287,
+      "end": 146.237,
+      "type": "line",
+      "text": "The ancient, he is the head;",
+      "verse": "19:15",
+      "lineIndex": 50
+    },
+    {
+      "start": 146.417,
+      "end": 148.878,
+      "type": "line",
+      "text": "and the prophet that teacheth lies,",
+      "verse": "19:15",
+      "lineIndex": 51
+    },
+    {
+      "start": 149.058,
+      "end": 150.358,
+      "type": "line",
+      "text": "he is the tail.",
+      "verse": "19:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 151.038,
+      "end": 153.871,
+      "type": "line",
+      "text": "For the leaders of this people cause them to err;",
+      "verse": "19:16",
+      "lineIndex": 53
+    },
+    {
+      "start": 154.051,
+      "end": 157.255,
+      "type": "line",
+      "text": "and they that are led of them are destroyed.",
+      "verse": "19:16",
+      "lineIndex": 54
+    },
+    {
+      "start": 157.935,
+      "end": 161.046,
+      "type": "line",
+      "text": "Therefore the Lord shall have no joy in their young men,",
+      "verse": "19:17",
+      "lineIndex": 55
+    },
+    {
+      "start": 161.226,
+      "end": 164.43,
+      "type": "line",
+      "text": "neither shall have mercy on their fatherless and widows;",
+      "verse": "19:17",
+      "lineIndex": 56
+    },
+    {
+      "start": 164.61,
+      "end": 168.279,
+      "type": "line",
+      "text": "for every one of them is a hypocrite and an evildoer,",
+      "verse": "19:17",
+      "lineIndex": 57
+    },
+    {
+      "start": 168.459,
+      "end": 170.595,
+      "type": "line",
+      "text": "and every mouth speaketh folly.",
+      "verse": "19:17",
+      "lineIndex": 58
+    },
+    {
+      "start": 170.775,
+      "end": 173.19,
+      "type": "line",
+      "text": "For all this his anger is not turned away,",
+      "verse": "19:17",
+      "lineIndex": 59
+    },
+    {
+      "start": 173.37,
+      "end": 175.738,
+      "type": "line",
+      "text": "but his hand is stretched out still.",
+      "verse": "19:17",
+      "lineIndex": 60
+    },
+    {
+      "start": 176.418,
+      "end": 178.694,
+      "type": "line",
+      "text": "For wickedness burneth as the fire;",
+      "verse": "19:18",
+      "lineIndex": 61
+    },
+    {
+      "start": 178.874,
+      "end": 181.382,
+      "type": "line",
+      "text": "it shall devour the briers and thorns,",
+      "verse": "19:18",
+      "lineIndex": 62
+    },
+    {
+      "start": 181.562,
+      "end": 184.256,
+      "type": "line",
+      "text": "and shall kindle in the thickets of the forests,",
+      "verse": "19:18",
+      "lineIndex": 63
+    },
+    {
+      "start": 184.436,
+      "end": 187.64,
+      "type": "line",
+      "text": "and they shall mount up like the lifting up of smoke.",
+      "verse": "19:18",
+      "lineIndex": 64
+    },
+    {
+      "start": 188.32,
+      "end": 191.989,
+      "type": "line",
+      "text": "Through the wrath of the Lord of Hosts is the land darkened,",
+      "verse": "19:19",
+      "lineIndex": 65
+    },
+    {
+      "start": 192.169,
+      "end": 195.559,
+      "type": "line",
+      "text": "and the people shall be as the fuel of the fire;",
+      "verse": "19:19",
+      "lineIndex": 66
+    },
+    {
+      "start": 195.739,
+      "end": 197.968,
+      "type": "line",
+      "text": "no man shall spare his brother.",
+      "verse": "19:19",
+      "lineIndex": 67
+    },
+    {
+      "start": 198.648,
+      "end": 200.877,
+      "type": "line",
+      "text": "And he shall snatch on the right hand",
+      "verse": "19:20",
+      "lineIndex": 68
+    },
+    {
+      "start": 201.057,
+      "end": 202.357,
+      "type": "line",
+      "text": "and be hungry;",
+      "verse": "19:20",
+      "lineIndex": 69
+    },
+    {
+      "start": 202.537,
+      "end": 205.045,
+      "type": "line",
+      "text": "and he shall eat on the left hand",
+      "verse": "19:20",
+      "lineIndex": 70
+    },
+    {
+      "start": 205.225,
+      "end": 207.222,
+      "type": "line",
+      "text": "and they shall not be satisfied;",
+      "verse": "19:20",
+      "lineIndex": 71
+    },
+    {
+      "start": 207.402,
+      "end": 211.164,
+      "type": "line",
+      "text": "they shall eat every man the flesh of his own arm\u2014",
+      "verse": "19:20",
+      "lineIndex": 72
+    },
+    {
+      "start": 211.844,
+      "end": 213.377,
+      "type": "line",
+      "text": "Manasseh, Ephraim;",
+      "verse": "19:21",
+      "lineIndex": 73
+    },
+    {
+      "start": 213.557,
+      "end": 215.74,
+      "type": "line",
+      "text": "and Ephraim, Manasseh;",
+      "verse": "19:21",
+      "lineIndex": 74
+    },
+    {
+      "start": 215.92,
+      "end": 218.381,
+      "type": "line",
+      "text": "they together shall be against Judah.",
+      "verse": "19:21",
+      "lineIndex": 75
+    },
+    {
+      "start": 218.561,
+      "end": 220.976,
+      "type": "line",
+      "text": "For all this his anger is not turned away,",
+      "verse": "19:21",
+      "lineIndex": 76
+    },
+    {
+      "start": 221.156,
+      "end": 223.524,
+      "type": "line",
+      "text": "but his hand is stretched out still.",
+      "verse": "19:21",
+      "lineIndex": 77
+    }
+  ]
+}
