@@ -1,0 +1,1608 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 12,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 694.659,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.923,
+      "type": "line",
+      "text": "Now Alma, seeing that the words of Amulek had silenced Zeezrom,",
+      "verse": "12:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.103,
+      "end": 10.722,
+      "type": "line",
+      "text": "for he beheld that Amulek had caught him in his lying and deceiving to destroy him,",
+      "verse": "12:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.902,
+      "end": 15.778,
+      "type": "line",
+      "text": "and seeing that he began to tremble under a consciousness of his guilt,",
+      "verse": "12:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 15.958,
+      "end": 19.023,
+      "type": "line",
+      "text": "he opened his mouth and began to speak unto him,",
+      "verse": "12:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.203,
+      "end": 21.525,
+      "type": "line",
+      "text": "and to establish the words of Amulek,",
+      "verse": "12:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 21.705,
+      "end": 23.795,
+      "type": "line",
+      "text": "and to explain things beyond,",
+      "verse": "12:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.975,
+      "end": 25.925,
+      "type": "line",
+      "text": "or to unfold the scriptures",
+      "verse": "12:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 26.105,
+      "end": 28.473,
+      "type": "line",
+      "text": "beyond that which Amulek had done.",
+      "verse": "12:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 29.153,
+      "end": 34.308,
+      "type": "line",
+      "text": "Now the words that Alma spake unto Zeezrom were heard by the people round about;",
+      "verse": "12:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 34.488,
+      "end": 36.624,
+      "type": "line",
+      "text": "for the multitude was great,",
+      "verse": "12:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 36.804,
+      "end": 38.754,
+      "type": "line",
+      "text": "and he spake on this wise:",
+      "verse": "12:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 39.434,
+      "end": 44.403,
+      "type": "line",
+      "text": "Now Zeezrom, seeing that thou hast been taken in thy lying and craftiness,",
+      "verse": "12:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 44.583,
+      "end": 47.323,
+      "type": "line",
+      "text": "for thou hast not lied unto men only",
+      "verse": "12:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 47.503,
+      "end": 49.314,
+      "type": "line",
+      "text": "but thou hast lied unto God;",
+      "verse": "12:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 49.494,
+      "end": 51.955,
+      "type": "line",
+      "text": "for behold, he knows all thy thoughts,",
+      "verse": "12:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 52.135,
+      "end": 56.593,
+      "type": "line",
+      "text": "and thou seest that thy thoughts are made known unto us by his Spirit;",
+      "verse": "12:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 57.273,
+      "end": 62.01,
+      "type": "line",
+      "text": "And thou seest that we know that thy plan was a very subtle plan,",
+      "verse": "12:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 62.19,
+      "end": 64.558,
+      "type": "line",
+      "text": "as to the subtlety of the devil,",
+      "verse": "12:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 64.738,
+      "end": 67.199,
+      "type": "line",
+      "text": "for to lie and to deceive this people",
+      "verse": "12:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 67.379,
+      "end": 70.862,
+      "type": "line",
+      "text": "that thou mightest set them against us, to revile us",
+      "verse": "12:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 71.042,
+      "end": 72.482,
+      "type": "line",
+      "text": "and to cast us out\u2014",
+      "verse": "12:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 73.162,
+      "end": 75.809,
+      "type": "line",
+      "text": "Now this was a plan of thine adversary,",
+      "verse": "12:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 75.989,
+      "end": 78.218,
+      "type": "line",
+      "text": "and he hath exercised his power in thee.",
+      "verse": "12:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 78.398,
+      "end": 82.949,
+      "type": "line",
+      "text": "Now I would that ye should remember that what I say unto thee I say unto all.",
+      "verse": "12:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 83.629,
+      "end": 91.338,
+      "type": "line",
+      "text": "And behold I say unto you all that this was a snare of the adversary, which he has laid to catch this people,",
+      "verse": "12:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 91.518,
+      "end": 94.722,
+      "type": "line",
+      "text": "that he might bring you into subjection unto him,",
+      "verse": "12:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 94.902,
+      "end": 97.967,
+      "type": "line",
+      "text": "that he might encircle you about with his chains,",
+      "verse": "12:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 98.147,
+      "end": 105.345,
+      "type": "line",
+      "text": "that he might chain you down to everlasting destruction, according to the power of his captivity.",
+      "verse": "12:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 106.025,
+      "end": 108.393,
+      "type": "line",
+      "text": "Now when Alma had spoken these words,",
+      "verse": "12:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 108.573,
+      "end": 111.127,
+      "type": "line",
+      "text": "Zeezrom began to tremble more exceedingly,",
+      "verse": "12:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 111.307,
+      "end": 114.604,
+      "type": "line",
+      "text": "for he was convinced more and more of the power of God;",
+      "verse": "12:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 114.784,
+      "end": 119.428,
+      "type": "line",
+      "text": "and he was also convinced that Alma and Amulek had a knowledge of him,",
+      "verse": "12:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 119.608,
+      "end": 124.113,
+      "type": "line",
+      "text": "for he was convinced that they knew the thoughts and intents of his heart;",
+      "verse": "12:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 124.293,
+      "end": 126.522,
+      "type": "line",
+      "text": "for power was given unto them",
+      "verse": "12:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 126.702,
+      "end": 130.742,
+      "type": "line",
+      "text": "that they might know of these things according to the spirit of prophecy.",
+      "verse": "12:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 131.422,
+      "end": 134.487,
+      "type": "line",
+      "text": "And Zeezrom began to inquire of them diligently,",
+      "verse": "12:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 134.667,
+      "end": 138.15,
+      "type": "line",
+      "text": "that he might know more concerning the kingdom of God.",
+      "verse": "12:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 138.33,
+      "end": 140.002,
+      "type": "line",
+      "text": "And he said unto Alma:",
+      "verse": "12:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 140.182,
+      "end": 145.29,
+      "type": "line",
+      "text": "What does this mean which Amulek hath spoken concerning the resurrection of the dead,",
+      "verse": "12:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 145.47,
+      "end": 147.653,
+      "type": "line",
+      "text": "that all shall rise from the dead,",
+      "verse": "12:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 147.833,
+      "end": 150.109,
+      "type": "line",
+      "text": "both the just and the unjust,",
+      "verse": "12:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 150.289,
+      "end": 154.979,
+      "type": "line",
+      "text": "and are brought to stand before God to be judged according to their works?",
+      "verse": "12:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 155.659,
+      "end": 159.328,
+      "type": "line",
+      "text": "And now Alma began to expound these things unto him, saying:",
+      "verse": "12:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 159.508,
+      "end": 163.037,
+      "type": "line",
+      "text": "It is given unto many to know the mysteries of God;",
+      "verse": "12:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 163.217,
+      "end": 170.833,
+      "type": "line",
+      "text": "nevertheless they are laid under a strict command that they shall not impart only according to the portion of his word",
+      "verse": "12:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 171.013,
+      "end": 178.722,
+      "type": "line",
+      "text": "which he doth grant unto the children of men, according to the heed and diligence which they give unto him.",
+      "verse": "12:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 179.402,
+      "end": 181.863,
+      "type": "line",
+      "text": "And therefore, he that will harden his heart,",
+      "verse": "12:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 182.043,
+      "end": 185.062,
+      "type": "line",
+      "text": "the same receiveth the lesser portion of the word;",
+      "verse": "12:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 185.242,
+      "end": 187.657,
+      "type": "line",
+      "text": "and he that will not harden his heart,",
+      "verse": "12:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 187.837,
+      "end": 191.041,
+      "type": "line",
+      "text": "to him is given the greater portion of the word,",
+      "verse": "12:10",
+      "lineIndex": 51
+    },
+    {
+      "start": 191.221,
+      "end": 195.168,
+      "type": "line",
+      "text": "until it is given unto him to know the mysteries of God",
+      "verse": "12:10",
+      "lineIndex": 52
+    },
+    {
+      "start": 195.348,
+      "end": 196.973,
+      "type": "line",
+      "text": "until he know them in full.",
+      "verse": "12:10",
+      "lineIndex": 53
+    },
+    {
+      "start": 197.653,
+      "end": 199.65,
+      "type": "line",
+      "text": "And they that will harden their hearts,",
+      "verse": "12:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 199.83,
+      "end": 203.174,
+      "type": "line",
+      "text": "to them is given the lesser portion of the word",
+      "verse": "12:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 203.354,
+      "end": 206.744,
+      "type": "line",
+      "text": "until they know nothing concerning his mysteries;",
+      "verse": "12:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 206.924,
+      "end": 209.525,
+      "type": "line",
+      "text": "and then they are taken captive by the devil,",
+      "verse": "12:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 209.705,
+      "end": 212.352,
+      "type": "line",
+      "text": "and led by his will down to destruction.",
+      "verse": "12:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 212.532,
+      "end": 215.318,
+      "type": "line",
+      "text": "Now this is what is meant by the chains of hell.",
+      "verse": "12:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 215.998,
+      "end": 219.527,
+      "type": "line",
+      "text": "And Amulek hath spoken plainly concerning death,",
+      "verse": "12:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 219.707,
+      "end": 223.654,
+      "type": "line",
+      "text": "and being raised from this mortality to a state of immortality,",
+      "verse": "12:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 223.834,
+      "end": 228.803,
+      "type": "line",
+      "text": "and being brought before the bar of God, to be judged according to our works.",
+      "verse": "12:12",
+      "lineIndex": 62
+    },
+    {
+      "start": 229.483,
+      "end": 231.573,
+      "type": "line",
+      "text": "Then if our hearts have been hardened,",
+      "verse": "12:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 231.753,
+      "end": 238.44,
+      "type": "line",
+      "text": "yea, if we have hardened our hearts against the word, insomuch that it has not been found in us,",
+      "verse": "12:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 238.62,
+      "end": 240.663,
+      "type": "line",
+      "text": "then will our state be awful,",
+      "verse": "12:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 240.843,
+      "end": 242.701,
+      "type": "line",
+      "text": "for then we shall be condemned.",
+      "verse": "12:13",
+      "lineIndex": 66
+    },
+    {
+      "start": 243.381,
+      "end": 245.517,
+      "type": "line",
+      "text": "For our words will condemn us,",
+      "verse": "12:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 245.697,
+      "end": 248.158,
+      "type": "line",
+      "text": "yea, all our works will condemn us;",
+      "verse": "12:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 248.338,
+      "end": 250.428,
+      "type": "line",
+      "text": "we shall not be found spotless;",
+      "verse": "12:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 250.608,
+      "end": 252.837,
+      "type": "line",
+      "text": "and our thoughts will also condemn us;",
+      "verse": "12:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 253.017,
+      "end": 254.782,
+      "type": "line",
+      "text": "and in this awful state",
+      "verse": "12:14",
+      "lineIndex": 71
+    },
+    {
+      "start": 254.962,
+      "end": 257.423,
+      "type": "line",
+      "text": "we shall not dare to look up to our God;",
+      "verse": "12:14",
+      "lineIndex": 72
+    },
+    {
+      "start": 257.603,
+      "end": 259.6,
+      "type": "line",
+      "text": "and we would fain be glad",
+      "verse": "12:14",
+      "lineIndex": 73
+    },
+    {
+      "start": 259.78,
+      "end": 265.678,
+      "type": "line",
+      "text": "if we could command the rocks and the mountains to fall upon us to hide us from his presence.",
+      "verse": "12:14",
+      "lineIndex": 74
+    },
+    {
+      "start": 266.358,
+      "end": 267.844,
+      "type": "line",
+      "text": "But this cannot be;",
+      "verse": "12:15",
+      "lineIndex": 75
+    },
+    {
+      "start": 268.024,
+      "end": 269.696,
+      "type": "line",
+      "text": "we must come forth",
+      "verse": "12:15",
+      "lineIndex": 76
+    },
+    {
+      "start": 269.876,
+      "end": 272.477,
+      "type": "line",
+      "text": "and stand before him in his glory,",
+      "verse": "12:15",
+      "lineIndex": 77
+    },
+    {
+      "start": 272.657,
+      "end": 274.004,
+      "type": "line",
+      "text": "and in his power,",
+      "verse": "12:15",
+      "lineIndex": 78
+    },
+    {
+      "start": 274.184,
+      "end": 277.017,
+      "type": "line",
+      "text": "and in his might, majesty, and dominion,",
+      "verse": "12:15",
+      "lineIndex": 79
+    },
+    {
+      "start": 277.197,
+      "end": 279.705,
+      "type": "line",
+      "text": "and acknowledge to our everlasting shame",
+      "verse": "12:15",
+      "lineIndex": 80
+    },
+    {
+      "start": 279.885,
+      "end": 282.439,
+      "type": "line",
+      "text": "that all his judgments are just;",
+      "verse": "12:15",
+      "lineIndex": 81
+    },
+    {
+      "start": 282.619,
+      "end": 284.802,
+      "type": "line",
+      "text": "that he is just in all his works,",
+      "verse": "12:15",
+      "lineIndex": 82
+    },
+    {
+      "start": 284.982,
+      "end": 288.279,
+      "type": "line",
+      "text": "and that he is merciful unto the children of men,",
+      "verse": "12:15",
+      "lineIndex": 83
+    },
+    {
+      "start": 288.459,
+      "end": 292.453,
+      "type": "line",
+      "text": "and that he has all power to save every man that believeth on his name",
+      "verse": "12:15",
+      "lineIndex": 84
+    },
+    {
+      "start": 292.633,
+      "end": 295.327,
+      "type": "line",
+      "text": "and bringeth forth fruit meet for repentance.",
+      "verse": "12:15",
+      "lineIndex": 85
+    },
+    {
+      "start": 296.007,
+      "end": 298.283,
+      "type": "line",
+      "text": "And now behold, I say unto you",
+      "verse": "12:16",
+      "lineIndex": 86
+    },
+    {
+      "start": 298.463,
+      "end": 300.135,
+      "type": "line",
+      "text": "then cometh a death,",
+      "verse": "12:16",
+      "lineIndex": 87
+    },
+    {
+      "start": 300.315,
+      "end": 301.894,
+      "type": "line",
+      "text": "even a second death,",
+      "verse": "12:16",
+      "lineIndex": 88
+    },
+    {
+      "start": 302.074,
+      "end": 303.885,
+      "type": "line",
+      "text": "which is a spiritual death;",
+      "verse": "12:16",
+      "lineIndex": 89
+    },
+    {
+      "start": 304.065,
+      "end": 309.359,
+      "type": "line",
+      "text": "then is a time that whosoever dieth in his sins, as to a temporal death,",
+      "verse": "12:16",
+      "lineIndex": 90
+    },
+    {
+      "start": 309.539,
+      "end": 311.954,
+      "type": "line",
+      "text": "shall also die a spiritual death;",
+      "verse": "12:16",
+      "lineIndex": 91
+    },
+    {
+      "start": 312.134,
+      "end": 315.896,
+      "type": "line",
+      "text": "yea, he shall die as to things pertaining unto righteousness.",
+      "verse": "12:16",
+      "lineIndex": 92
+    },
+    {
+      "start": 316.576,
+      "end": 321.638,
+      "type": "line",
+      "text": "Then is the time when their torments shall be as a lake of fire and brimstone,",
+      "verse": "12:17",
+      "lineIndex": 93
+    },
+    {
+      "start": 321.818,
+      "end": 324.929,
+      "type": "line",
+      "text": "whose flame ascendeth up forever and ever;",
+      "verse": "12:17",
+      "lineIndex": 94
+    },
+    {
+      "start": 325.109,
+      "end": 334.025,
+      "type": "line",
+      "text": "and then is the time that they shall be chained down to an everlasting destruction, according to the power and captivity of Satan,",
+      "verse": "12:17",
+      "lineIndex": 95
+    },
+    {
+      "start": 334.205,
+      "end": 337.131,
+      "type": "line",
+      "text": "he having subjected them according to his will.",
+      "verse": "12:17",
+      "lineIndex": 96
+    },
+    {
+      "start": 337.811,
+      "end": 339.251,
+      "type": "line",
+      "text": "Then, I say unto you,",
+      "verse": "12:18",
+      "lineIndex": 97
+    },
+    {
+      "start": 339.431,
+      "end": 343.1,
+      "type": "line",
+      "text": "they shall be as though there had been no redemption made;",
+      "verse": "12:18",
+      "lineIndex": 98
+    },
+    {
+      "start": 343.28,
+      "end": 346.531,
+      "type": "line",
+      "text": "for they cannot be redeemed according to God's justice;",
+      "verse": "12:18",
+      "lineIndex": 99
+    },
+    {
+      "start": 346.711,
+      "end": 348.151,
+      "type": "line",
+      "text": "and they cannot die,",
+      "verse": "12:18",
+      "lineIndex": 100
+    },
+    {
+      "start": 348.331,
+      "end": 350.56,
+      "type": "line",
+      "text": "seeing there is no more corruption.",
+      "verse": "12:18",
+      "lineIndex": 101
+    },
+    {
+      "start": 351.24,
+      "end": 358.485,
+      "type": "line",
+      "text": "Now it came to pass that when Alma had made an end of speaking these words, the people began to be more astonished;",
+      "verse": "12:19",
+      "lineIndex": 103
+    },
+    {
+      "start": 359.165,
+      "end": 360.837,
+      "type": "line",
+      "text": "But there was one Antionah,",
+      "verse": "12:20",
+      "lineIndex": 104
+    },
+    {
+      "start": 361.017,
+      "end": 363.153,
+      "type": "line",
+      "text": "who was a chief ruler among them,",
+      "verse": "12:20",
+      "lineIndex": 105
+    },
+    {
+      "start": 363.333,
+      "end": 365.376,
+      "type": "line",
+      "text": "came forth and said unto him:",
+      "verse": "12:20",
+      "lineIndex": 106
+    },
+    {
+      "start": 365.556,
+      "end": 369.828,
+      "type": "line",
+      "text": "What is this that thou hast said, that man should rise from the dead",
+      "verse": "12:20",
+      "lineIndex": 107
+    },
+    {
+      "start": 370.008,
+      "end": 373.677,
+      "type": "line",
+      "text": "and be changed from this mortal to an immortal state,",
+      "verse": "12:20",
+      "lineIndex": 108
+    },
+    {
+      "start": 373.857,
+      "end": 375.668,
+      "type": "line",
+      "text": "that the soul can never die?",
+      "verse": "12:20",
+      "lineIndex": 109
+    },
+    {
+      "start": 376.348,
+      "end": 384.847,
+      "type": "line",
+      "text": "What does the scripture mean, which saith that God placed cherubim and a flaming sword on the east of the garden of Eden,",
+      "verse": "12:21",
+      "lineIndex": 110
+    },
+    {
+      "start": 385.027,
+      "end": 387.535,
+      "type": "line",
+      "text": "lest our first parents should enter",
+      "verse": "12:21",
+      "lineIndex": 111
+    },
+    {
+      "start": 387.715,
+      "end": 390.78,
+      "type": "line",
+      "text": "and partake of the fruit of the tree of life,",
+      "verse": "12:21",
+      "lineIndex": 112
+    },
+    {
+      "start": 390.96,
+      "end": 392.307,
+      "type": "line",
+      "text": "and live forever?",
+      "verse": "12:21",
+      "lineIndex": 113
+    },
+    {
+      "start": 392.487,
+      "end": 397.27,
+      "type": "line",
+      "text": "And thus we see that there was no possible chance that they should live forever.",
+      "verse": "12:21",
+      "lineIndex": 114
+    },
+    {
+      "start": 397.95,
+      "end": 399.575,
+      "type": "line",
+      "text": "Now Alma said unto him:",
+      "verse": "12:22",
+      "lineIndex": 115
+    },
+    {
+      "start": 399.755,
+      "end": 402.634,
+      "type": "line",
+      "text": "This is the thing which I was about to explain.",
+      "verse": "12:22",
+      "lineIndex": 116
+    },
+    {
+      "start": 402.814,
+      "end": 409.223,
+      "type": "line",
+      "text": "Now we see that Adam did fall by the partaking of the forbidden fruit, according to the word of God;",
+      "verse": "12:22",
+      "lineIndex": 117
+    },
+    {
+      "start": 409.403,
+      "end": 415.115,
+      "type": "line",
+      "text": "and thus we see, that by his fall, all mankind became a lost and fallen people.",
+      "verse": "12:22",
+      "lineIndex": 118
+    },
+    {
+      "start": 415.795,
+      "end": 418.071,
+      "type": "line",
+      "text": "And now behold, I say unto you",
+      "verse": "12:23",
+      "lineIndex": 119
+    },
+    {
+      "start": 418.251,
+      "end": 420.619,
+      "type": "line",
+      "text": "that if it had been possible for Adam",
+      "verse": "12:23",
+      "lineIndex": 120
+    },
+    {
+      "start": 420.799,
+      "end": 424.421,
+      "type": "line",
+      "text": "to have partaken of the fruit of the tree of life at that time,",
+      "verse": "12:23",
+      "lineIndex": 121
+    },
+    {
+      "start": 424.601,
+      "end": 427.202,
+      "type": "line",
+      "text": "there would have been no death,",
+      "verse": "12:23",
+      "lineIndex": 122
+    },
+    {
+      "start": 427.382,
+      "end": 430.772,
+      "type": "line",
+      "text": "and the word would have been void, making God a liar,",
+      "verse": "12:23",
+      "lineIndex": 123
+    },
+    {
+      "start": 430.952,
+      "end": 432.345,
+      "type": "line",
+      "text": "for he said:",
+      "verse": "12:23",
+      "lineIndex": 124
+    },
+    {
+      "start": 432.525,
+      "end": 434.893,
+      "type": "line",
+      "text": "If thou eat thou shalt surely die.",
+      "verse": "12:23",
+      "lineIndex": 125
+    },
+    {
+      "start": 435.573,
+      "end": 438.452,
+      "type": "line",
+      "text": "And we see that death comes upon mankind,",
+      "verse": "12:24",
+      "lineIndex": 126
+    },
+    {
+      "start": 438.632,
+      "end": 442.115,
+      "type": "line",
+      "text": "yea, the death which has been spoken of by Amulek,",
+      "verse": "12:24",
+      "lineIndex": 127
+    },
+    {
+      "start": 442.295,
+      "end": 444.245,
+      "type": "line",
+      "text": "which is the temporal death;",
+      "verse": "12:24",
+      "lineIndex": 128
+    },
+    {
+      "start": 444.425,
+      "end": 449.626,
+      "type": "line",
+      "text": "nevertheless there was a space granted unto man in which he might repent;",
+      "verse": "12:24",
+      "lineIndex": 129
+    },
+    {
+      "start": 449.806,
+      "end": 452.964,
+      "type": "line",
+      "text": "therefore this life became a probationary state;",
+      "verse": "12:24",
+      "lineIndex": 130
+    },
+    {
+      "start": 453.144,
+      "end": 455.373,
+      "type": "line",
+      "text": "a time to prepare to meet God;",
+      "verse": "12:24",
+      "lineIndex": 131
+    },
+    {
+      "start": 455.553,
+      "end": 460.522,
+      "type": "line",
+      "text": "a time to prepare for that endless state which has been spoken of by us,",
+      "verse": "12:24",
+      "lineIndex": 132
+    },
+    {
+      "start": 460.702,
+      "end": 463.21,
+      "type": "line",
+      "text": "which is after the resurrection of the dead.",
+      "verse": "12:24",
+      "lineIndex": 133
+    },
+    {
+      "start": 463.89,
+      "end": 467.048,
+      "type": "line",
+      "text": "Now, if it had not been for the plan of redemption,",
+      "verse": "12:25",
+      "lineIndex": 135
+    },
+    {
+      "start": 467.228,
+      "end": 470.665,
+      "type": "line",
+      "text": "which was laid from the foundation of the world,",
+      "verse": "12:25",
+      "lineIndex": 136
+    },
+    {
+      "start": 470.845,
+      "end": 474.189,
+      "type": "line",
+      "text": "there could have been no resurrection of the dead;",
+      "verse": "12:25",
+      "lineIndex": 137
+    },
+    {
+      "start": 474.369,
+      "end": 477.016,
+      "type": "line",
+      "text": "but there was a plan of redemption laid,",
+      "verse": "12:25",
+      "lineIndex": 138
+    },
+    {
+      "start": 477.196,
+      "end": 480.261,
+      "type": "line",
+      "text": "which shall bring to pass the resurrection of the dead,",
+      "verse": "12:25",
+      "lineIndex": 139
+    },
+    {
+      "start": 480.441,
+      "end": 481.974,
+      "type": "line",
+      "text": "of which has been spoken.",
+      "verse": "12:25",
+      "lineIndex": 140
+    },
+    {
+      "start": 482.654,
+      "end": 489.899,
+      "type": "line",
+      "text": "And now behold, if it were possible that our first parents could have gone forth and partaken of the tree of life",
+      "verse": "12:26",
+      "lineIndex": 141
+    },
+    {
+      "start": 490.079,
+      "end": 494.259,
+      "type": "line",
+      "text": "they would have been forever miserable, having no preparatory state;",
+      "verse": "12:26",
+      "lineIndex": 142
+    },
+    {
+      "start": 494.439,
+      "end": 497.876,
+      "type": "line",
+      "text": "and thus the plan of redemption would have been frustrated,",
+      "verse": "12:26",
+      "lineIndex": 143
+    },
+    {
+      "start": 498.056,
+      "end": 501.585,
+      "type": "line",
+      "text": "and the word of God would have been void, taking none effect.",
+      "verse": "12:26",
+      "lineIndex": 144
+    },
+    {
+      "start": 502.265,
+      "end": 504.355,
+      "type": "line",
+      "text": "But behold, it was not so;",
+      "verse": "12:27",
+      "lineIndex": 145
+    },
+    {
+      "start": 504.535,
+      "end": 507.507,
+      "type": "line",
+      "text": "but it was appointed unto men that they must die;",
+      "verse": "12:27",
+      "lineIndex": 146
+    },
+    {
+      "start": 507.687,
+      "end": 510.288,
+      "type": "line",
+      "text": "and after death, they must come to judgment,",
+      "verse": "12:27",
+      "lineIndex": 147
+    },
+    {
+      "start": 510.468,
+      "end": 513.579,
+      "type": "line",
+      "text": "even that same judgment of which we have spoken,",
+      "verse": "12:27",
+      "lineIndex": 148
+    },
+    {
+      "start": 513.759,
+      "end": 514.966,
+      "type": "line",
+      "text": "which is the end.",
+      "verse": "12:27",
+      "lineIndex": 149
+    },
+    {
+      "start": 515.646,
+      "end": 519.918,
+      "type": "line",
+      "text": "And after God had appointed that these things should come unto man,",
+      "verse": "12:28",
+      "lineIndex": 150
+    },
+    {
+      "start": 520.098,
+      "end": 527.11,
+      "type": "line",
+      "text": "behold, then he saw that it was expedient that man should know concerning the things whereof he had appointed unto them;",
+      "verse": "12:28",
+      "lineIndex": 151
+    },
+    {
+      "start": 527.79,
+      "end": 530.901,
+      "type": "line",
+      "text": "Therefore he sent angels to converse with them,",
+      "verse": "12:29",
+      "lineIndex": 152
+    },
+    {
+      "start": 531.081,
+      "end": 533.821,
+      "type": "line",
+      "text": "who caused men to behold of his glory.",
+      "verse": "12:29",
+      "lineIndex": 153
+    },
+    {
+      "start": 534.501,
+      "end": 537.845,
+      "type": "line",
+      "text": "And they began from that time forth to call on his name;",
+      "verse": "12:30",
+      "lineIndex": 154
+    },
+    {
+      "start": 538.025,
+      "end": 540.161,
+      "type": "line",
+      "text": "therefore God conversed with men,",
+      "verse": "12:30",
+      "lineIndex": 155
+    },
+    {
+      "start": 540.341,
+      "end": 543.592,
+      "type": "line",
+      "text": "and made known unto them the plan of redemption,",
+      "verse": "12:30",
+      "lineIndex": 156
+    },
+    {
+      "start": 543.772,
+      "end": 547.441,
+      "type": "line",
+      "text": "which had been prepared from the foundation of the world;",
+      "verse": "12:30",
+      "lineIndex": 157
+    },
+    {
+      "start": 547.621,
+      "end": 553.519,
+      "type": "line",
+      "text": "and this he made known unto them according to their faith and repentance and their holy works.",
+      "verse": "12:30",
+      "lineIndex": 158
+    },
+    {
+      "start": 554.199,
+      "end": 556.8,
+      "type": "line",
+      "text": "Wherefore, he gave commandments unto men,",
+      "verse": "12:31",
+      "lineIndex": 159
+    },
+    {
+      "start": 556.98,
+      "end": 560.138,
+      "type": "line",
+      "text": "they having first transgressed the first commandments",
+      "verse": "12:31",
+      "lineIndex": 160
+    },
+    {
+      "start": 560.318,
+      "end": 562.826,
+      "type": "line",
+      "text": "as to things which were temporal,",
+      "verse": "12:31",
+      "lineIndex": 161
+    },
+    {
+      "start": 563.006,
+      "end": 568.347,
+      "type": "line",
+      "text": "and becoming as gods, knowing good from evil, placing themselves in a state to act,",
+      "verse": "12:31",
+      "lineIndex": 162
+    },
+    {
+      "start": 568.527,
+      "end": 573.868,
+      "type": "line",
+      "text": "or being placed in a state to act according to their wills and pleasures,",
+      "verse": "12:31",
+      "lineIndex": 163
+    },
+    {
+      "start": 574.048,
+      "end": 576.37,
+      "type": "line",
+      "text": "whether to do evil or to do good\u2014",
+      "verse": "12:31",
+      "lineIndex": 164
+    },
+    {
+      "start": 577.05,
+      "end": 579.79,
+      "type": "line",
+      "text": "Therefore God gave unto them commandments,",
+      "verse": "12:32",
+      "lineIndex": 165
+    },
+    {
+      "start": 579.97,
+      "end": 583.546,
+      "type": "line",
+      "text": "after having made known unto them the plan of redemption,",
+      "verse": "12:32",
+      "lineIndex": 166
+    },
+    {
+      "start": 583.726,
+      "end": 585.676,
+      "type": "line",
+      "text": "that they should not do evil,",
+      "verse": "12:32",
+      "lineIndex": 167
+    },
+    {
+      "start": 585.856,
+      "end": 593.472,
+      "type": "line",
+      "text": "the penalty thereof being a second death, which was an everlasting death as to things pertaining unto righteousness;",
+      "verse": "12:32",
+      "lineIndex": 168
+    },
+    {
+      "start": 593.652,
+      "end": 597.135,
+      "type": "line",
+      "text": "for on such the plan of redemption could have no power,",
+      "verse": "12:32",
+      "lineIndex": 169
+    },
+    {
+      "start": 597.315,
+      "end": 603.12,
+      "type": "line",
+      "text": "for the works of justice could not be destroyed, according to the supreme goodness of God.",
+      "verse": "12:32",
+      "lineIndex": 170
+    },
+    {
+      "start": 603.8,
+      "end": 606.958,
+      "type": "line",
+      "text": "But God did call on men, in the name of his Son,",
+      "verse": "12:33",
+      "lineIndex": 171
+    },
+    {
+      "start": 607.138,
+      "end": 610.11,
+      "type": "line",
+      "text": "(this being the plan of redemption which was laid)",
+      "verse": "12:33",
+      "lineIndex": 172
+    },
+    {
+      "start": 610.29,
+      "end": 611.451,
+      "type": "line",
+      "text": "saying:",
+      "verse": "12:33",
+      "lineIndex": 173
+    },
+    {
+      "start": 611.631,
+      "end": 613.21,
+      "type": "line",
+      "text": "If ye will repent,",
+      "verse": "12:33",
+      "lineIndex": 174
+    },
+    {
+      "start": 613.39,
+      "end": 615.155,
+      "type": "line",
+      "text": "and harden not your hearts,",
+      "verse": "12:33",
+      "lineIndex": 175
+    },
+    {
+      "start": 615.335,
+      "end": 619.561,
+      "type": "line",
+      "text": "then will I have mercy upon you, through mine Only Begotten Son;",
+      "verse": "12:33",
+      "lineIndex": 176
+    },
+    {
+      "start": 620.241,
+      "end": 622.377,
+      "type": "line",
+      "text": "Therefore, whosoever repenteth,",
+      "verse": "12:34",
+      "lineIndex": 177
+    },
+    {
+      "start": 622.557,
+      "end": 624.6,
+      "type": "line",
+      "text": "and hardeneth not his heart,",
+      "verse": "12:34",
+      "lineIndex": 178
+    },
+    {
+      "start": 624.78,
+      "end": 630.492,
+      "type": "line",
+      "text": "he shall have claim on mercy through mine Only Begotten Son, unto a remission of his sins;",
+      "verse": "12:34",
+      "lineIndex": 179
+    },
+    {
+      "start": 630.672,
+      "end": 633.087,
+      "type": "line",
+      "text": "and these shall enter into my rest.",
+      "verse": "12:34",
+      "lineIndex": 180
+    },
+    {
+      "start": 633.767,
+      "end": 636.135,
+      "type": "line",
+      "text": "And whosoever will harden his heart",
+      "verse": "12:35",
+      "lineIndex": 181
+    },
+    {
+      "start": 636.315,
+      "end": 637.987,
+      "type": "line",
+      "text": "and will do iniquity,",
+      "verse": "12:35",
+      "lineIndex": 182
+    },
+    {
+      "start": 638.167,
+      "end": 642.114,
+      "type": "line",
+      "text": "behold, I swear in my wrath that he shall not enter into my rest.",
+      "verse": "12:35",
+      "lineIndex": 183
+    },
+    {
+      "start": 642.794,
+      "end": 644.094,
+      "type": "line",
+      "text": "And now, my brethren,",
+      "verse": "12:36",
+      "lineIndex": 184
+    },
+    {
+      "start": 644.274,
+      "end": 645.853,
+      "type": "line",
+      "text": "behold I say unto you",
+      "verse": "12:36",
+      "lineIndex": 185
+    },
+    {
+      "start": 646.033,
+      "end": 648.03,
+      "type": "line",
+      "text": "that if ye will harden your hearts",
+      "verse": "12:36",
+      "lineIndex": 186
+    },
+    {
+      "start": 648.21,
+      "end": 650.996,
+      "type": "line",
+      "text": "ye shall not enter into the rest of the Lord;",
+      "verse": "12:36",
+      "lineIndex": 187
+    },
+    {
+      "start": 651.176,
+      "end": 653.637,
+      "type": "line",
+      "text": "therefore your iniquity provoketh him",
+      "verse": "12:36",
+      "lineIndex": 188
+    },
+    {
+      "start": 653.817,
+      "end": 656.557,
+      "type": "line",
+      "text": "that he sendeth down his wrath upon you",
+      "verse": "12:36",
+      "lineIndex": 189
+    },
+    {
+      "start": 656.737,
+      "end": 658.734,
+      "type": "line",
+      "text": "as in the first provocation,",
+      "verse": "12:36",
+      "lineIndex": 190
+    },
+    {
+      "start": 658.914,
+      "end": 663.372,
+      "type": "line",
+      "text": "yea, according to his word in the last provocation as well as the first,",
+      "verse": "12:36",
+      "lineIndex": 191
+    },
+    {
+      "start": 663.552,
+      "end": 666.385,
+      "type": "line",
+      "text": "to the everlasting destruction of your souls;",
+      "verse": "12:36",
+      "lineIndex": 192
+    },
+    {
+      "start": 666.565,
+      "end": 671.116,
+      "type": "line",
+      "text": "therefore, according to his word, unto the last death, as well as the first.",
+      "verse": "12:36",
+      "lineIndex": 193
+    },
+    {
+      "start": 671.796,
+      "end": 673.096,
+      "type": "line",
+      "text": "And now, my brethren,",
+      "verse": "12:37",
+      "lineIndex": 194
+    },
+    {
+      "start": 673.276,
+      "end": 674.948,
+      "type": "line",
+      "text": "seeing we know these things,",
+      "verse": "12:37",
+      "lineIndex": 195
+    },
+    {
+      "start": 675.128,
+      "end": 676.661,
+      "type": "line",
+      "text": "and they are true,",
+      "verse": "12:37",
+      "lineIndex": 196
+    },
+    {
+      "start": 676.841,
+      "end": 678.141,
+      "type": "line",
+      "text": "let us repent,",
+      "verse": "12:37",
+      "lineIndex": 197
+    },
+    {
+      "start": 678.321,
+      "end": 680.179,
+      "type": "line",
+      "text": "and harden not our hearts,",
+      "verse": "12:37",
+      "lineIndex": 198
+    },
+    {
+      "start": 680.359,
+      "end": 688.997,
+      "type": "line",
+      "text": "that we provoke not the Lord our God to pull down his wrath upon us in these his second commandments which he has given unto us;",
+      "verse": "12:37",
+      "lineIndex": 199
+    },
+    {
+      "start": 689.177,
+      "end": 691.499,
+      "type": "line",
+      "text": "but let us enter into the rest of God,",
+      "verse": "12:37",
+      "lineIndex": 200
+    },
+    {
+      "start": 691.679,
+      "end": 694.001,
+      "type": "line",
+      "text": "which is prepared according to his word.",
+      "verse": "12:37",
+      "lineIndex": 201
+    }
+  ]
+}
