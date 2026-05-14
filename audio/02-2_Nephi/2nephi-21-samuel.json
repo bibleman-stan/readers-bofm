@@ -1,0 +1,464 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 21,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 185.076,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.529,
+      "type": "line",
+      "text": "And there shall come forth a rod out of the stem of Jesse,",
+      "verse": "21:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.709,
+      "end": 6.17,
+      "type": "line",
+      "text": "and a branch shall grow out of his roots.",
+      "verse": "21:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.85,
+      "end": 9.729,
+      "type": "line",
+      "text": "And the Spirit of the Lord shall rest upon him,",
+      "verse": "21:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.909,
+      "end": 12.556,
+      "type": "line",
+      "text": "the spirit of wisdom and understanding,",
+      "verse": "21:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 12.736,
+      "end": 14.826,
+      "type": "line",
+      "text": "the spirit of counsel and might,",
+      "verse": "21:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 15.006,
+      "end": 18.21,
+      "type": "line",
+      "text": "the spirit of knowledge and of the fear of the Lord;",
+      "verse": "21:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 18.89,
+      "end": 22.652,
+      "type": "line",
+      "text": "And shall make him of quick understanding in the fear of the Lord;",
+      "verse": "21:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 22.832,
+      "end": 25.897,
+      "type": "line",
+      "text": "and he shall not judge after the sight of his eyes,",
+      "verse": "21:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 26.077,
+      "end": 29.374,
+      "type": "line",
+      "text": "neither reprove after the hearing of his ears.",
+      "verse": "21:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 30.054,
+      "end": 32.794,
+      "type": "line",
+      "text": "But with righteousness shall he judge the poor,",
+      "verse": "21:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 32.974,
+      "end": 36.178,
+      "type": "line",
+      "text": "and reprove with equity for the meek of the earth;",
+      "verse": "21:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 36.358,
+      "end": 39.655,
+      "type": "line",
+      "text": "and he shall smite the earth with the rod of his mouth,",
+      "verse": "21:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 39.835,
+      "end": 42.807,
+      "type": "line",
+      "text": "and with the breath of his lips shall he slay the wicked.",
+      "verse": "21:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 43.487,
+      "end": 46.552,
+      "type": "line",
+      "text": "And righteousness shall be the girdle of his loins,",
+      "verse": "21:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 46.732,
+      "end": 49.24,
+      "type": "line",
+      "text": "and faithfulness the girdle of his reins.",
+      "verse": "21:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 49.92,
+      "end": 52.242,
+      "type": "line",
+      "text": "The wolf also shall dwell with the lamb,",
+      "verse": "21:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 52.422,
+      "end": 54.93,
+      "type": "line",
+      "text": "and the leopard shall lie down with the kid,",
+      "verse": "21:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 55.11,
+      "end": 58.686,
+      "type": "line",
+      "text": "and the calf and the young lion and fatling together;",
+      "verse": "21:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 58.866,
+      "end": 61.142,
+      "type": "line",
+      "text": "and a little child shall lead them.",
+      "verse": "21:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 61.822,
+      "end": 64.283,
+      "type": "line",
+      "text": "And the cow and the bear shall feed;",
+      "verse": "21:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 64.463,
+      "end": 67.017,
+      "type": "line",
+      "text": "their young ones shall lie down together;",
+      "verse": "21:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 67.197,
+      "end": 69.565,
+      "type": "line",
+      "text": "and the lion shall eat straw like the ox.",
+      "verse": "21:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 70.245,
+      "end": 73.682,
+      "type": "line",
+      "text": "And the sucking child shall play on the hole of the asp,",
+      "verse": "21:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 73.862,
+      "end": 77.531,
+      "type": "line",
+      "text": "and the weaned child shall put his hand on the cockatrice's den.",
+      "verse": "21:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 78.211,
+      "end": 81.508,
+      "type": "line",
+      "text": "They shall not hurt nor destroy in all my holy mountain,",
+      "verse": "21:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 81.688,
+      "end": 85.171,
+      "type": "line",
+      "text": "for the earth shall be full of the knowledge of the Lord,",
+      "verse": "21:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 85.351,
+      "end": 87.673,
+      "type": "line",
+      "text": "as the waters cover the sea.",
+      "verse": "21:9",
+      "lineIndex": 28
+    },
+    {
+      "start": 88.353,
+      "end": 91.604,
+      "type": "line",
+      "text": "And in that day there shall be a root of Jesse,",
+      "verse": "21:10",
+      "lineIndex": 30
+    },
+    {
+      "start": 91.784,
+      "end": 94.478,
+      "type": "line",
+      "text": "which shall stand for a ensign of the people;",
+      "verse": "21:10",
+      "lineIndex": 31
+    },
+    {
+      "start": 94.658,
+      "end": 96.794,
+      "type": "line",
+      "text": "to it shall the Gentiles seek;",
+      "verse": "21:10",
+      "lineIndex": 32
+    },
+    {
+      "start": 96.974,
+      "end": 99.11,
+      "type": "line",
+      "text": "and his rest shall be glorious.",
+      "verse": "21:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 99.79,
+      "end": 102.112,
+      "type": "line",
+      "text": "And it shall come to pass in that day",
+      "verse": "21:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 102.292,
+      "end": 107.818,
+      "type": "line",
+      "text": "that the Lord shall set his hand again the second time to recover the remnant of his people",
+      "verse": "21:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 107.998,
+      "end": 111.435,
+      "type": "line",
+      "text": "which shall be left, from Assyria, and from Egypt,",
+      "verse": "21:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 111.615,
+      "end": 113.891,
+      "type": "line",
+      "text": "and from Pathros, and from Cush,",
+      "verse": "21:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 114.071,
+      "end": 116.857,
+      "type": "line",
+      "text": "and from Elam, and from Shinar,",
+      "verse": "21:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 117.037,
+      "end": 120.241,
+      "type": "line",
+      "text": "and from Hamath, and from the islands of the sea.",
+      "verse": "21:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 120.921,
+      "end": 124.45,
+      "type": "line",
+      "text": "And he shall set up a ensign for the nations,",
+      "verse": "21:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 124.63,
+      "end": 127.324,
+      "type": "line",
+      "text": "and shall assemble the outcasts of Israel,",
+      "verse": "21:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 127.504,
+      "end": 132.566,
+      "type": "line",
+      "text": "and gather together the dispersed of Judah from the four corners of the earth.",
+      "verse": "21:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 133.246,
+      "end": 135.661,
+      "type": "line",
+      "text": "The envy of Ephraim also shall depart,",
+      "verse": "21:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 135.841,
+      "end": 138.72,
+      "type": "line",
+      "text": "and the adversaries of Judah shall be cut off;",
+      "verse": "21:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 138.9,
+      "end": 141.222,
+      "type": "line",
+      "text": "Ephraim shall not envy Judah,",
+      "verse": "21:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 141.402,
+      "end": 143.631,
+      "type": "line",
+      "text": "and Judah shall not vex Ephraim.",
+      "verse": "21:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 144.311,
+      "end": 149.234,
+      "type": "line",
+      "text": "But they shall fly upon the shoulders of the Philistines towards the west;",
+      "verse": "21:14",
+      "lineIndex": 47
+    },
+    {
+      "start": 149.414,
+      "end": 152.247,
+      "type": "line",
+      "text": "they shall spoil them of the east together;",
+      "verse": "21:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 152.427,
+      "end": 155.631,
+      "type": "line",
+      "text": "they shall lay their hand upon Edom and Moab;",
+      "verse": "21:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 155.811,
+      "end": 158.319,
+      "type": "line",
+      "text": "and the children of Ammon shall obey them.",
+      "verse": "21:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 158.999,
+      "end": 163.225,
+      "type": "line",
+      "text": "And the Lord shall utterly destroy the tongue of the Egyptian sea;",
+      "verse": "21:15",
+      "lineIndex": 51
+    },
+    {
+      "start": 163.405,
+      "end": 167.306,
+      "type": "line",
+      "text": "and with his mighty wind he shall shake his hand over the river,",
+      "verse": "21:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 167.486,
+      "end": 170.272,
+      "type": "line",
+      "text": "and shall smite it in the seven streams,",
+      "verse": "21:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 170.452,
+      "end": 173.006,
+      "type": "line",
+      "text": "and make men go over dry shod.",
+      "verse": "21:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 173.686,
+      "end": 179.166,
+      "type": "line",
+      "text": "And there shall be a highway for the remnant of his people which shall be left, from Assyria,",
+      "verse": "21:16",
+      "lineIndex": 55
+    },
+    {
+      "start": 179.346,
+      "end": 181.018,
+      "type": "line",
+      "text": "like as it was to Israel",
+      "verse": "21:16",
+      "lineIndex": 56
+    },
+    {
+      "start": 181.198,
+      "end": 184.402,
+      "type": "line",
+      "text": "in the day that he came up out of the land of Egypt.",
+      "verse": "21:16",
+      "lineIndex": 57
+    }
+  ]
+}
