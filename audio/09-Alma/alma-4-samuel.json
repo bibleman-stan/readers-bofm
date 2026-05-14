@@ -1,0 +1,736 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 4,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 376.257,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.084,
+      "type": "line",
+      "text": "Now it came to pass in the sixth year of the reign of the judges over the people of Nephi,",
+      "verse": "4:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.264,
+      "end": 10.258,
+      "type": "line",
+      "text": "there were no contentions nor wars in the land of Zarahemla;",
+      "verse": "4:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.938,
+      "end": 12.796,
+      "type": "line",
+      "text": "But the people were afflicted,",
+      "verse": "4:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 12.976,
+      "end": 22.961,
+      "type": "line",
+      "text": "yea, greatly afflicted for the loss of their brethren, and also for the loss of their flocks and herds, and also for the loss of their fields of grain,",
+      "verse": "4:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 23.141,
+      "end": 26.81,
+      "type": "line",
+      "text": "which were trodden under foot and destroyed by the Lamanites.",
+      "verse": "4:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 27.49,
+      "end": 32.831,
+      "type": "line",
+      "text": "And so great were their afflictions that every soul had cause to mourn;",
+      "verse": "4:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 33.011,
+      "end": 40.674,
+      "type": "line",
+      "text": "and they believed that it was the judgments of God sent upon them because of their wickedness and their abominations;",
+      "verse": "4:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 40.854,
+      "end": 44.43,
+      "type": "line",
+      "text": "therefore they were awakened to a remembrance of their duty.",
+      "verse": "4:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 45.11,
+      "end": 48.221,
+      "type": "line",
+      "text": "And they began to establish the church more fully;",
+      "verse": "4:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 48.401,
+      "end": 51.93,
+      "type": "line",
+      "text": "yea, and many were baptized in the waters of Sidon",
+      "verse": "4:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 52.11,
+      "end": 54.293,
+      "type": "line",
+      "text": "and were joined to the church of God;",
+      "verse": "4:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 54.473,
+      "end": 57.167,
+      "type": "line",
+      "text": "yea, they were baptized by the hand of Alma,",
+      "verse": "4:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 57.347,
+      "end": 63.663,
+      "type": "line",
+      "text": "who had been consecrated the high priest over the people of the church, by the hand of his father Alma.",
+      "verse": "4:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 64.343,
+      "end": 68.383,
+      "type": "line",
+      "text": "And it came to pass in the seventh year of the reign of the judges",
+      "verse": "4:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 68.563,
+      "end": 72.046,
+      "type": "line",
+      "text": "there were about three thousand five hundred souls",
+      "verse": "4:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 72.226,
+      "end": 75.848,
+      "type": "line",
+      "text": "that united themselves to the church of God and were baptized.",
+      "verse": "4:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 76.028,
+      "end": 81.044,
+      "type": "line",
+      "text": "And thus ended the seventh year of the reign of the judges over the people of Nephi;",
+      "verse": "4:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 81.224,
+      "end": 83.592,
+      "type": "line",
+      "text": "and there was continual peace in all that time.",
+      "verse": "4:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 84.272,
+      "end": 88.08,
+      "type": "line",
+      "text": "And it came to pass in the eighth year of the reign of the judges,",
+      "verse": "4:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 88.26,
+      "end": 93.74,
+      "type": "line",
+      "text": "that the people of the church began to wax proud, because of their exceeding riches,",
+      "verse": "4:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 93.92,
+      "end": 97.124,
+      "type": "line",
+      "text": "and their fine silks, and their fine-twined linen,",
+      "verse": "4:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 97.304,
+      "end": 100.09,
+      "type": "line",
+      "text": "and because of their many flocks and herds,",
+      "verse": "4:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 100.27,
+      "end": 102.731,
+      "type": "line",
+      "text": "and their gold and their silver,",
+      "verse": "4:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 102.911,
+      "end": 107.462,
+      "type": "line",
+      "text": "and all manner of precious things, which they had obtained by their industry;",
+      "verse": "4:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 107.642,
+      "end": 111.497,
+      "type": "line",
+      "text": "and in all these things were they lifted up in the pride of their eyes,",
+      "verse": "4:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 111.677,
+      "end": 114.556,
+      "type": "line",
+      "text": "for they began to wear very costly apparel.",
+      "verse": "4:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 115.236,
+      "end": 118.533,
+      "type": "line",
+      "text": "Now this was the cause of much affliction to Alma,",
+      "verse": "4:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 118.713,
+      "end": 124.286,
+      "type": "line",
+      "text": "yea, and to many of the people whom Alma had consecrated to be teachers, and priests,",
+      "verse": "4:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 124.466,
+      "end": 126.602,
+      "type": "line",
+      "text": "and elders over the church;",
+      "verse": "4:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 126.782,
+      "end": 130.358,
+      "type": "line",
+      "text": "yea, many of them were sorely grieved for the wickedness",
+      "verse": "4:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 130.538,
+      "end": 133.928,
+      "type": "line",
+      "text": "which they saw had begun to be among their people.",
+      "verse": "4:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 134.608,
+      "end": 142.689,
+      "type": "line",
+      "text": "For they saw and beheld with great sorrow that the people of the church began to be lifted up in the pride of their eyes,",
+      "verse": "4:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 142.869,
+      "end": 145.284,
+      "type": "line",
+      "text": "and to set their hearts upon riches",
+      "verse": "4:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 145.464,
+      "end": 147.972,
+      "type": "line",
+      "text": "and upon the vain things of the world,",
+      "verse": "4:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 148.152,
+      "end": 151.914,
+      "type": "line",
+      "text": "that they began to be scornful, one towards another,",
+      "verse": "4:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 152.094,
+      "end": 158.038,
+      "type": "line",
+      "text": "and they began to persecute those that did not believe according to their own will and pleasure.",
+      "verse": "4:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 158.718,
+      "end": 162.201,
+      "type": "line",
+      "text": "And thus, in this eighth year of the reign of the judges,",
+      "verse": "4:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 162.381,
+      "end": 167.071,
+      "type": "line",
+      "text": "there began to be great contentions among the people of the church;",
+      "verse": "4:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 167.251,
+      "end": 169.898,
+      "type": "line",
+      "text": "yea, there were envyings, and strife,",
+      "verse": "4:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 170.078,
+      "end": 172.772,
+      "type": "line",
+      "text": "and malice, and persecutions, and pride,",
+      "verse": "4:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 172.952,
+      "end": 177.178,
+      "type": "line",
+      "text": "even to exceed the pride of those who did not belong to the church of God.",
+      "verse": "4:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 177.858,
+      "end": 181.713,
+      "type": "line",
+      "text": "And thus ended the eighth year of the reign of the judges;",
+      "verse": "4:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 181.893,
+      "end": 189.741,
+      "type": "line",
+      "text": "and the wickedness of the church was a great stumbling-block to those who did not belong to the church;",
+      "verse": "4:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 189.921,
+      "end": 193.45,
+      "type": "line",
+      "text": "and thus the church began to fail in its progress.",
+      "verse": "4:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 194.13,
+      "end": 197.288,
+      "type": "line",
+      "text": "And it came to pass in the commencement of the ninth year,",
+      "verse": "4:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 197.468,
+      "end": 200.069,
+      "type": "line",
+      "text": "Alma saw the wickedness of the church,",
+      "verse": "4:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 200.249,
+      "end": 209.351,
+      "type": "line",
+      "text": "and he saw also that the example of the church began to lead those who were unbelievers on from one piece of iniquity to another,",
+      "verse": "4:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 209.531,
+      "end": 212.225,
+      "type": "line",
+      "text": "thus bringing on the destruction of the people.",
+      "verse": "4:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 212.905,
+      "end": 215.831,
+      "type": "line",
+      "text": "Yea, he saw great inequality among the people,",
+      "verse": "4:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 216.011,
+      "end": 218.844,
+      "type": "line",
+      "text": "some lifting themselves up with their pride,",
+      "verse": "4:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 219.024,
+      "end": 220.649,
+      "type": "line",
+      "text": "despising others,",
+      "verse": "4:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 220.829,
+      "end": 224.126,
+      "type": "line",
+      "text": "turning their backs upon the needy and the naked",
+      "verse": "4:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 224.306,
+      "end": 227.603,
+      "type": "line",
+      "text": "and those who were hungry, and those who were athirst,",
+      "verse": "4:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 227.783,
+      "end": 229.919,
+      "type": "line",
+      "text": "and those who were sick and afflicted.",
+      "verse": "4:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 230.599,
+      "end": 234.454,
+      "type": "line",
+      "text": "Now this was a great cause for lamentations among the people,",
+      "verse": "4:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 234.634,
+      "end": 240.439,
+      "type": "line",
+      "text": "while others were abasing themselves, succoring those who stood in need of their succor,",
+      "verse": "4:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 240.619,
+      "end": 245.031,
+      "type": "line",
+      "text": "such as imparting their substance to the poor and the needy, feeding the hungry,",
+      "verse": "4:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 245.211,
+      "end": 248.926,
+      "type": "line",
+      "text": "and suffering all manner of afflictions, for Christ's sake,",
+      "verse": "4:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 249.106,
+      "end": 252.032,
+      "type": "line",
+      "text": "who should come according to the spirit of prophecy;",
+      "verse": "4:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 252.712,
+      "end": 254.337,
+      "type": "line",
+      "text": "Looking forward to that day,",
+      "verse": "4:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 254.517,
+      "end": 257.35,
+      "type": "line",
+      "text": "thus retaining a remission of their sins;",
+      "verse": "4:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 257.53,
+      "end": 267.236,
+      "type": "line",
+      "text": "being filled with great joy because of the resurrection of the dead, according to the will and power and deliverance of Jesus Christ from the bands of death.",
+      "verse": "4:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 267.916,
+      "end": 273.489,
+      "type": "line",
+      "text": "And now it came to pass that Alma, having seen the afflictions of the humble followers of God,",
+      "verse": "4:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 273.669,
+      "end": 278.452,
+      "type": "line",
+      "text": "and the persecutions which were heaped upon them by the remainder of his people,",
+      "verse": "4:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 278.632,
+      "end": 282.812,
+      "type": "line",
+      "text": "and seeing all their inequality, began to be very sorrowful;",
+      "verse": "4:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 282.992,
+      "end": 286.011,
+      "type": "line",
+      "text": "nevertheless the Spirit of the Lord did not fail him.",
+      "verse": "4:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 286.691,
+      "end": 290.963,
+      "type": "line",
+      "text": "And he selected a wise man who was among the elders of the church,",
+      "verse": "4:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 291.143,
+      "end": 294.672,
+      "type": "line",
+      "text": "and gave him power according to the voice of the people,",
+      "verse": "4:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 294.852,
+      "end": 300.053,
+      "type": "line",
+      "text": "that he might have power to enact laws according to the laws which had been given,",
+      "verse": "4:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 300.233,
+      "end": 304.97,
+      "type": "line",
+      "text": "and to put them in force according to the wickedness and the crimes of the people.",
+      "verse": "4:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 305.65,
+      "end": 307.693,
+      "type": "line",
+      "text": "Now this man's name was Nephihah,",
+      "verse": "4:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 307.873,
+      "end": 310.195,
+      "type": "line",
+      "text": "and he was appointed chief judge;",
+      "verse": "4:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 310.375,
+      "end": 314.369,
+      "type": "line",
+      "text": "and he sat in the judgment-seat to judge and to govern the people.",
+      "verse": "4:17",
+      "lineIndex": 76
+    },
+    {
+      "start": 315.049,
+      "end": 320.065,
+      "type": "line",
+      "text": "Now Alma did not grant unto him the office of being high priest over the church,",
+      "verse": "4:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 320.245,
+      "end": 323.403,
+      "type": "line",
+      "text": "but he retained the office of high priest unto himself;",
+      "verse": "4:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 323.583,
+      "end": 326.927,
+      "type": "line",
+      "text": "but he delivered the judgment-seat unto Nephihah.",
+      "verse": "4:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 327.607,
+      "end": 328.907,
+      "type": "line",
+      "text": "And this he did",
+      "verse": "4:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 329.087,
+      "end": 331.92,
+      "type": "line",
+      "text": "that he himself might go forth among his people,",
+      "verse": "4:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 332.1,
+      "end": 334.097,
+      "type": "line",
+      "text": "or among the people of Nephi,",
+      "verse": "4:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 334.277,
+      "end": 337.342,
+      "type": "line",
+      "text": "that he might preach the word of God unto them,",
+      "verse": "4:19",
+      "lineIndex": 83
+    },
+    {
+      "start": 337.522,
+      "end": 340.448,
+      "type": "line",
+      "text": "to stir them up in remembrance of their duty,",
+      "verse": "4:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 340.628,
+      "end": 343.554,
+      "type": "line",
+      "text": "and that he might pull down by the word of God,",
+      "verse": "4:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 343.734,
+      "end": 348.61,
+      "type": "line",
+      "text": "all the pride and craftiness and all the contentions which were among his people,",
+      "verse": "4:19",
+      "lineIndex": 86
+    },
+    {
+      "start": 348.79,
+      "end": 351.344,
+      "type": "line",
+      "text": "seeing no way that he might reclaim them",
+      "verse": "4:19",
+      "lineIndex": 87
+    },
+    {
+      "start": 351.524,
+      "end": 354.914,
+      "type": "line",
+      "text": "save it were in bearing down in pure testimony against them.",
+      "verse": "4:19",
+      "lineIndex": 88
+    },
+    {
+      "start": 355.594,
+      "end": 361.678,
+      "type": "line",
+      "text": "And thus in the commencement of the ninth year of the reign of the judges over the people of Nephi,",
+      "verse": "4:20",
+      "lineIndex": 89
+    },
+    {
+      "start": 361.858,
+      "end": 365.248,
+      "type": "line",
+      "text": "Alma delivered up the judgment-seat to Nephihah",
+      "verse": "4:20",
+      "lineIndex": 90
+    },
+    {
+      "start": 365.428,
+      "end": 370.583,
+      "type": "line",
+      "text": "and confined himself wholly to the high priesthood of the holy order of God,",
+      "verse": "4:20",
+      "lineIndex": 91
+    },
+    {
+      "start": 370.763,
+      "end": 375.593,
+      "type": "line",
+      "text": "to the testimony of the word, according to the spirit of revelation and prophecy.",
+      "verse": "4:20",
+      "lineIndex": 92
+    }
+  ]
+}
