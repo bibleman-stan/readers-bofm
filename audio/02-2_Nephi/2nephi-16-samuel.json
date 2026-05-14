@@ -1,0 +1,464 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 16,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 140.015,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.248,
+      "type": "line",
+      "text": "In the year that king Uzziah died, I saw also the Lord sitting upon a throne,",
+      "verse": "16:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.428,
+      "end": 7.1,
+      "type": "line",
+      "text": "high and lifted up,",
+      "verse": "16:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.28,
+      "end": 9.23,
+      "type": "line",
+      "text": "and his train filled the temple.",
+      "verse": "16:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.91,
+      "end": 12.0,
+      "type": "line",
+      "text": "Above it stood the seraphim;",
+      "verse": "16:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 12.18,
+      "end": 14.316,
+      "type": "line",
+      "text": "each one had six wings;",
+      "verse": "16:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.496,
+      "end": 16.632,
+      "type": "line",
+      "text": "with twain he covered his face,",
+      "verse": "16:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 16.812,
+      "end": 18.948,
+      "type": "line",
+      "text": "and with twain he covered his feet,",
+      "verse": "16:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 19.128,
+      "end": 21.032,
+      "type": "line",
+      "text": "and with twain he did fly.",
+      "verse": "16:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 21.712,
+      "end": 24.173,
+      "type": "line",
+      "text": "And one cried unto another, and said:",
+      "verse": "16:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 24.353,
+      "end": 26.768,
+      "type": "line",
+      "text": "Holy, holy, holy, is the Lord of Hosts;",
+      "verse": "16:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 26.948,
+      "end": 29.27,
+      "type": "line",
+      "text": "the whole earth is full of his glory.",
+      "verse": "16:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 29.95,
+      "end": 33.294,
+      "type": "line",
+      "text": "And the posts of the door moved at the voice of him that cried,",
+      "verse": "16:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 33.474,
+      "end": 35.61,
+      "type": "line",
+      "text": "and the house was filled with smoke.",
+      "verse": "16:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 36.29,
+      "end": 37.59,
+      "type": "line",
+      "text": "Then said I:",
+      "verse": "16:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 37.77,
+      "end": 39.999,
+      "type": "line",
+      "text": "Wo is unto me! for I am undone;",
+      "verse": "16:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 40.179,
+      "end": 42.64,
+      "type": "line",
+      "text": "because I am a man of unclean lips;",
+      "verse": "16:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 42.82,
+      "end": 46.024,
+      "type": "line",
+      "text": "and I dwell in the midst of a people of unclean lips;",
+      "verse": "16:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 46.204,
+      "end": 49.641,
+      "type": "line",
+      "text": "for mine eyes have seen the King, the Lord of Hosts.",
+      "verse": "16:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 50.321,
+      "end": 54.965,
+      "type": "line",
+      "text": "Then flew one of the seraphim unto me, having a live coal in his hand,",
+      "verse": "16:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 55.145,
+      "end": 58.164,
+      "type": "line",
+      "text": "which he had taken with the tongs from off the altar;",
+      "verse": "16:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 58.844,
+      "end": 61.352,
+      "type": "line",
+      "text": "And he laid it upon my mouth, and said:",
+      "verse": "16:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 61.532,
+      "end": 63.575,
+      "type": "line",
+      "text": "Lo, this has touched thy lips;",
+      "verse": "16:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 63.755,
+      "end": 66.216,
+      "type": "line",
+      "text": "and thine iniquity is taken away,",
+      "verse": "16:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 66.396,
+      "end": 68.021,
+      "type": "line",
+      "text": "and thy sin purged.",
+      "verse": "16:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 68.701,
+      "end": 71.348,
+      "type": "line",
+      "text": "Also I heard the voice of the Lord, saying:",
+      "verse": "16:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 71.528,
+      "end": 73.061,
+      "type": "line",
+      "text": "Whom shall I send,",
+      "verse": "16:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 73.241,
+      "end": 74.82,
+      "type": "line",
+      "text": "and who will go for us?",
+      "verse": "16:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 75.0,
+      "end": 76.3,
+      "type": "line",
+      "text": "Then I said:",
+      "verse": "16:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 76.48,
+      "end": 78.291,
+      "type": "line",
+      "text": "Here am I; send me.",
+      "verse": "16:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 78.971,
+      "end": 80.271,
+      "type": "line",
+      "text": "And he said:",
+      "verse": "16:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 80.451,
+      "end": 82.03,
+      "type": "line",
+      "text": "Go and tell this people\u2014",
+      "verse": "16:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 82.21,
+      "end": 83.464,
+      "type": "line",
+      "text": "Hear ye indeed,",
+      "verse": "16:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 83.644,
+      "end": 85.409,
+      "type": "line",
+      "text": "but they understood not;",
+      "verse": "16:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 85.589,
+      "end": 87.075,
+      "type": "line",
+      "text": "and see ye indeed,",
+      "verse": "16:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 87.255,
+      "end": 88.788,
+      "type": "line",
+      "text": "but they perceived not.",
+      "verse": "16:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 89.468,
+      "end": 91.929,
+      "type": "line",
+      "text": "Make the heart of this people fat,",
+      "verse": "16:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 92.109,
+      "end": 93.781,
+      "type": "line",
+      "text": "and make their ears heavy,",
+      "verse": "16:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 93.961,
+      "end": 95.308,
+      "type": "line",
+      "text": "and shut their eyes\u2014",
+      "verse": "16:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 95.488,
+      "end": 97.531,
+      "type": "line",
+      "text": "lest they see with their eyes,",
+      "verse": "16:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 97.711,
+      "end": 99.522,
+      "type": "line",
+      "text": "and hear with their ears,",
+      "verse": "16:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 99.702,
+      "end": 102.21,
+      "type": "line",
+      "text": "and understand with their heart,",
+      "verse": "16:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 102.39,
+      "end": 104.758,
+      "type": "line",
+      "text": "and be converted and be healed.",
+      "verse": "16:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 105.438,
+      "end": 106.738,
+      "type": "line",
+      "text": "Then said I:",
+      "verse": "16:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 106.918,
+      "end": 108.125,
+      "type": "line",
+      "text": "Lord, how long?",
+      "verse": "16:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 108.305,
+      "end": 109.605,
+      "type": "line",
+      "text": "And he said:",
+      "verse": "16:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 109.785,
+      "end": 112.943,
+      "type": "line",
+      "text": "Until the cities be wasted without inhabitant,",
+      "verse": "16:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 113.123,
+      "end": 115.027,
+      "type": "line",
+      "text": "and the houses without man,",
+      "verse": "16:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 115.207,
+      "end": 117.483,
+      "type": "line",
+      "text": "and the land be utterly desolate;",
+      "verse": "16:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 118.163,
+      "end": 120.624,
+      "type": "line",
+      "text": "And the Lord have removed men far away,",
+      "verse": "16:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 120.804,
+      "end": 124.426,
+      "type": "line",
+      "text": "for there shall be a great forsaking in the midst of the land.",
+      "verse": "16:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 125.106,
+      "end": 127.335,
+      "type": "line",
+      "text": "But yet there shall be a tenth,",
+      "verse": "16:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 127.515,
+      "end": 129.094,
+      "type": "line",
+      "text": "and they shall return,",
+      "verse": "16:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 129.274,
+      "end": 131.642,
+      "type": "line",
+      "text": "and shall be eaten, as a teil tree,",
+      "verse": "16:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 131.822,
+      "end": 136.141,
+      "type": "line",
+      "text": "and as an oak whose substance is in them when they cast their leaves;",
+      "verse": "16:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 136.321,
+      "end": 139.34,
+      "type": "line",
+      "text": "so the holy seed shall be the substance thereof.",
+      "verse": "16:13",
+      "lineIndex": 57
+    }
+  ]
+}

@@ -1,0 +1,960 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 15,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 328.986,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.087,
+      "type": "line",
+      "text": "And then will I sing to my well-beloved a song of my beloved,",
+      "verse": "15:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.267,
+      "end": 5.753,
+      "type": "line",
+      "text": "touching his vineyard.",
+      "verse": "15:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.933,
+      "end": 9.555,
+      "type": "line",
+      "text": "My well-beloved hath a vineyard in a very fruitful hill.",
+      "verse": "15:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.235,
+      "end": 11.721,
+      "type": "line",
+      "text": "And he fenced it,",
+      "verse": "15:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.901,
+      "end": 14.269,
+      "type": "line",
+      "text": "and gathered out the stones thereof,",
+      "verse": "15:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.449,
+      "end": 16.91,
+      "type": "line",
+      "text": "and planted it with the choicest vine,",
+      "verse": "15:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 17.09,
+      "end": 19.551,
+      "type": "line",
+      "text": "and built a tower in the midst of it,",
+      "verse": "15:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 19.731,
+      "end": 22.239,
+      "type": "line",
+      "text": "and also made a wine-press therein;",
+      "verse": "15:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 22.419,
+      "end": 25.995,
+      "type": "line",
+      "text": "and he looked that it should bring forth grapes,",
+      "verse": "15:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 26.175,
+      "end": 28.636,
+      "type": "line",
+      "text": "and it brought forth wild grapes.",
+      "verse": "15:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 29.316,
+      "end": 30.198,
+      "type": "line",
+      "text": "And now,",
+      "verse": "15:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 30.378,
+      "end": 33.536,
+      "type": "line",
+      "text": "O inhabitants of Jerusalem and men of Judah,",
+      "verse": "15:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 33.716,
+      "end": 35.109,
+      "type": "line",
+      "text": "judge, I pray you,",
+      "verse": "15:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 35.289,
+      "end": 37.147,
+      "type": "line",
+      "text": "betwixt me and my vineyard.",
+      "verse": "15:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 37.827,
+      "end": 40.428,
+      "type": "line",
+      "text": "What could have been done more to my vineyard",
+      "verse": "15:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 40.608,
+      "end": 42.233,
+      "type": "line",
+      "text": "that I have not done in it?",
+      "verse": "15:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 42.413,
+      "end": 45.71,
+      "type": "line",
+      "text": "Wherefore, when I looked that it should bring forth grapes",
+      "verse": "15:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 45.89,
+      "end": 47.98,
+      "type": "line",
+      "text": "it brought forth wild grapes.",
+      "verse": "15:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 48.66,
+      "end": 50.007,
+      "type": "line",
+      "text": "And now go to;",
+      "verse": "15:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 50.187,
+      "end": 52.788,
+      "type": "line",
+      "text": "I will tell you what I will do to my vineyard\u2014",
+      "verse": "15:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 52.968,
+      "end": 55.429,
+      "type": "line",
+      "text": "I will take away the hedge thereof,",
+      "verse": "15:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 55.609,
+      "end": 57.374,
+      "type": "line",
+      "text": "and it shall be eaten up;",
+      "verse": "15:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 57.554,
+      "end": 60.062,
+      "type": "line",
+      "text": "and I will break down the wall thereof,",
+      "verse": "15:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 60.242,
+      "end": 62.053,
+      "type": "line",
+      "text": "and it shall be trodden down;",
+      "verse": "15:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 62.733,
+      "end": 64.498,
+      "type": "line",
+      "text": "And I will lay it waste;",
+      "verse": "15:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 64.678,
+      "end": 66.907,
+      "type": "line",
+      "text": "it shall not be pruned nor digged;",
+      "verse": "15:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 67.087,
+      "end": 69.734,
+      "type": "line",
+      "text": "but there shall come up briers and thorns;",
+      "verse": "15:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 69.914,
+      "end": 73.722,
+      "type": "line",
+      "text": "I will also command the clouds that they rain no rain upon it.",
+      "verse": "15:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 74.402,
+      "end": 78.489,
+      "type": "line",
+      "text": "For the vineyard of the Lord of Hosts is the house of Israel,",
+      "verse": "15:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 78.669,
+      "end": 81.27,
+      "type": "line",
+      "text": "and the men of Judah his pleasant plant;",
+      "verse": "15:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 81.45,
+      "end": 84.608,
+      "type": "line",
+      "text": "and he looked for judgment, and behold, oppression;",
+      "verse": "15:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 84.788,
+      "end": 87.296,
+      "type": "line",
+      "text": "for righteousness, but behold, a cry.",
+      "verse": "15:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 87.976,
+      "end": 90.484,
+      "type": "line",
+      "text": "Wo unto them that join house to house,",
+      "verse": "15:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 90.664,
+      "end": 92.614,
+      "type": "line",
+      "text": "till there can be no place,",
+      "verse": "15:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 92.794,
+      "end": 96.231,
+      "type": "line",
+      "text": "that they may be placed alone in the midst of the earth!",
+      "verse": "15:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 96.911,
+      "end": 99.279,
+      "type": "line",
+      "text": "In mine ears, said the Lord of Hosts,",
+      "verse": "15:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 99.459,
+      "end": 102.478,
+      "type": "line",
+      "text": "of a truth many houses shall be desolate,",
+      "verse": "15:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 102.658,
+      "end": 105.769,
+      "type": "line",
+      "text": "and great and fair cities without inhabitant.",
+      "verse": "15:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 106.449,
+      "end": 109.932,
+      "type": "line",
+      "text": "Yea, ten acres of vineyard shall yield one bath,",
+      "verse": "15:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 110.112,
+      "end": 113.409,
+      "type": "line",
+      "text": "and the seed of a homer shall yield an ephah.",
+      "verse": "15:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 114.089,
+      "end": 116.783,
+      "type": "line",
+      "text": "Wo unto them that rise up early in the morning,",
+      "verse": "15:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 116.963,
+      "end": 119.331,
+      "type": "line",
+      "text": "that they may follow strong drink,",
+      "verse": "15:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 119.511,
+      "end": 122.948,
+      "type": "line",
+      "text": "that continue until night, and wine inflame them!",
+      "verse": "15:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 123.628,
+      "end": 125.857,
+      "type": "line",
+      "text": "And the harp, and the viol,",
+      "verse": "15:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 126.037,
+      "end": 129.52,
+      "type": "line",
+      "text": "the tabret, and pipe, and wine are in their feasts;",
+      "verse": "15:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 129.7,
+      "end": 132.533,
+      "type": "line",
+      "text": "but they regard not the work of the Lord,",
+      "verse": "15:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 132.713,
+      "end": 135.267,
+      "type": "line",
+      "text": "neither consider the operation of his hands.",
+      "verse": "15:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 135.947,
+      "end": 138.966,
+      "type": "line",
+      "text": "Therefore, my people are gone into captivity,",
+      "verse": "15:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 139.146,
+      "end": 141.004,
+      "type": "line",
+      "text": "because they have no knowledge;",
+      "verse": "15:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 141.184,
+      "end": 143.413,
+      "type": "line",
+      "text": "and their honorable men are famished,",
+      "verse": "15:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 143.593,
+      "end": 146.054,
+      "type": "line",
+      "text": "and their multitude dried up with thirst.",
+      "verse": "15:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 146.734,
+      "end": 149.288,
+      "type": "line",
+      "text": "Therefore, hell hath enlarged herself,",
+      "verse": "15:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 149.468,
+      "end": 151.883,
+      "type": "line",
+      "text": "and opened her mouth without measure;",
+      "verse": "15:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 152.063,
+      "end": 153.363,
+      "type": "line",
+      "text": "and their glory,",
+      "verse": "15:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 153.543,
+      "end": 156.004,
+      "type": "line",
+      "text": "and their multitude, and their pomp,",
+      "verse": "15:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 156.184,
+      "end": 157.902,
+      "type": "line",
+      "text": "and he that rejoiceth,",
+      "verse": "15:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 158.082,
+      "end": 159.754,
+      "type": "line",
+      "text": "shall descend into it.",
+      "verse": "15:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 160.434,
+      "end": 162.895,
+      "type": "line",
+      "text": "And the mean man shall be brought down,",
+      "verse": "15:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 163.075,
+      "end": 165.351,
+      "type": "line",
+      "text": "and the mighty man shall be humbled,",
+      "verse": "15:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 165.531,
+      "end": 168.039,
+      "type": "line",
+      "text": "and the eyes of the lofty shall be humbled.",
+      "verse": "15:15",
+      "lineIndex": 62
+    },
+    {
+      "start": 168.719,
+      "end": 171.97,
+      "type": "line",
+      "text": "But the Lord of Hosts shall be exalted in judgment,",
+      "verse": "15:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 172.15,
+      "end": 175.819,
+      "type": "line",
+      "text": "and God that is holy shall be sanctified in righteousness.",
+      "verse": "15:16",
+      "lineIndex": 64
+    },
+    {
+      "start": 176.499,
+      "end": 179.332,
+      "type": "line",
+      "text": "Then shall the lambs feed after their manner,",
+      "verse": "15:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 179.512,
+      "end": 183.041,
+      "type": "line",
+      "text": "and the waste places of the fat ones shall strangers eat.",
+      "verse": "15:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 183.721,
+      "end": 186.786,
+      "type": "line",
+      "text": "Wo unto them that draw iniquity with cords of vanity,",
+      "verse": "15:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 186.966,
+      "end": 189.474,
+      "type": "line",
+      "text": "and sin as it were with a cart rope;",
+      "verse": "15:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 190.154,
+      "end": 192.476,
+      "type": "line",
+      "text": "That say: Let him make speed,",
+      "verse": "15:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 192.656,
+      "end": 194.235,
+      "type": "line",
+      "text": "hasten his work,",
+      "verse": "15:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 194.415,
+      "end": 195.948,
+      "type": "line",
+      "text": "that we may see it;",
+      "verse": "15:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 196.128,
+      "end": 200.215,
+      "type": "line",
+      "text": "and let the counsel of the Holy One of Israel draw nigh and come,",
+      "verse": "15:19",
+      "lineIndex": 73
+    },
+    {
+      "start": 200.395,
+      "end": 201.974,
+      "type": "line",
+      "text": "that we may know it.",
+      "verse": "15:19",
+      "lineIndex": 74
+    },
+    {
+      "start": 202.654,
+      "end": 205.115,
+      "type": "line",
+      "text": "Wo unto them that call evil good,",
+      "verse": "15:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 205.295,
+      "end": 206.502,
+      "type": "line",
+      "text": "and good evil,",
+      "verse": "15:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 206.682,
+      "end": 208.632,
+      "type": "line",
+      "text": "that put darkness for light,",
+      "verse": "15:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 208.812,
+      "end": 210.484,
+      "type": "line",
+      "text": "and light for darkness,",
+      "verse": "15:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 210.664,
+      "end": 212.707,
+      "type": "line",
+      "text": "that put bitter for sweet,",
+      "verse": "15:20",
+      "lineIndex": 79
+    },
+    {
+      "start": 212.887,
+      "end": 214.373,
+      "type": "line",
+      "text": "and sweet for bitter!",
+      "verse": "15:20",
+      "lineIndex": 80
+    },
+    {
+      "start": 215.053,
+      "end": 217.375,
+      "type": "line",
+      "text": "Wo unto the wise in their own eyes",
+      "verse": "15:21",
+      "lineIndex": 81
+    },
+    {
+      "start": 217.555,
+      "end": 219.738,
+      "type": "line",
+      "text": "and prudent in their own sight!",
+      "verse": "15:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 220.418,
+      "end": 222.554,
+      "type": "line",
+      "text": "Wo unto the mighty to drink wine,",
+      "verse": "15:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 222.734,
+      "end": 225.474,
+      "type": "line",
+      "text": "and men of strength to mingle strong drink;",
+      "verse": "15:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 226.154,
+      "end": 228.662,
+      "type": "line",
+      "text": "Who justify the wicked for reward,",
+      "verse": "15:23",
+      "lineIndex": 86
+    },
+    {
+      "start": 228.842,
+      "end": 231.721,
+      "type": "line",
+      "text": "and take away the righteousness of the righteous from him!",
+      "verse": "15:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 232.401,
+      "end": 235.187,
+      "type": "line",
+      "text": "Therefore, as the fire devoureth the stubble,",
+      "verse": "15:24",
+      "lineIndex": 88
+    },
+    {
+      "start": 235.367,
+      "end": 237.503,
+      "type": "line",
+      "text": "and the flame consumeth the chaff,",
+      "verse": "15:24",
+      "lineIndex": 89
+    },
+    {
+      "start": 237.683,
+      "end": 239.866,
+      "type": "line",
+      "text": "their root shall be rottenness,",
+      "verse": "15:24",
+      "lineIndex": 90
+    },
+    {
+      "start": 240.046,
+      "end": 242.275,
+      "type": "line",
+      "text": "and their blossoms shall go up as dust;",
+      "verse": "15:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 242.455,
+      "end": 245.799,
+      "type": "line",
+      "text": "because they have cast away the law of the Lord of Hosts,",
+      "verse": "15:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 245.979,
+      "end": 249.276,
+      "type": "line",
+      "text": "and despised the word of the Holy One of Israel.",
+      "verse": "15:24",
+      "lineIndex": 93
+    },
+    {
+      "start": 249.956,
+      "end": 254.043,
+      "type": "line",
+      "text": "Therefore, is the anger of the Lord kindled against his people,",
+      "verse": "15:25",
+      "lineIndex": 94
+    },
+    {
+      "start": 254.223,
+      "end": 257.381,
+      "type": "line",
+      "text": "and he hath stretched forth his hand against them,",
+      "verse": "15:25",
+      "lineIndex": 95
+    },
+    {
+      "start": 257.561,
+      "end": 259.279,
+      "type": "line",
+      "text": "and hath smitten them;",
+      "verse": "15:25",
+      "lineIndex": 96
+    },
+    {
+      "start": 259.459,
+      "end": 261.27,
+      "type": "line",
+      "text": "and the hills did tremble,",
+      "verse": "15:25",
+      "lineIndex": 97
+    },
+    {
+      "start": 261.45,
+      "end": 264.747,
+      "type": "line",
+      "text": "and their carcasses were torn in the midst of the streets.",
+      "verse": "15:25",
+      "lineIndex": 98
+    },
+    {
+      "start": 264.927,
+      "end": 267.342,
+      "type": "line",
+      "text": "For all this his anger is not turned away,",
+      "verse": "15:25",
+      "lineIndex": 99
+    },
+    {
+      "start": 267.522,
+      "end": 269.89,
+      "type": "line",
+      "text": "but his hand is stretched out still.",
+      "verse": "15:25",
+      "lineIndex": 100
+    },
+    {
+      "start": 270.57,
+      "end": 273.821,
+      "type": "line",
+      "text": "And he will lift up a ensign to the nations from far,",
+      "verse": "15:26",
+      "lineIndex": 102
+    },
+    {
+      "start": 274.001,
+      "end": 277.159,
+      "type": "line",
+      "text": "and will hiss unto them from the end of the earth;",
+      "verse": "15:26",
+      "lineIndex": 103
+    },
+    {
+      "start": 277.339,
+      "end": 280.265,
+      "type": "line",
+      "text": "and behold, they shall come with speed swiftly;",
+      "verse": "15:26",
+      "lineIndex": 104
+    },
+    {
+      "start": 280.445,
+      "end": 283.139,
+      "type": "line",
+      "text": "none shall be weary nor stumble among them.",
+      "verse": "15:26",
+      "lineIndex": 105
+    },
+    {
+      "start": 283.819,
+      "end": 285.909,
+      "type": "line",
+      "text": "None shall slumber nor sleep;",
+      "verse": "15:27",
+      "lineIndex": 106
+    },
+    {
+      "start": 286.089,
+      "end": 289.061,
+      "type": "line",
+      "text": "neither shall the girdle of their loins be loosed,",
+      "verse": "15:27",
+      "lineIndex": 107
+    },
+    {
+      "start": 289.241,
+      "end": 291.935,
+      "type": "line",
+      "text": "nor the latchet of their shoes be broken;",
+      "verse": "15:27",
+      "lineIndex": 108
+    },
+    {
+      "start": 292.615,
+      "end": 294.937,
+      "type": "line",
+      "text": "Whose arrows shall be sharp,",
+      "verse": "15:28",
+      "lineIndex": 109
+    },
+    {
+      "start": 295.117,
+      "end": 296.928,
+      "type": "line",
+      "text": "and all their bows bent,",
+      "verse": "15:28",
+      "lineIndex": 110
+    },
+    {
+      "start": 297.108,
+      "end": 300.405,
+      "type": "line",
+      "text": "and their horses' hoofs shall be counted like flint,",
+      "verse": "15:28",
+      "lineIndex": 111
+    },
+    {
+      "start": 300.585,
+      "end": 302.721,
+      "type": "line",
+      "text": "and their wheels like a whirlwind,",
+      "verse": "15:28",
+      "lineIndex": 112
+    },
+    {
+      "start": 302.901,
+      "end": 304.759,
+      "type": "line",
+      "text": "their roaring like a lion.",
+      "verse": "15:28",
+      "lineIndex": 113
+    },
+    {
+      "start": 305.439,
+      "end": 307.668,
+      "type": "line",
+      "text": "They shall roar like young lions;",
+      "verse": "15:29",
+      "lineIndex": 114
+    },
+    {
+      "start": 307.848,
+      "end": 310.727,
+      "type": "line",
+      "text": "yea, they shall roar, and lay hold of the prey,",
+      "verse": "15:29",
+      "lineIndex": 115
+    },
+    {
+      "start": 310.907,
+      "end": 312.904,
+      "type": "line",
+      "text": "and shall carry away safe,",
+      "verse": "15:29",
+      "lineIndex": 116
+    },
+    {
+      "start": 313.084,
+      "end": 314.756,
+      "type": "line",
+      "text": "and none shall deliver.",
+      "verse": "15:29",
+      "lineIndex": 117
+    },
+    {
+      "start": 315.436,
+      "end": 318.222,
+      "type": "line",
+      "text": "And in that day they shall roar against them",
+      "verse": "15:30",
+      "lineIndex": 118
+    },
+    {
+      "start": 318.402,
+      "end": 320.352,
+      "type": "line",
+      "text": "like the roaring of the sea;",
+      "verse": "15:30",
+      "lineIndex": 119
+    },
+    {
+      "start": 320.532,
+      "end": 322.622,
+      "type": "line",
+      "text": "and if they look unto the land,",
+      "verse": "15:30",
+      "lineIndex": 120
+    },
+    {
+      "start": 322.802,
+      "end": 324.799,
+      "type": "line",
+      "text": "behold, darkness and sorrow,",
+      "verse": "15:30",
+      "lineIndex": 121
+    },
+    {
+      "start": 324.979,
+      "end": 328.323,
+      "type": "line",
+      "text": "and the light is darkened in the heavens thereof.",
+      "verse": "15:30",
+      "lineIndex": 122
+    }
+  ]
+}
