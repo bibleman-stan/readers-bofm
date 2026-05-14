@@ -89,6 +89,7 @@ Per-rule operational detail lives in §5. Each rule's full template entry (Statu
 | R26 | Adjective (or NOUN-as-predicate) + "that" | Active | A | 3 | §5 R26 | `validators/colometry/validate_rule_26_ud.py` |
 | R27 | "Insomuch that" binding | Active | A | 3 | §5 R27 | `validators/colometry/validate_rule_27_ud.py` |
 | R28 | Speech-act announcement after frame | Active | A | 3 | §5 R28 | `validators/colometry/validate_rule_28_ud.py` |
+| R29 | Bare infinitival orphan integrity | Active | A | 3 | §5 R29 | `validators/colometry/validate_rule_29_ud.py` (general rule; subsumes R7 SCOPE-merge + R17 `to`-INF) |
 | EP-1 | "According to" manner vs. source | Active | B | 3 | §5 EP-1 | `validators/colometry/validate_ep_01_according_to_ud.py` (Cat B REVIEW-surfacer; no auto-applier per canon) |
 | EP-3 | Inverted predicate | Active | B | 3 | §5 EP-3 | (no dedicated validator yet; Cat B = Stan-eye-check) |
 | EP-4 | Title/role + domain | Active | B | 3 | §5 EP-4 | (no dedicated validator yet; Cat B = Stan-eye-check) |
@@ -2038,6 +2039,63 @@ RESULT_MARK_LEMMAS:           # consequence-not-frame when speech precedes advcl
 - Char-offset emission: detector emits `split_col` via `build_line_map_full`; applier inserts the break before `split_col` (T1.1 char-offset pattern).
 - Audit trail: `readers-bofm/private/audit-trail/R28.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/scholarship/bofm/R28.md`](atu-method/scholarship/bofm/R28.md)
+
+<!-- ===== R29 ===== -->
+### R29: Bare Infinitival Orphan Integrity
+
+**Status:** Active
+**Category:** A (Mechanical, mandatory)
+**Decidability:** UD-pattern
+**Layer:** 3
+
+**Rule.** A v2-mine line that BEGINS with an infinitival `to` + VERB (the `to` is the line-initial token; UD `mark` with `lemma=to`, parent VERB attached via `xcomp` / `advcl` / `acl`) MUST merge with the line carrying the infinitival's governor when the governor sits on the immediately-preceding line (gap = 1). A bare infinitival clause has an unexpressed subject controlled by its matrix; severed from the governor it is subject-gapped and forward-incomplete — it cannot stand as an atomic thought unit. The governor's part-of-speech is immaterial (VERB, NOUN, or ADJ governors all qualify): the determination is the forward-incompleteness of the *orphan line*, not the completeness of the governor line.
+
+**Generalization note.** R29 is the GENERAL rule of which R7 SCOPE-merge (motion-verb + purpose-INF) and R17's `to`-INF complement clause are NARROWER SLICES. R7 and R17 remain as the verb-class-specific statements; R29 is the governing principle and extends mechanical coverage to all non-R7/non-R17 governors (the residual ~168 verb-governors, plus NOUN and ADJ governors). Where R7 or R17 already fires, that firing satisfies R29; R29's validator covers the residual.
+
+**WHY.** Grounded in the §1.1 bidirectional atomic-thought test (forward direction): a line beginning `to V…` fails forward grammatical closure — the infinitival's controlled subject is recoverable only from the matrix. This is NOT a precedence override (the bidirectional test is informational, not a mechanical override per the gnt-reader sibling lesson); it is the *rationale*. The mechanical *trigger* is the UD signature below — decidable purely from parse + line-map, no bidirectional-test invocation.
+
+**HOW WE KNOW.** Corpus survey 2026-05-14: 287 line-initial infinitival orphans corpus-wide; 261 at gap=1. After removing R7/R17-covered slices, 204 N=1 residual candidates (168 VERB-governed, 22 NOUN-governed, 11 ADJ-governed, 3 other). Same-line conformance for the broader infinitival-governor pattern runs ~85%+ — the corpus editorial state already overwhelmingly honors infinitival-governor adjacency; the orphans are the residual drift. §7.3 audit dispatched 2026-05-14 (2 parallel adversarial agents): hostile-scrutiny audit returned PASS-WITH-NARROWER-SCOPE; UD-verification audit returned 202/243 clean. Audit-surfaced scope refinements incorporated into the Exclusions below; audit α's ADJ/NOUN-exclusion carve-outs were canon-checked per `feedback_audit_outputs_need_canon_check` and rejected (R26 governs ADJ+*that* not ADJ+*to*-INF; J5 substantive-adjunct standing is PP-designed and does not transfer to subject-gapped infinitivals; framework §1.4 matrix-cumulation supports the N=1 merge).
+
+**UD signature.**
+```yaml
+trigger:
+  mark: { lemma: to, line_initial: true }      # the 'to' is char-col 0 of its v2-mine line
+  infinitival: { upos: VERB, deprel_in: [xcomp, advcl, acl] }
+  governor: { upos_in: [VERB, NOUN, ADJ] }
+  gap: 1                                        # governor on immediately-preceding line
+action: MERGE_ORPHAN_WITH_GOVERNOR
+```
+
+**Scope.** Line-initial infinitival `to`+VERB orphans at gap = 1 from a VERB / NOUN / ADJ governor. STRONG-MERGE-CANDIDATE only when n_parallel = 1 (the infinitival is not one of a coordinate series). gap > 1 and n_parallel ≥ 2 route to REVIEW-REQUIRED.
+
+**Exclusions (closed list — each cites dominating rule or audit finding).**
+
+1. **N ≥ 2 parallel infinitival series** — when 2+ coordinate infinitives share a governor, the series is J1 territory (formally-marked parallel series) / §1.9 N=2 adjudication. The FIRST member's merge into the governor is correct in principle, but members 2+ are coordinate beats, not subordinate orphans; mechanically separating "first member" is unreliable, so the whole n_parallel ≥ 2 set routes to REVIEW-REQUIRED. → J1 / §1.9.
+2. **N ≥ 3 J1 stack** — formally-parallel infinitival series of 3+ members (e.g. *"called / to preach / to declare / to unfold"*) stays split entirely per the §1.9 N≥3 cliff. → J1.
+3. **Governor line is itself a bare infinitival** — when the gap=1 "governor" line begins with `to` / `and to` / `or to`, it is itself an infinitival orphan, not the lexical governor (stacked-infinitive parse artifact). Skip; the real governor is further upstream. → parse-artifact guard.
+4. **PRON / PROPN / AUX governor** — the infinitival's parent is a pronoun, proper noun, or bare auxiliary: UD mis-attachment. Skip. → parse-artifact guard.
+5. **gap > 1** — an intervening line sits between governor and orphan; the intervening line may carry its own ATU. → REVIEW-REQUIRED (same posture as R17's multi-line-gap filter).
+6. **Governor in R7 MOTION_VERBS or R17 GOVERNING_LEMMAS** — already covered by the narrower slice; R7/R17 firing satisfies R29. (Not an exclusion from the principle — a routing note to avoid double-detection.)
+
+**Precedence.** §3.5 Tier 3 (alongside R7, R17 — complement/adjunct integrity). R29 yields to Layer 1 vetoes, formula integrity (R1, R18, R23), and vocative integrity (R15) at higher tiers. Within Tier 3, R29 is the general statement; R7 and R17 are its named slices and do not conflict.
+
+**Examples.**
+
+- *Compliant (MERGE — VERB governor):* "And thus did Alma and his brethren teach the people the word of God, having authority to do so." — governor *teach* + N=1 infinitival on same line.
+- *Non-compliant (R29 violation — VERB governor, MERGE mandated):* Alma 31:1 — "and that Zoram, who was their leader, was leading the hearts of the people / to bow down to dumb idols," — governor *leading* (lemma=lead) on prior line; orphan *to bow down* forward-incomplete; merge.
+- *Non-compliant (R29 violation — NOUN governor):* "Now it was the custom among all the Nephites / to appoint…" — governor *custom* (NOUN) on prior line; the orphan line begins `to`, forward-incomplete; merge (the completeness of *"it was the custom"* is irrelevant — the test is the orphan line).
+- *Non-compliant (R29 violation — ADJ governor):* 1 Nephi 8 — "the whiteness thereof did exceed the whiteness of the driven snow… white / to exceed all the whiteness that I had ever seen" — ADJ governor *white*; orphan *to exceed…* forward-incomplete; merge.
+- *Excluded by Exclusion 1 (N=2 → REVIEW):* "give thee my servant for a covenant / to establish the earth, / to cause to inherit the desolate heritages" — coordinate N=2 infinitival pair; §1.9 adjudication, not auto-merge.
+- *Excluded by Exclusion 2 (N≥3 J1 stack — stays split):* Alma 12:1 — "he opened his mouth… and began to speak unto him / and to establish… / and to explain… / or to unfold…" — four-member J1 infinitival stack.
+- *Excluded by Exclusion 3 (stacked-infinitive parse artifact):* 1 Nephi 21:8 — "to establish the earth," whose gap=1 "governor" line is itself "to cause to inherit…" (a bare infinitival); skip — real governor is upstream.
+
+**Implementation.**
+
+- Validator: [`validators/colometry/validate_rule_29_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_29_ud.py)
+- Applier: [`validators/apply_rule_29_ud.py`](../../../../readers-bofm/validators/apply_rule_29_ud.py)
+- Closed-list definitions: R7 `MOTION_VERBS` + R17 `GOVERNING_LEMMAS` referenced for the Exclusion-6 routing note; no new closed list — R29's trigger is structural (line-initial `to` + governor-POS), not lexical.
+- Audit trail: §7.3 audit 2026-05-14 (2 parallel adversarial agents) — verdicts in commit message.
+- Scholarship: [`atu-method/scholarship/bofm/R29.md`](atu-method/scholarship/bofm/R29.md) (to be populated).
 
 <!-- ===== EP-1 ===== -->
 ### EP-1: "According To" Manner vs. Source
