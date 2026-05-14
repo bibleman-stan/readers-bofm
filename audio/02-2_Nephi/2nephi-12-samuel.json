@@ -1,0 +1,680 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 12,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 239.14,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.991,
+      "type": "line",
+      "text": "The word that Isaiah, the son of Amoz, saw concerning Judah and Jerusalem:",
+      "verse": "12:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.671,
+      "end": 9.272,
+      "type": "line",
+      "text": "And it shall come to pass in the last days,",
+      "verse": "12:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.452,
+      "end": 14.514,
+      "type": "line",
+      "text": "when the mountain of the Lord's house shall be established in the top of the mountains,",
+      "verse": "12:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.694,
+      "end": 17.202,
+      "type": "line",
+      "text": "and shall be exalted above the hills,",
+      "verse": "12:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.382,
+      "end": 19.89,
+      "type": "line",
+      "text": "and all nations shall flow unto it.",
+      "verse": "12:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 20.57,
+      "end": 22.892,
+      "type": "line",
+      "text": "And many people shall go and say,",
+      "verse": "12:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.072,
+      "end": 26.276,
+      "type": "line",
+      "text": "Come ye, and let us go up to the mountain of the Lord,",
+      "verse": "12:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 26.456,
+      "end": 28.732,
+      "type": "line",
+      "text": "to the house of the God of Jacob;",
+      "verse": "12:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 28.912,
+      "end": 30.909,
+      "type": "line",
+      "text": "and he will teach us of his ways,",
+      "verse": "12:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 31.089,
+      "end": 33.272,
+      "type": "line",
+      "text": "and we will walk in his paths;",
+      "verse": "12:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 33.452,
+      "end": 36.006,
+      "type": "line",
+      "text": "for out of Zion shall go forth the law,",
+      "verse": "12:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 36.186,
+      "end": 38.554,
+      "type": "line",
+      "text": "and the word of the Lord from Jerusalem.",
+      "verse": "12:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 39.234,
+      "end": 41.835,
+      "type": "line",
+      "text": "And he shall judge among the nations,",
+      "verse": "12:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 42.015,
+      "end": 44.012,
+      "type": "line",
+      "text": "and shall rebuke many people:",
+      "verse": "12:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 44.192,
+      "end": 47.257,
+      "type": "line",
+      "text": "and they shall beat their swords into plow-shares,",
+      "verse": "12:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 47.437,
+      "end": 49.666,
+      "type": "line",
+      "text": "and their spears into pruning-hooks\u2014",
+      "verse": "12:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 49.846,
+      "end": 53.004,
+      "type": "line",
+      "text": "nation shall not lift up sword against nation,",
+      "verse": "12:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 53.184,
+      "end": 55.413,
+      "type": "line",
+      "text": "neither shall they learn war any more.",
+      "verse": "12:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 56.093,
+      "end": 57.626,
+      "type": "line",
+      "text": "O house of Jacob,",
+      "verse": "12:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 57.806,
+      "end": 61.01,
+      "type": "line",
+      "text": "come ye and let us walk in the light of the Lord;",
+      "verse": "12:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 61.19,
+      "end": 63.744,
+      "type": "line",
+      "text": "yea, come, for ye have all gone astray,",
+      "verse": "12:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 63.924,
+      "end": 66.06,
+      "type": "line",
+      "text": "every one to his wicked ways.",
+      "verse": "12:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 66.74,
+      "end": 68.087,
+      "type": "line",
+      "text": "Therefore, O Lord,",
+      "verse": "12:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 68.267,
+      "end": 70.357,
+      "type": "line",
+      "text": "thou hast forsaken thy people,",
+      "verse": "12:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 70.537,
+      "end": 71.977,
+      "type": "line",
+      "text": "the house of Jacob,",
+      "verse": "12:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 72.157,
+      "end": 74.943,
+      "type": "line",
+      "text": "because they be replenished from the east,",
+      "verse": "12:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 75.123,
+      "end": 78.234,
+      "type": "line",
+      "text": "and hearken unto soothsayers like the Philistines,",
+      "verse": "12:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 78.414,
+      "end": 81.293,
+      "type": "line",
+      "text": "and they please themselves in the children of strangers.",
+      "verse": "12:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 81.973,
+      "end": 84.481,
+      "type": "line",
+      "text": "Their land also is full of silver and gold,",
+      "verse": "12:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 84.661,
+      "end": 87.447,
+      "type": "line",
+      "text": "neither is there any end of their treasures;",
+      "verse": "12:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 87.627,
+      "end": 89.903,
+      "type": "line",
+      "text": "their land is also full of horses,",
+      "verse": "12:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 90.083,
+      "end": 92.544,
+      "type": "line",
+      "text": "neither is there any end of their chariots.",
+      "verse": "12:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 93.224,
+      "end": 95.592,
+      "type": "line",
+      "text": "Their land is also full of idols;",
+      "verse": "12:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 95.772,
+      "end": 98.048,
+      "type": "line",
+      "text": "they worship the work of their own hands,",
+      "verse": "12:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 98.228,
+      "end": 100.596,
+      "type": "line",
+      "text": "that which their own fingers have made.",
+      "verse": "12:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 101.276,
+      "end": 103.644,
+      "type": "line",
+      "text": "And the mean man boweth not down,",
+      "verse": "12:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 103.824,
+      "end": 106.564,
+      "type": "line",
+      "text": "and the great man humbleth himself not,",
+      "verse": "12:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 106.744,
+      "end": 108.323,
+      "type": "line",
+      "text": "therefore, forgive him not.",
+      "verse": "12:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 109.003,
+      "end": 110.443,
+      "type": "line",
+      "text": "O ye wicked ones,",
+      "verse": "12:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 110.623,
+      "end": 112.295,
+      "type": "line",
+      "text": "enter into the rock,",
+      "verse": "12:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 112.475,
+      "end": 114.24,
+      "type": "line",
+      "text": "and hide thee in the dust,",
+      "verse": "12:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 114.42,
+      "end": 118.785,
+      "type": "line",
+      "text": "for the fear of the Lord and the glory of his majesty shall smite thee.",
+      "verse": "12:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 119.465,
+      "end": 123.737,
+      "type": "line",
+      "text": "And it shall come to pass that the lofty looks of man shall be humbled,",
+      "verse": "12:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 123.917,
+      "end": 127.028,
+      "type": "line",
+      "text": "and the haughtiness of men shall be bowed down,",
+      "verse": "12:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 127.208,
+      "end": 130.319,
+      "type": "line",
+      "text": "and the Lord alone shall be exalted in that day.",
+      "verse": "12:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 130.999,
+      "end": 134.993,
+      "type": "line",
+      "text": "For the day of the Lord of Hosts soon cometh upon all nations,",
+      "verse": "12:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 135.173,
+      "end": 136.798,
+      "type": "line",
+      "text": "yea, upon every one;",
+      "verse": "12:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 136.978,
+      "end": 139.393,
+      "type": "line",
+      "text": "yea, upon the proud and lofty,",
+      "verse": "12:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 139.573,
+      "end": 142.081,
+      "type": "line",
+      "text": "and upon every one who is lifted up,",
+      "verse": "12:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 142.261,
+      "end": 143.794,
+      "type": "line",
+      "text": "and he shall be brought low.",
+      "verse": "12:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 144.474,
+      "end": 149.118,
+      "type": "line",
+      "text": "Yea, and the day of the Lord shall come upon all the cedars of Lebanon,",
+      "verse": "12:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 149.298,
+      "end": 151.574,
+      "type": "line",
+      "text": "for they are high and lifted up;",
+      "verse": "12:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 151.754,
+      "end": 154.308,
+      "type": "line",
+      "text": "and upon all the oaks of Bashan;",
+      "verse": "12:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 154.988,
+      "end": 157.356,
+      "type": "line",
+      "text": "And upon all the high mountains,",
+      "verse": "12:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 157.536,
+      "end": 159.254,
+      "type": "line",
+      "text": "and upon all the hills,",
+      "verse": "12:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 159.434,
+      "end": 162.499,
+      "type": "line",
+      "text": "and upon all the nations which are lifted up,",
+      "verse": "12:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 162.679,
+      "end": 164.351,
+      "type": "line",
+      "text": "and upon every people;",
+      "verse": "12:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 165.031,
+      "end": 166.935,
+      "type": "line",
+      "text": "And upon every high tower,",
+      "verse": "12:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 167.115,
+      "end": 169.251,
+      "type": "line",
+      "text": "and upon every fenced wall;",
+      "verse": "12:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 169.931,
+      "end": 172.114,
+      "type": "line",
+      "text": "And upon all the ships of the sea,",
+      "verse": "12:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 172.294,
+      "end": 174.616,
+      "type": "line",
+      "text": "and upon all the ships of Tarshish,",
+      "verse": "12:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 174.796,
+      "end": 177.164,
+      "type": "line",
+      "text": "and upon all pleasant pictures.",
+      "verse": "12:16",
+      "lineIndex": 64
+    },
+    {
+      "start": 177.844,
+      "end": 181.002,
+      "type": "line",
+      "text": "And the loftiness of man shall be bowed down,",
+      "verse": "12:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 181.182,
+      "end": 184.108,
+      "type": "line",
+      "text": "and the haughtiness of men shall be made low;",
+      "verse": "12:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 184.288,
+      "end": 187.399,
+      "type": "line",
+      "text": "and the Lord alone shall be exalted in that day.",
+      "verse": "12:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 188.079,
+      "end": 190.726,
+      "type": "line",
+      "text": "And the idols he shall utterly abolish.",
+      "verse": "12:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 191.406,
+      "end": 194.192,
+      "type": "line",
+      "text": "And they shall go into the holes of the rocks,",
+      "verse": "12:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 194.372,
+      "end": 196.462,
+      "type": "line",
+      "text": "and into the caves of the earth,",
+      "verse": "12:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 196.642,
+      "end": 199.614,
+      "type": "line",
+      "text": "for the fear of the Lord shall come upon them",
+      "verse": "12:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 199.794,
+      "end": 202.766,
+      "type": "line",
+      "text": "and the glory of his majesty shall smite them,",
+      "verse": "12:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 202.946,
+      "end": 205.779,
+      "type": "line",
+      "text": "when he ariseth to shake terribly the earth.",
+      "verse": "12:19",
+      "lineIndex": 73
+    },
+    {
+      "start": 206.459,
+      "end": 209.942,
+      "type": "line",
+      "text": "In that day a man shall cast his idols of silver,",
+      "verse": "12:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 210.122,
+      "end": 211.84,
+      "type": "line",
+      "text": "and his idols of gold,",
+      "verse": "12:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 212.02,
+      "end": 214.76,
+      "type": "line",
+      "text": "which he hath made for himself to worship,",
+      "verse": "12:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 214.94,
+      "end": 217.123,
+      "type": "line",
+      "text": "to the moles and to the bats;",
+      "verse": "12:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 217.803,
+      "end": 220.079,
+      "type": "line",
+      "text": "To go into the clefts of the rocks,",
+      "verse": "12:21",
+      "lineIndex": 78
+    },
+    {
+      "start": 220.259,
+      "end": 222.906,
+      "type": "line",
+      "text": "and into the tops of the ragged rocks,",
+      "verse": "12:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 223.086,
+      "end": 226.058,
+      "type": "line",
+      "text": "for the fear of the Lord shall come upon them",
+      "verse": "12:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 226.238,
+      "end": 229.071,
+      "type": "line",
+      "text": "and the majesty of his glory shall smite them,",
+      "verse": "12:21",
+      "lineIndex": 81
+    },
+    {
+      "start": 229.251,
+      "end": 232.084,
+      "type": "line",
+      "text": "when he ariseth to shake terribly the earth.",
+      "verse": "12:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 232.764,
+      "end": 236.015,
+      "type": "line",
+      "text": "Cease ye from man, whose breath is in his nostrils;",
+      "verse": "12:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 236.195,
+      "end": 238.471,
+      "type": "line",
+      "text": "for wherein is he to be accounted of?",
+      "verse": "12:22",
+      "lineIndex": 84
+    }
+  ]
+}

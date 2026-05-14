@@ -1,0 +1,752 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 13,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 242.015,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.477,
+      "type": "line",
+      "text": "For behold, the Lord, the Lord of Hosts, doth take away from Jerusalem, and from Judah, the stay and the staff,",
+      "verse": "13:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.657,
+      "end": 10.861,
+      "type": "line",
+      "text": "the whole staff of bread, and the whole stay of water\u2014",
+      "verse": "13:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 11.541,
+      "end": 14.142,
+      "type": "line",
+      "text": "The mighty man, and the man of war,",
+      "verse": "13:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.322,
+      "end": 16.69,
+      "type": "line",
+      "text": "the judge, and the prophet,",
+      "verse": "13:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 16.87,
+      "end": 19.146,
+      "type": "line",
+      "text": "and the prudent, and the ancient;",
+      "verse": "13:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.826,
+      "end": 22.798,
+      "type": "line",
+      "text": "The captain of fifty, and the honorable man,",
+      "verse": "13:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 22.978,
+      "end": 26.182,
+      "type": "line",
+      "text": "and the counselor, and the cunning artificer,",
+      "verse": "13:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 26.362,
+      "end": 28.22,
+      "type": "line",
+      "text": "and the eloquent orator.",
+      "verse": "13:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 28.9,
+      "end": 31.965,
+      "type": "line",
+      "text": "And I will give children unto them to be their princes,",
+      "verse": "13:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 32.145,
+      "end": 34.188,
+      "type": "line",
+      "text": "and babes shall rule over them.",
+      "verse": "13:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 34.868,
+      "end": 37.051,
+      "type": "line",
+      "text": "And the people shall be oppressed,",
+      "verse": "13:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 37.231,
+      "end": 38.764,
+      "type": "line",
+      "text": "every one by another,",
+      "verse": "13:5",
+      "lineIndex": 12
+    },
+    {
+      "start": 38.944,
+      "end": 41.173,
+      "type": "line",
+      "text": "and every one by his neighbor;",
+      "verse": "13:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 41.353,
+      "end": 44.929,
+      "type": "line",
+      "text": "the child shall behave himself proudly against the ancient,",
+      "verse": "13:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 45.109,
+      "end": 47.57,
+      "type": "line",
+      "text": "and the base against the honorable.",
+      "verse": "13:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 48.25,
+      "end": 53.126,
+      "type": "line",
+      "text": "When a man shall take hold of his brother of the house of his father,",
+      "verse": "13:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 53.306,
+      "end": 54.653,
+      "type": "line",
+      "text": "and shall say:",
+      "verse": "13:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 54.833,
+      "end": 57.666,
+      "type": "line",
+      "text": "Thou hast clothing, be thou our ruler,",
+      "verse": "13:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 57.846,
+      "end": 60.447,
+      "type": "line",
+      "text": "and let not this ruin come under thy hand\u2014",
+      "verse": "13:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 61.127,
+      "end": 63.403,
+      "type": "line",
+      "text": "In that day shall he swear, saying:",
+      "verse": "13:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 63.583,
+      "end": 65.255,
+      "type": "line",
+      "text": "I will not be a healer;",
+      "verse": "13:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 65.435,
+      "end": 68.361,
+      "type": "line",
+      "text": "for in my house there is neither bread nor clothing;",
+      "verse": "13:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 68.541,
+      "end": 71.002,
+      "type": "line",
+      "text": "make me not a ruler of the people.",
+      "verse": "13:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 71.682,
+      "end": 73.493,
+      "type": "line",
+      "text": "For Jerusalem is ruined,",
+      "verse": "13:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 73.673,
+      "end": 75.298,
+      "type": "line",
+      "text": "and Judah is fallen,",
+      "verse": "13:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 75.478,
+      "end": 81.237,
+      "type": "line",
+      "text": "because their tongues and their doings have been against the Lord, to provoke the eyes of his glory.",
+      "verse": "13:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 81.917,
+      "end": 85.446,
+      "type": "line",
+      "text": "The show of their countenance doth witness against them,",
+      "verse": "13:9",
+      "lineIndex": 28
+    },
+    {
+      "start": 85.626,
+      "end": 89.063,
+      "type": "line",
+      "text": "and doth declare their sin to be even as Sodom,",
+      "verse": "13:9",
+      "lineIndex": 29
+    },
+    {
+      "start": 89.243,
+      "end": 90.961,
+      "type": "line",
+      "text": "and they cannot hide it.",
+      "verse": "13:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 91.141,
+      "end": 92.674,
+      "type": "line",
+      "text": "Wo unto their souls,",
+      "verse": "13:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 92.854,
+      "end": 95.362,
+      "type": "line",
+      "text": "for they have rewarded evil unto themselves!",
+      "verse": "13:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 96.042,
+      "end": 99.386,
+      "type": "line",
+      "text": "Say unto the righteous that it is well with them;",
+      "verse": "13:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 99.566,
+      "end": 102.631,
+      "type": "line",
+      "text": "for they shall eat the fruit of their doings.",
+      "verse": "13:10",
+      "lineIndex": 34
+    },
+    {
+      "start": 103.311,
+      "end": 104.797,
+      "type": "line",
+      "text": "Wo unto the wicked,",
+      "verse": "13:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 104.977,
+      "end": 106.649,
+      "type": "line",
+      "text": "for they shall perish;",
+      "verse": "13:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 106.829,
+      "end": 109.755,
+      "type": "line",
+      "text": "for the reward of their hands shall be upon them!",
+      "verse": "13:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 110.435,
+      "end": 111.689,
+      "type": "line",
+      "text": "And my people,",
+      "verse": "13:12",
+      "lineIndex": 38
+    },
+    {
+      "start": 111.869,
+      "end": 114.005,
+      "type": "line",
+      "text": "children are their oppressors,",
+      "verse": "13:12",
+      "lineIndex": 39
+    },
+    {
+      "start": 114.185,
+      "end": 115.95,
+      "type": "line",
+      "text": "and women rule over them.",
+      "verse": "13:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 116.13,
+      "end": 117.245,
+      "type": "line",
+      "text": "O my people,",
+      "verse": "13:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 117.425,
+      "end": 119.654,
+      "type": "line",
+      "text": "they who lead thee cause thee to err",
+      "verse": "13:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 119.834,
+      "end": 122.11,
+      "type": "line",
+      "text": "and destroy the way of thy paths.",
+      "verse": "13:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 122.79,
+      "end": 124.926,
+      "type": "line",
+      "text": "The Lord standeth up to plead,",
+      "verse": "13:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 125.106,
+      "end": 127.242,
+      "type": "line",
+      "text": "and standeth to judge the people.",
+      "verse": "13:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 127.922,
+      "end": 133.495,
+      "type": "line",
+      "text": "The Lord will enter into judgment with the ancients of his people and the princes thereof;",
+      "verse": "13:14",
+      "lineIndex": 47
+    },
+    {
+      "start": 133.675,
+      "end": 135.951,
+      "type": "line",
+      "text": "for ye have eaten up the vineyard",
+      "verse": "13:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 136.131,
+      "end": 138.453,
+      "type": "line",
+      "text": "and the spoil of the poor in your houses.",
+      "verse": "13:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 139.133,
+      "end": 140.387,
+      "type": "line",
+      "text": "What mean ye?",
+      "verse": "13:15",
+      "lineIndex": 50
+    },
+    {
+      "start": 140.567,
+      "end": 142.657,
+      "type": "line",
+      "text": "Ye beat my people to pieces,",
+      "verse": "13:15",
+      "lineIndex": 51
+    },
+    {
+      "start": 142.837,
+      "end": 145.113,
+      "type": "line",
+      "text": "and grind the faces of the poor,",
+      "verse": "13:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 145.293,
+      "end": 147.29,
+      "type": "line",
+      "text": "saith the Lord God of Hosts.",
+      "verse": "13:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 147.97,
+      "end": 149.735,
+      "type": "line",
+      "text": "Moreover, the Lord saith:",
+      "verse": "13:16",
+      "lineIndex": 55
+    },
+    {
+      "start": 149.915,
+      "end": 152.376,
+      "type": "line",
+      "text": "Because the daughters of Zion are haughty,",
+      "verse": "13:16",
+      "lineIndex": 56
+    },
+    {
+      "start": 152.556,
+      "end": 156.178,
+      "type": "line",
+      "text": "and walk with stretched-forth necks and wanton eyes,",
+      "verse": "13:16",
+      "lineIndex": 57
+    },
+    {
+      "start": 156.358,
+      "end": 157.287,
+      "type": "line",
+      "text": "walking",
+      "verse": "13:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 157.467,
+      "end": 159.278,
+      "type": "line",
+      "text": "and mincing as they go,",
+      "verse": "13:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 159.458,
+      "end": 161.641,
+      "type": "line",
+      "text": "and making a tinkling with their feet\u2014",
+      "verse": "13:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 162.321,
+      "end": 167.847,
+      "type": "line",
+      "text": "Therefore the Lord will smite with a scab the crown of the head of the daughters of Zion,",
+      "verse": "13:17",
+      "lineIndex": 61
+    },
+    {
+      "start": 168.027,
+      "end": 170.721,
+      "type": "line",
+      "text": "and the Lord will discover their secret parts.",
+      "verse": "13:17",
+      "lineIndex": 62
+    },
+    {
+      "start": 171.401,
+      "end": 175.999,
+      "type": "line",
+      "text": "In that day the Lord will take away the bravery of their tinkling ornaments,",
+      "verse": "13:18",
+      "lineIndex": 63
+    },
+    {
+      "start": 176.179,
+      "end": 177.386,
+      "type": "line",
+      "text": "and cauls,",
+      "verse": "13:18",
+      "lineIndex": 64
+    },
+    {
+      "start": 177.566,
+      "end": 179.888,
+      "type": "line",
+      "text": "and round tires like the moon;",
+      "verse": "13:18",
+      "lineIndex": 65
+    },
+    {
+      "start": 180.568,
+      "end": 181.729,
+      "type": "line",
+      "text": "The chains,",
+      "verse": "13:19",
+      "lineIndex": 66
+    },
+    {
+      "start": 181.909,
+      "end": 183.395,
+      "type": "line",
+      "text": "and the bracelets,",
+      "verse": "13:19",
+      "lineIndex": 67
+    },
+    {
+      "start": 183.575,
+      "end": 184.968,
+      "type": "line",
+      "text": "and the mufflers;",
+      "verse": "13:19",
+      "lineIndex": 68
+    },
+    {
+      "start": 185.648,
+      "end": 186.809,
+      "type": "line",
+      "text": "The bonnets,",
+      "verse": "13:20",
+      "lineIndex": 69
+    },
+    {
+      "start": 186.989,
+      "end": 189.079,
+      "type": "line",
+      "text": "and the ornaments of the legs,",
+      "verse": "13:20",
+      "lineIndex": 70
+    },
+    {
+      "start": 189.259,
+      "end": 190.745,
+      "type": "line",
+      "text": "and the headbands,",
+      "verse": "13:20",
+      "lineIndex": 71
+    },
+    {
+      "start": 190.925,
+      "end": 192.365,
+      "type": "line",
+      "text": "and the tablets,",
+      "verse": "13:20",
+      "lineIndex": 72
+    },
+    {
+      "start": 192.545,
+      "end": 194.263,
+      "type": "line",
+      "text": "and the ear-rings;",
+      "verse": "13:20",
+      "lineIndex": 73
+    },
+    {
+      "start": 194.943,
+      "end": 196.243,
+      "type": "line",
+      "text": "The rings,",
+      "verse": "13:21",
+      "lineIndex": 74
+    },
+    {
+      "start": 196.423,
+      "end": 197.909,
+      "type": "line",
+      "text": "and nose jewels;",
+      "verse": "13:21",
+      "lineIndex": 75
+    },
+    {
+      "start": 198.589,
+      "end": 200.632,
+      "type": "line",
+      "text": "The changeable suits of apparel,",
+      "verse": "13:22",
+      "lineIndex": 76
+    },
+    {
+      "start": 200.812,
+      "end": 202.345,
+      "type": "line",
+      "text": "and the mantles,",
+      "verse": "13:22",
+      "lineIndex": 77
+    },
+    {
+      "start": 202.525,
+      "end": 203.825,
+      "type": "line",
+      "text": "and the wimples,",
+      "verse": "13:22",
+      "lineIndex": 78
+    },
+    {
+      "start": 204.005,
+      "end": 205.538,
+      "type": "line",
+      "text": "and the crisping-pins;",
+      "verse": "13:22",
+      "lineIndex": 79
+    },
+    {
+      "start": 206.218,
+      "end": 207.472,
+      "type": "line",
+      "text": "The glasses,",
+      "verse": "13:23",
+      "lineIndex": 80
+    },
+    {
+      "start": 207.652,
+      "end": 209.185,
+      "type": "line",
+      "text": "and the fine linen,",
+      "verse": "13:23",
+      "lineIndex": 81
+    },
+    {
+      "start": 209.365,
+      "end": 210.48,
+      "type": "line",
+      "text": "and hoods,",
+      "verse": "13:23",
+      "lineIndex": 82
+    },
+    {
+      "start": 210.66,
+      "end": 211.96,
+      "type": "line",
+      "text": "and the veils.",
+      "verse": "13:23",
+      "lineIndex": 83
+    },
+    {
+      "start": 212.64,
+      "end": 217.563,
+      "type": "line",
+      "text": "And it shall come to pass, instead of sweet smell there shall be stink;",
+      "verse": "13:24",
+      "lineIndex": 84
+    },
+    {
+      "start": 217.743,
+      "end": 220.297,
+      "type": "line",
+      "text": "and instead of a girdle, a rent;",
+      "verse": "13:24",
+      "lineIndex": 85
+    },
+    {
+      "start": 220.477,
+      "end": 223.078,
+      "type": "line",
+      "text": "and instead of well set hair, baldness;",
+      "verse": "13:24",
+      "lineIndex": 86
+    },
+    {
+      "start": 223.258,
+      "end": 226.509,
+      "type": "line",
+      "text": "and instead of a stomacher, a girding of sackcloth;",
+      "verse": "13:24",
+      "lineIndex": 87
+    },
+    {
+      "start": 226.689,
+      "end": 228.686,
+      "type": "line",
+      "text": "burning instead of beauty.",
+      "verse": "13:24",
+      "lineIndex": 88
+    },
+    {
+      "start": 229.366,
+      "end": 231.27,
+      "type": "line",
+      "text": "Thy men shall fall by the sword",
+      "verse": "13:25",
+      "lineIndex": 89
+    },
+    {
+      "start": 231.45,
+      "end": 233.261,
+      "type": "line",
+      "text": "and thy mighty in the war.",
+      "verse": "13:25",
+      "lineIndex": 90
+    },
+    {
+      "start": 233.941,
+      "end": 236.031,
+      "type": "line",
+      "text": "And her gates shall lament",
+      "verse": "13:26",
+      "lineIndex": 91
+    },
+    {
+      "start": 236.211,
+      "end": 237.418,
+      "type": "line",
+      "text": "and mourn;",
+      "verse": "13:26",
+      "lineIndex": 92
+    },
+    {
+      "start": 237.598,
+      "end": 239.456,
+      "type": "line",
+      "text": "and she shall be desolate,",
+      "verse": "13:26",
+      "lineIndex": 93
+    },
+    {
+      "start": 239.636,
+      "end": 241.354,
+      "type": "line",
+      "text": "and shall sit upon the ground.",
+      "verse": "13:26",
+      "lineIndex": 94
+    }
+  ]
+}
