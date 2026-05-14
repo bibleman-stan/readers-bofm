@@ -1,0 +1,1416 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 11,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 534.855,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.229,
+      "type": "line",
+      "text": "Now it was in the law of Mosiah",
+      "verse": "11:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.409,
+      "end": 4.917,
+      "type": "line",
+      "text": "that every man who was a judge of the law,",
+      "verse": "11:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.097,
+      "end": 7.744,
+      "type": "line",
+      "text": "or those who were appointed to be judges,",
+      "verse": "11:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 7.924,
+      "end": 16.423,
+      "type": "line",
+      "text": "should receive wages according to the time which they labored to judge those who were brought before them to be judged.",
+      "verse": "11:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.103,
+      "end": 19.1,
+      "type": "line",
+      "text": "Now if a man owed another,",
+      "verse": "11:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.28,
+      "end": 21.741,
+      "type": "line",
+      "text": "and he would not pay that which he did owe,",
+      "verse": "11:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 21.921,
+      "end": 24.243,
+      "type": "line",
+      "text": "he was complained of to the judge;",
+      "verse": "11:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 24.423,
+      "end": 26.838,
+      "type": "line",
+      "text": "and the judge executed authority,",
+      "verse": "11:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 27.018,
+      "end": 28.829,
+      "type": "line",
+      "text": "and sent forth officers",
+      "verse": "11:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 29.009,
+      "end": 31.331,
+      "type": "line",
+      "text": "that the man should be brought before him;",
+      "verse": "11:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 31.511,
+      "end": 33.926,
+      "type": "line",
+      "text": "and he judged the man according to the law",
+      "verse": "11:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 34.106,
+      "end": 37.635,
+      "type": "line",
+      "text": "and the evidences which were brought against him,",
+      "verse": "11:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 37.815,
+      "end": 41.67,
+      "type": "line",
+      "text": "and thus the man was compelled to pay that which he owed,",
+      "verse": "11:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 41.85,
+      "end": 43.197,
+      "type": "line",
+      "text": "or be stripped,",
+      "verse": "11:2",
+      "lineIndex": 14
+    },
+    {
+      "start": 43.377,
+      "end": 45.745,
+      "type": "line",
+      "text": "or be cast out from among the people",
+      "verse": "11:2",
+      "lineIndex": 15
+    },
+    {
+      "start": 45.925,
+      "end": 47.643,
+      "type": "line",
+      "text": "as a thief and a robber.",
+      "verse": "11:2",
+      "lineIndex": 16
+    },
+    {
+      "start": 48.323,
+      "end": 51.713,
+      "type": "line",
+      "text": "And the judge received for his wages according to his time\u2014",
+      "verse": "11:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 51.893,
+      "end": 57.419,
+      "type": "line",
+      "text": "a senine of gold for a day, or a senum of silver, which is equal to a senine of gold;",
+      "verse": "11:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 57.599,
+      "end": 60.2,
+      "type": "line",
+      "text": "and this is according to the law which was given.",
+      "verse": "11:3",
+      "lineIndex": 19
+    },
+    {
+      "start": 60.88,
+      "end": 66.731,
+      "type": "line",
+      "text": "Now these are the names of the different pieces of their gold, and of their silver, according to their value.",
+      "verse": "11:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 66.911,
+      "end": 69.326,
+      "type": "line",
+      "text": "And the names are given by the Nephites,",
+      "verse": "11:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 69.506,
+      "end": 74.939,
+      "type": "line",
+      "text": "for they did not reckon after the manner of the Jews who were at Jerusalem;",
+      "verse": "11:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 75.119,
+      "end": 78.277,
+      "type": "line",
+      "text": "neither did they measure after the manner of the Jews;",
+      "verse": "11:4",
+      "lineIndex": 23
+    },
+    {
+      "start": 78.457,
+      "end": 85.005,
+      "type": "line",
+      "text": "but they altered their reckoning and their measure, according to the minds and the circumstances of the people,",
+      "verse": "11:4",
+      "lineIndex": 24
+    },
+    {
+      "start": 85.185,
+      "end": 88.343,
+      "type": "line",
+      "text": "in every generation, until the reign of the judges,",
+      "verse": "11:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 88.523,
+      "end": 91.124,
+      "type": "line",
+      "text": "they having been established by king Mosiah.",
+      "verse": "11:4",
+      "lineIndex": 26
+    },
+    {
+      "start": 91.804,
+      "end": 93.197,
+      "type": "line",
+      "text": "Now the reckoning is thus\u2014",
+      "verse": "11:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 93.377,
+      "end": 94.863,
+      "type": "line",
+      "text": "a senine of gold,",
+      "verse": "11:5",
+      "lineIndex": 29
+    },
+    {
+      "start": 95.043,
+      "end": 96.436,
+      "type": "line",
+      "text": "a seon of gold,",
+      "verse": "11:5",
+      "lineIndex": 30
+    },
+    {
+      "start": 96.616,
+      "end": 98.102,
+      "type": "line",
+      "text": "a shum of gold,",
+      "verse": "11:5",
+      "lineIndex": 31
+    },
+    {
+      "start": 98.282,
+      "end": 99.815,
+      "type": "line",
+      "text": "and a limnah of gold.",
+      "verse": "11:5",
+      "lineIndex": 32
+    },
+    {
+      "start": 100.495,
+      "end": 101.888,
+      "type": "line",
+      "text": "A senum of silver,",
+      "verse": "11:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 102.068,
+      "end": 103.833,
+      "type": "line",
+      "text": "an amnor of silver,",
+      "verse": "11:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 104.013,
+      "end": 105.592,
+      "type": "line",
+      "text": "an ezrom of silver,",
+      "verse": "11:6",
+      "lineIndex": 35
+    },
+    {
+      "start": 105.772,
+      "end": 107.49,
+      "type": "line",
+      "text": "and an onti of silver.",
+      "verse": "11:6",
+      "lineIndex": 36
+    },
+    {
+      "start": 108.17,
+      "end": 111.699,
+      "type": "line",
+      "text": "A senum of silver was equal to a senine of gold,",
+      "verse": "11:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 111.879,
+      "end": 117.034,
+      "type": "line",
+      "text": "and either for a measure of barley, and also for a measure of every kind of grain.",
+      "verse": "11:7",
+      "lineIndex": 38
+    },
+    {
+      "start": 117.714,
+      "end": 121.94,
+      "type": "line",
+      "text": "Now the amount of a seon of gold was twice the value of a senine.",
+      "verse": "11:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 122.62,
+      "end": 125.824,
+      "type": "line",
+      "text": "And a shum of gold was twice the value of a seon.",
+      "verse": "11:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 126.504,
+      "end": 129.383,
+      "type": "line",
+      "text": "And a limnah of gold was the value of them all.",
+      "verse": "11:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 130.063,
+      "end": 133.407,
+      "type": "line",
+      "text": "And an amnor of silver was as great as two senums.",
+      "verse": "11:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 134.087,
+      "end": 137.616,
+      "type": "line",
+      "text": "And an ezrom of silver was as great as four senums.",
+      "verse": "11:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 138.296,
+      "end": 140.99,
+      "type": "line",
+      "text": "And an onti was as great as them all.",
+      "verse": "11:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 141.67,
+      "end": 145.199,
+      "type": "line",
+      "text": "Now this is the value of the lesser numbers of their reckoning\u2014",
+      "verse": "11:14",
+      "lineIndex": 46
+    },
+    {
+      "start": 145.879,
+      "end": 148.062,
+      "type": "line",
+      "text": "A shiblon is half of a senum;",
+      "verse": "11:15",
+      "lineIndex": 47
+    },
+    {
+      "start": 148.242,
+      "end": 151.353,
+      "type": "line",
+      "text": "therefore, a shiblon for half a measure of barley.",
+      "verse": "11:15",
+      "lineIndex": 48
+    },
+    {
+      "start": 152.033,
+      "end": 154.587,
+      "type": "line",
+      "text": "And a shiblum is a half of a shiblon.",
+      "verse": "11:16",
+      "lineIndex": 49
+    },
+    {
+      "start": 155.267,
+      "end": 157.821,
+      "type": "line",
+      "text": "And a leah is the half of a shiblum.",
+      "verse": "11:17",
+      "lineIndex": 50
+    },
+    {
+      "start": 158.501,
+      "end": 161.427,
+      "type": "line",
+      "text": "Now this is their number, according to their reckoning.",
+      "verse": "11:18",
+      "lineIndex": 51
+    },
+    {
+      "start": 162.107,
+      "end": 165.311,
+      "type": "line",
+      "text": "Now an antion of gold is equal to three shiblons.",
+      "verse": "11:19",
+      "lineIndex": 52
+    },
+    {
+      "start": 165.991,
+      "end": 168.963,
+      "type": "line",
+      "text": "Now, it was for the sole purpose to get gain,",
+      "verse": "11:20",
+      "lineIndex": 53
+    },
+    {
+      "start": 169.143,
+      "end": 172.115,
+      "type": "line",
+      "text": "because they received their wages according to their employ,",
+      "verse": "11:20",
+      "lineIndex": 54
+    },
+    {
+      "start": 172.295,
+      "end": 176.01,
+      "type": "line",
+      "text": "therefore, they did stir up the people to riotings,",
+      "verse": "11:20",
+      "lineIndex": 55
+    },
+    {
+      "start": 176.19,
+      "end": 179.301,
+      "type": "line",
+      "text": "and all manner of disturbances and wickedness,",
+      "verse": "11:20",
+      "lineIndex": 56
+    },
+    {
+      "start": 179.481,
+      "end": 182.175,
+      "type": "line",
+      "text": "that they might have more employ,",
+      "verse": "11:20",
+      "lineIndex": 57
+    },
+    {
+      "start": 182.355,
+      "end": 186.72,
+      "type": "line",
+      "text": "that they might get money according to the suits which were brought before them;",
+      "verse": "11:20",
+      "lineIndex": 58
+    },
+    {
+      "start": 186.9,
+      "end": 190.522,
+      "type": "line",
+      "text": "therefore they did stir up the people against Alma and Amulek.",
+      "verse": "11:20",
+      "lineIndex": 59
+    },
+    {
+      "start": 191.202,
+      "end": 194.36,
+      "type": "line",
+      "text": "And this Zeezrom began to question Amulek, saying:",
+      "verse": "11:21",
+      "lineIndex": 61
+    },
+    {
+      "start": 194.54,
+      "end": 197.744,
+      "type": "line",
+      "text": "Will ye answer me a few questions which I shall ask you?",
+      "verse": "11:21",
+      "lineIndex": 62
+    },
+    {
+      "start": 197.924,
+      "end": 202.15,
+      "type": "line",
+      "text": "Now Zeezrom was a man who was expert in the devices of the devil,",
+      "verse": "11:21",
+      "lineIndex": 63
+    },
+    {
+      "start": 202.33,
+      "end": 204.745,
+      "type": "line",
+      "text": "that he might destroy that which was good;",
+      "verse": "11:21",
+      "lineIndex": 64
+    },
+    {
+      "start": 204.925,
+      "end": 207.154,
+      "type": "line",
+      "text": "therefore, he said unto Amulek:",
+      "verse": "11:21",
+      "lineIndex": 65
+    },
+    {
+      "start": 207.334,
+      "end": 210.399,
+      "type": "line",
+      "text": "Will ye answer the questions which I shall put unto you?",
+      "verse": "11:21",
+      "lineIndex": 66
+    },
+    {
+      "start": 211.079,
+      "end": 212.797,
+      "type": "line",
+      "text": "And Amulek said unto him:",
+      "verse": "11:22",
+      "lineIndex": 67
+    },
+    {
+      "start": 212.977,
+      "end": 216.832,
+      "type": "line",
+      "text": "Yea, if it be according to the Spirit of the Lord, which is in me;",
+      "verse": "11:22",
+      "lineIndex": 68
+    },
+    {
+      "start": 217.012,
+      "end": 221.749,
+      "type": "line",
+      "text": "for I shall say nothing which is contrary to the Spirit of the Lord.",
+      "verse": "11:22",
+      "lineIndex": 69
+    },
+    {
+      "start": 221.929,
+      "end": 223.601,
+      "type": "line",
+      "text": "And Zeezrom said unto him:",
+      "verse": "11:22",
+      "lineIndex": 70
+    },
+    {
+      "start": 223.781,
+      "end": 226.149,
+      "type": "line",
+      "text": "Behold, here are six onties of silver,",
+      "verse": "11:22",
+      "lineIndex": 71
+    },
+    {
+      "start": 226.329,
+      "end": 228.79,
+      "type": "line",
+      "text": "and all these will I give thee",
+      "verse": "11:22",
+      "lineIndex": 72
+    },
+    {
+      "start": 228.97,
+      "end": 232.035,
+      "type": "line",
+      "text": "if thou wilt deny the existence of a Supreme Being.",
+      "verse": "11:22",
+      "lineIndex": 73
+    },
+    {
+      "start": 232.715,
+      "end": 234.294,
+      "type": "line",
+      "text": "Now Amulek said:",
+      "verse": "11:23",
+      "lineIndex": 74
+    },
+    {
+      "start": 234.474,
+      "end": 236.053,
+      "type": "line",
+      "text": "O thou child of hell,",
+      "verse": "11:23",
+      "lineIndex": 75
+    },
+    {
+      "start": 236.233,
+      "end": 237.58,
+      "type": "line",
+      "text": "why tempt ye me?",
+      "verse": "11:23",
+      "lineIndex": 76
+    },
+    {
+      "start": 237.76,
+      "end": 241.522,
+      "type": "line",
+      "text": "Knowest thou that the righteous yieldeth to no such temptations?",
+      "verse": "11:23",
+      "lineIndex": 77
+    },
+    {
+      "start": 242.202,
+      "end": 244.245,
+      "type": "line",
+      "text": "Believest thou that there is no God?",
+      "verse": "11:24",
+      "lineIndex": 78
+    },
+    {
+      "start": 244.425,
+      "end": 245.911,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "11:24",
+      "lineIndex": 79
+    },
+    {
+      "start": 246.091,
+      "end": 248.599,
+      "type": "line",
+      "text": "Nay, thou knowest that there is a God,",
+      "verse": "11:24",
+      "lineIndex": 80
+    },
+    {
+      "start": 248.779,
+      "end": 251.287,
+      "type": "line",
+      "text": "but thou lovest that lucre more than him.",
+      "verse": "11:24",
+      "lineIndex": 81
+    },
+    {
+      "start": 251.967,
+      "end": 254.707,
+      "type": "line",
+      "text": "And now thou hast lied before God unto me.",
+      "verse": "11:25",
+      "lineIndex": 82
+    },
+    {
+      "start": 254.887,
+      "end": 256.512,
+      "type": "line",
+      "text": "Thou saidst unto me\u2014",
+      "verse": "11:25",
+      "lineIndex": 83
+    },
+    {
+      "start": 256.692,
+      "end": 259.989,
+      "type": "line",
+      "text": "Behold these six onties, which are of great worth,",
+      "verse": "11:25",
+      "lineIndex": 84
+    },
+    {
+      "start": 260.169,
+      "end": 261.702,
+      "type": "line",
+      "text": "I will give unto thee\u2014",
+      "verse": "11:25",
+      "lineIndex": 85
+    },
+    {
+      "start": 261.882,
+      "end": 265.04,
+      "type": "line",
+      "text": "when thou hadst it in thy heart to retain them from me;",
+      "verse": "11:25",
+      "lineIndex": 86
+    },
+    {
+      "start": 265.22,
+      "end": 269.585,
+      "type": "line",
+      "text": "and it was only thy desire that I should deny the true and living God,",
+      "verse": "11:25",
+      "lineIndex": 87
+    },
+    {
+      "start": 269.765,
+      "end": 272.18,
+      "type": "line",
+      "text": "that thou mightest have cause to destroy me.",
+      "verse": "11:25",
+      "lineIndex": 88
+    },
+    {
+      "start": 272.36,
+      "end": 276.029,
+      "type": "line",
+      "text": "And now behold, for this great evil thou shalt have thy reward.",
+      "verse": "11:25",
+      "lineIndex": 89
+    },
+    {
+      "start": 276.709,
+      "end": 278.381,
+      "type": "line",
+      "text": "And Zeezrom said unto him:",
+      "verse": "11:26",
+      "lineIndex": 91
+    },
+    {
+      "start": 278.561,
+      "end": 281.069,
+      "type": "line",
+      "text": "Thou sayest there is a true and living God?",
+      "verse": "11:26",
+      "lineIndex": 92
+    },
+    {
+      "start": 281.749,
+      "end": 283.374,
+      "type": "line",
+      "text": "And Amulek said:",
+      "verse": "11:27",
+      "lineIndex": 93
+    },
+    {
+      "start": 283.554,
+      "end": 286.201,
+      "type": "line",
+      "text": "Yea, there is a true and living God.",
+      "verse": "11:27",
+      "lineIndex": 94
+    },
+    {
+      "start": 286.881,
+      "end": 288.321,
+      "type": "line",
+      "text": "Now Zeezrom said:",
+      "verse": "11:28",
+      "lineIndex": 95
+    },
+    {
+      "start": 288.501,
+      "end": 290.266,
+      "type": "line",
+      "text": "Is there more than one God?",
+      "verse": "11:28",
+      "lineIndex": 96
+    },
+    {
+      "start": 290.946,
+      "end": 292.711,
+      "type": "line",
+      "text": "And he answered, No.",
+      "verse": "11:29",
+      "lineIndex": 97
+    },
+    {
+      "start": 293.391,
+      "end": 295.806,
+      "type": "line",
+      "text": "Now Zeezrom said unto him again:",
+      "verse": "11:30",
+      "lineIndex": 98
+    },
+    {
+      "start": 295.986,
+      "end": 297.89,
+      "type": "line",
+      "text": "How knowest thou these things?",
+      "verse": "11:30",
+      "lineIndex": 99
+    },
+    {
+      "start": 298.57,
+      "end": 299.87,
+      "type": "line",
+      "text": "And he said:",
+      "verse": "11:31",
+      "lineIndex": 100
+    },
+    {
+      "start": 300.05,
+      "end": 302.511,
+      "type": "line",
+      "text": "An angel hath made them known unto me.",
+      "verse": "11:31",
+      "lineIndex": 101
+    },
+    {
+      "start": 303.191,
+      "end": 304.863,
+      "type": "line",
+      "text": "And Zeezrom said again:",
+      "verse": "11:32",
+      "lineIndex": 102
+    },
+    {
+      "start": 305.043,
+      "end": 306.808,
+      "type": "line",
+      "text": "Who is he that shall come?",
+      "verse": "11:32",
+      "lineIndex": 103
+    },
+    {
+      "start": 306.988,
+      "end": 308.474,
+      "type": "line",
+      "text": "Is it the Son of God?",
+      "verse": "11:32",
+      "lineIndex": 104
+    },
+    {
+      "start": 309.154,
+      "end": 310.826,
+      "type": "line",
+      "text": "And he said unto him, Yea.",
+      "verse": "11:33",
+      "lineIndex": 105
+    },
+    {
+      "start": 311.506,
+      "end": 313.178,
+      "type": "line",
+      "text": "And Zeezrom said again:",
+      "verse": "11:34",
+      "lineIndex": 106
+    },
+    {
+      "start": 313.358,
+      "end": 315.726,
+      "type": "line",
+      "text": "Shall he save his people in their sins?",
+      "verse": "11:34",
+      "lineIndex": 107
+    },
+    {
+      "start": 315.906,
+      "end": 318.321,
+      "type": "line",
+      "text": "And Amulek answered and said unto him:",
+      "verse": "11:34",
+      "lineIndex": 108
+    },
+    {
+      "start": 318.501,
+      "end": 320.591,
+      "type": "line",
+      "text": "I say unto you he shall not,",
+      "verse": "11:34",
+      "lineIndex": 109
+    },
+    {
+      "start": 320.771,
+      "end": 323.743,
+      "type": "line",
+      "text": "for it is impossible for him to deny his word.",
+      "verse": "11:34",
+      "lineIndex": 110
+    },
+    {
+      "start": 324.423,
+      "end": 326.606,
+      "type": "line",
+      "text": "Now Zeezrom said unto the people:",
+      "verse": "11:35",
+      "lineIndex": 111
+    },
+    {
+      "start": 326.786,
+      "end": 328.829,
+      "type": "line",
+      "text": "See that ye remember these things;",
+      "verse": "11:35",
+      "lineIndex": 112
+    },
+    {
+      "start": 329.009,
+      "end": 331.145,
+      "type": "line",
+      "text": "for he said there is but one God;",
+      "verse": "11:35",
+      "lineIndex": 113
+    },
+    {
+      "start": 331.325,
+      "end": 334.111,
+      "type": "line",
+      "text": "yet he saith that the Son of God shall come,",
+      "verse": "11:35",
+      "lineIndex": 114
+    },
+    {
+      "start": 334.291,
+      "end": 336.52,
+      "type": "line",
+      "text": "but he shall not save his people\u2014",
+      "verse": "11:35",
+      "lineIndex": 115
+    },
+    {
+      "start": 336.7,
+      "end": 338.976,
+      "type": "line",
+      "text": "as though he had authority to command God.",
+      "verse": "11:35",
+      "lineIndex": 116
+    },
+    {
+      "start": 339.656,
+      "end": 342.117,
+      "type": "line",
+      "text": "Now Amulek saith again unto him:",
+      "verse": "11:36",
+      "lineIndex": 117
+    },
+    {
+      "start": 342.297,
+      "end": 344.015,
+      "type": "line",
+      "text": "Behold thou hast lied,",
+      "verse": "11:36",
+      "lineIndex": 118
+    },
+    {
+      "start": 344.195,
+      "end": 345.588,
+      "type": "line",
+      "text": "for thou sayest",
+      "verse": "11:36",
+      "lineIndex": 119
+    },
+    {
+      "start": 345.768,
+      "end": 349.205,
+      "type": "line",
+      "text": "that I spake as though I had authority to command God",
+      "verse": "11:36",
+      "lineIndex": 120
+    },
+    {
+      "start": 349.385,
+      "end": 352.543,
+      "type": "line",
+      "text": "because I said he shall not save his people in their sins.",
+      "verse": "11:36",
+      "lineIndex": 121
+    },
+    {
+      "start": 353.223,
+      "end": 354.988,
+      "type": "line",
+      "text": "And I say unto you again",
+      "verse": "11:37",
+      "lineIndex": 123
+    },
+    {
+      "start": 355.168,
+      "end": 357.629,
+      "type": "line",
+      "text": "that he cannot save them in their sins;",
+      "verse": "11:37",
+      "lineIndex": 124
+    },
+    {
+      "start": 357.809,
+      "end": 359.759,
+      "type": "line",
+      "text": "for I cannot deny his word,",
+      "verse": "11:37",
+      "lineIndex": 125
+    },
+    {
+      "start": 359.939,
+      "end": 364.258,
+      "type": "line",
+      "text": "and he hath said that no unclean thing can inherit the kingdom of heaven;",
+      "verse": "11:37",
+      "lineIndex": 126
+    },
+    {
+      "start": 364.438,
+      "end": 366.899,
+      "type": "line",
+      "text": "therefore, how can ye be saved,",
+      "verse": "11:37",
+      "lineIndex": 127
+    },
+    {
+      "start": 367.079,
+      "end": 369.401,
+      "type": "line",
+      "text": "except ye inherit the kingdom of heaven?",
+      "verse": "11:37",
+      "lineIndex": 128
+    },
+    {
+      "start": 369.581,
+      "end": 372.042,
+      "type": "line",
+      "text": "Therefore, ye cannot be saved in your sins.",
+      "verse": "11:37",
+      "lineIndex": 129
+    },
+    {
+      "start": 372.722,
+      "end": 375.09,
+      "type": "line",
+      "text": "Now Zeezrom saith again unto him:",
+      "verse": "11:38",
+      "lineIndex": 130
+    },
+    {
+      "start": 375.27,
+      "end": 377.731,
+      "type": "line",
+      "text": "Is the Son of God the very Eternal Father?",
+      "verse": "11:38",
+      "lineIndex": 131
+    },
+    {
+      "start": 378.411,
+      "end": 380.129,
+      "type": "line",
+      "text": "And Amulek said unto him:",
+      "verse": "11:39",
+      "lineIndex": 132
+    },
+    {
+      "start": 380.309,
+      "end": 383.978,
+      "type": "line",
+      "text": "Yea, he is the very Eternal Father of heaven and of earth,",
+      "verse": "11:39",
+      "lineIndex": 133
+    },
+    {
+      "start": 384.158,
+      "end": 386.48,
+      "type": "line",
+      "text": "and all things which in them are;",
+      "verse": "11:39",
+      "lineIndex": 134
+    },
+    {
+      "start": 386.66,
+      "end": 389.121,
+      "type": "line",
+      "text": "he is the beginning and the end,",
+      "verse": "11:39",
+      "lineIndex": 135
+    },
+    {
+      "start": 389.301,
+      "end": 391.112,
+      "type": "line",
+      "text": "the first and the last;",
+      "verse": "11:39",
+      "lineIndex": 136
+    },
+    {
+      "start": 391.792,
+      "end": 395.043,
+      "type": "line",
+      "text": "And he shall come into the world to redeem his people;",
+      "verse": "11:40",
+      "lineIndex": 137
+    },
+    {
+      "start": 395.223,
+      "end": 399.635,
+      "type": "line",
+      "text": "and he shall take upon him the transgressions of those who believe on his name;",
+      "verse": "11:40",
+      "lineIndex": 138
+    },
+    {
+      "start": 399.815,
+      "end": 402.88,
+      "type": "line",
+      "text": "and these are they that shall have eternal life,",
+      "verse": "11:40",
+      "lineIndex": 139
+    },
+    {
+      "start": 403.06,
+      "end": 405.196,
+      "type": "line",
+      "text": "and salvation cometh to none else.",
+      "verse": "11:40",
+      "lineIndex": 140
+    },
+    {
+      "start": 405.876,
+      "end": 410.381,
+      "type": "line",
+      "text": "Therefore the wicked remain as though there had been no redemption made,",
+      "verse": "11:41",
+      "lineIndex": 142
+    },
+    {
+      "start": 410.561,
+      "end": 413.44,
+      "type": "line",
+      "text": "except it be the loosing of the bands of death;",
+      "verse": "11:41",
+      "lineIndex": 143
+    },
+    {
+      "start": 413.62,
+      "end": 415.756,
+      "type": "line",
+      "text": "for behold, the day cometh",
+      "verse": "11:41",
+      "lineIndex": 144
+    },
+    {
+      "start": 415.936,
+      "end": 418.304,
+      "type": "line",
+      "text": "that all shall rise from the dead",
+      "verse": "11:41",
+      "lineIndex": 145
+    },
+    {
+      "start": 418.484,
+      "end": 420.249,
+      "type": "line",
+      "text": "and stand before God,",
+      "verse": "11:41",
+      "lineIndex": 146
+    },
+    {
+      "start": 420.429,
+      "end": 422.751,
+      "type": "line",
+      "text": "and be judged according to their works.",
+      "verse": "11:41",
+      "lineIndex": 147
+    },
+    {
+      "start": 423.431,
+      "end": 426.96,
+      "type": "line",
+      "text": "Now, there is a death which is called a temporal death;",
+      "verse": "11:42",
+      "lineIndex": 148
+    },
+    {
+      "start": 427.14,
+      "end": 431.459,
+      "type": "line",
+      "text": "and the death of Christ shall loose the bands of this temporal death,",
+      "verse": "11:42",
+      "lineIndex": 149
+    },
+    {
+      "start": 431.639,
+      "end": 435.076,
+      "type": "line",
+      "text": "that all shall be raised from this temporal death.",
+      "verse": "11:42",
+      "lineIndex": 150
+    },
+    {
+      "start": 435.756,
+      "end": 440.4,
+      "type": "line",
+      "text": "The spirit and the body shall be reunited again in its perfect form;",
+      "verse": "11:43",
+      "lineIndex": 151
+    },
+    {
+      "start": 440.58,
+      "end": 443.831,
+      "type": "line",
+      "text": "both limb and joint shall be restored to its proper frame,",
+      "verse": "11:43",
+      "lineIndex": 152
+    },
+    {
+      "start": 444.011,
+      "end": 446.194,
+      "type": "line",
+      "text": "even as we now are at this time;",
+      "verse": "11:43",
+      "lineIndex": 153
+    },
+    {
+      "start": 446.374,
+      "end": 450.972,
+      "type": "line",
+      "text": "and we shall be brought to stand before God, knowing even as we know now,",
+      "verse": "11:43",
+      "lineIndex": 154
+    },
+    {
+      "start": 451.152,
+      "end": 454.496,
+      "type": "line",
+      "text": "and have a bright recollection of all our guilt.",
+      "verse": "11:43",
+      "lineIndex": 155
+    },
+    {
+      "start": 455.176,
+      "end": 458.241,
+      "type": "line",
+      "text": "Now, this restoration shall come to all,",
+      "verse": "11:44",
+      "lineIndex": 156
+    },
+    {
+      "start": 458.421,
+      "end": 460.186,
+      "type": "line",
+      "text": "both old and young,",
+      "verse": "11:44",
+      "lineIndex": 157
+    },
+    {
+      "start": 460.366,
+      "end": 462.131,
+      "type": "line",
+      "text": "both bond and free,",
+      "verse": "11:44",
+      "lineIndex": 158
+    },
+    {
+      "start": 462.311,
+      "end": 463.983,
+      "type": "line",
+      "text": "both male and female,",
+      "verse": "11:44",
+      "lineIndex": 159
+    },
+    {
+      "start": 464.163,
+      "end": 466.299,
+      "type": "line",
+      "text": "both the wicked and the righteous;",
+      "verse": "11:44",
+      "lineIndex": 160
+    },
+    {
+      "start": 466.479,
+      "end": 470.473,
+      "type": "line",
+      "text": "and even there shall not so much as a hair of their heads be lost;",
+      "verse": "11:44",
+      "lineIndex": 161
+    },
+    {
+      "start": 470.653,
+      "end": 475.065,
+      "type": "line",
+      "text": "but every thing shall be restored to its perfect frame, as it is now,",
+      "verse": "11:44",
+      "lineIndex": 162
+    },
+    {
+      "start": 475.245,
+      "end": 476.545,
+      "type": "line",
+      "text": "or in the body,",
+      "verse": "11:44",
+      "lineIndex": 163
+    },
+    {
+      "start": 476.725,
+      "end": 482.855,
+      "type": "line",
+      "text": "and shall be brought and be arraigned before the bar of Christ the Son, and God the Father, and the Holy Spirit,",
+      "verse": "11:44",
+      "lineIndex": 164
+    },
+    {
+      "start": 483.035,
+      "end": 484.846,
+      "type": "line",
+      "text": "which is one Eternal God,",
+      "verse": "11:44",
+      "lineIndex": 165
+    },
+    {
+      "start": 485.026,
+      "end": 487.394,
+      "type": "line",
+      "text": "to be judged according to their works,",
+      "verse": "11:44",
+      "lineIndex": 166
+    },
+    {
+      "start": 487.574,
+      "end": 490.175,
+      "type": "line",
+      "text": "whether they be good or whether they be evil.",
+      "verse": "11:44",
+      "lineIndex": 167
+    },
+    {
+      "start": 490.855,
+      "end": 495.871,
+      "type": "line",
+      "text": "Now, behold, I have spoken unto you concerning the death of the mortal body,",
+      "verse": "11:45",
+      "lineIndex": 168
+    },
+    {
+      "start": 496.051,
+      "end": 499.395,
+      "type": "line",
+      "text": "and also concerning the resurrection of the mortal body.",
+      "verse": "11:45",
+      "lineIndex": 169
+    },
+    {
+      "start": 499.575,
+      "end": 504.312,
+      "type": "line",
+      "text": "I say unto you that this mortal body is raised to an immortal body,",
+      "verse": "11:45",
+      "lineIndex": 170
+    },
+    {
+      "start": 504.492,
+      "end": 508.347,
+      "type": "line",
+      "text": "that is from death, even from the first death unto life",
+      "verse": "11:45",
+      "lineIndex": 171
+    },
+    {
+      "start": 508.527,
+      "end": 510.245,
+      "type": "line",
+      "text": "that they can die no more;",
+      "verse": "11:45",
+      "lineIndex": 172
+    },
+    {
+      "start": 510.425,
+      "end": 514.465,
+      "type": "line",
+      "text": "their spirits uniting with their bodies, never to be divided;",
+      "verse": "11:45",
+      "lineIndex": 173
+    },
+    {
+      "start": 514.645,
+      "end": 518.36,
+      "type": "line",
+      "text": "thus the whole becoming spiritual and immortal,",
+      "verse": "11:45",
+      "lineIndex": 174
+    },
+    {
+      "start": 518.54,
+      "end": 521.094,
+      "type": "line",
+      "text": "that they can no more see corruption.",
+      "verse": "11:45",
+      "lineIndex": 175
+    },
+    {
+      "start": 521.774,
+      "end": 524.375,
+      "type": "line",
+      "text": "Now, when Amulek had finished these words",
+      "verse": "11:46",
+      "lineIndex": 176
+    },
+    {
+      "start": 524.555,
+      "end": 527.202,
+      "type": "line",
+      "text": "the people began again to be astonished,",
+      "verse": "11:46",
+      "lineIndex": 177
+    },
+    {
+      "start": 527.382,
+      "end": 529.658,
+      "type": "line",
+      "text": "and also Zeezrom began to tremble.",
+      "verse": "11:46",
+      "lineIndex": 178
+    },
+    {
+      "start": 529.838,
+      "end": 532.16,
+      "type": "line",
+      "text": "And thus ended the words of Amulek,",
+      "verse": "11:46",
+      "lineIndex": 179
+    },
+    {
+      "start": 532.34,
+      "end": 534.198,
+      "type": "line",
+      "text": "or this is all that I have written.",
+      "verse": "11:46",
+      "lineIndex": 180
+    }
+  ]
+}
