@@ -1,0 +1,984 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 24,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 332.058,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.229,
+      "type": "line",
+      "text": "For the Lord will have mercy on Jacob,",
+      "verse": "24:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.409,
+      "end": 4.406,
+      "type": "line",
+      "text": "and will yet choose Israel,",
+      "verse": "24:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 4.586,
+      "end": 6.676,
+      "type": "line",
+      "text": "and set them in their own land;",
+      "verse": "24:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 6.856,
+      "end": 9.317,
+      "type": "line",
+      "text": "and the strangers shall be joined with them,",
+      "verse": "24:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 9.497,
+      "end": 11.958,
+      "type": "line",
+      "text": "and they shall cleave to the house of Jacob.",
+      "verse": "24:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 12.638,
+      "end": 16.307,
+      "type": "line",
+      "text": "And the people shall take them and bring them to their place;",
+      "verse": "24:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 16.487,
+      "end": 18.995,
+      "type": "line",
+      "text": "yea, from far unto the ends of the earth;",
+      "verse": "24:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 19.175,
+      "end": 21.776,
+      "type": "line",
+      "text": "and they shall return to their lands of promise.",
+      "verse": "24:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 21.956,
+      "end": 24.789,
+      "type": "line",
+      "text": "And the house of Israel shall possess them,",
+      "verse": "24:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 24.969,
+      "end": 28.591,
+      "type": "line",
+      "text": "and the land of the Lord shall be for servants and handmaids;",
+      "verse": "24:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 28.771,
+      "end": 31.0,
+      "type": "line",
+      "text": "and they shall take them captives",
+      "verse": "24:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 31.18,
+      "end": 33.27,
+      "type": "line",
+      "text": "unto whom they were captives;",
+      "verse": "24:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 33.45,
+      "end": 36.051,
+      "type": "line",
+      "text": "and they shall rule over their oppressors.",
+      "verse": "24:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 36.731,
+      "end": 39.053,
+      "type": "line",
+      "text": "And it shall come to pass in that day",
+      "verse": "24:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 39.233,
+      "end": 41.509,
+      "type": "line",
+      "text": "that the Lord shall give thee rest,",
+      "verse": "24:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 41.689,
+      "end": 43.129,
+      "type": "line",
+      "text": "from thy sorrow,",
+      "verse": "24:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 43.309,
+      "end": 44.888,
+      "type": "line",
+      "text": "and from thy fear,",
+      "verse": "24:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 45.068,
+      "end": 48.644,
+      "type": "line",
+      "text": "and from the hard bondage wherein thou wast made to serve.",
+      "verse": "24:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 49.324,
+      "end": 51.785,
+      "type": "line",
+      "text": "And it shall come to pass in that day,",
+      "verse": "24:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 51.965,
+      "end": 56.47,
+      "type": "line",
+      "text": "that thou shalt take up this proverb against the king of Babylon, and say:",
+      "verse": "24:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 56.65,
+      "end": 58.647,
+      "type": "line",
+      "text": "How hath the oppressor ceased,",
+      "verse": "24:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 58.827,
+      "end": 60.777,
+      "type": "line",
+      "text": "the golden city ceased!",
+      "verse": "24:4",
+      "lineIndex": 23
+    },
+    {
+      "start": 61.457,
+      "end": 64.383,
+      "type": "line",
+      "text": "The Lord hath broken the staff of the wicked,",
+      "verse": "24:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 64.563,
+      "end": 66.374,
+      "type": "line",
+      "text": "the scepters of the rulers.",
+      "verse": "24:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 67.054,
+      "end": 70.583,
+      "type": "line",
+      "text": "He who smote the people in wrath with a continual stroke,",
+      "verse": "24:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 70.763,
+      "end": 74.014,
+      "type": "line",
+      "text": "he that ruled the nations in anger, is persecuted,",
+      "verse": "24:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 74.194,
+      "end": 75.773,
+      "type": "line",
+      "text": "and none hindereth.",
+      "verse": "24:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 76.453,
+      "end": 79.193,
+      "type": "line",
+      "text": "The whole earth is at rest, and is quiet;",
+      "verse": "24:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 79.373,
+      "end": 81.556,
+      "type": "line",
+      "text": "they break forth into singing.",
+      "verse": "24:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 82.236,
+      "end": 84.512,
+      "type": "line",
+      "text": "Yea, the fir trees rejoice at thee,",
+      "verse": "24:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 84.692,
+      "end": 87.339,
+      "type": "line",
+      "text": "and also the cedars of Lebanon, saying:",
+      "verse": "24:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 87.519,
+      "end": 91.002,
+      "type": "line",
+      "text": "Since thou art laid down no feller is come up against us.",
+      "verse": "24:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 91.682,
+      "end": 95.676,
+      "type": "line",
+      "text": "Hell from beneath is moved for thee to meet thee at thy coming;",
+      "verse": "24:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 95.856,
+      "end": 98.178,
+      "type": "line",
+      "text": "it stirreth up the dead for thee,",
+      "verse": "24:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 98.358,
+      "end": 100.866,
+      "type": "line",
+      "text": "even all the chief ones of the earth;",
+      "verse": "24:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 101.046,
+      "end": 105.04,
+      "type": "line",
+      "text": "it hath raised up from their thrones all the kings of the nations.",
+      "verse": "24:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 105.72,
+      "end": 108.367,
+      "type": "line",
+      "text": "All they shall speak and say unto thee:",
+      "verse": "24:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 108.547,
+      "end": 111.008,
+      "type": "line",
+      "text": "Art thou also become weak as we?",
+      "verse": "24:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 111.188,
+      "end": 113.138,
+      "type": "line",
+      "text": "Art thou become like unto us?",
+      "verse": "24:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 113.818,
+      "end": 116.14,
+      "type": "line",
+      "text": "Thy pomp is brought down to the grave;",
+      "verse": "24:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 116.32,
+      "end": 118.503,
+      "type": "line",
+      "text": "the noise of thy viols is not heard;",
+      "verse": "24:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 118.683,
+      "end": 120.866,
+      "type": "line",
+      "text": "the worm is spread under thee,",
+      "verse": "24:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 121.046,
+      "end": 122.764,
+      "type": "line",
+      "text": "and the worms cover thee.",
+      "verse": "24:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 123.444,
+      "end": 125.72,
+      "type": "line",
+      "text": "How art thou fallen from heaven,",
+      "verse": "24:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 125.9,
+      "end": 127.897,
+      "type": "line",
+      "text": "O Lucifer, son of the morning!",
+      "verse": "24:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 128.077,
+      "end": 130.353,
+      "type": "line",
+      "text": "Art thou cut down to the ground,",
+      "verse": "24:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 130.533,
+      "end": 132.483,
+      "type": "line",
+      "text": "which did weaken the nations!",
+      "verse": "24:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 133.163,
+      "end": 135.485,
+      "type": "line",
+      "text": "For thou hast said in thy heart:",
+      "verse": "24:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 135.665,
+      "end": 137.476,
+      "type": "line",
+      "text": "I will ascend into heaven,",
+      "verse": "24:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 137.656,
+      "end": 140.767,
+      "type": "line",
+      "text": "I will exalt my throne above the stars of God;",
+      "verse": "24:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 140.947,
+      "end": 145.916,
+      "type": "line",
+      "text": "I will sit also upon the mount of the congregation, in the sides of the north;",
+      "verse": "24:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 146.596,
+      "end": 149.197,
+      "type": "line",
+      "text": "I will ascend above the heights of the clouds;",
+      "verse": "24:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 149.377,
+      "end": 151.095,
+      "type": "line",
+      "text": "I will be like the Most High.",
+      "verse": "24:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 151.775,
+      "end": 154.143,
+      "type": "line",
+      "text": "Yet thou shalt be brought down to hell,",
+      "verse": "24:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 154.323,
+      "end": 155.995,
+      "type": "line",
+      "text": "to the sides of the pit.",
+      "verse": "24:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 156.675,
+      "end": 159.694,
+      "type": "line",
+      "text": "They that see thee shall narrowly look upon thee,",
+      "verse": "24:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 159.874,
+      "end": 161.592,
+      "type": "line",
+      "text": "and shall consider thee,",
+      "verse": "24:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 161.772,
+      "end": 163.119,
+      "type": "line",
+      "text": "and shall say:",
+      "verse": "24:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 163.299,
+      "end": 165.9,
+      "type": "line",
+      "text": "Is this the man that made the earth to tremble,",
+      "verse": "24:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 166.08,
+      "end": 167.845,
+      "type": "line",
+      "text": "that did shake kingdoms?",
+      "verse": "24:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 168.525,
+      "end": 171.126,
+      "type": "line",
+      "text": "And made the world as a wilderness,",
+      "verse": "24:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 171.306,
+      "end": 173.349,
+      "type": "line",
+      "text": "and destroyed the cities thereof,",
+      "verse": "24:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 173.529,
+      "end": 176.548,
+      "type": "line",
+      "text": "and opened not the house of his prisoners?",
+      "verse": "24:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 177.228,
+      "end": 179.364,
+      "type": "line",
+      "text": "All the kings of the nations,",
+      "verse": "24:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 179.544,
+      "end": 181.727,
+      "type": "line",
+      "text": "yea, all of them, lie in glory,",
+      "verse": "24:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 181.907,
+      "end": 184.368,
+      "type": "line",
+      "text": "every one of them in his own house.",
+      "verse": "24:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 185.048,
+      "end": 189.228,
+      "type": "line",
+      "text": "But thou art cast out of thy grave like an abominable branch,",
+      "verse": "24:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 189.408,
+      "end": 191.869,
+      "type": "line",
+      "text": "and the remnant of those that are slain,",
+      "verse": "24:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 192.049,
+      "end": 194.185,
+      "type": "line",
+      "text": "thrust through with a sword,",
+      "verse": "24:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 194.365,
+      "end": 196.966,
+      "type": "line",
+      "text": "that go down to the stones of the pit;",
+      "verse": "24:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 197.146,
+      "end": 199.561,
+      "type": "line",
+      "text": "as a carcass trodden under feet.",
+      "verse": "24:19",
+      "lineIndex": 73
+    },
+    {
+      "start": 200.241,
+      "end": 203.12,
+      "type": "line",
+      "text": "Thou shalt not be joined with them in burial,",
+      "verse": "24:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 203.3,
+      "end": 206.829,
+      "type": "line",
+      "text": "because thou hast destroyed thy land and slain thy people;",
+      "verse": "24:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 207.009,
+      "end": 209.842,
+      "type": "line",
+      "text": "the seed of evil-doers shall never be renowned.",
+      "verse": "24:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 210.522,
+      "end": 212.798,
+      "type": "line",
+      "text": "Prepare slaughter for his children",
+      "verse": "24:21",
+      "lineIndex": 78
+    },
+    {
+      "start": 212.978,
+      "end": 215.346,
+      "type": "line",
+      "text": "for the iniquities of their fathers,",
+      "verse": "24:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 215.526,
+      "end": 218.452,
+      "type": "line",
+      "text": "that they do not rise, nor possess the land,",
+      "verse": "24:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 218.632,
+      "end": 221.186,
+      "type": "line",
+      "text": "nor fill the face of the world with cities.",
+      "verse": "24:21",
+      "lineIndex": 81
+    },
+    {
+      "start": 221.866,
+      "end": 223.909,
+      "type": "line",
+      "text": "For I will rise up against them,",
+      "verse": "24:22",
+      "lineIndex": 82
+    },
+    {
+      "start": 224.089,
+      "end": 225.714,
+      "type": "line",
+      "text": "saith the Lord of Hosts,",
+      "verse": "24:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 225.894,
+      "end": 229.563,
+      "type": "line",
+      "text": "and cut off from Babylon the name, and remnant,",
+      "verse": "24:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 229.743,
+      "end": 231.647,
+      "type": "line",
+      "text": "and son, and nephew,",
+      "verse": "24:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 231.827,
+      "end": 233.127,
+      "type": "line",
+      "text": "saith the Lord.",
+      "verse": "24:22",
+      "lineIndex": 86
+    },
+    {
+      "start": 233.807,
+      "end": 237.058,
+      "type": "line",
+      "text": "I will also make it a possession for the bittern,",
+      "verse": "24:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 237.238,
+      "end": 238.817,
+      "type": "line",
+      "text": "and pools of water;",
+      "verse": "24:23",
+      "lineIndex": 88
+    },
+    {
+      "start": 238.997,
+      "end": 242.016,
+      "type": "line",
+      "text": "and I will sweep it with the besom of destruction,",
+      "verse": "24:23",
+      "lineIndex": 89
+    },
+    {
+      "start": 242.196,
+      "end": 243.961,
+      "type": "line",
+      "text": "saith the Lord of Hosts.",
+      "verse": "24:23",
+      "lineIndex": 90
+    },
+    {
+      "start": 244.641,
+      "end": 246.963,
+      "type": "line",
+      "text": "The Lord of Hosts hath sworn, saying:",
+      "verse": "24:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 247.143,
+      "end": 249.001,
+      "type": "line",
+      "text": "Surely as I have thought,",
+      "verse": "24:24",
+      "lineIndex": 93
+    },
+    {
+      "start": 249.181,
+      "end": 250.899,
+      "type": "line",
+      "text": "so shall it come to pass;",
+      "verse": "24:24",
+      "lineIndex": 94
+    },
+    {
+      "start": 251.079,
+      "end": 252.751,
+      "type": "line",
+      "text": "and as I have purposed,",
+      "verse": "24:24",
+      "lineIndex": 95
+    },
+    {
+      "start": 252.931,
+      "end": 254.464,
+      "type": "line",
+      "text": "so shall it stand\u2014",
+      "verse": "24:24",
+      "lineIndex": 96
+    },
+    {
+      "start": 255.144,
+      "end": 257.605,
+      "type": "line",
+      "text": "That I will bring the Assyrian in my land,",
+      "verse": "24:25",
+      "lineIndex": 97
+    },
+    {
+      "start": 257.785,
+      "end": 260.664,
+      "type": "line",
+      "text": "and upon my mountains tread him under foot;",
+      "verse": "24:25",
+      "lineIndex": 98
+    },
+    {
+      "start": 260.844,
+      "end": 263.259,
+      "type": "line",
+      "text": "then shall his yoke depart from off them,",
+      "verse": "24:25",
+      "lineIndex": 99
+    },
+    {
+      "start": 263.439,
+      "end": 266.225,
+      "type": "line",
+      "text": "and his burden depart from off their shoulders.",
+      "verse": "24:25",
+      "lineIndex": 100
+    },
+    {
+      "start": 266.905,
+      "end": 269.877,
+      "type": "line",
+      "text": "This is the purpose that is purposed upon the whole earth;",
+      "verse": "24:26",
+      "lineIndex": 101
+    },
+    {
+      "start": 270.057,
+      "end": 273.586,
+      "type": "line",
+      "text": "and this is the hand that is stretched out upon all nations.",
+      "verse": "24:26",
+      "lineIndex": 102
+    },
+    {
+      "start": 274.266,
+      "end": 276.495,
+      "type": "line",
+      "text": "For the Lord of Hosts hath purposed,",
+      "verse": "24:27",
+      "lineIndex": 103
+    },
+    {
+      "start": 276.675,
+      "end": 278.022,
+      "type": "line",
+      "text": "and who shall disannul?",
+      "verse": "24:27",
+      "lineIndex": 104
+    },
+    {
+      "start": 278.202,
+      "end": 280.431,
+      "type": "line",
+      "text": "And his hand is stretched out,",
+      "verse": "24:27",
+      "lineIndex": 105
+    },
+    {
+      "start": 280.611,
+      "end": 282.144,
+      "type": "line",
+      "text": "and who shall turn it back?",
+      "verse": "24:27",
+      "lineIndex": 106
+    },
+    {
+      "start": 282.824,
+      "end": 285.796,
+      "type": "line",
+      "text": "In the year that king Ahaz died was this burden.",
+      "verse": "24:28",
+      "lineIndex": 108
+    },
+    {
+      "start": 286.476,
+      "end": 288.009,
+      "type": "line",
+      "text": "Rejoice not thou,",
+      "verse": "24:29",
+      "lineIndex": 109
+    },
+    {
+      "start": 288.189,
+      "end": 289.675,
+      "type": "line",
+      "text": "whole Palestina,",
+      "verse": "24:29",
+      "lineIndex": 110
+    },
+    {
+      "start": 289.855,
+      "end": 292.874,
+      "type": "line",
+      "text": "because the rod of him that smote thee is broken;",
+      "verse": "24:29",
+      "lineIndex": 111
+    },
+    {
+      "start": 293.054,
+      "end": 296.816,
+      "type": "line",
+      "text": "for out of the serpent's root shall come forth a cockatrice,",
+      "verse": "24:29",
+      "lineIndex": 112
+    },
+    {
+      "start": 296.996,
+      "end": 299.69,
+      "type": "line",
+      "text": "and his fruit shall be a fiery flying serpent.",
+      "verse": "24:29",
+      "lineIndex": 113
+    },
+    {
+      "start": 300.37,
+      "end": 303.017,
+      "type": "line",
+      "text": "And the firstborn of the poor shall feed,",
+      "verse": "24:30",
+      "lineIndex": 114
+    },
+    {
+      "start": 303.197,
+      "end": 305.658,
+      "type": "line",
+      "text": "and the needy shall lie down in safety;",
+      "verse": "24:30",
+      "lineIndex": 115
+    },
+    {
+      "start": 305.838,
+      "end": 307.974,
+      "type": "line",
+      "text": "and I will kill thy root with famine,",
+      "verse": "24:30",
+      "lineIndex": 116
+    },
+    {
+      "start": 308.154,
+      "end": 310.197,
+      "type": "line",
+      "text": "and he shall slay thy remnant.",
+      "verse": "24:30",
+      "lineIndex": 117
+    },
+    {
+      "start": 310.877,
+      "end": 312.363,
+      "type": "line",
+      "text": "Howl, O gate;",
+      "verse": "24:31",
+      "lineIndex": 118
+    },
+    {
+      "start": 312.543,
+      "end": 314.029,
+      "type": "line",
+      "text": "cry, O city;",
+      "verse": "24:31",
+      "lineIndex": 119
+    },
+    {
+      "start": 314.209,
+      "end": 316.485,
+      "type": "line",
+      "text": "thou, whole Palestina, art dissolved;",
+      "verse": "24:31",
+      "lineIndex": 120
+    },
+    {
+      "start": 316.665,
+      "end": 319.173,
+      "type": "line",
+      "text": "for there shall come from the north a smoke,",
+      "verse": "24:31",
+      "lineIndex": 121
+    },
+    {
+      "start": 319.353,
+      "end": 322.279,
+      "type": "line",
+      "text": "and none shall be alone in his appointed times.",
+      "verse": "24:31",
+      "lineIndex": 122
+    },
+    {
+      "start": 322.959,
+      "end": 326.163,
+      "type": "line",
+      "text": "What shall then answer the messengers of the nations?",
+      "verse": "24:32",
+      "lineIndex": 123
+    },
+    {
+      "start": 326.343,
+      "end": 328.619,
+      "type": "line",
+      "text": "That the Lord hath founded Zion,",
+      "verse": "24:32",
+      "lineIndex": 124
+    },
+    {
+      "start": 328.799,
+      "end": 331.4,
+      "type": "line",
+      "text": "and the poor of his people shall trust in it.",
+      "verse": "24:32",
+      "lineIndex": 125
+    }
+  ]
+}
