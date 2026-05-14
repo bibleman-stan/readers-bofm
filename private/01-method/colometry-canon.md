@@ -89,7 +89,7 @@ Per-rule operational detail lives in §5. Each rule's full template entry (Statu
 | R26 | Adjective (or NOUN-as-predicate) + "that" | Active | A | 3 | §5 R26 | `validators/colometry/validate_rule_26_ud.py` |
 | R27 | "Insomuch that" binding | Active | A | 3 | §5 R27 | `validators/colometry/validate_rule_27_ud.py` |
 | R28 | Speech-act announcement after frame | Active | A | 3 | §5 R28 | `validators/colometry/validate_rule_28_ud.py` |
-| EP-1 | "According to" manner vs. source | Active | B | 3 | §5 EP-1 | (no dedicated validator yet; Cat B = Stan-eye-check) |
+| EP-1 | "According to" manner vs. source | Active | B | 3 | §5 EP-1 | `validators/colometry/validate_ep_01_according_to_ud.py` (Cat B REVIEW-surfacer; no auto-applier per canon) |
 | EP-3 | Inverted predicate | Active | B | 3 | §5 EP-3 | (no dedicated validator yet; Cat B = Stan-eye-check) |
 | EP-4 | Title/role + domain | Active | B | 3 | §5 EP-4 | (no dedicated validator yet; Cat B = Stan-eye-check) |
 | EP-5 | Virtue/vice lists | Active | B | 3 | §5 EP-5 | (no dedicated validator yet; Cat B = Stan-eye-check) |
@@ -2124,7 +2124,7 @@ MANNER_INDICATORS:
 
 **Implementation.**
 
-- Validator: (not yet implemented) [to be implemented — surfaces *according to* PP candidates; emits REVIEW-REQUIRED for editorial disposition].
+- Validator: `validators/colometry/validate_ep_01_according_to_ud.py` (added 2026-05-13). Surfaces *according to* PP cross-line candidates; emits REVIEW-REQUIRED for editorial disposition. Heuristic classification (SOURCE/MANNER/ambiguous) hints per canon indicator lists but is NOT decision-gating.
 - Applier: none (Category B; auto-applier MUST NOT exist for EP-1; editorial-judgment required per-case).
 - Closed-list definitions: §EP-1-Indicators (in BoFM canon, supplementary section — heuristic indicators only).
 - Audit trail: `readers-bofm/private/audit-trail/EP-1.md` (to be populated during BoFM canon migration).

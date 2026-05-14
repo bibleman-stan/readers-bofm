@@ -82,6 +82,37 @@ Codified at [`../atu-method/docs/framework.md §1.1`](../atu-method/docs/framewo
 
 See `feedback_atu_test_is_bidirectional.md` for full discipline. Cross-cutting connection to `feedback_grammar_constrains_not_determines` (grammar = constraint; bidirectional atomic-thought = determination).
 
+**Precedence clarification (added 2026-05-13 via gnt-reader sibling lesson):** the bidirectional test is canon §1.1 INFORMATIONAL DIAGNOSTIC, not a mechanical PRECEDENCE OVERRIDE. It INFORMS human audit judgment and DEEPENS the defensibility of canon-mandated decisions, but it DOES NOT serve as a validator trigger on its own — validators must fire on canon-encoded UD signatures (R/M/EP rules), NOT on bidirectional-test outcome. Mechanical authority comes from canon's encoded rules; bidirectional is a refinement of the determination engine, not a parallel determination authority.
+
+### Rhetoric and ATU — figures constrain, atomic-thought determines
+
+Codified across the family 2026-05-13 from Stan-verbatim: *"this is a key insight: the interaction of rhetorical devices/figures of speech with ATUs."*
+
+Rhetorical figures have DEFAULT ATU dispositions but never independently DETERMINE ATU boundaries. Each figure CONSTRAINS the candidate space; atomic-thought (bidirectional) determines the answer. Same asymmetry as `feedback_grammar_constrains_not_determines`.
+
+| Figure | Default disposition | Mechanism |
+|---|---|---|
+| Hendiadys (synonymous doubling) | MERGE under M1 | Referential coextension via synonymy |
+| Merism (polar binary for totality) | MERGE under M1 | Referential coextension via polar totality |
+| Parallelism (synonymous/antithetic/synthetic) | SPLIT per J1 | Each member own atomic content |
+| Chiasm (A-B-C-B'-A' inverted mirror) | NO FORCE | Structural observation across ATUs, not within |
+| Anaphora / epistrophe / repetition | SPLIT per J1 | Repetition is signal, not force |
+| Climax / gradatio | SPLIT per J1 | Each member own beat |
+
+**Critical discipline:** the figure's default is a HYPOTHESIS; the atomic-thought test confirms or overrides. When they disagree, atomic-thought wins. Example from this session: `"hardness of HEARTS / blindness of MINDS"` is formally hendiadys-shaped but each NP has its own distinct sub-referent modifier → atomic-thought-test passes for each member → SPLIT despite hendiadys surface. Conversely: `"commandments of God, / and his statutes, according to the law of Moses"` is formally J1 surface but unified under shared framing PP → MERGE (M1 hendiadys absorbs).
+
+See `feedback_rhetoric_figures_constrain_atu.md` (cross-corpus memory) for full discipline.
+
+### Camera-angle diagnostic is DEPRECATED
+
+Stan-verbatim 2026-05-13: *"the camera angle change should probably either drop out or be caveated as 'when it is its own complete thought' — the more I see it at work, the less confident I am it's helpful."*
+
+When invoked, camera-angle reasoning either (a) COLLAPSES to the atomic-thought test ("each side has its own atomic content" IS the test, not an additional diagnostic) or (b) SMUGGLES IN aesthetic-rhetorical preference (`feedback_rhetoric_bandwagon` failure mode). Camera-angle never adds independent diagnostic force.
+
+**Treat invocations of camera-angle as a warning signal for bandwagon/aesthetic reasoning.** Use the bidirectional atomic-thought test instead (per `feedback_atu_test_is_bidirectional`). Worked example this session: Alma 31:11 *"to preach the word unto them"* YES/NO argument — the YES argument leaned on camera-angle (motion-event vs preaching-event); the NO argument leaned on bidirectional ATU failure + R7 canon SCOPE; NO carried; camera-angle was the weaker channel.
+
+See `feedback_camera_angle_diagnostic_demote.md` for full discipline.
+
 ### Use the UD layer FIRST. Agents are a last resort for corpus questions.
 
 The BoFM Macula-equivalent already exists: full-corpus UD parses at `data/parses/ensemble/stanza/*.conllu`, queried via `validators/parsing/conllu_query.py` + `validators/parsing/line_mapping.py` (which gives v2-mine-line-of-each-token). Every active canon rule has a UD validator at `validators/colometry/validate_rule_*_ud.py`. The infrastructure for "find all tokens X whose head Y sits on a different ATU line, optionally filtered by deprel/upos/lemma" is **already built**.
