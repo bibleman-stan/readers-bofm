@@ -62,6 +62,19 @@ R7_MOTION_VERBS = {
 GOVERNOR_POS_OK = {"VERB", "NOUN", "ADJ"}
 INFINITIVAL_DEPRELS = ("xcomp", "advcl", "acl")
 
+# Co-orphaned-prefix sub-variant (Cat B — surface only, never auto-apply).
+# Finite-verb xpos tags — a line carrying one of these has independent
+# predication and is NOT a bare orphan. (feats VerbForm=Fin is unreliable
+# in this parse; xpos is the robust signal per §7.3 audit 2026-05-14.)
+FINITE_VERB_XPOS = {"MD", "VBZ", "VBD", "VBP"}
+# Correlative / comparative lemmas — a line carrying one of these is part of
+# a comparative/result correlative construction (`so X as to Y`, `than to V`,
+# `as if to V`, `whether to X or to Y`), NOT a co-orphaned-prefix orphan.
+CORRELATIVE_LEMMAS = {
+    "as", "than", "rather", "whether", "so", "such", "if",
+    "both", "either", "neither",
+}
+
 BOOKS = [
     "1nephi", "2nephi", "jacob", "enos", "jarom", "omni",
     "words-of-mormon", "mosiah", "alma", "helaman",
@@ -137,9 +150,6 @@ def scan_book(book_id: str) -> list[dict]:
                     continue
                 if mark_line == gov_line:
                     continue  # already merged; not a violation
-                # Trigger requires the 'to' to be line-initial.
-                if mark_col != 0:
-                    continue
                 # Exclusion 6: already covered by R7 / R17 narrower slices.
                 if gov.upos == "VERB" and (
                     gov.lemma in R17_GOVERNING_LEMMAS or gov.lemma in R7_MOTION_VERBS
@@ -154,7 +164,29 @@ def scan_book(book_id: str) -> list[dict]:
                 gap = abs(mark_line - gov_line)
                 n_par = _n_parallel(sent, inf, gov)
 
-                if gap == 1 and n_par == 1:
+                if mark_col != 0:
+                    # Co-orphaned-prefix sub-variant (canon §5 R29 Cat-B note):
+                    # the infinitival 'to' is mid-line, preceded by other
+                    # material on the orphan line. Per §7.3 audit 2026-05-14
+                    # this is NOT mechanically decidable to Cat-A confidence
+                    # (the leading PP may be a co-orphan dative, a `for`-NP-to-V
+                    # infinitival subject, a J5 substantive adjunct, or an EP-1
+                    # source-PP — semantic disambiguation). SURFACE as REVIEW
+                    # only; NEVER auto-apply. Candidate filter: orphan line has
+                    # no finite verb + no correlative lemma.
+                    orphan_idx = mark_line - 1
+                    orphan_toks = [
+                        t for t in sent.tokens
+                        if line_map.get((sent.sent_id, t.id)) == mark_line
+                    ]
+                    if any(t.xpos in FINITE_VERB_XPOS for t in orphan_toks):
+                        continue  # line has independent predication — not a bare orphan
+                    if any(t.lemma.lower() in CORRELATIVE_LEMMAS for t in orphan_toks):
+                        continue  # comparative/result correlative construction
+                    if gap != 1:
+                        continue  # candidate detector is gap=1 only
+                    bucket, reason = "REVIEW-REQUIRED", "co-orphaned-prefix-CatB"
+                elif gap == 1 and n_par == 1:
                     bucket, reason = "STRONG-MERGE-CANDIDATE", None
                 elif n_par >= 3:
                     bucket, reason = "REVIEW-REQUIRED", "J1-N3-parallel-series"

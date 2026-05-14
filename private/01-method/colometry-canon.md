@@ -2097,6 +2097,19 @@ action: MERGE_ORPHAN_WITH_GOVERNOR
 - Audit trail: §7.3 audit 2026-05-14 (2 parallel adversarial agents) — verdicts in commit message.
 - Scholarship: [`atu-method/scholarship/bofm/R29.md`](atu-method/scholarship/bofm/R29.md) (to be populated).
 
+**Co-orphaned-prefix sub-variant — Category B (surface only, NEVER auto-apply).**
+
+R29 proper requires the infinitival `to` to be **line-initial** (char-col 0). A related variant exists where the infinitival orphan is preceded *on its own line* by other co-orphaned material — e.g. Alma 31:2: `For it was the cause of great sorrow` / `to Alma to know of iniquity among his people;` — the orphan line opens with a dangling dative PP (`to Alma`) and the infinitival (`to know`) is mid-line; the whole line is dependent material hanging off the prior line's `was`.
+
+A §7.3 audit (2026-05-14, 2 parallel adversarial agents) determined this sub-variant is **NOT mechanically decidable to Category-A confidence** — it is Category B. The audit's verdict and the canon grounds:
+
+- **Bidirectional-precedence violation.** A Cat-A mechanical trigger for this variant would have to rest on "the orphan line has no finite verb / is forward-incomplete." That is the forward-closure half of the §1.1 bidirectional atomic-thought test — which per the gnt-reader sibling lesson is an **informational diagnostic, not a mechanical precedence override**. R29 proper escapes this because its trigger is the *structural* line-initial `to`+VERB signature; the sub-variant has no such structural anchor and would smuggle the bidirectional test in as a Cat-A trigger.
+- **EP-1 precedent.** A leading PP's merge-vs-stand disposition is exactly what EP-1 ("according to" manner-vs-source) is classified Category B for — "the parse identifies *candidate* locations only." The co-orphaned-prefix question is the same shape.
+- **J5 collision.** A fronted PP can legitimately *earn* its own line as a substantive adjunct (§1.4 J5). Proving the leading PP does NOT qualify for J5 is a substantive-content judgment.
+- **`for`-NP-`to`-V ambiguity.** Lines like `for the Lord to send…` / `for them to come…` open with a `for`+NP that is the infinitival's **subject**, not a co-orphan dative — structurally indistinguishable from Alma 31:2's `to Alma` by an ADP-prefix test, but a different construction.
+
+**Disposition.** The R29 validator surfaces co-orphaned-prefix candidates as `REVIEW-REQUIRED` (review_reason `co-orphaned-prefix-CatB`) — candidate filter: mid-line `to`-mark + gap=1 governor (VERB/NOUN/ADJ) + orphan line has no finite verb (xpos ∉ {MD,VBZ,VBD,VBP}) + no correlative lemma ({as,than,rather,whether,so,such,if,both,either,neither}) on the line. These are a clean *candidate detector* (~7 corpus instances) but MUST NOT be auto-applied. Each is an editorial per-instance call distinguishing: (a) true co-orphan dative/PP → merge (Alma 31:2); (b) `for`-NP-`to`-V infinitival-subject → restructure decision; (c) J5 substantive-adjunct prefix → may stand; (d) EP-1 `according to` source-PP → EP-1 applies; (e) N≥2 `conj`-chained series → J1, stays split. No auto-applier exists for this sub-variant.
+
 <!-- ===== EP-1 ===== -->
 ### EP-1: "According To" Manner vs. Source
 
