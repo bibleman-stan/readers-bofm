@@ -1,0 +1,1216 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 9,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 543.446,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.876,
+      "type": "line",
+      "text": "And again, I, Alma, having been commanded of God that I should take Amulek",
+      "verse": "9:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.056,
+      "end": 6.542,
+      "type": "line",
+      "text": "and go forth",
+      "verse": "9:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.722,
+      "end": 11.552,
+      "type": "line",
+      "text": "and preach again unto this people, or the people who were in the city of Ammonihah,",
+      "verse": "9:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.732,
+      "end": 16.748,
+      "type": "line",
+      "text": "it came to pass as I began to preach unto them, they began to contend with me, saying:",
+      "verse": "9:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.428,
+      "end": 18.543,
+      "type": "line",
+      "text": "Who art thou?",
+      "verse": "9:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 18.723,
+      "end": 22.345,
+      "type": "line",
+      "text": "Suppose ye that we shall believe the testimony of one man,",
+      "verse": "9:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 22.525,
+      "end": 26.38,
+      "type": "line",
+      "text": "although he should preach unto us that the earth should pass away?",
+      "verse": "9:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 27.06,
+      "end": 30.218,
+      "type": "line",
+      "text": "Now they understood not the words which they spake;",
+      "verse": "9:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 30.398,
+      "end": 33.417,
+      "type": "line",
+      "text": "for they knew not that the earth should pass away.",
+      "verse": "9:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 34.097,
+      "end": 35.583,
+      "type": "line",
+      "text": "And they said also:",
+      "verse": "9:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 35.763,
+      "end": 39.571,
+      "type": "line",
+      "text": "We will not believe thy words if thou shouldst prophesy",
+      "verse": "9:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 39.751,
+      "end": 42.584,
+      "type": "line",
+      "text": "that this great city should be destroyed in one day.",
+      "verse": "9:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 43.264,
+      "end": 46.515,
+      "type": "line",
+      "text": "Now they knew not that God could do such marvelous works,",
+      "verse": "9:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 46.695,
+      "end": 50.271,
+      "type": "line",
+      "text": "for they were a hard-hearted and a stiffnecked people.",
+      "verse": "9:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 50.951,
+      "end": 52.437,
+      "type": "line",
+      "text": "And they said:",
+      "verse": "9:6",
+      "lineIndex": 15
+    },
+    {
+      "start": 52.617,
+      "end": 62.137,
+      "type": "line",
+      "text": "Who is God, that sendeth no more authority than one man among this people, to declare unto them the truth of such great and marvelous things?",
+      "verse": "9:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 62.817,
+      "end": 65.557,
+      "type": "line",
+      "text": "And they stood forth to lay their hands on me;",
+      "verse": "9:7",
+      "lineIndex": 17
+    },
+    {
+      "start": 65.737,
+      "end": 67.409,
+      "type": "line",
+      "text": "but behold, they did not.",
+      "verse": "9:7",
+      "lineIndex": 18
+    },
+    {
+      "start": 67.589,
+      "end": 70.515,
+      "type": "line",
+      "text": "And I stood with boldness to declare unto them,",
+      "verse": "9:7",
+      "lineIndex": 19
+    },
+    {
+      "start": 70.695,
+      "end": 73.389,
+      "type": "line",
+      "text": "yea, I did boldly testify unto them, saying:",
+      "verse": "9:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 74.069,
+      "end": 77.784,
+      "type": "line",
+      "text": "Behold, O ye wicked and perverse generation,",
+      "verse": "9:8",
+      "lineIndex": 21
+    },
+    {
+      "start": 77.964,
+      "end": 81.122,
+      "type": "line",
+      "text": "how have ye forgotten the tradition of your fathers;",
+      "verse": "9:8",
+      "lineIndex": 22
+    },
+    {
+      "start": 81.302,
+      "end": 84.46,
+      "type": "line",
+      "text": "yea, how soon ye have forgotten the commandments of God.",
+      "verse": "9:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 85.14,
+      "end": 90.341,
+      "type": "line",
+      "text": "Do ye not remember that our father, Lehi, was brought out of Jerusalem by the hand of God?",
+      "verse": "9:9",
+      "lineIndex": 24
+    },
+    {
+      "start": 90.521,
+      "end": 95.397,
+      "type": "line",
+      "text": "Do ye not remember that they were all led by him through the wilderness?",
+      "verse": "9:9",
+      "lineIndex": 25
+    },
+    {
+      "start": 96.077,
+      "end": 98.306,
+      "type": "line",
+      "text": "And have ye forgotten so soon",
+      "verse": "9:10",
+      "lineIndex": 26
+    },
+    {
+      "start": 98.486,
+      "end": 103.455,
+      "type": "line",
+      "text": "how many times he delivered our fathers out of the hands of their enemies,",
+      "verse": "9:10",
+      "lineIndex": 27
+    },
+    {
+      "start": 103.635,
+      "end": 106.003,
+      "type": "line",
+      "text": "and preserved them from being destroyed,",
+      "verse": "9:10",
+      "lineIndex": 28
+    },
+    {
+      "start": 106.183,
+      "end": 108.644,
+      "type": "line",
+      "text": "even by the hands of their own brethren?",
+      "verse": "9:10",
+      "lineIndex": 29
+    },
+    {
+      "start": 109.324,
+      "end": 112.807,
+      "type": "line",
+      "text": "Yea, and if it had not been for his matchless power,",
+      "verse": "9:11",
+      "lineIndex": 30
+    },
+    {
+      "start": 112.987,
+      "end": 116.377,
+      "type": "line",
+      "text": "and his mercy, and his long-suffering towards us,",
+      "verse": "9:11",
+      "lineIndex": 31
+    },
+    {
+      "start": 116.557,
+      "end": 120.551,
+      "type": "line",
+      "text": "we should unavoidably have been cut off from the face of the earth",
+      "verse": "9:11",
+      "lineIndex": 32
+    },
+    {
+      "start": 120.731,
+      "end": 123.053,
+      "type": "line",
+      "text": "long before this period of time,",
+      "verse": "9:11",
+      "lineIndex": 33
+    },
+    {
+      "start": 123.233,
+      "end": 128.109,
+      "type": "line",
+      "text": "and perhaps been consigned to a state of endless misery and woe.",
+      "verse": "9:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 128.789,
+      "end": 132.736,
+      "type": "line",
+      "text": "Behold, now I say unto you that he commandeth you to repent;",
+      "verse": "9:12",
+      "lineIndex": 35
+    },
+    {
+      "start": 132.916,
+      "end": 134.541,
+      "type": "line",
+      "text": "and except ye repent,",
+      "verse": "9:12",
+      "lineIndex": 36
+    },
+    {
+      "start": 134.721,
+      "end": 137.554,
+      "type": "line",
+      "text": "ye can in nowise inherit the kingdom of God.",
+      "verse": "9:12",
+      "lineIndex": 37
+    },
+    {
+      "start": 137.734,
+      "end": 139.452,
+      "type": "line",
+      "text": "But behold, this is not all\u2014",
+      "verse": "9:12",
+      "lineIndex": 38
+    },
+    {
+      "start": 139.632,
+      "end": 141.815,
+      "type": "line",
+      "text": "he has commanded you to repent,",
+      "verse": "9:12",
+      "lineIndex": 39
+    },
+    {
+      "start": 141.995,
+      "end": 145.617,
+      "type": "line",
+      "text": "or he will utterly destroy you from off the face of the earth;",
+      "verse": "9:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 145.797,
+      "end": 148.305,
+      "type": "line",
+      "text": "yea, he will visit you in his anger,",
+      "verse": "9:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 148.485,
+      "end": 151.132,
+      "type": "line",
+      "text": "and in his fierce anger he will not turn away.",
+      "verse": "9:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 151.812,
+      "end": 156.642,
+      "type": "line",
+      "text": "Behold, do ye not remember the words which he spake unto Lehi, saying that:",
+      "verse": "9:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 156.822,
+      "end": 159.283,
+      "type": "line",
+      "text": "Inasmuch as ye shall keep my commandments,",
+      "verse": "9:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 159.463,
+      "end": 161.367,
+      "type": "line",
+      "text": "ye shall prosper in the land?",
+      "verse": "9:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 161.547,
+      "end": 163.358,
+      "type": "line",
+      "text": "And again it is said that:",
+      "verse": "9:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 163.538,
+      "end": 166.232,
+      "type": "line",
+      "text": "Inasmuch as ye will not keep my commandments",
+      "verse": "9:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 166.412,
+      "end": 169.57,
+      "type": "line",
+      "text": "ye shall be cut off from the presence of the Lord.",
+      "verse": "9:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 170.25,
+      "end": 176.891,
+      "type": "line",
+      "text": "Now I would that ye should remember, that inasmuch as the Lamanites have not kept the commandments of God,",
+      "verse": "9:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 177.071,
+      "end": 180.6,
+      "type": "line",
+      "text": "they have been cut off from the presence of the Lord.",
+      "verse": "9:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 180.78,
+      "end": 184.867,
+      "type": "line",
+      "text": "Now we see that the word of the Lord has been verified in this thing,",
+      "verse": "9:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 185.047,
+      "end": 192.385,
+      "type": "line",
+      "text": "and the Lamanites have been cut off from his presence, from the beginning of their transgressions in the land.",
+      "verse": "9:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 193.065,
+      "end": 199.845,
+      "type": "line",
+      "text": "Nevertheless I say unto you, that it shall be more tolerable for them in the day of judgment than for you,",
+      "verse": "9:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 200.025,
+      "end": 201.929,
+      "type": "line",
+      "text": "if ye remain in your sins,",
+      "verse": "9:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 202.109,
+      "end": 206.799,
+      "type": "line",
+      "text": "yea, and even more tolerable for them in this life than for you,",
+      "verse": "9:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 206.979,
+      "end": 208.465,
+      "type": "line",
+      "text": "except ye repent.",
+      "verse": "9:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 209.145,
+      "end": 213.557,
+      "type": "line",
+      "text": "For there are many promises which are extended to the Lamanites;",
+      "verse": "9:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 213.737,
+      "end": 217.963,
+      "type": "line",
+      "text": "for it is because of the traditions of their fathers",
+      "verse": "9:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 218.143,
+      "end": 222.323,
+      "type": "line",
+      "text": "that caused them to remain in their state of ignorance;",
+      "verse": "9:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 222.503,
+      "end": 225.522,
+      "type": "line",
+      "text": "therefore the Lord will be merciful unto them",
+      "verse": "9:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 225.702,
+      "end": 227.792,
+      "type": "line",
+      "text": "and prolong their existence in the land.",
+      "verse": "9:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 228.472,
+      "end": 232.652,
+      "type": "line",
+      "text": "And at some period of time they will be brought to believe in his word,",
+      "verse": "9:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 232.832,
+      "end": 237.151,
+      "type": "line",
+      "text": "and to know of the incorrectness of the traditions of their fathers;",
+      "verse": "9:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 237.331,
+      "end": 239.374,
+      "type": "line",
+      "text": "and many of them will be saved,",
+      "verse": "9:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 239.554,
+      "end": 243.409,
+      "type": "line",
+      "text": "for the Lord will be merciful unto all who call on his name.",
+      "verse": "9:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 244.089,
+      "end": 245.993,
+      "type": "line",
+      "text": "But behold, I say unto you",
+      "verse": "9:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 246.173,
+      "end": 248.495,
+      "type": "line",
+      "text": "that if ye persist in your wickedness",
+      "verse": "9:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 248.675,
+      "end": 251.601,
+      "type": "line",
+      "text": "that your days shall not be prolonged in the land,",
+      "verse": "9:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 251.781,
+      "end": 254.521,
+      "type": "line",
+      "text": "for the Lamanites shall be sent upon you;",
+      "verse": "9:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 254.701,
+      "end": 256.512,
+      "type": "line",
+      "text": "and if ye repent not",
+      "verse": "9:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 256.692,
+      "end": 259.618,
+      "type": "line",
+      "text": "they shall come in a time when you know not,",
+      "verse": "9:18",
+      "lineIndex": 72
+    },
+    {
+      "start": 259.798,
+      "end": 262.77,
+      "type": "line",
+      "text": "and ye shall be visited with utter destruction;",
+      "verse": "9:18",
+      "lineIndex": 73
+    },
+    {
+      "start": 262.95,
+      "end": 266.34,
+      "type": "line",
+      "text": "and it shall be according to the fierce anger of the Lord.",
+      "verse": "9:18",
+      "lineIndex": 74
+    },
+    {
+      "start": 267.02,
+      "end": 272.314,
+      "type": "line",
+      "text": "For he will not suffer you that ye shall live in your iniquities, to destroy his people.",
+      "verse": "9:19",
+      "lineIndex": 75
+    },
+    {
+      "start": 272.494,
+      "end": 273.98,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "9:19",
+      "lineIndex": 76
+    },
+    {
+      "start": 274.16,
+      "end": 279.361,
+      "type": "line",
+      "text": "Nay; he would rather suffer that the Lamanites might destroy all his people",
+      "verse": "9:19",
+      "lineIndex": 77
+    },
+    {
+      "start": 279.541,
+      "end": 282.002,
+      "type": "line",
+      "text": "who are called the people of Nephi,",
+      "verse": "9:19",
+      "lineIndex": 78
+    },
+    {
+      "start": 282.182,
+      "end": 287.012,
+      "type": "line",
+      "text": "if it were possible that they could fall into sins and transgressions,",
+      "verse": "9:19",
+      "lineIndex": 79
+    },
+    {
+      "start": 287.192,
+      "end": 290.489,
+      "type": "line",
+      "text": "after having had so much light and so much knowledge",
+      "verse": "9:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 290.669,
+      "end": 293.177,
+      "type": "line",
+      "text": "given unto them of the Lord their God;",
+      "verse": "9:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 293.857,
+      "end": 297.712,
+      "type": "line",
+      "text": "Yea, after having been such a highly favored people of the Lord;",
+      "verse": "9:20",
+      "lineIndex": 82
+    },
+    {
+      "start": 297.892,
+      "end": 304.161,
+      "type": "line",
+      "text": "yea, after having been favored above every other nation, kindred, tongue, or people;",
+      "verse": "9:20",
+      "lineIndex": 83
+    },
+    {
+      "start": 304.341,
+      "end": 311.075,
+      "type": "line",
+      "text": "after having had all things made known unto them, according to their desires, and their faith, and prayers,",
+      "verse": "9:20",
+      "lineIndex": 84
+    },
+    {
+      "start": 311.255,
+      "end": 314.97,
+      "type": "line",
+      "text": "of that which has been, and which is, and which is to come;",
+      "verse": "9:20",
+      "lineIndex": 85
+    },
+    {
+      "start": 315.65,
+      "end": 320.387,
+      "type": "line",
+      "text": "Having been visited by the Spirit of God; having conversed with angels,",
+      "verse": "9:21",
+      "lineIndex": 87
+    },
+    {
+      "start": 320.567,
+      "end": 323.818,
+      "type": "line",
+      "text": "and having been spoken unto by the voice of the Lord;",
+      "verse": "9:21",
+      "lineIndex": 88
+    },
+    {
+      "start": 323.998,
+      "end": 326.227,
+      "type": "line",
+      "text": "and having the spirit of prophecy,",
+      "verse": "9:21",
+      "lineIndex": 89
+    },
+    {
+      "start": 326.407,
+      "end": 330.262,
+      "type": "line",
+      "text": "and the spirit of revelation, and also many gifts,",
+      "verse": "9:21",
+      "lineIndex": 90
+    },
+    {
+      "start": 330.442,
+      "end": 332.764,
+      "type": "line",
+      "text": "the gift of speaking with tongues,",
+      "verse": "9:21",
+      "lineIndex": 91
+    },
+    {
+      "start": 332.944,
+      "end": 334.941,
+      "type": "line",
+      "text": "and the gift of preaching,",
+      "verse": "9:21",
+      "lineIndex": 92
+    },
+    {
+      "start": 335.121,
+      "end": 337.257,
+      "type": "line",
+      "text": "and the gift of the Holy Ghost,",
+      "verse": "9:21",
+      "lineIndex": 93
+    },
+    {
+      "start": 337.437,
+      "end": 339.898,
+      "type": "line",
+      "text": "and the gift of translation;",
+      "verse": "9:21",
+      "lineIndex": 94
+    },
+    {
+      "start": 340.578,
+      "end": 346.429,
+      "type": "line",
+      "text": "Yea, and after having been delivered of God out of the land of Jerusalem, by the hand of the Lord;",
+      "verse": "9:22",
+      "lineIndex": 95
+    },
+    {
+      "start": 346.609,
+      "end": 348.606,
+      "type": "line",
+      "text": "having been saved from famine,",
+      "verse": "9:22",
+      "lineIndex": 96
+    },
+    {
+      "start": 348.786,
+      "end": 352.687,
+      "type": "line",
+      "text": "and from sickness, and all manner of diseases of every kind;",
+      "verse": "9:22",
+      "lineIndex": 97
+    },
+    {
+      "start": 352.867,
+      "end": 355.096,
+      "type": "line",
+      "text": "and they having waxed strong in battle,",
+      "verse": "9:22",
+      "lineIndex": 98
+    },
+    {
+      "start": 355.276,
+      "end": 357.366,
+      "type": "line",
+      "text": "that they might not be destroyed;",
+      "verse": "9:22",
+      "lineIndex": 99
+    },
+    {
+      "start": 357.546,
+      "end": 360.983,
+      "type": "line",
+      "text": "having been brought out of bondage time after time,",
+      "verse": "9:22",
+      "lineIndex": 100
+    },
+    {
+      "start": 361.163,
+      "end": 364.228,
+      "type": "line",
+      "text": "and having been kept and preserved until now;",
+      "verse": "9:22",
+      "lineIndex": 101
+    },
+    {
+      "start": 364.408,
+      "end": 368.959,
+      "type": "line",
+      "text": "and they have been prospered until they are rich in all manner of things\u2014",
+      "verse": "9:22",
+      "lineIndex": 102
+    },
+    {
+      "start": 369.639,
+      "end": 371.682,
+      "type": "line",
+      "text": "And now behold I say unto you",
+      "verse": "9:23",
+      "lineIndex": 103
+    },
+    {
+      "start": 371.862,
+      "end": 373.441,
+      "type": "line",
+      "text": "that if this people,",
+      "verse": "9:23",
+      "lineIndex": 104
+    },
+    {
+      "start": 373.621,
+      "end": 377.29,
+      "type": "line",
+      "text": "who have received so many blessings from the hand of the Lord,",
+      "verse": "9:23",
+      "lineIndex": 105
+    },
+    {
+      "start": 377.47,
+      "end": 382.346,
+      "type": "line",
+      "text": "should transgress contrary to the light and knowledge which they do have,",
+      "verse": "9:23",
+      "lineIndex": 106
+    },
+    {
+      "start": 382.526,
+      "end": 385.127,
+      "type": "line",
+      "text": "I say unto you that if this be the case,",
+      "verse": "9:23",
+      "lineIndex": 107
+    },
+    {
+      "start": 385.807,
+      "end": 390.126,
+      "type": "line",
+      "text": "For behold, the promises of the Lord are extended to the Lamanites,",
+      "verse": "9:24",
+      "lineIndex": 108
+    },
+    {
+      "start": 390.306,
+      "end": 392.86,
+      "type": "line",
+      "text": "but they are not unto you if ye transgress;",
+      "verse": "9:24",
+      "lineIndex": 109
+    },
+    {
+      "start": 393.04,
+      "end": 401.678,
+      "type": "line",
+      "text": "for has not the Lord expressly promised and firmly decreed, that if ye will rebel against him that ye shall utterly be destroyed",
+      "verse": "9:24",
+      "lineIndex": 110
+    },
+    {
+      "start": 401.858,
+      "end": 404.134,
+      "type": "line",
+      "text": "from off the face of the earth?",
+      "verse": "9:24",
+      "lineIndex": 111
+    },
+    {
+      "start": 404.814,
+      "end": 408.065,
+      "type": "line",
+      "text": "And now for this cause, that ye may not be destroyed,",
+      "verse": "9:25",
+      "lineIndex": 112
+    },
+    {
+      "start": 408.245,
+      "end": 411.496,
+      "type": "line",
+      "text": "the Lord has sent his angel to visit many of his people,",
+      "verse": "9:25",
+      "lineIndex": 113
+    },
+    {
+      "start": 411.676,
+      "end": 414.695,
+      "type": "line",
+      "text": "declaring unto them that they must go forth",
+      "verse": "9:25",
+      "lineIndex": 114
+    },
+    {
+      "start": 414.875,
+      "end": 417.429,
+      "type": "line",
+      "text": "and cry mightily unto this people, saying:",
+      "verse": "9:25",
+      "lineIndex": 115
+    },
+    {
+      "start": 417.609,
+      "end": 418.724,
+      "type": "line",
+      "text": "Repent ye,",
+      "verse": "9:25",
+      "lineIndex": 116
+    },
+    {
+      "start": 418.904,
+      "end": 421.458,
+      "type": "line",
+      "text": "for the kingdom of heaven is nigh at hand;",
+      "verse": "9:25",
+      "lineIndex": 117
+    },
+    {
+      "start": 422.138,
+      "end": 425.853,
+      "type": "line",
+      "text": "And not many days hence the Son of God shall come in his glory;",
+      "verse": "9:26",
+      "lineIndex": 118
+    },
+    {
+      "start": 426.033,
+      "end": 430.12,
+      "type": "line",
+      "text": "and his glory shall be the glory of the Only Begotten of the Father,",
+      "verse": "9:26",
+      "lineIndex": 119
+    },
+    {
+      "start": 430.3,
+      "end": 433.319,
+      "type": "line",
+      "text": "full of grace, equity, and truth,",
+      "verse": "9:26",
+      "lineIndex": 120
+    },
+    {
+      "start": 433.499,
+      "end": 436.378,
+      "type": "line",
+      "text": "full of patience, mercy, and long-suffering,",
+      "verse": "9:26",
+      "lineIndex": 121
+    },
+    {
+      "start": 436.558,
+      "end": 440.505,
+      "type": "line",
+      "text": "quick to hear the cries of his people and to answer their prayers.",
+      "verse": "9:26",
+      "lineIndex": 122
+    },
+    {
+      "start": 441.185,
+      "end": 446.758,
+      "type": "line",
+      "text": "And behold, he cometh to redeem those who will be baptized unto repentance, through faith on his name.",
+      "verse": "9:27",
+      "lineIndex": 123
+    },
+    {
+      "start": 447.438,
+      "end": 450.085,
+      "type": "line",
+      "text": "Therefore, prepare ye the way of the Lord,",
+      "verse": "9:28",
+      "lineIndex": 125
+    },
+    {
+      "start": 450.265,
+      "end": 456.627,
+      "type": "line",
+      "text": "for the time is at hand that all men shall reap a reward of their works, according to that which they have been\u2014",
+      "verse": "9:28",
+      "lineIndex": 126
+    },
+    {
+      "start": 456.807,
+      "end": 458.804,
+      "type": "line",
+      "text": "if they have been righteous",
+      "verse": "9:28",
+      "lineIndex": 127
+    },
+    {
+      "start": 458.984,
+      "end": 464.789,
+      "type": "line",
+      "text": "they shall reap the salvation of their souls, according to the power and deliverance of Jesus Christ;",
+      "verse": "9:28",
+      "lineIndex": 128
+    },
+    {
+      "start": 464.969,
+      "end": 466.594,
+      "type": "line",
+      "text": "and if they have been evil",
+      "verse": "9:28",
+      "lineIndex": 129
+    },
+    {
+      "start": 466.774,
+      "end": 472.254,
+      "type": "line",
+      "text": "they shall reap the damnation of their souls, according to the power and captivation of the devil.",
+      "verse": "9:28",
+      "lineIndex": 130
+    },
+    {
+      "start": 472.934,
+      "end": 476.789,
+      "type": "line",
+      "text": "Now behold, this is the voice of the angel, crying unto the people.",
+      "verse": "9:29",
+      "lineIndex": 131
+    },
+    {
+      "start": 477.469,
+      "end": 479.512,
+      "type": "line",
+      "text": "And now, my beloved brethren,",
+      "verse": "9:30",
+      "lineIndex": 132
+    },
+    {
+      "start": 479.692,
+      "end": 481.41,
+      "type": "line",
+      "text": "for ye are my brethren,",
+      "verse": "9:30",
+      "lineIndex": 133
+    },
+    {
+      "start": 481.59,
+      "end": 483.54,
+      "type": "line",
+      "text": "and ye ought to be beloved,",
+      "verse": "9:30",
+      "lineIndex": 134
+    },
+    {
+      "start": 483.72,
+      "end": 487.296,
+      "type": "line",
+      "text": "and ye ought to bring forth works which are meet for repentance,",
+      "verse": "9:30",
+      "lineIndex": 135
+    },
+    {
+      "start": 487.476,
+      "end": 491.888,
+      "type": "line",
+      "text": "seeing that your hearts have been grossly hardened against the word of God,",
+      "verse": "9:30",
+      "lineIndex": 136
+    },
+    {
+      "start": 492.068,
+      "end": 495.597,
+      "type": "line",
+      "text": "and seeing that ye are a lost and a fallen people.",
+      "verse": "9:30",
+      "lineIndex": 137
+    },
+    {
+      "start": 496.277,
+      "end": 500.364,
+      "type": "line",
+      "text": "Now it came to pass that when I, Alma, had spoken these words,",
+      "verse": "9:31",
+      "lineIndex": 138
+    },
+    {
+      "start": 500.544,
+      "end": 502.912,
+      "type": "line",
+      "text": "behold, the people were wroth with me",
+      "verse": "9:31",
+      "lineIndex": 139
+    },
+    {
+      "start": 503.092,
+      "end": 504.81,
+      "type": "line",
+      "text": "because I said unto them",
+      "verse": "9:31",
+      "lineIndex": 140
+    },
+    {
+      "start": 504.99,
+      "end": 508.705,
+      "type": "line",
+      "text": "that they were a hard-hearted and a stiffnecked people.",
+      "verse": "9:31",
+      "lineIndex": 141
+    },
+    {
+      "start": 509.385,
+      "end": 511.753,
+      "type": "line",
+      "text": "And also because I said unto them",
+      "verse": "9:32",
+      "lineIndex": 142
+    },
+    {
+      "start": 511.933,
+      "end": 514.441,
+      "type": "line",
+      "text": "that they were a lost and a fallen people",
+      "verse": "9:32",
+      "lineIndex": 143
+    },
+    {
+      "start": 514.621,
+      "end": 516.014,
+      "type": "line",
+      "text": "they were angry with me,",
+      "verse": "9:32",
+      "lineIndex": 144
+    },
+    {
+      "start": 516.194,
+      "end": 518.47,
+      "type": "line",
+      "text": "and sought to lay their hands upon me,",
+      "verse": "9:32",
+      "lineIndex": 145
+    },
+    {
+      "start": 518.65,
+      "end": 521.39,
+      "type": "line",
+      "text": "that they might cast me into prison.",
+      "verse": "9:32",
+      "lineIndex": 146
+    },
+    {
+      "start": 522.07,
+      "end": 528.432,
+      "type": "line",
+      "text": "But it came to pass that the Lord did not suffer them that they should take me at that time and cast me into prison.",
+      "verse": "9:33",
+      "lineIndex": 147
+    },
+    {
+      "start": 529.112,
+      "end": 531.666,
+      "type": "line",
+      "text": "And it came to pass that Amulek went",
+      "verse": "9:34",
+      "lineIndex": 148
+    },
+    {
+      "start": 531.846,
+      "end": 533.332,
+      "type": "line",
+      "text": "and stood forth,",
+      "verse": "9:34",
+      "lineIndex": 149
+    },
+    {
+      "start": 533.512,
+      "end": 535.88,
+      "type": "line",
+      "text": "and began to preach unto them also.",
+      "verse": "9:34",
+      "lineIndex": 150
+    },
+    {
+      "start": 536.06,
+      "end": 539.404,
+      "type": "line",
+      "text": "And now the words of Amulek are not all written,",
+      "verse": "9:34",
+      "lineIndex": 151
+    },
+    {
+      "start": 539.584,
+      "end": 542.788,
+      "type": "line",
+      "text": "nevertheless a part of his words are written in this book.",
+      "verse": "9:34",
+      "lineIndex": 152
+    }
+  ]
+}
