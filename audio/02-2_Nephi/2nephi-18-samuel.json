@@ -1,0 +1,672 @@
+{
+  "book": "2nephi",
+  "bookName": "2 Nephi",
+  "chapter": 18,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 223.031,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.111,
+      "type": "line",
+      "text": "Moreover, the word of the Lord said unto me:",
+      "verse": "18:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.291,
+      "end": 5.009,
+      "type": "line",
+      "text": "Take thee a great roll,",
+      "verse": "18:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.189,
+      "end": 7.65,
+      "type": "line",
+      "text": "and write in it with a man's pen,",
+      "verse": "18:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 7.83,
+      "end": 10.059,
+      "type": "line",
+      "text": "concerning Maher-shalal-hash-baz.",
+      "verse": "18:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 10.739,
+      "end": 13.943,
+      "type": "line",
+      "text": "And I took unto me faithful witnesses to record,",
+      "verse": "18:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.123,
+      "end": 15.609,
+      "type": "line",
+      "text": "Uriah the priest,",
+      "verse": "18:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 15.789,
+      "end": 18.343,
+      "type": "line",
+      "text": "and Zechariah the son of Jeberechiah.",
+      "verse": "18:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 19.023,
+      "end": 21.206,
+      "type": "line",
+      "text": "And I went unto the prophetess;",
+      "verse": "18:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 21.386,
+      "end": 23.569,
+      "type": "line",
+      "text": "and she conceived and bare a son.",
+      "verse": "18:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 23.749,
+      "end": 25.421,
+      "type": "line",
+      "text": "Then said the Lord to me:",
+      "verse": "18:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 25.601,
+      "end": 28.341,
+      "type": "line",
+      "text": "Call his name, Maher-shalal-hash-baz.",
+      "verse": "18:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 29.021,
+      "end": 31.854,
+      "type": "line",
+      "text": "For behold, the child shall not have knowledge to cry,",
+      "verse": "18:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 32.034,
+      "end": 37.375,
+      "type": "line",
+      "text": "My father, and my mother, before the riches of Damascus and the spoil of Samaria",
+      "verse": "18:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 37.555,
+      "end": 40.666,
+      "type": "line",
+      "text": "shall be taken away before the king of Assyria.",
+      "verse": "18:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 41.346,
+      "end": 43.761,
+      "type": "line",
+      "text": "The Lord spake also unto me again, saying:",
+      "verse": "18:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 44.441,
+      "end": 49.224,
+      "type": "line",
+      "text": "Forasmuch as this people refuseth the waters of Shiloah that go softly,",
+      "verse": "18:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 49.404,
+      "end": 52.376,
+      "type": "line",
+      "text": "and rejoice in Rezin and Remaliah's son;",
+      "verse": "18:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 53.056,
+      "end": 54.496,
+      "type": "line",
+      "text": "Now therefore, behold,",
+      "verse": "18:7",
+      "lineIndex": 19
+    },
+    {
+      "start": 54.676,
+      "end": 58.113,
+      "type": "line",
+      "text": "the Lord bringeth up upon them the waters of the river,",
+      "verse": "18:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 58.293,
+      "end": 59.965,
+      "type": "line",
+      "text": "strong and many,",
+      "verse": "18:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 60.145,
+      "end": 62.792,
+      "type": "line",
+      "text": "even the king of Assyria and all his glory;",
+      "verse": "18:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 62.972,
+      "end": 65.805,
+      "type": "line",
+      "text": "and he shall come up over all his channels,",
+      "verse": "18:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 65.985,
+      "end": 67.61,
+      "type": "line",
+      "text": "and go over all his banks.",
+      "verse": "18:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 68.29,
+      "end": 70.287,
+      "type": "line",
+      "text": "And he shall pass through Judah;",
+      "verse": "18:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 70.467,
+      "end": 72.975,
+      "type": "line",
+      "text": "he shall overflow and go over,",
+      "verse": "18:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 73.155,
+      "end": 75.291,
+      "type": "line",
+      "text": "he shall reach even to the neck;",
+      "verse": "18:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 75.471,
+      "end": 77.839,
+      "type": "line",
+      "text": "and the stretching out of his wings",
+      "verse": "18:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 78.019,
+      "end": 80.295,
+      "type": "line",
+      "text": "shall fill the breadth of thy land,",
+      "verse": "18:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 80.475,
+      "end": 81.636,
+      "type": "line",
+      "text": "O Immanuel.",
+      "verse": "18:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 82.316,
+      "end": 83.802,
+      "type": "line",
+      "text": "Associate yourselves,",
+      "verse": "18:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 83.982,
+      "end": 85.05,
+      "type": "line",
+      "text": "O ye people,",
+      "verse": "18:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 85.23,
+      "end": 87.598,
+      "type": "line",
+      "text": "and ye shall be broken in pieces;",
+      "verse": "18:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 87.778,
+      "end": 90.239,
+      "type": "line",
+      "text": "and give ear all ye of far countries;",
+      "verse": "18:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 90.419,
+      "end": 91.859,
+      "type": "line",
+      "text": "gird yourselves,",
+      "verse": "18:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 92.039,
+      "end": 94.407,
+      "type": "line",
+      "text": "and ye shall be broken in pieces;",
+      "verse": "18:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 94.587,
+      "end": 96.027,
+      "type": "line",
+      "text": "gird yourselves,",
+      "verse": "18:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 96.207,
+      "end": 98.297,
+      "type": "line",
+      "text": "and ye shall be broken in pieces.",
+      "verse": "18:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 98.977,
+      "end": 100.51,
+      "type": "line",
+      "text": "Take counsel together,",
+      "verse": "18:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 100.69,
+      "end": 102.548,
+      "type": "line",
+      "text": "and it shall come to naught;",
+      "verse": "18:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 102.728,
+      "end": 105.189,
+      "type": "line",
+      "text": "speak the word, and it shall not stand;",
+      "verse": "18:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 105.369,
+      "end": 106.948,
+      "type": "line",
+      "text": "for God is with us.",
+      "verse": "18:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 107.628,
+      "end": 110.739,
+      "type": "line",
+      "text": "For the Lord spake thus to me with a strong hand,",
+      "verse": "18:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 110.919,
+      "end": 115.563,
+      "type": "line",
+      "text": "and instructed me that I should not walk in the way of this people, saying:",
+      "verse": "18:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 116.243,
+      "end": 118.24,
+      "type": "line",
+      "text": "Say ye not, A confederacy,",
+      "verse": "18:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 118.42,
+      "end": 121.857,
+      "type": "line",
+      "text": "to all to whom this people shall say, A confederacy;",
+      "verse": "18:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 122.037,
+      "end": 123.941,
+      "type": "line",
+      "text": "neither fear ye their fear,",
+      "verse": "18:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 124.121,
+      "end": 125.282,
+      "type": "line",
+      "text": "nor be afraid.",
+      "verse": "18:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 125.962,
+      "end": 128.47,
+      "type": "line",
+      "text": "Sanctify the Lord of Hosts himself,",
+      "verse": "18:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 128.65,
+      "end": 130.461,
+      "type": "line",
+      "text": "and let him be your fear,",
+      "verse": "18:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 130.641,
+      "end": 132.359,
+      "type": "line",
+      "text": "and let him be your dread.",
+      "verse": "18:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 133.039,
+      "end": 135.222,
+      "type": "line",
+      "text": "And he shall be for a sanctuary;",
+      "verse": "18:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 135.402,
+      "end": 137.492,
+      "type": "line",
+      "text": "but for a stone of stumbling,",
+      "verse": "18:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 137.672,
+      "end": 141.294,
+      "type": "line",
+      "text": "and for a rock of offense to both the houses of Israel,",
+      "verse": "18:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 141.474,
+      "end": 145.514,
+      "type": "line",
+      "text": "for a gin and a snare to the inhabitants of Jerusalem.",
+      "verse": "18:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 146.194,
+      "end": 148.795,
+      "type": "line",
+      "text": "And many among them shall stumble",
+      "verse": "18:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 148.975,
+      "end": 149.997,
+      "type": "line",
+      "text": "and fall,",
+      "verse": "18:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 150.177,
+      "end": 153.103,
+      "type": "line",
+      "text": "and be broken, and be snared, and be taken.",
+      "verse": "18:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 153.783,
+      "end": 155.362,
+      "type": "line",
+      "text": "Bind up the testimony,",
+      "verse": "18:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 155.542,
+      "end": 157.678,
+      "type": "line",
+      "text": "seal the law among my disciples.",
+      "verse": "18:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 158.358,
+      "end": 160.68,
+      "type": "line",
+      "text": "And I will wait upon the Lord,",
+      "verse": "18:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 160.86,
+      "end": 163.739,
+      "type": "line",
+      "text": "that hideth his face from the house of Jacob,",
+      "verse": "18:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 163.919,
+      "end": 165.73,
+      "type": "line",
+      "text": "and I will look for him.",
+      "verse": "18:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 166.41,
+      "end": 169.754,
+      "type": "line",
+      "text": "Behold, I and the children whom the Lord hath given me",
+      "verse": "18:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 169.934,
+      "end": 176.482,
+      "type": "line",
+      "text": "are for signs and for wonders in Israel from the Lord of Hosts, which dwelleth in Mount Zion.",
+      "verse": "18:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 177.162,
+      "end": 179.298,
+      "type": "line",
+      "text": "And when they shall say unto you:",
+      "verse": "18:19",
+      "lineIndex": 68
+    },
+    {
+      "start": 179.478,
+      "end": 182.404,
+      "type": "line",
+      "text": "Seek unto them that have familiar spirits,",
+      "verse": "18:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 182.584,
+      "end": 184.999,
+      "type": "line",
+      "text": "and unto wizards that peep and mutter\u2014",
+      "verse": "18:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 185.179,
+      "end": 187.594,
+      "type": "line",
+      "text": "should not a people seek unto their God",
+      "verse": "18:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 187.774,
+      "end": 190.746,
+      "type": "line",
+      "text": "for the living to hear from the dead?",
+      "verse": "18:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 191.426,
+      "end": 193.794,
+      "type": "line",
+      "text": "To the law and to the testimony;",
+      "verse": "18:20",
+      "lineIndex": 73
+    },
+    {
+      "start": 193.974,
+      "end": 196.76,
+      "type": "line",
+      "text": "and if they speak not according to this word,",
+      "verse": "18:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 196.94,
+      "end": 199.216,
+      "type": "line",
+      "text": "it is because there is no light in them.",
+      "verse": "18:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 199.896,
+      "end": 203.007,
+      "type": "line",
+      "text": "And they shall pass through it hardly bestead and hungry;",
+      "verse": "18:21",
+      "lineIndex": 76
+    },
+    {
+      "start": 203.187,
+      "end": 204.952,
+      "type": "line",
+      "text": "and it shall come to pass",
+      "verse": "18:21",
+      "lineIndex": 77
+    },
+    {
+      "start": 205.132,
+      "end": 208.058,
+      "type": "line",
+      "text": "when they shall be hungry, they shall fret themselves,",
+      "verse": "18:21",
+      "lineIndex": 78
+    },
+    {
+      "start": 208.238,
+      "end": 210.514,
+      "type": "line",
+      "text": "and curse their king and their God,",
+      "verse": "18:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 210.694,
+      "end": 212.041,
+      "type": "line",
+      "text": "and look upward.",
+      "verse": "18:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 212.721,
+      "end": 215.507,
+      "type": "line",
+      "text": "And they shall look unto the earth",
+      "verse": "18:22",
+      "lineIndex": 81
+    },
+    {
+      "start": 215.687,
+      "end": 218.009,
+      "type": "line",
+      "text": "and behold trouble, and darkness,",
+      "verse": "18:22",
+      "lineIndex": 82
+    },
+    {
+      "start": 218.189,
+      "end": 219.954,
+      "type": "line",
+      "text": "dimness of anguish,",
+      "verse": "18:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 220.134,
+      "end": 222.363,
+      "type": "line",
+      "text": "and shall be driven to darkness.",
+      "verse": "18:22",
+      "lineIndex": 84
+    }
+  ]
+}
