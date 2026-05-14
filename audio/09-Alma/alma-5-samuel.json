@@ -1,0 +1,2552 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 5,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 1012.316,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.291,
+      "type": "line",
+      "text": "Now it came to pass that Alma began to deliver the word of God unto the people, first in the land of Zarahemla,",
+      "verse": "5:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.471,
+      "end": 9.886,
+      "type": "line",
+      "text": "and from thence throughout all the land.",
+      "verse": "5:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.566,
+      "end": 14.374,
+      "type": "line",
+      "text": "And these are the words which he spake to the people in the church",
+      "verse": "5:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.554,
+      "end": 20.266,
+      "type": "line",
+      "text": "which was established in the city of Zarahemla, according to his own record, saying:",
+      "verse": "5:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 20.946,
+      "end": 27.587,
+      "type": "line",
+      "text": "I, Alma, having been consecrated by my father, Alma, to be a high priest over the church of God,",
+      "verse": "5:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 27.767,
+      "end": 31.343,
+      "type": "line",
+      "text": "he having power and authority from God to do these things,",
+      "verse": "5:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 31.523,
+      "end": 33.195,
+      "type": "line",
+      "text": "behold, I say unto you",
+      "verse": "5:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 33.375,
+      "end": 39.598,
+      "type": "line",
+      "text": "that he began to establish a church in the land which was in the borders of Nephi;",
+      "verse": "5:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 39.778,
+      "end": 42.936,
+      "type": "line",
+      "text": "yea, the land which was called the land of Mormon;",
+      "verse": "5:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 43.116,
+      "end": 47.203,
+      "type": "line",
+      "text": "yea, and he did baptize his brethren in the waters of Mormon.",
+      "verse": "5:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 47.883,
+      "end": 50.251,
+      "type": "line",
+      "text": "And behold, I say unto you,",
+      "verse": "5:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 50.431,
+      "end": 56.097,
+      "type": "line",
+      "text": "they were delivered out of the hands of the people of king Noah, by the mercy and power of God.",
+      "verse": "5:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 56.777,
+      "end": 62.907,
+      "type": "line",
+      "text": "And behold, after that, they were brought into bondage by the hands of the Lamanites in the wilderness;",
+      "verse": "5:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 63.087,
+      "end": 65.781,
+      "type": "line",
+      "text": "yea, I say unto you, they were in captivity,",
+      "verse": "5:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 65.961,
+      "end": 70.605,
+      "type": "line",
+      "text": "and again the Lord did deliver them out of bondage by the power of his word;",
+      "verse": "5:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 70.785,
+      "end": 72.828,
+      "type": "line",
+      "text": "and we were brought into this land,",
+      "verse": "5:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 73.008,
+      "end": 77.373,
+      "type": "line",
+      "text": "and here we began to establish the church of God throughout this land also.",
+      "verse": "5:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 78.053,
+      "end": 80.793,
+      "type": "line",
+      "text": "And now behold, I say unto you, my brethren,",
+      "verse": "5:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 80.973,
+      "end": 88.636,
+      "type": "line",
+      "text": "you that belong to this church, have you sufficiently retained in remembrance the captivity of your fathers?",
+      "verse": "5:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 88.816,
+      "end": 95.178,
+      "type": "line",
+      "text": "Yea, and have you sufficiently retained in remembrance his mercy and long-suffering towards them?",
+      "verse": "5:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 95.358,
+      "end": 103.439,
+      "type": "line",
+      "text": "And moreover, have ye sufficiently retained in remembrance that he has delivered their souls from hell?",
+      "verse": "5:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 104.119,
+      "end": 106.255,
+      "type": "line",
+      "text": "Behold, he changed their hearts;",
+      "verse": "5:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 106.435,
+      "end": 109.221,
+      "type": "line",
+      "text": "yea, he awakened them out of a deep sleep,",
+      "verse": "5:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 109.401,
+      "end": 111.119,
+      "type": "line",
+      "text": "and they awoke unto God.",
+      "verse": "5:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 111.299,
+      "end": 113.993,
+      "type": "line",
+      "text": "Behold, they were in the midst of darkness;",
+      "verse": "5:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 114.173,
+      "end": 119.421,
+      "type": "line",
+      "text": "nevertheless, their souls were illuminated by the light of the everlasting word;",
+      "verse": "5:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 119.601,
+      "end": 122.712,
+      "type": "line",
+      "text": "yea, they were encircled about by the bands of death,",
+      "verse": "5:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 122.892,
+      "end": 124.425,
+      "type": "line",
+      "text": "and the chains of hell,",
+      "verse": "5:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 124.605,
+      "end": 127.577,
+      "type": "line",
+      "text": "and an everlasting destruction did await them.",
+      "verse": "5:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 128.257,
+      "end": 130.347,
+      "type": "line",
+      "text": "And now I ask of you, my brethren,",
+      "verse": "5:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 130.527,
+      "end": 131.92,
+      "type": "line",
+      "text": "were they destroyed?",
+      "verse": "5:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 132.1,
+      "end": 133.772,
+      "type": "line",
+      "text": "Behold, I say unto you,",
+      "verse": "5:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 133.952,
+      "end": 135.438,
+      "type": "line",
+      "text": "Nay, they were not.",
+      "verse": "5:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 136.118,
+      "end": 137.651,
+      "type": "line",
+      "text": "And again I ask,",
+      "verse": "5:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 137.831,
+      "end": 139.874,
+      "type": "line",
+      "text": "were the bands of death broken,",
+      "verse": "5:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 140.054,
+      "end": 143.491,
+      "type": "line",
+      "text": "and the chains of hell which encircled them about,",
+      "verse": "5:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 143.671,
+      "end": 145.064,
+      "type": "line",
+      "text": "were they loosed?",
+      "verse": "5:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 145.244,
+      "end": 146.73,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 146.91,
+      "end": 148.303,
+      "type": "line",
+      "text": "Yea, they were loosed,",
+      "verse": "5:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 148.483,
+      "end": 150.48,
+      "type": "line",
+      "text": "and their souls did expand,",
+      "verse": "5:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 150.66,
+      "end": 152.936,
+      "type": "line",
+      "text": "and they did sing redeeming love.",
+      "verse": "5:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 153.116,
+      "end": 155.345,
+      "type": "line",
+      "text": "And I say unto you that they are saved.",
+      "verse": "5:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 156.025,
+      "end": 157.65,
+      "type": "line",
+      "text": "And now I ask of you",
+      "verse": "5:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 157.83,
+      "end": 159.966,
+      "type": "line",
+      "text": "on what conditions are they saved?",
+      "verse": "5:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 160.146,
+      "end": 163.165,
+      "type": "line",
+      "text": "Yea, what grounds had they to hope for salvation?",
+      "verse": "5:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 163.345,
+      "end": 169.568,
+      "type": "line",
+      "text": "What is the cause of their being loosed from the bands of death, yea, and also the chains of hell?",
+      "verse": "5:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 170.248,
+      "end": 171.873,
+      "type": "line",
+      "text": "Behold, I can tell you\u2014",
+      "verse": "5:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 172.053,
+      "end": 174.747,
+      "type": "line",
+      "text": "did not my father Alma believe in the words",
+      "verse": "5:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 174.927,
+      "end": 177.76,
+      "type": "line",
+      "text": "which were delivered by the mouth of Abinadi?",
+      "verse": "5:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 177.94,
+      "end": 179.798,
+      "type": "line",
+      "text": "And was he not a holy prophet?",
+      "verse": "5:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 179.978,
+      "end": 182.486,
+      "type": "line",
+      "text": "Did he not speak the words of God,",
+      "verse": "5:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 182.666,
+      "end": 184.663,
+      "type": "line",
+      "text": "and my father Alma believe them?",
+      "verse": "5:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 185.343,
+      "end": 187.108,
+      "type": "line",
+      "text": "And according to his faith",
+      "verse": "5:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 187.288,
+      "end": 190.771,
+      "type": "line",
+      "text": "there was a mighty change wrought in his heart.",
+      "verse": "5:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 190.951,
+      "end": 193.459,
+      "type": "line",
+      "text": "Behold I say unto you that this is all true.",
+      "verse": "5:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 194.139,
+      "end": 197.343,
+      "type": "line",
+      "text": "And behold, he preached the word unto your fathers,",
+      "verse": "5:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 197.523,
+      "end": 200.774,
+      "type": "line",
+      "text": "and a mighty change was also wrought in their hearts,",
+      "verse": "5:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 200.954,
+      "end": 202.951,
+      "type": "line",
+      "text": "and they humbled themselves",
+      "verse": "5:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 203.131,
+      "end": 206.428,
+      "type": "line",
+      "text": "and put their trust in the true and living God.",
+      "verse": "5:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 206.608,
+      "end": 209.209,
+      "type": "line",
+      "text": "And behold, they were faithful until the end;",
+      "verse": "5:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 209.389,
+      "end": 210.922,
+      "type": "line",
+      "text": "therefore they were saved.",
+      "verse": "5:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 211.602,
+      "end": 213.738,
+      "type": "line",
+      "text": "And now behold, I ask of you,",
+      "verse": "5:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 213.918,
+      "end": 215.822,
+      "type": "line",
+      "text": "my brethren of the church,",
+      "verse": "5:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 216.002,
+      "end": 218.324,
+      "type": "line",
+      "text": "have ye spiritually been born of God?",
+      "verse": "5:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 218.504,
+      "end": 221.244,
+      "type": "line",
+      "text": "Have ye received his image in your countenances?",
+      "verse": "5:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 221.424,
+      "end": 224.768,
+      "type": "line",
+      "text": "Have ye experienced this mighty change in your hearts?",
+      "verse": "5:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 225.448,
+      "end": 229.256,
+      "type": "line",
+      "text": "Do ye exercise faith in the redemption of him who created you?",
+      "verse": "5:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 229.436,
+      "end": 231.804,
+      "type": "line",
+      "text": "Do you look forward with an eye of faith,",
+      "verse": "5:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 231.984,
+      "end": 235.142,
+      "type": "line",
+      "text": "and view this mortal body raised in immortality,",
+      "verse": "5:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 235.322,
+      "end": 238.201,
+      "type": "line",
+      "text": "and this corruption raised in incorruption,",
+      "verse": "5:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 238.381,
+      "end": 244.65,
+      "type": "line",
+      "text": "to stand before God to be judged according to the deeds which have been done in the mortal body?",
+      "verse": "5:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 245.33,
+      "end": 246.816,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 246.996,
+      "end": 252.29,
+      "type": "line",
+      "text": "can you imagine to yourselves that ye hear the voice of the Lord, saying unto you, in that day:",
+      "verse": "5:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 252.47,
+      "end": 254.188,
+      "type": "line",
+      "text": "Come unto me ye blessed,",
+      "verse": "5:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 254.368,
+      "end": 259.105,
+      "type": "line",
+      "text": "for behold, your works have been the works of righteousness upon the face of the earth?",
+      "verse": "5:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 259.785,
+      "end": 264.522,
+      "type": "line",
+      "text": "Or do ye imagine to yourselves that ye can lie unto the Lord in that day, and say\u2014",
+      "verse": "5:17",
+      "lineIndex": 77
+    },
+    {
+      "start": 264.702,
+      "end": 269.578,
+      "type": "line",
+      "text": "Lord, our works have been righteous works upon the face of the earth\u2014",
+      "verse": "5:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 269.758,
+      "end": 271.244,
+      "type": "line",
+      "text": "and that he will save you?",
+      "verse": "5:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 271.924,
+      "end": 279.494,
+      "type": "line",
+      "text": "Or otherwise, can ye imagine yourselves brought before the tribunal of God with your souls filled with guilt and remorse,",
+      "verse": "5:18",
+      "lineIndex": 80
+    },
+    {
+      "start": 279.674,
+      "end": 282.275,
+      "type": "line",
+      "text": "having a remembrance of all your guilt,",
+      "verse": "5:18",
+      "lineIndex": 81
+    },
+    {
+      "start": 282.455,
+      "end": 285.984,
+      "type": "line",
+      "text": "yea, a perfect remembrance of all your wickedness,",
+      "verse": "5:18",
+      "lineIndex": 82
+    },
+    {
+      "start": 286.164,
+      "end": 290.762,
+      "type": "line",
+      "text": "yea, a remembrance that ye have set at defiance the commandments of God?",
+      "verse": "5:18",
+      "lineIndex": 83
+    },
+    {
+      "start": 291.442,
+      "end": 292.928,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 293.108,
+      "end": 297.241,
+      "type": "line",
+      "text": "can ye look up to God at that day with a pure heart and clean hands?",
+      "verse": "5:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 297.421,
+      "end": 298.907,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:19",
+      "lineIndex": 86
+    },
+    {
+      "start": 299.087,
+      "end": 303.592,
+      "type": "line",
+      "text": "can you look up, having the image of God engraven upon your countenances?",
+      "verse": "5:19",
+      "lineIndex": 87
+    },
+    {
+      "start": 304.272,
+      "end": 305.758,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:20",
+      "lineIndex": 88
+    },
+    {
+      "start": 305.938,
+      "end": 308.028,
+      "type": "line",
+      "text": "can ye think of being saved",
+      "verse": "5:20",
+      "lineIndex": 89
+    },
+    {
+      "start": 308.208,
+      "end": 311.552,
+      "type": "line",
+      "text": "when you have yielded yourselves to become subjects to the devil?",
+      "verse": "5:20",
+      "lineIndex": 90
+    },
+    {
+      "start": 312.232,
+      "end": 313.718,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:21",
+      "lineIndex": 91
+    },
+    {
+      "start": 313.898,
+      "end": 316.917,
+      "type": "line",
+      "text": "ye will know at that day that ye cannot be saved;",
+      "verse": "5:21",
+      "lineIndex": 92
+    },
+    {
+      "start": 317.097,
+      "end": 319.326,
+      "type": "line",
+      "text": "for there can no man be saved",
+      "verse": "5:21",
+      "lineIndex": 93
+    },
+    {
+      "start": 319.506,
+      "end": 322.06,
+      "type": "line",
+      "text": "except his garments are washed white;",
+      "verse": "5:21",
+      "lineIndex": 94
+    },
+    {
+      "start": 322.24,
+      "end": 324.655,
+      "type": "line",
+      "text": "yea, his garments must be purified",
+      "verse": "5:21",
+      "lineIndex": 95
+    },
+    {
+      "start": 324.835,
+      "end": 331.569,
+      "type": "line",
+      "text": "until they are cleansed from all stain, through the blood of him of whom it has been spoken by our fathers,",
+      "verse": "5:21",
+      "lineIndex": 96
+    },
+    {
+      "start": 331.749,
+      "end": 335.186,
+      "type": "line",
+      "text": "who should come to redeem his people from their sins.",
+      "verse": "5:21",
+      "lineIndex": 97
+    },
+    {
+      "start": 335.866,
+      "end": 337.956,
+      "type": "line",
+      "text": "And now I ask of you, my brethren,",
+      "verse": "5:22",
+      "lineIndex": 98
+    },
+    {
+      "start": 338.136,
+      "end": 339.808,
+      "type": "line",
+      "text": "how will any of you feel,",
+      "verse": "5:22",
+      "lineIndex": 99
+    },
+    {
+      "start": 339.988,
+      "end": 347.233,
+      "type": "line",
+      "text": "if ye shall stand before the bar of God, having your garments stained with blood and all manner of filthiness?",
+      "verse": "5:22",
+      "lineIndex": 100
+    },
+    {
+      "start": 347.413,
+      "end": 350.617,
+      "type": "line",
+      "text": "Behold, what will these things testify against you?",
+      "verse": "5:22",
+      "lineIndex": 101
+    },
+    {
+      "start": 351.297,
+      "end": 359.006,
+      "type": "line",
+      "text": "Behold will they not testify that ye are murderers, yea, and also that ye are guilty of all manner of wickedness?",
+      "verse": "5:23",
+      "lineIndex": 102
+    },
+    {
+      "start": 359.686,
+      "end": 361.033,
+      "type": "line",
+      "text": "Behold, my brethren,",
+      "verse": "5:24",
+      "lineIndex": 104
+    },
+    {
+      "start": 361.213,
+      "end": 372.126,
+      "type": "line",
+      "text": "do ye suppose that such an one can have a place to sit down in the kingdom of God, with Abraham, with Isaac, and with Jacob, and also all the holy prophets,",
+      "verse": "5:24",
+      "lineIndex": 105
+    },
+    {
+      "start": 372.306,
+      "end": 376.671,
+      "type": "line",
+      "text": "whose garments are cleansed and are spotless, pure and white?",
+      "verse": "5:24",
+      "lineIndex": 106
+    },
+    {
+      "start": 377.351,
+      "end": 378.837,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:25",
+      "lineIndex": 107
+    },
+    {
+      "start": 379.017,
+      "end": 382.639,
+      "type": "line",
+      "text": "Nay; except ye make our Creator a liar from the beginning,",
+      "verse": "5:25",
+      "lineIndex": 108
+    },
+    {
+      "start": 382.819,
+      "end": 385.93,
+      "type": "line",
+      "text": "or suppose that he is a liar from the beginning,",
+      "verse": "5:25",
+      "lineIndex": 109
+    },
+    {
+      "start": 386.11,
+      "end": 390.568,
+      "type": "line",
+      "text": "ye cannot suppose that such can have place in the kingdom of heaven;",
+      "verse": "5:25",
+      "lineIndex": 110
+    },
+    {
+      "start": 390.748,
+      "end": 392.698,
+      "type": "line",
+      "text": "but they shall be cast out",
+      "verse": "5:25",
+      "lineIndex": 111
+    },
+    {
+      "start": 392.878,
+      "end": 396.547,
+      "type": "line",
+      "text": "for they are the children of the kingdom of the devil.",
+      "verse": "5:25",
+      "lineIndex": 112
+    },
+    {
+      "start": 397.227,
+      "end": 399.967,
+      "type": "line",
+      "text": "And now behold, I say unto you, my brethren,",
+      "verse": "5:26",
+      "lineIndex": 113
+    },
+    {
+      "start": 400.147,
+      "end": 402.469,
+      "type": "line",
+      "text": "if ye have experienced a change of heart,",
+      "verse": "5:26",
+      "lineIndex": 114
+    },
+    {
+      "start": 402.649,
+      "end": 405.946,
+      "type": "line",
+      "text": "and if ye have felt to sing the song of redeeming love,",
+      "verse": "5:26",
+      "lineIndex": 115
+    },
+    {
+      "start": 406.126,
+      "end": 408.541,
+      "type": "line",
+      "text": "I would ask, can ye feel so now?",
+      "verse": "5:26",
+      "lineIndex": 116
+    },
+    {
+      "start": 409.221,
+      "end": 412.518,
+      "type": "line",
+      "text": "Have ye walked, keeping yourselves blameless before God?",
+      "verse": "5:27",
+      "lineIndex": 117
+    },
+    {
+      "start": 412.698,
+      "end": 414.045,
+      "type": "line",
+      "text": "Could ye say,",
+      "verse": "5:27",
+      "lineIndex": 118
+    },
+    {
+      "start": 414.225,
+      "end": 416.686,
+      "type": "line",
+      "text": "if ye were called to die at this time,",
+      "verse": "5:27",
+      "lineIndex": 119
+    },
+    {
+      "start": 416.866,
+      "end": 418.352,
+      "type": "line",
+      "text": "within yourselves,",
+      "verse": "5:27",
+      "lineIndex": 120
+    },
+    {
+      "start": 418.532,
+      "end": 420.9,
+      "type": "line",
+      "text": "that ye have been sufficiently humble?",
+      "verse": "5:27",
+      "lineIndex": 121
+    },
+    {
+      "start": 421.08,
+      "end": 425.445,
+      "type": "line",
+      "text": "That your garments have been cleansed and made white through the blood of Christ,",
+      "verse": "5:27",
+      "lineIndex": 122
+    },
+    {
+      "start": 425.625,
+      "end": 429.201,
+      "type": "line",
+      "text": "who will come to redeem his people from their sins?",
+      "verse": "5:27",
+      "lineIndex": 123
+    },
+    {
+      "start": 429.881,
+      "end": 431.924,
+      "type": "line",
+      "text": "Behold, are ye stripped of pride?",
+      "verse": "5:28",
+      "lineIndex": 124
+    },
+    {
+      "start": 432.104,
+      "end": 433.59,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:28",
+      "lineIndex": 125
+    },
+    {
+      "start": 433.77,
+      "end": 435.256,
+      "type": "line",
+      "text": "if ye are not",
+      "verse": "5:28",
+      "lineIndex": 126
+    },
+    {
+      "start": 435.436,
+      "end": 437.526,
+      "type": "line",
+      "text": "ye are not prepared to meet God.",
+      "verse": "5:28",
+      "lineIndex": 127
+    },
+    {
+      "start": 437.706,
+      "end": 439.749,
+      "type": "line",
+      "text": "Behold ye must prepare quickly;",
+      "verse": "5:28",
+      "lineIndex": 128
+    },
+    {
+      "start": 439.929,
+      "end": 442.437,
+      "type": "line",
+      "text": "for the kingdom of heaven is soon at hand,",
+      "verse": "5:28",
+      "lineIndex": 129
+    },
+    {
+      "start": 442.617,
+      "end": 445.032,
+      "type": "line",
+      "text": "and such an one hath not eternal life.",
+      "verse": "5:28",
+      "lineIndex": 130
+    },
+    {
+      "start": 445.712,
+      "end": 447.059,
+      "type": "line",
+      "text": "Behold, I say,",
+      "verse": "5:29",
+      "lineIndex": 131
+    },
+    {
+      "start": 447.239,
+      "end": 450.397,
+      "type": "line",
+      "text": "is there one among you who is not stripped of envy?",
+      "verse": "5:29",
+      "lineIndex": 132
+    },
+    {
+      "start": 450.577,
+      "end": 453.363,
+      "type": "line",
+      "text": "I say unto you that such an one is not prepared;",
+      "verse": "5:29",
+      "lineIndex": 133
+    },
+    {
+      "start": 453.543,
+      "end": 456.19,
+      "type": "line",
+      "text": "and I would that he should prepare quickly,",
+      "verse": "5:29",
+      "lineIndex": 134
+    },
+    {
+      "start": 456.37,
+      "end": 458.692,
+      "type": "line",
+      "text": "for the hour is close at hand,",
+      "verse": "5:29",
+      "lineIndex": 135
+    },
+    {
+      "start": 458.872,
+      "end": 461.473,
+      "type": "line",
+      "text": "and he knoweth not when the time shall come;",
+      "verse": "5:29",
+      "lineIndex": 136
+    },
+    {
+      "start": 461.653,
+      "end": 464.068,
+      "type": "line",
+      "text": "for such an one is not found guiltless.",
+      "verse": "5:29",
+      "lineIndex": 137
+    },
+    {
+      "start": 464.748,
+      "end": 466.466,
+      "type": "line",
+      "text": "And again I say unto you,",
+      "verse": "5:30",
+      "lineIndex": 139
+    },
+    {
+      "start": 466.646,
+      "end": 470.64,
+      "type": "line",
+      "text": "is there one among you that doth make a mock of his brother,",
+      "verse": "5:30",
+      "lineIndex": 140
+    },
+    {
+      "start": 470.82,
+      "end": 473.421,
+      "type": "line",
+      "text": "or that heapeth upon him persecutions?",
+      "verse": "5:30",
+      "lineIndex": 141
+    },
+    {
+      "start": 474.101,
+      "end": 475.68,
+      "type": "line",
+      "text": "Wo unto such an one,",
+      "verse": "5:31",
+      "lineIndex": 142
+    },
+    {
+      "start": 475.86,
+      "end": 477.393,
+      "type": "line",
+      "text": "for he is not prepared,",
+      "verse": "5:31",
+      "lineIndex": 143
+    },
+    {
+      "start": 477.573,
+      "end": 481.381,
+      "type": "line",
+      "text": "and the time is at hand that he must repent or he cannot be saved!",
+      "verse": "5:31",
+      "lineIndex": 144
+    },
+    {
+      "start": 482.061,
+      "end": 485.358,
+      "type": "line",
+      "text": "Yea, even wo unto all ye workers of iniquity;",
+      "verse": "5:32",
+      "lineIndex": 145
+    },
+    {
+      "start": 485.538,
+      "end": 486.978,
+      "type": "line",
+      "text": "repent, repent,",
+      "verse": "5:32",
+      "lineIndex": 146
+    },
+    {
+      "start": 487.158,
+      "end": 489.387,
+      "type": "line",
+      "text": "for the Lord God hath spoken it!",
+      "verse": "5:32",
+      "lineIndex": 147
+    },
+    {
+      "start": 490.067,
+      "end": 493.875,
+      "type": "line",
+      "text": "Behold, he sendeth an invitation unto all men,",
+      "verse": "5:33",
+      "lineIndex": 148
+    },
+    {
+      "start": 494.055,
+      "end": 496.981,
+      "type": "line",
+      "text": "for the arms of mercy are extended towards them,",
+      "verse": "5:33",
+      "lineIndex": 149
+    },
+    {
+      "start": 497.161,
+      "end": 498.647,
+      "type": "line",
+      "text": "and he saith:",
+      "verse": "5:33",
+      "lineIndex": 150
+    },
+    {
+      "start": 498.827,
+      "end": 501.195,
+      "type": "line",
+      "text": "Repent, and I will receive you.",
+      "verse": "5:33",
+      "lineIndex": 151
+    },
+    {
+      "start": 501.875,
+      "end": 503.175,
+      "type": "line",
+      "text": "Yea, he saith:",
+      "verse": "5:34",
+      "lineIndex": 152
+    },
+    {
+      "start": 503.355,
+      "end": 508.278,
+      "type": "line",
+      "text": "Come unto me and ye shall partake of the fruit of the tree of life;",
+      "verse": "5:34",
+      "lineIndex": 153
+    },
+    {
+      "start": 508.458,
+      "end": 512.266,
+      "type": "line",
+      "text": "yea, ye shall eat and drink of the bread and the waters of life freely;",
+      "verse": "5:34",
+      "lineIndex": 154
+    },
+    {
+      "start": 512.946,
+      "end": 516.057,
+      "type": "line",
+      "text": "Yea, come unto me and bring forth works of righteousness,",
+      "verse": "5:35",
+      "lineIndex": 155
+    },
+    {
+      "start": 516.237,
+      "end": 519.534,
+      "type": "line",
+      "text": "and ye shall not be hewn down and cast into the fire\u2014",
+      "verse": "5:35",
+      "lineIndex": 156
+    },
+    {
+      "start": 520.214,
+      "end": 522.443,
+      "type": "line",
+      "text": "For behold, the time is at hand",
+      "verse": "5:36",
+      "lineIndex": 157
+    },
+    {
+      "start": 522.623,
+      "end": 525.409,
+      "type": "line",
+      "text": "that whosoever bringeth forth not good fruit,",
+      "verse": "5:36",
+      "lineIndex": 158
+    },
+    {
+      "start": 525.589,
+      "end": 528.793,
+      "type": "line",
+      "text": "or whosoever doeth not the works of righteousness,",
+      "verse": "5:36",
+      "lineIndex": 159
+    },
+    {
+      "start": 528.973,
+      "end": 531.713,
+      "type": "line",
+      "text": "the same have cause to wail and mourn.",
+      "verse": "5:36",
+      "lineIndex": 160
+    },
+    {
+      "start": 532.393,
+      "end": 534.39,
+      "type": "line",
+      "text": "O ye workers of iniquity;",
+      "verse": "5:37",
+      "lineIndex": 161
+    },
+    {
+      "start": 534.57,
+      "end": 537.914,
+      "type": "line",
+      "text": "ye that are puffed up in the vain things of the world,",
+      "verse": "5:37",
+      "lineIndex": 162
+    },
+    {
+      "start": 538.094,
+      "end": 541.902,
+      "type": "line",
+      "text": "ye that have professed to have known the ways of righteousness",
+      "verse": "5:37",
+      "lineIndex": 163
+    },
+    {
+      "start": 542.082,
+      "end": 544.218,
+      "type": "line",
+      "text": "nevertheless have gone astray,",
+      "verse": "5:37",
+      "lineIndex": 164
+    },
+    {
+      "start": 544.398,
+      "end": 546.441,
+      "type": "line",
+      "text": "as sheep having no shepherd,",
+      "verse": "5:37",
+      "lineIndex": 165
+    },
+    {
+      "start": 546.621,
+      "end": 549.593,
+      "type": "line",
+      "text": "notwithstanding a shepherd hath called after you",
+      "verse": "5:37",
+      "lineIndex": 166
+    },
+    {
+      "start": 549.773,
+      "end": 551.723,
+      "type": "line",
+      "text": "and is still calling after you,",
+      "verse": "5:37",
+      "lineIndex": 167
+    },
+    {
+      "start": 551.903,
+      "end": 554.179,
+      "type": "line",
+      "text": "but ye will not hearken unto his voice!",
+      "verse": "5:37",
+      "lineIndex": 168
+    },
+    {
+      "start": 554.859,
+      "end": 556.392,
+      "type": "line",
+      "text": "Behold, I say unto you",
+      "verse": "5:38",
+      "lineIndex": 169
+    },
+    {
+      "start": 556.572,
+      "end": 558.894,
+      "type": "line",
+      "text": "that the good shepherd doth call you;",
+      "verse": "5:38",
+      "lineIndex": 170
+    },
+    {
+      "start": 559.074,
+      "end": 563.997,
+      "type": "line",
+      "text": "yea, and in his own name he doth call you, which is the name of Christ;",
+      "verse": "5:38",
+      "lineIndex": 171
+    },
+    {
+      "start": 564.177,
+      "end": 567.521,
+      "type": "line",
+      "text": "and if ye will not hearken unto the voice of the good shepherd,",
+      "verse": "5:38",
+      "lineIndex": 172
+    },
+    {
+      "start": 567.701,
+      "end": 569.884,
+      "type": "line",
+      "text": "to the name by which ye are called,",
+      "verse": "5:38",
+      "lineIndex": 173
+    },
+    {
+      "start": 570.064,
+      "end": 573.408,
+      "type": "line",
+      "text": "behold, ye are not the sheep of the good shepherd.",
+      "verse": "5:38",
+      "lineIndex": 174
+    },
+    {
+      "start": 574.088,
+      "end": 577.153,
+      "type": "line",
+      "text": "And now if ye are not the sheep of the good shepherd,",
+      "verse": "5:39",
+      "lineIndex": 175
+    },
+    {
+      "start": 577.333,
+      "end": 578.866,
+      "type": "line",
+      "text": "of what fold are ye?",
+      "verse": "5:39",
+      "lineIndex": 176
+    },
+    {
+      "start": 579.046,
+      "end": 580.718,
+      "type": "line",
+      "text": "Behold, I say unto you,",
+      "verse": "5:39",
+      "lineIndex": 177
+    },
+    {
+      "start": 580.898,
+      "end": 583.592,
+      "type": "line",
+      "text": "that the devil is your shepherd",
+      "verse": "5:39",
+      "lineIndex": 178
+    },
+    {
+      "start": 583.772,
+      "end": 585.444,
+      "type": "line",
+      "text": "and ye are of his fold;",
+      "verse": "5:39",
+      "lineIndex": 179
+    },
+    {
+      "start": 585.624,
+      "end": 587.482,
+      "type": "line",
+      "text": "and now, who can deny this?",
+      "verse": "5:39",
+      "lineIndex": 180
+    },
+    {
+      "start": 587.662,
+      "end": 589.334,
+      "type": "line",
+      "text": "Behold, I say unto you,",
+      "verse": "5:39",
+      "lineIndex": 181
+    },
+    {
+      "start": 589.514,
+      "end": 593.183,
+      "type": "line",
+      "text": "whosoever denieth this is a liar and a child of the devil.",
+      "verse": "5:39",
+      "lineIndex": 182
+    },
+    {
+      "start": 593.863,
+      "end": 595.442,
+      "type": "line",
+      "text": "For I say unto you",
+      "verse": "5:40",
+      "lineIndex": 183
+    },
+    {
+      "start": 595.622,
+      "end": 598.362,
+      "type": "line",
+      "text": "that whatsoever is good cometh from God,",
+      "verse": "5:40",
+      "lineIndex": 184
+    },
+    {
+      "start": 598.542,
+      "end": 601.561,
+      "type": "line",
+      "text": "and whatsoever is evil cometh from the devil.",
+      "verse": "5:40",
+      "lineIndex": 185
+    },
+    {
+      "start": 602.241,
+      "end": 605.213,
+      "type": "line",
+      "text": "Therefore, if a man bringeth forth good works",
+      "verse": "5:41",
+      "lineIndex": 186
+    },
+    {
+      "start": 605.393,
+      "end": 608.644,
+      "type": "line",
+      "text": "he hearkeneth unto the voice of the good shepherd,",
+      "verse": "5:41",
+      "lineIndex": 187
+    },
+    {
+      "start": 608.824,
+      "end": 610.403,
+      "type": "line",
+      "text": "and he doth follow him;",
+      "verse": "5:41",
+      "lineIndex": 188
+    },
+    {
+      "start": 610.583,
+      "end": 613.23,
+      "type": "line",
+      "text": "but whosoever bringeth forth evil works,",
+      "verse": "5:41",
+      "lineIndex": 189
+    },
+    {
+      "start": 613.41,
+      "end": 615.825,
+      "type": "line",
+      "text": "the same becometh a child of the devil,",
+      "verse": "5:41",
+      "lineIndex": 190
+    },
+    {
+      "start": 616.005,
+      "end": 618.42,
+      "type": "line",
+      "text": "for he hearkeneth unto his voice,",
+      "verse": "5:41",
+      "lineIndex": 191
+    },
+    {
+      "start": 618.6,
+      "end": 620.04,
+      "type": "line",
+      "text": "and doth follow him.",
+      "verse": "5:41",
+      "lineIndex": 192
+    },
+    {
+      "start": 620.72,
+      "end": 624.157,
+      "type": "line",
+      "text": "And whosoever doeth this must receive his wages of him;",
+      "verse": "5:42",
+      "lineIndex": 193
+    },
+    {
+      "start": 624.337,
+      "end": 627.309,
+      "type": "line",
+      "text": "therefore, for his wages he receiveth death,",
+      "verse": "5:42",
+      "lineIndex": 194
+    },
+    {
+      "start": 627.489,
+      "end": 632.179,
+      "type": "line",
+      "text": "as to things pertaining unto righteousness, being dead unto all good works.",
+      "verse": "5:42",
+      "lineIndex": 195
+    },
+    {
+      "start": 632.859,
+      "end": 634.159,
+      "type": "line",
+      "text": "And now, my brethren,",
+      "verse": "5:43",
+      "lineIndex": 196
+    },
+    {
+      "start": 634.339,
+      "end": 636.243,
+      "type": "line",
+      "text": "I would that ye should hear me,",
+      "verse": "5:43",
+      "lineIndex": 197
+    },
+    {
+      "start": 636.423,
+      "end": 638.745,
+      "type": "line",
+      "text": "for I speak in the energy of my soul;",
+      "verse": "5:43",
+      "lineIndex": 198
+    },
+    {
+      "start": 638.925,
+      "end": 642.919,
+      "type": "line",
+      "text": "for behold, I have spoken unto you plainly that ye cannot err,",
+      "verse": "5:43",
+      "lineIndex": 199
+    },
+    {
+      "start": 643.099,
+      "end": 646.21,
+      "type": "line",
+      "text": "or have spoken according to the commandments of God.",
+      "verse": "5:43",
+      "lineIndex": 200
+    },
+    {
+      "start": 646.89,
+      "end": 651.209,
+      "type": "line",
+      "text": "For I am called to speak after this manner, according to the holy order of God,",
+      "verse": "5:44",
+      "lineIndex": 201
+    },
+    {
+      "start": 651.389,
+      "end": 653.154,
+      "type": "line",
+      "text": "which is in Christ Jesus;",
+      "verse": "5:44",
+      "lineIndex": 202
+    },
+    {
+      "start": 653.334,
+      "end": 660.579,
+      "type": "line",
+      "text": "yea, I am commanded to stand and testify unto this people the things which have been spoken by our fathers",
+      "verse": "5:44",
+      "lineIndex": 203
+    },
+    {
+      "start": 660.759,
+      "end": 663.267,
+      "type": "line",
+      "text": "concerning the things which are to come.",
+      "verse": "5:44",
+      "lineIndex": 204
+    },
+    {
+      "start": 663.947,
+      "end": 665.48,
+      "type": "line",
+      "text": "And this is not all.",
+      "verse": "5:45",
+      "lineIndex": 205
+    },
+    {
+      "start": 665.66,
+      "end": 668.539,
+      "type": "line",
+      "text": "Do ye not suppose that I know of these things myself?",
+      "verse": "5:45",
+      "lineIndex": 206
+    },
+    {
+      "start": 668.719,
+      "end": 673.874,
+      "type": "line",
+      "text": "Behold, I testify unto you that I do know that these things whereof I have spoken are true.",
+      "verse": "5:45",
+      "lineIndex": 207
+    },
+    {
+      "start": 674.054,
+      "end": 677.305,
+      "type": "line",
+      "text": "And how do ye suppose that I know of their surety?",
+      "verse": "5:45",
+      "lineIndex": 208
+    },
+    {
+      "start": 677.985,
+      "end": 679.518,
+      "type": "line",
+      "text": "Behold, I say unto you",
+      "verse": "5:46",
+      "lineIndex": 209
+    },
+    {
+      "start": 679.698,
+      "end": 683.32,
+      "type": "line",
+      "text": "they are made known unto me by the Holy Spirit of God.",
+      "verse": "5:46",
+      "lineIndex": 210
+    },
+    {
+      "start": 683.5,
+      "end": 686.472,
+      "type": "line",
+      "text": "Behold, I have fasted and prayed many days",
+      "verse": "5:46",
+      "lineIndex": 211
+    },
+    {
+      "start": 686.652,
+      "end": 689.113,
+      "type": "line",
+      "text": "that I might know these things of myself.",
+      "verse": "5:46",
+      "lineIndex": 212
+    },
+    {
+      "start": 689.293,
+      "end": 692.358,
+      "type": "line",
+      "text": "And now I do know of myself that they are true;",
+      "verse": "5:46",
+      "lineIndex": 213
+    },
+    {
+      "start": 692.538,
+      "end": 696.671,
+      "type": "line",
+      "text": "for the Lord God hath made them manifest unto me by his Holy Spirit;",
+      "verse": "5:46",
+      "lineIndex": 214
+    },
+    {
+      "start": 696.851,
+      "end": 699.962,
+      "type": "line",
+      "text": "and this is the spirit of revelation which is in me.",
+      "verse": "5:46",
+      "lineIndex": 215
+    },
+    {
+      "start": 700.642,
+      "end": 702.546,
+      "type": "line",
+      "text": "And moreover, I say unto you",
+      "verse": "5:47",
+      "lineIndex": 216
+    },
+    {
+      "start": 702.726,
+      "end": 705.002,
+      "type": "line",
+      "text": "that it has thus been revealed unto me,",
+      "verse": "5:47",
+      "lineIndex": 217
+    },
+    {
+      "start": 705.182,
+      "end": 709.037,
+      "type": "line",
+      "text": "that the words which have been spoken by our fathers are true,",
+      "verse": "5:47",
+      "lineIndex": 218
+    },
+    {
+      "start": 709.217,
+      "end": 712.654,
+      "type": "line",
+      "text": "even so according to the spirit of prophecy which is in me,",
+      "verse": "5:47",
+      "lineIndex": 219
+    },
+    {
+      "start": 712.834,
+      "end": 716.41,
+      "type": "line",
+      "text": "which is also by the manifestation of the Spirit of God.",
+      "verse": "5:47",
+      "lineIndex": 220
+    },
+    {
+      "start": 717.09,
+      "end": 718.576,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:48",
+      "lineIndex": 221
+    },
+    {
+      "start": 718.756,
+      "end": 724.607,
+      "type": "line",
+      "text": "that I know of myself that whatsoever I shall say unto you, concerning that which is to come, is true;",
+      "verse": "5:48",
+      "lineIndex": 222
+    },
+    {
+      "start": 724.787,
+      "end": 726.273,
+      "type": "line",
+      "text": "and I say unto you,",
+      "verse": "5:48",
+      "lineIndex": 223
+    },
+    {
+      "start": 726.453,
+      "end": 728.636,
+      "type": "line",
+      "text": "that I know that Jesus Christ shall come,",
+      "verse": "5:48",
+      "lineIndex": 224
+    },
+    {
+      "start": 728.816,
+      "end": 730.349,
+      "type": "line",
+      "text": "yea, the Son,",
+      "verse": "5:48",
+      "lineIndex": 225
+    },
+    {
+      "start": 730.529,
+      "end": 732.572,
+      "type": "line",
+      "text": "the Only Begotten of the Father,",
+      "verse": "5:48",
+      "lineIndex": 226
+    },
+    {
+      "start": 732.752,
+      "end": 735.12,
+      "type": "line",
+      "text": "full of grace and mercy, and truth.",
+      "verse": "5:48",
+      "lineIndex": 227
+    },
+    {
+      "start": 735.3,
+      "end": 739.062,
+      "type": "line",
+      "text": "And behold, it is he that cometh to take away the sins of the world,",
+      "verse": "5:48",
+      "lineIndex": 228
+    },
+    {
+      "start": 739.242,
+      "end": 743.747,
+      "type": "line",
+      "text": "yea, the sins of every man who steadfastly believeth on his name.",
+      "verse": "5:48",
+      "lineIndex": 229
+    },
+    {
+      "start": 744.427,
+      "end": 746.099,
+      "type": "line",
+      "text": "And now I say unto you",
+      "verse": "5:49",
+      "lineIndex": 231
+    },
+    {
+      "start": 746.279,
+      "end": 749.298,
+      "type": "line",
+      "text": "that this is the order after which I am called,",
+      "verse": "5:49",
+      "lineIndex": 232
+    },
+    {
+      "start": 749.478,
+      "end": 752.032,
+      "type": "line",
+      "text": "yea, to preach unto my beloved brethren,",
+      "verse": "5:49",
+      "lineIndex": 233
+    },
+    {
+      "start": 752.212,
+      "end": 754.813,
+      "type": "line",
+      "text": "yea, and every one that dwelleth in the land;",
+      "verse": "5:49",
+      "lineIndex": 234
+    },
+    {
+      "start": 754.993,
+      "end": 756.758,
+      "type": "line",
+      "text": "yea, to preach unto all,",
+      "verse": "5:49",
+      "lineIndex": 235
+    },
+    {
+      "start": 756.938,
+      "end": 758.703,
+      "type": "line",
+      "text": "both old and young,",
+      "verse": "5:49",
+      "lineIndex": 236
+    },
+    {
+      "start": 758.883,
+      "end": 760.416,
+      "type": "line",
+      "text": "both bond and free;",
+      "verse": "5:49",
+      "lineIndex": 237
+    },
+    {
+      "start": 760.596,
+      "end": 764.172,
+      "type": "line",
+      "text": "yea, I say unto you the aged, and also the middle aged,",
+      "verse": "5:49",
+      "lineIndex": 238
+    },
+    {
+      "start": 764.352,
+      "end": 766.21,
+      "type": "line",
+      "text": "and the rising generation;",
+      "verse": "5:49",
+      "lineIndex": 239
+    },
+    {
+      "start": 766.39,
+      "end": 768.155,
+      "type": "line",
+      "text": "yea, to cry unto them",
+      "verse": "5:49",
+      "lineIndex": 240
+    },
+    {
+      "start": 768.335,
+      "end": 770.703,
+      "type": "line",
+      "text": "that they must repent and be born again.",
+      "verse": "5:49",
+      "lineIndex": 241
+    },
+    {
+      "start": 771.383,
+      "end": 773.287,
+      "type": "line",
+      "text": "Yea, thus saith the Spirit:",
+      "verse": "5:50",
+      "lineIndex": 242
+    },
+    {
+      "start": 773.467,
+      "end": 775.835,
+      "type": "line",
+      "text": "Repent, all ye ends of the earth,",
+      "verse": "5:50",
+      "lineIndex": 243
+    },
+    {
+      "start": 776.015,
+      "end": 778.43,
+      "type": "line",
+      "text": "for the kingdom of heaven is soon at hand;",
+      "verse": "5:50",
+      "lineIndex": 244
+    },
+    {
+      "start": 778.61,
+      "end": 781.071,
+      "type": "line",
+      "text": "yea, the Son of God cometh in his glory,",
+      "verse": "5:50",
+      "lineIndex": 245
+    },
+    {
+      "start": 781.251,
+      "end": 783.852,
+      "type": "line",
+      "text": "in his might, majesty, power, and dominion.",
+      "verse": "5:50",
+      "lineIndex": 246
+    },
+    {
+      "start": 784.032,
+      "end": 785.797,
+      "type": "line",
+      "text": "Yea, my beloved brethren,",
+      "verse": "5:50",
+      "lineIndex": 247
+    },
+    {
+      "start": 785.977,
+      "end": 788.345,
+      "type": "line",
+      "text": "I say unto you that the Spirit saith:",
+      "verse": "5:50",
+      "lineIndex": 248
+    },
+    {
+      "start": 788.525,
+      "end": 791.311,
+      "type": "line",
+      "text": "Behold the glory of the King of all the earth;",
+      "verse": "5:50",
+      "lineIndex": 249
+    },
+    {
+      "start": 791.491,
+      "end": 793.627,
+      "type": "line",
+      "text": "and also the King of heaven",
+      "verse": "5:50",
+      "lineIndex": 250
+    },
+    {
+      "start": 793.807,
+      "end": 797.383,
+      "type": "line",
+      "text": "shall very soon shine forth among all the children of men.",
+      "verse": "5:50",
+      "lineIndex": 251
+    },
+    {
+      "start": 798.063,
+      "end": 800.431,
+      "type": "line",
+      "text": "And also the Spirit saith unto me,",
+      "verse": "5:51",
+      "lineIndex": 252
+    },
+    {
+      "start": 800.611,
+      "end": 803.63,
+      "type": "line",
+      "text": "yea, crieth unto me with a mighty voice, saying:",
+      "verse": "5:51",
+      "lineIndex": 253
+    },
+    {
+      "start": 803.81,
+      "end": 806.086,
+      "type": "line",
+      "text": "Go forth and say unto this people\u2014",
+      "verse": "5:51",
+      "lineIndex": 254
+    },
+    {
+      "start": 806.266,
+      "end": 808.449,
+      "type": "line",
+      "text": "Repent, for except ye repent",
+      "verse": "5:51",
+      "lineIndex": 255
+    },
+    {
+      "start": 808.629,
+      "end": 811.276,
+      "type": "line",
+      "text": "ye can in nowise inherit the kingdom of heaven.",
+      "verse": "5:51",
+      "lineIndex": 256
+    },
+    {
+      "start": 811.956,
+      "end": 814.464,
+      "type": "line",
+      "text": "And again I say unto you, the Spirit saith:",
+      "verse": "5:52",
+      "lineIndex": 257
+    },
+    {
+      "start": 814.644,
+      "end": 817.616,
+      "type": "line",
+      "text": "Behold, the ax is laid at the root of the tree;",
+      "verse": "5:52",
+      "lineIndex": 258
+    },
+    {
+      "start": 817.796,
+      "end": 821.14,
+      "type": "line",
+      "text": "therefore every tree that bringeth not forth good fruit",
+      "verse": "5:52",
+      "lineIndex": 259
+    },
+    {
+      "start": 821.32,
+      "end": 824.292,
+      "type": "line",
+      "text": "shall be hewn down and cast into the fire,",
+      "verse": "5:52",
+      "lineIndex": 260
+    },
+    {
+      "start": 824.472,
+      "end": 826.887,
+      "type": "line",
+      "text": "yea, a fire which cannot be consumed,",
+      "verse": "5:52",
+      "lineIndex": 261
+    },
+    {
+      "start": 827.067,
+      "end": 829.017,
+      "type": "line",
+      "text": "even an unquenchable fire.",
+      "verse": "5:52",
+      "lineIndex": 262
+    },
+    {
+      "start": 829.197,
+      "end": 832.634,
+      "type": "line",
+      "text": "Behold, and remember, the Holy One hath spoken it.",
+      "verse": "5:52",
+      "lineIndex": 263
+    },
+    {
+      "start": 833.314,
+      "end": 835.357,
+      "type": "line",
+      "text": "And now my beloved brethren,",
+      "verse": "5:53",
+      "lineIndex": 264
+    },
+    {
+      "start": 835.537,
+      "end": 837.023,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:53",
+      "lineIndex": 265
+    },
+    {
+      "start": 837.203,
+      "end": 839.339,
+      "type": "line",
+      "text": "can ye withstand these sayings;",
+      "verse": "5:53",
+      "lineIndex": 266
+    },
+    {
+      "start": 839.519,
+      "end": 841.98,
+      "type": "line",
+      "text": "yea, can ye lay aside these things,",
+      "verse": "5:53",
+      "lineIndex": 267
+    },
+    {
+      "start": 842.16,
+      "end": 844.714,
+      "type": "line",
+      "text": "and trample the Holy One under your feet;",
+      "verse": "5:53",
+      "lineIndex": 268
+    },
+    {
+      "start": 844.894,
+      "end": 847.913,
+      "type": "line",
+      "text": "yea, can ye be puffed up in the pride of your hearts;",
+      "verse": "5:53",
+      "lineIndex": 269
+    },
+    {
+      "start": 848.093,
+      "end": 852.04,
+      "type": "line",
+      "text": "yea, will ye still persist in the wearing of costly apparel",
+      "verse": "5:53",
+      "lineIndex": 270
+    },
+    {
+      "start": 852.22,
+      "end": 856.585,
+      "type": "line",
+      "text": "and setting your hearts upon the vain things of the world, upon your riches?",
+      "verse": "5:53",
+      "lineIndex": 271
+    },
+    {
+      "start": 857.265,
+      "end": 861.584,
+      "type": "line",
+      "text": "Yea, will ye persist in supposing that ye are better one than another;",
+      "verse": "5:54",
+      "lineIndex": 272
+    },
+    {
+      "start": 861.764,
+      "end": 865.572,
+      "type": "line",
+      "text": "yea, will ye persist in the persecution of your brethren,",
+      "verse": "5:54",
+      "lineIndex": 273
+    },
+    {
+      "start": 865.752,
+      "end": 870.442,
+      "type": "line",
+      "text": "who humble themselves and do walk after the holy order of God,",
+      "verse": "5:54",
+      "lineIndex": 274
+    },
+    {
+      "start": 870.622,
+      "end": 876.288,
+      "type": "line",
+      "text": "wherewith they have been brought into this church, having been sanctified by the Holy Spirit,",
+      "verse": "5:54",
+      "lineIndex": 275
+    },
+    {
+      "start": 876.468,
+      "end": 879.997,
+      "type": "line",
+      "text": "and they do bring forth works which are meet for repentance\u2014",
+      "verse": "5:54",
+      "lineIndex": 276
+    },
+    {
+      "start": 880.677,
+      "end": 884.996,
+      "type": "line",
+      "text": "Yea, and will you persist in turning your backs upon the poor, and the needy,",
+      "verse": "5:55",
+      "lineIndex": 277
+    },
+    {
+      "start": 885.176,
+      "end": 887.498,
+      "type": "line",
+      "text": "and in withholding your substance from them?",
+      "verse": "5:55",
+      "lineIndex": 278
+    },
+    {
+      "start": 888.178,
+      "end": 891.336,
+      "type": "line",
+      "text": "And finally, all ye that will persist in your wickedness,",
+      "verse": "5:56",
+      "lineIndex": 279
+    },
+    {
+      "start": 891.516,
+      "end": 893.792,
+      "type": "line",
+      "text": "I say unto you that these are they",
+      "verse": "5:56",
+      "lineIndex": 280
+    },
+    {
+      "start": 893.972,
+      "end": 895.458,
+      "type": "line",
+      "text": "who shall be hewn down",
+      "verse": "5:56",
+      "lineIndex": 281
+    },
+    {
+      "start": 895.638,
+      "end": 897.356,
+      "type": "line",
+      "text": "and cast into the fire",
+      "verse": "5:56",
+      "lineIndex": 282
+    },
+    {
+      "start": 897.536,
+      "end": 899.486,
+      "type": "line",
+      "text": "except they speedily repent.",
+      "verse": "5:56",
+      "lineIndex": 283
+    },
+    {
+      "start": 900.166,
+      "end": 901.791,
+      "type": "line",
+      "text": "And now I say unto you,",
+      "verse": "5:57",
+      "lineIndex": 285
+    },
+    {
+      "start": 901.971,
+      "end": 905.826,
+      "type": "line",
+      "text": "all you that are desirous to follow the voice of the good shepherd,",
+      "verse": "5:57",
+      "lineIndex": 286
+    },
+    {
+      "start": 906.006,
+      "end": 907.864,
+      "type": "line",
+      "text": "come ye out from the wicked,",
+      "verse": "5:57",
+      "lineIndex": 287
+    },
+    {
+      "start": 908.044,
+      "end": 909.716,
+      "type": "line",
+      "text": "and be ye separate,",
+      "verse": "5:57",
+      "lineIndex": 288
+    },
+    {
+      "start": 909.896,
+      "end": 912.264,
+      "type": "line",
+      "text": "and touch not their unclean things;",
+      "verse": "5:57",
+      "lineIndex": 289
+    },
+    {
+      "start": 912.444,
+      "end": 915.045,
+      "type": "line",
+      "text": "and behold, their names shall be blotted out,",
+      "verse": "5:57",
+      "lineIndex": 290
+    },
+    {
+      "start": 915.225,
+      "end": 920.008,
+      "type": "line",
+      "text": "that the names of the wicked shall not be numbered among the names of the righteous,",
+      "verse": "5:57",
+      "lineIndex": 291
+    },
+    {
+      "start": 920.188,
+      "end": 923.067,
+      "type": "line",
+      "text": "that the word of God may be fulfilled, which saith:",
+      "verse": "5:57",
+      "lineIndex": 292
+    },
+    {
+      "start": 923.247,
+      "end": 926.962,
+      "type": "line",
+      "text": "The names of the wicked shall not be mingled with the names of my people;",
+      "verse": "5:57",
+      "lineIndex": 293
+    },
+    {
+      "start": 927.642,
+      "end": 931.589,
+      "type": "line",
+      "text": "For the names of the righteous shall be written in the book of life,",
+      "verse": "5:58",
+      "lineIndex": 294
+    },
+    {
+      "start": 931.769,
+      "end": 935.763,
+      "type": "line",
+      "text": "and unto them will I grant an inheritance at my right hand.",
+      "verse": "5:58",
+      "lineIndex": 295
+    },
+    {
+      "start": 935.943,
+      "end": 937.243,
+      "type": "line",
+      "text": "And now, my brethren,",
+      "verse": "5:58",
+      "lineIndex": 296
+    },
+    {
+      "start": 937.423,
+      "end": 939.373,
+      "type": "line",
+      "text": "what have ye to say against this?",
+      "verse": "5:58",
+      "lineIndex": 297
+    },
+    {
+      "start": 939.553,
+      "end": 941.039,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "5:58",
+      "lineIndex": 298
+    },
+    {
+      "start": 941.219,
+      "end": 942.937,
+      "type": "line",
+      "text": "if ye speak against it,",
+      "verse": "5:58",
+      "lineIndex": 299
+    },
+    {
+      "start": 943.117,
+      "end": 944.557,
+      "type": "line",
+      "text": "it matters not,",
+      "verse": "5:58",
+      "lineIndex": 300
+    },
+    {
+      "start": 944.737,
+      "end": 947.245,
+      "type": "line",
+      "text": "for the word of God must be fulfilled.",
+      "verse": "5:58",
+      "lineIndex": 301
+    },
+    {
+      "start": 947.925,
+      "end": 951.362,
+      "type": "line",
+      "text": "For what shepherd is there among you having many sheep",
+      "verse": "5:59",
+      "lineIndex": 302
+    },
+    {
+      "start": 951.542,
+      "end": 953.353,
+      "type": "line",
+      "text": "doth not watch over them,",
+      "verse": "5:59",
+      "lineIndex": 303
+    },
+    {
+      "start": 953.533,
+      "end": 956.877,
+      "type": "line",
+      "text": "that the wolves enter not and devour his flock?",
+      "verse": "5:59",
+      "lineIndex": 304
+    },
+    {
+      "start": 957.057,
+      "end": 959.472,
+      "type": "line",
+      "text": "And behold, if a wolf enter his flock",
+      "verse": "5:59",
+      "lineIndex": 305
+    },
+    {
+      "start": 959.652,
+      "end": 961.37,
+      "type": "line",
+      "text": "doth he not drive him out?",
+      "verse": "5:59",
+      "lineIndex": 306
+    },
+    {
+      "start": 961.55,
+      "end": 963.083,
+      "type": "line",
+      "text": "Yea, and at the last,",
+      "verse": "5:59",
+      "lineIndex": 307
+    },
+    {
+      "start": 963.263,
+      "end": 965.631,
+      "type": "line",
+      "text": "if he can, he will destroy him.",
+      "verse": "5:59",
+      "lineIndex": 308
+    },
+    {
+      "start": 966.311,
+      "end": 967.983,
+      "type": "line",
+      "text": "And now I say unto you",
+      "verse": "5:60",
+      "lineIndex": 309
+    },
+    {
+      "start": 968.163,
+      "end": 970.764,
+      "type": "line",
+      "text": "that the good shepherd doth call after you;",
+      "verse": "5:60",
+      "lineIndex": 310
+    },
+    {
+      "start": 970.944,
+      "end": 973.312,
+      "type": "line",
+      "text": "and if you will hearken unto his voice",
+      "verse": "5:60",
+      "lineIndex": 311
+    },
+    {
+      "start": 973.492,
+      "end": 975.582,
+      "type": "line",
+      "text": "he will bring you into his fold,",
+      "verse": "5:60",
+      "lineIndex": 312
+    },
+    {
+      "start": 975.762,
+      "end": 977.341,
+      "type": "line",
+      "text": "and ye are his sheep;",
+      "verse": "5:60",
+      "lineIndex": 313
+    },
+    {
+      "start": 977.521,
+      "end": 981.979,
+      "type": "line",
+      "text": "and he commandeth you that ye suffer no ravenous wolf to enter among you,",
+      "verse": "5:60",
+      "lineIndex": 314
+    },
+    {
+      "start": 982.159,
+      "end": 984.156,
+      "type": "line",
+      "text": "that ye may not be destroyed.",
+      "verse": "5:60",
+      "lineIndex": 315
+    },
+    {
+      "start": 984.836,
+      "end": 993.752,
+      "type": "line",
+      "text": "And now I, Alma, do command you in the language of him who hath commanded me, that ye observe to do the words which I have spoken unto you.",
+      "verse": "5:61",
+      "lineIndex": 316
+    },
+    {
+      "start": 994.432,
+      "end": 998.101,
+      "type": "line",
+      "text": "I speak by way of command unto you that belong to the church;",
+      "verse": "5:62",
+      "lineIndex": 317
+    },
+    {
+      "start": 998.281,
+      "end": 1001.253,
+      "type": "line",
+      "text": "and unto those who do not belong to the church",
+      "verse": "5:62",
+      "lineIndex": 318
+    },
+    {
+      "start": 1001.433,
+      "end": 1003.987,
+      "type": "line",
+      "text": "I speak by way of invitation, saying:",
+      "verse": "5:62",
+      "lineIndex": 319
+    },
+    {
+      "start": 1004.167,
+      "end": 1006.721,
+      "type": "line",
+      "text": "Come and be baptized unto repentance,",
+      "verse": "5:62",
+      "lineIndex": 320
+    },
+    {
+      "start": 1006.901,
+      "end": 1011.684,
+      "type": "line",
+      "text": "that ye also may be partakers of the fruit of the tree of life.",
+      "verse": "5:62",
+      "lineIndex": 321
+    }
+  ]
+}
