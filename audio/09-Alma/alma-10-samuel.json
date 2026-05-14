@@ -1,0 +1,1152 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 10,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 506.595,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.901,
+      "type": "line",
+      "text": "Now these are the words which Amulek preached unto the people",
+      "verse": "10:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.081,
+      "end": 6.682,
+      "type": "line",
+      "text": "who were in the land of Ammonihah, saying:",
+      "verse": "10:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.362,
+      "end": 8.662,
+      "type": "line",
+      "text": "I am Amulek;",
+      "verse": "10:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 8.842,
+      "end": 12.418,
+      "type": "line",
+      "text": "I am the son of Giddonah, who was the son of Ishmael,",
+      "verse": "10:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 12.598,
+      "end": 14.781,
+      "type": "line",
+      "text": "who was a descendant of Aminadi;",
+      "verse": "10:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.961,
+      "end": 20.952,
+      "type": "line",
+      "text": "and it was that same Aminadi who interpreted the writing which was upon the wall of the temple,",
+      "verse": "10:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 21.132,
+      "end": 24.058,
+      "type": "line",
+      "text": "which was written by the finger of God.",
+      "verse": "10:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 24.738,
+      "end": 27.199,
+      "type": "line",
+      "text": "And Aminadi was a descendant of Nephi,",
+      "verse": "10:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 27.379,
+      "end": 29.144,
+      "type": "line",
+      "text": "who was the son of Lehi,",
+      "verse": "10:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 29.324,
+      "end": 31.878,
+      "type": "line",
+      "text": "who came out of the land of Jerusalem,",
+      "verse": "10:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 32.058,
+      "end": 34.334,
+      "type": "line",
+      "text": "who was a descendant of Manasseh,",
+      "verse": "10:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 34.514,
+      "end": 39.204,
+      "type": "line",
+      "text": "who was the son of Joseph who was sold into Egypt by the hands of his brethren.",
+      "verse": "10:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 39.884,
+      "end": 45.132,
+      "type": "line",
+      "text": "And behold, I am also a man of no small reputation among all those who know me;",
+      "verse": "10:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 45.312,
+      "end": 48.563,
+      "type": "line",
+      "text": "yea, and behold, I have many kindreds and friends,",
+      "verse": "10:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 48.743,
+      "end": 52.69,
+      "type": "line",
+      "text": "and I have also acquired much riches by the hand of my industry.",
+      "verse": "10:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 53.37,
+      "end": 57.968,
+      "type": "line",
+      "text": "Nevertheless, after all this, I never have known much of the ways of the Lord,",
+      "verse": "10:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 58.148,
+      "end": 60.516,
+      "type": "line",
+      "text": "and his mysteries and marvelous power.",
+      "verse": "10:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 60.696,
+      "end": 63.715,
+      "type": "line",
+      "text": "I said I never had known much of these things;",
+      "verse": "10:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 63.895,
+      "end": 65.567,
+      "type": "line",
+      "text": "but behold, I mistake,",
+      "verse": "10:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 65.747,
+      "end": 69.88,
+      "type": "line",
+      "text": "for I have seen much of his mysteries and his marvelous power;",
+      "verse": "10:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 70.06,
+      "end": 73.357,
+      "type": "line",
+      "text": "yea, even in the preservation of the lives of this people.",
+      "verse": "10:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 74.037,
+      "end": 76.638,
+      "type": "line",
+      "text": "Nevertheless, I did harden my heart,",
+      "verse": "10:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 76.818,
+      "end": 79.929,
+      "type": "line",
+      "text": "for I was called many times and I would not hear;",
+      "verse": "10:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 80.109,
+      "end": 83.778,
+      "type": "line",
+      "text": "therefore I knew concerning these things, yet I would not know;",
+      "verse": "10:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 83.958,
+      "end": 88.277,
+      "type": "line",
+      "text": "therefore I went on rebelling against God, in the wickedness of my heart,",
+      "verse": "10:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 88.457,
+      "end": 91.661,
+      "type": "line",
+      "text": "even until the fourth day of this seventh month,",
+      "verse": "10:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 91.841,
+      "end": 95.045,
+      "type": "line",
+      "text": "which is in the tenth year of the reign of the judges.",
+      "verse": "10:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 95.725,
+      "end": 98.651,
+      "type": "line",
+      "text": "As I was journeying to see a very near kindred,",
+      "verse": "10:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 98.831,
+      "end": 101.989,
+      "type": "line",
+      "text": "behold an angel of the Lord appeared unto me and said:",
+      "verse": "10:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 102.169,
+      "end": 104.445,
+      "type": "line",
+      "text": "Amulek, return to thine own house,",
+      "verse": "10:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 104.625,
+      "end": 107.226,
+      "type": "line",
+      "text": "for thou shalt feed a prophet of the Lord;",
+      "verse": "10:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 107.406,
+      "end": 110.843,
+      "type": "line",
+      "text": "yea, a holy man, who is a chosen man of God;",
+      "verse": "10:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 111.023,
+      "end": 114.97,
+      "type": "line",
+      "text": "for he has fasted many days because of the sins of this people,",
+      "verse": "10:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 115.15,
+      "end": 116.868,
+      "type": "line",
+      "text": "and he is an hungered,",
+      "verse": "10:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 117.048,
+      "end": 120.02,
+      "type": "line",
+      "text": "and thou shalt receive him into thy house and feed him,",
+      "verse": "10:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 120.2,
+      "end": 122.708,
+      "type": "line",
+      "text": "and he shall bless thee and thy house;",
+      "verse": "10:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 122.888,
+      "end": 126.417,
+      "type": "line",
+      "text": "and the blessing of the Lord shall rest upon thee and thy house.",
+      "verse": "10:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 127.097,
+      "end": 130.255,
+      "type": "line",
+      "text": "And it came to pass that I obeyed the voice of the angel,",
+      "verse": "10:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 130.435,
+      "end": 132.618,
+      "type": "line",
+      "text": "and returned towards my house.",
+      "verse": "10:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 132.798,
+      "end": 137.535,
+      "type": "line",
+      "text": "And as I was going thither I found the man whom the angel said unto me:",
+      "verse": "10:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 137.715,
+      "end": 139.944,
+      "type": "line",
+      "text": "Thou shalt receive into thy house\u2014",
+      "verse": "10:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 140.124,
+      "end": 142.307,
+      "type": "line",
+      "text": "and behold it was this same man",
+      "verse": "10:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 142.487,
+      "end": 145.97,
+      "type": "line",
+      "text": "who has been speaking unto you concerning the things of God.",
+      "verse": "10:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 146.65,
+      "end": 149.436,
+      "type": "line",
+      "text": "And the angel said unto me he is a holy man;",
+      "verse": "10:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 149.616,
+      "end": 151.892,
+      "type": "line",
+      "text": "wherefore I know he is a holy man",
+      "verse": "10:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 152.072,
+      "end": 154.115,
+      "type": "line",
+      "text": "because it was said by an angel of God.",
+      "verse": "10:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 154.795,
+      "end": 159.671,
+      "type": "line",
+      "text": "And again, I know that the things whereof he hath testified are true;",
+      "verse": "10:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 159.851,
+      "end": 163.195,
+      "type": "line",
+      "text": "for behold I say unto you that as the Lord liveth,",
+      "verse": "10:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 163.375,
+      "end": 167.787,
+      "type": "line",
+      "text": "even so has he sent his angel to make these things manifest unto me;",
+      "verse": "10:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 167.967,
+      "end": 171.45,
+      "type": "line",
+      "text": "and this he has done while this Alma hath dwelt at my house.",
+      "verse": "10:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 172.13,
+      "end": 176.402,
+      "type": "line",
+      "text": "For behold, he hath blessed mine house, he hath blessed me, and my women,",
+      "verse": "10:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 176.582,
+      "end": 177.975,
+      "type": "line",
+      "text": "and my children,",
+      "verse": "10:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 178.155,
+      "end": 180.291,
+      "type": "line",
+      "text": "and my father and my kinsfolk;",
+      "verse": "10:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 180.471,
+      "end": 183.072,
+      "type": "line",
+      "text": "yea, even all my kindred hath he blessed,",
+      "verse": "10:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 183.252,
+      "end": 187.896,
+      "type": "line",
+      "text": "and the blessing of the Lord hath rested upon us according to the words which he spake.",
+      "verse": "10:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 188.576,
+      "end": 191.27,
+      "type": "line",
+      "text": "And now, when Amulek had spoken these words",
+      "verse": "10:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 191.45,
+      "end": 193.679,
+      "type": "line",
+      "text": "the people began to be astonished,",
+      "verse": "10:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 193.859,
+      "end": 196.32,
+      "type": "line",
+      "text": "seeing there was more than one witness",
+      "verse": "10:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 196.5,
+      "end": 199.611,
+      "type": "line",
+      "text": "who testified of the things whereof they were accused,",
+      "verse": "10:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 199.791,
+      "end": 206.2,
+      "type": "line",
+      "text": "and also of the things which were to come, according to the spirit of prophecy which was in them.",
+      "verse": "10:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 206.88,
+      "end": 211.013,
+      "type": "line",
+      "text": "Nevertheless, there were some among them who thought to question them,",
+      "verse": "10:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 211.193,
+      "end": 215.837,
+      "type": "line",
+      "text": "that by their cunning devices they might catch them in their words,",
+      "verse": "10:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 216.017,
+      "end": 218.478,
+      "type": "line",
+      "text": "that they might find witness against them,",
+      "verse": "10:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 218.658,
+      "end": 221.816,
+      "type": "line",
+      "text": "that they might deliver them to their judges",
+      "verse": "10:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 221.996,
+      "end": 224.69,
+      "type": "line",
+      "text": "that they might be judged according to the law,",
+      "verse": "10:13",
+      "lineIndex": 66
+    },
+    {
+      "start": 224.87,
+      "end": 233.647,
+      "type": "line",
+      "text": "and that they might be slain or cast into prison, according to the crime which they could make appear or witness against them.",
+      "verse": "10:13",
+      "lineIndex": 67
+    },
+    {
+      "start": 234.327,
+      "end": 244.497,
+      "type": "line",
+      "text": "Now it was those men who sought to destroy them, who were lawyers, who were hired or appointed by the people to administer the law at their times of trials,",
+      "verse": "10:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 244.677,
+      "end": 248.671,
+      "type": "line",
+      "text": "or at the trials of the crimes of the people before the judges.",
+      "verse": "10:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 249.351,
+      "end": 253.995,
+      "type": "line",
+      "text": "Now these lawyers were learned in all the arts and cunning of the people;",
+      "verse": "10:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 254.175,
+      "end": 256.218,
+      "type": "line",
+      "text": "and this was to enable them",
+      "verse": "10:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 256.398,
+      "end": 259.556,
+      "type": "line",
+      "text": "that they might be skilful in their profession.",
+      "verse": "10:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 260.236,
+      "end": 263.394,
+      "type": "line",
+      "text": "And it came to pass that they began to question Amulek,",
+      "verse": "10:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 263.574,
+      "end": 266.546,
+      "type": "line",
+      "text": "that thereby they might make him cross his words,",
+      "verse": "10:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 266.726,
+      "end": 269.652,
+      "type": "line",
+      "text": "or contradict the words which he should speak.",
+      "verse": "10:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 270.332,
+      "end": 273.676,
+      "type": "line",
+      "text": "Now they knew not that Amulek could know of their designs.",
+      "verse": "10:17",
+      "lineIndex": 76
+    },
+    {
+      "start": 273.856,
+      "end": 278.732,
+      "type": "line",
+      "text": "But it came to pass as they began to question him, he perceived their thoughts,",
+      "verse": "10:17",
+      "lineIndex": 77
+    },
+    {
+      "start": 278.912,
+      "end": 280.537,
+      "type": "line",
+      "text": "and he said unto them:",
+      "verse": "10:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 280.717,
+      "end": 283.178,
+      "type": "line",
+      "text": "O ye wicked and perverse generation,",
+      "verse": "10:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 283.358,
+      "end": 285.308,
+      "type": "line",
+      "text": "ye lawyers and hypocrites,",
+      "verse": "10:17",
+      "lineIndex": 80
+    },
+    {
+      "start": 285.488,
+      "end": 288.785,
+      "type": "line",
+      "text": "for ye are laying the foundations of the devil;",
+      "verse": "10:17",
+      "lineIndex": 81
+    },
+    {
+      "start": 288.965,
+      "end": 293.563,
+      "type": "line",
+      "text": "for ye are laying traps and snares to catch the holy ones of God.",
+      "verse": "10:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 294.243,
+      "end": 297.494,
+      "type": "line",
+      "text": "Ye are laying plans to pervert the ways of the righteous,",
+      "verse": "10:18",
+      "lineIndex": 83
+    },
+    {
+      "start": 297.674,
+      "end": 303.99,
+      "type": "line",
+      "text": "and to bring down the wrath of God upon your heads, even to the utter destruction of this people.",
+      "verse": "10:18",
+      "lineIndex": 84
+    },
+    {
+      "start": 304.67,
+      "end": 306.388,
+      "type": "line",
+      "text": "Yea, well did Mosiah say,",
+      "verse": "10:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 306.568,
+      "end": 308.286,
+      "type": "line",
+      "text": "who was our last king,",
+      "verse": "10:19",
+      "lineIndex": 86
+    },
+    {
+      "start": 308.466,
+      "end": 313.946,
+      "type": "line",
+      "text": "when he was about to deliver up the kingdom, having no one to confer it upon,",
+      "verse": "10:19",
+      "lineIndex": 87
+    },
+    {
+      "start": 314.126,
+      "end": 318.12,
+      "type": "line",
+      "text": "causing that this people should be governed by their own voices\u2014",
+      "verse": "10:19",
+      "lineIndex": 88
+    },
+    {
+      "start": 318.3,
+      "end": 321.458,
+      "type": "line",
+      "text": "yea, well did he say that if the time should come",
+      "verse": "10:19",
+      "lineIndex": 89
+    },
+    {
+      "start": 321.638,
+      "end": 324.749,
+      "type": "line",
+      "text": "that the voice of this people should choose iniquity,",
+      "verse": "10:19",
+      "lineIndex": 90
+    },
+    {
+      "start": 324.929,
+      "end": 327.53,
+      "type": "line",
+      "text": "that is, if the time should come",
+      "verse": "10:19",
+      "lineIndex": 91
+    },
+    {
+      "start": 327.71,
+      "end": 330.729,
+      "type": "line",
+      "text": "that this people should fall into transgression,",
+      "verse": "10:19",
+      "lineIndex": 92
+    },
+    {
+      "start": 330.909,
+      "end": 333.138,
+      "type": "line",
+      "text": "they would be ripe for destruction.",
+      "verse": "10:19",
+      "lineIndex": 93
+    },
+    {
+      "start": 333.818,
+      "end": 335.49,
+      "type": "line",
+      "text": "And now I say unto you",
+      "verse": "10:20",
+      "lineIndex": 94
+    },
+    {
+      "start": 335.67,
+      "end": 338.689,
+      "type": "line",
+      "text": "that well doth the Lord judge of your iniquities;",
+      "verse": "10:20",
+      "lineIndex": 95
+    },
+    {
+      "start": 338.869,
+      "end": 342.166,
+      "type": "line",
+      "text": "well doth he cry unto this people, by the voice of his angels:",
+      "verse": "10:20",
+      "lineIndex": 96
+    },
+    {
+      "start": 342.346,
+      "end": 343.832,
+      "type": "line",
+      "text": "Repent ye, repent,",
+      "verse": "10:20",
+      "lineIndex": 97
+    },
+    {
+      "start": 344.012,
+      "end": 346.288,
+      "type": "line",
+      "text": "for the kingdom of heaven is at hand.",
+      "verse": "10:20",
+      "lineIndex": 98
+    },
+    {
+      "start": 346.968,
+      "end": 350.126,
+      "type": "line",
+      "text": "Yea, well doth he cry, by the voice of his angels",
+      "verse": "10:21",
+      "lineIndex": 99
+    },
+    {
+      "start": 350.306,
+      "end": 355.229,
+      "type": "line",
+      "text": "that: I will come down among my people, with equity and justice in my hands.",
+      "verse": "10:21",
+      "lineIndex": 100
+    },
+    {
+      "start": 355.909,
+      "end": 357.488,
+      "type": "line",
+      "text": "Yea, and I say unto you",
+      "verse": "10:22",
+      "lineIndex": 101
+    },
+    {
+      "start": 357.668,
+      "end": 361.43,
+      "type": "line",
+      "text": "that if it were not for the prayers of the righteous, who are now in the land,",
+      "verse": "10:22",
+      "lineIndex": 102
+    },
+    {
+      "start": 361.61,
+      "end": 365.232,
+      "type": "line",
+      "text": "that ye would even now be visited with utter destruction;",
+      "verse": "10:22",
+      "lineIndex": 103
+    },
+    {
+      "start": 365.412,
+      "end": 370.195,
+      "type": "line",
+      "text": "yet it would not be by flood, as were the people in the days of Noah,",
+      "verse": "10:22",
+      "lineIndex": 104
+    },
+    {
+      "start": 370.375,
+      "end": 374.369,
+      "type": "line",
+      "text": "but it would be by famine, and by pestilence, and the sword.",
+      "verse": "10:22",
+      "lineIndex": 105
+    },
+    {
+      "start": 375.049,
+      "end": 378.207,
+      "type": "line",
+      "text": "But it is by the prayers of the righteous that ye are spared;",
+      "verse": "10:23",
+      "lineIndex": 106
+    },
+    {
+      "start": 378.387,
+      "end": 381.777,
+      "type": "line",
+      "text": "now therefore, if ye will cast out the righteous from among you",
+      "verse": "10:23",
+      "lineIndex": 107
+    },
+    {
+      "start": 381.957,
+      "end": 384.047,
+      "type": "line",
+      "text": "then will not the Lord stay his hand;",
+      "verse": "10:23",
+      "lineIndex": 108
+    },
+    {
+      "start": 384.227,
+      "end": 387.246,
+      "type": "line",
+      "text": "but in his fierce anger he will come out against you;",
+      "verse": "10:23",
+      "lineIndex": 109
+    },
+    {
+      "start": 387.426,
+      "end": 392.256,
+      "type": "line",
+      "text": "then ye shall be smitten by famine, and by pestilence, and by the sword;",
+      "verse": "10:23",
+      "lineIndex": 110
+    },
+    {
+      "start": 392.436,
+      "end": 395.13,
+      "type": "line",
+      "text": "and the time is soon at hand except ye repent.",
+      "verse": "10:23",
+      "lineIndex": 111
+    },
+    {
+      "start": 395.81,
+      "end": 399.943,
+      "type": "line",
+      "text": "And now it came to pass that the people were more angry with Amulek,",
+      "verse": "10:24",
+      "lineIndex": 112
+    },
+    {
+      "start": 400.123,
+      "end": 401.934,
+      "type": "line",
+      "text": "and they cried out, saying:",
+      "verse": "10:24",
+      "lineIndex": 113
+    },
+    {
+      "start": 402.114,
+      "end": 405.504,
+      "type": "line",
+      "text": "This man doth revile against our laws which are just,",
+      "verse": "10:24",
+      "lineIndex": 114
+    },
+    {
+      "start": 405.684,
+      "end": 408.563,
+      "type": "line",
+      "text": "and our wise lawyers whom we have selected.",
+      "verse": "10:24",
+      "lineIndex": 115
+    },
+    {
+      "start": 409.243,
+      "end": 411.519,
+      "type": "line",
+      "text": "But Amulek stretched forth his hand,",
+      "verse": "10:25",
+      "lineIndex": 116
+    },
+    {
+      "start": 411.699,
+      "end": 414.16,
+      "type": "line",
+      "text": "and cried the mightier unto them, saying:",
+      "verse": "10:25",
+      "lineIndex": 117
+    },
+    {
+      "start": 414.34,
+      "end": 416.801,
+      "type": "line",
+      "text": "O ye wicked and perverse generation,",
+      "verse": "10:25",
+      "lineIndex": 118
+    },
+    {
+      "start": 416.981,
+      "end": 419.953,
+      "type": "line",
+      "text": "why hath Satan got such great hold upon your hearts?",
+      "verse": "10:25",
+      "lineIndex": 119
+    },
+    {
+      "start": 420.133,
+      "end": 422.362,
+      "type": "line",
+      "text": "Why will ye yield yourselves unto him",
+      "verse": "10:25",
+      "lineIndex": 120
+    },
+    {
+      "start": 422.542,
+      "end": 425.746,
+      "type": "line",
+      "text": "that he may have power over you, to blind your eyes,",
+      "verse": "10:25",
+      "lineIndex": 121
+    },
+    {
+      "start": 425.926,
+      "end": 430.338,
+      "type": "line",
+      "text": "that ye will not understand the words which are spoken, according to their truth?",
+      "verse": "10:25",
+      "lineIndex": 122
+    },
+    {
+      "start": 431.018,
+      "end": 433.758,
+      "type": "line",
+      "text": "For behold, have I testified against your law?",
+      "verse": "10:26",
+      "lineIndex": 123
+    },
+    {
+      "start": 433.938,
+      "end": 435.471,
+      "type": "line",
+      "text": "Ye do not understand;",
+      "verse": "10:26",
+      "lineIndex": 124
+    },
+    {
+      "start": 435.651,
+      "end": 439.273,
+      "type": "line",
+      "text": "ye say that I have spoken against your law; but I have not,",
+      "verse": "10:26",
+      "lineIndex": 125
+    },
+    {
+      "start": 439.453,
+      "end": 442.1,
+      "type": "line",
+      "text": "but I have spoken in favor of your law,",
+      "verse": "10:26",
+      "lineIndex": 126
+    },
+    {
+      "start": 442.28,
+      "end": 443.952,
+      "type": "line",
+      "text": "to your condemnation.",
+      "verse": "10:26",
+      "lineIndex": 127
+    },
+    {
+      "start": 444.632,
+      "end": 453.084,
+      "type": "line",
+      "text": "And now behold, I say unto you, that the foundation of the destruction of this people is beginning to be laid by the unrighteousness of your lawyers and your judges.",
+      "verse": "10:27",
+      "lineIndex": 129
+    },
+    {
+      "start": 453.764,
+      "end": 457.572,
+      "type": "line",
+      "text": "And now it came to pass that when Amulek had spoken these words",
+      "verse": "10:28",
+      "lineIndex": 130
+    },
+    {
+      "start": 457.752,
+      "end": 460.167,
+      "type": "line",
+      "text": "the people cried out against him, saying:",
+      "verse": "10:28",
+      "lineIndex": 131
+    },
+    {
+      "start": 460.347,
+      "end": 463.319,
+      "type": "line",
+      "text": "Now we know that this man is a child of the devil,",
+      "verse": "10:28",
+      "lineIndex": 132
+    },
+    {
+      "start": 463.499,
+      "end": 465.264,
+      "type": "line",
+      "text": "for he hath lied unto us;",
+      "verse": "10:28",
+      "lineIndex": 133
+    },
+    {
+      "start": 465.444,
+      "end": 467.859,
+      "type": "line",
+      "text": "for he hath spoken against our law.",
+      "verse": "10:28",
+      "lineIndex": 134
+    },
+    {
+      "start": 468.039,
+      "end": 471.243,
+      "type": "line",
+      "text": "And now he says that he has not spoken against it.",
+      "verse": "10:28",
+      "lineIndex": 135
+    },
+    {
+      "start": 471.923,
+      "end": 476.056,
+      "type": "line",
+      "text": "And again, he has reviled against our lawyers, and our judges.",
+      "verse": "10:29",
+      "lineIndex": 136
+    },
+    {
+      "start": 476.736,
+      "end": 480.962,
+      "type": "line",
+      "text": "And it came to pass that the lawyers put it into their hearts",
+      "verse": "10:30",
+      "lineIndex": 137
+    },
+    {
+      "start": 481.142,
+      "end": 485.275,
+      "type": "line",
+      "text": "that they should remember these things against him.",
+      "verse": "10:30",
+      "lineIndex": 138
+    },
+    {
+      "start": 485.955,
+      "end": 489.438,
+      "type": "line",
+      "text": "And there was one among them whose name was Zeezrom.",
+      "verse": "10:31",
+      "lineIndex": 139
+    },
+    {
+      "start": 489.618,
+      "end": 493.101,
+      "type": "line",
+      "text": "Now he was the foremost to accuse Amulek and Alma,",
+      "verse": "10:31",
+      "lineIndex": 140
+    },
+    {
+      "start": 493.281,
+      "end": 499.968,
+      "type": "line",
+      "text": "he being one of the most expert among them, having much business to do among the people.",
+      "verse": "10:31",
+      "lineIndex": 141
+    },
+    {
+      "start": 500.648,
+      "end": 503.481,
+      "type": "line",
+      "text": "Now the object of these lawyers was to get gain;",
+      "verse": "10:32",
+      "lineIndex": 142
+    },
+    {
+      "start": 503.661,
+      "end": 505.937,
+      "type": "line",
+      "text": "and they got gain according to their employ.",
+      "verse": "10:32",
+      "lineIndex": 143
+    }
+  ]
+}
