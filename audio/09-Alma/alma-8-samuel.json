@@ -1,0 +1,976 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 8,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 442.034,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.087,
+      "type": "line",
+      "text": "And now it came to pass that Alma returned from the land of Gideon,",
+      "verse": "8:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.267,
+      "end": 8.679,
+      "type": "line",
+      "text": "after having taught the people of Gideon many things which cannot be written,",
+      "verse": "8:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 8.859,
+      "end": 11.553,
+      "type": "line",
+      "text": "having established the order of the church,",
+      "verse": "8:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.733,
+      "end": 15.077,
+      "type": "line",
+      "text": "according as he had before done in the land of Zarahemla,",
+      "verse": "8:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.257,
+      "end": 22.269,
+      "type": "line",
+      "text": "yea, he returned to his own house at Zarahemla to rest himself from the labors which he had performed.",
+      "verse": "8:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.949,
+      "end": 27.686,
+      "type": "line",
+      "text": "And thus ended the ninth year of the reign of the judges over the people of Nephi.",
+      "verse": "8:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 28.366,
+      "end": 35.007,
+      "type": "line",
+      "text": "And it came to pass in the commencement of the tenth year of the reign of the judges over the people of Nephi,",
+      "verse": "8:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 35.187,
+      "end": 42.292,
+      "type": "line",
+      "text": "that Alma departed from thence and took his journey over into the land of Melek, on the west of the river Sidon,",
+      "verse": "8:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 42.472,
+      "end": 45.676,
+      "type": "line",
+      "text": "on the west by the borders of the wilderness.",
+      "verse": "8:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 46.356,
+      "end": 51.836,
+      "type": "line",
+      "text": "And he began to teach the people in the land of Melek according to the holy order of God,",
+      "verse": "8:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 52.016,
+      "end": 53.92,
+      "type": "line",
+      "text": "by which he had been called;",
+      "verse": "8:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 54.1,
+      "end": 58.419,
+      "type": "line",
+      "text": "and he began to teach the people throughout all the land of Melek.",
+      "verse": "8:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 59.099,
+      "end": 62.025,
+      "type": "line",
+      "text": "And it came to pass that the people came to him",
+      "verse": "8:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 62.205,
+      "end": 67.778,
+      "type": "line",
+      "text": "throughout all the borders of the land which was by the wilderness side.",
+      "verse": "8:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 67.958,
+      "end": 70.791,
+      "type": "line",
+      "text": "And they were baptized throughout all the land;",
+      "verse": "8:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 71.471,
+      "end": 74.815,
+      "type": "line",
+      "text": "So that when he had finished his work at Melek",
+      "verse": "8:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 74.995,
+      "end": 80.428,
+      "type": "line",
+      "text": "he departed thence, and traveled three days' journey on the north of the land of Melek;",
+      "verse": "8:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 80.608,
+      "end": 83.673,
+      "type": "line",
+      "text": "and he came to a city which was called Ammonihah.",
+      "verse": "8:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 84.353,
+      "end": 91.598,
+      "type": "line",
+      "text": "Now it was the custom of the people of Nephi to call their lands, and their cities, and their villages,",
+      "verse": "8:7",
+      "lineIndex": 19
+    },
+    {
+      "start": 91.778,
+      "end": 94.286,
+      "type": "line",
+      "text": "yea, even all their small villages,",
+      "verse": "8:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 94.466,
+      "end": 97.485,
+      "type": "line",
+      "text": "after the name of him who first possessed them;",
+      "verse": "8:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 97.665,
+      "end": 100.312,
+      "type": "line",
+      "text": "and thus it was with the land of Ammonihah.",
+      "verse": "8:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 100.992,
+      "end": 105.45,
+      "type": "line",
+      "text": "And it came to pass that when Alma had come to the city of Ammonihah",
+      "verse": "8:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 105.63,
+      "end": 108.277,
+      "type": "line",
+      "text": "he began to preach the word of God unto them.",
+      "verse": "8:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 108.957,
+      "end": 114.53,
+      "type": "line",
+      "text": "Now Satan had gotten great hold upon the hearts of the people of the city of Ammonihah;",
+      "verse": "8:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 114.71,
+      "end": 118.239,
+      "type": "line",
+      "text": "therefore they would not hearken unto the words of Alma.",
+      "verse": "8:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 118.919,
+      "end": 122.123,
+      "type": "line",
+      "text": "Nevertheless Alma labored much in the spirit,",
+      "verse": "8:10",
+      "lineIndex": 28
+    },
+    {
+      "start": 122.303,
+      "end": 124.718,
+      "type": "line",
+      "text": "wrestling with God in mighty prayer,",
+      "verse": "8:10",
+      "lineIndex": 29
+    },
+    {
+      "start": 124.898,
+      "end": 127.127,
+      "type": "line",
+      "text": "that he would pour out his Spirit",
+      "verse": "8:10",
+      "lineIndex": 30
+    },
+    {
+      "start": 127.307,
+      "end": 129.536,
+      "type": "line",
+      "text": "upon the people who were in the city;",
+      "verse": "8:10",
+      "lineIndex": 31
+    },
+    {
+      "start": 129.716,
+      "end": 134.267,
+      "type": "line",
+      "text": "that he would also grant that he might baptize them unto repentance.",
+      "verse": "8:10",
+      "lineIndex": 32
+    },
+    {
+      "start": 134.947,
+      "end": 138.198,
+      "type": "line",
+      "text": "Nevertheless, they hardened their hearts, saying unto him:",
+      "verse": "8:11",
+      "lineIndex": 33
+    },
+    {
+      "start": 138.378,
+      "end": 140.979,
+      "type": "line",
+      "text": "Behold, we know that thou art Alma;",
+      "verse": "8:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 141.159,
+      "end": 144.735,
+      "type": "line",
+      "text": "and we know that thou art high priest over the church",
+      "verse": "8:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 144.915,
+      "end": 149.698,
+      "type": "line",
+      "text": "which thou hast established in many parts of the land, according to your tradition;",
+      "verse": "8:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 149.878,
+      "end": 152.014,
+      "type": "line",
+      "text": "and we are not of thy church,",
+      "verse": "8:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 152.194,
+      "end": 155.631,
+      "type": "line",
+      "text": "and we do not believe in such foolish traditions.",
+      "verse": "8:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 156.311,
+      "end": 159.562,
+      "type": "line",
+      "text": "And now we know that because we are not of thy church",
+      "verse": "8:12",
+      "lineIndex": 39
+    },
+    {
+      "start": 159.742,
+      "end": 162.528,
+      "type": "line",
+      "text": "we know that thou hast no power over us;",
+      "verse": "8:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 162.708,
+      "end": 166.237,
+      "type": "line",
+      "text": "and thou hast delivered up the judgment-seat unto Nephihah;",
+      "verse": "8:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 166.417,
+      "end": 169.482,
+      "type": "line",
+      "text": "therefore thou art not the chief judge over us.",
+      "verse": "8:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 170.162,
+      "end": 172.345,
+      "type": "line",
+      "text": "Now when the people had said this,",
+      "verse": "8:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 172.525,
+      "end": 174.475,
+      "type": "line",
+      "text": "and withstood all his words,",
+      "verse": "8:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 174.655,
+      "end": 176.002,
+      "type": "line",
+      "text": "and reviled him,",
+      "verse": "8:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 176.182,
+      "end": 177.715,
+      "type": "line",
+      "text": "and spit upon him,",
+      "verse": "8:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 177.895,
+      "end": 181.703,
+      "type": "line",
+      "text": "and caused that he should be cast out of their city,",
+      "verse": "8:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 181.883,
+      "end": 186.295,
+      "type": "line",
+      "text": "he departed thence and took his journey towards the city which was called Aaron.",
+      "verse": "8:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 186.975,
+      "end": 191.991,
+      "type": "line",
+      "text": "And it came to pass that while he was journeying thither, being weighed down with sorrow,",
+      "verse": "8:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 192.171,
+      "end": 201.273,
+      "type": "line",
+      "text": "wading through much tribulation and anguish of soul, because of the wickedness of the people who were in the city of Ammonihah,",
+      "verse": "8:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 201.453,
+      "end": 205.447,
+      "type": "line",
+      "text": "it came to pass while Alma was thus weighed down with sorrow,",
+      "verse": "8:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 205.627,
+      "end": 208.646,
+      "type": "line",
+      "text": "behold an angel of the Lord appeared unto him, saying:",
+      "verse": "8:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 209.326,
+      "end": 210.998,
+      "type": "line",
+      "text": "Blessed art thou, Alma;",
+      "verse": "8:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 211.178,
+      "end": 213.779,
+      "type": "line",
+      "text": "therefore, lift up thy head and rejoice,",
+      "verse": "8:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 213.959,
+      "end": 216.188,
+      "type": "line",
+      "text": "for thou hast great cause to rejoice;",
+      "verse": "8:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 216.368,
+      "end": 224.588,
+      "type": "line",
+      "text": "for thou hast been faithful in keeping the commandments of God from the time which thou receivedst thy first message from him.",
+      "verse": "8:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 224.768,
+      "end": 227.322,
+      "type": "line",
+      "text": "Behold, I am he that delivered it unto you.",
+      "verse": "8:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 228.002,
+      "end": 232.692,
+      "type": "line",
+      "text": "And behold, I am sent to command thee that thou return to the city of Ammonihah,",
+      "verse": "8:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 232.872,
+      "end": 235.612,
+      "type": "line",
+      "text": "and preach again unto the people of the city;",
+      "verse": "8:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 235.792,
+      "end": 237.185,
+      "type": "line",
+      "text": "yea, preach unto them.",
+      "verse": "8:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 237.365,
+      "end": 238.944,
+      "type": "line",
+      "text": "Yea, say unto them,",
+      "verse": "8:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 239.124,
+      "end": 241.864,
+      "type": "line",
+      "text": "except they repent the Lord God will destroy them.",
+      "verse": "8:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 242.544,
+      "end": 244.912,
+      "type": "line",
+      "text": "For behold, they do study at this time",
+      "verse": "8:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 245.092,
+      "end": 248.25,
+      "type": "line",
+      "text": "that they may destroy the liberty of thy people,",
+      "verse": "8:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 248.43,
+      "end": 250.241,
+      "type": "line",
+      "text": "(for thus saith the Lord)",
+      "verse": "8:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 250.421,
+      "end": 256.69,
+      "type": "line",
+      "text": "which is contrary to the statutes, and judgments, and commandments which he has given unto his people.",
+      "verse": "8:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 257.37,
+      "end": 262.757,
+      "type": "line",
+      "text": "Now it came to pass that after Alma had received his message from the angel of the Lord",
+      "verse": "8:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 262.937,
+      "end": 265.909,
+      "type": "line",
+      "text": "he returned speedily to the land of Ammonihah.",
+      "verse": "8:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 266.089,
+      "end": 268.643,
+      "type": "line",
+      "text": "And he entered the city by another way,",
+      "verse": "8:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 268.823,
+      "end": 272.167,
+      "type": "line",
+      "text": "yea, by the way which is on the south of the city of Ammonihah.",
+      "verse": "8:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 272.847,
+      "end": 275.773,
+      "type": "line",
+      "text": "And as he entered the city he was an hungered,",
+      "verse": "8:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 275.953,
+      "end": 277.439,
+      "type": "line",
+      "text": "and he said to a man:",
+      "verse": "8:19",
+      "lineIndex": 73
+    },
+    {
+      "start": 277.619,
+      "end": 281.148,
+      "type": "line",
+      "text": "Will ye give to an humble servant of God something to eat?",
+      "verse": "8:19",
+      "lineIndex": 74
+    },
+    {
+      "start": 281.828,
+      "end": 283.453,
+      "type": "line",
+      "text": "And the man said unto him:",
+      "verse": "8:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 283.633,
+      "end": 285.166,
+      "type": "line",
+      "text": "I am a Nephite,",
+      "verse": "8:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 285.346,
+      "end": 288.272,
+      "type": "line",
+      "text": "and I know that thou art a holy prophet of God,",
+      "verse": "8:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 288.452,
+      "end": 291.796,
+      "type": "line",
+      "text": "for thou art the man whom an angel said in a vision:",
+      "verse": "8:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 291.976,
+      "end": 293.369,
+      "type": "line",
+      "text": "Thou shalt receive.",
+      "verse": "8:20",
+      "lineIndex": 79
+    },
+    {
+      "start": 293.549,
+      "end": 295.732,
+      "type": "line",
+      "text": "Therefore, go with me into my house",
+      "verse": "8:20",
+      "lineIndex": 80
+    },
+    {
+      "start": 295.912,
+      "end": 298.327,
+      "type": "line",
+      "text": "and I will impart unto thee of my food;",
+      "verse": "8:20",
+      "lineIndex": 81
+    },
+    {
+      "start": 298.507,
+      "end": 301.944,
+      "type": "line",
+      "text": "and I know that thou wilt be a blessing unto me and my house.",
+      "verse": "8:20",
+      "lineIndex": 82
+    },
+    {
+      "start": 302.624,
+      "end": 306.432,
+      "type": "line",
+      "text": "And it came to pass that the man received him into his house;",
+      "verse": "8:21",
+      "lineIndex": 83
+    },
+    {
+      "start": 306.612,
+      "end": 308.795,
+      "type": "line",
+      "text": "and the man was called Amulek;",
+      "verse": "8:21",
+      "lineIndex": 84
+    },
+    {
+      "start": 308.975,
+      "end": 312.319,
+      "type": "line",
+      "text": "and he brought forth bread and meat and set before Alma.",
+      "verse": "8:21",
+      "lineIndex": 85
+    },
+    {
+      "start": 312.999,
+      "end": 316.157,
+      "type": "line",
+      "text": "And it came to pass that Alma ate bread and was filled;",
+      "verse": "8:22",
+      "lineIndex": 86
+    },
+    {
+      "start": 316.337,
+      "end": 318.52,
+      "type": "line",
+      "text": "and he blessed Amulek and his house,",
+      "verse": "8:22",
+      "lineIndex": 87
+    },
+    {
+      "start": 318.7,
+      "end": 320.558,
+      "type": "line",
+      "text": "and he gave thanks unto God.",
+      "verse": "8:22",
+      "lineIndex": 88
+    },
+    {
+      "start": 321.238,
+      "end": 324.767,
+      "type": "line",
+      "text": "And after he had eaten and was filled he said unto Amulek:",
+      "verse": "8:23",
+      "lineIndex": 89
+    },
+    {
+      "start": 324.947,
+      "end": 329.637,
+      "type": "line",
+      "text": "I am Alma, and am the high priest over the church of God throughout the land.",
+      "verse": "8:23",
+      "lineIndex": 90
+    },
+    {
+      "start": 330.317,
+      "end": 338.908,
+      "type": "line",
+      "text": "And behold, I have been called to preach the word of God among all this people, according to the spirit of revelation and prophecy;",
+      "verse": "8:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 339.088,
+      "end": 340.899,
+      "type": "line",
+      "text": "and I was in this land",
+      "verse": "8:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 341.079,
+      "end": 342.844,
+      "type": "line",
+      "text": "and they would not receive me,",
+      "verse": "8:24",
+      "lineIndex": 93
+    },
+    {
+      "start": 343.024,
+      "end": 344.603,
+      "type": "line",
+      "text": "but they cast me out",
+      "verse": "8:24",
+      "lineIndex": 94
+    },
+    {
+      "start": 344.783,
+      "end": 348.359,
+      "type": "line",
+      "text": "and I was about to set my back towards this land forever.",
+      "verse": "8:24",
+      "lineIndex": 95
+    },
+    {
+      "start": 349.039,
+      "end": 353.079,
+      "type": "line",
+      "text": "But behold, I have been commanded that I should turn again",
+      "verse": "8:25",
+      "lineIndex": 96
+    },
+    {
+      "start": 353.259,
+      "end": 355.395,
+      "type": "line",
+      "text": "and prophesy unto this people,",
+      "verse": "8:25",
+      "lineIndex": 97
+    },
+    {
+      "start": 355.575,
+      "end": 359.708,
+      "type": "line",
+      "text": "yea, and to testify against them concerning their iniquities.",
+      "verse": "8:25",
+      "lineIndex": 98
+    },
+    {
+      "start": 360.388,
+      "end": 361.874,
+      "type": "line",
+      "text": "And now, Amulek,",
+      "verse": "8:26",
+      "lineIndex": 99
+    },
+    {
+      "start": 362.054,
+      "end": 364.887,
+      "type": "line",
+      "text": "because thou hast fed me and taken me in,",
+      "verse": "8:26",
+      "lineIndex": 100
+    },
+    {
+      "start": 365.067,
+      "end": 366.6,
+      "type": "line",
+      "text": "thou art blessed;",
+      "verse": "8:26",
+      "lineIndex": 101
+    },
+    {
+      "start": 366.78,
+      "end": 368.591,
+      "type": "line",
+      "text": "for I was an hungered,",
+      "verse": "8:26",
+      "lineIndex": 102
+    },
+    {
+      "start": 368.771,
+      "end": 370.536,
+      "type": "line",
+      "text": "for I had fasted many days.",
+      "verse": "8:26",
+      "lineIndex": 103
+    },
+    {
+      "start": 371.216,
+      "end": 376.417,
+      "type": "line",
+      "text": "And Alma tarried many days with Amulek before he began to preach unto the people.",
+      "verse": "8:27",
+      "lineIndex": 104
+    },
+    {
+      "start": 377.097,
+      "end": 382.02,
+      "type": "line",
+      "text": "And it came to pass that the people did wax more gross in their iniquities.",
+      "verse": "8:28",
+      "lineIndex": 105
+    },
+    {
+      "start": 382.7,
+      "end": 384.883,
+      "type": "line",
+      "text": "And the word came to Alma, saying:",
+      "verse": "8:29",
+      "lineIndex": 107
+    },
+    {
+      "start": 385.063,
+      "end": 387.757,
+      "type": "line",
+      "text": "Go; and also say unto my servant Amulek,",
+      "verse": "8:29",
+      "lineIndex": 108
+    },
+    {
+      "start": 387.937,
+      "end": 390.584,
+      "type": "line",
+      "text": "go forth and prophesy unto this people, saying\u2014",
+      "verse": "8:29",
+      "lineIndex": 109
+    },
+    {
+      "start": 390.764,
+      "end": 393.272,
+      "type": "line",
+      "text": "Repent ye, for thus saith the Lord,",
+      "verse": "8:29",
+      "lineIndex": 110
+    },
+    {
+      "start": 393.452,
+      "end": 396.749,
+      "type": "line",
+      "text": "except ye repent I will visit this people in mine anger;",
+      "verse": "8:29",
+      "lineIndex": 111
+    },
+    {
+      "start": 396.929,
+      "end": 400.133,
+      "type": "line",
+      "text": "yea, and I will not turn my fierce anger away.",
+      "verse": "8:29",
+      "lineIndex": 112
+    },
+    {
+      "start": 400.813,
+      "end": 407.454,
+      "type": "line",
+      "text": "And Alma went forth, and also Amulek, among the people, to declare the words of God unto them;",
+      "verse": "8:30",
+      "lineIndex": 113
+    },
+    {
+      "start": 407.634,
+      "end": 410.049,
+      "type": "line",
+      "text": "and they were filled with the Holy Ghost.",
+      "verse": "8:30",
+      "lineIndex": 114
+    },
+    {
+      "start": 410.729,
+      "end": 416.348,
+      "type": "line",
+      "text": "And they had power given unto them, insomuch that they could not be confined in dungeons;",
+      "verse": "8:31",
+      "lineIndex": 115
+    },
+    {
+      "start": 416.528,
+      "end": 419.547,
+      "type": "line",
+      "text": "neither was it possible that any man could slay them;",
+      "verse": "8:31",
+      "lineIndex": 116
+    },
+    {
+      "start": 419.727,
+      "end": 422.746,
+      "type": "line",
+      "text": "nevertheless they did not exercise their power",
+      "verse": "8:31",
+      "lineIndex": 117
+    },
+    {
+      "start": 422.926,
+      "end": 426.084,
+      "type": "line",
+      "text": "until they were bound in bands and cast into prison.",
+      "verse": "8:31",
+      "lineIndex": 118
+    },
+    {
+      "start": 426.264,
+      "end": 427.982,
+      "type": "line",
+      "text": "Now, this was done",
+      "verse": "8:31",
+      "lineIndex": 119
+    },
+    {
+      "start": 428.162,
+      "end": 431.181,
+      "type": "line",
+      "text": "that the Lord might show forth his power in them.",
+      "verse": "8:31",
+      "lineIndex": 120
+    },
+    {
+      "start": 431.861,
+      "end": 434.415,
+      "type": "line",
+      "text": "And it came to pass that they went forth",
+      "verse": "8:32",
+      "lineIndex": 121
+    },
+    {
+      "start": 434.595,
+      "end": 441.375,
+      "type": "line",
+      "text": "and began to preach and to prophesy unto the people, according to the spirit and power which the Lord had given them.",
+      "verse": "8:32",
+      "lineIndex": 122
+    }
+  ]
+}
