@@ -94,6 +94,48 @@ def content_count(sent: Sentence, tok: Token) -> int:
     return sum(1 for t in sent.subtree(tok) if t.upos != "PUNCT")
 
 
+_FINITE_XPOS = {"MD", "VBZ", "VBD", "VBP"}
+
+
+def is_elided_this_matrix(sent: Sentence, matrix: Token, line_map: dict) -> bool:
+    """M4-fragment exclusion (canon §5 R6 Exclusion 5 / R7 Exclusion 7, codified 2026-05-15).
+
+    True if `matrix` is the elided-predicate `(and|or) (all) this` coordinate-PRON
+    fragment that R6/R7 yield to per §1.5 M4 (fragmented-atomic-thought-unit).
+
+    Signature (narrow lexical closed-list — `this`-PRON only):
+      - matrix is PRON with lemma `this`, deprel=`conj`
+      - matrix's head is VERB/AUX on a PRIOR line (elided-predicate coordinate)
+      - matrix's line begins with CCONJ (and/or/nor/but) — fragment marker
+
+    The elided-predicate signal is the `conj`-of-VERB-on-prior-line attachment.
+    Finite-verb absence on the matrix line is NOT required — when the merge is
+    already applied, the line will contain the subordinator-clause's finite verb,
+    but the matrix portion (the `(and|or) (all) this` prefix) is still the
+    elided-predicate fragment.
+    """
+    if matrix.upos != "PRON" or matrix.lemma != "this":
+        return False
+    if matrix.deprel != "conj":
+        return False
+    head = sent.head_of(matrix)
+    if head is None or head.upos not in ("VERB", "AUX"):
+        return False
+    matrix_line = line_map.get((sent.sent_id, matrix.id))
+    head_line = line_map.get((sent.sent_id, head.id))
+    if matrix_line is None or head_line is None or head_line >= matrix_line:
+        return False
+    line_toks_np = [t for t in sent.tokens
+                    if line_map.get((sent.sent_id, t.id)) == matrix_line
+                    and t.upos != "PUNCT"]
+    if not line_toks_np:
+        return False
+    first = min(line_toks_np, key=lambda t: t.id)
+    if first.upos != "CCONJ":
+        return False
+    return True
+
+
 def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
     v2_path, conllu_path = book_paths(book_id)
     sentences = load_conllu(conllu_path)
@@ -133,6 +175,12 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
             # The matrix is the head of the advcl
             matrix = sent.head_of(advcl_tok)
             if matrix is None:
+                continue
+
+            # M4-fragment exclusion (canon §5 R6 Exclusion 5, codified 2026-05-15):
+            # when matrix is the elided-predicate `(and|or) (all) this` coordinate-PRON
+            # fragment, R6's split-mandate yields to §1.5 M4 (fragmented-atomic-thought-unit).
+            if is_elided_this_matrix(sent, matrix, line_map):
                 continue
 
             matrix_line = line_map.get((sent.sent_id, matrix.id))

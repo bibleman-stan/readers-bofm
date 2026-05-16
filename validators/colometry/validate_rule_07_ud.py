@@ -23,6 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from validators.parsing.conllu_query import load_conllu
 from validators.parsing.line_mapping import build_line_map_full, book_paths
+from validators.colometry.validate_rule_06_ud import is_elided_this_matrix
 
 
 MODAL_AUX_LEMMAS = {
@@ -154,6 +155,13 @@ def scan_book(book_id: str) -> list[dict]:
             head = sent.head_of(advcl)
             if head is None:
                 continue
+
+            # M4-fragment exclusion (canon §5 R7 Exclusion 7, codified 2026-05-15):
+            # when head is the elided-predicate `(and|or) (all) this` coordinate-PRON
+            # fragment, R7's split-mandate yields to §1.5 M4. Shared helper with R6.
+            if is_elided_this_matrix(sent, head, line_map):
+                continue
+
             head_line = line_map.get((sent.sent_id, head.id))
             mark_line = line_map.get((sent.sent_id, mark.id))
             if head_line is None or mark_line is None:

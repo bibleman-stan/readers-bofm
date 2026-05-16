@@ -1,0 +1,560 @@
+{
+  "book": "helaman",
+  "bookName": "Helaman",
+  "chapter": 10,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 265.081,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.087,
+      "type": "line",
+      "text": "And it came to pass that there arose a division among the people,",
+      "verse": "10:1",
+      "lineIndex": 0
+    },
+    {
+      "start": 4.267,
+      "end": 13.044,
+      "type": "line",
+      "text": "insomuch that they divided hither and thither and went their ways, leaving Nephi alone, as he was standing in the midst of them.",
+      "verse": "10:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 13.724,
+      "end": 18.089,
+      "type": "line",
+      "text": "And it came to pass that Nephi went his way towards his own house,",
+      "verse": "10:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 18.269,
+      "end": 21.706,
+      "type": "line",
+      "text": "pondering upon the things which the Lord had shown unto him.",
+      "verse": "10:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 22.386,
+      "end": 30.699,
+      "type": "line",
+      "text": "And it came to pass as he was thus pondering\u2014 being much cast down because of the wickedness of the people of the Nephites,",
+      "verse": "10:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 30.879,
+      "end": 37.566,
+      "type": "line",
+      "text": "their secret works of darkness, and their murderings, and their plunderings, and all manner of iniquities\u2014",
+      "verse": "10:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 37.746,
+      "end": 41.368,
+      "type": "line",
+      "text": "and it came to pass as he was thus pondering in his heart,",
+      "verse": "10:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 41.548,
+      "end": 43.916,
+      "type": "line",
+      "text": "behold, a voice came unto him saying:",
+      "verse": "10:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 44.596,
+      "end": 46.268,
+      "type": "line",
+      "text": "Blessed art thou, Nephi,",
+      "verse": "10:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 46.448,
+      "end": 48.724,
+      "type": "line",
+      "text": "for those things which thou hast done;",
+      "verse": "10:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 48.904,
+      "end": 50.297,
+      "type": "line",
+      "text": "for I have beheld",
+      "verse": "10:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 50.477,
+      "end": 57.211,
+      "type": "line",
+      "text": "how thou hast with unwearyingness declared the word, which I have given unto thee, unto this people.",
+      "verse": "10:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 57.391,
+      "end": 59.295,
+      "type": "line",
+      "text": "And thou hast not feared them,",
+      "verse": "10:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 59.475,
+      "end": 61.425,
+      "type": "line",
+      "text": "and hast not sought thine own life,",
+      "verse": "10:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 61.605,
+      "end": 64.484,
+      "type": "line",
+      "text": "but hast sought my will, and to keep my commandments.",
+      "verse": "10:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 65.164,
+      "end": 69.251,
+      "type": "line",
+      "text": "And now, because thou hast done this with such unwearyingness,",
+      "verse": "10:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 69.431,
+      "end": 71.567,
+      "type": "line",
+      "text": "behold, I will bless thee forever;",
+      "verse": "10:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 71.747,
+      "end": 76.948,
+      "type": "line",
+      "text": "and I will make thee mighty in word and in deed, in faith and in works;",
+      "verse": "10:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 77.128,
+      "end": 82.051,
+      "type": "line",
+      "text": "yea, even that all things shall be done unto thee according to thy word,",
+      "verse": "10:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 82.231,
+      "end": 85.76,
+      "type": "line",
+      "text": "for thou shalt not ask that which is contrary to my will.",
+      "verse": "10:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 86.44,
+      "end": 88.855,
+      "type": "line",
+      "text": "Behold, thou art Nephi, and I am God.",
+      "verse": "10:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 89.035,
+      "end": 92.379,
+      "type": "line",
+      "text": "Behold, I declare it unto thee in the presence of mine angels,",
+      "verse": "10:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 92.559,
+      "end": 95.113,
+      "type": "line",
+      "text": "that ye shall have power over this people,",
+      "verse": "10:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 95.293,
+      "end": 102.816,
+      "type": "line",
+      "text": "and shall smite the earth with famine and with pestilence, and destruction, according to the wickedness of this people.",
+      "verse": "10:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 103.496,
+      "end": 105.446,
+      "type": "line",
+      "text": "Behold, I give unto you power,",
+      "verse": "10:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 105.626,
+      "end": 110.038,
+      "type": "line",
+      "text": "that whatsoever ye shall seal on earth shall be sealed in heaven;",
+      "verse": "10:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 110.218,
+      "end": 113.98,
+      "type": "line",
+      "text": "and whatsoever ye shall loose on earth shall be loosed in heaven;",
+      "verse": "10:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 114.16,
+      "end": 116.946,
+      "type": "line",
+      "text": "and thus shall ye have power among this people.",
+      "verse": "10:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 117.626,
+      "end": 122.27,
+      "type": "line",
+      "text": "And thus, if ye shall say unto this temple it shall be rent in twain,",
+      "verse": "10:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 122.45,
+      "end": 123.797,
+      "type": "line",
+      "text": "it shall be done.",
+      "verse": "10:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 124.477,
+      "end": 126.613,
+      "type": "line",
+      "text": "And if ye shall say unto this mountain,",
+      "verse": "10:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 126.793,
+      "end": 130.09,
+      "type": "line",
+      "text": "Be thou cast down and become smooth, it shall be done.",
+      "verse": "10:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 130.77,
+      "end": 135.693,
+      "type": "line",
+      "text": "And behold, if ye shall say that God shall smite this people, it shall come to pass.",
+      "verse": "10:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 136.373,
+      "end": 140.32,
+      "type": "line",
+      "text": "And now behold, I command you that ye shall go and declare unto this people,",
+      "verse": "10:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 140.5,
+      "end": 143.704,
+      "type": "line",
+      "text": "that thus saith the Lord God, who is the Almighty:",
+      "verse": "10:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 143.884,
+      "end": 147.971,
+      "type": "line",
+      "text": "Except ye repent ye shall be smitten, even unto destruction.",
+      "verse": "10:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 148.651,
+      "end": 153.62,
+      "type": "line",
+      "text": "And behold, now it came to pass that when the Lord had spoken these words unto Nephi,",
+      "verse": "10:12",
+      "lineIndex": 37
+    },
+    {
+      "start": 153.8,
+      "end": 155.1,
+      "type": "line",
+      "text": "he did stop",
+      "verse": "10:12",
+      "lineIndex": 38
+    },
+    {
+      "start": 155.28,
+      "end": 158.02,
+      "type": "line",
+      "text": "and did not go unto his own house,",
+      "verse": "10:12",
+      "lineIndex": 39
+    },
+    {
+      "start": 158.2,
+      "end": 161.126,
+      "type": "line",
+      "text": "but did return unto the multitudes",
+      "verse": "10:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 161.306,
+      "end": 164.789,
+      "type": "line",
+      "text": "who were scattered about upon the face of the land,",
+      "verse": "10:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 164.969,
+      "end": 170.495,
+      "type": "line",
+      "text": "and began to declare unto them the word of the Lord which had been spoken unto him,",
+      "verse": "10:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 170.675,
+      "end": 173.833,
+      "type": "line",
+      "text": "concerning their destruction if they did not repent.",
+      "verse": "10:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 174.513,
+      "end": 178.414,
+      "type": "line",
+      "text": "Now behold, notwithstanding that great miracle which Nephi had done",
+      "verse": "10:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 178.594,
+      "end": 182.031,
+      "type": "line",
+      "text": "in telling them concerning the death of the chief judge,",
+      "verse": "10:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 182.211,
+      "end": 183.976,
+      "type": "line",
+      "text": "they did harden their hearts",
+      "verse": "10:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 184.156,
+      "end": 186.896,
+      "type": "line",
+      "text": "and did not hearken unto the words of the Lord.",
+      "verse": "10:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 187.576,
+      "end": 191.756,
+      "type": "line",
+      "text": "Therefore Nephi did declare unto them the word of the Lord, saying:",
+      "verse": "10:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 191.936,
+      "end": 193.515,
+      "type": "line",
+      "text": "Except ye repent,",
+      "verse": "10:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 193.695,
+      "end": 195.228,
+      "type": "line",
+      "text": "thus saith the Lord,",
+      "verse": "10:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 195.408,
+      "end": 197.869,
+      "type": "line",
+      "text": "ye shall be smitten even unto destruction.",
+      "verse": "10:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 198.549,
+      "end": 203.007,
+      "type": "line",
+      "text": "And it came to pass that when Nephi had declared unto them the word,",
+      "verse": "10:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 203.187,
+      "end": 207.924,
+      "type": "line",
+      "text": "behold, they did still harden their hearts and would not hearken unto his words;",
+      "verse": "10:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 208.104,
+      "end": 210.658,
+      "type": "line",
+      "text": "therefore they did revile against him,",
+      "verse": "10:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 210.838,
+      "end": 213.532,
+      "type": "line",
+      "text": "and did seek to lay their hands upon him",
+      "verse": "10:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 213.712,
+      "end": 216.498,
+      "type": "line",
+      "text": "that they might cast him into prison.",
+      "verse": "10:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 217.178,
+      "end": 219.872,
+      "type": "line",
+      "text": "But behold, the power of God was with him,",
+      "verse": "10:16",
+      "lineIndex": 57
+    },
+    {
+      "start": 220.052,
+      "end": 223.117,
+      "type": "line",
+      "text": "and they could not take him to cast him into prison,",
+      "verse": "10:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 223.297,
+      "end": 228.545,
+      "type": "line",
+      "text": "for he was taken by the Spirit and conveyed away out of the midst of them.",
+      "verse": "10:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 229.225,
+      "end": 235.262,
+      "type": "line",
+      "text": "And it came to pass that thus he did go forth in the Spirit, from multitude to multitude,",
+      "verse": "10:17",
+      "lineIndex": 60
+    },
+    {
+      "start": 235.442,
+      "end": 237.392,
+      "type": "line",
+      "text": "declaring the word of God,",
+      "verse": "10:17",
+      "lineIndex": 61
+    },
+    {
+      "start": 237.572,
+      "end": 240.498,
+      "type": "line",
+      "text": "even until he had declared it unto them all,",
+      "verse": "10:17",
+      "lineIndex": 62
+    },
+    {
+      "start": 240.678,
+      "end": 243.186,
+      "type": "line",
+      "text": "or sent it forth among all the people.",
+      "verse": "10:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 243.866,
+      "end": 247.953,
+      "type": "line",
+      "text": "And it came to pass that they would not hearken unto his words;",
+      "verse": "10:18",
+      "lineIndex": 64
+    },
+    {
+      "start": 248.133,
+      "end": 254.031,
+      "type": "line",
+      "text": "and there began to be contentions, insomuch that they were divided against themselves",
+      "verse": "10:18",
+      "lineIndex": 65
+    },
+    {
+      "start": 254.211,
+      "end": 257.09,
+      "type": "line",
+      "text": "and began to slay one another with the sword.",
+      "verse": "10:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 257.77,
+      "end": 264.411,
+      "type": "line",
+      "text": "And thus ended the seventy and first year of the reign of the judges over the people of Nephi.",
+      "verse": "10:19",
+      "lineIndex": 67
+    }
+  ]
+}
