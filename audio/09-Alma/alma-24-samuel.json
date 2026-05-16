@@ -1,0 +1,1232 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 24,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 542.224,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.062,
+      "type": "line",
+      "text": "And it came to pass that the Amalekites and the Amulonites and the Lamanites",
+      "verse": "24:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.242,
+      "end": 9.747,
+      "type": "line",
+      "text": "who were in the land of Amulon, and also in the land of Helam,",
+      "verse": "24:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.927,
+      "end": 12.203,
+      "type": "line",
+      "text": "and who were in the land of Jerusalem,",
+      "verse": "24:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 12.383,
+      "end": 15.216,
+      "type": "line",
+      "text": "and in fine, in all the land round about,",
+      "verse": "24:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.396,
+      "end": 17.346,
+      "type": "line",
+      "text": "who had not been converted",
+      "verse": "24:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 17.526,
+      "end": 20.916,
+      "type": "line",
+      "text": "and had not taken upon them the name of Anti-Nephi-Lehi,",
+      "verse": "24:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 21.096,
+      "end": 24.811,
+      "type": "line",
+      "text": "were stirred up by the Amalekites and by the Amulonites",
+      "verse": "24:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 24.991,
+      "end": 27.499,
+      "type": "line",
+      "text": "to anger against their brethren.",
+      "verse": "24:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 28.179,
+      "end": 39.603,
+      "type": "line",
+      "text": "And their hatred became exceedingly sore against them, even insomuch that they began to rebel against their king, insomuch that they would not that he should be their king;",
+      "verse": "24:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 39.783,
+      "end": 43.87,
+      "type": "line",
+      "text": "therefore, they took up arms against the people of Anti-Nephi-Lehi.",
+      "verse": "24:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 44.55,
+      "end": 47.569,
+      "type": "line",
+      "text": "Now the king conferred the kingdom upon his son,",
+      "verse": "24:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 47.749,
+      "end": 50.071,
+      "type": "line",
+      "text": "and he called his name Anti-Nephi-Lehi.",
+      "verse": "24:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 50.751,
+      "end": 53.166,
+      "type": "line",
+      "text": "And the king died in that selfsame year",
+      "verse": "24:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 53.346,
+      "end": 58.176,
+      "type": "line",
+      "text": "that the Lamanites began to make preparations for war against the people of God.",
+      "verse": "24:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 58.856,
+      "end": 63.732,
+      "type": "line",
+      "text": "Now when Ammon and his brethren and all those who had come up with him",
+      "verse": "24:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 63.912,
+      "end": 67.952,
+      "type": "line",
+      "text": "saw the preparations of the Lamanites to destroy their brethren,",
+      "verse": "24:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 68.132,
+      "end": 70.361,
+      "type": "line",
+      "text": "they came forth to the land of Midian,",
+      "verse": "24:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 70.541,
+      "end": 73.049,
+      "type": "line",
+      "text": "and there Ammon met all his brethren;",
+      "verse": "24:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 73.229,
+      "end": 76.015,
+      "type": "line",
+      "text": "and from thence they came to the land of Ishmael",
+      "verse": "24:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 76.195,
+      "end": 78.889,
+      "type": "line",
+      "text": "that they might hold a council with Lamoni",
+      "verse": "24:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 79.069,
+      "end": 81.623,
+      "type": "line",
+      "text": "and also with his brother Anti-Nephi-Lehi,",
+      "verse": "24:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 81.803,
+      "end": 85.286,
+      "type": "line",
+      "text": "what they should do to defend themselves against the Lamanites.",
+      "verse": "24:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 85.966,
+      "end": 89.031,
+      "type": "line",
+      "text": "Now there was not one soul among all the people",
+      "verse": "24:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 89.211,
+      "end": 91.719,
+      "type": "line",
+      "text": "who had been converted unto the Lord",
+      "verse": "24:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 91.899,
+      "end": 95.289,
+      "type": "line",
+      "text": "that would take up arms against their brethren;",
+      "verse": "24:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 95.469,
+      "end": 99.138,
+      "type": "line",
+      "text": "nay, they would not even make any preparations for war;",
+      "verse": "24:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 99.318,
+      "end": 102.569,
+      "type": "line",
+      "text": "yea, and also their king commanded them that they should not.",
+      "verse": "24:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 103.249,
+      "end": 108.265,
+      "type": "line",
+      "text": "Now, these are the words which he said unto the people concerning the matter:",
+      "verse": "24:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 108.445,
+      "end": 110.86,
+      "type": "line",
+      "text": "I thank my God, my beloved people,",
+      "verse": "24:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 111.04,
+      "end": 113.316,
+      "type": "line",
+      "text": "that our great God has in goodness",
+      "verse": "24:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 113.496,
+      "end": 118.326,
+      "type": "line",
+      "text": "sent these our brethren, the Nephites, unto us to preach unto us,",
+      "verse": "24:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 118.506,
+      "end": 122.128,
+      "type": "line",
+      "text": "and to convince us of the traditions of our wicked fathers.",
+      "verse": "24:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 122.808,
+      "end": 125.037,
+      "type": "line",
+      "text": "And behold, I thank my great God",
+      "verse": "24:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 125.217,
+      "end": 128.932,
+      "type": "line",
+      "text": "that he has given us a portion of his Spirit to soften our hearts,",
+      "verse": "24:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 129.112,
+      "end": 133.524,
+      "type": "line",
+      "text": "that we have opened a correspondence with these brethren, the Nephites.",
+      "verse": "24:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 134.204,
+      "end": 136.712,
+      "type": "line",
+      "text": "And behold, I also thank my God,",
+      "verse": "24:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 136.892,
+      "end": 139.075,
+      "type": "line",
+      "text": "that by opening this correspondence",
+      "verse": "24:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 139.255,
+      "end": 144.271,
+      "type": "line",
+      "text": "we have been convinced of our sins, and of the many murders which we have committed.",
+      "verse": "24:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 144.951,
+      "end": 147.552,
+      "type": "line",
+      "text": "And I also thank my God, yea, my great God,",
+      "verse": "24:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 147.732,
+      "end": 151.958,
+      "type": "line",
+      "text": "that he hath granted unto us that we might repent of these things,",
+      "verse": "24:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 152.138,
+      "end": 158.222,
+      "type": "line",
+      "text": "and also that he hath forgiven us of those our many sins and murders which we have committed,",
+      "verse": "24:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 158.402,
+      "end": 161.049,
+      "type": "line",
+      "text": "and taken away the guilt from our hearts,",
+      "verse": "24:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 161.229,
+      "end": 163.319,
+      "type": "line",
+      "text": "through the merits of his Son.",
+      "verse": "24:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 163.999,
+      "end": 165.764,
+      "type": "line",
+      "text": "And now behold, my brethren,",
+      "verse": "24:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 165.944,
+      "end": 168.405,
+      "type": "line",
+      "text": "since it has been all that we could do",
+      "verse": "24:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 168.585,
+      "end": 171.325,
+      "type": "line",
+      "text": "(as we were the most lost of all mankind)",
+      "verse": "24:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 171.505,
+      "end": 176.242,
+      "type": "line",
+      "text": "to repent of all our sins and the many murders which we have committed,",
+      "verse": "24:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 176.422,
+      "end": 179.533,
+      "type": "line",
+      "text": "and to get God to take them away from our hearts,",
+      "verse": "24:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 179.713,
+      "end": 183.335,
+      "type": "line",
+      "text": "for it was all we could do to repent sufficiently before God",
+      "verse": "24:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 183.515,
+      "end": 185.93,
+      "type": "line",
+      "text": "that he would take away our stain\u2014",
+      "verse": "24:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 186.61,
+      "end": 188.793,
+      "type": "line",
+      "text": "Now, my best beloved brethren,",
+      "verse": "24:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 188.973,
+      "end": 191.249,
+      "type": "line",
+      "text": "since God hath taken away our stains,",
+      "verse": "24:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 191.429,
+      "end": 193.612,
+      "type": "line",
+      "text": "and our swords have become bright,",
+      "verse": "24:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 193.792,
+      "end": 198.064,
+      "type": "line",
+      "text": "then let us stain our swords no more with the blood of our brethren.",
+      "verse": "24:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 198.744,
+      "end": 200.416,
+      "type": "line",
+      "text": "Behold, I say unto you,",
+      "verse": "24:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 200.596,
+      "end": 205.844,
+      "type": "line",
+      "text": "Nay, let us retain our swords that they be not stained with the blood of our brethren;",
+      "verse": "24:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 206.024,
+      "end": 209.043,
+      "type": "line",
+      "text": "for perhaps, if we should stain our swords again",
+      "verse": "24:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 209.223,
+      "end": 214.656,
+      "type": "line",
+      "text": "they can no more be washed bright through the blood of the Son of our great God,",
+      "verse": "24:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 214.836,
+      "end": 218.551,
+      "type": "line",
+      "text": "which shall be shed for the atonement of our sins.",
+      "verse": "24:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 219.231,
+      "end": 221.692,
+      "type": "line",
+      "text": "And the great God has had mercy on us,",
+      "verse": "24:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 221.872,
+      "end": 224.658,
+      "type": "line",
+      "text": "and made these things known unto us",
+      "verse": "24:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 224.838,
+      "end": 226.556,
+      "type": "line",
+      "text": "that we might not perish;",
+      "verse": "24:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 226.736,
+      "end": 230.637,
+      "type": "line",
+      "text": "yea, and he has made these things known unto us beforehand,",
+      "verse": "24:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 230.817,
+      "end": 234.625,
+      "type": "line",
+      "text": "because he loveth our souls as well as he loveth our children;",
+      "verse": "24:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 234.805,
+      "end": 238.613,
+      "type": "line",
+      "text": "therefore, in his mercy he doth visit us by his angels,",
+      "verse": "24:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 238.793,
+      "end": 242.137,
+      "type": "line",
+      "text": "that the plan of salvation might be made known unto us",
+      "verse": "24:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 242.317,
+      "end": 244.918,
+      "type": "line",
+      "text": "as well as unto future generations.",
+      "verse": "24:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 245.598,
+      "end": 247.363,
+      "type": "line",
+      "text": "Oh, how merciful is our God!",
+      "verse": "24:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 247.543,
+      "end": 253.441,
+      "type": "line",
+      "text": "And now behold, since it has been as much as we could do to get our stains taken away from us,",
+      "verse": "24:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 253.621,
+      "end": 255.989,
+      "type": "line",
+      "text": "and our swords are made bright,",
+      "verse": "24:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 256.169,
+      "end": 257.702,
+      "type": "line",
+      "text": "let us hide them away",
+      "verse": "24:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 257.882,
+      "end": 260.018,
+      "type": "line",
+      "text": "that they may be kept bright,",
+      "verse": "24:15",
+      "lineIndex": 73
+    },
+    {
+      "start": 260.198,
+      "end": 263.031,
+      "type": "line",
+      "text": "as a testimony to our God at the last day,",
+      "verse": "24:15",
+      "lineIndex": 74
+    },
+    {
+      "start": 263.211,
+      "end": 268.273,
+      "type": "line",
+      "text": "or at the day that we shall be brought to stand before him to be judged,",
+      "verse": "24:15",
+      "lineIndex": 75
+    },
+    {
+      "start": 268.453,
+      "end": 272.168,
+      "type": "line",
+      "text": "that we have not stained our swords in the blood of our brethren",
+      "verse": "24:15",
+      "lineIndex": 76
+    },
+    {
+      "start": 272.348,
+      "end": 276.713,
+      "type": "line",
+      "text": "since he imparted his word unto us and has made us clean thereby.",
+      "verse": "24:15",
+      "lineIndex": 77
+    },
+    {
+      "start": 277.393,
+      "end": 278.693,
+      "type": "line",
+      "text": "And now, my brethren,",
+      "verse": "24:16",
+      "lineIndex": 78
+    },
+    {
+      "start": 278.873,
+      "end": 281.241,
+      "type": "line",
+      "text": "if our brethren seek to destroy us,",
+      "verse": "24:16",
+      "lineIndex": 79
+    },
+    {
+      "start": 281.421,
+      "end": 283.789,
+      "type": "line",
+      "text": "behold, we will hide away our swords,",
+      "verse": "24:16",
+      "lineIndex": 80
+    },
+    {
+      "start": 283.969,
+      "end": 287.173,
+      "type": "line",
+      "text": "yea, even we will bury them deep in the earth",
+      "verse": "24:16",
+      "lineIndex": 81
+    },
+    {
+      "start": 287.353,
+      "end": 289.489,
+      "type": "line",
+      "text": "that they may be kept bright,",
+      "verse": "24:16",
+      "lineIndex": 82
+    },
+    {
+      "start": 289.669,
+      "end": 294.174,
+      "type": "line",
+      "text": "as a testimony that we have never used them, at the last day;",
+      "verse": "24:16",
+      "lineIndex": 83
+    },
+    {
+      "start": 294.354,
+      "end": 296.49,
+      "type": "line",
+      "text": "and if our brethren destroy us,",
+      "verse": "24:16",
+      "lineIndex": 84
+    },
+    {
+      "start": 296.67,
+      "end": 299.921,
+      "type": "line",
+      "text": "behold, we shall go to our God and shall be saved.",
+      "verse": "24:16",
+      "lineIndex": 85
+    },
+    {
+      "start": 300.601,
+      "end": 305.756,
+      "type": "line",
+      "text": "And now it came to pass that when the king had made an end of these sayings,",
+      "verse": "24:17",
+      "lineIndex": 86
+    },
+    {
+      "start": 305.936,
+      "end": 308.258,
+      "type": "line",
+      "text": "and all the people were assembled together,",
+      "verse": "24:17",
+      "lineIndex": 87
+    },
+    {
+      "start": 308.438,
+      "end": 310.899,
+      "type": "line",
+      "text": "they took their swords, and all the weapons",
+      "verse": "24:17",
+      "lineIndex": 88
+    },
+    {
+      "start": 311.079,
+      "end": 314.423,
+      "type": "line",
+      "text": "which were used for the shedding of man's blood,",
+      "verse": "24:17",
+      "lineIndex": 89
+    },
+    {
+      "start": 314.603,
+      "end": 316.925,
+      "type": "line",
+      "text": "and they did bury them up deep in the earth.",
+      "verse": "24:17",
+      "lineIndex": 90
+    },
+    {
+      "start": 317.605,
+      "end": 319.045,
+      "type": "line",
+      "text": "And this they did,",
+      "verse": "24:18",
+      "lineIndex": 91
+    },
+    {
+      "start": 319.225,
+      "end": 323.823,
+      "type": "line",
+      "text": "it being in their view a testimony to God, and also to men,",
+      "verse": "24:18",
+      "lineIndex": 92
+    },
+    {
+      "start": 324.003,
+      "end": 327.997,
+      "type": "line",
+      "text": "that they never would use weapons again for the shedding of man's blood;",
+      "verse": "24:18",
+      "lineIndex": 93
+    },
+    {
+      "start": 328.177,
+      "end": 335.979,
+      "type": "line",
+      "text": "and this they did, vouching and covenanting with God that rather than shed the blood of their brethren",
+      "verse": "24:18",
+      "lineIndex": 94
+    },
+    {
+      "start": 336.159,
+      "end": 338.342,
+      "type": "line",
+      "text": "they would give up their own lives;",
+      "verse": "24:18",
+      "lineIndex": 95
+    },
+    {
+      "start": 338.522,
+      "end": 342.934,
+      "type": "line",
+      "text": "and rather than take away from a brother they would give unto him;",
+      "verse": "24:18",
+      "lineIndex": 96
+    },
+    {
+      "start": 343.114,
+      "end": 346.225,
+      "type": "line",
+      "text": "and rather than spend their days in idleness",
+      "verse": "24:18",
+      "lineIndex": 97
+    },
+    {
+      "start": 346.405,
+      "end": 349.145,
+      "type": "line",
+      "text": "they would labor abundantly with their hands.",
+      "verse": "24:18",
+      "lineIndex": 98
+    },
+    {
+      "start": 349.825,
+      "end": 351.358,
+      "type": "line",
+      "text": "And thus we see that,",
+      "verse": "24:19",
+      "lineIndex": 99
+    },
+    {
+      "start": 351.538,
+      "end": 355.393,
+      "type": "line",
+      "text": "when these Lamanites were brought to believe and to know the truth,",
+      "verse": "24:19",
+      "lineIndex": 100
+    },
+    {
+      "start": 355.573,
+      "end": 361.146,
+      "type": "line",
+      "text": "they were firm, and would suffer even unto death rather than commit sin;",
+      "verse": "24:19",
+      "lineIndex": 101
+    },
+    {
+      "start": 361.326,
+      "end": 364.437,
+      "type": "line",
+      "text": "and thus we see that they buried their weapons of peace,",
+      "verse": "24:19",
+      "lineIndex": 102
+    },
+    {
+      "start": 364.617,
+      "end": 367.45,
+      "type": "line",
+      "text": "or they buried the weapons of war, for peace.",
+      "verse": "24:19",
+      "lineIndex": 103
+    },
+    {
+      "start": 368.13,
+      "end": 373.563,
+      "type": "line",
+      "text": "And it came to pass that their brethren, the Lamanites, made preparations for war,",
+      "verse": "24:20",
+      "lineIndex": 104
+    },
+    {
+      "start": 373.743,
+      "end": 378.155,
+      "type": "line",
+      "text": "and came up to the land of Nephi for the purpose of destroying the king,",
+      "verse": "24:20",
+      "lineIndex": 105
+    },
+    {
+      "start": 378.335,
+      "end": 380.564,
+      "type": "line",
+      "text": "and to place another in his stead,",
+      "verse": "24:20",
+      "lineIndex": 106
+    },
+    {
+      "start": 380.744,
+      "end": 385.992,
+      "type": "line",
+      "text": "and also of destroying the people of Anti-Nephi-Lehi out of the land.",
+      "verse": "24:20",
+      "lineIndex": 107
+    },
+    {
+      "start": 386.672,
+      "end": 390.016,
+      "type": "line",
+      "text": "Now when the people saw that they were coming against them",
+      "verse": "24:21",
+      "lineIndex": 108
+    },
+    {
+      "start": 390.196,
+      "end": 391.914,
+      "type": "line",
+      "text": "they went out to meet them,",
+      "verse": "24:21",
+      "lineIndex": 109
+    },
+    {
+      "start": 392.094,
+      "end": 394.927,
+      "type": "line",
+      "text": "and prostrated themselves before them to the earth,",
+      "verse": "24:21",
+      "lineIndex": 110
+    },
+    {
+      "start": 395.107,
+      "end": 397.615,
+      "type": "line",
+      "text": "and began to call on the name of the Lord;",
+      "verse": "24:21",
+      "lineIndex": 111
+    },
+    {
+      "start": 397.795,
+      "end": 400.024,
+      "type": "line",
+      "text": "and thus they were in this attitude",
+      "verse": "24:21",
+      "lineIndex": 112
+    },
+    {
+      "start": 400.204,
+      "end": 402.99,
+      "type": "line",
+      "text": "when the Lamanites began to fall upon them,",
+      "verse": "24:21",
+      "lineIndex": 113
+    },
+    {
+      "start": 403.17,
+      "end": 405.446,
+      "type": "line",
+      "text": "and began to slay them with the sword.",
+      "verse": "24:21",
+      "lineIndex": 114
+    },
+    {
+      "start": 406.126,
+      "end": 408.448,
+      "type": "line",
+      "text": "And thus without meeting any resistance,",
+      "verse": "24:22",
+      "lineIndex": 115
+    },
+    {
+      "start": 408.628,
+      "end": 411.322,
+      "type": "line",
+      "text": "they did slay a thousand and five of them;",
+      "verse": "24:22",
+      "lineIndex": 116
+    },
+    {
+      "start": 411.502,
+      "end": 413.731,
+      "type": "line",
+      "text": "and we know that they are blessed,",
+      "verse": "24:22",
+      "lineIndex": 117
+    },
+    {
+      "start": 413.911,
+      "end": 416.372,
+      "type": "line",
+      "text": "for they have gone to dwell with their God.",
+      "verse": "24:22",
+      "lineIndex": 118
+    },
+    {
+      "start": 417.052,
+      "end": 421.696,
+      "type": "line",
+      "text": "Now when the Lamanites saw that their brethren would not flee from the sword,",
+      "verse": "24:23",
+      "lineIndex": 119
+    },
+    {
+      "start": 421.876,
+      "end": 425.452,
+      "type": "line",
+      "text": "neither would they turn aside to the right hand or to the left,",
+      "verse": "24:23",
+      "lineIndex": 120
+    },
+    {
+      "start": 425.632,
+      "end": 427.35,
+      "type": "line",
+      "text": "but that they would lie down",
+      "verse": "24:23",
+      "lineIndex": 121
+    },
+    {
+      "start": 427.53,
+      "end": 428.691,
+      "type": "line",
+      "text": "and perish,",
+      "verse": "24:23",
+      "lineIndex": 122
+    },
+    {
+      "start": 428.871,
+      "end": 433.19,
+      "type": "line",
+      "text": "and praised God even in the very act of perishing under the sword\u2014",
+      "verse": "24:23",
+      "lineIndex": 123
+    },
+    {
+      "start": 433.87,
+      "end": 436.053,
+      "type": "line",
+      "text": "Now when the Lamanites saw this",
+      "verse": "24:24",
+      "lineIndex": 124
+    },
+    {
+      "start": 436.233,
+      "end": 438.555,
+      "type": "line",
+      "text": "they did forbear from slaying them;",
+      "verse": "24:24",
+      "lineIndex": 125
+    },
+    {
+      "start": 438.735,
+      "end": 441.893,
+      "type": "line",
+      "text": "and there were many whose hearts had swollen in them",
+      "verse": "24:24",
+      "lineIndex": 126
+    },
+    {
+      "start": 442.073,
+      "end": 445.788,
+      "type": "line",
+      "text": "for those of their brethren who had fallen under the sword,",
+      "verse": "24:24",
+      "lineIndex": 127
+    },
+    {
+      "start": 445.968,
+      "end": 449.033,
+      "type": "line",
+      "text": "for they repented of the things which they had done.",
+      "verse": "24:24",
+      "lineIndex": 128
+    },
+    {
+      "start": 449.713,
+      "end": 453.289,
+      "type": "line",
+      "text": "And it came to pass that they threw down their weapons of war,",
+      "verse": "24:25",
+      "lineIndex": 130
+    },
+    {
+      "start": 453.469,
+      "end": 455.466,
+      "type": "line",
+      "text": "and they would not take them again,",
+      "verse": "24:25",
+      "lineIndex": 131
+    },
+    {
+      "start": 455.646,
+      "end": 459.083,
+      "type": "line",
+      "text": "for they were stung for the murders which they had committed;",
+      "verse": "24:25",
+      "lineIndex": 132
+    },
+    {
+      "start": 459.263,
+      "end": 462.096,
+      "type": "line",
+      "text": "and they came down even as their brethren,",
+      "verse": "24:25",
+      "lineIndex": 133
+    },
+    {
+      "start": 462.276,
+      "end": 466.688,
+      "type": "line",
+      "text": "relying upon the mercies of those whose arms were lifted to slay them.",
+      "verse": "24:25",
+      "lineIndex": 134
+    },
+    {
+      "start": 467.368,
+      "end": 470.619,
+      "type": "line",
+      "text": "And it came to pass that the people of God were joined that day",
+      "verse": "24:26",
+      "lineIndex": 135
+    },
+    {
+      "start": 470.799,
+      "end": 473.4,
+      "type": "line",
+      "text": "by more than the number who had been slain;",
+      "verse": "24:26",
+      "lineIndex": 136
+    },
+    {
+      "start": 473.58,
+      "end": 476.134,
+      "type": "line",
+      "text": "and those who had been slain were righteous people,",
+      "verse": "24:26",
+      "lineIndex": 137
+    },
+    {
+      "start": 476.314,
+      "end": 480.354,
+      "type": "line",
+      "text": "therefore we have no reason to doubt but what they were saved.",
+      "verse": "24:26",
+      "lineIndex": 138
+    },
+    {
+      "start": 481.034,
+      "end": 484.006,
+      "type": "line",
+      "text": "And there was not a wicked man slain among them;",
+      "verse": "24:27",
+      "lineIndex": 139
+    },
+    {
+      "start": 484.186,
+      "end": 488.458,
+      "type": "line",
+      "text": "but there were more than a thousand brought to the knowledge of the truth;",
+      "verse": "24:27",
+      "lineIndex": 140
+    },
+    {
+      "start": 488.638,
+      "end": 493.096,
+      "type": "line",
+      "text": "thus we see that the Lord worketh in many ways to the salvation of his people.",
+      "verse": "24:27",
+      "lineIndex": 141
+    },
+    {
+      "start": 493.776,
+      "end": 499.163,
+      "type": "line",
+      "text": "Now the greatest number of those of the Lamanites who slew so many of their brethren",
+      "verse": "24:28",
+      "lineIndex": 142
+    },
+    {
+      "start": 499.343,
+      "end": 501.804,
+      "type": "line",
+      "text": "were Amalekites and Amulonites,",
+      "verse": "24:28",
+      "lineIndex": 143
+    },
+    {
+      "start": 501.984,
+      "end": 505.931,
+      "type": "line",
+      "text": "the greatest number of whom were after the order of the Nehors.",
+      "verse": "24:28",
+      "lineIndex": 144
+    },
+    {
+      "start": 506.611,
+      "end": 509.537,
+      "type": "line",
+      "text": "Now, among those who joined the people of the Lord,",
+      "verse": "24:29",
+      "lineIndex": 145
+    },
+    {
+      "start": 509.717,
+      "end": 513.386,
+      "type": "line",
+      "text": "there were none who were Amalekites or Amulonites,",
+      "verse": "24:29",
+      "lineIndex": 146
+    },
+    {
+      "start": 513.566,
+      "end": 515.842,
+      "type": "line",
+      "text": "or who were of the order of Nehor,",
+      "verse": "24:29",
+      "lineIndex": 147
+    },
+    {
+      "start": 516.022,
+      "end": 519.551,
+      "type": "line",
+      "text": "but they were actual descendants of Laman and Lemuel.",
+      "verse": "24:29",
+      "lineIndex": 148
+    },
+    {
+      "start": 520.231,
+      "end": 526.686,
+      "type": "line",
+      "text": "And thus we can plainly discern that after a people have been once enlightened by the Spirit of God,",
+      "verse": "24:30",
+      "lineIndex": 149
+    },
+    {
+      "start": 526.866,
+      "end": 530.906,
+      "type": "line",
+      "text": "and have had great knowledge of things pertaining to righteousness,",
+      "verse": "24:30",
+      "lineIndex": 150
+    },
+    {
+      "start": 531.086,
+      "end": 536.009,
+      "type": "line",
+      "text": "and then have fallen away into sin and transgression, they become more hardened,",
+      "verse": "24:30",
+      "lineIndex": 151
+    },
+    {
+      "start": 536.189,
+      "end": 538.511,
+      "type": "line",
+      "text": "and thus their state becomes worse",
+      "verse": "24:30",
+      "lineIndex": 152
+    },
+    {
+      "start": 538.691,
+      "end": 541.57,
+      "type": "line",
+      "text": "than though they had never known these things.",
+      "verse": "24:30",
+      "lineIndex": 153
+    }
+  ]
+}
