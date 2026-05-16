@@ -1,0 +1,1552 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 62,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 825.682,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.994,
+      "type": "line",
+      "text": "And now it came to pass that when Moroni had received this epistle",
+      "verse": "62:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.174,
+      "end": 6.171,
+      "type": "line",
+      "text": "his heart did take courage,",
+      "verse": "62:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.351,
+      "end": 10.995,
+      "type": "line",
+      "text": "and was filled with exceedingly great joy because of the faithfulness of Pahoran,",
+      "verse": "62:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.175,
+      "end": 16.376,
+      "type": "line",
+      "text": "that he was not also a traitor to the freedom and cause of his country.",
+      "verse": "62:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.056,
+      "end": 21.607,
+      "type": "line",
+      "text": "But he did also mourn exceedingly because of the iniquity of those",
+      "verse": "62:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 21.787,
+      "end": 24.945,
+      "type": "line",
+      "text": "who had driven Pahoran from the judgment-seat,",
+      "verse": "62:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.125,
+      "end": 30.698,
+      "type": "line",
+      "text": "yea, in fine because of those who had rebelled against their country and also their God.",
+      "verse": "62:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 31.378,
+      "end": 37.926,
+      "type": "line",
+      "text": "And it came to pass that Moroni took a small number of men, according to the desire of Pahoran,",
+      "verse": "62:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 38.106,
+      "end": 42.564,
+      "type": "line",
+      "text": "and gave Lehi and Teancum command over the remainder of his army,",
+      "verse": "62:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 42.744,
+      "end": 45.252,
+      "type": "line",
+      "text": "and took his march towards the land of Gideon.",
+      "verse": "62:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 45.932,
+      "end": 49.879,
+      "type": "line",
+      "text": "And he did raise the standard of liberty in whatsoever place he did enter,",
+      "verse": "62:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 50.059,
+      "end": 54.331,
+      "type": "line",
+      "text": "and gained whatsoever force he could in all his march towards the land of Gideon.",
+      "verse": "62:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 55.011,
+      "end": 59.005,
+      "type": "line",
+      "text": "And it came to pass that thousands did flock unto his standard,",
+      "verse": "62:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 59.185,
+      "end": 62.622,
+      "type": "line",
+      "text": "and did take up their swords in the defence of their freedom,",
+      "verse": "62:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 62.802,
+      "end": 65.078,
+      "type": "line",
+      "text": "that they might not come into bondage.",
+      "verse": "62:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 65.758,
+      "end": 70.82,
+      "type": "line",
+      "text": "And thus, when Moroni had gathered together whatsoever men he could in all his march,",
+      "verse": "62:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 71.0,
+      "end": 73.09,
+      "type": "line",
+      "text": "he came to the land of Gideon;",
+      "verse": "62:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 73.27,
+      "end": 76.474,
+      "type": "line",
+      "text": "and uniting his forces with those of Pahoran",
+      "verse": "62:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 76.654,
+      "end": 78.651,
+      "type": "line",
+      "text": "they became exceedingly strong,",
+      "verse": "62:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 78.831,
+      "end": 81.246,
+      "type": "line",
+      "text": "even stronger than the men of Pachus,",
+      "verse": "62:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 81.426,
+      "end": 84.12,
+      "type": "line",
+      "text": "who was the king of those dissenters",
+      "verse": "62:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 84.3,
+      "end": 87.876,
+      "type": "line",
+      "text": "who had driven the freemen out of the land of Zarahemla",
+      "verse": "62:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 88.056,
+      "end": 90.053,
+      "type": "line",
+      "text": "and had taken possession of the land.",
+      "verse": "62:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 90.733,
+      "end": 96.77,
+      "type": "line",
+      "text": "And it came to pass that Moroni and Pahoran went down with their armies into the land of Zarahemla,",
+      "verse": "62:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 96.95,
+      "end": 99.086,
+      "type": "line",
+      "text": "and went forth against the city,",
+      "verse": "62:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 99.266,
+      "end": 103.771,
+      "type": "line",
+      "text": "and did meet the men of Pachus, insomuch that they did come to battle.",
+      "verse": "62:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 104.451,
+      "end": 108.352,
+      "type": "line",
+      "text": "And behold, Pachus was slain and his men were taken prisoners,",
+      "verse": "62:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 108.532,
+      "end": 111.272,
+      "type": "line",
+      "text": "and Pahoran was restored to his judgment-seat.",
+      "verse": "62:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 111.952,
+      "end": 121.519,
+      "type": "line",
+      "text": "And the men of Pachus received their trial, according to the law, and also those king-men who had been taken and cast into prison;",
+      "verse": "62:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 121.699,
+      "end": 124.578,
+      "type": "line",
+      "text": "and they were executed according to the law;",
+      "verse": "62:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 124.758,
+      "end": 127.684,
+      "type": "line",
+      "text": "yea, those men of Pachus and those king-men,",
+      "verse": "62:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 127.864,
+      "end": 131.904,
+      "type": "line",
+      "text": "whosoever would not take up arms in the defence of their country,",
+      "verse": "62:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 132.084,
+      "end": 135.103,
+      "type": "line",
+      "text": "but would fight against it, were put to death.",
+      "verse": "62:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 135.783,
+      "end": 144.142,
+      "type": "line",
+      "text": "And thus it became expedient that this law should be strictly observed for the safety of their country;",
+      "verse": "62:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 144.322,
+      "end": 147.712,
+      "type": "line",
+      "text": "yea, and whosoever was found denying their freedom",
+      "verse": "62:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 147.892,
+      "end": 150.678,
+      "type": "line",
+      "text": "was speedily executed according to the law.",
+      "verse": "62:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 151.358,
+      "end": 156.513,
+      "type": "line",
+      "text": "And thus ended the thirtieth year of the reign of the judges over the people of Nephi;",
+      "verse": "62:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 156.693,
+      "end": 164.681,
+      "type": "line",
+      "text": "Moroni and Pahoran having restored peace to the land of Zarahemla, among their own people, having inflicted death upon all those",
+      "verse": "62:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 164.861,
+      "end": 167.276,
+      "type": "line",
+      "text": "who were not true to the cause of freedom.",
+      "verse": "62:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 167.956,
+      "end": 175.711,
+      "type": "line",
+      "text": "And it came to pass in the commencement of the thirty and first year of the reign of the judges over the people of Nephi,",
+      "verse": "62:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 175.891,
+      "end": 179.188,
+      "type": "line",
+      "text": "Moroni immediately caused that provisions should be sent,",
+      "verse": "62:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 179.368,
+      "end": 186.938,
+      "type": "line",
+      "text": "and also an army of six thousand men should be sent unto Helaman, to assist him in preserving that part of the land.",
+      "verse": "62:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 187.618,
+      "end": 193.562,
+      "type": "line",
+      "text": "And he also caused that an army of six thousand men, with a sufficient quantity of food,",
+      "verse": "62:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 193.742,
+      "end": 197.411,
+      "type": "line",
+      "text": "should be sent to the armies of Lehi and Teancum.",
+      "verse": "62:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 197.591,
+      "end": 202.467,
+      "type": "line",
+      "text": "And it came to pass that this was done to fortify the land against the Lamanites.",
+      "verse": "62:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 203.147,
+      "end": 210.67,
+      "type": "line",
+      "text": "And it came to pass that Moroni and Pahoran, leaving a large body of men in the land of Zarahemla,",
+      "verse": "62:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 210.85,
+      "end": 219.859,
+      "type": "line",
+      "text": "took their march with a large body of men towards the land of Nephihah, being determined to overthrow the Lamanites in that city.",
+      "verse": "62:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 220.539,
+      "end": 228.062,
+      "type": "line",
+      "text": "And it came to pass that as they were marching towards the land, they took a large body of men of the Lamanites,",
+      "verse": "62:15",
+      "lineIndex": 51
+    },
+    {
+      "start": 228.242,
+      "end": 229.867,
+      "type": "line",
+      "text": "and slew many of them,",
+      "verse": "62:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 230.047,
+      "end": 233.391,
+      "type": "line",
+      "text": "and took their provisions and their weapons of war.",
+      "verse": "62:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 234.071,
+      "end": 239.644,
+      "type": "line",
+      "text": "And it came to pass after they had taken them, they caused them to enter into a covenant",
+      "verse": "62:16",
+      "lineIndex": 54
+    },
+    {
+      "start": 239.824,
+      "end": 244.329,
+      "type": "line",
+      "text": "that they would no more take up their weapons of war against the Nephites.",
+      "verse": "62:16",
+      "lineIndex": 55
+    },
+    {
+      "start": 245.009,
+      "end": 248.353,
+      "type": "line",
+      "text": "And when they had entered into this covenant",
+      "verse": "62:17",
+      "lineIndex": 56
+    },
+    {
+      "start": 248.533,
+      "end": 251.505,
+      "type": "line",
+      "text": "they sent them to dwell with the people of Ammon,",
+      "verse": "62:17",
+      "lineIndex": 57
+    },
+    {
+      "start": 251.685,
+      "end": 255.911,
+      "type": "line",
+      "text": "and they were in number about four thousand who had not been slain.",
+      "verse": "62:17",
+      "lineIndex": 58
+    },
+    {
+      "start": 256.591,
+      "end": 259.656,
+      "type": "line",
+      "text": "And it came to pass that when they had sent them away",
+      "verse": "62:18",
+      "lineIndex": 59
+    },
+    {
+      "start": 259.836,
+      "end": 262.762,
+      "type": "line",
+      "text": "they pursued their march towards the land of Nephihah.",
+      "verse": "62:18",
+      "lineIndex": 60
+    },
+    {
+      "start": 262.942,
+      "end": 270.187,
+      "type": "line",
+      "text": "And it came to pass that when they had come to the city of Nephihah, they did pitch their tents in the plains of Nephihah,",
+      "verse": "62:18",
+      "lineIndex": 61
+    },
+    {
+      "start": 270.367,
+      "end": 272.55,
+      "type": "line",
+      "text": "which is near the city of Nephihah.",
+      "verse": "62:18",
+      "lineIndex": 62
+    },
+    {
+      "start": 273.23,
+      "end": 279.685,
+      "type": "line",
+      "text": "Now Moroni was desirous that the Lamanites should come out to battle against them, upon the plains;",
+      "verse": "62:19",
+      "lineIndex": 63
+    },
+    {
+      "start": 279.865,
+      "end": 283.673,
+      "type": "line",
+      "text": "but the Lamanites, knowing of their exceedingly great courage,",
+      "verse": "62:19",
+      "lineIndex": 64
+    },
+    {
+      "start": 283.853,
+      "end": 286.779,
+      "type": "line",
+      "text": "and beholding the greatness of their numbers,",
+      "verse": "62:19",
+      "lineIndex": 65
+    },
+    {
+      "start": 286.959,
+      "end": 289.838,
+      "type": "line",
+      "text": "therefore they durst not come out against them;",
+      "verse": "62:19",
+      "lineIndex": 66
+    },
+    {
+      "start": 290.018,
+      "end": 292.665,
+      "type": "line",
+      "text": "therefore they did not come to battle in that day.",
+      "verse": "62:19",
+      "lineIndex": 67
+    },
+    {
+      "start": 293.345,
+      "end": 298.035,
+      "type": "line",
+      "text": "And when the night came, Moroni went forth in the darkness of the night,",
+      "verse": "62:20",
+      "lineIndex": 68
+    },
+    {
+      "start": 298.215,
+      "end": 304.949,
+      "type": "line",
+      "text": "and came upon the top of the wall to spy out in what part of the city the Lamanites did camp with their army.",
+      "verse": "62:20",
+      "lineIndex": 69
+    },
+    {
+      "start": 305.629,
+      "end": 310.087,
+      "type": "line",
+      "text": "And it came to pass that they were on the east, by the entrance;",
+      "verse": "62:21",
+      "lineIndex": 70
+    },
+    {
+      "start": 310.267,
+      "end": 311.707,
+      "type": "line",
+      "text": "and they were all asleep.",
+      "verse": "62:21",
+      "lineIndex": 71
+    },
+    {
+      "start": 311.887,
+      "end": 314.163,
+      "type": "line",
+      "text": "And now Moroni returned to his army,",
+      "verse": "62:21",
+      "lineIndex": 72
+    },
+    {
+      "start": 314.343,
+      "end": 325.581,
+      "type": "line",
+      "text": "and caused that they should prepare in haste strong cords and ladders, to be let down from the top of the wall into the inner part of the wall.",
+      "verse": "62:21",
+      "lineIndex": 73
+    },
+    {
+      "start": 326.261,
+      "end": 331.091,
+      "type": "line",
+      "text": "And it came to pass that Moroni caused that his men should march forth",
+      "verse": "62:22",
+      "lineIndex": 74
+    },
+    {
+      "start": 331.271,
+      "end": 333.175,
+      "type": "line",
+      "text": "and come upon the top of the wall,",
+      "verse": "62:22",
+      "lineIndex": 75
+    },
+    {
+      "start": 333.355,
+      "end": 336.327,
+      "type": "line",
+      "text": "and let themselves down into that part of the city,",
+      "verse": "62:22",
+      "lineIndex": 76
+    },
+    {
+      "start": 336.507,
+      "end": 338.132,
+      "type": "line",
+      "text": "yea, even on the west,",
+      "verse": "62:22",
+      "lineIndex": 77
+    },
+    {
+      "start": 338.312,
+      "end": 341.47,
+      "type": "line",
+      "text": "where the Lamanites did not camp with their armies.",
+      "verse": "62:22",
+      "lineIndex": 78
+    },
+    {
+      "start": 342.15,
+      "end": 349.859,
+      "type": "line",
+      "text": "And it came to pass that they were all let down into the city by night, by the means of their strong cords and their ladders;",
+      "verse": "62:23",
+      "lineIndex": 79
+    },
+    {
+      "start": 350.039,
+      "end": 354.033,
+      "type": "line",
+      "text": "thus when the morning came they were all within the walls of the city.",
+      "verse": "62:23",
+      "lineIndex": 80
+    },
+    {
+      "start": 354.713,
+      "end": 356.71,
+      "type": "line",
+      "text": "And now, when the Lamanites awoke",
+      "verse": "62:24",
+      "lineIndex": 81
+    },
+    {
+      "start": 356.89,
+      "end": 360.234,
+      "type": "line",
+      "text": "and saw that the armies of Moroni were within the walls,",
+      "verse": "62:24",
+      "lineIndex": 82
+    },
+    {
+      "start": 360.414,
+      "end": 365.476,
+      "type": "line",
+      "text": "they were affrighted exceedingly, insomuch that they did flee out by the pass.",
+      "verse": "62:24",
+      "lineIndex": 83
+    },
+    {
+      "start": 366.156,
+      "end": 373.029,
+      "type": "line",
+      "text": "And now when Moroni saw that they were fleeing before him, he did cause that his men should march forth against them,",
+      "verse": "62:25",
+      "lineIndex": 84
+    },
+    {
+      "start": 373.209,
+      "end": 374.602,
+      "type": "line",
+      "text": "and slew many,",
+      "verse": "62:25",
+      "lineIndex": 85
+    },
+    {
+      "start": 374.782,
+      "end": 376.825,
+      "type": "line",
+      "text": "and surrounded many others,",
+      "verse": "62:25",
+      "lineIndex": 86
+    },
+    {
+      "start": 377.005,
+      "end": 378.584,
+      "type": "line",
+      "text": "and took them prisoners;",
+      "verse": "62:25",
+      "lineIndex": 87
+    },
+    {
+      "start": 378.764,
+      "end": 382.108,
+      "type": "line",
+      "text": "and the remainder of them fled into the land of Moroni,",
+      "verse": "62:25",
+      "lineIndex": 88
+    },
+    {
+      "start": 382.288,
+      "end": 384.842,
+      "type": "line",
+      "text": "which was in the borders by the seashore.",
+      "verse": "62:25",
+      "lineIndex": 89
+    },
+    {
+      "start": 385.522,
+      "end": 389.934,
+      "type": "line",
+      "text": "Thus had Moroni and Pahoran obtained the possession of the city of Nephihah",
+      "verse": "62:26",
+      "lineIndex": 90
+    },
+    {
+      "start": 390.114,
+      "end": 392.204,
+      "type": "line",
+      "text": "without the loss of one soul;",
+      "verse": "62:26",
+      "lineIndex": 91
+    },
+    {
+      "start": 392.384,
+      "end": 395.635,
+      "type": "line",
+      "text": "and there were many of the Lamanites who were slain.",
+      "verse": "62:26",
+      "lineIndex": 92
+    },
+    {
+      "start": 396.315,
+      "end": 401.005,
+      "type": "line",
+      "text": "Now it came to pass that many of the Lamanites that were prisoners",
+      "verse": "62:27",
+      "lineIndex": 94
+    },
+    {
+      "start": 401.185,
+      "end": 405.597,
+      "type": "line",
+      "text": "were desirous to join the people of Ammon and become a free people.",
+      "verse": "62:27",
+      "lineIndex": 95
+    },
+    {
+      "start": 406.277,
+      "end": 409.946,
+      "type": "line",
+      "text": "And it came to pass that as many as were desirous,",
+      "verse": "62:28",
+      "lineIndex": 96
+    },
+    {
+      "start": 410.126,
+      "end": 413.516,
+      "type": "line",
+      "text": "unto them it was granted according to their desires.",
+      "verse": "62:28",
+      "lineIndex": 97
+    },
+    {
+      "start": 414.196,
+      "end": 417.54,
+      "type": "line",
+      "text": "Therefore, all the prisoners of the Lamanites",
+      "verse": "62:29",
+      "lineIndex": 98
+    },
+    {
+      "start": 417.72,
+      "end": 419.67,
+      "type": "line",
+      "text": "did join the people of Ammon,",
+      "verse": "62:29",
+      "lineIndex": 99
+    },
+    {
+      "start": 419.85,
+      "end": 422.544,
+      "type": "line",
+      "text": "and did begin to labor exceedingly,",
+      "verse": "62:29",
+      "lineIndex": 100
+    },
+    {
+      "start": 422.724,
+      "end": 426.021,
+      "type": "line",
+      "text": "tilling the ground, raising all manner of grain,",
+      "verse": "62:29",
+      "lineIndex": 101
+    },
+    {
+      "start": 426.201,
+      "end": 428.802,
+      "type": "line",
+      "text": "and flocks and herds of every kind;",
+      "verse": "62:29",
+      "lineIndex": 102
+    },
+    {
+      "start": 428.982,
+      "end": 435.437,
+      "type": "line",
+      "text": "and thus were the Nephites relieved from a great burden; yea, insomuch that they were relieved",
+      "verse": "62:29",
+      "lineIndex": 103
+    },
+    {
+      "start": 435.617,
+      "end": 438.311,
+      "type": "line",
+      "text": "from all the prisoners of the Lamanites.",
+      "verse": "62:29",
+      "lineIndex": 104
+    },
+    {
+      "start": 438.991,
+      "end": 441.174,
+      "type": "line",
+      "text": "Now it came to pass that Moroni,",
+      "verse": "62:30",
+      "lineIndex": 105
+    },
+    {
+      "start": 441.354,
+      "end": 447.484,
+      "type": "line",
+      "text": "after he had obtained possession of the city of Nephihah, having taken many prisoners,",
+      "verse": "62:30",
+      "lineIndex": 106
+    },
+    {
+      "start": 447.664,
+      "end": 451.472,
+      "type": "line",
+      "text": "which did reduce the armies of the Lamanites exceedingly,",
+      "verse": "62:30",
+      "lineIndex": 107
+    },
+    {
+      "start": 451.652,
+      "end": 456.296,
+      "type": "line",
+      "text": "and having regained many of the Nephites who had been taken prisoners,",
+      "verse": "62:30",
+      "lineIndex": 108
+    },
+    {
+      "start": 456.476,
+      "end": 459.448,
+      "type": "line",
+      "text": "which did strengthen the army of Moroni exceedingly;",
+      "verse": "62:30",
+      "lineIndex": 109
+    },
+    {
+      "start": 459.628,
+      "end": 464.736,
+      "type": "line",
+      "text": "therefore Moroni went forth from the land of Nephihah to the land of Lehi.",
+      "verse": "62:30",
+      "lineIndex": 110
+    },
+    {
+      "start": 465.416,
+      "end": 470.664,
+      "type": "line",
+      "text": "And it came to pass that when the Lamanites saw that Moroni was coming against them,",
+      "verse": "62:31",
+      "lineIndex": 111
+    },
+    {
+      "start": 470.844,
+      "end": 474.373,
+      "type": "line",
+      "text": "they were again frightened and fled before the army of Moroni.",
+      "verse": "62:31",
+      "lineIndex": 112
+    },
+    {
+      "start": 475.053,
+      "end": 480.115,
+      "type": "line",
+      "text": "And it came to pass that Moroni and his army did pursue them from city to city,",
+      "verse": "62:32",
+      "lineIndex": 113
+    },
+    {
+      "start": 480.295,
+      "end": 483.174,
+      "type": "line",
+      "text": "until they were met by Lehi and Teancum;",
+      "verse": "62:32",
+      "lineIndex": 114
+    },
+    {
+      "start": 483.354,
+      "end": 486.419,
+      "type": "line",
+      "text": "and the Lamanites fled from Lehi and Teancum,",
+      "verse": "62:32",
+      "lineIndex": 115
+    },
+    {
+      "start": 486.599,
+      "end": 489.293,
+      "type": "line",
+      "text": "even down upon the borders by the seashore,",
+      "verse": "62:32",
+      "lineIndex": 116
+    },
+    {
+      "start": 489.473,
+      "end": 491.795,
+      "type": "line",
+      "text": "until they came to the land of Moroni.",
+      "verse": "62:32",
+      "lineIndex": 117
+    },
+    {
+      "start": 492.475,
+      "end": 495.772,
+      "type": "line",
+      "text": "And the armies of the Lamanites were all gathered together,",
+      "verse": "62:33",
+      "lineIndex": 118
+    },
+    {
+      "start": 495.952,
+      "end": 499.621,
+      "type": "line",
+      "text": "insomuch that they were all in one body in the land of Moroni.",
+      "verse": "62:33",
+      "lineIndex": 119
+    },
+    {
+      "start": 499.801,
+      "end": 503.377,
+      "type": "line",
+      "text": "Now Ammoron, the king of the Lamanites, was also with them.",
+      "verse": "62:33",
+      "lineIndex": 120
+    },
+    {
+      "start": 504.057,
+      "end": 513.717,
+      "type": "line",
+      "text": "And it came to pass that Moroni and Lehi and Teancum did encamp with their armies round about in the borders of the land of Moroni,",
+      "verse": "62:34",
+      "lineIndex": 121
+    },
+    {
+      "start": 513.897,
+      "end": 521.281,
+      "type": "line",
+      "text": "insomuch that the Lamanites were encircled about in the borders by the wilderness on the south,",
+      "verse": "62:34",
+      "lineIndex": 122
+    },
+    {
+      "start": 521.461,
+      "end": 524.944,
+      "type": "line",
+      "text": "and in the borders by the wilderness on the east.",
+      "verse": "62:34",
+      "lineIndex": 123
+    },
+    {
+      "start": 525.624,
+      "end": 528.085,
+      "type": "line",
+      "text": "And thus they did encamp for the night.",
+      "verse": "62:35",
+      "lineIndex": 124
+    },
+    {
+      "start": 528.265,
+      "end": 534.395,
+      "type": "line",
+      "text": "For behold, the Nephites and the Lamanites also were weary because of the greatness of the march;",
+      "verse": "62:35",
+      "lineIndex": 125
+    },
+    {
+      "start": 534.575,
+      "end": 539.033,
+      "type": "line",
+      "text": "therefore they did not resolve upon any stratagem in the night-time,",
+      "verse": "62:35",
+      "lineIndex": 126
+    },
+    {
+      "start": 539.213,
+      "end": 540.978,
+      "type": "line",
+      "text": "save it were Teancum;",
+      "verse": "62:35",
+      "lineIndex": 127
+    },
+    {
+      "start": 541.158,
+      "end": 546.313,
+      "type": "line",
+      "text": "for he was exceedingly angry with Ammoron, insomuch that he considered that Ammoron,",
+      "verse": "62:35",
+      "lineIndex": 128
+    },
+    {
+      "start": 546.493,
+      "end": 553.738,
+      "type": "line",
+      "text": "and Amalickiah his brother, had been the cause of this great and lasting war between them and the Lamanites,",
+      "verse": "62:35",
+      "lineIndex": 129
+    },
+    {
+      "start": 553.918,
+      "end": 557.308,
+      "type": "line",
+      "text": "which had been the cause of so much war and bloodshed,",
+      "verse": "62:35",
+      "lineIndex": 130
+    },
+    {
+      "start": 557.488,
+      "end": 559.16,
+      "type": "line",
+      "text": "yea, and so much famine.",
+      "verse": "62:35",
+      "lineIndex": 131
+    },
+    {
+      "start": 559.84,
+      "end": 566.202,
+      "type": "line",
+      "text": "And it came to pass that Teancum in his anger did go forth into the camp of the Lamanites,",
+      "verse": "62:36",
+      "lineIndex": 132
+    },
+    {
+      "start": 566.382,
+      "end": 570.097,
+      "type": "line",
+      "text": "and did let himself down over the walls of the city.",
+      "verse": "62:36",
+      "lineIndex": 133
+    },
+    {
+      "start": 570.277,
+      "end": 576.454,
+      "type": "line",
+      "text": "And he went forth with a cord, from place to place, insomuch that he did find the king;",
+      "verse": "62:36",
+      "lineIndex": 134
+    },
+    {
+      "start": 576.634,
+      "end": 578.863,
+      "type": "line",
+      "text": "and he did cast a javelin at him,",
+      "verse": "62:36",
+      "lineIndex": 135
+    },
+    {
+      "start": 579.043,
+      "end": 581.411,
+      "type": "line",
+      "text": "which did pierce him near the heart.",
+      "verse": "62:36",
+      "lineIndex": 136
+    },
+    {
+      "start": 581.591,
+      "end": 588.882,
+      "type": "line",
+      "text": "But behold, the king did awaken his servants before he died, insomuch that they did pursue Teancum, and slew him.",
+      "verse": "62:36",
+      "lineIndex": 137
+    },
+    {
+      "start": 589.562,
+      "end": 595.181,
+      "type": "line",
+      "text": "Now it came to pass that when Lehi and Moroni knew that Teancum was dead",
+      "verse": "62:37",
+      "lineIndex": 138
+    },
+    {
+      "start": 595.361,
+      "end": 597.497,
+      "type": "line",
+      "text": "they were exceedingly sorrowful;",
+      "verse": "62:37",
+      "lineIndex": 139
+    },
+    {
+      "start": 597.677,
+      "end": 601.996,
+      "type": "line",
+      "text": "for behold, he had been a man who had fought valiantly for his country,",
+      "verse": "62:37",
+      "lineIndex": 140
+    },
+    {
+      "start": 602.176,
+      "end": 605.009,
+      "type": "line",
+      "text": "yea, a true friend to liberty;",
+      "verse": "62:37",
+      "lineIndex": 141
+    },
+    {
+      "start": 605.189,
+      "end": 608.811,
+      "type": "line",
+      "text": "and he had suffered very many exceedingly sore afflictions.",
+      "verse": "62:37",
+      "lineIndex": 142
+    },
+    {
+      "start": 608.991,
+      "end": 610.756,
+      "type": "line",
+      "text": "But behold, he was dead,",
+      "verse": "62:37",
+      "lineIndex": 143
+    },
+    {
+      "start": 610.936,
+      "end": 613.304,
+      "type": "line",
+      "text": "and had gone the way of all the earth.",
+      "verse": "62:37",
+      "lineIndex": 144
+    },
+    {
+      "start": 613.984,
+      "end": 623.365,
+      "type": "line",
+      "text": "Now it came to pass that Moroni marched forth on the morrow, and came upon the Lamanites, insomuch that they did slay them with a great slaughter;",
+      "verse": "62:38",
+      "lineIndex": 145
+    },
+    {
+      "start": 623.545,
+      "end": 626.192,
+      "type": "line",
+      "text": "and they did drive them out of the land;",
+      "verse": "62:38",
+      "lineIndex": 146
+    },
+    {
+      "start": 626.372,
+      "end": 627.765,
+      "type": "line",
+      "text": "and they did flee,",
+      "verse": "62:38",
+      "lineIndex": 147
+    },
+    {
+      "start": 627.945,
+      "end": 631.567,
+      "type": "line",
+      "text": "even that they did not return at that time against the Nephites.",
+      "verse": "62:38",
+      "lineIndex": 148
+    },
+    {
+      "start": 632.247,
+      "end": 639.259,
+      "type": "line",
+      "text": "And thus ended the thirty and first year of the reign of the judges over the people of Nephi;",
+      "verse": "62:39",
+      "lineIndex": 149
+    },
+    {
+      "start": 639.439,
+      "end": 642.411,
+      "type": "line",
+      "text": "and thus they had had wars, and bloodsheds,",
+      "verse": "62:39",
+      "lineIndex": 150
+    },
+    {
+      "start": 642.591,
+      "end": 646.353,
+      "type": "line",
+      "text": "and famine, and affliction, for the space of many years.",
+      "verse": "62:39",
+      "lineIndex": 151
+    },
+    {
+      "start": 647.033,
+      "end": 651.538,
+      "type": "line",
+      "text": "And there had been murders, and contentions, and dissensions,",
+      "verse": "62:40",
+      "lineIndex": 153
+    },
+    {
+      "start": 651.718,
+      "end": 655.247,
+      "type": "line",
+      "text": "and all manner of iniquity among the people of Nephi;",
+      "verse": "62:40",
+      "lineIndex": 154
+    },
+    {
+      "start": 655.427,
+      "end": 657.563,
+      "type": "line",
+      "text": "nevertheless for the righteous' sake,",
+      "verse": "62:40",
+      "lineIndex": 155
+    },
+    {
+      "start": 657.743,
+      "end": 661.18,
+      "type": "line",
+      "text": "yea, because of the prayers of the righteous, they were spared.",
+      "verse": "62:40",
+      "lineIndex": 156
+    },
+    {
+      "start": 661.86,
+      "end": 665.807,
+      "type": "line",
+      "text": "But behold, because of the exceedingly great length of the war",
+      "verse": "62:41",
+      "lineIndex": 157
+    },
+    {
+      "start": 665.987,
+      "end": 672.535,
+      "type": "line",
+      "text": "between the Nephites and the Lamanites many had become hardened, because of the exceedingly great length of the war;",
+      "verse": "62:41",
+      "lineIndex": 158
+    },
+    {
+      "start": 672.715,
+      "end": 679.077,
+      "type": "line",
+      "text": "and many were softened because of their afflictions, insomuch that they did humble themselves before God,",
+      "verse": "62:41",
+      "lineIndex": 159
+    },
+    {
+      "start": 679.257,
+      "end": 681.393,
+      "type": "line",
+      "text": "even in the depth of humility.",
+      "verse": "62:41",
+      "lineIndex": 160
+    },
+    {
+      "start": 682.073,
+      "end": 686.717,
+      "type": "line",
+      "text": "And it came to pass that after Moroni had fortified those parts of the land",
+      "verse": "62:42",
+      "lineIndex": 161
+    },
+    {
+      "start": 686.897,
+      "end": 689.683,
+      "type": "line",
+      "text": "which were most exposed to the Lamanites,",
+      "verse": "62:42",
+      "lineIndex": 162
+    },
+    {
+      "start": 689.863,
+      "end": 692.092,
+      "type": "line",
+      "text": "until they were sufficiently strong,",
+      "verse": "62:42",
+      "lineIndex": 163
+    },
+    {
+      "start": 692.272,
+      "end": 694.733,
+      "type": "line",
+      "text": "he returned to the city of Zarahemla;",
+      "verse": "62:42",
+      "lineIndex": 164
+    },
+    {
+      "start": 694.913,
+      "end": 698.535,
+      "type": "line",
+      "text": "and also Helaman returned to the place of his inheritance;",
+      "verse": "62:42",
+      "lineIndex": 165
+    },
+    {
+      "start": 698.715,
+      "end": 702.755,
+      "type": "line",
+      "text": "and there was once more peace established among the people of Nephi.",
+      "verse": "62:42",
+      "lineIndex": 166
+    },
+    {
+      "start": 703.435,
+      "end": 706.361,
+      "type": "line",
+      "text": "And Moroni yielded up the command of his armies",
+      "verse": "62:43",
+      "lineIndex": 167
+    },
+    {
+      "start": 706.541,
+      "end": 709.42,
+      "type": "line",
+      "text": "into the hands of his son, whose name was Moronihah;",
+      "verse": "62:43",
+      "lineIndex": 168
+    },
+    {
+      "start": 709.6,
+      "end": 711.69,
+      "type": "line",
+      "text": "and he retired to his own house",
+      "verse": "62:43",
+      "lineIndex": 169
+    },
+    {
+      "start": 711.87,
+      "end": 715.353,
+      "type": "line",
+      "text": "that he might spend the remainder of his days in peace.",
+      "verse": "62:43",
+      "lineIndex": 170
+    },
+    {
+      "start": 716.033,
+      "end": 718.819,
+      "type": "line",
+      "text": "And Pahoran did return to his judgment-seat;",
+      "verse": "62:44",
+      "lineIndex": 171
+    },
+    {
+      "start": 718.999,
+      "end": 723.968,
+      "type": "line",
+      "text": "and Helaman did take upon him again to preach unto the people the word of God;",
+      "verse": "62:44",
+      "lineIndex": 172
+    },
+    {
+      "start": 724.148,
+      "end": 732.786,
+      "type": "line",
+      "text": "for because of so many wars and contentions it had become expedient that a regulation should be made again in the church.",
+      "verse": "62:44",
+      "lineIndex": 173
+    },
+    {
+      "start": 733.466,
+      "end": 736.16,
+      "type": "line",
+      "text": "Therefore, Helaman and his brethren went forth,",
+      "verse": "62:45",
+      "lineIndex": 174
+    },
+    {
+      "start": 736.34,
+      "end": 742.842,
+      "type": "line",
+      "text": "and did declare the word of God with much power unto the convincing of many people of their wickedness,",
+      "verse": "62:45",
+      "lineIndex": 175
+    },
+    {
+      "start": 743.022,
+      "end": 745.948,
+      "type": "line",
+      "text": "which did cause them to repent of their sins",
+      "verse": "62:45",
+      "lineIndex": 176
+    },
+    {
+      "start": 746.128,
+      "end": 748.543,
+      "type": "line",
+      "text": "and to be baptized unto the Lord their God.",
+      "verse": "62:45",
+      "lineIndex": 177
+    },
+    {
+      "start": 749.223,
+      "end": 755.121,
+      "type": "line",
+      "text": "And it came to pass that they did establish again the church of God, throughout all the land.",
+      "verse": "62:46",
+      "lineIndex": 178
+    },
+    {
+      "start": 755.801,
+      "end": 758.773,
+      "type": "line",
+      "text": "Yea, and regulations were made concerning the law.",
+      "verse": "62:47",
+      "lineIndex": 179
+    },
+    {
+      "start": 758.953,
+      "end": 762.297,
+      "type": "line",
+      "text": "And their judges, and their chief judges were chosen.",
+      "verse": "62:47",
+      "lineIndex": 180
+    },
+    {
+      "start": 762.977,
+      "end": 766.739,
+      "type": "line",
+      "text": "And the people of Nephi began to prosper again in the land,",
+      "verse": "62:48",
+      "lineIndex": 181
+    },
+    {
+      "start": 766.919,
+      "end": 771.656,
+      "type": "line",
+      "text": "and began to multiply and to wax exceedingly strong again in the land.",
+      "verse": "62:48",
+      "lineIndex": 182
+    },
+    {
+      "start": 771.836,
+      "end": 774.344,
+      "type": "line",
+      "text": "And they began to grow exceedingly rich.",
+      "verse": "62:48",
+      "lineIndex": 183
+    },
+    {
+      "start": 775.024,
+      "end": 779.157,
+      "type": "line",
+      "text": "But notwithstanding their riches, or their strength, or their prosperity,",
+      "verse": "62:49",
+      "lineIndex": 184
+    },
+    {
+      "start": 779.337,
+      "end": 782.681,
+      "type": "line",
+      "text": "they were not lifted up in the pride of their eyes;",
+      "verse": "62:49",
+      "lineIndex": 185
+    },
+    {
+      "start": 782.861,
+      "end": 785.972,
+      "type": "line",
+      "text": "neither were they slow to remember the Lord their God;",
+      "verse": "62:49",
+      "lineIndex": 186
+    },
+    {
+      "start": 786.152,
+      "end": 789.171,
+      "type": "line",
+      "text": "but they did humble themselves exceedingly before him.",
+      "verse": "62:49",
+      "lineIndex": 187
+    },
+    {
+      "start": 789.851,
+      "end": 793.473,
+      "type": "line",
+      "text": "Yea, they did remember how great things the Lord had done for them,",
+      "verse": "62:50",
+      "lineIndex": 188
+    },
+    {
+      "start": 793.653,
+      "end": 797.833,
+      "type": "line",
+      "text": "that he had delivered them from death, and from bonds, and from prisons,",
+      "verse": "62:50",
+      "lineIndex": 189
+    },
+    {
+      "start": 798.013,
+      "end": 800.381,
+      "type": "line",
+      "text": "and from all manner of afflictions,",
+      "verse": "62:50",
+      "lineIndex": 190
+    },
+    {
+      "start": 800.561,
+      "end": 804.462,
+      "type": "line",
+      "text": "and he had delivered them out of the hands of their enemies.",
+      "verse": "62:50",
+      "lineIndex": 191
+    },
+    {
+      "start": 805.142,
+      "end": 808.114,
+      "type": "line",
+      "text": "And they did pray unto the Lord their God continually,",
+      "verse": "62:51",
+      "lineIndex": 192
+    },
+    {
+      "start": 808.294,
+      "end": 811.731,
+      "type": "line",
+      "text": "insomuch that the Lord did bless them, according to his word,",
+      "verse": "62:51",
+      "lineIndex": 193
+    },
+    {
+      "start": 811.911,
+      "end": 815.162,
+      "type": "line",
+      "text": "so that they did wax strong and prosper in the land.",
+      "verse": "62:51",
+      "lineIndex": 194
+    },
+    {
+      "start": 815.842,
+      "end": 818.721,
+      "type": "line",
+      "text": "And it came to pass that all these things were done.",
+      "verse": "62:52",
+      "lineIndex": 195
+    },
+    {
+      "start": 818.901,
+      "end": 825.031,
+      "type": "line",
+      "text": "And Helaman died, in the thirty and fifth year of the reign of the judges over the people of Nephi.",
+      "verse": "62:52",
+      "lineIndex": 196
+    }
+  ]
+}
