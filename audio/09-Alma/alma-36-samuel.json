@@ -1,0 +1,1008 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 36,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 426.103,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 1.068,
+      "type": "line",
+      "text": "My son,",
+      "verse": "36:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 1.248,
+      "end": 2.966,
+      "type": "line",
+      "text": "give ear to my words;",
+      "verse": "36:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 3.146,
+      "end": 9.276,
+      "type": "line",
+      "text": "for I swear unto you that inasmuch as ye shall keep the commandments of God ye shall prosper in the land.",
+      "verse": "36:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.956,
+      "end": 15.297,
+      "type": "line",
+      "text": "I would that ye should do as I have done, in remembering the captivity of our fathers;",
+      "verse": "36:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.477,
+      "end": 18.588,
+      "type": "line",
+      "text": "for they were in bondage, and none could deliver them",
+      "verse": "36:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 18.768,
+      "end": 24.016,
+      "type": "line",
+      "text": "except it was the God of Abraham, and the God of Isaac, and the God of Jacob;",
+      "verse": "36:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 24.196,
+      "end": 27.447,
+      "type": "line",
+      "text": "and he surely did deliver them in their afflictions.",
+      "verse": "36:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 28.127,
+      "end": 30.263,
+      "type": "line",
+      "text": "And now, O my son Helaman,",
+      "verse": "36:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 30.443,
+      "end": 32.811,
+      "type": "line",
+      "text": "behold, thou art in thy youth,",
+      "verse": "36:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 32.991,
+      "end": 35.081,
+      "type": "line",
+      "text": "and therefore, I beseech of thee",
+      "verse": "36:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 35.261,
+      "end": 38.094,
+      "type": "line",
+      "text": "that thou wilt hear my words and learn of me;",
+      "verse": "36:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 38.274,
+      "end": 41.943,
+      "type": "line",
+      "text": "for I do know that whosoever shall put their trust in God",
+      "verse": "36:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 42.123,
+      "end": 44.399,
+      "type": "line",
+      "text": "shall be supported in their trials",
+      "verse": "36:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.579,
+      "end": 47.273,
+      "type": "line",
+      "text": "and their troubles, and their afflictions,",
+      "verse": "36:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 47.453,
+      "end": 49.821,
+      "type": "line",
+      "text": "and shall be lifted up at the last day.",
+      "verse": "36:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 50.501,
+      "end": 53.891,
+      "type": "line",
+      "text": "And I would not that ye think that I know of myself\u2014",
+      "verse": "36:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 54.071,
+      "end": 56.718,
+      "type": "line",
+      "text": "not of the temporal but of the spiritual,",
+      "verse": "36:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 56.898,
+      "end": 59.266,
+      "type": "line",
+      "text": "not of the carnal mind but of God.",
+      "verse": "36:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 59.946,
+      "end": 61.896,
+      "type": "line",
+      "text": "Now, behold, I say unto you,",
+      "verse": "36:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 62.076,
+      "end": 66.766,
+      "type": "line",
+      "text": "if I had not been born of God I should not have known these things;",
+      "verse": "36:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 66.946,
+      "end": 70.94,
+      "type": "line",
+      "text": "but God has, by the mouth of his holy angel, made these things known unto me,",
+      "verse": "36:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 71.12,
+      "end": 73.535,
+      "type": "line",
+      "text": "not of any worthiness of myself;",
+      "verse": "36:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 74.215,
+      "end": 79.138,
+      "type": "line",
+      "text": "For I went about with the sons of Mosiah, seeking to destroy the church of God;",
+      "verse": "36:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 79.318,
+      "end": 82.615,
+      "type": "line",
+      "text": "but behold, God sent his holy angel to stop us by the way.",
+      "verse": "36:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 83.295,
+      "end": 86.964,
+      "type": "line",
+      "text": "And behold, he spake unto us, as it were the voice of thunder,",
+      "verse": "36:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 87.144,
+      "end": 90.07,
+      "type": "line",
+      "text": "and the whole earth did tremble beneath our feet;",
+      "verse": "36:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 90.25,
+      "end": 92.34,
+      "type": "line",
+      "text": "and we all fell to the earth,",
+      "verse": "36:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 92.52,
+      "end": 94.796,
+      "type": "line",
+      "text": "for the fear of the Lord came upon us.",
+      "verse": "36:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 95.476,
+      "end": 97.705,
+      "type": "line",
+      "text": "But behold, the voice said unto me:",
+      "verse": "36:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 97.885,
+      "end": 98.86,
+      "type": "line",
+      "text": "Arise.",
+      "verse": "36:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 99.04,
+      "end": 100.387,
+      "type": "line",
+      "text": "And I arose",
+      "verse": "36:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 100.567,
+      "end": 101.774,
+      "type": "line",
+      "text": "and stood up,",
+      "verse": "36:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 101.954,
+      "end": 103.672,
+      "type": "line",
+      "text": "and beheld the angel.",
+      "verse": "36:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 104.352,
+      "end": 105.792,
+      "type": "line",
+      "text": "And he said unto me:",
+      "verse": "36:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 105.972,
+      "end": 108.48,
+      "type": "line",
+      "text": "If thou wilt of thyself be destroyed,",
+      "verse": "36:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 108.66,
+      "end": 111.028,
+      "type": "line",
+      "text": "seek no more to destroy the church of God.",
+      "verse": "36:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 111.708,
+      "end": 114.587,
+      "type": "line",
+      "text": "And it came to pass that I fell to the earth;",
+      "verse": "36:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 114.767,
+      "end": 118.204,
+      "type": "line",
+      "text": "and it was for the space of three days and three nights",
+      "verse": "36:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 118.384,
+      "end": 120.52,
+      "type": "line",
+      "text": "that I could not open my mouth,",
+      "verse": "36:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 120.7,
+      "end": 122.883,
+      "type": "line",
+      "text": "neither had I the use of my limbs.",
+      "verse": "36:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 123.563,
+      "end": 127.882,
+      "type": "line",
+      "text": "And the angel spake more things unto me, which were heard by my brethren,",
+      "verse": "36:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 128.062,
+      "end": 131.22,
+      "type": "line",
+      "text": "but I did not hear them; for when I heard the words\u2014",
+      "verse": "36:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 131.4,
+      "end": 133.768,
+      "type": "line",
+      "text": "If thou wilt be destroyed of thyself,",
+      "verse": "36:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 133.948,
+      "end": 136.363,
+      "type": "line",
+      "text": "seek no more to destroy the church of God\u2014",
+      "verse": "36:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 136.543,
+      "end": 139.794,
+      "type": "line",
+      "text": "I was struck with such great fear and amazement",
+      "verse": "36:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 139.974,
+      "end": 142.296,
+      "type": "line",
+      "text": "lest perhaps I should be destroyed,",
+      "verse": "36:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 142.476,
+      "end": 145.495,
+      "type": "line",
+      "text": "that I fell to the earth and I did hear no more.",
+      "verse": "36:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 146.175,
+      "end": 148.497,
+      "type": "line",
+      "text": "But I was racked with eternal torment,",
+      "verse": "36:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 148.677,
+      "end": 152.996,
+      "type": "line",
+      "text": "for my soul was harrowed up to the greatest degree and racked with all my sins.",
+      "verse": "36:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 153.676,
+      "end": 156.927,
+      "type": "line",
+      "text": "Yea, I did remember all my sins and iniquities,",
+      "verse": "36:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 157.107,
+      "end": 160.172,
+      "type": "line",
+      "text": "for which I was tormented with the pains of hell;",
+      "verse": "36:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 160.352,
+      "end": 163.185,
+      "type": "line",
+      "text": "yea, I saw that I had rebelled against my God,",
+      "verse": "36:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 163.365,
+      "end": 165.78,
+      "type": "line",
+      "text": "and that I had not kept his holy commandments.",
+      "verse": "36:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 166.46,
+      "end": 172.172,
+      "type": "line",
+      "text": "Yea, and I had murdered many of his children, or rather led them away unto destruction;",
+      "verse": "36:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 172.352,
+      "end": 175.974,
+      "type": "line",
+      "text": "yea, and in fine so great had been my iniquities,",
+      "verse": "36:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 176.154,
+      "end": 179.637,
+      "type": "line",
+      "text": "that the very thought of coming into the presence of my God",
+      "verse": "36:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 179.817,
+      "end": 182.557,
+      "type": "line",
+      "text": "did rack my soul with inexpressible horror.",
+      "verse": "36:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 183.237,
+      "end": 188.438,
+      "type": "line",
+      "text": "Oh, thought I, that I could be banished and become extinct both soul and body,",
+      "verse": "36:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 188.618,
+      "end": 194.469,
+      "type": "line",
+      "text": "that I might not be brought to stand in the presence of my God, to be judged of my deeds.",
+      "verse": "36:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 195.149,
+      "end": 199.004,
+      "type": "line",
+      "text": "And now, for three days and for three nights was I racked,",
+      "verse": "36:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 199.184,
+      "end": 201.413,
+      "type": "line",
+      "text": "even with the pains of a damned soul.",
+      "verse": "36:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 202.093,
+      "end": 206.18,
+      "type": "line",
+      "text": "And it came to pass that as I was thus racked with torment,",
+      "verse": "36:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 206.36,
+      "end": 209.889,
+      "type": "line",
+      "text": "while I was harrowed up by the memory of my many sins,",
+      "verse": "36:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 210.069,
+      "end": 214.109,
+      "type": "line",
+      "text": "behold, I remembered also to have heard my father prophesy unto the people",
+      "verse": "36:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 214.289,
+      "end": 217.911,
+      "type": "line",
+      "text": "concerning the coming of one Jesus Christ, a Son of God,",
+      "verse": "36:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 218.091,
+      "end": 220.552,
+      "type": "line",
+      "text": "to atone for the sins of the world.",
+      "verse": "36:17",
+      "lineIndex": 68
+    },
+    {
+      "start": 221.232,
+      "end": 224.018,
+      "type": "line",
+      "text": "Now, as my mind caught hold upon this thought,",
+      "verse": "36:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 224.198,
+      "end": 225.963,
+      "type": "line",
+      "text": "I cried within my heart:",
+      "verse": "36:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 226.143,
+      "end": 228.976,
+      "type": "line",
+      "text": "O Jesus, thou Son of God, have mercy on me,",
+      "verse": "36:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 229.156,
+      "end": 231.524,
+      "type": "line",
+      "text": "who am in the gall of bitterness,",
+      "verse": "36:18",
+      "lineIndex": 72
+    },
+    {
+      "start": 231.704,
+      "end": 235.001,
+      "type": "line",
+      "text": "and am encircled about by the everlasting chains of death.",
+      "verse": "36:18",
+      "lineIndex": 73
+    },
+    {
+      "start": 235.681,
+      "end": 238.096,
+      "type": "line",
+      "text": "And now, behold, when I thought this,",
+      "verse": "36:19",
+      "lineIndex": 74
+    },
+    {
+      "start": 238.276,
+      "end": 240.644,
+      "type": "line",
+      "text": "I could remember my pains no more;",
+      "verse": "36:19",
+      "lineIndex": 75
+    },
+    {
+      "start": 240.824,
+      "end": 243.982,
+      "type": "line",
+      "text": "yea, I was harrowed up by the memory of my sins no more.",
+      "verse": "36:19",
+      "lineIndex": 76
+    },
+    {
+      "start": 244.662,
+      "end": 248.517,
+      "type": "line",
+      "text": "And oh, what joy, and what marvelous light I did behold;",
+      "verse": "36:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 248.697,
+      "end": 252.226,
+      "type": "line",
+      "text": "yea, my soul was filled with joy as exceeding as was my pain!",
+      "verse": "36:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 252.906,
+      "end": 254.764,
+      "type": "line",
+      "text": "Yea, I say unto you, my son,",
+      "verse": "36:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 254.944,
+      "end": 259.774,
+      "type": "line",
+      "text": "that there could be nothing so exquisite and so bitter as were my pains.",
+      "verse": "36:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 259.954,
+      "end": 262.462,
+      "type": "line",
+      "text": "Yea, and again I say unto you, my son,",
+      "verse": "36:21",
+      "lineIndex": 81
+    },
+    {
+      "start": 262.642,
+      "end": 264.407,
+      "type": "line",
+      "text": "that on the other hand,",
+      "verse": "36:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 264.587,
+      "end": 268.116,
+      "type": "line",
+      "text": "there can be nothing so exquisite and sweet as was my joy.",
+      "verse": "36:21",
+      "lineIndex": 83
+    },
+    {
+      "start": 268.796,
+      "end": 273.997,
+      "type": "line",
+      "text": "Yea, methought I saw, even as our father Lehi saw, God sitting upon his throne,",
+      "verse": "36:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 274.177,
+      "end": 280.493,
+      "type": "line",
+      "text": "surrounded with numberless concourses of angels, in the attitude of singing and praising their God;",
+      "verse": "36:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 280.673,
+      "end": 283.041,
+      "type": "line",
+      "text": "yea, and my soul did long to be there.",
+      "verse": "36:22",
+      "lineIndex": 86
+    },
+    {
+      "start": 283.721,
+      "end": 287.065,
+      "type": "line",
+      "text": "But behold, my limbs did receive their strength again,",
+      "verse": "36:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 287.245,
+      "end": 288.963,
+      "type": "line",
+      "text": "and I stood upon my feet,",
+      "verse": "36:23",
+      "lineIndex": 88
+    },
+    {
+      "start": 289.143,
+      "end": 291.419,
+      "type": "line",
+      "text": "and did manifest unto the people",
+      "verse": "36:23",
+      "lineIndex": 89
+    },
+    {
+      "start": 291.599,
+      "end": 293.503,
+      "type": "line",
+      "text": "that I had been born of God.",
+      "verse": "36:23",
+      "lineIndex": 90
+    },
+    {
+      "start": 294.183,
+      "end": 299.059,
+      "type": "line",
+      "text": "Yea, and from that time even until now, I have labored without ceasing,",
+      "verse": "36:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 299.239,
+      "end": 302.072,
+      "type": "line",
+      "text": "that I might bring souls unto repentance;",
+      "verse": "36:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 302.252,
+      "end": 306.803,
+      "type": "line",
+      "text": "that I might bring them to taste of the exceeding joy of which I did taste;",
+      "verse": "36:24",
+      "lineIndex": 93
+    },
+    {
+      "start": 306.983,
+      "end": 309.63,
+      "type": "line",
+      "text": "that they might also be born of God,",
+      "verse": "36:24",
+      "lineIndex": 94
+    },
+    {
+      "start": 309.81,
+      "end": 311.946,
+      "type": "line",
+      "text": "and be filled with the Holy Ghost.",
+      "verse": "36:24",
+      "lineIndex": 95
+    },
+    {
+      "start": 312.626,
+      "end": 314.623,
+      "type": "line",
+      "text": "Yea, and now behold, O my son,",
+      "verse": "36:25",
+      "lineIndex": 96
+    },
+    {
+      "start": 314.803,
+      "end": 319.261,
+      "type": "line",
+      "text": "the Lord doth give me exceedingly great joy in the fruit of my labors;",
+      "verse": "36:25",
+      "lineIndex": 97
+    },
+    {
+      "start": 319.941,
+      "end": 323.47,
+      "type": "line",
+      "text": "For because of the word which he has imparted unto me,",
+      "verse": "36:26",
+      "lineIndex": 99
+    },
+    {
+      "start": 323.65,
+      "end": 326.158,
+      "type": "line",
+      "text": "behold, many have been born of God,",
+      "verse": "36:26",
+      "lineIndex": 100
+    },
+    {
+      "start": 326.338,
+      "end": 328.706,
+      "type": "line",
+      "text": "and have tasted as I have tasted,",
+      "verse": "36:26",
+      "lineIndex": 101
+    },
+    {
+      "start": 328.886,
+      "end": 331.487,
+      "type": "line",
+      "text": "and have seen eye to eye as I have seen;",
+      "verse": "36:26",
+      "lineIndex": 102
+    },
+    {
+      "start": 331.667,
+      "end": 336.079,
+      "type": "line",
+      "text": "therefore they do know of these things of which I have spoken, as I do know;",
+      "verse": "36:26",
+      "lineIndex": 103
+    },
+    {
+      "start": 336.259,
+      "end": 338.627,
+      "type": "line",
+      "text": "and the knowledge which I have is of God.",
+      "verse": "36:26",
+      "lineIndex": 104
+    },
+    {
+      "start": 339.307,
+      "end": 343.626,
+      "type": "line",
+      "text": "And I have been supported under trials and troubles of every kind,",
+      "verse": "36:27",
+      "lineIndex": 105
+    },
+    {
+      "start": 343.806,
+      "end": 346.453,
+      "type": "line",
+      "text": "yea, and in all manner of afflictions;",
+      "verse": "36:27",
+      "lineIndex": 106
+    },
+    {
+      "start": 346.633,
+      "end": 350.952,
+      "type": "line",
+      "text": "yea, God has delivered me from prison, and from bonds, and from death;",
+      "verse": "36:27",
+      "lineIndex": 107
+    },
+    {
+      "start": 351.132,
+      "end": 351.875,
+      "type": "line",
+      "text": "yea,",
+      "verse": "36:27",
+      "lineIndex": 108
+    },
+    {
+      "start": 352.055,
+      "end": 354.098,
+      "type": "line",
+      "text": "and I do put my trust in him,",
+      "verse": "36:27",
+      "lineIndex": 109
+    },
+    {
+      "start": 354.278,
+      "end": 356.182,
+      "type": "line",
+      "text": "and he will still deliver me.",
+      "verse": "36:27",
+      "lineIndex": 110
+    },
+    {
+      "start": 356.862,
+      "end": 361.506,
+      "type": "line",
+      "text": "And I know that he will raise me up at the last day, to dwell with him in glory;",
+      "verse": "36:28",
+      "lineIndex": 111
+    },
+    {
+      "start": 361.686,
+      "end": 363.776,
+      "type": "line",
+      "text": "yea, and I will praise him forever,",
+      "verse": "36:28",
+      "lineIndex": 112
+    },
+    {
+      "start": 363.956,
+      "end": 366.928,
+      "type": "line",
+      "text": "for he has brought our fathers out of Egypt,",
+      "verse": "36:28",
+      "lineIndex": 113
+    },
+    {
+      "start": 367.108,
+      "end": 370.545,
+      "type": "line",
+      "text": "and he has swallowed up the Egyptians in the Red Sea;",
+      "verse": "36:28",
+      "lineIndex": 114
+    },
+    {
+      "start": 370.725,
+      "end": 373.79,
+      "type": "line",
+      "text": "and he led them by his power into the promised land;",
+      "verse": "36:28",
+      "lineIndex": 115
+    },
+    {
+      "start": 373.97,
+      "end": 378.8,
+      "type": "line",
+      "text": "yea, and he has delivered them out of bondage and captivity from time to time.",
+      "verse": "36:28",
+      "lineIndex": 116
+    },
+    {
+      "start": 379.48,
+      "end": 384.124,
+      "type": "line",
+      "text": "Yea, and he has also brought our fathers out of the land of Jerusalem;",
+      "verse": "36:29",
+      "lineIndex": 117
+    },
+    {
+      "start": 384.304,
+      "end": 387.648,
+      "type": "line",
+      "text": "and he has also, by his everlasting power,",
+      "verse": "36:29",
+      "lineIndex": 118
+    },
+    {
+      "start": 387.828,
+      "end": 393.819,
+      "type": "line",
+      "text": "delivered them out of bondage and captivity, from time to time even down to the present day;",
+      "verse": "36:29",
+      "lineIndex": 119
+    },
+    {
+      "start": 393.999,
+      "end": 397.621,
+      "type": "line",
+      "text": "and I have always retained in remembrance their captivity;",
+      "verse": "36:29",
+      "lineIndex": 120
+    },
+    {
+      "start": 397.801,
+      "end": 402.584,
+      "type": "line",
+      "text": "yea, and ye also ought to retain in remembrance, as I have done, their captivity.",
+      "verse": "36:29",
+      "lineIndex": 121
+    },
+    {
+      "start": 403.264,
+      "end": 405.865,
+      "type": "line",
+      "text": "But behold, my son, this is not all;",
+      "verse": "36:30",
+      "lineIndex": 122
+    },
+    {
+      "start": 406.045,
+      "end": 415.101,
+      "type": "line",
+      "text": "for ye ought to know as I do know, that inasmuch as ye shall keep the commandments of God ye shall prosper in the land;",
+      "verse": "36:30",
+      "lineIndex": 123
+    },
+    {
+      "start": 415.281,
+      "end": 420.761,
+      "type": "line",
+      "text": "and ye ought to know also, that inasmuch as ye will not keep the commandments of God",
+      "verse": "36:30",
+      "lineIndex": 124
+    },
+    {
+      "start": 420.941,
+      "end": 423.263,
+      "type": "line",
+      "text": "ye shall be cut off from his presence.",
+      "verse": "36:30",
+      "lineIndex": 125
+    },
+    {
+      "start": 423.443,
+      "end": 425.44,
+      "type": "line",
+      "text": "Now this is according to his word.",
+      "verse": "36:30",
+      "lineIndex": 126
+    }
+  ]
+}
