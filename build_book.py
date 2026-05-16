@@ -1728,11 +1728,10 @@ _INTERTEXT_INDEX = None  # populated by load_intertext()
 _PHRASE_INDEX = None      # populated by load_intertext()
 _KJV_DIFF_INDEX = None   # populated by load_intertext()
 _PERICOPE_INDEX = None    # populated by load_intertext()
-_GLOSS_INDEX = {}         # populated by load_intertext() — contextual glosses for Isaiah/Malachi
 
 def load_intertext():
-    """Load the enriched Hardy intertext index, phrase index, KJV diff, and glosses."""
-    global _INTERTEXT_INDEX, _PHRASE_INDEX, _KJV_DIFF_INDEX, _PERICOPE_INDEX, _GLOSS_INDEX
+    """Load the enriched Hardy intertext index, phrase index, KJV diff, and pericope data."""
+    global _INTERTEXT_INDEX, _PHRASE_INDEX, _KJV_DIFF_INDEX, _PERICOPE_INDEX
     base = os.path.dirname(os.path.abspath(__file__))
     intertext_path = os.path.join(base, 'data', 'hardy_intertext.json')
     phrase_path = os.path.join(base, 'data', 'hardy_phrase_index.json')
@@ -1772,7 +1771,6 @@ def load_intertext():
         _PERICOPE_INDEX = {}
     load_parallel_index(base)
     load_parry_index(base)
-    load_contextual_glosses(base)
 
 _PARALLEL_INDEX = {}
 
@@ -1813,248 +1811,6 @@ def get_parry_verses(book_id, chapter):
     result = {}
     for entry in ch_data:
         result[entry['v']] = entry
-    return result
-
-
-def load_contextual_glosses(base):
-    """Load contextual glosses for Isaiah/Malachi sections.
-
-    The JSON has flat keys like "2nephi:12:1" mapping to arrays of
-    {phrase, note, category} objects.  We restructure into nested
-    book → chapter → verse → [glosses] for O(1) lookup.
-    """
-    global _GLOSS_INDEX
-    path = os.path.join(base, 'data', 'contextual_glosses.json')
-    if not os.path.exists(path):
-        print(f"  No contextual glosses at {path}, skipping gloss layer")
-        _GLOSS_INDEX = {}
-        return
-    with open(path) as f:
-        raw = json.load(f)
-    _GLOSS_INDEX = {}
-    total = 0
-    for key, entries in raw.items():
-        if key == '_meta' or not entries:
-            continue
-        parts = key.split(':')
-        if len(parts) != 3:
-            continue
-        book, ch, v = parts
-        _GLOSS_INDEX.setdefault(book, {}).setdefault(ch, {})[v] = entries
-        total += len(entries)
-    print(f"Loaded contextual glosses: {total} glosses for Isaiah/Malachi annotation")
-
-
-def get_glosses(book_id, chapter, verse):
-    """Return list of gloss entries for this verse, or empty list."""
-    if not _GLOSS_INDEX:
-        return []
-    return _GLOSS_INDEX.get(book_id, {}).get(str(chapter), {}).get(str(verse), [])
-
-
-def apply_gloss_highlights(line_text, gloss_entries):
-    """Wrap glossed phrases in <span class="gloss" data-note="..." data-cat="...">.
-
-    Matches phrase text case-insensitively against the line (which may
-    contain HTML tags from swap processing).  Works on the visible-text
-    layer, skipping over tags.
-    """
-    if not gloss_entries:
-        return line_text
-
-    # Build a plain-text map (char positions in the HTML → visible text)
-    # so we can match phrases against visible text and map back to HTML positions
-    plain_chars = []  # list of (html_pos, char)
-    i = 0
-    while i < len(line_text):
-        if line_text[i] == '<':
-            end = line_text.find('>', i)
-            if end == -1:
-                break
-            i = end + 1
-        else:
-            plain_chars.append((i, line_text[i]))
-            i += 1
-
-    plain_text = ''.join(c for _, c in plain_chars)
-    plain_lower = plain_text.lower()
-
-    # Find all gloss matches as intervals in plain-text space
-    intervals = []
-    for entry in gloss_entries:
-        phrase = entry.get('phrase', '')
-        if not phrase:
-            continue
-        note = entry.get('note', '').replace('"', '&quot;')
-        cat = entry.get('category', '')
-        idx = plain_lower.find(phrase.lower())
-        if idx != -1:
-            intervals.append((idx, idx + len(phrase), note, cat))
-
-    if not intervals:
-        return line_text
-
-    # Sort by start; resolve overlaps (keep longest)
-    intervals.sort(key=lambda x: (x[0], -(x[1] - x[0])))
-    merged = []
-    for s, e, note, cat in intervals:
-        if merged and s < merged[-1][1]:
-            if e - s > merged[-1][1] - merged[-1][0]:
-                merged[-1] = (s, e, note, cat)
-        else:
-            merged.append((s, e, note, cat))
-
-    # Map plain-text positions back to HTML positions
-    result = []
-    html_pos = 0
-    plain_idx = 0
-
-    for s, e, note, cat in merged:
-        # Advance to start of this interval
-        while plain_idx < s:
-            html_p = plain_chars[plain_idx][0]
-            # Include any HTML tags between current html_pos and this char
-            while html_pos < html_p:
-                result.append(line_text[html_pos])
-                html_pos += 1
-            result.append(line_text[html_pos])
-            html_pos += 1
-            plain_idx += 1
-
-        # Collect the HTML fragment for this gloss range
-        frag_parts = []
-        while plain_idx < e:
-            html_p = plain_chars[plain_idx][0]
-            while html_pos < html_p:
-                frag_parts.append(line_text[html_pos])
-                html_pos += 1
-            frag_parts.append(line_text[html_pos])
-            html_pos += 1
-            plain_idx += 1
-        fragment = ''.join(frag_parts)
-
-        # Wrap visible text in gloss span, respecting existing tag boundaries.
-        # Continuation fragments (after the first open) get gloss-cont class
-        # so CSS can suppress duplicate ✦ markers.
-        gloss_open_first = f'<span class="gloss" data-note="{note}" data-cat="{cat}">'
-        gloss_open_cont  = f'<span class="gloss gloss-cont" data-note="{note}" data-cat="{cat}">'
-        in_gloss = False
-        gloss_opened_count = 0
-        fi = 0
-        while fi < len(fragment):
-            if fragment[fi] == '<':
-                end_tag = fragment.find('>', fi)
-                if end_tag == -1:
-                    break
-                tag = fragment[fi:end_tag + 1]
-                if in_gloss:
-                    result.append('</span>')
-                    in_gloss = False
-                result.append(tag)
-                fi = end_tag + 1
-            else:
-                if not in_gloss:
-                    gloss_opened_count += 1
-                    result.append(gloss_open_first if gloss_opened_count == 1 else gloss_open_cont)
-                    in_gloss = True
-                result.append(fragment[fi])
-                fi += 1
-        if in_gloss:
-            result.append('</span>')
-
-    # Emit remainder
-    while html_pos < len(line_text):
-        result.append(line_text[html_pos])
-        html_pos += 1
-
-    return ''.join(result)
-
-
-def _extract_visible_text(html):
-    """Strip HTML tags to get visible text only."""
-    result = []
-    i = 0
-    while i < len(html):
-        if html[i] == '<':
-            end = html.find('>', i)
-            if end == -1:
-                break
-            i = end + 1
-        else:
-            result.append(html[i])
-            i += 1
-    return ''.join(result)
-
-
-def apply_gloss_highlights_multiline(lines, gloss_entries):
-    """Apply glosses across multiple lines, handling phrases that span line breaks.
-
-    For phrases found within a single line, delegates to apply_gloss_highlights.
-    For phrases that span multiple lines, splits the phrase at line boundaries
-    and applies sub-phrase glosses to each line.
-    """
-    if not gloss_entries or not lines:
-        return lines
-
-    # Extract plain text for each line
-    line_plains = [_extract_visible_text(line) for line in lines]
-
-    # Separate single-line vs multi-line gloss entries
-    single_entries = []
-    multi_entries = []
-    for entry in gloss_entries:
-        phrase = entry.get('phrase', '')
-        if not phrase:
-            continue
-        phrase_lower = phrase.lower()
-        if any(phrase_lower in lp.lower() for lp in line_plains):
-            single_entries.append(entry)
-        else:
-            multi_entries.append(entry)
-
-    # Apply single-line glosses normally
-    result = [apply_gloss_highlights(line, single_entries) for line in lines]
-
-    if not multi_entries:
-        return result
-
-    # Build concatenated plain text with line-boundary offsets
-    # Join with space (matching visual separation between sense lines)
-    line_offsets = []  # (start, end) in the concatenated string
-    pos = 0
-    for lp in line_plains:
-        line_offsets.append((pos, pos + len(lp)))
-        pos += len(lp) + 1  # +1 for the joining space
-
-    full_plain = ' '.join(line_plains)
-    full_lower = full_plain.lower()
-
-    for entry in multi_entries:
-        phrase = entry.get('phrase', '')
-        note = entry.get('note', '')
-        cat = entry.get('category', '')
-        phrase_lower = phrase.lower()
-
-        idx = full_lower.find(phrase_lower)
-        if idx == -1:
-            continue
-        phrase_end = idx + len(phrase)
-
-        # Determine which lines the phrase spans
-        for li, (ls, le) in enumerate(line_offsets):
-            overlap_start = max(idx, ls)
-            overlap_end = min(phrase_end, le)
-
-            if overlap_start < overlap_end:
-                sub_phrase = line_plains[li][overlap_start - ls : overlap_end - ls]
-                if sub_phrase.strip():
-                    sub_entry = {
-                        'phrase': sub_phrase,
-                        'note': note,
-                        'category': cat,
-                    }
-                    result[li] = apply_gloss_highlights(result[li], [sub_entry])
-
     return result
 
 
@@ -2272,16 +2028,12 @@ def apply_phrase_highlights(line_text, phrases, css_class):
     # by closing/reopening the highlight span at each tag boundary.
     def _wrap_respecting_tags(html_fragment, cls):
         """Wrap visible text in <span class=cls>, closing and reopening
-        around any existing HTML tags so nesting stays valid.
-        Continuation fragments (after the first) get an extra 'gloss-cont'
-        class so CSS can suppress duplicate markers."""
+        around any existing HTML tags so nesting stays valid."""
         parts = []
         inside_highlight = False
-        opened_count = 0      # how many times we've opened a highlight span
         i = 0
         while i < len(html_fragment):
             if html_fragment[i] == '<':
-                # We hit a tag — close highlight before tag, emit tag
                 end_tag = html_fragment.find('>', i)
                 if end_tag == -1:
                     break
@@ -2292,13 +2044,8 @@ def apply_phrase_highlights(line_text, phrases, css_class):
                 parts.append(tag)
                 i = end_tag + 1
             else:
-                # Visible text — make sure we're inside highlight
                 if not inside_highlight:
-                    opened_count += 1
-                    if opened_count > 1 and 'gloss' in cls:
-                        parts.append(f'<span class="{cls} gloss-cont">')
-                    else:
-                        parts.append(f'<span class="{cls}">')
+                    parts.append(f'<span class="{cls}">')
                     inside_highlight = True
                 parts.append(html_fragment[i])
                 i += 1
@@ -2482,11 +2229,6 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 wrapped.append(highlighted)
         processed = wrapped
 
-    # Check for contextual glosses (Isaiah/Malachi inline annotations)
-    gloss_entries = get_glosses(book_id, verse['chapter'], verse['verse']) if book_id else []
-    if gloss_entries:
-        processed = apply_gloss_highlights_multiline(processed, gloss_entries)
-
     # Check for KJV diff data (parallel passage visualization)
     diff_data = get_kjv_diff(book_id, verse['chapter'], verse['verse']) if book_id else None
     has_diff = diff_data is not None  # Mark ALL verses with KJV parallel data, even identical ones
@@ -2506,9 +2248,6 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
             para_html = apply_phrase_highlights(para_html, quote_phrases, 'quote-bible')
         if allusion_phrases:
             para_html = apply_phrase_highlights(para_html, allusion_phrases, 'quote-allusion')
-        # Apply contextual glosses to paragraph layer
-        if gloss_entries:
-            para_html = apply_gloss_highlights(para_html, gloss_entries)
         if sources:
             para_html = f'<span data-source="{sources}">{para_html}</span>'
 
@@ -2607,11 +2346,6 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
                 processed_text = apply_phrase_highlights(processed_text, allusion_phrases, 'quote-allusion')
             parry_metadata.append((label_html, indent))
             parry_texts.append(processed_text)
-
-        # Apply contextual glosses across all Parry lines at once
-        # (handles phrases that span multiple lines)
-        if gloss_entries:
-            parry_texts = apply_gloss_highlights_multiline(parry_texts, gloss_entries)
 
         # Wrap each Parry line in its span
         for pl_idx, (processed_text, (label_html, indent)) in enumerate(zip(parry_texts, parry_metadata)):
