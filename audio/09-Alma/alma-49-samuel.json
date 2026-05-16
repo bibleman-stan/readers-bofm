@@ -1,0 +1,952 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 49,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 512.012,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.851,
+      "type": "line",
+      "text": "And now it came to pass in the eleventh month of the nineteenth year, on the tenth day of the month,",
+      "verse": "49:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.031,
+      "end": 10.768,
+      "type": "line",
+      "text": "the armies of the Lamanites were seen approaching towards the land of Ammonihah.",
+      "verse": "49:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 11.448,
+      "end": 14.002,
+      "type": "line",
+      "text": "And behold, the city had been rebuilt,",
+      "verse": "49:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.182,
+      "end": 17.804,
+      "type": "line",
+      "text": "and Moroni had stationed an army by the borders of the city,",
+      "verse": "49:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.984,
+      "end": 24.393,
+      "type": "line",
+      "text": "and they had cast up dirt round about to shield them from the arrows and the stones of the Lamanites;",
+      "verse": "49:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 24.573,
+      "end": 27.777,
+      "type": "line",
+      "text": "for behold, they fought with stones and with arrows.",
+      "verse": "49:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 28.457,
+      "end": 31.661,
+      "type": "line",
+      "text": "Behold, I said that the city of Ammonihah had been rebuilt.",
+      "verse": "49:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 31.841,
+      "end": 35.51,
+      "type": "line",
+      "text": "I say unto you, yea, that it was in part rebuilt;",
+      "verse": "49:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 35.69,
+      "end": 40.938,
+      "type": "line",
+      "text": "and because the Lamanites had destroyed it once because of the iniquity of the people,",
+      "verse": "49:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 41.118,
+      "end": 44.973,
+      "type": "line",
+      "text": "they supposed that it would again become an easy prey for them.",
+      "verse": "49:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 45.653,
+      "end": 48.579,
+      "type": "line",
+      "text": "But behold, how great was their disappointment;",
+      "verse": "49:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 48.759,
+      "end": 53.867,
+      "type": "line",
+      "text": "for behold, the Nephites had dug up a ridge of earth round about them,",
+      "verse": "49:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 54.047,
+      "end": 57.437,
+      "type": "line",
+      "text": "which was so high that the Lamanites could not cast",
+      "verse": "49:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 57.617,
+      "end": 61.75,
+      "type": "line",
+      "text": "their stones and their arrows at them that they might take effect,",
+      "verse": "49:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 61.93,
+      "end": 64.02,
+      "type": "line",
+      "text": "neither could they come upon them",
+      "verse": "49:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 64.2,
+      "end": 66.522,
+      "type": "line",
+      "text": "save it was by their place of entrance.",
+      "verse": "49:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 67.202,
+      "end": 75.143,
+      "type": "line",
+      "text": "Now at this time the chief captains of the Lamanites were astonished exceedingly, because of the wisdom of the Nephites",
+      "verse": "49:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 75.323,
+      "end": 77.877,
+      "type": "line",
+      "text": "in preparing their places of security.",
+      "verse": "49:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 78.557,
+      "end": 83.758,
+      "type": "line",
+      "text": "Now the leaders of the Lamanites had supposed, because of the greatness of their numbers,",
+      "verse": "49:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 83.938,
+      "end": 91.693,
+      "type": "line",
+      "text": "yea, they supposed that they should be privileged to come upon them as they had hitherto done; yea,",
+      "verse": "49:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 91.873,
+      "end": 94.752,
+      "type": "line",
+      "text": "and they had also prepared themselves with shields,",
+      "verse": "49:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 94.932,
+      "end": 96.511,
+      "type": "line",
+      "text": "and with breastplates;",
+      "verse": "49:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 96.691,
+      "end": 100.406,
+      "type": "line",
+      "text": "and they had also prepared themselves with garments of skins,",
+      "verse": "49:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 100.586,
+      "end": 103.697,
+      "type": "line",
+      "text": "yea, very thick garments to cover their nakedness.",
+      "verse": "49:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 104.377,
+      "end": 106.049,
+      "type": "line",
+      "text": "And being thus prepared",
+      "verse": "49:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 106.229,
+      "end": 109.48,
+      "type": "line",
+      "text": "they supposed that they should easily overpower",
+      "verse": "49:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 109.66,
+      "end": 112.818,
+      "type": "line",
+      "text": "and subject their brethren to the yoke of bondage,",
+      "verse": "49:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 112.998,
+      "end": 116.156,
+      "type": "line",
+      "text": "or slay and massacre them according to their pleasure.",
+      "verse": "49:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 116.836,
+      "end": 119.483,
+      "type": "line",
+      "text": "But behold, to their uttermost astonishment,",
+      "verse": "49:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 119.663,
+      "end": 126.257,
+      "type": "line",
+      "text": "they were prepared for them, in a manner which never had been known among the children of Lehi.",
+      "verse": "49:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 126.437,
+      "end": 132.567,
+      "type": "line",
+      "text": "Now they were prepared for the Lamanites, to battle after the manner of the instructions of Moroni.",
+      "verse": "49:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 133.247,
+      "end": 137.427,
+      "type": "line",
+      "text": "And it came to pass that the Lamanites, or the Amalickiahites,",
+      "verse": "49:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 137.607,
+      "end": 141.926,
+      "type": "line",
+      "text": "were exceedingly astonished at their manner of preparation for war.",
+      "verse": "49:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 142.606,
+      "end": 147.157,
+      "type": "line",
+      "text": "Now, if king Amalickiah had come down out of the land of Nephi,",
+      "verse": "49:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 147.337,
+      "end": 154.675,
+      "type": "line",
+      "text": "at the head of his army, perhaps he would have caused the Lamanites to have attacked the Nephites at the city of Ammonihah;",
+      "verse": "49:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 154.855,
+      "end": 158.477,
+      "type": "line",
+      "text": "for behold, he did care not for the blood of his people.",
+      "verse": "49:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 159.157,
+      "end": 162.64,
+      "type": "line",
+      "text": "But behold, Amalickiah did not come down himself to battle.",
+      "verse": "49:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 162.82,
+      "end": 168.764,
+      "type": "line",
+      "text": "And behold, his chief captains durst not attack the Nephites at the city of Ammonihah,",
+      "verse": "49:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 168.944,
+      "end": 174.331,
+      "type": "line",
+      "text": "for Moroni had altered the management of affairs among the Nephites,",
+      "verse": "49:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 174.511,
+      "end": 178.923,
+      "type": "line",
+      "text": "insomuch that the Lamanites were disappointed in their places of retreat",
+      "verse": "49:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 179.103,
+      "end": 180.961,
+      "type": "line",
+      "text": "and they could not come upon them.",
+      "verse": "49:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 181.641,
+      "end": 184.335,
+      "type": "line",
+      "text": "Therefore they retreated into the wilderness,",
+      "verse": "49:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 184.515,
+      "end": 186.187,
+      "type": "line",
+      "text": "and took their camp",
+      "verse": "49:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 186.367,
+      "end": 191.243,
+      "type": "line",
+      "text": "and marched towards the land of Noah, supposing that to be the next best place",
+      "verse": "49:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 191.423,
+      "end": 194.07,
+      "type": "line",
+      "text": "for them to come against the Nephites.",
+      "verse": "49:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 194.75,
+      "end": 197.536,
+      "type": "line",
+      "text": "For they knew not that Moroni had fortified,",
+      "verse": "49:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 197.716,
+      "end": 202.592,
+      "type": "line",
+      "text": "or had built forts of security, for every city in all the land round about;",
+      "verse": "49:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 202.772,
+      "end": 207.509,
+      "type": "line",
+      "text": "therefore, they marched forward to the land of Noah with a firm determination;",
+      "verse": "49:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 207.689,
+      "end": 211.218,
+      "type": "line",
+      "text": "yea, their chief captains came forward and took an oath",
+      "verse": "49:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 211.398,
+      "end": 214.509,
+      "type": "line",
+      "text": "that they would destroy the people of that city.",
+      "verse": "49:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 215.189,
+      "end": 217.65,
+      "type": "line",
+      "text": "But behold, to their astonishment,",
+      "verse": "49:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 217.83,
+      "end": 221.963,
+      "type": "line",
+      "text": "the city of Noah, which had hitherto been a weak place,",
+      "verse": "49:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 222.143,
+      "end": 228.97,
+      "type": "line",
+      "text": "had now, by the means of Moroni, become strong, yea, even to exceed the strength of the city Ammonihah.",
+      "verse": "49:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 229.65,
+      "end": 232.854,
+      "type": "line",
+      "text": "And now, behold, this was wisdom in Moroni;",
+      "verse": "49:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 233.034,
+      "end": 237.446,
+      "type": "line",
+      "text": "for he had supposed that they would be frightened at the city Ammonihah;",
+      "verse": "49:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 237.626,
+      "end": 242.688,
+      "type": "line",
+      "text": "and as the city of Noah had hitherto been the weakest part of the land,",
+      "verse": "49:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 242.868,
+      "end": 245.608,
+      "type": "line",
+      "text": "therefore they would march thither to battle;",
+      "verse": "49:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 245.788,
+      "end": 248.296,
+      "type": "line",
+      "text": "and thus it was according to his desires.",
+      "verse": "49:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 248.976,
+      "end": 255.013,
+      "type": "line",
+      "text": "And behold, Moroni had appointed Lehi to be chief captain over the men of that city;",
+      "verse": "49:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 255.193,
+      "end": 261.555,
+      "type": "line",
+      "text": "and it was that same Lehi who fought with the Lamanites in the valley on the east of the river Sidon.",
+      "verse": "49:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 262.235,
+      "end": 269.247,
+      "type": "line",
+      "text": "And now behold it came to pass that when the Lamanites had found that Lehi commanded the city",
+      "verse": "49:17",
+      "lineIndex": 62
+    },
+    {
+      "start": 269.427,
+      "end": 271.703,
+      "type": "line",
+      "text": "they were again disappointed,",
+      "verse": "49:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 271.883,
+      "end": 274.53,
+      "type": "line",
+      "text": "for they feared Lehi exceedingly;",
+      "verse": "49:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 274.71,
+      "end": 279.447,
+      "type": "line",
+      "text": "nevertheless their chief captains had sworn with an oath to attack the city;",
+      "verse": "49:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 279.627,
+      "end": 282.042,
+      "type": "line",
+      "text": "therefore, they brought up their armies.",
+      "verse": "49:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 282.722,
+      "end": 294.889,
+      "type": "line",
+      "text": "Now behold, the Lamanites could not get into their forts of security by any other way save by the entrance, because of the highness of the bank which had been thrown up,",
+      "verse": "49:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 295.069,
+      "end": 298.459,
+      "type": "line",
+      "text": "and the depth of the ditch which had been dug round about,",
+      "verse": "49:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 298.639,
+      "end": 300.357,
+      "type": "line",
+      "text": "save it were by the entrance.",
+      "verse": "49:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 301.037,
+      "end": 304.52,
+      "type": "line",
+      "text": "And thus were the Nephites prepared to destroy all such",
+      "verse": "49:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 304.7,
+      "end": 312.13,
+      "type": "line",
+      "text": "as should attempt to climb up to enter the fort by any other way, by casting over stones and arrows at them.",
+      "verse": "49:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 312.81,
+      "end": 314.296,
+      "type": "line",
+      "text": "Thus they were prepared,",
+      "verse": "49:20",
+      "lineIndex": 72
+    },
+    {
+      "start": 314.476,
+      "end": 319.259,
+      "type": "line",
+      "text": "yea, a body of their strongest men, with their swords and their slings,",
+      "verse": "49:20",
+      "lineIndex": 73
+    },
+    {
+      "start": 319.439,
+      "end": 325.894,
+      "type": "line",
+      "text": "to smite down all who should attempt to come into their place of security by the place of entrance;",
+      "verse": "49:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 326.074,
+      "end": 330.532,
+      "type": "line",
+      "text": "and thus were they prepared to defend themselves against the Lamanites.",
+      "verse": "49:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 331.212,
+      "end": 338.271,
+      "type": "line",
+      "text": "And it came to pass that the captains of the Lamanites brought up their armies before the place of entrance,",
+      "verse": "49:21",
+      "lineIndex": 76
+    },
+    {
+      "start": 338.451,
+      "end": 343.42,
+      "type": "line",
+      "text": "and began to contend with the Nephites, to get into their place of security;",
+      "verse": "49:21",
+      "lineIndex": 77
+    },
+    {
+      "start": 343.6,
+      "end": 349.916,
+      "type": "line",
+      "text": "but behold, they were driven back from time to time, insomuch that they were slain with an immense slaughter.",
+      "verse": "49:21",
+      "lineIndex": 78
+    },
+    {
+      "start": 350.596,
+      "end": 357.98,
+      "type": "line",
+      "text": "Now when they found that they could not obtain power over the Nephites by the pass, they began to dig down their banks of earth",
+      "verse": "49:22",
+      "lineIndex": 79
+    },
+    {
+      "start": 358.16,
+      "end": 361.271,
+      "type": "line",
+      "text": "that they might obtain a pass to their armies,",
+      "verse": "49:22",
+      "lineIndex": 80
+    },
+    {
+      "start": 361.451,
+      "end": 364.284,
+      "type": "line",
+      "text": "that they might have an equal chance to fight;",
+      "verse": "49:22",
+      "lineIndex": 81
+    },
+    {
+      "start": 364.464,
+      "end": 368.086,
+      "type": "line",
+      "text": "but behold, in these attempts they were swept off",
+      "verse": "49:22",
+      "lineIndex": 82
+    },
+    {
+      "start": 368.266,
+      "end": 371.052,
+      "type": "line",
+      "text": "by the stones and arrows which were thrown at them;",
+      "verse": "49:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 371.232,
+      "end": 375.969,
+      "type": "line",
+      "text": "and instead of filling up their ditches by pulling down the banks of earth,",
+      "verse": "49:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 376.149,
+      "end": 380.747,
+      "type": "line",
+      "text": "they were filled up in a measure with their dead and wounded bodies.",
+      "verse": "49:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 381.427,
+      "end": 384.631,
+      "type": "line",
+      "text": "Thus the Nephites had all power over their enemies;",
+      "verse": "49:23",
+      "lineIndex": 86
+    },
+    {
+      "start": 384.811,
+      "end": 388.155,
+      "type": "line",
+      "text": "and thus the Lamanites did attempt to destroy the Nephites",
+      "verse": "49:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 388.335,
+      "end": 390.843,
+      "type": "line",
+      "text": "until their chief captains were all slain;",
+      "verse": "49:23",
+      "lineIndex": 88
+    },
+    {
+      "start": 391.023,
+      "end": 394.274,
+      "type": "line",
+      "text": "yea, and more than a thousand of the Lamanites were slain;",
+      "verse": "49:23",
+      "lineIndex": 89
+    },
+    {
+      "start": 394.454,
+      "end": 396.079,
+      "type": "line",
+      "text": "while, on the other hand,",
+      "verse": "49:23",
+      "lineIndex": 90
+    },
+    {
+      "start": 396.259,
+      "end": 399.835,
+      "type": "line",
+      "text": "there was not a single soul of the Nephites which was slain.",
+      "verse": "49:23",
+      "lineIndex": 91
+    },
+    {
+      "start": 400.515,
+      "end": 403.255,
+      "type": "line",
+      "text": "There were about fifty who were wounded,",
+      "verse": "49:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 403.435,
+      "end": 408.868,
+      "type": "line",
+      "text": "who had been exposed to the arrows of the Lamanites through the pass,",
+      "verse": "49:24",
+      "lineIndex": 93
+    },
+    {
+      "start": 409.048,
+      "end": 411.37,
+      "type": "line",
+      "text": "but they were shielded by their shields,",
+      "verse": "49:24",
+      "lineIndex": 94
+    },
+    {
+      "start": 411.55,
+      "end": 413.268,
+      "type": "line",
+      "text": "and their breastplates,",
+      "verse": "49:24",
+      "lineIndex": 95
+    },
+    {
+      "start": 413.448,
+      "end": 417.674,
+      "type": "line",
+      "text": "and their head-plates, insomuch that their wounds were upon their legs,",
+      "verse": "49:24",
+      "lineIndex": 96
+    },
+    {
+      "start": 417.854,
+      "end": 419.99,
+      "type": "line",
+      "text": "many of which were very severe.",
+      "verse": "49:24",
+      "lineIndex": 97
+    },
+    {
+      "start": 420.67,
+      "end": 426.521,
+      "type": "line",
+      "text": "And it came to pass, that when the Lamanites saw that their chief captains were all slain",
+      "verse": "49:25",
+      "lineIndex": 98
+    },
+    {
+      "start": 426.701,
+      "end": 428.651,
+      "type": "line",
+      "text": "they fled into the wilderness.",
+      "verse": "49:25",
+      "lineIndex": 99
+    },
+    {
+      "start": 428.831,
+      "end": 435.054,
+      "type": "line",
+      "text": "And it came to pass that they returned to the land of Nephi, to inform their king, Amalickiah,",
+      "verse": "49:25",
+      "lineIndex": 100
+    },
+    {
+      "start": 435.234,
+      "end": 437.277,
+      "type": "line",
+      "text": "who was a Nephite by birth,",
+      "verse": "49:25",
+      "lineIndex": 101
+    },
+    {
+      "start": 437.457,
+      "end": 439.454,
+      "type": "line",
+      "text": "concerning their great loss.",
+      "verse": "49:25",
+      "lineIndex": 102
+    },
+    {
+      "start": 440.134,
+      "end": 443.989,
+      "type": "line",
+      "text": "And it came to pass that he was exceedingly angry with his people,",
+      "verse": "49:26",
+      "lineIndex": 104
+    },
+    {
+      "start": 444.169,
+      "end": 447.559,
+      "type": "line",
+      "text": "because he had not obtained his desire over the Nephites;",
+      "verse": "49:26",
+      "lineIndex": 105
+    },
+    {
+      "start": 447.739,
+      "end": 451.268,
+      "type": "line",
+      "text": "he had not subjected them to the yoke of bondage.",
+      "verse": "49:26",
+      "lineIndex": 106
+    },
+    {
+      "start": 451.948,
+      "end": 453.898,
+      "type": "line",
+      "text": "Yea, he was exceedingly wroth,",
+      "verse": "49:27",
+      "lineIndex": 107
+    },
+    {
+      "start": 454.078,
+      "end": 456.911,
+      "type": "line",
+      "text": "and he did curse God, and also Moroni,",
+      "verse": "49:27",
+      "lineIndex": 108
+    },
+    {
+      "start": 457.091,
+      "end": 460.295,
+      "type": "line",
+      "text": "swearing with an oath that he would drink his blood;",
+      "verse": "49:27",
+      "lineIndex": 109
+    },
+    {
+      "start": 460.475,
+      "end": 466.001,
+      "type": "line",
+      "text": "and this because Moroni had kept the commandments of God in preparing for the safety of his people.",
+      "verse": "49:27",
+      "lineIndex": 110
+    },
+    {
+      "start": 466.681,
+      "end": 469.142,
+      "type": "line",
+      "text": "And it came to pass, that on the other hand,",
+      "verse": "49:28",
+      "lineIndex": 111
+    },
+    {
+      "start": 469.322,
+      "end": 477.542,
+      "type": "line",
+      "text": "the people of Nephi did thank the Lord their God, because of his matchless power in delivering them from the hands of their enemies.",
+      "verse": "49:28",
+      "lineIndex": 112
+    },
+    {
+      "start": 478.222,
+      "end": 483.284,
+      "type": "line",
+      "text": "And thus ended the nineteenth year of the reign of the judges over the people of Nephi.",
+      "verse": "49:29",
+      "lineIndex": 113
+    },
+    {
+      "start": 483.964,
+      "end": 486.936,
+      "type": "line",
+      "text": "Yea, and there was continual peace among them,",
+      "verse": "49:30",
+      "lineIndex": 114
+    },
+    {
+      "start": 487.116,
+      "end": 501.512,
+      "type": "line",
+      "text": "and exceedingly great prosperity in the church because of their heed and diligence which they gave unto the word of God, which was declared unto them by Helaman, and Shiblon, and Corianton, and Ammon and his brethren,",
+      "verse": "49:30",
+      "lineIndex": 115
+    },
+    {
+      "start": 501.692,
+      "end": 506.29,
+      "type": "line",
+      "text": "yea, and by all those who had been ordained by the holy order of God,",
+      "verse": "49:30",
+      "lineIndex": 116
+    },
+    {
+      "start": 506.47,
+      "end": 508.56,
+      "type": "line",
+      "text": "being baptized unto repentance,",
+      "verse": "49:30",
+      "lineIndex": 117
+    },
+    {
+      "start": 508.74,
+      "end": 511.341,
+      "type": "line",
+      "text": "and sent forth to preach among the people.",
+      "verse": "49:30",
+      "lineIndex": 118
+    }
+  ]
+}
