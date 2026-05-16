@@ -24,6 +24,8 @@ A web-based colometric reading edition of the Book of Mormon at **bomreader.com*
 
 **Compaction-resume protocol.** Per [`../atu-method/memories/feedback_compaction_resume_protocol.md`](../atu-method/memories/feedback_compaction_resume_protocol.md) (cross-corpus shared discipline): when resuming from a compaction event, the FIRST action after the mandatory orientation reads is to read the last 20-30 user↔assistant back-and-forth turns from the session JSONL verbatim. Report the re-read as part of the orientation self-report. Don't write wrap artifacts / session-notes / full-transcript dumps; surface state inline. `pending.md` only for extended multi-cycle hand-offs.
 
+**Directive-queue protocol.** Per [`../atu-method/memories/feedback_directive_protocol.md`](../atu-method/memories/feedback_directive_protocol.md) (cross-corpus shared discipline): on wake, after mandatory orientation reads, check `directives/pending/` for files in commit-order. Process each in turn: read directive, execute items per their reporting + audit-trigger guidance, write reply at `directives/replies/<same-name>.md`, move processed directive to `directives/processed/<same-name>.md`, commit + push per directive (or per coherent batch). Surface processed work + any new Stan-decisions in chat after the session.
+
 ---
 
 ## Editorial discipline (highest-violation surface)
