@@ -1,0 +1,848 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 54,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 361.874,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.248,
+      "type": "line",
+      "text": "And now it came to pass in the commencement of the twenty and ninth year of the judges,",
+      "verse": "54:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.428,
+      "end": 10.304,
+      "type": "line",
+      "text": "that Ammoron sent unto Moroni desiring that he would exchange prisoners.",
+      "verse": "54:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.984,
+      "end": 15.907,
+      "type": "line",
+      "text": "And it came to pass that Moroni felt to rejoice exceedingly at this request,",
+      "verse": "54:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 16.087,
+      "end": 18.223,
+      "type": "line",
+      "text": "for he desired the provisions",
+      "verse": "54:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 18.403,
+      "end": 23.001,
+      "type": "line",
+      "text": "which were imparted for the support of the Lamanite prisoners",
+      "verse": "54:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 23.181,
+      "end": 25.457,
+      "type": "line",
+      "text": "for the support of his own people;",
+      "verse": "54:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.637,
+      "end": 29.817,
+      "type": "line",
+      "text": "and he also desired his own people for the strengthening of his army.",
+      "verse": "54:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 30.497,
+      "end": 33.608,
+      "type": "line",
+      "text": "Now the Lamanites had taken many women and children,",
+      "verse": "54:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.788,
+      "end": 38.339,
+      "type": "line",
+      "text": "and there was not a woman nor a child among all the prisoners of Moroni,",
+      "verse": "54:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 38.519,
+      "end": 41.213,
+      "type": "line",
+      "text": "or the prisoners whom Moroni had taken;",
+      "verse": "54:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 41.393,
+      "end": 49.52,
+      "type": "line",
+      "text": "therefore Moroni resolved upon a stratagem to obtain as many prisoners of the Nephites from the Lamanites as it were possible.",
+      "verse": "54:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 50.2,
+      "end": 52.336,
+      "type": "line",
+      "text": "Therefore he wrote an epistle,",
+      "verse": "54:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 52.516,
+      "end": 54.884,
+      "type": "line",
+      "text": "and sent it by the servant of Ammoron,",
+      "verse": "54:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 55.064,
+      "end": 57.897,
+      "type": "line",
+      "text": "the same who had brought an epistle to Moroni.",
+      "verse": "54:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 58.077,
+      "end": 61.839,
+      "type": "line",
+      "text": "Now these are the words which he wrote unto Ammoron, saying:",
+      "verse": "54:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 62.519,
+      "end": 65.584,
+      "type": "line",
+      "text": "Behold, Ammoron, I have written unto you somewhat",
+      "verse": "54:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 65.764,
+      "end": 72.544,
+      "type": "line",
+      "text": "concerning this war which ye have waged against my people, or rather which thy brother hath waged against them,",
+      "verse": "54:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 72.724,
+      "end": 76.207,
+      "type": "line",
+      "text": "and which ye are still determined to carry on after his death.",
+      "verse": "54:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 76.887,
+      "end": 81.113,
+      "type": "line",
+      "text": "Behold, I would tell you somewhat concerning the justice of God,",
+      "verse": "54:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 81.293,
+      "end": 83.894,
+      "type": "line",
+      "text": "and the sword of his almighty wrath,",
+      "verse": "54:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 84.074,
+      "end": 85.746,
+      "type": "line",
+      "text": "which doth hang over you",
+      "verse": "54:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 85.926,
+      "end": 91.406,
+      "type": "line",
+      "text": "except ye repent and withdraw your armies into your own lands, or the land of your possessions,",
+      "verse": "54:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 91.586,
+      "end": 93.536,
+      "type": "line",
+      "text": "which is the land of Nephi.",
+      "verse": "54:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 94.216,
+      "end": 96.027,
+      "type": "line",
+      "text": "Yea, I would tell you these things",
+      "verse": "54:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 96.207,
+      "end": 99.272,
+      "type": "line",
+      "text": "if ye were capable of hearkening unto them;",
+      "verse": "54:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 99.452,
+      "end": 102.796,
+      "type": "line",
+      "text": "yea, I would tell you concerning that awful hell",
+      "verse": "54:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 102.976,
+      "end": 108.502,
+      "type": "line",
+      "text": "that awaits to receive such murderers as thou and thy brother have been,",
+      "verse": "54:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 108.682,
+      "end": 110.261,
+      "type": "line",
+      "text": "except ye repent",
+      "verse": "54:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 110.441,
+      "end": 112.949,
+      "type": "line",
+      "text": "and withdraw your murderous purposes,",
+      "verse": "54:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 113.129,
+      "end": 116.101,
+      "type": "line",
+      "text": "and return with your armies to your own lands.",
+      "verse": "54:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 116.781,
+      "end": 119.149,
+      "type": "line",
+      "text": "But as ye have once rejected these things,",
+      "verse": "54:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 119.329,
+      "end": 121.79,
+      "type": "line",
+      "text": "and have fought against the people of the Lord,",
+      "verse": "54:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 121.97,
+      "end": 124.571,
+      "type": "line",
+      "text": "even so I may expect you will do it again.",
+      "verse": "54:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 125.251,
+      "end": 128.223,
+      "type": "line",
+      "text": "And now behold, we are prepared to receive you;",
+      "verse": "54:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 128.403,
+      "end": 138.666,
+      "type": "line",
+      "text": "yea, and except you withdraw your purposes, behold, ye will pull down the wrath of that God whom you have rejected upon you, even to your utter destruction.",
+      "verse": "54:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 139.346,
+      "end": 140.832,
+      "type": "line",
+      "text": "But, as the Lord liveth,",
+      "verse": "54:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 141.012,
+      "end": 144.123,
+      "type": "line",
+      "text": "our armies shall come upon you except ye withdraw,",
+      "verse": "54:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 144.303,
+      "end": 146.857,
+      "type": "line",
+      "text": "and ye shall soon be visited with death,",
+      "verse": "54:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 147.037,
+      "end": 150.148,
+      "type": "line",
+      "text": "for we will retain our cities and our lands;",
+      "verse": "54:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 150.328,
+      "end": 153.765,
+      "type": "line",
+      "text": "yea, and we will maintain our religion and the cause of our God.",
+      "verse": "54:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 154.445,
+      "end": 156.953,
+      "type": "line",
+      "text": "But behold, it supposeth me that I talk",
+      "verse": "54:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 157.133,
+      "end": 159.641,
+      "type": "line",
+      "text": "to you concerning these things in vain;",
+      "verse": "54:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 159.821,
+      "end": 162.932,
+      "type": "line",
+      "text": "or it supposeth me that thou art a child of hell;",
+      "verse": "54:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 163.112,
+      "end": 166.084,
+      "type": "line",
+      "text": "therefore I will close my epistle by telling you",
+      "verse": "54:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 166.264,
+      "end": 168.679,
+      "type": "line",
+      "text": "that I will not exchange prisoners,",
+      "verse": "54:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 168.859,
+      "end": 170.438,
+      "type": "line",
+      "text": "save it be on conditions",
+      "verse": "54:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 170.618,
+      "end": 176.33,
+      "type": "line",
+      "text": "that ye will deliver up a man and his wife and his children, for one prisoner;",
+      "verse": "54:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 176.51,
+      "end": 179.947,
+      "type": "line",
+      "text": "if this be the case that ye will do it, I will exchange.",
+      "verse": "54:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 180.627,
+      "end": 182.81,
+      "type": "line",
+      "text": "And behold, if ye do not this,",
+      "verse": "54:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 182.99,
+      "end": 185.358,
+      "type": "line",
+      "text": "I will come against you with my armies;",
+      "verse": "54:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 185.538,
+      "end": 188.557,
+      "type": "line",
+      "text": "yea, even I will arm my women and my children,",
+      "verse": "54:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 188.737,
+      "end": 190.641,
+      "type": "line",
+      "text": "and I will come against you,",
+      "verse": "54:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 190.821,
+      "end": 193.422,
+      "type": "line",
+      "text": "and I will follow you even into your own land,",
+      "verse": "54:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 193.602,
+      "end": 196.621,
+      "type": "line",
+      "text": "which is the land of our first inheritance;",
+      "verse": "54:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 196.801,
+      "end": 199.541,
+      "type": "line",
+      "text": "yea, and it shall be blood for blood,",
+      "verse": "54:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 199.721,
+      "end": 201.439,
+      "type": "line",
+      "text": "yea, life for life;",
+      "verse": "54:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 201.619,
+      "end": 203.244,
+      "type": "line",
+      "text": "and I will give you battle",
+      "verse": "54:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 203.424,
+      "end": 206.814,
+      "type": "line",
+      "text": "even until you are destroyed from off the face of the earth.",
+      "verse": "54:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 207.494,
+      "end": 210.559,
+      "type": "line",
+      "text": "Behold, I am in my anger, and also my people;",
+      "verse": "54:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 210.739,
+      "end": 212.689,
+      "type": "line",
+      "text": "ye have sought to murder us,",
+      "verse": "54:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 212.869,
+      "end": 215.237,
+      "type": "line",
+      "text": "and we have only sought to defend ourselves.",
+      "verse": "54:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 215.417,
+      "end": 220.107,
+      "type": "line",
+      "text": "But behold, if ye seek to destroy us more we will seek to destroy you;",
+      "verse": "54:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 220.287,
+      "end": 222.33,
+      "type": "line",
+      "text": "yea, and we will seek our land,",
+      "verse": "54:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 222.51,
+      "end": 224.646,
+      "type": "line",
+      "text": "the land of our first inheritance.",
+      "verse": "54:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 225.326,
+      "end": 226.859,
+      "type": "line",
+      "text": "Now I close my epistle.",
+      "verse": "54:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 227.039,
+      "end": 228.293,
+      "type": "line",
+      "text": "I am Moroni;",
+      "verse": "54:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 228.473,
+      "end": 231.027,
+      "type": "line",
+      "text": "I am a leader of the people of the Nephites.",
+      "verse": "54:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 231.707,
+      "end": 233.843,
+      "type": "line",
+      "text": "Now it came to pass that Ammoron,",
+      "verse": "54:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 234.023,
+      "end": 236.159,
+      "type": "line",
+      "text": "when he had received this epistle,",
+      "verse": "54:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 236.339,
+      "end": 240.24,
+      "type": "line",
+      "text": "was angry; and he wrote another epistle unto Moroni,",
+      "verse": "54:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 240.42,
+      "end": 243.485,
+      "type": "line",
+      "text": "and these are the words which he wrote, saying:",
+      "verse": "54:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 244.165,
+      "end": 246.998,
+      "type": "line",
+      "text": "I am Ammoron, the king of the Lamanites;",
+      "verse": "54:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 247.178,
+      "end": 250.847,
+      "type": "line",
+      "text": "I am the brother of Amalickiah whom ye have murdered.",
+      "verse": "54:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 251.027,
+      "end": 253.813,
+      "type": "line",
+      "text": "Behold, I will avenge his blood upon you,",
+      "verse": "54:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 253.993,
+      "end": 259.566,
+      "type": "line",
+      "text": "yea, and I will come upon you with my armies for I fear not your threatenings.",
+      "verse": "54:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 260.246,
+      "end": 263.125,
+      "type": "line",
+      "text": "For behold, your fathers did wrong their brethren,",
+      "verse": "54:17",
+      "lineIndex": 77
+    },
+    {
+      "start": 263.305,
+      "end": 267.81,
+      "type": "line",
+      "text": "insomuch that they did rob them of their right to the government",
+      "verse": "54:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 267.99,
+      "end": 270.126,
+      "type": "line",
+      "text": "when it rightly belonged unto them.",
+      "verse": "54:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 270.806,
+      "end": 273.453,
+      "type": "line",
+      "text": "And now behold, if ye will lay down your arms,",
+      "verse": "54:18",
+      "lineIndex": 80
+    },
+    {
+      "start": 273.633,
+      "end": 276.466,
+      "type": "line",
+      "text": "and subject yourselves to be governed by those",
+      "verse": "54:18",
+      "lineIndex": 81
+    },
+    {
+      "start": 276.646,
+      "end": 279.34,
+      "type": "line",
+      "text": "to whom the government doth rightly belong,",
+      "verse": "54:18",
+      "lineIndex": 82
+    },
+    {
+      "start": 279.52,
+      "end": 283.282,
+      "type": "line",
+      "text": "then will I cause that my people shall lay down their weapons",
+      "verse": "54:18",
+      "lineIndex": 83
+    },
+    {
+      "start": 283.462,
+      "end": 285.227,
+      "type": "line",
+      "text": "and shall be at war no more.",
+      "verse": "54:18",
+      "lineIndex": 84
+    },
+    {
+      "start": 285.907,
+      "end": 290.412,
+      "type": "line",
+      "text": "Behold, ye have breathed out many threatenings against me and my people;",
+      "verse": "54:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 290.592,
+      "end": 293.471,
+      "type": "line",
+      "text": "but behold, we fear not your threatenings.",
+      "verse": "54:19",
+      "lineIndex": 86
+    },
+    {
+      "start": 294.151,
+      "end": 299.167,
+      "type": "line",
+      "text": "Nevertheless, I will grant to exchange prisoners according to your request, gladly,",
+      "verse": "54:20",
+      "lineIndex": 87
+    },
+    {
+      "start": 299.347,
+      "end": 302.505,
+      "type": "line",
+      "text": "that I may preserve my food for my men of war;",
+      "verse": "54:20",
+      "lineIndex": 88
+    },
+    {
+      "start": 302.685,
+      "end": 305.425,
+      "type": "line",
+      "text": "and we will wage a war which shall be eternal,",
+      "verse": "54:20",
+      "lineIndex": 89
+    },
+    {
+      "start": 305.605,
+      "end": 308.902,
+      "type": "line",
+      "text": "either to the subjecting the Nephites to our authority",
+      "verse": "54:20",
+      "lineIndex": 90
+    },
+    {
+      "start": 309.082,
+      "end": 311.358,
+      "type": "line",
+      "text": "or to their eternal extinction.",
+      "verse": "54:20",
+      "lineIndex": 91
+    },
+    {
+      "start": 312.038,
+      "end": 315.335,
+      "type": "line",
+      "text": "And as concerning that God whom ye say we have rejected,",
+      "verse": "54:21",
+      "lineIndex": 92
+    },
+    {
+      "start": 315.515,
+      "end": 318.673,
+      "type": "line",
+      "text": "behold, we know not such a being; neither do ye;",
+      "verse": "54:21",
+      "lineIndex": 93
+    },
+    {
+      "start": 318.853,
+      "end": 321.639,
+      "type": "line",
+      "text": "but if it so be that there is such a being,",
+      "verse": "54:21",
+      "lineIndex": 94
+    },
+    {
+      "start": 321.819,
+      "end": 325.07,
+      "type": "line",
+      "text": "we know not but that he hath made us as well as you.",
+      "verse": "54:21",
+      "lineIndex": 95
+    },
+    {
+      "start": 325.75,
+      "end": 329.001,
+      "type": "line",
+      "text": "And if it so be that there is a devil and a hell,",
+      "verse": "54:22",
+      "lineIndex": 96
+    },
+    {
+      "start": 329.181,
+      "end": 334.614,
+      "type": "line",
+      "text": "behold will he not send you there to dwell with my brother whom ye have murdered,",
+      "verse": "54:22",
+      "lineIndex": 97
+    },
+    {
+      "start": 334.794,
+      "end": 338.184,
+      "type": "line",
+      "text": "whom ye have hinted that he hath gone to such a place?",
+      "verse": "54:22",
+      "lineIndex": 98
+    },
+    {
+      "start": 338.364,
+      "end": 340.5,
+      "type": "line",
+      "text": "But behold these things matter not.",
+      "verse": "54:22",
+      "lineIndex": 99
+    },
+    {
+      "start": 341.18,
+      "end": 347.728,
+      "type": "line",
+      "text": "I am Ammoron, and a descendant of Zoram, whom your fathers pressed and brought out of Jerusalem.",
+      "verse": "54:23",
+      "lineIndex": 100
+    },
+    {
+      "start": 348.408,
+      "end": 350.962,
+      "type": "line",
+      "text": "And behold now, I am a bold Lamanite;",
+      "verse": "54:24",
+      "lineIndex": 101
+    },
+    {
+      "start": 351.142,
+      "end": 354.439,
+      "type": "line",
+      "text": "behold, this war hath been waged to avenge their wrongs,",
+      "verse": "54:24",
+      "lineIndex": 102
+    },
+    {
+      "start": 354.619,
+      "end": 358.52,
+      "type": "line",
+      "text": "and to maintain and to obtain their rights to the government;",
+      "verse": "54:24",
+      "lineIndex": 103
+    },
+    {
+      "start": 358.7,
+      "end": 361.208,
+      "type": "line",
+      "text": "and I close my epistle to Moroni.",
+      "verse": "54:24",
+      "lineIndex": 104
+    }
+  ]
+}
