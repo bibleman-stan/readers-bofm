@@ -1,0 +1,1312 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 14,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 552.811,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.04,
+      "type": "line",
+      "text": "And it came to pass after he had made an end of speaking unto the people",
+      "verse": "14:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.22,
+      "end": 6.681,
+      "type": "line",
+      "text": "many of them did believe on his words,",
+      "verse": "14:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.861,
+      "end": 8.533,
+      "type": "line",
+      "text": "and began to repent,",
+      "verse": "14:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 8.713,
+      "end": 10.524,
+      "type": "line",
+      "text": "and to search the scriptures.",
+      "verse": "14:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.204,
+      "end": 16.359,
+      "type": "line",
+      "text": "But the more part of them were desirous that they might destroy Alma and Amulek;",
+      "verse": "14:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 16.539,
+      "end": 21.229,
+      "type": "line",
+      "text": "for they were angry with Alma, because of the plainness of his words unto Zeezrom;",
+      "verse": "14:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 21.409,
+      "end": 24.706,
+      "type": "line",
+      "text": "and they also said that Amulek had lied unto them,",
+      "verse": "14:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 24.886,
+      "end": 29.762,
+      "type": "line",
+      "text": "and had reviled against their law and also against their lawyers and judges.",
+      "verse": "14:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 30.442,
+      "end": 32.996,
+      "type": "line",
+      "text": "And they were also angry with Alma and Amulek;",
+      "verse": "14:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 33.176,
+      "end": 36.984,
+      "type": "line",
+      "text": "and because they had testified so plainly against their wickedness,",
+      "verse": "14:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 37.164,
+      "end": 39.347,
+      "type": "line",
+      "text": "they sought to put them away privily.",
+      "verse": "14:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 40.027,
+      "end": 42.535,
+      "type": "line",
+      "text": "But it came to pass that they did not;",
+      "verse": "14:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 42.715,
+      "end": 44.665,
+      "type": "line",
+      "text": "but they took them",
+      "verse": "14:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.845,
+      "end": 46.935,
+      "type": "line",
+      "text": "and bound them with strong cords,",
+      "verse": "14:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 47.115,
+      "end": 50.134,
+      "type": "line",
+      "text": "and took them before the chief judge of the land.",
+      "verse": "14:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 50.814,
+      "end": 54.111,
+      "type": "line",
+      "text": "And the people went forth and witnessed against them\u2014",
+      "verse": "14:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 54.291,
+      "end": 57.588,
+      "type": "line",
+      "text": "testifying that they had reviled against the law,",
+      "verse": "14:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 57.768,
+      "end": 60.276,
+      "type": "line",
+      "text": "and their lawyers and judges of the land,",
+      "verse": "14:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 60.456,
+      "end": 63.893,
+      "type": "line",
+      "text": "and also of all the people that were in the land;",
+      "verse": "14:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 64.073,
+      "end": 67.138,
+      "type": "line",
+      "text": "and also testified that there was but one God,",
+      "verse": "14:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 67.318,
+      "end": 70.569,
+      "type": "line",
+      "text": "and that he should send his Son among the people,",
+      "verse": "14:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 70.749,
+      "end": 72.514,
+      "type": "line",
+      "text": "but he should not save them;",
+      "verse": "14:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 72.694,
+      "end": 77.152,
+      "type": "line",
+      "text": "and many such things did the people testify against Alma and Amulek.",
+      "verse": "14:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 77.332,
+      "end": 80.304,
+      "type": "line",
+      "text": "Now this was done before the chief judge of the land.",
+      "verse": "14:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 80.984,
+      "end": 85.721,
+      "type": "line",
+      "text": "And it came to pass that Zeezrom was astonished at the words which had been spoken;",
+      "verse": "14:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 85.901,
+      "end": 89.384,
+      "type": "line",
+      "text": "and he also knew concerning the blindness of the minds,",
+      "verse": "14:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 89.564,
+      "end": 92.861,
+      "type": "line",
+      "text": "which he had caused among the people by his lying words;",
+      "verse": "14:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 93.041,
+      "end": 98.242,
+      "type": "line",
+      "text": "and his soul began to be harrowed up under a consciousness of his own guilt;",
+      "verse": "14:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 98.422,
+      "end": 102.277,
+      "type": "line",
+      "text": "yea, he began to be encircled about by the pains of hell.",
+      "verse": "14:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 102.957,
+      "end": 107.555,
+      "type": "line",
+      "text": "And it came to pass that he began to cry unto the people, saying:",
+      "verse": "14:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 107.735,
+      "end": 109.36,
+      "type": "line",
+      "text": "Behold, I am guilty,",
+      "verse": "14:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 109.54,
+      "end": 112.187,
+      "type": "line",
+      "text": "and these men are spotless before God.",
+      "verse": "14:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 112.367,
+      "end": 115.804,
+      "type": "line",
+      "text": "And he began to plead for them from that time forth;",
+      "verse": "14:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 115.984,
+      "end": 117.981,
+      "type": "line",
+      "text": "but they reviled him, saying:",
+      "verse": "14:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 118.161,
+      "end": 120.715,
+      "type": "line",
+      "text": "Art thou also possessed with the devil?",
+      "verse": "14:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 120.895,
+      "end": 122.52,
+      "type": "line",
+      "text": "And they spit upon him,",
+      "verse": "14:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 122.7,
+      "end": 130.084,
+      "type": "line",
+      "text": "and cast him out from among them, and also all those who believed in the words which had been spoken by Alma and Amulek;",
+      "verse": "14:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 130.264,
+      "end": 131.889,
+      "type": "line",
+      "text": "and they cast them out,",
+      "verse": "14:7",
+      "lineIndex": 38
+    },
+    {
+      "start": 132.069,
+      "end": 134.67,
+      "type": "line",
+      "text": "and sent men to cast stones at them.",
+      "verse": "14:7",
+      "lineIndex": 39
+    },
+    {
+      "start": 135.35,
+      "end": 138.508,
+      "type": "line",
+      "text": "And they brought their wives and children together,",
+      "verse": "14:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 138.688,
+      "end": 142.635,
+      "type": "line",
+      "text": "and whosoever believed or had been taught to believe in the word of God",
+      "verse": "14:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 142.815,
+      "end": 146.437,
+      "type": "line",
+      "text": "they caused that they should be cast into the fire;",
+      "verse": "14:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 146.617,
+      "end": 152.097,
+      "type": "line",
+      "text": "and they also brought forth their records which contained the holy scriptures,",
+      "verse": "14:8",
+      "lineIndex": 44
+    },
+    {
+      "start": 152.277,
+      "end": 154.831,
+      "type": "line",
+      "text": "and cast them into the fire also,",
+      "verse": "14:8",
+      "lineIndex": 45
+    },
+    {
+      "start": 155.011,
+      "end": 158.262,
+      "type": "line",
+      "text": "that they might be burned and destroyed by fire.",
+      "verse": "14:8",
+      "lineIndex": 46
+    },
+    {
+      "start": 158.942,
+      "end": 162.146,
+      "type": "line",
+      "text": "And it came to pass that they took Alma and Amulek,",
+      "verse": "14:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 162.326,
+      "end": 165.066,
+      "type": "line",
+      "text": "and carried them forth to the place of martyrdom,",
+      "verse": "14:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 165.246,
+      "end": 169.658,
+      "type": "line",
+      "text": "that they might witness the destruction of those who were consumed by fire.",
+      "verse": "14:9",
+      "lineIndex": 49
+    },
+    {
+      "start": 170.338,
+      "end": 177.49,
+      "type": "line",
+      "text": "And when Amulek saw the pains of the women and children who were consuming in the fire, he also was pained;",
+      "verse": "14:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 177.67,
+      "end": 179.295,
+      "type": "line",
+      "text": "and he said unto Alma:",
+      "verse": "14:10",
+      "lineIndex": 51
+    },
+    {
+      "start": 179.475,
+      "end": 181.797,
+      "type": "line",
+      "text": "How can we witness this awful scene?",
+      "verse": "14:10",
+      "lineIndex": 52
+    },
+    {
+      "start": 181.977,
+      "end": 184.578,
+      "type": "line",
+      "text": "Therefore let us stretch forth our hands,",
+      "verse": "14:10",
+      "lineIndex": 53
+    },
+    {
+      "start": 184.758,
+      "end": 187.684,
+      "type": "line",
+      "text": "and exercise the power of God which is in us,",
+      "verse": "14:10",
+      "lineIndex": 54
+    },
+    {
+      "start": 187.864,
+      "end": 189.722,
+      "type": "line",
+      "text": "and save them from the flames.",
+      "verse": "14:10",
+      "lineIndex": 55
+    },
+    {
+      "start": 190.402,
+      "end": 191.981,
+      "type": "line",
+      "text": "But Alma said unto him:",
+      "verse": "14:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 192.161,
+      "end": 196.666,
+      "type": "line",
+      "text": "The Spirit constraineth me that I must not stretch forth mine hand;",
+      "verse": "14:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 196.846,
+      "end": 200.747,
+      "type": "line",
+      "text": "for behold the Lord receiveth them up unto himself, in glory;",
+      "verse": "14:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 200.927,
+      "end": 204.178,
+      "type": "line",
+      "text": "and he doth suffer that they may do this thing,",
+      "verse": "14:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 204.358,
+      "end": 209.606,
+      "type": "line",
+      "text": "or that the people may do this thing unto them, according to the hardness of their hearts,",
+      "verse": "14:11",
+      "lineIndex": 60
+    },
+    {
+      "start": 209.786,
+      "end": 212.712,
+      "type": "line",
+      "text": "that the judgments which he shall exercise",
+      "verse": "14:11",
+      "lineIndex": 61
+    },
+    {
+      "start": 212.892,
+      "end": 215.493,
+      "type": "line",
+      "text": "upon them in his wrath may be just;",
+      "verse": "14:11",
+      "lineIndex": 62
+    },
+    {
+      "start": 215.673,
+      "end": 219.806,
+      "type": "line",
+      "text": "and the blood of the innocent shall stand as a witness against them,",
+      "verse": "14:11",
+      "lineIndex": 63
+    },
+    {
+      "start": 219.986,
+      "end": 223.283,
+      "type": "line",
+      "text": "yea, and cry mightily against them at the last day.",
+      "verse": "14:11",
+      "lineIndex": 64
+    },
+    {
+      "start": 223.963,
+      "end": 225.96,
+      "type": "line",
+      "text": "Now Amulek said unto Alma:",
+      "verse": "14:12",
+      "lineIndex": 66
+    },
+    {
+      "start": 226.14,
+      "end": 228.462,
+      "type": "line",
+      "text": "Behold, perhaps they will burn us also.",
+      "verse": "14:12",
+      "lineIndex": 67
+    },
+    {
+      "start": 229.142,
+      "end": 230.582,
+      "type": "line",
+      "text": "And Alma said:",
+      "verse": "14:13",
+      "lineIndex": 68
+    },
+    {
+      "start": 230.762,
+      "end": 233.177,
+      "type": "line",
+      "text": "Be it according to the will of the Lord.",
+      "verse": "14:13",
+      "lineIndex": 69
+    },
+    {
+      "start": 233.357,
+      "end": 235.818,
+      "type": "line",
+      "text": "But, behold, our work is not finished;",
+      "verse": "14:13",
+      "lineIndex": 70
+    },
+    {
+      "start": 235.998,
+      "end": 237.577,
+      "type": "line",
+      "text": "therefore they burn us not.",
+      "verse": "14:13",
+      "lineIndex": 71
+    },
+    {
+      "start": 238.257,
+      "end": 241.554,
+      "type": "line",
+      "text": "Now it came to pass that when the bodies of those",
+      "verse": "14:14",
+      "lineIndex": 72
+    },
+    {
+      "start": 241.734,
+      "end": 244.66,
+      "type": "line",
+      "text": "who had been cast into the fire were consumed,",
+      "verse": "14:14",
+      "lineIndex": 73
+    },
+    {
+      "start": 244.84,
+      "end": 248.184,
+      "type": "line",
+      "text": "and also the records which were cast in with them,",
+      "verse": "14:14",
+      "lineIndex": 74
+    },
+    {
+      "start": 248.364,
+      "end": 250.361,
+      "type": "line",
+      "text": "the chief judge of the land came",
+      "verse": "14:14",
+      "lineIndex": 75
+    },
+    {
+      "start": 250.541,
+      "end": 253.931,
+      "type": "line",
+      "text": "and stood before Alma and Amulek, as they were bound;",
+      "verse": "14:14",
+      "lineIndex": 76
+    },
+    {
+      "start": 254.111,
+      "end": 256.805,
+      "type": "line",
+      "text": "and he smote them with his hand upon their cheeks,",
+      "verse": "14:14",
+      "lineIndex": 77
+    },
+    {
+      "start": 256.985,
+      "end": 258.61,
+      "type": "line",
+      "text": "and said unto them:",
+      "verse": "14:14",
+      "lineIndex": 78
+    },
+    {
+      "start": 258.79,
+      "end": 262.319,
+      "type": "line",
+      "text": "After what ye have seen, will ye preach again unto this people,",
+      "verse": "14:14",
+      "lineIndex": 79
+    },
+    {
+      "start": 262.499,
+      "end": 265.936,
+      "type": "line",
+      "text": "that they shall be cast into a lake of fire and brimstone?",
+      "verse": "14:14",
+      "lineIndex": 80
+    },
+    {
+      "start": 266.616,
+      "end": 271.399,
+      "type": "line",
+      "text": "Behold, ye see that ye had not power to save those who had been cast into the fire;",
+      "verse": "14:15",
+      "lineIndex": 81
+    },
+    {
+      "start": 271.579,
+      "end": 273.437,
+      "type": "line",
+      "text": "neither has God saved them",
+      "verse": "14:15",
+      "lineIndex": 82
+    },
+    {
+      "start": 273.617,
+      "end": 275.939,
+      "type": "line",
+      "text": "because they were of thy faith.",
+      "verse": "14:15",
+      "lineIndex": 83
+    },
+    {
+      "start": 276.119,
+      "end": 279.927,
+      "type": "line",
+      "text": "And the judge smote them again upon their cheeks, and asked:",
+      "verse": "14:15",
+      "lineIndex": 84
+    },
+    {
+      "start": 280.107,
+      "end": 281.732,
+      "type": "line",
+      "text": "What say ye for yourselves?",
+      "verse": "14:15",
+      "lineIndex": 85
+    },
+    {
+      "start": 282.412,
+      "end": 286.87,
+      "type": "line",
+      "text": "Now this judge was after the order and faith of Nehor, who slew Gideon.",
+      "verse": "14:16",
+      "lineIndex": 86
+    },
+    {
+      "start": 287.55,
+      "end": 291.637,
+      "type": "line",
+      "text": "And it came to pass that Alma and Amulek answered him nothing;",
+      "verse": "14:17",
+      "lineIndex": 87
+    },
+    {
+      "start": 291.817,
+      "end": 293.396,
+      "type": "line",
+      "text": "and he smote them again,",
+      "verse": "14:17",
+      "lineIndex": 88
+    },
+    {
+      "start": 293.576,
+      "end": 297.198,
+      "type": "line",
+      "text": "and delivered them to the officers to be cast into prison.",
+      "verse": "14:17",
+      "lineIndex": 89
+    },
+    {
+      "start": 297.878,
+      "end": 305.866,
+      "type": "line",
+      "text": "And when they had been cast into prison three days, there came many lawyers, and judges, and priests, and teachers,",
+      "verse": "14:18",
+      "lineIndex": 91
+    },
+    {
+      "start": 306.046,
+      "end": 308.368,
+      "type": "line",
+      "text": "who were of the profession of Nehor;",
+      "verse": "14:18",
+      "lineIndex": 92
+    },
+    {
+      "start": 308.548,
+      "end": 311.427,
+      "type": "line",
+      "text": "and they came in unto the prison to see them,",
+      "verse": "14:18",
+      "lineIndex": 93
+    },
+    {
+      "start": 311.607,
+      "end": 314.208,
+      "type": "line",
+      "text": "and they questioned them about many words;",
+      "verse": "14:18",
+      "lineIndex": 94
+    },
+    {
+      "start": 314.388,
+      "end": 316.106,
+      "type": "line",
+      "text": "but they answered them nothing.",
+      "verse": "14:18",
+      "lineIndex": 95
+    },
+    {
+      "start": 316.786,
+      "end": 320.733,
+      "type": "line",
+      "text": "And it came to pass that the judge stood before them, and said:",
+      "verse": "14:19",
+      "lineIndex": 96
+    },
+    {
+      "start": 320.913,
+      "end": 323.235,
+      "type": "line",
+      "text": "Why do ye not answer the words of this people?",
+      "verse": "14:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 323.415,
+      "end": 327.084,
+      "type": "line",
+      "text": "Know ye not that I have power to deliver you up unto the flames?",
+      "verse": "14:19",
+      "lineIndex": 98
+    },
+    {
+      "start": 327.264,
+      "end": 329.354,
+      "type": "line",
+      "text": "And he commanded them to speak;",
+      "verse": "14:19",
+      "lineIndex": 99
+    },
+    {
+      "start": 329.534,
+      "end": 331.299,
+      "type": "line",
+      "text": "but they answered nothing.",
+      "verse": "14:19",
+      "lineIndex": 100
+    },
+    {
+      "start": 331.979,
+      "end": 335.276,
+      "type": "line",
+      "text": "And it came to pass that they departed and went their ways,",
+      "verse": "14:20",
+      "lineIndex": 101
+    },
+    {
+      "start": 335.456,
+      "end": 337.36,
+      "type": "line",
+      "text": "but came again on the morrow;",
+      "verse": "14:20",
+      "lineIndex": 102
+    },
+    {
+      "start": 337.54,
+      "end": 340.744,
+      "type": "line",
+      "text": "and the judge also smote them again on their cheeks.",
+      "verse": "14:20",
+      "lineIndex": 103
+    },
+    {
+      "start": 340.924,
+      "end": 344.128,
+      "type": "line",
+      "text": "And many came forth also, and smote them, saying:",
+      "verse": "14:20",
+      "lineIndex": 104
+    },
+    {
+      "start": 344.308,
+      "end": 345.701,
+      "type": "line",
+      "text": "Will ye stand again",
+      "verse": "14:20",
+      "lineIndex": 105
+    },
+    {
+      "start": 345.881,
+      "end": 347.414,
+      "type": "line",
+      "text": "and judge this people,",
+      "verse": "14:20",
+      "lineIndex": 106
+    },
+    {
+      "start": 347.594,
+      "end": 349.173,
+      "type": "line",
+      "text": "and condemn our law?",
+      "verse": "14:20",
+      "lineIndex": 107
+    },
+    {
+      "start": 349.353,
+      "end": 352.697,
+      "type": "line",
+      "text": "If ye have such great power why do ye not deliver yourselves?",
+      "verse": "14:20",
+      "lineIndex": 108
+    },
+    {
+      "start": 353.377,
+      "end": 355.978,
+      "type": "line",
+      "text": "And many such things did they say unto them,",
+      "verse": "14:21",
+      "lineIndex": 109
+    },
+    {
+      "start": 356.158,
+      "end": 358.108,
+      "type": "line",
+      "text": "gnashing their teeth upon them,",
+      "verse": "14:21",
+      "lineIndex": 110
+    },
+    {
+      "start": 358.288,
+      "end": 360.006,
+      "type": "line",
+      "text": "and spitting upon them,",
+      "verse": "14:21",
+      "lineIndex": 111
+    },
+    {
+      "start": 360.186,
+      "end": 361.393,
+      "type": "line",
+      "text": "and saying:",
+      "verse": "14:21",
+      "lineIndex": 112
+    },
+    {
+      "start": 361.573,
+      "end": 363.941,
+      "type": "line",
+      "text": "How shall we look when we are damned?",
+      "verse": "14:21",
+      "lineIndex": 113
+    },
+    {
+      "start": 364.621,
+      "end": 366.2,
+      "type": "line",
+      "text": "And many such things,",
+      "verse": "14:22",
+      "lineIndex": 114
+    },
+    {
+      "start": 366.38,
+      "end": 369.863,
+      "type": "line",
+      "text": "yea, all manner of such things did they say unto them;",
+      "verse": "14:22",
+      "lineIndex": 115
+    },
+    {
+      "start": 370.043,
+      "end": 372.597,
+      "type": "line",
+      "text": "and thus they did mock them for many days.",
+      "verse": "14:22",
+      "lineIndex": 116
+    },
+    {
+      "start": 372.777,
+      "end": 375.285,
+      "type": "line",
+      "text": "And they did withhold food from them",
+      "verse": "14:22",
+      "lineIndex": 117
+    },
+    {
+      "start": 375.465,
+      "end": 377.23,
+      "type": "line",
+      "text": "that they might hunger,",
+      "verse": "14:22",
+      "lineIndex": 118
+    },
+    {
+      "start": 377.41,
+      "end": 379.546,
+      "type": "line",
+      "text": "and water that they might thirst;",
+      "verse": "14:22",
+      "lineIndex": 119
+    },
+    {
+      "start": 379.726,
+      "end": 384.834,
+      "type": "line",
+      "text": "and they also did take from them their clothes that they were naked;",
+      "verse": "14:22",
+      "lineIndex": 120
+    },
+    {
+      "start": 385.014,
+      "end": 389.565,
+      "type": "line",
+      "text": "and thus they were bound with strong cords, and confined in prison.",
+      "verse": "14:22",
+      "lineIndex": 121
+    },
+    {
+      "start": 390.245,
+      "end": 394.564,
+      "type": "line",
+      "text": "And it came to pass after they had thus suffered for many days,",
+      "verse": "14:23",
+      "lineIndex": 122
+    },
+    {
+      "start": 394.744,
+      "end": 402.964,
+      "type": "line",
+      "text": "(and it was on the twelfth day, in the tenth month, in the tenth year of the reign of the judges over the people of Nephi)",
+      "verse": "14:23",
+      "lineIndex": 123
+    },
+    {
+      "start": 403.144,
+      "end": 411.317,
+      "type": "line",
+      "text": "that the chief judge over the land of Ammonihah and many of their teachers and their lawyers went in unto the prison",
+      "verse": "14:23",
+      "lineIndex": 124
+    },
+    {
+      "start": 411.497,
+      "end": 414.562,
+      "type": "line",
+      "text": "where Alma and Amulek were bound with cords.",
+      "verse": "14:23",
+      "lineIndex": 125
+    },
+    {
+      "start": 415.242,
+      "end": 417.843,
+      "type": "line",
+      "text": "And the chief judge stood before them,",
+      "verse": "14:24",
+      "lineIndex": 126
+    },
+    {
+      "start": 418.023,
+      "end": 419.648,
+      "type": "line",
+      "text": "and smote them again,",
+      "verse": "14:24",
+      "lineIndex": 127
+    },
+    {
+      "start": 419.828,
+      "end": 421.453,
+      "type": "line",
+      "text": "and said unto them:",
+      "verse": "14:24",
+      "lineIndex": 128
+    },
+    {
+      "start": 421.633,
+      "end": 425.023,
+      "type": "line",
+      "text": "If ye have the power of God deliver yourselves from these bands,",
+      "verse": "14:24",
+      "lineIndex": 129
+    },
+    {
+      "start": 425.203,
+      "end": 429.754,
+      "type": "line",
+      "text": "and then we will believe that the Lord will destroy this people according to your words.",
+      "verse": "14:24",
+      "lineIndex": 130
+    },
+    {
+      "start": 430.434,
+      "end": 437.121,
+      "type": "line",
+      "text": "And it came to pass that they all went forth and smote them, saying the same words, even until the last;",
+      "verse": "14:25",
+      "lineIndex": 131
+    },
+    {
+      "start": 437.301,
+      "end": 439.809,
+      "type": "line",
+      "text": "and when the last had spoken unto them",
+      "verse": "14:25",
+      "lineIndex": 132
+    },
+    {
+      "start": 439.989,
+      "end": 443.054,
+      "type": "line",
+      "text": "the power of God was upon Alma and Amulek,",
+      "verse": "14:25",
+      "lineIndex": 133
+    },
+    {
+      "start": 443.234,
+      "end": 445.742,
+      "type": "line",
+      "text": "and they rose and stood upon their feet.",
+      "verse": "14:25",
+      "lineIndex": 134
+    },
+    {
+      "start": 446.422,
+      "end": 448.187,
+      "type": "line",
+      "text": "And Alma cried, saying:",
+      "verse": "14:26",
+      "lineIndex": 135
+    },
+    {
+      "start": 448.367,
+      "end": 451.757,
+      "type": "line",
+      "text": "How long shall we suffer these great afflictions, O Lord?",
+      "verse": "14:26",
+      "lineIndex": 136
+    },
+    {
+      "start": 451.937,
+      "end": 452.959,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "14:26",
+      "lineIndex": 137
+    },
+    {
+      "start": 453.139,
+      "end": 458.805,
+      "type": "line",
+      "text": "give us strength according to our faith which is in Christ, even unto deliverance.",
+      "verse": "14:26",
+      "lineIndex": 138
+    },
+    {
+      "start": 458.985,
+      "end": 461.957,
+      "type": "line",
+      "text": "And they broke the cords with which they were bound;",
+      "verse": "14:26",
+      "lineIndex": 139
+    },
+    {
+      "start": 462.137,
+      "end": 465.341,
+      "type": "line",
+      "text": "and when the people saw this, they began to flee,",
+      "verse": "14:26",
+      "lineIndex": 140
+    },
+    {
+      "start": 465.521,
+      "end": 468.865,
+      "type": "line",
+      "text": "for the fear of destruction had come upon them.",
+      "verse": "14:26",
+      "lineIndex": 141
+    },
+    {
+      "start": 469.545,
+      "end": 474.839,
+      "type": "line",
+      "text": "And it came to pass that so great was their fear that they fell to the earth,",
+      "verse": "14:27",
+      "lineIndex": 142
+    },
+    {
+      "start": 475.019,
+      "end": 478.27,
+      "type": "line",
+      "text": "and did not obtain the outer door of the prison;",
+      "verse": "14:27",
+      "lineIndex": 143
+    },
+    {
+      "start": 478.45,
+      "end": 480.586,
+      "type": "line",
+      "text": "and the earth shook mightily,",
+      "verse": "14:27",
+      "lineIndex": 144
+    },
+    {
+      "start": 480.766,
+      "end": 483.877,
+      "type": "line",
+      "text": "and the walls of the prison were rent in twain,",
+      "verse": "14:27",
+      "lineIndex": 145
+    },
+    {
+      "start": 484.057,
+      "end": 486.1,
+      "type": "line",
+      "text": "so that they fell to the earth;",
+      "verse": "14:27",
+      "lineIndex": 146
+    },
+    {
+      "start": 486.28,
+      "end": 496.497,
+      "type": "line",
+      "text": "and the chief judge, and the lawyers, and priests, and teachers, who smote upon Alma and Amulek, were slain by the fall thereof.",
+      "verse": "14:27",
+      "lineIndex": 147
+    },
+    {
+      "start": 497.177,
+      "end": 500.706,
+      "type": "line",
+      "text": "And Alma and Amulek came forth out of the prison,",
+      "verse": "14:28",
+      "lineIndex": 148
+    },
+    {
+      "start": 500.886,
+      "end": 502.326,
+      "type": "line",
+      "text": "and they were not hurt;",
+      "verse": "14:28",
+      "lineIndex": 149
+    },
+    {
+      "start": 502.506,
+      "end": 506.964,
+      "type": "line",
+      "text": "for the Lord had granted unto them power, according to their faith which was in Christ.",
+      "verse": "14:28",
+      "lineIndex": 150
+    },
+    {
+      "start": 507.144,
+      "end": 510.488,
+      "type": "line",
+      "text": "And they straightway came forth out of the prison;",
+      "verse": "14:28",
+      "lineIndex": 151
+    },
+    {
+      "start": 510.668,
+      "end": 512.851,
+      "type": "line",
+      "text": "and they were loosed from their bands;",
+      "verse": "14:28",
+      "lineIndex": 152
+    },
+    {
+      "start": 513.031,
+      "end": 515.26,
+      "type": "line",
+      "text": "and the prison had fallen to the earth,",
+      "verse": "14:28",
+      "lineIndex": 153
+    },
+    {
+      "start": 515.44,
+      "end": 518.134,
+      "type": "line",
+      "text": "and every soul within the walls thereof,",
+      "verse": "14:28",
+      "lineIndex": 154
+    },
+    {
+      "start": 518.314,
+      "end": 521.147,
+      "type": "line",
+      "text": "save it were Alma and Amulek, was slain;",
+      "verse": "14:28",
+      "lineIndex": 155
+    },
+    {
+      "start": 521.327,
+      "end": 523.881,
+      "type": "line",
+      "text": "and they straightway came forth into the city.",
+      "verse": "14:28",
+      "lineIndex": 156
+    },
+    {
+      "start": 524.561,
+      "end": 527.255,
+      "type": "line",
+      "text": "Now the people having heard a great noise",
+      "verse": "14:29",
+      "lineIndex": 157
+    },
+    {
+      "start": 527.435,
+      "end": 531.29,
+      "type": "line",
+      "text": "came running together by multitudes to know the cause of it;",
+      "verse": "14:29",
+      "lineIndex": 158
+    },
+    {
+      "start": 531.47,
+      "end": 535.742,
+      "type": "line",
+      "text": "and when they saw Alma and Amulek coming forth out of the prison,",
+      "verse": "14:29",
+      "lineIndex": 159
+    },
+    {
+      "start": 535.922,
+      "end": 538.801,
+      "type": "line",
+      "text": "and the walls thereof had fallen to the earth,",
+      "verse": "14:29",
+      "lineIndex": 160
+    },
+    {
+      "start": 538.981,
+      "end": 541.024,
+      "type": "line",
+      "text": "they were struck with great fear,",
+      "verse": "14:29",
+      "lineIndex": 161
+    },
+    {
+      "start": 541.204,
+      "end": 544.455,
+      "type": "line",
+      "text": "and fled from the presence of Alma and Amulek",
+      "verse": "14:29",
+      "lineIndex": 162
+    },
+    {
+      "start": 544.635,
+      "end": 547.979,
+      "type": "line",
+      "text": "even as a goat fleeth with her young from two lions;",
+      "verse": "14:29",
+      "lineIndex": 163
+    },
+    {
+      "start": 548.159,
+      "end": 552.153,
+      "type": "line",
+      "text": "and thus they did flee from the presence of Alma and Amulek.",
+      "verse": "14:29",
+      "lineIndex": 164
+    }
+  ]
+}
