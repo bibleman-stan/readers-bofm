@@ -1,0 +1,760 @@
+{
+  "book": "helaman",
+  "bookName": "Helaman",
+  "chapter": 12,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 316.313,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.415,
+      "type": "line",
+      "text": "And thus we can behold how false,",
+      "verse": "12:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.595,
+      "end": 6.728,
+      "type": "line",
+      "text": "and also the unsteadiness of the hearts of the children of men;",
+      "verse": "12:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.908,
+      "end": 10.437,
+      "type": "line",
+      "text": "yea, we can see that the Lord in his great infinite goodness",
+      "verse": "12:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.617,
+      "end": 13.868,
+      "type": "line",
+      "text": "doth bless and prosper those who put their trust in him.",
+      "verse": "12:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 14.548,
+      "end": 19.099,
+      "type": "line",
+      "text": "Yea, and we may see at the very time when he doth prosper his people,",
+      "verse": "12:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.279,
+      "end": 23.598,
+      "type": "line",
+      "text": "yea, in the increase of their fields, their flocks and their herds,",
+      "verse": "12:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.778,
+      "end": 25.636,
+      "type": "line",
+      "text": "and in gold, and in silver,",
+      "verse": "12:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 25.816,
+      "end": 31.575,
+      "type": "line",
+      "text": "and in all manner of precious things of every kind and art; sparing their lives,",
+      "verse": "12:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 31.755,
+      "end": 34.82,
+      "type": "line",
+      "text": "and delivering them out of the hands of their enemies;",
+      "verse": "12:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 35.0,
+      "end": 37.554,
+      "type": "line",
+      "text": "softening the hearts of their enemies",
+      "verse": "12:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 37.734,
+      "end": 41.171,
+      "type": "line",
+      "text": "that they should not declare wars against them;",
+      "verse": "12:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 41.351,
+      "end": 43.719,
+      "type": "line",
+      "text": "yea, and in fine, doing all things",
+      "verse": "12:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 43.899,
+      "end": 46.5,
+      "type": "line",
+      "text": "for the welfare and happiness of his people;",
+      "verse": "12:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 46.68,
+      "end": 49.606,
+      "type": "line",
+      "text": "yea, then is the time that they do harden their hearts,",
+      "verse": "12:2",
+      "lineIndex": 14
+    },
+    {
+      "start": 49.786,
+      "end": 52.062,
+      "type": "line",
+      "text": "and do forget the Lord their God,",
+      "verse": "12:2",
+      "lineIndex": 15
+    },
+    {
+      "start": 52.242,
+      "end": 55.168,
+      "type": "line",
+      "text": "and do trample under their feet the Holy One\u2014",
+      "verse": "12:2",
+      "lineIndex": 16
+    },
+    {
+      "start": 55.348,
+      "end": 59.992,
+      "type": "line",
+      "text": "yea, and this because of their ease, and their exceedingly great prosperity.",
+      "verse": "12:2",
+      "lineIndex": 17
+    },
+    {
+      "start": 60.672,
+      "end": 65.873,
+      "type": "line",
+      "text": "And thus we see that except the Lord doth chasten his people with many afflictions,",
+      "verse": "12:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 66.053,
+      "end": 69.49,
+      "type": "line",
+      "text": "yea, except he doth visit them with death and with terror,",
+      "verse": "12:3",
+      "lineIndex": 19
+    },
+    {
+      "start": 69.67,
+      "end": 73.014,
+      "type": "line",
+      "text": "and with famine and with all manner of pestilence,",
+      "verse": "12:3",
+      "lineIndex": 20
+    },
+    {
+      "start": 73.194,
+      "end": 74.727,
+      "type": "line",
+      "text": "they will not remember him.",
+      "verse": "12:3",
+      "lineIndex": 21
+    },
+    {
+      "start": 75.407,
+      "end": 77.45,
+      "type": "line",
+      "text": "O how foolish, and how vain,",
+      "verse": "12:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 77.63,
+      "end": 80.184,
+      "type": "line",
+      "text": "and how evil, and devilish,",
+      "verse": "12:4",
+      "lineIndex": 23
+    },
+    {
+      "start": 80.364,
+      "end": 84.311,
+      "type": "line",
+      "text": "and how quick to do iniquity, and how slow to do good,",
+      "verse": "12:4",
+      "lineIndex": 24
+    },
+    {
+      "start": 84.491,
+      "end": 86.256,
+      "type": "line",
+      "text": "are the children of men;",
+      "verse": "12:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 86.436,
+      "end": 90.151,
+      "type": "line",
+      "text": "yea, how quick to hearken unto the words of the evil one,",
+      "verse": "12:4",
+      "lineIndex": 26
+    },
+    {
+      "start": 90.331,
+      "end": 93.628,
+      "type": "line",
+      "text": "and to set their hearts upon the vain things of the world!",
+      "verse": "12:4",
+      "lineIndex": 27
+    },
+    {
+      "start": 94.308,
+      "end": 96.862,
+      "type": "line",
+      "text": "Yea, how quick to be lifted up in pride;",
+      "verse": "12:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 97.042,
+      "end": 98.621,
+      "type": "line",
+      "text": "yea, how quick to boast,",
+      "verse": "12:5",
+      "lineIndex": 29
+    },
+    {
+      "start": 98.801,
+      "end": 101.68,
+      "type": "line",
+      "text": "and do all manner of that which is iniquity;",
+      "verse": "12:5",
+      "lineIndex": 30
+    },
+    {
+      "start": 101.86,
+      "end": 104.786,
+      "type": "line",
+      "text": "and how slow are they to remember the Lord their God,",
+      "verse": "12:5",
+      "lineIndex": 31
+    },
+    {
+      "start": 104.966,
+      "end": 107.427,
+      "type": "line",
+      "text": "and to give ear unto his counsels,",
+      "verse": "12:5",
+      "lineIndex": 32
+    },
+    {
+      "start": 107.607,
+      "end": 110.208,
+      "type": "line",
+      "text": "yea, how slow to walk in wisdom's paths!",
+      "verse": "12:5",
+      "lineIndex": 33
+    },
+    {
+      "start": 110.888,
+      "end": 113.907,
+      "type": "line",
+      "text": "Behold, they do not desire that the Lord their God,",
+      "verse": "12:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 114.087,
+      "end": 117.477,
+      "type": "line",
+      "text": "who hath created them, should rule and reign over them;",
+      "verse": "12:6",
+      "lineIndex": 35
+    },
+    {
+      "start": 117.657,
+      "end": 121.512,
+      "type": "line",
+      "text": "notwithstanding his great goodness and his mercy towards them,",
+      "verse": "12:6",
+      "lineIndex": 36
+    },
+    {
+      "start": 121.692,
+      "end": 124.153,
+      "type": "line",
+      "text": "they do set at naught his counsels,",
+      "verse": "12:6",
+      "lineIndex": 37
+    },
+    {
+      "start": 124.333,
+      "end": 126.701,
+      "type": "line",
+      "text": "and they will not that he should be their guide.",
+      "verse": "12:6",
+      "lineIndex": 38
+    },
+    {
+      "start": 127.381,
+      "end": 131.05,
+      "type": "line",
+      "text": "O how great is the nothingness of the children of men;",
+      "verse": "12:7",
+      "lineIndex": 39
+    },
+    {
+      "start": 131.23,
+      "end": 134.62,
+      "type": "line",
+      "text": "yea, even they are less than the dust of the earth.",
+      "verse": "12:7",
+      "lineIndex": 40
+    },
+    {
+      "start": 135.3,
+      "end": 138.922,
+      "type": "line",
+      "text": "For behold, the dust of the earth moveth hither and thither,",
+      "verse": "12:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 139.102,
+      "end": 143.792,
+      "type": "line",
+      "text": "to the dividing asunder, at the command of our great and everlasting God.",
+      "verse": "12:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 144.472,
+      "end": 149.116,
+      "type": "line",
+      "text": "Yea, behold at his voice do the hills and the mountains tremble and quake.",
+      "verse": "12:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 149.796,
+      "end": 152.582,
+      "type": "line",
+      "text": "And by the power of his voice they are broken up,",
+      "verse": "12:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 152.762,
+      "end": 154.295,
+      "type": "line",
+      "text": "and become smooth,",
+      "verse": "12:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 154.475,
+      "end": 156.333,
+      "type": "line",
+      "text": "yea, even like unto a valley.",
+      "verse": "12:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 157.013,
+      "end": 160.403,
+      "type": "line",
+      "text": "Yea, by the power of his voice doth the whole earth shake;",
+      "verse": "12:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 161.083,
+      "end": 165.773,
+      "type": "line",
+      "text": "Yea, by the power of his voice, do the foundations rock, even to the very center.",
+      "verse": "12:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 166.453,
+      "end": 170.029,
+      "type": "line",
+      "text": "Yea, and if he say unto the earth\u2014Move\u2014 it is moved.",
+      "verse": "12:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 170.709,
+      "end": 172.752,
+      "type": "line",
+      "text": "Yea, if he say unto the earth\u2014",
+      "verse": "12:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 172.932,
+      "end": 174.511,
+      "type": "line",
+      "text": "Thou shalt go back,",
+      "verse": "12:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 174.691,
+      "end": 178.778,
+      "type": "line",
+      "text": "that it lengthen out the day for many hours\u2014 it is done;",
+      "verse": "12:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 179.458,
+      "end": 182.755,
+      "type": "line",
+      "text": "And thus, according to his word the earth goeth back,",
+      "verse": "12:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 182.935,
+      "end": 186.232,
+      "type": "line",
+      "text": "and it appeareth unto man that the sun standeth still;",
+      "verse": "12:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 186.412,
+      "end": 188.595,
+      "type": "line",
+      "text": "yea, and behold, this is so;",
+      "verse": "12:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 188.775,
+      "end": 192.165,
+      "type": "line",
+      "text": "for surely it is the earth that moveth and not the sun.",
+      "verse": "12:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 192.845,
+      "end": 196.282,
+      "type": "line",
+      "text": "And behold, also, if he say unto the waters of the great deep\u2014",
+      "verse": "12:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 196.462,
+      "end": 198.366,
+      "type": "line",
+      "text": "Be thou dried up\u2014 it is done.",
+      "verse": "12:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 199.046,
+      "end": 201.368,
+      "type": "line",
+      "text": "Behold, if he say unto this mountain\u2014",
+      "verse": "12:17",
+      "lineIndex": 60
+    },
+    {
+      "start": 201.548,
+      "end": 204.056,
+      "type": "line",
+      "text": "Be thou raised up, and come over and fall",
+      "verse": "12:17",
+      "lineIndex": 61
+    },
+    {
+      "start": 204.236,
+      "end": 208.23,
+      "type": "line",
+      "text": "upon that city, that it be buried up\u2014 behold it is done.",
+      "verse": "12:17",
+      "lineIndex": 62
+    },
+    {
+      "start": 208.91,
+      "end": 211.325,
+      "type": "line",
+      "text": "And behold, if a man hide up a treasure",
+      "verse": "12:18",
+      "lineIndex": 63
+    },
+    {
+      "start": 211.505,
+      "end": 213.873,
+      "type": "line",
+      "text": "in the earth, and the Lord shall say\u2014",
+      "verse": "12:18",
+      "lineIndex": 64
+    },
+    {
+      "start": 214.053,
+      "end": 218.651,
+      "type": "line",
+      "text": "Let it be accursed, because of the iniquity of him who hath hid it up\u2014",
+      "verse": "12:18",
+      "lineIndex": 65
+    },
+    {
+      "start": 218.831,
+      "end": 220.735,
+      "type": "line",
+      "text": "behold, it shall be accursed.",
+      "verse": "12:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 221.415,
+      "end": 223.04,
+      "type": "line",
+      "text": "And if the Lord shall say\u2014",
+      "verse": "12:19",
+      "lineIndex": 67
+    },
+    {
+      "start": 223.22,
+      "end": 224.706,
+      "type": "line",
+      "text": "Be thou accursed,",
+      "verse": "12:19",
+      "lineIndex": 68
+    },
+    {
+      "start": 224.886,
+      "end": 228.833,
+      "type": "line",
+      "text": "that no man shall find thee from this time henceforth and forever\u2014",
+      "verse": "12:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 229.013,
+      "end": 232.31,
+      "type": "line",
+      "text": "behold, no man getteth it henceforth and forever.",
+      "verse": "12:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 232.99,
+      "end": 241.21,
+      "type": "line",
+      "text": "And behold, if the Lord shall say unto a man\u2014 Because of thine iniquities, thou shalt be accursed forever\u2014 it shall be done.",
+      "verse": "12:20",
+      "lineIndex": 71
+    },
+    {
+      "start": 241.89,
+      "end": 248.484,
+      "type": "line",
+      "text": "And if the Lord shall say\u2014 Because of thine iniquities thou shalt be cut off from my presence\u2014",
+      "verse": "12:21",
+      "lineIndex": 72
+    },
+    {
+      "start": 248.664,
+      "end": 250.754,
+      "type": "line",
+      "text": "he will cause that it shall be so.",
+      "verse": "12:21",
+      "lineIndex": 73
+    },
+    {
+      "start": 251.434,
+      "end": 254.22,
+      "type": "line",
+      "text": "And wo unto him to whom he shall say this,",
+      "verse": "12:22",
+      "lineIndex": 74
+    },
+    {
+      "start": 254.4,
+      "end": 257.372,
+      "type": "line",
+      "text": "for it shall be unto him that will do iniquity,",
+      "verse": "12:22",
+      "lineIndex": 75
+    },
+    {
+      "start": 257.552,
+      "end": 259.224,
+      "type": "line",
+      "text": "and he cannot be saved;",
+      "verse": "12:22",
+      "lineIndex": 76
+    },
+    {
+      "start": 259.404,
+      "end": 262.376,
+      "type": "line",
+      "text": "therefore, for this cause, that men might be saved,",
+      "verse": "12:22",
+      "lineIndex": 77
+    },
+    {
+      "start": 262.556,
+      "end": 264.646,
+      "type": "line",
+      "text": "hath repentance been declared.",
+      "verse": "12:22",
+      "lineIndex": 78
+    },
+    {
+      "start": 265.326,
+      "end": 268.345,
+      "type": "line",
+      "text": "Therefore, blessed are they who will repent",
+      "verse": "12:23",
+      "lineIndex": 79
+    },
+    {
+      "start": 268.525,
+      "end": 271.683,
+      "type": "line",
+      "text": "and hearken unto the voice of the Lord their God;",
+      "verse": "12:23",
+      "lineIndex": 80
+    },
+    {
+      "start": 271.863,
+      "end": 274.278,
+      "type": "line",
+      "text": "for these are they that shall be saved.",
+      "verse": "12:23",
+      "lineIndex": 81
+    },
+    {
+      "start": 274.958,
+      "end": 281.645,
+      "type": "line",
+      "text": "And may God grant, in his great fulness, that men might be brought unto repentance and good works,",
+      "verse": "12:24",
+      "lineIndex": 82
+    },
+    {
+      "start": 281.825,
+      "end": 287.305,
+      "type": "line",
+      "text": "that they might be restored unto grace for grace, according to their works.",
+      "verse": "12:24",
+      "lineIndex": 83
+    },
+    {
+      "start": 287.985,
+      "end": 290.168,
+      "type": "line",
+      "text": "And I would that all men might be saved.",
+      "verse": "12:25",
+      "lineIndex": 84
+    },
+    {
+      "start": 290.348,
+      "end": 292.763,
+      "type": "line",
+      "text": "But we read that in the great and last day",
+      "verse": "12:25",
+      "lineIndex": 85
+    },
+    {
+      "start": 292.943,
+      "end": 295.451,
+      "type": "line",
+      "text": "there are some who shall be cast out,",
+      "verse": "12:25",
+      "lineIndex": 86
+    },
+    {
+      "start": 295.631,
+      "end": 298.789,
+      "type": "line",
+      "text": "yea, who shall be cast off from the presence of the Lord;",
+      "verse": "12:25",
+      "lineIndex": 87
+    },
+    {
+      "start": 299.469,
+      "end": 302.906,
+      "type": "line",
+      "text": "Yea, who shall be consigned to a state of endless misery,",
+      "verse": "12:26",
+      "lineIndex": 88
+    },
+    {
+      "start": 303.086,
+      "end": 305.129,
+      "type": "line",
+      "text": "fulfilling the words which say:",
+      "verse": "12:26",
+      "lineIndex": 89
+    },
+    {
+      "start": 305.309,
+      "end": 308.792,
+      "type": "line",
+      "text": "They that have done good shall have everlasting life;",
+      "verse": "12:26",
+      "lineIndex": 90
+    },
+    {
+      "start": 308.972,
+      "end": 313.012,
+      "type": "line",
+      "text": "and they that have done evil shall have everlasting damnation.",
+      "verse": "12:26",
+      "lineIndex": 91
+    },
+    {
+      "start": 313.192,
+      "end": 314.632,
+      "type": "line",
+      "text": "And thus it is.",
+      "verse": "12:26",
+      "lineIndex": 92
+    },
+    {
+      "start": 314.812,
+      "end": 315.648,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "12:26",
+      "lineIndex": 93
+    }
+  ]
+}
