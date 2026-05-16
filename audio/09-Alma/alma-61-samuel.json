@@ -1,0 +1,712 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 61,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 310.923,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.666,
+      "type": "line",
+      "text": "Behold, now it came to pass that soon after Moroni had sent his epistle unto the chief governor,",
+      "verse": "61:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.846,
+      "end": 9.468,
+      "type": "line",
+      "text": "he received an epistle from Pahoran, the chief governor.",
+      "verse": "61:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.648,
+      "end": 12.156,
+      "type": "line",
+      "text": "And these are the words which he received:",
+      "verse": "61:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 12.836,
+      "end": 20.313,
+      "type": "line",
+      "text": "I, Pahoran, who am the chief governor of this land, do send these words unto Moroni, the chief captain over the army.",
+      "verse": "61:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 20.493,
+      "end": 22.583,
+      "type": "line",
+      "text": "Behold, I say unto you, Moroni,",
+      "verse": "61:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.763,
+      "end": 25.642,
+      "type": "line",
+      "text": "that I do not joy in your great afflictions,",
+      "verse": "61:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.822,
+      "end": 27.587,
+      "type": "line",
+      "text": "yea, it grieves my soul.",
+      "verse": "61:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 28.267,
+      "end": 32.214,
+      "type": "line",
+      "text": "But behold, there are those who do joy in your afflictions, yea,",
+      "verse": "61:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 32.394,
+      "end": 36.295,
+      "type": "line",
+      "text": "insomuch that they have risen up in rebellion against me,",
+      "verse": "61:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 36.475,
+      "end": 39.494,
+      "type": "line",
+      "text": "and also those of my people who are freemen,",
+      "verse": "61:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 39.674,
+      "end": 42.971,
+      "type": "line",
+      "text": "yea, and those who have risen up are exceedingly numerous.",
+      "verse": "61:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 43.651,
+      "end": 47.413,
+      "type": "line",
+      "text": "And it is those who have sought to take away the judgment-seat from me",
+      "verse": "61:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 47.593,
+      "end": 51.494,
+      "type": "line",
+      "text": "that have been the cause of this great iniquity;",
+      "verse": "61:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 51.674,
+      "end": 53.717,
+      "type": "line",
+      "text": "for they have used great flattery,",
+      "verse": "61:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 53.897,
+      "end": 57.194,
+      "type": "line",
+      "text": "and they have led away the hearts of many people,",
+      "verse": "61:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 57.374,
+      "end": 60.671,
+      "type": "line",
+      "text": "which will be the cause of sore affliction among us;",
+      "verse": "61:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 60.851,
+      "end": 62.894,
+      "type": "line",
+      "text": "they have withheld our provisions,",
+      "verse": "61:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 63.074,
+      "end": 65.117,
+      "type": "line",
+      "text": "and have daunted our freemen",
+      "verse": "61:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 65.297,
+      "end": 67.155,
+      "type": "line",
+      "text": "that they have not come unto you.",
+      "verse": "61:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 67.835,
+      "end": 70.993,
+      "type": "line",
+      "text": "And behold, they have driven me out before them,",
+      "verse": "61:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 71.173,
+      "end": 73.727,
+      "type": "line",
+      "text": "and I have fled to the land of Gideon,",
+      "verse": "61:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 73.907,
+      "end": 77.297,
+      "type": "line",
+      "text": "with as many men as it were possible that I could get.",
+      "verse": "61:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 77.977,
+      "end": 82.389,
+      "type": "line",
+      "text": "And behold, I have sent a proclamation throughout this part of the land;",
+      "verse": "61:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 82.569,
+      "end": 88.606,
+      "type": "line",
+      "text": "and behold, they are flocking to us daily, to their arms, in the defence of their country and their freedom",
+      "verse": "61:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 88.786,
+      "end": 90.458,
+      "type": "line",
+      "text": "and to avenge our wrongs.",
+      "verse": "61:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 91.138,
+      "end": 92.81,
+      "type": "line",
+      "text": "And they have come unto us,",
+      "verse": "61:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 92.99,
+      "end": 101.674,
+      "type": "line",
+      "text": "insomuch that those who have risen up in rebellion against us are set at defiance, yea, insomuch that they do fear us",
+      "verse": "61:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 101.854,
+      "end": 104.594,
+      "type": "line",
+      "text": "and durst not come out against us to battle.",
+      "verse": "61:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 105.274,
+      "end": 110.15,
+      "type": "line",
+      "text": "They have got possession of the land, or the city, of Zarahemla;",
+      "verse": "61:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 110.33,
+      "end": 112.931,
+      "type": "line",
+      "text": "they have appointed a king over them,",
+      "verse": "61:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 113.111,
+      "end": 116.455,
+      "type": "line",
+      "text": "and he hath written unto the king of the Lamanites,",
+      "verse": "61:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 116.635,
+      "end": 120.164,
+      "type": "line",
+      "text": "in the which he hath joined an alliance with him;",
+      "verse": "61:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 120.344,
+      "end": 125.174,
+      "type": "line",
+      "text": "in the which alliance he hath agreed to maintain the city of Zarahemla,",
+      "verse": "61:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 125.354,
+      "end": 128.14,
+      "type": "line",
+      "text": "which maintenance he supposeth will enable",
+      "verse": "61:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 128.32,
+      "end": 131.571,
+      "type": "line",
+      "text": "the Lamanites to conquer the remainder of the land,",
+      "verse": "61:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 131.751,
+      "end": 134.491,
+      "type": "line",
+      "text": "and he shall be placed king over this people",
+      "verse": "61:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 134.671,
+      "end": 137.968,
+      "type": "line",
+      "text": "when they shall be conquered under the Lamanites.",
+      "verse": "61:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 138.648,
+      "end": 141.434,
+      "type": "line",
+      "text": "And now, in your epistle you have censured me,",
+      "verse": "61:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 141.614,
+      "end": 143.286,
+      "type": "line",
+      "text": "but it mattereth not;",
+      "verse": "61:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 143.466,
+      "end": 146.995,
+      "type": "line",
+      "text": "I am not angry, but do rejoice in the greatness of your heart.",
+      "verse": "61:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 147.175,
+      "end": 149.404,
+      "type": "line",
+      "text": "I, Pahoran, do not seek for power,",
+      "verse": "61:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 149.584,
+      "end": 152.231,
+      "type": "line",
+      "text": "save only to retain my judgment-seat",
+      "verse": "61:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 152.411,
+      "end": 156.173,
+      "type": "line",
+      "text": "that I may preserve the rights and the liberty of my people.",
+      "verse": "61:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 156.353,
+      "end": 161.09,
+      "type": "line",
+      "text": "My soul standeth fast in that liberty in the which God hath made us free.",
+      "verse": "61:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 161.77,
+      "end": 165.532,
+      "type": "line",
+      "text": "And now, behold, we will resist wickedness even unto bloodshed.",
+      "verse": "61:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 165.712,
+      "end": 168.916,
+      "type": "line",
+      "text": "We would not shed the blood of the Lamanites",
+      "verse": "61:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 169.096,
+      "end": 171.697,
+      "type": "line",
+      "text": "if they would stay in their own land.",
+      "verse": "61:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 172.377,
+      "end": 175.071,
+      "type": "line",
+      "text": "We would not shed the blood of our brethren",
+      "verse": "61:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 175.251,
+      "end": 179.152,
+      "type": "line",
+      "text": "if they would not rise up in rebellion and take the sword against us.",
+      "verse": "61:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 179.832,
+      "end": 183.269,
+      "type": "line",
+      "text": "We would subject ourselves to the yoke of bondage",
+      "verse": "61:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 183.449,
+      "end": 186.189,
+      "type": "line",
+      "text": "if it were requisite with the justice of God,",
+      "verse": "61:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 186.369,
+      "end": 189.016,
+      "type": "line",
+      "text": "or if he should command us so to do.",
+      "verse": "61:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 189.696,
+      "end": 191.972,
+      "type": "line",
+      "text": "But behold he doth not command us",
+      "verse": "61:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 192.152,
+      "end": 195.31,
+      "type": "line",
+      "text": "that we shall subject ourselves to our enemies,",
+      "verse": "61:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 195.49,
+      "end": 198.323,
+      "type": "line",
+      "text": "but that we should put our trust in him,",
+      "verse": "61:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 198.503,
+      "end": 200.175,
+      "type": "line",
+      "text": "and he will deliver us.",
+      "verse": "61:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 200.855,
+      "end": 204.431,
+      "type": "line",
+      "text": "Therefore, my beloved brother, Moroni, let us resist evil,",
+      "verse": "61:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 204.611,
+      "end": 207.769,
+      "type": "line",
+      "text": "and whatsoever evil we cannot resist with our words,",
+      "verse": "61:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 207.949,
+      "end": 210.596,
+      "type": "line",
+      "text": "yea, such as rebellions and dissensions,",
+      "verse": "61:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 210.776,
+      "end": 213.191,
+      "type": "line",
+      "text": "let us resist them with our swords,",
+      "verse": "61:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 213.371,
+      "end": 215.554,
+      "type": "line",
+      "text": "that we may retain our freedom,",
+      "verse": "61:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 215.734,
+      "end": 219.078,
+      "type": "line",
+      "text": "that we may rejoice in the great privilege of our church,",
+      "verse": "61:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 219.258,
+      "end": 221.766,
+      "type": "line",
+      "text": "and in the cause of our Redeemer and our God.",
+      "verse": "61:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 222.446,
+      "end": 226.022,
+      "type": "line",
+      "text": "Therefore, come unto me speedily with a few of your men,",
+      "verse": "61:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 226.202,
+      "end": 229.406,
+      "type": "line",
+      "text": "and leave the remainder in the charge of Lehi and Teancum;",
+      "verse": "61:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 229.586,
+      "end": 235.066,
+      "type": "line",
+      "text": "give unto them power to conduct the war in that part of the land, according to the Spirit of God,",
+      "verse": "61:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 235.246,
+      "end": 239.008,
+      "type": "line",
+      "text": "which is also the spirit of freedom which is in them.",
+      "verse": "61:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 239.688,
+      "end": 242.521,
+      "type": "line",
+      "text": "Behold I have sent a few provisions unto them,",
+      "verse": "61:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 242.701,
+      "end": 245.766,
+      "type": "line",
+      "text": "that they may not perish until ye can come unto me.",
+      "verse": "61:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 246.446,
+      "end": 250.44,
+      "type": "line",
+      "text": "Gather together whatsoever force ye can upon your march hither,",
+      "verse": "61:17",
+      "lineIndex": 71
+    },
+    {
+      "start": 250.62,
+      "end": 254.01,
+      "type": "line",
+      "text": "and we will go speedily against those dissenters,",
+      "verse": "61:17",
+      "lineIndex": 72
+    },
+    {
+      "start": 254.19,
+      "end": 257.905,
+      "type": "line",
+      "text": "in the strength of our God according to the faith which is in us.",
+      "verse": "61:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 258.585,
+      "end": 262.347,
+      "type": "line",
+      "text": "And we will take possession of the city of Zarahemla,",
+      "verse": "61:18",
+      "lineIndex": 74
+    },
+    {
+      "start": 262.527,
+      "end": 267.264,
+      "type": "line",
+      "text": "that we may obtain more food to send forth unto Lehi and Teancum;",
+      "verse": "61:18",
+      "lineIndex": 75
+    },
+    {
+      "start": 267.444,
+      "end": 271.624,
+      "type": "line",
+      "text": "yea, we will go forth against them in the strength of the Lord,",
+      "verse": "61:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 271.804,
+      "end": 274.823,
+      "type": "line",
+      "text": "and we will put an end to this great iniquity.",
+      "verse": "61:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 275.503,
+      "end": 278.568,
+      "type": "line",
+      "text": "And now, Moroni, I do joy in receiving your epistle,",
+      "verse": "61:19",
+      "lineIndex": 78
+    },
+    {
+      "start": 278.748,
+      "end": 282.185,
+      "type": "line",
+      "text": "for I was somewhat worried concerning what we should do,",
+      "verse": "61:19",
+      "lineIndex": 79
+    },
+    {
+      "start": 282.365,
+      "end": 285.802,
+      "type": "line",
+      "text": "whether it should be just in us to go against our brethren.",
+      "verse": "61:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 286.482,
+      "end": 292.844,
+      "type": "line",
+      "text": "But ye have said, except they repent the Lord hath commanded you that ye should go against them.",
+      "verse": "61:20",
+      "lineIndex": 81
+    },
+    {
+      "start": 293.524,
+      "end": 296.728,
+      "type": "line",
+      "text": "See that ye strengthen Lehi and Teancum in the Lord;",
+      "verse": "61:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 296.908,
+      "end": 298.626,
+      "type": "line",
+      "text": "tell them to fear not,",
+      "verse": "61:21",
+      "lineIndex": 83
+    },
+    {
+      "start": 298.806,
+      "end": 300.571,
+      "type": "line",
+      "text": "for God will deliver them,",
+      "verse": "61:21",
+      "lineIndex": 84
+    },
+    {
+      "start": 300.751,
+      "end": 304.188,
+      "type": "line",
+      "text": "yea, and also all those who stand fast in that liberty",
+      "verse": "61:21",
+      "lineIndex": 85
+    },
+    {
+      "start": 304.368,
+      "end": 306.644,
+      "type": "line",
+      "text": "wherewith God hath made them free.",
+      "verse": "61:21",
+      "lineIndex": 86
+    },
+    {
+      "start": 306.824,
+      "end": 310.261,
+      "type": "line",
+      "text": "And now I close mine epistle to my beloved brother, Moroni.",
+      "verse": "61:21",
+      "lineIndex": 87
+    }
+  ]
+}
