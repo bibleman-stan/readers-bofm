@@ -1,0 +1,640 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 23,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 282.495,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.873,
+      "type": "line",
+      "text": "Behold, now it came to pass that the king of the Lamanites sent a proclamation among all his people,",
+      "verse": "23:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.053,
+      "end": 12.533,
+      "type": "line",
+      "text": "that they should not lay their hands on Ammon or Aaron, or Omner, or Himni,",
+      "verse": "23:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 12.713,
+      "end": 17.032,
+      "type": "line",
+      "text": "nor either of their brethren who should go forth preaching the word of God,",
+      "verse": "23:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 17.212,
+      "end": 20.602,
+      "type": "line",
+      "text": "in whatsoever place they should be, in any part of their land.",
+      "verse": "23:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 21.282,
+      "end": 23.465,
+      "type": "line",
+      "text": "Yea, he sent a decree among them,",
+      "verse": "23:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 23.645,
+      "end": 29.868,
+      "type": "line",
+      "text": "that they should not lay their hands on them to bind them, or to cast them into prison;",
+      "verse": "23:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 30.048,
+      "end": 32.184,
+      "type": "line",
+      "text": "neither should they spit upon them,",
+      "verse": "23:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 32.364,
+      "end": 33.711,
+      "type": "line",
+      "text": "nor smite them,",
+      "verse": "23:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.891,
+      "end": 36.445,
+      "type": "line",
+      "text": "nor cast them out of their synagogues,",
+      "verse": "23:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 36.625,
+      "end": 38.158,
+      "type": "line",
+      "text": "nor scourge them;",
+      "verse": "23:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 38.338,
+      "end": 40.614,
+      "type": "line",
+      "text": "neither should they cast stones at them,",
+      "verse": "23:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 40.794,
+      "end": 46.785,
+      "type": "line",
+      "text": "but that they should have free access to their houses, and also their temples, and their sanctuaries.",
+      "verse": "23:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 47.465,
+      "end": 51.645,
+      "type": "line",
+      "text": "And thus they might go forth and preach the word according to their desires,",
+      "verse": "23:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 51.825,
+      "end": 55.958,
+      "type": "line",
+      "text": "for the king had been converted unto the Lord, and all his household;",
+      "verse": "23:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 56.138,
+      "end": 60.271,
+      "type": "line",
+      "text": "therefore he sent his proclamation throughout the land unto his people,",
+      "verse": "23:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 60.451,
+      "end": 63.191,
+      "type": "line",
+      "text": "that the word of God might have no obstruction,",
+      "verse": "23:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 63.371,
+      "end": 66.761,
+      "type": "line",
+      "text": "but that it might go forth throughout all the land,",
+      "verse": "23:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 66.941,
+      "end": 68.984,
+      "type": "line",
+      "text": "that his people might be convinced",
+      "verse": "23:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 69.164,
+      "end": 72.508,
+      "type": "line",
+      "text": "concerning the wicked traditions of their fathers,",
+      "verse": "23:3",
+      "lineIndex": 19
+    },
+    {
+      "start": 72.688,
+      "end": 76.171,
+      "type": "line",
+      "text": "and that they might be convinced that they were all brethren,",
+      "verse": "23:3",
+      "lineIndex": 20
+    },
+    {
+      "start": 76.351,
+      "end": 79.184,
+      "type": "line",
+      "text": "and that they ought not to murder,",
+      "verse": "23:3",
+      "lineIndex": 21
+    },
+    {
+      "start": 79.364,
+      "end": 80.711,
+      "type": "line",
+      "text": "nor to plunder,",
+      "verse": "23:3",
+      "lineIndex": 22
+    },
+    {
+      "start": 80.891,
+      "end": 82.145,
+      "type": "line",
+      "text": "nor to steal,",
+      "verse": "23:3",
+      "lineIndex": 23
+    },
+    {
+      "start": 82.325,
+      "end": 84.136,
+      "type": "line",
+      "text": "nor to commit adultery,",
+      "verse": "23:3",
+      "lineIndex": 24
+    },
+    {
+      "start": 84.316,
+      "end": 86.545,
+      "type": "line",
+      "text": "nor to commit any manner of wickedness.",
+      "verse": "23:3",
+      "lineIndex": 25
+    },
+    {
+      "start": 87.225,
+      "end": 91.405,
+      "type": "line",
+      "text": "And now it came to pass that when the king had sent forth this proclamation,",
+      "verse": "23:4",
+      "lineIndex": 26
+    },
+    {
+      "start": 91.585,
+      "end": 95.161,
+      "type": "line",
+      "text": "Aaron and his brethren went forth from city to city,",
+      "verse": "23:4",
+      "lineIndex": 27
+    },
+    {
+      "start": 95.341,
+      "end": 99.66,
+      "type": "line",
+      "text": "and from one house of worship to another, establishing churches,",
+      "verse": "23:4",
+      "lineIndex": 28
+    },
+    {
+      "start": 99.84,
+      "end": 104.716,
+      "type": "line",
+      "text": "and consecrating priests and teachers throughout the land among the Lamanites,",
+      "verse": "23:4",
+      "lineIndex": 29
+    },
+    {
+      "start": 104.896,
+      "end": 108.147,
+      "type": "line",
+      "text": "to preach and to teach the word of God among them;",
+      "verse": "23:4",
+      "lineIndex": 30
+    },
+    {
+      "start": 108.327,
+      "end": 110.324,
+      "type": "line",
+      "text": "and thus they began to have great success.",
+      "verse": "23:4",
+      "lineIndex": 31
+    },
+    {
+      "start": 111.004,
+      "end": 114.162,
+      "type": "line",
+      "text": "And thousands were brought to the knowledge of the Lord,",
+      "verse": "23:5",
+      "lineIndex": 32
+    },
+    {
+      "start": 114.342,
+      "end": 118.614,
+      "type": "line",
+      "text": "yea, thousands were brought to believe in the traditions of the Nephites;",
+      "verse": "23:5",
+      "lineIndex": 33
+    },
+    {
+      "start": 118.794,
+      "end": 122.277,
+      "type": "line",
+      "text": "and they were taught the records and prophecies",
+      "verse": "23:5",
+      "lineIndex": 34
+    },
+    {
+      "start": 122.457,
+      "end": 125.429,
+      "type": "line",
+      "text": "which were handed down even to the present time.",
+      "verse": "23:5",
+      "lineIndex": 35
+    },
+    {
+      "start": 126.109,
+      "end": 129.871,
+      "type": "line",
+      "text": "And as sure as the Lord liveth, so sure as many as believed,",
+      "verse": "23:6",
+      "lineIndex": 36
+    },
+    {
+      "start": 130.051,
+      "end": 139.85,
+      "type": "line",
+      "text": "or as many as were brought to the knowledge of the truth, through the preaching of Ammon and his brethren, according to the spirit of revelation and of prophecy,",
+      "verse": "23:6",
+      "lineIndex": 37
+    },
+    {
+      "start": 140.03,
+      "end": 142.677,
+      "type": "line",
+      "text": "and the power of God working miracles in them\u2014",
+      "verse": "23:6",
+      "lineIndex": 38
+    },
+    {
+      "start": 142.857,
+      "end": 145.225,
+      "type": "line",
+      "text": "yea, I say unto you, as the Lord liveth,",
+      "verse": "23:6",
+      "lineIndex": 39
+    },
+    {
+      "start": 145.405,
+      "end": 149.027,
+      "type": "line",
+      "text": "as many of the Lamanites as believed in their preaching,",
+      "verse": "23:6",
+      "lineIndex": 40
+    },
+    {
+      "start": 149.207,
+      "end": 152.551,
+      "type": "line",
+      "text": "and were converted unto the Lord, never did fall away.",
+      "verse": "23:6",
+      "lineIndex": 41
+    },
+    {
+      "start": 153.231,
+      "end": 155.46,
+      "type": "line",
+      "text": "For they became a righteous people;",
+      "verse": "23:7",
+      "lineIndex": 43
+    },
+    {
+      "start": 155.64,
+      "end": 158.937,
+      "type": "line",
+      "text": "they did lay down the weapons of their rebellion,",
+      "verse": "23:7",
+      "lineIndex": 44
+    },
+    {
+      "start": 159.117,
+      "end": 161.625,
+      "type": "line",
+      "text": "that they did not fight against God any more,",
+      "verse": "23:7",
+      "lineIndex": 45
+    },
+    {
+      "start": 161.805,
+      "end": 163.895,
+      "type": "line",
+      "text": "neither against any of their brethren.",
+      "verse": "23:7",
+      "lineIndex": 46
+    },
+    {
+      "start": 164.575,
+      "end": 167.547,
+      "type": "line",
+      "text": "Now, these are they who were converted unto the Lord:",
+      "verse": "23:8",
+      "lineIndex": 47
+    },
+    {
+      "start": 168.227,
+      "end": 171.385,
+      "type": "line",
+      "text": "The people of the Lamanites who were in the land of Ishmael;",
+      "verse": "23:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 172.065,
+      "end": 176.755,
+      "type": "line",
+      "text": "And also of the people of the Lamanites who were in the land of Middoni;",
+      "verse": "23:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 177.435,
+      "end": 181.94,
+      "type": "line",
+      "text": "And also of the people of the Lamanites who were in the city of Nephi;",
+      "verse": "23:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 182.62,
+      "end": 187.357,
+      "type": "line",
+      "text": "And also of the people of the Lamanites who were in the land of Shilom,",
+      "verse": "23:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 187.537,
+      "end": 190.091,
+      "type": "line",
+      "text": "and who were in the land of Shemlon,",
+      "verse": "23:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 190.271,
+      "end": 194.172,
+      "type": "line",
+      "text": "and in the city of Lemuel, and in the city of Shimnilom.",
+      "verse": "23:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 194.852,
+      "end": 198.567,
+      "type": "line",
+      "text": "And these are the names of the cities of the Lamanites",
+      "verse": "23:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 198.747,
+      "end": 201.208,
+      "type": "line",
+      "text": "which were converted unto the Lord;",
+      "verse": "23:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 201.388,
+      "end": 205.475,
+      "type": "line",
+      "text": "and these are they that laid down the weapons of their rebellion,",
+      "verse": "23:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 205.655,
+      "end": 208.395,
+      "type": "line",
+      "text": "yea, all their weapons of war;",
+      "verse": "23:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 208.575,
+      "end": 210.293,
+      "type": "line",
+      "text": "and they were all Lamanites.",
+      "verse": "23:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 210.973,
+      "end": 214.642,
+      "type": "line",
+      "text": "And the Amalekites were not converted, save only one;",
+      "verse": "23:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 214.822,
+      "end": 217.051,
+      "type": "line",
+      "text": "neither were any of the Amulonites;",
+      "verse": "23:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 217.231,
+      "end": 219.321,
+      "type": "line",
+      "text": "but they did harden their hearts,",
+      "verse": "23:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 219.501,
+      "end": 224.563,
+      "type": "line",
+      "text": "and also the hearts of the Lamanites in that part of the land wheresoever they dwelt,",
+      "verse": "23:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 224.743,
+      "end": 227.576,
+      "type": "line",
+      "text": "yea, and all their villages and all their cities.",
+      "verse": "23:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 228.256,
+      "end": 234.572,
+      "type": "line",
+      "text": "Therefore, we have named all the cities of the Lamanites in which they did repent",
+      "verse": "23:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 234.752,
+      "end": 237.028,
+      "type": "line",
+      "text": "and come to the knowledge of the truth,",
+      "verse": "23:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 237.208,
+      "end": 238.694,
+      "type": "line",
+      "text": "and were converted.",
+      "verse": "23:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 239.374,
+      "end": 243.507,
+      "type": "line",
+      "text": "And now it came to pass that the king and those who were converted",
+      "verse": "23:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 243.687,
+      "end": 246.381,
+      "type": "line",
+      "text": "were desirous that they might have a name,",
+      "verse": "23:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 246.561,
+      "end": 250.044,
+      "type": "line",
+      "text": "that thereby they might be distinguished from their brethren;",
+      "verse": "23:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 250.224,
+      "end": 254.171,
+      "type": "line",
+      "text": "therefore the king consulted with Aaron and many of their priests,",
+      "verse": "23:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 254.351,
+      "end": 257.416,
+      "type": "line",
+      "text": "concerning the name that they should take upon them,",
+      "verse": "23:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 257.596,
+      "end": 259.639,
+      "type": "line",
+      "text": "that they might be distinguished.",
+      "verse": "23:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 260.319,
+      "end": 264.591,
+      "type": "line",
+      "text": "And it came to pass that they called their names Anti-Nephi-Lehies;",
+      "verse": "23:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 264.771,
+      "end": 269.043,
+      "type": "line",
+      "text": "and they were called by this name and were no more called Lamanites.",
+      "verse": "23:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 269.723,
+      "end": 272.742,
+      "type": "line",
+      "text": "And they began to be a very industrious people;",
+      "verse": "23:18",
+      "lineIndex": 75
+    },
+    {
+      "start": 272.922,
+      "end": 275.755,
+      "type": "line",
+      "text": "yea, and they were friendly with the Nephites;",
+      "verse": "23:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 275.935,
+      "end": 279.186,
+      "type": "line",
+      "text": "therefore, they did open a correspondence with them,",
+      "verse": "23:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 279.366,
+      "end": 281.827,
+      "type": "line",
+      "text": "and the curse of God did no more follow them.",
+      "verse": "23:18",
+      "lineIndex": 78
+    }
+  ]
+}
