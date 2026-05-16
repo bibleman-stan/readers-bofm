@@ -1,0 +1,600 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 14,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 231.342,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.576,
+      "type": "line",
+      "text": "And now it came to pass that when Jesus had spoken these words",
+      "verse": "14:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.756,
+      "end": 5.939,
+      "type": "line",
+      "text": "he turned again to the multitude,",
+      "verse": "14:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.119,
+      "end": 9.091,
+      "type": "line",
+      "text": "and did open his mouth unto them again, saying:",
+      "verse": "14:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.271,
+      "end": 11.593,
+      "type": "line",
+      "text": "Verily, verily, I say unto you,",
+      "verse": "14:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.773,
+      "end": 14.095,
+      "type": "line",
+      "text": "Judge not, that ye be not judged.",
+      "verse": "14:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.775,
+      "end": 18.304,
+      "type": "line",
+      "text": "For with what judgment ye judge, ye shall be judged;",
+      "verse": "14:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 18.484,
+      "end": 22.246,
+      "type": "line",
+      "text": "and with what measure ye mete, it shall be measured to you again.",
+      "verse": "14:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 22.926,
+      "end": 26.641,
+      "type": "line",
+      "text": "And why beholdest thou the mote that is in thy brother's eye,",
+      "verse": "14:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 26.821,
+      "end": 30.165,
+      "type": "line",
+      "text": "but considerest not the beam that is in thine own eye?",
+      "verse": "14:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 30.845,
+      "end": 33.26,
+      "type": "line",
+      "text": "Or how wilt thou say to thy brother:",
+      "verse": "14:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 33.44,
+      "end": 35.762,
+      "type": "line",
+      "text": "Let me pull the mote out of thine eye\u2014",
+      "verse": "14:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 35.942,
+      "end": 38.496,
+      "type": "line",
+      "text": "and behold, a beam is in thine own eye?",
+      "verse": "14:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 39.176,
+      "end": 43.031,
+      "type": "line",
+      "text": "Thou hypocrite, first cast the beam out of thine own eye;",
+      "verse": "14:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 43.211,
+      "end": 48.18,
+      "type": "line",
+      "text": "and then shalt thou see clearly to cast the mote out of thy brother's eye.",
+      "verse": "14:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 48.86,
+      "end": 51.461,
+      "type": "line",
+      "text": "Give not that which is holy unto the dogs,",
+      "verse": "14:6",
+      "lineIndex": 15
+    },
+    {
+      "start": 51.641,
+      "end": 54.52,
+      "type": "line",
+      "text": "neither cast ye your pearls before swine,",
+      "verse": "14:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 54.7,
+      "end": 57.115,
+      "type": "line",
+      "text": "lest they trample them under their feet,",
+      "verse": "14:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 57.295,
+      "end": 59.06,
+      "type": "line",
+      "text": "and turn again and rend you.",
+      "verse": "14:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 59.74,
+      "end": 61.969,
+      "type": "line",
+      "text": "Ask, and it shall be given unto you;",
+      "verse": "14:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 62.149,
+      "end": 64.053,
+      "type": "line",
+      "text": "seek, and ye shall find;",
+      "verse": "14:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 64.233,
+      "end": 66.88,
+      "type": "line",
+      "text": "knock, and it shall be opened unto you.",
+      "verse": "14:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 67.56,
+      "end": 69.975,
+      "type": "line",
+      "text": "For every one that asketh, receiveth;",
+      "verse": "14:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 70.155,
+      "end": 72.152,
+      "type": "line",
+      "text": "and he that seeketh, findeth;",
+      "verse": "14:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 72.332,
+      "end": 74.793,
+      "type": "line",
+      "text": "and to him that knocketh, it shall be opened.",
+      "verse": "14:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 75.473,
+      "end": 77.516,
+      "type": "line",
+      "text": "Or what man is there of you,",
+      "verse": "14:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 77.696,
+      "end": 81.272,
+      "type": "line",
+      "text": "who, if his son ask bread, will give him a stone?",
+      "verse": "14:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 81.952,
+      "end": 84.878,
+      "type": "line",
+      "text": "Or if he ask a fish, will he give him a serpent?",
+      "verse": "14:10",
+      "lineIndex": 28
+    },
+    {
+      "start": 85.558,
+      "end": 90.388,
+      "type": "line",
+      "text": "If ye then, being evil, know how to give good gifts unto your children,",
+      "verse": "14:11",
+      "lineIndex": 29
+    },
+    {
+      "start": 90.568,
+      "end": 93.401,
+      "type": "line",
+      "text": "how much more shall your Father who is in heaven",
+      "verse": "14:11",
+      "lineIndex": 30
+    },
+    {
+      "start": 93.581,
+      "end": 96.228,
+      "type": "line",
+      "text": "give good things to them that ask him?",
+      "verse": "14:11",
+      "lineIndex": 31
+    },
+    {
+      "start": 96.908,
+      "end": 100.902,
+      "type": "line",
+      "text": "Therefore, all things whatsoever ye would that men should do to you,",
+      "verse": "14:12",
+      "lineIndex": 32
+    },
+    {
+      "start": 101.082,
+      "end": 102.754,
+      "type": "line",
+      "text": "do ye even so to them,",
+      "verse": "14:12",
+      "lineIndex": 33
+    },
+    {
+      "start": 102.934,
+      "end": 105.163,
+      "type": "line",
+      "text": "for this is the law and the prophets.",
+      "verse": "14:12",
+      "lineIndex": 34
+    },
+    {
+      "start": 105.843,
+      "end": 108.026,
+      "type": "line",
+      "text": "Enter ye in at the strait gate;",
+      "verse": "14:13",
+      "lineIndex": 35
+    },
+    {
+      "start": 108.206,
+      "end": 112.757,
+      "type": "line",
+      "text": "for wide is the gate, and broad is the way, which leadeth to destruction,",
+      "verse": "14:13",
+      "lineIndex": 36
+    },
+    {
+      "start": 112.937,
+      "end": 115.352,
+      "type": "line",
+      "text": "and many there be who go in thereat;",
+      "verse": "14:13",
+      "lineIndex": 37
+    },
+    {
+      "start": 116.032,
+      "end": 120.583,
+      "type": "line",
+      "text": "Because strait is the gate, and narrow is the way, which leadeth unto life,",
+      "verse": "14:14",
+      "lineIndex": 38
+    },
+    {
+      "start": 120.763,
+      "end": 123.224,
+      "type": "line",
+      "text": "and few there be that find it.",
+      "verse": "14:14",
+      "lineIndex": 39
+    },
+    {
+      "start": 123.904,
+      "end": 125.576,
+      "type": "line",
+      "text": "Beware of false prophets,",
+      "verse": "14:15",
+      "lineIndex": 41
+    },
+    {
+      "start": 125.756,
+      "end": 128.171,
+      "type": "line",
+      "text": "who come to you in sheep's clothing,",
+      "verse": "14:15",
+      "lineIndex": 42
+    },
+    {
+      "start": 128.351,
+      "end": 130.766,
+      "type": "line",
+      "text": "but inwardly they are ravening wolves.",
+      "verse": "14:15",
+      "lineIndex": 43
+    },
+    {
+      "start": 131.446,
+      "end": 133.722,
+      "type": "line",
+      "text": "Ye shall know them by their fruits.",
+      "verse": "14:16",
+      "lineIndex": 44
+    },
+    {
+      "start": 133.902,
+      "end": 137.571,
+      "type": "line",
+      "text": "Do men gather grapes of thorns, or figs of thistles?",
+      "verse": "14:16",
+      "lineIndex": 45
+    },
+    {
+      "start": 138.251,
+      "end": 141.92,
+      "type": "line",
+      "text": "Even so every good tree bringeth forth good fruit;",
+      "verse": "14:17",
+      "lineIndex": 46
+    },
+    {
+      "start": 142.1,
+      "end": 145.119,
+      "type": "line",
+      "text": "but a corrupt tree bringeth forth evil fruit.",
+      "verse": "14:17",
+      "lineIndex": 47
+    },
+    {
+      "start": 145.799,
+      "end": 148.678,
+      "type": "line",
+      "text": "A good tree cannot bring forth evil fruit,",
+      "verse": "14:18",
+      "lineIndex": 48
+    },
+    {
+      "start": 148.858,
+      "end": 151.923,
+      "type": "line",
+      "text": "neither a corrupt tree bring forth good fruit.",
+      "verse": "14:18",
+      "lineIndex": 49
+    },
+    {
+      "start": 152.603,
+      "end": 155.668,
+      "type": "line",
+      "text": "Every tree that bringeth not forth good fruit",
+      "verse": "14:19",
+      "lineIndex": 50
+    },
+    {
+      "start": 155.848,
+      "end": 158.634,
+      "type": "line",
+      "text": "is hewn down, and cast into the fire.",
+      "verse": "14:19",
+      "lineIndex": 51
+    },
+    {
+      "start": 159.314,
+      "end": 161.961,
+      "type": "line",
+      "text": "Wherefore, by their fruits ye shall know them.",
+      "verse": "14:20",
+      "lineIndex": 52
+    },
+    {
+      "start": 162.641,
+      "end": 165.381,
+      "type": "line",
+      "text": "Not every one that saith unto me, Lord, Lord,",
+      "verse": "14:21",
+      "lineIndex": 53
+    },
+    {
+      "start": 165.561,
+      "end": 168.022,
+      "type": "line",
+      "text": "shall enter into the kingdom of heaven;",
+      "verse": "14:21",
+      "lineIndex": 54
+    },
+    {
+      "start": 168.202,
+      "end": 171.592,
+      "type": "line",
+      "text": "but he that doeth the will of my Father who is in heaven.",
+      "verse": "14:21",
+      "lineIndex": 55
+    },
+    {
+      "start": 172.272,
+      "end": 174.315,
+      "type": "line",
+      "text": "Many will say to me in that day:",
+      "verse": "14:22",
+      "lineIndex": 56
+    },
+    {
+      "start": 174.495,
+      "end": 177.374,
+      "type": "line",
+      "text": "Lord, Lord, have we not prophesied in thy name,",
+      "verse": "14:22",
+      "lineIndex": 57
+    },
+    {
+      "start": 177.554,
+      "end": 180.108,
+      "type": "line",
+      "text": "and in thy name have cast out devils,",
+      "verse": "14:22",
+      "lineIndex": 58
+    },
+    {
+      "start": 180.288,
+      "end": 182.889,
+      "type": "line",
+      "text": "and in thy name done many wonderful works?",
+      "verse": "14:22",
+      "lineIndex": 59
+    },
+    {
+      "start": 183.569,
+      "end": 185.984,
+      "type": "line",
+      "text": "And then will I profess unto them:",
+      "verse": "14:23",
+      "lineIndex": 60
+    },
+    {
+      "start": 186.164,
+      "end": 187.65,
+      "type": "line",
+      "text": "I never knew you;",
+      "verse": "14:23",
+      "lineIndex": 61
+    },
+    {
+      "start": 187.83,
+      "end": 190.477,
+      "type": "line",
+      "text": "depart from me, ye that work iniquity.",
+      "verse": "14:23",
+      "lineIndex": 62
+    },
+    {
+      "start": 191.157,
+      "end": 195.894,
+      "type": "line",
+      "text": "Therefore, whoso heareth these sayings of mine and doeth them,",
+      "verse": "14:24",
+      "lineIndex": 64
+    },
+    {
+      "start": 196.074,
+      "end": 198.489,
+      "type": "line",
+      "text": "I will liken him unto a wise man,",
+      "verse": "14:24",
+      "lineIndex": 65
+    },
+    {
+      "start": 198.669,
+      "end": 201.13,
+      "type": "line",
+      "text": "who built his house upon a rock\u2014",
+      "verse": "14:24",
+      "lineIndex": 66
+    },
+    {
+      "start": 201.81,
+      "end": 204.782,
+      "type": "line",
+      "text": "And the rain descended, and the floods came,",
+      "verse": "14:25",
+      "lineIndex": 67
+    },
+    {
+      "start": 204.962,
+      "end": 207.888,
+      "type": "line",
+      "text": "and the winds blew, and beat upon that house;",
+      "verse": "14:25",
+      "lineIndex": 68
+    },
+    {
+      "start": 208.068,
+      "end": 211.551,
+      "type": "line",
+      "text": "and it fell not, for it was founded upon a rock.",
+      "verse": "14:25",
+      "lineIndex": 69
+    },
+    {
+      "start": 212.231,
+      "end": 215.946,
+      "type": "line",
+      "text": "And every one that heareth these sayings of mine and doeth them not",
+      "verse": "14:26",
+      "lineIndex": 70
+    },
+    {
+      "start": 216.126,
+      "end": 218.587,
+      "type": "line",
+      "text": "shall be likened unto a foolish man,",
+      "verse": "14:26",
+      "lineIndex": 71
+    },
+    {
+      "start": 218.767,
+      "end": 221.135,
+      "type": "line",
+      "text": "who built his house upon the sand\u2014",
+      "verse": "14:26",
+      "lineIndex": 72
+    },
+    {
+      "start": 221.815,
+      "end": 224.787,
+      "type": "line",
+      "text": "And the rain descended, and the floods came,",
+      "verse": "14:27",
+      "lineIndex": 73
+    },
+    {
+      "start": 224.967,
+      "end": 227.893,
+      "type": "line",
+      "text": "and the winds blew, and beat upon that house;",
+      "verse": "14:27",
+      "lineIndex": 74
+    },
+    {
+      "start": 228.073,
+      "end": 230.674,
+      "type": "line",
+      "text": "and it fell, and great was the fall of it.",
+      "verse": "14:27",
+      "lineIndex": 75
+    }
+  ]
+}

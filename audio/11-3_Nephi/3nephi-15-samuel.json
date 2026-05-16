@@ -1,0 +1,648 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 15,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 265.148,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.669,
+      "type": "line",
+      "text": "And now it came to pass that when Jesus had ended these sayings",
+      "verse": "15:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.849,
+      "end": 6.821,
+      "type": "line",
+      "text": "he cast his eyes round about on the multitude,",
+      "verse": "15:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.001,
+      "end": 8.626,
+      "type": "line",
+      "text": "and said unto them:",
+      "verse": "15:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 8.806,
+      "end": 13.45,
+      "type": "line",
+      "text": "Behold, ye have heard the things which I taught before I ascended to my Father;",
+      "verse": "15:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 13.63,
+      "end": 17.531,
+      "type": "line",
+      "text": "therefore, whoso remembereth these sayings of mine and doeth them,",
+      "verse": "15:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 17.711,
+      "end": 20.219,
+      "type": "line",
+      "text": "him will I raise up at the last day.",
+      "verse": "15:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 20.899,
+      "end": 24.568,
+      "type": "line",
+      "text": "And it came to pass that when Jesus had said these words",
+      "verse": "15:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 24.748,
+      "end": 27.302,
+      "type": "line",
+      "text": "he perceived that there were some among them",
+      "verse": "15:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 27.482,
+      "end": 31.708,
+      "type": "line",
+      "text": "who marveled, and wondered what he would concerning the law of Moses;",
+      "verse": "15:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 31.888,
+      "end": 36.904,
+      "type": "line",
+      "text": "for they understood not the saying that old things had passed away,",
+      "verse": "15:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 37.084,
+      "end": 39.22,
+      "type": "line",
+      "text": "and that all things had become new.",
+      "verse": "15:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 39.9,
+      "end": 41.433,
+      "type": "line",
+      "text": "And he said unto them:",
+      "verse": "15:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 41.613,
+      "end": 45.328,
+      "type": "line",
+      "text": "Marvel not that I said unto you that old things had passed away,",
+      "verse": "15:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 45.508,
+      "end": 47.644,
+      "type": "line",
+      "text": "and that all things had become new.",
+      "verse": "15:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 48.324,
+      "end": 49.857,
+      "type": "line",
+      "text": "Behold, I say unto you",
+      "verse": "15:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 50.037,
+      "end": 53.799,
+      "type": "line",
+      "text": "that the law is fulfilled that was given unto Moses.",
+      "verse": "15:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 54.479,
+      "end": 56.847,
+      "type": "line",
+      "text": "Behold, I am he that gave the law,",
+      "verse": "15:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 57.027,
+      "end": 60.742,
+      "type": "line",
+      "text": "and I am he who covenanted with my people Israel;",
+      "verse": "15:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 60.922,
+      "end": 63.523,
+      "type": "line",
+      "text": "therefore, the law in me is fulfilled,",
+      "verse": "15:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 63.703,
+      "end": 65.932,
+      "type": "line",
+      "text": "for I have come to fulfil the law;",
+      "verse": "15:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 66.112,
+      "end": 67.691,
+      "type": "line",
+      "text": "therefore it hath an end.",
+      "verse": "15:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 68.371,
+      "end": 70.693,
+      "type": "line",
+      "text": "Behold, I do not destroy the prophets,",
+      "verse": "15:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 70.873,
+      "end": 73.613,
+      "type": "line",
+      "text": "for as many as have not been fulfilled in me,",
+      "verse": "15:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 73.793,
+      "end": 76.487,
+      "type": "line",
+      "text": "verily I say unto you, shall all be fulfilled.",
+      "verse": "15:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 77.167,
+      "end": 80.975,
+      "type": "line",
+      "text": "And because I said unto you that old things have passed away,",
+      "verse": "15:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 81.155,
+      "end": 85.613,
+      "type": "line",
+      "text": "I do not destroy that which hath been spoken concerning things which are to come.",
+      "verse": "15:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 86.293,
+      "end": 89.079,
+      "type": "line",
+      "text": "For behold, the covenant which I have made",
+      "verse": "15:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 89.259,
+      "end": 91.535,
+      "type": "line",
+      "text": "with my people is not all fulfilled;",
+      "verse": "15:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 91.715,
+      "end": 95.337,
+      "type": "line",
+      "text": "but the law which was given unto Moses hath an end in me.",
+      "verse": "15:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 96.017,
+      "end": 98.432,
+      "type": "line",
+      "text": "Behold, I am the law, and the light.",
+      "verse": "15:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 98.612,
+      "end": 102.327,
+      "type": "line",
+      "text": "Look unto me, and endure to the end, and ye shall live;",
+      "verse": "15:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 102.507,
+      "end": 106.594,
+      "type": "line",
+      "text": "for unto him that endureth to the end will I give eternal life.",
+      "verse": "15:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 107.274,
+      "end": 109.968,
+      "type": "line",
+      "text": "Behold, I have given unto you the commandments;",
+      "verse": "15:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 110.148,
+      "end": 111.773,
+      "type": "line",
+      "text": "therefore keep my commandments.",
+      "verse": "15:10",
+      "lineIndex": 34
+    },
+    {
+      "start": 111.953,
+      "end": 114.043,
+      "type": "line",
+      "text": "And this is the law and the prophets,",
+      "verse": "15:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 114.223,
+      "end": 116.591,
+      "type": "line",
+      "text": "for they truly testified of me.",
+      "verse": "15:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 117.271,
+      "end": 121.404,
+      "type": "line",
+      "text": "And now it came to pass that when Jesus had spoken these words,",
+      "verse": "15:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 121.584,
+      "end": 124.463,
+      "type": "line",
+      "text": "he said unto those twelve whom he had chosen:",
+      "verse": "15:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 125.143,
+      "end": 126.722,
+      "type": "line",
+      "text": "Ye are my disciples;",
+      "verse": "15:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 126.902,
+      "end": 129.317,
+      "type": "line",
+      "text": "and ye are a light unto this people,",
+      "verse": "15:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 129.497,
+      "end": 132.098,
+      "type": "line",
+      "text": "who are a remnant of the house of Joseph.",
+      "verse": "15:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 132.778,
+      "end": 136.168,
+      "type": "line",
+      "text": "And behold, this is the land of your inheritance;",
+      "verse": "15:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 136.348,
+      "end": 138.995,
+      "type": "line",
+      "text": "and the Father hath given it unto you.",
+      "verse": "15:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 139.675,
+      "end": 143.297,
+      "type": "line",
+      "text": "And not at any time hath the Father given me commandment",
+      "verse": "15:14",
+      "lineIndex": 45
+    },
+    {
+      "start": 143.477,
+      "end": 147.099,
+      "type": "line",
+      "text": "that I should tell it unto your brethren at Jerusalem.",
+      "verse": "15:14",
+      "lineIndex": 46
+    },
+    {
+      "start": 147.779,
+      "end": 157.16,
+      "type": "line",
+      "text": "Neither at any time hath the Father given me commandment that I should tell unto them concerning the other tribes of the house of Israel,",
+      "verse": "15:15",
+      "lineIndex": 47
+    },
+    {
+      "start": 157.34,
+      "end": 160.219,
+      "type": "line",
+      "text": "whom the Father hath led away out of the land.",
+      "verse": "15:15",
+      "lineIndex": 48
+    },
+    {
+      "start": 160.899,
+      "end": 164.754,
+      "type": "line",
+      "text": "This much did the Father command me, that I should tell unto them:",
+      "verse": "15:16",
+      "lineIndex": 49
+    },
+    {
+      "start": 165.434,
+      "end": 168.731,
+      "type": "line",
+      "text": "That other sheep I have which are not of this fold;",
+      "verse": "15:17",
+      "lineIndex": 50
+    },
+    {
+      "start": 168.911,
+      "end": 172.301,
+      "type": "line",
+      "text": "them also I must bring, and they shall hear my voice;",
+      "verse": "15:17",
+      "lineIndex": 51
+    },
+    {
+      "start": 172.481,
+      "end": 175.267,
+      "type": "line",
+      "text": "and there shall be one fold, and one shepherd.",
+      "verse": "15:17",
+      "lineIndex": 52
+    },
+    {
+      "start": 175.947,
+      "end": 180.823,
+      "type": "line",
+      "text": "And now, because of stiffneckedness and unbelief they understood not my word;",
+      "verse": "15:18",
+      "lineIndex": 54
+    },
+    {
+      "start": 181.003,
+      "end": 185.368,
+      "type": "line",
+      "text": "therefore I was commanded to say no more of the Father concerning this thing unto them.",
+      "verse": "15:18",
+      "lineIndex": 55
+    },
+    {
+      "start": 186.048,
+      "end": 188.091,
+      "type": "line",
+      "text": "But, verily, I say unto you",
+      "verse": "15:19",
+      "lineIndex": 56
+    },
+    {
+      "start": 188.271,
+      "end": 190.454,
+      "type": "line",
+      "text": "that the Father hath commanded me,",
+      "verse": "15:19",
+      "lineIndex": 57
+    },
+    {
+      "start": 190.634,
+      "end": 192.352,
+      "type": "line",
+      "text": "and I tell it unto you,",
+      "verse": "15:19",
+      "lineIndex": 58
+    },
+    {
+      "start": 192.532,
+      "end": 196.851,
+      "type": "line",
+      "text": "that ye were separated from among them because of their iniquity;",
+      "verse": "15:19",
+      "lineIndex": 59
+    },
+    {
+      "start": 197.031,
+      "end": 202.232,
+      "type": "line",
+      "text": "therefore it is because of their iniquity that they know not of you.",
+      "verse": "15:19",
+      "lineIndex": 60
+    },
+    {
+      "start": 202.912,
+      "end": 205.28,
+      "type": "line",
+      "text": "And verily, I say unto you again",
+      "verse": "15:20",
+      "lineIndex": 61
+    },
+    {
+      "start": 205.46,
+      "end": 209.082,
+      "type": "line",
+      "text": "that the other tribes hath the Father separated from them;",
+      "verse": "15:20",
+      "lineIndex": 62
+    },
+    {
+      "start": 209.262,
+      "end": 213.674,
+      "type": "line",
+      "text": "and it is because of their iniquity that they know not of them.",
+      "verse": "15:20",
+      "lineIndex": 63
+    },
+    {
+      "start": 214.354,
+      "end": 216.165,
+      "type": "line",
+      "text": "And verily I say unto you,",
+      "verse": "15:21",
+      "lineIndex": 64
+    },
+    {
+      "start": 216.345,
+      "end": 218.621,
+      "type": "line",
+      "text": "that ye are they of whom I said:",
+      "verse": "15:21",
+      "lineIndex": 65
+    },
+    {
+      "start": 218.801,
+      "end": 222.052,
+      "type": "line",
+      "text": "Other sheep I have which are not of this fold;",
+      "verse": "15:21",
+      "lineIndex": 66
+    },
+    {
+      "start": 222.232,
+      "end": 225.622,
+      "type": "line",
+      "text": "them also I must bring, and they shall hear my voice;",
+      "verse": "15:21",
+      "lineIndex": 67
+    },
+    {
+      "start": 225.802,
+      "end": 228.588,
+      "type": "line",
+      "text": "and there shall be one fold, and one shepherd.",
+      "verse": "15:21",
+      "lineIndex": 68
+    },
+    {
+      "start": 229.268,
+      "end": 231.033,
+      "type": "line",
+      "text": "And they understood me not,",
+      "verse": "15:22",
+      "lineIndex": 69
+    },
+    {
+      "start": 231.213,
+      "end": 233.86,
+      "type": "line",
+      "text": "for they supposed it had been the Gentiles;",
+      "verse": "15:22",
+      "lineIndex": 70
+    },
+    {
+      "start": 234.04,
+      "end": 238.591,
+      "type": "line",
+      "text": "for they understood not that the Gentiles should be converted through their preaching.",
+      "verse": "15:22",
+      "lineIndex": 71
+    },
+    {
+      "start": 239.271,
+      "end": 241.175,
+      "type": "line",
+      "text": "And they understood me not",
+      "verse": "15:23",
+      "lineIndex": 72
+    },
+    {
+      "start": 241.355,
+      "end": 243.491,
+      "type": "line",
+      "text": "that I said they shall hear my voice;",
+      "verse": "15:23",
+      "lineIndex": 73
+    },
+    {
+      "start": 243.671,
+      "end": 245.436,
+      "type": "line",
+      "text": "and they understood me not",
+      "verse": "15:23",
+      "lineIndex": 74
+    },
+    {
+      "start": 245.616,
+      "end": 249.192,
+      "type": "line",
+      "text": "that the Gentiles should not at any time hear my voice\u2014",
+      "verse": "15:23",
+      "lineIndex": 75
+    },
+    {
+      "start": 249.372,
+      "end": 254.48,
+      "type": "line",
+      "text": "that I should not manifest myself unto them save it were by the Holy Ghost.",
+      "verse": "15:23",
+      "lineIndex": 76
+    },
+    {
+      "start": 255.16,
+      "end": 257.714,
+      "type": "line",
+      "text": "But behold, ye have both heard my voice,",
+      "verse": "15:24",
+      "lineIndex": 77
+    },
+    {
+      "start": 257.894,
+      "end": 259.055,
+      "type": "line",
+      "text": "and seen me;",
+      "verse": "15:24",
+      "lineIndex": 78
+    },
+    {
+      "start": 259.235,
+      "end": 260.86,
+      "type": "line",
+      "text": "and ye are my sheep,",
+      "verse": "15:24",
+      "lineIndex": 79
+    },
+    {
+      "start": 261.04,
+      "end": 264.477,
+      "type": "line",
+      "text": "and ye are numbered among those whom the Father hath given me.",
+      "verse": "15:24",
+      "lineIndex": 80
+    }
+  ]
+}
