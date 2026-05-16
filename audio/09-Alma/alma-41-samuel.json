@@ -1,0 +1,616 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 41,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 259.093,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 1.393,
+      "type": "line",
+      "text": "And now, my son,",
+      "verse": "41:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 1.573,
+      "end": 6.728,
+      "type": "line",
+      "text": "I have somewhat to say concerning the restoration of which has been spoken;",
+      "verse": "41:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.908,
+      "end": 9.973,
+      "type": "line",
+      "text": "for behold, some have wrested the scriptures,",
+      "verse": "41:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.153,
+      "end": 13.311,
+      "type": "line",
+      "text": "and have gone far astray because of this thing.",
+      "verse": "41:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 13.491,
+      "end": 17.717,
+      "type": "line",
+      "text": "And I perceive that thy mind has been worried also concerning this thing.",
+      "verse": "41:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 17.897,
+      "end": 20.405,
+      "type": "line",
+      "text": "But behold, I will explain it unto thee.",
+      "verse": "41:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 21.085,
+      "end": 22.664,
+      "type": "line",
+      "text": "I say unto thee, my son,",
+      "verse": "41:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 22.844,
+      "end": 27.024,
+      "type": "line",
+      "text": "that the plan of restoration is requisite with the justice of God;",
+      "verse": "41:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 27.204,
+      "end": 32.591,
+      "type": "line",
+      "text": "for it is requisite that all things should be restored to their proper order.",
+      "verse": "41:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 32.771,
+      "end": 37.694,
+      "type": "line",
+      "text": "Behold, it is requisite and just, according to the power and resurrection of Christ,",
+      "verse": "41:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 37.874,
+      "end": 40.939,
+      "type": "line",
+      "text": "that the soul of man should be restored to its body,",
+      "verse": "41:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 41.119,
+      "end": 44.556,
+      "type": "line",
+      "text": "and that every part of the body should be restored to itself.",
+      "verse": "41:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 45.236,
+      "end": 47.883,
+      "type": "line",
+      "text": "And it is requisite with the justice of God",
+      "verse": "41:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 48.063,
+      "end": 51.128,
+      "type": "line",
+      "text": "that men should be judged according to their works;",
+      "verse": "41:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 51.308,
+      "end": 54.002,
+      "type": "line",
+      "text": "and if their works were good in this life,",
+      "verse": "41:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 54.182,
+      "end": 56.365,
+      "type": "line",
+      "text": "and the desires of their hearts were good,",
+      "verse": "41:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 56.545,
+      "end": 61.561,
+      "type": "line",
+      "text": "that they should also, at the last day, be restored unto that which is good.",
+      "verse": "41:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 62.241,
+      "end": 64.424,
+      "type": "line",
+      "text": "And if their works are evil",
+      "verse": "41:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 64.604,
+      "end": 67.112,
+      "type": "line",
+      "text": "they shall be restored unto them for evil.",
+      "verse": "41:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 67.292,
+      "end": 71.054,
+      "type": "line",
+      "text": "Therefore, all things shall be restored to their proper order,",
+      "verse": "41:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 71.234,
+      "end": 73.463,
+      "type": "line",
+      "text": "every thing to its natural frame\u2014",
+      "verse": "41:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 73.643,
+      "end": 77.915,
+      "type": "line",
+      "text": "mortality raised to immortality, corruption to incorruption\u2014",
+      "verse": "41:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 78.095,
+      "end": 81.671,
+      "type": "line",
+      "text": "raised to endless happiness to inherit the kingdom of God,",
+      "verse": "41:4",
+      "lineIndex": 23
+    },
+    {
+      "start": 81.851,
+      "end": 85.334,
+      "type": "line",
+      "text": "or to endless misery to inherit the kingdom of the devil,",
+      "verse": "41:4",
+      "lineIndex": 24
+    },
+    {
+      "start": 85.514,
+      "end": 88.254,
+      "type": "line",
+      "text": "the one on one hand, the other on the other\u2014",
+      "verse": "41:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 88.934,
+      "end": 92.835,
+      "type": "line",
+      "text": "The one raised to happiness according to his desires of happiness,",
+      "verse": "41:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 93.015,
+      "end": 95.894,
+      "type": "line",
+      "text": "or good according to his desires of good;",
+      "verse": "41:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 96.074,
+      "end": 99.557,
+      "type": "line",
+      "text": "and the other to evil according to his desires of evil;",
+      "verse": "41:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 99.737,
+      "end": 103.034,
+      "type": "line",
+      "text": "for as he has desired to do evil all the day long",
+      "verse": "41:5",
+      "lineIndex": 29
+    },
+    {
+      "start": 103.214,
+      "end": 107.579,
+      "type": "line",
+      "text": "even so shall he have his reward of evil when the night cometh.",
+      "verse": "41:5",
+      "lineIndex": 30
+    },
+    {
+      "start": 108.259,
+      "end": 110.117,
+      "type": "line",
+      "text": "And so it is on the other hand.",
+      "verse": "41:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 110.297,
+      "end": 112.712,
+      "type": "line",
+      "text": "If he hath repented of his sins,",
+      "verse": "41:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 112.892,
+      "end": 116.282,
+      "type": "line",
+      "text": "and desired righteousness until the end of his days,",
+      "verse": "41:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 116.462,
+      "end": 119.573,
+      "type": "line",
+      "text": "even so he shall be rewarded unto righteousness.",
+      "verse": "41:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 120.253,
+      "end": 122.761,
+      "type": "line",
+      "text": "These are they that are redeemed of the Lord;",
+      "verse": "41:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 122.941,
+      "end": 125.681,
+      "type": "line",
+      "text": "yea, these are they that are taken out,",
+      "verse": "41:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 125.861,
+      "end": 129.483,
+      "type": "line",
+      "text": "that are delivered from that endless night of darkness;",
+      "verse": "41:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 129.663,
+      "end": 131.335,
+      "type": "line",
+      "text": "and thus they stand or fall;",
+      "verse": "41:7",
+      "lineIndex": 38
+    },
+    {
+      "start": 131.515,
+      "end": 133.976,
+      "type": "line",
+      "text": "for behold, they are their own judges,",
+      "verse": "41:7",
+      "lineIndex": 39
+    },
+    {
+      "start": 134.156,
+      "end": 136.385,
+      "type": "line",
+      "text": "whether to do good or do evil.",
+      "verse": "41:7",
+      "lineIndex": 40
+    },
+    {
+      "start": 137.065,
+      "end": 139.805,
+      "type": "line",
+      "text": "Now, the decrees of God are unalterable;",
+      "verse": "41:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 139.985,
+      "end": 142.4,
+      "type": "line",
+      "text": "therefore, the way is prepared",
+      "verse": "41:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 142.58,
+      "end": 145.691,
+      "type": "line",
+      "text": "that whosoever will may walk therein and be saved.",
+      "verse": "41:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 146.371,
+      "end": 147.904,
+      "type": "line",
+      "text": "And now behold, my son,",
+      "verse": "41:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 148.084,
+      "end": 152.682,
+      "type": "line",
+      "text": "do not risk one more offense against your God upon those points of doctrine,",
+      "verse": "41:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 152.862,
+      "end": 156.02,
+      "type": "line",
+      "text": "which ye have hitherto risked to commit sin.",
+      "verse": "41:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 156.7,
+      "end": 163.991,
+      "type": "line",
+      "text": "Do not suppose, because it has been spoken concerning restoration, that ye shall be restored from sin to happiness.",
+      "verse": "41:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 164.171,
+      "end": 165.843,
+      "type": "line",
+      "text": "Behold, I say unto you,",
+      "verse": "41:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 166.023,
+      "end": 168.206,
+      "type": "line",
+      "text": "wickedness never was happiness.",
+      "verse": "41:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 168.886,
+      "end": 170.279,
+      "type": "line",
+      "text": "And now, my son,",
+      "verse": "41:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 170.459,
+      "end": 180.026,
+      "type": "line",
+      "text": "all men that are in a state of nature, or I would say, in a carnal state, are in the gall of bitterness and in the bonds of iniquity;",
+      "verse": "41:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 180.206,
+      "end": 182.296,
+      "type": "line",
+      "text": "they are without God in the world,",
+      "verse": "41:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 182.476,
+      "end": 185.402,
+      "type": "line",
+      "text": "and they have gone contrary to the nature of God;",
+      "verse": "41:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 185.582,
+      "end": 190.598,
+      "type": "line",
+      "text": "therefore, they are in a state contrary to the nature of happiness.",
+      "verse": "41:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 191.278,
+      "end": 195.04,
+      "type": "line",
+      "text": "And now behold, is the meaning of the word restoration",
+      "verse": "41:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 195.22,
+      "end": 197.867,
+      "type": "line",
+      "text": "to take a thing of a natural state",
+      "verse": "41:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 198.547,
+      "end": 200.776,
+      "type": "line",
+      "text": "O, my son, this is not the case;",
+      "verse": "41:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 200.956,
+      "end": 206.018,
+      "type": "line",
+      "text": "but the meaning of the word restoration is to bring back again evil for evil,",
+      "verse": "41:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 206.198,
+      "end": 211.539,
+      "type": "line",
+      "text": "or carnal for carnal, or devilish for devilish\u2014 good for that which is good;",
+      "verse": "41:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 211.719,
+      "end": 213.995,
+      "type": "line",
+      "text": "righteous for that which is righteous;",
+      "verse": "41:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 214.175,
+      "end": 216.079,
+      "type": "line",
+      "text": "just for that which is just;",
+      "verse": "41:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 216.259,
+      "end": 218.813,
+      "type": "line",
+      "text": "merciful for that which is merciful.",
+      "verse": "41:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 219.493,
+      "end": 220.933,
+      "type": "line",
+      "text": "Therefore, my son,",
+      "verse": "41:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 221.113,
+      "end": 224.039,
+      "type": "line",
+      "text": "see that you are merciful unto your brethren;",
+      "verse": "41:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 224.219,
+      "end": 226.959,
+      "type": "line",
+      "text": "deal justly, judge righteously,",
+      "verse": "41:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 227.139,
+      "end": 229.043,
+      "type": "line",
+      "text": "and do good continually;",
+      "verse": "41:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 229.223,
+      "end": 232.845,
+      "type": "line",
+      "text": "and if ye do all these things then shall ye receive your reward;",
+      "verse": "41:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 233.025,
+      "end": 236.044,
+      "type": "line",
+      "text": "yea, ye shall have mercy restored unto you again;",
+      "verse": "41:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 236.224,
+      "end": 239.289,
+      "type": "line",
+      "text": "ye shall have justice restored unto you again;",
+      "verse": "41:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 239.469,
+      "end": 243.184,
+      "type": "line",
+      "text": "ye shall have a righteous judgment restored unto you again;",
+      "verse": "41:14",
+      "lineIndex": 71
+    },
+    {
+      "start": 243.364,
+      "end": 245.965,
+      "type": "line",
+      "text": "and ye shall have good rewarded unto you again.",
+      "verse": "41:14",
+      "lineIndex": 72
+    },
+    {
+      "start": 246.645,
+      "end": 251.846,
+      "type": "line",
+      "text": "For that which ye do send out shall return unto you again, and be restored;",
+      "verse": "41:15",
+      "lineIndex": 73
+    },
+    {
+      "start": 252.026,
+      "end": 256.113,
+      "type": "line",
+      "text": "therefore, the word restoration more fully condemneth the sinner,",
+      "verse": "41:15",
+      "lineIndex": 74
+    },
+    {
+      "start": 256.293,
+      "end": 258.429,
+      "type": "line",
+      "text": "and justifieth him not at all.",
+      "verse": "41:15",
+      "lineIndex": 75
+    }
+  ]
+}
