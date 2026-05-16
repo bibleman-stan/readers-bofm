@@ -1,0 +1,616 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 25,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 276.718,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.83,
+      "type": "line",
+      "text": "And behold, now it came to pass that those Lamanites were more angry",
+      "verse": "25:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.01,
+      "end": 7.193,
+      "type": "line",
+      "text": "because they had slain their brethren;",
+      "verse": "25:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.373,
+      "end": 10.206,
+      "type": "line",
+      "text": "therefore they swore vengeance upon the Nephites;",
+      "verse": "25:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.386,
+      "end": 14.566,
+      "type": "line",
+      "text": "and they did no more attempt to slay the people of Anti-Nephi-Lehi at that time.",
+      "verse": "25:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.246,
+      "end": 16.871,
+      "type": "line",
+      "text": "But they took their armies",
+      "verse": "25:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 17.051,
+      "end": 20.673,
+      "type": "line",
+      "text": "and went over into the borders of the land of Zarahemla,",
+      "verse": "25:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 20.853,
+      "end": 25.404,
+      "type": "line",
+      "text": "and fell upon the people who were in the land of Ammonihah and destroyed them.",
+      "verse": "25:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 26.084,
+      "end": 29.288,
+      "type": "line",
+      "text": "And after that, they had many battles with the Nephites,",
+      "verse": "25:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 29.468,
+      "end": 31.836,
+      "type": "line",
+      "text": "in the which they were driven and slain.",
+      "verse": "25:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 32.516,
+      "end": 34.931,
+      "type": "line",
+      "text": "And among the Lamanites who were slain",
+      "verse": "25:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 35.111,
+      "end": 38.501,
+      "type": "line",
+      "text": "were almost all the seed of Amulon and his brethren,",
+      "verse": "25:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 38.681,
+      "end": 40.631,
+      "type": "line",
+      "text": "who were the priests of Noah,",
+      "verse": "25:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 40.811,
+      "end": 43.922,
+      "type": "line",
+      "text": "and they were slain by the hands of the Nephites;",
+      "verse": "25:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.602,
+      "end": 47.946,
+      "type": "line",
+      "text": "And the remainder, having fled into the east wilderness,",
+      "verse": "25:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 48.126,
+      "end": 52.259,
+      "type": "line",
+      "text": "and having usurped the power and authority over the Lamanites,",
+      "verse": "25:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 52.439,
+      "end": 57.362,
+      "type": "line",
+      "text": "caused that many of the Lamanites should perish by fire because of their belief\u2014",
+      "verse": "25:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 58.042,
+      "end": 62.732,
+      "type": "line",
+      "text": "For many of them, after having suffered much loss and so many afflictions,",
+      "verse": "25:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 62.912,
+      "end": 65.606,
+      "type": "line",
+      "text": "began to be stirred up in remembrance",
+      "verse": "25:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 65.786,
+      "end": 70.755,
+      "type": "line",
+      "text": "of the words which Aaron and his brethren had preached to them in their land;",
+      "verse": "25:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 70.935,
+      "end": 74.975,
+      "type": "line",
+      "text": "therefore they began to disbelieve the traditions of their fathers,",
+      "verse": "25:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 75.155,
+      "end": 76.78,
+      "type": "line",
+      "text": "and to believe in the Lord,",
+      "verse": "25:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 76.96,
+      "end": 79.979,
+      "type": "line",
+      "text": "and that he gave great power unto the Nephites;",
+      "verse": "25:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 80.159,
+      "end": 83.874,
+      "type": "line",
+      "text": "and thus there were many of them converted in the wilderness.",
+      "verse": "25:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 84.554,
+      "end": 90.266,
+      "type": "line",
+      "text": "And it came to pass that those rulers who were the remnant of the children of Amulon",
+      "verse": "25:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 90.446,
+      "end": 93.047,
+      "type": "line",
+      "text": "caused that they should be put to death,",
+      "verse": "25:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 93.227,
+      "end": 95.735,
+      "type": "line",
+      "text": "yea, all those that believed in these things.",
+      "verse": "25:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 96.415,
+      "end": 101.152,
+      "type": "line",
+      "text": "Now this martyrdom caused that many of their brethren should be stirred up to anger;",
+      "verse": "25:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 101.332,
+      "end": 104.908,
+      "type": "line",
+      "text": "and there began to be contention in the wilderness;",
+      "verse": "25:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 105.088,
+      "end": 111.079,
+      "type": "line",
+      "text": "and the Lamanites began to hunt the seed of Amulon and his brethren",
+      "verse": "25:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 111.259,
+      "end": 112.977,
+      "type": "line",
+      "text": "and began to slay them;",
+      "verse": "25:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 113.157,
+      "end": 115.433,
+      "type": "line",
+      "text": "and they fled into the east wilderness.",
+      "verse": "25:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 116.113,
+      "end": 119.271,
+      "type": "line",
+      "text": "And behold they are hunted at this day by the Lamanites.",
+      "verse": "25:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 119.451,
+      "end": 125.117,
+      "type": "line",
+      "text": "Thus the words of Abinadi were brought to pass, which he said concerning the seed of the priests",
+      "verse": "25:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 125.297,
+      "end": 128.919,
+      "type": "line",
+      "text": "who caused that he should suffer death by fire.",
+      "verse": "25:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 129.599,
+      "end": 131.224,
+      "type": "line",
+      "text": "For he said unto them:",
+      "verse": "25:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 131.404,
+      "end": 134.887,
+      "type": "line",
+      "text": "What ye shall do unto me shall be a type of things to come.",
+      "verse": "25:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 135.567,
+      "end": 141.047,
+      "type": "line",
+      "text": "And now Abinadi was the first that suffered death by fire because of his belief in God;",
+      "verse": "25:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 141.227,
+      "end": 142.852,
+      "type": "line",
+      "text": "now this is what he meant,",
+      "verse": "25:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 143.032,
+      "end": 145.726,
+      "type": "line",
+      "text": "that many should suffer death by fire,",
+      "verse": "25:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 145.906,
+      "end": 147.81,
+      "type": "line",
+      "text": "according as he had suffered.",
+      "verse": "25:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 148.49,
+      "end": 150.58,
+      "type": "line",
+      "text": "And he said unto the priests of Noah",
+      "verse": "25:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 150.76,
+      "end": 156.379,
+      "type": "line",
+      "text": "that their seed should cause many to be put to death, in the like manner as he was,",
+      "verse": "25:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 156.559,
+      "end": 159.485,
+      "type": "line",
+      "text": "and that they should be scattered abroad and slain,",
+      "verse": "25:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 159.665,
+      "end": 164.448,
+      "type": "line",
+      "text": "even as a sheep having no shepherd is driven and slain by wild beasts;",
+      "verse": "25:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 164.628,
+      "end": 167.043,
+      "type": "line",
+      "text": "and now behold, these words were verified,",
+      "verse": "25:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 167.223,
+      "end": 169.638,
+      "type": "line",
+      "text": "for they were driven by the Lamanites,",
+      "verse": "25:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 169.818,
+      "end": 171.861,
+      "type": "line",
+      "text": "and they were hunted, and they were smitten.",
+      "verse": "25:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 172.541,
+      "end": 179.043,
+      "type": "line",
+      "text": "And it came to pass that when the Lamanites saw that they could not overpower the Nephites",
+      "verse": "25:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 179.223,
+      "end": 181.591,
+      "type": "line",
+      "text": "they returned again to their own land;",
+      "verse": "25:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 181.771,
+      "end": 186.926,
+      "type": "line",
+      "text": "and many of them came over to dwell in the land of Ishmael and the land of Nephi,",
+      "verse": "25:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 187.106,
+      "end": 189.8,
+      "type": "line",
+      "text": "and did join themselves to the people of God,",
+      "verse": "25:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 189.98,
+      "end": 192.534,
+      "type": "line",
+      "text": "who were the people of Anti-Nephi-Lehi.",
+      "verse": "25:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 193.214,
+      "end": 195.815,
+      "type": "line",
+      "text": "And they did also bury their weapons of war,",
+      "verse": "25:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 195.995,
+      "end": 198.038,
+      "type": "line",
+      "text": "according as their brethren had,",
+      "verse": "25:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 198.218,
+      "end": 200.447,
+      "type": "line",
+      "text": "and they began to be a righteous people;",
+      "verse": "25:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 200.627,
+      "end": 203.367,
+      "type": "line",
+      "text": "and they did walk in the ways of the Lord,",
+      "verse": "25:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 203.547,
+      "end": 207.216,
+      "type": "line",
+      "text": "and did observe to keep his commandments and his statutes.",
+      "verse": "25:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 207.896,
+      "end": 210.682,
+      "type": "line",
+      "text": "Yea, and they did keep the law of Moses;",
+      "verse": "25:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 210.862,
+      "end": 215.181,
+      "type": "line",
+      "text": "for it was expedient that they should keep the law of Moses as yet,",
+      "verse": "25:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 215.361,
+      "end": 217.451,
+      "type": "line",
+      "text": "for it was not all fulfilled.",
+      "verse": "25:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 217.631,
+      "end": 220.046,
+      "type": "line",
+      "text": "But notwithstanding the law of Moses,",
+      "verse": "25:15",
+      "lineIndex": 62
+    },
+    {
+      "start": 220.226,
+      "end": 226.728,
+      "type": "line",
+      "text": "they did look forward to the coming of Christ, considering that the law of Moses was a type of his coming,",
+      "verse": "25:15",
+      "lineIndex": 63
+    },
+    {
+      "start": 226.908,
+      "end": 230.623,
+      "type": "line",
+      "text": "and believing that they must keep those outward performances",
+      "verse": "25:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 230.803,
+      "end": 233.729,
+      "type": "line",
+      "text": "until the time that he should be revealed unto them.",
+      "verse": "25:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 234.409,
+      "end": 238.449,
+      "type": "line",
+      "text": "Now they did not suppose that salvation came by the law of Moses;",
+      "verse": "25:16",
+      "lineIndex": 66
+    },
+    {
+      "start": 238.629,
+      "end": 242.994,
+      "type": "line",
+      "text": "but the law of Moses did serve to strengthen their faith in Christ;",
+      "verse": "25:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 243.174,
+      "end": 248.468,
+      "type": "line",
+      "text": "and thus they did retain a hope through faith, unto eternal salvation,",
+      "verse": "25:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 248.648,
+      "end": 251.063,
+      "type": "line",
+      "text": "relying upon the spirit of prophecy,",
+      "verse": "25:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 251.243,
+      "end": 253.844,
+      "type": "line",
+      "text": "which spake of those things to come.",
+      "verse": "25:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 254.524,
+      "end": 260.236,
+      "type": "line",
+      "text": "And now behold, Ammon, and Aaron, and Omner, and Himni, and their brethren",
+      "verse": "25:17",
+      "lineIndex": 71
+    },
+    {
+      "start": 260.416,
+      "end": 262.181,
+      "type": "line",
+      "text": "did rejoice exceedingly,",
+      "verse": "25:17",
+      "lineIndex": 72
+    },
+    {
+      "start": 262.361,
+      "end": 265.751,
+      "type": "line",
+      "text": "for the success which they had had among the Lamanites,",
+      "verse": "25:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 265.931,
+      "end": 270.25,
+      "type": "line",
+      "text": "seeing that the Lord had granted unto them according to their prayers,",
+      "verse": "25:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 270.43,
+      "end": 276.049,
+      "type": "line",
+      "text": "and that he had also verified his word unto them in every particular.",
+      "verse": "25:17",
+      "lineIndex": 75
+    }
+  ]
+}
