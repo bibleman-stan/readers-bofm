@@ -1,0 +1,1040 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 20,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 444.006,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 9.056,
+      "type": "line",
+      "text": "And it came to pass that when they had established a church in that land, that king Lamoni desired that Ammon should go with him to the land of Nephi,",
+      "verse": "20:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 9.236,
+      "end": 11.93,
+      "type": "line",
+      "text": "that he might show him unto his father.",
+      "verse": "20:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 12.61,
+      "end": 15.629,
+      "type": "line",
+      "text": "And the voice of the Lord came to Ammon, saying:",
+      "verse": "20:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 15.809,
+      "end": 18.085,
+      "type": "line",
+      "text": "Thou shalt not go up to the land of Nephi,",
+      "verse": "20:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 18.265,
+      "end": 20.726,
+      "type": "line",
+      "text": "for behold, the king will seek thy life;",
+      "verse": "20:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 20.906,
+      "end": 23.46,
+      "type": "line",
+      "text": "but thou shalt go to the land of Middoni;",
+      "verse": "20:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.64,
+      "end": 28.748,
+      "type": "line",
+      "text": "for behold, thy brother Aaron, and also Muloki and Ammah are in prison.",
+      "verse": "20:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 29.428,
+      "end": 32.354,
+      "type": "line",
+      "text": "Now it came to pass that when Ammon had heard this,",
+      "verse": "20:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 32.534,
+      "end": 34.159,
+      "type": "line",
+      "text": "he said unto Lamoni:",
+      "verse": "20:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 34.339,
+      "end": 37.497,
+      "type": "line",
+      "text": "Behold, my brother and brethren are in prison at Middoni,",
+      "verse": "20:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 37.677,
+      "end": 38.792,
+      "type": "line",
+      "text": "and I go",
+      "verse": "20:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 38.972,
+      "end": 40.505,
+      "type": "line",
+      "text": "that I may deliver them.",
+      "verse": "20:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 41.185,
+      "end": 42.996,
+      "type": "line",
+      "text": "Now Lamoni said unto Ammon:",
+      "verse": "20:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 43.176,
+      "end": 46.705,
+      "type": "line",
+      "text": "I know, in the strength of the Lord thou canst do all things.",
+      "verse": "20:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 46.885,
+      "end": 50.275,
+      "type": "line",
+      "text": "But behold, I will go with thee to the land of Middoni;",
+      "verse": "20:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 50.455,
+      "end": 55.61,
+      "type": "line",
+      "text": "for the king of the land of Middoni, whose name is Antiomno, is a friend unto me;",
+      "verse": "20:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 55.79,
+      "end": 58.158,
+      "type": "line",
+      "text": "therefore I go to the land of Middoni,",
+      "verse": "20:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 58.338,
+      "end": 60.799,
+      "type": "line",
+      "text": "that I may flatter the king of the land,",
+      "verse": "20:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 60.979,
+      "end": 63.58,
+      "type": "line",
+      "text": "and he will cast thy brethren out of prison.",
+      "verse": "20:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 63.76,
+      "end": 65.571,
+      "type": "line",
+      "text": "Now Lamoni said unto him:",
+      "verse": "20:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 65.751,
+      "end": 68.445,
+      "type": "line",
+      "text": "Who told thee that thy brethren were in prison?",
+      "verse": "20:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 69.125,
+      "end": 70.983,
+      "type": "line",
+      "text": "And Ammon said unto him:",
+      "verse": "20:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 71.163,
+      "end": 73.578,
+      "type": "line",
+      "text": "No one hath told me, save it be God;",
+      "verse": "20:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 73.758,
+      "end": 75.337,
+      "type": "line",
+      "text": "and he said unto me\u2014",
+      "verse": "20:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 75.517,
+      "end": 77.467,
+      "type": "line",
+      "text": "Go and deliver thy brethren,",
+      "verse": "20:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 77.647,
+      "end": 80.248,
+      "type": "line",
+      "text": "for they are in prison in the land of Middoni.",
+      "verse": "20:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 80.928,
+      "end": 82.925,
+      "type": "line",
+      "text": "Now when Lamoni had heard this",
+      "verse": "20:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 83.105,
+      "end": 88.028,
+      "type": "line",
+      "text": "he caused that his servants should make ready his horses and his chariots.",
+      "verse": "20:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 88.708,
+      "end": 90.426,
+      "type": "line",
+      "text": "And he said unto Ammon:",
+      "verse": "20:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 90.606,
+      "end": 93.671,
+      "type": "line",
+      "text": "Come, I will go with thee down to the land of Middoni,",
+      "verse": "20:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 93.851,
+      "end": 98.541,
+      "type": "line",
+      "text": "and there I will plead with the king that he will cast thy brethren out of prison.",
+      "verse": "20:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 99.221,
+      "end": 106.141,
+      "type": "line",
+      "text": "And it came to pass that as Ammon and Lamoni were journeying thither, they met the father of Lamoni,",
+      "verse": "20:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 106.321,
+      "end": 108.643,
+      "type": "line",
+      "text": "who was king over all the land.",
+      "verse": "20:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 109.323,
+      "end": 112.852,
+      "type": "line",
+      "text": "And behold, the father of Lamoni said unto him:",
+      "verse": "20:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 113.032,
+      "end": 116.19,
+      "type": "line",
+      "text": "Why did ye not come to the feast on that great day",
+      "verse": "20:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 116.37,
+      "end": 119.621,
+      "type": "line",
+      "text": "when I made a feast unto my sons, and unto my people?",
+      "verse": "20:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 120.301,
+      "end": 121.741,
+      "type": "line",
+      "text": "And he also said:",
+      "verse": "20:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 121.921,
+      "end": 126.658,
+      "type": "line",
+      "text": "Whither art thou going with this Nephite, who is one of the children of a liar?",
+      "verse": "20:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 127.338,
+      "end": 132.214,
+      "type": "line",
+      "text": "And it came to pass that Lamoni rehearsed unto him whither he was going,",
+      "verse": "20:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 132.394,
+      "end": 134.298,
+      "type": "line",
+      "text": "for he feared to offend him.",
+      "verse": "20:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 134.978,
+      "end": 139.204,
+      "type": "line",
+      "text": "And he also told him all the cause of his tarrying in his own kingdom,",
+      "verse": "20:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 139.384,
+      "end": 144.167,
+      "type": "line",
+      "text": "that he did not go unto his father to the feast which he had prepared.",
+      "verse": "20:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 144.847,
+      "end": 148.098,
+      "type": "line",
+      "text": "And now when Lamoni had rehearsed unto him all these things,",
+      "verse": "20:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 148.278,
+      "end": 152.643,
+      "type": "line",
+      "text": "behold, to his astonishment, his father was angry with him, and said:",
+      "verse": "20:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 152.823,
+      "end": 157.513,
+      "type": "line",
+      "text": "Lamoni, thou art going to deliver these Nephites, who are sons of a liar.",
+      "verse": "20:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 157.693,
+      "end": 159.643,
+      "type": "line",
+      "text": "Behold, he robbed our fathers;",
+      "verse": "20:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 159.823,
+      "end": 162.749,
+      "type": "line",
+      "text": "and now his children are also come amongst us",
+      "verse": "20:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 162.929,
+      "end": 166.923,
+      "type": "line",
+      "text": "that they may, by their cunning and their lyings, deceive us,",
+      "verse": "20:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 167.103,
+      "end": 169.797,
+      "type": "line",
+      "text": "that they again may rob us of our property.",
+      "verse": "20:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 170.477,
+      "end": 174.982,
+      "type": "line",
+      "text": "Now the father of Lamoni commanded him that he should slay Ammon with the sword.",
+      "verse": "20:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 175.162,
+      "end": 179.434,
+      "type": "line",
+      "text": "And he also commanded him that he should not go to the land of Middoni,",
+      "verse": "20:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 179.614,
+      "end": 183.004,
+      "type": "line",
+      "text": "but that he should return with him to the land of Ishmael.",
+      "verse": "20:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 183.684,
+      "end": 185.449,
+      "type": "line",
+      "text": "But Lamoni said unto him:",
+      "verse": "20:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 185.629,
+      "end": 187.301,
+      "type": "line",
+      "text": "I will not slay Ammon,",
+      "verse": "20:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 187.481,
+      "end": 190.314,
+      "type": "line",
+      "text": "neither will I return to the land of Ishmael,",
+      "verse": "20:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 190.494,
+      "end": 192.723,
+      "type": "line",
+      "text": "but I go to the land of Middoni",
+      "verse": "20:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 192.903,
+      "end": 195.55,
+      "type": "line",
+      "text": "that I may release the brethren of Ammon,",
+      "verse": "20:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 195.73,
+      "end": 199.91,
+      "type": "line",
+      "text": "for I know that they are just men and holy prophets of the true God.",
+      "verse": "20:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 200.59,
+      "end": 204.305,
+      "type": "line",
+      "text": "Now when his father had heard these words, he was angry with him,",
+      "verse": "20:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 204.485,
+      "end": 206.064,
+      "type": "line",
+      "text": "and he drew his sword",
+      "verse": "20:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 206.244,
+      "end": 208.752,
+      "type": "line",
+      "text": "that he might smite him to the earth.",
+      "verse": "20:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 209.432,
+      "end": 211.893,
+      "type": "line",
+      "text": "But Ammon stood forth and said unto him:",
+      "verse": "20:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 212.073,
+      "end": 214.488,
+      "type": "line",
+      "text": "Behold, thou shalt not slay thy son;",
+      "verse": "20:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 214.668,
+      "end": 217.872,
+      "type": "line",
+      "text": "nevertheless, it were better that he should fall than thee,",
+      "verse": "20:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 218.052,
+      "end": 220.56,
+      "type": "line",
+      "text": "for behold, he has repented of his sins;",
+      "verse": "20:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 220.74,
+      "end": 223.155,
+      "type": "line",
+      "text": "but if thou shouldst fall at this time,",
+      "verse": "20:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 223.335,
+      "end": 225.889,
+      "type": "line",
+      "text": "in thine anger, thy soul could not be saved.",
+      "verse": "20:17",
+      "lineIndex": 68
+    },
+    {
+      "start": 226.569,
+      "end": 229.773,
+      "type": "line",
+      "text": "And again, it is expedient that thou shouldst forbear;",
+      "verse": "20:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 229.953,
+      "end": 234.086,
+      "type": "line",
+      "text": "for if thou shouldst slay thy son, he being an innocent man,",
+      "verse": "20:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 234.266,
+      "end": 237.563,
+      "type": "line",
+      "text": "his blood would cry from the ground to the Lord his God,",
+      "verse": "20:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 237.743,
+      "end": 239.972,
+      "type": "line",
+      "text": "for vengeance to come upon thee;",
+      "verse": "20:18",
+      "lineIndex": 72
+    },
+    {
+      "start": 240.152,
+      "end": 242.242,
+      "type": "line",
+      "text": "and perhaps thou wouldst lose thy soul.",
+      "verse": "20:18",
+      "lineIndex": 73
+    },
+    {
+      "start": 242.922,
+      "end": 247.38,
+      "type": "line",
+      "text": "Now when Ammon had said these words unto him, he answered him, saying:",
+      "verse": "20:19",
+      "lineIndex": 74
+    },
+    {
+      "start": 247.56,
+      "end": 249.836,
+      "type": "line",
+      "text": "I know that if I should slay my son,",
+      "verse": "20:19",
+      "lineIndex": 75
+    },
+    {
+      "start": 250.016,
+      "end": 252.617,
+      "type": "line",
+      "text": "that I should shed innocent blood;",
+      "verse": "20:19",
+      "lineIndex": 76
+    },
+    {
+      "start": 252.797,
+      "end": 255.537,
+      "type": "line",
+      "text": "for it is thou that hast sought to destroy him.",
+      "verse": "20:19",
+      "lineIndex": 77
+    },
+    {
+      "start": 256.217,
+      "end": 258.957,
+      "type": "line",
+      "text": "And he stretched forth his hand to slay Ammon.",
+      "verse": "20:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 259.137,
+      "end": 261.227,
+      "type": "line",
+      "text": "But Ammon withstood his blows,",
+      "verse": "20:20",
+      "lineIndex": 79
+    },
+    {
+      "start": 261.407,
+      "end": 262.986,
+      "type": "line",
+      "text": "and also smote his arm",
+      "verse": "20:20",
+      "lineIndex": 80
+    },
+    {
+      "start": 263.166,
+      "end": 264.791,
+      "type": "line",
+      "text": "that he could not use it.",
+      "verse": "20:20",
+      "lineIndex": 81
+    },
+    {
+      "start": 265.471,
+      "end": 271.415,
+      "type": "line",
+      "text": "Now when the king saw that Ammon could slay him, he began to plead with Ammon that he would spare his life.",
+      "verse": "20:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 272.095,
+      "end": 275.114,
+      "type": "line",
+      "text": "But Ammon raised his sword, and said unto him:",
+      "verse": "20:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 275.294,
+      "end": 278.545,
+      "type": "line",
+      "text": "Behold, I will smite thee except thou wilt grant unto me",
+      "verse": "20:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 278.725,
+      "end": 281.419,
+      "type": "line",
+      "text": "that my brethren may be cast out of prison.",
+      "verse": "20:22",
+      "lineIndex": 86
+    },
+    {
+      "start": 282.099,
+      "end": 285.071,
+      "type": "line",
+      "text": "Now the king, fearing he should lose his life, said:",
+      "verse": "20:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 285.251,
+      "end": 291.149,
+      "type": "line",
+      "text": "If thou wilt spare me I will grant unto thee whatsoever thou wilt ask, even to half of the kingdom.",
+      "verse": "20:23",
+      "lineIndex": 88
+    },
+    {
+      "start": 291.829,
+      "end": 297.123,
+      "type": "line",
+      "text": "Now when Ammon saw that he had wrought upon the old king according to his desire,",
+      "verse": "20:24",
+      "lineIndex": 89
+    },
+    {
+      "start": 297.303,
+      "end": 298.789,
+      "type": "line",
+      "text": "he said unto him:",
+      "verse": "20:24",
+      "lineIndex": 90
+    },
+    {
+      "start": 298.969,
+      "end": 302.824,
+      "type": "line",
+      "text": "If thou wilt grant that my brethren may be cast out of prison,",
+      "verse": "20:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 303.004,
+      "end": 306.069,
+      "type": "line",
+      "text": "and also that Lamoni may retain his kingdom,",
+      "verse": "20:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 306.249,
+      "end": 308.478,
+      "type": "line",
+      "text": "and that ye be not displeased with him,",
+      "verse": "20:24",
+      "lineIndex": 93
+    },
+    {
+      "start": 308.658,
+      "end": 311.955,
+      "type": "line",
+      "text": "but grant that he may do according to his own desires",
+      "verse": "20:24",
+      "lineIndex": 94
+    },
+    {
+      "start": 312.135,
+      "end": 315.479,
+      "type": "line",
+      "text": "in whatsoever thing he thinketh, then will I spare thee;",
+      "verse": "20:24",
+      "lineIndex": 95
+    },
+    {
+      "start": 315.659,
+      "end": 317.888,
+      "type": "line",
+      "text": "otherwise I will smite thee to the earth.",
+      "verse": "20:24",
+      "lineIndex": 96
+    },
+    {
+      "start": 318.568,
+      "end": 323.119,
+      "type": "line",
+      "text": "Now when Ammon had said these words, the king began to rejoice because of his life.",
+      "verse": "20:25",
+      "lineIndex": 97
+    },
+    {
+      "start": 323.799,
+      "end": 327.096,
+      "type": "line",
+      "text": "And when he saw that Ammon had no desire to destroy him,",
+      "verse": "20:26",
+      "lineIndex": 98
+    },
+    {
+      "start": 327.276,
+      "end": 334.196,
+      "type": "line",
+      "text": "and when he also saw the great love he had for his son Lamoni, he was astonished exceedingly, and said:",
+      "verse": "20:26",
+      "lineIndex": 99
+    },
+    {
+      "start": 334.376,
+      "end": 338.695,
+      "type": "line",
+      "text": "Because this is all that thou hast desired, that I would release thy brethren,",
+      "verse": "20:26",
+      "lineIndex": 100
+    },
+    {
+      "start": 338.875,
+      "end": 342.126,
+      "type": "line",
+      "text": "and suffer that my son Lamoni should retain his kingdom,",
+      "verse": "20:26",
+      "lineIndex": 101
+    },
+    {
+      "start": 342.306,
+      "end": 348.111,
+      "type": "line",
+      "text": "behold, I will grant unto you that my son may retain his kingdom from this time and forever;",
+      "verse": "20:26",
+      "lineIndex": 102
+    },
+    {
+      "start": 348.291,
+      "end": 350.52,
+      "type": "line",
+      "text": "and I will govern him no more\u2014",
+      "verse": "20:26",
+      "lineIndex": 103
+    },
+    {
+      "start": 351.2,
+      "end": 356.03,
+      "type": "line",
+      "text": "And I will also grant unto thee that thy brethren may be cast out of prison,",
+      "verse": "20:27",
+      "lineIndex": 104
+    },
+    {
+      "start": 356.21,
+      "end": 359.832,
+      "type": "line",
+      "text": "and thou and thy brethren may come unto me, in my kingdom;",
+      "verse": "20:27",
+      "lineIndex": 105
+    },
+    {
+      "start": 360.012,
+      "end": 362.38,
+      "type": "line",
+      "text": "for I shall greatly desire to see thee.",
+      "verse": "20:27",
+      "lineIndex": 106
+    },
+    {
+      "start": 362.56,
+      "end": 367.297,
+      "type": "line",
+      "text": "For the king was greatly astonished at the words which he had spoken,",
+      "verse": "20:27",
+      "lineIndex": 107
+    },
+    {
+      "start": 367.477,
+      "end": 371.517,
+      "type": "line",
+      "text": "and also at the words which had been spoken by his son Lamoni,",
+      "verse": "20:27",
+      "lineIndex": 108
+    },
+    {
+      "start": 371.697,
+      "end": 374.298,
+      "type": "line",
+      "text": "therefore he was desirous to learn them.",
+      "verse": "20:27",
+      "lineIndex": 109
+    },
+    {
+      "start": 374.978,
+      "end": 381.155,
+      "type": "line",
+      "text": "And it came to pass that Ammon and Lamoni proceeded on their journey towards the land of Middoni.",
+      "verse": "20:28",
+      "lineIndex": 110
+    },
+    {
+      "start": 381.335,
+      "end": 385.236,
+      "type": "line",
+      "text": "And Lamoni found favor in the eyes of the king of the land;",
+      "verse": "20:28",
+      "lineIndex": 111
+    },
+    {
+      "start": 385.416,
+      "end": 389.735,
+      "type": "line",
+      "text": "therefore the brethren of Ammon were brought forth out of prison.",
+      "verse": "20:28",
+      "lineIndex": 112
+    },
+    {
+      "start": 390.415,
+      "end": 393.898,
+      "type": "line",
+      "text": "And when Ammon did meet them he was exceedingly sorrowful,",
+      "verse": "20:29",
+      "lineIndex": 113
+    },
+    {
+      "start": 394.078,
+      "end": 396.075,
+      "type": "line",
+      "text": "for behold they were naked,",
+      "verse": "20:29",
+      "lineIndex": 114
+    },
+    {
+      "start": 396.255,
+      "end": 401.038,
+      "type": "line",
+      "text": "and their skins were worn exceedingly because of being bound with strong cords.",
+      "verse": "20:29",
+      "lineIndex": 115
+    },
+    {
+      "start": 401.218,
+      "end": 405.583,
+      "type": "line",
+      "text": "And they also had suffered hunger, thirst, and all kinds of afflictions;",
+      "verse": "20:29",
+      "lineIndex": 116
+    },
+    {
+      "start": 405.763,
+      "end": 408.921,
+      "type": "line",
+      "text": "nevertheless they were patient in all their sufferings.",
+      "verse": "20:29",
+      "lineIndex": 117
+    },
+    {
+      "start": 409.601,
+      "end": 417.171,
+      "type": "line",
+      "text": "And, as it happened, it was their lot to have fallen into the hands of a more hardened and a more stiffnecked people;",
+      "verse": "20:30",
+      "lineIndex": 118
+    },
+    {
+      "start": 417.351,
+      "end": 420.184,
+      "type": "line",
+      "text": "therefore they would not hearken unto their words,",
+      "verse": "20:30",
+      "lineIndex": 119
+    },
+    {
+      "start": 420.364,
+      "end": 422.5,
+      "type": "line",
+      "text": "and they had cast them out,",
+      "verse": "20:30",
+      "lineIndex": 120
+    },
+    {
+      "start": 422.68,
+      "end": 424.398,
+      "type": "line",
+      "text": "and had smitten them,",
+      "verse": "20:30",
+      "lineIndex": 121
+    },
+    {
+      "start": 424.578,
+      "end": 427.039,
+      "type": "line",
+      "text": "and had driven them from house to house,",
+      "verse": "20:30",
+      "lineIndex": 122
+    },
+    {
+      "start": 427.219,
+      "end": 428.798,
+      "type": "line",
+      "text": "and from place to place,",
+      "verse": "20:30",
+      "lineIndex": 123
+    },
+    {
+      "start": 428.978,
+      "end": 432.043,
+      "type": "line",
+      "text": "even until they had arrived in the land of Middoni;",
+      "verse": "20:30",
+      "lineIndex": 124
+    },
+    {
+      "start": 432.223,
+      "end": 434.034,
+      "type": "line",
+      "text": "and there they were taken",
+      "verse": "20:30",
+      "lineIndex": 125
+    },
+    {
+      "start": 434.214,
+      "end": 435.839,
+      "type": "line",
+      "text": "and cast into prison,",
+      "verse": "20:30",
+      "lineIndex": 126
+    },
+    {
+      "start": 436.019,
+      "end": 438.016,
+      "type": "line",
+      "text": "and bound with strong cords,",
+      "verse": "20:30",
+      "lineIndex": 127
+    },
+    {
+      "start": 438.196,
+      "end": 440.611,
+      "type": "line",
+      "text": "and kept in prison for many days,",
+      "verse": "20:30",
+      "lineIndex": 128
+    },
+    {
+      "start": 440.791,
+      "end": 443.345,
+      "type": "line",
+      "text": "and were delivered by Lamoni and Ammon.",
+      "verse": "20:30",
+      "lineIndex": 129
+    }
+  ]
+}
