@@ -1,16 +1,27 @@
 #!/bin/sh
 # BofM Reader commit-msg hook
-# Detects canon extensions (§7.3 trigger #1 patterns) and blocks commits
-# that introduce them without audit evidence in the commit message.
+# Runs two checks against the staged diff + commit message:
 #
-# Closes the gap that the regression-baseline pre-commit hook can't:
-# new closed-list additions that don't increase any existing rule's
-# violation count.
+#  1. check_canon_extensions.py — detects canon extensions (§7.3 trigger
+#     #1 patterns) and blocks commits that introduce them without audit
+#     evidence in the commit message. Closes the gap that the regression-
+#     baseline pre-commit hook can't: new closed-list additions that
+#     don't increase any existing rule's violation count.
+#
+#  2. check_commit_scope.py — detects cross-category staging-scope leaks
+#     (e.g., audio/ files swept into a canon-prose commit). Multi-
+#     category commits MUST mention every staged category in the message
+#     or include an explicit "category-skip: <cats>" waiver. Codified
+#     2026-05-16 per directives/processed/2026-05-16-1500-pending-
+#     decisions.md item 4 after twice swept-into-canon-commit failures.
 #
 # To bypass (Stan-only, explicit decision):
 #   git commit --no-verify -m '...'
+
+set -e
 
 REPO_ROOT=$(git rev-parse --show-toplevel)
 cd "$REPO_ROOT"
 
 PYTHONIOENCODING=utf-8 python3 validators/check_canon_extensions.py "$1"
+PYTHONIOENCODING=utf-8 python3 validators/check_commit_scope.py "$1"
