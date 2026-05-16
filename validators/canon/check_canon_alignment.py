@@ -100,18 +100,26 @@ def extract_closed_list_names(body: str) -> list[str]:
 
 
 def extract_signature_deprels(body: str) -> set[str]:
-    """Pick deprel values from UD signature YAML blocks."""
-    # Look inside ```yaml ... ``` or ~~~yaml ... ~~~ blocks
+    """Pick deprel values from UD signature YAML blocks.
+
+    Strips YAML inline comments (everything after `#` on the value line)
+    BEFORE splitting on whitespace — without that, R28's
+    `relation: advcl                # advcl as sibling-of or dependent-of...`
+    would parse "sibling-of" / "dependent-of" / etc. as bogus deprels
+    (alignment-script FP surfaced 2026-05-16).
+    """
     deprels = set()
     for code in re.finditer(r'(?:```|~~~)yaml\s*(.*?)\s*(?:```|~~~)', body, re.DOTALL):
         block = code.group(1)
         for m in re.finditer(r'relation:\s*\[?\s*([^\]\n]+)', block):
-            for d in re.split(r'[,\s]+', m.group(1).strip().strip("[]")):
+            value = m.group(1).split('#', 1)[0]   # strip inline comment
+            for d in re.split(r'[,\s]+', value.strip().strip("[]")):
                 if d and not d.startswith(("#", "<")):
                     deprels.add(d.strip().strip("'\""))
         # `deprel:` and `deprel_in:` keys
         for m in re.finditer(r'deprel(?:_in)?:\s*\[?\s*([^\]\n]+)', block):
-            for d in re.split(r'[,\s]+', m.group(1).strip().strip("[]")):
+            value = m.group(1).split('#', 1)[0]   # strip inline comment
+            for d in re.split(r'[,\s]+', value.strip().strip("[]")):
                 if d and not d.startswith(("#", "<")):
                     deprels.add(d.strip().strip("'\""))
     return deprels
