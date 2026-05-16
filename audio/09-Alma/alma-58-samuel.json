@@ -1,0 +1,1240 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 58,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 641.108,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.201,
+      "type": "line",
+      "text": "And behold, now it came to pass that our next object was to obtain the city of Manti;",
+      "verse": "58:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.381,
+      "end": 7.564,
+      "type": "line",
+      "text": "but behold, there was no way",
+      "verse": "58:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.744,
+      "end": 11.273,
+      "type": "line",
+      "text": "that we could lead them out of the city by our small bands.",
+      "verse": "58:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.453,
+      "end": 15.075,
+      "type": "line",
+      "text": "For behold, they remembered that which we had hitherto done;",
+      "verse": "58:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.255,
+      "end": 18.738,
+      "type": "line",
+      "text": "therefore we could not decoy them away from their strongholds.",
+      "verse": "58:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.418,
+      "end": 23.04,
+      "type": "line",
+      "text": "And they were so much more numerous than was our army",
+      "verse": "58:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.22,
+      "end": 26.935,
+      "type": "line",
+      "text": "that we durst not go forth and attack them in their strongholds.",
+      "verse": "58:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 27.615,
+      "end": 34.302,
+      "type": "line",
+      "text": "Yea, and it became expedient that we should employ our men to the maintaining those parts of the land",
+      "verse": "58:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 34.482,
+      "end": 37.036,
+      "type": "line",
+      "text": "which we had regained of our possessions;",
+      "verse": "58:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 37.216,
+      "end": 40.653,
+      "type": "line",
+      "text": "therefore it became expedient that we should wait,",
+      "verse": "58:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 40.833,
+      "end": 47.242,
+      "type": "line",
+      "text": "that we might receive more strength from the land of Zarahemla and also a new supply of provisions.",
+      "verse": "58:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 47.922,
+      "end": 57.117,
+      "type": "line",
+      "text": "And it came to pass that I thus did send an embassy to the governor of our land, to acquaint him concerning the affairs of our people.",
+      "verse": "58:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 57.297,
+      "end": 63.381,
+      "type": "line",
+      "text": "And it came to pass that we did wait to receive provisions and strength from the land of Zarahemla.",
+      "verse": "58:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 64.061,
+      "end": 66.755,
+      "type": "line",
+      "text": "But behold, this did profit us but little;",
+      "verse": "58:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 66.935,
+      "end": 73.669,
+      "type": "line",
+      "text": "for the Lamanites were also receiving great strength from day to day, and also many provisions;",
+      "verse": "58:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 73.849,
+      "end": 77.146,
+      "type": "line",
+      "text": "and thus were our circumstances at this period of time.",
+      "verse": "58:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 77.826,
+      "end": 82.052,
+      "type": "line",
+      "text": "And the Lamanites were sallying forth against us from time to time,",
+      "verse": "58:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 82.232,
+      "end": 84.879,
+      "type": "line",
+      "text": "resolving by stratagem to destroy us;",
+      "verse": "58:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 85.059,
+      "end": 90.678,
+      "type": "line",
+      "text": "nevertheless we could not come to battle with them, because of their retreats and their strongholds.",
+      "verse": "58:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 91.358,
+      "end": 98.138,
+      "type": "line",
+      "text": "And it came to pass that we did wait in these difficult circumstances for the space of many months,",
+      "verse": "58:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 98.318,
+      "end": 101.94,
+      "type": "line",
+      "text": "even until we were about to perish for the want of food.",
+      "verse": "58:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 102.62,
+      "end": 105.546,
+      "type": "line",
+      "text": "But it came to pass that we did receive food,",
+      "verse": "58:8",
+      "lineIndex": 22
+    },
+    {
+      "start": 105.726,
+      "end": 111.206,
+      "type": "line",
+      "text": "which was guarded to us by an army of two thousand men to our assistance;",
+      "verse": "58:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 111.386,
+      "end": 122.532,
+      "type": "line",
+      "text": "and this is all the assistance which we did receive, to defend ourselves and our country from falling into the hands of our enemies, yea, to contend with an enemy which was innumerable.",
+      "verse": "58:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 123.212,
+      "end": 125.859,
+      "type": "line",
+      "text": "And now the cause of these our embarrassments,",
+      "verse": "58:9",
+      "lineIndex": 25
+    },
+    {
+      "start": 126.039,
+      "end": 130.497,
+      "type": "line",
+      "text": "or the cause why they did not send more strength unto us, we knew not;",
+      "verse": "58:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 130.677,
+      "end": 133.788,
+      "type": "line",
+      "text": "therefore we were grieved and also filled with fear,",
+      "verse": "58:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 133.968,
+      "end": 137.962,
+      "type": "line",
+      "text": "lest by any means the judgments of God should come upon our land,",
+      "verse": "58:9",
+      "lineIndex": 28
+    },
+    {
+      "start": 138.142,
+      "end": 140.882,
+      "type": "line",
+      "text": "to our overthrow and utter destruction.",
+      "verse": "58:9",
+      "lineIndex": 29
+    },
+    {
+      "start": 141.562,
+      "end": 145.138,
+      "type": "line",
+      "text": "Therefore we did pour out our souls in prayer to God,",
+      "verse": "58:10",
+      "lineIndex": 30
+    },
+    {
+      "start": 145.318,
+      "end": 147.268,
+      "type": "line",
+      "text": "that he would strengthen us",
+      "verse": "58:10",
+      "lineIndex": 31
+    },
+    {
+      "start": 147.448,
+      "end": 150.559,
+      "type": "line",
+      "text": "and deliver us out of the hands of our enemies,",
+      "verse": "58:10",
+      "lineIndex": 32
+    },
+    {
+      "start": 150.739,
+      "end": 152.782,
+      "type": "line",
+      "text": "yea, and also give us strength",
+      "verse": "58:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 152.962,
+      "end": 156.631,
+      "type": "line",
+      "text": "that we might retain our cities, and our lands,",
+      "verse": "58:10",
+      "lineIndex": 34
+    },
+    {
+      "start": 156.811,
+      "end": 160.294,
+      "type": "line",
+      "text": "and our possessions, for the support of our people.",
+      "verse": "58:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 160.974,
+      "end": 172.538,
+      "type": "line",
+      "text": "Yea, and it came to pass that the Lord our God did visit us with assurances that he would deliver us; yea, insomuch that he did speak peace to our souls,",
+      "verse": "58:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 172.718,
+      "end": 175.133,
+      "type": "line",
+      "text": "and did grant unto us great faith,",
+      "verse": "58:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 175.313,
+      "end": 179.075,
+      "type": "line",
+      "text": "and did cause us that we should hope for our deliverance in him.",
+      "verse": "58:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 179.755,
+      "end": 183.888,
+      "type": "line",
+      "text": "And we did take courage with our small force which we had received,",
+      "verse": "58:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 184.068,
+      "end": 187.969,
+      "type": "line",
+      "text": "and were fixed with a determination to conquer our enemies,",
+      "verse": "58:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 188.149,
+      "end": 191.353,
+      "type": "line",
+      "text": "and to maintain our lands, and our possessions,",
+      "verse": "58:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 191.533,
+      "end": 192.973,
+      "type": "line",
+      "text": "and our wives,",
+      "verse": "58:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 193.153,
+      "end": 194.546,
+      "type": "line",
+      "text": "and our children,",
+      "verse": "58:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 194.726,
+      "end": 197.187,
+      "type": "line",
+      "text": "and the cause of our liberty.",
+      "verse": "58:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 197.867,
+      "end": 202.325,
+      "type": "line",
+      "text": "And thus we did go forth with all our might against the Lamanites,",
+      "verse": "58:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 202.505,
+      "end": 204.641,
+      "type": "line",
+      "text": "who were in the city of Manti;",
+      "verse": "58:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 204.821,
+      "end": 209.558,
+      "type": "line",
+      "text": "and we did pitch our tents by the wilderness side, which was near to the city.",
+      "verse": "58:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 210.238,
+      "end": 212.374,
+      "type": "line",
+      "text": "And it came to pass that on the morrow,",
+      "verse": "58:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 212.554,
+      "end": 216.037,
+      "type": "line",
+      "text": "that when the Lamanites saw that we were in the borders",
+      "verse": "58:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 216.217,
+      "end": 218.771,
+      "type": "line",
+      "text": "by the wilderness which was near the city,",
+      "verse": "58:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 218.951,
+      "end": 222.109,
+      "type": "line",
+      "text": "that they sent out their spies round about us",
+      "verse": "58:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 222.289,
+      "end": 226.283,
+      "type": "line",
+      "text": "that they might discover the number and the strength of our army.",
+      "verse": "58:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 226.963,
+      "end": 233.232,
+      "type": "line",
+      "text": "And it came to pass that when they saw that we were not strong, according to our numbers,",
+      "verse": "58:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 233.412,
+      "end": 237.127,
+      "type": "line",
+      "text": "and fearing that we should cut them off from their support",
+      "verse": "58:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 237.307,
+      "end": 240.836,
+      "type": "line",
+      "text": "except they should come out to battle against us and kill us,",
+      "verse": "58:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 241.016,
+      "end": 245.939,
+      "type": "line",
+      "text": "and also supposing that they could easily destroy us with their numerous hosts,",
+      "verse": "58:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 246.119,
+      "end": 251.181,
+      "type": "line",
+      "text": "therefore they began to make preparations to come out against us to battle.",
+      "verse": "58:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 251.861,
+      "end": 256.226,
+      "type": "line",
+      "text": "And when we saw that they were making preparations to come out against us,",
+      "verse": "58:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 256.406,
+      "end": 259.703,
+      "type": "line",
+      "text": "behold, I caused that Gid, with a small number of men,",
+      "verse": "58:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 259.883,
+      "end": 262.577,
+      "type": "line",
+      "text": "should secrete himself in the wilderness,",
+      "verse": "58:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 262.757,
+      "end": 269.63,
+      "type": "line",
+      "text": "and also that Teomner and a small number of men should secrete themselves also in the wilderness.",
+      "verse": "58:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 270.31,
+      "end": 274.118,
+      "type": "line",
+      "text": "Now Gid and his men were on the right and the others on the left;",
+      "verse": "58:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 274.298,
+      "end": 277.084,
+      "type": "line",
+      "text": "and when they had thus secreted themselves,",
+      "verse": "58:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 277.264,
+      "end": 282.326,
+      "type": "line",
+      "text": "behold, I remained, with the remainder of my army, in that same place",
+      "verse": "58:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 282.506,
+      "end": 285.014,
+      "type": "line",
+      "text": "where we had first pitched our tents",
+      "verse": "58:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 285.194,
+      "end": 288.398,
+      "type": "line",
+      "text": "against the time that the Lamanites should come out to battle.",
+      "verse": "58:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 289.078,
+      "end": 294.651,
+      "type": "line",
+      "text": "And it came to pass that the Lamanites did come out with their numerous army against us.",
+      "verse": "58:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 294.831,
+      "end": 302.215,
+      "type": "line",
+      "text": "And when they had come and were about to fall upon us with the sword, I caused that my men, those who were",
+      "verse": "58:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 302.395,
+      "end": 305.321,
+      "type": "line",
+      "text": "with me, should retreat into the wilderness.",
+      "verse": "58:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 306.001,
+      "end": 310.273,
+      "type": "line",
+      "text": "And it came to pass that the Lamanites did follow after us with great speed,",
+      "verse": "58:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 310.453,
+      "end": 313.843,
+      "type": "line",
+      "text": "for they were exceedingly desirous to overtake us",
+      "verse": "58:19",
+      "lineIndex": 73
+    },
+    {
+      "start": 314.023,
+      "end": 315.695,
+      "type": "line",
+      "text": "that they might slay us;",
+      "verse": "58:19",
+      "lineIndex": 74
+    },
+    {
+      "start": 315.875,
+      "end": 319.172,
+      "type": "line",
+      "text": "therefore they did follow us into the wilderness;",
+      "verse": "58:19",
+      "lineIndex": 75
+    },
+    {
+      "start": 319.352,
+      "end": 326.504,
+      "type": "line",
+      "text": "and we did pass by in the midst of Gid and Teomner, insomuch that they were not discovered by the Lamanites.",
+      "verse": "58:19",
+      "lineIndex": 76
+    },
+    {
+      "start": 327.184,
+      "end": 330.853,
+      "type": "line",
+      "text": "And it came to pass that when the Lamanites had passed by,",
+      "verse": "58:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 331.033,
+      "end": 333.587,
+      "type": "line",
+      "text": "or when the army had passed by,",
+      "verse": "58:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 333.767,
+      "end": 337.25,
+      "type": "line",
+      "text": "Gid and Teomner did rise up from their secret places,",
+      "verse": "58:20",
+      "lineIndex": 79
+    },
+    {
+      "start": 337.43,
+      "end": 340.17,
+      "type": "line",
+      "text": "and did cut off the spies of the Lamanites",
+      "verse": "58:20",
+      "lineIndex": 80
+    },
+    {
+      "start": 340.35,
+      "end": 342.951,
+      "type": "line",
+      "text": "that they should not return to the city.",
+      "verse": "58:20",
+      "lineIndex": 81
+    },
+    {
+      "start": 343.631,
+      "end": 347.021,
+      "type": "line",
+      "text": "And it came to pass that when they had cut them off,",
+      "verse": "58:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 347.201,
+      "end": 351.659,
+      "type": "line",
+      "text": "they ran to the city and fell upon the guards who were left to guard the city,",
+      "verse": "58:21",
+      "lineIndex": 83
+    },
+    {
+      "start": 351.839,
+      "end": 356.529,
+      "type": "line",
+      "text": "insomuch that they did destroy them and did take possession of the city.",
+      "verse": "58:21",
+      "lineIndex": 84
+    },
+    {
+      "start": 357.209,
+      "end": 358.788,
+      "type": "line",
+      "text": "Now this was done",
+      "verse": "58:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 358.968,
+      "end": 366.213,
+      "type": "line",
+      "text": "because the Lamanites did suffer their whole army, save a few guards only, to be led away into the wilderness.",
+      "verse": "58:22",
+      "lineIndex": 86
+    },
+    {
+      "start": 366.893,
+      "end": 373.162,
+      "type": "line",
+      "text": "And it came to pass that Gid and Teomner by this means had obtained possession of their strongholds.",
+      "verse": "58:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 373.342,
+      "end": 376.407,
+      "type": "line",
+      "text": "And it came to pass that we took our course,",
+      "verse": "58:23",
+      "lineIndex": 88
+    },
+    {
+      "start": 376.587,
+      "end": 380.999,
+      "type": "line",
+      "text": "after having traveled much in the wilderness towards the land of Zarahemla.",
+      "verse": "58:23",
+      "lineIndex": 89
+    },
+    {
+      "start": 381.679,
+      "end": 384.744,
+      "type": "line",
+      "text": "And when the Lamanites saw that they were marching",
+      "verse": "58:24",
+      "lineIndex": 90
+    },
+    {
+      "start": 384.924,
+      "end": 389.196,
+      "type": "line",
+      "text": "towards the land of Zarahemla, they were exceedingly afraid,",
+      "verse": "58:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 389.376,
+      "end": 393.091,
+      "type": "line",
+      "text": "lest there was a plan laid to lead them on to destruction;",
+      "verse": "58:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 393.271,
+      "end": 396.986,
+      "type": "line",
+      "text": "therefore they began to retreat into the wilderness again,",
+      "verse": "58:24",
+      "lineIndex": 93
+    },
+    {
+      "start": 397.166,
+      "end": 400.045,
+      "type": "line",
+      "text": "yea, even back by the same way which they had come.",
+      "verse": "58:24",
+      "lineIndex": 94
+    },
+    {
+      "start": 400.725,
+      "end": 404.301,
+      "type": "line",
+      "text": "And behold, it was night and they did pitch their tents,",
+      "verse": "58:25",
+      "lineIndex": 95
+    },
+    {
+      "start": 404.481,
+      "end": 411.958,
+      "type": "line",
+      "text": "for the chief captains of the Lamanites had supposed that the Nephites were weary because of their march;",
+      "verse": "58:25",
+      "lineIndex": 96
+    },
+    {
+      "start": 412.138,
+      "end": 415.296,
+      "type": "line",
+      "text": "and supposing that they had driven their whole army",
+      "verse": "58:25",
+      "lineIndex": 97
+    },
+    {
+      "start": 415.476,
+      "end": 418.866,
+      "type": "line",
+      "text": "therefore they took no thought concerning the city of Manti.",
+      "verse": "58:25",
+      "lineIndex": 98
+    },
+    {
+      "start": 419.546,
+      "end": 424.422,
+      "type": "line",
+      "text": "Now it came to pass that when it was night, I caused that my men should not sleep,",
+      "verse": "58:26",
+      "lineIndex": 99
+    },
+    {
+      "start": 424.602,
+      "end": 429.664,
+      "type": "line",
+      "text": "but that they should march forward by another way towards the land of Manti.",
+      "verse": "58:26",
+      "lineIndex": 100
+    },
+    {
+      "start": 430.344,
+      "end": 433.502,
+      "type": "line",
+      "text": "And because of this our march in the night-time,",
+      "verse": "58:27",
+      "lineIndex": 101
+    },
+    {
+      "start": 433.682,
+      "end": 437.072,
+      "type": "line",
+      "text": "behold, on the morrow we were beyond the Lamanites,",
+      "verse": "58:27",
+      "lineIndex": 102
+    },
+    {
+      "start": 437.252,
+      "end": 441.06,
+      "type": "line",
+      "text": "insomuch that we did arrive before them at the city of Manti.",
+      "verse": "58:27",
+      "lineIndex": 103
+    },
+    {
+      "start": 441.74,
+      "end": 445.13,
+      "type": "line",
+      "text": "And thus it came to pass, that by this stratagem",
+      "verse": "58:28",
+      "lineIndex": 104
+    },
+    {
+      "start": 445.31,
+      "end": 449.536,
+      "type": "line",
+      "text": "we did take possession of the city of Manti without the shedding of blood.",
+      "verse": "58:28",
+      "lineIndex": 105
+    },
+    {
+      "start": 450.216,
+      "end": 455.882,
+      "type": "line",
+      "text": "And it came to pass that when the armies of the Lamanites did arrive near the city,",
+      "verse": "58:29",
+      "lineIndex": 106
+    },
+    {
+      "start": 456.062,
+      "end": 458.663,
+      "type": "line",
+      "text": "and saw that we were prepared to meet them,",
+      "verse": "58:29",
+      "lineIndex": 107
+    },
+    {
+      "start": 458.843,
+      "end": 466.831,
+      "type": "line",
+      "text": "they were astonished exceedingly and struck with great fear, insomuch that they did flee into the wilderness.",
+      "verse": "58:29",
+      "lineIndex": 108
+    },
+    {
+      "start": 467.511,
+      "end": 474.291,
+      "type": "line",
+      "text": "Yea, and it came to pass that the armies of the Lamanites did flee out of all this quarter of the land.",
+      "verse": "58:30",
+      "lineIndex": 109
+    },
+    {
+      "start": 474.471,
+      "end": 476.7,
+      "type": "line",
+      "text": "But behold, they have carried with them",
+      "verse": "58:30",
+      "lineIndex": 110
+    },
+    {
+      "start": 476.88,
+      "end": 479.341,
+      "type": "line",
+      "text": "many women and children out of the land.",
+      "verse": "58:30",
+      "lineIndex": 111
+    },
+    {
+      "start": 480.021,
+      "end": 483.504,
+      "type": "line",
+      "text": "And those cities which had been taken by the Lamanites,",
+      "verse": "58:31",
+      "lineIndex": 113
+    },
+    {
+      "start": 483.684,
+      "end": 487.26,
+      "type": "line",
+      "text": "all of them are at this period of time in our possession;",
+      "verse": "58:31",
+      "lineIndex": 114
+    },
+    {
+      "start": 487.44,
+      "end": 492.641,
+      "type": "line",
+      "text": "and our fathers and our women and our children are returning to their homes,",
+      "verse": "58:31",
+      "lineIndex": 115
+    },
+    {
+      "start": 492.821,
+      "end": 496.583,
+      "type": "line",
+      "text": "all save it be those who have been taken prisoners",
+      "verse": "58:31",
+      "lineIndex": 116
+    },
+    {
+      "start": 496.763,
+      "end": 498.946,
+      "type": "line",
+      "text": "and carried off by the Lamanites.",
+      "verse": "58:31",
+      "lineIndex": 117
+    },
+    {
+      "start": 499.626,
+      "end": 506.592,
+      "type": "line",
+      "text": "But behold, our armies are small to maintain so great a number of cities and so great possessions.",
+      "verse": "58:32",
+      "lineIndex": 118
+    },
+    {
+      "start": 507.272,
+      "end": 512.009,
+      "type": "line",
+      "text": "But behold, we trust in our God who has given us victory over those lands,",
+      "verse": "58:33",
+      "lineIndex": 119
+    },
+    {
+      "start": 512.189,
+      "end": 517.251,
+      "type": "line",
+      "text": "insomuch that we have obtained those cities and those lands, which were our own.",
+      "verse": "58:33",
+      "lineIndex": 120
+    },
+    {
+      "start": 517.931,
+      "end": 522.296,
+      "type": "line",
+      "text": "Now we do not know the cause that the government does not grant us more strength;",
+      "verse": "58:34",
+      "lineIndex": 121
+    },
+    {
+      "start": 522.476,
+      "end": 525.402,
+      "type": "line",
+      "text": "neither do those men who came up unto us know",
+      "verse": "58:34",
+      "lineIndex": 122
+    },
+    {
+      "start": 525.582,
+      "end": 527.997,
+      "type": "line",
+      "text": "why we have not received greater strength.",
+      "verse": "58:34",
+      "lineIndex": 123
+    },
+    {
+      "start": 528.677,
+      "end": 531.742,
+      "type": "line",
+      "text": "Behold, we do not know but what ye are unsuccessful,",
+      "verse": "58:35",
+      "lineIndex": 124
+    },
+    {
+      "start": 531.922,
+      "end": 535.637,
+      "type": "line",
+      "text": "and ye have drawn away the forces into that quarter of the land;",
+      "verse": "58:35",
+      "lineIndex": 125
+    },
+    {
+      "start": 535.817,
+      "end": 538.139,
+      "type": "line",
+      "text": "if so, we do not desire to murmur.",
+      "verse": "58:35",
+      "lineIndex": 126
+    },
+    {
+      "start": 538.819,
+      "end": 540.259,
+      "type": "line",
+      "text": "And if it is not so,",
+      "verse": "58:36",
+      "lineIndex": 127
+    },
+    {
+      "start": 540.439,
+      "end": 544.433,
+      "type": "line",
+      "text": "behold, we fear that there is some faction in the government,",
+      "verse": "58:36",
+      "lineIndex": 128
+    },
+    {
+      "start": 544.613,
+      "end": 547.771,
+      "type": "line",
+      "text": "that they do not send more men to our assistance;",
+      "verse": "58:36",
+      "lineIndex": 129
+    },
+    {
+      "start": 547.951,
+      "end": 552.084,
+      "type": "line",
+      "text": "for we know that they are more numerous than that which they have sent.",
+      "verse": "58:36",
+      "lineIndex": 130
+    },
+    {
+      "start": 552.764,
+      "end": 554.9,
+      "type": "line",
+      "text": "But, behold, it mattereth not\u2014",
+      "verse": "58:37",
+      "lineIndex": 131
+    },
+    {
+      "start": 555.08,
+      "end": 559.585,
+      "type": "line",
+      "text": "we trust God will deliver us, notwithstanding the weakness of our armies,",
+      "verse": "58:37",
+      "lineIndex": 132
+    },
+    {
+      "start": 559.765,
+      "end": 563.434,
+      "type": "line",
+      "text": "yea, and deliver us out of the hands of our enemies.",
+      "verse": "58:37",
+      "lineIndex": 133
+    },
+    {
+      "start": 564.114,
+      "end": 567.597,
+      "type": "line",
+      "text": "Behold, this is the twenty and ninth year, in the latter end,",
+      "verse": "58:38",
+      "lineIndex": 134
+    },
+    {
+      "start": 567.777,
+      "end": 570.331,
+      "type": "line",
+      "text": "and we are in the possession of our lands;",
+      "verse": "58:38",
+      "lineIndex": 135
+    },
+    {
+      "start": 570.511,
+      "end": 573.855,
+      "type": "line",
+      "text": "and the Lamanites have fled to the land of Nephi.",
+      "verse": "58:38",
+      "lineIndex": 136
+    },
+    {
+      "start": 574.535,
+      "end": 580.897,
+      "type": "line",
+      "text": "And those sons of the people of Ammon, of whom I have so highly spoken, are with me in the city of Manti;",
+      "verse": "58:39",
+      "lineIndex": 137
+    },
+    {
+      "start": 581.077,
+      "end": 583.26,
+      "type": "line",
+      "text": "and the Lord has supported them,",
+      "verse": "58:39",
+      "lineIndex": 138
+    },
+    {
+      "start": 583.44,
+      "end": 586.551,
+      "type": "line",
+      "text": "yea, and kept them from falling by the sword,",
+      "verse": "58:39",
+      "lineIndex": 139
+    },
+    {
+      "start": 586.731,
+      "end": 589.842,
+      "type": "line",
+      "text": "insomuch that even one soul has not been slain.",
+      "verse": "58:39",
+      "lineIndex": 140
+    },
+    {
+      "start": 590.522,
+      "end": 593.123,
+      "type": "line",
+      "text": "But behold, they have received many wounds;",
+      "verse": "58:40",
+      "lineIndex": 141
+    },
+    {
+      "start": 593.303,
+      "end": 595.486,
+      "type": "line",
+      "text": "nevertheless they stand fast",
+      "verse": "58:40",
+      "lineIndex": 142
+    },
+    {
+      "start": 595.666,
+      "end": 598.731,
+      "type": "line",
+      "text": "in that liberty wherewith God has made them free;",
+      "verse": "58:40",
+      "lineIndex": 143
+    },
+    {
+      "start": 598.911,
+      "end": 603.091,
+      "type": "line",
+      "text": "and they are strict to remember the Lord their God from day to day;",
+      "verse": "58:40",
+      "lineIndex": 144
+    },
+    {
+      "start": 603.271,
+      "end": 608.983,
+      "type": "line",
+      "text": "yea, they do observe to keep his statutes, and his judgments, and his commandments continually;",
+      "verse": "58:40",
+      "lineIndex": 145
+    },
+    {
+      "start": 609.163,
+      "end": 614.689,
+      "type": "line",
+      "text": "and their faith is strong in the prophecies concerning that which is to come.",
+      "verse": "58:40",
+      "lineIndex": 146
+    },
+    {
+      "start": 615.369,
+      "end": 619.363,
+      "type": "line",
+      "text": "And now, my beloved brother, Moroni, may the Lord our God,",
+      "verse": "58:41",
+      "lineIndex": 147
+    },
+    {
+      "start": 619.543,
+      "end": 621.772,
+      "type": "line",
+      "text": "who has redeemed us and made us free,",
+      "verse": "58:41",
+      "lineIndex": 148
+    },
+    {
+      "start": 621.952,
+      "end": 624.413,
+      "type": "line",
+      "text": "keep you continually in his presence;",
+      "verse": "58:41",
+      "lineIndex": 149
+    },
+    {
+      "start": 624.593,
+      "end": 626.729,
+      "type": "line",
+      "text": "yea, and may he favor this people,",
+      "verse": "58:41",
+      "lineIndex": 150
+    },
+    {
+      "start": 626.909,
+      "end": 630.392,
+      "type": "line",
+      "text": "even that ye may have success in obtaining the possession",
+      "verse": "58:41",
+      "lineIndex": 151
+    },
+    {
+      "start": 630.572,
+      "end": 633.73,
+      "type": "line",
+      "text": "of all that which the Lamanites have taken from us,",
+      "verse": "58:41",
+      "lineIndex": 152
+    },
+    {
+      "start": 633.91,
+      "end": 635.582,
+      "type": "line",
+      "text": "which was for our support.",
+      "verse": "58:41",
+      "lineIndex": 153
+    },
+    {
+      "start": 635.762,
+      "end": 637.945,
+      "type": "line",
+      "text": "And now, behold, I close mine epistle.",
+      "verse": "58:41",
+      "lineIndex": 154
+    },
+    {
+      "start": 638.125,
+      "end": 640.447,
+      "type": "line",
+      "text": "I am Helaman, the son of Alma.",
+      "verse": "58:41",
+      "lineIndex": 155
+    }
+  ]
+}

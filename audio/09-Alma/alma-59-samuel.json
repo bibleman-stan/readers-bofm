@@ -1,0 +1,320 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 59,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 184.332,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.316,
+      "type": "line",
+      "text": "Now it came to pass in the thirtieth year of the reign of the judges over the people of Nephi,",
+      "verse": "59:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.496,
+      "end": 13.276,
+      "type": "line",
+      "text": "after Moroni had received and had read Helaman's epistle, he was exceedingly rejoiced because of the welfare,",
+      "verse": "59:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 13.456,
+      "end": 16.567,
+      "type": "line",
+      "text": "yea, the exceeding success which Helaman had had,",
+      "verse": "59:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 16.747,
+      "end": 19.301,
+      "type": "line",
+      "text": "in obtaining those lands which were lost.",
+      "verse": "59:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.981,
+      "end": 23.278,
+      "type": "line",
+      "text": "Yea, and he did make it known unto all his people,",
+      "verse": "59:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 23.458,
+      "end": 26.802,
+      "type": "line",
+      "text": "in all the land round about in that part where he was,",
+      "verse": "59:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 26.982,
+      "end": 28.932,
+      "type": "line",
+      "text": "that they might rejoice also.",
+      "verse": "59:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 29.612,
+      "end": 41.454,
+      "type": "line",
+      "text": "And it came to pass that he immediately sent an epistle to Pahoran, desiring that he should cause men to be gathered together to strengthen Helaman, or the armies of Helaman,",
+      "verse": "59:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 41.634,
+      "end": 49.993,
+      "type": "line",
+      "text": "insomuch that he might with ease maintain that part of the land which he had been so miraculously prospered in regaining.",
+      "verse": "59:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 50.673,
+      "end": 57.639,
+      "type": "line",
+      "text": "And it came to pass when Moroni had sent this epistle to the land of Zarahemla, he began again to lay a plan",
+      "verse": "59:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 57.819,
+      "end": 62.184,
+      "type": "line",
+      "text": "that he might obtain the remainder of those possessions and cities",
+      "verse": "59:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 62.364,
+      "end": 64.686,
+      "type": "line",
+      "text": "which the Lamanites had taken from them.",
+      "verse": "59:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 65.366,
+      "end": 72.332,
+      "type": "line",
+      "text": "And it came to pass that while Moroni was thus making preparations to go against the Lamanites to battle,",
+      "verse": "59:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 72.512,
+      "end": 74.509,
+      "type": "line",
+      "text": "behold, the people of Nephihah,",
+      "verse": "59:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 74.689,
+      "end": 84.256,
+      "type": "line",
+      "text": "who were gathered together from the city of Moroni and the city of Lehi and the city of Morianton, were attacked by the Lamanites.",
+      "verse": "59:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 84.936,
+      "end": 95.199,
+      "type": "line",
+      "text": "Yea, even those who had been compelled to flee from the land of Manti, and from the land round about, had come over and joined the Lamanites in this part of the land.",
+      "verse": "59:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 95.879,
+      "end": 98.155,
+      "type": "line",
+      "text": "And thus being exceedingly numerous,",
+      "verse": "59:7",
+      "lineIndex": 17
+    },
+    {
+      "start": 98.335,
+      "end": 103.351,
+      "type": "line",
+      "text": "yea, and receiving strength from day to day, by the command of Ammoron",
+      "verse": "59:7",
+      "lineIndex": 18
+    },
+    {
+      "start": 103.531,
+      "end": 106.55,
+      "type": "line",
+      "text": "they came forth against the people of Nephihah,",
+      "verse": "59:7",
+      "lineIndex": 19
+    },
+    {
+      "start": 106.73,
+      "end": 110.863,
+      "type": "line",
+      "text": "and they did begin to slay them with an exceedingly great slaughter.",
+      "verse": "59:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 111.543,
+      "end": 113.586,
+      "type": "line",
+      "text": "And their armies were so numerous",
+      "verse": "59:8",
+      "lineIndex": 21
+    },
+    {
+      "start": 113.766,
+      "end": 117.76,
+      "type": "line",
+      "text": "that the remainder of the people of Nephihah were obliged to flee before them;",
+      "verse": "59:8",
+      "lineIndex": 22
+    },
+    {
+      "start": 117.94,
+      "end": 120.912,
+      "type": "line",
+      "text": "and they came even and joined the army of Moroni.",
+      "verse": "59:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 121.592,
+      "end": 127.49,
+      "type": "line",
+      "text": "And now as Moroni had supposed that there should be men sent to the city of Nephihah,",
+      "verse": "59:9",
+      "lineIndex": 24
+    },
+    {
+      "start": 127.67,
+      "end": 131.06,
+      "type": "line",
+      "text": "to the assistance of the people to maintain that city,",
+      "verse": "59:9",
+      "lineIndex": 25
+    },
+    {
+      "start": 131.24,
+      "end": 134.398,
+      "type": "line",
+      "text": "and knowing that it was easier to keep the city",
+      "verse": "59:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 134.578,
+      "end": 139.268,
+      "type": "line",
+      "text": "from falling into the hands of the Lamanites than to retake it from them,",
+      "verse": "59:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 139.448,
+      "end": 142.606,
+      "type": "line",
+      "text": "he supposed that they would easily maintain that city.",
+      "verse": "59:9",
+      "lineIndex": 28
+    },
+    {
+      "start": 143.286,
+      "end": 147.884,
+      "type": "line",
+      "text": "Therefore he retained all his force to maintain those places which he had recovered.",
+      "verse": "59:10",
+      "lineIndex": 30
+    },
+    {
+      "start": 148.564,
+      "end": 152.604,
+      "type": "line",
+      "text": "And now, when Moroni saw that the city of Nephihah was lost",
+      "verse": "59:11",
+      "lineIndex": 31
+    },
+    {
+      "start": 152.784,
+      "end": 154.734,
+      "type": "line",
+      "text": "he was exceedingly sorrowful,",
+      "verse": "59:11",
+      "lineIndex": 32
+    },
+    {
+      "start": 154.914,
+      "end": 158.443,
+      "type": "line",
+      "text": "and began to doubt, because of the wickedness of the people,",
+      "verse": "59:11",
+      "lineIndex": 33
+    },
+    {
+      "start": 158.623,
+      "end": 162.152,
+      "type": "line",
+      "text": "whether they should not fall into the hands of their brethren.",
+      "verse": "59:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 162.832,
+      "end": 165.851,
+      "type": "line",
+      "text": "Now this was the case with all his chief captains.",
+      "verse": "59:12",
+      "lineIndex": 35
+    },
+    {
+      "start": 166.031,
+      "end": 170.768,
+      "type": "line",
+      "text": "They doubted and marveled also because of the wickedness of the people,",
+      "verse": "59:12",
+      "lineIndex": 36
+    },
+    {
+      "start": 170.948,
+      "end": 174.199,
+      "type": "line",
+      "text": "and this because of the success of the Lamanites over them.",
+      "verse": "59:12",
+      "lineIndex": 37
+    },
+    {
+      "start": 174.879,
+      "end": 183.656,
+      "type": "line",
+      "text": "And it came to pass that Moroni was angry with the government, because of their indifference concerning the freedom of their country.",
+      "verse": "59:13",
+      "lineIndex": 38
+    }
+  ]
+}
