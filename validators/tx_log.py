@@ -5,6 +5,14 @@ that fixes the per-repo TX_DIR to `<readers-bofm>/validators/.tx/`. Callers
 construct the log the same way as before -- e.g., `TxLog("rule_name")` --
 without needing to pass the directory.
 
+NOTE on verdict-layer infrastructure (recorded 2026-05-16 per readiness-arc
+Item 3): readers-bofm consumes ONLY `atu_method.infrastructure.tx_log` via
+this thin re-export. `atu_method.infrastructure.validator_output` (the
+Candidate verdict-layer module) is NOT currently consumed; BoFM validators
+emit findings as dicts from `scan_book()`. No local Candidate class
+duplicates exist outside this path. Future sessions investigating verdict-
+layer consumption: this is the state — don't re-investigate.
+
 Usage inside an applier::
 
     from validators.tx_log import TxLog
