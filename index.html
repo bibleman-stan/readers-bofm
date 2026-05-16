@@ -3041,7 +3041,7 @@
     var meta = bookMeta[bookId];
     // Update topbar
     if (meta) {
-      document.getElementById('topbar-book').textContent = meta.name;
+      document.getElementById('topbar-book').textContent = meta.abbr || meta.name;
       document.getElementById('topbar-chap').textContent = ch;
     }
     currentBook = bookId;
@@ -3679,7 +3679,7 @@
     // Update topbar location
     var meta = bookMeta[bookId];
     if (meta) {
-      document.getElementById('topbar-book').textContent = meta.name;
+      document.getElementById('topbar-book').textContent = meta.abbr || meta.name;
       document.getElementById('topbar-chap').textContent = chNum;
     }
     // Highlight current chapter in nav panel
@@ -3899,7 +3899,7 @@
         currentBook = activeBookId;
         var newMeta = bookMeta[activeBookId];
         if (newMeta) {
-          document.getElementById('topbar-book').textContent = newMeta.name;
+          document.getElementById('topbar-book').textContent = newMeta.abbr || newMeta.name;
         }
         highlightBookBtn(activeBookId);
         removeDeityHighlights();
