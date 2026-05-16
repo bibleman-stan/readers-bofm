@@ -1,0 +1,1344 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 11,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 522.331,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.502,
+      "type": "line",
+      "text": "And now it came to pass that there were a great multitude gathered together, of the people of Nephi,",
+      "verse": "11:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.682,
+      "end": 10.444,
+      "type": "line",
+      "text": "round about the temple which was in the land Bountiful;",
+      "verse": "11:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.624,
+      "end": 12.064,
+      "type": "line",
+      "text": "and they were marveling",
+      "verse": "11:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 12.244,
+      "end": 14.473,
+      "type": "line",
+      "text": "and wondering one with another,",
+      "verse": "11:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 14.653,
+      "end": 19.669,
+      "type": "line",
+      "text": "and were showing one to another the great and marvelous change which had taken place.",
+      "verse": "11:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 20.349,
+      "end": 23.925,
+      "type": "line",
+      "text": "And they were also conversing about this Jesus Christ,",
+      "verse": "11:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 24.105,
+      "end": 27.031,
+      "type": "line",
+      "text": "of whom the sign had been given concerning his death.",
+      "verse": "11:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 27.711,
+      "end": 34.491,
+      "type": "line",
+      "text": "And it came to pass that while they were thus conversing one with another, they heard a voice as if it came out of heaven;",
+      "verse": "11:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 34.671,
+      "end": 36.947,
+      "type": "line",
+      "text": "and they cast their eyes round about,",
+      "verse": "11:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 37.127,
+      "end": 40.331,
+      "type": "line",
+      "text": "for they understood not the voice which they heard;",
+      "verse": "11:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 40.511,
+      "end": 42.554,
+      "type": "line",
+      "text": "and it was not a harsh voice,",
+      "verse": "11:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 42.734,
+      "end": 44.684,
+      "type": "line",
+      "text": "neither was it a loud voice;",
+      "verse": "11:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 44.864,
+      "end": 48.301,
+      "type": "line",
+      "text": "nevertheless, and notwithstanding it being a small voice",
+      "verse": "11:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 48.481,
+      "end": 51.267,
+      "type": "line",
+      "text": "it did pierce them that did hear to the center,",
+      "verse": "11:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 51.447,
+      "end": 56.788,
+      "type": "line",
+      "text": "insomuch that there was no part of their frame that it did not cause to quake;",
+      "verse": "11:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 56.968,
+      "end": 58.593,
+      "type": "line",
+      "text": "yea, it did pierce them",
+      "verse": "11:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 58.773,
+      "end": 62.21,
+      "type": "line",
+      "text": "to the very soul, and did cause their hearts to burn.",
+      "verse": "11:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 62.89,
+      "end": 66.466,
+      "type": "line",
+      "text": "And it came to pass that again they heard the voice,",
+      "verse": "11:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 66.646,
+      "end": 68.132,
+      "type": "line",
+      "text": "and they understood it not.",
+      "verse": "11:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 68.812,
+      "end": 72.388,
+      "type": "line",
+      "text": "And again the third time they did hear the voice,",
+      "verse": "11:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 72.568,
+      "end": 75.122,
+      "type": "line",
+      "text": "and did open their ears to hear it;",
+      "verse": "11:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 75.302,
+      "end": 78.321,
+      "type": "line",
+      "text": "and their eyes were towards the sound thereof;",
+      "verse": "11:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 78.501,
+      "end": 81.659,
+      "type": "line",
+      "text": "and they did look steadfastly towards heaven,",
+      "verse": "11:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 81.839,
+      "end": 83.557,
+      "type": "line",
+      "text": "from whence the sound came.",
+      "verse": "11:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 84.237,
+      "end": 88.695,
+      "type": "line",
+      "text": "And behold, the third time they did understand the voice which they heard;",
+      "verse": "11:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 88.875,
+      "end": 90.5,
+      "type": "line",
+      "text": "and it said unto them:",
+      "verse": "11:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 91.18,
+      "end": 94.245,
+      "type": "line",
+      "text": "Behold my Beloved Son, in whom I am well pleased,",
+      "verse": "11:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 94.425,
+      "end": 96.468,
+      "type": "line",
+      "text": "in whom I have glorified my name\u2014",
+      "verse": "11:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 96.648,
+      "end": 97.763,
+      "type": "line",
+      "text": "hear ye him.",
+      "verse": "11:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 98.443,
+      "end": 101.137,
+      "type": "line",
+      "text": "And it came to pass, as they understood",
+      "verse": "11:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 101.317,
+      "end": 104.15,
+      "type": "line",
+      "text": "they cast their eyes up again towards heaven;",
+      "verse": "11:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 104.33,
+      "end": 107.674,
+      "type": "line",
+      "text": "and behold, they saw a Man descending out of heaven;",
+      "verse": "11:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 107.854,
+      "end": 110.176,
+      "type": "line",
+      "text": "and he was clothed in a white robe;",
+      "verse": "11:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 110.356,
+      "end": 113.235,
+      "type": "line",
+      "text": "and he came down and stood in the midst of them;",
+      "verse": "11:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 113.415,
+      "end": 116.666,
+      "type": "line",
+      "text": "and the eyes of the whole multitude were turned upon him,",
+      "verse": "11:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 116.846,
+      "end": 118.982,
+      "type": "line",
+      "text": "and they durst not open their mouths,",
+      "verse": "11:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 119.162,
+      "end": 120.787,
+      "type": "line",
+      "text": "even one to another,",
+      "verse": "11:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 120.967,
+      "end": 122.592,
+      "type": "line",
+      "text": "and wist not what it meant,",
+      "verse": "11:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 122.772,
+      "end": 126.255,
+      "type": "line",
+      "text": "for they thought it was an angel that had appeared unto them.",
+      "verse": "11:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 126.935,
+      "end": 130.139,
+      "type": "line",
+      "text": "And it came to pass that he stretched forth his hand",
+      "verse": "11:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 130.319,
+      "end": 132.548,
+      "type": "line",
+      "text": "and spake unto the people, saying:",
+      "verse": "11:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 133.228,
+      "end": 134.946,
+      "type": "line",
+      "text": "Behold, I am Jesus Christ,",
+      "verse": "11:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 135.126,
+      "end": 138.377,
+      "type": "line",
+      "text": "whom the prophets testified shall come into the world.",
+      "verse": "11:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 139.057,
+      "end": 143.004,
+      "type": "line",
+      "text": "And behold, I am the light and the life of the world;",
+      "verse": "11:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 143.184,
+      "end": 147.456,
+      "type": "line",
+      "text": "and I have drunk out of that bitter cup which the Father hath given me,",
+      "verse": "11:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 147.636,
+      "end": 151.723,
+      "type": "line",
+      "text": "and have glorified the Father in taking upon me the sins of the world,",
+      "verse": "11:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 151.903,
+      "end": 156.872,
+      "type": "line",
+      "text": "in the which I have suffered the will of the Father in all things from the beginning.",
+      "verse": "11:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 157.552,
+      "end": 160.989,
+      "type": "line",
+      "text": "And it came to pass that when Jesus had spoken these words",
+      "verse": "11:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 161.169,
+      "end": 163.723,
+      "type": "line",
+      "text": "the whole multitude fell to the earth;",
+      "verse": "11:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 163.903,
+      "end": 167.618,
+      "type": "line",
+      "text": "for they remembered that it had been prophesied among them",
+      "verse": "11:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 167.798,
+      "end": 172.999,
+      "type": "line",
+      "text": "that Christ should show himself unto them after his ascension into heaven.",
+      "verse": "11:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 173.679,
+      "end": 176.976,
+      "type": "line",
+      "text": "And it came to pass that the Lord spake unto them saying:",
+      "verse": "11:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 177.656,
+      "end": 179.885,
+      "type": "line",
+      "text": "Arise and come forth unto me,",
+      "verse": "11:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 180.065,
+      "end": 182.805,
+      "type": "line",
+      "text": "that ye may thrust your hands into my side,",
+      "verse": "11:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 182.985,
+      "end": 187.861,
+      "type": "line",
+      "text": "and also that ye may feel the prints of the nails in my hands and in my feet,",
+      "verse": "11:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 188.041,
+      "end": 190.874,
+      "type": "line",
+      "text": "that ye may know that I am the God of Israel,",
+      "verse": "11:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 191.054,
+      "end": 193.004,
+      "type": "line",
+      "text": "and the God of the whole earth,",
+      "verse": "11:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 193.184,
+      "end": 196.017,
+      "type": "line",
+      "text": "and have been slain for the sins of the world.",
+      "verse": "11:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 196.697,
+      "end": 199.994,
+      "type": "line",
+      "text": "And it came to pass that the multitude went forth,",
+      "verse": "11:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 200.174,
+      "end": 202.589,
+      "type": "line",
+      "text": "and thrust their hands into his side,",
+      "verse": "11:15",
+      "lineIndex": 62
+    },
+    {
+      "start": 202.769,
+      "end": 207.088,
+      "type": "line",
+      "text": "and did feel the prints of the nails in his hands and in his feet;",
+      "verse": "11:15",
+      "lineIndex": 63
+    },
+    {
+      "start": 207.268,
+      "end": 210.24,
+      "type": "line",
+      "text": "and this they did do, going forth one by one",
+      "verse": "11:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 210.42,
+      "end": 212.324,
+      "type": "line",
+      "text": "until they had all gone forth,",
+      "verse": "11:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 212.504,
+      "end": 214.687,
+      "type": "line",
+      "text": "and did see with their eyes",
+      "verse": "11:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 214.867,
+      "end": 217.375,
+      "type": "line",
+      "text": "and did feel with their hands,",
+      "verse": "11:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 217.555,
+      "end": 219.598,
+      "type": "line",
+      "text": "and did know of a surety",
+      "verse": "11:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 219.778,
+      "end": 222.611,
+      "type": "line",
+      "text": "and did bear record, that it was he,",
+      "verse": "11:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 222.791,
+      "end": 226.042,
+      "type": "line",
+      "text": "of whom it was written by the prophets, that should come.",
+      "verse": "11:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 226.722,
+      "end": 229.973,
+      "type": "line",
+      "text": "And when they had all gone forth and had witnessed for themselves,",
+      "verse": "11:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 230.153,
+      "end": 232.568,
+      "type": "line",
+      "text": "they did cry out with one accord, saying:",
+      "verse": "11:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 233.248,
+      "end": 236.359,
+      "type": "line",
+      "text": "Hosanna! Blessed be the name of the Most High God!",
+      "verse": "11:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 236.539,
+      "end": 239.511,
+      "type": "line",
+      "text": "And they did fall down at the feet of Jesus,",
+      "verse": "11:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 239.691,
+      "end": 241.224,
+      "type": "line",
+      "text": "and did worship him.",
+      "verse": "11:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 241.904,
+      "end": 244.783,
+      "type": "line",
+      "text": "And it came to pass that he spake unto Nephi",
+      "verse": "11:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 244.963,
+      "end": 247.517,
+      "type": "line",
+      "text": "(for Nephi was among the multitude)",
+      "verse": "11:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 247.697,
+      "end": 250.158,
+      "type": "line",
+      "text": "and he commanded him that he should come forth.",
+      "verse": "11:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 250.838,
+      "end": 252.417,
+      "type": "line",
+      "text": "And Nephi arose",
+      "verse": "11:19",
+      "lineIndex": 79
+    },
+    {
+      "start": 252.597,
+      "end": 253.851,
+      "type": "line",
+      "text": "and went forth,",
+      "verse": "11:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 254.031,
+      "end": 256.539,
+      "type": "line",
+      "text": "and bowed himself before the Lord",
+      "verse": "11:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 256.719,
+      "end": 258.391,
+      "type": "line",
+      "text": "and did kiss his feet.",
+      "verse": "11:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 259.071,
+      "end": 261.765,
+      "type": "line",
+      "text": "And the Lord commanded him that he should arise.",
+      "verse": "11:20",
+      "lineIndex": 83
+    },
+    {
+      "start": 261.945,
+      "end": 264.36,
+      "type": "line",
+      "text": "And he arose and stood before him.",
+      "verse": "11:20",
+      "lineIndex": 84
+    },
+    {
+      "start": 265.04,
+      "end": 266.944,
+      "type": "line",
+      "text": "And the Lord said unto him:",
+      "verse": "11:21",
+      "lineIndex": 86
+    },
+    {
+      "start": 267.124,
+      "end": 270.746,
+      "type": "line",
+      "text": "I give unto you power that ye shall baptize this people",
+      "verse": "11:21",
+      "lineIndex": 87
+    },
+    {
+      "start": 270.926,
+      "end": 273.48,
+      "type": "line",
+      "text": "when I am again ascended into heaven.",
+      "verse": "11:21",
+      "lineIndex": 88
+    },
+    {
+      "start": 274.16,
+      "end": 276.25,
+      "type": "line",
+      "text": "And again the Lord called others,",
+      "verse": "11:22",
+      "lineIndex": 89
+    },
+    {
+      "start": 276.43,
+      "end": 278.52,
+      "type": "line",
+      "text": "and said unto them likewise;",
+      "verse": "11:22",
+      "lineIndex": 90
+    },
+    {
+      "start": 278.7,
+      "end": 281.254,
+      "type": "line",
+      "text": "and he gave unto them power to baptize.",
+      "verse": "11:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 281.434,
+      "end": 282.967,
+      "type": "line",
+      "text": "And he said unto them:",
+      "verse": "11:22",
+      "lineIndex": 92
+    },
+    {
+      "start": 283.147,
+      "end": 285.423,
+      "type": "line",
+      "text": "On this wise shall ye baptize;",
+      "verse": "11:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 285.603,
+      "end": 288.389,
+      "type": "line",
+      "text": "and there shall be no disputations among you.",
+      "verse": "11:22",
+      "lineIndex": 94
+    },
+    {
+      "start": 289.069,
+      "end": 290.834,
+      "type": "line",
+      "text": "Verily I say unto you,",
+      "verse": "11:23",
+      "lineIndex": 95
+    },
+    {
+      "start": 291.014,
+      "end": 294.497,
+      "type": "line",
+      "text": "that whoso repenteth of his sins through your words,",
+      "verse": "11:23",
+      "lineIndex": 96
+    },
+    {
+      "start": 294.677,
+      "end": 297.138,
+      "type": "line",
+      "text": "and desireth to be baptized in my name,",
+      "verse": "11:23",
+      "lineIndex": 97
+    },
+    {
+      "start": 297.318,
+      "end": 299.547,
+      "type": "line",
+      "text": "on this wise shall ye baptize them\u2014",
+      "verse": "11:23",
+      "lineIndex": 98
+    },
+    {
+      "start": 299.727,
+      "end": 302.792,
+      "type": "line",
+      "text": "Behold, ye shall go down and stand in the water,",
+      "verse": "11:23",
+      "lineIndex": 99
+    },
+    {
+      "start": 302.972,
+      "end": 305.48,
+      "type": "line",
+      "text": "and in my name shall ye baptize them.",
+      "verse": "11:23",
+      "lineIndex": 100
+    },
+    {
+      "start": 306.16,
+      "end": 311.315,
+      "type": "line",
+      "text": "And now behold, these are the words which ye shall say, calling them by name, saying:",
+      "verse": "11:24",
+      "lineIndex": 101
+    },
+    {
+      "start": 311.995,
+      "end": 314.689,
+      "type": "line",
+      "text": "Having authority given me of Jesus Christ,",
+      "verse": "11:25",
+      "lineIndex": 102
+    },
+    {
+      "start": 314.869,
+      "end": 317.33,
+      "type": "line",
+      "text": "I baptize you in the name of the Father",
+      "verse": "11:25",
+      "lineIndex": 103
+    },
+    {
+      "start": 317.51,
+      "end": 319.739,
+      "type": "line",
+      "text": "and of the Son, and of the Holy Ghost.",
+      "verse": "11:25",
+      "lineIndex": 104
+    },
+    {
+      "start": 319.919,
+      "end": 320.755,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "11:25",
+      "lineIndex": 105
+    },
+    {
+      "start": 321.435,
+      "end": 323.943,
+      "type": "line",
+      "text": "And then shall ye immerse them in the water,",
+      "verse": "11:26",
+      "lineIndex": 106
+    },
+    {
+      "start": 324.123,
+      "end": 326.584,
+      "type": "line",
+      "text": "and come forth again out of the water.",
+      "verse": "11:26",
+      "lineIndex": 107
+    },
+    {
+      "start": 327.264,
+      "end": 330.422,
+      "type": "line",
+      "text": "And after this manner shall ye baptize in my name;",
+      "verse": "11:27",
+      "lineIndex": 109
+    },
+    {
+      "start": 330.602,
+      "end": 332.924,
+      "type": "line",
+      "text": "for behold, verily I say unto you,",
+      "verse": "11:27",
+      "lineIndex": 110
+    },
+    {
+      "start": 333.104,
+      "end": 334.497,
+      "type": "line",
+      "text": "that the Father,",
+      "verse": "11:27",
+      "lineIndex": 111
+    },
+    {
+      "start": 334.677,
+      "end": 335.977,
+      "type": "line",
+      "text": "and the Son,",
+      "verse": "11:27",
+      "lineIndex": 112
+    },
+    {
+      "start": 336.157,
+      "end": 338.293,
+      "type": "line",
+      "text": "and the Holy Ghost are one;",
+      "verse": "11:27",
+      "lineIndex": 113
+    },
+    {
+      "start": 338.473,
+      "end": 341.677,
+      "type": "line",
+      "text": "and I am in the Father, and the Father in me,",
+      "verse": "11:27",
+      "lineIndex": 114
+    },
+    {
+      "start": 341.857,
+      "end": 343.807,
+      "type": "line",
+      "text": "and the Father and I are one.",
+      "verse": "11:27",
+      "lineIndex": 115
+    },
+    {
+      "start": 344.487,
+      "end": 348.016,
+      "type": "line",
+      "text": "And according as I have commanded you thus shall ye baptize.",
+      "verse": "11:28",
+      "lineIndex": 116
+    },
+    {
+      "start": 348.196,
+      "end": 353.49,
+      "type": "line",
+      "text": "And there shall be no disputations among you, as there have hitherto been;",
+      "verse": "11:28",
+      "lineIndex": 117
+    },
+    {
+      "start": 353.67,
+      "end": 357.107,
+      "type": "line",
+      "text": "neither shall there be disputations among you",
+      "verse": "11:28",
+      "lineIndex": 118
+    },
+    {
+      "start": 357.287,
+      "end": 361.095,
+      "type": "line",
+      "text": "concerning the points of my doctrine, as there have hitherto been.",
+      "verse": "11:28",
+      "lineIndex": 119
+    },
+    {
+      "start": 361.775,
+      "end": 364.19,
+      "type": "line",
+      "text": "For verily, verily I say unto you,",
+      "verse": "11:29",
+      "lineIndex": 120
+    },
+    {
+      "start": 364.37,
+      "end": 367.946,
+      "type": "line",
+      "text": "he that hath the spirit of contention is not of me,",
+      "verse": "11:29",
+      "lineIndex": 121
+    },
+    {
+      "start": 368.126,
+      "end": 371.516,
+      "type": "line",
+      "text": "but is of the devil, who is the father of contention,",
+      "verse": "11:29",
+      "lineIndex": 122
+    },
+    {
+      "start": 371.696,
+      "end": 376.758,
+      "type": "line",
+      "text": "and he stirreth up the hearts of men to contend with anger, one with another.",
+      "verse": "11:29",
+      "lineIndex": 123
+    },
+    {
+      "start": 377.438,
+      "end": 384.358,
+      "type": "line",
+      "text": "Behold, this is not my doctrine, to stir up the hearts of men with anger, one against another;",
+      "verse": "11:30",
+      "lineIndex": 124
+    },
+    {
+      "start": 384.538,
+      "end": 388.718,
+      "type": "line",
+      "text": "but this is my doctrine, that such things should be done away.",
+      "verse": "11:30",
+      "lineIndex": 125
+    },
+    {
+      "start": 389.398,
+      "end": 391.766,
+      "type": "line",
+      "text": "Behold, verily, verily, I say unto you,",
+      "verse": "11:31",
+      "lineIndex": 126
+    },
+    {
+      "start": 391.946,
+      "end": 394.268,
+      "type": "line",
+      "text": "I will declare unto you my doctrine.",
+      "verse": "11:31",
+      "lineIndex": 127
+    },
+    {
+      "start": 394.948,
+      "end": 396.62,
+      "type": "line",
+      "text": "And this is my doctrine,",
+      "verse": "11:32",
+      "lineIndex": 128
+    },
+    {
+      "start": 396.8,
+      "end": 400.422,
+      "type": "line",
+      "text": "and it is the doctrine which the Father hath given unto me;",
+      "verse": "11:32",
+      "lineIndex": 129
+    },
+    {
+      "start": 400.602,
+      "end": 403.435,
+      "type": "line",
+      "text": "and I bear record of the Father,",
+      "verse": "11:32",
+      "lineIndex": 130
+    },
+    {
+      "start": 403.615,
+      "end": 406.123,
+      "type": "line",
+      "text": "and the Father beareth record of me,",
+      "verse": "11:32",
+      "lineIndex": 131
+    },
+    {
+      "start": 406.303,
+      "end": 410.111,
+      "type": "line",
+      "text": "and the Holy Ghost beareth record of the Father and me;",
+      "verse": "11:32",
+      "lineIndex": 132
+    },
+    {
+      "start": 410.291,
+      "end": 416.793,
+      "type": "line",
+      "text": "and I bear record that the Father commandeth all men, everywhere, to repent and believe in me.",
+      "verse": "11:32",
+      "lineIndex": 133
+    },
+    {
+      "start": 417.473,
+      "end": 419.377,
+      "type": "line",
+      "text": "And whoso believeth in me,",
+      "verse": "11:33",
+      "lineIndex": 134
+    },
+    {
+      "start": 419.557,
+      "end": 422.251,
+      "type": "line",
+      "text": "and is baptized, the same shall be saved;",
+      "verse": "11:33",
+      "lineIndex": 135
+    },
+    {
+      "start": 422.431,
+      "end": 425.542,
+      "type": "line",
+      "text": "and they are they who shall inherit the kingdom of God.",
+      "verse": "11:33",
+      "lineIndex": 136
+    },
+    {
+      "start": 426.222,
+      "end": 428.265,
+      "type": "line",
+      "text": "And whoso believeth not in me,",
+      "verse": "11:34",
+      "lineIndex": 137
+    },
+    {
+      "start": 428.445,
+      "end": 430.628,
+      "type": "line",
+      "text": "and is not baptized, shall be damned.",
+      "verse": "11:34",
+      "lineIndex": 138
+    },
+    {
+      "start": 431.308,
+      "end": 433.63,
+      "type": "line",
+      "text": "Verily, verily, I say unto you",
+      "verse": "11:35",
+      "lineIndex": 139
+    },
+    {
+      "start": 433.81,
+      "end": 435.482,
+      "type": "line",
+      "text": "that this is my doctrine,",
+      "verse": "11:35",
+      "lineIndex": 140
+    },
+    {
+      "start": 435.662,
+      "end": 438.263,
+      "type": "line",
+      "text": "and I bear record of it from the Father;",
+      "verse": "11:35",
+      "lineIndex": 141
+    },
+    {
+      "start": 438.443,
+      "end": 441.972,
+      "type": "line",
+      "text": "and whoso believeth in me believeth in the Father also;",
+      "verse": "11:35",
+      "lineIndex": 142
+    },
+    {
+      "start": 442.152,
+      "end": 445.078,
+      "type": "line",
+      "text": "and unto him will the Father bear record of me,",
+      "verse": "11:35",
+      "lineIndex": 143
+    },
+    {
+      "start": 445.258,
+      "end": 448.555,
+      "type": "line",
+      "text": "for he will visit him with fire and with the Holy Ghost.",
+      "verse": "11:35",
+      "lineIndex": 144
+    },
+    {
+      "start": 449.235,
+      "end": 451.929,
+      "type": "line",
+      "text": "And thus will the Father bear record of me,",
+      "verse": "11:36",
+      "lineIndex": 145
+    },
+    {
+      "start": 452.109,
+      "end": 456.474,
+      "type": "line",
+      "text": "and the Holy Ghost will bear record unto him of the Father and me;",
+      "verse": "11:36",
+      "lineIndex": 146
+    },
+    {
+      "start": 456.654,
+      "end": 459.812,
+      "type": "line",
+      "text": "for the Father, and I, and the Holy Ghost are one.",
+      "verse": "11:36",
+      "lineIndex": 147
+    },
+    {
+      "start": 460.492,
+      "end": 462.21,
+      "type": "line",
+      "text": "And again I say unto you,",
+      "verse": "11:37",
+      "lineIndex": 148
+    },
+    {
+      "start": 462.39,
+      "end": 463.876,
+      "type": "line",
+      "text": "ye must repent,",
+      "verse": "11:37",
+      "lineIndex": 149
+    },
+    {
+      "start": 464.056,
+      "end": 466.192,
+      "type": "line",
+      "text": "and become as a little child,",
+      "verse": "11:37",
+      "lineIndex": 150
+    },
+    {
+      "start": 466.372,
+      "end": 468.183,
+      "type": "line",
+      "text": "and be baptized in my name,",
+      "verse": "11:37",
+      "lineIndex": 151
+    },
+    {
+      "start": 468.363,
+      "end": 470.964,
+      "type": "line",
+      "text": "or ye can in nowise receive these things.",
+      "verse": "11:37",
+      "lineIndex": 152
+    },
+    {
+      "start": 471.644,
+      "end": 473.362,
+      "type": "line",
+      "text": "And again I say unto you,",
+      "verse": "11:38",
+      "lineIndex": 153
+    },
+    {
+      "start": 473.542,
+      "end": 475.028,
+      "type": "line",
+      "text": "ye must repent,",
+      "verse": "11:38",
+      "lineIndex": 154
+    },
+    {
+      "start": 475.208,
+      "end": 477.019,
+      "type": "line",
+      "text": "and be baptized in my name,",
+      "verse": "11:38",
+      "lineIndex": 155
+    },
+    {
+      "start": 477.199,
+      "end": 479.335,
+      "type": "line",
+      "text": "and become as a little child,",
+      "verse": "11:38",
+      "lineIndex": 156
+    },
+    {
+      "start": 479.515,
+      "end": 482.626,
+      "type": "line",
+      "text": "or ye can in nowise inherit the kingdom of God.",
+      "verse": "11:38",
+      "lineIndex": 157
+    },
+    {
+      "start": 483.306,
+      "end": 485.628,
+      "type": "line",
+      "text": "Verily, verily, I say unto you",
+      "verse": "11:39",
+      "lineIndex": 158
+    },
+    {
+      "start": 485.808,
+      "end": 487.48,
+      "type": "line",
+      "text": "that this is my doctrine,",
+      "verse": "11:39",
+      "lineIndex": 159
+    },
+    {
+      "start": 487.66,
+      "end": 490.818,
+      "type": "line",
+      "text": "and whoso buildeth upon this buildeth upon my rock,",
+      "verse": "11:39",
+      "lineIndex": 160
+    },
+    {
+      "start": 490.998,
+      "end": 493.831,
+      "type": "line",
+      "text": "and the gates of hell shall not prevail against them.",
+      "verse": "11:39",
+      "lineIndex": 161
+    },
+    {
+      "start": 494.511,
+      "end": 497.576,
+      "type": "line",
+      "text": "And whoso shall declare more or less than this,",
+      "verse": "11:40",
+      "lineIndex": 162
+    },
+    {
+      "start": 497.756,
+      "end": 499.985,
+      "type": "line",
+      "text": "and establish it for my doctrine,",
+      "verse": "11:40",
+      "lineIndex": 163
+    },
+    {
+      "start": 500.165,
+      "end": 503.787,
+      "type": "line",
+      "text": "the same cometh of evil, and is not built upon my rock;",
+      "verse": "11:40",
+      "lineIndex": 164
+    },
+    {
+      "start": 503.967,
+      "end": 506.428,
+      "type": "line",
+      "text": "but he buildeth upon a sandy foundation,",
+      "verse": "11:40",
+      "lineIndex": 165
+    },
+    {
+      "start": 506.608,
+      "end": 509.859,
+      "type": "line",
+      "text": "and the gates of hell stand open to receive such",
+      "verse": "11:40",
+      "lineIndex": 166
+    },
+    {
+      "start": 510.039,
+      "end": 513.197,
+      "type": "line",
+      "text": "when the floods come and the winds beat upon them.",
+      "verse": "11:40",
+      "lineIndex": 167
+    },
+    {
+      "start": 513.877,
+      "end": 516.292,
+      "type": "line",
+      "text": "Therefore, go forth unto this people,",
+      "verse": "11:41",
+      "lineIndex": 168
+    },
+    {
+      "start": 516.472,
+      "end": 521.673,
+      "type": "line",
+      "text": "and declare the words which I have spoken, unto the ends of the earth.",
+      "verse": "11:41",
+      "lineIndex": 169
+    }
+  ]
+}
