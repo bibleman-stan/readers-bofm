@@ -1,0 +1,808 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 33,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 307.673,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.105,
+      "type": "line",
+      "text": "Now after Alma had spoken these words, they sent forth unto him desiring to know whether they should believe in one God,",
+      "verse": "33:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.285,
+      "end": 10.489,
+      "type": "line",
+      "text": "that they might obtain this fruit of which he had spoken,",
+      "verse": "33:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.669,
+      "end": 15.592,
+      "type": "line",
+      "text": "or how they should plant the seed, or the word of which he had spoken,",
+      "verse": "33:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 15.772,
+      "end": 18.419,
+      "type": "line",
+      "text": "which he said must be planted in their hearts;",
+      "verse": "33:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 18.599,
+      "end": 22.175,
+      "type": "line",
+      "text": "or in what manner they should begin to exercise their faith.",
+      "verse": "33:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.855,
+      "end": 24.573,
+      "type": "line",
+      "text": "And Alma said unto them:",
+      "verse": "33:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 24.753,
+      "end": 28.097,
+      "type": "line",
+      "text": "Behold, ye have said that ye could not worship your God",
+      "verse": "33:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 28.277,
+      "end": 30.831,
+      "type": "line",
+      "text": "because ye are cast out of your synagogues.",
+      "verse": "33:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 31.011,
+      "end": 32.822,
+      "type": "line",
+      "text": "But behold, I say unto you,",
+      "verse": "33:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 33.002,
+      "end": 36.81,
+      "type": "line",
+      "text": "if ye suppose that ye cannot worship God, ye do greatly err,",
+      "verse": "33:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 36.99,
+      "end": 39.126,
+      "type": "line",
+      "text": "and ye ought to search the scriptures;",
+      "verse": "33:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 39.306,
+      "end": 44.507,
+      "type": "line",
+      "text": "if ye suppose that they have taught you this, ye do not understand them.",
+      "verse": "33:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 45.187,
+      "end": 47.137,
+      "type": "line",
+      "text": "Do ye remember to have read",
+      "verse": "33:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 47.317,
+      "end": 52.007,
+      "type": "line",
+      "text": "what Zenos, the prophet of old, has said concerning prayer or worship?",
+      "verse": "33:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 52.687,
+      "end": 54.034,
+      "type": "line",
+      "text": "For he said:",
+      "verse": "33:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 54.214,
+      "end": 56.257,
+      "type": "line",
+      "text": "Thou art merciful, O God,",
+      "verse": "33:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 56.437,
+      "end": 58.62,
+      "type": "line",
+      "text": "for thou hast heard my prayer,",
+      "verse": "33:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 58.8,
+      "end": 60.936,
+      "type": "line",
+      "text": "even when I was in the wilderness;",
+      "verse": "33:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 61.116,
+      "end": 63.113,
+      "type": "line",
+      "text": "yea, thou wast merciful",
+      "verse": "33:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 63.293,
+      "end": 66.683,
+      "type": "line",
+      "text": "when I prayed concerning those who were mine enemies,",
+      "verse": "33:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 66.863,
+      "end": 68.767,
+      "type": "line",
+      "text": "and thou didst turn them to me.",
+      "verse": "33:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 69.447,
+      "end": 70.747,
+      "type": "line",
+      "text": "Yea, O God,",
+      "verse": "33:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 70.927,
+      "end": 73.11,
+      "type": "line",
+      "text": "and thou wast merciful unto me",
+      "verse": "33:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 73.29,
+      "end": 75.751,
+      "type": "line",
+      "text": "when I did cry unto thee in my field;",
+      "verse": "33:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 75.931,
+      "end": 78.392,
+      "type": "line",
+      "text": "when I did cry unto thee in my prayer,",
+      "verse": "33:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 78.572,
+      "end": 80.105,
+      "type": "line",
+      "text": "and thou didst hear me.",
+      "verse": "33:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 80.785,
+      "end": 83.664,
+      "type": "line",
+      "text": "And again, O God, when I did turn to my house",
+      "verse": "33:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 83.844,
+      "end": 85.655,
+      "type": "line",
+      "text": "thou didst hear me in my prayer.",
+      "verse": "33:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 86.335,
+      "end": 89.168,
+      "type": "line",
+      "text": "And when I did turn unto my closet, O Lord,",
+      "verse": "33:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 89.348,
+      "end": 91.577,
+      "type": "line",
+      "text": "and prayed unto thee, thou didst hear me.",
+      "verse": "33:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 92.257,
+      "end": 94.765,
+      "type": "line",
+      "text": "Yea, thou art merciful unto thy children",
+      "verse": "33:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 94.945,
+      "end": 96.524,
+      "type": "line",
+      "text": "when they cry unto thee,",
+      "verse": "33:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 96.704,
+      "end": 99.165,
+      "type": "line",
+      "text": "to be heard of thee and not of men",
+      "verse": "33:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 99.345,
+      "end": 100.831,
+      "type": "line",
+      "text": "and thou wilt hear them.",
+      "verse": "33:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 101.511,
+      "end": 102.811,
+      "type": "line",
+      "text": "Yea, O God,",
+      "verse": "33:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 102.991,
+      "end": 105.22,
+      "type": "line",
+      "text": "thou hast been merciful unto me,",
+      "verse": "33:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 105.4,
+      "end": 108.465,
+      "type": "line",
+      "text": "and heard my cries in the midst of thy congregations.",
+      "verse": "33:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 109.145,
+      "end": 111.142,
+      "type": "line",
+      "text": "Yea, and thou hast also heard me",
+      "verse": "33:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 111.322,
+      "end": 115.084,
+      "type": "line",
+      "text": "when I have been cast out and have been despised by mine enemies;",
+      "verse": "33:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 115.264,
+      "end": 117.261,
+      "type": "line",
+      "text": "yea, thou didst hear my cries,",
+      "verse": "33:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 117.441,
+      "end": 119.856,
+      "type": "line",
+      "text": "and wast angry with mine enemies,",
+      "verse": "33:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 120.036,
+      "end": 124.216,
+      "type": "line",
+      "text": "and thou didst visit them in thine anger with speedy destruction.",
+      "verse": "33:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 124.896,
+      "end": 129.865,
+      "type": "line",
+      "text": "And thou didst hear me because of mine afflictions and my sincerity;",
+      "verse": "33:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 130.045,
+      "end": 134.039,
+      "type": "line",
+      "text": "and it is because of thy Son that thou hast been thus merciful unto me,",
+      "verse": "33:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 134.219,
+      "end": 137.377,
+      "type": "line",
+      "text": "therefore I will cry unto thee in all mine afflictions,",
+      "verse": "33:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 137.557,
+      "end": 139.368,
+      "type": "line",
+      "text": "for in thee is my joy;",
+      "verse": "33:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 139.548,
+      "end": 144.238,
+      "type": "line",
+      "text": "for thou hast turned thy judgments away from me, because of thy Son.",
+      "verse": "33:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 144.918,
+      "end": 146.961,
+      "type": "line",
+      "text": "And now Alma said unto them:",
+      "verse": "33:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 147.141,
+      "end": 151.46,
+      "type": "line",
+      "text": "Do ye believe those scriptures which have been written by them of old?",
+      "verse": "33:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 152.14,
+      "end": 155.344,
+      "type": "line",
+      "text": "Behold, if ye do, ye must believe what Zenos said;",
+      "verse": "33:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 155.524,
+      "end": 157.149,
+      "type": "line",
+      "text": "for, behold he said:",
+      "verse": "33:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 157.329,
+      "end": 160.626,
+      "type": "line",
+      "text": "Thou hast turned away thy judgments because of thy Son.",
+      "verse": "33:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 161.306,
+      "end": 162.885,
+      "type": "line",
+      "text": "Now behold, my brethren,",
+      "verse": "33:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 163.065,
+      "end": 165.433,
+      "type": "line",
+      "text": "I would ask if ye have read the scriptures?",
+      "verse": "33:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 165.613,
+      "end": 168.724,
+      "type": "line",
+      "text": "If ye have, how can ye disbelieve on the Son of God?",
+      "verse": "33:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 169.404,
+      "end": 173.166,
+      "type": "line",
+      "text": "For it is not written that Zenos alone spake of these things,",
+      "verse": "33:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 173.346,
+      "end": 175.807,
+      "type": "line",
+      "text": "but Zenock also spake of these things\u2014",
+      "verse": "33:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 176.487,
+      "end": 178.112,
+      "type": "line",
+      "text": "For behold, he said:",
+      "verse": "33:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 178.292,
+      "end": 180.846,
+      "type": "line",
+      "text": "Thou art angry, O Lord, with this people,",
+      "verse": "33:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 181.026,
+      "end": 183.58,
+      "type": "line",
+      "text": "because they will not understand thy mercies",
+      "verse": "33:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 183.76,
+      "end": 187.104,
+      "type": "line",
+      "text": "which thou hast bestowed upon them because of thy Son.",
+      "verse": "33:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 187.784,
+      "end": 189.084,
+      "type": "line",
+      "text": "And now, my brethren,",
+      "verse": "33:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 189.264,
+      "end": 193.49,
+      "type": "line",
+      "text": "ye see that a second prophet of old has testified of the Son of God,",
+      "verse": "33:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 193.67,
+      "end": 197.989,
+      "type": "line",
+      "text": "and because the people would not understand his words they stoned him to death.",
+      "verse": "33:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 198.669,
+      "end": 200.666,
+      "type": "line",
+      "text": "But behold, this is not all;",
+      "verse": "33:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 200.846,
+      "end": 205.118,
+      "type": "line",
+      "text": "these are not the only ones who have spoken concerning the Son of God.",
+      "verse": "33:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 205.798,
+      "end": 208.074,
+      "type": "line",
+      "text": "Behold, he was spoken of by Moses;",
+      "verse": "33:19",
+      "lineIndex": 68
+    },
+    {
+      "start": 208.254,
+      "end": 211.969,
+      "type": "line",
+      "text": "yea, and behold a type was raised up in the wilderness,",
+      "verse": "33:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 212.149,
+      "end": 214.796,
+      "type": "line",
+      "text": "that whosoever would look upon it might live.",
+      "verse": "33:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 214.976,
+      "end": 216.741,
+      "type": "line",
+      "text": "And many did look and live.",
+      "verse": "33:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 217.421,
+      "end": 220.161,
+      "type": "line",
+      "text": "But few understood the meaning of those things,",
+      "verse": "33:20",
+      "lineIndex": 72
+    },
+    {
+      "start": 220.341,
+      "end": 224.196,
+      "type": "line",
+      "text": "and this because of the hardness of their hearts.",
+      "verse": "33:20",
+      "lineIndex": 73
+    },
+    {
+      "start": 224.376,
+      "end": 228.695,
+      "type": "line",
+      "text": "But there were many who were so hardened that they would not look,",
+      "verse": "33:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 228.875,
+      "end": 230.408,
+      "type": "line",
+      "text": "therefore they perished.",
+      "verse": "33:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 230.588,
+      "end": 232.771,
+      "type": "line",
+      "text": "Now the reason they would not look",
+      "verse": "33:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 232.951,
+      "end": 236.016,
+      "type": "line",
+      "text": "is because they did not believe that it would heal them.",
+      "verse": "33:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 236.696,
+      "end": 237.95,
+      "type": "line",
+      "text": "O my brethren,",
+      "verse": "33:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 238.13,
+      "end": 241.659,
+      "type": "line",
+      "text": "if ye could be healed by merely casting about your eyes",
+      "verse": "33:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 241.839,
+      "end": 243.372,
+      "type": "line",
+      "text": "that ye might be healed,",
+      "verse": "33:21",
+      "lineIndex": 81
+    },
+    {
+      "start": 243.552,
+      "end": 245.363,
+      "type": "line",
+      "text": "would ye not behold quickly,",
+      "verse": "33:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 245.543,
+      "end": 250.373,
+      "type": "line",
+      "text": "or would ye rather harden your hearts in unbelief, and be slothful,",
+      "verse": "33:21",
+      "lineIndex": 83
+    },
+    {
+      "start": 250.553,
+      "end": 253.2,
+      "type": "line",
+      "text": "that ye would not cast about your eyes,",
+      "verse": "33:21",
+      "lineIndex": 84
+    },
+    {
+      "start": 253.38,
+      "end": 254.913,
+      "type": "line",
+      "text": "that ye might perish?",
+      "verse": "33:21",
+      "lineIndex": 85
+    },
+    {
+      "start": 255.593,
+      "end": 257.869,
+      "type": "line",
+      "text": "If so, wo shall come upon you;",
+      "verse": "33:22",
+      "lineIndex": 86
+    },
+    {
+      "start": 258.049,
+      "end": 260.789,
+      "type": "line",
+      "text": "but if not so, then cast about your eyes",
+      "verse": "33:22",
+      "lineIndex": 87
+    },
+    {
+      "start": 260.969,
+      "end": 263.616,
+      "type": "line",
+      "text": "and begin to believe in the Son of God,",
+      "verse": "33:22",
+      "lineIndex": 88
+    },
+    {
+      "start": 263.796,
+      "end": 266.164,
+      "type": "line",
+      "text": "that he will come to redeem his people,",
+      "verse": "33:22",
+      "lineIndex": 89
+    },
+    {
+      "start": 266.344,
+      "end": 270.106,
+      "type": "line",
+      "text": "and that he shall suffer and die to atone for their sins;",
+      "verse": "33:22",
+      "lineIndex": 90
+    },
+    {
+      "start": 270.286,
+      "end": 273.165,
+      "type": "line",
+      "text": "and that he shall rise again from the dead,",
+      "verse": "33:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 273.345,
+      "end": 276.224,
+      "type": "line",
+      "text": "which shall bring to pass the resurrection,",
+      "verse": "33:22",
+      "lineIndex": 92
+    },
+    {
+      "start": 276.404,
+      "end": 283.138,
+      "type": "line",
+      "text": "that all men shall stand before him, to be judged at the last and judgment day, according to their works.",
+      "verse": "33:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 283.818,
+      "end": 285.118,
+      "type": "line",
+      "text": "And now, my brethren,",
+      "verse": "33:23",
+      "lineIndex": 94
+    },
+    {
+      "start": 285.298,
+      "end": 288.549,
+      "type": "line",
+      "text": "I desire that ye shall plant this word in your hearts,",
+      "verse": "33:23",
+      "lineIndex": 95
+    },
+    {
+      "start": 288.729,
+      "end": 292.584,
+      "type": "line",
+      "text": "and as it beginneth to swell even so nourish it by your faith.",
+      "verse": "33:23",
+      "lineIndex": 96
+    },
+    {
+      "start": 292.764,
+      "end": 298.151,
+      "type": "line",
+      "text": "And behold, it will become a tree, springing up in you unto everlasting life.",
+      "verse": "33:23",
+      "lineIndex": 97
+    },
+    {
+      "start": 298.331,
+      "end": 303.625,
+      "type": "line",
+      "text": "And then may God grant unto you that your burdens may be light, through the joy of his Son.",
+      "verse": "33:23",
+      "lineIndex": 98
+    },
+    {
+      "start": 303.805,
+      "end": 305.988,
+      "type": "line",
+      "text": "And even all this can ye do if ye will.",
+      "verse": "33:23",
+      "lineIndex": 99
+    },
+    {
+      "start": 306.168,
+      "end": 307.004,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "33:23",
+      "lineIndex": 100
+    }
+  ]
+}
