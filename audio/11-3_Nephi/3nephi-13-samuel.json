@@ -1,0 +1,800 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 13,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 308.069,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.619,
+      "type": "line",
+      "text": "Verily, verily, I say that I would that ye should do alms unto the poor;",
+      "verse": "13:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.799,
+      "end": 9.839,
+      "type": "line",
+      "text": "but take heed that ye do not your alms before men to be seen of them;",
+      "verse": "13:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.019,
+      "end": 13.548,
+      "type": "line",
+      "text": "otherwise ye have no reward of your Father who is in heaven.",
+      "verse": "13:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.228,
+      "end": 16.782,
+      "type": "line",
+      "text": "Therefore, when ye shall do your alms",
+      "verse": "13:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 16.962,
+      "end": 19.377,
+      "type": "line",
+      "text": "do not sound a trumpet before you,",
+      "verse": "13:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.557,
+      "end": 23.226,
+      "type": "line",
+      "text": "as will hypocrites do in the synagogues and in the streets,",
+      "verse": "13:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 23.406,
+      "end": 25.682,
+      "type": "line",
+      "text": "that they may have glory of men.",
+      "verse": "13:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 25.862,
+      "end": 28.509,
+      "type": "line",
+      "text": "Verily I say unto you, they have their reward.",
+      "verse": "13:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 29.189,
+      "end": 31.139,
+      "type": "line",
+      "text": "But when thou doest alms",
+      "verse": "13:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 31.319,
+      "end": 34.523,
+      "type": "line",
+      "text": "let not thy left hand know what thy right hand doeth;",
+      "verse": "13:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 35.203,
+      "end": 37.339,
+      "type": "line",
+      "text": "That thine alms may be in secret;",
+      "verse": "13:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 37.519,
+      "end": 42.07,
+      "type": "line",
+      "text": "and thy Father who seeth in secret, himself shall reward thee openly.",
+      "verse": "13:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 42.75,
+      "end": 46.001,
+      "type": "line",
+      "text": "And when thou prayest thou shalt not do as the hypocrites,",
+      "verse": "13:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 46.181,
+      "end": 51.243,
+      "type": "line",
+      "text": "for they love to pray, standing in the synagogues and in the corners of the streets,",
+      "verse": "13:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 51.423,
+      "end": 53.606,
+      "type": "line",
+      "text": "that they may be seen of men.",
+      "verse": "13:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 53.786,
+      "end": 56.433,
+      "type": "line",
+      "text": "Verily I say unto you, they have their reward.",
+      "verse": "13:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 57.113,
+      "end": 60.271,
+      "type": "line",
+      "text": "But thou, when thou prayest, enter into thy closet,",
+      "verse": "13:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 60.451,
+      "end": 62.448,
+      "type": "line",
+      "text": "and when thou hast shut thy door,",
+      "verse": "13:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 62.628,
+      "end": 64.95,
+      "type": "line",
+      "text": "pray to thy Father who is in secret;",
+      "verse": "13:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 65.13,
+      "end": 69.31,
+      "type": "line",
+      "text": "and thy Father, who seeth in secret, shall reward thee openly.",
+      "verse": "13:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 69.99,
+      "end": 74.216,
+      "type": "line",
+      "text": "But when ye pray, use not vain repetitions, as the heathen,",
+      "verse": "13:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 74.396,
+      "end": 77.925,
+      "type": "line",
+      "text": "for they think that they shall be heard for their much speaking.",
+      "verse": "13:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 78.605,
+      "end": 80.788,
+      "type": "line",
+      "text": "Be not ye therefore like unto them,",
+      "verse": "13:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 80.968,
+      "end": 84.962,
+      "type": "line",
+      "text": "for your Father knoweth what things ye have need of before ye ask him.",
+      "verse": "13:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 85.642,
+      "end": 87.825,
+      "type": "line",
+      "text": "After this manner therefore pray ye:",
+      "verse": "13:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 88.005,
+      "end": 91.024,
+      "type": "line",
+      "text": "Our Father who art in heaven, hallowed be thy name.",
+      "verse": "13:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 91.704,
+      "end": 94.444,
+      "type": "line",
+      "text": "Thy will be done on earth as it is in heaven.",
+      "verse": "13:10",
+      "lineIndex": 28
+    },
+    {
+      "start": 95.124,
+      "end": 98.328,
+      "type": "line",
+      "text": "And forgive us our debts, as we forgive our debtors.",
+      "verse": "13:11",
+      "lineIndex": 29
+    },
+    {
+      "start": 99.008,
+      "end": 101.284,
+      "type": "line",
+      "text": "And lead us not into temptation,",
+      "verse": "13:12",
+      "lineIndex": 30
+    },
+    {
+      "start": 101.464,
+      "end": 103.229,
+      "type": "line",
+      "text": "but deliver us from evil.",
+      "verse": "13:12",
+      "lineIndex": 31
+    },
+    {
+      "start": 103.909,
+      "end": 107.949,
+      "type": "line",
+      "text": "For thine is the kingdom, and the power, and the glory, forever.",
+      "verse": "13:13",
+      "lineIndex": 32
+    },
+    {
+      "start": 108.129,
+      "end": 108.965,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "13:13",
+      "lineIndex": 33
+    },
+    {
+      "start": 109.645,
+      "end": 112.431,
+      "type": "line",
+      "text": "For, if ye forgive men their trespasses",
+      "verse": "13:14",
+      "lineIndex": 34
+    },
+    {
+      "start": 112.611,
+      "end": 115.119,
+      "type": "line",
+      "text": "your heavenly Father will also forgive you;",
+      "verse": "13:14",
+      "lineIndex": 35
+    },
+    {
+      "start": 115.799,
+      "end": 118.307,
+      "type": "line",
+      "text": "But if ye forgive not men their trespasses",
+      "verse": "13:15",
+      "lineIndex": 36
+    },
+    {
+      "start": 118.487,
+      "end": 121.227,
+      "type": "line",
+      "text": "neither will your Father forgive your trespasses.",
+      "verse": "13:15",
+      "lineIndex": 37
+    },
+    {
+      "start": 121.907,
+      "end": 123.486,
+      "type": "line",
+      "text": "Moreover, when ye fast",
+      "verse": "13:16",
+      "lineIndex": 38
+    },
+    {
+      "start": 123.666,
+      "end": 126.592,
+      "type": "line",
+      "text": "be not as the hypocrites, of a sad countenance,",
+      "verse": "13:16",
+      "lineIndex": 39
+    },
+    {
+      "start": 126.772,
+      "end": 129.14,
+      "type": "line",
+      "text": "for they disfigure their faces",
+      "verse": "13:16",
+      "lineIndex": 40
+    },
+    {
+      "start": 129.32,
+      "end": 131.781,
+      "type": "line",
+      "text": "that they may appear unto men to fast.",
+      "verse": "13:16",
+      "lineIndex": 41
+    },
+    {
+      "start": 131.961,
+      "end": 134.608,
+      "type": "line",
+      "text": "Verily I say unto you, they have their reward.",
+      "verse": "13:16",
+      "lineIndex": 42
+    },
+    {
+      "start": 135.288,
+      "end": 137.703,
+      "type": "line",
+      "text": "But thou, when thou fastest,",
+      "verse": "13:17",
+      "lineIndex": 43
+    },
+    {
+      "start": 137.883,
+      "end": 140.344,
+      "type": "line",
+      "text": "anoint thy head, and wash thy face;",
+      "verse": "13:17",
+      "lineIndex": 44
+    },
+    {
+      "start": 141.024,
+      "end": 143.671,
+      "type": "line",
+      "text": "That thou appear not unto men to fast,",
+      "verse": "13:18",
+      "lineIndex": 45
+    },
+    {
+      "start": 143.851,
+      "end": 146.359,
+      "type": "line",
+      "text": "but unto thy Father, who is in secret;",
+      "verse": "13:18",
+      "lineIndex": 46
+    },
+    {
+      "start": 146.539,
+      "end": 150.719,
+      "type": "line",
+      "text": "and thy Father, who seeth in secret, shall reward thee openly.",
+      "verse": "13:18",
+      "lineIndex": 47
+    },
+    {
+      "start": 151.399,
+      "end": 154.51,
+      "type": "line",
+      "text": "Lay not up for yourselves treasures upon earth,",
+      "verse": "13:19",
+      "lineIndex": 49
+    },
+    {
+      "start": 154.69,
+      "end": 157.198,
+      "type": "line",
+      "text": "where moth and rust doth corrupt,",
+      "verse": "13:19",
+      "lineIndex": 50
+    },
+    {
+      "start": 157.378,
+      "end": 159.607,
+      "type": "line",
+      "text": "and thieves break through and steal;",
+      "verse": "13:19",
+      "lineIndex": 51
+    },
+    {
+      "start": 160.287,
+      "end": 162.888,
+      "type": "line",
+      "text": "But lay up for yourselves treasures in heaven,",
+      "verse": "13:20",
+      "lineIndex": 52
+    },
+    {
+      "start": 163.068,
+      "end": 165.715,
+      "type": "line",
+      "text": "where neither moth nor rust doth corrupt,",
+      "verse": "13:20",
+      "lineIndex": 53
+    },
+    {
+      "start": 165.895,
+      "end": 168.589,
+      "type": "line",
+      "text": "and where thieves do not break through nor steal.",
+      "verse": "13:20",
+      "lineIndex": 54
+    },
+    {
+      "start": 169.269,
+      "end": 172.798,
+      "type": "line",
+      "text": "For where your treasure is, there will your heart be also.",
+      "verse": "13:21",
+      "lineIndex": 55
+    },
+    {
+      "start": 173.478,
+      "end": 175.428,
+      "type": "line",
+      "text": "The light of the body is the eye;",
+      "verse": "13:22",
+      "lineIndex": 56
+    },
+    {
+      "start": 175.608,
+      "end": 178.069,
+      "type": "line",
+      "text": "if, therefore, thine eye be single,",
+      "verse": "13:22",
+      "lineIndex": 57
+    },
+    {
+      "start": 178.249,
+      "end": 180.478,
+      "type": "line",
+      "text": "thy whole body shall be full of light.",
+      "verse": "13:22",
+      "lineIndex": 58
+    },
+    {
+      "start": 181.158,
+      "end": 182.83,
+      "type": "line",
+      "text": "But if thine eye be evil,",
+      "verse": "13:23",
+      "lineIndex": 59
+    },
+    {
+      "start": 183.01,
+      "end": 185.425,
+      "type": "line",
+      "text": "thy whole body shall be full of darkness.",
+      "verse": "13:23",
+      "lineIndex": 60
+    },
+    {
+      "start": 185.605,
+      "end": 190.342,
+      "type": "line",
+      "text": "If, therefore, the light that is in thee be darkness, how great is that darkness!",
+      "verse": "13:23",
+      "lineIndex": 61
+    },
+    {
+      "start": 191.022,
+      "end": 193.251,
+      "type": "line",
+      "text": "No man can serve two masters;",
+      "verse": "13:24",
+      "lineIndex": 62
+    },
+    {
+      "start": 193.431,
+      "end": 196.868,
+      "type": "line",
+      "text": "for either he will hate the one and love the other,",
+      "verse": "13:24",
+      "lineIndex": 63
+    },
+    {
+      "start": 197.048,
+      "end": 200.206,
+      "type": "line",
+      "text": "or else he will hold to the one and despise the other.",
+      "verse": "13:24",
+      "lineIndex": 64
+    },
+    {
+      "start": 200.386,
+      "end": 202.569,
+      "type": "line",
+      "text": "Ye cannot serve God and Mammon.",
+      "verse": "13:24",
+      "lineIndex": 65
+    },
+    {
+      "start": 203.249,
+      "end": 206.825,
+      "type": "line",
+      "text": "And now it came to pass that when Jesus had spoken these words",
+      "verse": "13:25",
+      "lineIndex": 67
+    },
+    {
+      "start": 207.005,
+      "end": 210.163,
+      "type": "line",
+      "text": "he looked upon the twelve whom he had chosen,",
+      "verse": "13:25",
+      "lineIndex": 68
+    },
+    {
+      "start": 210.343,
+      "end": 211.968,
+      "type": "line",
+      "text": "and said unto them:",
+      "verse": "13:25",
+      "lineIndex": 69
+    },
+    {
+      "start": 212.148,
+      "end": 214.516,
+      "type": "line",
+      "text": "Remember the words which I have spoken.",
+      "verse": "13:25",
+      "lineIndex": 70
+    },
+    {
+      "start": 214.696,
+      "end": 219.247,
+      "type": "line",
+      "text": "For behold, ye are they whom I have chosen to minister unto this people.",
+      "verse": "13:25",
+      "lineIndex": 71
+    },
+    {
+      "start": 219.427,
+      "end": 221.099,
+      "type": "line",
+      "text": "Therefore I say unto you,",
+      "verse": "13:25",
+      "lineIndex": 72
+    },
+    {
+      "start": 221.279,
+      "end": 223.322,
+      "type": "line",
+      "text": "take no thought for your life,",
+      "verse": "13:25",
+      "lineIndex": 73
+    },
+    {
+      "start": 223.502,
+      "end": 226.196,
+      "type": "line",
+      "text": "what ye shall eat, or what ye shall drink;",
+      "verse": "13:25",
+      "lineIndex": 74
+    },
+    {
+      "start": 226.376,
+      "end": 229.023,
+      "type": "line",
+      "text": "nor yet for your body, what ye shall put on.",
+      "verse": "13:25",
+      "lineIndex": 75
+    },
+    {
+      "start": 229.203,
+      "end": 231.293,
+      "type": "line",
+      "text": "Is not the life more than meat,",
+      "verse": "13:25",
+      "lineIndex": 76
+    },
+    {
+      "start": 231.473,
+      "end": 233.145,
+      "type": "line",
+      "text": "and the body than raiment?",
+      "verse": "13:25",
+      "lineIndex": 77
+    },
+    {
+      "start": 233.825,
+      "end": 236.658,
+      "type": "line",
+      "text": "Behold the fowls of the air, for they sow not,",
+      "verse": "13:26",
+      "lineIndex": 78
+    },
+    {
+      "start": 236.838,
+      "end": 239.624,
+      "type": "line",
+      "text": "neither do they reap nor gather into barns;",
+      "verse": "13:26",
+      "lineIndex": 79
+    },
+    {
+      "start": 239.804,
+      "end": 241.94,
+      "type": "line",
+      "text": "yet your heavenly Father feedeth them.",
+      "verse": "13:26",
+      "lineIndex": 80
+    },
+    {
+      "start": 242.12,
+      "end": 244.163,
+      "type": "line",
+      "text": "Are ye not much better than they?",
+      "verse": "13:26",
+      "lineIndex": 81
+    },
+    {
+      "start": 244.843,
+      "end": 249.162,
+      "type": "line",
+      "text": "Which of you by taking thought can add one cubit unto his stature?",
+      "verse": "13:27",
+      "lineIndex": 82
+    },
+    {
+      "start": 249.842,
+      "end": 252.118,
+      "type": "line",
+      "text": "And why take ye thought for raiment?",
+      "verse": "13:28",
+      "lineIndex": 83
+    },
+    {
+      "start": 252.298,
+      "end": 255.317,
+      "type": "line",
+      "text": "Consider the lilies of the field how they grow;",
+      "verse": "13:28",
+      "lineIndex": 84
+    },
+    {
+      "start": 255.497,
+      "end": 258.376,
+      "type": "line",
+      "text": "they toil not, neither do they spin;",
+      "verse": "13:28",
+      "lineIndex": 85
+    },
+    {
+      "start": 259.056,
+      "end": 260.774,
+      "type": "line",
+      "text": "And yet I say unto you,",
+      "verse": "13:29",
+      "lineIndex": 86
+    },
+    {
+      "start": 260.954,
+      "end": 262.533,
+      "type": "line",
+      "text": "that even Solomon,",
+      "verse": "13:29",
+      "lineIndex": 87
+    },
+    {
+      "start": 262.713,
+      "end": 266.568,
+      "type": "line",
+      "text": "in all his glory, was not arrayed like one of these.",
+      "verse": "13:29",
+      "lineIndex": 88
+    },
+    {
+      "start": 267.248,
+      "end": 270.22,
+      "type": "line",
+      "text": "Wherefore, if God so clothe the grass of the field,",
+      "verse": "13:30",
+      "lineIndex": 89
+    },
+    {
+      "start": 270.4,
+      "end": 273.976,
+      "type": "line",
+      "text": "which today is, and tomorrow is cast into the oven,",
+      "verse": "13:30",
+      "lineIndex": 90
+    },
+    {
+      "start": 274.156,
+      "end": 277.685,
+      "type": "line",
+      "text": "even so will he clothe you, if ye are not of little faith.",
+      "verse": "13:30",
+      "lineIndex": 91
+    },
+    {
+      "start": 278.365,
+      "end": 280.408,
+      "type": "line",
+      "text": "Therefore take no thought, saying,",
+      "verse": "13:31",
+      "lineIndex": 92
+    },
+    {
+      "start": 280.588,
+      "end": 283.142,
+      "type": "line",
+      "text": "What shall we eat? or, What shall we drink?",
+      "verse": "13:31",
+      "lineIndex": 93
+    },
+    {
+      "start": 283.322,
+      "end": 285.551,
+      "type": "line",
+      "text": "or, Wherewithal shall we be clothed?",
+      "verse": "13:31",
+      "lineIndex": 94
+    },
+    {
+      "start": 286.231,
+      "end": 290.55,
+      "type": "line",
+      "text": "For your heavenly Father knoweth that ye have need of all these things.",
+      "verse": "13:32",
+      "lineIndex": 95
+    },
+    {
+      "start": 291.23,
+      "end": 294.899,
+      "type": "line",
+      "text": "But seek ye first the kingdom of God and his righteousness,",
+      "verse": "13:33",
+      "lineIndex": 96
+    },
+    {
+      "start": 295.079,
+      "end": 297.633,
+      "type": "line",
+      "text": "and all these things shall be added unto you.",
+      "verse": "13:33",
+      "lineIndex": 97
+    },
+    {
+      "start": 298.313,
+      "end": 300.821,
+      "type": "line",
+      "text": "Take therefore no thought for the morrow,",
+      "verse": "13:34",
+      "lineIndex": 98
+    },
+    {
+      "start": 301.001,
+      "end": 304.623,
+      "type": "line",
+      "text": "for the morrow shall take thought for the things of itself.",
+      "verse": "13:34",
+      "lineIndex": 99
+    },
+    {
+      "start": 304.803,
+      "end": 307.404,
+      "type": "line",
+      "text": "Sufficient is the day unto the evil thereof.",
+      "verse": "13:34",
+      "lineIndex": 100
+    }
+  ]
+}
