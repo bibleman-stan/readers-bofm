@@ -232,7 +232,7 @@ When outside this table, surface. When inside, dispatch the standing answer and 
 
 **Corpus clusters** (for cluster-cascade routing): Small Plates (1 Ne, 2 Ne, Jacob, Enos, Jarom, Omni, WofM) / Mosian Era (Mosiah, Alma 1–44) / War Narrative (Alma 45–63, Helaman) / 3 Nephi–4 Nephi / Mormon–Ether–Moroni. Threshold: any batch ≥25 surgical fixes spanning 3+ clusters MUST be split.
 
-**Agent model routing:** Haiku for mechanical lookups; Sonnet for narrow-scope scans where rules are defined; Opus for adversarial audits / methodology synthesis / novel rule design / cross-corpus shared-infrastructure edits. Sonnet default; reserve Opus for reasoning-heavy work.
+**Agent model routing (Stan-prime-directive 2026-05-15 per `feedback_model_selection_frugality`):** match the tier to the task — *"don't blow thru opus tokens for a haiku or sonnet task."* **Set `model:` explicitly on every Agent dispatch.** Haiku for mechanical lookups / one-shot extractions / running existing scripts. Sonnet (the default) for per-case judgment with a clear rubric — corpus surveys with classification, structured audits with codified canon checks, multi-cluster per-case sweeps. Opus only when the rubric ITSELF is the question — hostile adversarial scope-scrutiny, signature design for new mechanical rules, methodology/discipline work, cross-corpus shared-infrastructure edits. Before every dispatch: *"could a smaller model with a tight rubric handle this?"* If yes, downshift.
 
 ---
 
