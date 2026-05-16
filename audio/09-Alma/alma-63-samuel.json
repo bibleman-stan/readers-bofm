@@ -1,0 +1,424 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 63,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 232.323,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.802,
+      "type": "line",
+      "text": "And it came to pass in the commencement of the thirty and sixth year of the reign of the judges over the people of Nephi,",
+      "verse": "63:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.982,
+      "end": 14.344,
+      "type": "line",
+      "text": "that Shiblon took possession of those sacred things which had been delivered unto Helaman by Alma.",
+      "verse": "63:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 15.024,
+      "end": 16.649,
+      "type": "line",
+      "text": "And he was a just man,",
+      "verse": "63:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 16.829,
+      "end": 19.244,
+      "type": "line",
+      "text": "and he did walk uprightly before God;",
+      "verse": "63:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.424,
+      "end": 22.21,
+      "type": "line",
+      "text": "and he did observe to do good continually,",
+      "verse": "63:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.39,
+      "end": 25.084,
+      "type": "line",
+      "text": "to keep the commandments of the Lord his God;",
+      "verse": "63:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.264,
+      "end": 26.889,
+      "type": "line",
+      "text": "and also did his brother.",
+      "verse": "63:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 27.569,
+      "end": 30.03,
+      "type": "line",
+      "text": "And it came to pass that Moroni died also.",
+      "verse": "63:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 30.21,
+      "end": 34.436,
+      "type": "line",
+      "text": "And thus ended the thirty and sixth year of the reign of the judges.",
+      "verse": "63:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 35.116,
+      "end": 43.382,
+      "type": "line",
+      "text": "And it came to pass that in the thirty and seventh year of the reign of the judges, there was a large company of men,",
+      "verse": "63:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 43.562,
+      "end": 49.181,
+      "type": "line",
+      "text": "even to the amount of five thousand and four hundred men, with their wives and their children,",
+      "verse": "63:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 49.361,
+      "end": 54.237,
+      "type": "line",
+      "text": "departed out of the land of Zarahemla into the land which was northward.",
+      "verse": "63:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 54.917,
+      "end": 59.004,
+      "type": "line",
+      "text": "And it came to pass that Hagoth, he being an exceedingly curious man,",
+      "verse": "63:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 59.184,
+      "end": 69.679,
+      "type": "line",
+      "text": "therefore he went forth and built him an exceedingly large ship, on the borders of the land Bountiful, by the land Desolation,",
+      "verse": "63:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 69.859,
+      "end": 76.361,
+      "type": "line",
+      "text": "and launched it forth into the west sea, by the narrow neck which led into the land northward.",
+      "verse": "63:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 77.041,
+      "end": 80.988,
+      "type": "line",
+      "text": "And behold, there were many of the Nephites who did enter therein",
+      "verse": "63:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 81.168,
+      "end": 86.462,
+      "type": "line",
+      "text": "and did sail forth with much provisions, and also many women and children;",
+      "verse": "63:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 86.642,
+      "end": 88.825,
+      "type": "line",
+      "text": "and they took their course northward.",
+      "verse": "63:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 89.005,
+      "end": 91.42,
+      "type": "line",
+      "text": "And thus ended the thirty and seventh year.",
+      "verse": "63:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 92.1,
+      "end": 96.28,
+      "type": "line",
+      "text": "And in the thirty and eighth year, this man built other ships.",
+      "verse": "63:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 96.46,
+      "end": 99.014,
+      "type": "line",
+      "text": "And the first ship did also return,",
+      "verse": "63:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 99.194,
+      "end": 101.702,
+      "type": "line",
+      "text": "and many more people did enter into it;",
+      "verse": "63:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 101.882,
+      "end": 104.39,
+      "type": "line",
+      "text": "and they also took much provisions,",
+      "verse": "63:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 104.57,
+      "end": 107.124,
+      "type": "line",
+      "text": "and set out again to the land northward.",
+      "verse": "63:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 107.804,
+      "end": 110.962,
+      "type": "line",
+      "text": "And it came to pass that they were never heard of more.",
+      "verse": "63:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 111.142,
+      "end": 115.832,
+      "type": "line",
+      "text": "And we suppose that they were drowned in the depths of the sea.",
+      "verse": "63:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 116.012,
+      "end": 120.099,
+      "type": "line",
+      "text": "And it came to pass that one other ship also did sail forth;",
+      "verse": "63:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 120.279,
+      "end": 122.74,
+      "type": "line",
+      "text": "and whither she did go we know not.",
+      "verse": "63:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 123.42,
+      "end": 125.556,
+      "type": "line",
+      "text": "And it came to pass that in this year",
+      "verse": "63:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 125.736,
+      "end": 129.498,
+      "type": "line",
+      "text": "there were many people who went forth into the land northward.",
+      "verse": "63:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 129.678,
+      "end": 132.325,
+      "type": "line",
+      "text": "And thus ended the thirty and eighth year.",
+      "verse": "63:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 133.005,
+      "end": 137.928,
+      "type": "line",
+      "text": "And it came to pass in the thirty and ninth year of the reign of the judges,",
+      "verse": "63:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 138.108,
+      "end": 139.594,
+      "type": "line",
+      "text": "Shiblon died also,",
+      "verse": "63:10",
+      "lineIndex": 34
+    },
+    {
+      "start": 139.774,
+      "end": 149.155,
+      "type": "line",
+      "text": "and Corianton had gone forth to the land northward in a ship, to carry forth provisions unto the people who had gone forth into that land.",
+      "verse": "63:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 149.835,
+      "end": 155.779,
+      "type": "line",
+      "text": "Therefore it became expedient for Shiblon to confer those sacred things, before his death,",
+      "verse": "63:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 155.959,
+      "end": 159.07,
+      "type": "line",
+      "text": "upon the son of Helaman, who was called Helaman,",
+      "verse": "63:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 159.25,
+      "end": 161.618,
+      "type": "line",
+      "text": "being called after the name of his father.",
+      "verse": "63:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 162.298,
+      "end": 166.849,
+      "type": "line",
+      "text": "Now behold, all those engravings which were in the possession of Helaman",
+      "verse": "63:12",
+      "lineIndex": 39
+    },
+    {
+      "start": 167.029,
+      "end": 171.812,
+      "type": "line",
+      "text": "were written and sent forth among the children of men throughout all the land,",
+      "verse": "63:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 171.992,
+      "end": 176.59,
+      "type": "line",
+      "text": "save it were those parts which had been commanded by Alma should not go forth.",
+      "verse": "63:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 177.27,
+      "end": 183.911,
+      "type": "line",
+      "text": "Nevertheless, these things were to be kept sacred, and handed down from one generation to another;",
+      "verse": "63:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 184.091,
+      "end": 189.71,
+      "type": "line",
+      "text": "therefore, in this year, they had been conferred upon Helaman, before the death of Shiblon.",
+      "verse": "63:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 190.39,
+      "end": 192.805,
+      "type": "line",
+      "text": "And it came to pass also in this year",
+      "verse": "63:14",
+      "lineIndex": 45
+    },
+    {
+      "start": 192.985,
+      "end": 197.815,
+      "type": "line",
+      "text": "that there were some dissenters who had gone forth unto the Lamanites;",
+      "verse": "63:14",
+      "lineIndex": 46
+    },
+    {
+      "start": 197.995,
+      "end": 201.803,
+      "type": "line",
+      "text": "and they were stirred up again to anger against the Nephites.",
+      "verse": "63:14",
+      "lineIndex": 47
+    },
+    {
+      "start": 202.483,
+      "end": 211.725,
+      "type": "line",
+      "text": "And also in this same year they came down with a numerous army to war against the people of Moronihah, or against the army of Moronihah,",
+      "verse": "63:15",
+      "lineIndex": 48
+    },
+    {
+      "start": 211.905,
+      "end": 218.267,
+      "type": "line",
+      "text": "in the which they were beaten and driven back again to their own lands, suffering great loss.",
+      "verse": "63:15",
+      "lineIndex": 49
+    },
+    {
+      "start": 218.947,
+      "end": 224.891,
+      "type": "line",
+      "text": "And thus ended the thirty and ninth year of the reign of the judges over the people of Nephi.",
+      "verse": "63:16",
+      "lineIndex": 50
+    },
+    {
+      "start": 225.571,
+      "end": 229.333,
+      "type": "line",
+      "text": "And thus ended the account of Alma, and Helaman his son,",
+      "verse": "63:17",
+      "lineIndex": 51
+    },
+    {
+      "start": 229.513,
+      "end": 231.649,
+      "type": "line",
+      "text": "and also Shiblon, who was his son.",
+      "verse": "63:17",
+      "lineIndex": 52
+    }
+  ]
+}
