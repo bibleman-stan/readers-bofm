@@ -1,0 +1,744 @@
+{
+  "book": "helaman",
+  "bookName": "Helaman",
+  "chapter": 15,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 306.067,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.043,
+      "type": "line",
+      "text": "And now, my beloved brethren,",
+      "verse": "15:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.223,
+      "end": 5.799,
+      "type": "line",
+      "text": "behold, I declare unto you that except ye shall repent",
+      "verse": "15:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.979,
+      "end": 8.905,
+      "type": "line",
+      "text": "your houses shall be left unto you desolate.",
+      "verse": "15:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.585,
+      "end": 11.164,
+      "type": "line",
+      "text": "Yea, except ye repent,",
+      "verse": "15:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.344,
+      "end": 13.805,
+      "type": "line",
+      "text": "your women shall have great cause to mourn",
+      "verse": "15:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 13.985,
+      "end": 16.586,
+      "type": "line",
+      "text": "in the day that they shall give suck;",
+      "verse": "15:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 16.766,
+      "end": 21.131,
+      "type": "line",
+      "text": "for ye shall attempt to flee and there shall be no place for refuge;",
+      "verse": "15:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 21.311,
+      "end": 24.097,
+      "type": "line",
+      "text": "yea, and wo unto them which are with child,",
+      "verse": "15:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 24.277,
+      "end": 26.645,
+      "type": "line",
+      "text": "for they shall be heavy and cannot flee;",
+      "verse": "15:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 26.825,
+      "end": 30.262,
+      "type": "line",
+      "text": "therefore, they shall be trodden down and shall be left to perish.",
+      "verse": "15:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 30.942,
+      "end": 34.007,
+      "type": "line",
+      "text": "Yea, wo unto this people who are called the people of Nephi",
+      "verse": "15:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 34.187,
+      "end": 36.045,
+      "type": "line",
+      "text": "except they shall repent,",
+      "verse": "15:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 36.225,
+      "end": 39.522,
+      "type": "line",
+      "text": "when they shall see all these signs and wonders",
+      "verse": "15:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 39.702,
+      "end": 41.885,
+      "type": "line",
+      "text": "which shall be showed unto them;",
+      "verse": "15:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 42.065,
+      "end": 45.641,
+      "type": "line",
+      "text": "for behold, they have been a chosen people of the Lord;",
+      "verse": "15:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 45.821,
+      "end": 48.236,
+      "type": "line",
+      "text": "yea, the people of Nephi hath he loved,",
+      "verse": "15:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 48.416,
+      "end": 50.599,
+      "type": "line",
+      "text": "and also hath he chastened them;",
+      "verse": "15:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 50.779,
+      "end": 54.68,
+      "type": "line",
+      "text": "yea, in the days of their iniquities hath he chastened them",
+      "verse": "15:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 54.86,
+      "end": 56.393,
+      "type": "line",
+      "text": "because he loveth them.",
+      "verse": "15:3",
+      "lineIndex": 19
+    },
+    {
+      "start": 57.073,
+      "end": 60.695,
+      "type": "line",
+      "text": "But behold my brethren, the Lamanites hath he hated",
+      "verse": "15:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 60.875,
+      "end": 63.894,
+      "type": "line",
+      "text": "because their deeds have been evil continually,",
+      "verse": "15:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 64.074,
+      "end": 68.068,
+      "type": "line",
+      "text": "and this because of the iniquity of the tradition of their fathers.",
+      "verse": "15:4",
+      "lineIndex": 23
+    },
+    {
+      "start": 68.248,
+      "end": 73.171,
+      "type": "line",
+      "text": "But behold, salvation hath come unto them through the preaching of the Nephites;",
+      "verse": "15:4",
+      "lineIndex": 24
+    },
+    {
+      "start": 73.351,
+      "end": 76.37,
+      "type": "line",
+      "text": "and for this intent hath the Lord prolonged their days.",
+      "verse": "15:4",
+      "lineIndex": 25
+    },
+    {
+      "start": 77.05,
+      "end": 82.576,
+      "type": "line",
+      "text": "And I would that ye should behold that the more part of them are in the path of their duty,",
+      "verse": "15:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 82.756,
+      "end": 85.542,
+      "type": "line",
+      "text": "and they do walk circumspectly before God,",
+      "verse": "15:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 85.722,
+      "end": 88.555,
+      "type": "line",
+      "text": "and they do observe to keep his commandments",
+      "verse": "15:5",
+      "lineIndex": 28
+    },
+    {
+      "start": 88.735,
+      "end": 92.682,
+      "type": "line",
+      "text": "and his statutes and his judgments according to the law of Moses.",
+      "verse": "15:5",
+      "lineIndex": 29
+    },
+    {
+      "start": 93.362,
+      "end": 94.802,
+      "type": "line",
+      "text": "Yea, I say unto you",
+      "verse": "15:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 94.982,
+      "end": 97.815,
+      "type": "line",
+      "text": "that the more part of them are doing this,",
+      "verse": "15:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 97.995,
+      "end": 101.106,
+      "type": "line",
+      "text": "and they are striving with unwearied diligence",
+      "verse": "15:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 101.286,
+      "end": 106.255,
+      "type": "line",
+      "text": "that they may bring the remainder of their brethren to the knowledge of the truth;",
+      "verse": "15:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 106.435,
+      "end": 109.686,
+      "type": "line",
+      "text": "therefore there are many who do add to their numbers daily.",
+      "verse": "15:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 110.366,
+      "end": 112.967,
+      "type": "line",
+      "text": "And behold, ye do know of yourselves,",
+      "verse": "15:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 113.147,
+      "end": 114.958,
+      "type": "line",
+      "text": "for ye have witnessed it,",
+      "verse": "15:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 115.138,
+      "end": 119.318,
+      "type": "line",
+      "text": "that as many of them as are brought to the knowledge of the truth,",
+      "verse": "15:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 119.498,
+      "end": 124.096,
+      "type": "line",
+      "text": "and to know of the wicked and abominable traditions of their fathers,",
+      "verse": "15:7",
+      "lineIndex": 38
+    },
+    {
+      "start": 124.276,
+      "end": 126.877,
+      "type": "line",
+      "text": "and are led to believe the holy scriptures,",
+      "verse": "15:7",
+      "lineIndex": 39
+    },
+    {
+      "start": 127.057,
+      "end": 130.029,
+      "type": "line",
+      "text": "yea, the prophecies of the holy prophets, which are written,",
+      "verse": "15:7",
+      "lineIndex": 40
+    },
+    {
+      "start": 130.209,
+      "end": 134.156,
+      "type": "line",
+      "text": "which leadeth them to faith on the Lord, and unto repentance,",
+      "verse": "15:7",
+      "lineIndex": 41
+    },
+    {
+      "start": 134.336,
+      "end": 138.33,
+      "type": "line",
+      "text": "which faith and repentance bringeth a change of heart unto them\u2014",
+      "verse": "15:7",
+      "lineIndex": 42
+    },
+    {
+      "start": 139.01,
+      "end": 141.657,
+      "type": "line",
+      "text": "Therefore, as many as have come to this,",
+      "verse": "15:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 141.837,
+      "end": 145.088,
+      "type": "line",
+      "text": "ye know of yourselves are firm and steadfast in the faith,",
+      "verse": "15:8",
+      "lineIndex": 44
+    },
+    {
+      "start": 145.268,
+      "end": 148.194,
+      "type": "line",
+      "text": "and in the thing wherewith they have been made free.",
+      "verse": "15:8",
+      "lineIndex": 45
+    },
+    {
+      "start": 148.874,
+      "end": 152.636,
+      "type": "line",
+      "text": "And ye know also that they have buried their weapons of war,",
+      "verse": "15:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 152.816,
+      "end": 156.949,
+      "type": "line",
+      "text": "and they fear to take them up lest by any means they should sin;",
+      "verse": "15:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 157.129,
+      "end": 159.405,
+      "type": "line",
+      "text": "yea, ye can see that they fear to sin\u2014",
+      "verse": "15:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 159.585,
+      "end": 164.972,
+      "type": "line",
+      "text": "for behold they will suffer themselves that they be trodden down and slain by their enemies,",
+      "verse": "15:9",
+      "lineIndex": 49
+    },
+    {
+      "start": 165.152,
+      "end": 167.892,
+      "type": "line",
+      "text": "and will not lift their swords against them,",
+      "verse": "15:9",
+      "lineIndex": 50
+    },
+    {
+      "start": 168.072,
+      "end": 170.44,
+      "type": "line",
+      "text": "and this because of their faith in Christ.",
+      "verse": "15:9",
+      "lineIndex": 51
+    },
+    {
+      "start": 171.12,
+      "end": 173.581,
+      "type": "line",
+      "text": "And now, because of their steadfastness",
+      "verse": "15:10",
+      "lineIndex": 52
+    },
+    {
+      "start": 173.761,
+      "end": 176.872,
+      "type": "line",
+      "text": "when they do believe in that thing which they do believe,",
+      "verse": "15:10",
+      "lineIndex": 53
+    },
+    {
+      "start": 177.052,
+      "end": 180.721,
+      "type": "line",
+      "text": "for because of their firmness when they are once enlightened,",
+      "verse": "15:10",
+      "lineIndex": 54
+    },
+    {
+      "start": 180.901,
+      "end": 184.384,
+      "type": "line",
+      "text": "behold, the Lord shall bless them and prolong their days,",
+      "verse": "15:10",
+      "lineIndex": 55
+    },
+    {
+      "start": 184.564,
+      "end": 186.561,
+      "type": "line",
+      "text": "notwithstanding their iniquity\u2014",
+      "verse": "15:10",
+      "lineIndex": 56
+    },
+    {
+      "start": 187.241,
+      "end": 190.12,
+      "type": "line",
+      "text": "Yea, even if they should dwindle in unbelief",
+      "verse": "15:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 190.3,
+      "end": 192.25,
+      "type": "line",
+      "text": "the Lord shall prolong their days,",
+      "verse": "15:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 192.43,
+      "end": 200.139,
+      "type": "line",
+      "text": "until the time shall come which hath been spoken of by our fathers, and also by the prophet Zenos, and many other prophets,",
+      "verse": "15:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 200.319,
+      "end": 206.588,
+      "type": "line",
+      "text": "concerning the restoration of our brethren, the Lamanites, again to the knowledge of the truth\u2014",
+      "verse": "15:11",
+      "lineIndex": 60
+    },
+    {
+      "start": 207.268,
+      "end": 209.915,
+      "type": "line",
+      "text": "Yea, I say unto you, that in the latter times",
+      "verse": "15:12",
+      "lineIndex": 62
+    },
+    {
+      "start": 210.095,
+      "end": 214.739,
+      "type": "line",
+      "text": "the promises of the Lord have been extended to our brethren, the Lamanites;",
+      "verse": "15:12",
+      "lineIndex": 63
+    },
+    {
+      "start": 214.919,
+      "end": 218.959,
+      "type": "line",
+      "text": "and notwithstanding the many afflictions which they shall have,",
+      "verse": "15:12",
+      "lineIndex": 64
+    },
+    {
+      "start": 219.139,
+      "end": 221.554,
+      "type": "line",
+      "text": "and notwithstanding they shall be driven",
+      "verse": "15:12",
+      "lineIndex": 65
+    },
+    {
+      "start": 221.734,
+      "end": 224.149,
+      "type": "line",
+      "text": "to and fro upon the face of the earth,",
+      "verse": "15:12",
+      "lineIndex": 66
+    },
+    {
+      "start": 224.329,
+      "end": 225.629,
+      "type": "line",
+      "text": "and be hunted,",
+      "verse": "15:12",
+      "lineIndex": 67
+    },
+    {
+      "start": 225.809,
+      "end": 230.778,
+      "type": "line",
+      "text": "and shall be smitten and scattered abroad, having no place for refuge,",
+      "verse": "15:12",
+      "lineIndex": 68
+    },
+    {
+      "start": 230.958,
+      "end": 233.326,
+      "type": "line",
+      "text": "the Lord shall be merciful unto them.",
+      "verse": "15:12",
+      "lineIndex": 69
+    },
+    {
+      "start": 234.006,
+      "end": 236.282,
+      "type": "line",
+      "text": "And this is according to the prophecy,",
+      "verse": "15:13",
+      "lineIndex": 70
+    },
+    {
+      "start": 236.462,
+      "end": 239.434,
+      "type": "line",
+      "text": "that they shall again be brought to the true knowledge,",
+      "verse": "15:13",
+      "lineIndex": 71
+    },
+    {
+      "start": 239.614,
+      "end": 241.89,
+      "type": "line",
+      "text": "which is the knowledge of their Redeemer,",
+      "verse": "15:13",
+      "lineIndex": 72
+    },
+    {
+      "start": 242.07,
+      "end": 244.253,
+      "type": "line",
+      "text": "and their great and true shepherd,",
+      "verse": "15:13",
+      "lineIndex": 73
+    },
+    {
+      "start": 244.433,
+      "end": 246.43,
+      "type": "line",
+      "text": "and be numbered among his sheep.",
+      "verse": "15:13",
+      "lineIndex": 74
+    },
+    {
+      "start": 247.11,
+      "end": 248.782,
+      "type": "line",
+      "text": "Therefore I say unto you,",
+      "verse": "15:14",
+      "lineIndex": 75
+    },
+    {
+      "start": 248.962,
+      "end": 252.166,
+      "type": "line",
+      "text": "it shall be better for them than for you except ye repent.",
+      "verse": "15:14",
+      "lineIndex": 76
+    },
+    {
+      "start": 252.846,
+      "end": 258.233,
+      "type": "line",
+      "text": "For behold, had the mighty works been shown unto them which have been shown unto you,",
+      "verse": "15:15",
+      "lineIndex": 77
+    },
+    {
+      "start": 258.413,
+      "end": 270.348,
+      "type": "line",
+      "text": "yea, unto them who have dwindled in unbelief because of the traditions of their fathers, ye can see of yourselves that they never would again have dwindled in unbelief.",
+      "verse": "15:15",
+      "lineIndex": 78
+    },
+    {
+      "start": 271.028,
+      "end": 272.746,
+      "type": "line",
+      "text": "Therefore, saith the Lord:",
+      "verse": "15:16",
+      "lineIndex": 79
+    },
+    {
+      "start": 272.926,
+      "end": 275.294,
+      "type": "line",
+      "text": "I will not utterly destroy them,",
+      "verse": "15:16",
+      "lineIndex": 80
+    },
+    {
+      "start": 275.474,
+      "end": 278.121,
+      "type": "line",
+      "text": "but I will cause that in the day of my wisdom",
+      "verse": "15:16",
+      "lineIndex": 81
+    },
+    {
+      "start": 278.301,
+      "end": 280.437,
+      "type": "line",
+      "text": "they shall return again unto me,",
+      "verse": "15:16",
+      "lineIndex": 82
+    },
+    {
+      "start": 280.617,
+      "end": 281.917,
+      "type": "line",
+      "text": "saith the Lord.",
+      "verse": "15:16",
+      "lineIndex": 83
+    },
+    {
+      "start": 282.597,
+      "end": 284.501,
+      "type": "line",
+      "text": "And now behold, saith the Lord,",
+      "verse": "15:17",
+      "lineIndex": 84
+    },
+    {
+      "start": 284.681,
+      "end": 286.91,
+      "type": "line",
+      "text": "concerning the people of the Nephites:",
+      "verse": "15:17",
+      "lineIndex": 85
+    },
+    {
+      "start": 287.09,
+      "end": 290.294,
+      "type": "line",
+      "text": "If they will not repent, and observe to do my will,",
+      "verse": "15:17",
+      "lineIndex": 86
+    },
+    {
+      "start": 290.474,
+      "end": 292.424,
+      "type": "line",
+      "text": "I will utterly destroy them,",
+      "verse": "15:17",
+      "lineIndex": 87
+    },
+    {
+      "start": 292.604,
+      "end": 293.951,
+      "type": "line",
+      "text": "saith the Lord,",
+      "verse": "15:17",
+      "lineIndex": 88
+    },
+    {
+      "start": 294.131,
+      "end": 295.849,
+      "type": "line",
+      "text": "because of their unbelief",
+      "verse": "15:17",
+      "lineIndex": 89
+    },
+    {
+      "start": 296.029,
+      "end": 300.441,
+      "type": "line",
+      "text": "notwithstanding the many mighty works which I have done among them;",
+      "verse": "15:17",
+      "lineIndex": 90
+    },
+    {
+      "start": 300.621,
+      "end": 303.918,
+      "type": "line",
+      "text": "and as surely as the Lord liveth shall these things be,",
+      "verse": "15:17",
+      "lineIndex": 91
+    },
+    {
+      "start": 304.098,
+      "end": 305.398,
+      "type": "line",
+      "text": "saith the Lord.",
+      "verse": "15:17",
+      "lineIndex": 92
+    }
+  ]
+}
