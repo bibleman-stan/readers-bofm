@@ -136,7 +136,7 @@ Lexicalized closed-list units. Triggers leave no room for proposition-level anal
 
 **TIER 3 — Complement integrity**
 - **R26** Adjective + that complement (most specific — direct ADJ head)
-  - Wins over R7 when matrix lemma ∈ R26 closed list (see §5 R26 `R26_ADJ_PREDICATES` + `R26_NOUN_PREDICATES`; current state: `{possible, expedient, desirous, necessary, needful, impossible, better, well, requisite}` ADJ + `{wisdom}` NOUN-as-predicate; `meet` dropped 2026-05-10 per zero-corpus-fit)
+  - Wins over R7 when matrix lemma ∈ R26 closed list (see §5 R26 `RULE_26_HEAD_LEMMAS`; current state: `{possible, expedient, desirous, necessary, needful, impossible, better, well, requisite}` ADJ + `{wisdom}` NOUN-as-predicate; `meet` dropped 2026-05-10 per zero-corpus-fit)
 - **R17** Verb + complement (six closed verb classes + topic-PP extension)
   - Yields to R26 when ADJ is the direct head; wins over R19 when both apply
   - Yields to **J3 (speech-act announcement)** when the ccomp body is ≥8 word tokens under a short speech-tag (see §5 R17 speech-indirect long-complement exception)
@@ -346,13 +346,11 @@ heuristic_review_required:
 ```yaml
 SHORT_CONJUNCT_THRESHOLD: 4    # non-PUNCT tokens in the conjunct's UD subtree
 
-SUBSTITUTION_PROBES:           # used by human reviewer applying the substitution test
-  - "that is to say"
-  - "in other words"
-
 # The rule has no closed-list lemma inventory; the conj-or surface form is the trigger.
 # Bucketing into STRONG vs REVIEW is driven entirely by the structural heuristic.
 ```
+
+The substitution probes used by human reviewers applying the substitution test (Category B per-instance editorial-judgment step) are *"that is to say"* and *"in other words"* — these are prose-only; the validator does not encode them as Python constants since the substitution test is not mechanically applied.
 
 **Scope.** Applies to a coordinating *or* tagged with UD `cc` whose head is a `conj` token, when the two conjuncts (the first being the head of the second's `conj` relation, the second being the head of the `cc` attachment) currently sit on different v2-mine lines. The rule governs MERGE candidacy only — when conjuncts already share a line the rule does not fire. The rule operates over the second-conjunct head's UD subtree (not its surface span) for the conjunct-size measurement; the SHORT_CONJUNCT_THRESHOLD counts non-PUNCT tokens.
 
@@ -409,19 +407,17 @@ action: SPLIT_BEFORE_MARK
 
 **Closed lists** (machine-readable).
 ```yaml
-CAUSAL_MARK_LEMMAS:
-  - because
-
-# Rule 17 governor classes (defined at canon §Verb-Classes-R17).
-# When a because-clause sits inside a ccomp under any verb in this set,
-# R6 yields to R17's complement-integrity mandate.
-R17_GOVERNOR_CLASSES:
-  - causative      # cause, suffer, permit, command, grant
-  - aspectual      # begin, cease, continue
-  - speech         # say, speak, declare, testify, swear, proclaim, tell, ...
-  - cognition      # know, believe, perceive, remember, understand, suppose, ...
-  - volition       # wish, desire, hope, long, trust, pray, seek
-  - FEF            # it was their lot to, it is expedient to
+# The causal-mark trigger is a single lemma — *because* — hardcoded inline
+# in the validator's predicate (no Python constant).
+#
+# The R17 precedence guard imports `GOVERNING_LEMMAS` from validate_rule_17_ud
+# (cross-rule reference); when a because-advcl sits inside a ccomp under any
+# verb in that unified set, R6 yields to R17's complement-integrity mandate.
+# The validator does NOT split GOVERNING_LEMMAS into a class taxonomy at
+# runtime — R17's six conceptual classes (causative, aspectual, speech,
+# cognition, volition, FEF-extraposition) are documented at canon
+# §Verb-Classes-R17 and are subsets of the unified GOVERNING_LEMMAS set;
+# R6's structural check uses the unified set as imported.
 ```
 
 **Scope.** Finite *because*-clauses in trailing `advcl` attachment to a VERB or ADJ matrix head. The `advcl` head MUST be a VERB or ADJ; constructions where *because* heads a PP-equivalent (*"because of NP"*) fall outside this signature and are out of scope.
@@ -434,7 +430,7 @@ R17_GOVERNOR_CLASSES:
 4. Short-line context where the combined line passes the atomic-thought test → MAY merge under M4 (fragmented atomic thought-unit)
 5. **Elided-predicate `(and|or) (all) this` matrix** (codified 2026-05-15): when the matrix the *because*-clause attaches to is the PRON `this` (lemma=`this`, upos=PRON, deprel=`conj`), and that `this` is `conj` of a VERB/AUX on the PRIOR v2-mine line, and the matrix line begins with a CCONJ (the `(and|or|nor|but)` fragment-marker), R6's split-mandate YIELDS to §1.5 M4 (fragmented-atomic-thought-unit). The matrix line is itself a fragment (`and this` / `and all this` — a coordinate-PRON with the predicate elided from the prior coordinate); splitting the *because*-clause off would leave that 2-word matrix line stranded as a non-ATU. The merge IS the §1.5 M4 fragmented-ATU completion. 5 corpus instances (Mosiah 12:5, 13:10, 17:15; Alma 31:11; Helaman 6:22 — the last uses *that* not *because* and is governed by R7 Exclusion 7). Closed lexical signature: PRON `this` only; NOUN/PROPN-headed coordinate matrices are out of scope (audit 2026-05-15 verified those are legitimate J1 / Isaiah-parallel / R17-nominal-complement splits, not fragments).
 
-*Note on Exclusion 3 — Rule 17 precedence guard.* The check is structural: when the causal `advcl` attaches inside an enclosing `ccomp` whose `ccomp` head lemma is in `R17_GOVERNOR_CLASSES`, R17's complement-integrity bond between the R17 governor and its *that*-complement takes priority. Applying R6 inside such a configuration produces a Rule-17 violation (matrix governor severed from its *that*-complement across the embedded because-clause). The detector MUST traverse the parent chain of the *because*-advcl to verify no enclosing R17-governed ccomp before firing.
+*Note on Exclusion 3 — Rule 17 precedence guard.* The check is structural: when the causal `advcl` attaches inside an enclosing `ccomp` whose `ccomp` head lemma is in R17's unified `GOVERNING_LEMMAS` (imported from `validate_rule_17_ud.py`), R17's complement-integrity bond between the R17 governor and its *that*-complement takes priority. Applying R6 inside such a configuration produces a Rule-17 violation (matrix governor severed from its *that*-complement across the embedded because-clause). The detector MUST traverse the parent chain of the *because*-advcl to verify no enclosing R17-governed ccomp before firing.
 
 **Precedence.** §3.5 Tier 5. Yields to R17 (when the *because*-clause is inside a `ccomp` under an R17-class governor), to §1.12 Parallel-List Uniformity (within multi-verse parallel lists), and to M4 (short-line atomic-thought merge).
 
@@ -450,7 +446,7 @@ R17_GOVERNOR_CLASSES:
 
 - Validator: [`validators/colometry/validate_rule_06_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_06_ud.py)
 - Applier: [`validators/apply_rule_06_ud.py`](../../../../readers-bofm/validators/apply_rule_06_ud.py)
-- Closed-list definitions: in validator source (`CAUSAL_MARK_LEMMAS`, R17 governor classes per `validate_rule_17_ud.py`)
+- Closed-list definitions: `because`-lemma hardcoded inline in validator; R17 precedence guard imports `GOVERNING_LEMMAS` from `validate_rule_17_ud.py`
 - Audit trail: `readers-bofm/private/audit-trail/R6.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/scholarship/bofm/R6.md`](atu-method/scholarship/bofm/R6.md)
 
@@ -602,13 +598,18 @@ action: MERGE_FORWARD
 
 **Closed lists** (machine-readable).
 ```yaml
-BARE_NP_SHAPES:
-  - determiner + noun
-  - determiner + noun + PP
-  - determiner + noun + relative_clause
-  - bare_noun
-  - bare_PROPN
-  - bare_PRON
+# No closed-list constant. The bare-NP shape is implicit in the UD signature:
+# any obj-dependent of a line-final VERB (UPOS in {NOUN, PROPN, PRON}) whose
+# line is the immediately-next v2-mine line. Conceptual shapes covered by this
+# signature include:
+#   - determiner + noun
+#   - determiner + noun + PP
+#   - determiner + noun + relative_clause
+#   - bare_noun
+#   - bare_PROPN
+#   - bare_PRON
+# The validator does not enumerate these as a Python constant; the deprel +
+# UPOS + line-gap predicate is the operational test.
 ```
 
 **Scope.** Line-final transitive `VERB` whose `obj` dependent heads the next v2-mine line as a bare noun-phrase continuation of the same predication. The rule fires on the verb-object syntactic bond only; it does not govern verb-complement (clausal) bonds (R17 territory) or verb-PP-complement bonds (R17 topic-PP extension territory).
@@ -637,7 +638,7 @@ BARE_NP_SHAPES:
 
 - Validator: [`validators/colometry/validate_rule_10_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_10_ud.py) (UD-pattern); [`validators/colometry/validate_rule_10_verb_do_split.py`](../../../../readers-bofm/validators/colometry/validate_rule_10_verb_do_split.py) (surface heuristic)
 - Applier: [`validators/apply_rule_10_ud.py`](../../../../readers-bofm/validators/apply_rule_10_ud.py)
-- Closed-list definitions: `BARE_NP_SHAPES` in validator source
+- Closed-list definitions: no named bare-NP-shape constant; the deprel + UPOS + line-gap predicate in `scan_book()` is the operational signature (see Closed lists block above)
 - Audit trail: `readers-bofm/private/audit-trail/R10.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/scholarship/bofm/R10.md`](atu-method/scholarship/bofm/R10.md)
 
@@ -860,31 +861,36 @@ action: SPLIT_BEFORE_SUBJECT
 
 **Closed lists** (machine-readable).
 ```yaml
-TRUE_VOCATIVE_CONFIRMERS:
-  second_person_pronouns: [ye, thee, thou, you, thy, thine, your, yours, yourselves, thyself]
-  imperative_verbs: [remember, hearken, hear, give, consider, behold, repent, come, listen, learn, know]
-
-VOCATIVE_LEXICAL_SHAPES:
-  - "O <NOUN/PROPN>"
-  - "O <NOUN/PROPN> <NOUN/PROPN>"  # e.g., "O Lord God"
-  - "(my|our) <kin_or_audience_noun>"  # e.g., "my son", "my brethren", "my people"
-  - "<PROPN_address>"  # bare proper-name address
-
-KIN_OR_AUDIENCE_NOUNS:
-  - son
-  - sons
-  - daughter
-  - brother
-  - brethren
-  - sister
-  - sisters
-  - people
-  - beloved
-  - friend
-  - friends
+# The validator (validate_rule_15_vocative.py) does NOT encode these as named
+# Python constants. The vocative-shape inventory and confirmer inventory live
+# as inline regex patterns:
+#
+#   VOCATIVE_PHRASES (list of regex strings) — vocative lexical shapes, e.g.
+#     "my brethren", "my beloved brethren", "my son", "my sons", "my friends",
+#     "my people", "my children", "my daughters", "my brother", "my sister",
+#     "O ye Nephites", "O ye Lamanites", "O ye gentiles", "O ye men",
+#     "O ye people", "O house of Israel", "O Lord", "O Lord God",
+#     "O Lord our God", "O Lord God Almighty", "O God", "O Father",
+#     "O ye my people"
+#
+#   SECOND_PERSON_RE (regex) — second-person-pronoun confirmer inventory:
+#     ye, thee, thou, thy, thine, your, yourself, yourselves
+#
+#   IMPERATIVE_OPENERS_RE (regex) — imperative-verb confirmer inventory:
+#     remember, hearken, give ear, consider, marvel(led), behold, repent, cry,
+#     return, come unto, hear ye, listen, wo unto, blessed are
+#
+#   TRANSITIONAL_FRAME_RE (regex) — common preceding-frame patterns:
+#     And now, Yea, Behold, Wherefore, And again, Therefore, And ye, And thou,
+#     But, For, Now
+#
+# The conceptual KIN_OR_AUDIENCE_NOUNS set (son, sons, daughter, brother,
+# brethren, sister, sisters, people, beloved, friend, friends) is embedded
+# inside the "my <noun>" vocative-shape regex patterns, not stored as a
+# standalone list.
 ```
 
-**True-vocative test.** A vocative-shaped phrase is a true vocative WHEN the same predication contains a second-person pronoun from `TRUE_VOCATIVE_CONFIRMERS.second_person_pronouns` OR an imperative verb from `TRUE_VOCATIVE_CONFIRMERS.imperative_verbs`. Bare proper-name address (*"Moroni, ..."*) requires the same confirmer. Absent any confirmer, the phrase is treated as NP-object and falls outside R15.
+**True-vocative test.** A vocative-shaped phrase is a true vocative WHEN the same predication contains a second-person pronoun (matched by `SECOND_PERSON_RE`) OR an imperative verb opening (matched by `IMPERATIVE_OPENERS_RE`) OR is preceded by a transitional frame (matched by `TRANSITIONAL_FRAME_RE`) combined with I-volitional patterns. Bare proper-name address (*"Moroni, ..."*) requires the same confirmer. Absent any confirmer, the phrase is treated as NP-object (via `NP_OBJECT_LEFT_CONTEXT_RE` disqualifier) and falls outside R15.
 
 **Scope.** Applies to multi-word direct-address constituents tagged with the UD `vocative` relation in v2-mine lines, including bare proper-name addresses confirmed by the true-vocative test. The rule governs (a) prohibition of internal line breaks within the vocative span, and (b) prohibition of same-line merger with the surrounding matrix clause. Single-word interjections without a following nominal addressee (e.g., *behold*) fall outside R15.
 
@@ -975,40 +981,52 @@ AICTP_VARIANTS:  # inherited from R1
 **Decidability:** UD-pattern
 **Layer:** 3
 
-**Rule.** A matrix verb's clausal complement MUST be on the same v2-mine line as the matrix verb when the verb's lemma belongs to one of the six closed verb classes (§Verb-Classes-R17) and the complement is marked by *that*, *whether*, *if*, a WH-word, or an infinitival *to*. Speech-class verbs additionally require their obligatory topic-PP complement (*of*/*concerning*/*unto*/*against*) on the same line. Experience verbs (`repent`, `partake`, `forgive`) require their obligatory *of*-PP complement on the same line.
+**Rule.** A matrix verb's clausal complement MUST be on the same v2-mine line as the matrix verb when the verb's lemma belongs to one of the six closed verb classes (§Verb-Classes-R17) and the complement is marked by *that* (ccomp), an infinitival *to* (xcomp), or — by canon-prose intent — *whether*, *if*, or a WH-word. The validator currently implements the *that*-ccomp and *to*-xcomp branches.
+
+Speech-class verbs (canon-prose intent) require their obligatory topic-PP complement (*of*/*concerning*/*unto*/*against*) on the same line. Experience verbs (`repent`, `partake`, `forgive`) require their obligatory *of*-PP complement on the same line. The validator does NOT currently fire on these obl branches — topic-PP and experience-of-PP merges remain Category B editorial enforcement, awaiting future codification.
 
 **UD signature.**
 ```yaml
-trigger_clausal:
-  relation: [ccomp, xcomp]
+# Implemented branches (validate_rule_17_ud.py):
+trigger_clausal_ccomp:
+  relation: ccomp
   head: { upos: VERB, lemma_in: GOVERNING_LEMMAS }
-  mark: { lemma_in: [that, whether, if, "WH-*"] }
+  mark: { lemma: that }
 action: MERGE_MATRIX_AND_COMPLEMENT
 
-trigger_topic_pp:
-  relation: obl
-  head: { upos: VERB, lemma_in: SPEECH_CLASS }
-  case: { lemma_in: [of, concerning, unto, against] }
-action: MERGE_VERB_AND_TOPIC_PP
+trigger_clausal_xcomp:
+  relation: xcomp
+  head: { upos: VERB, lemma_in: GOVERNING_LEMMAS }
+  mark: { lemma: to }
+action: MERGE_MATRIX_AND_COMPLEMENT
 
-trigger_experience_of_pp:
+# Canon-prose intent (NOT yet implemented in validator — Category B):
+trigger_topic_pp_intent:
+  relation: obl
+  head: { upos: VERB, lemma_in: SPEECH }
+  case: { lemma_in: [of, concerning, unto, against] }
+action: MERGE_VERB_AND_TOPIC_PP        # canon-prose only; no validator branch
+
+trigger_experience_of_pp_intent:
   relation: obl
   head: { upos: VERB, lemma_in: [repent, partake, forgive] }
   case: { lemma: of }
-action: MERGE_VERB_AND_OF_PP
+action: MERGE_VERB_AND_OF_PP           # canon-prose only; no validator branch
 ```
 
-**Closed lists** (defined at §Verb-Classes-R17):
+**Closed lists** (defined at §Verb-Classes-R17; constants live in `validate_rule_17_ud.py`):
 
-- `GOVERNING_LEMMAS` — six closed verb classes:
-  - **Causative:** `cause`, `suffer`, `permit`, `command`, `grant`
-  - **Aspectual:** `begin`, `cease`, `continue`
-  - **Speech-indirect:** `say`, `speak`, `declare`, `testify`, `swear`, `proclaim`, `tell`, `confess`, `rehearse`, `preach`, `answer`, `cry`, `beseech`, `ask`, `plead`
-  - **Cognition:** `know`, `believe`, `perceive`, `remember`, `understand`, `hear`, `see`, `suppose`, `imagine`, `forget`, `think`
-  - **Volition:** `wish`, `desire`, `hope`, `long`, `trust`, `pray`, `seek`, `observe` (EME "take care to / heed to"), `endeavor`, `attempt` (codified 2026-05-13: EME effort/heed verbs taking obligatory INF complement; canon-grounded in §1.2 complement integrity + bidirectional ATU forward-failure on the bare matrix line; same principle as the original 7 — mental-state/effort verb + obligatory complement)
-  - **FEF-extraposition:** `it was their lot to`, `it is expedient to`, copular extraposition patterns
-- `SPEECH_CLASS` — subset of GOVERNING_LEMMAS taking obligatory topic-PP: `speak`, `declare`, `preach`, `testify`, `prophesy`, `bear record`, `bear testimony`, `bear witness`, `say`, `cry`, `write`
+- `GOVERNING_LEMMAS` — unified set, built as `CAUSATIVE | ASPECTUAL | SPEECH | COGNITION | VOLITION | {beseech, ask, plead}`:
+  - **`CAUSATIVE`:** `cause`, `suffer`, `permit`, `command`, `grant`
+  - **`ASPECTUAL`:** `begin`, `cease`, `continue`
+  - **`SPEECH`** (speech-indirect class, 12 lemmas): `say`, `speak`, `declare`, `testify`, `swear`, `proclaim`, `tell`, `confess`, `rehearse`, `preach`, `answer`, `cry`. Plus `beseech`, `ask`, `plead` (added 2026-05-10 to GOVERNING_LEMMAS directly; not in `SPEECH` per se but speech-class in function).
+  - **`COGNITION`:** `know`, `believe`, `perceive`, `remember`, `understand`, `hear`, `see`, `suppose`, `imagine`, `forget`, `think`
+  - **`VOLITION`:** `wish`, `desire`, `hope`, `long`, `trust`, `pray`, `seek`, `observe`, `endeavor`, `attempt` (last three codified 2026-05-13: EME effort/heed verbs taking obligatory INF complement; canon-grounded in §1.2 complement integrity + bidirectional ATU forward-failure on the bare matrix line; same principle as the original 7 — mental-state/effort verb + obligatory complement)
+  - **FEF-extraposition (conceptual subclass — not a named constant):** `it was their lot to`, `it is expedient to`, copular extraposition patterns; handled implicitly by GOVERNING_LEMMAS membership of the matrix verb
 - `PETITION_FRAME_VERBS` — speech- and volition-class verbs whose modal-aux *that*-complement reads ambiguously between content and purpose: `cry`, `pray`, `beseech`, `ask`, `seek`, `plead`
+- `MODAL_AUX_LEMMAS` — modal aux lemmas (`will`, `shall`, `may`, `can`, `must`, `might`, `should`, `would`, `could`) flagged inside ccomp bodies under petition-frame matrices for REVIEW-bucket routing
+
+Note: the validator does not maintain a separate topic-PP-taking subset constant. Canon-prose lists 11 lemmas (*speak*, *declare*, *preach*, *testify*, *prophesy*, *bear record*, *bear testimony*, *bear witness*, *say*, *cry*, *write*) for the topic-PP feature; the validator's `SPEECH` (12 lemmas) is the closest existing constant. The conceptual gap (topic-PP / experience-of-PP enforcement) is editorial, not mechanical.
 
 **Scope.** Matrix VERB head only. ADJ head → R26 territory. NOUN head → out of scope (no R17-equivalent for NOUN-headed ccomp).
 
@@ -1264,7 +1282,7 @@ V2 dispatch is UPOS-only; no lemma list. Typical BoFM `CATAPHORIC_UPOS` heads pa
 - *Non-compliant (R19 violation — cataphoric not split):* "I say unto you that the good shepherd doth call you" (one line — generic frame not separated from new image)
 - *Non-compliant (R19 violation — anaphoric improperly split):* "Adam / which was the first man" (PROPN head; anaphoric relative wrongly broken from named referent)
 - *Excluded by R17 (complement integrity wins):* "He caused that his servants should stand forth" — *that*-clause is the `ccomp` of the causative VERB *cause*; R17 governs the merge, R19 does not fire
-- *Excluded by R26:* "if it were possible that our first parents..." — matrix is ADJ *possible* in R26's `KNOWN_PRED_ADJ`; R26 governs the merge
+- *Excluded by R26:* "if it were possible that our first parents..." — matrix is ADJ *possible* in R26's `RULE_26_HEAD_LEMMAS`; R26 governs the merge
 - *Routed to REVIEW (NOUN head, ambiguous):* "records which were engraven upon the plates of brass" — anaphoricity depends on whether *plates of brass* was established earlier in the passage; mechanical resolution not authorized
 - *Routed to REVIEW (NOUN head, formerly obligatory-reference MERGE in pre-v2):* "the things which he had seen" → NOUN head; under pre-v2 lemma-driven sub-routing this merged via the (now-retired) obligatory-reference-noun-heads closed-list; under v2 it routes to REVIEW pending discourse-context judgment
 - *Excluded by Exclusion #9 (comparative):* "so great and marvelous things / as we both saw and heard Jesus speak" — UD-mistagged as acl:relcl; the *so X as Y* surface signature flags this as comparative `advcl` → REVIEW
@@ -1304,27 +1322,62 @@ action: MERGE_FORWARD  # default remediation
 
 **Closed lists** (machine-readable).
 ```yaml
-ANCHOR_KINDS:
-  - finite_VERB              # tensed verb with nsubj or imperative
-  - infinitival_VERB         # to-infinitive heading its own predication on the line
-  - predicative_participle   # VERB participle functioning as predicate of the line
-  - substantive_with_cop     # NP head with attached cop / own predicate on the line
+# The validator (validate_rule_20_ud.py) encodes anchor-kind and exemption
+# logic as inline UPOS / deprel checks; the ANCHOR_KINDS and NON_ANCHOR_NOMINALS
+# conceptual taxonomies are documented only (not Python constants).
+#
+# Operational anchor predicates implemented in the validator:
+#   - VERB or AUX present on the line (the conservative anchor check)
+#   - NOUN/ADJ/PROPN/PRON with a `cop` dependent on the line (independently
+#     predicated substantive)
+#
+# Operational non-anchor patterns are caught by ABSENCE of those signals plus
+# the leading-UPOS structural-justification filter below.
+#
+# Implemented exemption constants:
 
-NON_ANCHOR_NOMINALS:
-  - object_continuation       # bare NP continuing prior line's verb's obj
-  - apposition_extension      # bare NP appositional to prior line's NP
-  - coordinate_object_member  # bare "and [NP]" member of a compound object list
+CONNECTIVE_LEMMAS:
+  # Standalone discourse connectives that legitimately occupy their own line
+  # in BoFM register. Exempted when the connective is the SOLE non-PUNCT
+  # token on the line (single-lemma line check).
+  - wherefore
+  - therefore
+  - nevertheless
+  - notwithstanding
+  - now
+  - yea
+  - behold
+  - verily
+  - thus
+  - hence
+  - howbeit
+  - whereupon
+  - wherewith
 
-STANDALONE_SENTENCE_CONNECTIVES:
-  - Wherefore
-  - And now
-  - Therefore
-  - Now
-  - Yea
-  - Behold
+STRUCTURALLY_JUSTIFIED_LEADING_UPOS:
+  # If the line's first non-PUNCT token has one of these UPOS values, the
+  # line passes a structural-justification exemption (J1 series member,
+  # J4 connective fragment, J3 vocative "O", J5 PP adjunct, etc.).
+  - CCONJ      # J1 parallel-series member
+  - ADV        # J4 connective / "yea" / "even" / fronted adverbial fragment
+  - INTJ       # J4 exclamation / vocative "O" / "Wo"
+  - SCONJ      # clause fragment (because/that/if as series member)
+  - ADP        # J5 PP adjunct
+  - DET        # appositive NP or J1 list object ("all the people of X")
+  - PART       # negative particle "not" in series
+
+PREDICATIVE_PART_DEPRELS:
+  # UD deprels that signal a participle is in predicate position
+  - csubj
+  - advcl
+  - xcomp
+  - acl
+  - ccomp
+  - root
+  - parataxis
 ```
 
-The `STANDALONE_SENTENCE_CONNECTIVES` list captures discourse connectives that legitimately occupy their own line in BoFM register as scene-setters, even though they carry no verbal anchor. Membership is constrained to corpus-attested cases.
+The `CONNECTIVE_LEMMAS` list captures discourse connectives that legitimately occupy their own line in BoFM register as scene-setters when alone on the line. Membership is constrained to corpus-attested cases.
 
 **Scope.** Every v2-mine line is in scope. The rule operates after all generative split-triggers (Tier 5) and merge-overrides (Tier 4) have settled — it is a floor-check that catches lines produced by the upstream pipeline (or by hand-editing) that lack predicative content. The rule does NOT govern line content beyond anchor presence; lines with one or more anchors are not further constrained by R20.
 
@@ -1332,7 +1385,7 @@ The `STANDALONE_SENTENCE_CONNECTIVES` list captures discourse connectives that l
 
 1. **Single-line verses** — verses whose v2-mine representation is exactly one line are atomic by definition and pass R20 regardless of internal anchor count. → out of scope
 2. **Speech-intro prefixes** — short colon-terminated or paratactically-introducing speech tags (e.g., bare *saying:*, *and he said:*) — the speech-act announcement IS the predication, even when the surface anchor is elided → J3
-3. **Standalone sentence connectives** — discourse connectives from `STANDALONE_SENTENCE_CONNECTIVES` legitimately occupy their own line as scene-setting beats → J3 / J5
+3. **Standalone sentence connectives** — discourse connectives from `CONNECTIVE_LEMMAS` legitimately occupy their own line as scene-setting beats → J3 / J5
 4. **Lines passing any structural justification** — lines without a verbal anchor that nevertheless pass one of the five structural justifications via formal-structural recoverability (parallel-series member with elided shared predicate, portrait-accumulation stack-member, classical comma, substantive adjunct as own focus) → J1 / J2 / J3 / J4 / J5
 
 **Precedence.** §3.5 Tier 8. Floor-check that fires after all Tier 1-7 rules have settled. Yields to every upstream tier when an upstream rule's output places a no-anchor line on the page — R20 then either remediates by MERGE_FORWARD or routes to REVIEW when remediation would violate an upstream rule.
@@ -1352,7 +1405,7 @@ The `STANDALONE_SENTENCE_CONNECTIVES` list captures discourse connectives that l
 
 - Validator: [`validators/syntax/validate_rule_20_ud.py`](../../../../readers-bofm/validators/syntax/validate_rule_20_ud.py)
 - Applier: not implemented (remediation is per-case editorial — R20 violations route to MERGE_FORWARD candidate or REVIEW; no auto-applier)
-- Closed-list definitions: `ANCHOR_KINDS`, `STANDALONE_SENTENCE_CONNECTIVES` in validator source
+- Closed-list definitions: `CONNECTIVE_LEMMAS`, `STRUCTURALLY_JUSTIFIED_LEADING_UPOS`, `PREDICATIVE_PART_DEPRELS` in validator source. Anchor-kind taxonomy is documented in the validator docstring but not encoded as a runtime constant; operational anchor check is inline VERB/AUX/cop predicate.
 - Audit trail: `readers-bofm/private/audit-trail/R20.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/scholarship/bofm/R20.md`](atu-method/scholarship/bofm/R20.md)
 
@@ -1688,19 +1741,21 @@ The closed list admits compound-ordinal variants of the form *"<number-word> and
 **Decidability:** UD-pattern
 **Layer:** 3
 
-**Rule.** A predicate complement-taker's clausal *that*-complement MUST be on the same v2-mine line as its predicate head when the head lemma belongs to one of the two closed lists below. The ADJ-predicate sub-class fires when the head UPOS is `ADJ` and the lemma is in `R26_ADJ_PREDICATES`. The NOUN-as-predicate sub-class fires when the head UPOS is `NOUN`, the lemma is in `R26_NOUN_PREDICATES`, and the head bears a copular dependent (`cop`) plus an `acl` *that*-clause. When the LLM annotator tags the *that*-clause as `advcl` but the matrix head lemma is in either closed list, the annotation MUST be overridden and treated as `ccomp` (ADJ branch) or `acl` (NOUN branch) for purposes of this rule.
+**Rule.** A predicate complement-taker's clausal *that*-complement MUST be on the same v2-mine line as its predicate head when the head lemma is in `RULE_26_HEAD_LEMMAS` (the unified ADJ + NOUN-as-predicate closed list). The ADJ-predicate sub-class fires when the head UPOS is `ADJ` and the lemma is in the unified set. The NOUN-as-predicate sub-class fires when the head UPOS is `NOUN`, the lemma is in the unified set (currently the single lemma *wisdom*), and the head bears a copular dependent (`cop`) plus an `acl` *that*-clause. When the LLM annotator tags the *that*-clause as `advcl` but the matrix head lemma is in `RULE_26_HEAD_LEMMAS`, the annotation MUST be overridden and treated as `ccomp` (ADJ branch) or `acl` (NOUN branch) for purposes of this rule.
+
+R26 routing is currently dispatched from inside `validate_rule_07_ud.py` via the `is_rule_26_class()` filter; matches are routed away from R7 and resolve to MERGE. A dedicated R26 detector entry-point is not yet split out.
 
 **UD signature.**
 ```yaml
 trigger_adj_predicate:
   relation: ccomp
-  head: { upos: ADJ, lemma_in: R26_ADJ_PREDICATES }
+  head: { upos: ADJ, lemma_in: RULE_26_HEAD_LEMMAS }
   mark: { lemma: that }
 action: MERGE_HEAD_AND_DEPENDENT
 
 trigger_noun_as_predicate:
   relation: acl
-  head: { upos: NOUN, lemma_in: R26_NOUN_PREDICATES }
+  head: { upos: NOUN, lemma_in: RULE_26_HEAD_LEMMAS }   # the wisdom-lemma case
   cop: { lemma_in: [be] }
   mark: { lemma: that }
 action: MERGE_HEAD_AND_DEPENDENT
@@ -1708,22 +1763,25 @@ action: MERGE_HEAD_AND_DEPENDENT
 
 **Closed lists** (machine-readable).
 ```yaml
-R26_ADJ_PREDICATES:
-  - possible
+RULE_26_HEAD_LEMMAS:
+  # Unified ADJ + NOUN-as-predicate set (validate_rule_07_ud.py — used by
+  # is_rule_26_class filter). 10 lemmas total; the head's UPOS determines
+  # which sub-class fires (ADJ → ccomp branch; NOUN with cop → acl branch).
   - expedient
-  - desirous
-  - necessary
   - needful
+  - necessary
+  - wisdom        # NOUN-as-predicate sub-class (audit Wave 6: factual ADJ-error correction)
+  - possible
+  - desirous
   - impossible
   - better
   - well
   - requisite
-
-R26_NOUN_PREDICATES:
-  - wisdom
+  # `meet` dropped 2026-05-10 Wave 6 audit: 0 BoFM matrix-predicate hits
+  # (takes for-infinitive or appears as noun-modifier acl).
 ```
 
-**Scope.** Predicate complement-taker frames of the form *it is X that Y* (and minor inversions, e.g., *X it is that Y*) where X is the head lemma. The rule governs the outer boundary between the predicate head and its *that*-clause. Internal structure of the *that*-clause is evaluated separately. Matrix VERB heads are out of scope (route to R17). Matrix NOUN heads not in `R26_NOUN_PREDICATES` are out of scope.
+**Scope.** Predicate complement-taker frames of the form *it is X that Y* (and minor inversions, e.g., *X it is that Y*) where X is the head lemma. The rule governs the outer boundary between the predicate head and its *that*-clause. Internal structure of the *that*-clause is evaluated separately. Matrix VERB heads are out of scope (route to R17). Matrix NOUN heads not in `RULE_26_HEAD_LEMMAS` are out of scope.
 
 **Exclusions (closed list — each cites dominating rule).**
 
@@ -1732,9 +1790,9 @@ R26_NOUN_PREDICATES:
 3. Compound subordinator *insomuch that* — mark is the compound, not simple *that* → R27
 4. Direct discourse (colon-terminated speech-tag introducing the *that*-clause as quotation onset) → J3
 5. *for*-infinitive frame instead of finite *that*-complement (e.g., *it is meet for X to Y*) — not a R26 trigger; out of scope
-6. Head lemma in `R26_NOUN_PREDICATES` used as noun-modifier rather than predicate (no `cop` dependent on the head) — out of scope; R26 does not fire
+6. Head lemma `wisdom` (the NOUN-as-predicate case in `RULE_26_HEAD_LEMMAS`) used as noun-modifier rather than predicate (no `cop` dependent on the head) — out of scope; R26 does not fire
 
-**Precedence.** §3.5 Tier 3. Wins over R7 (purpose) and R17 (verb-complement) when the matrix head is ADJ in `R26_ADJ_PREDICATES` or NOUN in `R26_NOUN_PREDICATES`. Yields to Tier 1 (Layer 1 mid-phrase prohibitions), Tier 2 (R1 / R16 AICTP, R15 vocative, R18 fixed idiom, R23 date colophon), and J3 direct-discourse onset.
+**Precedence.** §3.5 Tier 3. Wins over R7 (purpose) and R17 (verb-complement) when the matrix head lemma is in `RULE_26_HEAD_LEMMAS` (ADJ branch or NOUN-with-`cop` branch). Yields to Tier 1 (Layer 1 mid-phrase prohibitions), Tier 2 (R1 / R16 AICTP, R15 vocative, R18 fixed idiom, R23 date colophon), and J3 direct-discourse onset.
 
 **Examples.**
 
@@ -1769,7 +1827,7 @@ R26_NOUN_PREDICATES:
 ```yaml
 trigger:
   relation: advcl
-  mark: { lemma_in: INSOMUCH_THAT_MARK_PATTERNS }
+  mark: <insomuch-that compound subordinator>     # detected by _is_insomuch_that() predicate; see Closed lists block
 default_action: SPLIT_BEFORE_MARK
 merge_action: MERGE_HEAD_AND_DEPENDENT  # gated by all three conditions
 merge_conditions:
@@ -1780,13 +1838,12 @@ merge_conditions:
 
 **Closed lists** (machine-readable).
 ```yaml
-INSOMUCH_THAT_MARK_PATTERNS:
-  # Compound subordinator; UD tokenizes in two patterns
-  # Pattern A: insomuch=ADV/advmod + that=SCONJ/mark, both children of advcl head
-  # Pattern B: insomuch=ADV/mark + that=SCONJ/fixed(head=insomuch)
-  # Plus rare single-MWE token form
-  - "insomuch that"
-  - "insomuch + that"
+# The compound subordinator detection has no named Python constant — it's
+# encoded as the predicate `_is_insomuch_that(sent, advcl_tok)` which checks
+# three tokenization patterns inline:
+#   Pattern A: single mark token with "insomuch" in lemma/form (MWE)
+#   Pattern B: two mark tokens — one lemma=`insomuch`, one lemma=`that`
+#   Pattern C: mark=`that` + fixed/advmod sibling lemma=`insomuch`
 
 CO_REF_PRONOUNS:
   - he
@@ -2482,26 +2539,50 @@ length_backstop: merged > 130 chars -> REVIEW
 
 **Closed lists** (machine-readable).
 ~~~yaml
-SUBJECT_SHAPES_M4_BOFM1:
-  - A1_triad             # R18a patriarch-deity-triad as subject
-  - A2_aictp_head_np     # "And it came to pass that <subject NP>," + bare predicate
-  - B1_np_with_relcl     # NP-with-relative-clause subject ("that same God who...")
-  - B2_np_with_appositive  # NP-with-appositive subject ("the Lord God, the Holy One of Israel,")
-  - B3_np_with_participial # NP-with-participial-modifier subject ("Alma, having authority...,")
-  - B5_self_id_pronoun   # "I, X, who am..." self-identifying pronoun + RC/appositive
-
-PREDICATE_LEAD_LEMMAS:
-  auxiliaries: [did, doth, do, shall, will, would, hath, have, hast, may, might, must]
-  main_verbs_observed: [came, cometh, went, spake, said, gave, took, brought, made, sent,
-                        deliver, protect, yield, save, bless, come, go, repent, perish,
-                        prosper, fall, rise, stand, sit, dwell, see, hear, know]
-  # Augmented as new instances are observed. Detection prefix-anchored on these.
-
-LEADING_CONNECTIVES_BLOCK_FIRE:
-  # If line B begins with any of these, M4-BoFM-1 does NOT fire (the line is a
-  # coordinate clause or subordinate clause, not a bare-predicate orphan).
-  - and, or, but, for, because, that, which, who, whoso, whosoever, when, while, if,
-    though, unless, until, to, in, on, at, of, with, by, from, upon
+# The validator (validate_m4_bofm_1_subject_orphan.py) encodes these as
+# compiled regex patterns, NOT named lemma constants. The conceptual
+# taxonomies below describe what each regex captures; the runtime artifacts
+# are regex objects, not Python lists.
+#
+# PREDICATE_LEAD_RE — bare auxiliary or finite main-verb lead on line B.
+#   Auxiliaries matched: did, doth, do, shall, will, would, wilt, hath, have,
+#     hast, may, might, must, can, could, cannot, art, is, was, were, be, been
+#
+# MAIN_VERB_LEAD_RE — finite main-verb lead (no auxiliary) on line B. Inflected
+#   forms covered: came, cometh, went, spake, said, gave, took, brought, made,
+#   sent, deliver(ed|eth), protect(ed|s), yield(ed|eth|s), sav(e|ed|eth|es),
+#   bless(ed|eth|es), come(th|s), go(eth|es), repent(ed|eth|s),
+#   perish(ed|eth|es), prosper(ed|eth|s), fall(eth|en|s), ris(e|en|eth|es),
+#   stand(eth|s|ing), sit(teth|s|ting), dwell(eth|ed|s), caus(e|ed|eth|es),
+#   appointed, assembled, departed, drew, fled, gathered, labored,
+#   murmur(ed|eth), reign(ed|eth), return(ed|s), suffered. Augmented as new
+#   instances are observed.
+#
+# LEADING_CONNECTIVE_RE — block-fire connective inventory on line B:
+#   and, or, but, for, because, that, which, who, whoso, whosoever, when,
+#   while, if, though, unless, until, to, in, on, at, of, with, by, from,
+#   upon, nor, yet, so, then, therefore, wherefore, notwithstanding
+#
+# PARTICIPIAL_LEAD_RE — R21 participial-absolute lead inventory (line B):
+#   being, having, saying, seeing, knowing, believing, hearing, finding,
+#   coming, going, speaking, teaching, preaching
+#
+# SAVE_CLAUSE_LEAD_RE — J5 save-clause lead: `save` (line B)
+#
+# VOCATIVE_ONLY_RE — R15 bare-vocative line A: `O <noun>,` pattern
+#
+# J3_SPEECH_TAG_RE — J3 speech-act parenthetical tail on line A:
+#   `saith the (Lord|God|Father|prophet|Spirit|Lord of Hosts)` (line-end)
+#
+# LENGTH_BACKSTOP = 130 chars — merged length > 130 routes to LONG-REVIEW
+#   rather than auto-merge.
+#
+# The conceptual SUBJECT_SHAPES_M4_BOFM1 taxonomy (A1 triad / A2 AICTP-head /
+# B1 NP-with-relcl / B2 NP-with-appositive / B3 NP-with-participial /
+# B5 self-id-pronoun) describes the WHY of which line-A shapes the surface
+# regexes are designed to catch; it is not encoded as a runtime list. The
+# Stage 2 UD filter's 5 checks (C1-C5) provide the structural confirmation
+# that the surface match represents a genuine subject-orphan-predicate split.
 ~~~
 
 **Scope.** A v2-mine line whose content is a subject NP of one of the closed-list-eligible shapes, with the matrix predicate orphaned on the immediately-next v2-mine line. The rule applies after Tier 1 vetoes, Tier 2 formula integrity, and Tier 3 complement integrity have settled. M4-BoFM-1 is the BoFM-specific Tier 4 merge-override operationalization of framework M4 (fragmented atomic thought-unit; canon §1.5).
