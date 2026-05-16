@@ -1,0 +1,976 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 1,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 482.551,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.016,
+      "type": "line",
+      "text": "Now it came to pass that the ninety and first year had passed away",
+      "verse": "1:1",
+      "lineIndex": 0
+    },
+    {
+      "start": 5.196,
+      "end": 9.051,
+      "type": "line",
+      "text": "and it was six hundred years from the time that Lehi left Jerusalem;",
+      "verse": "1:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 9.231,
+      "end": 12.575,
+      "type": "line",
+      "text": "and it was in the year that Lachoneus was the chief judge",
+      "verse": "1:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 12.755,
+      "end": 15.216,
+      "type": "line",
+      "text": "and the governor over the land.",
+      "verse": "1:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 15.896,
+      "end": 23.234,
+      "type": "line",
+      "text": "And Nephi, the son of Helaman, had departed out of the land of Zarahemla, giving charge unto his son Nephi,",
+      "verse": "1:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 23.414,
+      "end": 25.086,
+      "type": "line",
+      "text": "who was his eldest son,",
+      "verse": "1:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 25.266,
+      "end": 27.495,
+      "type": "line",
+      "text": "concerning the plates of brass,",
+      "verse": "1:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 27.675,
+      "end": 30.043,
+      "type": "line",
+      "text": "and all the records which had been kept,",
+      "verse": "1:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 30.223,
+      "end": 36.214,
+      "type": "line",
+      "text": "and all those things which had been kept sacred from the departure of Lehi out of Jerusalem.",
+      "verse": "1:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 36.894,
+      "end": 39.077,
+      "type": "line",
+      "text": "Then he departed out of the land,",
+      "verse": "1:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 39.257,
+      "end": 41.718,
+      "type": "line",
+      "text": "and whither he went, no man knoweth;",
+      "verse": "1:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 41.898,
+      "end": 45.056,
+      "type": "line",
+      "text": "and his son Nephi did keep the records in his stead,",
+      "verse": "1:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 45.236,
+      "end": 47.372,
+      "type": "line",
+      "text": "yea, the record of this people.",
+      "verse": "1:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 48.052,
+      "end": 54.321,
+      "type": "line",
+      "text": "And it came to pass that in the commencement of the ninety and second year,",
+      "verse": "1:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 54.501,
+      "end": 59.377,
+      "type": "line",
+      "text": "behold, the prophecies of the prophets began to be fulfilled more fully;",
+      "verse": "1:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 59.557,
+      "end": 64.851,
+      "type": "line",
+      "text": "for there began to be greater signs and greater miracles wrought among the people.",
+      "verse": "1:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 65.531,
+      "end": 75.376,
+      "type": "line",
+      "text": "But there were some who began to say that the time was past for the words to be fulfilled, which were spoken by Samuel, the Lamanite.",
+      "verse": "1:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 76.056,
+      "end": 79.26,
+      "type": "line",
+      "text": "And they began to rejoice over their brethren, saying:",
+      "verse": "1:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 79.44,
+      "end": 81.205,
+      "type": "line",
+      "text": "Behold the time is past,",
+      "verse": "1:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 81.385,
+      "end": 84.311,
+      "type": "line",
+      "text": "and the words of Samuel are not fulfilled;",
+      "verse": "1:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 84.491,
+      "end": 88.02,
+      "type": "line",
+      "text": "therefore, your joy and your faith concerning this thing hath been vain.",
+      "verse": "1:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 88.7,
+      "end": 93.948,
+      "type": "line",
+      "text": "And it came to pass that they did make a great uproar throughout the land;",
+      "verse": "1:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 94.128,
+      "end": 97.657,
+      "type": "line",
+      "text": "and the people who believed began to be very sorrowful,",
+      "verse": "1:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 97.837,
+      "end": 101.088,
+      "type": "line",
+      "text": "lest by any means those things which had been spoken",
+      "verse": "1:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 101.268,
+      "end": 102.847,
+      "type": "line",
+      "text": "might not come to pass.",
+      "verse": "1:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 103.527,
+      "end": 111.561,
+      "type": "line",
+      "text": "But behold, they did watch steadfastly for that day and that night and that day which should be as one day as if there were no night,",
+      "verse": "1:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 111.741,
+      "end": 115.456,
+      "type": "line",
+      "text": "that they might know that their faith had not been vain.",
+      "verse": "1:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 116.136,
+      "end": 120.734,
+      "type": "line",
+      "text": "Now it came to pass that there was a day set apart by the unbelievers,",
+      "verse": "1:9",
+      "lineIndex": 29
+    },
+    {
+      "start": 120.914,
+      "end": 124.861,
+      "type": "line",
+      "text": "that all those who believed in those traditions should be put to death",
+      "verse": "1:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 125.041,
+      "end": 127.456,
+      "type": "line",
+      "text": "except the sign should come to pass,",
+      "verse": "1:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 127.636,
+      "end": 130.422,
+      "type": "line",
+      "text": "which had been given by Samuel the prophet.",
+      "verse": "1:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 131.102,
+      "end": 137.0,
+      "type": "line",
+      "text": "Now it came to pass that when Nephi, the son of Nephi, saw this wickedness of his people,",
+      "verse": "1:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 137.18,
+      "end": 139.781,
+      "type": "line",
+      "text": "his heart was exceedingly sorrowful.",
+      "verse": "1:10",
+      "lineIndex": 34
+    },
+    {
+      "start": 140.461,
+      "end": 142.829,
+      "type": "line",
+      "text": "And it came to pass that he went out",
+      "verse": "1:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 143.009,
+      "end": 145.656,
+      "type": "line",
+      "text": "and bowed himself down upon the earth,",
+      "verse": "1:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 145.836,
+      "end": 149.133,
+      "type": "line",
+      "text": "and cried mightily to his God in behalf of his people,",
+      "verse": "1:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 149.313,
+      "end": 156.511,
+      "type": "line",
+      "text": "yea, those who were about to be destroyed because of their faith in the tradition of their fathers.",
+      "verse": "1:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 157.191,
+      "end": 162.021,
+      "type": "line",
+      "text": "And it came to pass that he cried mightily unto the Lord all that day;",
+      "verse": "1:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 162.201,
+      "end": 165.127,
+      "type": "line",
+      "text": "and behold, the voice of the Lord came unto him, saying:",
+      "verse": "1:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 165.807,
+      "end": 168.222,
+      "type": "line",
+      "text": "Lift up your head and be of good cheer;",
+      "verse": "1:13",
+      "lineIndex": 42
+    },
+    {
+      "start": 168.402,
+      "end": 170.585,
+      "type": "line",
+      "text": "for behold, the time is at hand,",
+      "verse": "1:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 170.765,
+      "end": 173.226,
+      "type": "line",
+      "text": "and on this night shall the sign be given,",
+      "verse": "1:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 173.406,
+      "end": 176.982,
+      "type": "line",
+      "text": "and on the morrow come I into the world, to show unto the world",
+      "verse": "1:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 177.162,
+      "end": 182.828,
+      "type": "line",
+      "text": "that I will fulfil all that which I have caused to be spoken by the mouth of my holy prophets.",
+      "verse": "1:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 183.508,
+      "end": 191.867,
+      "type": "line",
+      "text": "Behold, I come unto my own, to fulfil all things which I have made known unto the children of men from the foundation of the world,",
+      "verse": "1:14",
+      "lineIndex": 47
+    },
+    {
+      "start": 192.047,
+      "end": 196.737,
+      "type": "line",
+      "text": "and to do the will, both of the Father and of the Son\u2014 of the Father because of me,",
+      "verse": "1:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 196.917,
+      "end": 199.193,
+      "type": "line",
+      "text": "and of the Son because of my flesh.",
+      "verse": "1:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 199.373,
+      "end": 201.509,
+      "type": "line",
+      "text": "And behold, the time is at hand,",
+      "verse": "1:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 201.689,
+      "end": 204.011,
+      "type": "line",
+      "text": "and this night shall the sign be given.",
+      "verse": "1:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 204.691,
+      "end": 208.917,
+      "type": "line",
+      "text": "And it came to pass that the words which came unto Nephi were fulfilled,",
+      "verse": "1:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 209.097,
+      "end": 211.373,
+      "type": "line",
+      "text": "according as they had been spoken;",
+      "verse": "1:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 211.553,
+      "end": 215.779,
+      "type": "line",
+      "text": "for behold, at the going down of the sun there was no darkness;",
+      "verse": "1:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 215.959,
+      "end": 218.42,
+      "type": "line",
+      "text": "and the people began to be astonished",
+      "verse": "1:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 218.6,
+      "end": 221.572,
+      "type": "line",
+      "text": "because there was no darkness when the night came.",
+      "verse": "1:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 222.252,
+      "end": 226.803,
+      "type": "line",
+      "text": "And there were many who had not believed the words of the prophets",
+      "verse": "1:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 226.983,
+      "end": 230.234,
+      "type": "line",
+      "text": "who fell to the earth and became as if they were dead,",
+      "verse": "1:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 230.414,
+      "end": 233.943,
+      "type": "line",
+      "text": "for they knew that the great plan of destruction",
+      "verse": "1:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 234.123,
+      "end": 238.21,
+      "type": "line",
+      "text": "which they had laid for those who believed in the words of the prophets",
+      "verse": "1:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 238.39,
+      "end": 240.015,
+      "type": "line",
+      "text": "had been frustrated;",
+      "verse": "1:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 240.195,
+      "end": 243.585,
+      "type": "line",
+      "text": "for the sign which had been given was already at hand.",
+      "verse": "1:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 244.265,
+      "end": 248.12,
+      "type": "line",
+      "text": "And they began to know that the Son of God must shortly appear;",
+      "verse": "1:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 248.3,
+      "end": 253.594,
+      "type": "line",
+      "text": "yea, in fine, all the people upon the face of the whole earth from the west to the east,",
+      "verse": "1:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 253.774,
+      "end": 256.746,
+      "type": "line",
+      "text": "both in the land north and in the land south,",
+      "verse": "1:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 256.926,
+      "end": 260.363,
+      "type": "line",
+      "text": "were so exceedingly astonished that they fell to the earth.",
+      "verse": "1:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 261.043,
+      "end": 265.037,
+      "type": "line",
+      "text": "For they knew that the prophets had testified of these things for many years,",
+      "verse": "1:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 265.217,
+      "end": 269.722,
+      "type": "line",
+      "text": "and that the sign which had been given was already at hand;",
+      "verse": "1:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 269.902,
+      "end": 274.453,
+      "type": "line",
+      "text": "and they began to fear because of their iniquity and their unbelief.",
+      "verse": "1:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 275.133,
+      "end": 279.545,
+      "type": "line",
+      "text": "And it came to pass that there was no darkness in all that night,",
+      "verse": "1:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 279.725,
+      "end": 282.419,
+      "type": "line",
+      "text": "but it was as light as though it was mid-day.",
+      "verse": "1:19",
+      "lineIndex": 73
+    },
+    {
+      "start": 282.599,
+      "end": 288.729,
+      "type": "line",
+      "text": "And it came to pass that the sun did rise in the morning again, according to its proper order;",
+      "verse": "1:19",
+      "lineIndex": 74
+    },
+    {
+      "start": 288.909,
+      "end": 294.575,
+      "type": "line",
+      "text": "and they knew that it was the day that the Lord should be born, because of the sign which had been given.",
+      "verse": "1:19",
+      "lineIndex": 75
+    },
+    {
+      "start": 295.255,
+      "end": 298.181,
+      "type": "line",
+      "text": "And it had come to pass, yea, all things,",
+      "verse": "1:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 298.361,
+      "end": 301.101,
+      "type": "line",
+      "text": "every whit, according to the words of the prophets.",
+      "verse": "1:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 301.781,
+      "end": 306.982,
+      "type": "line",
+      "text": "And it came to pass also that a new star did appear, according to the word.",
+      "verse": "1:21",
+      "lineIndex": 78
+    },
+    {
+      "start": 307.662,
+      "end": 311.238,
+      "type": "line",
+      "text": "And it came to pass that from this time forth",
+      "verse": "1:22",
+      "lineIndex": 79
+    },
+    {
+      "start": 311.418,
+      "end": 317.409,
+      "type": "line",
+      "text": "there began to be lyings sent forth among the people, by Satan, to harden their hearts,",
+      "verse": "1:22",
+      "lineIndex": 80
+    },
+    {
+      "start": 317.589,
+      "end": 320.19,
+      "type": "line",
+      "text": "to the intent that they might not believe",
+      "verse": "1:22",
+      "lineIndex": 81
+    },
+    {
+      "start": 320.37,
+      "end": 323.528,
+      "type": "line",
+      "text": "in those signs and wonders which they had seen;",
+      "verse": "1:22",
+      "lineIndex": 82
+    },
+    {
+      "start": 323.708,
+      "end": 326.448,
+      "type": "line",
+      "text": "but notwithstanding these lyings and deceivings",
+      "verse": "1:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 326.628,
+      "end": 329.043,
+      "type": "line",
+      "text": "the more part of the people did believe,",
+      "verse": "1:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 329.223,
+      "end": 331.452,
+      "type": "line",
+      "text": "and were converted unto the Lord.",
+      "verse": "1:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 332.132,
+      "end": 335.569,
+      "type": "line",
+      "text": "And it came to pass that Nephi went forth among the people,",
+      "verse": "1:23",
+      "lineIndex": 86
+    },
+    {
+      "start": 335.749,
+      "end": 343.04,
+      "type": "line",
+      "text": "and also many others, baptizing unto repentance, in the which there was a great remission of sins.",
+      "verse": "1:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 343.22,
+      "end": 346.842,
+      "type": "line",
+      "text": "And thus the people began again to have peace in the land.",
+      "verse": "1:23",
+      "lineIndex": 88
+    },
+    {
+      "start": 347.522,
+      "end": 349.38,
+      "type": "line",
+      "text": "And there were no contentions,",
+      "verse": "1:24",
+      "lineIndex": 89
+    },
+    {
+      "start": 349.56,
+      "end": 352.021,
+      "type": "line",
+      "text": "save it were a few that began to preach,",
+      "verse": "1:24",
+      "lineIndex": 90
+    },
+    {
+      "start": 352.201,
+      "end": 354.755,
+      "type": "line",
+      "text": "endeavoring to prove by the scriptures",
+      "verse": "1:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 354.935,
+      "end": 358.325,
+      "type": "line",
+      "text": "that it was no more expedient to observe the law of Moses.",
+      "verse": "1:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 358.505,
+      "end": 362.963,
+      "type": "line",
+      "text": "Now in this thing they did err, having not understood the scriptures.",
+      "verse": "1:24",
+      "lineIndex": 93
+    },
+    {
+      "start": 363.643,
+      "end": 366.754,
+      "type": "line",
+      "text": "But it came to pass that they soon became converted,",
+      "verse": "1:25",
+      "lineIndex": 94
+    },
+    {
+      "start": 366.934,
+      "end": 369.628,
+      "type": "line",
+      "text": "and were convinced of the error which they were in,",
+      "verse": "1:25",
+      "lineIndex": 95
+    },
+    {
+      "start": 369.808,
+      "end": 371.944,
+      "type": "line",
+      "text": "for it was made known unto them",
+      "verse": "1:25",
+      "lineIndex": 96
+    },
+    {
+      "start": 372.124,
+      "end": 374.353,
+      "type": "line",
+      "text": "that the law was not yet fulfilled,",
+      "verse": "1:25",
+      "lineIndex": 97
+    },
+    {
+      "start": 374.533,
+      "end": 377.552,
+      "type": "line",
+      "text": "and that it must be fulfilled in every whit;",
+      "verse": "1:25",
+      "lineIndex": 98
+    },
+    {
+      "start": 377.732,
+      "end": 381.215,
+      "type": "line",
+      "text": "yea, the word came unto them that it must be fulfilled;",
+      "verse": "1:25",
+      "lineIndex": 99
+    },
+    {
+      "start": 381.395,
+      "end": 386.085,
+      "type": "line",
+      "text": "yea, that one jot or tittle should not pass away till it should all be fulfilled;",
+      "verse": "1:25",
+      "lineIndex": 100
+    },
+    {
+      "start": 386.265,
+      "end": 389.98,
+      "type": "line",
+      "text": "therefore in this same year were they brought to a knowledge of their error",
+      "verse": "1:25",
+      "lineIndex": 101
+    },
+    {
+      "start": 390.16,
+      "end": 392.064,
+      "type": "line",
+      "text": "and did confess their faults.",
+      "verse": "1:25",
+      "lineIndex": 102
+    },
+    {
+      "start": 392.744,
+      "end": 396.227,
+      "type": "line",
+      "text": "And thus the ninety and second year did pass away,",
+      "verse": "1:26",
+      "lineIndex": 103
+    },
+    {
+      "start": 396.407,
+      "end": 406.949,
+      "type": "line",
+      "text": "bringing glad tidings unto the people because of the signs which did come to pass, according to the words of the prophecy of all the holy prophets.",
+      "verse": "1:26",
+      "lineIndex": 104
+    },
+    {
+      "start": 407.629,
+      "end": 412.784,
+      "type": "line",
+      "text": "And it came to pass that the ninety and third year did also pass away in peace,",
+      "verse": "1:27",
+      "lineIndex": 105
+    },
+    {
+      "start": 412.964,
+      "end": 415.286,
+      "type": "line",
+      "text": "save it were for the Gadianton robbers,",
+      "verse": "1:27",
+      "lineIndex": 106
+    },
+    {
+      "start": 415.466,
+      "end": 417.509,
+      "type": "line",
+      "text": "who dwelt upon the mountains,",
+      "verse": "1:27",
+      "lineIndex": 107
+    },
+    {
+      "start": 417.689,
+      "end": 419.268,
+      "type": "line",
+      "text": "who did infest the land;",
+      "verse": "1:27",
+      "lineIndex": 108
+    },
+    {
+      "start": 419.448,
+      "end": 423.349,
+      "type": "line",
+      "text": "for so strong were their holds and their secret places",
+      "verse": "1:27",
+      "lineIndex": 109
+    },
+    {
+      "start": 423.529,
+      "end": 426.13,
+      "type": "line",
+      "text": "that the people could not overpower them;",
+      "verse": "1:27",
+      "lineIndex": 110
+    },
+    {
+      "start": 426.31,
+      "end": 428.818,
+      "type": "line",
+      "text": "therefore they did commit many murders,",
+      "verse": "1:27",
+      "lineIndex": 111
+    },
+    {
+      "start": 428.998,
+      "end": 431.692,
+      "type": "line",
+      "text": "and did do much slaughter among the people.",
+      "verse": "1:27",
+      "lineIndex": 112
+    },
+    {
+      "start": 432.372,
+      "end": 436.134,
+      "type": "line",
+      "text": "And it came to pass that in the ninety and fourth year",
+      "verse": "1:28",
+      "lineIndex": 113
+    },
+    {
+      "start": 436.314,
+      "end": 438.775,
+      "type": "line",
+      "text": "they began to increase in a great degree,",
+      "verse": "1:28",
+      "lineIndex": 114
+    },
+    {
+      "start": 438.955,
+      "end": 443.831,
+      "type": "line",
+      "text": "because there were many dissenters of the Nephites who did flee unto them,",
+      "verse": "1:28",
+      "lineIndex": 115
+    },
+    {
+      "start": 444.011,
+      "end": 449.166,
+      "type": "line",
+      "text": "which did cause much sorrow unto those Nephites who did remain in the land.",
+      "verse": "1:28",
+      "lineIndex": 116
+    },
+    {
+      "start": 449.846,
+      "end": 453.747,
+      "type": "line",
+      "text": "And there was also a cause of much sorrow among the Lamanites;",
+      "verse": "1:29",
+      "lineIndex": 117
+    },
+    {
+      "start": 453.927,
+      "end": 456.574,
+      "type": "line",
+      "text": "for behold, they had many children",
+      "verse": "1:29",
+      "lineIndex": 118
+    },
+    {
+      "start": 456.754,
+      "end": 460.005,
+      "type": "line",
+      "text": "who did grow up and began to wax strong in years",
+      "verse": "1:29",
+      "lineIndex": 119
+    },
+    {
+      "start": 460.185,
+      "end": 462.368,
+      "type": "line",
+      "text": "that they became for themselves,",
+      "verse": "1:29",
+      "lineIndex": 120
+    },
+    {
+      "start": 462.548,
+      "end": 470.861,
+      "type": "line",
+      "text": "and were led away by some who were Zoramites, by their lyings and their flattering words, to join those Gadianton robbers.",
+      "verse": "1:29",
+      "lineIndex": 121
+    },
+    {
+      "start": 471.541,
+      "end": 474.792,
+      "type": "line",
+      "text": "And thus were the Lamanites afflicted also,",
+      "verse": "1:30",
+      "lineIndex": 122
+    },
+    {
+      "start": 474.972,
+      "end": 481.892,
+      "type": "line",
+      "text": "and began to decrease as to their faith and righteousness, because of the wickedness of the rising generation.",
+      "verse": "1:30",
+      "lineIndex": 123
+    }
+  ]
+}
