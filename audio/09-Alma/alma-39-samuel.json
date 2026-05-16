@@ -1,0 +1,704 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 39,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 281.369,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 1.393,
+      "type": "line",
+      "text": "And now, my son,",
+      "verse": "39:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 1.573,
+      "end": 3.895,
+      "type": "line",
+      "text": "I have somewhat more to say unto thee",
+      "verse": "39:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 4.075,
+      "end": 6.304,
+      "type": "line",
+      "text": "than what I said unto thy brother;",
+      "verse": "39:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 6.484,
+      "end": 10.199,
+      "type": "line",
+      "text": "for behold, have ye not observed the steadiness of thy brother,",
+      "verse": "39:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 10.379,
+      "end": 14.651,
+      "type": "line",
+      "text": "his faithfulness, and his diligence in keeping the commandments of God?",
+      "verse": "39:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 14.831,
+      "end": 17.617,
+      "type": "line",
+      "text": "Behold, has he not set a good example for thee?",
+      "verse": "39:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 18.297,
+      "end": 21.455,
+      "type": "line",
+      "text": "For thou didst not give so much heed unto my words",
+      "verse": "39:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 21.635,
+      "end": 24.793,
+      "type": "line",
+      "text": "as did thy brother, among the people of the Zoramites.",
+      "verse": "39:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 24.973,
+      "end": 27.156,
+      "type": "line",
+      "text": "Now this is what I have against thee;",
+      "verse": "39:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 27.336,
+      "end": 31.376,
+      "type": "line",
+      "text": "thou didst go on unto boasting in thy strength and thy wisdom.",
+      "verse": "39:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 32.056,
+      "end": 33.635,
+      "type": "line",
+      "text": "And this is not all, my son.",
+      "verse": "39:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 33.815,
+      "end": 36.509,
+      "type": "line",
+      "text": "Thou didst do that which was grievous unto me;",
+      "verse": "39:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 36.689,
+      "end": 38.918,
+      "type": "line",
+      "text": "for thou didst forsake the ministry,",
+      "verse": "39:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 39.098,
+      "end": 45.971,
+      "type": "line",
+      "text": "and did go over into the land of Siron among the borders of the Lamanites, after the harlot Isabel.",
+      "verse": "39:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 46.651,
+      "end": 49.437,
+      "type": "line",
+      "text": "Yea, she did steal away the hearts of many;",
+      "verse": "39:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 49.617,
+      "end": 51.985,
+      "type": "line",
+      "text": "but this was no excuse for thee, my son.",
+      "verse": "39:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 52.165,
+      "end": 56.484,
+      "type": "line",
+      "text": "Thou shouldst have tended to the ministry wherewith thou wast entrusted.",
+      "verse": "39:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 57.164,
+      "end": 58.743,
+      "type": "line",
+      "text": "Know ye not, my son,",
+      "verse": "39:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 58.923,
+      "end": 62.824,
+      "type": "line",
+      "text": "that these things are a abomination in the sight of the Lord;",
+      "verse": "39:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 63.004,
+      "end": 65.558,
+      "type": "line",
+      "text": "yea, most abominable above all sins",
+      "verse": "39:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 65.738,
+      "end": 69.918,
+      "type": "line",
+      "text": "save it be the shedding of innocent blood or denying the Holy Ghost?",
+      "verse": "39:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 70.598,
+      "end": 75.103,
+      "type": "line",
+      "text": "For behold, if ye deny the Holy Ghost when it once has had place in you,",
+      "verse": "39:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 75.283,
+      "end": 77.373,
+      "type": "line",
+      "text": "and ye know that ye deny it,",
+      "verse": "39:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 77.553,
+      "end": 80.572,
+      "type": "line",
+      "text": "behold, this is a sin which is unpardonable;",
+      "verse": "39:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 80.752,
+      "end": 84.885,
+      "type": "line",
+      "text": "yea, and whosoever murdereth against the light and knowledge of God,",
+      "verse": "39:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 85.065,
+      "end": 88.037,
+      "type": "line",
+      "text": "it is not easy for him to obtain forgiveness;",
+      "verse": "39:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 88.217,
+      "end": 90.167,
+      "type": "line",
+      "text": "yea, I say unto you, my son,",
+      "verse": "39:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 90.347,
+      "end": 93.784,
+      "type": "line",
+      "text": "that it is not easy for him to obtain a forgiveness.",
+      "verse": "39:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 94.464,
+      "end": 95.857,
+      "type": "line",
+      "text": "And now, my son,",
+      "verse": "39:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 96.037,
+      "end": 99.288,
+      "type": "line",
+      "text": "I would to God that ye had not been guilty of so great a crime.",
+      "verse": "39:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 99.468,
+      "end": 103.137,
+      "type": "line",
+      "text": "I would not dwell upon your crimes, to harrow up your soul,",
+      "verse": "39:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 103.317,
+      "end": 105.082,
+      "type": "line",
+      "text": "if it were not for your good.",
+      "verse": "39:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 105.762,
+      "end": 108.641,
+      "type": "line",
+      "text": "But behold, ye cannot hide your crimes from God;",
+      "verse": "39:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 108.821,
+      "end": 110.539,
+      "type": "line",
+      "text": "and except ye repent",
+      "verse": "39:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 110.719,
+      "end": 114.016,
+      "type": "line",
+      "text": "they will stand as a testimony against you at the last day.",
+      "verse": "39:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 114.696,
+      "end": 115.95,
+      "type": "line",
+      "text": "Now my son,",
+      "verse": "39:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 116.13,
+      "end": 117.988,
+      "type": "line",
+      "text": "I would that ye should repent",
+      "verse": "39:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 118.168,
+      "end": 119.747,
+      "type": "line",
+      "text": "and forsake your sins,",
+      "verse": "39:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 119.927,
+      "end": 122.806,
+      "type": "line",
+      "text": "and go no more after the lusts of your eyes,",
+      "verse": "39:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 122.986,
+      "end": 125.076,
+      "type": "line",
+      "text": "but cross yourself in all these things;",
+      "verse": "39:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 125.256,
+      "end": 129.436,
+      "type": "line",
+      "text": "for except ye do this ye can in nowise inherit the kingdom of God.",
+      "verse": "39:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 129.616,
+      "end": 130.777,
+      "type": "line",
+      "text": "Oh, remember,",
+      "verse": "39:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 130.957,
+      "end": 132.443,
+      "type": "line",
+      "text": "and take it upon you,",
+      "verse": "39:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 132.623,
+      "end": 134.899,
+      "type": "line",
+      "text": "and cross yourself in these things.",
+      "verse": "39:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 135.579,
+      "end": 141.848,
+      "type": "line",
+      "text": "And I command you to take it upon you to counsel with your elder brothers in your undertakings;",
+      "verse": "39:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 142.028,
+      "end": 144.443,
+      "type": "line",
+      "text": "for behold, thou art in thy youth,",
+      "verse": "39:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 144.623,
+      "end": 148.013,
+      "type": "line",
+      "text": "and ye stand in need to be nourished by your brothers.",
+      "verse": "39:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 148.193,
+      "end": 150.004,
+      "type": "line",
+      "text": "And give heed to their counsel.",
+      "verse": "39:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 150.684,
+      "end": 154.817,
+      "type": "line",
+      "text": "Suffer not yourself to be led away by any vain or foolish thing;",
+      "verse": "39:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 154.997,
+      "end": 159.827,
+      "type": "line",
+      "text": "suffer not the devil to lead away your heart again after those wicked harlots.",
+      "verse": "39:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 160.007,
+      "end": 161.586,
+      "type": "line",
+      "text": "Behold, O my son,",
+      "verse": "39:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 161.766,
+      "end": 164.645,
+      "type": "line",
+      "text": "how great iniquity ye brought upon the Zoramites;",
+      "verse": "39:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 164.825,
+      "end": 167.101,
+      "type": "line",
+      "text": "for when they saw your conduct",
+      "verse": "39:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 167.281,
+      "end": 169.231,
+      "type": "line",
+      "text": "they would not believe in my words.",
+      "verse": "39:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 169.911,
+      "end": 172.837,
+      "type": "line",
+      "text": "And now the Spirit of the Lord doth say unto me:",
+      "verse": "39:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 173.017,
+      "end": 175.246,
+      "type": "line",
+      "text": "Command thy children to do good,",
+      "verse": "39:12",
+      "lineIndex": 57
+    },
+    {
+      "start": 175.426,
+      "end": 179.281,
+      "type": "line",
+      "text": "lest they lead away the hearts of many people to destruction;",
+      "verse": "39:12",
+      "lineIndex": 58
+    },
+    {
+      "start": 179.461,
+      "end": 181.458,
+      "type": "line",
+      "text": "therefore I command you, my son,",
+      "verse": "39:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 181.638,
+      "end": 183.31,
+      "type": "line",
+      "text": "in the fear of God,",
+      "verse": "39:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 183.49,
+      "end": 185.951,
+      "type": "line",
+      "text": "that ye refrain from your iniquities;",
+      "verse": "39:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 186.631,
+      "end": 190.253,
+      "type": "line",
+      "text": "That ye turn to the Lord with all your mind, might, and strength;",
+      "verse": "39:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 190.433,
+      "end": 193.916,
+      "type": "line",
+      "text": "that ye lead away the hearts of no more to do wickedly;",
+      "verse": "39:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 194.096,
+      "end": 196.418,
+      "type": "line",
+      "text": "but rather return unto them,",
+      "verse": "39:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 196.598,
+      "end": 198.548,
+      "type": "line",
+      "text": "and acknowledge your faults",
+      "verse": "39:13",
+      "lineIndex": 65
+    },
+    {
+      "start": 198.728,
+      "end": 201.096,
+      "type": "line",
+      "text": "and that wrong which ye have done.",
+      "verse": "39:13",
+      "lineIndex": 66
+    },
+    {
+      "start": 201.776,
+      "end": 205.445,
+      "type": "line",
+      "text": "Seek not after riches nor the vain things of this world;",
+      "verse": "39:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 205.625,
+      "end": 208.365,
+      "type": "line",
+      "text": "for behold, you cannot carry them with you.",
+      "verse": "39:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 209.045,
+      "end": 210.438,
+      "type": "line",
+      "text": "And now, my son,",
+      "verse": "39:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 210.618,
+      "end": 214.008,
+      "type": "line",
+      "text": "I would say somewhat unto you concerning the coming of Christ.",
+      "verse": "39:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 214.188,
+      "end": 220.875,
+      "type": "line",
+      "text": "Behold, I say unto you, that it is he that surely shall come to take away the sins of the world;",
+      "verse": "39:15",
+      "lineIndex": 71
+    },
+    {
+      "start": 221.055,
+      "end": 226.071,
+      "type": "line",
+      "text": "yea, he cometh to declare glad tidings of salvation unto his people.",
+      "verse": "39:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 226.751,
+      "end": 228.144,
+      "type": "line",
+      "text": "And now, my son,",
+      "verse": "39:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 228.324,
+      "end": 231.389,
+      "type": "line",
+      "text": "this was the ministry unto which ye were called,",
+      "verse": "39:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 231.569,
+      "end": 234.634,
+      "type": "line",
+      "text": "to declare these glad tidings unto this people,",
+      "verse": "39:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 234.814,
+      "end": 239.783,
+      "type": "line",
+      "text": "to prepare their minds; or rather that salvation might come unto them,",
+      "verse": "39:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 239.963,
+      "end": 245.768,
+      "type": "line",
+      "text": "that they may prepare the minds of their children to hear the word at the time of his coming.",
+      "verse": "39:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 246.448,
+      "end": 249.234,
+      "type": "line",
+      "text": "And now I will ease your mind somewhat on this subject.",
+      "verse": "39:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 249.414,
+      "end": 253.222,
+      "type": "line",
+      "text": "Behold, you marvel why these things should be known so long beforehand.",
+      "verse": "39:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 253.402,
+      "end": 255.074,
+      "type": "line",
+      "text": "Behold, I say unto you,",
+      "verse": "39:17",
+      "lineIndex": 80
+    },
+    {
+      "start": 255.254,
+      "end": 258.365,
+      "type": "line",
+      "text": "is not a soul at this time as precious unto God",
+      "verse": "39:17",
+      "lineIndex": 81
+    },
+    {
+      "start": 258.545,
+      "end": 261.146,
+      "type": "line",
+      "text": "as a soul will be at the time of his coming?",
+      "verse": "39:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 261.826,
+      "end": 269.349,
+      "type": "line",
+      "text": "Is it not as necessary that the plan of redemption should be made known unto this people as well as unto their children?",
+      "verse": "39:18",
+      "lineIndex": 83
+    },
+    {
+      "start": 270.029,
+      "end": 272.305,
+      "type": "line",
+      "text": "Is it not as easy at this time",
+      "verse": "39:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 272.485,
+      "end": 278.244,
+      "type": "line",
+      "text": "for the Lord to send his angel to declare these glad tidings unto us as unto our children,",
+      "verse": "39:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 278.424,
+      "end": 280.7,
+      "type": "line",
+      "text": "or as after the time of his coming?",
+      "verse": "39:19",
+      "lineIndex": 86
+    }
+  ]
+}
