@@ -1,0 +1,968 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 55,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 450.32,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.062,
+      "type": "line",
+      "text": "Now it came to pass that when Moroni had received this epistle he was more angry,",
+      "verse": "55:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.242,
+      "end": 9.607,
+      "type": "line",
+      "text": "because he knew that Ammoron had a perfect knowledge of his fraud;",
+      "verse": "55:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.787,
+      "end": 17.635,
+      "type": "line",
+      "text": "yea, he knew that Ammoron knew that it was not a just cause that had caused him to wage a war against the people of Nephi.",
+      "verse": "55:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 18.315,
+      "end": 19.615,
+      "type": "line",
+      "text": "And he said:",
+      "verse": "55:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.795,
+      "end": 23.464,
+      "type": "line",
+      "text": "Behold, I will not exchange prisoners with Ammoron",
+      "verse": "55:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 23.644,
+      "end": 27.87,
+      "type": "line",
+      "text": "save he will withdraw his purpose, as I have stated in my epistle;",
+      "verse": "55:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 28.05,
+      "end": 33.483,
+      "type": "line",
+      "text": "for I will not grant unto him that he shall have any more power than what he hath got.",
+      "verse": "55:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 34.163,
+      "end": 38.714,
+      "type": "line",
+      "text": "Behold, I know the place where the Lamanites do guard my people",
+      "verse": "55:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 38.894,
+      "end": 41.17,
+      "type": "line",
+      "text": "whom they have taken prisoners;",
+      "verse": "55:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 41.35,
+      "end": 44.694,
+      "type": "line",
+      "text": "and as Ammoron would not grant unto me mine epistle,",
+      "verse": "55:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 44.874,
+      "end": 47.846,
+      "type": "line",
+      "text": "behold, I will give unto him according to my words;",
+      "verse": "55:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 48.026,
+      "end": 51.788,
+      "type": "line",
+      "text": "yea, I will seek death among them until they shall sue for peace.",
+      "verse": "55:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 52.468,
+      "end": 60.688,
+      "type": "line",
+      "text": "And now it came to pass that when Moroni had said these words, he caused that a search should be made among his men,",
+      "verse": "55:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 60.868,
+      "end": 65.28,
+      "type": "line",
+      "text": "perhaps he might find a man who was a descendant of Laman among them.",
+      "verse": "55:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 65.96,
+      "end": 68.236,
+      "type": "line",
+      "text": "And it came to pass that they found one,",
+      "verse": "55:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 68.416,
+      "end": 69.949,
+      "type": "line",
+      "text": "whose name was Laman;",
+      "verse": "55:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 70.129,
+      "end": 74.123,
+      "type": "line",
+      "text": "and he was one of the servants of the king who was murdered by Amalickiah.",
+      "verse": "55:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 74.803,
+      "end": 78.936,
+      "type": "line",
+      "text": "Now Moroni caused that Laman and a small number of his men",
+      "verse": "55:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 79.116,
+      "end": 82.274,
+      "type": "line",
+      "text": "should go forth unto the guards who were over the Nephites.",
+      "verse": "55:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 82.954,
+      "end": 86.205,
+      "type": "line",
+      "text": "Now the Nephites were guarded in the city of Gid;",
+      "verse": "55:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 86.385,
+      "end": 91.54,
+      "type": "line",
+      "text": "therefore Moroni appointed Laman and caused that a small number of men",
+      "verse": "55:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 91.72,
+      "end": 92.974,
+      "type": "line",
+      "text": "should go with him.",
+      "verse": "55:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 93.654,
+      "end": 97.555,
+      "type": "line",
+      "text": "And when it was evening Laman went to the guards who were over the Nephites,",
+      "verse": "55:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 97.735,
+      "end": 100.846,
+      "type": "line",
+      "text": "and behold, they saw him coming and they hailed him;",
+      "verse": "55:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 101.026,
+      "end": 102.791,
+      "type": "line",
+      "text": "but he saith unto them:",
+      "verse": "55:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 102.971,
+      "end": 104.039,
+      "type": "line",
+      "text": "Fear not;",
+      "verse": "55:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 104.219,
+      "end": 106.03,
+      "type": "line",
+      "text": "behold, I am a Lamanite.",
+      "verse": "55:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 106.21,
+      "end": 109.647,
+      "type": "line",
+      "text": "Behold, we have escaped from the Nephites, and they sleep;",
+      "verse": "55:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 109.827,
+      "end": 113.078,
+      "type": "line",
+      "text": "and behold we have taken of their wine and brought with us.",
+      "verse": "55:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 113.758,
+      "end": 117.845,
+      "type": "line",
+      "text": "Now when the Lamanites heard these words they received him with joy;",
+      "verse": "55:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 118.025,
+      "end": 119.79,
+      "type": "line",
+      "text": "and they said unto him:",
+      "verse": "55:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 119.97,
+      "end": 121.503,
+      "type": "line",
+      "text": "Give us of your wine,",
+      "verse": "55:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 121.683,
+      "end": 123.03,
+      "type": "line",
+      "text": "that we may drink;",
+      "verse": "55:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 123.21,
+      "end": 127.761,
+      "type": "line",
+      "text": "we are glad that ye have thus taken wine with you for we are weary.",
+      "verse": "55:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 128.441,
+      "end": 130.252,
+      "type": "line",
+      "text": "But Laman said unto them:",
+      "verse": "55:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 130.432,
+      "end": 134.333,
+      "type": "line",
+      "text": "Let us keep of our wine till we go against the Nephites to battle.",
+      "verse": "55:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 134.513,
+      "end": 138.832,
+      "type": "line",
+      "text": "But this saying only made them more desirous to drink of the wine;",
+      "verse": "55:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 139.512,
+      "end": 140.952,
+      "type": "line",
+      "text": "For, said they:",
+      "verse": "55:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 141.132,
+      "end": 142.386,
+      "type": "line",
+      "text": "We are weary,",
+      "verse": "55:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 142.566,
+      "end": 144.795,
+      "type": "line",
+      "text": "therefore let us take of the wine,",
+      "verse": "55:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 144.975,
+      "end": 148.737,
+      "type": "line",
+      "text": "and by and by we shall receive wine for our rations,",
+      "verse": "55:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 148.917,
+      "end": 152.168,
+      "type": "line",
+      "text": "which will strengthen us to go against the Nephites.",
+      "verse": "55:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 152.848,
+      "end": 154.613,
+      "type": "line",
+      "text": "And Laman said unto them:",
+      "verse": "55:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 154.793,
+      "end": 156.976,
+      "type": "line",
+      "text": "You may do according to your desires.",
+      "verse": "55:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 157.656,
+      "end": 160.767,
+      "type": "line",
+      "text": "And it came to pass that they did take of the wine freely;",
+      "verse": "55:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 160.947,
+      "end": 163.269,
+      "type": "line",
+      "text": "and it was pleasant to their taste,",
+      "verse": "55:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 163.449,
+      "end": 165.725,
+      "type": "line",
+      "text": "therefore they took of it more freely;",
+      "verse": "55:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 165.905,
+      "end": 169.016,
+      "type": "line",
+      "text": "and it was strong, having been prepared in its strength.",
+      "verse": "55:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 169.696,
+      "end": 172.761,
+      "type": "line",
+      "text": "And it came to pass they did drink and were merry,",
+      "verse": "55:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 172.941,
+      "end": 175.542,
+      "type": "line",
+      "text": "and by and by they were all drunken.",
+      "verse": "55:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 176.222,
+      "end": 182.306,
+      "type": "line",
+      "text": "And now when Laman and his men saw that they were all drunken, and were in a deep sleep,",
+      "verse": "55:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 182.486,
+      "end": 185.876,
+      "type": "line",
+      "text": "they returned to Moroni and told him all the things that had happened.",
+      "verse": "55:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 186.556,
+      "end": 189.667,
+      "type": "line",
+      "text": "And now this was according to the design of Moroni.",
+      "verse": "55:16",
+      "lineIndex": 54
+    },
+    {
+      "start": 189.847,
+      "end": 193.237,
+      "type": "line",
+      "text": "And Moroni had prepared his men with weapons of war;",
+      "verse": "55:16",
+      "lineIndex": 55
+    },
+    {
+      "start": 193.417,
+      "end": 195.321,
+      "type": "line",
+      "text": "and he went to the city Gid,",
+      "verse": "55:16",
+      "lineIndex": 56
+    },
+    {
+      "start": 195.501,
+      "end": 198.798,
+      "type": "line",
+      "text": "while the Lamanites were in a deep sleep and drunken,",
+      "verse": "55:16",
+      "lineIndex": 57
+    },
+    {
+      "start": 198.978,
+      "end": 203.622,
+      "type": "line",
+      "text": "and cast in weapons of war unto the prisoners, insomuch that they were all armed;",
+      "verse": "55:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 204.302,
+      "end": 205.927,
+      "type": "line",
+      "text": "Yea, even to their women,",
+      "verse": "55:17",
+      "lineIndex": 59
+    },
+    {
+      "start": 206.107,
+      "end": 207.779,
+      "type": "line",
+      "text": "and all those of their children,",
+      "verse": "55:17",
+      "lineIndex": 60
+    },
+    {
+      "start": 207.959,
+      "end": 210.885,
+      "type": "line",
+      "text": "as many as were able to use a weapon of war,",
+      "verse": "55:17",
+      "lineIndex": 61
+    },
+    {
+      "start": 211.065,
+      "end": 213.805,
+      "type": "line",
+      "text": "when Moroni had armed all those prisoners;",
+      "verse": "55:17",
+      "lineIndex": 62
+    },
+    {
+      "start": 213.985,
+      "end": 217.514,
+      "type": "line",
+      "text": "and all those things were done in a profound silence.",
+      "verse": "55:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 218.194,
+      "end": 222.42,
+      "type": "line",
+      "text": "But had they awakened the Lamanites, behold they were drunken",
+      "verse": "55:18",
+      "lineIndex": 64
+    },
+    {
+      "start": 222.6,
+      "end": 225.015,
+      "type": "line",
+      "text": "and the Nephites could have slain them.",
+      "verse": "55:18",
+      "lineIndex": 65
+    },
+    {
+      "start": 225.695,
+      "end": 228.621,
+      "type": "line",
+      "text": "But behold, this was not the desire of Moroni;",
+      "verse": "55:19",
+      "lineIndex": 66
+    },
+    {
+      "start": 228.801,
+      "end": 231.587,
+      "type": "line",
+      "text": "he did not delight in murder or bloodshed,",
+      "verse": "55:19",
+      "lineIndex": 67
+    },
+    {
+      "start": 231.767,
+      "end": 235.296,
+      "type": "line",
+      "text": "but he delighted in the saving of his people from destruction;",
+      "verse": "55:19",
+      "lineIndex": 68
+    },
+    {
+      "start": 235.476,
+      "end": 238.866,
+      "type": "line",
+      "text": "and for this cause he might not bring upon him injustice,",
+      "verse": "55:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 239.046,
+      "end": 243.644,
+      "type": "line",
+      "text": "he would not fall upon the Lamanites and destroy them in their drunkenness.",
+      "verse": "55:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 244.324,
+      "end": 246.646,
+      "type": "line",
+      "text": "But he had obtained his desires;",
+      "verse": "55:20",
+      "lineIndex": 71
+    },
+    {
+      "start": 246.826,
+      "end": 252.956,
+      "type": "line",
+      "text": "for he had armed those prisoners of the Nephites who were within the wall of the city,",
+      "verse": "55:20",
+      "lineIndex": 72
+    },
+    {
+      "start": 253.136,
+      "end": 255.922,
+      "type": "line",
+      "text": "and had given them power to gain possession",
+      "verse": "55:20",
+      "lineIndex": 73
+    },
+    {
+      "start": 256.102,
+      "end": 258.888,
+      "type": "line",
+      "text": "of those parts which were within the walls.",
+      "verse": "55:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 259.568,
+      "end": 264.491,
+      "type": "line",
+      "text": "And then he caused the men who were with him to withdraw a pace from them,",
+      "verse": "55:21",
+      "lineIndex": 75
+    },
+    {
+      "start": 264.671,
+      "end": 266.761,
+      "type": "line",
+      "text": "and surround the armies of the Lamanites.",
+      "verse": "55:21",
+      "lineIndex": 76
+    },
+    {
+      "start": 267.441,
+      "end": 269.809,
+      "type": "line",
+      "text": "Now behold this was done in the night-time,",
+      "verse": "55:22",
+      "lineIndex": 77
+    },
+    {
+      "start": 269.989,
+      "end": 272.868,
+      "type": "line",
+      "text": "so that when the Lamanites awoke in the morning",
+      "verse": "55:22",
+      "lineIndex": 78
+    },
+    {
+      "start": 273.048,
+      "end": 276.763,
+      "type": "line",
+      "text": "they beheld that they were surrounded by the Nephites without,",
+      "verse": "55:22",
+      "lineIndex": 79
+    },
+    {
+      "start": 276.943,
+      "end": 279.126,
+      "type": "line",
+      "text": "and that their prisoners were armed within.",
+      "verse": "55:22",
+      "lineIndex": 80
+    },
+    {
+      "start": 279.806,
+      "end": 283.196,
+      "type": "line",
+      "text": "And thus they saw that the Nephites had power over them;",
+      "verse": "55:23",
+      "lineIndex": 81
+    },
+    {
+      "start": 283.376,
+      "end": 289.46,
+      "type": "line",
+      "text": "and in these circumstances they found that it was not expedient that they should fight with the Nephites;",
+      "verse": "55:23",
+      "lineIndex": 82
+    },
+    {
+      "start": 289.64,
+      "end": 293.495,
+      "type": "line",
+      "text": "therefore their chief captains demanded their weapons of war,",
+      "verse": "55:23",
+      "lineIndex": 83
+    },
+    {
+      "start": 293.675,
+      "end": 295.393,
+      "type": "line",
+      "text": "and they brought them forth",
+      "verse": "55:23",
+      "lineIndex": 84
+    },
+    {
+      "start": 295.573,
+      "end": 299.195,
+      "type": "line",
+      "text": "and cast them at the feet of the Nephites, pleading for mercy.",
+      "verse": "55:23",
+      "lineIndex": 85
+    },
+    {
+      "start": 299.875,
+      "end": 302.336,
+      "type": "line",
+      "text": "Now behold, this was the desire of Moroni.",
+      "verse": "55:24",
+      "lineIndex": 86
+    },
+    {
+      "start": 302.516,
+      "end": 304.606,
+      "type": "line",
+      "text": "He took them prisoners of war,",
+      "verse": "55:24",
+      "lineIndex": 87
+    },
+    {
+      "start": 304.786,
+      "end": 307.154,
+      "type": "line",
+      "text": "and took possession of the city,",
+      "verse": "55:24",
+      "lineIndex": 88
+    },
+    {
+      "start": 307.334,
+      "end": 310.817,
+      "type": "line",
+      "text": "and caused that all the prisoners should be liberated,",
+      "verse": "55:24",
+      "lineIndex": 89
+    },
+    {
+      "start": 310.997,
+      "end": 312.669,
+      "type": "line",
+      "text": "who were Nephites;",
+      "verse": "55:24",
+      "lineIndex": 90
+    },
+    {
+      "start": 312.849,
+      "end": 315.125,
+      "type": "line",
+      "text": "and they did join the army of Moroni,",
+      "verse": "55:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 315.305,
+      "end": 317.859,
+      "type": "line",
+      "text": "and were a great strength to his army.",
+      "verse": "55:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 318.539,
+      "end": 331.449,
+      "type": "line",
+      "text": "And it came to pass that he did cause the Lamanites, whom he had taken prisoners, that they should commence a labor in strengthening the fortifications round about the city Gid.",
+      "verse": "55:25",
+      "lineIndex": 93
+    },
+    {
+      "start": 332.129,
+      "end": 337.609,
+      "type": "line",
+      "text": "And it came to pass that when he had fortified the city Gid, according to his desires,",
+      "verse": "55:26",
+      "lineIndex": 94
+    },
+    {
+      "start": 337.789,
+      "end": 342.665,
+      "type": "line",
+      "text": "he caused that his prisoners should be taken to the city Bountiful;",
+      "verse": "55:26",
+      "lineIndex": 95
+    },
+    {
+      "start": 342.845,
+      "end": 347.303,
+      "type": "line",
+      "text": "and he also guarded that city with an exceedingly strong force.",
+      "verse": "55:26",
+      "lineIndex": 96
+    },
+    {
+      "start": 347.983,
+      "end": 354.206,
+      "type": "line",
+      "text": "And it came to pass that they did, notwithstanding all the intrigues of the Lamanites, keep",
+      "verse": "55:27",
+      "lineIndex": 97
+    },
+    {
+      "start": 354.386,
+      "end": 357.683,
+      "type": "line",
+      "text": "and protect all the prisoners whom they had taken,",
+      "verse": "55:27",
+      "lineIndex": 98
+    },
+    {
+      "start": 357.863,
+      "end": 362.368,
+      "type": "line",
+      "text": "and also maintain all the ground and the advantage which they had retaken.",
+      "verse": "55:27",
+      "lineIndex": 99
+    },
+    {
+      "start": 363.048,
+      "end": 367.506,
+      "type": "line",
+      "text": "And it came to pass that the Nephites began again to be victorious,",
+      "verse": "55:28",
+      "lineIndex": 100
+    },
+    {
+      "start": 367.686,
+      "end": 370.844,
+      "type": "line",
+      "text": "and to reclaim their rights and their privileges.",
+      "verse": "55:28",
+      "lineIndex": 101
+    },
+    {
+      "start": 371.524,
+      "end": 376.168,
+      "type": "line",
+      "text": "Many times did the Lamanites attempt to encircle them about by night,",
+      "verse": "55:29",
+      "lineIndex": 102
+    },
+    {
+      "start": 376.348,
+      "end": 379.877,
+      "type": "line",
+      "text": "but in these attempts they did lose many prisoners.",
+      "verse": "55:29",
+      "lineIndex": 103
+    },
+    {
+      "start": 380.557,
+      "end": 385.108,
+      "type": "line",
+      "text": "And many times did they attempt to administer of their wine to the Nephites,",
+      "verse": "55:30",
+      "lineIndex": 104
+    },
+    {
+      "start": 385.288,
+      "end": 389.05,
+      "type": "line",
+      "text": "that they might destroy them with poison or with drunkenness.",
+      "verse": "55:30",
+      "lineIndex": 105
+    },
+    {
+      "start": 389.73,
+      "end": 395.86,
+      "type": "line",
+      "text": "But behold, the Nephites were not slow to remember the Lord their God in this their time of affliction.",
+      "verse": "55:31",
+      "lineIndex": 107
+    },
+    {
+      "start": 396.04,
+      "end": 398.641,
+      "type": "line",
+      "text": "They could not be taken in their snares;",
+      "verse": "55:31",
+      "lineIndex": 108
+    },
+    {
+      "start": 398.821,
+      "end": 401.375,
+      "type": "line",
+      "text": "yea, they would not partake of their wine,",
+      "verse": "55:31",
+      "lineIndex": 109
+    },
+    {
+      "start": 401.555,
+      "end": 405.363,
+      "type": "line",
+      "text": "save they had first given to some of the Lamanite prisoners.",
+      "verse": "55:31",
+      "lineIndex": 110
+    },
+    {
+      "start": 406.043,
+      "end": 407.808,
+      "type": "line",
+      "text": "And they were thus cautious",
+      "verse": "55:32",
+      "lineIndex": 111
+    },
+    {
+      "start": 407.988,
+      "end": 411.053,
+      "type": "line",
+      "text": "that no poison should be administered among them;",
+      "verse": "55:32",
+      "lineIndex": 112
+    },
+    {
+      "start": 411.233,
+      "end": 414.252,
+      "type": "line",
+      "text": "for if their wine would poison a Lamanite",
+      "verse": "55:32",
+      "lineIndex": 113
+    },
+    {
+      "start": 414.432,
+      "end": 416.661,
+      "type": "line",
+      "text": "it would also poison a Nephite;",
+      "verse": "55:32",
+      "lineIndex": 114
+    },
+    {
+      "start": 416.841,
+      "end": 419.349,
+      "type": "line",
+      "text": "and thus they did try all their liquors.",
+      "verse": "55:32",
+      "lineIndex": 115
+    },
+    {
+      "start": 420.029,
+      "end": 427.367,
+      "type": "line",
+      "text": "And now it came to pass that it was expedient for Moroni to make preparations to attack the city Morianton;",
+      "verse": "55:33",
+      "lineIndex": 116
+    },
+    {
+      "start": 427.547,
+      "end": 433.909,
+      "type": "line",
+      "text": "for behold, the Lamanites had, by their labors, fortified the city Morianton",
+      "verse": "55:33",
+      "lineIndex": 117
+    },
+    {
+      "start": 434.089,
+      "end": 436.69,
+      "type": "line",
+      "text": "until it had become a exceeding stronghold.",
+      "verse": "55:33",
+      "lineIndex": 118
+    },
+    {
+      "start": 437.37,
+      "end": 443.407,
+      "type": "line",
+      "text": "And they were continually bringing new forces into that city, and also new supplies of provisions.",
+      "verse": "55:34",
+      "lineIndex": 119
+    },
+    {
+      "start": 444.087,
+      "end": 449.66,
+      "type": "line",
+      "text": "And thus ended the twenty and ninth year of the reign of the judges over the people of Nephi.",
+      "verse": "55:35",
+      "lineIndex": 120
+    }
+  ]
+}
