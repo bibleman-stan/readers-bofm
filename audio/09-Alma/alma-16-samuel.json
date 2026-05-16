@@ -1,0 +1,672 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 16,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 379.451,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 8.684,
+      "type": "line",
+      "text": "And it came to pass in the eleventh year of the reign of the judges over the people of Nephi, on the fifth day of the second month,",
+      "verse": "16:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 8.864,
+      "end": 12.208,
+      "type": "line",
+      "text": "there having been much peace in the land of Zarahemla,",
+      "verse": "16:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 12.388,
+      "end": 17.589,
+      "type": "line",
+      "text": "there having been no wars nor contentions for a certain number of years,",
+      "verse": "16:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 17.769,
+      "end": 22.227,
+      "type": "line",
+      "text": "even until the fifth day of the second month in the eleventh year,",
+      "verse": "16:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 22.407,
+      "end": 25.286,
+      "type": "line",
+      "text": "there was a cry of war heard throughout the land.",
+      "verse": "16:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 25.966,
+      "end": 33.396,
+      "type": "line",
+      "text": "For behold, the armies of the Lamanites had come in upon the wilderness side, into the borders of the land,",
+      "verse": "16:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 33.576,
+      "end": 35.805,
+      "type": "line",
+      "text": "even into the city of Ammonihah,",
+      "verse": "16:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 35.985,
+      "end": 39.282,
+      "type": "line",
+      "text": "and began to slay the people and destroy the city.",
+      "verse": "16:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 39.962,
+      "end": 46.231,
+      "type": "line",
+      "text": "And now it came to pass, before the Nephites could raise a sufficient army to drive them out of the land,",
+      "verse": "16:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 46.411,
+      "end": 52.588,
+      "type": "line",
+      "text": "they had destroyed the people who were in the city of Ammonihah, and also some around the borders of Noah,",
+      "verse": "16:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 52.768,
+      "end": 55.554,
+      "type": "line",
+      "text": "and taken others captive into the wilderness.",
+      "verse": "16:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 56.234,
+      "end": 60.971,
+      "type": "line",
+      "text": "Now it came to pass that the Nephites were desirous to obtain those",
+      "verse": "16:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 61.151,
+      "end": 64.495,
+      "type": "line",
+      "text": "who had been carried away captive into the wilderness.",
+      "verse": "16:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 65.175,
+      "end": 71.212,
+      "type": "line",
+      "text": "Therefore, he that had been appointed chief captain over the armies of the Nephites,",
+      "verse": "16:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 71.392,
+      "end": 73.203,
+      "type": "line",
+      "text": "(and his name was Zoram,",
+      "verse": "16:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 73.383,
+      "end": 75.844,
+      "type": "line",
+      "text": "and he had two sons, Lehi and Aha)\u2014",
+      "verse": "16:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 76.024,
+      "end": 80.575,
+      "type": "line",
+      "text": "now Zoram and his two sons, knowing that Alma was high priest over the church,",
+      "verse": "16:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 80.755,
+      "end": 84.052,
+      "type": "line",
+      "text": "and having heard that he had the spirit of prophecy,",
+      "verse": "16:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 84.232,
+      "end": 94.031,
+      "type": "line",
+      "text": "therefore they went unto him and desired of him to know whither the Lord would that they should go into the wilderness in search of their brethren,",
+      "verse": "16:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 94.211,
+      "end": 96.812,
+      "type": "line",
+      "text": "who had been taken captive by the Lamanites.",
+      "verse": "16:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 97.492,
+      "end": 101.439,
+      "type": "line",
+      "text": "And it came to pass that Alma inquired of the Lord concerning the matter.",
+      "verse": "16:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 101.619,
+      "end": 104.034,
+      "type": "line",
+      "text": "And Alma returned and said unto them:",
+      "verse": "16:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 104.214,
+      "end": 112.805,
+      "type": "line",
+      "text": "Behold, the Lamanites will cross the river Sidon in the south wilderness, away up beyond the borders of the land of Manti.",
+      "verse": "16:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 112.985,
+      "end": 118.047,
+      "type": "line",
+      "text": "And behold there shall ye meet them, on the east of the river Sidon,",
+      "verse": "16:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 118.227,
+      "end": 121.617,
+      "type": "line",
+      "text": "and there the Lord will deliver unto thee thy brethren",
+      "verse": "16:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 121.797,
+      "end": 124.444,
+      "type": "line",
+      "text": "who have been taken captive by the Lamanites.",
+      "verse": "16:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 125.124,
+      "end": 131.997,
+      "type": "line",
+      "text": "And it came to pass that Zoram and his sons crossed over the river Sidon, with their armies,",
+      "verse": "16:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 132.177,
+      "end": 136.728,
+      "type": "line",
+      "text": "and marched away beyond the borders of Manti into the south wilderness,",
+      "verse": "16:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 136.908,
+      "end": 140.298,
+      "type": "line",
+      "text": "which was on the east side of the river Sidon.",
+      "verse": "16:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 140.978,
+      "end": 144.275,
+      "type": "line",
+      "text": "And they came upon the armies of the Lamanites,",
+      "verse": "16:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 144.455,
+      "end": 148.402,
+      "type": "line",
+      "text": "and the Lamanites were scattered and driven into the wilderness;",
+      "verse": "16:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 148.582,
+      "end": 153.458,
+      "type": "line",
+      "text": "and they took their brethren who had been taken captive by the Lamanites,",
+      "verse": "16:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 153.638,
+      "end": 158.05,
+      "type": "line",
+      "text": "and there was not one soul of them had been lost that were taken captive.",
+      "verse": "16:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 158.23,
+      "end": 162.224,
+      "type": "line",
+      "text": "And they were brought by their brethren to possess their own lands.",
+      "verse": "16:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 162.904,
+      "end": 166.248,
+      "type": "line",
+      "text": "And thus ended the eleventh year of the judges,",
+      "verse": "16:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 166.428,
+      "end": 169.725,
+      "type": "line",
+      "text": "the Lamanites having been driven out of the land,",
+      "verse": "16:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 169.905,
+      "end": 172.645,
+      "type": "line",
+      "text": "and the people of Ammonihah were destroyed;",
+      "verse": "16:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 172.825,
+      "end": 176.308,
+      "type": "line",
+      "text": "yea, every living soul of the Ammonihahites was destroyed",
+      "verse": "16:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 176.488,
+      "end": 178.346,
+      "type": "line",
+      "text": "and also their great city,",
+      "verse": "16:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 178.526,
+      "end": 182.473,
+      "type": "line",
+      "text": "which they said God could not destroy, because of its greatness.",
+      "verse": "16:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 183.153,
+      "end": 186.032,
+      "type": "line",
+      "text": "But behold, in one day it was left desolate;",
+      "verse": "16:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 186.212,
+      "end": 191.506,
+      "type": "line",
+      "text": "and the carcasses were mangled by dogs and wild beasts of the wilderness.",
+      "verse": "16:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 192.186,
+      "end": 197.48,
+      "type": "line",
+      "text": "Nevertheless, after many days their dead bodies were heaped up upon the face of the earth,",
+      "verse": "16:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 197.66,
+      "end": 200.214,
+      "type": "line",
+      "text": "and they were covered with a shallow covering.",
+      "verse": "16:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 200.394,
+      "end": 203.041,
+      "type": "line",
+      "text": "And now so great was the scent thereof",
+      "verse": "16:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 203.221,
+      "end": 207.865,
+      "type": "line",
+      "text": "that the people did not go in to possess the land of Ammonihah for many years.",
+      "verse": "16:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 208.045,
+      "end": 210.599,
+      "type": "line",
+      "text": "And it was called Desolation of Nehors;",
+      "verse": "16:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 210.779,
+      "end": 214.216,
+      "type": "line",
+      "text": "for they were of the profession of Nehor, who were slain;",
+      "verse": "16:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 214.396,
+      "end": 216.764,
+      "type": "line",
+      "text": "and their lands remained desolate.",
+      "verse": "16:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 217.444,
+      "end": 228.172,
+      "type": "line",
+      "text": "And the Lamanites did not come again to war against the Nephites until the fourteenth year of the reign of the judges over the people of Nephi.",
+      "verse": "16:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 228.352,
+      "end": 233.693,
+      "type": "line",
+      "text": "And thus for three years did the people of Nephi have continual peace in all the land.",
+      "verse": "16:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 234.373,
+      "end": 244.683,
+      "type": "line",
+      "text": "And Alma and Amulek went forth preaching repentance to the people in their temples, and in their sanctuaries, and also in their synagogues,",
+      "verse": "16:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 244.863,
+      "end": 247.974,
+      "type": "line",
+      "text": "which were built after the manner of the Jews.",
+      "verse": "16:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 248.654,
+      "end": 251.208,
+      "type": "line",
+      "text": "And as many as would hear their words,",
+      "verse": "16:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 251.388,
+      "end": 254.453,
+      "type": "line",
+      "text": "unto them they did impart the word of God,",
+      "verse": "16:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 254.633,
+      "end": 257.512,
+      "type": "line",
+      "text": "without any respect of persons, continually.",
+      "verse": "16:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 258.192,
+      "end": 268.269,
+      "type": "line",
+      "text": "And thus did Alma and Amulek go forth, and also many more who had been chosen for the work, to preach the word throughout all the land.",
+      "verse": "16:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 268.449,
+      "end": 273.697,
+      "type": "line",
+      "text": "And the establishment of the church became general throughout the land,",
+      "verse": "16:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 273.877,
+      "end": 278.196,
+      "type": "line",
+      "text": "in all the region round about, among all the people of the Nephites.",
+      "verse": "16:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 278.876,
+      "end": 281.384,
+      "type": "line",
+      "text": "And there was no inequality among them;",
+      "verse": "16:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 281.564,
+      "end": 293.917,
+      "type": "line",
+      "text": "the Lord did pour out his Spirit on all the face of the land to prepare the minds of the children of men, or to prepare their hearts to receive the word which should be taught among them at the time of his coming\u2014",
+      "verse": "16:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 294.597,
+      "end": 297.616,
+      "type": "line",
+      "text": "That they might not be hardened against the word,",
+      "verse": "16:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 297.796,
+      "end": 300.304,
+      "type": "line",
+      "text": "that they might not be unbelieving,",
+      "verse": "16:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 300.484,
+      "end": 302.434,
+      "type": "line",
+      "text": "and go on to destruction,",
+      "verse": "16:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 302.614,
+      "end": 305.725,
+      "type": "line",
+      "text": "but that they might receive the word with joy,",
+      "verse": "16:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 305.905,
+      "end": 308.877,
+      "type": "line",
+      "text": "and as a branch be grafted into the true vine,",
+      "verse": "16:17",
+      "lineIndex": 68
+    },
+    {
+      "start": 309.057,
+      "end": 312.494,
+      "type": "line",
+      "text": "that they might enter into the rest of the Lord their God.",
+      "verse": "16:17",
+      "lineIndex": 69
+    },
+    {
+      "start": 313.174,
+      "end": 316.425,
+      "type": "line",
+      "text": "Now those priests who did go forth among the people",
+      "verse": "16:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 316.605,
+      "end": 322.735,
+      "type": "line",
+      "text": "did preach against all lyings, and deceivings, and envyings, and strifes, and malice, and revilings,",
+      "verse": "16:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 322.915,
+      "end": 327.373,
+      "type": "line",
+      "text": "and stealing, robbing, plundering, murdering, committing adultery,",
+      "verse": "16:18",
+      "lineIndex": 72
+    },
+    {
+      "start": 327.553,
+      "end": 332.243,
+      "type": "line",
+      "text": "and all manner of lasciviousness, crying that these things ought not so to be\u2014",
+      "verse": "16:18",
+      "lineIndex": 73
+    },
+    {
+      "start": 332.923,
+      "end": 335.663,
+      "type": "line",
+      "text": "Holding forth things which must shortly come;",
+      "verse": "16:19",
+      "lineIndex": 74
+    },
+    {
+      "start": 335.843,
+      "end": 338.769,
+      "type": "line",
+      "text": "yea, holding forth the coming of the Son of God,",
+      "verse": "16:19",
+      "lineIndex": 75
+    },
+    {
+      "start": 338.949,
+      "end": 342.664,
+      "type": "line",
+      "text": "his sufferings and death, and also the resurrection of the dead.",
+      "verse": "16:19",
+      "lineIndex": 76
+    },
+    {
+      "start": 343.344,
+      "end": 348.824,
+      "type": "line",
+      "text": "And many of the people did inquire concerning the place where the Son of God should come;",
+      "verse": "16:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 349.004,
+      "end": 353.834,
+      "type": "line",
+      "text": "and they were taught that he would appear unto them after his resurrection;",
+      "verse": "16:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 354.014,
+      "end": 357.265,
+      "type": "line",
+      "text": "and this the people did hear with great joy and gladness.",
+      "verse": "16:20",
+      "lineIndex": 79
+    },
+    {
+      "start": 357.945,
+      "end": 364.865,
+      "type": "line",
+      "text": "And now after the church had been established throughout all the land\u2014 having got the victory over the devil,",
+      "verse": "16:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 365.045,
+      "end": 369.968,
+      "type": "line",
+      "text": "and the word of God being preached in its purity in all the land,",
+      "verse": "16:21",
+      "lineIndex": 81
+    },
+    {
+      "start": 370.148,
+      "end": 373.12,
+      "type": "line",
+      "text": "and the Lord pouring out his blessings upon the people\u2014",
+      "verse": "16:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 373.3,
+      "end": 378.78,
+      "type": "line",
+      "text": "thus ended the fourteenth year of the reign of the judges over the people of Nephi.",
+      "verse": "16:21",
+      "lineIndex": 83
+    }
+  ]
+}

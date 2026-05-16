@@ -1,0 +1,608 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 15,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 268.436,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.759,
+      "type": "line",
+      "text": "And it came to pass that Alma and Amulek were commanded to depart out of that city;",
+      "verse": "15:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.939,
+      "end": 7.425,
+      "type": "line",
+      "text": "and they departed,",
+      "verse": "15:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.605,
+      "end": 10.345,
+      "type": "line",
+      "text": "and came out even into the land of Sidom;",
+      "verse": "15:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 10.525,
+      "end": 12.893,
+      "type": "line",
+      "text": "and behold, there they found all the people",
+      "verse": "15:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 13.073,
+      "end": 16.184,
+      "type": "line",
+      "text": "who had departed out of the land of Ammonihah,",
+      "verse": "15:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 16.364,
+      "end": 18.64,
+      "type": "line",
+      "text": "who had been cast out and stoned,",
+      "verse": "15:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 18.82,
+      "end": 21.653,
+      "type": "line",
+      "text": "because they believed in the words of Alma.",
+      "verse": "15:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 22.333,
+      "end": 32.643,
+      "type": "line",
+      "text": "And they related unto them all that had happened unto their wives and children, and also concerning themselves, and of their power of deliverance.",
+      "verse": "15:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.323,
+      "end": 37.178,
+      "type": "line",
+      "text": "And also Zeezrom lay sick at Sidom, with a burning fever,",
+      "verse": "15:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 37.358,
+      "end": 43.024,
+      "type": "line",
+      "text": "which was caused by the great tribulations of his mind on account of his wickedness,",
+      "verse": "15:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 43.204,
+      "end": 46.78,
+      "type": "line",
+      "text": "for he supposed that Alma and Amulek were no more;",
+      "verse": "15:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 46.96,
+      "end": 50.954,
+      "type": "line",
+      "text": "and he supposed that they had been slain because of his iniquity.",
+      "verse": "15:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 51.134,
+      "end": 52.713,
+      "type": "line",
+      "text": "And this great sin,",
+      "verse": "15:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 52.893,
+      "end": 55.912,
+      "type": "line",
+      "text": "and his many other sins, did harrow up his mind",
+      "verse": "15:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 56.092,
+      "end": 60.411,
+      "type": "line",
+      "text": "until it did become exceedingly sore, having no deliverance;",
+      "verse": "15:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 60.591,
+      "end": 64.213,
+      "type": "line",
+      "text": "therefore he began to be scorched with a burning heat.",
+      "verse": "15:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 64.893,
+      "end": 69.026,
+      "type": "line",
+      "text": "Now, when he heard that Alma and Amulek were in the land of Sidom,",
+      "verse": "15:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 69.206,
+      "end": 71.528,
+      "type": "line",
+      "text": "his heart began to take courage;",
+      "verse": "15:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 71.708,
+      "end": 76.631,
+      "type": "line",
+      "text": "and he sent a message immediately unto them, desiring them to come unto him.",
+      "verse": "15:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 77.311,
+      "end": 83.07,
+      "type": "line",
+      "text": "And it came to pass that they went immediately, obeying the message which he had sent unto them;",
+      "verse": "15:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 83.25,
+      "end": 86.454,
+      "type": "line",
+      "text": "and they went in unto the house unto Zeezrom;",
+      "verse": "15:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 86.634,
+      "end": 91.139,
+      "type": "line",
+      "text": "and they found him upon his bed, sick, being very low with a burning fever;",
+      "verse": "15:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 91.319,
+      "end": 95.174,
+      "type": "line",
+      "text": "and his mind also was exceedingly sore because of his iniquities;",
+      "verse": "15:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 95.354,
+      "end": 98.605,
+      "type": "line",
+      "text": "and when he saw them he stretched forth his hand,",
+      "verse": "15:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 98.785,
+      "end": 101.293,
+      "type": "line",
+      "text": "and besought them that they would heal him.",
+      "verse": "15:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 101.973,
+      "end": 105.828,
+      "type": "line",
+      "text": "And it came to pass that Alma said unto him, taking him by the hand:",
+      "verse": "15:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 106.008,
+      "end": 109.166,
+      "type": "line",
+      "text": "Believest thou in the power of Christ unto salvation?",
+      "verse": "15:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 109.846,
+      "end": 111.379,
+      "type": "line",
+      "text": "And he answered and said:",
+      "verse": "15:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 111.559,
+      "end": 114.392,
+      "type": "line",
+      "text": "Yea, I believe all the words that thou hast taught.",
+      "verse": "15:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 115.072,
+      "end": 116.512,
+      "type": "line",
+      "text": "And Alma said:",
+      "verse": "15:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 116.692,
+      "end": 120.686,
+      "type": "line",
+      "text": "If thou believest in the redemption of Christ thou canst be healed.",
+      "verse": "15:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 121.366,
+      "end": 122.666,
+      "type": "line",
+      "text": "And he said:",
+      "verse": "15:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 122.846,
+      "end": 125.168,
+      "type": "line",
+      "text": "Yea, I believe according to thy words.",
+      "verse": "15:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 125.848,
+      "end": 128.495,
+      "type": "line",
+      "text": "And then Alma cried unto the Lord, saying:",
+      "verse": "15:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 128.675,
+      "end": 130.208,
+      "type": "line",
+      "text": "O Lord our God,",
+      "verse": "15:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 130.388,
+      "end": 135.032,
+      "type": "line",
+      "text": "have mercy on this man, and heal him according to his faith which is in Christ.",
+      "verse": "15:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 135.712,
+      "end": 138.034,
+      "type": "line",
+      "text": "And when Alma had said these words,",
+      "verse": "15:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 138.214,
+      "end": 141.186,
+      "type": "line",
+      "text": "Zeezrom leaped upon his feet, and began to walk;",
+      "verse": "15:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 141.366,
+      "end": 145.36,
+      "type": "line",
+      "text": "and this was done to the great astonishment of all the people;",
+      "verse": "15:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 145.54,
+      "end": 149.766,
+      "type": "line",
+      "text": "and the knowledge of this went forth throughout all the land of Sidom.",
+      "verse": "15:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 150.446,
+      "end": 153.465,
+      "type": "line",
+      "text": "And Alma baptized Zeezrom unto the Lord;",
+      "verse": "15:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 153.645,
+      "end": 156.756,
+      "type": "line",
+      "text": "and he began from that time forth to preach unto the people.",
+      "verse": "15:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 157.436,
+      "end": 160.687,
+      "type": "line",
+      "text": "And Alma established a church in the land of Sidom,",
+      "verse": "15:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 160.867,
+      "end": 168.669,
+      "type": "line",
+      "text": "and consecrated priests and teachers in the land, to baptize unto the Lord whosoever were desirous to be baptized.",
+      "verse": "15:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 169.349,
+      "end": 171.81,
+      "type": "line",
+      "text": "And it came to pass that they were many;",
+      "verse": "15:14",
+      "lineIndex": 47
+    },
+    {
+      "start": 171.99,
+      "end": 175.612,
+      "type": "line",
+      "text": "for they did flock in from all the region round about Sidom,",
+      "verse": "15:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 175.792,
+      "end": 177.371,
+      "type": "line",
+      "text": "and were baptized.",
+      "verse": "15:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 178.051,
+      "end": 181.162,
+      "type": "line",
+      "text": "But as to the people that were in the land of Ammonihah,",
+      "verse": "15:15",
+      "lineIndex": 50
+    },
+    {
+      "start": 181.342,
+      "end": 185.475,
+      "type": "line",
+      "text": "they yet remained a hard-hearted and a stiffnecked people;",
+      "verse": "15:15",
+      "lineIndex": 51
+    },
+    {
+      "start": 185.655,
+      "end": 187.745,
+      "type": "line",
+      "text": "and they repented not of their sins,",
+      "verse": "15:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 187.925,
+      "end": 191.454,
+      "type": "line",
+      "text": "ascribing all the power of Alma and Amulek to the devil;",
+      "verse": "15:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 191.634,
+      "end": 194.281,
+      "type": "line",
+      "text": "for they were of the profession of Nehor,",
+      "verse": "15:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 194.461,
+      "end": 197.851,
+      "type": "line",
+      "text": "and did not believe in the repentance of their sins.",
+      "verse": "15:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 198.531,
+      "end": 201.132,
+      "type": "line",
+      "text": "And it came to pass that Alma and Amulek,",
+      "verse": "15:16",
+      "lineIndex": 57
+    },
+    {
+      "start": 201.312,
+      "end": 204.563,
+      "type": "line",
+      "text": "Amulek having forsaken all his gold, and silver,",
+      "verse": "15:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 204.743,
+      "end": 208.923,
+      "type": "line",
+      "text": "and his precious things, which were in the land of Ammonihah,",
+      "verse": "15:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 209.103,
+      "end": 210.821,
+      "type": "line",
+      "text": "for the word of God,",
+      "verse": "15:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 211.001,
+      "end": 214.205,
+      "type": "line",
+      "text": "he being rejected by those who were once his friends",
+      "verse": "15:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 214.385,
+      "end": 216.707,
+      "type": "line",
+      "text": "and also by his father and his kindred;",
+      "verse": "15:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 217.387,
+      "end": 222.913,
+      "type": "line",
+      "text": "Therefore, after Alma having established the church at Sidom, seeing a great check,",
+      "verse": "15:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 223.093,
+      "end": 227.691,
+      "type": "line",
+      "text": "yea, seeing that the people were checked as to the pride of their hearts,",
+      "verse": "15:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 227.871,
+      "end": 231.122,
+      "type": "line",
+      "text": "and began to humble themselves before God,",
+      "verse": "15:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 231.302,
+      "end": 239.475,
+      "type": "line",
+      "text": "and began to assemble themselves together at their sanctuaries to worship God before the altar, watching and praying continually,",
+      "verse": "15:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 239.655,
+      "end": 242.023,
+      "type": "line",
+      "text": "that they might be delivered from Satan,",
+      "verse": "15:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 242.203,
+      "end": 244.711,
+      "type": "line",
+      "text": "and from death, and from destruction\u2014",
+      "verse": "15:17",
+      "lineIndex": 68
+    },
+    {
+      "start": 245.391,
+      "end": 246.831,
+      "type": "line",
+      "text": "Now as I said,",
+      "verse": "15:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 247.011,
+      "end": 249.24,
+      "type": "line",
+      "text": "Alma having seen all these things,",
+      "verse": "15:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 249.42,
+      "end": 251.185,
+      "type": "line",
+      "text": "therefore he took Amulek",
+      "verse": "15:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 251.365,
+      "end": 253.919,
+      "type": "line",
+      "text": "and came over to the land of Zarahemla,",
+      "verse": "15:18",
+      "lineIndex": 72
+    },
+    {
+      "start": 254.099,
+      "end": 256.282,
+      "type": "line",
+      "text": "and took him to his own house,",
+      "verse": "15:18",
+      "lineIndex": 73
+    },
+    {
+      "start": 256.462,
+      "end": 259.759,
+      "type": "line",
+      "text": "and did administer unto him in his tribulations,",
+      "verse": "15:18",
+      "lineIndex": 74
+    },
+    {
+      "start": 259.939,
+      "end": 262.307,
+      "type": "line",
+      "text": "and strengthened him in the Lord.",
+      "verse": "15:18",
+      "lineIndex": 75
+    },
+    {
+      "start": 262.987,
+      "end": 267.77,
+      "type": "line",
+      "text": "And thus ended the tenth year of the reign of the judges over the people of Nephi.",
+      "verse": "15:19",
+      "lineIndex": 76
+    }
+  ]
+}
