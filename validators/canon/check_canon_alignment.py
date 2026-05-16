@@ -142,9 +142,27 @@ def audit_rule(rid: str, title: str, body: str) -> dict:
     # Concatenate ALL validator-file sources — closed-list constants may live in any
     src_concat = "\n".join((REPO / p).read_text(encoding="utf-8") for p in vpaths)
 
-    # Check closed-list presence (across all named validator files)
+    # Cross-rule reference resolution: a canon rule may cite a constant defined in
+    # ANOTHER rule's validator (e.g., R19 citing R17's GOVERNING_LEMMAS in an Exclusion).
+    # Such cross-rule citations are CORRECT canon prose, not DRIFT — collect the full
+    # codebase's constant inventory once and treat any constant found anywhere as resolved.
+    all_validators_src = "\n".join(
+        (REPO / p).read_text(encoding="utf-8")
+        for p in REPO.glob("validators/**/*.py")
+        if "__pycache__" not in str(p) and ".tx" not in str(p)
+    )
+
+    # Check closed-list presence (own validator first; fall through to cross-rule)
     canon_names = extract_closed_list_names(body)
-    missing_lists = [n for n in canon_names if n not in src_concat]
+    missing_lists = []
+    cross_rule = []
+    for n in canon_names:
+        if n in src_concat:
+            continue
+        if n in all_validators_src:
+            cross_rule.append(n)  # exists elsewhere in codebase — cross-rule reference, not DRIFT
+        else:
+            missing_lists.append(n)
 
     # Check deprels appear
     deprels = extract_signature_deprels(body)
@@ -153,12 +171,15 @@ def audit_rule(rid: str, title: str, body: str) -> dict:
     if missing_lists or missing_deprels:
         res["verdict"] = "DRIFT"
         if missing_lists:
-            res["evidence"].append(f"canon-named closed-list constants missing from validator(s): {missing_lists}")
+            res["evidence"].append(f"canon-named closed-list constants missing from codebase: {missing_lists}")
+        if cross_rule:
+            res["evidence"].append(f"cross-rule references (resolved elsewhere): {cross_rule}")
         if missing_deprels:
             res["evidence"].append(f"signature deprels missing from validator code: {sorted(missing_deprels)}")
     else:
         res["verdict"] = "ALIGNED"
-        res["evidence"].append(f"validator(s) at {vpaths}; {len(canon_names)} closed-list ref(s) present")
+        extra = f" + {len(cross_rule)} cross-rule ref(s) resolved" if cross_rule else ""
+        res["evidence"].append(f"validator(s) at {vpaths}; {len(canon_names) - len(cross_rule)} local + {len(cross_rule)} cross-rule closed-list ref(s) present{extra}")
     return res
 
 
