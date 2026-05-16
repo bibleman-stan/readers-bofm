@@ -190,38 +190,104 @@ def collect_review_cases(books: list[str]) -> list[dict]:
     return out
 
 
-def stratified_sample(cases: list[dict], n: int) -> list[dict]:
-    """Stratified sample by head_lemma. Quota: top-3 lemmas get ~5 each,
-    next 3-5 get ~2-3, fill remainder from long-tail."""
+def stratified_sample(cases: list[dict], n: int, by_subtype: bool = False) -> list[dict]:
+    """Stratified sample by head_lemma.
+
+    If by_subtype is False (default): pure head_lemma stratification — top-3
+    lemmas get ~5 each, next 3-5 get ~2-3, long-tail fills.
+
+    If by_subtype is True: stratify by (review_subtype, head_lemma). The
+    subtype-quota is proportional to the full-corpus distribution
+    (currently 70% same-line / 30% cross-line at 2026-05-16). Within each
+    subtype-bin, head_lemma stratification applies.
+
+    Dedupes on (book, sent_id, head_line) to avoid the resolver-prototype
+    issue where the validator emitted multiple findings per sent_id with
+    the same head_line (codified surfacing: 2026-05-16 reply at
+    directives/replies/2026-05-16-1700-resolve-review-required-prototype.md).
+    """
+    # Dedupe pass
+    seen: set[tuple] = set()
+    unique: list[dict] = []
+    for c in cases:
+        key = (c["book"], c.get("sent_id"), c["head_line"])
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(c)
+    cases = unique
+
+    if not by_subtype:
+        return _stratify_by_lemma(cases, n)
+
+    same = [c for c in cases if c.get("review_subtype") == "same-line"]
+    cross = [c for c in cases if c.get("review_subtype") == "cross-line"]
+    # Proportional quota matching corpus distribution
+    total = len(same) + len(cross)
+    if total == 0:
+        return []
+    same_quota = round(n * (len(same) / total))
+    cross_quota = n - same_quota
+    out = _stratify_by_lemma(same, same_quota) + _stratify_by_lemma(cross, cross_quota)
+    return out[:n]
+
+
+def _stratify_by_lemma(cases: list[dict], n: int) -> list[dict]:
+    """Internal: head_lemma stratification with top-tier quota.
+
+    Within each lemma's bucket, picks cases via round-robin across books to
+    avoid the 1nephi-first ordering bias of a naive sort-by-(book, sent_id)
+    slice. Cases-per-lemma is unchanged; just the per-lemma selection rotates
+    through the books represented in the bucket so the final sample spans
+    1nephi → Moroni rather than concentrating in early books.
+    """
+    if not cases or n <= 0:
+        return []
     by_lemma: dict[str, list[dict]] = defaultdict(list)
     for c in cases:
         by_lemma[c["head_lemma"]].append(c)
-
     lemma_counts = sorted(
         ((k, len(v)) for k, v in by_lemma.items()), key=lambda x: -x[1]
     )
 
-    out: list[dict] = []
-    quota_per_top = max(3, n // 6)         # top-3 lemmas
-    quota_per_mid = max(2, n // 10)        # next ~5 lemmas
-    quota_per_tail = 1
+    def round_robin_by_book(bucket: list[dict], k: int) -> list[dict]:
+        # Group by book, then interleave one-per-book until k filled
+        by_book: dict[str, list[dict]] = defaultdict(list)
+        for c in bucket:
+            by_book[c["book"]].append(c)
+        # Sort each book's cases for stable selection within the book
+        for book in by_book:
+            by_book[book].sort(key=lambda c: int(c.get("sent_id", 0)))
+        # Round-robin: cycle through books in a stable order
+        book_order = sorted(by_book.keys())
+        picked: list[dict] = []
+        idx = 0
+        while len(picked) < k:
+            progress = False
+            for book in book_order:
+                if idx < len(by_book[book]):
+                    picked.append(by_book[book][idx])
+                    progress = True
+                    if len(picked) >= k:
+                        break
+            if not progress:
+                break
+            idx += 1
+        return picked
 
-    # Pick a deterministic slice from each lemma's list (first N, sorted by
-    # book + sent_id for stability).
+    out: list[dict] = []
+    quota_per_top = max(3, n // 6)
+    quota_per_mid = max(2, n // 10)
     for i, (lemma, _) in enumerate(lemma_counts):
         if i < 3:
             quota = quota_per_top
         elif i < 8:
             quota = quota_per_mid
         else:
-            quota = quota_per_tail
-        sorted_cases = sorted(
-            by_lemma[lemma], key=lambda c: (c["book"], int(c.get("sent_id", 0)))
-        )
-        out.extend(sorted_cases[:quota])
+            quota = 1
+        out.extend(round_robin_by_book(by_lemma[lemma], quota))
         if len(out) >= n:
             break
-
     return out[:n]
 
 
@@ -356,7 +422,9 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--sample", type=int, default=25)
     ap.add_argument(
-        "--sample-strategy", choices=["stratified", "random"], default="stratified"
+        "--sample-strategy",
+        choices=["stratified", "stratified-by-subtype", "random"],
+        default="stratified",
     )
     ap.add_argument("--dump-prompts", type=str, help="Write JSONL prompts to FILE")
     ap.add_argument(
@@ -380,7 +448,9 @@ def main() -> int:
 
     # Step 2: sample
     if args.sample_strategy == "stratified":
-        sampled = stratified_sample(cases, args.sample)
+        sampled = stratified_sample(cases, args.sample, by_subtype=False)
+    elif args.sample_strategy == "stratified-by-subtype":
+        sampled = stratified_sample(cases, args.sample, by_subtype=True)
     else:
         import random
         random.seed(20260516)
@@ -422,6 +492,7 @@ def main() -> int:
                     "book": c["book"],
                     "verse_ref": c["verse_ref"],
                     "head_lemma": c["head_lemma"],
+                    "review_subtype": c.get("review_subtype"),
                     "prompt": c["prompt"],
                     "system": SYSTEM_PROMPT,
                 }
