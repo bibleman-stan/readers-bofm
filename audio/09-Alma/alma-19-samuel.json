@@ -1,0 +1,1344 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 19,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 606.164,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.483,
+      "type": "line",
+      "text": "And it came to pass that after two days and two nights",
+      "verse": "19:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.663,
+      "end": 7.192,
+      "type": "line",
+      "text": "they were about to take his body and lay it in a sepulchre,",
+      "verse": "19:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.372,
+      "end": 11.087,
+      "type": "line",
+      "text": "which they had made for the purpose of burying their dead.",
+      "verse": "19:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.767,
+      "end": 14.786,
+      "type": "line",
+      "text": "Now the queen having heard of the fame of Ammon,",
+      "verse": "19:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 14.966,
+      "end": 18.867,
+      "type": "line",
+      "text": "therefore she sent and desired that he should come in unto her.",
+      "verse": "19:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.547,
+      "end": 22.705,
+      "type": "line",
+      "text": "And it came to pass that Ammon did as he was commanded,",
+      "verse": "19:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 22.885,
+      "end": 24.696,
+      "type": "line",
+      "text": "and went in unto the queen,",
+      "verse": "19:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 24.876,
+      "end": 28.127,
+      "type": "line",
+      "text": "and desired to know what she would that he should do.",
+      "verse": "19:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 28.807,
+      "end": 30.34,
+      "type": "line",
+      "text": "And she said unto him:",
+      "verse": "19:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 30.52,
+      "end": 33.353,
+      "type": "line",
+      "text": "The servants of my husband have made it known unto me",
+      "verse": "19:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 33.533,
+      "end": 36.273,
+      "type": "line",
+      "text": "that thou art a prophet of a holy God,",
+      "verse": "19:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 36.453,
+      "end": 40.168,
+      "type": "line",
+      "text": "and that thou hast power to do many mighty works in his name;",
+      "verse": "19:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 40.848,
+      "end": 42.659,
+      "type": "line",
+      "text": "Therefore, if this is the case,",
+      "verse": "19:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 42.839,
+      "end": 45.765,
+      "type": "line",
+      "text": "I would that ye should go in and see my husband,",
+      "verse": "19:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 45.945,
+      "end": 51.471,
+      "type": "line",
+      "text": "for he has been laid upon his bed for the space of two days and two nights;",
+      "verse": "19:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 51.651,
+      "end": 53.927,
+      "type": "line",
+      "text": "and some say that he is not dead,",
+      "verse": "19:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 54.107,
+      "end": 56.615,
+      "type": "line",
+      "text": "but others say that he is dead",
+      "verse": "19:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 56.795,
+      "end": 58.235,
+      "type": "line",
+      "text": "and that he stinketh,",
+      "verse": "19:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 58.415,
+      "end": 61.712,
+      "type": "line",
+      "text": "and that he ought to be placed in the sepulchre;",
+      "verse": "19:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 61.892,
+      "end": 64.446,
+      "type": "line",
+      "text": "but as for myself, to me he doth not stink.",
+      "verse": "19:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 65.126,
+      "end": 67.402,
+      "type": "line",
+      "text": "Now, this was what Ammon desired,",
+      "verse": "19:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 67.582,
+      "end": 71.251,
+      "type": "line",
+      "text": "for he knew that king Lamoni was under the power of God;",
+      "verse": "19:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 71.431,
+      "end": 76.168,
+      "type": "line",
+      "text": "he knew that the dark veil of unbelief was being cast away from his mind,",
+      "verse": "19:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 76.348,
+      "end": 81.781,
+      "type": "line",
+      "text": "and the light which did light up his mind, which was the light of the glory of God,",
+      "verse": "19:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 81.961,
+      "end": 84.98,
+      "type": "line",
+      "text": "which was a marvelous light of his goodness\u2014",
+      "verse": "19:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 85.16,
+      "end": 88.457,
+      "type": "line",
+      "text": "yea, this light had infused such joy into his soul,",
+      "verse": "19:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 88.637,
+      "end": 91.191,
+      "type": "line",
+      "text": "the cloud of darkness having been dispelled,",
+      "verse": "19:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 91.371,
+      "end": 96.247,
+      "type": "line",
+      "text": "and that the light of everlasting life was lit up in his soul,",
+      "verse": "19:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 96.427,
+      "end": 100.142,
+      "type": "line",
+      "text": "yea, he knew that this had overcome his natural frame,",
+      "verse": "19:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 100.322,
+      "end": 102.272,
+      "type": "line",
+      "text": "and he was carried away in God\u2014",
+      "verse": "19:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 102.952,
+      "end": 106.342,
+      "type": "line",
+      "text": "Therefore, what the queen desired of him was his only desire.",
+      "verse": "19:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 106.522,
+      "end": 108.983,
+      "type": "line",
+      "text": "Therefore, he went in to see the king",
+      "verse": "19:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 109.163,
+      "end": 111.717,
+      "type": "line",
+      "text": "according as the queen had desired him;",
+      "verse": "19:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 111.897,
+      "end": 113.383,
+      "type": "line",
+      "text": "and he saw the king,",
+      "verse": "19:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 113.563,
+      "end": 115.746,
+      "type": "line",
+      "text": "and he knew that he was not dead.",
+      "verse": "19:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 116.426,
+      "end": 118.051,
+      "type": "line",
+      "text": "And he said unto the queen:",
+      "verse": "19:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 118.231,
+      "end": 120.785,
+      "type": "line",
+      "text": "He is not dead, but he sleepeth in God,",
+      "verse": "19:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 120.965,
+      "end": 123.194,
+      "type": "line",
+      "text": "and on the morrow he shall rise again;",
+      "verse": "19:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 123.374,
+      "end": 124.953,
+      "type": "line",
+      "text": "therefore bury him not.",
+      "verse": "19:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 125.633,
+      "end": 127.258,
+      "type": "line",
+      "text": "And Ammon said unto her:",
+      "verse": "19:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 127.438,
+      "end": 129.11,
+      "type": "line",
+      "text": "Believest thou this?",
+      "verse": "19:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 129.29,
+      "end": 130.823,
+      "type": "line",
+      "text": "And she said unto him:",
+      "verse": "19:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 131.003,
+      "end": 133.557,
+      "type": "line",
+      "text": "I have had no witness save thy word,",
+      "verse": "19:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 133.737,
+      "end": 135.641,
+      "type": "line",
+      "text": "and the word of our servants;",
+      "verse": "19:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 135.821,
+      "end": 139.954,
+      "type": "line",
+      "text": "nevertheless I believe that it shall be according as thou hast said.",
+      "verse": "19:9",
+      "lineIndex": 45
+    },
+    {
+      "start": 140.634,
+      "end": 142.259,
+      "type": "line",
+      "text": "And Ammon said unto her:",
+      "verse": "19:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 142.439,
+      "end": 145.55,
+      "type": "line",
+      "text": "Blessed art thou because of thy exceeding faith;",
+      "verse": "19:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 145.73,
+      "end": 147.448,
+      "type": "line",
+      "text": "I say unto thee, woman,",
+      "verse": "19:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 147.628,
+      "end": 152.365,
+      "type": "line",
+      "text": "there has not been such great faith among all the people of the Nephites.",
+      "verse": "19:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 153.045,
+      "end": 160.475,
+      "type": "line",
+      "text": "And it came to pass that she watched over the bed of her husband, from that time even until that time on the morrow",
+      "verse": "19:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 160.655,
+      "end": 163.72,
+      "type": "line",
+      "text": "which Ammon had appointed that he should rise.",
+      "verse": "19:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 164.4,
+      "end": 169.044,
+      "type": "line",
+      "text": "And it came to pass that he arose, according to the words of Ammon;",
+      "verse": "19:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 169.224,
+      "end": 172.661,
+      "type": "line",
+      "text": "and as he arose, he stretched forth his hand unto the woman,",
+      "verse": "19:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 172.841,
+      "end": 174.002,
+      "type": "line",
+      "text": "and said:",
+      "verse": "19:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 174.182,
+      "end": 177.247,
+      "type": "line",
+      "text": "Blessed be the name of God, and blessed art thou.",
+      "verse": "19:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 177.927,
+      "end": 179.877,
+      "type": "line",
+      "text": "For as sure as thou livest,",
+      "verse": "19:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 180.057,
+      "end": 182.425,
+      "type": "line",
+      "text": "behold, I have seen my Redeemer;",
+      "verse": "19:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 182.605,
+      "end": 185.624,
+      "type": "line",
+      "text": "and he shall come forth, and be born of a woman,",
+      "verse": "19:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 185.804,
+      "end": 189.101,
+      "type": "line",
+      "text": "and he shall redeem all mankind who believe on his name.",
+      "verse": "19:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 189.281,
+      "end": 194.157,
+      "type": "line",
+      "text": "Now, when he had said these words, his heart was swollen within him,",
+      "verse": "19:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 194.337,
+      "end": 196.473,
+      "type": "line",
+      "text": "and he sunk again with joy;",
+      "verse": "19:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 196.653,
+      "end": 200.415,
+      "type": "line",
+      "text": "and the queen also sunk down, being overpowered by the Spirit.",
+      "verse": "19:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 201.095,
+      "end": 207.318,
+      "type": "line",
+      "text": "Now Ammon seeing the Spirit of the Lord poured out according to his prayers upon the Lamanites, his brethren,",
+      "verse": "19:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 207.498,
+      "end": 211.585,
+      "type": "line",
+      "text": "who had been the cause of so much mourning among the Nephites,",
+      "verse": "19:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 211.765,
+      "end": 217.013,
+      "type": "line",
+      "text": "or among all the people of God because of their iniquities and their traditions,",
+      "verse": "19:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 217.193,
+      "end": 218.865,
+      "type": "line",
+      "text": "he fell upon his knees,",
+      "verse": "19:14",
+      "lineIndex": 67
+    },
+    {
+      "start": 219.045,
+      "end": 221.321,
+      "type": "line",
+      "text": "and began to pour out his soul",
+      "verse": "19:14",
+      "lineIndex": 68
+    },
+    {
+      "start": 221.501,
+      "end": 225.82,
+      "type": "line",
+      "text": "in prayer and thanksgiving to God for what he had done for his brethren;",
+      "verse": "19:14",
+      "lineIndex": 69
+    },
+    {
+      "start": 226.0,
+      "end": 228.368,
+      "type": "line",
+      "text": "and he was also overpowered with joy;",
+      "verse": "19:14",
+      "lineIndex": 70
+    },
+    {
+      "start": 228.548,
+      "end": 231.381,
+      "type": "line",
+      "text": "and thus they all three had sunk to the earth.",
+      "verse": "19:14",
+      "lineIndex": 71
+    },
+    {
+      "start": 232.061,
+      "end": 236.333,
+      "type": "line",
+      "text": "Now, when the servants of the king had seen that they had fallen,",
+      "verse": "19:15",
+      "lineIndex": 72
+    },
+    {
+      "start": 236.513,
+      "end": 238.835,
+      "type": "line",
+      "text": "they also began to cry unto God,",
+      "verse": "19:15",
+      "lineIndex": 73
+    },
+    {
+      "start": 239.015,
+      "end": 242.126,
+      "type": "line",
+      "text": "for the fear of the Lord had come upon them also,",
+      "verse": "19:15",
+      "lineIndex": 74
+    },
+    {
+      "start": 242.306,
+      "end": 249.597,
+      "type": "line",
+      "text": "for it was they who had stood before the king and testified unto him concerning the great power of Ammon.",
+      "verse": "19:15",
+      "lineIndex": 75
+    },
+    {
+      "start": 250.277,
+      "end": 255.014,
+      "type": "line",
+      "text": "And it came to pass that they did call on the name of the Lord, in their might,",
+      "verse": "19:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 255.194,
+      "end": 257.888,
+      "type": "line",
+      "text": "even until they had all fallen to the earth,",
+      "verse": "19:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 258.068,
+      "end": 260.947,
+      "type": "line",
+      "text": "save it were one of the Lamanitish women,",
+      "verse": "19:16",
+      "lineIndex": 78
+    },
+    {
+      "start": 261.127,
+      "end": 262.985,
+      "type": "line",
+      "text": "whose name was Abish,",
+      "verse": "19:16",
+      "lineIndex": 79
+    },
+    {
+      "start": 263.165,
+      "end": 269.899,
+      "type": "line",
+      "text": "she having been converted unto the Lord for many years, on account of a remarkable vision of her father\u2014",
+      "verse": "19:16",
+      "lineIndex": 80
+    },
+    {
+      "start": 270.579,
+      "end": 273.04,
+      "type": "line",
+      "text": "Thus, having been converted to the Lord,",
+      "verse": "19:17",
+      "lineIndex": 81
+    },
+    {
+      "start": 273.22,
+      "end": 275.17,
+      "type": "line",
+      "text": "and never having made it known,",
+      "verse": "19:17",
+      "lineIndex": 82
+    },
+    {
+      "start": 275.35,
+      "end": 280.551,
+      "type": "line",
+      "text": "therefore, when she saw that all the servants of Lamoni had fallen to the earth,",
+      "verse": "19:17",
+      "lineIndex": 83
+    },
+    {
+      "start": 280.731,
+      "end": 286.49,
+      "type": "line",
+      "text": "and also her mistress, the queen, and the king, and Ammon lay prostrate upon the earth,",
+      "verse": "19:17",
+      "lineIndex": 84
+    },
+    {
+      "start": 286.67,
+      "end": 288.992,
+      "type": "line",
+      "text": "she knew that it was the power of God;",
+      "verse": "19:17",
+      "lineIndex": 85
+    },
+    {
+      "start": 289.172,
+      "end": 291.448,
+      "type": "line",
+      "text": "and supposing that this opportunity,",
+      "verse": "19:17",
+      "lineIndex": 86
+    },
+    {
+      "start": 291.628,
+      "end": 295.575,
+      "type": "line",
+      "text": "by making known unto the people what had happened among them,",
+      "verse": "19:17",
+      "lineIndex": 87
+    },
+    {
+      "start": 295.755,
+      "end": 297.798,
+      "type": "line",
+      "text": "that by beholding this scene",
+      "verse": "19:17",
+      "lineIndex": 88
+    },
+    {
+      "start": 297.978,
+      "end": 300.857,
+      "type": "line",
+      "text": "it would cause them to believe in the power of God,",
+      "verse": "19:17",
+      "lineIndex": 89
+    },
+    {
+      "start": 301.037,
+      "end": 306.053,
+      "type": "line",
+      "text": "therefore she ran forth from house to house, making it known unto the people.",
+      "verse": "19:17",
+      "lineIndex": 90
+    },
+    {
+      "start": 306.733,
+      "end": 311.423,
+      "type": "line",
+      "text": "And they began to assemble themselves together unto the house of the king.",
+      "verse": "19:18",
+      "lineIndex": 91
+    },
+    {
+      "start": 311.603,
+      "end": 313.414,
+      "type": "line",
+      "text": "And there came a multitude,",
+      "verse": "19:18",
+      "lineIndex": 92
+    },
+    {
+      "start": 313.594,
+      "end": 320.792,
+      "type": "line",
+      "text": "and to their astonishment, they beheld the king, and the queen, and their servants prostrate upon the earth,",
+      "verse": "19:18",
+      "lineIndex": 93
+    },
+    {
+      "start": 320.972,
+      "end": 323.712,
+      "type": "line",
+      "text": "and they all lay there as though they were dead;",
+      "verse": "19:18",
+      "lineIndex": 94
+    },
+    {
+      "start": 323.892,
+      "end": 325.75,
+      "type": "line",
+      "text": "and they also saw Ammon,",
+      "verse": "19:18",
+      "lineIndex": 95
+    },
+    {
+      "start": 325.93,
+      "end": 327.695,
+      "type": "line",
+      "text": "and behold, he was a Nephite.",
+      "verse": "19:18",
+      "lineIndex": 96
+    },
+    {
+      "start": 328.375,
+      "end": 331.672,
+      "type": "line",
+      "text": "And now the people began to murmur among themselves;",
+      "verse": "19:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 331.852,
+      "end": 335.428,
+      "type": "line",
+      "text": "some saying that it was a great evil that had come upon them,",
+      "verse": "19:19",
+      "lineIndex": 98
+    },
+    {
+      "start": 335.608,
+      "end": 337.791,
+      "type": "line",
+      "text": "or upon the king and his house,",
+      "verse": "19:19",
+      "lineIndex": 99
+    },
+    {
+      "start": 337.971,
+      "end": 341.965,
+      "type": "line",
+      "text": "because he had suffered that the Nephite should remain in the land.",
+      "verse": "19:19",
+      "lineIndex": 100
+    },
+    {
+      "start": 342.645,
+      "end": 345.06,
+      "type": "line",
+      "text": "But others rebuked them, saying:",
+      "verse": "19:20",
+      "lineIndex": 101
+    },
+    {
+      "start": 345.24,
+      "end": 348.259,
+      "type": "line",
+      "text": "The king hath brought this evil upon his house,",
+      "verse": "19:20",
+      "lineIndex": 102
+    },
+    {
+      "start": 348.439,
+      "end": 350.204,
+      "type": "line",
+      "text": "because he slew his servants",
+      "verse": "19:20",
+      "lineIndex": 103
+    },
+    {
+      "start": 350.384,
+      "end": 354.192,
+      "type": "line",
+      "text": "who had had their flocks scattered at the waters of Sebus.",
+      "verse": "19:20",
+      "lineIndex": 104
+    },
+    {
+      "start": 354.872,
+      "end": 363.371,
+      "type": "line",
+      "text": "And they were also rebuked by those men who had stood at the waters of Sebus and scattered the flocks which belonged to the king,",
+      "verse": "19:21",
+      "lineIndex": 105
+    },
+    {
+      "start": 363.551,
+      "end": 373.025,
+      "type": "line",
+      "text": "for they were angry with Ammon because of the number which he had slain of their brethren at the waters of Sebus, while defending the flocks of the king.",
+      "verse": "19:21",
+      "lineIndex": 106
+    },
+    {
+      "start": 373.705,
+      "end": 377.792,
+      "type": "line",
+      "text": "Now, one of them, whose brother had been slain with the sword of Ammon,",
+      "verse": "19:22",
+      "lineIndex": 107
+    },
+    {
+      "start": 377.972,
+      "end": 381.827,
+      "type": "line",
+      "text": "being exceedingly angry with Ammon, drew his sword and went forth",
+      "verse": "19:22",
+      "lineIndex": 108
+    },
+    {
+      "start": 382.007,
+      "end": 385.444,
+      "type": "line",
+      "text": "that he might let it fall upon Ammon, to slay him;",
+      "verse": "19:22",
+      "lineIndex": 109
+    },
+    {
+      "start": 385.624,
+      "end": 389.386,
+      "type": "line",
+      "text": "and as he lifted the sword to smite him, behold, he fell dead.",
+      "verse": "19:22",
+      "lineIndex": 110
+    },
+    {
+      "start": 390.066,
+      "end": 392.62,
+      "type": "line",
+      "text": "Now we see that Ammon could not be slain,",
+      "verse": "19:23",
+      "lineIndex": 111
+    },
+    {
+      "start": 392.8,
+      "end": 395.958,
+      "type": "line",
+      "text": "for the Lord had said unto Mosiah, his father:",
+      "verse": "19:23",
+      "lineIndex": 112
+    },
+    {
+      "start": 396.138,
+      "end": 400.503,
+      "type": "line",
+      "text": "I will spare him, and it shall be unto him according to thy faith\u2014",
+      "verse": "19:23",
+      "lineIndex": 113
+    },
+    {
+      "start": 400.683,
+      "end": 403.237,
+      "type": "line",
+      "text": "therefore, Mosiah trusted him unto the Lord.",
+      "verse": "19:23",
+      "lineIndex": 114
+    },
+    {
+      "start": 403.917,
+      "end": 411.812,
+      "type": "line",
+      "text": "And it came to pass that when the multitude beheld that the man had fallen dead, who lifted the sword to slay Ammon,",
+      "verse": "19:24",
+      "lineIndex": 115
+    },
+    {
+      "start": 411.992,
+      "end": 413.942,
+      "type": "line",
+      "text": "fear came upon them all,",
+      "verse": "19:24",
+      "lineIndex": 116
+    },
+    {
+      "start": 414.122,
+      "end": 417.326,
+      "type": "line",
+      "text": "and they durst not put forth their hands to touch him",
+      "verse": "19:24",
+      "lineIndex": 117
+    },
+    {
+      "start": 417.506,
+      "end": 419.689,
+      "type": "line",
+      "text": "or any of those who had fallen;",
+      "verse": "19:24",
+      "lineIndex": 118
+    },
+    {
+      "start": 419.869,
+      "end": 422.655,
+      "type": "line",
+      "text": "and they began to marvel again among themselves",
+      "verse": "19:24",
+      "lineIndex": 119
+    },
+    {
+      "start": 422.835,
+      "end": 425.807,
+      "type": "line",
+      "text": "what could be the cause of this great power,",
+      "verse": "19:24",
+      "lineIndex": 120
+    },
+    {
+      "start": 425.987,
+      "end": 428.216,
+      "type": "line",
+      "text": "or what all these things could mean.",
+      "verse": "19:24",
+      "lineIndex": 121
+    },
+    {
+      "start": 428.896,
+      "end": 434.887,
+      "type": "line",
+      "text": "And it came to pass that there were many among them who said that Ammon was the Great Spirit,",
+      "verse": "19:25",
+      "lineIndex": 123
+    },
+    {
+      "start": 435.067,
+      "end": 438.178,
+      "type": "line",
+      "text": "and others said he was sent by the Great Spirit;",
+      "verse": "19:25",
+      "lineIndex": 124
+    },
+    {
+      "start": 438.858,
+      "end": 445.452,
+      "type": "line",
+      "text": "But others rebuked them all, saying that he was a monster, who had been sent from the Nephites to torment them.",
+      "verse": "19:26",
+      "lineIndex": 125
+    },
+    {
+      "start": 446.132,
+      "end": 452.68,
+      "type": "line",
+      "text": "And there were some who said that Ammon was sent by the Great Spirit to afflict them because of their iniquities;",
+      "verse": "19:27",
+      "lineIndex": 126
+    },
+    {
+      "start": 452.86,
+      "end": 457.736,
+      "type": "line",
+      "text": "and that it was the Great Spirit that had always attended the Nephites,",
+      "verse": "19:27",
+      "lineIndex": 127
+    },
+    {
+      "start": 457.916,
+      "end": 460.888,
+      "type": "line",
+      "text": "who had ever delivered them out of their hands;",
+      "verse": "19:27",
+      "lineIndex": 128
+    },
+    {
+      "start": 461.068,
+      "end": 467.941,
+      "type": "line",
+      "text": "and they said that it was this Great Spirit who had destroyed so many of their brethren, the Lamanites.",
+      "verse": "19:27",
+      "lineIndex": 129
+    },
+    {
+      "start": 468.621,
+      "end": 472.336,
+      "type": "line",
+      "text": "And thus the contention began to be exceedingly sharp among them.",
+      "verse": "19:28",
+      "lineIndex": 130
+    },
+    {
+      "start": 472.516,
+      "end": 474.884,
+      "type": "line",
+      "text": "And while they were thus contending,",
+      "verse": "19:28",
+      "lineIndex": 131
+    },
+    {
+      "start": 475.064,
+      "end": 479.847,
+      "type": "line",
+      "text": "the woman servant who had caused the multitude to be gathered together came,",
+      "verse": "19:28",
+      "lineIndex": 132
+    },
+    {
+      "start": 480.027,
+      "end": 484.439,
+      "type": "line",
+      "text": "and when she saw the contention which was among the multitude",
+      "verse": "19:28",
+      "lineIndex": 133
+    },
+    {
+      "start": 484.619,
+      "end": 487.823,
+      "type": "line",
+      "text": "she was exceedingly sorrowful, even unto tears.",
+      "verse": "19:28",
+      "lineIndex": 134
+    },
+    {
+      "start": 488.503,
+      "end": 492.636,
+      "type": "line",
+      "text": "And it came to pass that she went and took the queen by the hand,",
+      "verse": "19:29",
+      "lineIndex": 135
+    },
+    {
+      "start": 492.816,
+      "end": 495.463,
+      "type": "line",
+      "text": "perhaps she might raise her from the ground;",
+      "verse": "19:29",
+      "lineIndex": 136
+    },
+    {
+      "start": 495.643,
+      "end": 497.593,
+      "type": "line",
+      "text": "and as soon as she touched her hand",
+      "verse": "19:29",
+      "lineIndex": 137
+    },
+    {
+      "start": 497.773,
+      "end": 498.934,
+      "type": "line",
+      "text": "she arose",
+      "verse": "19:29",
+      "lineIndex": 138
+    },
+    {
+      "start": 499.114,
+      "end": 500.925,
+      "type": "line",
+      "text": "and stood upon her feet,",
+      "verse": "19:29",
+      "lineIndex": 139
+    },
+    {
+      "start": 501.105,
+      "end": 503.241,
+      "type": "line",
+      "text": "and cried with a loud voice, saying:",
+      "verse": "19:29",
+      "lineIndex": 140
+    },
+    {
+      "start": 503.421,
+      "end": 506.997,
+      "type": "line",
+      "text": "O blessed Jesus, who has saved me from an awful hell!",
+      "verse": "19:29",
+      "lineIndex": 141
+    },
+    {
+      "start": 507.177,
+      "end": 509.824,
+      "type": "line",
+      "text": "O blessed God, have mercy on this people!",
+      "verse": "19:29",
+      "lineIndex": 142
+    },
+    {
+      "start": 510.504,
+      "end": 517.795,
+      "type": "line",
+      "text": "And when she had said this, she clasped her hands, being filled with joy, speaking many words which were not understood;",
+      "verse": "19:30",
+      "lineIndex": 143
+    },
+    {
+      "start": 517.975,
+      "end": 523.641,
+      "type": "line",
+      "text": "and when she had done this, she took the king, Lamoni, by the hand,",
+      "verse": "19:30",
+      "lineIndex": 144
+    },
+    {
+      "start": 523.821,
+      "end": 526.515,
+      "type": "line",
+      "text": "and behold he arose and stood upon his feet.",
+      "verse": "19:30",
+      "lineIndex": 145
+    },
+    {
+      "start": 527.195,
+      "end": 533.279,
+      "type": "line",
+      "text": "And he, immediately, seeing the contention among his people, went forth and began to rebuke them,",
+      "verse": "19:31",
+      "lineIndex": 146
+    },
+    {
+      "start": 533.459,
+      "end": 538.149,
+      "type": "line",
+      "text": "and to teach them the words which he had heard from the mouth of Ammon;",
+      "verse": "19:31",
+      "lineIndex": 147
+    },
+    {
+      "start": 538.329,
+      "end": 540.93,
+      "type": "line",
+      "text": "and as many as heard his words believed,",
+      "verse": "19:31",
+      "lineIndex": 148
+    },
+    {
+      "start": 541.11,
+      "end": 543.339,
+      "type": "line",
+      "text": "and were converted unto the Lord.",
+      "verse": "19:31",
+      "lineIndex": 149
+    },
+    {
+      "start": 544.019,
+      "end": 547.734,
+      "type": "line",
+      "text": "But there were many among them who would not hear his words;",
+      "verse": "19:32",
+      "lineIndex": 150
+    },
+    {
+      "start": 547.914,
+      "end": 549.586,
+      "type": "line",
+      "text": "therefore they went their way.",
+      "verse": "19:32",
+      "lineIndex": 151
+    },
+    {
+      "start": 550.266,
+      "end": 552.867,
+      "type": "line",
+      "text": "And it came to pass that when Ammon arose",
+      "verse": "19:33",
+      "lineIndex": 152
+    },
+    {
+      "start": 553.047,
+      "end": 555.276,
+      "type": "line",
+      "text": "he also administered unto them,",
+      "verse": "19:33",
+      "lineIndex": 153
+    },
+    {
+      "start": 555.456,
+      "end": 558.103,
+      "type": "line",
+      "text": "and also did all the servants of Lamoni;",
+      "verse": "19:33",
+      "lineIndex": 154
+    },
+    {
+      "start": 558.283,
+      "end": 564.46,
+      "type": "line",
+      "text": "and they did all declare unto the people the selfsame thing\u2014 that their hearts had been changed;",
+      "verse": "19:33",
+      "lineIndex": 155
+    },
+    {
+      "start": 564.64,
+      "end": 567.055,
+      "type": "line",
+      "text": "that they had no more desire to do evil.",
+      "verse": "19:33",
+      "lineIndex": 156
+    },
+    {
+      "start": 567.735,
+      "end": 570.336,
+      "type": "line",
+      "text": "And behold, many did declare unto the people",
+      "verse": "19:34",
+      "lineIndex": 157
+    },
+    {
+      "start": 570.516,
+      "end": 573.767,
+      "type": "line",
+      "text": "that they had seen angels and had conversed with them;",
+      "verse": "19:34",
+      "lineIndex": 158
+    },
+    {
+      "start": 573.947,
+      "end": 578.312,
+      "type": "line",
+      "text": "and thus they had told them things of God, and of his righteousness.",
+      "verse": "19:34",
+      "lineIndex": 159
+    },
+    {
+      "start": 578.992,
+      "end": 583.264,
+      "type": "line",
+      "text": "And it came to pass that there were many that did believe in their words;",
+      "verse": "19:35",
+      "lineIndex": 160
+    },
+    {
+      "start": 583.444,
+      "end": 585.998,
+      "type": "line",
+      "text": "and as many as did believe were baptized;",
+      "verse": "19:35",
+      "lineIndex": 161
+    },
+    {
+      "start": 586.178,
+      "end": 588.546,
+      "type": "line",
+      "text": "and they became a righteous people,",
+      "verse": "19:35",
+      "lineIndex": 162
+    },
+    {
+      "start": 588.726,
+      "end": 591.28,
+      "type": "line",
+      "text": "and they did establish a church among them.",
+      "verse": "19:35",
+      "lineIndex": 163
+    },
+    {
+      "start": 591.96,
+      "end": 595.768,
+      "type": "line",
+      "text": "And thus the work of the Lord did commence among the Lamanites;",
+      "verse": "19:36",
+      "lineIndex": 164
+    },
+    {
+      "start": 595.948,
+      "end": 599.524,
+      "type": "line",
+      "text": "thus the Lord did begin to pour out his Spirit upon them;",
+      "verse": "19:36",
+      "lineIndex": 165
+    },
+    {
+      "start": 599.704,
+      "end": 602.815,
+      "type": "line",
+      "text": "and we see that his arm is extended to all people",
+      "verse": "19:36",
+      "lineIndex": 166
+    },
+    {
+      "start": 602.995,
+      "end": 605.503,
+      "type": "line",
+      "text": "who will repent and believe on his name.",
+      "verse": "19:36",
+      "lineIndex": 167
+    }
+  ]
+}
