@@ -1,0 +1,864 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 48,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 412.61,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.505,
+      "type": "line",
+      "text": "And now it came to pass that, as soon as Amalickiah had obtained the kingdom",
+      "verse": "48:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.685,
+      "end": 9.283,
+      "type": "line",
+      "text": "he began to inspire the hearts of the Lamanites against the people of Nephi;",
+      "verse": "48:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.463,
+      "end": 15.593,
+      "type": "line",
+      "text": "yea, he did appoint men to speak unto the Lamanites from their towers, against the Nephites.",
+      "verse": "48:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 16.273,
+      "end": 19.71,
+      "type": "line",
+      "text": "And thus he did inspire their hearts against the Nephites,",
+      "verse": "48:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.89,
+      "end": 24.906,
+      "type": "line",
+      "text": "insomuch that in the latter end of the nineteenth year of the reign of the judges,",
+      "verse": "48:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 25.086,
+      "end": 27.733,
+      "type": "line",
+      "text": "he having accomplished his designs thus far,",
+      "verse": "48:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 27.913,
+      "end": 31.164,
+      "type": "line",
+      "text": "yea, having been made king over the Lamanites,",
+      "verse": "48:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 31.344,
+      "end": 34.223,
+      "type": "line",
+      "text": "he sought also to reign over all the land,",
+      "verse": "48:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 34.403,
+      "end": 37.143,
+      "type": "line",
+      "text": "yea, and all the people who were in the land,",
+      "verse": "48:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 37.323,
+      "end": 39.645,
+      "type": "line",
+      "text": "the Nephites as well as the Lamanites.",
+      "verse": "48:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 40.325,
+      "end": 42.879,
+      "type": "line",
+      "text": "Therefore he had accomplished his design,",
+      "verse": "48:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 43.059,
+      "end": 46.542,
+      "type": "line",
+      "text": "for he had hardened the hearts of the Lamanites",
+      "verse": "48:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 46.722,
+      "end": 48.347,
+      "type": "line",
+      "text": "and blinded their minds,",
+      "verse": "48:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 48.527,
+      "end": 55.725,
+      "type": "line",
+      "text": "and stirred them up to anger, insomuch that he had gathered together a numerous host to go to battle against the Nephites.",
+      "verse": "48:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 56.405,
+      "end": 63.371,
+      "type": "line",
+      "text": "For he was determined, because of the greatness of the number of his people, to overpower the Nephites",
+      "verse": "48:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 63.551,
+      "end": 65.873,
+      "type": "line",
+      "text": "and to bring them into bondage.",
+      "verse": "48:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 66.553,
+      "end": 70.082,
+      "type": "line",
+      "text": "And thus he did appoint chief captains of the Zoramites,",
+      "verse": "48:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 70.262,
+      "end": 73.884,
+      "type": "line",
+      "text": "they being the most acquainted with the strength of the Nephites,",
+      "verse": "48:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 74.064,
+      "end": 76.2,
+      "type": "line",
+      "text": "and their places of resort,",
+      "verse": "48:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 76.38,
+      "end": 78.841,
+      "type": "line",
+      "text": "and the weakest parts of their cities;",
+      "verse": "48:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 79.021,
+      "end": 83.201,
+      "type": "line",
+      "text": "therefore he appointed them to be chief captains over his armies.",
+      "verse": "48:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 83.881,
+      "end": 87.271,
+      "type": "line",
+      "text": "And it came to pass that they took their camp,",
+      "verse": "48:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 87.451,
+      "end": 91.631,
+      "type": "line",
+      "text": "and moved forth toward the land of Zarahemla in the wilderness.",
+      "verse": "48:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 92.311,
+      "end": 98.998,
+      "type": "line",
+      "text": "Now it came to pass that while Amalickiah had thus been obtaining power by fraud and deceit,",
+      "verse": "48:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 99.178,
+      "end": 103.636,
+      "type": "line",
+      "text": "Moroni, on the other hand, had been preparing the minds of the people",
+      "verse": "48:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 103.816,
+      "end": 106.045,
+      "type": "line",
+      "text": "to be faithful unto the Lord their God.",
+      "verse": "48:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 106.725,
+      "end": 109.883,
+      "type": "line",
+      "text": "Yea, he had been strengthening the armies of the Nephites,",
+      "verse": "48:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 110.063,
+      "end": 117.865,
+      "type": "line",
+      "text": "and erecting small forts, or places of resort; throwing up banks of earth round about to enclose his armies,",
+      "verse": "48:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 118.045,
+      "end": 125.383,
+      "type": "line",
+      "text": "and also building walls of stone to encircle them about, round about their cities and the borders of their lands;",
+      "verse": "48:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 125.563,
+      "end": 127.792,
+      "type": "line",
+      "text": "yea, all round about the land.",
+      "verse": "48:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 128.472,
+      "end": 133.395,
+      "type": "line",
+      "text": "And in their weakest fortifications he did place the greater number of men;",
+      "verse": "48:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 133.575,
+      "end": 136.826,
+      "type": "line",
+      "text": "and thus he did fortify and strengthen the land",
+      "verse": "48:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 137.006,
+      "end": 139.282,
+      "type": "line",
+      "text": "which was possessed by the Nephites.",
+      "verse": "48:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 139.962,
+      "end": 143.073,
+      "type": "line",
+      "text": "And thus he was preparing to support their liberty,",
+      "verse": "48:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 143.253,
+      "end": 147.154,
+      "type": "line",
+      "text": "their lands, their wives, and their children, and their peace,",
+      "verse": "48:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 147.334,
+      "end": 150.306,
+      "type": "line",
+      "text": "and that they might live unto the Lord their God,",
+      "verse": "48:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 150.486,
+      "end": 155.641,
+      "type": "line",
+      "text": "and that they might maintain that which was called by their enemies",
+      "verse": "48:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 155.821,
+      "end": 157.632,
+      "type": "line",
+      "text": "the cause of Christians.",
+      "verse": "48:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 158.312,
+      "end": 161.145,
+      "type": "line",
+      "text": "And Moroni was a strong and a mighty man;",
+      "verse": "48:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 161.325,
+      "end": 164.065,
+      "type": "line",
+      "text": "he was a man of a perfect understanding;",
+      "verse": "48:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 164.245,
+      "end": 167.356,
+      "type": "line",
+      "text": "yea, a man that did not delight in bloodshed;",
+      "verse": "48:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 167.536,
+      "end": 170.276,
+      "type": "line",
+      "text": "a man whose soul did joy in the liberty",
+      "verse": "48:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 170.456,
+      "end": 172.732,
+      "type": "line",
+      "text": "and the freedom of his country,",
+      "verse": "48:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 172.912,
+      "end": 175.513,
+      "type": "line",
+      "text": "and his brethren from bondage and slavery;",
+      "verse": "48:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 176.193,
+      "end": 180.14,
+      "type": "line",
+      "text": "Yea, a man whose heart did swell with thanksgiving to his God,",
+      "verse": "48:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 180.32,
+      "end": 185.382,
+      "type": "line",
+      "text": "for the many privileges and blessings which he bestowed upon his people;",
+      "verse": "48:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 185.562,
+      "end": 189.788,
+      "type": "line",
+      "text": "a man who did labor exceedingly for the welfare and safety of his people.",
+      "verse": "48:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 190.468,
+      "end": 194.183,
+      "type": "line",
+      "text": "Yea, and he was a man who was firm in the faith of Christ,",
+      "verse": "48:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 194.363,
+      "end": 199.193,
+      "type": "line",
+      "text": "and he had sworn with an oath to defend his people, his rights, and his country,",
+      "verse": "48:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 199.373,
+      "end": 202.392,
+      "type": "line",
+      "text": "and his religion, even to the loss of his blood.",
+      "verse": "48:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 203.072,
+      "end": 206.787,
+      "type": "line",
+      "text": "Now the Nephites were taught to defend themselves against their enemies,",
+      "verse": "48:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 206.967,
+      "end": 210.218,
+      "type": "line",
+      "text": "even to the shedding of blood if it were necessary;",
+      "verse": "48:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 210.398,
+      "end": 213.974,
+      "type": "line",
+      "text": "yea, and they were also taught never to give an offense,",
+      "verse": "48:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 214.154,
+      "end": 216.755,
+      "type": "line",
+      "text": "yea, and never to raise the sword",
+      "verse": "48:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 216.935,
+      "end": 219.396,
+      "type": "line",
+      "text": "except it were against an enemy,",
+      "verse": "48:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 219.576,
+      "end": 221.898,
+      "type": "line",
+      "text": "except it were to preserve their lives.",
+      "verse": "48:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 222.578,
+      "end": 224.203,
+      "type": "line",
+      "text": "And this was their faith,",
+      "verse": "48:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 224.383,
+      "end": 232.882,
+      "type": "line",
+      "text": "that by so doing God would prosper them in the land, or in other words, if they were faithful in keeping the commandments of God",
+      "verse": "48:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 233.062,
+      "end": 235.57,
+      "type": "line",
+      "text": "that he would prosper them in the land;",
+      "verse": "48:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 235.75,
+      "end": 240.905,
+      "type": "line",
+      "text": "yea, warn them to flee, or to prepare for war, according to their danger;",
+      "verse": "48:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 241.585,
+      "end": 244.882,
+      "type": "line",
+      "text": "And also, that God would make it known unto them",
+      "verse": "48:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 245.062,
+      "end": 249.149,
+      "type": "line",
+      "text": "whither they should go to defend themselves against their enemies,",
+      "verse": "48:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 249.329,
+      "end": 252.162,
+      "type": "line",
+      "text": "and by so doing, the Lord would deliver them;",
+      "verse": "48:16",
+      "lineIndex": 64
+    },
+    {
+      "start": 252.342,
+      "end": 254.664,
+      "type": "line",
+      "text": "and this was the faith of Moroni,",
+      "verse": "48:16",
+      "lineIndex": 65
+    },
+    {
+      "start": 254.844,
+      "end": 256.841,
+      "type": "line",
+      "text": "and his heart did glory in it;",
+      "verse": "48:16",
+      "lineIndex": 66
+    },
+    {
+      "start": 257.021,
+      "end": 258.832,
+      "type": "line",
+      "text": "not in the shedding of blood",
+      "verse": "48:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 259.012,
+      "end": 261.52,
+      "type": "line",
+      "text": "but in doing good, in preserving his people,",
+      "verse": "48:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 261.7,
+      "end": 264.208,
+      "type": "line",
+      "text": "yea, in keeping the commandments of God,",
+      "verse": "48:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 264.388,
+      "end": 266.571,
+      "type": "line",
+      "text": "yea, and resisting iniquity.",
+      "verse": "48:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 267.251,
+      "end": 271.988,
+      "type": "line",
+      "text": "Yea, verily, verily I say unto you, if all men had been, and were,",
+      "verse": "48:17",
+      "lineIndex": 72
+    },
+    {
+      "start": 272.168,
+      "end": 274.676,
+      "type": "line",
+      "text": "and ever would be, like unto Moroni,",
+      "verse": "48:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 274.856,
+      "end": 278.943,
+      "type": "line",
+      "text": "behold, the very powers of hell would have been shaken forever;",
+      "verse": "48:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 279.123,
+      "end": 284.649,
+      "type": "line",
+      "text": "yea, the devil would never have power over the hearts of the children of men.",
+      "verse": "48:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 285.329,
+      "end": 288.951,
+      "type": "line",
+      "text": "Behold, he was a man like unto Ammon, the son of Mosiah,",
+      "verse": "48:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 289.131,
+      "end": 291.825,
+      "type": "line",
+      "text": "yea, and even the other sons of Mosiah,",
+      "verse": "48:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 292.005,
+      "end": 294.42,
+      "type": "line",
+      "text": "yea, and also Alma and his sons,",
+      "verse": "48:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 294.6,
+      "end": 296.55,
+      "type": "line",
+      "text": "for they were all men of God.",
+      "verse": "48:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 297.23,
+      "end": 299.738,
+      "type": "line",
+      "text": "Now behold, Helaman and his brethren",
+      "verse": "48:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 299.918,
+      "end": 303.633,
+      "type": "line",
+      "text": "were no less serviceable unto the people than was Moroni;",
+      "verse": "48:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 303.813,
+      "end": 306.228,
+      "type": "line",
+      "text": "for they did preach the word of God,",
+      "verse": "48:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 306.408,
+      "end": 309.38,
+      "type": "line",
+      "text": "and they did baptize unto repentance all men",
+      "verse": "48:19",
+      "lineIndex": 83
+    },
+    {
+      "start": 309.56,
+      "end": 311.975,
+      "type": "line",
+      "text": "whosoever would hearken unto their words.",
+      "verse": "48:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 312.655,
+      "end": 314.466,
+      "type": "line",
+      "text": "And thus they went forth,",
+      "verse": "48:20",
+      "lineIndex": 85
+    },
+    {
+      "start": 314.646,
+      "end": 321.612,
+      "type": "line",
+      "text": "and the people did humble themselves because of their words, insomuch that they were highly favored of the Lord,",
+      "verse": "48:20",
+      "lineIndex": 86
+    },
+    {
+      "start": 321.792,
+      "end": 329.594,
+      "type": "line",
+      "text": "and thus they were free from wars and contentions among themselves, yea, even for the space of four years.",
+      "verse": "48:20",
+      "lineIndex": 87
+    },
+    {
+      "start": 330.274,
+      "end": 335.8,
+      "type": "line",
+      "text": "But, as I have said, in the latter end of the nineteenth year, yea,",
+      "verse": "48:21",
+      "lineIndex": 88
+    },
+    {
+      "start": 335.98,
+      "end": 338.952,
+      "type": "line",
+      "text": "notwithstanding their peace amongst themselves,",
+      "verse": "48:21",
+      "lineIndex": 89
+    },
+    {
+      "start": 339.132,
+      "end": 344.008,
+      "type": "line",
+      "text": "they were compelled reluctantly to contend with their brethren, the Lamanites.",
+      "verse": "48:21",
+      "lineIndex": 90
+    },
+    {
+      "start": 344.688,
+      "end": 351.282,
+      "type": "line",
+      "text": "Yea, and in fine, their wars never did cease for the space of many years with the Lamanites,",
+      "verse": "48:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 351.462,
+      "end": 353.923,
+      "type": "line",
+      "text": "notwithstanding their much reluctance.",
+      "verse": "48:22",
+      "lineIndex": 92
+    },
+    {
+      "start": 354.603,
+      "end": 358.086,
+      "type": "line",
+      "text": "Now, they were sorry to take up arms against the Lamanites,",
+      "verse": "48:23",
+      "lineIndex": 93
+    },
+    {
+      "start": 358.266,
+      "end": 361.517,
+      "type": "line",
+      "text": "because they did not delight in the shedding of blood;",
+      "verse": "48:23",
+      "lineIndex": 94
+    },
+    {
+      "start": 361.697,
+      "end": 363.462,
+      "type": "line",
+      "text": "yea, and this was not all\u2014",
+      "verse": "48:23",
+      "lineIndex": 95
+    },
+    {
+      "start": 363.642,
+      "end": 368.007,
+      "type": "line",
+      "text": "they were sorry to be the means of sending so many of their brethren",
+      "verse": "48:23",
+      "lineIndex": 96
+    },
+    {
+      "start": 368.187,
+      "end": 372.692,
+      "type": "line",
+      "text": "out of this world into an eternal world, unprepared to meet their God.",
+      "verse": "48:23",
+      "lineIndex": 97
+    },
+    {
+      "start": 373.372,
+      "end": 385.075,
+      "type": "line",
+      "text": "Nevertheless, they could not suffer to lay down their lives, that their wives and their children should be massacred by the barbarous cruelty of those who were once their brethren,",
+      "verse": "48:24",
+      "lineIndex": 98
+    },
+    {
+      "start": 385.255,
+      "end": 387.809,
+      "type": "line",
+      "text": "yea, and had dissented from their church,",
+      "verse": "48:24",
+      "lineIndex": 99
+    },
+    {
+      "start": 387.989,
+      "end": 389.522,
+      "type": "line",
+      "text": "and had left them",
+      "verse": "48:24",
+      "lineIndex": 100
+    },
+    {
+      "start": 389.702,
+      "end": 393.231,
+      "type": "line",
+      "text": "and had gone to destroy them by joining the Lamanites.",
+      "verse": "48:24",
+      "lineIndex": 101
+    },
+    {
+      "start": 393.911,
+      "end": 395.536,
+      "type": "line",
+      "text": "Yea, they could not bear",
+      "verse": "48:25",
+      "lineIndex": 102
+    },
+    {
+      "start": 395.716,
+      "end": 400.685,
+      "type": "line",
+      "text": "that their brethren should rejoice over the blood of the Nephites,",
+      "verse": "48:25",
+      "lineIndex": 103
+    },
+    {
+      "start": 400.865,
+      "end": 404.812,
+      "type": "line",
+      "text": "so long as there were any who should keep the commandments of God,",
+      "verse": "48:25",
+      "lineIndex": 104
+    },
+    {
+      "start": 404.992,
+      "end": 407.268,
+      "type": "line",
+      "text": "for the promise of the Lord was,",
+      "verse": "48:25",
+      "lineIndex": 105
+    },
+    {
+      "start": 407.448,
+      "end": 409.724,
+      "type": "line",
+      "text": "if they should keep his commandments",
+      "verse": "48:25",
+      "lineIndex": 106
+    },
+    {
+      "start": 409.904,
+      "end": 411.947,
+      "type": "line",
+      "text": "they should prosper in the land.",
+      "verse": "48:25",
+      "lineIndex": 107
+    }
+  ]
+}
