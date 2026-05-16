@@ -1,0 +1,1720 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 32,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 683.18,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.601,
+      "type": "line",
+      "text": "And it came to pass that they did go forth,",
+      "verse": "32:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.781,
+      "end": 9.654,
+      "type": "line",
+      "text": "and began to preach the word of God unto the people, entering into their synagogues, and into their houses;",
+      "verse": "32:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.834,
+      "end": 13.038,
+      "type": "line",
+      "text": "yea, and even they did preach the word in their streets.",
+      "verse": "32:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 13.718,
+      "end": 21.334,
+      "type": "line",
+      "text": "And it came to pass that after much labor among them, they began to have success among the poor class of people;",
+      "verse": "32:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 21.514,
+      "end": 28.016,
+      "type": "line",
+      "text": "for behold, they were cast out of the synagogues because of the coarseness of their apparel\u2014",
+      "verse": "32:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 28.696,
+      "end": 35.941,
+      "type": "line",
+      "text": "Therefore they were not permitted to enter into their synagogues to worship God, being esteemed as filthiness;",
+      "verse": "32:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 36.121,
+      "end": 37.607,
+      "type": "line",
+      "text": "therefore they were poor;",
+      "verse": "32:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 37.787,
+      "end": 41.363,
+      "type": "line",
+      "text": "yea, they were esteemed by their brethren as dross;",
+      "verse": "32:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 41.543,
+      "end": 45.119,
+      "type": "line",
+      "text": "therefore they were poor as to things of the world;",
+      "verse": "32:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 45.299,
+      "end": 47.807,
+      "type": "line",
+      "text": "and also they were poor in heart.",
+      "verse": "32:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 48.487,
+      "end": 52.852,
+      "type": "line",
+      "text": "Now, as Alma was teaching and speaking unto the people upon the hill Onidah,",
+      "verse": "32:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 53.032,
+      "end": 55.633,
+      "type": "line",
+      "text": "there came a great multitude unto him,",
+      "verse": "32:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 55.813,
+      "end": 65.38,
+      "type": "line",
+      "text": "who were those of whom we have been speaking, of whom were poor in heart, because of their poverty as to the things of the world.",
+      "verse": "32:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 66.06,
+      "end": 67.918,
+      "type": "line",
+      "text": "And they came unto Alma;",
+      "verse": "32:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 68.098,
+      "end": 71.906,
+      "type": "line",
+      "text": "and the one who was the foremost among them said unto him:",
+      "verse": "32:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 72.086,
+      "end": 74.872,
+      "type": "line",
+      "text": "Behold, what shall these my brethren do,",
+      "verse": "32:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 75.052,
+      "end": 78.535,
+      "type": "line",
+      "text": "for they are despised of all men because of their poverty,",
+      "verse": "32:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 78.715,
+      "end": 81.409,
+      "type": "line",
+      "text": "yea, and more especially by our priests;",
+      "verse": "32:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 81.589,
+      "end": 84.7,
+      "type": "line",
+      "text": "for they have cast us out of our synagogues",
+      "verse": "32:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 84.88,
+      "end": 88.874,
+      "type": "line",
+      "text": "which we have labored abundantly to build with our own hands;",
+      "verse": "32:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 89.054,
+      "end": 92.862,
+      "type": "line",
+      "text": "and they have cast us out because of our exceeding poverty;",
+      "verse": "32:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 93.042,
+      "end": 95.55,
+      "type": "line",
+      "text": "and we have no place to worship our God;",
+      "verse": "32:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 95.73,
+      "end": 97.913,
+      "type": "line",
+      "text": "and behold, what shall we do?",
+      "verse": "32:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 98.593,
+      "end": 103.423,
+      "type": "line",
+      "text": "And now when Alma heard this, he turned him about, his face immediately towards him,",
+      "verse": "32:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 103.603,
+      "end": 105.646,
+      "type": "line",
+      "text": "and he beheld with great joy;",
+      "verse": "32:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 105.826,
+      "end": 109.82,
+      "type": "line",
+      "text": "for he beheld that their afflictions had truly humbled them,",
+      "verse": "32:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 110.0,
+      "end": 113.344,
+      "type": "line",
+      "text": "and that they were in a preparation to hear the word.",
+      "verse": "32:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 114.024,
+      "end": 117.321,
+      "type": "line",
+      "text": "Therefore he did say no more to the other multitude;",
+      "verse": "32:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 117.501,
+      "end": 119.637,
+      "type": "line",
+      "text": "but he stretched forth his hand,",
+      "verse": "32:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 119.817,
+      "end": 122.278,
+      "type": "line",
+      "text": "and cried unto those whom he beheld,",
+      "verse": "32:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 122.458,
+      "end": 125.291,
+      "type": "line",
+      "text": "who were truly penitent, and said unto them:",
+      "verse": "32:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 125.971,
+      "end": 128.432,
+      "type": "line",
+      "text": "I behold that ye are lowly in heart;",
+      "verse": "32:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 128.612,
+      "end": 130.423,
+      "type": "line",
+      "text": "and if so, blessed are ye.",
+      "verse": "32:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 131.103,
+      "end": 133.146,
+      "type": "line",
+      "text": "Behold thy brother hath said,",
+      "verse": "32:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 133.326,
+      "end": 134.719,
+      "type": "line",
+      "text": "What shall we do?\u2014",
+      "verse": "32:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 134.899,
+      "end": 137.732,
+      "type": "line",
+      "text": "for we are cast out of our synagogues,",
+      "verse": "32:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 137.912,
+      "end": 139.955,
+      "type": "line",
+      "text": "that we cannot worship our God.",
+      "verse": "32:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 140.635,
+      "end": 142.307,
+      "type": "line",
+      "text": "Behold I say unto you,",
+      "verse": "32:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 142.487,
+      "end": 147.131,
+      "type": "line",
+      "text": "do ye suppose that ye cannot worship God save it be in your synagogues only?",
+      "verse": "32:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 147.811,
+      "end": 149.622,
+      "type": "line",
+      "text": "And moreover, I would ask,",
+      "verse": "32:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 149.802,
+      "end": 153.239,
+      "type": "line",
+      "text": "do ye suppose that ye must not worship God only once in a week?",
+      "verse": "32:11",
+      "lineIndex": 42
+    },
+    {
+      "start": 153.919,
+      "end": 155.405,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "32:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 155.585,
+      "end": 159.068,
+      "type": "line",
+      "text": "it is well that ye are cast out of your synagogues,",
+      "verse": "32:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 159.248,
+      "end": 160.827,
+      "type": "line",
+      "text": "that ye may be humble,",
+      "verse": "32:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 161.007,
+      "end": 163.236,
+      "type": "line",
+      "text": "and that ye may learn wisdom;",
+      "verse": "32:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 163.416,
+      "end": 166.574,
+      "type": "line",
+      "text": "for it is necessary that ye should learn wisdom;",
+      "verse": "32:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 166.754,
+      "end": 167.961,
+      "type": "line",
+      "text": "for it is",
+      "verse": "32:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 168.141,
+      "end": 170.184,
+      "type": "line",
+      "text": "because that ye are cast out,",
+      "verse": "32:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 170.364,
+      "end": 174.404,
+      "type": "line",
+      "text": "that ye are despised of your brethren because of your exceeding poverty,",
+      "verse": "32:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 174.584,
+      "end": 177.51,
+      "type": "line",
+      "text": "that ye are brought to a lowliness of heart;",
+      "verse": "32:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 177.69,
+      "end": 180.384,
+      "type": "line",
+      "text": "for ye are necessarily brought to be humble.",
+      "verse": "32:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 181.064,
+      "end": 184.547,
+      "type": "line",
+      "text": "And now, because ye are compelled to be humble blessed are ye;",
+      "verse": "32:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 184.727,
+      "end": 189.789,
+      "type": "line",
+      "text": "for a man sometimes, if he is compelled to be humble, seeketh repentance;",
+      "verse": "32:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 189.969,
+      "end": 193.266,
+      "type": "line",
+      "text": "and now surely, whosoever repenteth shall find mercy;",
+      "verse": "32:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 193.446,
+      "end": 195.443,
+      "type": "line",
+      "text": "and he that findeth mercy",
+      "verse": "32:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 195.623,
+      "end": 198.595,
+      "type": "line",
+      "text": "and endureth to the end the same shall be saved.",
+      "verse": "32:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 199.275,
+      "end": 204.43,
+      "type": "line",
+      "text": "And now, as I said unto you, that because ye were compelled to be humble ye were blessed,",
+      "verse": "32:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 204.61,
+      "end": 207.211,
+      "type": "line",
+      "text": "do ye not suppose that they are more blessed",
+      "verse": "32:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 207.391,
+      "end": 210.085,
+      "type": "line",
+      "text": "who truly humble themselves because of the word?",
+      "verse": "32:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 210.765,
+      "end": 213.18,
+      "type": "line",
+      "text": "Yea, he that truly humbleth himself,",
+      "verse": "32:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 213.36,
+      "end": 215.31,
+      "type": "line",
+      "text": "and repenteth of his sins",
+      "verse": "32:15",
+      "lineIndex": 62
+    },
+    {
+      "start": 215.49,
+      "end": 218.416,
+      "type": "line",
+      "text": "and endureth to the end, the same shall be blessed\u2014",
+      "verse": "32:15",
+      "lineIndex": 63
+    },
+    {
+      "start": 218.596,
+      "end": 225.098,
+      "type": "line",
+      "text": "yea, much more blessed than they who are compelled to be humble because of their exceeding poverty.",
+      "verse": "32:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 225.778,
+      "end": 228.564,
+      "type": "line",
+      "text": "Therefore, blessed are they who humble themselves",
+      "verse": "32:16",
+      "lineIndex": 65
+    },
+    {
+      "start": 228.744,
+      "end": 230.927,
+      "type": "line",
+      "text": "without being compelled to be humble;",
+      "verse": "32:16",
+      "lineIndex": 66
+    },
+    {
+      "start": 231.107,
+      "end": 233.708,
+      "type": "line",
+      "text": "or rather, in other words, blessed is he",
+      "verse": "32:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 233.888,
+      "end": 236.86,
+      "type": "line",
+      "text": "that believeth in the word of God, and is baptized",
+      "verse": "32:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 237.04,
+      "end": 239.362,
+      "type": "line",
+      "text": "without stubbornness of heart,",
+      "verse": "32:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 239.542,
+      "end": 243.443,
+      "type": "line",
+      "text": "yea, without being brought to know the word, or even compelled to know,",
+      "verse": "32:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 243.623,
+      "end": 245.248,
+      "type": "line",
+      "text": "before they will believe.",
+      "verse": "32:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 245.928,
+      "end": 248.111,
+      "type": "line",
+      "text": "Yea, there are many who do say:",
+      "verse": "32:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 248.291,
+      "end": 251.17,
+      "type": "line",
+      "text": "If thou wilt show unto us a sign from heaven,",
+      "verse": "32:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 251.35,
+      "end": 254.879,
+      "type": "line",
+      "text": "then we shall know of a surety; then we shall believe.",
+      "verse": "32:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 255.559,
+      "end": 257.324,
+      "type": "line",
+      "text": "Now I ask, is this faith?",
+      "verse": "32:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 257.504,
+      "end": 259.269,
+      "type": "line",
+      "text": "Behold, I say unto you, Nay;",
+      "verse": "32:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 259.449,
+      "end": 263.025,
+      "type": "line",
+      "text": "for if a man knoweth a thing he hath no cause to believe,",
+      "verse": "32:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 263.205,
+      "end": 264.784,
+      "type": "line",
+      "text": "for he knoweth it.",
+      "verse": "32:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 265.464,
+      "end": 267.925,
+      "type": "line",
+      "text": "And now, how much more cursed is he",
+      "verse": "32:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 268.105,
+      "end": 271.263,
+      "type": "line",
+      "text": "that knoweth the will of God and doeth it not,",
+      "verse": "32:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 271.443,
+      "end": 275.251,
+      "type": "line",
+      "text": "than he that only believeth, or only hath cause to believe,",
+      "verse": "32:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 275.431,
+      "end": 277.381,
+      "type": "line",
+      "text": "and falleth into transgression?",
+      "verse": "32:19",
+      "lineIndex": 83
+    },
+    {
+      "start": 278.061,
+      "end": 280.197,
+      "type": "line",
+      "text": "Now of this thing ye must judge.",
+      "verse": "32:20",
+      "lineIndex": 84
+    },
+    {
+      "start": 280.377,
+      "end": 285.764,
+      "type": "line",
+      "text": "Behold, I say unto you that it is on the one hand even as it is on the other;",
+      "verse": "32:20",
+      "lineIndex": 85
+    },
+    {
+      "start": 285.944,
+      "end": 289.241,
+      "type": "line",
+      "text": "and it shall be unto every man according to his work.",
+      "verse": "32:20",
+      "lineIndex": 86
+    },
+    {
+      "start": 289.921,
+      "end": 292.243,
+      "type": "line",
+      "text": "And now as I said concerning faith\u2014",
+      "verse": "32:21",
+      "lineIndex": 87
+    },
+    {
+      "start": 292.423,
+      "end": 295.999,
+      "type": "line",
+      "text": "faith is not to have a perfect knowledge of things;",
+      "verse": "32:21",
+      "lineIndex": 88
+    },
+    {
+      "start": 296.179,
+      "end": 298.501,
+      "type": "line",
+      "text": "therefore if ye have faith ye hope",
+      "verse": "32:21",
+      "lineIndex": 89
+    },
+    {
+      "start": 298.681,
+      "end": 301.421,
+      "type": "line",
+      "text": "for things which are not seen, which are true.",
+      "verse": "32:21",
+      "lineIndex": 90
+    },
+    {
+      "start": 302.101,
+      "end": 304.284,
+      "type": "line",
+      "text": "And now, behold, I say unto you,",
+      "verse": "32:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 304.464,
+      "end": 310.826,
+      "type": "line",
+      "text": "and I would that ye should remember, that God is merciful unto all who believe on his name;",
+      "verse": "32:22",
+      "lineIndex": 92
+    },
+    {
+      "start": 311.006,
+      "end": 317.647,
+      "type": "line",
+      "text": "therefore he desireth, in the first place, that ye should believe, yea, even on his word.",
+      "verse": "32:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 318.327,
+      "end": 321.671,
+      "type": "line",
+      "text": "And now, he imparteth his word by angels unto men,",
+      "verse": "32:23",
+      "lineIndex": 94
+    },
+    {
+      "start": 321.851,
+      "end": 324.127,
+      "type": "line",
+      "text": "yea, not only men but women also.",
+      "verse": "32:23",
+      "lineIndex": 95
+    },
+    {
+      "start": 324.307,
+      "end": 325.793,
+      "type": "line",
+      "text": "Now this is not all;",
+      "verse": "32:23",
+      "lineIndex": 96
+    },
+    {
+      "start": 325.973,
+      "end": 333.589,
+      "type": "line",
+      "text": "little children do have words given unto them many times, which confound the wise and the learned.",
+      "verse": "32:23",
+      "lineIndex": 97
+    },
+    {
+      "start": 334.269,
+      "end": 336.312,
+      "type": "line",
+      "text": "And now, my beloved brethren,",
+      "verse": "32:24",
+      "lineIndex": 98
+    },
+    {
+      "start": 336.492,
+      "end": 338.489,
+      "type": "line",
+      "text": "as ye have desired to know of me",
+      "verse": "32:24",
+      "lineIndex": 99
+    },
+    {
+      "start": 338.669,
+      "end": 340.155,
+      "type": "line",
+      "text": "what ye shall do",
+      "verse": "32:24",
+      "lineIndex": 100
+    },
+    {
+      "start": 340.335,
+      "end": 342.657,
+      "type": "line",
+      "text": "because ye are afflicted and cast out\u2014",
+      "verse": "32:24",
+      "lineIndex": 101
+    },
+    {
+      "start": 342.837,
+      "end": 347.017,
+      "type": "line",
+      "text": "now I do not desire that ye should suppose that I mean to judge you",
+      "verse": "32:24",
+      "lineIndex": 102
+    },
+    {
+      "start": 347.197,
+      "end": 349.333,
+      "type": "line",
+      "text": "only according to that which is true\u2014",
+      "verse": "32:24",
+      "lineIndex": 103
+    },
+    {
+      "start": 350.013,
+      "end": 354.657,
+      "type": "line",
+      "text": "For I do not mean that ye all of you have been compelled to humble yourselves;",
+      "verse": "32:25",
+      "lineIndex": 104
+    },
+    {
+      "start": 354.837,
+      "end": 357.391,
+      "type": "line",
+      "text": "for I verily believe that there are some",
+      "verse": "32:25",
+      "lineIndex": 105
+    },
+    {
+      "start": 357.571,
+      "end": 359.661,
+      "type": "line",
+      "text": "among you who would humble themselves,",
+      "verse": "32:25",
+      "lineIndex": 106
+    },
+    {
+      "start": 359.841,
+      "end": 363.556,
+      "type": "line",
+      "text": "let them be in whatsoever circumstances they might.",
+      "verse": "32:25",
+      "lineIndex": 107
+    },
+    {
+      "start": 364.236,
+      "end": 369.391,
+      "type": "line",
+      "text": "Now, as I said concerning faith\u2014that it was not a perfect knowledge\u2014",
+      "verse": "32:26",
+      "lineIndex": 108
+    },
+    {
+      "start": 369.571,
+      "end": 371.336,
+      "type": "line",
+      "text": "even so it is with my words.",
+      "verse": "32:26",
+      "lineIndex": 109
+    },
+    {
+      "start": 371.516,
+      "end": 375.138,
+      "type": "line",
+      "text": "Ye cannot know of their surety at first, unto perfection,",
+      "verse": "32:26",
+      "lineIndex": 110
+    },
+    {
+      "start": 375.318,
+      "end": 378.012,
+      "type": "line",
+      "text": "any more than faith is a perfect knowledge.",
+      "verse": "32:26",
+      "lineIndex": 111
+    },
+    {
+      "start": 378.692,
+      "end": 380.828,
+      "type": "line",
+      "text": "But behold, if ye will awake",
+      "verse": "32:27",
+      "lineIndex": 112
+    },
+    {
+      "start": 381.008,
+      "end": 385.373,
+      "type": "line",
+      "text": "and arouse your faculties, even to an experiment upon my words,",
+      "verse": "32:27",
+      "lineIndex": 113
+    },
+    {
+      "start": 385.553,
+      "end": 387.968,
+      "type": "line",
+      "text": "and exercise a particle of faith,",
+      "verse": "32:27",
+      "lineIndex": 114
+    },
+    {
+      "start": 388.148,
+      "end": 391.259,
+      "type": "line",
+      "text": "yea, even if ye can no more than desire to believe,",
+      "verse": "32:27",
+      "lineIndex": 115
+    },
+    {
+      "start": 391.439,
+      "end": 393.436,
+      "type": "line",
+      "text": "let this desire work in you,",
+      "verse": "32:27",
+      "lineIndex": 116
+    },
+    {
+      "start": 393.616,
+      "end": 395.845,
+      "type": "line",
+      "text": "even until ye believe in a manner",
+      "verse": "32:27",
+      "lineIndex": 117
+    },
+    {
+      "start": 396.025,
+      "end": 398.951,
+      "type": "line",
+      "text": "that ye can give place for a portion of my words.",
+      "verse": "32:27",
+      "lineIndex": 118
+    },
+    {
+      "start": 399.631,
+      "end": 402.65,
+      "type": "line",
+      "text": "Now, we will compare the word unto a seed.",
+      "verse": "32:28",
+      "lineIndex": 120
+    },
+    {
+      "start": 402.83,
+      "end": 404.548,
+      "type": "line",
+      "text": "Now, if ye give place,",
+      "verse": "32:28",
+      "lineIndex": 121
+    },
+    {
+      "start": 404.728,
+      "end": 407.143,
+      "type": "line",
+      "text": "that a seed may be planted in your heart,",
+      "verse": "32:28",
+      "lineIndex": 122
+    },
+    {
+      "start": 407.323,
+      "end": 410.62,
+      "type": "line",
+      "text": "behold, if it be a true seed, or a good seed,",
+      "verse": "32:28",
+      "lineIndex": 123
+    },
+    {
+      "start": 410.8,
+      "end": 413.494,
+      "type": "line",
+      "text": "if ye do not cast it out by your unbelief,",
+      "verse": "32:28",
+      "lineIndex": 124
+    },
+    {
+      "start": 413.674,
+      "end": 416.275,
+      "type": "line",
+      "text": "that ye will resist the Spirit of the Lord,",
+      "verse": "32:28",
+      "lineIndex": 125
+    },
+    {
+      "start": 416.455,
+      "end": 419.892,
+      "type": "line",
+      "text": "behold, it will begin to swell within your breasts;",
+      "verse": "32:28",
+      "lineIndex": 126
+    },
+    {
+      "start": 420.072,
+      "end": 425.088,
+      "type": "line",
+      "text": "and when you feel these swelling motions, ye will begin to say within yourselves\u2014",
+      "verse": "32:28",
+      "lineIndex": 127
+    },
+    {
+      "start": 425.268,
+      "end": 429.726,
+      "type": "line",
+      "text": "It must needs be that this is a good seed, or that the word is good,",
+      "verse": "32:28",
+      "lineIndex": 128
+    },
+    {
+      "start": 429.906,
+      "end": 432.321,
+      "type": "line",
+      "text": "for it beginneth to enlarge my soul;",
+      "verse": "32:28",
+      "lineIndex": 129
+    },
+    {
+      "start": 432.501,
+      "end": 435.612,
+      "type": "line",
+      "text": "yea, it beginneth to enlighten my understanding,",
+      "verse": "32:28",
+      "lineIndex": 130
+    },
+    {
+      "start": 435.792,
+      "end": 438.486,
+      "type": "line",
+      "text": "yea, it beginneth to be delicious to me.",
+      "verse": "32:28",
+      "lineIndex": 131
+    },
+    {
+      "start": 439.166,
+      "end": 442.045,
+      "type": "line",
+      "text": "Now behold, would not this increase your faith?",
+      "verse": "32:29",
+      "lineIndex": 132
+    },
+    {
+      "start": 442.225,
+      "end": 443.665,
+      "type": "line",
+      "text": "I say unto you, Yea;",
+      "verse": "32:29",
+      "lineIndex": 133
+    },
+    {
+      "start": 443.845,
+      "end": 447.421,
+      "type": "line",
+      "text": "nevertheless it hath not grown up to a perfect knowledge.",
+      "verse": "32:29",
+      "lineIndex": 134
+    },
+    {
+      "start": 448.101,
+      "end": 450.377,
+      "type": "line",
+      "text": "But behold, as the seed swelleth,",
+      "verse": "32:30",
+      "lineIndex": 135
+    },
+    {
+      "start": 450.557,
+      "end": 451.95,
+      "type": "line",
+      "text": "and sprouteth,",
+      "verse": "32:30",
+      "lineIndex": 136
+    },
+    {
+      "start": 452.13,
+      "end": 453.709,
+      "type": "line",
+      "text": "and beginneth to grow,",
+      "verse": "32:30",
+      "lineIndex": 137
+    },
+    {
+      "start": 453.889,
+      "end": 457.047,
+      "type": "line",
+      "text": "then you must needs say that the seed is good;",
+      "verse": "32:30",
+      "lineIndex": 138
+    },
+    {
+      "start": 457.227,
+      "end": 458.992,
+      "type": "line",
+      "text": "for behold it swelleth,",
+      "verse": "32:30",
+      "lineIndex": 139
+    },
+    {
+      "start": 459.172,
+      "end": 460.565,
+      "type": "line",
+      "text": "and sprouteth,",
+      "verse": "32:30",
+      "lineIndex": 140
+    },
+    {
+      "start": 460.745,
+      "end": 462.278,
+      "type": "line",
+      "text": "and beginneth to grow.",
+      "verse": "32:30",
+      "lineIndex": 141
+    },
+    {
+      "start": 462.458,
+      "end": 465.569,
+      "type": "line",
+      "text": "And now, behold, will not this strengthen your faith?",
+      "verse": "32:30",
+      "lineIndex": 142
+    },
+    {
+      "start": 465.749,
+      "end": 468.443,
+      "type": "line",
+      "text": "Yea, it will strengthen your faith: for ye will say",
+      "verse": "32:30",
+      "lineIndex": 143
+    },
+    {
+      "start": 468.623,
+      "end": 470.899,
+      "type": "line",
+      "text": "I know that this is a good seed;",
+      "verse": "32:30",
+      "lineIndex": 144
+    },
+    {
+      "start": 471.079,
+      "end": 474.144,
+      "type": "line",
+      "text": "for behold it sprouteth and beginneth to grow.",
+      "verse": "32:30",
+      "lineIndex": 145
+    },
+    {
+      "start": 474.824,
+      "end": 478.075,
+      "type": "line",
+      "text": "And now, behold, are ye sure that this is a good seed?",
+      "verse": "32:31",
+      "lineIndex": 146
+    },
+    {
+      "start": 478.255,
+      "end": 479.695,
+      "type": "line",
+      "text": "I say unto you, Yea;",
+      "verse": "32:31",
+      "lineIndex": 147
+    },
+    {
+      "start": 479.875,
+      "end": 483.172,
+      "type": "line",
+      "text": "for every seed bringeth forth unto its own likeness.",
+      "verse": "32:31",
+      "lineIndex": 148
+    },
+    {
+      "start": 483.852,
+      "end": 486.546,
+      "type": "line",
+      "text": "Therefore, if a seed groweth it is good,",
+      "verse": "32:32",
+      "lineIndex": 149
+    },
+    {
+      "start": 486.726,
+      "end": 488.259,
+      "type": "line",
+      "text": "but if it groweth not,",
+      "verse": "32:32",
+      "lineIndex": 150
+    },
+    {
+      "start": 488.439,
+      "end": 491.458,
+      "type": "line",
+      "text": "behold it is not good, therefore it is cast away.",
+      "verse": "32:32",
+      "lineIndex": 151
+    },
+    {
+      "start": 492.138,
+      "end": 495.249,
+      "type": "line",
+      "text": "And now, behold, because ye have tried the experiment",
+      "verse": "32:33",
+      "lineIndex": 152
+    },
+    {
+      "start": 495.429,
+      "end": 497.101,
+      "type": "line",
+      "text": "and planted the seed,",
+      "verse": "32:33",
+      "lineIndex": 153
+    },
+    {
+      "start": 497.281,
+      "end": 498.767,
+      "type": "line",
+      "text": "and it swelleth",
+      "verse": "32:33",
+      "lineIndex": 154
+    },
+    {
+      "start": 498.947,
+      "end": 500.34,
+      "type": "line",
+      "text": "and sprouteth,",
+      "verse": "32:33",
+      "lineIndex": 155
+    },
+    {
+      "start": 500.52,
+      "end": 502.099,
+      "type": "line",
+      "text": "and beginneth to grow,",
+      "verse": "32:33",
+      "lineIndex": 156
+    },
+    {
+      "start": 502.279,
+      "end": 504.322,
+      "type": "line",
+      "text": "ye must needs know that the seed is good.",
+      "verse": "32:33",
+      "lineIndex": 157
+    },
+    {
+      "start": 505.002,
+      "end": 507.185,
+      "type": "line",
+      "text": "And now, behold, is your knowledge perfect?",
+      "verse": "32:34",
+      "lineIndex": 158
+    },
+    {
+      "start": 507.365,
+      "end": 510.105,
+      "type": "line",
+      "text": "Yea, your knowledge is perfect in that thing,",
+      "verse": "32:34",
+      "lineIndex": 159
+    },
+    {
+      "start": 510.285,
+      "end": 512.096,
+      "type": "line",
+      "text": "and your faith is dormant;",
+      "verse": "32:34",
+      "lineIndex": 160
+    },
+    {
+      "start": 512.276,
+      "end": 513.298,
+      "type": "line",
+      "text": "and this",
+      "verse": "32:34",
+      "lineIndex": 161
+    },
+    {
+      "start": 513.478,
+      "end": 514.825,
+      "type": "line",
+      "text": "because you know,",
+      "verse": "32:34",
+      "lineIndex": 162
+    },
+    {
+      "start": 515.005,
+      "end": 518.209,
+      "type": "line",
+      "text": "for ye know that the word hath swelled your souls,",
+      "verse": "32:34",
+      "lineIndex": 163
+    },
+    {
+      "start": 518.389,
+      "end": 521.175,
+      "type": "line",
+      "text": "and ye also know that it hath sprouted up,",
+      "verse": "32:34",
+      "lineIndex": 164
+    },
+    {
+      "start": 521.355,
+      "end": 524.838,
+      "type": "line",
+      "text": "that your understanding doth begin to be enlightened,",
+      "verse": "32:34",
+      "lineIndex": 165
+    },
+    {
+      "start": 525.018,
+      "end": 527.572,
+      "type": "line",
+      "text": "and your mind doth begin to expand.",
+      "verse": "32:34",
+      "lineIndex": 166
+    },
+    {
+      "start": 528.252,
+      "end": 530.063,
+      "type": "line",
+      "text": "O then, is not this real?",
+      "verse": "32:35",
+      "lineIndex": 167
+    },
+    {
+      "start": 530.243,
+      "end": 531.729,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "32:35",
+      "lineIndex": 168
+    },
+    {
+      "start": 531.909,
+      "end": 533.488,
+      "type": "line",
+      "text": "Yea, because it is light;",
+      "verse": "32:35",
+      "lineIndex": 169
+    },
+    {
+      "start": 533.668,
+      "end": 535.99,
+      "type": "line",
+      "text": "and whatsoever is light, is good,",
+      "verse": "32:35",
+      "lineIndex": 170
+    },
+    {
+      "start": 536.17,
+      "end": 538.028,
+      "type": "line",
+      "text": "because it is discernible,",
+      "verse": "32:35",
+      "lineIndex": 171
+    },
+    {
+      "start": 538.208,
+      "end": 540.902,
+      "type": "line",
+      "text": "therefore ye must know that it is good;",
+      "verse": "32:35",
+      "lineIndex": 172
+    },
+    {
+      "start": 541.082,
+      "end": 546.051,
+      "type": "line",
+      "text": "and now behold, after ye have tasted this light is your knowledge perfect?",
+      "verse": "32:35",
+      "lineIndex": 173
+    },
+    {
+      "start": 546.731,
+      "end": 548.542,
+      "type": "line",
+      "text": "Behold I say unto you, Nay;",
+      "verse": "32:36",
+      "lineIndex": 174
+    },
+    {
+      "start": 548.722,
+      "end": 551.183,
+      "type": "line",
+      "text": "neither must ye lay aside your faith,",
+      "verse": "32:36",
+      "lineIndex": 175
+    },
+    {
+      "start": 551.363,
+      "end": 554.428,
+      "type": "line",
+      "text": "for ye have only exercised your faith to plant the seed",
+      "verse": "32:36",
+      "lineIndex": 176
+    },
+    {
+      "start": 554.608,
+      "end": 558.555,
+      "type": "line",
+      "text": "that ye might try the experiment to know if the seed was good.",
+      "verse": "32:36",
+      "lineIndex": 177
+    },
+    {
+      "start": 559.235,
+      "end": 562.393,
+      "type": "line",
+      "text": "And behold, as the tree beginneth to grow, ye will say:",
+      "verse": "32:37",
+      "lineIndex": 178
+    },
+    {
+      "start": 562.573,
+      "end": 564.709,
+      "type": "line",
+      "text": "Let us nourish it with great care,",
+      "verse": "32:37",
+      "lineIndex": 179
+    },
+    {
+      "start": 564.889,
+      "end": 566.422,
+      "type": "line",
+      "text": "that it may get root,",
+      "verse": "32:37",
+      "lineIndex": 180
+    },
+    {
+      "start": 566.602,
+      "end": 569.853,
+      "type": "line",
+      "text": "that it may grow up, and bring forth fruit unto us.",
+      "verse": "32:37",
+      "lineIndex": 181
+    },
+    {
+      "start": 570.033,
+      "end": 574.398,
+      "type": "line",
+      "text": "And now behold, if ye nourish it with much care it will get root,",
+      "verse": "32:37",
+      "lineIndex": 182
+    },
+    {
+      "start": 574.578,
+      "end": 575.785,
+      "type": "line",
+      "text": "and grow up,",
+      "verse": "32:37",
+      "lineIndex": 183
+    },
+    {
+      "start": 575.965,
+      "end": 577.59,
+      "type": "line",
+      "text": "and bring forth fruit.",
+      "verse": "32:37",
+      "lineIndex": 184
+    },
+    {
+      "start": 578.27,
+      "end": 579.895,
+      "type": "line",
+      "text": "But if ye neglect the tree,",
+      "verse": "32:38",
+      "lineIndex": 185
+    },
+    {
+      "start": 580.075,
+      "end": 582.351,
+      "type": "line",
+      "text": "and take no thought for its nourishment,",
+      "verse": "32:38",
+      "lineIndex": 186
+    },
+    {
+      "start": 582.531,
+      "end": 585.132,
+      "type": "line",
+      "text": "behold it will not get any root;",
+      "verse": "32:38",
+      "lineIndex": 187
+    },
+    {
+      "start": 585.312,
+      "end": 588.934,
+      "type": "line",
+      "text": "and when the heat of the sun cometh and scorcheth it,",
+      "verse": "32:38",
+      "lineIndex": 188
+    },
+    {
+      "start": 589.114,
+      "end": 591.854,
+      "type": "line",
+      "text": "because it hath no root it withers away,",
+      "verse": "32:38",
+      "lineIndex": 189
+    },
+    {
+      "start": 592.034,
+      "end": 594.402,
+      "type": "line",
+      "text": "and ye pluck it up and cast it out.",
+      "verse": "32:38",
+      "lineIndex": 190
+    },
+    {
+      "start": 595.082,
+      "end": 598.333,
+      "type": "line",
+      "text": "Now, this is not because the seed was not good,",
+      "verse": "32:39",
+      "lineIndex": 191
+    },
+    {
+      "start": 598.513,
+      "end": 602.646,
+      "type": "line",
+      "text": "neither is it because the fruit thereof would not be desirable;",
+      "verse": "32:39",
+      "lineIndex": 192
+    },
+    {
+      "start": 602.826,
+      "end": 605.427,
+      "type": "line",
+      "text": "but it is because your ground is barren,",
+      "verse": "32:39",
+      "lineIndex": 193
+    },
+    {
+      "start": 605.607,
+      "end": 607.929,
+      "type": "line",
+      "text": "and ye will not nourish the tree,",
+      "verse": "32:39",
+      "lineIndex": 194
+    },
+    {
+      "start": 608.109,
+      "end": 610.663,
+      "type": "line",
+      "text": "therefore ye cannot have the fruit thereof.",
+      "verse": "32:39",
+      "lineIndex": 195
+    },
+    {
+      "start": 611.343,
+      "end": 618.588,
+      "type": "line",
+      "text": "And thus, if ye will not nourish the word, looking forward with an eye of faith to the fruit thereof,",
+      "verse": "32:40",
+      "lineIndex": 196
+    },
+    {
+      "start": 618.768,
+      "end": 622.065,
+      "type": "line",
+      "text": "ye can never pluck of the fruit of the tree of life.",
+      "verse": "32:40",
+      "lineIndex": 197
+    },
+    {
+      "start": 622.745,
+      "end": 625.021,
+      "type": "line",
+      "text": "But if ye will nourish the word,",
+      "verse": "32:41",
+      "lineIndex": 199
+    },
+    {
+      "start": 625.201,
+      "end": 631.703,
+      "type": "line",
+      "text": "yea, nourish the tree as it beginneth to grow, by your faith with great diligence, and with patience,",
+      "verse": "32:41",
+      "lineIndex": 200
+    },
+    {
+      "start": 631.883,
+      "end": 635.18,
+      "type": "line",
+      "text": "looking forward to the fruit thereof, it shall take root;",
+      "verse": "32:41",
+      "lineIndex": 201
+    },
+    {
+      "start": 635.36,
+      "end": 640.004,
+      "type": "line",
+      "text": "and behold it shall be a tree springing up unto everlasting life.",
+      "verse": "32:41",
+      "lineIndex": 202
+    },
+    {
+      "start": 640.684,
+      "end": 645.096,
+      "type": "line",
+      "text": "And because of your diligence and your faith and your patience with the word",
+      "verse": "32:42",
+      "lineIndex": 203
+    },
+    {
+      "start": 645.276,
+      "end": 646.901,
+      "type": "line",
+      "text": "in nourishing it,",
+      "verse": "32:42",
+      "lineIndex": 204
+    },
+    {
+      "start": 647.081,
+      "end": 649.031,
+      "type": "line",
+      "text": "that it may take root in you,",
+      "verse": "32:42",
+      "lineIndex": 205
+    },
+    {
+      "start": 649.211,
+      "end": 652.601,
+      "type": "line",
+      "text": "behold, by and by ye shall pluck the fruit thereof,",
+      "verse": "32:42",
+      "lineIndex": 206
+    },
+    {
+      "start": 652.781,
+      "end": 654.453,
+      "type": "line",
+      "text": "which is most precious,",
+      "verse": "32:42",
+      "lineIndex": 207
+    },
+    {
+      "start": 654.633,
+      "end": 657.559,
+      "type": "line",
+      "text": "which is sweet above all that is sweet,",
+      "verse": "32:42",
+      "lineIndex": 208
+    },
+    {
+      "start": 657.739,
+      "end": 660.665,
+      "type": "line",
+      "text": "and which is white above all that is white,",
+      "verse": "32:42",
+      "lineIndex": 209
+    },
+    {
+      "start": 660.845,
+      "end": 663.492,
+      "type": "line",
+      "text": "yea, and pure above all that is pure;",
+      "verse": "32:42",
+      "lineIndex": 210
+    },
+    {
+      "start": 663.672,
+      "end": 667.805,
+      "type": "line",
+      "text": "and ye shall feast upon this fruit even until ye are filled,",
+      "verse": "32:42",
+      "lineIndex": 211
+    },
+    {
+      "start": 667.985,
+      "end": 670.632,
+      "type": "line",
+      "text": "that ye hunger not, neither shall ye thirst.",
+      "verse": "32:42",
+      "lineIndex": 212
+    },
+    {
+      "start": 671.312,
+      "end": 672.752,
+      "type": "line",
+      "text": "Then, my brethren,",
+      "verse": "32:43",
+      "lineIndex": 213
+    },
+    {
+      "start": 672.932,
+      "end": 675.44,
+      "type": "line",
+      "text": "ye shall reap the rewards of your faith,",
+      "verse": "32:43",
+      "lineIndex": 214
+    },
+    {
+      "start": 675.62,
+      "end": 679.01,
+      "type": "line",
+      "text": "and your diligence, and patience, and long-suffering,",
+      "verse": "32:43",
+      "lineIndex": 215
+    },
+    {
+      "start": 679.19,
+      "end": 682.534,
+      "type": "line",
+      "text": "waiting for the tree to bring forth fruit unto you.",
+      "verse": "32:43",
+      "lineIndex": 216
+    }
+  ]
+}
