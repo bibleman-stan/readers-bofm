@@ -1,0 +1,1736 @@
+{
+  "book": "helaman",
+  "bookName": "Helaman",
+  "chapter": 13,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 676.85,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.873,
+      "type": "line",
+      "text": "And now it came to pass in the eighty and sixth year, the Nephites did still remain in wickedness,",
+      "verse": "13:1",
+      "lineIndex": 0
+    },
+    {
+      "start": 7.053,
+      "end": 8.678,
+      "type": "line",
+      "text": "yea, in great wickedness,",
+      "verse": "13:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 8.858,
+      "end": 15.685,
+      "type": "line",
+      "text": "while the Lamanites did observe strictly to keep the commandments of God, according to the law of Moses.",
+      "verse": "13:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 16.365,
+      "end": 18.501,
+      "type": "line",
+      "text": "And it came to pass that in this year",
+      "verse": "13:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 18.681,
+      "end": 23.557,
+      "type": "line",
+      "text": "there was one Samuel, a Lamanite, came into the land of Zarahemla,",
+      "verse": "13:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 23.737,
+      "end": 26.384,
+      "type": "line",
+      "text": "and began to preach unto the people.",
+      "verse": "13:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 26.564,
+      "end": 31.58,
+      "type": "line",
+      "text": "And it came to pass that he did preach, many days, repentance unto the people,",
+      "verse": "13:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 31.76,
+      "end": 33.571,
+      "type": "line",
+      "text": "and they did cast him out,",
+      "verse": "13:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.751,
+      "end": 36.491,
+      "type": "line",
+      "text": "and he was about to return to his own land.",
+      "verse": "13:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 37.171,
+      "end": 40.143,
+      "type": "line",
+      "text": "But behold, the voice of the Lord came unto him",
+      "verse": "13:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 40.323,
+      "end": 42.227,
+      "type": "line",
+      "text": "that he should return again,",
+      "verse": "13:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 42.407,
+      "end": 44.45,
+      "type": "line",
+      "text": "and prophesy unto the people",
+      "verse": "13:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 44.63,
+      "end": 47.324,
+      "type": "line",
+      "text": "whatsoever things should come into his heart.",
+      "verse": "13:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 48.004,
+      "end": 53.345,
+      "type": "line",
+      "text": "And it came to pass that they would not suffer that he should enter into the city;",
+      "verse": "13:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 53.525,
+      "end": 55.522,
+      "type": "line",
+      "text": "therefore he went",
+      "verse": "13:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 55.702,
+      "end": 57.792,
+      "type": "line",
+      "text": "and got upon the wall thereof,",
+      "verse": "13:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 57.972,
+      "end": 60.062,
+      "type": "line",
+      "text": "and stretched forth his hand",
+      "verse": "13:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 60.242,
+      "end": 62.1,
+      "type": "line",
+      "text": "and cried with a loud voice,",
+      "verse": "13:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 62.28,
+      "end": 67.11,
+      "type": "line",
+      "text": "and prophesied unto the people whatsoever things the Lord put into his heart.",
+      "verse": "13:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 67.79,
+      "end": 69.323,
+      "type": "line",
+      "text": "And he said unto them:",
+      "verse": "13:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 69.503,
+      "end": 74.008,
+      "type": "line",
+      "text": "Behold, I, Samuel, a Lamanite, do speak the words of the Lord",
+      "verse": "13:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 74.188,
+      "end": 76.603,
+      "type": "line",
+      "text": "which he doth put into my heart;",
+      "verse": "13:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 76.783,
+      "end": 81.009,
+      "type": "line",
+      "text": "and behold he hath put it into my heart to say unto this people",
+      "verse": "13:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 81.189,
+      "end": 84.3,
+      "type": "line",
+      "text": "that the sword of justice hangeth over this people;",
+      "verse": "13:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 84.48,
+      "end": 86.941,
+      "type": "line",
+      "text": "and four hundred years pass not away",
+      "verse": "13:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 87.121,
+      "end": 90.325,
+      "type": "line",
+      "text": "save the sword of justice falleth upon this people.",
+      "verse": "13:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 91.005,
+      "end": 93.977,
+      "type": "line",
+      "text": "Yea, heavy destruction awaiteth this people,",
+      "verse": "13:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 94.157,
+      "end": 96.758,
+      "type": "line",
+      "text": "and it surely cometh unto this people,",
+      "verse": "13:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 96.938,
+      "end": 99.26,
+      "type": "line",
+      "text": "and nothing can save this people",
+      "verse": "13:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 99.44,
+      "end": 103.062,
+      "type": "line",
+      "text": "save it be repentance and faith on the Lord Jesus Christ,",
+      "verse": "13:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 103.242,
+      "end": 105.657,
+      "type": "line",
+      "text": "who surely shall come into the world,",
+      "verse": "13:6",
+      "lineIndex": 32
+    },
+    {
+      "start": 105.837,
+      "end": 107.88,
+      "type": "line",
+      "text": "and shall suffer many things",
+      "verse": "13:6",
+      "lineIndex": 33
+    },
+    {
+      "start": 108.06,
+      "end": 109.964,
+      "type": "line",
+      "text": "and shall be slain for his people.",
+      "verse": "13:6",
+      "lineIndex": 34
+    },
+    {
+      "start": 110.644,
+      "end": 114.22,
+      "type": "line",
+      "text": "And behold, an angel of the Lord hath declared it unto me,",
+      "verse": "13:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 114.4,
+      "end": 116.908,
+      "type": "line",
+      "text": "and he did bring glad tidings to my soul.",
+      "verse": "13:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 117.088,
+      "end": 121.221,
+      "type": "line",
+      "text": "And behold, I was sent unto you to declare it unto you also,",
+      "verse": "13:7",
+      "lineIndex": 37
+    },
+    {
+      "start": 121.401,
+      "end": 123.723,
+      "type": "line",
+      "text": "that ye might have glad tidings;",
+      "verse": "13:7",
+      "lineIndex": 38
+    },
+    {
+      "start": 123.903,
+      "end": 126.225,
+      "type": "line",
+      "text": "but behold ye would not receive me.",
+      "verse": "13:7",
+      "lineIndex": 39
+    },
+    {
+      "start": 126.905,
+      "end": 133.592,
+      "type": "line",
+      "text": "Therefore, thus saith the Lord: Because of the hardness of the hearts of the people of the Nephites,",
+      "verse": "13:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 133.772,
+      "end": 135.397,
+      "type": "line",
+      "text": "except they repent",
+      "verse": "13:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 135.577,
+      "end": 137.806,
+      "type": "line",
+      "text": "I will take away my word from them,",
+      "verse": "13:8",
+      "lineIndex": 42
+    },
+    {
+      "start": 137.986,
+      "end": 140.215,
+      "type": "line",
+      "text": "and I will withdraw my Spirit from them,",
+      "verse": "13:8",
+      "lineIndex": 43
+    },
+    {
+      "start": 140.395,
+      "end": 142.485,
+      "type": "line",
+      "text": "and I will suffer them no longer,",
+      "verse": "13:8",
+      "lineIndex": 44
+    },
+    {
+      "start": 142.665,
+      "end": 146.566,
+      "type": "line",
+      "text": "and I will turn the hearts of their brethren against them.",
+      "verse": "13:8",
+      "lineIndex": 45
+    },
+    {
+      "start": 147.246,
+      "end": 149.94,
+      "type": "line",
+      "text": "And four hundred years shall not pass away",
+      "verse": "13:9",
+      "lineIndex": 46
+    },
+    {
+      "start": 150.12,
+      "end": 152.953,
+      "type": "line",
+      "text": "before I will cause that they shall be smitten;",
+      "verse": "13:9",
+      "lineIndex": 47
+    },
+    {
+      "start": 153.133,
+      "end": 157.731,
+      "type": "line",
+      "text": "yea, I will visit them with the sword and with famine and with pestilence.",
+      "verse": "13:9",
+      "lineIndex": 48
+    },
+    {
+      "start": 158.411,
+      "end": 160.965,
+      "type": "line",
+      "text": "Yea, I will visit them in my fierce anger,",
+      "verse": "13:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 161.145,
+      "end": 168.157,
+      "type": "line",
+      "text": "and there shall be those of the fourth generation who shall live, of your enemies, to behold your utter destruction;",
+      "verse": "13:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 168.337,
+      "end": 171.356,
+      "type": "line",
+      "text": "and this shall surely come except ye repent,",
+      "verse": "13:10",
+      "lineIndex": 51
+    },
+    {
+      "start": 171.536,
+      "end": 172.883,
+      "type": "line",
+      "text": "saith the Lord;",
+      "verse": "13:10",
+      "lineIndex": 52
+    },
+    {
+      "start": 173.063,
+      "end": 177.057,
+      "type": "line",
+      "text": "and those of the fourth generation shall visit your destruction.",
+      "verse": "13:10",
+      "lineIndex": 53
+    },
+    {
+      "start": 177.737,
+      "end": 180.895,
+      "type": "line",
+      "text": "But if ye will repent and return unto the Lord your God",
+      "verse": "13:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 181.075,
+      "end": 182.979,
+      "type": "line",
+      "text": "I will turn away mine anger,",
+      "verse": "13:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 183.159,
+      "end": 184.506,
+      "type": "line",
+      "text": "saith the Lord;",
+      "verse": "13:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 184.686,
+      "end": 186.358,
+      "type": "line",
+      "text": "yea, thus saith the Lord,",
+      "verse": "13:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 186.538,
+      "end": 189.696,
+      "type": "line",
+      "text": "blessed are they who will repent and turn unto me,",
+      "verse": "13:11",
+      "lineIndex": 59
+    },
+    {
+      "start": 189.876,
+      "end": 192.198,
+      "type": "line",
+      "text": "but wo unto him that repenteth not.",
+      "verse": "13:11",
+      "lineIndex": 60
+    },
+    {
+      "start": 192.878,
+      "end": 195.525,
+      "type": "line",
+      "text": "Yea, wo unto this great city of Zarahemla;",
+      "verse": "13:12",
+      "lineIndex": 61
+    },
+    {
+      "start": 195.705,
+      "end": 200.813,
+      "type": "line",
+      "text": "for behold, it is because of those who are righteous that it is saved;",
+      "verse": "13:12",
+      "lineIndex": 62
+    },
+    {
+      "start": 200.993,
+      "end": 203.083,
+      "type": "line",
+      "text": "yea, wo unto this great city,",
+      "verse": "13:12",
+      "lineIndex": 63
+    },
+    {
+      "start": 203.263,
+      "end": 204.935,
+      "type": "line",
+      "text": "for I perceive,",
+      "verse": "13:12",
+      "lineIndex": 64
+    },
+    {
+      "start": 205.115,
+      "end": 206.462,
+      "type": "line",
+      "text": "saith the Lord,",
+      "verse": "13:12",
+      "lineIndex": 65
+    },
+    {
+      "start": 206.642,
+      "end": 211.147,
+      "type": "line",
+      "text": "that there are many, yea, even the more part of this great city,",
+      "verse": "13:12",
+      "lineIndex": 66
+    },
+    {
+      "start": 211.327,
+      "end": 213.556,
+      "type": "line",
+      "text": "that will harden their hearts against me,",
+      "verse": "13:12",
+      "lineIndex": 67
+    },
+    {
+      "start": 213.736,
+      "end": 215.036,
+      "type": "line",
+      "text": "saith the Lord.",
+      "verse": "13:12",
+      "lineIndex": 68
+    },
+    {
+      "start": 215.716,
+      "end": 218.131,
+      "type": "line",
+      "text": "But blessed are they who will repent,",
+      "verse": "13:13",
+      "lineIndex": 69
+    },
+    {
+      "start": 218.311,
+      "end": 220.029,
+      "type": "line",
+      "text": "for them will I spare.",
+      "verse": "13:13",
+      "lineIndex": 70
+    },
+    {
+      "start": 220.209,
+      "end": 224.807,
+      "type": "line",
+      "text": "But behold, if it were not for the righteous who are in this great city,",
+      "verse": "13:13",
+      "lineIndex": 71
+    },
+    {
+      "start": 224.987,
+      "end": 230.049,
+      "type": "line",
+      "text": "behold, I would cause that fire should come down out of heaven and destroy it.",
+      "verse": "13:13",
+      "lineIndex": 72
+    },
+    {
+      "start": 230.729,
+      "end": 234.166,
+      "type": "line",
+      "text": "But behold, it is for the righteous' sake that it is spared.",
+      "verse": "13:14",
+      "lineIndex": 73
+    },
+    {
+      "start": 234.346,
+      "end": 236.343,
+      "type": "line",
+      "text": "But behold, the time cometh,",
+      "verse": "13:14",
+      "lineIndex": 74
+    },
+    {
+      "start": 236.523,
+      "end": 237.87,
+      "type": "line",
+      "text": "saith the Lord,",
+      "verse": "13:14",
+      "lineIndex": 75
+    },
+    {
+      "start": 238.05,
+      "end": 241.579,
+      "type": "line",
+      "text": "that when ye shall cast out the righteous from among you,",
+      "verse": "13:14",
+      "lineIndex": 76
+    },
+    {
+      "start": 241.759,
+      "end": 244.267,
+      "type": "line",
+      "text": "then shall ye be ripe for destruction;",
+      "verse": "13:14",
+      "lineIndex": 77
+    },
+    {
+      "start": 244.447,
+      "end": 251.32,
+      "type": "line",
+      "text": "yea, wo be unto this great city, because of the wickedness and abominations which are in her.",
+      "verse": "13:14",
+      "lineIndex": 78
+    },
+    {
+      "start": 252.0,
+      "end": 254.601,
+      "type": "line",
+      "text": "Yea, and wo be unto the city of Gideon,",
+      "verse": "13:15",
+      "lineIndex": 79
+    },
+    {
+      "start": 254.781,
+      "end": 258.31,
+      "type": "line",
+      "text": "for the wickedness and abominations which are in her.",
+      "verse": "13:15",
+      "lineIndex": 80
+    },
+    {
+      "start": 258.99,
+      "end": 263.123,
+      "type": "line",
+      "text": "Yea, and wo be unto all the cities which are in the land round about,",
+      "verse": "13:16",
+      "lineIndex": 81
+    },
+    {
+      "start": 263.303,
+      "end": 270.548,
+      "type": "line",
+      "text": "which are possessed by the Nephites, because of the wickedness and abominations which are in them.",
+      "verse": "13:16",
+      "lineIndex": 82
+    },
+    {
+      "start": 271.228,
+      "end": 274.804,
+      "type": "line",
+      "text": "And behold, a curse shall come upon the land,",
+      "verse": "13:17",
+      "lineIndex": 83
+    },
+    {
+      "start": 274.984,
+      "end": 276.609,
+      "type": "line",
+      "text": "saith the Lord of Hosts,",
+      "verse": "13:17",
+      "lineIndex": 84
+    },
+    {
+      "start": 276.789,
+      "end": 279.993,
+      "type": "line",
+      "text": "because of the people's sake who are upon the land,",
+      "verse": "13:17",
+      "lineIndex": 85
+    },
+    {
+      "start": 280.173,
+      "end": 283.331,
+      "type": "line",
+      "text": "yea, because of their wickedness and their abominations.",
+      "verse": "13:17",
+      "lineIndex": 86
+    },
+    {
+      "start": 284.011,
+      "end": 285.915,
+      "type": "line",
+      "text": "And it shall come to pass,",
+      "verse": "13:18",
+      "lineIndex": 87
+    },
+    {
+      "start": 286.095,
+      "end": 287.72,
+      "type": "line",
+      "text": "saith the Lord of Hosts,",
+      "verse": "13:18",
+      "lineIndex": 88
+    },
+    {
+      "start": 287.9,
+      "end": 289.99,
+      "type": "line",
+      "text": "yea, our great and true God,",
+      "verse": "13:18",
+      "lineIndex": 89
+    },
+    {
+      "start": 290.17,
+      "end": 293.003,
+      "type": "line",
+      "text": "that whoso shall hide up treasures in the earth",
+      "verse": "13:18",
+      "lineIndex": 90
+    },
+    {
+      "start": 293.183,
+      "end": 297.734,
+      "type": "line",
+      "text": "shall find them again no more, because of the great curse of the land,",
+      "verse": "13:18",
+      "lineIndex": 91
+    },
+    {
+      "start": 297.914,
+      "end": 301.769,
+      "type": "line",
+      "text": "save he be a righteous man and shall hide it up unto the Lord.",
+      "verse": "13:18",
+      "lineIndex": 92
+    },
+    {
+      "start": 302.449,
+      "end": 304.307,
+      "type": "line",
+      "text": "For I will, saith the Lord",
+      "verse": "13:19",
+      "lineIndex": 93
+    },
+    {
+      "start": 304.487,
+      "end": 307.738,
+      "type": "line",
+      "text": "that they shall hide up their treasures unto me;",
+      "verse": "13:19",
+      "lineIndex": 94
+    },
+    {
+      "start": 307.918,
+      "end": 312.051,
+      "type": "line",
+      "text": "and cursed be they who hide not up their treasures unto me;",
+      "verse": "13:19",
+      "lineIndex": 95
+    },
+    {
+      "start": 312.231,
+      "end": 316.503,
+      "type": "line",
+      "text": "for none hideth up their treasures unto me save it be the righteous;",
+      "verse": "13:19",
+      "lineIndex": 96
+    },
+    {
+      "start": 316.683,
+      "end": 319.934,
+      "type": "line",
+      "text": "and he that hideth not up his treasures unto me,",
+      "verse": "13:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 320.114,
+      "end": 322.668,
+      "type": "line",
+      "text": "cursed is he, and also the treasure,",
+      "verse": "13:19",
+      "lineIndex": 98
+    },
+    {
+      "start": 322.848,
+      "end": 325.959,
+      "type": "line",
+      "text": "and none shall redeem it because of the curse of the land.",
+      "verse": "13:19",
+      "lineIndex": 99
+    },
+    {
+      "start": 326.639,
+      "end": 330.261,
+      "type": "line",
+      "text": "And the day shall come that they shall hide up their treasures,",
+      "verse": "13:20",
+      "lineIndex": 100
+    },
+    {
+      "start": 330.441,
+      "end": 333.274,
+      "type": "line",
+      "text": "because they have set their hearts upon riches;",
+      "verse": "13:20",
+      "lineIndex": 101
+    },
+    {
+      "start": 333.454,
+      "end": 336.844,
+      "type": "line",
+      "text": "and because they have set their hearts upon their riches,",
+      "verse": "13:20",
+      "lineIndex": 102
+    },
+    {
+      "start": 337.024,
+      "end": 341.668,
+      "type": "line",
+      "text": "and will hide up their treasures when they shall flee before their enemies;",
+      "verse": "13:20",
+      "lineIndex": 103
+    },
+    {
+      "start": 341.848,
+      "end": 344.309,
+      "type": "line",
+      "text": "because they will not hide them up unto me,",
+      "verse": "13:20",
+      "lineIndex": 104
+    },
+    {
+      "start": 344.489,
+      "end": 347.183,
+      "type": "line",
+      "text": "cursed be they and also their treasures;",
+      "verse": "13:20",
+      "lineIndex": 105
+    },
+    {
+      "start": 347.363,
+      "end": 350.01,
+      "type": "line",
+      "text": "and in that day shall they be smitten,",
+      "verse": "13:20",
+      "lineIndex": 106
+    },
+    {
+      "start": 350.19,
+      "end": 351.49,
+      "type": "line",
+      "text": "saith the Lord.",
+      "verse": "13:20",
+      "lineIndex": 107
+    },
+    {
+      "start": 352.17,
+      "end": 354.771,
+      "type": "line",
+      "text": "Behold ye, the people of this great city,",
+      "verse": "13:21",
+      "lineIndex": 108
+    },
+    {
+      "start": 354.951,
+      "end": 356.855,
+      "type": "line",
+      "text": "and hearken unto my words;",
+      "verse": "13:21",
+      "lineIndex": 109
+    },
+    {
+      "start": 357.035,
+      "end": 360.379,
+      "type": "line",
+      "text": "yea, hearken unto the words which the Lord saith;",
+      "verse": "13:21",
+      "lineIndex": 110
+    },
+    {
+      "start": 360.559,
+      "end": 364.599,
+      "type": "line",
+      "text": "for behold, he saith that ye are cursed because of your riches,",
+      "verse": "13:21",
+      "lineIndex": 111
+    },
+    {
+      "start": 364.779,
+      "end": 367.101,
+      "type": "line",
+      "text": "and also are your riches cursed",
+      "verse": "13:21",
+      "lineIndex": 112
+    },
+    {
+      "start": 367.281,
+      "end": 369.928,
+      "type": "line",
+      "text": "because ye have set your hearts upon them,",
+      "verse": "13:21",
+      "lineIndex": 113
+    },
+    {
+      "start": 370.108,
+      "end": 374.845,
+      "type": "line",
+      "text": "and have not hearkened unto the words of him who gave them unto you.",
+      "verse": "13:21",
+      "lineIndex": 114
+    },
+    {
+      "start": 375.525,
+      "end": 377.801,
+      "type": "line",
+      "text": "Ye do not remember the Lord your God",
+      "verse": "13:22",
+      "lineIndex": 116
+    },
+    {
+      "start": 377.981,
+      "end": 380.814,
+      "type": "line",
+      "text": "in the things with which he hath blessed you,",
+      "verse": "13:22",
+      "lineIndex": 117
+    },
+    {
+      "start": 380.994,
+      "end": 383.177,
+      "type": "line",
+      "text": "but ye do always remember your riches,",
+      "verse": "13:22",
+      "lineIndex": 118
+    },
+    {
+      "start": 383.357,
+      "end": 385.772,
+      "type": "line",
+      "text": "not to thank the Lord your God for them;",
+      "verse": "13:22",
+      "lineIndex": 119
+    },
+    {
+      "start": 385.952,
+      "end": 388.971,
+      "type": "line",
+      "text": "yea, your hearts are not drawn out unto the Lord,",
+      "verse": "13:22",
+      "lineIndex": 120
+    },
+    {
+      "start": 389.151,
+      "end": 392.262,
+      "type": "line",
+      "text": "but they do swell with great pride, unto boasting,",
+      "verse": "13:22",
+      "lineIndex": 121
+    },
+    {
+      "start": 392.442,
+      "end": 398.154,
+      "type": "line",
+      "text": "and unto great swelling, envyings, strifes, malice, persecutions, and murders,",
+      "verse": "13:22",
+      "lineIndex": 122
+    },
+    {
+      "start": 398.334,
+      "end": 400.331,
+      "type": "line",
+      "text": "and all manner of iniquities.",
+      "verse": "13:22",
+      "lineIndex": 123
+    },
+    {
+      "start": 401.011,
+      "end": 408.256,
+      "type": "line",
+      "text": "For this cause hath the Lord God caused that a curse should come upon the land, and also upon your riches,",
+      "verse": "13:23",
+      "lineIndex": 124
+    },
+    {
+      "start": 408.436,
+      "end": 410.804,
+      "type": "line",
+      "text": "and this because of your iniquities.",
+      "verse": "13:23",
+      "lineIndex": 125
+    },
+    {
+      "start": 411.484,
+      "end": 415.478,
+      "type": "line",
+      "text": "Yea, wo unto this people, because of this time which has arrived,",
+      "verse": "13:24",
+      "lineIndex": 126
+    },
+    {
+      "start": 415.658,
+      "end": 417.841,
+      "type": "line",
+      "text": "that ye do cast out the prophets,",
+      "verse": "13:24",
+      "lineIndex": 127
+    },
+    {
+      "start": 418.021,
+      "end": 419.507,
+      "type": "line",
+      "text": "and do mock them,",
+      "verse": "13:24",
+      "lineIndex": 128
+    },
+    {
+      "start": 419.687,
+      "end": 421.545,
+      "type": "line",
+      "text": "and cast stones at them,",
+      "verse": "13:24",
+      "lineIndex": 129
+    },
+    {
+      "start": 421.725,
+      "end": 423.165,
+      "type": "line",
+      "text": "and do slay them,",
+      "verse": "13:24",
+      "lineIndex": 130
+    },
+    {
+      "start": 423.345,
+      "end": 426.41,
+      "type": "line",
+      "text": "and do all manner of iniquity unto them,",
+      "verse": "13:24",
+      "lineIndex": 131
+    },
+    {
+      "start": 426.59,
+      "end": 428.587,
+      "type": "line",
+      "text": "even as they did of old time.",
+      "verse": "13:24",
+      "lineIndex": 132
+    },
+    {
+      "start": 429.267,
+      "end": 430.8,
+      "type": "line",
+      "text": "And now when ye talk,",
+      "verse": "13:25",
+      "lineIndex": 133
+    },
+    {
+      "start": 430.98,
+      "end": 432.095,
+      "type": "line",
+      "text": "ye say:",
+      "verse": "13:25",
+      "lineIndex": 134
+    },
+    {
+      "start": 432.275,
+      "end": 435.479,
+      "type": "line",
+      "text": "If our days had been in the days of our fathers of old,",
+      "verse": "13:25",
+      "lineIndex": 135
+    },
+    {
+      "start": 435.659,
+      "end": 437.749,
+      "type": "line",
+      "text": "we would not have slain the prophets;",
+      "verse": "13:25",
+      "lineIndex": 136
+    },
+    {
+      "start": 437.929,
+      "end": 441.366,
+      "type": "line",
+      "text": "we would not have stoned them, and cast them out.",
+      "verse": "13:25",
+      "lineIndex": 137
+    },
+    {
+      "start": 442.046,
+      "end": 444.089,
+      "type": "line",
+      "text": "Behold ye are worse than they;",
+      "verse": "13:26",
+      "lineIndex": 138
+    },
+    {
+      "start": 444.269,
+      "end": 447.241,
+      "type": "line",
+      "text": "for as the Lord liveth, if a prophet come among you",
+      "verse": "13:26",
+      "lineIndex": 139
+    },
+    {
+      "start": 447.421,
+      "end": 450.44,
+      "type": "line",
+      "text": "and declareth unto you the word of the Lord,",
+      "verse": "13:26",
+      "lineIndex": 140
+    },
+    {
+      "start": 450.62,
+      "end": 454.103,
+      "type": "line",
+      "text": "which testifieth of your sins and iniquities,",
+      "verse": "13:26",
+      "lineIndex": 141
+    },
+    {
+      "start": 454.283,
+      "end": 456.651,
+      "type": "line",
+      "text": "ye are angry with him, and cast him out",
+      "verse": "13:26",
+      "lineIndex": 142
+    },
+    {
+      "start": 456.831,
+      "end": 459.617,
+      "type": "line",
+      "text": "and seek all manner of ways to destroy him;",
+      "verse": "13:26",
+      "lineIndex": 143
+    },
+    {
+      "start": 459.797,
+      "end": 462.769,
+      "type": "line",
+      "text": "yea, you will say that he is a false prophet,",
+      "verse": "13:26",
+      "lineIndex": 144
+    },
+    {
+      "start": 462.949,
+      "end": 465.875,
+      "type": "line",
+      "text": "and that he is a sinner, and of the devil,",
+      "verse": "13:26",
+      "lineIndex": 145
+    },
+    {
+      "start": 466.055,
+      "end": 469.12,
+      "type": "line",
+      "text": "because he testifieth that your deeds are evil.",
+      "verse": "13:26",
+      "lineIndex": 146
+    },
+    {
+      "start": 469.8,
+      "end": 473.237,
+      "type": "line",
+      "text": "But behold, if a man shall come among you and shall say:",
+      "verse": "13:27",
+      "lineIndex": 147
+    },
+    {
+      "start": 473.417,
+      "end": 475.646,
+      "type": "line",
+      "text": "Do this, and there is no iniquity;",
+      "verse": "13:27",
+      "lineIndex": 148
+    },
+    {
+      "start": 475.826,
+      "end": 479.355,
+      "type": "line",
+      "text": "do that and ye shall not suffer; yea, he will say:",
+      "verse": "13:27",
+      "lineIndex": 149
+    },
+    {
+      "start": 479.535,
+      "end": 481.95,
+      "type": "line",
+      "text": "Walk after the pride of your own hearts;",
+      "verse": "13:27",
+      "lineIndex": 150
+    },
+    {
+      "start": 482.13,
+      "end": 484.684,
+      "type": "line",
+      "text": "yea, walk after the pride of your eyes,",
+      "verse": "13:27",
+      "lineIndex": 151
+    },
+    {
+      "start": 484.864,
+      "end": 487.186,
+      "type": "line",
+      "text": "and do whatsoever your heart desireth\u2014",
+      "verse": "13:27",
+      "lineIndex": 152
+    },
+    {
+      "start": 487.366,
+      "end": 491.871,
+      "type": "line",
+      "text": "and if a man shall come among you and say this, ye will receive him,",
+      "verse": "13:27",
+      "lineIndex": 153
+    },
+    {
+      "start": 492.051,
+      "end": 493.816,
+      "type": "line",
+      "text": "and say that he is a prophet.",
+      "verse": "13:27",
+      "lineIndex": 154
+    },
+    {
+      "start": 494.496,
+      "end": 496.075,
+      "type": "line",
+      "text": "Yea, ye will lift him up,",
+      "verse": "13:28",
+      "lineIndex": 155
+    },
+    {
+      "start": 496.255,
+      "end": 498.995,
+      "type": "line",
+      "text": "and ye will give unto him of your substance;",
+      "verse": "13:28",
+      "lineIndex": 156
+    },
+    {
+      "start": 499.175,
+      "end": 502.565,
+      "type": "line",
+      "text": "ye will give unto him of your gold, and of your silver,",
+      "verse": "13:28",
+      "lineIndex": 157
+    },
+    {
+      "start": 502.745,
+      "end": 505.299,
+      "type": "line",
+      "text": "and ye will clothe him with costly apparel;",
+      "verse": "13:28",
+      "lineIndex": 158
+    },
+    {
+      "start": 505.479,
+      "end": 508.73,
+      "type": "line",
+      "text": "and because he speaketh flattering words unto you,",
+      "verse": "13:28",
+      "lineIndex": 159
+    },
+    {
+      "start": 508.91,
+      "end": 510.582,
+      "type": "line",
+      "text": "and he saith that all is well,",
+      "verse": "13:28",
+      "lineIndex": 160
+    },
+    {
+      "start": 510.762,
+      "end": 513.084,
+      "type": "line",
+      "text": "then ye will not find fault with him.",
+      "verse": "13:28",
+      "lineIndex": 161
+    },
+    {
+      "start": 513.764,
+      "end": 516.458,
+      "type": "line",
+      "text": "O ye wicked and ye perverse generation;",
+      "verse": "13:29",
+      "lineIndex": 162
+    },
+    {
+      "start": 516.638,
+      "end": 519.285,
+      "type": "line",
+      "text": "ye hardened and ye stiffnecked people,",
+      "verse": "13:29",
+      "lineIndex": 163
+    },
+    {
+      "start": 519.465,
+      "end": 522.344,
+      "type": "line",
+      "text": "how long will ye suppose that the Lord will suffer you?",
+      "verse": "13:29",
+      "lineIndex": 164
+    },
+    {
+      "start": 522.524,
+      "end": 527.493,
+      "type": "line",
+      "text": "Yea, how long will ye suffer yourselves to be led by foolish and blind guides?",
+      "verse": "13:29",
+      "lineIndex": 165
+    },
+    {
+      "start": 527.673,
+      "end": 531.202,
+      "type": "line",
+      "text": "Yea, how long will ye choose darkness rather than light?",
+      "verse": "13:29",
+      "lineIndex": 166
+    },
+    {
+      "start": 531.882,
+      "end": 535.551,
+      "type": "line",
+      "text": "Yea, behold, the anger of the Lord is already kindled against you;",
+      "verse": "13:30",
+      "lineIndex": 167
+    },
+    {
+      "start": 535.731,
+      "end": 539.353,
+      "type": "line",
+      "text": "behold, he hath cursed the land because of your iniquity.",
+      "verse": "13:30",
+      "lineIndex": 168
+    },
+    {
+      "start": 540.033,
+      "end": 543.516,
+      "type": "line",
+      "text": "And behold, the time cometh that he curseth your riches,",
+      "verse": "13:31",
+      "lineIndex": 169
+    },
+    {
+      "start": 543.696,
+      "end": 545.461,
+      "type": "line",
+      "text": "that they become slippery,",
+      "verse": "13:31",
+      "lineIndex": 170
+    },
+    {
+      "start": 545.641,
+      "end": 547.359,
+      "type": "line",
+      "text": "that ye cannot hold them;",
+      "verse": "13:31",
+      "lineIndex": 171
+    },
+    {
+      "start": 547.539,
+      "end": 551.208,
+      "type": "line",
+      "text": "and in the days of your poverty ye cannot retain them.",
+      "verse": "13:31",
+      "lineIndex": 172
+    },
+    {
+      "start": 551.888,
+      "end": 555.278,
+      "type": "line",
+      "text": "And in the days of your poverty ye shall cry unto the Lord;",
+      "verse": "13:32",
+      "lineIndex": 173
+    },
+    {
+      "start": 555.458,
+      "end": 557.13,
+      "type": "line",
+      "text": "and in vain shall ye cry,",
+      "verse": "13:32",
+      "lineIndex": 174
+    },
+    {
+      "start": 557.31,
+      "end": 560.143,
+      "type": "line",
+      "text": "for your desolation is already come upon you,",
+      "verse": "13:32",
+      "lineIndex": 175
+    },
+    {
+      "start": 560.323,
+      "end": 562.552,
+      "type": "line",
+      "text": "and your destruction is made sure;",
+      "verse": "13:32",
+      "lineIndex": 176
+    },
+    {
+      "start": 562.732,
+      "end": 565.658,
+      "type": "line",
+      "text": "and then shall ye weep and howl in that day,",
+      "verse": "13:32",
+      "lineIndex": 177
+    },
+    {
+      "start": 565.838,
+      "end": 567.603,
+      "type": "line",
+      "text": "saith the Lord of Hosts.",
+      "verse": "13:32",
+      "lineIndex": 178
+    },
+    {
+      "start": 567.783,
+      "end": 570.151,
+      "type": "line",
+      "text": "And then shall ye lament, and say:",
+      "verse": "13:32",
+      "lineIndex": 179
+    },
+    {
+      "start": 570.831,
+      "end": 572.549,
+      "type": "line",
+      "text": "O that I had repented,",
+      "verse": "13:33",
+      "lineIndex": 180
+    },
+    {
+      "start": 572.729,
+      "end": 574.679,
+      "type": "line",
+      "text": "and had not killed the prophets,",
+      "verse": "13:33",
+      "lineIndex": 181
+    },
+    {
+      "start": 574.859,
+      "end": 576.159,
+      "type": "line",
+      "text": "and stoned them,",
+      "verse": "13:33",
+      "lineIndex": 182
+    },
+    {
+      "start": 576.339,
+      "end": 577.964,
+      "type": "line",
+      "text": "and cast them out.",
+      "verse": "13:33",
+      "lineIndex": 183
+    },
+    {
+      "start": 578.144,
+      "end": 579.955,
+      "type": "line",
+      "text": "Yea, in that day ye shall say:",
+      "verse": "13:33",
+      "lineIndex": 184
+    },
+    {
+      "start": 580.135,
+      "end": 582.689,
+      "type": "line",
+      "text": "O that we had remembered the Lord our God",
+      "verse": "13:33",
+      "lineIndex": 185
+    },
+    {
+      "start": 582.869,
+      "end": 585.655,
+      "type": "line",
+      "text": "in the day that he gave us our riches,",
+      "verse": "13:33",
+      "lineIndex": 186
+    },
+    {
+      "start": 585.835,
+      "end": 588.296,
+      "type": "line",
+      "text": "and then they would not have become slippery",
+      "verse": "13:33",
+      "lineIndex": 187
+    },
+    {
+      "start": 588.476,
+      "end": 589.962,
+      "type": "line",
+      "text": "that we should lose them;",
+      "verse": "13:33",
+      "lineIndex": 188
+    },
+    {
+      "start": 590.142,
+      "end": 592.51,
+      "type": "line",
+      "text": "for behold, our riches are gone from us.",
+      "verse": "13:33",
+      "lineIndex": 189
+    },
+    {
+      "start": 593.19,
+      "end": 596.487,
+      "type": "line",
+      "text": "Behold, we lay a tool here and on the morrow it is gone;",
+      "verse": "13:34",
+      "lineIndex": 190
+    },
+    {
+      "start": 596.667,
+      "end": 599.453,
+      "type": "line",
+      "text": "and behold, our swords are taken from us",
+      "verse": "13:34",
+      "lineIndex": 191
+    },
+    {
+      "start": 599.633,
+      "end": 601.63,
+      "type": "line",
+      "text": "in the day we have sought them for battle.",
+      "verse": "13:34",
+      "lineIndex": 192
+    },
+    {
+      "start": 602.31,
+      "end": 604.632,
+      "type": "line",
+      "text": "Yea, we have hid up our treasures",
+      "verse": "13:35",
+      "lineIndex": 193
+    },
+    {
+      "start": 604.812,
+      "end": 609.595,
+      "type": "line",
+      "text": "and they have slipped away from us, because of the curse of the land.",
+      "verse": "13:35",
+      "lineIndex": 194
+    },
+    {
+      "start": 610.275,
+      "end": 614.873,
+      "type": "line",
+      "text": "O that we had repented in the day that the word of the Lord came unto us;",
+      "verse": "13:36",
+      "lineIndex": 195
+    },
+    {
+      "start": 615.053,
+      "end": 617.003,
+      "type": "line",
+      "text": "for behold the land is cursed,",
+      "verse": "13:36",
+      "lineIndex": 196
+    },
+    {
+      "start": 617.183,
+      "end": 619.226,
+      "type": "line",
+      "text": "and all things are become slippery,",
+      "verse": "13:36",
+      "lineIndex": 197
+    },
+    {
+      "start": 619.406,
+      "end": 621.264,
+      "type": "line",
+      "text": "and we cannot hold them.",
+      "verse": "13:36",
+      "lineIndex": 198
+    },
+    {
+      "start": 621.944,
+      "end": 624.405,
+      "type": "line",
+      "text": "Behold, we are surrounded by demons,",
+      "verse": "13:37",
+      "lineIndex": 199
+    },
+    {
+      "start": 624.585,
+      "end": 627.836,
+      "type": "line",
+      "text": "yea, we are encircled about by the angels of him",
+      "verse": "13:37",
+      "lineIndex": 200
+    },
+    {
+      "start": 628.016,
+      "end": 630.292,
+      "type": "line",
+      "text": "who hath sought to destroy our souls.",
+      "verse": "13:37",
+      "lineIndex": 201
+    },
+    {
+      "start": 630.472,
+      "end": 632.701,
+      "type": "line",
+      "text": "Behold, our iniquities are great.",
+      "verse": "13:37",
+      "lineIndex": 202
+    },
+    {
+      "start": 632.881,
+      "end": 633.903,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "13:37",
+      "lineIndex": 203
+    },
+    {
+      "start": 634.083,
+      "end": 636.962,
+      "type": "line",
+      "text": "canst thou not turn away thine anger from us?",
+      "verse": "13:37",
+      "lineIndex": 204
+    },
+    {
+      "start": 637.142,
+      "end": 639.882,
+      "type": "line",
+      "text": "And this shall be your language in those days.",
+      "verse": "13:37",
+      "lineIndex": 205
+    },
+    {
+      "start": 640.562,
+      "end": 643.209,
+      "type": "line",
+      "text": "But behold, your days of probation are past;",
+      "verse": "13:38",
+      "lineIndex": 206
+    },
+    {
+      "start": 643.389,
+      "end": 646.547,
+      "type": "line",
+      "text": "ye have procrastinated the day of your salvation",
+      "verse": "13:38",
+      "lineIndex": 207
+    },
+    {
+      "start": 646.727,
+      "end": 649.095,
+      "type": "line",
+      "text": "until it is everlastingly too late,",
+      "verse": "13:38",
+      "lineIndex": 208
+    },
+    {
+      "start": 649.275,
+      "end": 651.504,
+      "type": "line",
+      "text": "and your destruction is made sure;",
+      "verse": "13:38",
+      "lineIndex": 209
+    },
+    {
+      "start": 651.684,
+      "end": 654.517,
+      "type": "line",
+      "text": "yea, for ye have sought all the days of your lives",
+      "verse": "13:38",
+      "lineIndex": 210
+    },
+    {
+      "start": 654.697,
+      "end": 657.019,
+      "type": "line",
+      "text": "for that which ye could not obtain;",
+      "verse": "13:38",
+      "lineIndex": 211
+    },
+    {
+      "start": 657.199,
+      "end": 660.45,
+      "type": "line",
+      "text": "and ye have sought for happiness in doing iniquity,",
+      "verse": "13:38",
+      "lineIndex": 212
+    },
+    {
+      "start": 660.63,
+      "end": 664.067,
+      "type": "line",
+      "text": "which thing is contrary to the nature of that righteousness",
+      "verse": "13:38",
+      "lineIndex": 213
+    },
+    {
+      "start": 664.247,
+      "end": 666.662,
+      "type": "line",
+      "text": "which is in our great and Eternal Head.",
+      "verse": "13:38",
+      "lineIndex": 214
+    },
+    {
+      "start": 667.342,
+      "end": 670.268,
+      "type": "line",
+      "text": "O ye people of the land, that ye would hear my words!",
+      "verse": "13:39",
+      "lineIndex": 215
+    },
+    {
+      "start": 670.448,
+      "end": 673.467,
+      "type": "line",
+      "text": "And I pray that the anger of the Lord be turned away from you,",
+      "verse": "13:39",
+      "lineIndex": 216
+    },
+    {
+      "start": 673.647,
+      "end": 676.201,
+      "type": "line",
+      "text": "and that ye would repent and be saved.",
+      "verse": "13:39",
+      "lineIndex": 217
+    }
+  ]
+}
