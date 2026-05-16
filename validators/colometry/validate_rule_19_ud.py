@@ -26,6 +26,19 @@ Violation classes:
   STRONG-SPLIT    — PRON/DET head, matrix and relative on SAME line → split.
   REVIEW-REQUIRED — NOUN head (discourse-ambiguous) or unclassified UPOS.
 
+REVIEW-REQUIRED subtypes (added 2026-05-16 per directive
+2026-05-16-2100-r19-output-restructure.md):
+  review_subtype="same-line"  — head and relative already on the SAME v2 line.
+                                Editorial question: "verify this existing
+                                merge is correct" (resolver is auditing).
+  review_subtype="cross-line" — head and relative on DIFFERENT v2 lines.
+                                Editorial question: "should we close this
+                                split?" (resolver is deciding).
+The distinction matters for downstream resolvers and any future auto-apply
+gating — the two subtypes have different risk profiles. The resolver
+prototype (commit eb821f6) surfaced ~60% same-line / ~40% cross-line in
+its first 25-case sample; this field surfaces the distinction systemically.
+
 NOTE: Rule 17 takes precedence. acl:relcl tokens where the head is in a
 ccomp position are NOT surfaced here (Rule 17 governs complement integrity).
 """
@@ -139,6 +152,16 @@ def scan_book(book_id: str) -> list[dict]:
             if bucket is None:
                 continue
 
+            # SAME-LINE / CROSS-LINE subtype for REVIEW cases (per directive
+            # 2026-05-16-2100-r19-output-restructure.md, codified per the
+            # resolver-prototype finding that ~60% of REVIEW cases are
+            # already-merged same-line and ~40% are cross-line splits — two
+            # structurally-different editorial questions that auto-apply
+            # gating would need to handle with different risk profiles).
+            review_subtype = None
+            if bucket == "REVIEW-REQUIRED":
+                review_subtype = "same-line" if on_same_line else "cross-line"
+
             results.append({
                 "book": book_id,
                 "sent_id": sent.sent_id,
@@ -153,6 +176,7 @@ def scan_book(book_id: str) -> list[dict]:
                 "direction": direction,
                 "reason": reason,
                 "bucket": bucket,
+                "review_subtype": review_subtype,
                 "sent_text": sent.text[:120],
             })
 
@@ -181,6 +205,8 @@ def main():
     strong_split  = [r for r in all_results if r["bucket"] == "STRONG-SPLIT"]
     strong_merge  = [r for r in all_results if r["bucket"] == "STRONG-MERGE"]
     review        = [r for r in all_results if r["bucket"] == "REVIEW-REQUIRED"]
+    review_same   = [r for r in review if r.get("review_subtype") == "same-line"]
+    review_cross  = [r for r in review if r.get("review_subtype") == "cross-line"]
 
     print("=" * 72)
     print("Rule 19 UD-query — Cataphoric vs Anaphoric Relative — BofM corpus")
@@ -190,6 +216,8 @@ def main():
     print(f"  STRONG-SPLIT:      {len(strong_split)}")
     print(f"  STRONG-MERGE:      {len(strong_merge)}")
     print(f"  REVIEW-REQUIRED:   {len(review)}")
+    print(f"    same-line:       {len(review_same)}   (verify existing merge)")
+    print(f"    cross-line:      {len(review_cross)}   (close existing split?)")
     print()
 
     def show_samples(label: str, items: list[dict], n: int = 5):
@@ -198,7 +226,12 @@ def main():
         print(f"--- {label} (up to {n} samples) ---")
         for r in items[:n]:
             print(f"  [{r['book']}] sent={r['sent_id']}")
-            reason_str = f"  reason={r['reason']}" if r.get("reason") else ""
+            reason_parts = []
+            if r.get("review_subtype"):
+                reason_parts.append(f"subtype={r['review_subtype']}")
+            if r.get("reason"):
+                reason_parts.append(f"reason={r['reason']}")
+            reason_str = "  " + "  ".join(reason_parts) if reason_parts else ""
             print(f"    head: {r['head_form']!r} (lemma={r['head_lemma']}, upos={r['head_upos']}) "
                   f"line {r['head_line']}{reason_str}")
             print(f"    rel:  {r['rel_root_form']!r} (lemma={r['rel_root_lemma']}) "

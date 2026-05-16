@@ -1215,6 +1215,12 @@ PATRIARCH_DEITY_TRIAD_VARIANTS:
 - **PRON** or **DET** head → cataphoric; a line break MUST be inserted before the relative pronoun (*which*, *that*, *who*, *whoso*, *whatsoever*).
 - **NOUN** head → MUST be routed to REVIEW-REQUIRED. Mechanical resolution by lemma is NOT authorized.
 
+**REVIEW-REQUIRED output subtypes** (codified 2026-05-16 per directive `2026-05-16-2100-r19-output-restructure.md`). The validator surfaces two structurally-different editorial questions under the REVIEW-REQUIRED bucket; each NOUN-head case is tagged `review_subtype`:
+- **`same-line`** — head and relative-clause root are already on the SAME v2-mine line. The editorial question is *"verify this existing merge is correct"* (the resolver audits a structure that is already merged).
+- **`cross-line`** — head and relative-clause root are on DIFFERENT v2-mine lines. The editorial question is *"should we close this split?"* (the resolver decides whether to merge).
+
+The two subtypes have different risk profiles and (eventually) different auto-apply gating considerations: `same-line` cases are existing-merge audits where the v2-mine source has already exercised editorial judgment, while `cross-line` cases are unresolved splits where the resolver must affirmatively justify a merge. Full-corpus distribution at first measurement (2026-05-16, against the v2-mine state at that date): **2586 REVIEW-REQUIRED cases total — 1823 `same-line` (70%) + 763 `cross-line` (30%)**.
+
 V2 routing simplification (codified 2026-05-16 per validator retrospective): the previous lemma-driven NOUN-head sub-routing — three closed-lists (obligatory-reference noun heads, predicative-identifier copulas, referential-completing adjective modifiers) — caused ~1,400 false STRONG-SPLITs corpus-wide on common NOUN heads (*things*, *words*, *men*). Audit confirmed most cases were anaphoric. The lemma-driven sub-routing was retired; NOUN heads now route unconditionally to REVIEW-REQUIRED. Per-instance resolution for NOUN-headed relatives requires discourse-context judgment beyond the UD parse.
 
 Expletive *it* in cleft constructions and result/purpose clauses with new predication are NOT anaphoric regardless of surface anaphor-like material; these route per Exclusions below. When a *that*-clause is the complement of a Rule 17 governing verb, R17 wins and R19 MUST NOT fire.

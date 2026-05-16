@@ -50,11 +50,15 @@ SEARCH_SUBDIRS = [
     "validators/colometry",
     "validators/syntax",
     "data",
+    "data/text-files",
     "data/text-files/v2-mine",
     "data/syntax-reference",
     "scripts",
     "colab",
     "books",
+    "directives/pending",
+    "directives/processed",
+    "directives/replies",
 ]
 
 

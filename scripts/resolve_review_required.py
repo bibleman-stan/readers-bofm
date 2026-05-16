@@ -244,6 +244,7 @@ SYSTEM_PROMPT = (
 
 def build_case_prompt(canon_r19: str, scholarship: str, case: dict, verse_block: str) -> str:
     extras = f"\n\nR19 SCHOLARSHIP COMPANION:\n\n{scholarship}\n" if scholarship.strip() else ""
+    subtype = case.get("review_subtype") or "(unset — pre-restructure validator)"
     return f"""## R19 §5 CANON ENTRY
 
 {canon_r19}
@@ -256,6 +257,7 @@ sent_id: {case.get('sent_id')}
 head: form={case['head_form']!r} lemma={case['head_lemma']!r} upos={case['head_upos']!r} (line {case['head_line']})
 relative-root: form={case['rel_root_form']!r} lemma={case['rel_root_lemma']!r} (line {case['rel_line']})
 validator reason: {case.get('reason', '')}
+review subtype: {subtype}   (same-line = "verify existing merge"; cross-line = "close existing split?")
 
 ## VERSE CONTEXT (±2 verses)
 
@@ -330,10 +332,11 @@ def parse_verdict(text: str) -> dict:
 
 def render_markdown_table(rows: list[dict]) -> str:
     out = []
-    out.append("| Verse | Original verdict | Sonnet verdict | Confidence | Reasoning |")
-    out.append("|---|---|---|---|---|")
+    out.append("| Verse | Subtype | Original verdict | Sonnet verdict | Confidence | Reasoning |")
+    out.append("|---|---|---|---|---|---|")
     for r in rows:
         verse_ref = f"{r['book']} {r.get('verse_ref','?')}"
+        subtype = r.get("review_subtype") or "—"
         original = f"REVIEW-REQUIRED ({r.get('reason','')})"
         sonnet_v = r.get("sonnet_verdict", "—")
         conf = r.get("sonnet_confidence", "—")
@@ -341,7 +344,7 @@ def render_markdown_table(rows: list[dict]) -> str:
         # Truncate reasoning to keep table readable
         if len(reason) > 220:
             reason = reason[:217] + "..."
-        out.append(f"| {verse_ref} | {original} | {sonnet_v} | {conf} | {reason} |")
+        out.append(f"| {verse_ref} | {subtype} | {original} | {sonnet_v} | {conf} | {reason} |")
     return "\n".join(out)
 
 
