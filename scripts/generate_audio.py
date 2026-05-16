@@ -111,9 +111,19 @@ def cache_key(text, voice_id, model_id, settings):
 
 def get_cached_audio(key):
     path = CACHE_DIR / f'{key}.mp3'
-    if path.exists():
+    if not path.exists():
+        return None
+    # Corrupt cache file (truncated MP3 from a killed mid-write) must be
+    # treated as a cache miss rather than crashing the whole run.
+    try:
         return AudioSegment.from_mp3(str(path))
-    return None
+    except Exception as e:
+        print(f'  Corrupt cache file {path.name} ({type(e).__name__}); discarding')
+        try:
+            path.unlink()
+        except OSError:
+            pass
+        return None
 
 
 def save_to_cache(key, audio_seg):
