@@ -1,0 +1,1384 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 46,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 658.371,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.13,
+      "type": "line",
+      "text": "And it came to pass that as many as would not hearken to the words of Helaman and his brethren",
+      "verse": "46:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.31,
+      "end": 9.004,
+      "type": "line",
+      "text": "were gathered together against their brethren.",
+      "verse": "46:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.684,
+      "end": 14.885,
+      "type": "line",
+      "text": "And now behold, they were exceedingly wroth, insomuch that they were determined to slay them.",
+      "verse": "46:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 15.565,
+      "end": 19.002,
+      "type": "line",
+      "text": "Now the leader of those who were wroth against their brethren",
+      "verse": "46:3",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.182,
+      "end": 21.225,
+      "type": "line",
+      "text": "was a large and a strong man;",
+      "verse": "46:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 21.405,
+      "end": 23.495,
+      "type": "line",
+      "text": "and his name was Amalickiah.",
+      "verse": "46:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 24.175,
+      "end": 26.961,
+      "type": "line",
+      "text": "And Amalickiah was desirous to be a king;",
+      "verse": "46:4",
+      "lineIndex": 7
+    },
+    {
+      "start": 27.141,
+      "end": 32.203,
+      "type": "line",
+      "text": "and those people who were wroth were also desirous that he should be their king;",
+      "verse": "46:4",
+      "lineIndex": 8
+    },
+    {
+      "start": 32.383,
+      "end": 36.748,
+      "type": "line",
+      "text": "and they were the greater part of them the lower judges of the land,",
+      "verse": "46:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 36.928,
+      "end": 38.786,
+      "type": "line",
+      "text": "and they were seeking for power.",
+      "verse": "46:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 39.466,
+      "end": 42.624,
+      "type": "line",
+      "text": "And they had been led by the flatteries of Amalickiah,",
+      "verse": "46:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 42.804,
+      "end": 46.519,
+      "type": "line",
+      "text": "that if they would support him and establish him to be their king",
+      "verse": "46:5",
+      "lineIndex": 12
+    },
+    {
+      "start": 46.699,
+      "end": 49.764,
+      "type": "line",
+      "text": "that he would make them rulers over the people.",
+      "verse": "46:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 50.444,
+      "end": 53.927,
+      "type": "line",
+      "text": "Thus they were led away by Amalickiah to dissensions,",
+      "verse": "46:6",
+      "lineIndex": 14
+    },
+    {
+      "start": 54.107,
+      "end": 62.791,
+      "type": "line",
+      "text": "notwithstanding the preaching of Helaman and his brethren, yea, notwithstanding their exceedingly great care over the church,",
+      "verse": "46:6",
+      "lineIndex": 15
+    },
+    {
+      "start": 62.971,
+      "end": 65.386,
+      "type": "line",
+      "text": "for they were high priests over the church.",
+      "verse": "46:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 66.066,
+      "end": 71.174,
+      "type": "line",
+      "text": "And there were many in the church who believed in the flattering words of Amalickiah,",
+      "verse": "46:7",
+      "lineIndex": 17
+    },
+    {
+      "start": 71.354,
+      "end": 74.373,
+      "type": "line",
+      "text": "therefore they dissented even from the church;",
+      "verse": "46:7",
+      "lineIndex": 18
+    },
+    {
+      "start": 74.553,
+      "end": 77.386,
+      "type": "line",
+      "text": "and thus were the affairs of the people of Nephi",
+      "verse": "46:7",
+      "lineIndex": 19
+    },
+    {
+      "start": 77.566,
+      "end": 80.027,
+      "type": "line",
+      "text": "exceedingly precarious and dangerous,",
+      "verse": "46:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 80.207,
+      "end": 85.315,
+      "type": "line",
+      "text": "notwithstanding their great victory which they had had over the Lamanites,",
+      "verse": "46:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 85.495,
+      "end": 91.346,
+      "type": "line",
+      "text": "and their great rejoicings which they had had because of their deliverance by the hand of the Lord.",
+      "verse": "46:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 92.026,
+      "end": 96.484,
+      "type": "line",
+      "text": "Thus we see how quick the children of men do forget the Lord their God,",
+      "verse": "46:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 96.664,
+      "end": 98.568,
+      "type": "line",
+      "text": "yea, how quick to do iniquity,",
+      "verse": "46:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 98.748,
+      "end": 101.302,
+      "type": "line",
+      "text": "and to be led away by the evil one.",
+      "verse": "46:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 101.982,
+      "end": 104.397,
+      "type": "line",
+      "text": "Yea, and we also see the great wickedness",
+      "verse": "46:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 104.577,
+      "end": 109.314,
+      "type": "line",
+      "text": "one very wicked man can cause to take place among the children of men.",
+      "verse": "46:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 109.994,
+      "end": 111.898,
+      "type": "line",
+      "text": "Yea, we see that Amalickiah,",
+      "verse": "46:10",
+      "lineIndex": 28
+    },
+    {
+      "start": 112.078,
+      "end": 116.768,
+      "type": "line",
+      "text": "because he was a man of cunning device and a man of many flattering words,",
+      "verse": "46:10",
+      "lineIndex": 29
+    },
+    {
+      "start": 116.948,
+      "end": 120.57,
+      "type": "line",
+      "text": "that he led away the hearts of many people to do wickedly;",
+      "verse": "46:10",
+      "lineIndex": 30
+    },
+    {
+      "start": 120.75,
+      "end": 123.769,
+      "type": "line",
+      "text": "yea, and to seek to destroy the church of God,",
+      "verse": "46:10",
+      "lineIndex": 31
+    },
+    {
+      "start": 123.949,
+      "end": 128.314,
+      "type": "line",
+      "text": "and to destroy the foundation of liberty which God had granted unto them,",
+      "verse": "46:10",
+      "lineIndex": 32
+    },
+    {
+      "start": 128.494,
+      "end": 132.72,
+      "type": "line",
+      "text": "or which blessing God had sent upon the face of the land for the righteous' sake.",
+      "verse": "46:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 133.4,
+      "end": 140.459,
+      "type": "line",
+      "text": "And now it came to pass that when Moroni, who was the chief commander of the armies of the Nephites,",
+      "verse": "46:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 140.639,
+      "end": 143.936,
+      "type": "line",
+      "text": "had heard of these dissensions, he was angry with Amalickiah.",
+      "verse": "46:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 144.616,
+      "end": 147.124,
+      "type": "line",
+      "text": "And it came to pass that he rent his coat;",
+      "verse": "46:12",
+      "lineIndex": 37
+    },
+    {
+      "start": 147.304,
+      "end": 150.369,
+      "type": "line",
+      "text": "and he took a piece thereof, and wrote upon it\u2014",
+      "verse": "46:12",
+      "lineIndex": 38
+    },
+    {
+      "start": 150.549,
+      "end": 154.868,
+      "type": "line",
+      "text": "In memory of our God, our religion, and freedom, and our peace,",
+      "verse": "46:12",
+      "lineIndex": 39
+    },
+    {
+      "start": 155.048,
+      "end": 157.184,
+      "type": "line",
+      "text": "our wives, and our children\u2014",
+      "verse": "46:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 157.364,
+      "end": 159.918,
+      "type": "line",
+      "text": "and he fastened it upon the end of a pole.",
+      "verse": "46:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 160.598,
+      "end": 164.545,
+      "type": "line",
+      "text": "And he fastened on his head-plate, and his breastplate, and his shields,",
+      "verse": "46:13",
+      "lineIndex": 42
+    },
+    {
+      "start": 164.725,
+      "end": 167.604,
+      "type": "line",
+      "text": "and girded on his armor about his loins;",
+      "verse": "46:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 167.784,
+      "end": 169.177,
+      "type": "line",
+      "text": "and he took the pole,",
+      "verse": "46:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 169.357,
+      "end": 172.747,
+      "type": "line",
+      "text": "which had on the end thereof his rent coat,",
+      "verse": "46:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 172.927,
+      "end": 175.388,
+      "type": "line",
+      "text": "(and he called it the title of liberty)",
+      "verse": "46:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 175.568,
+      "end": 177.704,
+      "type": "line",
+      "text": "and he bowed himself to the earth,",
+      "verse": "46:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 177.884,
+      "end": 180.16,
+      "type": "line",
+      "text": "and he prayed mightily unto his God",
+      "verse": "46:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 180.34,
+      "end": 183.684,
+      "type": "line",
+      "text": "for the blessings of liberty to rest upon his brethren,",
+      "verse": "46:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 183.864,
+      "end": 187.858,
+      "type": "line",
+      "text": "so long as there should a band of Christians remain to possess the land\u2014",
+      "verse": "46:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 188.538,
+      "end": 191.464,
+      "type": "line",
+      "text": "For thus were all the true believers of Christ,",
+      "verse": "46:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 191.644,
+      "end": 194.152,
+      "type": "line",
+      "text": "who belonged to the church of God,",
+      "verse": "46:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 194.332,
+      "end": 196.933,
+      "type": "line",
+      "text": "called by those who did not belong to the church.",
+      "verse": "46:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 197.613,
+      "end": 200.864,
+      "type": "line",
+      "text": "And those who did belong to the church were faithful;",
+      "verse": "46:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 201.044,
+      "end": 203.784,
+      "type": "line",
+      "text": "yea, all those who were true believers in Christ",
+      "verse": "46:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 203.964,
+      "end": 206.704,
+      "type": "line",
+      "text": "took upon them, gladly, the name of Christ,",
+      "verse": "46:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 206.884,
+      "end": 211.342,
+      "type": "line",
+      "text": "or Christians as they were called, because of their belief in Christ who should come.",
+      "verse": "46:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 212.022,
+      "end": 214.669,
+      "type": "line",
+      "text": "And therefore, at this time, Moroni prayed",
+      "verse": "46:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 214.849,
+      "end": 217.217,
+      "type": "line",
+      "text": "that the cause of the Christians,",
+      "verse": "46:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 217.397,
+      "end": 219.998,
+      "type": "line",
+      "text": "and the freedom of the land might be favored.",
+      "verse": "46:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 220.678,
+      "end": 229.269,
+      "type": "line",
+      "text": "And it came to pass that when he had poured out his soul to God, he named all the land which was south of the land Desolation,",
+      "verse": "46:17",
+      "lineIndex": 61
+    },
+    {
+      "start": 229.449,
+      "end": 233.582,
+      "type": "line",
+      "text": "yea, and in fine, all the land, both on the north and on the south\u2014",
+      "verse": "46:17",
+      "lineIndex": 62
+    },
+    {
+      "start": 233.762,
+      "end": 236.409,
+      "type": "line",
+      "text": "A chosen land, and the land of liberty.",
+      "verse": "46:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 237.089,
+      "end": 238.389,
+      "type": "line",
+      "text": "And he said:",
+      "verse": "46:18",
+      "lineIndex": 64
+    },
+    {
+      "start": 238.569,
+      "end": 242.006,
+      "type": "line",
+      "text": "Surely God shall not suffer that we, who are despised",
+      "verse": "46:18",
+      "lineIndex": 65
+    },
+    {
+      "start": 242.186,
+      "end": 244.601,
+      "type": "line",
+      "text": "because we take upon us the name of Christ,",
+      "verse": "46:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 244.781,
+      "end": 247.057,
+      "type": "line",
+      "text": "shall be trodden down and destroyed,",
+      "verse": "46:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 247.237,
+      "end": 250.534,
+      "type": "line",
+      "text": "until we bring it upon us by our own transgressions.",
+      "verse": "46:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 251.214,
+      "end": 258.505,
+      "type": "line",
+      "text": "And when Moroni had said these words, he went forth among the people, waving the rent part of his garment in the air,",
+      "verse": "46:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 258.685,
+      "end": 263.19,
+      "type": "line",
+      "text": "that all might see the writing which he had written upon the rent part,",
+      "verse": "46:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 263.37,
+      "end": 265.738,
+      "type": "line",
+      "text": "and crying with a loud voice, saying:",
+      "verse": "46:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 266.418,
+      "end": 269.622,
+      "type": "line",
+      "text": "Behold, whosoever will maintain this title upon the land,",
+      "verse": "46:20",
+      "lineIndex": 72
+    },
+    {
+      "start": 269.802,
+      "end": 272.449,
+      "type": "line",
+      "text": "let them come forth in the strength of the Lord,",
+      "verse": "46:20",
+      "lineIndex": 73
+    },
+    {
+      "start": 272.629,
+      "end": 274.533,
+      "type": "line",
+      "text": "and enter into a covenant",
+      "verse": "46:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 274.713,
+      "end": 276.803,
+      "type": "line",
+      "text": "that they will maintain their rights,",
+      "verse": "46:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 276.983,
+      "end": 278.469,
+      "type": "line",
+      "text": "and their religion,",
+      "verse": "46:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 278.649,
+      "end": 280.646,
+      "type": "line",
+      "text": "that the Lord God may bless them.",
+      "verse": "46:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 281.326,
+      "end": 285.32,
+      "type": "line",
+      "text": "And it came to pass that when Moroni had proclaimed these words,",
+      "verse": "46:21",
+      "lineIndex": 78
+    },
+    {
+      "start": 285.5,
+      "end": 290.933,
+      "type": "line",
+      "text": "behold, the people came running together with their armor girded about their loins,",
+      "verse": "46:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 291.113,
+      "end": 294.782,
+      "type": "line",
+      "text": "rending their garments in token, or as a covenant,",
+      "verse": "46:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 294.962,
+      "end": 301.974,
+      "type": "line",
+      "text": "that they would not forsake the Lord their God; or, in other words, if they should transgress the commandments of God,",
+      "verse": "46:21",
+      "lineIndex": 81
+    },
+    {
+      "start": 302.154,
+      "end": 304.151,
+      "type": "line",
+      "text": "or fall into transgression,",
+      "verse": "46:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 304.331,
+      "end": 307.768,
+      "type": "line",
+      "text": "and be ashamed to take upon them the name of Christ,",
+      "verse": "46:21",
+      "lineIndex": 83
+    },
+    {
+      "start": 307.948,
+      "end": 311.385,
+      "type": "line",
+      "text": "the Lord should rend them even as they had rent their garments.",
+      "verse": "46:21",
+      "lineIndex": 84
+    },
+    {
+      "start": 312.065,
+      "end": 314.573,
+      "type": "line",
+      "text": "Now this was the covenant which they made,",
+      "verse": "46:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 314.753,
+      "end": 318.468,
+      "type": "line",
+      "text": "and they cast their garments at the feet of Moroni, saying:",
+      "verse": "46:22",
+      "lineIndex": 86
+    },
+    {
+      "start": 318.648,
+      "end": 322.131,
+      "type": "line",
+      "text": "We covenant with our God, that we shall be destroyed,",
+      "verse": "46:22",
+      "lineIndex": 87
+    },
+    {
+      "start": 322.311,
+      "end": 325.237,
+      "type": "line",
+      "text": "even as our brethren in the land northward,",
+      "verse": "46:22",
+      "lineIndex": 88
+    },
+    {
+      "start": 325.417,
+      "end": 327.785,
+      "type": "line",
+      "text": "if we shall fall into transgression;",
+      "verse": "46:22",
+      "lineIndex": 89
+    },
+    {
+      "start": 327.965,
+      "end": 331.076,
+      "type": "line",
+      "text": "yea, he may cast us at the feet of our enemies,",
+      "verse": "46:22",
+      "lineIndex": 90
+    },
+    {
+      "start": 331.256,
+      "end": 338.268,
+      "type": "line",
+      "text": "even as we have cast our garments at thy feet to be trodden under foot, if we shall fall into transgression.",
+      "verse": "46:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 338.948,
+      "end": 340.713,
+      "type": "line",
+      "text": "Moroni said unto them:",
+      "verse": "46:23",
+      "lineIndex": 92
+    },
+    {
+      "start": 340.893,
+      "end": 344.19,
+      "type": "line",
+      "text": "Behold, we are a remnant of the seed of Jacob;",
+      "verse": "46:23",
+      "lineIndex": 93
+    },
+    {
+      "start": 344.37,
+      "end": 350.361,
+      "type": "line",
+      "text": "yea, we are a remnant of the seed of Joseph, whose coat was rent by his brethren into many pieces;",
+      "verse": "46:23",
+      "lineIndex": 94
+    },
+    {
+      "start": 350.541,
+      "end": 354.999,
+      "type": "line",
+      "text": "yea, and now behold, let us remember to keep the commandments of God,",
+      "verse": "46:23",
+      "lineIndex": 95
+    },
+    {
+      "start": 355.179,
+      "end": 358.337,
+      "type": "line",
+      "text": "or our garments shall be rent by our brethren,",
+      "verse": "46:23",
+      "lineIndex": 96
+    },
+    {
+      "start": 358.517,
+      "end": 360.421,
+      "type": "line",
+      "text": "and we be cast into prison,",
+      "verse": "46:23",
+      "lineIndex": 97
+    },
+    {
+      "start": 360.601,
+      "end": 361.808,
+      "type": "line",
+      "text": "or be sold,",
+      "verse": "46:23",
+      "lineIndex": 98
+    },
+    {
+      "start": 361.988,
+      "end": 363.242,
+      "type": "line",
+      "text": "or be slain.",
+      "verse": "46:23",
+      "lineIndex": 99
+    },
+    {
+      "start": 363.922,
+      "end": 367.637,
+      "type": "line",
+      "text": "Yea, let us preserve our liberty as a remnant of Joseph;",
+      "verse": "46:24",
+      "lineIndex": 101
+    },
+    {
+      "start": 367.817,
+      "end": 371.439,
+      "type": "line",
+      "text": "yea, let us remember the words of Jacob, before his death,",
+      "verse": "46:24",
+      "lineIndex": 102
+    },
+    {
+      "start": 371.619,
+      "end": 376.913,
+      "type": "line",
+      "text": "for behold, he saw that a part of the remnant of the coat of Joseph",
+      "verse": "46:24",
+      "lineIndex": 103
+    },
+    {
+      "start": 377.093,
+      "end": 379.415,
+      "type": "line",
+      "text": "was preserved and had not decayed.",
+      "verse": "46:24",
+      "lineIndex": 104
+    },
+    {
+      "start": 379.595,
+      "end": 380.942,
+      "type": "line",
+      "text": "And he said\u2014",
+      "verse": "46:24",
+      "lineIndex": 105
+    },
+    {
+      "start": 381.122,
+      "end": 384.698,
+      "type": "line",
+      "text": "Even as this remnant of garment of my son hath been preserved,",
+      "verse": "46:24",
+      "lineIndex": 106
+    },
+    {
+      "start": 384.878,
+      "end": 387.757,
+      "type": "line",
+      "text": "so shall a remnant of the seed of my son",
+      "verse": "46:24",
+      "lineIndex": 107
+    },
+    {
+      "start": 387.937,
+      "end": 390.027,
+      "type": "line",
+      "text": "be preserved by the hand of God,",
+      "verse": "46:24",
+      "lineIndex": 108
+    },
+    {
+      "start": 390.207,
+      "end": 392.018,
+      "type": "line",
+      "text": "and be taken unto himself,",
+      "verse": "46:24",
+      "lineIndex": 109
+    },
+    {
+      "start": 392.198,
+      "end": 395.588,
+      "type": "line",
+      "text": "while the remainder of the seed of Joseph shall perish,",
+      "verse": "46:24",
+      "lineIndex": 110
+    },
+    {
+      "start": 395.768,
+      "end": 398.044,
+      "type": "line",
+      "text": "even as the remnant of his garment.",
+      "verse": "46:24",
+      "lineIndex": 111
+    },
+    {
+      "start": 398.724,
+      "end": 401.046,
+      "type": "line",
+      "text": "Now behold, this giveth my soul sorrow;",
+      "verse": "46:25",
+      "lineIndex": 112
+    },
+    {
+      "start": 401.226,
+      "end": 403.827,
+      "type": "line",
+      "text": "nevertheless, my soul hath joy in my son,",
+      "verse": "46:25",
+      "lineIndex": 113
+    },
+    {
+      "start": 404.007,
+      "end": 407.629,
+      "type": "line",
+      "text": "because of that part of his seed which shall be taken unto God.",
+      "verse": "46:25",
+      "lineIndex": 114
+    },
+    {
+      "start": 408.309,
+      "end": 410.817,
+      "type": "line",
+      "text": "Now behold, this was the language of Jacob.",
+      "verse": "46:26",
+      "lineIndex": 115
+    },
+    {
+      "start": 411.497,
+      "end": 415.352,
+      "type": "line",
+      "text": "And now who knoweth but what the remnant of the seed of Joseph,",
+      "verse": "46:27",
+      "lineIndex": 116
+    },
+    {
+      "start": 415.532,
+      "end": 418.04,
+      "type": "line",
+      "text": "which shall perish as his garment,",
+      "verse": "46:27",
+      "lineIndex": 117
+    },
+    {
+      "start": 418.22,
+      "end": 420.681,
+      "type": "line",
+      "text": "are those who have dissented from us?",
+      "verse": "46:27",
+      "lineIndex": 118
+    },
+    {
+      "start": 420.861,
+      "end": 425.505,
+      "type": "line",
+      "text": "Yea, and even it shall be ourselves if we do not stand fast in the faith of Christ.",
+      "verse": "46:27",
+      "lineIndex": 119
+    },
+    {
+      "start": 426.185,
+      "end": 429.575,
+      "type": "line",
+      "text": "And now it came to pass that when Moroni had said these words",
+      "verse": "46:28",
+      "lineIndex": 120
+    },
+    {
+      "start": 429.755,
+      "end": 431.195,
+      "type": "line",
+      "text": "he went forth,",
+      "verse": "46:28",
+      "lineIndex": 121
+    },
+    {
+      "start": 431.375,
+      "end": 433.0,
+      "type": "line",
+      "text": "and also sent forth",
+      "verse": "46:28",
+      "lineIndex": 122
+    },
+    {
+      "start": 433.18,
+      "end": 436.524,
+      "type": "line",
+      "text": "in all the parts of the land where there were dissensions,",
+      "verse": "46:28",
+      "lineIndex": 123
+    },
+    {
+      "start": 436.704,
+      "end": 446.456,
+      "type": "line",
+      "text": "and gathered together all the people who were desirous to maintain their liberty, to stand against Amalickiah and those who had dissented,",
+      "verse": "46:28",
+      "lineIndex": 124
+    },
+    {
+      "start": 446.636,
+      "end": 449.004,
+      "type": "line",
+      "text": "who were called Amalickiahites.",
+      "verse": "46:28",
+      "lineIndex": 125
+    },
+    {
+      "start": 449.684,
+      "end": 457.068,
+      "type": "line",
+      "text": "And it came to pass that when Amalickiah saw that the people of Moroni were more numerous than the Amalickiahites\u2014",
+      "verse": "46:29",
+      "lineIndex": 126
+    },
+    {
+      "start": 457.248,
+      "end": 459.802,
+      "type": "line",
+      "text": "and he also saw that his people were doubtful",
+      "verse": "46:29",
+      "lineIndex": 127
+    },
+    {
+      "start": 459.982,
+      "end": 463.465,
+      "type": "line",
+      "text": "concerning the justice of the cause in which they had undertaken\u2014",
+      "verse": "46:29",
+      "lineIndex": 128
+    },
+    {
+      "start": 463.645,
+      "end": 467.314,
+      "type": "line",
+      "text": "therefore, fearing that he should not gain the point,",
+      "verse": "46:29",
+      "lineIndex": 129
+    },
+    {
+      "start": 467.494,
+      "end": 471.72,
+      "type": "line",
+      "text": "he took those of his people who would and departed into the land of Nephi.",
+      "verse": "46:29",
+      "lineIndex": 130
+    },
+    {
+      "start": 472.4,
+      "end": 477.555,
+      "type": "line",
+      "text": "Now Moroni thought it was not expedient that the Lamanites should have any more strength;",
+      "verse": "46:30",
+      "lineIndex": 131
+    },
+    {
+      "start": 477.735,
+      "end": 481.172,
+      "type": "line",
+      "text": "therefore he thought to cut off the people of Amalickiah,",
+      "verse": "46:30",
+      "lineIndex": 132
+    },
+    {
+      "start": 481.352,
+      "end": 483.628,
+      "type": "line",
+      "text": "or to take them and bring them back,",
+      "verse": "46:30",
+      "lineIndex": 133
+    },
+    {
+      "start": 483.808,
+      "end": 485.898,
+      "type": "line",
+      "text": "and put Amalickiah to death;",
+      "verse": "46:30",
+      "lineIndex": 134
+    },
+    {
+      "start": 486.078,
+      "end": 491.001,
+      "type": "line",
+      "text": "yea, for he knew that he would stir up the Lamanites to anger against them,",
+      "verse": "46:30",
+      "lineIndex": 135
+    },
+    {
+      "start": 491.181,
+      "end": 493.875,
+      "type": "line",
+      "text": "and cause them to come to battle against them;",
+      "verse": "46:30",
+      "lineIndex": 136
+    },
+    {
+      "start": 494.055,
+      "end": 496.423,
+      "type": "line",
+      "text": "and this he knew that Amalickiah would do",
+      "verse": "46:30",
+      "lineIndex": 137
+    },
+    {
+      "start": 496.603,
+      "end": 498.925,
+      "type": "line",
+      "text": "that he might obtain his purposes.",
+      "verse": "46:30",
+      "lineIndex": 138
+    },
+    {
+      "start": 499.605,
+      "end": 504.481,
+      "type": "line",
+      "text": "Therefore Moroni thought it was expedient that he should take his armies,",
+      "verse": "46:31",
+      "lineIndex": 139
+    },
+    {
+      "start": 504.661,
+      "end": 507.215,
+      "type": "line",
+      "text": "who had gathered themselves together,",
+      "verse": "46:31",
+      "lineIndex": 140
+    },
+    {
+      "start": 507.395,
+      "end": 508.881,
+      "type": "line",
+      "text": "and armed themselves,",
+      "verse": "46:31",
+      "lineIndex": 141
+    },
+    {
+      "start": 509.061,
+      "end": 524.618,
+      "type": "line",
+      "text": "and entered into a covenant to keep the peace\u2014 and it came to pass that he took his army and marched out with his tents into the wilderness, to cut off the course of Amalickiah in the wilderness.",
+      "verse": "46:31",
+      "lineIndex": 142
+    },
+    {
+      "start": 525.298,
+      "end": 528.595,
+      "type": "line",
+      "text": "And it came to pass that he did according to his desires,",
+      "verse": "46:32",
+      "lineIndex": 143
+    },
+    {
+      "start": 528.775,
+      "end": 531.283,
+      "type": "line",
+      "text": "and marched forth into the wilderness,",
+      "verse": "46:32",
+      "lineIndex": 144
+    },
+    {
+      "start": 531.463,
+      "end": 533.506,
+      "type": "line",
+      "text": "and headed the armies of Amalickiah.",
+      "verse": "46:32",
+      "lineIndex": 145
+    },
+    {
+      "start": 534.186,
+      "end": 538.366,
+      "type": "line",
+      "text": "And it came to pass that Amalickiah fled with a small number of his men,",
+      "verse": "46:33",
+      "lineIndex": 146
+    },
+    {
+      "start": 538.546,
+      "end": 542.122,
+      "type": "line",
+      "text": "and the remainder were delivered up into the hands of Moroni",
+      "verse": "46:33",
+      "lineIndex": 147
+    },
+    {
+      "start": 542.302,
+      "end": 545.274,
+      "type": "line",
+      "text": "and were taken back into the land of Zarahemla.",
+      "verse": "46:33",
+      "lineIndex": 148
+    },
+    {
+      "start": 545.954,
+      "end": 551.573,
+      "type": "line",
+      "text": "Now, Moroni being a man who was appointed by the chief judges and the voice of the people,",
+      "verse": "46:34",
+      "lineIndex": 149
+    },
+    {
+      "start": 551.753,
+      "end": 559.555,
+      "type": "line",
+      "text": "therefore he had power according to his will with the armies of the Nephites, to establish and to exercise authority over them.",
+      "verse": "46:34",
+      "lineIndex": 150
+    },
+    {
+      "start": 560.235,
+      "end": 563.811,
+      "type": "line",
+      "text": "And it came to pass that whomsoever of the Amalickiahites",
+      "verse": "46:35",
+      "lineIndex": 152
+    },
+    {
+      "start": 563.991,
+      "end": 568.635,
+      "type": "line",
+      "text": "that would not enter into a covenant to support the cause of freedom,",
+      "verse": "46:35",
+      "lineIndex": 153
+    },
+    {
+      "start": 568.815,
+      "end": 573.18,
+      "type": "line",
+      "text": "that they might maintain a free government, he caused to be put to death;",
+      "verse": "46:35",
+      "lineIndex": 154
+    },
+    {
+      "start": 573.36,
+      "end": 576.889,
+      "type": "line",
+      "text": "and there were but few who denied the covenant of freedom.",
+      "verse": "46:35",
+      "lineIndex": 155
+    },
+    {
+      "start": 577.569,
+      "end": 584.907,
+      "type": "line",
+      "text": "And it came to pass also, that he caused the title of liberty to be hoisted upon every tower",
+      "verse": "46:36",
+      "lineIndex": 156
+    },
+    {
+      "start": 585.087,
+      "end": 586.852,
+      "type": "line",
+      "text": "which was in all the land,",
+      "verse": "46:36",
+      "lineIndex": 157
+    },
+    {
+      "start": 587.032,
+      "end": 589.168,
+      "type": "line",
+      "text": "which was possessed by the Nephites;",
+      "verse": "46:36",
+      "lineIndex": 158
+    },
+    {
+      "start": 589.348,
+      "end": 593.713,
+      "type": "line",
+      "text": "and thus Moroni planted the standard of liberty among the Nephites.",
+      "verse": "46:36",
+      "lineIndex": 159
+    },
+    {
+      "start": 594.393,
+      "end": 597.272,
+      "type": "line",
+      "text": "And they began to have peace again in the land;",
+      "verse": "46:37",
+      "lineIndex": 160
+    },
+    {
+      "start": 597.452,
+      "end": 604.418,
+      "type": "line",
+      "text": "and thus they did maintain peace in the land until nearly the end of the nineteenth year of the reign of the judges.",
+      "verse": "46:37",
+      "lineIndex": 161
+    },
+    {
+      "start": 605.098,
+      "end": 611.925,
+      "type": "line",
+      "text": "And Helaman and the high priests did also maintain order in the church; yea, even for the space of four years",
+      "verse": "46:38",
+      "lineIndex": 162
+    },
+    {
+      "start": 612.105,
+      "end": 615.17,
+      "type": "line",
+      "text": "did they have much peace and rejoicing in the church.",
+      "verse": "46:38",
+      "lineIndex": 163
+    },
+    {
+      "start": 615.85,
+      "end": 619.147,
+      "type": "line",
+      "text": "And it came to pass that there were many who died,",
+      "verse": "46:39",
+      "lineIndex": 164
+    },
+    {
+      "start": 619.327,
+      "end": 623.739,
+      "type": "line",
+      "text": "firmly believing that their souls were redeemed by the Lord Jesus Christ;",
+      "verse": "46:39",
+      "lineIndex": 165
+    },
+    {
+      "start": 623.919,
+      "end": 626.659,
+      "type": "line",
+      "text": "thus they went out of the world rejoicing.",
+      "verse": "46:39",
+      "lineIndex": 166
+    },
+    {
+      "start": 627.339,
+      "end": 629.754,
+      "type": "line",
+      "text": "And there were some who died with fevers,",
+      "verse": "46:40",
+      "lineIndex": 167
+    },
+    {
+      "start": 629.934,
+      "end": 634.114,
+      "type": "line",
+      "text": "which at some seasons of the year were very frequent in the land\u2014",
+      "verse": "46:40",
+      "lineIndex": 168
+    },
+    {
+      "start": 634.294,
+      "end": 641.353,
+      "type": "line",
+      "text": "but not so much so with fevers, because of the excellent qualities of the many plants and roots",
+      "verse": "46:40",
+      "lineIndex": 169
+    },
+    {
+      "start": 641.533,
+      "end": 645.48,
+      "type": "line",
+      "text": "which God had prepared to remove the cause of diseases,",
+      "verse": "46:40",
+      "lineIndex": 170
+    },
+    {
+      "start": 645.66,
+      "end": 648.957,
+      "type": "line",
+      "text": "to which men were subject by the nature of the climate\u2014",
+      "verse": "46:40",
+      "lineIndex": 171
+    },
+    {
+      "start": 649.637,
+      "end": 652.052,
+      "type": "line",
+      "text": "But there were many who died with old age;",
+      "verse": "46:41",
+      "lineIndex": 172
+    },
+    {
+      "start": 652.232,
+      "end": 657.712,
+      "type": "line",
+      "text": "and those who died in the faith of Christ are happy in him, as we must needs suppose.",
+      "verse": "46:41",
+      "lineIndex": 173
+    }
+  ]
+}
