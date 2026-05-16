@@ -1,0 +1,536 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 35,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 267.918,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.338,
+      "type": "line",
+      "text": "Now it came to pass that after Amulek had made an end of these words, they withdrew themselves from the multitude",
+      "verse": "35:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.518,
+      "end": 10.072,
+      "type": "line",
+      "text": "and came over into the land of Jershon.",
+      "verse": "35:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.752,
+      "end": 13.213,
+      "type": "line",
+      "text": "Yea, and the rest of the brethren,",
+      "verse": "35:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 13.393,
+      "end": 16.412,
+      "type": "line",
+      "text": "after they had preached the word unto the Zoramites,",
+      "verse": "35:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 16.592,
+      "end": 19.193,
+      "type": "line",
+      "text": "also came over into the land of Jershon.",
+      "verse": "35:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.873,
+      "end": 25.678,
+      "type": "line",
+      "text": "And it came to pass that after the more popular part of the Zoramites had consulted together",
+      "verse": "35:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.858,
+      "end": 29.016,
+      "type": "line",
+      "text": "concerning the words which had been preached unto them,",
+      "verse": "35:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 29.196,
+      "end": 31.286,
+      "type": "line",
+      "text": "they were angry because of the word,",
+      "verse": "35:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 31.466,
+      "end": 33.649,
+      "type": "line",
+      "text": "for it did destroy their craft;",
+      "verse": "35:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 33.829,
+      "end": 37.219,
+      "type": "line",
+      "text": "therefore they would not hearken unto the words.",
+      "verse": "35:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 37.899,
+      "end": 39.292,
+      "type": "line",
+      "text": "And they sent",
+      "verse": "35:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 39.472,
+      "end": 42.723,
+      "type": "line",
+      "text": "and gathered together throughout all the land all the people,",
+      "verse": "35:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 42.903,
+      "end": 46.99,
+      "type": "line",
+      "text": "and consulted with them concerning the words which had been spoken.",
+      "verse": "35:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 47.67,
+      "end": 51.432,
+      "type": "line",
+      "text": "Now their rulers and their priests and their teachers",
+      "verse": "35:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 51.612,
+      "end": 54.723,
+      "type": "line",
+      "text": "did not let the people know concerning their desires;",
+      "verse": "35:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 54.903,
+      "end": 58.665,
+      "type": "line",
+      "text": "therefore they found out privily the minds of all the people.",
+      "verse": "35:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 59.345,
+      "end": 63.757,
+      "type": "line",
+      "text": "And it came to pass that after they had found out the minds of all the people,",
+      "verse": "35:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 63.937,
+      "end": 69.463,
+      "type": "line",
+      "text": "those who were in favor of the words which had been spoken by Alma and his brethren",
+      "verse": "35:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 69.643,
+      "end": 72.708,
+      "type": "line",
+      "text": "were cast out of the land; and they were many;",
+      "verse": "35:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 72.888,
+      "end": 76.092,
+      "type": "line",
+      "text": "and they came over also into the land of Jershon.",
+      "verse": "35:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 76.772,
+      "end": 81.509,
+      "type": "line",
+      "text": "And it came to pass that Alma and his brethren did minister unto them.",
+      "verse": "35:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 82.189,
+      "end": 84.836,
+      "type": "line",
+      "text": "Now the people of the Zoramites were angry",
+      "verse": "35:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 85.016,
+      "end": 87.663,
+      "type": "line",
+      "text": "with the people of Ammon who were in Jershon,",
+      "verse": "35:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 87.843,
+      "end": 95.227,
+      "type": "line",
+      "text": "and the chief ruler of the Zoramites, being a very wicked man, sent over unto the people of Ammon",
+      "verse": "35:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 95.407,
+      "end": 101.862,
+      "type": "line",
+      "text": "desiring them that they should cast out of their land all those who came over from them into their land.",
+      "verse": "35:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 102.542,
+      "end": 105.7,
+      "type": "line",
+      "text": "And he breathed out many threatenings against them.",
+      "verse": "35:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 105.88,
+      "end": 109.038,
+      "type": "line",
+      "text": "And now the people of Ammon did not fear their words;",
+      "verse": "35:9",
+      "lineIndex": 28
+    },
+    {
+      "start": 109.218,
+      "end": 111.679,
+      "type": "line",
+      "text": "therefore they did not cast them out,",
+      "verse": "35:9",
+      "lineIndex": 29
+    },
+    {
+      "start": 111.859,
+      "end": 116.224,
+      "type": "line",
+      "text": "but they did receive all the poor of the Zoramites that came over unto them;",
+      "verse": "35:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 116.404,
+      "end": 118.076,
+      "type": "line",
+      "text": "and they did nourish them,",
+      "verse": "35:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 118.256,
+      "end": 119.789,
+      "type": "line",
+      "text": "and did clothe them,",
+      "verse": "35:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 119.969,
+      "end": 123.173,
+      "type": "line",
+      "text": "and did give unto them lands for their inheritance;",
+      "verse": "35:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 123.353,
+      "end": 126.604,
+      "type": "line",
+      "text": "and they did administer unto them according to their wants.",
+      "verse": "35:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 127.284,
+      "end": 131.882,
+      "type": "line",
+      "text": "Now this did stir up the Zoramites to anger against the people of Ammon,",
+      "verse": "35:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 132.062,
+      "end": 134.802,
+      "type": "line",
+      "text": "and they began to mix with the Lamanites",
+      "verse": "35:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 134.982,
+      "end": 138.186,
+      "type": "line",
+      "text": "and to stir them up also to anger against them.",
+      "verse": "35:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 138.866,
+      "end": 145.925,
+      "type": "line",
+      "text": "And thus the Zoramites and the Lamanites began to make preparations for war against the people of Ammon,",
+      "verse": "35:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 146.105,
+      "end": 148.195,
+      "type": "line",
+      "text": "and also against the Nephites.",
+      "verse": "35:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 148.875,
+      "end": 154.866,
+      "type": "line",
+      "text": "And thus ended the seventeenth year of the reign of the judges over the people of Nephi.",
+      "verse": "35:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 155.546,
+      "end": 159.029,
+      "type": "line",
+      "text": "And the people of Ammon departed out of the land of Jershon,",
+      "verse": "35:13",
+      "lineIndex": 41
+    },
+    {
+      "start": 159.209,
+      "end": 161.624,
+      "type": "line",
+      "text": "and came over into the land of Melek,",
+      "verse": "35:13",
+      "lineIndex": 42
+    },
+    {
+      "start": 161.804,
+      "end": 166.216,
+      "type": "line",
+      "text": "and gave place in the land of Jershon for the armies of the Nephites,",
+      "verse": "35:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 166.396,
+      "end": 170.529,
+      "type": "line",
+      "text": "that they might contend with the armies of the Lamanites",
+      "verse": "35:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 170.709,
+      "end": 172.752,
+      "type": "line",
+      "text": "and the armies of the Zoramites;",
+      "verse": "35:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 172.932,
+      "end": 180.27,
+      "type": "line",
+      "text": "and thus commenced a war betwixt the Lamanites and the Nephites, in the eighteenth year of the reign of the judges;",
+      "verse": "35:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 180.45,
+      "end": 184.026,
+      "type": "line",
+      "text": "and a account shall be given of their wars hereafter.",
+      "verse": "35:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 184.706,
+      "end": 185.867,
+      "type": "line",
+      "text": "And Alma,",
+      "verse": "35:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 186.047,
+      "end": 187.301,
+      "type": "line",
+      "text": "and Ammon,",
+      "verse": "35:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 187.481,
+      "end": 191.01,
+      "type": "line",
+      "text": "and their brethren, and also the two sons of Alma",
+      "verse": "35:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 191.19,
+      "end": 193.466,
+      "type": "line",
+      "text": "returned to the land of Zarahemla,",
+      "verse": "35:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 193.646,
+      "end": 200.798,
+      "type": "line",
+      "text": "after having been instruments in the hands of God of bringing many of the Zoramites to repentance;",
+      "verse": "35:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 200.978,
+      "end": 206.04,
+      "type": "line",
+      "text": "and as many as were brought to repentance were driven out of their land;",
+      "verse": "35:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 206.22,
+      "end": 210.585,
+      "type": "line",
+      "text": "but they have lands for their inheritance in the land of Jershon,",
+      "verse": "35:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 210.765,
+      "end": 213.923,
+      "type": "line",
+      "text": "and they have taken up arms to defend themselves,",
+      "verse": "35:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 214.103,
+      "end": 216.982,
+      "type": "line",
+      "text": "and their wives, and children, and their lands.",
+      "verse": "35:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 217.662,
+      "end": 228.157,
+      "type": "line",
+      "text": "Now Alma, being grieved for the iniquity of his people, yea for the wars, and the bloodsheds, and the contentions which were among them;",
+      "verse": "35:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 228.337,
+      "end": 235.535,
+      "type": "line",
+      "text": "and having been to declare the word, or sent to declare the word, among all the people in every city;",
+      "verse": "35:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 235.715,
+      "end": 239.848,
+      "type": "line",
+      "text": "and seeing that the hearts of the people began to wax hard,",
+      "verse": "35:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 240.028,
+      "end": 245.461,
+      "type": "line",
+      "text": "and that they began to be offended because of the strictness of the word,",
+      "verse": "35:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 245.641,
+      "end": 248.242,
+      "type": "line",
+      "text": "his heart was exceedingly sorrowful.",
+      "verse": "35:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 248.922,
+      "end": 253.055,
+      "type": "line",
+      "text": "Therefore, he caused that his sons should be gathered together,",
+      "verse": "35:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 253.235,
+      "end": 258.018,
+      "type": "line",
+      "text": "that he might give unto them every one his charge, separately,",
+      "verse": "35:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 258.198,
+      "end": 261.217,
+      "type": "line",
+      "text": "concerning the things pertaining unto righteousness.",
+      "verse": "35:16",
+      "lineIndex": 64
+    },
+    {
+      "start": 261.397,
+      "end": 267.248,
+      "type": "line",
+      "text": "And we have an account of his commandments, which he gave unto them according to his own record.",
+      "verse": "35:16",
+      "lineIndex": 65
+    }
+  ]
+}
