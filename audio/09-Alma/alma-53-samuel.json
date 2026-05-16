@@ -1,0 +1,784 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 53,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 402.521,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.898,
+      "type": "line",
+      "text": "And it came to pass that they did set guards over the prisoners of the Lamanites,",
+      "verse": "53:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.078,
+      "end": 9.189,
+      "type": "line",
+      "text": "and did compel them to go forth and bury their dead,",
+      "verse": "53:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.369,
+      "end": 13.084,
+      "type": "line",
+      "text": "yea, and also the dead of the Nephites who were slain;",
+      "verse": "53:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 13.264,
+      "end": 16.236,
+      "type": "line",
+      "text": "and Moroni placed men over them to guard them",
+      "verse": "53:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 16.416,
+      "end": 18.784,
+      "type": "line",
+      "text": "while they should perform their labors.",
+      "verse": "53:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 19.464,
+      "end": 22.575,
+      "type": "line",
+      "text": "And Moroni went to the city of Mulek with Lehi,",
+      "verse": "53:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 22.755,
+      "end": 24.984,
+      "type": "line",
+      "text": "and took command of the city",
+      "verse": "53:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 25.164,
+      "end": 26.882,
+      "type": "line",
+      "text": "and gave it unto Lehi.",
+      "verse": "53:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 27.062,
+      "end": 33.424,
+      "type": "line",
+      "text": "Now behold, this Lehi was a man who had been with Moroni in the more part of all his battles;",
+      "verse": "53:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 33.604,
+      "end": 35.972,
+      "type": "line",
+      "text": "and he was a man like unto Moroni,",
+      "verse": "53:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 36.152,
+      "end": 38.567,
+      "type": "line",
+      "text": "and they rejoiced in each other's safety;",
+      "verse": "53:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 38.747,
+      "end": 41.115,
+      "type": "line",
+      "text": "yea, they were beloved by each other,",
+      "verse": "53:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 41.295,
+      "end": 44.174,
+      "type": "line",
+      "text": "and also beloved by all the people of Nephi.",
+      "verse": "53:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.854,
+      "end": 51.774,
+      "type": "line",
+      "text": "And it came to pass that after the Lamanites had finished burying their dead and also the dead of the Nephites,",
+      "verse": "53:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 51.954,
+      "end": 54.787,
+      "type": "line",
+      "text": "they were marched back into the land Bountiful;",
+      "verse": "53:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 54.967,
+      "end": 65.927,
+      "type": "line",
+      "text": "and Teancum, by the orders of Moroni, caused that they should commence laboring in digging a ditch round about the land, or the city, Bountiful.",
+      "verse": "53:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 66.607,
+      "end": 72.691,
+      "type": "line",
+      "text": "And he caused that they should build a breastwork of timbers upon the inner bank of the ditch;",
+      "verse": "53:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 72.871,
+      "end": 77.561,
+      "type": "line",
+      "text": "and they cast up dirt out of the ditch against the breastwork of timbers;",
+      "verse": "53:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 77.741,
+      "end": 80.852,
+      "type": "line",
+      "text": "and thus they did cause the Lamanites to labor",
+      "verse": "53:4",
+      "lineIndex": 19
+    },
+    {
+      "start": 81.032,
+      "end": 86.93,
+      "type": "line",
+      "text": "until they had encircled the city of Bountiful round about with a strong wall of timbers and earth,",
+      "verse": "53:4",
+      "lineIndex": 20
+    },
+    {
+      "start": 87.11,
+      "end": 88.735,
+      "type": "line",
+      "text": "to a exceeding height.",
+      "verse": "53:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 89.415,
+      "end": 92.573,
+      "type": "line",
+      "text": "And this city became a exceeding stronghold ever after;",
+      "verse": "53:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 92.753,
+      "end": 97.118,
+      "type": "line",
+      "text": "and in this city they did guard the prisoners of the Lamanites;",
+      "verse": "53:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 97.298,
+      "end": 102.267,
+      "type": "line",
+      "text": "yea, even within a wall which they had caused them to build with their own hands.",
+      "verse": "53:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 102.447,
+      "end": 106.116,
+      "type": "line",
+      "text": "Now Moroni was compelled to cause the Lamanites to labor,",
+      "verse": "53:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 106.296,
+      "end": 109.872,
+      "type": "line",
+      "text": "because it was easy to guard them while at their labor;",
+      "verse": "53:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 110.052,
+      "end": 114.324,
+      "type": "line",
+      "text": "and he desired all his forces when he should make an attack upon the Lamanites.",
+      "verse": "53:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 115.004,
+      "end": 122.759,
+      "type": "line",
+      "text": "And it came to pass that Moroni had thus gained a victory over one of the greatest of the armies of the Lamanites,",
+      "verse": "53:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 122.939,
+      "end": 126.515,
+      "type": "line",
+      "text": "and had obtained possession of the city of Mulek,",
+      "verse": "53:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 126.695,
+      "end": 130.967,
+      "type": "line",
+      "text": "which was one of the strongest holds of the Lamanites in the land of Nephi;",
+      "verse": "53:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 131.147,
+      "end": 135.512,
+      "type": "line",
+      "text": "and thus he had also built a stronghold to retain his prisoners.",
+      "verse": "53:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 136.192,
+      "end": 142.136,
+      "type": "line",
+      "text": "And it came to pass that he did no more attempt a battle with the Lamanites in that year,",
+      "verse": "53:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 142.316,
+      "end": 145.242,
+      "type": "line",
+      "text": "but he did employ his men in preparing for war,",
+      "verse": "53:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 145.422,
+      "end": 149.416,
+      "type": "line",
+      "text": "yea, and in making fortifications to guard against the Lamanites,",
+      "verse": "53:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 149.596,
+      "end": 155.122,
+      "type": "line",
+      "text": "yea, and also delivering their women and their children from famine and affliction,",
+      "verse": "53:7",
+      "lineIndex": 35
+    },
+    {
+      "start": 155.302,
+      "end": 157.717,
+      "type": "line",
+      "text": "and providing food for their armies.",
+      "verse": "53:7",
+      "lineIndex": 36
+    },
+    {
+      "start": 158.397,
+      "end": 163.598,
+      "type": "line",
+      "text": "And now it came to pass that the armies of the Lamanites, on the west sea, south,",
+      "verse": "53:8",
+      "lineIndex": 37
+    },
+    {
+      "start": 163.778,
+      "end": 168.747,
+      "type": "line",
+      "text": "while in the absence of Moroni on account of some intrigue amongst the Nephites,",
+      "verse": "53:8",
+      "lineIndex": 38
+    },
+    {
+      "start": 168.927,
+      "end": 171.574,
+      "type": "line",
+      "text": "which caused dissensions amongst them,",
+      "verse": "53:8",
+      "lineIndex": 39
+    },
+    {
+      "start": 171.754,
+      "end": 174.122,
+      "type": "line",
+      "text": "had gained some ground over the Nephites,",
+      "verse": "53:8",
+      "lineIndex": 40
+    },
+    {
+      "start": 174.302,
+      "end": 181.175,
+      "type": "line",
+      "text": "yea, insomuch that they had obtained possession of a number of their cities in that part of the land.",
+      "verse": "53:8",
+      "lineIndex": 41
+    },
+    {
+      "start": 181.855,
+      "end": 184.874,
+      "type": "line",
+      "text": "And thus because of iniquity amongst themselves,",
+      "verse": "53:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 185.054,
+      "end": 188.537,
+      "type": "line",
+      "text": "yea, because of dissensions and intrigue among themselves",
+      "verse": "53:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 188.717,
+      "end": 192.107,
+      "type": "line",
+      "text": "they were placed in the most dangerous circumstances.",
+      "verse": "53:9",
+      "lineIndex": 44
+    },
+    {
+      "start": 192.787,
+      "end": 196.688,
+      "type": "line",
+      "text": "And now behold, I have somewhat to say concerning the people of Ammon,",
+      "verse": "53:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 196.868,
+      "end": 199.608,
+      "type": "line",
+      "text": "who, in the beginning, were Lamanites;",
+      "verse": "53:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 199.788,
+      "end": 204.664,
+      "type": "line",
+      "text": "but by Ammon and his brethren, or rather by the power and word of God,",
+      "verse": "53:10",
+      "lineIndex": 48
+    },
+    {
+      "start": 204.844,
+      "end": 207.352,
+      "type": "line",
+      "text": "they had been converted unto the Lord;",
+      "verse": "53:10",
+      "lineIndex": 49
+    },
+    {
+      "start": 207.532,
+      "end": 211.154,
+      "type": "line",
+      "text": "and they had been brought down into the land of Zarahemla,",
+      "verse": "53:10",
+      "lineIndex": 50
+    },
+    {
+      "start": 211.334,
+      "end": 214.585,
+      "type": "line",
+      "text": "and had ever since been protected by the Nephites.",
+      "verse": "53:10",
+      "lineIndex": 51
+    },
+    {
+      "start": 215.265,
+      "end": 216.844,
+      "type": "line",
+      "text": "And because of their oath",
+      "verse": "53:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 217.024,
+      "end": 220.832,
+      "type": "line",
+      "text": "they had been kept from taking up arms against their brethren;",
+      "verse": "53:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 221.012,
+      "end": 225.749,
+      "type": "line",
+      "text": "for they had taken an oath that they never would shed blood more;",
+      "verse": "53:11",
+      "lineIndex": 54
+    },
+    {
+      "start": 225.929,
+      "end": 229.366,
+      "type": "line",
+      "text": "and according to their oath they would have perished;",
+      "verse": "53:11",
+      "lineIndex": 55
+    },
+    {
+      "start": 229.546,
+      "end": 234.608,
+      "type": "line",
+      "text": "yea, they would have suffered themselves to have fallen into the hands of their brethren,",
+      "verse": "53:11",
+      "lineIndex": 56
+    },
+    {
+      "start": 234.788,
+      "end": 238.317,
+      "type": "line",
+      "text": "had it not been for the pity and the exceeding love",
+      "verse": "53:11",
+      "lineIndex": 57
+    },
+    {
+      "start": 238.497,
+      "end": 241.423,
+      "type": "line",
+      "text": "which Ammon and his brethren had had for them.",
+      "verse": "53:11",
+      "lineIndex": 58
+    },
+    {
+      "start": 242.103,
+      "end": 246.701,
+      "type": "line",
+      "text": "And for this cause they were brought down into the land of Zarahemla;",
+      "verse": "53:12",
+      "lineIndex": 59
+    },
+    {
+      "start": 246.881,
+      "end": 249.714,
+      "type": "line",
+      "text": "and they ever had been protected by the Nephites.",
+      "verse": "53:12",
+      "lineIndex": 60
+    },
+    {
+      "start": 250.394,
+      "end": 253.459,
+      "type": "line",
+      "text": "But it came to pass that when they saw the danger,",
+      "verse": "53:13",
+      "lineIndex": 61
+    },
+    {
+      "start": 253.639,
+      "end": 257.911,
+      "type": "line",
+      "text": "and the many afflictions and tribulations which the Nephites bore for them,",
+      "verse": "53:13",
+      "lineIndex": 62
+    },
+    {
+      "start": 258.091,
+      "end": 260.181,
+      "type": "line",
+      "text": "they were moved with compassion",
+      "verse": "53:13",
+      "lineIndex": 63
+    },
+    {
+      "start": 260.361,
+      "end": 264.03,
+      "type": "line",
+      "text": "and were desirous to take up arms in the defence of their country.",
+      "verse": "53:13",
+      "lineIndex": 64
+    },
+    {
+      "start": 264.71,
+      "end": 273.348,
+      "type": "line",
+      "text": "But behold, as they were about to take their weapons of war, they were overpowered by the persuasions of Helaman and his brethren,",
+      "verse": "53:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 273.528,
+      "end": 276.639,
+      "type": "line",
+      "text": "for they were about to break the oath which they had made.",
+      "verse": "53:14",
+      "lineIndex": 66
+    },
+    {
+      "start": 277.319,
+      "end": 281.499,
+      "type": "line",
+      "text": "And Helaman feared lest by so doing they should lose their souls;",
+      "verse": "53:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 281.679,
+      "end": 285.394,
+      "type": "line",
+      "text": "therefore all those who had entered into this covenant",
+      "verse": "53:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 285.574,
+      "end": 293.422,
+      "type": "line",
+      "text": "were compelled to behold their brethren wade through their afflictions, in their dangerous circumstances at this time.",
+      "verse": "53:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 294.102,
+      "end": 297.26,
+      "type": "line",
+      "text": "But behold, it came to pass they had many sons,",
+      "verse": "53:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 297.44,
+      "end": 300.041,
+      "type": "line",
+      "text": "who had not entered into a covenant",
+      "verse": "53:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 300.221,
+      "end": 304.911,
+      "type": "line",
+      "text": "that they would not take their weapons of war to defend themselves against their enemies;",
+      "verse": "53:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 305.091,
+      "end": 308.528,
+      "type": "line",
+      "text": "therefore they did assemble themselves together at this time,",
+      "verse": "53:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 308.708,
+      "end": 311.123,
+      "type": "line",
+      "text": "as many as were able to take up arms,",
+      "verse": "53:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 311.303,
+      "end": 313.671,
+      "type": "line",
+      "text": "and they called themselves Nephites.",
+      "verse": "53:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 314.351,
+      "end": 323.871,
+      "type": "line",
+      "text": "And they entered into a covenant to fight for the liberty of the Nephites, yea, to protect the land unto the laying down of their lives;",
+      "verse": "53:17",
+      "lineIndex": 76
+    },
+    {
+      "start": 324.051,
+      "end": 329.159,
+      "type": "line",
+      "text": "yea, even they covenanted that they never would give up their liberty,",
+      "verse": "53:17",
+      "lineIndex": 77
+    },
+    {
+      "start": 329.339,
+      "end": 334.633,
+      "type": "line",
+      "text": "but they would fight in all cases to protect the Nephites and themselves from bondage.",
+      "verse": "53:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 335.313,
+      "end": 338.471,
+      "type": "line",
+      "text": "Now behold, there were two thousand of those young men,",
+      "verse": "53:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 338.651,
+      "end": 341.345,
+      "type": "line",
+      "text": "who entered into this covenant",
+      "verse": "53:18",
+      "lineIndex": 80
+    },
+    {
+      "start": 341.525,
+      "end": 344.358,
+      "type": "line",
+      "text": "and took their weapons of war to defend their country.",
+      "verse": "53:18",
+      "lineIndex": 81
+    },
+    {
+      "start": 345.038,
+      "end": 349.728,
+      "type": "line",
+      "text": "And now behold, as they never had hitherto been a disadvantage to the Nephites,",
+      "verse": "53:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 349.908,
+      "end": 353.67,
+      "type": "line",
+      "text": "they became now at this period of time also a great support;",
+      "verse": "53:19",
+      "lineIndex": 83
+    },
+    {
+      "start": 353.85,
+      "end": 355.986,
+      "type": "line",
+      "text": "for they took their weapons of war,",
+      "verse": "53:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 356.166,
+      "end": 358.72,
+      "type": "line",
+      "text": "and they would that Helaman should be their leader.",
+      "verse": "53:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 359.4,
+      "end": 361.258,
+      "type": "line",
+      "text": "And they were all young men,",
+      "verse": "53:20",
+      "lineIndex": 86
+    },
+    {
+      "start": 361.438,
+      "end": 366.407,
+      "type": "line",
+      "text": "and they were exceedingly valiant for courage, and also for strength and activity;",
+      "verse": "53:20",
+      "lineIndex": 87
+    },
+    {
+      "start": 366.587,
+      "end": 368.677,
+      "type": "line",
+      "text": "but behold, this was not all\u2014",
+      "verse": "53:20",
+      "lineIndex": 88
+    },
+    {
+      "start": 368.857,
+      "end": 371.318,
+      "type": "line",
+      "text": "they were men who were true at all times",
+      "verse": "53:20",
+      "lineIndex": 89
+    },
+    {
+      "start": 371.498,
+      "end": 374.145,
+      "type": "line",
+      "text": "in whatsoever thing they were entrusted.",
+      "verse": "53:20",
+      "lineIndex": 90
+    },
+    {
+      "start": 374.825,
+      "end": 377.24,
+      "type": "line",
+      "text": "Yea, they were men of truth and soberness,",
+      "verse": "53:21",
+      "lineIndex": 91
+    },
+    {
+      "start": 377.42,
+      "end": 380.903,
+      "type": "line",
+      "text": "for they had been taught to keep the commandments of God",
+      "verse": "53:21",
+      "lineIndex": 92
+    },
+    {
+      "start": 381.083,
+      "end": 383.126,
+      "type": "line",
+      "text": "and to walk uprightly before him.",
+      "verse": "53:21",
+      "lineIndex": 93
+    },
+    {
+      "start": 383.806,
+      "end": 389.657,
+      "type": "line",
+      "text": "And now it came to pass that Helaman did march at the head of his two thousand stripling soldiers,",
+      "verse": "53:22",
+      "lineIndex": 94
+    },
+    {
+      "start": 389.837,
+      "end": 394.992,
+      "type": "line",
+      "text": "to the support of the people in the borders of the land on the south by the west sea.",
+      "verse": "53:22",
+      "lineIndex": 95
+    },
+    {
+      "start": 395.672,
+      "end": 401.849,
+      "type": "line",
+      "text": "And thus ended the twenty and eighth year of the reign of the judges over the people of Nephi.",
+      "verse": "53:23",
+      "lineIndex": 96
+    }
+  ]
+}
