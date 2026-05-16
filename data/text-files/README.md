@@ -1,0 +1,62 @@
+# data/text-files/ — tier system
+
+This directory holds the BoFM text corpus across editorial tiers, plus parallel reference corpora used by the build pipeline.
+
+## Tiers
+
+| Tier | Directory | Origin | Editable? | Status |
+|---|---|---|---|---|
+| `v0-bofm-original/` | 2020 LDS official BoFM base text (one file per book). | **Never.** This is the unedited reference baseline. | Reference baseline |
+| `v1-skousen-breaks/` | Skousen sense-line precursor (per-book Skousen-edition line breaks). | Never directly — input only. Treated as a colometric proposal we consider but do not adopt verbatim. | Editorial input |
+| `v2-mine/` | Stan + Claude hand-edited, **one ATU (atomic thought unit) per line**. The single source of truth for the published reading edition. | **Yes.** This is where editorial work happens. | Active — canonical |
+| `parry/` | Parry-edition source data (per-book Hebrew-poetry overlay parsed into `data/parry_index.json` for the optional Poetic Layer). | Reference corpus; never directly edited here. | Editorial input |
+| `lds-scriptures.txt` | Full LDS canon dump (KJV Bible + BoFM + D&C + PoGP) in tab-separated `Book Ch:Vs<TAB>verse text` form. Used by `scripts/build_kjv_diff.py`, `scripts/build_phrase_index.py`, and the allusion-analysis scripts to compute KJV-vs-BoFM diffs and cross-corpus quotations. | Never directly. | Reference corpus |
+
+## File naming
+
+Within `v0-bofm-original/`, `v1-skousen-breaks/`, and `v2-mine/`, files use the convention:
+
+```
+{BB}-{book_slug}-2020-sb-v{N}.txt
+```
+
+For example:
+
+```
+v2-mine/
+  01-1_nephi-2020-sb-v2.txt
+  02-2_nephi-2020-sb-v2.txt
+  03-jacob-2020-sb-v2.txt
+  ...
+  15-moroni-2020-sb-v2.txt
+```
+
+- `{BB}` is the two-digit BoFM book order (01 – 15).
+- `2020-sb` denotes the 2020 LDS base text (small-block formatting).
+- `v{N}` is the tier number (0, 1, 2).
+
+`parry/` uses a simplified `{BB}-{book_slug}.txt` naming.
+
+## Sacred-source discipline
+
+Per [CLAUDE.md](../../CLAUDE.md):
+
+> `data/text-files/v2-mine/` is the canonical source. Hand-edited by Stan, one ATU per line. **Sacred.**
+>
+> NEVER alter punctuation (post-1830 editorial overlay, canonical to LDS text). NEVER add, remove, or change words. NEVER apply ad-hoc / novel changes without Stan approval. ALWAYS preserve verse-refs. The ONLY editorial tool is where lines break.
+
+Rule-derivative changes (Category A mechanical rules firing unambiguously via validator) do NOT require per-item approval — the rule firing IS the approval. Only `REVIEW-REQUIRED` validator findings need per-item judgment.
+
+## Cascade rule
+
+**`v2-mine/` edit → `build_book.py --all` → `books/*.html` → bump `sw.js` cache version → commit + push.**
+
+After any change to `v2-mine/`, the public-site HTML must be regenerated (`build_book.py` is the renderer) and the service-worker cache version bumped so users pick up the new pages on next visit.
+
+For validator-driven mechanical applications:
+
+1. Validator finding lands as `STRONG-MERGE-CANDIDATE` / `STRONG-SPLIT-CANDIDATE` / `REVIEW-REQUIRED` per `validators/run_all.py`.
+2. STRONG findings → applier script applies the diff to `v2-mine/`; commit records the change with the rule citation.
+3. REVIEW findings → per-item Stan judgment; never auto-applied.
+
+The pre-commit hook (`bash validators/hooks/install.sh` to install) runs `validators/run_all.py --baseline-check` against `validators/.baseline.json` to block regressions; canon-touching commits additionally need an `Audit dispatched: ...` or `Audit-skippable per §7.3 (...)` declaration per the commit-msg hook.

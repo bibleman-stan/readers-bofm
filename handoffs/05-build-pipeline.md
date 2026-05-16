@@ -9,13 +9,17 @@ def process_line(line, swap_list):
 ```
 
 ### Data Loading
-Loads 6 JSON files into globals:
+Loads JSON files into globals:
 1. `hardy_intertext.json` → intertext index (quotations/allusions)
 2. `hardy_phrase_index.json` → phrase-level match data
 3. `kjv_diff_index.json` → KJV parallel passage diffs
-4. `geo_index.json` → geographic references
-5. `pericope_index.json` → section headers (710 entries)
-6. `parallel_index.json` → Hebrew Poetry structures (619 lite)
+4. `pericope_index.json` → section headers (710 entries)
+5. `parallel_index.json` → Hebrew Poetry structures (619 lite)
+6. `parry_index.json` → Parry colometric overlay
+
+(Previously also loaded a geographic-references index and an
+Isaiah/Malachi contextual-glosses index — both features removed
+2026-05-16 as abandoned; see commit 82624fe for cleanup detail.)
 
 All graceful — missing files print warning but don't break.
 

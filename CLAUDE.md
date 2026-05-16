@@ -22,7 +22,7 @@ A web-based colometric reading edition of the Book of Mormon at **bomreader.com*
 
 **Self-report before first substantive response:** one line per mandatory file read; pending-item disposition (each = executing-now / retired-with-rationale / re-deferred-with-concrete-trigger; "awaiting Stan direction" / "until Stan re-surfaces" are drift not defers); red flags. Silent skip = orientation failure.
 
-JSONL at `~/.claude/projects/c--Users-bibleman-repos-readers-bofm/<session-id>.jsonl` is the verbatim record. After compaction, grep into it. Don't write wrap artifacts / session-notes / full-transcript dumps; surface state inline. `pending.md` only for extended multi-cycle hand-offs.
+**Compaction-resume protocol.** Per [`../atu-method/memories/feedback_compaction_resume_protocol.md`](../atu-method/memories/feedback_compaction_resume_protocol.md) (cross-corpus shared discipline): when resuming from a compaction event, the FIRST action after the mandatory orientation reads is to read the last 20-30 user↔assistant back-and-forth turns from the session JSONL verbatim. Report the re-read as part of the orientation self-report. Don't write wrap artifacts / session-notes / full-transcript dumps; surface state inline. `pending.md` only for extended multi-cycle hand-offs.
 
 ---
 
@@ -172,10 +172,11 @@ Layer 1 = generic English-grammar break-legality (`data/syntax-reference/ud-taxo
 
 ## Canon-to-git policy
 
-`private/` is gitignored EXCEPT two tracked exceptions: `private/01-method/colometry-canon.md` and `private/01-method/pericope-canon.md`. Both tracked via `git add -f` so the public repo shows current canon state to any future scholar.
+`private/` is gitignored EXCEPT a tracked-exception family: `private/01-method/colometry-canon.md`, `private/01-method/pericope-canon.md`, and everything under `private/01-method/scholarship/` (per-rule scholarly-grounding companion documents — added 2026-05-16, parallel to readers-gnt). All tracked via `git add -f` so the public repo shows current canon state AND its defensibility surface to any future scholar.
 
 - Dropbox is the sole versioning substrate for canon micro-refinement history.
 - Git tracks publicly-published canon state — the form a scholar would weigh on its merits.
+- Per-rule defensibility surface (citations, rationale, empirical-validation evidence) lives in `scholarship/r{N}.md` per `atu-method/docs/rule-template.md`. When future §5 work touches a rule with inline scholarly citations, MOVE them to scholarship/ rather than deleting — see `private/01-method/scholarship/README.md`.
 - Other `private/` files (session folders, research notes, sub-method docs) stay gitignored and unversioned in git.
 
 ---

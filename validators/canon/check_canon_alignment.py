@@ -1,11 +1,15 @@
 """Canon-Validator structural alignment check (per atu-method/docs/canon-validator-alignment-protocol.md).
 
 Verifies STRUCTURAL alignment between §5 rule entries and validator code:
-  1. Validator file presence — Implementation field's named validator path resolves
-  2. Closed-list presence — every UD-signature-named closed-list appears as uppercase
-     Python constant in the validator source
-  3. UD signature field consistency — deprels and lemmas from the signature appear
-     as string literals or constants in validator code
+  1. Validator file presence — backtick-quoted ``validators/.../.py`` paths
+     ANYWHERE in the rule body resolve (catches both Implementation-block YAML
+     and inline-prose detector references; protocol commit 49ee753 fix #2)
+  2. Closed-list presence — every UD-signature-named closed-list appears as
+     uppercase Python constant in the named validator file OR in
+     ``validators/_shared/`` (protocol commit 49ee753 fix #1); cross-rule
+     references resolved elsewhere in ``validators/`` count as PRESENT
+  3. UD signature field consistency — deprels and lemmas from the signature
+     appear as string literals or constants anywhere in ``validators/``
   4. Multi-valued field branches — surfaced as PARTIAL when branches are unverifiable
 
 Verdicts (per protocol):
@@ -46,18 +50,33 @@ def split_rules(canon_text: str) -> list[tuple[str, str, str]]:
 
 
 def extract_validator_paths(body: str) -> list[str]:
-    """Find ALL validator paths named in the Implementation field.
+    """Find ALL validator paths named in the rule body.
+
+    Searches the ENTIRE rule body (not just the Implementation block) for
+    backtick-quoted ``validators/.../.py`` patterns. Catches both:
+      (a) standard ``**Implementation.**`` block with backtick-quoted paths
+      (b) inline-prose detector references anywhere in the rule body (e.g.,
+          "the detector at ``validators/.../.py`` covers this")
 
     Some rules name multiple validators (e.g., R12 has both a line-final-tokens
     validator and a compound-verb validator). The structural alignment check
     must search ALL named files for canon-named constants — checking only the
     first produced false-positive DRIFT findings (bug surfaced 2026-05-16).
+
+    Inline-prose-anywhere search per atu-method/docs/canon-validator-alignment-
+    protocol.md commit 49ee753 (Tanakh-surfaced false-positive class: H5b/H15
+    have working validators referenced via inline prose, not YAML list-form;
+    a narrow Implementation-only scope would have flagged them as NO_IMPL).
     """
-    impl_m = re.search(r'\*\*Implementation\.\*\*(.*)', body, re.DOTALL)
-    if not impl_m:
-        return []
-    impl = impl_m.group(1)
-    return re.findall(r'`(validators/[^`]+\.py)`', impl)
+    paths = re.findall(r'`(validators/[^`]+\.py)`', body)
+    # Dedupe while preserving order
+    seen: set[str] = set()
+    out: list[str] = []
+    for p in paths:
+        if p not in seen:
+            seen.add(p)
+            out.append(p)
+    return out
 
 
 def is_editorial_no_applier(body: str) -> bool:
@@ -147,34 +166,51 @@ def audit_rule(rid: str, title: str, body: str) -> dict:
         res["evidence"].append(f"canon names files that don't exist: {missing_files}")
         return res
 
-    # Concatenate ALL validator-file sources — closed-list constants may live in any
-    src_concat = "\n".join((REPO / p).read_text(encoding="utf-8") for p in vpaths)
+    # Concatenate ALL named-validator-file sources — closed-list constants may
+    # live in any of the files named by this rule's Implementation.
+    named_src = "\n".join((REPO / p).read_text(encoding="utf-8") for p in vpaths)
 
-    # Cross-rule reference resolution: a canon rule may cite a constant defined in
-    # ANOTHER rule's validator (e.g., R19 citing R17's GOVERNING_LEMMAS in an Exclusion).
-    # Such cross-rule citations are CORRECT canon prose, not DRIFT — collect the full
-    # codebase's constant inventory once and treat any constant found anywhere as resolved.
+    # Per atu-method/docs/canon-validator-alignment-protocol.md commit 49ee753
+    # (search-scope fix #1): constants living in shared modules under
+    # validators/_shared/ are legitimately PRIMARY presence, not cross-rule. A
+    # script that searches only the named-detector file flags _shared/-defined
+    # constants as DRIFT — false-positive class (Tanakh's DISCOURSE_PARTICLES
+    # in _shared/morphology.py was the surfacing example).
+    shared_src = "\n".join(
+        p.read_text(encoding="utf-8")
+        for p in REPO.glob("validators/_shared/**/*.py")
+        if "__pycache__" not in str(p)
+    )
+    primary_src = named_src + "\n" + shared_src
+
+    # Cross-rule reference fallback: a canon rule may cite a constant defined
+    # in ANOTHER rule's validator (e.g., R19 citing R17's GOVERNING_LEMMAS in
+    # an Exclusion). Such cross-rule citations are CORRECT canon prose, not
+    # DRIFT — collect the full codebase's constant inventory once and treat
+    # any constant found anywhere as resolved.
     all_validators_src = "\n".join(
         (REPO / p).read_text(encoding="utf-8")
         for p in REPO.glob("validators/**/*.py")
         if "__pycache__" not in str(p) and ".tx" not in str(p)
     )
 
-    # Check closed-list presence (own validator first; fall through to cross-rule)
+    # Check closed-list presence (primary scope first; then cross-rule fallback)
     canon_names = extract_closed_list_names(body)
     missing_lists = []
     cross_rule = []
     for n in canon_names:
-        if n in src_concat:
-            continue
+        if n in primary_src:
+            continue   # PRESENT in named detector OR in validators/_shared/
         if n in all_validators_src:
-            cross_rule.append(n)  # exists elsewhere in codebase — cross-rule reference, not DRIFT
+            cross_rule.append(n)  # PRESENT elsewhere — cross-rule reference, not DRIFT
         else:
             missing_lists.append(n)
 
-    # Check deprels appear
+    # Check deprels appear (broad search — deprel literals are simple strings
+    # like "advcl" / "ccomp", and a match anywhere in the validators/ tree
+    # proves the deprel is operationally handled)
     deprels = extract_signature_deprels(body)
-    missing_deprels = [d for d in deprels if d and d not in src_concat]
+    missing_deprels = [d for d in deprels if d and d not in all_validators_src]
 
     if missing_lists or missing_deprels:
         res["verdict"] = "DRIFT"
@@ -187,7 +223,8 @@ def audit_rule(rid: str, title: str, body: str) -> dict:
     else:
         res["verdict"] = "ALIGNED"
         extra = f" + {len(cross_rule)} cross-rule ref(s) resolved" if cross_rule else ""
-        res["evidence"].append(f"validator(s) at {vpaths}; {len(canon_names) - len(cross_rule)} local + {len(cross_rule)} cross-rule closed-list ref(s) present{extra}")
+        n_primary = len(canon_names) - len(cross_rule)
+        res["evidence"].append(f"validator(s) at {vpaths}; {n_primary} primary (named or _shared) + {len(cross_rule)} cross-rule closed-list ref(s) present{extra}")
     return res
 
 
