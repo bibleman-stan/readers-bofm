@@ -1,0 +1,1232 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 31,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 559.97,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.111,
+      "type": "line",
+      "text": "Now it came to pass that after the end of Korihor,",
+      "verse": "31:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.291,
+      "end": 5.474,
+      "type": "line",
+      "text": "Alma having received tidings",
+      "verse": "31:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.654,
+      "end": 9.369,
+      "type": "line",
+      "text": "that the Zoramites were perverting the ways of the Lord,",
+      "verse": "31:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.549,
+      "end": 17.63,
+      "type": "line",
+      "text": "and that Zoram, who was their leader, was leading the hearts of the people to bow down to dumb idols,",
+      "verse": "31:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.81,
+      "end": 22.315,
+      "type": "line",
+      "text": "his heart again began to sicken because of the iniquity of the people.",
+      "verse": "31:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.995,
+      "end": 28.986,
+      "type": "line",
+      "text": "For it was the cause of great sorrow to Alma to know of iniquity among his people;",
+      "verse": "31:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 29.166,
+      "end": 36.782,
+      "type": "line",
+      "text": "therefore his heart was exceedingly sorrowful because of the separation of the Zoramites from the Nephites.",
+      "verse": "31:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 37.462,
+      "end": 41.363,
+      "type": "line",
+      "text": "Now the Zoramites had gathered themselves together in a land",
+      "verse": "31:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 41.543,
+      "end": 43.447,
+      "type": "line",
+      "text": "which they called Antionum,",
+      "verse": "31:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 43.627,
+      "end": 46.321,
+      "type": "line",
+      "text": "which was east of the land of Zarahemla,",
+      "verse": "31:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 46.501,
+      "end": 49.473,
+      "type": "line",
+      "text": "which lay nearly bordering upon the seashore,",
+      "verse": "31:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 49.653,
+      "end": 51.975,
+      "type": "line",
+      "text": "which was south of the land of Jershon,",
+      "verse": "31:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 52.155,
+      "end": 55.313,
+      "type": "line",
+      "text": "which also bordered upon the wilderness south,",
+      "verse": "31:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 55.493,
+      "end": 58.187,
+      "type": "line",
+      "text": "which wilderness was full of the Lamanites.",
+      "verse": "31:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 58.867,
+      "end": 60.771,
+      "type": "line",
+      "text": "Now the Nephites greatly feared",
+      "verse": "31:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 60.951,
+      "end": 65.641,
+      "type": "line",
+      "text": "that the Zoramites would enter into a correspondence with the Lamanites,",
+      "verse": "31:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 65.821,
+      "end": 70.651,
+      "type": "line",
+      "text": "and that it would be the means of great loss on the part of the Nephites.",
+      "verse": "31:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 71.331,
+      "end": 78.39,
+      "type": "line",
+      "text": "And now, as the preaching of the word had a great tendency to lead the people to do that which was just\u2014",
+      "verse": "31:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 78.57,
+      "end": 83.678,
+      "type": "line",
+      "text": "yea, it had had more powerful effect upon the minds of the people than the sword,",
+      "verse": "31:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 83.858,
+      "end": 86.505,
+      "type": "line",
+      "text": "or anything else, which had happened unto them\u2014",
+      "verse": "31:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 86.685,
+      "end": 92.49,
+      "type": "line",
+      "text": "therefore Alma thought it was expedient that they should try the virtue of the word of God.",
+      "verse": "31:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 93.17,
+      "end": 96.514,
+      "type": "line",
+      "text": "Therefore he took Ammon, and Aaron, and Omner;",
+      "verse": "31:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 96.694,
+      "end": 99.666,
+      "type": "line",
+      "text": "and Himni he did leave in the church in Zarahemla;",
+      "verse": "31:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 99.846,
+      "end": 102.168,
+      "type": "line",
+      "text": "but the former three he took with him,",
+      "verse": "31:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 102.348,
+      "end": 106.017,
+      "type": "line",
+      "text": "and also Amulek and Zeezrom, who were at Melek;",
+      "verse": "31:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 106.197,
+      "end": 108.333,
+      "type": "line",
+      "text": "and he also took two of his sons.",
+      "verse": "31:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 109.013,
+      "end": 111.892,
+      "type": "line",
+      "text": "Now the eldest of his sons he took not with him,",
+      "verse": "31:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 112.072,
+      "end": 113.744,
+      "type": "line",
+      "text": "and his name was Helaman;",
+      "verse": "31:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 113.924,
+      "end": 118.104,
+      "type": "line",
+      "text": "but the names of those whom he took with him were Shiblon and Corianton;",
+      "verse": "31:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 118.284,
+      "end": 124.414,
+      "type": "line",
+      "text": "and these are the names of those who went with him among the Zoramites, to preach unto them the word.",
+      "verse": "31:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 125.094,
+      "end": 128.391,
+      "type": "line",
+      "text": "Now the Zoramites were dissenters from the Nephites;",
+      "verse": "31:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 128.571,
+      "end": 131.868,
+      "type": "line",
+      "text": "therefore they had had the word of God preached unto them.",
+      "verse": "31:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 132.548,
+      "end": 134.916,
+      "type": "line",
+      "text": "But they had fallen into great errors,",
+      "verse": "31:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 135.096,
+      "end": 141.737,
+      "type": "line",
+      "text": "for they would not observe to keep the commandments of God, and his statutes, according to the law of Moses.",
+      "verse": "31:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 142.417,
+      "end": 145.807,
+      "type": "line",
+      "text": "Neither would they observe the performances of the church,",
+      "verse": "31:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 145.987,
+      "end": 149.145,
+      "type": "line",
+      "text": "to continue in prayer and supplication to God daily,",
+      "verse": "31:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 149.325,
+      "end": 151.647,
+      "type": "line",
+      "text": "that they might not enter into temptation.",
+      "verse": "31:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 152.327,
+      "end": 157.296,
+      "type": "line",
+      "text": "Yea, in fine, they did pervert the ways of the Lord in very many instances;",
+      "verse": "31:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 157.476,
+      "end": 164.256,
+      "type": "line",
+      "text": "therefore, for this cause, Alma and his brethren went into the land to preach the word unto them.",
+      "verse": "31:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 164.936,
+      "end": 167.212,
+      "type": "line",
+      "text": "Now, when they had come into the land,",
+      "verse": "31:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 167.392,
+      "end": 172.408,
+      "type": "line",
+      "text": "behold, to their astonishment they found that the Zoramites had built synagogues,",
+      "verse": "31:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 172.588,
+      "end": 176.675,
+      "type": "line",
+      "text": "and that they did gather themselves together on one day of the week,",
+      "verse": "31:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 176.855,
+      "end": 179.363,
+      "type": "line",
+      "text": "which day they did call the day of the Lord;",
+      "verse": "31:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 179.543,
+      "end": 184.837,
+      "type": "line",
+      "text": "and they did worship after a manner which Alma and his brethren had never beheld;",
+      "verse": "31:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 185.517,
+      "end": 189.65,
+      "type": "line",
+      "text": "For they had a place built up in the center of their synagogue,",
+      "verse": "31:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 189.83,
+      "end": 192.802,
+      "type": "line",
+      "text": "a place for standing, which was high above the head;",
+      "verse": "31:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 192.982,
+      "end": 195.954,
+      "type": "line",
+      "text": "and the top thereof would only admit one person.",
+      "verse": "31:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 196.634,
+      "end": 199.142,
+      "type": "line",
+      "text": "Therefore, whosoever desired to worship",
+      "verse": "31:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 199.322,
+      "end": 200.762,
+      "type": "line",
+      "text": "must go forth",
+      "verse": "31:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 200.942,
+      "end": 203.264,
+      "type": "line",
+      "text": "and stand upon the top thereof,",
+      "verse": "31:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 203.444,
+      "end": 206.184,
+      "type": "line",
+      "text": "and stretch forth his hands towards heaven,",
+      "verse": "31:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 206.364,
+      "end": 209.243,
+      "type": "line",
+      "text": "and cry with a loud voice, saying:",
+      "verse": "31:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 209.923,
+      "end": 212.617,
+      "type": "line",
+      "text": "Holy, holy God; we believe that thou art God,",
+      "verse": "31:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 212.797,
+      "end": 214.933,
+      "type": "line",
+      "text": "and we believe that thou art holy,",
+      "verse": "31:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 215.113,
+      "end": 217.621,
+      "type": "line",
+      "text": "and that thou wast a spirit,",
+      "verse": "31:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 217.801,
+      "end": 219.844,
+      "type": "line",
+      "text": "and that thou art a spirit,",
+      "verse": "31:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 220.024,
+      "end": 222.532,
+      "type": "line",
+      "text": "and that thou wilt be a spirit forever.",
+      "verse": "31:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 223.212,
+      "end": 227.81,
+      "type": "line",
+      "text": "Holy God, we believe that thou hast separated us from our brethren;",
+      "verse": "31:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 227.99,
+      "end": 231.241,
+      "type": "line",
+      "text": "and we do not believe in the tradition of our brethren,",
+      "verse": "31:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 231.421,
+      "end": 236.158,
+      "type": "line",
+      "text": "which was handed down to them by the childishness of their fathers;",
+      "verse": "31:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 236.338,
+      "end": 239.821,
+      "type": "line",
+      "text": "but we believe that thou hast elected us to be thy holy children;",
+      "verse": "31:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 240.001,
+      "end": 244.413,
+      "type": "line",
+      "text": "and also thou hast made it known unto us that there shall be no Christ.",
+      "verse": "31:16",
+      "lineIndex": 64
+    },
+    {
+      "start": 245.093,
+      "end": 248.483,
+      "type": "line",
+      "text": "But thou art the same yesterday, today, and forever;",
+      "verse": "31:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 248.663,
+      "end": 251.635,
+      "type": "line",
+      "text": "and thou hast elected us that we shall be saved,",
+      "verse": "31:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 251.815,
+      "end": 256.459,
+      "type": "line",
+      "text": "whilst all around us are elected to be cast by thy wrath down to hell;",
+      "verse": "31:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 256.639,
+      "end": 259.704,
+      "type": "line",
+      "text": "for the which holiness, O God, we thank thee;",
+      "verse": "31:17",
+      "lineIndex": 68
+    },
+    {
+      "start": 259.884,
+      "end": 262.995,
+      "type": "line",
+      "text": "and we also thank thee that thou hast elected us,",
+      "verse": "31:17",
+      "lineIndex": 69
+    },
+    {
+      "start": 263.175,
+      "end": 267.865,
+      "type": "line",
+      "text": "that we may not be led away after the foolish traditions of our brethren,",
+      "verse": "31:17",
+      "lineIndex": 70
+    },
+    {
+      "start": 268.045,
+      "end": 271.11,
+      "type": "line",
+      "text": "which doth bind them down to a belief of Christ,",
+      "verse": "31:17",
+      "lineIndex": 71
+    },
+    {
+      "start": 271.29,
+      "end": 275.655,
+      "type": "line",
+      "text": "which doth lead their hearts to wander far from thee, our God.",
+      "verse": "31:17",
+      "lineIndex": 72
+    },
+    {
+      "start": 276.335,
+      "end": 278.564,
+      "type": "line",
+      "text": "And again we thank thee, O God,",
+      "verse": "31:18",
+      "lineIndex": 73
+    },
+    {
+      "start": 278.744,
+      "end": 281.438,
+      "type": "line",
+      "text": "that we are a chosen and a holy people.",
+      "verse": "31:18",
+      "lineIndex": 74
+    },
+    {
+      "start": 281.618,
+      "end": 282.454,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "31:18",
+      "lineIndex": 75
+    },
+    {
+      "start": 283.134,
+      "end": 288.335,
+      "type": "line",
+      "text": "Now it came to pass that after Alma and his brethren and his sons had heard these prayers,",
+      "verse": "31:19",
+      "lineIndex": 76
+    },
+    {
+      "start": 288.515,
+      "end": 290.837,
+      "type": "line",
+      "text": "they were astonished beyond all measure.",
+      "verse": "31:19",
+      "lineIndex": 77
+    },
+    {
+      "start": 291.517,
+      "end": 295.557,
+      "type": "line",
+      "text": "For behold, every man did go forth and offer up these same prayers.",
+      "verse": "31:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 296.237,
+      "end": 299.023,
+      "type": "line",
+      "text": "Now the place was called by them Rameumptom,",
+      "verse": "31:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 299.203,
+      "end": 301.85,
+      "type": "line",
+      "text": "which, being interpreted, is the holy stand.",
+      "verse": "31:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 302.53,
+      "end": 307.778,
+      "type": "line",
+      "text": "Now, from this stand they did offer up, every man, the selfsame prayer unto God,",
+      "verse": "31:22",
+      "lineIndex": 81
+    },
+    {
+      "start": 307.958,
+      "end": 310.605,
+      "type": "line",
+      "text": "thanking their God that they were chosen of him,",
+      "verse": "31:22",
+      "lineIndex": 82
+    },
+    {
+      "start": 310.785,
+      "end": 315.011,
+      "type": "line",
+      "text": "and that he did not lead them away after the tradition of their brethren,",
+      "verse": "31:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 315.191,
+      "end": 321.925,
+      "type": "line",
+      "text": "and that their hearts were not stolen away to believe in things to come, which they knew nothing about.",
+      "verse": "31:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 322.605,
+      "end": 326.599,
+      "type": "line",
+      "text": "Now, after the people had all offered up thanks after this manner,",
+      "verse": "31:23",
+      "lineIndex": 85
+    },
+    {
+      "start": 326.779,
+      "end": 330.912,
+      "type": "line",
+      "text": "they returned to their homes, never speaking of their God again",
+      "verse": "31:23",
+      "lineIndex": 86
+    },
+    {
+      "start": 331.092,
+      "end": 338.476,
+      "type": "line",
+      "text": "until they had assembled themselves together again to the holy stand, to offer up thanks after their manner.",
+      "verse": "31:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 339.156,
+      "end": 342.128,
+      "type": "line",
+      "text": "Now when Alma saw this his heart was grieved;",
+      "verse": "31:24",
+      "lineIndex": 89
+    },
+    {
+      "start": 342.308,
+      "end": 345.791,
+      "type": "line",
+      "text": "for he saw that they were a wicked and a perverse people;",
+      "verse": "31:24",
+      "lineIndex": 90
+    },
+    {
+      "start": 345.971,
+      "end": 350.058,
+      "type": "line",
+      "text": "yea, he saw that their hearts were set upon gold, and upon silver,",
+      "verse": "31:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 350.238,
+      "end": 352.56,
+      "type": "line",
+      "text": "and upon all manner of fine goods.",
+      "verse": "31:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 353.24,
+      "end": 358.766,
+      "type": "line",
+      "text": "Yea, and he also saw that their hearts were lifted up unto great boasting, in their pride.",
+      "verse": "31:25",
+      "lineIndex": 93
+    },
+    {
+      "start": 359.446,
+      "end": 361.768,
+      "type": "line",
+      "text": "And he lifted up his voice to heaven,",
+      "verse": "31:26",
+      "lineIndex": 94
+    },
+    {
+      "start": 361.948,
+      "end": 363.713,
+      "type": "line",
+      "text": "and cried, saying:",
+      "verse": "31:26",
+      "lineIndex": 95
+    },
+    {
+      "start": 363.893,
+      "end": 365.426,
+      "type": "line",
+      "text": "O, how long, O Lord,",
+      "verse": "31:26",
+      "lineIndex": 96
+    },
+    {
+      "start": 365.606,
+      "end": 374.522,
+      "type": "line",
+      "text": "wilt thou suffer that thy servants shall dwell here below in the flesh, to behold such gross wickedness among the children of men?",
+      "verse": "31:26",
+      "lineIndex": 97
+    },
+    {
+      "start": 375.202,
+      "end": 376.549,
+      "type": "line",
+      "text": "Behold, O God,",
+      "verse": "31:27",
+      "lineIndex": 98
+    },
+    {
+      "start": 376.729,
+      "end": 378.401,
+      "type": "line",
+      "text": "they cry unto thee,",
+      "verse": "31:27",
+      "lineIndex": 99
+    },
+    {
+      "start": 378.581,
+      "end": 381.785,
+      "type": "line",
+      "text": "and yet their hearts are swallowed up in their pride.",
+      "verse": "31:27",
+      "lineIndex": 100
+    },
+    {
+      "start": 381.965,
+      "end": 383.312,
+      "type": "line",
+      "text": "Behold, O God,",
+      "verse": "31:27",
+      "lineIndex": 101
+    },
+    {
+      "start": 383.492,
+      "end": 385.675,
+      "type": "line",
+      "text": "they cry unto thee with their mouths,",
+      "verse": "31:27",
+      "lineIndex": 102
+    },
+    {
+      "start": 385.855,
+      "end": 390.36,
+      "type": "line",
+      "text": "while they are puffed up, even to greatness, with the vain things of the world.",
+      "verse": "31:27",
+      "lineIndex": 103
+    },
+    {
+      "start": 391.04,
+      "end": 392.433,
+      "type": "line",
+      "text": "Behold, O my God,",
+      "verse": "31:28",
+      "lineIndex": 104
+    },
+    {
+      "start": 392.613,
+      "end": 394.238,
+      "type": "line",
+      "text": "their costly apparel,",
+      "verse": "31:28",
+      "lineIndex": 105
+    },
+    {
+      "start": 394.418,
+      "end": 400.037,
+      "type": "line",
+      "text": "and their ringlets, and their bracelets, and their ornaments of gold,",
+      "verse": "31:28",
+      "lineIndex": 106
+    },
+    {
+      "start": 400.217,
+      "end": 403.514,
+      "type": "line",
+      "text": "and all their precious things which they are ornamented with;",
+      "verse": "31:28",
+      "lineIndex": 107
+    },
+    {
+      "start": 403.694,
+      "end": 406.341,
+      "type": "line",
+      "text": "and behold, their hearts are set upon them,",
+      "verse": "31:28",
+      "lineIndex": 108
+    },
+    {
+      "start": 406.521,
+      "end": 408.936,
+      "type": "line",
+      "text": "and yet they cry unto thee and say\u2014",
+      "verse": "31:28",
+      "lineIndex": 109
+    },
+    {
+      "start": 409.116,
+      "end": 410.741,
+      "type": "line",
+      "text": "We thank thee, O God,",
+      "verse": "31:28",
+      "lineIndex": 110
+    },
+    {
+      "start": 410.921,
+      "end": 415.472,
+      "type": "line",
+      "text": "for we are a chosen people unto thee, while others shall perish.",
+      "verse": "31:28",
+      "lineIndex": 111
+    },
+    {
+      "start": 416.152,
+      "end": 421.4,
+      "type": "line",
+      "text": "Yea, and they say that thou hast made it known unto them that there shall be no Christ.",
+      "verse": "31:29",
+      "lineIndex": 112
+    },
+    {
+      "start": 422.08,
+      "end": 423.148,
+      "type": "line",
+      "text": "O Lord God,",
+      "verse": "31:30",
+      "lineIndex": 114
+    },
+    {
+      "start": 423.328,
+      "end": 428.436,
+      "type": "line",
+      "text": "how long wilt thou suffer that such wickedness and infidelity shall be among this people?",
+      "verse": "31:30",
+      "lineIndex": 115
+    },
+    {
+      "start": 428.616,
+      "end": 429.638,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "31:30",
+      "lineIndex": 116
+    },
+    {
+      "start": 429.818,
+      "end": 431.629,
+      "type": "line",
+      "text": "wilt thou give me strength,",
+      "verse": "31:30",
+      "lineIndex": 117
+    },
+    {
+      "start": 431.809,
+      "end": 434.177,
+      "type": "line",
+      "text": "that I may bear with mine infirmities.",
+      "verse": "31:30",
+      "lineIndex": 118
+    },
+    {
+      "start": 434.357,
+      "end": 439.28,
+      "type": "line",
+      "text": "For I am infirm, and such wickedness among this people doth pain my soul.",
+      "verse": "31:30",
+      "lineIndex": 119
+    },
+    {
+      "start": 439.96,
+      "end": 440.982,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "31:31",
+      "lineIndex": 120
+    },
+    {
+      "start": 441.162,
+      "end": 443.577,
+      "type": "line",
+      "text": "my heart is exceedingly sorrowful;",
+      "verse": "31:31",
+      "lineIndex": 121
+    },
+    {
+      "start": 443.757,
+      "end": 446.033,
+      "type": "line",
+      "text": "wilt thou comfort my soul in Christ.",
+      "verse": "31:31",
+      "lineIndex": 122
+    },
+    {
+      "start": 446.213,
+      "end": 447.235,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "31:31",
+      "lineIndex": 123
+    },
+    {
+      "start": 447.415,
+      "end": 450.434,
+      "type": "line",
+      "text": "wilt thou grant unto me that I may have strength,",
+      "verse": "31:31",
+      "lineIndex": 124
+    },
+    {
+      "start": 450.614,
+      "end": 457.766,
+      "type": "line",
+      "text": "that I may suffer with patience these afflictions which shall come upon me, because of the iniquity of this people.",
+      "verse": "31:31",
+      "lineIndex": 125
+    },
+    {
+      "start": 458.446,
+      "end": 459.468,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "31:32",
+      "lineIndex": 126
+    },
+    {
+      "start": 459.648,
+      "end": 462.945,
+      "type": "line",
+      "text": "wilt thou comfort my soul, and give unto me success,",
+      "verse": "31:32",
+      "lineIndex": 127
+    },
+    {
+      "start": 463.125,
+      "end": 469.116,
+      "type": "line",
+      "text": "and also my fellow laborers who are with me\u2014 yea, Ammon, and Aaron, and Omner,",
+      "verse": "31:32",
+      "lineIndex": 128
+    },
+    {
+      "start": 469.296,
+      "end": 472.825,
+      "type": "line",
+      "text": "and also Amulek and Zeezrom, and also my two sons\u2014",
+      "verse": "31:32",
+      "lineIndex": 129
+    },
+    {
+      "start": 473.005,
+      "end": 475.745,
+      "type": "line",
+      "text": "yea, even all these wilt thou comfort, O Lord.",
+      "verse": "31:32",
+      "lineIndex": 130
+    },
+    {
+      "start": 475.925,
+      "end": 478.479,
+      "type": "line",
+      "text": "Yea, wilt thou comfort their souls in Christ.",
+      "verse": "31:32",
+      "lineIndex": 131
+    },
+    {
+      "start": 479.159,
+      "end": 482.596,
+      "type": "line",
+      "text": "Wilt thou grant unto them that they may have strength,",
+      "verse": "31:33",
+      "lineIndex": 132
+    },
+    {
+      "start": 482.776,
+      "end": 490.299,
+      "type": "line",
+      "text": "that they may bear their afflictions which shall come upon them because of the iniquities of this people.",
+      "verse": "31:33",
+      "lineIndex": 133
+    },
+    {
+      "start": 490.979,
+      "end": 492.001,
+      "type": "line",
+      "text": "O Lord,",
+      "verse": "31:34",
+      "lineIndex": 134
+    },
+    {
+      "start": 492.181,
+      "end": 498.543,
+      "type": "line",
+      "text": "wilt thou grant unto us that we may have success in bringing them again unto thee in Christ.",
+      "verse": "31:34",
+      "lineIndex": 135
+    },
+    {
+      "start": 499.223,
+      "end": 500.616,
+      "type": "line",
+      "text": "Behold, O Lord,",
+      "verse": "31:35",
+      "lineIndex": 136
+    },
+    {
+      "start": 500.796,
+      "end": 502.514,
+      "type": "line",
+      "text": "their souls are precious,",
+      "verse": "31:35",
+      "lineIndex": 137
+    },
+    {
+      "start": 502.694,
+      "end": 505.062,
+      "type": "line",
+      "text": "and many of them are our brethren;",
+      "verse": "31:35",
+      "lineIndex": 138
+    },
+    {
+      "start": 505.242,
+      "end": 508.632,
+      "type": "line",
+      "text": "therefore, give unto us, O Lord, power and wisdom",
+      "verse": "31:35",
+      "lineIndex": 139
+    },
+    {
+      "start": 508.812,
+      "end": 512.527,
+      "type": "line",
+      "text": "that we may bring these, our brethren, again unto thee.",
+      "verse": "31:35",
+      "lineIndex": 140
+    },
+    {
+      "start": 513.207,
+      "end": 516.504,
+      "type": "line",
+      "text": "Now it came to pass that when Alma had said these words,",
+      "verse": "31:36",
+      "lineIndex": 141
+    },
+    {
+      "start": 516.684,
+      "end": 519.935,
+      "type": "line",
+      "text": "that he clapped his hands upon all them who were with him.",
+      "verse": "31:36",
+      "lineIndex": 142
+    },
+    {
+      "start": 520.115,
+      "end": 522.901,
+      "type": "line",
+      "text": "And behold, as he clapped his hands upon them,",
+      "verse": "31:36",
+      "lineIndex": 143
+    },
+    {
+      "start": 523.081,
+      "end": 525.821,
+      "type": "line",
+      "text": "they were filled with the Holy Spirit.",
+      "verse": "31:36",
+      "lineIndex": 144
+    },
+    {
+      "start": 526.501,
+      "end": 533.142,
+      "type": "line",
+      "text": "And after that they did separate themselves one from another, taking no thought for themselves what they should eat,",
+      "verse": "31:37",
+      "lineIndex": 145
+    },
+    {
+      "start": 533.322,
+      "end": 537.223,
+      "type": "line",
+      "text": "or what they should drink, or what they should put on.",
+      "verse": "31:37",
+      "lineIndex": 146
+    },
+    {
+      "start": 537.903,
+      "end": 540.364,
+      "type": "line",
+      "text": "And the Lord provided for them",
+      "verse": "31:38",
+      "lineIndex": 147
+    },
+    {
+      "start": 540.544,
+      "end": 542.448,
+      "type": "line",
+      "text": "that they should hunger not,",
+      "verse": "31:38",
+      "lineIndex": 148
+    },
+    {
+      "start": 542.628,
+      "end": 544.486,
+      "type": "line",
+      "text": "neither should they thirst;",
+      "verse": "31:38",
+      "lineIndex": 149
+    },
+    {
+      "start": 544.666,
+      "end": 547.034,
+      "type": "line",
+      "text": "yea, and he also gave them strength,",
+      "verse": "31:38",
+      "lineIndex": 150
+    },
+    {
+      "start": 547.214,
+      "end": 550.279,
+      "type": "line",
+      "text": "that they should suffer no manner of afflictions,",
+      "verse": "31:38",
+      "lineIndex": 151
+    },
+    {
+      "start": 550.459,
+      "end": 553.199,
+      "type": "line",
+      "text": "save it were swallowed up in the joy of Christ.",
+      "verse": "31:38",
+      "lineIndex": 152
+    },
+    {
+      "start": 553.379,
+      "end": 556.073,
+      "type": "line",
+      "text": "Now this was according to the prayer of Alma;",
+      "verse": "31:38",
+      "lineIndex": 153
+    },
+    {
+      "start": 556.253,
+      "end": 557.275,
+      "type": "line",
+      "text": "and this",
+      "verse": "31:38",
+      "lineIndex": 154
+    },
+    {
+      "start": 557.455,
+      "end": 559.313,
+      "type": "line",
+      "text": "because he prayed in faith.",
+      "verse": "31:38",
+      "lineIndex": 155
+    }
+  ]
+}
