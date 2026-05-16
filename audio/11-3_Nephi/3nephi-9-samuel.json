@@ -1,0 +1,768 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 9,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 360.283,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 9.009,
+      "type": "line",
+      "text": "And it came to pass that there was a voice heard among all the inhabitants of the earth, upon all the face of this land, crying:",
+      "verse": "9:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 9.689,
+      "end": 11.918,
+      "type": "line",
+      "text": "Wo, wo, wo unto this people;",
+      "verse": "9:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 12.098,
+      "end": 17.16,
+      "type": "line",
+      "text": "wo unto the inhabitants of the whole earth except they shall repent;",
+      "verse": "9:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 17.34,
+      "end": 24.26,
+      "type": "line",
+      "text": "for the devil laugheth, and his angels rejoice, because of the slain of the fair sons and daughters of my people;",
+      "verse": "9:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 24.44,
+      "end": 29.456,
+      "type": "line",
+      "text": "and it is because of their iniquity and abominations that they are fallen!",
+      "verse": "9:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 30.136,
+      "end": 34.176,
+      "type": "line",
+      "text": "Behold, that great city Zarahemla have I burned with fire,",
+      "verse": "9:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 34.356,
+      "end": 36.446,
+      "type": "line",
+      "text": "and the inhabitants thereof.",
+      "verse": "9:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 37.126,
+      "end": 39.494,
+      "type": "line",
+      "text": "And behold, that great city Moroni",
+      "verse": "9:4",
+      "lineIndex": 8
+    },
+    {
+      "start": 39.674,
+      "end": 43.018,
+      "type": "line",
+      "text": "have I caused to be sunk in the depths of the sea,",
+      "verse": "9:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 43.198,
+      "end": 45.752,
+      "type": "line",
+      "text": "and the inhabitants thereof to be drowned.",
+      "verse": "9:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 46.432,
+      "end": 50.519,
+      "type": "line",
+      "text": "And behold, that great city Moronihah have I covered with earth,",
+      "verse": "9:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 50.699,
+      "end": 52.696,
+      "type": "line",
+      "text": "and the inhabitants thereof,",
+      "verse": "9:5",
+      "lineIndex": 12
+    },
+    {
+      "start": 52.876,
+      "end": 57.381,
+      "type": "line",
+      "text": "to hide their iniquities and their abominations from before my face,",
+      "verse": "9:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 57.561,
+      "end": 60.208,
+      "type": "line",
+      "text": "that the blood of the prophets and the saints",
+      "verse": "9:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 60.388,
+      "end": 63.267,
+      "type": "line",
+      "text": "shall not come any more unto me against them.",
+      "verse": "9:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 63.947,
+      "end": 67.802,
+      "type": "line",
+      "text": "And behold, the city of Gilgal have I caused to be sunk,",
+      "verse": "9:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 67.982,
+      "end": 73.183,
+      "type": "line",
+      "text": "and the inhabitants thereof to be buried up in the depths of the earth;",
+      "verse": "9:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 73.863,
+      "end": 80.504,
+      "type": "line",
+      "text": "Yea, and the city of Onihah and the inhabitants thereof, and the city of Mocum and the inhabitants thereof,",
+      "verse": "9:7",
+      "lineIndex": 19
+    },
+    {
+      "start": 80.684,
+      "end": 84.028,
+      "type": "line",
+      "text": "and the city of Jerusalem and the inhabitants thereof;",
+      "verse": "9:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 84.208,
+      "end": 88.48,
+      "type": "line",
+      "text": "and waters have I caused to come up in the stead thereof,",
+      "verse": "9:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 88.66,
+      "end": 92.932,
+      "type": "line",
+      "text": "to hide their wickedness and abominations from before my face,",
+      "verse": "9:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 93.112,
+      "end": 95.759,
+      "type": "line",
+      "text": "that the blood of the prophets and the saints",
+      "verse": "9:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 95.939,
+      "end": 99.004,
+      "type": "line",
+      "text": "shall not come up any more unto me against them.",
+      "verse": "9:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 99.684,
+      "end": 101.96,
+      "type": "line",
+      "text": "And behold, the city of Gadiandi,",
+      "verse": "9:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 102.14,
+      "end": 104.044,
+      "type": "line",
+      "text": "and the city of Gadiomnah,",
+      "verse": "9:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 104.224,
+      "end": 107.475,
+      "type": "line",
+      "text": "and the city of Jacob, and the city of Gimgimno,",
+      "verse": "9:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 107.655,
+      "end": 109.977,
+      "type": "line",
+      "text": "all these have I caused to be sunk,",
+      "verse": "9:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 110.157,
+      "end": 113.64,
+      "type": "line",
+      "text": "and made hills and valleys in the places thereof;",
+      "verse": "9:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 113.82,
+      "end": 123.154,
+      "type": "line",
+      "text": "and the inhabitants thereof have I buried up in the depths of the earth, to hide their wickedness and abominations from before my face,",
+      "verse": "9:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 123.334,
+      "end": 125.981,
+      "type": "line",
+      "text": "that the blood of the prophets and the saints",
+      "verse": "9:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 126.161,
+      "end": 129.505,
+      "type": "line",
+      "text": "should not come up any more unto me against them.",
+      "verse": "9:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 130.185,
+      "end": 132.971,
+      "type": "line",
+      "text": "And behold, that great city Jacobugath,",
+      "verse": "9:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 133.151,
+      "end": 136.309,
+      "type": "line",
+      "text": "which was inhabited by the people of king Jacob,",
+      "verse": "9:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 136.489,
+      "end": 141.644,
+      "type": "line",
+      "text": "have I caused to be burned with fire because of their sins and their wickedness,",
+      "verse": "9:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 141.824,
+      "end": 148.836,
+      "type": "line",
+      "text": "which was above all the wickedness of the whole earth, because of their secret murders and combinations;",
+      "verse": "9:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 149.016,
+      "end": 152.36,
+      "type": "line",
+      "text": "for it was they that did destroy the peace of my people",
+      "verse": "9:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 152.54,
+      "end": 154.862,
+      "type": "line",
+      "text": "and the government of the land;",
+      "verse": "9:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 155.042,
+      "end": 157.689,
+      "type": "line",
+      "text": "therefore I did cause them to be burned,",
+      "verse": "9:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 157.869,
+      "end": 160.377,
+      "type": "line",
+      "text": "to destroy them from before my face,",
+      "verse": "9:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 160.557,
+      "end": 163.204,
+      "type": "line",
+      "text": "that the blood of the prophets and the saints",
+      "verse": "9:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 163.384,
+      "end": 166.449,
+      "type": "line",
+      "text": "should not come up unto me any more against them.",
+      "verse": "9:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 167.129,
+      "end": 171.03,
+      "type": "line",
+      "text": "And behold, the city of Laman, and the city of Josh,",
+      "verse": "9:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 171.21,
+      "end": 175.343,
+      "type": "line",
+      "text": "and the city of Gad, and the city of Kishkumen,",
+      "verse": "9:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 175.523,
+      "end": 178.031,
+      "type": "line",
+      "text": "have I caused to be burned with fire,",
+      "verse": "9:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 178.211,
+      "end": 183.273,
+      "type": "line",
+      "text": "and the inhabitants thereof, because of their wickedness in casting out the prophets,",
+      "verse": "9:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 183.453,
+      "end": 191.116,
+      "type": "line",
+      "text": "and stoning those whom I did send to declare unto them concerning their wickedness and their abominations.",
+      "verse": "9:10",
+      "lineIndex": 47
+    },
+    {
+      "start": 191.796,
+      "end": 194.164,
+      "type": "line",
+      "text": "And because they did cast them all out,",
+      "verse": "9:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 194.344,
+      "end": 196.898,
+      "type": "line",
+      "text": "that there were none righteous among them,",
+      "verse": "9:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 197.078,
+      "end": 199.725,
+      "type": "line",
+      "text": "I did send down fire and destroy them,",
+      "verse": "9:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 199.905,
+      "end": 205.478,
+      "type": "line",
+      "text": "that their wickedness and abominations might be hid from before my face,",
+      "verse": "9:11",
+      "lineIndex": 51
+    },
+    {
+      "start": 205.658,
+      "end": 209.93,
+      "type": "line",
+      "text": "that the blood of the prophets and the saints whom I sent among them",
+      "verse": "9:11",
+      "lineIndex": 52
+    },
+    {
+      "start": 210.11,
+      "end": 213.314,
+      "type": "line",
+      "text": "might not cry unto me from the ground against them.",
+      "verse": "9:11",
+      "lineIndex": 53
+    },
+    {
+      "start": 213.994,
+      "end": 223.468,
+      "type": "line",
+      "text": "And many great destructions have I caused to come upon this land, and upon this people, because of their wickedness and their abominations.",
+      "verse": "9:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 224.148,
+      "end": 228.281,
+      "type": "line",
+      "text": "O all ye that are spared because ye were more righteous than they,",
+      "verse": "9:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 228.461,
+      "end": 230.737,
+      "type": "line",
+      "text": "will ye not now return unto me,",
+      "verse": "9:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 230.917,
+      "end": 233.703,
+      "type": "line",
+      "text": "and repent of your sins, and be converted,",
+      "verse": "9:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 233.883,
+      "end": 235.508,
+      "type": "line",
+      "text": "that I may heal you?",
+      "verse": "9:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 236.188,
+      "end": 238.324,
+      "type": "line",
+      "text": "Yea, verily I say unto you,",
+      "verse": "9:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 238.504,
+      "end": 241.662,
+      "type": "line",
+      "text": "if ye will come unto me ye shall have eternal life.",
+      "verse": "9:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 241.842,
+      "end": 245.186,
+      "type": "line",
+      "text": "Behold, mine arm of mercy is extended towards you,",
+      "verse": "9:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 245.366,
+      "end": 248.06,
+      "type": "line",
+      "text": "and whosoever will come, him will I receive;",
+      "verse": "9:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 248.24,
+      "end": 250.701,
+      "type": "line",
+      "text": "and blessed are those who come unto me.",
+      "verse": "9:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 251.381,
+      "end": 253.982,
+      "type": "line",
+      "text": "Behold, I am Jesus Christ the Son of God.",
+      "verse": "9:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 254.162,
+      "end": 256.623,
+      "type": "line",
+      "text": "I created the heavens and the earth,",
+      "verse": "9:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 256.803,
+      "end": 259.171,
+      "type": "line",
+      "text": "and all things that in them are.",
+      "verse": "9:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 259.351,
+      "end": 261.627,
+      "type": "line",
+      "text": "I was with the Father from the beginning.",
+      "verse": "9:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 261.807,
+      "end": 264.501,
+      "type": "line",
+      "text": "I am in the Father, and the Father in me;",
+      "verse": "9:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 264.681,
+      "end": 267.096,
+      "type": "line",
+      "text": "and in me hath the Father glorified his name.",
+      "verse": "9:15",
+      "lineIndex": 70
+    },
+    {
+      "start": 267.776,
+      "end": 270.934,
+      "type": "line",
+      "text": "I came unto my own, and my own received me not.",
+      "verse": "9:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 271.114,
+      "end": 274.133,
+      "type": "line",
+      "text": "And the scriptures concerning my coming are fulfilled.",
+      "verse": "9:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 274.813,
+      "end": 276.996,
+      "type": "line",
+      "text": "And as many as have received me,",
+      "verse": "9:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 277.176,
+      "end": 280.38,
+      "type": "line",
+      "text": "to them have I given to become the sons of God;",
+      "verse": "9:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 280.56,
+      "end": 284.507,
+      "type": "line",
+      "text": "and even so will I to as many as shall believe on my name,",
+      "verse": "9:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 284.687,
+      "end": 287.381,
+      "type": "line",
+      "text": "for behold, by me redemption cometh,",
+      "verse": "9:17",
+      "lineIndex": 76
+    },
+    {
+      "start": 287.561,
+      "end": 290.301,
+      "type": "line",
+      "text": "and in me is the law of Moses fulfilled.",
+      "verse": "9:17",
+      "lineIndex": 77
+    },
+    {
+      "start": 290.981,
+      "end": 293.489,
+      "type": "line",
+      "text": "I am the light and the life of the world.",
+      "verse": "9:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 293.669,
+      "end": 297.152,
+      "type": "line",
+      "text": "I am Alpha and Omega, the beginning and the end.",
+      "verse": "9:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 297.832,
+      "end": 301.454,
+      "type": "line",
+      "text": "And ye shall offer up unto me no more the shedding of blood;",
+      "verse": "9:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 301.634,
+      "end": 305.349,
+      "type": "line",
+      "text": "yea, your sacrifices and your burnt offerings shall be done away,",
+      "verse": "9:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 305.529,
+      "end": 310.173,
+      "type": "line",
+      "text": "for I will accept none of your sacrifices and your burnt offerings.",
+      "verse": "9:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 310.853,
+      "end": 315.869,
+      "type": "line",
+      "text": "And ye shall offer for a sacrifice unto me a broken heart and a contrite spirit.",
+      "verse": "9:20",
+      "lineIndex": 83
+    },
+    {
+      "start": 316.049,
+      "end": 320.321,
+      "type": "line",
+      "text": "And whoso cometh unto me with a broken heart and a contrite spirit,",
+      "verse": "9:20",
+      "lineIndex": 84
+    },
+    {
+      "start": 320.501,
+      "end": 323.984,
+      "type": "line",
+      "text": "him will I baptize with fire and with the Holy Ghost,",
+      "verse": "9:20",
+      "lineIndex": 85
+    },
+    {
+      "start": 324.164,
+      "end": 328.762,
+      "type": "line",
+      "text": "even as the Lamanites, because of their faith in me at the time of their conversion,",
+      "verse": "9:20",
+      "lineIndex": 86
+    },
+    {
+      "start": 328.942,
+      "end": 332.146,
+      "type": "line",
+      "text": "were baptized with fire and with the Holy Ghost,",
+      "verse": "9:20",
+      "lineIndex": 87
+    },
+    {
+      "start": 332.326,
+      "end": 333.998,
+      "type": "line",
+      "text": "and they knew it not.",
+      "verse": "9:20",
+      "lineIndex": 88
+    },
+    {
+      "start": 334.678,
+      "end": 341.133,
+      "type": "line",
+      "text": "Behold, I have come unto the world to bring redemption unto the world, to save the world from sin.",
+      "verse": "9:21",
+      "lineIndex": 89
+    },
+    {
+      "start": 341.813,
+      "end": 346.55,
+      "type": "line",
+      "text": "Therefore, whoso repenteth and cometh unto me as a little child, him will I receive,",
+      "verse": "9:22",
+      "lineIndex": 90
+    },
+    {
+      "start": 346.73,
+      "end": 349.098,
+      "type": "line",
+      "text": "for of such is the kingdom of God.",
+      "verse": "9:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 349.278,
+      "end": 351.972,
+      "type": "line",
+      "text": "Behold, for such I have laid down my life,",
+      "verse": "9:22",
+      "lineIndex": 92
+    },
+    {
+      "start": 352.152,
+      "end": 354.01,
+      "type": "line",
+      "text": "and have taken it up again;",
+      "verse": "9:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 354.19,
+      "end": 355.63,
+      "type": "line",
+      "text": "therefore repent,",
+      "verse": "9:22",
+      "lineIndex": 94
+    },
+    {
+      "start": 355.81,
+      "end": 359.618,
+      "type": "line",
+      "text": "and come unto me ye ends of the earth, and be saved.",
+      "verse": "9:22",
+      "lineIndex": 95
+    }
+  ]
+}
