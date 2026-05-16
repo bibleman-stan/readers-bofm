@@ -1,0 +1,1272 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 50,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 651.359,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.458,
+      "type": "line",
+      "text": "And now it came to pass that Moroni did not stop making preparations for war,",
+      "verse": "50:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.638,
+      "end": 7.703,
+      "type": "line",
+      "text": "or to defend his people against the Lamanites;",
+      "verse": "50:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.883,
+      "end": 15.267,
+      "type": "line",
+      "text": "for he caused that his armies should commence in the commencement of the twentieth year of the reign of the judges,",
+      "verse": "50:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 15.447,
+      "end": 22.599,
+      "type": "line",
+      "text": "that they should commence in digging up heaps of earth round about all the cities, throughout all the land",
+      "verse": "50:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 22.779,
+      "end": 25.055,
+      "type": "line",
+      "text": "which was possessed by the Nephites.",
+      "verse": "50:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 25.735,
+      "end": 28.243,
+      "type": "line",
+      "text": "And upon the top of these ridges of earth",
+      "verse": "50:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 28.423,
+      "end": 31.024,
+      "type": "line",
+      "text": "he caused that there should be timbers,",
+      "verse": "50:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 31.204,
+      "end": 35.848,
+      "type": "line",
+      "text": "yea, works of timbers built up to the height of a man, round about the cities.",
+      "verse": "50:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 36.528,
+      "end": 39.593,
+      "type": "line",
+      "text": "And he caused that upon those works of timbers",
+      "verse": "50:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 39.773,
+      "end": 45.067,
+      "type": "line",
+      "text": "there should be a frame of pickets built upon the timbers round about;",
+      "verse": "50:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 45.247,
+      "end": 46.826,
+      "type": "line",
+      "text": "and they were strong and high.",
+      "verse": "50:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 47.506,
+      "end": 52.382,
+      "type": "line",
+      "text": "And he caused towers to be erected that overlooked those works of pickets,",
+      "verse": "50:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 52.562,
+      "end": 56.695,
+      "type": "line",
+      "text": "and he caused places of security to be built upon those towers,",
+      "verse": "50:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 56.875,
+      "end": 61.147,
+      "type": "line",
+      "text": "that the stones and the arrows of the Lamanites could not hurt them.",
+      "verse": "50:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 61.827,
+      "end": 70.279,
+      "type": "line",
+      "text": "And they were prepared that they could cast stones from the top thereof, according to their pleasure and their strength,",
+      "verse": "50:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 70.459,
+      "end": 74.685,
+      "type": "line",
+      "text": "and slay him who should attempt to approach near the walls of the city.",
+      "verse": "50:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 75.365,
+      "end": 82.238,
+      "type": "line",
+      "text": "Thus Moroni did prepare strongholds against the coming of their enemies, round about every city in all the land.",
+      "verse": "50:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 82.918,
+      "end": 89.048,
+      "type": "line",
+      "text": "And it came to pass that Moroni caused that his armies should go forth into the east wilderness;",
+      "verse": "50:7",
+      "lineIndex": 18
+    },
+    {
+      "start": 89.228,
+      "end": 96.333,
+      "type": "line",
+      "text": "yea, and they went forth and drove all the Lamanites who were in the east wilderness into their own lands,",
+      "verse": "50:7",
+      "lineIndex": 19
+    },
+    {
+      "start": 96.513,
+      "end": 99.346,
+      "type": "line",
+      "text": "which were south of the land of Zarahemla.",
+      "verse": "50:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 100.026,
+      "end": 104.856,
+      "type": "line",
+      "text": "And the land of Nephi did run in a straight course from the east sea to the west.",
+      "verse": "50:8",
+      "lineIndex": 21
+    },
+    {
+      "start": 105.536,
+      "end": 111.248,
+      "type": "line",
+      "text": "And it came to pass that when Moroni had driven all the Lamanites out of the east wilderness,",
+      "verse": "50:9",
+      "lineIndex": 22
+    },
+    {
+      "start": 111.428,
+      "end": 114.539,
+      "type": "line",
+      "text": "which was north of the lands of their own possessions,",
+      "verse": "50:9",
+      "lineIndex": 23
+    },
+    {
+      "start": 114.719,
+      "end": 117.134,
+      "type": "line",
+      "text": "he caused that the inhabitants",
+      "verse": "50:9",
+      "lineIndex": 24
+    },
+    {
+      "start": 117.314,
+      "end": 121.308,
+      "type": "line",
+      "text": "who were in the land of Zarahemla and in the land round about",
+      "verse": "50:9",
+      "lineIndex": 25
+    },
+    {
+      "start": 121.488,
+      "end": 126.086,
+      "type": "line",
+      "text": "should go forth into the east wilderness, even to the borders by the seashore,",
+      "verse": "50:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 126.266,
+      "end": 127.845,
+      "type": "line",
+      "text": "and possess the land.",
+      "verse": "50:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 128.525,
+      "end": 132.89,
+      "type": "line",
+      "text": "And he also placed armies on the south, in the borders of their possessions,",
+      "verse": "50:10",
+      "lineIndex": 28
+    },
+    {
+      "start": 133.07,
+      "end": 136.274,
+      "type": "line",
+      "text": "and caused them to erect fortifications",
+      "verse": "50:10",
+      "lineIndex": 29
+    },
+    {
+      "start": 136.454,
+      "end": 141.516,
+      "type": "line",
+      "text": "that they might secure their armies and their people from the hands of their enemies.",
+      "verse": "50:10",
+      "lineIndex": 30
+    },
+    {
+      "start": 142.196,
+      "end": 146.747,
+      "type": "line",
+      "text": "And thus he cut off all the strongholds of the Lamanites in the east wilderness,",
+      "verse": "50:11",
+      "lineIndex": 32
+    },
+    {
+      "start": 146.927,
+      "end": 148.924,
+      "type": "line",
+      "text": "yea, and also on the west,",
+      "verse": "50:11",
+      "lineIndex": 33
+    },
+    {
+      "start": 149.104,
+      "end": 152.68,
+      "type": "line",
+      "text": "fortifying the line between the Nephites and the Lamanites,",
+      "verse": "50:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 152.86,
+      "end": 161.08,
+      "type": "line",
+      "text": "between the land of Zarahemla and the land of Nephi, from the west sea, running by the head of the river Sidon\u2014",
+      "verse": "50:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 161.26,
+      "end": 164.186,
+      "type": "line",
+      "text": "the Nephites possessing all the land northward,",
+      "verse": "50:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 164.366,
+      "end": 171.332,
+      "type": "line",
+      "text": "yea, even all the land which was northward of the land Bountiful, according to their pleasure.",
+      "verse": "50:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 172.012,
+      "end": 174.055,
+      "type": "line",
+      "text": "Thus Moroni, with his armies,",
+      "verse": "50:12",
+      "lineIndex": 38
+    },
+    {
+      "start": 174.235,
+      "end": 178.09,
+      "type": "line",
+      "text": "which did increase daily because of the assurance of protection",
+      "verse": "50:12",
+      "lineIndex": 39
+    },
+    {
+      "start": 178.27,
+      "end": 181.242,
+      "type": "line",
+      "text": "which his works did bring forth unto them,",
+      "verse": "50:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 181.422,
+      "end": 188.202,
+      "type": "line",
+      "text": "did seek to cut off the strength and the power of the Lamanites from off the lands of their possessions,",
+      "verse": "50:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 188.382,
+      "end": 192.515,
+      "type": "line",
+      "text": "that they should have no power upon the lands of their possession.",
+      "verse": "50:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 193.195,
+      "end": 199.0,
+      "type": "line",
+      "text": "And it came to pass that the Nephites began the foundation of a city,",
+      "verse": "50:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 199.18,
+      "end": 201.874,
+      "type": "line",
+      "text": "and they called the name of the city Moroni;",
+      "verse": "50:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 202.054,
+      "end": 203.772,
+      "type": "line",
+      "text": "and it was by the east sea;",
+      "verse": "50:13",
+      "lineIndex": 45
+    },
+    {
+      "start": 203.952,
+      "end": 209.246,
+      "type": "line",
+      "text": "and it was on the south by the line of the possessions of the Lamanites.",
+      "verse": "50:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 209.926,
+      "end": 216.103,
+      "type": "line",
+      "text": "And they also began a foundation for a city between the city of Moroni and the city of Aaron,",
+      "verse": "50:14",
+      "lineIndex": 47
+    },
+    {
+      "start": 216.283,
+      "end": 218.977,
+      "type": "line",
+      "text": "joining the borders of Aaron and Moroni;",
+      "verse": "50:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 219.157,
+      "end": 223.104,
+      "type": "line",
+      "text": "and they called the name of the city, or the land, Nephihah.",
+      "verse": "50:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 223.784,
+      "end": 229.45,
+      "type": "line",
+      "text": "And they also began in that same year to build many cities on the north,",
+      "verse": "50:15",
+      "lineIndex": 50
+    },
+    {
+      "start": 229.63,
+      "end": 232.556,
+      "type": "line",
+      "text": "one in a particular manner which they called Lehi,",
+      "verse": "50:15",
+      "lineIndex": 51
+    },
+    {
+      "start": 232.736,
+      "end": 235.847,
+      "type": "line",
+      "text": "which was in the north by the borders of the seashore.",
+      "verse": "50:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 236.527,
+      "end": 238.849,
+      "type": "line",
+      "text": "And thus ended the twentieth year.",
+      "verse": "50:16",
+      "lineIndex": 53
+    },
+    {
+      "start": 239.529,
+      "end": 243.384,
+      "type": "line",
+      "text": "And in these prosperous circumstances were the people of Nephi",
+      "verse": "50:17",
+      "lineIndex": 54
+    },
+    {
+      "start": 243.564,
+      "end": 250.53,
+      "type": "line",
+      "text": "in the commencement of the twenty and first year of the reign of the judges over the people of Nephi.",
+      "verse": "50:17",
+      "lineIndex": 55
+    },
+    {
+      "start": 251.21,
+      "end": 253.346,
+      "type": "line",
+      "text": "And they did prosper exceedingly,",
+      "verse": "50:18",
+      "lineIndex": 56
+    },
+    {
+      "start": 253.526,
+      "end": 255.616,
+      "type": "line",
+      "text": "and they became exceedingly rich;",
+      "verse": "50:18",
+      "lineIndex": 57
+    },
+    {
+      "start": 255.796,
+      "end": 259.651,
+      "type": "line",
+      "text": "yea, and they did multiply and wax strong in the land.",
+      "verse": "50:18",
+      "lineIndex": 58
+    },
+    {
+      "start": 260.331,
+      "end": 265.161,
+      "type": "line",
+      "text": "And thus we see how merciful and just are all the dealings of the Lord,",
+      "verse": "50:19",
+      "lineIndex": 59
+    },
+    {
+      "start": 265.341,
+      "end": 269.056,
+      "type": "line",
+      "text": "to the fulfilling of all his words unto the children of men;",
+      "verse": "50:19",
+      "lineIndex": 60
+    },
+    {
+      "start": 269.236,
+      "end": 272.301,
+      "type": "line",
+      "text": "yea, we can behold that his words are verified,",
+      "verse": "50:19",
+      "lineIndex": 61
+    },
+    {
+      "start": 272.481,
+      "end": 275.685,
+      "type": "line",
+      "text": "even at this time, which he spake unto Lehi, saying:",
+      "verse": "50:19",
+      "lineIndex": 62
+    },
+    {
+      "start": 276.365,
+      "end": 278.641,
+      "type": "line",
+      "text": "Blessed art thou and thy children;",
+      "verse": "50:20",
+      "lineIndex": 63
+    },
+    {
+      "start": 278.821,
+      "end": 280.493,
+      "type": "line",
+      "text": "and they shall be blessed,",
+      "verse": "50:20",
+      "lineIndex": 64
+    },
+    {
+      "start": 280.673,
+      "end": 283.506,
+      "type": "line",
+      "text": "inasmuch as they shall keep my commandments",
+      "verse": "50:20",
+      "lineIndex": 65
+    },
+    {
+      "start": 283.686,
+      "end": 285.869,
+      "type": "line",
+      "text": "they shall prosper in the land.",
+      "verse": "50:20",
+      "lineIndex": 66
+    },
+    {
+      "start": 286.049,
+      "end": 289.532,
+      "type": "line",
+      "text": "But remember, inasmuch as they will not keep my commandments",
+      "verse": "50:20",
+      "lineIndex": 67
+    },
+    {
+      "start": 289.712,
+      "end": 292.87,
+      "type": "line",
+      "text": "they shall be cut off from the presence of the Lord.",
+      "verse": "50:20",
+      "lineIndex": 68
+    },
+    {
+      "start": 293.55,
+      "end": 297.869,
+      "type": "line",
+      "text": "And we see that these promises have been verified to the people of Nephi;",
+      "verse": "50:21",
+      "lineIndex": 70
+    },
+    {
+      "start": 298.049,
+      "end": 301.393,
+      "type": "line",
+      "text": "for it has been their quarrelings and their contentions,",
+      "verse": "50:21",
+      "lineIndex": 71
+    },
+    {
+      "start": 301.573,
+      "end": 304.777,
+      "type": "line",
+      "text": "yea, their murderings, and their plunderings,",
+      "verse": "50:21",
+      "lineIndex": 72
+    },
+    {
+      "start": 304.957,
+      "end": 310.576,
+      "type": "line",
+      "text": "their idolatry, their whoredoms, and their abominations, which were among themselves,",
+      "verse": "50:21",
+      "lineIndex": 73
+    },
+    {
+      "start": 310.756,
+      "end": 314.564,
+      "type": "line",
+      "text": "which brought upon them their wars and their destructions.",
+      "verse": "50:21",
+      "lineIndex": 74
+    },
+    {
+      "start": 315.244,
+      "end": 316.962,
+      "type": "line",
+      "text": "And those who were faithful",
+      "verse": "50:22",
+      "lineIndex": 75
+    },
+    {
+      "start": 317.142,
+      "end": 321.507,
+      "type": "line",
+      "text": "in keeping the commandments of the Lord were delivered at all times,",
+      "verse": "50:22",
+      "lineIndex": 76
+    },
+    {
+      "start": 321.687,
+      "end": 325.402,
+      "type": "line",
+      "text": "whilst thousands of their wicked brethren have been consigned",
+      "verse": "50:22",
+      "lineIndex": 77
+    },
+    {
+      "start": 325.582,
+      "end": 328.043,
+      "type": "line",
+      "text": "to bondage, or to perish by the sword,",
+      "verse": "50:22",
+      "lineIndex": 78
+    },
+    {
+      "start": 328.223,
+      "end": 330.173,
+      "type": "line",
+      "text": "or to dwindle in unbelief,",
+      "verse": "50:22",
+      "lineIndex": 79
+    },
+    {
+      "start": 330.353,
+      "end": 332.35,
+      "type": "line",
+      "text": "and mingle with the Lamanites.",
+      "verse": "50:22",
+      "lineIndex": 80
+    },
+    {
+      "start": 333.03,
+      "end": 341.946,
+      "type": "line",
+      "text": "But behold there never was a happier time among the people of Nephi, since the days of Nephi, than in the days of Moroni,",
+      "verse": "50:23",
+      "lineIndex": 81
+    },
+    {
+      "start": 342.126,
+      "end": 347.42,
+      "type": "line",
+      "text": "yea, even at this time, in the twenty and first year of the reign of the judges.",
+      "verse": "50:23",
+      "lineIndex": 82
+    },
+    {
+      "start": 348.1,
+      "end": 354.973,
+      "type": "line",
+      "text": "And it came to pass that the twenty and second year of the reign of the judges also ended in peace;",
+      "verse": "50:24",
+      "lineIndex": 83
+    },
+    {
+      "start": 355.153,
+      "end": 357.289,
+      "type": "line",
+      "text": "yea, and also the twenty and third year.",
+      "verse": "50:24",
+      "lineIndex": 84
+    },
+    {
+      "start": 357.969,
+      "end": 364.331,
+      "type": "line",
+      "text": "And it came to pass that in the commencement of the twenty and fourth year of the reign of the judges,",
+      "verse": "50:25",
+      "lineIndex": 85
+    },
+    {
+      "start": 364.511,
+      "end": 368.412,
+      "type": "line",
+      "text": "there would also have been peace among the people of Nephi",
+      "verse": "50:25",
+      "lineIndex": 86
+    },
+    {
+      "start": 368.592,
+      "end": 372.354,
+      "type": "line",
+      "text": "had it not been for a contention which took place among them",
+      "verse": "50:25",
+      "lineIndex": 87
+    },
+    {
+      "start": 372.534,
+      "end": 376.11,
+      "type": "line",
+      "text": "concerning the land of Lehi, and the land of Morianton,",
+      "verse": "50:25",
+      "lineIndex": 88
+    },
+    {
+      "start": 376.29,
+      "end": 378.798,
+      "type": "line",
+      "text": "which joined upon the borders of Lehi;",
+      "verse": "50:25",
+      "lineIndex": 89
+    },
+    {
+      "start": 378.978,
+      "end": 382.647,
+      "type": "line",
+      "text": "both of which were on the borders by the seashore.",
+      "verse": "50:25",
+      "lineIndex": 90
+    },
+    {
+      "start": 383.327,
+      "end": 387.089,
+      "type": "line",
+      "text": "For behold, the people who possessed the land of Morianton",
+      "verse": "50:26",
+      "lineIndex": 91
+    },
+    {
+      "start": 387.269,
+      "end": 389.684,
+      "type": "line",
+      "text": "did claim a part of the land of Lehi;",
+      "verse": "50:26",
+      "lineIndex": 92
+    },
+    {
+      "start": 389.864,
+      "end": 393.301,
+      "type": "line",
+      "text": "therefore there began to be a warm contention between them,",
+      "verse": "50:26",
+      "lineIndex": 93
+    },
+    {
+      "start": 393.481,
+      "end": 398.171,
+      "type": "line",
+      "text": "insomuch that the people of Morianton took up arms against their brethren,",
+      "verse": "50:26",
+      "lineIndex": 94
+    },
+    {
+      "start": 398.351,
+      "end": 401.184,
+      "type": "line",
+      "text": "and they were determined by the sword to slay them.",
+      "verse": "50:26",
+      "lineIndex": 95
+    },
+    {
+      "start": 401.864,
+      "end": 407.112,
+      "type": "line",
+      "text": "But behold, the people who possessed the land of Lehi fled to the camp of Moroni,",
+      "verse": "50:27",
+      "lineIndex": 97
+    },
+    {
+      "start": 407.292,
+      "end": 409.428,
+      "type": "line",
+      "text": "and appealed unto him for assistance;",
+      "verse": "50:27",
+      "lineIndex": 98
+    },
+    {
+      "start": 409.608,
+      "end": 412.069,
+      "type": "line",
+      "text": "for behold they were not in the wrong.",
+      "verse": "50:27",
+      "lineIndex": 99
+    },
+    {
+      "start": 412.749,
+      "end": 416.278,
+      "type": "line",
+      "text": "And it came to pass that when the people of Morianton,",
+      "verse": "50:28",
+      "lineIndex": 100
+    },
+    {
+      "start": 416.458,
+      "end": 419.477,
+      "type": "line",
+      "text": "who were led by a man whose name was Morianton,",
+      "verse": "50:28",
+      "lineIndex": 101
+    },
+    {
+      "start": 419.657,
+      "end": 423.697,
+      "type": "line",
+      "text": "found that the people of Lehi had fled to the camp of Moroni,",
+      "verse": "50:28",
+      "lineIndex": 102
+    },
+    {
+      "start": 423.877,
+      "end": 425.874,
+      "type": "line",
+      "text": "they were exceedingly fearful",
+      "verse": "50:28",
+      "lineIndex": 103
+    },
+    {
+      "start": 426.054,
+      "end": 430.141,
+      "type": "line",
+      "text": "lest the army of Moroni should come upon them and destroy them.",
+      "verse": "50:28",
+      "lineIndex": 104
+    },
+    {
+      "start": 430.821,
+      "end": 433.84,
+      "type": "line",
+      "text": "Therefore, Morianton put it into their hearts",
+      "verse": "50:29",
+      "lineIndex": 105
+    },
+    {
+      "start": 434.02,
+      "end": 437.317,
+      "type": "line",
+      "text": "that they should flee to the land which was northward,",
+      "verse": "50:29",
+      "lineIndex": 106
+    },
+    {
+      "start": 437.497,
+      "end": 440.469,
+      "type": "line",
+      "text": "which was covered with large bodies of water,",
+      "verse": "50:29",
+      "lineIndex": 107
+    },
+    {
+      "start": 440.649,
+      "end": 443.714,
+      "type": "line",
+      "text": "and take possession of the land which was northward.",
+      "verse": "50:29",
+      "lineIndex": 108
+    },
+    {
+      "start": 444.394,
+      "end": 447.831,
+      "type": "line",
+      "text": "And behold, they would have carried this plan into effect,",
+      "verse": "50:30",
+      "lineIndex": 110
+    },
+    {
+      "start": 448.011,
+      "end": 451.633,
+      "type": "line",
+      "text": "(which would have been a cause to have been lamented)",
+      "verse": "50:30",
+      "lineIndex": 111
+    },
+    {
+      "start": 451.813,
+      "end": 455.435,
+      "type": "line",
+      "text": "but behold, Morianton being a man of much passion,",
+      "verse": "50:30",
+      "lineIndex": 112
+    },
+    {
+      "start": 455.615,
+      "end": 458.866,
+      "type": "line",
+      "text": "therefore he was angry with one of his maid servants,",
+      "verse": "50:30",
+      "lineIndex": 113
+    },
+    {
+      "start": 459.046,
+      "end": 461.322,
+      "type": "line",
+      "text": "and he fell upon her and beat her much.",
+      "verse": "50:30",
+      "lineIndex": 114
+    },
+    {
+      "start": 462.002,
+      "end": 464.185,
+      "type": "line",
+      "text": "And it came to pass that she fled,",
+      "verse": "50:31",
+      "lineIndex": 115
+    },
+    {
+      "start": 464.365,
+      "end": 466.966,
+      "type": "line",
+      "text": "and came over to the camp of Moroni,",
+      "verse": "50:31",
+      "lineIndex": 116
+    },
+    {
+      "start": 467.146,
+      "end": 470.211,
+      "type": "line",
+      "text": "and told Moroni all things concerning the matter,",
+      "verse": "50:31",
+      "lineIndex": 117
+    },
+    {
+      "start": 470.391,
+      "end": 474.942,
+      "type": "line",
+      "text": "and also concerning their intentions to flee into the land northward.",
+      "verse": "50:31",
+      "lineIndex": 118
+    },
+    {
+      "start": 475.622,
+      "end": 480.684,
+      "type": "line",
+      "text": "Now behold, the people who were in the land Bountiful or rather Moroni, feared",
+      "verse": "50:32",
+      "lineIndex": 119
+    },
+    {
+      "start": 480.864,
+      "end": 484.022,
+      "type": "line",
+      "text": "that they would hearken to the words of Morianton",
+      "verse": "50:32",
+      "lineIndex": 120
+    },
+    {
+      "start": 484.202,
+      "end": 486.013,
+      "type": "line",
+      "text": "and unite with his people,",
+      "verse": "50:32",
+      "lineIndex": 121
+    },
+    {
+      "start": 486.193,
+      "end": 495.342,
+      "type": "line",
+      "text": "and thus he would obtain possession of those parts of the land, which would lay a foundation for serious consequences among the people of Nephi,",
+      "verse": "50:32",
+      "lineIndex": 122
+    },
+    {
+      "start": 495.522,
+      "end": 500.491,
+      "type": "line",
+      "text": "yea, which consequences would lead to the overthrow of their liberty.",
+      "verse": "50:32",
+      "lineIndex": 123
+    },
+    {
+      "start": 501.171,
+      "end": 506.465,
+      "type": "line",
+      "text": "Therefore Moroni sent an army, with their camp, to head the people of Morianton,",
+      "verse": "50:33",
+      "lineIndex": 124
+    },
+    {
+      "start": 506.645,
+      "end": 509.664,
+      "type": "line",
+      "text": "to stop their flight into the land northward.",
+      "verse": "50:33",
+      "lineIndex": 125
+    },
+    {
+      "start": 510.344,
+      "end": 513.502,
+      "type": "line",
+      "text": "And it came to pass that they did not head them",
+      "verse": "50:34",
+      "lineIndex": 126
+    },
+    {
+      "start": 513.682,
+      "end": 517.629,
+      "type": "line",
+      "text": "until they had come to the borders of the land Desolation;",
+      "verse": "50:34",
+      "lineIndex": 127
+    },
+    {
+      "start": 517.809,
+      "end": 520.688,
+      "type": "line",
+      "text": "and there they did head them, by the narrow pass",
+      "verse": "50:34",
+      "lineIndex": 128
+    },
+    {
+      "start": 520.868,
+      "end": 523.887,
+      "type": "line",
+      "text": "which led by the sea into the land northward,",
+      "verse": "50:34",
+      "lineIndex": 129
+    },
+    {
+      "start": 524.067,
+      "end": 527.086,
+      "type": "line",
+      "text": "yea, by the sea, on the west and on the east.",
+      "verse": "50:34",
+      "lineIndex": 130
+    },
+    {
+      "start": 527.766,
+      "end": 531.156,
+      "type": "line",
+      "text": "And it came to pass that the army which was sent by Moroni,",
+      "verse": "50:35",
+      "lineIndex": 132
+    },
+    {
+      "start": 531.336,
+      "end": 534.401,
+      "type": "line",
+      "text": "which was led by a man whose name was Teancum,",
+      "verse": "50:35",
+      "lineIndex": 133
+    },
+    {
+      "start": 534.581,
+      "end": 536.671,
+      "type": "line",
+      "text": "did meet the people of Morianton;",
+      "verse": "50:35",
+      "lineIndex": 134
+    },
+    {
+      "start": 536.851,
+      "end": 539.823,
+      "type": "line",
+      "text": "and so stubborn were the people of Morianton,",
+      "verse": "50:35",
+      "lineIndex": 135
+    },
+    {
+      "start": 540.003,
+      "end": 543.997,
+      "type": "line",
+      "text": "(being inspired by his wickedness and his flattering words)",
+      "verse": "50:35",
+      "lineIndex": 136
+    },
+    {
+      "start": 544.177,
+      "end": 546.778,
+      "type": "line",
+      "text": "that a battle commenced between them,",
+      "verse": "50:35",
+      "lineIndex": 137
+    },
+    {
+      "start": 546.958,
+      "end": 549.512,
+      "type": "line",
+      "text": "in the which Teancum did slay Morianton",
+      "verse": "50:35",
+      "lineIndex": 138
+    },
+    {
+      "start": 549.692,
+      "end": 551.225,
+      "type": "line",
+      "text": "and defeat his army,",
+      "verse": "50:35",
+      "lineIndex": 139
+    },
+    {
+      "start": 551.405,
+      "end": 553.077,
+      "type": "line",
+      "text": "and took them prisoners,",
+      "verse": "50:35",
+      "lineIndex": 140
+    },
+    {
+      "start": 553.257,
+      "end": 555.718,
+      "type": "line",
+      "text": "and returned to the camp of Moroni.",
+      "verse": "50:35",
+      "lineIndex": 141
+    },
+    {
+      "start": 555.898,
+      "end": 561.285,
+      "type": "line",
+      "text": "And thus ended the twenty and fourth year of the reign of the judges over the people of Nephi.",
+      "verse": "50:35",
+      "lineIndex": 142
+    },
+    {
+      "start": 561.965,
+      "end": 565.309,
+      "type": "line",
+      "text": "And thus were the people of Morianton brought back.",
+      "verse": "50:36",
+      "lineIndex": 143
+    },
+    {
+      "start": 565.489,
+      "end": 568.508,
+      "type": "line",
+      "text": "And upon their covenanting to keep the peace",
+      "verse": "50:36",
+      "lineIndex": 144
+    },
+    {
+      "start": 568.688,
+      "end": 571.382,
+      "type": "line",
+      "text": "they were restored to the land of Morianton,",
+      "verse": "50:36",
+      "lineIndex": 145
+    },
+    {
+      "start": 571.562,
+      "end": 575.231,
+      "type": "line",
+      "text": "and a union took place between them and the people of Lehi;",
+      "verse": "50:36",
+      "lineIndex": 146
+    },
+    {
+      "start": 575.411,
+      "end": 578.058,
+      "type": "line",
+      "text": "and they were also restored to their lands.",
+      "verse": "50:36",
+      "lineIndex": 147
+    },
+    {
+      "start": 578.738,
+      "end": 581.571,
+      "type": "line",
+      "text": "And it came to pass that in the same year",
+      "verse": "50:37",
+      "lineIndex": 148
+    },
+    {
+      "start": 581.751,
+      "end": 585.234,
+      "type": "line",
+      "text": "that the people of Nephi had peace restored unto them,",
+      "verse": "50:37",
+      "lineIndex": 149
+    },
+    {
+      "start": 585.414,
+      "end": 592.984,
+      "type": "line",
+      "text": "that Nephihah, the second chief judge, died, having filled the judgment-seat with perfect uprightness before God.",
+      "verse": "50:37",
+      "lineIndex": 150
+    },
+    {
+      "start": 593.664,
+      "end": 603.231,
+      "type": "line",
+      "text": "Nevertheless, he had refused Alma to take possession of those records and those things which were esteemed by Alma and his fathers to be most sacred;",
+      "verse": "50:38",
+      "lineIndex": 151
+    },
+    {
+      "start": 603.411,
+      "end": 606.894,
+      "type": "line",
+      "text": "therefore Alma had conferred them upon his son, Helaman.",
+      "verse": "50:38",
+      "lineIndex": 152
+    },
+    {
+      "start": 607.574,
+      "end": 613.983,
+      "type": "line",
+      "text": "Behold, it came to pass that the son of Nephihah was appointed to fill the judgment-seat, in the stead of his father;",
+      "verse": "50:39",
+      "lineIndex": 153
+    },
+    {
+      "start": 614.163,
+      "end": 621.733,
+      "type": "line",
+      "text": "yea, he was appointed chief judge and governor over the people, with an oath and sacred ordinance to judge righteously,",
+      "verse": "50:39",
+      "lineIndex": 154
+    },
+    {
+      "start": 621.913,
+      "end": 625.35,
+      "type": "line",
+      "text": "and to keep the peace and the freedom of the people,",
+      "verse": "50:39",
+      "lineIndex": 155
+    },
+    {
+      "start": 625.53,
+      "end": 631.01,
+      "type": "line",
+      "text": "and to grant unto them their sacred privileges to worship the Lord their God,",
+      "verse": "50:39",
+      "lineIndex": 156
+    },
+    {
+      "start": 631.19,
+      "end": 635.137,
+      "type": "line",
+      "text": "yea, to support and maintain the cause of God all his days,",
+      "verse": "50:39",
+      "lineIndex": 157
+    },
+    {
+      "start": 635.317,
+      "end": 638.568,
+      "type": "line",
+      "text": "and to bring the wicked to justice according to their crime.",
+      "verse": "50:39",
+      "lineIndex": 158
+    },
+    {
+      "start": 639.248,
+      "end": 641.57,
+      "type": "line",
+      "text": "Now behold, his name was Pahoran.",
+      "verse": "50:40",
+      "lineIndex": 159
+    },
+    {
+      "start": 641.75,
+      "end": 644.583,
+      "type": "line",
+      "text": "And Pahoran did fill the seat of his father,",
+      "verse": "50:40",
+      "lineIndex": 160
+    },
+    {
+      "start": 644.763,
+      "end": 650.707,
+      "type": "line",
+      "text": "and did commence his reign in the end of the twenty and fourth year, over the people of Nephi.",
+      "verse": "50:40",
+      "lineIndex": 161
+    }
+  ]
+}
