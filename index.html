@@ -52,8 +52,12 @@
     max-width: 42em;
     margin: 0 auto;
     padding: 1em;
-    padding-top: 50px;
+    padding-top: 96px;  /* 44px topbar + ~46px layer-bar + 6px buffer */
   }
+
+  /* When on the landing/welcome screen (no layer-bar visible), trim padding. */
+  body.welcome-active { padding-top: 50px; }
+  body.welcome-active .layer-bar { display: none; }
 
   /* h1 styles kept minimal */
   h1 { font-weight: normal; font-size: 1.6em; text-align: left; margin-bottom: 0.4em; line-height: 1.1; }
@@ -142,53 +146,61 @@
   }
   .topbar-icon svg { width: 16px; height: 16px; fill: currentColor; }
 
-  #aid-pill {
-    padding: 3px 10px;
-    border-radius: 12px;
-    border: 1px solid var(--text-faint);
-    background: none;
-    color: var(--text-faint);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    font-size: 0.62em;
-    font-weight: 600;
+  /* Row 2 — layer pillbox toolbar (Modern toggle). Sits below topbar. */
+  .layer-bar {
+    position: fixed;
+    top: 44px;          /* sits directly under the 44px topbar */
+    left: 0; right: 0;
+    background: rgba(28, 31, 36, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    z-index: 99;
+  }
+  .layer-bar-inner {
+    max-width: 42em;
+    margin: 0 auto;
+    padding: 8px 14px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .pill {
+    background: rgba(124, 175, 194, 0.08);
+    color: var(--text);
+    border: 1px solid rgba(124, 175, 194, 0.25);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font: 500 0.78em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     cursor: pointer;
-    transition: all 0.15s;
-    letter-spacing: 0.02em;
-    -webkit-tap-highlight-color: transparent;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    user-select: none;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
-  #aid-pill:hover {
-    color: var(--text-dim);
-    border-color: var(--text-dim);
-  }
-  #aid-pill.active-aid {
-    color: #7cafc2;
-    border-color: #7cafc2;
-    background: rgba(124,175,194,0.12);
+  .pill:hover { background: rgba(124, 175, 194, 0.16); }
+  .pill-sep {
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background: var(--border);
+    margin: 0 4px;
+    flex-shrink: 0;
+    align-self: center;
   }
 
-  #listen-pill {
-    padding: 3px 10px;
-    border-radius: 12px;
-    border: 1px solid var(--text-faint);
-    background: none;
-    color: var(--text-faint);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    font-size: 0.62em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.15s;
-    letter-spacing: 0.02em;
-    -webkit-tap-highlight-color: transparent;
-    margin-left: 4px;
+  /* Modern pill active state (Modern words ON — KJV/source toggle). */
+  #aid-pill.active-aid {
+    background: rgba(124, 175, 194, 0.22);
+    border-color: rgba(124, 175, 194, 0.55);
+    color: #cfe7f1;
   }
-  #listen-pill:hover {
-    color: var(--text-dim);
-    border-color: var(--text-dim);
-  }
+
+  /* Listen — now an icon button in the topbar. Active = audio narration ON. */
   #listen-pill.active-listen {
     color: #7cafc2;
-    border-color: #7cafc2;
-    background: rgba(124,175,194,0.12);
+    background: rgba(124, 175, 194, 0.18);
   }
 
   .topbar-home {
@@ -2157,7 +2169,7 @@
   }
 </style>
 </head>
-<body>
+<body class="welcome-active">
 <div id="top"></div>
 
 <!-- Floating chapter arrows (desktop) -->
@@ -2171,27 +2183,35 @@
 <!-- Top bar -->
 <div class="topbar" id="topbar">
   <div style="flex:1; display:flex; align-items:center; gap:8px; min-width:0;">
-    <button class="topbar-icon" id="topbar-hamburger" onclick="toggleNavPanel()" aria-label="Navigation" title="Navigation" style="display:none;">
-      <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    <button class="topbar-icon" id="topbar-hamburger" onclick="toggleNavPanel()" aria-label="Menu" title="Menu" style="display:none;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
-    <button class="topbar-icon" id="topbar-home-btn" onclick="showWelcome()" aria-label="Home" title="Home" style="display:none;">
-      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-    </button>
-    <div class="topbar-loc" id="topbar-loc" style="display:none; cursor:default; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0;">
+    <div class="topbar-loc" id="topbar-loc" onclick="toggleNavPanel()" style="display:none; cursor:pointer; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0;">
       <span class="topbar-book" id="topbar-book">1 Nephi</span>
       <span class="topbar-chap" id="topbar-chap">1</span>
     </div>
   </div>
   <div class="topbar-home" id="topbar-home" style="flex:1; text-align:center;"></div>
   <div style="flex:1; display:flex; align-items:center; justify-content:flex-end;" class="topbar-icons">
-    <button id="aid-pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
-    <button id="listen-pill" onclick="toggleListenPill()" aria-label="Listen" title="Toggle audio narration">Listen</button>
     <button class="topbar-icon" onclick="openSearch()" aria-label="Search" title="Search">
       <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
+    <button class="topbar-icon" id="listen-pill" onclick="toggleListenPill()" aria-label="Listen" title="Toggle audio narration">
+      <svg viewBox="0 0 24 24"><path d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z"/></svg>
     </button>
     <button class="topbar-icon" onclick="toggleSheet()" aria-label="Settings" title="Reading settings">
       <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.48.48 0 00-.48-.41h-3.84a.48.48 0 00-.48.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87a.48.48 0 00.12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.26.41.48.41h3.84c.24 0 .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1115.6 12 3.61 3.61 0 0112 15.6z"/></svg>
     </button>
+    <button class="topbar-icon" onclick="openHelp()" aria-label="Help" title="Help">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- Layer pillbox / row 2 — Modern toggle (Listen lives as an icon in the topbar above). -->
+<div class="layer-bar" id="layer-bar">
+  <div class="layer-bar-inner">
+    <button id="aid-pill" class="pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
   </div>
 </div>
 
@@ -2766,6 +2786,11 @@
   // handler runs (showPlayer / hidePlayer). The pill's active-listen class is
   // kept in sync via a change listener so toggling from the bottom sheet
   // updates the pill state too.
+  // Help — placeholder until a proper help overlay is built (Stan TODO).
+  window.openHelp = function() {
+    alert('Help — coming soon.');
+  };
+
   window.toggleListenPill = function() {
     var listenToggle = document.getElementById('listen-toggle');
     if (!listenToggle) return;
@@ -3205,10 +3230,10 @@
     document.getElementById('landing').style.display = 'none';
     document.getElementById('about-page').style.display = 'block';
     document.getElementById('book-content-container').style.display = 'none';
+    document.body.classList.add('welcome-active');
     // Topbar: show home state
     document.getElementById('topbar-loc').style.display = 'none';
     document.getElementById('topbar-hamburger').style.display = 'none';
-    document.getElementById('topbar-home-btn').style.display = 'none';
     document.getElementById('topbar-home').style.display = 'block';
     document.getElementById('float-prev').classList.remove('active');
     document.getElementById('float-next').classList.remove('active');
@@ -3223,10 +3248,10 @@
   window.hideAboutPage = function() {
     document.getElementById('about-page').style.display = 'none';
     document.getElementById('book-content-container').style.display = 'block';
+    document.body.classList.remove('welcome-active');
     // Topbar: show reading state
     document.getElementById('topbar-loc').style.display = 'flex';
     document.getElementById('topbar-hamburger').style.display = 'flex';
-    document.getElementById('topbar-home-btn').style.display = 'flex';
     document.getElementById('topbar-home').style.display = 'none';
   };
 
@@ -3239,10 +3264,10 @@
     document.getElementById('landing').style.display = 'block';
     document.getElementById('about-page').style.display = 'none';
     document.getElementById('book-content-container').style.display = 'none';
+    document.body.classList.add('welcome-active');
     // Topbar: show home state
     document.getElementById('topbar-loc').style.display = 'none';
     document.getElementById('topbar-hamburger').style.display = 'none';
-    document.getElementById('topbar-home-btn').style.display = 'none';
     document.getElementById('topbar-home').style.display = 'block';
     // Hide float nav
     document.getElementById('float-prev').classList.remove('active');
@@ -3259,10 +3284,10 @@
   window.hideWelcome = function() {
     document.getElementById('landing').style.display = 'none';
     document.getElementById('book-content-container').style.display = 'block';
+    document.body.classList.remove('welcome-active');
     // Topbar: show reading state
     document.getElementById('topbar-loc').style.display = 'flex';
     document.getElementById('topbar-hamburger').style.display = 'flex';
-    document.getElementById('topbar-home-btn').style.display = 'flex';
     document.getElementById('topbar-home').style.display = 'none';
   };
 
