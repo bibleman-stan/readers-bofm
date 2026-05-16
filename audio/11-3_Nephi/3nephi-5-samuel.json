@@ -1,0 +1,704 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 5,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 337.902,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.833,
+      "type": "line",
+      "text": "And now behold, there was not a living soul",
+      "verse": "5:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.013,
+      "end": 9.468,
+      "type": "line",
+      "text": "among all the people of the Nephites who did doubt in the least the words of all the holy prophets who had spoken;",
+      "verse": "5:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.648,
+      "end": 13.735,
+      "type": "line",
+      "text": "for they knew that it must needs be that they must be fulfilled.",
+      "verse": "5:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.415,
+      "end": 23.471,
+      "type": "line",
+      "text": "And they knew that it must be expedient that Christ had come, because of the many signs which had been given, according to the words of the prophets;",
+      "verse": "5:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 23.651,
+      "end": 26.855,
+      "type": "line",
+      "text": "and because of the things which had come to pass already",
+      "verse": "5:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 27.035,
+      "end": 34.094,
+      "type": "line",
+      "text": "they knew that it must needs be that all things should come to pass according to that which had been spoken.",
+      "verse": "5:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 34.774,
+      "end": 37.282,
+      "type": "line",
+      "text": "Therefore they did forsake all their sins,",
+      "verse": "5:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 37.462,
+      "end": 40.341,
+      "type": "line",
+      "text": "and their abominations, and their whoredoms,",
+      "verse": "5:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 40.521,
+      "end": 43.632,
+      "type": "line",
+      "text": "and did serve God with all diligence day and night.",
+      "verse": "5:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 44.312,
+      "end": 49.095,
+      "type": "line",
+      "text": "And now it came to pass that when they had taken all the robbers prisoners,",
+      "verse": "5:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 49.275,
+      "end": 52.479,
+      "type": "line",
+      "text": "insomuch that none did escape who were not slain,",
+      "verse": "5:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 52.659,
+      "end": 55.724,
+      "type": "line",
+      "text": "they did cast their prisoners into prison,",
+      "verse": "5:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 55.904,
+      "end": 59.108,
+      "type": "line",
+      "text": "and did cause the word of God to be preached unto them;",
+      "verse": "5:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 59.288,
+      "end": 62.121,
+      "type": "line",
+      "text": "and as many as would repent of their sins",
+      "verse": "5:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 62.301,
+      "end": 64.205,
+      "type": "line",
+      "text": "and enter into a covenant",
+      "verse": "5:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 64.385,
+      "end": 66.568,
+      "type": "line",
+      "text": "that they would murder no more",
+      "verse": "5:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 66.748,
+      "end": 68.327,
+      "type": "line",
+      "text": "were set at liberty.",
+      "verse": "5:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 69.007,
+      "end": 72.536,
+      "type": "line",
+      "text": "But as many as there were who did not enter into a covenant,",
+      "verse": "5:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 72.716,
+      "end": 76.571,
+      "type": "line",
+      "text": "and who did still continue to have those secret murders in their hearts,",
+      "verse": "5:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 76.751,
+      "end": 81.72,
+      "type": "line",
+      "text": "yea, as many as were found breathing out threatenings against their brethren",
+      "verse": "5:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 81.9,
+      "end": 84.919,
+      "type": "line",
+      "text": "were condemned and punished according to the law.",
+      "verse": "5:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 85.599,
+      "end": 88.571,
+      "type": "line",
+      "text": "And thus they did put an end to all those wicked,",
+      "verse": "5:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 88.751,
+      "end": 89.958,
+      "type": "line",
+      "text": "and secret,",
+      "verse": "5:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 90.138,
+      "end": 92.135,
+      "type": "line",
+      "text": "and abominable combinations,",
+      "verse": "5:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 92.315,
+      "end": 95.38,
+      "type": "line",
+      "text": "in the which there was so much wickedness,",
+      "verse": "5:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 95.56,
+      "end": 97.836,
+      "type": "line",
+      "text": "and so many murders committed.",
+      "verse": "5:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 98.516,
+      "end": 101.72,
+      "type": "line",
+      "text": "And thus had the twenty and second year passed away,",
+      "verse": "5:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 101.9,
+      "end": 104.408,
+      "type": "line",
+      "text": "and the twenty and third year also,",
+      "verse": "5:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 104.588,
+      "end": 107.792,
+      "type": "line",
+      "text": "and the twenty and fourth, and the twenty and fifth;",
+      "verse": "5:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 107.972,
+      "end": 111.083,
+      "type": "line",
+      "text": "and thus had twenty and five years passed away.",
+      "verse": "5:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 111.763,
+      "end": 117.986,
+      "type": "line",
+      "text": "And there had many things transpired which, in the eyes of some, would be great and marvelous;",
+      "verse": "5:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 118.166,
+      "end": 121.324,
+      "type": "line",
+      "text": "nevertheless, they cannot all be written in this book;",
+      "verse": "5:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 121.504,
+      "end": 130.838,
+      "type": "line",
+      "text": "yea, this book cannot contain even a hundredth part of what was done among so many people in the space of twenty and five years;",
+      "verse": "5:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 131.518,
+      "end": 133.236,
+      "type": "line",
+      "text": "But behold there are records",
+      "verse": "5:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 133.416,
+      "end": 136.62,
+      "type": "line",
+      "text": "which do contain all the proceedings of this people;",
+      "verse": "5:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 136.8,
+      "end": 140.237,
+      "type": "line",
+      "text": "and a shorter but true account was given by Nephi.",
+      "verse": "5:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 140.917,
+      "end": 145.84,
+      "type": "line",
+      "text": "Therefore I have made my record of these things according to the record of Nephi,",
+      "verse": "5:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 146.02,
+      "end": 151.221,
+      "type": "line",
+      "text": "which was engraven on the plates which were called the plates of Nephi.",
+      "verse": "5:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 151.901,
+      "end": 154.641,
+      "type": "line",
+      "text": "And behold, I do make the record on plates",
+      "verse": "5:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 154.821,
+      "end": 157.236,
+      "type": "line",
+      "text": "which I have made with mine own hands.",
+      "verse": "5:11",
+      "lineIndex": 41
+    },
+    {
+      "start": 157.916,
+      "end": 162.096,
+      "type": "line",
+      "text": "And behold, I am called Mormon, being called after the land of Mormon,",
+      "verse": "5:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 162.276,
+      "end": 166.688,
+      "type": "line",
+      "text": "the land in which Alma did establish the church among the people,",
+      "verse": "5:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 166.868,
+      "end": 171.558,
+      "type": "line",
+      "text": "yea, the first church which was established among them after their transgression.",
+      "verse": "5:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 172.238,
+      "end": 175.582,
+      "type": "line",
+      "text": "Behold, I am a disciple of Jesus Christ, the Son of God.",
+      "verse": "5:13",
+      "lineIndex": 46
+    },
+    {
+      "start": 175.762,
+      "end": 179.106,
+      "type": "line",
+      "text": "I have been called of him to declare his word among his people,",
+      "verse": "5:13",
+      "lineIndex": 47
+    },
+    {
+      "start": 179.286,
+      "end": 181.933,
+      "type": "line",
+      "text": "that they might have everlasting life.",
+      "verse": "5:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 182.613,
+      "end": 187.025,
+      "type": "line",
+      "text": "And it hath become expedient that I, according to the will of God,",
+      "verse": "5:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 187.205,
+      "end": 189.899,
+      "type": "line",
+      "text": "that the prayers of those who have gone hence,",
+      "verse": "5:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 190.079,
+      "end": 191.751,
+      "type": "line",
+      "text": "who were the holy ones,",
+      "verse": "5:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 191.931,
+      "end": 194.717,
+      "type": "line",
+      "text": "should be fulfilled according to their faith,",
+      "verse": "5:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 194.897,
+      "end": 198.612,
+      "type": "line",
+      "text": "should make a record of these things which have been done\u2014",
+      "verse": "5:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 199.292,
+      "end": 205.794,
+      "type": "line",
+      "text": "Yea, a small record of that which hath taken place from the time that Lehi left Jerusalem,",
+      "verse": "5:15",
+      "lineIndex": 55
+    },
+    {
+      "start": 205.974,
+      "end": 208.296,
+      "type": "line",
+      "text": "even down until the present time.",
+      "verse": "5:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 208.976,
+      "end": 211.995,
+      "type": "line",
+      "text": "Therefore I do make my record from the accounts",
+      "verse": "5:16",
+      "lineIndex": 57
+    },
+    {
+      "start": 212.175,
+      "end": 216.633,
+      "type": "line",
+      "text": "which have been given by those who were before me, until the commencement of my day;",
+      "verse": "5:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 217.313,
+      "end": 222.468,
+      "type": "line",
+      "text": "And then I do make a record of the things which I have seen with mine own eyes.",
+      "verse": "5:17",
+      "lineIndex": 59
+    },
+    {
+      "start": 223.148,
+      "end": 227.653,
+      "type": "line",
+      "text": "And I know the record which I make to be a just and a true record;",
+      "verse": "5:18",
+      "lineIndex": 60
+    },
+    {
+      "start": 227.833,
+      "end": 233.499,
+      "type": "line",
+      "text": "nevertheless there are many things which, according to our language, we are not able to write.",
+      "verse": "5:18",
+      "lineIndex": 61
+    },
+    {
+      "start": 234.179,
+      "end": 237.616,
+      "type": "line",
+      "text": "And now I make an end of my saying, which is of myself,",
+      "verse": "5:19",
+      "lineIndex": 62
+    },
+    {
+      "start": 237.796,
+      "end": 241.697,
+      "type": "line",
+      "text": "and proceed to give my account of the things which have been before me.",
+      "verse": "5:19",
+      "lineIndex": 63
+    },
+    {
+      "start": 242.377,
+      "end": 245.21,
+      "type": "line",
+      "text": "I am Mormon, and a pure descendant of Lehi.",
+      "verse": "5:20",
+      "lineIndex": 65
+    },
+    {
+      "start": 245.39,
+      "end": 248.873,
+      "type": "line",
+      "text": "I have reason to bless my God and my Savior Jesus Christ,",
+      "verse": "5:20",
+      "lineIndex": 66
+    },
+    {
+      "start": 249.053,
+      "end": 252.397,
+      "type": "line",
+      "text": "that he brought our fathers out of the land of Jerusalem,",
+      "verse": "5:20",
+      "lineIndex": 67
+    },
+    {
+      "start": 252.577,
+      "end": 255.41,
+      "type": "line",
+      "text": "(and no one knew it save it were himself",
+      "verse": "5:20",
+      "lineIndex": 68
+    },
+    {
+      "start": 255.59,
+      "end": 258.794,
+      "type": "line",
+      "text": "and those whom he brought out of that land)",
+      "verse": "5:20",
+      "lineIndex": 69
+    },
+    {
+      "start": 258.974,
+      "end": 264.315,
+      "type": "line",
+      "text": "and that he hath given me and my people so much knowledge unto the salvation of our souls.",
+      "verse": "5:20",
+      "lineIndex": 70
+    },
+    {
+      "start": 264.995,
+      "end": 267.967,
+      "type": "line",
+      "text": "Surely he hath blessed the house of Jacob,",
+      "verse": "5:21",
+      "lineIndex": 71
+    },
+    {
+      "start": 268.147,
+      "end": 271.166,
+      "type": "line",
+      "text": "and hath been merciful unto the seed of Joseph.",
+      "verse": "5:21",
+      "lineIndex": 72
+    },
+    {
+      "start": 271.846,
+      "end": 275.979,
+      "type": "line",
+      "text": "And insomuch as the children of Lehi have kept his commandments",
+      "verse": "5:22",
+      "lineIndex": 73
+    },
+    {
+      "start": 276.159,
+      "end": 279.596,
+      "type": "line",
+      "text": "he hath blessed them and prospered them according to his word.",
+      "verse": "5:22",
+      "lineIndex": 74
+    },
+    {
+      "start": 280.276,
+      "end": 287.242,
+      "type": "line",
+      "text": "Yea, and surely shall he again bring a remnant of the seed of Joseph to the knowledge of the Lord their God.",
+      "verse": "5:23",
+      "lineIndex": 75
+    },
+    {
+      "start": 287.922,
+      "end": 289.965,
+      "type": "line",
+      "text": "And as surely as the Lord liveth,",
+      "verse": "5:24",
+      "lineIndex": 76
+    },
+    {
+      "start": 290.145,
+      "end": 296.879,
+      "type": "line",
+      "text": "will he gather in from the four quarters of the earth all the remnant of the seed of Jacob,",
+      "verse": "5:24",
+      "lineIndex": 77
+    },
+    {
+      "start": 297.059,
+      "end": 300.728,
+      "type": "line",
+      "text": "who are scattered abroad upon all the face of the earth.",
+      "verse": "5:24",
+      "lineIndex": 78
+    },
+    {
+      "start": 301.408,
+      "end": 304.473,
+      "type": "line",
+      "text": "And as he hath covenanted with all the house of Jacob,",
+      "verse": "5:25",
+      "lineIndex": 79
+    },
+    {
+      "start": 304.653,
+      "end": 306.557,
+      "type": "line",
+      "text": "even so shall the covenant",
+      "verse": "5:25",
+      "lineIndex": 80
+    },
+    {
+      "start": 306.737,
+      "end": 309.941,
+      "type": "line",
+      "text": "wherewith he hath covenanted with the house of Jacob",
+      "verse": "5:25",
+      "lineIndex": 81
+    },
+    {
+      "start": 310.121,
+      "end": 317.18,
+      "type": "line",
+      "text": "be fulfilled in his own due time, unto the restoring all the house of Jacob unto the knowledge of the covenant",
+      "verse": "5:25",
+      "lineIndex": 82
+    },
+    {
+      "start": 317.36,
+      "end": 319.728,
+      "type": "line",
+      "text": "that he hath covenanted with them.",
+      "verse": "5:25",
+      "lineIndex": 83
+    },
+    {
+      "start": 320.408,
+      "end": 322.73,
+      "type": "line",
+      "text": "And then shall they know their Redeemer,",
+      "verse": "5:26",
+      "lineIndex": 84
+    },
+    {
+      "start": 322.91,
+      "end": 325.325,
+      "type": "line",
+      "text": "who is Jesus Christ, the Son of God;",
+      "verse": "5:26",
+      "lineIndex": 85
+    },
+    {
+      "start": 325.505,
+      "end": 331.31,
+      "type": "line",
+      "text": "and then shall they be gathered in from the four quarters of the earth unto their own lands,",
+      "verse": "5:26",
+      "lineIndex": 86
+    },
+    {
+      "start": 331.49,
+      "end": 333.719,
+      "type": "line",
+      "text": "from whence they have been dispersed;",
+      "verse": "5:26",
+      "lineIndex": 87
+    },
+    {
+      "start": 333.899,
+      "end": 336.221,
+      "type": "line",
+      "text": "yea, as the Lord liveth so shall it be.",
+      "verse": "5:26",
+      "lineIndex": 88
+    },
+    {
+      "start": 336.401,
+      "end": 337.237,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "5:26",
+      "lineIndex": 89
+    }
+  ]
+}

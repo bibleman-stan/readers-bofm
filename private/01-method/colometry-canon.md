@@ -702,7 +702,7 @@ action: MERGE_FORWARD
 
 trigger_compound_verb_shared_aux:
   line_N:
-    contains: { upos: AUX, lemma_in: MODAL_AUX_R12 }
+    contains: { upos: AUX, lemma_in: MODAL_AUX_PATTERN }
     line_final: { upos: VERB, verbform_in: [Part, Ger] }   # past or -ing participle
   line_N_plus_1:
     starts_with: { upos: CCONJ, lemma: and }
@@ -714,7 +714,7 @@ action: MERGE_FORWARD
 
 **Closed lists** (machine-readable).
 ```yaml
-MODAL_AUX_R12:
+MODAL_AUX_PATTERN:
   modals:
     - may
     - might
@@ -981,13 +981,13 @@ AICTP_VARIANTS:  # inherited from R1
 ```yaml
 trigger_clausal:
   relation: [ccomp, xcomp]
-  head: { upos: VERB, lemma_in: GOVERNING_LEMMAS_R17 }
+  head: { upos: VERB, lemma_in: GOVERNING_LEMMAS }
   mark: { lemma_in: [that, whether, if, "WH-*"] }
 action: MERGE_MATRIX_AND_COMPLEMENT
 
 trigger_topic_pp:
   relation: obl
-  head: { upos: VERB, lemma_in: SPEECH_CLASS_R17 }
+  head: { upos: VERB, lemma_in: SPEECH_CLASS }
   case: { lemma_in: [of, concerning, unto, against] }
 action: MERGE_VERB_AND_TOPIC_PP
 
@@ -1000,14 +1000,14 @@ action: MERGE_VERB_AND_OF_PP
 
 **Closed lists** (defined at §Verb-Classes-R17):
 
-- `GOVERNING_LEMMAS_R17` — six closed verb classes:
+- `GOVERNING_LEMMAS` — six closed verb classes:
   - **Causative:** `cause`, `suffer`, `permit`, `command`, `grant`
   - **Aspectual:** `begin`, `cease`, `continue`
   - **Speech-indirect:** `say`, `speak`, `declare`, `testify`, `swear`, `proclaim`, `tell`, `confess`, `rehearse`, `preach`, `answer`, `cry`, `beseech`, `ask`, `plead`
   - **Cognition:** `know`, `believe`, `perceive`, `remember`, `understand`, `hear`, `see`, `suppose`, `imagine`, `forget`, `think`
   - **Volition:** `wish`, `desire`, `hope`, `long`, `trust`, `pray`, `seek`, `observe` (EME "take care to / heed to"), `endeavor`, `attempt` (codified 2026-05-13: EME effort/heed verbs taking obligatory INF complement; canon-grounded in §1.2 complement integrity + bidirectional ATU forward-failure on the bare matrix line; same principle as the original 7 — mental-state/effort verb + obligatory complement)
   - **FEF-extraposition:** `it was their lot to`, `it is expedient to`, copular extraposition patterns
-- `SPEECH_CLASS_R17` — subset of GOVERNING_LEMMAS_R17 taking obligatory topic-PP: `speak`, `declare`, `preach`, `testify`, `prophesy`, `bear record`, `bear testimony`, `bear witness`, `say`, `cry`, `write`
+- `SPEECH_CLASS` — subset of GOVERNING_LEMMAS taking obligatory topic-PP: `speak`, `declare`, `preach`, `testify`, `prophesy`, `bear record`, `bear testimony`, `bear witness`, `say`, `cry`, `write`
 - `PETITION_FRAME_VERBS` — speech- and volition-class verbs whose modal-aux *that*-complement reads ambiguously between content and purpose: `cry`, `pray`, `beseech`, `ask`, `seek`, `plead`
 
 **Scope.** Matrix VERB head only. ADJ head → R26 territory. NOUN head → out of scope (no R17-equivalent for NOUN-headed ccomp).
@@ -1031,7 +1031,7 @@ action: MERGE_VERB_AND_OF_PP
 - Synonymous / cognate / restatement → MERGE both *that*-clauses with the matrix.
 - Distinct non-synonymous (each member with its own finite verb) → MERGE first *that*-clause with the matrix; SPLIT second per J1.
 
-The sub-rule fires only when the matrix governor is in `GOVERNING_LEMMAS_R17`. Out-of-list matrix verbs (e.g., `wondereth`, `marveleth`) fall outside R17 territory entirely.
+The sub-rule fires only when the matrix governor is in `GOVERNING_LEMMAS`. Out-of-list matrix verbs (e.g., `wondereth`, `marveleth`) fall outside R17 territory entirely.
 
 **Examples.**
 
@@ -1304,7 +1304,7 @@ The `CATAPHORIC_UPOS` set captures the generic forward-pointer heads characteris
 
 **Exclusions (closed list — each cites dominating rule).**
 
-1. Complement of a Rule 17 governing verb (matrix VERB lemma in `GOVERNING_LEMMAS_R17`; `ccomp` relation at the head) → R17 wins; *that*-clause merges with matrix per complement integrity
+1. Complement of a Rule 17 governing verb (matrix VERB lemma in `GOVERNING_LEMMAS`; `ccomp` relation at the head) → R17 wins; *that*-clause merges with matrix per complement integrity
 2. Complement of a Rule 26 predicate (ADJ or NOUN-as-predicate head in `RULE_26_HEAD_LEMMAS`) → R26 wins; *that*-clause merges with predicate
 3. AICTP *that* (token sequence "And it came to pass that") → R1 / R16 win
 4. Purpose finite *that* + MODAL (advcl + modal aux) → R7
@@ -1967,13 +1967,13 @@ EXPLETIVE_THERE_VERBS:
 **Decidability:** UD-pattern
 **Layer:** 3
 
-**Rule.** A speech verb's matrix predication (subject + finite speech verb + colon-introduced quote) MUST be split from a preceding scene-setting adverbial frame when (a) the speech verb's lemma is in `SPEECH_LEMMAS_R28`, (b) the verb carries an `nsubj` dependent, and (c) the verb has an `advcl` sibling (or direct `advcl` dependent) whose mark lemma is in `FRAME_MARK_LEMMAS`. The break MUST be inserted before the leftmost non-PUNCT token of the speech-clause subtree that follows the rightmost advcl-subtree token on the line; any trailing frame-closing comma stays on the frame line. Participial speech-continuation advcl (`saying`-headed) and result/comparative advcl MUST NOT trigger this rule.
+**Rule.** A speech verb's matrix predication (subject + finite speech verb + colon-introduced quote) MUST be split from a preceding scene-setting adverbial frame when (a) the speech verb's lemma is in `SPEECH_LEMMAS`, (b) the verb carries an `nsubj` dependent, and (c) the verb has an `advcl` sibling (or direct `advcl` dependent) whose mark lemma is in `FRAME_MARK_LEMMAS`. The break MUST be inserted before the leftmost non-PUNCT token of the speech-clause subtree that follows the rightmost advcl-subtree token on the line; any trailing frame-closing comma stays on the frame line. Participial speech-continuation advcl (`saying`-headed) and result/comparative advcl MUST NOT trigger this rule.
 
 **UD signature.**
 ```yaml
 trigger:
   relation: advcl                # advcl as sibling-of or dependent-of the speech verb
-  head: { upos: VERB, lemma_in: SPEECH_LEMMAS_R28 }
+  head: { upos: VERB, lemma_in: SPEECH_LEMMAS }
   head_deps: { nsubj: required }
   mark: { lemma_in: FRAME_MARK_LEMMAS }
 action: SPLIT_BEFORE_SUBJECT
@@ -1981,7 +1981,7 @@ action: SPLIT_BEFORE_SUBJECT
 
 **Closed lists** (machine-readable).
 ```yaml
-SPEECH_LEMMAS_R28:
+SPEECH_LEMMAS:
   - say
   - speak
   - declare
