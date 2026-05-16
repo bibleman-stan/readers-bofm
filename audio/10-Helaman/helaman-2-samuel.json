@@ -1,0 +1,480 @@
+{
+  "book": "helaman",
+  "bookName": "Helaman",
+  "chapter": 2,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 226.278,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.619,
+      "type": "line",
+      "text": "And it came to pass in the forty and second year of the reign of the judges,",
+      "verse": "2:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.799,
+      "end": 10.815,
+      "type": "line",
+      "text": "after Moronihah had established again peace between the Nephites and the Lamanites,",
+      "verse": "2:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.995,
+      "end": 13.921,
+      "type": "line",
+      "text": "behold there was no one to fill the judgment-seat;",
+      "verse": "2:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 14.101,
+      "end": 17.816,
+      "type": "line",
+      "text": "therefore there began to be a contention again among the people",
+      "verse": "2:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.996,
+      "end": 20.829,
+      "type": "line",
+      "text": "concerning who should fill the judgment-seat.",
+      "verse": "2:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 21.509,
+      "end": 30.333,
+      "type": "line",
+      "text": "And it came to pass that Helaman, who was the son of Helaman, was appointed to fill the judgment-seat, by the voice of the people.",
+      "verse": "2:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 31.013,
+      "end": 37.468,
+      "type": "line",
+      "text": "But behold, Kishkumen, who had murdered Pahoran, did lay wait to destroy Helaman also;",
+      "verse": "2:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 37.648,
+      "end": 39.877,
+      "type": "line",
+      "text": "and he was upheld by his band,",
+      "verse": "2:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 40.057,
+      "end": 42.797,
+      "type": "line",
+      "text": "who had entered into a covenant",
+      "verse": "2:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 42.977,
+      "end": 45.438,
+      "type": "line",
+      "text": "that no one should know his wickedness.",
+      "verse": "2:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 46.118,
+      "end": 56.288,
+      "type": "line",
+      "text": "For there was one Gadianton, who was exceedingly expert in many words, and also in his craft, to carry on the secret work of murder and of robbery;",
+      "verse": "2:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 56.468,
+      "end": 59.719,
+      "type": "line",
+      "text": "therefore he became the leader of the band of Kishkumen.",
+      "verse": "2:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 60.399,
+      "end": 63.51,
+      "type": "line",
+      "text": "Therefore he did flatter them, and also Kishkumen,",
+      "verse": "2:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 63.69,
+      "end": 66.569,
+      "type": "line",
+      "text": "that if they would place him in the judgment-seat",
+      "verse": "2:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 66.749,
+      "end": 74.04,
+      "type": "line",
+      "text": "he would grant unto those who belonged to his band that they should be placed in power and authority among the people;",
+      "verse": "2:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 74.22,
+      "end": 77.192,
+      "type": "line",
+      "text": "therefore Kishkumen sought to destroy Helaman.",
+      "verse": "2:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 77.872,
+      "end": 83.352,
+      "type": "line",
+      "text": "And it came to pass as he went forth towards the judgment-seat to destroy Helaman,",
+      "verse": "2:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 83.532,
+      "end": 87.712,
+      "type": "line",
+      "text": "behold one of the servants of Helaman, having been out by night,",
+      "verse": "2:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 87.892,
+      "end": 92.536,
+      "type": "line",
+      "text": "and having obtained, through disguise, a knowledge of those plans",
+      "verse": "2:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 92.716,
+      "end": 96.06,
+      "type": "line",
+      "text": "which had been laid by this band to destroy Helaman\u2014",
+      "verse": "2:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 96.74,
+      "end": 99.434,
+      "type": "line",
+      "text": "And it came to pass that he met Kishkumen,",
+      "verse": "2:7",
+      "lineIndex": 21
+    },
+    {
+      "start": 99.614,
+      "end": 101.843,
+      "type": "line",
+      "text": "and he gave unto him a sign;",
+      "verse": "2:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 102.023,
+      "end": 106.295,
+      "type": "line",
+      "text": "therefore Kishkumen made known unto him the object of his desire,",
+      "verse": "2:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 106.475,
+      "end": 109.912,
+      "type": "line",
+      "text": "desiring that he would conduct him to the judgment-seat",
+      "verse": "2:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 110.092,
+      "end": 111.95,
+      "type": "line",
+      "text": "that he might murder Helaman.",
+      "verse": "2:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 112.63,
+      "end": 117.228,
+      "type": "line",
+      "text": "And when the servant of Helaman had known all the heart of Kishkumen,",
+      "verse": "2:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 117.408,
+      "end": 119.869,
+      "type": "line",
+      "text": "and how that it was his object to murder,",
+      "verse": "2:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 120.049,
+      "end": 124.972,
+      "type": "line",
+      "text": "and also that it was the object of all those who belonged to his band to murder,",
+      "verse": "2:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 125.152,
+      "end": 126.313,
+      "type": "line",
+      "text": "and to rob,",
+      "verse": "2:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 126.493,
+      "end": 127.933,
+      "type": "line",
+      "text": "and to gain power,",
+      "verse": "2:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 128.113,
+      "end": 131.735,
+      "type": "line",
+      "text": "(and this was their secret plan, and their combination)",
+      "verse": "2:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 131.915,
+      "end": 134.748,
+      "type": "line",
+      "text": "the servant of Helaman said unto Kishkumen:",
+      "verse": "2:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 134.928,
+      "end": 137.389,
+      "type": "line",
+      "text": "Let us go forth unto the judgment-seat.",
+      "verse": "2:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 138.069,
+      "end": 140.623,
+      "type": "line",
+      "text": "Now this did please Kishkumen exceedingly,",
+      "verse": "2:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 140.803,
+      "end": 144.565,
+      "type": "line",
+      "text": "for he did suppose that he should accomplish his design;",
+      "verse": "2:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 144.745,
+      "end": 147.113,
+      "type": "line",
+      "text": "but behold, the servant of Helaman,",
+      "verse": "2:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 147.293,
+      "end": 150.358,
+      "type": "line",
+      "text": "as they were going forth unto the judgment-seat,",
+      "verse": "2:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 150.538,
+      "end": 153.232,
+      "type": "line",
+      "text": "did stab Kishkumen even to the heart,",
+      "verse": "2:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 153.412,
+      "end": 155.827,
+      "type": "line",
+      "text": "that he fell dead without a groan.",
+      "verse": "2:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 156.007,
+      "end": 160.001,
+      "type": "line",
+      "text": "And he ran and told Helaman all the things which he had seen",
+      "verse": "2:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 160.181,
+      "end": 161.388,
+      "type": "line",
+      "text": "and heard,",
+      "verse": "2:9",
+      "lineIndex": 42
+    },
+    {
+      "start": 161.568,
+      "end": 162.59,
+      "type": "line",
+      "text": "and done.",
+      "verse": "2:9",
+      "lineIndex": 43
+    },
+    {
+      "start": 163.27,
+      "end": 169.679,
+      "type": "line",
+      "text": "And it came to pass that Helaman did send forth to take this band of robbers and secret murderers,",
+      "verse": "2:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 169.859,
+      "end": 172.878,
+      "type": "line",
+      "text": "that they might be executed according to the law.",
+      "verse": "2:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 173.558,
+      "end": 178.248,
+      "type": "line",
+      "text": "But behold, when Gadianton had found that Kishkumen did not return",
+      "verse": "2:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 178.428,
+      "end": 181.029,
+      "type": "line",
+      "text": "he feared lest that he should be destroyed;",
+      "verse": "2:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 181.209,
+      "end": 184.228,
+      "type": "line",
+      "text": "therefore he caused that his band should follow him.",
+      "verse": "2:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 184.408,
+      "end": 189.702,
+      "type": "line",
+      "text": "And they took their flight out of the land, by a secret way, into the wilderness;",
+      "verse": "2:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 189.882,
+      "end": 194.805,
+      "type": "line",
+      "text": "and thus when Helaman sent forth to take them they could nowhere be found.",
+      "verse": "2:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 195.485,
+      "end": 198.875,
+      "type": "line",
+      "text": "And more of this Gadianton shall be spoken hereafter.",
+      "verse": "2:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 199.055,
+      "end": 205.603,
+      "type": "line",
+      "text": "And thus ended the forty and second year of the reign of the judges over the people of Nephi.",
+      "verse": "2:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 206.283,
+      "end": 208.698,
+      "type": "line",
+      "text": "And behold, in the end of this book",
+      "verse": "2:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 208.878,
+      "end": 212.222,
+      "type": "line",
+      "text": "ye shall see that this Gadianton did prove the overthrow,",
+      "verse": "2:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 212.402,
+      "end": 215.653,
+      "type": "line",
+      "text": "yea, almost the entire destruction of the people of Nephi.",
+      "verse": "2:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 216.333,
+      "end": 219.444,
+      "type": "line",
+      "text": "Behold I do not mean the end of the book of Helaman,",
+      "verse": "2:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 219.624,
+      "end": 222.039,
+      "type": "line",
+      "text": "but I mean the end of the book of Nephi,",
+      "verse": "2:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 222.219,
+      "end": 225.609,
+      "type": "line",
+      "text": "from which I have taken all the account which I have written.",
+      "verse": "2:14",
+      "lineIndex": 58
+    }
+  ]
+}

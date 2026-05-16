@@ -1,0 +1,1000 @@
+{
+  "book": "helaman",
+  "bookName": "Helaman",
+  "chapter": 1,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 539.054,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.941,
+      "type": "line",
+      "text": "And now behold, it came to pass in the commencement of the fortieth year of the reign of the judges over the people of Nephi,",
+      "verse": "1:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 8.121,
+      "end": 12.579,
+      "type": "line",
+      "text": "there began to be a serious difficulty among the people of the Nephites.",
+      "verse": "1:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 13.259,
+      "end": 17.299,
+      "type": "line",
+      "text": "For behold, Pahoran had died, and gone the way of all the earth;",
+      "verse": "1:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 17.479,
+      "end": 20.683,
+      "type": "line",
+      "text": "therefore there began to be a serious contention",
+      "verse": "1:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 20.863,
+      "end": 23.603,
+      "type": "line",
+      "text": "concerning who should have the judgment-seat",
+      "verse": "1:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 23.783,
+      "end": 27.22,
+      "type": "line",
+      "text": "among the brethren, who were the sons of Pahoran.",
+      "verse": "1:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 27.9,
+      "end": 31.847,
+      "type": "line",
+      "text": "Now these are their names who did contend for the judgment-seat",
+      "verse": "1:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 32.027,
+      "end": 34.488,
+      "type": "line",
+      "text": "who did also cause the people to contend:",
+      "verse": "1:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 34.668,
+      "end": 36.944,
+      "type": "line",
+      "text": "Pahoran, Paanchi, and Pacumeni.",
+      "verse": "1:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 37.624,
+      "end": 41.014,
+      "type": "line",
+      "text": "Now these are not all the sons of Pahoran (for he had many),",
+      "verse": "1:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 41.194,
+      "end": 44.538,
+      "type": "line",
+      "text": "but these are they who did contend for the judgment-seat;",
+      "verse": "1:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 44.718,
+      "end": 47.969,
+      "type": "line",
+      "text": "therefore, they did cause three divisions among the people.",
+      "verse": "1:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 48.649,
+      "end": 57.565,
+      "type": "line",
+      "text": "Nevertheless, it came to pass that Pahoran was appointed by the voice of the people to be chief judge and a governor over the people of Nephi.",
+      "verse": "1:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 58.245,
+      "end": 60.474,
+      "type": "line",
+      "text": "And it came to pass that Pacumeni,",
+      "verse": "1:6",
+      "lineIndex": 15
+    },
+    {
+      "start": 60.654,
+      "end": 66.877,
+      "type": "line",
+      "text": "when he saw that he could not obtain the judgment-seat, he did unite with the voice of the people.",
+      "verse": "1:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 67.557,
+      "end": 70.483,
+      "type": "line",
+      "text": "But behold, Paanchi, and that part of the people",
+      "verse": "1:7",
+      "lineIndex": 17
+    },
+    {
+      "start": 70.663,
+      "end": 76.282,
+      "type": "line",
+      "text": "that were desirous that he should be their governor, was exceedingly wroth;",
+      "verse": "1:7",
+      "lineIndex": 18
+    },
+    {
+      "start": 76.462,
+      "end": 83.8,
+      "type": "line",
+      "text": "therefore, he was about to flatter away those people to rise up in rebellion against their brethren.",
+      "verse": "1:7",
+      "lineIndex": 19
+    },
+    {
+      "start": 84.48,
+      "end": 90.053,
+      "type": "line",
+      "text": "And it came to pass as he was about to do this, behold, he was taken,",
+      "verse": "1:8",
+      "lineIndex": 20
+    },
+    {
+      "start": 90.233,
+      "end": 94.041,
+      "type": "line",
+      "text": "and was tried according to the voice of the people",
+      "verse": "1:8",
+      "lineIndex": 21
+    },
+    {
+      "start": 94.221,
+      "end": 96.125,
+      "type": "line",
+      "text": "and condemned unto death;",
+      "verse": "1:8",
+      "lineIndex": 22
+    },
+    {
+      "start": 96.305,
+      "end": 98.581,
+      "type": "line",
+      "text": "for he had raised up in rebellion",
+      "verse": "1:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 98.761,
+      "end": 101.965,
+      "type": "line",
+      "text": "and sought to destroy the liberty of the people.",
+      "verse": "1:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 102.645,
+      "end": 108.171,
+      "type": "line",
+      "text": "Now when those people who were desirous that he should be their governor",
+      "verse": "1:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 108.351,
+      "end": 112.252,
+      "type": "line",
+      "text": "saw that he was condemned unto death, therefore they were angry,",
+      "verse": "1:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 112.432,
+      "end": 117.773,
+      "type": "line",
+      "text": "and behold, they sent forth one Kishkumen, even to the judgment-seat of Pahoran,",
+      "verse": "1:9",
+      "lineIndex": 28
+    },
+    {
+      "start": 117.953,
+      "end": 121.715,
+      "type": "line",
+      "text": "and murdered Pahoran as he sat upon the judgment-seat.",
+      "verse": "1:9",
+      "lineIndex": 29
+    },
+    {
+      "start": 122.395,
+      "end": 125.135,
+      "type": "line",
+      "text": "And he was pursued by the servants of Pahoran;",
+      "verse": "1:10",
+      "lineIndex": 30
+    },
+    {
+      "start": 125.315,
+      "end": 129.959,
+      "type": "line",
+      "text": "but behold, so speedy was the flight of Kishkumen that no man could overtake him.",
+      "verse": "1:10",
+      "lineIndex": 31
+    },
+    {
+      "start": 130.639,
+      "end": 132.868,
+      "type": "line",
+      "text": "And he went unto those that sent him,",
+      "verse": "1:11",
+      "lineIndex": 32
+    },
+    {
+      "start": 133.048,
+      "end": 135.556,
+      "type": "line",
+      "text": "and they all entered into a covenant,",
+      "verse": "1:11",
+      "lineIndex": 33
+    },
+    {
+      "start": 135.736,
+      "end": 143.677,
+      "type": "line",
+      "text": "yea, swearing by their everlasting Maker, that they would tell no man that Kishkumen had murdered Pahoran.",
+      "verse": "1:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 144.357,
+      "end": 148.165,
+      "type": "line",
+      "text": "Therefore, Kishkumen was not known among the people of Nephi,",
+      "verse": "1:12",
+      "lineIndex": 35
+    },
+    {
+      "start": 148.345,
+      "end": 151.782,
+      "type": "line",
+      "text": "for he was in disguise at the time that he murdered Pahoran.",
+      "verse": "1:12",
+      "lineIndex": 36
+    },
+    {
+      "start": 151.962,
+      "end": 153.866,
+      "type": "line",
+      "text": "And Kishkumen and his band,",
+      "verse": "1:12",
+      "lineIndex": 37
+    },
+    {
+      "start": 154.046,
+      "end": 156.182,
+      "type": "line",
+      "text": "who had covenanted with him,",
+      "verse": "1:12",
+      "lineIndex": 38
+    },
+    {
+      "start": 156.362,
+      "end": 160.588,
+      "type": "line",
+      "text": "did mingle themselves among the people, in a manner that they all could not be found;",
+      "verse": "1:12",
+      "lineIndex": 39
+    },
+    {
+      "start": 160.768,
+      "end": 164.019,
+      "type": "line",
+      "text": "but as many as were found were condemned unto death.",
+      "verse": "1:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 164.699,
+      "end": 174.312,
+      "type": "line",
+      "text": "And now behold, Pacumeni was appointed, according to the voice of the people, to be a chief judge and a governor over the people, to reign in the stead of his brother Pahoran;",
+      "verse": "1:13",
+      "lineIndex": 41
+    },
+    {
+      "start": 174.492,
+      "end": 177.046,
+      "type": "line",
+      "text": "and it was according to his right.",
+      "verse": "1:13",
+      "lineIndex": 42
+    },
+    {
+      "start": 177.226,
+      "end": 182.056,
+      "type": "line",
+      "text": "And all this was done in the fortieth year of the reign of the judges;",
+      "verse": "1:13",
+      "lineIndex": 43
+    },
+    {
+      "start": 182.236,
+      "end": 183.769,
+      "type": "line",
+      "text": "and it had an end.",
+      "verse": "1:13",
+      "lineIndex": 44
+    },
+    {
+      "start": 184.449,
+      "end": 189.279,
+      "type": "line",
+      "text": "And it came to pass in the forty and first year of the reign of the judges,",
+      "verse": "1:14",
+      "lineIndex": 46
+    },
+    {
+      "start": 189.459,
+      "end": 194.057,
+      "type": "line",
+      "text": "that the Lamanites had gathered together an innumerable army of men,",
+      "verse": "1:14",
+      "lineIndex": 47
+    },
+    {
+      "start": 194.237,
+      "end": 204.732,
+      "type": "line",
+      "text": "and armed them with swords, and with cimeters and with bows, and with arrows, and with head-plates, and with breastplates, and with all manner of shields of every kind.",
+      "verse": "1:14",
+      "lineIndex": 48
+    },
+    {
+      "start": 205.412,
+      "end": 207.084,
+      "type": "line",
+      "text": "And they came down again",
+      "verse": "1:15",
+      "lineIndex": 49
+    },
+    {
+      "start": 207.264,
+      "end": 210.283,
+      "type": "line",
+      "text": "that they might pitch battle against the Nephites.",
+      "verse": "1:15",
+      "lineIndex": 50
+    },
+    {
+      "start": 210.463,
+      "end": 213.528,
+      "type": "line",
+      "text": "And they were led by a man whose name was Coriantumr;",
+      "verse": "1:15",
+      "lineIndex": 51
+    },
+    {
+      "start": 213.708,
+      "end": 216.494,
+      "type": "line",
+      "text": "and he was a descendant of Zarahemla;",
+      "verse": "1:15",
+      "lineIndex": 52
+    },
+    {
+      "start": 216.674,
+      "end": 219.507,
+      "type": "line",
+      "text": "and he was a dissenter from among the Nephites;",
+      "verse": "1:15",
+      "lineIndex": 53
+    },
+    {
+      "start": 219.687,
+      "end": 221.963,
+      "type": "line",
+      "text": "and he was a large and a mighty man.",
+      "verse": "1:15",
+      "lineIndex": 54
+    },
+    {
+      "start": 222.643,
+      "end": 225.244,
+      "type": "line",
+      "text": "Therefore, the king of the Lamanites,",
+      "verse": "1:16",
+      "lineIndex": 55
+    },
+    {
+      "start": 225.424,
+      "end": 227.374,
+      "type": "line",
+      "text": "whose name was Tubaloth,",
+      "verse": "1:16",
+      "lineIndex": 56
+    },
+    {
+      "start": 227.554,
+      "end": 230.898,
+      "type": "line",
+      "text": "who was the son of Ammoron, supposing that Coriantumr,",
+      "verse": "1:16",
+      "lineIndex": 57
+    },
+    {
+      "start": 231.078,
+      "end": 232.611,
+      "type": "line",
+      "text": "being a mighty man,",
+      "verse": "1:16",
+      "lineIndex": 58
+    },
+    {
+      "start": 232.791,
+      "end": 238.085,
+      "type": "line",
+      "text": "could stand against the Nephites, with his strength and also with his great wisdom,",
+      "verse": "1:16",
+      "lineIndex": 59
+    },
+    {
+      "start": 238.265,
+      "end": 243.188,
+      "type": "line",
+      "text": "insomuch that by sending him forth he should gain power over the Nephites\u2014",
+      "verse": "1:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 243.868,
+      "end": 246.422,
+      "type": "line",
+      "text": "Therefore he did stir them up to anger,",
+      "verse": "1:17",
+      "lineIndex": 61
+    },
+    {
+      "start": 246.602,
+      "end": 249.156,
+      "type": "line",
+      "text": "and he did gather together his armies,",
+      "verse": "1:17",
+      "lineIndex": 62
+    },
+    {
+      "start": 249.336,
+      "end": 252.401,
+      "type": "line",
+      "text": "and he did appoint Coriantumr to be their leader,",
+      "verse": "1:17",
+      "lineIndex": 63
+    },
+    {
+      "start": 252.581,
+      "end": 259.175,
+      "type": "line",
+      "text": "and did cause that they should march down to the land of Zarahemla to battle against the Nephites.",
+      "verse": "1:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 259.855,
+      "end": 265.706,
+      "type": "line",
+      "text": "And it came to pass that because of so much contention and so much difficulty in the government,",
+      "verse": "1:18",
+      "lineIndex": 65
+    },
+    {
+      "start": 265.886,
+      "end": 270.762,
+      "type": "line",
+      "text": "that they had not kept sufficient guards in the land of Zarahemla;",
+      "verse": "1:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 270.942,
+      "end": 279.905,
+      "type": "line",
+      "text": "for they had supposed that the Lamanites durst not come into the heart of their lands to attack that great city Zarahemla.",
+      "verse": "1:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 280.585,
+      "end": 286.483,
+      "type": "line",
+      "text": "But it came to pass that Coriantumr did march forth at the head of his numerous host,",
+      "verse": "1:19",
+      "lineIndex": 68
+    },
+    {
+      "start": 286.663,
+      "end": 289.682,
+      "type": "line",
+      "text": "and came upon the inhabitants of the city,",
+      "verse": "1:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 289.862,
+      "end": 293.066,
+      "type": "line",
+      "text": "and their march was with such exceedingly great speed",
+      "verse": "1:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 293.246,
+      "end": 296.775,
+      "type": "line",
+      "text": "that there was no time for the Nephites to gather together their armies.",
+      "verse": "1:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 297.455,
+      "end": 302.099,
+      "type": "line",
+      "text": "Therefore Coriantumr did cut down the watch by the entrance of the city,",
+      "verse": "1:20",
+      "lineIndex": 72
+    },
+    {
+      "start": 302.279,
+      "end": 305.576,
+      "type": "line",
+      "text": "and did march forth with his whole army into the city,",
+      "verse": "1:20",
+      "lineIndex": 73
+    },
+    {
+      "start": 305.756,
+      "end": 313.372,
+      "type": "line",
+      "text": "and they did slay every one who did oppose them, insomuch that they did take possession of the whole city.",
+      "verse": "1:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 314.052,
+      "end": 321.807,
+      "type": "line",
+      "text": "And it came to pass that Pacumeni, who was the chief judge, did flee before Coriantumr, even to the walls of the city.",
+      "verse": "1:21",
+      "lineIndex": 76
+    },
+    {
+      "start": 321.987,
+      "end": 327.746,
+      "type": "line",
+      "text": "And it came to pass that Coriantumr did smite him against the wall, insomuch that he died.",
+      "verse": "1:21",
+      "lineIndex": 77
+    },
+    {
+      "start": 327.926,
+      "end": 330.387,
+      "type": "line",
+      "text": "And thus ended the days of Pacumeni.",
+      "verse": "1:21",
+      "lineIndex": 78
+    },
+    {
+      "start": 331.067,
+      "end": 335.711,
+      "type": "line",
+      "text": "And now when Coriantumr saw that he was in possession of the city of Zarahemla,",
+      "verse": "1:22",
+      "lineIndex": 79
+    },
+    {
+      "start": 335.891,
+      "end": 340.303,
+      "type": "line",
+      "text": "and saw that the Nephites had fled before them, and were slain,",
+      "verse": "1:22",
+      "lineIndex": 80
+    },
+    {
+      "start": 340.483,
+      "end": 343.409,
+      "type": "line",
+      "text": "and were taken, and were cast into prison,",
+      "verse": "1:22",
+      "lineIndex": 81
+    },
+    {
+      "start": 343.589,
+      "end": 347.815,
+      "type": "line",
+      "text": "and that he had obtained the possession of the strongest hold in all the land,",
+      "verse": "1:22",
+      "lineIndex": 82
+    },
+    {
+      "start": 347.995,
+      "end": 349.713,
+      "type": "line",
+      "text": "his heart took courage",
+      "verse": "1:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 349.893,
+      "end": 353.608,
+      "type": "line",
+      "text": "insomuch that he was about to go forth against all the land.",
+      "verse": "1:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 354.288,
+      "end": 357.214,
+      "type": "line",
+      "text": "And now he did not tarry in the land of Zarahemla,",
+      "verse": "1:23",
+      "lineIndex": 85
+    },
+    {
+      "start": 357.394,
+      "end": 359.995,
+      "type": "line",
+      "text": "but he did march forth with a large army,",
+      "verse": "1:23",
+      "lineIndex": 86
+    },
+    {
+      "start": 360.175,
+      "end": 362.729,
+      "type": "line",
+      "text": "even towards the city of Bountiful;",
+      "verse": "1:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 362.909,
+      "end": 367.785,
+      "type": "line",
+      "text": "for it was his determination to go forth and cut his way through with the sword,",
+      "verse": "1:23",
+      "lineIndex": 88
+    },
+    {
+      "start": 367.965,
+      "end": 371.402,
+      "type": "line",
+      "text": "that he might obtain the north parts of the land.",
+      "verse": "1:23",
+      "lineIndex": 89
+    },
+    {
+      "start": 372.082,
+      "end": 377.33,
+      "type": "line",
+      "text": "And, supposing that their greatest strength was in the center of the land,",
+      "verse": "1:24",
+      "lineIndex": 90
+    },
+    {
+      "start": 377.51,
+      "end": 385.173,
+      "type": "line",
+      "text": "therefore he did march forth, giving them no time to assemble themselves together save it were in small bodies;",
+      "verse": "1:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 385.353,
+      "end": 390.276,
+      "type": "line",
+      "text": "and in this manner they did fall upon them and cut them down to the earth.",
+      "verse": "1:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 390.956,
+      "end": 395.832,
+      "type": "line",
+      "text": "But behold, this march of Coriantumr through the center of the land",
+      "verse": "1:25",
+      "lineIndex": 93
+    },
+    {
+      "start": 396.012,
+      "end": 399.031,
+      "type": "line",
+      "text": "gave Moronihah great advantage over them,",
+      "verse": "1:25",
+      "lineIndex": 94
+    },
+    {
+      "start": 399.211,
+      "end": 404.227,
+      "type": "line",
+      "text": "notwithstanding the greatness of the number of the Nephites who were slain.",
+      "verse": "1:25",
+      "lineIndex": 95
+    },
+    {
+      "start": 404.907,
+      "end": 412.709,
+      "type": "line",
+      "text": "For behold, Moronihah had supposed that the Lamanites durst not come into the center of the land,",
+      "verse": "1:26",
+      "lineIndex": 96
+    },
+    {
+      "start": 412.889,
+      "end": 417.579,
+      "type": "line",
+      "text": "but that they would attack the cities round about in the borders",
+      "verse": "1:26",
+      "lineIndex": 97
+    },
+    {
+      "start": 417.759,
+      "end": 419.663,
+      "type": "line",
+      "text": "as they had hitherto done;",
+      "verse": "1:26",
+      "lineIndex": 98
+    },
+    {
+      "start": 419.843,
+      "end": 426.67,
+      "type": "line",
+      "text": "therefore Moronihah had caused that their strong armies should maintain those parts round about by the borders.",
+      "verse": "1:26",
+      "lineIndex": 99
+    },
+    {
+      "start": 427.35,
+      "end": 432.319,
+      "type": "line",
+      "text": "But behold, the Lamanites were not frightened according to his desire,",
+      "verse": "1:27",
+      "lineIndex": 100
+    },
+    {
+      "start": 432.499,
+      "end": 435.61,
+      "type": "line",
+      "text": "but they had come into the center of the land,",
+      "verse": "1:27",
+      "lineIndex": 101
+    },
+    {
+      "start": 435.79,
+      "end": 440.248,
+      "type": "line",
+      "text": "and had taken the capital city which was the city of Zarahemla,",
+      "verse": "1:27",
+      "lineIndex": 102
+    },
+    {
+      "start": 440.428,
+      "end": 443.957,
+      "type": "line",
+      "text": "and were marching through the most capital parts of the land,",
+      "verse": "1:27",
+      "lineIndex": 103
+    },
+    {
+      "start": 444.137,
+      "end": 446.459,
+      "type": "line",
+      "text": "slaying the people with a great slaughter,",
+      "verse": "1:27",
+      "lineIndex": 104
+    },
+    {
+      "start": 446.639,
+      "end": 449.007,
+      "type": "line",
+      "text": "both men, women, and children,",
+      "verse": "1:27",
+      "lineIndex": 105
+    },
+    {
+      "start": 449.187,
+      "end": 452.345,
+      "type": "line",
+      "text": "taking possession of many cities and of many strongholds.",
+      "verse": "1:27",
+      "lineIndex": 106
+    },
+    {
+      "start": 453.025,
+      "end": 459.387,
+      "type": "line",
+      "text": "But when Moronihah had discovered this, he immediately sent forth Lehi with an army round about to head them",
+      "verse": "1:28",
+      "lineIndex": 107
+    },
+    {
+      "start": 459.567,
+      "end": 461.982,
+      "type": "line",
+      "text": "before they should come to the land Bountiful.",
+      "verse": "1:28",
+      "lineIndex": 108
+    },
+    {
+      "start": 462.662,
+      "end": 465.541,
+      "type": "line",
+      "text": "And thus he did; and he did head them",
+      "verse": "1:29",
+      "lineIndex": 109
+    },
+    {
+      "start": 465.721,
+      "end": 468.043,
+      "type": "line",
+      "text": "before they came to the land Bountiful,",
+      "verse": "1:29",
+      "lineIndex": 110
+    },
+    {
+      "start": 468.223,
+      "end": 474.353,
+      "type": "line",
+      "text": "and gave unto them battle, insomuch that they began to retreat back towards the land of Zarahemla.",
+      "verse": "1:29",
+      "lineIndex": 111
+    },
+    {
+      "start": 475.033,
+      "end": 479.445,
+      "type": "line",
+      "text": "And it came to pass that Moronihah did head them in their retreat,",
+      "verse": "1:30",
+      "lineIndex": 112
+    },
+    {
+      "start": 479.625,
+      "end": 484.362,
+      "type": "line",
+      "text": "and did give unto them battle, insomuch that it became an exceedingly bloody battle;",
+      "verse": "1:30",
+      "lineIndex": 113
+    },
+    {
+      "start": 484.542,
+      "end": 486.214,
+      "type": "line",
+      "text": "yea, many were slain,",
+      "verse": "1:30",
+      "lineIndex": 114
+    },
+    {
+      "start": 486.394,
+      "end": 490.202,
+      "type": "line",
+      "text": "and among the number who were slain Coriantumr was also found.",
+      "verse": "1:30",
+      "lineIndex": 115
+    },
+    {
+      "start": 490.882,
+      "end": 494.272,
+      "type": "line",
+      "text": "And now, behold, the Lamanites could not retreat either way,",
+      "verse": "1:31",
+      "lineIndex": 116
+    },
+    {
+      "start": 494.452,
+      "end": 497.006,
+      "type": "line",
+      "text": "neither on the north, nor on the south,",
+      "verse": "1:31",
+      "lineIndex": 117
+    },
+    {
+      "start": 497.186,
+      "end": 499.601,
+      "type": "line",
+      "text": "nor on the east, nor on the west,",
+      "verse": "1:31",
+      "lineIndex": 118
+    },
+    {
+      "start": 499.781,
+      "end": 503.125,
+      "type": "line",
+      "text": "for they were surrounded on every hand by the Nephites.",
+      "verse": "1:31",
+      "lineIndex": 119
+    },
+    {
+      "start": 503.805,
+      "end": 513.372,
+      "type": "line",
+      "text": "And thus had Coriantumr plunged the Lamanites into the midst of the Nephites, insomuch that they were in the power of the Nephites",
+      "verse": "1:32",
+      "lineIndex": 120
+    },
+    {
+      "start": 513.552,
+      "end": 515.317,
+      "type": "line",
+      "text": "and he himself was slain,",
+      "verse": "1:32",
+      "lineIndex": 121
+    },
+    {
+      "start": 515.497,
+      "end": 520.791,
+      "type": "line",
+      "text": "and the Lamanites did yield themselves into the hands of the Nephites.",
+      "verse": "1:32",
+      "lineIndex": 122
+    },
+    {
+      "start": 521.471,
+      "end": 526.347,
+      "type": "line",
+      "text": "And it came to pass that Moronihah took possession of the city of Zarahemla again,",
+      "verse": "1:33",
+      "lineIndex": 123
+    },
+    {
+      "start": 526.527,
+      "end": 530.474,
+      "type": "line",
+      "text": "and caused that the Lamanites who had been taken prisoners",
+      "verse": "1:33",
+      "lineIndex": 124
+    },
+    {
+      "start": 530.654,
+      "end": 533.208,
+      "type": "line",
+      "text": "should depart out of the land in peace.",
+      "verse": "1:33",
+      "lineIndex": 125
+    },
+    {
+      "start": 533.888,
+      "end": 538.393,
+      "type": "line",
+      "text": "And thus ended the forty and first year of the reign of the judges.",
+      "verse": "1:34",
+      "lineIndex": 126
+    }
+  ]
+}
