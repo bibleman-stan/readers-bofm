@@ -480,7 +480,7 @@ if __name__ == '__main__':
     base_path = Path(__file__).resolve().parent
 
     hardy_data_file = base_path / 'data' / 'hardy_biblical_references.json'
-    scripture_file = base_path / 'data' / 'lds-scriptures.txt'
+    scripture_file = base_path / 'data' / 'text-files' / 'lds-scriptures.txt'
     output_file = base_path / 'data' / 'hardy_phrase_index.json'
 
     build_phrase_index(hardy_data_file, scripture_file, output_file)

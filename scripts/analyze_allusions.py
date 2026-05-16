@@ -26,7 +26,7 @@ def load_hardy_references():
 def load_kjv_text():
     """Load KJV Bible text from lds-scriptures.txt"""
     kjv = {}
-    with open(DATA_DIR / 'lds-scriptures.txt', 'r', encoding='utf-8') as f:
+    with open(DATA_DIR / 'text-files' / 'lds-scriptures.txt', 'r', encoding='utf-8') as f:
         for line in f:
             # Don't strip - need to preserve the spacing pattern
             line = line.rstrip('\r\n')

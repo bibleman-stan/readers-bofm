@@ -331,7 +331,7 @@ def build_kjv_diff_index(scriptures):
 
 def main():
     print("Parsing lds-scriptures.txt...")
-    scriptures = parse_scripture_file('data/lds-scriptures.txt')
+    scriptures = parse_scripture_file('data/text-files/lds-scriptures.txt')
     print(f"Loaded {len(scriptures)} scripture verses")
 
     print("Building KJV diff index...")

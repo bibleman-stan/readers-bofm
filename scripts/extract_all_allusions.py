@@ -57,7 +57,7 @@ def load_lds_scriptures() -> Tuple[Dict[str, Dict[int, Dict[int, str]]], Dict[st
     kjv = defaultdict(lambda: defaultdict(dict))
     bom = defaultdict(lambda: defaultdict(dict))
 
-    with open('data/lds-scriptures.txt', 'r') as f:
+    with open('data/text-files/lds-scriptures.txt', 'r') as f:
         for line in f:
             line = line.rstrip('\n')
             if not line or line.isspace():

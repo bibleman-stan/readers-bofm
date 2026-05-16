@@ -53,7 +53,7 @@ BOM_BOOK_ORDER = [
 def load_lds_scriptures():
     """Load lds-scriptures.txt into a dict {(book, chapter, verse): text}."""
     scriptures = {}
-    with open('data/lds-scriptures.txt', 'r', encoding='utf-8') as f:
+    with open('data/text-files/lds-scriptures.txt', 'r', encoding='utf-8') as f:
         for line in f:
             line = line.rstrip('\r\n')
             if not line:
