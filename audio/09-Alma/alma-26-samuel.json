@@ -1,0 +1,1520 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 26,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 616.983,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.226,
+      "type": "line",
+      "text": "And now, these are the words of Ammon to his brethren, which say thus:",
+      "verse": "26:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.406,
+      "end": 6.542,
+      "type": "line",
+      "text": "My brothers and my brethren,",
+      "verse": "26:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.722,
+      "end": 8.44,
+      "type": "line",
+      "text": "behold I say unto you,",
+      "verse": "26:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 8.62,
+      "end": 10.849,
+      "type": "line",
+      "text": "how great reason have we to rejoice;",
+      "verse": "26:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 11.029,
+      "end": 19.62,
+      "type": "line",
+      "text": "for could we have supposed when we started from the land of Zarahemla that God would have granted unto us such great blessings?",
+      "verse": "26:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 20.3,
+      "end": 21.693,
+      "type": "line",
+      "text": "And now, I ask,",
+      "verse": "26:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 21.873,
+      "end": 24.567,
+      "type": "line",
+      "text": "what great blessings has he bestowed upon us?",
+      "verse": "26:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 24.747,
+      "end": 25.815,
+      "type": "line",
+      "text": "Can ye tell?",
+      "verse": "26:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 26.495,
+      "end": 28.306,
+      "type": "line",
+      "text": "Behold, I answer for you;",
+      "verse": "26:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 28.486,
+      "end": 34.57,
+      "type": "line",
+      "text": "for our brethren, the Lamanites, were in darkness, yea, even in the darkest abyss,",
+      "verse": "26:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 34.75,
+      "end": 37.211,
+      "type": "line",
+      "text": "but behold, how many of them",
+      "verse": "26:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 37.391,
+      "end": 40.456,
+      "type": "line",
+      "text": "are brought to behold the marvelous light of God!",
+      "verse": "26:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 40.636,
+      "end": 43.887,
+      "type": "line",
+      "text": "And this is the blessing which hath been bestowed upon us,",
+      "verse": "26:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 44.067,
+      "end": 49.175,
+      "type": "line",
+      "text": "that we have been made instruments in the hands of God to bring about this great work.",
+      "verse": "26:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 49.855,
+      "end": 52.223,
+      "type": "line",
+      "text": "Behold, thousands of them do rejoice,",
+      "verse": "26:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 52.403,
+      "end": 55.004,
+      "type": "line",
+      "text": "and have been brought into the fold of God.",
+      "verse": "26:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 55.684,
+      "end": 58.563,
+      "type": "line",
+      "text": "Behold, the field was ripe, and blessed are ye,",
+      "verse": "26:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 58.743,
+      "end": 61.019,
+      "type": "line",
+      "text": "for ye did thrust in the sickle,",
+      "verse": "26:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 61.199,
+      "end": 63.382,
+      "type": "line",
+      "text": "and did reap with your might,",
+      "verse": "26:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 63.562,
+      "end": 65.605,
+      "type": "line",
+      "text": "yea, all the day long did ye labor;",
+      "verse": "26:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 65.785,
+      "end": 68.061,
+      "type": "line",
+      "text": "and behold the number of your sheaves!",
+      "verse": "26:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 68.241,
+      "end": 69.866,
+      "type": "line",
+      "text": "And they shall be gathered",
+      "verse": "26:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 70.046,
+      "end": 73.111,
+      "type": "line",
+      "text": "into the garners, that they are not wasted.",
+      "verse": "26:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 73.791,
+      "end": 77.413,
+      "type": "line",
+      "text": "Yea, they shall not be beaten down by the storm at the last day;",
+      "verse": "26:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 77.593,
+      "end": 81.262,
+      "type": "line",
+      "text": "yea, neither shall they be harrowed up by the whirlwinds;",
+      "verse": "26:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 81.442,
+      "end": 85.807,
+      "type": "line",
+      "text": "but when the storm cometh they shall be gathered together in their place,",
+      "verse": "26:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 85.987,
+      "end": 88.402,
+      "type": "line",
+      "text": "that the storm cannot penetrate to them;",
+      "verse": "26:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 88.582,
+      "end": 91.74,
+      "type": "line",
+      "text": "yea, neither shall they be driven with fierce winds",
+      "verse": "26:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 91.92,
+      "end": 94.846,
+      "type": "line",
+      "text": "whithersoever the enemy listeth to carry them.",
+      "verse": "26:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 95.526,
+      "end": 98.963,
+      "type": "line",
+      "text": "But behold, they are in the hands of the Lord of the harvest,",
+      "verse": "26:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 99.143,
+      "end": 100.676,
+      "type": "line",
+      "text": "and they are his;",
+      "verse": "26:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 100.856,
+      "end": 102.806,
+      "type": "line",
+      "text": "and he will raise them up at the last day.",
+      "verse": "26:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 103.486,
+      "end": 105.715,
+      "type": "line",
+      "text": "Blessed be the name of our God;",
+      "verse": "26:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 105.895,
+      "end": 107.753,
+      "type": "line",
+      "text": "let us sing to his praise,",
+      "verse": "26:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 107.933,
+      "end": 110.394,
+      "type": "line",
+      "text": "yea, let us give thanks to his holy name,",
+      "verse": "26:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 110.574,
+      "end": 112.803,
+      "type": "line",
+      "text": "for he doth work righteousness forever.",
+      "verse": "26:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 113.483,
+      "end": 116.873,
+      "type": "line",
+      "text": "For if we had not come up out of the land of Zarahemla,",
+      "verse": "26:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 117.053,
+      "end": 119.793,
+      "type": "line",
+      "text": "these our dearly beloved brethren,",
+      "verse": "26:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 119.973,
+      "end": 122.481,
+      "type": "line",
+      "text": "who have so dearly beloved us,",
+      "verse": "26:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 122.661,
+      "end": 125.865,
+      "type": "line",
+      "text": "would still have been racked with hatred against us,",
+      "verse": "26:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 126.045,
+      "end": 129.249,
+      "type": "line",
+      "text": "yea, and they would also have been strangers to God.",
+      "verse": "26:9",
+      "lineIndex": 41
+    },
+    {
+      "start": 129.929,
+      "end": 133.18,
+      "type": "line",
+      "text": "And it came to pass that when Ammon had said these words,",
+      "verse": "26:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 133.36,
+      "end": 135.914,
+      "type": "line",
+      "text": "his brother Aaron rebuked him, saying:",
+      "verse": "26:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 136.094,
+      "end": 140.088,
+      "type": "line",
+      "text": "Ammon, I fear that thy joy doth carry thee away unto boasting.",
+      "verse": "26:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 140.768,
+      "end": 142.579,
+      "type": "line",
+      "text": "But Ammon said unto him:",
+      "verse": "26:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 142.759,
+      "end": 145.22,
+      "type": "line",
+      "text": "I do not boast in my own strength",
+      "verse": "26:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 145.4,
+      "end": 148.837,
+      "type": "line",
+      "text": "nor in my own wisdom; but behold, my joy is full,",
+      "verse": "26:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 149.017,
+      "end": 151.432,
+      "type": "line",
+      "text": "yea, my heart is brim with joy,",
+      "verse": "26:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 151.612,
+      "end": 153.516,
+      "type": "line",
+      "text": "and I will rejoice in my God.",
+      "verse": "26:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 154.196,
+      "end": 156.286,
+      "type": "line",
+      "text": "Yea, I know that I am nothing;",
+      "verse": "26:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 156.466,
+      "end": 158.509,
+      "type": "line",
+      "text": "as to my strength I am weak;",
+      "verse": "26:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 158.689,
+      "end": 161.057,
+      "type": "line",
+      "text": "therefore I will not boast of myself,",
+      "verse": "26:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 161.237,
+      "end": 163.141,
+      "type": "line",
+      "text": "but I will boast of my God,",
+      "verse": "26:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 163.321,
+      "end": 166.247,
+      "type": "line",
+      "text": "for in his strength I can do all things;",
+      "verse": "26:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 166.427,
+      "end": 170.978,
+      "type": "line",
+      "text": "yea, behold, many mighty miracles we have wrought in this land,",
+      "verse": "26:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 171.158,
+      "end": 173.759,
+      "type": "line",
+      "text": "for which we will praise his name forever.",
+      "verse": "26:12",
+      "lineIndex": 56
+    },
+    {
+      "start": 174.439,
+      "end": 178.758,
+      "type": "line",
+      "text": "Behold, how many thousands of our brethren has he loosed from the pains of hell;",
+      "verse": "26:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 178.938,
+      "end": 181.492,
+      "type": "line",
+      "text": "and they are brought to sing redeeming love,",
+      "verse": "26:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 181.672,
+      "end": 185.155,
+      "type": "line",
+      "text": "and this because of the power of his word which is in us,",
+      "verse": "26:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 185.335,
+      "end": 188.075,
+      "type": "line",
+      "text": "therefore have we not great reason to rejoice?",
+      "verse": "26:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 188.755,
+      "end": 191.123,
+      "type": "line",
+      "text": "Yea, we have reason to praise him forever,",
+      "verse": "26:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 191.303,
+      "end": 193.161,
+      "type": "line",
+      "text": "for he is the Most High God,",
+      "verse": "26:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 193.341,
+      "end": 196.36,
+      "type": "line",
+      "text": "and has loosed our brethren from the chains of hell.",
+      "verse": "26:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 197.04,
+      "end": 201.591,
+      "type": "line",
+      "text": "Yea, they were encircled about with everlasting darkness and destruction;",
+      "verse": "26:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 201.771,
+      "end": 205.533,
+      "type": "line",
+      "text": "but behold, he has brought them into his everlasting light,",
+      "verse": "26:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 205.713,
+      "end": 208.081,
+      "type": "line",
+      "text": "yea, into everlasting salvation;",
+      "verse": "26:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 208.261,
+      "end": 212.812,
+      "type": "line",
+      "text": "and they are encircled about with the matchless bounty of his love;",
+      "verse": "26:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 212.992,
+      "end": 217.961,
+      "type": "line",
+      "text": "yea, and we have been instruments in his hands of doing this great and marvelous work.",
+      "verse": "26:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 218.641,
+      "end": 220.452,
+      "type": "line",
+      "text": "Therefore, let us glory,",
+      "verse": "26:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 220.632,
+      "end": 222.629,
+      "type": "line",
+      "text": "yea, we will glory in the Lord;",
+      "verse": "26:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 222.809,
+      "end": 225.595,
+      "type": "line",
+      "text": "yea, we will rejoice, for our joy is full;",
+      "verse": "26:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 225.775,
+      "end": 228.097,
+      "type": "line",
+      "text": "yea, we will praise our God forever.",
+      "verse": "26:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 228.277,
+      "end": 231.063,
+      "type": "line",
+      "text": "Behold, who can glory too much in the Lord?",
+      "verse": "26:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 231.243,
+      "end": 237.745,
+      "type": "line",
+      "text": "Yea, who can say too much of his great power, and of his mercy, and of his long-suffering towards the children of men?",
+      "verse": "26:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 237.925,
+      "end": 239.597,
+      "type": "line",
+      "text": "Behold, I say unto you,",
+      "verse": "26:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 239.777,
+      "end": 242.238,
+      "type": "line",
+      "text": "I cannot say the smallest part which I feel.",
+      "verse": "26:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 242.918,
+      "end": 246.958,
+      "type": "line",
+      "text": "Who could have supposed that our God would have been so merciful",
+      "verse": "26:17",
+      "lineIndex": 78
+    },
+    {
+      "start": 247.138,
+      "end": 251.828,
+      "type": "line",
+      "text": "as to have snatched us from our awful, sinful, and polluted state?",
+      "verse": "26:17",
+      "lineIndex": 79
+    },
+    {
+      "start": 252.508,
+      "end": 257.291,
+      "type": "line",
+      "text": "Behold, we went forth even in wrath, with mighty threatenings to destroy his church.",
+      "verse": "26:18",
+      "lineIndex": 80
+    },
+    {
+      "start": 257.971,
+      "end": 261.5,
+      "type": "line",
+      "text": "Oh then, why did he not consign us to an awful destruction,",
+      "verse": "26:19",
+      "lineIndex": 81
+    },
+    {
+      "start": 261.68,
+      "end": 265.488,
+      "type": "line",
+      "text": "yea, why did he not let the sword of his justice fall upon us,",
+      "verse": "26:19",
+      "lineIndex": 82
+    },
+    {
+      "start": 265.668,
+      "end": 267.758,
+      "type": "line",
+      "text": "and doom us to eternal despair?",
+      "verse": "26:19",
+      "lineIndex": 83
+    },
+    {
+      "start": 268.438,
+      "end": 271.457,
+      "type": "line",
+      "text": "Oh, my soul, almost as it were, fleeth at the thought.",
+      "verse": "26:20",
+      "lineIndex": 84
+    },
+    {
+      "start": 271.637,
+      "end": 275.584,
+      "type": "line",
+      "text": "Behold, he did not exercise his justice upon us,",
+      "verse": "26:20",
+      "lineIndex": 85
+    },
+    {
+      "start": 275.764,
+      "end": 278.04,
+      "type": "line",
+      "text": "but in his great mercy hath brought us",
+      "verse": "26:20",
+      "lineIndex": 86
+    },
+    {
+      "start": 278.22,
+      "end": 283.886,
+      "type": "line",
+      "text": "over that everlasting gulf of death and misery, even to the salvation of our souls.",
+      "verse": "26:20",
+      "lineIndex": 87
+    },
+    {
+      "start": 284.566,
+      "end": 286.331,
+      "type": "line",
+      "text": "And now behold, my brethren,",
+      "verse": "26:21",
+      "lineIndex": 88
+    },
+    {
+      "start": 286.511,
+      "end": 290.04,
+      "type": "line",
+      "text": "what natural man is there that knoweth these things?",
+      "verse": "26:21",
+      "lineIndex": 89
+    },
+    {
+      "start": 290.22,
+      "end": 291.706,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "26:21",
+      "lineIndex": 90
+    },
+    {
+      "start": 291.886,
+      "end": 294.254,
+      "type": "line",
+      "text": "there is none that knoweth these things,",
+      "verse": "26:21",
+      "lineIndex": 91
+    },
+    {
+      "start": 294.434,
+      "end": 296.013,
+      "type": "line",
+      "text": "save it be the penitent.",
+      "verse": "26:21",
+      "lineIndex": 92
+    },
+    {
+      "start": 296.693,
+      "end": 298.226,
+      "type": "line",
+      "text": "Yea, he that repenteth",
+      "verse": "26:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 298.406,
+      "end": 300.124,
+      "type": "line",
+      "text": "and exerciseth faith,",
+      "verse": "26:22",
+      "lineIndex": 94
+    },
+    {
+      "start": 300.304,
+      "end": 302.58,
+      "type": "line",
+      "text": "and bringeth forth good works,",
+      "verse": "26:22",
+      "lineIndex": 95
+    },
+    {
+      "start": 302.76,
+      "end": 305.128,
+      "type": "line",
+      "text": "and prayeth continually without ceasing\u2014",
+      "verse": "26:22",
+      "lineIndex": 96
+    },
+    {
+      "start": 305.308,
+      "end": 308.884,
+      "type": "line",
+      "text": "unto such it is given to know the mysteries of God;",
+      "verse": "26:22",
+      "lineIndex": 97
+    },
+    {
+      "start": 309.064,
+      "end": 314.126,
+      "type": "line",
+      "text": "yea, unto such it shall be given to reveal things which never have been revealed;",
+      "verse": "26:22",
+      "lineIndex": 98
+    },
+    {
+      "start": 314.306,
+      "end": 319.461,
+      "type": "line",
+      "text": "yea, and it shall be given unto such to bring thousands of souls to repentance,",
+      "verse": "26:22",
+      "lineIndex": 99
+    },
+    {
+      "start": 319.641,
+      "end": 324.285,
+      "type": "line",
+      "text": "even as it has been given unto us to bring these our brethren to repentance.",
+      "verse": "26:22",
+      "lineIndex": 100
+    },
+    {
+      "start": 324.965,
+      "end": 327.008,
+      "type": "line",
+      "text": "Now do ye remember, my brethren,",
+      "verse": "26:23",
+      "lineIndex": 101
+    },
+    {
+      "start": 327.188,
+      "end": 330.81,
+      "type": "line",
+      "text": "that we said unto our brethren in the land of Zarahemla,",
+      "verse": "26:23",
+      "lineIndex": 102
+    },
+    {
+      "start": 330.99,
+      "end": 335.541,
+      "type": "line",
+      "text": "we go up to the land of Nephi, to preach unto our brethren, the Lamanites,",
+      "verse": "26:23",
+      "lineIndex": 103
+    },
+    {
+      "start": 335.721,
+      "end": 337.439,
+      "type": "line",
+      "text": "and they laughed us to scorn?",
+      "verse": "26:23",
+      "lineIndex": 104
+    },
+    {
+      "start": 338.119,
+      "end": 339.791,
+      "type": "line",
+      "text": "For they said unto us:",
+      "verse": "26:24",
+      "lineIndex": 105
+    },
+    {
+      "start": 339.971,
+      "end": 344.522,
+      "type": "line",
+      "text": "Do ye suppose that ye can bring the Lamanites to the knowledge of the truth?",
+      "verse": "26:24",
+      "lineIndex": 106
+    },
+    {
+      "start": 344.702,
+      "end": 351.9,
+      "type": "line",
+      "text": "Do ye suppose that ye can convince the Lamanites of the incorrectness of the traditions of their fathers,",
+      "verse": "26:24",
+      "lineIndex": 107
+    },
+    {
+      "start": 352.08,
+      "end": 354.588,
+      "type": "line",
+      "text": "as stiffnecked a people as they are;",
+      "verse": "26:24",
+      "lineIndex": 108
+    },
+    {
+      "start": 354.768,
+      "end": 357.833,
+      "type": "line",
+      "text": "whose hearts delight in the shedding of blood;",
+      "verse": "26:24",
+      "lineIndex": 109
+    },
+    {
+      "start": 358.013,
+      "end": 361.589,
+      "type": "line",
+      "text": "whose days have been spent in the grossest iniquity;",
+      "verse": "26:24",
+      "lineIndex": 110
+    },
+    {
+      "start": 361.769,
+      "end": 367.295,
+      "type": "line",
+      "text": "whose ways have been the ways of a transgressor from the beginning?",
+      "verse": "26:24",
+      "lineIndex": 111
+    },
+    {
+      "start": 367.475,
+      "end": 368.915,
+      "type": "line",
+      "text": "Now my brethren,",
+      "verse": "26:24",
+      "lineIndex": 112
+    },
+    {
+      "start": 369.095,
+      "end": 371.371,
+      "type": "line",
+      "text": "ye remember that this was their language.",
+      "verse": "26:24",
+      "lineIndex": 113
+    },
+    {
+      "start": 372.051,
+      "end": 373.63,
+      "type": "line",
+      "text": "And moreover they did say:",
+      "verse": "26:25",
+      "lineIndex": 114
+    },
+    {
+      "start": 373.81,
+      "end": 376.086,
+      "type": "line",
+      "text": "Let us take up arms against them,",
+      "verse": "26:25",
+      "lineIndex": 115
+    },
+    {
+      "start": 376.266,
+      "end": 379.981,
+      "type": "line",
+      "text": "that we destroy them and their iniquity out of the land,",
+      "verse": "26:25",
+      "lineIndex": 116
+    },
+    {
+      "start": 380.161,
+      "end": 382.669,
+      "type": "line",
+      "text": "lest they overrun us and destroy us.",
+      "verse": "26:25",
+      "lineIndex": 117
+    },
+    {
+      "start": 383.349,
+      "end": 387.761,
+      "type": "line",
+      "text": "But behold, my beloved brethren, we came into the wilderness",
+      "verse": "26:26",
+      "lineIndex": 119
+    },
+    {
+      "start": 387.941,
+      "end": 390.727,
+      "type": "line",
+      "text": "not with the intent to destroy our brethren,",
+      "verse": "26:26",
+      "lineIndex": 120
+    },
+    {
+      "start": 390.907,
+      "end": 395.876,
+      "type": "line",
+      "text": "but with the intent that perhaps we might save some few of their souls.",
+      "verse": "26:26",
+      "lineIndex": 121
+    },
+    {
+      "start": 396.556,
+      "end": 398.646,
+      "type": "line",
+      "text": "Now when our hearts were depressed,",
+      "verse": "26:27",
+      "lineIndex": 122
+    },
+    {
+      "start": 398.826,
+      "end": 400.962,
+      "type": "line",
+      "text": "and we were about to turn back,",
+      "verse": "26:27",
+      "lineIndex": 123
+    },
+    {
+      "start": 401.142,
+      "end": 403.65,
+      "type": "line",
+      "text": "behold, the Lord comforted us, and said:",
+      "verse": "26:27",
+      "lineIndex": 124
+    },
+    {
+      "start": 403.83,
+      "end": 406.291,
+      "type": "line",
+      "text": "Go amongst thy brethren, the Lamanites,",
+      "verse": "26:27",
+      "lineIndex": 125
+    },
+    {
+      "start": 406.471,
+      "end": 409.072,
+      "type": "line",
+      "text": "and bear with patience thine afflictions,",
+      "verse": "26:27",
+      "lineIndex": 126
+    },
+    {
+      "start": 409.252,
+      "end": 411.388,
+      "type": "line",
+      "text": "and I will give unto you success.",
+      "verse": "26:27",
+      "lineIndex": 127
+    },
+    {
+      "start": 412.068,
+      "end": 415.551,
+      "type": "line",
+      "text": "And now behold, we have come, and been forth amongst them;",
+      "verse": "26:28",
+      "lineIndex": 128
+    },
+    {
+      "start": 415.731,
+      "end": 418.517,
+      "type": "line",
+      "text": "and we have been patient in our sufferings,",
+      "verse": "26:28",
+      "lineIndex": 129
+    },
+    {
+      "start": 418.697,
+      "end": 421.158,
+      "type": "line",
+      "text": "and we have suffered every privation;",
+      "verse": "26:28",
+      "lineIndex": 130
+    },
+    {
+      "start": 421.338,
+      "end": 423.985,
+      "type": "line",
+      "text": "yea, we have traveled from house to house,",
+      "verse": "26:28",
+      "lineIndex": 131
+    },
+    {
+      "start": 424.165,
+      "end": 426.441,
+      "type": "line",
+      "text": "relying upon the mercies of the world\u2014",
+      "verse": "26:28",
+      "lineIndex": 132
+    },
+    {
+      "start": 426.621,
+      "end": 431.59,
+      "type": "line",
+      "text": "not upon the mercies of the world alone but upon the mercies of God.",
+      "verse": "26:28",
+      "lineIndex": 133
+    },
+    {
+      "start": 432.27,
+      "end": 434.685,
+      "type": "line",
+      "text": "And we have entered into their houses",
+      "verse": "26:29",
+      "lineIndex": 134
+    },
+    {
+      "start": 434.865,
+      "end": 436.258,
+      "type": "line",
+      "text": "and taught them,",
+      "verse": "26:29",
+      "lineIndex": 135
+    },
+    {
+      "start": 436.438,
+      "end": 438.853,
+      "type": "line",
+      "text": "and we have taught them in their streets;",
+      "verse": "26:29",
+      "lineIndex": 136
+    },
+    {
+      "start": 439.033,
+      "end": 441.68,
+      "type": "line",
+      "text": "yea, and we have taught them upon their hills;",
+      "verse": "26:29",
+      "lineIndex": 137
+    },
+    {
+      "start": 441.86,
+      "end": 447.108,
+      "type": "line",
+      "text": "and we have also entered into their temples and their synagogues and taught them;",
+      "verse": "26:29",
+      "lineIndex": 138
+    },
+    {
+      "start": 447.288,
+      "end": 449.192,
+      "type": "line",
+      "text": "and we have been cast out,",
+      "verse": "26:29",
+      "lineIndex": 139
+    },
+    {
+      "start": 449.372,
+      "end": 450.394,
+      "type": "line",
+      "text": "and mocked,",
+      "verse": "26:29",
+      "lineIndex": 140
+    },
+    {
+      "start": 450.574,
+      "end": 452.014,
+      "type": "line",
+      "text": "and spit upon,",
+      "verse": "26:29",
+      "lineIndex": 141
+    },
+    {
+      "start": 452.194,
+      "end": 454.052,
+      "type": "line",
+      "text": "and smote upon our cheeks;",
+      "verse": "26:29",
+      "lineIndex": 142
+    },
+    {
+      "start": 454.232,
+      "end": 455.857,
+      "type": "line",
+      "text": "and we have been stoned,",
+      "verse": "26:29",
+      "lineIndex": 143
+    },
+    {
+      "start": 456.037,
+      "end": 457.244,
+      "type": "line",
+      "text": "and taken",
+      "verse": "26:29",
+      "lineIndex": 144
+    },
+    {
+      "start": 457.424,
+      "end": 459.421,
+      "type": "line",
+      "text": "and bound with strong cords,",
+      "verse": "26:29",
+      "lineIndex": 145
+    },
+    {
+      "start": 459.601,
+      "end": 461.226,
+      "type": "line",
+      "text": "and cast into prison;",
+      "verse": "26:29",
+      "lineIndex": 146
+    },
+    {
+      "start": 461.406,
+      "end": 466.096,
+      "type": "line",
+      "text": "and through the power and wisdom of God we have been delivered again.",
+      "verse": "26:29",
+      "lineIndex": 147
+    },
+    {
+      "start": 466.776,
+      "end": 469.795,
+      "type": "line",
+      "text": "And we have suffered all manner of afflictions,",
+      "verse": "26:30",
+      "lineIndex": 148
+    },
+    {
+      "start": 469.975,
+      "end": 475.176,
+      "type": "line",
+      "text": "and all this, that perhaps we might be the means of saving some soul;",
+      "verse": "26:30",
+      "lineIndex": 149
+    },
+    {
+      "start": 475.356,
+      "end": 478.375,
+      "type": "line",
+      "text": "and we supposed that our joy would be full",
+      "verse": "26:30",
+      "lineIndex": 150
+    },
+    {
+      "start": 478.555,
+      "end": 481.481,
+      "type": "line",
+      "text": "if perhaps we could be the means of saving some.",
+      "verse": "26:30",
+      "lineIndex": 151
+    },
+    {
+      "start": 482.161,
+      "end": 487.641,
+      "type": "line",
+      "text": "Now behold, we can look forth and see the fruits of our labors; and are they few?",
+      "verse": "26:31",
+      "lineIndex": 152
+    },
+    {
+      "start": 487.821,
+      "end": 489.307,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "26:31",
+      "lineIndex": 153
+    },
+    {
+      "start": 489.487,
+      "end": 491.159,
+      "type": "line",
+      "text": "Nay, they are many;",
+      "verse": "26:31",
+      "lineIndex": 154
+    },
+    {
+      "start": 491.339,
+      "end": 498.816,
+      "type": "line",
+      "text": "yea, and we can witness of their sincerity, because of their love towards their brethren and also towards us.",
+      "verse": "26:31",
+      "lineIndex": 155
+    },
+    {
+      "start": 499.496,
+      "end": 502.654,
+      "type": "line",
+      "text": "For behold, they had rather sacrifice their lives",
+      "verse": "26:32",
+      "lineIndex": 156
+    },
+    {
+      "start": 502.834,
+      "end": 505.342,
+      "type": "line",
+      "text": "than even to take the life of their enemy;",
+      "verse": "26:32",
+      "lineIndex": 157
+    },
+    {
+      "start": 505.522,
+      "end": 512.07,
+      "type": "line",
+      "text": "and they have buried their weapons of war deep in the earth, because of their love towards their brethren.",
+      "verse": "26:32",
+      "lineIndex": 158
+    },
+    {
+      "start": 512.75,
+      "end": 514.793,
+      "type": "line",
+      "text": "And now behold I say unto you,",
+      "verse": "26:33",
+      "lineIndex": 159
+    },
+    {
+      "start": 514.973,
+      "end": 517.759,
+      "type": "line",
+      "text": "has there been so great love in all the land?",
+      "verse": "26:33",
+      "lineIndex": 160
+    },
+    {
+      "start": 517.939,
+      "end": 519.797,
+      "type": "line",
+      "text": "Behold, I say unto you, Nay,",
+      "verse": "26:33",
+      "lineIndex": 161
+    },
+    {
+      "start": 519.977,
+      "end": 522.903,
+      "type": "line",
+      "text": "there has not, even among the Nephites.",
+      "verse": "26:33",
+      "lineIndex": 162
+    },
+    {
+      "start": 523.583,
+      "end": 527.159,
+      "type": "line",
+      "text": "For behold, they would take up arms against their brethren;",
+      "verse": "26:34",
+      "lineIndex": 163
+    },
+    {
+      "start": 527.339,
+      "end": 529.986,
+      "type": "line",
+      "text": "they would not suffer themselves to be slain.",
+      "verse": "26:34",
+      "lineIndex": 164
+    },
+    {
+      "start": 530.166,
+      "end": 533.835,
+      "type": "line",
+      "text": "But behold how many of these have laid down their lives;",
+      "verse": "26:34",
+      "lineIndex": 165
+    },
+    {
+      "start": 534.015,
+      "end": 540.563,
+      "type": "line",
+      "text": "and we know that they have gone to their God, because of their love and of their hatred to sin.",
+      "verse": "26:34",
+      "lineIndex": 166
+    },
+    {
+      "start": 541.243,
+      "end": 543.426,
+      "type": "line",
+      "text": "Now have we not reason to rejoice?",
+      "verse": "26:35",
+      "lineIndex": 168
+    },
+    {
+      "start": 543.606,
+      "end": 545.092,
+      "type": "line",
+      "text": "Yea, I say unto you,",
+      "verse": "26:35",
+      "lineIndex": 169
+    },
+    {
+      "start": 545.272,
+      "end": 550.566,
+      "type": "line",
+      "text": "there never were men that had so great reason to rejoice as we, since the world began;",
+      "verse": "26:35",
+      "lineIndex": 170
+    },
+    {
+      "start": 550.746,
+      "end": 555.204,
+      "type": "line",
+      "text": "yea, and my joy is carried away, even unto boasting in my God;",
+      "verse": "26:35",
+      "lineIndex": 171
+    },
+    {
+      "start": 555.384,
+      "end": 559.053,
+      "type": "line",
+      "text": "for he has all power, all wisdom, and all understanding;",
+      "verse": "26:35",
+      "lineIndex": 172
+    },
+    {
+      "start": 559.233,
+      "end": 561.23,
+      "type": "line",
+      "text": "he comprehendeth all things,",
+      "verse": "26:35",
+      "lineIndex": 173
+    },
+    {
+      "start": 561.41,
+      "end": 564.661,
+      "type": "line",
+      "text": "and he is a merciful Being, even unto salvation,",
+      "verse": "26:35",
+      "lineIndex": 174
+    },
+    {
+      "start": 564.841,
+      "end": 567.813,
+      "type": "line",
+      "text": "to those who will repent and believe on his name.",
+      "verse": "26:35",
+      "lineIndex": 175
+    },
+    {
+      "start": 568.493,
+      "end": 571.512,
+      "type": "line",
+      "text": "Now if this is boasting, even so will I boast;",
+      "verse": "26:36",
+      "lineIndex": 176
+    },
+    {
+      "start": 571.692,
+      "end": 573.968,
+      "type": "line",
+      "text": "for this is my life and my light,",
+      "verse": "26:36",
+      "lineIndex": 177
+    },
+    {
+      "start": 574.148,
+      "end": 576.006,
+      "type": "line",
+      "text": "my joy and my salvation,",
+      "verse": "26:36",
+      "lineIndex": 178
+    },
+    {
+      "start": 576.186,
+      "end": 578.694,
+      "type": "line",
+      "text": "and my redemption from everlasting wo.",
+      "verse": "26:36",
+      "lineIndex": 179
+    },
+    {
+      "start": 578.874,
+      "end": 583.518,
+      "type": "line",
+      "text": "Yea, blessed is the name of my God, who has been mindful of this people,",
+      "verse": "26:36",
+      "lineIndex": 180
+    },
+    {
+      "start": 583.698,
+      "end": 586.066,
+      "type": "line",
+      "text": "who are a branch of the tree of Israel,",
+      "verse": "26:36",
+      "lineIndex": 181
+    },
+    {
+      "start": 586.246,
+      "end": 591.076,
+      "type": "line",
+      "text": "and has been lost from its body in a strange land; yea, I say,",
+      "verse": "26:36",
+      "lineIndex": 182
+    },
+    {
+      "start": 591.256,
+      "end": 597.061,
+      "type": "line",
+      "text": "blessed be the name of my God, who has been mindful of us, wanderers in a strange land.",
+      "verse": "26:36",
+      "lineIndex": 183
+    },
+    {
+      "start": 597.741,
+      "end": 601.131,
+      "type": "line",
+      "text": "Now my brethren, we see that God is mindful of every people,",
+      "verse": "26:37",
+      "lineIndex": 184
+    },
+    {
+      "start": 601.311,
+      "end": 603.401,
+      "type": "line",
+      "text": "whatsoever land they may be in;",
+      "verse": "26:37",
+      "lineIndex": 185
+    },
+    {
+      "start": 603.581,
+      "end": 605.392,
+      "type": "line",
+      "text": "yea, he numbereth his people,",
+      "verse": "26:37",
+      "lineIndex": 186
+    },
+    {
+      "start": 605.572,
+      "end": 608.591,
+      "type": "line",
+      "text": "and his bowels of mercy are over all the earth.",
+      "verse": "26:37",
+      "lineIndex": 187
+    },
+    {
+      "start": 608.771,
+      "end": 611.697,
+      "type": "line",
+      "text": "Now this is my joy, and my great thanksgiving;",
+      "verse": "26:37",
+      "lineIndex": 188
+    },
+    {
+      "start": 611.877,
+      "end": 615.314,
+      "type": "line",
+      "text": "yea, and I will give thanks unto my God forever.",
+      "verse": "26:37",
+      "lineIndex": 189
+    },
+    {
+      "start": 615.494,
+      "end": 616.33,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "26:37",
+      "lineIndex": 190
+    }
+  ]
+}
