@@ -1,0 +1,832 @@
+{
+  "book": "helaman",
+  "bookName": "Helaman",
+  "chapter": 4,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 419.357,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.926,
+      "type": "line",
+      "text": "And it came to pass in the fifty and fourth year",
+      "verse": "4:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.106,
+      "end": 6.31,
+      "type": "line",
+      "text": "there were many dissensions in the church,",
+      "verse": "4:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.49,
+      "end": 9.741,
+      "type": "line",
+      "text": "and there was also a contention among the people,",
+      "verse": "4:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.921,
+      "end": 12.429,
+      "type": "line",
+      "text": "insomuch that there was much bloodshed.",
+      "verse": "4:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 13.109,
+      "end": 16.731,
+      "type": "line",
+      "text": "And the rebellious part were slain and driven out of the land,",
+      "verse": "4:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 16.911,
+      "end": 19.883,
+      "type": "line",
+      "text": "and they did go unto the king of the Lamanites.",
+      "verse": "4:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 20.563,
+      "end": 28.226,
+      "type": "line",
+      "text": "And it came to pass that they did endeavor to stir up the Lamanites to war against the Nephites;",
+      "verse": "4:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 28.406,
+      "end": 32.028,
+      "type": "line",
+      "text": "but behold, the Lamanites were exceedingly afraid,",
+      "verse": "4:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 32.208,
+      "end": 37.177,
+      "type": "line",
+      "text": "insomuch that they would not hearken to the words of those dissenters.",
+      "verse": "4:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 37.857,
+      "end": 42.919,
+      "type": "line",
+      "text": "But it came to pass in the fifty and sixth year of the reign of the judges,",
+      "verse": "4:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 43.099,
+      "end": 47.882,
+      "type": "line",
+      "text": "there were dissenters who went up from the Nephites unto the Lamanites;",
+      "verse": "4:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 48.062,
+      "end": 53.635,
+      "type": "line",
+      "text": "and they succeeded with those others in stirring them up to anger against the Nephites;",
+      "verse": "4:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 53.815,
+      "end": 56.369,
+      "type": "line",
+      "text": "and they were all that year preparing for war.",
+      "verse": "4:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 57.049,
+      "end": 59.278,
+      "type": "line",
+      "text": "And in the fifty and seventh year",
+      "verse": "4:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 59.458,
+      "end": 62.569,
+      "type": "line",
+      "text": "they did come down against the Nephites to battle,",
+      "verse": "4:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 62.749,
+      "end": 65.117,
+      "type": "line",
+      "text": "and they did commence the work of death;",
+      "verse": "4:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 65.297,
+      "end": 70.359,
+      "type": "line",
+      "text": "yea, insomuch that in the fifty and eighth year of the reign of the judges",
+      "verse": "4:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 70.539,
+      "end": 74.347,
+      "type": "line",
+      "text": "they succeeded in obtaining possession of the land of Zarahemla;",
+      "verse": "4:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 74.527,
+      "end": 76.617,
+      "type": "line",
+      "text": "yea, and also all the lands,",
+      "verse": "4:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 76.797,
+      "end": 80.187,
+      "type": "line",
+      "text": "even unto the land which was near the land Bountiful.",
+      "verse": "4:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 80.867,
+      "end": 84.861,
+      "type": "line",
+      "text": "And the Nephites and the armies of Moronihah were driven",
+      "verse": "4:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 85.041,
+      "end": 87.409,
+      "type": "line",
+      "text": "even into the land of Bountiful;",
+      "verse": "4:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 88.089,
+      "end": 94.591,
+      "type": "line",
+      "text": "And there they did fortify against the Lamanites, from the west sea, even unto the east;",
+      "verse": "4:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 94.771,
+      "end": 97.418,
+      "type": "line",
+      "text": "it being a day's journey for a Nephite,",
+      "verse": "4:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 97.598,
+      "end": 103.403,
+      "type": "line",
+      "text": "on the line which they had fortified and stationed their armies to defend their north country.",
+      "verse": "4:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 104.083,
+      "end": 115.229,
+      "type": "line",
+      "text": "And thus those dissenters of the Nephites, with the help of a numerous army of the Lamanites, had obtained all the possession of the Nephites which was in the land southward.",
+      "verse": "4:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 115.409,
+      "end": 121.168,
+      "type": "line",
+      "text": "And all this was done in the fifty and eighth and ninth years of the reign of the judges.",
+      "verse": "4:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 121.848,
+      "end": 125.749,
+      "type": "line",
+      "text": "And it came to pass in the sixtieth year of the reign of the judges,",
+      "verse": "4:9",
+      "lineIndex": 28
+    },
+    {
+      "start": 125.929,
+      "end": 130.527,
+      "type": "line",
+      "text": "Moronihah did succeed with his armies in obtaining many parts of the land;",
+      "verse": "4:9",
+      "lineIndex": 29
+    },
+    {
+      "start": 130.707,
+      "end": 135.723,
+      "type": "line",
+      "text": "yea, they regained many cities which had fallen into the hands of the Lamanites.",
+      "verse": "4:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 136.403,
+      "end": 141.604,
+      "type": "line",
+      "text": "And it came to pass in the sixty and first year of the reign of the judges",
+      "verse": "4:10",
+      "lineIndex": 31
+    },
+    {
+      "start": 141.784,
+      "end": 146.149,
+      "type": "line",
+      "text": "they succeeded in regaining even the half of all their possessions.",
+      "verse": "4:10",
+      "lineIndex": 32
+    },
+    {
+      "start": 146.829,
+      "end": 149.012,
+      "type": "line",
+      "text": "Now this great loss of the Nephites,",
+      "verse": "4:11",
+      "lineIndex": 33
+    },
+    {
+      "start": 149.192,
+      "end": 153.65,
+      "type": "line",
+      "text": "and the great slaughter which was among them, would not have happened",
+      "verse": "4:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 153.83,
+      "end": 156.384,
+      "type": "line",
+      "text": "had it not been for their wickedness",
+      "verse": "4:11",
+      "lineIndex": 35
+    },
+    {
+      "start": 156.564,
+      "end": 159.211,
+      "type": "line",
+      "text": "and their abomination which was among them;",
+      "verse": "4:11",
+      "lineIndex": 36
+    },
+    {
+      "start": 159.391,
+      "end": 161.992,
+      "type": "line",
+      "text": "yea, and it was among those also",
+      "verse": "4:11",
+      "lineIndex": 37
+    },
+    {
+      "start": 162.172,
+      "end": 164.912,
+      "type": "line",
+      "text": "who professed to belong to the church of God.",
+      "verse": "4:11",
+      "lineIndex": 38
+    },
+    {
+      "start": 165.592,
+      "end": 170.793,
+      "type": "line",
+      "text": "And it was because of the pride of their hearts, because of their exceeding riches,",
+      "verse": "4:12",
+      "lineIndex": 40
+    },
+    {
+      "start": 170.973,
+      "end": 174.688,
+      "type": "line",
+      "text": "yea, it was because of their oppression to the poor,",
+      "verse": "4:12",
+      "lineIndex": 41
+    },
+    {
+      "start": 174.868,
+      "end": 177.236,
+      "type": "line",
+      "text": "withholding their food from the hungry,",
+      "verse": "4:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 177.416,
+      "end": 179.97,
+      "type": "line",
+      "text": "withholding their clothing from the naked,",
+      "verse": "4:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 180.15,
+      "end": 185.909,
+      "type": "line",
+      "text": "and smiting their humble brethren upon the cheek, making a mock of that which was sacred,",
+      "verse": "4:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 186.089,
+      "end": 189.572,
+      "type": "line",
+      "text": "denying the spirit of prophecy and of revelation,",
+      "verse": "4:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 189.752,
+      "end": 193.792,
+      "type": "line",
+      "text": "murdering, plundering, lying, stealing, committing adultery,",
+      "verse": "4:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 193.972,
+      "end": 196.248,
+      "type": "line",
+      "text": "rising up in great contentions,",
+      "verse": "4:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 196.428,
+      "end": 200.608,
+      "type": "line",
+      "text": "and deserting away into the land of Nephi, among the Lamanites\u2014",
+      "verse": "4:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 201.288,
+      "end": 203.935,
+      "type": "line",
+      "text": "And because of this their great wickedness,",
+      "verse": "4:13",
+      "lineIndex": 49
+    },
+    {
+      "start": 204.115,
+      "end": 206.53,
+      "type": "line",
+      "text": "and their boastings in their own strength,",
+      "verse": "4:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 206.71,
+      "end": 209.496,
+      "type": "line",
+      "text": "they were left in their own strength;",
+      "verse": "4:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 209.676,
+      "end": 211.812,
+      "type": "line",
+      "text": "therefore they did not prosper,",
+      "verse": "4:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 211.992,
+      "end": 213.617,
+      "type": "line",
+      "text": "but were afflicted",
+      "verse": "4:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 213.797,
+      "end": 215.004,
+      "type": "line",
+      "text": "and smitten,",
+      "verse": "4:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 215.184,
+      "end": 217.227,
+      "type": "line",
+      "text": "and driven before the Lamanites,",
+      "verse": "4:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 217.407,
+      "end": 220.658,
+      "type": "line",
+      "text": "until they had lost possession of almost all their lands.",
+      "verse": "4:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 221.338,
+      "end": 226.679,
+      "type": "line",
+      "text": "But behold, Moronihah did preach many things unto the people because of their iniquity,",
+      "verse": "4:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 226.859,
+      "end": 233.314,
+      "type": "line",
+      "text": "and also Nephi and Lehi, who were the sons of Helaman, did preach many things unto the people,",
+      "verse": "4:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 233.494,
+      "end": 238.788,
+      "type": "line",
+      "text": "yea, and did prophesy many things unto them concerning their iniquities,",
+      "verse": "4:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 238.968,
+      "end": 243.705,
+      "type": "line",
+      "text": "and what should come unto them if they did not repent of their sins.",
+      "verse": "4:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 244.385,
+      "end": 247.079,
+      "type": "line",
+      "text": "And it came to pass that they did repent,",
+      "verse": "4:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 247.259,
+      "end": 250.835,
+      "type": "line",
+      "text": "and inasmuch as they did repent they did begin to prosper.",
+      "verse": "4:15",
+      "lineIndex": 62
+    },
+    {
+      "start": 251.515,
+      "end": 254.209,
+      "type": "line",
+      "text": "For when Moronihah saw that they did repent",
+      "verse": "4:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 254.389,
+      "end": 260.055,
+      "type": "line",
+      "text": "he did venture to lead them forth from place to place, and from city to city,",
+      "verse": "4:16",
+      "lineIndex": 64
+    },
+    {
+      "start": 260.235,
+      "end": 263.579,
+      "type": "line",
+      "text": "even until they had regained the one-half of their property",
+      "verse": "4:16",
+      "lineIndex": 65
+    },
+    {
+      "start": 263.759,
+      "end": 266.406,
+      "type": "line",
+      "text": "and the one-half of all their lands.",
+      "verse": "4:16",
+      "lineIndex": 66
+    },
+    {
+      "start": 267.086,
+      "end": 271.591,
+      "type": "line",
+      "text": "And thus ended the sixty and first year of the reign of the judges.",
+      "verse": "4:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 272.271,
+      "end": 277.101,
+      "type": "line",
+      "text": "And it came to pass in the sixty and second year of the reign of the judges,",
+      "verse": "4:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 277.281,
+      "end": 282.111,
+      "type": "line",
+      "text": "that Moronihah could obtain no more possessions over the Lamanites.",
+      "verse": "4:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 282.791,
+      "end": 287.435,
+      "type": "line",
+      "text": "Therefore they did abandon their design to obtain the remainder of their lands,",
+      "verse": "4:19",
+      "lineIndex": 70
+    },
+    {
+      "start": 287.615,
+      "end": 290.309,
+      "type": "line",
+      "text": "for so numerous were the Lamanites",
+      "verse": "4:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 290.489,
+      "end": 295.179,
+      "type": "line",
+      "text": "that it became impossible for the Nephites to obtain more power over them;",
+      "verse": "4:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 295.359,
+      "end": 298.563,
+      "type": "line",
+      "text": "therefore Moronihah did employ all his armies",
+      "verse": "4:19",
+      "lineIndex": 73
+    },
+    {
+      "start": 298.743,
+      "end": 301.622,
+      "type": "line",
+      "text": "in maintaining those parts which he had taken.",
+      "verse": "4:19",
+      "lineIndex": 74
+    },
+    {
+      "start": 302.302,
+      "end": 307.921,
+      "type": "line",
+      "text": "And it came to pass, because of the greatness of the number of the Lamanites",
+      "verse": "4:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 308.101,
+      "end": 311.956,
+      "type": "line",
+      "text": "the Nephites were in great fear, lest they should be overpowered,",
+      "verse": "4:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 312.136,
+      "end": 313.715,
+      "type": "line",
+      "text": "and trodden down,",
+      "verse": "4:20",
+      "lineIndex": 77
+    },
+    {
+      "start": 313.895,
+      "end": 314.963,
+      "type": "line",
+      "text": "and slain,",
+      "verse": "4:20",
+      "lineIndex": 78
+    },
+    {
+      "start": 315.143,
+      "end": 316.536,
+      "type": "line",
+      "text": "and destroyed.",
+      "verse": "4:20",
+      "lineIndex": 79
+    },
+    {
+      "start": 317.216,
+      "end": 322.185,
+      "type": "line",
+      "text": "Yea, they began to remember the prophecies of Alma, and also the words of Mosiah;",
+      "verse": "4:21",
+      "lineIndex": 80
+    },
+    {
+      "start": 322.365,
+      "end": 325.848,
+      "type": "line",
+      "text": "and they saw that they had been a stiffnecked people,",
+      "verse": "4:21",
+      "lineIndex": 81
+    },
+    {
+      "start": 326.028,
+      "end": 329.372,
+      "type": "line",
+      "text": "and that they had set at naught the commandments of God;",
+      "verse": "4:21",
+      "lineIndex": 82
+    },
+    {
+      "start": 330.052,
+      "end": 338.551,
+      "type": "line",
+      "text": "And that they had altered and trampled under their feet the laws of Mosiah, or that which the Lord commanded him to give unto the people;",
+      "verse": "4:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 338.731,
+      "end": 341.935,
+      "type": "line",
+      "text": "and they saw that their laws had become corrupted,",
+      "verse": "4:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 342.115,
+      "end": 348.756,
+      "type": "line",
+      "text": "and that they had become a wicked people, insomuch that they were wicked even like unto the Lamanites.",
+      "verse": "4:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 349.436,
+      "end": 354.08,
+      "type": "line",
+      "text": "And because of their iniquity the church had begun to dwindle;",
+      "verse": "4:23",
+      "lineIndex": 86
+    },
+    {
+      "start": 354.26,
+      "end": 357.511,
+      "type": "line",
+      "text": "and they began to disbelieve in the spirit of prophecy",
+      "verse": "4:23",
+      "lineIndex": 87
+    },
+    {
+      "start": 357.691,
+      "end": 359.781,
+      "type": "line",
+      "text": "and in the spirit of revelation;",
+      "verse": "4:23",
+      "lineIndex": 88
+    },
+    {
+      "start": 359.961,
+      "end": 363.258,
+      "type": "line",
+      "text": "and the judgments of God did stare them in the face.",
+      "verse": "4:23",
+      "lineIndex": 89
+    },
+    {
+      "start": 363.938,
+      "end": 366.678,
+      "type": "line",
+      "text": "And they saw that they had become weak,",
+      "verse": "4:24",
+      "lineIndex": 90
+    },
+    {
+      "start": 366.858,
+      "end": 369.552,
+      "type": "line",
+      "text": "like unto their brethren, the Lamanites,",
+      "verse": "4:24",
+      "lineIndex": 91
+    },
+    {
+      "start": 369.732,
+      "end": 373.122,
+      "type": "line",
+      "text": "and that the Spirit of the Lord did no more preserve them;",
+      "verse": "4:24",
+      "lineIndex": 92
+    },
+    {
+      "start": 373.302,
+      "end": 375.81,
+      "type": "line",
+      "text": "yea, it had withdrawn from them",
+      "verse": "4:24",
+      "lineIndex": 93
+    },
+    {
+      "start": 375.99,
+      "end": 379.612,
+      "type": "line",
+      "text": "because the Spirit of the Lord doth not dwell in unholy temples\u2014",
+      "verse": "4:24",
+      "lineIndex": 94
+    },
+    {
+      "start": 380.292,
+      "end": 386.051,
+      "type": "line",
+      "text": "Therefore the Lord did cease to preserve them by his miraculous and matchless power,",
+      "verse": "4:25",
+      "lineIndex": 95
+    },
+    {
+      "start": 386.231,
+      "end": 390.968,
+      "type": "line",
+      "text": "for they had fallen into a state of unbelief and awful wickedness;",
+      "verse": "4:25",
+      "lineIndex": 96
+    },
+    {
+      "start": 391.148,
+      "end": 396.21,
+      "type": "line",
+      "text": "and they saw that the Lamanites were exceedingly more numerous than they,",
+      "verse": "4:25",
+      "lineIndex": 97
+    },
+    {
+      "start": 396.39,
+      "end": 401.498,
+      "type": "line",
+      "text": "and except they should cleave unto the Lord their God they must unavoidably perish.",
+      "verse": "4:25",
+      "lineIndex": 98
+    },
+    {
+      "start": 402.178,
+      "end": 405.522,
+      "type": "line",
+      "text": "For behold, they saw that the strength of the Lamanites",
+      "verse": "4:26",
+      "lineIndex": 99
+    },
+    {
+      "start": 405.702,
+      "end": 408.721,
+      "type": "line",
+      "text": "was as great as their strength, even man for man.",
+      "verse": "4:26",
+      "lineIndex": 100
+    },
+    {
+      "start": 408.901,
+      "end": 412.198,
+      "type": "line",
+      "text": "And thus had they fallen into this great transgression;",
+      "verse": "4:26",
+      "lineIndex": 101
+    },
+    {
+      "start": 412.378,
+      "end": 418.694,
+      "type": "line",
+      "text": "yea, thus had they become weak, because of their transgression, in the space of not many years.",
+      "verse": "4:26",
+      "lineIndex": 102
+    }
+  ]
+}
