@@ -1820,6 +1820,51 @@
     color: #444;
   }
 
+  /* Corpus filter chips — narrow search to a structural division.
+     Mirrors gnt-reader's .corpus-chip styling for family consistency. */
+  .corpus-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 2px 14px 8px;
+  }
+  .corpus-chip {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.06);
+    color: #999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .corpus-chip:hover {
+    background: rgba(255,255,255,0.10);
+    color: #ccc;
+  }
+  .corpus-chip.active {
+    background: rgba(124,175,194,0.20);
+    color: #7cafc2;
+    border-color: rgba(124,175,194,0.40);
+  }
+  body.light-mode .corpus-chip {
+    background: rgba(0,0,0,0.04);
+    color: #666;
+  }
+  body.light-mode .corpus-chip:hover {
+    background: rgba(0,0,0,0.10);
+    color: #333;
+  }
+  body.light-mode .corpus-chip.active {
+    background: rgba(80,120,140,0.18);
+    color: #3a7090;
+    border-color: rgba(80,120,140,0.40);
+  }
+
   #search-body {
     padding: 16px;
   }
@@ -4232,6 +4277,53 @@ async function flushAndReload() {
       match: function(v) { return (v.b === 12 && v.c >= 8) || v.b === 13 || v.b === 14; } },
   ];
 
+  // Corpus filter chips — Stan Option A 2026-05-16. Text-structural divisions,
+  // finer than the 3 chart-GROUPS above (which group search-result counts in
+  // the chart). Each chip narrows the search scope to its book set; multiple
+  // chips OR together. Books indexed per searchIndex.books order:
+  //   0=1ne 1=2ne 2=jacob 3=enos 4=jarom 5=omni 6=words-of-mormon
+  //   7=mosiah 8=alma 9=helaman 10=3nephi 11=4nephi
+  //   12=mormon 13=ether 14=moroni
+  var CORPUS_GROUPS = {
+    'small-plates':  [0,1,2,3,4,5,6],
+    'abridgment':    [7,8,9],
+    '3nephi':        [10],
+    '4nephi':        [11],
+    'mormon':        [12],
+    'ether':         [13],
+    'moroni':        [14],
+  };
+  var activeCorpusFilters = new Set();
+
+  window.toggleCorpusFilter = function(el) {
+    var key = el.dataset.corpus;
+    if (activeCorpusFilters.has(key)) {
+      activeCorpusFilters.delete(key);
+      el.classList.remove('active');
+    } else {
+      activeCorpusFilters.add(key);
+      el.classList.add('active');
+    }
+    // Corpus change resets active-book drill-down so user isn't stuck
+    // filtered to a book outside the now-allowed set.
+    activeBook = -1;
+    // Re-run search with current query (if any).
+    var input = document.getElementById('search-input');
+    if (input && input.value.trim().length >= 2) {
+      runSearch(input.value);
+    }
+  };
+
+  function getCorpusAllowedBookIdx() {
+    if (activeCorpusFilters.size === 0) return null; // null = no filter
+    var allowed = new Set();
+    activeCorpusFilters.forEach(function(key) {
+      var idxs = CORPUS_GROUPS[key];
+      if (idxs) idxs.forEach(function(i) { allowed.add(i); });
+    });
+    return allowed;
+  }
+
   function clearCharts() {
     document.getElementById('search-chart-groups').innerHTML = '';
     document.getElementById('search-chart-books').innerHTML = '';
@@ -4703,8 +4795,11 @@ async function flushAndReload() {
 
     var hits = [];
     var bookCounts = new Array(searchIndex.books.length).fill(0);
+    var corpusAllowed = getCorpusAllowedBookIdx(); // null = no filter
     for (var i = 0; i < searchIndex.verses.length; i++) {
       var v = searchIndex.verses[i];
+      // Corpus filter: skip verses not in any active filter group.
+      if (corpusAllowed && !corpusAllowed.has(v.b)) continue;
       var matched = false;
 
       if (wildcardData) {
@@ -5131,6 +5226,17 @@ async function flushAndReload() {
     <span class="search-op" onclick="insertSearchOp('(', ')')">( )</span>
     <span class="search-op" onclick="insertSearchOp('&quot;', '&quot;')">" "</span>
     <span class="search-op" onclick="insertSearchOp(' NEAR5 ')">NEAR</span>
+  </div>
+  <!-- Corpus filter chips (Stan Option A 2026-05-16). Tap to narrow search
+       scope; multiple chips OR together. -->
+  <div class="corpus-filters" id="corpus-filters">
+    <span class="corpus-chip" data-corpus="small-plates" onclick="toggleCorpusFilter(this)">Small Plates</span>
+    <span class="corpus-chip" data-corpus="abridgment"   onclick="toggleCorpusFilter(this)">Mormon's Abridgment</span>
+    <span class="corpus-chip" data-corpus="3nephi"       onclick="toggleCorpusFilter(this)">3 Nephi</span>
+    <span class="corpus-chip" data-corpus="4nephi"       onclick="toggleCorpusFilter(this)">4 Nephi</span>
+    <span class="corpus-chip" data-corpus="mormon"       onclick="toggleCorpusFilter(this)">Mormon</span>
+    <span class="corpus-chip" data-corpus="ether"        onclick="toggleCorpusFilter(this)">Ether</span>
+    <span class="corpus-chip" data-corpus="moroni"       onclick="toggleCorpusFilter(this)">Moroni</span>
   </div>
   <div id="search-body">
     <div id="search-count"></div>
