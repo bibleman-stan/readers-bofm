@@ -1,0 +1,960 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 27,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 461.758,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 12.632,
+      "type": "line",
+      "text": "Now it came to pass that when those Lamanites who had gone to war against the Nephites had found, after their many struggles to destroy them, that it was in vain to seek their destruction,",
+      "verse": "27:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 12.812,
+      "end": 15.227,
+      "type": "line",
+      "text": "they returned again to the land of Nephi.",
+      "verse": "27:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 15.907,
+      "end": 21.48,
+      "type": "line",
+      "text": "And it came to pass that the Amalekites, because of their loss, were exceedingly angry.",
+      "verse": "27:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 21.66,
+      "end": 26.072,
+      "type": "line",
+      "text": "And when they saw that they could not seek revenge from the Nephites,",
+      "verse": "27:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 26.252,
+      "end": 32.661,
+      "type": "line",
+      "text": "they began to stir up the people in anger against their brethren, the people of Anti-Nephi-Lehi;",
+      "verse": "27:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 32.841,
+      "end": 35.442,
+      "type": "line",
+      "text": "therefore they began again to destroy them.",
+      "verse": "27:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 36.122,
+      "end": 39.141,
+      "type": "line",
+      "text": "Now this people again refused to take their arms,",
+      "verse": "27:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 39.321,
+      "end": 44.011,
+      "type": "line",
+      "text": "and they suffered themselves to be slain according to the desires of their enemies.",
+      "verse": "27:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 44.691,
+      "end": 51.936,
+      "type": "line",
+      "text": "Now when Ammon and his brethren saw this work of destruction among those whom they so dearly beloved,",
+      "verse": "27:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 52.116,
+      "end": 55.135,
+      "type": "line",
+      "text": "and among those who had so dearly beloved them\u2014",
+      "verse": "27:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 55.315,
+      "end": 61.631,
+      "type": "line",
+      "text": "for they were treated as though they were angels sent from God to save them from everlasting destruction\u2014",
+      "verse": "27:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 61.811,
+      "end": 66.919,
+      "type": "line",
+      "text": "therefore, when Ammon and his brethren saw this great work of destruction,",
+      "verse": "27:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 67.099,
+      "end": 69.096,
+      "type": "line",
+      "text": "they were moved with compassion,",
+      "verse": "27:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 69.276,
+      "end": 71.087,
+      "type": "line",
+      "text": "and they said unto the king:",
+      "verse": "27:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 71.767,
+      "end": 74.507,
+      "type": "line",
+      "text": "Let us gather together this people of the Lord,",
+      "verse": "27:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 74.687,
+      "end": 79.935,
+      "type": "line",
+      "text": "and let us go down to the land of Zarahemla to our brethren the Nephites,",
+      "verse": "27:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 80.115,
+      "end": 83.134,
+      "type": "line",
+      "text": "and flee out of the hands of our enemies,",
+      "verse": "27:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 83.314,
+      "end": 84.754,
+      "type": "line",
+      "text": "that we be not destroyed.",
+      "verse": "27:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 85.434,
+      "end": 87.152,
+      "type": "line",
+      "text": "But the king said unto them:",
+      "verse": "27:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 87.332,
+      "end": 94.948,
+      "type": "line",
+      "text": "Behold, the Nephites will destroy us, because of the many murders and sins we have committed against them.",
+      "verse": "27:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 95.628,
+      "end": 97.068,
+      "type": "line",
+      "text": "And Ammon said:",
+      "verse": "27:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 97.248,
+      "end": 99.524,
+      "type": "line",
+      "text": "I will go and inquire of the Lord,",
+      "verse": "27:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 99.704,
+      "end": 103.233,
+      "type": "line",
+      "text": "and if he say unto us, go down unto our brethren, will ye go?",
+      "verse": "27:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 103.913,
+      "end": 105.91,
+      "type": "line",
+      "text": "And the king said unto him:",
+      "verse": "27:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 106.09,
+      "end": 110.362,
+      "type": "line",
+      "text": "Yea, if the Lord saith unto us go, we will go down unto our brethren,",
+      "verse": "27:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 110.542,
+      "end": 112.585,
+      "type": "line",
+      "text": "and we will be their slaves",
+      "verse": "27:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 112.765,
+      "end": 116.387,
+      "type": "line",
+      "text": "until we repair unto them the many murders and sins",
+      "verse": "27:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 116.567,
+      "end": 119.261,
+      "type": "line",
+      "text": "which we have committed against them.",
+      "verse": "27:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 119.941,
+      "end": 121.752,
+      "type": "line",
+      "text": "But Ammon said unto him:",
+      "verse": "27:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 121.932,
+      "end": 124.393,
+      "type": "line",
+      "text": "It is against the law of our brethren,",
+      "verse": "27:9",
+      "lineIndex": 31
+    },
+    {
+      "start": 124.573,
+      "end": 126.709,
+      "type": "line",
+      "text": "which was established by my father,",
+      "verse": "27:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 126.889,
+      "end": 129.815,
+      "type": "line",
+      "text": "that there should be any slaves among them;",
+      "verse": "27:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 129.995,
+      "end": 134.36,
+      "type": "line",
+      "text": "therefore let us go down and rely upon the mercies of our brethren.",
+      "verse": "27:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 135.04,
+      "end": 136.805,
+      "type": "line",
+      "text": "But the king said unto him:",
+      "verse": "27:10",
+      "lineIndex": 35
+    },
+    {
+      "start": 136.985,
+      "end": 138.564,
+      "type": "line",
+      "text": "Inquire of the Lord,",
+      "verse": "27:10",
+      "lineIndex": 36
+    },
+    {
+      "start": 138.744,
+      "end": 141.484,
+      "type": "line",
+      "text": "and if he saith unto us go, we will go;",
+      "verse": "27:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 141.664,
+      "end": 143.847,
+      "type": "line",
+      "text": "otherwise we will perish in the land.",
+      "verse": "27:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 144.527,
+      "end": 148.196,
+      "type": "line",
+      "text": "And it came to pass that Ammon went and inquired of the Lord,",
+      "verse": "27:11",
+      "lineIndex": 39
+    },
+    {
+      "start": 148.376,
+      "end": 150.28,
+      "type": "line",
+      "text": "and the Lord said unto him:",
+      "verse": "27:11",
+      "lineIndex": 40
+    },
+    {
+      "start": 150.96,
+      "end": 154.071,
+      "type": "line",
+      "text": "Get this people out of this land, that they perish not;",
+      "verse": "27:12",
+      "lineIndex": 42
+    },
+    {
+      "start": 154.251,
+      "end": 157.78,
+      "type": "line",
+      "text": "for Satan has great hold on the hearts of the Amalekites,",
+      "verse": "27:12",
+      "lineIndex": 43
+    },
+    {
+      "start": 157.96,
+      "end": 162.558,
+      "type": "line",
+      "text": "who do stir up the Lamanites to anger against their brethren to slay them;",
+      "verse": "27:12",
+      "lineIndex": 44
+    },
+    {
+      "start": 162.738,
+      "end": 164.921,
+      "type": "line",
+      "text": "therefore get thee out of this land;",
+      "verse": "27:12",
+      "lineIndex": 45
+    },
+    {
+      "start": 165.101,
+      "end": 167.98,
+      "type": "line",
+      "text": "and blessed are this people in this generation,",
+      "verse": "27:12",
+      "lineIndex": 46
+    },
+    {
+      "start": 168.16,
+      "end": 169.785,
+      "type": "line",
+      "text": "for I will preserve them.",
+      "verse": "27:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 170.465,
+      "end": 176.549,
+      "type": "line",
+      "text": "And now it came to pass that Ammon went and told the king all the words which the Lord had said unto him.",
+      "verse": "27:13",
+      "lineIndex": 48
+    },
+    {
+      "start": 177.229,
+      "end": 179.969,
+      "type": "line",
+      "text": "And they gathered together all their people,",
+      "verse": "27:14",
+      "lineIndex": 49
+    },
+    {
+      "start": 180.149,
+      "end": 182.007,
+      "type": "line",
+      "text": "yea, all the people of the Lord,",
+      "verse": "27:14",
+      "lineIndex": 50
+    },
+    {
+      "start": 182.187,
+      "end": 185.345,
+      "type": "line",
+      "text": "and did gather together all their flocks and herds,",
+      "verse": "27:14",
+      "lineIndex": 51
+    },
+    {
+      "start": 185.525,
+      "end": 187.568,
+      "type": "line",
+      "text": "and departed out of the land,",
+      "verse": "27:14",
+      "lineIndex": 52
+    },
+    {
+      "start": 187.748,
+      "end": 189.745,
+      "type": "line",
+      "text": "and came into the wilderness",
+      "verse": "27:14",
+      "lineIndex": 53
+    },
+    {
+      "start": 189.925,
+      "end": 193.872,
+      "type": "line",
+      "text": "which divided the land of Nephi from the land of Zarahemla,",
+      "verse": "27:14",
+      "lineIndex": 54
+    },
+    {
+      "start": 194.052,
+      "end": 196.792,
+      "type": "line",
+      "text": "and came over near the borders of the land.",
+      "verse": "27:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 197.472,
+      "end": 200.491,
+      "type": "line",
+      "text": "And it came to pass that Ammon said unto them:",
+      "verse": "27:15",
+      "lineIndex": 56
+    },
+    {
+      "start": 200.671,
+      "end": 204.386,
+      "type": "line",
+      "text": "Behold, I and my brethren will go forth into the land of Zarahemla,",
+      "verse": "27:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 204.566,
+      "end": 207.12,
+      "type": "line",
+      "text": "and ye shall remain here until we return;",
+      "verse": "27:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 207.3,
+      "end": 210.086,
+      "type": "line",
+      "text": "and we will try the hearts of our brethren,",
+      "verse": "27:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 210.266,
+      "end": 213.006,
+      "type": "line",
+      "text": "whether they will that ye shall come into their land.",
+      "verse": "27:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 213.686,
+      "end": 218.098,
+      "type": "line",
+      "text": "And it came to pass that as Ammon was going forth into the land,",
+      "verse": "27:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 218.278,
+      "end": 220.414,
+      "type": "line",
+      "text": "that he and his brethren met Alma,",
+      "verse": "27:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 220.594,
+      "end": 222.962,
+      "type": "line",
+      "text": "over in the place of which has been spoken;",
+      "verse": "27:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 223.142,
+      "end": 225.743,
+      "type": "line",
+      "text": "and behold, this was a joyful meeting.",
+      "verse": "27:16",
+      "lineIndex": 64
+    },
+    {
+      "start": 226.423,
+      "end": 229.813,
+      "type": "line",
+      "text": "Now the joy of Ammon was so great even that he was full;",
+      "verse": "27:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 229.993,
+      "end": 234.916,
+      "type": "line",
+      "text": "yea, he was swallowed up in the joy of his God, even to the exhausting of his strength;",
+      "verse": "27:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 235.096,
+      "end": 237.186,
+      "type": "line",
+      "text": "and he fell again to the earth.",
+      "verse": "27:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 237.866,
+      "end": 239.863,
+      "type": "line",
+      "text": "Now was not this exceeding joy?",
+      "verse": "27:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 240.043,
+      "end": 242.737,
+      "type": "line",
+      "text": "Behold, this is joy which none receiveth",
+      "verse": "27:18",
+      "lineIndex": 69
+    },
+    {
+      "start": 242.917,
+      "end": 247.236,
+      "type": "line",
+      "text": "save it be the truly penitent and humble seeker of happiness.",
+      "verse": "27:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 247.916,
+      "end": 256.275,
+      "type": "line",
+      "text": "Now the joy of Alma in meeting his brethren was truly great, and also the joy of Aaron, of Omner, and Himni;",
+      "verse": "27:19",
+      "lineIndex": 71
+    },
+    {
+      "start": 256.455,
+      "end": 259.659,
+      "type": "line",
+      "text": "but behold their joy was not that to exceed their strength.",
+      "verse": "27:19",
+      "lineIndex": 72
+    },
+    {
+      "start": 260.339,
+      "end": 263.636,
+      "type": "line",
+      "text": "And now it came to pass that Alma conducted his brethren",
+      "verse": "27:20",
+      "lineIndex": 74
+    },
+    {
+      "start": 263.816,
+      "end": 267.113,
+      "type": "line",
+      "text": "back to the land of Zarahemla; even to his own house.",
+      "verse": "27:20",
+      "lineIndex": 75
+    },
+    {
+      "start": 267.293,
+      "end": 277.556,
+      "type": "line",
+      "text": "And they went and told the chief judge all the things that had happened unto them in the land of Nephi, among their brethren, the Lamanites.",
+      "verse": "27:20",
+      "lineIndex": 76
+    },
+    {
+      "start": 278.236,
+      "end": 283.298,
+      "type": "line",
+      "text": "And it came to pass that the chief judge sent a proclamation throughout all the land,",
+      "verse": "27:21",
+      "lineIndex": 77
+    },
+    {
+      "start": 283.478,
+      "end": 287.704,
+      "type": "line",
+      "text": "desiring the voice of the people concerning the admitting their brethren,",
+      "verse": "27:21",
+      "lineIndex": 78
+    },
+    {
+      "start": 287.884,
+      "end": 290.438,
+      "type": "line",
+      "text": "who were the people of Anti-Nephi-Lehi.",
+      "verse": "27:21",
+      "lineIndex": 79
+    },
+    {
+      "start": 291.118,
+      "end": 294.833,
+      "type": "line",
+      "text": "And it came to pass that the voice of the people came, saying:",
+      "verse": "27:22",
+      "lineIndex": 80
+    },
+    {
+      "start": 295.013,
+      "end": 297.892,
+      "type": "line",
+      "text": "Behold, we will give up the land of Jershon,",
+      "verse": "27:22",
+      "lineIndex": 81
+    },
+    {
+      "start": 298.072,
+      "end": 300.58,
+      "type": "line",
+      "text": "which is on the east by the sea,",
+      "verse": "27:22",
+      "lineIndex": 82
+    },
+    {
+      "start": 300.76,
+      "end": 302.803,
+      "type": "line",
+      "text": "which joins the land Bountiful,",
+      "verse": "27:22",
+      "lineIndex": 83
+    },
+    {
+      "start": 302.983,
+      "end": 305.677,
+      "type": "line",
+      "text": "which is on the south of the land Bountiful;",
+      "verse": "27:22",
+      "lineIndex": 84
+    },
+    {
+      "start": 305.857,
+      "end": 307.622,
+      "type": "line",
+      "text": "and this land Jershon",
+      "verse": "27:22",
+      "lineIndex": 85
+    },
+    {
+      "start": 307.802,
+      "end": 312.539,
+      "type": "line",
+      "text": "is the land which we will give unto our brethren for an inheritance.",
+      "verse": "27:22",
+      "lineIndex": 86
+    },
+    {
+      "start": 313.219,
+      "end": 317.817,
+      "type": "line",
+      "text": "And behold, we will set our armies between the land Jershon and the land Nephi,",
+      "verse": "27:23",
+      "lineIndex": 88
+    },
+    {
+      "start": 317.997,
+      "end": 321.294,
+      "type": "line",
+      "text": "that we may protect our brethren in the land Jershon;",
+      "verse": "27:23",
+      "lineIndex": 89
+    },
+    {
+      "start": 321.474,
+      "end": 328.208,
+      "type": "line",
+      "text": "and this we do for our brethren, on account of their fear to take up arms against their brethren",
+      "verse": "27:23",
+      "lineIndex": 90
+    },
+    {
+      "start": 328.388,
+      "end": 330.199,
+      "type": "line",
+      "text": "lest they should commit sin;",
+      "verse": "27:23",
+      "lineIndex": 91
+    },
+    {
+      "start": 330.379,
+      "end": 334.373,
+      "type": "line",
+      "text": "and this their great fear came because of their sore repentance",
+      "verse": "27:23",
+      "lineIndex": 92
+    },
+    {
+      "start": 334.553,
+      "end": 339.383,
+      "type": "line",
+      "text": "which they had, on account of their many murders and their awful wickedness.",
+      "verse": "27:23",
+      "lineIndex": 93
+    },
+    {
+      "start": 340.063,
+      "end": 343.267,
+      "type": "line",
+      "text": "And now behold, this will we do unto our brethren,",
+      "verse": "27:24",
+      "lineIndex": 94
+    },
+    {
+      "start": 343.447,
+      "end": 346.466,
+      "type": "line",
+      "text": "that they may inherit the land Jershon;",
+      "verse": "27:24",
+      "lineIndex": 95
+    },
+    {
+      "start": 346.646,
+      "end": 349.943,
+      "type": "line",
+      "text": "and we will guard them from their enemies with our armies,",
+      "verse": "27:24",
+      "lineIndex": 96
+    },
+    {
+      "start": 350.123,
+      "end": 355.417,
+      "type": "line",
+      "text": "on condition that they will give us a portion of their substance to assist us",
+      "verse": "27:24",
+      "lineIndex": 97
+    },
+    {
+      "start": 355.597,
+      "end": 357.64,
+      "type": "line",
+      "text": "that we may maintain our armies.",
+      "verse": "27:24",
+      "lineIndex": 98
+    },
+    {
+      "start": 358.32,
+      "end": 364.961,
+      "type": "line",
+      "text": "Now, it came to pass that when Ammon had heard this, he returned to the people of Anti-Nephi-Lehi,",
+      "verse": "27:25",
+      "lineIndex": 99
+    },
+    {
+      "start": 365.141,
+      "end": 368.299,
+      "type": "line",
+      "text": "and also Alma with him, into the wilderness,",
+      "verse": "27:25",
+      "lineIndex": 100
+    },
+    {
+      "start": 368.479,
+      "end": 370.662,
+      "type": "line",
+      "text": "where they had pitched their tents,",
+      "verse": "27:25",
+      "lineIndex": 101
+    },
+    {
+      "start": 370.842,
+      "end": 373.443,
+      "type": "line",
+      "text": "and made known unto them all these things.",
+      "verse": "27:25",
+      "lineIndex": 102
+    },
+    {
+      "start": 373.623,
+      "end": 379.242,
+      "type": "line",
+      "text": "And Alma also related unto them his conversion, with Ammon and Aaron, and his brethren.",
+      "verse": "27:25",
+      "lineIndex": 103
+    },
+    {
+      "start": 379.922,
+      "end": 383.312,
+      "type": "line",
+      "text": "And it came to pass that it did cause great joy among them.",
+      "verse": "27:26",
+      "lineIndex": 104
+    },
+    {
+      "start": 383.492,
+      "end": 386.232,
+      "type": "line",
+      "text": "And they went down into the land of Jershon,",
+      "verse": "27:26",
+      "lineIndex": 105
+    },
+    {
+      "start": 386.412,
+      "end": 388.92,
+      "type": "line",
+      "text": "and took possession of the land of Jershon;",
+      "verse": "27:26",
+      "lineIndex": 106
+    },
+    {
+      "start": 389.1,
+      "end": 392.351,
+      "type": "line",
+      "text": "and they were called by the Nephites the people of Ammon;",
+      "verse": "27:26",
+      "lineIndex": 107
+    },
+    {
+      "start": 392.531,
+      "end": 395.782,
+      "type": "line",
+      "text": "therefore they were distinguished by that name ever after.",
+      "verse": "27:26",
+      "lineIndex": 108
+    },
+    {
+      "start": 396.462,
+      "end": 398.645,
+      "type": "line",
+      "text": "And they were among the people of Nephi,",
+      "verse": "27:27",
+      "lineIndex": 109
+    },
+    {
+      "start": 398.825,
+      "end": 403.562,
+      "type": "line",
+      "text": "and also numbered among the people who were of the church of God.",
+      "verse": "27:27",
+      "lineIndex": 110
+    },
+    {
+      "start": 403.742,
+      "end": 409.268,
+      "type": "line",
+      "text": "And they were also distinguished for their zeal towards God, and also towards men;",
+      "verse": "27:27",
+      "lineIndex": 111
+    },
+    {
+      "start": 409.448,
+      "end": 413.024,
+      "type": "line",
+      "text": "for they were perfectly honest and upright in all things;",
+      "verse": "27:27",
+      "lineIndex": 112
+    },
+    {
+      "start": 413.204,
+      "end": 416.641,
+      "type": "line",
+      "text": "and they were firm in the faith of Christ, even unto the end.",
+      "verse": "27:27",
+      "lineIndex": 113
+    },
+    {
+      "start": 417.321,
+      "end": 423.126,
+      "type": "line",
+      "text": "And they did look upon shedding the blood of their brethren with the greatest abhorrence;",
+      "verse": "27:28",
+      "lineIndex": 114
+    },
+    {
+      "start": 423.306,
+      "end": 428.972,
+      "type": "line",
+      "text": "and they never could be prevailed upon to take up arms against their brethren;",
+      "verse": "27:28",
+      "lineIndex": 115
+    },
+    {
+      "start": 429.152,
+      "end": 435.932,
+      "type": "line",
+      "text": "and they never did look upon death with any degree of terror, for their hope and views of Christ and the resurrection;",
+      "verse": "27:28",
+      "lineIndex": 116
+    },
+    {
+      "start": 436.112,
+      "end": 441.499,
+      "type": "line",
+      "text": "therefore, death was swallowed up to them by the victory of Christ over it.",
+      "verse": "27:28",
+      "lineIndex": 117
+    },
+    {
+      "start": 442.179,
+      "end": 450.724,
+      "type": "line",
+      "text": "Therefore, they would suffer death in the most aggravating and distressing manner which could be inflicted by their brethren,",
+      "verse": "27:29",
+      "lineIndex": 118
+    },
+    {
+      "start": 450.904,
+      "end": 454.851,
+      "type": "line",
+      "text": "before they would take the sword or cimeter to smite them.",
+      "verse": "27:29",
+      "lineIndex": 119
+    },
+    {
+      "start": 455.531,
+      "end": 458.317,
+      "type": "line",
+      "text": "And thus they were a zealous and beloved people,",
+      "verse": "27:30",
+      "lineIndex": 120
+    },
+    {
+      "start": 458.497,
+      "end": 461.098,
+      "type": "line",
+      "text": "a highly favored people of the Lord.",
+      "verse": "27:30",
+      "lineIndex": 121
+    }
+  ]
+}
