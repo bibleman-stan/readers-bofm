@@ -2242,28 +2242,15 @@
 <div class="sheet" id="sheet">
   <div class="sheet-handle-area"><div class="sheet-handle"></div></div>
 
+  <!-- Hidden state checkboxes for Modern + Listen. Their UI is now in the
+       topbar (Modern pill in row 2, Listen headphones icon in row 1).
+       The checkboxes themselves are the canonical state holders that
+       toggleAid() and narration.js's change-listener still depend on. -->
+  <input type="checkbox" id="aid-toggle" onchange="toggleAid()" style="display:none;">
+  <input type="checkbox" id="listen-toggle" style="display:none;">
+
   <div class="sheet-section">
     <div class="sheet-label">Reading</div>
-    <div class="toggle-row">
-      <div class="toggle-info">
-        <div class="toggle-name">Modern words</div>
-        <div class="toggle-desc">Replace archaic language</div>
-      </div>
-      <label class="toggle-switch">
-        <input type="checkbox" id="aid-toggle" onchange="toggleAid()">
-        <span class="toggle-track"></span>
-      </label>
-    </div>
-    <div class="toggle-row" id="listen-toggle-row">
-      <div class="toggle-info">
-        <div class="toggle-name">Listen</div>
-        <div class="toggle-desc">Audio narration</div>
-      </div>
-      <label class="toggle-switch">
-        <input type="checkbox" id="listen-toggle">
-        <span class="toggle-track"></span>
-      </label>
-    </div>
     <div class="toggle-row">
       <div class="toggle-info">
         <div class="toggle-name">Section headings</div>
