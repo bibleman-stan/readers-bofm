@@ -692,7 +692,7 @@ action: MERGE_FORWARD
 
 (b) **Compound-verb-under-shared-auxiliary extension (Layer 3).** When a modal+auxiliary cluster (e.g., *could have*, *would have*, *shall have*, *had*, *hath*, *have been*) scopes via ellipsis over two or more coordinated participles distributed across line boundaries, the line carrying the dangling coordinated participle MUST be merged with the line carrying its shared auxiliary, subject to the N=2 adjudication below. The coordinated participles form one compound predicate under one shared auxiliary; stranding a coordinated participle from its shared auxiliary is forbidden.
 
-**UD signatures.**
+**UD signature.**
 ```yaml
 trigger_simple_aux_v:
   relation: aux
@@ -977,7 +977,7 @@ AICTP_VARIANTS:  # inherited from R1
 
 **Rule.** A matrix verb's clausal complement MUST be on the same v2-mine line as the matrix verb when the verb's lemma belongs to one of the six closed verb classes (§Verb-Classes-R17) and the complement is marked by *that*, *whether*, *if*, a WH-word, or an infinitival *to*. Speech-class verbs additionally require their obligatory topic-PP complement (*of*/*concerning*/*unto*/*against*) on the same line. Experience verbs (`repent`, `partake`, `forgive`) require their obligatory *of*-PP complement on the same line.
 
-**UD signatures.**
+**UD signature.**
 ```yaml
 trigger_clausal:
   relation: [ccomp, xcomp]
@@ -1396,7 +1396,7 @@ The `STANDALONE_SENTENCE_CONNECTIVES` list captures discourse connectives that l
 
 **Scope.** Every v2-mine line is in scope. The rule operates after all generative split-triggers (Tier 5) and merge-overrides (Tier 4) have settled — it is a floor-check that catches lines produced by the upstream pipeline (or by hand-editing) that lack predicative content. The rule does NOT govern line content beyond anchor presence; lines with one or more anchors are not further constrained by R20.
 
-**Exemptions (closed list — each cites dominating rule or framework justification).**
+**Exclusions (closed list — each cites dominating rule or framework justification).**
 
 1. **Single-line verses** — verses whose v2-mine representation is exactly one line are atomic by definition and pass R20 regardless of internal anchor count. → out of scope
 2. **Speech-intro prefixes** — short colon-terminated or paratactically-introducing speech tags (e.g., bare *saying:*, *and he said:*) — the speech-act announcement IS the predication, even when the surface anchor is elided → J3
