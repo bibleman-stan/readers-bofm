@@ -1,0 +1,1456 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 60,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 643.14,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.74,
+      "type": "line",
+      "text": "And it came to pass that he wrote again",
+      "verse": "60:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 2.92,
+      "end": 6.171,
+      "type": "line",
+      "text": "to the governor of the land, who was Pahoran,",
+      "verse": "60:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.351,
+      "end": 9.416,
+      "type": "line",
+      "text": "and these are the words which he wrote, saying:",
+      "verse": "60:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 9.596,
+      "end": 13.961,
+      "type": "line",
+      "text": "Behold, I direct mine epistle to Pahoran, in the city of Zarahemla,",
+      "verse": "60:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 14.141,
+      "end": 18.181,
+      "type": "line",
+      "text": "who is the chief judge and the governor over the land,",
+      "verse": "60:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 18.361,
+      "end": 24.723,
+      "type": "line",
+      "text": "and also to all those who have been chosen by this people to govern and manage the affairs of this war.",
+      "verse": "60:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.403,
+      "end": 29.861,
+      "type": "line",
+      "text": "For behold, I have somewhat to say unto them by the way of condemnation;",
+      "verse": "60:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 30.041,
+      "end": 34.546,
+      "type": "line",
+      "text": "for behold, ye yourselves know that ye have been appointed to gather together men,",
+      "verse": "60:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 34.726,
+      "end": 37.791,
+      "type": "line",
+      "text": "and arm them with swords, and with cimeters,",
+      "verse": "60:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 37.971,
+      "end": 41.082,
+      "type": "line",
+      "text": "and all manner of weapons of war of every kind,",
+      "verse": "60:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 41.262,
+      "end": 43.77,
+      "type": "line",
+      "text": "and send forth against the Lamanites,",
+      "verse": "60:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 43.95,
+      "end": 47.433,
+      "type": "line",
+      "text": "in whatsoever parts they should come into our land.",
+      "verse": "60:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 48.113,
+      "end": 51.968,
+      "type": "line",
+      "text": "And now behold, I say unto you that myself, and also my men,",
+      "verse": "60:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 52.148,
+      "end": 57.256,
+      "type": "line",
+      "text": "and also Helaman and his men, have suffered exceedingly great sufferings;",
+      "verse": "60:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 57.436,
+      "end": 60.037,
+      "type": "line",
+      "text": "yea, even hunger, thirst, and fatigue,",
+      "verse": "60:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 60.217,
+      "end": 62.818,
+      "type": "line",
+      "text": "and all manner of afflictions of every kind.",
+      "verse": "60:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 63.498,
+      "end": 66.192,
+      "type": "line",
+      "text": "But behold, were this all we had suffered",
+      "verse": "60:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 66.372,
+      "end": 68.787,
+      "type": "line",
+      "text": "we would not murmur nor complain.",
+      "verse": "60:4",
+      "lineIndex": 18
+    },
+    {
+      "start": 69.467,
+      "end": 73.229,
+      "type": "line",
+      "text": "But behold, great has been the slaughter among our people;",
+      "verse": "60:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 73.409,
+      "end": 75.917,
+      "type": "line",
+      "text": "yea, thousands have fallen by the sword,",
+      "verse": "60:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 76.097,
+      "end": 78.419,
+      "type": "line",
+      "text": "while it might have otherwise been",
+      "verse": "60:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 78.599,
+      "end": 83.661,
+      "type": "line",
+      "text": "if ye had rendered unto our armies sufficient strength and succor for them.",
+      "verse": "60:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 83.841,
+      "end": 86.627,
+      "type": "line",
+      "text": "Yea, great has been your neglect towards us.",
+      "verse": "60:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 87.307,
+      "end": 91.997,
+      "type": "line",
+      "text": "And now behold, we desire to know the cause of this exceedingly great neglect;",
+      "verse": "60:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 92.177,
+      "end": 95.196,
+      "type": "line",
+      "text": "yea, we desire to know the cause of your thoughtless state.",
+      "verse": "60:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 95.876,
+      "end": 99.684,
+      "type": "line",
+      "text": "Can you think to sit upon your thrones in a state of thoughtless stupor,",
+      "verse": "60:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 99.864,
+      "end": 103.301,
+      "type": "line",
+      "text": "while your enemies are spreading the work of death around you?",
+      "verse": "60:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 103.481,
+      "end": 106.825,
+      "type": "line",
+      "text": "Yea, while they are murdering thousands of your brethren\u2014",
+      "verse": "60:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 107.505,
+      "end": 110.756,
+      "type": "line",
+      "text": "Yea, even they who have looked up to you for protection,",
+      "verse": "60:8",
+      "lineIndex": 29
+    },
+    {
+      "start": 110.936,
+      "end": 115.255,
+      "type": "line",
+      "text": "yea, have placed you in a situation that ye might have succored them,",
+      "verse": "60:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 115.435,
+      "end": 123.283,
+      "type": "line",
+      "text": "yea, ye might have sent armies unto them, to have strengthened them, and have saved thousands of them from falling by the sword.",
+      "verse": "60:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 123.963,
+      "end": 125.681,
+      "type": "line",
+      "text": "But behold, this is not all\u2014",
+      "verse": "60:9",
+      "lineIndex": 32
+    },
+    {
+      "start": 125.861,
+      "end": 128.276,
+      "type": "line",
+      "text": "ye have withheld your provisions from them,",
+      "verse": "60:9",
+      "lineIndex": 33
+    },
+    {
+      "start": 128.456,
+      "end": 134.447,
+      "type": "line",
+      "text": "insomuch that many have fought and bled out their lives because of their great desires",
+      "verse": "60:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 134.627,
+      "end": 137.924,
+      "type": "line",
+      "text": "which they had for the welfare of this people;",
+      "verse": "60:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 138.104,
+      "end": 144.791,
+      "type": "line",
+      "text": "yea, and this they have done when they were about to perish with hunger, because of your exceedingly great neglect towards them.",
+      "verse": "60:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 145.471,
+      "end": 149.0,
+      "type": "line",
+      "text": "And now, my beloved brethren\u2014 for ye ought to be beloved;",
+      "verse": "60:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 149.18,
+      "end": 152.663,
+      "type": "line",
+      "text": "yea, and ye ought to have stirred yourselves more diligently",
+      "verse": "60:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 152.843,
+      "end": 155.537,
+      "type": "line",
+      "text": "for the welfare and the freedom of this people;",
+      "verse": "60:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 155.717,
+      "end": 158.039,
+      "type": "line",
+      "text": "but behold, ye have neglected them",
+      "verse": "60:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 158.219,
+      "end": 162.909,
+      "type": "line",
+      "text": "insomuch that the blood of thousands shall come upon your heads for vengeance;",
+      "verse": "60:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 163.089,
+      "end": 165.875,
+      "type": "line",
+      "text": "yea, for known unto God were all their cries,",
+      "verse": "60:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 166.055,
+      "end": 167.727,
+      "type": "line",
+      "text": "and all their sufferings\u2014",
+      "verse": "60:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 168.407,
+      "end": 172.215,
+      "type": "line",
+      "text": "Behold, could ye suppose that ye could sit upon your thrones,",
+      "verse": "60:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 172.395,
+      "end": 175.646,
+      "type": "line",
+      "text": "and because of the exceeding goodness of God",
+      "verse": "60:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 175.826,
+      "end": 178.427,
+      "type": "line",
+      "text": "ye could do nothing and he would deliver you?",
+      "verse": "60:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 178.607,
+      "end": 182.183,
+      "type": "line",
+      "text": "Behold, if ye have supposed this ye have supposed in vain.",
+      "verse": "60:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 182.863,
+      "end": 184.581,
+      "type": "line",
+      "text": "Do ye suppose that,",
+      "verse": "60:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 184.761,
+      "end": 188.244,
+      "type": "line",
+      "text": "because so many of your brethren have been killed",
+      "verse": "60:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 188.424,
+      "end": 190.839,
+      "type": "line",
+      "text": "it is because of their wickedness?",
+      "verse": "60:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 191.019,
+      "end": 192.505,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "60:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 192.685,
+      "end": 195.936,
+      "type": "line",
+      "text": "if ye have supposed this ye have supposed in vain;",
+      "verse": "60:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 196.116,
+      "end": 197.788,
+      "type": "line",
+      "text": "for I say unto you,",
+      "verse": "60:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 197.968,
+      "end": 200.662,
+      "type": "line",
+      "text": "there are many who have fallen by the sword;",
+      "verse": "60:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 200.842,
+      "end": 203.164,
+      "type": "line",
+      "text": "and behold it is to your condemnation;",
+      "verse": "60:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 203.844,
+      "end": 206.77,
+      "type": "line",
+      "text": "For the Lord suffereth the righteous to be slain",
+      "verse": "60:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 206.95,
+      "end": 210.387,
+      "type": "line",
+      "text": "that his justice and judgment may come upon the wicked;",
+      "verse": "60:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 210.567,
+      "end": 214.189,
+      "type": "line",
+      "text": "therefore ye need not suppose that the righteous are lost",
+      "verse": "60:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 214.369,
+      "end": 215.948,
+      "type": "line",
+      "text": "because they are slain;",
+      "verse": "60:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 216.128,
+      "end": 219.518,
+      "type": "line",
+      "text": "but behold, they do enter into the rest of the Lord their God.",
+      "verse": "60:13",
+      "lineIndex": 60
+    },
+    {
+      "start": 220.198,
+      "end": 222.427,
+      "type": "line",
+      "text": "And now behold, I say unto you,",
+      "verse": "60:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 222.607,
+      "end": 228.969,
+      "type": "line",
+      "text": "I fear exceedingly that the judgments of God will come upon this people, because of their exceeding slothfulness,",
+      "verse": "60:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 229.149,
+      "end": 232.26,
+      "type": "line",
+      "text": "yea, even the slothfulness of our government,",
+      "verse": "60:14",
+      "lineIndex": 63
+    },
+    {
+      "start": 232.44,
+      "end": 236.248,
+      "type": "line",
+      "text": "and their exceedingly great neglect towards their brethren,",
+      "verse": "60:14",
+      "lineIndex": 64
+    },
+    {
+      "start": 236.428,
+      "end": 238.518,
+      "type": "line",
+      "text": "yea, towards those who have been slain.",
+      "verse": "60:14",
+      "lineIndex": 65
+    },
+    {
+      "start": 239.198,
+      "end": 243.517,
+      "type": "line",
+      "text": "For were it not for the wickedness which first commenced at our head,",
+      "verse": "60:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 243.697,
+      "end": 246.344,
+      "type": "line",
+      "text": "we could have withstood our enemies",
+      "verse": "60:15",
+      "lineIndex": 68
+    },
+    {
+      "start": 246.524,
+      "end": 249.589,
+      "type": "line",
+      "text": "that they could have gained no power over us.",
+      "verse": "60:15",
+      "lineIndex": 69
+    },
+    {
+      "start": 250.269,
+      "end": 254.17,
+      "type": "line",
+      "text": "Yea, had it not been for the war which broke out among ourselves;",
+      "verse": "60:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 254.35,
+      "end": 256.951,
+      "type": "line",
+      "text": "yea, were it not for these king-men,",
+      "verse": "60:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 257.131,
+      "end": 260.103,
+      "type": "line",
+      "text": "who caused so much bloodshed among ourselves;",
+      "verse": "60:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 260.283,
+      "end": 263.302,
+      "type": "line",
+      "text": "yea, at the time we were contending among ourselves,",
+      "verse": "60:16",
+      "lineIndex": 73
+    },
+    {
+      "start": 263.482,
+      "end": 266.779,
+      "type": "line",
+      "text": "if we had united our strength as we hitherto have done;",
+      "verse": "60:16",
+      "lineIndex": 74
+    },
+    {
+      "start": 266.959,
+      "end": 270.349,
+      "type": "line",
+      "text": "yea, had it not been for the desire of power and authority",
+      "verse": "60:16",
+      "lineIndex": 75
+    },
+    {
+      "start": 270.529,
+      "end": 272.665,
+      "type": "line",
+      "text": "which those king-men had over us;",
+      "verse": "60:16",
+      "lineIndex": 76
+    },
+    {
+      "start": 272.845,
+      "end": 275.539,
+      "type": "line",
+      "text": "had they been true to the cause of our freedom,",
+      "verse": "60:16",
+      "lineIndex": 77
+    },
+    {
+      "start": 275.719,
+      "end": 279.295,
+      "type": "line",
+      "text": "and united with us, and gone forth against our enemies,",
+      "verse": "60:16",
+      "lineIndex": 78
+    },
+    {
+      "start": 279.475,
+      "end": 282.122,
+      "type": "line",
+      "text": "instead of taking up their swords against us,",
+      "verse": "60:16",
+      "lineIndex": 79
+    },
+    {
+      "start": 282.302,
+      "end": 285.646,
+      "type": "line",
+      "text": "which was the cause of so much bloodshed among ourselves;",
+      "verse": "60:16",
+      "lineIndex": 80
+    },
+    {
+      "start": 285.826,
+      "end": 289.727,
+      "type": "line",
+      "text": "yea, if we had gone forth against them in the strength of the Lord,",
+      "verse": "60:16",
+      "lineIndex": 81
+    },
+    {
+      "start": 289.907,
+      "end": 292.322,
+      "type": "line",
+      "text": "we should have dispersed our enemies,",
+      "verse": "60:16",
+      "lineIndex": 82
+    },
+    {
+      "start": 292.502,
+      "end": 297.007,
+      "type": "line",
+      "text": "for it would have been done, according to the fulfilling of his word.",
+      "verse": "60:16",
+      "lineIndex": 83
+    },
+    {
+      "start": 297.687,
+      "end": 302.656,
+      "type": "line",
+      "text": "But behold, now the Lamanites are coming upon us, taking possession of our lands,",
+      "verse": "60:17",
+      "lineIndex": 84
+    },
+    {
+      "start": 302.836,
+      "end": 305.39,
+      "type": "line",
+      "text": "and they are murdering our people with the sword,",
+      "verse": "60:17",
+      "lineIndex": 85
+    },
+    {
+      "start": 305.57,
+      "end": 307.846,
+      "type": "line",
+      "text": "yea, our women and our children,",
+      "verse": "60:17",
+      "lineIndex": 86
+    },
+    {
+      "start": 308.026,
+      "end": 310.487,
+      "type": "line",
+      "text": "and also carrying them away captive,",
+      "verse": "60:17",
+      "lineIndex": 87
+    },
+    {
+      "start": 310.667,
+      "end": 314.382,
+      "type": "line",
+      "text": "causing them that they should suffer all manner of afflictions,",
+      "verse": "60:17",
+      "lineIndex": 88
+    },
+    {
+      "start": 314.562,
+      "end": 317.906,
+      "type": "line",
+      "text": "and this because of the great wickedness of those",
+      "verse": "60:17",
+      "lineIndex": 89
+    },
+    {
+      "start": 318.086,
+      "end": 322.173,
+      "type": "line",
+      "text": "who are seeking for power and authority, yea, even those king-men.",
+      "verse": "60:17",
+      "lineIndex": 90
+    },
+    {
+      "start": 322.853,
+      "end": 326.057,
+      "type": "line",
+      "text": "But why should I say much concerning this matter?",
+      "verse": "60:18",
+      "lineIndex": 91
+    },
+    {
+      "start": 326.237,
+      "end": 330.184,
+      "type": "line",
+      "text": "For we know not but what ye yourselves are seeking for authority.",
+      "verse": "60:18",
+      "lineIndex": 92
+    },
+    {
+      "start": 330.364,
+      "end": 333.801,
+      "type": "line",
+      "text": "We know not but what ye are also traitors to your country.",
+      "verse": "60:18",
+      "lineIndex": 93
+    },
+    {
+      "start": 334.481,
+      "end": 336.849,
+      "type": "line",
+      "text": "Or is it that ye have neglected us",
+      "verse": "60:19",
+      "lineIndex": 94
+    },
+    {
+      "start": 337.029,
+      "end": 339.815,
+      "type": "line",
+      "text": "because ye are in the heart of our country",
+      "verse": "60:19",
+      "lineIndex": 95
+    },
+    {
+      "start": 339.995,
+      "end": 342.503,
+      "type": "line",
+      "text": "and ye are surrounded by security,",
+      "verse": "60:19",
+      "lineIndex": 96
+    },
+    {
+      "start": 342.683,
+      "end": 347.652,
+      "type": "line",
+      "text": "that ye do not cause food to be sent unto us, and also men to strengthen our armies?",
+      "verse": "60:19",
+      "lineIndex": 97
+    },
+    {
+      "start": 348.332,
+      "end": 351.443,
+      "type": "line",
+      "text": "Have ye forgotten the commandments of the Lord your God?",
+      "verse": "60:20",
+      "lineIndex": 98
+    },
+    {
+      "start": 351.623,
+      "end": 354.595,
+      "type": "line",
+      "text": "Yea, have ye forgotten the captivity of our fathers?",
+      "verse": "60:20",
+      "lineIndex": 99
+    },
+    {
+      "start": 354.775,
+      "end": 359.698,
+      "type": "line",
+      "text": "Have ye forgotten the many times we have been delivered out of the hands of our enemies?",
+      "verse": "60:20",
+      "lineIndex": 100
+    },
+    {
+      "start": 360.378,
+      "end": 363.536,
+      "type": "line",
+      "text": "Or do ye suppose that the Lord will still deliver us,",
+      "verse": "60:21",
+      "lineIndex": 101
+    },
+    {
+      "start": 363.716,
+      "end": 368.732,
+      "type": "line",
+      "text": "while we sit upon our thrones and do not make use of the means which the Lord has provided for us?",
+      "verse": "60:21",
+      "lineIndex": 102
+    },
+    {
+      "start": 369.412,
+      "end": 373.87,
+      "type": "line",
+      "text": "Yea, will ye sit in idleness while ye are surrounded with thousands of those,",
+      "verse": "60:22",
+      "lineIndex": 103
+    },
+    {
+      "start": 374.05,
+      "end": 376.14,
+      "type": "line",
+      "text": "yea, and tens of thousands,",
+      "verse": "60:22",
+      "lineIndex": 104
+    },
+    {
+      "start": 376.32,
+      "end": 378.41,
+      "type": "line",
+      "text": "who do also sit in idleness,",
+      "verse": "60:22",
+      "lineIndex": 105
+    },
+    {
+      "start": 378.59,
+      "end": 382.63,
+      "type": "line",
+      "text": "while there are thousands round about in the borders of the land",
+      "verse": "60:22",
+      "lineIndex": 106
+    },
+    {
+      "start": 382.81,
+      "end": 385.039,
+      "type": "line",
+      "text": "who are falling by the sword,",
+      "verse": "60:22",
+      "lineIndex": 107
+    },
+    {
+      "start": 385.219,
+      "end": 386.984,
+      "type": "line",
+      "text": "yea, wounded and bleeding?",
+      "verse": "60:22",
+      "lineIndex": 108
+    },
+    {
+      "start": 387.664,
+      "end": 391.101,
+      "type": "line",
+      "text": "Do ye suppose that God will look upon you as guiltless",
+      "verse": "60:23",
+      "lineIndex": 109
+    },
+    {
+      "start": 391.281,
+      "end": 393.928,
+      "type": "line",
+      "text": "while ye sit still and behold these things?",
+      "verse": "60:23",
+      "lineIndex": 110
+    },
+    {
+      "start": 394.108,
+      "end": 395.826,
+      "type": "line",
+      "text": "Behold I say unto you, Nay.",
+      "verse": "60:23",
+      "lineIndex": 111
+    },
+    {
+      "start": 396.006,
+      "end": 403.761,
+      "type": "line",
+      "text": "Now I would that ye should remember that God has said that the inward vessel shall be cleansed first,",
+      "verse": "60:23",
+      "lineIndex": 112
+    },
+    {
+      "start": 403.941,
+      "end": 406.681,
+      "type": "line",
+      "text": "and then shall the outer vessel be cleansed also.",
+      "verse": "60:23",
+      "lineIndex": 113
+    },
+    {
+      "start": 407.361,
+      "end": 410.844,
+      "type": "line",
+      "text": "And now, except ye do repent of that which ye have done,",
+      "verse": "60:24",
+      "lineIndex": 114
+    },
+    {
+      "start": 411.024,
+      "end": 413.021,
+      "type": "line",
+      "text": "and begin to be up and doing,",
+      "verse": "60:24",
+      "lineIndex": 115
+    },
+    {
+      "start": 413.201,
+      "end": 417.334,
+      "type": "line",
+      "text": "and send forth food and men unto us, and also unto Helaman,",
+      "verse": "60:24",
+      "lineIndex": 116
+    },
+    {
+      "start": 417.514,
+      "end": 421.183,
+      "type": "line",
+      "text": "that he may support those parts of our country which he has regained,",
+      "verse": "60:24",
+      "lineIndex": 117
+    },
+    {
+      "start": 421.363,
+      "end": 426.75,
+      "type": "line",
+      "text": "and that we may also recover the remainder of our possessions in these parts,",
+      "verse": "60:24",
+      "lineIndex": 118
+    },
+    {
+      "start": 426.93,
+      "end": 431.76,
+      "type": "line",
+      "text": "behold it will be expedient that we contend no more with the Lamanites",
+      "verse": "60:24",
+      "lineIndex": 119
+    },
+    {
+      "start": 431.94,
+      "end": 435.191,
+      "type": "line",
+      "text": "until we have first cleansed our inward vessel,",
+      "verse": "60:24",
+      "lineIndex": 120
+    },
+    {
+      "start": 435.371,
+      "end": 437.879,
+      "type": "line",
+      "text": "yea, even the great head of our government.",
+      "verse": "60:24",
+      "lineIndex": 121
+    },
+    {
+      "start": 438.559,
+      "end": 440.788,
+      "type": "line",
+      "text": "And except ye grant mine epistle,",
+      "verse": "60:25",
+      "lineIndex": 122
+    },
+    {
+      "start": 440.968,
+      "end": 444.59,
+      "type": "line",
+      "text": "and come out and show unto me a true spirit of freedom,",
+      "verse": "60:25",
+      "lineIndex": 123
+    },
+    {
+      "start": 444.77,
+      "end": 448.253,
+      "type": "line",
+      "text": "and strive to strengthen and fortify our armies,",
+      "verse": "60:25",
+      "lineIndex": 124
+    },
+    {
+      "start": 448.433,
+      "end": 451.173,
+      "type": "line",
+      "text": "and grant unto them food for their support,",
+      "verse": "60:25",
+      "lineIndex": 125
+    },
+    {
+      "start": 451.353,
+      "end": 455.393,
+      "type": "line",
+      "text": "behold I will leave a part of my freemen to maintain this part of our land,",
+      "verse": "60:25",
+      "lineIndex": 126
+    },
+    {
+      "start": 455.573,
+      "end": 459.335,
+      "type": "line",
+      "text": "and I will leave the strength and the blessings of God upon them,",
+      "verse": "60:25",
+      "lineIndex": 127
+    },
+    {
+      "start": 459.515,
+      "end": 462.394,
+      "type": "line",
+      "text": "that none other power can operate against them\u2014",
+      "verse": "60:25",
+      "lineIndex": 128
+    },
+    {
+      "start": 463.074,
+      "end": 465.675,
+      "type": "line",
+      "text": "And this because of their exceeding faith,",
+      "verse": "60:26",
+      "lineIndex": 129
+    },
+    {
+      "start": 465.855,
+      "end": 468.363,
+      "type": "line",
+      "text": "and their patience in their tribulations\u2014",
+      "verse": "60:26",
+      "lineIndex": 130
+    },
+    {
+      "start": 469.043,
+      "end": 470.854,
+      "type": "line",
+      "text": "And I will come unto you,",
+      "verse": "60:27",
+      "lineIndex": 131
+    },
+    {
+      "start": 471.034,
+      "end": 474.61,
+      "type": "line",
+      "text": "and if there be any among you that has a desire for freedom,",
+      "verse": "60:27",
+      "lineIndex": 132
+    },
+    {
+      "start": 474.79,
+      "end": 477.762,
+      "type": "line",
+      "text": "yea, if there be even a spark of freedom remaining,",
+      "verse": "60:27",
+      "lineIndex": 133
+    },
+    {
+      "start": 477.942,
+      "end": 480.636,
+      "type": "line",
+      "text": "behold I will stir up insurrections among you,",
+      "verse": "60:27",
+      "lineIndex": 134
+    },
+    {
+      "start": 480.816,
+      "end": 486.296,
+      "type": "line",
+      "text": "even until those who have desires to usurp power and authority shall become extinct.",
+      "verse": "60:27",
+      "lineIndex": 135
+    },
+    {
+      "start": 486.976,
+      "end": 490.505,
+      "type": "line",
+      "text": "Yea, behold I do not fear your power nor your authority,",
+      "verse": "60:28",
+      "lineIndex": 136
+    },
+    {
+      "start": 490.685,
+      "end": 493.1,
+      "type": "line",
+      "text": "but it is my God whom I fear;",
+      "verse": "60:28",
+      "lineIndex": 137
+    },
+    {
+      "start": 493.28,
+      "end": 495.927,
+      "type": "line",
+      "text": "and it is according to his commandments",
+      "verse": "60:28",
+      "lineIndex": 138
+    },
+    {
+      "start": 496.107,
+      "end": 499.729,
+      "type": "line",
+      "text": "that I do take my sword to defend the cause of my country,",
+      "verse": "60:28",
+      "lineIndex": 139
+    },
+    {
+      "start": 499.909,
+      "end": 504.274,
+      "type": "line",
+      "text": "and it is because of your iniquity that we have suffered so much loss.",
+      "verse": "60:28",
+      "lineIndex": 140
+    },
+    {
+      "start": 504.954,
+      "end": 506.44,
+      "type": "line",
+      "text": "Behold it is time,",
+      "verse": "60:29",
+      "lineIndex": 141
+    },
+    {
+      "start": 506.62,
+      "end": 508.524,
+      "type": "line",
+      "text": "yea, the time is now at hand,",
+      "verse": "60:29",
+      "lineIndex": 142
+    },
+    {
+      "start": 508.704,
+      "end": 514.045,
+      "type": "line",
+      "text": "that except ye do bestir yourselves in the defence of your country and your little ones,",
+      "verse": "60:29",
+      "lineIndex": 143
+    },
+    {
+      "start": 514.225,
+      "end": 516.64,
+      "type": "line",
+      "text": "the sword of justice doth hang over you;",
+      "verse": "60:29",
+      "lineIndex": 144
+    },
+    {
+      "start": 516.82,
+      "end": 521.65,
+      "type": "line",
+      "text": "yea, and it shall fall upon you and visit you even to your utter destruction.",
+      "verse": "60:29",
+      "lineIndex": 145
+    },
+    {
+      "start": 522.33,
+      "end": 524.698,
+      "type": "line",
+      "text": "Behold, I wait for assistance from you;",
+      "verse": "60:30",
+      "lineIndex": 147
+    },
+    {
+      "start": 524.878,
+      "end": 528.036,
+      "type": "line",
+      "text": "and, except ye do administer unto our relief,",
+      "verse": "60:30",
+      "lineIndex": 148
+    },
+    {
+      "start": 528.216,
+      "end": 531.606,
+      "type": "line",
+      "text": "behold, I come unto you, even in the land of Zarahemla",
+      "verse": "60:30",
+      "lineIndex": 149
+    },
+    {
+      "start": 531.786,
+      "end": 533.597,
+      "type": "line",
+      "text": "and smite you with the sword,",
+      "verse": "60:30",
+      "lineIndex": 150
+    },
+    {
+      "start": 533.777,
+      "end": 541.022,
+      "type": "line",
+      "text": "insomuch that ye can have no more power to impede the progress of this people in the cause of our freedom.",
+      "verse": "60:30",
+      "lineIndex": 151
+    },
+    {
+      "start": 541.702,
+      "end": 549.643,
+      "type": "line",
+      "text": "For behold, the Lord will not suffer that ye shall live and wax strong in your iniquities to destroy his righteous people.",
+      "verse": "60:31",
+      "lineIndex": 152
+    },
+    {
+      "start": 550.323,
+      "end": 553.481,
+      "type": "line",
+      "text": "Behold, can you suppose that the Lord will spare you",
+      "verse": "60:32",
+      "lineIndex": 153
+    },
+    {
+      "start": 553.661,
+      "end": 556.865,
+      "type": "line",
+      "text": "and come out in judgment against the Lamanites,",
+      "verse": "60:32",
+      "lineIndex": 154
+    },
+    {
+      "start": 557.045,
+      "end": 562.711,
+      "type": "line",
+      "text": "when it is the tradition of their fathers that has caused their hatred,",
+      "verse": "60:32",
+      "lineIndex": 155
+    },
+    {
+      "start": 562.891,
+      "end": 565.167,
+      "type": "line",
+      "text": "yea, and it has been redoubled",
+      "verse": "60:32",
+      "lineIndex": 156
+    },
+    {
+      "start": 565.347,
+      "end": 567.669,
+      "type": "line",
+      "text": "by those who have dissented from us,",
+      "verse": "60:32",
+      "lineIndex": 157
+    },
+    {
+      "start": 567.849,
+      "end": 572.075,
+      "type": "line",
+      "text": "while your iniquity is for the cause of your love of glory",
+      "verse": "60:32",
+      "lineIndex": 158
+    },
+    {
+      "start": 572.255,
+      "end": 574.391,
+      "type": "line",
+      "text": "and the vain things of the world?",
+      "verse": "60:32",
+      "lineIndex": 159
+    },
+    {
+      "start": 575.071,
+      "end": 577.904,
+      "type": "line",
+      "text": "Ye know that ye do transgress the laws of God,",
+      "verse": "60:33",
+      "lineIndex": 160
+    },
+    {
+      "start": 578.084,
+      "end": 581.335,
+      "type": "line",
+      "text": "and ye do know that ye do trample them under your feet.",
+      "verse": "60:33",
+      "lineIndex": 161
+    },
+    {
+      "start": 581.515,
+      "end": 583.512,
+      "type": "line",
+      "text": "Behold, the Lord saith unto me:",
+      "verse": "60:33",
+      "lineIndex": 162
+    },
+    {
+      "start": 583.692,
+      "end": 586.525,
+      "type": "line",
+      "text": "If those whom ye have appointed your governors",
+      "verse": "60:33",
+      "lineIndex": 163
+    },
+    {
+      "start": 586.705,
+      "end": 589.77,
+      "type": "line",
+      "text": "do not repent of their sins and iniquities,",
+      "verse": "60:33",
+      "lineIndex": 164
+    },
+    {
+      "start": 589.95,
+      "end": 592.411,
+      "type": "line",
+      "text": "ye shall go up to battle against them.",
+      "verse": "60:33",
+      "lineIndex": 165
+    },
+    {
+      "start": 593.091,
+      "end": 600.289,
+      "type": "line",
+      "text": "And now behold, I, Moroni, am constrained, according to the covenant which I have made to keep the commandments of my God;",
+      "verse": "60:34",
+      "lineIndex": 166
+    },
+    {
+      "start": 600.469,
+      "end": 603.952,
+      "type": "line",
+      "text": "therefore I would that ye should adhere to the word of God,",
+      "verse": "60:34",
+      "lineIndex": 167
+    },
+    {
+      "start": 604.132,
+      "end": 608.219,
+      "type": "line",
+      "text": "and send speedily unto me of your provisions and of your men",
+      "verse": "60:34",
+      "lineIndex": 168
+    },
+    {
+      "start": 608.399,
+      "end": 609.746,
+      "type": "line",
+      "text": "and also to Helaman.",
+      "verse": "60:34",
+      "lineIndex": 169
+    },
+    {
+      "start": 610.426,
+      "end": 612.702,
+      "type": "line",
+      "text": "And behold, if ye will not do this",
+      "verse": "60:35",
+      "lineIndex": 170
+    },
+    {
+      "start": 612.882,
+      "end": 614.647,
+      "type": "line",
+      "text": "I come unto you speedily;",
+      "verse": "60:35",
+      "lineIndex": 171
+    },
+    {
+      "start": 614.827,
+      "end": 619.099,
+      "type": "line",
+      "text": "for behold, God will not suffer that we should perish with hunger;",
+      "verse": "60:35",
+      "lineIndex": 172
+    },
+    {
+      "start": 619.279,
+      "end": 621.74,
+      "type": "line",
+      "text": "therefore he will give unto us of your food,",
+      "verse": "60:35",
+      "lineIndex": 173
+    },
+    {
+      "start": 621.92,
+      "end": 624.149,
+      "type": "line",
+      "text": "even if it must be by the sword.",
+      "verse": "60:35",
+      "lineIndex": 174
+    },
+    {
+      "start": 624.329,
+      "end": 627.115,
+      "type": "line",
+      "text": "Now see that ye fulfil the word of God.",
+      "verse": "60:35",
+      "lineIndex": 175
+    },
+    {
+      "start": 627.795,
+      "end": 630.303,
+      "type": "line",
+      "text": "Behold, I am Moroni, your chief captain.",
+      "verse": "60:36",
+      "lineIndex": 176
+    },
+    {
+      "start": 630.483,
+      "end": 632.991,
+      "type": "line",
+      "text": "I seek not for power, but to pull it down.",
+      "verse": "60:36",
+      "lineIndex": 177
+    },
+    {
+      "start": 633.171,
+      "end": 635.632,
+      "type": "line",
+      "text": "I seek not for honor of the world,",
+      "verse": "60:36",
+      "lineIndex": 178
+    },
+    {
+      "start": 635.812,
+      "end": 637.67,
+      "type": "line",
+      "text": "but for the glory of my God,",
+      "verse": "60:36",
+      "lineIndex": 179
+    },
+    {
+      "start": 637.85,
+      "end": 640.311,
+      "type": "line",
+      "text": "and the freedom and welfare of my country.",
+      "verse": "60:36",
+      "lineIndex": 180
+    },
+    {
+      "start": 640.491,
+      "end": 642.488,
+      "type": "line",
+      "text": "And thus I close mine epistle.",
+      "verse": "60:36",
+      "lineIndex": 181
+    }
+  ]
+}
