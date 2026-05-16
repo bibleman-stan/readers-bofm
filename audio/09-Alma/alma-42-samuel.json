@@ -1,0 +1,1072 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 42,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 457.996,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.019,
+      "type": "line",
+      "text": "And now, my son, I perceive there is somewhat more",
+      "verse": "42:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.199,
+      "end": 5.01,
+      "type": "line",
+      "text": "which doth worry your mind,",
+      "verse": "42:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 5.19,
+      "end": 6.862,
+      "type": "line",
+      "text": "which ye cannot understand\u2014",
+      "verse": "42:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 7.042,
+      "end": 11.872,
+      "type": "line",
+      "text": "which is concerning the justice of God in the punishment of the sinner;",
+      "verse": "42:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 12.052,
+      "end": 14.885,
+      "type": "line",
+      "text": "for ye do try to suppose that it is injustice",
+      "verse": "42:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 15.065,
+      "end": 18.502,
+      "type": "line",
+      "text": "that the sinner should be consigned to a state of misery.",
+      "verse": "42:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 19.182,
+      "end": 20.715,
+      "type": "line",
+      "text": "Now behold, my son,",
+      "verse": "42:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 20.895,
+      "end": 22.892,
+      "type": "line",
+      "text": "I will explain this thing unto thee.",
+      "verse": "42:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 23.072,
+      "end": 28.923,
+      "type": "line",
+      "text": "For behold, after the Lord God sent our first parents forth from the garden of Eden, to till the ground,",
+      "verse": "42:2",
+      "lineIndex": 9
+    },
+    {
+      "start": 29.103,
+      "end": 32.4,
+      "type": "line",
+      "text": "from whence they were taken\u2014yea, he drew out the man,",
+      "verse": "42:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 32.58,
+      "end": 36.342,
+      "type": "line",
+      "text": "and he placed at the east end of the garden of Eden, cherubim,",
+      "verse": "42:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 36.522,
+      "end": 38.937,
+      "type": "line",
+      "text": "and a flaming sword which turned every way,",
+      "verse": "42:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 39.117,
+      "end": 40.789,
+      "type": "line",
+      "text": "to keep the tree of life\u2014",
+      "verse": "42:2",
+      "lineIndex": 13
+    },
+    {
+      "start": 41.469,
+      "end": 46.485,
+      "type": "line",
+      "text": "Now, we see that the man had become as God, knowing good and evil;",
+      "verse": "42:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 46.665,
+      "end": 49.126,
+      "type": "line",
+      "text": "and lest he should put forth his hand,",
+      "verse": "42:3",
+      "lineIndex": 15
+    },
+    {
+      "start": 49.306,
+      "end": 51.814,
+      "type": "line",
+      "text": "and take also of the tree of life,",
+      "verse": "42:3",
+      "lineIndex": 16
+    },
+    {
+      "start": 51.994,
+      "end": 53.062,
+      "type": "line",
+      "text": "and eat",
+      "verse": "42:3",
+      "lineIndex": 17
+    },
+    {
+      "start": 53.242,
+      "end": 54.775,
+      "type": "line",
+      "text": "and live forever,",
+      "verse": "42:3",
+      "lineIndex": 18
+    },
+    {
+      "start": 54.955,
+      "end": 58.113,
+      "type": "line",
+      "text": "the Lord God placed cherubim and the flaming sword,",
+      "verse": "42:3",
+      "lineIndex": 19
+    },
+    {
+      "start": 58.293,
+      "end": 60.569,
+      "type": "line",
+      "text": "that he should not partake of the fruit\u2014",
+      "verse": "42:3",
+      "lineIndex": 20
+    },
+    {
+      "start": 61.249,
+      "end": 66.265,
+      "type": "line",
+      "text": "And thus we see, that there was a time granted unto man to repent,",
+      "verse": "42:4",
+      "lineIndex": 21
+    },
+    {
+      "start": 66.445,
+      "end": 70.207,
+      "type": "line",
+      "text": "yea, a probationary time, a time to repent and serve God.",
+      "verse": "42:4",
+      "lineIndex": 22
+    },
+    {
+      "start": 70.887,
+      "end": 74.324,
+      "type": "line",
+      "text": "For behold, if Adam had put forth his hand immediately,",
+      "verse": "42:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 74.504,
+      "end": 76.919,
+      "type": "line",
+      "text": "and partaken of the tree of life,",
+      "verse": "42:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 77.099,
+      "end": 83.461,
+      "type": "line",
+      "text": "he would have lived forever, according to the word of God, having no space for repentance;",
+      "verse": "42:5",
+      "lineIndex": 25
+    },
+    {
+      "start": 83.641,
+      "end": 86.752,
+      "type": "line",
+      "text": "yea, and also the word of God would have been void,",
+      "verse": "42:5",
+      "lineIndex": 26
+    },
+    {
+      "start": 86.932,
+      "end": 90.229,
+      "type": "line",
+      "text": "and the great plan of salvation would have been frustrated.",
+      "verse": "42:5",
+      "lineIndex": 27
+    },
+    {
+      "start": 90.909,
+      "end": 93.881,
+      "type": "line",
+      "text": "But behold, it was appointed unto man to die\u2014",
+      "verse": "42:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 94.061,
+      "end": 97.59,
+      "type": "line",
+      "text": "therefore, as they were cut off from the tree of life",
+      "verse": "42:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 97.77,
+      "end": 104.132,
+      "type": "line",
+      "text": "they should be cut off from the face of the earth\u2014 and man became lost forever,",
+      "verse": "42:6",
+      "lineIndex": 30
+    },
+    {
+      "start": 104.312,
+      "end": 106.077,
+      "type": "line",
+      "text": "yea, they became fallen man.",
+      "verse": "42:6",
+      "lineIndex": 31
+    },
+    {
+      "start": 106.757,
+      "end": 110.797,
+      "type": "line",
+      "text": "And now, ye see by this that our first parents were cut off",
+      "verse": "42:7",
+      "lineIndex": 32
+    },
+    {
+      "start": 110.977,
+      "end": 115.667,
+      "type": "line",
+      "text": "both temporally and spiritually from the presence of the Lord;",
+      "verse": "42:7",
+      "lineIndex": 33
+    },
+    {
+      "start": 115.847,
+      "end": 119.934,
+      "type": "line",
+      "text": "and thus we see they became subjects to follow after their own will.",
+      "verse": "42:7",
+      "lineIndex": 34
+    },
+    {
+      "start": 120.614,
+      "end": 125.908,
+      "type": "line",
+      "text": "Now behold, it was not expedient that man should be reclaimed from this temporal death,",
+      "verse": "42:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 126.088,
+      "end": 129.153,
+      "type": "line",
+      "text": "for that would destroy the great plan of happiness.",
+      "verse": "42:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 129.833,
+      "end": 132.759,
+      "type": "line",
+      "text": "Therefore, as the soul could never die,",
+      "verse": "42:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 132.939,
+      "end": 138.698,
+      "type": "line",
+      "text": "and the fall had brought upon all mankind a spiritual death as well as a temporal,",
+      "verse": "42:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 138.878,
+      "end": 146.308,
+      "type": "line",
+      "text": "that is, they were cut off from the presence of the Lord, it was expedient that mankind should be reclaimed from this spiritual death.",
+      "verse": "42:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 146.988,
+      "end": 150.564,
+      "type": "line",
+      "text": "Therefore, as they had become carnal, sensual,",
+      "verse": "42:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 150.744,
+      "end": 152.416,
+      "type": "line",
+      "text": "and devilish, by nature,",
+      "verse": "42:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 152.596,
+      "end": 156.265,
+      "type": "line",
+      "text": "this probationary state became a state for them to prepare;",
+      "verse": "42:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 156.445,
+      "end": 158.535,
+      "type": "line",
+      "text": "it became a preparatory state.",
+      "verse": "42:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 159.215,
+      "end": 161.073,
+      "type": "line",
+      "text": "And now remember, my son,",
+      "verse": "42:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 161.253,
+      "end": 165.2,
+      "type": "line",
+      "text": "if it were not for the plan of redemption, (laying it aside)",
+      "verse": "42:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 165.38,
+      "end": 170.442,
+      "type": "line",
+      "text": "as soon as they were dead their souls were miserable, being cut off from the presence of the Lord.",
+      "verse": "42:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 171.122,
+      "end": 174.884,
+      "type": "line",
+      "text": "And now, there was no means to reclaim men from this fallen state,",
+      "verse": "42:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 175.064,
+      "end": 179.429,
+      "type": "line",
+      "text": "which man had brought upon himself because of his own disobedience;",
+      "verse": "42:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 180.109,
+      "end": 182.199,
+      "type": "line",
+      "text": "Therefore, according to justice,",
+      "verse": "42:13",
+      "lineIndex": 50
+    },
+    {
+      "start": 182.379,
+      "end": 185.305,
+      "type": "line",
+      "text": "the plan of redemption could not be brought about,",
+      "verse": "42:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 185.485,
+      "end": 189.804,
+      "type": "line",
+      "text": "only on conditions of repentance of men in this probationary state,",
+      "verse": "42:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 189.984,
+      "end": 191.934,
+      "type": "line",
+      "text": "yea, this preparatory state;",
+      "verse": "42:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 192.114,
+      "end": 194.9,
+      "type": "line",
+      "text": "for except it were for these conditions,",
+      "verse": "42:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 195.08,
+      "end": 200.096,
+      "type": "line",
+      "text": "mercy could not take effect except it should destroy the work of justice.",
+      "verse": "42:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 200.276,
+      "end": 203.062,
+      "type": "line",
+      "text": "Now the work of justice could not be destroyed;",
+      "verse": "42:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 203.242,
+      "end": 205.657,
+      "type": "line",
+      "text": "if so, God would cease to be God.",
+      "verse": "42:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 206.337,
+      "end": 209.123,
+      "type": "line",
+      "text": "And thus we see that all mankind were fallen,",
+      "verse": "42:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 209.303,
+      "end": 211.857,
+      "type": "line",
+      "text": "and they were in the grasp of justice;",
+      "verse": "42:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 212.037,
+      "end": 216.913,
+      "type": "line",
+      "text": "yea, the justice of God, which consigned them forever to be cut off from his presence.",
+      "verse": "42:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 217.593,
+      "end": 220.287,
+      "type": "line",
+      "text": "And now, the plan of mercy could not be brought about",
+      "verse": "42:15",
+      "lineIndex": 62
+    },
+    {
+      "start": 220.467,
+      "end": 222.789,
+      "type": "line",
+      "text": "except an atonement should be made;",
+      "verse": "42:15",
+      "lineIndex": 63
+    },
+    {
+      "start": 222.969,
+      "end": 228.356,
+      "type": "line",
+      "text": "therefore God himself atoneth for the sins of the world, to bring about the plan of mercy,",
+      "verse": "42:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 228.536,
+      "end": 230.858,
+      "type": "line",
+      "text": "to appease the demands of justice,",
+      "verse": "42:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 231.038,
+      "end": 233.685,
+      "type": "line",
+      "text": "that God might be a perfect, just God,",
+      "verse": "42:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 233.865,
+      "end": 235.769,
+      "type": "line",
+      "text": "and a merciful God also.",
+      "verse": "42:15",
+      "lineIndex": 67
+    },
+    {
+      "start": 236.449,
+      "end": 238.957,
+      "type": "line",
+      "text": "Now, repentance could not come unto men",
+      "verse": "42:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 239.137,
+      "end": 241.32,
+      "type": "line",
+      "text": "except there were a punishment,",
+      "verse": "42:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 241.5,
+      "end": 244.565,
+      "type": "line",
+      "text": "which also was eternal as the life of the soul",
+      "verse": "42:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 244.745,
+      "end": 248.228,
+      "type": "line",
+      "text": "should be, affixed opposite to the plan of happiness,",
+      "verse": "42:16",
+      "lineIndex": 71
+    },
+    {
+      "start": 248.408,
+      "end": 251.752,
+      "type": "line",
+      "text": "which was as eternal also as the life of the soul.",
+      "verse": "42:16",
+      "lineIndex": 72
+    },
+    {
+      "start": 252.432,
+      "end": 255.265,
+      "type": "line",
+      "text": "Now, how could a man repent except he should sin?",
+      "verse": "42:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 255.445,
+      "end": 257.674,
+      "type": "line",
+      "text": "How could he sin if there was no law?",
+      "verse": "42:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 257.854,
+      "end": 261.383,
+      "type": "line",
+      "text": "How could there be a law save there was a punishment?",
+      "verse": "42:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 262.063,
+      "end": 264.571,
+      "type": "line",
+      "text": "Now, there was a punishment affixed,",
+      "verse": "42:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 264.751,
+      "end": 266.516,
+      "type": "line",
+      "text": "and a just law given,",
+      "verse": "42:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 266.696,
+      "end": 269.575,
+      "type": "line",
+      "text": "which brought remorse of conscience unto man.",
+      "verse": "42:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 270.255,
+      "end": 274.342,
+      "type": "line",
+      "text": "Now, if there was no law given\u2014if a man murdered he should die\u2014",
+      "verse": "42:19",
+      "lineIndex": 79
+    },
+    {
+      "start": 274.522,
+      "end": 277.401,
+      "type": "line",
+      "text": "would he be afraid he would die if he should murder?",
+      "verse": "42:19",
+      "lineIndex": 80
+    },
+    {
+      "start": 278.081,
+      "end": 281.61,
+      "type": "line",
+      "text": "And also, if there was no law given against sin",
+      "verse": "42:20",
+      "lineIndex": 81
+    },
+    {
+      "start": 281.79,
+      "end": 284.112,
+      "type": "line",
+      "text": "men would not be afraid to sin.",
+      "verse": "42:20",
+      "lineIndex": 82
+    },
+    {
+      "start": 284.792,
+      "end": 287.903,
+      "type": "line",
+      "text": "And if there was no law given, if men sinned",
+      "verse": "42:21",
+      "lineIndex": 83
+    },
+    {
+      "start": 288.083,
+      "end": 290.591,
+      "type": "line",
+      "text": "what could justice do, or mercy either,",
+      "verse": "42:21",
+      "lineIndex": 84
+    },
+    {
+      "start": 290.771,
+      "end": 293.139,
+      "type": "line",
+      "text": "for they would have no claim upon the creature?",
+      "verse": "42:21",
+      "lineIndex": 85
+    },
+    {
+      "start": 293.819,
+      "end": 299.531,
+      "type": "line",
+      "text": "But there is a law given, and a punishment affixed, and a repentance granted;",
+      "verse": "42:22",
+      "lineIndex": 86
+    },
+    {
+      "start": 299.711,
+      "end": 302.126,
+      "type": "line",
+      "text": "which repentance, mercy claimeth;",
+      "verse": "42:22",
+      "lineIndex": 87
+    },
+    {
+      "start": 302.306,
+      "end": 306.718,
+      "type": "line",
+      "text": "otherwise, justice claimeth the creature and executeth the law,",
+      "verse": "42:22",
+      "lineIndex": 88
+    },
+    {
+      "start": 306.898,
+      "end": 309.359,
+      "type": "line",
+      "text": "and the law inflicteth the punishment;",
+      "verse": "42:22",
+      "lineIndex": 89
+    },
+    {
+      "start": 309.539,
+      "end": 312.743,
+      "type": "line",
+      "text": "if not so, the works of justice would be destroyed,",
+      "verse": "42:22",
+      "lineIndex": 90
+    },
+    {
+      "start": 312.923,
+      "end": 314.966,
+      "type": "line",
+      "text": "and God would cease to be God.",
+      "verse": "42:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 315.646,
+      "end": 317.736,
+      "type": "line",
+      "text": "But God ceaseth not to be God,",
+      "verse": "42:23",
+      "lineIndex": 92
+    },
+    {
+      "start": 317.916,
+      "end": 320.145,
+      "type": "line",
+      "text": "and mercy claimeth the penitent,",
+      "verse": "42:23",
+      "lineIndex": 93
+    },
+    {
+      "start": 320.325,
+      "end": 322.74,
+      "type": "line",
+      "text": "and mercy cometh because of the atonement;",
+      "verse": "42:23",
+      "lineIndex": 94
+    },
+    {
+      "start": 322.92,
+      "end": 326.96,
+      "type": "line",
+      "text": "and the atonement bringeth to pass the resurrection of the dead;",
+      "verse": "42:23",
+      "lineIndex": 95
+    },
+    {
+      "start": 327.14,
+      "end": 332.063,
+      "type": "line",
+      "text": "and the resurrection of the dead bringeth back men into the presence of God;",
+      "verse": "42:23",
+      "lineIndex": 96
+    },
+    {
+      "start": 332.243,
+      "end": 339.813,
+      "type": "line",
+      "text": "and thus they are restored into his presence, to be judged according to their works, according to the law and justice.",
+      "verse": "42:23",
+      "lineIndex": 97
+    },
+    {
+      "start": 340.493,
+      "end": 343.651,
+      "type": "line",
+      "text": "For behold, justice exerciseth all his demands,",
+      "verse": "42:24",
+      "lineIndex": 99
+    },
+    {
+      "start": 343.831,
+      "end": 346.942,
+      "type": "line",
+      "text": "and also mercy claimeth all which is her own;",
+      "verse": "42:24",
+      "lineIndex": 100
+    },
+    {
+      "start": 347.122,
+      "end": 350.559,
+      "type": "line",
+      "text": "and thus, none but the truly penitent are saved.",
+      "verse": "42:24",
+      "lineIndex": 101
+    },
+    {
+      "start": 351.239,
+      "end": 353.979,
+      "type": "line",
+      "text": "What, do ye suppose that mercy can rob justice?",
+      "verse": "42:25",
+      "lineIndex": 102
+    },
+    {
+      "start": 354.159,
+      "end": 355.645,
+      "type": "line",
+      "text": "I say unto you,",
+      "verse": "42:25",
+      "lineIndex": 103
+    },
+    {
+      "start": 355.825,
+      "end": 357.125,
+      "type": "line",
+      "text": "Nay; not one whit.",
+      "verse": "42:25",
+      "lineIndex": 104
+    },
+    {
+      "start": 357.305,
+      "end": 359.534,
+      "type": "line",
+      "text": "If so, God would cease to be God.",
+      "verse": "42:25",
+      "lineIndex": 105
+    },
+    {
+      "start": 360.214,
+      "end": 364.208,
+      "type": "line",
+      "text": "And thus God bringeth about his great and eternal purposes,",
+      "verse": "42:26",
+      "lineIndex": 106
+    },
+    {
+      "start": 364.388,
+      "end": 368.66,
+      "type": "line",
+      "text": "which were prepared from the foundation of the world.",
+      "verse": "42:26",
+      "lineIndex": 107
+    },
+    {
+      "start": 368.84,
+      "end": 375.527,
+      "type": "line",
+      "text": "And thus cometh about the salvation and the redemption of men, and also their destruction and misery.",
+      "verse": "42:26",
+      "lineIndex": 108
+    },
+    {
+      "start": 376.207,
+      "end": 378.808,
+      "type": "line",
+      "text": "Therefore, O my son, whosoever will come",
+      "verse": "42:27",
+      "lineIndex": 110
+    },
+    {
+      "start": 378.988,
+      "end": 382.378,
+      "type": "line",
+      "text": "may come and partake of the waters of life freely;",
+      "verse": "42:27",
+      "lineIndex": 111
+    },
+    {
+      "start": 382.558,
+      "end": 384.369,
+      "type": "line",
+      "text": "and whosoever will not come",
+      "verse": "42:27",
+      "lineIndex": 112
+    },
+    {
+      "start": 384.549,
+      "end": 386.592,
+      "type": "line",
+      "text": "the same is not compelled to come;",
+      "verse": "42:27",
+      "lineIndex": 113
+    },
+    {
+      "start": 386.772,
+      "end": 391.788,
+      "type": "line",
+      "text": "but in the last day it shall be restored unto him according to his deeds.",
+      "verse": "42:27",
+      "lineIndex": 114
+    },
+    {
+      "start": 392.468,
+      "end": 394.604,
+      "type": "line",
+      "text": "If he has desired to do evil,",
+      "verse": "42:28",
+      "lineIndex": 115
+    },
+    {
+      "start": 394.784,
+      "end": 397.013,
+      "type": "line",
+      "text": "and has not repented in his days,",
+      "verse": "42:28",
+      "lineIndex": 116
+    },
+    {
+      "start": 397.193,
+      "end": 401.373,
+      "type": "line",
+      "text": "behold, evil shall be done unto him, according to the restoration of God.",
+      "verse": "42:28",
+      "lineIndex": 117
+    },
+    {
+      "start": 402.053,
+      "end": 403.446,
+      "type": "line",
+      "text": "And now, my son,",
+      "verse": "42:29",
+      "lineIndex": 118
+    },
+    {
+      "start": 403.626,
+      "end": 406.97,
+      "type": "line",
+      "text": "I desire that ye should let these things trouble you no more,",
+      "verse": "42:29",
+      "lineIndex": 119
+    },
+    {
+      "start": 407.15,
+      "end": 410.308,
+      "type": "line",
+      "text": "and only let your sins trouble you, with that trouble",
+      "verse": "42:29",
+      "lineIndex": 120
+    },
+    {
+      "start": 410.488,
+      "end": 413.182,
+      "type": "line",
+      "text": "which shall bring you down unto repentance.",
+      "verse": "42:29",
+      "lineIndex": 121
+    },
+    {
+      "start": 413.862,
+      "end": 414.977,
+      "type": "line",
+      "text": "O my son,",
+      "verse": "42:30",
+      "lineIndex": 122
+    },
+    {
+      "start": 415.157,
+      "end": 418.501,
+      "type": "line",
+      "text": "I desire that ye should deny the justice of God no more.",
+      "verse": "42:30",
+      "lineIndex": 123
+    },
+    {
+      "start": 418.681,
+      "end": 425.229,
+      "type": "line",
+      "text": "Do not endeavor to excuse yourself in the least point because of your sins, by denying the justice of God;",
+      "verse": "42:30",
+      "lineIndex": 124
+    },
+    {
+      "start": 425.409,
+      "end": 428.52,
+      "type": "line",
+      "text": "but do you let the justice of God, and his mercy,",
+      "verse": "42:30",
+      "lineIndex": 125
+    },
+    {
+      "start": 428.7,
+      "end": 431.951,
+      "type": "line",
+      "text": "and his long-suffering have full sway in your heart;",
+      "verse": "42:30",
+      "lineIndex": 126
+    },
+    {
+      "start": 432.131,
+      "end": 434.964,
+      "type": "line",
+      "text": "and let it bring you down to the dust in humility.",
+      "verse": "42:30",
+      "lineIndex": 127
+    },
+    {
+      "start": 435.644,
+      "end": 437.177,
+      "type": "line",
+      "text": "And now, O my son,",
+      "verse": "42:31",
+      "lineIndex": 128
+    },
+    {
+      "start": 437.357,
+      "end": 440.84,
+      "type": "line",
+      "text": "ye are called of God to preach the word unto this people.",
+      "verse": "42:31",
+      "lineIndex": 129
+    },
+    {
+      "start": 441.02,
+      "end": 443.017,
+      "type": "line",
+      "text": "And now, my son, go thy way,",
+      "verse": "42:31",
+      "lineIndex": 130
+    },
+    {
+      "start": 443.197,
+      "end": 446.169,
+      "type": "line",
+      "text": "declare the word with truth and soberness,",
+      "verse": "42:31",
+      "lineIndex": 131
+    },
+    {
+      "start": 446.349,
+      "end": 449.646,
+      "type": "line",
+      "text": "that thou mayest bring souls unto repentance,",
+      "verse": "42:31",
+      "lineIndex": 132
+    },
+    {
+      "start": 449.826,
+      "end": 453.077,
+      "type": "line",
+      "text": "that the great plan of mercy may have claim upon them.",
+      "verse": "42:31",
+      "lineIndex": 133
+    },
+    {
+      "start": 453.257,
+      "end": 456.322,
+      "type": "line",
+      "text": "And may God grant unto you even according to my words.",
+      "verse": "42:31",
+      "lineIndex": 134
+    },
+    {
+      "start": 456.502,
+      "end": 457.338,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "42:31",
+      "lineIndex": 135
+    }
+  ]
+}
