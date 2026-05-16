@@ -1,0 +1,1048 @@
+{
+  "book": "helaman",
+  "bookName": "Helaman",
+  "chapter": 8,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 445.09,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.344,
+      "type": "line",
+      "text": "And now it came to pass that when Nephi had said these words,",
+      "verse": "8:1",
+      "lineIndex": 0
+    },
+    {
+      "start": 3.524,
+      "end": 6.218,
+      "type": "line",
+      "text": "behold, there were men who were judges,",
+      "verse": "8:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.398,
+      "end": 9.881,
+      "type": "line",
+      "text": "who also belonged to the secret band of Gadianton,",
+      "verse": "8:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.061,
+      "end": 11.501,
+      "type": "line",
+      "text": "and they were angry,",
+      "verse": "8:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.681,
+      "end": 14.607,
+      "type": "line",
+      "text": "and they cried out against him, saying unto the people:",
+      "verse": "8:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 14.787,
+      "end": 17.991,
+      "type": "line",
+      "text": "Why do ye not seize upon this man and bring him forth,",
+      "verse": "8:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 18.171,
+      "end": 21.886,
+      "type": "line",
+      "text": "that he may be condemned according to the crime which he has done?",
+      "verse": "8:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 22.566,
+      "end": 24.981,
+      "type": "line",
+      "text": "Why seest thou this man, and hearest him",
+      "verse": "8:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 25.161,
+      "end": 28.18,
+      "type": "line",
+      "text": "revile against this people and against our law?",
+      "verse": "8:2",
+      "lineIndex": 8
+    },
+    {
+      "start": 28.86,
+      "end": 31.414,
+      "type": "line",
+      "text": "For behold, Nephi had spoken unto them",
+      "verse": "8:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 31.594,
+      "end": 34.102,
+      "type": "line",
+      "text": "concerning the corruptness of their law;",
+      "verse": "8:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 34.282,
+      "end": 38.183,
+      "type": "line",
+      "text": "yea, many things did Nephi speak which cannot be written;",
+      "verse": "8:3",
+      "lineIndex": 11
+    },
+    {
+      "start": 38.363,
+      "end": 42.868,
+      "type": "line",
+      "text": "and nothing did he speak which was contrary to the commandments of God.",
+      "verse": "8:3",
+      "lineIndex": 12
+    },
+    {
+      "start": 43.548,
+      "end": 45.777,
+      "type": "line",
+      "text": "And those judges were angry with him",
+      "verse": "8:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 45.957,
+      "end": 50.647,
+      "type": "line",
+      "text": "because he spake plainly unto them concerning their secret works of darkness;",
+      "verse": "8:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 50.827,
+      "end": 54.217,
+      "type": "line",
+      "text": "nevertheless, they durst not lay their own hands upon him,",
+      "verse": "8:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 54.397,
+      "end": 58.252,
+      "type": "line",
+      "text": "for they feared the people lest they should cry out against them.",
+      "verse": "8:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 58.932,
+      "end": 61.44,
+      "type": "line",
+      "text": "Therefore they did cry unto the people, saying:",
+      "verse": "8:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 61.62,
+      "end": 65.103,
+      "type": "line",
+      "text": "Why do you suffer this man to revile against us?",
+      "verse": "8:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 65.283,
+      "end": 69.416,
+      "type": "line",
+      "text": "For behold he doth condemn all this people, even unto destruction;",
+      "verse": "8:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 69.596,
+      "end": 73.636,
+      "type": "line",
+      "text": "yea, and also that these our great cities shall be taken from us,",
+      "verse": "8:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 73.816,
+      "end": 75.952,
+      "type": "line",
+      "text": "that we shall have no place in them.",
+      "verse": "8:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 76.632,
+      "end": 79.093,
+      "type": "line",
+      "text": "And now we know that this is impossible,",
+      "verse": "8:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 79.273,
+      "end": 83.36,
+      "type": "line",
+      "text": "for behold, we are powerful, and our cities great,",
+      "verse": "8:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 83.54,
+      "end": 86.605,
+      "type": "line",
+      "text": "therefore our enemies can have no power over us.",
+      "verse": "8:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 87.285,
+      "end": 92.347,
+      "type": "line",
+      "text": "And it came to pass that thus they did stir up the people to anger against Nephi,",
+      "verse": "8:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 92.527,
+      "end": 94.849,
+      "type": "line",
+      "text": "and raised contentions among them;",
+      "verse": "8:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 95.029,
+      "end": 97.397,
+      "type": "line",
+      "text": "for there were some who did cry out:",
+      "verse": "8:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 97.577,
+      "end": 100.224,
+      "type": "line",
+      "text": "Let this man alone, for he is a good man,",
+      "verse": "8:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 100.404,
+      "end": 105.141,
+      "type": "line",
+      "text": "and those things which he saith will surely come to pass except we repent;",
+      "verse": "8:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 105.821,
+      "end": 110.465,
+      "type": "line",
+      "text": "Yea, behold, all the judgments will come upon us which he has testified unto us;",
+      "verse": "8:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 110.645,
+      "end": 115.893,
+      "type": "line",
+      "text": "for we know that he has testified aright unto us concerning our iniquities.",
+      "verse": "8:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 116.073,
+      "end": 117.931,
+      "type": "line",
+      "text": "And behold they are many,",
+      "verse": "8:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 118.111,
+      "end": 121.269,
+      "type": "line",
+      "text": "and he knoweth as well all things which shall befall us",
+      "verse": "8:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 121.449,
+      "end": 124.096,
+      "type": "line",
+      "text": "as he knoweth of our iniquities;",
+      "verse": "8:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 124.776,
+      "end": 130.209,
+      "type": "line",
+      "text": "Yea, and behold, if he had not been a prophet he could not have testified concerning those things.",
+      "verse": "8:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 130.889,
+      "end": 134.697,
+      "type": "line",
+      "text": "And it came to pass that those people who sought to destroy Nephi",
+      "verse": "8:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 134.877,
+      "end": 137.06,
+      "type": "line",
+      "text": "were compelled because of their fear,",
+      "verse": "8:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 137.24,
+      "end": 139.423,
+      "type": "line",
+      "text": "that they did not lay their hands on him;",
+      "verse": "8:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 139.603,
+      "end": 142.436,
+      "type": "line",
+      "text": "therefore he began again to speak unto them,",
+      "verse": "8:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 142.616,
+      "end": 146.331,
+      "type": "line",
+      "text": "seeing that he had gained favor in the eyes of some,",
+      "verse": "8:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 146.511,
+      "end": 149.715,
+      "type": "line",
+      "text": "insomuch that the remainder of them did fear.",
+      "verse": "8:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 150.395,
+      "end": 153.878,
+      "type": "line",
+      "text": "Therefore he was constrained to speak more unto them saying:",
+      "verse": "8:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 154.058,
+      "end": 155.405,
+      "type": "line",
+      "text": "Behold, my brethren,",
+      "verse": "8:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 155.585,
+      "end": 157.025,
+      "type": "line",
+      "text": "have ye not read",
+      "verse": "8:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 157.205,
+      "end": 163.056,
+      "type": "line",
+      "text": "that God gave power unto one man, even Moses, to smite upon the waters of the Red Sea,",
+      "verse": "8:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 163.236,
+      "end": 165.512,
+      "type": "line",
+      "text": "and they parted hither and thither,",
+      "verse": "8:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 165.692,
+      "end": 171.776,
+      "type": "line",
+      "text": "insomuch that the Israelites, who were our fathers, came through upon dry ground,",
+      "verse": "8:11",
+      "lineIndex": 49
+    },
+    {
+      "start": 171.956,
+      "end": 176.925,
+      "type": "line",
+      "text": "and the waters closed upon the armies of the Egyptians and swallowed them up?",
+      "verse": "8:11",
+      "lineIndex": 50
+    },
+    {
+      "start": 177.605,
+      "end": 180.809,
+      "type": "line",
+      "text": "And now behold, if God gave unto this man such power,",
+      "verse": "8:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 180.989,
+      "end": 183.868,
+      "type": "line",
+      "text": "then why should ye dispute among yourselves,",
+      "verse": "8:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 184.048,
+      "end": 186.974,
+      "type": "line",
+      "text": "and say that he hath given unto me no power",
+      "verse": "8:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 187.154,
+      "end": 190.033,
+      "type": "line",
+      "text": "whereby I may know concerning the judgments",
+      "verse": "8:12",
+      "lineIndex": 54
+    },
+    {
+      "start": 190.213,
+      "end": 192.674,
+      "type": "line",
+      "text": "that shall come upon you except ye repent?",
+      "verse": "8:12",
+      "lineIndex": 55
+    },
+    {
+      "start": 193.354,
+      "end": 195.769,
+      "type": "line",
+      "text": "But, behold, ye not only deny my words,",
+      "verse": "8:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 195.949,
+      "end": 200.082,
+      "type": "line",
+      "text": "but ye also deny all the words which have been spoken by our fathers,",
+      "verse": "8:13",
+      "lineIndex": 57
+    },
+    {
+      "start": 200.262,
+      "end": 207.182,
+      "type": "line",
+      "text": "and also the words which were spoken by this man, Moses, who had such great power given unto him,",
+      "verse": "8:13",
+      "lineIndex": 58
+    },
+    {
+      "start": 207.362,
+      "end": 211.588,
+      "type": "line",
+      "text": "yea, the words which he hath spoken concerning the coming of the Messiah.",
+      "verse": "8:13",
+      "lineIndex": 59
+    },
+    {
+      "start": 212.268,
+      "end": 215.287,
+      "type": "line",
+      "text": "Yea, did he not bear record that the Son of God should come?",
+      "verse": "8:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 215.467,
+      "end": 218.811,
+      "type": "line",
+      "text": "And as he lifted up the brazen serpent in the wilderness,",
+      "verse": "8:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 218.991,
+      "end": 221.592,
+      "type": "line",
+      "text": "even so shall he be lifted up who should come.",
+      "verse": "8:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 222.272,
+      "end": 225.337,
+      "type": "line",
+      "text": "And as many as should look upon that serpent should live,",
+      "verse": "8:15",
+      "lineIndex": 63
+    },
+    {
+      "start": 225.517,
+      "end": 232.437,
+      "type": "line",
+      "text": "even so as many as should look upon the Son of God with faith, having a contrite spirit, might live,",
+      "verse": "8:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 232.617,
+      "end": 235.032,
+      "type": "line",
+      "text": "even unto that life which is eternal.",
+      "verse": "8:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 235.712,
+      "end": 239.381,
+      "type": "line",
+      "text": "And now behold, Moses did not only testify of these things,",
+      "verse": "8:16",
+      "lineIndex": 66
+    },
+    {
+      "start": 239.561,
+      "end": 244.066,
+      "type": "line",
+      "text": "but also all the holy prophets, from his days even to the days of Abraham.",
+      "verse": "8:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 244.746,
+      "end": 247.486,
+      "type": "line",
+      "text": "Yea, and behold, Abraham saw of his coming,",
+      "verse": "8:17",
+      "lineIndex": 68
+    },
+    {
+      "start": 247.666,
+      "end": 250.452,
+      "type": "line",
+      "text": "and was filled with gladness and did rejoice.",
+      "verse": "8:17",
+      "lineIndex": 69
+    },
+    {
+      "start": 251.132,
+      "end": 255.451,
+      "type": "line",
+      "text": "Yea, and behold I say unto you, that Abraham not only knew of these things,",
+      "verse": "8:18",
+      "lineIndex": 70
+    },
+    {
+      "start": 255.631,
+      "end": 258.557,
+      "type": "line",
+      "text": "but there were many before the days of Abraham",
+      "verse": "8:18",
+      "lineIndex": 71
+    },
+    {
+      "start": 258.737,
+      "end": 263.567,
+      "type": "line",
+      "text": "who were called by the order of God; yea, even after the order of his Son;",
+      "verse": "8:18",
+      "lineIndex": 72
+    },
+    {
+      "start": 263.747,
+      "end": 266.626,
+      "type": "line",
+      "text": "and this that it should be shown unto the people,",
+      "verse": "8:18",
+      "lineIndex": 73
+    },
+    {
+      "start": 266.806,
+      "end": 269.778,
+      "type": "line",
+      "text": "a great many thousand years before his coming,",
+      "verse": "8:18",
+      "lineIndex": 74
+    },
+    {
+      "start": 269.958,
+      "end": 272.466,
+      "type": "line",
+      "text": "that even redemption should come unto them.",
+      "verse": "8:18",
+      "lineIndex": 75
+    },
+    {
+      "start": 273.146,
+      "end": 277.279,
+      "type": "line",
+      "text": "And now I would that ye should know, that even since the days of Abraham",
+      "verse": "8:19",
+      "lineIndex": 76
+    },
+    {
+      "start": 277.459,
+      "end": 281.035,
+      "type": "line",
+      "text": "there have been many prophets that have testified these things;",
+      "verse": "8:19",
+      "lineIndex": 77
+    },
+    {
+      "start": 281.215,
+      "end": 284.326,
+      "type": "line",
+      "text": "yea, behold, the prophet Zenos did testify boldly;",
+      "verse": "8:19",
+      "lineIndex": 78
+    },
+    {
+      "start": 284.506,
+      "end": 286.364,
+      "type": "line",
+      "text": "for the which he was slain.",
+      "verse": "8:19",
+      "lineIndex": 79
+    },
+    {
+      "start": 287.044,
+      "end": 290.016,
+      "type": "line",
+      "text": "And behold, also Zenock, and also Ezias,",
+      "verse": "8:20",
+      "lineIndex": 80
+    },
+    {
+      "start": 290.196,
+      "end": 292.564,
+      "type": "line",
+      "text": "and also Isaiah, and Jeremiah,",
+      "verse": "8:20",
+      "lineIndex": 81
+    },
+    {
+      "start": 292.744,
+      "end": 295.02,
+      "type": "line",
+      "text": "(Jeremiah being that same prophet",
+      "verse": "8:20",
+      "lineIndex": 82
+    },
+    {
+      "start": 295.2,
+      "end": 298.311,
+      "type": "line",
+      "text": "who testified of the destruction of Jerusalem)",
+      "verse": "8:20",
+      "lineIndex": 83
+    },
+    {
+      "start": 298.491,
+      "end": 303.599,
+      "type": "line",
+      "text": "and now we know that Jerusalem was destroyed according to the words of Jeremiah.",
+      "verse": "8:20",
+      "lineIndex": 84
+    },
+    {
+      "start": 303.779,
+      "end": 307.494,
+      "type": "line",
+      "text": "O then why not the Son of God come, according to his prophecy?",
+      "verse": "8:20",
+      "lineIndex": 85
+    },
+    {
+      "start": 308.174,
+      "end": 311.007,
+      "type": "line",
+      "text": "And now will you dispute that Jerusalem was destroyed?",
+      "verse": "8:21",
+      "lineIndex": 86
+    },
+    {
+      "start": 311.187,
+      "end": 315.924,
+      "type": "line",
+      "text": "Will ye say that the sons of Zedekiah were not slain, all except it were Mulek?",
+      "verse": "8:21",
+      "lineIndex": 87
+    },
+    {
+      "start": 316.104,
+      "end": 320.33,
+      "type": "line",
+      "text": "Yea, and do ye not behold that the seed of Zedekiah are with us,",
+      "verse": "8:21",
+      "lineIndex": 88
+    },
+    {
+      "start": 320.51,
+      "end": 323.668,
+      "type": "line",
+      "text": "and they were driven out of the land of Jerusalem?",
+      "verse": "8:21",
+      "lineIndex": 89
+    },
+    {
+      "start": 323.848,
+      "end": 325.566,
+      "type": "line",
+      "text": "But behold, this is not all\u2014",
+      "verse": "8:21",
+      "lineIndex": 90
+    },
+    {
+      "start": 326.246,
+      "end": 329.311,
+      "type": "line",
+      "text": "Our father Lehi was driven out of Jerusalem",
+      "verse": "8:22",
+      "lineIndex": 91
+    },
+    {
+      "start": 329.491,
+      "end": 331.906,
+      "type": "line",
+      "text": "because he testified of these things.",
+      "verse": "8:22",
+      "lineIndex": 92
+    },
+    {
+      "start": 332.086,
+      "end": 334.454,
+      "type": "line",
+      "text": "Nephi also testified of these things,",
+      "verse": "8:22",
+      "lineIndex": 93
+    },
+    {
+      "start": 334.634,
+      "end": 337.142,
+      "type": "line",
+      "text": "and also almost all of our fathers,",
+      "verse": "8:22",
+      "lineIndex": 94
+    },
+    {
+      "start": 337.322,
+      "end": 338.994,
+      "type": "line",
+      "text": "even down to this time;",
+      "verse": "8:22",
+      "lineIndex": 95
+    },
+    {
+      "start": 339.174,
+      "end": 342.146,
+      "type": "line",
+      "text": "yea, they have testified of the coming of Christ,",
+      "verse": "8:22",
+      "lineIndex": 96
+    },
+    {
+      "start": 342.326,
+      "end": 343.998,
+      "type": "line",
+      "text": "and have looked forward,",
+      "verse": "8:22",
+      "lineIndex": 97
+    },
+    {
+      "start": 344.178,
+      "end": 347.15,
+      "type": "line",
+      "text": "and have rejoiced in his day which is to come.",
+      "verse": "8:22",
+      "lineIndex": 98
+    },
+    {
+      "start": 347.83,
+      "end": 350.849,
+      "type": "line",
+      "text": "And behold, he is God, and he is with them,",
+      "verse": "8:23",
+      "lineIndex": 99
+    },
+    {
+      "start": 351.029,
+      "end": 353.49,
+      "type": "line",
+      "text": "and he did manifest himself unto them,",
+      "verse": "8:23",
+      "lineIndex": 100
+    },
+    {
+      "start": 353.67,
+      "end": 355.76,
+      "type": "line",
+      "text": "that they were redeemed by him;",
+      "verse": "8:23",
+      "lineIndex": 101
+    },
+    {
+      "start": 355.94,
+      "end": 359.609,
+      "type": "line",
+      "text": "and they gave unto him glory, because of that which is to come.",
+      "verse": "8:23",
+      "lineIndex": 102
+    },
+    {
+      "start": 360.289,
+      "end": 362.472,
+      "type": "line",
+      "text": "And now, seeing ye know these things",
+      "verse": "8:24",
+      "lineIndex": 103
+    },
+    {
+      "start": 362.652,
+      "end": 365.578,
+      "type": "line",
+      "text": "and cannot deny them except ye shall lie,",
+      "verse": "8:24",
+      "lineIndex": 104
+    },
+    {
+      "start": 365.758,
+      "end": 367.987,
+      "type": "line",
+      "text": "therefore in this ye have sinned,",
+      "verse": "8:24",
+      "lineIndex": 105
+    },
+    {
+      "start": 368.167,
+      "end": 370.489,
+      "type": "line",
+      "text": "for ye have rejected all these things,",
+      "verse": "8:24",
+      "lineIndex": 106
+    },
+    {
+      "start": 370.669,
+      "end": 374.198,
+      "type": "line",
+      "text": "notwithstanding so many evidences which ye have received;",
+      "verse": "8:24",
+      "lineIndex": 107
+    },
+    {
+      "start": 374.378,
+      "end": 376.746,
+      "type": "line",
+      "text": "yea, even ye have received all things,",
+      "verse": "8:24",
+      "lineIndex": 108
+    },
+    {
+      "start": 376.926,
+      "end": 378.644,
+      "type": "line",
+      "text": "both things in heaven,",
+      "verse": "8:24",
+      "lineIndex": 109
+    },
+    {
+      "start": 378.824,
+      "end": 381.471,
+      "type": "line",
+      "text": "and all things which are in the earth,",
+      "verse": "8:24",
+      "lineIndex": 110
+    },
+    {
+      "start": 381.651,
+      "end": 384.019,
+      "type": "line",
+      "text": "as a witness that they are true.",
+      "verse": "8:24",
+      "lineIndex": 111
+    },
+    {
+      "start": 384.699,
+      "end": 387.485,
+      "type": "line",
+      "text": "But behold, ye have rejected the truth,",
+      "verse": "8:25",
+      "lineIndex": 112
+    },
+    {
+      "start": 387.665,
+      "end": 390.08,
+      "type": "line",
+      "text": "and rebelled against your holy God;",
+      "verse": "8:25",
+      "lineIndex": 113
+    },
+    {
+      "start": 390.26,
+      "end": 391.932,
+      "type": "line",
+      "text": "and even at this time,",
+      "verse": "8:25",
+      "lineIndex": 114
+    },
+    {
+      "start": 392.112,
+      "end": 395.409,
+      "type": "line",
+      "text": "instead of laying up for yourselves treasures in heaven,",
+      "verse": "8:25",
+      "lineIndex": 115
+    },
+    {
+      "start": 395.589,
+      "end": 397.632,
+      "type": "line",
+      "text": "where nothing doth corrupt,",
+      "verse": "8:25",
+      "lineIndex": 116
+    },
+    {
+      "start": 397.812,
+      "end": 400.645,
+      "type": "line",
+      "text": "and where nothing can come which is unclean,",
+      "verse": "8:25",
+      "lineIndex": 117
+    },
+    {
+      "start": 400.825,
+      "end": 404.633,
+      "type": "line",
+      "text": "ye are heaping up for yourselves wrath against the day of judgment.",
+      "verse": "8:25",
+      "lineIndex": 118
+    },
+    {
+      "start": 405.313,
+      "end": 414.322,
+      "type": "line",
+      "text": "Yea, even at this time ye are ripening, because of your murders and your fornication and wickedness, for everlasting destruction;",
+      "verse": "8:26",
+      "lineIndex": 119
+    },
+    {
+      "start": 414.502,
+      "end": 417.892,
+      "type": "line",
+      "text": "yea, and except ye repent it will come unto you soon.",
+      "verse": "8:26",
+      "lineIndex": 120
+    },
+    {
+      "start": 418.572,
+      "end": 421.033,
+      "type": "line",
+      "text": "Yea, behold it is now even at your doors;",
+      "verse": "8:27",
+      "lineIndex": 121
+    },
+    {
+      "start": 421.213,
+      "end": 424.464,
+      "type": "line",
+      "text": "yea, go ye in unto the judgment-seat, and search;",
+      "verse": "8:27",
+      "lineIndex": 122
+    },
+    {
+      "start": 424.644,
+      "end": 427.059,
+      "type": "line",
+      "text": "and behold, your judge is murdered,",
+      "verse": "8:27",
+      "lineIndex": 123
+    },
+    {
+      "start": 427.239,
+      "end": 428.911,
+      "type": "line",
+      "text": "and he lieth in his blood;",
+      "verse": "8:27",
+      "lineIndex": 124
+    },
+    {
+      "start": 429.091,
+      "end": 431.367,
+      "type": "line",
+      "text": "and he hath been murdered by his brother,",
+      "verse": "8:27",
+      "lineIndex": 125
+    },
+    {
+      "start": 431.547,
+      "end": 433.962,
+      "type": "line",
+      "text": "who seeketh to sit in the judgment-seat.",
+      "verse": "8:27",
+      "lineIndex": 126
+    },
+    {
+      "start": 434.642,
+      "end": 438.171,
+      "type": "line",
+      "text": "And behold, they both belong to your secret band,",
+      "verse": "8:28",
+      "lineIndex": 127
+    },
+    {
+      "start": 438.351,
+      "end": 441.37,
+      "type": "line",
+      "text": "whose author is Gadianton and the evil one",
+      "verse": "8:28",
+      "lineIndex": 128
+    },
+    {
+      "start": 441.55,
+      "end": 444.429,
+      "type": "line",
+      "text": "who seeketh to destroy the souls of men.",
+      "verse": "8:28",
+      "lineIndex": 129
+    }
+  ]
+}
