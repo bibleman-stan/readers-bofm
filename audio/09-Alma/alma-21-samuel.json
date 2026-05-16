@@ -1,0 +1,696 @@
+{
+  "book": "alma",
+  "bookName": "Alma",
+  "chapter": 21,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 357.864,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.734,
+      "type": "line",
+      "text": "Now when Ammon and his brethren separated themselves in the borders of the land of the Lamanites,",
+      "verse": "21:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.914,
+      "end": 12.951,
+      "type": "line",
+      "text": "behold Aaron took his journey towards the land which was called by the Lamanites, Jerusalem,",
+      "verse": "21:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 13.131,
+      "end": 16.521,
+      "type": "line",
+      "text": "calling it after the land of their fathers' nativity;",
+      "verse": "21:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 16.701,
+      "end": 19.627,
+      "type": "line",
+      "text": "and it was away joining the borders of Mormon.",
+      "verse": "21:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 20.307,
+      "end": 27.923,
+      "type": "line",
+      "text": "Now the Lamanites and the Amalekites and the people of Amulon had built a great city, which was called Jerusalem.",
+      "verse": "21:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 28.603,
+      "end": 31.9,
+      "type": "line",
+      "text": "Now the Lamanites of themselves were sufficiently hardened,",
+      "verse": "21:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 32.08,
+      "end": 35.609,
+      "type": "line",
+      "text": "but the Amalekites and the Amulonites were still harder;",
+      "verse": "21:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 35.789,
+      "end": 40.712,
+      "type": "line",
+      "text": "therefore they did cause the Lamanites that they should harden their hearts,",
+      "verse": "21:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 40.892,
+      "end": 45.443,
+      "type": "line",
+      "text": "that they should wax strong in wickedness and their abominations.",
+      "verse": "21:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 46.123,
+      "end": 49.652,
+      "type": "line",
+      "text": "And it came to pass that Aaron came to the city of Jerusalem,",
+      "verse": "21:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 49.832,
+      "end": 52.34,
+      "type": "line",
+      "text": "and first began to preach to the Amalekites.",
+      "verse": "21:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 52.52,
+      "end": 55.539,
+      "type": "line",
+      "text": "And he began to preach to them in their synagogues,",
+      "verse": "21:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 55.719,
+      "end": 59.202,
+      "type": "line",
+      "text": "for they had built synagogues after the order of the Nehors;",
+      "verse": "21:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 59.382,
+      "end": 64.072,
+      "type": "line",
+      "text": "for many of the Amalekites and the Amulonites were after the order of the Nehors.",
+      "verse": "21:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 64.752,
+      "end": 70.232,
+      "type": "line",
+      "text": "Therefore, as Aaron entered into one of their synagogues to preach unto the people,",
+      "verse": "21:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 70.412,
+      "end": 72.455,
+      "type": "line",
+      "text": "and as he was speaking unto them,",
+      "verse": "21:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 72.635,
+      "end": 77.418,
+      "type": "line",
+      "text": "behold there arose an Amalekite and began to contend with him, saying:",
+      "verse": "21:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 77.598,
+      "end": 79.641,
+      "type": "line",
+      "text": "What is that thou hast testified?",
+      "verse": "21:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 79.821,
+      "end": 81.446,
+      "type": "line",
+      "text": "Hast thou seen an angel?",
+      "verse": "21:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 81.626,
+      "end": 83.809,
+      "type": "line",
+      "text": "Why do not angels appear unto us?",
+      "verse": "21:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 83.989,
+      "end": 86.868,
+      "type": "line",
+      "text": "Behold are not this people as good as thy people?",
+      "verse": "21:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 87.548,
+      "end": 89.127,
+      "type": "line",
+      "text": "Thou also sayest,",
+      "verse": "21:6",
+      "lineIndex": 22
+    },
+    {
+      "start": 89.307,
+      "end": 91.768,
+      "type": "line",
+      "text": "except we repent we shall perish.",
+      "verse": "21:6",
+      "lineIndex": 23
+    },
+    {
+      "start": 91.948,
+      "end": 95.292,
+      "type": "line",
+      "text": "How knowest thou the thought and intent of our hearts?",
+      "verse": "21:6",
+      "lineIndex": 24
+    },
+    {
+      "start": 95.472,
+      "end": 97.887,
+      "type": "line",
+      "text": "How knowest thou that we have cause to repent?",
+      "verse": "21:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 98.067,
+      "end": 101.411,
+      "type": "line",
+      "text": "How knowest thou that we are not a righteous people?",
+      "verse": "21:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 101.591,
+      "end": 103.82,
+      "type": "line",
+      "text": "Behold, we have built sanctuaries,",
+      "verse": "21:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 104.0,
+      "end": 107.251,
+      "type": "line",
+      "text": "and we do assemble ourselves together to worship God.",
+      "verse": "21:6",
+      "lineIndex": 28
+    },
+    {
+      "start": 107.431,
+      "end": 109.799,
+      "type": "line",
+      "text": "We do believe that God will save all men.",
+      "verse": "21:6",
+      "lineIndex": 29
+    },
+    {
+      "start": 110.479,
+      "end": 112.197,
+      "type": "line",
+      "text": "Now Aaron said unto him:",
+      "verse": "21:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 112.377,
+      "end": 116.835,
+      "type": "line",
+      "text": "Believest thou that the Son of God shall come to redeem mankind from their sins?",
+      "verse": "21:7",
+      "lineIndex": 31
+    },
+    {
+      "start": 117.515,
+      "end": 119.14,
+      "type": "line",
+      "text": "And the man said unto him:",
+      "verse": "21:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 119.32,
+      "end": 122.478,
+      "type": "line",
+      "text": "We do not believe that thou knowest any such thing.",
+      "verse": "21:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 122.658,
+      "end": 125.352,
+      "type": "line",
+      "text": "We do not believe in these foolish traditions.",
+      "verse": "21:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 125.532,
+      "end": 128.597,
+      "type": "line",
+      "text": "We do not believe that thou knowest of things to come,",
+      "verse": "21:8",
+      "lineIndex": 35
+    },
+    {
+      "start": 128.777,
+      "end": 138.483,
+      "type": "line",
+      "text": "neither do we believe that thy fathers and also that our fathers did know concerning the things which they spake, of that which is to come.",
+      "verse": "21:8",
+      "lineIndex": 36
+    },
+    {
+      "start": 139.163,
+      "end": 142.692,
+      "type": "line",
+      "text": "Now Aaron began to open the scriptures unto them",
+      "verse": "21:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 142.872,
+      "end": 148.213,
+      "type": "line",
+      "text": "concerning the coming of Christ, and also concerning the resurrection of the dead,",
+      "verse": "21:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 148.393,
+      "end": 151.458,
+      "type": "line",
+      "text": "and that there could be no redemption for mankind",
+      "verse": "21:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 151.638,
+      "end": 157.768,
+      "type": "line",
+      "text": "save it were through the death and sufferings of Christ, and the atonement of his blood.",
+      "verse": "21:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 158.448,
+      "end": 163.046,
+      "type": "line",
+      "text": "And it came to pass as he began to expound these things unto them",
+      "verse": "21:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 163.226,
+      "end": 166.245,
+      "type": "line",
+      "text": "they were angry with him, and began to mock him;",
+      "verse": "21:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 166.425,
+      "end": 169.49,
+      "type": "line",
+      "text": "and they would not hear the words which he spake.",
+      "verse": "21:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 170.17,
+      "end": 173.281,
+      "type": "line",
+      "text": "Therefore, when he saw that they would not hear his words,",
+      "verse": "21:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 173.461,
+      "end": 176.108,
+      "type": "line",
+      "text": "he departed out of their synagogue,",
+      "verse": "21:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 176.288,
+      "end": 179.91,
+      "type": "line",
+      "text": "and came over to a village which was called Ani-Anti,",
+      "verse": "21:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 180.09,
+      "end": 186.127,
+      "type": "line",
+      "text": "and there he found Muloki preaching the word unto them; and also Ammah and his brethren.",
+      "verse": "21:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 186.307,
+      "end": 188.675,
+      "type": "line",
+      "text": "And they contended with many about the word.",
+      "verse": "21:11",
+      "lineIndex": 48
+    },
+    {
+      "start": 189.355,
+      "end": 194.278,
+      "type": "line",
+      "text": "And it came to pass that they saw that the people would harden their hearts,",
+      "verse": "21:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 194.458,
+      "end": 198.127,
+      "type": "line",
+      "text": "therefore they departed and came over into the land of Middoni.",
+      "verse": "21:12",
+      "lineIndex": 51
+    },
+    {
+      "start": 198.307,
+      "end": 200.768,
+      "type": "line",
+      "text": "And they did preach the word unto many,",
+      "verse": "21:12",
+      "lineIndex": 52
+    },
+    {
+      "start": 200.948,
+      "end": 204.059,
+      "type": "line",
+      "text": "and few believed on the words which they taught.",
+      "verse": "21:12",
+      "lineIndex": 53
+    },
+    {
+      "start": 204.739,
+      "end": 209.708,
+      "type": "line",
+      "text": "Nevertheless, Aaron and a certain number of his brethren were taken and cast into prison,",
+      "verse": "21:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 209.888,
+      "end": 214.95,
+      "type": "line",
+      "text": "and the remainder of them fled out of the land of Middoni unto the regions round about.",
+      "verse": "21:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 215.63,
+      "end": 218.834,
+      "type": "line",
+      "text": "And those who were cast into prison suffered many things,",
+      "verse": "21:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 219.014,
+      "end": 222.497,
+      "type": "line",
+      "text": "and they were delivered by the hand of Lamoni and Ammon,",
+      "verse": "21:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 222.677,
+      "end": 224.953,
+      "type": "line",
+      "text": "and they were fed and clothed.",
+      "verse": "21:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 225.633,
+      "end": 228.419,
+      "type": "line",
+      "text": "And they went forth again to declare the word,",
+      "verse": "21:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 228.599,
+      "end": 233.336,
+      "type": "line",
+      "text": "and thus they were delivered for the first time out of prison;",
+      "verse": "21:15",
+      "lineIndex": 60
+    },
+    {
+      "start": 233.516,
+      "end": 235.466,
+      "type": "line",
+      "text": "and thus they had suffered.",
+      "verse": "21:15",
+      "lineIndex": 61
+    },
+    {
+      "start": 236.146,
+      "end": 240.883,
+      "type": "line",
+      "text": "And they went forth whithersoever they were led by the Spirit of the Lord,",
+      "verse": "21:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 241.063,
+      "end": 244.964,
+      "type": "line",
+      "text": "preaching the word of God in every synagogue of the Amalekites,",
+      "verse": "21:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 245.144,
+      "end": 249.509,
+      "type": "line",
+      "text": "or in every assembly of the Lamanites where they could be admitted.",
+      "verse": "21:16",
+      "lineIndex": 64
+    },
+    {
+      "start": 250.189,
+      "end": 253.393,
+      "type": "line",
+      "text": "And it came to pass that the Lord began to bless them,",
+      "verse": "21:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 253.573,
+      "end": 258.589,
+      "type": "line",
+      "text": "insomuch that they brought many to the knowledge of the truth;",
+      "verse": "21:17",
+      "lineIndex": 66
+    },
+    {
+      "start": 258.769,
+      "end": 264.853,
+      "type": "line",
+      "text": "yea, they did convince many of their sins, and of the traditions of their fathers, which were not correct.",
+      "verse": "21:17",
+      "lineIndex": 67
+    },
+    {
+      "start": 265.533,
+      "end": 274.589,
+      "type": "line",
+      "text": "And it came to pass that Ammon and Lamoni returned from the land of Middoni to the land of Ishmael, which was the land of their inheritance.",
+      "verse": "21:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 275.269,
+      "end": 280.238,
+      "type": "line",
+      "text": "And king Lamoni would not suffer that Ammon should serve him, or be his servant.",
+      "verse": "21:19",
+      "lineIndex": 69
+    },
+    {
+      "start": 280.918,
+      "end": 286.119,
+      "type": "line",
+      "text": "But he caused that there should be synagogues built in the land of Ishmael;",
+      "verse": "21:20",
+      "lineIndex": 70
+    },
+    {
+      "start": 286.299,
+      "end": 292.476,
+      "type": "line",
+      "text": "and he caused that his people, or the people who were under his reign, should assemble themselves together.",
+      "verse": "21:20",
+      "lineIndex": 71
+    },
+    {
+      "start": 293.156,
+      "end": 295.246,
+      "type": "line",
+      "text": "And he did rejoice over them,",
+      "verse": "21:21",
+      "lineIndex": 72
+    },
+    {
+      "start": 295.426,
+      "end": 297.562,
+      "type": "line",
+      "text": "and he did teach them many things.",
+      "verse": "21:21",
+      "lineIndex": 73
+    },
+    {
+      "start": 297.742,
+      "end": 302.2,
+      "type": "line",
+      "text": "And he did also declare unto them that they were a people who were under him,",
+      "verse": "21:21",
+      "lineIndex": 74
+    },
+    {
+      "start": 302.38,
+      "end": 304.888,
+      "type": "line",
+      "text": "and that they were a free people,",
+      "verse": "21:21",
+      "lineIndex": 75
+    },
+    {
+      "start": 305.068,
+      "end": 310.362,
+      "type": "line",
+      "text": "that they were free from the oppressions of the king, his father;",
+      "verse": "21:21",
+      "lineIndex": 76
+    },
+    {
+      "start": 310.542,
+      "end": 321.037,
+      "type": "line",
+      "text": "for that his father had granted unto him that he might reign over the people who were in the land of Ishmael, and in all the land round about.",
+      "verse": "21:21",
+      "lineIndex": 77
+    },
+    {
+      "start": 321.717,
+      "end": 329.751,
+      "type": "line",
+      "text": "And he also declared unto them that they might have the liberty of worshiping the Lord their God according to their desires,",
+      "verse": "21:22",
+      "lineIndex": 78
+    },
+    {
+      "start": 329.931,
+      "end": 332.16,
+      "type": "line",
+      "text": "in whatsoever place they were in,",
+      "verse": "21:22",
+      "lineIndex": 79
+    },
+    {
+      "start": 332.34,
+      "end": 336.659,
+      "type": "line",
+      "text": "if it were in the land which was under the reign of king Lamoni.",
+      "verse": "21:22",
+      "lineIndex": 80
+    },
+    {
+      "start": 337.339,
+      "end": 340.497,
+      "type": "line",
+      "text": "And Ammon did preach unto the people of king Lamoni;",
+      "verse": "21:23",
+      "lineIndex": 81
+    },
+    {
+      "start": 340.677,
+      "end": 347.55,
+      "type": "line",
+      "text": "and it came to pass that he did teach them all things concerning things pertaining to righteousness.",
+      "verse": "21:23",
+      "lineIndex": 82
+    },
+    {
+      "start": 347.73,
+      "end": 351.12,
+      "type": "line",
+      "text": "And he did exhort them daily, with all diligence;",
+      "verse": "21:23",
+      "lineIndex": 83
+    },
+    {
+      "start": 351.3,
+      "end": 353.622,
+      "type": "line",
+      "text": "and they gave heed unto his word,",
+      "verse": "21:23",
+      "lineIndex": 84
+    },
+    {
+      "start": 353.802,
+      "end": 357.192,
+      "type": "line",
+      "text": "and they were zealous for keeping the commandments of God.",
+      "verse": "21:23",
+      "lineIndex": 85
+    }
+  ]
+}
