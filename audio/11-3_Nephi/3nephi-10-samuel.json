@@ -1,0 +1,704 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 10,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 299.759,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.108,
+      "type": "line",
+      "text": "And now behold, it came to pass that all the people of the land did hear these sayings,",
+      "verse": "10:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.288,
+      "end": 7.006,
+      "type": "line",
+      "text": "and did witness of it.",
+      "verse": "10:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.186,
+      "end": 12.109,
+      "type": "line",
+      "text": "And after these sayings there was silence in the land for the space of many hours;",
+      "verse": "10:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 12.789,
+      "end": 15.622,
+      "type": "line",
+      "text": "For so great was the astonishment of the people",
+      "verse": "10:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 15.802,
+      "end": 18.449,
+      "type": "line",
+      "text": "that they did cease lamenting and howling",
+      "verse": "10:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 18.629,
+      "end": 21.973,
+      "type": "line",
+      "text": "for the loss of their kindred which had been slain;",
+      "verse": "10:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 22.153,
+      "end": 26.843,
+      "type": "line",
+      "text": "therefore there was silence in all the land for the space of many hours.",
+      "verse": "10:2",
+      "lineIndex": 7
+    },
+    {
+      "start": 27.523,
+      "end": 31.749,
+      "type": "line",
+      "text": "And it came to pass that there came a voice again unto the people,",
+      "verse": "10:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 31.929,
+      "end": 33.647,
+      "type": "line",
+      "text": "and all the people did hear,",
+      "verse": "10:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 33.827,
+      "end": 35.731,
+      "type": "line",
+      "text": "and did witness of it, saying:",
+      "verse": "10:3",
+      "lineIndex": 10
+    },
+    {
+      "start": 36.411,
+      "end": 37.572,
+      "type": "line",
+      "text": "O ye people",
+      "verse": "10:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 37.752,
+      "end": 40.538,
+      "type": "line",
+      "text": "of these great cities which have fallen,",
+      "verse": "10:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 40.718,
+      "end": 42.901,
+      "type": "line",
+      "text": "who are descendants of Jacob,",
+      "verse": "10:4",
+      "lineIndex": 13
+    },
+    {
+      "start": 43.081,
+      "end": 45.589,
+      "type": "line",
+      "text": "yea, who are of the house of Israel,",
+      "verse": "10:4",
+      "lineIndex": 14
+    },
+    {
+      "start": 45.769,
+      "end": 47.534,
+      "type": "line",
+      "text": "how oft have I gathered you",
+      "verse": "10:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 47.714,
+      "end": 51.104,
+      "type": "line",
+      "text": "as a hen gathereth her chickens under her wings,",
+      "verse": "10:4",
+      "lineIndex": 16
+    },
+    {
+      "start": 51.284,
+      "end": 52.724,
+      "type": "line",
+      "text": "and have nourished you.",
+      "verse": "10:4",
+      "lineIndex": 17
+    },
+    {
+      "start": 53.404,
+      "end": 56.098,
+      "type": "line",
+      "text": "And again, how oft would I have gathered you",
+      "verse": "10:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 56.278,
+      "end": 59.668,
+      "type": "line",
+      "text": "as a hen gathereth her chickens under her wings,",
+      "verse": "10:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 59.848,
+      "end": 63.888,
+      "type": "line",
+      "text": "yea, O ye people of the house of Israel, who have fallen;",
+      "verse": "10:5",
+      "lineIndex": 20
+    },
+    {
+      "start": 64.068,
+      "end": 66.483,
+      "type": "line",
+      "text": "yea, O ye people of the house of Israel,",
+      "verse": "10:5",
+      "lineIndex": 21
+    },
+    {
+      "start": 66.663,
+      "end": 69.635,
+      "type": "line",
+      "text": "ye that dwell at Jerusalem, as ye that have fallen;",
+      "verse": "10:5",
+      "lineIndex": 22
+    },
+    {
+      "start": 69.815,
+      "end": 72.323,
+      "type": "line",
+      "text": "yea, how oft would I have gathered you",
+      "verse": "10:5",
+      "lineIndex": 23
+    },
+    {
+      "start": 72.503,
+      "end": 75.8,
+      "type": "line",
+      "text": "as a hen gathereth her chickens, and ye would not.",
+      "verse": "10:5",
+      "lineIndex": 24
+    },
+    {
+      "start": 76.48,
+      "end": 81.496,
+      "type": "line",
+      "text": "O ye house of Israel whom I have spared, how oft will I gather you",
+      "verse": "10:6",
+      "lineIndex": 25
+    },
+    {
+      "start": 81.676,
+      "end": 85.066,
+      "type": "line",
+      "text": "as a hen gathereth her chickens under her wings,",
+      "verse": "10:6",
+      "lineIndex": 26
+    },
+    {
+      "start": 85.246,
+      "end": 89.426,
+      "type": "line",
+      "text": "if ye will repent and return unto me with full purpose of heart.",
+      "verse": "10:6",
+      "lineIndex": 27
+    },
+    {
+      "start": 90.106,
+      "end": 92.428,
+      "type": "line",
+      "text": "But if not, O house of Israel,",
+      "verse": "10:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 92.608,
+      "end": 96.23,
+      "type": "line",
+      "text": "the places of your dwellings shall become desolate",
+      "verse": "10:7",
+      "lineIndex": 29
+    },
+    {
+      "start": 96.41,
+      "end": 100.45,
+      "type": "line",
+      "text": "until the time of the fulfilling of the covenant to your fathers.",
+      "verse": "10:7",
+      "lineIndex": 30
+    },
+    {
+      "start": 101.13,
+      "end": 105.402,
+      "type": "line",
+      "text": "And now it came to pass that after the people had heard these words,",
+      "verse": "10:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 105.582,
+      "end": 111.201,
+      "type": "line",
+      "text": "behold, they began to weep and howl again because of the loss of their kindred and friends.",
+      "verse": "10:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 111.881,
+      "end": 115.643,
+      "type": "line",
+      "text": "And it came to pass that thus did the three days pass away.",
+      "verse": "10:9",
+      "lineIndex": 34
+    },
+    {
+      "start": 115.823,
+      "end": 117.588,
+      "type": "line",
+      "text": "And it was in the morning,",
+      "verse": "10:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 117.768,
+      "end": 121.437,
+      "type": "line",
+      "text": "and the darkness dispersed from off the face of the land,",
+      "verse": "10:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 121.617,
+      "end": 123.707,
+      "type": "line",
+      "text": "and the earth did cease to tremble,",
+      "verse": "10:9",
+      "lineIndex": 37
+    },
+    {
+      "start": 123.887,
+      "end": 126.209,
+      "type": "line",
+      "text": "and the rocks did cease to rend,",
+      "verse": "10:9",
+      "lineIndex": 38
+    },
+    {
+      "start": 126.389,
+      "end": 128.711,
+      "type": "line",
+      "text": "and the dreadful groanings did cease,",
+      "verse": "10:9",
+      "lineIndex": 39
+    },
+    {
+      "start": 128.891,
+      "end": 131.585,
+      "type": "line",
+      "text": "and all the tumultuous noises did pass away.",
+      "verse": "10:9",
+      "lineIndex": 40
+    },
+    {
+      "start": 132.265,
+      "end": 135.98,
+      "type": "line",
+      "text": "And the earth did cleave together again, that it stood;",
+      "verse": "10:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 136.16,
+      "end": 140.107,
+      "type": "line",
+      "text": "and the mourning, and the weeping, and the wailing",
+      "verse": "10:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 140.287,
+      "end": 143.073,
+      "type": "line",
+      "text": "of the people who were spared alive did cease;",
+      "verse": "10:10",
+      "lineIndex": 43
+    },
+    {
+      "start": 143.253,
+      "end": 145.621,
+      "type": "line",
+      "text": "and their mourning was turned into joy,",
+      "verse": "10:10",
+      "lineIndex": 44
+    },
+    {
+      "start": 145.801,
+      "end": 150.399,
+      "type": "line",
+      "text": "and their lamentations into the praise and thanksgiving unto the Lord Jesus Christ,",
+      "verse": "10:10",
+      "lineIndex": 45
+    },
+    {
+      "start": 150.579,
+      "end": 151.879,
+      "type": "line",
+      "text": "their Redeemer.",
+      "verse": "10:10",
+      "lineIndex": 46
+    },
+    {
+      "start": 152.559,
+      "end": 157.482,
+      "type": "line",
+      "text": "And thus far were the scriptures fulfilled which had been spoken by the prophets.",
+      "verse": "10:11",
+      "lineIndex": 47
+    },
+    {
+      "start": 158.162,
+      "end": 161.645,
+      "type": "line",
+      "text": "And it was the more righteous part of the people who were saved,",
+      "verse": "10:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 161.825,
+      "end": 165.633,
+      "type": "line",
+      "text": "and it was they who received the prophets and stoned them not;",
+      "verse": "10:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 165.813,
+      "end": 170.318,
+      "type": "line",
+      "text": "and it was they who had not shed the blood of the saints, who were spared\u2014",
+      "verse": "10:12",
+      "lineIndex": 50
+    },
+    {
+      "start": 170.998,
+      "end": 176.199,
+      "type": "line",
+      "text": "And they were spared and were not sunk and buried up in the earth;",
+      "verse": "10:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 176.379,
+      "end": 179.49,
+      "type": "line",
+      "text": "and they were not drowned in the depths of the sea;",
+      "verse": "10:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 179.67,
+      "end": 181.899,
+      "type": "line",
+      "text": "and they were not burned by fire,",
+      "verse": "10:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 182.079,
+      "end": 185.19,
+      "type": "line",
+      "text": "neither were they fallen upon and crushed to death;",
+      "verse": "10:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 185.37,
+      "end": 187.692,
+      "type": "line",
+      "text": "and they were not carried away in the whirlwind;",
+      "verse": "10:13",
+      "lineIndex": 55
+    },
+    {
+      "start": 187.872,
+      "end": 192.237,
+      "type": "line",
+      "text": "neither were they overpowered by the vapor of smoke and of darkness.",
+      "verse": "10:13",
+      "lineIndex": 56
+    },
+    {
+      "start": 192.917,
+      "end": 195.518,
+      "type": "line",
+      "text": "And now, whoso readeth, let him understand;",
+      "verse": "10:14",
+      "lineIndex": 57
+    },
+    {
+      "start": 195.698,
+      "end": 198.856,
+      "type": "line",
+      "text": "he that hath the scriptures, let him search them,",
+      "verse": "10:14",
+      "lineIndex": 58
+    },
+    {
+      "start": 199.036,
+      "end": 203.959,
+      "type": "line",
+      "text": "and see and behold if all these deaths and destructions by fire, and by smoke,",
+      "verse": "10:14",
+      "lineIndex": 59
+    },
+    {
+      "start": 204.139,
+      "end": 206.507,
+      "type": "line",
+      "text": "and by tempests, and by whirlwinds,",
+      "verse": "10:14",
+      "lineIndex": 60
+    },
+    {
+      "start": 206.687,
+      "end": 209.613,
+      "type": "line",
+      "text": "and by the opening of the earth to receive them,",
+      "verse": "10:14",
+      "lineIndex": 61
+    },
+    {
+      "start": 209.793,
+      "end": 216.527,
+      "type": "line",
+      "text": "and all these things are not unto the fulfilling of the prophecies of many of the holy prophets.",
+      "verse": "10:14",
+      "lineIndex": 62
+    },
+    {
+      "start": 217.207,
+      "end": 218.879,
+      "type": "line",
+      "text": "Behold, I say unto you,",
+      "verse": "10:15",
+      "lineIndex": 63
+    },
+    {
+      "start": 219.059,
+      "end": 222.867,
+      "type": "line",
+      "text": "Yea, many have testified of these things at the coming of Christ,",
+      "verse": "10:15",
+      "lineIndex": 64
+    },
+    {
+      "start": 223.047,
+      "end": 224.301,
+      "type": "line",
+      "text": "and were slain",
+      "verse": "10:15",
+      "lineIndex": 65
+    },
+    {
+      "start": 224.481,
+      "end": 226.803,
+      "type": "line",
+      "text": "because they testified of these things.",
+      "verse": "10:15",
+      "lineIndex": 66
+    },
+    {
+      "start": 227.483,
+      "end": 230.687,
+      "type": "line",
+      "text": "Yea, the prophet Zenos did testify of these things,",
+      "verse": "10:16",
+      "lineIndex": 67
+    },
+    {
+      "start": 230.867,
+      "end": 233.7,
+      "type": "line",
+      "text": "and also Zenock spake concerning these things,",
+      "verse": "10:16",
+      "lineIndex": 68
+    },
+    {
+      "start": 233.88,
+      "end": 237.224,
+      "type": "line",
+      "text": "because they testified particularly concerning us,",
+      "verse": "10:16",
+      "lineIndex": 69
+    },
+    {
+      "start": 237.404,
+      "end": 239.819,
+      "type": "line",
+      "text": "who are the remnant of their seed.",
+      "verse": "10:16",
+      "lineIndex": 70
+    },
+    {
+      "start": 240.499,
+      "end": 245.375,
+      "type": "line",
+      "text": "Behold, our father Jacob also testified concerning a remnant of the seed of Joseph.",
+      "verse": "10:17",
+      "lineIndex": 71
+    },
+    {
+      "start": 245.555,
+      "end": 249.317,
+      "type": "line",
+      "text": "And behold, are not we a remnant of the seed of Joseph?",
+      "verse": "10:17",
+      "lineIndex": 72
+    },
+    {
+      "start": 249.497,
+      "end": 251.865,
+      "type": "line",
+      "text": "And these things which testify of us,",
+      "verse": "10:17",
+      "lineIndex": 73
+    },
+    {
+      "start": 252.045,
+      "end": 254.971,
+      "type": "line",
+      "text": "are they not written upon the plates of brass",
+      "verse": "10:17",
+      "lineIndex": 74
+    },
+    {
+      "start": 255.151,
+      "end": 258.123,
+      "type": "line",
+      "text": "which our father Lehi brought out of Jerusalem?",
+      "verse": "10:17",
+      "lineIndex": 75
+    },
+    {
+      "start": 258.803,
+      "end": 263.401,
+      "type": "line",
+      "text": "And it came to pass that in the ending of the thirty and fourth year,",
+      "verse": "10:18",
+      "lineIndex": 76
+    },
+    {
+      "start": 263.581,
+      "end": 265.671,
+      "type": "line",
+      "text": "behold, I will show unto you",
+      "verse": "10:18",
+      "lineIndex": 77
+    },
+    {
+      "start": 265.851,
+      "end": 273.096,
+      "type": "line",
+      "text": "that the people of Nephi who were spared, and also those who had been called Lamanites,",
+      "verse": "10:18",
+      "lineIndex": 78
+    },
+    {
+      "start": 273.276,
+      "end": 274.809,
+      "type": "line",
+      "text": "who had been spared,",
+      "verse": "10:18",
+      "lineIndex": 79
+    },
+    {
+      "start": 274.989,
+      "end": 277.868,
+      "type": "line",
+      "text": "did have great favors shown unto them,",
+      "verse": "10:18",
+      "lineIndex": 80
+    },
+    {
+      "start": 278.048,
+      "end": 280.788,
+      "type": "line",
+      "text": "and great blessings poured out upon their heads,",
+      "verse": "10:18",
+      "lineIndex": 81
+    },
+    {
+      "start": 280.968,
+      "end": 284.73,
+      "type": "line",
+      "text": "insomuch that soon after the ascension of Christ into heaven",
+      "verse": "10:18",
+      "lineIndex": 82
+    },
+    {
+      "start": 284.91,
+      "end": 287.325,
+      "type": "line",
+      "text": "he did truly manifest himself unto them\u2014",
+      "verse": "10:18",
+      "lineIndex": 83
+    },
+    {
+      "start": 288.005,
+      "end": 291.999,
+      "type": "line",
+      "text": "Showing his body unto them, and ministering unto them;",
+      "verse": "10:19",
+      "lineIndex": 84
+    },
+    {
+      "start": 292.179,
+      "end": 295.523,
+      "type": "line",
+      "text": "and an account of his ministry shall be given hereafter.",
+      "verse": "10:19",
+      "lineIndex": 85
+    },
+    {
+      "start": 295.703,
+      "end": 299.093,
+      "type": "line",
+      "text": "Therefore for this time I make an end of my sayings.",
+      "verse": "10:19",
+      "lineIndex": 86
+    }
+  ]
+}
