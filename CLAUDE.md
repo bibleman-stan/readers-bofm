@@ -55,25 +55,13 @@ When Stan names a verse with a specific desired partition or proposes a fix: lin
 
 Same FP class in 2+ rules OR 2+ validators OR 2+ verses in one session = engine-level fix at `validators/_shared/*` / `scripts/apply_*.py` / canon rule extension. Per-verse / per-validator guard the second time = whack-a-mole. **Stan's mantra: *swat the bug class, not the instance.***
 
-### Grammar constrains ATU boundaries; it does not determine them
+### Grammar constrains; atomic-thought determines
 
-Stan codified verbatim 2026-05-13: *"grammar doesn't determine ATUs boundaries, but it can constrain them."*
+Cross-corpus discipline per `../atu-method/memories/feedback_grammar_constrains_not_determines.md` + `framework.md §1.2` tail + new Factor A in `feedback_three_anti_default_factors.md`. BoFM-specific instantiation: Layer 1 vetoes are R9/R11/R13a/R10; complement-integrity rules are R17/R26; formula-integrity rules are R1/R18/R23; restrictive-relative bonds are R19 closed-list. Determination is via J1–J5 + the bidirectional atomic-thought test.
 
-- **Grammar gives PROHIBITIONS, not PRESCRIPTIONS.** Layer 1 vetoes (R9/R11/R13a/R10), complement integrity (R17, R26), formula integrity (R1, R18, R23), and restrictive-relative bonds (R19 closed-list) constrain where breaks **can't** go.
-- **Atomic-thought is the determination engine.** The generative principle (each proposition splits by default) + J1–J5 structural justifications + image/camera-angle/period tests determine where breaks **should** go. The force is propositional/psycholinguistic, not grammatical.
-- **When proposing a new rule:** ask "does this rule encode a CONSTRAINT (prohibition on illegal breaks) or a DETERMINATION (prescription of correct breaks)?" Determinations require the atomic-thought test to fire — that test is propositional, not grammatical. Grammar can confirm a determination is safe; grammar alone cannot generate it.
-- **For closed-list extensions specifically:** the threshold for inclusion is "is the head referentially content-empty without the relative such that breaking here leaves a line with no atomic thought?" — the atomic-thought-failure test, applied through grammar-as-constraint. The closed-list is the operationalization of where atomic-thought-failure fires under specific grammatical conditions; it is NOT a grammatical-pattern catalog.
+### The atomic-thought test is bidirectional — BoFM-specific implications
 
-See `feedback_grammar_constrains_not_determines.md` for the full discipline + cross-cutting connections to `feedback_rhetoric_bandwagon` (don't import external grammatical frameworks as forces) and `feedback_audit_outputs_need_canon_check` (reject grammatical-pattern-only carve-out framings).
-
-### The atomic-thought test is bidirectional
-
-Codified at [`../atu-method/docs/framework.md §1.1`](../atu-method/docs/framework.md) tail (2026-05-13). The §1.1 generative principle's "single cognitive bite" requires **referential** self-containment, not just **grammatical** closure.
-
-- **Anaphoric failure (blocks standalone-ATU):** line content depends on UPSTREAM context. Deictic demonstratives ("these things", "that day", "the same"), discourse-anaphoric particles ("therefore", "thus", causal "for"), pronouns without on-line antecedent — fail the test, must merge into a context-providing line.
-- **Cataphoric standing (allowed, does NOT fail):** line introduces new content with forward-pointing apparatus. *"Behold + indefinite NP"*, *"thus saith the Lord:"* + content. Forward expectation, not backward dependency.
-
-**BoFM-specific implications:**
+Cross-corpus discipline at `framework.md §1.1` + `../atu-method/memories/feedback_atu_test_is_bidirectional.md`. Anaphoric reference fails the test; cataphoric reference passes. BoFM-specific implications:
 - **R1 AICTP merge is principle-rooted, not just formula-integrity-rooted.** *"And it came to pass [after these things]"* is anaphoric — the *these things* references undefined prior narrative. R1's merge mandate flows from the bidirectional test failing standalone, deepening R1's defensibility.
 - **J5 SCOPE narrows.** J5 substantive-adjunct test requires referential self-containment. Deictic-pointer adjuncts (e.g., bare "after these things" without on-line antecedent) don't qualify and must merge.
 - **Length is NOT the criterion.** A long line whose subject pronoun lacks on-line antecedent still fails. A short cataphoric line (*"Behold, the Lord cometh"*) can stand.
@@ -84,34 +72,16 @@ See `feedback_atu_test_is_bidirectional.md` for full discipline. Cross-cutting c
 
 **Precedence clarification (added 2026-05-13 via gnt-reader sibling lesson):** the bidirectional test is canon §1.1 INFORMATIONAL DIAGNOSTIC, not a mechanical PRECEDENCE OVERRIDE. It INFORMS human audit judgment and DEEPENS the defensibility of canon-mandated decisions, but it DOES NOT serve as a validator trigger on its own — validators must fire on canon-encoded UD signatures (R/M/EP rules), NOT on bidirectional-test outcome. Mechanical authority comes from canon's encoded rules; bidirectional is a refinement of the determination engine, not a parallel determination authority.
 
-### Rhetoric and ATU — figures constrain, atomic-thought determines
+### Rhetoric and ATU — BoFM worked examples
 
-Codified across the family 2026-05-13 from Stan-verbatim: *"this is a key insight: the interaction of rhetorical devices/figures of speech with ATUs."*
+Cross-corpus discipline + figure→disposition table at `../atu-method/memories/feedback_rhetoric_figures_constrain_atu.md` + `framework.md §1.3a` + Factor A in `feedback_three_anti_default_factors.md`. The figure's default is a HYPOTHESIS; atomic-thought confirms or overrides. BoFM-specific worked examples surfaced 2026-05-13:
 
-Rhetorical figures have DEFAULT ATU dispositions but never independently DETERMINE ATU boundaries. Each figure CONSTRAINS the candidate space; atomic-thought (bidirectional) determines the answer. Same asymmetry as `feedback_grammar_constrains_not_determines`.
-
-| Figure | Default disposition | Mechanism |
-|---|---|---|
-| Hendiadys (synonymous doubling) | MERGE under M1 | Referential coextension via synonymy |
-| Merism (polar binary for totality) | MERGE under M1 | Referential coextension via polar totality |
-| Parallelism (synonymous/antithetic/synthetic) | SPLIT per J1 | Each member own atomic content |
-| Chiasm (A-B-C-B'-A' inverted mirror) | NO FORCE | Structural observation across ATUs, not within |
-| Anaphora / epistrophe / repetition | SPLIT per J1 | Repetition is signal, not force |
-| Climax / gradatio | SPLIT per J1 | Each member own beat |
-
-**Critical discipline:** the figure's default is a HYPOTHESIS; the atomic-thought test confirms or overrides. When they disagree, atomic-thought wins. Example from this session: `"hardness of HEARTS / blindness of MINDS"` is formally hendiadys-shaped but each NP has its own distinct sub-referent modifier → atomic-thought-test passes for each member → SPLIT despite hendiadys surface. Conversely: `"commandments of God, / and his statutes, according to the law of Moses"` is formally J1 surface but unified under shared framing PP → MERGE (M1 hendiadys absorbs).
-
-See `feedback_rhetoric_figures_constrain_atu.md` (cross-corpus memory) for full discipline.
+- `"hardness of HEARTS / blindness of MINDS"` — formally hendiadys-shaped but each NP has its own distinct sub-referent modifier → atomic-thought-test passes for each → SPLIT despite hendiadys surface
+- `"commandments of God, / and his statutes, according to the law of Moses"` — formally J1 surface but unified under shared framing PP → MERGE (M1 hendiadys absorbs)
 
 ### Camera-angle diagnostic is DEPRECATED
 
-Stan-verbatim 2026-05-13: *"the camera angle change should probably either drop out or be caveated as 'when it is its own complete thought' — the more I see it at work, the less confident I am it's helpful."*
-
-When invoked, camera-angle reasoning either (a) COLLAPSES to the atomic-thought test ("each side has its own atomic content" IS the test, not an additional diagnostic) or (b) SMUGGLES IN aesthetic-rhetorical preference (`feedback_rhetoric_bandwagon` failure mode). Camera-angle never adds independent diagnostic force.
-
-**Treat invocations of camera-angle as a warning signal for bandwagon/aesthetic reasoning.** Use the bidirectional atomic-thought test instead (per `feedback_atu_test_is_bidirectional`). Worked example this session: Alma 31:11 *"to preach the word unto them"* YES/NO argument — the YES argument leaned on camera-angle (motion-event vs preaching-event); the NO argument leaned on bidirectional ATU failure + R7 canon SCOPE; NO carried; camera-angle was the weaker channel.
-
-See `feedback_camera_angle_diagnostic_demote.md` for full discipline.
+Cross-corpus discipline at `../atu-method/memories/feedback_camera_angle_diagnostic_demote.md` + `framework.md §1.3` caveat. Treat invocations of camera-angle as a warning signal for bandwagon/aesthetic reasoning; use the bidirectional atomic-thought test instead. BoFM worked example: Alma 31:11 *"to preach the word unto them"* — YES argument leaned on camera-angle (motion-event vs preaching-event); NO argument leaned on bidirectional ATU failure + R7 canon SCOPE; NO carried.
 
 ### Use the UD layer FIRST. Agents are a last resort for corpus questions.
 
@@ -129,9 +99,7 @@ When tempted to dispatch a survey agent, the test is: "Can I write the UD query 
 
 ### Adversarial-audit discipline (pre-implementation)
 
-Before non-trivial implementation (new validator with classification logic, new rule subsection, new closed-list extension, new shared helper, **OR ANY edit to `../atu-method/atu_method/*` cross-corpus shared infrastructure**), FIRST tool call must be ≥2 parallel Agent adversarial dispatches in one message OR an explicit `Audit-skippable: <named-trivial-class>` declaration.
-
-**Pre-commit on canon-touching commits:** every commit message touching `private/01-method/colometry-canon.md` includes `Audit-skippable per §7.3 ([reason])` OR `Audit dispatched: [evidence]`. When uncertain, dispatch. The mechanical commit-msg hook detects canon-extension patterns and requires the declaration.
+Cross-corpus discipline at `../atu-method/docs/change-protocol.md §7.3` (12 mandatory-audit triggers) + `../atu-method/memories/feedback_rule_proposal_gates.md` (four-gate pre-proposal checklist). Before non-trivial implementation (new validator with classification logic, new rule subsection, new closed-list extension, new shared helper, OR ANY edit to `../atu-method/atu_method/*`): FIRST tool call ≥2 parallel Agent adversarial dispatches OR explicit `Audit-skippable: <named-trivial-class>`. Canon-touching commit messages require `Audit-skippable per §7.3 ([reason])` OR `Audit dispatched: [evidence]`; commit-msg hook enforces.
 
 ### Apply causes regression
 
