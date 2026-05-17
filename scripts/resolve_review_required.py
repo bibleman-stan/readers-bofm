@@ -11,6 +11,18 @@ Architectural framing: extends the existing Stanza+LLM ensemble pattern
 (parse pipeline) to validator-output resolution. Not new architecture;
 new application of an established pattern.
 
+Isaiah skeptical-mode (2026-05-16, per directive 2400): when a case
+falls inside an Isaiah-quoting chapter range (1 Ne 20-22, 2 Ne 7-8,
+2 Ne 12-24, 2 Ne 27, Mosiah 14, 3 Ne 22-24), the per-case prompt is
+prepended with a skeptical-mode preamble warning Sonnet to verify
+relative-clause genuineness before applying R19 routing — the 2102
+BoFM Isaiah scan confirmed that the UD parser sometimes mis-classifies
+Hebrew-style parallel exclamatory limbs as `acl:relcl`. The preamble
+instructs Sonnet to return GENUINE-REVIEW-REQUIRED with rationale
+"probable Hebrew-parallelism parser mis-classification" when the
+construction looks like parser mis-attribution rather than a
+restrictive relative.
+
 Two run modes:
 
   --dump-prompts <file.jsonl>
@@ -308,10 +320,75 @@ SYSTEM_PROMPT = (
 )
 
 
+# Isaiah-quoting chapter ranges per the 2102 Isaiah scan. When the resolver
+# sees a case in one of these ranges, it prepends a skeptical-mode preamble
+# warning that UD parsers sometimes mis-classify Hebrew-style parallelism
+# as acl:relcl. Codified per directive 2026-05-16-2400-r19-isaiah-option-a-
+# plus-d.md (Option D from the 2203 audit consensus).
+ISAIAH_RANGES: dict[str, list[tuple[int, int]]] = {
+    "1nephi": [(20, 22)],     # Isaiah 48-49 + Nephi discourse
+    "2nephi": [(7, 8), (12, 24), (27, 27)],
+                              # Isaiah 50-51, Isaiah 2-14, Isaiah 29
+    "mosiah": [(14, 14)],     # Isaiah 53
+    "3nephi": [(22, 24)],     # Isaiah 54 + Malachi 3-4
+}
+
+
+def in_isaiah_chapter(book: str, verse_ref: str) -> bool:
+    """Return True if verse_ref's chapter falls in book's Isaiah ranges."""
+    ranges = ISAIAH_RANGES.get(book)
+    if not ranges:
+        return False
+    try:
+        ch = int(str(verse_ref).split(":")[0])
+    except (ValueError, IndexError, AttributeError):
+        return False
+    return any(lo <= ch <= hi for lo, hi in ranges)
+
+
+ISAIAH_SKEPTICAL_PREAMBLE = (
+    "## ⚠ ISAIAH-CHAPTER SKEPTICAL MODE\n\n"
+    "This case is in an Isaiah-quoting chapter (or, for 3 Nephi 24, "
+    "a Malachi-quoting chapter). The 2102 BoFM parser-scan confirmed "
+    "that the UD parser sometimes mis-classifies Hebrew-style parallelism "
+    "as `acl:relcl` when the construction is actually parallel "
+    "exclamatory limbs WITHOUT a relative pronoun (e.g., 2 Nephi 24:4 "
+    "*\"the golden city ceased!\"* tagged as a relative on *city* with "
+    "root *ceased*, when the surface reading is a Hebrew-parallel "
+    "exclamation, not a restrictive relative).\n\n"
+    "**Before applying R19's normal routing, verify**:\n"
+    "1. The construction has an actual relative pronoun (*which* / *whom* "
+    "/ *whose* / *who* / *that*) AT THE HEAD of the relative clause, NOT "
+    "just somewhere in the verse.\n"
+    "2. The relative clause modifies the head NP restrictively (restricts "
+    "or identifies the head's referent), not as a parallel independent "
+    "exclamatory limb.\n"
+    "3. The `rel_root` token is grammatically inside the relative clause "
+    "(it should be the verb of the relative, not the verb of a parallel "
+    "clause).\n\n"
+    "**If the construction looks like Hebrew-parallel-limb mis-classification** "
+    "(no clear restrictive function; rel_root looks like a main-clause verb; "
+    "head-form == rel_root-form circular attachment; pronoun-subject head "
+    "with which/that resumptive-exclamatory device), return:\n\n"
+    "    VERDICT: GENUINE-REVIEW-REQUIRED\n"
+    "    CONFIDENCE: <medium or high based on certainty>\n"
+    "    REASONING: probable Hebrew-parallelism parser mis-classification "
+    "(specify the diagnostic signal: parallel-limb shape / circular-attachment "
+    "/ pronoun-resumptive / etc.)\n\n"
+    "Otherwise apply R19's normal routing per the canon entry below.\n\n"
+    "---\n"
+)
+
+
 def build_case_prompt(canon_r19: str, scholarship: str, case: dict, verse_block: str) -> str:
     extras = f"\n\nR19 SCHOLARSHIP COMPANION:\n\n{scholarship}\n" if scholarship.strip() else ""
     subtype = case.get("review_subtype") or "(unset — pre-restructure validator)"
-    return f"""## R19 §5 CANON ENTRY
+    isaiah_preamble = (
+        ISAIAH_SKEPTICAL_PREAMBLE
+        if in_isaiah_chapter(case.get("book",""), case.get("verse_ref",""))
+        else ""
+    )
+    return f"""{isaiah_preamble}## R19 §5 CANON ENTRY
 
 {canon_r19}
 {extras}
