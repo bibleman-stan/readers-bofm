@@ -13,18 +13,39 @@ A web-based colometric reading edition of the Book of Mormon at **bomreader.com*
 4. `git log --oneline -10`
 
 **CONSULT-ON-TRIGGER:**
-- `data/syntax-reference/ud-taxonomy.md` §7 — any Layer 1 mechanical-rule work or validator design.
+- `data/syntax-reference/ud-taxonomy.md` §7 — any syntactic constraint validator design or mechanical-rule work.
 - `validators/README.md` — writing or modifying a validator.
 - `../atu-method/docs/apparatus.md` + `../atu-method/docs/architecture.md` — cross-corpus migration work, sibling-reader port, or work where the picture matters more than the phase list. Picture-shaped: what the user sees on bomreader.com / gnt-reader.com / tanakh-reader.com when done.
 - `../atu-method/docs/framework.md` — methodology, rule-design, autonomy-boundary. Authoritative cross-corpus body; per-repo canon §0/§1/§2 are pointer-only.
 - `../atu-method/docs/change-protocol.md` — any canon revision.
-- `../atu-method/docs/glossary.md` — ambiguous term (ATU, M1–M4, J1–J5, N=2 adjudication, etc.).
+- `../atu-method/docs/toolset-architecture.md` — ATU rendering production protocol, three-stage pipeline, model-tier empirical findings (2026-05-17).
+- `../atu-method/docs/glossary.md` — ambiguous term (ATU, bidirectional test, constraint catalog, etc.).
 
 **Self-report before first substantive response:** one line per mandatory file read; pending-item disposition (each = executing-now / retired-with-rationale / re-deferred-with-concrete-trigger; "awaiting Stan direction" / "until Stan re-surfaces" are drift not defers); red flags. Silent skip = orientation failure.
 
 **Compaction-resume protocol.** Per [`../atu-method/memories/feedback_compaction_resume_protocol.md`](../atu-method/memories/feedback_compaction_resume_protocol.md) (cross-corpus shared discipline): when resuming from a compaction event, the FIRST action after the mandatory orientation reads is to read the last 20-30 user↔assistant back-and-forth turns from the session JSONL verbatim. Report the re-read as part of the orientation self-report. Don't write wrap artifacts / session-notes / full-transcript dumps; surface state inline. `pending.md` only for extended multi-cycle hand-offs.
 
 **Directive-queue protocol.** Per [`../atu-method/memories/feedback_directive_protocol.md`](../atu-method/memories/feedback_directive_protocol.md) (cross-corpus shared discipline): on wake, after mandatory orientation reads, check `directives/pending/` for files in commit-order. Process each in turn: read directive, execute items per their reporting + audit-trigger guidance, write reply at `directives/replies/<same-name>.md`, move processed directive to `directives/processed/<same-name>.md`, commit + push per directive (or per coherent batch). Surface processed work + any new Stan-decisions in chat after the session.
+
+---
+
+## Production tier (ATU rendering at scale) — settled 2026-05-17
+
+**ATU rendering production protocol: Opus 3-pass with agreement scoring.** Empirically validated 2026-05-17 across 5 chapters / 3 corpora / 3 languages. Reference: `../atu-method/docs/toolset-architecture.md` Stage 1 + cross-session memory `../atu-method/memories/feedback_production_tier_empirical.md`.
+
+- **3 independent Opus passes per chapter**, same minimal-rubric prompt (bidirectional test + restrictive-relative binding + language-specific syntactic constraints; NO cognitive-unity gate, NO parallelism class adjudication, NO genre anchors)
+- **Unanimous (3/3 agree):** auto-apply (94% prose / 100% poetic accuracy empirically)
+- **Non-unanimous:** surface to editorial review
+- **Sonnet 3-pass is NOT production-grade for ATU rendering** — silent agreement-on-wrong-answer failure mode; Sonnet is the default for other per-case judgment work
+- **Haiku is off-table for biblical content** — content-filter blocks ~67% of queries, quality variance unacceptable
+- **Frugal-default model routing (per `feedback_model_selection_frugality`) still applies for ALL OTHER work** — ATU rendering at production scale is the explicit Opus exception
+
+**Three-stage pipeline (current methodology):**
+1. LLM identification — Opus 3-pass with agreement scoring
+2. Constraint catalog audit — syntactic constraints as audit, not generation
+3. Editorial review — non-unanimous items only
+
+**Superseded frameworks (legacy — do not invoke):** J1–J5 / M1–M4 / N=2 / N=3+ adjudication framework; "three forces" (generative/subtractive/diagnostic); Layer 1 / Layer 3 stack framing for ATU rendering purposes; R/H validator producer mode (legacy — sunset pending Tanakh-rebuild-directive completion); cognitive-unity gate; parallelism class adjudication; "four legs" toolset partitioning.
 
 ---
 
@@ -35,7 +56,7 @@ A web-based colometric reading edition of the Book of Mormon at **bomreader.com*
 When Stan flags a problem at a specific verse, that's a directive to investigate the rule set, NOT patch the verse. Right shape:
 
 1. Diagnose: what's the underlying class/pattern Stan's intuition is responding to?
-2. **Audit yourself FIRST** — walk M1 / M2 / M3 / M4 / J1–J5 / formula-integrity / R-rules / EP-rules / N=2 / N=3+ explicitly against the actual canon. Pay attention to **explicit exclusions** (e.g., M1 §1.5 excludes sequential narrative bonding; R17 SCOPE excludes direct discourse). If the framework's existing answer is "split, this is excluded," that's a real answer — not a gap.
+2. **Audit yourself FIRST** — walk the bidirectional test + restrictive-relative binding + minimal-rubric constraints (per `framework.md §1.2`) / formula-integrity / R-rules / EP-rules explicitly against the actual canon. Pay attention to **explicit exclusions** (e.g., M1 §1.5 excludes sequential narrative bonding; R17 SCOPE excludes direct discourse). If the framework's existing answer is "split, this is excluded," that's a real answer — not a gap.
 3. Only if step 2 finds a real gap, investigate corpus-wide for the pattern's frequency + variants.
 4. **New rules trigger §7.3 mandatory-audit** — ≥2 parallel adversarial agents BEFORE any validator infrastructure. NO scanner / applier / closed-list entry until the rule passes. Building infrastructure first is the "fake rule" failure mode.
 5. If audit holds: codify with WHY/HOW WE KNOW/SCOPE per canon §6 defensibility-capture, build the validator with UD signature, apply mechanically corpus-wide.
@@ -59,7 +80,7 @@ Same FP class in 2+ rules OR 2+ validators OR 2+ verses in one session = engine-
 
 ### Grammar constrains; atomic-thought determines
 
-Cross-corpus discipline per `../atu-method/memories/feedback_grammar_constrains_not_determines.md` + `framework.md §1.2` tail + new Factor A in `feedback_three_anti_default_factors.md`. BoFM-specific instantiation: Layer 1 vetoes are R9/R11/R13a/R10; complement-integrity rules are R17/R26; formula-integrity rules are R1/R18/R23; restrictive-relative bonds are R19 closed-list. Determination is via J1–J5 + the bidirectional atomic-thought test.
+Cross-corpus discipline per `../atu-method/memories/feedback_grammar_constrains_not_determines.md` + `framework.md §1.2` tail + new Factor A in `feedback_three_anti_default_factors.md`. BoFM-specific instantiation: syntactic-veto rules are R9/R11/R13a/R10; complement-integrity rules are R17/R26; formula-integrity rules are R1/R18/R23; restrictive-relative bonds are R19 closed-list. Determination is via bidirectional test + restrictive-relative binding + minimal-rubric constraints (per `framework.md §1.2`). Cognitive identification first (LLM + bidirectional test), syntactic constraints second (constraint catalog as audit), parallelism off-axis.
 
 ### The atomic-thought test is bidirectional — BoFM-specific implications
 
@@ -68,7 +89,7 @@ Cross-corpus discipline at `framework.md §1.1` + `../atu-method/memories/feedba
 - **J5 SCOPE narrows.** J5 substantive-adjunct test requires referential self-containment. Deictic-pointer adjuncts (e.g., bare "after these things" without on-line antecedent) don't qualify and must merge.
 - **Length is NOT the criterion.** A long line whose subject pronoun lacks on-line antecedent still fails. A short cataphoric line (*"Behold, the Lord cometh"*) can stand.
 - **When auditing a Stan-flagged verse:** run BOTH forward closure AND backward referential-self-containment. Fail in EITHER direction = atomic-thought failure.
-- **Cite §1.1 bidirectional, not M3/M4, when invoking.** Backward-anaphoric failure is caught at test-level, not at merge-override-level. M3 (forward-dangling head) and M4 (symmetric fragmentation) are §1.5 mechanisms; backward-anaphoric is upstream of both.
+- **Cite §1.1 bidirectional, not legacy merge-override categories, when invoking.** Backward-anaphoric failure is caught at test-level, upstream of any merge-override mechanisms.
 
 See `feedback_atu_test_is_bidirectional.md` for full discipline. Cross-cutting connection to `feedback_grammar_constrains_not_determines` (grammar = constraint; bidirectional atomic-thought = determination).
 
@@ -129,7 +150,9 @@ NEVER alter punctuation (post-1830 editorial overlay, canonical to LDS text). NE
 
 ## Methodology stack
 
-Three forces operating simultaneously: **generative** (atomic thought drives line creation; J1–J5 structural justifications), **subtractive** (Layer 1 syntax + complement + formula integrity trigger merges; M1–M4 merge-overrides), **diagnostic** (single-image / camera-angle as tiebreaker). Authoritative body: [`../atu-method/docs/framework.md`](../atu-method/docs/framework.md). BoFM-specific rule detail: `private/01-method/colometry-canon.md` §5.
+**Current methodology:** cognitive identification first (LLM + bidirectional test), syntactic constraints second (constraint catalog as audit), parallelism off-axis. Three-stage pipeline: Stage 1 LLM identification (Opus 3-pass) → Stage 2 constraint catalog audit → Stage 3 editorial review. Authoritative body: [`../atu-method/docs/framework.md`](../atu-method/docs/framework.md) + [`../atu-method/docs/toolset-architecture.md`](../atu-method/docs/toolset-architecture.md). BoFM-specific rule detail: `private/01-method/colometry-canon.md` §5.
+
+**Legacy framing (do not invoke):** "three forces" (generative/subtractive/diagnostic); J1–J5 structural justifications as standalone categories; M1–M4 merge-override categories; Layer 1 / Layer 3 stack framing for ATU rendering purposes.
 
 **Categories** (autonomy boundary per `../atu-method/docs/framework.md` §2):
 - **Category A** (Mechanical, mandatory) — rule firing IS the approval; auto-apply.
@@ -160,7 +183,7 @@ Three forces operating simultaneously: **generative** (atomic thought drives lin
 
 ## Validators & mechanical gates
 
-Layer 1 = generic English-grammar break-legality (`data/syntax-reference/ud-taxonomy.md` §7) — permission/prohibition. Layer 3 = BoFM editorial methodology (canon §5) — operates within L1's permitted space. Mixing the two is a regression.
+**Validator tiers (legacy Layer 1 / Layer 3 framing retired for ATU rendering purposes):** Syntactic constraint validators (`data/syntax-reference/ud-taxonomy.md` §7) gate permission/prohibition; BoFM editorial methodology validators (canon §5) operate within that permitted space. Mixing the two is a regression. In the three-stage pipeline, all validators serve Stage 2 (constraint catalog audit) — they audit LLM identification output, not drive it.
 
 **Validator findings = work queue, not review queue.** STRONG-MERGE / STRONG-SPLIT → mechanical apply (Category A). REVIEW-REQUIRED → per-item judgment. Walking Stan through verse-level confirmations on rule-derivative changes is the inverted-discipline failure mode.
 
@@ -204,6 +227,8 @@ When outside this table, surface. When inside, dispatch the standing answer and 
 **Corpus clusters** (for cluster-cascade routing): Small Plates (1 Ne, 2 Ne, Jacob, Enos, Jarom, Omni, WofM) / Mosian Era (Mosiah, Alma 1–44) / War Narrative (Alma 45–63, Helaman) / 3 Nephi–4 Nephi / Mormon–Ether–Moroni. Threshold: any batch ≥25 surgical fixes spanning 3+ clusters MUST be split.
 
 **Agent model routing (Stan-prime-directive 2026-05-15 per `feedback_model_selection_frugality`):** match the tier to the task — *"don't blow thru opus tokens for a haiku or sonnet task."* **Set `model:` explicitly on every Agent dispatch.** Haiku for mechanical lookups / one-shot extractions / running existing scripts. Sonnet (the default) for per-case judgment with a clear rubric — corpus surveys with classification, structured audits with codified canon checks, multi-cluster per-case sweeps. Opus only when the rubric ITSELF is the question — hostile adversarial scope-scrutiny, signature design for new mechanical rules, methodology/discipline work, cross-corpus shared-infrastructure edits. Before every dispatch: *"could a smaller model with a tight rubric handle this?"* If yes, downshift.
+
+**ATU rendering at production scale is the explicit Opus exception (settled 2026-05-17):** Opus 3-pass with agreement scoring. Frugal-default preserved for all other work. Sonnet 3-pass is NOT production-grade for ATU rendering (silent agreement-on-wrong-answer failure mode). Haiku off-table for biblical content (~67% content-filter block rate). See Production tier section above.
 
 ---
 
