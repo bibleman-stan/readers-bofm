@@ -29,23 +29,9 @@ A web-based colometric reading edition of the Book of Mormon at **bomreader.com*
 
 ---
 
-## Production tier (ATU rendering at scale) — settled 2026-05-17
+## Production tier (ATU rendering at scale)
 
-**ATU rendering production protocol: Opus 3-pass with agreement scoring.** Empirically validated 2026-05-17 across 5 chapters / 3 corpora / 3 languages. Reference: `../atu-method/docs/toolset-architecture.md` Stage 1 + cross-session memory `../atu-method/memories/feedback_production_tier_empirical.md`.
-
-- **3 independent Opus passes per chapter**, same minimal-rubric prompt (bidirectional test + restrictive-relative binding + language-specific syntactic constraints; NO cognitive-unity gate, NO parallelism class adjudication, NO genre anchors)
-- **Unanimous (3/3 agree):** auto-apply (94% prose / 100% poetic accuracy empirically)
-- **Non-unanimous:** surface to editorial review
-- **Sonnet 3-pass is NOT production-grade for ATU rendering** — silent agreement-on-wrong-answer failure mode; Sonnet is the default for other per-case judgment work
-- **Haiku is off-table for biblical content** — content-filter blocks ~67% of queries, quality variance unacceptable
-- **Frugal-default model routing (per `feedback_model_selection_frugality`) still applies for ALL OTHER work** — ATU rendering at production scale is the explicit Opus exception
-
-**Three-stage pipeline (current methodology):**
-1. LLM identification — Opus 3-pass with agreement scoring
-2. Constraint catalog audit — syntactic constraints as audit, not generation
-3. Editorial review — non-unanimous items only
-
-**Superseded frameworks (legacy — do not invoke):** J1–J5 / M1–M4 / N=2 / N=3+ adjudication framework; "three forces" (generative/subtractive/diagnostic); Layer 1 / Layer 3 stack framing for ATU rendering purposes; R/H validator producer mode (legacy — sunset pending Tanakh-rebuild-directive completion); cognitive-unity gate; parallelism class adjudication; "four legs" toolset partitioning.
+ATU rendering at scale = **Opus 3-pass with agreement scoring**. Frugal-default applies for everything else. See [`../atu-method/docs/toolset-architecture.md`](../atu-method/docs/toolset-architecture.md) §Stage 1 and [`../atu-method/memories/feedback_production_tier_empirical.md`](../atu-method/memories/feedback_production_tier_empirical.md).
 
 ---
 
