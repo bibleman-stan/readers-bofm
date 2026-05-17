@@ -273,7 +273,16 @@ COMPOUND_SWAPS = [
     ("have save it were one wife", "have only one wife"),
     ("should have save it be one wife", "should have only one wife"),
     ("should have save it were one wife", "should have only one wife"),
-    ("save it were", "except"), ("save it be", "except"), ("save that", "except that"),
+    # `save it were/be X` → modernize ONLY the vocabulary item `save` → `except`;
+    # preserve the subject+verb (`it were` / `it be`). Earlier collapse to
+    # `except` dropped the subject-verb pair, which broke 6 cases where the
+    # continuation was a participial or VP that needs the subject (Alma 31:38
+    # "save it were swallowed up in the joy of Christ" → "except swallowed up"
+    # was the Stan-flagged failure mode). Preserving "it were/be" works for
+    # all 123 corpus instances and aligns rendering with the 22 `except it
+    # were/be` raw cases in v2-mine that carry no swap (full consistency in
+    # modern mode). Codified 2026-05-17.
+    ("save it were", "except it were"), ("save it be", "except it be"), ("save that", "except that"),
     ("Thou mightest", "You might"), ("thou mightest", "you might"),
     ("Thou knowest", "You know"), ("thou knowest", "you know"),
     ("Thou shalt", "You shall"), ("thou shalt", "you shall"),
