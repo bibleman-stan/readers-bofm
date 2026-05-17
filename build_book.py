@@ -356,11 +356,25 @@ COMPOUND_SWAPS = [
     ("doth immediately bless", "immediately blesses"),
     ("doth speedily drag", "speedily drags"),
     ("doth rightly belong", "rightly belongs"),
-    # Bowels — figurative (seat of emotion / mercy)
+    # Bowels — figurative (seat of emotion / mercy).
+    # Affective uses (bowels are/may be filled with X) → "innermost being",
+    # not "heart" — the EME "bowels" denotes the VISCERAL seat of compassion
+    # (Hebrew rachamim, Greek splanchna; maternal-yearning + active "moved by"
+    # connotations) which "heart" (chest + courage + love) doesn't carry.
+    # "Innermost being" preserves location-of-self semantics without naming
+    # a body part, avoids the "feelings filled with compassion" container-
+    # contents tautology, and works in all 3 affective contexts including
+    # Alma 7:12's "according to the flesh" incarnation parallel.
+    # Codified 2026-05-17 (Stan-confirmed analysis).
+    #
+    # Genitive uses ("bowels of mercy") → "depths of mercy" — idiomatic
+    # register-shift; "innermost being of mercy" doesn't fit.
+    # Lineage ("offspring of thy bowels") and literal-figurative ("bowels of
+    # my mother" = womb) keep their existing targeted swaps.
     ("bowels of mercy", "depths of mercy"),
-    ("bowels are filled with compassion", "heart is filled with compassion"),
-    ("bowels are filled with mercy", "heart is filled with mercy"),
-    ("bowels may be filled with mercy", "heart may be filled with mercy"),
+    ("bowels are filled with compassion", "innermost being is filled with compassion"),
+    ("bowels are filled with mercy", "innermost being is filled with mercy"),
+    ("bowels may be filled with mercy", "innermost being may be filled with mercy"),
     ("offspring of thy bowels", "offspring of your body"),
     ("bowels of my mother", "womb of my mother"),
     # Loins — figurative (lineage) vs literal (waist)
