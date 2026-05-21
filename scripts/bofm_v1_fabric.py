@@ -22,7 +22,12 @@ from atu_method.parsing.conllu_query import load_conllu  # noqa: E402
 
 CONLLU = REPO / "data" / "parses" / "ensemble" / "stanza"
 
-CLAUSE_RELS = {"root", "advcl", "acl", "ccomp", "csubj", "parataxis"}
+# A clause-atom head is a clause that STANDS as its own ATU. Complements (ccomp:
+# "I know that X" — canon R17 complement integrity) and adnominal/relative clauses
+# (acl, acl:relcl: "the record which I make" — canon R19) BIND to their governor by
+# default, so they are NOT heads here; the canon appliers refine the exceptions
+# (recitative/declarative complements split; non-restrictive relatives split).
+CLAUSE_RELS = {"root", "advcl", "csubj", "parataxis"}
 
 
 def _i(v):
