@@ -108,7 +108,21 @@ def verse_atu_lines(verse_text):
                 fixed.append(rest)
         else:
             fixed.append(ln)
-    return fixed
+    # R9: a bare coordinating conjunction never stands as its own line — it LEADS
+    # its content, so merge it forward into the next line (the clause it joins).
+    _CC = {"and", "or", "but", "nor", "yet"}
+    out = []
+    carry = ""
+    for ln in fixed:
+        ln = (carry + " " + ln).strip() if carry else ln
+        carry = ""
+        if ln.strip().lower().rstrip(",;:") in _CC:
+            carry = ln
+        else:
+            out.append(ln)
+    if carry:
+        (out.append(carry) if not out else out.__setitem__(-1, out[-1] + " " + carry))
+    return out
 
 
 def generate(book, chap=None):
@@ -123,7 +137,25 @@ def generate(book, chap=None):
     return out
 
 
+OUT_DIR = REPO / "data" / "text-files" / "v2-puremethod-draft"
+
+
+def write_book(book):
+    """Generate the whole book and write a pure-method v-file (v2-mine format:
+    verse marker + one ATU per line). Draft layer, parallel to v2-mine — the
+    systematic PRE-applier segmentation the canon appliers refine next."""
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    lines = generate(book)
+    path = OUT_DIR / f"{book}.txt"
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return path
+
+
 def main():
+    if "--write" in sys.argv:
+        book = sys.argv[1]
+        print(f"wrote {write_book(book)}")
+        return
     book = sys.argv[1] if len(sys.argv) > 1 else "1nephi"
     chap = int(sys.argv[2]) if len(sys.argv) > 2 else None
     print("\n".join(generate(book, chap)))
