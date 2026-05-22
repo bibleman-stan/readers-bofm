@@ -43,6 +43,8 @@ import bofm_generate as G  # noqa: E402
 
 G_FRAME_MARKS = {"when", "before", "after", "while", "whilst", "until", "as",
                  "if", "unless", "though", "although", "since", "whereas"}
+G_SUBORD_ADV = {"when", "after", "before", "while", "whilst", "until", "since",
+                "whereas", "where", "whensoever", "whithersoever", "wherein"}
 _REL = {"who", "whom", "which", "whose", "whence"}
 _SUB = {"because", "that", "when", "if", "though", "although", "since",
         "while", "whereas", "until", "before", "after", "unless"}
@@ -182,13 +184,17 @@ def classify(lines_toks):
             def frame_advcl(sx, v):
                 if (v.deprel or "").split(":")[0] != "advcl":
                     return False
-                mk = next((c.form.lower() for csx, c in seg if csx == sx
-                           and _i(c.head) == _i(v.id) and (c.deprel or "") == "mark"), None)
-                # ANY mark = subordinate clause (frame/causal/purpose/result) ->
-                # not an independent thought -> exclude. A mark-less advcl with its
-                # own finite subject is an asyndetic parallel colon (poetry) ->
-                # counts; participials lack a subject (real_subj gate).
-                return mk is not None
+                # ANY subordinator = subordinate clause (frame/causal/purpose) ->
+                # not an independent thought -> exclude. Detect by `mark`, by SCONJ,
+                # or by a subordinator lemma stanza mis-tagged as advmod (fronted
+                # "when"/"after"). A subordinator-less advcl with its own finite
+                # subject is an asyndetic parallel colon (poetry) -> counts.
+                return any(
+                    csx == sx and _i(c.head) == _i(v.id) and (
+                        (c.deprel or "") == "mark" or c.upos == "SCONJ"
+                        or ((c.deprel or "").split(":")[0] == "advmod"
+                            and (c.lemma or c.form or "").lower() in G_SUBORD_ADV))
+                    for csx, c in seg)
             finite = 0
             for sx, v in verbs:
                 base = (v.deprel or "").split(":")[0]

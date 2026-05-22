@@ -43,6 +43,10 @@ def _i(v):
 # and PURPOSE (to/that) advcls break per canon R6/R7 (and R29 re-binds bare "to").
 _FRAME_MARKS = {"when", "before", "after", "while", "whilst", "until", "as",
                 "if", "unless", "though", "although", "since", "whereas"}
+# Subordinators stanza often tags as advmod (ADV) rather than `mark`, esp. fronted
+# temporal/relative adverbs — used to recognize a subordinated advcl by lemma.
+_SUBORD_ADV = {"when", "after", "before", "while", "whilst", "until", "since",
+               "whereas", "where", "whensoever", "whithersoever", "wherein"}
 
 
 def is_clause_head(tok, by_id=None):
@@ -58,10 +62,20 @@ def is_clause_head(tok, by_id=None):
     # comfort Zion // he will comfort her waste places"); a subjectless unmarked
     # advcl is participial ("having seen many afflictions") -> bind.
     if base == "advcl" and by_id is not None:
-        mk = next((c.form.lower() for c in by_id.values()
-                   if _i(c.head) == _i(tok.id) and (c.deprel or "") == "mark"), None)
-        if mk is not None:
-            return False   # marked subordinate clause -> bind
+        # A clause is subordinated if it carries a subordinator. stanza tags these
+        # inconsistently -- "because"/"that"/"if" as `mark`, but fronted temporal
+        # "when"/"after"/"before" often as `advmod` (ADV) -- so detect by deprel
+        # OR by subordinator lemma, not by `mark` alone (else "And when the Jews
+        # heard these things" splits as a fronted-frame fragment).
+        subordinated = any(
+            _i(c.head) == _i(tok.id) and (
+                (c.deprel or "") == "mark"
+                or c.upos == "SCONJ"
+                or ((c.deprel or "").split(":")[0] == "advmod"
+                    and (c.lemma or c.form or "").lower() in _SUBORD_ADV))
+            for c in by_id.values())
+        if subordinated:
+            return False   # marked/subordinated clause -> bind
         own_subj = any(_i(c.head) == _i(tok.id)
                        and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
                        for c in by_id.values())
