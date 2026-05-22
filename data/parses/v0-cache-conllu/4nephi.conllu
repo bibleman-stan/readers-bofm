@@ -49,7 +49,7 @@
 4	as	as	SCONJ	_	_	6	mark	_	_
 5	did	do	AUX	_	_	6	aux	_	_
 6	come	come	VERB	_	_	3	advcl	_	_
-7	unto	unto	ADP	_	_	8	case	_	_
+7	unto	to	ADP	_	_	8	case	_	_
 8	them	they	PRON	_	_	6	obl	_	_
 9	,	,	PUNCT	_	_	13	punct	_	_
 10	and	and	CCONJ	_	_	13	cc	_	_
@@ -97,7 +97,7 @@
 15	were	be	AUX	_	_	17	aux:pass	_	_
 16	all	all	ADV	_	_	17	advmod	_	_
 17	converted	convert	VERB	_	_	3	parataxis	_	_
-18	unto	unto	ADP	_	_	20	case	_	_
+18	unto	to	ADP	_	_	20	case	_	_
 19	the	the	DET	_	_	20	det	_	_
 20	Lord	Lord	PROPN	_	_	17	obl	_	_
 21	,	,	PUNCT	_	_	25	punct	_	_
@@ -116,7 +116,7 @@
 34	,	,	PUNCT	_	_	37	punct	_	_
 35	and	and	CCONJ	_	_	37	cc	_	_
 36	there	there	PRON	_	_	37	expl	_	_
-37	were	be	VERB	_	_	3	conj	_	_
+37	were	be	VERB	_	_	17	conj	_	_
 38	no	no	DET	_	_	39	det	_	_
 39	contentions	contention	NOUN	_	_	37	nsubj	_	_
 40	and	and	CCONJ	_	_	41	cc	_	_
@@ -314,8 +314,8 @@
 27	and	and	CCONJ	_	_	28	cc	_	_
 28	second	second	ADJ	_	_	26	conj	_	_
 29	,	,	PUNCT	_	_	30	punct	_	_
-30	yea	yea	INTJ	_	_	39	discourse	_	_
-31	,	,	PUNCT	_	_	39	punct	_	_
+30	yea	yes	INTJ	_	_	39	discourse	_	_
+31	,	,	PUNCT	_	_	30	punct	_	_
 32	even	even	ADV	_	_	39	advmod	_	_
 33	until	until	SCONJ	_	_	39	mark	_	_
 34	forty	forty	NUM	_	_	37	nummod	_	_
@@ -338,8 +338,8 @@
 51	fifty	fifty	NUM	_	_	45	conj	_	_
 52	and	and	CCONJ	_	_	53	cc	_	_
 53	second	second	ADJ	_	_	51	conj	_	_
-54	;	;	PUNCT	_	_	55	punct	_	_
-55	yea	yea	INTJ	_	_	45	discourse	_	_
+54	;	;	PUNCT	_	_	65	punct	_	_
+55	yea	yes	INTJ	_	_	65	discourse	_	_
 56	,	,	PUNCT	_	_	65	punct	_	_
 57	and	and	CCONJ	_	_	65	cc	_	_
 58	even	even	ADV	_	_	65	advmod	_	_
@@ -366,7 +366,7 @@
 9	the	the	DET	_	_	10	det	_	_
 10	land	land	NOUN	_	_	5	obl	_	_
 11	;	;	PUNCT	_	_	12	punct	_	_
-12	yea	yea	INTJ	_	_	5	discourse	_	_
+12	yea	yes	INTJ	_	_	5	discourse	_	_
 13	,	,	PUNCT	_	_	12	punct	_	_
 14	insomuch	insomuch	ADV	_	_	5	advmod	_	_
 15	that	that	SCONJ	_	_	18	mark	_	_
@@ -385,12 +385,12 @@
 
 # sent_id = 8
 # text = Yea, even that great city Zarahemla did they cause to be built again.
-1	Yea	yea	INTJ	_	_	10	discourse	_	_
+1	Yea	yes	INTJ	_	_	10	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	even	even	ADV	_	_	6	advmod	_	_
 4	that	that	DET	_	_	6	det	_	_
 5	great	great	ADJ	_	_	6	amod	_	_
-6	city	city	NOUN	_	_	10	dislocated	_	_
+6	city	city	NOUN	_	_	10	nsubj	_	_
 7	Zarahemla	Zarahemla	PROPN	_	_	6	appos	_	_
 8	did	do	AUX	_	_	10	aux	_	_
 9	they	they	PRON	_	_	10	nsubj	_	_
@@ -494,7 +494,7 @@
 23	Lord	Lord	PROPN	_	_	25	nsubj	_	_
 24	had	have	AUX	_	_	25	aux	_	_
 25	made	make	VERB	_	_	20	acl:relcl	_	_
-26	unto	unto	ADP	_	_	27	case	_	_
+26	unto	to	ADP	_	_	27	case	_	_
 27	them	they	PRON	_	_	25	obl	_	_
 28	.	.	PUNCT	_	_	4	punct	_	_
 
@@ -619,7 +619,7 @@
 20	second	second	ADJ	_	_	18	conj	_	_
 21	year	year	NOUN	_	_	12	conj	_	_
 22	,	,	PUNCT	_	_	23	punct	_	_
-23	yea	yea	INTJ	_	_	36	discourse	_	_
+23	yea	yes	INTJ	_	_	36	discourse	_	_
 24	,	,	PUNCT	_	_	25	punct	_	_
 25	and	and	CCONJ	_	_	36	cc	_	_
 26	in	in	ADP	_	_	27	case	_	_
@@ -635,7 +635,7 @@
 36	passed	pass	VERB	_	_	12	conj	_	_
 37	away	away	ADV	_	_	36	advmod	_	_
 38	;	;	PUNCT	_	_	39	punct	_	_
-39	yea	yea	INTJ	_	_	46	discourse	_	_
+39	yea	yes	INTJ	_	_	46	discourse	_	_
 40	,	,	PUNCT	_	_	39	punct	_	_
 41	even	even	ADV	_	_	44	advmod	_	_
 42	an	a	DET	_	_	44	det	_	_
@@ -672,7 +672,7 @@
 73	three	three	NUM	_	_	62	parataxis	_	_
 74	who	who	PRON	_	_	76	nsubj	_	_
 75	should	should	AUX	_	_	76	aux	_	_
-76	tarry	tarry	VERB	_	_	73	acl:relcl	_	_
+76	tarry	stay	VERB	_	_	73	acl:relcl	_	_
 77	;	;	PUNCT	_	_	80	punct	_	_
 78	and	and	CCONJ	_	_	80	cc	_	_
 79	there	there	PRON	_	_	80	expl	_	_
@@ -845,7 +845,7 @@
 9	their	their	PRON	_	_	10	nmod:poss	_	_
 10	doings	doing	NOUN	_	_	5	obl	_	_
 11	;	;	PUNCT	_	_	12	punct	_	_
-12	yea	yea	INTJ	_	_	17	discourse	_	_
+12	yea	yes	INTJ	_	_	17	discourse	_	_
 13	,	,	PUNCT	_	_	12	punct	_	_
 14	even	even	ADV	_	_	17	advmod	_	_
 15	they	they	PRON	_	_	17	nsubj:pass	_	_
@@ -1095,12 +1095,12 @@
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	now	now	ADV	_	_	11	advmod	_	_
 3	I	I	PRON	_	_	11	nsubj	_	_
-4	,	,	PUNCT	_	_	5	punct	_	_
+4	,	,	PUNCT	_	_	3	punct	_	_
 5	Mormon	mormon	PROPN	_	_	3	appos	_	_
 6	,	,	PUNCT	_	_	3	punct	_	_
 7	would	would	AUX	_	_	11	aux	_	_
 8	that	that	SCONJ	_	_	11	mark	_	_
-9	ye	ye	PRON	_	_	11	nsubj	_	_
+9	ye	you	PRON	_	_	11	nsubj	_	_
 10	should	should	AUX	_	_	11	aux	_	_
 11	know	know	VERB	_	_	0	root	_	_
 12	that	that	SCONJ	_	_	16	mark	_	_
@@ -1170,7 +1170,7 @@
 28	wearing	wear	NOUN	_	_	17	nmod	_	_
 29	of	of	ADP	_	_	31	case	_	_
 30	costly	costly	ADJ	_	_	31	amod	_	_
-31	apparel	apparel	NOUN	_	_	28	nmod	_	_
+31	apparel	clothing	NOUN	_	_	28	nmod	_	_
 32	,	,	PUNCT	_	_	35	punct	_	_
 33	and	and	CCONJ	_	_	35	cc	_	_
 34	all	all	DET	_	_	35	det	_	_
@@ -1229,7 +1229,7 @@
 14	build	build	VERB	_	_	12	xcomp	_	_
 15	up	up	ADP	_	_	14	compound:prt	_	_
 16	churches	church	NOUN	_	_	14	obj	_	_
-17	unto	unto	ADP	_	_	18	case	_	_
+17	unto	to	ADP	_	_	18	case	_	_
 18	themselves	themselves	PRON	_	_	14	obl	_	_
 19	to	to	PART	_	_	20	mark	_	_
 20	get	get	VERB	_	_	14	advcl	_	_
@@ -1271,7 +1271,7 @@
 21	the	the	DET	_	_	22	det	_	_
 22	land	land	NOUN	_	_	19	nmod	_	_
 23	;	;	PUNCT	_	_	27	punct	_	_
-24	yea	yea	INTJ	_	_	27	discourse	_	_
+24	yea	yes	INTJ	_	_	27	discourse	_	_
 25	,	,	PUNCT	_	_	24	punct	_	_
 26	there	there	PRON	_	_	27	expl	_	_
 27	were	be	VERB	_	_	3	parataxis	_	_
@@ -1310,10 +1310,10 @@
 60	did	do	AUX	_	_	61	aux	_	_
 61	administer	administer	VERB	_	_	41	conj	_	_
 62	that	that	PRON	_	_	61	obj	_	_
-63	which	which	PRON	_	_	65	nsubj	_	_
-64	was	be	AUX	_	_	65	cop	_	_
-65	sacred	sacred	ADJ	_	_	62	acl:relcl	_	_
-66	unto	unto	ADP	_	_	67	case	_	_
+63	which	which	PRON	_	_	65	nsubj:pass	_	_
+64	was	be	AUX	_	_	65	aux:pass	_	_
+65	sacred	sacred	VERB	_	_	62	acl:relcl	_	_
+66	unto	to	ADP	_	_	67	case	_	_
 67	him	he	PRON	_	_	65	obl	_	_
 68	to	to	ADP	_	_	69	case	_	_
 69	whom	whom	PRON	_	_	73	obl	_	_
@@ -1421,7 +1421,7 @@
 12	Jesus	Jesus	PROPN	_	_	10	nmod	_	_
 13	who	who	PRON	_	_	15	nsubj	_	_
 14	did	do	AUX	_	_	15	aux	_	_
-15	tarry	tarry	VERB	_	_	12	acl:relcl	_	_
+15	tarry	stay	VERB	_	_	12	acl:relcl	_	_
 16	with	with	ADP	_	_	17	case	_	_
 17	them	they	PRON	_	_	15	obl	_	_
 18	,	,	PUNCT	_	_	22	punct	_	_
@@ -1453,7 +1453,7 @@
 44	were	be	AUX	_	_	45	cop	_	_
 45	rent	rent	NOUN	_	_	4	conj	_	_
 46	in	in	ADP	_	_	47	case	_	_
-47	twain	twain	NOUN	_	_	45	obl	_	_
+47	twain	two	NUM	_	_	45	obl	_	_
 48	,	,	PUNCT	_	_	51	punct	_	_
 49	and	and	CCONJ	_	_	51	cc	_	_
 50	they	they	PRON	_	_	51	nsubj	_	_
@@ -1471,11 +1471,11 @@
 1	Nevertheless	nevertheless	ADV	_	_	12	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	and	and	CCONJ	_	_	12	cc	_	_
-4	notwithstanding	notwithstand	VERB	_	_	12	advcl	_	_
+4	notwithstanding	despite	ADP	_	_	7	case	_	_
 5	all	all	DET	_	_	7	det:predet	_	_
 6	these	this	DET	_	_	7	det	_	_
-7	miracles	miracle	NOUN	_	_	4	obj	_	_
-8	,	,	PUNCT	_	_	4	punct	_	_
+7	miracles	miracle	NOUN	_	_	12	obl	_	_
+8	,	,	PUNCT	_	_	7	punct	_	_
 9	the	the	DET	_	_	10	det	_	_
 10	people	person	NOUN	_	_	12	nsubj	_	_
 11	did	do	AUX	_	_	12	aux	_	_
@@ -1612,7 +1612,7 @@
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
 3	did	do	AUX	_	_	4	aux	_	_
-4	smite	smite	VERB	_	_	0	root	_	_
+4	smite	strike	VERB	_	_	0	root	_	_
 5	upon	upon	ADP	_	_	7	case	_	_
 6	the	the	DET	_	_	7	det	_	_
 7	people	person	NOUN	_	_	4	obl	_	_
@@ -1626,7 +1626,7 @@
 15	Jesus	Jesus	PROPN	_	_	13	nmod	_	_
 16	did	do	AUX	_	_	18	aux	_	_
 17	not	not	PART	_	_	18	advmod	_	_
-18	smite	smite	VERB	_	_	4	conj	_	_
+18	smite	strike	VERB	_	_	4	conj	_	_
 19	again	again	ADV	_	_	18	advmod	_	_
 20	.	.	PUNCT	_	_	4	punct	_	_
 
@@ -1671,7 +1671,7 @@
 8	this	this	DET	_	_	9	det	_	_
 9	year	year	NOUN	_	_	6	obl:unmarked	_	_
 10	,	,	PUNCT	_	_	11	punct	_	_
-11	yea	yea	INTJ	_	_	24	discourse	_	_
+11	yea	yes	INTJ	_	_	24	discourse	_	_
 12	,	,	PUNCT	_	_	11	punct	_	_
 13	in	in	ADP	_	_	16	case	_	_
 14	the	the	DET	_	_	21	det	_	_
@@ -1771,7 +1771,7 @@
 23	Jesus	Jesus	PROPN	_	_	21	nmod	_	_
 24	who	who	PRON	_	_	26	nsubj	_	_
 25	should	should	AUX	_	_	26	aux	_	_
-26	tarry	tarry	VERB	_	_	23	acl:relcl	_	_
+26	tarry	stay	VERB	_	_	23	acl:relcl	_	_
 27	)	)	PUNCT	_	_	21	punct	_	_
 28	were	be	AUX	_	_	29	aux:pass	_	_
 29	called	call	VERB	_	_	0	root	_	_
@@ -1975,11 +1975,11 @@
 7	build	build	VERB	_	_	5	xcomp	_	_
 8	up	up	ADP	_	_	7	compound:prt	_	_
 9	churches	church	NOUN	_	_	7	obj	_	_
-10	unto	unto	ADP	_	_	11	case	_	_
+10	unto	to	ADP	_	_	11	case	_	_
 11	themselves	themselves	PRON	_	_	7	obl	_	_
 12	,	,	PUNCT	_	_	14	punct	_	_
 13	and	and	CCONJ	_	_	14	cc	_	_
-14	adorn	adorn	VERB	_	_	5	conj	_	_
+14	adorn	adorn	VERB	_	_	7	conj	_	_
 15	them	they	PRON	_	_	14	obj	_	_
 16	with	with	ADP	_	_	18	case	_	_
 17	all	all	DET	_	_	18	det	_	_
@@ -2063,16 +2063,16 @@
 20	because	because	ADP	_	_	24	case	_	_
 21	of	of	ADP	_	_	20	fixed	_	_
 22	their	their	PRON	_	_	24	nmod:poss	_	_
-23	exceeding	exceed	VERB	_	_	24	amod	_	_
+23	exceeding	great	ADJ	_	_	24	amod	_	_
 24	riches	rich	NOUN	_	_	15	obl	_	_
 25	,	,	PUNCT	_	_	27	punct	_	_
 26	and	and	CCONJ	_	_	27	cc	_	_
 27	become	become	VERB	_	_	12	conj	_	_
 28	vain	vain	ADJ	_	_	27	xcomp	_	_
 29	like	like	ADP	_	_	32	case	_	_
-30	unto	unto	ADP	_	_	32	case	_	_
+30	unto	to	ADP	_	_	32	case	_	_
 31	their	their	PRON	_	_	32	nmod:poss	_	_
-32	brethren	brethren	NOUN	_	_	28	obl	_	_
+32	brethren	brother	NOUN	_	_	28	obl	_	_
 33	,	,	PUNCT	_	_	35	punct	_	_
 34	the	the	DET	_	_	35	det	_	_
 35	Lamanites	Lamanites	PROPN	_	_	32	appos	_	_
@@ -2126,8 +2126,8 @@
 25	exceedingly	exceedingly	ADV	_	_	26	advmod	_	_
 26	wicked	wicked	ADJ	_	_	24	xcomp	_	_
 27	one	one	NUM	_	_	26	obl:unmarked	_	_
-28	like	like	ADP	_	_	30	case	_	_
-29	unto	unto	ADP	_	_	30	case	_	_
+28	like	like	INTJ	_	_	30	discourse	_	_
+29	unto	to	ADP	_	_	30	case	_	_
 30	another	another	DET	_	_	26	obl	_	_
 31	.	.	PUNCT	_	_	3	punct	_	_
 
@@ -2264,7 +2264,7 @@
 17	Ammaron	Ammaron	PROPN	_	_	27	nsubj	_	_
 18	,	,	PUNCT	_	_	20	punct	_	_
 19	being	be	AUX	_	_	20	aux:pass	_	_
-20	constrained	constrain	VERB	_	_	17	acl	_	_
+20	constrained	compel	VERB	_	_	17	acl	_	_
 21	by	by	ADP	_	_	24	case	_	_
 22	the	the	DET	_	_	24	det	_	_
 23	Holy	Holy	ADJ	_	_	24	amod	_	_
@@ -2279,7 +2279,7 @@
 32	were	be	AUX	_	_	33	cop	_	_
 33	sacred	sacred	ADJ	_	_	30	acl:relcl	_	_
 34	--	--	PUNCT	_	_	35	punct	_	_
-35	yea	yea	INTJ	_	_	41	discourse	_	_
+35	yea	yes	INTJ	_	_	41	discourse	_	_
 36	,	,	PUNCT	_	_	35	punct	_	_
 37	even	even	ADV	_	_	41	advmod	_	_
 38	all	all	DET	_	_	41	det:predet	_	_
@@ -2298,7 +2298,7 @@
 51	,	,	PUNCT	_	_	54	punct	_	_
 52	which	which	PRON	_	_	54	nsubj	_	_
 53	were	be	AUX	_	_	54	cop	_	_
-54	sacred	sacred	ADJ	_	_	48	acl:relcl	_	_
+54	sacred	sacred	ADJ	_	_	41	acl:relcl	_	_
 55	--	--	PUNCT	_	_	63	punct	_	_
 56	even	even	ADV	_	_	63	advmod	_	_
 57	until	until	ADP	_	_	63	case	_	_
@@ -2323,16 +2323,16 @@
 4	hide	hide	VERB	_	_	0	root	_	_
 5	them	they	PRON	_	_	4	obj	_	_
 6	up	up	ADP	_	_	4	compound:prt	_	_
-7	unto	unto	ADP	_	_	9	case	_	_
+7	unto	to	ADP	_	_	9	case	_	_
 8	the	the	DET	_	_	9	det	_	_
 9	Lord	Lord	PROPN	_	_	4	obl	_	_
 10	,	,	PUNCT	_	_	14	punct	_	_
 11	that	that	SCONJ	_	_	14	mark	_	_
 12	they	they	PRON	_	_	14	nsubj	_	_
 13	might	might	AUX	_	_	14	aux	_	_
-14	come	come	VERB	_	_	4	parataxis	_	_
+14	come	come	VERB	_	_	4	advcl	_	_
 15	again	again	ADV	_	_	14	advmod	_	_
-16	unto	unto	ADP	_	_	18	case	_	_
+16	unto	to	ADP	_	_	18	case	_	_
 17	the	the	DET	_	_	18	det	_	_
 18	remnant	remnant	NOUN	_	_	14	obl	_	_
 19	of	of	ADP	_	_	21	case	_	_

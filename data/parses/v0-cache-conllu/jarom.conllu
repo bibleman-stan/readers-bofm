@@ -52,12 +52,12 @@
 19	benefit	benefit	NOUN	_	_	16	nmod	_	_
 20	of	of	ADP	_	_	22	case	_	_
 21	our	our	PRON	_	_	22	nmod:poss	_	_
-22	brethren	brethren	NOUN	_	_	19	nmod	_	_
+22	brethren	brother	NOUN	_	_	19	nmod	_	_
 23	the	the	DET	_	_	24	det	_	_
 24	Lamanites	Lamanites	PROPN	_	_	22	appos	_	_
 25	,	,	PUNCT	_	_	6	punct	_	_
-26	wherefore	wherefore	ADV	_	_	30	advmod	_	_
-27	,	,	PUNCT	_	_	6	punct	_	_
+26	wherefore	so	ADV	_	_	30	advmod	_	_
+27	,	,	PUNCT	_	_	26	punct	_	_
 28	it	it	PRON	_	_	30	expl	_	_
 29	must	must	AUX	_	_	30	aux	_	_
 30	needs	need	VERB	_	_	0	root	_	_
@@ -117,14 +117,14 @@
 # text = I say unto you, Yea; and this sufficeth me.
 1	I	I	PRON	_	_	2	nsubj	_	_
 2	say	say	VERB	_	_	0	root	_	_
-3	unto	unto	ADP	_	_	4	case	_	_
+3	unto	to	ADP	_	_	4	case	_	_
 4	you	you	PRON	_	_	2	obl	_	_
 5	,	,	PUNCT	_	_	6	punct	_	_
-6	Yea	yea	INTJ	_	_	2	discourse	_	_
+6	Yea	yes	INTJ	_	_	2	discourse	_	_
 7	;	;	PUNCT	_	_	10	punct	_	_
 8	and	and	CCONJ	_	_	10	cc	_	_
 9	this	this	PRON	_	_	10	nsubj	_	_
-10	sufficeth	sufficeth	VERB	_	_	2	conj	_	_
+10	sufficeth	suffic	VERB	_	_	2	conj	_	_
 11	me	I	PRON	_	_	10	obj	_	_
 12	.	.	PUNCT	_	_	2	punct	_	_
 
@@ -179,7 +179,7 @@
 47	is	be	AUX	_	_	49	cop	_	_
 48	exceedingly	exceedingly	ADV	_	_	49	advmod	_	_
 49	merciful	merciful	ADJ	_	_	5	parataxis	_	_
-50	unto	unto	ADP	_	_	51	case	_	_
+50	unto	to	ADP	_	_	51	case	_	_
 51	them	they	PRON	_	_	49	obl	_	_
 52	,	,	PUNCT	_	_	58	punct	_	_
 53	and	and	CCONJ	_	_	58	cc	_	_
@@ -238,20 +238,20 @@
 15	the	the	DET	_	_	17	det	_	_
 16	Holy	Holy	ADJ	_	_	17	amod	_	_
 17	Spirit	Spirit	PROPN	_	_	13	nmod	_	_
-18	,	,	PUNCT	_	_	21	punct	_	_
-19	which	which	PRON	_	_	21	obj	_	_
-20	maketh	maketh	NOUN	_	_	21	nsubj	_	_
-21	manifest	manifest	VERB	_	_	17	acl:relcl	_	_
-22	unto	unto	ADP	_	_	24	case	_	_
+18	,	,	PUNCT	_	_	20	punct	_	_
+19	which	which	PRON	_	_	20	nsubj	_	_
+20	maketh	make	VERB	_	_	17	acl:relcl	_	_
+21	manifest	manifest	ADJ	_	_	20	xcomp	_	_
+22	unto	to	ADP	_	_	24	case	_	_
 23	the	the	DET	_	_	24	det	_	_
-24	children	child	NOUN	_	_	21	obl	_	_
+24	children	child	NOUN	_	_	20	obl	_	_
 25	of	of	ADP	_	_	26	case	_	_
 26	men	man	NOUN	_	_	24	nmod	_	_
 27	,	,	PUNCT	_	_	31	punct	_	_
 28	according	accord	VERB	_	_	31	case	_	_
 29	to	to	ADP	_	_	28	fixed	_	_
 30	their	their	PRON	_	_	31	nmod:poss	_	_
-31	faith	faith	NOUN	_	_	21	obl	_	_
+31	faith	faith	NOUN	_	_	20	obl	_	_
 32	.	.	PUNCT	_	_	12	punct	_	_
 
 # sent_id = 8
@@ -274,7 +274,7 @@
 16	of	of	ADP	_	_	17	case	_	_
 17	Nephi	Nephi	PROPN	_	_	15	nmod	_	_
 18	had	have	AUX	_	_	19	aux	_	_
-19	waxed	wax	VERB	_	_	10	conj	_	_
+19	waxed	grow	VERB	_	_	10	conj	_	_
 20	strong	strong	ADJ	_	_	19	xcomp	_	_
 21	in	in	ADP	_	_	23	case	_	_
 22	the	the	DET	_	_	23	det	_	_
@@ -286,7 +286,7 @@
 1	They	they	PRON	_	_	2	nsubj	_	_
 2	observed	observe	VERB	_	_	0	root	_	_
 3	to	to	PART	_	_	4	mark	_	_
-4	keep	keep	VERB	_	_	2	xcomp	_	_
+4	keep	keep	VERB	_	_	2	advcl	_	_
 5	the	the	DET	_	_	6	det	_	_
 6	law	law	NOUN	_	_	4	obj	_	_
 7	of	of	ADP	_	_	8	case	_	_
@@ -296,7 +296,7 @@
 11	sabbath	sabbath	NOUN	_	_	12	compound	_	_
 12	day	day	NOUN	_	_	8	conj	_	_
 13	holy	holy	ADJ	_	_	6	amod	_	_
-14	unto	unto	ADP	_	_	16	case	_	_
+14	unto	to	ADP	_	_	16	case	_	_
 15	the	the	DET	_	_	16	det	_	_
 16	Lord	Lord	PROPN	_	_	13	obl	_	_
 17	.	.	PUNCT	_	_	2	punct	_	_
@@ -427,7 +427,7 @@
 25	the	the	DET	_	_	26	det	_	_
 26	Lord	Lord	PROPN	_	_	23	nmod	_	_
 27	;	;	PUNCT	_	_	31	punct	_	_
-28	wherefore	wherefore	ADV	_	_	31	advmod	_	_
+28	wherefore	so	ADV	_	_	31	advmod	_	_
 29	,	,	PUNCT	_	_	28	punct	_	_
 30	we	we	PRON	_	_	31	nsubj	_	_
 31	withstood	withstood	VERB	_	_	9	parataxis	_	_
@@ -533,7 +533,7 @@
 72	of	of	ADP	_	_	73	case	_	_
 73	war	war	NOUN	_	_	71	nmod	_	_
 74	--	--	PUNCT	_	_	75	punct	_	_
-75	yea	yea	INTJ	_	_	80	discourse	_	_
+75	yea	yes	INTJ	_	_	80	discourse	_	_
 76	,	,	PUNCT	_	_	75	punct	_	_
 77	the	the	DET	_	_	80	det	_	_
 78	sharp	sharp	ADJ	_	_	80	amod	_	_
@@ -566,7 +566,7 @@
 3	being	be	AUX	_	_	4	aux:pass	_	_
 4	prepared	prepare	VERB	_	_	13	advcl	_	_
 5	to	to	PART	_	_	6	mark	_	_
-6	meet	meet	VERB	_	_	4	xcomp	_	_
+6	meet	fit	VERB	_	_	4	xcomp	_	_
 7	the	the	DET	_	_	8	det	_	_
 8	Lamanites	Lamanites	PROPN	_	_	6	obj	_	_
 9	,	,	PUNCT	_	_	4	punct	_	_
@@ -591,8 +591,8 @@
 9	,	,	PUNCT	_	_	12	punct	_	_
 10	which	which	PRON	_	_	12	obj	_	_
 11	he	he	PRON	_	_	12	nsubj	_	_
-12	spake	spake	VERB	_	_	8	advcl:relcl	_	_
-13	unto	unto	ADP	_	_	15	case	_	_
+12	spake	speak	VERB	_	_	8	advcl:relcl	_	_
+13	unto	to	ADP	_	_	15	case	_	_
 14	our	our	PRON	_	_	15	nmod:poss	_	_
 15	fathers	father	NOUN	_	_	12	obl	_	_
 16	,	,	PUNCT	_	_	17	punct	_	_
@@ -601,12 +601,12 @@
 19	:	:	PUNCT	_	_	18	punct	_	_
 20	Inasmuch	inasmuch	ADV	_	_	29	advmod	_	_
 21	as	as	SCONJ	_	_	24	mark	_	_
-22	ye	ye	PRON	_	_	24	nsubj	_	_
+22	ye	you	PRON	_	_	24	nsubj	_	_
 23	will	will	AUX	_	_	24	aux	_	_
 24	keep	keep	VERB	_	_	29	advcl	_	_
 25	my	my	PRON	_	_	26	nmod:poss	_	_
 26	commandments	commandment	NOUN	_	_	24	obj	_	_
-27	ye	ye	PRON	_	_	29	nsubj	_	_
+27	ye	you	PRON	_	_	29	nsubj	_	_
 28	shall	shall	AUX	_	_	29	aux	_	_
 29	prosper	prosper	VERB	_	_	17	ccomp	_	_
 30	in	in	ADP	_	_	32	case	_	_
@@ -671,7 +671,7 @@
 
 # sent_id = 20
 # text = Wherefore, the prophets, and the priests, and the teachers, did labor diligently, exhorting with all long-suffering the people to diligence; teaching the law of Moses, and the intent for which it was given; persuading them to look forward unto the Messiah, and believe in him to come as though he already was.
-1	Wherefore	wherefore	ADV	_	_	14	advmod	_	_
+1	Wherefore	so	ADV	_	_	14	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	the	the	DET	_	_	4	det	_	_
 4	prophets	prophet	NOUN	_	_	14	nsubj	_	_
@@ -719,7 +719,7 @@
 46	to	to	PART	_	_	47	mark	_	_
 47	look	look	VERB	_	_	44	xcomp	_	_
 48	forward	forward	ADV	_	_	47	advmod	_	_
-49	unto	unto	ADP	_	_	51	case	_	_
+49	unto	to	ADP	_	_	51	case	_	_
 50	the	the	DET	_	_	51	det	_	_
 51	Messiah	Messiah	PROPN	_	_	47	obl	_	_
 52	,	,	PUNCT	_	_	54	punct	_	_
@@ -786,7 +786,7 @@
 34	stirring	stir	VERB	_	_	26	advcl	_	_
 35	them	they	PRON	_	_	34	obj	_	_
 36	up	up	ADP	_	_	34	compound:prt	_	_
-37	unto	unto	ADP	_	_	38	case	_	_
+37	unto	to	ADP	_	_	38	case	_	_
 38	repentance	repentance	NOUN	_	_	34	obl	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
@@ -856,9 +856,9 @@
 2	behold	behold	INTJ	_	_	9	discourse	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
 4	my	my	PRON	_	_	5	nmod:poss	_	_
-5	brethren	brethren	NOUN	_	_	9	vocative	_	_
+5	brethren	brother	NOUN	_	_	9	vocative	_	_
 6	,	,	PUNCT	_	_	5	punct	_	_
-7	ye	ye	PRON	_	_	9	nsubj	_	_
+7	ye	you	PRON	_	_	9	nsubj	_	_
 8	can	can	AUX	_	_	9	aux	_	_
 9	go	go	VERB	_	_	0	root	_	_
 10	to	to	ADP	_	_	13	case	_	_
@@ -874,12 +874,12 @@
 20	upon	upon	ADP	_	_	21	case	_	_
 21	them	they	PRON	_	_	28	obl	_	_
 22	the	the	DET	_	_	23	det	_	_
-23	records	record	NOUN	_	_	28	nsubj	_	_
+23	records	record	NOUN	_	_	28	nsubj:pass	_	_
 24	of	of	ADP	_	_	26	case	_	_
 25	our	our	PRON	_	_	26	nmod:poss	_	_
 26	wars	war	NOUN	_	_	23	nmod	_	_
-27	are	be	AUX	_	_	28	cop	_	_
-28	engraven	engraven	ADJ	_	_	9	parataxis	_	_
+27	are	be	AUX	_	_	28	aux:pass	_	_
+28	engraven	engrave	VERB	_	_	9	parataxis	_	_
 29	,	,	PUNCT	_	_	33	punct	_	_
 30	according	accord	VERB	_	_	33	case	_	_
 31	to	to	ADP	_	_	30	fixed	_	_

@@ -69,7 +69,7 @@
 23	;	;	PUNCT	_	_	26	punct	_	_
 24	and	and	CCONJ	_	_	26	cc	_	_
 25	it	it	PRON	_	_	26	expl	_	_
-26	supposeth	supposeth	VERB	_	_	6	conj	_	_
+26	supposeth	suppose	VERB	_	_	6	conj	_	_
 27	me	I	PRON	_	_	26	iobj	_	_
 28	that	that	SCONJ	_	_	31	mark	_	_
 29	he	he	PRON	_	_	31	nsubj	_	_
@@ -126,12 +126,12 @@
 4	I	I	PRON	_	_	5	nsubj	_	_
 5	speak	speak	VERB	_	_	0	root	_	_
 6	somewhat	somewhat	ADV	_	_	5	advmod	_	_
-7	concerning	concern	VERB	_	_	5	xcomp	_	_
+7	concerning	concern	VERB	_	_	12	mark	_	_
 8	that	that	SCONJ	_	_	12	mark	_	_
 9	which	which	PRON	_	_	12	obj	_	_
 10	I	I	PRON	_	_	12	nsubj	_	_
 11	have	have	AUX	_	_	12	aux	_	_
-12	written	write	VERB	_	_	7	ccomp	_	_
+12	written	write	VERB	_	_	5	ccomp	_	_
 13	;	;	PUNCT	_	_	14	punct	_	_
 14	for	for	ADP	_	_	42	mark	_	_
 15	after	after	SCONJ	_	_	18	mark	_	_
@@ -139,7 +139,7 @@
 17	had	have	AUX	_	_	18	aux	_	_
 18	made	make	VERB	_	_	42	advcl	_	_
 19	an	a	DET	_	_	20	det	_	_
-20	abridgment	abridgment	NOUN	_	_	18	obj	_	_
+20	abridgment	summary	NOUN	_	_	18	obj	_	_
 21	from	from	ADP	_	_	23	case	_	_
 22	the	the	DET	_	_	23	det	_	_
 23	plates	plate	NOUN	_	_	20	nmod	_	_
@@ -158,7 +158,7 @@
 36	of	of	ADP	_	_	37	case	_	_
 37	whom	whom	PRON	_	_	42	obl	_	_
 38	Amaleki	Amaleki	PROPN	_	_	39	nsubj	_	_
-39	spake	spake	VERB	_	_	33	acl:relcl	_	_
+39	spake	speak	VERB	_	_	33	acl:relcl	_	_
 40	,	,	PUNCT	_	_	18	punct	_	_
 41	I	I	PRON	_	_	42	nsubj	_	_
 42	searched	search	VERB	_	_	5	parataxis	_	_
@@ -183,7 +183,7 @@
 61	contained	contain	VERB	_	_	58	acl:relcl	_	_
 62	this	this	DET	_	_	64	det	_	_
 63	small	small	ADJ	_	_	64	amod	_	_
-64	account	account	NOUN	_	_	61	obj	_	_
+64	account	record	NOUN	_	_	61	obj	_	_
 65	of	of	ADP	_	_	67	case	_	_
 66	the	the	DET	_	_	67	det	_	_
 67	prophets	prophet	NOUN	_	_	64	nmod	_	_
@@ -244,7 +244,7 @@
 31	been	be	AUX	_	_	32	aux:pass	_	_
 32	fulfilled	fulfil	VERB	_	_	25	ccomp	_	_
 33	;	;	PUNCT	_	_	39	punct	_	_
-34	yea	yea	INTJ	_	_	39	discourse	_	_
+34	yea	yes	INTJ	_	_	39	discourse	_	_
 35	,	,	PUNCT	_	_	39	punct	_	_
 36	and	and	CCONJ	_	_	39	cc	_	_
 37	I	I	PRON	_	_	39	nsubj	_	_
@@ -285,7 +285,7 @@
 
 # sent_id = 5
 # text = Wherefore, I chose these things, to finish my record upon them, which remainder of my record I shall take from the plates of Nephi; and I cannot write the hundredth part of the things of my people.
-1	Wherefore	wherefore	ADV	_	_	4	advmod	_	_
+1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	I	I	PRON	_	_	4	nsubj	_	_
 4	chose	choose	VERB	_	_	0	root	_	_
@@ -361,7 +361,7 @@
 28	they	they	PRON	_	_	30	nsubj	_	_
 29	are	be	AUX	_	_	30	cop	_	_
 30	choice	choice	NOUN	_	_	18	advcl	_	_
-31	unto	unto	ADP	_	_	32	case	_	_
+31	unto	to	ADP	_	_	32	case	_	_
 32	me	I	PRON	_	_	30	nmod	_	_
 33	;	;	PUNCT	_	_	36	punct	_	_
 34	and	and	CCONJ	_	_	36	cc	_	_
@@ -371,9 +371,9 @@
 38	will	will	AUX	_	_	40	aux	_	_
 39	be	be	AUX	_	_	40	cop	_	_
 40	choice	choice	NOUN	_	_	36	ccomp	_	_
-41	unto	unto	ADP	_	_	43	case	_	_
+41	unto	to	ADP	_	_	43	case	_	_
 42	my	my	PRON	_	_	43	nmod:poss	_	_
-43	brethren	brethren	NOUN	_	_	40	nmod	_	_
+43	brethren	brother	NOUN	_	_	40	nmod	_	_
 44	.	.	PUNCT	_	_	6	punct	_	_
 
 # sent_id = 7
@@ -390,7 +390,7 @@
 10	for	for	SCONJ	_	_	13	mark	_	_
 11	thus	thus	ADV	_	_	13	advmod	_	_
 12	it	it	PRON	_	_	13	nsubj	_	_
-13	whispereth	whispereth	VERB	_	_	3	advcl	_	_
+13	whispereth	whisper	VERB	_	_	3	advcl	_	_
 14	me	I	PRON	_	_	13	obj	_	_
 15	,	,	PUNCT	_	_	19	punct	_	_
 16	according	accord	VERB	_	_	19	case	_	_
@@ -424,22 +424,22 @@
 11	but	but	CCONJ	_	_	14	cc	_	_
 12	the	the	DET	_	_	13	det	_	_
 13	Lord	Lord	PROPN	_	_	14	nsubj	_	_
-14	knoweth	knoweth	VERB	_	_	7	conj	_	_
+14	knoweth	know	VERB	_	_	7	conj	_	_
 15	all	all	DET	_	_	16	det	_	_
 16	things	thing	NOUN	_	_	14	obj	_	_
 17	which	which	PRON	_	_	20	nsubj	_	_
 18	are	be	AUX	_	_	20	cop	_	_
 19	to	to	PART	_	_	20	mark	_	_
 20	come	come	VERB	_	_	16	acl:relcl	_	_
-21	;	;	PUNCT	_	_	22	punct	_	_
-22	wherefore	wherefore	ADV	_	_	25	advmod	_	_
+21	;	;	PUNCT	_	_	25	punct	_	_
+22	wherefore	so	ADV	_	_	25	advmod	_	_
 23	,	,	PUNCT	_	_	22	punct	_	_
 24	he	he	PRON	_	_	25	nsubj	_	_
-25	worketh	worketh	VERB	_	_	7	parataxis	_	_
+25	worketh	work	VERB	_	_	7	parataxis	_	_
 26	in	in	ADP	_	_	27	case	_	_
 27	me	I	PRON	_	_	25	obl	_	_
 28	to	to	PART	_	_	29	mark	_	_
-29	do	do	VERB	_	_	25	xcomp	_	_
+29	do	do	VERB	_	_	25	advcl	_	_
 30	according	accord	VERB	_	_	33	case	_	_
 31	to	to	ADP	_	_	30	fixed	_	_
 32	his	his	PRON	_	_	33	nmod:poss	_	_
@@ -456,7 +456,7 @@
 6	is	be	AUX	_	_	9	cop	_	_
 7	concerning	concern	VERB	_	_	9	case	_	_
 8	my	my	PRON	_	_	9	nmod:poss	_	_
-9	brethren	brethren	NOUN	_	_	0	root	_	_
+9	brethren	brother	NOUN	_	_	0	root	_	_
 10	,	,	PUNCT	_	_	16	punct	_	_
 11	that	that	SCONJ	_	_	16	mark	_	_
 12	they	they	PRON	_	_	16	nsubj	_	_
@@ -470,7 +470,7 @@
 20	of	of	ADP	_	_	21	case	_	_
 21	God	God	PROPN	_	_	19	nmod	_	_
 22	,	,	PUNCT	_	_	23	punct	_	_
-23	yea	yea	INTJ	_	_	26	discourse	_	_
+23	yea	yes	INTJ	_	_	26	discourse	_	_
 24	,	,	PUNCT	_	_	23	punct	_	_
 25	the	the	DET	_	_	26	det	_	_
 26	redemption	redemption	NOUN	_	_	19	appos	_	_
@@ -485,7 +485,7 @@
 35	be	be	AUX	_	_	38	cop	_	_
 36	a	a	DET	_	_	38	det	_	_
 37	delightsome	delightsome	ADJ	_	_	38	amod	_	_
-38	people	person	NOUN	_	_	16	parataxis	_	_
+38	people	person	NOUN	_	_	26	parataxis	_	_
 39	.	.	PUNCT	_	_	9	punct	_	_
 
 # sent_id = 10
@@ -532,7 +532,7 @@
 
 # sent_id = 11
 # text = Wherefore, it came to pass that after Amaleki had delivered up these plates into the hands of king Benjamin, he took them and put them with the other plates, which contained records which had been handed down by the kings, from generation to generation until the days of king Benjamin.
-1	Wherefore	wherefore	ADV	_	_	4	advmod	_	_
+1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	it	it	PRON	_	_	4	expl	_	_
 4	came	come	VERB	_	_	0	root	_	_
@@ -660,7 +660,7 @@
 23	people	person	NOUN	_	_	29	nsubj:pass	_	_
 24	and	and	CCONJ	_	_	26	cc	_	_
 25	their	their	PRON	_	_	26	nmod:poss	_	_
-26	brethren	brethren	NOUN	_	_	23	conj	_	_
+26	brethren	brother	NOUN	_	_	23	conj	_	_
 27	shall	shall	AUX	_	_	29	aux	_	_
 28	be	be	AUX	_	_	29	aux:pass	_	_
 29	judged	judge	VERB	_	_	14	acl:relcl	_	_
@@ -876,7 +876,7 @@
 14	among	among	ADP	_	_	16	case	_	_
 15	the	the	DET	_	_	16	det	_	_
 16	people	person	NOUN	_	_	11	nmod	_	_
-17	,	,	PUNCT	_	_	23	punct	_	_
+17	,	,	PUNCT	_	_	20	punct	_	_
 18	and	and	CCONJ	_	_	23	cc	_	_
 19	all	all	DET	_	_	20	det:predet	_	_
 20	these	this	PRON	_	_	7	conj	_	_
@@ -892,14 +892,14 @@
 30	after	after	SCONJ	_	_	33	mark	_	_
 31	there	there	PRON	_	_	33	expl	_	_
 32	having	have	AUX	_	_	33	aux	_	_
-33	been	be	VERB	_	_	47	advcl	_	_
+33	been	be	VERB	_	_	23	conj	_	_
 34	much	much	ADJ	_	_	35	amod	_	_
 35	contention	contention	NOUN	_	_	33	nsubj	_	_
 36	and	and	CCONJ	_	_	38	cc	_	_
 37	many	many	ADJ	_	_	38	amod	_	_
 38	dissensions	dissension	NOUN	_	_	35	conj	_	_
 39	away	away	ADV	_	_	38	advmod	_	_
-40	unto	unto	ADP	_	_	42	case	_	_
+40	unto	to	ADP	_	_	42	case	_	_
 41	the	the	DET	_	_	42	det	_	_
 42	Lamanites	Lamanites	PROPN	_	_	39	obl	_	_
 43	,	,	PUNCT	_	_	5	punct	_	_
@@ -982,7 +982,7 @@
 51	because	because	ADP	_	_	54	case	_	_
 52	of	of	ADP	_	_	51	fixed	_	_
 53	the	the	DET	_	_	54	det	_	_
-54	stiffneckedness	stiffneckedness	NOUN	_	_	48	obl	_	_
+54	stiffneckedness	stubbornness	NOUN	_	_	48	obl	_	_
 55	of	of	ADP	_	_	57	case	_	_
 56	the	the	DET	_	_	57	det	_	_
 57	people	person	NOUN	_	_	54	nmod	_	_
@@ -990,7 +990,7 @@
 
 # sent_id = 23
 # text = Wherefore, with the help of these, king Benjamin, by laboring with all the might of his body and the faculty of his whole soul, and also the prophets, did once more establish peace in the land.
-1	Wherefore	wherefore	ADV	_	_	37	advmod	_	_
+1	Wherefore	so	ADV	_	_	37	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	with	with	ADP	_	_	5	case	_	_
 4	the	the	DET	_	_	5	det	_	_

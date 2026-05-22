@@ -56,16 +56,90 @@ class Sent:
         self.tokens = toks
 
 
-_nlp = None
+_tok = _parse = None
 
 
-def nlp():
-    global _nlp
-    if _nlp is None:
+def _pipes():
+    """Two stanza pipelines: a tokenizer (with sentence splitting) over the
+    ORIGINAL EME text, and a pos/lemma/depparse pipeline run PRE-TOKENIZED over
+    the archaic-normalized token stream. Splitting via the original tokenizer
+    preserves sentence boundaries; feeding the parser pre-tokenized guarantees a
+    1:1 token alignment so the corrected parse maps back onto the original
+    surface (see archaic_normalize)."""
+    global _tok, _parse
+    if _tok is None:
         import stanza
-        _nlp = stanza.Pipeline("en", processors="tokenize,pos,lemma,depparse",
+        _tok = stanza.Pipeline("en", processors="tokenize",
                                verbose=False, download_method=None)
-    return _nlp
+        _parse = stanza.Pipeline("en", processors="tokenize,pos,lemma,depparse",
+                                 tokenize_pretokenized=True, verbose=False,
+                                 download_method=None)
+    return _tok, _parse
+
+
+def _parse_verse(text):
+    """Parse one verse -> [[Tok,...sentence...], ...]. Tokenize the original EME
+    text, normalize each token's archaic morphology for the parser, parse
+    pre-tokenized, then build Tok with the ORIGINAL surface+offsets and the
+    corrected upos/deprel/head/lemma."""
+    from archaic_normalize import normalize
+    tok, parse = _pipes()
+    sents = [s.words for s in tok(text).sentences]
+    sents = [ws for ws in sents if ws]
+    if not sents:
+        return []
+    normed = [[normalize(w.text) for w in ws] for ws in sents]
+    doc = parse(normed)
+    out = []
+    for ows, psent in zip(sents, doc.sentences):
+        toks = []
+        for ow, pw in zip(ows, psent.words):
+            t = Tok.__new__(Tok)
+            t.id, t.head, t.deprel, t.upos = pw.id, pw.head, pw.deprel, pw.upos
+            t.lemma, t.form = pw.lemma, ow.text
+            t.start, t.end = ow.start_char, ow.end_char
+            toks.append(t)
+        out.append(toks)
+    return out
+
+
+def _build_parses(verses):
+    """Batched parse of every verse in a book. Per-verse tokenize (needed for the
+    correct WITHIN-VERSE char offsets the renderer slices on), then ONE
+    pre-tokenized parse call over all of the book's sentences (stanza batches the
+    neural depparse internally), then redistribute parsed sentences to verses.
+    This replaces a full pipeline invocation per verse (6604 calls corpus-wide,
+    whose per-call overhead, not the parsing, dominated the ~3.9s/verse cost)."""
+    from collections import defaultdict
+    from archaic_normalize import normalize
+    tok, parse = _pipes()
+    keys = sorted(verses)
+    vsents, flat_norm, owner = [], [], []
+    for ki, key in enumerate(keys):
+        sents = [s.words for s in tok(verses[key]).sentences]
+        sents = [ws for ws in sents if ws]
+        vsents.append(sents)
+        for ws in sents:
+            flat_norm.append([normalize(w.text) for w in ws])
+            owner.append(ki)
+    parsed = parse(flat_norm).sentences if flat_norm else []
+    by_key = defaultdict(list)
+    for oi, psent in zip(owner, parsed):
+        by_key[oi].append(psent)
+    out = {}
+    for ki, key in enumerate(keys):
+        sents_out = []
+        for ows, psent in zip(vsents[ki], by_key[ki]):
+            toks = []
+            for ow, pw in zip(ows, psent.words):
+                t = Tok.__new__(Tok)
+                t.id, t.head, t.deprel, t.upos = pw.id, pw.head, pw.deprel, pw.upos
+                t.lemma, t.form = pw.lemma, ow.text
+                t.start, t.end = ow.start_char, ow.end_char
+                toks.append(t)
+            sents_out.append(toks)
+        out[key] = sents_out
+    return out
 
 
 def read_v0(book):
@@ -95,11 +169,7 @@ def parse_book(book):
         raw = json.loads(cache.read_text(encoding="utf-8"))
         return {tuple(int(x) for x in k.split(":")): [[Tok.from_dict(d) for d in s]
                 for s in sents] for k, sents in raw.items()}
-    verses = read_v0(book)
-    out = {}
-    for (c, v), text in verses.items():
-        doc = nlp()(text)
-        out[(c, v)] = [[Tok(w) for w in sent.words] for sent in doc.sentences]
+    out = _build_parses(read_v0(book))
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache.write_text(json.dumps({f"{c}:{v}": [[t.as_list() for t in s] for s in sents]
                                  for (c, v), sents in out.items()}), encoding="utf-8")

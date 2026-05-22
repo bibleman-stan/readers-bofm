@@ -46,6 +46,10 @@ G_FRAME_MARKS = {"when", "before", "after", "while", "whilst", "until", "as",
 G_SUBORD_ADV = {"when", "after", "before", "while", "whilst", "until", "since",
                 "whereas", "where", "whensoever", "whithersoever", "wherein"}
 _REL = {"who", "whom", "which", "whose", "whence"}
+# phrase-internal deprels: a modifier bound tightly inside one constituent; if one
+# of these crosses a line boundary, a single phrase was fractured across lines.
+_PHRASE_INTERNAL = {"det", "amod", "nummod", "compound", "flat", "fixed",
+                    "case", "aux", "cop"}
 _SUB = {"because", "that", "when", "if", "though", "although", "since",
         "while", "whereas", "until", "before", "after", "unless"}
 _ALNUM = re.compile(r"[^0-9a-zA-Z]")
@@ -131,6 +135,14 @@ def classify(lines_toks):
             return hl is not None and hl != li
 
         cls = None
+        # mid-phrase fracture: a PHRASE-INTERNAL dependency (det/amod/compound/
+        # case/aux/cop/poss — a modifier bound tightly inside one constituent)
+        # crosses the line boundary, so a single phrase was split across lines
+        # ("good / works", "the / voice"). Clausal relations crossing a boundary
+        # are expected (that is where ATUs split); phrase-internal ones are breaks.
+        if any((c.deprel or "").split(":")[0] in _PHRASE_INTERNAL and head_off(sx, c)
+               for sx, c in content):
+            results.append("mid-phrase-fracture"); continue
         # stranded relative: a relativizer clause whose antecedent is off-line
         rel = next((t for sx, t in seg if (t.deprel or "") == "acl:relcl"
                     and head_off(sx, t)), None)
