@@ -163,9 +163,21 @@ def classify(lines_toks):
             vverbs = [(sx, v) for sx, v in verbs if v.upos == "VERB"]
             if vverbs and all(is_participle(sx, v) for sx, v in vverbs):
                 cls = "participial-orphan"
-        # verbless fragment (no verb at all, not a bare vocative/interjection)
+        # verbless fragment: a line with no verb is a fragment ONLY if it is a
+        # stranded dependent -- it has no in-line clause anchor (root/parataxis)
+        # and its top attaches OFF-line via a non-clausal relation (obl/nmod/case/
+        # cc/appos...). A verbless line that IS a root/parataxis is a complete
+        # verbless utterance: an interrogative whose archaic verb stanza mis-tags
+        # ("what desirest thou?"), a nominal answer ("A virgin, most beautiful"),
+        # an exclamative, or a verbless predicate -- those PASS.
         if cls is None and not verbs:
-            if not (len(content) == 1 and first.upos in ("INTJ", "PROPN")):
+            has_anchor = any((t.deprel or "").split(":")[0] in ("root", "parataxis")
+                             for sx, t in content)
+            stranded = any(head_off(sx, t) and (t.deprel or "").split(":")[0] in
+                           ("obl", "nmod", "advmod", "amod", "appos", "nummod",
+                            "case", "cc", "conj", "obj", "iobj", "dep")
+                           for sx, t in content)
+            if stranded and not has_anchor:
                 cls = "verbless-fragment"
         # over-merge: >=2 INDEPENDENT finite clauses on one line. A clause counts
         # as independent only if it has its OWN non-expletive subject and is NOT a
