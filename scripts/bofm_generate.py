@@ -353,7 +353,24 @@ def write_book(book):
     return path
 
 
+def build_all():
+    """One-command pure-method build: for every book, parse (cached; archaic-
+    normalized, batched) -> regenerate the v2-puremethod-draft v-file -> emit the
+    aligned CoNLL-U. Run `scripts/bofm_bidir_gate.py` after to measure. This is
+    the repeatable pipeline (v0 -> v1 parse cache -> v2 draft); the canon appliers
+    and build_book.py HTML build consume the draft downstream."""
+    for b in BOOKFILE:
+        parse_book(b)            # cache hit unless data/parses/v0-cache cleared
+        write_book(b)
+        write_conllu(b)
+        print(f"built {b}", flush=True)
+    print(f"DONE: {len(BOOKFILE)} books -> {OUT_DIR}")
+
+
 def main():
+    if "--all" in sys.argv:
+        build_all()
+        return
     if "--write" in sys.argv:
         book = sys.argv[1]
         print(f"wrote {write_book(book)}")
