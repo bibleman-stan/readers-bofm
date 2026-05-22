@@ -91,14 +91,16 @@ def is_clause_head(tok, by_id=None):
             if not own_subj:
                 return False   # subjectless conjunct (gapped subject) -> bind
         return True            # own overt subject -> independent predication -> split
-    # R19 (canon §3): a relative clause SPLITS when CATAPHORIC (head is a forward-
-    # pointing PRON/DET — "those who", "whoso", "all which") and BINDS when
-    # anaphoric (PROPN head) or ambiguous (NOUN head -> bind by default). So
-    # acl:relcl is a clause-head iff its modified head is PRON/DET.
-    if (tok.deprel or "") == "acl:relcl" and by_id is not None:
-        head = by_id.get(_i(tok.head))
-        if head is not None and head.upos in ("PRON", "DET"):
-            return True
+    # Relative clause (acl:relcl) always BINDS to its antecedent. A relativizer-
+    # headed clause ("whom he hath chosen", "which I make", "that follow after
+    # righteousness") opens with a relative pronoun bound to its antecedent and
+    # CANNOT stand alone (fails the bidirectional forward test) -- this holds for
+    # restrictive AND non-restrictive relatives alike (", who were a stiffnecked
+    # people" is just as much a relativizer fragment). Hebrew B3 / Greek
+    # restrictive-ὅς converge here. The prior R19 cataphoric exception (split when
+    # the antecedent is PRON/DET, "those whom...") manufactured the 921 stranded-
+    # relative fragments the audit flagged, so it is retired. acl:relcl is never a
+    # clause-head; it falls through to bind.
     return False
 
 
