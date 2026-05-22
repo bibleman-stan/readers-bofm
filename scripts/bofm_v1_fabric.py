@@ -50,9 +50,91 @@ _FRAME_MARKS = {"when", "before", "after", "while", "whilst", "until", "as",
 _SUBORD_ADV = {"when", "after", "before", "while", "whilst", "until", "since",
                "whereas", "where", "whensoever", "whithersoever", "wherein"}
 
+# Periodic-participial-beat rule (1Ne1:1 disease). A SUBJECTLESS PARTICIPIAL GROUND
+# ("having been born", "having seen", "being stricken") is normally an integrated
+# ground that BINDS to the clause it modifies. But when such a ground is introduced
+# by a LEADING COORDINATOR (cc and/but/or; adversative-additive advmod
+# nevertheless/yet; discourse INTJ yea), it opens a NEW periodic beat and stands as
+# its own ATU — "...therefore I was taught; AND having seen many afflictions...;
+# YEA, having had a great knowledge...". Without this, periodic sentences collapse
+# every participial ground onto the matrix line (1Ne1:1 over-merged 3 grounds + 2
+# clauses into one line). The aux signature is the gerund-participle 'having'/'being'
+# ONLY -- bare 'been' also heads finite present-perfect passives ("I have been
+# chosen and consecrated"), which are gapped coordination and must keep binding.
+_PART_AUX = {"having", "being"}
+_LEAD_CC = {"and", "but", "or", "nor"}
+_LEAD_ADVMOD = {"nevertheless", "yet", "howbeit", "notwithstanding"}
+_LEAD_INTJ = {"yea"}
+
+
+def _children(tok, by_id):
+    return [c for c in by_id.values() if _i(c.head) == _i(tok.id)]
+
+
+def _is_participial_ground(tok, by_id):
+    """Subjectless clause headed by a gerund-participle aux (having/being)."""
+    kids = _children(tok, by_id)
+    has_part_aux = any((c.deprel or "").startswith("aux")
+                       and (c.form or "").lower() in _PART_AUX for c in kids)
+    has_subj = any((c.deprel or "").split(":")[0] in ("nsubj", "csubj") for c in kids)
+    return has_part_aux and not has_subj
+
+
+def _has_leading_coordinator(tok, by_id):
+    """A cc/discourse-connective child marking this clause as a new periodic beat."""
+    for c in _children(tok, by_id):
+        f = (c.form or "").lower()
+        dep = c.deprel or ""
+        if dep == "cc" and f in _LEAD_CC:
+            return True
+        if dep == "advmod" and f in _LEAD_ADVMOD:
+            return True
+        if dep == "discourse" and f in _LEAD_INTJ:
+            return True
+    return False
+
+
+def _is_subordinated_participial(tok, by_id):
+    """Carries a subordinating mark/SCONJ ("after having been", "without being
+    brought") -- subordinated, so it binds to its matrix per the marked-advcl rule;
+    the leading coordinator (e.g. an intensifying "yea") is resumption, not a beat."""
+    return any(_i(c.head) == _i(tok.id) and ((c.deprel or "") == "mark" or c.upos == "SCONJ")
+               for c in by_id.values())
+
+
+def _is_subjected_gerund(tok, by_id):
+    """A participial that has its OWN subject ("their being nourished") is a gerund
+    nominalization / absolute, not a bare adverbial ground; its coordinate members
+    are coordinate nominals, not new clausal beats."""
+    has_part_aux = any((c.deprel or "").startswith("aux")
+                       and (c.form or "").lower() in _PART_AUX
+                       for c in _children(tok, by_id))
+    has_subj = any((c.deprel or "").split(":")[0] in ("nsubj", "csubj")
+                   for c in _children(tok, by_id))
+    return has_part_aux and has_subj
+
 
 def is_clause_head(tok, by_id=None):
     base = (tok.deprel or "").split(":")[0]
+    # Coordinator-led participial beat: a subjectless participial GROUND
+    # (advcl/conj/parataxis) introduced by a leading coordinator opens its own ATU.
+    # Checked before the bind-defaults below so it intercepts the periodic over-merge
+    # (1Ne1:1 collapsed 3 grounds + 2 clauses onto one line). It fires ONLY on a
+    # genuine adverbial ground; three principled exclusions (each already encoded
+    # elsewhere as a bind) keep it from over-firing on participials that aren't:
+    #   - ADNOMINAL: head is a NOUN/PRON ("all these, having been punished") -> the
+    #     participle modifies a noun, binds like a relative (acl principle, WoM1:16);
+    #   - SUBORDINATED: carries a mark/SCONJ ("yea, after having been favored") ->
+    #     marked-advcl rule binds it (Alma9:20/32:16);
+    #   - COORDINATE-OF-GERUND: a conj whose head is a subjected gerund ("their being
+    #     nourished AND being carried") is a coordinate nominal, not a clause (1Ne22:8).
+    if base in ("advcl", "conj", "parataxis") and by_id is not None:
+        if _is_participial_ground(tok, by_id) and _has_leading_coordinator(tok, by_id):
+            head = by_id.get(_i(tok.head))
+            adnominal = head is not None and head.upos in ("NOUN", "PROPN", "PRON")
+            coord_gerund = base == "conj" and head is not None and _is_subjected_gerund(head, by_id)
+            if not (adnominal or _is_subordinated_participial(tok, by_id) or coord_gerund):
+                return True
     # advcl: a MARKED adverbial clause is subordinate and cannot stand alone, so it
     # BINDS -- this holds for every mark, not just temporal/conditional frames:
     # causal "because", purpose/result "that"/"so"/"insomuch", concessive
