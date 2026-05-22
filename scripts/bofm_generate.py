@@ -106,28 +106,70 @@ def parse_book(book):
     return out
 
 
+def _merge_back(segs, i):
+    """Merge segment i into the previous segment (surface-contiguous)."""
+    segs[i - 1]["hi"] = segs[i]["hi"]
+    segs[i - 1]["toks"].extend(segs[i]["toks"])
+    del segs[i]
+
+
+def _rule_passes(segs):
+    """UD-aware canon binding rules, applied as segment merges on the pure-method
+    segmentation (ported into the generator — operates ONLY on pure-method data,
+    never the hand-edits; validated against the canon detectors via run_all)."""
+    # R29 (bare infinitival orphan integrity): an infinitive segment opening with
+    # "to <VERB|AUX>" is not its own thought — it binds to its governor in the
+    # prior segment ("I ordain you to be a teacher) / to preach repentance").
+    i = 1
+    while i < len(segs):
+        toks = segs[i]["toks"]
+        if len(toks) >= 2 and toks[0].form.lower() == "to" and toks[1].upos in ("VERB", "AUX"):
+            _merge_back(segs, i)
+        else:
+            i += 1
+    # AICTP frame binds FORWARD (Hebrew B5): a segment whose only verbs are the
+    # empty frame "came to pass" is not a thought on its own (fails the
+    # bidirectional test) -> merge into the clause it introduces.
+    def _bare_aictp(seg):
+        verbs = [t for t in seg["toks"] if t.upos in ("VERB", "AUX")]
+        return bool(verbs) and {(t.lemma or "").lower() for t in verbs} <= {"come", "pass"}
+    out, carry = [], None
+    for seg in segs:
+        if carry is not None:
+            seg = {"aid": seg["aid"], "lo": carry["lo"], "hi": seg["hi"],
+                   "toks": carry["toks"] + seg["toks"]}
+            carry = None
+        if _bare_aictp(seg):
+            carry = seg
+        else:
+            out.append(seg)
+    if carry is not None:
+        out.append(carry)
+    return out
+
+
 def verse_atu_lines(verse_text, sentences):
     """Pure-method ATU lines for one verse: surface-order display segments, each
     sliced verbatim from verse_text (exact punctuation/spacing preserved).
     `sentences` is the pre-parsed UD (list of per-sentence Tok lists)."""
-    spans = []                       # (start, end, atom_id)
+    # Build surface-contiguous display SEGMENTS that keep their tokens, so the
+    # UD-aware binding rule-passes can operate before we render to text.
+    spans = []                       # (start, end, atom_id, Tok)
     aid = 0
     for toks in sentences:
         for atom in clause_atoms(Sent(toks)):
             for t in atom:
-                spans.append((t.start, t.end, aid))
+                spans.append((t.start, t.end, aid, t))
             aid += 1
     spans.sort(key=lambda s: s[0])
-    lines, cur_id, lo, hi = [], None, None, None
-    for start, end, a in spans:
-        if a != cur_id and cur_id is not None:
-            lines.append(verse_text[lo:hi].strip())
-            lo = None
-        if lo is None:
-            lo = start
-        hi = end; cur_id = a
-    if lo is not None:
-        lines.append(verse_text[lo:hi].strip())
+    segs = []                        # each: {'lo','hi','toks'}
+    for start, end, a, t in spans:
+        if segs and a == segs[-1]["aid"]:
+            segs[-1]["hi"] = end; segs[-1]["toks"].append(t)
+        else:
+            segs.append({"aid": a, "lo": start, "hi": end, "toks": [t]})
+    segs = _rule_passes(segs)
+    lines = [verse_text[s["lo"]:s["hi"]].strip() for s in segs]
     lines = [ln for ln in lines if ln]
     # Punctuation attaches BACKWARD (Stan's convention: a line ends with its
     # punctuation, never opens with it). Move any leading ,;:.!?)— onto the
@@ -146,15 +188,26 @@ def verse_atu_lines(verse_text, sentences):
     # R9 + opener-integrity: a line that is ONLY a leader word (coordinating
     # conjunction or a subordinate/relative opener) never stands alone — it LEADS
     # its content, so merge it forward into the clause it introduces.
-    _LEADERS = {"and", "or", "but", "nor", "yet",            # coordinators (R9)
+    _LEADERS = {"and", "or", "but", "nor", "yet", "yea",     # coordinators / launchers (R9, M3)
                 "that", "which", "who", "whom", "whose",     # relativizers / complementizer
-                "when", "where", "while", "if", "because"}   # subordinate openers
+                "when", "where", "while", "if", "because",   # subordinate openers
+                "behold", "lo", "wherefore", "now", "for"}   # discourse launchers — lead, never alone
+    _SPEECH_FRAME = {"saying", "saith"}                      # speech-frame -> binds BACKWARD to its verb
+
+    def _all_leaders(s):
+        words = [w.strip(",;:.!?—–’\"()").lower() for w in s.split()]
+        words = [w for w in words if w]
+        return bool(words) and all(w in _LEADERS for w in words)
+
     out = []
     carry = ""
     for ln in fixed:
         ln = (carry + " " + ln).strip() if carry else ln
         carry = ""
-        if ln.strip().lower().rstrip(",;:") in _LEADERS:
+        bare = ln.strip().lower().rstrip(",;:.!?")
+        if bare in _SPEECH_FRAME and out:   # lone "saying"/"saith" binds backward to the speech verb
+            out[-1] = out[-1].rstrip() + " " + ln.strip()
+        elif _all_leaders(ln):              # content-less launcher ("yea, and", "and behold") leads forward
             carry = ln
         else:
             out.append(ln)
@@ -177,6 +230,36 @@ def generate(book, chap=None):
 
 
 OUT_DIR = REPO / "data" / "text-files" / "v2-puremethod-draft"
+
+
+CONLLU_OUT = REPO / "data" / "parses" / "v0-cache-conllu"
+
+
+def write_conllu(book):
+    """Emit the cached v0 parse as standard CoNLL-U keyed to match the pure-method
+    v-file (so the canon validators can score the pure-method edition via the
+    BOFM_CONLLU_DIR override). # text = the verbatim verse-text span so
+    line_mapping's char-anchor locks onto the v-file content."""
+    verses = read_v0(book)
+    parsed = parse_book(book)
+    out, sid = [], 0
+    for (c, v) in sorted(verses):
+        vtext = verses[(c, v)]
+        for sent in parsed.get((c, v), []):
+            if not sent:
+                continue
+            lo, hi = min(t.start for t in sent), max(t.end for t in sent)
+            out.append(f"# sent_id = {sid}")
+            out.append(f"# text = {vtext[lo:hi]}")
+            for t in sent:
+                out.append("\t".join([str(t.id), t.form, t.lemma, t.upos, "_", "_",
+                                       str(t.head), t.deprel, "_", "_"]))
+            out.append("")
+            sid += 1
+    CONLLU_OUT.mkdir(parents=True, exist_ok=True)
+    p = CONLLU_OUT / f"{book}.conllu"
+    p.write_text("\n".join(out) + "\n", encoding="utf-8")
+    return p
 
 
 def write_book(book):

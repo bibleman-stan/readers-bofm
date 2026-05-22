@@ -37,12 +37,58 @@ def _i(v):
         return None
 
 
+# advcl marks that introduce a FRAME (temporal/conditional/concessive) — these
+# bind to their main clause (incomplete alone, fail the bidirectional test).
+# Participial advcls (no mark, "having...") are also frames. Only CAUSAL (because)
+# and PURPOSE (to/that) advcls break per canon R6/R7 (and R29 re-binds bare "to").
+_FRAME_MARKS = {"when", "before", "after", "while", "whilst", "until", "as",
+                "if", "unless", "though", "although", "since", "whereas"}
+
+
 def is_clause_head(tok, by_id=None):
     base = (tok.deprel or "").split(":")[0]
+    # advcl: a frame (temporal/conditional/concessive/participial) BINDS; only a
+    # causal/purpose advcl breaks (canon R6/R7). This is the single biggest fix
+    # for corpus-wide over-splitting (audit 2026-05-22: ~3k of 6039 advcl splits).
+    if base == "advcl" and by_id is not None:
+        mk = next((c.form.lower() for c in by_id.values()
+                   if _i(c.head) == _i(tok.id) and (c.deprel or "") == "mark"), None)
+        return not (mk is None or mk in _FRAME_MARKS)
+    # AICTP frame (Hebrew B5 / canon R1): "(it) came to pass [that] X" is a
+    # semantically-empty narrative frame — bare "And it came to pass" fails the
+    # bidirectional ATU test, so the main clause it introduces (parsed as a
+    # parataxis under "came...to pass") BINDS to it as one ATU. The rule-count
+    # doesn't reward this (canon gap), but the bidirectional test mandates it.
+    if base == "parataxis" and by_id is not None:
+        h = by_id.get(_i(tok.head))
+        if h is not None and (h.lemma or "").lower() == "come" and any(
+                _i(c.head) == _i(h.id) and (c.lemma or "").lower() == "pass"
+                and (c.deprel or "").split(":")[0] == "xcomp"
+                for c in by_id.values()):
+            return False
     if base in CLAUSE_RELS:
         return True
     if base == "conj" and tok.upos in ("VERB", "AUX"):
-        return True
+        # Hebrew B7 (bare wayyiqtol pair / hendiadys): a coordinated verb with NO
+        # complements of its own (shares the head's arguments) is a hendiadys-like
+        # PAIR -> bind ("saw and heard", "quake and tremble", "heard nor seen"). A
+        # conjunct that carries its OWN object/oblique/subject is a distinct
+        # predication -> split ("came ... and dwelt upon a rock"). Bareness is the
+        # discriminator the canon §3.5.2 M1 test needs, ported from Tanakh B7.
+        if by_id is not None:
+            # N=2 vs N>=3 cliff (canon §3.5.2): bind ONLY a 2-member pair; an
+            # N>=3 polysyndetic chain splits (each member its own beat) even if bare.
+            n_conj = sum(1 for c in by_id.values()
+                         if _i(c.head) == _i(tok.head)
+                         and (c.deprel or "").split(":")[0] == "conj"
+                         and c.upos in ("VERB", "AUX"))
+            own_args = any(_i(c.head) == _i(tok.id)
+                           and (c.deprel or "").split(":")[0] in
+                           ("nsubj", "obj", "iobj", "obl", "ccomp", "xcomp", "advcl", "csubj")
+                           for c in by_id.values())
+            if n_conj == 1 and not own_args:
+                return False   # N=2 bare pair (B7 + cliff) -> bind (hendiadys)
+        return True            # N>=3 chain, or conjunct with own complement -> split
     # R19 (canon §3): a relative clause SPLITS when CATAPHORIC (head is a forward-
     # pointing PRON/DET — "those who", "whoso", "all which") and BINDS when
     # anaphoric (PROPN head) or ambiguous (NOUN head -> bind by default). So

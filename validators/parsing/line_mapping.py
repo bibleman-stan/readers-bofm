@@ -6,6 +6,7 @@ re-exports them and adds the BoFM-specific `book_paths()` resolver that
 maps a book id (e.g. 'enos', '1nephi') to (v2-mine-path, conllu-path)
 under the readers-bofm directory layout.
 """
+import os
 from pathlib import Path
 
 from atu_method.parsing.line_mapping import (  # noqa: F401  (re-export)
@@ -21,7 +22,22 @@ def book_paths(book_id: str) -> tuple[Path, Path]:
 
     Looks up v2-mine via the canonical readers-bofm `NN-bookname-2020-sb-v2.txt`
     convention and conllu via `data/parses/llm-direct/<book>.conllu`.
+
+    OVERRIDE for measuring a NON-v2-mine edition (e.g. the pure-method draft)
+    against the canon validators: set env vars BOFM_V2_DIR (flat <book>.txt) and
+    BOFM_CONLLU_DIR (<book>.conllu) and book_paths returns those instead. This is
+    how we score the mechanical pure-method output by canon-conformance rather
+    than against the (criteria-drifted, non-canonical) hand-edits.
     """
+    ov_v2, ov_cu = os.environ.get("BOFM_V2_DIR"), os.environ.get("BOFM_CONLLU_DIR")
+    if ov_v2 and ov_cu:
+        v2_path = Path(ov_v2) / f"{book_id}.txt"
+        conllu_path = Path(ov_cu) / f"{book_id}.conllu"
+        if not v2_path.exists():
+            raise FileNotFoundError(f"override v2 missing: {v2_path}")
+        if not conllu_path.exists():
+            raise FileNotFoundError(f"override conllu missing: {conllu_path}")
+        return v2_path, conllu_path
     repo = Path(__file__).resolve().parent.parent.parent
     v2_dir = repo / "data" / "text-files" / "v2-mine"
     conllu_dir = repo / "data" / "parses" / "llm-direct"
