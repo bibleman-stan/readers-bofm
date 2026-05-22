@@ -64,7 +64,7 @@ Your role in this workflow:
 - When Claude Code makes changes, Stan will bring you the relevant updates
 
 Key constraint: never suggest changes to the canonical source text files
-(data/text-files/v2-mine/) directly — those go through Claude Code with
+(data/text-files/v2/) directly — those go through Claude Code with
 Stan's explicit approval.
 
 Start by confirming you've read the handoffs and tell me your understanding

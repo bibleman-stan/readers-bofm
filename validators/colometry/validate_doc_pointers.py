@@ -51,7 +51,7 @@ SEARCH_SUBDIRS = [
     "validators/syntax",
     "data",
     "data/text-files",
-    "data/text-files/v2-mine",
+    "data/text-files/v2",
     "data/syntax-reference",
     "scripts",
     "colab",

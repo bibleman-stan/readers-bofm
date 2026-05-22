@@ -28,7 +28,7 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-CORPUS_DIR = REPO_ROOT / "data" / "text-files" / "v2-mine"
+CORPUS_DIR = REPO_ROOT / "data" / "text-files" / "v2"
 
 VOCATIVE_PHRASES = [
     r"my brethren",

@@ -108,7 +108,7 @@ def load_scholarship_r19() -> str:
 # Verse-context assembly
 # ---------------------------------------------------------------------------
 
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2-mine"
+V2_DIR = REPO_ROOT / "data" / "text-files" / "v2"
 
 _BOOK_FILE_MAP = {
     "1nephi": "01-1_nephi-2020-sb-v2.txt",

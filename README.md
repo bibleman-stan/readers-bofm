@@ -20,7 +20,7 @@ Hebrew poetry) can be overlaid. Audio narration is available per chapter.
 | `narration.js` | Audio playback module. |
 | `sw.js` | Service worker (offline support; bump cache version on every CSS/JS/HTML change). |
 | `build_book.py` | Converts ATU-formatted `.txt` sources -> HTML fragments. |
-| `data/text-files/v2-mine/` | Canonical source text files (one ATU per line). |
+| `data/text-files/v2/` | Canonical source text files (one ATU per line). |
 | `data/parses/llm-direct/` | CoNLL-U Universal-Dependencies parses, used by validators. |
 | `data/syntax-reference/` | UD-taxonomy and other rule-reference tables. |
 | `validators/` | Python rule-detector and applier suite (see Method section). |
@@ -91,7 +91,7 @@ python -m http.server 8000
 
 ### Rebuilding after source text edits
 
-After editing files in `data/text-files/v2-mine/`:
+After editing files in `data/text-files/v2/`:
 
 ```bash
 python build_book.py --all

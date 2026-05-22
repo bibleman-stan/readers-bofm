@@ -29,7 +29,7 @@ BOOKS = [
 ]
 
 REPO_ROOT = Path(__file__).parent.parent
-SOURCE_DIR = REPO_ROOT / "data" / "text-files" / "v2-mine"
+SOURCE_DIR = REPO_ROOT / "data" / "text-files" / "v2"
 
 def parse_chapters(filepath):
     """Parse a v2 source file into chapters, each containing verses with lines."""

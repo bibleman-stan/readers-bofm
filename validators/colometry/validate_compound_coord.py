@@ -143,7 +143,7 @@ def main():
     parser.add_argument("--verbose", "-v", action="store_true")
     parser.add_argument(
         "--v2-dir",
-        default="c:/Users/bibleman/repos/readers-bofm/data/text-files/v2-mine",
+        default="c:/Users/bibleman/repos/readers-bofm/data/text-files/v2",
     )
     args = parser.parse_args()
 

@@ -44,7 +44,7 @@ PARITY_PAIRS = [
     ("severed_complement", "Severed Complement-Spanning-Frame"),
 ]
 
-V2_DIR = REPO / "data" / "text-files" / "v2-mine"
+V2_DIR = REPO / "data" / "text-files" / "v2"
 
 BOOKS = [
     "1nephi", "2nephi", "jacob", "enos", "jarom", "omni",

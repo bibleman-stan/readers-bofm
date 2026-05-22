@@ -8,7 +8,7 @@ If you are a Claude that spawned in this workspace (VSCode opened at this repo):
 
 A web-based colometric reading edition of the Book of Mormon at **bomreader.com**, for ESL readers, children, and newcomers. Each line on the page is an atomic thought unit (ATU); modern-mode pill toggles archaic→modern in place; audio narration per chapter for some books. Reference implementation for gnt-reader / tanakh-reader siblings.
 
-- **Source files**: `data/text-files/v2-mine/` (hand-edited, one ATU per line; sacred)
+- **Source files**: `data/text-files/v2/` (hand-edited, one ATU per line; sacred)
 - **Build**: `python build_book.py --all` → `books/*.html`; bump `sw.js` cache version after source changes
 - **Live deploy**: bomreader.com (GitHub Pages, auto-deploys from main)
 - **Audio narration**: pipeline at `colab/samuel_pipeline.ipynb` (1 Nephi complete; 2 Nephi 1-5; Enos complete)

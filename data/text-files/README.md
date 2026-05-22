@@ -41,7 +41,7 @@ v2-mine/
 
 Per [CLAUDE.md](../../CLAUDE.md):
 
-> `data/text-files/v2-mine/` is the canonical source. Hand-edited by Stan, one ATU per line. **Sacred.**
+> `data/text-files/v2/` is the canonical source. Hand-edited by Stan, one ATU per line. **Sacred.**
 >
 > NEVER alter punctuation (post-1830 editorial overlay, canonical to LDS text). NEVER add, remove, or change words. NEVER apply ad-hoc / novel changes without Stan approval. ALWAYS preserve verse-refs. The ONLY editorial tool is where lines break.
 

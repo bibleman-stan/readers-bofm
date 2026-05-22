@@ -106,7 +106,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--v2-dir",
-        default="c:/Users/bibleman/repos/readers-bofm/data/text-files/v2-mine",
+        default="c:/Users/bibleman/repos/readers-bofm/data/text-files/v2",
     )
     args = ap.parse_args()
 

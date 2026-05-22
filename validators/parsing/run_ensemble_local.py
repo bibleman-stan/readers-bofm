@@ -21,7 +21,7 @@ import time
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent.parent
-CORPUS_DIR = REPO / "data/text-files/v2-mine"
+CORPUS_DIR = REPO / "data/text-files/v2"
 OUT_DIR = REPO / "data/parses/ensemble"
 
 BOOK_FILES = {

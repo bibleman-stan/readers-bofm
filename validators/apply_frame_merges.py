@@ -13,7 +13,7 @@ Usage:
 import re
 from pathlib import Path
 
-CORPUS = Path(__file__).resolve().parent.parent / "data/text-files/v2-mine"
+CORPUS = Path(__file__).resolve().parent.parent / "data/text-files/v2"
 
 # Frame patterns: line begins with AICTP-like phrase or "And/But/Now/Then" + AICTP
 # AND line contains a temporal/circumstantial subordinator marker

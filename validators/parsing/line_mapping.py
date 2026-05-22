@@ -39,7 +39,7 @@ def book_paths(book_id: str) -> tuple[Path, Path]:
             raise FileNotFoundError(f"override conllu missing: {conllu_path}")
         return v2_path, conllu_path
     repo = Path(__file__).resolve().parent.parent.parent
-    v2_dir = repo / "data" / "text-files" / "v2-mine"
+    v2_dir = repo / "data" / "text-files" / "v2"
     conllu_dir = repo / "data" / "parses" / "llm-direct"
 
     # v2-mine uses underscores (1_nephi, words_of_mormon); conllu uses bare

@@ -309,7 +309,21 @@ def generate(book, chap=None):
     return out
 
 
-OUT_DIR = REPO / "data" / "text-files" / "v2-puremethod-draft"
+OUT_DIR = REPO / "data" / "text-files" / "v2"
+
+
+def _v2_target(book):
+    """The deployed v2 source path for a book, read from booklist.txt (the
+    canonical book_id -> file map the build + validators use). The pipeline
+    writes directly here, so the v2 source IS the pipeline output (no draft)."""
+    for ln in (REPO / "booklist.txt").read_text(encoding="utf-8").splitlines():
+        ln = ln.strip()
+        if not ln or ln.startswith("#"):
+            continue
+        bid, path = ln.split(None, 1)
+        if bid == book:
+            return REPO / path.strip()
+    raise KeyError(f"{book} not in booklist.txt")
 
 
 CONLLU_OUT = REPO / "data" / "parses" / "v0-cache-conllu"
@@ -346,9 +360,9 @@ def write_book(book):
     """Generate the whole book and write a pure-method v-file (v2-mine format:
     verse marker + one ATU per line). Draft layer, parallel to v2-mine — the
     systematic PRE-applier segmentation the canon appliers refine next."""
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
     lines = generate(book)
-    path = OUT_DIR / f"{book}.txt"
+    path = _v2_target(book)
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return path
 

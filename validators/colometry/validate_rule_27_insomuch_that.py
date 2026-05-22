@@ -31,7 +31,7 @@ import re
 import sys
 from pathlib import Path
 
-V2_DIR = Path("c:/Users/bibleman/repos/readers-bofm/data/text-files/v2-mine")
+V2_DIR = Path("c:/Users/bibleman/repos/readers-bofm/data/text-files/v2")
 
 # Tokenizer — split on whitespace, strip punctuation for counting
 _PUNCT_RE = re.compile(r"[^\w']+")

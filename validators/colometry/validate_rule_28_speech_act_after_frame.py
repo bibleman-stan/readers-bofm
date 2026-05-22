@@ -167,7 +167,7 @@ def main():
     parser.add_argument("--verbose", "-v", action="store_true", help="Show each match as found")
     parser.add_argument(
         "--v2-dir",
-        default="c:/Users/bibleman/repos/readers-bofm/data/text-files/v2-mine",
+        default="c:/Users/bibleman/repos/readers-bofm/data/text-files/v2",
         help="Directory containing v2-mine canonical files",
     )
     args = parser.parse_args()

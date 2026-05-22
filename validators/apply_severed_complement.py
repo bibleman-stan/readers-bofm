@@ -19,7 +19,7 @@ Usage:
 import re
 from pathlib import Path
 
-CORPUS = Path(__file__).resolve().parent.parent / "data/text-files/v2-mine"
+CORPUS = Path(__file__).resolve().parent.parent / "data/text-files/v2"
 
 # Line N pattern: "...that <temporal-conjunction> ...," at end of line.
 # The 'that' is the complementizer; the temporal conj launches the frame.

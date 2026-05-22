@@ -27,7 +27,7 @@ Usage:
 import re
 from pathlib import Path
 
-CORPUS = Path(__file__).resolve().parent.parent / "data/text-files/v2-mine"
+CORPUS = Path(__file__).resolve().parent.parent / "data/text-files/v2"
 
 END_ON_COMMA_RE = re.compile(r',\s*$')
 

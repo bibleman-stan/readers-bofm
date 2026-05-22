@@ -30,7 +30,7 @@ A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL
 - **`books/index.html`** — An older/alternate reading view with its own CSS. Both are live and both need CSS changes applied when styling is updated. They share the same `books/*.html` fragments.
 
 ## How Content Gets Built
-1. ATU-format source files in `data/text-files/v2-mine/` (Stan's hand-edited; one ATU per line)
+1. ATU-format source files in `data/text-files/v2/` (Stan's hand-edited; one ATU per line)
 2. Optionally: `scripts/senseline_reformat_v8.py` applies 19 mechanical passes (for new/revised books)
 3. `build_book.py` applies archaic word swaps, injects intertext/geo/pericope layers, wraps punctuation, generates HTML
 4. Output: `books/{BOOKID}.html` as fragments

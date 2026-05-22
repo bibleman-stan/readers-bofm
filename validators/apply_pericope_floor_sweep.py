@@ -29,7 +29,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 INDEX_PATH = REPO_ROOT / "data" / "pericope_index.json"
-CORPUS_DIR = REPO_ROOT / "data" / "text-files" / "v2-mine"
+CORPUS_DIR = REPO_ROOT / "data" / "text-files" / "v2"
 
 BOOK_FILES = {
     "1nephi": "01-1_nephi-2020-sb-v2.txt",

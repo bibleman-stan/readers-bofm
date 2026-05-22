@@ -33,7 +33,7 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-CORPUS_DIR = REPO_ROOT / "data" / "text-files" / "v2-mine"
+CORPUS_DIR = REPO_ROOT / "data" / "text-files" / "v2"
 
 # Vocative phrases. Each pattern matches a phrase that may serve as a vocative.
 # Disambiguation from NP-object happens via context (2nd-person pronouns,
