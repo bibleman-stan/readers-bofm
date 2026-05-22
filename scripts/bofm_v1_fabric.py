@@ -47,13 +47,25 @@ _FRAME_MARKS = {"when", "before", "after", "while", "whilst", "until", "as",
 
 def is_clause_head(tok, by_id=None):
     base = (tok.deprel or "").split(":")[0]
-    # advcl: a frame (temporal/conditional/concessive/participial) BINDS; only a
-    # causal/purpose advcl breaks (canon R6/R7). This is the single biggest fix
-    # for corpus-wide over-splitting (audit 2026-05-22: ~3k of 6039 advcl splits).
+    # advcl: a MARKED adverbial clause is subordinate and cannot stand alone, so it
+    # BINDS -- this holds for every mark, not just temporal/conditional frames:
+    # causal "because", purpose/result "that"/"so"/"insomuch", concessive
+    # "though", temporal "when/after/while". The prior R6/R7 causal/purpose BREAK
+    # manufactured the stranded "because thou art merciful," / "that they might
+    # take it away" fragments the bidirectional audit flagged (338 "that" + 70
+    # "because"). An UNMARKED advcl splits ONLY if it is a finite clause with its
+    # OWN subject (an asyndetic parallel colon, e.g. Hebrew-poetry "the Lord shall
+    # comfort Zion // he will comfort her waste places"); a subjectless unmarked
+    # advcl is participial ("having seen many afflictions") -> bind.
     if base == "advcl" and by_id is not None:
         mk = next((c.form.lower() for c in by_id.values()
                    if _i(c.head) == _i(tok.id) and (c.deprel or "") == "mark"), None)
-        return not (mk is None or mk in _FRAME_MARKS)
+        if mk is not None:
+            return False   # marked subordinate clause -> bind
+        own_subj = any(_i(c.head) == _i(tok.id)
+                       and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
+                       for c in by_id.values())
+        return own_subj    # unmarked: finite parallel colon splits, participial binds
     # AICTP frame (Hebrew B5 / canon R1): "(it) came to pass [that] X" is a
     # semantically-empty narrative frame — bare "And it came to pass" fails the
     # bidirectional ATU test, so the main clause it introduces (parsed as a

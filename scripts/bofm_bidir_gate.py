@@ -184,10 +184,11 @@ def classify(lines_toks):
                     return False
                 mk = next((c.form.lower() for csx, c in seg if csx == sx
                            and _i(c.head) == _i(v.id) and (c.deprel or "") == "mark"), None)
-                # explicit frame mark (when/as/if) = bound frame -> exclude.
-                # mark-less advcl with its own finite subject = a parallel colon
-                # (poetry) -> counts; participials lack a subject (real_subj gate).
-                return mk is not None and mk in G_FRAME_MARKS
+                # ANY mark = subordinate clause (frame/causal/purpose/result) ->
+                # not an independent thought -> exclude. A mark-less advcl with its
+                # own finite subject is an asyndetic parallel colon (poetry) ->
+                # counts; participials lack a subject (real_subj gate).
+                return mk is not None
             finite = 0
             for sx, v in verbs:
                 base = (v.deprel or "").split(":")[0]
