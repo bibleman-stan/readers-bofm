@@ -283,7 +283,17 @@ def verse_atu_lines(verse_text, sentences):
             out.append(ln)
     if carry:
         (out.append(carry) if not out else out.__setitem__(-1, out[-1] + " " + carry))
-    return out
+    # A line with no alphanumeric content (a lone "--" / stray punctuation) is not
+    # an idea-unit; the glyph rides backward onto the previous line (punctuation
+    # has no force, so this is pure rendering, never an ATU boundary).
+    cleaned = []
+    for ln in out:
+        if not re.search(r"[0-9A-Za-z]", ln):
+            if cleaned:
+                cleaned[-1] = (cleaned[-1].rstrip() + " " + ln.strip()).rstrip()
+        else:
+            cleaned.append(ln)
+    return cleaned
 
 
 def generate(book, chap=None):

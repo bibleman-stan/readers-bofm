@@ -27,7 +27,9 @@ CONLLU = REPO / "data" / "parses" / "ensemble" / "stanza"
 # (acl, acl:relcl: "the record which I make" — canon R19) BIND to their governor by
 # default, so they are NOT heads here; the canon appliers refine the exceptions
 # (recitative/declarative complements split; non-restrictive relatives split).
-CLAUSE_RELS = {"root", "advcl", "csubj", "parataxis"}
+# NB: csubj is NOT a clause-head (a clausal subject binds to its predicate), and
+# parataxis is handled explicitly below (own-subject test), so neither is listed.
+CLAUSE_RELS = {"root", "advcl"}
 
 
 def _i(v):
@@ -91,7 +93,17 @@ def is_clause_head(tok, by_id=None):
                 _i(c.head) == _i(h.id) and (c.lemma or "").lower() == "pass"
                 and (c.deprel or "").split(":")[0] == "xcomp"
                 for c in by_id.values()):
-            return False
+            return False   # AICTP frame
+        # stanza over-uses `parataxis` for appositive NPs ("a fire which cannot be
+        # consumed", "even an unquenchable fire") and bare-infinitival elaborations
+        # ("yea, to preach unto all") that cannot stand alone. A parataxis splits
+        # ONLY if it is a genuine independent clause with its OWN subject; an
+        # appositive / bare-infinitive / subjectless parataxis binds (same
+        # own-subject discriminator as coordinate verbs).
+        own_subj = any(_i(c.head) == _i(tok.id)
+                       and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
+                       for c in by_id.values())
+        return own_subj
     if base in CLAUSE_RELS:
         return True
     if base == "conj" and tok.upos in ("VERB", "AUX"):
