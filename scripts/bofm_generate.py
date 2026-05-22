@@ -10,6 +10,7 @@ Usage (needs atu-method on PYTHONPATH, repo .venv):
   PYTHONPATH=../atu-method .venv/Scripts/python.exe scripts/bofm_generate.py 1nephi 1
   (book, chapter; omit chapter for whole book)
 """
+import json
 import re
 import sys
 from pathlib import Path
@@ -38,6 +39,16 @@ class Tok:
         self.deprel, self.upos = w.deprel, w.upos
         self.lemma, self.form = w.lemma, w.text
         self.start, self.end = w.start_char, w.end_char
+
+    @classmethod
+    def from_dict(cls, d):
+        t = cls.__new__(cls)
+        (t.id, t.head, t.deprel, t.upos, t.lemma, t.form, t.start, t.end) = d
+        return t
+
+    def as_list(self):
+        return [self.id, self.head, self.deprel, self.upos, self.lemma, self.form,
+                self.start, self.end]
 
 
 class Sent:
@@ -70,14 +81,38 @@ def read_v0(book):
     return out
 
 
-def verse_atu_lines(verse_text):
+CACHE_DIR = REPO / "data" / "parses" / "v0-cache"
+
+
+def parse_book(book):
+    """{(chap,verse): [[Tok,...sentence...], ...]} for the whole book — UD parse
+    of the v0 (LDS-versification) prose, CACHED to JSON so rule iteration doesn't
+    re-run stanza (a full-book parse is minutes; the cache load is instant). The
+    cache IS the v1 substrate; ensemble+Claude adjudication is the future quality
+    lift that would replace what stanza writes here."""
+    cache = CACHE_DIR / f"{book}.json"
+    if cache.exists():
+        raw = json.loads(cache.read_text(encoding="utf-8"))
+        return {tuple(int(x) for x in k.split(":")): [[Tok.from_dict(d) for d in s]
+                for s in sents] for k, sents in raw.items()}
+    verses = read_v0(book)
+    out = {}
+    for (c, v), text in verses.items():
+        doc = nlp()(text)
+        out[(c, v)] = [[Tok(w) for w in sent.words] for sent in doc.sentences]
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache.write_text(json.dumps({f"{c}:{v}": [[t.as_list() for t in s] for s in sents]
+                                 for (c, v), sents in out.items()}), encoding="utf-8")
+    return out
+
+
+def verse_atu_lines(verse_text, sentences):
     """Pure-method ATU lines for one verse: surface-order display segments, each
-    sliced verbatim from verse_text (exact punctuation/spacing preserved)."""
-    doc = nlp()(verse_text)
+    sliced verbatim from verse_text (exact punctuation/spacing preserved).
+    `sentences` is the pre-parsed UD (list of per-sentence Tok lists)."""
     spans = []                       # (start, end, atom_id)
     aid = 0
-    for sent in doc.sentences:
-        toks = [Tok(w) for w in sent.words]
+    for toks in sentences:
         for atom in clause_atoms(Sent(toks)):
             for t in atom:
                 spans.append((t.start, t.end, aid))
@@ -108,15 +143,18 @@ def verse_atu_lines(verse_text):
                 fixed.append(rest)
         else:
             fixed.append(ln)
-    # R9: a bare coordinating conjunction never stands as its own line — it LEADS
-    # its content, so merge it forward into the next line (the clause it joins).
-    _CC = {"and", "or", "but", "nor", "yet"}
+    # R9 + opener-integrity: a line that is ONLY a leader word (coordinating
+    # conjunction or a subordinate/relative opener) never stands alone — it LEADS
+    # its content, so merge it forward into the clause it introduces.
+    _LEADERS = {"and", "or", "but", "nor", "yet",            # coordinators (R9)
+                "that", "which", "who", "whom", "whose",     # relativizers / complementizer
+                "when", "where", "while", "if", "because"}   # subordinate openers
     out = []
     carry = ""
     for ln in fixed:
         ln = (carry + " " + ln).strip() if carry else ln
         carry = ""
-        if ln.strip().lower().rstrip(",;:") in _CC:
+        if ln.strip().lower().rstrip(",;:") in _LEADERS:
             carry = ln
         else:
             out.append(ln)
@@ -127,12 +165,13 @@ def verse_atu_lines(verse_text):
 
 def generate(book, chap=None):
     verses = read_v0(book)
+    parsed = parse_book(book)
     out = []
     for (c, v) in sorted(verses):
         if chap is not None and c != chap:
             continue
         out.append(f"{c}:{v}")
-        out.extend(verse_atu_lines(verses[(c, v)]))
+        out.extend(verse_atu_lines(verses[(c, v)], parsed.get((c, v), [])))
         out.append("")
     return out
 

@@ -37,12 +37,20 @@ def _i(v):
         return None
 
 
-def is_clause_head(tok):
+def is_clause_head(tok, by_id=None):
     base = (tok.deprel or "").split(":")[0]
     if base in CLAUSE_RELS:
         return True
     if base == "conj" and tok.upos in ("VERB", "AUX"):
         return True
+    # R19 (canon §3): a relative clause SPLITS when CATAPHORIC (head is a forward-
+    # pointing PRON/DET — "those who", "whoso", "all which") and BINDS when
+    # anaphoric (PROPN head) or ambiguous (NOUN head -> bind by default). So
+    # acl:relcl is a clause-head iff its modified head is PRON/DET.
+    if (tok.deprel or "") == "acl:relcl" and by_id is not None:
+        head = by_id.get(_i(tok.head))
+        if head is not None and head.upos in ("PRON", "DET"):
+            return True
     return False
 
 
@@ -55,7 +63,7 @@ def clause_atoms(sent):
         cur, seen = tok, set()
         while cur is not None and _i(cur.id) not in seen:
             seen.add(_i(cur.id))
-            if is_clause_head(cur) or _i(cur.head) in (0, None):
+            if is_clause_head(cur, by_id) or _i(cur.head) in (0, None):
                 return _i(cur.id)
             cur = by_id.get(_i(cur.head))
         return _i(tok.id)
