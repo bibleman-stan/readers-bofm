@@ -79,6 +79,14 @@ PATH_RE = re.compile(
 SKIP_PATHS = {
     # External sibling-project references
     "readers-gnt/handoffs/04-editorial-workflow.md",
+    # Relative-form cross-repo reference (SKIP_PREFIXES "atu-method/" doesn't
+    # match the "../../" relative form used in colometry-canon prose)
+    "../../atu-method/docs/rule-template.md",
+    # Historical archived-directive reference named in canon prose (directives
+    # queue archived in the master-blaster unification, 2026-05-19)
+    "2026-05-16-2100-r19-output-restructure.md",
+    # External user-home orchestration path (~/.claude/...) named in CLAUDE.md
+    "claude/projects/C--Users-bibleman/memory/_named_arcs.md",
     # Archive references
     "archive/colometry-canon-v1-retired-2026-04-19.md",
     "archive/colometry-canon-v1-archive.md",
