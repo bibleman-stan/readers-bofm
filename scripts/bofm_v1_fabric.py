@@ -69,26 +69,28 @@ def is_clause_head(tok, by_id=None):
     if base in CLAUSE_RELS:
         return True
     if base == "conj" and tok.upos in ("VERB", "AUX"):
-        # Hebrew B7 (bare wayyiqtol pair / hendiadys): a coordinated verb with NO
-        # complements of its own (shares the head's arguments) is a hendiadys-like
-        # PAIR -> bind ("saw and heard", "quake and tremble", "heard nor seen"). A
-        # conjunct that carries its OWN object/oblique/subject is a distinct
-        # predication -> split ("came ... and dwelt upon a rock"). Bareness is the
-        # discriminator the canon §3.5.2 M1 test needs, ported from Tanakh B7.
+        # Coordinate finite verbs: a conjunct BINDS iff it has NO SUBJECT of its
+        # own. A subjectless conjunct shares (gaps) the head's subject — it is a
+        # subjectless predicate that cannot stand alone as one thought ("and heard
+        # much", "and dwelt upon a rock", "and stoned, and slain", "and spake unto
+        # his children"), so it must bind regardless of what objects/obliques it
+        # carries or how long the chain is. A conjunct with its OWN overt subject
+        # is an independent predication ("he came, and they departed") -> split.
+        #
+        # This is the EARNED port of Hebrew B7: B7 binds on incompleteness/bareness
+        # of the member, NOT on count. Hebrew has no N>=3 cliff — wayyiqtol chains
+        # split per COMPLETE predication. The BoFM §3.5.2 count cliff (N=2 binds /
+        # N>=3 splits) and the own_args gate were unvalidated proxies that the
+        # 5-genre bidirectional audit + the Hebrew mechanism both falsify (they
+        # manufactured bare-fragment lines). Discriminator = own-subject, ported
+        # from B7 bareness + R12 shared-ellipsis. Errs toward bind (safer).
         if by_id is not None:
-            # N=2 vs N>=3 cliff (canon §3.5.2): bind ONLY a 2-member pair; an
-            # N>=3 polysyndetic chain splits (each member its own beat) even if bare.
-            n_conj = sum(1 for c in by_id.values()
-                         if _i(c.head) == _i(tok.head)
-                         and (c.deprel or "").split(":")[0] == "conj"
-                         and c.upos in ("VERB", "AUX"))
-            own_args = any(_i(c.head) == _i(tok.id)
-                           and (c.deprel or "").split(":")[0] in
-                           ("nsubj", "obj", "iobj", "obl", "ccomp", "xcomp", "advcl", "csubj")
+            own_subj = any(_i(c.head) == _i(tok.id)
+                           and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
                            for c in by_id.values())
-            if n_conj == 1 and not own_args:
-                return False   # N=2 bare pair (B7 + cliff) -> bind (hendiadys)
-        return True            # N>=3 chain, or conjunct with own complement -> split
+            if not own_subj:
+                return False   # subjectless conjunct (gapped subject) -> bind
+        return True            # own overt subject -> independent predication -> split
     # R19 (canon §3): a relative clause SPLITS when CATAPHORIC (head is a forward-
     # pointing PRON/DET — "those who", "whoso", "all which") and BINDS when
     # anaphoric (PROPN head) or ambiguous (NOUN head -> bind by default). So
