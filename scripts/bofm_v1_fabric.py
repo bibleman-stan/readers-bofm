@@ -65,6 +65,11 @@ _PART_AUX = {"having", "being"}
 _LEAD_CC = {"and", "but", "or", "nor"}
 _LEAD_ADVMOD = {"nevertheless", "yet", "howbeit", "notwithstanding"}
 _LEAD_INTJ = {"yea"}
+# Verba dicendi (for the DEFERRED M2 direct-speech ccomp release; Alma-32:5 class).
+# Kept for the focused M2 pass that must also solve inverted-tag subject-stranding
+# ("thus saith / the Lord") before it can ship.
+_VERBA_DICENDI = {"say", "speak", "cry", "answer", "command", "declare", "exhort",
+                  "ask", "tell", "reply", "utter", "proclaim", "preach"}
 
 
 def _children(tok, by_id):
@@ -158,11 +163,34 @@ def is_clause_head(tok, by_id=None):
                 or ((c.deprel or "").split(":")[0] == "advmod"
                     and (c.lemma or c.form or "").lower() in _SUBORD_ADV))
             for c in by_id.values())
-        if subordinated:
-            return False   # marked/subordinated clause -> bind
         own_subj = any(_i(c.head) == _i(tok.id)
                        and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
                        for c in by_id.values())
+        if subordinated:
+            # EME causal 'for' (stanza mistags as SCONJ/mark) with its OWN subject is
+            # an independent explanatory predication (causal coordinator = Hebrew ki),
+            # not a bound subordinate -> it splits. A bare/gapped 'for'-clause, any
+            # genuinely subordinating mark (when/that/because/if), and the carve-outs
+            # below still bind. (Alma-32:5 class, M1 — the for-causal mechanism.)
+            for_marks = [c for c in by_id.values() if _i(c.head) == _i(tok.id)
+                         and (c.form or "").lower() == "for"
+                         and ((c.deprel or "") == "mark" or c.upos == "SCONJ")]
+            # Carve-outs (each leaks a fragment if split, per the M1 audit):
+            #  - participial ("for he HAVING been taught" -> no finite verb): bind;
+            #  - a SECOND subordinator beyond 'for' ("for AS ... even so", "for ... SAVE"
+            #    -> correlative/conditional whose apodosis is the next beat): bind.
+            participial = any((c.deprel or "").startswith("aux")
+                              and (c.form or "").lower() in _PART_AUX
+                              for c in by_id.values()
+                              if _i(c.head) == _i(tok.id))
+            other_sub = any(_i(c.head) == _i(tok.id) and (c.form or "").lower() != "for"
+                            and ((c.deprel or "") == "mark" or c.upos == "SCONJ"
+                                 or ((c.deprel or "").split(":")[0] == "advmod"
+                                     and (c.lemma or c.form or "").lower() in _SUBORD_ADV))
+                            for c in by_id.values())
+            if for_marks and own_subj and not participial and not other_sub:
+                return True
+            return False   # marked/subordinated clause -> bind
         return own_subj    # unmarked: finite parallel colon splits, participial binds
     # AICTP frame (Hebrew B5 / canon R1): "(it) came to pass [that] X" is a
     # semantically-empty narrative frame — bare "And it came to pass" fails the
@@ -186,6 +214,10 @@ def is_clause_head(tok, by_id=None):
                        and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
                        for c in by_id.values())
         return own_subj
+    # NOTE: the direct-speech ccomp release (Alma-32:5 class, M2) is DEFERRED to a
+    # focused pass -- it strands the subject in inverted prophetic-formula tags ("thus
+    # saith / the Lord", "said / he") and the "thus saith the Lord" rendering needs an
+    # editorial decision. M1 (the for-causal mechanism above) ships independently.
     if base in CLAUSE_RELS:
         return True
     if base == "conj" and tok.upos in ("VERB", "AUX"):
