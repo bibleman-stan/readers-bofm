@@ -167,13 +167,24 @@ def parse_book(book):
     cache = CACHE_DIR / f"{book}.json"
     if cache.exists():
         raw = json.loads(cache.read_text(encoding="utf-8"))
-        return {tuple(int(x) for x in k.split(":")): [[Tok.from_dict(d) for d in s]
-                for s in sents] for k, sents in raw.items()}
+        out = {tuple(int(x) for x in k.split(":")): [[Tok.from_dict(d) for d in s]
+               for s in sents] for k, sents in raw.items()}
+        _apply_parse_repairs(out)
+        return out
     out = _build_parses(read_v0(book))
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache.write_text(json.dumps({f"{c}:{v}": [[t.as_list() for t in s] for s in sents]
                                  for (c, v), sents in out.items()}), encoding="utf-8")
+    _apply_parse_repairs(out)
     return out
+
+
+def _apply_parse_repairs(parsed):
+    """Deterministic attachment repairs for systematic EME mis-parses, applied at
+    load-time (idempotent; the cache stores raw stanza output, repairs ride on top).
+    Same architectural slot as archaic_normalize, but for ATTACHMENT not morphology."""
+    from parse_repair import repair
+    repair(parsed)
 
 
 def _merge_back(segs, i):
