@@ -214,10 +214,36 @@ def is_clause_head(tok, by_id=None):
                        and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
                        for c in by_id.values())
         return own_subj
-    # NOTE: the direct-speech ccomp release (Alma-32:5 class, M2) is DEFERRED to a
-    # focused pass -- it strands the subject in inverted prophetic-formula tags ("thus
-    # saith / the Lord", "said / he") and the "thus saith the Lord" rendering needs an
-    # editorial decision. M1 (the for-causal mechanism above) ships independently.
+    # Direct-speech ccomp release (Alma-32:5 class, M2). ccomp normally BINDS (R17
+    # complement integrity: "I know THAT X"). But a ccomp under a verbum dicendi is
+    # QUOTED SPEECH -- multi-clause discourse, not one integrated complement -- so it
+    # stands as a clause-head and its internal clause-atoms (the quoted question, the
+    # causal explanations) surface normally. Matrix lemma is the discriminator.
+    if base == "ccomp" and by_id is not None:
+        h = by_id.get(_i(tok.head))
+        # (a) Only DIRECT quotation releases; indirect "say THAT X" keeps the 'that'
+        #     complementizer and binds per R17.
+        has_that = any(_i(c.head) == _i(tok.id) and (c.form or "").lower() == "that"
+                       and ((c.deprel or "") == "mark" or c.upos == "SCONJ")
+                       for c in by_id.values())
+        # (b) Don't release when the speech verb is itself in a relative/adnominal
+        #     clause ("the word WHICH SAITH ..."): releasing strands the relativizer.
+        h_in_relcl = h is not None and ("relcl" in (h.deprel or "")
+                                        or (h.deprel or "").split(":")[0] == "acl")
+        # (c) Inverted prophetic-formula guard ("thus saith THE LORD, I have led..."):
+        #     the postposed speech-subject is mis-parsed as a non-subject (obj/nmod) of
+        #     the QUOTED verb, landing just after the speech verb; releasing strands it.
+        #     Skip when a PROPN/PRON bound to the ccomp as a non-subject sits right
+        #     after the speech verb. (The "thus saith the Lord" formula stays merged --
+        #     deferred to editorial.)
+        inverted = h is not None and any(
+            _i(c.head) == _i(tok.id) and c.upos in ("PROPN", "PRON")
+            and (c.deprel or "").split(":")[0] not in ("nsubj", "csubj")
+            and 0 < _i(c.id) - _i(h.id) <= 2
+            for c in by_id.values())
+        if h is not None and (h.lemma or "").lower() in _VERBA_DICENDI \
+           and not has_that and not h_in_relcl and not inverted:
+            return True
     if base in CLAUSE_RELS:
         return True
     if base == "conj" and tok.upos in ("VERB", "AUX"):
