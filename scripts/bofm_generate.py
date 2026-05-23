@@ -327,6 +327,37 @@ def verse_atu_lines(verse_text, sentences):
     return cleaned
 
 
+ADJUDICATED = REPO / "data" / "text-files" / "v2-adjudicated" / "overrides.json"
+_OVERRIDES = None
+
+
+def _overrides():
+    """v2 LLM-adjudication layer (pipeline spec): hand-/LLM-corrected ATU line-breaks
+    for the residual verses whose PARSE is too garbled for the mechanical rules
+    (subject-fractures, verbless quotes). Keyed 'book c:v' -> [lines]."""
+    global _OVERRIDES
+    if _OVERRIDES is None:
+        _OVERRIDES = json.loads(ADJUDICATED.read_text(encoding="utf-8")) if ADJUDICATED.exists() else {}
+    return _OVERRIDES
+
+
+def _alnum(s):
+    return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def _apply_override(verse_text, ref):
+    """Return adjudicated lines IFF they re-segment ONLY (token-exact: the lines must
+    reassemble to the verse alnum-for-alnum). An override can move line breaks, never
+    change a word -- a mismatch is rejected and the mechanical pipeline runs."""
+    ov = _overrides().get(ref)
+    if not ov:
+        return None
+    if _alnum(" ".join(ov)) != _alnum(verse_text):
+        print(f"  !! adjudication override REJECTED (text mismatch): {ref}", file=sys.stderr, flush=True)
+        return None
+    return ov
+
+
 def generate(book, chap=None):
     verses = read_v0(book)
     parsed = parse_book(book)
@@ -335,7 +366,9 @@ def generate(book, chap=None):
         if chap is not None and c != chap:
             continue
         out.append(f"{c}:{v}")
-        out.extend(verse_atu_lines(verses[(c, v)], parsed.get((c, v), [])))
+        ov = _apply_override(verses[(c, v)], f"{book} {c}:{v}")
+        out.extend(ov if ov is not None else
+                   verse_atu_lines(verses[(c, v)], parsed.get((c, v), [])))
         out.append("")
     return out
 
