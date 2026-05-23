@@ -208,6 +208,26 @@ def _rule_passes(segs):
             _merge_back(segs, i)
         else:
             i += 1
+    # yea-B (interjection consistency): a "yea"-led segment that carries NO
+    # independent predication is an epexegetical amplifier ("yea, even in a dream";
+    # "yea, concerning that which was to come"; "yea, which the Lord had shown") --
+    # a sub-clausal restatement, not its own thought -> merge back into what it
+    # amplifies. A "yea" leading a complete clause ("Yea, I make a record"; "yea,
+    # even he can slay fifty") has a root/conj/parataxis verb and stays its own ATU.
+    # Independent predication = a VERB/AUX whose clause relation stands alone
+    # (root/conj/parataxis); relative (acl:relcl) and bare phrases do not qualify.
+    i = 1
+    while i < len(segs):
+        toks = segs[i]["toks"]
+        first = next((t for t in toks if (t.form or "").strip()), None)
+        is_yea = first is not None and (first.form or "").lower() == "yea"
+        has_indep = any(t.upos in ("VERB", "AUX")
+                        and (t.deprel or "").split(":")[0] in ("root", "conj", "parataxis")
+                        for t in toks)
+        if is_yea and not has_indep:
+            _merge_back(segs, i)
+        else:
+            i += 1
     # AICTP frame binds FORWARD (Hebrew B5): a segment whose only verbs are the
     # empty frame "came to pass" is not a thought on its own (fails the
     # bidirectional test) -> merge into the clause it introduces.

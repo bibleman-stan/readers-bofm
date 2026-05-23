@@ -119,6 +119,18 @@ def _is_subjected_gerund(tok, by_id):
     return has_part_aux and has_subj
 
 
+def _is_aictp_frame(verb, by_id):
+    """AICTP narrative frame: a 'come' verb with an xcomp 'pass' ("(it) came to
+    pass"). Semantically empty (Hebrew wayhi temporal frame); the main clause it
+    introduces binds to it as one ATU -- whether rendered with 'that' (parataxis) or
+    'and' (conj). The 'and'/'that' split is a KJV translation artifact of one Hebrew
+    construction (wayhi + waw/ki)."""
+    return (verb is not None and (verb.lemma or "").lower() == "come"
+            and any(_i(c.head) == _i(verb.id) and (c.lemma or "").lower() == "pass"
+                    and (c.deprel or "").split(":")[0] == "xcomp"
+                    for c in by_id.values()))
+
+
 def is_clause_head(tok, by_id=None):
     base = (tok.deprel or "").split(":")[0]
     # Coordinator-led participial beat: a subjectless participial GROUND
@@ -263,6 +275,18 @@ def is_clause_head(tok, by_id=None):
         # manufactured bare-fragment lines). Discriminator = own-subject, ported
         # from B7 bareness + R12 shared-ellipsis. Errs toward bind (safer).
         if by_id is not None:
+            # AICTP "and"-form: the FIRST coordinate main clause of an empty
+            # "(it) came to pass" frame is the displaced main predication and BINDS
+            # to the frame (one ATU), exactly like the "that"-form parataxis. Later
+            # coordinate clauses split normally. (Hebrew wayhi + waw == wayhi + ki.)
+            head = by_id.get(_i(tok.head))
+            if _is_aictp_frame(head, by_id):
+                first_conj = min((_i(c.id) for c in by_id.values()
+                                  if _i(c.head) == _i(head.id)
+                                  and (c.deprel or "").split(":")[0] == "conj"
+                                  and c.upos in ("VERB", "AUX")), default=None)
+                if first_conj == _i(tok.id):
+                    return False   # displaced main clause of the AICTP frame -> bind
             own_subj = any(_i(c.head) == _i(tok.id)
                            and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
                            for c in by_id.values())
