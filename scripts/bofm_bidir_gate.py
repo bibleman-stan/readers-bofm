@@ -240,7 +240,7 @@ def audit_chapter(book, chap):
     for (c, v) in sorted(verses):
         if c != chap:
             continue
-        lines = G.verse_atu_lines(verses[(c, v)], parsed.get((c, v), []))
+        lines = G.deployed_atu_lines(book, c, v, verses[(c, v)], parsed.get((c, v), []))
         lt = map_lines_to_tokens(verses[(c, v)], parsed.get((c, v), []), lines)
         cls = classify(lt)
         for (ln, _seg), cl in zip(lt, cls):
@@ -253,7 +253,7 @@ def audit_book(book):
     parsed = G.parse_book(book)
     rows = []
     for (c, v) in sorted(verses):
-        lines = G.verse_atu_lines(verses[(c, v)], parsed.get((c, v), []))
+        lines = G.deployed_atu_lines(book, c, v, verses[(c, v)], parsed.get((c, v), []))
         lt = map_lines_to_tokens(verses[(c, v)], parsed.get((c, v), []), lines)
         for (ln, _seg), cl in zip(lt, classify(lt)):
             rows.append((c, v, ln, cl))

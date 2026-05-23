@@ -358,6 +358,14 @@ def _apply_override(verse_text, ref):
     return ov
 
 
+def deployed_atu_lines(book, c, v, verse_text, sentences):
+    """The DEPLOYED ATU lines for a verse: the adjudication override if present (and
+    token-exact), else the mechanical pipeline. Gate + detectors call this so they
+    measure what actually ships, not the bare mechanical substrate."""
+    ov = _apply_override(verse_text, f"{book} {c}:{v}")
+    return ov if ov is not None else verse_atu_lines(verse_text, sentences)
+
+
 def generate(book, chap=None):
     verses = read_v0(book)
     parsed = parse_book(book)

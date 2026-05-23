@@ -36,7 +36,7 @@ def main():
         v = G.read_v0(b)
         p = G.parse_book(b)
         for key in sorted(v.keys()):
-            lines = G.verse_atu_lines(v[key], p[key])
+            lines = G.deployed_atu_lines(b, key[0], key[1], v[key], p[key])
             rows = B.map_lines_to_tokens(v[key], p[key], lines)
             classes = [cl for cl in B.classify(rows) if cl in FRAGMENT_CLASSES]
             if classes:
