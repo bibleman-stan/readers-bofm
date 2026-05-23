@@ -692,17 +692,17 @@
 59	mine	my	PRON	_	_	61	nmod:poss	_	_
 60	own	own	ADJ	_	_	61	amod	_	_
 61	mouth	mouth	NOUN	_	_	52	obl	_	_
-62	that	that	SCONJ	_	_	64	mark	_	_
-63	thou	you	PRON	_	_	64	nsubj	_	_
-64	art	art	VERB	_	_	52	ccomp	_	_
+62	that	that	SCONJ	_	_	66	mark	_	_
+63	thou	you	PRON	_	_	66	nsubj	_	_
+64	art	be	AUX	_	_	66	cop	_	_
 65	a	a	DET	_	_	66	det	_	_
-66	king	king	NOUN	_	_	64	obj	_	_
+66	king	king	NOUN	_	_	61	acl	_	_
 67	and	and	CCONJ	_	_	69	cc	_	_
 68	a	a	DET	_	_	69	det	_	_
 69	ruler	ruler	NOUN	_	_	66	conj	_	_
 70	over	over	ADP	_	_	72	case	_	_
 71	this	this	DET	_	_	72	det	_	_
-72	people	person	NOUN	_	_	69	nmod	_	_
+72	people	person	NOUN	_	_	66	nmod	_	_
 73	,	,	PUNCT	_	_	80	punct	_	_
 74	whom	whom	PRON	_	_	80	obj	_	_
 75	the	the	DET	_	_	76	det	_	_
@@ -3813,13 +3813,13 @@
 23	thee	you	PRON	_	_	21	obl	_	_
 24	that	that	SCONJ	_	_	27	mark	_	_
 25	thou	you	PRON	_	_	27	nsubj	_	_
-26	mayest	mayest	AUX	_	_	27	aux	_	_
+26	mayest	may	AUX	_	_	27	aux	_	_
 27	rejoice	rejoice	VERB	_	_	21	ccomp	_	_
 28	;	;	PUNCT	_	_	33	punct	_	_
 29	and	and	CCONJ	_	_	33	cc	_	_
 30	that	that	SCONJ	_	_	33	mark	_	_
 31	thou	you	PRON	_	_	33	nsubj	_	_
-32	mayest	mayest	AUX	_	_	33	aux	_	_
+32	mayest	may	AUX	_	_	33	aux	_	_
 33	declare	declare	VERB	_	_	18	conj	_	_
 34	unto	to	ADP	_	_	36	case	_	_
 35	thy	your	PRON	_	_	36	nmod:poss	_	_
@@ -15818,7 +15818,7 @@
 13	hands	hand	NOUN	_	_	9	obl	_	_
 14	;	;	PUNCT	_	_	17	punct	_	_
 15	thou	you	PRON	_	_	17	nsubj	_	_
-16	mayest	mayest	AUX	_	_	17	aux	_	_
+16	mayest	may	AUX	_	_	17	aux	_	_
 17	do	do	VERB	_	_	3	parataxis	_	_
 18	with	with	ADP	_	_	19	case	_	_
 19	him	he	PRON	_	_	17	obl	_	_
@@ -20835,7 +20835,7 @@
 18	now	now	ADV	_	_	26	advmod	_	_
 19	,	,	PUNCT	_	_	18	punct	_	_
 20	for	for	ADP	_	_	22	case	_	_
-21	this	this	PRON	_	_	22	det	_	_
+21	this	this	DET	_	_	22	det	_	_
 22	cause	cause	NOUN	_	_	26	obl	_	_
 23	thou	you	PRON	_	_	26	nsubj:pass	_	_
 24	shalt	shall	AUX	_	_	26	aux	_	_
@@ -31758,8 +31758,8 @@
 17	,	,	PUNCT	_	_	21	punct	_	_
 18	that	that	SCONJ	_	_	21	mark	_	_
 19	thou	you	PRON	_	_	21	nsubj	_	_
-20	mayest	mayest	AUX	_	_	21	aux	_	_
-21	judge	judge	VERB	_	_	13	parataxis	_	_
+20	mayest	may	AUX	_	_	21	aux	_	_
+21	judge	judge	VERB	_	_	13	advcl	_	_
 22	them	they	PRON	_	_	21	obj	_	_
 23	according	accord	VERB	_	_	26	case	_	_
 24	to	to	ADP	_	_	23	fixed	_	_
@@ -31871,19 +31871,19 @@
 
 # sent_id = 800
 # text = Blessed art thou, Alma, and blessed are they who were baptized in the waters of Mormon.
-1	Blessed	bless	VERB	_	_	2	amod	_	_
-2	art	art	NOUN	_	_	0	root	_	_
-3	thou	you	PRON	_	_	2	flat	_	_
+1	Blessed	bless	VERB	_	_	0	root	_	_
+2	art	be	AUX	_	_	1	aux:pass	_	_
+3	thou	you	PRON	_	_	1	nsubj:pass	_	_
 4	,	,	PUNCT	_	_	5	punct	_	_
 5	Alma	Alma	PROPN	_	_	3	conj	_	_
 6	,	,	PUNCT	_	_	8	punct	_	_
 7	and	and	CCONJ	_	_	8	cc	_	_
 8	blessed	bless	VERB	_	_	3	conj	_	_
-9	are	be	AUX	_	_	13	aux:pass	_	_
+9	are	be	AUX	_	_	1	aux:pass	_	_
 10	they	they	PRON	_	_	13	nsubj:pass	_	_
 11	who	who	PRON	_	_	13	nsubj:pass	_	_
 12	were	be	AUX	_	_	13	aux:pass	_	_
-13	baptized	baptize	VERB	_	_	2	acl:relcl	_	_
+13	baptized	baptize	VERB	_	_	3	acl:relcl	_	_
 14	in	in	ADP	_	_	16	case	_	_
 15	the	the	DET	_	_	16	det	_	_
 16	waters	water	NOUN	_	_	13	obl	_	_
@@ -31936,14 +31936,14 @@
 
 # sent_id = 803
 # text = And blessed art thou because thou hast established a church among this people; and they shall be established, and they shall be my people.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	blessed	bless	VERB	_	_	3	nsubj	_	_
-3	art	art	VERB	_	_	0	root	_	_
-4	thou	you	PRON	_	_	3	obj	_	_
+1	And	and	CCONJ	_	_	2	cc	_	_
+2	blessed	bless	VERB	_	_	0	root	_	_
+3	art	be	AUX	_	_	2	aux:pass	_	_
+4	thou	you	PRON	_	_	2	nsubj:pass	_	_
 5	because	because	SCONJ	_	_	8	mark	_	_
 6	thou	you	PRON	_	_	8	nsubj	_	_
 7	hast	have	AUX	_	_	8	aux	_	_
-8	established	establish	VERB	_	_	3	advcl	_	_
+8	established	establish	VERB	_	_	2	advcl	_	_
 9	a	a	DET	_	_	10	det	_	_
 10	church	church	NOUN	_	_	8	obj	_	_
 11	among	among	ADP	_	_	13	case	_	_
@@ -31954,7 +31954,7 @@
 16	they	they	PRON	_	_	19	nsubj:pass	_	_
 17	shall	shall	AUX	_	_	19	aux	_	_
 18	be	be	AUX	_	_	19	aux:pass	_	_
-19	established	establish	VERB	_	_	3	conj	_	_
+19	established	establish	VERB	_	_	8	conj	_	_
 20	,	,	PUNCT	_	_	26	punct	_	_
 21	and	and	CCONJ	_	_	26	cc	_	_
 22	they	they	PRON	_	_	26	nsubj	_	_
@@ -31962,7 +31962,7 @@
 24	be	be	AUX	_	_	26	cop	_	_
 25	my	my	PRON	_	_	26	nmod:poss	_	_
 26	people	person	NOUN	_	_	19	conj	_	_
-27	.	.	PUNCT	_	_	3	punct	_	_
+27	.	.	PUNCT	_	_	2	punct	_	_
 
 # sent_id = 804
 # text = Yea, blessed is this people who are willing to bear my name; for in my name shall they be called; and they are mine.
@@ -32015,14 +32015,14 @@
 
 # sent_id = 806
 # text = Thou art my servant; and I covenant with thee that thou shalt have eternal life; and thou shalt serve me and go forth in my name, and shalt gather together my sheep.
-1	Thou	you	PRON	_	_	2	nsubj	_	_
-2	art	art	VERB	_	_	0	root	_	_
+1	Thou	you	PRON	_	_	4	nsubj	_	_
+2	art	be	AUX	_	_	4	cop	_	_
 3	my	my	PRON	_	_	4	nmod:poss	_	_
-4	servant	servant	NOUN	_	_	2	obj	_	_
+4	servant	servant	NOUN	_	_	0	root	_	_
 5	;	;	PUNCT	_	_	8	punct	_	_
 6	and	and	CCONJ	_	_	8	cc	_	_
 7	I	I	PRON	_	_	8	nsubj	_	_
-8	covenant	covenant	VERB	_	_	2	conj	_	_
+8	covenant	covenant	VERB	_	_	4	conj	_	_
 9	with	with	ADP	_	_	10	case	_	_
 10	thee	you	PRON	_	_	8	obl	_	_
 11	that	that	SCONJ	_	_	14	mark	_	_
@@ -32035,7 +32035,7 @@
 18	and	and	CCONJ	_	_	21	cc	_	_
 19	thou	you	PRON	_	_	21	nsubj	_	_
 20	shalt	shall	AUX	_	_	21	aux	_	_
-21	serve	serve	VERB	_	_	2	conj	_	_
+21	serve	serve	VERB	_	_	4	conj	_	_
 22	me	I	PRON	_	_	21	obj	_	_
 23	and	and	CCONJ	_	_	24	cc	_	_
 24	go	go	VERB	_	_	21	conj	_	_
@@ -32050,7 +32050,7 @@
 33	together	together	ADP	_	_	32	compound:prt	_	_
 34	my	my	PRON	_	_	35	nmod:poss	_	_
 35	sheep	sheep	NOUN	_	_	32	obj	_	_
-36	.	.	PUNCT	_	_	2	punct	_	_
+36	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 807
 # text = And he that will hear my voice shall be my sheep; and him shall ye receive into the church, and him will I also receive.
@@ -33497,7 +33497,7 @@
 43	thee	you	PRON	_	_	41	nmod	_	_
 44	that	that	SCONJ	_	_	48	mark	_	_
 45	thou	you	PRON	_	_	48	nsubj:pass	_	_
-46	mightest	mightest	AUX	_	_	48	aux	_	_
+46	mightest	might	AUX	_	_	48	aux	_	_
 47	be	be	AUX	_	_	48	aux:pass	_	_
 48	brought	bring	VERB	_	_	41	acl	_	_
 49	to	to	ADP	_	_	51	case	_	_
@@ -33685,7 +33685,7 @@
 34	thou	you	PRON	_	_	39	nsubj:pass	_	_
 35	wilt	will	AUX	_	_	39	aux	_	_
 36	of	of	ADP	_	_	37	case	_	_
-37	thyself	yourself	PRON	_	_	35	obl	_	_
+37	thyself	yourself	PRON	_	_	39	obl	_	_
 38	be	be	AUX	_	_	39	aux:pass	_	_
 39	cast	cast	VERB	_	_	28	advcl	_	_
 40	off	off	ADP	_	_	39	compound:prt	_	_

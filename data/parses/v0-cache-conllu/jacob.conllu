@@ -5767,7 +5767,7 @@
 40	,	,	PUNCT	_	_	43	punct	_	_
 41	and	and	CCONJ	_	_	43	cc	_	_
 42	thou	you	PRON	_	_	43	nsubj	_	_
-43	beholdest	beholdest	VERB	_	_	29	conj	_	_
+43	beholdest	behold	VERB	_	_	29	conj	_	_
 44	that	that	SCONJ	_	_	47	mark	_	_
 45	it	it	PRON	_	_	47	nsubj	_	_
 46	hath	have	AUX	_	_	47	aux	_	_
@@ -6470,7 +6470,7 @@
 38	;	;	PUNCT	_	_	41	punct	_	_
 39	wherefore	so	ADV	_	_	41	advmod	_	_
 40	thou	you	PRON	_	_	41	nsubj	_	_
-41	beholdest	beholdest	VERB	_	_	4	parataxis	_	_
+41	beholdest	behold	VERB	_	_	4	parataxis	_	_
 42	that	that	SCONJ	_	_	46	mark	_	_
 43	they	they	PRON	_	_	46	nsubj	_	_
 44	are	be	AUX	_	_	46	cop	_	_
@@ -6601,7 +6601,7 @@
 31	much	much	ADJ	_	_	33	amod	_	_
 32	evil	evil	ADJ	_	_	33	amod	_	_
 33	fruit	fruit	NOUN	_	_	29	obj	_	_
-34	;	;	PUNCT	_	_	40	punct	_	_
+34	;	;	PUNCT	_	_	35	punct	_	_
 35	and	and	CCONJ	_	_	40	cc	_	_
 36	because	because	SCONJ	_	_	40	mark	_	_
 37	that	that	SCONJ	_	_	40	mark	_	_
@@ -6614,7 +6614,7 @@
 44	evil	evil	ADJ	_	_	45	amod	_	_
 45	fruit	fruit	NOUN	_	_	40	obj	_	_
 46	thou	you	PRON	_	_	47	nsubj	_	_
-47	beholdest	beholdest	VERB	_	_	45	acl:relcl	_	_
+47	beholdest	behold	VERB	_	_	45	acl:relcl	_	_
 48	that	that	SCONJ	_	_	50	mark	_	_
 49	it	it	PRON	_	_	50	nsubj	_	_
 50	beginneth	begin	VERB	_	_	47	ccomp	_	_
@@ -8827,7 +8827,7 @@
 51	;	;	PUNCT	_	_	54	punct	_	_
 52	and	and	CCONJ	_	_	54	cc	_	_
 53	thou	you	PRON	_	_	54	nsubj	_	_
-54	beholdest	beholdest	ADJ	_	_	48	conj	_	_
+54	beholdest	behold	VERB	_	_	48	conj	_	_
 55	that	that	PRON	_	_	58	obj	_	_
 56	I	I	PRON	_	_	58	nsubj	_	_
 57	have	have	AUX	_	_	58	aux	_	_
@@ -8862,17 +8862,17 @@
 
 # sent_id = 223
 # text = And blessed art thou; for because ye have been diligent in laboring with me in my vineyard, and have kept my commandments, and have brought unto me again the natural fruit, that my vineyard is no more corrupted, and the bad is cast away, behold ye shall have joy with me because of the fruit of my vineyard.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	blessed	bless	VERB	_	_	3	amod	_	_
-3	art	art	VERB	_	_	0	root	_	_
-4	thou	you	PRON	_	_	3	obj	_	_
+1	And	and	CCONJ	_	_	2	cc	_	_
+2	blessed	bless	VERB	_	_	0	root	_	_
+3	art	be	AUX	_	_	2	aux:pass	_	_
+4	thou	you	PRON	_	_	2	nsubj:pass	_	_
 5	;	;	PUNCT	_	_	11	punct	_	_
 6	for	for	ADP	_	_	11	mark	_	_
 7	because	because	SCONJ	_	_	11	mark	_	_
 8	ye	you	PRON	_	_	11	nsubj	_	_
 9	have	have	AUX	_	_	11	aux	_	_
 10	been	be	AUX	_	_	11	cop	_	_
-11	diligent	diligent	ADJ	_	_	3	advcl	_	_
+11	diligent	diligent	ADJ	_	_	2	advcl	_	_
 12	in	in	SCONJ	_	_	13	mark	_	_
 13	laboring	labor	VERB	_	_	11	advcl	_	_
 14	with	with	ADP	_	_	15	case	_	_
@@ -8883,7 +8883,7 @@
 19	,	,	PUNCT	_	_	22	punct	_	_
 20	and	and	CCONJ	_	_	22	cc	_	_
 21	have	have	AUX	_	_	22	aux	_	_
-22	kept	keep	VERB	_	_	3	conj	_	_
+22	kept	keep	VERB	_	_	11	conj	_	_
 23	my	my	PRON	_	_	24	nmod:poss	_	_
 24	commandments	commandment	NOUN	_	_	22	obj	_	_
 25	,	,	PUNCT	_	_	28	punct	_	_
@@ -8926,7 +8926,7 @@
 62	of	of	ADP	_	_	64	case	_	_
 63	my	my	PRON	_	_	64	nmod:poss	_	_
 64	vineyard	vineyard	NOUN	_	_	61	nmod	_	_
-65	.	.	PUNCT	_	_	3	punct	_	_
+65	.	.	PUNCT	_	_	2	punct	_	_
 
 # sent_id = 224
 # text = For behold, for a long time will I lay up of the fruit of my vineyard unto mine own self against the season, which speedily cometh; and for the last time have I nourished my vineyard, and pruned it, and dug about it, and dunged it; wherefore I will lay up unto mine own self of the fruit, for a long time, according to that which I have spoken.
@@ -10457,13 +10457,13 @@
 3	wilt	will	AUX	_	_	4	aux	_	_
 4	deny	deny	VERB	_	_	0	root	_	_
 5	it	it	PRON	_	_	4	obj	_	_
-6	,	,	PUNCT	_	_	9	punct	_	_
-7	because	because	SCONJ	_	_	9	mark	_	_
-8	thou	you	PRON	_	_	9	nsubj	_	_
-9	art	art	NOUN	_	_	4	advcl	_	_
+6	,	,	PUNCT	_	_	12	punct	_	_
+7	because	because	SCONJ	_	_	12	mark	_	_
+8	thou	you	PRON	_	_	12	nsubj	_	_
+9	art	be	AUX	_	_	12	cop	_	_
 10	of	of	ADP	_	_	12	case	_	_
 11	the	the	DET	_	_	12	det	_	_
-12	devil	devil	NOUN	_	_	9	nmod	_	_
+12	devil	devil	NOUN	_	_	4	advcl	_	_
 13	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 268

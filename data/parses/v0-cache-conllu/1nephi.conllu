@@ -672,7 +672,7 @@
 34	thou	you	PRON	_	_	37	nsubj	_	_
 35	wilt	will	AUX	_	_	37	aux	_	_
 36	not	not	PART	_	_	37	advmod	_	_
-37	suffer	suffer	VERB	_	_	22	conj	_	_
+37	suffer	suffer	VERB	_	_	4	conj	_	_
 38	those	that	PRON	_	_	37	obj	_	_
 39	who	who	PRON	_	_	40	nsubj	_	_
 40	come	come	VERB	_	_	38	acl:relcl	_	_
@@ -1131,16 +1131,16 @@
 24	said	say	VERB	_	_	5	conj	_	_
 25	unto	to	ADP	_	_	26	case	_	_
 26	him	he	PRON	_	_	24	obl	_	_
-27	:	:	PUNCT	_	_	29	punct	_	_
-28	Blessed	bless	VERB	_	_	29	amod	_	_
-29	art	art	NOUN	_	_	24	obj	_	_
-30	thou	you	PRON	_	_	29	appos	_	_
-31	Lehi	Lehi	PROPN	_	_	29	flat	_	_
+27	:	:	PUNCT	_	_	28	punct	_	_
+28	Blessed	bless	VERB	_	_	24	parataxis	_	_
+29	art	be	AUX	_	_	31	cop	_	_
+30	thou	you	PRON	_	_	31	nsubj	_	_
+31	Lehi	Lehi	PROPN	_	_	28	parataxis	_	_
 32	,	,	PUNCT	_	_	36	punct	_	_
 33	because	because	ADP	_	_	36	case	_	_
 34	of	of	ADP	_	_	33	fixed	_	_
 35	the	the	DET	_	_	36	det	_	_
-36	things	thing	NOUN	_	_	24	obl	_	_
+36	things	thing	NOUN	_	_	31	nmod	_	_
 37	which	which	PRON	_	_	40	obj	_	_
 38	thou	you	PRON	_	_	40	nsubj	_	_
 39	hast	have	AUX	_	_	40	aux	_	_
@@ -1151,7 +1151,7 @@
 44	thou	you	PRON	_	_	47	nsubj	_	_
 45	hast	have	AUX	_	_	47	aux	_	_
 46	been	be	AUX	_	_	47	cop	_	_
-47	faithful	faithful	ADJ	_	_	36	conj	_	_
+47	faithful	faithful	ADJ	_	_	31	conj	_	_
 48	and	and	CCONJ	_	_	49	cc	_	_
 49	declared	declare	VERB	_	_	47	conj	_	_
 50	unto	to	ADP	_	_	52	case	_	_
@@ -1167,7 +1167,7 @@
 60	behold	behold	INTJ	_	_	63	discourse	_	_
 61	,	,	PUNCT	_	_	60	punct	_	_
 62	they	they	PRON	_	_	63	nsubj	_	_
-63	seek	seek	VERB	_	_	5	parataxis	_	_
+63	seek	seek	VERB	_	_	47	parataxis	_	_
 64	to	to	PART	_	_	65	mark	_	_
 65	take	take	VERB	_	_	63	xcomp	_	_
 66	away	away	ADP	_	_	65	compound:prt	_	_
@@ -1509,7 +1509,7 @@
 28	O	o	INTJ	_	_	36	discourse	_	_
 29	that	that	SCONJ	_	_	36	mark	_	_
 30	thou	you	PRON	_	_	36	nsubj	_	_
-31	mightest	mightest	AUX	_	_	36	aux	_	_
+31	mightest	might	AUX	_	_	36	aux	_	_
 32	be	be	AUX	_	_	36	cop	_	_
 33	like	like	ADP	_	_	36	case	_	_
 34	unto	to	ADP	_	_	36	case	_	_
@@ -1534,11 +1534,11 @@
 4	spake	speak	VERB	_	_	0	root	_	_
 5	unto	to	ADP	_	_	6	case	_	_
 6	Lemuel	Lemuel	PROPN	_	_	4	obl	_	_
-7	:	:	PUNCT	_	_	16	punct	_	_
-8	O	o	INTJ	_	_	16	discourse	_	_
-9	that	that	SCONJ	_	_	16	mark	_	_
+7	:	:	PUNCT	_	_	8	punct	_	_
+8	O	o	INTJ	_	_	4	discourse	_	_
+9	that	that	PRON	_	_	16	nsubj	_	_
 10	thou	you	PRON	_	_	16	nsubj	_	_
-11	mightest	mightest	AUX	_	_	16	aux	_	_
+11	mightest	might	AUX	_	_	16	aux	_	_
 12	be	be	AUX	_	_	16	cop	_	_
 13	like	like	ADP	_	_	16	case	_	_
 14	unto	to	ADP	_	_	16	case	_	_
@@ -1547,7 +1547,7 @@
 17	,	,	PUNCT	_	_	18	punct	_	_
 18	firm	firm	ADJ	_	_	16	conj	_	_
 19	and	and	CCONJ	_	_	20	cc	_	_
-20	steadfast	steadfast	ADJ	_	_	16	conj	_	_
+20	steadfast	steadfast	ADJ	_	_	18	conj	_	_
 21	,	,	PUNCT	_	_	23	punct	_	_
 22	and	and	CCONJ	_	_	23	cc	_	_
 23	immovable	immovable	ADJ	_	_	16	conj	_	_
@@ -1995,10 +1995,10 @@
 11	me	I	PRON	_	_	9	obl	_	_
 12	,	,	PUNCT	_	_	13	punct	_	_
 13	saying	say	VERB	_	_	9	advcl	_	_
-14	:	:	PUNCT	_	_	16	punct	_	_
-15	Blessed	bless	VERB	_	_	16	amod	_	_
-16	art	art	NOUN	_	_	13	obj	_	_
-17	thou	you	PRON	_	_	16	flat	_	_
+14	:	:	PUNCT	_	_	15	punct	_	_
+15	Blessed	bless	VERB	_	_	13	parataxis	_	_
+16	art	be	AUX	_	_	15	aux:pass	_	_
+17	thou	you	PRON	_	_	15	nsubj	_	_
 18	,	,	PUNCT	_	_	19	punct	_	_
 19	Nephi	Nephi	PROPN	_	_	17	conj	_	_
 20	,	,	PUNCT	_	_	24	punct	_	_
@@ -2010,7 +2010,7 @@
 26	for	for	SCONJ	_	_	29	mark	_	_
 27	thou	you	PRON	_	_	29	nsubj	_	_
 28	hast	have	AUX	_	_	29	aux	_	_
-29	sought	seek	VERB	_	_	9	advcl	_	_
+29	sought	seek	VERB	_	_	15	advcl	_	_
 30	me	I	PRON	_	_	29	obj	_	_
 31	diligently	diligently	ADV	_	_	29	advmod	_	_
 32	,	,	PUNCT	_	_	34	punct	_	_
@@ -2683,12 +2683,12 @@
 4	said	say	VERB	_	_	0	root	_	_
 5	unto	to	ADP	_	_	6	case	_	_
 6	him	he	PRON	_	_	4	obl	_	_
-7	:	:	PUNCT	_	_	10	punct	_	_
-8	Behold	behold	INTJ	_	_	10	discourse	_	_
-9	thou	you	PRON	_	_	10	nsubj	_	_
-10	art	art	VERB	_	_	4	parataxis	_	_
+7	:	:	PUNCT	_	_	12	punct	_	_
+8	Behold	behold	INTJ	_	_	12	discourse	_	_
+9	thou	you	PRON	_	_	12	nsubj	_	_
+10	art	be	AUX	_	_	12	cop	_	_
 11	a	a	DET	_	_	12	det	_	_
-12	robber	robber	NOUN	_	_	10	obj	_	_
+12	robber	robber	NOUN	_	_	4	ccomp	_	_
 13	,	,	PUNCT	_	_	17	punct	_	_
 14	and	and	CCONJ	_	_	17	cc	_	_
 15	I	I	PRON	_	_	17	nsubj	_	_
@@ -10633,16 +10633,16 @@
 
 # sent_id = 289
 # text = And blessed art thou, Nephi, because thou believest in the Son of the most high God; wherefore, thou shalt behold the things which thou hast desired.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	blessed	bless	VERB	_	_	3	amod	_	_
-3	art	art	NOUN	_	_	0	root	_	_
-4	thou	you	PRON	_	_	3	flat	_	_
+1	And	and	CCONJ	_	_	2	cc	_	_
+2	blessed	bless	VERB	_	_	0	root	_	_
+3	art	be	AUX	_	_	2	aux:pass	_	_
+4	thou	you	PRON	_	_	2	nsubj:pass	_	_
 5	,	,	PUNCT	_	_	6	punct	_	_
-6	Nephi	Nephi	PROPN	_	_	3	vocative	_	_
+6	Nephi	Nephi	PROPN	_	_	2	vocative	_	_
 7	,	,	PUNCT	_	_	10	punct	_	_
 8	because	because	SCONJ	_	_	10	mark	_	_
 9	thou	you	PRON	_	_	10	nsubj	_	_
-10	believest	believe	VERB	_	_	3	advcl	_	_
+10	believest	believe	VERB	_	_	2	advcl	_	_
 11	in	in	ADP	_	_	13	case	_	_
 12	the	the	DET	_	_	13	det	_	_
 13	Son	son	NOUN	_	_	10	obl	_	_
@@ -10656,14 +10656,14 @@
 21	,	,	PUNCT	_	_	20	punct	_	_
 22	thou	you	PRON	_	_	24	nsubj	_	_
 23	shalt	shall	AUX	_	_	24	aux	_	_
-24	behold	behold	VERB	_	_	3	parataxis	_	_
+24	behold	behold	VERB	_	_	2	parataxis	_	_
 25	the	the	DET	_	_	26	det	_	_
 26	things	thing	NOUN	_	_	24	obj	_	_
 27	which	which	PRON	_	_	30	obj	_	_
 28	thou	you	PRON	_	_	30	nsubj	_	_
 29	hast	have	AUX	_	_	30	aux	_	_
 30	desired	desire	VERB	_	_	26	acl:relcl	_	_
-31	.	.	PUNCT	_	_	3	punct	_	_
+31	.	.	PUNCT	_	_	2	punct	_	_
 
 # sent_id = 290
 # text = And behold this thing shall be given unto thee for a sign, that after thou hast beheld the tree which bore the fruit which thy father tasted, thou shalt also behold a man descending out of heaven, and him shall ye witness; and after ye have witnessed him ye shall bear record that it is the Son of God.
@@ -11045,7 +11045,7 @@
 29	Nephi	Nephi	PROPN	_	_	25	vocative	_	_
 30	,	,	PUNCT	_	_	29	punct	_	_
 31	what	what	PRON	_	_	32	nsubj	_	_
-32	beholdest	beholdest	VERB	_	_	25	parataxis	_	_
+32	beholdest	behold	VERB	_	_	25	parataxis	_	_
 33	thou	you	PRON	_	_	32	obj	_	_
 34	?	?	PUNCT	_	_	3	punct	_	_
 
@@ -12558,7 +12558,7 @@
 4	ministers	minister	NOUN	_	_	9	nsubj	_	_
 5	whom	whom	PRON	_	_	7	obj	_	_
 6	thou	you	PRON	_	_	7	nsubj	_	_
-7	beholdest	beholdest	NOUN	_	_	4	acl:relcl	_	_
+7	beholdest	behold	VERB	_	_	4	acl:relcl	_	_
 8	shall	shall	AUX	_	_	9	aux	_	_
 9	judge	judge	VERB	_	_	0	root	_	_
 10	thy	your	PRON	_	_	11	nmod:poss	_	_
@@ -13189,7 +13189,7 @@
 6	me	I	PRON	_	_	4	obl	_	_
 7	:	:	PUNCT	_	_	9	punct	_	_
 8	What	what	PRON	_	_	9	nsubj	_	_
-9	beholdest	beholdest	VERB	_	_	4	parataxis	_	_
+9	beholdest	behold	VERB	_	_	4	parataxis	_	_
 10	thou	you	PRON	_	_	9	obj	_	_
 11	?	?	PUNCT	_	_	4	punct	_	_
 
@@ -13968,7 +13968,7 @@
 2	book	book	NOUN	_	_	8	nsubj	_	_
 3	that	that	PRON	_	_	5	obj	_	_
 4	thou	you	PRON	_	_	5	nsubj	_	_
-5	beholdest	beholdest	NOUN	_	_	2	acl:relcl	_	_
+5	beholdest	behold	VERB	_	_	2	acl:relcl	_	_
 6	is	be	AUX	_	_	8	cop	_	_
 7	a	a	DET	_	_	8	det	_	_
 8	record	record	NOUN	_	_	0	root	_	_
@@ -14470,10 +14470,10 @@
 1	Nevertheless	nevertheless	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	thou	you	PRON	_	_	4	nsubj	_	_
-4	beholdest	beholdest	VERB	_	_	0	root	_	_
+4	beholdest	behold	VERB	_	_	0	root	_	_
 5	that	that	SCONJ	_	_	19	mark	_	_
 6	the	the	DET	_	_	7	det	_	_
-7	Gentiles	Gentiles	PROPN	_	_	73	nsubj	_	_
+7	Gentiles	Gentiles	PROPN	_	_	19	nsubj:pass	_	_
 8	who	who	PRON	_	_	10	nsubj	_	_
 9	have	have	AUX	_	_	10	aux	_	_
 10	gone	go	VERB	_	_	7	acl:relcl	_	_
@@ -14485,7 +14485,7 @@
 16	and	and	CCONJ	_	_	19	cc	_	_
 17	have	have	AUX	_	_	19	aux	_	_
 18	been	be	AUX	_	_	19	aux:pass	_	_
-19	lifted	lift	VERB	_	_	10	conj	_	_
+19	lifted	lift	VERB	_	_	4	conj	_	_
 20	up	up	ADP	_	_	19	compound:prt	_	_
 21	by	by	ADP	_	_	23	case	_	_
 22	the	the	DET	_	_	23	det	_	_
@@ -14528,7 +14528,7 @@
 59	his	his	PRON	_	_	60	nmod:poss	_	_
 60	seed	seed	NOUN	_	_	62	nsubj	_	_
 61	should	should	AUX	_	_	62	aux	_	_
-62	have	have	VERB	_	_	48	acl:relcl	_	_
+62	have	have	VERB	_	_	57	acl:relcl	_	_
 63	for	for	ADP	_	_	65	case	_	_
 64	the	the	DET	_	_	65	det	_	_
 65	land	land	NOUN	_	_	62	obl	_	_
@@ -14605,12 +14605,12 @@
 17	of	of	ADP	_	_	18	case	_	_
 18	blindness	blindness	NOUN	_	_	16	nmod	_	_
 19	,	,	PUNCT	_	_	22	punct	_	_
-20	which	which	PRON	_	_	25	obj	_	_
+20	which	which	PRON	_	_	22	obj	_	_
 21	thou	you	PRON	_	_	22	nsubj	_	_
-22	beholdest	beholdest	ADV	_	_	16	acl:relcl	_	_
+22	beholdest	behold	VERB	_	_	16	acl:relcl	_	_
 23	they	they	PRON	_	_	25	nsubj	_	_
 24	are	be	AUX	_	_	25	cop	_	_
-25	in	in	ADP	_	_	22	advcl:relcl	_	_
+25	in	in	ADP	_	_	20	case	_	_
 26	,	,	PUNCT	_	_	34	punct	_	_
 27	because	because	ADP	_	_	34	case	_	_
 28	of	of	ADP	_	_	27	fixed	_	_
@@ -14619,7 +14619,7 @@
 31	and	and	CCONJ	_	_	33	cc	_	_
 32	most	most	ADV	_	_	33	advmod	_	_
 33	precious	precious	ADJ	_	_	30	conj	_	_
-34	parts	part	NOUN	_	_	12	obl	_	_
+34	parts	part	NOUN	_	_	22	obl	_	_
 35	of	of	ADP	_	_	37	case	_	_
 36	the	the	DET	_	_	37	det	_	_
 37	gospel	gospel	NOUN	_	_	34	nmod	_	_
@@ -21763,15 +21763,15 @@
 
 # sent_id = 568
 # text = And thou art like unto our father, led away by the foolish imaginations of his heart; yea, he hath led us out of the land of Jerusalem, and we have wandered in the wilderness for these many years; and our women have toiled, being big with child; and they have borne children in the wilderness and suffered all things, save it were death; and it would have been better that they had died before they came out of Jerusalem than to have suffered these afflictions.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	thou	you	PRON	_	_	3	nsubj	_	_
-3	art	art	VERB	_	_	0	root	_	_
-4	like	like	ADP	_	_	3	compound:prt	_	_
+1	And	and	CCONJ	_	_	7	cc	_	_
+2	thou	you	PRON	_	_	7	nsubj	_	_
+3	art	be	AUX	_	_	7	cop	_	_
+4	like	like	ADP	_	_	7	case	_	_
 5	unto	to	ADP	_	_	7	case	_	_
 6	our	our	PRON	_	_	7	nmod:poss	_	_
-7	father	father	NOUN	_	_	3	obl	_	_
+7	father	father	NOUN	_	_	0	root	_	_
 8	,	,	PUNCT	_	_	9	punct	_	_
-9	led	lead	VERB	_	_	3	advcl	_	_
+9	led	lead	VERB	_	_	7	acl	_	_
 10	away	away	ADV	_	_	9	advmod	_	_
 11	by	by	ADP	_	_	14	case	_	_
 12	the	the	DET	_	_	14	det	_	_
@@ -21785,7 +21785,7 @@
 20	,	,	PUNCT	_	_	19	punct	_	_
 21	he	he	PRON	_	_	23	nsubj	_	_
 22	hath	have	AUX	_	_	23	aux	_	_
-23	led	lead	VERB	_	_	3	parataxis	_	_
+23	led	lead	VERB	_	_	7	parataxis	_	_
 24	us	we	PRON	_	_	23	obj	_	_
 25	out	out	ADP	_	_	28	case	_	_
 26	of	of	ADP	_	_	28	case	_	_
@@ -21797,7 +21797,7 @@
 32	and	and	CCONJ	_	_	35	cc	_	_
 33	we	we	PRON	_	_	35	nsubj	_	_
 34	have	have	AUX	_	_	35	aux	_	_
-35	wandered	wander	VERB	_	_	3	conj	_	_
+35	wandered	wander	VERB	_	_	7	conj	_	_
 36	in	in	ADP	_	_	38	case	_	_
 37	the	the	DET	_	_	38	det	_	_
 38	wilderness	wilderness	NOUN	_	_	35	obl	_	_
@@ -21810,7 +21810,7 @@
 45	our	our	PRON	_	_	46	nmod:poss	_	_
 46	women	woman	NOUN	_	_	48	nsubj	_	_
 47	have	have	AUX	_	_	48	aux	_	_
-48	toiled	toil	VERB	_	_	3	conj	_	_
+48	toiled	toil	VERB	_	_	35	conj	_	_
 49	,	,	PUNCT	_	_	51	punct	_	_
 50	being	be	AUX	_	_	51	cop	_	_
 51	big	big	ADJ	_	_	48	advcl	_	_
@@ -21840,7 +21840,7 @@
 75	would	would	AUX	_	_	78	aux	_	_
 76	have	have	AUX	_	_	78	aux	_	_
 77	been	be	AUX	_	_	78	cop	_	_
-78	better	good	ADJ	_	_	3	conj	_	_
+78	better	good	ADJ	_	_	58	conj	_	_
 79	that	that	SCONJ	_	_	82	mark	_	_
 80	they	they	PRON	_	_	82	nsubj	_	_
 81	had	have	AUX	_	_	82	aux	_	_
@@ -21857,7 +21857,7 @@
 92	suffered	suffer	VERB	_	_	85	advcl	_	_
 93	these	this	DET	_	_	94	det	_	_
 94	afflictions	hardship	NOUN	_	_	92	obj	_	_
-95	.	.	PUNCT	_	_	3	punct	_	_
+95	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 569
 # text = Behold, these many years we have suffered in the wilderness, which time we might have enjoyed our possessions and the land of our inheritance; yea, and we might have been happy.
@@ -27952,13 +27952,13 @@
 2	said	say	VERB	_	_	0	root	_	_
 3	unto	to	ADP	_	_	4	case	_	_
 4	me	I	PRON	_	_	2	obl	_	_
-5	:	:	PUNCT	_	_	7	punct	_	_
-6	Thou	you	PRON	_	_	7	nsubj	_	_
-7	art	art	VERB	_	_	2	parataxis	_	_
+5	:	:	PUNCT	_	_	9	punct	_	_
+6	Thou	you	PRON	_	_	9	nsubj	_	_
+7	art	be	AUX	_	_	9	cop	_	_
 8	my	my	PRON	_	_	9	nmod:poss	_	_
-9	servant	servant	NOUN	_	_	7	obj	_	_
+9	servant	servant	NOUN	_	_	2	parataxis	_	_
 10	,	,	PUNCT	_	_	11	punct	_	_
-11	O	o	PROPN	_	_	9	appos	_	_
+11	O	o	PROPN	_	_	9	conj	_	_
 12	Israel	Israel	PROPN	_	_	11	flat	_	_
 13	,	,	PUNCT	_	_	19	punct	_	_
 14	in	in	ADP	_	_	15	case	_	_
@@ -28117,7 +28117,7 @@
 12	,	,	PUNCT	_	_	18	punct	_	_
 13	that	that	SCONJ	_	_	18	mark	_	_
 14	thou	you	PRON	_	_	18	nsubj	_	_
-15	mayest	mayest	AUX	_	_	18	aux	_	_
+15	mayest	may	AUX	_	_	18	aux	_	_
 16	be	be	AUX	_	_	18	cop	_	_
 17	my	my	PRON	_	_	18	nmod:poss	_	_
 18	salvation	salvation	NOUN	_	_	4	parataxis	_	_
@@ -28255,7 +28255,7 @@
 # text = That thou mayest say to the prisoners:
 1	That	that	SCONJ	_	_	4	mark	_	_
 2	thou	you	PRON	_	_	4	nsubj	_	_
-3	mayest	mayest	AUX	_	_	4	aux	_	_
+3	mayest	may	AUX	_	_	4	aux	_	_
 4	say	say	VERB	_	_	0	root	_	_
 5	to	to	ADP	_	_	7	case	_	_
 6	the	the	DET	_	_	7	det	_	_

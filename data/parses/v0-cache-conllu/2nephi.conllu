@@ -1750,13 +1750,13 @@
 7	speak	speak	VERB	_	_	0	root	_	_
 8	unto	to	ADP	_	_	9	case	_	_
 9	you	you	PRON	_	_	7	obl	_	_
-10	:	:	PUNCT	_	_	14	punct	_	_
-11	Behold	behold	INTJ	_	_	7	discourse	_	_
+10	:	:	PUNCT	_	_	11	punct	_	_
+11	Behold	behold	INTJ	_	_	16	discourse	_	_
 12	,	,	PUNCT	_	_	11	punct	_	_
-13	thou	you	PRON	_	_	14	nsubj	_	_
-14	art	art	VERB	_	_	7	parataxis	_	_
+13	thou	you	PRON	_	_	16	nsubj	_	_
+14	art	be	AUX	_	_	16	cop	_	_
 15	the	the	DET	_	_	16	det	_	_
-16	servant	servant	NOUN	_	_	14	obj	_	_
+16	servant	servant	NOUN	_	_	7	parataxis	_	_
 17	of	of	ADP	_	_	18	case	_	_
 18	Laban	Laban	PROPN	_	_	16	nmod	_	_
 19	;	;	PUNCT	_	_	20	punct	_	_
@@ -1776,19 +1776,19 @@
 33	and	and	CCONJ	_	_	35	cc	_	_
 34	I	I	PRON	_	_	35	nsubj	_	_
 35	know	know	VERB	_	_	7	conj	_	_
-36	that	that	SCONJ	_	_	38	mark	_	_
-37	thou	you	PRON	_	_	38	nsubj	_	_
-38	art	art	VERB	_	_	35	ccomp	_	_
+36	that	that	SCONJ	_	_	41	mark	_	_
+37	thou	you	PRON	_	_	41	nsubj	_	_
+38	art	be	AUX	_	_	41	cop	_	_
 39	a	a	DET	_	_	41	det	_	_
 40	true	true	ADJ	_	_	41	amod	_	_
-41	friend	friend	NOUN	_	_	38	obj	_	_
+41	friend	friend	NOUN	_	_	35	ccomp	_	_
 42	unto	to	ADP	_	_	44	case	_	_
 43	my	my	PRON	_	_	44	nmod:poss	_	_
-44	son	son	NOUN	_	_	38	obl	_	_
+44	son	son	NOUN	_	_	41	nmod	_	_
 45	,	,	PUNCT	_	_	46	punct	_	_
 46	Nephi	Nephi	PROPN	_	_	44	appos	_	_
 47	,	,	PUNCT	_	_	48	punct	_	_
-48	forever	forever	ADV	_	_	38	advmod	_	_
+48	forever	forever	ADV	_	_	41	advmod	_	_
 49	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 39
@@ -1897,20 +1897,20 @@
 
 # sent_id = 42
 # text = Thou art my firstborn in the days of my tribulation in the wilderness.
-1	Thou	you	PRON	_	_	2	nsubj	_	_
-2	art	art	VERB	_	_	0	root	_	_
+1	Thou	you	PRON	_	_	4	nsubj	_	_
+2	art	be	AUX	_	_	4	cop	_	_
 3	my	my	PRON	_	_	4	nmod:poss	_	_
-4	firstborn	firstborn	NOUN	_	_	2	obj	_	_
+4	firstborn	firstborn	NOUN	_	_	0	root	_	_
 5	in	in	ADP	_	_	7	case	_	_
 6	the	the	DET	_	_	7	det	_	_
-7	days	day	NOUN	_	_	2	obl	_	_
+7	days	day	NOUN	_	_	4	nmod	_	_
 8	of	of	ADP	_	_	10	case	_	_
 9	my	my	PRON	_	_	10	nmod:poss	_	_
 10	tribulation	tribulation	NOUN	_	_	7	nmod	_	_
 11	in	in	ADP	_	_	13	case	_	_
 12	the	the	DET	_	_	13	det	_	_
 13	wilderness	wilderness	NOUN	_	_	10	nmod	_	_
-14	.	.	PUNCT	_	_	2	punct	_	_
+14	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 43
 # text = And behold, in thy childhood thou hast suffered afflictions and much sorrow, because of the rudeness of thy brethren.
@@ -3864,12 +3864,12 @@
 # sent_id = 99
 # text = For behold, thou art the fruit of my loins; and I am a descendant of Joseph who was carried captive into Egypt.
 1	For	for	ADP	_	_	2	case	_	_
-2	behold	behold	NOUN	_	_	5	obl	_	_
+2	behold	behold	NOUN	_	_	7	obl	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
-4	thou	you	PRON	_	_	5	nsubj	_	_
-5	art	art	VERB	_	_	0	root	_	_
+4	thou	you	PRON	_	_	7	nsubj	_	_
+5	art	be	AUX	_	_	7	cop	_	_
 6	the	the	DET	_	_	7	det	_	_
-7	fruit	fruit	NOUN	_	_	5	obj	_	_
+7	fruit	fruit	NOUN	_	_	0	root	_	_
 8	of	of	ADP	_	_	10	case	_	_
 9	my	my	PRON	_	_	10	nmod:poss	_	_
 10	loins	loin	NOUN	_	_	7	nmod	_	_
@@ -3878,7 +3878,7 @@
 13	I	I	PRON	_	_	16	nsubj	_	_
 14	am	be	AUX	_	_	16	cop	_	_
 15	a	a	DET	_	_	16	det	_	_
-16	descendant	descendant	NOUN	_	_	5	conj	_	_
+16	descendant	descendant	NOUN	_	_	7	conj	_	_
 17	of	of	ADP	_	_	18	case	_	_
 18	Joseph	Joseph	PROPN	_	_	16	nmod	_	_
 19	who	who	PRON	_	_	21	nsubj:pass	_	_
@@ -3887,7 +3887,7 @@
 22	captive	captive	ADJ	_	_	21	xcomp	_	_
 23	into	into	ADP	_	_	24	case	_	_
 24	Egypt	Egypt	PROPN	_	_	21	obl	_	_
-25	.	.	PUNCT	_	_	5	punct	_	_
+25	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 100
 # text = And great were the covenants of the Lord which he made unto Joseph.
@@ -5106,26 +5106,26 @@
 
 # sent_id = 131
 # text = And now, blessed art thou, Joseph.
-1	And	and	CCONJ	_	_	5	cc	_	_
-2	now	now	ADV	_	_	5	advmod	_	_
+1	And	and	CCONJ	_	_	4	cc	_	_
+2	now	now	ADV	_	_	4	advmod	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
-4	blessed	bless	VERB	_	_	5	amod	_	_
-5	art	art	NOUN	_	_	0	root	_	_
-6	thou	you	PRON	_	_	5	flat	_	_
+4	blessed	bless	VERB	_	_	0	root	_	_
+5	art	be	AUX	_	_	4	aux:pass	_	_
+6	thou	you	PRON	_	_	4	nsubj:pass	_	_
 7	,	,	PUNCT	_	_	8	punct	_	_
-8	Joseph	Joseph	PROPN	_	_	6	appos	_	_
-9	.	.	PUNCT	_	_	5	punct	_	_
+8	Joseph	Joseph	PROPN	_	_	4	vocative	_	_
+9	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 132
 # text = Behold, thou art little; wherefore hearken unto the words of thy brother, Nephi, and it shall be done unto thee even according to the words which I have spoken.
-1	Behold	behold	INTJ	_	_	4	discourse	_	_
+1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
-3	thou	you	PRON	_	_	4	nsubj	_	_
-4	art	art	VERB	_	_	0	root	_	_
-5	little	little	ADJ	_	_	4	obj	_	_
+3	thou	you	PRON	_	_	5	nsubj	_	_
+4	art	be	AUX	_	_	5	cop	_	_
+5	little	little	ADJ	_	_	0	root	_	_
 6	;	;	PUNCT	_	_	8	punct	_	_
 7	wherefore	so	ADV	_	_	8	advmod	_	_
-8	hearken	listen	VERB	_	_	4	parataxis	_	_
+8	hearken	listen	VERB	_	_	5	parataxis	_	_
 9	unto	to	ADP	_	_	11	case	_	_
 10	the	the	DET	_	_	11	det	_	_
 11	words	word	NOUN	_	_	8	obl	_	_
@@ -5139,7 +5139,7 @@
 19	it	it	PRON	_	_	22	nsubj:pass	_	_
 20	shall	shall	AUX	_	_	22	aux	_	_
 21	be	be	AUX	_	_	22	aux:pass	_	_
-22	done	do	VERB	_	_	4	conj	_	_
+22	done	do	VERB	_	_	5	conj	_	_
 23	unto	to	ADP	_	_	24	case	_	_
 24	thee	you	PRON	_	_	22	obl	_	_
 25	even	even	ADV	_	_	29	advmod	_	_
@@ -5151,7 +5151,7 @@
 31	I	I	PRON	_	_	33	nsubj	_	_
 32	have	have	AUX	_	_	33	aux	_	_
 33	spoken	speak	VERB	_	_	29	acl:relcl	_	_
-34	.	.	PUNCT	_	_	4	punct	_	_
+34	.	.	PUNCT	_	_	5	punct	_	_
 
 # sent_id = 133
 # text = Remember the words of thy dying father.
@@ -5662,13 +5662,13 @@
 17	,	,	PUNCT	_	_	18	punct	_	_
 18	saying	say	VERB	_	_	14	advcl	_	_
 19	:	:	PUNCT	_	_	20	punct	_	_
-20	Blessed	bless	VERB	_	_	18	advcl	_	_
-21	art	art	NOUN	_	_	20	obj	_	_
-22	thou	you	PRON	_	_	21	flat	_	_
+20	Blessed	bless	VERB	_	_	18	ccomp	_	_
+21	art	be	AUX	_	_	20	cop	_	_
+22	thou	you	PRON	_	_	20	nsubj	_	_
 23	,	,	PUNCT	_	_	26	punct	_	_
 24	and	and	CCONJ	_	_	26	cc	_	_
 25	thy	your	PRON	_	_	26	nmod:poss	_	_
-26	seed	seed	NOUN	_	_	21	conj	_	_
+26	seed	seed	NOUN	_	_	22	conj	_	_
 27	;	;	PUNCT	_	_	31	punct	_	_
 28	for	for	SCONJ	_	_	31	mark	_	_
 29	thou	you	PRON	_	_	31	nsubj	_	_
@@ -6504,7 +6504,7 @@
 
 # sent_id = 179
 # text = Wilt thou deliver me out of the hands of mine enemies?
-1	Wilt	wilt	AUX	_	_	3	aux	_	_
+1	Wilt	will	AUX	_	_	3	aux	_	_
 2	thou	you	PRON	_	_	3	nsubj	_	_
 3	deliver	deliver	VERB	_	_	0	root	_	_
 4	me	I	PRON	_	_	3	obj	_	_
@@ -6519,7 +6519,7 @@
 
 # sent_id = 180
 # text = Wilt thou make me that I may shake at the appearance of sin?
-1	Wilt	wilt	AUX	_	_	3	aux	_	_
+1	Wilt	will	AUX	_	_	3	aux	_	_
 2	thou	you	PRON	_	_	3	nsubj	_	_
 3	make	make	VERB	_	_	0	root	_	_
 4	me	I	PRON	_	_	3	obj	_	_
@@ -6638,7 +6638,7 @@
 
 # sent_id = 185
 # text = Wilt thou make my path straight before me!
-1	Wilt	wilt	AUX	_	_	3	aux	_	_
+1	Wilt	will	AUX	_	_	3	aux	_	_
 2	thou	you	PRON	_	_	3	nsubj	_	_
 3	make	make	VERB	_	_	0	root	_	_
 4	my	my	PRON	_	_	5	nmod:poss	_	_
@@ -6650,7 +6650,7 @@
 
 # sent_id = 186
 # text = Wilt thou not place a stumbling block in my way--but that thou wouldst clear my way before me, and hedge not up my way, but the ways of mine enemy.
-1	Wilt	wilt	AUX	_	_	4	aux	_	_
+1	Wilt	will	AUX	_	_	4	aux	_	_
 2	thou	you	PRON	_	_	4	nsubj	_	_
 3	not	not	PART	_	_	4	advmod	_	_
 4	place	place	VERB	_	_	0	root	_	_
@@ -10369,10 +10369,10 @@
 
 # sent_id = 313
 # text = Art thou not he that hath cut Rahab, and wounded the dragon?
-1	Art	Art	VERB	_	_	0	root	_	_
-2	thou	you	PRON	_	_	1	obj	_	_
+1	Art	be	AUX	_	_	4	cop	_	_
+2	thou	you	PRON	_	_	4	nsubj	_	_
 3	not	not	PART	_	_	4	advmod	_	_
-4	he	he	PRON	_	_	1	vocative	_	_
+4	he	he	PRON	_	_	0	root	_	_
 5	that	that	PRON	_	_	7	nsubj	_	_
 6	hath	have	AUX	_	_	7	aux	_	_
 7	cut	cut	VERB	_	_	4	acl:relcl	_	_
@@ -10382,14 +10382,14 @@
 11	wounded	wound	VERB	_	_	7	conj	_	_
 12	the	the	DET	_	_	13	det	_	_
 13	dragon	dragon	NOUN	_	_	11	obj	_	_
-14	?	?	PUNCT	_	_	1	punct	_	_
+14	?	?	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 314
 # text = Art thou not he who hath dried the sea, the waters of the great deep; that hath made the depths of the sea a way for the ransomed to pass over?
-1	Art	Art	VERB	_	_	0	root	_	_
-2	thou	you	PRON	_	_	1	obj	_	_
+1	Art	be	AUX	_	_	4	cop	_	_
+2	thou	you	PRON	_	_	4	nsubj	_	_
 3	not	not	PART	_	_	4	advmod	_	_
-4	he	he	PRON	_	_	1	obj	_	_
+4	he	he	PRON	_	_	0	root	_	_
 5	who	who	PRON	_	_	7	nsubj	_	_
 6	hath	have	AUX	_	_	7	aux	_	_
 7	dried	dry	VERB	_	_	4	acl:relcl	_	_
@@ -10397,7 +10397,7 @@
 9	sea	sea	NOUN	_	_	7	obj	_	_
 10	,	,	PUNCT	_	_	12	punct	_	_
 11	the	the	DET	_	_	12	det	_	_
-12	waters	water	NOUN	_	_	4	appos	_	_
+12	waters	water	NOUN	_	_	9	appos	_	_
 13	of	of	ADP	_	_	16	case	_	_
 14	the	the	DET	_	_	16	det	_	_
 15	great	great	ADJ	_	_	16	amod	_	_
@@ -10405,7 +10405,7 @@
 17	;	;	PUNCT	_	_	20	punct	_	_
 18	that	that	PRON	_	_	20	nsubj	_	_
 19	hath	have	AUX	_	_	20	aux	_	_
-20	made	make	VERB	_	_	12	acl:relcl	_	_
+20	made	make	VERB	_	_	4	acl:relcl	_	_
 21	the	the	DET	_	_	22	det	_	_
 22	depths	depth	NOUN	_	_	20	obj	_	_
 23	of	of	ADP	_	_	25	case	_	_
@@ -10417,9 +10417,9 @@
 29	the	the	DET	_	_	30	det	_	_
 30	ransomed	ransome	VERB	_	_	27	nmod	_	_
 31	to	to	PART	_	_	32	mark	_	_
-32	pass	pass	VERB	_	_	27	acl	_	_
+32	pass	pass	VERB	_	_	30	acl	_	_
 33	over	over	ADP	_	_	32	compound:prt	_	_
-34	?	?	PUNCT	_	_	1	punct	_	_
+34	?	?	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 315
 # text = Therefore, the redeemed of the Lord shall return, and come with singing unto Zion; and everlasting joy and holiness shall be upon their heads; and they shall obtain gladness and joy; sorrow and mourning shall flee away.
@@ -10487,9 +10487,9 @@
 # text = Behold, who art thou, that thou shouldst be afraid of man, who shall die, and of the son of man, who shall be made like unto grass?
 1	Behold	behold	INTJ	_	_	11	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
-3	who	who	PRON	_	_	4	nsubj	_	_
-4	art	art	VERB	_	_	11	reparandum	_	_
-5	thou	you	PRON	_	_	4	obj	_	_
+3	who	who	PRON	_	_	11	nsubj:outer	_	_
+4	art	be	AUX	_	_	5	cop	_	_
+5	thou	you	PRON	_	_	11	reparandum	_	_
 6	,	,	PUNCT	_	_	11	punct	_	_
 7	that	that	SCONJ	_	_	11	mark	_	_
 8	thou	you	PRON	_	_	11	nsubj	_	_
@@ -10674,13 +10674,13 @@
 37	say	say	VERB	_	_	25	conj	_	_
 38	unto	to	ADP	_	_	39	case	_	_
 39	Zion	Zion	PROPN	_	_	37	obl	_	_
-40	:	:	PUNCT	_	_	44	punct	_	_
-41	Behold	behold	INTJ	_	_	44	discourse	_	_
+40	:	:	PUNCT	_	_	41	punct	_	_
+41	Behold	behold	INTJ	_	_	46	discourse	_	_
 42	,	,	PUNCT	_	_	41	punct	_	_
-43	thou	you	PRON	_	_	44	nsubj	_	_
-44	art	art	VERB	_	_	37	parataxis	_	_
+43	thou	you	PRON	_	_	46	nsubj	_	_
+44	art	be	AUX	_	_	46	cop	_	_
 45	my	my	PRON	_	_	46	nmod:poss	_	_
-46	people	person	NOUN	_	_	44	obj	_	_
+46	people	person	NOUN	_	_	37	parataxis	_	_
 47	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 323
@@ -24504,7 +24504,7 @@
 
 # sent_id = 731
 # text = All they shall speak and say unto thee: Art thou also become weak as we?
-1	All	all	DET	_	_	0	root	_	_
+1	All	all	DET	_	_	13	nsubj:outer	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
 3	shall	shall	AUX	_	_	4	aux	_	_
 4	speak	speak	VERB	_	_	1	acl:relcl	_	_
@@ -24513,10 +24513,10 @@
 7	unto	to	ADP	_	_	8	case	_	_
 8	thee	you	PRON	_	_	6	obl	_	_
 9	:	:	PUNCT	_	_	13	punct	_	_
-10	Art	art	NOUN	_	_	13	nsubj	_	_
+10	Art	be	AUX	_	_	13	aux	_	_
 11	thou	you	PRON	_	_	13	nsubj	_	_
 12	also	also	ADV	_	_	13	advmod	_	_
-13	become	become	VERB	_	_	6	ccomp	_	_
+13	become	become	VERB	_	_	0	root	_	_
 14	weak	weak	ADJ	_	_	13	xcomp	_	_
 15	as	as	SCONJ	_	_	16	mark	_	_
 16	we	we	PRON	_	_	13	advcl	_	_
@@ -24524,7 +24524,7 @@
 
 # sent_id = 732
 # text = Art thou become like unto us?
-1	Art	art	NOUN	_	_	3	nsubj	_	_
+1	Art	be	AUX	_	_	3	aux	_	_
 2	thou	you	PRON	_	_	3	nsubj	_	_
 3	become	become	VERB	_	_	0	root	_	_
 4	like	like	ADP	_	_	3	compound:prt	_	_
@@ -24586,8 +24586,8 @@
 
 # sent_id = 735
 # text = Art thou cut down to the ground, which did weaken the nations!
-1	Art	art	NOUN	_	_	3	nsubj	_	_
-2	thou	you	PRON	_	_	3	nsubj	_	_
+1	Art	be	AUX	_	_	3	aux:pass	_	_
+2	thou	you	PRON	_	_	3	nsubj:pass	_	_
 3	cut	cut	VERB	_	_	0	root	_	_
 4	down	down	ADP	_	_	3	compound:prt	_	_
 5	to	to	ADP	_	_	7	case	_	_
@@ -25210,28 +25210,28 @@
 
 # sent_id = 756
 # text = Howl, O gate; cry, O city; thou, whole Palestina, art dissolved; for there shall come from the north a smoke, and none shall be alone in his appointed times.
-1	Howl	Howl	PROPN	_	_	0	root	_	_
-2	,	,	PUNCT	_	_	4	punct	_	_
+1	Howl	Howl	PROPN	_	_	17	vocative	_	_
+2	,	,	PUNCT	_	_	1	punct	_	_
 3	O	o	PROPN	_	_	1	flat	_	_
 4	gate	gate	NOUN	_	_	1	appos	_	_
 5	;	;	PUNCT	_	_	6	punct	_	_
-6	cry	cry	VERB	_	_	1	parataxis	_	_
+6	cry	cry	VERB	_	_	0	root	_	_
 7	,	,	PUNCT	_	_	9	punct	_	_
 8	O	o	PROPN	_	_	9	compound	_	_
-9	city	city	NOUN	_	_	6	vocative	_	_
-10	;	;	PUNCT	_	_	11	punct	_	_
-11	thou	you	PRON	_	_	6	parataxis	_	_
-12	,	,	PUNCT	_	_	14	punct	_	_
+9	city	city	NOUN	_	_	6	obj	_	_
+10	;	;	PUNCT	_	_	17	punct	_	_
+11	thou	you	PRON	_	_	17	nsubj:pass	_	_
+12	,	,	PUNCT	_	_	11	punct	_	_
 13	whole	whole	ADJ	_	_	14	amod	_	_
-14	Palestina	Palestina	PROPN	_	_	1	conj	_	_
-15	,	,	PUNCT	_	_	16	punct	_	_
-16	art	art	NOUN	_	_	14	appos	_	_
-17	dissolved	dissolve	VERB	_	_	14	acl	_	_
+14	Palestina	Palestina	PROPN	_	_	11	appos	_	_
+15	,	,	PUNCT	_	_	11	punct	_	_
+16	art	be	AUX	_	_	17	aux:pass	_	_
+17	dissolved	dissolve	VERB	_	_	6	parataxis	_	_
 18	;	;	PUNCT	_	_	22	punct	_	_
 19	for	for	ADP	_	_	22	mark	_	_
 20	there	there	PRON	_	_	22	expl	_	_
 21	shall	shall	AUX	_	_	22	aux	_	_
-22	come	come	VERB	_	_	6	parataxis	_	_
+22	come	come	VERB	_	_	17	parataxis	_	_
 23	from	from	ADP	_	_	25	case	_	_
 24	the	the	DET	_	_	25	det	_	_
 25	north	north	NOUN	_	_	22	obl	_	_

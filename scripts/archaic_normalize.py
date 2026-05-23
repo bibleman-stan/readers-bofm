@@ -40,6 +40,23 @@ for _src, _tgt in KNOWN_ETH.items():
     if " " not in _src and " " not in str(_tgt):
         _MAP.setdefault(_src.lower(), _tgt)
 
+# Irregular EME 2nd-person verb/aux/modal forms that the -eth/-est fallback CANNOT
+# reach (no -eth/-est suffix) and that the lexicon under-covers. Audited 2026-05-22:
+# stanza mis-tags "art" as NOUN ("Blessed ART thou" -> noun-phrase, no clause; 27x),
+# "beholdest" as ADP (3x), "mightest" as ADJ -- each destroying the clause and
+# cascading into the binding rules. The rest (dost/wilt/couldst...) usually tag VERB
+# but with a wrong lemma, which corrupts lemma-keyed rules (verba dicendi, AICTP);
+# normalizing fixes both. Targets are modern finite forms stanza tags VERB/AUX.
+_IRREGULAR = {
+    "art": "are", "beest": "be",
+    "dost": "do", "doest": "do",
+    "wilt": "will", "couldst": "could", "wouldst": "would",
+    "shouldst": "should", "mayest": "may", "mightest": "might",
+    "beholdest": "behold",
+}
+for _src, _tgt in _IRREGULAR.items():
+    _MAP.setdefault(_src, _tgt)
+
 # -eth/-est words that are NOT verbs — never touched by the morphological fallback.
 NONVERB = {
     "greatest", "eldest", "highest", "lowest", "utmost", "latest", "nearest",
