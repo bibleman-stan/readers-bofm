@@ -131,6 +131,30 @@ def _is_aictp_frame(verb, by_id):
                     for c in by_id.values()))
 
 
+def _is_finite_clause(verb, by_id):
+    """Finite main-clause head: NOT a participial. A participial ("having dwelt",
+    "being raised", a bare "-ing") is non-finite and cannot be the displaced main
+    clause of an AICTP frame -- it is a parenthetical/circumstantial aside."""
+    if (verb.form or "").lower().endswith("ing"):
+        return False
+    return not any(_i(c.head) == _i(verb.id) and (c.deprel or "").startswith("aux")
+                   and (c.form or "").lower() in ("having", "being")
+                   for c in by_id.values())
+
+
+def _aictp_displaced_main(frame, by_id):
+    """The single clause an empty AICTP frame binds: the FIRST (lowest-id) FINITE
+    parataxis/conj-VERB child. A participial parenthetical ("(my father, Lehi, having
+    dwelt...)", 1Ne1:4) is non-finite -> not it; a SUBSEQUENT finite coordinate
+    ("...and he saw and heard", 1Ne1:6) is later -> not it (splits normally)."""
+    cands = [_i(c.id) for c in by_id.values()
+             if _i(c.head) == _i(frame.id)
+             and (c.deprel or "").split(":")[0] in ("parataxis", "conj")
+             and c.upos in ("VERB", "AUX")
+             and _is_finite_clause(c, by_id)]
+    return min(cands) if cands else None
+
+
 def is_clause_head(tok, by_id=None):
     base = (tok.deprel or "").split(":")[0]
     # Coordinator-led participial beat: a subjectless participial GROUND
@@ -280,13 +304,10 @@ def is_clause_head(tok, by_id=None):
             # to the frame (one ATU), exactly like the "that"-form parataxis. Later
             # coordinate clauses split normally. (Hebrew wayhi + waw == wayhi + ki.)
             head = by_id.get(_i(tok.head))
-            if _is_aictp_frame(head, by_id):
-                first_conj = min((_i(c.id) for c in by_id.values()
-                                  if _i(c.head) == _i(head.id)
-                                  and (c.deprel or "").split(":")[0] == "conj"
-                                  and c.upos in ("VERB", "AUX")), default=None)
-                if first_conj == _i(tok.id):
-                    return False   # displaced main clause of the AICTP frame -> bind
+            if _is_aictp_frame(head, by_id) and _aictp_displaced_main(head, by_id) == _i(tok.id):
+                return False   # the displaced main clause of the AICTP frame -> bind
+            # A subsequent finite coordinate after the main clause (1Ne1:6 "...and he
+            # saw and heard") is NOT the displaced main -> falls through, splits below.
             own_subj = any(_i(c.head) == _i(tok.id)
                            and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
                            for c in by_id.values())
