@@ -70,6 +70,13 @@ _LEAD_INTJ = {"yea"}
 # ("thus saith / the Lord") before it can ship.
 _VERBA_DICENDI = {"say", "speak", "cry", "answer", "command", "declare", "exhort",
                   "ask", "tell", "reply", "utter", "proclaim", "preach"}
+# Light pronoun heads for the pronoun-head restrictive-relative bind (framework
+# §2.1 relative-clause corollary): a restrictive relative whose antecedent is a
+# bare pronoun ("blessed are THEY who humble themselves", "he THAT believeth",
+# "those WHICH follow") leaves the head not uniquely identified if removed, so it
+# binds — same principle as a noun head, which already binds via acl:relcl.
+_LIGHT_PRON = {"they", "them", "he", "him", "she", "her", "those", "thee", "thou",
+               "ye", "we", "us", "it", "such"}
 
 
 def _children(tok, by_id):
@@ -155,8 +162,160 @@ def _aictp_displaced_main(frame, by_id):
     return min(cands) if cands else None
 
 
+# New-beat connectives: a content clause OPENED by one of these is a distinct
+# discourse beat (resumption/contrast/explanation), NOT the reported proposition of
+# the speech verb -- so the verbum-dicendi proposition bind must NOT swallow it.
+# "I say unto you, Yea; NEVERTHELESS it hath not grown..." (Alma 32:29) and
+# "I say unto you, Yea; FOR every seed bringeth forth..." (Alma 32:31): the
+# nevertheless-/for-clause stands; only the short "Yea" answer is the proposition.
+# Keyed on the connective LEMMA (punctuation-invariant): the comma/semicolon that
+# happens to precede it is never consulted -- the connective token is.
+_BEAT_CONNECTIVE = {"nevertheless", "yet", "howbeit", "notwithstanding", "but",
+                    "for", "wherefore", "therefore", "yea", "and", "or", "nor",
+                    "otherwise"}
+
+
+def _opens_new_beat(tok, by_id):
+    """The clause `tok` heads opens with a leading new-beat connective (a cc /
+    adversative-additive advmod / discourse / 'for'-mark child positioned at or
+    before the clause head). Punctuation-invariant: tests the connective lemma, not
+    the comma. Used by the verbum-dicendi proposition bind to keep a distinct
+    following beat (nevertheless.../for...) from being swallowed into 'I say'."""
+    for c in _children(tok, by_id):
+        dep = (c.deprel or "").split(":")[0]
+        # Check BOTH lemma AND surface form against the registry: stanza lemmatizes
+        # "wherefore" -> "so" (and "therefore" can normalize similarly), so a lemma-only
+        # test missed the leading "wherefore" beat-connective on 2Ne 25:29. The comma/
+        # semicolon before it is never consulted -- only the connective lexeme.
+        lem = (c.lemma or "").lower()
+        form = (c.form or "").lower()
+        if dep in ("cc", "advmod", "discourse", "mark") \
+           and (lem in _BEAT_CONNECTIVE or form in _BEAT_CONNECTIVE) \
+           and _i(c.id) is not None and _i(tok.id) is not None and _i(c.id) <= _i(tok.id):
+            return True
+    return False
+
+
+def _has_own_subject(tok, by_id):
+    """tok governs its OWN referential subject (nsubj/csubj/nsubj:pass) -- an expletive
+    `expl` ("it is well") or a shared subject attached to a coordinate's first conjunct
+    does NOT count, so a coordinate that merely shares the matrix subject is not flagged
+    independent."""
+    return any((g.deprel or "").split(":")[0] in ("nsubj", "csubj")
+               for g in _children(tok, by_id))
+
+
+def _is_verbal_independent_predication(c, by_id):
+    """`c` is an independent finite VERB/AUX clause: a finite VERB/AUX with its OWN
+    subject (or another speech verb). Used for parataxis/advcl/conj-VERB siblings."""
+    return c.upos in ("VERB", "AUX") and (
+        _has_own_subject(c, by_id) or (c.lemma or "").lower() in _VERBA_DICENDI)
+
+
+def _is_copular_independent_predication(c, by_id):
+    """`c` is an independent COPULAR clause: a predicate-nominal/adjective head
+    (PRON/NOUN/PROPN/ADJ) carrying a `cop` child, with its own subject ("the Lamanites
+    ARE upon us", Alma 52:11). The conj-head is then the predicate word, not a VERB, so
+    the old VERB/AUX-only test missed it. Punctuation-invariant (upos + cop presence)."""
+    if c.upos not in ("PRON", "NOUN", "PROPN", "ADJ"):
+        return False
+    has_cop = any((g.deprel or "").split(":")[0] == "cop" for g in _children(c, by_id))
+    return has_cop and _has_own_subject(c, by_id)
+
+
+def _is_finite_independent_predication(c, by_id):
+    """`c` is an independent finite clause -- verbal OR copular."""
+    return (_is_verbal_independent_predication(c, by_id)
+            or _is_copular_independent_predication(c, by_id))
+
+
+def _is_multiclause_quote(tok, by_id):
+    """The clause `tok` heads is a distinct MULTI-CLAUSE direct-discourse performance
+    (its own paragraph-scale ATU set), NOT a single reported proposition. Signal: the
+    proposition itself governs a FURTHER finite independent predication beyond itself --
+    a second standalone clause that the speech frame should not swallow. A genuine
+    single reported proposition ("it is well that ye are cast out...", "ye shall have
+    power ... and shall smite ...") governs only BOUND complements/relatives/frames and
+    subject-sharing coordinates, with no independent sibling clause.
+
+    Three attachment configurations count as a further independent predication
+    (ccomp-aware + copular-aware, per the §7.3 audit on Alma 9:19 / Alma 52:11):
+      - a parataxis/conj/advcl clause that is finite-independent (VERB/AUX with own
+        subject, or another speech verb);
+      - a SUBJECTED ccomp -- a complement clause carrying its OWN subject ("[he would]
+        suffer THAT THE LAMANITES might destroy ...", Alma 9:19; "[I say] THAT the right
+        way is ..." stays a single complement, but a ccomp with a further independent
+        clause is caught recursively);
+      - a COPULAR coordinate whose conj-head is a predicate-nominal/adjective ("but
+        behold, THE LAMANITES ARE upon us", Alma 52:11 -- conj-head is the PRON `us` with
+        a `cop`, which the old VERB/AUX-only test missed).
+    This is the complement-vs-quote discriminator (framework §2.1) keyed structurally,
+    not on punctuation -- analogous to the GNT engine's recitative qflag quote-protection."""
+    for c in _children(tok, by_id):
+        dep = (c.deprel or "").split(":")[0]
+        # parataxis/advcl sibling -> a finite VERB clause with its own subject. (NOT
+        # copular here: a parataxis copular purpose-continuation "..., that ye may be
+        # humble" is a normal split-on-own-subject sibling, not a quote performance --
+        # flagging it would wrongly pull the FIRST proposition off the speech line,
+        # Alma 32:12.)
+        if dep in ("parataxis", "advcl") and _is_verbal_independent_predication(c, by_id):
+            return True
+        # conj coordinate -> independent VERB clause OR copular predicate-nominal
+        # ("but behold, the Lamanites ARE upon us", Alma 52:11). A conj that merely
+        # SHARES the matrix subject (Helaman 10:6 "... and shall smite the earth") is
+        # not independent -> not flagged.
+        if dep == "conj" and _is_finite_independent_predication(c, by_id):
+            return True
+        # a SUBJECTED ccomp is a further independent predication ("[he would] suffer
+        # THAT THE LAMANITES might destroy ...", Alma 9:19). A SUBJECTLESS ccomp /
+        # to-infinitival complement ("I declare ... that ye shall have power") is the
+        # single reported complement and still binds.
+        if dep == "ccomp" and _has_own_subject(c, by_id):
+            return True
+        # recurse one level through a bound, NON-independent subordinate (a lone
+        # ccomp/advcl/conj that is not itself independent) so a further independent
+        # clause nested under it is still detected.
+        if dep in ("ccomp", "advcl", "conj") and not _is_finite_independent_predication(c, by_id):
+            for g in _children(c, by_id):
+                gdep = (g.deprel or "").split(":")[0]
+                if gdep in ("parataxis", "conj") and _is_finite_independent_predication(g, by_id):
+                    return True
+    return False
+
+
+def _relcl_antecedent_is_light_pron(tok, by_id):
+    """The antecedent of a relative clause is a light pronoun. Two attachment
+    shapes: (1) the relcl is acl:relcl directly under the pronoun ("he THAT
+    believeth" -> head is the PRON); (2) stanza attaches the relcl as advcl:relcl
+    under the matrix PREDICATE verb of a copular/passive clause ("blessed are they
+    who humble themselves" -> head is the verb 'blessed', whose nsubj is 'they').
+    In shape (2) the true antecedent is the matrix subject pronoun."""
+    head = by_id.get(_i(tok.head))
+    if head is None:
+        return False
+    if head.upos == "PRON" and (head.form or "").lower() in _LIGHT_PRON:
+        return True
+    # shape (2): relcl pinned to a predicate verb -> antecedent is that verb's subject
+    if head.upos in ("VERB", "AUX", "ADJ"):
+        subj = next((c for c in _children(head, by_id)
+                     if (c.deprel or "").split(":")[0] in ("nsubj", "csubj")), None)
+        if subj is not None and subj.upos == "PRON" and (subj.form or "").lower() in _LIGHT_PRON:
+            return True
+    return False
+
+
 def is_clause_head(tok, by_id=None):
     base = (tok.deprel or "").split(":")[0]
+    # Pronoun-head restrictive-relative bind (framework §2.1 corollary). A noun-head
+    # relative already binds (acl:relcl falls through to bind below); the gap is the
+    # LIGHT-PRONOUN head ("blessed are they WHO humble themselves" = one ATU). Such a
+    # relcl is mis-routable: stanza tags it acl:relcl (binds anyway) OR advcl:relcl
+    # pinned to the matrix predicate verb (would hit the advcl branch and split on the
+    # relative's own 'who' subject). Intercept both here so the pronoun-head relative
+    # binds to its head regardless of the relcl deprel variant. (Alma 32:16 task A.)
+    if "relcl" in (tok.deprel or "") and by_id is not None \
+       and _relcl_antecedent_is_light_pron(tok, by_id):
+        return False
     # Coordinator-led participial beat: a subjectless participial GROUND
     # (advcl/conj/parataxis) introduced by a leading coordinator opens its own ATU.
     # Checked before the bind-defaults below so it intercepts the periodic over-merge
@@ -240,6 +399,47 @@ def is_clause_head(tok, by_id=None):
                 and (c.deprel or "").split(":")[0] == "xcomp"
                 for c in by_id.values()):
             return False   # AICTP frame
+        # Verbum-dicendi reported-proposition bind (framework §2.1: the performative
+        # assertion-matrix). A FINITE content clause attached as `parataxis` to a
+        # speech verb is that verb's reported PROPOSITION -- "I say unto you, [that]
+        # it is well that ye are cast out..." (Alma 32:12). The performative "I say"
+        # begs "say WHAT?"; its open valency is filled by the proposition, so the two
+        # are ONE ATU. stanza routes the content to `parataxis` (not `ccomp`) purely
+        # because of the editorial comma after "you"; per the punctuation-zero-force
+        # corollary parataxis==ccomp here -- so we KEY on the speech-verb lemma + a
+        # finite parataxis child, NEVER on the comma. Two guards keep this from
+        # piercing a genuine distinct quote (the recitative-pierce risk, analogous to
+        # the GNT recitative qflag): (1) a clause OPENED by a new-beat connective
+        # (nevertheless/for/yea...) is a distinct following beat, not the proposition
+        # (Alma 32:29/32:31 -- the short "Yea" answer binds, the nevertheless-/for-
+        # beat stands); (2) a MULTI-CLAUSE quoted performance (>=1 independent sibling
+        # predication) is its own paragraph-scale discourse and stands (Alma 10:17
+        # "O ye wicked...; for ye are laying...; for ye are laying..."). And (3) ONLY
+        # the FIRST (lowest-id) parataxis child of the speech verb is the reported
+        # proposition; LATER parataxis siblings are distinct quoted clauses of an
+        # ongoing performance and stand on their own (Alma 14:11 "...The Spirit
+        # constraineth me..." binds, but the later parataxis "for behold the Lord
+        # receiveth them up..." -- with its OWN subject 'the Lord' -- is a separate
+        # beat, even though stanza dropped its 'for' off the verb). A single reported
+        # proposition (finite, first, no new-beat opener, no independent siblings)
+        # binds.
+        para_sibs = [_i(c.id) for c in by_id.values()
+                     if _i(c.head) == _i(tok.head)
+                     and (c.deprel or "").split(":")[0] == "parataxis"]
+        is_first = bool(para_sibs) and _i(tok.id) == min(para_sibs)
+        # (4) the proposition itself must NOT be a verbum dicendi: a parataxis whose
+        # own head is a speech verb AND which is ITSELF a speech verb is a nested/
+        # closing speech TAG ("...against the men of my people, SAITH the Lord of
+        # Hosts" -- Jacob 2:32, the postposed-subject inverted tag), a quote FRAME, not
+        # the reported content. It falls through to the own-subject test below (its
+        # postposed subject makes it an independent tag clause -> splits).
+        if h is not None and (h.lemma or "").lower() in _VERBA_DICENDI \
+           and (tok.lemma or "").lower() not in _VERBA_DICENDI \
+           and is_first \
+           and _is_finite_clause(tok, by_id) \
+           and not _opens_new_beat(tok, by_id) \
+           and not _is_multiclause_quote(tok, by_id):
+            return False   # reported proposition -> binds to the speech verb
         # stanza over-uses `parataxis` for appositive NPs ("a fire which cannot be
         # consumed", "even an unquenchable fire") and bare-infinitival elaborations
         # ("yea, to preach unto all") that cannot stand alone. A parataxis splits

@@ -194,6 +194,233 @@ def _merge_back(segs, i):
     del segs[i]
 
 
+# ---------------------------------------------------------------------------
+# BoFM MARKER REGISTRY (framework §2.2 — the explicit-marker break-license).
+# This is the corpus's first registered registry instance. Each entry is a single
+# discrete author lexeme that opens a sub-clausal amplification/restatement beat
+# below the level the bidirectional test (A) would split. A marker LICENSES A
+# BREAK on a colon that is ALREADY closure-eligible under (A) — it never certifies
+# a fragment as a thought. Conditions enforced by _marker_split (per token):
+#   (i)   single discrete author lexeme (matched on surface form);
+#   (ii)  the marker-led colon is closure-eligible — propositionally complete minus
+#         the marker, OR forward-closed by restoring a GAPPED FINITE VERB from the
+#         immediately-prior parallel clause (a shared finite verb ONLY — not a
+#         shared subject/object/PP);
+#   (iii) the break is not already licensed by (A) (clause-level connectives that
+#         head their own finite predication already split upstream in the fabric).
+# Registered markers, each with bidirectional-test status + worked example:
+#   - "yea"      : asseverative amplifier. Closure via elided matrix finite verb.
+#                  Alma 32:16 "...is baptized ..., YEA, without being brought to
+#                  know the word..." -> the yea-colon shares matrix "is baptized".
+#   - "or rather": self-correction/restatement opener. Alma 32:16 "...without being
+#                  compelled to be humble; OR RATHER, ... blessed is he that
+#                  believeth..." (here the restated colon has its own copula 'is',
+#                  so it is independently closure-eligible).
+_MARKER_REGISTRY = {"yea", "or rather"}
+
+
+_VERBA_DICENDI_GEN = {"say", "speak", "cry", "answer", "command", "declare",
+                      "exhort", "ask", "tell", "reply", "utter", "proclaim", "preach"}
+_SHORT_ANSWER = {"yea", "nay", "yes", "no"}
+
+
+def _is_speech_frame_seg(seg):
+    """The segment's predication is a verbum-dicendi finite verb ("I say unto you").
+    Lemma-keyed (punctuation-invariant)."""
+    return any((t.lemma or "").lower() in _VERBA_DICENDI_GEN
+               and t.upos in ("VERB", "AUX") for t in seg["toks"])
+
+
+def _answer_leads_forward(content):
+    """The material AFTER a leading short answer (the rest of `content`) is itself a
+    distinct forward beat the answer AMPLIFIES, not a beat the answer ANSWERS -- so the
+    answer ("Yea") must lead it FORWARD (handled by the §2.2 marker-split), NOT be
+    peeled backward onto the prior speech frame. Two configurations (the §7.3 audit's 3
+    Alma mis-fires, e.g. 5:10 "...are they saved? Yea, / what grounds had they..."):
+      - the post-answer material is itself an INDEPENDENT/PARALLEL QUESTION (a `?` token
+        within this segment -- the answer fronts a rhetorical question, not a yes/no
+        resolution);
+      - the post-answer material is an `and`/`or`-LED PARALLEL clause within this
+        segment (a coordinate continuation, not an answer body).
+    Punctuation-invariant in DECISION: the `?` is the interrogative mood signal (a
+    grammatical feature), and the cc lemma is read as a lexeme -- neither branches on a
+    comma."""
+    rest = content[1:]
+    if any((t.form or "").strip() == "?" for t in rest):
+        return True
+    nxt = rest[0] if rest else None
+    if nxt is not None and (nxt.deprel or "").split(":")[0] == "cc" \
+       and (nxt.form or "").lower() in ("and", "or"):
+        return True
+    return False
+
+
+def _speech_answer_peel(segs):
+    """Peel a leading bare short answer ("Yea"/"Nay") off a new-beat segment onto the
+    immediately-preceding speech-frame segment (framework §2.1 short-answer bind).
+    Fires ONLY when: (i) the prior segment is a verbum-dicendi speech frame; (ii) this
+    segment's FIRST content token is a registered short-answer discourse word; (iii)
+    something else follows the answer in this segment (a distinct beat) -- if the
+    answer is the whole segment it is already adjacent and the leader/render passes
+    handle it; (iv) that following material is NOT an independent/parallel question or
+    an `and`-led parallel (those mean the answer AMPLIFIES the next beat forward, not
+    resolves the prior one -- let marker-split lead it forward instead; the §7.3 audit's
+    3 Alma mis-fires). Moves the char boundary so the answer renders on the speech line
+    and the trailing beat stays its own line. Punctuation between is carried by the
+    backward-punctuation render pass; this never inspects the comma."""
+    i = 1
+    while i < len(segs):
+        toks = segs[i]["toks"]
+        content = [t for t in toks if (t.form or "").strip(",;:.!?—–’\"()")]
+        if (len(content) >= 2
+                and (content[0].form or "").strip(",;:.!?—–’\"()").lower() in _SHORT_ANSWER
+                and (content[0].deprel or "").split(":")[0] == "discourse"
+                and _is_speech_frame_seg(segs[i - 1])
+                and not _answer_leads_forward(content)):
+            answer = content[0]
+            # move the answer token from seg i into seg i-1; reslice the boundary to
+            # the answer's end so the speech line gains "..., Yea" and seg i begins at
+            # the next content token.
+            nxt = next((t for t in toks if int(t.start) > int(answer.end)), None)
+            if nxt is not None:
+                # extend the speech line up to the next content token so any
+                # punctuation right after the answer ("Yea;") rides on the speech
+                # line (it strips to "Yea;"); seg i restarts at the next content token.
+                segs[i - 1]["hi"] = nxt.start
+                segs[i - 1]["toks"] = segs[i - 1]["toks"] + [answer]
+                segs[i]["lo"] = nxt.start
+                segs[i]["toks"] = [t for t in toks if t is not answer]
+        i += 1
+    return segs
+
+
+def _marker_split(segs):
+    """Framework §2.2 break-license. Within each segment, find a registered marker
+    token whose led colon is closure-eligible (i), and SPLIT the segment at the
+    marker onto its own line. This is the framework's only break-GENERATING rule;
+    it is quarantined to the closed registry + the closure-eligibility test below."""
+    out = []
+    for seg in segs:
+        out.extend(_split_one(seg))
+    return out
+
+
+def _split_one(seg):
+    """Split a single segment at EVERY closure-eligible registered marker (a verse
+    can stack markers — Alma 32:16 has both 'or rather' and 'yea'). Recurse on the
+    tail so a later marker in the same segment also splits."""
+    toks = seg["toks"]
+    for j, t in enumerate(toks):
+        if j == 0:
+            continue                           # a segment-leading marker is handled
+                                               # by the yea-B / leader passes, not here
+        form = (t.form or "").lower()
+        two = (form + " " + (toks[j + 1].form or "").lower()) if j + 1 < len(toks) else ""
+        is_marker = form in _MARKER_REGISTRY or two in _MARKER_REGISTRY
+        if not is_marker:
+            continue
+        if _colon_closure_eligible(toks, j):
+            lo_split = toks[j].start
+            a = {"aid": seg["aid"], "lo": seg["lo"], "hi": lo_split, "toks": toks[:j]}
+            b = {"aid": seg["aid"], "lo": lo_split, "hi": seg["hi"], "toks": toks[j:]}
+            return [a] + _split_one(b)
+    return [seg]
+
+
+def _colon_closure_eligible(toks, j):
+    """Is the marker-led colon (tokens[j:] within this segment) closure-eligible
+    under framework §2.2(ii)? TRUE iff EITHER:
+      (a) the colon is propositionally complete minus the marker — it contains its
+          OWN finite verb (a tensed VERB/AUX that is not a bare participle/infinitive
+          and not merely a subordinate-only predicate); OR
+      (b) it is forward-closed by elision-restoring a GAPPED FINITE VERB from the
+          immediately-prior parallel clause: the colon's predication is an advcl /
+          oblique whose governing matrix verb (a FINITE VERB/AUX) lies in the
+          pre-marker tokens — the colon shares that one finite verb. A shared
+          subject / object / PP does NOT qualify (that would re-admit parallel-cola
+          splitting §2 forbids), so we require a recoverable governing FINITE VERB,
+          not just any shared head."""
+    colon = toks[j:]
+    before = toks[:j]
+    colon_ids = {str(t.id) for t in colon}
+    before_ids = {str(t.id) for t in before}
+    # Shared-ARGUMENT guard (§2.2(ii): a shared subject/object/PP does NOT license a
+    # break). If the marker attaches to a NOMINAL (NOUN/PROPN/PRON) -- "yea, the Lord,
+    # and the weapons of his indignation..." (2Ne23:5: yea->'Lord', an apposed/
+    # coordinated SUBJECT NP) -- the colon is argument-NP amplification, not a
+    # predication beat, even if an incidental purpose-infinitive ('to destroy') trails
+    # it. Such a colon shares an ARGUMENT, not a gapped finite verb -> NOT eligible.
+    marker = toks[j]
+    mgov = next((t for t in toks if str(t.id) == str(marker.head)), None)
+    if mgov is not None and mgov.upos in ("NOUN", "PROPN", "PRON", "NUM"):
+        return False
+    # The colon's TOP-LEVEL head clause = the colon verb whose head lies OUTSIDE the
+    # colon (a verb governed from `before`, or a root). A verb whose head is itself
+    # inside the colon is subordinate WITHIN the colon (e.g. a relative-clause verb)
+    # and does NOT make the colon closure-eligible on its own.
+    top_verbs = [t for t in colon if t.upos in ("VERB", "AUX")
+                 and str(t.head) not in colon_ids]
+    if not top_verbs:
+        return False                           # no top-level predication -> not eligible
+    head_verb = min(top_verbs, key=lambda t: int(t.id))
+    # (a) propositionally complete minus the marker: the colon's top-level predication
+    # is finite AND carries its OWN subject within the colon (e.g. "yea, IT BEGINNETH
+    # to enlighten" -> own nsubj 'it' + finite 'beginneth"). A bare past participle /
+    # gerund without its own subject is NOT independently complete.
+    own_subj = any(str(c.head) == str(head_verb.id)
+                   and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
+                   and str(c.id) in colon_ids for c in colon)
+    if own_subj and _is_finite(head_verb, toks):
+        return True
+    # (b) forward-closed by elision-restoring a GAPPED FINITE VERB from the prior
+    # parallel clause: the colon's top predication is a subordinate/oblique
+    # (advcl/obl/acl) whose GOVERNING matrix verb is a FINITE VERB/AUX in `before`
+    # -- the colon shares that one finite verb (Alma 32:16: yea-colon 'brought' is an
+    # advcl under the matrix finite 'is baptized', which sits in `before`). A shared
+    # subject/object/PP does NOT qualify: we require the governor to be a finite VERB.
+    gov = next((t for t in before if str(t.id) == str(head_verb.head)), None)
+    if gov is not None and gov.upos in ("VERB", "AUX") and _is_finite(gov, toks):
+        return True
+    return False
+
+
+# Common EME strong/irregular past participles that surface bare (no -ed) — used by
+# _is_finite so a relative-clause participle chain ("whom they had cast out, and
+# stoned, and slain") is not mistaken for an independent finite predication.
+_STRONG_PARTICIPLES = {"slain", "cast", "brought", "begun", "done", "spoken", "given",
+                       "taken", "known", "shown", "written", "driven", "smitten",
+                       "born", "borne", "chosen", "broken", "fallen", "gone", "seen"}
+
+
+def _is_finite(t, toks):
+    """Is verb-token `t` FINITE (tensed) within `toks`? Finiteness can live on the
+    verb itself (a tensed lexical verb: 'beginneth', 'sought', 'know') OR on a
+    governing AUX child (periphrastic 'IS baptized', 'HAD cast', 'WILL believe').
+    A BARE participle with NO finite aux of its own ('-ing'; a coordinated past
+    participle 'stoned'/'slain' that only shares the head conjunct's aux) is
+    non-finite -> the colon it heads is not independently closure-eligible. Errs
+    toward non-finite (the safe / non-splitting default)."""
+    f = (t.form or "").lower()
+    if t.upos == "AUX":
+        return not f.endswith("ing")           # 'is/are/was/will/hath/had' finite; 'being' not
+    if f.endswith("ing"):
+        return False
+    # a finite aux DIRECTLY governed by this verb supplies tense ("is baptized").
+    has_finite_aux = any(str(c.head) == str(t.id)
+                         and (c.deprel or "").startswith("aux")
+                         and (c.form or "").lower() not in ("being", "having")
+                         for c in toks)
+    if has_finite_aux:
+        return True
+    # otherwise the verb must be tensed on its own surface. Bare past participles
+    # (-ed / strong participle) without an aux are non-finite.
+    if f.endswith("eth") or f.endswith("est"):
+        return True                            # archaic 3sg/2sg present -> finite
+    if f.endswith("ed") or f in _STRONG_PARTICIPLES:
+        return False
+    return True                                # default: treat as a tensed finite verb
+
+
 def _rule_passes(segs):
     """UD-aware canon binding rules, applied as segment merges on the pure-method
     segmentation (ported into the generator — operates ONLY on pure-method data,
@@ -246,6 +473,25 @@ def _rule_passes(segs):
             out.append(seg)
     if carry is not None:
         out.append(carry)
+    # Verbum-dicendi short-answer bind (framework §2.1, companion to the fabric's
+    # reported-proposition parataxis bind). A bare short answer ("Yea"/"Nay"/"Yes"/
+    # "No") is the reported PROPOSITION of the preceding "I say unto you" -- it begs
+    # nothing and IS the content of the saying. stanza tags the answer `discourse`
+    # and (when a distinct beat follows) attaches it to that following beat's verb,
+    # so it lands at the HEAD of the new-beat segment ("Yea; nevertheless it hath not
+    # grown...", Alma 32:29; "Yea; for every seed bringeth forth...", 32:31) instead
+    # of on the "I say" line. Peel the leading answer token onto the speech-frame
+    # segment; the nevertheless-/for-beat stands as its own line. Keyed on the answer
+    # LEMMA + the prior segment being a speech frame -- never on the comma (the comma
+    # rides backward in rendering). When the answer's beat-clause is the whole segment
+    # tail it is left intact (only the bare answer word moves).
+    out = _speech_answer_peel(out)
+    # MARKER REGISTRY break-license (framework §2.2) runs LAST, after all merges:
+    # it splits a consolidated segment at a registered marker ("yea", "or rather")
+    # when the marker-led colon is closure-eligible. This is break-GENERATING, so it
+    # must see the post-merge segment shape (the yea-colon may sit MID-segment, e.g.
+    # Alma 32:16's "...is baptized ..., yea, without being brought...").
+    out = _marker_split(out)
     return out
 
 

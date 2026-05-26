@@ -257,6 +257,75 @@ See [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-reference/ud-taxo
 
 *Each rule below follows the operational template specified in [`atu-method/docs/rule-template.md`](../../atu-method/docs/rule-template.md) — MISRA-style with RFC 2119 normative keywords. Rationale, grammatical-grounding citations, audit-trail narratives, and corpus-empirics histories are extracted to the per-rule scholarship companion in [`atu-method/scholarship/bofm/`](../../atu-method/scholarship/bofm/) (cross-referenced from each rule's Implementation block).*
 
+<!-- ===== §2.2 Marker Registry (BoFM) ===== -->
+### §2.2 Marker Registry — BoFM instantiation
+
+**Status:** Active
+**Category:** A (Mechanical, mandatory — registry membership + the three entry conditions ARE the approval)
+**Layer:** 3
+**Framework pointer:** [`atu-method/docs/framework.md §2.2`](../../atu-method/docs/framework.md) — "The explicit-marker license (secondary criterion)". This section is the BoFM-corpus instantiation of that license; it is the corpus's FIRST registered §2.2 instance and is recorded here per the framework's "Registry discipline" mandate (each marker + bidirectional-test status + worked example).
+
+The §2.2 marker license is a narrow, closed-list **break-license** — NOT an ATU-from-fragment rule. It does not certify an incomplete fragment as a thought. It permits a break, at an author-placed marker, between cola that are *already* closure-eligible under the bidirectional test (often via §2.1 elision-restoration) but that the KEEP-AS-IS default would otherwise hold merged. The marker signals that this closure-eligible beat is a distinct authorial thought-move (escalation, restatement, enumerated parallel assertion).
+
+#### The registry (closed list)
+
+~~~yaml
+MARKER_REGISTRY:
+  - "yea"            # single lexeme; asseverative escalation / amplification marker
+  - "or rather"      # fixed two-word self-correction connective (lexicalized bigram)
+~~~
+
+`yea` is a single discrete lexeme. `or rather` is a fixed two-word self-correction connective, matched as an exact bigram (it is lexically fixed — not a positional, anaphoric, or inferred-parallelism pattern); per framework §2.2(i) it qualifies as a fixed multi-word discourse lexeme. Adding any further marker is a framework §7.3 closed-list-extension audit trigger.
+
+#### Entry conditions (all three required; framework §2.2(i)–(iii))
+
+A token enters the registry — and a registered marker fires a break — ONLY when all three hold:
+
+1. **(i) Single discrete author lexeme.** A single lexeme (or a fixed lexicalized multi-word discourse marker), NOT a repeated/positional pattern and NOT an anaphoric element repurposed as a marker.
+2. **(ii) Closure-eligible under the bidirectional test (the "FINITE verb only" gate).** The colon the marker heads is propositionally complete minus the marker EITHER via (a) its **own** finite verb + own subject within the colon, OR (b) its top predication is an `advcl`/`obl` whose **governing verb is a FINITE VERB/AUX** in the prior (`before`) parallel clause — i.e. a *gapped finite verb* restored by §2.1 elision-restoration. A shared **subject, object, or prepositional phrase** does NOT satisfy (ii) (the `mgov.upos ∈ {NOUN, PROPN, PRON, NUM}` argument-NP guard rejects it — e.g. 2 Nephi 23:5 "yea, the Lord, and the weapons…" is NP-amplification, ineligible). Shared *finite verb* ONLY.
+3. **(iii) Not already split by another rule.** A segment-LEADING marker (position `j == 0`) is skipped — those are handled by the clause/yea-B / leader passes (clause-level connectives that already pass the bidirectional test). The marker-split fires ONLY mid-segment (`j > 0`), i.e. below the level the (A) asymmetry already splits.
+
+#### Worked example — Alma 32:16 (canonical)
+
+> "And blessed are they who humble themselves without being compelled to be humble; or rather, in other words, blessed is he that believeth in the word of God, and is baptized without stubbornness of heart, yea, without being brought to know the word, or even compelled to know, before they will believe."
+
+Renders as three lines:
+
+1. **"blessed are they who humble themselves without being compelled to be humble;"** — the pronoun-head restrictive relative ("they who humble themselves…") binds onto the matrix copular clause (the pronoun-head relative-bind rule, §5 below); one ATU.
+2. **"or rather, in other words, blessed is he that believeth in the word of God, and is baptized without stubbornness of heart,"** — `or rather` marker fires: the colon has its **own** copula "is" + own subject "he" → closure-(a). Distinct restatement beat.
+3. **"yea, without being brought to know the word, or even compelled to know, before they will believe."** — `yea` marker fires: the colon's top predication is an `advcl` ("without being brought…") whose **gapped finite verb** is the matrix "is baptized" restored from line 2 → closure-(b). Distinct amplification beat.
+
+All three conditions verified on this verse; bidirectional test holds on each colon. This is the registered worked example.
+
+#### Verbum-dicendi complement-vs-quote rule (§2.1 corollary) + quote-guard
+
+Distinct from the marker license but governed by the same firewall: the content clause of a **verbum dicendi** (speech verb — "I say unto you", "he said", etc.) is a **complement** that binds to its speech frame (per framework §2.1 performative-assertion-matrix; the parse-substrate corollary treats `parataxis ≡ ccomp` punctuation-invariantly — a finite content clause of a speech verb binds whether the parser tagged it `ccomp` or `parataxis`). Canonical bind: Alma 32:12 "I say unto you, it is well that ye are cast out…" — the proposition binds to the speech frame.
+
+**Quote-guard (the recitative-pierce guard).** The bind fires ONLY when the reported material is a single bound proposition. It MUST NOT fire — the speech line MUST split — when the reported material is a **quote performance**: an independent following clause. The guard (`_is_multiclause_quote`, ccomp-aware + copular-aware) treats the following material as an independent predication, and therefore BLOCKS the bind, when any of:
+
+- a `parataxis`/`advcl`/`conj` sibling is a finite VERB clause **with its own subject** (or is itself another speech verb);
+- a `conj` coordinate is an independent verbal clause OR a **copular predicate-nominal** (PRON/NOUN/PROPN/ADJ carrying a `cop` child) **with its own subject** — e.g. Alma 52:11 "but behold, the Lamanites are upon us…" (copular, head is the PRON "us" + `cop` "are"); the older VERB/AUX-only test missed this and pierced;
+- a `ccomp` carries its **own subject** — e.g. Alma 9:19 "Nay; he would rather suffer **that the Lamanites might destroy**…" (the ccomp "destroy" has its own subject "Lamanites"); a subjectless/sharing-subject ccomp is a single complement (Helaman 10:6 "I declare … that ye shall have power …" stays bound) and does NOT trip the guard.
+
+A short single-predication complement that shares the matrix subject (Helaman 10:6 class) REMAINS bound; an independent-clause pierce (Alma 9:19, Mosiah 5:14, 2 Nephi 25:29, Alma 52:11, 3 Nephi 13:1) SPLITS. This is the §2.1 complement-vs-quote discriminator made parse-robust.
+
+#### Precedence — yea-B merge vs §2.2 marker-split
+
+The existing **yea-B merge** consolidates a `yea`-led segment that lacks its own root/conj/parataxis predication back onto the prior line (a pure merge with no break-license). The **§2.2 marker-split runs LAST** and may re-break a closure-eligible `yea`-colon via the closure-(b) gapped-finite-verb path. These are NOT contradictory:
+
+- yea-B's merge consolidates a segment with no independent predication of its own.
+- §2.2 marker-split's closure-(b) branch is precisely the elision-restoration break-license that SHOULD re-break a closure-eligible amplification beat (one whose gapped finite verb is restorable from the prior parallel clause).
+- A segment-LEADING `yea` (`j == 0`) is handled by yea-B / the leader pass, never by marker-split (entry condition iii). Marker-split fires only mid-segment.
+
+**Net precedence:** yea-B governs `yea`-segments lacking own/restorable finite predication (merge); §2.2 marker-split governs mid-segment closure-eligible `yea`/`or rather` cola (break). The split-license is the more specific instrument and applies last; it never overrides a Layer-1 veto or a complement-integrity bond.
+
+**Implementation.**
+
+- Generate-layer split: `scripts/bofm_generate.py` — `_MARKER_REGISTRY`, `_marker_split` / `_split_one` (skips `j == 0`), `_colon_closure_eligible`, `_is_finite`.
+- Verbum-dicendi bind + quote-guard: `scripts/bofm_v1_fabric.py` — fabric parataxis branch (`_opens_new_beat`, `_is_multiclause_quote` with `_has_own_subject` / `_is_copular_independent_predication` / `_is_finite_independent_predication`) + `_speech_answer_peel` (short-answer peel) in generate.
+- Pronoun-head restrictive-relative bind: `scripts/bofm_v1_fabric.py` — `_LIGHT_PRON`, `_relcl_antecedent_is_light_pron`, intercept in `is_clause_head`.
+- Audit verdict (2026-05-26): linguistic + consistency lenses both COHERENT/SOUND on the marker registry (A) and the verbum-dicendi bind after the quote-guard fix (108 ccomp/copular pierces resolved, 0 single-complement regressions, token-exact integrity). Records this §7.3 closed-list-extension audit per Registry discipline.
+
 <!-- ===== R1 ===== -->
 ### R1: AICTP Formula Integrity
 
