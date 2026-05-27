@@ -27,6 +27,26 @@ def _words(t):
     return [w for w in re.split(r"\s+", t.strip()) if w]
 
 
+_LINE_FINAL_FORBID = {"and", "or", "but", "nor", "for", "the", "a", "an"}
+
+
+def _reconcile_line_final(lines):
+    """HYBRID polish: keep gold idea-unit breaks but respect the BoFM canon Rule-9
+    line-final discipline — a line must not END on a coordinating conjunction or article
+    (BoFM leads with the connective). Slide any stranded line-final forbidden token to the
+    START of the next line. Lexical (no parse needed); covers the CCONJ/article cases."""
+    out = [list(_words(l)) for l in lines]
+    changed = True
+    while changed:
+        changed = False
+        for i in range(len(out) - 1):
+            if out[i] and re.sub(r"\W+$", "", out[i][-1].lower()) in _LINE_FINAL_FORBID:
+                tok = out[i].pop()
+                out[i + 1].insert(0, tok)
+                changed = True
+    return [" ".join(w) for w in out if w]
+
+
 def _rebreak(v2_lines, gold_lines):
     """Re-break the v2 verse text at the gold break positions. Returns (new_lines, ok,
     artifact). Text-preserving: regroups the v2 whitespace-words at gold word-boundaries."""
@@ -43,6 +63,8 @@ def _rebreak(v2_lines, gold_lines):
     out, start = [], 0
     for b in breaks + [len(v2w)]:
         out.append(" ".join(v2w[start:b])); start = b
+    if "--no-reconcile" not in sys.argv:
+        out = _reconcile_line_final(out)
     return out, True, artifact
 
 
