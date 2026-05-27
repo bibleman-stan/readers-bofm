@@ -20,7 +20,10 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 KJV_DIFF = REPO / "data" / "kjv_diff_index.json"
-TANAKH_ISA = Path(r"C:\Users\bibleman\repos\readers-tanakh\data\text-files\v2\eng-kjv\23-isaiah")
+TANAKH = Path(r"C:\Users\bibleman\repos\readers-tanakh\data\text-files\v2\eng-kjv")
+# kjv_ref book-prefix -> (tanakh eng-kjv dir, file stem). The OT books BoFM quotes
+# verbatim and for which tanakh has BHSA-anchored gold. Extend as hardy_intertext surfaces.
+REF_BOOK = {"Isa": ("23-isaiah", "isaiah"), "Mal": ("39-malachi", "malachi")}
 V2 = REPO / "data" / "text-files" / "v2"
 OUT = REPO / "research" / "isaiah-gold"
 
@@ -37,13 +40,16 @@ def _words(text):
     return [w for w in re.split(r"\s+", text.strip()) if w]
 
 
-def gold_isa_lines(kjv_ref):
-    """Return the gold KJV-Isaiah ATU lines (list of str) for e.g. 'Isa 2:2'."""
-    m = re.match(r"Isa\w*\s+(\d+):(\d+)", kjv_ref)
+def gold_lines(kjv_ref):
+    """Return the gold KJV ATU lines (list of str) for e.g. 'Isa 2:2' or 'Mal 3:1'."""
+    m = re.match(r"([A-Za-z]+)\s+(\d+):(\d+)", kjv_ref)
     if not m:
         return None
-    ch, v = int(m.group(1)), int(m.group(2))
-    f = TANAKH_ISA / f"isaiah-{ch:02d}.txt"
+    pref, ch, v = m.group(1), int(m.group(2)), int(m.group(3))
+    bk = REF_BOOK.get(pref)
+    if not bk:
+        return None
+    f = TANAKH / bk[0] / f"{bk[1]}-{ch:02d}.txt"
     if not f.exists():
         return None
     lines, cur, grab = f.read_text(encoding="utf-8").splitlines(), [], False
@@ -67,8 +73,11 @@ def project(diff, gold_lines):
     gp = 0
     out_words = []   # (bofm_word, line_id)
     cur_lid = 0
+    max_insert = 0   # largest contiguous BoFM-only run (narrative preamble not in source)
     for seg in diff:
         typ, segwords = seg["type"], _words(seg["text"])
+        if typ == "insert":
+            max_insert = max(max_insert, len(segwords))
         if typ == "equal":
             for w in segwords:
                 if gp < len(gold_w) and _norm(w) == _norm(gold_w[gp][0]):
@@ -96,7 +105,10 @@ def project(diff, gold_lines):
     if buf:
         bofm_lines.append(" ".join(buf))
     ok = gp >= len(gold_w) - 2   # consumed (nearly) all gold words = aligned
-    return bofm_lines, ok
+    # insert_heavy: a large BoFM-only run (e.g. 3 Ne 24:1 narrative preamble) can't be
+    # segmented from the source gold; it rides one line -> over-merge artifact. Flag it.
+    insert_heavy = max_insert > 10
+    return bofm_lines, ok and not insert_heavy
 
 
 def build():
@@ -107,10 +119,11 @@ def build():
         for ch, verses in chaps.items():
             for v, info in verses.items():
                 ref = info.get("kjv_ref", "")
-                if "Isa" not in ref:
+                pref = ref.split()[0] if ref else ""
+                if pref not in REF_BOOK:
                     continue
-                stats["isa_verses"] += 1
-                gl = gold_isa_lines(ref)
+                stats["quote_verses"] += 1
+                gl = gold_lines(ref)
                 if not gl:
                     stats["no_gold"] += 1; continue
                 lines, ok = project(info["diff"], gl)
