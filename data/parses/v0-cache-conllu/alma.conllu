@@ -52697,11 +52697,11 @@
 10	,	,	PUNCT	_	_	17	punct	_	_
 11	and	and	CCONJ	_	_	17	cc	_	_
 12	I	I	PRON	_	_	13	nsubj	_	_
-13	would	would	AUX	_	_	7	conj	_	_
+13	would	would	VERB	_	_	7	conj	_	_
 14	that	that	SCONJ	_	_	17	mark	_	_
 15	ye	you	PRON	_	_	17	nsubj	_	_
 16	should	should	AUX	_	_	17	aux	_	_
-17	remember	remember	VERB	_	_	7	conj	_	_
+17	remember	remember	VERB	_	_	13	ccomp	_	_
 18	,	,	PUNCT	_	_	22	punct	_	_
 19	that	that	SCONJ	_	_	22	mark	_	_
 20	God	God	PROPN	_	_	22	nsubj	_	_
@@ -62418,7 +62418,7 @@
 22	;	;	PUNCT	_	_	30	punct	_	_
 23	and	and	CCONJ	_	_	30	cc	_	_
 24	I	I	PRON	_	_	25	nsubj	_	_
-25	would	would	AUX	_	_	19	conj	_	_
+25	would	would	VERB	_	_	19	conj	_	_
 26	that	that	SCONJ	_	_	30	mark	_	_
 27	ye	you	PRON	_	_	30	nsubj	_	_
 28	would	would	AUX	_	_	30	aux	_	_
@@ -99004,7 +99004,7 @@
 27	;	;	PUNCT	_	_	34	punct	_	_
 28	therefore	therefore	ADV	_	_	34	advmod	_	_
 29	I	I	PRON	_	_	30	nsubj	_	_
-30	would	would	AUX	_	_	10	parataxis	_	_
+30	would	would	VERB	_	_	10	parataxis	_	_
 31	that	that	SCONJ	_	_	34	mark	_	_
 32	ye	you	PRON	_	_	34	nsubj	_	_
 33	should	should	AUX	_	_	34	aux	_	_
