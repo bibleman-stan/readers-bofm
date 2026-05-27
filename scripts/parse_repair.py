@@ -120,12 +120,88 @@ def _repair_desiderative_would(sent):
     return n
 
 
+def _fine_to_upos(code):
+    """Map a Carmack fine POS code (e.g. V.lex.pres.ptcp, N.prop.sing, CONJ.subord.that)
+    to a UD UPOS. Returns None for codes we don't confidently map."""
+    parts = code.split(".")
+    p0 = parts[0]
+    if p0 == "N":
+        return "PROPN" if "prop" in parts else "NOUN"
+    if p0 == "V":
+        if "aux" in parts or (len(parts) > 1 and parts[1] == "mod"):
+            return "AUX"
+        return "VERB"                     # V.lex.*
+    if p0 == "CONJ":
+        if len(parts) > 1 and parts[1] == "coord":
+            return "CCONJ"
+        if len(parts) > 1 and parts[1] == "subord":
+            return "SCONJ"
+        return "CCONJ"                    # CONJ.phr
+    return {"ADJ": "ADJ", "ADV": "ADV", "PRON": "PRON", "DET": "DET", "ART": "DET",
+            "PREP": "ADP", "NUM": "NUM", "INTERJ": "INTJ", "PTCL": "PART",
+            "EXIST": "PRON", "OTH": "PART"}.get(p0)
+
+
+_GOLD_UPOS = None   # word(lower) -> UPOS, only for words whose gold maps to ONE UPOS
+
+
+def _load_gold_upos():
+    """Build the safe override lexicon: a word is included ONLY when ALL its Carmack
+    gold fine-codes map to a SINGLE UD UPOS (no aux/lex or N/V ambiguity). This keeps
+    the override deterministic and risk-free — it corrects Stanza on words that have
+    exactly one possible POS in the gold (e.g. concerning->ADP, saith/cometh->VERB,
+    those/these->DET, verily->ADV), and abstains on genuinely ambiguous words."""
+    global _GOLD_UPOS
+    if _GOLD_UPOS is not None:
+        return _GOLD_UPOS
+    from pathlib import Path
+    import collections
+    repo = Path(__file__).resolve().parent.parent
+    tsv = repo / "research" / "carmack-pos" / "wordwheel-fine.tsv"
+    word_upos = collections.defaultdict(set)
+    try:
+        for ln in tsv.read_text(encoding="utf-8").splitlines():
+            c = ln.split("\t")
+            if len(c) >= 3 and c[1].strip() and c[2].strip():
+                u = _fine_to_upos(c[2].strip())
+                if u:
+                    word_upos[c[1].strip().lower()].add(u)
+    except FileNotFoundError:
+        word_upos = {}
+    _GOLD_UPOS = {w: next(iter(s)) for w, s in word_upos.items() if len(s) == 1}
+    return _GOLD_UPOS
+
+
+def _repair_gold_pos(sent):
+    """GOLD-POS OVERRIDE (Carmack tagged BoFM). For each token whose surface form is
+    UPOS-unambiguous in the gold lexicon, force the gold UPOS onto the parse — correcting
+    Stanza's EModE mis-tags (concerning->ADP, archaic -th/-st verbs saith/cometh read as
+    NOUN/INTJ -> VERB) BEFORE the clause-head logic runs. Deterministic, single-UPOS-only
+    (risk-free). Returns count of corrections."""
+    gold = _load_gold_upos()
+    n = 0
+    for t in sent:
+        g = gold.get((t.form or "").lower())
+        if g and t.upos != g:
+            t.upos = g
+            n += 1
+    return n
+
+
 def repair(parsed):
     """Apply all repairs to a {(c,v): [[Tok,...], ...]} parse map, in place.
     Returns {repair_name: count}."""
-    counts = {"R-INV": 0, "R-WLD": 0}
+    counts = {"R-INV": 0, "R-WLD": 0, "GOLD-POS": 0}
     for sents in parsed.values():
         for sent in sents:
+            # GOLD-POS override SHELVED 2026-05-27: correcting upos alone (without the
+            # deprel) yields an inconsistent parse — the fabric's clause-head logic flips
+            # unpredictably, producing MIXED boundary changes incl. new over-merges, and
+            # it does NOT recover the archaic-verb-as-noun speech frames (those are mis-
+            # ATTACHED, not just mis-tagged). The POS fix needs a re-parse with gold POS
+            # (Stanza re-derives deprels) or the gold-STRUCTURE inheritance path. Function
+            # retained (_repair_gold_pos) for the re-parse build; not called here.
+            # counts["GOLD-POS"] += _repair_gold_pos(sent)
             counts["R-INV"] += _repair_inverted_speech(sent)
             counts["R-WLD"] += _repair_desiderative_would(sent)
     return counts
