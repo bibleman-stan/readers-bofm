@@ -194,6 +194,184 @@ def _merge_back(segs, i):
     del segs[i]
 
 
+def _merge_forward(segs, i):
+    """Merge segment i INTO the following segment i+1 (surface-contiguous): the
+    forward-incomplete frame leads its apodosis. The result keeps segment i's
+    lo/leading tokens and segment i+1's hi/trailing tokens."""
+    segs[i + 1]["lo"] = segs[i]["lo"]
+    segs[i + 1]["toks"] = segs[i]["toks"] + segs[i + 1]["toks"]
+    del segs[i]
+
+
+# Subordinating leaders that open a DEPENDENT (forward-governing) clause -- a clause
+# that points forward to a main clause / apodosis it cannot stand without. `that`
+# (complementizer/result) + the causal/conditional/temporal/concessive subordinators.
+# Surface-lexeme keyed (punctuation-invariant; parse-robust -- does NOT depend on the
+# advcl head-attachment, which stanza garbles when it mis-roots the apodosis).
+_FORWARD_FRAME_LEADERS = {"that", "because", "if", "unless", "when", "whensoever",
+                          "while", "whilst", "until", "though", "although", "since",
+                          "whereas", "before", "after", "as", "lest", "save",
+                          "insomuch", "forasmuch"}
+
+
+def _seg_independent_predication(seg):
+    """Does this segment carry an INDEPENDENT main predication of its OWN -- a clause
+    that stands alone (deprel root / conj / parataxis) with its OWN subject, NOT a
+    clause subordinated by an in-segment mark/SCONJ? Used to tell a forward-incomplete
+    frame ("that because ye were compelled to be humble" -- only subordinate clauses)
+    from a self-standing clause ("his faith and hope is vain" -- a copular main clause).
+    Parse-robust + handles BOTH verbal and copular main clauses:
+      - a VERB whose deprel is root/conj/parataxis, not governed by an in-segment
+        subordinator (verbal main clause: "ye were blessed", "he went forth"); OR
+      - a COPULAR predicate (ADJ/NOUN/PRON/PROPN with a `cop` child) whose deprel is
+        root/conj/parataxis with its OWN subject ("his faith and hope IS vain") --
+        the old VERB/AUX-only test skipped `cop` and wrongly called this a frame.
+    A clause that is itself subordinated (advcl/acl/ccomp/xcomp/csubj, or governed by an
+    in-segment forward-frame mark) does NOT count. Errs toward 'no independent
+    predication' only when EVERY clause is subordinate."""
+    ids = {str(t.id) for t in seg["toks"]}
+    sub_marks = {str(t.id) for t in seg["toks"]
+                 if ((t.deprel or "") == "mark" or t.upos == "SCONJ")
+                 and (t.form or "").lower() in _FORWARD_FRAME_LEADERS}
+
+    def _has_own_subject(head):
+        return any(str(c.head) == str(head.id) and str(c.id) in ids
+                   and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
+                   for c in seg["toks"])
+
+    for t in seg["toks"]:
+        base = (t.deprel or "").split(":")[0]
+        if base not in ("root", "conj", "parataxis"):
+            continue                              # not a main-clause head -> skip
+        if str(t.head) in sub_marks:
+            continue                              # subordinated by an in-seg frame mark
+        # verbal main clause
+        if t.upos in ("VERB", "AUX") and not (t.form or "").lower().endswith("ing"):
+            return True
+        # copular main clause: a predicate (ADJ/NOUN/PRON/PROPN/NUM) with a cop child
+        # and its own subject ("his faith and hope is vain").
+        if t.upos in ("ADJ", "NOUN", "PRON", "PROPN", "NUM"):
+            has_cop = any(str(c.head) == str(t.id) and str(c.id) in ids
+                          and (c.deprel or "").split(":")[0] == "cop" for c in seg["toks"])
+            if has_cop and _has_own_subject(t):
+                return True
+    return False
+
+
+def _is_forward_frame(seg):
+    """The segment is a forward-incomplete FRAME (framework §2.1 + GNT R9 forward-frame
+    analog): its content is ONLY forward-governing leaders + a DEPENDENT clause, with
+    NO independent predication of its own -- so it must bind FORWARD to the following
+    segment (its apodosis/matrix). Punctuation-invariant + parse-robust:
+      (i)   the first content token is a forward-frame subordinating leader
+            (`that`/`because`/`if`/`when`/...) tagged as a `mark`/SCONJ (a genuine
+            subordinator -- this is the discriminator that EXCLUDES the relativizer
+            reading: a relative `that`/`which`/`who` heading an `acl:relcl`/`advcl:relcl`
+            binds BACKWARD to its antecedent (framework §2.1 relative corollary, handled
+            in the fabric), it is NOT a forward frame -- "Wo unto them / that join house
+            to house" must NOT bind the relative forward);
+      (ii)  the segment is NOT a relative clause (no relcl verb) -- belt-and-braces with
+            (i) against the relativizer misread;
+      (iii) the segment has NO independent main predication of its own
+            (_seg_independent_predication is False) -- every verb is subordinate.
+    A segment that opens with a subordinator BUT also carries its own main clause
+    ("if ye have faith ye hope for things ...") is NOT a forward frame (it contains its
+    apodosis already) and is left alone."""
+    content = [t for t in seg["toks"] if (t.form or "").strip(",;:.!?—–’\"()")]
+    if not content:
+        return False
+    first = content[0]
+    if (first.form or "").lower() not in _FORWARD_FRAME_LEADERS:
+        return False
+    # (i) the leader must be a genuine SUBORDINATOR mark/SCONJ -- not a relativizer.
+    # stanza tags a complementizer/adverbial `that`/`because`/`if`/`when` as `mark`
+    # (or SCONJ); a relative `that` is `nsubj`/`obj`/`mark`-under-relcl. Require the
+    # leader to head a NON-relative clause as a subordinator.
+    if not ((first.deprel or "") == "mark" or first.upos == "SCONJ"
+            or (first.deprel or "").split(":")[0] == "advmod"):
+        return False
+    # (ii) reject a relative clause outright: a verb whose deprel carries `relcl`
+    # ("that oppress thee", "which I make", "who humble themselves") binds BACKWARD to
+    # its antecedent, never forward.
+    if any("relcl" in (t.deprel or "") for t in seg["toks"]
+           if t.upos in ("VERB", "AUX")):
+        return False
+    # (ii-b) reject a VERBUM-DICENDI frame ("if ye shall SAY ...", "that we SAID unto
+    # our brethren ..."): the speech verb's complement is DIRECT SPEECH released onto
+    # its own line by the existing verba-dicendi / M2 direct-speech rules. Binding the
+    # conditional/complementizer forward would swallow the released quote and create a
+    # within-verse inconsistency (2nephi 2:13 split the parallel "And if ye shall say /
+    # there is no law", alma 26:23 released "we go up to the land of Nephi"). Defer to
+    # the speech rules -- the frame stays as the speech layer renders it. Keyed on the
+    # speech-verb lemma (punctuation-invariant), reusing the verba-dicendi registry.
+    if any((t.lemma or "").lower() in _VERBA_DICENDI_GEN
+           and t.upos in ("VERB", "AUX") for t in seg["toks"]):
+        return False
+    # must actually contain a (subordinate) verb -- a bare NP fragment is not a frame
+    if not any(t.upos in ("VERB", "AUX") for t in content):
+        return False
+    return not _seg_independent_predication(seg)
+
+
+_DISCOURSE_LEADERS = {"behold", "lo", "yea", "now", "and", "or", "but", "nor",
+                      "wherefore", "therefore", "for"}
+
+
+def _apodosis_is_coordinated(seg):
+    """The candidate apodosis segment OPENS with a coordinating conjunction
+    (`and`/`but`/`or`/`nor`, deprel `cc`) -- it is a clause CONJOINED to something
+    PRIOR, not the frame's own apodosis. A forward frame must bind to a clause that is
+    grammatically ITS completion ("because ye were compelled to be humble" -> "ye were
+    blessed", first token a subject pronoun); it must NOT reach forward across a
+    coordinator into a coordinate clause whose matrix lies elsewhere ("lest they should
+    commit sin" -> "; AND this their great fear came ..." is a new coordinate clause,
+    alma 27:23; "because he hath poured out his soul" -> "; AND he was numbered ...",
+    the Isaiah-53 parallel cola, mosiah 14:12). Punctuation-invariant: keyed on the
+    coordinator lexeme + `cc` deprel, never the preceding semicolon/comma."""
+    content = [t for t in seg["toks"] if (t.form or "").strip(",;:.!?—–’\"()")]
+    if not content:
+        return False
+    first = content[0]
+    return (first.deprel or "").split(":")[0] == "cc" \
+        and (first.form or "").lower() in ("and", "but", "or", "nor")
+
+
+def _next_is_lone_leader(seg):
+    """The candidate apodosis segment is JUST a discourse/coordinating leader
+    ("behold", "yea", "now", "and") with no clause of its own (stanza sometimes tags a
+    bare "behold" as VERB/root -> a one-word seg). Binding the frame INTO such a seg
+    would strand the leader on the frame line ("as ... give way, behold,") instead of
+    letting it lead the REAL apodosis that follows it (alma 57:20 / helaman 5:12 /
+    ether 8:22). Don't fire across it -- the existing leader-fold pass will chain the
+    leader onto its true apodosis, and the frame stays its own line (the deployed,
+    no-regression state). Punctuation-invariant: keyed on the leader lexeme."""
+    content = [t for t in seg["toks"] if (t.form or "").strip(",;:.!?—–’\"()")]
+    if not content:
+        return True
+    return all((t.form or "").strip(",;:.!?—–’\"()").lower() in _DISCOURSE_LEADERS
+               for t in content)
+
+
+def _forward_frame_bind(segs):
+    """Bind every forward-incomplete frame segment FORWARD into the next segment (its
+    apodosis). Iterates so a `that` lone-leader seg + a `because ...` frame seg both
+    fold onto the apodosis. CAUTION (no over-bind): fires ONLY when the frame seg
+    genuinely lacks its own independent predication AND a following segment exists to
+    carry the apodosis; never binds the LAST segment (nothing to bind to) and never a
+    segment that already contains its own main clause."""
+    i = 0
+    while i < len(segs) - 1:
+        if _is_forward_frame(segs[i]) and not _next_is_lone_leader(segs[i + 1]) \
+           and not _apodosis_is_coordinated(segs[i + 1]):
+            _merge_forward(segs, i)
+            # do not advance: the merged segment now sits at i; re-test it in case it
+            # is STILL forward-incomplete (a stacked frame), but guard against a
+            # consolidated seg that now has its apodosis (independent predication).
+        else:
+            i += 1
+    return segs
+
+
 # ---------------------------------------------------------------------------
 # BoFM MARKER REGISTRY (framework §2.2 — the explicit-marker break-license).
 # This is the corpus's first registered registry instance. Each entry is a single
@@ -486,6 +664,15 @@ def _rule_passes(segs):
     # rides backward in rendering). When the answer's beat-clause is the whole segment
     # tail it is left intact (only the bare answer word moves).
     out = _speech_answer_peel(out)
+    # Forward-frame bind (framework §2.1 forward-incompleteness; BoFM analog of GNT R9
+    # forward-frame + "no line is only a forward-governing leader"). A segment that is
+    # ONLY forward-governing leaders + a dependent clause, with NO independent
+    # predication of its own ("that because ye were compelled to be humble" -- Alma
+    # 32:14), binds FORWARD to the next segment (its apodosis "ye were blessed"). Keyed
+    # on surface forward-incompleteness (leader lexeme + all-verbs-subordinate), NOT on
+    # the advcl head-attachment (stanza garbles that here -- it spuriously rooted
+    # "blessed" + hung the because-advcl on the later "suppose"), so it is parse-robust.
+    out = _forward_frame_bind(out)
     # MARKER REGISTRY break-license (framework §2.2) runs LAST, after all merges:
     # it splits a consolidated segment at a registered marker ("yea", "or rather")
     # when the marker-led colon is closure-eligible. This is break-GENERATING, so it

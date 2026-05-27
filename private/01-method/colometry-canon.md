@@ -326,6 +326,62 @@ The existing **yea-B merge** consolidates a `yea`-led segment that lacks its own
 - Pronoun-head restrictive-relative bind: `scripts/bofm_v1_fabric.py` — `_LIGHT_PRON`, `_relcl_antecedent_is_light_pron`, intercept in `is_clause_head`.
 - Audit verdict (2026-05-26): linguistic + consistency lenses both COHERENT/SOUND on the marker registry (A) and the verbum-dicendi bind after the quote-guard fix (108 ccomp/copular pierces resolved, 0 single-complement regressions, token-exact integrity). Records this §7.3 closed-list-extension audit per Registry discipline.
 
+### Forward-frame bind (§2.1 forward-incompleteness — subordinator-led frames)
+
+**Status:** Active · **Category:** A (Mechanical, mandatory) · **Decidability:** Surface-lexeme + parse-deprel (punctuation-invariant)
+
+A segment whose content is **only a forward-governing subordinate clause** — a subordinator leader plus a dependent clause, with **no independent main predication of its own** — fails forward closure on the idea-unit (bidirectional) bar: it cannot stand as a thought because it points forward to a matrix/apodosis it does not contain. Such a frame **binds FORWARD** into the following segment (its apodosis). This is the BoFM instantiation of framework §2.1 forward-incompleteness (the GNT R9 forward-frame analog), distinct from R29 which covers forward-incomplete **infinitival** orphans (`to`-INF); this rule covers **finite subordinator-led** frames.
+
+This is a new mechanism + a new closed list (`_FORWARD_FRAME_LEADERS`), recorded here per the framework §7.3 closed-list / new-mechanism audit trigger. Prior canon documented only R29 forward-incomplete infinitivals and the §2.2 marker registry; finite subordinator-led forward frames (that / because / if / when …) were undocumented.
+
+#### The closed list (`_FORWARD_FRAME_LEADERS`)
+
+```
+that, because, if, unless, when, whensoever, while, whilst, until, though,
+although, since, whereas, before, after, as, lest, save, insomuch, forasmuch
+```
+
+These are the subordinating leaders that open a DEPENDENT (forward-governing) clause: the complementizer/result `that`, plus the causal / conditional / temporal / concessive subordinators. Keyed on the **surface lexeme** (punctuation-invariant; parse-robust — does not depend on the `advcl` head-attachment, which stanza garbles when it mis-roots the apodosis). Adding any further leader is a framework §7.3 closed-list-extension audit trigger.
+
+#### Entry conditions and the four exclusions
+
+The bind (`_forward_frame_bind` → `_is_forward_frame`) fires on a segment when: (i) the first content token is a leader from the closed list tagged as a genuine subordinator (`mark` / SCONJ / `advmod`); (ii) the segment contains a subordinate verb; and (iii) `_seg_independent_predication` is False (no `root`/`conj`/`parataxis` verbal OR copular main clause of its own). It does NOT fire — the frame is left as its own line — under any of these **four exclusions**:
+
+1. **Relative** — a verb whose deprel carries `relcl` ("that oppress thee", "which I make", "who humble themselves") binds BACKWARD to its antecedent (framework §2.1 relative corollary; handled in the v1 fabric), never forward. (`_is_forward_frame` rejects any `relcl` verb; belt-and-braces with the `mark`/SCONJ leader discriminator that excludes the relativizer `that`.)
+2. **Verbum-dicendi** — a frame whose verb lemma is a speech verb (`_VERBA_DICENDI_GEN`: say/speak/cry/answer/command/…) defers to the speech rules; its content clause is direct speech released onto its own line by the verba-dicendi / M2 direct-speech layer. Binding the conditional/complementizer forward would swallow the released quote (would have re-merged 2 Nephi 2:13 "And if ye shall say / there is no law"; Alma 26:23). Stays as the speech layer renders it.
+3. **Coordinated-apodosis** — the candidate apodosis segment OPENS with a coordinator (`and`/`but`/`or`/`nor`, deprel `cc`): it is a clause CONJOINED to something prior, not the frame's own completion. The frame must not reach forward across a coordinator into a coordinate clause whose matrix lies elsewhere (Alma 27:23 "lest they should commit sin" → "; AND this their great fear …"; the Isaiah-53 parallel cola, Mosiah 14:12). (`_apodosis_is_coordinated`.)
+4. **Lone-leader** — the candidate apodosis segment is JUST a discourse/coordinating leader ("behold", "yea", "now", "and") with no clause of its own. Binding into it would strand the leader on the frame line; instead the leader-fold pass chains the leader onto the REAL apodosis that follows (Alma 57:20 / Helaman 5:12 / Ether 8:22). (`_next_is_lone_leader`.)
+
+The bind iterates without advancing so a stacked frame (a lone-leader `that` seg + a `because …` seg) folds onto the apodosis; it stops once the consolidated segment gains independent predication, and never binds the LAST segment.
+
+#### Composition — marker-split runs AFTER
+
+`_forward_frame_bind` runs in the generate layer BEFORE the §2.2 `_marker_split`. The ordering is deliberate: the forward-frame bind first **merges** the frame onto its apodosis (e.g. Helaman 5:12 folds the "that when …" frame into its matrix), and the §2.2 marker-split then **re-splits** the consolidated unit at an internal `yea`/`or rather` amplifier and repairs any dangling marker — a genuine improvement. Running marker-split after means the split-license operates on the closure-correct consolidated unit, never on a stranded fragment.
+
+#### Worked example — Alma 32:14
+
+```
+And now, as I said unto you,
+that because ye were compelled to be humble ye were blessed,
+do ye not suppose that they are more blessed who truly humble
+  themselves because of the word?
+```
+
+The middle line is the framework's own worked example: "that because ye were compelled to be humble ye were blessed" — a `that`-frame stacked over a `because`-frame, with the apodosis "ye were blessed" closing the unit. The forward-frame mechanism binds the subordinate leaders forward into their apodosis as one forward-incomplete-then-closed thought, rather than stranding "that" or "because …" as bare fragments. (Spot-checked against the deployed edition alongside Alma 38:5, 2 Nephi 25:20, Helaman 5:12, Mosiah 2:21/20:17, Alma 12:32, 2 Nephi 26:15 — all genuine forward-frame→apodosis binds.)
+
+#### Parse-repair layer slot (R-INV, R-WLD)
+
+Upstream of all binding rules, `scripts/parse_repair.py` (`repair()`, applied at parse load-time, idempotent — the same architectural slot as `archaic_normalize`, but repairing ATTACHMENT not morphology) corrects two named, structurally-detectable stanza mis-parse classes of Early-Modern English before the rules run:
+
+- **R-INV** (inverted speech-attribution) — re-attaches a postposed speech-subject ("thus saith THE LORD, …"; "said HE, …") that stanza grabbed as a non-subject of the quoted verb, restoring it as `nsubj` of the verbum dicendi so the M2 direct-speech release renders the frame line correctly. (Pre-existing.)
+- **R-WLD** (EME desiderative "would") — re-tags a stranded clause-level desiderative "would" ("I would THAT ye should remember …" = "I wish/desire that …") to a main VERB governing its following `that`-clause as `ccomp`, so the fabric complement-bind reunites the two segments. Guarded against the 546 modal-AUX cases (`deprel == aux`, "would believe") and reparandum sub-trees. **LOAD-BEARING:** verified by an Alma 32:22 render regression test (2026-05-26) — disabling R-WLD strands "and I would" as its own line. (The consistency audit's "output-inert" finding was incorrect for this verse; R-WLD is retained, not dormant.)
+
+#### Implementation
+
+`scripts/bofm_generate.py` — `_FORWARD_FRAME_LEADERS`, `_forward_frame_bind`, `_is_forward_frame`, `_seg_independent_predication`, `_apodosis_is_coordinated`, `_next_is_lone_leader`, `_merge_forward`; parse-repair layer in `scripts/parse_repair.py` (`repair`, `_repair_inverted_speech` = R-INV, `_repair_desiderative_would` = R-WLD).
+
+- Audit verdict (2026-05-26): linguistic lens = SOUND (one judgment-call flagged — frame→frame binds at Alma 17:16 / 2 Nephi 25:20, defensible under §2.2 forward-incompleteness, not a regression); consistency lens = COHERENT-WITH-NITS (no punctuation leak; no harmful rule interaction). Corpus sweep: 11 forward-frame verses, all net binds (10 fewer-line + 1 same-count drift at Helaman 5:12), 0 splits, 0 over-merge cascade. Bidirectional gate fail count improved 496 → 493. NIT corrected: R-WLD confirmed LOAD-BEARING (Alma 32:22), not inert. Records this §7.3 new-mechanism + closed-list audit.
+
 <!-- ===== R1 ===== -->
 ### R1: AICTP Formula Integrity
 

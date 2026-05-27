@@ -12,6 +12,26 @@ R-INV  Inverted speech-attribution ("thus saith THE LORD, I have led...", "said 
        strands it. Repair: re-attach that postposed nominal to the speech verb as its
        nsubj. After this, the M2 direct-speech release renders "thus saith the Lord,"
        as the frame line and the quotation as its own ATU(s).
+
+R-WLD  EME desiderative "would" ("I would THAT ye should remember ..." = "I wish/
+       desire that ..."). stanza tags this volitional matrix "would" as a stranded
+       modal AUX -- NOT as `aux` of a finite verb (the modal reading), but as a
+       clause-level node (conj/parataxis/root/reparandum/acl/advcl/ccomp) with NO
+       lexical verb of its own, its content sitting in the FOLLOWING `that`-clause.
+       So the desiderative "would" surfaces as a stranded fragment ("...therefore I
+       would" / "that ye should remember ..."). Repair: when "would" is a clause-level
+       node (deprel != aux) whose IMMEDIATELY-following content token is a `that`
+       SCONJ-mark heading a clause, re-tag "would" -> main VERB and re-attach that
+       `that`-clause head as "would"'s `ccomp`. The existing complement-bind (fabric
+       ccomp default) then reunites "I would that ye should remember ..." as one ATU.
+       Discriminator is punctuation-invariant: "would" deprel (NOT aux = not a modal
+       of a finite verb) + the `that` complementizer lexeme + clause-head attachment;
+       the comma after "would" is never consulted. The 546 modal-AUX "would believe"/
+       "would not give" cases (deprel == aux) are untouched -- only the small
+       desiderative-matrix class re-tags. LOAD-BEARING: validated by Alma 32:22 render
+       regression test -- disabling R-WLD strands "and I would" as its own line
+       (verified 2026-05-26; the consistency audit's "output-inert" finding was
+       incorrect for this verse).
 """
 import sys
 import scripts.bofm_generate  # noqa: F401 (ensures package import path)
@@ -54,13 +74,60 @@ def _repair_inverted_speech(sent):
     return n
 
 
+def _repair_desiderative_would(sent):
+    """R-WLD. Re-tag a stranded EME desiderative "would" to a main VERB governing its
+    following `that`-clause as `ccomp`. Returns count of re-tags made."""
+    n = 0
+    toks = sorted(sent, key=lambda t: (_i(t.id) if _i(t.id) is not None else 0))
+    for idx, w in enumerate(toks):
+        if (w.form or "").lower() != "would":
+            continue
+        # MODAL guard: a `would` serving as `aux` of a finite verb ("would believe",
+        # "would not give") is the 546-case modal reading -> never touched. Only a
+        # CLAUSE-LEVEL `would` (it is a node in its own right, not an auxiliary) can
+        # be the stranded desiderative matrix.
+        wbase = (w.deprel or "").split(":")[0]
+        if wbase == "aux":
+            continue
+        # REPARANDUM guard: stanza's `reparandum` (disfluency/restart) relation marks a
+        # BROKEN sub-tree -- re-rooting a `that`-clause onto a reparandum-`would` shatters
+        # the clause-atom grouping (the verse explodes into per-token lines). These
+        # cases ALSO already render bound in the deployed edition (the `would that` is
+        # glued within a larger clause), so there is nothing to repair. Restrict R-WLD
+        # to genuine clause-node attachments (conj/parataxis/root/advcl/acl/ccomp/csubj),
+        # where `would` is a real but DISCONNECTED node that strands at render.
+        if wbase not in ("conj", "parataxis", "root", "advcl", "acl", "ccomp", "csubj"):
+            continue
+        # The immediately-following CONTENT token must be the `that` complementizer
+        # (SCONJ `mark`) -- "would THAT ...". (Skip intervening punctuation only.)
+        rest = [t for t in toks[idx + 1:] if (t.form or "").strip(",;:.!?—–’\"()")]
+        nxt = rest[0] if rest else None
+        if nxt is None or (nxt.form or "").lower() != "that" \
+           or (nxt.deprel or "") != "mark" or nxt.upos != "SCONJ":
+            continue
+        # The `that`-clause head is the token `that` attaches to as its mark.
+        clause_head = next((t for t in sent if _i(t.id) == _i(nxt.head)), None)
+        if clause_head is None:
+            continue
+        # Re-tag: "would" becomes the desiderative main VERB; the that-clause head
+        # becomes its `ccomp`. Keep "would"'s own deprel/head (its slot in the tree
+        # is fine -- conj of the prior speech verb in Alma 32:22, etc.); we only give
+        # it the complement so the complement-bind reunites the two segments.
+        w.upos = "VERB"
+        clause_head.head = w.id
+        clause_head.deprel = "ccomp"
+        n += 1
+    return n
+
+
 def repair(parsed):
     """Apply all repairs to a {(c,v): [[Tok,...], ...]} parse map, in place.
     Returns {repair_name: count}."""
-    counts = {"R-INV": 0}
+    counts = {"R-INV": 0, "R-WLD": 0}
     for sents in parsed.values():
         for sent in sents:
             counts["R-INV"] += _repair_inverted_speech(sent)
+            counts["R-WLD"] += _repair_desiderative_would(sent)
     return counts
 
 
