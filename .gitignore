@@ -47,3 +47,6 @@ data/kjv_diff_index.json
 data/parallel_index.json
 data/pericope_index.json
 data/text-files/lds-scriptures.txt
+
+# Text-Fabric compiled binary cache (regenerated on load)
+data/tf/**/.tf/
