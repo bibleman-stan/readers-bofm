@@ -64,6 +64,21 @@ def book_paths(book_id: str) -> tuple[Path, Path]:
     return v2_path, conllu_path
 
 
+def v2_files():
+    """Return the sorted list of v2 corpus .txt paths, HONORING the BOFM_V2_DIR
+    override. The older (regex-based) colometry validators historically globbed
+    `data/text-files/v2/*-v2.txt` directly and so silently measured the STALE
+    deployed corpus during an override-based prototype run. They should call this
+    instead. Override dir uses flat `<book>.txt`; the default dir uses the canonical
+    `NN-bookname-2020-sb-v2.txt`. (The conllu-consuming `_ud` validators already
+    honor the override via `book_paths`; this is the text-globbing analog.)"""
+    ov_v2 = os.environ.get("BOFM_V2_DIR")
+    if ov_v2:
+        return sorted(Path(ov_v2).glob("*.txt"))
+    repo = Path(__file__).resolve().parent.parent.parent
+    return sorted((repo / "data" / "text-files" / "v2").glob("*-v2.txt"))
+
+
 if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser(description=__doc__)
