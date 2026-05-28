@@ -1,23 +1,23 @@
-# EModE parser — Colab run guide
+# EModE parser v2 (MacBERTh) — Colab run guide
 
-`emode_parser.ipynb` trains an Early-Modern-English dependency parser on the PCEEC→UD data
-(2.3M tokens) and re-parses the Book of Mormon, producing the good syntax layer for **TF v0.2**
-(replacing the weak Stanza modern-English parse — the root cause of the bulk over-split classes).
+`emode_parser.ipynb` is the **GPU keystone re-try**. The CPU parser (PCEEC→UD, spaCy) lost to Stanza
+**21–6** on a blind head-to-head over BoFM scripture (the register gap, letters→scripture, ate the
+gains). This notebook trains a **biaffine + MacBERTh** transformer (BERT pretrained on historical
+English 1450–1950; graph-based, handles non-projectivity) on the **fixed-converter** (clause-type
+error 6.6%, down from 38.7%), **author-held-out** data — the two things wrong with the first run.
 
 ## To run
+1. Open `emode_parser.ipynb` in Colab → **Runtime → Change runtime type → T4 GPU**.
+2. **Run all.** At cell 2, upload `train-package-v2.zip` —
+   `readers-bofm/private/substrate/emode-substrate/train-package/train-package-v2.zip` (21 MB).
+3. ~30–50 min on a T4. Cells 5–6 produce and download **two** files.
 
-1. Open `emode_parser.ipynb` in Colab → **Runtime → Change runtime type → GPU**.
-2. Run cells top to bottom. When cell 2 prompts, upload **`train-package.zip`** —
-   it's at `readers-bofm/private/substrate/emode-substrate/train-package/train-package.zip`
-   (23 MB: train/dev/test.conllu + bofm_toparse.conllu).
-3. Training is ~30–60 min on a T4 (watch dev LAS climb). Cell 4 reports held-out LAS/UAS.
-4. Cells 5–6 re-parse the BoFM and download **`bofm_parsed.conllu`** + the trained parser zip.
-5. Send `bofm_parsed.conllu` back to Claude → it rewrites the TF `deprel`/`head` → **v0.2** and
-   runs the binding rules on the good syntax.
+## Send BOTH back to Claude
+- `test2_macberth.conllu` → per-label F (ccomp/advcl/acl:relcl/conj) on held-out authors.
+- `bofm_macberth.conllu` → the **same blind 30-sentence gate vs Stanza** the CPU parser failed.
 
-## Why MacBERTh
-
-The encoder is `emanjavacas/MacBERTh` — BERT pretrained on historical English (1450–1950). It
-sees EModE complementation/relativization (the `that`/`which`/`whom` structures Stanza mis-parses)
-as in-domain, not as noise to normalize away. Register caveat: PCEEC is *letters*, the BoFM is
-*scripture-register* EModE — close, not identical; the LAS on the test split bounds the claim.
+## The verdict rule (decided up front, so the test is honest)
+- **MacBERTh beats Stanza on the gate →** keystone alive; build BoFM TF v0.2 on it.
+- **MacBERTh does not beat Stanza →** close the parser track; BoFM rests on Stanza + the proven
+  v2-adjudication sprays. (The register gap may persist regardless of model size, since the dependency
+  *supervision* is still PCEEC letters — this bet tests whether a stronger encoder overcomes that.)
