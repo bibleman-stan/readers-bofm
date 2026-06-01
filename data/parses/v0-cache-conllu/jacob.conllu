@@ -57,7 +57,7 @@
 7	,	,	PUNCT	_	_	9	punct	_	_
 8	a	a	DET	_	_	9	det	_	_
 9	commandment	commandment	NOUN	_	_	6	appos	_	_
-10	that	that	PRON	_	_	13	obj	_	_
+10	that	that	PRON	_	_	13	mark	_	_
 11	I	I	PRON	_	_	13	nsubj	_	_
 12	should	should	AUX	_	_	13	aux	_	_
 13	write	write	VERB	_	_	9	acl:relcl	_	_
@@ -81,7 +81,7 @@
 31	I	I	PRON	_	_	34	nsubj	_	_
 32	should	should	AUX	_	_	34	aux	_	_
 33	not	not	PART	_	_	34	advmod	_	_
-34	touch	touch	VERB	_	_	24	conj	_	_
+34	touch	touch	VERB	_	_	9	acl:relcl	_	_
 35	,	,	PUNCT	_	_	39	punct	_	_
 36	save	save	VERB	_	_	39	cc	_	_
 37	it	it	PRON	_	_	39	nsubj	_	_
@@ -959,10 +959,10 @@
 45	temple	temple	NOUN	_	_	41	obl	_	_
 46	this	this	DET	_	_	47	det	_	_
 47	day	day	NOUN	_	_	41	obl:unmarked	_	_
-48	that	that	PRON	_	_	51	obj	_	_
+48	that	that	PRON	_	_	51	mark	_	_
 49	I	I	PRON	_	_	51	nsubj	_	_
 50	might	might	AUX	_	_	51	aux	_	_
-51	declare	declare	VERB	_	_	45	acl:relcl	_	_
+51	declare	declare	VERB	_	_	41	advcl	_	_
 52	unto	to	ADP	_	_	53	case	_	_
 53	you	you	PRON	_	_	51	obl	_	_
 54	the	the	DET	_	_	55	det	_	_
@@ -2398,7 +2398,7 @@
 2	they	they	PRON	_	_	5	nsubj	_	_
 3	shall	shall	AUX	_	_	5	aux	_	_
 4	not	not	PART	_	_	5	advmod	_	_
-5	lead	lead	VERB	_	_	45	advcl	_	_
+5	lead	lead	VERB	_	_	45	ccomp	_	_
 6	away	away	ADV	_	_	5	advmod	_	_
 7	captive	captive	ADJ	_	_	9	amod	_	_
 8	the	the	DET	_	_	9	det	_	_
@@ -2429,7 +2429,7 @@
 33	they	they	PRON	_	_	36	nsubj	_	_
 34	shall	shall	AUX	_	_	36	aux	_	_
 35	not	not	PART	_	_	36	advmod	_	_
-36	commit	commit	VERB	_	_	21	advcl	_	_
+36	commit	commit	VERB	_	_	45	ccomp	_	_
 37	whoredoms	whoredom	NOUN	_	_	36	obj	_	_
 38	,	,	PUNCT	_	_	39	punct	_	_
 39	like	like	INTJ	_	_	41	discourse	_	_
@@ -5108,7 +5108,7 @@
 25	I	I	PRON	_	_	26	nsubj	_	_
 26	do	do	VERB	_	_	5	conj	_	_
 27	it	it	PRON	_	_	26	obj	_	_
-28	that	that	PRON	_	_	31	obj	_	_
+28	that	that	PRON	_	_	31	mark	_	_
 29	I	I	PRON	_	_	31	nsubj	_	_
 30	may	may	AUX	_	_	31	aux	_	_
 31	preserve	preserve	VERB	_	_	26	ccomp	_	_
@@ -6990,7 +6990,7 @@
 22	and	and	CCONJ	_	_	25	cc	_	_
 23	because	because	SCONJ	_	_	25	mark	_	_
 24	I	I	PRON	_	_	25	nsubj	_	_
-25	plucked	pluck	VERB	_	_	17	advcl	_	_
+25	plucked	pluck	VERB	_	_	41	advcl	_	_
 26	not	not	PART	_	_	28	advmod	_	_
 27	the	the	DET	_	_	28	det	_	_
 28	branches	branch	NOUN	_	_	25	obj	_	_
@@ -7002,11 +7002,11 @@
 34	the	the	DET	_	_	35	det	_	_
 35	fire	fire	NOUN	_	_	31	obl	_	_
 36	,	,	PUNCT	_	_	37	punct	_	_
-37	behold	behold	VERB	_	_	25	parataxis	_	_
+37	behold	behold	VERB	_	_	41	parataxis	_	_
 38	,	,	PUNCT	_	_	41	punct	_	_
 39	they	they	PRON	_	_	41	nsubj	_	_
 40	have	have	AUX	_	_	41	aux	_	_
-41	overcome	overcome	VERB	_	_	3	parataxis	_	_
+41	overcome	overcome	VERB	_	_	17	conj	_	_
 42	the	the	DET	_	_	44	det	_	_
 43	good	good	ADJ	_	_	44	amod	_	_
 44	branch	branch	NOUN	_	_	41	obj	_	_
@@ -8983,7 +8983,7 @@
 54	wherefore	so	ADV	_	_	57	advmod	_	_
 55	I	I	PRON	_	_	57	nsubj	_	_
 56	will	will	AUX	_	_	57	aux	_	_
-57	lay	lay	VERB	_	_	10	parataxis	_	_
+57	lay	lay	VERB	_	_	37	conj	_	_
 58	up	up	ADP	_	_	57	compound:prt	_	_
 59	unto	to	ADP	_	_	62	case	_	_
 60	mine	my	PRON	_	_	62	nmod:poss	_	_
@@ -9095,7 +9095,7 @@
 8	,	,	PUNCT	_	_	7	punct	_	_
 9	as	as	SCONJ	_	_	11	mark	_	_
 10	I	I	PRON	_	_	11	nsubj	_	_
-11	said	say	VERB	_	_	55	advcl	_	_
+11	said	say	VERB	_	_	24	advcl	_	_
 12	unto	to	ADP	_	_	13	case	_	_
 13	you	you	PRON	_	_	11	obl	_	_
 14	that	that	SCONJ	_	_	17	mark	_	_
@@ -11088,7 +11088,7 @@
 31	wherefore	so	ADV	_	_	34	advmod	_	_
 32	,	,	PUNCT	_	_	31	punct	_	_
 33	I	I	PRON	_	_	34	nsubj	_	_
-34	conclude	conclude	VERB	_	_	3	parataxis	_	_
+34	conclude	conclude	VERB	_	_	11	parataxis	_	_
 35	this	this	DET	_	_	36	det	_	_
 36	record	record	NOUN	_	_	34	obj	_	_
 37	,	,	PUNCT	_	_	38	punct	_	_
@@ -11170,7 +11170,7 @@
 113	,	,	PUNCT	_	_	112	punct	_	_
 114	we	we	PRON	_	_	116	nsubj	_	_
 115	did	do	AUX	_	_	116	aux	_	_
-116	mourn	mourn	VERB	_	_	3	parataxis	_	_
+116	mourn	mourn	VERB	_	_	34	parataxis	_	_
 117	out	out	ADP	_	_	116	compound:prt	_	_
 118	our	our	PRON	_	_	119	nmod:poss	_	_
 119	days	day	NOUN	_	_	116	obj	_	_

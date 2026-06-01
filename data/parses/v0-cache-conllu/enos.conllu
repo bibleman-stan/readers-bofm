@@ -423,7 +423,7 @@
 31	,	,	PUNCT	_	_	30	punct	_	_
 32	I	I	PRON	_	_	34	nsubj	_	_
 33	will	will	AUX	_	_	34	aux	_	_
-34	visit	visit	VERB	_	_	3	parataxis	_	_
+34	visit	visit	VERB	_	_	18	parataxis	_	_
 35	thy	your	PRON	_	_	36	nmod:poss	_	_
 36	brethren	brother	NOUN	_	_	34	obj	_	_
 37	according	accord	VERB	_	_	41	mark	_	_
@@ -1164,7 +1164,7 @@
 47	these	this	DET	_	_	48	det	_	_
 48	things	thing	NOUN	_	_	32	conj	_	_
 49	--	--	PUNCT	_	_	50	punct	_	_
-50	stirring	stir	VERB	_	_	3	parataxis	_	_
+50	stirring	stir	VERB	_	_	48	conj	_	_
 51	them	they	PRON	_	_	50	obj	_	_
 52	up	up	ADP	_	_	50	compound:prt	_	_
 53	continually	continually	ADV	_	_	50	advmod	_	_
@@ -1301,7 +1301,7 @@
 20	power	power	NOUN	_	_	16	obl:agent	_	_
 21	of	of	ADP	_	_	22	case	_	_
 22	God	God	PROPN	_	_	20	nmod	_	_
-23	that	that	PRON	_	_	26	obj	_	_
+23	that	that	PRON	_	_	26	mark	_	_
 24	I	I	PRON	_	_	26	nsubj	_	_
 25	must	must	AUX	_	_	26	aux	_	_
 26	preach	preach	VERB	_	_	20	acl:relcl	_	_

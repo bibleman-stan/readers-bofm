@@ -583,7 +583,7 @@
 33	which	which	PRON	_	_	36	nsubj:pass	_	_
 34	has	have	AUX	_	_	36	aux	_	_
 35	been	be	AUX	_	_	36	aux:pass	_	_
-36	written	write	VERB	_	_	30	acl:relcl	_	_
+36	written	write	VERB	_	_	32	acl:relcl	_	_
 37	,	,	PUNCT	_	_	39	punct	_	_
 38	neither	neither	CCONJ	_	_	39	cc:preconj	_	_
 39	prophecy	prophecy	NOUN	_	_	32	appos	_	_
@@ -1455,14 +1455,14 @@
 97	;	;	PUNCT	_	_	100	punct	_	_
 98	for	for	SCONJ	_	_	100	mark	_	_
 99	there	there	PRON	_	_	100	expl	_	_
-100	is	be	VERB	_	_	107	advcl	_	_
+100	is	be	VERB	_	_	96	advcl	_	_
 101	nothing	nothing	PRON	_	_	100	nsubj	_	_
 102	which	which	PRON	_	_	104	nsubj	_	_
 103	is	be	AUX	_	_	104	cop	_	_
 104	good	good	ADJ	_	_	101	acl:relcl	_	_
 105	save	save	VERB	_	_	104	advcl	_	_
 106	it	it	PRON	_	_	107	nsubj	_	_
-107	comes	come	VERB	_	_	3	parataxis	_	_
+107	comes	come	VERB	_	_	104	advcl	_	_
 108	from	from	ADP	_	_	110	case	_	_
 109	the	the	DET	_	_	110	det	_	_
 110	Lord	Lord	PROPN	_	_	107	obl	_	_

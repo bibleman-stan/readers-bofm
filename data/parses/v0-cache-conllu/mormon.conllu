@@ -992,7 +992,7 @@
 36	they	they	PRON	_	_	39	nsubj	_	_
 37	would	would	AUX	_	_	39	aux	_	_
 38	not	not	PART	_	_	39	advmod	_	_
-39	fight	fight	VERB	_	_	3	parataxis	_	_
+39	fight	fight	VERB	_	_	19	parataxis	_	_
 40	,	,	PUNCT	_	_	43	punct	_	_
 41	and	and	CCONJ	_	_	43	cc	_	_
 42	they	they	PRON	_	_	43	nsubj	_	_
@@ -1360,7 +1360,7 @@
 32	no	no	DET	_	_	33	det	_	_
 33	man	man	NOUN	_	_	35	nsubj	_	_
 34	could	could	AUX	_	_	35	aux	_	_
-35	keep	keep	VERB	_	_	3	parataxis	_	_
+35	keep	keep	VERB	_	_	19	advcl	_	_
 36	that	that	PRON	_	_	35	obj	_	_
 37	which	which	PRON	_	_	40	nsubj	_	_
 38	was	be	AUX	_	_	40	cop	_	_
@@ -1832,7 +1832,7 @@
 49	been	be	AUX	_	_	52	cop	_	_
 50	before	before	ADP	_	_	52	case	_	_
 51	mine	my	PRON	_	_	52	nmod:poss	_	_
-52	eyes	eye	NOUN	_	_	9	parataxis	_	_
+52	eyes	eye	NOUN	_	_	26	advcl	_	_
 53	ever	ever	ADV	_	_	58	advmod	_	_
 54	since	since	SCONJ	_	_	58	mark	_	_
 55	I	I	PRON	_	_	58	nsubj	_	_
@@ -2176,13 +2176,13 @@
 36	was	be	AUX	_	_	39	cop	_	_
 37	not	not	PART	_	_	39	advmod	_	_
 38	with	with	ADP	_	_	39	case	_	_
-39	us	we	PRON	_	_	3	parataxis	_	_
+39	us	we	PRON	_	_	13	parataxis	_	_
 40	;	;	PUNCT	_	_	45	punct	_	_
 41	yea	yes	INTJ	_	_	45	discourse	_	_
 42	,	,	PUNCT	_	_	41	punct	_	_
 43	we	we	PRON	_	_	45	nsubj:pass	_	_
 44	were	be	AUX	_	_	45	aux:pass	_	_
-45	left	leave	VERB	_	_	3	parataxis	_	_
+45	left	leave	VERB	_	_	39	parataxis	_	_
 46	to	to	ADP	_	_	47	case	_	_
 47	ourselves	ourselves	PRON	_	_	45	obl	_	_
 48	,	,	PUNCT	_	_	57	punct	_	_
@@ -4946,7 +4946,7 @@
 27	hath	have	AUX	_	_	28	aux	_	_
 28	said	say	VERB	_	_	22	acl:relcl	_	_
 29	should	should	AUX	_	_	30	aux	_	_
-30	scatter	scatter	VERB	_	_	10	parataxis	_	_
+30	scatter	scatter	VERB	_	_	28	ccomp	_	_
 31	this	this	DET	_	_	32	det	_	_
 32	people	person	NOUN	_	_	30	obj	_	_
 33	,	,	PUNCT	_	_	39	punct	_	_
@@ -4955,7 +4955,7 @@
 36	people	person	NOUN	_	_	39	nsubj:pass	_	_
 37	should	should	AUX	_	_	39	aux	_	_
 38	be	be	AUX	_	_	39	aux:pass	_	_
-39	counted	count	VERB	_	_	10	conj	_	_
+39	counted	count	VERB	_	_	30	conj	_	_
 40	as	as	ADP	_	_	41	case	_	_
 41	naught	nothing	PRON	_	_	39	obl	_	_
 42	among	among	ADP	_	_	43	case	_	_
@@ -4998,7 +4998,7 @@
 79	ye	you	PRON	_	_	82	nsubj	_	_
 80	might	might	AUX	_	_	82	aux	_	_
 81	not	not	PART	_	_	82	advmod	_	_
-82	have	have	VERB	_	_	10	conj	_	_
+82	have	have	VERB	_	_	47	advcl	_	_
 83	too	too	ADV	_	_	84	advmod	_	_
 84	great	great	ADJ	_	_	85	amod	_	_
 85	sorrow	sorrow	NOUN	_	_	82	obj	_	_
@@ -5359,7 +5359,7 @@
 59	yea	yes	INTJ	_	_	62	discourse	_	_
 60	,	,	PUNCT	_	_	59	punct	_	_
 61	even	even	ADV	_	_	62	advmod	_	_
-62	that	that	PRON	_	_	57	appos	_	_
+62	that	that	PRON	_	_	51	conj	_	_
 63	which	which	PRON	_	_	68	nsubj	_	_
 64	hath	have	AUX	_	_	68	aux	_	_
 65	been	be	AUX	_	_	68	cop	_	_
@@ -6001,7 +6001,7 @@
 45	and	and	CCONJ	_	_	48	cc	_	_
 46	having	have	AUX	_	_	48	aux	_	_
 47	been	be	AUX	_	_	48	aux:pass	_	_
-48	commanded	command	VERB	_	_	3	conj	_	_
+48	commanded	command	VERB	_	_	34	conj	_	_
 49	of	of	ADP	_	_	51	case	_	_
 50	the	the	DET	_	_	51	det	_	_
 51	Lord	Lord	PROPN	_	_	48	obl	_	_
@@ -6026,7 +6026,7 @@
 70	sacred	sacred	ADJ	_	_	66	acl:relcl	_	_
 71	,	,	PUNCT	_	_	73	punct	_	_
 72	to	to	PART	_	_	73	mark	_	_
-73	fall	fall	VERB	_	_	48	advcl	_	_
+73	fall	fall	VERB	_	_	56	xcomp	_	_
 74	into	into	ADP	_	_	76	case	_	_
 75	the	the	DET	_	_	76	det	_	_
 76	hands	hand	NOUN	_	_	73	obl	_	_
@@ -6082,7 +6082,7 @@
 126	were	be	AUX	_	_	129	cop	_	_
 127	these	this	DET	_	_	129	det	_	_
 128	few	few	ADJ	_	_	129	amod	_	_
-129	plates	plate	NOUN	_	_	3	parataxis	_	_
+129	plates	plate	NOUN	_	_	102	advcl	_	_
 130	which	which	PRON	_	_	132	obj	_	_
 131	I	I	PRON	_	_	132	nsubj	_	_
 132	gave	give	VERB	_	_	129	acl:relcl	_	_
@@ -7347,7 +7347,7 @@
 31	it	it	PRON	_	_	36	nsubj	_	_
 32	so	so	ADV	_	_	36	advmod	_	_
 33	be	be	AUX	_	_	36	cop	_	_
-34	that	that	PRON	_	_	36	obj	_	_
+34	that	that	PRON	_	_	36	mark	_	_
 35	ye	you	PRON	_	_	36	nsubj	_	_
 36	believe	believe	VERB	_	_	42	advcl	_	_
 37	in	in	ADP	_	_	38	case	_	_
@@ -7391,7 +7391,7 @@
 75	be	be	AUX	_	_	78	cop	_	_
 76	well	well	ADV	_	_	78	advmod	_	_
 77	with	with	ADP	_	_	78	case	_	_
-78	you	you	PRON	_	_	5	parataxis	_	_
+78	you	you	PRON	_	_	42	parataxis	_	_
 79	in	in	ADP	_	_	81	case	_	_
 80	the	the	DET	_	_	81	det	_	_
 81	day	day	NOUN	_	_	78	obl	_	_
@@ -11341,14 +11341,14 @@
 25	none	none	PRON	_	_	28	nsubj	_	_
 26	other	other	ADJ	_	_	27	amod	_	_
 27	people	person	NOUN	_	_	28	nsubj	_	_
-28	knoweth	know	VERB	_	_	18	advcl	_	_
+28	knoweth	know	VERB	_	_	35	advcl	_	_
 29	our	our	PRON	_	_	30	nmod:poss	_	_
 30	language	language	NOUN	_	_	28	obj	_	_
 31	,	,	PUNCT	_	_	28	punct	_	_
 32	therefore	therefore	ADV	_	_	35	advmod	_	_
 33	he	he	PRON	_	_	35	nsubj	_	_
 34	hath	have	AUX	_	_	35	aux	_	_
-35	prepared	prepare	VERB	_	_	4	parataxis	_	_
+35	prepared	prepare	VERB	_	_	4	conj	_	_
 36	means	means	NOUN	_	_	35	obj	_	_
 37	for	for	ADP	_	_	39	case	_	_
 38	the	the	DET	_	_	39	det	_	_

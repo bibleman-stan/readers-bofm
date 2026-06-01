@@ -7,11 +7,11 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T14:14:10+00:00Z
+@dateWritten=2026-06-01T14:31:11+00:00Z
 
 1-302624	word
-302625-319492	atu
-319493-319507	book
-319508-319746	chapter
-319747-327972	sentence
-327973-334576	verse
+302625-319525	atu
+319526-319540	book
+319541-319779	chapter
+319780-328005	sentence
+328006-334609	verse

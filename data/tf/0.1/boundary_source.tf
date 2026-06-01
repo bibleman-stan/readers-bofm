@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T14:14:07+00:00Z
+@dateWritten=2026-06-01T14:31:10+00:00Z
 
 302625	mechanical-v1
 mechanical-v1
@@ -98,6 +98,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 mechanical-v1
@@ -873,7 +874,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -1190,6 +1190,7 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -1237,6 +1238,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -1457,6 +1459,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -1666,6 +1669,7 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -1816,7 +1820,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 mechanical-v1
 mechanical-v1
@@ -2024,6 +2027,8 @@ mechanical-v1
 mechanical-v1
 v2-llm
 v2-llm
+mechanical-v1
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -2487,7 +2492,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -3292,7 +3296,6 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -3359,6 +3362,8 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -3438,6 +3443,17 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -3960,7 +3976,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -4419,6 +4434,7 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -4446,6 +4462,8 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -4534,7 +4552,6 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -4732,10 +4749,11 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -4872,6 +4890,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 mechanical-v1
@@ -4948,8 +4967,6 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -5034,7 +5051,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 mechanical-v1
@@ -5134,7 +5150,6 @@ mechanical-v1
 mechanical-v1
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -5192,7 +5207,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -5805,6 +5819,7 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -5865,12 +5880,15 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -6756,6 +6774,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -7023,7 +7042,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 mechanical-v1
@@ -7163,7 +7181,6 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -7378,7 +7395,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -7802,6 +7818,8 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -7857,12 +7875,14 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -8258,10 +8278,10 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -8541,6 +8561,9 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 mechanical-v1
@@ -8634,6 +8657,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -8692,12 +8716,10 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -8966,7 +8988,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -9235,9 +9256,9 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -9547,6 +9568,9 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 mechanical-v1
@@ -9816,7 +9840,6 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -10056,6 +10079,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -10403,7 +10427,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -10740,6 +10763,10 @@ mechanical-v1
 mechanical-v1
 v2-llm
 v2-llm
+mechanical-v1
+mechanical-v1
+mechanical-v1
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -11001,6 +11028,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -11454,8 +11482,6 @@ mechanical-v1
 mechanical-v1
 v2-llm
 v2-llm
-mechanical-v1
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -11581,7 +11607,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -11782,7 +11807,6 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -11866,8 +11890,6 @@ mechanical-v1
 mechanical-v1
 v2-llm
 v2-llm
-mechanical-v1
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -11984,12 +12006,15 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -12033,6 +12058,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -12354,6 +12380,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -12460,6 +12487,7 @@ mechanical-v1
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -12688,7 +12716,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -12781,6 +12808,8 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -12796,6 +12825,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 mechanical-v1
@@ -12829,6 +12859,7 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -12871,6 +12902,8 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 v2-llm
+mechanical-v1
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -12974,6 +13007,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -13558,7 +13592,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -13614,7 +13647,6 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -14286,7 +14318,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -14507,7 +14538,6 @@ v2-llm
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -14766,7 +14796,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -14796,6 +14825,7 @@ mechanical-v1
 mechanical-v1
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -14991,6 +15021,8 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -15316,7 +15348,6 @@ mechanical-v1
 v2-llm
 v2-llm
 v2-llm
-mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -15592,6 +15623,7 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
+mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -15738,6 +15770,7 @@ mechanical-v1
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -16400,7 +16433,6 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
 v2-llm
 v2-llm
 v2-llm
@@ -16771,6 +16803,7 @@ mechanical-v1
 v2-llm
 v2-llm
 v2-llm
+mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1

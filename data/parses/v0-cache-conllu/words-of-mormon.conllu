@@ -161,7 +161,7 @@
 39	spake	speak	VERB	_	_	33	acl:relcl	_	_
 40	,	,	PUNCT	_	_	18	punct	_	_
 41	I	I	PRON	_	_	42	nsubj	_	_
-42	searched	search	VERB	_	_	5	parataxis	_	_
+42	searched	search	VERB	_	_	5	advcl	_	_
 43	among	among	ADP	_	_	45	case	_	_
 44	the	the	DET	_	_	45	det	_	_
 45	records	record	NOUN	_	_	42	obl	_	_
@@ -892,7 +892,7 @@
 30	after	after	SCONJ	_	_	33	mark	_	_
 31	there	there	PRON	_	_	33	expl	_	_
 32	having	have	AUX	_	_	33	aux	_	_
-33	been	be	VERB	_	_	23	conj	_	_
+33	been	be	VERB	_	_	47	advcl	_	_
 34	much	much	ADJ	_	_	35	amod	_	_
 35	contention	contention	NOUN	_	_	33	nsubj	_	_
 36	and	and	CCONJ	_	_	38	cc	_	_
