@@ -61268,25 +61268,26 @@
 64	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 1439
-# text = Nevertheless, because those miracles were worked by small means it did show unto them marvelous works.
-1	Nevertheless	nevertheless	ADV	_	_	13	advmod	_	_
+# text = Nevertheless, because those miracles were worked by small means nevertheless it did show unto them marvelous works.
+1	Nevertheless	nevertheless	ADV	_	_	14	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	because	because	SCONJ	_	_	7	mark	_	_
 4	those	that	DET	_	_	5	det	_	_
 5	miracles	miracle	NOUN	_	_	7	nsubj:pass	_	_
 6	were	be	AUX	_	_	7	aux:pass	_	_
-7	worked	work	VERB	_	_	13	advcl	_	_
+7	worked	work	VERB	_	_	14	advcl	_	_
 8	by	by	ADP	_	_	10	case	_	_
 9	small	small	ADJ	_	_	10	amod	_	_
 10	means	means	NOUN	_	_	7	obl:agent	_	_
-11	it	it	PRON	_	_	13	nsubj	_	_
-12	did	do	AUX	_	_	13	aux	_	_
-13	show	show	VERB	_	_	0	root	_	_
-14	unto	to	ADP	_	_	15	case	_	_
-15	them	they	PRON	_	_	13	obl	_	_
-16	marvelous	marvelous	ADJ	_	_	17	amod	_	_
-17	works	work	NOUN	_	_	13	obj	_	_
-18	.	.	PUNCT	_	_	13	punct	_	_
+11	nevertheless	nevertheless	ADV	_	_	14	advmod	_	_
+12	it	it	PRON	_	_	14	nsubj	_	_
+13	did	do	AUX	_	_	14	aux	_	_
+14	show	show	VERB	_	_	0	root	_	_
+15	unto	to	ADP	_	_	16	case	_	_
+16	them	they	PRON	_	_	14	obl	_	_
+17	marvelous	marvelous	ADJ	_	_	18	amod	_	_
+18	works	work	NOUN	_	_	14	obj	_	_
+19	.	.	PUNCT	_	_	14	punct	_	_
 
 # sent_id = 1440
 # text = They were slothful, and forgot to exercise their faith and diligence and then those marvelous works ceased, and they did not progress in their journey;

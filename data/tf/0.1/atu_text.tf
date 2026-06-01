@@ -8,9 +8,9 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T15:20:58+00:00Z
+@dateWritten=2026-06-01T21:49:35+00:00Z
 
-302625	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
+302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
 yea, having had a great knowledge of the goodness and the mysteries of God,
 therefore I make a record of my proceedings in my days.
@@ -9879,7 +9879,7 @@ And behold, it was prepared to show unto our fathers the course which they shoul
 And it did work for them according to their faith in God;
 therefore, if they had faith to believe that God could cause that those spindles should point the way they should go, behold, it was done;
 therefore they had this miracle, and also many other miracles wrought by the power of God, day by day.
-Nevertheless, because those miracles were worked by small means it did show unto them marvelous works.
+Nevertheless, because those miracles were worked by small means nevertheless it did show unto them marvelous works.
 They were slothful, and forgot to exercise their faith and diligence
 and then those marvelous works ceased,
 and they did not progress in their journey;

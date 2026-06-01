@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T15:20:58+00:00Z
+@dateWritten=2026-06-01T21:49:35+00:00Z
 
 nsubj:pass
 punct
@@ -1670,7 +1670,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 obj
 punct
 mark
@@ -2396,7 +2396,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -6791,7 +6791,7 @@ obl
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -6811,7 +6811,7 @@ obl
 nsubj
 aux
 advmod
-root
+conj
 case
 nmod:poss
 obl
@@ -19178,7 +19178,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 cc
 conj
 case
@@ -20803,7 +20803,7 @@ punct
 det
 nsubj
 aux
-root
+conj
 det
 obj
 case
@@ -27964,7 +27964,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 mark
 xcomp
 mark
@@ -28509,7 +28509,7 @@ punct
 cc
 advmod
 nsubj
-root
+conj
 punct
 root
 punct
@@ -28999,7 +28999,7 @@ obj
 nsubj:pass
 aux
 aux:pass
-root
+conj
 case
 det
 obl
@@ -29558,7 +29558,7 @@ punct
 nsubj:pass
 aux
 aux:pass
-root
+conj
 punct
 case
 nmod:poss
@@ -31053,11 +31053,11 @@ det
 nsubj
 nsubj
 cop
-advmod
-punct
-cc:preconj
-det
 root
+punct
+cc
+det
+conj
 punct
 mark
 expl
@@ -31489,7 +31489,7 @@ nmod
 punct
 mark
 nsubj
-root
+advcl
 iobj
 mark
 det
@@ -32921,7 +32921,7 @@ discourse
 punct
 nsubj
 aux
-root
+conj
 case
 obl
 mark
@@ -32993,7 +32993,7 @@ case
 nmod:poss
 nmod
 aux
-root
+conj
 case
 obl
 case
@@ -33034,7 +33034,7 @@ punct
 cc
 nsubj
 aux
-root
+parataxis
 mark
 xcomp
 mark
@@ -34882,7 +34882,7 @@ punct
 nsubj
 aux
 advmod
-root
+advcl
 obj
 mark
 cop
@@ -34926,7 +34926,7 @@ obl
 punct
 cc
 expl
-root
+conj
 obj
 mark
 xcomp
@@ -35103,7 +35103,7 @@ amod
 nmod
 nsubj
 aux
-root
+conj
 nmod:poss
 obj
 punct
@@ -35690,7 +35690,7 @@ obl
 punct
 nsubj
 aux
-root
+advcl
 nmod:poss
 obj
 case
@@ -35796,7 +35796,7 @@ punct
 cc
 det
 nsubj
-root
+conj
 obj
 punct
 cc
@@ -36059,7 +36059,7 @@ nmod
 nsubj
 aux
 cop
-root
+conj
 case
 nmod:poss
 obl
@@ -36676,7 +36676,7 @@ punct
 cc
 det
 nsubj
-root
+conj
 mark
 nsubj:pass
 aux
@@ -36880,7 +36880,7 @@ advmod
 aux:pass
 conj
 punct
-case
+mark
 det
 obl
 case
@@ -36889,7 +36889,7 @@ nmod
 cop
 nsubj
 nsubj
-root
+advcl
 case
 obl
 punct
@@ -37008,7 +37008,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 mark
 det
 nsubj
@@ -37076,7 +37076,7 @@ obj
 punct
 mark
 advmod
-root
+advcl
 det
 obj
 punct
@@ -37912,7 +37912,7 @@ nmod:poss
 nsubj
 aux
 cop
-root
+conj
 punct
 cc
 nmod:poss
@@ -38126,7 +38126,7 @@ mark
 xcomp
 punct
 cc
-root
+conj
 cop
 det
 nsubj
@@ -38932,7 +38932,7 @@ det
 nsubj
 aux
 aux
-root
+conj
 compound:prt
 mark
 advcl
@@ -38973,7 +38973,7 @@ advmod
 nmod:poss
 nsubj
 aux
-root
+parataxis
 xcomp
 case
 det
@@ -40121,7 +40121,7 @@ nsubj:pass
 aux:pass
 advcl
 nsubj
-root
+parataxis
 nsubj
 cop
 ccomp
@@ -40163,7 +40163,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 punct
 cc
 mark
@@ -40203,7 +40203,7 @@ nsubj
 cop
 advcl
 nsubj
-root
+parataxis
 det
 obj
 punct
@@ -40235,7 +40235,7 @@ punct
 nmod:poss
 nsubj
 aux
-root
+conj
 case
 obl
 advmod
@@ -42283,7 +42283,7 @@ discourse
 punct
 det
 nsubj
-root
+conj
 det:predet
 obj
 nsubj:pass
@@ -42493,7 +42493,7 @@ punct
 mark
 nsubj
 aux
-root
+advcl
 nmod:poss
 obj
 case
@@ -47749,7 +47749,7 @@ nmod:poss
 nsubj:pass
 aux:pass
 advmod
-root
+advcl
 advmod
 punct
 cc
@@ -47880,14 +47880,14 @@ nsubj
 conj
 obj
 punct
-case
+mark
 det:predet
 obl
 nmod:poss
 nsubj:pass
 aux:pass
 advmod
-root
+advcl
 advmod
 punct
 cc
@@ -48029,7 +48029,7 @@ nmod:poss
 nsubj:pass
 aux:pass
 advmod
-root
+parataxis
 advmod
 punct
 cc
@@ -50774,7 +50774,7 @@ compound:prt
 det
 nsubj:pass
 aux
-root
+ccomp
 compound:prt
 case
 obl
@@ -51359,7 +51359,7 @@ cc
 nmod:poss
 nsubj:pass
 aux:pass
-root
+conj
 compound:prt
 punct
 cc
@@ -51507,7 +51507,7 @@ mark
 det
 nsubj
 aux
-root
+ccomp
 obj
 punct
 cc
@@ -51547,8 +51547,8 @@ obl:agent
 case
 nmod
 punct
-case
-obl
+mark
+discourse
 punct
 nsubj
 root
@@ -53303,7 +53303,7 @@ nsubj
 aux
 acl:relcl
 aux
-root
+conj
 case
 det
 obl
@@ -53776,8 +53776,8 @@ case
 nmod:poss
 nmod
 punct
-case
-obl
+mark
+nsubj
 punct
 vocative
 punct
@@ -54013,7 +54013,7 @@ xcomp
 case
 obl
 advmod
-root
+conj
 amod
 obj
 punct
@@ -54927,11 +54927,11 @@ cc
 mark
 nsubj
 aux
-root
+advcl
 obj
 nsubj
 cop
-acl:relcl
+parataxis
 punct
 advmod
 punct
@@ -57542,11 +57542,11 @@ case
 det
 ccomp
 punct
-case
+mark
 det
-obl
+nsubj
 aux
-root
+advcl
 mark
 det
 compound
@@ -57987,7 +57987,7 @@ acl:relcl
 case
 det
 obl
-root
+parataxis
 obj
 case
 obl
@@ -58198,7 +58198,7 @@ nmod
 punct
 nsubj
 aux
-root
+parataxis
 obj
 punct
 advmod
@@ -59190,13 +59190,13 @@ nsubj
 aux
 advcl
 punct
-case
-obl
+mark
+discourse
 punct
 mark
 nsubj
 aux
-root
+advcl
 det
 obj
 case
@@ -59205,7 +59205,7 @@ nsubj
 aux
 advmod
 advmod
-acl:relcl
+root
 punct
 cc
 case
@@ -59318,7 +59318,7 @@ nsubj
 aux
 acl:relcl
 aux
-root
+parataxis
 advmod
 punct
 cc
@@ -59600,7 +59600,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 det
 obj
 case
@@ -60770,16 +60770,16 @@ nsubj
 aux
 acl:relcl
 punct
-case
+mark
 det
-obl
+nsubj
 case
 obl
 nsubj
 aux
 acl:relcl
 cop
-root
+parataxis
 cc
 conj
 case
@@ -61057,7 +61057,7 @@ punct
 nsubj
 cop
 det
-root
+conj
 case
 nmod
 punct
@@ -61171,7 +61171,7 @@ punct
 advmod
 aux
 nsubj
-root
+conj
 case
 det
 obl
@@ -61953,7 +61953,7 @@ case
 nmod
 aux
 nsubj
-root
+conj
 mark
 nsubj:pass
 aux
@@ -62043,7 +62043,7 @@ case
 obl
 nsubj
 aux
-root
+conj
 case
 det
 obl
@@ -63619,7 +63619,7 @@ det
 obl
 punct
 advmod
-root
+advcl
 det
 obj
 case
@@ -63880,7 +63880,7 @@ discourse
 mark
 nsubj
 aux
-root
+conj
 case
 det
 obl
@@ -64073,7 +64073,7 @@ compound
 nsubj
 cop
 advmod
-root
+conj
 case
 nmod:poss
 obl
@@ -64087,7 +64087,7 @@ nsubj
 cop
 case
 det
-root
+conj
 punct
 cc
 case
@@ -64694,7 +64694,7 @@ obl
 punct
 amod
 nsubj
-root
+conj
 punct
 advcl
 case
@@ -65672,7 +65672,7 @@ case
 det
 obl
 nsubj
-root
+conj
 det
 obj
 case
@@ -65996,12 +65996,12 @@ case
 nmod:poss
 obl
 punct
-case
+mark
 obl
 punct
 nsubj
 nsubj
-root
+advcl
 mark
 nsubj
 ccomp
@@ -67371,7 +67371,7 @@ discourse
 punct
 nsubj
 aux
-root
+conj
 compound:prt
 amod
 obj
@@ -67387,10 +67387,10 @@ punct
 cc
 det
 obj
-mark
+advmod
 nsubj
 aux
-acl:relcl
+conj
 compound:prt
 case
 det
@@ -67520,12 +67520,12 @@ ccomp
 punct
 cc
 nsubj
-root
+conj
 case
 det
 obl
 punct
-root
+parataxis
 case
 det
 obl
@@ -67585,7 +67585,7 @@ nmod:poss
 obl
 punct
 advmod
-root
+ccomp
 obj
 advmod
 mark
@@ -67600,14 +67600,14 @@ case
 det
 nmod
 punct
-case
+mark
 obl
 punct
 nsubj
 cop
 det
 amod
-root
+advcl
 case
 det:predet
 det
@@ -68653,7 +68653,7 @@ amod
 obj
 aux
 advmod
-root
+conj
 xcomp
 punct
 cc
@@ -68860,7 +68860,7 @@ discourse
 punct
 nsubj
 aux
-root
+conj
 compound:prt
 case
 det
@@ -69045,7 +69045,7 @@ det
 obj
 advmod
 punct
-root
+parataxis
 nsubj
 ccomp
 xcomp
@@ -70993,7 +70993,7 @@ case
 det
 nmod
 punct
-root
+conj
 advmod
 nmod:poss
 obj
@@ -71368,7 +71368,7 @@ nsubj
 punct
 cc
 nsubj
-root
+conj
 amod
 obj
 nsubj
@@ -71379,7 +71379,7 @@ det
 obl
 punct
 cc
-nsubj
+obj
 nsubj
 conj
 mark
@@ -71528,7 +71528,7 @@ advmod
 punct
 nsubj
 aux
-root
+conj
 det
 obj
 case
@@ -71666,7 +71666,7 @@ obj
 nsubj
 acl:relcl
 aux
-acl:relcl
+ccomp
 amod
 nummod
 obl:unmarked
@@ -72194,7 +72194,7 @@ nmod
 punct
 cc
 nsubj
-root
+conj
 case
 obl
 punct
@@ -72259,7 +72259,7 @@ case
 obl
 nsubj
 advmod
-root
+conj
 mark
 nmod:poss
 nsubj
@@ -72469,7 +72469,7 @@ appos
 punct
 cc
 nsubj
-root
+conj
 case
 det
 obl
@@ -72674,7 +72674,7 @@ obj
 punct
 cc
 nsubj
-root
+conj
 iobj
 det
 obj
@@ -72696,7 +72696,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 det
 obj
 case
@@ -72987,7 +72987,7 @@ punct
 cc
 amod
 nsubj
-root
+parataxis
 advmod
 mark
 nsubj
@@ -73584,7 +73584,7 @@ cc
 nmod:poss
 nsubj
 cop
-root
+conj
 punct
 nmod:poss
 nsubj:pass
@@ -73671,7 +73671,7 @@ nsubj
 case
 nmod
 aux
-root
+conj
 obj
 mark
 nsubj
@@ -73757,7 +73757,7 @@ nsubj
 cop
 det
 amod
-root
+conj
 punct
 parataxis
 mark
@@ -74427,7 +74427,7 @@ nmod:poss
 conj
 cop
 amod
-root
+conj
 case
 det
 nmod
@@ -74597,7 +74597,7 @@ case
 det
 nmod
 aux:pass
-root
+conj
 punct
 obj
 nsubj
@@ -74745,7 +74745,7 @@ det
 obl
 aux
 nsubj
-root
+conj
 obj
 punct
 cc
@@ -74849,7 +74849,7 @@ vocative
 punct
 nsubj
 aux
-root
+conj
 case
 det
 amod
@@ -74994,7 +74994,7 @@ nmod
 cop
 det
 amod
-root
+conj
 punct
 cc
 nsubj
@@ -75094,7 +75094,7 @@ appos
 punct
 cc
 nsubj
-root
+conj
 det
 obj
 punct
@@ -75464,7 +75464,7 @@ acl:relcl
 punct
 cc
 nsubj
-root
+conj
 det
 obj
 punct
@@ -76127,7 +76127,7 @@ punct
 det
 nsubj
 aux
-root
+conj
 amod
 obj
 case
@@ -76405,7 +76405,7 @@ det
 amod
 cc
 conj
-root
+conj
 punct
 cc
 det
@@ -76494,7 +76494,7 @@ punct
 cc
 nsubj
 cop
-root
+conj
 mark
 xcomp
 compound:prt
@@ -76510,7 +76510,7 @@ conj
 punct
 cc
 nsubj
-root
+conj
 det
 obj
 case
@@ -76599,7 +76599,7 @@ punct
 cc
 aux
 nsubj
-root
+conj
 mark
 nsubj
 aux
@@ -77571,7 +77571,7 @@ cc
 mark
 nsubj
 aux
-advcl
+conj
 case
 det
 obl
@@ -77877,7 +77877,7 @@ discourse
 punct
 advmod
 det
-root
+ccomp
 case
 nmod
 punct
@@ -79861,7 +79861,7 @@ cc
 nsubj
 cop
 advmod
-root
+conj
 case
 obl
 punct
@@ -81455,9 +81455,9 @@ ccomp
 case
 nmod
 punct
-case
-obl
-root
+mark
+nsubj
+advcl
 case
 obl
 mark
@@ -82298,7 +82298,7 @@ punct
 cc
 nsubj
 det
-root
+conj
 advmod
 case
 nummod
@@ -82690,7 +82690,7 @@ advcl
 punct
 cc
 expl
-root
+conj
 det
 amod
 nsubj
@@ -85933,7 +85933,7 @@ punct
 nmod:poss
 nsubj
 aux
-root
+conj
 obj
 case
 case
@@ -89020,7 +89020,7 @@ case
 nmod:poss
 nmod
 aux:pass
-root
+conj
 punct
 cc
 expl
@@ -89048,7 +89048,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 mark
 expl
 aux
@@ -89532,7 +89532,7 @@ obl
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -91962,7 +91962,7 @@ amod
 obj
 aux
 nsubj
-root
+conj
 case
 det
 obl
@@ -92122,7 +92122,7 @@ nmod
 punct
 cc
 nsubj
-root
+conj
 det
 nsubj
 aux
@@ -92131,7 +92131,7 @@ obj
 punct
 cc
 nsubj
-root
+conj
 det:predet
 nsubj
 aux
@@ -92642,7 +92642,7 @@ obj
 nsubj
 aux
 advmod
-root
+advcl
 obj
 punct
 advmod
@@ -94490,7 +94490,7 @@ punct
 mark
 nsubj:pass
 aux:pass
-root
+advcl
 compound:prt
 case
 case
@@ -95053,7 +95053,7 @@ nsubj
 aux
 cop
 nmod:poss
-root
+conj
 punct
 discourse
 nsubj
@@ -95182,7 +95182,7 @@ cop
 nsubj
 advmod
 nmod:poss
-root
+conj
 punct
 discourse
 punct
@@ -95333,8 +95333,8 @@ cop
 advmod
 parataxis
 punct
-case
-obl
+mark
+discourse
 advmod
 csubj
 case
@@ -96925,7 +96925,7 @@ advcl
 obj
 nsubj
 aux
-root
+conj
 amod
 obj
 punct
@@ -97385,7 +97385,7 @@ root
 punct
 cc
 nsubj
-root
+conj
 obj
 advmod
 punct
@@ -97404,7 +97404,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 nmod:poss
 obj
 punct
@@ -98117,7 +98117,7 @@ advmod
 punct
 cc
 expl
-root
+parataxis
 mark
 xcomp
 mark
@@ -100270,7 +100270,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 case
 nmod:poss
 obl
@@ -100427,12 +100427,12 @@ obj
 punct
 cc
 nsubj
-root
+conj
 obj
 punct
 cc
 nsubj
-root
+conj
 case
 obl
 punct
@@ -100631,14 +100631,14 @@ nsubj
 advmod
 case
 det
-root
+conj
 punct
 cc
 cop
 advmod
 nsubj
 det
-root
+conj
 nsubj
 aux
 acl:relcl
@@ -104085,7 +104085,7 @@ nsubj
 cc
 nmod:poss
 conj
-root
+conj
 advmod
 cc
 conj
@@ -104597,7 +104597,7 @@ punct
 cc
 nsubj
 cop
-root
+conj
 case
 det
 amod
@@ -106392,7 +106392,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -108123,7 +108123,7 @@ cc
 nsubj
 cop
 det
-root
+conj
 case
 amod
 nmod
@@ -108497,14 +108497,14 @@ obj
 case
 nmod
 punct
-case
-obl
+advmod
+discourse
 punct
 aux
 advmod
 nmod:poss
 nsubj
-root
+conj
 det
 obj
 punct
@@ -108513,7 +108513,7 @@ aux
 nsubj
 advmod
 advmod
-root
+conj
 obj
 case
 obl
@@ -108521,7 +108521,7 @@ punct
 cc
 nsubj:pass
 aux:pass
-root
+conj
 case
 obl
 punct
@@ -108579,7 +108579,7 @@ punct
 cc
 advmod
 nsubj
-root
+conj
 case
 obl
 punct
@@ -113168,7 +113168,7 @@ nsubj
 cop
 advmod
 advmod
-root
+ccomp
 case
 obl
 punct
@@ -113816,7 +113816,7 @@ case
 nmod
 nsubj
 det
-root
+conj
 advmod
 advmod
 case
@@ -113849,7 +113849,7 @@ cop
 det
 nsubj
 advmod
-parataxis
+conj
 case
 det
 obl
@@ -118655,7 +118655,7 @@ obj
 punct
 cc
 nsubj
-root
+conj
 case
 obl
 mark
@@ -118741,7 +118741,7 @@ nsubj
 advmod
 det
 amod
-root
+parataxis
 punct
 aux
 nsubj
@@ -118827,7 +118827,7 @@ discourse
 punct
 nsubj
 cop
-root
+conj
 case
 det
 obl
@@ -125263,7 +125263,7 @@ punct
 nsubj
 cop
 advmod
-root
+conj
 punct
 nsubj
 aux
@@ -125343,7 +125343,7 @@ cc
 advmod
 expl
 aux:pass
-root
+conj
 mark
 punct
 advmod
@@ -126529,7 +126529,7 @@ nmod
 aux:pass
 advmod
 advmod
-root
+conj
 punct
 advmod
 det
@@ -126987,7 +126987,7 @@ aux
 advcl
 advmod
 nsubj
-root
+conj
 det
 obj
 obj
@@ -126999,7 +126999,7 @@ obl
 punct
 nsubj
 aux
-root
+ccomp
 case
 nmod:poss
 obl
@@ -129157,7 +129157,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 cc
 conj
 case
@@ -129823,7 +129823,7 @@ xcomp
 punct
 cc
 advmod
-root
+conj
 det
 obj
 case
@@ -132800,7 +132800,7 @@ discourse
 punct
 nsubj
 aux
-root
+conj
 punct
 cc
 nsubj
@@ -133812,7 +133812,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 mark
 xcomp
 case
@@ -133832,14 +133832,14 @@ punct
 aux:pass
 nsubj:pass
 advmod
-parataxis
+ccomp
 case
 det
 obl
 punct
 cc
 nsubj
-root
+conj
 case
 obl
 punct
@@ -134272,7 +134272,7 @@ acl:relcl
 punct
 aux
 nsubj
-root
+ccomp
 advmod
 case
 det
@@ -134788,7 +134788,7 @@ cc
 advmod
 nsubj
 aux
-root
+ccomp
 mark
 det
 nsubj
@@ -135043,7 +135043,7 @@ punct
 cc
 nsubj
 advmod
-root
+conj
 advmod
 case
 case
@@ -135339,7 +135339,7 @@ amod
 conj
 punct
 aux
-root
+conj
 compound:prt
 nmod:poss
 obj
@@ -136779,7 +136779,7 @@ nsubj
 case
 det
 nmod
-root
+conj
 xcomp
 case
 det
@@ -137640,7 +137640,7 @@ punct
 cc
 nsubj:pass
 aux:pass
-root
+conj
 punct
 cc
 det
@@ -140425,7 +140425,7 @@ case
 obl
 advmod
 punct
-parataxis
+ccomp
 iobj
 mark
 det
@@ -141465,7 +141465,7 @@ obj
 punct
 cc
 nsubj
-root
+conj
 case
 obl
 punct
@@ -142037,7 +142037,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 det
 nsubj
 punct
@@ -142557,7 +142557,7 @@ mark
 aux:pass
 xcomp
 advmod
-root
+conj
 punct
 cc
 advmod
@@ -144093,7 +144093,7 @@ discourse
 punct
 nsubj
 aux
-root
+ccomp
 case
 obl
 mark
@@ -144214,7 +144214,7 @@ nmod
 punct
 cc
 nsubj
-root
+conj
 obj
 case
 det
@@ -144273,7 +144273,7 @@ cc
 nsubj
 advmod
 aux
-root
+conj
 obj
 punct
 conj
@@ -145429,7 +145429,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 obj
 advmod
 punct
@@ -146341,7 +146341,7 @@ punct
 advmod
 aux
 nsubj
-root
+ccomp
 det
 obj
 obj
@@ -147157,7 +147157,7 @@ det
 nsubj:pass
 aux:pass
 advmod
-root
+conj
 case
 det
 obl:agent
@@ -149245,7 +149245,7 @@ punct
 cc
 case
 det
-nmod
+conj
 obj
 nsubj:pass
 aux
@@ -149263,7 +149263,7 @@ mark
 nsubj
 aux
 advmod
-acl
+ccomp
 nmod:poss
 obj
 case
@@ -150780,7 +150780,7 @@ nmod
 punct
 nsubj
 aux
-root
+conj
 advmod
 case
 det
@@ -154038,7 +154038,7 @@ punct
 cc
 nsubj
 advmod
-root
+conj
 case
 obl
 nmod:poss
@@ -154069,7 +154069,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 compound:prt
 case
 det
@@ -154135,7 +154135,7 @@ cc
 nsubj:pass
 aux:pass
 advmod
-root
+conj
 case
 nmod:poss
 obl
@@ -156648,7 +156648,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 compound:prt
 case
 det
@@ -156762,7 +156762,7 @@ root
 punct
 cc
 nsubj
-root
+conj
 case
 obl
 punct
@@ -156927,7 +156927,7 @@ cc
 discourse
 punct
 nsubj
-root
+conj
 mark
 nsubj
 aux
@@ -156942,7 +156942,7 @@ ccomp
 punct
 cc
 nsubj
-root
+conj
 advmod
 mark
 nsubj:pass
@@ -160364,7 +160364,7 @@ obl
 punct
 nsubj:pass
 aux:pass
-root
+parataxis
 case
 det
 amod
@@ -161245,7 +161245,7 @@ punct
 advmod
 nsubj
 aux
-root
+ccomp
 case
 det
 obl
@@ -162719,7 +162719,7 @@ cc
 discourse
 punct
 nsubj
-root
+conj
 case
 obl
 punct
@@ -165723,7 +165723,7 @@ case
 nmod
 aux
 advmod
-root
+conj
 nmod:poss
 obj
 punct
@@ -166159,7 +166159,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 det
 obj
 case
@@ -166536,7 +166536,7 @@ obl
 aux:pass
 advcl
 punct
-root
+ccomp
 det
 obj
 mark
@@ -169558,6 +169558,7 @@ advcl
 case
 amod
 obl:agent
+advmod
 nsubj
 aux
 root
@@ -171944,7 +171945,7 @@ case
 nmod
 cop
 det
-root
+conj
 obj
 nsubj
 aux
@@ -172915,7 +172916,7 @@ obl
 punct
 cc
 nsubj
-root
+parataxis
 mark
 nmod:poss
 nsubj
@@ -172932,7 +172933,7 @@ discourse
 punct
 nsubj
 aux
-root
+parataxis
 obj
 case
 obl
@@ -173755,8 +173756,8 @@ obj
 case
 obl
 punct
-case
-obl
+mark
+discourse
 punct
 mark
 det
@@ -173787,7 +173788,7 @@ punct
 discourse
 punct
 nsubj
-root
+advcl
 compound:prt
 det
 obj
@@ -176267,7 +176268,7 @@ punct
 cc
 det
 nsubj
-root
+conj
 cc
 conj
 det
@@ -176938,7 +176939,7 @@ nmod
 punct
 cc
 nsubj
-root
+conj
 nmod:poss
 obj
 case
@@ -177345,7 +177346,7 @@ nmod
 punct
 nsubj
 cop
-parataxis
+ccomp
 mark
 xcomp
 cc
@@ -177360,7 +177361,7 @@ acl
 nmod:poss
 obj
 punct
-root
+conj
 advmod
 cc
 conj
@@ -177624,7 +177625,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 case
 obl
 punct
@@ -178850,7 +178851,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 det
 obj
 case
@@ -178990,7 +178991,7 @@ nmod
 punct
 cc
 advmod
-root
+conj
 det
 obj
 case
@@ -182643,7 +182644,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -182662,7 +182663,7 @@ compound:prt
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -183119,7 +183120,7 @@ obj
 punct
 cc
 nsubj
-root
+conj
 cc
 conj
 obj
@@ -183635,7 +183636,7 @@ advmod
 punct
 nsubj
 aux
-root
+ccomp
 punct
 aux
 advmod
@@ -183647,7 +183648,7 @@ punct
 cc
 advmod
 nsubj
-root
+conj
 det
 obj
 case
@@ -188251,7 +188252,7 @@ det
 obj
 nsubj:pass
 aux:pass
-root
+conj
 case
 det
 obl
@@ -188476,7 +188477,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 det
 obj
 case
@@ -188826,7 +188827,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -189121,7 +189122,7 @@ det
 nummod
 cc
 conj
-root
+conj
 case
 det
 nmod
@@ -191595,7 +191596,7 @@ compound:prt
 case
 obl
 nsubj
-root
+ccomp
 mark
 xcomp
 compound:prt
@@ -192036,7 +192037,7 @@ nmod:poss
 conj
 cop
 advmod
-root
+conj
 punct
 advmod
 nsubj
@@ -192154,7 +192155,7 @@ conj
 obj
 compound:prt
 punct
-root
+ccomp
 nsubj
 aux
 ccomp
@@ -194170,7 +194171,7 @@ obj
 advmod
 nsubj
 aux
-root
+conj
 mark
 xcomp
 obj
@@ -196479,7 +196480,7 @@ xcomp
 punct
 cc
 nsubj
-root
+conj
 mark
 nsubj
 cop
@@ -196771,7 +196772,7 @@ acl:relcl
 punct
 cc
 advmod
-root
+conj
 det
 nummod
 cc
@@ -196790,7 +196791,7 @@ conj
 nmod
 nsubj
 aux
-root
+conj
 nmod:poss
 obj
 cc
@@ -197271,7 +197272,7 @@ cc
 nsubj
 aux
 advmod
-root
+conj
 advmod
 mark
 nsubj
@@ -197356,7 +197357,7 @@ cc
 advmod
 nsubj
 aux
-root
+conj
 compound:prt
 det
 advmod
@@ -199806,7 +199807,7 @@ obl
 punct
 cc
 expl
-root
+parataxis
 mark
 xcomp
 mark
@@ -199924,7 +199925,7 @@ obl
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -200025,7 +200026,7 @@ cc
 csubj
 aux:pass
 det
-root
+conj
 case
 nmod:poss
 nmod
@@ -200045,7 +200046,7 @@ discourse
 punct
 nsubj
 aux
-parataxis
+acl:relcl
 det
 amod
 obj
@@ -200157,11 +200158,11 @@ nmod:poss
 amod
 obl
 punct
-case
-obl
+cc
+discourse
 punct
 nsubj
-root
+parataxis
 mark
 obj
 nsubj
@@ -203615,7 +203616,7 @@ obl
 punct
 mark
 nsubj
-root
+advcl
 advmod
 cc
 conj
@@ -203627,7 +203628,7 @@ case
 obl
 punct
 nsubj
-root
+conj
 advmod
 cc
 conj
@@ -204613,7 +204614,7 @@ punct
 cc
 advmod
 nsubj
-root
+conj
 nmod:poss
 obj
 punct
@@ -204652,7 +204653,7 @@ cc
 nsubj
 cop
 det
-root
+conj
 obj
 nsubj
 acl:relcl
@@ -205578,7 +205579,7 @@ punct
 cc
 advmod
 nsubj
-root
+parataxis
 nmod:poss
 obj
 case
@@ -207400,7 +207401,7 @@ discourse
 punct
 nsubj
 cop
-root
+conj
 punct
 cc
 aux
@@ -207853,7 +207854,7 @@ nmod:poss
 amod
 conj
 aux:pass
-root
+conj
 punct
 cc
 det
@@ -207884,7 +207885,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 mark
 xcomp
 advmod
@@ -208151,7 +208152,7 @@ advmod
 punct
 cc
 advmod
-root
+conj
 det
 nummod
 cc
@@ -209394,7 +209395,7 @@ punct
 cc
 nsubj:pass
 aux:pass
-root
+conj
 case
 det
 obl:agent
@@ -209718,7 +209719,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -209737,7 +209738,7 @@ acl:relcl
 punct
 cc
 advmod
-root
+conj
 det
 obj
 case
@@ -210807,7 +210808,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 cc
 conj
 iobj
@@ -210888,7 +210889,7 @@ obj
 punct
 cc
 nsubj
-root
+conj
 nmod:poss
 obj
 case
@@ -214108,7 +214109,7 @@ cc
 nsubj
 cop
 det
-root
+conj
 obj
 nsubj
 acl:relcl
@@ -215476,7 +215477,7 @@ obj
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -216827,7 +216828,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 cc
 conj
 advmod
@@ -216839,7 +216840,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 amod
 obj
 cc
@@ -216927,7 +216928,7 @@ acl:relcl
 punct
 cc
 advmod
-root
+parataxis
 advmod
 det
 nummod
@@ -217762,7 +217763,7 @@ discourse
 punct
 nsubj
 aux
-root
+conj
 case
 nmod:poss
 obl
@@ -218890,7 +218891,7 @@ punct
 mark
 nsubj
 aux
-root
+advcl
 iobj
 case
 nmod:poss
@@ -219153,7 +219154,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 nmod:poss
 obj
 case
@@ -219244,7 +219245,7 @@ nmod
 punct
 aux
 aux:pass
-root
+parataxis
 advmod
 mark
 nsubj
@@ -221379,7 +221380,7 @@ obl
 punct
 cc
 expl
-root
+conj
 det
 nsubj
 acl
@@ -222259,7 +222260,7 @@ discourse
 punct
 nsubj
 aux
-root
+conj
 case
 obl
 punct
@@ -222277,7 +222278,7 @@ advmod
 punct
 nsubj
 aux
-parataxis
+conj
 case
 obl
 mark
@@ -223648,7 +223649,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 det
 amod
 nsubj
@@ -223674,7 +223675,7 @@ obl
 det
 nsubj
 aux
-root
+conj
 punct
 cc
 det
@@ -223707,11 +223708,11 @@ cc
 conj
 obl
 punct
-case
+mark
 det
-obl
+nsubj:pass
 aux:pass
-root
+advcl
 mark
 nsubj
 cop
@@ -223893,7 +223894,7 @@ acl:relcl
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -224542,7 +224543,7 @@ xcomp
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -224572,7 +224573,7 @@ punct
 advmod
 nsubj
 aux
-parataxis
+ccomp
 case
 det
 obl
@@ -224886,7 +224887,7 @@ obl
 punct
 cc
 advmod
-root
+conj
 det
 amod
 obj
@@ -224997,7 +224998,7 @@ det
 nsubj
 aux
 advmod
-root
+conj
 cc
 conj
 xcomp
@@ -225154,7 +225155,7 @@ cc
 conj
 obl
 nsubj
-root
+conj
 mark
 xcomp
 xcomp
@@ -225171,7 +225172,7 @@ obl
 nsubj
 aux
 advmod
-root
+conj
 nmod:poss
 obj
 punct
@@ -226929,7 +226930,7 @@ discourse
 punct
 nsubj
 aux
-root
+parataxis
 det
 nsubj
 aux
@@ -226962,7 +226963,7 @@ discourse
 punct
 det
 nsubj
-root
+conj
 punct
 parataxis
 det
@@ -228252,7 +228253,7 @@ nsubj
 aux
 cop
 nmod:poss
-root
+conj
 case
 det
 obl
@@ -228354,7 +228355,7 @@ obj
 punct
 cc
 nsubj
-root
+conj
 mark
 det
 nsubj:pass
@@ -232499,7 +232500,7 @@ det
 nsubj
 cop
 case
-root
+conj
 punct
 cc
 det
@@ -232758,7 +232759,7 @@ advcl
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -236601,7 +236602,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -236625,7 +236626,7 @@ punct
 advmod
 aux
 nsubj
-parataxis
+conj
 advmod
 case
 det
@@ -237087,7 +237088,7 @@ det:predet
 det
 nsubj:pass
 aux:pass
-root
+conj
 case
 obl:agent
 case
@@ -240623,7 +240624,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 obj
 case
 obl
@@ -240902,7 +240903,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 case
 det
 obl
@@ -242008,7 +242009,7 @@ cc
 advmod
 cop
 det
-root
+conj
 case
 det
 nmod
@@ -242828,7 +242829,7 @@ case
 nmod:poss
 nmod
 aux:pass
-root
+conj
 punct
 cc
 advmod
@@ -244841,7 +244842,7 @@ ccomp
 punct
 cc
 nsubj
-root
+conj
 cc
 conj
 case
@@ -244897,7 +244898,7 @@ advcl
 punct
 cc
 nsubj
-root
+conj
 case
 obl
 punct
@@ -244906,7 +244907,7 @@ det
 obl
 aux
 nsubj
-root
+ccomp
 punct
 cc
 expl
@@ -245124,10 +245125,10 @@ aux
 advmod
 advcl
 punct
-advmod
+cc
 aux
 expl
-parataxis
+conj
 nsubj
 case
 nmod
@@ -248034,7 +248035,7 @@ punct
 obj
 aux
 nsubj
-root
+conj
 punct
 cc
 punct
@@ -248042,7 +248043,7 @@ obl:unmarked
 aux
 nsubj:pass
 aux:pass
-root
+conj
 punct
 case
 nmod:poss
@@ -249209,7 +249210,7 @@ cc
 nsubj
 cop
 det
-root
+parataxis
 cc
 det
 conj
@@ -251511,7 +251512,7 @@ punct
 nmod:poss
 nsubj
 cop
-root
+parataxis
 punct
 cc
 advmod
@@ -251921,7 +251922,7 @@ nsubj
 aux
 cop
 det
-root
+conj
 case
 det
 nmod
@@ -251941,7 +251942,7 @@ advcl
 iobj
 nsubj
 aux
-root
+conj
 nmod:poss
 obj
 mark
@@ -253188,7 +253189,7 @@ punct
 cc
 det
 nsubj
-root
+conj
 cc
 aux
 conj
@@ -253528,7 +253529,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -253656,7 +253657,7 @@ xcomp
 punct
 cc
 nsubj
-root
+conj
 det:predet
 obj
 obj
@@ -254539,7 +254540,7 @@ nsubj
 aux
 nsubj
 advmod
-root
+ccomp
 case
 det:predet
 det
@@ -255437,7 +255438,7 @@ punct
 cc
 nsubj
 aux
-root
+parataxis
 mark
 xcomp
 mark
@@ -255539,7 +255540,7 @@ case
 det
 nmod
 aux:pass
-root
+ccomp
 punct
 det
 nsubj
@@ -256900,7 +256901,7 @@ punct
 cc
 nsubj
 aux
-root
+parataxis
 obj
 punct
 mark
@@ -258538,7 +258539,7 @@ obl
 punct
 cc
 nsubj
-root
+conj
 case
 obl
 punct
@@ -259213,7 +259214,7 @@ nsubj
 punct
 cc
 nsubj
-root
+conj
 punct
 obj
 aux
@@ -260079,7 +260080,7 @@ nsubj
 punct
 appos
 punct
-root
+conj
 det
 obj
 case
@@ -260678,14 +260679,14 @@ cop
 nmod:poss
 acl:relcl
 punct
-case
+mark
 case
 det
 obl
 aux
 nsubj:pass
 aux:pass
-root
+advcl
 case
 det
 amod
@@ -260789,7 +260790,7 @@ nsubj
 cop
 nmod:poss
 case
-root
+parataxis
 punct
 cc
 mark
@@ -263300,7 +263301,7 @@ punct
 mark
 aux
 nsubj
-root
+advcl
 mark
 nsubj
 aux
@@ -264228,7 +264229,7 @@ nmod:poss
 obl
 punct
 aux:pass
-root
+conj
 case
 det
 obl
@@ -264951,7 +264952,7 @@ mark
 det
 nsubj
 aux
-root
+advcl
 obj
 case
 det:predet
@@ -265674,7 +265675,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 case
 det
 obl
@@ -265695,7 +265696,7 @@ cc
 advmod
 nsubj
 aux
-root
+conj
 case
 obl
 cc
@@ -267896,7 +267897,7 @@ cc
 conj
 conj
 aux
-root
+conj
 advmod
 punct
 cc
@@ -267981,7 +267982,7 @@ cc
 discourse
 nsubj
 aux
-root
+conj
 case
 fixed
 det
@@ -268315,7 +268316,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -268673,7 +268674,7 @@ cc
 discourse
 nsubj
 aux
-root
+conj
 nmod:poss
 obj
 case
@@ -268901,7 +268902,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 obj
 advmod
 punct
@@ -269451,7 +269452,7 @@ case
 det
 obl
 nsubj
-root
+parataxis
 case
 obl
 punct
@@ -269662,7 +269663,7 @@ case
 det
 nmod
 aux
-root
+conj
 case
 obl
 punct
@@ -272696,7 +272697,7 @@ discourse
 punct
 nsubj
 cop
-root
+conj
 punct
 cc
 det
@@ -273407,7 +273408,7 @@ discourse
 punct
 nsubj
 aux
-root
+conj
 obj
 advmod
 mark
@@ -273565,7 +273566,7 @@ det
 nsubj
 cop
 case
-root
+conj
 nummod
 case
 obl
@@ -274863,7 +274864,7 @@ punct
 nsubj
 flat
 aux
-root
+conj
 obj
 case
 obl
@@ -275724,7 +275725,7 @@ det
 obl
 case
 nmod
-root
+conj
 obj
 flat
 punct
@@ -276072,7 +276073,7 @@ obj
 punct
 cc
 expl
-root
+conj
 amod
 amod
 nsubj
@@ -277877,7 +277878,7 @@ cc
 expl
 aux
 nsubj
-root
+conj
 obj
 punct
 cc
@@ -277943,7 +277944,7 @@ cc
 expl
 aux
 cop
-root
+conj
 amod
 case
 det
@@ -277971,7 +277972,7 @@ cc
 advmod
 nsubj
 aux
-root
+conj
 case
 obl
 mark
@@ -278444,7 +278445,7 @@ nsubj
 case
 nmod:poss
 nmod
-root
+conj
 case
 obl
 advmod
@@ -278924,7 +278925,7 @@ acl:relcl
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -278964,7 +278965,7 @@ punct
 cc
 nsubj
 cop
-root
+conj
 punct
 cc
 nsubj
@@ -279225,11 +279226,11 @@ compound:prt
 case
 obl
 punct
-root
+discourse
 punct
 nsubj
 aux
-ccomp
+conj
 det
 obj
 punct
@@ -283104,14 +283105,14 @@ det
 nsubj
 case
 nmod
-root
+parataxis
 case
 obl
 punct
 advmod
 det
 nsubj
-root
+ccomp
 case
 obl
 punct
@@ -283134,11 +283135,11 @@ punct
 cc
 advmod
 nsubj
-root
+conj
 case
 obl
 punct
-root
+parataxis
 obj
 compound:prt
 case
@@ -283178,7 +283179,7 @@ conj
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -283199,7 +283200,7 @@ mark
 nmod:poss
 nsubj
 aux
-root
+conj
 obj
 punct
 cc
@@ -284409,7 +284410,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -284493,7 +284494,7 @@ nmod
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -284539,7 +284540,7 @@ obl
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -286741,7 +286742,7 @@ obl
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -286776,7 +286777,7 @@ conj
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -286792,7 +286793,7 @@ obl
 punct
 det
 amod
-conj
+obj
 punct
 cc
 conj
@@ -287022,7 +287023,7 @@ xcomp
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -288326,7 +288327,7 @@ det
 amod
 nsubj:pass
 aux:pass
-root
+conj
 punct
 advmod
 nsubj
@@ -288362,7 +288363,7 @@ cc
 nsubj
 advmod
 nmod:unmarked
-root
+conj
 det
 amod
 xcomp
@@ -288414,7 +288415,7 @@ det
 nmod
 advmod
 aux:pass
-root
+conj
 case
 obl
 punct
@@ -288515,7 +288516,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 det
 obj
 case
@@ -288613,7 +288614,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 det
 obj
 case
@@ -289044,7 +289045,7 @@ det
 nsubj
 case
 nmod
-root
+conj
 case
 obl
 punct
@@ -289321,7 +289322,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 det
 obj
 case
@@ -290203,7 +290204,7 @@ nmod:poss
 nmod
 aux
 nsubj
-root
+conj
 det
 advmod
 amod
@@ -293407,7 +293408,7 @@ punct
 cc
 nsubj
 aux
-root
+conj
 det:predet
 det
 obj
@@ -294034,7 +294035,7 @@ obl:unmarked
 punct
 cc
 expl
-root
+conj
 mark
 xcomp
 mark
@@ -295238,7 +295239,7 @@ cop
 amod
 cc
 conj
-root
+conj
 case
 fixed
 det
@@ -299155,7 +299156,7 @@ nsubj
 case
 det
 nmod
-root
+conj
 case
 obl
 case
@@ -300446,7 +300447,7 @@ discourse
 punct
 det
 nsubj
-root
+advcl
 amod
 obj
 punct
@@ -302286,7 +302287,7 @@ discourse
 punct
 nsubj
 aux
-root
+conj
 advmod
 case
 case

@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "documentation": "Token-level restorations of 1830 readings where post-1837 deletions collapsed clausal structure obscured to readers. Applied as preprocessing before Stanza parse in scripts/bofm_generate.py read_v0(). Em-dashes are not used (punctuation has zero force in our system); structural signal is restored by inserting the original word(s) per Skousen. Source canon: Skousen, Analysis of Textual Variants of the Book of Mormon (3rd ed.) and Critical Text of the Book of Mormon. Each entry must cite the clausal warrant explaining why the deletion obscured the true clause structure.",
+  "restorations": [
+    {
+      "ref": "Alma 37:41",
+      "operation": "insert_after",
+      "anchor": "by small means",
+      "insert": "nevertheless",
+      "source": "Skousen, Analysis of Textual Variants of the Book of Mormon (3rd ed.)",
+      "clausal_warrant": "1837 deletion of the second 'nevertheless' collapsed a parenthetical aside ('it did show unto them marvelous works') into a false apodosis. The 1830 'Nevertheless, because X, nevertheless Y' frame signals that Y is the parenthetical and the TRUE apodosis is the subsequent 'they were slothful, and forgat to exercise their faith and diligence'. Without the restoration, the post-1837 punctuation pulls the reader toward reading 'it did show... marvelous works' as the apodosis of 'because... small means', inverting the meaning.",
+      "added": "2026-06-01"
+    }
+  ]
+}

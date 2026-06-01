@@ -143,8 +143,58 @@ def _build_parses(verses):
     return out
 
 
+_SKOUSEN_PATH = REPO / "data" / "text-files" / "v0-skousen-restorations.json"
+_skousen_cache = None
+
+
+def _load_skousen_restorations():
+    """{(book_slug, chap, verse): [restoration, ...]} from v0-skousen-restorations.json.
+    Restorations are token-level insertions/replacements that restore 1830 readings
+    where post-1837 deletions obscured the clausal structure. Em-dashes are NOT
+    used (punctuation has zero force here); the structural signal is restored by
+    the original word(s)."""
+    global _skousen_cache
+    if _skousen_cache is not None:
+        return _skousen_cache
+    if not _SKOUSEN_PATH.exists():
+        _skousen_cache = {}
+        return _skousen_cache
+    data = json.loads(_SKOUSEN_PATH.read_text(encoding="utf-8"))
+    out = {}
+    book_to_slug = {"1 nephi": "1nephi", "2 nephi": "2nephi", "3 nephi": "3nephi",
+                    "4 nephi": "4nephi", "words of mormon": "words-of-mormon"}
+    for r in data.get("restorations", []):
+        ref = r["ref"].lower()
+        m = re.match(r"^(.+?)\s+(\d+):(\d+)$", ref)
+        if not m: continue
+        book = m.group(1).strip()
+        book = book_to_slug.get(book, book)
+        key = (book, int(m.group(2)), int(m.group(3)))
+        out.setdefault(key, []).append(r)
+    _skousen_cache = out
+    return out
+
+
+def _apply_skousen_restoration(text, restoration):
+    """Apply ONE restoration to a verse's text. insert_after anchors on a token
+    sequence and inserts the new token after the anchor's last occurrence."""
+    op = restoration.get("operation", "insert_after")
+    if op == "insert_after":
+        anchor = restoration["anchor"]
+        insert = restoration["insert"]
+        idx = text.find(anchor)
+        if idx < 0:
+            raise ValueError(f"Skousen anchor not found in verse: anchor={anchor!r}, text={text[:120]!r}")
+        end = idx + len(anchor)
+        return text[:end] + " " + insert + text[end:]
+    raise ValueError(f"Unknown Skousen restoration op: {op}")
+
+
 def read_v0(book):
-    """{(chap, verse): verse_text} from v0-bofm-original (verse-keyed prose)."""
+    """{(chap, verse): verse_text} from v0-bofm-original (verse-keyed prose).
+    Applies Skousen restorations (token-level insertions per
+    data/text-files/v0-skousen-restorations.json) BEFORE Stanza parses. The
+    on-disk v0 file is never modified — restorations apply in-memory only."""
     text = (V0 / BOOKFILE[book]).read_text(encoding="utf-8")
     out, ref = {}, None
     for line in text.splitlines():
@@ -153,7 +203,17 @@ def read_v0(book):
             ref = (int(m.group(2)), int(m.group(3))); out[ref] = ""
         elif ref is not None and line.strip():
             out[ref] = (out[ref] + " " + line.strip()).strip()
+    restorations = _load_skousen_restorations()
+    for (ch, v), verse_text in list(out.items()):
+        for r in restorations.get((book, ch, v), []):
+            verse_text = _apply_skousen_restoration(verse_text, r)
+        out[(ch, v)] = verse_text
     return out
+
+
+def _skousen_affected_verses(book):
+    """[(ch, v), ...] for verses with Skousen restorations in this book."""
+    return [(ch, v) for (b, ch, v) in _load_skousen_restorations() if b == book]
 
 
 CACHE_DIR = Path(os.environ["BOFM_V0_CACHE_DIR"]) if os.environ.get("BOFM_V0_CACHE_DIR") else REPO / "data" / "parses" / "v0-cache"
@@ -170,6 +230,12 @@ def parse_book(book):
         raw = json.loads(cache.read_text(encoding="utf-8"))
         out = {tuple(int(x) for x in k.split(":")): [[Tok.from_dict(d) for d in s]
                for s in sents] for k, sents in raw.items()}
+        affected = _skousen_affected_verses(book)
+        if affected:
+            v0 = read_v0(book)
+            for key in affected:
+                if key in v0:
+                    out[key] = _parse_verse(v0[key])
         _apply_parse_repairs(out)
         return out
     out = _build_parses(read_v0(book))
