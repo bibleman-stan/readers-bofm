@@ -832,6 +832,29 @@ def verse_atu_lines(verse_text, sentences):
         else:
             segs.append({"aid": a, "sent_idx": si, "lo": start, "hi": end, "toks": [t]})
     segs = _rule_passes(segs, sentences)
+    # Generic line-final-CCONJ travel: when a segment ends with a coordinator
+    # ("and"/"or"/"but"/"nor"), move it to the start of the next segment so
+    # "and"/"but" travels with its conjunct rather than hanging at line end.
+    # Fabric-level conj-VERB splits (Alma 33:22/23 class) need this.
+    for i in range(len(segs) - 1):
+        cur = segs[i]
+        nxt = segs[i + 1]
+        trailing = None
+        for t in reversed(cur["toks"]):
+            if t.upos == "PUNCT":
+                continue
+            if t.upos == "CCONJ" and (t.form or "").lower() in ("and", "or", "but", "nor"):
+                trailing = t
+            break
+        if trailing is None:
+            continue
+        idx = cur["toks"].index(trailing)
+        tail_after = cur["toks"][idx + 1:]
+        cur["toks"] = cur["toks"][:idx] + tail_after
+        if cur["toks"]:
+            cur["hi"] = cur["toks"][-1].end
+        nxt["toks"] = [trailing] + nxt["toks"]
+        nxt["lo"] = trailing.start
     lines = [verse_text[s["lo"]:s["hi"]].strip() for s in segs]
     lines = [ln for ln in lines if ln]
     # Punctuation attaches BACKWARD (Stan's convention: a line ends with its

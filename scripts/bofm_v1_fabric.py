@@ -458,10 +458,13 @@ def is_clause_head(tok, by_id=None):
     if base == "ccomp" and by_id is not None:
         h = by_id.get(_i(tok.head))
         # (a) Only DIRECT quotation releases; indirect "say THAT X" keeps the 'that'
-        #     complementizer and binds per R17.
-        has_that = any(_i(c.head) == _i(tok.id) and (c.form or "").lower() == "that"
-                       and ((c.deprel or "") == "mark" or c.upos == "SCONJ")
-                       for c in by_id.values())
+        #     complementizer and binds per R17. Equivalently, ANY subordinating
+        #     mark child ("ask IF ye have read", "wonder WHETHER", "ask WHEN") is
+        #     an interrogative/clausal complement, not a quotation — bind.
+        has_subord = any(_i(c.head) == _i(tok.id)
+                         and ((c.deprel or "") == "mark" or c.upos == "SCONJ")
+                         for c in by_id.values())
+        has_that = has_subord  # backward-compat alias for the subsequent check
         # (b) Don't release when the speech verb is itself in a relative/adnominal
         #     clause ("the word WHICH SAITH ..."): releasing strands the relativizer.
         h_in_relcl = h is not None and ("relcl" in (h.deprel or "")
@@ -507,6 +510,34 @@ def is_clause_head(tok, by_id=None):
                            and (c.deprel or "").split(":")[0] in ("nsubj", "csubj")
                            for c in by_id.values())
             if not own_subj:
+                # Reframed-coordinate carve-out: a subjectless conjunct that
+                # carries its own FRAME mark (if/when/as/though/...) OR an
+                # advcl-frame child with a FRAME mark is NOT gapped ellipsis —
+                # it opens a distinct thought-frame ("..., but if X, [then] Y"
+                # / "...and as X, Y"). Restricted to _FRAME_MARKS so
+                # infinitival purpose "to atone" + xcomp does NOT trigger
+                # (Alma 33:22 "and die to atone" must stay bound). Alma 33:22
+                # (if/but-if conditional pair) + Alma 33:23 (matrix + as-frame
+                # imperative) class.
+                tok_pos = _i(tok.id) or 0
+                own_frame_mark = any(_i(c.head) == _i(tok.id)
+                                     and ((c.deprel or "") == "mark" or c.upos == "SCONJ")
+                                     and (c.form or "").lower() in _FRAME_MARKS
+                                     and (_i(c.id) or 0) < tok_pos
+                                     for c in by_id.values())
+                if own_frame_mark:
+                    return True
+                advcl_with_frame_mark = any(
+                    _i(c.head) == _i(tok.id)
+                    and (c.deprel or "").split(":")[0] == "advcl"
+                    and (_i(c.id) or 0) < tok_pos
+                    and any(_i(g.head) == _i(c.id)
+                            and ((g.deprel or "") == "mark" or g.upos == "SCONJ")
+                            and (g.form or "").lower() in _FRAME_MARKS
+                            for g in by_id.values())
+                    for c in by_id.values())
+                if advcl_with_frame_mark:
+                    return True
                 return False   # subjectless conjunct (gapped subject) -> bind
         return True            # own overt subject -> independent predication -> split
     # Relative clause (acl:relcl) always BINDS to its antecedent. A relativizer-

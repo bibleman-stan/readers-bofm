@@ -924,6 +924,11 @@ IRREGULAR_PAST = {
     'cleave': 'cleft', 'sow': 'sowed', 'bestow': 'bestowed',
     'overshadow': 'overshadowed', 'sorrow': 'sorrowed',
     'buy': 'bought', 'joy': 'rejoiced',
+    # Common regular verbs that appear in coordinated chains with archaic
+    # 'did/will/shall + V1 and V2' — without these in the table, V2 doesn't
+    # propagate the past-tense swap from V1 (Alma 33:19 'did look and live'
+    # rendered as 'looked and live' instead of 'looked and lived').
+    'live': 'lived', 'die': 'died', 'serve': 'served', 'love': 'loved',
 }
 
 # ============================================================================
