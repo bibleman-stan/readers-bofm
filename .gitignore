@@ -50,3 +50,12 @@ data/text-files/lds-scriptures.txt
 
 # Text-Fabric compiled binary cache (regenerated on load)
 data/tf/**/.tf/
+
+# Stanza-parse audit outputs + spray candidate sets (regenerable from scripts/audit_*.py)
+data/parses/audit/
+
+# Generated v2-spray workflow scripts (regenerable from build_spray_workflow.py)
+scripts/workflows/
+
+# Pre-revert scratch backup
+data/text-files/v2-adjudicated/overrides.json.bak
