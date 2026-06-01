@@ -394,11 +394,39 @@ def _forward_frame_bind(segs):
 #                  compelled to be humble; OR RATHER, ... blessed is he that
 #                  believeth..." (here the restated colon has its own copula 'is',
 #                  so it is independently closure-eligible).
-_MARKER_REGISTRY = {"yea", "or rather"}
+#   - "that"     : parallel-subordinator stack opener (framework §2.2 EME extension,
+#                  added 2026-05-31 — petition/promise/declaration matrices with
+#                  chained "that ye/they/we may/might/shall X / that ... Y / that ... Z"
+#                  beats. Each beat passes closure-eligibility via own subject +
+#                  finite modal ("may eat", "might pull down") OR elision-restored
+#                  finite matrix from the prior parallel clause. Canonical case:
+#                  Moroni 4:3 sacrament prayer — "we ask thee ... THAT they may eat
+#                  ... THAT they are willing ... THAT they may have his Spirit". The
+#                  closure-eligibility test (_colon_closure_eligible) filters non-
+#                  qualifying uses mechanically: demonstrative "that day" returns
+#                  False because the marker's head is a NOUN; relative pronoun "the
+#                  day that I shall" returns False because the colon's verb is head-
+#                  internal to the relative clause (no top-level predication with
+#                  head outside colon).
+_MARKER_REGISTRY = {"yea", "or rather", "that"}
 
 
 _VERBA_DICENDI_GEN = {"say", "speak", "cry", "answer", "command", "declare",
                       "exhort", "ask", "tell", "reply", "utter", "proclaim", "preach"}
+# Additional complement-taker matrices whose immediate "that"-complement
+# binds (per framework §2.1 cognition/volition complement rule). Used by the
+# "that"-marker stack-gate to skip splits when the marker is adjacent to one
+# of these (single-complement case). The verbs that take parallel "that"
+# stacks (Moroni 4:3 'ask' — the petition matrix) are NOT in this set when
+# they typically govern the parallel-stack pattern through intervening
+# infinitive/PP material; the 5-token window keeps them out of the immediate
+# guard while still letting the §2.2 stack license the trailing parallels.
+_COMPLEMENT_TAKERS = {"grant", "promise", "desire", "would", "wish", "hope",
+                      "fear", "know", "see", "perceive", "remember", "forget",
+                      "think", "suppose", "believe", "trust", "judge", "deem",
+                      "behold", "learn", "understand", "observe", "swear",
+                      "vow", "doubt", "marvel", "rejoice", "find", "show",
+                      "hear", "insomuch", "plead"}
 _SHORT_ANSWER = {"yea", "nay", "yes", "no"}
 
 
@@ -477,13 +505,29 @@ def _marker_split(segs):
     token whose led colon is closure-eligible (i), and SPLIT the segment at the
     marker onto its own line. This is the framework's only break-GENERATING rule;
     it is quarantined to the closed registry + the closure-eligibility test below."""
+    # Verse-level pattern count for "that"-marker gate (added 2026-05-31): the
+    # parallel-stack signal is a property of the VERSE (a single petition matrix
+    # chains all its purpose beats together), but Stanza often splits the verse
+    # into multiple sentences at semicolons mid-stack. Counting "that <pron>
+    # <modal>" patterns per-segment under-fires when the first purpose beat lives
+    # in a different Stanza sentence than its parallels. Aggregate the pattern
+    # count across all segments of this verse-batch before deciding gates.
+    import re as _re
+    full_text = " ".join(
+        " ".join((tk.form or "") for tk in seg["toks"]) for seg in segs
+    ).lower()
+    n_verse_pattern = len(_re.findall(
+        r"\bthat\s+(they|we|ye|you|he|she|i)\s+"
+        r"(may|might|shall|will|would|do|did|are|is|hath|have|had|art)\b",
+        full_text,
+    ))
     out = []
     for seg in segs:
-        out.extend(_split_one(seg))
+        out.extend(_split_one(seg, n_verse_pattern))
     return out
 
 
-def _split_one(seg):
+def _split_one(seg, n_verse_pattern=0):
     """Split a single segment at EVERY closure-eligible registered marker (a verse
     can stack markers — Alma 32:16 has both 'or rather' and 'yea'). Recurse on the
     tail so a later marker in the same segment also splits."""
@@ -497,11 +541,73 @@ def _split_one(seg):
         is_marker = form in _MARKER_REGISTRY or two in _MARKER_REGISTRY
         if not is_marker:
             continue
+        # "that"-marker stack-count guard (added 2026-05-31 with the "that"-as-
+        # marker extension): §2.2 says a marker splits a parallel STACK of >=2
+        # coordinate beats. A single "that"-complement of a matrix verb (cognition
+        # "I know that X", speech "he said that Y", or the BoFM narrative frame
+        # "and it came to pass that Z") binds under §2.1's complement rule and must
+        # NOT be split. Require >=2 "that"-marker tokens (UD deprel "mark") in
+        # this segment for any "that" split to fire. (yea / or rather are
+        # exempt — they license breaks individually per their registry entries.)
+        if form == "that":
+            # Per-segment lexical-pattern gate: count "that <pron> <modal/aux>"
+            # patterns within THIS segment. Per-verse counting over-fires when
+            # the verse contains unrelated "that"-clauses in different
+            # sentences (Alma 5:46 — "...that I might know..." in one Stanza
+            # sentence + "...that they are true..." in another, both single
+            # complements that should bind, but per-verse count >= 2 wrongly
+            # split each). Per-segment limits the stack signal to ONE Stanza
+            # sentence — Moroni 4:3 still works because its parallel stack
+            # ("that they may eat / that they are willing / that they may have")
+            # lives in one Stanza sentence.
+            import re as _re_local
+            seg_text = " ".join((tk.form or "") for tk in toks).lower()
+            n_seg_pattern = len(_re_local.findall(
+                r"\bthat\s+(they|we|ye|you|he|she|i)\s+"
+                r"(may|might|shall|will|would|do|did|are|is|hath|have|had|art)\b",
+                seg_text,
+            ))
+            if n_seg_pattern < 2:
+                continue
+            # AICTP frame guard (per-"that"): the canonical BoFM narrative
+            # opener "and it came to pass that X" binds the "that"-complement
+            # to the frame (the EME analog of Hebrew wayhi B5). Other §2.2
+            # parallel "that"s in the same verse don't license breaking THIS
+            # frame-complement. Skip if "to pass" or "came to pass" appears
+            # within ~5 tokens preceding this "that".
+            preceding_window = " ".join((toks[k].form or "") for k in range(max(0, j - 5), j)).lower()
+            if "to pass" in preceding_window:
+                continue
+            # Speech / cognition / volition / petition complement-taker guard:
+            # a "that"-complement of these matrix verbs is the verb's own
+            # propositional content (single complement under §2.1, binds). The
+            # guard skips when a complement-taker lemma appears in the 5-token
+            # window immediately preceding this "that". Moroni 4:3's "that
+            # they may eat" is NOT blocked because "ask" is many more tokens
+            # back ("we ask thee in the name of thy Son, Jesus Christ, to bless
+            # and sanctify this bread to the souls of all those who partake of
+            # it; that they may eat"); the §2.2 stack split fires on its later
+            # parallel siblings.
+            preceding_lemmas = {(toks[k].lemma or "").lower()
+                                for k in range(max(0, j - 5), j)}
+            if preceding_lemmas & (_VERBA_DICENDI_GEN | _COMPLEMENT_TAKERS):
+                continue
+            # Participle/preposition guard: a "that" immediately preceded by
+            # an -ing participle ("seeing that", "knowing that", "saying
+            # that") or an adposition ("after that", "before that", "save
+            # that") is a complement of that participle/prep — not a §2.2
+            # parallel-beat opener.
+            prev_tok = toks[j - 1]
+            prev_form = (prev_tok.form or "").lower()
+            if prev_tok.upos == "ADP":
+                continue
+            if prev_tok.upos in ("VERB", "AUX") and prev_form.endswith("ing"):
+                continue
         if _colon_closure_eligible(toks, j):
             lo_split = toks[j].start
             a = {"aid": seg["aid"], "lo": seg["lo"], "hi": lo_split, "toks": toks[:j]}
             b = {"aid": seg["aid"], "lo": lo_split, "hi": seg["hi"], "toks": toks[j:]}
-            return [a] + _split_one(b)
+            return [a] + _split_one(b, n_verse_pattern)
     return [seg]
 
 
@@ -541,6 +647,17 @@ def _colon_closure_eligible(toks, j):
     if not top_verbs:
         return False                           # no top-level predication -> not eligible
     head_verb = min(top_verbs, key=lambda t: int(t.id))
+    # Restrictive-relative guard (added 2026-05-31 with the "that"-as-marker
+    # extension): a colon whose top predication is `acl:relcl` is a restrictive
+    # relative modifying a HEAD NOUN that lives outside the colon — by §2.1
+    # restrictive-relative corollary, the relative binds to its head noun
+    # regardless of internal completeness ("commandments in all things THAT he
+    # shall command us"; "no way THAT he might reclaim them"). It looks
+    # closure-eligible on its own (own subject + finite verb) but the framework
+    # forbids splitting the head from its restrictive modifier. NOT a §2.2
+    # parallel-beat; reject.
+    if (head_verb.deprel or "").split(":")[0] == "acl":
+        return False
     # (a) propositionally complete minus the marker: the colon's top-level predication
     # is finite AND carries its OWN subject within the colon (e.g. "yea, IT BEGINNETH
     # to enlighten" -> own nsubj 'it' + finite 'beginneth"). A bare past participle /
