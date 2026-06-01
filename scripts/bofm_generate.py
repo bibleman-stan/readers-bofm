@@ -11,6 +11,7 @@ Usage (needs atu-method on PYTHONPATH, repo .venv):
   (book, chapter; omit chapter for whole book)
 """
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -155,7 +156,7 @@ def read_v0(book):
     return out
 
 
-CACHE_DIR = REPO / "data" / "parses" / "v0-cache"
+CACHE_DIR = Path(os.environ["BOFM_V0_CACHE_DIR"]) if os.environ.get("BOFM_V0_CACHE_DIR") else REPO / "data" / "parses" / "v0-cache"
 
 
 def parse_book(book):
@@ -262,21 +263,18 @@ def _is_forward_frame(seg):
     """The segment is a forward-incomplete FRAME (framework §2.1 + GNT R9 forward-frame
     analog): its content is ONLY forward-governing leaders + a DEPENDENT clause, with
     NO independent predication of its own -- so it must bind FORWARD to the following
-    segment (its apodosis/matrix). Punctuation-invariant + parse-robust:
-      (i)   the first content token is a forward-frame subordinating leader
-            (`that`/`because`/`if`/`when`/...) tagged as a `mark`/SCONJ (a genuine
-            subordinator -- this is the discriminator that EXCLUDES the relativizer
-            reading: a relative `that`/`which`/`who` heading an `acl:relcl`/`advcl:relcl`
-            binds BACKWARD to its antecedent (framework §2.1 relative corollary, handled
-            in the fabric), it is NOT a forward frame -- "Wo unto them / that join house
-            to house" must NOT bind the relative forward);
-      (ii)  the segment is NOT a relative clause (no relcl verb) -- belt-and-braces with
-            (i) against the relativizer misread;
-      (iii) the segment has NO independent main predication of its own
-            (_seg_independent_predication is False) -- every verb is subordinate.
-    A segment that opens with a subordinator BUT also carries its own main clause
-    ("if ye have faith ye hope for things ...") is NOT a forward frame (it contains its
-    apodosis already) and is left alone."""
+    segment (its apodosis/matrix). Punctuation-invariant + parse-robust:"""
+    # §2.2 parallel-subordinator-stack exemption: a 'that'-led segment that is
+    # a member of a sentence-scoped parallel-stack (>=2 'that' members, AICTP-
+    # filtered, single-complement-filtered per _detect_stack_leaders) owns its
+    # own ATU line — do NOT forward-bind. Sentence-scoped (not per-Stanza-
+    # segment), so immune to the punctuation-driven segmentation that killed
+    # a28deab's per-segment gate.
+    if seg.get("is_stack_member"):
+        return False
+    # (i) first content token is a forward-frame subordinating leader (that/because/
+    # if/when/...) tagged mark/SCONJ; (ii) NOT a relative clause; (iii) no independent
+    # main predication.
     content = [t for t in seg["toks"] if (t.form or "").strip(",;:.!?—–’\"()")]
     if not content:
         return False
@@ -599,10 +597,141 @@ def _is_finite(t, toks):
     return True                                # default: treat as a tensed finite verb
 
 
-def _rule_passes(segs):
+_PARALLEL_STACK_EXCLUDE_VERBS = _VERBA_DICENDI_GEN | {
+    "know", "see", "perceive", "remember", "forget", "think", "suppose",
+    "believe", "trust", "judge", "deem", "behold", "learn", "understand",
+    "observe", "swear", "vow", "doubt", "marvel", "rejoice", "find",
+    "show", "hear", "witness", "promise", "desire", "would", "will",
+    "wish", "hope", "fear", "plead", "command", "cause", "suffer",
+}
+
+
+def _detect_stack_leaders(sentences):
+    """§2.2 parallel-subordinator-stack detection. Sentence-scoped (NOT per-
+    Stanza-segment): immune to the punctuation-driven segmentation that killed
+    a28deab's per-segment count gate.
+
+    A 'that'-mark token leads a §2.2 stack-member ATU iff:
+      1. There are >=2 such 'that'-marks in the SAME sentence,
+      2. The mark is NOT preceded (within 5 content tokens) by 'to pass' (the
+         AICTP discourse-frame; the 'that'-clause binds to the frame),
+      3. The mark is NOT immediately preceded (within 2 non-PUNCT tokens) by
+         a single-complement-taking verb/aux (verbum-dicendi, cognition,
+         volitional, causative — would/say/command/cause/suffer/etc.). Such
+         a 'that'-clause is the verb's single content complement and BINDS.
+
+    Returns: set of (sent_idx, token_id) pairs that should LEAD a stack-member
+    ATU line."""
+    leaders = set()
+    for si, toks in enumerate(sentences):
+        by_pos = sorted(toks, key=lambda t: int(t.id))
+        candidates = []
+        for i, t in enumerate(by_pos):
+            if (t.form or "").lower() != "that":
+                continue
+            if (t.deprel or "") != "mark" and t.upos != "SCONJ":
+                continue
+            content_window = [by_pos[j] for j in range(max(0, i - 5), i)
+                              if by_pos[j].upos != "PUNCT"]
+            prev_text = " ".join((w.form or "").lower() for w in content_window)
+            if "to pass" in prev_text:
+                continue
+            seen_nonpunct = 0
+            single_comp = False
+            for j in range(i - 1, -1, -1):
+                if by_pos[j].upos == "PUNCT":
+                    continue
+                if by_pos[j].upos in ("VERB", "AUX"):
+                    lemma = (by_pos[j].lemma or "").lower()
+                    if lemma in _PARALLEL_STACK_EXCLUDE_VERBS:
+                        single_comp = True
+                    break
+                seen_nonpunct += 1
+                if seen_nonpunct >= 2:
+                    break
+            if single_comp:
+                continue
+            candidates.append(t)
+        if len(candidates) >= 2:
+            for t in candidates:
+                leaders.add((si, t.id))
+    return leaders
+
+
+def _mark_stack_members(segs, stack_leaders):
+    """Tag each segment that contains a stack-leader 'that' token. These
+    segments are exempt from _forward_frame_bind (they own their own line)."""
+    leader_ids_by_sent = {}
+    for si, tid in stack_leaders:
+        leader_ids_by_sent.setdefault(si, set()).add(tid)
+    for seg in segs:
+        si = seg.get("sent_idx")
+        if si is None:
+            continue
+        leaders_in_sent = leader_ids_by_sent.get(si, set())
+        if any(t.id in leaders_in_sent for t in seg["toks"]):
+            seg["is_stack_member"] = True
+
+
+def _split_at_stack_leaders(segs, stack_leaders):
+    """§2.2 break-generating pass: SPLIT a segment at each stack-leader 'that'
+    token. The leader's clause becomes its own segment. Subsequent stack-leaders
+    in the same original segment each get their own split-out segment.
+
+    Operates on the segment list in place. Each resulting stack-led segment is
+    tagged is_stack_member=True so _forward_frame_bind leaves it alone."""
+    leader_ids_by_sent = {}
+    for si, tid in stack_leaders:
+        leader_ids_by_sent.setdefault(si, set()).add(tid)
+    out = []
+    for seg in segs:
+        si = seg.get("sent_idx")
+        leaders_in_sent = leader_ids_by_sent.get(si, set()) if si is not None else set()
+        if not leaders_in_sent:
+            out.append(seg); continue
+        toks = seg["toks"]
+        raw_positions = [pi for pi, t in enumerate(toks) if t.id in leaders_in_sent]
+        if not raw_positions:
+            out.append(seg); continue
+        split_positions = []
+        for sp in raw_positions:
+            actual = sp
+            j = sp - 1
+            while j >= 0 and toks[j].upos == "PUNCT":
+                j -= 1
+            if j >= 0 and toks[j].upos == "CCONJ" \
+               and (toks[j].form or "").lower() in ("and", "or", "but", "nor"):
+                actual = j
+            split_positions.append(actual)
+        prev_end = 0
+        for sp in split_positions:
+            if sp > prev_end:
+                head_toks = toks[prev_end:sp]
+                if head_toks:
+                    head_seg = {"aid": seg["aid"], "sent_idx": si,
+                                "lo": head_toks[0].start, "hi": head_toks[-1].end,
+                                "toks": head_toks}
+                    if prev_end > 0:
+                        head_seg["is_stack_member"] = True
+                    out.append(head_seg)
+            prev_end = sp
+        tail = toks[prev_end:]
+        if tail:
+            tail_seg = {"aid": seg["aid"], "sent_idx": si,
+                        "lo": tail[0].start, "hi": tail[-1].end,
+                        "toks": tail, "is_stack_member": True}
+            out.append(tail_seg)
+    segs[:] = out
+
+
+def _rule_passes(segs, sentences=None):
     """UD-aware canon binding rules, applied as segment merges on the pure-method
     segmentation (ported into the generator — operates ONLY on pure-method data,
     never the hand-edits; validated against the canon detectors via run_all)."""
+    if sentences is not None:
+        stack_leaders = _detect_stack_leaders(sentences)
+        _split_at_stack_leaders(segs, stack_leaders)
+        _mark_stack_members(segs, stack_leaders)
     # R29 (bare infinitival orphan integrity): an infinitive segment opening with
     # "to <VERB|AUX>" is not its own thought — it binds to its governor in the
     # prior segment ("I ordain you to be a teacher) / to preach repentance").
@@ -688,21 +817,21 @@ def verse_atu_lines(verse_text, sentences):
     `sentences` is the pre-parsed UD (list of per-sentence Tok lists)."""
     # Build surface-contiguous display SEGMENTS that keep their tokens, so the
     # UD-aware binding rule-passes can operate before we render to text.
-    spans = []                       # (start, end, atom_id, Tok)
+    spans = []                       # (start, end, atom_id, sent_idx, Tok)
     aid = 0
-    for toks in sentences:
+    for si, toks in enumerate(sentences):
         for atom in clause_atoms(Sent(toks)):
             for t in atom:
-                spans.append((t.start, t.end, aid, t))
+                spans.append((t.start, t.end, aid, si, t))
             aid += 1
     spans.sort(key=lambda s: s[0])
-    segs = []                        # each: {'lo','hi','toks'}
-    for start, end, a, t in spans:
+    segs = []                        # each: {'lo','hi','aid','sent_idx','toks'}
+    for start, end, a, si, t in spans:
         if segs and a == segs[-1]["aid"]:
             segs[-1]["hi"] = end; segs[-1]["toks"].append(t)
         else:
-            segs.append({"aid": a, "lo": start, "hi": end, "toks": [t]})
-    segs = _rule_passes(segs)
+            segs.append({"aid": a, "sent_idx": si, "lo": start, "hi": end, "toks": [t]})
+    segs = _rule_passes(segs, sentences)
     lines = [verse_text[s["lo"]:s["hi"]].strip() for s in segs]
     lines = [ln for ln in lines if ln]
     # Punctuation attaches BACKWARD (Stan's convention: a line ends with its
@@ -769,6 +898,8 @@ def _overrides():
     for the residual verses whose PARSE is too garbled for the mechanical rules
     (subject-fractures, verbless quotes). Keyed 'book c:v' -> [lines]."""
     global _OVERRIDES
+    if os.environ.get("BOFM_BYPASS_OVERRIDES"):
+        return {}
     if _OVERRIDES is None:
         _OVERRIDES = json.loads(ADJUDICATED.read_text(encoding="utf-8")) if ADJUDICATED.exists() else {}
     return _OVERRIDES
