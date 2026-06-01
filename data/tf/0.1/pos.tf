@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T13:45:47+00:00Z
+@dateWritten=2026-06-01T14:04:54+00:00Z
 
 PRON
 PUNCT

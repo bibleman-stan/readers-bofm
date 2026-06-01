@@ -1546,10 +1546,10 @@
 39	him	he	PRON	_	_	32	acl:relcl	_	_
 40	;	;	PUNCT	_	_	49	punct	_	_
 41	and	and	CCONJ	_	_	49	cc	_	_
-42	that	that	SCONJ	_	_	49	mark	_	_
+42	that	that	SCONJ	_	_	49	nsubj	_	_
 43	which	which	PRON	_	_	45	obj	_	_
 44	ye	you	PRON	_	_	45	nsubj	_	_
-45	call	call	VERB	_	_	49	csubj	_	_
+45	call	call	VERB	_	_	42	acl:relcl	_	_
 46	anger	anger	NOUN	_	_	45	obj	_	_
 47	was	be	AUX	_	_	49	cop	_	_
 48	the	the	DET	_	_	49	det	_	_
@@ -5821,7 +5821,7 @@
 
 # sent_id = 153
 # text = For I, Nephi, was constrained to speak unto them, according to his word; for I had spoken many things unto them, and also my father, before his death; many of which sayings are written upon mine other plates; for a more history part are written upon mine other plates.
-1	For	for	ADP	_	_	2	case	_	_
+1	For	for	ADP	_	_	7	mark	_	_
 2	I	I	PRON	_	_	7	obl	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
 4	Nephi	Nephi	PROPN	_	_	7	nsubj:pass	_	_
@@ -9520,7 +9520,7 @@
 # text = Behold, for your iniquities have ye sold yourselves, and for your transgressions is your mother put away.
 1	Behold	behold	INTJ	_	_	8	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
-3	for	for	SCONJ	_	_	8	mark	_	_
+3	for	for	SCONJ	_	_	5	case	_	_
 4	your	your	PRON	_	_	5	nmod:poss	_	_
 5	iniquities	iniquity	NOUN	_	_	8	obl	_	_
 6	have	have	AUX	_	_	8	aux	_	_
@@ -13827,7 +13827,7 @@
 16	your	your	PRON	_	_	17	nmod:poss	_	_
 17	labor	labor	NOUN	_	_	8	conj	_	_
 18	for	for	ADP	_	_	19	case	_	_
-19	that	that	PRON	_	_	17	nmod	_	_
+19	that	that	PRON	_	_	17	obl	_	_
 20	which	which	PRON	_	_	23	nsubj	_	_
 21	can	can	AUX	_	_	23	aux	_	_
 22	not	not	PART	_	_	23	advmod	_	_

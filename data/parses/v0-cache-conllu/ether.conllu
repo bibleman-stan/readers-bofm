@@ -8792,7 +8792,7 @@
 44	Akish	Akish	PROPN	_	_	45	nsubj	_	_
 45	desired	desire	VERB	_	_	42	acl:relcl	_	_
 46	should	should	AUX	_	_	47	aux	_	_
-47	lose	lose	VERB	_	_	42	acl:relcl	_	_
+47	lose	lose	VERB	_	_	39	conj	_	_
 48	his	his	PRON	_	_	49	nmod:poss	_	_
 49	head	head	NOUN	_	_	47	obj	_	_
 50	;	;	PUNCT	_	_	54	punct	_	_
@@ -8811,7 +8811,7 @@
 63	the	the	DET	_	_	64	det	_	_
 64	same	same	ADJ	_	_	66	nsubj	_	_
 65	should	should	AUX	_	_	66	aux	_	_
-66	lose	lose	VERB	_	_	3	parataxis	_	_
+66	lose	lose	VERB	_	_	54	conj	_	_
 67	his	his	PRON	_	_	68	nmod:poss	_	_
 68	life	life	NOUN	_	_	66	obj	_	_
 69	.	.	PUNCT	_	_	3	punct	_	_

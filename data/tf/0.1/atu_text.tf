@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T13:45:46+00:00Z
+@dateWritten=2026-06-01T14:04:52+00:00Z
 
 302625	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -435,7 +435,8 @@ but we heeded them not.
 These are the words of my father: For as many as heeded them, had fallen away.
 And Laman and Lemuel partook not of the fruit,
 said my father.
-And it came to pass after my father had spoken all the words of his dream or vision, which were many, he said unto us, because of these things which he saw in a vision, he exceedingly feared for Laman and Lemuel;
+And it came to pass after my father had spoken all the words of his dream or vision, which were many, he said unto us,
+because of these things which he saw in a vision, he exceedingly feared for Laman and Lemuel;
 yea, he feared lest they should be cast off from the presence of the Lord.
 And he did exhort them then with all the feeling of a tender parent,
 that they would hearken to his words,
@@ -946,7 +947,8 @@ And thus I spake unto my brethren.
 Amen.
 And now it came to pass that after I, Nephi, had made an end of speaking to my brethren, behold they said unto me:
 Thou hast declared unto us hard things, more than we are able to bear.
-And it came to pass that I said unto them that I knew that I had spoken hard things against the wicked, according to the truth; and the righteous have I justified, and testified that they should be lifted up at the last day; wherefore, the guilty taketh the truth to be hard,
+And it came to pass that I said unto them that I knew that I had spoken hard things against the wicked, according to the truth; and the righteous have I justified, and testified that they should be lifted up at the last day;
+wherefore, the guilty taketh the truth to be hard,
 for it cutteth them to the very center.
 And now my brethren, if ye were righteous and were willing to hearken to the truth, and give heed unto it, that ye might walk uprightly before God, then ye would not murmur because of the truth, and say:
 Thou speakest hard things against us.
@@ -1034,7 +1036,8 @@ And we did sojourn for the space of many years, yea, even eight years in the wil
 And we did come to the land which we called Bountiful, because of its much fruit and also wild honey;
 and all these things were prepared of the Lord that we might not perish.
 And we beheld the sea, which we called Irreantum, which, being interpreted, is many waters.
-And it came to pass that we did pitch our tents by the seashore; and notwithstanding we had suffered many afflictions and much difficulty,
+And it came to pass that we did pitch our tents by the seashore;
+and notwithstanding we had suffered many afflictions and much difficulty,
 yea, even so much that we cannot write them all, we were exceedingly rejoiced when we came to the seashore;
 and we called the place Bountiful, because of its much fruit.
 And it came to pass that after I, Nephi, had been in the land of Bountiful for the space of many days, the voice of the Lord came unto me, saying:
@@ -1051,7 +1054,9 @@ that I may make tools to construct the ship after the manner which thou hast sho
 And it came to pass that the Lord told me
 whither I should go to find ore,
 that I might make tools.
-And it came to pass that I, Nephi, did make a bellows wherewith to blow the fire, of the skins of beasts; and after I had made a bellows, that I might have wherewith to blow the fire, I did smite two stones together that I might make fire.
+And it came to pass that I, Nephi, did make a bellows wherewith to blow the fire, of the skins of beasts; and after I had made a bellows,
+that I might have wherewith to blow the fire, I did smite two stones together
+that I might make fire.
 For the Lord had not hitherto suffered that we should make much fire, as we journeyed in the wilderness;
 for he said:
 I will make thy food become sweet, that ye cook it not;

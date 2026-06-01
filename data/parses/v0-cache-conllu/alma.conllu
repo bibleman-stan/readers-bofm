@@ -80268,7 +80268,7 @@
 59	--	--	PUNCT	_	_	62	punct	_	_
 60	the	the	DET	_	_	61	det	_	_
 61	Nephites	Nephites	PROPN	_	_	62	nsubj	_	_
-62	possessing	possess	VERB	_	_	4	parataxis	_	_
+62	possessing	possess	VERB	_	_	51	parataxis	_	_
 63	all	all	DET	_	_	65	det:predet	_	_
 64	the	the	DET	_	_	65	det	_	_
 65	land	land	NOUN	_	_	62	obj	_	_
@@ -86896,7 +86896,7 @@
 31	,	,	PUNCT	_	_	30	punct	_	_
 32	even	even	ADV	_	_	34	advmod	_	_
 33	they	they	PRON	_	_	34	nsubj	_	_
-34	covenanted	covenant	VERB	_	_	3	parataxis	_	_
+34	covenanted	covenant	VERB	_	_	3	conj	_	_
 35	that	that	SCONJ	_	_	39	mark	_	_
 36	they	they	PRON	_	_	39	nsubj	_	_
 37	never	never	ADV	_	_	39	advmod	_	_
@@ -90296,7 +90296,7 @@
 38	army	army	NOUN	_	_	41	nsubj:pass	_	_
 39	had	have	AUX	_	_	41	aux	_	_
 40	been	be	AUX	_	_	41	aux:pass	_	_
-41	reduced	reduce	VERB	_	_	4	parataxis	_	_
+41	reduced	reduce	VERB	_	_	31	advcl	_	_
 42	by	by	ADP	_	_	44	case	_	_
 43	the	the	DET	_	_	44	det	_	_
 44	Lamanites	Lamanites	PROPN	_	_	41	obl:agent	_	_

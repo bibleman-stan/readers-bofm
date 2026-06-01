@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T13:45:46+00:00Z
+@dateWritten=2026-06-01T14:04:52+00:00Z
 
 nsubj:pass
 punct
@@ -4412,7 +4412,7 @@ conj
 punct
 advmod
 mark
-fixed
+mark
 mark
 nsubj
 aux
@@ -5938,10 +5938,10 @@ case
 nmod
 punct
 advmod
-obj
+mark
 nsubj
 aux
-acl:relcl
+advcl
 case
 obl
 det
@@ -7664,7 +7664,7 @@ case
 nmod
 punct
 nsubj
-obj
+mark
 nsubj
 nsubj
 aux
@@ -9346,7 +9346,7 @@ punct
 appos
 punct
 cop
-parataxis
+ccomp
 advmod
 obj
 nsubj
@@ -13206,7 +13206,7 @@ case
 obl
 punct
 nsubj
-parataxis
+conj
 punct
 case
 fixed
@@ -13270,7 +13270,7 @@ advmod
 amod
 nsubj
 aux
-parataxis
+ccomp
 punct
 discourse
 punct
@@ -14114,7 +14114,7 @@ nsubj:pass
 det
 aux
 aux:pass
-parataxis
+conj
 case
 obl
 punct
@@ -14861,7 +14861,7 @@ punct
 advmod
 punct
 nsubj
-parataxis
+ccomp
 mark
 det
 nsubj
@@ -18642,10 +18642,10 @@ amod
 obj
 punct
 advmod
-obj
+mark
 nsubj
 aux
-acl:relcl
+advcl
 obj
 case
 nmod:poss
@@ -19442,7 +19442,7 @@ punct
 nsubj:pass
 aux:pass
 advmod
-parataxis
+conj
 advmod
 nsubj
 advcl
@@ -19679,10 +19679,10 @@ conj
 nummod
 obj
 advmod
-obj
+mark
 nsubj
 aux
-acl:relcl
+advcl
 obj
 punct
 case
@@ -21010,7 +21010,7 @@ advmod
 punct
 nsubj
 aux
-parataxis
+conj
 obj
 case
 case
@@ -24831,7 +24831,7 @@ aux:pass
 acl:relcl
 compound:prt
 punct
-parataxis
+conj
 iobj
 det
 obj
@@ -29963,10 +29963,10 @@ case
 acl:relcl
 punct
 cc
-mark
+nsubj
 obj
 nsubj
-csubj
+acl:relcl
 obj
 cop
 det
@@ -33875,7 +33875,7 @@ case
 det
 nmod
 punct
-case
+mark
 obl
 punct
 nsubj:pass
@@ -37208,7 +37208,7 @@ obj
 punct
 discourse
 punct
-mark
+case
 nmod:poss
 obl
 aux
@@ -41128,7 +41128,7 @@ cc
 nmod:poss
 conj
 case
-nmod
+obl
 nsubj
 aux
 advmod
@@ -109694,7 +109694,7 @@ punct
 det
 appos
 punct
-nsubj
+mark
 advmod
 nsubj
 aux
@@ -111616,7 +111616,7 @@ det
 nmod
 mark
 csubj
-mark
+obj
 nsubj
 cop
 advmod
@@ -193261,7 +193261,7 @@ discourse
 punct
 advmod
 nsubj
-parataxis
+conj
 mark
 nsubj
 advmod
@@ -196397,7 +196397,7 @@ nmod:poss
 nsubj:pass
 aux
 aux:pass
-parataxis
+advcl
 case
 det
 obl:agent
@@ -285010,7 +285010,7 @@ obj
 nsubj
 acl:relcl
 aux
-acl:relcl
+conj
 nmod:poss
 obj
 punct
@@ -285029,7 +285029,7 @@ punct
 det
 nsubj
 aux
-parataxis
+conj
 nmod:poss
 obj
 punct
