@@ -54,8 +54,10 @@ def scan_book(book_id: str) -> list[dict]:
     sentences = load_conllu(conllu_path)
     line_map = build_line_map(v2_path, conllu_path)
 
+    from validators.colometry.stack_detection import stack_leader_ids
     results = []
     for sent in sentences:
+        stack_leaders = stack_leader_ids(sent.tokens)
         for ccomp_tok in sent.find(deprel="ccomp"):
             head = sent.head_of(ccomp_tok)
             if head is None:
@@ -80,6 +82,8 @@ def scan_book(book_id: str) -> list[dict]:
             mark = sent.mark_of(ccomp_tok)
             if mark is None or mark.lemma != "that":
                 continue
+            if mark.id in stack_leaders:
+                continue  # §2.2 parallel-stack-licensed split; not a §2.1 violation
 
             head_line = line_map.get((sent.sent_id, head.id))
             mark_line = line_map.get((sent.sent_id, mark.id))

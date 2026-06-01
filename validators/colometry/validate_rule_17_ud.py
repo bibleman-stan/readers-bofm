@@ -31,6 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from validators.parsing.conllu_query import load_conllu
 from validators.parsing.line_mapping import build_line_map, book_paths
+from validators.colometry.stack_detection import stack_leader_ids
 
 
 # ---------------------------------------------------------------------------
@@ -239,6 +240,10 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
 
     violations = []
     for sent in sentences:
+        # §2.2 parallel-stack-leader IDs for this sentence: 'that'-marks that
+        # the framework EXPLICITLY licenses on their own line, so a rule_17
+        # violation on them is a false-positive (§2.2 overrides §2.1 default).
+        stack_leaders = stack_leader_ids(sent.tokens)
         # Path 1: ccomp + finite mark (that/whether/if/WH)
         for ccomp in sent.find(deprel="ccomp"):
             head = sent.head_of(ccomp)
@@ -255,6 +260,8 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
             mark = sent.mark_of(ccomp)
             if mark is None or mark.lemma != "that":
                 continue
+            if mark.id in stack_leaders:
+                continue  # §2.2 stack-licensed split; not a §2.1 violation
             head_line = line_map.get((sent.sent_id, head.id))
             mark_line = line_map.get((sent.sent_id, mark.id))
             if head_line is None or mark_line is None:

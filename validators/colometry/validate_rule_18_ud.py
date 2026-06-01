@@ -40,6 +40,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from validators.parsing.conllu_query import load_conllu
 from validators.parsing.line_mapping import build_line_map, book_paths
+from validators.colometry.stack_detection import stack_leader_ids
 
 
 # Fixed idioms as sequences of (form or lemma) to match token-by-token.
@@ -96,6 +97,7 @@ def scan_book(book_id: str) -> list[dict]:
 
     for sent in sentences:
         toks = sent.tokens  # list[Token], integer ids, in order
+        stack_leaders = stack_leader_ids(toks)
         for i, tok in enumerate(toks):
             anchor = tok.form.lower()
             if anchor not in _ANCHOR_INDEX:
@@ -113,6 +115,13 @@ def scan_book(book_id: str) -> list[dict]:
                         lines_hit.append(ln)
                 if len(lines_hit) < 2:
                     continue  # can't confirm a split without ≥2 mapped tokens
+                # §2.2 exemption: if any token in the matched idiom is a stack-
+                # leader 'that'-mark, the line split is §2.2-licensed (not a
+                # §2.1 idiom-integrity violation). E.g. "it is expedient that X,
+                # that Y" splits at each 'that' per §2.2; idiom "it is expedient
+                # that" straddling that split is canon-compliant.
+                if any(toks[idx].id in stack_leaders for idx in matched_indices):
+                    continue
                 if min(lines_hit) != max(lines_hit):
                     gap = max(lines_hit) - min(lines_hit)
                     # Large gaps indicate line-mapping drift rather than a genuine

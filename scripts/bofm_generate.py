@@ -647,7 +647,7 @@ def _detect_stack_leaders(sentences):
                         single_comp = True
                     break
                 seen_nonpunct += 1
-                if seen_nonpunct >= 2:
+                if seen_nonpunct >= 3:
                     break
             if single_comp:
                 continue

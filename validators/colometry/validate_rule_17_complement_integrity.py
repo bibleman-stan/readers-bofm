@@ -285,6 +285,21 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         reason_to_skip = None
         cls = verb_class(verb)
 
+        # Exception 0 (§2.2 parallel-subordinator-stack license): if the
+        # current verse contains >=2 lines beginning with "that ", the next-
+        # line "that" is a §2.2 stack-member ATU (framework §2.2 explicitly
+        # overrides §2.1 default for repeated-subordinator stacks). Skip.
+        verse_start = i
+        while verse_start > 0 and not re.match(r"^\d+:\d+$", lines[verse_start].strip()):
+            verse_start -= 1
+        verse_end = i + 1
+        while verse_end < len(lines) - 1 and not re.match(r"^\d+:\d+$", lines[verse_end + 1].strip()):
+            verse_end += 1
+        that_led = sum(1 for j in range(verse_start, verse_end + 1)
+                       if lines[j].lstrip().lower().startswith("that "))
+        if that_led >= 2:
+            reason_to_skip = "§2.2-parallel-stack-license"
+
         # Exception 1: Direct discourse (colon or "saying:")
         if is_direct_discourse_intro(line):
             reason_to_skip = "direct-discourse-intro"

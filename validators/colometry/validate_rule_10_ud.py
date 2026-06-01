@@ -70,9 +70,11 @@ def scan_book(book_id: str) -> list[dict]:
     sentences = load_conllu(conllu_path)
     line_map = build_line_map(v2_path, conllu_path)
 
+    from validators.colometry.stack_detection import stack_leader_ids
     violations = []
     review = []
     for sent in sentences:
+        stack_leaders = stack_leader_ids(sent.tokens)
         for obj in sent.find(deprel="obj"):
             head = sent.head_of(obj)
             if head is None or head.upos != "VERB":
@@ -84,6 +86,17 @@ def scan_book(book_id: str) -> list[dict]:
             gap = obj_line - head_line
             if gap <= 0 or gap > 3:
                 continue
+            # §2.2 exemption: if any §2.2 stack-leader 'that' falls between
+            # head and obj in surface order, the gap is licensed by the stack
+            # split (matrix verb + parallel-that-stack + DO of a later beat).
+            if stack_leaders:
+                head_pos = next((i for i, t in enumerate(sent.tokens) if t.id == head.id), -1)
+                obj_pos = next((i for i, t in enumerate(sent.tokens) if t.id == obj.id), -1)
+                if head_pos >= 0 and obj_pos > head_pos:
+                    between = [t for t in sent.tokens
+                               if head_pos < (next((i for i, x in enumerate(sent.tokens) if x.id == t.id), -1)) < obj_pos]
+                    if any(t.id in stack_leaders for t in between):
+                        continue
 
             # Audit-driven filters (2026-05-10):
             skip_reason = None

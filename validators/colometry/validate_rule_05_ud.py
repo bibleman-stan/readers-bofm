@@ -51,8 +51,10 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
     sentences = load_conllu(conllu_path)
     line_map = build_line_map(v2_path, conllu_path)
 
+    from validators.colometry.stack_detection import stack_leader_ids
     findings = []
     for sent in sentences:
+        stack_leaders = stack_leader_ids(sent.tokens)
         # Find all 'cc' tokens whose form is "or" (case-insensitive surface)
         for cc_tok in sent.find(deprel="cc"):
             if cc_tok.form.lower() != "or":
@@ -76,6 +78,17 @@ def scan_book(book_id: str, *, verbose: bool = False) -> list[dict]:
                 continue
             if first_line == second_line:
                 continue  # already on same line — no violation
+            # §2.2 exemption: if any §2.2 stack-leader 'that' falls between
+            # first and second conjunct in surface order, the gap is licensed
+            # by the stack split.
+            if stack_leaders:
+                first_pos = next((i for i, t in enumerate(sent.tokens) if t.id == first_conjunct.id), -1)
+                second_pos = next((i for i, t in enumerate(sent.tokens) if t.id == conj_head.id), -1)
+                if first_pos >= 0 and second_pos > first_pos:
+                    intervening = [t for t in sent.tokens
+                                   if first_pos < next((i for i, x in enumerate(sent.tokens) if x.id == t.id), -1) < second_pos]
+                    if any(t.id in stack_leaders for t in intervening):
+                        continue
 
             # Categorise by heuristic
             same_upos = first_conjunct.upos == conj_head.upos

@@ -90,8 +90,10 @@ def scan_book(book_id: str) -> list[dict]:
     sentences = load_conllu(conllu_path)
     line_map = build_line_map(v2_path, conllu_path)
 
+    from validators.colometry.stack_detection import stack_leader_ids
     violations = []
     for sent in sentences:
+        stack_leaders = stack_leader_ids(sent.tokens)
         for conj in sent.find(deprel="conj"):
             head = sent.head_of(conj)
             if head is None:
@@ -138,6 +140,13 @@ def scan_book(book_id: str) -> list[dict]:
             ]
             if non_conj_on_conj_line:
                 continue  # conj line shared with non-conj tokens; not isolated
+            # §2.2 exemption: if the surrounding verse exhibits a §2.2 stack
+            # (>=2 stack-leader 'that'-marks), the new split landed in a
+            # §2.2-restructured verse where compound-coord-isolation may be
+            # a §2.2 byproduct (matrix verb + stack splits + DO landing on
+            # its own line). Skip.
+            if stack_leaders:
+                continue
             violations.append({
                 "book": book_id,
                 "sent_id": sent.sent_id,

@@ -269,6 +269,21 @@ def scan_file(path: Path) -> list[dict]:
                 check_fn(line, next_line) if needs_next else check_fn(line)
             )
             if result:
+                # §2.2 parallel-stack license: line-final "and"/"or"/"but"/
+                # "nor" with next line starting "that ..." may be a §2.2
+                # stack-coordinator split ("...; and / that ye may X"). Skip
+                # when the surrounding verse has >=2 lines starting with "that".
+                if rule_name == "Rule 9 (conjunction)" and next_line.lstrip().lower().startswith("that "):
+                    verse_start = i
+                    while verse_start > 0 and not re.match(r"^\d+:\d+$", lines[verse_start].strip()):
+                        verse_start -= 1
+                    verse_end = i + 1
+                    while verse_end < len(lines) - 1 and not re.match(r"^\d+:\d+$", lines[verse_end + 1].strip()):
+                        verse_end += 1
+                    that_led = sum(1 for k in range(verse_start, verse_end + 1)
+                                   if lines[k].lstrip().lower().startswith("that "))
+                    if that_led >= 2:
+                        continue
                 violations.append(
                     {
                         "file": path.name,

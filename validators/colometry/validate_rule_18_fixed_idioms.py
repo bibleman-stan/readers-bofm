@@ -71,6 +71,23 @@ def scan_file(path: Path) -> list[dict]:
             start_line = find_line_for_offset(match.start())
             end_line = find_line_for_offset(match.end() - 1)
             if start_line != end_line:
+                # §2.2 parallel-stack-license exemption: if the matched idiom
+                # ends with " that" AND the surrounding verse contains >=2
+                # lines beginning with "that ", the split is framework §2.2-
+                # licensed (parallel-subordinator-stack), not a Rule 18 idiom
+                # integrity violation. Specifically targets "it is expedient
+                # that X, that Y" — repeated subordinator stack splits.
+                if name.endswith("that"):
+                    verse_start = start_line
+                    while verse_start > 0 and not re.match(r"^\d+:\d+$", lines[verse_start].strip()):
+                        verse_start -= 1
+                    verse_end = end_line
+                    while verse_end < len(lines) - 1 and not re.match(r"^\d+:\d+$", lines[verse_end + 1].strip()):
+                        verse_end += 1
+                    that_led = sum(1 for k in range(verse_start, verse_end + 1)
+                                   if lines[k].lstrip().lower().startswith("that "))
+                    if that_led >= 2:
+                        continue
                 # Idiom spans multiple lines — violation
                 violations.append(
                     {
