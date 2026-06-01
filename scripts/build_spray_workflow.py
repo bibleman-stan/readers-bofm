@@ -228,7 +228,12 @@ def main():
         print(__doc__); sys.exit(1)
     cls = sys.argv[1]
     pilot = "--pilot" in sys.argv
-    tag = "pilot" if pilot else "full"
+    chunk_arg = next((a for a in sys.argv if a.startswith("--chunk=")), None)
+    chunk = None
+    if chunk_arg:
+        n, m = chunk_arg.split("=")[1].split("/")
+        chunk = (int(n), int(m))
+    tag = "pilot" if pilot else ("full" if chunk is None else f"chunk{chunk[0]}of{chunk[1]}")
     name = f"candidates-{cls}-pilot.json" if pilot else f"candidates-{cls}.json"
 
     candidates_path = AUDIT / name
@@ -237,6 +242,10 @@ def main():
         sys.exit(1)
 
     candidates = json.loads(candidates_path.read_text(encoding="utf-8"))
+    if chunk is not None:
+        n, m = chunk
+        candidates = candidates[n::m]
+
     script = (
         WORKFLOW_TEMPLATE
         .replace("__CLS__", cls)

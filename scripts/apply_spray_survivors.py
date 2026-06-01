@@ -10,8 +10,11 @@ For each survivor:
   4. Runs twin-flag scan (same as sync_gold) — surfaces parallel-verbatim
      verses lacking gold, the symmetry lock-down.
 
-Run:
+Run (single or multiple chunk outputs):
   py -3 scripts/apply_spray_survivors.py path/to/spray-output.json
+  py -3 scripts/apply_spray_survivors.py chunk0.json chunk1.json chunk2.json
+
+Survivors from all inputs are concatenated; later entries override earlier.
 
 Failures HALT with a per-verse diagnostic. No partial writes.
 """
@@ -47,19 +50,24 @@ def infer_genre(matrix):
 def main():
     if len(sys.argv) < 2:
         print(__doc__); sys.exit(1)
-    spray_path = Path(sys.argv[1])
-    if not spray_path.exists():
-        print(f"Not found: {spray_path}")
-        sys.exit(1)
+    spray_paths = [Path(p) for p in sys.argv[1:]]
+    for sp in spray_paths:
+        if not sp.exists():
+            print(f"Not found: {sp}")
+            sys.exit(1)
 
-    result = json.loads(spray_path.read_text(encoding="utf-8"))
-    if "result" in result and isinstance(result.get("result"), dict):
-        result = result["result"]
-    survivors = result.get("survivors", [])
-    print(f"Loaded spray output from {spray_path.name}")
-    print(f"  Class: {result.get('class', '(unknown)')}")
-    print(f"  Survivors: {len(survivors)}")
-    print(f"  Counts: {result.get('counts', {})}")
+    survivors = []
+    for sp in spray_paths:
+        result = json.loads(sp.read_text(encoding="utf-8"))
+        if "result" in result and isinstance(result.get("result"), dict):
+            result = result["result"]
+        chunk_survivors = result.get("survivors", [])
+        print(f"Loaded {sp.name}")
+        print(f"  Class: {result.get('class', '(unknown)')}")
+        print(f"  Survivors: {len(chunk_survivors)}")
+        print(f"  Counts: {result.get('counts', {})}")
+        survivors.extend(chunk_survivors)
+    print(f"\nTotal survivors across {len(spray_paths)} file(s): {len(survivors)}")
 
     if not survivors:
         print("No survivors to apply — exiting.")
