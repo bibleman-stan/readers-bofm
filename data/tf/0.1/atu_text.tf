@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T23:26:51+00:00Z
+@dateWritten=2026-06-01T23:43:21+00:00Z
 
 302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -15506,14 +15506,8 @@ And also we shall perish,
 for in them we cannot breathe,
 save it is the air which is in them;
 therefore we shall perish.
-And the Lord said unto the brother of Jared:
-Behold, thou shalt make a hole in the top, and also in the bottom;
-and when thou shalt suffer for air thou shalt unstop the hole and receive air.
-And if it
-be
-so
-that the water come in upon thee, behold, ye shall stop the hole,
-that ye may not perish in the flood.
+And the Lord said unto the brother of Jared: Behold, thou shalt make a hole in the top, and also in the bottom; and when thou shalt suffer for air thou shalt unstop the hole and receive air.
+And if it be so that the water come in upon thee, behold, ye shall stop the hole, that ye may not perish in the flood.
 And it came to pass that the brother of Jared did so, according as the Lord had commanded.
 And he cried again unto the Lord saying:
 O Lord, behold I have done even as thou hast commanded me;

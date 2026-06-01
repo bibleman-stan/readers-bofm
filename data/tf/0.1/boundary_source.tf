@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T23:26:51+00:00Z
+@dateWritten=2026-06-01T23:43:21+00:00Z
 
 302626	mechanical-v1
 mechanical-v1
@@ -14711,8 +14711,8 @@ v2-llm
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
-mechanical-v1
+v2-llm
+v2-llm
 mechanical-v1
 mechanical-v1
 mechanical-v1
@@ -15506,14 +15506,8 @@ mechanical-v1
 mechanical-v1
 mechanical-v1
 mechanical-v1
-mechanical-v1
-mechanical-v1
-mechanical-v1
-mechanical-v1
-mechanical-v1
-mechanical-v1
-mechanical-v1
-mechanical-v1
+v2-llm
+v2-llm
 mechanical-v1
 mechanical-v1
 mechanical-v1
