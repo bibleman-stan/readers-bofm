@@ -53,6 +53,8 @@ def main():
         sys.exit(1)
 
     result = json.loads(spray_path.read_text(encoding="utf-8"))
+    if "result" in result and isinstance(result.get("result"), dict):
+        result = result["result"]
     survivors = result.get("survivors", [])
     print(f"Loaded spray output from {spray_path.name}")
     print(f"  Class: {result.get('class', '(unknown)')}")
