@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T23:14:06+00:00Z
+@dateWritten=2026-06-01T23:26:51+00:00Z
 
 302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -14550,7 +14550,8 @@ Behold I have given unto you my gospel, and this is the gospel which I have give
 --that I came into the world to do the will of my Father, because my Father sent me.
 And my Father sent me
 that I might be lifted up upon the cross;
-and after that I had been lifted up upon the cross,
+and after
+that I had been lifted up upon the cross,
 that I might draw all men unto me,
 that as I have been lifted up by men even so should men be lifted up by the Father, to stand before me, to be judged of their works, whether they be good or whether they be evil- -
 And for this cause have I been lifted up;
@@ -15492,7 +15493,9 @@ for it shall be a land choice above all other lands.
 And the Lord said:
 Go to work and build, after the manner of barges which ye have hitherto built.
 And it came to pass that the brother of Jared did go to work, and also his brethren, and built barges after the manner which they had built, according to the instructions of the Lord. And they were small, and they were light upon the water, even like unto the lightness of a fowl upon the water.
-And they were built after a manner that they were exceedingly tight, even that they would hold water like unto a dish; and the bottom thereof was tight like unto a dish; and the sides thereof were tight like unto a dish;
+And they were built after a manner
+that they were exceedingly tight, even
+that they would hold water like unto a dish; and the bottom thereof was tight like unto a dish; and the sides thereof were tight like unto a dish;
 and the ends thereof were peaked; and the top thereof was tight like unto a dish; and the length thereof was the length of a tree; and the door thereof, when it was shut, was tight like unto a dish.
 And it came to pass that the brother of Jared cried unto the Lord, saying:
 O Lord, I have performed the work which thou hast commanded me,

@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T23:14:09+00:00Z
+@dateWritten=2026-06-01T23:26:54+00:00Z
 
 nsubj:pass
 punct
@@ -17785,7 +17785,7 @@ obj
 case
 det
 nmod
-obj
+mark
 nsubj
 aux
 acl:relcl
@@ -252630,7 +252630,7 @@ ccomp
 case
 obl
 punct
-obj
+mark
 nsubj
 aux
 advcl:relcl
@@ -261070,8 +261070,8 @@ det
 obl
 punct
 cc
-case
-obl
+advmod
+mark
 nsubj:pass
 aux
 aux:pass
@@ -278994,11 +278994,11 @@ root
 case
 det
 obl
-obj
+mark
 nsubj
 cop
 advmod
-acl:relcl
+acl
 punct
 advmod
 mark
@@ -282954,7 +282954,7 @@ obj
 mark
 nsubj
 aux
-advcl
+acl
 obj
 punct
 mark
