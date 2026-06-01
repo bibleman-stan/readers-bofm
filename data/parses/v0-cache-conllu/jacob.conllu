@@ -126,7 +126,7 @@
 19	that	that	SCONJ	_	_	22	mark	_	_
 20	I	I	PRON	_	_	22	nsubj	_	_
 21	should	should	AUX	_	_	22	aux	_	_
-22	preserve	preserve	VERB	_	_	12	conj	_	_
+22	preserve	preserve	VERB	_	_	3	ccomp	_	_
 23	these	this	DET	_	_	24	det	_	_
 24	plates	plate	NOUN	_	_	22	obj	_	_
 25	and	and	CCONJ	_	_	26	cc	_	_
@@ -274,7 +274,7 @@
 9	that	that	SCONJ	_	_	12	mark	_	_
 10	we	we	PRON	_	_	12	nsubj	_	_
 11	might	might	AUX	_	_	12	aux	_	_
-12	persuade	persuade	VERB	_	_	3	parataxis	_	_
+12	persuade	persuade	VERB	_	_	3	advcl	_	_
 13	them	they	PRON	_	_	12	obj	_	_
 14	to	to	PART	_	_	15	mark	_	_
 15	come	come	VERB	_	_	12	xcomp	_	_
@@ -3046,7 +3046,7 @@
 16	,	,	PUNCT	_	_	19	punct	_	_
 17	that	that	SCONJ	_	_	19	mark	_	_
 18	ye	you	PRON	_	_	19	nsubj	_	_
-19	revile	revile	VERB	_	_	4	parataxis	_	_
+19	revile	revile	VERB	_	_	4	ccomp	_	_
 20	no	no	ADV	_	_	21	advmod	_	_
 21	more	more	ADJ	_	_	19	obj	_	_
 22	against	against	ADP	_	_	23	case	_	_
@@ -3174,7 +3174,7 @@
 19	that	that	SCONJ	_	_	22	mark	_	_
 20	ye	you	PRON	_	_	22	nsubj	_	_
 21	may	may	AUX	_	_	22	aux	_	_
-22	awake	awake	VERB	_	_	17	ccomp	_	_
+22	awake	awake	VERB	_	_	17	advcl	_	_
 23	from	from	ADP	_	_	25	case	_	_
 24	the	the	DET	_	_	25	det	_	_
 25	slumber	slumber	NOUN	_	_	22	obl	_	_
@@ -3785,7 +3785,7 @@
 30	,	,	PUNCT	_	_	33	punct	_	_
 31	that	that	SCONJ	_	_	33	mark	_	_
 32	we	we	PRON	_	_	33	nsubj	_	_
-33	have	have	VERB	_	_	19	conj	_	_
+33	have	have	VERB	_	_	19	ccomp	_	_
 34	power	power	NOUN	_	_	33	obj	_	_
 35	to	to	PART	_	_	36	mark	_	_
 36	do	do	VERB	_	_	33	advcl	_	_
@@ -5130,7 +5130,7 @@
 44	that	that	SCONJ	_	_	47	mark	_	_
 45	I	I	PRON	_	_	47	nsubj	_	_
 46	may	may	AUX	_	_	47	aux	_	_
-47	lay	lay	VERB	_	_	5	conj	_	_
+47	lay	lay	VERB	_	_	26	ccomp	_	_
 48	up	up	ADP	_	_	47	compound:prt	_	_
 49	fruit	fruit	NOUN	_	_	47	obj	_	_
 50	thereof	thereof	ADV	_	_	47	advmod	_	_
@@ -5219,7 +5219,7 @@
 7	a	a	DET	_	_	9	det	_	_
 8	long	long	ADJ	_	_	9	amod	_	_
 9	time	time	NOUN	_	_	10	obl:unmarked	_	_
-10	passed	pass	VERB	_	_	5	xcomp	_	_
+10	passed	pass	VERB	_	_	5	ccomp	_	_
 11	away	away	ADV	_	_	10	advmod	_	_
 12	,	,	PUNCT	_	_	19	punct	_	_
 13	and	and	CCONJ	_	_	19	cc	_	_
@@ -6461,7 +6461,7 @@
 29	that	that	SCONJ	_	_	32	mark	_	_
 30	they	they	PRON	_	_	32	nsubj	_	_
 31	are	be	AUX	_	_	32	cop	_	_
-32	alive	alive	ADJ	_	_	25	conj	_	_
+32	alive	alive	ADJ	_	_	25	advcl	_	_
 33	and	and	CCONJ	_	_	37	cc	_	_
 34	they	they	PRON	_	_	37	nsubj	_	_
 35	have	have	AUX	_	_	37	aux	_	_
@@ -6584,13 +6584,13 @@
 14	thereof	thereof	ADV	_	_	11	advmod	_	_
 15	;	;	PUNCT	_	_	16	punct	_	_
 16	and	and	CCONJ	_	_	29	cc	_	_
-17	because	because	SCONJ	_	_	29	mark	_	_
+17	because	because	SCONJ	_	_	23	mark	_	_
 18	that	that	SCONJ	_	_	23	mark	_	_
 19	the	the	DET	_	_	21	det	_	_
 20	wild	wild	ADJ	_	_	21	amod	_	_
 21	branches	branch	NOUN	_	_	23	nsubj	_	_
 22	have	have	AUX	_	_	23	aux	_	_
-23	overcome	overcome	VERB	_	_	8	conj	_	_
+23	overcome	overcome	VERB	_	_	29	advcl	_	_
 24	the	the	DET	_	_	25	det	_	_
 25	roots	root	NOUN	_	_	23	obj	_	_
 26	thereof	thereof	ADV	_	_	23	advmod	_	_
@@ -6958,7 +6958,7 @@
 17	that	that	SCONJ	_	_	20	mark	_	_
 18	I	I	PRON	_	_	20	nsubj	_	_
 19	might	might	AUX	_	_	20	aux	_	_
-20	plant	plant	VERB	_	_	7	parataxis	_	_
+20	plant	plant	VERB	_	_	7	advcl	_	_
 21	this	this	DET	_	_	22	det	_	_
 22	tree	tree	NOUN	_	_	20	obj	_	_
 23	in	in	ADP	_	_	25	case	_	_
@@ -7635,7 +7635,7 @@
 16	that	that	SCONJ	_	_	19	mark	_	_
 17	I	I	PRON	_	_	19	nsubj	_	_
 18	may	may	AUX	_	_	19	aux	_	_
-19	preserve	preserve	VERB	_	_	5	parataxis	_	_
+19	preserve	preserve	VERB	_	_	5	advcl	_	_
 20	the	the	DET	_	_	21	det	_	_
 21	roots	root	NOUN	_	_	19	obj	_	_
 22	also	also	ADV	_	_	26	advmod	_	_
@@ -7915,7 +7915,7 @@
 47	my	my	PRON	_	_	48	nmod:poss	_	_
 48	vineyard	vineyard	NOUN	_	_	45	nmod	_	_
 49	may	may	AUX	_	_	50	aux	_	_
-50	bring	bring	VERB	_	_	32	parataxis	_	_
+50	bring	bring	VERB	_	_	32	conj	_	_
 51	forth	forth	ADV	_	_	50	advmod	_	_
 52	again	again	ADV	_	_	50	advmod	_	_
 53	good	good	ADJ	_	_	54	amod	_	_
@@ -7986,14 +7986,14 @@
 22	that	that	SCONJ	_	_	25	mark	_	_
 23	we	we	PRON	_	_	25	nsubj	_	_
 24	may	may	AUX	_	_	25	aux	_	_
-25	prepare	prepare	VERB	_	_	13	parataxis	_	_
+25	prepare	prepare	VERB	_	_	3	parataxis	_	_
 26	the	the	DET	_	_	27	det	_	_
 27	way	way	NOUN	_	_	25	obj	_	_
 28	,	,	PUNCT	_	_	32	punct	_	_
 29	that	that	SCONJ	_	_	32	mark	_	_
 30	I	I	PRON	_	_	32	nsubj	_	_
 31	may	may	AUX	_	_	32	aux	_	_
-32	bring	bring	VERB	_	_	25	ccomp	_	_
+32	bring	bring	VERB	_	_	3	parataxis	_	_
 33	forth	forth	ADV	_	_	32	advmod	_	_
 34	again	again	ADV	_	_	32	advmod	_	_
 35	the	the	DET	_	_	37	det	_	_
@@ -8069,7 +8069,7 @@
 11	they	they	PRON	_	_	14	nsubj	_	_
 12	may	may	AUX	_	_	14	aux	_	_
 13	be	be	AUX	_	_	14	cop	_	_
-14	first	first	ADJ	_	_	9	acl	_	_
+14	first	first	ADJ	_	_	6	advcl	_	_
 15	,	,	PUNCT	_	_	22	punct	_	_
 16	and	and	CCONJ	_	_	22	cc	_	_
 17	that	that	SCONJ	_	_	22	mark	_	_
@@ -8077,7 +8077,7 @@
 19	first	first	ADJ	_	_	22	nsubj	_	_
 20	may	may	AUX	_	_	22	aux	_	_
 21	be	be	AUX	_	_	22	cop	_	_
-22	last	last	ADJ	_	_	6	conj	_	_
+22	last	last	ADJ	_	_	6	advcl	_	_
 23	,	,	PUNCT	_	_	25	punct	_	_
 24	and	and	CCONJ	_	_	25	cc	_	_
 25	dig	dig	VERB	_	_	22	conj	_	_
@@ -8294,7 +8294,7 @@
 34	top	top	NOUN	_	_	31	conj	_	_
 35	may	may	AUX	_	_	37	aux	_	_
 36	be	be	AUX	_	_	37	cop	_	_
-37	equal	equal	ADJ	_	_	18	conj	_	_
+37	equal	equal	ADJ	_	_	18	advcl	_	_
 38	in	in	ADP	_	_	39	case	_	_
 39	strength	strength	NOUN	_	_	37	obl	_	_
 40	,	,	PUNCT	_	_	45	punct	_	_
@@ -8320,7 +8320,7 @@
 60	,	,	PUNCT	_	_	63	punct	_	_
 61	that	that	SCONJ	_	_	63	mark	_	_
 62	they	they	PRON	_	_	63	nsubj	_	_
-63	cumber	cumber	VERB	_	_	53	parataxis	_	_
+63	cumber	cumber	VERB	_	_	53	advcl	_	_
 64	not	not	PART	_	_	66	advmod	_	_
 65	the	the	DET	_	_	66	det	_	_
 66	ground	ground	NOUN	_	_	63	obj	_	_
@@ -8800,7 +8800,7 @@
 24	was	be	AUX	_	_	27	cop	_	_
 25	no	no	ADV	_	_	26	advmod	_	_
 26	more	more	ADV	_	_	27	advmod	_	_
-27	corrupt	corrupt	ADJ	_	_	13	conj	_	_
+27	corrupt	corrupt	ADJ	_	_	13	ccomp	_	_
 28	,	,	PUNCT	_	_	30	punct	_	_
 29	he	he	PRON	_	_	30	nsubj	_	_
 30	called	call	VERB	_	_	3	parataxis	_	_
@@ -9142,7 +9142,7 @@
 52	,	,	PUNCT	_	_	28	punct	_	_
 53	must	must	AUX	_	_	55	aux	_	_
 54	surely	surely	ADV	_	_	55	advmod	_	_
-55	come	come	VERB	_	_	24	conj	_	_
+55	come	come	VERB	_	_	24	ccomp	_	_
 56	to	to	PART	_	_	57	mark	_	_
 57	pass	pass	VERB	_	_	55	xcomp	_	_
 58	.	.	PUNCT	_	_	24	punct	_	_
@@ -9155,7 +9155,7 @@
 4	that	that	SCONJ	_	_	7	mark	_	_
 5	he	he	PRON	_	_	7	nsubj	_	_
 6	shall	shall	AUX	_	_	7	aux	_	_
-7	set	set	VERB	_	_	3	acl	_	_
+7	set	set	VERB	_	_	3	acl:relcl	_	_
 8	his	his	PRON	_	_	9	nmod:poss	_	_
 9	hand	hand	NOUN	_	_	7	obj	_	_
 10	again	again	ADV	_	_	7	advmod	_	_
@@ -10508,7 +10508,7 @@
 38	that	that	SCONJ	_	_	41	mark	_	_
 39	Christ	Christ	PROPN	_	_	41	nsubj	_	_
 40	shall	shall	AUX	_	_	41	aux	_	_
-41	come	come	VERB	_	_	25	conj	_	_
+41	come	come	VERB	_	_	20	acl	_	_
 42	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 269
@@ -10861,7 +10861,7 @@
 41	overcome	overcome	VERB	_	_	24	conj	_	_
 42	that	that	SCONJ	_	_	44	mark	_	_
 43	they	they	PRON	_	_	44	nsubj	_	_
-44	fell	fall	VERB	_	_	41	ccomp	_	_
+44	fell	fall	VERB	_	_	41	advcl	_	_
 45	to	to	ADP	_	_	47	case	_	_
 46	the	the	DET	_	_	47	det	_	_
 47	earth	earth	NOUN	_	_	44	obl	_	_

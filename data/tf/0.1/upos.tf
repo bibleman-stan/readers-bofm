@@ -1,5 +1,5 @@
 @node
-@description=UD upos (Stanza); alias of upos
+@description=canonical cross-corpus UPOS (audit #2 harmonization; same feature name across all corpus TFs)
 @name=bofm
 @purpose=Book of Mormon colometric Text-Fabric (queryable by ATU)
 @source=v0-bofm-original + cached UD parse + deployed v2 ATU segmentation
@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T13:45:47+00:00Z
+@dateWritten=2026-06-01T13:45:48+00:00Z
 
 PRON
 PUNCT

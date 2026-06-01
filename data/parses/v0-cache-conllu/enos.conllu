@@ -575,14 +575,14 @@
 44	should	should	AUX	_	_	47	aux	_	_
 45	not	not	PART	_	_	47	advmod	_	_
 46	be	be	AUX	_	_	47	aux:pass	_	_
-47	destroyed	destroy	VERB	_	_	8	conj	_	_
+47	destroyed	destroy	VERB	_	_	30	conj	_	_
 48	,	,	PUNCT	_	_	54	punct	_	_
 49	that	that	SCONJ	_	_	54	mark	_	_
 50	the	the	DET	_	_	52	det	_	_
 51	Lord	Lord	PROPN	_	_	52	compound	_	_
 52	God	God	PROPN	_	_	54	nsubj	_	_
 53	would	would	AUX	_	_	54	aux	_	_
-54	preserve	preserve	VERB	_	_	47	ccomp	_	_
+54	preserve	preserve	VERB	_	_	8	ccomp	_	_
 55	a	a	DET	_	_	56	det	_	_
 56	record	record	NOUN	_	_	54	obj	_	_
 57	of	of	ADP	_	_	59	case	_	_

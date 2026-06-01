@@ -2,14 +2,15 @@
 @description=chapter number
 @name=bofm
 @purpose=Book of Mormon colometric Text-Fabric (queryable by ATU)
-@source=v0-bofm-original + cached Stanza UD parse + deployed v2 ATU segmentation
+@source=v0-bofm-original + cached UD parse + deployed v2 ATU segmentation
+@syntaxSource=stanza-en
 @valueType=int
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-05-27T23:46:21+00:00Z
+@dateWritten=2026-06-01T13:45:46+00:00Z
 
-318644	1
+319520	1
 2
 3
 4
@@ -248,7 +249,7 @@
 8
 9
 10
-1
+328086	1
 1
 1
 1

@@ -4,9 +4,12 @@
 @purpose=Book of Mormon colometric Text-Fabric (queryable by ATU)
 @sectionFeatures=book,chapter,verse
 @sectionTypes=book,chapter,verse
-@source=v0-bofm-original + cached Stanza UD parse + deployed v2 ATU segmentation
+@source=v0-bofm-original + cached UD parse + deployed v2 ATU segmentation
+@structureFeatures=book,chapter,verse,atu_seq
+@structureTypes=book,chapter,verse,atu
+@syntaxSource=stanza-en
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-05-27T23:46:23+00:00Z
+@dateWritten=2026-06-01T13:45:49+00:00Z
 

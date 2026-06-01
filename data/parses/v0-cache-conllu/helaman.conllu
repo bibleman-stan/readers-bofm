@@ -451,7 +451,7 @@
 26	that	that	SCONJ	_	_	29	mark	_	_
 27	they	they	PRON	_	_	29	nsubj	_	_
 28	would	would	AUX	_	_	29	aux	_	_
-29	tell	tell	VERB	_	_	13	advcl	_	_
+29	tell	tell	VERB	_	_	20	ccomp	_	_
 30	no	no	DET	_	_	31	det	_	_
 31	man	man	NOUN	_	_	29	iobj	_	_
 32	that	that	SCONJ	_	_	35	mark	_	_
@@ -873,7 +873,7 @@
 21	they	they	PRON	_	_	24	nsubj	_	_
 22	had	have	AUX	_	_	24	aux	_	_
 23	not	not	PART	_	_	24	advmod	_	_
-24	kept	keep	VERB	_	_	3	parataxis	_	_
+24	kept	keep	VERB	_	_	5	ccomp	_	_
 25	sufficient	sufficient	ADJ	_	_	26	amod	_	_
 26	guards	guard	NOUN	_	_	24	obj	_	_
 27	in	in	ADP	_	_	29	case	_	_
@@ -1079,12 +1079,12 @@
 2	now	now	ADV	_	_	18	advmod	_	_
 3	when	when	ADV	_	_	5	advmod	_	_
 4	Coriantumr	Coriantumr	PROPN	_	_	5	nsubj	_	_
-5	saw	see	VERB	_	_	10	advcl	_	_
+5	saw	see	VERB	_	_	59	advcl	_	_
 6	that	that	SCONJ	_	_	10	mark	_	_
 7	he	he	PRON	_	_	10	nsubj	_	_
 8	was	be	AUX	_	_	10	cop	_	_
 9	in	in	ADP	_	_	10	case	_	_
-10	possession	possession	NOUN	_	_	0	root	_	_
+10	possession	possession	NOUN	_	_	5	ccomp	_	_
 11	of	of	ADP	_	_	13	case	_	_
 12	the	the	DET	_	_	13	det	_	_
 13	city	city	NOUN	_	_	10	nmod	_	_
@@ -1103,7 +1103,7 @@
 26	,	,	PUNCT	_	_	29	punct	_	_
 27	and	and	CCONJ	_	_	29	cc	_	_
 28	were	be	AUX	_	_	29	aux:pass	_	_
-29	slain	slain	VERB	_	_	18	conj	_	_
+29	slain	slain	VERB	_	_	23	conj	_	_
 30	,	,	PUNCT	_	_	33	punct	_	_
 31	and	and	CCONJ	_	_	33	cc	_	_
 32	were	be	AUX	_	_	33	aux:pass	_	_
@@ -1133,7 +1133,7 @@
 56	,	,	PUNCT	_	_	59	punct	_	_
 57	his	his	PRON	_	_	58	nmod:poss	_	_
 58	heart	heart	NOUN	_	_	59	nsubj	_	_
-59	took	take	VERB	_	_	45	parataxis	_	_
+59	took	take	VERB	_	_	0	root	_	_
 60	courage	courage	NOUN	_	_	59	obj	_	_
 61	insomuch	insomuch	ADV	_	_	59	advmod	_	_
 62	that	that	SCONJ	_	_	65	mark	_	_
@@ -1326,7 +1326,7 @@
 21	that	that	SCONJ	_	_	24	mark	_	_
 22	they	they	PRON	_	_	24	nsubj	_	_
 23	would	would	AUX	_	_	24	aux	_	_
-24	attack	attack	VERB	_	_	6	conj	_	_
+24	attack	attack	VERB	_	_	12	conj	_	_
 25	the	the	DET	_	_	26	det	_	_
 26	cities	city	NOUN	_	_	24	obj	_	_
 27	round	round	ADV	_	_	24	advmod	_	_
@@ -1924,7 +1924,7 @@
 21	seat	seat	NOUN	_	_	15	obl	_	_
 22	he	he	PRON	_	_	24	nsubj	_	_
 23	would	would	AUX	_	_	24	aux	_	_
-24	grant	grant	VERB	_	_	4	conj	_	_
+24	grant	grant	VERB	_	_	4	ccomp	_	_
 25	unto	to	ADP	_	_	26	case	_	_
 26	those	that	PRON	_	_	24	obl	_	_
 27	who	who	PRON	_	_	28	nsubj	_	_
@@ -1936,7 +1936,7 @@
 33	they	they	PRON	_	_	36	nsubj:pass	_	_
 34	should	should	AUX	_	_	36	aux	_	_
 35	be	be	AUX	_	_	36	aux:pass	_	_
-36	placed	place	VERB	_	_	28	ccomp	_	_
+36	placed	place	VERB	_	_	24	ccomp	_	_
 37	in	in	ADP	_	_	38	case	_	_
 38	power	power	NOUN	_	_	36	obl	_	_
 39	and	and	CCONJ	_	_	40	cc	_	_
@@ -5271,7 +5271,7 @@
 31	that	that	SCONJ	_	_	34	mark	_	_
 32	they	they	PRON	_	_	34	nsubj	_	_
 33	had	have	AUX	_	_	34	aux	_	_
-34	set	set	VERB	_	_	28	conj	_	_
+34	set	set	VERB	_	_	21	ccomp	_	_
 35	at	at	ADP	_	_	36	case	_	_
 36	naught	nothing	PRON	_	_	34	obl	_	_
 37	the	the	DET	_	_	38	det	_	_
@@ -5324,7 +5324,7 @@
 40	that	that	SCONJ	_	_	43	mark	_	_
 41	they	they	PRON	_	_	43	nsubj	_	_
 42	had	have	AUX	_	_	43	aux	_	_
-43	become	become	VERB	_	_	36	conj	_	_
+43	become	become	VERB	_	_	31	ccomp	_	_
 44	a	a	DET	_	_	46	det	_	_
 45	wicked	wicked	ADJ	_	_	46	amod	_	_
 46	people	person	NOUN	_	_	43	xcomp	_	_
@@ -5414,7 +5414,7 @@
 25	did	do	AUX	_	_	28	aux	_	_
 26	no	no	ADV	_	_	27	advmod	_	_
 27	more	more	ADV	_	_	28	advmod	_	_
-28	preserve	preserve	VERB	_	_	3	conj	_	_
+28	preserve	preserve	VERB	_	_	3	ccomp	_	_
 29	them	they	PRON	_	_	28	obj	_	_
 30	;	;	PUNCT	_	_	35	punct	_	_
 31	yea	yes	INTJ	_	_	35	discourse	_	_
@@ -5870,17 +5870,17 @@
 
 # sent_id = 133
 # text = Therefore, my sons, I would that ye should do that which is good, that it may be said of you, and also written, even as it has been said and written of them.
-1	Therefore	therefore	ADV	_	_	11	advmod	_	_
+1	Therefore	therefore	ADV	_	_	7	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	my	my	PRON	_	_	4	nmod:poss	_	_
-4	sons	son	NOUN	_	_	11	vocative	_	_
+4	sons	son	NOUN	_	_	7	vocative	_	_
 5	,	,	PUNCT	_	_	4	punct	_	_
-6	I	I	PRON	_	_	11	nsubj	_	_
-7	would	would	AUX	_	_	11	reparandum	_	_
+6	I	I	PRON	_	_	7	nsubj	_	_
+7	would	would	VERB	_	_	0	root	_	_
 8	that	that	SCONJ	_	_	11	mark	_	_
 9	ye	you	PRON	_	_	11	nsubj	_	_
 10	should	should	AUX	_	_	11	aux	_	_
-11	do	do	VERB	_	_	0	root	_	_
+11	do	do	VERB	_	_	7	ccomp	_	_
 12	that	that	PRON	_	_	11	obj	_	_
 13	which	which	PRON	_	_	15	nsubj	_	_
 14	is	be	AUX	_	_	15	cop	_	_
@@ -5890,7 +5890,7 @@
 18	it	it	PRON	_	_	21	nsubj:pass	_	_
 19	may	may	AUX	_	_	21	aux	_	_
 20	be	be	AUX	_	_	21	aux:pass	_	_
-21	said	say	VERB	_	_	11	parataxis	_	_
+21	said	say	VERB	_	_	7	ccomp	_	_
 22	of	of	ADP	_	_	23	case	_	_
 23	you	you	PRON	_	_	21	obl	_	_
 24	,	,	PUNCT	_	_	27	punct	_	_
@@ -5908,7 +5908,7 @@
 36	written	write	VERB	_	_	34	conj	_	_
 37	of	of	ADP	_	_	38	case	_	_
 38	them	they	PRON	_	_	36	obl	_	_
-39	.	.	PUNCT	_	_	11	punct	_	_
+39	.	.	PUNCT	_	_	7	punct	_	_
 
 # sent_id = 134
 # text = And now my sons, behold I have somewhat more to desire of you, which desire is, that ye may not do these things that ye may boast, but that ye may do these things to lay up for yourselves a treasure in heaven, yea, which is eternal, and which fadeth not away; yea, that ye may have that precious gift of eternal life, which we have reason to suppose hath been given to our fathers.
@@ -5977,7 +5977,7 @@
 63	that	that	SCONJ	_	_	66	mark	_	_
 64	ye	you	PRON	_	_	66	nsubj	_	_
 65	may	may	AUX	_	_	66	aux	_	_
-66	have	have	VERB	_	_	53	parataxis	_	_
+66	have	have	VERB	_	_	8	parataxis	_	_
 67	that	that	DET	_	_	69	det	_	_
 68	precious	precious	ADJ	_	_	69	amod	_	_
 69	gift	gift	NOUN	_	_	66	obj	_	_
@@ -6101,7 +6101,7 @@
 36	he	he	PRON	_	_	39	nsubj	_	_
 37	should	should	AUX	_	_	39	aux	_	_
 38	not	not	PART	_	_	39	advmod	_	_
-39	come	come	VERB	_	_	28	conj	_	_
+39	come	come	VERB	_	_	20	ccomp	_	_
 40	to	to	PART	_	_	41	mark	_	_
 41	redeem	redeem	VERB	_	_	39	xcomp	_	_
 42	them	they	PRON	_	_	41	obj	_	_
@@ -6206,7 +6206,7 @@
 29	that	that	SCONJ	_	_	32	mark	_	_
 30	ye	you	PRON	_	_	32	nsubj	_	_
 31	must	must	AUX	_	_	32	aux	_	_
-32	build	build	VERB	_	_	22	conj	_	_
+32	build	build	VERB	_	_	15	acl:relcl	_	_
 33	your	your	PRON	_	_	34	nmod:poss	_	_
 34	foundation	foundation	NOUN	_	_	32	obj	_	_
 35	;	;	PUNCT	_	_	36	punct	_	_
@@ -6246,7 +6246,7 @@
 69	,	,	PUNCT	_	_	41	punct	_	_
 70	it	it	PRON	_	_	72	nsubj	_	_
 71	shall	shall	AUX	_	_	72	aux	_	_
-72	have	have	VERB	_	_	9	parataxis	_	_
+72	have	have	VERB	_	_	9	ccomp	_	_
 73	no	no	DET	_	_	74	det	_	_
 74	power	power	NOUN	_	_	72	obj	_	_
 75	over	over	ADP	_	_	76	case	_	_
@@ -6802,7 +6802,7 @@
 16	and	and	CCONJ	_	_	19	cc	_	_
 17	that	that	SCONJ	_	_	19	mark	_	_
 18	it	it	PRON	_	_	19	nsubj	_	_
-19	burned	burn	VERB	_	_	8	conj	_	_
+19	burned	burn	VERB	_	_	4	ccomp	_	_
 20	them	they	PRON	_	_	19	obj	_	_
 21	not	not	PART	_	_	19	advmod	_	_
 22	,	,	PUNCT	_	_	4	punct	_	_
@@ -7721,7 +7721,7 @@
 27	behold	behold	INTJ	_	_	30	discourse	_	_
 28	,	,	PUNCT	_	_	27	punct	_	_
 29	they	they	PRON	_	_	30	nsubj	_	_
-30	saw	see	VERB	_	_	3	parataxis	_	_
+30	saw	see	VERB	_	_	5	ccomp	_	_
 31	that	that	SCONJ	_	_	34	mark	_	_
 32	they	they	PRON	_	_	34	nsubj:pass	_	_
 33	were	be	AUX	_	_	34	aux:pass	_	_
@@ -8033,7 +8033,7 @@
 42	the	the	DET	_	_	43	det	_	_
 43	Lamanites	Lamanites	PROPN	_	_	40	nmod	_	_
 44	were	be	AUX	_	_	45	aux:pass	_	_
-45	convinced	convince	VERB	_	_	28	acl:relcl	_	_
+45	convinced	convince	VERB	_	_	9	advcl	_	_
 46	of	of	ADP	_	_	47	case	_	_
 47	them	they	PRON	_	_	45	obl	_	_
 48	,	,	PUNCT	_	_	52	punct	_	_
@@ -8983,7 +8983,7 @@
 55	they	they	PRON	_	_	58	nsubj:pass	_	_
 56	might	might	AUX	_	_	58	aux	_	_
 57	be	be	AUX	_	_	58	aux:pass	_	_
-58	lifted	lift	VERB	_	_	53	acl	_	_
+58	lifted	lift	VERB	_	_	52	advcl	_	_
 59	up	up	ADP	_	_	58	compound:prt	_	_
 60	one	one	NUM	_	_	58	obj	_	_
 61	above	above	ADP	_	_	62	case	_	_
@@ -9230,7 +9230,7 @@
 57	they	they	PRON	_	_	60	nsubj	_	_
 58	should	should	AUX	_	_	60	aux	_	_
 59	not	not	PART	_	_	60	advmod	_	_
-60	suffer	suffer	VERB	_	_	42	advcl	_	_
+60	suffer	suffer	VERB	_	_	31	advcl	_	_
 61	for	for	ADP	_	_	63	case	_	_
 62	their	their	PRON	_	_	63	nmod:poss	_	_
 63	murders	murder	NOUN	_	_	60	obl	_	_
@@ -9295,7 +9295,7 @@
 47	should	should	AUX	_	_	50	aux	_	_
 48	not	not	PART	_	_	50	advmod	_	_
 49	be	be	AUX	_	_	50	aux:pass	_	_
-50	injured	injure	VERB	_	_	3	parataxis	_	_
+50	injured	injure	VERB	_	_	25	advcl	_	_
 51	by	by	ADP	_	_	53	case	_	_
 52	his	his	PRON	_	_	53	nmod:poss	_	_
 53	brother	brother	NOUN	_	_	50	obl:agent	_	_
@@ -10497,7 +10497,7 @@
 44	that	that	SCONJ	_	_	47	mark	_	_
 45	they	they	PRON	_	_	47	nsubj	_	_
 46	might	might	AUX	_	_	47	aux	_	_
-47	get	get	VERB	_	_	9	parataxis	_	_
+47	get	get	VERB	_	_	38	advcl	_	_
 48	gain	gain	NOUN	_	_	47	obj	_	_
 49	and	and	CCONJ	_	_	50	cc	_	_
 50	glory	glory	NOUN	_	_	48	conj	_	_
@@ -10612,7 +10612,7 @@
 27	I	I	PRON	_	_	30	nsubj	_	_
 28	could	could	AUX	_	_	30	aux	_	_
 29	have	have	AUX	_	_	30	aux	_	_
-30	joyed	joy	VERB	_	_	7	parataxis	_	_
+30	joyed	joy	VERB	_	_	7	conj	_	_
 31	with	with	ADP	_	_	32	case	_	_
 32	him	he	PRON	_	_	30	obl	_	_
 33	in	in	ADP	_	_	36	case	_	_
@@ -10710,7 +10710,7 @@
 16	soul	soul	NOUN	_	_	19	nsubj:pass	_	_
 17	shall	shall	AUX	_	_	19	aux	_	_
 18	be	be	AUX	_	_	19	aux:pass	_	_
-19	filled	fill	VERB	_	_	11	conj	_	_
+19	filled	fill	VERB	_	_	6	ccomp	_	_
 20	with	with	ADP	_	_	21	case	_	_
 21	sorrow	sorrow	NOUN	_	_	19	obl	_	_
 22	because	because	ADP	_	_	24	case	_	_
@@ -11398,15 +11398,15 @@
 
 # sent_id = 274
 # text = Now therefore, I would that ye should behold, my brethren, that it shall be better for the Lamanites than for you except ye shall repent.
-1	Now	now	ADV	_	_	9	advmod	_	_
-2	therefore	therefore	ADV	_	_	9	advmod	_	_
+1	Now	now	ADV	_	_	5	advmod	_	_
+2	therefore	therefore	ADV	_	_	5	advmod	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
-4	I	I	PRON	_	_	9	nsubj	_	_
-5	would	would	AUX	_	_	9	reparandum	_	_
+4	I	I	PRON	_	_	5	nsubj	_	_
+5	would	would	VERB	_	_	0	root	_	_
 6	that	that	SCONJ	_	_	9	mark	_	_
 7	ye	you	PRON	_	_	9	nsubj	_	_
 8	should	should	AUX	_	_	9	aux	_	_
-9	behold	behold	VERB	_	_	0	root	_	_
+9	behold	behold	VERB	_	_	5	ccomp	_	_
 10	,	,	PUNCT	_	_	12	punct	_	_
 11	my	my	PRON	_	_	12	nmod:poss	_	_
 12	brethren	brother	NOUN	_	_	9	vocative	_	_
@@ -11426,7 +11426,7 @@
 26	ye	you	PRON	_	_	28	nsubj	_	_
 27	shall	shall	AUX	_	_	28	aux	_	_
 28	repent	repent	VERB	_	_	18	advcl	_	_
-29	.	.	PUNCT	_	_	9	punct	_	_
+29	.	.	PUNCT	_	_	5	punct	_	_
 
 # sent_id = 275
 # text = For behold, they are more righteous than you, for they have not sinned against that great knowledge which ye have received; therefore the Lord will be merciful unto them; yea, he will lengthen out their days and increase their seed, even when thou shalt be utterly destroyed except thou shalt repent.
@@ -12588,7 +12588,7 @@
 50	it	it	PRON	_	_	53	nsubj:pass	_	_
 51	should	should	AUX	_	_	53	aux	_	_
 52	be	be	AUX	_	_	53	aux:pass	_	_
-53	shown	show	VERB	_	_	48	acl:relcl	_	_
+53	shown	show	VERB	_	_	48	ccomp	_	_
 54	unto	to	ADP	_	_	56	case	_	_
 55	the	the	DET	_	_	56	det	_	_
 56	people	person	NOUN	_	_	53	obl	_	_
@@ -12606,7 +12606,7 @@
 68	even	even	ADV	_	_	69	advmod	_	_
 69	redemption	redemption	NOUN	_	_	71	nsubj	_	_
 70	should	should	AUX	_	_	71	aux	_	_
-71	come	come	VERB	_	_	53	advcl	_	_
+71	come	come	VERB	_	_	53	ccomp	_	_
 72	unto	to	ADP	_	_	73	case	_	_
 73	them	they	PRON	_	_	71	obl	_	_
 74	.	.	PUNCT	_	_	4	punct	_	_
@@ -12616,11 +12616,11 @@
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	now	now	ADV	_	_	8	advmod	_	_
 3	I	I	PRON	_	_	4	nsubj	_	_
-4	would	would	AUX	_	_	8	reparandum	_	_
+4	would	would	VERB	_	_	0	root	_	_
 5	that	that	SCONJ	_	_	8	mark	_	_
 6	ye	you	PRON	_	_	8	nsubj	_	_
 7	should	should	AUX	_	_	8	aux	_	_
-8	know	know	VERB	_	_	0	root	_	_
+8	know	know	VERB	_	_	4	ccomp	_	_
 9	,	,	PUNCT	_	_	10	punct	_	_
 10	that	that	SCONJ	_	_	21	mark	_	_
 11	even	even	ADV	_	_	14	advmod	_	_
@@ -13311,7 +13311,7 @@
 39	that	that	SCONJ	_	_	42	mark	_	_
 40	he	he	PRON	_	_	42	nsubj	_	_
 41	be	be	AUX	_	_	42	cop	_	_
-42	dead	dead	ADJ	_	_	37	advcl	_	_
+42	dead	dead	ADJ	_	_	37	ccomp	_	_
 43	,	,	PUNCT	_	_	27	punct	_	_
 44	then	then	ADV	_	_	47	advmod	_	_
 45	will	will	AUX	_	_	47	aux	_	_
@@ -13640,7 +13640,7 @@
 17	murderers	murderer	NOUN	_	_	20	nsubj:pass	_	_
 18	had	have	AUX	_	_	20	aux	_	_
 19	been	be	AUX	_	_	20	aux:pass	_	_
-20	taken	take	VERB	_	_	12	conj	_	_
+20	taken	take	VERB	_	_	5	acl	_	_
 21	and	and	CCONJ	_	_	23	cc	_	_
 22	were	be	AUX	_	_	23	aux:pass	_	_
 23	cast	cast	VERB	_	_	20	conj	_	_
@@ -14012,7 +14012,7 @@
 54	that	that	SCONJ	_	_	57	mark	_	_
 55	he	he	PRON	_	_	57	nsubj	_	_
 56	might	might	AUX	_	_	57	aux	_	_
-57	convert	convert	VERB	_	_	49	ccomp	_	_
+57	convert	convert	VERB	_	_	49	advcl	_	_
 58	us	we	PRON	_	_	57	obj	_	_
 59	unto	to	ADP	_	_	61	case	_	_
 60	his	his	PRON	_	_	61	nmod:poss	_	_
@@ -14162,7 +14162,7 @@
 33	that	that	SCONJ	_	_	36	mark	_	_
 34	they	they	PRON	_	_	36	nsubj	_	_
 35	might	might	AUX	_	_	36	aux	_	_
-36	accuse	accuse	VERB	_	_	30	advcl	_	_
+36	accuse	accuse	VERB	_	_	26	acl	_	_
 37	him	he	PRON	_	_	36	obj	_	_
 38	to	to	ADP	_	_	39	case	_	_
 39	death	death	NOUN	_	_	36	obl	_	_
@@ -14377,7 +14377,7 @@
 35	that	that	SCONJ	_	_	38	mark	_	_
 36	I	I	PRON	_	_	38	nsubj	_	_
 37	did	do	AUX	_	_	38	aux	_	_
-38	know	know	VERB	_	_	21	advcl	_	_
+38	know	know	VERB	_	_	15	ccomp	_	_
 39	of	of	ADP	_	_	41	case	_	_
 40	the	the	DET	_	_	41	det	_	_
 41	wickedness	wickedness	NOUN	_	_	38	obl	_	_
@@ -14807,7 +14807,7 @@
 14	that	that	SCONJ	_	_	17	mark	_	_
 15	I	I	PRON	_	_	17	nsubj:pass	_	_
 16	am	be	AUX	_	_	17	aux:pass	_	_
-17	sent	send	VERB	_	_	11	conj	_	_
+17	sent	send	VERB	_	_	5	ccomp	_	_
 18	unto	to	ADP	_	_	19	case	_	_
 19	you	you	PRON	_	_	17	obl	_	_
 20	from	from	ADP	_	_	21	case	_	_
@@ -15528,7 +15528,7 @@
 18	,	,	PUNCT	_	_	21	punct	_	_
 19	that	that	SCONJ	_	_	21	mark	_	_
 20	thus	thus	ADV	_	_	21	advmod	_	_
-21	saith	say	VERB	_	_	6	parataxis	_	_
+21	saith	say	VERB	_	_	6	ccomp	_	_
 22	the	the	DET	_	_	23	det	_	_
 23	Lord	Lord	PROPN	_	_	24	compound	_	_
 24	God	God	PROPN	_	_	21	obj	_	_
@@ -15941,7 +15941,7 @@
 20	the	the	DET	_	_	21	det	_	_
 21	contentions	contention	NOUN	_	_	23	nsubj	_	_
 22	did	do	AUX	_	_	23	aux	_	_
-23	increase	increase	VERB	_	_	15	acl:relcl	_	_
+23	increase	increase	VERB	_	_	6	ccomp	_	_
 24	,	,	PUNCT	_	_	25	punct	_	_
 25	insomuch	insomuch	ADV	_	_	28	advmod	_	_
 26	that	that	SCONJ	_	_	28	mark	_	_
@@ -16291,14 +16291,14 @@
 15	that	that	SCONJ	_	_	18	mark	_	_
 16	they	they	PRON	_	_	18	nsubj	_	_
 17	would	would	AUX	_	_	18	aux	_	_
-18	say	say	VERB	_	_	4	parataxis	_	_
+18	say	say	VERB	_	_	6	ccomp	_	_
 19	unto	to	ADP	_	_	20	case	_	_
 20	Nephi	Nephi	PROPN	_	_	18	obl	_	_
 21	:	:	PUNCT	_	_	25	punct	_	_
 22	Behold	behold	INTJ	_	_	25	discourse	_	_
 23	,	,	PUNCT	_	_	22	punct	_	_
 24	we	we	PRON	_	_	25	nsubj	_	_
-25	know	know	VERB	_	_	4	parataxis	_	_
+25	know	know	VERB	_	_	18	ccomp	_	_
 26	that	that	SCONJ	_	_	30	mark	_	_
 27	thou	you	PRON	_	_	30	nsubj	_	_
 28	art	be	AUX	_	_	30	cop	_	_
@@ -16317,7 +16317,7 @@
 41	God	God	PROPN	_	_	36	obj	_	_
 42	that	that	SCONJ	_	_	44	mark	_	_
 43	he	he	PRON	_	_	44	nsubj	_	_
-44	turn	turn	VERB	_	_	36	advcl	_	_
+44	turn	turn	VERB	_	_	36	ccomp	_	_
 45	away	away	ADV	_	_	44	advmod	_	_
 46	from	from	ADP	_	_	47	case	_	_
 47	us	we	PRON	_	_	44	obl	_	_
@@ -16388,7 +16388,7 @@
 20	sackcloth	sackcloth	NOUN	_	_	17	obl	_	_
 21	,	,	PUNCT	_	_	9	punct	_	_
 22	he	he	PRON	_	_	23	nsubj	_	_
-23	cried	cry	VERB	_	_	3	conj	_	_
+23	cried	cry	VERB	_	_	5	ccomp	_	_
 24	again	again	ADV	_	_	23	advmod	_	_
 25	unto	to	ADP	_	_	27	case	_	_
 26	the	the	DET	_	_	27	det	_	_
@@ -16574,7 +16574,7 @@
 11	I	I	PRON	_	_	12	nsubj	_	_
 12	said	say	VERB	_	_	6	advcl	_	_
 13	,	,	PUNCT	_	_	14	punct	_	_
-14	Let	let	VERB	_	_	6	parataxis	_	_
+14	Let	let	VERB	_	_	12	ccomp	_	_
 15	there	there	PRON	_	_	16	expl	_	_
 16	be	be	VERB	_	_	14	xcomp	_	_
 17	a	a	DET	_	_	18	det	_	_
@@ -16587,7 +16587,7 @@
 24	the	the	DET	_	_	25	det	_	_
 25	sword	sword	NOUN	_	_	22	nmod	_	_
 26	might	might	AUX	_	_	27	aux	_	_
-27	cease	cease	VERB	_	_	18	acl:relcl	_	_
+27	cease	cease	VERB	_	_	14	advcl	_	_
 28	;	;	PUNCT	_	_	31	punct	_	_
 29	and	and	CCONJ	_	_	31	cc	_	_
 30	I	I	PRON	_	_	31	nsubj	_	_
@@ -16609,7 +16609,7 @@
 46	for	for	SCONJ	_	_	48	mark	_	_
 47	thou	you	PRON	_	_	48	nsubj	_	_
 48	saidst	say	VERB	_	_	41	advcl	_	_
-49	that	that	SCONJ	_	_	48	obj	_	_
+49	that	that	SCONJ	_	_	48	mark	_	_
 50	:	:	PUNCT	_	_	6	punct	_	_
 
 # sent_id = 413
@@ -18801,7 +18801,7 @@
 23	they	they	PRON	_	_	26	nsubj:pass	_	_
 24	might	might	AUX	_	_	26	aux	_	_
 25	be	be	AUX	_	_	26	aux:pass	_	_
-26	restored	restore	VERB	_	_	15	advcl	_	_
+26	restored	restore	VERB	_	_	4	ccomp	_	_
 27	unto	to	ADP	_	_	28	case	_	_
 28	grace	grace	NOUN	_	_	26	obl	_	_
 29	for	for	ADP	_	_	30	case	_	_
@@ -20444,7 +20444,7 @@
 72	he	he	PRON	_	_	75	nsubj	_	_
 73	is	be	AUX	_	_	75	cop	_	_
 74	a	a	DET	_	_	75	det	_	_
-75	sinner	sinner	NOUN	_	_	68	conj	_	_
+75	sinner	sinner	NOUN	_	_	62	ccomp	_	_
 76	,	,	PUNCT	_	_	80	punct	_	_
 77	and	and	CCONJ	_	_	80	cc	_	_
 78	of	of	ADP	_	_	80	case	_	_
@@ -21203,7 +21203,7 @@
 17	that	that	SCONJ	_	_	20	mark	_	_
 18	ye	you	PRON	_	_	20	nsubj	_	_
 19	would	would	AUX	_	_	20	aux	_	_
-20	repent	repent	VERB	_	_	11	conj	_	_
+20	repent	repent	VERB	_	_	3	ccomp	_	_
 21	and	and	CCONJ	_	_	23	cc	_	_
 22	be	be	AUX	_	_	23	aux:pass	_	_
 23	saved	save	VERB	_	_	20	conj	_	_
@@ -21327,13 +21327,13 @@
 40	shall	shall	AUX	_	_	43	aux	_	_
 41	be	be	AUX	_	_	43	cop	_	_
 42	no	no	DET	_	_	43	det	_	_
-43	darkness	darkness	NOUN	_	_	25	parataxis	_	_
+43	darkness	darkness	NOUN	_	_	25	advcl	_	_
 44	,	,	PUNCT	_	_	45	punct	_	_
 45	insomuch	insomuch	ADV	_	_	43	advmod	_	_
 46	that	that	SCONJ	_	_	49	mark	_	_
 47	it	it	PRON	_	_	49	nsubj	_	_
 48	shall	shall	AUX	_	_	49	aux	_	_
-49	appear	appear	VERB	_	_	43	acl:relcl	_	_
+49	appear	appear	VERB	_	_	43	advcl	_	_
 50	unto	to	ADP	_	_	51	case	_	_
 51	man	man	NOUN	_	_	49	obl	_	_
 52	as	as	SCONJ	_	_	56	mark	_	_
@@ -21843,7 +21843,7 @@
 8	that	that	SCONJ	_	_	11	mark	_	_
 9	salvation	salvation	NOUN	_	_	11	nsubj	_	_
 10	may	may	AUX	_	_	11	aux	_	_
-11	come	come	VERB	_	_	7	ccomp	_	_
+11	come	come	VERB	_	_	7	advcl	_	_
 12	;	;	PUNCT	_	_	16	punct	_	_
 13	yea	yes	INTJ	_	_	16	discourse	_	_
 14	,	,	PUNCT	_	_	13	punct	_	_
@@ -22437,14 +22437,14 @@
 3	said	say	VERB	_	_	0	root	_	_
 4	unto	to	ADP	_	_	5	case	_	_
 5	me	I	PRON	_	_	3	obl	_	_
-6	that	that	SCONJ	_	_	13	mark	_	_
+6	that	that	SCONJ	_	_	23	mark	_	_
 7	while	while	SCONJ	_	_	13	mark	_	_
 8	the	the	DET	_	_	9	det	_	_
 9	thunder	thunder	NOUN	_	_	13	nsubj	_	_
 10	and	and	CCONJ	_	_	12	cc	_	_
 11	the	the	DET	_	_	12	det	_	_
 12	lightning	lightning	NOUN	_	_	9	conj	_	_
-13	lasted	last	VERB	_	_	3	advcl	_	_
+13	lasted	last	VERB	_	_	23	advcl	_	_
 14	,	,	PUNCT	_	_	17	punct	_	_
 15	and	and	CCONJ	_	_	17	cc	_	_
 16	the	the	DET	_	_	17	det	_	_
@@ -22454,13 +22454,13 @@
 20	these	this	DET	_	_	21	det	_	_
 21	things	thing	NOUN	_	_	23	nsubj	_	_
 22	should	should	AUX	_	_	23	aux	_	_
-23	be	be	AUX	_	_	29	cop	_	_
+23	be	be	AUX	_	_	3	ccomp	_	_
 24	,	,	PUNCT	_	_	29	punct	_	_
 25	and	and	CCONJ	_	_	29	cc	_	_
 26	that	that	SCONJ	_	_	29	mark	_	_
 27	darkness	darkness	NOUN	_	_	29	nsubj	_	_
 28	should	should	AUX	_	_	29	aux	_	_
-29	cover	cover	VERB	_	_	13	conj	_	_
+29	cover	cover	VERB	_	_	23	conj	_	_
 30	the	the	DET	_	_	31	det	_	_
 31	face	face	NOUN	_	_	29	obj	_	_
 32	of	of	ADP	_	_	35	case	_	_
@@ -22968,13 +22968,13 @@
 
 # sent_id = 563
 # text = And I would that ye should behold that the more part of them are in the path of their duty, and they do walk circumspectly before God, and they do observe to keep his commandments and his statutes and his judgments according to the law of Moses.
-1	And	and	CCONJ	_	_	7	cc	_	_
-2	I	I	PRON	_	_	7	nsubj	_	_
-3	would	would	AUX	_	_	7	reparandum	_	_
+1	And	and	CCONJ	_	_	3	cc	_	_
+2	I	I	PRON	_	_	3	nsubj	_	_
+3	would	would	VERB	_	_	0	root	_	_
 4	that	that	SCONJ	_	_	7	mark	_	_
 5	ye	you	PRON	_	_	7	nsubj	_	_
 6	should	should	AUX	_	_	7	aux	_	_
-7	behold	behold	VERB	_	_	0	root	_	_
+7	behold	behold	VERB	_	_	3	ccomp	_	_
 8	that	that	SCONJ	_	_	17	mark	_	_
 9	the	the	DET	_	_	11	det	_	_
 10	more	more	ADJ	_	_	11	amod	_	_
@@ -22992,7 +22992,7 @@
 22	and	and	CCONJ	_	_	25	cc	_	_
 23	they	they	PRON	_	_	25	nsubj	_	_
 24	do	do	AUX	_	_	25	aux	_	_
-25	walk	walk	VERB	_	_	7	conj	_	_
+25	walk	walk	VERB	_	_	17	conj	_	_
 26	circumspectly	circumspectly	ADV	_	_	25	advmod	_	_
 27	before	before	ADP	_	_	28	case	_	_
 28	God	God	PROPN	_	_	25	obl	_	_
@@ -23000,7 +23000,7 @@
 30	and	and	CCONJ	_	_	33	cc	_	_
 31	they	they	PRON	_	_	33	nsubj	_	_
 32	do	do	AUX	_	_	33	aux	_	_
-33	observe	observe	VERB	_	_	7	conj	_	_
+33	observe	observe	VERB	_	_	17	conj	_	_
 34	to	to	PART	_	_	35	mark	_	_
 35	keep	keep	VERB	_	_	33	xcomp	_	_
 36	his	his	PRON	_	_	37	nmod:poss	_	_
@@ -23017,7 +23017,7 @@
 47	law	law	NOUN	_	_	35	obl	_	_
 48	of	of	ADP	_	_	49	case	_	_
 49	Moses	Moses	PROPN	_	_	47	nmod	_	_
-50	.	.	PUNCT	_	_	7	punct	_	_
+50	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 564
 # text = Yea, I say unto you, that the more part of them are doing this, and they are striving with unwearied diligence that they may bring the remainder of their brethren to the knowledge of the truth; therefore there are many who do add to their numbers daily.
@@ -23932,7 +23932,7 @@
 31	that	that	SCONJ	_	_	34	mark	_	_
 32	they	they	PRON	_	_	34	nsubj	_	_
 33	might	might	AUX	_	_	34	aux	_	_
-34	know	know	VERB	_	_	6	parataxis	_	_
+34	know	know	VERB	_	_	6	advcl	_	_
 35	that	that	SCONJ	_	_	40	mark	_	_
 36	the	the	DET	_	_	37	det	_	_
 37	Christ	Christ	PROPN	_	_	40	nsubj	_	_

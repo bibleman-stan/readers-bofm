@@ -2,14 +2,15 @@
 @description=book display name
 @name=bofm
 @purpose=Book of Mormon colometric Text-Fabric (queryable by ATU)
-@source=v0-bofm-original + cached Stanza UD parse + deployed v2 ATU segmentation
+@source=v0-bofm-original + cached UD parse + deployed v2 ATU segmentation
+@syntaxSource=stanza-en
 @valueType=str
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-05-27T23:46:21+00:00Z
+@dateWritten=2026-06-01T13:45:46+00:00Z
 
-318629	1 Nephi
+319505	1 Nephi
 2 Nephi
 Jacob
 Enos
@@ -263,7 +264,7 @@ Moroni
 Moroni
 Moroni
 Moroni
-1 Nephi
+328086	1 Nephi
 1 Nephi
 1 Nephi
 1 Nephi

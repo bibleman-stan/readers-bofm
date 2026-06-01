@@ -2030,7 +2030,7 @@
 22	that	that	SCONJ	_	_	25	mark	_	_
 23	they	they	PRON	_	_	25	nsubj	_	_
 24	would	would	AUX	_	_	25	aux	_	_
-25	stand	stand	VERB	_	_	16	advcl	_	_
+25	stand	stand	VERB	_	_	16	ccomp	_	_
 26	boldly	boldly	ADV	_	_	25	advmod	_	_
 27	before	before	ADP	_	_	29	case	_	_
 28	the	the	DET	_	_	29	det	_	_
@@ -3442,7 +3442,7 @@
 40	they	they	PRON	_	_	41	nsubj	_	_
 41	saw	see	VERB	_	_	38	acl:relcl	_	_
 42	and	and	CCONJ	_	_	43	cc	_	_
-43	heard	hear	VERB	_	_	34	conj	_	_
+43	heard	hear	VERB	_	_	41	conj	_	_
 44	,	,	PUNCT	_	_	55	punct	_	_
 45	that	that	SCONJ	_	_	55	mark	_	_
 46	Jesus	Jesus	PROPN	_	_	55	nsubj	_	_
@@ -3454,7 +3454,7 @@
 52	was	be	AUX	_	_	55	cop	_	_
 53	the	the	DET	_	_	55	det	_	_
 54	very	very	ADJ	_	_	55	amod	_	_
-55	Christ	Christ	PROPN	_	_	43	ccomp	_	_
+55	Christ	Christ	PROPN	_	_	41	ccomp	_	_
 56	and	and	CCONJ	_	_	59	cc	_	_
 57	the	the	DET	_	_	59	det	_	_
 58	very	very	ADJ	_	_	59	amod	_	_
@@ -4152,7 +4152,7 @@
 32	that	that	SCONJ	_	_	35	mark	_	_
 33	they	they	PRON	_	_	35	nsubj	_	_
 34	did	do	AUX	_	_	35	aux	_	_
-35	go	go	VERB	_	_	25	advcl	_	_
+35	go	go	VERB	_	_	5	ccomp	_	_
 36	against	against	ADP	_	_	38	case	_	_
 37	the	the	DET	_	_	38	det	_	_
 38	Lamanites	Lamanites	PROPN	_	_	35	obl	_	_
@@ -4926,7 +4926,7 @@
 7	these	this	DET	_	_	8	det	_	_
 8	things	thing	NOUN	_	_	5	nmod	_	_
 9	must	must	AUX	_	_	10	aux	_	_
-10	come	come	VERB	_	_	0	root	_	_
+10	come	come	VERB	_	_	47	advcl	_	_
 11	unto	to	ADP	_	_	13	case	_	_
 12	the	the	DET	_	_	13	det	_	_
 13	remnant	remnant	NOUN	_	_	10	obl	_	_
@@ -4963,7 +4963,7 @@
 44	--	--	PUNCT	_	_	47	punct	_	_
 45	therefore	therefore	ADV	_	_	47	advmod	_	_
 46	I	I	PRON	_	_	47	nsubj	_	_
-47	write	write	VERB	_	_	10	parataxis	_	_
+47	write	write	VERB	_	_	0	root	_	_
 48	a	a	DET	_	_	50	det	_	_
 49	small	small	ADJ	_	_	50	amod	_	_
 50	abridgment	summary	NOUN	_	_	47	obj	_	_
@@ -5009,7 +5009,7 @@
 90	of	of	ADP	_	_	92	case	_	_
 91	this	this	DET	_	_	92	det	_	_
 92	people	person	NOUN	_	_	89	nmod	_	_
-93	.	.	PUNCT	_	_	10	punct	_	_
+93	.	.	PUNCT	_	_	47	punct	_	_
 
 # sent_id = 124
 # text = And now behold, this I speak unto their seed, and also to the Gentiles who have care for the house of Israel, that realize and know from whence their blessings come.
@@ -5246,7 +5246,7 @@
 41	the	the	DET	_	_	42	det	_	_
 42	Father	Father	PROPN	_	_	44	nsubj	_	_
 43	may	may	AUX	_	_	44	aux	_	_
-44	bring	bring	VERB	_	_	26	parataxis	_	_
+44	bring	bring	VERB	_	_	20	ccomp	_	_
 45	about	about	ADP	_	_	44	obl	_	_
 46	,	,	PUNCT	_	_	45	punct	_	_
 47	through	through	ADP	_	_	56	case	_	_
@@ -6044,7 +6044,7 @@
 88	)	)	PUNCT	_	_	86	punct	_	_
 89	therefore	therefore	ADV	_	_	91	advmod	_	_
 90	I	I	PRON	_	_	91	nsubj	_	_
-91	made	make	VERB	_	_	3	parataxis	_	_
+91	made	make	VERB	_	_	5	ccomp	_	_
 92	this	this	DET	_	_	93	det	_	_
 93	record	record	NOUN	_	_	91	obj	_	_
 94	out	out	ADP	_	_	97	case	_	_
@@ -6897,7 +6897,7 @@
 33	that	that	SCONJ	_	_	36	mark	_	_
 34	they	they	PRON	_	_	36	nsubj	_	_
 35	may	may	AUX	_	_	36	aux	_	_
-36	know	know	VERB	_	_	27	ccomp	_	_
+36	know	know	VERB	_	_	8	advcl	_	_
 37	of	of	ADP	_	_	39	case	_	_
 38	the	the	DET	_	_	39	det	_	_
 39	things	thing	NOUN	_	_	36	obl	_	_
@@ -11056,7 +11056,7 @@
 44	that	that	SCONJ	_	_	47	mark	_	_
 45	ye	you	PRON	_	_	47	nsubj	_	_
 46	will	will	AUX	_	_	47	aux	_	_
-47	serve	serve	VERB	_	_	38	conj	_	_
+47	serve	serve	VERB	_	_	29	ccomp	_	_
 48	the	the	DET	_	_	49	det	_	_
 49	true	true	ADJ	_	_	47	obj	_	_
 50	and	and	CCONJ	_	_	51	cc	_	_

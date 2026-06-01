@@ -1,5 +1,5 @@
 @node
-@description=UD dependency relation; alias of udrel -- PROVISIONAL (weak Stanza-modern-English parse; replaced by the EModE parser at v0.2)
+@description=canonical cross-corpus UD relation (audit #2 harmonization) -- PROVISIONAL until v0.2
 @name=bofm
 @purpose=Book of Mormon colometric Text-Fabric (queryable by ATU)
 @source=v0-bofm-original + cached UD parse + deployed v2 ATU segmentation
@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T13:45:46+00:00Z
+@dateWritten=2026-06-01T13:45:48+00:00Z
 
 nsubj:pass
 punct
