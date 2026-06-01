@@ -6238,7 +6238,7 @@
 18	.	.	PUNCT	_	_	5	punct	_	_
 
 # sent_id = 172
-# text = And they did land upon the shore of the promised land.
+# text = And they did land upon the shore of the promised land. And when they had set their feet upon the shores of the promised land they bowed themselves down upon the face of the land, and did humble themselves before the Lord, and did shed tears of joy before the Lord, because of the multitude of his tender mercies over them.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
 3	did	do	AUX	_	_	4	aux	_	_
@@ -6251,65 +6251,62 @@
 10	promised	promise	VERB	_	_	11	amod	_	_
 11	land	land	NOUN	_	_	7	nmod	_	_
 12	.	.	PUNCT	_	_	4	punct	_	_
+13	And	and	CCONJ	_	_	28	cc	_	_
+14	when	when	ADV	_	_	17	advmod	_	_
+15	they	they	PRON	_	_	17	nsubj	_	_
+16	had	have	AUX	_	_	17	aux	_	_
+17	set	set	VERB	_	_	28	advcl	_	_
+18	their	their	PRON	_	_	19	nmod:poss	_	_
+19	feet	foot	NOUN	_	_	17	obj	_	_
+20	upon	upon	ADP	_	_	22	case	_	_
+21	the	the	DET	_	_	22	det	_	_
+22	shores	shore	NOUN	_	_	17	obl	_	_
+23	of	of	ADP	_	_	26	case	_	_
+24	the	the	DET	_	_	26	det	_	_
+25	promised	promise	VERB	_	_	26	amod	_	_
+26	land	land	NOUN	_	_	22	nmod	_	_
+27	they	they	PRON	_	_	28	nsubj	_	_
+28	bowed	bow	VERB	_	_	4	conj	_	_
+29	themselves	themselves	PRON	_	_	28	obj	_	_
+30	down	down	ADP	_	_	28	compound:prt	_	_
+31	upon	upon	ADP	_	_	33	case	_	_
+32	the	the	DET	_	_	33	det	_	_
+33	face	face	NOUN	_	_	28	obl	_	_
+34	of	of	ADP	_	_	36	case	_	_
+35	the	the	DET	_	_	36	det	_	_
+36	land	land	NOUN	_	_	33	nmod	_	_
+37	,	,	PUNCT	_	_	40	punct	_	_
+38	and	and	CCONJ	_	_	40	cc	_	_
+39	did	do	AUX	_	_	40	aux	_	_
+40	humble	humble	VERB	_	_	28	conj	_	_
+41	themselves	themselves	PRON	_	_	40	obj	_	_
+42	before	before	ADP	_	_	44	case	_	_
+43	the	the	DET	_	_	44	det	_	_
+44	Lord	Lord	PROPN	_	_	40	obl	_	_
+45	,	,	PUNCT	_	_	48	punct	_	_
+46	and	and	CCONJ	_	_	48	cc	_	_
+47	did	do	AUX	_	_	48	aux	_	_
+48	shed	shed	VERB	_	_	28	conj	_	_
+49	tears	tear	NOUN	_	_	48	obj	_	_
+50	of	of	ADP	_	_	51	case	_	_
+51	joy	joy	NOUN	_	_	49	nmod	_	_
+52	before	before	ADP	_	_	54	case	_	_
+53	the	the	DET	_	_	54	det	_	_
+54	Lord	Lord	PROPN	_	_	48	obl	_	_
+55	,	,	PUNCT	_	_	59	punct	_	_
+56	because	because	ADP	_	_	59	case	_	_
+57	of	of	ADP	_	_	56	fixed	_	_
+58	the	the	DET	_	_	59	det	_	_
+59	multitude	multitude	NOUN	_	_	48	obl	_	_
+60	of	of	ADP	_	_	63	case	_	_
+61	his	his	PRON	_	_	63	nmod:poss	_	_
+62	tender	tender	ADJ	_	_	63	amod	_	_
+63	mercies	mercie	NOUN	_	_	59	nmod	_	_
+64	over	over	ADP	_	_	65	case	_	_
+65	them	they	PRON	_	_	59	nmod	_	_
+66	.	.	PUNCT	_	_	28	punct	_	_
 
 # sent_id = 173
-# text = And when they had set their feet upon the shores of the promised land they bowed themselves down upon the face of the land, and did humble themselves before the Lord, and did shed tears of joy before the Lord, because of the multitude of his tender mercies over them.
-1	And	and	CCONJ	_	_	16	cc	_	_
-2	when	when	ADV	_	_	5	advmod	_	_
-3	they	they	PRON	_	_	5	nsubj	_	_
-4	had	have	AUX	_	_	5	aux	_	_
-5	set	set	VERB	_	_	16	advcl	_	_
-6	their	their	PRON	_	_	7	nmod:poss	_	_
-7	feet	foot	NOUN	_	_	5	obj	_	_
-8	upon	upon	ADP	_	_	10	case	_	_
-9	the	the	DET	_	_	10	det	_	_
-10	shores	shore	NOUN	_	_	5	obl	_	_
-11	of	of	ADP	_	_	14	case	_	_
-12	the	the	DET	_	_	14	det	_	_
-13	promised	promise	VERB	_	_	14	amod	_	_
-14	land	land	NOUN	_	_	10	nmod	_	_
-15	they	they	PRON	_	_	16	nsubj	_	_
-16	bowed	bow	VERB	_	_	0	root	_	_
-17	themselves	themselves	PRON	_	_	16	obj	_	_
-18	down	down	ADP	_	_	16	compound:prt	_	_
-19	upon	upon	ADP	_	_	21	case	_	_
-20	the	the	DET	_	_	21	det	_	_
-21	face	face	NOUN	_	_	16	obl	_	_
-22	of	of	ADP	_	_	24	case	_	_
-23	the	the	DET	_	_	24	det	_	_
-24	land	land	NOUN	_	_	21	nmod	_	_
-25	,	,	PUNCT	_	_	28	punct	_	_
-26	and	and	CCONJ	_	_	28	cc	_	_
-27	did	do	AUX	_	_	28	aux	_	_
-28	humble	humble	VERB	_	_	16	conj	_	_
-29	themselves	themselves	PRON	_	_	28	obj	_	_
-30	before	before	ADP	_	_	32	case	_	_
-31	the	the	DET	_	_	32	det	_	_
-32	Lord	Lord	PROPN	_	_	28	obl	_	_
-33	,	,	PUNCT	_	_	36	punct	_	_
-34	and	and	CCONJ	_	_	36	cc	_	_
-35	did	do	AUX	_	_	36	aux	_	_
-36	shed	shed	VERB	_	_	16	conj	_	_
-37	tears	tear	NOUN	_	_	36	obj	_	_
-38	of	of	ADP	_	_	39	case	_	_
-39	joy	joy	NOUN	_	_	37	nmod	_	_
-40	before	before	ADP	_	_	42	case	_	_
-41	the	the	DET	_	_	42	det	_	_
-42	Lord	Lord	PROPN	_	_	36	obl	_	_
-43	,	,	PUNCT	_	_	47	punct	_	_
-44	because	because	ADP	_	_	47	case	_	_
-45	of	of	ADP	_	_	44	fixed	_	_
-46	the	the	DET	_	_	47	det	_	_
-47	multitude	multitude	NOUN	_	_	36	obl	_	_
-48	of	of	ADP	_	_	51	case	_	_
-49	his	his	PRON	_	_	51	nmod:poss	_	_
-50	tender	tender	ADJ	_	_	51	amod	_	_
-51	mercies	mercie	NOUN	_	_	47	nmod	_	_
-52	over	over	ADP	_	_	53	case	_	_
-53	them	they	PRON	_	_	47	nmod	_	_
-54	.	.	PUNCT	_	_	16	punct	_	_
-
-# sent_id = 174
 # text = And it came to pass that they went forth upon the face of the land, and began to till the earth.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6335,7 +6332,7 @@
 22	earth	earth	NOUN	_	_	20	obj	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 175
+# sent_id = 174
 # text = And Jared had four sons; and they were called Jacom, and Gilgah, and Mahah, and Orihah.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	Jared	Jared	PROPN	_	_	3	nsubj	_	_
@@ -6359,7 +6356,7 @@
 20	Orihah	Orihah	PROPN	_	_	11	conj	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 176
+# sent_id = 175
 # text = And the brother of Jared also begat sons and daughters.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -6373,7 +6370,7 @@
 10	daughters	daughter	NOUN	_	_	8	conj	_	_
 11	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 177
+# sent_id = 176
 # text = And the friends of Jared and his brother were in number about twenty and two souls; and they also begat sons and daughters before they came to the promised land; and therefore they began to be many.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -6416,7 +6413,7 @@
 39	many	many	ADJ	_	_	36	xcomp	_	_
 40	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 178
+# sent_id = 177
 # text = And they were taught to walk humbly before the Lord; and they were also taught from on high.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj:pass	_	_
@@ -6439,7 +6436,7 @@
 19	high	high	ADJ	_	_	16	obl	_	_
 20	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 179
+# sent_id = 178
 # text = And it came to pass that they began to spread upon the face of the land, and to multiply and to till the earth; and they did wax strong in the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6477,7 +6474,7 @@
 34	land	land	NOUN	_	_	31	obl	_	_
 35	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 180
+# sent_id = 179
 # text = And the brother of Jared began to be old, and saw that he must soon go down to the grave; wherefore he said unto Jared: Let us gather together our people that we may number them, that we may know of them what they will desire of us before we go down to our graves.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -6540,7 +6537,7 @@
 59	graves	grave	NOUN	_	_	55	obl	_	_
 60	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 181
+# sent_id = 180
 # text = And accordingly the people were gathered together.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	accordingly	accordingly	ADV	_	_	6	advmod	_	_
@@ -6551,7 +6548,7 @@
 7	together	together	ADV	_	_	6	advmod	_	_
 8	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 182
+# sent_id = 181
 # text = Now the number of the sons and the daughters of the brother of Jared were twenty and two souls; and the number of sons and daughters of Jared were twelve, he having four sons.
 1	Now	now	ADV	_	_	19	advmod	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -6591,7 +6588,7 @@
 36	sons	son	NOUN	_	_	34	obj	_	_
 37	.	.	PUNCT	_	_	19	punct	_	_
 
-# sent_id = 183
+# sent_id = 182
 # text = And it came to pass that they did number their people; and after that they had numbered them, they did desire of them the things which they would that they should do before they went down to their graves.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6636,7 +6633,7 @@
 41	graves	grave	NOUN	_	_	37	obl	_	_
 42	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 184
+# sent_id = 183
 # text = And it came to pass that the people desired of them that they should anoint one of their sons to be a king over them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6665,7 +6662,7 @@
 25	them	they	PRON	_	_	23	nmod	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 185
+# sent_id = 184
 # text = And now behold, this was grievous unto them.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -6678,7 +6675,7 @@
 9	them	they	PRON	_	_	7	obl	_	_
 10	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 186
+# sent_id = 185
 # text = And the brother of Jared said unto them:
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -6690,7 +6687,7 @@
 8	them	they	PRON	_	_	6	obl	_	_
 9	:	:	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 187
+# sent_id = 186
 # text = Surely this thing leadeth into captivity.
 1	Surely	surely	ADV	_	_	4	advmod	_	_
 2	this	this	DET	_	_	3	det	_	_
@@ -6700,7 +6697,7 @@
 6	captivity	captivity	NOUN	_	_	4	obl	_	_
 7	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 188
+# sent_id = 187
 # text = But Jared said unto his brother: Suffer them that they may have a king.
 1	But	but	CCONJ	_	_	3	cc	_	_
 2	Jared	Jared	PROPN	_	_	3	nsubj	_	_
@@ -6719,7 +6716,7 @@
 15	king	king	NOUN	_	_	13	obj	_	_
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 189
+# sent_id = 188
 # text = And therefore he said unto them:
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	therefore	therefore	ADV	_	_	4	advmod	_	_
@@ -6729,7 +6726,7 @@
 6	them	they	PRON	_	_	4	obl	_	_
 7	:	:	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 190
+# sent_id = 189
 # text = Choose ye out from among our sons a king, even whom ye will.
 1	Choose	choose	VERB	_	_	0	root	_	_
 2	ye	you	PRON	_	_	1	obj	_	_
@@ -6747,7 +6744,7 @@
 14	will	will	AUX	_	_	12	acl:relcl	_	_
 15	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 191
+# sent_id = 190
 # text = And it came to pass that they chose even the firstborn of the brother of Jared; and his name was Pagag.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6773,7 +6770,7 @@
 22	Pagag	Pagag	PROPN	_	_	3	conj	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 192
+# sent_id = 191
 # text = And it came to pass that he refused and would not be their king.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6791,7 +6788,7 @@
 14	king	king	NOUN	_	_	8	conj	_	_
 15	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 193
+# sent_id = 192
 # text = And the people would that his father should constrain him, but his father would not; and he commanded them that they should constrain no man to be their king.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -6826,7 +6823,7 @@
 31	king	king	NOUN	_	_	25	xcomp	_	_
 32	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 194
+# sent_id = 193
 # text = And it came to pass that they chose all the brothers of Pagag, and they would not.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6848,7 +6845,7 @@
 18	not	not	PART	_	_	17	advmod	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 195
+# sent_id = 194
 # text = And it came to pass that neither would the sons of Jared, even all save it were one; and Orihah was anointed to be king over the people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6882,7 +6879,7 @@
 30	people	person	NOUN	_	_	27	nmod	_	_
 31	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 196
+# sent_id = 195
 # text = And he began to reign, and the people began to prosper; and they became exceedingly rich.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -6904,7 +6901,7 @@
 18	rich	rich	ADJ	_	_	16	xcomp	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 197
+# sent_id = 196
 # text = And it came to pass that Jared died, and his brother also.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	nsubj	_	_
@@ -6921,7 +6918,7 @@
 13	also	also	ADV	_	_	12	advmod	_	_
 14	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 198
+# sent_id = 197
 # text = And it came to pass that Orihah did walk humbly before the Lord, and did remember how great things the Lord had done for his father, and also taught his people how great things the Lord had done for their fathers.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6968,7 +6965,7 @@
 43	fathers	father	NOUN	_	_	40	obl	_	_
 44	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 199
+# sent_id = 198
 # text = And it came to pass that Orihah did execute judgment upon the land in righteousness all his days, whose days were exceedingly many.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6996,7 +6993,7 @@
 24	many	many	ADJ	_	_	13	acl:relcl	_	_
 25	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 200
+# sent_id = 199
 # text = And he begat sons and daughters; yea, he begat thirty and one, among whom were twenty and three sons.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -7022,7 +7019,7 @@
 22	sons	son	NOUN	_	_	11	advcl	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 201
+# sent_id = 200
 # text = And it came to pass that he also begat Kib in his old age.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7040,7 +7037,7 @@
 14	age	age	NOUN	_	_	9	obl	_	_
 15	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 202
+# sent_id = 201
 # text = And it came to pass that Kib reigned in his stead; and Kib begat Corihor.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7060,7 +7057,7 @@
 16	Corihor	Corihor	PROPN	_	_	15	obj	_	_
 17	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 203
+# sent_id = 202
 # text = And when Corihor was thirty and two years old he rebelled against his father, and went over and dwelt in the land of Nehor; and he begat sons and daughters, and they became exceedingly fair; wherefore Corihor drew away many people after him.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -7111,7 +7108,7 @@
 47	him	he	PRON	_	_	42	obl	_	_
 48	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 204
+# sent_id = 203
 # text = And when he had gathered together an army he came up unto the land of Moron where the king dwelt, and took him captive, which brought to pass the saying of the brother of Jared that they would be brought into captivity.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -7159,7 +7156,7 @@
 44	captivity	captivity	NOUN	_	_	42	obl	_	_
 45	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 205
+# sent_id = 204
 # text = Now the land of Moron, where the king dwelt, was near the land which is called Desolation by the Nephites.
 1	Now	now	ADV	_	_	15	advmod	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -7185,7 +7182,7 @@
 22	Nephites	Nephites	PROPN	_	_	18	obl:agent	_	_
 23	.	.	PUNCT	_	_	15	punct	_	_
 
-# sent_id = 206
+# sent_id = 205
 # text = And it came to pass that Kib dwelt in captivity, and his people under Corihor his son, until he became exceedingly old; nevertheless Kib begat Shule in his old age, while he was yet in captivity.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7229,7 +7226,7 @@
 40	captivity	captivity	NOUN	_	_	28	advcl	_	_
 41	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 207
+# sent_id = 206
 # text = And it came to pass that Shule was angry with his brother; and Shule waxed strong, and became mighty as to the strength of a man; and he was also mighty in judgment.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7269,7 +7266,7 @@
 36	judgment	judgment	NOUN	_	_	34	obl	_	_
 37	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 208
+# sent_id = 207
 # text = Wherefore, he came to the hill Ephraim, and he did molten out of the hill, and made swords out of steel for those whom he had drawn away with him; and after he had armed them with swords he returned to the city Nehor, and gave battle unto his brother Corihor, by which means he obtained the kingdom and restored it unto his father Kib.
 1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7344,7 +7341,7 @@
 71	Kib	Kib	PROPN	_	_	70	appos	_	_
 72	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 209
+# sent_id = 208
 # text = And now because of the thing which Shule had done, his father bestowed upon him the kingdom; therefore he began to reign in the stead of his father.
 1	And	and	CCONJ	_	_	14	cc	_	_
 2	now	now	ADV	_	_	14	advmod	_	_
@@ -7378,7 +7375,7 @@
 30	father	father	NOUN	_	_	27	nmod	_	_
 31	.	.	PUNCT	_	_	14	punct	_	_
 
-# sent_id = 210
+# sent_id = 209
 # text = And it came to pass that he did execute judgment in righteousness; and he did spread his kingdom upon all the face of the land, for the people had become exceedingly numerous.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7416,7 +7413,7 @@
 34	numerous	numerous	ADJ	_	_	32	xcomp	_	_
 35	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 211
+# sent_id = 210
 # text = And it came to pass that Shule also begat many sons and daughters.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7433,7 +7430,7 @@
 13	daughters	daughter	NOUN	_	_	11	conj	_	_
 14	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 212
+# sent_id = 211
 # text = And Corihor repented of the many evils which he had done; wherefore Shule gave him power in his kingdom.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	Corihor	Corihor	PROPN	_	_	3	nsubj	_	_
@@ -7457,7 +7454,7 @@
 20	kingdom	kingdom	NOUN	_	_	15	obl	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 213
+# sent_id = 212
 # text = And it came to pass that Corihor had many sons and daughters.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7473,7 +7470,7 @@
 12	daughters	daughter	NOUN	_	_	10	conj	_	_
 13	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 214
+# sent_id = 213
 # text = And among the sons of Corihor there was one whose name was Noah.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	among	among	ADP	_	_	4	case	_	_
@@ -7490,7 +7487,7 @@
 13	Noah	Noah	PROPN	_	_	9	acl:relcl	_	_
 14	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 215
+# sent_id = 214
 # text = And it came to pass that Noah rebelled against Shule, the king, and also his father Corihor, and drew away Cohor his brother, and also all his brethren and many of the people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7531,7 +7528,7 @@
 37	people	person	NOUN	_	_	34	nmod	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 216
+# sent_id = 215
 # text = And he gave battle unto Shule, the king, in which he did obtain the land of their first inheritance; and he became a king over that part of the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -7568,7 +7565,7 @@
 33	land	land	NOUN	_	_	30	nmod	_	_
 34	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 217
+# sent_id = 216
 # text = And it came to pass that he gave battle again unto Shule, the king; and he took Shule, the king, and carried him away captive into Moron.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7603,7 +7600,7 @@
 31	Moron	Moron	PROPN	_	_	26	obl	_	_
 32	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 218
+# sent_id = 217
 # text = And it came to pass as he was about to put him to death, the sons of Shule crept into the house of Noah by night and slew him, and broke down the door of the prison and brought out their father, and placed him upon his throne in his own kingdom.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7662,7 +7659,7 @@
 55	kingdom	kingdom	NOUN	_	_	47	obl	_	_
 56	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 219
+# sent_id = 218
 # text = Wherefore, the son of Noah did build up his kingdom in his stead; nevertheless they did not gain power any more over Shule the king, and the people who were under the reign of Shule the king did prosper exceedingly and wax great.
 1	Wherefore	so	ADV	_	_	8	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7712,7 +7709,7 @@
 46	great	great	ADJ	_	_	45	xcomp	_	_
 47	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 220
+# sent_id = 219
 # text = And the country was divided; and there were two kingdoms, the kingdom of Shule, and the kingdom of Cohor, the son of Noah.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -7743,7 +7740,7 @@
 27	Noah	Noah	PROPN	_	_	25	nmod	_	_
 28	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 221
+# sent_id = 220
 # text = And Cohor, the son of Noah, caused that his people should give battle unto Shule, in which Shule did beat them and did slay Cohor.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	Cohor	Cohor	PROPN	_	_	9	nsubj	_	_
@@ -7775,7 +7772,7 @@
 28	Cohor	Cohor	PROPN	_	_	27	obj	_	_
 29	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 222
+# sent_id = 221
 # text = And now Cohor had a son who was called Nimrod; and Nimrod gave up the kingdom of Cohor unto Shule, and he did gain favor in the eyes of Shule; wherefore Shule did bestow great favors upon him, and he did do in the kingdom of Shule according to his desires.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -7834,7 +7831,7 @@
 55	desires	desire	NOUN	_	_	46	obl	_	_
 56	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 223
+# sent_id = 222
 # text = And also in the reign of Shule there came prophets among the people, who were sent from the Lord, prophesying that the wickedness and idolatry of the people was bringing a curse upon the land, and they should be destroyed if they did not repent.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	also	also	ADV	_	_	9	advmod	_	_
@@ -7886,7 +7883,7 @@
 48	repent	repent	VERB	_	_	43	advcl	_	_
 49	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 224
+# sent_id = 223
 # text = And it came to pass that the people did revile against the prophets, and did mock them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7908,7 +7905,7 @@
 18	them	they	PRON	_	_	17	obj	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 225
+# sent_id = 224
 # text = And it came to pass that king Shule did execute judgment against all those who did revile against the prophets.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7932,7 +7929,7 @@
 20	prophets	prophet	NOUN	_	_	17	obl	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 226
+# sent_id = 225
 # text = And he did execute a law throughout all the land, which gave power unto the prophets that they should go whithersoever they would; and by this cause the people were brought unto repentance.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -7971,7 +7968,7 @@
 35	repentance	repentance	NOUN	_	_	33	obl	_	_
 36	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 227
+# sent_id = 226
 # text = And because the people did repent of their iniquities and idolatries the Lord did spare them, and they began to prosper again in the land.
 1	And	and	CCONJ	_	_	15	cc	_	_
 2	because	because	SCONJ	_	_	6	mark	_	_
@@ -8001,7 +7998,7 @@
 26	land	land	NOUN	_	_	22	obl	_	_
 27	.	.	PUNCT	_	_	15	punct	_	_
 
-# sent_id = 228
+# sent_id = 227
 # text = And it came to pass that Shule begat sons and daughters in his old age.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8020,7 +8017,7 @@
 15	age	age	NOUN	_	_	8	obl	_	_
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 229
+# sent_id = 228
 # text = And there were no more wars in the days of Shule; and he remembered the great things that the Lord had done for his fathers in bringing them across the great deep into the promised land; wherefore he did execute judgment in righteousness all his days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -8072,7 +8069,7 @@
 48	days	day	NOUN	_	_	42	obl:unmarked	_	_
 49	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 230
+# sent_id = 229
 # text = And it came to pass that he begat Omer, and Omer reigned in his stead.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8092,7 +8089,7 @@
 16	stead	stead	NOUN	_	_	13	obl	_	_
 17	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 231
+# sent_id = 230
 # text = And Omer begat Jared; and Jared begat sons and daughters.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	Omer	Omer	PROPN	_	_	3	nsubj	_	_
@@ -8107,7 +8104,7 @@
 11	daughters	daughter	NOUN	_	_	9	conj	_	_
 12	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 232
+# sent_id = 231
 # text = And Jared rebelled against his father, and came and dwelt in the land of Heth.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	Jared	Jared	PROPN	_	_	3	nsubj	_	_
@@ -8127,7 +8124,7 @@
 16	Heth	Heth	PROPN	_	_	14	nmod	_	_
 17	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 233
+# sent_id = 232
 # text = And it came to pass that he did flatter many people, because of his cunning words, until he had gained the half of the kingdom.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8158,7 +8155,7 @@
 27	kingdom	kingdom	NOUN	_	_	24	nmod	_	_
 28	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 234
+# sent_id = 233
 # text = And when he had gained the half of the kingdom he gave battle unto his father, and he did carry away his father into captivity, and did make him serve in captivity;
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -8196,7 +8193,7 @@
 34	captivity	captivity	NOUN	_	_	32	obl	_	_
 35	;	;	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 235
+# sent_id = 234
 # text = And now, in the days of the reign of Omer he was in captivity the half of his days.
 1	And	and	CCONJ	_	_	15	cc	_	_
 2	now	now	ADV	_	_	15	advmod	_	_
@@ -8220,7 +8217,7 @@
 20	days	day	NOUN	_	_	17	nmod	_	_
 21	.	.	PUNCT	_	_	15	punct	_	_
 
-# sent_id = 236
+# sent_id = 235
 # text = And it came to pass that he begat sons and daughters, among whom were Esrom and Coriantumr;
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8242,7 +8239,7 @@
 18	Coriantumr	Coriantumr	PROPN	_	_	16	conj	_	_
 19	;	;	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 237
+# sent_id = 236
 # text = And they were exceedingly angry because of the doings of Jared their brother, insomuch that they did raise an army and gave battle unto Jared.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	they	they	PRON	_	_	5	nsubj	_	_
@@ -8272,7 +8269,7 @@
 26	Jared	Jared	PROPN	_	_	23	obl	_	_
 27	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 238
+# sent_id = 237
 # text = And it came to pass that they did give battle unto him by night.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8290,7 +8287,7 @@
 14	night	night	NOUN	_	_	9	obl	_	_
 15	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 239
+# sent_id = 238
 # text = And it came to pass that when they had slain the army of Jared they were about to slay him also; and he pled with them that they would not slay him, and he would give up the kingdom unto his father.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8338,7 +8335,7 @@
 44	father	father	NOUN	_	_	38	obl	_	_
 45	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 240
+# sent_id = 239
 # text = And it came to pass that they did grant unto him his life.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8355,7 +8352,7 @@
 13	life	life	NOUN	_	_	9	obj	_	_
 14	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 241
+# sent_id = 240
 # text = And now Jared became exceedingly sorrowful because of the loss of the kingdom, for he had set his heart upon the kingdom and upon the glory of the world.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -8389,7 +8386,7 @@
 30	world	world	NOUN	_	_	27	nmod	_	_
 31	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 242
+# sent_id = 241
 # text = Now the daughter of Jared being exceedingly expert, and seeing the sorrows of her father, thought to devise a plan whereby she could redeem the kingdom unto her father.
 1	Now	now	ADV	_	_	18	advmod	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -8424,7 +8421,7 @@
 31	father	father	NOUN	_	_	26	obl	_	_
 32	.	.	PUNCT	_	_	18	punct	_	_
 
-# sent_id = 243
+# sent_id = 242
 # text = Now the daughter of Jared was exceedingly fair.
 1	Now	now	ADV	_	_	8	advmod	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -8436,7 +8433,7 @@
 8	fair	fair	ADJ	_	_	0	root	_	_
 9	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 244
+# sent_id = 243
 # text = And it came to pass that she did talk with her father, and said unto him: Whereby hath my father so much sorrow?
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8465,7 +8462,7 @@
 25	sorrow	sorrow	NOUN	_	_	20	obj	_	_
 26	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 245
+# sent_id = 244
 # text = Hath he not read the record which our fathers brought across the great deep?
 1	Hath	have	AUX	_	_	4	aux	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -8483,7 +8480,7 @@
 14	deep	deep	ADJ	_	_	10	obl	_	_
 15	?	?	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 246
+# sent_id = 245
 # text = Behold, is there not an account concerning them of old, that they by their secret plans did obtain kingdoms and great glory?
 1	Behold	behold	INTJ	_	_	3	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -8511,7 +8508,7 @@
 24	glory	glory	NOUN	_	_	21	conj	_	_
 25	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 247
+# sent_id = 246
 # text = And now, therefore, let my father send for Akish, the son of Kimnor; and behold, I am fair, and I will dance before him, and I will please him, that he will desire me to wife; wherefore if he shall desire of thee that ye shall give unto him me to wife, then shall ye say: I will give her if ye will bring unto me the head of my father, the king.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	now	now	ADV	_	_	6	advmod	_	_
@@ -8600,7 +8597,7 @@
 85	king	king	NOUN	_	_	82	appos	_	_
 86	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 248
+# sent_id = 247
 # text = And now Omer was a friend to Akish; wherefore, when Jared had sent for Akish, the daughter of Jared danced before him that she pleased him, insomuch that he desired her to wife.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	now	now	ADV	_	_	6	advmod	_	_
@@ -8641,7 +8638,7 @@
 37	wife	wife	NOUN	_	_	34	obl	_	_
 38	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 249
+# sent_id = 248
 # text = And it came to pass that he said unto Jared: Give her unto me to wife.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8662,7 +8659,7 @@
 17	wife	wife	NOUN	_	_	12	obl	_	_
 18	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 250
+# sent_id = 249
 # text = And Jared said unto him: I will give her unto you, if ye will bring unto me the head of my father, the king.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	Jared	Jared	PROPN	_	_	3	nsubj	_	_
@@ -8693,7 +8690,7 @@
 27	king	king	NOUN	_	_	24	appos	_	_
 28	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 251
+# sent_id = 250
 # text = And it came to pass that Akish gathered in unto the house of Jared all his kinsfolk, and said unto them:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8719,7 +8716,7 @@
 22	them	they	PRON	_	_	20	obl	_	_
 23	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 252
+# sent_id = 251
 # text = Will ye swear unto me that ye will be faithful unto me in the thing which I shall desire of you?
 1	Will	will	AUX	_	_	3	aux	_	_
 2	ye	you	PRON	_	_	3	nsubj	_	_
@@ -8744,7 +8741,7 @@
 21	you	you	PRON	_	_	19	obl	_	_
 22	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 253
+# sent_id = 252
 # text = And it came to pass that they all sware unto him, by the God of heaven, and also by the heavens, and also by the earth, and by their heads, that whoso should vary from the assistance which Akish desired should lose his head; and whoso should divulge whatsoever thing Akish made known unto them, the same should lose his life.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8816,7 +8813,7 @@
 68	life	life	NOUN	_	_	66	obj	_	_
 69	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 254
+# sent_id = 253
 # text = And it came to pass that thus they did agree with Akish.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8832,7 +8829,7 @@
 12	Akish	Akish	PROPN	_	_	10	obl	_	_
 13	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 255
+# sent_id = 254
 # text = And Akish did administer unto them the oaths which were given by them of old who also sought power, which had been handed down even from Cain, who was a murderer from the beginning.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	Akish	Akish	PROPN	_	_	4	nsubj	_	_
@@ -8872,7 +8869,7 @@
 36	beginning	beginning	NOUN	_	_	33	obl	_	_
 37	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 256
+# sent_id = 255
 # text = And they were kept up by the power of the devil to administer these oaths unto the people, to keep them in darkness, to help such as sought power to gain power, and to murder, and to plunder, and to lie, and to commit all manner of wickedness and whoredoms.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj:pass	_	_
@@ -8932,7 +8929,7 @@
 56	whoredoms	whoredom	NOUN	_	_	54	conj	_	_
 57	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 257
+# sent_id = 256
 # text = And it was the daughter of Jared who put it into his heart to search up these things of old; and Jared put it into the heart of Akish; wherefore, Akish administered it unto his kindred and friends, leading them away by fair promises to do whatsoever thing he desired.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	it	it	PRON	_	_	5	nsubj	_	_
@@ -8990,7 +8987,7 @@
 54	desired	desire	VERB	_	_	52	acl:relcl	_	_
 55	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 258
+# sent_id = 257
 # text = And it came to pass that they formed a secret combination, even as they of old; which combination is most abominable and wicked above all, in the sight of God;
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -9027,7 +9024,7 @@
 33	God	God	PROPN	_	_	31	nmod	_	_
 34	;	;	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 259
+# sent_id = 258
 # text = For the Lord worketh not in secret combinations, neither doth he will that man should shed blood, but in all things hath forbidden it, from the beginning of man.
 1	For	for	SCONJ	_	_	4	mark	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -9063,7 +9060,7 @@
 32	man	man	NOUN	_	_	30	nmod	_	_
 33	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 260
+# sent_id = 259
 # text = And now I, Moroni, do not write the manner of their oaths and combinations, for it hath been made known unto me that they are had among all people, and they are had among the Lamanites.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	now	now	ADV	_	_	9	advmod	_	_
@@ -9107,7 +9104,7 @@
 40	Lamanites	Lamanites	PROPN	_	_	37	obl	_	_
 41	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 261
+# sent_id = 260
 # text = And they have caused the destruction of this people of whom I am now speaking, and also the destruction of the people of Nephi.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -9136,7 +9133,7 @@
 25	Nephi	Nephi	PROPN	_	_	23	nmod	_	_
 26	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 262
+# sent_id = 261
 # text = And whatsoever nation shall uphold such secret combinations, to get power and gain, until they shall spread over the nation, behold, they shall be destroyed; for the Lord will not suffer that the blood of his saints, which shall be shed by them, shall always cry unto him from the ground for vengeance upon them and yet he avenge them not.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	whatsoever	whatsoever	DET	_	_	3	det	_	_
@@ -9208,7 +9205,7 @@
 68	not	not	PART	_	_	66	advmod	_	_
 69	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 263
+# sent_id = 262
 # text = Wherefore, O ye Gentiles, it is wisdom in God that these things should be shown unto you, that thereby ye may repent of your sins, and suffer not that these murderous combinations shall get above you, which are built up to get power and gain--and the work, yea, even the work of destruction come upon you, yea, even the sword of the justice of the Eternal God shall fall upon you, to your overthrow and destruction if ye shall suffer these things to be.
 1	Wherefore	so	ADV	_	_	9	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -9308,7 +9305,7 @@
 96	be	be	AUX	_	_	92	xcomp	_	_
 97	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 264
+# sent_id = 263
 # text = Wherefore, the Lord commandeth you, when ye shall see these things come among you that ye shall awake to a sense of your awful situation, because of this secret combination which shall be among you; or wo be unto it, because of the blood of them who have been slain; for they cry from the dust for vengeance upon it, and also upon those who built it up.
 1	Wherefore	so	ADV	_	_	5	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -9387,7 +9384,7 @@
 75	up	up	ADP	_	_	73	compound:prt	_	_
 76	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 265
+# sent_id = 264
 # text = For it cometh to pass that whoso buildeth it up seeketh to overthrow the freedom of all lands, nations, and countries; and it bringeth to pass the destruction of all people, for it is built up by the devil, who is the father of all lies; even that same liar who beguiled our first parents, yea, even that same liar who hath caused man to commit murder from the beginning; who hath hardened the hearts of men that they have murdered the prophets, and stoned them, and cast them out from the beginning.
 1	For	for	SCONJ	_	_	3	mark	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -9495,7 +9492,7 @@
 104	beginning	beginning	NOUN	_	_	99	obl	_	_
 105	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 266
+# sent_id = 265
 # text = Wherefore, I, Moroni, am commanded to write these things that evil may be done away, and that the time may come that Satan may have no power upon the hearts of the children of men, but that they may be persuaded to do good continually, that they may come unto the fountain of all righteousness and be saved.
 1	Wherefore	so	ADV	_	_	8	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -9563,7 +9560,7 @@
 64	saved	save	VERB	_	_	55	conj	_	_
 65	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 267
+# sent_id = 266
 # text = And now I, Moroni, proceed with my record.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -9577,7 +9574,7 @@
 10	record	record	NOUN	_	_	7	obl	_	_
 11	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 268
+# sent_id = 267
 # text = Therefore, behold, it came to pass that because of the secret combinations of Akish and his friends, behold, they did overthrow the kingdom of Omer.
 1	Therefore	therefore	ADV	_	_	6	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -9610,7 +9607,7 @@
 29	Omer	Omer	PROPN	_	_	27	nmod	_	_
 30	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 269
+# sent_id = 268
 # text = Nevertheless, the Lord was merciful unto Omer, and also to his sons and to his daughters who did not seek his destruction.
 1	Nevertheless	nevertheless	ADV	_	_	6	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -9638,7 +9635,7 @@
 24	destruction	destruction	NOUN	_	_	22	obj	_	_
 25	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 270
+# sent_id = 269
 # text = And the Lord warned Omer in a dream that he should depart out of the land; wherefore Omer departed out of the land with his family, and traveled many days, and came over and passed by the hill of Shim, and came over by the place where the Nephites were destroyed, and from thence eastward, and came to a place which was called Ablom, by the seashore, and there he pitched his tent, and also his sons and his daughters, and all his household, save it were Jared and his family.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -9744,7 +9741,7 @@
 102	family	family	NOUN	_	_	99	conj	_	_
 103	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 271
+# sent_id = 270
 # text = And it came to pass that Jared was anointed king over the people, by the hand of wickedness; and he gave unto Akish his daughter to wife.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -9777,7 +9774,7 @@
 29	wife	wife	NOUN	_	_	23	obl	_	_
 30	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 272
+# sent_id = 271
 # text = And it came to pass that Akish sought the life of his father-in-law; and he applied unto those whom he had sworn by the oath of the ancients, and they obtained the head of his father-in-law, as he sat upon his throne, giving audience to his people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -9840,7 +9837,7 @@
 59	people	person	NOUN	_	_	55	obl	_	_
 60	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 273
+# sent_id = 272
 # text = For so great had been the spreading of this wicked and secret society that it had corrupted the hearts of all the people; therefore Jared was murdered upon his throne, and Akish reigned in his stead.
 1	For	for	SCONJ	_	_	3	mark	_	_
 2	so	so	ADV	_	_	3	advmod	_	_
@@ -9882,7 +9879,7 @@
 38	stead	stead	NOUN	_	_	35	obl	_	_
 39	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 274
+# sent_id = 273
 # text = And it came to pass that Akish began to be jealous of his son, therefore he shut him up in prison, and kept him upon little or no food until he had suffered death.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -9922,7 +9919,7 @@
 36	death	death	NOUN	_	_	35	obj	_	_
 37	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 275
+# sent_id = 274
 # text = And now the brother of him that suffered death, (and his name was Nimrah) was angry with his father because of that which his father had done unto his brother.
 1	And	and	CCONJ	_	_	19	cc	_	_
 2	now	now	ADV	_	_	19	advmod	_	_
@@ -9959,7 +9956,7 @@
 33	brother	brother	NOUN	_	_	30	obl	_	_
 34	.	.	PUNCT	_	_	19	punct	_	_
 
-# sent_id = 276
+# sent_id = 275
 # text = And it came to pass that Nimrah gathered together a small number of men, and fled out of the land, and came over and dwelt with Omer.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -9992,7 +9989,7 @@
 29	Omer	Omer	PROPN	_	_	27	obl	_	_
 30	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 277
+# sent_id = 276
 # text = And it came to pass that Akish begat other sons, and they won the hearts of the people, notwithstanding they had sworn unto him to do all manner of iniquity according to that which he desired.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10034,7 +10031,7 @@
 38	desired	desire	VERB	_	_	35	acl:relcl	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 278
+# sent_id = 277
 # text = Now the people of Akish were desirous for gain, even as Akish was desirous for power; wherefore, the sons of Akish did offer them money, by which means they drew away the more part of the people after them.
 1	Now	now	ADV	_	_	7	advmod	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -10081,7 +10078,7 @@
 43	them	they	PRON	_	_	34	obl	_	_
 44	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 279
+# sent_id = 278
 # text = And there began to be a war between the sons of Akish and Akish, which lasted for the space of many years, yea, unto the destruction of nearly all the people of the kingdom, yea, even all, save it were thirty souls, and they who fled with the house of Omer.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -10143,7 +10140,7 @@
 58	Omer	Omer	PROPN	_	_	56	nmod	_	_
 59	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 280
+# sent_id = 279
 # text = Wherefore, Omer was restored again to the land of his inheritance.
 1	Wherefore	so	ADV	_	_	5	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -10159,7 +10156,7 @@
 12	inheritance	inheritance	NOUN	_	_	9	nmod	_	_
 13	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 281
+# sent_id = 280
 # text = And it came to pass that Omer began to be old; nevertheless, in his old age he begat Emer; and he anointed Emer to be king to reign in his stead.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10197,8 +10194,8 @@
 34	stead	stead	NOUN	_	_	31	obl	_	_
 35	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 282
-# text = And after that he had anointed Emer to be king he saw peace in the land for the space of two years, and he died, having seen exceedingly many days, which were full of sorrow.
+# sent_id = 281
+# text = And after that he had anointed Emer to be king he saw peace in the land for the space of two years, and he died, having seen exceedingly many days, which were full of sorrow. And it came to pass that Emer did reign in his stead, and did fill the steps of his father.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	after	after	SCONJ	_	_	6	mark	_	_
 3	that	that	SCONJ	_	_	2	fixed	_	_
@@ -10238,33 +10235,30 @@
 37	of	of	ADP	_	_	38	case	_	_
 38	sorrow	sorrow	NOUN	_	_	36	obl	_	_
 39	.	.	PUNCT	_	_	12	punct	_	_
+40	And	and	CCONJ	_	_	42	cc	_	_
+41	it	it	PRON	_	_	42	expl	_	_
+42	came	come	VERB	_	_	12	conj	_	_
+43	to	to	PART	_	_	44	mark	_	_
+44	pass	pass	VERB	_	_	42	xcomp	_	_
+45	that	that	SCONJ	_	_	48	mark	_	_
+46	Emer	Emer	PROPN	_	_	48	nsubj	_	_
+47	did	do	AUX	_	_	48	aux	_	_
+48	reign	reign	VERB	_	_	44	ccomp	_	_
+49	in	in	ADP	_	_	51	case	_	_
+50	his	his	PRON	_	_	51	nmod:poss	_	_
+51	stead	stead	NOUN	_	_	48	obl	_	_
+52	,	,	PUNCT	_	_	55	punct	_	_
+53	and	and	CCONJ	_	_	55	cc	_	_
+54	did	do	AUX	_	_	55	aux	_	_
+55	fill	fill	VERB	_	_	42	conj	_	_
+56	the	the	DET	_	_	57	det	_	_
+57	steps	step	NOUN	_	_	55	obj	_	_
+58	of	of	ADP	_	_	60	case	_	_
+59	his	his	PRON	_	_	60	nmod:poss	_	_
+60	father	father	NOUN	_	_	57	nmod	_	_
+61	.	.	PUNCT	_	_	42	punct	_	_
 
-# sent_id = 283
-# text = And it came to pass that Emer did reign in his stead, and did fill the steps of his father.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	it	it	PRON	_	_	3	expl	_	_
-3	came	come	VERB	_	_	0	root	_	_
-4	to	to	PART	_	_	5	mark	_	_
-5	pass	pass	VERB	_	_	3	xcomp	_	_
-6	that	that	SCONJ	_	_	9	mark	_	_
-7	Emer	Emer	PROPN	_	_	9	nsubj	_	_
-8	did	do	AUX	_	_	9	aux	_	_
-9	reign	reign	VERB	_	_	5	ccomp	_	_
-10	in	in	ADP	_	_	12	case	_	_
-11	his	his	PRON	_	_	12	nmod:poss	_	_
-12	stead	stead	NOUN	_	_	9	obl	_	_
-13	,	,	PUNCT	_	_	16	punct	_	_
-14	and	and	CCONJ	_	_	16	cc	_	_
-15	did	do	AUX	_	_	16	aux	_	_
-16	fill	fill	VERB	_	_	3	conj	_	_
-17	the	the	DET	_	_	18	det	_	_
-18	steps	step	NOUN	_	_	16	obj	_	_
-19	of	of	ADP	_	_	21	case	_	_
-20	his	his	PRON	_	_	21	nmod:poss	_	_
-21	father	father	NOUN	_	_	18	nmod	_	_
-22	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 284
+# sent_id = 282
 # text = And the Lord began again to take the curse from off the land, and the house of Emer did prosper exceedingly under the reign of Emer; and in the space of sixty and two years they had become exceedingly strong, insomuch that they became exceedingly rich--
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -10317,7 +10311,7 @@
 49	rich	rich	ADJ	_	_	47	xcomp	_	_
 50	--	--	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 285
+# sent_id = 283
 # text = Having all manner of fruit, and of grain, and of silks, and of fine linen, and of gold, and of silver, and of precious things;
 1	Having	have	VERB	_	_	0	root	_	_
 2	all	all	DET	_	_	3	det	_	_
@@ -10352,7 +10346,7 @@
 31	things	thing	NOUN	_	_	26	conj	_	_
 32	;	;	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 286
+# sent_id = 284
 # text = And also all manner of cattle, of oxen, and cows, and of sheep, and of swine, and of goats, and also many other kinds of animals which were useful for the food of man.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	also	also	ADV	_	_	4	advmod	_	_
@@ -10396,7 +10390,7 @@
 40	man	man	NOUN	_	_	38	nmod	_	_
 41	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 287
+# sent_id = 285
 # text = And they also had horses, and asses, and there were elephants and cureloms and cumoms; all of which were useful unto man, and more especially the elephants and cureloms and cumoms.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -10435,7 +10429,7 @@
 35	cumoms	cumom	NOUN	_	_	31	conj	_	_
 36	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 288
+# sent_id = 286
 # text = And thus the Lord did pour out his blessings upon this land, which was choice above all other lands; and he commanded that whoso should possess the land should possess it unto the Lord, or they should be destroyed when they were ripened in iniquity; for upon such, saith the Lord: I will pour out the fulness of my wrath.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	thus	thus	ADV	_	_	6	advmod	_	_
@@ -10505,7 +10499,7 @@
 66	wrath	wrath	NOUN	_	_	63	nmod	_	_
 67	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 289
+# sent_id = 287
 # text = And Emer did execute judgment in righteousness all his days, and he begat many sons and daughters; and he begat Coriantum, and he anointed Coriantum to reign in his stead.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	Emer	Emer	PROPN	_	_	4	nsubj	_	_
@@ -10542,7 +10536,7 @@
 33	stead	stead	NOUN	_	_	30	obl	_	_
 34	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 290
+# sent_id = 288
 # text = And after he had anointed Coriantum to reign in his stead he lived four years, and he saw peace in the land; yea, and he even saw the Son of Righteousness, and did rejoice and glory in his day; and he died in peace.
 1	And	and	CCONJ	_	_	13	cc	_	_
 2	after	after	SCONJ	_	_	5	mark	_	_
@@ -10595,7 +10589,7 @@
 49	peace	peace	NOUN	_	_	47	obl	_	_
 50	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 291
+# sent_id = 289
 # text = And it came to pass that Coriantum did walk in the steps of his father, and did build many mighty cities, and did administer that which was good unto his people in all his days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10636,7 +10630,7 @@
 37	days	day	NOUN	_	_	30	obl	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 292
+# sent_id = 290
 # text = And it came to pass that he had no children even until he was exceedingly old.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10656,7 +10650,7 @@
 16	old	old	ADJ	_	_	8	advcl	_	_
 17	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 293
+# sent_id = 291
 # text = And it came to pass that his wife died, being an hundred and two years old.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10677,7 +10671,7 @@
 17	old	old	ADJ	_	_	13	conj	_	_
 18	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 294
+# sent_id = 292
 # text = And it came to pass that Coriantum took to wife, in his old age, a young maid, and begat sons and daughters; wherefore he lived until he was an hundred and forty and two years old.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10721,7 +10715,7 @@
 40	old	old	ADJ	_	_	34	conj	_	_
 41	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 295
+# sent_id = 293
 # text = And it came to pass that he begat Com, and Com reigned in his stead; and he reigned forty and nine years, and he begat Heth; and he also begat other sons and daughters.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10763,7 +10757,7 @@
 38	daughters	daughter	NOUN	_	_	36	conj	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 296
+# sent_id = 294
 # text = And the people had spread again over all the face of the land, and there began again to be an exceedingly great wickedness upon the face of the land, and Heth began to embrace the secret plans again of old, to destroy his father.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -10814,7 +10808,7 @@
 47	father	father	NOUN	_	_	45	obj	_	_
 48	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 297
+# sent_id = 295
 # text = And it came to pass that he did dethrone his father, for he slew him with his own sword; and he did reign in his stead.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10846,7 +10840,7 @@
 28	stead	stead	NOUN	_	_	25	obl	_	_
 29	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 298
+# sent_id = 296
 # text = And there came prophets in the land again, crying repentance unto them--that they must prepare the way of the Lord or there should come a curse upon the face of the land; yea, even there should be a great famine, in which they should be destroyed if they did not repent.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -10907,7 +10901,7 @@
 57	repent	repent	VERB	_	_	52	advcl	_	_
 58	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 299
+# sent_id = 297
 # text = But the people believed not the words of the prophets, but they cast them out; and some of them they cast into pits and left them to perish.
 1	But	but	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -10941,7 +10935,7 @@
 30	perish	perish	VERB	_	_	27	xcomp	_	_
 31	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 300
+# sent_id = 298
 # text = And it came to pass that they did all these things according to the commandment of the king, Heth.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10965,7 +10959,7 @@
 20	Heth	Heth	PROPN	_	_	18	appos	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 301
+# sent_id = 299
 # text = And it came to pass that there began to be a great dearth upon the land, and the inhabitants began to be destroyed exceedingly fast because of the dearth, for there was no rain upon the face of the earth.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11011,7 +11005,7 @@
 42	earth	earth	NOUN	_	_	39	nmod	_	_
 43	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 302
+# sent_id = 300
 # text = And there came forth poisonous serpents also upon the face of the land, and did poison many people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -11034,7 +11028,7 @@
 19	people	person	NOUN	_	_	17	obj	_	_
 20	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 303
+# sent_id = 301
 # text = And it came to pass that their flocks began to flee before the poisonous serpents, towards the land southward, which was called by the Nephites Zarahemla.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11066,7 +11060,7 @@
 28	Zarahemla	Zarahemla	PROPN	_	_	27	flat	_	_
 29	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 304
+# sent_id = 302
 # text = And it came to pass that there were many of them which did perish by the way; nevertheless, there were some which fled into the land southward.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11099,7 +11093,7 @@
 29	southward	southward	ADV	_	_	25	advmod	_	_
 30	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 305
+# sent_id = 303
 # text = And it came to pass that the Lord did cause the serpents that they should pursue them no more, but that they should hedge up the way that the people could not pass, that whoso should attempt to pass might fall by the poisonous serpents.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11150,7 +11144,7 @@
 47	serpents	serpent	NOUN	_	_	43	obl	_	_
 48	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 306
+# sent_id = 304
 # text = And it came to pass that the people did follow the course of the beasts, and did devour the carcasses of them which fell by the way, until they had devoured them all.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11189,7 +11183,7 @@
 35	all	all	DET	_	_	34	det	_	_
 36	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 307
+# sent_id = 305
 # text = Now when the people saw that they must perish they began to repent of their iniquities and cry unto the Lord.
 1	Now	now	ADV	_	_	11	advmod	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -11214,7 +11208,7 @@
 21	Lord	Lord	PROPN	_	_	18	obl	_	_
 22	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 308
+# sent_id = 306
 # text = And it came to pass that when they had humbled themselves sufficiently before the Lord he did send rain upon the face of the earth; and the people began to revive again, and there began to be fruit in the north countries, and in all the countries round about.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11270,7 +11264,7 @@
 52	about	about	ADP	_	_	50	nmod	_	_
 53	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 309
+# sent_id = 307
 # text = And the Lord did show forth his power unto them in preserving them from famine.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -11289,7 +11283,7 @@
 15	famine	famine	NOUN	_	_	12	obl	_	_
 16	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 310
+# sent_id = 308
 # text = And it came to pass that Shez, who was a descendant of Heth--for Heth had perished by the famine, and all his household save it were Shez--wherefore, Shez began to build up again a broken people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11336,7 +11330,7 @@
 43	people	person	NOUN	_	_	38	obj	_	_
 44	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 311
+# sent_id = 309
 # text = And it came to pass that Shez did remember the destruction of his fathers, and he did build up a righteous kingdom; for he remembered what the Lord had done in bringing Jared and his brother across the deep; and he did walk in the ways of the Lord; and he begat sons and daughters.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11399,7 +11393,7 @@
 59	daughters	daughter	NOUN	_	_	57	conj	_	_
 60	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 312
+# sent_id = 310
 # text = And his eldest son, whose name was Shez, did rebel against him; nevertheless, Shez was smitten by the hand of a robber, because of his exceeding riches, which brought peace again unto his father.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	his	his	PRON	_	_	4	nmod:poss	_	_
@@ -11443,7 +11437,7 @@
 40	father	father	NOUN	_	_	35	obl	_	_
 41	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 313
+# sent_id = 311
 # text = And it came to pass that his father did build up many cities upon the face of the land, and the people began again to spread over all the face of the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11481,7 +11475,7 @@
 34	land	land	NOUN	_	_	31	nmod	_	_
 35	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 314
+# sent_id = 312
 # text = And Shez did live to an exceedingly old age; and he begat Riplakish.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	Shez	Shez	PROPN	_	_	4	nsubj	_	_
@@ -11499,7 +11493,7 @@
 14	Riplakish	Riplakish	PROPN	_	_	13	obj	_	_
 15	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 315
+# sent_id = 313
 # text = And he died, and Riplakish reigned in his stead.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -11513,7 +11507,7 @@
 10	stead	stead	NOUN	_	_	7	obl	_	_
 11	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 316
+# sent_id = 314
 # text = And it came to pass that Riplakish did not do that which was right in the sight of the Lord, for he did have many wives and concubines, and did lay that upon men's shoulders which was grievous to be borne; yea, he did tax them with heavy taxes; and with the taxes he did build many spacious buildings.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11582,7 +11576,7 @@
 65	buildings	building	NOUN	_	_	62	obj	_	_
 66	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 317
+# sent_id = 315
 # text = And he did erect him an exceedingly beautiful throne; and he did build many prisons, and whoso would not be subject unto taxes he did cast into prison; and whoso was not able to pay taxes he did cast into prison; and he did cause that they should labor continually for their support; and whoso refused to labor he did cause to be put to death.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -11657,7 +11651,7 @@
 71	death	death	NOUN	_	_	69	obl	_	_
 72	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 318
+# sent_id = 316
 # text = Wherefore he did obtain all his fine work, yea, even his fine gold he did cause to be refined in prison; and all manner of fine workmanship he did cause to be wrought in prison.
 1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -11699,7 +11693,7 @@
 38	prison	prison	NOUN	_	_	36	obl	_	_
 39	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 319
+# sent_id = 317
 # text = And it came to pass that he did afflict the people with his whoredoms and abominations.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11719,7 +11713,7 @@
 16	abominations	abomination	NOUN	_	_	14	conj	_	_
 17	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 320
+# sent_id = 318
 # text = And when he had reigned for the space of forty and two years the people did rise up in rebellion against him; and there began to be war again in the land, insomuch that Riplakish was killed, and his descendants were driven out of the land.
 1	And	and	CCONJ	_	_	17	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -11772,7 +11766,7 @@
 49	land	land	NOUN	_	_	45	obl	_	_
 50	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 321
+# sent_id = 319
 # text = And it came to pass after the space of many years, Morianton, (he being a descendant of Riplakish) gathered together an army of outcasts, and went forth and gave battle unto the people; and he gained power over many cities; and the war became exceedingly sore, and did last for the space of many years; and he did gain power over all the land, and did establish himself king over all the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11859,7 +11853,7 @@
 83	land	land	NOUN	_	_	77	obl	_	_
 84	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 322
+# sent_id = 320
 # text = And after that he had established himself king he did ease the burden of the people, by which he did gain favor in the eyes of the people, and they did anoint him to be their king.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	after	after	SCONJ	_	_	6	mark	_	_
@@ -11902,7 +11896,7 @@
 39	king	king	NOUN	_	_	34	xcomp	_	_
 40	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 323
+# sent_id = 321
 # text = And he did do justice unto the people, but not unto himself because of his many whoredoms; wherefore he was cut off from the presence of the Lord.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -11936,7 +11930,7 @@
 30	Lord	Lord	PROPN	_	_	27	nmod	_	_
 31	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 324
+# sent_id = 322
 # text = And it came to pass that Morianton built up many cities, and the people became exceedingly rich under his reign, both in buildings, and in gold and silver, and in raising grain, and in flocks, and herds, and such things which had been restored unto them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11993,8 +11987,8 @@
 53	them	they	PRON	_	_	51	obl	_	_
 54	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 325
-# text = And Morianton did live to an exceedingly great age, and then he begat Kim; and Kim did reign in the stead of his father; and he did reign eight years, and his father died.
+# sent_id = 323
+# text = And Morianton did live to an exceedingly great age, and then he begat Kim; and Kim did reign in the stead of his father; and he did reign eight years, and his father died. And it came to pass that Kim did not reign in righteousness, wherefore he was not favored of the Lord.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	Morianton	Morianton	PROPN	_	_	4	nsubj	_	_
 3	did	do	AUX	_	_	4	aux	_	_
@@ -12034,33 +12028,30 @@
 37	father	father	NOUN	_	_	38	nsubj	_	_
 38	died	die	VERB	_	_	31	conj	_	_
 39	.	.	PUNCT	_	_	4	punct	_	_
+40	And	and	CCONJ	_	_	42	cc	_	_
+41	it	it	PRON	_	_	42	expl	_	_
+42	came	come	VERB	_	_	4	conj	_	_
+43	to	to	PART	_	_	44	mark	_	_
+44	pass	pass	VERB	_	_	42	xcomp	_	_
+45	that	that	SCONJ	_	_	49	mark	_	_
+46	Kim	Kim	PROPN	_	_	49	nsubj	_	_
+47	did	do	AUX	_	_	49	aux	_	_
+48	not	not	PART	_	_	49	advmod	_	_
+49	reign	reign	VERB	_	_	44	ccomp	_	_
+50	in	in	ADP	_	_	51	case	_	_
+51	righteousness	righteousness	NOUN	_	_	49	obl	_	_
+52	,	,	PUNCT	_	_	57	punct	_	_
+53	wherefore	so	ADV	_	_	57	advmod	_	_
+54	he	he	PRON	_	_	57	nsubj:pass	_	_
+55	was	be	AUX	_	_	57	aux:pass	_	_
+56	not	not	PART	_	_	57	advmod	_	_
+57	favored	favore	VERB	_	_	42	parataxis	_	_
+58	of	of	ADP	_	_	60	case	_	_
+59	the	the	DET	_	_	60	det	_	_
+60	Lord	Lord	PROPN	_	_	57	obl	_	_
+61	.	.	PUNCT	_	_	42	punct	_	_
 
-# sent_id = 326
-# text = And it came to pass that Kim did not reign in righteousness, wherefore he was not favored of the Lord.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	it	it	PRON	_	_	3	expl	_	_
-3	came	come	VERB	_	_	0	root	_	_
-4	to	to	PART	_	_	5	mark	_	_
-5	pass	pass	VERB	_	_	3	xcomp	_	_
-6	that	that	SCONJ	_	_	10	mark	_	_
-7	Kim	Kim	PROPN	_	_	10	nsubj	_	_
-8	did	do	AUX	_	_	10	aux	_	_
-9	not	not	PART	_	_	10	advmod	_	_
-10	reign	reign	VERB	_	_	5	ccomp	_	_
-11	in	in	ADP	_	_	12	case	_	_
-12	righteousness	righteousness	NOUN	_	_	10	obl	_	_
-13	,	,	PUNCT	_	_	18	punct	_	_
-14	wherefore	so	ADV	_	_	18	advmod	_	_
-15	he	he	PRON	_	_	18	nsubj:pass	_	_
-16	was	be	AUX	_	_	18	aux:pass	_	_
-17	not	not	PART	_	_	18	advmod	_	_
-18	favored	favore	VERB	_	_	3	parataxis	_	_
-19	of	of	ADP	_	_	21	case	_	_
-20	the	the	DET	_	_	21	det	_	_
-21	Lord	Lord	PROPN	_	_	18	obl	_	_
-22	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 327
+# sent_id = 324
 # text = And his brother did rise up in rebellion against him, by which he did bring him into captivity; and he did remain in captivity all his days; and he begat sons and daughters in captivity, and in his old age he begat Levi; and he died.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	his	his	PRON	_	_	3	nmod:poss	_	_
@@ -12115,7 +12106,7 @@
 51	died	die	VERB	_	_	46	conj	_	_
 52	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 328
+# sent_id = 325
 # text = And it came to pass that Levi did serve in captivity after the death of his father, for the space of forty and two years.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -12145,7 +12136,7 @@
 26	years	year	NOUN	_	_	21	nmod	_	_
 27	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 329
+# sent_id = 326
 # text = And he did make war against the king of the land, by which he did obtain unto himself the kingdom.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -12170,7 +12161,7 @@
 21	kingdom	kingdom	NOUN	_	_	17	obj	_	_
 22	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 330
+# sent_id = 327
 # text = And after he had obtained unto himself the kingdom he did that which was right in the sight of the Lord; and the people did prosper in the land; and he did live to a good old age, and begat sons and daughters; and he also begat Corom, whom he anointed king in his stead.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	after	after	SCONJ	_	_	5	mark	_	_
@@ -12234,7 +12225,7 @@
 60	stead	stead	NOUN	_	_	56	obl	_	_
 61	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 331
+# sent_id = 328
 # text = And it came to pass that Corom did that which was good in the sight of the Lord all his days; and he begat many sons and daughters; and after he had seen many days he did pass away, even like unto the rest of the earth; and Kish reigned in his stead.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -12295,7 +12286,7 @@
 57	stead	stead	NOUN	_	_	54	obl	_	_
 58	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 332
+# sent_id = 329
 # text = And it came to pass that Kish passed away also, and Lib reigned in his stead.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -12316,7 +12307,7 @@
 17	stead	stead	NOUN	_	_	14	obl	_	_
 18	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 333
+# sent_id = 330
 # text = And it came to pass that Lib also did that which was good in the sight of the Lord.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -12339,7 +12330,7 @@
 19	Lord	Lord	PROPN	_	_	16	nmod	_	_
 20	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 334
+# sent_id = 331
 # text = And in the days of Lib the poisonous serpents were destroyed.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	in	in	ADP	_	_	4	case	_	_
@@ -12354,7 +12345,7 @@
 11	destroyed	destroy	VERB	_	_	0	root	_	_
 12	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 335
+# sent_id = 332
 # text = Wherefore they did go into the land southward, to hunt food for the people of the land, for the land was covered with animals of the forest.
 1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -12387,7 +12378,7 @@
 29	forest	forest	NOUN	_	_	26	nmod	_	_
 30	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 336
+# sent_id = 333
 # text = And Lib also himself became a great hunter.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	Lib	Lib	PROPN	_	_	5	nsubj	_	_
@@ -12399,7 +12390,7 @@
 8	hunter	hunter	NOUN	_	_	5	xcomp	_	_
 9	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 337
+# sent_id = 334
 # text = And they built a great city by the narrow neck of land, by the place where the sea divides the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -12425,7 +12416,7 @@
 22	land	land	NOUN	_	_	20	obj	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 338
+# sent_id = 335
 # text = And they did preserve the land southward for a wilderness, to get game.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -12443,7 +12434,7 @@
 14	game	game	NOUN	_	_	13	obj	_	_
 15	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 339
+# sent_id = 336
 # text = And the whole face of the land northward was covered with inhabitants.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	the	the	DET	_	_	4	det	_	_
@@ -12459,7 +12450,7 @@
 12	inhabitants	inhabitant	NOUN	_	_	10	obl	_	_
 13	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 340
+# sent_id = 337
 # text = And they were exceedingly industrious, and they did buy and sell and traffic one with another, that they might get gain.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	they	they	PRON	_	_	5	nsubj	_	_
@@ -12486,7 +12477,7 @@
 23	gain	gain	VERB	_	_	22	xcomp	_	_
 24	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 341
+# sent_id = 338
 # text = And they did work in all manner of ore, and they did make gold, and silver, and iron, and brass, and all manner of metals; and they did dig it out of the earth; wherefore, they did cast up mighty heaps of earth to get ore, of gold, and of silver, and of iron, and of copper.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -12559,7 +12550,7 @@
 69	copper	copper	NOUN	_	_	65	conj	_	_
 70	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 342
+# sent_id = 339
 # text = And they did work all manner of fine work.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -12572,7 +12563,7 @@
 9	work	work	NOUN	_	_	6	nmod	_	_
 10	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 343
+# sent_id = 340
 # text = And they did have silks, and fine-twined linen; and they did work all manner of cloth, that they might clothe themselves from their nakedness.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -12605,7 +12596,7 @@
 29	nakedness	nakedness	NOUN	_	_	25	obl	_	_
 30	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 344
+# sent_id = 341
 # text = And they did make all manner of tools to till the earth, both to plow and to sow, to reap and to hoe, and also to thrash.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -12639,7 +12630,7 @@
 30	thrash	thrash	VERB	_	_	16	conj	_	_
 31	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 345
+# sent_id = 342
 # text = And they did make all manner of tools with which they did work their beasts.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -12658,7 +12649,7 @@
 15	beasts	beast	NOUN	_	_	13	obj	_	_
 16	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 346
+# sent_id = 343
 # text = And they did make all manner of weapons of war.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -12672,7 +12663,7 @@
 10	war	war	NOUN	_	_	8	nmod	_	_
 11	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 347
+# sent_id = 344
 # text = And they did work all manner of work of exceedingly curious workmanship.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -12688,7 +12679,7 @@
 12	workmanship	workmanship	NOUN	_	_	8	nmod	_	_
 13	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 348
+# sent_id = 345
 # text = And never could be a people more blessed than were they, and more prospered by the hand of the Lord.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	never	never	ADV	_	_	6	advmod	_	_
@@ -12713,7 +12704,7 @@
 21	Lord	Lord	PROPN	_	_	18	nmod	_	_
 22	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 349
+# sent_id = 346
 # text = And they were in a land that was choice above all lands, for the Lord had spoken it.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	they	they	PRON	_	_	6	nsubj	_	_
@@ -12736,7 +12727,7 @@
 19	it	it	PRON	_	_	18	obj	_	_
 20	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 350
+# sent_id = 347
 # text = And it came to pass that Lib did live many years, and begat sons and daughters; and he also begat Hearthom.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -12763,7 +12754,7 @@
 23	Hearthom	Hearthom	PROPN	_	_	22	obj	_	_
 24	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 351
+# sent_id = 348
 # text = And it came to pass that Hearthom reigned in the stead of his father.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -12781,7 +12772,7 @@
 14	father	father	NOUN	_	_	11	nmod	_	_
 15	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 352
+# sent_id = 349
 # text = And when Hearthom had reigned twenty and four years, behold, the kingdom was taken away from him.
 1	And	and	CCONJ	_	_	16	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -12804,7 +12795,7 @@
 19	him	he	PRON	_	_	16	obl	_	_
 20	.	.	PUNCT	_	_	16	punct	_	_
 
-# sent_id = 353
+# sent_id = 350
 # text = And he served many years in captivity, yea, even all the remainder of his days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -12825,7 +12816,7 @@
 17	days	day	NOUN	_	_	14	nmod	_	_
 18	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 354
+# sent_id = 351
 # text = And he begat Heth, and Heth lived in captivity all his days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -12842,7 +12833,7 @@
 13	days	day	NOUN	_	_	8	obl:unmarked	_	_
 14	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 355
+# sent_id = 352
 # text = And Heth begat Aaron, and Aaron dwelt in captivity all his days; and he begat Amnigaddah, and Amnigaddah also dwelt in captivity all his days; and he begat Coriantum, and Coriantum dwelt in captivity all his days; and he begat Com.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	Heth	Heth	PROPN	_	_	3	nsubj	_	_
@@ -12893,7 +12884,7 @@
 47	Com	com	NOUN	_	_	46	obj	_	_
 48	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 356
+# sent_id = 353
 # text = And it came to pass that Com drew away the half of the kingdom.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -12911,7 +12902,7 @@
 14	kingdom	kingdom	NOUN	_	_	11	nmod	_	_
 15	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 357
+# sent_id = 354
 # text = And he reigned over the half of the kingdom forty and two years; and he went to battle against the king, Amgid, and they fought for the space of many years, during which time Com gained power over Amgid, and obtained power over the remainder of the kingdom.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -12968,7 +12959,7 @@
 53	kingdom	kingdom	NOUN	_	_	50	nmod	_	_
 54	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 358
+# sent_id = 355
 # text = And in the days of Com there began to be robbers in the land; and they adopted the old plans, and administered oaths after the manner of the ancients, and sought again to destroy the kingdom.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	in	in	ADP	_	_	4	case	_	_
@@ -13011,7 +13002,7 @@
 39	kingdom	kingdom	NOUN	_	_	37	obj	_	_
 40	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 359
+# sent_id = 356
 # text = Now Com did fight against them much; nevertheless, he did not prevail against them.
 1	Now	now	ADV	_	_	4	advmod	_	_
 2	Com	com	NOUN	_	_	4	nsubj	_	_
@@ -13031,7 +13022,7 @@
 16	them	they	PRON	_	_	14	obl	_	_
 17	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 360
+# sent_id = 357
 # text = And there came also in the days of Com many prophets, and prophesied of the destruction of that great people except they should repent, and turn unto the Lord, and forsake their murders and wickedness.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -13073,7 +13064,7 @@
 38	wickedness	wickedness	NOUN	_	_	36	conj	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 361
+# sent_id = 358
 # text = And it came to pass that the prophets were rejected by the people, and they fled unto Com for protection, for the people sought to destroy them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13106,7 +13097,7 @@
 29	them	they	PRON	_	_	28	obj	_	_
 30	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 362
+# sent_id = 359
 # text = And they prophesied unto Com many things; and he was blessed in all the remainder of his days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -13129,7 +13120,7 @@
 19	days	day	NOUN	_	_	16	nmod	_	_
 20	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 363
+# sent_id = 360
 # text = And he lived to a good old age, and begat Shiblom; and Shiblom reigned in his stead.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -13152,7 +13143,7 @@
 19	stead	stead	NOUN	_	_	16	obl	_	_
 20	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 364
+# sent_id = 361
 # text = And the brother of Shiblom rebelled against him, and there began to be an exceedingly great war in all the land.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -13178,7 +13169,7 @@
 22	land	land	NOUN	_	_	18	nmod	_	_
 23	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 365
+# sent_id = 362
 # text = And it came to pass that the brother of Shiblom caused that all the prophets who prophesied of the destruction of the people should be put to death;
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13210,7 +13201,7 @@
 28	death	death	NOUN	_	_	26	obl	_	_
 29	;	;	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 366
+# sent_id = 363
 # text = And there was great calamity in all the land, for they had testified that a great curse should come upon the land, and also upon the people, and that there should be a great destruction among them, such an one as never had been upon the face of the earth, and their bones should become as heaps of earth upon the face of the land except they should repent of their wickedness.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -13291,7 +13282,7 @@
 77	wickedness	wickedness	NOUN	_	_	74	obl	_	_
 78	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 367
+# sent_id = 364
 # text = And they hearkened not unto the voice of the Lord, because of their wicked combinations; wherefore, there began to be wars and contentions in all the land, and also many famines and pestilences, insomuch that there was a great destruction, such an one as never had been known upon the face of the earth; and all this came to pass in the days of Shiblom.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -13367,7 +13358,7 @@
 72	Shiblom	Shiblom	PROPN	_	_	70	nmod	_	_
 73	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 368
+# sent_id = 365
 # text = And the people began to repent of their iniquity; and inasmuch as they did the Lord did have mercy on them.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -13393,7 +13384,7 @@
 22	them	they	PRON	_	_	19	obl	_	_
 23	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 369
+# sent_id = 366
 # text = And it came to pass that Shiblom was slain, and Seth was brought into captivity, and did dwell in captivity all his days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13422,7 +13413,7 @@
 25	days	day	NOUN	_	_	20	obl:unmarked	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 370
+# sent_id = 367
 # text = And it came to pass that Ahah, his son, did obtain the kingdom; and he did reign over the people all his days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13452,7 +13443,7 @@
 26	days	day	NOUN	_	_	20	obl:unmarked	_	_
 27	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 371
+# sent_id = 368
 # text = And he did do all manner of iniquity in his days, by which he did cause the shedding of much blood; and few were his days.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -13484,7 +13475,7 @@
 28	days	day	NOUN	_	_	4	conj	_	_
 29	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 372
+# sent_id = 369
 # text = And Ethem, being a descendant of Ahah, did obtain the kingdom; and he also did do that which was wicked in his days.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	Ethem	Ethem	PROPN	_	_	11	nsubj	_	_
@@ -13514,7 +13505,7 @@
 26	days	day	NOUN	_	_	23	obl	_	_
 27	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 373
+# sent_id = 370
 # text = And it came to pass that in the days of Ethem there came many prophets, and prophesied again unto the people; yea, they did prophesy that the Lord would utterly destroy them from off the face of the earth except they repented of their iniquities.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13566,7 +13557,7 @@
 48	iniquities	iniquity	NOUN	_	_	45	obl	_	_
 49	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 374
+# sent_id = 371
 # text = And it came to pass that the people hardened their hearts, and would not hearken unto their words; and the prophets mourned and withdrew from among the people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13600,7 +13591,7 @@
 30	people	person	NOUN	_	_	26	obl	_	_
 31	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 375
+# sent_id = 372
 # text = And it came to pass that Ethem did execute judgment in wickedness all his days; and he begat Moron.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13624,7 +13615,7 @@
 20	Moron	Moron	PROPN	_	_	19	obj	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 376
+# sent_id = 373
 # text = And it came to pass that Moron did reign in his stead; and Moron did that which was wicked before the Lord.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13651,7 +13642,7 @@
 23	Lord	Lord	PROPN	_	_	20	obl	_	_
 24	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 377
+# sent_id = 374
 # text = And it came to pass that there arose a rebellion among the people, because of that secret combination which was built up to get power and gain; and there arose a mighty man among them in iniquity, and gave battle unto Moron, in which he did overthrow the half of the kingdom; and he did maintain the half of the kingdom for many years.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13724,7 +13715,7 @@
 69	years	year	NOUN	_	_	61	obl	_	_
 70	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 378
+# sent_id = 375
 # text = And it came to pass that Moron did overthrow him, and did obtain the kingdom again.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13745,7 +13736,7 @@
 17	again	again	ADV	_	_	14	advmod	_	_
 18	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 379
+# sent_id = 376
 # text = And it came to pass that there arose another mighty man; and he was a descendant of the brother of Jared.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13771,7 +13762,7 @@
 22	Jared	Jared	PROPN	_	_	20	nmod	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 380
+# sent_id = 377
 # text = And it came to pass that he did overthrow Moron and obtain the kingdom; wherefore, Moron dwelt in captivity all the remainder of his days; and he begat Coriantor.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13807,7 +13798,7 @@
 32	Coriantor	Coriantor	PROPN	_	_	31	obj	_	_
 33	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 381
+# sent_id = 378
 # text = And it came to pass that Coriantor dwelt in captivity all his days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13824,7 +13815,7 @@
 13	days	day	NOUN	_	_	8	obl:unmarked	_	_
 14	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 382
+# sent_id = 379
 # text = And in the days of Coriantor there also came many prophets, and prophesied of great and marvelous things, and cried repentance unto the people, and except they should repent the Lord God would execute judgment against them to their utter destruction;
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	in	in	ADP	_	_	4	case	_	_
@@ -13872,7 +13863,7 @@
 44	destruction	destruction	NOUN	_	_	37	obl	_	_
 45	;	;	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 383
+# sent_id = 380
 # text = And that the Lord God would send or bring forth another people to possess the land, by his power, after the manner by which he brought their fathers.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	that	that	SCONJ	_	_	7	mark	_	_
@@ -13906,7 +13897,7 @@
 30	fathers	father	NOUN	_	_	28	obj	_	_
 31	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 384
+# sent_id = 381
 # text = And they did reject all the words of the prophets, because of their secret society and wicked abominations.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -13929,7 +13920,7 @@
 19	abominations	abomination	NOUN	_	_	16	conj	_	_
 20	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 385
+# sent_id = 382
 # text = And it came to pass that Coriantor begat Ether, and he died, having dwelt in captivity all his days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13954,7 +13945,7 @@
 21	days	day	NOUN	_	_	16	obl:unmarked	_	_
 22	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 386
+# sent_id = 383
 # text = And it came to pass that the days of Ether were in the days of Coriantumr; and Coriantumr was king over all the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -13983,7 +13974,7 @@
 25	land	land	NOUN	_	_	21	obl	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 387
+# sent_id = 384
 # text = And Ether was a prophet of the Lord; wherefore Ether came forth in the days of Coriantumr, and began to prophesy unto the people, for he could not be restrained because of the Spirit of the Lord which was in him.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	Ether	Ether	PROPN	_	_	5	nsubj	_	_
@@ -14031,7 +14022,7 @@
 44	him	he	PRON	_	_	37	acl:relcl	_	_
 45	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 388
+# sent_id = 385
 # text = For he did cry from the morning, even until the going down of the sun, exhorting the people to believe in God unto repentance lest they should be destroyed, saying unto them that by faith all things are fulfilled--
 1	For	for	SCONJ	_	_	4	mark	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -14077,7 +14068,7 @@
 42	fulfilled	fulfil	VERB	_	_	33	ccomp	_	_
 43	--	--	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 389
+# sent_id = 386
 # text = Wherefore, whoso believeth in God might with surety hope for a better world, yea, even a place at the right hand of God, which hope cometh of faith, maketh an anchor to the souls of men, which would make them sure and steadfast, always abounding in good works, being led to glorify God.
 1	Wherefore	so	ADV	_	_	34	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -14142,7 +14133,7 @@
 61	God	God	PROPN	_	_	60	obj	_	_
 62	.	.	PUNCT	_	_	34	punct	_	_
 
-# sent_id = 390
+# sent_id = 387
 # text = And it came to pass that Ether did prophesy great and marvelous things unto the people, which they did not believe, because they saw them not.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -14174,7 +14165,7 @@
 28	not	not	PART	_	_	26	advmod	_	_
 29	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 391
+# sent_id = 388
 # text = And now, I, Moroni, would speak somewhat concerning these things; I would show unto the world that faith is things which are hoped for and not seen; wherefore, dispute not because ye see not, for ye receive no witness until after the trial of your faith.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	now	now	ADV	_	_	9	advmod	_	_
@@ -14231,7 +14222,7 @@
 53	faith	faith	NOUN	_	_	50	nmod	_	_
 54	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 392
+# sent_id = 389
 # text = For it was by faith that Christ showed himself unto our fathers, after he had risen from the dead; and he showed not himself unto them until after they had faith in him; wherefore, it must needs be that some had faith in him, for he showed himself not unto the world.
 1	For	for	SCONJ	_	_	5	mark	_	_
 2	it	it	PRON	_	_	5	nsubj	_	_
@@ -14292,7 +14283,7 @@
 57	world	world	NOUN	_	_	52	obl	_	_
 58	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 393
+# sent_id = 390
 # text = But because of the faith of men he has shown himself unto the world, and glorified the name of the Father, and prepared a way that thereby others might be partakers of the heavenly gift, that they might hope for those things which they have not seen.
 1	But	but	CCONJ	_	_	10	cc	_	_
 2	because	because	ADP	_	_	5	case	_	_
@@ -14346,7 +14337,7 @@
 50	seen	see	VERB	_	_	45	acl:relcl	_	_
 51	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 394
+# sent_id = 391
 # text = Wherefore, ye may also have hope, and be partakers of the gift, if ye will but have faith.
 1	Wherefore	so	ADV	_	_	6	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -14371,7 +14362,7 @@
 21	faith	faith	NOUN	_	_	20	obj	_	_
 22	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 395
+# sent_id = 392
 # text = Behold it was by faith that they of old were called after the holy order of God.
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	it	it	PRON	_	_	5	nsubj	_	_
@@ -14392,7 +14383,7 @@
 17	God	God	PROPN	_	_	15	nmod	_	_
 18	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 396
+# sent_id = 393
 # text = Wherefore, by faith was the law of Moses given.
 1	Wherefore	so	ADV	_	_	7	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -14406,7 +14397,7 @@
 10	given	give	VERB	_	_	7	acl	_	_
 11	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 397
+# sent_id = 394
 # text = But in the gift of his Son hath God prepared a more excellent way; and it is by faith that it hath been fulfilled.
 1	But	but	CCONJ	_	_	10	cc	_	_
 2	in	in	ADP	_	_	4	case	_	_
@@ -14435,7 +14426,7 @@
 25	fulfilled	fulfil	VERB	_	_	20	acl	_	_
 26	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 398
+# sent_id = 395
 # text = For if there be no faith among the children of men God can do no miracle among them; wherefore, he showed not himself until after their faith.
 1	For	for	SCONJ	_	_	4	mark	_	_
 2	if	if	SCONJ	_	_	4	mark	_	_
@@ -14468,7 +14459,7 @@
 29	faith	faith	NOUN	_	_	23	obl	_	_
 30	.	.	PUNCT	_	_	14	punct	_	_
 
-# sent_id = 399
+# sent_id = 396
 # text = Behold, it was the faith of Alma and Amulek that caused the prison to tumble to the earth.
 1	Behold	behold	INTJ	_	_	6	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -14491,7 +14482,7 @@
 19	earth	earth	NOUN	_	_	16	obl	_	_
 20	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 400
+# sent_id = 397
 # text = Behold, it was the faith of Nephi and Lehi that wrought the change upon the Lamanites, that they were baptized with fire and with the Holy Ghost.
 1	Behold	behold	INTJ	_	_	6	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -14524,7 +14515,7 @@
 29	Ghost	Ghost	PROPN	_	_	24	conj	_	_
 30	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 401
+# sent_id = 398
 # text = Behold, it was the faith of Ammon and his brethren which wrought so great a miracle among the Lamanites.
 1	Behold	behold	INTJ	_	_	6	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -14548,7 +14539,7 @@
 20	Lamanites	Lamanites	PROPN	_	_	17	nmod	_	_
 21	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 402
+# sent_id = 399
 # text = Yea, and even all they who wrought miracles wrought them by faith, even those who were before Christ and also those who were after.
 1	Yea	yes	INTJ	_	_	10	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -14578,7 +14569,7 @@
 26	after	after	ADV	_	_	23	acl:relcl	_	_
 27	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 403
+# sent_id = 400
 # text = And it was by faith that the three disciples obtained a promise that they should not taste of death; and they obtained not the promise until after their faith.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	it	it	PRON	_	_	5	expl	_	_
@@ -14612,7 +14603,7 @@
 30	faith	faith	NOUN	_	_	23	obl	_	_
 31	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 404
+# sent_id = 401
 # text = And neither at any time hath any wrought miracles until after their faith; wherefore they first believed in the Son of God.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	neither	neither	CCONJ	_	_	6	nsubj	_	_
@@ -14639,7 +14630,7 @@
 23	God	God	PROPN	_	_	21	nmod	_	_
 24	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 405
+# sent_id = 402
 # text = And there were many whose faith was so exceedingly strong, even before Christ came, who could not be kept from within the veil, but truly saw with their eyes the things which they had beheld with an eye of faith, and they were glad.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -14691,7 +14682,7 @@
 48	glad	glad	ADJ	_	_	29	conj	_	_
 49	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 406
+# sent_id = 403
 # text = And behold, we have seen in this record that one of these was the brother of Jared; for so great was his faith in God, that when God put forth his finger he could not hide it from the sight of the brother of Jared, because of his word which he had spoken unto him, which word he had obtained by faith.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	behold	behold	INTJ	_	_	6	discourse	_	_
@@ -14762,7 +14753,7 @@
 67	faith	faith	NOUN	_	_	65	obl:agent	_	_
 68	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 407
+# sent_id = 404
 # text = And after the brother of Jared had beheld the finger of the Lord, because of the promise which the brother of Jared had obtained by faith, the Lord could not withhold anything from his sight; wherefore he showed him all things, for he could no longer be kept without the veil.
 1	And	and	CCONJ	_	_	33	cc	_	_
 2	after	after	SCONJ	_	_	8	mark	_	_
@@ -14821,7 +14812,7 @@
 55	veil	veil	NOUN	_	_	52	obl	_	_
 56	.	.	PUNCT	_	_	33	punct	_	_
 
-# sent_id = 408
+# sent_id = 405
 # text = And it is by faith that my fathers have obtained the promise that these things should come unto their brethren through the Gentiles; therefore the Lord hath commanded me, yea, even Jesus Christ.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	it	it	PRON	_	_	5	expl	_	_
@@ -14861,7 +14852,7 @@
 36	Christ	Christ	PROPN	_	_	35	flat	_	_
 37	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 409
+# sent_id = 406
 # text = And I said unto him: Lord, the Gentiles will mock at these things, because of our weakness in writing; for Lord thou hast made us mighty in word by faith, but thou hast not made us mighty in writing; for thou hast made all this people that they could speak much, because of the Holy Ghost which thou hast given them;
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -14933,7 +14924,7 @@
 68	them	they	PRON	_	_	67	iobj	_	_
 69	;	;	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 410
+# sent_id = 407
 # text = And thou hast made us that we could write but little, because of the awkwardness of our hands.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	thou	you	PRON	_	_	4	nsubj	_	_
@@ -14956,7 +14947,7 @@
 19	hands	hand	NOUN	_	_	16	nmod	_	_
 20	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 411
+# sent_id = 408
 # text = Behold, thou hast not made us mighty in writing like unto the brother of Jared, for thou madest him that the things which he wrote were mighty even as thou art, unto the overpowering of man to read them.
 1	Behold	behold	INTJ	_	_	6	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -15002,7 +14993,7 @@
 42	them	they	PRON	_	_	41	obj	_	_
 43	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 412
+# sent_id = 409
 # text = Thou hast also made our words powerful and great, even that we cannot write them; wherefore, when we write we behold our weakness, and stumble because of the placing of our words; and I fear lest the Gentiles shall mock at our words.
 1	Thou	you	PRON	_	_	4	nsubj	_	_
 2	hast	have	AUX	_	_	4	aux	_	_
@@ -15055,7 +15046,7 @@
 49	words	word	NOUN	_	_	46	obl	_	_
 50	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 413
+# sent_id = 410
 # text = And when I had said this, the Lord spake unto me, saying: Fools mock, but they shall mourn; and my grace is sufficient for the meek, that they shall take no advantage of your weakness;
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -15100,7 +15091,7 @@
 41	weakness	weakness	NOUN	_	_	38	nmod	_	_
 42	;	;	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 414
+# sent_id = 411
 # text = And if men come unto me I will show unto them their weakness.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	if	if	SCONJ	_	_	4	mark	_	_
@@ -15117,7 +15108,7 @@
 13	weakness	weakness	NOUN	_	_	9	obj	_	_
 14	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 415
+# sent_id = 412
 # text = I give unto men weakness that they may be humble; and my grace is sufficient for all men that humble themselves before me; for if they humble themselves before me, and have faith in me, then will I make weak things become strong unto them.
 1	I	I	PRON	_	_	2	nsubj	_	_
 2	give	give	VERB	_	_	0	root	_	_
@@ -15170,7 +15161,7 @@
 49	them	they	PRON	_	_	47	obl	_	_
 50	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 416
+# sent_id = 413
 # text = Behold, I will show unto the Gentiles their weakness, and I will show unto them that faith, hope and charity bringeth unto me--the fountain of all righteousness.
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -15206,7 +15197,7 @@
 32	righteousness	righteousness	NOUN	_	_	29	nmod	_	_
 33	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 417
+# sent_id = 414
 # text = And I, Moroni, having heard these words, was comforted, and said: O Lord, thy righteous will be done, for I know that thou workest unto the children of men according to their faith;
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	I	I	PRON	_	_	12	nsubj:pass	_	_
@@ -15250,7 +15241,7 @@
 40	faith	faith	NOUN	_	_	31	obl	_	_
 41	;	;	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 418
+# sent_id = 415
 # text = For the brother of Jared said unto the mountain Zerin, Remove--and it was removed.
 1	For	for	ADP	_	_	3	case	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -15271,7 +15262,7 @@
 17	removed	remove	VERB	_	_	6	conj	_	_
 18	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 419
+# sent_id = 416
 # text = And if he had not had faith it would not have moved; wherefore thou workest after men have faith.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	if	if	SCONJ	_	_	6	mark	_	_
@@ -15295,7 +15286,7 @@
 20	faith	faith	NOUN	_	_	19	obj	_	_
 21	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 420
+# sent_id = 417
 # text = For thus didst thou manifest thyself unto thy disciples; for after they had faith, and did speak in thy name, thou didst show thyself unto them in great power.
 1	For	for	SCONJ	_	_	5	mark	_	_
 2	thus	thus	ADV	_	_	5	advmod	_	_
@@ -15331,7 +15322,7 @@
 32	power	power	NOUN	_	_	26	obl	_	_
 33	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 421
+# sent_id = 418
 # text = And I also remember that thou hast said that thou hast prepared a house for man, yea, even among the mansions of thy Father, in which man might have a more excellent hope; wherefore man must hope, or he cannot receive an inheritance in the place which thou hast prepared.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
@@ -15391,7 +15382,7 @@
 56	prepared	prepare	VERB	_	_	52	acl:relcl	_	_
 57	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 422
+# sent_id = 419
 # text = And again, I remember that thou hast said that thou hast loved the world, even unto the laying down of thy life for the world, that thou mightest take it again to prepare a place for the children of men.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	again	again	ADV	_	_	5	advmod	_	_
@@ -15438,7 +15429,7 @@
 43	men	man	NOUN	_	_	41	nmod	_	_
 44	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 423
+# sent_id = 420
 # text = And now I know that this love which thou hast had for the children of men is charity; wherefore, except men shall have charity they cannot inherit that place which thou hast prepared in the mansions of thy Father.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -15484,7 +15475,7 @@
 42	Father	father	NOUN	_	_	39	nmod	_	_
 43	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 424
+# sent_id = 421
 # text = Wherefore, I know by this thing which thou hast said, that if the Gentiles have not charity, because of our weakness, that thou wilt prove them, and take away their talent, yea, even that which they have received, and give unto them who shall have more abundantly.
 1	Wherefore	so	ADV	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -15543,7 +15534,7 @@
 55	abundantly	abundantly	ADV	_	_	53	advmod	_	_
 56	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 425
+# sent_id = 422
 # text = And it came to pass that I prayed unto the Lord that he would give unto the Gentiles grace, that they might have charity.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -15572,7 +15563,7 @@
 25	charity	charity	NOUN	_	_	24	obj	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 426
+# sent_id = 423
 # text = And it came to pass that the Lord said unto me:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -15587,7 +15578,7 @@
 11	me	I	PRON	_	_	9	obl	_	_
 12	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 427
+# sent_id = 424
 # text = If they have not charity it mattereth not unto thee, thou hast been faithful; wherefore, thy garments shall be made clean.
 1	If	if	SCONJ	_	_	5	mark	_	_
 2	they	they	PRON	_	_	5	nsubj	_	_
@@ -15615,7 +15606,7 @@
 24	clean	clean	ADJ	_	_	23	xcomp	_	_
 25	.	.	PUNCT	_	_	15	punct	_	_
 
-# sent_id = 428
+# sent_id = 425
 # text = And because thou hast seen thy weakness thou shalt be made strong, even unto the sitting down in the place which I have prepared in the mansions of my Father.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	because	because	SCONJ	_	_	5	mark	_	_
@@ -15650,7 +15641,7 @@
 31	Father	father	NOUN	_	_	28	nmod	_	_
 32	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 429
+# sent_id = 426
 # text = And now I, Moroni, bid farewell unto the Gentiles, yea, and also unto my brethren whom I love, until we shall meet before the judgment-seat of Christ, where all men shall know that my garments are not spotted with your blood.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -15703,7 +15694,7 @@
 49	blood	blood	NOUN	_	_	46	obl	_	_
 50	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 430
+# sent_id = 427
 # text = And then shall ye know that I have seen Jesus, and that he hath talked with me face to face, and that he told me in plain humility, even as a man telleth another in mine own language, concerning these things;
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	then	then	ADV	_	_	5	advmod	_	_
@@ -15752,7 +15743,7 @@
 45	things	thing	NOUN	_	_	41	nmod	_	_
 46	;	;	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 431
+# sent_id = 428
 # text = And only a few have I written, because of my weakness in writing.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	only	only	ADV	_	_	4	advmod	_	_
@@ -15770,7 +15761,7 @@
 14	writing	writing	NOUN	_	_	12	nmod	_	_
 15	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 432
+# sent_id = 429
 # text = And now, I would commend you to seek this Jesus of whom the prophets and apostles have written, that the grace of God the Father, and also the Lord Jesus Christ, and the Holy Ghost, which beareth record of them, may be and abide in you forever.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	now	now	ADV	_	_	6	advmod	_	_
@@ -15827,12 +15818,12 @@
 53	forever	forever	ADV	_	_	50	advmod	_	_
 54	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 433
+# sent_id = 430
 # text = Amen.
 1	Amen	amen	INTJ	_	_	0	root	_	_
 2	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 434
+# sent_id = 431
 # text = And now I, Moroni, proceed to finish my record concerning the destruction of the people of whom I have been writing.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -15859,7 +15850,7 @@
 23	writing	write	VERB	_	_	17	acl:relcl	_	_
 24	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 435
+# sent_id = 432
 # text = For behold, they rejected all the words of Ether; for he truly told them of all things, from the beginning of man; and that after the waters had receded from off the face of this land it became a choice land above all other lands, a chosen land of the Lord; wherefore the Lord would have that all men should serve him who dwell upon the face thereof;
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	5	obl	_	_
@@ -15937,7 +15928,7 @@
 74	thereof	thereof	ADV	_	_	70	advmod	_	_
 75	;	;	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 436
+# sent_id = 433
 # text = And that it was the place of the New Jerusalem, which should come down out of heaven, and the holy sanctuary of the Lord.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	that	that	SCONJ	_	_	6	mark	_	_
@@ -15967,7 +15958,7 @@
 26	Lord	Lord	PROPN	_	_	23	nmod	_	_
 27	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 437
+# sent_id = 434
 # text = Behold, Ether saw the days of Christ, and he spake concerning a New Jerusalem upon this land.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -15990,7 +15981,7 @@
 19	land	land	NOUN	_	_	12	obl	_	_
 20	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 438
+# sent_id = 435
 # text = And he spake also concerning the house of Israel, and the Jerusalem from whence Lehi should come--after it should be destroyed it should be built up again, a holy city unto the Lord; wherefore, it could not be a new Jerusalem for it had been in a time of old; but it should be built up again, and become a holy city of the Lord; and it should be built unto the house of Israel--
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -16079,7 +16070,7 @@
 85	-	-	PUNCT	_	_	3	punct	_	_
 86	-	-	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 439
+# sent_id = 436
 # text = And that a New Jerusalem should be built up upon this land, unto the remnant of the seed of Joseph, for which things there has been a type.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	that	that	SCONJ	_	_	8	mark	_	_
@@ -16113,7 +16104,7 @@
 30	type	type	NOUN	_	_	19	acl:relcl	_	_
 31	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 440
+# sent_id = 437
 # text = For as Joseph brought his father down into the land of Egypt, even so he died there; wherefore, the Lord brought a remnant of the seed of Joseph out of the land of Jerusalem, that he might be merciful unto the seed of Joseph that they should perish not, even as he was merciful unto the father of Joseph that he should perish not.
 1	For	for	SCONJ	_	_	17	mark	_	_
 2	as	as	SCONJ	_	_	4	mark	_	_
@@ -16186,7 +16177,7 @@
 69	not	not	PART	_	_	68	advmod	_	_
 70	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 441
+# sent_id = 438
 # text = Wherefore, the remnant of the house of Joseph shall be built upon this land; and it shall be a land of their inheritance; and they shall build up a holy city unto the Lord, like unto the Jerusalem of old; and they shall no more be confounded, until the end come when the earth shall pass away.
 1	Wherefore	so	ADV	_	_	12	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -16253,7 +16244,7 @@
 63	away	away	ADV	_	_	62	advmod	_	_
 64	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 442
+# sent_id = 439
 # text = And there shall be a new heaven and a new earth; and they shall be like unto the old save the old have passed away, and all things have become new.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	there	there	PRON	_	_	4	expl	_	_
@@ -16290,7 +16281,7 @@
 33	new	new	ADJ	_	_	32	xcomp	_	_
 34	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 443
+# sent_id = 440
 # text = And then cometh the New Jerusalem; and blessed are they who dwell therein, for it is they whose garments are white through the blood of the Lamb; and they are they who are numbered among the remnant of the seed of Joseph, who were of the house of Israel.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	then	then	ADV	_	_	3	advmod	_	_
@@ -16347,7 +16338,7 @@
 53	Israel	Israel	PROPN	_	_	51	nmod	_	_
 54	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 444
+# sent_id = 441
 # text = And then also cometh the Jerusalem of old; and the inhabitants thereof, blessed are they, for they have been washed in the blood of the Lamb; and they are they who were scattered and gathered in from the four quarters of the earth, and from the north countries, and are partakers of the fulfilling of the covenant which God made with their father, Abraham.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	then	then	ADV	_	_	4	advmod	_	_
@@ -16422,7 +16413,7 @@
 71	Abraham	Abraham	PROPN	_	_	69	appos	_	_
 72	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 445
+# sent_id = 442
 # text = And when these things come, bringeth to pass the scripture which saith, there are they who were first, who shall be last; and there are they who were last, who shall be first.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -16464,7 +16455,7 @@
 38	first	first	ADJ	_	_	33	advcl:relcl	_	_
 39	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 446
+# sent_id = 443
 # text = And I was about to write more, but I am forbidden; but great and marvelous were the prophecies of Ether; but they esteemed him as naught, and cast him out; and he hid himself in the cavity of a rock by day, and by night he went forth viewing the things which should come upon the people.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
@@ -16531,7 +16522,7 @@
 63	people	person	NOUN	_	_	60	obl	_	_
 64	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 447
+# sent_id = 444
 # text = And as he dwelt in the cavity of a rock he made the remainder of this record, viewing the destructions which came upon the people, by night.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	as	as	SCONJ	_	_	4	mark	_	_
@@ -16564,7 +16555,7 @@
 29	night	night	NOUN	_	_	23	obl	_	_
 30	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 448
+# sent_id = 445
 # text = And it came to pass that in that same year in which he was cast out from among the people there began to be a great war among the people, for there were many who rose up, who were mighty men, and sought to destroy Coriantumr by their secret plans of wickedness, of which hath been spoken.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -16629,7 +16620,7 @@
 61	spoken	speak	VERB	_	_	53	acl:relcl	_	_
 62	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 449
+# sent_id = 446
 # text = And now Coriantumr, having studied, himself, in all the arts of war and all the cunning of the world, wherefore he gave battle unto them who sought to destroy him.
 1	And	and	CCONJ	_	_	26	cc	_	_
 2	now	now	ADV	_	_	26	advmod	_	_
@@ -16667,7 +16658,7 @@
 34	him	he	PRON	_	_	33	obj	_	_
 35	.	.	PUNCT	_	_	26	punct	_	_
 
-# sent_id = 450
+# sent_id = 447
 # text = But he repented not, neither his fair sons nor daughters; neither the fair sons and daughters of Cohor; neither the fair sons and daughters of Corihor; and in fine, there were none of the fair sons and daughters upon the face of the whole earth who repented of their sins.
 1	But	but	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -16726,7 +16717,7 @@
 55	sins	sin	NOUN	_	_	52	obl	_	_
 56	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 451
+# sent_id = 448
 # text = Wherefore, it came to pass that in the first year that Ether dwelt in the cavity of a rock, there were many people who were slain by the sword of those secret combinations, fighting against Coriantumr that they might obtain the kingdom.
 1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -16775,7 +16766,7 @@
 45	kingdom	kingdom	NOUN	_	_	43	obj	_	_
 46	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 452
+# sent_id = 449
 # text = And it came to pass that the sons of Coriantumr fought much and bled much.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -16794,7 +16785,7 @@
 15	much	much	ADJ	_	_	14	advmod	_	_
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 453
+# sent_id = 450
 # text = And in the second year the word of the Lord came to Ether, that he should go and prophesy unto Coriantumr that, if he would repent, and all his household, the Lord would give unto him his kingdom and spare the people--
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	in	in	ADP	_	_	5	case	_	_
@@ -16844,7 +16835,7 @@
 46	people	person	NOUN	_	_	44	obj	_	_
 47	--	--	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 454
+# sent_id = 451
 # text = Otherwise they should be destroyed, and all his household save it were himself.
 1	Otherwise	otherwise	ADV	_	_	5	advmod	_	_
 2	they	they	PRON	_	_	5	nsubj:pass	_	_
@@ -16862,7 +16853,7 @@
 14	himself	himself	PRON	_	_	5	conj	_	_
 15	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 455
+# sent_id = 452
 # text = And he should only live to see the fulfilling of the prophecies which had been spoken concerning another people receiving the land for their inheritance; and Coriantumr should receive a burial by them; and every soul should be destroyed save it were Coriantumr.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	he	he	PRON	_	_	5	nsubj	_	_
@@ -16911,7 +16902,7 @@
 45	Coriantumr	Coriantumr	PROPN	_	_	30	conj	_	_
 46	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 456
+# sent_id = 453
 # text = And it came to pass that Coriantumr repented not, neither his household, neither the people; and the wars ceased not; and they sought to kill Ether, but he fled from before them and hid again in the cavity of the rock.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -16961,7 +16952,7 @@
 46	rock	rock	NOUN	_	_	43	nmod	_	_
 47	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 457
+# sent_id = 454
 # text = And it came to pass that there arose up Shared, and he also gave battle unto Coriantumr; and he did beat him, insomuch that in the third year he did bring him into captivity.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17002,7 +16993,7 @@
 37	captivity	captivity	NOUN	_	_	34	obl	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 458
+# sent_id = 455
 # text = And the sons of Coriantumr, in the fourth year, did beat Shared, and did obtain the kingdom again unto their father.
 1	And	and	CCONJ	_	_	13	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -17030,7 +17021,7 @@
 24	father	father	NOUN	_	_	18	obl	_	_
 25	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 459
+# sent_id = 456
 # text = Now there began to be a war upon all the face of the land, every man with his band fighting for that which he desired.
 1	Now	now	ADV	_	_	3	advmod	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -17060,7 +17051,7 @@
 26	desired	desire	VERB	_	_	23	acl:relcl	_	_
 27	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 460
+# sent_id = 457
 # text = And there were robbers, and in fine, all manner of wickedness upon all the face of the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -17084,7 +17075,7 @@
 20	land	land	NOUN	_	_	17	nmod	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 461
+# sent_id = 458
 # text = And it came to pass that Coriantumr was exceedingly angry with Shared, and he went against him with his armies to battle; and they did meet in great anger, and they did meet in the valley of Gilgal; and the battle became exceedingly sore.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17136,7 +17127,7 @@
 48	sore	sore	ADJ	_	_	46	xcomp	_	_
 49	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 462
+# sent_id = 459
 # text = And it came to pass that Shared fought against him for the space of three days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17156,7 +17147,7 @@
 16	days	day	NOUN	_	_	13	nmod	_	_
 17	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 463
+# sent_id = 460
 # text = And it came to pass that Coriantumr beat him, and did pursue him until he came to the plains of Heshlon.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17182,7 +17173,7 @@
 22	Heshlon	Heshlon	PROPN	_	_	20	nmod	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 464
+# sent_id = 461
 # text = And it came to pass that Shared gave him battle again upon the plains; and behold, he did beat Coriantumr, and drove him back again to the valley of Gilgal.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17219,7 +17210,7 @@
 33	Gilgal	Gilgal	PROPN	_	_	31	nmod	_	_
 34	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 465
+# sent_id = 462
 # text = And Coriantumr gave Shared battle again in the valley of Gilgal, in which he beat Shared and slew him.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	Coriantumr	Coriantumr	PROPN	_	_	3	nsubj	_	_
@@ -17243,7 +17234,7 @@
 20	him	he	PRON	_	_	19	obj	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 466
+# sent_id = 463
 # text = And Shared wounded Coriantumr in his thigh, that he did not go to battle again for the space of two years, in which time all the people upon the face of the land were shedding blood, and there was none to restrain them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	Shared	Shared	PROPN	_	_	3	nsubj	_	_
@@ -17293,7 +17284,7 @@
 46	them	they	PRON	_	_	45	obj	_	_
 47	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 467
+# sent_id = 464
 # text = And now there began to be a great curse upon all the land because of the iniquity of the people, in which, if a man should lay his tool or his sword upon his shelf, or upon the place whither he would keep it, behold, upon the morrow, he could not find it, so great was the curse upon the land.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -17365,7 +17356,7 @@
 68	land	land	NOUN	_	_	65	nmod	_	_
 69	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 468
+# sent_id = 465
 # text = Wherefore every man did cleave unto that which was his own, with his hands, and would not borrow neither would he lend; and every man kept the hilt of his sword in his right hand, in the defence of his property and his own life and of his wives and children.
 1	Wherefore	so	ADV	_	_	5	advmod	_	_
 2	every	every	DET	_	_	3	det	_	_
@@ -17424,7 +17415,7 @@
 55	children	child	NOUN	_	_	53	conj	_	_
 56	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 469
+# sent_id = 466
 # text = And now, after the space of two years, and after the death of Shared, behold, there arose the brother of Shared and he gave battle unto Coriantumr, in which Coriantumr did beat him and did pursue him to the wilderness of Akish.
 1	And	and	CCONJ	_	_	21	cc	_	_
 2	now	now	ADV	_	_	21	advmod	_	_
@@ -17475,7 +17466,7 @@
 47	Akish	Akish	PROPN	_	_	45	nmod	_	_
 48	.	.	PUNCT	_	_	21	punct	_	_
 
-# sent_id = 470
+# sent_id = 467
 # text = And it came to pass that the brother of Shared did give battle unto him in the wilderness of Akish; and the battle became exceedingly sore, and many thousands fell by the sword.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17514,7 +17505,7 @@
 35	sword	sword	NOUN	_	_	32	obl	_	_
 36	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 471
+# sent_id = 468
 # text = And it came to pass that Coriantumr did lay siege to the wilderness; and the brother of Shared did march forth out of the wilderness by night, and slew a part of the army of Coriantumr, as they were drunken.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17561,7 +17552,7 @@
 43	drunken	drunken	ADJ	_	_	31	advcl	_	_
 44	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 472
+# sent_id = 469
 # text = And he came forth to the land of Moron, and placed himself upon the throne of Coriantumr.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -17583,7 +17574,7 @@
 18	Coriantumr	Coriantumr	PROPN	_	_	16	nmod	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 473
+# sent_id = 470
 # text = And it came to pass that Coriantumr dwelt with his army in the wilderness for the space of two years, in which he did receive great strength to his army.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17618,7 +17609,7 @@
 31	army	army	NOUN	_	_	26	obl	_	_
 32	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 474
+# sent_id = 471
 # text = Now the brother of Shared, whose name was Gilead, also received great strength to his army, because of secret combinations.
 1	Now	now	ADV	_	_	13	advmod	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -17645,7 +17636,7 @@
 23	combinations	combination	NOUN	_	_	13	obl	_	_
 24	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 475
+# sent_id = 472
 # text = And it came to pass that his high priest murdered him as he sat upon his throne.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17666,7 +17657,7 @@
 17	throne	throne	NOUN	_	_	14	obl	_	_
 18	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 476
+# sent_id = 473
 # text = And it came to pass that one of the secret combinations murdered him in a secret pass, and obtained unto himself the kingdom; and his name was Lib; and Lib was a man of great stature, more than any other man among all the people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17719,7 +17710,7 @@
 49	people	person	NOUN	_	_	45	nmod	_	_
 50	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 477
+# sent_id = 474
 # text = And it came to pass that in the first year of Lib, Coriantumr came up unto the land of Moron, and gave battle unto Lib.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17750,7 +17741,7 @@
 27	Lib	Lib	PROPN	_	_	24	obl	_	_
 28	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 478
+# sent_id = 475
 # text = And it came to pass that he fought with Lib, in which Lib did smite upon his arm that he was wounded; nevertheless, the army of Coriantumr did press forward upon Lib, that he fled to the borders upon the seashore.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17799,7 +17790,7 @@
 45	seashore	seashore	NOUN	_	_	39	obl	_	_
 46	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 479
+# sent_id = 476
 # text = And it came to pass that Coriantumr pursued him; and Lib gave battle unto him upon the seashore.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17822,7 +17813,7 @@
 19	seashore	seashore	NOUN	_	_	13	obl	_	_
 20	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 480
+# sent_id = 477
 # text = And it came to pass that Lib did smite the army of Coriantumr, that they fled again to the wilderness of Akish.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17849,7 +17840,7 @@
 23	Akish	Akish	PROPN	_	_	21	nmod	_	_
 24	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 481
+# sent_id = 478
 # text = And it came to pass that Lib did pursue him until he came to the plains of Agosh.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -17871,7 +17862,7 @@
 18	Agosh	Agosh	PROPN	_	_	16	nmod	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 482
+# sent_id = 479
 # text = And Coriantumr had taken all the people with him as he fled before Lib in that quarter of the land whither he fled.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	Coriantumr	Coriantumr	PROPN	_	_	4	nsubj	_	_
@@ -17898,7 +17889,7 @@
 23	fled	flead	VERB	_	_	20	acl:relcl	_	_
 24	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 483
+# sent_id = 480
 # text = And when he had come to the plains of Agosh he gave battle unto Lib, and he smote upon him until he died; nevertheless, the brother of Lib did come against Coriantumr in the stead thereof, and the battle became exceedingly sore, in the which Coriantumr fled again before the army of the brother of Lib.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -17963,7 +17954,7 @@
 61	Lib	Lib	PROPN	_	_	59	nmod	_	_
 62	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 484
+# sent_id = 481
 # text = Now the name of the brother of Lib was called Shiz.
 1	Now	now	ADV	_	_	10	advmod	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -17978,7 +17969,7 @@
 11	Shiz	Shiz	PROPN	_	_	10	xcomp	_	_
 12	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 485
+# sent_id = 482
 # text = And it came to pass that Shiz pursued after Coriantumr, and he did overthrow many cities, and he did slay both women and children, and he did burn the cities.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -18015,7 +18006,7 @@
 33	cities	city	NOUN	_	_	31	obj	_	_
 34	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 486
+# sent_id = 483
 # text = And there went a fear of Shiz throughout all the land; yea, a cry went forth throughout the land--Who can stand before the army of Shiz?
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -18049,7 +18040,7 @@
 30	Shiz	Shiz	PROPN	_	_	28	nmod	_	_
 31	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 487
+# sent_id = 484
 # text = Behold, he sweepeth the earth before him!
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -18061,7 +18052,7 @@
 8	him	he	PRON	_	_	4	obl	_	_
 9	!	!	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 488
+# sent_id = 485
 # text = And it came to pass that the people began to flock together in armies, throughout all the face of the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -18087,7 +18078,7 @@
 22	land	land	NOUN	_	_	19	nmod	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 489
+# sent_id = 486
 # text = And they were divided; and a part of them fled to the army of Shiz, and a part of them fled to the army of Coriantumr.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj:pass	_	_
@@ -18119,7 +18110,7 @@
 28	Coriantumr	Coriantumr	PROPN	_	_	26	nmod	_	_
 29	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 490
+# sent_id = 487
 # text = And so great and lasting had been the war, and so long had been the scene of bloodshed and carnage, that the whole face of the land was covered with the bodies of the dead.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	so	so	ADV	_	_	3	advmod	_	_
@@ -18160,7 +18151,7 @@
 37	dead	dead	ADJ	_	_	34	nmod	_	_
 38	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 491
+# sent_id = 488
 # text = And so swift and speedy was the war that there was none left to bury the dead, but they did march forth from the shedding of blood to the shedding of blood, leaving the bodies of both men, women, and children strewed upon the face of the land, to become a prey to the worms of the flesh.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	so	so	ADV	_	_	3	advmod	_	_
@@ -18227,7 +18218,7 @@
 63	flesh	flesh	NOUN	_	_	60	nmod	_	_
 64	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 492
+# sent_id = 489
 # text = And the scent thereof went forth upon the face of the land, even upon all the face of the land; wherefore the people became troubled by day and by night, because of the scent thereof.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -18269,12 +18260,12 @@
 38	thereof	thereof	ADV	_	_	37	advmod	_	_
 39	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 493
+# sent_id = 490
 # text = Nevertheless,
 1	Nevertheless	nevertheless	ADV	_	_	0	root	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 494
+# sent_id = 491
 # text = Shiz did not cease to pursue Coriantumr; for he had sworn to avenge himself upon Coriantumr of the blood of his brother, who had been slain, and the word of the Lord which came to Ether that Coriantumr should not fall by the sword.
 1	Shiz	Shiz	PROPN	_	_	4	nsubj	_	_
 2	did	do	AUX	_	_	4	aux	_	_
@@ -18325,7 +18316,7 @@
 47	sword	sword	NOUN	_	_	44	obl	_	_
 48	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 495
+# sent_id = 492
 # text = And thus we see that the Lord did visit them in the fulness of his wrath, and their wickedness and abominations had prepared a way for their everlasting destruction.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	thus	thus	ADV	_	_	4	advmod	_	_
@@ -18359,7 +18350,7 @@
 30	destruction	destruction	NOUN	_	_	26	nmod	_	_
 31	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 496
+# sent_id = 493
 # text = And it came to pass that Shiz did pursue Coriantumr eastward, even to the borders by the seashore, and there he gave battle unto Shiz for the space of three days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -18396,7 +18387,7 @@
 33	days	day	NOUN	_	_	30	nmod	_	_
 34	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 497
+# sent_id = 494
 # text = And so terrible was the destruction among the armies of Shiz that the people began to be frightened, and began to flee before the armies of Coriantumr; and they fled to the land of Corihor, and swept off the inhabitants before them, all them that would not join them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	so	so	ADV	_	_	3	advmod	_	_
@@ -18453,7 +18444,7 @@
 53	them	they	PRON	_	_	52	obj	_	_
 54	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 498
+# sent_id = 495
 # text = And they pitched their tents in the valley of Corihor; and Coriantumr pitched his tents in the valley of Shurr.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -18478,7 +18469,7 @@
 21	Shurr	Shurr	PROPN	_	_	19	nmod	_	_
 22	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 499
+# sent_id = 496
 # text = Now the valley of Shurr was near the hill Comnor; wherefore, Coriantumr did gather his armies together upon the hill Comnor, and did sound a trumpet unto the armies of Shiz to invite them forth to battle.
 1	Now	now	ADV	_	_	9	advmod	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -18522,7 +18513,7 @@
 40	battle	battle	VERB	_	_	36	advcl	_	_
 41	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 500
+# sent_id = 497
 # text = And it came to pass that they came forth, but were driven again; and they came the second time, and they were driven again the second time.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -18556,7 +18547,7 @@
 30	time	time	NOUN	_	_	26	obl:unmarked	_	_
 31	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 501
+# sent_id = 498
 # text = And it came to pass that they came again the third time, and the battle became exceedingly sore.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -18579,7 +18570,7 @@
 19	sore	sore	ADJ	_	_	17	xcomp	_	_
 20	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 502
+# sent_id = 499
 # text = And it came to pass that Shiz smote upon Coriantumr that he gave him many deep wounds; and Coriantumr, having lost his blood, fainted, and was carried away as though he were dead.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -18620,7 +18611,7 @@
 37	dead	dead	ADJ	_	_	31	advcl	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 503
+# sent_id = 500
 # text = Now the loss of men, women and children on both sides was so great that Shiz commanded his people that they should not pursue the armies of Coriantumr; wherefore, they returned to their camp.
 1	Now	now	ADV	_	_	15	advmod	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -18661,7 +18652,7 @@
 37	camp	camp	NOUN	_	_	34	obl	_	_
 38	.	.	PUNCT	_	_	15	punct	_	_
 
-# sent_id = 504
+# sent_id = 501
 # text = And it came to pass when Coriantumr had recovered of his wounds, he began to remember the words which Ether had spoken unto him.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	nsubj	_	_
@@ -18690,7 +18681,7 @@
 25	him	he	PRON	_	_	23	obl	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 505
+# sent_id = 502
 # text = He saw that there had been slain by the sword already nearly two millions of his people, and he began to sorrow in his heart; yea, there had been slain two millions of mighty men, and also their wives and their children.
 1	He	he	PRON	_	_	2	nsubj	_	_
 2	saw	see	VERB	_	_	0	root	_	_
@@ -18740,7 +18731,7 @@
 46	children	child	NOUN	_	_	43	conj	_	_
 47	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 506
+# sent_id = 503
 # text = He began to repent of the evil which he had done; he began to remember the words which had been spoken by the mouth of all the prophets, and he saw them that they were fulfilled thus far, every whit; and his soul mourned and refused to be comforted.
 1	He	he	PRON	_	_	2	nsubj	_	_
 2	began	begin	VERB	_	_	0	root	_	_
@@ -18797,7 +18788,7 @@
 53	comforted	comfort	VERB	_	_	50	xcomp	_	_
 54	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 507
+# sent_id = 504
 # text = And it came to pass that he wrote an epistle unto Shiz, desiring him that he would spare the people, and he would give up the kingdom for the sake of the lives of the people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -18839,7 +18830,7 @@
 38	people	person	NOUN	_	_	35	nmod	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 508
+# sent_id = 505
 # text = And it came to pass that when Shiz had received his epistle he wrote an epistle unto Coriantumr, that if he would give himself up, that he might slay him with his own sword, that he would spare the lives of the people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -18889,7 +18880,7 @@
 46	people	person	NOUN	_	_	43	nmod	_	_
 47	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 509
+# sent_id = 506
 # text = And it came to pass that the people repented not of their iniquity; and the people of Coriantumr were stirred up to anger against the people of Shiz; and the people of Shiz were stirred up to anger against the people of Coriantumr; wherefore, the people of Shiz did give battle unto the people of Coriantumr.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -18953,7 +18944,7 @@
 60	Coriantumr	Coriantumr	PROPN	_	_	58	nmod	_	_
 61	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 510
+# sent_id = 507
 # text = And when Coriantumr saw that he was about to fall he fled again before the people of Shiz.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	when	when	ADV	_	_	4	advmod	_	_
@@ -18975,7 +18966,7 @@
 18	Shiz	Shiz	PROPN	_	_	16	nmod	_	_
 19	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 511
+# sent_id = 508
 # text = And it came to pass that he came to the waters of Ripliancum, which, by interpretation, is large, or to exceed all; wherefore, when they came to these waters they pitched their tents; and Shiz also pitched his tents near unto them; and therefore on the morrow they did come to battle.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19039,7 +19030,7 @@
 60	battle	battle	VERB	_	_	58	xcomp	_	_
 61	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 512
+# sent_id = 509
 # text = And it came to pass that they fought an exceedingly sore battle, in which Coriantumr was wounded again, and he fainted with the loss of blood.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19071,7 +19062,7 @@
 28	blood	blood	NOUN	_	_	26	nmod	_	_
 29	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 513
+# sent_id = 510
 # text = And it came to pass that the armies of Coriantumr did press upon the armies of Shiz that they beat them, that they caused them to flee before them; and they did flee southward, and did pitch their tents in a place which was called Ogath.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19124,7 +19115,7 @@
 49	Ogath	Ogath	PROPN	_	_	48	xcomp	_	_
 50	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 514
+# sent_id = 511
 # text = And it came to pass that the army of Coriantumr did pitch their tents by the hill Ramah; and it was that same hill where my father Mormon did hide up the records unto the Lord, which were sacred.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19169,7 +19160,7 @@
 41	sacred	sacred	ADJ	_	_	37	acl:relcl	_	_
 42	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 515
+# sent_id = 512
 # text = And it came to pass that they did gather together all the people upon all the face of the land, who had not been slain, save it was Ether.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19204,7 +19195,7 @@
 31	Ether	Ether	PROPN	_	_	26	conj	_	_
 32	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 516
+# sent_id = 513
 # text = And it came to pass that Ether did behold all the doings of the people; and he beheld that the people who were for Coriantumr were gathered together to the army of Coriantumr; and the people who were for Shiz were gathered together to the army of Shiz.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19258,7 +19249,7 @@
 50	Shiz	Shiz	PROPN	_	_	48	nmod	_	_
 51	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 517
+# sent_id = 514
 # text = Wherefore, they were for the space of four years gathering together the people, that they might get all who were upon the face of the land, and that they might receive all the strength which it was possible that they could receive.
 1	Wherefore	so	ADV	_	_	7	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -19307,7 +19298,7 @@
 45	receive	receive	VERB	_	_	41	ccomp	_	_
 46	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 518
+# sent_id = 515
 # text = And it came to pass that when they were all gathered together, every one to the army which he would, with their wives and their children--both men, women and children being armed with weapons of war, having shields, and breastplates, and head-plates, and being clothed after the manner of war--they did march forth one against another to battle; and they fought all that day, and conquered not.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19393,7 +19384,7 @@
 82	not	not	PART	_	_	81	advmod	_	_
 83	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 519
+# sent_id = 516
 # text = And it came to pass that when it was night they were weary, and retired to their camps; and after they had retired to their camps they took up a howling and a lamentation for the loss of the slain of their people; and so great were their cries, their howlings and lamentations, that they did rend the air exceedingly.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19462,7 +19453,7 @@
 65	exceedingly	exceedingly	ADV	_	_	62	advmod	_	_
 66	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 520
+# sent_id = 517
 # text = And it came to pass that on the morrow they did go again to battle, and great and terrible was that day; nevertheless, they conquered not, and when the night came again they did rend the air with their cries, and their howlings, and their mournings, for the loss of the slain of their people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19528,7 +19519,7 @@
 62	people	person	NOUN	_	_	59	nmod	_	_
 63	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 521
+# sent_id = 518
 # text = And it came to pass that Coriantumr wrote again an epistle unto Shiz, desiring that he would not come again to battle, but that he would take the kingdom, and spare the lives of the people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19571,7 +19562,7 @@
 39	people	person	NOUN	_	_	36	nmod	_	_
 40	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 522
+# sent_id = 519
 # text = But behold, the Spirit of the Lord had ceased striving with them, and Satan had full power over the hearts of the people; for they were given up unto the hardness of their hearts, and the blindness of their minds that they might be destroyed; wherefore they went again to battle.
 1	But	but	CCONJ	_	_	10	cc	_	_
 2	behold	behold	INTJ	_	_	10	discourse	_	_
@@ -19631,7 +19622,7 @@
 56	battle	battle	VERB	_	_	53	advcl	_	_
 57	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 523
+# sent_id = 520
 # text = And it came to pass that they fought all that day, and when the night came they slept upon their swords.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19657,7 +19648,7 @@
 22	swords	sword	NOUN	_	_	19	obl	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 524
+# sent_id = 521
 # text = And on the morrow they fought even until the night came.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	on	on	ADP	_	_	4	case	_	_
@@ -19672,7 +19663,7 @@
 11	came	come	VERB	_	_	6	advcl	_	_
 12	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 525
+# sent_id = 522
 # text = And when the night came they were drunken with anger, even as a man who is drunken with wine; and they slept again upon their swords.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -19704,7 +19695,7 @@
 28	swords	sword	NOUN	_	_	24	obl	_	_
 29	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 526
+# sent_id = 523
 # text = And on the morrow they fought again; and when the night came they had all fallen by the sword save it were fifty and two of the people of Coriantumr, and sixty and nine of the people of Shiz.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	on	on	ADP	_	_	4	case	_	_
@@ -19749,7 +19740,7 @@
 41	Shiz	Shiz	PROPN	_	_	39	nmod	_	_
 42	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 527
+# sent_id = 524
 # text = And it came to pass that they slept upon their swords that night, and on the morrow they fought again, and they contended in their might with their swords and with their shields, all that day.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19792,7 +19783,7 @@
 39	day	day	NOUN	_	_	25	obl:unmarked	_	_
 40	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 528
+# sent_id = 525
 # text = And when the night came there were thirty and two of the people of Shiz, and twenty and seven of the people of Coriantumr.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -19821,7 +19812,7 @@
 25	Coriantumr	Coriantumr	PROPN	_	_	23	nmod	_	_
 26	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 529
+# sent_id = 526
 # text = And it came to pass that they ate and slept, and prepared for death on the morrow.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19843,7 +19834,7 @@
 18	morrow	morrow	NOUN	_	_	13	obl	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 530
+# sent_id = 527
 # text = And they were large and mighty men as to the strength of men.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	they	they	PRON	_	_	7	nsubj	_	_
@@ -19860,7 +19851,7 @@
 13	men	man	NOUN	_	_	11	nmod	_	_
 14	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 531
+# sent_id = 528
 # text = And it came to pass that they fought for the space of three hours, and they fainted with the loss of blood.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19887,7 +19878,7 @@
 23	blood	blood	NOUN	_	_	21	nmod	_	_
 24	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 532
+# sent_id = 529
 # text = And it came to pass that when the men of Coriantumr had received sufficient strength that they could walk, they were about to flee for their lives; but behold, Shiz arose, and also his men, and he swore in his wrath that he would slay Coriantumr or he would perish by the sword.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -19949,7 +19940,7 @@
 58	sword	sword	NOUN	_	_	55	obl	_	_
 59	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 533
+# sent_id = 530
 # text = Wherefore, he did pursue them, and on the morrow he did overtake them; and they fought again with the sword.
 1	Wherefore	so	ADV	_	_	5	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -19976,7 +19967,7 @@
 23	sword	sword	NOUN	_	_	19	obl	_	_
 24	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 534
+# sent_id = 531
 # text = And it came to pass that when they had all fallen by the sword, save it were Coriantumr and Shiz, behold Shiz had fainted with the loss of blood.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -20011,7 +20002,7 @@
 31	blood	blood	NOUN	_	_	29	nmod	_	_
 32	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 535
+# sent_id = 532
 # text = And it came to pass that when Coriantumr had leaned upon his sword, that he rested a little, he smote off the head of Shiz.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -20042,7 +20033,7 @@
 27	Shiz	Shiz	PROPN	_	_	25	nmod	_	_
 28	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 536
+# sent_id = 533
 # text = And it came to pass that after he had smitten off the head of Shiz, that Shiz raised up on his hands and fell; and after that he had struggled for breath, he died.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -20083,7 +20074,7 @@
 37	died	die	VERB	_	_	19	conj	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 537
+# sent_id = 534
 # text = And it came to pass that Coriantumr fell to the earth, and became as if he had no life.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -20107,7 +20098,7 @@
 20	life	life	NOUN	_	_	18	obj	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 538
+# sent_id = 535
 # text = And the Lord spake unto Ether, and said unto him: Go forth.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -20125,7 +20116,7 @@
 14	forth	forth	ADV	_	_	13	advmod	_	_
 15	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 539
+# sent_id = 536
 # text = And he went forth, and beheld that the words of the Lord had all been fulfilled; and he finished his record; (and the hundredth part I have not written) and he hid them in a manner that the people of Limhi did find them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -20178,7 +20169,7 @@
 49	them	they	PRON	_	_	48	obj	_	_
 50	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 540
+# sent_id = 537
 # text = Now the last words which are written by Ether are these:
 1	Now	now	ADV	_	_	11	advmod	_	_
 2	the	the	DET	_	_	4	det	_	_
@@ -20193,7 +20184,7 @@
 11	these	this	PRON	_	_	0	root	_	_
 12	:	:	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 541
+# sent_id = 538
 # text = Whether the Lord will that I be translated, or that I suffer the will of the Lord in the flesh, it mattereth not, if it so be that I am saved in the kingdom of God.
 1	Whether	whether	SCONJ	_	_	8	mark	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -20236,7 +20227,7 @@
 39	God	God	PROPN	_	_	37	nmod	_	_
 40	.	.	PUNCT	_	_	24	punct	_	_
 
-# sent_id = 542
+# sent_id = 539
 # text = Amen.
 1	Amen	amen	INTJ	_	_	0	root	_	_
 2	.	.	PUNCT	_	_	1	punct	_	_

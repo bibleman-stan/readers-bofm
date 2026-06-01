@@ -20758,7 +20758,7 @@
 37	.	.	PUNCT	_	_	6	punct	_	_
 
 # sent_id = 513
-# text = And in the days of your poverty ye shall cry unto the Lord; and in vain shall ye cry, for your desolation is already come upon you, and your destruction is made sure; and then shall ye weep and howl in that day, saith the Lord of Hosts.
+# text = And in the days of your poverty ye shall cry unto the Lord; and in vain shall ye cry, for your desolation is already come upon you, and your destruction is made sure; and then shall ye weep and howl in that day, saith the Lord of Hosts. And then shall ye lament, and say:
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	in	in	ADP	_	_	4	case	_	_
 3	the	the	DET	_	_	4	det	_	_
@@ -20813,20 +20813,17 @@
 52	of	of	ADP	_	_	53	case	_	_
 53	Hosts	Host	PROPN	_	_	51	nmod	_	_
 54	.	.	PUNCT	_	_	10	punct	_	_
+55	And	and	CCONJ	_	_	59	cc	_	_
+56	then	then	ADV	_	_	59	advmod	_	_
+57	shall	shall	AUX	_	_	59	aux	_	_
+58	ye	you	PRON	_	_	59	nsubj	_	_
+59	lament	lament	VERB	_	_	10	conj	_	_
+60	,	,	PUNCT	_	_	62	punct	_	_
+61	and	and	CCONJ	_	_	62	cc	_	_
+62	say	say	VERB	_	_	59	conj	_	_
+63	:	:	PUNCT	_	_	59	punct	_	_
 
 # sent_id = 514
-# text = And then shall ye lament, and say:
-1	And	and	CCONJ	_	_	5	cc	_	_
-2	then	then	ADV	_	_	5	advmod	_	_
-3	shall	shall	AUX	_	_	5	aux	_	_
-4	ye	you	PRON	_	_	5	nsubj	_	_
-5	lament	lament	VERB	_	_	0	root	_	_
-6	,	,	PUNCT	_	_	8	punct	_	_
-7	and	and	CCONJ	_	_	8	cc	_	_
-8	say	say	VERB	_	_	5	conj	_	_
-9	:	:	PUNCT	_	_	5	punct	_	_
-
-# sent_id = 515
 # text = O that I had repented, and had not killed the prophets, and stoned them, and cast them out.
 1	O	o	INTJ	_	_	5	discourse	_	_
 2	that	that	PRON	_	_	5	obj	_	_
@@ -20851,7 +20848,7 @@
 21	out	out	ADP	_	_	19	compound:prt	_	_
 22	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 516
+# sent_id = 515
 # text = Yea, in that day ye shall say: O that we had remembered the Lord our God in the day that he gave us our riches, and then they would not have become slippery that we should lose them; for behold, our riches are gone from us.
 1	Yea	yes	INTJ	_	_	8	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -20906,7 +20903,7 @@
 51	us	we	PRON	_	_	49	obl	_	_
 52	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 517
+# sent_id = 516
 # text = Behold, we lay a tool here and on the morrow it is gone; and behold, our swords are taken from us in the day we have sought them for battle.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -20943,7 +20940,7 @@
 33	battle	battle	NOUN	_	_	30	obl	_	_
 34	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 518
+# sent_id = 517
 # text = Yea, we have hid up our treasures and they have slipped away from us, because of the curse of the land.
 1	Yea	yes	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -20970,7 +20967,7 @@
 23	land	land	NOUN	_	_	20	nmod	_	_
 24	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 519
+# sent_id = 518
 # text = O that we had repented in the day that the word of the Lord came unto us; for behold the land is cursed, and all things are become slippery, and we cannot hold them.
 1	O	o	INTJ	_	_	5	discourse	_	_
 2	that	that	PRON	_	_	5	obj	_	_
@@ -21012,7 +21009,7 @@
 38	them	they	PRON	_	_	37	obj	_	_
 39	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 520
+# sent_id = 519
 # text = Behold, we are surrounded by demons, yea, we are encircled about by the angels of him who hath sought to destroy our souls.
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -21042,7 +21039,7 @@
 26	souls	soul	NOUN	_	_	24	obj	_	_
 27	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 521
+# sent_id = 520
 # text = Behold, our iniquities are great.
 1	Behold	behold	INTJ	_	_	6	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -21052,7 +21049,7 @@
 6	great	great	ADJ	_	_	0	root	_	_
 7	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 522
+# sent_id = 521
 # text = O Lord, canst thou not turn away thine anger from us?
 1	O	o	PROPN	_	_	7	vocative	_	_
 2	Lord	Lord	PROPN	_	_	1	flat	_	_
@@ -21068,7 +21065,7 @@
 12	us	we	PRON	_	_	7	obl	_	_
 13	?	?	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 523
+# sent_id = 522
 # text = And this shall be your language in those days.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	this	this	PRON	_	_	6	nsubj	_	_
@@ -21081,7 +21078,7 @@
 9	days	day	NOUN	_	_	6	obl	_	_
 10	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 524
+# sent_id = 523
 # text = But behold, your days of probation are past; ye have procrastinated the day of your salvation until it is everlastingly too late, and your destruction is made sure; yea, for ye have sought all the days of your lives for that which ye could not obtain; and ye have sought for happiness in doing iniquity, which thing is contrary to the nature of that righteousness which is in our great and Eternal Head.
 1	But	but	CCONJ	_	_	9	cc	_	_
 2	behold	behold	INTJ	_	_	9	discourse	_	_
@@ -21165,7 +21162,7 @@
 80	Head	head	PROPN	_	_	72	acl:relcl	_	_
 81	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 525
+# sent_id = 524
 # text = O ye people of the land, that ye would hear my words!
 1	O	o	VERB	_	_	0	root	_	_
 2	ye	you	PRON	_	_	1	iobj	_	_
@@ -21182,7 +21179,7 @@
 13	words	word	NOUN	_	_	11	obj	_	_
 14	!	!	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 526
+# sent_id = 525
 # text = And I pray that the anger of the Lord be turned away from you, and that ye would repent and be saved.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -21209,7 +21206,7 @@
 23	saved	save	VERB	_	_	20	conj	_	_
 24	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 527
+# sent_id = 526
 # text = And now it came to pass that Samuel, the Lamanite, did prophesy a great many more things which cannot be written.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -21237,7 +21234,7 @@
 24	written	write	VERB	_	_	19	acl:relcl	_	_
 25	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 528
+# sent_id = 527
 # text = And behold, he said unto them: Behold, I give unto you a sign; for five years more cometh, and behold, then cometh the Son of God to redeem all those who shall believe on his name.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	behold	behold	INTJ	_	_	5	discourse	_	_
@@ -21283,7 +21280,7 @@
 42	name	name	NOUN	_	_	39	obl	_	_
 43	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 529
+# sent_id = 528
 # text = And behold, this will I give unto you for a sign at the time of his coming; for behold, there shall be great lights in heaven, insomuch that in the night before he cometh there shall be no darkness, insomuch that it shall appear unto man as if it was day.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	behold	behold	INTJ	_	_	7	discourse	_	_
@@ -21343,7 +21340,7 @@
 56	day	day	NOUN	_	_	49	advcl	_	_
 57	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 530
+# sent_id = 529
 # text = Therefore, there shall be one day and a night and a day, as if it were one day and there were no night; and this shall be unto you for a sign; for ye shall know of the rising of the sun and also of its setting; therefore they shall know of a surety that there shall be two days and a night; nevertheless the night shall not be darkened; and it shall be the night before he is born.
 1	Therefore	therefore	ADV	_	_	5	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -21434,7 +21431,7 @@
 87	born	bear	VERB	_	_	83	advcl	_	_
 88	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 531
+# sent_id = 530
 # text = And behold, there shall a new star arise, such an one as ye never have beheld; and this also shall be a sign unto you.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	behold	behold	INTJ	_	_	9	discourse	_	_
@@ -21466,7 +21463,7 @@
 28	you	you	PRON	_	_	26	nmod	_	_
 29	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 532
+# sent_id = 531
 # text = And behold this is not all, there shall be many signs and wonders in heaven.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	behold	behold	INTJ	_	_	6	discourse	_	_
@@ -21486,7 +21483,7 @@
 16	heaven	heaven	NOUN	_	_	12	nmod	_	_
 17	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 533
+# sent_id = 532
 # text = And it shall come to pass that ye shall all be amazed, and wonder, insomuch that ye shall fall to the earth.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	it	it	PRON	_	_	4	nsubj	_	_
@@ -21514,7 +21511,7 @@
 24	earth	earth	NOUN	_	_	21	obl	_	_
 25	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 534
+# sent_id = 533
 # text = And it shall come to pass that whosoever shall believe on the Son of God, the same shall have everlasting life.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	it	it	PRON	_	_	4	nsubj	_	_
@@ -21540,7 +21537,7 @@
 22	life	life	NOUN	_	_	20	obj	_	_
 23	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 535
+# sent_id = 534
 # text = And behold, thus hath the Lord commanded me, by his angel, that I should come and tell this thing unto you; yea, he hath commanded that I should prophesy these things unto you; yea, he hath said unto me: Cry unto this people, repent and prepare the way of the Lord.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	behold	behold	INTJ	_	_	8	discourse	_	_
@@ -21604,7 +21601,7 @@
 60	Lord	Lord	PROPN	_	_	57	nmod	_	_
 61	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 536
+# sent_id = 535
 # text = And now, because I am a Lamanite, and have spoken unto you the words which the Lord hath commanded me, and because it was hard against you, ye are angry with me and do seek to destroy me, and have cast me out from among you.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	now	now	ADV	_	_	8	advmod	_	_
@@ -21659,7 +21656,7 @@
 51	you	you	PRON	_	_	46	obl	_	_
 52	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 537
+# sent_id = 536
 # text = And ye shall hear my words, for, for this intent have I come up upon the walls of this city, that ye might hear and know of the judgments of God which do await you because of your iniquities, and also that ye might know the conditions of repentance;
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	ye	you	PRON	_	_	4	nsubj	_	_
@@ -21716,7 +21713,7 @@
 53	repentance	repentance	NOUN	_	_	51	nmod	_	_
 54	;	;	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 538
+# sent_id = 537
 # text = And also that ye might know of the coming of Jesus Christ, the Son of God, the Father of heaven and of earth, the Creator of all things from the beginning; and that ye might know of the signs of his coming, to the intent that ye might believe on his name.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	also	also	ADV	_	_	6	advmod	_	_
@@ -21777,7 +21774,7 @@
 57	name	name	NOUN	_	_	54	obl	_	_
 58	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 539
+# sent_id = 538
 # text = And if ye believe on his name ye will repent of all your sins, that thereby ye may have a remission of them through his merits.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	if	if	SCONJ	_	_	4	mark	_	_
@@ -21808,7 +21805,7 @@
 27	merits	merit	NOUN	_	_	20	obl	_	_
 28	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 540
+# sent_id = 539
 # text = And behold, again, another sign I give unto you, yea, a sign of his death.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	behold	behold	INTJ	_	_	7	discourse	_	_
@@ -21831,7 +21828,7 @@
 19	death	death	NOUN	_	_	16	nmod	_	_
 20	.	.	PUNCT	_	_	16	punct	_	_
 
-# sent_id = 541
+# sent_id = 540
 # text = For behold, he surely must die that salvation may come; yea, it behooveth him and becometh expedient that he dieth, to bring to pass the resurrection of the dead, that thereby men may be brought into the presence of the Lord.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	7	obl	_	_
@@ -21881,7 +21878,7 @@
 46	Lord	Lord	PROPN	_	_	43	nmod	_	_
 47	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 542
+# sent_id = 541
 # text = Yea, behold, this death bringeth to pass the resurrection, and redeemeth all mankind from the first death--that spiritual death; for all mankind, by the fall of Adam being cut off from the presence of the Lord, are considered as dead, both as to things temporal and to things spiritual.
 1	Yea	yes	INTJ	_	_	7	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -21943,7 +21940,7 @@
 58	spiritual	spiritual	ADJ	_	_	57	amod	_	_
 59	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 543
+# sent_id = 542
 # text = But behold, the resurrection of Christ redeemeth mankind, yea, even all mankind, and bringeth them back into the presence of the Lord.
 1	But	but	CCONJ	_	_	8	cc	_	_
 2	behold	behold	INTJ	_	_	8	discourse	_	_
@@ -21973,7 +21970,7 @@
 26	Lord	Lord	PROPN	_	_	23	nmod	_	_
 27	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 544
+# sent_id = 543
 # text = Yea, and it bringeth to pass the condition of repentance, that whosoever repenteth the same is not hewn down and cast into the fire; but whosoever repenteth not is hewn down and cast into the fire; and there cometh upon them again a spiritual death, yea, a second death, for they are cut off again as to things pertaining to righteousness.
 1	Yea	yes	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -22045,7 +22042,7 @@
 68	righteousness	righteousness	NOUN	_	_	66	obl	_	_
 69	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 545
+# sent_id = 544
 # text = Therefore repent ye, repent ye, lest by knowing these things and not doing them ye shall suffer yourselves to come under condemnation, and ye are brought down unto this second death.
 1	Therefore	therefore	ADV	_	_	2	advmod	_	_
 2	repent	repent	VERB	_	_	0	root	_	_
@@ -22083,7 +22080,7 @@
 34	death	death	NOUN	_	_	29	obl	_	_
 35	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 546
+# sent_id = 545
 # text = But behold, as I said unto you concerning another sign, a sign of his death, behold, in that day that he shall suffer death the sun shall be darkened and refuse to give his light unto you; and also the moon and the stars; and there shall be no light upon the face of this land, even from the time that he shall suffer death, for the space of three days, to the time that he shall rise again from the dead.
 1	But	but	CCONJ	_	_	33	cc	_	_
 2	behold	behold	INTJ	_	_	33	discourse	_	_
@@ -22178,7 +22175,7 @@
 91	dead	dead	ADJ	_	_	87	obl	_	_
 92	.	.	PUNCT	_	_	33	punct	_	_
 
-# sent_id = 547
+# sent_id = 546
 # text = Yea, at the time that he shall yield up the ghost there shall be thunderings and lightnings for the space of many hours, and the earth shall shake and tremble; and the rocks which are upon the face of this earth, which are both above the earth and beneath, which ye know at this time are solid, or the more part of it is one solid mass, shall be broken up;
 1	Yea	yes	INTJ	_	_	16	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -22260,7 +22257,7 @@
 78	up	up	ADP	_	_	77	compound:prt	_	_
 79	;	;	PUNCT	_	_	16	punct	_	_
 
-# sent_id = 548
+# sent_id = 547
 # text = Yea, they shall be rent in twain, and shall ever after be found in seams and in cracks, and in broken fragments upon the face of the whole earth, yea, both above the earth and beneath.
 1	Yea	yes	INTJ	_	_	6	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -22305,7 +22302,7 @@
 41	beneath	beneath	ADV	_	_	39	conj	_	_
 42	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 549
+# sent_id = 548
 # text = And behold, there shall be great tempests, and there shall be many mountains laid low, like unto a valley, and there shall be many places which are now called valleys which shall become mountains, whose height is great.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	behold	behold	INTJ	_	_	8	discourse	_	_
@@ -22352,7 +22349,7 @@
 43	great	great	ADJ	_	_	38	acl:relcl	_	_
 44	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 550
+# sent_id = 549
 # text = And many highways shall be broken up, and many cities shall become desolate.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	many	many	ADJ	_	_	3	amod	_	_
@@ -22370,7 +22367,7 @@
 14	desolate	desolate	ADJ	_	_	13	xcomp	_	_
 15	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 551
+# sent_id = 550
 # text = And many graves shall be opened, and shall yield up many of their dead; and many saints shall appear unto many.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	many	many	ADJ	_	_	3	amod	_	_
@@ -22397,7 +22394,7 @@
 23	many	many	ADJ	_	_	21	obl	_	_
 24	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 552
+# sent_id = 551
 # text = And behold, thus hath the angel spoken unto me; for he said unto me that there should be thunderings and lightnings for the space of many hours.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	behold	behold	INTJ	_	_	8	discourse	_	_
@@ -22430,7 +22427,7 @@
 29	hours	hour	NOUN	_	_	26	nmod	_	_
 30	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 553
+# sent_id = 552
 # text = And he said unto me that while the thunder and the lightning lasted, and the tempest, that these things should be, and that darkness should cover the face of the whole earth for the space of three days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -22475,7 +22472,7 @@
 41	days	day	NOUN	_	_	38	nmod	_	_
 42	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 554
+# sent_id = 553
 # text = And the angel said unto me that many shall see greater things than these, to the intent that they might believe that these signs and these wonders should come to pass upon all the face of this land, to the intent that there should be no cause for unbelief among the children of men--
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -22536,7 +22533,7 @@
 57	-	-	PUNCT	_	_	4	punct	_	_
 58	-	-	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 555
+# sent_id = 554
 # text = And this to the intent that whosoever will believe might be saved, and that whosoever will not believe, a righteous judgment might come upon them; and also if they are condemned they bring upon themselves their own condemnation.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	this	this	PRON	_	_	12	nsubj:pass	_	_
@@ -22581,7 +22578,7 @@
 41	condemnation	condemnation	NOUN	_	_	36	obj	_	_
 42	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 556
+# sent_id = 555
 # text = And now remember, remember, my brethren, that whosoever perisheth, perisheth unto himself; and whosoever doeth iniquity, doeth it unto himself; for behold, ye are free; ye are permitted to act for yourselves; for behold, God hath given unto you a knowledge and he hath made you free.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	now	now	ADV	_	_	3	advmod	_	_
@@ -22643,7 +22640,7 @@
 58	free	free	ADJ	_	_	56	xcomp	_	_
 59	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 557
+# sent_id = 556
 # text = He hath given unto you that ye might know good from evil, and he hath given unto you that ye might choose life or death; and ye can do good and be restored unto that which is good, or have that which is good restored unto you; or ye can do evil, and have that which is evil restored unto you.
 1	He	he	PRON	_	_	3	nsubj	_	_
 2	hath	have	AUX	_	_	3	aux	_	_
@@ -22713,7 +22710,7 @@
 66	you	you	PRON	_	_	64	obl	_	_
 67	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 558
+# sent_id = 557
 # text = And now, my beloved brethren, behold, I declare unto you that except ye shall repent your houses shall be left unto you desolate.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	now	now	ADV	_	_	11	advmod	_	_
@@ -22743,7 +22740,7 @@
 26	desolate	desolate	ADJ	_	_	23	xcomp	_	_
 27	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 559
+# sent_id = 558
 # text = Yea, except ye repent, your women shall have great cause to mourn in the day that they shall give suck; for ye shall attempt to flee and there shall be no place for refuge; yea, and wo unto them which are with child, for they shall be heavy and cannot flee; therefore, they shall be trodden down and shall be left to perish.
 1	Yea	yes	INTJ	_	_	10	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -22819,7 +22816,7 @@
 72	perish	perish	VERB	_	_	70	xcomp	_	_
 73	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 560
+# sent_id = 559
 # text = Yea, wo unto this people who are called the people of Nephi except they shall repent, when they shall see all these signs and wonders which shall be showed unto them; for behold, they have been a chosen people of the Lord; yea, the people of Nephi hath he loved, and also hath he chastened them; yea, in the days of their iniquities hath he chastened them because he loveth them.
 1	Yea	yes	INTJ	_	_	3	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -22903,7 +22900,7 @@
 80	them	they	PRON	_	_	79	obj	_	_
 81	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 561
+# sent_id = 560
 # text = But behold my brethren, the Lamanites hath he hated because their deeds have been evil continually, and this because of the iniquity of the tradition of their fathers.
 1	But	but	CCONJ	_	_	2	cc	_	_
 2	behold	behold	VERB	_	_	0	root	_	_
@@ -22937,7 +22934,7 @@
 30	fathers	father	NOUN	_	_	27	nmod	_	_
 31	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 562
+# sent_id = 561
 # text = But behold, salvation hath come unto them through the preaching of the Nephites; and for this intent hath the Lord prolonged their days.
 1	But	but	CCONJ	_	_	6	cc	_	_
 2	behold	behold	INTJ	_	_	6	discourse	_	_
@@ -22966,7 +22963,7 @@
 25	days	day	NOUN	_	_	23	obj	_	_
 26	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 563
+# sent_id = 562
 # text = And I would that ye should behold that the more part of them are in the path of their duty, and they do walk circumspectly before God, and they do observe to keep his commandments and his statutes and his judgments according to the law of Moses.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -23019,7 +23016,7 @@
 49	Moses	Moses	PROPN	_	_	47	nmod	_	_
 50	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 564
+# sent_id = 563
 # text = Yea, I say unto you, that the more part of them are doing this, and they are striving with unwearied diligence that they may bring the remainder of their brethren to the knowledge of the truth; therefore there are many who do add to their numbers daily.
 1	Yea	yes	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -23074,7 +23071,7 @@
 51	daily	daily	ADV	_	_	47	advmod	_	_
 52	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 565
+# sent_id = 564
 # text = And behold, ye do know of yourselves, for ye have witnessed it, that as many of them as are brought to the knowledge of the truth, and to know of the wicked and abominable traditions of their fathers, and are led to believe the holy scriptures, yea, the prophecies of the holy prophets, which are written, which leadeth them to faith on the Lord, and unto repentance, which faith and repentance bringeth a change of heart unto them--
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	behold	behold	INTJ	_	_	6	discourse	_	_
@@ -23168,7 +23165,7 @@
 90	-	-	PUNCT	_	_	6	punct	_	_
 91	-	-	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 566
+# sent_id = 565
 # text = Therefore, as many as have come to this, ye know of yourselves are firm and steadfast in the faith, and in the thing wherewith they have been made free.
 1	Therefore	therefore	ADV	_	_	16	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -23204,7 +23201,7 @@
 32	free	free	ADJ	_	_	31	xcomp	_	_
 33	.	.	PUNCT	_	_	16	punct	_	_
 
-# sent_id = 567
+# sent_id = 566
 # text = And ye know also that they have buried their weapons of war, and they fear to take them up lest by any means they should sin; yea, ye can see that they fear to sin--for behold they will suffer themselves that they be trodden down and slain by their enemies, and will not lift their swords against them, and this because of their faith in Christ.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	ye	you	PRON	_	_	3	nsubj	_	_
@@ -23281,7 +23278,7 @@
 73	Christ	Christ	PROPN	_	_	71	nmod	_	_
 74	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 568
+# sent_id = 567
 # text = And now, because of their steadfastness when they do believe in that thing which they do believe, for because of their firmness when they are once enlightened, behold, the Lord shall bless them and prolong their days, notwithstanding their iniquity--
 1	And	and	CCONJ	_	_	36	cc	_	_
 2	now	now	ADV	_	_	36	advmod	_	_
@@ -23330,7 +23327,7 @@
 45	iniquity	iniquity	NOUN	_	_	39	obl	_	_
 46	--	--	PUNCT	_	_	36	punct	_	_
 
-# sent_id = 569
+# sent_id = 568
 # text = Yea, even if they should dwindle in unbelief the Lord shall prolong their days, until the time shall come which hath been spoken of by our fathers, and also by the prophet Zenos, and many other prophets, concerning the restoration of our brethren, the Lamanites, again to the knowledge of the truth--
 1	Yea	yes	INTJ	_	_	13	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -23393,7 +23390,7 @@
 59	truth	truth	NOUN	_	_	56	nmod	_	_
 60	--	--	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 570
+# sent_id = 569
 # text = Yea, I say unto you, that in the latter times the promises of the Lord have been extended to our brethren, the Lamanites; and notwithstanding the many afflictions which they shall have, and notwithstanding they shall be driven to and fro upon the face of the earth, and be hunted, and shall be smitten and scattered abroad, having no place for refuge, the Lord shall be merciful unto them.
 1	Yea	yes	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -23475,7 +23472,7 @@
 78	them	they	PRON	_	_	76	obl	_	_
 79	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 571
+# sent_id = 570
 # text = And this is according to the prophecy, that they shall again be brought to the true knowledge, which is the knowledge of their Redeemer, and their great and true shepherd, and be numbered among his sheep.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	this	this	PRON	_	_	7	nsubj	_	_
@@ -23519,7 +23516,7 @@
 40	sheep	sheep	NOUN	_	_	37	obl	_	_
 41	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 572
+# sent_id = 571
 # text = Therefore I say unto you, it shall be better for them than for you except ye repent.
 1	Therefore	therefore	ADV	_	_	3	advmod	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -23541,7 +23538,7 @@
 18	repent	repent	VERB	_	_	10	advcl	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 573
+# sent_id = 572
 # text = For behold, had the mighty works been shown unto them which have been shown unto you, yea, unto them who have dwindled in unbelief because of the traditions of their fathers, ye can see of yourselves that they never would again have dwindled in unbelief.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	38	obl	_	_
@@ -23594,7 +23591,7 @@
 49	unbelief	unbelief	NOUN	_	_	47	obl	_	_
 50	.	.	PUNCT	_	_	38	punct	_	_
 
-# sent_id = 574
+# sent_id = 573
 # text = Therefore, saith the Lord: I will not utterly destroy them, but I will cause that in the day of my wisdom they shall return again unto me, saith the Lord.
 1	Therefore	therefore	ADV	_	_	3	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -23632,7 +23629,7 @@
 34	Lord	Lord	PROPN	_	_	32	nsubj	_	_
 35	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 575
+# sent_id = 574
 # text = And now behold, saith the Lord, concerning the people of the Nephites:
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	now	now	ADV	_	_	3	advmod	_	_
@@ -23650,7 +23647,7 @@
 14	Nephites	Nephites	PROPN	_	_	11	nmod	_	_
 15	:	:	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 576
+# sent_id = 575
 # text = If they will not repent, and observe to do my will, I will utterly destroy them, saith the Lord, because of their unbelief notwithstanding the many mighty works which I have done among them; and as surely as the Lord liveth shall these things be, saith the Lord.
 1	If	if	SCONJ	_	_	5	mark	_	_
 2	they	they	PRON	_	_	5	nsubj	_	_
@@ -23708,7 +23705,7 @@
 54	Lord	Lord	PROPN	_	_	52	iobj	_	_
 55	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 577
+# sent_id = 576
 # text = And now, it came to pass that there were many who heard the words of Samuel, the Lamanite, which he spake upon the walls of the city.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	now	now	ADV	_	_	5	advmod	_	_
@@ -23742,7 +23739,7 @@
 30	city	city	NOUN	_	_	27	nmod	_	_
 31	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 578
+# sent_id = 577
 # text = And as many as believed on his word went forth and sought for Nephi; and when they had come forth and found him they confessed unto him their sins and denied not, desiring that they might be baptized unto the Lord.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	as	as	ADV	_	_	3	advmod	_	_
@@ -23789,7 +23786,7 @@
 43	Lord	Lord	PROPN	_	_	40	obl	_	_
 44	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 579
+# sent_id = 578
 # text = But as many as there were who did not believe in the words of Samuel were angry with him; and they cast stones at him upon the wall, and also many shot arrows at him as he stood upon the wall; but the Spirit of the Lord was with him, insomuch that they could not hit him with their stones neither with their arrows.
 1	But	but	CCONJ	_	_	17	cc	_	_
 2	as	as	ADV	_	_	3	advmod	_	_
@@ -23861,7 +23858,7 @@
 68	arrows	arrow	NOUN	_	_	60	obl	_	_
 69	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 580
+# sent_id = 579
 # text = Now when they saw that they could not hit him, there were many more who did believe on his words, insomuch that they went away unto Nephi to be baptized.
 1	Now	now	ADV	_	_	13	advmod	_	_
 2	when	when	ADV	_	_	4	advmod	_	_
@@ -23897,7 +23894,7 @@
 32	baptized	baptize	VERB	_	_	26	advcl	_	_
 33	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 581
+# sent_id = 580
 # text = For behold, Nephi was baptizing, and prophesying, and preaching, crying repentance unto the people, showing signs and wonders, working miracles among the people, that they might know that the Christ must shortly come--
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	6	obl	_	_
@@ -23941,7 +23938,7 @@
 40	come	come	VERB	_	_	34	ccomp	_	_
 41	--	--	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 582
+# sent_id = 581
 # text = Telling them of things which must shortly come, that they might know and remember at the time of their coming that they had been made known unto them beforehand, to the intent that they might believe; therefore as many as believed on the words of Samuel went forth unto him to be baptized, for they came repenting and confessing their sins.
 1	Telling	tell	VERB	_	_	13	advcl	_	_
 2	them	they	PRON	_	_	1	iobj	_	_
@@ -24010,7 +24007,7 @@
 65	sins	sin	NOUN	_	_	63	obj	_	_
 66	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 583
+# sent_id = 582
 # text = But the more part of them did not believe in the words of Samuel; therefore when they saw that they could not hit him with their stones and their arrows, they cried unto their captains, saying:
 1	But	but	CCONJ	_	_	9	cc	_	_
 2	the	the	DET	_	_	4	det	_	_
@@ -24053,7 +24050,7 @@
 39	saying	say	VERB	_	_	34	advcl	_	_
 40	:	:	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 584
+# sent_id = 583
 # text = Take this fellow and bind him, for behold he hath a devil; and because of the power of the devil which is in him we cannot hit him with our stones and our arrows; therefore take him and bind him, and away with him.
 1	Take	take	VERB	_	_	0	root	_	_
 2	this	this	DET	_	_	3	det	_	_
@@ -24106,7 +24103,7 @@
 49	him	he	PRON	_	_	47	obl	_	_
 50	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 585
+# sent_id = 584
 # text = And as they went forth to lay their hands on him, behold, he did cast himself down from the wall, and did flee out of their lands, yea, even unto his own country, and began to preach and to prophesy among his own people.
 1	And	and	CCONJ	_	_	17	cc	_	_
 2	as	as	SCONJ	_	_	4	mark	_	_
@@ -24160,7 +24157,7 @@
 50	people	person	NOUN	_	_	46	obl	_	_
 51	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 586
+# sent_id = 585
 # text = And behold, he was never heard of more among the Nephites; and thus were the affairs of the people.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	behold	behold	INTJ	_	_	7	discourse	_	_
@@ -24185,7 +24182,7 @@
 21	people	person	NOUN	_	_	18	nmod	_	_
 22	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 587
+# sent_id = 586
 # text = And thus ended the eighty and sixth year of the reign of the judges over the people of Nephi.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	thus	thus	ADV	_	_	3	advmod	_	_
@@ -24208,7 +24205,7 @@
 19	Nephi	Nephi	PROPN	_	_	17	nmod	_	_
 20	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 588
+# sent_id = 587
 # text = And thus ended also the eighty and seventh year of the reign of the judges, the more part of the people remaining in their pride and wickedness, and the lesser part walking more circumspectly before God.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	thus	thus	ADV	_	_	3	advmod	_	_
@@ -24250,7 +24247,7 @@
 38	God	God	PROPN	_	_	34	obl	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 589
+# sent_id = 588
 # text = And these were the conditions also, in the eighty and eighth year of the reign of the judges.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	these	this	PRON	_	_	5	nsubj	_	_
@@ -24273,7 +24270,7 @@
 19	judges	judge	NOUN	_	_	16	nmod	_	_
 20	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 590
+# sent_id = 589
 # text = And there was but little alteration in the affairs of the people, save it were the people began to be more hardened in iniquity, and do more and more of that which was contrary to the commandments of God, in the eighty and ninth year of the reign of the judges.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -24331,7 +24328,7 @@
 54	judges	judge	NOUN	_	_	51	nmod	_	_
 55	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 591
+# sent_id = 590
 # text = But it came to pass in the ninetieth year of the reign of the judges, there were great signs given unto the people, and wonders; and the words of the prophets began to be fulfilled.
 1	But	but	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -24373,7 +24370,7 @@
 38	fulfilled	fulfil	VERB	_	_	35	xcomp	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 592
+# sent_id = 591
 # text = And angels did appear unto men, wise men, and did declare unto them glad tidings of great joy; thus in this year the scriptures began to be fulfilled.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	angels	angel	NOUN	_	_	4	nsubj	_	_
@@ -24408,7 +24405,7 @@
 31	fulfilled	fulfil	VERB	_	_	28	xcomp	_	_
 32	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 593
+# sent_id = 592
 # text = Nevertheless, the people began to harden their hearts, all save it were the most believing part of them, both of the Nephites and also of the Lamanites, and began to depend upon their own strength and upon their own wisdom, saying:
 1	Nevertheless	nevertheless	ADV	_	_	5	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -24458,7 +24455,7 @@
 46	saying	say	VERB	_	_	35	advcl	_	_
 47	:	:	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 594
+# sent_id = 593
 # text = Some things they may have guessed right, among so many; but behold, we know that all these great and marvelous works cannot come to pass, of which has been spoken.
 1	Some	some	DET	_	_	2	det	_	_
 2	things	thing	NOUN	_	_	0	root	_	_
@@ -24497,7 +24494,7 @@
 35	spoken	speak	VERB	_	_	29	advcl:relcl	_	_
 36	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 595
+# sent_id = 594
 # text = And they began to reason and to contend among themselves, saying:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -24513,7 +24510,7 @@
 12	saying	say	VERB	_	_	3	advcl	_	_
 13	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 596
+# sent_id = 595
 # text = That it is not reasonable that such a being as a Christ shall come; if so, and he be the Son of God, the Father of heaven and of earth, as it has been spoken, why will he not show himself unto us as well as unto them who shall be at Jerusalem?
 1	That	that	SCONJ	_	_	5	mark	_	_
 2	it	it	PRON	_	_	5	expl	_	_
@@ -24575,7 +24572,7 @@
 58	Jerusalem	Jerusalem	PROPN	_	_	53	acl:relcl	_	_
 59	?	?	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 597
+# sent_id = 596
 # text = Yea, why will he not show himself in this land as well as in the land of Jerusalem?
 1	Yea	yes	INTJ	_	_	7	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -24598,7 +24595,7 @@
 19	Jerusalem	Jerusalem	PROPN	_	_	17	nmod	_	_
 20	?	?	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 598
+# sent_id = 597
 # text = But behold, we know that this is a wicked tradition, which has been handed down unto us by our fathers, to cause us that we should believe in some great and marvelous thing which should come to pass, but not among us, but in a land which is far distant, a land which we know not; therefore they can keep us in ignorance, for we cannot witness with our own eyes that they are true.
 1	But	but	CCONJ	_	_	5	cc	_	_
 2	behold	behold	INTJ	_	_	5	discourse	_	_
@@ -24686,7 +24683,7 @@
 84	true	true	ADJ	_	_	76	ccomp	_	_
 85	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 599
+# sent_id = 598
 # text = And they will, by the cunning and the mysterious arts of the evil one, work some great mystery which we cannot understand, which will keep us down to be servants to their words, and also servants unto them, for we depend upon them to teach us the word; and thus will they keep us in ignorance if we will yield ourselves unto them, all the days of our lives.
 1	And	and	CCONJ	_	_	17	cc	_	_
 2	they	they	PRON	_	_	17	nsubj	_	_
@@ -24767,7 +24764,7 @@
 77	lives	life	NOUN	_	_	74	nmod	_	_
 78	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 600
+# sent_id = 599
 # text = And many more things did the people imagine up in their hearts, which were foolish and vain; and they were much disturbed, for Satan did stir them up to do iniquity continually; yea, he did go about spreading rumors and contentions upon all the face of the land, that he might harden the hearts of the people against that which was good and against that which should come.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	many	many	ADJ	_	_	4	amod	_	_
@@ -24845,7 +24842,7 @@
 74	come	come	VERB	_	_	71	acl:relcl	_	_
 75	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 601
+# sent_id = 600
 # text = And notwithstanding the signs and the wonders which were wrought among the people of the Lord, and the many miracles which they did, Satan did get great hold upon the hearts of the people upon all the face of the land.
 1	And	and	CCONJ	_	_	28	cc	_	_
 2	notwithstanding	despite	ADP	_	_	4	case	_	_
@@ -24892,7 +24889,7 @@
 43	land	land	NOUN	_	_	40	nmod	_	_
 44	.	.	PUNCT	_	_	28	punct	_	_
 
-# sent_id = 602
+# sent_id = 601
 # text = And thus ended the ninetieth year of the reign of the judges over the people of Nephi.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	thus	thus	ADV	_	_	3	advmod	_	_
@@ -24913,7 +24910,7 @@
 17	Nephi	Nephi	PROPN	_	_	15	nmod	_	_
 18	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 603
+# sent_id = 602
 # text = And thus ended the book of Helaman, according to the record of Helaman and his sons.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	thus	thus	ADV	_	_	3	advmod	_	_

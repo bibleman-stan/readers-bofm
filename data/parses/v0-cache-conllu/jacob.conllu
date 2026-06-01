@@ -3313,7 +3313,7 @@
 53	.	.	PUNCT	_	_	22	punct	_	_
 
 # sent_id = 82
-# text = These plates are called the plates of Jacob, and they were made by the hand of Nephi.
+# text = These plates are called the plates of Jacob, and they were made by the hand of Nephi. And I make an end of speaking these words.
 1	These	this	DET	_	_	2	det	_	_
 2	plates	plate	NOUN	_	_	4	nsubj:pass	_	_
 3	are	be	AUX	_	_	4	aux:pass	_	_
@@ -3333,21 +3333,18 @@
 17	of	of	ADP	_	_	18	case	_	_
 18	Nephi	Nephi	PROPN	_	_	16	nmod	_	_
 19	.	.	PUNCT	_	_	4	punct	_	_
+20	And	and	CCONJ	_	_	22	cc	_	_
+21	I	I	PRON	_	_	22	nsubj	_	_
+22	make	make	VERB	_	_	4	conj	_	_
+23	an	a	DET	_	_	24	det	_	_
+24	end	end	NOUN	_	_	22	obj	_	_
+25	of	of	SCONJ	_	_	26	mark	_	_
+26	speaking	speak	VERB	_	_	24	acl	_	_
+27	these	this	DET	_	_	28	det	_	_
+28	words	word	NOUN	_	_	26	obj	_	_
+29	.	.	PUNCT	_	_	22	punct	_	_
 
 # sent_id = 83
-# text = And I make an end of speaking these words.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	I	I	PRON	_	_	3	nsubj	_	_
-3	make	make	VERB	_	_	0	root	_	_
-4	an	a	DET	_	_	5	det	_	_
-5	end	end	NOUN	_	_	3	obj	_	_
-6	of	of	SCONJ	_	_	7	mark	_	_
-7	speaking	speak	VERB	_	_	5	acl	_	_
-8	these	this	DET	_	_	9	det	_	_
-9	words	word	NOUN	_	_	7	obj	_	_
-10	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 84
 # text = Now behold, it came to pass that I, Jacob, having ministered much unto my people in word, (and I cannot write but a little of my words, because of the difficulty of engraving our words upon plates) and we know that the things which we write upon plates must remain;
 1	Now	now	ADV	_	_	2	advmod	_	_
 2	behold	behold	INTJ	_	_	5	discourse	_	_
@@ -3409,7 +3406,7 @@
 58	remain	remain	VERB	_	_	48	ccomp	_	_
 59	;	;	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 85
+# sent_id = 84
 # text = But whatsoever things we write upon anything save it be upon plates must perish and vanish away; but we can write a few words upon plates, which will give our children, and also our beloved brethren, a small degree of knowledge concerning us, or concerning their fathers--
 1	But	but	CCONJ	_	_	14	cc	_	_
 2	whatsoever	whatsoever	DET	_	_	3	det	_	_
@@ -3465,7 +3462,7 @@
 52	fathers	father	NOUN	_	_	47	conj	_	_
 53	--	--	PUNCT	_	_	14	punct	_	_
 
-# sent_id = 86
+# sent_id = 85
 # text = Now in this thing we do rejoice; and we labor diligently to engraven these words upon plates, hoping that our beloved brethren and our children will receive them with thankful hearts, and look upon them that they may learn with joy and not with sorrow, neither with contempt, concerning their first parents.
 1	Now	now	ADV	_	_	7	advmod	_	_
 2	in	in	ADP	_	_	4	case	_	_
@@ -3526,7 +3523,7 @@
 57	parents	parent	NOUN	_	_	52	nmod	_	_
 58	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 87
+# sent_id = 86
 # text = For, for this intent have we written these things, that they may know that we knew of Christ, and we had a hope of his glory many hundred years before his coming; and not only we ourselves had a hope of his glory, but also all the holy prophets which were before us.
 1	For	for	ADP	_	_	8	mark	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3588,7 +3585,7 @@
 58	us	we	PRON	_	_	54	acl:relcl	_	_
 59	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 88
+# sent_id = 87
 # text = Behold, they believed in Christ and worshiped the Father in his name, and also we worship the Father in his name.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3615,7 +3612,7 @@
 23	name	name	NOUN	_	_	18	obl	_	_
 24	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 89
+# sent_id = 88
 # text = And for this intent we keep the law of Moses, it pointing our souls to him; and for this cause it is sanctified unto us for righteousness, even as it was accounted unto Abraham in the wilderness to be obedient unto the commands of God in offering up his son Isaac, which is a similitude of God and his Only Begotten Son.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	for	for	ADP	_	_	4	case	_	_
@@ -3685,7 +3682,7 @@
 66	Son	Son	PROPN	_	_	61	conj	_	_
 67	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 90
+# sent_id = 89
 # text = Wherefore, we search the prophets, and we have many revelations and the spirit of prophecy; and having all these witnesses we obtain a hope, and our faith becometh unshaken, insomuch that we truly can command in the name of Jesus and the very trees obey us, or the mountains, or the waves of the sea.
 1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3751,7 +3748,7 @@
 62	sea	sea	NOUN	_	_	59	nmod	_	_
 63	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 91
+# sent_id = 90
 # text = Nevertheless, the Lord God showeth us our weakness that we may know that it is by his grace, and his great condescensions unto the children of men, that we have power to do these things.
 1	Nevertheless	nevertheless	ADV	_	_	6	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3793,7 +3790,7 @@
 38	things	thing	NOUN	_	_	36	obj	_	_
 39	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 92
+# sent_id = 91
 # text = Behold, great and marvelous are the works of the Lord.
 1	Behold	behold	INTJ	_	_	8	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3808,7 +3805,7 @@
 11	Lord	Lord	PROPN	_	_	8	nmod	_	_
 12	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 93
+# sent_id = 92
 # text = How unsearchable are the depths of the mysteries of him; and it is impossible that man should find out all his ways.
 1	How	how	ADV	_	_	2	advmod	_	_
 2	unsearchable	unsearchable	ADJ	_	_	0	root	_	_
@@ -3835,7 +3832,7 @@
 23	ways	way	NOUN	_	_	19	obj	_	_
 24	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 94
+# sent_id = 93
 # text = And no man knoweth of his ways save it be revealed unto him; wherefore, brethren, despise not the revelations of God.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	no	no	DET	_	_	3	det	_	_
@@ -3863,7 +3860,7 @@
 24	God	God	PROPN	_	_	22	nmod	_	_
 25	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 95
+# sent_id = 94
 # text = For behold, by the power of his word man came upon the face of the earth, which earth was created by the power of his word.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	11	obl	_	_
@@ -3895,7 +3892,7 @@
 28	word	word	NOUN	_	_	25	nmod	_	_
 29	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 96
+# sent_id = 95
 # text = Wherefore, if God being able to speak and the world was, and to speak and man was created, O then, why not able to command the earth, or the workmanship of his hands upon the face of it, according to his will and pleasure?
 1	Wherefore	so	ADV	_	_	27	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3949,7 +3946,7 @@
 50	pleasure	pleasure	NOUN	_	_	48	conj	_	_
 51	?	?	PUNCT	_	_	27	punct	_	_
 
-# sent_id = 97
+# sent_id = 96
 # text = Wherefore, brethren, seek not to counsel the Lord, but to take counsel from his hand.
 1	Wherefore	so	ADV	_	_	5	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3971,7 +3968,7 @@
 18	hand	hand	NOUN	_	_	14	obl	_	_
 19	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 98
+# sent_id = 97
 # text = For behold, ye yourselves know that he counseleth in wisdom, and in justice, and in great mercy, over all his works.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	6	obl	_	_
@@ -4000,7 +3997,7 @@
 25	works	work	NOUN	_	_	15	conj	_	_
 26	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 99
+# sent_id = 98
 # text = Wherefore, beloved brethren, be reconciled unto him through the atonement of Christ, his Only Begotten Son, and ye may obtain a resurrection, according to the power of the resurrection which is in Christ, and be presented as the first-fruits of Christ unto God, having faith, and obtained a good hope of glory in him before he manifesteth himself in the flesh.
 1	Wherefore	so	ADV	_	_	7	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4075,7 +4072,7 @@
 71	flesh	flesh	NOUN	_	_	67	obl	_	_
 72	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 100
+# sent_id = 99
 # text = And now, beloved, marvel not that I tell you these things; for why not speak of the atonement of Christ, and attain to a perfect knowledge of him, as to attain to the knowledge of a resurrection and the world to come?
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	now	now	ADV	_	_	6	advmod	_	_
@@ -4126,7 +4123,7 @@
 47	come	come	VERB	_	_	42	acl	_	_
 48	?	?	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 101
+# sent_id = 100
 # text = Behold, my brethren, he that prophesieth, let him prophesy to the understanding of men; for the Spirit speaketh the truth and lieth not.
 1	Behold	behold	INTJ	_	_	10	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4157,7 +4154,7 @@
 27	not	not	PART	_	_	26	advmod	_	_
 28	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 102
+# sent_id = 101
 # text = Wherefore, it speaketh of things as they really are, and of things as they really will be; wherefore, these things are manifested unto us plainly, for the salvation of our souls.
 1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4197,7 +4194,7 @@
 36	souls	soul	NOUN	_	_	33	nmod	_	_
 37	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 103
+# sent_id = 102
 # text = But behold, we are not witnesses alone in these things; for God also spake them unto prophets of old.
 1	But	but	CCONJ	_	_	7	cc	_	_
 2	behold	behold	INTJ	_	_	7	discourse	_	_
@@ -4222,7 +4219,7 @@
 21	old	old	ADJ	_	_	19	nmod	_	_
 22	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 104
+# sent_id = 103
 # text = But behold, the Jews were a stiffnecked people; and they despised the words of plainness, and killed the prophets, and sought for things that they could not understand.
 1	But	but	CCONJ	_	_	9	cc	_	_
 2	behold	behold	INTJ	_	_	9	discourse	_	_
@@ -4258,7 +4255,7 @@
 32	understand	understand	VERB	_	_	27	acl:relcl	_	_
 33	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 105
+# sent_id = 104
 # text = Wherefore, because of their blindness, which blindness came by looking beyond the mark, they must needs fall; for God hath taken away his plainness from them, and delivered unto them many things which they cannot understand, because they desired it.
 1	Wherefore	so	ADV	_	_	19	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4309,7 +4306,7 @@
 47	it	it	PRON	_	_	46	obj	_	_
 48	.	.	PUNCT	_	_	19	punct	_	_
 
-# sent_id = 106
+# sent_id = 105
 # text = And because they desired it God hath done it, that they may stumble.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	because	because	SCONJ	_	_	4	mark	_	_
@@ -4327,7 +4324,7 @@
 14	stumble	stumble	VERB	_	_	8	ccomp	_	_
 15	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 107
+# sent_id = 106
 # text = And now I, Jacob, am led on by the Spirit unto prophesying; for I perceive by the workings of the Spirit which is in me, that by the stumbling of the Jews they will reject the stone upon which they might build and have safe foundation.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	now	now	ADV	_	_	8	advmod	_	_
@@ -4381,7 +4378,7 @@
 50	foundation	foundation	NOUN	_	_	48	obj	_	_
 51	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 108
+# sent_id = 107
 # text = But behold, according to the scriptures, this stone shall become the great, and the last, and the only sure foundation, upon which the Jews can build.
 1	But	but	CCONJ	_	_	12	cc	_	_
 2	behold	behold	INTJ	_	_	12	discourse	_	_
@@ -4416,7 +4413,7 @@
 31	build	build	VERB	_	_	24	acl:relcl	_	_
 32	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 109
+# sent_id = 108
 # text = And now, my beloved, how is it possible that these, after having rejected the sure foundation, can ever build upon it, that it may become the head of their corner?
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	now	now	ADV	_	_	10	advmod	_	_
@@ -4455,7 +4452,7 @@
 35	corner	corner	NOUN	_	_	32	nmod	_	_
 36	?	?	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 110
+# sent_id = 109
 # text = Behold, my beloved brethren, I will unfold this mystery unto you; if I do not, by any means, get shaken from my firmness in the Spirit, and stumble because of my over anxiety for you.
 1	Behold	behold	INTJ	_	_	9	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4500,7 +4497,7 @@
 41	you	you	PRON	_	_	34	obl	_	_
 42	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 111
+# sent_id = 110
 # text = Behold, my brethren, do ye not remember to have read the words of the prophet Zenos, which he spake unto the house of Israel, saying:
 1	Behold	behold	INTJ	_	_	9	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4533,7 +4530,7 @@
 29	saying	say	VERB	_	_	9	advcl	_	_
 30	:	:	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 112
+# sent_id = 111
 # text = Hearken, O ye house of Israel, and hear the words of me, a prophet of the Lord.
 1	Hearken	listen	VERB	_	_	0	root	_	_
 2	,	,	PUNCT	_	_	5	punct	_	_
@@ -4557,7 +4554,7 @@
 20	Lord	Lord	PROPN	_	_	17	nmod	_	_
 21	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 113
+# sent_id = 112
 # text = For behold, thus saith the Lord, I will liken thee, O house of Israel, like unto a tame olive tree, which a man took and nourished in his vineyard; and it grew, and waxed old, and began to decay.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	5	obl	_	_
@@ -4608,7 +4605,7 @@
 47	decay	decay	VERB	_	_	45	xcomp	_	_
 48	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 114
+# sent_id = 113
 # text = And it came to pass that the master of the vineyard went forth, and he saw that his olive tree began to decay; and he said: I will prune it, and dig about it, and nourish it, that perhaps it may shoot forth young and tender branches, and it perish not.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -4670,7 +4667,7 @@
 58	not	not	PART	_	_	57	advmod	_	_
 59	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 115
+# sent_id = 114
 # text = And it came to pass that he pruned it, and digged about it, and nourished it according to his word.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -4696,7 +4693,7 @@
 22	word	word	NOUN	_	_	17	obl	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 116
+# sent_id = 115
 # text = And it came to pass that after many days it began to put forth somewhat a little, young and tender branches; but behold, the main top thereof began to perish.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -4733,7 +4730,7 @@
 33	perish	perish	VERB	_	_	31	xcomp	_	_
 34	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 117
+# sent_id = 116
 # text = And it came to pass that the master of the vineyard saw it, and he said unto his servant:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -4757,7 +4754,7 @@
 20	servant	servant	NOUN	_	_	17	obl	_	_
 21	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 118
+# sent_id = 117
 # text = It grieveth me that I should lose this tree; wherefore, go and pluck the branches from a wild olive tree, and bring them hither unto me; and we will pluck off those main branches which are beginning to wither away, and we will cast them into the fire that they may be burned.
 1	It	it	PRON	_	_	2	expl	_	_
 2	grieveth	grieve	VERB	_	_	0	root	_	_
@@ -4819,7 +4816,7 @@
 58	burned	burn	VERB	_	_	49	advcl	_	_
 59	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 119
+# sent_id = 118
 # text = And behold, saith the Lord of the vineyard, I take away many of these young and tender branches, and I will graft them whithersoever I will; and it mattereth not that if it so be that the root of this tree will perish, I may preserve the fruit thereof unto myself; wherefore, I will take these young and tender branches, and I will graft them whithersoever I will.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	behold	behold	INTJ	_	_	4	discourse	_	_
@@ -4899,7 +4896,7 @@
 76	will	will	AUX	_	_	72	parataxis	_	_
 77	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 120
+# sent_id = 119
 # text = Take thou the branches of the wild olive tree, and graft them in, in the stead thereof; and these which I have plucked off I will cast into the fire and burn them, that they may not cumber the ground of my vineyard.
 1	Take	take	VERB	_	_	0	root	_	_
 2	thou	you	PRON	_	_	1	iobj	_	_
@@ -4950,7 +4947,7 @@
 47	vineyard	vineyard	NOUN	_	_	44	nmod	_	_
 48	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 121
+# sent_id = 120
 # text = And it came to pass that the servant of the Lord of the vineyard did according to the word of the Lord of the vineyard, and grafted in the branches of the wild olive tree.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -4990,7 +4987,7 @@
 36	tree	tree	NOUN	_	_	31	nmod	_	_
 37	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 122
+# sent_id = 121
 # text = And the Lord of the vineyard caused that it should be digged about, and pruned, and nourished, saying unto his servant:
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -5018,7 +5015,7 @@
 24	servant	servant	NOUN	_	_	21	obl	_	_
 25	:	:	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 123
+# sent_id = 122
 # text = It grieveth me that I should lose this tree; wherefore, that perhaps I might preserve the roots thereof that they perish not, that I might preserve them unto myself, I have done this thing.
 1	It	it	PRON	_	_	2	expl	_	_
 2	grieveth	grieve	VERB	_	_	0	root	_	_
@@ -5060,7 +5057,7 @@
 38	thing	thing	NOUN	_	_	36	obj	_	_
 39	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 124
+# sent_id = 123
 # text = Wherefore, go thy way; watch the tree, and nourish it, according to my words.
 1	Wherefore	so	ADV	_	_	3	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -5082,7 +5079,7 @@
 18	words	word	NOUN	_	_	12	obl	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 125
+# sent_id = 124
 # text = And these will I place in the nethermost part of my vineyard, whithersoever I will, it mattereth not unto thee; and I do it that I may preserve unto myself the natural branches of the tree; and also, that I may lay up fruit thereof against the season, unto myself; for it grieveth me that I should lose this tree and the fruit thereof.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	these	this	PRON	_	_	5	nsubj	_	_
@@ -5157,7 +5154,7 @@
 71	thereof	thereof	ADV	_	_	70	advmod	_	_
 72	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 126
+# sent_id = 125
 # text = And it came to pass that the Lord of the vineyard went his way, and hid the natural branches of the tame olive tree in the nethermost parts of the vineyard, some in one and some in another, according to his will and pleasure.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5208,7 +5205,7 @@
 47	pleasure	pleasure	NOUN	_	_	45	conj	_	_
 48	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 127
+# sent_id = 126
 # text = And it came to pass that a long time passed away, and the Lord of the vineyard said unto his servant: Come, let us go down into the vineyard, that we may labor in the vineyard.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5252,7 +5249,7 @@
 40	vineyard	vineyard	NOUN	_	_	37	obl	_	_
 41	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 128
+# sent_id = 127
 # text = And it came to pass that the Lord of the vineyard, and also the servant, went down into the vineyard to labor.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5280,7 +5277,7 @@
 24	labor	labor	NOUN	_	_	18	obl	_	_
 25	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 129
+# sent_id = 128
 # text = And it came to pass that the servant said unto his master: Behold, look here; behold the tree.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5305,7 +5302,7 @@
 21	tree	tree	NOUN	_	_	19	obj	_	_
 22	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 130
+# sent_id = 129
 # text = And it came to pass that the Lord of the vineyard looked and beheld the tree in the which the wild olive branches had been grafted; and it had sprung forth and begun to bear fruit.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5346,7 +5343,7 @@
 37	fruit	fruit	NOUN	_	_	36	obj	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 131
+# sent_id = 130
 # text = And he beheld that it was good; and the fruit thereof was like unto the natural fruit.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -5368,7 +5365,7 @@
 18	fruit	fruit	NOUN	_	_	7	conj	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 132
+# sent_id = 131
 # text = And he said unto the servant: Behold, the branches of the wild tree have taken hold of the moisture of the root thereof, that the root thereof hath brought forth much strength; and because of the much strength of the root thereof the wild branches have brought forth tame fruit.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -5426,7 +5423,7 @@
 54	fruit	fruit	NOUN	_	_	51	obj	_	_
 55	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 133
+# sent_id = 132
 # text = Now, if we had not grafted in these branches, the tree thereof would have perished.
 1	Now	now	ADV	_	_	17	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -5447,7 +5444,7 @@
 17	perished	perish	VERB	_	_	0	root	_	_
 18	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 134
+# sent_id = 133
 # text = And now, behold, I shall lay up much fruit, which the tree thereof hath brought forth; and the fruit thereof I shall lay up against the season, unto mine own self.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	now	now	ADV	_	_	8	advmod	_	_
@@ -5487,7 +5484,7 @@
 36	self	self	NOUN	_	_	27	obl	_	_
 37	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 135
+# sent_id = 134
 # text = And it came to pass that the Lord of the vineyard said unto the servant: Come, let us go to the nethermost part of the vineyard, and behold if the natural branches of the tree have not brought forth much fruit also, that I may lay up of the fruit thereof against the season, unto mine own self.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5554,7 +5551,7 @@
 63	self	self	NOUN	_	_	50	obl	_	_
 64	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 136
+# sent_id = 135
 # text = And it came to pass that they went forth whither the master had hid the natural branches of the tree, and he said unto the servant: Behold these; and he beheld the first that it had brought forth much fruit; and he beheld also that it was good.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5610,7 +5607,7 @@
 52	good	good	ADJ	_	_	47	ccomp	_	_
 53	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 137
+# sent_id = 136
 # text = And he said unto the servant:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -5620,7 +5617,7 @@
 6	servant	servant	NOUN	_	_	3	obl	_	_
 7	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 138
+# sent_id = 137
 # text = Take of the fruit thereof, and lay it up against the season, that I may preserve it unto mine own self; for behold, said he, this long time have I nourished it, and it hath brought forth much fruit.
 1	Take	take	VERB	_	_	0	root	_	_
 2	of	of	ADP	_	_	4	case	_	_
@@ -5669,7 +5666,7 @@
 45	fruit	fruit	NOUN	_	_	42	obj	_	_
 46	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 139
+# sent_id = 138
 # text = And it came to pass that the servant said unto his master:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5685,7 +5682,7 @@
 12	master	master	NOUN	_	_	9	obl	_	_
 13	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 140
+# sent_id = 139
 # text = How comest thou hither to plant this tree, or this branch of the tree?
 1	How	how	ADV	_	_	2	advmod	_	_
 2	comest	come	VERB	_	_	0	root	_	_
@@ -5704,7 +5701,7 @@
 15	tree	tree	NOUN	_	_	12	nmod	_	_
 16	?	?	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 141
+# sent_id = 140
 # text = For behold, it was the poorest spot in all the land of thy vineyard.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	8	obl	_	_
@@ -5723,7 +5720,7 @@
 15	vineyard	vineyard	NOUN	_	_	12	nmod	_	_
 16	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 142
+# sent_id = 141
 # text = And the Lord of the vineyard said unto him: Counsel me not; I knew that it was a poor spot of ground; wherefore, I said unto thee, I have nourished it this long time, and thou beholdest that it hath brought forth much fruit.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -5777,7 +5774,7 @@
 50	fruit	fruit	NOUN	_	_	47	obj	_	_
 51	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 143
+# sent_id = 142
 # text = And it came to pass that the Lord of the vineyard said unto his servant:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5796,7 +5793,7 @@
 15	servant	servant	NOUN	_	_	12	obl	_	_
 16	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 144
+# sent_id = 143
 # text = Look hither; behold I have planted another branch of the tree also; and thou knowest that this spot of ground was poorer than the first.
 1	Look	look	VERB	_	_	0	root	_	_
 2	hither	here	ADV	_	_	1	advmod	_	_
@@ -5827,7 +5824,7 @@
 27	first	first	ADJ	_	_	24	obl	_	_
 28	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 145
+# sent_id = 144
 # text = But, behold the tree.
 1	But	but	CCONJ	_	_	3	cc	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -5836,7 +5833,7 @@
 5	tree	tree	NOUN	_	_	3	obj	_	_
 6	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 146
+# sent_id = 145
 # text = I have nourished it this long time, and it hath brought forth much fruit; therefore, gather it, and lay it up against the season, that I may preserve it unto mine own self.
 1	I	I	PRON	_	_	3	nsubj	_	_
 2	have	have	AUX	_	_	3	aux	_	_
@@ -5878,7 +5875,7 @@
 38	self	self	NOUN	_	_	33	obl	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 147
+# sent_id = 146
 # text = And it came to pass that the Lord of the vineyard said again unto his servant:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -5898,7 +5895,7 @@
 16	servant	servant	NOUN	_	_	12	obl	_	_
 17	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 148
+# sent_id = 147
 # text = Look hither, and behold another branch also, which I have planted; behold that I have nourished it also, and it hath brought forth fruit.
 1	Look	look	VERB	_	_	0	root	_	_
 2	hither	here	ADV	_	_	1	advmod	_	_
@@ -5930,7 +5927,7 @@
 28	fruit	fruit	NOUN	_	_	26	obj	_	_
 29	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 149
+# sent_id = 148
 # text = And he said unto the servant: Look hither and behold the last.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -5947,7 +5944,7 @@
 13	last	last	ADJ	_	_	11	obj	_	_
 14	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 150
+# sent_id = 149
 # text = Behold, this have I planted in a good spot of ground; and I have nourished it this long time, and only a part of the tree hath brought forth tame fruit, and the other part of the tree hath brought forth wild fruit; behold, I have nourished this tree like unto the others.
 1	Behold	behold	INTJ	_	_	6	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -6010,7 +6007,7 @@
 59	others	other	NOUN	_	_	53	obl	_	_
 60	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 151
+# sent_id = 150
 # text = And it came to pass that the Lord of the vineyard said unto the servant: Pluck off the branches that have not brought forth good fruit, and cast them into the fire.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6048,7 +6045,7 @@
 34	fire	fire	NOUN	_	_	30	obl	_	_
 35	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 152
+# sent_id = 151
 # text = But behold, the servant said unto him: Let us prune it, and dig about it, and nourish it a little longer, that perhaps it may bring forth good fruit unto thee, that thou canst lay it up against the season.
 1	But	but	CCONJ	_	_	6	cc	_	_
 2	behold	behold	INTJ	_	_	6	discourse	_	_
@@ -6098,7 +6095,7 @@
 46	season	season	NOUN	_	_	41	obl	_	_
 47	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 153
+# sent_id = 152
 # text = And it came to pass that the Lord of the vineyard and the servant of the Lord of the vineyard did nourish all the fruit of the vineyard.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6130,7 +6127,7 @@
 28	vineyard	vineyard	NOUN	_	_	25	nmod	_	_
 29	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 154
+# sent_id = 153
 # text = And it came to pass that a long time had passed away, and the Lord of the vineyard said unto his servant: Come, let us go down into the vineyard, that we may labor again in the vineyard.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6176,7 +6173,7 @@
 42	vineyard	vineyard	NOUN	_	_	38	obl	_	_
 43	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 155
+# sent_id = 154
 # text = For behold, the time draweth near, and the end soon cometh; wherefore, I must lay up fruit against the season, unto mine own self.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	6	obl	_	_
@@ -6209,7 +6206,7 @@
 29	self	self	NOUN	_	_	19	obl	_	_
 30	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 156
+# sent_id = 155
 # text = And it came to pass that the Lord of the vineyard and the servant went down into the vineyard; and they came to the tree whose natural branches had been broken off, and the wild branches had been grafted in; and behold all sorts of fruit did cumber the tree.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6266,7 +6263,7 @@
 53	tree	tree	NOUN	_	_	51	obj	_	_
 54	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 157
+# sent_id = 156
 # text = And it came to pass that the Lord of the vineyard did taste of the fruit, every sort according to its number.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6293,7 +6290,7 @@
 23	number	number	NOUN	_	_	19	nmod	_	_
 24	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 158
+# sent_id = 157
 # text = And the Lord of the vineyard said: Behold, this long time have we nourished this tree, and I have laid up unto myself against the season much fruit.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -6328,7 +6325,7 @@
 31	fruit	fruit	NOUN	_	_	23	obl	_	_
 32	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 159
+# sent_id = 158
 # text = But behold, this time it hath brought forth much fruit, and there is none of it which is good.
 1	But	but	CCONJ	_	_	8	cc	_	_
 2	behold	behold	INTJ	_	_	8	discourse	_	_
@@ -6353,7 +6350,7 @@
 21	good	good	ADJ	_	_	16	acl:relcl	_	_
 22	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 160
+# sent_id = 159
 # text = And behold, there are all kinds of bad fruit; and it profiteth me nothing, notwithstanding all our labor; and now it grieveth me that I should lose this tree.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	behold	behold	INTJ	_	_	5	discourse	_	_
@@ -6390,7 +6387,7 @@
 33	tree	tree	NOUN	_	_	31	obj	_	_
 34	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 161
+# sent_id = 160
 # text = And the Lord of the vineyard said unto the servant:
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -6404,7 +6401,7 @@
 10	servant	servant	NOUN	_	_	7	obl	_	_
 11	:	:	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 162
+# sent_id = 161
 # text = What shall we do unto the tree, that I may preserve again good fruit thereof unto mine own self?
 1	What	what	PRON	_	_	4	obj	_	_
 2	shall	shall	AUX	_	_	4	aux	_	_
@@ -6428,7 +6425,7 @@
 20	self	self	NOUN	_	_	12	obl	_	_
 21	?	?	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 163
+# sent_id = 162
 # text = And the servant said unto his master: Behold, because thou didst graft in the branches of the wild olive tree they have nourished the roots, that they are alive and they have not perished; wherefore thou beholdest that they are yet good.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -6478,7 +6475,7 @@
 46	good	good	ADJ	_	_	41	ccomp	_	_
 47	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 164
+# sent_id = 163
 # text = And it came to pass that the Lord of the vineyard said unto his servant:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6497,7 +6494,7 @@
 15	servant	servant	NOUN	_	_	12	obl	_	_
 16	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 165
+# sent_id = 164
 # text = The tree profiteth me nothing, and the roots thereof profit me nothing so long as it shall bring forth evil fruit.
 1	The	the	DET	_	_	2	det	_	_
 2	tree	tree	NOUN	_	_	3	nsubj	_	_
@@ -6523,7 +6520,7 @@
 22	fruit	fruit	NOUN	_	_	19	obj	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 166
+# sent_id = 165
 # text = Nevertheless, I know that the roots are good, and for mine own purpose I have preserved them; and because of their much strength they have hitherto brought forth, from the wild branches, good fruit.
 1	Nevertheless	nevertheless	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -6566,7 +6563,7 @@
 39	fruit	fruit	NOUN	_	_	36	appos	_	_
 40	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 167
+# sent_id = 166
 # text = But behold, the wild branches have grown and have overrun the roots thereof; and because that the wild branches have overcome the roots thereof it hath brought forth much evil fruit; and because that it hath brought forth so much evil fruit thou beholdest that it beginneth to perish; and it will soon become ripened, that it may be cast into the fire, except we should do something for it to preserve it.
 1	But	but	CCONJ	_	_	8	cc	_	_
 2	behold	behold	INTJ	_	_	8	discourse	_	_
@@ -6649,7 +6646,7 @@
 79	it	it	PRON	_	_	78	obj	_	_
 80	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 168
+# sent_id = 167
 # text = And it came to pass that the Lord of the vineyard said unto his servant:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6668,7 +6665,7 @@
 15	servant	servant	NOUN	_	_	12	obl	_	_
 16	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 169
+# sent_id = 168
 # text = Let us go down into the nethermost parts of the vineyard, and behold if the natural branches have also brought forth evil fruit.
 1	Let	let	VERB	_	_	0	root	_	_
 2	us	we	PRON	_	_	1	obj	_	_
@@ -6696,7 +6693,7 @@
 24	fruit	fruit	NOUN	_	_	21	obj	_	_
 25	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 170
+# sent_id = 169
 # text = And it came to pass that they went down into the nethermost parts of the vineyard.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6716,7 +6713,7 @@
 16	vineyard	vineyard	NOUN	_	_	13	nmod	_	_
 17	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 171
+# sent_id = 170
 # text = And it came to pass that they beheld that the fruit of the natural branches had become corrupt also; yea, the first and the second and also the last; and they had all become corrupt.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6758,7 +6755,7 @@
 38	corrupt	corrupt	ADJ	_	_	37	xcomp	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 172
+# sent_id = 171
 # text = And the wild fruit of the last had overcome that part of the tree which brought forth good fruit, even that the branch had withered away and died.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	the	the	DET	_	_	4	det	_	_
@@ -6791,7 +6788,7 @@
 29	died	die	VERB	_	_	26	conj	_	_
 30	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 173
+# sent_id = 172
 # text = And it came to pass that the Lord of the vineyard wept, and said unto the servant:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -6813,7 +6810,7 @@
 18	servant	servant	NOUN	_	_	15	obl	_	_
 19	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 174
+# sent_id = 173
 # text = What could I have done more for my vineyard?
 1	What	what	PRON	_	_	5	obj	_	_
 2	could	could	AUX	_	_	5	aux	_	_
@@ -6826,7 +6823,7 @@
 9	vineyard	vineyard	NOUN	_	_	5	obl	_	_
 10	?	?	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 175
+# sent_id = 174
 # text = Behold, I knew that all the fruit of the vineyard, save it were these, had become corrupted.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -6850,7 +6847,7 @@
 20	corrupted	corrupt	VERB	_	_	19	xcomp	_	_
 21	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 176
+# sent_id = 175
 # text = And now these which have once brought forth good fruit have also become corrupted; and now all the trees of my vineyard are good for nothing save it be to be hewn down and cast into the fire.
 1	And	and	CCONJ	_	_	13	cc	_	_
 2	now	now	ADV	_	_	13	advmod	_	_
@@ -6893,7 +6890,7 @@
 39	fire	fire	NOUN	_	_	36	obl	_	_
 40	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 177
+# sent_id = 176
 # text = And behold this last, whose branch hath withered away, I did plant in a good spot of ground; yea, even that which was choice unto me above all other parts of the land of my vineyard.
 1	And	and	CCONJ	_	_	2	cc	_	_
 2	behold	behold	VERB	_	_	0	root	_	_
@@ -6937,7 +6934,7 @@
 40	vineyard	vineyard	NOUN	_	_	37	nmod	_	_
 41	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 178
+# sent_id = 177
 # text = And thou beheldest that I also cut down that which cumbered this spot of ground, that I might plant this tree in the stead thereof.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	thou	you	PRON	_	_	3	nsubj	_	_
@@ -6967,7 +6964,7 @@
 26	thereof	thereof	ADV	_	_	20	advmod	_	_
 27	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 179
+# sent_id = 178
 # text = And thou beheldest that a part thereof brought forth good fruit, and a part thereof brought forth wild fruit; and because I plucked not the branches thereof and cast them into the fire, behold, they have overcome the good branch that it hath withered away.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	thou	you	PRON	_	_	3	nsubj	_	_
@@ -7020,7 +7017,7 @@
 49	away	away	ADV	_	_	48	advmod	_	_
 50	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 180
+# sent_id = 179
 # text = And now, behold, notwithstanding all the care which we have taken of my vineyard, the trees thereof have become corrupted, that they bring forth no good fruit; and these I had hoped to preserve, to have laid up fruit thereof against the season, unto mine own self.
 1	And	and	CCONJ	_	_	22	cc	_	_
 2	now	now	ADV	_	_	22	advmod	_	_
@@ -7078,7 +7075,7 @@
 54	self	self	NOUN	_	_	43	obl	_	_
 55	.	.	PUNCT	_	_	22	punct	_	_
 
-# sent_id = 181
+# sent_id = 180
 # text = But, behold, they have become like unto the wild olive tree, and they are of no worth but to be hewn down and cast into the fire; and it grieveth me that I should lose them.
 1	But	but	CCONJ	_	_	7	cc	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7122,7 +7119,7 @@
 40	them	they	PRON	_	_	39	obj	_	_
 41	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 182
+# sent_id = 181
 # text = But what could I have done more in my vineyard?
 1	But	but	CCONJ	_	_	6	cc	_	_
 2	what	what	PRON	_	_	6	obj	_	_
@@ -7136,7 +7133,7 @@
 10	vineyard	vineyard	NOUN	_	_	6	obl	_	_
 11	?	?	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 183
+# sent_id = 182
 # text = Have I slackened mine hand, that I have not nourished it?
 1	Have	have	AUX	_	_	3	aux	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -7152,7 +7149,7 @@
 12	it	it	PRON	_	_	11	obj	_	_
 13	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 184
+# sent_id = 183
 # text = Nay, I have nourished it, and I have digged about it, and I have pruned it, and I have dunged it; and I have stretched forth mine hand almost all the day long, and the end draweth nigh.
 1	Nay	no	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7200,7 +7197,7 @@
 44	nigh	near	ADV	_	_	43	advmod	_	_
 45	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 185
+# sent_id = 184
 # text = And it grieveth me that I should hew down all the trees of my vineyard, and cast them into the fire that they should be burned.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7231,7 +7228,7 @@
 27	burned	burn	VERB	_	_	18	advcl	_	_
 28	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 186
+# sent_id = 185
 # text = Who is it that has corrupted my vineyard?
 1	Who	who	PRON	_	_	0	root	_	_
 2	is	be	AUX	_	_	1	cop	_	_
@@ -7243,7 +7240,7 @@
 8	vineyard	vineyard	NOUN	_	_	6	obj	_	_
 9	?	?	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 187
+# sent_id = 186
 # text = And it came to pass that the servant said unto his master:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7259,7 +7256,7 @@
 12	master	master	NOUN	_	_	9	obl	_	_
 13	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 188
+# sent_id = 187
 # text = Is it not the loftiness of thy vineyard--have not the branches thereof overcome the roots which are good?
 1	Is	be	AUX	_	_	5	cop	_	_
 2	it	it	PRON	_	_	5	nsubj	_	_
@@ -7283,7 +7280,7 @@
 20	good	good	ADJ	_	_	17	acl:relcl	_	_
 21	?	?	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 189
+# sent_id = 188
 # text = And because the branches have overcome the roots thereof, behold they grew faster than the strength of the roots, taking strength unto themselves.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	because	because	SCONJ	_	_	6	mark	_	_
@@ -7312,7 +7309,7 @@
 25	themselves	themselves	PRON	_	_	22	obl	_	_
 26	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 190
+# sent_id = 189
 # text = Behold, I say, is not this the cause that the trees of thy vineyard have become corrupted?
 1	Behold	behold	INTJ	_	_	10	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7335,7 +7332,7 @@
 19	corrupted	corrupt	VERB	_	_	18	xcomp	_	_
 20	?	?	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 191
+# sent_id = 190
 # text = And it came to pass that the Lord of the vineyard said unto the servant: Let us go to and hew down the trees of the vineyard and cast them into the fire, that they shall not cumber the ground of my vineyard, for I have done all.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7390,7 +7387,7 @@
 51	all	all	DET	_	_	50	obj	_	_
 52	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 192
+# sent_id = 191
 # text = What could I have done more for my vineyard?
 1	What	what	PRON	_	_	5	obj	_	_
 2	could	could	AUX	_	_	5	aux	_	_
@@ -7403,7 +7400,7 @@
 9	vineyard	vineyard	NOUN	_	_	5	obl	_	_
 10	?	?	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 193
+# sent_id = 192
 # text = But, behold, the servant said unto the Lord of the vineyard: Spare it a little longer.
 1	But	but	CCONJ	_	_	7	cc	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7426,7 +7423,7 @@
 19	longer	long	ADV	_	_	15	advmod	_	_
 20	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 194
+# sent_id = 193
 # text = And the Lord said: Yea, I will spare it a little longer, for it grieveth me that I should lose the trees of my vineyard.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -7458,7 +7455,7 @@
 28	vineyard	vineyard	NOUN	_	_	25	nmod	_	_
 29	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 195
+# sent_id = 194
 # text = Wherefore, let us take of the branches of these which I have planted in the nethermost parts of my vineyard, and let us graft them into the tree from whence they came; and let us pluck from the tree those branches whose fruit is most bitter, and graft in the natural branches of the tree in the stead thereof.
 1	Wherefore	so	ADV	_	_	3	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7525,7 +7522,7 @@
 63	thereof	thereof	ADV	_	_	62	advmod	_	_
 64	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 196
+# sent_id = 195
 # text = And this will I do that the tree may not perish, that, perhaps, I may preserve unto myself the roots thereof for mine own purpose.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	this	this	PRON	_	_	5	nsubj	_	_
@@ -7557,7 +7554,7 @@
 28	purpose	purpose	NOUN	_	_	23	nmod	_	_
 29	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 197
+# sent_id = 196
 # text = And, behold, the roots of the natural branches of the tree which I planted whithersoever I would are yet alive; wherefore, that I may preserve them also for mine own purpose, I will take of the branches of this tree, and I will graft them in unto them.
 1	And	and	CCONJ	_	_	22	cc	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7615,7 +7612,7 @@
 54	them	they	PRON	_	_	50	obl	_	_
 55	.	.	PUNCT	_	_	22	punct	_	_
 
-# sent_id = 198
+# sent_id = 197
 # text = Yea, I will graft in unto them the branches of their mother tree, that I may preserve the roots also unto mine own self, that when they shall be sufficiently strong perhaps they may bring forth good fruit unto me, and I may yet have glory in the fruit of my vineyard.
 1	Yea	yes	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7675,7 +7672,7 @@
 56	vineyard	vineyard	NOUN	_	_	53	nmod	_	_
 57	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 199
+# sent_id = 198
 # text = And it came to pass that they took from the natural tree which had become wild, and grafted in unto the natural trees, which also had become wild.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -7709,7 +7706,7 @@
 30	wild	wild	ADJ	_	_	29	xcomp	_	_
 31	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 200
+# sent_id = 199
 # text = And they also took of the natural trees which had become wild, and grafted into their mother tree.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -7732,7 +7729,7 @@
 19	tree	tree	NOUN	_	_	15	obl	_	_
 20	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 201
+# sent_id = 200
 # text = And the Lord of the vineyard said unto the servant: Pluck not the wild branches from the trees, save it be those which are most bitter; and in them ye shall graft according to that which I have said.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -7778,7 +7775,7 @@
 42	said	say	VERB	_	_	38	acl:relcl	_	_
 43	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 202
+# sent_id = 201
 # text = And we will nourish again the trees of the vineyard, and we will trim up the branches thereof; and we will pluck from the trees those branches which are ripened, that must perish, and cast them into the fire.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	we	we	PRON	_	_	4	nsubj	_	_
@@ -7825,7 +7822,7 @@
 43	fire	fire	NOUN	_	_	39	obl	_	_
 44	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 203
+# sent_id = 202
 # text = And this I do that, perhaps, the roots thereof may take strength because of their goodness; and because of the change of the branches, that the good may overcome the evil.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	this	this	PRON	_	_	4	reparandum	_	_
@@ -7864,7 +7861,7 @@
 35	evil	evil	NOUN	_	_	33	obj	_	_
 36	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 204
+# sent_id = 203
 # text = And because that I have preserved the natural branches and the roots thereof, and that I have grafted in the natural branches again into their mother tree, and have preserved the roots of their mother tree, that, perhaps, the trees of my vineyard may bring forth again good fruit; and that I may have joy again in the fruit of my vineyard, and, perhaps, that I may rejoice exceedingly that I have preserved the roots and the branches of the first fruit--
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	because	because	SCONJ	_	_	6	mark	_	_
@@ -7960,7 +7957,7 @@
 92	-	-	PUNCT	_	_	91	punct	_	_
 93	-	-	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 205
+# sent_id = 204
 # text = Wherefore, go to, and call servants, that we may labor diligently with our might in the vineyard, that we may prepare the way, that I may bring forth again the natural fruit, which natural fruit is good and the most precious above all other fruit.
 1	Wherefore	so	ADV	_	_	3	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -8015,7 +8012,7 @@
 51	fruit	fruit	NOUN	_	_	47	obl	_	_
 52	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 206
+# sent_id = 205
 # text = Wherefore, let us go to and labor with our might this last time, for behold the end draweth nigh, and this is for the last time that I shall prune my vineyard.
 1	Wherefore	so	ADV	_	_	3	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -8054,7 +8051,7 @@
 35	vineyard	vineyard	NOUN	_	_	33	obj	_	_
 36	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 207
+# sent_id = 206
 # text = Graft in the branches; begin at the last that they may be first, and that the first may be last, and dig about the trees, both old and young, the first and the last; and the last and the first, that all may be nourished once again for the last time.
 1	Graft	graft	NOUN	_	_	0	root	_	_
 2	in	in	ADP	_	_	4	case	_	_
@@ -8116,7 +8113,7 @@
 58	time	time	NOUN	_	_	52	obl	_	_
 59	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 208
+# sent_id = 207
 # text = Wherefore, dig about them, and prune them, and dung them once more, for the last time, for the end draweth nigh.
 1	Wherefore	so	ADV	_	_	3	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -8146,7 +8143,7 @@
 26	nigh	near	ADV	_	_	25	advmod	_	_
 27	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 209
+# sent_id = 208
 # text = And if it be so that these last grafts shall grow, and bring forth the natural fruit, then shall ye prepare the way for them, that they may grow.
 1	And	and	CCONJ	_	_	23	cc	_	_
 2	if	if	SCONJ	_	_	11	mark	_	_
@@ -8182,7 +8179,7 @@
 32	grow	grow	VERB	_	_	23	advcl	_	_
 33	.	.	PUNCT	_	_	23	punct	_	_
 
-# sent_id = 210
+# sent_id = 209
 # text = And as they begin to grow ye shall clear away the branches which bring forth bitter fruit, according to the strength of the good and the size thereof; and ye shall not clear away the bad thereof all at once, lest the roots thereof should be too strong for the graft, and the graft thereof shall perish, and I lose the trees of my vineyard.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	as	as	SCONJ	_	_	4	mark	_	_
@@ -8256,7 +8253,7 @@
 70	vineyard	vineyard	NOUN	_	_	67	nmod	_	_
 71	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 211
+# sent_id = 210
 # text = For it grieveth me that I should lose the trees of my vineyard; wherefore ye shall clear away the bad according as the good shall grow, that the root and the top may be equal in strength, until the good shall overcome the bad, and the bad be hewn down and cast into the fire, that they cumber not the ground of my vineyard; and thus will I sweep away the bad out of my vineyard.
 1	For	for	SCONJ	_	_	3	mark	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8342,7 +8339,7 @@
 82	vineyard	vineyard	NOUN	_	_	75	obl	_	_
 83	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 212
+# sent_id = 211
 # text = And the branches of the natural tree will I graft in again into the natural tree;
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -8362,7 +8359,7 @@
 16	tree	tree	NOUN	_	_	10	obl	_	_
 17	;	;	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 213
+# sent_id = 212
 # text = And the branches of the natural tree will I graft into the natural branches of the tree; and thus will I bring them together again, that they shall bring forth the natural fruit, and they shall be one.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -8407,7 +8404,7 @@
 41	one	one	NUM	_	_	23	conj	_	_
 42	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 214
+# sent_id = 213
 # text = And the bad shall be cast away, yea, even out of all the land of my vineyard; for behold, only this once will I prune my vineyard.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -8442,7 +8439,7 @@
 31	vineyard	vineyard	NOUN	_	_	29	obj	_	_
 32	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 215
+# sent_id = 214
 # text = And it came to pass that the Lord of the vineyard sent his servant; and the servant went and did as the Lord had commanded him, and brought other servants; and they were few.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8483,7 +8480,7 @@
 37	few	few	ADJ	_	_	19	conj	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 216
+# sent_id = 215
 # text = And the Lord of the vineyard said unto them:
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -8496,7 +8493,7 @@
 9	them	they	PRON	_	_	7	obl	_	_
 10	:	:	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 217
+# sent_id = 216
 # text = Go to, and labor in the vineyard, with your might.
 1	Go	go	VERB	_	_	0	root	_	_
 2	to	to	ADP	_	_	1	obl	_	_
@@ -8512,7 +8509,7 @@
 12	might	might	NOUN	_	_	1	obl	_	_
 13	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 218
+# sent_id = 217
 # text = For behold, this is the last time that I shall nourish my vineyard; for the end is nigh at hand, and the season speedily cometh; and if ye labor with your might with me ye shall have joy in the fruit which I shall lay up unto myself against the time which will soon come.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	8	obl	_	_
@@ -8575,7 +8572,7 @@
 59	come	come	VERB	_	_	55	acl:relcl	_	_
 60	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 219
+# sent_id = 218
 # text = And it came to pass that the servants did go and labor with their mights; and the Lord of the vineyard labored also with them; and they did obey the commandments of the Lord of the vineyard in all things.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8621,7 +8618,7 @@
 42	things	thing	NOUN	_	_	31	obl	_	_
 43	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 220
+# sent_id = 219
 # text = And there began to be the natural fruit again in the vineyard; and the natural branches began to grow and thrive exceedingly; and the wild branches began to be plucked off and to be cast away; and they did keep the root and the top thereof equal, according to the strength thereof.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -8681,7 +8678,7 @@
 56	thereof	thereof	NOUN	_	_	55	appos	_	_
 57	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 221
+# sent_id = 220
 # text = And thus they labored, with all diligence, according to the commandments of the Lord of the vineyard, even until the bad had been cast away out of the vineyard, and the Lord had preserved unto himself that the trees had become again the natural fruit; and they became like unto one body; and the fruits were equal; and the Lord of the vineyard had preserved unto himself the natural fruit, which was most precious unto him from the beginning.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	thus	thus	ADV	_	_	4	advmod	_	_
@@ -8772,7 +8769,7 @@
 87	beginning	beginning	NOUN	_	_	82	obl	_	_
 88	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 222
+# sent_id = 221
 # text = And it came to pass that when the Lord of the vineyard saw that his fruit was good, and that his vineyard was no more corrupt, he called up his servants, and said unto them: Behold, for this last time have we nourished my vineyard; and thou beholdest that I have done according to my will; and I have preserved the natural fruit, that it is good, even like as it was in the beginning.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -8860,7 +8857,7 @@
 84	beginning	beginning	NOUN	_	_	75	advcl	_	_
 85	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 223
+# sent_id = 222
 # text = And blessed art thou; for because ye have been diligent in laboring with me in my vineyard, and have kept my commandments, and have brought unto me again the natural fruit, that my vineyard is no more corrupted, and the bad is cast away, behold ye shall have joy with me because of the fruit of my vineyard.
 1	And	and	CCONJ	_	_	2	cc	_	_
 2	blessed	bless	VERB	_	_	0	root	_	_
@@ -8928,7 +8925,7 @@
 64	vineyard	vineyard	NOUN	_	_	61	nmod	_	_
 65	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 224
+# sent_id = 223
 # text = For behold, for a long time will I lay up of the fruit of my vineyard unto mine own self against the season, which speedily cometh; and for the last time have I nourished my vineyard, and pruned it, and dug about it, and dunged it; wherefore I will lay up unto mine own self of the fruit, for a long time, according to that which I have spoken.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	10	obl	_	_
@@ -9010,7 +9007,7 @@
 78	spoken	speak	VERB	_	_	74	acl:relcl	_	_
 79	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 225
+# sent_id = 224
 # text = And when the time cometh that evil fruit shall again come into my vineyard, then will I cause the good and the bad to be gathered; and the good will I preserve unto myself, and the bad will I cast away into its own place.
 1	And	and	CCONJ	_	_	19	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -9062,7 +9059,7 @@
 48	place	place	NOUN	_	_	43	obl	_	_
 49	.	.	PUNCT	_	_	19	punct	_	_
 
-# sent_id = 226
+# sent_id = 225
 # text = And then cometh the season and the end; and my vineyard will I cause to be burned with fire.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	then	then	ADV	_	_	3	advmod	_	_
@@ -9086,7 +9083,7 @@
 20	fire	fire	NOUN	_	_	18	obl	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 227
+# sent_id = 226
 # text = And now, behold, my brethren, as I said unto you that I would prophesy, behold, this is my prophecy--that the things which this prophet Zenos spake, concerning the house of Israel, in the which he likened them unto a tame olive tree, must surely come to pass.
 1	And	and	CCONJ	_	_	24	cc	_	_
 2	now	now	ADV	_	_	24	advmod	_	_
@@ -9147,7 +9144,7 @@
 57	pass	pass	VERB	_	_	55	xcomp	_	_
 58	.	.	PUNCT	_	_	24	punct	_	_
 
-# sent_id = 228
+# sent_id = 227
 # text = And the day that he shall set his hand again the second time to recover his people, is the day, yea, even the last time, that the servants of the Lord shall go forth in his power, to nourish and prune his vineyard; and after that the end soon cometh.
 1	And	and	CCONJ	_	_	21	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -9207,8 +9204,8 @@
 56	cometh	come	VERB	_	_	37	conj	_	_
 57	.	.	PUNCT	_	_	21	punct	_	_
 
-# sent_id = 229
-# text = And how blessed are they who have labored diligently in his vineyard; and how cursed are they who shall be cast out into their own place!
+# sent_id = 228
+# text = And how blessed are they who have labored diligently in his vineyard; and how cursed are they who shall be cast out into their own place! And the world shall be burned with fire.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	how	how	ADV	_	_	3	advmod	_	_
 3	blessed	bless	VERB	_	_	0	root	_	_
@@ -9224,7 +9221,7 @@
 13	;	;	PUNCT	_	_	22	punct	_	_
 14	and	and	CCONJ	_	_	22	cc	_	_
 15	how	how	ADV	_	_	16	advmod	_	_
-16	cursed	curse	VERB	_	_	8	conj	_	_
+16	cursed	curse	VERB	_	_	3	conj	_	_
 17	are	be	AUX	_	_	22	aux:pass	_	_
 18	they	they	PRON	_	_	22	nsubj:pass	_	_
 19	who	who	PRON	_	_	22	nsubj:pass	_	_
@@ -9237,20 +9234,17 @@
 26	own	own	ADJ	_	_	27	amod	_	_
 27	place	place	NOUN	_	_	22	obl	_	_
 28	!	!	PUNCT	_	_	8	punct	_	_
+29	And	and	CCONJ	_	_	34	cc	_	_
+30	the	the	DET	_	_	31	det	_	_
+31	world	world	NOUN	_	_	34	nsubj:pass	_	_
+32	shall	shall	AUX	_	_	34	aux	_	_
+33	be	be	AUX	_	_	34	aux:pass	_	_
+34	burned	burn	VERB	_	_	3	conj	_	_
+35	with	with	ADP	_	_	36	case	_	_
+36	fire	fire	NOUN	_	_	34	obl	_	_
+37	.	.	PUNCT	_	_	34	punct	_	_
 
-# sent_id = 230
-# text = And the world shall be burned with fire.
-1	And	and	CCONJ	_	_	6	cc	_	_
-2	the	the	DET	_	_	3	det	_	_
-3	world	world	NOUN	_	_	6	nsubj:pass	_	_
-4	shall	shall	AUX	_	_	6	aux	_	_
-5	be	be	AUX	_	_	6	aux:pass	_	_
-6	burned	burn	VERB	_	_	0	root	_	_
-7	with	with	ADP	_	_	8	case	_	_
-8	fire	fire	NOUN	_	_	6	obl	_	_
-9	.	.	PUNCT	_	_	6	punct	_	_
-
-# sent_id = 231
+# sent_id = 229
 # text = And how merciful is our God unto us, for he remembereth the house of Israel, both roots and branches; and he stretches forth his hands unto them all the day long; and they are a stiffnecked and a gainsaying people; but as many as will not harden their hearts shall be saved in the kingdom of God.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	how	how	ADV	_	_	3	advmod	_	_
@@ -9316,7 +9310,7 @@
 62	God	God	PROPN	_	_	60	nmod	_	_
 63	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 232
+# sent_id = 230
 # text = Wherefore, my beloved brethren, I beseech of you in words of soberness that ye would repent, and come with full purpose of heart, and cleave unto God as he cleaveth unto you.
 1	Wherefore	so	ADV	_	_	8	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -9356,7 +9350,7 @@
 36	you	you	PRON	_	_	34	obl	_	_
 37	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 233
+# sent_id = 231
 # text = And while his arm of mercy is extended towards you in the light of the day, harden not your hearts.
 1	And	and	CCONJ	_	_	18	cc	_	_
 2	while	while	SCONJ	_	_	8	mark	_	_
@@ -9381,7 +9375,7 @@
 21	hearts	heart	NOUN	_	_	18	obj	_	_
 22	.	.	PUNCT	_	_	18	punct	_	_
 
-# sent_id = 234
+# sent_id = 232
 # text = Yea, today, if ye will hear his voice, harden not your hearts; for why will ye die?
 1	Yea	yes	INTJ	_	_	12	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -9406,7 +9400,7 @@
 21	die	die	VERB	_	_	12	parataxis	_	_
 22	?	?	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 235
+# sent_id = 233
 # text = For behold, after ye have been nourished by the good word of God all the day long, will ye bring forth evil fruit, that ye must be hewn down and cast into the fire?
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	22	obl	_	_
@@ -9447,7 +9441,7 @@
 37	fire	fire	NOUN	_	_	34	obl	_	_
 38	?	?	PUNCT	_	_	22	punct	_	_
 
-# sent_id = 236
+# sent_id = 234
 # text = Behold, will ye reject these words?
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -9458,7 +9452,7 @@
 7	words	word	NOUN	_	_	5	obj	_	_
 8	?	?	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 237
+# sent_id = 235
 # text = Will ye reject the words of the prophets; and will ye reject all the words which have been spoken concerning Christ, after so many have spoken concerning him; and deny the good word of Christ, and the power of God, and the gift of the Holy Ghost, and quench the Holy Spirit, and make a mock of the great plan of redemption, which hath been laid for you?
 1	Will	will	AUX	_	_	3	aux	_	_
 2	ye	you	PRON	_	_	3	nsubj	_	_
@@ -9538,7 +9532,7 @@
 76	you	you	PRON	_	_	74	obl	_	_
 77	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 238
+# sent_id = 236
 # text = Know ye not that if ye will do these things, that the power of the redemption and the resurrection, which is in Christ, will bring you to stand with shame and awful guilt before the bar of God?
 1	Know	know	VERB	_	_	0	root	_	_
 2	ye	you	PRON	_	_	1	iobj	_	_
@@ -9583,7 +9577,7 @@
 41	God	God	PROPN	_	_	39	nmod	_	_
 42	?	?	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 239
+# sent_id = 237
 # text = And according to the power of justice, for justice cannot be denied, ye must go away into that lake of fire and brimstone, whose flames are unquenchable, and whose smoke ascendeth up forever and ever, which lake of fire and brimstone is endless torment.
 1	And	and	CCONJ	_	_	18	cc	_	_
 2	according	accord	VERB	_	_	5	case	_	_
@@ -9637,7 +9631,7 @@
 50	torment	torment	NOUN	_	_	18	conj	_	_
 51	.	.	PUNCT	_	_	18	punct	_	_
 
-# sent_id = 240
+# sent_id = 238
 # text = O then, my beloved brethren, repent ye, and enter in at the strait gate, and continue in the way which is narrow, until ye shall obtain eternal life.
 1	O	o	INTJ	_	_	8	discourse	_	_
 2	then	then	ADV	_	_	8	advmod	_	_
@@ -9674,7 +9668,7 @@
 33	life	life	NOUN	_	_	31	obj	_	_
 34	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 241
+# sent_id = 239
 # text = O be wise; what can I say more?
 1	O	o	AUX	_	_	3	aux	_	_
 2	be	be	AUX	_	_	3	cop	_	_
@@ -9687,7 +9681,7 @@
 9	more	more	ADJ	_	_	8	obj	_	_
 10	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 242
+# sent_id = 240
 # text = Finally, I bid you farewell, until I shall meet you before the pleasing bar of God, which bar striketh the wicked with awful dread and fear.
 1	Finally	finally	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -9720,12 +9714,12 @@
 29	fear	fear	NOUN	_	_	27	conj	_	_
 30	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 243
+# sent_id = 241
 # text = Amen.
 1	Amen	amen	INTJ	_	_	0	root	_	_
 2	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 244
+# sent_id = 242
 # text = And now it came to pass after some years had passed away, there came a man among the people of Nephi, whose name was Sherem.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -9756,7 +9750,7 @@
 27	Sherem	Sherem	PROPN	_	_	22	acl:relcl	_	_
 28	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 245
+# sent_id = 243
 # text = And it came to pass that he began to preach among the people, and to declare unto them that there should be no Christ.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -9785,7 +9779,7 @@
 25	Christ	Christ	PROPN	_	_	23	nsubj	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 246
+# sent_id = 244
 # text = And he preached many things which were flattering unto the people; and this he did that he might overthrow the doctrine of Christ.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -9813,7 +9807,7 @@
 24	Christ	Christ	PROPN	_	_	22	nmod	_	_
 25	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 247
+# sent_id = 245
 # text = And he labored diligently that he might lead away the hearts of the people, insomuch that he did lead away many hearts; and he knowing that I, Jacob, had faith in Christ who should come, he sought much opportunity that he might come unto me.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -9867,7 +9861,7 @@
 50	me	I	PRON	_	_	48	obl	_	_
 51	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 248
+# sent_id = 246
 # text = And he was learned, that he had a perfect knowledge of the language of the people; wherefore, he could use much flattery, and much power of speech, according to the power of the devil.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj:pass	_	_
@@ -9910,7 +9904,7 @@
 39	devil	devil	NOUN	_	_	36	nmod	_	_
 40	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 249
+# sent_id = 247
 # text = And he had hope to shake me from the faith, notwithstanding the many revelations and the many things which I had seen concerning these things; for I truly had seen angels, and they had ministered unto me.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -9954,7 +9948,7 @@
 40	me	I	PRON	_	_	38	obl	_	_
 41	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 250
+# sent_id = 248
 # text = And also, I had heard the voice of the Lord speaking unto me in very word, from time to time; wherefore, I could not be shaken.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	also	also	ADV	_	_	6	advmod	_	_
@@ -9988,7 +9982,7 @@
 30	shaken	shake	VERB	_	_	6	parataxis	_	_
 31	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 251
+# sent_id = 249
 # text = And it came to pass that he came unto me, and on this wise did he speak unto me, saying: Brother Jacob, I have sought much opportunity that I might speak unto you; for I have heard and also know that thou goest about much, preaching that which ye call the gospel, or the doctrine of Christ.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10056,7 +10050,7 @@
 64	Christ	Christ	PROPN	_	_	62	nmod	_	_
 65	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 252
+# sent_id = 250
 # text = And ye have led away much of this people that they pervert the right way of God, and keep not the law of Moses which is the right way; and convert the law of Moses into the worship of a being which ye say shall come many hundred years hence.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	ye	you	PRON	_	_	4	nsubj	_	_
@@ -10112,7 +10106,7 @@
 52	hence	hence	ADV	_	_	48	advmod	_	_
 53	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 253
+# sent_id = 251
 # text = And now behold, I, Sherem, declare unto you that this is blasphemy; for no man knoweth of such things; for he cannot tell of things to come.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	now	now	ADV	_	_	9	advmod	_	_
@@ -10149,7 +10143,7 @@
 33	come	come	VERB	_	_	31	acl	_	_
 34	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 254
+# sent_id = 252
 # text = And after this manner did Sherem contend against me.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	after	after	SCONJ	_	_	4	case	_	_
@@ -10162,7 +10156,7 @@
 9	me	I	PRON	_	_	7	obl	_	_
 10	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 255
+# sent_id = 253
 # text = But behold, the Lord God poured in his Spirit into my soul, insomuch that I did confound him in all his words.
 1	But	but	CCONJ	_	_	7	cc	_	_
 2	behold	behold	INTJ	_	_	7	discourse	_	_
@@ -10190,7 +10184,7 @@
 24	words	word	NOUN	_	_	19	obl	_	_
 25	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 256
+# sent_id = 254
 # text = And I said unto him: Deniest thou the Christ who shall come?
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -10207,14 +10201,14 @@
 13	come	come	VERB	_	_	10	acl:relcl	_	_
 14	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 257
+# sent_id = 255
 # text = And he said:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
 3	said	say	VERB	_	_	0	root	_	_
 4	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 258
+# sent_id = 256
 # text = If there should be a Christ, I would not deny him; but I know that there is no Christ, neither has been, nor ever will be.
 1	If	if	SCONJ	_	_	4	mark	_	_
 2	there	there	PRON	_	_	4	expl	_	_
@@ -10248,7 +10242,7 @@
 30	be	be	AUX	_	_	19	conj	_	_
 31	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 259
+# sent_id = 257
 # text = And I said unto him: Believest thou the scriptures?
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -10262,7 +10256,7 @@
 10	scriptures	scripture	NOUN	_	_	7	obj	_	_
 11	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 260
+# sent_id = 258
 # text = And he said, Yea.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -10271,7 +10265,7 @@
 5	Yea	yes	INTJ	_	_	3	discourse	_	_
 6	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 261
+# sent_id = 259
 # text = And I said unto him: Then ye do not understand them; for they truly testify of Christ.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -10294,7 +10288,7 @@
 19	Christ	Christ	PROPN	_	_	17	obl	_	_
 20	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 262
+# sent_id = 260
 # text = Behold, I say unto you that none of the prophets have written, nor prophesied, save they have spoken concerning this Christ.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -10322,7 +10316,7 @@
 24	Christ	Christ	PROPN	_	_	21	obl	_	_
 25	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 263
+# sent_id = 261
 # text = And this is not all--it has been made manifest unto me, for I have heard and seen; and it also has been made manifest unto me by the power of the Holy Ghost; wherefore, I know if there should be no atonement made all mankind must be lost.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	this	this	PRON	_	_	5	nsubj	_	_
@@ -10380,7 +10374,7 @@
 54	lost	lose	VERB	_	_	42	ccomp	_	_
 55	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 264
+# sent_id = 262
 # text = And it came to pass that he said unto me:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10394,7 +10388,7 @@
 10	me	I	PRON	_	_	8	obl	_	_
 11	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 265
+# sent_id = 263
 # text = Show me a sign by this power of the Holy Ghost, in the which ye know so much.
 1	Show	show	VERB	_	_	0	root	_	_
 2	me	I	PRON	_	_	1	iobj	_	_
@@ -10417,7 +10411,7 @@
 19	much	much	ADJ	_	_	17	advmod	_	_
 20	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 266
+# sent_id = 264
 # text = And I said unto him: What am I that I should tempt God to show unto thee a sign in the thing which thou knowest to be true?
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -10450,7 +10444,7 @@
 29	true	true	ADJ	_	_	26	xcomp	_	_
 30	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 267
+# sent_id = 265
 # text = Yet thou wilt deny it, because thou art of the devil.
 1	Yet	yet	CCONJ	_	_	4	cc	_	_
 2	thou	you	PRON	_	_	4	nsubj	_	_
@@ -10466,7 +10460,7 @@
 12	devil	devil	NOUN	_	_	4	advcl	_	_
 13	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 268
+# sent_id = 266
 # text = Nevertheless, not my will be done; but if God shall smite thee, let that be a sign unto thee that he has power, both in heaven and in earth; and also, that Christ shall come.
 1	Nevertheless	nevertheless	ADV	_	_	7	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -10511,7 +10505,7 @@
 41	come	come	VERB	_	_	20	acl	_	_
 42	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 269
+# sent_id = 267
 # text = And thy will, O Lord, be done, and not mine.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	thy	your	PRON	_	_	3	nmod:poss	_	_
@@ -10528,7 +10522,7 @@
 13	mine	my	PRON	_	_	9	conj	_	_
 14	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 270
+# sent_id = 268
 # text = And it came to pass that when I, Jacob, had spoken these words, the power of the Lord came upon him, insomuch that he fell to the earth.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10564,7 +10558,7 @@
 32	earth	earth	NOUN	_	_	29	obl	_	_
 33	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 271
+# sent_id = 269
 # text = And it came to pass that he was nourished for the space of many days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10583,7 +10577,7 @@
 15	days	day	NOUN	_	_	12	nmod	_	_
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 272
+# sent_id = 270
 # text = And it came to pass that he said unto the people: Gather together on the morrow, for I shall die; wherefore, I desire to speak unto the people before I shall die.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10623,7 +10617,7 @@
 36	die	die	VERB	_	_	29	advcl	_	_
 37	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 273
+# sent_id = 271
 # text = And it came to pass that on the morrow the multitude were gathered together; and he spake plainly unto them and denied the things which he had taught them, and confessed the Christ, and the power of the Holy Ghost, and the ministering of angels.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10676,7 +10670,7 @@
 49	angels	angel	NOUN	_	_	47	nmod	_	_
 50	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 274
+# sent_id = 272
 # text = And he spake plainly unto them, that he had been deceived by the power of the devil.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -10698,7 +10692,7 @@
 18	devil	devil	NOUN	_	_	15	nmod	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 275
+# sent_id = 273
 # text = And he spake of hell, and of eternity, and of eternal punishment.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -10716,7 +10710,7 @@
 14	punishment	punishment	NOUN	_	_	9	conj	_	_
 15	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 276
+# sent_id = 274
 # text = And he said: I fear lest I have committed the unpardonable sin, for I have lied unto God; for I denied the Christ, and said that I believed the scriptures; and they truly testify of him.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -10761,7 +10755,7 @@
 41	him	he	PRON	_	_	39	obl	_	_
 42	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 277
+# sent_id = 275
 # text = And because I have thus lied unto God I greatly fear lest my case shall be awful; but I confess unto God.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	because	because	SCONJ	_	_	6	mark	_	_
@@ -10788,7 +10782,7 @@
 23	God	God	PROPN	_	_	21	obl	_	_
 24	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 278
+# sent_id = 276
 # text = And it came to pass that when he had said these words he could say no more, and he gave up the ghost.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10816,7 +10810,7 @@
 24	ghost	ghost	NOUN	_	_	21	obj	_	_
 25	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 279
+# sent_id = 277
 # text = And when the multitude had witnessed that he spake these things as he was about to give up the ghost, they were astonished exceedingly; insomuch that the power of God came down upon them, and they were overcome that they fell to the earth.
 1	And	and	CCONJ	_	_	24	cc	_	_
 2	when	when	ADV	_	_	6	advmod	_	_
@@ -10867,7 +10861,7 @@
 47	earth	earth	NOUN	_	_	44	obl	_	_
 48	.	.	PUNCT	_	_	24	punct	_	_
 
-# sent_id = 280
+# sent_id = 278
 # text = Now, this thing was pleasing unto me, Jacob, for I had requested it of my Father who was in heaven; for he had heard my cry and answered my prayer.
 1	Now	now	ADV	_	_	6	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -10905,7 +10899,7 @@
 34	prayer	prayer	NOUN	_	_	32	obj	_	_
 35	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 281
+# sent_id = 279
 # text = And it came to pass that peace and the love of God was restored again among the people; and they searched the scriptures, and hearkened no more to the words of this wicked man.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10945,7 +10939,7 @@
 36	man	man	NOUN	_	_	32	nmod	_	_
 37	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 282
+# sent_id = 280
 # text = And it came to pass that many means were devised to reclaim and restore the Lamanites to the knowledge of the truth; but it all was vain, for they delighted in wars and bloodshed, and they had an eternal hatred against us, their brethren.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -10997,7 +10991,7 @@
 48	brethren	brother	NOUN	_	_	45	appos	_	_
 49	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 283
+# sent_id = 281
 # text = And they sought by the power of their arms to destroy us continually.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -11014,7 +11008,7 @@
 13	continually	continually	ADV	_	_	11	advmod	_	_
 14	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 284
+# sent_id = 282
 # text = Wherefore, the people of Nephi did fortify against them with their arms, and with all their might, trusting in the God and rock of their salvation; wherefore, they became as yet, conquerors of their enemies.
 1	Wherefore	so	ADV	_	_	8	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -11059,7 +11053,7 @@
 41	enemies	enemy	NOUN	_	_	38	nmod	_	_
 42	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 285
+# sent_id = 283
 # text = And it came to pass that I, Jacob, began to be old; and the record of this people being kept on the other plates of Nephi, wherefore, I conclude this record, declaring that I have written according to the best of my knowledge, by saying that the time passed away with us, and also our lives passed away like as it were unto us a dream, we being a lonesome and a solemn people, wanderers, cast out from Jerusalem, born in tribulation, in a wilderness, and hated of our brethren, which caused wars and contentions; wherefore, we did mourn out our days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -11182,7 +11176,7 @@
 119	days	day	NOUN	_	_	116	obj	_	_
 120	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 286
+# sent_id = 284
 # text = And I, Jacob, saw that I must soon go down to my grave; wherefore, I said unto my son Enos: Take these plates.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	I	I	PRON	_	_	6	nsubj	_	_
@@ -11214,7 +11208,7 @@
 28	plates	plate	NOUN	_	_	26	obj	_	_
 29	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 287
+# sent_id = 285
 # text = And I told him the things which my brother Nephi had commanded me, and he promised obedience unto the commands.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -11239,7 +11233,7 @@
 21	commands	command	NOUN	_	_	17	obl	_	_
 22	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 288
+# sent_id = 286
 # text = And I make an end of my writing upon these plates, which writing has been small; and to the reader I bid farewell, hoping that many of my brethren may read my words.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -11279,7 +11273,7 @@
 36	words	word	NOUN	_	_	34	obj	_	_
 37	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 289
+# sent_id = 287
 # text = Brethren, adieu.
 1	Brethren	Brother	NOUN	_	_	0	root	_	_
 2	,	,	PUNCT	_	_	3	punct	_	_
