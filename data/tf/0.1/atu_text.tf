@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T21:49:35+00:00Z
+@dateWritten=2026-06-01T21:56:40+00:00Z
 
 302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -1305,8 +1305,7 @@ The Lord God surely shall visit all the house of Israel at that day, some with h
 And all these things must surely come,
 saith the prophet Zenos.
 And the rocks of the earth must rend;
-and because of the groanings of the earth, many of the kings of the isles of the sea shall be wrought upon by the Spirit of God, to exclaim:
-The God of nature suffers.
+and because of the groanings of the earth, many of the kings of the isles of the sea shall be wrought upon by the Spirit of God, to exclaim: The God of nature suffers.
 And as for those who are at Jerusalem, saith
 the prophet, they shall be scourged by all people, because they crucify the God of Israel, and turn their hearts aside, rejecting signs and wonders, and the power and glory of the God of Israel.
 And because they turn their hearts aside, saith the prophet, and have despised the Holy One of Israel, they shall wander in the flesh, and perish, and become a hiss and a byword, and be hated among all nations.
@@ -1676,8 +1675,9 @@ And ye have murmured because he hath been plain unto you.
 Ye say that he hath used sharpness;
 ye say that he hath been angry with you;
 but behold, his sharpness was the sharpness of the power of the word of God, which was in him; and that which ye call anger was the truth, according to that which is in God, which he could not restrain, manifesting boldly concerning your iniquities.
-And it must needs be that the power of God must be with him, even unto his commanding you that ye must obey.
-But behold, it was not he, but it was the Spirit of the Lord which was in him, which opened his mouth to utterance that he could not shut it.
+And it must needs be
+that the power of God must be with him, even unto his commanding you that ye must obey. But behold, it was not he, but it was the Spirit of the Lord which was in him, which opened his mouth to utterance
+that he could not shut it.
 And now my son, Laman, and also Lemuel and Sam, and also my sons who are the sons of Ishmael, behold, if ye will hearken unto the voice of Nephi ye shall not perish.
 And if ye will hearken unto him I leave unto you a blessing, yea, even my first blessing.
 But if ye will not hearken unto him I take away my first blessing, yea, even my blessing,
@@ -1687,8 +1687,7 @@ nevertheless, thou hast been brought out of the land of Jerusalem,
 and I know that thou art a true friend unto my son, Nephi, forever.
 Wherefore, because thou hast been faithful thy seed shall be blessed with his seed, that they dwell in prosperity long upon the face of this land; and nothing, save it shall be iniquity among them, shall harm or disturb their prosperity upon the face of this land forever.
 Wherefore, if ye shall keep the commandments of the Lord, the Lord hath consecrated this land for the security of thy seed with the seed of my son.
-And now, Jacob, I speak unto you:
-Thou art my firstborn in the days of my tribulation in the wilderness.
+And now, Jacob, I speak unto you: Thou art my firstborn in the days of my tribulation in the wilderness.
 And behold, in thy childhood thou hast suffered afflictions and much sorrow, because of the rudeness of thy brethren.
 Nevertheless, Jacob, my firstborn in the wilderness, thou knowest the greatness of God;
 and he shall consecrate thine afflictions for thy gain.
@@ -1889,14 +1888,12 @@ Blessed art thou, and thy seed;
 for thou shalt inherit the land like unto thy brother Nephi.
 And thy seed shall be numbered with his seed; and thou shalt be even like unto thy brother, and thy seed like unto his seed;
 and thou shalt be blessed in all thy days.
-And it came to pass after my father, Lehi, had spoken unto all his household, according to the feelings of his heart and the Spirit of the Lord which was in him, he waxed old.
-And it came to pass that he died, and was buried.
+And it came to pass after my father, Lehi, had spoken unto all his household, according to the feelings of his heart and the Spirit of the Lord which was in him, he waxed old. And it came to pass that he died, and was buried.
 And it came to pass that not many days after his death, Laman and Lemuel and the sons of Ishmael were angry with me because of the admonitions of the Lord.
 For I, Nephi, was constrained to speak unto them, according to his word;
 for I had spoken many things unto them, and also my father,
 before his death; many of which sayings are written upon mine other plates; for a more history part are written upon mine other plates.
-And upon these I write the things of my soul, and many of the scriptures which are engraven upon the plates of brass.
-For my soul delighteth in the scriptures,
+And upon these I write the things of my soul, and many of the scriptures which are engraven upon the plates of brass. For my soul delighteth in the scriptures,
 and my heart pondereth them, and writeth them for the learning and the profit of my children.
 Behold, my soul delighteth in the things of the Lord;
 and my heart pondereth continually upon the things which I have seen and heard.
@@ -1999,8 +1996,7 @@ were not built of so many precious things; for they were not to be found upon th
 wherefore, it could not be built like unto Solomon's temple.
 But the manner of the construction was like unto the temple of Solomon; and the workmanship thereof was exceedingly fine.
 And it came to pass that I, Nephi, did cause my people to be industrious, and to labor with their hands.
-And it came to pass that they would that I should be their king.
-But I, Nephi, was desirous that they should have no king;
+And it came to pass that they would that I should be their king. But I, Nephi, was desirous that they should have no king;
 nevertheless, I did for them according to that which was in my power.
 And behold, the words of the Lord had been fulfilled unto my brethren, which he spake concerning them, that I should be their ruler and their teacher.
 Wherefore, I had been their ruler and their teacher, according to the commandments of the Lord, until the time they sought to take away my life.
@@ -2287,7 +2283,8 @@ and they have gone forth out of his mouth,
 and his law must be fulfilled.
 But, behold, the righteous, the saints of the Holy One of Israel, they who have believed in the Holy One of Israel, they who have endured the crosses of the world, and despised the shame of it, they shall inherit the kingdom of God, which was prepared for them from the foundation of the world, and their joy shall be full forever.
 O the greatness of the mercy of our God, the Holy One of Israel!
-For he delivereth his saints from that awful monster the devil, and death, and hell, and that lake of fire and brimstone, which is endless torment.
+For he delivereth his saints from that awful monster
+the devil, and death, and hell, and that lake of fire and brimstone, which is endless torment.
 O how great the holiness of our God!
 For he knoweth all things,
 and there is not anything save he knows it.
@@ -3265,10 +3262,11 @@ we rejoice in Christ,
 we preach of Christ,
 we prophesy of Christ,
 and we write according to our prophecies, that our children may know to what source they may look for a remission of their sins.
-Wherefore, we speak concerning the law that our children may know the deadness of the law;
+Wherefore, we speak concerning the law
+that our children may know the deadness of the law;
 and they, by knowing the deadness of the law, may look forward unto that life which is in Christ,
-and know for what end the law was given.
-And after the law is fulfilled in Christ, that they need not harden their hearts against him when the law ought to be done away.
+and know for what end the law was given. And after the law is fulfilled in Christ,
+that they need not harden their hearts against him when the law ought to be done away.
 And now behold, my people, ye are a stiffnecked people;
 wherefore, I have spoken plainly unto you, that ye cannot misunderstand.
 And the words which I have spoken shall stand as a testimony against you;
@@ -3496,8 +3494,7 @@ And they also say:
 Surely, your turning of things upside down shall be esteemed as the potter's clay.
 But behold, I will show unto them, saith the Lord of Hosts, that I know all their works.
 For shall the work say of him that made it,
-he made me not?
-Or shall the thing framed say of him that framed it, he had no understanding?
+he made me not? Or shall the thing framed say of him that framed it, he had no understanding?
 But behold, saith the Lord of Hosts:
 I will show unto the children of men that it is yet a very little while
 and Lebanon shall be turned into a fruitful field;
@@ -3771,8 +3768,7 @@ to him will the Father give the Holy Ghost, like unto me; wherefore, follow me, 
 Wherefore, my beloved brethren, I know that if ye shall follow the Son, with full purpose of heart, acting no hypocrisy and no deception before God, but with real intent, repenting of your sins, witnessing unto the Father that ye are willing to take upon you the name of Christ, by baptism--yea, by following your Lord and your Savior down into the water, according to his word, behold, then shall ye receive the Holy Ghost;
 yea, then cometh the baptism of fire and of the Holy Ghost;
 and then can ye speak with the tongue of angels, and shout praises unto the Holy One of Israel.
-But, behold, my beloved brethren, thus came the voice of the Son unto me, saying:
-After ye have repented of your sins, and witnessed unto the Father
+But, behold, my beloved brethren, thus came the voice of the Son unto me, saying: After ye have repented of your sins, and witnessed unto the Father
 that ye are willing to keep my commandments, by the baptism of water, and have received the baptism of fire and of the Holy Ghost, and can speak with a new tongue, yea, even with the tongue of angels, and after this should deny me, it would have been better for you
 that ye had not known me.
 And I heard a voice from the Father, saying: Yea,
@@ -6974,7 +6970,8 @@ And now behold, I say unto you, my brethren, if ye have experienced a change of 
 and if ye have felt to sing the song of redeeming love, I would ask,
 can ye feel so now?
 Have ye walked, keeping yourselves blameless before God?
-Could ye say, if ye were called to die at this time, within yourselves, that ye have been sufficiently humble?
+Could ye say, if ye were called to die at this time, within yourselves,
+that ye have been sufficiently humble?
 That your garments have been cleansed and made white through the blood of Christ, who will come to redeem his people from their sins?
 Behold, are ye stripped of pride?
 I say unto you,
@@ -9143,8 +9140,7 @@ neither has any of my brethren,
 save it were in the judgment-seat;
 and then we have received only according to law for our time.
 And now, if we do not receive anything for our labors in the church, what doth it profit us to labor in the church save it were to declare the truth, that we may have rejoicings in the joy of our brethren?
-Then why sayest thou that we preach unto this people to get gain, when thou, of thyself, knowest that we receive no gain?
-And now, believest thou that we deceive this people, that causes such joy in their hearts?
+Then why sayest thou that we preach unto this people to get gain, when thou, of thyself, knowest that we receive no gain? And now, believest thou that we deceive this people, that causes such joy in their hearts?
 And Korihor answered him, Yea.
 And then Alma said unto him:
 Believest thou that there is a God?
@@ -10182,8 +10178,7 @@ that thou mayest bring souls unto repentance,
 that the great plan of mercy may have claim upon them.
 And may God grant unto you even according to my words.
 Amen.
-And now it came to pass that the sons of Alma did go forth among the people, to declare the word unto them.
-And Alma, also, himself, could not rest,
+And now it came to pass that the sons of Alma did go forth among the people, to declare the word unto them. And Alma, also, himself, could not rest,
 and he also went forth.
 Now we shall say no more concerning their preaching, except that they preached the word, and the truth, according to the spirit of prophecy and revelation;
 and they preached after the holy order of God by which they were called.
@@ -12976,8 +12971,7 @@ And it came to pass that there was no darkness in all that night, but it was as 
 And it had come to pass, yea, all things, every whit, according to the words of the prophets.
 And it came to pass also that a new star did appear, according to the word.
 And it came to pass that from this time forth there began to be lyings sent forth among the people, by Satan, to harden their hearts, to the intent that they might not believe in those signs and wonders which they had seen; but notwithstanding these lyings and deceivings the more part of the people did believe, and were converted unto the Lord.
-And it came to pass that Nephi went forth among the people, and also many others, baptizing unto repentance, in the which there was a great remission of sins.
-And thus the people began again to have peace in the land.
+And it came to pass that Nephi went forth among the people, and also many others, baptizing unto repentance, in the which there was a great remission of sins. And thus the people began again to have peace in the land.
 And there were no contentions,
 save it were a few that began to preach, endeavoring to prove by the scriptures that it was no more expedient to observe the law of Moses.
 Now in this thing they did err, having not understood the scriptures.
@@ -13022,8 +13016,7 @@ And their curse was taken from them,
 and their skin became white like unto the Nephites;
 And their young men and their daughters became exceedingly fair,
 and they were numbered among the Nephites,
-and were called Nephites.
-And thus ended the thirteenth year.
+and were called Nephites. And thus ended the thirteenth year.
 And it came to pass in the commencement of the fourteenth year, the war between the robbers and the people of Nephi did continue and did become exceedingly sore;
 nevertheless, the people of Nephi did gain some advantage of the robbers, insomuch that they did drive them back out of their lands into the mountains and into their secret places.
 And thus ended the fourteenth year.
@@ -13302,7 +13295,8 @@ And it came to pass in the thirty and first year that they were divided into tri
 that they would not go to war one with another;
 but they were not united as to their laws, and their manner of government,
 for they were established according to the minds of those who were their chiefs and their leaders.
-But they did establish very strict laws that one tribe should not trespass against another, insomuch that in some degree they had peace in the land;
+But they did establish very strict laws that one tribe should not trespass against another, insomuch
+that in some degree they had peace in the land;
 nevertheless, their hearts were turned from the Lord their God,
 and they did stone the prophets and did cast them out from among them.
 And it came to pass that Nephi--having been visited by angels and also the voice of the Lord, therefore having seen angels, and being eye-witness, and having had power given unto him that he might know concerning the ministry of Christ, and also being eye-witness to their quick return from righteousness unto their wickedness and abominations;
@@ -13435,8 +13429,7 @@ Therefore, whoso repenteth and cometh unto me as a little child,
 him will I receive, for of such is the kingdom of God.
 Behold, for such I have laid down my life, and have taken it up again; therefore repent, and come unto me
 ye ends of the earth, and be saved.
-And now behold, it came to pass that all the people of the land did hear these sayings, and did witness of it.
-And after these sayings there was silence in the land for the space of many hours;
+And now behold, it came to pass that all the people of the land did hear these sayings, and did witness of it. And after these sayings there was silence in the land for the space of many hours;
 For so great was the astonishment of the people that they did cease lamenting and howling for the loss of their kindred which had been slain;
 therefore there was silence in all the land for the space of many hours.
 And it came to pass that there came a voice again unto the people, and all the people did hear, and did witness of it, saying:
@@ -13447,8 +13440,7 @@ and ye would not.
 O ye house of Israel whom I have spared, how oft will I gather you as a hen gathereth her chickens under her wings, if ye will repent and return unto me with full purpose of heart.
 But if not, O house of Israel, the places of your dwellings shall become desolate until the time of the fulfilling of the covenant to your fathers.
 And now it came to pass that after the people had heard these words, behold, they began to weep and howl again because of the loss of their kindred and friends.
-And it came to pass that thus did the three days pass away.
-And it was in the morning,
+And it came to pass that thus did the three days pass away. And it was in the morning,
 and the darkness dispersed from off the face of the land,
 and the earth did cease to tremble,
 and the rocks did cease to rend,
@@ -13472,8 +13464,7 @@ Behold, I say unto you, Yea,
 many have testified of these things at the coming of Christ, and were slain because they testified of these things.
 Yea, the prophet Zenos did testify of these things,
 and also Zenock spake concerning these things, because they testified particularly concerning us, who are the remnant of their seed.
-Behold, our father Jacob also testified concerning a remnant of the seed of Joseph.
-And behold, are not we a remnant of the seed of Joseph?
+Behold, our father Jacob also testified concerning a remnant of the seed of Joseph. And behold, are not we a remnant of the seed of Joseph?
 And these things which testify of us, are they not written upon the plates of brass which our father Lehi brought out of Jerusalem?
 And it came to pass that in the ending of the thirty and fourth year, behold, I will show unto you that the people of Nephi who were spared, and also those who had been called Lamanites, who had been spared, did have great favors shown unto them,
 and great blessings poured out upon their heads, insomuch that soon after the ascension of Christ into heaven he did truly manifest himself unto them --
@@ -13633,8 +13624,7 @@ Therefore come unto me and be ye saved;
 for verily I say unto you, that except ye shall keep my commandments, which I have commanded you at this time, ye shall in no case enter into the kingdom of heaven.
 Ye have heard that it hath been said by them of old time,
 and it is also written before you, that thou shalt not kill, and whosoever shall kill shall be in danger of the judgment of God;
-But I say unto you, that whosoever is angry with his brother shall be in danger of his judgment.
-And whosoever shall say to his brother, Raca, shall be in danger of the council;
+But I say unto you, that whosoever is angry with his brother shall be in danger of his judgment. And whosoever shall say to his brother, Raca, shall be in danger of the council;
 and whosoever shall say,
 Thou fool,
 shall be in danger of hell fire.
@@ -14027,8 +14017,8 @@ and ye shall do it in remembrance of my blood, which I have shed for you,
 that ye may witness unto the Father
 that ye do always remember me.
 And if ye do always remember me ye shall have my Spirit to be with you.
-And I give unto you a commandment that ye shall do these things.
-And if ye shall always do these things blessed are ye, for ye are built upon my rock.
+And I give unto you a commandment that ye shall do these things. And if ye shall always do these things blessed are ye,
+for ye are built upon my rock.
 But whoso among you shall do more or less than these are not built upon my rock, but are built upon a sandy foundation;
 and when the rain descends,
 and the floods come, and the winds blow, and beat upon them,
@@ -14218,8 +14208,7 @@ And it shall come to pass, saith the Father, that the sword of my justice shall 
 and except they repent it shall fall upon them,
 saith the Father, yea, even upon all the nations of the Gentiles.
 And it shall come to pass that I will establish my people, O house of Israel.
-And behold, this people will I establish in this land, unto the fulfilling of the covenant which I made with your father Jacob; and it shall be a New Jerusalem.
-And the powers of heaven shall be in the midst of this people;
+And behold, this people will I establish in this land, unto the fulfilling of the covenant which I made with your father Jacob; and it shall be a New Jerusalem. And the powers of heaven shall be in the midst of this people;
 yea, even I will be in the midst of you.
 Behold, I am he of whom Moses spake, saying:
 A prophet shall the Lord your God raise up unto you of your brethren, like unto me;
@@ -14859,10 +14848,8 @@ but they did wilfully rebel against the gospel of Christ;
 and they did teach their children that they should not believe, even as their fathers, from the beginning, did dwindle.
 And it was because of the wickedness and abomination of their fathers, even as it was in the beginning.
 And they were taught to hate the children of God, even as the Lamanites were taught to hate the children of Nephi from the beginning.
-And it came to pass that two hundred and forty and four years had passed away, and thus were the affairs of the people.
-And the more wicked part of the people did wax strong, and became exceedingly more numerous than were the people of God.
-And they did still continue to build up churches unto themselves, and adorn them with all manner of precious things.
-And thus did two hundred and fifty years pass away, and also two hundred and sixty years.
+And it came to pass that two hundred and forty and four years had passed away, and thus were the affairs of the people. And the more wicked part of the people did wax strong, and became exceedingly more numerous than were the people of God.
+And they did still continue to build up churches unto themselves, and adorn them with all manner of precious things. And thus did two hundred and fifty years pass away, and also two hundred and sixty years.
 And it came to pass that the wicked part of the people began again to build up the secret oaths and combinations of Gadianton.
 And also the people who were called the people of Nephi began to be proud in their hearts, because of their exceeding riches, and become vain like unto their brethren, the Lamanites.
 And from this time the disciples began to sorrow for the sins of the world.

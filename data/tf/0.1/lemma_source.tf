@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T21:49:37+00:00Z
+@dateWritten=2026-06-01T21:56:42+00:00Z
 
 stanza
 stanza

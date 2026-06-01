@@ -1843,7 +1843,7 @@
 64	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 38
-# text = And it was because of the wickedness and abomination of their fathers, even as it was in the beginning.
+# text = And it was because of the wickedness and abomination of their fathers, even as it was in the beginning. And they were taught to hate the children of God, even as the Lamanites were taught to hate the children of Nephi from the beginning.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	it	it	PRON	_	_	7	nsubj	_	_
 3	was	be	AUX	_	_	7	cop	_	_
@@ -1865,39 +1865,36 @@
 19	the	the	DET	_	_	20	det	_	_
 20	beginning	beginning	NOUN	_	_	7	advcl	_	_
 21	.	.	PUNCT	_	_	7	punct	_	_
+22	And	and	CCONJ	_	_	25	cc	_	_
+23	they	they	PRON	_	_	25	nsubj:pass	_	_
+24	were	be	AUX	_	_	25	aux:pass	_	_
+25	taught	teach	VERB	_	_	7	conj	_	_
+26	to	to	PART	_	_	27	mark	_	_
+27	hate	hate	VERB	_	_	25	xcomp	_	_
+28	the	the	DET	_	_	29	det	_	_
+29	children	child	NOUN	_	_	27	obj	_	_
+30	of	of	ADP	_	_	31	case	_	_
+31	God	God	PROPN	_	_	29	nmod	_	_
+32	,	,	PUNCT	_	_	38	punct	_	_
+33	even	even	ADV	_	_	38	advmod	_	_
+34	as	as	SCONJ	_	_	38	mark	_	_
+35	the	the	DET	_	_	36	det	_	_
+36	Lamanites	Lamanites	PROPN	_	_	38	nsubj:pass	_	_
+37	were	be	AUX	_	_	38	aux:pass	_	_
+38	taught	teach	VERB	_	_	27	advcl	_	_
+39	to	to	PART	_	_	40	mark	_	_
+40	hate	hate	VERB	_	_	38	xcomp	_	_
+41	the	the	DET	_	_	42	det	_	_
+42	children	child	NOUN	_	_	40	obj	_	_
+43	of	of	ADP	_	_	44	case	_	_
+44	Nephi	Nephi	PROPN	_	_	42	nmod	_	_
+45	from	from	ADP	_	_	47	case	_	_
+46	the	the	DET	_	_	47	det	_	_
+47	beginning	beginning	NOUN	_	_	40	obl	_	_
+48	.	.	PUNCT	_	_	25	punct	_	_
 
 # sent_id = 39
-# text = And they were taught to hate the children of God, even as the Lamanites were taught to hate the children of Nephi from the beginning.
-1	And	and	CCONJ	_	_	4	cc	_	_
-2	they	they	PRON	_	_	4	nsubj:pass	_	_
-3	were	be	AUX	_	_	4	aux:pass	_	_
-4	taught	teach	VERB	_	_	0	root	_	_
-5	to	to	PART	_	_	6	mark	_	_
-6	hate	hate	VERB	_	_	4	xcomp	_	_
-7	the	the	DET	_	_	8	det	_	_
-8	children	child	NOUN	_	_	6	obj	_	_
-9	of	of	ADP	_	_	10	case	_	_
-10	God	God	PROPN	_	_	8	nmod	_	_
-11	,	,	PUNCT	_	_	17	punct	_	_
-12	even	even	ADV	_	_	17	advmod	_	_
-13	as	as	SCONJ	_	_	17	mark	_	_
-14	the	the	DET	_	_	15	det	_	_
-15	Lamanites	Lamanites	PROPN	_	_	17	nsubj:pass	_	_
-16	were	be	AUX	_	_	17	aux:pass	_	_
-17	taught	teach	VERB	_	_	6	advcl	_	_
-18	to	to	PART	_	_	19	mark	_	_
-19	hate	hate	VERB	_	_	17	xcomp	_	_
-20	the	the	DET	_	_	21	det	_	_
-21	children	child	NOUN	_	_	19	obj	_	_
-22	of	of	ADP	_	_	23	case	_	_
-23	Nephi	Nephi	PROPN	_	_	21	nmod	_	_
-24	from	from	ADP	_	_	26	case	_	_
-25	the	the	DET	_	_	26	det	_	_
-26	beginning	beginning	NOUN	_	_	19	obl	_	_
-27	.	.	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 40
-# text = And it came to pass that two hundred and forty and four years had passed away, and thus were the affairs of the people.
+# text = And it came to pass that two hundred and forty and four years had passed away, and thus were the affairs of the people. And the more wicked part of the people did wax strong, and became exceedingly more numerous than were the people of God.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
 3	came	come	VERB	_	_	0	root	_	_
@@ -1924,36 +1921,33 @@
 24	the	the	DET	_	_	25	det	_	_
 25	people	person	NOUN	_	_	22	nmod	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
+27	And	and	CCONJ	_	_	36	cc	_	_
+28	the	the	DET	_	_	31	det	_	_
+29	more	more	ADV	_	_	30	advmod	_	_
+30	wicked	wicked	ADJ	_	_	31	amod	_	_
+31	part	part	NOUN	_	_	36	nsubj	_	_
+32	of	of	ADP	_	_	34	case	_	_
+33	the	the	DET	_	_	34	det	_	_
+34	people	person	NOUN	_	_	31	nmod	_	_
+35	did	do	AUX	_	_	36	aux	_	_
+36	wax	wax	VERB	_	_	3	conj	_	_
+37	strong	strong	ADJ	_	_	36	xcomp	_	_
+38	,	,	PUNCT	_	_	40	punct	_	_
+39	and	and	CCONJ	_	_	40	cc	_	_
+40	became	become	VERB	_	_	36	conj	_	_
+41	exceedingly	exceedingly	ADV	_	_	42	advmod	_	_
+42	more	more	ADV	_	_	43	advmod	_	_
+43	numerous	numerous	ADJ	_	_	40	xcomp	_	_
+44	than	than	SCONJ	_	_	47	mark	_	_
+45	were	be	AUX	_	_	47	cop	_	_
+46	the	the	DET	_	_	47	det	_	_
+47	people	person	NOUN	_	_	43	advcl	_	_
+48	of	of	ADP	_	_	49	case	_	_
+49	God	God	PROPN	_	_	47	nmod	_	_
+50	.	.	PUNCT	_	_	36	punct	_	_
 
-# sent_id = 41
-# text = And the more wicked part of the people did wax strong, and became exceedingly more numerous than were the people of God.
-1	And	and	CCONJ	_	_	10	cc	_	_
-2	the	the	DET	_	_	5	det	_	_
-3	more	more	ADV	_	_	4	advmod	_	_
-4	wicked	wicked	ADJ	_	_	5	amod	_	_
-5	part	part	NOUN	_	_	10	nsubj	_	_
-6	of	of	ADP	_	_	8	case	_	_
-7	the	the	DET	_	_	8	det	_	_
-8	people	person	NOUN	_	_	5	nmod	_	_
-9	did	do	AUX	_	_	10	aux	_	_
-10	wax	wax	VERB	_	_	0	root	_	_
-11	strong	strong	ADJ	_	_	10	xcomp	_	_
-12	,	,	PUNCT	_	_	14	punct	_	_
-13	and	and	CCONJ	_	_	14	cc	_	_
-14	became	become	VERB	_	_	10	conj	_	_
-15	exceedingly	exceedingly	ADV	_	_	16	advmod	_	_
-16	more	more	ADV	_	_	17	advmod	_	_
-17	numerous	numerous	ADJ	_	_	14	xcomp	_	_
-18	than	than	SCONJ	_	_	21	mark	_	_
-19	were	be	AUX	_	_	21	cop	_	_
-20	the	the	DET	_	_	21	det	_	_
-21	people	person	NOUN	_	_	17	advcl	_	_
-22	of	of	ADP	_	_	23	case	_	_
-23	God	God	PROPN	_	_	21	nmod	_	_
-24	.	.	PUNCT	_	_	10	punct	_	_
-
-# sent_id = 42
-# text = And they did still continue to build up churches unto themselves, and adorn them with all manner of precious things.
+# sent_id = 40
+# text = And they did still continue to build up churches unto themselves, and adorn them with all manner of precious things. And thus did two hundred and fifty years pass away, and also two hundred and sixty years.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	they	they	PRON	_	_	5	nsubj	_	_
 3	did	do	AUX	_	_	5	aux	_	_
@@ -1976,30 +1970,27 @@
 20	precious	precious	ADJ	_	_	21	amod	_	_
 21	things	thing	NOUN	_	_	18	nmod	_	_
 22	.	.	PUNCT	_	_	5	punct	_	_
+23	And	and	CCONJ	_	_	25	cc	_	_
+24	thus	thus	ADV	_	_	25	advmod	_	_
+25	did	do	VERB	_	_	5	conj	_	_
+26	two	two	NUM	_	_	27	nummod	_	_
+27	hundred	hundred	NUM	_	_	30	nummod	_	_
+28	and	and	CCONJ	_	_	29	cc	_	_
+29	fifty	fifty	NUM	_	_	27	conj	_	_
+30	years	year	NOUN	_	_	25	obj	_	_
+31	pass	pass	VERB	_	_	25	xcomp	_	_
+32	away	away	ADV	_	_	31	advmod	_	_
+33	,	,	PUNCT	_	_	40	punct	_	_
+34	and	and	CCONJ	_	_	40	cc	_	_
+35	also	also	ADV	_	_	40	advmod	_	_
+36	two	two	NUM	_	_	37	nummod	_	_
+37	hundred	hundred	NUM	_	_	40	nummod	_	_
+38	and	and	CCONJ	_	_	40	cc	_	_
+39	sixty	sixty	NUM	_	_	37	conj	_	_
+40	years	year	NOUN	_	_	31	conj	_	_
+41	.	.	PUNCT	_	_	25	punct	_	_
 
-# sent_id = 43
-# text = And thus did two hundred and fifty years pass away, and also two hundred and sixty years.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	thus	thus	ADV	_	_	3	advmod	_	_
-3	did	do	VERB	_	_	0	root	_	_
-4	two	two	NUM	_	_	5	nummod	_	_
-5	hundred	hundred	NUM	_	_	8	nummod	_	_
-6	and	and	CCONJ	_	_	7	cc	_	_
-7	fifty	fifty	NUM	_	_	5	conj	_	_
-8	years	year	NOUN	_	_	3	obj	_	_
-9	pass	pass	VERB	_	_	3	xcomp	_	_
-10	away	away	ADV	_	_	9	advmod	_	_
-11	,	,	PUNCT	_	_	18	punct	_	_
-12	and	and	CCONJ	_	_	18	cc	_	_
-13	also	also	ADV	_	_	18	advmod	_	_
-14	two	two	NUM	_	_	15	nummod	_	_
-15	hundred	hundred	NUM	_	_	18	nummod	_	_
-16	and	and	CCONJ	_	_	18	cc	_	_
-17	sixty	sixty	NUM	_	_	15	conj	_	_
-18	years	year	NOUN	_	_	9	conj	_	_
-19	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 44
+# sent_id = 41
 # text = And it came to pass that the wicked part of the people began again to build up the secret oaths and combinations of Gadianton.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -2027,7 +2018,7 @@
 24	Gadianton	Gadianton	PROPN	_	_	22	nmod	_	_
 25	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 45
+# sent_id = 42
 # text = And also the people who were called the people of Nephi began to be proud in their hearts, because of their exceeding riches, and become vain like unto their brethren, the Lamanites.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	also	also	ADV	_	_	12	advmod	_	_
@@ -2066,7 +2057,7 @@
 35	Lamanites	Lamanites	PROPN	_	_	32	appos	_	_
 36	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 46
+# sent_id = 43
 # text = And from this time the disciples began to sorrow for the sins of the world.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	from	from	ADP	_	_	4	case	_	_
@@ -2085,7 +2076,7 @@
 15	world	world	NOUN	_	_	12	nmod	_	_
 16	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 47
+# sent_id = 44
 # text = And it came to pass that when three hundred years had passed away, both the people of Nephi and the Lamanites had become exceedingly wicked one like unto another.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -2119,8 +2110,8 @@
 30	another	another	DET	_	_	26	obl	_	_
 31	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 48
-# text = And it came to pass that the robbers of Gadianton did spread over all the face of the land; and there were none that were righteous save it were the disciples of Jesus.
+# sent_id = 45
+# text = And it came to pass that the robbers of Gadianton did spread over all the face of the land; and there were none that were righteous save it were the disciples of Jesus. And gold and silver did they lay up in store in abundance, and did traffic in all manner of traffic.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
 3	came	come	VERB	_	_	0	root	_	_
@@ -2156,33 +2147,30 @@
 33	of	of	ADP	_	_	34	case	_	_
 34	Jesus	Jesus	PROPN	_	_	32	nmod	_	_
 35	.	.	PUNCT	_	_	3	punct	_	_
+36	And	and	CCONJ	_	_	42	cc	_	_
+37	gold	gold	NOUN	_	_	42	nsubj	_	_
+38	and	and	CCONJ	_	_	39	cc	_	_
+39	silver	silver	NOUN	_	_	37	conj	_	_
+40	did	do	AUX	_	_	42	aux	_	_
+41	they	they	PRON	_	_	42	nsubj	_	_
+42	lay	lay	VERB	_	_	3	conj	_	_
+43	up	up	ADP	_	_	42	compound:prt	_	_
+44	in	in	ADP	_	_	45	case	_	_
+45	store	store	NOUN	_	_	42	obl	_	_
+46	in	in	ADP	_	_	47	case	_	_
+47	abundance	abundance	NOUN	_	_	42	obl	_	_
+48	,	,	PUNCT	_	_	50	punct	_	_
+49	and	and	CCONJ	_	_	50	cc	_	_
+50	did	do	VERB	_	_	42	conj	_	_
+51	traffic	traffic	NOUN	_	_	50	obj	_	_
+52	in	in	ADP	_	_	54	case	_	_
+53	all	all	DET	_	_	54	det	_	_
+54	manner	manner	NOUN	_	_	50	obl	_	_
+55	of	of	ADP	_	_	56	case	_	_
+56	traffic	traffic	NOUN	_	_	54	nmod	_	_
+57	.	.	PUNCT	_	_	42	punct	_	_
 
-# sent_id = 49
-# text = And gold and silver did they lay up in store in abundance, and did traffic in all manner of traffic.
-1	And	and	CCONJ	_	_	7	cc	_	_
-2	gold	gold	NOUN	_	_	7	nsubj	_	_
-3	and	and	CCONJ	_	_	4	cc	_	_
-4	silver	silver	NOUN	_	_	2	conj	_	_
-5	did	do	AUX	_	_	7	aux	_	_
-6	they	they	PRON	_	_	7	nsubj	_	_
-7	lay	lay	VERB	_	_	0	root	_	_
-8	up	up	ADP	_	_	7	compound:prt	_	_
-9	in	in	ADP	_	_	10	case	_	_
-10	store	store	NOUN	_	_	7	obl	_	_
-11	in	in	ADP	_	_	12	case	_	_
-12	abundance	abundance	NOUN	_	_	7	obl	_	_
-13	,	,	PUNCT	_	_	15	punct	_	_
-14	and	and	CCONJ	_	_	15	cc	_	_
-15	did	do	VERB	_	_	7	conj	_	_
-16	traffic	traffic	NOUN	_	_	15	obj	_	_
-17	in	in	ADP	_	_	19	case	_	_
-18	all	all	DET	_	_	19	det	_	_
-19	manner	manner	NOUN	_	_	15	obl	_	_
-20	of	of	ADP	_	_	21	case	_	_
-21	traffic	traffic	NOUN	_	_	19	nmod	_	_
-22	.	.	PUNCT	_	_	7	punct	_	_
-
-# sent_id = 50
+# sent_id = 46
 # text = And it came to pass that after three hundred and five years had passed away, (and the people did still remain in wickedness)
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -2211,7 +2199,7 @@
 25	wickedness	wickedness	NOUN	_	_	23	obl	_	_
 26	)	)	PUNCT	_	_	23	punct	_	_
 
-# sent_id = 51
+# sent_id = 47
 # text = Amos died; and his brother, Ammaron, did keep the record in his stead.
 1	Amos	Amos	PROPN	_	_	2	nsubj	_	_
 2	died	die	VERB	_	_	0	root	_	_
@@ -2231,7 +2219,7 @@
 16	stead	stead	NOUN	_	_	11	obl	_	_
 17	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 52
+# sent_id = 48
 # text = And it came to pass that when three hundred and twenty years had passed away, Ammaron, being constrained by the Holy Ghost, did hide up the records which were sacred--yea, even all the sacred records which had been handed down from generation to generation, which were sacred--even until the three hundred and twentieth year from the coming of Christ.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -2303,7 +2291,7 @@
 68	Christ	Christ	PROPN	_	_	66	nmod	_	_
 69	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 53
+# sent_id = 49
 # text = And he did hide them up unto the Lord, that they might come again unto the remnant of the house of Jacob, according to the prophecies and the promises of the Lord.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -2341,7 +2329,7 @@
 34	Lord	Lord	PROPN	_	_	31	nmod	_	_
 35	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 54
+# sent_id = 50
 # text = And thus is the end of the record of Ammaron.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	thus	thus	ADV	_	_	5	advmod	_	_
