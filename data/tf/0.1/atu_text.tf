@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T23:43:21+00:00Z
+@dateWritten=2026-06-01T23:48:04+00:00Z
 
 302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -808,7 +808,8 @@ the one is the church of the Lamb of God, and the other is the church of the dev
 wherefore, whoso belongeth not to the church of the Lamb of God belongeth to that great church, which is the mother of abominations; and she is the whore of all the earth.
 And it came to pass that I looked and beheld the whore of all the earth, and she sat upon many waters;
 and she had dominion over all the earth, among all nations, kindreds, tongues, and people.
-And it came to pass that I beheld the church of the Lamb of God, and its numbers were few, because of the wickedness and abominations of the whore who sat upon many waters; nevertheless, I beheld that the church of the Lamb, who were the saints of God, were also upon all the face of the earth; and their dominions upon the face of the earth were small, because of the wickedness of the great whore whom I saw.
+And it came to pass that I beheld the church of the Lamb of God, and its numbers were few, because of the wickedness and abominations of the whore who sat upon many waters;
+nevertheless, I beheld that the church of the Lamb, who were the saints of God, were also upon all the face of the earth; and their dominions upon the face of the earth were small, because of the wickedness of the great whore whom I saw.
 And it came to pass that I beheld that the great mother of abominations did gather together multitudes upon the face of all the earth, among all the nations of the Gentiles, to fight against the Lamb of God.
 And it came to pass that I, Nephi, beheld the power of the Lamb of God, that it descended upon the saints of the church of the Lamb, and upon the covenant people of the Lord, who were scattered upon all the face of the earth; and they were armed with righteousness and with the power of God in great glory.
 And it came to pass that I beheld that the wrath of God was poured out upon that great and abominable church, insomuch that there were wars and rumors of wars among all the nations and kindreds of the earth.
@@ -3338,10 +3339,8 @@ Wherefore, as those who have been destroyed have been destroyed speedily; and th
 yea, thus saith the Lord God:
 It shall be at an instant, suddenly--
 And it shall come to pass, that those who have dwindled in unbelief shall be smitten by the hand of the Gentiles.
-And the Gentiles are lifted up in the pride of their eyes, and have stumbled, because of the greatness of their stumbling block,
-that they have built up many churches;
-nevertheless, they put down the power and miracles of God, and preach up unto themselves their own wisdom and their own learning,
-that they may get gain and grind upon the face of the poor.
+And the Gentiles are lifted up in the pride of their eyes, and have stumbled, because of the greatness of their stumbling block, that they have built up many churches;
+nevertheless, they put down the power and miracles of God, and preach up unto themselves their own wisdom and their own learning, that they may get gain and grind upon the face of the poor.
 And there are many churches built up which cause envyings, and strifes, and malice.
 And there are also secret combinations, even as in times of old, according to the combinations of the devil,
 for he is the founder of all these things; yea, the founder of murder, and works of darkness;
@@ -3558,9 +3557,7 @@ and their churches are lifted up; because of pride they are puffed up.
 They rob the poor because of their fine sanctuaries;
 they rob the poor because of their fine clothing;
 and they persecute the meek and the poor in heart, because in their pride they are puffed up.
-They wear stiff necks and high heads; yea, and because of pride, and wickedness, and abominations, and whoredoms,
-they have all gone astray save
-it be a few, who are the humble followers of Christ;
+They wear stiff necks and high heads; yea, and because of pride, and wickedness, and abominations, and whoredoms, they have all gone astray save it be a few, who are the humble followers of Christ;
 nevertheless, they are led, that in many instances they do err because they are taught by the precepts of men.
 O the wise, and the learned, and the rich, that are puffed up in the pride of their hearts, and all those who preach false doctrines, and all those who commit whoredoms, and pervert the right way of the Lord,
 wo, wo, wo be unto them,
@@ -6369,9 +6366,7 @@ And there began to be much peace again in the land;
 and the people began to be very numerous, and began to scatter abroad upon the face of the earth, yea, on the north and on the south, on the east and on the west, building large cities and villages in all quarters of the land.
 And the Lord did visit them and prosper them,
 and they became a large and wealthy people.
-Now the sons of Mosiah were numbered among the unbelievers;
-and also one of the sons of Alma was numbered among them,
-he being called Alma, after his father;
+Now the sons of Mosiah were numbered among the unbelievers; and also one of the sons of Alma was numbered among them, he being called Alma, after his father;
 nevertheless, he became a very wicked and an idolatrous man.
 And he was a man of many words, and did speak much flattery to the people;
 therefore he led many of the people to do after the manner of his iniquities.
@@ -6511,8 +6506,7 @@ Now after Mosiah had finished translating these records, behold, it gave an acco
 at the time the Lord confounded the language of the people
 and they were scattered abroad upon the face of all the earth,
 yea, and even from that time back until the creation of Adam.
-Now this account did cause the people of Mosiah to mourn exceedingly,
-yea, they were filled with sorrow;
+Now this account did cause the people of Mosiah to mourn exceedingly, yea, they were filled with sorrow;
 nevertheless it gave them much knowledge, in the which they did rejoice.
 And this account shall be written hereafter;
 for behold, it is expedient that all people should know the things which are written in this account.
@@ -6541,7 +6535,8 @@ for we have no right to destroy my son,
 neither should we have any right to destroy another if he should be appointed in his stead.
 And if my son should turn again to his pride and vain things he would recall the things which he had said, and claim his right to the kingdom, which would cause him and also this people to commit much sin.
 And now let us be wise and look forward to these things, and do that which will make for the peace of this people.
-Therefore I will be your king the remainder of my days; nevertheless, let us appoint judges, to judge this people according to our law;
+Therefore I will be your king the remainder of my days;
+nevertheless, let us appoint judges, to judge this people according to our law;
 and we will newly arrange the affairs of this people,
 for we will appoint wise men to be judges, that will judge this people according to the commandments of God.
 Now it is better that a man should be judged of God than of man, for the judgments of God are always just, but the judgments of man are not always just.
@@ -6787,8 +6782,7 @@ And it came to pass that the Nephites who were not slain by the weapons of war, 
 Now many women and children had been slain with the sword, and also many of their flocks and their herds;
 and also many of their fields of grain were destroyed, for they were trodden down by the hosts of men.
 And now as many of the Lamanites and the Amlicites who had been slain upon the bank of the river Sidon were cast into the waters of Sidon; and behold their bones are in the depths of the sea, and they are many.
-And the Amlicites were distinguished from the Nephites,
-for they had marked themselves with red in their foreheads after the manner of the Lamanites;
+And the Amlicites were distinguished from the Nephites, for they had marked themselves with red in their foreheads after the manner of the Lamanites;
 nevertheless they had not shorn their heads like unto the Lamanites.
 Now the heads of the Lamanites were shorn; and they were naked,
 save it were skin which was girded about their loins, and also their armor, which was girded about them, and their bows, and their arrows, and their stones, and their slings, and so forth.
@@ -7270,10 +7264,7 @@ Go; and also say unto my servant Amulek, go forth and prophesy unto this people,
 yea, and I will not turn my fierce anger away.
 And Alma went forth, and also Amulek, among the people, to declare the words of God unto them;
 and they were filled with the Holy Ghost.
-And they had power given unto them, insomuch
-that they could not be confined in dungeons;
-neither was it possible
-that any man could slay them;
+And they had power given unto them, insomuch that they could not be confined in dungeons; neither was it possible that any man could slay them;
 nevertheless they did not exercise their power until they were bound in bands and cast into prison.
 Now, this was done that the Lord might show forth his power in them.
 And it came to pass that they went forth and began to preach and to prophesy unto the people, according to the spirit and power which the Lord had given them.
@@ -14656,7 +14647,8 @@ And whether they were in the body or out of the body, they could not tell;
 for it did seem unto them like a transfiguration of them,
 that they were changed from this body of flesh into an immortal state,
 that they could behold the things of God.
-But it came to pass that they did again minister upon the face of the earth; nevertheless they did not minister of the things which they had heard and seen, because of the commandment which was given them in heaven.
+But it came to pass that they did again minister upon the face of the earth;
+nevertheless they did not minister of the things which they had heard and seen, because of the commandment which was given them in heaven.
 And now, whether they were mortal or immortal, from the day of their transfiguration, I know not;
 But this much I know, according to the record which hath been given--they did go forth upon the face of the land, and did minister unto all the people, uniting as many to the church as would believe in their preaching; baptizing them,
 and as many as were baptized did receive the Holy Ghost.
@@ -15762,7 +15754,8 @@ and they became exceedingly fair;
 wherefore Corihor drew away many people after him.
 And when he had gathered together an army he came up unto the land of Moron where the king dwelt, and took him captive, which brought to pass the saying of the brother of Jared that they would be brought into captivity.
 Now the land of Moron, where the king dwelt, was near the land which is called Desolation by the Nephites.
-And it came to pass that Kib dwelt in captivity, and his people under Corihor his son, until he became exceedingly old; nevertheless Kib begat Shule in his old age, while he was yet in captivity.
+And it came to pass that Kib dwelt in captivity, and his people under Corihor his son, until he became exceedingly old;
+nevertheless Kib begat Shule in his old age, while he was yet in captivity.
 And it came to pass that Shule was angry with his brother; and Shule waxed strong, and became mighty as to the strength of a man; and he was also mighty in judgment.
 Wherefore, he came to the hill Ephraim, and he did molten out of the hill,
 and made swords out of steel for those whom he had drawn away with him;
@@ -15938,7 +15931,8 @@ And it came to pass that they did all these things according to the commandment 
 And it came to pass that there began to be a great dearth upon the land, and the inhabitants began to be destroyed exceedingly fast because of the dearth,
 for there was no rain upon the face of the earth.
 And there came forth poisonous serpents also upon the face of the land, and did poison many people. And it came to pass that their flocks began to flee before the poisonous serpents, towards the land southward, which was called by the Nephites Zarahemla.
-And it came to pass that there were many of them which did perish by the way; nevertheless, there were some which fled into the land southward.
+And it came to pass that there were many of them which did perish by the way;
+nevertheless, there were some which fled into the land southward.
 And it came to pass that the Lord did cause the serpents that they should pursue them no more,
 but that they should hedge up the way
 that the people could not pass,
