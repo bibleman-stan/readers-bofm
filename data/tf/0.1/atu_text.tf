@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T23:04:53+00:00Z
+@dateWritten=2026-06-01T23:14:06+00:00Z
 
 302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -9757,7 +9757,8 @@ that inasmuch as ye shall keep the commandments of God ye shall prosper in the l
 and ye ought to know also, that inasmuch as ye will not keep the commandments of God ye shall be cut off from his presence.
 Now this is according to his word.
 And now, my son Helaman, I command you that ye take the records which have been entrusted with me;
-And I also command you that ye keep a record of this people, according as I have done, upon the plates of Nephi, and keep all these things sacred which I have kept, even as I have kept them;
+And I also command you that ye keep a record of this people, according as I have done, upon the plates of Nephi,
+and keep all these things sacred which I have kept, even as I have kept them;
 for it is for a wise purpose that they are kept.
 And these plates of brass, which contain these engravings, which have the records of the holy scriptures upon them, which have the genealogy of our forefathers, even from the beginning--
 Behold, it has been prophesied by our fathers,
