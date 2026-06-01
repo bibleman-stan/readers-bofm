@@ -35,7 +35,7 @@
 33	--	--	PUNCT	_	_	4	punct	_	_
 
 # sent_id = 1
-# text = Wherefore, in my days, I would that ye should know that I fought much with the sword to preserve my people, the Nephites, from falling into the hands of their enemies, the Lamanites.
+# text = Wherefore, in my days, I would that ye should know that I fought much with the sword to preserve my people, the Nephites, from falling into the hands of their enemies, the Lamanites. But behold, I of myself am a wicked man, and I have not kept the statutes and the commandments of the Lord as I ought to have done.
 1	Wherefore	so	ADV	_	_	8	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	in	in	ADP	_	_	5	case	_	_
@@ -75,43 +75,40 @@
 37	the	the	DET	_	_	38	det	_	_
 38	Lamanites	Lamanites	PROPN	_	_	35	appos	_	_
 39	.	.	PUNCT	_	_	8	punct	_	_
+40	But	but	CCONJ	_	_	49	cc	_	_
+41	behold	behold	INTJ	_	_	49	discourse	_	_
+42	,	,	PUNCT	_	_	41	punct	_	_
+43	I	I	PRON	_	_	49	nsubj	_	_
+44	of	of	ADP	_	_	45	case	_	_
+45	myself	myself	PRON	_	_	43	nmod	_	_
+46	am	be	AUX	_	_	49	cop	_	_
+47	a	a	DET	_	_	49	det	_	_
+48	wicked	wicked	ADJ	_	_	49	amod	_	_
+49	man	man	NOUN	_	_	8	conj	_	_
+50	,	,	PUNCT	_	_	55	punct	_	_
+51	and	and	CCONJ	_	_	55	cc	_	_
+52	I	I	PRON	_	_	55	nsubj	_	_
+53	have	have	AUX	_	_	55	aux	_	_
+54	not	not	PART	_	_	55	advmod	_	_
+55	kept	keep	VERB	_	_	49	conj	_	_
+56	the	the	DET	_	_	57	det	_	_
+57	statutes	statute	NOUN	_	_	55	obj	_	_
+58	and	and	CCONJ	_	_	60	cc	_	_
+59	the	the	DET	_	_	60	det	_	_
+60	commandments	commandment	NOUN	_	_	57	conj	_	_
+61	of	of	ADP	_	_	63	case	_	_
+62	the	the	DET	_	_	63	det	_	_
+63	Lord	Lord	PROPN	_	_	60	nmod	_	_
+64	as	as	SCONJ	_	_	66	mark	_	_
+65	I	I	PRON	_	_	66	nsubj	_	_
+66	ought	ought	AUX	_	_	55	advcl	_	_
+67	to	to	PART	_	_	69	mark	_	_
+68	have	have	AUX	_	_	69	aux	_	_
+69	done	do	VERB	_	_	66	xcomp	_	_
+70	.	.	PUNCT	_	_	49	punct	_	_
 
 # sent_id = 2
-# text = But behold, I of myself am a wicked man, and I have not kept the statutes and the commandments of the Lord as I ought to have done.
-1	But	but	CCONJ	_	_	10	cc	_	_
-2	behold	behold	INTJ	_	_	10	discourse	_	_
-3	,	,	PUNCT	_	_	2	punct	_	_
-4	I	I	PRON	_	_	10	nsubj	_	_
-5	of	of	ADP	_	_	6	case	_	_
-6	myself	myself	PRON	_	_	4	nmod	_	_
-7	am	be	AUX	_	_	10	cop	_	_
-8	a	a	DET	_	_	10	det	_	_
-9	wicked	wicked	ADJ	_	_	10	amod	_	_
-10	man	man	NOUN	_	_	0	root	_	_
-11	,	,	PUNCT	_	_	16	punct	_	_
-12	and	and	CCONJ	_	_	16	cc	_	_
-13	I	I	PRON	_	_	16	nsubj	_	_
-14	have	have	AUX	_	_	16	aux	_	_
-15	not	not	PART	_	_	16	advmod	_	_
-16	kept	keep	VERB	_	_	10	conj	_	_
-17	the	the	DET	_	_	18	det	_	_
-18	statutes	statute	NOUN	_	_	16	obj	_	_
-19	and	and	CCONJ	_	_	21	cc	_	_
-20	the	the	DET	_	_	21	det	_	_
-21	commandments	commandment	NOUN	_	_	18	conj	_	_
-22	of	of	ADP	_	_	24	case	_	_
-23	the	the	DET	_	_	24	det	_	_
-24	Lord	Lord	PROPN	_	_	21	nmod	_	_
-25	as	as	SCONJ	_	_	27	mark	_	_
-26	I	I	PRON	_	_	27	nsubj	_	_
-27	ought	ought	AUX	_	_	16	advcl	_	_
-28	to	to	PART	_	_	30	mark	_	_
-29	have	have	AUX	_	_	30	aux	_	_
-30	done	do	VERB	_	_	27	xcomp	_	_
-31	.	.	PUNCT	_	_	10	punct	_	_
-
-# sent_id = 3
-# text = And it came to pass that two hundred and seventy and six years had passed away, and we had many seasons of peace; and we had many seasons of serious war and bloodshed.
+# text = And it came to pass that two hundred and seventy and six years had passed away, and we had many seasons of peace; and we had many seasons of serious war and bloodshed. Yea, and in fine, two hundred and eighty and two years had passed away, and I had kept these plates according to the commandments of my fathers; and I conferred them upon my son Amaron. And I make an end.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
 3	came	come	VERB	_	_	0	root	_	_
@@ -148,60 +145,54 @@
 34	and	and	CCONJ	_	_	35	cc	_	_
 35	bloodshed	bloodshed	NOUN	_	_	33	conj	_	_
 36	.	.	PUNCT	_	_	3	punct	_	_
+37	Yea	yes	INTJ	_	_	51	discourse	_	_
+38	,	,	PUNCT	_	_	37	punct	_	_
+39	and	and	CCONJ	_	_	51	cc	_	_
+40	in	in	ADP	_	_	41	case	_	_
+41	fine	fine	ADJ	_	_	51	obl	_	_
+42	,	,	PUNCT	_	_	41	punct	_	_
+43	two	two	NUM	_	_	44	nummod	_	_
+44	hundred	hundred	NUM	_	_	51	nsubj	_	_
+45	and	and	CCONJ	_	_	46	cc	_	_
+46	eighty	eighty	NUM	_	_	44	conj	_	_
+47	and	and	CCONJ	_	_	48	cc	_	_
+48	two	two	NUM	_	_	49	nummod	_	_
+49	years	year	NOUN	_	_	51	nsubj	_	_
+50	had	have	AUX	_	_	51	aux	_	_
+51	passed	pass	VERB	_	_	0	root	_	_
+52	away	away	ADV	_	_	51	advmod	_	_
+53	,	,	PUNCT	_	_	57	punct	_	_
+54	and	and	CCONJ	_	_	57	cc	_	_
+55	I	I	PRON	_	_	57	nsubj	_	_
+56	had	have	AUX	_	_	57	aux	_	_
+57	kept	keep	VERB	_	_	51	conj	_	_
+58	these	this	DET	_	_	59	det	_	_
+59	plates	plate	NOUN	_	_	57	obj	_	_
+60	according	accord	VERB	_	_	63	case	_	_
+61	to	to	ADP	_	_	60	fixed	_	_
+62	the	the	DET	_	_	63	det	_	_
+63	commandments	commandment	NOUN	_	_	57	obl	_	_
+64	of	of	ADP	_	_	66	case	_	_
+65	my	my	PRON	_	_	66	nmod:poss	_	_
+66	fathers	father	NOUN	_	_	63	nmod	_	_
+67	;	;	PUNCT	_	_	70	punct	_	_
+68	and	and	CCONJ	_	_	70	cc	_	_
+69	I	I	PRON	_	_	70	nsubj	_	_
+70	conferred	confer	VERB	_	_	51	conj	_	_
+71	them	they	PRON	_	_	70	obj	_	_
+72	upon	upon	ADP	_	_	74	case	_	_
+73	my	my	PRON	_	_	74	nmod:poss	_	_
+74	son	son	NOUN	_	_	70	obl	_	_
+75	Amaron	Amaron	PROPN	_	_	74	appos	_	_
+76	.	.	PUNCT	_	_	51	punct	_	_
+77	And	and	CCONJ	_	_	79	cc	_	_
+78	I	I	PRON	_	_	79	nsubj	_	_
+79	make	make	VERB	_	_	15	conj	_	_
+80	an	a	DET	_	_	81	det	_	_
+81	end	end	NOUN	_	_	79	obj	_	_
+82	.	.	PUNCT	_	_	79	punct	_	_
 
-# sent_id = 4
-# text = Yea, and in fine, two hundred and eighty and two years had passed away, and I had kept these plates according to the commandments of my fathers; and I conferred them upon my son Amaron.
-1	Yea	yes	INTJ	_	_	15	discourse	_	_
-2	,	,	PUNCT	_	_	1	punct	_	_
-3	and	and	CCONJ	_	_	15	cc	_	_
-4	in	in	ADP	_	_	5	case	_	_
-5	fine	fine	ADJ	_	_	15	obl	_	_
-6	,	,	PUNCT	_	_	5	punct	_	_
-7	two	two	NUM	_	_	8	nummod	_	_
-8	hundred	hundred	NUM	_	_	15	nsubj	_	_
-9	and	and	CCONJ	_	_	10	cc	_	_
-10	eighty	eighty	NUM	_	_	8	conj	_	_
-11	and	and	CCONJ	_	_	12	cc	_	_
-12	two	two	NUM	_	_	13	nummod	_	_
-13	years	year	NOUN	_	_	15	nsubj	_	_
-14	had	have	AUX	_	_	15	aux	_	_
-15	passed	pass	VERB	_	_	0	root	_	_
-16	away	away	ADV	_	_	15	advmod	_	_
-17	,	,	PUNCT	_	_	21	punct	_	_
-18	and	and	CCONJ	_	_	21	cc	_	_
-19	I	I	PRON	_	_	21	nsubj	_	_
-20	had	have	AUX	_	_	21	aux	_	_
-21	kept	keep	VERB	_	_	15	conj	_	_
-22	these	this	DET	_	_	23	det	_	_
-23	plates	plate	NOUN	_	_	21	obj	_	_
-24	according	accord	VERB	_	_	27	case	_	_
-25	to	to	ADP	_	_	24	fixed	_	_
-26	the	the	DET	_	_	27	det	_	_
-27	commandments	commandment	NOUN	_	_	21	obl	_	_
-28	of	of	ADP	_	_	30	case	_	_
-29	my	my	PRON	_	_	30	nmod:poss	_	_
-30	fathers	father	NOUN	_	_	27	nmod	_	_
-31	;	;	PUNCT	_	_	34	punct	_	_
-32	and	and	CCONJ	_	_	34	cc	_	_
-33	I	I	PRON	_	_	34	nsubj	_	_
-34	conferred	confer	VERB	_	_	15	conj	_	_
-35	them	they	PRON	_	_	34	obj	_	_
-36	upon	upon	ADP	_	_	38	case	_	_
-37	my	my	PRON	_	_	38	nmod:poss	_	_
-38	son	son	NOUN	_	_	34	obl	_	_
-39	Amaron	Amaron	PROPN	_	_	38	appos	_	_
-40	.	.	PUNCT	_	_	15	punct	_	_
-
-# sent_id = 5
-# text = And I make an end.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	I	I	PRON	_	_	3	nsubj	_	_
-3	make	make	VERB	_	_	0	root	_	_
-4	an	a	DET	_	_	5	det	_	_
-5	end	end	NOUN	_	_	3	obj	_	_
-6	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 6
+# sent_id = 3
 # text = And now I, Amaron, write the things whatsoever I write, which are few, in the book of my father.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -228,7 +219,7 @@
 23	father	father	NOUN	_	_	20	nmod	_	_
 24	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 7
+# sent_id = 4
 # text = Behold, it came to pass that three hundred and twenty years had passed away, and the more wicked part of the Nephites were destroyed.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -258,7 +249,7 @@
 26	destroyed	destroy	VERB	_	_	4	conj	_	_
 27	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 8
+# sent_id = 5
 # text = For the Lord would not suffer, after he had led them out of the land of Jerusalem and kept and preserved them from falling into the hands of their enemies, yea, he would not suffer that the words should not be verified, which he spake unto our fathers, saying that: Inasmuch as ye will not keep my commandments ye shall not prosper in the land.
 1	For	for	SCONJ	_	_	6	mark	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -333,7 +324,7 @@
 71	land	land	NOUN	_	_	68	obl	_	_
 72	.	.	PUNCT	_	_	38	punct	_	_
 
-# sent_id = 9
+# sent_id = 6
 # text = Wherefore, the Lord did visit them in great judgment; nevertheless, he did spare the righteous that they should not perish, but did deliver them out of the hands of their enemies.
 1	Wherefore	so	ADV	_	_	6	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -372,7 +363,7 @@
 35	enemies	enemy	NOUN	_	_	32	nmod	_	_
 36	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 10
+# sent_id = 7
 # text = And it came to pass that I did deliver the plates unto my brother Chemish.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -391,7 +382,7 @@
 15	Chemish	Chemish	PROPN	_	_	14	appos	_	_
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 11
+# sent_id = 8
 # text = Now I, Chemish, write what few things I write, in the same book with my brother; for behold, I saw the last which he wrote, that he wrote it with his own hand; and he wrote it in the day that he delivered them unto me.
 1	Now	now	ADV	_	_	6	advmod	_	_
 2	I	I	PRON	_	_	6	nsubj	_	_
@@ -448,7 +439,7 @@
 53	me	I	PRON	_	_	50	obl	_	_
 54	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 12
+# sent_id = 9
 # text = And after this manner we keep the records, for it is according to the commandments of our fathers.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	after	after	ADP	_	_	4	case	_	_
@@ -471,7 +462,7 @@
 19	fathers	father	NOUN	_	_	16	nmod	_	_
 20	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 13
+# sent_id = 10
 # text = And I make an end.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -480,7 +471,7 @@
 5	end	end	NOUN	_	_	3	obj	_	_
 6	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 14
+# sent_id = 11
 # text = Behold, I, Abinadom, am the son of Chemish.
 1	Behold	behold	INTJ	_	_	9	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -495,7 +486,7 @@
 11	Chemish	Chemish	PROPN	_	_	9	nmod	_	_
 12	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 15
+# sent_id = 12
 # text = Behold, it came to pass that I saw much war and contention between my people, the Nephites, and the Lamanites; and I, with my own sword, have taken the lives of many of the Lamanites in the defence of my brethren.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -546,8 +537,8 @@
 47	brethren	brother	NOUN	_	_	44	nmod	_	_
 48	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 16
-# text = And behold, the record of this people is engraven upon plates which is had by the kings, according to the generations; and I know of no revelation save that which has been written, neither prophecy; wherefore, that which is sufficient is written.
+# sent_id = 13
+# text = And behold, the record of this people is engraven upon plates which is had by the kings, according to the generations; and I know of no revelation save that which has been written, neither prophecy; wherefore, that which is sufficient is written. And I make an end.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	behold	behold	INTJ	_	_	10	discourse	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
@@ -597,17 +588,14 @@
 47	is	be	AUX	_	_	48	aux:pass	_	_
 48	written	write	VERB	_	_	30	acl:relcl	_	_
 49	.	.	PUNCT	_	_	10	punct	_	_
+50	And	and	CCONJ	_	_	52	cc	_	_
+51	I	I	PRON	_	_	52	nsubj	_	_
+52	make	make	VERB	_	_	10	conj	_	_
+53	an	a	DET	_	_	54	det	_	_
+54	end	end	NOUN	_	_	52	obj	_	_
+55	.	.	PUNCT	_	_	52	punct	_	_
 
-# sent_id = 17
-# text = And I make an end.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	I	I	PRON	_	_	3	nsubj	_	_
-3	make	make	VERB	_	_	0	root	_	_
-4	an	a	DET	_	_	5	det	_	_
-5	end	end	NOUN	_	_	3	obj	_	_
-6	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 18
+# sent_id = 14
 # text = Behold, I am Amaleki, the son of Abinadom.
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -621,7 +609,7 @@
 10	Abinadom	Abinadom	PROPN	_	_	8	nmod	_	_
 11	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 19
+# sent_id = 15
 # text = Behold, I will speak unto you somewhat concerning Mosiah, who was made king over the land of Zarahemla; for behold, he being warned of the Lord that he should flee out of the land of Nephi, and as many as would hearken unto the voice of the Lord should also depart out of the land with him, into the wilderness--
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -691,7 +679,7 @@
 66	wilderness	wilderness	NOUN	_	_	56	obl	_	_
 67	--	--	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 20
+# sent_id = 16
 # text = And it came to pass that he did according as the Lord had commanded him.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -710,7 +698,7 @@
 15	him	he	PRON	_	_	14	obj	_	_
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 21
+# sent_id = 17
 # text = And they departed out of the land into the wilderness, as many as would hearken unto the voice of the Lord; and they were led by many preachings and prophesyings.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -746,7 +734,7 @@
 32	prophesyings	prophesying	NOUN	_	_	30	conj	_	_
 33	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 22
+# sent_id = 18
 # text = And they were admonished continually by the word of God; and they were led by the power of his arm, through the wilderness until they came down into the land which is called the land of Zarahemla.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj:pass	_	_
@@ -789,7 +777,7 @@
 39	Zarahemla	Zarahemla	PROPN	_	_	37	nmod	_	_
 40	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 23
+# sent_id = 19
 # text = And they discovered a people, who were called the people of Zarahemla.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -806,7 +794,7 @@
 13	Zarahemla	Zarahemla	PROPN	_	_	11	nmod	_	_
 14	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 24
+# sent_id = 20
 # text = Now, there was great rejoicing among the people of Zarahemla; and also Zarahemla did rejoice exceedingly, because the Lord had sent the people of Mosiah with the plates of brass which contained the record of the Jews.
 1	Now	now	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -850,7 +838,7 @@
 40	Jews	Jew	PROPN	_	_	37	nmod	_	_
 41	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 25
+# sent_id = 21
 # text = Behold, it came to pass that Mosiah discovered that the people of Zarahemla came out from Jerusalem at the time that Zedekiah, king of Judah, was carried away captive into Babylon.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -888,7 +876,7 @@
 34	Babylon	Babylon	PROPN	_	_	30	obl	_	_
 35	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 26
+# sent_id = 22
 # text = And they journeyed in the wilderness, and were brought by the hand of the Lord across the great waters, into the land where Mosiah discovered them; and they had dwelt there from that time forth.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -930,7 +918,7 @@
 38	forth	forth	ADV	_	_	33	advmod	_	_
 39	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 27
+# sent_id = 23
 # text = And at the time that Mosiah discovered them, they had become exceedingly numerous.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	at	at	ADP	_	_	4	case	_	_
@@ -948,7 +936,7 @@
 14	numerous	numerous	ADJ	_	_	12	xcomp	_	_
 15	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 28
+# sent_id = 24
 # text = Nevertheless, they had had many wars and serious contentions, and had fallen by the sword from time to time; and their language had become corrupted; and they had brought no records with them; and they denied the being of their Creator; and Mosiah, nor the people of Mosiah, could understand them.
 1	Nevertheless	nevertheless	ADV	_	_	5	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -1011,7 +999,7 @@
 59	them	they	PRON	_	_	58	obj	_	_
 60	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 29
+# sent_id = 25
 # text = But it came to pass that Mosiah caused that they should be taught in his language.
 1	But	but	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1031,7 +1019,7 @@
 16	language	language	NOUN	_	_	13	obl	_	_
 17	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 30
+# sent_id = 26
 # text = And it came to pass that after they were taught in the language of Mosiah, Zarahemla gave a genealogy of his fathers, according to his memory; and they are written, but not in these plates.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1074,7 +1062,7 @@
 39	plates	plate	NOUN	_	_	33	conj	_	_
 40	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 31
+# sent_id = 27
 # text = And it came to pass that the people of Zarahemla, and of Mosiah, did unite together; and Mosiah was appointed to be their king.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1105,7 +1093,7 @@
 27	king	king	NOUN	_	_	23	xcomp	_	_
 28	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 32
+# sent_id = 28
 # text = And it came to pass in the days of Mosiah, there was a large stone brought unto him with engravings on it; and he did interpret the engravings by the gift and power of God.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	nsubj	_	_
@@ -1146,7 +1134,7 @@
 37	God	God	PROPN	_	_	33	nmod	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 33
+# sent_id = 29
 # text = And they gave an account of one Coriantumr, and the slain of his people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -1165,7 +1153,7 @@
 15	people	person	NOUN	_	_	12	nmod	_	_
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 34
+# sent_id = 30
 # text = And Coriantumr was discovered by the people of Zarahemla; and he dwelt with them for the space of nine moons.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	Coriantumr	Coriantumr	PROPN	_	_	4	nsubj:pass	_	_
@@ -1190,7 +1178,7 @@
 21	moons	moon	NOUN	_	_	18	nmod	_	_
 22	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 35
+# sent_id = 31
 # text = It also spake a few words concerning his fathers.
 1	It	it	PRON	_	_	3	nsubj	_	_
 2	also	also	ADV	_	_	3	advmod	_	_
@@ -1203,7 +1191,7 @@
 9	fathers	father	NOUN	_	_	6	nmod	_	_
 10	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 36
+# sent_id = 32
 # text = And his first parents came out from the tower, at the time the Lord confounded the language of the people; and the severity of the Lord fell upon them according to his judgments, which are just; and their bones lay scattered in the land northward.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	his	his	PRON	_	_	4	nmod:poss	_	_
@@ -1256,7 +1244,7 @@
 49	northward	northward	ADV	_	_	45	advmod	_	_
 50	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 37
+# sent_id = 33
 # text = Behold, I, Amaleki, was born in the days of Mosiah; and I have lived to see his death; and Benjamin, his son, reigneth in his stead.
 1	Behold	behold	INTJ	_	_	8	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -1293,8 +1281,8 @@
 33	stead	stead	NOUN	_	_	30	obl	_	_
 34	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 38
-# text = And behold, I have seen, in the days of king Benjamin, a serious war and much bloodshed between the Nephites and the Lamanites.
+# sent_id = 34
+# text = And behold, I have seen, in the days of king Benjamin, a serious war and much bloodshed between the Nephites and the Lamanites. But behold, the Nephites did obtain much advantage over them; yea, insomuch that king Benjamin did drive them out of the land of Zarahemla.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	behold	behold	INTJ	_	_	6	discourse	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
@@ -1322,39 +1310,36 @@
 25	the	the	DET	_	_	26	det	_	_
 26	Lamanites	Lamanites	PROPN	_	_	23	conj	_	_
 27	.	.	PUNCT	_	_	6	punct	_	_
+28	But	but	CCONJ	_	_	34	cc	_	_
+29	behold	behold	INTJ	_	_	34	discourse	_	_
+30	,	,	PUNCT	_	_	29	punct	_	_
+31	the	the	DET	_	_	32	det	_	_
+32	Nephites	Nephites	PROPN	_	_	34	nsubj	_	_
+33	did	do	AUX	_	_	34	aux	_	_
+34	obtain	obtain	VERB	_	_	6	conj	_	_
+35	much	much	ADJ	_	_	36	amod	_	_
+36	advantage	advantage	NOUN	_	_	34	obj	_	_
+37	over	over	ADP	_	_	38	case	_	_
+38	them	they	PRON	_	_	34	obl	_	_
+39	;	;	PUNCT	_	_	40	punct	_	_
+40	yea	yes	INTJ	_	_	47	discourse	_	_
+41	,	,	PUNCT	_	_	40	punct	_	_
+42	insomuch	insomuch	ADV	_	_	34	advmod	_	_
+43	that	that	SCONJ	_	_	47	mark	_	_
+44	king	king	NOUN	_	_	47	nsubj	_	_
+45	Benjamin	Benjamin	PROPN	_	_	47	nsubj	_	_
+46	did	do	AUX	_	_	47	aux	_	_
+47	drive	drive	VERB	_	_	42	advcl	_	_
+48	them	they	PRON	_	_	47	obj	_	_
+49	out	out	ADP	_	_	52	case	_	_
+50	of	of	ADP	_	_	52	case	_	_
+51	the	the	DET	_	_	52	det	_	_
+52	land	land	NOUN	_	_	47	obl	_	_
+53	of	of	ADP	_	_	54	case	_	_
+54	Zarahemla	Zarahemla	PROPN	_	_	52	nmod	_	_
+55	.	.	PUNCT	_	_	34	punct	_	_
 
-# sent_id = 39
-# text = But behold, the Nephites did obtain much advantage over them; yea, insomuch that king Benjamin did drive them out of the land of Zarahemla.
-1	But	but	CCONJ	_	_	7	cc	_	_
-2	behold	behold	INTJ	_	_	7	discourse	_	_
-3	,	,	PUNCT	_	_	2	punct	_	_
-4	the	the	DET	_	_	5	det	_	_
-5	Nephites	Nephites	PROPN	_	_	7	nsubj	_	_
-6	did	do	AUX	_	_	7	aux	_	_
-7	obtain	obtain	VERB	_	_	0	root	_	_
-8	much	much	ADJ	_	_	9	amod	_	_
-9	advantage	advantage	NOUN	_	_	7	obj	_	_
-10	over	over	ADP	_	_	11	case	_	_
-11	them	they	PRON	_	_	7	obl	_	_
-12	;	;	PUNCT	_	_	13	punct	_	_
-13	yea	yes	INTJ	_	_	20	discourse	_	_
-14	,	,	PUNCT	_	_	13	punct	_	_
-15	insomuch	insomuch	ADV	_	_	7	advmod	_	_
-16	that	that	SCONJ	_	_	20	mark	_	_
-17	king	king	NOUN	_	_	20	nsubj	_	_
-18	Benjamin	Benjamin	PROPN	_	_	20	nsubj	_	_
-19	did	do	AUX	_	_	20	aux	_	_
-20	drive	drive	VERB	_	_	15	advcl	_	_
-21	them	they	PRON	_	_	20	obj	_	_
-22	out	out	ADP	_	_	25	case	_	_
-23	of	of	ADP	_	_	25	case	_	_
-24	the	the	DET	_	_	25	det	_	_
-25	land	land	NOUN	_	_	20	obl	_	_
-26	of	of	ADP	_	_	27	case	_	_
-27	Zarahemla	Zarahemla	PROPN	_	_	25	nmod	_	_
-28	.	.	PUNCT	_	_	7	punct	_	_
-
-# sent_id = 40
+# sent_id = 35
 # text = And it came to pass that I began to be old; and, having no seed, and knowing king Benjamin to be a just man before the Lord, wherefore, I shall deliver up these plates unto him, exhorting all men to come unto God, the Holy One of Israel, and believe in prophesying, and in revelations, and in the ministering of angels, and in the gift of speaking with tongues, and in the gift of interpreting languages, and in all things which are good; for there is nothing which is good save it comes from the Lord: and that which is evil cometh from the devil.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1478,7 +1463,7 @@
 120	devil	devil	NOUN	_	_	117	obl	_	_
 121	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 41
+# sent_id = 36
 # text = And now, my beloved brethren, I would that ye should come unto Christ, who is the Holy One of Israel, and partake of his salvation, and the power of his redemption.
 1	And	and	CCONJ	_	_	13	cc	_	_
 2	now	now	ADV	_	_	13	advmod	_	_
@@ -1518,7 +1503,7 @@
 36	redemption	redemption	NOUN	_	_	33	nmod	_	_
 37	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 42
+# sent_id = 37
 # text = Yea, come unto him, and offer your whole souls as an offering unto him, and continue in fasting and praying, and endure to the end; and as the Lord liveth ye will be saved.
 1	Yea	yes	INTJ	_	_	3	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -1561,7 +1546,7 @@
 39	saved	save	VERB	_	_	3	conj	_	_
 40	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 43
+# sent_id = 38
 # text = And now I would speak somewhat concerning a certain number who went up into the wilderness to return to the land of Nephi; for there was a large number who were desirous to possess the land of their inheritance.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	now	now	ADV	_	_	5	advmod	_	_
@@ -1605,8 +1590,8 @@
 40	inheritance	inheritance	NOUN	_	_	37	nmod	_	_
 41	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 44
-# text = Wherefore, they went up into the wilderness.
+# sent_id = 39
+# text = Wherefore, they went up into the wilderness. And their leader being a strong and mighty man, and a stiffnecked man, wherefore he caused a contention among them; and they were all slain, save fifty, in the wilderness, and they returned again to the land of Zarahemla.
 1	Wherefore	so	ADV	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	they	they	PRON	_	_	4	nsubj	_	_
@@ -1616,57 +1601,54 @@
 7	the	the	DET	_	_	8	det	_	_
 8	wilderness	wilderness	NOUN	_	_	4	obl	_	_
 9	.	.	PUNCT	_	_	4	punct	_	_
+10	And	and	CCONJ	_	_	18	cc	_	_
+11	their	their	PRON	_	_	12	nmod:poss	_	_
+12	leader	leader	NOUN	_	_	18	nsubj	_	_
+13	being	be	AUX	_	_	18	cop	_	_
+14	a	a	DET	_	_	18	det	_	_
+15	strong	strong	ADJ	_	_	18	amod	_	_
+16	and	and	CCONJ	_	_	17	cc	_	_
+17	mighty	mighty	ADJ	_	_	15	conj	_	_
+18	man	man	NOUN	_	_	4	conj	_	_
+19	,	,	PUNCT	_	_	23	punct	_	_
+20	and	and	CCONJ	_	_	23	cc	_	_
+21	a	a	DET	_	_	23	det	_	_
+22	stiffnecked	stiffnecked	ADJ	_	_	23	amod	_	_
+23	man	man	NOUN	_	_	18	conj	_	_
+24	,	,	PUNCT	_	_	27	punct	_	_
+25	wherefore	so	ADV	_	_	27	advmod	_	_
+26	he	he	PRON	_	_	27	nsubj	_	_
+27	caused	cause	VERB	_	_	18	parataxis	_	_
+28	a	a	DET	_	_	29	det	_	_
+29	contention	contention	NOUN	_	_	27	obj	_	_
+30	among	among	ADP	_	_	31	case	_	_
+31	them	they	PRON	_	_	29	nmod	_	_
+32	;	;	PUNCT	_	_	37	punct	_	_
+33	and	and	CCONJ	_	_	37	cc	_	_
+34	they	they	PRON	_	_	37	nsubj:pass	_	_
+35	were	be	AUX	_	_	37	aux:pass	_	_
+36	all	all	ADV	_	_	37	advmod	_	_
+37	slain	slain	VERB	_	_	27	conj	_	_
+38	,	,	PUNCT	_	_	39	punct	_	_
+39	save	save	VERB	_	_	37	advcl	_	_
+40	fifty	fifty	NUM	_	_	37	obl	_	_
+41	,	,	PUNCT	_	_	44	punct	_	_
+42	in	in	ADP	_	_	44	case	_	_
+43	the	the	DET	_	_	44	det	_	_
+44	wilderness	wilderness	NOUN	_	_	37	obl	_	_
+45	,	,	PUNCT	_	_	48	punct	_	_
+46	and	and	CCONJ	_	_	48	cc	_	_
+47	they	they	PRON	_	_	48	nsubj	_	_
+48	returned	return	VERB	_	_	27	conj	_	_
+49	again	again	ADV	_	_	48	advmod	_	_
+50	to	to	ADP	_	_	52	case	_	_
+51	the	the	DET	_	_	52	det	_	_
+52	land	land	NOUN	_	_	48	obl	_	_
+53	of	of	ADP	_	_	54	case	_	_
+54	Zarahemla	Zarahemla	PROPN	_	_	52	nmod	_	_
+55	.	.	PUNCT	_	_	27	punct	_	_
 
-# sent_id = 45
-# text = And their leader being a strong and mighty man, and a stiffnecked man, wherefore he caused a contention among them; and they were all slain, save fifty, in the wilderness, and they returned again to the land of Zarahemla.
-1	And	and	CCONJ	_	_	9	cc	_	_
-2	their	their	PRON	_	_	3	nmod:poss	_	_
-3	leader	leader	NOUN	_	_	9	nsubj	_	_
-4	being	be	AUX	_	_	9	cop	_	_
-5	a	a	DET	_	_	9	det	_	_
-6	strong	strong	ADJ	_	_	9	amod	_	_
-7	and	and	CCONJ	_	_	8	cc	_	_
-8	mighty	mighty	ADJ	_	_	6	conj	_	_
-9	man	man	NOUN	_	_	0	root	_	_
-10	,	,	PUNCT	_	_	14	punct	_	_
-11	and	and	CCONJ	_	_	14	cc	_	_
-12	a	a	DET	_	_	14	det	_	_
-13	stiffnecked	stiffnecked	ADJ	_	_	14	amod	_	_
-14	man	man	NOUN	_	_	9	conj	_	_
-15	,	,	PUNCT	_	_	18	punct	_	_
-16	wherefore	so	ADV	_	_	18	advmod	_	_
-17	he	he	PRON	_	_	18	nsubj	_	_
-18	caused	cause	VERB	_	_	9	parataxis	_	_
-19	a	a	DET	_	_	20	det	_	_
-20	contention	contention	NOUN	_	_	18	obj	_	_
-21	among	among	ADP	_	_	22	case	_	_
-22	them	they	PRON	_	_	20	nmod	_	_
-23	;	;	PUNCT	_	_	28	punct	_	_
-24	and	and	CCONJ	_	_	28	cc	_	_
-25	they	they	PRON	_	_	28	nsubj:pass	_	_
-26	were	be	AUX	_	_	28	aux:pass	_	_
-27	all	all	ADV	_	_	28	advmod	_	_
-28	slain	slain	VERB	_	_	18	conj	_	_
-29	,	,	PUNCT	_	_	30	punct	_	_
-30	save	save	VERB	_	_	28	advcl	_	_
-31	fifty	fifty	NUM	_	_	28	obl	_	_
-32	,	,	PUNCT	_	_	35	punct	_	_
-33	in	in	ADP	_	_	35	case	_	_
-34	the	the	DET	_	_	35	det	_	_
-35	wilderness	wilderness	NOUN	_	_	28	obl	_	_
-36	,	,	PUNCT	_	_	39	punct	_	_
-37	and	and	CCONJ	_	_	39	cc	_	_
-38	they	they	PRON	_	_	39	nsubj	_	_
-39	returned	return	VERB	_	_	18	conj	_	_
-40	again	again	ADV	_	_	39	advmod	_	_
-41	to	to	ADP	_	_	43	case	_	_
-42	the	the	DET	_	_	43	det	_	_
-43	land	land	NOUN	_	_	39	obl	_	_
-44	of	of	ADP	_	_	45	case	_	_
-45	Zarahemla	Zarahemla	PROPN	_	_	43	nmod	_	_
-46	.	.	PUNCT	_	_	18	punct	_	_
-
-# sent_id = 46
+# sent_id = 40
 # text = And it came to pass that they also took others to a considerable number, and took their journey again into the wilderness.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1693,8 +1675,8 @@
 23	wilderness	wilderness	NOUN	_	_	17	obl	_	_
 24	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 47
-# text = And I, Amaleki, had a brother, who also went with them; and I have not since known concerning them.
+# sent_id = 41
+# text = And I, Amaleki, had a brother, who also went with them; and I have not since known concerning them. And I am about to lie down in my grave; and these plates are full. And I make an end of my speaking.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	I	I	PRON	_	_	6	nsubj	_	_
 3	,	,	PUNCT	_	_	4	punct	_	_
@@ -1719,36 +1701,30 @@
 22	concerning	concern	VERB	_	_	23	case	_	_
 23	them	they	PRON	_	_	21	obl	_	_
 24	.	.	PUNCT	_	_	6	punct	_	_
-
-# sent_id = 48
-# text = And I am about to lie down in my grave; and these plates are full.
-1	And	and	CCONJ	_	_	4	cc	_	_
-2	I	I	PRON	_	_	4	nsubj	_	_
-3	am	be	AUX	_	_	4	cop	_	_
-4	about	about	ADJ	_	_	0	root	_	_
-5	to	to	PART	_	_	6	mark	_	_
-6	lie	lie	VERB	_	_	4	xcomp	_	_
-7	down	down	ADP	_	_	6	compound:prt	_	_
-8	in	in	ADP	_	_	10	case	_	_
-9	my	my	PRON	_	_	10	nmod:poss	_	_
-10	grave	grave	NOUN	_	_	6	obl	_	_
-11	;	;	PUNCT	_	_	16	punct	_	_
-12	and	and	CCONJ	_	_	16	cc	_	_
-13	these	this	DET	_	_	14	det	_	_
-14	plates	plate	NOUN	_	_	16	nsubj	_	_
-15	are	be	AUX	_	_	16	cop	_	_
-16	full	full	ADJ	_	_	4	conj	_	_
-17	.	.	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 49
-# text = And I make an end of my speaking.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	I	I	PRON	_	_	3	nsubj	_	_
-3	make	make	VERB	_	_	0	root	_	_
-4	an	a	DET	_	_	5	det	_	_
-5	end	end	NOUN	_	_	3	obj	_	_
-6	of	of	ADP	_	_	8	case	_	_
-7	my	my	PRON	_	_	8	nmod:poss	_	_
-8	speaking	speak	NOUN	_	_	5	nmod	_	_
-9	.	.	PUNCT	_	_	3	punct	_	_
+25	And	and	CCONJ	_	_	28	cc	_	_
+26	I	I	PRON	_	_	28	nsubj	_	_
+27	am	be	AUX	_	_	28	cop	_	_
+28	about	about	ADJ	_	_	6	conj	_	_
+29	to	to	PART	_	_	30	mark	_	_
+30	lie	lie	VERB	_	_	28	xcomp	_	_
+31	down	down	ADP	_	_	30	compound:prt	_	_
+32	in	in	ADP	_	_	34	case	_	_
+33	my	my	PRON	_	_	34	nmod:poss	_	_
+34	grave	grave	NOUN	_	_	30	obl	_	_
+35	;	;	PUNCT	_	_	40	punct	_	_
+36	and	and	CCONJ	_	_	40	cc	_	_
+37	these	this	DET	_	_	38	det	_	_
+38	plates	plate	NOUN	_	_	40	nsubj	_	_
+39	are	be	AUX	_	_	40	cop	_	_
+40	full	full	ADJ	_	_	28	conj	_	_
+41	.	.	PUNCT	_	_	28	punct	_	_
+42	And	and	CCONJ	_	_	44	cc	_	_
+43	I	I	PRON	_	_	44	nsubj	_	_
+44	make	make	VERB	_	_	6	conj	_	_
+45	an	a	DET	_	_	46	det	_	_
+46	end	end	NOUN	_	_	44	obj	_	_
+47	of	of	ADP	_	_	49	case	_	_
+48	my	my	PRON	_	_	49	nmod:poss	_	_
+49	speaking	speak	NOUN	_	_	46	nmod	_	_
+50	.	.	PUNCT	_	_	44	punct	_	_
 

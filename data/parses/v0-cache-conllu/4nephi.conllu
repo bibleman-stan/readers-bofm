@@ -1,5 +1,5 @@
 # sent_id = 0
-# text = And it came to pass that the thirty and fourth year passed away, and also the thirty and fifth, and behold the disciples of Jesus had formed a church of Christ in all the lands round about.
+# text = And it came to pass that the thirty and fourth year passed away, and also the thirty and fifth, and behold the disciples of Jesus had formed a church of Christ in all the lands round about. And as many as did come unto them, and did truly repent of their sins, were baptized in the name of Jesus; and they did also receive the Holy Ghost.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
 3	came	come	VERB	_	_	0	root	_	_
@@ -40,45 +40,42 @@
 38	round	round	ADV	_	_	29	advmod	_	_
 39	about	about	ADP	_	_	29	obl	_	_
 40	.	.	PUNCT	_	_	3	punct	_	_
+41	And	and	CCONJ	_	_	59	cc	_	_
+42	as	as	ADV	_	_	43	advmod	_	_
+43	many	many	ADJ	_	_	59	nsubj:pass	_	_
+44	as	as	SCONJ	_	_	46	mark	_	_
+45	did	do	AUX	_	_	46	aux	_	_
+46	come	come	VERB	_	_	43	advcl	_	_
+47	unto	to	ADP	_	_	48	case	_	_
+48	them	they	PRON	_	_	46	obl	_	_
+49	,	,	PUNCT	_	_	53	punct	_	_
+50	and	and	CCONJ	_	_	53	cc	_	_
+51	did	do	AUX	_	_	53	aux	_	_
+52	truly	truly	ADV	_	_	53	advmod	_	_
+53	repent	repent	VERB	_	_	46	conj	_	_
+54	of	of	ADP	_	_	56	case	_	_
+55	their	their	PRON	_	_	56	nmod:poss	_	_
+56	sins	sin	NOUN	_	_	53	obl	_	_
+57	,	,	PUNCT	_	_	43	punct	_	_
+58	were	be	AUX	_	_	59	aux:pass	_	_
+59	baptized	baptize	VERB	_	_	3	conj	_	_
+60	in	in	ADP	_	_	62	case	_	_
+61	the	the	DET	_	_	62	det	_	_
+62	name	name	NOUN	_	_	59	obl	_	_
+63	of	of	ADP	_	_	64	case	_	_
+64	Jesus	Jesus	PROPN	_	_	62	nmod	_	_
+65	;	;	PUNCT	_	_	70	punct	_	_
+66	and	and	CCONJ	_	_	70	cc	_	_
+67	they	they	PRON	_	_	70	nsubj	_	_
+68	did	do	AUX	_	_	70	aux	_	_
+69	also	also	ADV	_	_	70	advmod	_	_
+70	receive	receive	VERB	_	_	59	conj	_	_
+71	the	the	DET	_	_	73	det	_	_
+72	Holy	Holy	ADJ	_	_	73	amod	_	_
+73	Ghost	Ghost	PROPN	_	_	70	obj	_	_
+74	.	.	PUNCT	_	_	59	punct	_	_
 
 # sent_id = 1
-# text = And as many as did come unto them, and did truly repent of their sins, were baptized in the name of Jesus; and they did also receive the Holy Ghost.
-1	And	and	CCONJ	_	_	19	cc	_	_
-2	as	as	ADV	_	_	3	advmod	_	_
-3	many	many	ADJ	_	_	19	nsubj:pass	_	_
-4	as	as	SCONJ	_	_	6	mark	_	_
-5	did	do	AUX	_	_	6	aux	_	_
-6	come	come	VERB	_	_	3	advcl	_	_
-7	unto	to	ADP	_	_	8	case	_	_
-8	them	they	PRON	_	_	6	obl	_	_
-9	,	,	PUNCT	_	_	13	punct	_	_
-10	and	and	CCONJ	_	_	13	cc	_	_
-11	did	do	AUX	_	_	13	aux	_	_
-12	truly	truly	ADV	_	_	13	advmod	_	_
-13	repent	repent	VERB	_	_	6	conj	_	_
-14	of	of	ADP	_	_	16	case	_	_
-15	their	their	PRON	_	_	16	nmod:poss	_	_
-16	sins	sin	NOUN	_	_	13	obl	_	_
-17	,	,	PUNCT	_	_	3	punct	_	_
-18	were	be	AUX	_	_	19	aux:pass	_	_
-19	baptized	baptize	VERB	_	_	0	root	_	_
-20	in	in	ADP	_	_	22	case	_	_
-21	the	the	DET	_	_	22	det	_	_
-22	name	name	NOUN	_	_	19	obl	_	_
-23	of	of	ADP	_	_	24	case	_	_
-24	Jesus	Jesus	PROPN	_	_	22	nmod	_	_
-25	;	;	PUNCT	_	_	30	punct	_	_
-26	and	and	CCONJ	_	_	30	cc	_	_
-27	they	they	PRON	_	_	30	nsubj	_	_
-28	did	do	AUX	_	_	30	aux	_	_
-29	also	also	ADV	_	_	30	advmod	_	_
-30	receive	receive	VERB	_	_	19	conj	_	_
-31	the	the	DET	_	_	33	det	_	_
-32	Holy	Holy	ADJ	_	_	33	amod	_	_
-33	Ghost	Ghost	PROPN	_	_	30	obj	_	_
-34	.	.	PUNCT	_	_	19	punct	_	_
-
-# sent_id = 2
 # text = And it came to pass in the thirty and sixth year, the people were all converted unto the Lord, upon all the face of the land, both Nephites and Lamanites, and there were no contentions and disputations among them, and every man did deal justly one with another.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	nsubj	_	_
@@ -135,7 +132,7 @@
 53	another	another	DET	_	_	49	obl	_	_
 54	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 3
+# sent_id = 2
 # text = And they had all things common among them; therefore there were not rich and poor, bond and free, but they were all made free, and partakers of the heavenly gift.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -173,7 +170,7 @@
 34	gift	gift	NOUN	_	_	30	nmod	_	_
 35	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 4
+# sent_id = 3
 # text = And it came to pass that the thirty and seventh year passed away also, and there still continued to be peace in the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -202,7 +199,7 @@
 25	land	land	NOUN	_	_	21	obl	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 4
 # text = And there were great and marvelous works wrought by the disciples of Jesus, insomuch that they did heal the sick, and raise the dead, and cause the lame to walk, and the blind to receive their sight, and the deaf to hear; and all manner of miracles did they work among the children of men; and in nothing did they work miracles save it were in the name of Jesus.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -283,7 +280,7 @@
 77	Jesus	Jesus	PROPN	_	_	75	nmod	_	_
 78	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 6
+# sent_id = 5
 # text = And thus did the thirty and eighth year pass away, and also the thirty and ninth, and forty and first, and the forty and second, yea, even until forty and nine years had passed away, and also the fifty and first, and the fifty and second; yea, and even until fifty and nine years had passed away.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	thus	thus	ADV	_	_	3	advmod	_	_
@@ -353,7 +350,7 @@
 66	away	away	ADV	_	_	65	advmod	_	_
 67	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 7
+# sent_id = 6
 # text = And the Lord did prosper them exceedingly in the land; yea, insomuch that they did build cities again where there had been cities burned.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -383,7 +380,7 @@
 26	burned	burn	VERB	_	_	25	acl	_	_
 27	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 8
+# sent_id = 7
 # text = Yea, even that great city Zarahemla did they cause to be built again.
 1	Yea	yes	INTJ	_	_	10	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -401,7 +398,7 @@
 14	again	again	ADV	_	_	13	advmod	_	_
 15	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 9
+# sent_id = 8
 # text = But there were many cities which had been sunk, and waters came up in the stead thereof; therefore these cities could not be renewed.
 1	But	but	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -431,7 +428,7 @@
 26	renewed	renew	VERB	_	_	13	parataxis	_	_
 27	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 10
+# sent_id = 9
 # text = And now, behold, it came to pass that the people of Nephi did wax strong, and did multiply exceedingly fast, and became an exceedingly fair and delightsome people.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -467,7 +464,7 @@
 32	people	person	NOUN	_	_	26	xcomp	_	_
 33	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 11
+# sent_id = 10
 # text = And they were married, and given in marriage, and were blessed according to the multitude of the promises which the Lord had made unto them.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj:pass	_	_
@@ -498,7 +495,7 @@
 27	them	they	PRON	_	_	25	obl	_	_
 28	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 12
+# sent_id = 11
 # text = And they did not walk any more after the performances and ordinances of the law of Moses; but they did walk after the commandments which they had received from their Lord and their God, continuing in fasting and prayer, and in meeting together oft both to pray and to hear the word of the Lord.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	they	they	PRON	_	_	5	nsubj	_	_
@@ -560,7 +557,7 @@
 58	Lord	Lord	PROPN	_	_	55	nmod	_	_
 59	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 13
+# sent_id = 12
 # text = And it came to pass that there was no contention among all the people, in all the land; but there were mighty miracles wrought among the disciples of Jesus.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -595,7 +592,7 @@
 31	Jesus	Jesus	PROPN	_	_	29	nmod	_	_
 32	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 14
+# sent_id = 13
 # text = And it came to pass that the seventy and first year passed away, and also the seventy and second year, yea, and in fine, till the seventy and ninth year had passed away; yea, even an hundred years had passed away, and the disciples of Jesus, whom he had chosen, had all gone to the paradise of God, save it were the three who should tarry; and there were other disciples ordained in their stead; and also many of that generation had passed away.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -695,7 +692,7 @@
 96	away	away	ADV	_	_	95	advmod	_	_
 97	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 15
+# sent_id = 14
 # text = And it came to pass that there was no contention in the land, because of the love of God which did dwell in the hearts of the people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -728,7 +725,7 @@
 29	people	person	NOUN	_	_	26	nmod	_	_
 30	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 16
+# sent_id = 15
 # text = And there were no envyings, nor strifes, nor tumults, nor whoredoms, nor lyings, nor murders, nor any manner of lasciviousness; and surely there could not be a happier people among all the people who had been created by the hand of God.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -781,7 +778,7 @@
 49	God	God	PROPN	_	_	47	nmod	_	_
 50	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 17
+# sent_id = 16
 # text = There were no robbers, nor murderers, neither were there Lamanites, nor any manner of -ites; but they were in one, the children of Christ, and heirs to the kingdom of God.
 1	There	there	PRON	_	_	2	expl	_	_
 2	were	be	VERB	_	_	0	root	_	_
@@ -823,68 +820,65 @@
 38	God	God	PROPN	_	_	36	nmod	_	_
 39	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 18
-# text = And how blessed were they!
+# sent_id = 17
+# text = And how blessed were they! For the Lord did bless them in all their doings; yea, even they were blessed and prospered until an hundred and ten years had passed away; and the first generation from Christ had passed away, and there was no contention in all the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	how	how	ADV	_	_	3	advmod	_	_
 3	blessed	bless	VERB	_	_	0	root	_	_
 4	were	be	AUX	_	_	3	cop	_	_
 5	they	they	PRON	_	_	3	nsubj	_	_
 6	!	!	PUNCT	_	_	3	punct	_	_
+7	For	for	SCONJ	_	_	11	mark	_	_
+8	the	the	DET	_	_	9	det	_	_
+9	Lord	Lord	PROPN	_	_	11	nsubj	_	_
+10	did	do	AUX	_	_	11	aux	_	_
+11	bless	bless	VERB	_	_	3	advcl	_	_
+12	them	they	PRON	_	_	11	obj	_	_
+13	in	in	ADP	_	_	16	case	_	_
+14	all	all	DET	_	_	16	det:predet	_	_
+15	their	their	PRON	_	_	16	nmod:poss	_	_
+16	doings	doing	NOUN	_	_	11	obl	_	_
+17	;	;	PUNCT	_	_	18	punct	_	_
+18	yea	yes	INTJ	_	_	23	discourse	_	_
+19	,	,	PUNCT	_	_	18	punct	_	_
+20	even	even	ADV	_	_	23	advmod	_	_
+21	they	they	PRON	_	_	23	nsubj:pass	_	_
+22	were	be	AUX	_	_	23	aux:pass	_	_
+23	blessed	bless	VERB	_	_	11	parataxis	_	_
+24	and	and	CCONJ	_	_	25	cc	_	_
+25	prospered	prosper	VERB	_	_	23	conj	_	_
+26	until	until	SCONJ	_	_	33	mark	_	_
+27	an	a	DET	_	_	31	det	_	_
+28	hundred	hundred	NUM	_	_	31	nummod	_	_
+29	and	and	CCONJ	_	_	30	cc	_	_
+30	ten	ten	NUM	_	_	28	conj	_	_
+31	years	year	NOUN	_	_	33	nsubj	_	_
+32	had	have	AUX	_	_	33	aux	_	_
+33	passed	pass	VERB	_	_	23	advcl	_	_
+34	away	away	ADV	_	_	33	advmod	_	_
+35	;	;	PUNCT	_	_	43	punct	_	_
+36	and	and	CCONJ	_	_	43	cc	_	_
+37	the	the	DET	_	_	39	det	_	_
+38	first	first	ADJ	_	_	39	amod	_	_
+39	generation	generation	NOUN	_	_	43	nsubj	_	_
+40	from	from	ADP	_	_	41	case	_	_
+41	Christ	Christ	PROPN	_	_	39	nmod	_	_
+42	had	have	AUX	_	_	43	aux	_	_
+43	passed	pass	VERB	_	_	23	conj	_	_
+44	away	away	ADV	_	_	43	advmod	_	_
+45	,	,	PUNCT	_	_	48	punct	_	_
+46	and	and	CCONJ	_	_	48	cc	_	_
+47	there	there	PRON	_	_	48	expl	_	_
+48	was	be	VERB	_	_	43	conj	_	_
+49	no	no	DET	_	_	50	det	_	_
+50	contention	contention	NOUN	_	_	48	nsubj	_	_
+51	in	in	ADP	_	_	54	case	_	_
+52	all	all	DET	_	_	54	det:predet	_	_
+53	the	the	DET	_	_	54	det	_	_
+54	land	land	NOUN	_	_	50	nmod	_	_
+55	.	.	PUNCT	_	_	23	punct	_	_
 
-# sent_id = 19
-# text = For the Lord did bless them in all their doings; yea, even they were blessed and prospered until an hundred and ten years had passed away; and the first generation from Christ had passed away, and there was no contention in all the land.
-1	For	for	SCONJ	_	_	5	mark	_	_
-2	the	the	DET	_	_	3	det	_	_
-3	Lord	Lord	PROPN	_	_	5	nsubj	_	_
-4	did	do	AUX	_	_	5	aux	_	_
-5	bless	bless	VERB	_	_	0	root	_	_
-6	them	they	PRON	_	_	5	obj	_	_
-7	in	in	ADP	_	_	10	case	_	_
-8	all	all	DET	_	_	10	det:predet	_	_
-9	their	their	PRON	_	_	10	nmod:poss	_	_
-10	doings	doing	NOUN	_	_	5	obl	_	_
-11	;	;	PUNCT	_	_	12	punct	_	_
-12	yea	yes	INTJ	_	_	17	discourse	_	_
-13	,	,	PUNCT	_	_	12	punct	_	_
-14	even	even	ADV	_	_	17	advmod	_	_
-15	they	they	PRON	_	_	17	nsubj:pass	_	_
-16	were	be	AUX	_	_	17	aux:pass	_	_
-17	blessed	bless	VERB	_	_	5	parataxis	_	_
-18	and	and	CCONJ	_	_	19	cc	_	_
-19	prospered	prosper	VERB	_	_	17	conj	_	_
-20	until	until	SCONJ	_	_	27	mark	_	_
-21	an	a	DET	_	_	25	det	_	_
-22	hundred	hundred	NUM	_	_	25	nummod	_	_
-23	and	and	CCONJ	_	_	24	cc	_	_
-24	ten	ten	NUM	_	_	22	conj	_	_
-25	years	year	NOUN	_	_	27	nsubj	_	_
-26	had	have	AUX	_	_	27	aux	_	_
-27	passed	pass	VERB	_	_	17	advcl	_	_
-28	away	away	ADV	_	_	27	advmod	_	_
-29	;	;	PUNCT	_	_	37	punct	_	_
-30	and	and	CCONJ	_	_	37	cc	_	_
-31	the	the	DET	_	_	33	det	_	_
-32	first	first	ADJ	_	_	33	amod	_	_
-33	generation	generation	NOUN	_	_	37	nsubj	_	_
-34	from	from	ADP	_	_	35	case	_	_
-35	Christ	Christ	PROPN	_	_	33	nmod	_	_
-36	had	have	AUX	_	_	37	aux	_	_
-37	passed	pass	VERB	_	_	17	conj	_	_
-38	away	away	ADV	_	_	37	advmod	_	_
-39	,	,	PUNCT	_	_	42	punct	_	_
-40	and	and	CCONJ	_	_	42	cc	_	_
-41	there	there	PRON	_	_	42	expl	_	_
-42	was	be	VERB	_	_	37	conj	_	_
-43	no	no	DET	_	_	44	det	_	_
-44	contention	contention	NOUN	_	_	42	nsubj	_	_
-45	in	in	ADP	_	_	48	case	_	_
-46	all	all	DET	_	_	48	det:predet	_	_
-47	the	the	DET	_	_	48	det	_	_
-48	land	land	NOUN	_	_	44	nmod	_	_
-49	.	.	PUNCT	_	_	17	punct	_	_
-
-# sent_id = 20
+# sent_id = 18
 # text = And it came to pass that Nephi, he that kept this last record, (and he kept it upon the plates of Nephi) died, and his son Amos kept it in his stead; and he kept it upon the plates of Nephi also.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -936,7 +930,7 @@
 48	also	also	ADV	_	_	41	advmod	_	_
 49	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 21
+# sent_id = 19
 # text = And he kept it eighty and four years, and there was still peace in the land, save it were a small part of the people who had revolted from the church and taken upon them the name of Lamanites; therefore there began to be Lamanites again in the land.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -992,7 +986,7 @@
 52	land	land	NOUN	_	_	48	nmod	_	_
 53	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 22
+# sent_id = 20
 # text = And it came to pass that Amos died also, (and it was an hundred and ninety and four years from the coming of Christ) and his son Amos kept the record in his stead; and he also kept it upon the plates of Nephi; and it was also written in the book of Nephi, which is this book.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1060,7 +1054,7 @@
 64	book	book	NOUN	_	_	59	acl:relcl	_	_
 65	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 23
+# sent_id = 21
 # text = And it came to pass that two hundred years had passed away; and the second generation had all passed away save it were a few.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1090,7 +1084,7 @@
 26	few	few	ADJ	_	_	20	advcl	_	_
 27	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 24
+# sent_id = 22
 # text = And now I, Mormon, would that ye should know that the people had multiplied, insomuch that they were spread upon all the face of the land, and that they had become exceedingly rich, because of their prosperity in Christ.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	now	now	ADV	_	_	11	advmod	_	_
@@ -1138,7 +1132,7 @@
 44	Christ	Christ	PROPN	_	_	42	nmod	_	_
 45	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 25
+# sent_id = 23
 # text = And now, in this two hundred and first year there began to be among them those who were lifted up in pride, such as the wearing of costly apparel, and all manner of fine pearls, and of the fine things of the world.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	now	now	ADV	_	_	12	advmod	_	_
@@ -1189,7 +1183,7 @@
 47	world	world	NOUN	_	_	44	nmod	_	_
 48	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 26
+# sent_id = 24
 # text = And from that time forth they did have their goods and their substance no more common among them.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	from	from	ADP	_	_	4	case	_	_
@@ -1211,7 +1205,7 @@
 18	them	they	PRON	_	_	16	obl	_	_
 19	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 27
+# sent_id = 25
 # text = And they began to be divided into classes; and they began to build up churches unto themselves to get gain, and began to deny the true church of Christ.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -1246,7 +1240,7 @@
 31	Christ	Christ	PROPN	_	_	29	nmod	_	_
 32	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 28
+# sent_id = 26
 # text = And it came to pass that when two hundred and ten years had passed away there were many churches in the land; yea, there were many churches which professed to know the Christ, and yet they did deny the more parts of his gospel, insomuch that they did receive all manner of wickedness, and did administer that which was sacred unto him to whom it had been forbidden because of unworthiness.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1326,7 +1320,7 @@
 76	unworthiness	unworthiness	NOUN	_	_	73	obl	_	_
 77	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 29
+# sent_id = 27
 # text = And this church did multiply exceedingly because of iniquity, and because of the power of Satan who did get hold upon their hearts.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	this	this	DET	_	_	3	det	_	_
@@ -1354,7 +1348,7 @@
 24	hearts	heart	NOUN	_	_	20	obl	_	_
 25	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 30
+# sent_id = 28
 # text = And again, there was another church which denied the Christ; and they did persecute the true church of Christ, because of their humility and their belief in Christ; and they did despise them because of the many miracles which were wrought among them.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	again	again	ADV	_	_	5	advmod	_	_
@@ -1405,7 +1399,7 @@
 47	them	they	PRON	_	_	45	obl	_	_
 48	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 31
+# sent_id = 29
 # text = Therefore they did exercise power and authority over the disciples of Jesus who did tarry with them, and they did cast them into prison; but by the power of the word of God, which was in them, the prisons were rent in twain, and they went forth doing mighty miracles among them.
 1	Therefore	therefore	ADV	_	_	4	advmod	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -1466,7 +1460,7 @@
 57	them	they	PRON	_	_	53	obl	_	_
 58	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 32
+# sent_id = 30
 # text = Nevertheless, and notwithstanding all these miracles, the people did harden their hearts, and did seek to kill them, even as the Jews at Jerusalem sought to kill Jesus, according to his word.
 1	Nevertheless	nevertheless	ADV	_	_	12	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -1507,7 +1501,7 @@
 37	word	word	NOUN	_	_	31	obl	_	_
 38	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 33
+# sent_id = 31
 # text = And they did cast them into furnaces of fire, and they came forth receiving no harm.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -1528,7 +1522,7 @@
 17	harm	harm	NOUN	_	_	15	obj	_	_
 18	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 34
+# sent_id = 32
 # text = And they also cast them into dens of wild beasts, and they did play with the wild beasts even as a child with a lamb; and they did come forth from among them, receiving no harm.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -1571,8 +1565,8 @@
 39	harm	harm	NOUN	_	_	37	obj	_	_
 40	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 35
-# text = Nevertheless, the people did harden their hearts, for they were led by many priests and false prophets to build up many churches, and to do all manner of iniquity.
+# sent_id = 33
+# text = Nevertheless, the people did harden their hearts, for they were led by many priests and false prophets to build up many churches, and to do all manner of iniquity. And they did smite upon the people of Jesus; but the people of Jesus did not smite again. And thus they did dwindle in unbelief and wickedness, from year to year, even until two hundred and thirty years had passed away.
 1	Nevertheless	nevertheless	ADV	_	_	6	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	the	the	DET	_	_	4	det	_	_
@@ -1606,60 +1600,54 @@
 31	of	of	ADP	_	_	32	case	_	_
 32	iniquity	iniquity	NOUN	_	_	30	nmod	_	_
 33	.	.	PUNCT	_	_	6	punct	_	_
+34	And	and	CCONJ	_	_	37	cc	_	_
+35	they	they	PRON	_	_	37	nsubj	_	_
+36	did	do	AUX	_	_	37	aux	_	_
+37	smite	strike	VERB	_	_	6	conj	_	_
+38	upon	upon	ADP	_	_	40	case	_	_
+39	the	the	DET	_	_	40	det	_	_
+40	people	person	NOUN	_	_	37	obl	_	_
+41	of	of	ADP	_	_	42	case	_	_
+42	Jesus	Jesus	PROPN	_	_	40	nmod	_	_
+43	;	;	PUNCT	_	_	51	punct	_	_
+44	but	but	CCONJ	_	_	51	cc	_	_
+45	the	the	DET	_	_	46	det	_	_
+46	people	person	NOUN	_	_	51	nsubj	_	_
+47	of	of	ADP	_	_	48	case	_	_
+48	Jesus	Jesus	PROPN	_	_	46	nmod	_	_
+49	did	do	AUX	_	_	51	aux	_	_
+50	not	not	PART	_	_	51	advmod	_	_
+51	smite	strike	VERB	_	_	37	conj	_	_
+52	again	again	ADV	_	_	51	advmod	_	_
+53	.	.	PUNCT	_	_	37	punct	_	_
+54	And	and	CCONJ	_	_	58	cc	_	_
+55	thus	thus	ADV	_	_	58	advmod	_	_
+56	they	they	PRON	_	_	58	nsubj	_	_
+57	did	do	AUX	_	_	58	aux	_	_
+58	dwindle	dwindle	VERB	_	_	4	conj	_	_
+59	in	in	ADP	_	_	60	case	_	_
+60	unbelief	unbelief	NOUN	_	_	58	obl	_	_
+61	and	and	CCONJ	_	_	62	cc	_	_
+62	wickedness	wickedness	NOUN	_	_	60	conj	_	_
+63	,	,	PUNCT	_	_	65	punct	_	_
+64	from	from	ADP	_	_	65	case	_	_
+65	year	year	NOUN	_	_	58	obl	_	_
+66	to	to	ADP	_	_	67	case	_	_
+67	year	year	NOUN	_	_	65	nmod	_	_
+68	,	,	PUNCT	_	_	77	punct	_	_
+69	even	even	ADV	_	_	77	advmod	_	_
+70	until	until	SCONJ	_	_	77	mark	_	_
+71	two	two	NUM	_	_	72	compound	_	_
+72	hundred	hundred	NUM	_	_	77	nsubj	_	_
+73	and	and	CCONJ	_	_	74	cc	_	_
+74	thirty	thirty	NUM	_	_	72	conj	_	_
+75	years	year	NOUN	_	_	77	nsubj	_	_
+76	had	have	AUX	_	_	77	aux	_	_
+77	passed	pass	VERB	_	_	58	advcl	_	_
+78	away	away	ADV	_	_	77	advmod	_	_
+79	.	.	PUNCT	_	_	58	punct	_	_
 
-# sent_id = 36
-# text = And they did smite upon the people of Jesus; but the people of Jesus did not smite again.
-1	And	and	CCONJ	_	_	4	cc	_	_
-2	they	they	PRON	_	_	4	nsubj	_	_
-3	did	do	AUX	_	_	4	aux	_	_
-4	smite	strike	VERB	_	_	0	root	_	_
-5	upon	upon	ADP	_	_	7	case	_	_
-6	the	the	DET	_	_	7	det	_	_
-7	people	person	NOUN	_	_	4	obl	_	_
-8	of	of	ADP	_	_	9	case	_	_
-9	Jesus	Jesus	PROPN	_	_	7	nmod	_	_
-10	;	;	PUNCT	_	_	18	punct	_	_
-11	but	but	CCONJ	_	_	18	cc	_	_
-12	the	the	DET	_	_	13	det	_	_
-13	people	person	NOUN	_	_	18	nsubj	_	_
-14	of	of	ADP	_	_	15	case	_	_
-15	Jesus	Jesus	PROPN	_	_	13	nmod	_	_
-16	did	do	AUX	_	_	18	aux	_	_
-17	not	not	PART	_	_	18	advmod	_	_
-18	smite	strike	VERB	_	_	4	conj	_	_
-19	again	again	ADV	_	_	18	advmod	_	_
-20	.	.	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 37
-# text = And thus they did dwindle in unbelief and wickedness, from year to year, even until two hundred and thirty years had passed away.
-1	And	and	CCONJ	_	_	5	cc	_	_
-2	thus	thus	ADV	_	_	5	advmod	_	_
-3	they	they	PRON	_	_	5	nsubj	_	_
-4	did	do	AUX	_	_	5	aux	_	_
-5	dwindle	dwindle	VERB	_	_	0	root	_	_
-6	in	in	ADP	_	_	7	case	_	_
-7	unbelief	unbelief	NOUN	_	_	5	obl	_	_
-8	and	and	CCONJ	_	_	9	cc	_	_
-9	wickedness	wickedness	NOUN	_	_	7	conj	_	_
-10	,	,	PUNCT	_	_	12	punct	_	_
-11	from	from	ADP	_	_	12	case	_	_
-12	year	year	NOUN	_	_	5	obl	_	_
-13	to	to	ADP	_	_	14	case	_	_
-14	year	year	NOUN	_	_	12	nmod	_	_
-15	,	,	PUNCT	_	_	24	punct	_	_
-16	even	even	ADV	_	_	24	advmod	_	_
-17	until	until	SCONJ	_	_	24	mark	_	_
-18	two	two	NUM	_	_	19	compound	_	_
-19	hundred	hundred	NUM	_	_	24	nsubj	_	_
-20	and	and	CCONJ	_	_	21	cc	_	_
-21	thirty	thirty	NUM	_	_	19	conj	_	_
-22	years	year	NOUN	_	_	24	nsubj	_	_
-23	had	have	AUX	_	_	24	aux	_	_
-24	passed	pass	VERB	_	_	5	advcl	_	_
-25	away	away	ADV	_	_	24	advmod	_	_
-26	.	.	PUNCT	_	_	5	punct	_	_
-
-# sent_id = 38
+# sent_id = 34
 # text = And now it came to pass in this year, yea, in the two hundred and thirty and first year, there was a great division among the people.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -1693,7 +1681,7 @@
 30	people	person	NOUN	_	_	27	nmod	_	_
 31	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 39
+# sent_id = 35
 # text = And it came to pass that in this year there arose a people who were called the Nephites, and they were true believers in Christ; and among them there were those who were called by the Lamanites--Jacobites, and Josephites, and Zoramites;
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1744,7 +1732,7 @@
 47	Zoramites	Zoramites	PROPN	_	_	39	conj	_	_
 48	;	;	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 40
+# sent_id = 36
 # text = Therefore the true believers in Christ, and the true worshipers of Christ, (among whom were the three disciples of Jesus who should tarry) were called Nephites, and Jacobites, and Josephites, and Zoramites.
 1	Therefore	therefore	ADV	_	_	29	advmod	_	_
 2	the	the	DET	_	_	4	det	_	_
@@ -1787,7 +1775,7 @@
 39	Zoramites	Zoramites	PROPN	_	_	30	conj	_	_
 40	.	.	PUNCT	_	_	29	punct	_	_
 
-# sent_id = 41
+# sent_id = 37
 # text = And it came to pass that they who rejected the gospel were called Lamanites, and Lemuelites, and Ishmaelites; and they did not dwindle in unbelief, but they did wilfully rebel against the gospel of Christ; and they did teach their children that they should not believe, even as their fathers, from the beginning, did dwindle.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1854,7 +1842,7 @@
 63	dwindle	dwindle	VERB	_	_	51	advcl	_	_
 64	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 42
+# sent_id = 38
 # text = And it was because of the wickedness and abomination of their fathers, even as it was in the beginning.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	it	it	PRON	_	_	7	nsubj	_	_
@@ -1878,7 +1866,7 @@
 20	beginning	beginning	NOUN	_	_	7	advcl	_	_
 21	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 43
+# sent_id = 39
 # text = And they were taught to hate the children of God, even as the Lamanites were taught to hate the children of Nephi from the beginning.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj:pass	_	_
@@ -1908,7 +1896,7 @@
 26	beginning	beginning	NOUN	_	_	19	obl	_	_
 27	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 44
+# sent_id = 40
 # text = And it came to pass that two hundred and forty and four years had passed away, and thus were the affairs of the people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1937,7 +1925,7 @@
 25	people	person	NOUN	_	_	22	nmod	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 45
+# sent_id = 41
 # text = And the more wicked part of the people did wax strong, and became exceedingly more numerous than were the people of God.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	the	the	DET	_	_	5	det	_	_
@@ -1964,7 +1952,7 @@
 23	God	God	PROPN	_	_	21	nmod	_	_
 24	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 46
+# sent_id = 42
 # text = And they did still continue to build up churches unto themselves, and adorn them with all manner of precious things.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	they	they	PRON	_	_	5	nsubj	_	_
@@ -1989,7 +1977,7 @@
 21	things	thing	NOUN	_	_	18	nmod	_	_
 22	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 47
+# sent_id = 43
 # text = And thus did two hundred and fifty years pass away, and also two hundred and sixty years.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	thus	thus	ADV	_	_	3	advmod	_	_
@@ -2011,7 +1999,7 @@
 18	years	year	NOUN	_	_	9	conj	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 48
+# sent_id = 44
 # text = And it came to pass that the wicked part of the people began again to build up the secret oaths and combinations of Gadianton.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -2039,7 +2027,7 @@
 24	Gadianton	Gadianton	PROPN	_	_	22	nmod	_	_
 25	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 49
+# sent_id = 45
 # text = And also the people who were called the people of Nephi began to be proud in their hearts, because of their exceeding riches, and become vain like unto their brethren, the Lamanites.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	also	also	ADV	_	_	12	advmod	_	_
@@ -2078,7 +2066,7 @@
 35	Lamanites	Lamanites	PROPN	_	_	32	appos	_	_
 36	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 50
+# sent_id = 46
 # text = And from this time the disciples began to sorrow for the sins of the world.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	from	from	ADP	_	_	4	case	_	_
@@ -2097,7 +2085,7 @@
 15	world	world	NOUN	_	_	12	nmod	_	_
 16	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 51
+# sent_id = 47
 # text = And it came to pass that when three hundred years had passed away, both the people of Nephi and the Lamanites had become exceedingly wicked one like unto another.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -2131,7 +2119,7 @@
 30	another	another	DET	_	_	26	obl	_	_
 31	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 52
+# sent_id = 48
 # text = And it came to pass that the robbers of Gadianton did spread over all the face of the land; and there were none that were righteous save it were the disciples of Jesus.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -2169,7 +2157,7 @@
 34	Jesus	Jesus	PROPN	_	_	32	nmod	_	_
 35	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 53
+# sent_id = 49
 # text = And gold and silver did they lay up in store in abundance, and did traffic in all manner of traffic.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	gold	gold	NOUN	_	_	7	nsubj	_	_
@@ -2194,7 +2182,7 @@
 21	traffic	traffic	NOUN	_	_	19	nmod	_	_
 22	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 54
+# sent_id = 50
 # text = And it came to pass that after three hundred and five years had passed away, (and the people did still remain in wickedness)
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -2223,7 +2211,7 @@
 25	wickedness	wickedness	NOUN	_	_	23	obl	_	_
 26	)	)	PUNCT	_	_	23	punct	_	_
 
-# sent_id = 55
+# sent_id = 51
 # text = Amos died; and his brother, Ammaron, did keep the record in his stead.
 1	Amos	Amos	PROPN	_	_	2	nsubj	_	_
 2	died	die	VERB	_	_	0	root	_	_
@@ -2243,7 +2231,7 @@
 16	stead	stead	NOUN	_	_	11	obl	_	_
 17	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 56
+# sent_id = 52
 # text = And it came to pass that when three hundred and twenty years had passed away, Ammaron, being constrained by the Holy Ghost, did hide up the records which were sacred--yea, even all the sacred records which had been handed down from generation to generation, which were sacred--even until the three hundred and twentieth year from the coming of Christ.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -2315,7 +2303,7 @@
 68	Christ	Christ	PROPN	_	_	66	nmod	_	_
 69	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 57
+# sent_id = 53
 # text = And he did hide them up unto the Lord, that they might come again unto the remnant of the house of Jacob, according to the prophecies and the promises of the Lord.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -2353,7 +2341,7 @@
 34	Lord	Lord	PROPN	_	_	31	nmod	_	_
 35	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 58
+# sent_id = 54
 # text = And thus is the end of the record of Ammaron.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	thus	thus	ADV	_	_	5	advmod	_	_

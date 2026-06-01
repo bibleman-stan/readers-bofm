@@ -247,7 +247,7 @@
 11	?	?	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 7
-# text = And he said unto me: Because of thy faith in Christ, whom thou hast never before heard nor seen.
+# text = And he said unto me: Because of thy faith in Christ, whom thou hast never before heard nor seen. And many years pass away before he shall manifest himself in the flesh; wherefore, go to, thy faith hath made thee whole.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
 3	said	say	VERB	_	_	0	root	_	_
@@ -270,37 +270,34 @@
 20	nor	nor	CCONJ	_	_	21	cc	_	_
 21	seen	see	VERB	_	_	19	conj	_	_
 22	.	.	PUNCT	_	_	3	punct	_	_
+23	And	and	CCONJ	_	_	26	cc	_	_
+24	many	many	ADJ	_	_	25	amod	_	_
+25	years	year	NOUN	_	_	26	nsubj	_	_
+26	pass	pass	VERB	_	_	3	parataxis	_	_
+27	away	away	ADV	_	_	26	advmod	_	_
+28	before	before	SCONJ	_	_	31	mark	_	_
+29	he	he	PRON	_	_	31	nsubj	_	_
+30	shall	shall	AUX	_	_	31	aux	_	_
+31	manifest	manifest	VERB	_	_	26	advcl	_	_
+32	himself	himself	PRON	_	_	31	obj	_	_
+33	in	in	ADP	_	_	35	case	_	_
+34	the	the	DET	_	_	35	det	_	_
+35	flesh	flesh	NOUN	_	_	31	obl	_	_
+36	;	;	PUNCT	_	_	39	punct	_	_
+37	wherefore	so	ADV	_	_	45	advmod	_	_
+38	,	,	PUNCT	_	_	37	punct	_	_
+39	go	go	VERB	_	_	26	parataxis	_	_
+40	to	to	ADP	_	_	39	obl	_	_
+41	,	,	PUNCT	_	_	39	punct	_	_
+42	thy	your	PRON	_	_	43	nmod:poss	_	_
+43	faith	faith	NOUN	_	_	45	nsubj	_	_
+44	hath	have	AUX	_	_	45	aux	_	_
+45	made	make	VERB	_	_	26	parataxis	_	_
+46	thee	you	PRON	_	_	45	obj	_	_
+47	whole	whole	ADJ	_	_	45	xcomp	_	_
+48	.	.	PUNCT	_	_	26	punct	_	_
 
 # sent_id = 8
-# text = And many years pass away before he shall manifest himself in the flesh; wherefore, go to, thy faith hath made thee whole.
-1	And	and	CCONJ	_	_	4	cc	_	_
-2	many	many	ADJ	_	_	3	amod	_	_
-3	years	year	NOUN	_	_	4	nsubj	_	_
-4	pass	pass	VERB	_	_	0	root	_	_
-5	away	away	ADV	_	_	4	advmod	_	_
-6	before	before	SCONJ	_	_	9	mark	_	_
-7	he	he	PRON	_	_	9	nsubj	_	_
-8	shall	shall	AUX	_	_	9	aux	_	_
-9	manifest	manifest	VERB	_	_	4	advcl	_	_
-10	himself	himself	PRON	_	_	9	obj	_	_
-11	in	in	ADP	_	_	13	case	_	_
-12	the	the	DET	_	_	13	det	_	_
-13	flesh	flesh	NOUN	_	_	9	obl	_	_
-14	;	;	PUNCT	_	_	17	punct	_	_
-15	wherefore	so	ADV	_	_	23	advmod	_	_
-16	,	,	PUNCT	_	_	15	punct	_	_
-17	go	go	VERB	_	_	4	parataxis	_	_
-18	to	to	ADP	_	_	17	obl	_	_
-19	,	,	PUNCT	_	_	17	punct	_	_
-20	thy	your	PRON	_	_	21	nmod:poss	_	_
-21	faith	faith	NOUN	_	_	23	nsubj	_	_
-22	hath	have	AUX	_	_	23	aux	_	_
-23	made	make	VERB	_	_	4	parataxis	_	_
-24	thee	you	PRON	_	_	23	obj	_	_
-25	whole	whole	ADJ	_	_	23	xcomp	_	_
-26	.	.	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 9
 # text = Now, it came to pass that when I had heard these words I began to feel a desire for the welfare of my brethren, the Nephites; wherefore, I did pour out my whole soul unto God for them.
 1	Now	now	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -346,7 +343,7 @@
 42	them	they	PRON	_	_	34	obl	_	_
 43	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 10
+# sent_id = 9
 # text = And while I was thus struggling in the spirit, behold, the voice of the Lord came into my mind again, saying: I will visit thy brethren according to their diligence in keeping my commandments.
 1	And	and	CCONJ	_	_	18	cc	_	_
 2	while	while	SCONJ	_	_	6	mark	_	_
@@ -388,7 +385,7 @@
 38	commandments	commandment	NOUN	_	_	36	obj	_	_
 39	.	.	PUNCT	_	_	18	punct	_	_
 
-# sent_id = 11
+# sent_id = 10
 # text = I have given unto them this land, and it is a holy land; and I curse it not save it be for the cause of iniquity; wherefore, I will visit thy brethren according as I have said; and their transgressions will I bring down with sorrow upon their own heads.
 1	I	I	PRON	_	_	3	nsubj	_	_
 2	have	have	AUX	_	_	3	aux	_	_
@@ -447,7 +444,7 @@
 55	heads	head	NOUN	_	_	48	obl	_	_
 56	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 12
+# sent_id = 11
 # text = And after I, Enos, had heard these words, my faith began to be unshaken in the Lord; and I prayed unto him with many long strugglings for my brethren, the Lamanites.
 1	And	and	CCONJ	_	_	14	cc	_	_
 2	after	after	SCONJ	_	_	8	mark	_	_
@@ -487,7 +484,7 @@
 36	Lamanites	Lamanites	PROPN	_	_	33	appos	_	_
 37	.	.	PUNCT	_	_	14	punct	_	_
 
-# sent_id = 13
+# sent_id = 12
 # text = And it came to pass that after I had prayed and labored with all diligence, the Lord said unto me: I will grant unto thee according to thy desires, because of thy faith.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -527,7 +524,7 @@
 36	faith	faith	NOUN	_	_	25	obl	_	_
 37	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 14
+# sent_id = 13
 # text = And now behold, this was the desire which I desired of him--that if it should so be, that my people, the Nephites, should fall into transgression, and by any means be destroyed, and the Lamanites should not be destroyed, that the Lord God would preserve a record of my people, the Nephites; even if it so be by the power of his holy arm, that it might be brought forth at some future day unto the Lamanites, that, perhaps, they might be brought unto salvation--
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	now	now	ADV	_	_	3	advmod	_	_
@@ -631,7 +628,7 @@
 100	salvation	salvation	NOUN	_	_	98	obl	_	_
 101	--	--	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 15
+# sent_id = 14
 # text = For at the present our strugglings were vain in restoring them to the true faith.
 1	For	for	SCONJ	_	_	8	mark	_	_
 2	at	at	ADP	_	_	4	case	_	_
@@ -650,7 +647,7 @@
 15	faith	faith	NOUN	_	_	10	obl	_	_
 16	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 16
+# sent_id = 15
 # text = And they swore in their wrath that, if it were possible, they would destroy our records and us, and also all the traditions of our fathers.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -683,7 +680,7 @@
 29	fathers	father	NOUN	_	_	26	nmod	_	_
 30	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 17
+# sent_id = 16
 # text = Wherefore, I knowing that the Lord God was able to preserve our records, I cried unto him continually, for he had said unto me:
 1	Wherefore	so	ADV	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -714,7 +711,7 @@
 27	me	I	PRON	_	_	25	obl	_	_
 28	:	:	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 18
+# sent_id = 17
 # text = Whatsoever thing ye shall ask in faith, believing that ye shall receive in the name of Christ, ye shall receive it.
 1	Whatsoever	whatsoever	DET	_	_	2	det	_	_
 2	thing	thing	NOUN	_	_	22	nsubj:outer	_	_
@@ -741,7 +738,7 @@
 23	it	it	PRON	_	_	22	obj	_	_
 24	.	.	PUNCT	_	_	22	punct	_	_
 
-# sent_id = 19
+# sent_id = 18
 # text = And I had faith, and I did cry unto God that he would preserve the records; and he covenanted with me that he would bring them forth unto the Lamanites in his own due time.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -782,7 +779,7 @@
 37	time	time	NOUN	_	_	27	obl	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 20
+# sent_id = 19
 # text = And I, Enos, knew it would be according to the covenant which he had made; wherefore my soul did rest.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	I	I	PRON	_	_	6	nsubj	_	_
@@ -809,7 +806,7 @@
 23	rest	rest	NOUN	_	_	22	obj	_	_
 24	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 21
+# sent_id = 20
 # text = And the Lord said unto me: Thy fathers have also required of me this thing; and it shall be done unto them according to their faith; for their faith was like unto thine.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -849,7 +846,7 @@
 36	thine	your	PRON	_	_	34	obl	_	_
 37	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 22
+# sent_id = 21
 # text = And now it came to pass that I, Enos, went about among the people of Nephi, prophesying of things to come, and testifying of the things which I had heard and seen.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -889,8 +886,8 @@
 36	seen	see	VERB	_	_	34	conj	_	_
 37	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 23
-# text = And I bear record that the people of Nephi did seek diligently to restore the Lamanites unto the true faith in God.
+# sent_id = 22
+# text = And I bear record that the people of Nephi did seek diligently to restore the Lamanites unto the true faith in God. But our labors were vain; their hatred was fixed, and they were led by their evil nature that they became wild, and ferocious, and a blood-thirsty people, full of idolatry and filthiness; feeding upon beasts of prey; dwelling in tents, and wandering about in the wilderness with a short skin girdle about their loins and their heads shaven; and their skill was in the bow, and in the cimeter, and the ax. And many of them did eat nothing save it was raw meat; and they were continually seeking to destroy us.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
 3	bear	bear	VERB	_	_	0	root	_	_
@@ -914,122 +911,116 @@
 21	in	in	ADP	_	_	22	case	_	_
 22	God	God	PROPN	_	_	20	nmod	_	_
 23	.	.	PUNCT	_	_	3	punct	_	_
+24	But	but	CCONJ	_	_	28	cc	_	_
+25	our	our	PRON	_	_	26	nmod:poss	_	_
+26	labors	labor	NOUN	_	_	28	nsubj	_	_
+27	were	be	AUX	_	_	28	cop	_	_
+28	vain	vain	ADJ	_	_	3	conj	_	_
+29	;	;	PUNCT	_	_	33	punct	_	_
+30	their	their	PRON	_	_	31	nmod:poss	_	_
+31	hatred	hatred	NOUN	_	_	33	nsubj:pass	_	_
+32	was	be	AUX	_	_	33	aux:pass	_	_
+33	fixed	fix	VERB	_	_	28	parataxis	_	_
+34	,	,	PUNCT	_	_	38	punct	_	_
+35	and	and	CCONJ	_	_	38	cc	_	_
+36	they	they	PRON	_	_	38	nsubj:pass	_	_
+37	were	be	AUX	_	_	38	aux:pass	_	_
+38	led	lead	VERB	_	_	28	conj	_	_
+39	by	by	ADP	_	_	42	case	_	_
+40	their	their	PRON	_	_	42	nmod:poss	_	_
+41	evil	evil	ADJ	_	_	42	amod	_	_
+42	nature	nature	NOUN	_	_	38	obl:agent	_	_
+43	that	that	SCONJ	_	_	45	mark	_	_
+44	they	they	PRON	_	_	45	nsubj	_	_
+45	became	become	VERB	_	_	38	ccomp	_	_
+46	wild	wild	ADJ	_	_	45	xcomp	_	_
+47	,	,	PUNCT	_	_	49	punct	_	_
+48	and	and	CCONJ	_	_	49	cc	_	_
+49	ferocious	ferocious	ADJ	_	_	46	conj	_	_
+50	,	,	PUNCT	_	_	51	punct	_	_
+51	and	and	CCONJ	_	_	56	cc	_	_
+52	a	a	DET	_	_	56	det	_	_
+53	blood	blood	NOUN	_	_	55	compound	_	_
+54	-	-	PUNCT	_	_	53	punct	_	_
+55	thirsty	thirsty	ADJ	_	_	56	amod	_	_
+56	people	person	NOUN	_	_	46	conj	_	_
+57	,	,	PUNCT	_	_	58	punct	_	_
+58	full	full	ADJ	_	_	56	amod	_	_
+59	of	of	ADP	_	_	60	case	_	_
+60	idolatry	idolatry	NOUN	_	_	58	obl	_	_
+61	and	and	CCONJ	_	_	62	cc	_	_
+62	filthiness	filthiness	NOUN	_	_	60	conj	_	_
+63	;	;	PUNCT	_	_	64	punct	_	_
+64	feeding	feed	VERB	_	_	45	advcl	_	_
+65	upon	upon	ADP	_	_	66	case	_	_
+66	beasts	beast	NOUN	_	_	64	obl	_	_
+67	of	of	ADP	_	_	68	case	_	_
+68	prey	prey	NOUN	_	_	66	nmod	_	_
+69	;	;	PUNCT	_	_	70	punct	_	_
+70	dwelling	dwelling	VERB	_	_	64	conj	_	_
+71	in	in	ADP	_	_	72	case	_	_
+72	tents	tent	NOUN	_	_	70	obl	_	_
+73	,	,	PUNCT	_	_	75	punct	_	_
+74	and	and	CCONJ	_	_	75	cc	_	_
+75	wandering	wonder	VERB	_	_	64	conj	_	_
+76	about	about	ADP	_	_	75	compound:prt	_	_
+77	in	in	ADP	_	_	79	case	_	_
+78	the	the	DET	_	_	79	det	_	_
+79	wilderness	wilderness	NOUN	_	_	75	obl	_	_
+80	with	with	ADP	_	_	84	case	_	_
+81	a	a	DET	_	_	84	det	_	_
+82	short	short	ADJ	_	_	84	amod	_	_
+83	skin	skin	NOUN	_	_	84	compound	_	_
+84	girdle	belt	NOUN	_	_	79	nmod	_	_
+85	about	about	ADP	_	_	87	case	_	_
+86	their	their	PRON	_	_	87	nmod:poss	_	_
+87	loins	loin	NOUN	_	_	84	nmod	_	_
+88	and	and	CCONJ	_	_	90	cc	_	_
+89	their	their	PRON	_	_	90	nmod:poss	_	_
+90	heads	head	NOUN	_	_	87	conj	_	_
+91	shaven	shaven	ADJ	_	_	84	conj	_	_
+92	;	;	PUNCT	_	_	99	punct	_	_
+93	and	and	CCONJ	_	_	99	cc	_	_
+94	their	their	PRON	_	_	95	nmod:poss	_	_
+95	skill	skill	NOUN	_	_	99	nsubj	_	_
+96	was	be	AUX	_	_	99	cop	_	_
+97	in	in	ADP	_	_	99	case	_	_
+98	the	the	DET	_	_	99	det	_	_
+99	bow	bow	NOUN	_	_	28	conj	_	_
+100	,	,	PUNCT	_	_	104	punct	_	_
+101	and	and	CCONJ	_	_	104	cc	_	_
+102	in	in	ADP	_	_	104	case	_	_
+103	the	the	DET	_	_	104	det	_	_
+104	cimeter	cimeter	NOUN	_	_	99	conj	_	_
+105	,	,	PUNCT	_	_	108	punct	_	_
+106	and	and	CCONJ	_	_	108	cc	_	_
+107	the	the	DET	_	_	108	det	_	_
+108	ax	ax	NOUN	_	_	99	conj	_	_
+109	.	.	PUNCT	_	_	28	punct	_	_
+110	And	and	CCONJ	_	_	115	cc	_	_
+111	many	many	ADJ	_	_	115	nsubj	_	_
+112	of	of	ADP	_	_	113	case	_	_
+113	them	they	PRON	_	_	111	nmod	_	_
+114	did	do	AUX	_	_	115	aux	_	_
+115	eat	eat	VERB	_	_	3	conj	_	_
+116	nothing	nothing	PRON	_	_	115	obj	_	_
+117	save	save	SCONJ	_	_	121	mark	_	_
+118	it	it	PRON	_	_	121	nsubj	_	_
+119	was	be	AUX	_	_	121	cop	_	_
+120	raw	raw	ADJ	_	_	121	amod	_	_
+121	meat	meat	NOUN	_	_	115	advcl	_	_
+122	;	;	PUNCT	_	_	127	punct	_	_
+123	and	and	CCONJ	_	_	127	cc	_	_
+124	they	they	PRON	_	_	127	nsubj	_	_
+125	were	be	AUX	_	_	127	aux	_	_
+126	continually	continually	ADV	_	_	127	advmod	_	_
+127	seeking	seek	VERB	_	_	115	conj	_	_
+128	to	to	PART	_	_	129	mark	_	_
+129	destroy	destroy	VERB	_	_	127	xcomp	_	_
+130	us	we	PRON	_	_	129	obj	_	_
+131	.	.	PUNCT	_	_	115	punct	_	_
 
-# sent_id = 24
-# text = But our labors were vain; their hatred was fixed, and they were led by their evil nature that they became wild, and ferocious, and a blood-thirsty people, full of idolatry and filthiness; feeding upon beasts of prey; dwelling in tents, and wandering about in the wilderness with a short skin girdle about their loins and their heads shaven; and their skill was in the bow, and in the cimeter, and the ax.
-1	But	but	CCONJ	_	_	5	cc	_	_
-2	our	our	PRON	_	_	3	nmod:poss	_	_
-3	labors	labor	NOUN	_	_	5	nsubj	_	_
-4	were	be	AUX	_	_	5	cop	_	_
-5	vain	vain	ADJ	_	_	0	root	_	_
-6	;	;	PUNCT	_	_	10	punct	_	_
-7	their	their	PRON	_	_	8	nmod:poss	_	_
-8	hatred	hatred	NOUN	_	_	10	nsubj:pass	_	_
-9	was	be	AUX	_	_	10	aux:pass	_	_
-10	fixed	fix	VERB	_	_	5	parataxis	_	_
-11	,	,	PUNCT	_	_	15	punct	_	_
-12	and	and	CCONJ	_	_	15	cc	_	_
-13	they	they	PRON	_	_	15	nsubj:pass	_	_
-14	were	be	AUX	_	_	15	aux:pass	_	_
-15	led	lead	VERB	_	_	5	conj	_	_
-16	by	by	ADP	_	_	19	case	_	_
-17	their	their	PRON	_	_	19	nmod:poss	_	_
-18	evil	evil	ADJ	_	_	19	amod	_	_
-19	nature	nature	NOUN	_	_	15	obl:agent	_	_
-20	that	that	SCONJ	_	_	22	mark	_	_
-21	they	they	PRON	_	_	22	nsubj	_	_
-22	became	become	VERB	_	_	15	ccomp	_	_
-23	wild	wild	ADJ	_	_	22	xcomp	_	_
-24	,	,	PUNCT	_	_	26	punct	_	_
-25	and	and	CCONJ	_	_	26	cc	_	_
-26	ferocious	ferocious	ADJ	_	_	23	conj	_	_
-27	,	,	PUNCT	_	_	28	punct	_	_
-28	and	and	CCONJ	_	_	33	cc	_	_
-29	a	a	DET	_	_	33	det	_	_
-30	blood	blood	NOUN	_	_	32	compound	_	_
-31	-	-	PUNCT	_	_	30	punct	_	_
-32	thirsty	thirsty	ADJ	_	_	33	amod	_	_
-33	people	person	NOUN	_	_	23	conj	_	_
-34	,	,	PUNCT	_	_	35	punct	_	_
-35	full	full	ADJ	_	_	33	amod	_	_
-36	of	of	ADP	_	_	37	case	_	_
-37	idolatry	idolatry	NOUN	_	_	35	obl	_	_
-38	and	and	CCONJ	_	_	39	cc	_	_
-39	filthiness	filthiness	NOUN	_	_	37	conj	_	_
-40	;	;	PUNCT	_	_	41	punct	_	_
-41	feeding	feed	VERB	_	_	22	advcl	_	_
-42	upon	upon	ADP	_	_	43	case	_	_
-43	beasts	beast	NOUN	_	_	41	obl	_	_
-44	of	of	ADP	_	_	45	case	_	_
-45	prey	prey	NOUN	_	_	43	nmod	_	_
-46	;	;	PUNCT	_	_	47	punct	_	_
-47	dwelling	dwelling	VERB	_	_	41	conj	_	_
-48	in	in	ADP	_	_	49	case	_	_
-49	tents	tent	NOUN	_	_	47	obl	_	_
-50	,	,	PUNCT	_	_	52	punct	_	_
-51	and	and	CCONJ	_	_	52	cc	_	_
-52	wandering	wonder	VERB	_	_	41	conj	_	_
-53	about	about	ADP	_	_	52	compound:prt	_	_
-54	in	in	ADP	_	_	56	case	_	_
-55	the	the	DET	_	_	56	det	_	_
-56	wilderness	wilderness	NOUN	_	_	52	obl	_	_
-57	with	with	ADP	_	_	61	case	_	_
-58	a	a	DET	_	_	61	det	_	_
-59	short	short	ADJ	_	_	61	amod	_	_
-60	skin	skin	NOUN	_	_	61	compound	_	_
-61	girdle	belt	NOUN	_	_	56	nmod	_	_
-62	about	about	ADP	_	_	64	case	_	_
-63	their	their	PRON	_	_	64	nmod:poss	_	_
-64	loins	loin	NOUN	_	_	61	nmod	_	_
-65	and	and	CCONJ	_	_	67	cc	_	_
-66	their	their	PRON	_	_	67	nmod:poss	_	_
-67	heads	head	NOUN	_	_	64	conj	_	_
-68	shaven	shaven	ADJ	_	_	61	conj	_	_
-69	;	;	PUNCT	_	_	76	punct	_	_
-70	and	and	CCONJ	_	_	76	cc	_	_
-71	their	their	PRON	_	_	72	nmod:poss	_	_
-72	skill	skill	NOUN	_	_	76	nsubj	_	_
-73	was	be	AUX	_	_	76	cop	_	_
-74	in	in	ADP	_	_	76	case	_	_
-75	the	the	DET	_	_	76	det	_	_
-76	bow	bow	NOUN	_	_	5	conj	_	_
-77	,	,	PUNCT	_	_	81	punct	_	_
-78	and	and	CCONJ	_	_	81	cc	_	_
-79	in	in	ADP	_	_	81	case	_	_
-80	the	the	DET	_	_	81	det	_	_
-81	cimeter	cimeter	NOUN	_	_	76	conj	_	_
-82	,	,	PUNCT	_	_	85	punct	_	_
-83	and	and	CCONJ	_	_	85	cc	_	_
-84	the	the	DET	_	_	85	det	_	_
-85	ax	ax	NOUN	_	_	76	conj	_	_
-86	.	.	PUNCT	_	_	5	punct	_	_
-
-# sent_id = 25
-# text = And many of them did eat nothing save it was raw meat; and they were continually seeking to destroy us.
-1	And	and	CCONJ	_	_	6	cc	_	_
-2	many	many	ADJ	_	_	6	nsubj	_	_
-3	of	of	ADP	_	_	4	case	_	_
-4	them	they	PRON	_	_	2	nmod	_	_
-5	did	do	AUX	_	_	6	aux	_	_
-6	eat	eat	VERB	_	_	0	root	_	_
-7	nothing	nothing	PRON	_	_	6	obj	_	_
-8	save	save	SCONJ	_	_	12	mark	_	_
-9	it	it	PRON	_	_	12	nsubj	_	_
-10	was	be	AUX	_	_	12	cop	_	_
-11	raw	raw	ADJ	_	_	12	amod	_	_
-12	meat	meat	NOUN	_	_	6	advcl	_	_
-13	;	;	PUNCT	_	_	18	punct	_	_
-14	and	and	CCONJ	_	_	18	cc	_	_
-15	they	they	PRON	_	_	18	nsubj	_	_
-16	were	be	AUX	_	_	18	aux	_	_
-17	continually	continually	ADV	_	_	18	advmod	_	_
-18	seeking	seek	VERB	_	_	6	conj	_	_
-19	to	to	PART	_	_	20	mark	_	_
-20	destroy	destroy	VERB	_	_	18	xcomp	_	_
-21	us	we	PRON	_	_	20	obj	_	_
-22	.	.	PUNCT	_	_	6	punct	_	_
-
-# sent_id = 26
+# sent_id = 23
 # text = And it came to pass that the people of Nephi did till the land, and raise all manner of grain, and of fruit, and flocks of herds, and flocks of all manner of cattle of every kind, and goats, and wild goats, and also many horses.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1086,8 +1077,8 @@
 53	horses	horse	NOUN	_	_	38	conj	_	_
 54	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 27
-# text = And there were exceedingly many prophets among us.
+# sent_id = 24
+# text = And there were exceedingly many prophets among us. And the people were a stiffnecked people, hard to understand.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
 3	were	be	VERB	_	_	0	root	_	_
@@ -1097,23 +1088,20 @@
 7	among	among	ADP	_	_	8	case	_	_
 8	us	we	PRON	_	_	6	nmod	_	_
 9	.	.	PUNCT	_	_	3	punct	_	_
+10	And	and	CCONJ	_	_	16	cc	_	_
+11	the	the	DET	_	_	12	det	_	_
+12	people	person	NOUN	_	_	16	nsubj	_	_
+13	were	be	AUX	_	_	16	cop	_	_
+14	a	a	DET	_	_	16	det	_	_
+15	stiffnecked	stiffnecked	ADJ	_	_	16	amod	_	_
+16	people	person	NOUN	_	_	3	conj	_	_
+17	,	,	PUNCT	_	_	18	punct	_	_
+18	hard	hard	ADJ	_	_	16	parataxis	_	_
+19	to	to	PART	_	_	20	mark	_	_
+20	understand	understand	VERB	_	_	18	advcl	_	_
+21	.	.	PUNCT	_	_	16	punct	_	_
 
-# sent_id = 28
-# text = And the people were a stiffnecked people, hard to understand.
-1	And	and	CCONJ	_	_	7	cc	_	_
-2	the	the	DET	_	_	3	det	_	_
-3	people	person	NOUN	_	_	7	nsubj	_	_
-4	were	be	AUX	_	_	7	cop	_	_
-5	a	a	DET	_	_	7	det	_	_
-6	stiffnecked	stiffnecked	ADJ	_	_	7	amod	_	_
-7	people	person	NOUN	_	_	0	root	_	_
-8	,	,	PUNCT	_	_	9	punct	_	_
-9	hard	hard	ADJ	_	_	7	parataxis	_	_
-10	to	to	PART	_	_	11	mark	_	_
-11	understand	understand	VERB	_	_	9	advcl	_	_
-12	.	.	PUNCT	_	_	7	punct	_	_
-
-# sent_id = 29
+# sent_id = 25
 # text = And there was nothing save it was exceeding harshness, preaching and prophesying of wars, and contentions, and destructions, and continually reminding them of death, and the duration of eternity, and the judgments and the power of God, and all these things--stirring them up continually to keep them in the fear of the Lord.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -1179,7 +1167,7 @@
 62	Lord	Lord	PROPN	_	_	59	nmod	_	_
 63	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 30
+# sent_id = 26
 # text = I say there was nothing short of these things, and exceedingly great plainness of speech, would keep them from going down speedily to destruction.
 1	I	I	PRON	_	_	2	nsubj	_	_
 2	say	say	VERB	_	_	0	root	_	_
@@ -1209,7 +1197,7 @@
 26	destruction	destruction	NOUN	_	_	22	obl	_	_
 27	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 31
+# sent_id = 27
 # text = And after this manner do I write concerning them.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	after	after	ADP	_	_	4	case	_	_
@@ -1222,7 +1210,7 @@
 9	them	they	PRON	_	_	7	obl	_	_
 10	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 32
+# sent_id = 28
 # text = And I saw wars between the Nephites and Lamanites in the course of my days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -1241,7 +1229,7 @@
 15	days	day	NOUN	_	_	12	nmod	_	_
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 33
+# sent_id = 29
 # text = And it came to pass that I began to be old, and an hundred and seventy and nine years had passed away from the time that our father Lehi left Jerusalem.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1277,7 +1265,7 @@
 32	Jerusalem	Jerusalem	PROPN	_	_	31	obj	_	_
 33	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 34
+# sent_id = 30
 # text = And I saw that I must soon go down to my grave, having been wrought upon by the power of God that I must preach and prophesy unto this people, and declare the word according to the truth which is in Christ.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -1325,7 +1313,7 @@
 44	Christ	Christ	PROPN	_	_	40	acl:relcl	_	_
 45	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 35
+# sent_id = 31
 # text = And I have declared it in all my days, and have rejoiced in it above that of the world.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
@@ -1349,7 +1337,7 @@
 20	world	world	NOUN	_	_	17	nmod	_	_
 21	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 36
+# sent_id = 32
 # text = And I soon go to the place of my rest, which is with my Redeemer; for I know that in him I shall rest.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
@@ -1379,7 +1367,7 @@
 26	rest	rest	VERB	_	_	20	ccomp	_	_
 27	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 37
+# sent_id = 33
 # text = And I rejoice in the day when my mortal shall put on immortality, and shall stand before him; then shall I see his face with pleasure, and he will say unto me: Come unto me, ye blessed, there is a place prepared for you in the mansions of my Father.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -1439,7 +1427,7 @@
 56	Father	father	NOUN	_	_	53	nmod	_	_
 57	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 38
+# sent_id = 34
 # text = Amen.
 1	Amen	amen	INTJ	_	_	0	root	_	_
 2	.	.	PUNCT	_	_	1	punct	_	_

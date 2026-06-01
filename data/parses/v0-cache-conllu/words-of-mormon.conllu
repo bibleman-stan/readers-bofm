@@ -43,7 +43,7 @@
 41	.	.	PUNCT	_	_	30	punct	_	_
 
 # sent_id = 1
-# text = And it is many hundred years after the coming of Christ that I deliver these records into the hands of my son; and it supposeth me that he will witness the entire destruction of my people.
+# text = And it is many hundred years after the coming of Christ that I deliver these records into the hands of my son; and it supposeth me that he will witness the entire destruction of my people. But may God grant that he may survive them, that he may write somewhat concerning them, and somewhat concerning Christ, that perhaps some day it may profit them.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	it	it	PRON	_	_	6	nsubj	_	_
 3	is	be	AUX	_	_	6	cop	_	_
@@ -82,43 +82,40 @@
 36	my	my	PRON	_	_	37	nmod:poss	_	_
 37	people	person	NOUN	_	_	34	nmod	_	_
 38	.	.	PUNCT	_	_	6	punct	_	_
+39	But	but	CCONJ	_	_	42	cc	_	_
+40	may	may	AUX	_	_	42	aux	_	_
+41	God	God	PROPN	_	_	42	nsubj	_	_
+42	grant	grant	VERB	_	_	6	conj	_	_
+43	that	that	SCONJ	_	_	46	mark	_	_
+44	he	he	PRON	_	_	46	nsubj	_	_
+45	may	may	AUX	_	_	46	aux	_	_
+46	survive	survive	VERB	_	_	42	ccomp	_	_
+47	them	they	PRON	_	_	46	obj	_	_
+48	,	,	PUNCT	_	_	52	punct	_	_
+49	that	that	SCONJ	_	_	52	mark	_	_
+50	he	he	PRON	_	_	52	nsubj	_	_
+51	may	may	AUX	_	_	52	aux	_	_
+52	write	write	VERB	_	_	42	ccomp	_	_
+53	somewhat	somewhat	ADV	_	_	52	advmod	_	_
+54	concerning	concern	VERB	_	_	55	case	_	_
+55	them	they	PRON	_	_	52	obl	_	_
+56	,	,	PUNCT	_	_	60	punct	_	_
+57	and	and	CCONJ	_	_	60	cc	_	_
+58	somewhat	somewhat	ADV	_	_	60	advmod	_	_
+59	concerning	concern	VERB	_	_	60	case	_	_
+60	Christ	Christ	PROPN	_	_	55	conj	_	_
+61	,	,	PUNCT	_	_	68	punct	_	_
+62	that	that	SCONJ	_	_	68	mark	_	_
+63	perhaps	perhaps	ADV	_	_	68	advmod	_	_
+64	some	some	DET	_	_	65	det	_	_
+65	day	day	NOUN	_	_	68	obl:unmarked	_	_
+66	it	it	PRON	_	_	68	nsubj	_	_
+67	may	may	AUX	_	_	68	aux	_	_
+68	profit	profit	VERB	_	_	42	ccomp	_	_
+69	them	they	PRON	_	_	68	obj	_	_
+70	.	.	PUNCT	_	_	42	punct	_	_
 
 # sent_id = 2
-# text = But may God grant that he may survive them, that he may write somewhat concerning them, and somewhat concerning Christ, that perhaps some day it may profit them.
-1	But	but	CCONJ	_	_	4	cc	_	_
-2	may	may	AUX	_	_	4	aux	_	_
-3	God	God	PROPN	_	_	4	nsubj	_	_
-4	grant	grant	VERB	_	_	0	root	_	_
-5	that	that	SCONJ	_	_	8	mark	_	_
-6	he	he	PRON	_	_	8	nsubj	_	_
-7	may	may	AUX	_	_	8	aux	_	_
-8	survive	survive	VERB	_	_	4	ccomp	_	_
-9	them	they	PRON	_	_	8	obj	_	_
-10	,	,	PUNCT	_	_	14	punct	_	_
-11	that	that	SCONJ	_	_	14	mark	_	_
-12	he	he	PRON	_	_	14	nsubj	_	_
-13	may	may	AUX	_	_	14	aux	_	_
-14	write	write	VERB	_	_	4	ccomp	_	_
-15	somewhat	somewhat	ADV	_	_	14	advmod	_	_
-16	concerning	concern	VERB	_	_	17	case	_	_
-17	them	they	PRON	_	_	14	obl	_	_
-18	,	,	PUNCT	_	_	22	punct	_	_
-19	and	and	CCONJ	_	_	22	cc	_	_
-20	somewhat	somewhat	ADV	_	_	22	advmod	_	_
-21	concerning	concern	VERB	_	_	22	case	_	_
-22	Christ	Christ	PROPN	_	_	17	conj	_	_
-23	,	,	PUNCT	_	_	30	punct	_	_
-24	that	that	SCONJ	_	_	30	mark	_	_
-25	perhaps	perhaps	ADV	_	_	30	advmod	_	_
-26	some	some	DET	_	_	27	det	_	_
-27	day	day	NOUN	_	_	30	obl:unmarked	_	_
-28	it	it	PRON	_	_	30	nsubj	_	_
-29	may	may	AUX	_	_	30	aux	_	_
-30	profit	profit	VERB	_	_	4	ccomp	_	_
-31	them	they	PRON	_	_	30	obj	_	_
-32	.	.	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 3
 # text = And now, I speak somewhat concerning that which I have written; for after I had made an abridgment from the plates of Nephi, down to the reign of this king Benjamin, of whom Amaleki spake, I searched among the records which had been delivered into my hands, and I found these plates, which contained this small account of the prophets, from Jacob down to the reign of this king Benjamin, and also many of the words of Nephi.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	now	now	ADV	_	_	5	advmod	_	_
@@ -209,7 +206,7 @@
 87	Nephi	Nephi	PROPN	_	_	85	nmod	_	_
 88	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 4
+# sent_id = 3
 # text = And the things which are upon these plates pleasing me, because of the prophecies of the coming of Christ; and my fathers knowing that many of them have been fulfilled; yea, and I also know that as many things as have been prophesied concerning us down to this day have been fulfilled, and as many as go beyond this day must surely come to pass--
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -283,7 +280,7 @@
 70	pass	pass	VERB	_	_	68	xcomp	_	_
 71	--	--	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 5
+# sent_id = 4
 # text = Wherefore, I chose these things, to finish my record upon them, which remainder of my record I shall take from the plates of Nephi; and I cannot write the hundredth part of the things of my people.
 1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -329,7 +326,7 @@
 42	people	person	NOUN	_	_	39	nmod	_	_
 43	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 6
+# sent_id = 5
 # text = But behold, I shall take these plates, which contain these prophesyings and revelations, and put them with the remainder of my record, for they are choice unto me; and I know they will be choice unto my brethren.
 1	But	but	CCONJ	_	_	6	cc	_	_
 2	behold	behold	INTJ	_	_	6	discourse	_	_
@@ -376,7 +373,7 @@
 43	brethren	brother	NOUN	_	_	40	nmod	_	_
 44	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 7
+# sent_id = 6
 # text = And I do this for a wise purpose; for thus it whispereth me, according to the workings of the Spirit of the Lord which is in me.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -409,7 +406,7 @@
 29	me	I	PRON	_	_	22	acl:relcl	_	_
 30	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 8
+# sent_id = 7
 # text = And now, I do not know all things; but the Lord knoweth all things which are to come; wherefore, he worketh in me to do according to his will.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -446,7 +443,7 @@
 33	will	will	NOUN	_	_	29	obl	_	_
 34	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 9
+# sent_id = 8
 # text = And my prayer to God is concerning my brethren, that they may once again come to the knowledge of God, yea, the redemption of Christ; that they may once again be a delightsome people.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	my	my	PRON	_	_	3	nmod:poss	_	_
@@ -488,7 +485,7 @@
 38	people	person	NOUN	_	_	9	acl:relcl	_	_
 39	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 10
+# sent_id = 9
 # text = And now I, Mormon, proceed to finish out my record, which I take from the plates of Nephi; and I make it according to the knowledge and the understanding which God has given me.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -530,7 +527,7 @@
 38	me	I	PRON	_	_	37	iobj	_	_
 39	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 11
+# sent_id = 10
 # text = Wherefore, it came to pass that after Amaleki had delivered up these plates into the hands of king Benjamin, he took them and put them with the other plates, which contained records which had been handed down by the kings, from generation to generation until the days of king Benjamin.
 1	Wherefore	so	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -588,7 +585,7 @@
 54	Benjamin	Benjamin	PROPN	_	_	53	flat	_	_
 55	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 12
+# sent_id = 11
 # text = And they were handed down from king Benjamin, from generation to generation until they have fallen into my hands.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj:pass	_	_
@@ -612,7 +609,7 @@
 20	hands	hand	NOUN	_	_	17	obl	_	_
 21	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 13
+# sent_id = 12
 # text = And I, Mormon, pray to God that they may be preserved from this time henceforth.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	I	I	PRON	_	_	6	nsubj	_	_
@@ -633,7 +630,7 @@
 17	henceforth	henceforth	NOUN	_	_	13	obl	_	_
 18	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 14
+# sent_id = 13
 # text = And I know that they will be preserved; for there are great things written upon them, out of which my people and their brethren shall be judged at the great and last day, according to the word of God which is written.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -682,7 +679,7 @@
 45	written	write	VERB	_	_	40	acl:relcl	_	_
 46	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 15
+# sent_id = 14
 # text = And now, concerning this king Benjamin--he had somewhat of contentions among his own people.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	now	now	ADV	_	_	10	advmod	_	_
@@ -703,7 +700,7 @@
 17	people	person	NOUN	_	_	13	nmod	_	_
 18	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 16
+# sent_id = 15
 # text = And it came to pass also that the armies of the Lamanites came down out of the land of Nephi, to battle against his people.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -733,7 +730,7 @@
 26	people	person	NOUN	_	_	23	obl	_	_
 27	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 17
+# sent_id = 16
 # text = But behold, king Benjamin gathered together his armies, and he did stand against them; and he did fight with the strength of his own arm, with the sword of Laban.
 1	But	but	CCONJ	_	_	6	cc	_	_
 2	behold	behold	INTJ	_	_	6	discourse	_	_
@@ -771,7 +768,7 @@
 34	Laban	Laban	PROPN	_	_	32	nmod	_	_
 35	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 18
+# sent_id = 17
 # text = And in the strength of the Lord they did contend against their enemies, until they had slain many thousands of the Lamanites.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	in	in	ADP	_	_	4	case	_	_
@@ -798,7 +795,7 @@
 23	Lamanites	Lamanites	PROPN	_	_	20	nmod	_	_
 24	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 19
+# sent_id = 18
 # text = And it came to pass that they did contend against the Lamanites until they had driven them out of all the lands of their inheritance.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -827,7 +824,7 @@
 25	inheritance	inheritance	NOUN	_	_	22	nmod	_	_
 26	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 20
+# sent_id = 19
 # text = And it came to pass that after there had been false Christs, and their mouths had been shut, and they punished according to their crimes;
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -858,7 +855,7 @@
 27	crimes	crime	NOUN	_	_	23	obl	_	_
 28	;	;	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 21
+# sent_id = 20
 # text = And after there had been false prophets, and false preachers and teachers among the people, and all these having been punished according to their crimes; and after there having been much contention and many dissensions away unto the Lamanites, behold, it came to pass that king Benjamin, with the assistance of the holy prophets who were among his people--
 1	And	and	CCONJ	_	_	47	cc	_	_
 2	after	after	SCONJ	_	_	5	mark	_	_
@@ -927,7 +924,7 @@
 65	people	person	NOUN	_	_	60	acl:relcl	_	_
 66	--	--	PUNCT	_	_	47	punct	_	_
 
-# sent_id = 22
+# sent_id = 21
 # text = For behold, king Benjamin was a holy man, and he did reign over his people in righteousness; and there were many holy men in the land, and they did speak the word of God with power and with authority; and they did use much sharpness because of the stiffneckedness of the people--
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	9	obl	_	_
@@ -988,7 +985,7 @@
 57	people	person	NOUN	_	_	54	nmod	_	_
 58	--	--	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 23
+# sent_id = 22
 # text = Wherefore, with the help of these, king Benjamin, by laboring with all the might of his body and the faculty of his whole soul, and also the prophets, did once more establish peace in the land.
 1	Wherefore	so	ADV	_	_	37	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
