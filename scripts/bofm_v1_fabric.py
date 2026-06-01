@@ -520,9 +520,15 @@ def is_clause_head(tok, by_id=None):
                 # (if/but-if conditional pair) + Alma 33:23 (matrix + as-frame
                 # imperative) class.
                 tok_pos = _i(tok.id) or 0
+                # FRAME mark/advmod accepts SCONJ-mark, ADV-advmod tagged
+                # forms in _FRAME_MARKS (Stanza inconsistently tags when/if
+                # as mark vs advmod depending on syntactic environment).
+                def _is_frame_marker(c):
+                    return ((c.form or "").lower() in _FRAME_MARKS
+                            and ((c.deprel or "") in ("mark", "advmod")
+                                 or c.upos in ("SCONJ", "ADV")))
                 own_frame_mark = any(_i(c.head) == _i(tok.id)
-                                     and ((c.deprel or "") == "mark" or c.upos == "SCONJ")
-                                     and (c.form or "").lower() in _FRAME_MARKS
+                                     and _is_frame_marker(c)
                                      and (_i(c.id) or 0) < tok_pos
                                      for c in by_id.values())
                 if own_frame_mark:
@@ -531,9 +537,7 @@ def is_clause_head(tok, by_id=None):
                     _i(c.head) == _i(tok.id)
                     and (c.deprel or "").split(":")[0] == "advcl"
                     and (_i(c.id) or 0) < tok_pos
-                    and any(_i(g.head) == _i(c.id)
-                            and ((g.deprel or "") == "mark" or g.upos == "SCONJ")
-                            and (g.form or "").lower() in _FRAME_MARKS
+                    and any(_i(g.head) == _i(c.id) and _is_frame_marker(g)
                             for g in by_id.values())
                     for c in by_id.values())
                 if advcl_with_frame_mark:
