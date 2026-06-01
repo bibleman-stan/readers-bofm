@@ -2340,7 +2340,7 @@
 54	.	.	PUNCT	_	_	24	punct	_	_
 
 # sent_id = 55
-# text = And after that he came men also were saved by faith in his name; and by faith, they become the sons of God.
+# text = And after that he came men also were saved by faith in his name; and by faith, they become the sons of God. And as surely as Christ liveth he spake these words unto our fathers, saying: Whatsoever thing ye shall ask the Father in my name, which is good, in faith believing that ye shall receive, behold, it shall be done unto you.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	after	after	SCONJ	_	_	5	mark	_	_
 3	that	that	SCONJ	_	_	5	mark	_	_
@@ -2367,62 +2367,56 @@
 24	of	of	ADP	_	_	25	case	_	_
 25	God	God	PROPN	_	_	23	nmod	_	_
 26	.	.	PUNCT	_	_	9	punct	_	_
+27	And	and	CCONJ	_	_	34	cc	_	_
+28	as	as	ADV	_	_	29	advmod	_	_
+29	surely	surely	ADV	_	_	34	advmod	_	_
+30	as	as	ADP	_	_	31	case	_	_
+31	Christ	Christ	PROPN	_	_	32	nsubj	_	_
+32	liveth	live	VERB	_	_	29	advcl	_	_
+33	he	he	PRON	_	_	34	nsubj	_	_
+34	spake	speak	VERB	_	_	9	conj	_	_
+35	these	this	DET	_	_	36	det	_	_
+36	words	word	NOUN	_	_	34	obj	_	_
+37	unto	to	ADP	_	_	39	case	_	_
+38	our	our	PRON	_	_	39	nmod:poss	_	_
+39	fathers	father	NOUN	_	_	34	obl	_	_
+40	,	,	PUNCT	_	_	41	punct	_	_
+41	saying	say	VERB	_	_	34	advcl	_	_
+42	:	:	PUNCT	_	_	34	punct	_	_
+43	Whatsoever	whatsoever	DET	_	_	44	det	_	_
+44	thing	thing	NOUN	_	_	0	root	_	_
+45	ye	you	PRON	_	_	47	nsubj	_	_
+46	shall	shall	AUX	_	_	47	aux	_	_
+47	ask	ask	VERB	_	_	44	acl:relcl	_	_
+48	the	the	DET	_	_	49	det	_	_
+49	Father	Father	PROPN	_	_	47	iobj	_	_
+50	in	in	ADP	_	_	52	case	_	_
+51	my	my	PRON	_	_	52	nmod:poss	_	_
+52	name	name	NOUN	_	_	47	obl	_	_
+53	,	,	PUNCT	_	_	56	punct	_	_
+54	which	which	PRON	_	_	56	nsubj	_	_
+55	is	be	AUX	_	_	56	cop	_	_
+56	good	good	ADJ	_	_	52	acl:relcl	_	_
+57	,	,	PUNCT	_	_	60	punct	_	_
+58	in	in	ADP	_	_	59	case	_	_
+59	faith	faith	NOUN	_	_	56	obl	_	_
+60	believing	believe	VERB	_	_	56	advcl	_	_
+61	that	that	SCONJ	_	_	64	mark	_	_
+62	ye	you	PRON	_	_	64	nsubj	_	_
+63	shall	shall	AUX	_	_	64	aux	_	_
+64	receive	receive	VERB	_	_	60	ccomp	_	_
+65	,	,	PUNCT	_	_	66	punct	_	_
+66	behold	behold	VERB	_	_	64	conj	_	_
+67	,	,	PUNCT	_	_	71	punct	_	_
+68	it	it	PRON	_	_	71	nsubj:pass	_	_
+69	shall	shall	AUX	_	_	71	aux	_	_
+70	be	be	AUX	_	_	71	aux:pass	_	_
+71	done	do	VERB	_	_	56	parataxis	_	_
+72	unto	to	ADP	_	_	73	case	_	_
+73	you	you	PRON	_	_	71	obl	_	_
+74	.	.	PUNCT	_	_	44	punct	_	_
 
 # sent_id = 56
-# text = And as surely as Christ liveth he spake these words unto our fathers, saying:
-1	And	and	CCONJ	_	_	8	cc	_	_
-2	as	as	ADV	_	_	3	advmod	_	_
-3	surely	surely	ADV	_	_	8	advmod	_	_
-4	as	as	ADP	_	_	5	case	_	_
-5	Christ	Christ	PROPN	_	_	6	nsubj	_	_
-6	liveth	live	VERB	_	_	3	advcl	_	_
-7	he	he	PRON	_	_	8	nsubj	_	_
-8	spake	speak	VERB	_	_	0	root	_	_
-9	these	this	DET	_	_	10	det	_	_
-10	words	word	NOUN	_	_	8	obj	_	_
-11	unto	to	ADP	_	_	13	case	_	_
-12	our	our	PRON	_	_	13	nmod:poss	_	_
-13	fathers	father	NOUN	_	_	8	obl	_	_
-14	,	,	PUNCT	_	_	15	punct	_	_
-15	saying	say	VERB	_	_	8	advcl	_	_
-16	:	:	PUNCT	_	_	8	punct	_	_
-
-# sent_id = 57
-# text = Whatsoever thing ye shall ask the Father in my name, which is good, in faith believing that ye shall receive, behold, it shall be done unto you.
-1	Whatsoever	whatsoever	DET	_	_	2	det	_	_
-2	thing	thing	NOUN	_	_	0	root	_	_
-3	ye	you	PRON	_	_	5	nsubj	_	_
-4	shall	shall	AUX	_	_	5	aux	_	_
-5	ask	ask	VERB	_	_	2	acl:relcl	_	_
-6	the	the	DET	_	_	7	det	_	_
-7	Father	Father	PROPN	_	_	5	iobj	_	_
-8	in	in	ADP	_	_	10	case	_	_
-9	my	my	PRON	_	_	10	nmod:poss	_	_
-10	name	name	NOUN	_	_	5	obl	_	_
-11	,	,	PUNCT	_	_	14	punct	_	_
-12	which	which	PRON	_	_	14	nsubj	_	_
-13	is	be	AUX	_	_	14	cop	_	_
-14	good	good	ADJ	_	_	10	acl:relcl	_	_
-15	,	,	PUNCT	_	_	18	punct	_	_
-16	in	in	ADP	_	_	17	case	_	_
-17	faith	faith	NOUN	_	_	14	obl	_	_
-18	believing	believe	VERB	_	_	14	advcl	_	_
-19	that	that	SCONJ	_	_	22	mark	_	_
-20	ye	you	PRON	_	_	22	nsubj	_	_
-21	shall	shall	AUX	_	_	22	aux	_	_
-22	receive	receive	VERB	_	_	18	ccomp	_	_
-23	,	,	PUNCT	_	_	24	punct	_	_
-24	behold	behold	VERB	_	_	22	conj	_	_
-25	,	,	PUNCT	_	_	29	punct	_	_
-26	it	it	PRON	_	_	29	nsubj:pass	_	_
-27	shall	shall	AUX	_	_	29	aux	_	_
-28	be	be	AUX	_	_	29	aux:pass	_	_
-29	done	do	VERB	_	_	14	parataxis	_	_
-30	unto	to	ADP	_	_	31	case	_	_
-31	you	you	PRON	_	_	29	obl	_	_
-32	.	.	PUNCT	_	_	2	punct	_	_
-
-# sent_id = 58
 # text = Wherefore, my beloved brethren, have miracles ceased because Christ hath ascended into heaven, and hath sat down on the right hand of God, to claim of the Father his rights of mercy which he hath upon the children of men?
 1	Wherefore	so	ADV	_	_	9	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -2470,7 +2464,7 @@
 44	men	man	NOUN	_	_	42	nmod	_	_
 45	?	?	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 59
+# sent_id = 57
 # text = For he hath answered the ends of the law, and he claimeth all those who have faith in him; and they who have faith in him will cleave unto every good thing; wherefore he advocateth the cause of the children of men; and he dwelleth eternally in the heavens.
 1	For	for	SCONJ	_	_	4	mark	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -2527,7 +2521,7 @@
 53	heavens	heaven	NOUN	_	_	49	obl	_	_
 54	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 60
+# sent_id = 58
 # text = And because he hath done this, my beloved brethren, have miracles ceased?
 1	And	and	CCONJ	_	_	14	cc	_	_
 2	because	because	SCONJ	_	_	5	mark	_	_
@@ -2545,7 +2539,7 @@
 14	ceased	cease	VERB	_	_	0	root	_	_
 15	?	?	PUNCT	_	_	14	punct	_	_
 
-# sent_id = 61
+# sent_id = 59
 # text = Behold I say unto you, Nay; neither have angels ceased to minister unto the children of men.
 1	Behold	behold	INTJ	_	_	3	discourse	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -2568,7 +2562,7 @@
 19	men	man	NOUN	_	_	17	nmod	_	_
 20	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 62
+# sent_id = 60
 # text = For behold, they are subject unto him, to minister according to the word of his command, showing themselves unto them of strong faith and a firm mind in every form of godliness.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	6	obl	_	_
@@ -2607,7 +2601,7 @@
 35	godliness	godliness	NOUN	_	_	33	nmod	_	_
 36	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 63
+# sent_id = 61
 # text = And the office of their ministry is to call men unto repentance, and to fulfil and to do the work of the covenants of the Father, which he hath made unto the children of men, to prepare the way among the children of men, by declaring the word of Christ unto the chosen vessels of the Lord, that they may bear testimony of him.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -2680,7 +2674,7 @@
 69	him	he	PRON	_	_	67	nmod	_	_
 70	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 64
+# sent_id = 62
 # text = And by so doing, the Lord God prepareth the way that the residue of men may have faith in Christ, that the Holy Ghost may have place in their hearts, according to the power thereof; and after this manner bringeth to pass the Father, the covenants which he hath made unto the children of men.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	by	by	SCONJ	_	_	4	mark	_	_
@@ -2744,38 +2738,35 @@
 60	men	man	NOUN	_	_	58	nmod	_	_
 61	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 65
-# text = And Christ hath said:
+# sent_id = 63
+# text = And Christ hath said: If ye will have faith in me ye shall have power to do whatsoever thing is expedient in me.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	Christ	Christ	PROPN	_	_	4	nsubj	_	_
 3	hath	have	AUX	_	_	4	aux	_	_
 4	said	say	VERB	_	_	0	root	_	_
 5	:	:	PUNCT	_	_	4	punct	_	_
+6	If	if	SCONJ	_	_	9	mark	_	_
+7	ye	you	PRON	_	_	9	nsubj	_	_
+8	will	will	AUX	_	_	9	aux	_	_
+9	have	have	VERB	_	_	15	advcl	_	_
+10	faith	faith	NOUN	_	_	9	obj	_	_
+11	in	in	ADP	_	_	12	case	_	_
+12	me	I	PRON	_	_	10	nmod	_	_
+13	ye	you	PRON	_	_	15	nsubj	_	_
+14	shall	shall	AUX	_	_	15	aux	_	_
+15	have	have	VERB	_	_	4	ccomp	_	_
+16	power	power	NOUN	_	_	15	obj	_	_
+17	to	to	PART	_	_	18	mark	_	_
+18	do	do	VERB	_	_	16	acl	_	_
+19	whatsoever	whatsoever	DET	_	_	20	det	_	_
+20	thing	thing	NOUN	_	_	18	obj	_	_
+21	is	be	AUX	_	_	22	cop	_	_
+22	expedient	expedient	ADJ	_	_	15	parataxis	_	_
+23	in	in	ADP	_	_	24	case	_	_
+24	me	I	PRON	_	_	22	obl	_	_
+25	.	.	PUNCT	_	_	22	punct	_	_
 
-# sent_id = 66
-# text = If ye will have faith in me ye shall have power to do whatsoever thing is expedient in me.
-1	If	if	SCONJ	_	_	4	mark	_	_
-2	ye	you	PRON	_	_	4	nsubj	_	_
-3	will	will	AUX	_	_	4	aux	_	_
-4	have	have	VERB	_	_	10	advcl	_	_
-5	faith	faith	NOUN	_	_	4	obj	_	_
-6	in	in	ADP	_	_	7	case	_	_
-7	me	I	PRON	_	_	5	nmod	_	_
-8	ye	you	PRON	_	_	10	nsubj	_	_
-9	shall	shall	AUX	_	_	10	aux	_	_
-10	have	have	VERB	_	_	0	root	_	_
-11	power	power	NOUN	_	_	10	obj	_	_
-12	to	to	PART	_	_	13	mark	_	_
-13	do	do	VERB	_	_	11	acl	_	_
-14	whatsoever	whatsoever	DET	_	_	15	det	_	_
-15	thing	thing	NOUN	_	_	13	obj	_	_
-16	is	be	AUX	_	_	17	cop	_	_
-17	expedient	expedient	ADJ	_	_	10	parataxis	_	_
-18	in	in	ADP	_	_	19	case	_	_
-19	me	I	PRON	_	_	17	obl	_	_
-20	.	.	PUNCT	_	_	17	punct	_	_
-
-# sent_id = 67
+# sent_id = 64
 # text = And he hath said: Repent all ye ends of the earth, and come unto me, and be baptized in my name, and have faith in me, that ye may be saved.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -2815,7 +2806,7 @@
 36	saved	save	VERB	_	_	27	advcl	_	_
 37	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 68
+# sent_id = 65
 # text = And now, my beloved brethren, if this be the case that these things are true which I have spoken unto you, and God will show unto you, with power and great glory at the last day, that they are true, and if they are true has the day of miracles ceased?
 1	And	and	CCONJ	_	_	28	cc	_	_
 2	now	now	ADV	_	_	28	advmod	_	_
@@ -2876,8 +2867,8 @@
 57	ceased	cease	VERB	_	_	45	conj	_	_
 58	?	?	PUNCT	_	_	28	punct	_	_
 
-# sent_id = 69
-# text = Or have angels ceased to appear unto the children of men?
+# sent_id = 66
+# text = Or have angels ceased to appear unto the children of men? Or has he withheld the power of the Holy Ghost from them? Or will he, so long as time shall last, or the earth shall stand, or there shall be one man upon the face thereof to be saved?
 1	Or	or	CCONJ	_	_	4	cc	_	_
 2	have	have	AUX	_	_	4	aux	_	_
 3	angels	angel	NOUN	_	_	4	nsubj	_	_
@@ -2890,58 +2881,52 @@
 10	of	of	ADP	_	_	11	case	_	_
 11	men	man	NOUN	_	_	9	nmod	_	_
 12	?	?	PUNCT	_	_	4	punct	_	_
+13	Or	or	CCONJ	_	_	16	cc	_	_
+14	has	have	AUX	_	_	16	aux	_	_
+15	he	he	PRON	_	_	16	nsubj	_	_
+16	withheld	withhold	VERB	_	_	4	conj	_	_
+17	the	the	DET	_	_	18	det	_	_
+18	power	power	NOUN	_	_	16	obj	_	_
+19	of	of	ADP	_	_	22	case	_	_
+20	the	the	DET	_	_	22	det	_	_
+21	Holy	Holy	ADJ	_	_	22	amod	_	_
+22	Ghost	Ghost	PROPN	_	_	18	nmod	_	_
+23	from	from	ADP	_	_	24	case	_	_
+24	them	they	PRON	_	_	16	obl	_	_
+25	?	?	PUNCT	_	_	16	punct	_	_
+26	Or	or	CCONJ	_	_	27	cc	_	_
+27	will	will	AUX	_	_	41	aux	_	_
+28	he	he	PRON	_	_	27	nsubj	_	_
+29	,	,	PUNCT	_	_	28	punct	_	_
+30	so	so	ADV	_	_	31	advmod	_	_
+31	long	long	ADV	_	_	4	conj	_	_
+32	as	as	SCONJ	_	_	35	mark	_	_
+33	time	time	NOUN	_	_	35	nsubj	_	_
+34	shall	shall	AUX	_	_	35	aux	_	_
+35	last	last	VERB	_	_	31	advcl	_	_
+36	,	,	PUNCT	_	_	41	punct	_	_
+37	or	or	CCONJ	_	_	41	cc	_	_
+38	the	the	DET	_	_	39	det	_	_
+39	earth	earth	NOUN	_	_	41	nsubj	_	_
+40	shall	shall	AUX	_	_	41	aux	_	_
+41	stand	stand	VERB	_	_	31	conj	_	_
+42	,	,	PUNCT	_	_	46	punct	_	_
+43	or	or	CCONJ	_	_	46	cc	_	_
+44	there	there	PRON	_	_	46	expl	_	_
+45	shall	shall	AUX	_	_	41	aux	_	_
+46	be	be	AUX	_	_	41	conj	_	_
+47	one	one	NUM	_	_	48	nummod	_	_
+48	man	man	NOUN	_	_	41	nsubj	_	_
+49	upon	upon	ADP	_	_	51	case	_	_
+50	the	the	DET	_	_	51	det	_	_
+51	face	face	NOUN	_	_	48	nmod	_	_
+52	thereof	thereof	ADV	_	_	48	advmod	_	_
+53	to	to	PART	_	_	55	mark	_	_
+54	be	be	AUX	_	_	55	aux:pass	_	_
+55	saved	save	VERB	_	_	52	advcl	_	_
+56	?	?	PUNCT	_	_	46	punct	_	_
 
-# sent_id = 70
-# text = Or has he withheld the power of the Holy Ghost from them?
-1	Or	or	CCONJ	_	_	4	cc	_	_
-2	has	have	AUX	_	_	4	aux	_	_
-3	he	he	PRON	_	_	4	nsubj	_	_
-4	withheld	withhold	VERB	_	_	0	root	_	_
-5	the	the	DET	_	_	6	det	_	_
-6	power	power	NOUN	_	_	4	obj	_	_
-7	of	of	ADP	_	_	10	case	_	_
-8	the	the	DET	_	_	10	det	_	_
-9	Holy	Holy	ADJ	_	_	10	amod	_	_
-10	Ghost	Ghost	PROPN	_	_	6	nmod	_	_
-11	from	from	ADP	_	_	12	case	_	_
-12	them	they	PRON	_	_	4	obl	_	_
-13	?	?	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 71
-# text = Or will he, so long as time shall last, or the earth shall stand, or there shall be one man upon the face thereof to be saved?
-1	Or	or	CCONJ	_	_	2	cc	_	_
-2	will	will	AUX	_	_	16	aux	_	_
-3	he	he	PRON	_	_	2	nsubj	_	_
-4	,	,	PUNCT	_	_	3	punct	_	_
-5	so	so	ADV	_	_	6	advmod	_	_
-6	long	long	ADV	_	_	0	root	_	_
-7	as	as	SCONJ	_	_	10	mark	_	_
-8	time	time	NOUN	_	_	10	nsubj	_	_
-9	shall	shall	AUX	_	_	10	aux	_	_
-10	last	last	VERB	_	_	6	advcl	_	_
-11	,	,	PUNCT	_	_	16	punct	_	_
-12	or	or	CCONJ	_	_	16	cc	_	_
-13	the	the	DET	_	_	14	det	_	_
-14	earth	earth	NOUN	_	_	16	nsubj	_	_
-15	shall	shall	AUX	_	_	16	aux	_	_
-16	stand	stand	VERB	_	_	6	conj	_	_
-17	,	,	PUNCT	_	_	21	punct	_	_
-18	or	or	CCONJ	_	_	21	cc	_	_
-19	there	there	PRON	_	_	21	expl	_	_
-20	shall	shall	AUX	_	_	16	aux	_	_
-21	be	be	AUX	_	_	16	conj	_	_
-22	one	one	NUM	_	_	23	nummod	_	_
-23	man	man	NOUN	_	_	16	nsubj	_	_
-24	upon	upon	ADP	_	_	26	case	_	_
-25	the	the	DET	_	_	26	det	_	_
-26	face	face	NOUN	_	_	23	nmod	_	_
-27	thereof	thereof	ADV	_	_	23	advmod	_	_
-28	to	to	PART	_	_	30	mark	_	_
-29	be	be	AUX	_	_	30	aux:pass	_	_
-30	saved	save	VERB	_	_	27	advcl	_	_
-31	?	?	PUNCT	_	_	21	punct	_	_
-
-# sent_id = 72
+# sent_id = 67
 # text = Behold I say unto you, Nay; for it is by faith that miracles are wrought; and it is by faith that angels appear and minister unto men; wherefore, if these things have ceased wo be unto the children of men, for it is because of unbelief, and all is vain.
 1	Behold	behold	INTJ	_	_	3	discourse	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -3002,7 +2987,7 @@
 57	vain	vain	ADJ	_	_	52	conj	_	_
 58	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 73
+# sent_id = 68
 # text = For no man can be saved, according to the words of Christ, save they shall have faith in his name; wherefore, if these things have ceased, then has faith ceased also; and awful is the state of man, for they are as though there had been no redemption made.
 1	For	for	SCONJ	_	_	6	mark	_	_
 2	no	no	DET	_	_	3	det	_	_
@@ -3062,7 +3047,7 @@
 56	made	make	VERB	_	_	55	acl	_	_
 57	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 74
+# sent_id = 69
 # text = But behold, my beloved brethren, I judge better things of you, for I judge that ye have faith in Christ because of your meekness; for if ye have not faith in him then ye are not fit to be numbered among the people of his church.
 1	But	but	CCONJ	_	_	9	cc	_	_
 2	behold	behold	INTJ	_	_	9	discourse	_	_
@@ -3116,7 +3101,7 @@
 50	church	church	NOUN	_	_	47	nmod	_	_
 51	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 75
+# sent_id = 70
 # text = And again, my beloved brethren, I would speak unto you concerning hope.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	again	again	ADV	_	_	10	advmod	_	_
@@ -3134,7 +3119,7 @@
 14	hope	hope	NOUN	_	_	10	obl	_	_
 15	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 76
+# sent_id = 71
 # text = How is it that ye can attain unto faith, save ye shall have hope?
 1	How	how	ADV	_	_	7	advmod	_	_
 2	is	be	AUX	_	_	7	cop	_	_
@@ -3153,7 +3138,7 @@
 15	hope	hope	NOUN	_	_	14	obj	_	_
 16	?	?	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 77
+# sent_id = 72
 # text = And what is it that ye shall hope for?
 1	And	and	CCONJ	_	_	2	cc	_	_
 2	what	what	PRON	_	_	0	root	_	_
@@ -3166,7 +3151,7 @@
 9	for	for	ADP	_	_	5	case	_	_
 10	?	?	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 78
+# sent_id = 73
 # text = Behold I say unto you that ye shall have hope through the atonement of Christ and the power of his resurrection, to be raised unto life eternal, and this because of your faith in him according to the promise.
 1	Behold	behold	INTJ	_	_	3	discourse	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -3211,7 +3196,7 @@
 41	promise	promise	NOUN	_	_	35	nmod	_	_
 42	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 79
+# sent_id = 74
 # text = Wherefore, if a man have faith he must needs have hope; for without faith there cannot be any hope.
 1	Wherefore	so	ADV	_	_	10	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3237,7 +3222,7 @@
 22	hope	hope	NOUN	_	_	20	nsubj	_	_
 23	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 80
+# sent_id = 75
 # text = And again, behold I say unto you that he cannot have faith and hope, save he shall be meek, and lowly of heart.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	again	again	ADV	_	_	6	advmod	_	_
@@ -3268,7 +3253,7 @@
 27	heart	heart	NOUN	_	_	25	obl	_	_
 28	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 81
+# sent_id = 76
 # text = If so, his faith and hope is vain, for none is acceptable before God, save the meek and lowly in heart; and if a man be meek and lowly in heart, and confesses by the power of the Holy Ghost that Jesus is the Christ, he must needs have charity; for if he have not charity he is nothing; wherefore he must needs have charity.
 1	If	if	SCONJ	_	_	2	mark	_	_
 2	so	so	ADV	_	_	9	advcl	_	_
@@ -3345,7 +3330,7 @@
 73	charity	charity	NOUN	_	_	72	obj	_	_
 74	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 82
+# sent_id = 77
 # text = And charity suffereth long, and is kind, and envieth not, and is not puffed up, seeketh not her own, is not easily provoked, thinketh no evil, and rejoiceth not in iniquity but rejoiceth in the truth, beareth all things, believeth all things, hopeth all things, endureth all things.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	charity	charity	NOUN	_	_	3	nsubj	_	_
@@ -3408,7 +3393,7 @@
 59	things	thing	NOUN	_	_	57	obj	_	_
 60	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 83
+# sent_id = 78
 # text = Wherefore, my beloved brethren, if ye have not charity, ye are nothing, for charity never faileth.
 1	Wherefore	so	ADV	_	_	15	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3432,7 +3417,7 @@
 20	faileth	fail	VERB	_	_	15	parataxis	_	_
 21	.	.	PUNCT	_	_	15	punct	_	_
 
-# sent_id = 84
+# sent_id = 79
 # text = Wherefore, cleave unto charity, which is the greatest of all, for all things must fail--
 1	Wherefore	so	ADV	_	_	3	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3455,7 +3440,7 @@
 19	-	-	PUNCT	_	_	3	punct	_	_
 20	-	-	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 85
+# sent_id = 80
 # text = But charity is the pure love of Christ, and it endureth forever; and whoso is found possessed of it at the last day, it shall be well with him.
 1	But	but	CCONJ	_	_	6	cc	_	_
 2	charity	charity	NOUN	_	_	6	nsubj	_	_
@@ -3491,7 +3476,7 @@
 32	him	he	PRON	_	_	30	obl	_	_
 33	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 86
+# sent_id = 81
 # text = Wherefore, my beloved brethren, pray unto the Father with all the energy of heart, that ye may be filled with this love, which he hath bestowed upon all who are true followers of his Son, Jesus Christ; that ye may become the sons of God; that when he shall appear we shall be like him, for we shall see him as he is; that we may have this hope; that we may be purified even as he is pure.
 1	Wherefore	so	ADV	_	_	7	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3584,13 +3569,13 @@
 89	pure	pure	ADJ	_	_	84	advcl	_	_
 90	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 87
+# sent_id = 82
 # text = Amen.
 1	Amen	amen	INTJ	_	_	0	root	_	_
 2	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 88
-# text = An epistle of my father Mormon, written to me, Moroni; and it was written unto me soon after my calling to the ministry.
+# sent_id = 83
+# text = An epistle of my father Mormon, written to me, Moroni; and it was written unto me soon after my calling to the ministry. And on this wise did he write unto me, saying:
 1	An	a	DET	_	_	2	det	_	_
 2	epistle	epistle	NOUN	_	_	0	root	_	_
 3	of	of	ADP	_	_	5	case	_	_
@@ -3618,23 +3603,20 @@
 25	the	the	DET	_	_	26	det	_	_
 26	ministry	ministry	NOUN	_	_	23	nmod	_	_
 27	.	.	PUNCT	_	_	2	punct	_	_
+28	And	and	CCONJ	_	_	34	cc	_	_
+29	on	on	ADP	_	_	31	case	_	_
+30	this	this	DET	_	_	31	det	_	_
+31	wise	wise	NOUN	_	_	34	obl	_	_
+32	did	do	AUX	_	_	34	aux	_	_
+33	he	he	PRON	_	_	34	nsubj	_	_
+34	write	write	VERB	_	_	2	conj	_	_
+35	unto	to	ADP	_	_	36	case	_	_
+36	me	I	PRON	_	_	34	obl	_	_
+37	,	,	PUNCT	_	_	38	punct	_	_
+38	saying	say	VERB	_	_	34	advcl	_	_
+39	:	:	PUNCT	_	_	34	punct	_	_
 
-# sent_id = 89
-# text = And on this wise did he write unto me, saying:
-1	And	and	CCONJ	_	_	7	cc	_	_
-2	on	on	ADP	_	_	4	case	_	_
-3	this	this	DET	_	_	4	det	_	_
-4	wise	wise	NOUN	_	_	7	obl	_	_
-5	did	do	AUX	_	_	7	aux	_	_
-6	he	he	PRON	_	_	7	nsubj	_	_
-7	write	write	VERB	_	_	0	root	_	_
-8	unto	to	ADP	_	_	9	case	_	_
-9	me	I	PRON	_	_	7	obl	_	_
-10	,	,	PUNCT	_	_	11	punct	_	_
-11	saying	say	VERB	_	_	7	advcl	_	_
-12	:	:	PUNCT	_	_	7	punct	_	_
-
-# sent_id = 90
+# sent_id = 84
 # text = My beloved son, Moroni, I rejoice exceedingly that your Lord Jesus Christ hath been mindful of you, and hath called you to his ministry, and to his holy work.
 1	My	my	PRON	_	_	3	nmod:poss	_	_
 2	beloved	beloved	ADJ	_	_	3	amod	_	_
@@ -3671,7 +3653,7 @@
 33	work	work	NOUN	_	_	27	conj	_	_
 34	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 91
+# sent_id = 85
 # text = I am mindful of you always in my prayers, continually praying unto God the Father in the name of his Holy Child, Jesus, that he, through his infinite goodness and grace, will keep you through the endurance of faith on his name to the end.
 1	I	I	PRON	_	_	3	nsubj	_	_
 2	am	be	AUX	_	_	3	cop	_	_
@@ -3725,7 +3707,7 @@
 50	end	end	NOUN	_	_	38	obl	_	_
 51	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 92
+# sent_id = 86
 # text = And now, my son, I speak unto you concerning that which grieveth me exceedingly; for it grieveth me that there should disputations rise among you.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	now	now	ADV	_	_	8	advmod	_	_
@@ -3757,7 +3739,7 @@
 28	you	you	PRON	_	_	26	obl	_	_
 29	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 93
+# sent_id = 87
 # text = For, if I have learned the truth, there have been disputations among you concerning the baptism of your little children.
 1	For	for	ADP	_	_	12	mark	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3783,7 +3765,7 @@
 22	children	child	NOUN	_	_	18	nmod	_	_
 23	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 94
+# sent_id = 88
 # text = And now, my son, I desire that ye should labor diligently, that this gross error should be removed from among you; for, for this intent I have written this epistle.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	now	now	ADV	_	_	8	advmod	_	_
@@ -3822,7 +3804,7 @@
 35	epistle	epistle	NOUN	_	_	33	obj	_	_
 36	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 95
+# sent_id = 89
 # text = For immediately after I had learned these things of you I inquired of the Lord concerning the matter. And the word of the Lord came to me by the power of the Holy Ghost, saying:
 1	For	for	ADP	_	_	2	case	_	_
 2	immediately	immediately	ADV	_	_	12	obl	_	_
@@ -3863,7 +3845,7 @@
 37	saying	say	VERB	_	_	26	advcl	_	_
 38	:	:	PUNCT	_	_	26	punct	_	_
 
-# sent_id = 96
+# sent_id = 90
 # text = Listen to the words of Christ, your Redeemer, your Lord and your God.
 1	Listen	listen	VERB	_	_	0	root	_	_
 2	to	to	ADP	_	_	4	case	_	_
@@ -3882,7 +3864,7 @@
 15	God	God	PROPN	_	_	6	conj	_	_
 16	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 97
+# sent_id = 91
 # text = Behold, I came into the world not to call the righteous but sinners to repentance; the whole need no physician, but they that are sick; wherefore, little children are whole, for they are not capable of committing sin; wherefore the curse of Adam is taken from them in me, that it hath no power over them; and the law of circumcision is done away in me.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -3961,7 +3943,7 @@
 75	me	I	PRON	_	_	72	obl	_	_
 76	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 98
+# sent_id = 92
 # text = And after this manner did the Holy Ghost manifest the word of God unto me; wherefore, my beloved son, I know that it is solemn mockery before God, that ye should baptize little children.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	after	after	SCONJ	_	_	4	case	_	_
@@ -4003,7 +3985,7 @@
 38	children	child	NOUN	_	_	36	obj	_	_
 39	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 99
+# sent_id = 93
 # text = Behold I say unto you that this thing shall ye teach--repentance and baptism unto those who are accountable and capable of committing sin; yea, teach parents that they must repent and be baptized, and humble themselves as their little children, and they shall all be saved with their little children.
 1	Behold	behold	INTJ	_	_	3	discourse	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -4064,7 +4046,7 @@
 57	children	child	NOUN	_	_	53	obl	_	_
 58	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 100
+# sent_id = 94
 # text = And their little children need no repentance, neither baptism.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	their	their	PRON	_	_	4	nmod:poss	_	_
@@ -4078,7 +4060,7 @@
 10	baptism	baptism	NOUN	_	_	7	appos	_	_
 11	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 101
+# sent_id = 95
 # text = Behold, baptism is unto repentance to the fulfilling the commandments unto the remission of sins.
 1	Behold	behold	INTJ	_	_	6	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4098,7 +4080,7 @@
 16	sins	sin	NOUN	_	_	14	nmod	_	_
 17	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 102
+# sent_id = 96
 # text = But little children are alive in Christ, even from the foundation of the world; if not so, God is a partial God, and also a changeable God, and a respecter to persons; for how many little children have died without baptism!
 1	But	but	CCONJ	_	_	5	cc	_	_
 2	little	little	ADJ	_	_	3	amod	_	_
@@ -4149,7 +4131,7 @@
 47	baptism	baptism	NOUN	_	_	45	obl	_	_
 48	!	!	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 103
+# sent_id = 97
 # text = Wherefore, if little children could not be saved without baptism, these must have gone to an endless hell.
 1	Wherefore	so	ADV	_	_	16	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4173,7 +4155,7 @@
 20	hell	hell	NOUN	_	_	16	obl	_	_
 21	.	.	PUNCT	_	_	16	punct	_	_
 
-# sent_id = 104
+# sent_id = 98
 # text = Behold I say unto you, that he that supposeth that little children need baptism is in the gall of bitterness and in the bonds of iniquity; for he hath neither faith, hope, nor charity; wherefore, should he be cut off while in the thought, he must go down to hell.
 1	Behold	behold	INTJ	_	_	3	discourse	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -4234,7 +4216,7 @@
 57	hell	hell	NOUN	_	_	54	obl	_	_
 58	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 105
+# sent_id = 99
 # text = For awful is the wickedness to suppose that God saveth one child because of baptism, and the other must perish because he hath no baptism.
 1	For	for	ADP	_	_	2	case	_	_
 2	awful	awful	ADJ	_	_	0	root	_	_
@@ -4264,7 +4246,7 @@
 26	baptism	baptism	NOUN	_	_	24	obj	_	_
 27	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 106
+# sent_id = 100
 # text = Wo be unto them that shall pervert the ways of the Lord after this manner, for they shall perish except they repent.
 1	Wo	woe	INTJ	_	_	4	discourse	_	_
 2	be	be	AUX	_	_	4	cop	_	_
@@ -4291,7 +4273,7 @@
 23	repent	repent	VERB	_	_	20	advcl	_	_
 24	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 107
+# sent_id = 101
 # text = Behold, I speak with boldness, having authority from God; and I fear not what man can do; for perfect love casteth out all fear.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4323,7 +4305,7 @@
 28	fear	fear	NOUN	_	_	25	obj	_	_
 29	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 108
+# sent_id = 102
 # text = And I am filled with charity, which is everlasting love; wherefore, all children are alike unto me; wherefore, I love little children with a perfect love; and they are all alike and partakers of salvation.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj:pass	_	_
@@ -4368,7 +4350,7 @@
 41	salvation	salvation	NOUN	_	_	39	nmod	_	_
 42	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 109
+# sent_id = 103
 # text = For I know that God is not a partial God, neither a changeable being; but he is unchangeable from all eternity to all eternity.
 1	For	for	SCONJ	_	_	3	mark	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -4398,7 +4380,7 @@
 26	eternity	eternity	NOUN	_	_	20	obl	_	_
 27	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 110
+# sent_id = 104
 # text = Little children cannot repent; wherefore, it is awful wickedness to deny the pure mercies of God unto them, for they are all alive in him because of his mercy.
 1	Little	Little	ADJ	_	_	2	amod	_	_
 2	children	child	NOUN	_	_	5	nsubj	_	_
@@ -4435,7 +4417,7 @@
 33	mercy	mercy	NOUN	_	_	27	obl	_	_
 34	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 111
+# sent_id = 105
 # text = And he that saith that little children need baptism denieth the mercies of Christ, and setteth at naught the atonement of him and the power of his redemption.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -4468,7 +4450,7 @@
 29	redemption	redemption	NOUN	_	_	26	nmod	_	_
 30	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 112
+# sent_id = 106
 # text = Wo unto such, for they are in danger of death, hell, and an endless torment.
 1	Wo	woe	INTJ	_	_	9	discourse	_	_
 2	unto	to	ADP	_	_	3	case	_	_
@@ -4490,7 +4472,7 @@
 18	torment	torment	NOUN	_	_	11	conj	_	_
 19	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 113
+# sent_id = 107
 # text = I speak it boldly; God hath commanded me.
 1	I	I	PRON	_	_	2	nsubj	_	_
 2	speak	speak	VERB	_	_	0	root	_	_
@@ -4503,7 +4485,7 @@
 9	me	I	PRON	_	_	8	obj	_	_
 10	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 114
+# sent_id = 108
 # text = Listen unto them and give heed, or they stand against you at the judgment-seat of Christ.
 1	Listen	listen	VERB	_	_	0	root	_	_
 2	unto	to	ADP	_	_	3	case	_	_
@@ -4526,8 +4508,8 @@
 19	Christ	Christ	PROPN	_	_	17	nmod	_	_
 20	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 115
-# text = For behold that all little children are alive in Christ, and also all they that are without the law.
+# sent_id = 109
+# text = For behold that all little children are alive in Christ, and also all they that are without the law. For the power of redemption cometh on all them that have no law; wherefore, he that is not condemned, or he that is under no condemnation, cannot repent; and unto such baptism availeth nothing--
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	8	obl	_	_
 3	that	that	SCONJ	_	_	8	mark	_	_
@@ -4543,58 +4525,55 @@
 13	also	also	ADV	_	_	15	advmod	_	_
 14	all	all	DET	_	_	15	det:predet	_	_
 15	they	they	PRON	_	_	8	conj	_	_
-16	that	that	PRON	_	_	20	nsubj	_	_
+16	that	that	PRON	_	_	17	nsubj	_	_
 17	are	be	AUX	_	_	15	acl:relcl	_	_
 18	without	without	ADP	_	_	20	case	_	_
 19	the	the	DET	_	_	20	det	_	_
-20	law	law	NOUN	_	_	15	acl:relcl	_	_
+20	law	law	NOUN	_	_	17	obl	_	_
 21	.	.	PUNCT	_	_	8	punct	_	_
+22	For	for	ADP	_	_	24	case	_	_
+23	the	the	DET	_	_	24	det	_	_
+24	power	power	NOUN	_	_	27	obl	_	_
+25	of	of	ADP	_	_	26	case	_	_
+26	redemption	redemption	NOUN	_	_	24	nmod	_	_
+27	cometh	come	VERB	_	_	0	root	_	_
+28	on	on	ADP	_	_	30	case	_	_
+29	all	all	DET	_	_	30	det:predet	_	_
+30	them	they	PRON	_	_	27	obl	_	_
+31	that	that	PRON	_	_	32	nsubj	_	_
+32	have	have	VERB	_	_	30	acl:relcl	_	_
+33	no	no	DET	_	_	34	det	_	_
+34	law	law	NOUN	_	_	32	obj	_	_
+35	;	;	PUNCT	_	_	36	punct	_	_
+36	wherefore	so	ADV	_	_	54	advmod	_	_
+37	,	,	PUNCT	_	_	36	punct	_	_
+38	he	he	PRON	_	_	54	nsubj	_	_
+39	that	that	PRON	_	_	42	nsubj:pass	_	_
+40	is	be	AUX	_	_	42	aux:pass	_	_
+41	not	not	PART	_	_	42	advmod	_	_
+42	condemned	condemn	VERB	_	_	38	acl:relcl	_	_
+43	,	,	PUNCT	_	_	44	punct	_	_
+44	or	or	CCONJ	_	_	54	cc	_	_
+45	he	he	PRON	_	_	54	nsubj	_	_
+46	that	that	PRON	_	_	50	nsubj	_	_
+47	is	be	AUX	_	_	50	cop	_	_
+48	under	under	ADP	_	_	50	case	_	_
+49	no	no	DET	_	_	50	det	_	_
+50	condemnation	condemnation	NOUN	_	_	45	acl:relcl	_	_
+51	,	,	PUNCT	_	_	38	punct	_	_
+52	can	can	AUX	_	_	54	aux	_	_
+53	not	not	PART	_	_	54	advmod	_	_
+54	repent	repent	VERB	_	_	27	conj	_	_
+55	;	;	PUNCT	_	_	60	punct	_	_
+56	and	and	CCONJ	_	_	60	cc	_	_
+57	unto	to	ADP	_	_	59	case	_	_
+58	such	such	ADJ	_	_	59	amod	_	_
+59	baptism	baptism	NOUN	_	_	60	obl	_	_
+60	availeth	avail	VERB	_	_	54	conj	_	_
+61	nothing	nothing	PRON	_	_	60	obj	_	_
+62	--	--	PUNCT	_	_	27	punct	_	_
 
-# sent_id = 116
-# text = For the power of redemption cometh on all them that have no law; wherefore, he that is not condemned, or he that is under no condemnation, cannot repent; and unto such baptism availeth nothing--
-1	For	for	ADP	_	_	3	case	_	_
-2	the	the	DET	_	_	3	det	_	_
-3	power	power	NOUN	_	_	6	obl	_	_
-4	of	of	ADP	_	_	5	case	_	_
-5	redemption	redemption	NOUN	_	_	3	nmod	_	_
-6	cometh	come	VERB	_	_	0	root	_	_
-7	on	on	ADP	_	_	9	case	_	_
-8	all	all	DET	_	_	9	det:predet	_	_
-9	them	they	PRON	_	_	6	obl	_	_
-10	that	that	PRON	_	_	11	nsubj	_	_
-11	have	have	VERB	_	_	9	acl:relcl	_	_
-12	no	no	DET	_	_	13	det	_	_
-13	law	law	NOUN	_	_	11	obj	_	_
-14	;	;	PUNCT	_	_	15	punct	_	_
-15	wherefore	so	ADV	_	_	33	advmod	_	_
-16	,	,	PUNCT	_	_	15	punct	_	_
-17	he	he	PRON	_	_	33	nsubj	_	_
-18	that	that	PRON	_	_	21	nsubj:pass	_	_
-19	is	be	AUX	_	_	21	aux:pass	_	_
-20	not	not	PART	_	_	21	advmod	_	_
-21	condemned	condemn	VERB	_	_	17	acl:relcl	_	_
-22	,	,	PUNCT	_	_	23	punct	_	_
-23	or	or	CCONJ	_	_	33	cc	_	_
-24	he	he	PRON	_	_	33	nsubj	_	_
-25	that	that	PRON	_	_	29	nsubj	_	_
-26	is	be	AUX	_	_	29	cop	_	_
-27	under	under	ADP	_	_	29	case	_	_
-28	no	no	DET	_	_	29	det	_	_
-29	condemnation	condemnation	NOUN	_	_	24	acl:relcl	_	_
-30	,	,	PUNCT	_	_	17	punct	_	_
-31	can	can	AUX	_	_	33	aux	_	_
-32	not	not	PART	_	_	33	advmod	_	_
-33	repent	repent	VERB	_	_	6	conj	_	_
-34	;	;	PUNCT	_	_	39	punct	_	_
-35	and	and	CCONJ	_	_	39	cc	_	_
-36	unto	to	ADP	_	_	38	case	_	_
-37	such	such	ADJ	_	_	38	amod	_	_
-38	baptism	baptism	NOUN	_	_	39	obl	_	_
-39	availeth	avail	VERB	_	_	33	conj	_	_
-40	nothing	nothing	PRON	_	_	39	obj	_	_
-41	--	--	PUNCT	_	_	6	punct	_	_
-
-# sent_id = 117
+# sent_id = 110
 # text = But it is mockery before God, denying the mercies of Christ, and the power of his Holy Spirit, and putting trust in dead works.
 1	But	but	CCONJ	_	_	4	cc	_	_
 2	it	it	PRON	_	_	4	nsubj	_	_
@@ -4625,7 +4604,7 @@
 27	works	work	NOUN	_	_	23	obl	_	_
 28	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 118
+# sent_id = 111
 # text = Behold, my son, this thing ought not to be; for repentance is unto them that are under condemnation and under the curse of a broken law.
 1	Behold	behold	INTJ	_	_	8	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4658,7 +4637,7 @@
 29	law	law	NOUN	_	_	25	nmod	_	_
 30	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 119
+# sent_id = 112
 # text = And the first fruits of repentance is baptism; and baptism cometh by faith unto the fulfilling the commandments; and the fulfilling the commandments bringeth remission of sins;
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	the	the	DET	_	_	4	det	_	_
@@ -4691,7 +4670,7 @@
 29	sins	sin	NOUN	_	_	27	nmod	_	_
 30	;	;	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 120
+# sent_id = 113
 # text = And the remission of sins bringeth meekness, and lowliness of heart; and because of meekness and lowliness of heart cometh the visitation of the Holy Ghost, which Comforter filleth with hope and perfect love, which love endureth by diligence unto prayer, until the end shall come, when all the saints shall dwell with God.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -4755,7 +4734,7 @@
 60	God	God	PROPN	_	_	58	obl	_	_
 61	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 121
+# sent_id = 114
 # text = Behold, my son, I will write unto you again if I go not out soon against the Lamanites.
 1	Behold	behold	INTJ	_	_	8	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4779,7 +4758,7 @@
 20	Lamanites	Lamanites	PROPN	_	_	14	obl	_	_
 21	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 122
+# sent_id = 115
 # text = Behold, the pride of this nation, or the people of the Nephites, hath proven their destruction except they should repent.
 1	Behold	behold	INTJ	_	_	17	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4806,7 +4785,7 @@
 23	repent	repent	VERB	_	_	17	advcl	_	_
 24	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 123
+# sent_id = 116
 # text = Pray for them, my son, that repentance may come unto them. But behold, I fear lest the Spirit hath ceased striving with them; and in this part of the land they are also seeking to put down all power and authority which cometh from God; and they are denying the Holy Ghost.
 1	Pray	pray	VERB	_	_	0	root	_	_
 2	for	for	ADP	_	_	3	case	_	_
@@ -4868,7 +4847,7 @@
 58	Ghost	Ghost	PROPN	_	_	55	obj	_	_
 59	.	.	PUNCT	_	_	19	punct	_	_
 
-# sent_id = 124
+# sent_id = 117
 # text = And after rejecting so great a knowledge, my son, they must perish soon, unto the fulfilling of the prophecies which were spoken by the prophets, as well as the words of our Savior himself.
 1	And	and	CCONJ	_	_	14	cc	_	_
 2	after	after	SCONJ	_	_	3	mark	_	_
@@ -4910,7 +4889,7 @@
 38	himself	himself	PRON	_	_	34	nmod:unmarked	_	_
 39	.	.	PUNCT	_	_	14	punct	_	_
 
-# sent_id = 125
+# sent_id = 118
 # text = Farewell, my son, until I shall write unto you, or shall meet you again.
 1	Farewell	farewell	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -4931,12 +4910,12 @@
 17	again	again	ADV	_	_	15	advmod	_	_
 18	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 126
+# sent_id = 119
 # text = Amen.
 1	Amen	amen	INTJ	_	_	0	root	_	_
 2	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 127
+# sent_id = 120
 # text = My beloved son, I write unto you again that ye may know that I am yet alive; but I write somewhat of that which is grievous.
 1	My	my	PRON	_	_	3	nmod:poss	_	_
 2	beloved	beloved	ADJ	_	_	3	amod	_	_
@@ -4968,7 +4947,7 @@
 28	grievous	grievous	ADJ	_	_	25	acl:relcl	_	_
 29	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 128
+# sent_id = 121
 # text = For behold, I have had a sore battle with the Lamanites, in which we did not conquer; and Archeantus has fallen by the sword, and also Luram and Emron; yea, and we have lost a great number of our choice men.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	6	obl	_	_
@@ -5019,7 +4998,7 @@
 47	men	man	NOUN	_	_	43	nmod	_	_
 48	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 129
+# sent_id = 122
 # text = And now behold, my son, I fear lest the Lamanites shall destroy this people; for they do not repent, and Satan stirreth them up continually to anger one with another.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	now	now	ADV	_	_	9	advmod	_	_
@@ -5057,7 +5036,7 @@
 34	another	another	DET	_	_	31	obl	_	_
 35	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 130
+# sent_id = 123
 # text = Behold, I am laboring with them continually; and when I speak the word of God with sharpness they tremble and anger against me; and when I use no sharpness they harden their hearts against it; wherefore, I fear lest the Spirit of the Lord hath ceased striving with them.
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -5115,7 +5094,7 @@
 54	them	they	PRON	_	_	52	obl	_	_
 55	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 131
+# sent_id = 124
 # text = For so exceedingly do they anger that it seemeth me that they have no fear of death; and they have lost their love, one towards another; and they thirst after blood and revenge continually.
 1	For	for	ADP	_	_	3	case	_	_
 2	so	so	ADV	_	_	3	advmod	_	_
@@ -5156,7 +5135,7 @@
 37	continually	continually	ADV	_	_	32	advmod	_	_
 38	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 132
+# sent_id = 125
 # text = And now, my beloved son, notwithstanding their hardness, let us labor diligently; for if we should cease to labor, we should be brought under condemnation; for we have a labor to perform whilst in this tabernacle of clay, that we may conquer the enemy of all righteousness, and rest our souls in the kingdom of God.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	now	now	ADV	_	_	12	advmod	_	_
@@ -5224,7 +5203,7 @@
 64	God	God	PROPN	_	_	62	nmod	_	_
 65	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 133
+# sent_id = 126
 # text = And now I write somewhat concerning the sufferings of this people. For according to the knowledge which I have received from Amoron, behold, the Lamanites have many prisoners, which they took from the tower of Sherrizah; and there were men, women, and children.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -5278,7 +5257,7 @@
 50	children	child	NOUN	_	_	45	conj	_	_
 51	.	.	PUNCT	_	_	29	punct	_	_
 
-# sent_id = 134
+# sent_id = 127
 # text = And the husbands and fathers of those women and children they have slain; and they feed the women upon the flesh of their husbands, and the children upon the flesh of their fathers; and no water, save a little, do they give unto them.
 1	And	and	CCONJ	_	_	13	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -5331,8 +5310,8 @@
 49	them	they	PRON	_	_	47	obl	_	_
 50	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 135
-# text = And notwithstanding this great abomination of the Lamanites, it doth not exceed that of our people in Moriantum.
+# sent_id = 128
+# text = And notwithstanding this great abomination of the Lamanites, it doth not exceed that of our people in Moriantum. For behold, many of the daughters of the Lamanites have they taken prisoners; and after depriving them of that which was most dear and precious above all things, which is chastity and virtue--
 1	And	and	CCONJ	_	_	13	cc	_	_
 2	notwithstanding	despite	ADP	_	_	5	case	_	_
 3	this	this	DET	_	_	5	det	_	_
@@ -5353,48 +5332,45 @@
 18	in	in	ADP	_	_	19	case	_	_
 19	Moriantum	Moriantum	PROPN	_	_	13	obl	_	_
 20	.	.	PUNCT	_	_	13	punct	_	_
+21	For	for	ADP	_	_	13	mark	_	_
+22	behold	behold	NOUN	_	_	33	discourse	_	_
+23	,	,	PUNCT	_	_	22	punct	_	_
+24	many	many	ADJ	_	_	33	nsubj	_	_
+25	of	of	ADP	_	_	27	case	_	_
+26	the	the	DET	_	_	27	det	_	_
+27	daughters	daughter	NOUN	_	_	24	nmod	_	_
+28	of	of	ADP	_	_	30	case	_	_
+29	the	the	DET	_	_	30	det	_	_
+30	Lamanites	Lamanites	PROPN	_	_	27	nmod	_	_
+31	have	have	AUX	_	_	33	aux	_	_
+32	they	they	PRON	_	_	33	nsubj	_	_
+33	taken	take	VERB	_	_	13	advcl	_	_
+34	prisoners	prisoner	NOUN	_	_	33	obj	_	_
+35	;	;	PUNCT	_	_	36	punct	_	_
+36	and	and	CCONJ	_	_	45	cc	_	_
+37	after	after	SCONJ	_	_	38	mark	_	_
+38	depriving	deprive	VERB	_	_	33	advcl	_	_
+39	them	they	PRON	_	_	38	obj	_	_
+40	of	of	ADP	_	_	41	case	_	_
+41	that	that	PRON	_	_	38	obl	_	_
+42	which	which	PRON	_	_	45	nsubj	_	_
+43	was	be	AUX	_	_	45	cop	_	_
+44	most	most	ADV	_	_	45	advmod	_	_
+45	dear	dear	ADJ	_	_	41	acl:relcl	_	_
+46	and	and	CCONJ	_	_	47	cc	_	_
+47	precious	precious	ADJ	_	_	45	conj	_	_
+48	above	above	ADP	_	_	50	case	_	_
+49	all	all	DET	_	_	50	det	_	_
+50	things	thing	NOUN	_	_	45	obl	_	_
+51	,	,	PUNCT	_	_	54	punct	_	_
+52	which	which	PRON	_	_	54	nsubj	_	_
+53	is	be	AUX	_	_	54	cop	_	_
+54	chastity	chastity	NOUN	_	_	50	acl:relcl	_	_
+55	and	and	CCONJ	_	_	56	cc	_	_
+56	virtue	virtue	NOUN	_	_	54	conj	_	_
+57	--	--	PUNCT	_	_	33	punct	_	_
 
-# sent_id = 136
-# text = For behold, many of the daughters of the Lamanites have they taken prisoners; and after depriving them of that which was most dear and precious above all things, which is chastity and virtue--
-1	For	for	ADP	_	_	2	case	_	_
-2	behold	behold	NOUN	_	_	13	obl	_	_
-3	,	,	PUNCT	_	_	2	punct	_	_
-4	many	many	ADJ	_	_	13	nsubj	_	_
-5	of	of	ADP	_	_	7	case	_	_
-6	the	the	DET	_	_	7	det	_	_
-7	daughters	daughter	NOUN	_	_	4	nmod	_	_
-8	of	of	ADP	_	_	10	case	_	_
-9	the	the	DET	_	_	10	det	_	_
-10	Lamanites	Lamanites	PROPN	_	_	7	nmod	_	_
-11	have	have	AUX	_	_	13	aux	_	_
-12	they	they	PRON	_	_	13	nsubj	_	_
-13	taken	take	VERB	_	_	0	root	_	_
-14	prisoners	prisoner	NOUN	_	_	13	obj	_	_
-15	;	;	PUNCT	_	_	16	punct	_	_
-16	and	and	CCONJ	_	_	25	cc	_	_
-17	after	after	SCONJ	_	_	18	mark	_	_
-18	depriving	deprive	VERB	_	_	13	advcl	_	_
-19	them	they	PRON	_	_	18	obj	_	_
-20	of	of	ADP	_	_	21	case	_	_
-21	that	that	PRON	_	_	18	obl	_	_
-22	which	which	PRON	_	_	25	nsubj	_	_
-23	was	be	AUX	_	_	25	cop	_	_
-24	most	most	ADV	_	_	25	advmod	_	_
-25	dear	dear	ADJ	_	_	21	acl:relcl	_	_
-26	and	and	CCONJ	_	_	27	cc	_	_
-27	precious	precious	ADJ	_	_	25	conj	_	_
-28	above	above	ADP	_	_	30	case	_	_
-29	all	all	DET	_	_	30	det	_	_
-30	things	thing	NOUN	_	_	25	obl	_	_
-31	,	,	PUNCT	_	_	34	punct	_	_
-32	which	which	PRON	_	_	34	nsubj	_	_
-33	is	be	AUX	_	_	34	cop	_	_
-34	chastity	chastity	NOUN	_	_	30	acl:relcl	_	_
-35	and	and	CCONJ	_	_	36	cc	_	_
-36	virtue	virtue	NOUN	_	_	34	conj	_	_
-37	--	--	PUNCT	_	_	13	punct	_	_
-
-# sent_id = 137
+# sent_id = 129
 # text = And after they had done this thing, they did murder them in a most cruel manner, torturing their bodies even unto death; and after they have done this, they devour their flesh like unto wild beasts, because of the hardness of their hearts; and they do it for a token of bravery.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	after	after	SCONJ	_	_	5	mark	_	_
@@ -5456,7 +5432,7 @@
 58	bravery	bravery	NOUN	_	_	56	nmod	_	_
 59	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 138
+# sent_id = 130
 # text = O my beloved son, how can a people like this, that are without civilization--
 1	O	o	INTJ	_	_	4	discourse	_	_
 2	my	my	PRON	_	_	4	nmod:poss	_	_
@@ -5476,7 +5452,7 @@
 16	civilization	civilization	NOUN	_	_	9	acl:relcl	_	_
 17	--	--	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 139
+# sent_id = 131
 # text = (And only a few years have passed away, and they were a civil and a delightsome people)
 1	(	(	PUNCT	_	_	8	punct	_	_
 2	And	and	CCONJ	_	_	8	cc	_	_
@@ -5499,7 +5475,7 @@
 19	people	person	NOUN	_	_	8	conj	_	_
 20	)	)	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 140
+# sent_id = 132
 # text = But O my son, how can a people like this, whose delight is in so much abomination--
 1	But	but	CCONJ	_	_	4	cc	_	_
 2	O	o	INTJ	_	_	4	discourse	_	_
@@ -5522,7 +5498,7 @@
 19	abomination	abomination	NOUN	_	_	9	acl:relcl	_	_
 20	--	--	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 141
+# sent_id = 133
 # text = How can we expect that God will stay his hand in judgment against us?
 1	How	how	ADV	_	_	4	advmod	_	_
 2	can	can	AUX	_	_	4	aux	_	_
@@ -5540,7 +5516,7 @@
 14	us	we	PRON	_	_	8	obl	_	_
 15	?	?	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 142
+# sent_id = 134
 # text = Behold, my heart cries: Wo unto this people.
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -5554,7 +5530,7 @@
 10	people	person	NOUN	_	_	5	obl	_	_
 11	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 143
+# sent_id = 135
 # text = Come out in judgment, O God, and hide their sins, and wickedness, and abominations from before thy face!
 1	Come	come	VERB	_	_	0	root	_	_
 2	out	out	ADP	_	_	1	compound:prt	_	_
@@ -5580,7 +5556,7 @@
 22	face	face	NOUN	_	_	18	nmod	_	_
 23	!	!	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 144
+# sent_id = 136
 # text = And again, my son, there are many widows and their daughters who remain in Sherrizah; and that part of the provisions which the Lamanites did not carry away, behold, the army of Zenephi has carried away, and left them to wander whithersoever they can for food; and many old women do faint by the way and die.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	again	again	ADV	_	_	8	advmod	_	_
@@ -5648,7 +5624,7 @@
 64	die	die	VERB	_	_	59	conj	_	_
 65	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 145
+# sent_id = 137
 # text = And the army which is with me is weak; and the armies of the Lamanites are betwixt Sherrizah and me; and as many as have fled to the army of Aaron have fallen victims to their awful brutality.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -5692,7 +5668,7 @@
 40	brutality	brutality	NOUN	_	_	35	obl	_	_
 41	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 146
+# sent_id = 138
 # text = O the depravity of my people!
 1	O	o	INTJ	_	_	3	discourse	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -5702,7 +5678,7 @@
 6	people	person	NOUN	_	_	3	nmod	_	_
 7	!	!	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 147
+# sent_id = 139
 # text = They are without order and without mercy.
 1	They	they	PRON	_	_	4	nsubj	_	_
 2	are	be	AUX	_	_	4	cop	_	_
@@ -5713,7 +5689,7 @@
 7	mercy	mercy	NOUN	_	_	4	conj	_	_
 8	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 148
+# sent_id = 140
 # text = Behold, I am but a man, and I have but the strength of a man, and I cannot any longer enforce my commands.
 1	Behold	behold	INTJ	_	_	7	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -5744,7 +5720,7 @@
 27	commands	command	NOUN	_	_	25	obj	_	_
 28	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 149
+# sent_id = 141
 # text = And they have become strong in their perversion; and they are alike brutal, sparing none, neither old nor young; and they delight in everything save that which is good; and the suffering of our women and our children upon all the face of this land doth exceed everything; yea, tongue cannot tell, neither can it be written.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	they	they	PRON	_	_	4	nsubj	_	_
@@ -5814,7 +5790,7 @@
 66	written	write	VERB	_	_	60	ccomp	_	_
 67	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 150
+# sent_id = 142
 # text = And now, my son, I dwell no longer upon this horrible scene.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	now	now	ADV	_	_	8	advmod	_	_
@@ -5832,7 +5808,7 @@
 14	scene	scene	NOUN	_	_	8	obl	_	_
 15	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 151
+# sent_id = 143
 # text = Behold, thou knowest the wickedness of this people; thou knowest that they are without principle, and past feeling; and their wickedness doth exceed that of the Lamanites.
 1	Behold	behold	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -5867,7 +5843,7 @@
 31	Lamanites	Lamanites	PROPN	_	_	28	nmod	_	_
 32	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 152
+# sent_id = 144
 # text = Behold, my son, I cannot recommend them unto God lest he should smite me.
 1	Behold	behold	INTJ	_	_	9	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -5888,7 +5864,7 @@
 17	me	I	PRON	_	_	16	obj	_	_
 18	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 153
+# sent_id = 145
 # text = But behold, my son, I recommend thee unto God, and I trust in Christ that thou wilt be saved; and I pray unto God that he will spare thy life, to witness the return of his people unto him, or their utter destruction; for I know that they must perish except they repent and return unto him.
 1	But	but	CCONJ	_	_	8	cc	_	_
 2	behold	behold	INTJ	_	_	8	discourse	_	_
@@ -5956,7 +5932,7 @@
 64	him	he	PRON	_	_	62	obl	_	_
 65	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 154
+# sent_id = 146
 # text = And if they perish it will be like unto the Jaredites, because of the wilfulness of their hearts, seeking for blood and revenge.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	if	if	SCONJ	_	_	4	mark	_	_
@@ -5985,7 +5961,7 @@
 25	revenge	revenge	NOUN	_	_	23	conj	_	_
 26	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 155
+# sent_id = 147
 # text = And if it so be that they perish, we know that many of our brethren have deserted over unto the Lamanites, and many more will also desert over unto them; wherefore, write somewhat a few things, if thou art spared and I shall perish and not see thee; but I trust that I may see thee soon; for I have sacred records that I would deliver up unto thee.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	if	if	SCONJ	_	_	8	mark	_	_
@@ -6065,7 +6041,7 @@
 76	thee	you	PRON	_	_	73	obl	_	_
 77	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 156
+# sent_id = 148
 # text = My son, be faithful in Christ; and may not the things which I have written grieve thee, to weigh thee down unto death; but may Christ lift thee up, and may his sufferings and death, and the showing his body unto our fathers, and his mercy and long-suffering, and the hope of his glory and of eternal life, rest in your mind forever.
 1	My	my	PRON	_	_	2	nmod:poss	_	_
 2	son	son	NOUN	_	_	5	nsubj	_	_
@@ -6143,7 +6119,7 @@
 74	forever	forever	ADV	_	_	70	advmod	_	_
 75	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 157
+# sent_id = 149
 # text = And may the grace of God the Father, whose throne is high in the heavens, and our Lord Jesus Christ, who sitteth on the right hand of his power, until all things shall become subject unto him, be, and abide with you forever.
 1	And	and	CCONJ	_	_	46	cc	_	_
 2	may	may	AUX	_	_	46	aux	_	_
@@ -6196,12 +6172,12 @@
 49	forever	forever	ADV	_	_	46	advmod	_	_
 50	.	.	PUNCT	_	_	43	punct	_	_
 
-# sent_id = 158
+# sent_id = 150
 # text = Amen.
 1	Amen	amen	INTJ	_	_	0	root	_	_
 2	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 159
+# sent_id = 151
 # text = Now I, Moroni, write somewhat as seemeth me good; and I write unto my brethren, the Lamanites; and I would that they should know that more than four hundred and twenty years have passed away since the sign was given of the coming of Christ.
 1	Now	now	ADV	_	_	6	advmod	_	_
 2	I	I	PRON	_	_	6	nsubj	_	_
@@ -6255,7 +6231,7 @@
 50	Christ	Christ	PROPN	_	_	48	nmod	_	_
 51	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 160
+# sent_id = 152
 # text = And I seal up these records, after I have spoken a few words by way of exhortation unto you.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -6279,7 +6255,7 @@
 20	you	you	PRON	_	_	16	nmod	_	_
 21	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 161
+# sent_id = 153
 # text = Behold, I would exhort you that when ye shall read these things, if it be wisdom in God that ye should read them, that ye would remember how merciful the Lord hath been unto the children of men, from the creation of Adam even down until the time that ye shall receive these things, and ponder it in your hearts.
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -6348,7 +6324,7 @@
 65	hearts	heart	NOUN	_	_	61	obl	_	_
 66	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 162
+# sent_id = 154
 # text = And when ye shall receive these things, I would exhort you that ye would ask God, the Eternal Father, in the name of Christ, if these things are not true; and if ye shall ask with a sincere heart, with real intent, having faith in Christ, he will manifest the truth of it unto you, by the power of the Holy Ghost.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	when	when	ADV	_	_	5	advmod	_	_
@@ -6423,7 +6399,7 @@
 71	Ghost	Ghost	PROPN	_	_	67	nmod	_	_
 72	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 163
+# sent_id = 155
 # text = And by the power of the Holy Ghost ye may know the truth of all things.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	by	by	ADP	_	_	4	case	_	_
@@ -6443,7 +6419,7 @@
 16	things	thing	NOUN	_	_	13	nmod	_	_
 17	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 164
+# sent_id = 156
 # text = And whatsoever thing is good is just and true; wherefore, nothing that is good denieth the Christ, but acknowledgeth that he is.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	whatsoever	whatsoever	DET	_	_	3	det	_	_
@@ -6472,7 +6448,7 @@
 25	is	be	AUX	_	_	22	ccomp	_	_
 26	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 165
+# sent_id = 157
 # text = And ye may know that he is, by the power of the Holy Ghost; wherefore I would exhort you that ye deny not the power of God; for he worketh by power, according to the faith of the children of men, the same today and tomorrow, and forever.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	ye	you	PRON	_	_	4	nsubj	_	_
@@ -6530,8 +6506,8 @@
 54	forever	forever	ADV	_	_	48	conj	_	_
 55	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 166
-# text = And again, I exhort you, my brethren, that ye deny not the gifts of God, for they are many; and they come from the same God.
+# sent_id = 158
+# text = And again, I exhort you, my brethren, that ye deny not the gifts of God, for they are many; and they come from the same God. And there are different ways that these gifts are administered; but it is the same God who worketh all in all; and they are given by the manifestations of the Spirit of God unto men, to profit them.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	again	again	ADV	_	_	5	advmod	_	_
 3	,	,	PUNCT	_	_	2	punct	_	_
@@ -6564,53 +6540,50 @@
 30	same	same	ADJ	_	_	31	amod	_	_
 31	God	God	PROPN	_	_	27	obl	_	_
 32	.	.	PUNCT	_	_	5	punct	_	_
+33	And	and	CCONJ	_	_	35	cc	_	_
+34	there	there	PRON	_	_	35	expl	_	_
+35	are	be	VERB	_	_	5	conj	_	_
+36	different	different	ADJ	_	_	37	amod	_	_
+37	ways	way	NOUN	_	_	35	nsubj	_	_
+38	that	that	SCONJ	_	_	42	mark	_	_
+39	these	this	DET	_	_	40	det	_	_
+40	gifts	gift	NOUN	_	_	42	nsubj:pass	_	_
+41	are	be	AUX	_	_	42	aux:pass	_	_
+42	administered	administer	VERB	_	_	37	acl	_	_
+43	;	;	PUNCT	_	_	49	punct	_	_
+44	but	but	CCONJ	_	_	49	cc	_	_
+45	it	it	PRON	_	_	49	nsubj	_	_
+46	is	be	AUX	_	_	49	cop	_	_
+47	the	the	DET	_	_	49	det	_	_
+48	same	same	ADJ	_	_	49	amod	_	_
+49	God	God	PROPN	_	_	35	conj	_	_
+50	who	who	PRON	_	_	51	nsubj	_	_
+51	worketh	work	VERB	_	_	49	acl:relcl	_	_
+52	all	all	DET	_	_	51	obj	_	_
+53	in	in	ADP	_	_	54	case	_	_
+54	all	all	DET	_	_	51	obl	_	_
+55	;	;	PUNCT	_	_	59	punct	_	_
+56	and	and	CCONJ	_	_	59	cc	_	_
+57	they	they	PRON	_	_	59	nsubj:pass	_	_
+58	are	be	AUX	_	_	59	aux:pass	_	_
+59	given	give	VERB	_	_	35	conj	_	_
+60	by	by	ADP	_	_	62	case	_	_
+61	the	the	DET	_	_	62	det	_	_
+62	manifestations	manifestation	NOUN	_	_	59	obl:agent	_	_
+63	of	of	ADP	_	_	65	case	_	_
+64	the	the	DET	_	_	65	det	_	_
+65	Spirit	Spirit	PROPN	_	_	62	nmod	_	_
+66	of	of	ADP	_	_	67	case	_	_
+67	God	God	PROPN	_	_	65	nmod	_	_
+68	unto	to	ADP	_	_	69	case	_	_
+69	men	man	NOUN	_	_	65	nmod	_	_
+70	,	,	PUNCT	_	_	72	punct	_	_
+71	to	to	PART	_	_	72	mark	_	_
+72	profit	profit	VERB	_	_	59	advcl	_	_
+73	them	they	PRON	_	_	72	obj	_	_
+74	.	.	PUNCT	_	_	35	punct	_	_
 
-# sent_id = 167
-# text = And there are different ways that these gifts are administered; but it is the same God who worketh all in all; and they are given by the manifestations of the Spirit of God unto men, to profit them.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	there	there	PRON	_	_	3	expl	_	_
-3	are	be	VERB	_	_	0	root	_	_
-4	different	different	ADJ	_	_	5	amod	_	_
-5	ways	way	NOUN	_	_	3	nsubj	_	_
-6	that	that	SCONJ	_	_	10	mark	_	_
-7	these	this	DET	_	_	8	det	_	_
-8	gifts	gift	NOUN	_	_	10	nsubj:pass	_	_
-9	are	be	AUX	_	_	10	aux:pass	_	_
-10	administered	administer	VERB	_	_	5	acl	_	_
-11	;	;	PUNCT	_	_	17	punct	_	_
-12	but	but	CCONJ	_	_	17	cc	_	_
-13	it	it	PRON	_	_	17	nsubj	_	_
-14	is	be	AUX	_	_	17	cop	_	_
-15	the	the	DET	_	_	17	det	_	_
-16	same	same	ADJ	_	_	17	amod	_	_
-17	God	God	PROPN	_	_	3	conj	_	_
-18	who	who	PRON	_	_	19	nsubj	_	_
-19	worketh	work	VERB	_	_	17	acl:relcl	_	_
-20	all	all	DET	_	_	19	obj	_	_
-21	in	in	ADP	_	_	22	case	_	_
-22	all	all	DET	_	_	19	obl	_	_
-23	;	;	PUNCT	_	_	27	punct	_	_
-24	and	and	CCONJ	_	_	27	cc	_	_
-25	they	they	PRON	_	_	27	nsubj:pass	_	_
-26	are	be	AUX	_	_	27	aux:pass	_	_
-27	given	give	VERB	_	_	3	conj	_	_
-28	by	by	ADP	_	_	30	case	_	_
-29	the	the	DET	_	_	30	det	_	_
-30	manifestations	manifestation	NOUN	_	_	27	obl:agent	_	_
-31	of	of	ADP	_	_	33	case	_	_
-32	the	the	DET	_	_	33	det	_	_
-33	Spirit	Spirit	PROPN	_	_	30	nmod	_	_
-34	of	of	ADP	_	_	35	case	_	_
-35	God	God	PROPN	_	_	33	nmod	_	_
-36	unto	to	ADP	_	_	37	case	_	_
-37	men	man	NOUN	_	_	33	nmod	_	_
-38	,	,	PUNCT	_	_	40	punct	_	_
-39	to	to	PART	_	_	40	mark	_	_
-40	profit	profit	VERB	_	_	27	advcl	_	_
-41	them	they	PRON	_	_	40	obj	_	_
-42	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 168
+# sent_id = 159
 # text = For behold, to one is given by the Spirit of God, that he may teach the word of wisdom;
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	7	obl	_	_
@@ -6635,7 +6608,7 @@
 21	wisdom	wisdom	NOUN	_	_	19	nmod	_	_
 22	;	;	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 169
+# sent_id = 160
 # text = And to another, that he may teach the word of knowledge by the same Spirit;
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	to	to	ADP	_	_	3	case	_	_
@@ -6655,7 +6628,7 @@
 16	Spirit	Spirit	PROPN	_	_	8	obl	_	_
 17	;	;	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 170
+# sent_id = 161
 # text = And to another, exceedingly great faith; and to another, the gifts of healing by the same Spirit;
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	to	to	ADP	_	_	7	case	_	_
@@ -6679,7 +6652,7 @@
 20	Spirit	Spirit	PROPN	_	_	16	nmod	_	_
 21	;	;	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 171
+# sent_id = 162
 # text = And again, to another, that he may work mighty miracles;
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	again	again	ADV	_	_	10	advmod	_	_
@@ -6695,7 +6668,7 @@
 12	miracles	miracle	NOUN	_	_	10	obj	_	_
 13	;	;	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 172
+# sent_id = 163
 # text = And again, to another, that he may prophesy concerning all things;
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	again	again	ADV	_	_	10	advmod	_	_
@@ -6712,7 +6685,7 @@
 13	things	thing	NOUN	_	_	10	obl	_	_
 14	;	;	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 173
+# sent_id = 164
 # text = And again, to another, the beholding of angels and ministering spirits;
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	again	again	ADV	_	_	8	advmod	_	_
@@ -6729,7 +6702,7 @@
 13	spirits	spirit	NOUN	_	_	10	conj	_	_
 14	;	;	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 174
+# sent_id = 165
 # text = And again, to another, all kinds of tongues;
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	again	again	ADV	_	_	8	advmod	_	_
@@ -6743,7 +6716,7 @@
 10	tongues	tongue	NOUN	_	_	8	nmod	_	_
 11	;	;	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 175
+# sent_id = 166
 # text = And again, to another, the interpretation of languages and of divers kinds of tongues.
 1	And	and	CCONJ	_	_	8	cc	_	_
 2	again	again	ADV	_	_	8	advmod	_	_
@@ -6763,7 +6736,7 @@
 16	tongues	tongue	NOUN	_	_	14	nmod	_	_
 17	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 176
+# sent_id = 167
 # text = And all these gifts come by the Spirit of Christ; and they come unto every man severally, according as he will.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	all	all	DET	_	_	4	det:predet	_	_
@@ -6790,7 +6763,7 @@
 23	will	will	AUX	_	_	14	advcl	_	_
 24	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 177
+# sent_id = 168
 # text = And I would exhort you, my beloved brethren, that ye remember that every good gift cometh of Christ.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
@@ -6814,7 +6787,7 @@
 20	Christ	Christ	PROPN	_	_	18	obl	_	_
 21	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 178
+# sent_id = 169
 # text = And I would exhort you, my beloved brethren, that ye remember that he is the same yesterday, today, and forever, and that all these gifts of which I have spoken, which are spiritual, never will be done away, even as long as the world shall stand, only according to the unbelief of the children of men.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
@@ -6883,7 +6856,7 @@
 65	men	man	NOUN	_	_	63	nmod	_	_
 66	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 179
+# sent_id = 170
 # text = Wherefore, there must be faith; and if there must be faith there must also be hope; and if there must be hope there must also be charity.
 1	Wherefore	so	ADV	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -6917,7 +6890,7 @@
 30	charity	charity	NOUN	_	_	29	nsubj	_	_
 31	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 180
+# sent_id = 171
 # text = And except ye have charity ye can in nowise be saved in the kingdom of God; neither can ye be saved in the kingdom of God if ye have not faith; neither can ye if ye have no hope.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	except	except	SCONJ	_	_	4	mark	_	_
@@ -6962,7 +6935,7 @@
 41	hope	hope	NOUN	_	_	39	obj	_	_
 42	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 181
+# sent_id = 172
 # text = And if ye have no hope ye must needs be in despair; and despair cometh because of iniquity.
 1	And	and	CCONJ	_	_	12	cc	_	_
 2	if	if	SCONJ	_	_	4	mark	_	_
@@ -6985,8 +6958,8 @@
 19	iniquity	iniquity	NOUN	_	_	16	obl	_	_
 20	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 182
-# text = And Christ truly said unto our fathers:
+# sent_id = 173
+# text = And Christ truly said unto our fathers: If ye have faith ye can do all things which are expedient unto me.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	Christ	Christ	PROPN	_	_	4	nsubj	_	_
 3	truly	truly	ADV	_	_	4	advmod	_	_
@@ -6995,26 +6968,23 @@
 6	our	our	PRON	_	_	7	nmod:poss	_	_
 7	fathers	father	NOUN	_	_	4	obl	_	_
 8	:	:	PUNCT	_	_	4	punct	_	_
+9	If	if	SCONJ	_	_	11	mark	_	_
+10	ye	you	PRON	_	_	11	nsubj	_	_
+11	have	have	VERB	_	_	15	advcl	_	_
+12	faith	faith	NOUN	_	_	11	obj	_	_
+13	ye	you	PRON	_	_	15	nsubj	_	_
+14	can	can	AUX	_	_	15	aux	_	_
+15	do	do	VERB	_	_	4	ccomp	_	_
+16	all	all	DET	_	_	17	det	_	_
+17	things	thing	NOUN	_	_	15	obj	_	_
+18	which	which	PRON	_	_	20	nsubj	_	_
+19	are	be	AUX	_	_	20	cop	_	_
+20	expedient	expedient	ADJ	_	_	17	acl:relcl	_	_
+21	unto	to	ADP	_	_	22	case	_	_
+22	me	I	PRON	_	_	20	obl	_	_
+23	.	.	PUNCT	_	_	15	punct	_	_
 
-# sent_id = 183
-# text = If ye have faith ye can do all things which are expedient unto me.
-1	If	if	SCONJ	_	_	3	mark	_	_
-2	ye	you	PRON	_	_	3	nsubj	_	_
-3	have	have	VERB	_	_	7	advcl	_	_
-4	faith	faith	NOUN	_	_	3	obj	_	_
-5	ye	you	PRON	_	_	7	nsubj	_	_
-6	can	can	AUX	_	_	7	aux	_	_
-7	do	do	VERB	_	_	0	root	_	_
-8	all	all	DET	_	_	9	det	_	_
-9	things	thing	NOUN	_	_	7	obj	_	_
-10	which	which	PRON	_	_	12	nsubj	_	_
-11	are	be	AUX	_	_	12	cop	_	_
-12	expedient	expedient	ADJ	_	_	9	acl:relcl	_	_
-13	unto	to	ADP	_	_	14	case	_	_
-14	me	I	PRON	_	_	12	obl	_	_
-15	.	.	PUNCT	_	_	7	punct	_	_
-
-# sent_id = 184
+# sent_id = 174
 # text = And now I speak unto all the ends of the earth--that if the day cometh that the power and gifts of God shall be done away among you, it shall be because of unbelief.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -7055,8 +7025,8 @@
 37	unbelief	unbelief	NOUN	_	_	4	ccomp	_	_
 38	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 185
-# text = And wo be unto the children of men if this be the case; for there shall be none that doeth good among you, no not one.
+# sent_id = 175
+# text = And wo be unto the children of men if this be the case; for there shall be none that doeth good among you, no not one. For if there be one among you that doeth good, he shall work by the power and gifts of God.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	wo	woe	ADV	_	_	6	advmod	_	_
 3	be	be	AUX	_	_	6	cop	_	_
@@ -7086,33 +7056,30 @@
 27	not	not	PART	_	_	28	advmod	_	_
 28	one	one	NUM	_	_	19	parataxis	_	_
 29	.	.	PUNCT	_	_	6	punct	_	_
+30	For	for	SCONJ	_	_	33	mark	_	_
+31	if	if	SCONJ	_	_	33	mark	_	_
+32	there	there	PRON	_	_	33	expl	_	_
+33	be	be	VERB	_	_	43	advcl	_	_
+34	one	one	NUM	_	_	33	nsubj	_	_
+35	among	among	ADP	_	_	36	case	_	_
+36	you	you	PRON	_	_	34	nmod	_	_
+37	that	that	PRON	_	_	39	nsubj	_	_
+38	doeth	do	AUX	_	_	39	cop	_	_
+39	good	good	ADJ	_	_	34	acl:relcl	_	_
+40	,	,	PUNCT	_	_	33	punct	_	_
+41	he	he	PRON	_	_	43	nsubj	_	_
+42	shall	shall	AUX	_	_	43	aux	_	_
+43	work	work	VERB	_	_	6	parataxis	_	_
+44	by	by	ADP	_	_	46	case	_	_
+45	the	the	DET	_	_	46	det	_	_
+46	power	power	NOUN	_	_	43	obl	_	_
+47	and	and	CCONJ	_	_	48	cc	_	_
+48	gifts	gift	NOUN	_	_	46	conj	_	_
+49	of	of	ADP	_	_	50	case	_	_
+50	God	God	PROPN	_	_	46	nmod	_	_
+51	.	.	PUNCT	_	_	43	punct	_	_
 
-# sent_id = 186
-# text = For if there be one among you that doeth good, he shall work by the power and gifts of God.
-1	For	for	SCONJ	_	_	4	mark	_	_
-2	if	if	SCONJ	_	_	4	mark	_	_
-3	there	there	PRON	_	_	4	expl	_	_
-4	be	be	VERB	_	_	14	advcl	_	_
-5	one	one	NUM	_	_	4	nsubj	_	_
-6	among	among	ADP	_	_	7	case	_	_
-7	you	you	PRON	_	_	5	nmod	_	_
-8	that	that	PRON	_	_	10	nsubj	_	_
-9	doeth	do	AUX	_	_	10	cop	_	_
-10	good	good	ADJ	_	_	5	acl:relcl	_	_
-11	,	,	PUNCT	_	_	4	punct	_	_
-12	he	he	PRON	_	_	14	nsubj	_	_
-13	shall	shall	AUX	_	_	14	aux	_	_
-14	work	work	VERB	_	_	0	root	_	_
-15	by	by	ADP	_	_	17	case	_	_
-16	the	the	DET	_	_	17	det	_	_
-17	power	power	NOUN	_	_	14	obl	_	_
-18	and	and	CCONJ	_	_	19	cc	_	_
-19	gifts	gift	NOUN	_	_	17	conj	_	_
-20	of	of	ADP	_	_	21	case	_	_
-21	God	God	PROPN	_	_	17	nmod	_	_
-22	.	.	PUNCT	_	_	14	punct	_	_
-
-# sent_id = 187
+# sent_id = 176
 # text = And wo unto them who shall do these things away and die, for they die in their sins, and they cannot be saved in the kingdom of God; and I speak it according to the words of Christ; and I lie not.
 1	And	and	CCONJ	_	_	2	cc	_	_
 2	wo	woe	VERB	_	_	0	root	_	_
@@ -7163,7 +7130,7 @@
 47	not	not	PART	_	_	46	advmod	_	_
 48	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 188
+# sent_id = 177
 # text = And I exhort you to remember these things; for the time speedily cometh that ye shall know that I lie not, for ye shall see me at the bar of God; and the Lord God will say unto you: Did I not declare my words unto you, which were written by this man, like as one crying from the dead, yea, even as one speaking out of the dust?
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -7244,7 +7211,7 @@
 77	dust	dust	NOUN	_	_	73	obl	_	_
 78	?	?	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 189
+# sent_id = 178
 # text = I declare these things unto the fulfilling of the prophecies. And behold, they shall proceed forth out of the mouth of the everlasting God; and his word shall hiss forth from generation to generation.
 1	I	I	PRON	_	_	2	nsubj	_	_
 2	declare	declare	VERB	_	_	0	root	_	_
@@ -7285,7 +7252,7 @@
 37	generation	generation	NOUN	_	_	32	obl	_	_
 38	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 190
+# sent_id = 179
 # text = And God shall show unto you, that that which I have written is true.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	God	God	PROPN	_	_	4	nsubj	_	_
@@ -7304,7 +7271,7 @@
 15	true	true	ADJ	_	_	4	ccomp	_	_
 16	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 191
+# sent_id = 180
 # text = And again I would exhort you that ye would come unto Christ, and lay hold upon every good gift, and touch not the evil gift, nor the unclean thing.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	again	again	ADV	_	_	5	advmod	_	_
@@ -7340,7 +7307,7 @@
 32	thing	thing	NOUN	_	_	27	conj	_	_
 33	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 192
+# sent_id = 181
 # text = And awake, and arise from the dust, O Jerusalem; yea, and put on thy beautiful garments, O daughter of Zion; and strengthen thy stakes and enlarge thy borders forever, that thou mayest no more be confounded, that the covenants of the Eternal Father which he hath made unto thee, O house of Israel, may be fulfilled.
 1	And	and	CCONJ	_	_	2	cc	_	_
 2	awake	awake	ADJ	_	_	0	root	_	_
@@ -7410,7 +7377,7 @@
 66	fulfilled	fulfil	VERB	_	_	28	parataxis	_	_
 67	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 193
+# sent_id = 182
 # text = Yea, come unto Christ, and be perfected in him, and deny yourselves of all ungodliness; and if ye shall deny yourselves of all ungodliness, and love God with all your might, mind and strength, then is his grace sufficient for you, that by his grace ye may be perfect in Christ; and if by the grace of God ye are perfect in Christ, ye can in nowise deny the power of God.
 1	Yea	yes	INTJ	_	_	3	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -7496,7 +7463,7 @@
 82	God	God	PROPN	_	_	80	nmod	_	_
 83	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 194
+# sent_id = 183
 # text = And again, if ye by the grace of God are perfect in Christ, and deny not his power, then are ye sanctified in Christ by the grace of God, through the shedding of the blood of Christ, which is in the covenant of the Father unto the remission of your sins, that ye become holy, without spot.
 1	And	and	CCONJ	_	_	25	cc	_	_
 2	again	again	ADV	_	_	25	advmod	_	_
@@ -7564,7 +7531,7 @@
 64	spot	spot	NOUN	_	_	60	obl	_	_
 65	.	.	PUNCT	_	_	25	punct	_	_
 
-# sent_id = 195
+# sent_id = 184
 # text = And now I bid unto all, farewell.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -7576,7 +7543,7 @@
 8	farewell	farewell	INTJ	_	_	4	discourse	_	_
 9	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 196
+# sent_id = 185
 # text = I soon go to rest in the paradise of God, until my spirit and body shall again reunite, and I am brought forth triumphant through the air, to meet you before the pleasing bar of the great Jehovah, the Eternal Judge of both quick and dead.
 1	I	I	PRON	_	_	3	nsubj	_	_
 2	soon	soon	ADV	_	_	3	advmod	_	_
@@ -7630,7 +7597,7 @@
 50	dead	dead	ADJ	_	_	48	conj	_	_
 51	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 197
+# sent_id = 186
 # text = Amen.
 1	Amen	amen	INTJ	_	_	0	root	_	_
 2	.	.	PUNCT	_	_	1	punct	_	_

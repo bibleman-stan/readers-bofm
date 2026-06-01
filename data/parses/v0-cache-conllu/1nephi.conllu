@@ -24949,7 +24949,7 @@
 47	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = 570
-# text = And it came to pass that we did begin to till the earth, and we began to plant seeds; yea, we did put all our seeds into the earth, which we had brought from the land of Jerusalem.
+# text = And it came to pass that we did begin to till the earth, and we began to plant seeds; yea, we did put all our seeds into the earth, which we had brought from the land of Jerusalem. And it came to pass that they did grow exceedingly; wherefore, we were blessed in abundance.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
 3	came	come	VERB	_	_	0	root	_	_
@@ -24993,30 +24993,27 @@
 41	of	of	ADP	_	_	42	case	_	_
 42	Jerusalem	Jerusalem	PROPN	_	_	40	nmod	_	_
 43	.	.	PUNCT	_	_	3	punct	_	_
+44	And	and	CCONJ	_	_	46	cc	_	_
+45	it	it	PRON	_	_	46	expl	_	_
+46	came	come	VERB	_	_	3	conj	_	_
+47	to	to	PART	_	_	48	mark	_	_
+48	pass	pass	VERB	_	_	46	xcomp	_	_
+49	that	that	SCONJ	_	_	52	mark	_	_
+50	they	they	PRON	_	_	52	nsubj	_	_
+51	did	do	AUX	_	_	52	aux	_	_
+52	grow	grow	VERB	_	_	48	ccomp	_	_
+53	exceedingly	exceedingly	ADV	_	_	52	advmod	_	_
+54	;	;	PUNCT	_	_	55	punct	_	_
+55	wherefore	so	ADV	_	_	59	advmod	_	_
+56	,	,	PUNCT	_	_	55	punct	_	_
+57	we	we	PRON	_	_	59	nsubj:pass	_	_
+58	were	be	AUX	_	_	59	aux:pass	_	_
+59	blessed	bless	VERB	_	_	46	parataxis	_	_
+60	in	in	ADP	_	_	61	case	_	_
+61	abundance	abundance	NOUN	_	_	59	obl	_	_
+62	.	.	PUNCT	_	_	46	punct	_	_
 
 # sent_id = 571
-# text = And it came to pass that they did grow exceedingly; wherefore, we were blessed in abundance.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	it	it	PRON	_	_	3	expl	_	_
-3	came	come	VERB	_	_	0	root	_	_
-4	to	to	PART	_	_	5	mark	_	_
-5	pass	pass	VERB	_	_	3	xcomp	_	_
-6	that	that	SCONJ	_	_	9	mark	_	_
-7	they	they	PRON	_	_	9	nsubj	_	_
-8	did	do	AUX	_	_	9	aux	_	_
-9	grow	grow	VERB	_	_	5	ccomp	_	_
-10	exceedingly	exceedingly	ADV	_	_	9	advmod	_	_
-11	;	;	PUNCT	_	_	12	punct	_	_
-12	wherefore	so	ADV	_	_	16	advmod	_	_
-13	,	,	PUNCT	_	_	12	punct	_	_
-14	we	we	PRON	_	_	16	nsubj:pass	_	_
-15	were	be	AUX	_	_	16	aux:pass	_	_
-16	blessed	bless	VERB	_	_	3	parataxis	_	_
-17	in	in	ADP	_	_	18	case	_	_
-18	abundance	abundance	NOUN	_	_	16	obl	_	_
-19	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 572
 # text = And it came to pass that we did find upon the land of promise, as we journeyed in the wilderness, that there were beasts in the forests of every kind, both the cow and the ox, and the ass and the horse, and the goat and the wild goat, and all manner of wild animals, which were for the use of men. And we did find all manner of ore, both of gold, and of silver, and of copper.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -25110,7 +25107,7 @@
 90	copper	copper	NOUN	_	_	78	conj	_	_
 91	.	.	PUNCT	_	_	74	punct	_	_
 
-# sent_id = 573
+# sent_id = 572
 # text = And it came to pass that the Lord commanded me, wherefore I did make plates of ore that I might engraven upon them the record of my people. And upon the plates which I made I did engraven the record of my father, and also our journeyings in the wilderness, and the prophecies of my father; and also many of mine own prophecies have I engraven upon them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -25187,7 +25184,7 @@
 73	them	they	PRON	_	_	71	obl	_	_
 74	.	.	PUNCT	_	_	40	punct	_	_
 
-# sent_id = 574
+# sent_id = 573
 # text = And I knew not at the time when I made them that I should be commanded of the Lord to make these plates; wherefore, the record of my father, and the genealogy of his fathers, and the more part of all our proceedings in the wilderness are engraven upon those first plates of which I have spoken; wherefore, the things which transpired before I made these plates are, of a truth, more particularly made mention upon the first plates.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -25278,7 +25275,7 @@
 87	plates	plate	NOUN	_	_	82	obl	_	_
 88	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 575
+# sent_id = 574
 # text = And after I had made these plates by way of commandment, I, Nephi, received a commandment that the ministry and the prophecies, the more plain and precious parts of them, should be written upon these plates; and that the things which were written should be kept for the instruction of my people, who should possess the land, and also for other wise purposes, which purposes are known unto the Lord.
 1	And	and	CCONJ	_	_	17	cc	_	_
 2	after	after	SCONJ	_	_	5	mark	_	_
@@ -25361,7 +25358,7 @@
 79	Lord	Lord	PROPN	_	_	76	obl	_	_
 80	.	.	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 576
+# sent_id = 575
 # text = Wherefore, I, Nephi, did make a record upon the other plates, which gives an account, or which gives a greater account of the wars and contentions and destructions of my people. And this have I done, and commanded my people what they should do after I was gone; and that these plates should be handed down from one generation to another, or from one prophet to another, until further commandments of the Lord.
 1	Wherefore	so	ADV	_	_	8	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -25448,7 +25445,7 @@
 83	Lord	Lord	PROPN	_	_	80	nmod	_	_
 84	.	.	PUNCT	_	_	42	punct	_	_
 
-# sent_id = 577
+# sent_id = 576
 # text = And an account of my making these plates shall be given hereafter; and then, behold, I proceed according to that which I have spoken; and this I do that the more sacred things may be kept for the knowledge of my people.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	an	a	DET	_	_	3	det	_	_
@@ -25498,7 +25495,7 @@
 46	people	person	NOUN	_	_	43	nmod	_	_
 47	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 578
+# sent_id = 577
 # text = Nevertheless, I do not write anything upon plates save it be that I think it be sacred. And now, if I do err, even did they err of old; not that I would excuse myself because of other men, but because of the weakness which is in me, according to the flesh, I would excuse myself.
 1	Nevertheless	nevertheless	ADV	_	_	6	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -25566,7 +25563,7 @@
 64	myself	myself	PRON	_	_	63	obj	_	_
 65	.	.	PUNCT	_	_	31	punct	_	_
 
-# sent_id = 579
+# sent_id = 578
 # text = For the things which some men esteem to be of great worth, both to the body and soul, others set at naught and trample under their feet.
 1	For	for	ADP	_	_	3	case	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -25599,7 +25596,7 @@
 29	feet	foot	NOUN	_	_	26	obl	_	_
 30	.	.	PUNCT	_	_	22	punct	_	_
 
-# sent_id = 580
+# sent_id = 579
 # text = Yea, even the very God of Israel do men trample under their feet; I say, trample under their feet but I would speak in other words--they set him at naught, and hearken not to the voice of his counsels.
 1	Yea	yes	INTJ	_	_	11	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -25648,7 +25645,7 @@
 45	counsels	counsel	NOUN	_	_	42	nmod	_	_
 46	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 581
+# sent_id = 580
 # text = And behold he cometh, according to the words of the angel, in six hundred years from the time my father left Jerusalem.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	behold	behold	INTJ	_	_	4	discourse	_	_
@@ -25676,7 +25673,7 @@
 24	Jerusalem	Jerusalem	PROPN	_	_	23	obj	_	_
 25	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 582
+# sent_id = 581
 # text = And the world, because of their iniquity, shall judge him to be a thing of naught; wherefore they scourge him, and he suffereth it; and they smite him, and he suffereth it.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -25718,7 +25715,7 @@
 38	it	it	PRON	_	_	37	obj	_	_
 39	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 583
+# sent_id = 582
 # text = Yea, they spit upon him, and he suffereth it, because of his loving kindness and his long-suffering towards the children of men.
 1	Yea	yes	INTJ	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -25749,7 +25746,7 @@
 27	men	man	NOUN	_	_	25	nmod	_	_
 28	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 584
+# sent_id = 583
 # text = And the God of our fathers, who were led out of Egypt, out of bondage, and also were preserved in the wilderness by him, yea, the God of Abraham, and of Isaac, and the God of Jacob, yieldeth himself, according to the words of the angel, as a man, into the hands of wicked men, to be lifted up, according to the words of Zenock, and to be crucified, according to the words of Neum, and to be buried in a sepulchre, according to the words of Zenos, which he spake concerning the three days of darkness, which should be a sign given of his death unto those who should inhabit the isles of the sea, more especially given unto those who are of the house of Israel.
 1	And	and	CCONJ	_	_	46	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -25901,7 +25898,7 @@
 148	Israel	Israel	PROPN	_	_	146	nmod	_	_
 149	.	.	PUNCT	_	_	46	punct	_	_
 
-# sent_id = 585
+# sent_id = 584
 # text = For thus spake the prophet: The Lord God surely shall visit all the house of Israel at that day, some with his voice, because of their righteousness, unto their great joy and salvation, and others with the thunderings and the lightnings of his power, by tempest, by fire, and by smoke, and vapor of darkness, and by the opening of the earth, and by mountains which shall be carried up.
 1	For	for	SCONJ	_	_	3	mark	_	_
 2	thus	thus	ADV	_	_	3	advmod	_	_
@@ -25986,7 +25983,7 @@
 81	up	up	ADP	_	_	80	compound:prt	_	_
 82	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 586
+# sent_id = 585
 # text = And all these things must surely come, saith the prophet Zenos. And the rocks of the earth must rend; and because of the groanings of the earth, many of the kings of the isles of the sea shall be wrought upon by the Spirit of God, to exclaim: The God of nature suffers.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	all	all	DET	_	_	4	det:predet	_	_
@@ -26049,7 +26046,7 @@
 59	suffers	suffer	VERB	_	_	40	ccomp	_	_
 60	.	.	PUNCT	_	_	21	punct	_	_
 
-# sent_id = 587
+# sent_id = 586
 # text = And as for those who are at Jerusalem, saith the prophet, they shall be scourged by all people, because they crucify the God of Israel, and turn their hearts aside, rejecting signs and wonders, and the power and glory of the God of Israel.
 1	And	and	CCONJ	_	_	10	cc	_	_
 2	as	as	ADP	_	_	4	case	_	_
@@ -26103,7 +26100,7 @@
 50	Israel	Israel	PROPN	_	_	48	nmod	_	_
 51	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 588
+# sent_id = 587
 # text = And because they turn their hearts aside, saith the prophet, and have despised the Holy One of Israel, they shall wander in the flesh, and perish, and become a hiss and a byword, and be hated among all nations.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	because	because	SCONJ	_	_	4	mark	_	_
@@ -26152,7 +26149,7 @@
 45	nations	nation	NOUN	_	_	42	obl	_	_
 46	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 589
+# sent_id = 588
 # text = Nevertheless, when that day cometh, saith the prophet, that they no more turn aside their hearts against the Holy One of Israel, then will he remember the covenants which he made to their fathers.
 1	Nevertheless	nevertheless	ADV	_	_	8	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -26194,7 +26191,7 @@
 38	fathers	father	NOUN	_	_	35	obl	_	_
 39	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 590
+# sent_id = 589
 # text = Yea, then will he remember the isles of the sea; yea, and all the people who are of the house of Israel, will I gather in, saith the Lord, according to the words of the prophet Zenos, from the four quarters of the earth.
 1	Yea	yes	INTJ	_	_	6	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -26249,7 +26246,7 @@
 51	earth	earth	NOUN	_	_	48	nmod	_	_
 52	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 591
+# sent_id = 590
 # text = Yea, and all the earth shall see the salvation of the Lord, saith the prophet; every nation, kindred, tongue and people shall be blessed.
 1	Yea	yes	INTJ	_	_	8	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -26282,7 +26279,7 @@
 29	blessed	bless	VERB	_	_	8	conj	_	_
 30	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 592
+# sent_id = 591
 # text = And I, Nephi, have written these things unto my people, that perhaps I might persuade them that they would remember the Lord their Redeemer.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	I	I	PRON	_	_	7	nsubj	_	_
@@ -26313,7 +26310,7 @@
 27	Redeemer	Redeemer	PROPN	_	_	23	obj	_	_
 28	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 593
+# sent_id = 592
 # text = Wherefore, I speak unto all the house of Israel, if it so be that they should obtain these things.
 1	Wherefore	so	ADV	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -26338,7 +26335,7 @@
 21	things	thing	NOUN	_	_	19	obj	_	_
 22	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 594
+# sent_id = 593
 # text = For behold, I have workings in the spirit, which doth weary me even that all my joints are weak, for those who are at Jerusalem; for had not the Lord been merciful, to show unto me concerning them, even as he had prophets of old, I should have perished also.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	5	obl	_	_
@@ -26399,7 +26396,7 @@
 57	also	also	ADV	_	_	56	advmod	_	_
 58	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 595
+# sent_id = 594
 # text = And he surely did show unto the prophets of old all things concerning them; and also he did show unto many concerning us; wherefore, it must needs be that we know concerning them for they are written upon the plates of brass.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	he	he	PRON	_	_	5	nsubj	_	_
@@ -26448,7 +26445,7 @@
 45	brass	brass	NOUN	_	_	43	nmod	_	_
 46	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 596
+# sent_id = 595
 # text = Now it came to pass that I, Nephi, did teach my brethren these things; and it came to pass that I did read many things to them, which were engraven upon the plates of brass, that they might know concerning the doings of the Lord in other lands, among people of old.
 1	Now	now	ADV	_	_	3	advmod	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -26510,7 +26507,7 @@
 58	old	old	ADJ	_	_	56	nmod	_	_
 59	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 597
+# sent_id = 596
 # text = And I did read many things unto them which were written in the books of Moses; but that I might more fully persuade them to believe in the Lord their Redeemer I did read unto them that which was written by the prophet Isaiah; for I did liken all scriptures unto us, that it might be for our profit and learning.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
@@ -26578,7 +26575,7 @@
 64	learning	learning	NOUN	_	_	62	conj	_	_
 65	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 598
+# sent_id = 597
 # text = Wherefore I spake unto them, saying: Hear ye the words of the prophet, ye who are a remnant of the house of Israel, a branch who have been broken off; hear ye the words of the prophet, which were written unto all the house of Israel, and liken them unto yourselves, that ye may have hope as well as your brethren from whom ye have been broken off; for after this manner has the prophet written.
 1	Wherefore	so	ADV	_	_	3	advmod	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -26667,7 +26664,7 @@
 85	written	write	VERB	_	_	82	xcomp	_	_
 86	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 599
+# sent_id = 598
 # text = Hearken and hear this, O house of Jacob, who are called by the name of Israel, and are come forth out of the waters of Judah, or out of the waters of baptism, who swear by the name of the Lord, and make mention of the God of Israel, yet they swear not in truth nor in righteousness.
 1	Hearken	listen	VERB	_	_	0	root	_	_
 2	and	and	CCONJ	_	_	3	cc	_	_
@@ -26736,7 +26733,7 @@
 65	righteousness	righteousness	NOUN	_	_	62	conj	_	_
 66	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 600
+# sent_id = 599
 # text = Nevertheless, they call themselves of the holy city, but they do not stay themselves upon the God of Israel, who is the Lord of Hosts; yea, the Lord of Hosts is his name.
 1	Nevertheless	nevertheless	ADV	_	_	4	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -26778,7 +26775,7 @@
 38	name	name	NOUN	_	_	15	parataxis	_	_
 39	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 601
+# sent_id = 600
 # text = Behold, I have declared the former things from the beginning; and they went forth out of my mouth, and I showed them.
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -26807,7 +26804,7 @@
 25	them	they	PRON	_	_	24	iobj	_	_
 26	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 602
+# sent_id = 601
 # text = I did show them suddenly.
 1	I	I	PRON	_	_	3	nsubj	_	_
 2	did	do	AUX	_	_	3	aux	_	_
@@ -26816,7 +26813,7 @@
 5	suddenly	suddenly	ADV	_	_	3	advmod	_	_
 6	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 603
+# sent_id = 602
 # text = And I did it because I knew that thou art obstinate, and thy neck is an iron sinew, and thy brow brass;
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -26844,7 +26841,7 @@
 24	brass	brass	NOUN	_	_	19	conj	_	_
 25	;	;	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 604
+# sent_id = 603
 # text = And I have even from the beginning declared to thee; before it came to pass I showed them thee; and I showed them for fear lest thou shouldst say--Mine idol hath done them, and my graven image, and my molten image hath commanded them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -26898,7 +26895,7 @@
 50	them	they	PRON	_	_	49	obj	_	_
 51	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 605
+# sent_id = 604
 # text = Thou hast seen and heard all this; and will ye not declare them? And that I have showed thee new things from this time, even hidden things, and thou didst not know them.
 1	Thou	you	PRON	_	_	3	nsubj	_	_
 2	hast	have	AUX	_	_	3	aux	_	_
@@ -26939,7 +26936,7 @@
 37	them	they	PRON	_	_	36	obj	_	_
 38	.	.	PUNCT	_	_	20	punct	_	_
 
-# sent_id = 606
+# sent_id = 605
 # text = They are created now, and not from the beginning, even before the day when thou heardest them not they were declared unto thee, lest thou shouldst say--Behold I knew them.
 1	They	they	PRON	_	_	3	nsubj:pass	_	_
 2	are	be	AUX	_	_	3	aux:pass	_	_
@@ -26978,7 +26975,7 @@
 35	them	they	PRON	_	_	34	obj	_	_
 36	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 607
+# sent_id = 606
 # text = Yea, and thou heardest not; yea, thou knewest not; yea, from that time thine ear was not opened; for I knew that thou wouldst deal very treacherously, and wast called a transgressor from the womb.
 1	Yea	yes	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -27024,7 +27021,7 @@
 42	womb	womb	NOUN	_	_	37	obl	_	_
 43	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 608
+# sent_id = 607
 # text = Nevertheless, for my name's sake will I defer mine anger, and for my praise will I refrain from thee, that I cut thee not off.
 1	Nevertheless	nevertheless	ADV	_	_	10	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -27057,7 +27054,7 @@
 29	off	off	ADP	_	_	26	compound:prt	_	_
 30	.	.	PUNCT	_	_	10	punct	_	_
 
-# sent_id = 609
+# sent_id = 608
 # text = For, behold, I have refined thee, I have chosen thee in the furnace of affliction.
 1	For	for	ADP	_	_	7	mark	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -27079,7 +27076,7 @@
 18	affliction	affliction	NOUN	_	_	16	nmod	_	_
 19	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 610
+# sent_id = 609
 # text = For mine own sake, yea, for mine own sake will I do this, for I will not suffer my name to be polluted, and I will not give my glory unto another.
 1	For	for	ADP	_	_	4	case	_	_
 2	mine	my	PRON	_	_	4	nmod:poss	_	_
@@ -27119,7 +27116,7 @@
 36	another	another	DET	_	_	32	obl	_	_
 37	.	.	PUNCT	_	_	14	punct	_	_
 
-# sent_id = 611
+# sent_id = 610
 # text = Hearken unto me, O Jacob, and Israel my called, for I am he; I am the first, and I am also the last.
 1	Hearken	listen	VERB	_	_	0	root	_	_
 2	unto	to	ADP	_	_	3	case	_	_
@@ -27151,7 +27148,7 @@
 28	last	last	ADJ	_	_	1	conj	_	_
 29	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 612
+# sent_id = 611
 # text = Mine hand hath also laid the foundation of the earth, and my right hand hath spanned the heavens.
 1	Mine	my	PRON	_	_	2	nmod:poss	_	_
 2	hand	hand	NOUN	_	_	5	nsubj	_	_
@@ -27174,7 +27171,7 @@
 19	heavens	heaven	NOUN	_	_	17	obj	_	_
 20	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 613
+# sent_id = 612
 # text = I call unto them and they stand up together.
 1	I	I	PRON	_	_	2	nsubj	_	_
 2	call	call	VERB	_	_	0	root	_	_
@@ -27187,7 +27184,7 @@
 9	together	together	ADV	_	_	7	advmod	_	_
 10	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 614
+# sent_id = 613
 # text = All ye, assemble yourselves, and hear; who among them hath declared these things unto them?
 1	All	all	DET	_	_	2	det:predet	_	_
 2	ye	you	PRON	_	_	4	nsubj	_	_
@@ -27209,7 +27206,7 @@
 18	them	they	PRON	_	_	14	obl	_	_
 19	?	?	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 615
+# sent_id = 614
 # text = The Lord hath loved him; yea, and he will fulfil his word which he hath declared by them; and he will do his pleasure on Babylon, and his arm shall come upon the Chaldeans.
 1	The	the	DET	_	_	2	det	_	_
 2	Lord	Lord	PROPN	_	_	4	nsubj	_	_
@@ -27251,7 +27248,7 @@
 38	Chaldeans	Chaldean	PROPN	_	_	35	obl	_	_
 39	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 616
+# sent_id = 615
 # text = Also, saith the Lord; I the Lord, yea, I have spoken; yea, I have called him to declare, I have brought him, and he shall make his way prosperous.
 1	Also	also	ADV	_	_	3	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -27292,7 +27289,7 @@
 37	prosperous	prosperous	ADJ	_	_	34	xcomp	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 617
+# sent_id = 616
 # text = Come ye near unto me; I have not spoken in secret; from the beginning, from the time that it was declared have I spoken; and the Lord God, and his Spirit, hath sent me.
 1	Come	come	VERB	_	_	0	root	_	_
 2	ye	you	PRON	_	_	1	obj	_	_
@@ -27336,7 +27333,7 @@
 40	me	I	PRON	_	_	39	obj	_	_
 41	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 618
+# sent_id = 617
 # text = And thus saith the Lord, thy Redeemer, the Holy One of Israel; I have sent him, the Lord thy God who teacheth thee to profit, who leadeth thee by the way thou shouldst go, hath done it.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	thus	thus	ADV	_	_	3	advmod	_	_
@@ -27383,7 +27380,7 @@
 43	it	it	PRON	_	_	42	obj	_	_
 44	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 619
+# sent_id = 618
 # text = O that thou hadst hearkened to my commandments--then had thy peace been as a river, and thy righteousness as the waves of the sea.
 1	O	o	INTJ	_	_	5	discourse	_	_
 2	that	that	SCONJ	_	_	5	mark	_	_
@@ -27414,7 +27411,7 @@
 27	sea	sea	NOUN	_	_	24	nmod	_	_
 28	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 620
+# sent_id = 619
 # text = Thy seed also had been as the sand; the offspring of thy bowels like the gravel thereof; his name should not have been cut off nor destroyed from before me.
 1	Thy	your	PRON	_	_	2	nmod:poss	_	_
 2	seed	seed	NOUN	_	_	8	nsubj	_	_
@@ -27450,7 +27447,7 @@
 32	me	I	PRON	_	_	26	obl	_	_
 33	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 621
+# sent_id = 620
 # text = Go ye forth of Babylon, flee ye from the Chaldeans, with a voice of singing declare ye, tell this, utter to the end of the earth; say ye: The Lord hath redeemed his servant Jacob.
 1	Go	go	VERB	_	_	0	root	_	_
 2	ye	you	PRON	_	_	1	obj	_	_
@@ -27495,7 +27492,7 @@
 41	Jacob	Jacob	PROPN	_	_	38	obj	_	_
 42	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 622
+# sent_id = 621
 # text = And they thirsted not; he led them through the deserts; he caused the waters to flow out of the rock for them; he clave the rock also and the waters gushed out.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	they	they	PRON	_	_	3	nsubj	_	_
@@ -27534,7 +27531,7 @@
 35	out	out	ADP	_	_	34	compound:prt	_	_
 36	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 623
+# sent_id = 622
 # text = And notwithstanding he hath done all this, and greater also, there is no peace, saith the Lord, unto the wicked.
 1	And	and	CCONJ	_	_	14	cc	_	_
 2	notwithstanding	despite	SCONJ	_	_	5	mark	_	_
@@ -27562,7 +27559,7 @@
 24	wicked	wicked	ADJ	_	_	18	obl	_	_
 25	.	.	PUNCT	_	_	14	punct	_	_
 
-# sent_id = 624
+# sent_id = 623
 # text = And again: Hearken, O ye house of Israel, all ye that are broken off and are driven out because of the wickedness of the pastors of my people; yea, all ye that are broken off, that are scattered abroad, who are of my people, O house of Israel.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	again	again	ADV	_	_	4	advmod	_	_
@@ -27622,7 +27619,7 @@
 56	Israel	Israel	PROPN	_	_	54	nmod	_	_
 57	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 625
+# sent_id = 624
 # text = Listen, O isles, unto me, and hearken ye people from far; the Lord hath called me from the womb; from the bowels of my mother hath he made mention of my name.
 1	Listen	listen	VERB	_	_	0	root	_	_
 2	,	,	PUNCT	_	_	4	punct	_	_
@@ -27663,7 +27660,7 @@
 37	name	name	NOUN	_	_	34	nmod	_	_
 38	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 626
+# sent_id = 625
 # text = And he hath made my mouth like a sharp sword; in the shadow of his hand hath he hid me, and made me a polished shaft; in his quiver hath he hid me;
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	he	he	PRON	_	_	4	nsubj	_	_
@@ -27703,7 +27700,7 @@
 36	me	I	PRON	_	_	35	obj	_	_
 37	;	;	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 627
+# sent_id = 626
 # text = And said unto me: Thou art my servant, O Israel, in whom I will be glorified.
 1	And	and	CCONJ	_	_	2	cc	_	_
 2	said	say	VERB	_	_	0	root	_	_
@@ -27726,7 +27723,7 @@
 19	glorified	glorify	VERB	_	_	9	acl:relcl	_	_
 20	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 628
+# sent_id = 627
 # text = Then I said, I have labored in vain, I have spent my strength for naught and in vain; surely my judgment is with the Lord, and my work with my God.
 1	Then	then	ADV	_	_	3	advmod	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -27765,7 +27762,7 @@
 35	God	God	PROPN	_	_	32	nmod	_	_
 36	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 629
+# sent_id = 628
 # text = And now, saith the Lord--that formed me from the womb that I should be his servant, to bring Jacob again to him--though Israel be not gathered, yet shall I be glorious in the eyes of the Lord, and my God shall be my strength.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -27821,14 +27818,14 @@
 52	strength	strength	NOUN	_	_	38	conj	_	_
 53	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 630
+# sent_id = 629
 # text = And he said:
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
 3	said	say	VERB	_	_	0	root	_	_
 4	:	:	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 631
+# sent_id = 630
 # text = It is a light thing that thou shouldst be my servant to raise up the tribes of Jacob, and to restore the preserved of Israel.
 1	It	it	PRON	_	_	5	expl	_	_
 2	is	be	AUX	_	_	5	cop	_	_
@@ -27858,7 +27855,7 @@
 26	Israel	Israel	PROPN	_	_	24	nmod	_	_
 27	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 632
+# sent_id = 631
 # text = I will also give thee for a light to the Gentiles, that thou mayest be my salvation unto the ends of the earth.
 1	I	I	PRON	_	_	4	nsubj	_	_
 2	will	will	AUX	_	_	4	aux	_	_
@@ -27886,7 +27883,7 @@
 24	earth	earth	NOUN	_	_	21	nmod	_	_
 25	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 633
+# sent_id = 632
 # text = Thus saith the Lord, the Redeemer of Israel, his Holy One, to him whom man despiseth, to him whom the nations abhorreth, to servant of rulers:
 1	Thus	thus	ADV	_	_	2	advmod	_	_
 2	saith	say	VERB	_	_	0	root	_	_
@@ -27921,7 +27918,7 @@
 31	rulers	ruler	NOUN	_	_	29	nmod	_	_
 32	:	:	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 634
+# sent_id = 633
 # text = Kings shall see and arise, princes also shall worship, because of the Lord that is faithful.
 1	Kings	ning	NOUN	_	_	3	nsubj	_	_
 2	shall	shall	AUX	_	_	3	aux	_	_
@@ -27943,7 +27940,7 @@
 18	faithful	faithful	ADJ	_	_	15	acl:relcl	_	_
 19	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 635
+# sent_id = 634
 # text = Thus saith the Lord: In an acceptable time have I heard thee, O isles of the sea, and in a day of salvation have I helped thee; and I will preserve thee, and give thee my servant for a covenant of the people, to establish the earth, to cause to inherit the desolate heritages;
 1	Thus	thus	ADV	_	_	2	advmod	_	_
 2	saith	say	VERB	_	_	0	root	_	_
@@ -28008,7 +28005,7 @@
 61	heritages	heritage	NOUN	_	_	58	obj	_	_
 62	;	;	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 636
+# sent_id = 635
 # text = That thou mayest say to the prisoners:
 1	That	that	SCONJ	_	_	4	mark	_	_
 2	thou	you	PRON	_	_	4	nsubj	_	_
@@ -28019,7 +28016,7 @@
 7	prisoners	prisoner	NOUN	_	_	4	obl	_	_
 8	:	:	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 637
+# sent_id = 636
 # text = Go forth; to them that sit in darkness:
 1	Go	go	VERB	_	_	0	root	_	_
 2	forth	forth	ADV	_	_	1	advmod	_	_
@@ -28032,13 +28029,13 @@
 9	darkness	darkness	NOUN	_	_	7	obl	_	_
 10	:	:	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 638
+# sent_id = 637
 # text = Show yourselves.
 1	Show	show	VERB	_	_	0	root	_	_
 2	yourselves	yourselves	PRON	_	_	1	iobj	_	_
 3	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 639
+# sent_id = 638
 # text = They shall feed in the ways, and their pastures shall be in all high places.
 1	They	they	PRON	_	_	3	nsubj	_	_
 2	shall	shall	AUX	_	_	3	aux	_	_
@@ -28058,7 +28055,7 @@
 16	places	place	NOUN	_	_	3	conj	_	_
 17	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 640
+# sent_id = 639
 # text = They shall not hunger nor thirst, neither shall the heat nor the sun smite them; for he that hath mercy on them shall lead them, even by the springs of water shall he guide them.
 1	They	they	PRON	_	_	4	nsubj	_	_
 2	shall	shall	AUX	_	_	4	aux	_	_
@@ -28100,7 +28097,7 @@
 38	them	they	PRON	_	_	37	obj	_	_
 39	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 641
+# sent_id = 640
 # text = And I will make all my mountains a way, and my highways shall be exalted.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
@@ -28120,7 +28117,7 @@
 16	exalted	exalt	VERB	_	_	4	conj	_	_
 17	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 642
+# sent_id = 641
 # text = And then, O house of Israel, behold, these shall come from far; and lo, these from the north and from the west; and these from the land of Sinim.
 1	And	and	CCONJ	_	_	13	cc	_	_
 2	then	then	ADV	_	_	13	advmod	_	_
@@ -28159,7 +28156,7 @@
 35	Sinim	Sinim	PROPN	_	_	33	nmod	_	_
 36	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 643
+# sent_id = 642
 # text = Sing, O heavens; and be joyful, O earth; for the feet of those who are in the east shall be established; and break forth into singing, O mountains; for they shall be smitten no more; for the Lord hath comforted his people, and will have mercy upon his afflicted.
 1	Sing	sing	VERB	_	_	0	root	_	_
 2	,	,	PUNCT	_	_	4	punct	_	_
@@ -28221,7 +28218,7 @@
 58	afflicted	afflict	VERB	_	_	54	obl	_	_
 59	.	.	PUNCT	_	_	1	punct	_	_
 
-# sent_id = 644
+# sent_id = 643
 # text = But, behold, Zion hath said: The Lord hath forsaken me, and my Lord hath forgotten me--but he will show that he hath not.
 1	But	but	CCONJ	_	_	7	cc	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -28254,7 +28251,7 @@
 29	not	not	PART	_	_	28	advmod	_	_
 30	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 645
+# sent_id = 644
 # text = For can a woman forget her sucking child, that she should not have compassion on the son of her womb?
 1	For	for	SCONJ	_	_	5	mark	_	_
 2	can	can	AUX	_	_	5	aux	_	_
@@ -28279,7 +28276,7 @@
 21	womb	womb	NOUN	_	_	18	nmod	_	_
 22	?	?	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 646
+# sent_id = 645
 # text = Yea, they may forget, yet will I not forget thee, O house of Israel.
 1	Yea	yes	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -28300,7 +28297,7 @@
 17	Israel	Israel	PROPN	_	_	15	nmod	_	_
 18	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 647
+# sent_id = 646
 # text = Behold, I have graven thee upon the palms of my hands; thy walls are continually before me.
 1	Behold	behold	INTJ	_	_	5	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -28323,7 +28320,7 @@
 19	me	I	PRON	_	_	5	parataxis	_	_
 20	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 648
+# sent_id = 647
 # text = Thy children shall make haste against thy destroyers; and they that made thee waste shall go forth of thee.
 1	Thy	your	PRON	_	_	2	nmod:poss	_	_
 2	children	child	NOUN	_	_	4	nsubj	_	_
@@ -28347,7 +28344,7 @@
 20	thee	you	PRON	_	_	17	obl	_	_
 21	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 649
+# sent_id = 648
 # text = Lift up thine eyes round about and behold; all these gather themselves together, and they shall come to thee. And as I live, saith the Lord, thou shalt surely clothe thee with them all, as with an ornament, and bind them on even as a bride.
 1	Lift	lift	VERB	_	_	0	root	_	_
 2	up	up	ADP	_	_	1	compound:prt	_	_
@@ -28404,7 +28401,7 @@
 53	bride	bride	NOUN	_	_	47	obl	_	_
 54	.	.	PUNCT	_	_	28	punct	_	_
 
-# sent_id = 650
+# sent_id = 649
 # text = For thy waste and thy desolate places, and the land of thy destruction, shall even now be too narrow by reason of the inhabitants; and they that swallowed thee up shall be far away.
 1	For	for	ADP	_	_	3	case	_	_
 2	thy	your	PRON	_	_	3	nmod:poss	_	_
@@ -28445,7 +28442,7 @@
 37	away	away	ADV	_	_	21	conj	_	_
 38	.	.	PUNCT	_	_	21	punct	_	_
 
-# sent_id = 651
+# sent_id = 650
 # text = The children whom thou shalt have, after thou hast lost the first, shall again in thine ears say:
 1	The	the	DET	_	_	2	det	_	_
 2	children	child	NOUN	_	_	20	nsubj	_	_
@@ -28469,7 +28466,7 @@
 20	say	say	VERB	_	_	0	root	_	_
 21	:	:	PUNCT	_	_	20	punct	_	_
 
-# sent_id = 652
+# sent_id = 651
 # text = The place is too strait for me; give place to me that I may dwell.
 1	The	the	DET	_	_	2	det	_	_
 2	place	place	NOUN	_	_	5	nsubj	_	_
@@ -28489,7 +28486,7 @@
 16	dwell	dwell	VERB	_	_	9	ccomp	_	_
 17	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 653
+# sent_id = 652
 # text = Then shalt thou say in thine heart: Who hath begotten me these, seeing I have lost my children, and am desolate, a captive, and removing to and fro? And who hath brought up these? Behold, I was left alone; these, where have they been?
 1	Then	then	ADV	_	_	4	advmod	_	_
 2	shalt	shall	AUX	_	_	4	aux	_	_
@@ -28547,7 +28544,7 @@
 54	been	be	AUX	_	_	46	parataxis	_	_
 55	?	?	PUNCT	_	_	46	punct	_	_
 
-# sent_id = 654
+# sent_id = 653
 # text = Thus saith the Lord God: Behold, I will lift up mine hand to the Gentiles, and set up my standard to the people; and they shall bring thy sons in their arms, and thy daughters shall be carried upon their shoulders.
 1	Thus	thus	ADV	_	_	2	advmod	_	_
 2	saith	say	VERB	_	_	0	root	_	_
@@ -28597,7 +28594,7 @@
 46	shoulders	shoulder	NOUN	_	_	43	obl	_	_
 47	.	.	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 655
+# sent_id = 654
 # text = And kings shall be thy nursing fathers, and their queens thy nursing mothers; they shall bow down to thee with their face towards the earth, and lick up the dust of thy feet; and thou shalt know that I am the Lord; for they shall not be ashamed that wait for me.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	kings	king	NOUN	_	_	7	nsubj	_	_
@@ -28658,7 +28655,7 @@
 57	me	I	PRON	_	_	55	obl	_	_
 58	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 656
+# sent_id = 655
 # text = For shall the prey be taken from the mighty, or the lawful captives delivered?
 1	For	for	SCONJ	_	_	6	mark	_	_
 2	shall	shall	AUX	_	_	6	aux	_	_
@@ -28677,7 +28674,7 @@
 15	delivered	deliver	VERB	_	_	14	acl	_	_
 16	?	?	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 657
+# sent_id = 656
 # text = But thus saith the Lord, even the captives of the mighty shall be taken away, and the prey of the terrible shall be delivered; for I will contend with him that contendeth with thee, and I will save thy children.
 1	But	but	CCONJ	_	_	3	cc	_	_
 2	thus	thus	ADV	_	_	3	advmod	_	_
@@ -28725,7 +28722,7 @@
 44	children	child	NOUN	_	_	42	obj	_	_
 45	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 658
+# sent_id = 657
 # text = And I will feed them that oppress thee with their own flesh; they shall be drunken with their own blood as with sweet wine; and all flesh shall know that I, the Lord, am thy Savior and thy Redeemer, the Mighty One of Jacob.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
@@ -28778,7 +28775,7 @@
 49	Jacob	Jacob	PROPN	_	_	47	nmod	_	_
 50	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 659
+# sent_id = 658
 # text = And now it came to pass that after I, Nephi, had read these things which were engraven upon the plates of brass, my brethren came unto me and said unto me:
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -28816,7 +28813,7 @@
 34	me	I	PRON	_	_	32	obl	_	_
 35	:	:	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 660
+# sent_id = 659
 # text = What meaneth these things which ye have read?
 1	What	what	PRON	_	_	2	nsubj	_	_
 2	meaneth	mean	VERB	_	_	0	root	_	_
@@ -28828,7 +28825,7 @@
 8	read	read	VERB	_	_	4	acl:relcl	_	_
 9	?	?	PUNCT	_	_	2	punct	_	_
 
-# sent_id = 661
+# sent_id = 660
 # text = Behold, are they to be understood according to things which are spiritual, which shall come to pass according to the spirit and not the flesh?
 1	Behold	behold	INTJ	_	_	7	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -28859,7 +28856,7 @@
 27	flesh	flesh	NOUN	_	_	23	conj	_	_
 28	?	?	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 662
+# sent_id = 661
 # text = And I, Nephi, said unto them: Behold they were manifest unto the prophet by the voice of the Spirit; for by the Spirit are all things made known unto the prophets, which shall come upon the children of men according to the flesh.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	I	I	PRON	_	_	6	nsubj	_	_
@@ -28911,7 +28908,7 @@
 48	flesh	flesh	NOUN	_	_	39	obl	_	_
 49	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 663
+# sent_id = 662
 # text = Wherefore, the things of which I have read are things pertaining to things both temporal and spiritual; for it appears that the house of Israel, sooner or later, will be scattered upon all the face of the earth, and also among all nations.
 1	Wherefore	so	ADV	_	_	11	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -28963,7 +28960,7 @@
 48	nations	nation	NOUN	_	_	39	conj	_	_
 49	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 664
+# sent_id = 663
 # text = And behold, there are many who are already lost from the knowledge of those who are at Jerusalem.
 1	And	and	CCONJ	_	_	5	cc	_	_
 2	behold	behold	INTJ	_	_	5	discourse	_	_
@@ -28986,7 +28983,7 @@
 19	Jerusalem	Jerusalem	PROPN	_	_	15	acl:relcl	_	_
 20	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 665
+# sent_id = 664
 # text = Yea, the more part of all the tribes have been led away; and they are scattered to and fro upon the isles of the sea; and whither they are none of us knoweth, save that we know that they have been led away.
 1	Yea	yes	INTJ	_	_	12	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -29037,7 +29034,7 @@
 47	away	away	ADV	_	_	46	advmod	_	_
 48	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 666
+# sent_id = 665
 # text = And since they have been led away, these things have been prophesied concerning them, and also concerning all those who shall hereafter be scattered and be confounded, because of the Holy One of Israel; for against him will they harden their hearts; wherefore, they shall be scattered among all nations and shall be hated of all men.
 1	And	and	CCONJ	_	_	13	cc	_	_
 2	since	since	SCONJ	_	_	6	mark	_	_
@@ -29104,7 +29101,7 @@
 63	men	man	NOUN	_	_	60	obl	_	_
 64	.	.	PUNCT	_	_	13	punct	_	_
 
-# sent_id = 667
+# sent_id = 666
 # text = Nevertheless, after they shall be nursed by the Gentiles, and the Lord has lifted up his hand upon the Gentiles and set them up for a standard, and their children have been carried in their arms, and their daughters have been carried upon their shoulders, behold these things of which are spoken are temporal; for thus are the covenants of the Lord with our fathers; and it meaneth us in the days to come, and also all our brethren who are of the house of Israel.
 1	Nevertheless	nevertheless	ADV	_	_	16	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -29202,7 +29199,7 @@
 94	Israel	Israel	PROPN	_	_	92	nmod	_	_
 95	.	.	PUNCT	_	_	16	punct	_	_
 
-# sent_id = 668
+# sent_id = 667
 # text = And it meaneth that the time cometh that after all the house of Israel have been scattered and confounded, that the Lord God will raise up a mighty nation among the Gentiles, yea, even upon the face of this land; and by them shall our seed be scattered.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	nsubj	_	_
@@ -29258,7 +29255,7 @@
 52	scattered	scatter	VERB	_	_	26	conj	_	_
 53	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 669
+# sent_id = 668
 # text = And after our seed is scattered the Lord God will proceed to do a marvelous work among the Gentiles, which shall be of great worth unto our seed; wherefore, it is likened unto their being nourished by the Gentiles and being carried in their arms and upon their shoulders.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	after	after	SCONJ	_	_	6	mark	_	_
@@ -29314,7 +29311,7 @@
 52	shoulders	shoulder	NOUN	_	_	48	conj	_	_
 53	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 670
+# sent_id = 669
 # text = And it shall also be of worth unto the Gentiles; and not only unto the Gentiles but unto all the house of Israel, unto the making known of the covenants of the Father of heaven unto Abraham, saying:
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	it	it	PRON	_	_	7	nsubj	_	_
@@ -29359,7 +29356,7 @@
 41	saying	say	VERB	_	_	28	acl	_	_
 42	:	:	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 671
+# sent_id = 670
 # text = In thy seed shall all the kindreds of the earth be blessed.
 1	In	in	ADP	_	_	3	case	_	_
 2	thy	your	PRON	_	_	3	nmod:poss	_	_
@@ -29375,7 +29372,7 @@
 12	blessed	bless	VERB	_	_	0	root	_	_
 13	.	.	PUNCT	_	_	12	punct	_	_
 
-# sent_id = 672
+# sent_id = 671
 # text = And I would, my brethren, that ye should know that all the kindreds of the earth cannot be blessed unless he shall make bare his arm in the eyes of the nations.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -29414,7 +29411,7 @@
 35	nations	nation	NOUN	_	_	32	nmod	_	_
 36	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 673
+# sent_id = 672
 # text = Wherefore, the Lord God will proceed to make bare his arm in the eyes of all the nations, in bringing about his covenants and his gospel unto those who are of the house of Israel.
 1	Wherefore	so	ADV	_	_	7	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -29455,7 +29452,7 @@
 37	Israel	Israel	PROPN	_	_	35	nmod	_	_
 38	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 674
+# sent_id = 673
 # text = Wherefore, he will bring them again out of captivity, and they shall be gathered together to the lands of their inheritance; and they shall be brought out of obscurity and out of darkness; and they shall know that the Lord is their Savior and their Redeemer, the Mighty One of Israel.
 1	Wherefore	so	ADV	_	_	5	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -29515,7 +29512,7 @@
 56	Israel	Israel	PROPN	_	_	54	nmod	_	_
 57	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 675
+# sent_id = 674
 # text = And the blood of that great and abominable church, which is the whore of all the earth, shall turn upon their own heads; for they shall war among themselves, and the sword of their own hands shall fall upon their own heads, and they shall be drunken with their own blood.
 1	And	and	CCONJ	_	_	21	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -29575,7 +29572,7 @@
 56	blood	blood	NOUN	_	_	52	obl	_	_
 57	.	.	PUNCT	_	_	21	punct	_	_
 
-# sent_id = 676
+# sent_id = 675
 # text = And every nation which shall war against thee, O house of Israel, shall be turned one against another, and they shall fall into the pit which they digged to ensnare the people of the Lord. And all that fight against Zion shall be destroyed, and that great whore, who hath perverted the right ways of the Lord, yea, that great and abominable church, shall tumble to the dust and great shall be the fall of it.
 1	And	and	CCONJ	_	_	17	cc	_	_
 2	every	every	DET	_	_	3	det	_	_
@@ -29664,7 +29661,7 @@
 85	it	it	PRON	_	_	83	nmod	_	_
 86	.	.	PUNCT	_	_	48	punct	_	_
 
-# sent_id = 677
+# sent_id = 676
 # text = For behold, saith the prophet, the time cometh speedily that Satan shall have no more power over the hearts of the children of men; for the day soon cometh that all the proud and they who do wickedly shall be as stubble; and the day cometh that they must be burned.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	4	obl	_	_
@@ -29723,7 +29720,7 @@
 55	burned	burn	VERB	_	_	50	ccomp	_	_
 56	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 678
+# sent_id = 677
 # text = For the time soon cometh that the fulness of the wrath of God shall be poured out upon all the children of men; for he will not suffer that the wicked shall destroy the righteous.
 1	For	for	ADP	_	_	5	mark	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -29763,7 +29760,7 @@
 36	righteous	righteous	ADJ	_	_	34	obj	_	_
 37	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 679
+# sent_id = 678
 # text = Wherefore, he will preserve the righteous by his power, even if it so be that the fulness of his wrath must come, and the righteous be preserved, even unto the destruction of their enemies by fire.
 1	Wherefore	so	ADV	_	_	5	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -29807,7 +29804,7 @@
 40	fire	fire	NOUN	_	_	35	nmod	_	_
 41	.	.	PUNCT	_	_	5	punct	_	_
 
-# sent_id = 680
+# sent_id = 679
 # text = Wherefore, the righteous need not fear; for thus saith the prophet, they shall be saved, even if it so be as by fire.
 1	Wherefore	so	ADV	_	_	7	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -29838,7 +29835,7 @@
 27	fire	fire	NOUN	_	_	18	advcl	_	_
 28	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 681
+# sent_id = 680
 # text = Behold, my brethren, I say unto you, that these things must shortly come; yea, even blood, and fire, and vapor of smoke must come; and it must needs be upon the face of this earth; and it cometh unto men according to the flesh if it so be that they will harden their hearts against the Holy One of Israel.
 1	Behold	behold	INTJ	_	_	7	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -29911,7 +29908,7 @@
 69	Israel	Israel	PROPN	_	_	67	nmod	_	_
 70	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 682
+# sent_id = 681
 # text = For behold, the righteous shall not perish; for the time surely must come that all they who fight against Zion shall be cut off.
 1	For	for	ADP	_	_	2	case	_	_
 2	behold	behold	NOUN	_	_	8	obl	_	_
@@ -29941,7 +29938,7 @@
 26	off	off	ADP	_	_	25	compound:prt	_	_
 27	.	.	PUNCT	_	_	8	punct	_	_
 
-# sent_id = 683
+# sent_id = 682
 # text = And the Lord will surely prepare a way for his people, unto the fulfilling of the words of Moses, which he spake, saying: A prophet shall the Lord your God raise up unto you, like unto me; him shall ye hear in all things whatsoever he shall say unto you. And it shall come to pass that all those who will not hear that prophet shall be cut off from among the people.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -30025,7 +30022,7 @@
 80	people	person	NOUN	_	_	75	obl	_	_
 81	.	.	PUNCT	_	_	61	punct	_	_
 
-# sent_id = 684
+# sent_id = 683
 # text = And now I, Nephi, declare unto you, that this prophet of whom Moses spake was the Holy One of Israel; wherefore, he shall execute judgment in righteousness.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -30061,7 +30058,7 @@
 32	righteousness	righteousness	NOUN	_	_	29	obl	_	_
 33	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 685
+# sent_id = 684
 # text = And the righteous need not fear, for they are those who shall not be confounded. But it is the kingdom of the devil, which shall be built up among the children of men, which kingdom is established among them which are in the flesh--
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	the	the	DET	_	_	4	det	_	_
@@ -30113,7 +30110,7 @@
 48	flesh	flesh	NOUN	_	_	43	acl:relcl	_	_
 49	--	--	PUNCT	_	_	22	punct	_	_
 
-# sent_id = 686
+# sent_id = 685
 # text = For the time speedily shall come that all churches which are built up to get gain, and all those who are built up to get power over the flesh, and those who are built up to become popular in the eyes of the world, and those who seek the lusts of the flesh and the things of the world, and to do all manner of iniquity; yea, in fine, all those who belong to the kingdom of the devil are they who need fear, and tremble, and quake; they are those who must be brought low in the dust; they are those who must be consumed as stubble; and this is according to the words of the prophet.
 1	For	for	ADP	_	_	3	case	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -30247,7 +30244,7 @@
 130	prophet	prophet	NOUN	_	_	127	nmod	_	_
 131	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 687
+# sent_id = 686
 # text = And the time cometh speedily that the righteous must be led up as calves of the stall, and the Holy One of Israel must reign in dominion, and might, and power, and great glory.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -30289,7 +30286,7 @@
 38	glory	glory	NOUN	_	_	28	conj	_	_
 39	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 688
+# sent_id = 687
 # text = And he gathereth his children from the four quarters of the earth; and he numbereth his sheep, and they know him; and there shall be one fold and one shepherd; and he shall feed his sheep, and in him they shall find pasture.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	he	he	PRON	_	_	3	nsubj	_	_
@@ -30341,7 +30338,7 @@
 48	pasture	pasture	NOUN	_	_	47	obj	_	_
 49	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 689
+# sent_id = 688
 # text = And because of the righteousness of his people, Satan has no power; wherefore, he cannot be loosed for the space of many years; for he hath no power over the hearts of the people, for they dwell in righteousness, and the Holy One of Israel reigneth.
 1	And	and	CCONJ	_	_	11	cc	_	_
 2	because	because	ADP	_	_	5	case	_	_
@@ -30398,7 +30395,7 @@
 53	reigneth	reign	VERB	_	_	43	conj	_	_
 54	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 690
+# sent_id = 689
 # text = And now behold, I, Nephi, say unto you that all these things must come according to the flesh.
 1	And	and	CCONJ	_	_	9	cc	_	_
 2	now	now	ADV	_	_	9	advmod	_	_
@@ -30423,7 +30420,7 @@
 21	flesh	flesh	NOUN	_	_	17	obl	_	_
 22	.	.	PUNCT	_	_	9	punct	_	_
 
-# sent_id = 691
+# sent_id = 690
 # text = But, behold, all nations, kindreds, tongues, and people shall dwell safely in the Holy One of Israel if it so be that they will repent.
 1	But	but	CCONJ	_	_	15	cc	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -30457,7 +30454,7 @@
 30	repent	repent	VERB	_	_	15	advcl	_	_
 31	.	.	PUNCT	_	_	15	punct	_	_
 
-# sent_id = 692
+# sent_id = 691
 # text = And now I, Nephi, make an end; for I durst not speak further as yet concerning these things.
 1	And	and	CCONJ	_	_	7	cc	_	_
 2	now	now	ADV	_	_	7	advmod	_	_
@@ -30482,7 +30479,7 @@
 21	things	thing	NOUN	_	_	19	obj	_	_
 22	.	.	PUNCT	_	_	7	punct	_	_
 
-# sent_id = 693
+# sent_id = 692
 # text = Wherefore, my brethren, I would that ye should consider that the things which have been written upon the plates of brass are true; and they testify that a man must be obedient to the commandments of God.
 1	Wherefore	so	ADV	_	_	11	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -30526,7 +30523,7 @@
 40	God	God	PROPN	_	_	38	nmod	_	_
 41	.	.	PUNCT	_	_	11	punct	_	_
 
-# sent_id = 694
+# sent_id = 693
 # text = Wherefore, ye need not suppose that I and my father are the only ones that have testified, and also taught them. Wherefore, if ye shall be obedient to the commandments, and endure to the end, ye shall be saved at the last day. And thus it is. Amen.
 1	Wherefore	so	ADV	_	_	6	advmod	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_

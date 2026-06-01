@@ -629,7 +629,7 @@
 101	--	--	PUNCT	_	_	8	punct	_	_
 
 # sent_id = 14
-# text = For at the present our strugglings were vain in restoring them to the true faith.
+# text = For at the present our strugglings were vain in restoring them to the true faith. And they swore in their wrath that, if it were possible, they would destroy our records and us, and also all the traditions of our fathers.
 1	For	for	SCONJ	_	_	8	mark	_	_
 2	at	at	ADP	_	_	4	case	_	_
 3	the	the	DET	_	_	4	det	_	_
@@ -646,41 +646,38 @@
 14	true	true	ADJ	_	_	15	amod	_	_
 15	faith	faith	NOUN	_	_	10	obl	_	_
 16	.	.	PUNCT	_	_	8	punct	_	_
+17	And	and	CCONJ	_	_	19	cc	_	_
+18	they	they	PRON	_	_	19	nsubj	_	_
+19	swore	swore	VERB	_	_	8	conj	_	_
+20	in	in	ADP	_	_	22	case	_	_
+21	their	their	PRON	_	_	22	nmod:poss	_	_
+22	wrath	wrath	NOUN	_	_	19	obl	_	_
+23	that	that	SCONJ	_	_	32	mark	_	_
+24	,	,	PUNCT	_	_	23	punct	_	_
+25	if	if	SCONJ	_	_	28	mark	_	_
+26	it	it	PRON	_	_	28	nsubj	_	_
+27	were	be	AUX	_	_	28	cop	_	_
+28	possible	possible	ADJ	_	_	32	advcl	_	_
+29	,	,	PUNCT	_	_	28	punct	_	_
+30	they	they	PRON	_	_	32	nsubj	_	_
+31	would	would	AUX	_	_	32	aux	_	_
+32	destroy	destroy	VERB	_	_	19	ccomp	_	_
+33	our	our	PRON	_	_	34	nmod:poss	_	_
+34	records	record	NOUN	_	_	32	obj	_	_
+35	and	and	CCONJ	_	_	36	cc	_	_
+36	us	we	PRON	_	_	34	conj	_	_
+37	,	,	PUNCT	_	_	42	punct	_	_
+38	and	and	CCONJ	_	_	42	cc	_	_
+39	also	also	ADV	_	_	42	advmod	_	_
+40	all	all	DET	_	_	42	det:predet	_	_
+41	the	the	DET	_	_	42	det	_	_
+42	traditions	tradition	NOUN	_	_	34	conj	_	_
+43	of	of	ADP	_	_	45	case	_	_
+44	our	our	PRON	_	_	45	nmod:poss	_	_
+45	fathers	father	NOUN	_	_	42	nmod	_	_
+46	.	.	PUNCT	_	_	19	punct	_	_
 
 # sent_id = 15
-# text = And they swore in their wrath that, if it were possible, they would destroy our records and us, and also all the traditions of our fathers.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	they	they	PRON	_	_	3	nsubj	_	_
-3	swore	swore	VERB	_	_	0	root	_	_
-4	in	in	ADP	_	_	6	case	_	_
-5	their	their	PRON	_	_	6	nmod:poss	_	_
-6	wrath	wrath	NOUN	_	_	3	obl	_	_
-7	that	that	SCONJ	_	_	16	mark	_	_
-8	,	,	PUNCT	_	_	7	punct	_	_
-9	if	if	SCONJ	_	_	12	mark	_	_
-10	it	it	PRON	_	_	12	nsubj	_	_
-11	were	be	AUX	_	_	12	cop	_	_
-12	possible	possible	ADJ	_	_	16	advcl	_	_
-13	,	,	PUNCT	_	_	12	punct	_	_
-14	they	they	PRON	_	_	16	nsubj	_	_
-15	would	would	AUX	_	_	16	aux	_	_
-16	destroy	destroy	VERB	_	_	3	ccomp	_	_
-17	our	our	PRON	_	_	18	nmod:poss	_	_
-18	records	record	NOUN	_	_	16	obj	_	_
-19	and	and	CCONJ	_	_	20	cc	_	_
-20	us	we	PRON	_	_	18	conj	_	_
-21	,	,	PUNCT	_	_	26	punct	_	_
-22	and	and	CCONJ	_	_	26	cc	_	_
-23	also	also	ADV	_	_	26	advmod	_	_
-24	all	all	DET	_	_	26	det:predet	_	_
-25	the	the	DET	_	_	26	det	_	_
-26	traditions	tradition	NOUN	_	_	18	conj	_	_
-27	of	of	ADP	_	_	29	case	_	_
-28	our	our	PRON	_	_	29	nmod:poss	_	_
-29	fathers	father	NOUN	_	_	26	nmod	_	_
-30	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 16
 # text = Wherefore, I knowing that the Lord God was able to preserve our records, I cried unto him continually, for he had said unto me:
 1	Wherefore	so	ADV	_	_	4	discourse	_	_
 2	,	,	PUNCT	_	_	1	punct	_	_
@@ -711,7 +708,7 @@
 27	me	I	PRON	_	_	25	obl	_	_
 28	:	:	PUNCT	_	_	17	punct	_	_
 
-# sent_id = 17
+# sent_id = 16
 # text = Whatsoever thing ye shall ask in faith, believing that ye shall receive in the name of Christ, ye shall receive it.
 1	Whatsoever	whatsoever	DET	_	_	2	det	_	_
 2	thing	thing	NOUN	_	_	22	nsubj:outer	_	_
@@ -738,7 +735,7 @@
 23	it	it	PRON	_	_	22	obj	_	_
 24	.	.	PUNCT	_	_	22	punct	_	_
 
-# sent_id = 18
+# sent_id = 17
 # text = And I had faith, and I did cry unto God that he would preserve the records; and he covenanted with me that he would bring them forth unto the Lamanites in his own due time.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -779,7 +776,7 @@
 37	time	time	NOUN	_	_	27	obl	_	_
 38	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 19
+# sent_id = 18
 # text = And I, Enos, knew it would be according to the covenant which he had made; wherefore my soul did rest.
 1	And	and	CCONJ	_	_	6	cc	_	_
 2	I	I	PRON	_	_	6	nsubj	_	_
@@ -806,7 +803,7 @@
 23	rest	rest	NOUN	_	_	22	obj	_	_
 24	.	.	PUNCT	_	_	6	punct	_	_
 
-# sent_id = 20
+# sent_id = 19
 # text = And the Lord said unto me: Thy fathers have also required of me this thing; and it shall be done unto them according to their faith; for their faith was like unto thine.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	the	the	DET	_	_	3	det	_	_
@@ -846,7 +843,7 @@
 36	thine	your	PRON	_	_	34	obl	_	_
 37	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 21
+# sent_id = 20
 # text = And now it came to pass that I, Enos, went about among the people of Nephi, prophesying of things to come, and testifying of the things which I had heard and seen.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	now	now	ADV	_	_	4	advmod	_	_
@@ -886,7 +883,7 @@
 36	seen	see	VERB	_	_	34	conj	_	_
 37	.	.	PUNCT	_	_	4	punct	_	_
 
-# sent_id = 22
+# sent_id = 21
 # text = And I bear record that the people of Nephi did seek diligently to restore the Lamanites unto the true faith in God. But our labors were vain; their hatred was fixed, and they were led by their evil nature that they became wild, and ferocious, and a blood-thirsty people, full of idolatry and filthiness; feeding upon beasts of prey; dwelling in tents, and wandering about in the wilderness with a short skin girdle about their loins and their heads shaven; and their skill was in the bow, and in the cimeter, and the ax. And many of them did eat nothing save it was raw meat; and they were continually seeking to destroy us.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -1020,7 +1017,7 @@
 130	us	we	PRON	_	_	129	obj	_	_
 131	.	.	PUNCT	_	_	115	punct	_	_
 
-# sent_id = 23
+# sent_id = 22
 # text = And it came to pass that the people of Nephi did till the land, and raise all manner of grain, and of fruit, and flocks of herds, and flocks of all manner of cattle of every kind, and goats, and wild goats, and also many horses.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1077,7 +1074,7 @@
 53	horses	horse	NOUN	_	_	38	conj	_	_
 54	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 24
+# sent_id = 23
 # text = And there were exceedingly many prophets among us. And the people were a stiffnecked people, hard to understand.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
@@ -1101,8 +1098,8 @@
 20	understand	understand	VERB	_	_	18	advcl	_	_
 21	.	.	PUNCT	_	_	16	punct	_	_
 
-# sent_id = 25
-# text = And there was nothing save it was exceeding harshness, preaching and prophesying of wars, and contentions, and destructions, and continually reminding them of death, and the duration of eternity, and the judgments and the power of God, and all these things--stirring them up continually to keep them in the fear of the Lord.
+# sent_id = 24
+# text = And there was nothing save it was exceeding harshness, preaching and prophesying of wars, and contentions, and destructions, and continually reminding them of death, and the duration of eternity, and the judgments and the power of God, and all these things--stirring them up continually to keep them in the fear of the Lord. I say there was nothing short of these things, and exceedingly great plainness of speech, would keep them from going down speedily to destruction. And after this manner do I write concerning them.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	there	there	PRON	_	_	3	expl	_	_
 3	was	be	VERB	_	_	0	root	_	_
@@ -1166,51 +1163,45 @@
 61	the	the	DET	_	_	62	det	_	_
 62	Lord	Lord	PROPN	_	_	59	nmod	_	_
 63	.	.	PUNCT	_	_	3	punct	_	_
+64	I	I	PRON	_	_	65	nsubj	_	_
+65	say	say	VERB	_	_	0	root	_	_
+66	there	there	PRON	_	_	67	expl	_	_
+67	was	be	VERB	_	_	65	ccomp	_	_
+68	nothing	nothing	PRON	_	_	67	nsubj	_	_
+69	short	short	ADJ	_	_	68	amod	_	_
+70	of	of	ADP	_	_	72	case	_	_
+71	these	this	DET	_	_	72	det	_	_
+72	things	thing	NOUN	_	_	68	nmod	_	_
+73	,	,	PUNCT	_	_	74	punct	_	_
+74	and	and	CCONJ	_	_	82	cc	_	_
+75	exceedingly	exceedingly	ADV	_	_	76	advmod	_	_
+76	great	great	ADJ	_	_	77	amod	_	_
+77	plainness	plainness	NOUN	_	_	82	nsubj	_	_
+78	of	of	ADP	_	_	79	case	_	_
+79	speech	speech	NOUN	_	_	77	nmod	_	_
+80	,	,	PUNCT	_	_	77	punct	_	_
+81	would	would	AUX	_	_	82	aux	_	_
+82	keep	keep	VERB	_	_	65	conj	_	_
+83	them	they	PRON	_	_	82	obj	_	_
+84	from	from	SCONJ	_	_	85	mark	_	_
+85	going	go	VERB	_	_	82	advcl	_	_
+86	down	down	ADP	_	_	85	compound:prt	_	_
+87	speedily	speedily	ADV	_	_	85	advmod	_	_
+88	to	to	ADP	_	_	89	case	_	_
+89	destruction	destruction	NOUN	_	_	85	obl	_	_
+90	.	.	PUNCT	_	_	65	punct	_	_
+91	And	and	CCONJ	_	_	97	cc	_	_
+92	after	after	ADP	_	_	94	case	_	_
+93	this	this	DET	_	_	94	det	_	_
+94	manner	manner	NOUN	_	_	97	obl	_	_
+95	do	do	AUX	_	_	97	aux	_	_
+96	I	I	PRON	_	_	97	nsubj	_	_
+97	write	write	VERB	_	_	65	conj	_	_
+98	concerning	concern	VERB	_	_	99	case	_	_
+99	them	they	PRON	_	_	97	obl	_	_
+100	.	.	PUNCT	_	_	97	punct	_	_
 
-# sent_id = 26
-# text = I say there was nothing short of these things, and exceedingly great plainness of speech, would keep them from going down speedily to destruction.
-1	I	I	PRON	_	_	2	nsubj	_	_
-2	say	say	VERB	_	_	0	root	_	_
-3	there	there	PRON	_	_	4	expl	_	_
-4	was	be	VERB	_	_	2	ccomp	_	_
-5	nothing	nothing	PRON	_	_	4	nsubj	_	_
-6	short	short	ADJ	_	_	5	amod	_	_
-7	of	of	ADP	_	_	9	case	_	_
-8	these	this	DET	_	_	9	det	_	_
-9	things	thing	NOUN	_	_	5	nmod	_	_
-10	,	,	PUNCT	_	_	11	punct	_	_
-11	and	and	CCONJ	_	_	19	cc	_	_
-12	exceedingly	exceedingly	ADV	_	_	13	advmod	_	_
-13	great	great	ADJ	_	_	14	amod	_	_
-14	plainness	plainness	NOUN	_	_	19	nsubj	_	_
-15	of	of	ADP	_	_	16	case	_	_
-16	speech	speech	NOUN	_	_	14	nmod	_	_
-17	,	,	PUNCT	_	_	14	punct	_	_
-18	would	would	AUX	_	_	19	aux	_	_
-19	keep	keep	VERB	_	_	2	conj	_	_
-20	them	they	PRON	_	_	19	obj	_	_
-21	from	from	SCONJ	_	_	22	mark	_	_
-22	going	go	VERB	_	_	19	advcl	_	_
-23	down	down	ADP	_	_	22	compound:prt	_	_
-24	speedily	speedily	ADV	_	_	22	advmod	_	_
-25	to	to	ADP	_	_	26	case	_	_
-26	destruction	destruction	NOUN	_	_	22	obl	_	_
-27	.	.	PUNCT	_	_	2	punct	_	_
-
-# sent_id = 27
-# text = And after this manner do I write concerning them.
-1	And	and	CCONJ	_	_	7	cc	_	_
-2	after	after	ADP	_	_	4	case	_	_
-3	this	this	DET	_	_	4	det	_	_
-4	manner	manner	NOUN	_	_	7	obl	_	_
-5	do	do	AUX	_	_	7	aux	_	_
-6	I	I	PRON	_	_	7	nsubj	_	_
-7	write	write	VERB	_	_	0	root	_	_
-8	concerning	concern	VERB	_	_	9	case	_	_
-9	them	they	PRON	_	_	7	obl	_	_
-10	.	.	PUNCT	_	_	7	punct	_	_
-
-# sent_id = 28
+# sent_id = 25
 # text = And I saw wars between the Nephites and Lamanites in the course of my days.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
@@ -1229,7 +1220,7 @@
 15	days	day	NOUN	_	_	12	nmod	_	_
 16	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 29
+# sent_id = 26
 # text = And it came to pass that I began to be old, and an hundred and seventy and nine years had passed away from the time that our father Lehi left Jerusalem.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	it	it	PRON	_	_	3	expl	_	_
@@ -1265,8 +1256,8 @@
 32	Jerusalem	Jerusalem	PROPN	_	_	31	obj	_	_
 33	.	.	PUNCT	_	_	3	punct	_	_
 
-# sent_id = 30
-# text = And I saw that I must soon go down to my grave, having been wrought upon by the power of God that I must preach and prophesy unto this people, and declare the word according to the truth which is in Christ.
+# sent_id = 27
+# text = And I saw that I must soon go down to my grave, having been wrought upon by the power of God that I must preach and prophesy unto this people, and declare the word according to the truth which is in Christ. And I have declared it in all my days, and have rejoiced in it above that of the world.
 1	And	and	CCONJ	_	_	3	cc	_	_
 2	I	I	PRON	_	_	3	nsubj	_	_
 3	saw	see	VERB	_	_	0	root	_	_
@@ -1312,33 +1303,30 @@
 43	in	in	ADP	_	_	44	case	_	_
 44	Christ	Christ	PROPN	_	_	40	acl:relcl	_	_
 45	.	.	PUNCT	_	_	3	punct	_	_
+46	And	and	CCONJ	_	_	49	cc	_	_
+47	I	I	PRON	_	_	49	nsubj	_	_
+48	have	have	AUX	_	_	49	aux	_	_
+49	declared	declare	VERB	_	_	3	conj	_	_
+50	it	it	PRON	_	_	49	obj	_	_
+51	in	in	ADP	_	_	54	case	_	_
+52	all	all	DET	_	_	54	det:predet	_	_
+53	my	my	PRON	_	_	54	nmod:poss	_	_
+54	days	day	NOUN	_	_	49	obl	_	_
+55	,	,	PUNCT	_	_	58	punct	_	_
+56	and	and	CCONJ	_	_	58	cc	_	_
+57	have	have	AUX	_	_	58	aux	_	_
+58	rejoiced	rejoice	VERB	_	_	49	conj	_	_
+59	in	in	ADP	_	_	60	case	_	_
+60	it	it	PRON	_	_	58	obl	_	_
+61	above	above	ADP	_	_	62	case	_	_
+62	that	that	PRON	_	_	58	obl	_	_
+63	of	of	ADP	_	_	65	case	_	_
+64	the	the	DET	_	_	65	det	_	_
+65	world	world	NOUN	_	_	62	nmod	_	_
+66	.	.	PUNCT	_	_	49	punct	_	_
 
-# sent_id = 31
-# text = And I have declared it in all my days, and have rejoiced in it above that of the world.
-1	And	and	CCONJ	_	_	4	cc	_	_
-2	I	I	PRON	_	_	4	nsubj	_	_
-3	have	have	AUX	_	_	4	aux	_	_
-4	declared	declare	VERB	_	_	0	root	_	_
-5	it	it	PRON	_	_	4	obj	_	_
-6	in	in	ADP	_	_	9	case	_	_
-7	all	all	DET	_	_	9	det:predet	_	_
-8	my	my	PRON	_	_	9	nmod:poss	_	_
-9	days	day	NOUN	_	_	4	obl	_	_
-10	,	,	PUNCT	_	_	13	punct	_	_
-11	and	and	CCONJ	_	_	13	cc	_	_
-12	have	have	AUX	_	_	13	aux	_	_
-13	rejoiced	rejoice	VERB	_	_	4	conj	_	_
-14	in	in	ADP	_	_	15	case	_	_
-15	it	it	PRON	_	_	13	obl	_	_
-16	above	above	ADP	_	_	17	case	_	_
-17	that	that	PRON	_	_	13	obl	_	_
-18	of	of	ADP	_	_	20	case	_	_
-19	the	the	DET	_	_	20	det	_	_
-20	world	world	NOUN	_	_	17	nmod	_	_
-21	.	.	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 32
-# text = And I soon go to the place of my rest, which is with my Redeemer; for I know that in him I shall rest.
+# sent_id = 28
+# text = And I soon go to the place of my rest, which is with my Redeemer; for I know that in him I shall rest. And I rejoice in the day when my mortal shall put on immortality, and shall stand before him; then shall I see his face with pleasure, and he will say unto me: Come unto me, ye blessed, there is a place prepared for you in the mansions of my Father. Amen.
 1	And	and	CCONJ	_	_	4	cc	_	_
 2	I	I	PRON	_	_	4	nsubj	_	_
 3	soon	soon	ADV	_	_	4	advmod	_	_
@@ -1366,69 +1354,63 @@
 25	shall	shall	AUX	_	_	26	aux	_	_
 26	rest	rest	VERB	_	_	20	ccomp	_	_
 27	.	.	PUNCT	_	_	4	punct	_	_
-
-# sent_id = 33
-# text = And I rejoice in the day when my mortal shall put on immortality, and shall stand before him; then shall I see his face with pleasure, and he will say unto me: Come unto me, ye blessed, there is a place prepared for you in the mansions of my Father.
-1	And	and	CCONJ	_	_	3	cc	_	_
-2	I	I	PRON	_	_	3	nsubj	_	_
-3	rejoice	rejoice	VERB	_	_	0	root	_	_
-4	in	in	ADP	_	_	6	case	_	_
-5	the	the	DET	_	_	6	det	_	_
-6	day	day	NOUN	_	_	3	obl	_	_
-7	when	when	ADV	_	_	11	advmod	_	_
-8	my	my	PRON	_	_	9	nmod:poss	_	_
-9	mortal	mortal	NOUN	_	_	11	nsubj	_	_
-10	shall	shall	AUX	_	_	11	aux	_	_
-11	put	put	VERB	_	_	3	advcl	_	_
-12	on	on	ADP	_	_	13	case	_	_
-13	immortality	immortality	NOUN	_	_	11	obl	_	_
-14	,	,	PUNCT	_	_	17	punct	_	_
-15	and	and	CCONJ	_	_	17	cc	_	_
-16	shall	shall	AUX	_	_	17	aux	_	_
-17	stand	stand	VERB	_	_	3	conj	_	_
-18	before	before	ADP	_	_	19	case	_	_
-19	him	he	PRON	_	_	17	obl	_	_
-20	;	;	PUNCT	_	_	24	punct	_	_
-21	then	then	ADV	_	_	24	advmod	_	_
-22	shall	shall	AUX	_	_	24	aux	_	_
-23	I	I	PRON	_	_	24	nsubj	_	_
-24	see	see	VERB	_	_	3	parataxis	_	_
-25	his	his	PRON	_	_	26	nmod:poss	_	_
-26	face	face	NOUN	_	_	24	obj	_	_
-27	with	with	ADP	_	_	28	case	_	_
-28	pleasure	pleasure	NOUN	_	_	24	obl	_	_
-29	,	,	PUNCT	_	_	33	punct	_	_
-30	and	and	CCONJ	_	_	33	cc	_	_
-31	he	he	PRON	_	_	33	nsubj	_	_
-32	will	will	AUX	_	_	33	aux	_	_
-33	say	say	VERB	_	_	3	conj	_	_
-34	unto	to	ADP	_	_	35	case	_	_
-35	me	I	PRON	_	_	33	obl	_	_
-36	:	:	PUNCT	_	_	37	punct	_	_
-37	Come	come	VERB	_	_	33	parataxis	_	_
-38	unto	to	ADP	_	_	39	case	_	_
-39	me	I	PRON	_	_	37	obl	_	_
-40	,	,	PUNCT	_	_	42	punct	_	_
-41	ye	you	PRON	_	_	42	nsubj	_	_
-42	blessed	bless	VERB	_	_	37	parataxis	_	_
-43	,	,	PUNCT	_	_	45	punct	_	_
-44	there	there	PRON	_	_	45	expl	_	_
-45	is	be	VERB	_	_	33	parataxis	_	_
-46	a	a	DET	_	_	47	det	_	_
-47	place	place	NOUN	_	_	45	nsubj	_	_
-48	prepared	prepare	VERB	_	_	47	acl	_	_
-49	for	for	ADP	_	_	50	case	_	_
-50	you	you	PRON	_	_	48	obl	_	_
-51	in	in	ADP	_	_	53	case	_	_
-52	the	the	DET	_	_	53	det	_	_
-53	mansions	mansion	NOUN	_	_	48	obl	_	_
-54	of	of	ADP	_	_	56	case	_	_
-55	my	my	PRON	_	_	56	nmod:poss	_	_
-56	Father	father	NOUN	_	_	53	nmod	_	_
-57	.	.	PUNCT	_	_	3	punct	_	_
-
-# sent_id = 34
-# text = Amen.
-1	Amen	amen	INTJ	_	_	0	root	_	_
-2	.	.	PUNCT	_	_	1	punct	_	_
+28	And	and	CCONJ	_	_	30	cc	_	_
+29	I	I	PRON	_	_	30	nsubj	_	_
+30	rejoice	rejoice	VERB	_	_	4	conj	_	_
+31	in	in	ADP	_	_	33	case	_	_
+32	the	the	DET	_	_	33	det	_	_
+33	day	day	NOUN	_	_	30	obl	_	_
+34	when	when	ADV	_	_	38	advmod	_	_
+35	my	my	PRON	_	_	36	nmod:poss	_	_
+36	mortal	mortal	NOUN	_	_	38	nsubj	_	_
+37	shall	shall	AUX	_	_	38	aux	_	_
+38	put	put	VERB	_	_	30	advcl	_	_
+39	on	on	ADP	_	_	40	case	_	_
+40	immortality	immortality	NOUN	_	_	38	obl	_	_
+41	,	,	PUNCT	_	_	44	punct	_	_
+42	and	and	CCONJ	_	_	44	cc	_	_
+43	shall	shall	AUX	_	_	44	aux	_	_
+44	stand	stand	VERB	_	_	30	conj	_	_
+45	before	before	ADP	_	_	46	case	_	_
+46	him	he	PRON	_	_	44	obl	_	_
+47	;	;	PUNCT	_	_	51	punct	_	_
+48	then	then	ADV	_	_	51	advmod	_	_
+49	shall	shall	AUX	_	_	51	aux	_	_
+50	I	I	PRON	_	_	51	nsubj	_	_
+51	see	see	VERB	_	_	30	parataxis	_	_
+52	his	his	PRON	_	_	53	nmod:poss	_	_
+53	face	face	NOUN	_	_	51	obj	_	_
+54	with	with	ADP	_	_	55	case	_	_
+55	pleasure	pleasure	NOUN	_	_	51	obl	_	_
+56	,	,	PUNCT	_	_	60	punct	_	_
+57	and	and	CCONJ	_	_	60	cc	_	_
+58	he	he	PRON	_	_	60	nsubj	_	_
+59	will	will	AUX	_	_	60	aux	_	_
+60	say	say	VERB	_	_	30	conj	_	_
+61	unto	to	ADP	_	_	62	case	_	_
+62	me	I	PRON	_	_	60	obl	_	_
+63	:	:	PUNCT	_	_	64	punct	_	_
+64	Come	come	VERB	_	_	60	parataxis	_	_
+65	unto	to	ADP	_	_	66	case	_	_
+66	me	I	PRON	_	_	64	obl	_	_
+67	,	,	PUNCT	_	_	69	punct	_	_
+68	ye	you	PRON	_	_	69	nsubj	_	_
+69	blessed	bless	VERB	_	_	64	parataxis	_	_
+70	,	,	PUNCT	_	_	72	punct	_	_
+71	there	there	PRON	_	_	72	expl	_	_
+72	is	be	VERB	_	_	60	parataxis	_	_
+73	a	a	DET	_	_	74	det	_	_
+74	place	place	NOUN	_	_	72	nsubj	_	_
+75	prepared	prepare	VERB	_	_	74	acl	_	_
+76	for	for	ADP	_	_	77	case	_	_
+77	you	you	PRON	_	_	75	obl	_	_
+78	in	in	ADP	_	_	80	case	_	_
+79	the	the	DET	_	_	80	det	_	_
+80	mansions	mansion	NOUN	_	_	75	obl	_	_
+81	of	of	ADP	_	_	83	case	_	_
+82	my	my	PRON	_	_	83	nmod:poss	_	_
+83	Father	father	NOUN	_	_	80	nmod	_	_
+84	.	.	PUNCT	_	_	30	punct	_	_
+85	Amen	amen	INTJ	_	_	0	root	_	_
+86	.	.	PUNCT	_	_	85	punct	_	_
 
