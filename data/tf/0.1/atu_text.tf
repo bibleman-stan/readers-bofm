@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T18:37:36+00:00Z
+@dateWritten=2026-06-02T18:57:58+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -210,9 +210,7 @@ and he also had taken away our property.
 And it came to pass that the Spirit said unto me again: Slay him,
 for the Lord hath delivered him into thy hands;
 Behold the Lord slayeth the wicked to bring forth his righteous purposes.
-It is better
-that one man should perish than
-that a nation should dwindle and perish in unbelief.
+It is better that one man should perish than that a nation should dwindle and perish in unbelief.
 And now, when I, Nephi, had heard these words, I remembered the words of the Lord which he spake unto me in the wilderness, saying that: Inasmuch as thy seed shall keep my commandments, they shall prosper in the land of promise.
 Yea, and I also thought that they could not keep the commandments of the Lord according to the law of Moses, save they should have the law.
 And I also knew that the law was engraven upon the plates of brass.
@@ -233,14 +231,12 @@ And I spake unto him as if it had been Laban.
 And I also spake unto him that I should carry the engravings, which were upon the plates of brass, to my elder brethren, who were without the walls.
 And I also bade him that he should follow me.
 And he, supposing that I spake of the brethren of the church,
-and that I was truly
-that Laban whom I had slain,
+and that I was truly that Laban whom I had slain,
 wherefore he did follow me.
 And he spake unto me many times concerning the elders of the Jews, as I went forth unto my brethren, who were without the walls.
 And it came to pass that when Laman saw me he was exceedingly frightened, and also Lemuel and Sam.
 And they fled from before my presence;
-for they supposed it was Laban,
-and that he had slain me and had sought to take away their lives also.
+for they supposed it was Laban, and that he had slain me and had sought to take away their lives also.
 And it came to pass that I called after them, and they did hear me; wherefore they did cease to flee from my presence.
 And it came to pass that when the servant of Laban beheld my brethren he began to tremble, and was about to flee from before me and return to the city of Jerusalem.
 And now I, Nephi, being a man large in stature, and also having received much strength of the Lord,
@@ -313,8 +309,7 @@ for I desire the room that I may write of the things of God.
 For the fulness of mine intent is that I may persuade men to come unto the God of Abraham, and the God of Isaac, and the God of Jacob, and be saved.
 Wherefore, the things which are pleasing unto the world I do not write, but the things which are pleasing unto God and unto those who are not of the world.
 Wherefore, I shall give commandment unto my seed, that they shall not occupy these plates with things which are not of worth unto the children of men.
-And now I would that ye might know, that after my father, Lehi, had made an end of prophesying concerning his seed, it came to pass that the Lord spake unto him again, saying that it was not meet for him, Lehi,
-that he should take his family into the wilderness alone;
+And now I would that ye might know, that after my father, Lehi, had made an end of prophesying concerning his seed, it came to pass that the Lord spake unto him again, saying that it was not meet for him, Lehi, that he should take his family into the wilderness alone;
 but that his sons should take daughters to wife,
 that they might raise up seed unto the Lord in the land of promise.
 And it came to pass that the Lord commanded him that I, Nephi, and my brethren, should again return unto the land of Jerusalem, and bring down Ishmael and his family into the wilderness.
@@ -335,9 +330,7 @@ How is it that ye have forgotten that ye have seen an angel of the Lord?
 Yea, and how is it
 that ye have forgotten what great things the Lord hath done for us, in delivering us out of the hands of Laban, and also
 that we should obtain the record?
-Yea, and how is it
-that ye have forgotten that the Lord is able to do all things according to his will, for the children of men, if it so be
-that they exercise faith in him?
+Yea, and how is it that ye have forgotten that the Lord is able to do all things according to his will, for the children of men, if it so be that they exercise faith in him?
 Wherefore, let us be faithful to him.
 And if it so be
 that we are faithful to him, we shall obtain the land of promise;
@@ -396,9 +389,8 @@ and they stood as if they knew not whither
 they should go.
 And it came to pass that I beckoned unto them; and I also did say unto them with a loud voice that they should come unto me, and partake of the fruit, which was desirable above all other fruit.
 And it came to pass that they did come unto me and partake of the fruit also.
-And it came to pass that I was desirous
-that Laman and Lemuel should come and partake of the fruit also; wherefore, I cast mine eyes towards the head of the river,
-that perhaps I might see them.
+And it came to pass that I was desirous that Laman and Lemuel should come and partake of the fruit also;
+wherefore, I cast mine eyes towards the head of the river, that perhaps I might see them.
 And it came to pass that I saw them, but they would not come unto me and partake of the fruit.
 And I beheld a rod of iron,
 and it extended along the bank of the river,
@@ -428,8 +420,7 @@ And great was the multitude that did enter into that strange building.
 And after they did enter into that building they did point the finger of scorn at me and those that were partaking of the fruit also;
 but we heeded them not.
 These are the words of my father: For as many as heeded them, had fallen away.
-And Laman and Lemuel partook not of the fruit,
-said my father.
+And Laman and Lemuel partook not of the fruit, said my father.
 And it came to pass after my father had spoken all the words of his dream or vision, which were many, he said unto us,
 because of these things which he saw in a vision, he exceedingly feared for Laman and Lemuel;
 yea, he feared lest they should be cast off from the presence of the Lord.
@@ -444,9 +435,8 @@ And now, as I have spoken concerning these plates, behold they are not the plate
 for the plates upon which I make a full account of my people I have given the name of Nephi;
 wherefore, they are called the plates of Nephi, after mine own name;
 and these plates also are called the plates of Nephi.
-Nevertheless, I have received a commandment of the Lord
-that I should make these plates, for the special purpose
-that there should be an account engraven of the ministry of my people.
+Nevertheless, I have received a commandment of the Lord that I should make these plates,
+for the special purpose that there should be an account engraven of the ministry of my people.
 Upon the other plates should be engraven an account of the reign of the kings, and the wars and contentions of my people;
 wherefore these plates are for the more part of the ministry; and the other plates are for the more part of the reign of the kings and the wars and contentions of my people.
 Wherefore, the Lord hath commanded me to make these plates for a wise purpose in him, which purpose I know not.
@@ -466,8 +456,7 @@ and after they should be brought back out of captivity they should possess again
 Yea, even six hundred years from the time that my father left Jerusalem, a prophet would the Lord God raise up among the Jews--even a Messiah, or, in other words, a Savior of the world.
 And he also spake concerning the prophets, how great
 a number had testified of these things, concerning this Messiah, of whom he had spoken, or this Redeemer of the world.
-Wherefore, all mankind were in a lost and in a fallen state,
-and ever would be save they should rely on this Redeemer.
+Wherefore, all mankind were in a lost and in a fallen state, and ever would be save they should rely on this Redeemer.
 And he spake also concerning a prophet who should come before the Messiah, to prepare the way of the Lord--
 Yea, even he should go forth and cry in the wilderness:
 Prepare ye the way of the Lord, and make his paths straight;
@@ -509,7 +498,10 @@ Wherefore, if ye have sought to do wickedly in the days of your probation, then 
 and no unclean thing can dwell with God;
 wherefore, ye must be cast off forever.
 And the Holy Ghost giveth authority that I should speak these things, and deny them not.
-For it came to pass after I had desired to know the things that my father had seen, and believing that the Lord was able to make them known unto me, as I sat pondering in mine heart I was caught away in the Spirit of the Lord, yea, into an exceedingly high mountain, which I never had before seen, and upon which I never had before set my foot.
+For it came to pass after I had desired to know the things that my father had seen,
+and believing that the Lord was able to make them known unto me,
+as I sat pondering in mine heart I was caught away in the Spirit of the Lord,
+yea, into an exceedingly high mountain, which I never had before seen, and upon which I never had before set my foot.
 And the Spirit said unto me:
 Behold, what desirest thou?
 And I said:
@@ -599,15 +591,13 @@ And he spake unto me again, saying:
 Look!
 And I looked,
 and I beheld the Lamb of God going forth among the children of men.
-And I beheld multitudes of people who were sick,
-and who were afflicted with all manner of diseases, and with devils and unclean spirits;
+And I beheld multitudes of people who were sick, and who were afflicted with all manner of diseases, and with devils and unclean spirits;
 and the angel spake and showed all these things unto me.
 And they were healed by the power of the Lamb of God;
 and the devils and the unclean spirits were cast out.
 And it came to pass that the angel spake unto me again, saying:
 Look!
-And I looked and beheld the Lamb of God,
-that he was taken by the people;
+And I looked and beheld the Lamb of God, that he was taken by the people;
 yea, the Son of the everlasting God was judged of the world;
 and I saw and bear record.
 And I, Nephi, saw that he was lifted up upon the cross and slain for the sins of the world.
@@ -630,11 +620,9 @@ yea, even that I did not number them.
 And it came to pass that I saw a mist of darkness on the face of the land of promise;
 and I saw lightnings,
 and I heard thunderings, and earthquakes, and all manner of tumultuous noises;
-and I saw the earth and the rocks,
-that they rent;
+and I saw the earth and the rocks, that they rent;
 and I saw mountains tumbling into pieces;
-and I saw the plains of the earth,
-that they were broken up;
+and I saw the plains of the earth, that they were broken up;
 and I saw many cities that they were sunk;
 and I saw many that they were burned with fire;
 and I saw many that did tumble to the earth, because of the quaking thereof.
@@ -656,8 +644,7 @@ And these twelve ministers whom thou beholdest shall judge thy seed. And, behold
 for because of their faith in the Lamb of God their garments are made white in his blood.
 And the angel said unto me: Look!
 And I looked, and beheld three generations pass away in righteousness; and their garments were white even like unto the Lamb of God.
-And the angel said unto me:
-These are made white in the blood of the Lamb, because of their faith in him.
+And the angel said unto me: These are made white in the blood of the Lamb, because of their faith in him.
 And I, Nephi, also saw many of the fourth generation who passed away in righteousness.
 And it came to pass that I saw the multitudes of the earth gathered together.
 And the angel said unto me:
@@ -829,8 +816,8 @@ And he shall also write concerning the end of the world.
 Wherefore, the things which he shall write are just and true; and behold they are written in the book which thou beheld proceeding out of the mouth of the Jew;
 and at the time they proceeded out of the mouth of the Jew,
 or, at the time the book proceeded out of the mouth of the Jew, the things which were written were plain and pure, and most precious and easy to the understanding of all men.
-And behold, the things which this apostle of the Lamb shall write are many things which thou hast seen; and behold,
-the remainder shalt thou see.
+And behold, the things which this apostle of the Lamb shall write are many things which thou hast seen;
+and behold, the remainder shalt thou see.
 But the things which thou shalt see hereafter thou shalt not write;
 for the Lord God hath ordained the apostle of the Lamb of God that he should write them.
 And also others who have been, to them hath he shown all things,
@@ -843,8 +830,7 @@ and I have written but a small part of the things which I saw.
 And I bear record that I saw the things which my father saw,
 and the angel of the Lord did make them known unto me.
 And now I make an end of speaking concerning the things which I saw while I was carried away in the Spirit;
-and if all the things which I saw
-are not written,
+and if all the things which I saw are not written,
 the things which I have written are true.
 And thus it is.
 Amen.
@@ -963,8 +949,7 @@ And it came to pass that we did take our bows and our arrows, and go forth into 
 And we did go forth again in the wilderness, following the same direction, keeping in the most fertile parts of the wilderness, which were in the borders near the Red Sea.
 And it came to pass that we did travel for the space of many days, slaying food by the way, with our bows and our arrows and our stones and our slings.
 And we did follow the directions of the ball, which led us in the more fertile parts of the wilderness.
-And after we had traveled for the space of many days, we did pitch our tents for the space of a time,
-that we might again rest ourselves and obtain food for our families.
+And after we had traveled for the space of many days, we did pitch our tents for the space of a time, that we might again rest ourselves and obtain food for our families.
 And it came to pass that as I, Nephi, went forth to slay food, behold, I did break my bow, which was made of fine steel; and after I did break my bow, behold, my brethren were angry with me because of the loss of my bow,
 for we did obtain no food.
 And it came to pass that we did return without food to our families, and being much fatigued, because of their journeying, they did suffer much for the want of food.
@@ -993,8 +978,7 @@ And it came to pass that I did return to our tents, bearing the beasts which I h
 And it came to pass that we did again take our journey, traveling nearly the same course as in the beginning; and after we had traveled for the space of many days we did pitch our tents again, that we might tarry for the space of a time.
 And it came to pass that Ishmael died, and was buried in the place which was called Nahom.
 And it came to pass that the daughters of Ishmael did mourn exceedingly, because of the loss of their father, and because of their afflictions in the wilderness; and they did murmur against my father, because he had brought them out of the land of Jerusalem, saying:
-Our father is dead; yea,
-and we have wandered much in the wilderness,
+Our father is dead; yea, and we have wandered much in the wilderness,
 and we have suffered much affliction, hunger, thirst, and fatigue;
 and after all these sufferings we must perish in the wilderness with hunger.
 And thus they did murmur against my father, and also against me; and they were desirous to return again to Jerusalem.
@@ -1027,34 +1011,27 @@ And we did come to the land which we called Bountiful, because of its much fruit
 and all these things were prepared of the Lord that we might not perish.
 And we beheld the sea, which we called Irreantum, which, being interpreted, is many waters.
 And it came to pass that we did pitch our tents by the seashore;
-and notwithstanding we had suffered many afflictions and much difficulty,
-yea, even so much that we cannot write them all, we were exceedingly rejoiced when we came to the seashore;
+and notwithstanding we had suffered many afflictions and much difficulty, yea, even so much that we cannot write them all, we were exceedingly rejoiced when we came to the seashore;
 and we called the place Bountiful, because of its much fruit.
 And it came to pass that after I, Nephi, had been in the land of Bountiful for the space of many days, the voice of the Lord came unto me, saying:
 Arise,
 and get thee into the mountain. And it came to pass that I arose and went up into the mountain, and cried unto the Lord.
 And it came to pass that the Lord spake unto me, saying:
-Thou shalt construct a ship, after the manner which I shall show thee,
-that I may carry thy people across these waters.
+Thou shalt construct a ship, after the manner which I shall show thee, that I may carry thy people across these waters.
 And I said: Lord,
 whither shall I go
 that I may find ore to molten,
 that I may make tools to construct the ship after the manner which thou hast shown unto me?
-And it came to pass that the Lord told me
-whither I should go to find ore,
-that I might make tools.
-And it came to pass that I, Nephi, did make a bellows wherewith to blow the fire, of the skins of beasts; and after I had made a bellows,
-that I might have wherewith to blow the fire, I did smite two stones together
-that I might make fire.
+And it came to pass that the Lord told me whither I should go to find ore, that I might make tools.
+And it came to pass that I, Nephi, did make a bellows wherewith to blow the fire, of the skins of beasts;
+and after I had made a bellows, that I might have wherewith to blow the fire, I did smite two stones together that I might make fire.
 For the Lord had not hitherto suffered that we should make much fire, as we journeyed in the wilderness;
 for he said:
 I will make thy food become sweet, that ye cook it not;
 And I will also be your light in the wilderness;
-and I will prepare the way before you, if it so be
-that ye shall keep my commandments;
+and I will prepare the way before you, if it so be that ye shall keep my commandments;
 wherefore, inasmuch as ye shall keep my commandments ye shall be led towards the promised land;
-and ye shall know that it is by me
-that ye are led.
+and ye shall know that it is by me that ye are led.
 Yea, and the Lord said also that: After ye have arrived in the promised land, ye shall know
 that I, the Lord, am God;
 and that I, the Lord, did deliver you from destruction;
@@ -1102,7 +1079,8 @@ Yea, and ye also know that Moses, by his word according to the power of God whic
 and there came forth water, that the children of Israel might quench their thirst.
 And notwithstanding they being led, the Lord their God, their Redeemer, going before them, leading them by day and giving light unto them by night, and doing all things for them which were expedient for man to receive,
 they hardened their hearts and blinded their minds, and reviled against Moses and against the true and living God.
-And it came to pass that according to his word he did destroy them; and according to his word he did lead them;
+And it came to pass that according to his word he did destroy them;
+and according to his word he did lead them;
 and according to his word he did do all things for them;
 and there was not any thing done save it were by his word.
 And after they had crossed the river Jordan he did make them mighty unto the driving out of the children of the land,
@@ -1117,10 +1095,8 @@ But behold, this people had rejected every word of God, and they were ripe in in
 and the Lord did curse the land against them, and bless it unto our fathers;
 yea, he did curse it against them unto their destruction,
 and he did bless it unto our fathers unto their obtaining power over it.
-Behold, the Lord hath created the earth
-that it should be inhabited;
-and he hath created his children
-that they should possess it.
+Behold, the Lord hath created the earth that it should be inhabited;
+and he hath created his children that they should possess it.
 And he raiseth up a righteous nation, and destroyeth the nations of the wicked.
 And he leadeth away the righteous into precious lands,
 and the wicked he destroyeth, and curseth the land unto them for their sakes.
@@ -1142,11 +1118,9 @@ and because of the simpleness of the way, or the easiness of it, there were many
 And they did harden their hearts from time to time,
 and they did revile against Moses, and also against God;
 nevertheless, ye know that they were led forth by his matchless power into the land of promise.
-And now, after all these things, the time has come
-that they have become wicked, yea, nearly unto ripeness;
+And now, after all these things, the time has come that they have become wicked, yea, nearly unto ripeness;
 and I know not but they are at this day about to be destroyed;
-for I know that the day must surely come
-that they must be destroyed, save a few only, who shall be led away into captivity.
+for I know that the day must surely come that they must be destroyed, save a few only, who shall be led away into captivity.
 Wherefore, the Lord commanded my father that he should depart into the wilderness;
 and the Jews also sought to take away his life;
 yea, and ye also have sought to take away his life;
@@ -1177,9 +1151,8 @@ And I said unto them:
 If God had commanded me to do all things I could do them.
 If he should command me that I should say unto this water, be thou earth, it should be earth;
 and if I should say it, it would be done.
-And now, if the Lord has such great power, and has wrought so many miracles among the children of men, how is it
-that he cannot instruct me,
-that I should build a ship?
+And now, if the Lord has such great power, and has wrought so many miracles among the children of men,
+how is it that he cannot instruct me, that I should build a ship?
 And it came to pass that I, Nephi, said many things unto my brethren, insomuch that they were confounded and could not contend against me; neither durst they lay their hands upon me nor touch me with their fingers, even for the space of many days.
 Now they durst not do this lest they should wither before me,
 so powerful was the Spirit of God;
@@ -1192,13 +1165,11 @@ and this will I do, that they may know that I am the Lord their God.
 And it came to pass that I stretched forth my hand unto my brethren, and they did not wither before me;
 but the Lord did shake them, even according to the word which he had spoken.
 And now, they said:
-We know of a surety
-that the Lord is with thee,
+We know of a surety that the Lord is with thee,
 for we know that it is the power of the Lord that has shaken us.
 And they fell down before me, and were about to worship me,
 but I would not suffer them, saying:
-I am thy brother, yea, even thy younger brother; wherefore, worship the Lord thy God, and honor thy father and thy mother,
-that thy days may be long in the land which the Lord thy God shall give thee.
+I am thy brother, yea, even thy younger brother; wherefore, worship the Lord thy God, and honor thy father and thy mother, that thy days may be long in the land which the Lord thy God shall give thee.
 And it came to pass that they did worship the Lord, and did go forth with me;
 and we did work timbers of curious workmanship.
 And the Lord did show me from time to time after what manner I should work the timbers of the ship.
@@ -1232,8 +1203,7 @@ and they began to be frightened exceedingly lest they should be drowned in the s
 nevertheless they did not loose me.
 And on the fourth day, which we had been driven back, the tempest began to be exceedingly sore.
 And it came to pass that we were about to be swallowed up in the depths of the sea. And after we had been driven back upon the waters for the space of four days, my brethren began to see that the judgments of God were upon them,
-and that they must perish save
-that they should repent of their iniquities;
+and that they must perish save that they should repent of their iniquities;
 wherefore, they came unto me, and loosed the bands which were upon my wrists, and behold they had swollen exceedingly; and also mine ankles were much swollen, and great was the soreness thereof.
 Nevertheless, I did look unto my God,
 and I did praise him all the day long;
@@ -1251,7 +1221,8 @@ And there was nothing save it were the power of God, which threatened them with 
 wherefore, when they saw that they were about to be swallowed up in the depths of the sea they repented of the thing which they had done, insomuch that they loosed me.
 And it came to pass after they had loosed me, behold, I took the compass,
 and it did work whither I desired it.
-And it came to pass that I prayed unto the Lord; and after I had prayed the winds did cease,
+And it came to pass that I prayed unto the Lord;
+and after I had prayed the winds did cease,
 and the storm did cease,
 and there was a great calm.
 And it came to pass that I, Nephi, did guide the ship, that we sailed again towards the promised land.
@@ -1281,8 +1252,7 @@ and this I do that the more sacred things may be kept for the knowledge of my pe
 Nevertheless, I do not write anything upon plates
 save it be that I think it be sacred.
 And now, if I do err, even did they err of old;
-not
-that I would excuse myself because of other men,
+not that I would excuse myself because of other men,
 but because of the weakness which is in me, according to the flesh, I would excuse myself.
 For the things which some men esteem to be of great worth, both to the body and soul, others set at naught and trample under their feet.
 Yea, even the very God of Israel do men trample under their feet;
@@ -1330,8 +1300,7 @@ for they are written upon the plates of brass.
 Now it came to pass that I, Nephi, did teach my brethren these things; and it came to pass that I did read many things to them, which were engraven upon the plates of brass, that they might know concerning the doings of the Lord in other lands, among people of old.
 And I did read many things unto them which were written in the books of Moses;
 but that I might more fully persuade them to believe in the Lord their Redeemer I did read unto them that which was written by the prophet Isaiah;
-for I did liken all scriptures unto us,
-that it might be for our profit and learning.
+for I did liken all scriptures unto us, that it might be for our profit and learning.
 Wherefore I spake unto them, saying:
 Hear ye the words of the prophet, ye who are a remnant of the house of Israel, a branch who have been broken off; hear ye the words of the prophet, which were written unto all the house of Israel, and liken them unto yourselves, that ye may have hope as well as your brethren from whom ye have been broken off; for after this manner has the prophet written.
 Hearken and hear this, O house of Jacob, who are called by the name of Israel, and are come forth out of the waters of Judah, or out of the waters of baptism, who swear by the name of the Lord, and make mention of the God of Israel,
@@ -1370,8 +1339,7 @@ I have chosen thee in the furnace of affliction.
 For mine own sake, yea, for mine own sake will I do this,
 for I will not suffer my name to be polluted,
 and I will not give my glory unto another.
-Hearken unto me, O Jacob,
-and Israel my called,
+Hearken unto me, O Jacob, and Israel my called,
 for I am he;
 I am the first,
 and I am also the last.
@@ -1380,8 +1348,8 @@ and my right hand hath spanned the heavens.
 I call unto them and they stand up together.
 All ye, assemble yourselves, and hear;
 who among them hath declared these things unto them?
-The Lord hath loved him; yea,
-and he will fulfil his word which he hath declared by them;
+The Lord hath loved him;
+yea, and he will fulfil his word which he hath declared by them;
 and he will do his pleasure on Babylon,
 and his arm shall come upon the Chaldeans.
 Also, saith the Lord;
@@ -1425,8 +1393,7 @@ and my work with my God.
 And now, saith the Lord--that formed me from the womb that I should be his servant, to bring Jacob again to him--though Israel be not gathered, yet shall I be glorious in the eyes of the Lord, and my God shall be my strength.
 And he said:
 It is a light thing that thou shouldst be my servant to raise up the tribes of Jacob, and to restore the preserved of Israel.
-I will also give thee for a light to the Gentiles,
-that thou mayest be my salvation unto the ends of the earth.
+I will also give thee for a light to the Gentiles, that thou mayest be my salvation unto the ends of the earth.
 Thus saith the Lord, the Redeemer of Israel, his Holy One, to him whom man despiseth, to him whom the nations abhorreth, to servant of rulers:
 Kings shall see and arise,
 princes also shall worship, because of the Lord that is faithful.
@@ -1506,8 +1473,7 @@ Wherefore, the things of which I have read are things pertaining to things both 
 And behold, there are many who are already lost from the knowledge of those who are at Jerusalem.
 Yea, the more part of all the tribes have been led away;
 and they are scattered to and fro upon the isles of the sea;
-and whither they are none of us knoweth,
-save that we know that they have been led away.
+and whither they are none of us knoweth, save that we know that they have been led away.
 And since they have been led away, these things have been prophesied concerning them,
 and also concerning all those who shall hereafter be scattered and be confounded, because of the Holy One of Israel;
 for against him will they harden their hearts;
@@ -1516,8 +1482,7 @@ Nevertheless, after they shall be nursed by the Gentiles, and the Lord has lifte
 and their children have been carried in their arms,
 and their daughters have been carried upon their shoulders, behold these things of which are spoken are temporal; for thus are the covenants of the Lord with our fathers; and it meaneth us in the days to come, and also all our brethren who are of the house of Israel.
 And it meaneth
-that the time cometh that after all the house of Israel have been scattered and confounded,
-that the Lord God will raise up a mighty nation among the Gentiles, yea, even upon the face of this land;
+that the time cometh that after all the house of Israel have been scattered and confounded, that the Lord God will raise up a mighty nation among the Gentiles, yea, even upon the face of this land;
 and by them shall our seed be scattered.
 And after our seed is scattered the Lord God will proceed to do a marvelous work among the Gentiles, which shall be of great worth unto our seed;
 wherefore, it is likened unto their being nourished by the Gentiles and being carried in their arms and upon their shoulders.
@@ -1537,13 +1502,11 @@ and they shall fall into the pit which they digged to ensnare the people of the 
 And all that fight against Zion shall be destroyed,
 and that great whore, who hath perverted the right ways of the Lord, yea, that great and abominable church, shall tumble to the dust and great shall be the fall of it.
 For behold, saith the prophet,
-the time cometh speedily that Satan shall have no more power over the hearts of the children of men; for the day soon cometh
-that all the proud and they who do wickedly shall be as stubble;
+the time cometh speedily that Satan shall have no more power over the hearts of the children of men; for the day soon cometh that all the proud and they who do wickedly shall be as stubble;
 and the day cometh that they must be burned.
 For the time soon cometh that the fulness of the wrath of God shall be poured out upon all the children of men;
 for he will not suffer that the wicked shall destroy the righteous.
-Wherefore, he will preserve the righteous by his power, even if it so be that the fulness of his wrath must come,
-and the righteous be preserved, even unto the destruction of their enemies by fire.
+Wherefore, he will preserve the righteous by his power, even if it so be that the fulness of his wrath must come, and the righteous be preserved, even unto the destruction of their enemies by fire.
 Wherefore, the righteous need not fear;
 for thus saith the prophet, they shall be saved, even if it so be as by fire.
 Behold, my brethren, I say unto you, that these things must shortly come; yea,
@@ -1579,10 +1542,8 @@ And now behold, I, Nephi, say unto you that all these things must come according
 But, behold, all nations, kindreds, tongues, and people shall dwell safely in the Holy One of Israel if it so be that they will repent.
 And now I, Nephi, make an end;
 for I durst not speak further as yet concerning these things.
-Wherefore, my brethren, I would that ye should consider
-that the things which have been written upon the plates of brass are true;
-and they testify
-that a man must be obedient to the commandments of God.
+Wherefore, my brethren, I would that ye should consider that the things which have been written upon the plates of brass are true;
+and they testify that a man must be obedient to the commandments of God.
 Wherefore, ye need not suppose that I and my father are the only ones that have testified, and also taught them.
 Wherefore, if ye shall be obedient to the commandments, and endure to the end, ye shall be saved at the last day.
 And thus it is.
