@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T17:12:12+00:00Z
+@dateWritten=2026-06-02T18:37:36+00:00Z
 
 319419	1 Nephi
 2 Nephi

@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T17:12:12+00:00Z
+@dateWritten=2026-06-02T18:37:36+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -509,8 +509,7 @@ Wherefore, if ye have sought to do wickedly in the days of your probation, then 
 and no unclean thing can dwell with God;
 wherefore, ye must be cast off forever.
 And the Holy Ghost giveth authority that I should speak these things, and deny them not.
-For it came to pass after I had desired to know the things that my father had seen, and believing that the Lord was able to make them known unto me, as I sat pondering in mine heart I was caught away in the Spirit of the Lord, yea, into an exceedingly high mountain, which I never had before seen,
-and upon which I never had before set my foot.
+For it came to pass after I had desired to know the things that my father had seen, and believing that the Lord was able to make them known unto me, as I sat pondering in mine heart I was caught away in the Spirit of the Lord, yea, into an exceedingly high mountain, which I never had before seen, and upon which I never had before set my foot.
 And the Spirit said unto me:
 Behold, what desirest thou?
 And I said:
@@ -628,7 +627,8 @@ and I beheld multitudes of people, yea, even as it were in number as many as the
 And it came to pass that I beheld multitudes gathered together to battle, one against the other; and I beheld wars, and rumors of wars, and great slaughters with the sword among my people.
 And it came to pass that I beheld many generations pass away, after the manner of wars and contentions in the land; and I beheld many cities,
 yea, even that I did not number them.
-And it came to pass that I saw a mist of darkness on the face of the land of promise; and I saw lightnings,
+And it came to pass that I saw a mist of darkness on the face of the land of promise;
+and I saw lightnings,
 and I heard thunderings, and earthquakes, and all manner of tumultuous noises;
 and I saw the earth and the rocks,
 that they rent;
@@ -10415,8 +10415,7 @@ therefore they dissented even from the church; and thus were the affairs of the 
 Thus we see how quick the children of men do forget the Lord their God,
 yea, how quick to do iniquity, and to be led away by the evil one.
 Yea, and we also see the great wickedness one very wicked man can cause to take place among the children of men.
-Yea, we see that Amalickiah, because he was a man of cunning device and a man of many flattering words, that he led away the hearts of many people to do wickedly;
-yea, and to seek to destroy the church of God, and to destroy the foundation of liberty which God had granted unto them,
+Yea, we see that Amalickiah, because he was a man of cunning device and a man of many flattering words, that he led away the hearts of many people to do wickedly; yea, and to seek to destroy the church of God, and to destroy the foundation of liberty which God had granted unto them,
 or which blessing God had sent upon the face of the land for the righteous' sake.
 And now it came to pass that when Moroni, who was the chief commander of the armies of the Nephites, had heard of these dissensions, he was angry with Amalickiah.
 And it came to pass that he rent his coat; and he took a piece thereof, and wrote upon it--In memory of our God, our religion, and freedom, and our peace, our wives, and our children
@@ -10817,7 +10816,8 @@ for every man of Teancum did exceed the Lamanites in their strength and in their
 And it came to pass that they did harass them, insomuch that they did slay them even until it was dark.
 And it came to pass that Teancum and his men did pitch their tents in the borders of the land Bountiful; and Amalickiah did pitch his tents in the borders on the beach by the seashore,
 and after this manner were they driven.
-And it came to pass that when the night had come, Teancum and his servant stole forth and went out by night, and went into the camp of Amalickiah; and behold, sleep had overpowered them because of their much fatigue, which was caused by the labors and heat of the day.
+And it came to pass that when the night had come, Teancum and his servant stole forth and went out by night, and went into the camp of Amalickiah;
+and behold, sleep had overpowered them because of their much fatigue, which was caused by the labors and heat of the day.
 And it came to pass that Teancum stole privily into the tent of the king, and put a javelin to his heart;
 and he did cause the death of the king immediately that he did not awake his servants.
 And he returned again privily to his own camp, and behold, his men were asleep,

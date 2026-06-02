@@ -7,7 +7,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T17:12:13+00:00Z
+@dateWritten=2026-06-02T18:37:39+00:00Z
 
 1-302627	word
 302628-319418	atu

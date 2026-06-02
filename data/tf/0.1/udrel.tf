@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T17:12:14+00:00Z
+@dateWritten=2026-06-02T18:37:40+00:00Z
 
 nsubj:pass
 punct
