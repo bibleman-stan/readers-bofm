@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T19:45:23+00:00Z
+@dateWritten=2026-06-02T19:56:57+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -1547,8 +1547,8 @@ Amen.
 And now it came to pass that after I, Nephi, had made an end of teaching my brethren, our father, Lehi, also spake many things unto them, and rehearsed unto them, how great things the Lord had done for them in bringing them out of the land of Jerusalem.
 And he spake unto them concerning their rebellions upon the waters, and the mercies of God in sparing their lives, that they were not swallowed up in the sea.
 And he also spake unto them concerning the land of promise, which they had obtained--how merciful the Lord had been in warning us that we should flee out of the land of Jerusalem.
-For, behold, said
-he, I have seen a vision, in which I know that Jerusalem is destroyed;
+For, behold, said he,
+I have seen a vision, in which I know that Jerusalem is destroyed;
 and had we remained in Jerusalem
 we should also have perished.
 But, said he, notwithstanding our afflictions, we have obtained a land of promise,
@@ -1576,8 +1576,8 @@ that they shall keep his commandments they shall be blessed upon the face of thi
 and they shall dwell safely forever.
 But behold, when the time cometh that they shall dwindle in unbelief, after they have received so great blessings from the hand of the Lord--having a knowledge of the creation of the earth, and all men, knowing the great and marvelous works of the Lord from the creation of the world; having power given them to do all things by faith; having all the commandments from the beginning,
 and having been brought by his infinite goodness into this precious land of promise
---behold, I say, if the day shall come
-that they will reject the Holy One of Israel, the true Messiah, their Redeemer and their God, behold, the judgments of him that is just shall rest upon them.
+--behold, I say, if the day shall come that they will reject the Holy One of Israel, the true Messiah, their Redeemer and their God,
+behold, the judgments of him that is just shall rest upon them.
 Yea, he will bring other nations unto them,
 and he will give unto them power,
 and he will take away from them the lands of their possessions,
@@ -1632,9 +1632,8 @@ And ye have murmured because he hath been plain unto you.
 Ye say that he hath used sharpness;
 ye say that he hath been angry with you;
 but behold, his sharpness was the sharpness of the power of the word of God, which was in him; and that which ye call anger was the truth, according to that which is in God, which he could not restrain, manifesting boldly concerning your iniquities.
-And it must needs be
-that the power of God must be with him, even unto his commanding you that ye must obey. But behold, it was not he, but it was the Spirit of the Lord which was in him, which opened his mouth to utterance
-that he could not shut it.
+And it must needs be that the power of God must be with him, even unto his commanding you that ye must obey.
+But behold, it was not he, but it was the Spirit of the Lord which was in him, which opened his mouth to utterance that he could not shut it.
 And now my son, Laman, and also Lemuel and Sam, and also my sons who are the sons of Ishmael, behold, if ye will hearken unto the voice of Nephi ye shall not perish.
 And if ye will hearken unto him I leave unto you a blessing, yea, even my first blessing.
 But if ye will not hearken unto him I take away my first blessing, yea, even my blessing,
@@ -1666,20 +1665,16 @@ and also, by the spiritual law they perish from that which is good, and become m
 Wherefore, redemption cometh in and through the Holy Messiah; for he is full of grace and truth.
 Behold, he offereth himself a sacrifice for sin, to answer the ends of the law, unto all those who have a broken heart and a contrite spirit;
 and unto none else can the ends of the law be answered.
-Wherefore, how great
-the importance to make these things known unto the inhabitants of the earth,
+Wherefore, how great the importance to make these things known unto the inhabitants of the earth,
 that they may know that there is no flesh that can dwell in the presence of God, save it be through the merits, and mercy, and grace of the Holy Messiah, who layeth down his life according to the flesh, and taketh it again by the power of the Spirit,
 that he may bring to pass the resurrection of the dead, being the first that should rise.
 Wherefore, he is the firstfruits unto God, inasmuch as he shall make intercession for all the children of men;
 and they that believe in him shall be saved.
 And because of the intercession for all, all men come unto God; wherefore, they stand in the presence of him, to be judged of him according to the truth and holiness which is in him.
 Wherefore, the ends of the law which the Holy One hath given, unto the inflicting of the punishment which is affixed, which punishment that is affixed is in opposition to that of the happiness which is affixed, to answer the ends of the atonement--
-For it must needs be,
-that there is an opposition in all things.
-If not
-so, my firstborn in the wilderness, righteousness could not be brought to pass, neither wickedness, neither holiness nor misery, neither good nor bad.
-Wherefore, all things must needs
-be a compound in one;
+For it must needs be, that there is an opposition in all things.
+If not so, my firstborn in the wilderness, righteousness could not be brought to pass, neither wickedness, neither holiness nor misery, neither good nor bad.
+Wherefore, all things must needs be a compound in one;
 wherefore, if it should be one body it must needs remain as dead, having no life neither death, nor corruption nor incorruption, happiness nor misery, neither sense nor insensibility.
 Wherefore, it must needs have been created for a thing of naught;
 wherefore there would have been no purpose in the end of its creation.
@@ -1715,31 +1710,26 @@ Partake of the forbidden fruit,
 and ye shall not die, but ye shall be as God, knowing good and evil.
 And after Adam and Eve had partaken of the forbidden fruit they were driven out of the garden of Eden, to till the earth.
 And they have brought forth children; yea, even the family of all the earth.
-And the days of the children of men were prolonged, according to the will of God,
-that they might repent while in the flesh;
+And the days of the children of men were prolonged, according to the will of God, that they might repent while in the flesh;
 wherefore, their state became a state of probation,
 and their time was lengthened, according to the commandments which the Lord God gave unto the children of men.
-For he gave commandment
-that all men must repent;
-for he showed unto all men
-that they were lost, because of the transgression of their parents.
+For he gave commandment that all men must repent;
+for he showed unto all men that they were lost, because of the transgression of their parents.
 And now, behold, if Adam had not transgressed he would not have fallen,
 but he would have remained in the garden of Eden.
 And all things which were created must have remained in the same state in which they were after they were created;
 and they must have remained forever, and had no end.
 And they would have had no children;
-wherefore they would have remained in a state of innocence, having no joy,
-for they knew no misery; doing no good,
-for they knew no sin.
+wherefore they would have remained in a state of innocence,
+having no joy, for they knew no misery;
+doing no good, for they knew no sin.
 But behold, all things have been done in the wisdom of him who knoweth all things.
-Adam fell
-that men might be; and men are,
-that they might have joy.
+Adam fell that men might be;
+and men are, that they might have joy.
 And the Messiah cometh in the fulness of time, that he may redeem the children of men from the fall.
 And because that they are redeemed from the fall they have become free forever, knowing good from evil; to act for themselves and not to be acted upon, save it be by the punishment of the law at the great and last day, according to the commandments which God hath given.
 Wherefore, men are free according to the flesh;
-and all things are given them
-which are expedient unto man.
+and all things are given them which are expedient unto man.
 And they are free to choose liberty and eternal life, through the great Mediator of all men, or to choose captivity and death, according to the captivity and power of the devil;
 for he seeketh that all men might be miserable like unto himself.
 And now, my sons, I would that ye should look to the great Mediator, and hearken unto his great commandments; and be faithful unto his words, and choose eternal life, according to the will of his Holy Spirit;
@@ -1907,8 +1897,8 @@ I will not put my trust in the arm of flesh;
 for I know that cursed is he that putteth his trust in the arm of flesh.
 Yea, cursed is
 he that putteth his trust in man or maketh flesh his arm.
-Yea, I know that God will give liberally to him that asketh. Yea,
-my God will give me, if I ask not amiss;
+Yea, I know that God will give liberally to him that asketh.
+Yea, my God will give me, if I ask not amiss;
 therefore I will lift up my voice unto thee;
 yea, I will cry unto thee, my God, the rock of my righteousness.
 Behold, my voice shall forever ascend up unto thee, my rock and mine everlasting God.
@@ -2048,8 +2038,7 @@ Even the captives of the mighty shall be taken away,
 and the prey of the terrible shall be delivered;
 for the Mighty God shall deliver his covenant people.
 For thus saith the Lord:
-I will contend with them
-that contendeth with thee --
+I will contend with them that contendeth with thee --
 And I will feed them that oppress thee, with their own flesh;
 and they shall be drunken with their own blood as with sweet wine;
 and all flesh shall know that I the Lord am thy Savior and thy Redeemer, the Mighty One of Jacob.
@@ -2064,8 +2053,7 @@ Yea, to whom have I sold you?
 Behold, for your iniquities have ye sold yourselves,
 and for your transgressions is your mother put away.
 Wherefore, when I came, there was no man;
-when I called,
-yea, there was none to answer.
+when I called, yea, there was none to answer.
 O house of Israel, is my hand shortened at all that it cannot redeem, or have I no power to deliver?
 Behold, at my rebuke I dry up the sea,
 I make their rivers a wilderness and their fish to stink because the waters are dried up,
@@ -2191,11 +2179,9 @@ Behold, my beloved brethren, I speak unto you these things that ye may rejoice, 
 For I know that ye have searched much, many of you, to know of things to come;
 wherefore I know that ye know that our flesh must waste away and die;
 nevertheless, in our bodies we shall see God.
-Yea, I know that ye know that in the body he shall show himself unto those at Jerusalem, from whence
-we came; for it is expedient
-that it should be among them;
-for it behooveth the great Creator
-that he suffereth himself to become subject unto man in the flesh, and die for all men,
+Yea, I know that ye know that in the body he shall show himself unto those at Jerusalem, from whence we came;
+for it is expedient that it should be among them;
+for it behooveth the great Creator that he suffereth himself to become subject unto man in the flesh, and die for all men,
 that all men might become subject unto him.
 For as death hath passed upon all men, to fulfil the merciful plan of the great Creator, there must needs be a power of resurrection,
 and the resurrection must needs come unto man by reason of the fall;
@@ -2313,8 +2299,8 @@ and the keeper of the gate is the Holy One of Israel;
 and he employeth no servant there;
 and there is none other way save it be by the gate;
 for he cannot be deceived, for the Lord God is his name.
-And whoso knocketh, to him will he open; and the wise, and the learned, and they that are rich, who are puffed up because of their learning, and their wisdom, and their riches
---yea, they are they whom he despiseth;
+And whoso knocketh, to him will he open;
+and the wise, and the learned, and they that are rich, who are puffed up because of their learning, and their wisdom, and their riches--yea, they are they whom he despiseth;
 and save they shall cast these things away, and consider themselves fools before God, and come down in the depths of humility,
 he will not open unto them.
 But the things of the wise and the prudent shall be hid from them forever--yea, that happiness which is prepared for the saints.
@@ -2373,8 +2359,7 @@ But because of priestcrafts and iniquities, they at Jerusalem will stiffen their
 Wherefore, because of their iniquities, destructions, famines, pestilences, and bloodshed shall come upon them;
 and they who shall not be destroyed shall be scattered among all nations.
 But behold, thus saith the Lord God:
-When the day cometh that they shall believe in me, that I am Christ, then have I covenanted with their fathers
-that they shall be restored in the flesh, upon the earth, unto the lands of their inheritance.
+When the day cometh that they shall believe in me, that I am Christ, then have I covenanted with their fathers that they shall be restored in the flesh, upon the earth, unto the lands of their inheritance.
 And it shall come to pass that they shall be gathered in from their long dispersion, from the isles of the sea, and from the four parts of the earth; and the nations of the Gentiles shall be great in the eyes of me, saith God, in carrying them forth to the lands of their inheritance.
 Yea, the kings of the Gentiles shall be nursing fathers unto them,
 and their queens shall become nursing mothers;
@@ -2614,11 +2599,9 @@ But the Lord of Hosts shall be exalted in judgment,
 and God that is holy shall be sanctified in righteousness.
 Then shall the lambs feed after their manner,
 and the waste places of the fat ones shall strangers eat.
-Wo unto them
-that draw iniquity with cords of vanity, and sin as it were with a cart rope;
-That say: Let him make speed, hasten his work,
-that we may see it; and let the counsel of the Holy One of Israel draw nigh and come,
-that we may know it.
+Wo unto them that draw iniquity with cords of vanity, and sin as it were with a cart rope;
+That say: Let him make speed, hasten his work, that we may see it;
+and let the counsel of the Holy One of Israel draw nigh and come, that we may know it.
 Wo unto them
 that call evil good, and good evil, that put darkness for light, and light for darkness,
 that put bitter for sweet, and sweet for bitter!
@@ -2685,12 +2668,11 @@ Also I heard the voice of the Lord, saying:
 Whom shall I send,
 and who will go for us?
 Then I said:
-Here
-am I; send me.
+Here am I; send me.
 And he said:
-Go and tell this people--Hear ye indeed,
-but they understood not; and see ye indeed,
-but they perceived not.
+Go and tell this people--
+Hear ye indeed, but they understood not;
+and see ye indeed, but they perceived not.
 Make the heart of this people fat, and make their ears heavy, and shut their eyes--lest they see with their eyes, and hear with their ears, and understand with their heart, and be converted and be healed.
 Then said I:
 Lord,
@@ -3020,8 +3002,7 @@ yea, and every one that is joined to the wicked shall fall by the sword.
 Their children also shall be dashed to pieces before their eyes;
 their houses shall be spoiled
 and their wives ravished.
-Behold, I will stir up the Medes against them, which shall not regard silver and gold,
-nor shall they delight in it.
+Behold, I will stir up the Medes against them, which shall not regard silver and gold, nor shall they delight in it.
 Their bows shall also dash the young men to pieces;
 and they shall have no pity on the fruit of the womb;
 their eyes shall not spare children.
@@ -3153,8 +3134,7 @@ And as one generation hath been destroyed among the Jews because of iniquity, ev
 and never hath any of them been destroyed save it were foretold them by the prophets of the Lord.
 Wherefore, it hath been told them concerning the destruction which should come upon them, immediately after my father left Jerusalem;
 nevertheless, they hardened their hearts;
-and according to my prophecy they have been destroyed,
-save it be those which are carried away captive into Babylon.
+and according to my prophecy they have been destroyed, save it be those which are carried away captive into Babylon.
 And now this I speak because of the spirit which is in me.
 And notwithstanding they have been carried away they shall return again, and possess the land of Jerusalem;
 wherefore, they shall be restored again to the land of their inheritance.
@@ -3222,7 +3202,8 @@ and we write according to our prophecies, that our children may know to what sou
 Wherefore, we speak concerning the law
 that our children may know the deadness of the law;
 and they, by knowing the deadness of the law, may look forward unto that life which is in Christ,
-and know for what end the law was given. And after the law is fulfilled in Christ,
+and know for what end the law was given.
+And after the law is fulfilled in Christ,
 that they need not harden their hearts against him when the law ought to be done away.
 And now behold, my people, ye are a stiffnecked people;
 wherefore, I have spoken plainly unto you, that ye cannot misunderstand.
@@ -3233,8 +3214,7 @@ for by denying him ye also deny the prophets and the law.
 And now behold, I say unto you that the right way is to believe in Christ, and deny him not; and Christ is the Holy One of Israel;
 wherefore ye must bow down before him, and worship him with all your might, mind, and strength, and your whole soul;
 and if ye do this ye shall in nowise be cast out.
-And, inasmuch as it shall be expedient, ye must keep the performances and ordinances of God until the law shall be fulfilled
-which was given unto Moses.
+And, inasmuch as it shall be expedient, ye must keep the performances and ordinances of God until the law shall be fulfilled which was given unto Moses.
 And after Christ shall have risen from the dead he shall show himself unto you, my children, and my beloved brethren; and the words which he shall speak unto you shall be the law which ye shall do.
 For behold, I say unto you that I have beheld that many generations shall pass away,
 and there shall be great wars and contentions among my people.
@@ -3324,8 +3304,7 @@ Behold, hath the Lord commanded any that they should not partake of his goodness
 Behold I say unto you, Nay; but all men are privileged the one like unto the other,
 and none are forbidden.
 He commandeth that there shall be no priestcrafts;
-for, behold, priestcrafts are
-that men preach and set themselves up for a light unto the world,
+for, behold, priestcrafts are that men preach and set themselves up for a light unto the world,
 that they may get gain and praise of the world;
 but they seek not the welfare of Zion.
 Behold, the Lord hath forbidden this thing;
@@ -3520,15 +3499,10 @@ O the wise, and the learned, and the rich, that are puffed up in the pride of th
 wo, wo, wo be unto them,
 saith the Lord God Almighty,
 for they shall be thrust down to hell!
-Wo unto them
-that turn aside the just for a thing of naught and revile against that which is good,
-and say that it is of no worth!
-For the day shall come
-that the Lord God will speedily visit the inhabitants of the earth;
-and in that day
-that they are fully ripe in iniquity they shall perish.
-But behold, if the inhabitants of the earth shall repent of their wickedness and abominations they shall not be destroyed,
-saith the Lord of Hosts.
+Wo unto them that turn aside the just for a thing of naught and revile against that which is good, and say that it is of no worth!
+For the day shall come that the Lord God will speedily visit the inhabitants of the earth;
+and in that day that they are fully ripe in iniquity they shall perish.
+But behold, if the inhabitants of the earth shall repent of their wickedness and abominations they shall not be destroyed, saith the Lord of Hosts.
 But behold, that great and abominable church, the whore of all the earth, must tumble to the earth, and great must be the fall thereof.
 For the kingdom of the devil must shake,
 and they which belong to it must needs be stirred up unto repentance,
@@ -3581,8 +3555,7 @@ saith the Lord God of Hosts.
 But behold, there shall be many--at that day when I shall proceed to do a marvelous work among them,
 that I may remember my covenants which I have made unto the children of men,
 that I may set my hand again the second time to recover my people, which are of the house of Israel;
-And also,
-that I may remember the promises which I have made unto thee, Nephi, and also unto thy father,
+And also, that I may remember the promises which I have made unto thee, Nephi, and also unto thy father,
 that I would remember your seed;
 and that the words of your seed should proceed forth out of my mouth unto your seed;
 and my words shall hiss forth unto the ends of the earth, for a standard unto my people, which are of the house of Israel;
@@ -3666,8 +3639,7 @@ And he shall smite the earth with the rod of his mouth;
 and with the breath of his lips shall he slay the wicked.
 For the time speedily cometh that the Lord God shall cause a great division among the people,
 and the wicked will he destroy;
-and he will spare his people, yea, even if it so be
-that he must destroy the wicked by fire.
+and he will spare his people, yea, even if it so be that he must destroy the wicked by fire.
 And righteousness shall be the girdle of his loins,
 and faithfulness the girdle of his reins.
 And then shall the wolf dwell with the lamb; and the leopard shall lie down with the kid, and the calf, and the young lion, and the fatling, together;
@@ -3681,12 +3653,9 @@ They shall not hurt nor destroy in all my holy mountain;
 for the earth shall be full of the knowledge of the Lord as the waters cover the sea.
 Wherefore, the things of all nations shall be made known;
 yea, all things shall be made known unto the children of men.
-There is nothing which is secret
-save it shall be revealed;
-there is no work of darkness
-save it shall be made manifest in the light;
-and there is nothing which is sealed upon the earth
-save it shall be loosed.
+There is nothing which is secret save it shall be revealed;
+there is no work of darkness save it shall be made manifest in the light;
+and there is nothing which is sealed upon the earth save it shall be loosed.
 Wherefore, all things which have been revealed unto the children of men shall at that day be revealed;
 and Satan shall have power over the hearts of the children of men no more, for a long time.
 And now, my beloved brethren, I make an end of my sayings.
@@ -3798,8 +3767,7 @@ I glory in my Jesus,
 for he hath redeemed my soul from hell.
 I have charity for my people, and great faith in Christ that I shall meet many souls spotless at his judgment-seat.
 I have charity for the Jew
---I say Jew, because I mean them from whence
-I came.
+--I say Jew, because I mean them from whence I came.
 I also have charity for the Gentiles.
 But behold, for none of these can I hope except they shall be reconciled unto Christ, and enter into the narrow gate, and walk in the strait path which leads to life, and continue in the path until the end of the day of probation.
 And now, my beloved brethren, and also Jew, and all ye ends of the earth, hearken unto these words and believe in Christ; and if ye believe not in these words believe in Christ.
