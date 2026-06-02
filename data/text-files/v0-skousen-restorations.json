@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "documentation": "Token-level restorations of 1830 readings where post-1837 deletions collapsed clausal structure obscured to readers. Applied as preprocessing before Stanza parse in scripts/bofm_generate.py read_v0(). Em-dashes are not used (punctuation has zero force in our system); structural signal is restored by inserting the original word(s) per Skousen. Source canon: Skousen, Analysis of Textual Variants of the Book of Mormon (3rd ed.) and Critical Text of the Book of Mormon. Each entry must cite the clausal warrant explaining why the deletion obscured the true clause structure.",
+  "version": "1.1",
+  "documentation": "Token-level restorations of 1830 readings where post-1837 emendations obscured clausal structure. Applied as preprocessing before Stanza parse in scripts/bofm_generate.py read_v0(). Em-dashes are not used (punctuation has zero force in our system); structural signal is restored by inserting/replacing the original word(s) per Skousen. Operations: insert_after (anchor + new token) and replace (substring substitution). Source canon: Skousen, Analysis of Textual Variants of the Book of Mormon (3rd ed.) and Critical Text of the Book of Mormon. Each entry must cite the clausal warrant.",
   "restorations": [
     {
       "ref": "Alma 37:41",
@@ -10,6 +10,33 @@
       "source": "Skousen, Analysis of Textual Variants of the Book of Mormon (3rd ed.)",
       "clausal_warrant": "1837 deletion of the second 'nevertheless' collapsed a parenthetical aside ('it did show unto them marvelous works') into a false apodosis. The 1830 'Nevertheless, because X, nevertheless Y' frame signals that Y is the parenthetical and the TRUE apodosis is the subsequent 'they were slothful, and forgat to exercise their faith and diligence'. Without the restoration, the post-1837 punctuation pulls the reader toward reading 'it did show... marvelous works' as the apodosis of 'because... small means', inverting the meaning.",
       "added": "2026-06-01"
+    },
+    {
+      "ref": "Mosiah 26:36",
+      "operation": "replace",
+      "search": "And those that would not confess",
+      "replace": "And them that would not confess",
+      "source": "Skousen, ATV 3:1550 (B of M, Mosiah 26:35)",
+      "clausal_warrant": "JS 1837 replaced original 'them that' with standard-English 'those that'. The original 'them that' is the clausal-NP head of a complex subject that the following main clause restates with the resumptive 'the same'. Restoring 'them' surfaces the v.35 / v.36 parallel: each verse opens with a clausal-NP (whosoever-clause in v.35; them-that-clause in v.36) followed by a main clause with resumptive pronoun (them in v.35; the same in v.36) — a positive/negative parallel pair. Per Skousen: 'parallelism argues that both them's are necessary'. v.35 already preserves the original 'them' both times; restoring v.36 makes the cross-verse parallel visible.",
+      "added": "2026-06-02"
+    },
+    {
+      "ref": "Alma 39:11",
+      "operation": "replace",
+      "search": "suffer not the devil to lead away your heart",
+      "replace": "suffer not that the devil lead away your heart",
+      "source": "Skousen, ATV 4:2489-2490 (B of M, Alma 39:11)",
+      "clausal_warrant": "1841 British edition changed the original finite that-clause to an infinitive ('suffer not that the devil lead' -> 'suffer not the devil to lead'), influenced by the parallel infinitive in the preceding 'suffer not yourself to be led away'. The original 1830 reading varies the clausal construction across the two parallel imperatives. Restoring the finite that-clause gives the embedded proposition its own clausal weight (ccomp under 'suffer not'), exposing the variation the original author/translator used. Skousen cites Ether 3:3 and 8:23 as parallel 'suffer not that S' constructions in the text.",
+      "added": "2026-06-02"
+    },
+    {
+      "ref": "Ether 1:43",
+      "operation": "replace",
+      "search": "And thus I will do unto thee because this long time ye have cried unto me",
+      "replace": "And this I will do unto thee because of this long time which ye have cried unto me",
+      "source": "Skousen, ATV 6:3866 (B of M, Ether 1:43)",
+      "clausal_warrant": "JS 1837 deleted the preposition 'of' and the relative pronoun 'which', converting the original 'because of X which Y' prepositional+relative structure into a 'because S' clausal construction. The 1830 reading uses an adverbial noun phrase ('this long time') as the complement of 'of', modified by a relative clause ('which ye have cried unto me'). Skousen also notes 'thus' vs original 'this'. Restoring surfaces the original prepositional+relative architecture; Skousen cites Helaman 13:17 ('because of the people's sake which is upon the land') as the parallel surviving construction.",
+      "added": "2026-06-02"
     }
   ]
 }

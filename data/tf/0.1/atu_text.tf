@@ -8,9 +8,9 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T15:12:17+00:00Z
+@dateWritten=2026-06-02T16:23:14+00:00Z
 
-302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
+302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
 yea, having had a great knowledge of the goodness and the mysteries of God,
 therefore I make a record of my proceedings in my days.
@@ -6341,7 +6341,8 @@ and that he might judge the people of that church according to the commandments 
 And it came to pass that Alma went and judged those that had been taken in iniquity, according to the word of the Lord.
 And whosoever repented of their sins and did confess them,
 them he did number among the people of the church;
-And those that would not confess their sins and repent of their iniquity, the same were not numbered among the people of the church,
+And them that would not confess their sins and repent of their iniquity,
+the same were not numbered among the people of the church,
 and their names were blotted out.
 And it came to pass that Alma did regulate all the affairs of the church; and they began again to have peace and to prosper exceedingly in the affairs of the church, walking circumspectly before God, receiving many, and baptizing many.
 And now all these things did Alma and his fellow laborers do who were over the church, walking in all diligence, teaching the word of God in all things, suffering all manner of afflictions, being persecuted by all those who did not belong to the church of God.
@@ -9939,9 +9940,9 @@ Oh, remember, and take it upon you, and cross yourself in these things.
 And I command you to take it upon you to counsel with your elder brothers in your undertakings; for behold, thou art in thy youth,
 and ye stand in need to be nourished by your brothers.
 And give heed to their counsel.
-Suffer not yourself to be led away by any vain or foolish thing; suffer not the devil to lead away your heart again after those wicked harlots.
-Behold, O my son,
-how great iniquity ye brought upon the Zoramites;
+Suffer not yourself to be led away by any vain or foolish thing;
+suffer not that the devil lead away your heart again after those wicked harlots.
+Behold, O my son, how great iniquity ye brought upon the Zoramites;
 for when they saw your conduct they would not believe in my words.
 And now the Spirit of the Lord doth say unto me:
 Command thy children to do good, lest they lead away the hearts of many people to destruction;
@@ -15415,8 +15416,10 @@ Go to and gather together thy flocks, both male and female, of every kind; and a
 And when thou hast done this thou shalt go at the head of them down into the valley which is northward.
 And there will I meet thee,
 and I will go before thee into a land which is choice above all the lands of the earth.
-And there will I bless thee and thy seed, and raise up unto me of thy seed, and of the seed of thy brother, and they who shall go with thee, a great nation. And there shall be none greater than the nation which I will raise up unto me of thy seed, upon all the face of the earth.
-And thus I will do unto thee because this long time ye have cried unto me.
+And there will I bless thee and thy seed, and raise up unto me of thy seed, and of the seed of thy brother,
+and they who shall go with thee, a great nation.
+And there shall be none greater than the nation which I will raise up unto me of thy seed, upon all the face of the earth.
+And this I will do unto thee because of this long time which ye have cried unto me.
 And it came to pass that Jared and his brother, and their families, and also the friends of Jared and his brother and their families, went down into the valley which was northward, (and the name of the valley was Nimrod, being called after the mighty hunter) with their flocks which they had gathered together, male and female, of every kind.
 And they did also lay snares and catch fowls of the air;
 and they did also prepare a vessel, in which they did carry with them the fish of the waters.

@@ -176,8 +176,9 @@ def _load_skousen_restorations():
 
 
 def _apply_skousen_restoration(text, restoration):
-    """Apply ONE restoration to a verse's text. insert_after anchors on a token
-    sequence and inserts the new token after the anchor's last occurrence."""
+    """Apply ONE restoration to a verse's text. Operations:
+    - insert_after: anchor + insert (new token after anchor's last occurrence)
+    - replace: search + replace (string substring substitution)"""
     op = restoration.get("operation", "insert_after")
     if op == "insert_after":
         anchor = restoration["anchor"]
@@ -187,6 +188,12 @@ def _apply_skousen_restoration(text, restoration):
             raise ValueError(f"Skousen anchor not found in verse: anchor={anchor!r}, text={text[:120]!r}")
         end = idx + len(anchor)
         return text[:end] + " " + insert + text[end:]
+    if op == "replace":
+        search = restoration["search"]
+        replace = restoration["replace"]
+        if search not in text:
+            raise ValueError(f"Skousen search not found in verse: search={search!r}, text={text[:120]!r}")
+        return text.replace(search, replace, 1)
     raise ValueError(f"Unknown Skousen restoration op: {op}")
 
 

@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T15:12:17+00:00Z
+@dateWritten=2026-06-02T16:23:15+00:00Z
 
 I
 ,
@@ -107607,7 +107607,7 @@ the
 church
 ;
 And
-those
+them
 that
 would
 not
@@ -171158,9 +171158,9 @@ thing
 ;
 suffer
 not
+that
 the
 devil
-to
 lead
 away
 your
@@ -277969,16 +277969,18 @@ the
 earth
 .
 And
-thus
+this
 I
 will
 do
 unto
 thee
 because
+of
 this
 long
 time
+which
 ye
 have
 cried

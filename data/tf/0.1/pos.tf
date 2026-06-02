@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T15:12:18+00:00Z
+@dateWritten=2026-06-02T16:23:15+00:00Z
 
 PRON
 PUNCT
@@ -171158,9 +171158,9 @@ NOUN
 PUNCT
 VERB
 PART
+SCONJ
 DET
-NOUN
-PART
+PROPN
 VERB
 ADP
 PRON
@@ -277969,16 +277969,18 @@ DET
 NOUN
 PUNCT
 CCONJ
-ADV
 PRON
+PRON
 AUX
 VERB
 ADP
 PRON
-SCONJ
+ADP
+ADP
 DET
 ADJ
 NOUN
+PRON
 PRON
 AUX
 VERB
