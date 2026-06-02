@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T16:23:14+00:00Z
+@dateWritten=2026-06-02T16:47:21+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -6456,7 +6456,11 @@ And now it came to pass that Alma began from this time forward to teach the peop
 But notwithstanding all this, they did impart much consolation to the church, confirming their faith, and exhorting them with long-suffering and much travail to keep the commandments of God.
 And four of them were the sons of Mosiah; and their names were Ammon, and Aaron, and Omner, and Himni;
 these were the names of the sons of Mosiah.
-And they traveled throughout all the land of Zarahemla, and among all the people who were under the reign of king Mosiah, zealously striving to repair all the injuries which they had done to the church, confessing all their sins, and publishing all the things which they had seen, and explaining the prophecies and the scriptures to all who desired to hear them.
+And they traveled throughout all the land of Zarahemla, and among all the people who were under the reign of king Mosiah,
+zealously striving to repair all the injuries which they had done to the church,
+confessing all their sins,
+and publishing all the things which they had seen,
+and explaining the prophecies and the scriptures to all who desired to hear them.
 And thus they were instruments in the hands of God in bringing many to the knowledge of the truth, yea, to the knowledge of their Redeemer.
 And how blessed are they!
 For they did publish peace;
