@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T16:47:21+00:00Z
+@dateWritten=2026-06-02T16:51:01+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -4578,7 +4578,10 @@ But the word of the Lord was verified,
 which he spake unto our fathers,
 saying that: Inasmuch as ye will keep my commandments ye shall prosper in the land.
 And it came to pass that the prophets of the Lord did threaten the people of Nephi, according to the word of God, that if they did not keep the commandments, but should fall into transgression, they should be destroyed from off the face of the land.
-Wherefore, the prophets, and the priests, and the teachers, did labor diligently, exhorting with all long-suffering the people to diligence; teaching the law of Moses, and the intent for which it was given; persuading them to look forward unto the Messiah, and believe in him to come as though he already was.
+Wherefore, the prophets, and the priests, and the teachers, did labor diligently,
+exhorting with all long-suffering the people to diligence;
+teaching the law of Moses, and the intent for which it was given;
+persuading them to look forward unto the Messiah, and believe in him to come as though he already was.
 And after this manner did they teach them.
 And it came to pass that by so doing they kept them from being destroyed upon the face of the land;
 for they did prick their hearts with the word, continually stirring them up unto repentance.
@@ -10568,7 +10571,10 @@ they being the most acquainted with the strength of the Nephites, and their plac
 therefore he appointed them to be chief captains over his armies.
 And it came to pass that they took their camp, and moved forth toward the land of Zarahemla in the wilderness.
 Now it came to pass that while Amalickiah had thus been obtaining power by fraud and deceit, Moroni, on the other hand, had been preparing the minds of the people to be faithful unto the Lord their God.
-Yea, he had been strengthening the armies of the Nephites, and erecting small forts, or places of resort; throwing up banks of earth round about to enclose his armies, and also building walls of stone to encircle them about, round about their cities and the borders of their lands; yea, all round about the land.
+Yea, he had been strengthening the armies of the Nephites,
+and erecting small forts, or places of resort;
+throwing up banks of earth round about to enclose his armies,
+and also building walls of stone to encircle them about, round about their cities and the borders of their lands; yea, all round about the land.
 And in their weakest fortifications he did place the greater number of men;
 and thus he did fortify and strengthen the land which was possessed by the Nephites.
 And thus he was preparing to support their liberty, their lands, their wives, and their children, and their peace,
@@ -16071,7 +16077,9 @@ And it came to pass that the days of Ether were in the days of Coriantumr; and C
 And Ether was a prophet of the Lord;
 wherefore Ether came forth in the days of Coriantumr, and began to prophesy unto the people,
 for he could not be restrained because of the Spirit of the Lord which was in him.
-For he did cry from the morning, even until the going down of the sun, exhorting the people to believe in God unto repentance lest they should be destroyed, saying unto them that by faith all things are fulfilled--
+For he did cry from the morning, even until the going down of the sun,
+exhorting the people to believe in God unto repentance lest they should be destroyed,
+saying unto them that by faith all things are fulfilled--
 Wherefore, whoso believeth in God might with surety hope for a better world,
 yea, even a place at the right hand of God, which hope cometh of faith, maketh an anchor to the souls of men, which would make them sure and steadfast, always abounding in good works, being led to glorify God.
 And it came to pass that Ether did prophesy great and marvelous things unto the people, which they did not believe, because they saw them not.
