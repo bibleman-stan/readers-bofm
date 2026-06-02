@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T18:57:58+00:00Z
+@dateWritten=2026-06-02T19:04:19+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -128,8 +128,7 @@ and I will slay thee.
 But Laman fled out of his presence, and told the things which Laban had done, unto us.
 And we began to be exceedingly sorrowful, and my brethren were about to return unto my father in the wilderness.
 But behold I said unto them
-that: As the Lord liveth,
-and as we live,
+that: As the Lord liveth, and as we live,
 we will not go down unto our father in the wilderness until we have accomplished the thing which the Lord hath commanded us.
 Wherefore, let us be faithful in keeping the commandments of the Lord; therefore let us go down to the land of our father's inheritance,
 for behold he left gold and silver, and all manner of riches.
@@ -332,10 +331,10 @@ that ye have forgotten what great things the Lord hath done for us, in deliverin
 that we should obtain the record?
 Yea, and how is it that ye have forgotten that the Lord is able to do all things according to his will, for the children of men, if it so be that they exercise faith in him?
 Wherefore, let us be faithful to him.
-And if it so be
-that we are faithful to him, we shall obtain the land of promise;
-and ye shall know at some future period
-that the word of the Lord shall be fulfilled concerning the destruction of Jerusalem; for all things which the Lord hath spoken concerning the destruction of Jerusalem must be fulfilled.
+And if it so be that we are faithful to him,
+we shall obtain the land of promise;
+and ye shall know at some future period that the word of the Lord shall be fulfilled concerning the destruction of Jerusalem;
+for all things which the Lord hath spoken concerning the destruction of Jerusalem must be fulfilled.
 For behold, the Spirit of the Lord ceaseth soon to strive with them;
 for behold, they have rejected the prophets,
 and Jeremiah have they cast into prison.
@@ -382,11 +381,10 @@ for I knew that it was desirable above all other fruit.
 And as I cast my eyes round about, that perhaps I might discover my family also,
 I beheld a river of water;
 and it ran along, and it was near the tree of which I was partaking the fruit.
-And I looked to behold from whence
-it came; and I saw the head thereof a little way off;
+And I looked to behold from whence it came;
+and I saw the head thereof a little way off;
 and at the head thereof I beheld your mother Sariah, and Sam, and Nephi;
-and they stood as if they knew not whither
-they should go.
+and they stood as if they knew not whither they should go.
 And it came to pass that I beckoned unto them; and I also did say unto them with a loud voice that they should come unto me, and partake of the fruit, which was desirable above all other fruit.
 And it came to pass that they did come unto me and partake of the fruit also.
 And it came to pass that I was desirous that Laman and Lemuel should come and partake of the fruit also;
@@ -535,8 +533,7 @@ yet nevertheless, I knew that it was the Spirit of the Lord;
 and he spake unto me as a man speaketh with another.
 And it came to pass that he said unto me: Look!
 And I looked as if to look upon him,
-and I saw him not;
-for he had gone from before my presence.
+and I saw him not; for he had gone from before my presence.
 And it came to pass that I looked and beheld the great city of Jerusalem, and also other cities.
 And I beheld the city of Nazareth;
 and in the city of Nazareth I beheld a virgin, and she was exceedingly fair and white.
@@ -798,12 +795,14 @@ and she had dominion over all the earth, among all nations, kindreds, tongues, a
 And it came to pass that I beheld the church of the Lamb of God, and its numbers were few, because of the wickedness and abominations of the whore who sat upon many waters;
 nevertheless, I beheld that the church of the Lamb, who were the saints of God, were also upon all the face of the earth; and their dominions upon the face of the earth were small, because of the wickedness of the great whore whom I saw.
 And it came to pass that I beheld that the great mother of abominations did gather together multitudes upon the face of all the earth, among all the nations of the Gentiles, to fight against the Lamb of God.
-And it came to pass that I, Nephi, beheld the power of the Lamb of God, that it descended upon the saints of the church of the Lamb, and upon the covenant people of the Lord, who were scattered upon all the face of the earth; and they were armed with righteousness and with the power of God in great glory.
+And it came to pass that I, Nephi, beheld the power of the Lamb of God, that it descended upon the saints of the church of the Lamb, and upon the covenant people of the Lord, who were scattered upon all the face of the earth;
+and they were armed with righteousness and with the power of God in great glory.
 And it came to pass that I beheld that the wrath of God was poured out upon that great and abominable church, insomuch that there were wars and rumors of wars among all the nations and kindreds of the earth.
 And as there began to be wars and rumors of wars among all the nations which belonged to the mother of abominations, the angel spake unto me, saying:
 Behold, the wrath of God is upon the mother of harlots; and behold,
 thou seest all these things --
-And when the day cometh that the wrath of God is poured out upon the mother of harlots, which is the great and abominable church of all the earth, whose founder is the devil, then, at that day, the work of the Father shall commence, in preparing the way for the fulfilling of his covenants, which he hath made to his people who are of the house of Israel.
+And when the day cometh that the wrath of God is poured out upon the mother of harlots, which is the great and abominable church of all the earth, whose founder is the devil,
+then, at that day, the work of the Father shall commence, in preparing the way for the fulfilling of his covenants, which he hath made to his people who are of the house of Israel.
 And it came to pass that the angel spake unto me, saying:
 Look!
 And I looked and beheld a man,
@@ -983,14 +982,12 @@ and we have suffered much affliction, hunger, thirst, and fatigue;
 and after all these sufferings we must perish in the wilderness with hunger.
 And thus they did murmur against my father, and also against me; and they were desirous to return again to Jerusalem.
 And Laman said unto Lemuel and also unto the sons of Ishmael: Behold, let us slay our father, and also our brother Nephi, who has taken it upon him to be our ruler and our teacher, who are his elder brethren.
-Now, he says that the Lord has talked with him, and also
-that angels have ministered unto him.
+Now, he says that the Lord has talked with him, and also that angels have ministered unto him.
 But behold, we know that he lies unto us;
 and he tells us these things,
 and he worketh many things by his cunning arts,
 that he may deceive our eyes, thinking, perhaps, that he may lead us away into some strange wilderness;
-and after he has led us away, he has thought to make himself a king and a ruler over us,
-that he may do with us according to his will and pleasure.
+and after he has led us away, he has thought to make himself a king and a ruler over us, that he may do with us according to his will and pleasure.
 And after this manner did my brother Laman stir up their hearts to anger.
 And it came to pass that the Lord was with us,
 yea, even the voice of the Lord came and did speak many words unto them, and did chasten them exceedingly;
@@ -1000,8 +997,7 @@ that we did not perish.
 And it came to pass that we did again take our journey in the wilderness; and we did travel nearly eastward from that time forth.
 And we did travel and wade through much affliction in the wilderness;
 and our women did bear children in the wilderness.
-And so great were the blessings of the Lord upon us,
-that while we did live upon raw meat in the wilderness, our women did give plenty of suck for their children, and were strong, yea, even like unto the men;
+And so great were the blessings of the Lord upon us, that while we did live upon raw meat in the wilderness, our women did give plenty of suck for their children, and were strong, yea, even like unto the men;
 and they began to bear their journeyings without murmurings.
 And thus we see that the commandments of God must be fulfilled.
 And if it so be that the children of men keep the commandments of God he doth nourish them, and strengthen them, and provide means whereby they can accomplish the thing which he has commanded them;
