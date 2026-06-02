@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T20:14:57+00:00Z
+@dateWritten=2026-06-02T20:51:13+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -3574,7 +3574,8 @@ Nay; but ye have cursed them, and have hated them, and have not sought to recove
 But behold, I will return all these things upon your own heads;
 for I the Lord have not forgotten my people.
 Thou fool,
-that shall say: A Bible,
+that shall say:
+A Bible,
 we have got a Bible,
 and we need no more Bible.
 Have ye obtained a Bible save it were by the Jews?
@@ -4432,11 +4433,12 @@ And the Lord said unto me:
 Thy fathers have also required of me this thing;
 and it shall be done unto them according to their faith; for their faith was like unto thine.
 And now it came to pass that I, Enos, went about among the people of Nephi, prophesying of things to come, and testifying of the things which I had heard and seen.
-And I bear record
-that the people of Nephi did seek diligently to restore the Lamanites unto the true faith in God. But our labors were vain;
+And I bear record that the people of Nephi did seek diligently to restore the Lamanites unto the true faith in God.
+But our labors were vain;
 their hatred was fixed,
-and they were led by their evil nature
-that they became wild, and ferocious, and a blood-thirsty people, full of idolatry and filthiness; feeding upon beasts of prey; dwelling in tents, and wandering about in the wilderness with a short skin girdle about their loins and their heads shaven;
+and they were led by their evil nature that they became wild, and ferocious, and a blood-thirsty people, full of idolatry and filthiness;
+feeding upon beasts of prey;
+dwelling in tents, and wandering about in the wilderness with a short skin girdle about their loins and their heads shaven;
 and their skill was in the bow, and in the cimeter, and the ax.
 And many of them did eat nothing save it was raw meat;
 and they were continually seeking to destroy us.
@@ -4486,8 +4488,7 @@ and they taught the people the ways of the Lord;
 wherefore, we withstood the Lamanites and swept them away out of our lands, and began to fortify our cities, or whatsoever place of our inheritance.
 And we multiplied exceedingly, and spread upon the face of the land, and became exceedingly rich in gold, and in silver, and in precious things, and in fine workmanship of wood, in buildings, and in machinery, and also in iron and copper, and brass and steel, making all manner of tools of every kind to till the ground, and weapons of war--yea, the sharp pointed arrow, and the quiver, and the dart, and the javelin, and all preparations for war.
 And thus being prepared to meet the Lamanites, they did not prosper against us.
-But the word of the Lord was verified,
-which he spake unto our fathers,
+But the word of the Lord was verified, which he spake unto our fathers,
 saying that: Inasmuch as ye will keep my commandments ye shall prosper in the land.
 And it came to pass that the prophets of the Lord did threaten the people of Nephi, according to the word of God, that if they did not keep the commandments, but should fall into transgression, they should be destroyed from off the face of the land.
 Wherefore, the prophets, and the priests, and the teachers, did labor diligently,
@@ -4517,8 +4518,7 @@ And now I, Amaron, write the things whatsoever I write, which are few, in the bo
 Behold, it came to pass that three hundred and twenty years had passed away, and the more wicked part of the Nephites were destroyed.
 For the Lord would not suffer,
 after he had led them out of the land of Jerusalem and kept and preserved them from falling into the hands of their enemies,
-yea, he would not suffer that the words should not be verified,
-which he spake unto our fathers,
+yea, he would not suffer that the words should not be verified, which he spake unto our fathers,
 saying that: Inasmuch as ye will not keep my commandments ye shall not prosper in the land.
 Wherefore, the Lord did visit them in great judgment;
 nevertheless, he did spare the righteous that they should not perish, but did deliver them out of the hands of their enemies.
@@ -4592,8 +4592,8 @@ And I am about to lie down in my grave; and these plates are full.
 And I make an end of my speaking.
 And now I, Mormon, being about to deliver up the record which I have been making into the hands of my son Moroni,
 behold I have witnessed almost all the destruction of my people, the Nephites.
-And it is many hundred years after the coming of Christ
-that I deliver these records into the hands of my son; and it supposeth me that he will witness the entire destruction of my people.
+And it is many hundred years after the coming of Christ that I deliver these records into the hands of my son;
+and it supposeth me that he will witness the entire destruction of my people.
 But may God grant
 that he may survive them,
 that he may write somewhat concerning them, and somewhat concerning Christ,
@@ -9283,7 +9283,8 @@ or rather, in other words, blessed is he that believeth in the word of God, and 
 yea, without being brought to know the word,
 or even compelled to know,
 before they will believe.
-Yea, there are many who do say: If thou wilt show unto us a sign from heaven, then we shall know of a surety;
+Yea, there are many who do say:
+If thou wilt show unto us a sign from heaven, then we shall know of a surety;
 then we shall believe.
 Now I ask,
 is this faith?
@@ -12120,7 +12121,8 @@ that we shall have no place in them.
 And now we know that this is impossible, for behold, we are powerful, and our cities great,
 therefore our enemies can have no power over us.
 And it came to pass that thus they did stir up the people to anger against Nephi, and raised contentions among them;
-for there were some who did cry out: Let this man alone,
+for there were some who did cry out:
+Let this man alone,
 for he is a good man,
 and those things which he saith will surely come to pass except we repent;
 Yea, behold, all the judgments will come upon us which he has testified unto us;
@@ -14134,7 +14136,8 @@ that I am he that doth speak.
 And then shall they say:
 How beautiful upon the mountains are the feet of him that bringeth good tidings unto them, that publisheth peace;
 that bringeth good tidings unto them of good, that publisheth salvation;
-that saith unto Zion: Thy God reigneth!
+that saith unto Zion:
+Thy God reigneth!
 And then shall a cry go forth: Depart ye, depart ye, go ye out from thence, touch not that which is unclean; go ye out of the midst of her;
 be ye clean that bear the vessels of the Lord.
 For ye shall not go out with haste nor go by flight;
