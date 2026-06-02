@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T21:14:41+00:00Z
+@dateWritten=2026-06-02T22:02:37+00:00Z
 
 nsubj:pass
 punct
@@ -5272,7 +5272,7 @@ punct
 cc
 nsubj:pass
 aux:pass
-conj
+acl:relcl
 case
 det
 obl:agent
@@ -10770,7 +10770,7 @@ punct
 cc
 nsubj:pass
 aux:pass
-conj
+acl:relcl
 case
 det
 obl
@@ -23667,7 +23667,7 @@ obj
 punct
 cc
 nsubj
-conj
+acl:relcl
 det
 amod
 obj
@@ -29776,7 +29776,7 @@ punct
 cc
 nsubj
 aux
-conj
+acl:relcl
 det
 obj
 case
@@ -78698,7 +78698,7 @@ punct
 cc
 nsubj
 aux
-conj
+acl:relcl
 obj
 case
 case
@@ -82663,7 +82663,7 @@ nmod
 punct
 cc
 nsubj
-conj
+acl:relcl
 punct
 cc
 nsubj
@@ -84936,7 +84936,7 @@ punct
 cc
 nsubj
 aux
-conj
+acl:relcl
 case
 det
 obl
@@ -87727,7 +87727,7 @@ obj
 punct
 cc
 nsubj
-conj
+acl:relcl
 det
 amod
 obj
@@ -92111,7 +92111,7 @@ advcl
 punct
 nsubj:pass
 aux:pass
-parataxis
+acl:relcl
 advmod
 case
 det
@@ -98207,7 +98207,7 @@ cc
 nsubj:pass
 aux
 aux:pass
-conj
+acl:relcl
 case
 det
 obl:agent
@@ -111574,7 +111574,7 @@ punct
 cc
 nsubj:pass
 aux:pass
-conj
+acl:relcl
 obj
 case
 det
@@ -146963,7 +146963,7 @@ punct
 cc
 nsubj:pass
 aux:pass
-conj
+acl:relcl
 case
 det
 obl
@@ -162536,7 +162536,7 @@ punct
 cc
 nsubj
 cop
-conj
+acl:relcl
 case
 obl
 nsubj
@@ -214313,7 +214313,7 @@ acl:relcl
 punct
 cc
 nsubj
-conj
+acl:relcl
 advmod
 advmod
 punct
@@ -219707,7 +219707,7 @@ nsubj:pass
 aux
 advmod
 aux:pass
-ccomp
+acl:relcl
 punct
 cc
 obj
@@ -255154,7 +255154,7 @@ punct
 cc
 nsubj
 aux
-conj
+acl:relcl
 punct
 nmod:poss
 nsubj:pass
@@ -280529,7 +280529,7 @@ nsubj
 advcl
 punct
 nsubj
-parataxis
+acl:relcl
 case
 obl
 punct

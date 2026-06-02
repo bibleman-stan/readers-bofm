@@ -1287,7 +1287,7 @@
 25	and	and	CCONJ	_	_	28	cc	_	_
 26	who	who	PRON	_	_	28	nsubj	_	_
 27	had	have	AUX	_	_	28	aux	_	_
-28	delivered	deliver	VERB	_	_	16	conj	_	_
+28	delivered	deliver	VERB	_	_	12	acl:relcl	_	_
 29	them	they	PRON	_	_	28	obj	_	_
 30	out	out	ADP	_	_	33	case	_	_
 31	of	of	ADP	_	_	33	case	_	_
@@ -5492,7 +5492,7 @@
 37	,	,	PUNCT	_	_	38	punct	_	_
 38	or	or	CCONJ	_	_	40	cc	_	_
 39	who	who	PRON	_	_	40	nsubj	_	_
-40	are	be	AUX	_	_	34	conj	_	_
+40	are	be	AUX	_	_	27	acl:relcl	_	_
 41	,	,	PUNCT	_	_	42	punct	_	_
 42	or	or	CCONJ	_	_	46	cc	_	_
 43	who	who	PRON	_	_	46	nsubj	_	_
@@ -7903,7 +7903,7 @@
 19	but	but	CCONJ	_	_	22	cc	_	_
 20	who	who	PRON	_	_	22	nsubj	_	_
 21	had	have	AUX	_	_	22	aux	_	_
-22	entered	enter	VERB	_	_	17	conj	_	_
+22	entered	enter	VERB	_	_	11	acl:relcl	_	_
 23	into	into	ADP	_	_	25	case	_	_
 24	the	the	DET	_	_	25	det	_	_
 25	covenant	covenant	NOUN	_	_	22	obl	_	_
@@ -10862,7 +10862,7 @@
 26	,	,	PUNCT	_	_	29	punct	_	_
 27	and	and	CCONJ	_	_	29	cc	_	_
 28	who	who	PRON	_	_	29	nsubj	_	_
-29	has	have	VERB	_	_	18	conj	_	_
+29	has	have	VERB	_	_	18	acl:relcl	_	_
 30	this	this	DET	_	_	32	det	_	_
 31	high	high	ADJ	_	_	32	amod	_	_
 32	gift	gift	NOUN	_	_	29	obj	_	_
@@ -15522,7 +15522,7 @@
 28	,	,	PUNCT	_	_	27	punct	_	_
 29	it	it	PRON	_	_	31	nsubj:pass	_	_
 30	is	be	AUX	_	_	31	aux:pass	_	_
-31	driven	drive	VERB	_	_	5	parataxis	_	_
+31	driven	drive	VERB	_	_	11	acl:relcl	_	_
 32	forth	forth	ADV	_	_	31	advmod	_	_
 33	upon	upon	ADP	_	_	35	case	_	_
 34	the	the	DET	_	_	35	det	_	_
@@ -22179,7 +22179,7 @@
 21	which	which	PRON	_	_	24	nsubj:pass	_	_
 22	had	have	AUX	_	_	24	aux	_	_
 23	been	be	AUX	_	_	24	aux:pass	_	_
-24	spoken	speak	VERB	_	_	14	conj	_	_
+24	spoken	speak	VERB	_	_	14	acl:relcl	_	_
 25	by	by	ADP	_	_	27	case	_	_
 26	the	the	DET	_	_	27	det	_	_
 27	mouth	mouth	NOUN	_	_	24	obl:agent	_	_
@@ -36608,7 +36608,7 @@
 36	and	and	CCONJ	_	_	39	cc	_	_
 37	which	which	PRON	_	_	39	nsubj:pass	_	_
 38	were	be	AUX	_	_	39	aux:pass	_	_
-39	given	give	VERB	_	_	34	conj	_	_
+39	given	give	VERB	_	_	22	acl:relcl	_	_
 40	them	they	PRON	_	_	39	obj	_	_
 41	by	by	ADP	_	_	43	case	_	_
 42	the	the	DET	_	_	43	det	_	_

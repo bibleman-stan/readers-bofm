@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T21:14:41+00:00Z
+@dateWritten=2026-06-02T22:02:37+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -283,8 +283,7 @@ And he beheld that they did contain the five books of Moses, which gave an accou
 And also a record of the Jews from the beginning, even down to the commencement of the reign of Zedekiah, king of Judah;
 And also the prophecies of the holy prophets, from the beginning, even down to the commencement of the reign of Zedekiah; and also many prophecies which have been spoken by the mouth of Jeremiah.
 And it came to pass that my father, Lehi, also found upon the plates of brass a genealogy of his fathers; wherefore he knew that he was a descendant of Joseph; yea, even
-that Joseph who was the son of Jacob, who was sold into Egypt,
-and who was preserved by the hand of the Lord,
+that Joseph who was the son of Jacob, who was sold into Egypt, and who was preserved by the hand of the Lord,
 that he might preserve his father, Jacob, and all his household from perishing with famine.
 And they were also led out of captivity and out of the land of Egypt, by that same God who had preserved them.
 And thus my father, Lehi, did discover the genealogy of his fathers. And Laban also was a descendant of Joseph,
@@ -1238,8 +1237,7 @@ wherefore, the things which transpired before I made these plates are, of a trut
 And after I had made these plates by way of commandment, I, Nephi, received a commandment
 that the ministry and the prophecies, the more plain and precious parts of them, should be written upon these plates;
 and that the things which were written should be kept for the instruction of my people, who should possess the land, and also for other wise purposes, which purposes are known unto the Lord.
-Wherefore, I, Nephi, did make a record upon the other plates, which gives an account,
-or which gives a greater account of the wars and contentions and destructions of my people.
+Wherefore, I, Nephi, did make a record upon the other plates, which gives an account, or which gives a greater account of the wars and contentions and destructions of my people.
 And this have I done, and commanded my people what they should do after I was gone;
 and that these plates should be handed down from one generation to another, or from one prophet to another, until further commandments of the Lord.
 And an account of my making these plates shall be given hereafter;
@@ -1993,7 +1991,7 @@ And now, behold, I would speak unto you concerning things which are, and which a
 wherefore, I will read you the words of Isaiah.
 And they are the words which my brother has desired that I should speak unto you.
 And I speak unto you for your sakes, that ye may learn and glorify the name of your God.
-And And now, the words which I shall read are they which Isaiah spake concerning all the house of Israel;
+And now, the words which I shall read are they which Isaiah spake concerning all the house of Israel;
 wherefore, they may be likened unto you,
 for ye are of the house of Israel.
 And there are many things which have been spoken by Isaiah which may be likened unto you, because ye are of the house of Israel.
@@ -4685,9 +4683,7 @@ And there were a great number, even so many that they did not number them;
 for they had multiplied exceedingly and waxed great in the land.
 And they also took of the firstlings of their flocks, that they might offer sacrifice and burnt offerings according to the law of Moses;
 And also
-that they might give thanks to the Lord their God, who had brought them out of the land of Jerusalem,
-and who had delivered them out of the hands of their enemies,
-and had appointed just men to be their teachers, and also a just man to be their king, who had established peace in the land of Zarahemla,
+that they might give thanks to the Lord their God, who had brought them out of the land of Jerusalem, and who had delivered them out of the hands of their enemies, and had appointed just men to be their teachers, and also a just man to be their king, who had established peace in the land of Zarahemla,
 and who had taught them to keep the commandments of God,
 that they might rejoice and be filled with love towards God and all men.
 And it came to pass that when they came up to the temple, they pitched their tents round about, every man according to his family, consisting of his wife, and his sons, and his daughters, and their sons, and their daughters, from the eldest down to the youngest, every family being separate one from another.
@@ -5108,10 +5104,9 @@ And the things are called interpreters,
 and no man can look in them except he be commanded, lest he should look for
 that he ought not
 and he should perish.
-And And whosoever is commanded to look in them,
+And whosoever is commanded to look in them,
 the same is called seer.
-And behold, the king of the people who are in the land of Zarahemla is the man that is commanded to do these things,
-and who has this high gift from God.
+And behold, the king of the people who are in the land of Zarahemla is the man that is commanded to do these things, and who has this high gift from God.
 And the king said that a seer is greater than a prophet.
 And Ammon said that a seer is a revelator and a prophet also;
 and a gift which is greater can no man have, except he should possess the power of God, which no man can;
@@ -5712,8 +5707,7 @@ And after this manner he did baptize every one that went forth to the place of M
 yea, and they were baptized in the waters of Mormon, and were filled with the grace of God.
 And they were called the church of God, or the church of Christ, from that time forward. And it came to pass that whosoever was baptized by the power and authority of God was added to his church.
 And it came to pass that Alma, having authority from God, ordained priests; even one priest to every fifty of their number did he ordain to preach unto them, and to teach them concerning the things pertaining to the kingdom of God.
-And he commanded them that they should teach nothing save it were the things which he had taught,
-and which had been spoken by the mouth of the holy prophets.
+And he commanded them that they should teach nothing save it were the things which he had taught, and which had been spoken by the mouth of the holy prophets.
 Yea, even he commanded them that they should preach nothing save it were repentance and faith on the Lord, who had redeemed his people.
 And he commanded them that there should be no contention one with another, but that they should look forward with one eye, having one faith and one baptism, having their hearts knit together in unity and in love one towards another.
 And thus he commanded them to preach.
@@ -6473,8 +6467,7 @@ and if he can he will destroy them;
 and thus an unrighteous king doth pervert the ways of all righteousness.
 And now behold I say unto you, it is not expedient that such abominations should come upon you.
 Therefore, choose you by the voice of this people, judges,
-that ye may be judged according to the laws which have been given you by our fathers, which are correct,
-and which were given them by the hand of the Lord.
+that ye may be judged according to the laws which have been given you by our fathers, which are correct, and which were given them by the hand of the Lord.
 Now it is not common that the voice of the people desireth anything contrary to that which is right; but it is common for the lesser part of the people to desire that which is not right;
 therefore this shall ye observe and make it your law--to do your business by the voice of the people.
 And if the time comes that the voice of the people doth choose iniquity, then is the time that the judgments of God will come upon you;
@@ -8455,9 +8448,7 @@ Now there was a multitude gathered together because of the commandment of the qu
 But the king stood forth among them and administered unto them.
 And they were pacified towards Aaron and those who were with him.
 And it came to pass that when the king saw that the people were pacified, he caused that Aaron and his brethren should stand forth in the midst of the multitude, and that they should preach the word unto them.
-And it came to pass that the king sent a proclamation throughout all the land, amongst all his people who were in all his land, who were in all the regions round about, which was bordering even to the sea, on the east and on the west,
-and which was divided from the land of Zarahemla by a narrow strip of wilderness, which ran from the sea east even to the sea west, and round about on the borders of the seashore, and the borders of the wilderness which was on the north by the land of Zarahemla, through the borders of Manti, by the head of the river Sidon, running from the east towards the west
---and thus were the Lamanites
+And it came to pass that the king sent a proclamation throughout all the land, amongst all his people who were in all his land, who were in all the regions round about, which was bordering even to the sea, on the east and on the west, and which was divided from the land of Zarahemla by a narrow strip of wilderness, which ran from the sea east even to the sea west, and round about on the borders of the seashore, and the borders of the wilderness which was on the north by the land of Zarahemla, through the borders of Manti, by the head of the river Sidon, running from the east towards the west--and thus were the Lamanites
 and the Nephites divided.
 Now, the more idle part of the Lamanites lived in the wilderness, and dwelt in tents;
 and they were spread through the wilderness on the west, in the land of Nephi;
@@ -8570,7 +8561,7 @@ And now it came to pass that when the king had made an end of these sayings,
 and all the people were assembled together,
 they took their swords, and all the weapons which were used for the shedding of man's blood,
 and they did bury them up deep in the earth.
-And And this they did,
+And this they did,
 it being in their view a testimony to God, and also to men,
 that they never would use weapons again for the shedding of man's blood;
 and this they did, vouching and covenanting with God,
@@ -11161,7 +11152,7 @@ And it came to pass that those men whom we sent with the prisoners did arrive in
 But behold, my little band of two thousand and sixty fought most desperately;
 yea, they were firm before the Lamanites,
 and did administer death unto all those who opposed them.
-And And as the remainder of our army were about to give way before the Lamanites,
+And as the remainder of our army were about to give way before the Lamanites,
 behold, those two thousand and sixty were firm and undaunted.
 Yea, and they did obey and observe to perform every word of command with exactness;
 yea, and even according to their faith it was done unto them;
@@ -11325,7 +11316,7 @@ Yea, even they who have looked up to you for protection, yea, have placed you in
 yea, ye might have sent armies unto them, to have strengthened them, and have saved thousands of them from falling by the sword.
 But behold, this is not all
 --ye have withheld your provisions from them, insomuch that many have fought and bled out their lives because of their great desires which they had for the welfare of this people; yea, and this they have done when they were about to perish with hunger, because of your exceedingly great neglect towards them.
-And And now, my beloved brethren--for ye ought to be beloved;
+And now, my beloved brethren--for ye ought to be beloved;
 yea, and ye ought to have stirred yourselves more diligently for the welfare and the freedom of this people;
 but behold, ye have neglected them insomuch that the blood of thousands shall come upon your heads for vengeance;
 yea, for known unto God were all their cries, and all their sufferings --
@@ -11700,7 +11691,7 @@ Yea, and even they did spread forth into all parts of the land, into whatever pa
 And now no part of the land was desolate,
 save it were for timber;
 but because of the greatness of the destruction of the people who had before inhabited the land it was called desolate.
-And And there being but little timber upon the face of the land,
+And there being but little timber upon the face of the land,
 nevertheless the people who went forth became exceedingly expert in the working of cement;
 therefore they did build houses of cement, in the which they did dwell.
 And it came to pass that they did multiply and spread, and did go forth from the land southward to the land northward, and did spread insomuch that they began to cover the face of the whole earth, from the sea south to the sea north, from the sea west to the sea east.
@@ -12148,7 +12139,7 @@ yea, they have testified of the coming of Christ, and have looked forward, and h
 And behold, he is God, and he is with them,
 and he did manifest himself unto them, that they were redeemed by him;
 and they gave unto him glory, because of that which is to come.
-And And now, seeing ye know these things and cannot deny them except ye shall lie, therefore in this ye have sinned,
+And now, seeing ye know these things and cannot deny them except ye shall lie, therefore in this ye have sinned,
 for ye have rejected all these things, notwithstanding so many evidences which ye have received;
 yea, even ye have received all things, both things in heaven, and all things which are in the earth, as a witness that they are true.
 But behold, ye have rejected the truth, and rebelled against your holy God;
@@ -12736,7 +12727,7 @@ I will not utterly destroy them,
 but I will cause that in the day of my wisdom
 they shall return again unto me,
 saith the Lord.
-And And now behold, saith the Lord, concerning the people of the Nephites:
+And now behold, saith the Lord, concerning the people of the Nephites:
 If they will not repent, and observe to do my will, I will utterly destroy them, saith the Lord, because of their unbelief notwithstanding the many mighty works which I have done among them; and as surely as the Lord liveth shall these things be, saith the Lord.
 And now, it came to pass that there were many who heard the words of Samuel, the Lamanite, which he spake upon the walls of the city. And as many as believed on his word went forth and sought for Nephi;
 and when they had come forth and found him they confessed unto him their sins and denied not, desiring that they might be baptized unto the Lord.
@@ -13632,7 +13623,7 @@ knock,
 and it shall be opened unto you.
 For every one that asketh, receiveth;
 and he that seeketh, findeth; and to him that knocketh, it shall be opened.
-Or Or what man is there of you,
+Or what man is there of you,
 who, if his son ask bread, will give him a stone?
 Or if he ask a fish, will he give him a serpent?
 If ye then, being evil, know how to give good gifts unto your children,
@@ -14247,7 +14238,7 @@ This is the heritage of the servants of the Lord, and their righteousness is of 
 saith the Lord.
 And now, behold, I say unto you, that ye ought to search these things. Yea, a commandment I give unto you that ye search these things diligently; for great are the words of Isaiah.
 For surely he spake as touching all things concerning my people which are of the house of Israel; therefore it must needs be that he must speak also to the Gentiles.
-And And all things that he spake
+And all things that he spake
 have been
 and shall be, even according to the words which he spake.
 Therefore give heed to my words; write the things which I have told you;
@@ -15470,8 +15461,7 @@ therefore it sufficeth me to say that Jesus showed himself unto this man in the 
 And he ministered unto him even as he ministered unto the Nephites;
 and all this, that this man might know that he was God, because of the many great works which the Lord had showed unto him.
 And because of the knowledge of this man he could not be kept from beholding within the veil;
-and he saw the finger of Jesus,
-which, when he saw, he fell with fear;
+and he saw the finger of Jesus, which, when he saw, he fell with fear;
 for he knew that it was the finger of the Lord;
 and he had faith no longer,
 for he knew,

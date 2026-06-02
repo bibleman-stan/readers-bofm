@@ -5932,7 +5932,7 @@
 54	,	,	PUNCT	_	_	57	punct	_	_
 55	and	and	CCONJ	_	_	57	cc	_	_
 56	which	which	PRON	_	_	57	nsubj	_	_
-57	fadeth	fade	VERB	_	_	53	conj	_	_
+57	fadeth	fade	VERB	_	_	17	acl:relcl	_	_
 58	not	not	PART	_	_	59	advmod	_	_
 59	away	away	ADV	_	_	57	advmod	_	_
 60	;	;	PUNCT	_	_	66	punct	_	_
@@ -11725,7 +11725,7 @@
 24	can	can	AUX	_	_	27	aux	_	_
 25	not	not	PART	_	_	27	advmod	_	_
 26	be	be	AUX	_	_	27	aux:pass	_	_
-27	written	write	VERB	_	_	22	ccomp	_	_
+27	written	write	VERB	_	_	19	acl:relcl	_	_
 28	;	;	PUNCT	_	_	33	punct	_	_
 29	and	and	CCONJ	_	_	33	cc	_	_
 30	nothing	nothing	PRON	_	_	33	obj	_	_

@@ -924,8 +924,10 @@ def verse_atu_lines(verse_text, sentences):
         idx = cur["toks"].index(trailing)
         tail_after = cur["toks"][idx + 1:]
         cur["toks"] = cur["toks"][:idx] + tail_after
-        if cur["toks"]:
-            cur["hi"] = cur["toks"][-1].end
+        # The transferred CCONJ must leave cur's char-range too. Otherwise an
+        # empty cur (no toks left) still slices the CCONJ at lo:hi, and the
+        # leader-carry pass then prepends it AGAIN to nxt -> "And And", "Or Or".
+        cur["hi"] = cur["toks"][-1].end if cur["toks"] else trailing.start
         nxt["toks"] = [trailing] + nxt["toks"]
         nxt["lo"] = trailing.start
     lines = [verse_text[s["lo"]:s["hi"]].strip() for s in segs]

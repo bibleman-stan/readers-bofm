@@ -5703,7 +5703,7 @@
 54	and	and	CCONJ	_	_	57	cc	_	_
 55	who	who	PRON	_	_	57	nsubj:pass	_	_
 56	was	be	AUX	_	_	57	aux:pass	_	_
-57	preserved	preserve	VERB	_	_	32	conj	_	_
+57	preserved	preserve	VERB	_	_	34	acl:relcl	_	_
 58	by	by	ADP	_	_	60	case	_	_
 59	the	the	DET	_	_	60	det	_	_
 60	hand	hand	NOUN	_	_	57	obl:agent	_	_
@@ -11621,7 +11621,7 @@
 41	and	and	CCONJ	_	_	44	cc	_	_
 42	who	who	PRON	_	_	44	nsubj:pass	_	_
 43	were	be	AUX	_	_	44	aux:pass	_	_
-44	afflicted	afflict	VERB	_	_	33	conj	_	_
+44	afflicted	afflict	VERB	_	_	36	acl:relcl	_	_
 45	with	with	ADP	_	_	47	case	_	_
 46	all	all	DET	_	_	47	det	_	_
 47	manner	manner	NOUN	_	_	44	obl	_	_
@@ -25382,7 +25382,7 @@
 20	,	,	PUNCT	_	_	23	punct	_	_
 21	or	or	CCONJ	_	_	23	cc	_	_
 22	which	which	PRON	_	_	23	nsubj	_	_
-23	gives	give	VERB	_	_	17	conj	_	_
+23	gives	give	VERB	_	_	14	acl:relcl	_	_
 24	a	a	DET	_	_	26	det	_	_
 25	greater	great	ADJ	_	_	26	amod	_	_
 26	account	record	NOUN	_	_	23	obj	_	_
