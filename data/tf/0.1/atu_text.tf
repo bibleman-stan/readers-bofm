@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T03:57:09+00:00Z
+@dateWritten=2026-06-02T15:12:17+00:00Z
 
 302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -9772,8 +9772,7 @@ If ye will keep my commandments ye shall prosper in the land
 And now remember, my son, that God has entrusted you with these things, which are sacred,
 which he has kept sacred,
 and also which he will keep and preserve for a wise purpose in him, that he may show forth his power unto future generations.
-And now behold, I tell you by the spirit of prophecy, that if ye transgress the commandments of God,
-behold, these things which are sacred shall be taken away from you by the power of God,
+And now behold, I tell you by the spirit of prophecy, that if ye transgress the commandments of God, behold, these things which are sacred shall be taken away from you by the power of God,
 and ye shall be delivered up unto Satan, that he may sift you as chaff before the wind.
 But if ye keep the commandments of God,
 and do with these things which are sacred according to that which the Lord doth command you,
