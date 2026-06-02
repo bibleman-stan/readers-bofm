@@ -8,9 +8,9 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T17:07:03+00:00Z
+@dateWritten=2026-06-02T17:12:12+00:00Z
 
-319414	1nephi
+319419	1nephi
 2nephi
 jacob
 enos

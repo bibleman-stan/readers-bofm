@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T17:07:03+00:00Z
+@dateWritten=2026-06-02T17:12:12+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -6455,7 +6455,12 @@ that he is God;
 then shall they confess, who live without God in the world,
 that the judgment of an everlasting punishment is just upon them;
 and they shall quake, and tremble, and shrink beneath the glance of his all-searching eye.
-And now it came to pass that Alma began from this time forward to teach the people, and those who were with Alma at the time the angel appeared unto them, traveling round about through all the land, publishing to all the people the things which they had heard and seen, and preaching the word of God in much tribulation, being greatly persecuted by those who were unbelievers, being smitten by many of them.
+And now it came to pass that Alma began from this time forward to teach the people, and those who were with Alma at the time the angel appeared unto them,
+traveling round about through all the land,
+publishing to all the people the things which they had heard and seen,
+and preaching the word of God in much tribulation,
+being greatly persecuted by those who were unbelievers,
+being smitten by many of them.
 But notwithstanding all this, they did impart much consolation to the church, confirming their faith, and exhorting them with long-suffering and much travail to keep the commandments of God.
 And four of them were the sons of Mosiah; and their names were Ammon, and Aaron, and Omner, and Himni;
 these were the names of the sons of Mosiah.
