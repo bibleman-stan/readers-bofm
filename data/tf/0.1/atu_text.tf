@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-01T23:58:24+00:00Z
+@dateWritten=2026-06-02T00:11:15+00:00Z
 
 302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -7225,10 +7225,8 @@ Blessed art thou, Alma; therefore, lift up thy head and rejoice,
 for thou hast great cause to rejoice;
 for thou hast been faithful in keeping the commandments of God from the time which thou receivedst thy first message from him.
 Behold, I am he that delivered it unto you.
-And behold, I am sent to command thee that thou return to the city of Ammonihah, and preach again unto the people of the city;
-yea, preach unto them. Yea,
-say unto them,
-except they repent the Lord God will destroy them.
+And behold, I am sent to command thee that thou return to the city of Ammonihah, and preach again unto the people of the city; yea, preach unto them.
+Yea, say unto them, except they repent the Lord God will destroy them.
 For behold, they do study at this time that they may destroy the liberty of thy people, (for thus saith the Lord) which is contrary to the statutes, and judgments, and commandments which he has given unto his people.
 Now it came to pass that after Alma had received his message from the angel of the Lord he returned speedily to the land of Ammonihah.
 And he entered the city by another way, yea, by the way which is on the south of the city of Ammonihah.
@@ -10307,7 +10305,8 @@ yea, we will see who shall be brought into bondage.
 And now it came to pass that when Zerahemnah had heard these sayings he came forth and delivered up his sword and his cimeter, and his bow into the hands of Moroni, and said unto him:
 Behold, here are our weapons of war;
 we will deliver them up unto you,
-but we will not suffer ourselves to take an oath unto you, which we know that we shall break, and also our children; but take our weapons of war, and suffer that we may depart into the wilderness;
+but we will not suffer ourselves to take an oath unto you, which we know that we shall break, and also our children;
+but take our weapons of war, and suffer that we may depart into the wilderness;
 otherwise we will retain our swords,
 and we will perish or conquer.
 Behold, we are not of your faith;
