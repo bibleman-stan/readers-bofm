@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T19:04:19+00:00Z
+@dateWritten=2026-06-02T19:28:15+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -506,8 +506,8 @@ And I said:
 I desire to behold the things which my father saw.
 And the Spirit said unto me:
 Believest thou that thy father saw the tree of which he hath spoken?
-And I said: Yea,
-thou knowest that I believe all the words of my father.
+And I said:
+Yea, thou knowest that I believe all the words of my father.
 And when I had spoken these words, the Spirit cried with a loud voice, saying:
 Hosanna to the Lord, the most high God;
 for he is God over all the earth, yea, even above all.
@@ -555,8 +555,8 @@ And I looked and beheld the virgin again, bearing a child in her arms.
 And the angel said unto me:
 Behold the Lamb of God, yea, even the Son of the Eternal Father!
 Knowest thou the meaning of the tree which thy father saw?
-And I answered him, saying: Yea,
-it is the love of God, which sheddeth itself abroad in the hearts of the children of men;
+And I answered him, saying:
+Yea, it is the love of God, which sheddeth itself abroad in the hearts of the children of men;
 wherefore, it is the most desirable above all things.
 And he spake unto me, saying:
 Yea, and the most joyous to the soul.
@@ -3724,8 +3724,8 @@ and then can ye speak with the tongue of angels, and shout praises unto the Holy
 But, behold, my beloved brethren, thus came the voice of the Son unto me, saying: After ye have repented of your sins, and witnessed unto the Father
 that ye are willing to keep my commandments, by the baptism of water, and have received the baptism of fire and of the Holy Ghost, and can speak with a new tongue, yea, even with the tongue of angels, and after this should deny me, it would have been better for you
 that ye had not known me.
-And I heard a voice from the Father, saying: Yea,
-the words of my Beloved are true and faithful.
+And I heard a voice from the Father, saying:
+Yea, the words of my Beloved are true and faithful.
 He that endureth to the end, the same shall be saved.
 And now, my beloved brethren, I know by this that unless a man shall endure to the end, in following the example of the Son of the living God, he cannot be saved.
 Wherefore, do the things which I have told you I have seen that your Lord and your Redeemer should do;
@@ -4201,8 +4201,8 @@ for I have done all.
 What could I have done more for my vineyard?
 But, behold, the servant said unto the Lord of the vineyard:
 Spare it a little longer.
-And the Lord said: Yea,
-I will spare it a little longer, for it grieveth me that I should lose the trees of my vineyard.
+And the Lord said:
+Yea, I will spare it a little longer, for it grieveth me that I should lose the trees of my vineyard.
 Wherefore, let us take of the branches of these which I have planted in the nethermost parts of my vineyard, and let us graft them into the tree from whence
 they came; and let us pluck from the tree those branches whose fruit is most bitter, and graft in the natural branches of the tree in the stead thereof.
 And this will I do
@@ -7472,8 +7472,8 @@ And now behold, for this great evil thou shalt have thy reward.
 And Zeezrom said unto him:
 Thou sayest
 there is a true and living God?
-And Amulek said: Yea,
-there is a true and living God.
+And Amulek said:
+Yea, there is a true and living God.
 Now Zeezrom said:
 Is there more than one God?
 And he answered, No.
@@ -7508,8 +7508,8 @@ therefore, how can ye be saved, except ye inherit the kingdom of heaven?
 Therefore, ye cannot be saved in your sins.
 Now Zeezrom saith again unto him:
 Is the Son of God the very Eternal Father?
-And Amulek said unto him: Yea,
-he is the very Eternal Father of heaven and of earth, and all things which in them are; he is the beginning and the end, the first and the last;
+And Amulek said unto him:
+Yea, he is the very Eternal Father of heaven and of earth, and all things which in them are; he is the beginning and the end, the first and the last;
 And he shall come into the world to redeem his people;
 and he shall take upon him the transgressions of those who believe on his name; and these are they that shall have eternal life,
 and salvation cometh to none else.
@@ -8105,8 +8105,8 @@ Now Ammon being wise, yet harmless,
 he said unto Lamoni:
 Wilt thou hearken unto my words, if I tell thee by what power I do these things?
 And this is the thing that I desire of thee.
-And the king answered him, and said: Yea,
-I will believe all thy words.
+And the king answered him, and said:
+Yea, I will believe all thy words.
 And thus he was caught with guile.
 And Ammon began to speak unto him with boldness, and said unto him:
 Believest thou that there is a God?
@@ -8119,8 +8119,8 @@ And Ammon said:
 This is God.
 And Ammon said unto him again:
 Believest thou that this Great Spirit, who is God, created all things which are in heaven and in the earth?
-And he said: Yea,
-I believe that he created all things which are in the earth;
+And he said:
+Yea, I believe that he created all things which are in the earth;
 but I do not know the heavens.
 And Ammon said unto him:
 The heavens is a place where God dwells and all his holy angels.
@@ -8461,8 +8461,8 @@ and he said:
 Behold, assuredly as thou livest, O king, there is a God.
 And the king said:
 Is God that Great Spirit that brought our fathers out of the land of Jerusalem?
-And Aaron said unto him: Yea,
-he is that Great Spirit,
+And Aaron said unto him:
+Yea, he is that Great Spirit,
 and he created all things both in heaven and in earth.
 Believest thou this?
 And he said: Yea,
@@ -8861,8 +8861,8 @@ And Ammon said:
 I will go and inquire of the Lord,
 and if he say unto us, go down unto our brethren,
 will ye go?
-And the king said unto him: Yea,
-if the Lord saith unto us go, we will go down unto our brethren, and we will be their slaves until we repair unto them the many murders and sins which we have committed against them.
+And the king said unto him:
+Yea, if the Lord saith unto us go, we will go down unto our brethren, and we will be their slaves until we repair unto them the many murders and sins which we have committed against them.
 But Ammon said unto him:
 It is against the law of our brethren, which was established by my father,
 that there should be any slaves among them;
@@ -9121,8 +9121,8 @@ yea, and also all the planets which move in their regular form do witness that t
 And yet do ye go about, leading away the hearts of this people, testifying unto them
 there is no God?
 And yet will ye deny against all these witnesses?
-And he said: Yea,
-I will deny, except ye shall show me a sign.
+And he said:
+Yea, I will deny, except ye shall show me a sign.
 And now it came to pass that Alma said unto him:
 Behold, I am grieved because of the hardness of your heart, yea,
 that ye will still resist the spirit of the truth, that thy soul may be destroyed.
@@ -10318,8 +10318,8 @@ And he said: Yea,
 I believe all the words which thou hast spoken.
 And Alma said unto him again:
 Will ye keep my commandments?
-And he said: Yea,
-I will keep thy commandments with all my heart.
+And he said:
+Yea, I will keep thy commandments with all my heart.
 Then Alma said unto him:
 Blessed art thou;
 and the Lord shall prosper thee in this land.
