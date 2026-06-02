@@ -1665,8 +1665,39 @@ def wrap_punctuation(text):
             result.append(part)
     return ''.join(result)
 
-def process_line(line, swap_list):
-    return wrap_punctuation(fix_articles(fix_participles(apply_swaps(line, swap_list))))
+# Cross-verse continuity markers (per atu-method framework.md §v1.6). When an
+# ATU spans a verse boundary, the merged sense-line lives in the EARLIER verse's
+# block with an inline unicode superscript at the seam preserving the next
+# verse's number. Render those superscripts as clickable HTML anchors.
+import re as _xv_re
+_XV_SUPERSCRIPT_TO_DIGIT = {
+    "²": "2", "³": "3",
+    "⁰": "0", "¹": "1",
+    "⁴": "4", "⁵": "5", "⁶": "6", "⁷": "7",
+    "⁸": "8", "⁹": "9",
+}
+_XV_SUPERSCRIPT_RE = _xv_re.compile(
+    "[" + "".join(_XV_SUPERSCRIPT_TO_DIGIT.keys()) + "]+"
+)
+
+
+def wrap_verse_markers(line, chapter_num):
+    """Replace inline unicode superscript verse markers with clickable HTML
+    anchors. Mirrors GNT readers-gnt/scripts/build_books.py:_wrap_verse_markers
+    per atu-method framework.md §v1.6 cross-verse continuity."""
+    def _repl(m):
+        marker = m.group(0)
+        digits = "".join(_XV_SUPERSCRIPT_TO_DIGIT[c] for c in marker)
+        inline_id = f"v-{chapter_num}-{digits}-inline"
+        return f'<sup class="verse-marker" id="{inline_id}">{marker}</sup>'
+    return _XV_SUPERSCRIPT_RE.sub(_repl, line)
+
+
+def process_line(line, swap_list, chapter_num=None):
+    out = wrap_punctuation(fix_articles(fix_participles(apply_swaps(line, swap_list))))
+    if chapter_num is not None:
+        out = wrap_verse_markers(out, chapter_num)
+    return out
 
 # ============================================================================
 # V0 PARAGRAPH TEXT — original verse paragraphs for base-layer display
@@ -2220,7 +2251,7 @@ def _fix_double_that(lines):
 def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=None, deep_structure_verses=None):
     ref = verse['ref']
     fixed_lines = _fix_double_that(verse['lines'])
-    processed = [process_line(l, swap_list) for l in fixed_lines]
+    processed = [process_line(l, swap_list, chapter_num=verse.get('chapter')) for l in fixed_lines]
 
     # Check for intertext references on this verse
     entries = get_intertext(book_id, verse['chapter'], verse['verse']) if book_id else []

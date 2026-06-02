@@ -8,9 +8,9 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T00:11:15+00:00Z
+@dateWritten=2026-06-02T02:54:55+00:00Z
 
-319420	1 Nephi
+319419	1 Nephi
 2 Nephi
 Jacob
 Enos
@@ -264,7 +264,7 @@ Moroni
 Moroni
 Moroni
 Moroni
-327099	1 Nephi
+327098	1 Nephi
 1 Nephi
 1 Nephi
 1 Nephi

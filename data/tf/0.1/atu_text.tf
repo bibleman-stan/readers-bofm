@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T00:11:15+00:00Z
+@dateWritten=2026-06-02T02:54:55+00:00Z
 
 302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -9749,8 +9749,7 @@ And now, my son Helaman, I command you that ye take the records which have been 
 And I also command you that ye keep a record of this people, according as I have done, upon the plates of Nephi,
 and keep all these things sacred which I have kept, even as I have kept them;
 for it is for a wise purpose that they are kept.
-And these plates of brass, which contain these engravings, which have the records of the holy scriptures upon them, which have the genealogy of our forefathers, even from the beginning--
-Behold, it has been prophesied by our fathers, that they should be kept and handed down from one generation to another,
+And these plates of brass, which contain these engravings, which have the records of the holy scriptures upon them, which have the genealogy of our forefathers, even from the beginning-- ⁴Behold, it has been prophesied by our fathers, that they should be kept and handed down from one generation to another,
 and be kept and preserved by the hand of the Lord until they should go forth unto every nation, kindred, tongue, and people,
 that they shall know of the mysteries contained thereon.
 And now behold, if they are kept they must retain their brightness;

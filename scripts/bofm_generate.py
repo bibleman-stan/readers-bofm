@@ -1019,17 +1019,64 @@ def deployed_atu_lines(book, c, v, verse_text, sentences):
     return ov if ov is not None else verse_atu_lines(verse_text, sentences)
 
 
+_CROSS_VERSE_PATH = REPO / "data" / "text-files" / "v2-adjudicated" / "cross-verse-merges.json"
+_cross_verse_cache = None
+
+
+def _load_cross_verse_merges():
+    """Cross-verse continuity merges per atu-method framework.md §v1.6 (Tanakh
+    Rule H10 analog). Returns {first_ref_str: merge_dict} keyed by 'book ch:v'."""
+    global _cross_verse_cache
+    if _cross_verse_cache is not None:
+        return _cross_verse_cache
+    out = {}
+    if _CROSS_VERSE_PATH.exists():
+        data = json.loads(_CROSS_VERSE_PATH.read_text(encoding="utf-8"))
+        for m in data.get("merges", []):
+            out[m["first_ref"].lower()] = m
+    _cross_verse_cache = out
+    return out
+
+
 def generate(book, chap=None):
     verses = read_v0(book)
     parsed = parse_book(book)
+    cross_verse = _load_cross_verse_merges()
     out = []
-    for (c, v) in sorted(verses):
+    sorted_keys = sorted(verses)
+    skip_next_atu = {}  # {(c, v): N} — number of ATUs to skip from start of verse (already merged into prior)
+    for ki, (c, v) in enumerate(sorted_keys):
         if chap is not None and c != chap:
             continue
+        ref_str = f"{book} {c}:{v}"
         out.append(f"{c}:{v}")
-        ov = _apply_override(verses[(c, v)], f"{book} {c}:{v}")
-        out.extend(ov if ov is not None else
-                   verse_atu_lines(verses[(c, v)], parsed.get((c, v), [])))
+        ov = _apply_override(verses[(c, v)], ref_str)
+        atu_lines = ov if ov is not None else verse_atu_lines(verses[(c, v)], parsed.get((c, v), []))
+
+        # Skip ATUs that were merged into the prior verse's last ATU
+        if (c, v) in skip_next_atu:
+            atu_lines = atu_lines[skip_next_atu[(c, v)]:]
+
+        # If THIS verse is the first in a cross-verse merge, append the next
+        # verse's leading ATU(s) onto this verse's last ATU, with inline marker
+        merge = cross_verse.get(ref_str.lower())
+        if merge and ki + 1 < len(sorted_keys):
+            next_c, next_v = sorted_keys[ki + 1]
+            next_ref_str = f"{book} {next_c}:{next_v}"
+            if f"{next_c}:{next_v}" == merge["second_ref"].rsplit(" ", 1)[1]:
+                next_ov = _apply_override(verses[(next_c, next_v)], next_ref_str)
+                next_atu_lines = next_ov if next_ov is not None else verse_atu_lines(verses[(next_c, next_v)], parsed.get((next_c, next_v), []))
+                take_n = merge.get("second_atu_count_from_start", 1)
+                drop_n = merge.get("first_atu_count_from_end", 1)
+                marker = merge.get("marker_char", "")
+                if atu_lines and next_atu_lines and take_n <= len(next_atu_lines) and drop_n <= len(atu_lines):
+                    head_to_merge = atu_lines[-drop_n:]
+                    tail_to_merge = next_atu_lines[:take_n]
+                    merged_line = " ".join(head_to_merge) + " " + marker + " ".join(tail_to_merge)
+                    atu_lines = atu_lines[:-drop_n] + [merged_line]
+                    skip_next_atu[(next_c, next_v)] = take_n
+
+        out.extend(atu_lines)
         out.append("")
     return out
 

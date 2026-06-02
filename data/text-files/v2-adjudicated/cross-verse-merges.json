@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "documentation": "Cross-verse continuity merges: cases where a single atomic thought spans an LDS-versification boundary. The merged ATU stays whole in the EARLIER verse's block; the inline superscript verse-marker preserves the versification reference for the continuation. Per atu-method/docs/framework.md §v1.6 (Tanakh Rule H10 analog).",
+  "merges": [
+    {
+      "first_ref": "alma 37:3",
+      "second_ref": "alma 37:4",
+      "first_atu_count_from_end": 1,
+      "second_atu_count_from_start": 1,
+      "marker_char": "⁴",
+      "warrant": "Verse 3 is a topic-fronted NP with three stacked relative clauses and no finite predicate, ending with an em-dash. Verse 4's opening ATU ('Behold, it has been prophesied by our fathers, that they should be kept and handed down from one generation to another,') is the predication about that topic; its 'they' is anaphoric to verse 3's 'plates of brass'. The two verse-bounded blocks form one structural ATU under bidirectional test.",
+      "added": "2026-06-01"
+    }
+  ]
+}
