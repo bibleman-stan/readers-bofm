@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T16:51:01+00:00Z
+@dateWritten=2026-06-02T17:07:03+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -8912,8 +8912,7 @@ otherwise we will perish in the land.
 And it came to pass that Ammon went and inquired of the Lord, and the Lord said unto him:
 Get this people out of this land,
 that they perish not;
-for Satan has great hold on the hearts of the Amalekites, who do stir up the Lamanites to anger against their brethren to slay them;
-therefore get thee out of this land; and blessed are this people in this generation,
+for Satan has great hold on the hearts of the Amalekites, who do stir up the Lamanites to anger against their brethren to slay them; therefore get thee out of this land; and blessed are this people in this generation,
 for I will preserve them.
 And now it came to pass that Ammon went and told the king all the words which the Lord had said unto him.
 And they gathered together all their people, yea, all the people of the Lord, and did gather together all their flocks and herds, and departed out of the land, and came into the wilderness which divided the land of Nephi from the land of Zarahemla, and came over near the borders of the land.
@@ -12933,7 +12932,8 @@ and they began to fear because of their iniquity and their unbelief.
 And it came to pass that there was no darkness in all that night, but it was as light as though it was mid-day. And it came to pass that the sun did rise in the morning again, according to its proper order; and they knew that it was the day that the Lord should be born, because of the sign which had been given.
 And it had come to pass, yea, all things, every whit, according to the words of the prophets.
 And it came to pass also that a new star did appear, according to the word.
-And it came to pass that from this time forth there began to be lyings sent forth among the people, by Satan, to harden their hearts, to the intent that they might not believe in those signs and wonders which they had seen; but notwithstanding these lyings and deceivings the more part of the people did believe, and were converted unto the Lord.
+And it came to pass that from this time forth there began to be lyings sent forth among the people, by Satan, to harden their hearts, to the intent that they might not believe in those signs and wonders which they had seen;
+but notwithstanding these lyings and deceivings the more part of the people did believe, and were converted unto the Lord.
 And it came to pass that Nephi went forth among the people, and also many others, baptizing unto repentance, in the which there was a great remission of sins. And thus the people began again to have peace in the land.
 And there were no contentions,
 save it were a few that began to preach, endeavoring to prove by the scriptures that it was no more expedient to observe the law of Moses.

@@ -5203,7 +5203,7 @@
 26	,	,	PUNCT	_	_	29	punct	_	_
 27	and	and	CCONJ	_	_	29	cc	_	_
 28	to	to	PART	_	_	29	mark	_	_
-29	set	set	VERB	_	_	3	conj	_	_
+29	set	set	VERB	_	_	15	conj	_	_
 30	their	their	PRON	_	_	31	nmod:poss	_	_
 31	hearts	heart	NOUN	_	_	29	obj	_	_
 32	upon	upon	ADP	_	_	33	case	_	_
@@ -6452,7 +6452,7 @@
 44	and	and	CCONJ	_	_	47	cc	_	_
 45	they	they	PRON	_	_	47	nsubj	_	_
 46	did	do	AUX	_	_	47	aux	_	_
-47	sing	sing	VERB	_	_	28	conj	_	_
+47	sing	sing	VERB	_	_	36	conj	_	_
 48	redeeming	redeem	VERB	_	_	47	xcomp	_	_
 49	love	love	NOUN	_	_	48	obj	_	_
 50	.	.	PUNCT	_	_	28	punct	_	_
@@ -6852,7 +6852,7 @@
 16	day	day	NOUN	_	_	10	obl	_	_
 17	,	,	PUNCT	_	_	19	punct	_	_
 18	and	and	CCONJ	_	_	19	cc	_	_
-19	say	say	VERB	_	_	4	conj	_	_
+19	say	say	VERB	_	_	10	conj	_	_
 20	--	--	PUNCT	_	_	28	punct	_	_
 21	Lord	Lord	PROPN	_	_	28	vocative	_	_
 22	,	,	PUNCT	_	_	21	punct	_	_
@@ -7852,7 +7852,7 @@
 22	name	name	NOUN	_	_	25	obl	_	_
 23	he	he	PRON	_	_	25	nsubj	_	_
 24	doth	do	AUX	_	_	25	aux	_	_
-25	call	call	VERB	_	_	4	conj	_	_
+25	call	call	VERB	_	_	13	conj	_	_
 26	you	you	PRON	_	_	25	obj	_	_
 27	,	,	PUNCT	_	_	31	punct	_	_
 28	which	which	PRON	_	_	31	nsubj	_	_
@@ -9664,7 +9664,7 @@
 14	oft	oft	ADV	_	_	11	advmod	_	_
 15	,	,	PUNCT	_	_	17	punct	_	_
 16	and	and	CCONJ	_	_	17	cc	_	_
-17	join	join	VERB	_	_	7	conj	_	_
+17	join	join	VERB	_	_	11	conj	_	_
 18	in	in	ADP	_	_	19	case	_	_
 19	fasting	fasting	NOUN	_	_	17	obl	_	_
 20	and	and	CCONJ	_	_	22	cc	_	_
@@ -10751,7 +10751,7 @@
 10	,	,	PUNCT	_	_	13	punct	_	_
 11	and	and	CCONJ	_	_	13	cc	_	_
 12	be	be	AUX	_	_	13	aux:pass	_	_
-13	born	bear	VERB	_	_	3	conj	_	_
+13	born	bear	VERB	_	_	9	conj	_	_
 14	again	again	ADV	_	_	13	advmod	_	_
 15	;	;	PUNCT	_	_	19	punct	_	_
 16	for	for	SCONJ	_	_	19	mark	_	_
@@ -10837,7 +10837,7 @@
 10	not	not	PART	_	_	9	advmod	_	_
 11	,	,	PUNCT	_	_	13	punct	_	_
 12	and	and	CCONJ	_	_	13	cc	_	_
-13	lay	lay	VERB	_	_	4	conj	_	_
+13	lay	lay	VERB	_	_	7	conj	_	_
 14	aside	aside	ADP	_	_	13	compound:prt	_	_
 15	every	every	DET	_	_	16	det	_	_
 16	sin	sin	NOUN	_	_	13	obj	_	_
@@ -11190,7 +11190,7 @@
 52	,	,	PUNCT	_	_	55	punct	_	_
 53	or	or	CCONJ	_	_	55	cc	_	_
 54	from	from	ADP	_	_	55	case	_	_
-55	that	that	PRON	_	_	48	conj	_	_
+55	that	that	PRON	_	_	45	obl	_	_
 56	which	which	PRON	_	_	58	nsubj	_	_
 57	is	be	AUX	_	_	58	cop	_	_
 58	right	right	ADJ	_	_	55	acl:relcl	_	_
@@ -11421,7 +11421,7 @@
 15	ye	you	PRON	_	_	18	nsubj	_	_
 16	will	will	AUX	_	_	18	aux	_	_
 17	always	always	ADV	_	_	18	advmod	_	_
-18	abound	abound	VERB	_	_	2	conj	_	_
+18	abound	abound	VERB	_	_	5	conj	_	_
 19	in	in	ADP	_	_	21	case	_	_
 20	good	good	ADJ	_	_	21	amod	_	_
 21	works	work	NOUN	_	_	18	obl	_	_
@@ -13745,7 +13745,7 @@
 19	Lamanites	Lamanites	PROPN	_	_	22	nsubj:pass	_	_
 20	have	have	AUX	_	_	22	aux	_	_
 21	been	be	AUX	_	_	22	aux:pass	_	_
-22	cut	cut	VERB	_	_	3	conj	_	_
+22	cut	cut	VERB	_	_	12	conj	_	_
 23	off	off	ADP	_	_	22	compound:prt	_	_
 24	from	from	ADP	_	_	26	case	_	_
 25	his	his	PRON	_	_	26	nmod:poss	_	_
@@ -24934,7 +24934,7 @@
 31	hearts	heart	NOUN	_	_	28	nmod	_	_
 32	,	,	PUNCT	_	_	34	punct	_	_
 33	and	and	CCONJ	_	_	34	cc	_	_
-34	began	begin	VERB	_	_	19	conj	_	_
+34	began	begin	VERB	_	_	24	conj	_	_
 35	to	to	PART	_	_	36	mark	_	_
 36	humble	humble	VERB	_	_	34	xcomp	_	_
 37	themselves	themselves	PRON	_	_	36	obj	_	_
@@ -43710,7 +43710,7 @@
 39	them	they	PRON	_	_	38	obj	_	_
 40	;	;	PUNCT	_	_	42	punct	_	_
 41	therefore	therefore	ADV	_	_	42	advmod	_	_
-42	get	get	VERB	_	_	1	parataxis	_	_
+42	get	get	VERB	_	_	16	parataxis	_	_
 43	thee	you	PRON	_	_	42	obj	_	_
 44	out	out	ADP	_	_	47	case	_	_
 45	of	of	ADP	_	_	47	case	_	_

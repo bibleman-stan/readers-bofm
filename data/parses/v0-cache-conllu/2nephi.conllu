@@ -4341,7 +4341,7 @@
 97	my	my	PRON	_	_	98	nmod:poss	_	_
 98	covenants	covenant	NOUN	_	_	95	nmod	_	_
 99	,	,	PUNCT	_	_	9	punct	_	_
-100	saith	say	VERB	_	_	9	parataxis	_	_
+100	saith	say	VERB	_	_	52	parataxis	_	_
 101	the	the	DET	_	_	102	det	_	_
 102	Lord	Lord	PROPN	_	_	100	nsubj	_	_
 103	.	.	PUNCT	_	_	9	punct	_	_
@@ -4575,7 +4575,7 @@
 14	and	and	CCONJ	_	_	17	cc	_	_
 15	I	I	PRON	_	_	17	nsubj	_	_
 16	will	will	AUX	_	_	17	aux	_	_
-17	give	give	VERB	_	_	5	conj	_	_
+17	give	give	VERB	_	_	9	conj	_	_
 18	power	power	NOUN	_	_	17	obj	_	_
 19	unto	to	ADP	_	_	20	case	_	_
 20	him	he	PRON	_	_	17	obl	_	_
@@ -8546,7 +8546,7 @@
 28	and	and	CCONJ	_	_	31	cc	_	_
 29	they	they	PRON	_	_	31	nsubj	_	_
 30	shall	shall	AUX	_	_	31	aux	_	_
-31	bring	bring	VERB	_	_	2	conj	_	_
+31	bring	bring	VERB	_	_	11	conj	_	_
 32	thy	your	PRON	_	_	33	nmod:poss	_	_
 33	sons	son	NOUN	_	_	31	obj	_	_
 34	in	in	ADP	_	_	36	case	_	_
@@ -18659,7 +18659,7 @@
 14	,	,	PUNCT	_	_	17	punct	_	_
 15	but	but	CCONJ	_	_	17	cc	_	_
 16	they	they	PRON	_	_	17	nsubj	_	_
-17	understood	understand	VERB	_	_	3	conj	_	_
+17	understood	understand	VERB	_	_	5	conj	_	_
 18	not	not	PART	_	_	17	advmod	_	_
 19	;	;	PUNCT	_	_	21	punct	_	_
 20	and	and	CCONJ	_	_	21	cc	_	_
@@ -27094,7 +27094,7 @@
 19	and	and	CCONJ	_	_	22	cc	_	_
 20	there	there	PRON	_	_	22	expl	_	_
 21	shall	shall	AUX	_	_	22	aux	_	_
-22	be	be	VERB	_	_	5	conj	_	_
+22	be	be	VERB	_	_	16	conj	_	_
 23	great	great	ADJ	_	_	24	amod	_	_
 24	wars	war	NOUN	_	_	22	nsubj	_	_
 25	and	and	CCONJ	_	_	26	cc	_	_
@@ -29430,7 +29430,7 @@
 23	they	they	PRON	_	_	26	nsubj:pass	_	_
 24	shall	shall	AUX	_	_	26	aux	_	_
 25	be	be	AUX	_	_	26	aux:pass	_	_
-26	read	read	VERB	_	_	4	conj	_	_
+26	read	read	VERB	_	_	16	conj	_	_
 27	by	by	ADP	_	_	29	case	_	_
 28	the	the	DET	_	_	29	det	_	_
 29	power	power	NOUN	_	_	26	obl:agent	_	_
@@ -29543,7 +29543,7 @@
 67	and	and	CCONJ	_	_	70	cc	_	_
 68	they	they	PRON	_	_	70	nsubj	_	_
 69	shall	shall	AUX	_	_	70	aux	_	_
-70	testify	testify	VERB	_	_	25	conj	_	_
+70	testify	testify	VERB	_	_	48	conj	_	_
 71	to	to	ADP	_	_	73	case	_	_
 72	the	the	DET	_	_	73	det	_	_
 73	truth	truth	NOUN	_	_	70	obl	_	_
@@ -30448,7 +30448,7 @@
 20	the	the	DET	_	_	21	det	_	_
 21	scorner	scorner	NOUN	_	_	23	nsubj:pass	_	_
 22	is	be	AUX	_	_	23	aux:pass	_	_
-23	consumed	consume	VERB	_	_	9	conj	_	_
+23	consumed	consume	VERB	_	_	15	conj	_	_
 24	,	,	PUNCT	_	_	32	punct	_	_
 25	and	and	CCONJ	_	_	32	cc	_	_
 26	all	all	DET	_	_	28	det:predet	_	_
@@ -32594,7 +32594,7 @@
 44	;	;	PUNCT	_	_	47	punct	_	_
 45	and	and	CCONJ	_	_	47	cc	_	_
 46	I	I	PRON	_	_	47	nsubj	_	_
-47	bring	bring	VERB	_	_	1	conj	_	_
+47	bring	bring	VERB	_	_	34	conj	_	_
 48	forth	forth	ADP	_	_	47	compound:prt	_	_
 49	my	my	PRON	_	_	50	nmod:poss	_	_
 50	word	word	NOUN	_	_	47	obj	_	_
@@ -33638,7 +33638,7 @@
 21	wicked	wicked	ADJ	_	_	24	obj	_	_
 22	will	will	AUX	_	_	24	aux	_	_
 23	he	he	PRON	_	_	24	nsubj	_	_
-24	destroy	destroy	VERB	_	_	5	conj	_	_
+24	destroy	destroy	VERB	_	_	11	conj	_	_
 25	;	;	PUNCT	_	_	29	punct	_	_
 26	and	and	CCONJ	_	_	29	cc	_	_
 27	he	he	PRON	_	_	29	nsubj	_	_
@@ -34597,7 +34597,7 @@
 106	then	then	ADV	_	_	109	advmod	_	_
 107	can	can	AUX	_	_	109	aux	_	_
 108	ye	you	PRON	_	_	109	nsubj	_	_
-109	speak	speak	VERB	_	_	8	conj	_	_
+109	speak	speak	VERB	_	_	86	conj	_	_
 110	with	with	ADP	_	_	112	case	_	_
 111	the	the	DET	_	_	112	det	_	_
 112	tongue	tongue	NOUN	_	_	109	obl	_	_

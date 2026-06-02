@@ -3657,7 +3657,7 @@
 10	and	and	CCONJ	_	_	13	cc	_	_
 11	ye	you	PRON	_	_	13	nsubj	_	_
 12	also	also	ADV	_	_	13	advmod	_	_
-13	know	know	VERB	_	_	2	conj	_	_
+13	know	know	VERB	_	_	4	conj	_	_
 14	that	that	SCONJ	_	_	18	mark	_	_
 15	an	a	DET	_	_	16	det	_	_
 16	angel	angel	NOUN	_	_	18	nsubj	_	_
@@ -11332,7 +11332,7 @@
 54	and	and	CCONJ	_	_	57	cc	_	_
 55	I	I	PRON	_	_	57	nsubj	_	_
 56	also	also	ADV	_	_	57	advmod	_	_
-57	beheld	see	VERB	_	_	3	conj	_	_
+57	beheld	see	VERB	_	_	8	conj	_	_
 58	that	that	SCONJ	_	_	65	mark	_	_
 59	the	the	DET	_	_	60	det	_	_
 60	tree	tree	NOUN	_	_	65	nsubj	_	_
@@ -13949,7 +13949,7 @@
 35	a	a	DET	_	_	36	det	_	_
 36	Jew	Jew	NOUN	_	_	33	nmod	_	_
 37	it	it	PRON	_	_	38	nsubj	_	_
-38	contained	contain	VERB	_	_	7	conj	_	_
+38	contained	contain	VERB	_	_	13	conj	_	_
 39	the	the	DET	_	_	40	det	_	_
 40	fulness	fullness	NOUN	_	_	38	obj	_	_
 41	of	of	ADP	_	_	43	case	_	_
@@ -15242,7 +15242,7 @@
 39	then	then	ADV	_	_	42	advmod	_	_
 40	he	he	PRON	_	_	42	nsubj	_	_
 41	shall	shall	AUX	_	_	42	aux	_	_
-42	manifest	manifest	VERB	_	_	4	conj	_	_
+42	manifest	manifest	VERB	_	_	8	conj	_	_
 43	himself	himself	PRON	_	_	42	obj	_	_
 44	unto	to	ADP	_	_	46	case	_	_
 45	the	the	DET	_	_	46	det	_	_
@@ -24177,7 +24177,7 @@
 43	,	,	PUNCT	_	_	44	punct	_	_
 44	Nephi	Nephi	PROPN	_	_	42	appos	_	_
 45	,	,	PUNCT	_	_	42	punct	_	_
-46	began	begin	VERB	_	_	6	parataxis	_	_
+46	began	begin	VERB	_	_	20	parataxis	_	_
 47	to	to	PART	_	_	48	mark	_	_
 48	speak	speak	VERB	_	_	46	xcomp	_	_
 49	to	to	ADP	_	_	50	case	_	_
@@ -26005,7 +26005,7 @@
 18	the	the	DET	_	_	19	det	_	_
 19	earth	earth	NOUN	_	_	16	nmod	_	_
 20	must	must	AUX	_	_	21	aux	_	_
-21	rend	rend	VERB	_	_	9	conj	_	_
+21	rend	rend	VERB	_	_	7	conj	_	_
 22	;	;	PUNCT	_	_	23	punct	_	_
 23	and	and	CCONJ	_	_	44	cc	_	_
 24	because	because	ADP	_	_	27	case	_	_
@@ -27970,7 +27970,7 @@
 26	salvation	salvation	NOUN	_	_	24	nmod	_	_
 27	have	have	AUX	_	_	29	aux	_	_
 28	I	I	PRON	_	_	29	nsubj	_	_
-29	helped	help	VERB	_	_	2	conj	_	_
+29	helped	help	VERB	_	_	12	conj	_	_
 30	thee	you	PRON	_	_	29	obj	_	_
 31	;	;	PUNCT	_	_	35	punct	_	_
 32	and	and	CCONJ	_	_	35	cc	_	_
@@ -28244,7 +28244,7 @@
 22	but	but	CCONJ	_	_	25	cc	_	_
 23	he	he	PRON	_	_	25	nsubj	_	_
 24	will	will	AUX	_	_	25	aux	_	_
-25	show	show	VERB	_	_	7	conj	_	_
+25	show	show	VERB	_	_	12	conj	_	_
 26	that	that	SCONJ	_	_	28	mark	_	_
 27	he	he	PRON	_	_	28	nsubj	_	_
 28	hath	have	AUX	_	_	25	ccomp	_	_
@@ -28576,7 +28576,7 @@
 28	and	and	CCONJ	_	_	31	cc	_	_
 29	they	they	PRON	_	_	31	nsubj	_	_
 30	shall	shall	AUX	_	_	31	aux	_	_
-31	bring	bring	VERB	_	_	2	conj	_	_
+31	bring	bring	VERB	_	_	11	conj	_	_
 32	thy	your	PRON	_	_	33	nmod:poss	_	_
 33	sons	son	NOUN	_	_	31	obj	_	_
 34	in	in	ADP	_	_	36	case	_	_
@@ -29867,7 +29867,7 @@
 28	of	of	ADP	_	_	29	case	_	_
 29	smoke	smoke	NOUN	_	_	27	nmod	_	_
 30	must	must	AUX	_	_	31	aux	_	_
-31	come	come	VERB	_	_	7	conj	_	_
+31	come	come	VERB	_	_	16	conj	_	_
 32	;	;	PUNCT	_	_	36	punct	_	_
 33	and	and	CCONJ	_	_	36	cc	_	_
 34	it	it	PRON	_	_	36	nsubj	_	_
@@ -30271,7 +30271,7 @@
 23	of	of	ADP	_	_	24	case	_	_
 24	Israel	Israel	PROPN	_	_	22	nmod	_	_
 25	must	must	AUX	_	_	26	aux	_	_
-26	reign	reign	VERB	_	_	4	conj	_	_
+26	reign	reign	VERB	_	_	11	conj	_	_
 27	in	in	ADP	_	_	28	case	_	_
 28	dominion	dominion	NOUN	_	_	26	obl	_	_
 29	,	,	PUNCT	_	_	31	punct	_	_
