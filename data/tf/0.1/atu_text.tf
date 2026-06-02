@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T20:51:13+00:00Z
+@dateWritten=2026-06-02T21:14:41+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -4664,10 +4664,8 @@ And many more things did king Benjamin teach his sons, which are not written in 
 And it came to pass that after king Benjamin had made an end of teaching his sons, that he waxed old, and he saw that he must very soon go the way of all the earth;
 therefore, he thought it expedient that he should confer the kingdom upon one of his sons.
 Therefore, he had Mosiah brought before him; and these are the words which he spake unto him, saying:
-My son, I would that ye should make a proclamation throughout all this land among all this people, or the people of Zarahemla, and the people of Mosiah who dwell in the land,
-that thereby they may be gathered together;
-for on the morrow I shall proclaim unto this my people out of mine own mouth
-that thou art a king and a ruler over this people, whom the Lord our God hath given us.
+My son, I would that ye should make a proclamation throughout all this land among all this people, or the people of Zarahemla, and the people of Mosiah who dwell in the land, that thereby they may be gathered together;
+for on the morrow I shall proclaim unto this my people out of mine own mouth that thou art a king and a ruler over this people, whom the Lord our God hath given us.
 And moreover, I shall give this people a name, that thereby they may be distinguished above all the people which the Lord God hath brought out of the land of Jerusalem; and this I do because they have been a diligent people in keeping the commandments of the Lord.
 And I give unto them a name that never shall be blotted out, except it be through transgression.
 Yea, and moreover I say unto you, that if this highly favored people of the Lord should fall into transgression, and become a wicked and an adulterous people,
@@ -4715,11 +4713,12 @@ I say unto you that as I have been suffered to spend my days in your service, ev
 Neither have I suffered that ye should be confined in dungeons,
 nor that ye should make slaves one of another,
 nor that ye should murder, or plunder, or steal, or commit adultery;
-nor even have I suffered that ye should commit any manner of wickedness, and have taught you
-that ye should keep the commandments of the Lord, in all things which he hath commanded you --
+nor even have I suffered that ye should commit any manner of wickedness,
+and have taught you that ye should keep the commandments of the Lord, in all things which he hath commanded you --
 And even I, myself, have labored with mine own hands that I might serve you,
 and that ye should not be laden with taxes,
-and that there should nothing come upon you which was grievous to be borne--and of all these things which I have spoken, ye yourselves are witnesses this day.
+and that there should nothing come upon you which was grievous to be borne--
+and of all these things which I have spoken, ye yourselves are witnesses this day.
 Yet, my brethren, I have not done these things that I might boast,
 neither do I tell these things that thereby I might accuse you;
 but I tell you these things that ye may know that I can answer a clear conscience before God this day.
@@ -4733,8 +4732,7 @@ then ought not ye to labor to serve one another?
 And behold also, if I, whom ye call your king, who has spent his days in your service, and yet has been in the service of God, do merit any thanks from you,
 O how you ought to thank your heavenly King!
 I say unto you, my brethren,
-that if you should render all the thanks and praise which your whole soul has power to possess, to that God who has created you, and has kept and preserved you, and has caused that ye should rejoice, and has granted
-that ye should live in peace one with another--
+that if you should render all the thanks and praise which your whole soul has power to possess, to that God who has created you, and has kept and preserved you, and has caused that ye should rejoice, and has granted that ye should live in peace one with another--
 I say unto you that
 if ye should serve him who has created you from the beginning, and is preserving you from day to day, by lending you breath, that ye may live and move and do according to your own will,
 and even supporting you from one moment to another--
@@ -4792,10 +4790,8 @@ Therefore if that man repenteth not, and remaineth and dieth an enemy to God, th
 And now I say unto you, that mercy hath no claim on that man;
 therefore his final doom is to endure a never-ending torment.
 O, all ye old men, and also ye young men, and you little children who can understand my words,
-for I have spoken plainly unto you
-that ye might understand,
-I pray
-that ye should awake to a remembrance of the awful situation of those that have fallen into transgression.
+for I have spoken plainly unto you that ye might understand,
+I pray that ye should awake to a remembrance of the awful situation of those that have fallen into transgression.
 And moreover, I would desire that ye should consider on the blessed and happy state of those that keep the commandments of God.
 For behold, they are blessed in all things, both temporal and spiritual;
 and if they hold out faithful to the end they are received into heaven, that thereby they may dwell with God in a state of never-ending happiness.
@@ -4821,8 +4817,7 @@ and even after all this they shall consider him a man, and say that he hath a de
 And he shall rise the third day from the dead;
 and behold, he standeth to judge the world;
 and behold, all these things are done that a righteous judgment might come upon the children of men.
-For behold, and also his blood atoneth for the sins of those who have fallen by the transgression of Adam, who have died not knowing the will of God concerning them,
-or who have ignorantly sinned.
+For behold, and also his blood atoneth for the sins of those who have fallen by the transgression of Adam, who have died not knowing the will of God concerning them, or who have ignorantly sinned.
 But wo, wo unto him who knoweth that he rebelleth against God! For
 salvation cometh to none such except it be through repentance and faith on the Lord Jesus Christ.
 And the Lord God hath sent his holy prophets among all the children of men, to declare these things to every kindred, nation, and tongue, that
@@ -4870,12 +4865,9 @@ and they were filled with joy, having received a remission of their sins, and ha
 And king Benjamin again opened his mouth and began to speak unto them, saying:
 My friends and my brethren, my kindred and my people, I would again call your attention, that ye may hear and understand the remainder of my words which I shall speak unto you.
 For behold, if the knowledge of the goodness of God at this time has awakened you to a sense of your nothingness, and your worthless and fallen state--
-I say unto you, if ye have come to a knowledge of the goodness of God, and his matchless power, and his wisdom, and his patience, and his long-suffering towards the children of men; and also, the atonement which has been prepared from the foundation of the world, that thereby salvation might come to him
-that should put his trust in the Lord, and should be diligent in keeping his commandments, and continue in the faith even unto the end of his life,
+I say unto you, if ye have come to a knowledge of the goodness of God, and his matchless power, and his wisdom, and his patience, and his long-suffering towards the children of men; and also, the atonement which has been prepared from the foundation of the world, that thereby salvation might come to him that should put his trust in the Lord, and should be diligent in keeping his commandments, and continue in the faith even unto the end of his life,
 I mean the life of the mortal body --
-I say, that this is the man who receiveth salvation, through the atonement which was prepared from the foundation of the world for all mankind, which ever were since the fall of Adam,
-or who are,
-or who ever shall be, even unto the end of the world.
+I say, that this is the man who receiveth salvation, through the atonement which was prepared from the foundation of the world for all mankind, which ever were since the fall of Adam, or who are, or who ever shall be, even unto the end of the world.
 And this is the means whereby salvation cometh.
 And there is none other salvation save this which hath been spoken of;
 neither are there any conditions whereby man can be saved except the conditions which I have told you.
@@ -4909,11 +4901,7 @@ And behold, even at this time, ye have been calling on his name, and begging for
 And has he suffered that ye have begged in vain?
 Nay; he has poured out his Spirit upon you, and has caused that your hearts should be filled with joy, and has caused that your mouths should be stopped that ye could not find utterance,
 so exceedingly great was your joy.
-And now, if God, who has created you,
-on whom you are dependent for your lives
-and for all that ye have and are, doth grant unto you whatsoever ye ask
-that is right, in faith,
-believing that ye shall receive,
+And now, if God, who has created you, on whom you are dependent for your lives and for all that ye have and are, doth grant unto you whatsoever ye ask that is right, in faith, believing that ye shall receive,
 O then, how ye ought to impart of the substance that ye have one to another.
 And if ye judge the man who putteth up his petition to you for your substance that he perish not, and condemn him, how much more just will be your condemnation for withholding your substance, which doth not belong to you but to God,
 to whom also your life belongeth;
@@ -4922,8 +4910,8 @@ I say unto you,
 wo be unto that man,
 for his substance shall perish with him;
 and now, I say these things unto those who are rich as pertaining to the things of this world.
-And again, I say unto the poor, ye who have not and yet have sufficient, that ye remain from day to day; I mean all you who deny the beggar,
-because ye have not; I would that ye say in your hearts that:
+And again, I say unto the poor, ye who have not and yet have sufficient, that ye remain from day to day; I mean all you who deny the beggar, because ye have not;
+I would that ye say in your hearts that:
 I give not because I have not,
 but if I had I would give.
 And now, if ye say this in your hearts ye remain guiltless,
@@ -4943,7 +4931,8 @@ or else thou shalt commit sin;
 and perhaps thou shalt cause thy neighbor to commit sin also.
 And finally, I cannot tell you all the things whereby ye may commit sin;
 for there are divers ways and means, even so many that I cannot number them.
-But this much I can tell you, that if ye do not watch yourselves, and your thoughts, and your words, and your deeds, and observe the commandments of God, and continue in the faith of what ye have heard concerning the coming of our Lord, even unto the end of your lives, ye must perish. And now, O man, remember, and perish not.
+But this much I can tell you, that if ye do not watch yourselves, and your thoughts, and your words, and your deeds, and observe the commandments of God, and continue in the faith of what ye have heard concerning the coming of our Lord, even unto the end of your lives, ye must perish.
+And now, O man, remember, and perish not.
 And now, it came to pass that when king Benjamin had thus spoken to his people, he sent among them, desiring to know of his people if they believed the words which he had spoken unto them.
 And they all cried with one voice, saying: Yea,
 we believe all the words which thou hast spoken unto us;
@@ -4970,9 +4959,8 @@ And it shall come to pass that whosoever doeth this shall be found at the right 
 for he shall know the name by which he is called;
 for he shall be called by the name of Christ.
 And now it shall come to pass, that whosoever shall not take upon him the name of Christ must be called by some other name; therefore, he findeth himself on the left hand of God.
-And I would that ye should remember also, that this is the name that I said I should give unto you that never should be blotted out, except it be through transgression; therefore, take heed
-that ye do not transgress,
-that the name be not blotted out of your hearts.
+And I would that ye should remember also, that this is the name that I said I should give unto you that never should be blotted out, except it be through transgression;
+therefore, take heed that ye do not transgress, that the name be not blotted out of your hearts.
 I say unto you, I would that ye should remember to retain the name written always in your hearts,
 that ye are not found on the left hand of God,
 but that ye hear and know the voice by which ye shall be called, and also, the name by which he shall call you.
@@ -4987,8 +4975,7 @@ that you may be brought to heaven,
 that ye may have everlasting salvation and eternal life, through the wisdom, and power, and justice, and mercy of him who created all things, in heaven and in earth, who is God above all.
 Amen.
 And now, king Benjamin thought it was expedient, after having finished speaking to the people, that he should take the names of all those who had entered into a covenant with God to keep his commandments.
-And it came to pass that there was not one soul, except it were little children,
-but who had entered into the covenant and had taken upon them the name of Christ.
+And it came to pass that there was not one soul, except it were little children, but who had entered into the covenant and had taken upon them the name of Christ.
 And again, it came to pass that when king Benjamin had made an end of all these things, and had consecrated his son Mosiah to be a ruler and a king over his people, and had given him all the charges concerning the kingdom, and also had appointed priests to teach the people, that thereby they might hear and know the commandments of God,
 and to stir them up in remembrance of the oath which they had made, he dismissed the multitude,
 and they returned, every one, according to their families, to their own houses.
@@ -4998,9 +4985,7 @@ And king Benjamin lived three years
 and he died.
 And it came to pass that king Mosiah did walk in the ways of the Lord, and did observe his judgments and his statutes, and did keep his commandments in all things whatsoever he commanded him.
 And king Mosiah did cause his people that they should till the earth.
-And he also, himself, did till the earth,
-that thereby he might not become burdensome to his people,
-that he might do according to that which his father had done in all things.
+And he also, himself, did till the earth, that thereby he might not become burdensome to his people, that he might do according to that which his father had done in all things.
 And there was no contention among all his people for the space of three years.
 And now, it came to pass that after king Mosiah had had continual peace for the space of three years, he was desirous to know concerning the people who went up to dwell in the land of Lehi-Nephi, or in the city of Lehi-Nephi;
 for his people had heard nothing from them from the time they left the land of Zarahemla;
@@ -5097,8 +5082,8 @@ that he might read them.
 Now, as soon as Ammon had read the record, the king inquired of him to know if he could interpret languages,
 and Ammon told him that he could not.
 And the king said unto him:
-Being grieved for the afflictions of my people, I caused that forty
-and three of my people should take a journey into the wilderness,
+Being grieved for the afflictions of my people,
+I caused that forty and three of my people should take a journey into the wilderness,
 that thereby they might find the land of Zarahemla,
 that we might appeal unto our brethren to deliver us out of bondage.
 And they were lost in the wilderness for the space of many days, yet they were diligent, and found not the land of Zarahemla but returned to this land, having traveled in a land among many waters, having discovered a land which was covered with bones of men, and of beasts, and was also covered with ruins of buildings of every kind, having discovered a land which had been peopled with a people who were as numerous as the hosts of Israel.
@@ -5161,8 +5146,7 @@ And yet, I being over-zealous to inherit the land of our fathers,
 collected as many as were desirous to go up to possess the land, and started again on our journey into the wilderness to go up to the land;
 but we were smitten with famine and sore afflictions;
 for we were slow to remember the Lord our God.
-Nevertheless, after many days' wandering in the wilderness we pitched our tents in the place where our brethren were slain,
-which was near to the land of our fathers.
+Nevertheless, after many days' wandering in the wilderness we pitched our tents in the place where our brethren were slain, which was near to the land of our fathers.
 And it came to pass that I went again with four of my men into the city, in unto the king,
 that I might know of the disposition of the king,
 and that I might know if I might go in with my people and possess the land in peace.
@@ -5351,8 +5335,7 @@ Behold, we have brought a man before thee who has prophesied evil concerning thy
 And he also prophesieth evil concerning thy life, and saith that thy life shall be as a garment in a furnace of fire.
 And again, he saith that thou shalt be as a stalk, even as a dry stalk of the field, which is run over by the beasts and trodden under foot.
 And again, he saith
-thou shalt be as the blossoms of a thistle,
-which, when it is fully ripe, if the wind bloweth, it is driven forth upon the face of the land.
+thou shalt be as the blossoms of a thistle, which, when it is fully ripe, if the wind bloweth, it is driven forth upon the face of the land.
 And he pretendeth the Lord hath spoken it.
 And he saith
 all this shall come upon thee except thou repent, and this because of thine iniquities.
@@ -5488,8 +5471,7 @@ And now, did they understand the law?
 I say unto you, Nay,
 they did not all understand the law; and this because of the hardness of their hearts;
 for they understood not that there could not any man be saved except it were through the redemption of God.
-For behold, did not Moses prophesy unto them concerning the coming of the Messiah,
-and that God should redeem his people?
+For behold, did not Moses prophesy unto them concerning the coming of the Messiah, and that God should redeem his people?
 Yea, and even all the prophets who have prophesied ever since the world began--have they not spoken more or less concerning these things?
 Have they not said that God himself should come down among the children of men, and take upon him the form of man, and go forth in mighty power upon the face of the earth?
 Yea, and have they not said also that he should bring to pass the resurrection of the dead, and that he, himself, should be oppressed and afflicted?
@@ -5576,9 +5558,8 @@ were it not for this, all mankind must have perished.
 But behold, the bands of death shall be broken,
 and the Son reigneth, and hath power over the dead;
 therefore, he bringeth to pass the resurrection of the dead.
-And there cometh a resurrection, even a first resurrection; yea, even a resurrection of those that have been,
-and who are, and who shall be, even until the resurrection of Christ
---for so shall he be called.
+And there cometh a resurrection, even a first resurrection; yea, even a resurrection of those that have been, and who are, and who shall be, even until the resurrection of Christ--
+for so shall he be called.
 And now, the resurrection of all the prophets, and all those that have believed in their words, or all those that have kept the commandments of God, shall come forth in the first resurrection;
 therefore, they are the first resurrection.
 They are raised to dwell with God who has redeemed them;
@@ -5601,8 +5582,7 @@ And now I say unto you that the time shall come that the salvation of the Lord s
 Yea, Lord, thy watchmen shall lift up their voice;
 with the voice together shall they sing;
 for they shall see eye to eye, when the Lord shall bring again Zion.
-Break forth into joy, sing together,
-ye waste places of Jerusalem;
+Break forth into joy, sing together, ye waste places of Jerusalem;
 for the Lord hath comforted his people,
 he hath redeemed Jerusalem.
 The Lord hath made bare his holy arm in the eyes of all the nations;
@@ -5701,8 +5681,7 @@ Now, there was in Mormon a fountain of pure water,
 and Alma resorted thither, there being near the water a thicket of small trees, where he did hide himself in the daytime from the searches of the king.
 And it came to pass that as many as believed him went thither to hear his words.
 And it came to pass after many days there were a goodly number gathered together at the place of Mormon, to hear the words of Alma.
-Yea, all were gathered together
-that believed on his word, to hear him.
+Yea, all were gathered together that believed on his word, to hear him.
 And he did teach them, and did preach unto them repentance, and redemption, and faith on the Lord.
 And it came to pass that he said unto them:
 Behold, here are the waters of Mormon
@@ -5856,8 +5835,7 @@ has fallen among their dead,
 and they have left him;
 and behold, we have brought him before you; and now let us slay him.
 But Limhi said unto them:
-Ye shall not slay him, but bring him hither
-that I may see him.
+Ye shall not slay him, but bring him hither that I may see him.
 And they brought him.
 And Limhi said unto him:
 What cause have ye to come up to war against my people?
