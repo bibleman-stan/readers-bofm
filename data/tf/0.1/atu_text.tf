@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T02:54:55+00:00Z
+@dateWritten=2026-06-02T03:44:39+00:00Z
 
 302626	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -9761,31 +9761,29 @@ And the Lord God doth work by means to bring about his great and eternal purpose
 And now, it has hitherto been wisdom in God that these things should be preserved;
 for behold, they have enlarged the memory of this people,
 yea, and convinced many of the error of their ways, and brought them to the knowledge of their God unto the salvation of their souls.
-Yea, I say unto you,
-were it not for these things that these records do contain, which are on these plates,
-Ammon and his brethren could not have convinced so many thousands of the Lamanites of the incorrect tradition of their fathers;
+Yea, I say unto you, were it not for these things that these records do contain, which are on these plates, Ammon and his brethren could not have convinced so many thousands of the Lamanites of the incorrect tradition of their fathers;
 yea, these records and their words brought them unto repentance;
-that is,
-they brought them to the knowledge of the Lord their God, and to rejoice in Jesus Christ their Redeemer.
+that is, they brought them to the knowledge of the Lord their God, and to rejoice in Jesus Christ their Redeemer.
 And who knoweth but what they will be the means of bringing many thousands of them,
-yea, and also many thousands of our stiffnecked brethren, the Nephites, who are now hardening their hearts in sin and iniquities, to the knowledge of their Redeemer?
+yea, and also many thousands of our stiffnecked brethren, the Nephites, who are now hardening their hearts in sin and iniquities,
+to the knowledge of their Redeemer?
 Now these mysteries are not yet fully made known unto me;
 therefore I shall forbear.
-And it may suffice if I only say
-they are preserved for a wise purpose, which purpose is known unto God;
+And it may suffice if I only say they are preserved for a wise purpose, which purpose is known unto God;
 for he doth counsel in wisdom over all his works, and his paths are straight, and his course is one eternal round.
 O remember, remember, my son Helaman,
 how strict are the commandments of God.
 And he said:
 If ye will keep my commandments ye shall prosper in the land
 --but if ye keep not his commandments ye shall be cut off from his presence.
-And now remember, my son, that God has entrusted you with these things, which are sacred, which he has kept sacred,
+And now remember, my son, that God has entrusted you with these things, which are sacred,
+which he has kept sacred,
 and also which he will keep and preserve for a wise purpose in him, that he may show forth his power unto future generations.
-And now behold, I tell you by the spirit of prophecy,
-that if ye transgress the commandments of God, behold, these things which are sacred shall be taken away from you by the power of God,
-and ye shall be delivered up unto Satan,
-that he may sift you as chaff before the wind.
-But if ye keep the commandments of God, and do with these things which are sacred according to that which the Lord doth command you,
+And now behold, I tell you by the spirit of prophecy, that if ye transgress the commandments of God,
+behold, these things which are sacred shall be taken away from you by the power of God,
+and ye shall be delivered up unto Satan, that he may sift you as chaff before the wind.
+But if ye keep the commandments of God,
+and do with these things which are sacred according to that which the Lord doth command you,
 (for you must appeal unto the Lord for all things whatsoever ye must do with them)
 behold, no power of earth or hell can take them from you,
 for God is powerful to the fulfilling of all his words.
@@ -9805,12 +9803,12 @@ that the mysteries and the works of darkness, and their secret works, or the sec
 yea, all their murders, and robbings, and their plunderings, and all their wickedness and abominations, may be made manifest unto this people;
 yea, and that ye preserve these interpreters.
 For behold, the Lord saw that his people began to work in darkness, yea, work secret murders and abominations;
-therefore the Lord said,
-if they did not repent they should be destroyed from off the face of the earth.
+therefore the Lord said, if they did not repent they should be destroyed from off the face of the earth.
 And the Lord said:
 I will prepare unto my servant Gazelem, a stone, which shall shine forth in darkness unto light,
 that I may discover unto my people who serve me,
-that I may discover unto them the works of their brethren, yea, their secret works, their works of darkness, and their wickedness and abominations.
+that I may discover unto them the works of their brethren,
+yea, their secret works, their works of darkness, and their wickedness and abominations.
 And now, my son, these interpreters were prepared that the word of God might be fulfilled,
 which he spake, saying:
 I will bring forth out of darkness unto light all their secret works and their abominations;
