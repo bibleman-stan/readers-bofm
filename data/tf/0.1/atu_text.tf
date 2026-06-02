@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T19:56:57+00:00Z
+@dateWritten=2026-06-02T20:14:57+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -3798,10 +3798,9 @@ And we also had many revelations, and the spirit of much prophecy;
 wherefore, we knew of Christ and his kingdom, which should come.
 Wherefore we labored diligently among our people,
 that we might persuade them to come unto Christ, and partake of the goodness of God,
-that they might enter into his rest, lest by any means he should swear in his wrath
-they should not enter in, as in the provocation in the days of temptation while the children of Israel were in the wilderness.
-Wherefore, we would to God that we could persuade all men not to rebel against God, to provoke him to anger,
-but that all men would believe in Christ, and view his death, and suffer his cross and bear the shame of the world;
+that they might enter into his rest,
+lest by any means he should swear in his wrath they should not enter in, as in the provocation in the days of temptation while the children of Israel were in the wilderness.
+Wherefore, we would to God that we could persuade all men not to rebel against God, to provoke him to anger, but that all men would believe in Christ, and view his death, and suffer his cross and bear the shame of the world;
 wherefore, I, Jacob, take it upon me to fulfil the commandment of my brother Nephi.
 Now Nephi began to be old,
 and he saw that he must soon die;
@@ -3832,8 +3831,7 @@ And ye yourselves know that I have hitherto been diligent in the office of my ca
 but I this day am weighed down with much more desire and anxiety for the welfare of your souls than I have hitherto been.
 For behold, as yet, ye have been obedient unto the word of the Lord, which I have given unto you.
 But behold, hearken ye unto me, and know that by the help of the all-powerful Creator of heaven and earth I can tell you concerning your thoughts, how that ye are beginning to labor in sin, which sin appeareth very abominable unto me, yea, and abominable unto God.
-Yea, it grieveth my soul and causeth me to shrink with shame before the presence of my Maker,
-that I must testify unto you concerning the wickedness of your hearts.
+Yea, it grieveth my soul and causeth me to shrink with shame before the presence of my Maker, that I must testify unto you concerning the wickedness of your hearts.
 And also it grieveth me that I must use so much boldness of speech concerning you, before your wives and your children, many of whose feelings are exceedingly tender and chaste and delicate before God, which thing is pleasing unto God;
 And it supposeth me that they have come up hither to hear the pleasing word of God, yea, the word which healeth the wounded soul.
 Wherefore, it burdeneth my soul that I should be constrained, because of the strict commandment which I have received from God, to admonish you according to your crimes, to enlarge the wounds of those who are already wounded, instead of consoling and healing their wounds;
@@ -3862,11 +3860,10 @@ But before ye seek for riches, seek ye for the kingdom of God.
 And after ye have obtained a hope in Christ ye shall obtain riches, if ye seek them;
 and ye will seek them for the intent to do good--to clothe the naked, and to feed the hungry, and to liberate the captive, and administer relief to the sick and the afflicted.
 And now, my brethren, I have spoken unto you concerning pride;
-and those of you which have afflicted your neighbor, and persecuted him because ye were proud in your hearts, of the things which God hath given you,
-what say ye of it?
-Do ye not suppose that such things are abominable unto him
-who created all flesh?
-And the one being is as precious in his sight as the other. And all flesh is of the dust;
+and those of you which have afflicted your neighbor, and persecuted him because ye were proud in your hearts, of the things which God hath given you, what say ye of it?
+Do ye not suppose that such things are abominable unto him who created all flesh?
+And the one being is as precious in his sight as the other.
+And all flesh is of the dust;
 and for the selfsame end hath he created them, that they should keep his commandments and glorify him forever.
 And now I make an end of speaking unto you concerning this pride.
 And were it not that I must speak unto you concerning a grosser crime, my heart would rejoice exceedingly because of you.
@@ -3888,8 +3885,7 @@ For if I will, saith the Lord of Hosts, raise up seed unto me,
 I will command my people;
 otherwise they shall hearken unto these things.
 For behold, I, the Lord, have seen the sorrow, and heard the mourning of the daughters of my people in the land of Jerusalem, yea, and in all the lands of my people, because of the wickedness and abominations of their husbands.
-And I will not suffer, saith the Lord of Hosts, that the cries of the fair daughters of this people, which I have led out of the land of Jerusalem, shall come up unto me against the men of my people,
-saith the Lord of Hosts.
+And I will not suffer, saith the Lord of Hosts, that the cries of the fair daughters of this people, which I have led out of the land of Jerusalem, shall come up unto me against the men of my people, saith the Lord of Hosts.
 For they shall not lead away captive the daughters of my people because of their tenderness, save I shall visit them with a sore curse, even unto destruction; for they shall not commit whoredoms, like unto them of old, saith the Lord of Hosts.
 And now behold, my brethren, ye know that these commandments were given to our father, Lehi;
 wherefore, ye have known them before;
@@ -3954,8 +3950,7 @@ and having all these witnesses we obtain a hope,
 and our faith becometh unshaken, insomuch that we truly can command in the name of Jesus
 and the very trees obey us, or the mountains, or the waves of the sea.
 Nevertheless, the Lord God showeth us our weakness
-that we may know that it is by his grace, and his great condescensions unto the children of men,
-that we have power to do these things.
+that we may know that it is by his grace, and his great condescensions unto the children of men, that we have power to do these things.
 Behold, great and marvelous are the works of the Lord.
 How unsearchable are the depths of the mysteries of him; and it is impossible that man should find out all his ways.
 And no man knoweth of his ways save it be revealed unto him;
@@ -3997,31 +3992,25 @@ I will liken thee, O house of Israel, like unto a tame olive tree, which a man t
 and it grew, and waxed old, and began to decay.
 And it came to pass that the master of the vineyard went forth, and he saw that his olive tree began to decay;
 and he said:
-I will prune it, and dig about it, and nourish it, that perhaps it may shoot forth young and tender branches,
-and it perish not.
+I will prune it, and dig about it, and nourish it, that perhaps it may shoot forth young and tender branches, and it perish not.
 And it came to pass that he pruned it, and digged about it, and nourished it according to his word.
 And it came to pass that after many days it began to put forth somewhat a little, young and tender branches; but behold, the main top thereof began to perish.
 And it came to pass that the master of the vineyard saw it, and he said unto his servant:
-It grieveth me
-that I should lose this tree; wherefore, go and pluck the branches from a wild olive tree, and bring them hither unto me;
+It grieveth me that I should lose this tree;
+wherefore, go and pluck the branches from a wild olive tree, and bring them hither unto me;
 and we will pluck off those main branches which are beginning to wither away,
-and we will cast them into the fire
-that they may be burned.
+and we will cast them into the fire that they may be burned.
 And behold, saith the Lord of the vineyard, I take away many of these young and tender branches,
-and I will graft them whithersoever
-I will;
+and I will graft them whithersoever I will;
 and it mattereth not
-that if it so be
-that the root of this tree will perish, I may preserve the fruit thereof unto myself;
+that if it so be that the root of this tree will perish, I may preserve the fruit thereof unto myself;
 wherefore, I will take these young and tender branches,
-and I will graft them whithersoever
-I will.
+and I will graft them whithersoever I will.
 Take thou the branches of the wild olive tree, and graft them in, in the stead thereof;
 and these which I have plucked off I will cast into the fire and burn them, that they may not cumber the ground of my vineyard.
 And it came to pass that the servant of the Lord of the vineyard did according to the word of the Lord of the vineyard, and grafted in the branches of the wild olive tree.
 And the Lord of the vineyard caused that it should be digged about, and pruned, and nourished, saying unto his servant:
-It grieveth me
-that I should lose this tree;
+It grieveth me that I should lose this tree;
 wherefore, that perhaps I might preserve the roots thereof that they perish not,
 that I might preserve them unto myself,
 I have done this thing.
@@ -4199,8 +4188,7 @@ and that I have grafted in the natural branches again into their mother tree,
 and have preserved the roots of their mother tree,
 that, perhaps, the trees of my vineyard may bring forth again good fruit;
 and that I may have joy again in the fruit of my vineyard,
-and, perhaps,
-that I may rejoice exceedingly that I have preserved the roots and the branches of the first fruit- -
+and, perhaps, that I may rejoice exceedingly that I have preserved the roots and the branches of the first fruit--
 Wherefore, go to, and call servants,
 that we may labor diligently with our might in the vineyard,
 that we may prepare the way,
@@ -4209,11 +4197,12 @@ Wherefore, let us go to and labor with our might this last time,
 for behold the end draweth nigh, and this is for the last time that I shall prune my vineyard.
 Graft in the branches; begin at the last
 that they may be first,
-and that the first may be last, and dig about the trees, both old and young, the first and the last; and the last and the first, that all may be nourished once again for the last time.
+and that the first may be last,
+and dig about the trees, both old and young, the first and the last; and the last and the first,
+that all may be nourished once again for the last time.
 Wherefore, dig about them, and prune them, and dung them once more, for the last time, for the end draweth nigh.
-And if it be so
-that these last grafts shall grow, and bring forth the natural fruit, then shall ye prepare the way for them,
-that they may grow.
+And if it be so that these last grafts shall grow, and bring forth the natural fruit,
+then shall ye prepare the way for them, that they may grow.
 And as they begin to grow ye shall clear away the branches which bring forth bitter fruit, according to the strength of the good and the size thereof;
 and ye shall not clear away the bad thereof all at once, lest the roots thereof should be too strong for the graft,
 and the graft thereof shall perish,
@@ -4264,11 +4253,9 @@ and the bad will I cast away into its own place.
 And then cometh the season and the end; and my vineyard will I cause to be burned with fire.
 And now, behold, my brethren, as I said unto you that I would prophesy,
 behold, this is my prophecy--that the things which this prophet Zenos spake, concerning the house of Israel, in the which he likened them unto a tame olive tree, must surely come to pass.
-And the day
-that he shall set his hand again the second time to recover his people, is the day, yea, even the last time,
+And the day that he shall set his hand again the second time to recover his people, is the day, yea, even the last time,
 that the servants of the Lord shall go forth in his power, to nourish and prune his vineyard;
-and after
-that the end soon cometh.
+and after that the end soon cometh.
 And how blessed
 are they who have labored diligently in his vineyard;
 and how cursed
