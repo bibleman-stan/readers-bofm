@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-03T11:33:48+00:00Z
+@dateWritten=2026-06-03T21:52:30+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -240,8 +240,7 @@ And it came to pass that I called after them, and they did hear me; wherefore th
 And it came to pass that when the servant of Laban beheld my brethren he began to tremble, and was about to flee from before me and return to the city of Jerusalem.
 And now I, Nephi, being a man large in stature, and also having received much strength of the Lord,
 therefore I did seize upon the servant of Laban, and held him, that he should not flee.
-And it came to pass that I spake with him, that if he would hearken unto my words, as the Lord liveth,
-and as I live,
+And it came to pass that I spake with him, that if he would hearken unto my words, as the Lord liveth, and as I live,
 even so that if he would hearken unto our words, we would spare his life.
 And I spake unto him, even with an oath, that he need not fear; that he should be a free man like unto us if he would go down in the wilderness with us.
 And I also spake unto him, saying:
@@ -252,8 +251,7 @@ And it came to pass that Zoram did take courage at the words which I spake.
 Now Zoram was the name of the servant;
 and he promised that he would go down into the wilderness unto our father.
 Yea, and he also made an oath unto us that he would tarry with us from that time forth.
-Now we were desirous
-that he should tarry with us for this cause,
+Now we were desirous that he should tarry with us for this cause,
 that the Jews might not know concerning our flight into the wilderness, lest they should pursue us and destroy us.
 And it came to pass that when Zoram had made an oath unto us, our fears did cease concerning him.
 And it came to pass that we took the plates of brass and the servant of Laban, and departed into the wilderness, and journeyed unto the tent of our father.
@@ -349,8 +347,7 @@ yea, even give me strength that I may burst these bands with which I am bound.
 And it came to pass that when I had said these words, behold, the bands were loosed from off my hands and feet, and I stood before my brethren,
 and I spake unto them again.
 And it came to pass that they were angry with me again, and sought to lay hands upon me;
-but behold, one of the daughters of Ishmael,
-yea, and also her mother, and one of the sons of Ishmael, did plead with my brethren, insomuch that they did soften their hearts;
+but behold, one of the daughters of Ishmael, yea, and also her mother, and one of the sons of Ishmael, did plead with my brethren, insomuch that they did soften their hearts;
 and they did cease striving to take away my life.
 And it came to pass that they were sorrowful, because of their wickedness, insomuch that they did bow down before me, and did plead with me that I would forgive them of the thing that they had done against me.
 And it came to pass that I did frankly forgive them all that they had done, and I did exhort them that they would pray unto the Lord their God for forgiveness. And it came to pass that they did so.
@@ -420,9 +417,7 @@ And Laman and Lemuel partook not of the fruit, said my father.
 And it came to pass after my father had spoken all the words of his dream or vision, which were many, he said unto us,
 because of these things which he saw in a vision, he exceedingly feared for Laman and Lemuel;
 yea, he feared lest they should be cast off from the presence of the Lord.
-And he did exhort them then with all the feeling of a tender parent,
-that they would hearken to his words,
-that perhaps the Lord would be merciful to them, and not cast them off;
+And he did exhort them then with all the feeling of a tender parent, that they would hearken to his words, that perhaps the Lord would be merciful to them, and not cast them off;
 yea, my father did preach unto them.
 And after he had preached unto them, and also prophesied unto them of many things, he bade them to keep the commandments of the Lord;
 and he did cease speaking unto them.
@@ -481,9 +476,7 @@ for I have written as many of them as were expedient for me in mine other book.
 And all these things, of which I have spoken, were done as my father dwelt in a tent, in the valley of Lemuel.
 And it came to pass after I, Nephi, having heard all the words of my father, concerning the things which he saw in a vision, and also the things which he spake by the power of the Holy Ghost, which power he received by faith on the Son of God
 --and the Son of God was the Messiah who should come--
-I, Nephi, was desirous also
-that I might see, and hear,
-and know of these things, by the power of the Holy Ghost, which is the gift of God unto all those who diligently seek him, as well in times of old as in the time that he should manifest himself unto the children of men.
+I, Nephi, was desirous also that I might see, and hear, and know of these things, by the power of the Holy Ghost, which is the gift of God unto all those who diligently seek him, as well in times of old as in the time that he should manifest himself unto the children of men.
 For he is the same yesterday, today, and forever;
 and the way is prepared for all men from the foundation of the world, if it so be that they repent and come unto him.
 For he that diligently seeketh shall find;
@@ -514,8 +507,7 @@ wherefore, thou shalt behold the things which thou hast desired.
 And behold this thing shall be given unto thee for a sign,
 that after thou hast beheld the tree which bore the fruit which thy father tasted, thou shalt also behold a man descending out of heaven,
 and him shall ye witness;
-and after ye have witnessed him ye shall bear record
-that it is the Son of God.
+and after ye have witnessed him ye shall bear record that it is the Son of God.
 And it came to pass that the Spirit said unto me: Look!
 And I looked and beheld a tree; and it was like unto the tree which my father had seen; and the beauty thereof was far beyond, yea, exceeding of all beauty;
 and the whiteness thereof did exceed the whiteness of the driven snow.
@@ -797,8 +789,8 @@ And it came to pass that I, Nephi, beheld the power of the Lamb of God, that it 
 and they were armed with righteousness and with the power of God in great glory.
 And it came to pass that I beheld that the wrath of God was poured out upon that great and abominable church, insomuch that there were wars and rumors of wars among all the nations and kindreds of the earth.
 And as there began to be wars and rumors of wars among all the nations which belonged to the mother of abominations, the angel spake unto me, saying:
-Behold, the wrath of God is upon the mother of harlots; and behold,
-thou seest all these things --
+Behold, the wrath of God is upon the mother of harlots;
+and behold, thou seest all these things --
 And when the day cometh that the wrath of God is poured out upon the mother of harlots, which is the great and abominable church of all the earth, whose founder is the devil,
 then, at that day, the work of the Father shall commence, in preparing the way for the fulfilling of his covenants, which he hath made to his people who are of the house of Israel.
 And it came to pass that the angel spake unto me, saying:
@@ -856,8 +848,7 @@ Do ye not remember the things which the Lord hath said?--If ye will not harden y
 Behold, I say unto you, that the house of Israel was compared unto an olive tree, by the Spirit of the Lord which was in our father; and behold are we not broken off from the house of Israel, and are we not a branch of the house of Israel?
 And now, the thing which our father meaneth concerning the grafting in of the natural branches through the fulness of the Gentiles, is, that in the latter days, when our seed shall have dwindled in unbelief,
 yea, for the space of many years, and many generations after the Messiah shall be manifested in body unto the children of men, then shall the fulness of the gospel of the Messiah come unto the Gentiles, and from the Gentiles unto the remnant of our seed--
-And at that day shall the remnant of our seed know that they are of the house of Israel,
-and that they are the covenant people of the Lord;
+And at that day shall the remnant of our seed know that they are of the house of Israel, and that they are the covenant people of the Lord;
 and then shall they know and come to the knowledge of their forefathers, and also to the knowledge of the gospel of their Redeemer, which was ministered unto their fathers by him;
 wherefore, they shall come to the knowledge of their Redeemer and the very points of his doctrine, that they may know how to come unto him and be saved.
 And then at that day will they not rejoice and give praise unto their everlasting God, their rock and their salvation?
@@ -1009,7 +1000,8 @@ and notwithstanding we had suffered many afflictions and much difficulty, yea, e
 and we called the place Bountiful, because of its much fruit.
 And it came to pass that after I, Nephi, had been in the land of Bountiful for the space of many days, the voice of the Lord came unto me, saying:
 Arise,
-and get thee into the mountain. And it came to pass that I arose and went up into the mountain, and cried unto the Lord.
+and get thee into the mountain.
+And it came to pass that I arose and went up into the mountain, and cried unto the Lord.
 And it came to pass that the Lord spake unto me, saying:
 Thou shalt construct a ship, after the manner which I shall show thee, that I may carry thy people across these waters.
 And I said: Lord,
@@ -1196,8 +1188,7 @@ and we were driven back upon the waters for the space of three days;
 and they began to be frightened exceedingly lest they should be drowned in the sea;
 nevertheless they did not loose me.
 And on the fourth day, which we had been driven back, the tempest began to be exceedingly sore.
-And it came to pass that we were about to be swallowed up in the depths of the sea. And after we had been driven back upon the waters for the space of four days, my brethren began to see that the judgments of God were upon them,
-and that they must perish save that they should repent of their iniquities;
+And it came to pass that we were about to be swallowed up in the depths of the sea. And after we had been driven back upon the waters for the space of four days, my brethren began to see that the judgments of God were upon them, and that they must perish save that they should repent of their iniquities;
 wherefore, they came unto me, and loosed the bands which were upon my wrists, and behold they had swollen exceedingly; and also mine ankles were much swollen, and great was the soreness thereof.
 Nevertheless, I did look unto my God,
 and I did praise him all the day long;
@@ -1435,8 +1426,8 @@ The place is too strait for me; give place to me that I may dwell.
 Then shalt thou say in thine heart:
 Who hath begotten me these, seeing I have lost my children, and am desolate, a captive, and removing to and fro?
 And who hath brought up these?
-Behold, I was left alone; these,
-where have they been?
+Behold, I was left alone;
+these, where have they been?
 Thus saith the Lord God:
 Behold, I will lift up mine hand to the Gentiles,
 and set up my standard to the people;
@@ -1596,9 +1587,7 @@ Or, that a cursing should come upon you for the space of many generations;
 and ye are visited by sword, and by famine,
 and are hated,
 and are led according to the will and captivity of the devil.
-O my sons,
-that these things might not come upon you,
-but that ye might be a choice and a favored people of the Lord.
+O my sons, that these things might not come upon you, but that ye might be a choice and a favored people of the Lord.
 But behold, his will be done;
 for his ways are righteousness forever.
 And he hath said that:
@@ -1606,7 +1595,8 @@ Inasmuch as ye shall keep my commandments ye shall prosper in the land;
 but inasmuch as ye will not keep my commandments ye shall be cut off from my presence.
 And now that my soul might have joy in you,
 and that my heart might leave this world with gladness because of you,
-that I might not be brought down with grief and sorrow to the grave, arise from the dust, my sons, and be men, and be determined in one mind and in one heart, united in all things,
+that I might not be brought down with grief and sorrow to the grave,
+arise from the dust, my sons, and be men, and be determined in one mind and in one heart, united in all things,
 that ye may not come down into captivity;
 That ye may not be cursed with a sore cursing;
 and also,
@@ -1745,8 +1735,7 @@ And he obtained a promise of the Lord,
 that out of the fruit of his loins the Lord God would raise up a righteous branch unto the house of Israel; not the Messiah, but a branch which was to be broken off, nevertheless, to be remembered in the covenants of the Lord
 that the Messiah should be made manifest unto them in the latter days, in the spirit of power, unto the bringing of them out of darkness unto light--yea, out of hidden darkness and out of captivity unto freedom.
 For Joseph truly testified, saying:
-A seer shall the Lord my God raise up,
-who shall be a choice seer unto the fruit of my loins.
+A seer shall the Lord my God raise up, who shall be a choice seer unto the fruit of my loins.
 Yea, Joseph truly said:
 Thus saith the Lord unto me:
 A choice seer will I raise up out of the fruit of thy loins;
@@ -2057,8 +2046,8 @@ and I make sackcloth their covering.
 The Lord God hath given me the tongue of the learned, that I should know how to speak a word in season unto thee, O house of Israel.
 When ye are weary he waketh morning by morning.
 He waketh mine ear to hear as the learned.
-The Lord God hath opened mine ear, and I was not rebellious,
-neither turned away back.
+The Lord God hath opened mine ear,
+and I was not rebellious, neither turned away back.
 I gave my back to the smiter,
 and my cheeks to them that plucked off the hair.
 I hid not my face from shame and spitting.
@@ -2076,8 +2065,7 @@ and I will smite him with the strength of my mouth.
 For the Lord God will help me.
 And all they who shall condemn me, behold, all they shall wax old as a garment,
 and the moth shall eat them up.
-Who is among you
-that feareth the Lord, that obeyeth the voice of his servant, that walketh in darkness and hath no light?
+Who is among you that feareth the Lord, that obeyeth the voice of his servant, that walketh in darkness and hath no light?
 Behold all ye that kindle fire, that compass yourselves about with sparks, walk in the light of your fire and in the sparks which ye have kindled.
 This shall ye have of mine hand
 --ye shall lie down in sorrow.
@@ -2118,8 +2106,7 @@ and my salvation from generation to generation.
 Awake, awake!
 Put on strength, O arm of the Lord; awake as in the ancient days.
 Art thou not he that hath cut Rahab, and wounded the dragon?
-Art thou not he who hath dried the sea, the waters of the great deep;
-that hath made the depths of the sea a way for the ransomed to pass over?
+Art thou not he who hath dried the sea, the waters of the great deep; that hath made the depths of the sea a way for the ransomed to pass over?
 Therefore, the redeemed of the Lord shall return, and come with singing unto Zion; and everlasting joy and holiness shall be upon their heads;
 and they shall obtain gladness and joy;
 sorrow and mourning shall flee away.
@@ -2136,8 +2123,7 @@ The captive exile hasteneth,
 that he may be loosed,
 and that he should not die in the pit,
 nor that his bread should fail.
-But I am the Lord thy God,
-whose waves roared;
+But I am the Lord thy God, whose waves roared;
 the Lord of Hosts is my name.
 And I have put my words in thy mouth, and have covered thee in the shadow of mine hand,
 that I may plant the heavens and lay the foundations of the earth, and say unto Zion:
@@ -2167,8 +2153,8 @@ arise,
 sit down, O Jerusalem;
 loose thyself from the bands of thy neck, O captive daughter of Zion.
 And now, my beloved brethren, I have read these things that ye might know concerning the covenants of the Lord that he has covenanted with all the house of Israel--
-That he has spoken unto the Jews, by the mouth of his holy prophets, even from the beginning down, from generation to generation, until the time comes
-that they shall be restored to the true church and fold of God; when they shall be gathered home to the lands of their inheritance, and shall be established in all their lands of promise.
+That he has spoken unto the Jews, by the mouth of his holy prophets, even from the beginning down, from generation to generation, until the time comes that they shall be restored to the true church and fold of God;
+when they shall be gathered home to the lands of their inheritance, and shall be established in all their lands of promise.
 Behold, my beloved brethren, I speak unto you these things that ye may rejoice, and lift up your heads forever, because of the blessings which the Lord God shall bestow upon your children.
 For I know that ye have searched much, many of you, to know of things to come;
 wherefore I know that ye know that our flesh must waste away and die;
@@ -2218,7 +2204,8 @@ O the greatness and the justice of our God!
 For he executeth all his words,
 and they have gone forth out of his mouth,
 and his law must be fulfilled.
-But, behold, the righteous, the saints of the Holy One of Israel, they who have believed in the Holy One of Israel, they who have endured the crosses of the world, and despised the shame of it, they shall inherit the kingdom of God, which was prepared for them from the foundation of the world, and their joy shall be full forever.
+But, behold, the righteous, the saints of the Holy One of Israel, they who have believed in the Holy One of Israel, they who have endured the crosses of the world, and despised the shame of it, they shall inherit the kingdom of God, which was prepared for them from the foundation of the world,
+and their joy shall be full forever.
 O the greatness of the mercy of our God, the Holy One of Israel!
 For he delivereth his saints from that awful monster
 the devil, and death, and hell, and that lake of fire and brimstone, which is endless torment.
@@ -2377,8 +2364,7 @@ nevertheless, I will soften the hearts of the Gentiles, that they shall be like 
 wherefore, the Gentiles shall be blessed and numbered among the house of Israel.
 Wherefore, I will consecrate this land unto thy seed, and them who shall be numbered among thy seed, forever, for the land of their inheritance;
 for it is a choice land, saith God unto me, above all other lands,
-wherefore I will have all men that dwell thereon that they shall worship me,
-saith God.
+wherefore I will have all men that dwell thereon that they shall worship me, saith God.
 And now, my beloved brethren, seeing that our merciful God has given us so great knowledge concerning these things, let us remember him, and lay aside our sins, and not hang down our heads,
 for we are not cast off;
 nevertheless, we have been driven out of the land of our inheritance;
@@ -2623,8 +2609,7 @@ Whose arrows shall be sharp,
 and all their bows bent,
 and their horses' hoofs shall be counted like flint, and their wheels like a whirlwind, their roaring like a lion.
 They shall roar like young lions;
-yea, they shall roar, and lay hold of the prey,
-and shall carry away safe,
+yea, they shall roar, and lay hold of the prey, and shall carry away safe,
 and none shall deliver.
 And in that day they shall roar against them like the roaring of the sea;
 and if they look unto the land,
@@ -2649,8 +2634,7 @@ because I am a man of unclean lips;
 and I dwell in the midst of a people of unclean lips;
 for mine eyes have seen the King, the Lord of Hosts.
 Then flew one of the seraphim unto me,
-having a live coal in his hand,
-which he had taken with the tongs from off the altar;
+having a live coal in his hand, which he had taken with the tongs from off the altar;
 And he laid it upon my mouth,
 and said:
 Lo, this has touched thy lips;
@@ -2824,8 +2808,7 @@ they shall eat every man the flesh of his own arm --
 Manasseh, Ephraim; and Ephraim, Manasseh; they together shall be against Judah.
 For all this his anger is not turned away,
 but his hand is stretched out still.
-Wo unto them
-that decree unrighteous decrees, and that write grievousness which they have prescribed;
+Wo unto them that decree unrighteous decrees, and that write grievousness which they have prescribed;
 To turn away the needy from judgment, and to take away the right from the poor of my people,
 that widows may be their prey,
 and that they may rob the fatherless!
@@ -3438,13 +3421,11 @@ and they that murmured shall learn doctrine.
 And now, behold, my brethren, I have spoken unto you, according as the Spirit hath constrained me;
 wherefore, I know that they must surely come to pass.
 And the things which shall be written out of the book shall be of great worth unto the children of men, and especially unto our seed, which is a remnant of the house of Israel.
-For it shall come to pass in that day
-that the churches which are built up, and not unto the Lord, when the one shall say unto the other:
+For it shall come to pass in that day that the churches which are built up, and not unto the Lord, when the one shall say unto the other:
 Behold, I, I am the Lord's;
 and the others shall say:
 I, I am the Lord's;
-and thus shall every one say
-that hath built up churches, and not unto the Lord- -
+and thus shall every one say that hath built up churches, and not unto the Lord- -
 And they shall contend one with another;
 and their priests shall contend one with another,
 and they shall teach with their learning,
@@ -3533,13 +3514,10 @@ and from them that shall say, We have enough,
 from them shall be taken away even that which they have.
 Cursed is he that putteth his trust in man, or maketh flesh his arm, or shall hearken unto the precepts of men,
 save their precepts shall be given by the power of the Holy Ghost.
-Wo be unto the Gentiles,
-saith the Lord God of Hosts!
+Wo be unto the Gentiles, saith the Lord God of Hosts!
 For notwithstanding I shall lengthen out mine arm unto them from day to day, they will deny me;
-nevertheless, I will be merciful unto them,
-saith the Lord God, if they will repent and come unto me;
-for mine arm is lengthened out all the day long,
-saith the Lord God of Hosts.
+nevertheless, I will be merciful unto them, saith the Lord God, if they will repent and come unto me;
+for mine arm is lengthened out all the day long, saith the Lord God of Hosts.
 But behold, there shall be many--at that day when I shall proceed to do a marvelous work among them,
 that I may remember my covenants which I have made unto the children of men,
 that I may set my hand again the second time to recover my people, which are of the house of Israel;
@@ -3839,10 +3817,8 @@ But he condemneth you,
 and if ye persist in these things his judgments must speedily come unto you.
 O that he would show you that he can pierce you,
 and with one glance of his eye he can smite you to the dust!
-O
-that he would rid you from this iniquity and abomination.
-And, O
-that ye would listen unto the word of his commands, and let not this pride of your hearts destroy your souls!
+O that he would rid you from this iniquity and abomination.
+And, O that ye would listen unto the word of his commands, and let not this pride of your hearts destroy your souls!
 Think of your brethren like unto yourselves, and be familiar with all and free with your substance,
 that they may be rich like unto you.
 But before ye seek for riches, seek ye for the kingdom of God.
@@ -4022,8 +3998,7 @@ Behold, the branches of the wild tree have taken hold of the moisture of the roo
 and because of the much strength of the root thereof the wild branches have brought forth tame fruit.
 Now, if we had not grafted in these branches, the tree thereof would have perished.
 And now, behold, I shall lay up much fruit, which the tree thereof hath brought forth;
-and the fruit thereof
-I shall lay up against the season, unto mine own self.
+and the fruit thereof I shall lay up against the season, unto mine own self.
 And it came to pass that the Lord of the vineyard said unto the servant:
 Come, let us go to the nethermost part of the vineyard, and behold if the natural branches of the tree have not brought forth much fruit also,
 that I may lay up of the fruit thereof against the season, unto mine own self.
@@ -4070,8 +4045,7 @@ And it came to pass that a long time had passed away, and the Lord of the vineya
 Come, let us go down into the vineyard, that we may labor again in the vineyard.
 For behold, the time draweth near,
 and the end soon cometh; wherefore, I must lay up fruit against the season, unto mine own self.
-And it came to pass that the Lord of the vineyard and the servant went down into the vineyard; and they came to the tree whose natural branches had been broken off,
-and the wild branches had been grafted in;
+And it came to pass that the Lord of the vineyard and the servant went down into the vineyard; and they came to the tree whose natural branches had been broken off, and the wild branches had been grafted in;
 and behold all sorts of fruit did cumber the tree.
 And it came to pass that the Lord of the vineyard did taste of the fruit, every sort according to its number.
 And the Lord of the vineyard said:
