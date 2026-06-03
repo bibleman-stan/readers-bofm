@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-03T21:52:30+00:00Z
+@dateWritten=2026-06-03T22:02:29+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -4551,8 +4551,7 @@ And now I, Mormon, being about to deliver up the record which I have been making
 behold I have witnessed almost all the destruction of my people, the Nephites.
 And it is many hundred years after the coming of Christ that I deliver these records into the hands of my son;
 and it supposeth me that he will witness the entire destruction of my people.
-But may God grant
-that he may survive them,
+But may God grant that he may survive them,
 that he may write somewhat concerning them, and somewhat concerning Christ,
 that perhaps some day it may profit them.
 And now, I speak somewhat concerning that which I have written;
