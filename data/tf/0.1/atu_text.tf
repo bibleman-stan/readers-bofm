@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T23:51:54+00:00Z
+@dateWritten=2026-06-03T05:46:55+00:00Z
 
 302628	I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father;
 and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days;
@@ -9346,7 +9346,8 @@ behold, by and by ye shall pluck the fruit thereof, which is most precious, whic
 yea, and pure above all that is pure;
 and ye shall feast upon this fruit even until ye are filled, that ye hunger not, neither shall ye thirst.
 Then, my brethren, ye shall reap the rewards of your faith, and your diligence, and patience, and long-suffering, waiting for the tree to bring forth fruit unto you.
-Now after Alma had spoken these words, they sent forth unto him desiring to know whether they should believe in one God, that they might obtain this fruit of which he had spoken,
+Now after Alma had spoken these words, they sent forth unto him,
+desiring to know whether they should believe in one God, that they might obtain this fruit of which he had spoken,
 or how they should plant the seed,
 or the word of which he had spoken, which he said must be planted in their hearts;
 or in what manner they should begin to exercise their faith.

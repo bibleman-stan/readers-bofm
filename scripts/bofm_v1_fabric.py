@@ -70,6 +70,20 @@ _LEAD_INTJ = {"yea"}
 # ("thus saith / the Lord") before it can ship.
 _VERBA_DICENDI = {"say", "speak", "cry", "answer", "command", "declare", "exhort",
                   "ask", "tell", "reply", "utter", "proclaim", "preach"}
+# Cognition-frame participial allowance lemma sets (framework §2.1, Alma 33:1
+# class). An unmarked participial advcl with one of these cognition/volitional
+# /inquiry lemmas, governing an xcomp cognition-perception verb whose own
+# ccomp or wh-mark is a propositional content slot, performs identical
+# discourse work to a finite speech-frame and heads its own ATU.
+_COGNITION_PARTICIPLE = {"desire", "seek", "wish", "hope", "want", "intend",
+                         "wonder", "marvel", "pray", "ask", "inquire", "long",
+                         "yearn", "aspire", "crave", "covet", "beseech",
+                         "entreat", "plead", "beg", "solicit", "petition"}
+_COGNITION_INF = {"know", "learn", "find", "hear", "see", "understand",
+                  "perceive", "discover", "recognize", "realize",
+                  "comprehend", "ascertain"}
+_WH_MARKS = {"whether", "how", "what", "why", "wherefore", "who",
+             "where", "when"}
 # Light pronoun heads for the pronoun-head restrictive-relative bind (framework
 # §2.1 relative-clause corollary): a restrictive relative whose antecedent is a
 # bare pronoun ("blessed are THEY who humble themselves", "he THAT believeth",
@@ -346,6 +360,38 @@ def is_clause_head(tok, by_id=None):
     # comfort Zion // he will comfort her waste places"); a subjectless unmarked
     # advcl is participial ("having seen many afflictions") -> bind.
     if base == "advcl" and by_id is not None:
+        # Cognition-frame participial allowance (framework §2.1, Alma 33:1 class).
+        # An unmarked participial advcl with a cognition/volitional/inquiry
+        # lemma governing an xcomp cognition-perception verb whose own ccomp
+        # or wh-mark is a propositional content slot performs identical
+        # discourse work to a finite speech-frame -- it introduces propositional
+        # content the subject is processing/inquiring about. The non-finite
+        # cousin of frame|quote BREAK; splits from its content as its own ATU.
+        # Parallel-cola uniformity argument: when the content slot has a
+        # multi-alternative list (or how... or what...), items 2..N each get
+        # their own ATU under the existing fabric, so item 1 must too, which
+        # requires the frame to separate.
+        _cog_lemma = (tok.lemma or "").lower()
+        if _cog_lemma in _COGNITION_PARTICIPLE:
+            _unmarked = not any(_i(c.head) == _i(tok.id) and (c.deprel or "") == "mark"
+                                for c in by_id.values())
+            if _unmarked:
+                _xcomp = next((c for c in by_id.values()
+                               if _i(c.head) == _i(tok.id)
+                               and (c.deprel or "").split(":")[0] == "xcomp"
+                               and (c.lemma or "").lower() in _COGNITION_INF), None)
+                if _xcomp is not None:
+                    _has_content = (
+                        any(_i(c.head) == _i(_xcomp.id)
+                            and (c.deprel or "").split(":")[0] == "ccomp"
+                            for c in by_id.values())
+                        or any(_i(c.head) == _i(_xcomp.id)
+                               and (c.deprel or "") == "mark"
+                               and (c.lemma or c.form or "").lower() in _WH_MARKS
+                               for c in by_id.values())
+                    )
+                    if _has_content:
+                        return True  # cognition-frame participial → split
         # A clause is subordinated if it carries a subordinator. stanza tags these
         # inconsistently -- "because"/"that"/"if" as `mark`, but fronted temporal
         # "when"/"after"/"before" often as `advmod` (ADV) -- so detect by deprel
