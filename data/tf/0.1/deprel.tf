@@ -8,7 +8,7 @@
 @version=0.1
 @writtenBy=readers-bofm/scripts/build_tf.py
 @writtenBy=Text-Fabric
-@dateWritten=2026-06-02T22:02:37+00:00Z
+@dateWritten=2026-06-02T23:51:54+00:00Z
 
 nsubj:pass
 punct
@@ -2941,7 +2941,7 @@ mark
 nsubj
 cop
 advmod
-conj
+ccomp
 punct
 nsubj
 aux
@@ -4263,7 +4263,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 obj
 cc
 aux
@@ -23707,7 +23707,7 @@ det
 nsubj:pass
 aux
 aux:pass
-conj
+ccomp
 compound:prt
 case
 nummod
@@ -48050,7 +48050,7 @@ obj
 punct
 cc
 nsubj
-conj
+acl:relcl
 obj
 obj
 nsubj
@@ -62660,7 +62660,7 @@ mark
 det
 nsubj
 aux
-conj
+ccomp
 case
 obl
 punct
@@ -63198,7 +63198,7 @@ cc
 mark
 nsubj
 aux
-conj
+advcl
 nmod:poss
 obj
 case
@@ -77571,7 +77571,7 @@ cc
 mark
 nsubj
 aux
-conj
+advcl
 case
 det
 obl
@@ -79107,7 +79107,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 mark
 nsubj
 case
@@ -79342,7 +79342,7 @@ nsubj
 aux
 advmod
 cop
-conj
+advcl
 case
 obl
 punct
@@ -80041,7 +80041,7 @@ nmod:poss
 nsubj
 aux
 advmod
-conj
+ccomp
 case
 obl
 punct
@@ -94129,7 +94129,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 nmod:poss
 obj
 punct
@@ -107545,7 +107545,7 @@ cc
 mark
 nsubj
 aux
-conj
+advcl
 det
 obj
 case
@@ -111800,7 +111800,7 @@ punct
 cc
 mark
 nsubj
-conj
+ccomp
 det
 obj
 punct
@@ -121974,7 +121974,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 case
 det
 obl
@@ -141162,7 +141162,7 @@ punct
 cc
 mark
 nsubj
-conj
+ccomp
 obj
 mark
 acl
@@ -144838,7 +144838,7 @@ cc
 mark
 expl
 aux
-conj
+ccomp
 det
 nsubj
 case
@@ -146442,7 +146442,7 @@ mark
 nsubj:pass
 aux
 aux:pass
-conj
+advcl
 case
 det
 obl
@@ -147771,7 +147771,7 @@ cc
 mark
 nsubj
 aux
-conj
+advcl
 advmod
 case
 det:predet
@@ -150339,7 +150339,7 @@ punct
 cc
 mark
 nsubj
-conj
+ccomp
 amod
 obj
 case
@@ -157008,7 +157008,7 @@ mark
 nsubj
 aux
 advmod
-conj
+advcl
 compound:prt
 case
 obl
@@ -163922,7 +163922,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 case
 det
 obl
@@ -165173,7 +165173,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 compound:prt
 nmod:poss
 obj
@@ -172998,7 +172998,7 @@ case
 nmod
 aux
 aux:pass
-parataxis
+csubj
 case
 nmod:poss
 obl
@@ -184274,7 +184274,7 @@ cc
 mark
 nsubj
 aux
-conj
+advcl
 case
 det
 obl
@@ -191347,7 +191347,7 @@ aux
 case
 det
 obl
-conj
+advcl
 obj
 case
 case
@@ -201393,7 +201393,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 advmod
 case
 det
@@ -209788,7 +209788,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 det
 obj
 case
@@ -209983,7 +209983,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 det
 obj
 advmod
@@ -249765,7 +249765,7 @@ cc
 mark
 nsubj
 aux
-conj
+ccomp
 nmod:poss
 obj
 punct

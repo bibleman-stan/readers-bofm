@@ -3156,7 +3156,7 @@
 15	it	it	PRON	_	_	18	nsubj	_	_
 16	was	be	AUX	_	_	18	cop	_	_
 17	exceedingly	exceedingly	ADV	_	_	18	advmod	_	_
-18	great	great	ADJ	_	_	9	conj	_	_
+18	great	great	ADJ	_	_	9	ccomp	_	_
 19	,	,	PUNCT	_	_	9	punct	_	_
 20	he	he	PRON	_	_	22	nsubj	_	_
 21	did	do	AUX	_	_	22	aux	_	_
@@ -4610,7 +4610,7 @@
 38	that	that	SCONJ	_	_	41	mark	_	_
 39	he	he	PRON	_	_	41	nsubj	_	_
 40	had	have	AUX	_	_	41	aux	_	_
-41	slain	slain	VERB	_	_	32	conj	_	_
+41	slain	slain	VERB	_	_	32	ccomp	_	_
 42	me	I	PRON	_	_	41	obj	_	_
 43	and	and	CCONJ	_	_	45	cc	_	_
 44	had	have	AUX	_	_	45	aux	_	_
@@ -25422,7 +25422,7 @@
 60	plates	plate	NOUN	_	_	63	nsubj:pass	_	_
 61	should	should	AUX	_	_	63	aux	_	_
 62	be	be	AUX	_	_	63	aux:pass	_	_
-63	handed	hand	VERB	_	_	42	conj	_	_
+63	handed	hand	VERB	_	_	45	ccomp	_	_
 64	down	down	ADP	_	_	63	compound:prt	_	_
 65	from	from	ADP	_	_	67	case	_	_
 66	one	one	NUM	_	_	67	nummod	_	_

@@ -364,7 +364,7 @@
 27	all	all	DET	_	_	28	det	_	_
 28	men	man	NOUN	_	_	30	nsubj	_	_
 29	would	would	AUX	_	_	30	aux	_	_
-30	believe	believe	VERB	_	_	10	conj	_	_
+30	believe	believe	VERB	_	_	4	ccomp	_	_
 31	in	in	ADP	_	_	32	case	_	_
 32	Christ	Christ	PROPN	_	_	30	obl	_	_
 33	,	,	PUNCT	_	_	35	punct	_	_
@@ -941,7 +941,7 @@
 30	that	that	SCONJ	_	_	33	mark	_	_
 31	I	I	PRON	_	_	33	nsubj	_	_
 32	might	might	AUX	_	_	33	aux	_	_
-33	rid	rid	VERB	_	_	41	conj	_	_
+33	rid	rid	VERB	_	_	23	advcl	_	_
 34	my	my	PRON	_	_	35	nmod:poss	_	_
 35	garments	garment	NOUN	_	_	33	obj	_	_
 36	of	of	ADP	_	_	38	case	_	_

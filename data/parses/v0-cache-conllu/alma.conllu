@@ -10041,7 +10041,7 @@
 26	that	that	SCONJ	_	_	29	mark	_	_
 27	ye	you	PRON	_	_	29	nsubj	_	_
 28	had	have	AUX	_	_	29	aux	_	_
-29	continued	continue	VERB	_	_	20	conj	_	_
+29	continued	continue	VERB	_	_	16	ccomp	_	_
 30	in	in	ADP	_	_	32	case	_	_
 31	the	the	DET	_	_	32	det	_	_
 32	supplicating	supplicating	NOUN	_	_	29	obl	_	_
@@ -30633,7 +30633,7 @@
 22	and	and	CCONJ	_	_	25	cc	_	_
 23	that	that	SCONJ	_	_	25	mark	_	_
 24	thou	you	PRON	_	_	25	nsubj	_	_
-25	hast	have	VERB	_	_	16	conj	_	_
+25	hast	have	VERB	_	_	9	ccomp	_	_
 26	power	power	NOUN	_	_	25	obj	_	_
 27	to	to	PART	_	_	28	mark	_	_
 28	do	do	VERB	_	_	26	acl	_	_
@@ -34582,7 +34582,7 @@
 26	that	that	SCONJ	_	_	29	mark	_	_
 27	there	there	PRON	_	_	29	expl	_	_
 28	could	could	AUX	_	_	29	aux	_	_
-29	be	be	VERB	_	_	20	conj	_	_
+29	be	be	VERB	_	_	5	ccomp	_	_
 30	no	no	DET	_	_	31	det	_	_
 31	redemption	redemption	NOUN	_	_	29	nsubj	_	_
 32	for	for	ADP	_	_	33	case	_	_
@@ -36303,7 +36303,7 @@
 49	I	I	PRON	_	_	52	nsubj:pass	_	_
 50	may	may	AUX	_	_	52	aux	_	_
 51	be	be	AUX	_	_	52	aux:pass	_	_
-52	raised	raise	VERB	_	_	38	conj	_	_
+52	raised	raise	VERB	_	_	38	advcl	_	_
 53	from	from	ADP	_	_	55	case	_	_
 54	the	the	DET	_	_	55	det	_	_
 55	dead	dead	ADJ	_	_	52	obl	_	_
@@ -37710,7 +37710,7 @@
 54	that	that	SCONJ	_	_	57	mark	_	_
 55	it	it	PRON	_	_	57	nsubj	_	_
 56	might	might	AUX	_	_	57	aux	_	_
-57	go	go	VERB	_	_	49	conj	_	_
+57	go	go	VERB	_	_	5	advcl	_	_
 58	forth	forth	ADV	_	_	57	advmod	_	_
 59	throughout	throughout	ADP	_	_	62	case	_	_
 60	all	all	DET	_	_	62	det:predet	_	_
@@ -40431,7 +40431,7 @@
 57	and	and	CCONJ	_	_	60	cc	_	_
 58	that	that	SCONJ	_	_	60	mark	_	_
 59	he	he	PRON	_	_	60	nsubj	_	_
-60	gave	give	VERB	_	_	52	conj	_	_
+60	gave	give	VERB	_	_	52	ccomp	_	_
 61	great	great	ADJ	_	_	62	amod	_	_
 62	power	power	NOUN	_	_	60	obj	_	_
 63	unto	to	ADP	_	_	65	case	_	_
@@ -47601,7 +47601,7 @@
 49	they	they	PRON	_	_	52	nsubj	_	_
 50	durst	dare	AUX	_	_	52	aux	_	_
 51	not	not	PART	_	_	52	advmod	_	_
-52	look	look	VERB	_	_	39	conj	_	_
+52	look	look	VERB	_	_	25	advcl	_	_
 53	up	up	ADP	_	_	52	compound:prt	_	_
 54	with	with	ADP	_	_	55	case	_	_
 55	boldness	boldness	NOUN	_	_	52	obl	_	_
@@ -55037,7 +55037,7 @@
 33	that	that	SCONJ	_	_	36	mark	_	_
 34	he	he	PRON	_	_	36	nsubj	_	_
 35	shall	shall	AUX	_	_	36	aux	_	_
-36	atone	atone	VERB	_	_	15	conj	_	_
+36	atone	atone	VERB	_	_	11	ccomp	_	_
 37	for	for	ADP	_	_	39	case	_	_
 38	the	the	DET	_	_	39	det	_	_
 39	sins	sin	NOUN	_	_	36	obl	_	_
@@ -56384,7 +56384,7 @@
 18	that	that	SCONJ	_	_	21	mark	_	_
 19	ye	you	PRON	_	_	21	nsubj	_	_
 20	should	should	AUX	_	_	21	aux	_	_
-21	work	work	VERB	_	_	13	conj	_	_
+21	work	work	VERB	_	_	13	ccomp	_	_
 22	out	out	ADP	_	_	21	compound:prt	_	_
 23	your	your	PRON	_	_	24	nmod:poss	_	_
 24	salvation	salvation	NOUN	_	_	21	obj	_	_
@@ -64767,7 +64767,7 @@
 22	man	man	NOUN	_	_	20	nmod	_	_
 23	should	should	AUX	_	_	25	aux	_	_
 24	be	be	AUX	_	_	25	aux:pass	_	_
-25	restored	restore	VERB	_	_	5	parataxis	_	_
+25	restored	restore	VERB	_	_	5	csubj	_	_
 26	to	to	ADP	_	_	28	case	_	_
 27	its	its	PRON	_	_	28	nmod:poss	_	_
 28	body	body	NOUN	_	_	25	obl	_	_
@@ -76793,7 +76793,7 @@
 26	that	that	SCONJ	_	_	29	mark	_	_
 27	they	they	PRON	_	_	29	nsubj	_	_
 28	might	might	AUX	_	_	29	aux	_	_
-29	live	live	VERB	_	_	5	conj	_	_
+29	live	live	VERB	_	_	5	advcl	_	_
 30	unto	to	ADP	_	_	32	case	_	_
 31	the	the	DET	_	_	32	det	_	_
 32	Lord	Lord	PROPN	_	_	29	obl	_	_
@@ -84304,7 +84304,7 @@
 47	by	by	ADP	_	_	49	case	_	_
 48	some	some	DET	_	_	49	det	_	_
 49	means	means	NOUN	_	_	50	obl	_	_
-50	flatter	flatter	VERB	_	_	21	conj	_	_
+50	flatter	flatter	VERB	_	_	32	advcl	_	_
 51	them	they	PRON	_	_	50	obj	_	_
 52	out	out	ADP	_	_	55	case	_	_
 53	of	of	ADP	_	_	55	case	_	_
@@ -95055,7 +95055,7 @@
 22	that	that	SCONJ	_	_	25	mark	_	_
 23	they	they	PRON	_	_	25	nsubj	_	_
 24	should	should	AUX	_	_	25	aux	_	_
-25	march	march	VERB	_	_	19	conj	_	_
+25	march	march	VERB	_	_	13	ccomp	_	_
 26	forward	forward	ADV	_	_	25	advmod	_	_
 27	by	by	ADP	_	_	29	case	_	_
 28	another	another	DET	_	_	29	det	_	_
