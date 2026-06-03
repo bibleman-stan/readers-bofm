@@ -2831,7 +2831,7 @@
 17	that	that	SCONJ	_	_	20	mark	_	_
 18	they	they	PRON	_	_	20	nsubj	_	_
 19	would	would	AUX	_	_	20	aux	_	_
-20	go	go	VERB	_	_	4	conj	_	_
+20	go	go	VERB	_	_	4	ccomp	_	_
 21	up	up	ADP	_	_	20	compound:prt	_	_
 22	to	to	PART	_	_	23	mark	_	_
 23	battle	battle	VERB	_	_	20	advcl	_	_
@@ -7003,7 +7003,7 @@
 38	that	that	SCONJ	_	_	41	mark	_	_
 39	he	he	PRON	_	_	41	nsubj:pass	_	_
 40	was	be	AUX	_	_	41	aux:pass	_	_
-41	slain	slain	VERB	_	_	33	conj	_	_
+41	slain	slain	VERB	_	_	24	ccomp	_	_
 42	by	by	ADP	_	_	44	case	_	_
 43	the	the	DET	_	_	44	det	_	_
 44	Jews	Jew	PROPN	_	_	41	obl:agent	_	_
@@ -9019,7 +9019,7 @@
 11	that	that	SCONJ	_	_	14	mark	_	_
 12	ye	you	PRON	_	_	14	nsubj	_	_
 13	might	might	AUX	_	_	14	aux	_	_
-14	bring	bring	VERB	_	_	4	parataxis	_	_
+14	bring	bring	VERB	_	_	4	advcl	_	_
 15	damnation	damnation	NOUN	_	_	14	obj	_	_
 16	upon	upon	ADP	_	_	18	case	_	_
 17	your	your	PRON	_	_	18	nmod:poss	_	_

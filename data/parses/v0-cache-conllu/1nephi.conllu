@@ -6636,7 +6636,7 @@
 60	that	that	SCONJ	_	_	63	mark	_	_
 61	ye	you	PRON	_	_	63	nsubj	_	_
 62	have	have	AUX	_	_	63	aux	_	_
-63	need	need	VERB	_	_	48	parataxis	_	_
+63	need	need	VERB	_	_	42	ccomp	_	_
 64	that	that	SCONJ	_	_	72	mark	_	_
 65	I	I	PRON	_	_	72	nsubj	_	_
 66	,	,	PUNCT	_	_	69	punct	_	_
@@ -7057,7 +7057,7 @@
 65	that	that	SCONJ	_	_	68	mark	_	_
 66	they	they	PRON	_	_	68	nsubj	_	_
 67	might	might	AUX	_	_	68	aux	_	_
-68	leave	leave	VERB	_	_	58	parataxis	_	_
+68	leave	leave	VERB	_	_	58	advcl	_	_
 69	me	I	PRON	_	_	68	obj	_	_
 70	in	in	ADP	_	_	72	case	_	_
 71	the	the	DET	_	_	72	det	_	_
@@ -8078,7 +8078,7 @@
 37	perhaps	perhaps	ADV	_	_	40	advmod	_	_
 38	I	I	PRON	_	_	40	nsubj	_	_
 39	might	might	AUX	_	_	40	aux	_	_
-40	see	see	VERB	_	_	26	parataxis	_	_
+40	see	see	VERB	_	_	26	advcl	_	_
 41	them	they	PRON	_	_	40	obj	_	_
 42	.	.	PUNCT	_	_	3	punct	_	_
 
@@ -8841,7 +8841,7 @@
 16	that	that	SCONJ	_	_	19	mark	_	_
 17	they	they	PRON	_	_	19	nsubj	_	_
 18	would	would	AUX	_	_	19	aux	_	_
-19	hearken	listen	VERB	_	_	4	parataxis	_	_
+19	hearken	listen	VERB	_	_	4	ccomp	_	_
 20	to	to	ADP	_	_	22	case	_	_
 21	his	his	PRON	_	_	22	nmod:poss	_	_
 22	words	word	NOUN	_	_	19	obl	_	_
@@ -10612,7 +10612,7 @@
 30	thou	you	PRON	_	_	33	nsubj	_	_
 31	shalt	shall	AUX	_	_	33	aux	_	_
 32	also	also	ADV	_	_	33	advmod	_	_
-33	behold	behold	VERB	_	_	7	parataxis	_	_
+33	behold	behold	VERB	_	_	7	ccomp	_	_
 34	a	a	DET	_	_	35	det	_	_
 35	man	man	NOUN	_	_	33	obj	_	_
 36	descending	descend	VERB	_	_	35	acl	_	_
@@ -11707,7 +11707,7 @@
 11	that	that	SCONJ	_	_	14	mark	_	_
 12	he	he	PRON	_	_	14	nsubj:pass	_	_
 13	was	be	AUX	_	_	14	aux:pass	_	_
-14	taken	take	VERB	_	_	3	parataxis	_	_
+14	taken	take	VERB	_	_	5	ccomp	_	_
 15	by	by	ADP	_	_	17	case	_	_
 16	the	the	DET	_	_	17	det	_	_
 17	people	person	NOUN	_	_	14	obl:agent	_	_
@@ -15112,7 +15112,7 @@
 83	all	all	DET	_	_	84	det	_	_
 84	men	man	NOUN	_	_	86	nsubj	_	_
 85	must	must	AUX	_	_	86	aux	_	_
-86	come	come	VERB	_	_	68	conj	_	_
+86	come	come	VERB	_	_	50	ccomp	_	_
 87	unto	to	ADP	_	_	88	case	_	_
 88	him	he	PRON	_	_	86	obl	_	_
 89	,	,	PUNCT	_	_	95	punct	_	_
@@ -19382,7 +19382,7 @@
 26	we	we	PRON	_	_	29	nsubj	_	_
 27	might	might	AUX	_	_	29	aux	_	_
 28	again	again	ADV	_	_	29	advmod	_	_
-29	rest	rest	VERB	_	_	15	parataxis	_	_
+29	rest	rest	VERB	_	_	15	advcl	_	_
 30	ourselves	ourselves	PRON	_	_	29	obj	_	_
 31	and	and	CCONJ	_	_	32	cc	_	_
 32	obtain	obtain	VERB	_	_	29	conj	_	_
@@ -20420,7 +20420,7 @@
 50	that	that	SCONJ	_	_	53	mark	_	_
 51	he	he	PRON	_	_	53	nsubj	_	_
 52	may	may	AUX	_	_	53	aux	_	_
-53	deceive	deceive	VERB	_	_	42	parataxis	_	_
+53	deceive	deceive	VERB	_	_	4	ccomp	_	_
 54	our	our	PRON	_	_	55	nmod:poss	_	_
 55	eyes	eye	NOUN	_	_	53	obj	_	_
 56	,	,	PUNCT	_	_	57	punct	_	_
@@ -20652,7 +20652,7 @@
 25	our	our	PRON	_	_	26	nmod:poss	_	_
 26	women	woman	NOUN	_	_	28	nsubj	_	_
 27	did	do	AUX	_	_	28	aux	_	_
-28	give	give	VERB	_	_	3	parataxis	_	_
+28	give	give	VERB	_	_	3	advcl	_	_
 29	plenty	plenty	NOUN	_	_	28	obj	_	_
 30	of	of	ADP	_	_	31	case	_	_
 31	suck	suck	NOUN	_	_	29	nmod	_	_
@@ -21009,7 +21009,7 @@
 16	that	that	SCONJ	_	_	19	mark	_	_
 17	I	I	PRON	_	_	19	nsubj	_	_
 18	may	may	AUX	_	_	19	aux	_	_
-19	carry	carry	VERB	_	_	3	parataxis	_	_
+19	carry	carry	VERB	_	_	3	advcl	_	_
 20	thy	your	PRON	_	_	21	nmod:poss	_	_
 21	people	person	NOUN	_	_	19	obj	_	_
 22	across	across	ADP	_	_	24	case	_	_
@@ -25511,7 +25511,7 @@
 12	be	be	AUX	_	_	15	cop	_	_
 13	that	that	SCONJ	_	_	15	mark	_	_
 14	I	I	PRON	_	_	15	nsubj	_	_
-15	think	think	VERB	_	_	6	parataxis	_	_
+15	think	think	VERB	_	_	6	advcl	_	_
 16	it	it	PRON	_	_	18	nsubj	_	_
 17	be	be	AUX	_	_	18	cop	_	_
 18	sacred	sacred	ADJ	_	_	15	ccomp	_	_
@@ -26298,7 +26298,7 @@
 15	perhaps	perhaps	ADV	_	_	18	advmod	_	_
 16	I	I	PRON	_	_	18	nsubj	_	_
 17	might	might	AUX	_	_	18	aux	_	_
-18	persuade	persuade	VERB	_	_	7	parataxis	_	_
+18	persuade	persuade	VERB	_	_	7	advcl	_	_
 19	them	they	PRON	_	_	18	iobj	_	_
 20	that	that	SCONJ	_	_	23	mark	_	_
 21	they	they	PRON	_	_	23	nsubj	_	_
@@ -26543,7 +26543,7 @@
 32	Redeemer	Redeemer	PROPN	_	_	27	obj	_	_
 33	I	I	PRON	_	_	35	nsubj	_	_
 34	did	do	AUX	_	_	35	aux	_	_
-35	read	read	VERB	_	_	4	conj	_	_
+35	read	read	VERB	_	_	50	advcl	_	_
 36	unto	to	ADP	_	_	37	case	_	_
 37	them	they	PRON	_	_	35	obl	_	_
 38	that	that	PRON	_	_	35	obj	_	_
@@ -28266,7 +28266,7 @@
 11	she	she	PRON	_	_	14	nsubj	_	_
 12	should	should	AUX	_	_	14	aux	_	_
 13	not	not	PART	_	_	14	advmod	_	_
-14	have	have	VERB	_	_	5	parataxis	_	_
+14	have	have	VERB	_	_	5	advcl	_	_
 15	compassion	compassion	NOUN	_	_	14	obj	_	_
 16	on	on	ADP	_	_	18	case	_	_
 17	the	the	DET	_	_	18	det	_	_

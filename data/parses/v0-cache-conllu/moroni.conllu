@@ -749,7 +749,7 @@
 59	that	that	SCONJ	_	_	62	mark	_	_
 60	they	they	PRON	_	_	62	nsubj	_	_
 61	may	may	AUX	_	_	62	aux	_	_
-62	witness	witness	VERB	_	_	42	parataxis	_	_
+62	witness	witness	VERB	_	_	9	ccomp	_	_
 63	unto	to	ADP	_	_	64	case	_	_
 64	thee	you	PRON	_	_	62	obl	_	_
 65	,	,	PUNCT	_	_	66	punct	_	_
@@ -1767,7 +1767,7 @@
 11	ye	you	PRON	_	_	14	nsubj	_	_
 12	do	do	AUX	_	_	14	aux	_	_
 13	not	not	PART	_	_	14	advmod	_	_
-14	judge	judge	VERB	_	_	3	parataxis	_	_
+14	judge	judge	VERB	_	_	3	ccomp	_	_
 15	that	that	PRON	_	_	14	obj	_	_
 16	which	which	PRON	_	_	18	nsubj	_	_
 17	is	be	AUX	_	_	18	cop	_	_
@@ -3499,7 +3499,7 @@
 19	ye	you	PRON	_	_	22	nsubj:pass	_	_
 20	may	may	AUX	_	_	22	aux	_	_
 21	be	be	AUX	_	_	22	aux:pass	_	_
-22	filled	fill	VERB	_	_	7	parataxis	_	_
+22	filled	fill	VERB	_	_	7	ccomp	_	_
 23	with	with	ADP	_	_	25	case	_	_
 24	this	this	DET	_	_	25	det	_	_
 25	love	love	NOUN	_	_	22	obl	_	_
@@ -4797,7 +4797,7 @@
 8	that	that	SCONJ	_	_	11	mark	_	_
 9	repentance	repentance	NOUN	_	_	11	nsubj	_	_
 10	may	may	AUX	_	_	11	aux	_	_
-11	come	come	VERB	_	_	1	parataxis	_	_
+11	come	come	VERB	_	_	1	advcl	_	_
 12	unto	to	ADP	_	_	13	case	_	_
 13	them	they	PRON	_	_	11	obl	_	_
 14	.	.	PUNCT	_	_	1	punct	_	_
@@ -7351,7 +7351,7 @@
 40	no	no	ADV	_	_	41	advmod	_	_
 41	more	more	ADV	_	_	43	advmod	_	_
 42	be	be	AUX	_	_	43	aux:pass	_	_
-43	confounded	confuse	VERB	_	_	28	parataxis	_	_
+43	confounded	confuse	VERB	_	_	28	advcl	_	_
 44	,	,	PUNCT	_	_	66	punct	_	_
 45	that	that	SCONJ	_	_	66	mark	_	_
 46	the	the	DET	_	_	47	det	_	_
@@ -7524,7 +7524,7 @@
 57	,	,	PUNCT	_	_	60	punct	_	_
 58	that	that	SCONJ	_	_	60	mark	_	_
 59	ye	you	PRON	_	_	60	nsubj	_	_
-60	become	become	VERB	_	_	47	conj	_	_
+60	become	become	VERB	_	_	25	advcl	_	_
 61	holy	holy	ADJ	_	_	60	xcomp	_	_
 62	,	,	PUNCT	_	_	64	punct	_	_
 63	without	without	ADP	_	_	64	case	_	_

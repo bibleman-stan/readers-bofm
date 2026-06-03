@@ -2961,7 +2961,7 @@
 74	thee	you	PRON	_	_	72	nmod	_	_
 75	we	we	PRON	_	_	77	nsubj	_	_
 76	may	may	AUX	_	_	77	aux	_	_
-77	receive	receive	VERB	_	_	61	parataxis	_	_
+77	receive	receive	VERB	_	_	61	advcl	_	_
 78	according	accord	VERB	_	_	81	case	_	_
 79	to	to	ADP	_	_	78	fixed	_	_
 80	our	our	PRON	_	_	81	nmod:poss	_	_
@@ -4026,7 +4026,7 @@
 22	no	no	DET	_	_	23	det	_	_
 23	one	one	PRON	_	_	25	nsubj	_	_
 24	can	can	AUX	_	_	25	aux	_	_
-25	interpret	interpret	VERB	_	_	13	parataxis	_	_
+25	interpret	interpret	VERB	_	_	17	advcl	_	_
 26	them	they	PRON	_	_	25	obj	_	_
 27	;	;	PUNCT	_	_	31	punct	_	_
 28	for	for	SCONJ	_	_	31	mark	_	_
@@ -9415,7 +9415,7 @@
 22	the	the	DET	_	_	23	det	_	_
 23	time	time	NOUN	_	_	25	nsubj	_	_
 24	may	may	AUX	_	_	25	aux	_	_
-25	come	come	VERB	_	_	17	conj	_	_
+25	come	come	VERB	_	_	46	conj	_	_
 26	that	that	SCONJ	_	_	29	mark	_	_
 27	Satan	Satan	PROPN	_	_	29	nsubj	_	_
 28	may	may	AUX	_	_	29	aux	_	_
@@ -11022,7 +11022,7 @@
 40	to	to	PART	_	_	41	mark	_	_
 41	pass	pass	VERB	_	_	39	xcomp	_	_
 42	might	might	AUX	_	_	43	aux	_	_
-43	fall	fall	VERB	_	_	25	conj	_	_
+43	fall	fall	VERB	_	_	25	advcl	_	_
 44	by	by	ADP	_	_	47	case	_	_
 45	the	the	DET	_	_	47	det	_	_
 46	poisonous	poisonous	ADJ	_	_	47	amod	_	_
@@ -15640,7 +15640,7 @@
 47	may	may	AUX	_	_	50	aux	_	_
 48	be	be	AUX	_	_	50	cop	_	_
 49	and	and	CCONJ	_	_	50	cc	_	_
-50	abide	abide	VERB	_	_	6	conj	_	_
+50	abide	abide	VERB	_	_	6	advcl	_	_
 51	in	in	ADP	_	_	52	case	_	_
 52	you	you	PRON	_	_	50	obl	_	_
 53	forever	forever	ADV	_	_	50	advmod	_	_
@@ -19097,7 +19097,7 @@
 31	that	that	SCONJ	_	_	34	mark	_	_
 32	they	they	PRON	_	_	34	nsubj	_	_
 33	might	might	AUX	_	_	34	aux	_	_
-34	receive	receive	VERB	_	_	19	conj	_	_
+34	receive	receive	VERB	_	_	19	advcl	_	_
 35	all	all	DET	_	_	37	det:predet	_	_
 36	the	the	DET	_	_	37	det	_	_
 37	strength	strength	NOUN	_	_	34	obj	_	_

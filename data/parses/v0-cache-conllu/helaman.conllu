@@ -9713,7 +9713,7 @@
 20	that	that	SCONJ	_	_	23	mark	_	_
 21	they	they	PRON	_	_	23	nsubj	_	_
 22	had	have	AUX	_	_	23	aux	_	_
-23	become	become	VERB	_	_	7	parataxis	_	_
+23	become	become	VERB	_	_	7	advcl	_	_
 24	exceedingly	exceedingly	ADV	_	_	25	advmod	_	_
 25	wicked	wicked	ADJ	_	_	23	xcomp	_	_
 26	;	;	PUNCT	_	_	27	punct	_	_
@@ -10437,7 +10437,7 @@
 62	the	the	DET	_	_	65	det	_	_
 63	more	more	ADV	_	_	64	advmod	_	_
 64	easily	easily	ADV	_	_	65	advmod	_	_
-65	commit	commit	VERB	_	_	47	conj	_	_
+65	commit	commit	VERB	_	_	47	advcl	_	_
 66	adultery	adultery	NOUN	_	_	65	obj	_	_
 67	,	,	PUNCT	_	_	69	punct	_	_
 68	and	and	CCONJ	_	_	69	cc	_	_
@@ -20994,7 +20994,7 @@
 8	that	that	SCONJ	_	_	11	mark	_	_
 9	ye	you	PRON	_	_	11	nsubj	_	_
 10	would	would	AUX	_	_	11	aux	_	_
-11	hear	hear	VERB	_	_	1	parataxis	_	_
+11	hear	hear	VERB	_	_	17	ccomp	_	_
 12	my	my	PRON	_	_	13	nmod:poss	_	_
 13	words	word	NOUN	_	_	11	obj	_	_
 14	!	!	PUNCT	_	_	1	punct	_	_
@@ -21808,7 +21808,7 @@
 17	same	same	ADJ	_	_	15	obj	_	_
 18	is	be	AUX	_	_	20	aux:pass	_	_
 19	not	not	PART	_	_	20	advmod	_	_
-20	hewn	hewn	VERB	_	_	5	parataxis	_	_
+20	hewn	hewn	VERB	_	_	5	ccomp	_	_
 21	down	down	ADP	_	_	20	compound:prt	_	_
 22	and	and	CCONJ	_	_	23	cc	_	_
 23	cast	cast	VERB	_	_	20	conj	_	_
@@ -22274,7 +22274,7 @@
 26	that	that	SCONJ	_	_	29	mark	_	_
 27	darkness	darkness	NOUN	_	_	29	nsubj	_	_
 28	should	should	AUX	_	_	29	aux	_	_
-29	cover	cover	VERB	_	_	23	conj	_	_
+29	cover	cover	VERB	_	_	3	ccomp	_	_
 30	the	the	DET	_	_	31	det	_	_
 31	face	face	NOUN	_	_	29	obj	_	_
 32	of	of	ADP	_	_	35	case	_	_
@@ -22493,7 +22493,7 @@
 32	good	good	ADJ	_	_	31	xcomp	_	_
 33	and	and	CCONJ	_	_	35	cc	_	_
 34	be	be	AUX	_	_	35	aux:pass	_	_
-35	restored	restore	VERB	_	_	31	conj	_	_
+35	restored	restore	VERB	_	_	17	advcl	_	_
 36	unto	to	ADP	_	_	37	case	_	_
 37	that	that	PRON	_	_	35	obl	_	_
 38	which	which	PRON	_	_	40	nsubj	_	_

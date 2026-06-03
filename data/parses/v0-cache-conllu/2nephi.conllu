@@ -285,7 +285,7 @@
 21	there	there	PRON	_	_	24	expl	_	_
 22	shall	shall	AUX	_	_	24	aux	_	_
 23	none	none	PRON	_	_	24	nsubj	_	_
-24	come	come	VERB	_	_	7	parataxis	_	_
+24	come	come	VERB	_	_	7	ccomp	_	_
 25	into	into	ADP	_	_	27	case	_	_
 26	this	this	DET	_	_	27	det	_	_
 27	land	land	NOUN	_	_	24	obl	_	_
@@ -6469,7 +6469,7 @@
 16	that	that	SCONJ	_	_	19	mark	_	_
 17	I	I	PRON	_	_	19	nsubj	_	_
 18	may	may	AUX	_	_	19	aux	_	_
-19	walk	walk	VERB	_	_	7	parataxis	_	_
+19	walk	walk	VERB	_	_	7	advcl	_	_
 20	in	in	ADP	_	_	22	case	_	_
 21	the	the	DET	_	_	22	det	_	_
 22	path	path	NOUN	_	_	19	obl	_	_
@@ -8869,7 +8869,7 @@
 74	they	they	PRON	_	_	77	nsubj:pass	_	_
 75	shall	shall	AUX	_	_	77	aux	_	_
 76	be	be	AUX	_	_	77	aux:pass	_	_
-77	gathered	gather	VERB	_	_	58	conj	_	_
+77	gathered	gather	VERB	_	_	58	ccomp	_	_
 78	together	together	ADV	_	_	77	advmod	_	_
 79	again	again	ADV	_	_	77	advmod	_	_
 80	to	to	ADP	_	_	82	case	_	_
@@ -10467,7 +10467,7 @@
 22	that	that	SCONJ	_	_	25	mark	_	_
 23	I	I	PRON	_	_	25	nsubj	_	_
 24	may	may	AUX	_	_	25	aux	_	_
-25	plant	plant	VERB	_	_	13	parataxis	_	_
+25	plant	plant	VERB	_	_	4	advcl	_	_
 26	the	the	DET	_	_	27	det	_	_
 27	heavens	heaven	NOUN	_	_	25	obj	_	_
 28	and	and	CCONJ	_	_	29	cc	_	_
@@ -12173,7 +12173,7 @@
 14	that	that	PRON	_	_	17	nsubj	_	_
 15	all	all	DET	_	_	14	det	_	_
 16	might	might	AUX	_	_	17	aux	_	_
-17	stand	stand	VERB	_	_	3	parataxis	_	_
+17	stand	stand	VERB	_	_	3	ccomp	_	_
 18	before	before	ADP	_	_	19	case	_	_
 19	him	he	PRON	_	_	17	obl	_	_
 20	at	at	ADP	_	_	25	case	_	_
@@ -13325,7 +13325,7 @@
 24	ye	you	PRON	_	_	27	nsubj	_	_
 25	may	may	AUX	_	_	27	aux	_	_
 26	not	not	PART	_	_	27	advmod	_	_
-27	shrink	shrink	VERB	_	_	1	parataxis	_	_
+27	shrink	shrink	VERB	_	_	1	advcl	_	_
 28	with	with	ADP	_	_	30	case	_	_
 29	awful	awful	ADJ	_	_	30	amod	_	_
 30	fear	fear	NOUN	_	_	27	obl	_	_
@@ -14384,7 +14384,7 @@
 37	forever	forever	ADV	_	_	34	advmod	_	_
 38	,	,	PUNCT	_	_	40	punct	_	_
 39	that	that	PRON	_	_	40	nsubj	_	_
-40	hear	hear	VERB	_	_	27	parataxis	_	_
+40	hear	hear	VERB	_	_	27	acl:relcl	_	_
 41	my	my	PRON	_	_	42	nmod:poss	_	_
 42	words	word	NOUN	_	_	40	obj	_	_
 43	.	.	PUNCT	_	_	11	punct	_	_
@@ -17668,7 +17668,7 @@
 12	that	that	SCONJ	_	_	15	mark	_	_
 13	they	they	PRON	_	_	15	nsubj	_	_
 14	may	may	AUX	_	_	15	aux	_	_
-15	follow	follow	VERB	_	_	1	parataxis	_	_
+15	follow	follow	VERB	_	_	5	advcl	_	_
 16	strong	strong	ADJ	_	_	17	amod	_	_
 17	drink	drink	NOUN	_	_	15	obj	_	_
 18	,	,	PUNCT	_	_	20	punct	_	_
@@ -17968,7 +17968,7 @@
 22	darkness	darkness	NOUN	_	_	20	nmod	_	_
 23	,	,	PUNCT	_	_	25	punct	_	_
 24	that	that	PRON	_	_	25	nsubj	_	_
-25	put	put	VERB	_	_	1	parataxis	_	_
+25	put	put	VERB	_	_	1	conj	_	_
 26	bitter	bitter	ADJ	_	_	25	xcomp	_	_
 27	for	for	ADP	_	_	28	case	_	_
 28	sweet	sweet	ADJ	_	_	26	obl	_	_
@@ -21223,7 +21223,7 @@
 30	that	that	SCONJ	_	_	33	mark	_	_
 31	they	they	PRON	_	_	33	nsubj	_	_
 32	may	may	AUX	_	_	33	aux	_	_
-33	rob	rob	VERB	_	_	27	conj	_	_
+33	rob	rob	VERB	_	_	2	advcl	_	_
 34	the	the	DET	_	_	35	det	_	_
 35	fatherless	fatherless	ADJ	_	_	33	obj	_	_
 36	!	!	PUNCT	_	_	27	punct	_	_
@@ -24608,7 +24608,7 @@
 14	they	they	PRON	_	_	17	nsubj	_	_
 15	do	do	AUX	_	_	17	aux	_	_
 16	not	not	PART	_	_	17	advmod	_	_
-17	rise	rise	VERB	_	_	1	parataxis	_	_
+17	rise	rise	VERB	_	_	1	advcl	_	_
 18	,	,	PUNCT	_	_	20	punct	_	_
 19	nor	nor	CCONJ	_	_	20	cc	_	_
 20	possess	possess	VERB	_	_	17	conj	_	_
@@ -25124,7 +25124,7 @@
 22	that	that	SCONJ	_	_	25	mark	_	_
 23	they	they	PRON	_	_	25	nsubj	_	_
 24	may	may	AUX	_	_	25	aux	_	_
-25	know	know	VERB	_	_	4	parataxis	_	_
+25	know	know	VERB	_	_	4	advcl	_	_
 26	the	the	DET	_	_	27	det	_	_
 27	judgments	judgment	NOUN	_	_	25	obj	_	_
 28	of	of	ADP	_	_	29	case	_	_
@@ -28541,7 +28541,7 @@
 15	are	be	AUX	_	_	18	cop	_	_
 16	that	that	SCONJ	_	_	18	mark	_	_
 17	men	man	NOUN	_	_	18	nsubj	_	_
-18	preach	preach	VERB	_	_	2	parataxis	_	_
+18	preach	preach	VERB	_	_	2	advcl	_	_
 19	and	and	CCONJ	_	_	20	cc	_	_
 20	set	set	VERB	_	_	18	conj	_	_
 21	themselves	themselves	PRON	_	_	20	obj	_	_
@@ -29706,7 +29706,7 @@
 38	that	that	SCONJ	_	_	41	mark	_	_
 39	he	he	PRON	_	_	41	nsubj	_	_
 40	may	may	AUX	_	_	41	aux	_	_
-41	show	show	VERB	_	_	25	parataxis	_	_
+41	show	show	VERB	_	_	33	advcl	_	_
 42	them	they	PRON	_	_	41	iobj	_	_
 43	unto	to	ADP	_	_	45	case	_	_
 44	the	the	DET	_	_	45	det	_	_
@@ -29989,7 +29989,7 @@
 42	that	that	SCONJ	_	_	45	mark	_	_
 43	I	I	PRON	_	_	45	nsubj	_	_
 44	may	may	AUX	_	_	45	aux	_	_
-45	preserve	preserve	VERB	_	_	29	parataxis	_	_
+45	preserve	preserve	VERB	_	_	36	advcl	_	_
 46	the	the	DET	_	_	47	det	_	_
 47	words	word	NOUN	_	_	45	obj	_	_
 48	which	which	PRON	_	_	52	obj	_	_
@@ -31377,7 +31377,7 @@
 12	of	of	ADP	_	_	13	case	_	_
 13	naught	nothing	PRON	_	_	11	nmod	_	_
 14	and	and	CCONJ	_	_	15	cc	_	_
-15	revile	revile	VERB	_	_	5	conj	_	_
+15	revile	revile	VERB	_	_	35	advcl	_	_
 16	against	against	ADP	_	_	17	case	_	_
 17	that	that	PRON	_	_	15	obl	_	_
 18	which	which	PRON	_	_	20	nsubj	_	_
@@ -32170,7 +32170,7 @@
 24	that	that	SCONJ	_	_	27	mark	_	_
 25	I	I	PRON	_	_	27	nsubj	_	_
 26	may	may	AUX	_	_	27	aux	_	_
-27	remember	remember	VERB	_	_	7	parataxis	_	_
+27	remember	remember	VERB	_	_	17	advcl	_	_
 28	my	my	PRON	_	_	29	nmod:poss	_	_
 29	covenants	covenant	NOUN	_	_	27	obj	_	_
 30	which	which	PRON	_	_	33	obj	_	_
@@ -32498,7 +32498,7 @@
 3	,	,	PUNCT	_	_	6	punct	_	_
 4	that	that	PRON	_	_	6	nsubj	_	_
 5	shall	shall	AUX	_	_	6	aux	_	_
-6	say	say	VERB	_	_	2	parataxis	_	_
+6	say	say	VERB	_	_	2	acl:relcl	_	_
 7	:	:	PUNCT	_	_	9	punct	_	_
 8	A	a	DET	_	_	9	det	_	_
 9	Bible	Bible	PROPN	_	_	6	parataxis	_	_
@@ -32721,7 +32721,7 @@
 23	and	and	CCONJ	_	_	26	cc	_	_
 24	that	that	SCONJ	_	_	26	mark	_	_
 25	I	I	PRON	_	_	26	nsubj	_	_
-26	speak	speak	VERB	_	_	15	conj	_	_
+26	speak	speak	VERB	_	_	3	advcl	_	_
 27	forth	forth	ADV	_	_	26	advmod	_	_
 28	my	my	PRON	_	_	29	nmod:poss	_	_
 29	words	word	NOUN	_	_	26	obj	_	_
@@ -32851,7 +32851,7 @@
 34	that	that	SCONJ	_	_	37	mark	_	_
 35	they	they	PRON	_	_	37	nsubj	_	_
 36	shall	shall	AUX	_	_	37	aux	_	_
-37	write	write	VERB	_	_	3	conj	_	_
+37	write	write	VERB	_	_	3	ccomp	_	_
 38	the	the	DET	_	_	39	det	_	_
 39	words	word	NOUN	_	_	37	obj	_	_
 40	which	which	PRON	_	_	42	obj	_	_
@@ -33104,7 +33104,7 @@
 69	and	and	CCONJ	_	_	72	cc	_	_
 70	that	that	SCONJ	_	_	72	mark	_	_
 71	I	I	PRON	_	_	72	nsubj	_	_
-72	covenanted	covenant	VERB	_	_	28	conj	_	_
+72	covenanted	covenant	VERB	_	_	43	ccomp	_	_
 73	with	with	ADP	_	_	74	case	_	_
 74	Abraham	Abraham	PROPN	_	_	72	obl	_	_
 75	that	that	SCONJ	_	_	78	mark	_	_
