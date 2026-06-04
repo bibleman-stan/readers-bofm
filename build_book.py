@@ -650,8 +650,20 @@ SIMPLE_SWAPS = [
     ("sleepest", "sleep"), ("wakest", "wake"),
     ("tarriest", "tarry"), ("hearkenest", "listen"),
     ("abhorrest", "abhor"),
+    # Gap-closure 2026-06-03 (archaic_normalize.gaps() report verified
+    # against v2 corpus: mayest=8, mightest=6, beholdest=11, beheldest=2,
+    # knewest=1, deniest=1, commandest=1 — 7 forms missing, sawest+
+    # heardest already covered above; COMPOUND_SWAPS adjacent-thou
+    # variants already exist for all eight)
+    ("mayest", "may"), ("Mayest", "May"),
+    ("mightest", "might"), ("Mightest", "Might"),
+    ("beholdest", "behold"), ("Beholdest", "Behold"),
+    ("deniest", "deny"), ("Deniest", "Deny"),
+    ("commandest", "command"), ("Commandest", "Command"),
     # Class D: past-tense -st forms seen in BoM Isaiah chapters
     ("sawest", "saw"), ("Sawest", "Saw"),
+    ("beheldest", "beheld"), ("Beheldest", "Beheld"),
+    ("knewest", "knew"), ("Knewest", "Knew"),
     ("heardest", "heard"), ("spakest", "spoke"),
     ("camest", "came"), ("wentest", "went"),
     ("gavest", "gave"), ("tookest", "took"),
