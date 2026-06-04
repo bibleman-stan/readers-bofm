@@ -650,20 +650,21 @@ SIMPLE_SWAPS = [
     ("sleepest", "sleep"), ("wakest", "wake"),
     ("tarriest", "tarry"), ("hearkenest", "listen"),
     ("abhorrest", "abhor"),
-    # Gap-closure 2026-06-03 (archaic_normalize.gaps() report verified
-    # against v2 corpus: mayest=8, mightest=6, beholdest=11, beheldest=2,
-    # knewest=1, deniest=1, commandest=1 — 7 forms missing, sawest+
-    # heardest already covered above; COMPOUND_SWAPS adjacent-thou
-    # variants already exist for all eight)
-    ("mayest", "may"), ("Mayest", "May"),
-    ("mightest", "might"), ("Mightest", "Might"),
-    ("beholdest", "behold"), ("Beholdest", "Behold"),
+    # Gap-closure 2026-06-03: 7 lowercase forms attested in BoFM v2
+    # corpus (mayest=8, mightest=6, beholdest=11, beheldest=2, knewest=1,
+    # deniest=1, commandest=1). Of the Title-cased variants only
+    # `Deniest` is attested (jacob:886) — the other 6 Title-cased forms
+    # have zero occurrences and are not added. COMPOUND_SWAPS L286-327
+    # already cover adjacent-thou variants for all 7 lowercase forms.
+    ("mayest", "may"),
+    ("mightest", "might"),
+    ("beholdest", "behold"),
     ("deniest", "deny"), ("Deniest", "Deny"),
-    ("commandest", "command"), ("Commandest", "Command"),
+    ("commandest", "command"),
     # Class D: past-tense -st forms seen in BoM Isaiah chapters
     ("sawest", "saw"), ("Sawest", "Saw"),
-    ("beheldest", "beheld"), ("Beheldest", "Beheld"),
-    ("knewest", "knew"), ("Knewest", "Knew"),
+    ("beheldest", "beheld"),
+    ("knewest", "knew"),
     ("heardest", "heard"), ("spakest", "spoke"),
     ("camest", "came"), ("wentest", "went"),
     ("gavest", "gave"), ("tookest", "took"),
