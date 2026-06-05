@@ -679,25 +679,78 @@ _PARALLEL_STACK_EXCLUDE_VERBS = _VERBA_DICENDI_GEN | {
 }
 
 
+_STACK_MATRIX_DEPRELS = frozenset({"root", "parataxis", "conj", "advcl", "ccomp"})
+
+
+def _stack_find_matrix_verb(tok, by_id, max_depth=6):
+    """Walk up through non-matrix ancestors to find the closest VERB ancestor
+    whose deprel is in MATRIX_DEPRELS. Skips intermediate NOUN/ADJ obls/nmods
+    that intervene between a 'that'-headed clause and its true matrix."""
+    cur = tok
+    for _ in range(max_depth):
+        if cur is None or int(cur.head) == 0:
+            return cur
+        d = (cur.deprel or "").split(":")[0]
+        if cur.upos == "VERB" and d in _STACK_MATRIX_DEPRELS:
+            return cur
+        cur = by_id.get(int(cur.head))
+    return cur
+
+
+def _stack_ancestors_of(tok, by_id, max_depth=8):
+    out = set()
+    cur = tok
+    for _ in range(max_depth):
+        if cur is None or int(cur.head) == 0:
+            break
+        cur = by_id.get(int(cur.head))
+        if cur is None:
+            break
+        out.add(int(cur.id))
+    return out
+
+
+def _stack_is_nested(head_a, head_b, by_id):
+    """Two 'that'-clauses are nested iff one's head is in the other's ancestor
+    chain. Per framework.md:112 'each propositionally complete' — nested
+    clauses fail propositional independence and are NOT §2.2 coordinate."""
+    if head_a is None or head_b is None:
+        return False
+    a = _stack_ancestors_of(head_a, by_id) | {int(head_a.id)}
+    b = _stack_ancestors_of(head_b, by_id) | {int(head_b.id)}
+    return int(head_a.id) in b or int(head_b.id) in a
+
+
 def _detect_stack_leaders(sentences):
-    """§2.2 parallel-subordinator-stack detection. Sentence-scoped (NOT per-
-    Stanza-segment): immune to the punctuation-driven segmentation that killed
-    a28deab's per-segment count gate.
+    """§2.2 parallel-subordinator-stack detection. Sentence-scoped.
 
     A 'that'-mark token leads a §2.2 stack-member ATU iff:
-      1. There are >=2 such 'that'-marks in the SAME sentence,
+      1. >=2 such 'that'-marks in the SAME sentence,
       2. The mark is NOT preceded (within 5 content tokens) by 'to pass' (the
-         AICTP discourse-frame; the 'that'-clause binds to the frame),
-      3. The mark is NOT immediately preceded (within 2 non-PUNCT tokens) by
+         AICTP discourse-frame),
+      3. The mark is NOT immediately preceded (within 3 non-PUNCT tokens) by
          a single-complement-taking verb/aux (verbum-dicendi, cognition,
-         volitional, causative — would/say/command/cause/suffer/etc.). Such
-         a 'that'-clause is the verb's single content complement and BINDS.
+         volitional, causative).
+      4. At least 2 surviving candidates share a matrix-parent (group-by-matrix-
+         parent ≥2; framework.md:112 'coordinate'). Each 'that'-mark's head is
+         walked up to its matrix VERB ancestor; matrices share a parent iff
+         either same node or same head_id.
+      5. Within the qualifying group, no candidate is nested in another's
+         ancestor chain (framework.md:112 'each propositionally complete').
+
+    Filter B (steps 4+5) was added 2026-06-04 per §7.3 audit findings on the
+    prior surface-only detector. Cited verses: 1 Ne 5:8 (coordinate cognition
+    stack via matrix-walk); 2 Ne 1:21 (coordinated advcl-purpose
+    circumstance-chain, framework.md:63); Alma 33:21, Alma 34:7 (non-coordinate
+    — don't fire); 1 Ne 9:3 (nested — don't fire).
 
     Returns: set of (sent_idx, token_id) pairs that should LEAD a stack-member
     ATU line."""
+    from collections import defaultdict
     leaders = set()
     for si, toks in enumerate(sentences):
         by_pos = sorted(toks, key=lambda t: int(t.id))
+        by_id = {int(t.id): t for t in by_pos}
         candidates = []
         for i, t in enumerate(by_pos):
             if (t.form or "").lower() != "that":
@@ -725,9 +778,38 @@ def _detect_stack_leaders(sentences):
             if single_comp:
                 continue
             candidates.append(t)
-        if len(candidates) >= 2:
-            for t in candidates:
-                leaders.add((si, t.id))
+        if len(candidates) < 2:
+            continue
+        # Filter B: group-by-matrix-parent + nesting check
+        pairs = [(t, by_id.get(int(t.head))) for t in candidates
+                 if t.head and int(t.head) != 0]
+        pairs = [(t, h) for t, h in pairs if h is not None]
+        if len(pairs) < 2:
+            continue
+        groups = defaultdict(list)
+        for t, h in pairs:
+            m = _stack_find_matrix_verb(h, by_id)
+            if m is None:
+                continue
+            parent = int(m.head) if int(m.head) != 0 else 0
+            groups[parent].append((t, h))
+        for parent_id, members in groups.items():
+            if len(members) < 2:
+                continue
+            qualifying = []
+            for i, (t_i, h_i) in enumerate(members):
+                nested = False
+                for j, (_, h_j) in enumerate(members):
+                    if i == j:
+                        continue
+                    if _stack_is_nested(h_i, h_j, by_id):
+                        nested = True
+                        break
+                if not nested:
+                    qualifying.append(t_i)
+            if len(qualifying) >= 2:
+                for t in qualifying:
+                    leaders.add((si, t.id))
     return leaders
 
 
