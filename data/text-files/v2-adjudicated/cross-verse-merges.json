@@ -10,6 +10,15 @@
       "marker_char": "⁴",
       "warrant": "Verse 3 is a topic-fronted NP with three stacked relative clauses and no finite predicate, ending with an em-dash. Verse 4's opening ATU ('Behold, it has been prophesied by our fathers, that they should be kept and handed down from one generation to another,') is the predication about that topic; its 'they' is anaphoric to verse 3's 'plates of brass'. The two verse-bounded blocks form one structural ATU under bidirectional test.",
       "added": "2026-06-01"
+    },
+    {
+      "first_ref": "alma 34:3",
+      "second_ref": "alma 34:4",
+      "first_atu_count_from_end": 1,
+      "second_atu_count_from_start": 1,
+      "marker_char": "⁴",
+      "warrant": "Verse 3 ends 'yea, and he hath exhorted you unto faith and to patience --' with em-dash held-open valency. Verse 4 opens 'Yea, even that ye would have so much faith as even to plant the word in your hearts, that ye may try the experiment of its goodness.' The opening 'Yea, even that' is a bare complement of verse 3's matrix verb 'exhorted'; the em-dash IS the structural signal that the valency stays open across the LDS versification boundary. Forward closure of verse 4 alone FAILS: 'even that' is a complementizer requiring a matrix verb, not present in verse 4. Bidirectional test passes only when merged.",
+      "added": "2026-06-05"
     }
   ]
 }
