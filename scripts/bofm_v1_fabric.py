@@ -526,6 +526,20 @@ def is_clause_head(tok, by_id=None):
             return True
     if base in CLAUSE_RELS:
         return True
+    if base == "conj" and tok.upos in ("PRON", "NOUN", "PROPN", "ADJ") \
+       and by_id is not None and _is_copular_independent_predication(tok, by_id):
+        # Copular conjunct with its own subject + cop (cleft "...; and it is X
+        # that Y" — Alma 33:11; predicate-nominal coord "...; and X is Y").
+        # Existing canonical helper `_is_copular_independent_predication`
+        # (line 229) already gates on PRON/NOUN/PROPN/ADJ + cop child +
+        # own subject — used inside `_is_multiclause_quote` for the
+        # speech-frame edge case (line 263 docstring). 2026-06-04 §7.3
+        # audit-1 found cleft conjuncts were filtered by the existing
+        # VERB/AUX gate below before this helper ever ran; this branch
+        # surfaces the helper at the same decision point so coordinated
+        # cleft clauses split per bidirectional test (each cola has own
+        # subject + predication, passes forward closure independently).
+        return True
     if base == "conj" and tok.upos in ("VERB", "AUX"):
         # Coordinate finite verbs: a conjunct BINDS iff it has NO SUBJECT of its
         # own. A subjectless conjunct shares (gaps) the head's subject — it is a
