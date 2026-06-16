@@ -1,0 +1,72 @@
+{
+  "book": "moroni",
+  "bookName": "Moroni",
+  "chapter": 5,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 30.918,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 4.412,
+      "type": "line",
+      "text": "The manner of administering the wine\u2014Behold, they took the cup, and said:",
+      "verse": "5:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.092,
+      "end": 14.519,
+      "type": "line",
+      "text": "O God, the Eternal Father, we ask thee, in the name of thy Son, Jesus Christ, to bless and sanctify this wine to the souls of all those who drink of it,",
+      "verse": "5:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 14.699,
+      "end": 20.225,
+      "type": "line",
+      "text": "that they may do it in remembrance of the blood of thy Son, which was shed for them;",
+      "verse": "5:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 20.405,
+      "end": 26.349,
+      "type": "line",
+      "text": "that they may witness unto thee, O God, the Eternal Father, that they do always remember him,",
+      "verse": "5:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 26.529,
+      "end": 29.223,
+      "type": "line",
+      "text": "that they may have his Spirit to be with them.",
+      "verse": "5:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 29.403,
+      "end": 30.239,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "5:2",
+      "lineIndex": 6
+    }
+  ]
+}

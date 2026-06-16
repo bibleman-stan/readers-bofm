@@ -1,0 +1,112 @@
+{
+  "book": "moroni",
+  "bookName": "Moroni",
+  "chapter": 1,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 55.155,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 9.009,
+      "type": "line",
+      "text": "Now I, Moroni, after having made an end of abridging the account of the people of Jared, I had supposed not to have written more,",
+      "verse": "1:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 9.189,
+      "end": 11.511,
+      "type": "line",
+      "text": "but I have not as yet perished;",
+      "verse": "1:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 11.691,
+      "end": 16.103,
+      "type": "line",
+      "text": "and I make not myself known to the Lamanites lest they should destroy me.",
+      "verse": "1:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 16.783,
+      "end": 20.545,
+      "type": "line",
+      "text": "For behold, their wars are exceedingly fierce among themselves;",
+      "verse": "1:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 20.725,
+      "end": 25.555,
+      "type": "line",
+      "text": "and because of their hatred they put to death every Nephite that will not deny the Christ.",
+      "verse": "1:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 26.235,
+      "end": 28.696,
+      "type": "line",
+      "text": "And I, Moroni, will not deny the Christ;",
+      "verse": "1:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 28.876,
+      "end": 31.802,
+      "type": "line",
+      "text": "wherefore, I wander whithersoever",
+      "verse": "1:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 31.982,
+      "end": 34.443,
+      "type": "line",
+      "text": "I can for the safety of mine own life.",
+      "verse": "1:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 35.123,
+      "end": 40.046,
+      "type": "line",
+      "text": "Wherefore, I write a few more things, contrary to that which I had supposed;",
+      "verse": "1:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 40.226,
+      "end": 43.802,
+      "type": "line",
+      "text": "for I had supposed not to have written any more;",
+      "verse": "1:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 43.982,
+      "end": 54.477,
+      "type": "line",
+      "text": "but I write a few more things, that perhaps they may be of worth unto my brethren, the Lamanites, in some future day, according to the will of the Lord.",
+      "verse": "1:4",
+      "lineIndex": 11
+    }
+  ]
+}

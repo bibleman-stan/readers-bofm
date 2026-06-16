@@ -1,0 +1,104 @@
+{
+  "book": "moroni",
+  "bookName": "Moroni",
+  "chapter": 2,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 39.522,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.687,
+      "type": "line",
+      "text": "The words of Christ, which he spake unto his disciples, the twelve whom he had chosen, as he laid his hands upon them\u2014",
+      "verse": "2:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.367,
+      "end": 9.596,
+      "type": "line",
+      "text": "And he called them by name, saying:",
+      "verse": "2:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.776,
+      "end": 13.12,
+      "type": "line",
+      "text": "Ye shall call on the Father in my name, in mighty prayer;",
+      "verse": "2:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 13.3,
+      "end": 19.662,
+      "type": "line",
+      "text": "and after ye have done this ye shall have power that to him upon whom ye shall lay your hands,",
+      "verse": "2:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.842,
+      "end": 21.746,
+      "type": "line",
+      "text": "ye shall give the Holy Ghost;",
+      "verse": "2:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 21.926,
+      "end": 25.502,
+      "type": "line",
+      "text": "and in my name shall ye give it, for thus do mine apostles.",
+      "verse": "2:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 26.182,
+      "end": 30.78,
+      "type": "line",
+      "text": "Now Christ spake these words unto them at the time of his first appearing;",
+      "verse": "2:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 30.96,
+      "end": 33.236,
+      "type": "line",
+      "text": "and the multitude heard it not,",
+      "verse": "2:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.416,
+      "end": 35.32,
+      "type": "line",
+      "text": "but the disciples heard it;",
+      "verse": "2:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 35.5,
+      "end": 38.844,
+      "type": "line",
+      "text": "and on as many as they laid their hands, fell the Holy Ghost.",
+      "verse": "2:3",
+      "lineIndex": 10
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "book": "moroni",
+  "bookName": "Moroni",
+  "chapter": 4,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 58.939,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.734,
+      "type": "line",
+      "text": "The manner of their elders and priests administering the flesh and blood of Christ unto the church;",
+      "verse": "4:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.914,
+      "end": 10.583,
+      "type": "line",
+      "text": "and they administered it according to the commandments of Christ;",
+      "verse": "4:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.763,
+      "end": 13.178,
+      "type": "line",
+      "text": "wherefore we know the manner to be true;",
+      "verse": "4:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 13.358,
+      "end": 16.33,
+      "type": "line",
+      "text": "and the elder or priest did minister it \u2014",
+      "verse": "4:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 17.01,
+      "end": 22.211,
+      "type": "line",
+      "text": "And they did kneel down with the church, and pray to the Father in the name of Christ, saying:",
+      "verse": "4:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.891,
+      "end": 33.386,
+      "type": "line",
+      "text": "O God, the Eternal Father, we ask thee in the name of thy Son, Jesus Christ, to bless and sanctify this bread to the souls of all those who partake of it;",
+      "verse": "4:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 33.566,
+      "end": 53.674,
+      "type": "line",
+      "text": "that they may eat in remembrance of the body of thy Son, and witness unto thee, O God, the Eternal Father, that they are willing to take upon them the name of thy Son, and always remember him, and keep his commandments which he hath given them,",
+      "verse": "4:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 53.854,
+      "end": 57.244,
+      "type": "line",
+      "text": "that they may always have his Spirit to be with them.",
+      "verse": "4:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 57.424,
+      "end": 58.26,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "4:3",
+      "lineIndex": 9
+    }
+  ]
+}

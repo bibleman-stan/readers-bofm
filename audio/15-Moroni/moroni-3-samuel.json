@@ -1,0 +1,80 @@
+{
+  "book": "moroni",
+  "bookName": "Moroni",
+  "chapter": 3,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 41.479,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.316,
+      "type": "line",
+      "text": "The manner which the disciples, who were called the elders of the church, ordained priests and teachers\u2014",
+      "verse": "3:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.996,
+      "end": 11.919,
+      "type": "line",
+      "text": "After they had prayed unto the Father in the name of Christ, they laid their hands upon them, and said:",
+      "verse": "3:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 12.599,
+      "end": 15.71,
+      "type": "line",
+      "text": "In the name of Jesus Christ I ordain you to be a priest",
+      "verse": "3:3",
+      "lineIndex": 3
+    },
+    {
+      "start": 15.89,
+      "end": 26.385,
+      "type": "line",
+      "text": "(or if he be a teacher, I ordain you to be a teacher) to preach repentance and remission of sins through Jesus Christ, by the endurance of faith on his name to the end.",
+      "verse": "3:3",
+      "lineIndex": 4
+    },
+    {
+      "start": 26.565,
+      "end": 27.401,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "3:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 28.081,
+      "end": 35.233,
+      "type": "line",
+      "text": "And after this manner did they ordain priests and teachers, according to the gifts and callings of God unto men;",
+      "verse": "3:4",
+      "lineIndex": 6
+    },
+    {
+      "start": 35.413,
+      "end": 40.8,
+      "type": "line",
+      "text": "and they ordained them by the power of the Holy Ghost, which was in them.",
+      "verse": "3:4",
+      "lineIndex": 7
+    }
+  ]
+}
