@@ -1,0 +1,528 @@
+{
+  "book": "ether",
+  "bookName": "Ether",
+  "chapter": 1,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 325.585,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 9.752,
+      "type": "line",
+      "text": "And now I, Moroni, proceed to give an account of those ancient inhabitants who were destroyed by the hand of the Lord upon the face of this north country.",
+      "verse": "1:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 10.432,
+      "end": 20.974,
+      "type": "line",
+      "text": "And I take mine account from the twenty and four plates which were found by the people of Limhi, which is called the Book of Ether.",
+      "verse": "1:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 21.654,
+      "end": 33.45,
+      "type": "line",
+      "text": "And as I suppose that the first part of this record, which speaks concerning the creation of the world, and also of Adam, and a account from that time even to the great tower,",
+      "verse": "1:3",
+      "lineIndex": 3
+    },
+    {
+      "start": 33.63,
+      "end": 38.228,
+      "type": "line",
+      "text": "and whatsoever things transpired among the children of men until that time,",
+      "verse": "1:3",
+      "lineIndex": 4
+    },
+    {
+      "start": 38.408,
+      "end": 39.894,
+      "type": "line",
+      "text": "is had among the Jews\u2014",
+      "verse": "1:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 40.574,
+      "end": 46.611,
+      "type": "line",
+      "text": "Therefore I do not write those things which transpired from the days of Adam until that time;",
+      "verse": "1:4",
+      "lineIndex": 6
+    },
+    {
+      "start": 46.791,
+      "end": 49.067,
+      "type": "line",
+      "text": "but they are had upon the plates;",
+      "verse": "1:4",
+      "lineIndex": 7
+    },
+    {
+      "start": 49.247,
+      "end": 51.058,
+      "type": "line",
+      "text": "and whoso findeth them,",
+      "verse": "1:4",
+      "lineIndex": 8
+    },
+    {
+      "start": 51.238,
+      "end": 54.117,
+      "type": "line",
+      "text": "the same will have power that he may get the full account.",
+      "verse": "1:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 54.797,
+      "end": 61.299,
+      "type": "line",
+      "text": "But behold, I give not the full account, but a part of the account I give, from the tower down until they were destroyed.",
+      "verse": "1:5",
+      "lineIndex": 10
+    },
+    {
+      "start": 61.979,
+      "end": 64.162,
+      "type": "line",
+      "text": "And on this wise do I give the account.",
+      "verse": "1:6",
+      "lineIndex": 12
+    },
+    {
+      "start": 64.342,
+      "end": 69.683,
+      "type": "line",
+      "text": "He that wrote this record was Ether, and he was a descendant of Coriantor.",
+      "verse": "1:6",
+      "lineIndex": 13
+    },
+    {
+      "start": 70.363,
+      "end": 72.639,
+      "type": "line",
+      "text": "Coriantor was the son of Moron.",
+      "verse": "1:7",
+      "lineIndex": 14
+    },
+    {
+      "start": 73.319,
+      "end": 75.548,
+      "type": "line",
+      "text": "And Moron was the son of Ethem.",
+      "verse": "1:8",
+      "lineIndex": 15
+    },
+    {
+      "start": 76.228,
+      "end": 78.271,
+      "type": "line",
+      "text": "And Ethem was the son of Ahah.",
+      "verse": "1:9",
+      "lineIndex": 17
+    },
+    {
+      "start": 78.951,
+      "end": 80.994,
+      "type": "line",
+      "text": "And Ahah was the son of Seth.",
+      "verse": "1:10",
+      "lineIndex": 18
+    },
+    {
+      "start": 81.674,
+      "end": 83.95,
+      "type": "line",
+      "text": "And Seth was the son of Shiblon.",
+      "verse": "1:11",
+      "lineIndex": 19
+    },
+    {
+      "start": 84.63,
+      "end": 86.766,
+      "type": "line",
+      "text": "And Shiblon was the son of Com.",
+      "verse": "1:12",
+      "lineIndex": 20
+    },
+    {
+      "start": 87.446,
+      "end": 89.536,
+      "type": "line",
+      "text": "And Com was the son of Coriantum.",
+      "verse": "1:13",
+      "lineIndex": 21
+    },
+    {
+      "start": 90.216,
+      "end": 92.631,
+      "type": "line",
+      "text": "And Coriantum was the son of Amnigaddah.",
+      "verse": "1:14",
+      "lineIndex": 22
+    },
+    {
+      "start": 93.311,
+      "end": 95.679,
+      "type": "line",
+      "text": "And Amnigaddah was the son of Aaron.",
+      "verse": "1:15",
+      "lineIndex": 23
+    },
+    {
+      "start": 96.359,
+      "end": 100.214,
+      "type": "line",
+      "text": "And Aaron was a descendant of Heth, who was the son of Hearthom.",
+      "verse": "1:16",
+      "lineIndex": 24
+    },
+    {
+      "start": 100.894,
+      "end": 103.077,
+      "type": "line",
+      "text": "And Hearthom was the son of Lib.",
+      "verse": "1:17",
+      "lineIndex": 26
+    },
+    {
+      "start": 103.757,
+      "end": 105.754,
+      "type": "line",
+      "text": "And Lib was the son of Kish.",
+      "verse": "1:18",
+      "lineIndex": 27
+    },
+    {
+      "start": 106.434,
+      "end": 108.431,
+      "type": "line",
+      "text": "And Kish was the son of Corom.",
+      "verse": "1:19",
+      "lineIndex": 28
+    },
+    {
+      "start": 109.111,
+      "end": 111.247,
+      "type": "line",
+      "text": "And Corom was the son of Levi.",
+      "verse": "1:20",
+      "lineIndex": 29
+    },
+    {
+      "start": 111.927,
+      "end": 113.97,
+      "type": "line",
+      "text": "And Levi was the son of Kim.",
+      "verse": "1:21",
+      "lineIndex": 30
+    },
+    {
+      "start": 114.65,
+      "end": 116.972,
+      "type": "line",
+      "text": "And Kim was the son of Morianton.",
+      "verse": "1:22",
+      "lineIndex": 31
+    },
+    {
+      "start": 117.652,
+      "end": 120.392,
+      "type": "line",
+      "text": "And Morianton was a descendant of Riplakish.",
+      "verse": "1:23",
+      "lineIndex": 32
+    },
+    {
+      "start": 121.072,
+      "end": 123.533,
+      "type": "line",
+      "text": "And Riplakish was the son of Shez.",
+      "verse": "1:24",
+      "lineIndex": 33
+    },
+    {
+      "start": 124.213,
+      "end": 126.442,
+      "type": "line",
+      "text": "And Shez was the son of Heth.",
+      "verse": "1:25",
+      "lineIndex": 34
+    },
+    {
+      "start": 127.122,
+      "end": 128.747,
+      "type": "line",
+      "text": "And Heth was the son of Com.",
+      "verse": "1:26",
+      "lineIndex": 35
+    },
+    {
+      "start": 129.427,
+      "end": 131.517,
+      "type": "line",
+      "text": "And Com was the son of Coriantum.",
+      "verse": "1:27",
+      "lineIndex": 37
+    },
+    {
+      "start": 132.197,
+      "end": 134.751,
+      "type": "line",
+      "text": "And Coriantum was the son of Emer.",
+      "verse": "1:28",
+      "lineIndex": 38
+    },
+    {
+      "start": 135.431,
+      "end": 137.799,
+      "type": "line",
+      "text": "And Emer was the son of Omer.",
+      "verse": "1:29",
+      "lineIndex": 39
+    },
+    {
+      "start": 138.479,
+      "end": 140.476,
+      "type": "line",
+      "text": "And Omer was the son of Shule.",
+      "verse": "1:30",
+      "lineIndex": 40
+    },
+    {
+      "start": 141.156,
+      "end": 143.153,
+      "type": "line",
+      "text": "And Shule was the son of Kib.",
+      "verse": "1:31",
+      "lineIndex": 41
+    },
+    {
+      "start": 143.833,
+      "end": 147.409,
+      "type": "line",
+      "text": "And Kib was the son of Orihah, who was the son of Jared;",
+      "verse": "1:32",
+      "lineIndex": 42
+    },
+    {
+      "start": 148.089,
+      "end": 161.928,
+      "type": "line",
+      "text": "Which Jared came forth with his brother and their families, with some others and their families, from the great tower, at the time the Lord confounded the language of the people,",
+      "verse": "1:33",
+      "lineIndex": 44
+    },
+    {
+      "start": 162.108,
+      "end": 167.17,
+      "type": "line",
+      "text": "and swore in his wrath that they should be scattered upon all the face of the earth;",
+      "verse": "1:33",
+      "lineIndex": 45
+    },
+    {
+      "start": 167.35,
+      "end": 170.787,
+      "type": "line",
+      "text": "and according to the word of the Lord the people were scattered.",
+      "verse": "1:33",
+      "lineIndex": 46
+    },
+    {
+      "start": 171.467,
+      "end": 180.569,
+      "type": "line",
+      "text": "And the brother of Jared being a large and mighty man, and a man highly favored of the Lord, Jared, his brother, said unto him:",
+      "verse": "1:34",
+      "lineIndex": 47
+    },
+    {
+      "start": 180.749,
+      "end": 185.161,
+      "type": "line",
+      "text": "Cry unto the Lord, that he will not confound us that we may not understand our words.",
+      "verse": "1:34",
+      "lineIndex": 48
+    },
+    {
+      "start": 185.841,
+      "end": 200.377,
+      "type": "line",
+      "text": "And it came to pass that the brother of Jared did cry unto the Lord, and the Lord had compassion upon Jared; therefore he did not confound the language of Jared; and Jared and his brother were not confounded.",
+      "verse": "1:35",
+      "lineIndex": 49
+    },
+    {
+      "start": 201.057,
+      "end": 203.286,
+      "type": "line",
+      "text": "Then Jared said unto his brother:",
+      "verse": "1:36",
+      "lineIndex": 50
+    },
+    {
+      "start": 203.466,
+      "end": 205.091,
+      "type": "line",
+      "text": "Cry again unto the Lord,",
+      "verse": "1:36",
+      "lineIndex": 51
+    },
+    {
+      "start": 205.271,
+      "end": 213.119,
+      "type": "line",
+      "text": "and it may be that he will turn away his anger from them who are our friends, that he confound not their language.",
+      "verse": "1:36",
+      "lineIndex": 52
+    },
+    {
+      "start": 213.799,
+      "end": 225.688,
+      "type": "line",
+      "text": "And it came to pass that the brother of Jared did cry unto the Lord, and the Lord had compassion upon their friends and their families also, that they were not confounded.",
+      "verse": "1:37",
+      "lineIndex": 53
+    },
+    {
+      "start": 226.368,
+      "end": 230.826,
+      "type": "line",
+      "text": "And it came to pass that Jared spake again unto his brother, saying:",
+      "verse": "1:38",
+      "lineIndex": 55
+    },
+    {
+      "start": 231.006,
+      "end": 238.947,
+      "type": "line",
+      "text": "Go and inquire of the Lord whether he will drive us out of the land, and if he will drive us out of the land, cry unto him whither we shall go.",
+      "verse": "1:38",
+      "lineIndex": 56
+    },
+    {
+      "start": 239.127,
+      "end": 240.52,
+      "type": "line",
+      "text": "And who knoweth",
+      "verse": "1:38",
+      "lineIndex": 57
+    },
+    {
+      "start": 240.7,
+      "end": 245.716,
+      "type": "line",
+      "text": "but the Lord will carry us forth into a land which is choice above all the earth?",
+      "verse": "1:38",
+      "lineIndex": 58
+    },
+    {
+      "start": 245.896,
+      "end": 252.119,
+      "type": "line",
+      "text": "And if it so be, let us be faithful unto the Lord, that we may receive it for our inheritance.",
+      "verse": "1:38",
+      "lineIndex": 59
+    },
+    {
+      "start": 252.799,
+      "end": 261.298,
+      "type": "line",
+      "text": "And it came to pass that the brother of Jared did cry unto the Lord according to that which had been spoken by the mouth of Jared.",
+      "verse": "1:39",
+      "lineIndex": 60
+    },
+    {
+      "start": 261.978,
+      "end": 268.665,
+      "type": "line",
+      "text": "And it came to pass that the Lord did hear the brother of Jared, and had compassion upon him, and said unto him:",
+      "verse": "1:40",
+      "lineIndex": 61
+    },
+    {
+      "start": 269.345,
+      "end": 288.06,
+      "type": "line",
+      "text": "Go to and gather together thy flocks, both male and female, of every kind; and also of the seed of the earth of every kind; and thy families; and also Jared thy brother and his family; and also thy friends and their families, and the friends of Jared and their families.",
+      "verse": "1:41",
+      "lineIndex": 62
+    },
+    {
+      "start": 288.74,
+      "end": 294.684,
+      "type": "line",
+      "text": "And when thou hast done this thou shalt go at the head of them down into the valley which is northward.",
+      "verse": "1:42",
+      "lineIndex": 63
+    },
+    {
+      "start": 294.864,
+      "end": 296.675,
+      "type": "line",
+      "text": "And there will I meet thee,",
+      "verse": "1:42",
+      "lineIndex": 64
+    },
+    {
+      "start": 296.855,
+      "end": 301.685,
+      "type": "line",
+      "text": "and I will go before thee into a land which is choice above all the lands of the earth.",
+      "verse": "1:42",
+      "lineIndex": 65
+    },
+    {
+      "start": 302.365,
+      "end": 309.377,
+      "type": "line",
+      "text": "And there will I bless thee and thy seed, and raise up unto me of thy seed, and of the seed of thy brother,",
+      "verse": "1:43",
+      "lineIndex": 66
+    },
+    {
+      "start": 309.557,
+      "end": 312.808,
+      "type": "line",
+      "text": "and they who shall go with thee, a great nation.",
+      "verse": "1:43",
+      "lineIndex": 67
+    },
+    {
+      "start": 312.988,
+      "end": 320.372,
+      "type": "line",
+      "text": "And there shall be none greater than the nation which I will raise up unto me of thy seed, upon all the face of the earth.",
+      "verse": "1:43",
+      "lineIndex": 68
+    },
+    {
+      "start": 320.552,
+      "end": 324.917,
+      "type": "line",
+      "text": "And this I will do unto thee because of this long time which ye have cried unto me.",
+      "verse": "1:43",
+      "lineIndex": 69
+    }
+  ]
+}
