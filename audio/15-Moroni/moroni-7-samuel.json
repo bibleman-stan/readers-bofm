@@ -1,0 +1,1000 @@
+{
+  "book": "moroni",
+  "bookName": "Moroni",
+  "chapter": 7,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 712.121,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 9.056,
+      "type": "line",
+      "text": "And now I, Moroni, write a few of the words of my father Mormon, which he spake concerning faith, hope, and charity;",
+      "verse": "7:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 9.236,
+      "end": 18.06,
+      "type": "line",
+      "text": "for after this manner did he speak unto the people, as he taught them in the synagogue which they had built for the place of worship.",
+      "verse": "7:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 18.74,
+      "end": 34.622,
+      "type": "line",
+      "text": "And now I, Mormon, speak unto you, my beloved brethren; and it is by the grace of God the Father, and our Lord Jesus Christ, and his holy will, because of the gift of his calling unto me, that I am permitted to speak unto you at this time.",
+      "verse": "7:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 35.302,
+      "end": 52.81,
+      "type": "line",
+      "text": "Wherefore, I would speak unto you that are of the church, that are the peaceable followers of Christ, and that have obtained a sufficient hope by which ye can enter into the rest of the Lord, from this time henceforth until ye shall rest with him in heaven.",
+      "verse": "7:3",
+      "lineIndex": 4
+    },
+    {
+      "start": 53.49,
+      "end": 59.992,
+      "type": "line",
+      "text": "And now my brethren, I judge these things of you because of your peaceable walk with the children of men.",
+      "verse": "7:4",
+      "lineIndex": 5
+    },
+    {
+      "start": 60.672,
+      "end": 64.341,
+      "type": "line",
+      "text": "For I remember the word of God which saith by their works",
+      "verse": "7:5",
+      "lineIndex": 6
+    },
+    {
+      "start": 64.521,
+      "end": 65.961,
+      "type": "line",
+      "text": "ye shall know them;",
+      "verse": "7:5",
+      "lineIndex": 7
+    },
+    {
+      "start": 66.141,
+      "end": 69.485,
+      "type": "line",
+      "text": "for if their works be good, then they are good also.",
+      "verse": "7:5",
+      "lineIndex": 8
+    },
+    {
+      "start": 70.165,
+      "end": 71.93,
+      "type": "line",
+      "text": "For behold, God hath said",
+      "verse": "7:6",
+      "lineIndex": 9
+    },
+    {
+      "start": 72.11,
+      "end": 81.398,
+      "type": "line",
+      "text": "a man being evil cannot do that which is good; for if he offereth a gift, or prayeth unto God, except he shall do it with real intent",
+      "verse": "7:6",
+      "lineIndex": 10
+    },
+    {
+      "start": 81.578,
+      "end": 83.064,
+      "type": "line",
+      "text": "it profiteth him nothing.",
+      "verse": "7:6",
+      "lineIndex": 11
+    },
+    {
+      "start": 83.744,
+      "end": 87.181,
+      "type": "line",
+      "text": "For behold, it is not counted unto him for righteousness.",
+      "verse": "7:7",
+      "lineIndex": 12
+    },
+    {
+      "start": 87.861,
+      "end": 92.598,
+      "type": "line",
+      "text": "For behold, if a man being evil giveth a gift, he doeth it grudgingly;",
+      "verse": "7:8",
+      "lineIndex": 13
+    },
+    {
+      "start": 92.778,
+      "end": 97.376,
+      "type": "line",
+      "text": "wherefore it is counted unto him the same as if he had retained the gift;",
+      "verse": "7:8",
+      "lineIndex": 14
+    },
+    {
+      "start": 97.556,
+      "end": 100.157,
+      "type": "line",
+      "text": "wherefore he is counted evil before God.",
+      "verse": "7:8",
+      "lineIndex": 15
+    },
+    {
+      "start": 100.837,
+      "end": 107.385,
+      "type": "line",
+      "text": "And likewise also is it counted evil unto a man, if he shall pray and not with real intent of heart;",
+      "verse": "7:9",
+      "lineIndex": 16
+    },
+    {
+      "start": 107.565,
+      "end": 110.166,
+      "type": "line",
+      "text": "yea, and it profiteth him nothing,",
+      "verse": "7:9",
+      "lineIndex": 17
+    },
+    {
+      "start": 110.346,
+      "end": 112.157,
+      "type": "line",
+      "text": "for God receiveth none such.",
+      "verse": "7:9",
+      "lineIndex": 18
+    },
+    {
+      "start": 112.837,
+      "end": 117.017,
+      "type": "line",
+      "text": "Wherefore, a man being evil cannot do that which is good;",
+      "verse": "7:10",
+      "lineIndex": 19
+    },
+    {
+      "start": 117.197,
+      "end": 119.38,
+      "type": "line",
+      "text": "neither will he give a good gift.",
+      "verse": "7:10",
+      "lineIndex": 20
+    },
+    {
+      "start": 120.06,
+      "end": 124.286,
+      "type": "line",
+      "text": "For behold, a bitter fountain cannot bring forth good water;",
+      "verse": "7:11",
+      "lineIndex": 21
+    },
+    {
+      "start": 124.466,
+      "end": 127.995,
+      "type": "line",
+      "text": "neither can a good fountain bring forth bitter water;",
+      "verse": "7:11",
+      "lineIndex": 22
+    },
+    {
+      "start": 128.175,
+      "end": 136.256,
+      "type": "line",
+      "text": "wherefore, a man being a servant of the devil cannot follow Christ; and if he follow Christ he cannot be a servant of the devil.",
+      "verse": "7:11",
+      "lineIndex": 23
+    },
+    {
+      "start": 136.936,
+      "end": 144.413,
+      "type": "line",
+      "text": "Wherefore, all things which are good cometh of God; and that which is evil cometh of the devil;",
+      "verse": "7:12",
+      "lineIndex": 24
+    },
+    {
+      "start": 144.593,
+      "end": 154.717,
+      "type": "line",
+      "text": "for the devil is an enemy unto God, and fighteth against him continually, and inviteth and enticeth to sin, and to do that which is evil continually.",
+      "verse": "7:12",
+      "lineIndex": 25
+    },
+    {
+      "start": 155.397,
+      "end": 170.165,
+      "type": "line",
+      "text": "But behold, that which is of God inviteth and enticeth to do good continually; wherefore, every thing which inviteth and enticeth to do good, and to love God, and to serve him, is inspired of God.",
+      "verse": "7:13",
+      "lineIndex": 26
+    },
+    {
+      "start": 170.845,
+      "end": 183.848,
+      "type": "line",
+      "text": "Wherefore, take heed, my beloved brethren, that ye do not judge that which is evil to be of God, or that which is good and of God to be of the devil.",
+      "verse": "7:14",
+      "lineIndex": 27
+    },
+    {
+      "start": 184.528,
+      "end": 199.714,
+      "type": "line",
+      "text": "For behold, my brethren, it is given unto you to judge, that ye may know good from evil; and the way to judge is as plain, that ye may know with a perfect knowledge, as the daylight is from the dark night.",
+      "verse": "7:15",
+      "lineIndex": 28
+    },
+    {
+      "start": 200.394,
+      "end": 206.153,
+      "type": "line",
+      "text": "For behold, the Spirit of Christ is given to every man, that he may know good from evil;",
+      "verse": "7:16",
+      "lineIndex": 30
+    },
+    {
+      "start": 206.333,
+      "end": 209.166,
+      "type": "line",
+      "text": "wherefore, I show unto you the way to judge;",
+      "verse": "7:16",
+      "lineIndex": 31
+    },
+    {
+      "start": 209.346,
+      "end": 219.238,
+      "type": "line",
+      "text": "for every thing which inviteth to do good, and to persuade to believe in Christ, is sent forth by the power and gift of Christ;",
+      "verse": "7:16",
+      "lineIndex": 32
+    },
+    {
+      "start": 219.418,
+      "end": 223.458,
+      "type": "line",
+      "text": "wherefore ye may know with a perfect knowledge it is of God.",
+      "verse": "7:16",
+      "lineIndex": 33
+    },
+    {
+      "start": 224.138,
+      "end": 230.686,
+      "type": "line",
+      "text": "But whatsoever thing persuadeth men to do evil, and believe not in Christ, and deny him, and serve not God,",
+      "verse": "7:17",
+      "lineIndex": 34
+    },
+    {
+      "start": 230.866,
+      "end": 234.303,
+      "type": "line",
+      "text": "then ye may know with a perfect knowledge it is of the devil;",
+      "verse": "7:17",
+      "lineIndex": 35
+    },
+    {
+      "start": 234.483,
+      "end": 237.037,
+      "type": "line",
+      "text": "for after this manner doth the devil work,",
+      "verse": "7:17",
+      "lineIndex": 36
+    },
+    {
+      "start": 237.217,
+      "end": 242.418,
+      "type": "line",
+      "text": "for he persuadeth no man to do good, no, not one; neither do his angels;",
+      "verse": "7:17",
+      "lineIndex": 37
+    },
+    {
+      "start": 242.598,
+      "end": 245.524,
+      "type": "line",
+      "text": "neither do they who subject themselves unto him.",
+      "verse": "7:17",
+      "lineIndex": 38
+    },
+    {
+      "start": 246.204,
+      "end": 256.374,
+      "type": "line",
+      "text": "And now, my brethren, seeing that ye know the light by which ye may judge, which light is the light of Christ, see that ye do not judge wrongfully;",
+      "verse": "7:18",
+      "lineIndex": 39
+    },
+    {
+      "start": 256.554,
+      "end": 261.059,
+      "type": "line",
+      "text": "for with that same judgment which ye judge ye shall also be judged.",
+      "verse": "7:18",
+      "lineIndex": 40
+    },
+    {
+      "start": 261.739,
+      "end": 272.374,
+      "type": "line",
+      "text": "Wherefore, I beseech of you, brethren, that ye should search diligently in the light of Christ that ye may know good from evil;",
+      "verse": "7:19",
+      "lineIndex": 41
+    },
+    {
+      "start": 272.554,
+      "end": 278.545,
+      "type": "line",
+      "text": "and if ye will lay hold upon every good thing, and condemn it not, ye certainly will be a child of Christ.",
+      "verse": "7:19",
+      "lineIndex": 42
+    },
+    {
+      "start": 279.225,
+      "end": 284.008,
+      "type": "line",
+      "text": "And now, my brethren, how is it possible that ye can lay hold upon every good thing?",
+      "verse": "7:20",
+      "lineIndex": 43
+    },
+    {
+      "start": 284.688,
+      "end": 287.985,
+      "type": "line",
+      "text": "And now I come to that faith, of which I said I would speak;",
+      "verse": "7:21",
+      "lineIndex": 44
+    },
+    {
+      "start": 288.165,
+      "end": 292.809,
+      "type": "line",
+      "text": "and I will tell you the way whereby ye may lay hold on every good thing.",
+      "verse": "7:21",
+      "lineIndex": 45
+    },
+    {
+      "start": 293.489,
+      "end": 305.749,
+      "type": "line",
+      "text": "For behold, God knowing all things, being from everlasting to everlasting, behold, he sent angels to minister unto the children of men, to make manifest concerning the coming of Christ;",
+      "verse": "7:22",
+      "lineIndex": 46
+    },
+    {
+      "start": 305.929,
+      "end": 308.762,
+      "type": "line",
+      "text": "and in Christ there should come every good thing.",
+      "verse": "7:22",
+      "lineIndex": 47
+    },
+    {
+      "start": 309.442,
+      "end": 314.04,
+      "type": "line",
+      "text": "And God also declared unto prophets, by his own mouth, that Christ should come.",
+      "verse": "7:23",
+      "lineIndex": 48
+    },
+    {
+      "start": 314.72,
+      "end": 322.615,
+      "type": "line",
+      "text": "And behold, there were divers ways that he did manifest things unto the children of men, which were good;",
+      "verse": "7:24",
+      "lineIndex": 49
+    },
+    {
+      "start": 322.795,
+      "end": 325.767,
+      "type": "line",
+      "text": "and all things which are good cometh of Christ;",
+      "verse": "7:24",
+      "lineIndex": 50
+    },
+    {
+      "start": 325.947,
+      "end": 327.805,
+      "type": "line",
+      "text": "otherwise men were fallen,",
+      "verse": "7:24",
+      "lineIndex": 51
+    },
+    {
+      "start": 327.985,
+      "end": 330.539,
+      "type": "line",
+      "text": "and there could no good thing come unto them.",
+      "verse": "7:24",
+      "lineIndex": 52
+    },
+    {
+      "start": 331.219,
+      "end": 340.786,
+      "type": "line",
+      "text": "Wherefore, by the ministering of angels, and by every word which proceeded forth out of the mouth of God, men began to exercise faith in Christ;",
+      "verse": "7:25",
+      "lineIndex": 53
+    },
+    {
+      "start": 340.966,
+      "end": 347.932,
+      "type": "line",
+      "text": "and thus by faith, they did lay hold upon every good thing; and thus it was until the coming of Christ.",
+      "verse": "7:25",
+      "lineIndex": 54
+    },
+    {
+      "start": 348.612,
+      "end": 352.699,
+      "type": "line",
+      "text": "And after that he came men also were saved by faith in his name;",
+      "verse": "7:26",
+      "lineIndex": 56
+    },
+    {
+      "start": 352.879,
+      "end": 355.387,
+      "type": "line",
+      "text": "and by faith, they become the sons of God.",
+      "verse": "7:26",
+      "lineIndex": 57
+    },
+    {
+      "start": 355.567,
+      "end": 359.979,
+      "type": "line",
+      "text": "And as surely as Christ liveth he spake these words unto our fathers, saying:",
+      "verse": "7:26",
+      "lineIndex": 58
+    },
+    {
+      "start": 360.159,
+      "end": 370.144,
+      "type": "line",
+      "text": "Whatsoever thing ye shall ask the Father in my name, which is good, in faith believing that ye shall receive, behold, it shall be done unto you.",
+      "verse": "7:26",
+      "lineIndex": 59
+    },
+    {
+      "start": 370.824,
+      "end": 385.081,
+      "type": "line",
+      "text": "Wherefore, my beloved brethren, have miracles ceased because Christ hath ascended into heaven, and hath sat down on the right hand of God, to claim of the Father his rights of mercy which he hath upon the children of men?",
+      "verse": "7:27",
+      "lineIndex": 60
+    },
+    {
+      "start": 385.761,
+      "end": 388.362,
+      "type": "line",
+      "text": "For he hath answered the ends of the law,",
+      "verse": "7:28",
+      "lineIndex": 61
+    },
+    {
+      "start": 388.542,
+      "end": 391.514,
+      "type": "line",
+      "text": "and he claimeth all those who have faith in him;",
+      "verse": "7:28",
+      "lineIndex": 62
+    },
+    {
+      "start": 391.694,
+      "end": 395.874,
+      "type": "line",
+      "text": "and they who have faith in him will cleave unto every good thing;",
+      "verse": "7:28",
+      "lineIndex": 63
+    },
+    {
+      "start": 396.054,
+      "end": 399.909,
+      "type": "line",
+      "text": "wherefore he advocateth the cause of the children of men;",
+      "verse": "7:28",
+      "lineIndex": 64
+    },
+    {
+      "start": 400.089,
+      "end": 402.272,
+      "type": "line",
+      "text": "and he dwelleth eternally in the heavens.",
+      "verse": "7:28",
+      "lineIndex": 65
+    },
+    {
+      "start": 402.952,
+      "end": 407.457,
+      "type": "line",
+      "text": "And because he hath done this, my beloved brethren, have miracles ceased?",
+      "verse": "7:29",
+      "lineIndex": 66
+    },
+    {
+      "start": 407.637,
+      "end": 413.721,
+      "type": "line",
+      "text": "Behold I say unto you, Nay; neither have angels ceased to minister unto the children of men.",
+      "verse": "7:29",
+      "lineIndex": 67
+    },
+    {
+      "start": 414.401,
+      "end": 425.175,
+      "type": "line",
+      "text": "For behold, they are subject unto him, to minister according to the word of his command, showing themselves unto them of strong faith and a firm mind in every form of godliness.",
+      "verse": "7:30",
+      "lineIndex": 68
+    },
+    {
+      "start": 425.855,
+      "end": 449.168,
+      "type": "line",
+      "text": "And the office of their ministry is to call men unto repentance, and to fulfil and to do the work of the covenants of the Father, which he hath made unto the children of men, to prepare the way among the children of men, by declaring the word of Christ unto the chosen vessels of the Lord, that they may bear testimony of him.",
+      "verse": "7:31",
+      "lineIndex": 69
+    },
+    {
+      "start": 449.848,
+      "end": 452.727,
+      "type": "line",
+      "text": "And by so doing, the Lord God prepareth the way",
+      "verse": "7:32",
+      "lineIndex": 70
+    },
+    {
+      "start": 452.907,
+      "end": 456.251,
+      "type": "line",
+      "text": "that the residue of men may have faith in Christ,",
+      "verse": "7:32",
+      "lineIndex": 71
+    },
+    {
+      "start": 456.431,
+      "end": 468.32,
+      "type": "line",
+      "text": "that the Holy Ghost may have place in their hearts, according to the power thereof; and after this manner bringeth to pass the Father, the covenants which he hath made unto the children of men.",
+      "verse": "7:32",
+      "lineIndex": 72
+    },
+    {
+      "start": 469.0,
+      "end": 470.579,
+      "type": "line",
+      "text": "And Christ hath said:",
+      "verse": "7:33",
+      "lineIndex": 73
+    },
+    {
+      "start": 470.759,
+      "end": 476.192,
+      "type": "line",
+      "text": "If ye will have faith in me ye shall have power to do whatsoever thing is expedient in me.",
+      "verse": "7:33",
+      "lineIndex": 74
+    },
+    {
+      "start": 476.872,
+      "end": 478.312,
+      "type": "line",
+      "text": "And he hath said:",
+      "verse": "7:34",
+      "lineIndex": 75
+    },
+    {
+      "start": 478.492,
+      "end": 485.272,
+      "type": "line",
+      "text": "Repent all ye ends of the earth, and come unto me, and be baptized in my name, and have faith in me, that ye may be saved.",
+      "verse": "7:34",
+      "lineIndex": 76
+    },
+    {
+      "start": 485.952,
+      "end": 492.221,
+      "type": "line",
+      "text": "And now, my beloved brethren, if this be the case that these things are true which I have spoken unto you,",
+      "verse": "7:35",
+      "lineIndex": 77
+    },
+    {
+      "start": 492.401,
+      "end": 497.324,
+      "type": "line",
+      "text": "and God will show unto you, with power and great glory at the last day, that they are true,",
+      "verse": "7:35",
+      "lineIndex": 78
+    },
+    {
+      "start": 497.504,
+      "end": 500.894,
+      "type": "line",
+      "text": "and if they are true has the day of miracles ceased?",
+      "verse": "7:35",
+      "lineIndex": 79
+    },
+    {
+      "start": 501.574,
+      "end": 505.103,
+      "type": "line",
+      "text": "Or have angels ceased to appear unto the children of men?",
+      "verse": "7:36",
+      "lineIndex": 80
+    },
+    {
+      "start": 505.283,
+      "end": 508.302,
+      "type": "line",
+      "text": "Or has he withheld the power of the Holy Ghost from them?",
+      "verse": "7:36",
+      "lineIndex": 81
+    },
+    {
+      "start": 508.482,
+      "end": 516.33,
+      "type": "line",
+      "text": "Or will he, so long as time shall last, or the earth shall stand, or there shall be one man upon the face thereof to be saved?",
+      "verse": "7:36",
+      "lineIndex": 82
+    },
+    {
+      "start": 517.01,
+      "end": 518.821,
+      "type": "line",
+      "text": "Behold I say unto you, Nay;",
+      "verse": "7:37",
+      "lineIndex": 83
+    },
+    {
+      "start": 519.001,
+      "end": 520.673,
+      "type": "line",
+      "text": "for it is by faith",
+      "verse": "7:37",
+      "lineIndex": 84
+    },
+    {
+      "start": 520.853,
+      "end": 522.618,
+      "type": "line",
+      "text": "that miracles are wrought;",
+      "verse": "7:37",
+      "lineIndex": 85
+    },
+    {
+      "start": 522.798,
+      "end": 524.47,
+      "type": "line",
+      "text": "and it is by faith",
+      "verse": "7:37",
+      "lineIndex": 86
+    },
+    {
+      "start": 524.65,
+      "end": 531.662,
+      "type": "line",
+      "text": "that angels appear and minister unto men; wherefore, if these things have ceased wo be unto the children of men,",
+      "verse": "7:37",
+      "lineIndex": 87
+    },
+    {
+      "start": 531.842,
+      "end": 535.093,
+      "type": "line",
+      "text": "for it is because of unbelief, and all is vain.",
+      "verse": "7:37",
+      "lineIndex": 88
+    },
+    {
+      "start": 535.773,
+      "end": 543.482,
+      "type": "line",
+      "text": "For no man can be saved, according to the words of Christ, save they shall have faith in his name;",
+      "verse": "7:38",
+      "lineIndex": 89
+    },
+    {
+      "start": 543.662,
+      "end": 555.783,
+      "type": "line",
+      "text": "wherefore, if these things have ceased, then has faith ceased also; and awful is the state of man, for they are as though there had been no redemption made.",
+      "verse": "7:38",
+      "lineIndex": 90
+    },
+    {
+      "start": 556.463,
+      "end": 560.271,
+      "type": "line",
+      "text": "But behold, my beloved brethren, I judge better things of you,",
+      "verse": "7:39",
+      "lineIndex": 91
+    },
+    {
+      "start": 560.451,
+      "end": 564.956,
+      "type": "line",
+      "text": "for I judge that ye have faith in Christ because of your meekness;",
+      "verse": "7:39",
+      "lineIndex": 92
+    },
+    {
+      "start": 565.136,
+      "end": 571.08,
+      "type": "line",
+      "text": "for if ye have not faith in him then ye are not fit to be numbered among the people of his church.",
+      "verse": "7:39",
+      "lineIndex": 93
+    },
+    {
+      "start": 571.76,
+      "end": 576.125,
+      "type": "line",
+      "text": "And again, my beloved brethren, I would speak unto you concerning hope.",
+      "verse": "7:40",
+      "lineIndex": 95
+    },
+    {
+      "start": 576.305,
+      "end": 578.766,
+      "type": "line",
+      "text": "How is it that ye can attain unto faith,",
+      "verse": "7:40",
+      "lineIndex": 96
+    },
+    {
+      "start": 578.946,
+      "end": 580.618,
+      "type": "line",
+      "text": "save ye shall have hope?",
+      "verse": "7:40",
+      "lineIndex": 97
+    },
+    {
+      "start": 581.298,
+      "end": 583.527,
+      "type": "line",
+      "text": "And what is it that ye shall hope for?",
+      "verse": "7:41",
+      "lineIndex": 98
+    },
+    {
+      "start": 583.707,
+      "end": 596.246,
+      "type": "line",
+      "text": "Behold I say unto you that ye shall have hope through the atonement of Christ and the power of his resurrection, to be raised unto life eternal, and this because of your faith in him according to the promise.",
+      "verse": "7:41",
+      "lineIndex": 99
+    },
+    {
+      "start": 596.926,
+      "end": 600.641,
+      "type": "line",
+      "text": "Wherefore, if a man have faith he must needs have hope;",
+      "verse": "7:42",
+      "lineIndex": 100
+    },
+    {
+      "start": 600.821,
+      "end": 603.468,
+      "type": "line",
+      "text": "for without faith there cannot be any hope.",
+      "verse": "7:42",
+      "lineIndex": 101
+    },
+    {
+      "start": 604.148,
+      "end": 611.811,
+      "type": "line",
+      "text": "And again, behold I say unto you that he cannot have faith and hope, save he shall be meek, and lowly of heart.",
+      "verse": "7:43",
+      "lineIndex": 102
+    },
+    {
+      "start": 612.491,
+      "end": 614.813,
+      "type": "line",
+      "text": "If so, his faith and hope is vain,",
+      "verse": "7:44",
+      "lineIndex": 103
+    },
+    {
+      "start": 614.993,
+      "end": 617.315,
+      "type": "line",
+      "text": "for none is acceptable before God,",
+      "verse": "7:44",
+      "lineIndex": 104
+    },
+    {
+      "start": 617.495,
+      "end": 619.863,
+      "type": "line",
+      "text": "save the meek and lowly in heart;",
+      "verse": "7:44",
+      "lineIndex": 105
+    },
+    {
+      "start": 620.043,
+      "end": 629.517,
+      "type": "line",
+      "text": "and if a man be meek and lowly in heart, and confesses by the power of the Holy Ghost that Jesus is the Christ, he must needs have charity;",
+      "verse": "7:44",
+      "lineIndex": 106
+    },
+    {
+      "start": 629.697,
+      "end": 632.576,
+      "type": "line",
+      "text": "for if he have not charity he is nothing;",
+      "verse": "7:44",
+      "lineIndex": 107
+    },
+    {
+      "start": 632.756,
+      "end": 635.217,
+      "type": "line",
+      "text": "wherefore he must needs have charity.",
+      "verse": "7:44",
+      "lineIndex": 108
+    },
+    {
+      "start": 635.897,
+      "end": 658.978,
+      "type": "line",
+      "text": "And charity suffereth long, and is kind, and envieth not, and is not puffed up, seeketh not her own, is not easily provoked, thinketh no evil, and rejoiceth not in iniquity but rejoiceth in the truth, beareth all things, believeth all things, hopeth all things, endureth all things.",
+      "verse": "7:45",
+      "lineIndex": 110
+    },
+    {
+      "start": 659.658,
+      "end": 665.231,
+      "type": "line",
+      "text": "Wherefore, my beloved brethren, if ye have not charity, ye are nothing,",
+      "verse": "7:46",
+      "lineIndex": 111
+    },
+    {
+      "start": 665.411,
+      "end": 667.129,
+      "type": "line",
+      "text": "for charity never faileth.",
+      "verse": "7:46",
+      "lineIndex": 112
+    },
+    {
+      "start": 667.309,
+      "end": 671.303,
+      "type": "line",
+      "text": "Wherefore, cleave unto charity, which is the greatest of all,",
+      "verse": "7:46",
+      "lineIndex": 113
+    },
+    {
+      "start": 671.483,
+      "end": 673.526,
+      "type": "line",
+      "text": "for all things must fail \u2014",
+      "verse": "7:46",
+      "lineIndex": 114
+    },
+    {
+      "start": 674.206,
+      "end": 676.667,
+      "type": "line",
+      "text": "But charity is the pure love of Christ,",
+      "verse": "7:47",
+      "lineIndex": 115
+    },
+    {
+      "start": 676.847,
+      "end": 678.705,
+      "type": "line",
+      "text": "and it endureth forever;",
+      "verse": "7:47",
+      "lineIndex": 116
+    },
+    {
+      "start": 678.885,
+      "end": 682.089,
+      "type": "line",
+      "text": "and whoso is found possessed of it at the last day,",
+      "verse": "7:47",
+      "lineIndex": 117
+    },
+    {
+      "start": 682.269,
+      "end": 683.848,
+      "type": "line",
+      "text": "it shall be well with him.",
+      "verse": "7:47",
+      "lineIndex": 118
+    },
+    {
+      "start": 684.528,
+      "end": 689.497,
+      "type": "line",
+      "text": "Wherefore, my beloved brethren, pray unto the Father with all the energy of heart,",
+      "verse": "7:48",
+      "lineIndex": 119
+    },
+    {
+      "start": 689.677,
+      "end": 697.247,
+      "type": "line",
+      "text": "that ye may be filled with this love, which he hath bestowed upon all who are true followers of his Son, Jesus Christ;",
+      "verse": "7:48",
+      "lineIndex": 120
+    },
+    {
+      "start": 697.427,
+      "end": 699.656,
+      "type": "line",
+      "text": "that ye may become the sons of God;",
+      "verse": "7:48",
+      "lineIndex": 121
+    },
+    {
+      "start": 699.836,
+      "end": 703.133,
+      "type": "line",
+      "text": "that when he shall appear we shall be like him,",
+      "verse": "7:48",
+      "lineIndex": 122
+    },
+    {
+      "start": 703.313,
+      "end": 705.635,
+      "type": "line",
+      "text": "for we shall see him as he is;",
+      "verse": "7:48",
+      "lineIndex": 123
+    },
+    {
+      "start": 705.815,
+      "end": 707.673,
+      "type": "line",
+      "text": "that we may have this hope;",
+      "verse": "7:48",
+      "lineIndex": 124
+    },
+    {
+      "start": 707.853,
+      "end": 710.454,
+      "type": "line",
+      "text": "that we may be purified even as he is pure.",
+      "verse": "7:48",
+      "lineIndex": 125
+    },
+    {
+      "start": 710.634,
+      "end": 711.47,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "7:48",
+      "lineIndex": 126
+    }
+  ]
+}
