@@ -1,0 +1,416 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 22,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 193.134,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 19.133,
+      "type": "line",
+      "text": "And then shall that which is written come to pass: Sing, O barren, thou that didst not bear; break forth into singing, and cry aloud, thou that didst not travail with child; for more are the children of the desolate than the children of the married wife,",
+      "verse": "22:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 19.313,
+      "end": 20.613,
+      "type": "line",
+      "text": "saith the Lord.",
+      "verse": "22:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 21.293,
+      "end": 32.578,
+      "type": "line",
+      "text": "Enlarge the place of thy tent, and let them stretch forth the curtains of thy habitations; spare not, lengthen thy cords and strengthen thy stakes;",
+      "verse": "22:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 33.258,
+      "end": 36.741,
+      "type": "line",
+      "text": "For thou shalt break forth on the right hand and on the left,",
+      "verse": "22:3",
+      "lineIndex": 4
+    },
+    {
+      "start": 36.921,
+      "end": 42.912,
+      "type": "line",
+      "text": "and thy seed shall inherit the Gentiles and make the desolate cities to be inhabited.",
+      "verse": "22:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 43.592,
+      "end": 44.846,
+      "type": "line",
+      "text": "Fear not,",
+      "verse": "22:4",
+      "lineIndex": 7
+    },
+    {
+      "start": 45.026,
+      "end": 46.976,
+      "type": "line",
+      "text": "for thou shalt not be ashamed;",
+      "verse": "22:4",
+      "lineIndex": 8
+    },
+    {
+      "start": 47.156,
+      "end": 48.967,
+      "type": "line",
+      "text": "neither be thou confounded,",
+      "verse": "22:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 49.147,
+      "end": 51.283,
+      "type": "line",
+      "text": "for thou shalt not be put to shame;",
+      "verse": "22:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 51.463,
+      "end": 54.342,
+      "type": "line",
+      "text": "for thou shalt forget the shame of thy youth,",
+      "verse": "22:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 54.522,
+      "end": 61.07,
+      "type": "line",
+      "text": "and shalt not remember the reproach of thy youth, and shalt not remember the reproach of thy widowhood any more.",
+      "verse": "22:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 61.75,
+      "end": 65.744,
+      "type": "line",
+      "text": "For thy maker, thy husband, the Lord of Hosts is his name;",
+      "verse": "22:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 65.924,
+      "end": 71.032,
+      "type": "line",
+      "text": "and thy Redeemer, the Holy One of Israel\u2014the God of the whole earth shall he be called.",
+      "verse": "22:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 71.712,
+      "end": 76.356,
+      "type": "line",
+      "text": "For the Lord hath called thee as a woman forsaken and grieved in spirit,",
+      "verse": "22:6",
+      "lineIndex": 15
+    },
+    {
+      "start": 76.536,
+      "end": 78.161,
+      "type": "line",
+      "text": "and a wife of youth,",
+      "verse": "22:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 78.341,
+      "end": 80.106,
+      "type": "line",
+      "text": "when thou wast refused,",
+      "verse": "22:6",
+      "lineIndex": 17
+    },
+    {
+      "start": 80.286,
+      "end": 81.633,
+      "type": "line",
+      "text": "saith thy God.",
+      "verse": "22:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 82.313,
+      "end": 84.867,
+      "type": "line",
+      "text": "For a small moment have I forsaken thee,",
+      "verse": "22:7",
+      "lineIndex": 19
+    },
+    {
+      "start": 85.047,
+      "end": 87.555,
+      "type": "line",
+      "text": "but with great mercies will I gather thee.",
+      "verse": "22:7",
+      "lineIndex": 20
+    },
+    {
+      "start": 88.235,
+      "end": 91.857,
+      "type": "line",
+      "text": "In a little wrath I hid my face from thee for a moment,",
+      "verse": "22:8",
+      "lineIndex": 21
+    },
+    {
+      "start": 92.037,
+      "end": 95.659,
+      "type": "line",
+      "text": "but with everlasting kindness will I have mercy on thee,",
+      "verse": "22:8",
+      "lineIndex": 22
+    },
+    {
+      "start": 95.839,
+      "end": 97.65,
+      "type": "line",
+      "text": "saith the Lord thy Redeemer.",
+      "verse": "22:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 98.33,
+      "end": 104.924,
+      "type": "line",
+      "text": "For this, the waters of Noah unto me, for as I have sworn that the waters of Noah should no more go over the earth,",
+      "verse": "22:9",
+      "lineIndex": 24
+    },
+    {
+      "start": 105.104,
+      "end": 107.983,
+      "type": "line",
+      "text": "so have I sworn that I would not be wroth with thee.",
+      "verse": "22:9",
+      "lineIndex": 25
+    },
+    {
+      "start": 108.663,
+      "end": 111.357,
+      "type": "line",
+      "text": "For the mountains shall depart",
+      "verse": "22:10",
+      "lineIndex": 26
+    },
+    {
+      "start": 111.537,
+      "end": 113.395,
+      "type": "line",
+      "text": "and the hills be removed,",
+      "verse": "22:10",
+      "lineIndex": 27
+    },
+    {
+      "start": 113.575,
+      "end": 116.083,
+      "type": "line",
+      "text": "but my kindness shall not depart from thee,",
+      "verse": "22:10",
+      "lineIndex": 28
+    },
+    {
+      "start": 116.263,
+      "end": 119.514,
+      "type": "line",
+      "text": "neither shall the covenant of my peace be removed,",
+      "verse": "22:10",
+      "lineIndex": 29
+    },
+    {
+      "start": 119.694,
+      "end": 121.923,
+      "type": "line",
+      "text": "saith the Lord that hath mercy on thee.",
+      "verse": "22:10",
+      "lineIndex": 30
+    },
+    {
+      "start": 122.603,
+      "end": 126.365,
+      "type": "line",
+      "text": "O thou afflicted, tossed with tempest, and not comforted!",
+      "verse": "22:11",
+      "lineIndex": 32
+    },
+    {
+      "start": 126.545,
+      "end": 132.025,
+      "type": "line",
+      "text": "Behold, I will lay thy stones with fair colors, and lay thy foundations with sapphires.",
+      "verse": "22:11",
+      "lineIndex": 33
+    },
+    {
+      "start": 132.705,
+      "end": 138.696,
+      "type": "line",
+      "text": "And I will make thy windows of agates, and thy gates of carbuncles, and all thy borders of pleasant stones.",
+      "verse": "22:12",
+      "lineIndex": 34
+    },
+    {
+      "start": 139.376,
+      "end": 142.348,
+      "type": "line",
+      "text": "And all thy children shall be taught of the Lord;",
+      "verse": "22:13",
+      "lineIndex": 35
+    },
+    {
+      "start": 142.528,
+      "end": 145.268,
+      "type": "line",
+      "text": "and great shall be the peace of thy children.",
+      "verse": "22:13",
+      "lineIndex": 36
+    },
+    {
+      "start": 145.948,
+      "end": 148.502,
+      "type": "line",
+      "text": "In righteousness shalt thou be established;",
+      "verse": "22:14",
+      "lineIndex": 37
+    },
+    {
+      "start": 148.682,
+      "end": 151.004,
+      "type": "line",
+      "text": "thou shalt be far from oppression",
+      "verse": "22:14",
+      "lineIndex": 38
+    },
+    {
+      "start": 151.184,
+      "end": 152.995,
+      "type": "line",
+      "text": "for thou shalt not fear,",
+      "verse": "22:14",
+      "lineIndex": 39
+    },
+    {
+      "start": 153.175,
+      "end": 154.661,
+      "type": "line",
+      "text": "and from terror",
+      "verse": "22:14",
+      "lineIndex": 40
+    },
+    {
+      "start": 154.841,
+      "end": 156.791,
+      "type": "line",
+      "text": "for it shall not come near thee.",
+      "verse": "22:14",
+      "lineIndex": 41
+    },
+    {
+      "start": 157.471,
+      "end": 161.326,
+      "type": "line",
+      "text": "Behold, they shall surely gather together against thee, not by me;",
+      "verse": "22:15",
+      "lineIndex": 43
+    },
+    {
+      "start": 161.506,
+      "end": 166.196,
+      "type": "line",
+      "text": "whosoever shall gather together against thee shall fall for thy sake.",
+      "verse": "22:15",
+      "lineIndex": 44
+    },
+    {
+      "start": 166.876,
+      "end": 169.059,
+      "type": "line",
+      "text": "Behold, I have created the smith",
+      "verse": "22:16",
+      "lineIndex": 45
+    },
+    {
+      "start": 169.239,
+      "end": 171.515,
+      "type": "line",
+      "text": "that bloweth the coals in the fire,",
+      "verse": "22:16",
+      "lineIndex": 46
+    },
+    {
+      "start": 171.695,
+      "end": 175.039,
+      "type": "line",
+      "text": "and that bringeth forth an instrument for his work;",
+      "verse": "22:16",
+      "lineIndex": 47
+    },
+    {
+      "start": 175.219,
+      "end": 177.913,
+      "type": "line",
+      "text": "and I have created the waster to destroy.",
+      "verse": "22:16",
+      "lineIndex": 48
+    },
+    {
+      "start": 178.593,
+      "end": 181.565,
+      "type": "line",
+      "text": "No weapon that is formed against thee shall prosper;",
+      "verse": "22:17",
+      "lineIndex": 49
+    },
+    {
+      "start": 181.745,
+      "end": 186.435,
+      "type": "line",
+      "text": "and every tongue that shall revile against thee in judgment thou shalt condemn.",
+      "verse": "22:17",
+      "lineIndex": 50
+    },
+    {
+      "start": 186.615,
+      "end": 190.98,
+      "type": "line",
+      "text": "This is the heritage of the servants of the Lord, and their righteousness is of me,",
+      "verse": "22:17",
+      "lineIndex": 51
+    },
+    {
+      "start": 191.16,
+      "end": 192.46,
+      "type": "line",
+      "text": "saith the Lord.",
+      "verse": "22:17",
+      "lineIndex": 52
+    }
+  ]
+}
