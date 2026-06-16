@@ -1,0 +1,632 @@
+{
+  "book": "moroni",
+  "bookName": "Moroni",
+  "chapter": 8,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 414.166,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.529,
+      "type": "line",
+      "text": "An epistle of my father Mormon, written to me, Moroni;",
+      "verse": "8:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.709,
+      "end": 7.424,
+      "type": "line",
+      "text": "and it was written unto me soon after my calling to the ministry.",
+      "verse": "8:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 7.604,
+      "end": 10.623,
+      "type": "line",
+      "text": "And on this wise did he write unto me, saying:",
+      "verse": "8:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 11.303,
+      "end": 20.637,
+      "type": "line",
+      "text": "My beloved son, Moroni, I rejoice exceedingly that your Lord Jesus Christ hath been mindful of you, and hath called you to his ministry, and to his holy work.",
+      "verse": "8:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 21.317,
+      "end": 36.967,
+      "type": "line",
+      "text": "I am mindful of you always in my prayers, continually praying unto God the Father in the name of his Holy Child, Jesus, that he, through his infinite goodness and grace, will keep you through the endurance of faith on his name to the end.",
+      "verse": "8:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 37.647,
+      "end": 48.653,
+      "type": "line",
+      "text": "And now, my son, I speak unto you concerning that which grieveth me exceedingly; for it grieveth me that there should disputations rise among you.",
+      "verse": "8:4",
+      "lineIndex": 6
+    },
+    {
+      "start": 49.333,
+      "end": 57.042,
+      "type": "line",
+      "text": "For, if I have learned the truth, there have been disputations among you concerning the baptism of your little children.",
+      "verse": "8:5",
+      "lineIndex": 7
+    },
+    {
+      "start": 57.722,
+      "end": 65.524,
+      "type": "line",
+      "text": "And now, my son, I desire that ye should labor diligently, that this gross error should be removed from among you;",
+      "verse": "8:6",
+      "lineIndex": 8
+    },
+    {
+      "start": 65.704,
+      "end": 69.048,
+      "type": "line",
+      "text": "for, for this intent I have written this epistle.",
+      "verse": "8:6",
+      "lineIndex": 9
+    },
+    {
+      "start": 69.728,
+      "end": 75.115,
+      "type": "line",
+      "text": "For immediately after I had learned these things of you I inquired of the Lord concerning the matter.",
+      "verse": "8:7",
+      "lineIndex": 10
+    },
+    {
+      "start": 75.295,
+      "end": 79.289,
+      "type": "line",
+      "text": "And the word of the Lord came to me by the power of the Holy Ghost, saying:",
+      "verse": "8:7",
+      "lineIndex": 11
+    },
+    {
+      "start": 79.969,
+      "end": 83.777,
+      "type": "line",
+      "text": "Listen to the words of Christ, your Redeemer, your Lord and your God.",
+      "verse": "8:8",
+      "lineIndex": 12
+    },
+    {
+      "start": 83.957,
+      "end": 89.205,
+      "type": "line",
+      "text": "Behold, I came into the world not to call the righteous but sinners to repentance;",
+      "verse": "8:8",
+      "lineIndex": 13
+    },
+    {
+      "start": 89.385,
+      "end": 92.868,
+      "type": "line",
+      "text": "the whole need no physician, but they that are sick;",
+      "verse": "8:8",
+      "lineIndex": 14
+    },
+    {
+      "start": 93.048,
+      "end": 95.602,
+      "type": "line",
+      "text": "wherefore, little children are whole,",
+      "verse": "8:8",
+      "lineIndex": 15
+    },
+    {
+      "start": 95.782,
+      "end": 98.522,
+      "type": "line",
+      "text": "for they are not capable of committing sin;",
+      "verse": "8:8",
+      "lineIndex": 16
+    },
+    {
+      "start": 98.702,
+      "end": 104.275,
+      "type": "line",
+      "text": "wherefore the curse of Adam is taken from them in me, that it hath no power over them;",
+      "verse": "8:8",
+      "lineIndex": 17
+    },
+    {
+      "start": 104.455,
+      "end": 107.52,
+      "type": "line",
+      "text": "and the law of circumcision is done away in me.",
+      "verse": "8:8",
+      "lineIndex": 18
+    },
+    {
+      "start": 108.2,
+      "end": 112.519,
+      "type": "line",
+      "text": "And after this manner did the Holy Ghost manifest the word of God unto me;",
+      "verse": "8:9",
+      "lineIndex": 19
+    },
+    {
+      "start": 112.699,
+      "end": 119.433,
+      "type": "line",
+      "text": "wherefore, my beloved son, I know that it is solemn mockery before God, that ye should baptize little children.",
+      "verse": "8:9",
+      "lineIndex": 20
+    },
+    {
+      "start": 120.113,
+      "end": 130.19,
+      "type": "line",
+      "text": "Behold I say unto you that this thing shall ye teach\u2014repentance and baptism unto those who are accountable and capable of committing sin;",
+      "verse": "8:10",
+      "lineIndex": 22
+    },
+    {
+      "start": 130.37,
+      "end": 136.825,
+      "type": "line",
+      "text": "yea, teach parents that they must repent and be baptized, and humble themselves as their little children,",
+      "verse": "8:10",
+      "lineIndex": 23
+    },
+    {
+      "start": 137.005,
+      "end": 139.652,
+      "type": "line",
+      "text": "and they shall all be saved with their little children.",
+      "verse": "8:10",
+      "lineIndex": 24
+    },
+    {
+      "start": 140.332,
+      "end": 144.047,
+      "type": "line",
+      "text": "And their little children need no repentance, neither baptism.",
+      "verse": "8:11",
+      "lineIndex": 25
+    },
+    {
+      "start": 144.227,
+      "end": 149.846,
+      "type": "line",
+      "text": "Behold, baptism is unto repentance to the fulfilling the commandments unto the remission of sins.",
+      "verse": "8:11",
+      "lineIndex": 26
+    },
+    {
+      "start": 150.526,
+      "end": 155.402,
+      "type": "line",
+      "text": "But little children are alive in Christ, even from the foundation of the world;",
+      "verse": "8:12",
+      "lineIndex": 27
+    },
+    {
+      "start": 155.582,
+      "end": 166.867,
+      "type": "line",
+      "text": "if not so, God is a partial God, and also a changeable God, and a respecter to persons; for how many little children have died without baptism!",
+      "verse": "8:12",
+      "lineIndex": 28
+    },
+    {
+      "start": 167.547,
+      "end": 174.885,
+      "type": "line",
+      "text": "Wherefore, if little children could not be saved without baptism, these must have gone to an endless hell.",
+      "verse": "8:13",
+      "lineIndex": 29
+    },
+    {
+      "start": 175.565,
+      "end": 177.655,
+      "type": "line",
+      "text": "Behold I say unto you, that he",
+      "verse": "8:14",
+      "lineIndex": 30
+    },
+    {
+      "start": 177.835,
+      "end": 179.321,
+      "type": "line",
+      "text": "that supposeth",
+      "verse": "8:14",
+      "lineIndex": 31
+    },
+    {
+      "start": 179.501,
+      "end": 181.916,
+      "type": "line",
+      "text": "that little children need baptism",
+      "verse": "8:14",
+      "lineIndex": 32
+    },
+    {
+      "start": 182.096,
+      "end": 185.579,
+      "type": "line",
+      "text": "is in the gall of bitterness and in the bonds of iniquity;",
+      "verse": "8:14",
+      "lineIndex": 33
+    },
+    {
+      "start": 185.759,
+      "end": 188.778,
+      "type": "line",
+      "text": "for he hath neither faith, hope, nor charity;",
+      "verse": "8:14",
+      "lineIndex": 34
+    },
+    {
+      "start": 188.958,
+      "end": 192.395,
+      "type": "line",
+      "text": "wherefore, should he be cut off while in the thought,",
+      "verse": "8:14",
+      "lineIndex": 35
+    },
+    {
+      "start": 192.575,
+      "end": 194.247,
+      "type": "line",
+      "text": "he must go down to hell.",
+      "verse": "8:14",
+      "lineIndex": 36
+    },
+    {
+      "start": 194.927,
+      "end": 200.175,
+      "type": "line",
+      "text": "For awful is the wickedness to suppose that God saveth one child because of baptism,",
+      "verse": "8:15",
+      "lineIndex": 37
+    },
+    {
+      "start": 200.355,
+      "end": 203.513,
+      "type": "line",
+      "text": "and the other must perish because he hath no baptism.",
+      "verse": "8:15",
+      "lineIndex": 38
+    },
+    {
+      "start": 204.193,
+      "end": 208.883,
+      "type": "line",
+      "text": "Wo be unto them that shall pervert the ways of the Lord after this manner,",
+      "verse": "8:16",
+      "lineIndex": 39
+    },
+    {
+      "start": 209.063,
+      "end": 211.431,
+      "type": "line",
+      "text": "for they shall perish except they repent.",
+      "verse": "8:16",
+      "lineIndex": 40
+    },
+    {
+      "start": 211.611,
+      "end": 215.001,
+      "type": "line",
+      "text": "Behold, I speak with boldness, having authority from God;",
+      "verse": "8:16",
+      "lineIndex": 41
+    },
+    {
+      "start": 215.181,
+      "end": 217.41,
+      "type": "line",
+      "text": "and I fear not what man can do;",
+      "verse": "8:16",
+      "lineIndex": 42
+    },
+    {
+      "start": 217.59,
+      "end": 220.144,
+      "type": "line",
+      "text": "for perfect love casteth out all fear.",
+      "verse": "8:16",
+      "lineIndex": 43
+    },
+    {
+      "start": 220.824,
+      "end": 224.075,
+      "type": "line",
+      "text": "And I am filled with charity, which is everlasting love;",
+      "verse": "8:17",
+      "lineIndex": 44
+    },
+    {
+      "start": 224.255,
+      "end": 226.995,
+      "type": "line",
+      "text": "wherefore, all children are alike unto me;",
+      "verse": "8:17",
+      "lineIndex": 45
+    },
+    {
+      "start": 227.175,
+      "end": 235.348,
+      "type": "line",
+      "text": "wherefore, I love little children with a perfect love; and they are all alike and partakers of salvation.",
+      "verse": "8:17",
+      "lineIndex": 46
+    },
+    {
+      "start": 236.028,
+      "end": 245.037,
+      "type": "line",
+      "text": "For I know that God is not a partial God, neither a changeable being; but he is unchangeable from all eternity to all eternity.",
+      "verse": "8:18",
+      "lineIndex": 47
+    },
+    {
+      "start": 245.717,
+      "end": 247.853,
+      "type": "line",
+      "text": "Little children cannot repent;",
+      "verse": "8:19",
+      "lineIndex": 48
+    },
+    {
+      "start": 248.033,
+      "end": 252.816,
+      "type": "line",
+      "text": "wherefore, it is awful wickedness to deny the pure mercies of God unto them,",
+      "verse": "8:19",
+      "lineIndex": 49
+    },
+    {
+      "start": 252.996,
+      "end": 256.061,
+      "type": "line",
+      "text": "for they are all alive in him because of his mercy.",
+      "verse": "8:19",
+      "lineIndex": 50
+    },
+    {
+      "start": 256.741,
+      "end": 260.131,
+      "type": "line",
+      "text": "And he that saith that little children need baptism",
+      "verse": "8:20",
+      "lineIndex": 51
+    },
+    {
+      "start": 260.311,
+      "end": 262.401,
+      "type": "line",
+      "text": "denieth the mercies of Christ,",
+      "verse": "8:20",
+      "lineIndex": 52
+    },
+    {
+      "start": 262.581,
+      "end": 267.968,
+      "type": "line",
+      "text": "and setteth at naught the atonement of him and the power of his redemption.",
+      "verse": "8:20",
+      "lineIndex": 53
+    },
+    {
+      "start": 268.648,
+      "end": 273.338,
+      "type": "line",
+      "text": "Wo unto such, for they are in danger of death, hell, and an endless torment.",
+      "verse": "8:21",
+      "lineIndex": 54
+    },
+    {
+      "start": 273.518,
+      "end": 274.958,
+      "type": "line",
+      "text": "I speak it boldly;",
+      "verse": "8:21",
+      "lineIndex": 55
+    },
+    {
+      "start": 275.138,
+      "end": 276.763,
+      "type": "line",
+      "text": "God hath commanded me.",
+      "verse": "8:21",
+      "lineIndex": 56
+    },
+    {
+      "start": 276.943,
+      "end": 279.358,
+      "type": "line",
+      "text": "Listen unto them and give heed,",
+      "verse": "8:21",
+      "lineIndex": 57
+    },
+    {
+      "start": 279.538,
+      "end": 282.928,
+      "type": "line",
+      "text": "or they stand against you at the judgment-seat of Christ.",
+      "verse": "8:21",
+      "lineIndex": 58
+    },
+    {
+      "start": 283.608,
+      "end": 290.435,
+      "type": "line",
+      "text": "For behold that all little children are alive in Christ, and also all they that are without the law.",
+      "verse": "8:22",
+      "lineIndex": 59
+    },
+    {
+      "start": 290.615,
+      "end": 294.934,
+      "type": "line",
+      "text": "For the power of redemption cometh on all them that have no law;",
+      "verse": "8:22",
+      "lineIndex": 60
+    },
+    {
+      "start": 295.114,
+      "end": 306.213,
+      "type": "line",
+      "text": "wherefore, he that is not condemned, or he that is under no condemnation, cannot repent; and unto such baptism availeth nothing \u2014",
+      "verse": "8:22",
+      "lineIndex": 61
+    },
+    {
+      "start": 306.893,
+      "end": 314.927,
+      "type": "line",
+      "text": "But it is mockery before God, denying the mercies of Christ, and the power of his Holy Spirit, and putting trust in dead works.",
+      "verse": "8:23",
+      "lineIndex": 63
+    },
+    {
+      "start": 315.607,
+      "end": 318.393,
+      "type": "line",
+      "text": "Behold, my son, this thing ought not to be;",
+      "verse": "8:24",
+      "lineIndex": 64
+    },
+    {
+      "start": 318.573,
+      "end": 325.585,
+      "type": "line",
+      "text": "for repentance is unto them that are under condemnation and under the curse of a broken law.",
+      "verse": "8:24",
+      "lineIndex": 65
+    },
+    {
+      "start": 326.265,
+      "end": 329.144,
+      "type": "line",
+      "text": "And the first fruits of repentance is baptism;",
+      "verse": "8:25",
+      "lineIndex": 66
+    },
+    {
+      "start": 329.324,
+      "end": 333.55,
+      "type": "line",
+      "text": "and baptism cometh by faith unto the fulfilling the commandments;",
+      "verse": "8:25",
+      "lineIndex": 67
+    },
+    {
+      "start": 333.73,
+      "end": 337.585,
+      "type": "line",
+      "text": "and the fulfilling the commandments bringeth remission of sins;",
+      "verse": "8:25",
+      "lineIndex": 68
+    },
+    {
+      "start": 338.265,
+      "end": 360.603,
+      "type": "line",
+      "text": "And the remission of sins bringeth meekness, and lowliness of heart; and because of meekness and lowliness of heart cometh the visitation of the Holy Ghost, which Comforter filleth with hope and perfect love, which love endureth by diligence unto prayer, until the end shall come, when all the saints shall dwell with God.",
+      "verse": "8:26",
+      "lineIndex": 69
+    },
+    {
+      "start": 361.283,
+      "end": 366.856,
+      "type": "line",
+      "text": "Behold, my son, I will write unto you again if I go not out soon against the Lamanites.",
+      "verse": "8:27",
+      "lineIndex": 70
+    },
+    {
+      "start": 367.036,
+      "end": 374.606,
+      "type": "line",
+      "text": "Behold, the pride of this nation, or the people of the Nephites, hath proven their destruction except they should repent.",
+      "verse": "8:27",
+      "lineIndex": 71
+    },
+    {
+      "start": 375.286,
+      "end": 378.49,
+      "type": "line",
+      "text": "Pray for them, my son, that repentance may come unto them.",
+      "verse": "8:28",
+      "lineIndex": 72
+    },
+    {
+      "start": 378.67,
+      "end": 382.85,
+      "type": "line",
+      "text": "But behold, I fear lest the Spirit hath ceased striving with them;",
+      "verse": "8:28",
+      "lineIndex": 73
+    },
+    {
+      "start": 383.03,
+      "end": 390.135,
+      "type": "line",
+      "text": "and in this part of the land they are also seeking to put down all power and authority which cometh from God;",
+      "verse": "8:28",
+      "lineIndex": 74
+    },
+    {
+      "start": 390.315,
+      "end": 392.498,
+      "type": "line",
+      "text": "and they are denying the Holy Ghost.",
+      "verse": "8:28",
+      "lineIndex": 75
+    },
+    {
+      "start": 393.178,
+      "end": 407.064,
+      "type": "line",
+      "text": "And after rejecting so great a knowledge, my son, they must perish soon, unto the fulfilling of the prophecies which were spoken by the prophets, as well as the words of our Savior himself.",
+      "verse": "8:29",
+      "lineIndex": 76
+    },
+    {
+      "start": 407.744,
+      "end": 412.481,
+      "type": "line",
+      "text": "Farewell, my son, until I shall write unto you, or shall meet you again.",
+      "verse": "8:30",
+      "lineIndex": 77
+    },
+    {
+      "start": 412.661,
+      "end": 413.497,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "8:30",
+      "lineIndex": 78
+    }
+  ]
+}
