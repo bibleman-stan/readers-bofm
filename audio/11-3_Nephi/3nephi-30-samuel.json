@@ -1,0 +1,56 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 30,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 47.834,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 13.235,
+      "type": "line",
+      "text": "Hearken, O ye Gentiles, and hear the words of Jesus Christ, the Son of the living God, which he hath commanded me that I should speak concerning you, for, behold he commandeth me that I should write, saying:",
+      "verse": "30:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 13.915,
+      "end": 37.692,
+      "type": "line",
+      "text": "Turn, all ye Gentiles, from your wicked ways; and repent of your evil doings, of your lyings and deceivings, and of your whoredoms, and of your secret abominations, and your idolatries, and of your murders, and your priestcrafts, and your envyings, and your strifes, and from all your wickedness and abominations, and come unto me, and be baptized in my name,",
+      "verse": "30:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 37.872,
+      "end": 42.377,
+      "type": "line",
+      "text": "that ye may receive a remission of your sins, and be filled with the Holy Ghost,",
+      "verse": "30:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 42.557,
+      "end": 47.155,
+      "type": "line",
+      "text": "that ye may be numbered with my people who are of the house of Israel.",
+      "verse": "30:2",
+      "lineIndex": 4
+    }
+  ]
+}
