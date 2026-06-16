@@ -1,0 +1,344 @@
+{
+  "book": "mormon",
+  "bookName": "Mormon",
+  "chapter": 1,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 263.103,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.198,
+      "type": "line",
+      "text": "And now I, Mormon, make a record of the things which I have both seen and heard, and call it the Book of Mormon.",
+      "verse": "1:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.878,
+      "end": 12.615,
+      "type": "line",
+      "text": "And about the time that Ammaron hid up the records unto the Lord, he came unto me,",
+      "verse": "1:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 12.795,
+      "end": 14.931,
+      "type": "line",
+      "text": "(I being about ten years of age,",
+      "verse": "1:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 15.111,
+      "end": 20.359,
+      "type": "line",
+      "text": "and I began to be learned somewhat after the manner of the learning of my people)",
+      "verse": "1:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 20.539,
+      "end": 22.35,
+      "type": "line",
+      "text": "and Ammaron said unto me:",
+      "verse": "1:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.53,
+      "end": 27.267,
+      "type": "line",
+      "text": "I perceive that thou art a sober child, and art quick to observe;",
+      "verse": "1:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 27.947,
+      "end": 36.631,
+      "type": "line",
+      "text": "Therefore, when ye are about twenty and four years old I would that ye should remember the things that ye have observed concerning this people;",
+      "verse": "1:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 36.811,
+      "end": 43.452,
+      "type": "line",
+      "text": "and when ye are of that age go to the land Antum, unto a hill which shall be called Shim;",
+      "verse": "1:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 43.632,
+      "end": 48.694,
+      "type": "line",
+      "text": "and there have I deposited unto the Lord all the sacred engravings concerning this people.",
+      "verse": "1:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 49.374,
+      "end": 52.95,
+      "type": "line",
+      "text": "And behold, ye shall take the plates of Nephi unto yourself,",
+      "verse": "1:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 53.13,
+      "end": 56.474,
+      "type": "line",
+      "text": "and the remainder shall ye leave in the place where they are;",
+      "verse": "1:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 56.654,
+      "end": 63.434,
+      "type": "line",
+      "text": "and ye shall engrave on the plates of Nephi all the things that ye have observed concerning this people.",
+      "verse": "1:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 64.114,
+      "end": 72.566,
+      "type": "line",
+      "text": "And I, Mormon, being a descendant of Nephi, (and my father's name was Mormon) I remembered the things which Ammaron commanded me.",
+      "verse": "1:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 73.246,
+      "end": 82.348,
+      "type": "line",
+      "text": "And it came to pass that I, being eleven years old, was carried by my father into the land southward, even to the land of Zarahemla.",
+      "verse": "1:6",
+      "lineIndex": 14
+    },
+    {
+      "start": 83.028,
+      "end": 92.316,
+      "type": "line",
+      "text": "The whole face of the land had become covered with buildings, and the people were as numerous almost, as it were the sand of the sea.",
+      "verse": "1:7",
+      "lineIndex": 15
+    },
+    {
+      "start": 92.996,
+      "end": 111.526,
+      "type": "line",
+      "text": "And it came to pass in this year there began to be a war between the Nephites, who consisted of the Nephites and the Jacobites and the Josephites and the Zoramites; and this war was between the Nephites, and the Lamanites and the Lemuelites and the Ishmaelites.",
+      "verse": "1:8",
+      "lineIndex": 17
+    },
+    {
+      "start": 112.206,
+      "end": 121.448,
+      "type": "line",
+      "text": "Now the Lamanites and the Lemuelites and the Ishmaelites were called Lamanites, and the two parties were Nephites and Lamanites.",
+      "verse": "1:9",
+      "lineIndex": 18
+    },
+    {
+      "start": 122.128,
+      "end": 129.651,
+      "type": "line",
+      "text": "And it came to pass that the war began to be among them in the borders of Zarahemla, by the waters of Sidon.",
+      "verse": "1:10",
+      "lineIndex": 19
+    },
+    {
+      "start": 130.331,
+      "end": 138.504,
+      "type": "line",
+      "text": "And it came to pass that the Nephites had gathered together a great number of men, even to exceed the number of thirty thousand.",
+      "verse": "1:11",
+      "lineIndex": 20
+    },
+    {
+      "start": 138.684,
+      "end": 149.412,
+      "type": "line",
+      "text": "And it came to pass that they did have in this same year a number of battles, in which the Nephites did beat the Lamanites and did slay many of them.",
+      "verse": "1:11",
+      "lineIndex": 21
+    },
+    {
+      "start": 150.092,
+      "end": 157.615,
+      "type": "line",
+      "text": "And it came to pass that the Lamanites withdrew their design, and there was peace settled in the land;",
+      "verse": "1:12",
+      "lineIndex": 22
+    },
+    {
+      "start": 157.795,
+      "end": 163.6,
+      "type": "line",
+      "text": "and peace did remain for the space of about four years, that there was no bloodshed.",
+      "verse": "1:12",
+      "lineIndex": 23
+    },
+    {
+      "start": 164.28,
+      "end": 168.227,
+      "type": "line",
+      "text": "But wickedness did prevail upon the face of the whole land, insomuch",
+      "verse": "1:13",
+      "lineIndex": 24
+    },
+    {
+      "start": 168.407,
+      "end": 171.518,
+      "type": "line",
+      "text": "that the Lord did take away his beloved disciples,",
+      "verse": "1:13",
+      "lineIndex": 25
+    },
+    {
+      "start": 171.698,
+      "end": 176.899,
+      "type": "line",
+      "text": "and the work of miracles and of healing did cease because of the iniquity of the people.",
+      "verse": "1:13",
+      "lineIndex": 26
+    },
+    {
+      "start": 177.579,
+      "end": 179.808,
+      "type": "line",
+      "text": "And there were no gifts from the Lord,",
+      "verse": "1:14",
+      "lineIndex": 27
+    },
+    {
+      "start": 179.988,
+      "end": 185.096,
+      "type": "line",
+      "text": "and the Holy Ghost did not come upon any, because of their wickedness and unbelief.",
+      "verse": "1:14",
+      "lineIndex": 28
+    },
+    {
+      "start": 185.776,
+      "end": 196.55,
+      "type": "line",
+      "text": "And I, being fifteen years of age and being somewhat of a sober mind, therefore I was visited of the Lord, and tasted and knew of the goodness of Jesus.",
+      "verse": "1:15",
+      "lineIndex": 30
+    },
+    {
+      "start": 197.23,
+      "end": 201.502,
+      "type": "line",
+      "text": "And I did endeavor to preach unto this people, but my mouth was shut,",
+      "verse": "1:16",
+      "lineIndex": 31
+    },
+    {
+      "start": 201.682,
+      "end": 205.351,
+      "type": "line",
+      "text": "and I was forbidden that I should preach unto them;",
+      "verse": "1:16",
+      "lineIndex": 32
+    },
+    {
+      "start": 205.531,
+      "end": 208.968,
+      "type": "line",
+      "text": "for behold they had wilfully rebelled against their God;",
+      "verse": "1:16",
+      "lineIndex": 33
+    },
+    {
+      "start": 209.148,
+      "end": 214.024,
+      "type": "line",
+      "text": "and the beloved disciples were taken away out of the land, because of their iniquity.",
+      "verse": "1:16",
+      "lineIndex": 34
+    },
+    {
+      "start": 214.704,
+      "end": 216.794,
+      "type": "line",
+      "text": "But I did remain among them,",
+      "verse": "1:17",
+      "lineIndex": 35
+    },
+    {
+      "start": 216.974,
+      "end": 221.432,
+      "type": "line",
+      "text": "but I was forbidden to preach unto them, because of the hardness of their hearts;",
+      "verse": "1:17",
+      "lineIndex": 36
+    },
+    {
+      "start": 221.612,
+      "end": 225.513,
+      "type": "line",
+      "text": "and because of the hardness of their hearts the land was cursed for their sake.",
+      "verse": "1:17",
+      "lineIndex": 37
+    },
+    {
+      "start": 226.193,
+      "end": 231.905,
+      "type": "line",
+      "text": "And these Gadianton robbers, who were among the Lamanites, did infest the land, insomuch",
+      "verse": "1:18",
+      "lineIndex": 38
+    },
+    {
+      "start": 232.085,
+      "end": 237.426,
+      "type": "line",
+      "text": "that the inhabitants thereof began to hide up their treasures in the earth;",
+      "verse": "1:18",
+      "lineIndex": 39
+    },
+    {
+      "start": 237.606,
+      "end": 241.321,
+      "type": "line",
+      "text": "and they became slippery, because the Lord had cursed the land,",
+      "verse": "1:18",
+      "lineIndex": 40
+    },
+    {
+      "start": 241.501,
+      "end": 245.448,
+      "type": "line",
+      "text": "that they could not hold them, nor retain them again.",
+      "verse": "1:18",
+      "lineIndex": 41
+    },
+    {
+      "start": 246.128,
+      "end": 262.428,
+      "type": "line",
+      "text": "And it came to pass that there were sorceries, and witchcrafts, and magics; and the power of the evil one was wrought upon all the face of the land, even unto the fulfilling of all the words of Abinadi, and also Samuel the Lamanite.",
+      "verse": "1:19",
+      "lineIndex": 42
+    }
+  ]
+}
