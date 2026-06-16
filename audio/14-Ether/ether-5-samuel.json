@@ -1,0 +1,136 @@
+{
+  "book": "ether",
+  "bookName": "Ether",
+  "chapter": 5,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 81.865,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 6.223,
+      "type": "line",
+      "text": "And now I, Moroni, have written the words which were commanded me, according to my memory;",
+      "verse": "5:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 6.403,
+      "end": 13.787,
+      "type": "line",
+      "text": "and I have told you the things which I have sealed up; therefore touch them not in order that ye may translate;",
+      "verse": "5:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 13.967,
+      "end": 18.936,
+      "type": "line",
+      "text": "for that thing is forbidden you, except by and by it shall be wisdom in God.",
+      "verse": "5:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 19.616,
+      "end": 26.907,
+      "type": "line",
+      "text": "And behold, ye may be privileged that ye may show the plates unto those who shall assist to bring forth this work;",
+      "verse": "5:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 27.587,
+      "end": 31.07,
+      "type": "line",
+      "text": "And unto three shall they be shown by the power of God;",
+      "verse": "5:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 31.25,
+      "end": 36.266,
+      "type": "line",
+      "text": "wherefore they shall know of a surety that these things are true.",
+      "verse": "5:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 36.946,
+      "end": 40.986,
+      "type": "line",
+      "text": "And in the mouth of three witnesses shall these things be established;",
+      "verse": "5:4",
+      "lineIndex": 7
+    },
+    {
+      "start": 41.166,
+      "end": 54.634,
+      "type": "line",
+      "text": "and the testimony of three, and this work, in the which shall be shown forth the power of God and also his word, of which the Father, and the Son, and the Holy Ghost bear record\u2014",
+      "verse": "5:4",
+      "lineIndex": 8
+    },
+    {
+      "start": 54.814,
+      "end": 59.69,
+      "type": "line",
+      "text": "and all this shall stand as a testimony against the world at the last day.",
+      "verse": "5:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 60.37,
+      "end": 68.172,
+      "type": "line",
+      "text": "And if it so be that they repent and come unto the Father in the name of Jesus, they shall be received into the kingdom of God.",
+      "verse": "5:5",
+      "lineIndex": 10
+    },
+    {
+      "start": 68.852,
+      "end": 72.892,
+      "type": "line",
+      "text": "And now, if I have no authority for these things, judge ye;",
+      "verse": "5:6",
+      "lineIndex": 11
+    },
+    {
+      "start": 73.072,
+      "end": 77.252,
+      "type": "line",
+      "text": "for ye shall know that I have authority when ye shall see me,",
+      "verse": "5:6",
+      "lineIndex": 12
+    },
+    {
+      "start": 77.432,
+      "end": 80.172,
+      "type": "line",
+      "text": "and we shall stand before God at the last day.",
+      "verse": "5:6",
+      "lineIndex": 13
+    },
+    {
+      "start": 80.352,
+      "end": 81.188,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "5:6",
+      "lineIndex": 14
+    }
+  ]
+}
