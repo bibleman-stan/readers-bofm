@@ -1,0 +1,608 @@
+{
+  "book": "moroni",
+  "bookName": "Moroni",
+  "chapter": 10,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 413.489,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.111,
+      "type": "line",
+      "text": "Now I, Moroni, write somewhat as seemeth me good;",
+      "verse": "10:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.291,
+      "end": 6.263,
+      "type": "line",
+      "text": "and I write unto my brethren, the Lamanites;",
+      "verse": "10:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 6.443,
+      "end": 15.592,
+      "type": "line",
+      "text": "and I would that they should know that more than four hundred and twenty years have passed away since the sign was given of the coming of Christ.",
+      "verse": "10:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 16.272,
+      "end": 22.402,
+      "type": "line",
+      "text": "And I seal up these records, after I have spoken a few words by way of exhortation unto you.",
+      "verse": "10:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 23.082,
+      "end": 28.423,
+      "type": "line",
+      "text": "Behold, I would exhort you that when ye shall read these things, if it be wisdom in God",
+      "verse": "10:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 28.603,
+      "end": 30.275,
+      "type": "line",
+      "text": "that ye should read them,",
+      "verse": "10:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 30.455,
+      "end": 39.65,
+      "type": "line",
+      "text": "that ye would remember how merciful the Lord hath been unto the children of men, from the creation of Adam even down until the time",
+      "verse": "10:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 39.83,
+      "end": 43.777,
+      "type": "line",
+      "text": "that ye shall receive these things, and ponder it in your hearts.",
+      "verse": "10:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 44.457,
+      "end": 55.51,
+      "type": "line",
+      "text": "And when ye shall receive these things, I would exhort you that ye would ask God, the Eternal Father, in the name of Christ, if these things are not true;",
+      "verse": "10:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 55.69,
+      "end": 64.978,
+      "type": "line",
+      "text": "and if ye shall ask with a sincere heart, with real intent, having faith in Christ, he will manifest the truth of it unto you, by the power of the Holy Ghost.",
+      "verse": "10:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 65.658,
+      "end": 69.559,
+      "type": "line",
+      "text": "And by the power of the Holy Ghost ye may know the truth of all things.",
+      "verse": "10:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 70.239,
+      "end": 73.583,
+      "type": "line",
+      "text": "And whatsoever thing is good is just and true;",
+      "verse": "10:6",
+      "lineIndex": 12
+    },
+    {
+      "start": 73.763,
+      "end": 78.314,
+      "type": "line",
+      "text": "wherefore, nothing that is good denieth the Christ, but acknowledgeth that he is.",
+      "verse": "10:6",
+      "lineIndex": 13
+    },
+    {
+      "start": 78.994,
+      "end": 82.802,
+      "type": "line",
+      "text": "And ye may know that he is, by the power of the Holy Ghost;",
+      "verse": "10:7",
+      "lineIndex": 14
+    },
+    {
+      "start": 82.982,
+      "end": 86.976,
+      "type": "line",
+      "text": "wherefore I would exhort you that ye deny not the power of God;",
+      "verse": "10:7",
+      "lineIndex": 15
+    },
+    {
+      "start": 87.156,
+      "end": 94.958,
+      "type": "line",
+      "text": "for he worketh by power, according to the faith of the children of men, the same today and tomorrow, and forever.",
+      "verse": "10:7",
+      "lineIndex": 16
+    },
+    {
+      "start": 95.638,
+      "end": 100.003,
+      "type": "line",
+      "text": "And again, I exhort you, my brethren, that ye deny not the gifts of God,",
+      "verse": "10:8",
+      "lineIndex": 18
+    },
+    {
+      "start": 100.183,
+      "end": 101.716,
+      "type": "line",
+      "text": "for they are many;",
+      "verse": "10:8",
+      "lineIndex": 19
+    },
+    {
+      "start": 101.896,
+      "end": 103.986,
+      "type": "line",
+      "text": "and they come from the same God.",
+      "verse": "10:8",
+      "lineIndex": 20
+    },
+    {
+      "start": 104.166,
+      "end": 108.113,
+      "type": "line",
+      "text": "And there are different ways that these gifts are administered;",
+      "verse": "10:8",
+      "lineIndex": 21
+    },
+    {
+      "start": 108.293,
+      "end": 111.172,
+      "type": "line",
+      "text": "but it is the same God who worketh all in all;",
+      "verse": "10:8",
+      "lineIndex": 22
+    },
+    {
+      "start": 111.352,
+      "end": 116.971,
+      "type": "line",
+      "text": "and they are given by the manifestations of the Spirit of God unto men, to profit them.",
+      "verse": "10:8",
+      "lineIndex": 23
+    },
+    {
+      "start": 117.651,
+      "end": 122.992,
+      "type": "line",
+      "text": "For behold, to one is given by the Spirit of God, that he may teach the word of wisdom;",
+      "verse": "10:9",
+      "lineIndex": 24
+    },
+    {
+      "start": 123.672,
+      "end": 128.641,
+      "type": "line",
+      "text": "And to another, that he may teach the word of knowledge by the same Spirit;",
+      "verse": "10:10",
+      "lineIndex": 25
+    },
+    {
+      "start": 129.321,
+      "end": 135.405,
+      "type": "line",
+      "text": "And to another, exceedingly great faith; and to another, the gifts of healing by the same Spirit;",
+      "verse": "10:11",
+      "lineIndex": 26
+    },
+    {
+      "start": 136.085,
+      "end": 139.847,
+      "type": "line",
+      "text": "And again, to another, that he may work mighty miracles;",
+      "verse": "10:12",
+      "lineIndex": 27
+    },
+    {
+      "start": 140.527,
+      "end": 145.635,
+      "type": "line",
+      "text": "And again, to another, that he may prophesy concerning all things;",
+      "verse": "10:13",
+      "lineIndex": 28
+    },
+    {
+      "start": 146.315,
+      "end": 151.47,
+      "type": "line",
+      "text": "And again, to another, the beholding of angels and ministering spirits;",
+      "verse": "10:14",
+      "lineIndex": 29
+    },
+    {
+      "start": 152.15,
+      "end": 154.89,
+      "type": "line",
+      "text": "And again, to another, all kinds of tongues;",
+      "verse": "10:15",
+      "lineIndex": 30
+    },
+    {
+      "start": 155.57,
+      "end": 161.607,
+      "type": "line",
+      "text": "And again, to another, the interpretation of languages and of divers kinds of tongues.",
+      "verse": "10:16",
+      "lineIndex": 31
+    },
+    {
+      "start": 162.287,
+      "end": 169.392,
+      "type": "line",
+      "text": "And all these gifts come by the Spirit of Christ; and they come unto every man severally, according as he will.",
+      "verse": "10:17",
+      "lineIndex": 32
+    },
+    {
+      "start": 170.072,
+      "end": 176.202,
+      "type": "line",
+      "text": "And I would exhort you, my beloved brethren, that ye remember that every good gift cometh of Christ.",
+      "verse": "10:18",
+      "lineIndex": 33
+    },
+    {
+      "start": 176.882,
+      "end": 180.458,
+      "type": "line",
+      "text": "And I would exhort you, my beloved brethren, that ye remember",
+      "verse": "10:19",
+      "lineIndex": 34
+    },
+    {
+      "start": 180.638,
+      "end": 184.028,
+      "type": "line",
+      "text": "that he is the same yesterday, today, and forever,",
+      "verse": "10:19",
+      "lineIndex": 35
+    },
+    {
+      "start": 184.208,
+      "end": 198.047,
+      "type": "line",
+      "text": "and that all these gifts of which I have spoken, which are spiritual, never will be done away, even as long as the world shall stand, only according to the unbelief of the children of men.",
+      "verse": "10:19",
+      "lineIndex": 36
+    },
+    {
+      "start": 198.727,
+      "end": 201.003,
+      "type": "line",
+      "text": "Wherefore, there must be faith;",
+      "verse": "10:20",
+      "lineIndex": 38
+    },
+    {
+      "start": 201.183,
+      "end": 204.48,
+      "type": "line",
+      "text": "and if there must be faith there must also be hope;",
+      "verse": "10:20",
+      "lineIndex": 39
+    },
+    {
+      "start": 204.66,
+      "end": 208.189,
+      "type": "line",
+      "text": "and if there must be hope there must also be charity.",
+      "verse": "10:20",
+      "lineIndex": 40
+    },
+    {
+      "start": 208.869,
+      "end": 213.42,
+      "type": "line",
+      "text": "And except ye have charity ye can in nowise be saved in the kingdom of God;",
+      "verse": "10:21",
+      "lineIndex": 41
+    },
+    {
+      "start": 213.6,
+      "end": 219.498,
+      "type": "line",
+      "text": "neither can ye be saved in the kingdom of God if ye have not faith; neither can ye if ye have no hope.",
+      "verse": "10:21",
+      "lineIndex": 42
+    },
+    {
+      "start": 220.178,
+      "end": 223.011,
+      "type": "line",
+      "text": "And if ye have no hope ye must needs be in despair;",
+      "verse": "10:22",
+      "lineIndex": 43
+    },
+    {
+      "start": 223.191,
+      "end": 225.699,
+      "type": "line",
+      "text": "and despair cometh because of iniquity.",
+      "verse": "10:22",
+      "lineIndex": 44
+    },
+    {
+      "start": 226.379,
+      "end": 228.84,
+      "type": "line",
+      "text": "And Christ truly said unto our fathers:",
+      "verse": "10:23",
+      "lineIndex": 45
+    },
+    {
+      "start": 229.02,
+      "end": 232.782,
+      "type": "line",
+      "text": "If ye have faith ye can do all things which are expedient unto me.",
+      "verse": "10:23",
+      "lineIndex": 46
+    },
+    {
+      "start": 233.462,
+      "end": 236.434,
+      "type": "line",
+      "text": "And now I speak unto all the ends of the earth\u2014",
+      "verse": "10:24",
+      "lineIndex": 47
+    },
+    {
+      "start": 236.614,
+      "end": 244.741,
+      "type": "line",
+      "text": "that if the day cometh that the power and gifts of God shall be done away among you, it shall be because of unbelief.",
+      "verse": "10:24",
+      "lineIndex": 48
+    },
+    {
+      "start": 245.421,
+      "end": 252.759,
+      "type": "line",
+      "text": "And wo be unto the children of men if this be the case; for there shall be none that doeth good among you, no not one.",
+      "verse": "10:25",
+      "lineIndex": 49
+    },
+    {
+      "start": 252.939,
+      "end": 258.744,
+      "type": "line",
+      "text": "For if there be one among you that doeth good, he shall work by the power and gifts of God.",
+      "verse": "10:25",
+      "lineIndex": 50
+    },
+    {
+      "start": 259.424,
+      "end": 262.861,
+      "type": "line",
+      "text": "And wo unto them who shall do these things away and die,",
+      "verse": "10:26",
+      "lineIndex": 51
+    },
+    {
+      "start": 263.041,
+      "end": 264.852,
+      "type": "line",
+      "text": "for they die in their sins,",
+      "verse": "10:26",
+      "lineIndex": 52
+    },
+    {
+      "start": 265.032,
+      "end": 267.772,
+      "type": "line",
+      "text": "and they cannot be saved in the kingdom of God;",
+      "verse": "10:26",
+      "lineIndex": 53
+    },
+    {
+      "start": 267.952,
+      "end": 270.738,
+      "type": "line",
+      "text": "and I speak it according to the words of Christ;",
+      "verse": "10:26",
+      "lineIndex": 54
+    },
+    {
+      "start": 270.918,
+      "end": 272.218,
+      "type": "line",
+      "text": "and I lie not.",
+      "verse": "10:26",
+      "lineIndex": 55
+    },
+    {
+      "start": 272.898,
+      "end": 279.91,
+      "type": "line",
+      "text": "And I exhort you to remember these things; for the time speedily cometh that ye shall know that I lie not,",
+      "verse": "10:27",
+      "lineIndex": 56
+    },
+    {
+      "start": 280.09,
+      "end": 282.598,
+      "type": "line",
+      "text": "for ye shall see me at the bar of God;",
+      "verse": "10:27",
+      "lineIndex": 57
+    },
+    {
+      "start": 282.778,
+      "end": 285.007,
+      "type": "line",
+      "text": "and the Lord God will say unto you:",
+      "verse": "10:27",
+      "lineIndex": 58
+    },
+    {
+      "start": 285.187,
+      "end": 294.707,
+      "type": "line",
+      "text": "Did I not declare my words unto you, which were written by this man, like as one crying from the dead, yea, even as one speaking out of the dust?",
+      "verse": "10:27",
+      "lineIndex": 59
+    },
+    {
+      "start": 295.387,
+      "end": 299.056,
+      "type": "line",
+      "text": "I declare these things unto the fulfilling of the prophecies.",
+      "verse": "10:28",
+      "lineIndex": 60
+    },
+    {
+      "start": 299.236,
+      "end": 304.019,
+      "type": "line",
+      "text": "And behold, they shall proceed forth out of the mouth of the everlasting God;",
+      "verse": "10:28",
+      "lineIndex": 61
+    },
+    {
+      "start": 304.199,
+      "end": 307.543,
+      "type": "line",
+      "text": "and his word shall hiss forth from generation to generation.",
+      "verse": "10:28",
+      "lineIndex": 62
+    },
+    {
+      "start": 308.223,
+      "end": 312.031,
+      "type": "line",
+      "text": "And God shall show unto you, that that which I have written is true.",
+      "verse": "10:29",
+      "lineIndex": 63
+    },
+    {
+      "start": 312.711,
+      "end": 320.792,
+      "type": "line",
+      "text": "And again I would exhort you that ye would come unto Christ, and lay hold upon every good gift, and touch not the evil gift, nor the unclean thing.",
+      "verse": "10:30",
+      "lineIndex": 65
+    },
+    {
+      "start": 321.472,
+      "end": 324.862,
+      "type": "line",
+      "text": "And awake, and arise from the dust, O Jerusalem;",
+      "verse": "10:31",
+      "lineIndex": 66
+    },
+    {
+      "start": 325.042,
+      "end": 332.612,
+      "type": "line",
+      "text": "yea, and put on thy beautiful garments, O daughter of Zion; and strengthen thy stakes and enlarge thy borders forever,",
+      "verse": "10:31",
+      "lineIndex": 67
+    },
+    {
+      "start": 332.792,
+      "end": 335.253,
+      "type": "line",
+      "text": "that thou mayest no more be confounded,",
+      "verse": "10:31",
+      "lineIndex": 68
+    },
+    {
+      "start": 335.433,
+      "end": 343.003,
+      "type": "line",
+      "text": "that the covenants of the Eternal Father which he hath made unto thee, O house of Israel, may be fulfilled.",
+      "verse": "10:31",
+      "lineIndex": 69
+    },
+    {
+      "start": 343.683,
+      "end": 364.627,
+      "type": "line",
+      "text": "Yea, come unto Christ, and be perfected in him, and deny yourselves of all ungodliness; and if ye shall deny yourselves of all ungodliness, and love God with all your might, mind and strength, then is his grace sufficient for you, that by his grace ye may be perfect in Christ;",
+      "verse": "10:32",
+      "lineIndex": 70
+    },
+    {
+      "start": 364.807,
+      "end": 370.751,
+      "type": "line",
+      "text": "and if by the grace of God ye are perfect in Christ, ye can in nowise deny the power of God.",
+      "verse": "10:32",
+      "lineIndex": 71
+    },
+    {
+      "start": 371.431,
+      "end": 393.444,
+      "type": "line",
+      "text": "And again, if ye by the grace of God are perfect in Christ, and deny not his power, then are ye sanctified in Christ by the grace of God, through the shedding of the blood of Christ, which is in the covenant of the Father unto the remission of your sins, that ye become holy, without spot.",
+      "verse": "10:33",
+      "lineIndex": 72
+    },
+    {
+      "start": 394.124,
+      "end": 396.074,
+      "type": "line",
+      "text": "And now I bid unto all, farewell.",
+      "verse": "10:34",
+      "lineIndex": 73
+    },
+    {
+      "start": 396.254,
+      "end": 402.198,
+      "type": "line",
+      "text": "I soon go to rest in the paradise of God, until my spirit and body shall again reunite,",
+      "verse": "10:34",
+      "lineIndex": 74
+    },
+    {
+      "start": 402.378,
+      "end": 411.805,
+      "type": "line",
+      "text": "and I am brought forth triumphant through the air, to meet you before the pleasing bar of the great Jehovah, the Eternal Judge of both quick and dead.",
+      "verse": "10:34",
+      "lineIndex": 75
+    },
+    {
+      "start": 411.985,
+      "end": 412.821,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "10:34",
+      "lineIndex": 76
+    }
+  ]
+}

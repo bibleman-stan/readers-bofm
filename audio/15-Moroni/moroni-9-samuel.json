@@ -1,0 +1,616 @@
+{
+  "book": "moroni",
+  "bookName": "Moroni",
+  "chapter": 9,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 383.478,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.062,
+      "type": "line",
+      "text": "My beloved son, I write unto you again that ye may know that I am yet alive;",
+      "verse": "9:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.242,
+      "end": 8.771,
+      "type": "line",
+      "text": "but I write somewhat of that which is grievous.",
+      "verse": "9:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.451,
+      "end": 14.931,
+      "type": "line",
+      "text": "For behold, I have had a sore battle with the Lamanites, in which we did not conquer;",
+      "verse": "9:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 15.111,
+      "end": 20.684,
+      "type": "line",
+      "text": "and Archeantus has fallen by the sword, and also Luram and Emron;",
+      "verse": "9:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 20.864,
+      "end": 24.208,
+      "type": "line",
+      "text": "yea, and we have lost a great number of our choice men.",
+      "verse": "9:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 24.888,
+      "end": 29.439,
+      "type": "line",
+      "text": "And now behold, my son, I fear lest the Lamanites shall destroy this people;",
+      "verse": "9:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 29.619,
+      "end": 31.198,
+      "type": "line",
+      "text": "for they do not repent,",
+      "verse": "9:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 31.378,
+      "end": 35.325,
+      "type": "line",
+      "text": "and Satan stirreth them up continually to anger one with another.",
+      "verse": "9:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 36.005,
+      "end": 39.07,
+      "type": "line",
+      "text": "Behold, I am laboring with them continually;",
+      "verse": "9:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 39.25,
+      "end": 44.266,
+      "type": "line",
+      "text": "and when I speak the word of God with sharpness they tremble and anger against me;",
+      "verse": "9:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 44.446,
+      "end": 48.301,
+      "type": "line",
+      "text": "and when I use no sharpness they harden their hearts against it;",
+      "verse": "9:4",
+      "lineIndex": 11
+    },
+    {
+      "start": 48.481,
+      "end": 53.171,
+      "type": "line",
+      "text": "wherefore, I fear lest the Spirit of the Lord hath ceased striving with them.",
+      "verse": "9:4",
+      "lineIndex": 12
+    },
+    {
+      "start": 53.851,
+      "end": 56.219,
+      "type": "line",
+      "text": "For so exceedingly do they anger",
+      "verse": "9:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 56.399,
+      "end": 57.746,
+      "type": "line",
+      "text": "that it seemeth me",
+      "verse": "9:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 57.926,
+      "end": 59.923,
+      "type": "line",
+      "text": "that they have no fear of death;",
+      "verse": "9:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 60.103,
+      "end": 63.354,
+      "type": "line",
+      "text": "and they have lost their love, one towards another;",
+      "verse": "9:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 63.534,
+      "end": 66.924,
+      "type": "line",
+      "text": "and they thirst after blood and revenge continually.",
+      "verse": "9:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 67.604,
+      "end": 72.666,
+      "type": "line",
+      "text": "And now, my beloved son, notwithstanding their hardness, let us labor diligently;",
+      "verse": "9:6",
+      "lineIndex": 18
+    },
+    {
+      "start": 72.846,
+      "end": 77.908,
+      "type": "line",
+      "text": "for if we should cease to labor, we should be brought under condemnation;",
+      "verse": "9:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 78.088,
+      "end": 87.283,
+      "type": "line",
+      "text": "for we have a labor to perform whilst in this tabernacle of clay, that we may conquer the enemy of all righteousness, and rest our souls in the kingdom of God.",
+      "verse": "9:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 87.963,
+      "end": 92.096,
+      "type": "line",
+      "text": "And now I write somewhat concerning the sufferings of this people.",
+      "verse": "9:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 92.276,
+      "end": 101.518,
+      "type": "line",
+      "text": "For according to the knowledge which I have received from Amoron, behold, the Lamanites have many prisoners, which they took from the tower of Sherrizah;",
+      "verse": "9:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 101.698,
+      "end": 104.763,
+      "type": "line",
+      "text": "and there were men, women, and children.",
+      "verse": "9:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 105.443,
+      "end": 109.948,
+      "type": "line",
+      "text": "And the husbands and fathers of those women and children they have slain;",
+      "verse": "9:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 110.128,
+      "end": 113.657,
+      "type": "line",
+      "text": "and they feed the women upon the flesh of their husbands,",
+      "verse": "9:8",
+      "lineIndex": 26
+    },
+    {
+      "start": 113.837,
+      "end": 117.088,
+      "type": "line",
+      "text": "and the children upon the flesh of their fathers;",
+      "verse": "9:8",
+      "lineIndex": 27
+    },
+    {
+      "start": 117.268,
+      "end": 121.03,
+      "type": "line",
+      "text": "and no water, save a little, do they give unto them.",
+      "verse": "9:8",
+      "lineIndex": 28
+    },
+    {
+      "start": 121.71,
+      "end": 130.301,
+      "type": "line",
+      "text": "And notwithstanding this great abomination of the Lamanites, it doth not exceed that of our people in Moriantum. For",
+      "verse": "9:9",
+      "lineIndex": 29
+    },
+    {
+      "start": 130.481,
+      "end": 144.924,
+      "type": "line",
+      "text": "behold, many of the daughters of the Lamanites have they taken prisoners; and after depriving them of that which was most dear and precious above all things, which is chastity and virtue\u2014",
+      "verse": "9:9",
+      "lineIndex": 30
+    },
+    {
+      "start": 145.604,
+      "end": 152.709,
+      "type": "line",
+      "text": "And after they had done this thing, they did murder them in a most cruel manner, torturing their bodies even unto death;",
+      "verse": "9:10",
+      "lineIndex": 31
+    },
+    {
+      "start": 152.889,
+      "end": 159.669,
+      "type": "line",
+      "text": "and after they have done this, they devour their flesh like unto wild beasts, because of the hardness of their hearts;",
+      "verse": "9:10",
+      "lineIndex": 32
+    },
+    {
+      "start": 159.849,
+      "end": 162.31,
+      "type": "line",
+      "text": "and they do it for a token of bravery.",
+      "verse": "9:10",
+      "lineIndex": 33
+    },
+    {
+      "start": 162.99,
+      "end": 167.82,
+      "type": "line",
+      "text": "O my beloved son, how can a people like this, that are without civilization\u2014",
+      "verse": "9:11",
+      "lineIndex": 34
+    },
+    {
+      "start": 168.5,
+      "end": 174.351,
+      "type": "line",
+      "text": "(And only a few years have passed away, and they were a civil and a delightsome people)",
+      "verse": "9:12",
+      "lineIndex": 35
+    },
+    {
+      "start": 175.031,
+      "end": 179.675,
+      "type": "line",
+      "text": "But O my son, how can a people like this, whose delight is in so much abomination\u2014",
+      "verse": "9:13",
+      "lineIndex": 36
+    },
+    {
+      "start": 180.355,
+      "end": 184.395,
+      "type": "line",
+      "text": "How can we expect that God will stay his hand in judgment against us?",
+      "verse": "9:14",
+      "lineIndex": 37
+    },
+    {
+      "start": 185.075,
+      "end": 186.747,
+      "type": "line",
+      "text": "Behold, my heart cries:",
+      "verse": "9:15",
+      "lineIndex": 38
+    },
+    {
+      "start": 186.927,
+      "end": 188.506,
+      "type": "line",
+      "text": "Wo unto this people.",
+      "verse": "9:15",
+      "lineIndex": 39
+    },
+    {
+      "start": 188.686,
+      "end": 195.838,
+      "type": "line",
+      "text": "Come out in judgment, O God, and hide their sins, and wickedness, and abominations from before thy face!",
+      "verse": "9:15",
+      "lineIndex": 40
+    },
+    {
+      "start": 196.518,
+      "end": 202.137,
+      "type": "line",
+      "text": "And again, my son, there are many widows and their daughters who remain in Sherrizah;",
+      "verse": "9:16",
+      "lineIndex": 41
+    },
+    {
+      "start": 202.317,
+      "end": 212.952,
+      "type": "line",
+      "text": "and that part of the provisions which the Lamanites did not carry away, behold, the army of Zenephi has carried away, and left them to wander whithersoever they can for food;",
+      "verse": "9:16",
+      "lineIndex": 42
+    },
+    {
+      "start": 213.132,
+      "end": 216.197,
+      "type": "line",
+      "text": "and many old women do faint by the way and die.",
+      "verse": "9:16",
+      "lineIndex": 43
+    },
+    {
+      "start": 216.877,
+      "end": 224.958,
+      "type": "line",
+      "text": "And the army which is with me is weak; and the armies of the Lamanites are betwixt Sherrizah and me;",
+      "verse": "9:17",
+      "lineIndex": 44
+    },
+    {
+      "start": 225.138,
+      "end": 231.129,
+      "type": "line",
+      "text": "and as many as have fled to the army of Aaron have fallen victims to their awful brutality.",
+      "verse": "9:17",
+      "lineIndex": 45
+    },
+    {
+      "start": 231.809,
+      "end": 233.945,
+      "type": "line",
+      "text": "O the depravity of my people!",
+      "verse": "9:18",
+      "lineIndex": 46
+    },
+    {
+      "start": 234.125,
+      "end": 237.236,
+      "type": "line",
+      "text": "They are without order and without mercy.",
+      "verse": "9:18",
+      "lineIndex": 47
+    },
+    {
+      "start": 237.416,
+      "end": 239.274,
+      "type": "line",
+      "text": "Behold, I am but a man,",
+      "verse": "9:18",
+      "lineIndex": 48
+    },
+    {
+      "start": 239.454,
+      "end": 241.776,
+      "type": "line",
+      "text": "and I have but the strength of a man,",
+      "verse": "9:18",
+      "lineIndex": 49
+    },
+    {
+      "start": 241.956,
+      "end": 244.603,
+      "type": "line",
+      "text": "and I cannot any longer enforce my commands.",
+      "verse": "9:18",
+      "lineIndex": 50
+    },
+    {
+      "start": 245.283,
+      "end": 253.735,
+      "type": "line",
+      "text": "And they have become strong in their perversion; and they are alike brutal, sparing none, neither old nor young;",
+      "verse": "9:19",
+      "lineIndex": 51
+    },
+    {
+      "start": 253.915,
+      "end": 257.77,
+      "type": "line",
+      "text": "and they delight in everything save that which is good;",
+      "verse": "9:19",
+      "lineIndex": 52
+    },
+    {
+      "start": 257.95,
+      "end": 264.916,
+      "type": "line",
+      "text": "and the suffering of our women and our children upon all the face of this land doth exceed everything;",
+      "verse": "9:19",
+      "lineIndex": 53
+    },
+    {
+      "start": 265.096,
+      "end": 266.814,
+      "type": "line",
+      "text": "yea, tongue cannot tell,",
+      "verse": "9:19",
+      "lineIndex": 54
+    },
+    {
+      "start": 266.994,
+      "end": 268.573,
+      "type": "line",
+      "text": "neither can it be written.",
+      "verse": "9:19",
+      "lineIndex": 55
+    },
+    {
+      "start": 269.253,
+      "end": 272.55,
+      "type": "line",
+      "text": "And now, my son, I dwell no longer upon this horrible scene.",
+      "verse": "9:20",
+      "lineIndex": 56
+    },
+    {
+      "start": 272.73,
+      "end": 276.167,
+      "type": "line",
+      "text": "Behold, thou knowest the wickedness of this people;",
+      "verse": "9:20",
+      "lineIndex": 57
+    },
+    {
+      "start": 276.347,
+      "end": 279.83,
+      "type": "line",
+      "text": "thou knowest that they are without principle, and past feeling;",
+      "verse": "9:20",
+      "lineIndex": 58
+    },
+    {
+      "start": 280.01,
+      "end": 283.725,
+      "type": "line",
+      "text": "and their wickedness doth exceed that of the Lamanites.",
+      "verse": "9:20",
+      "lineIndex": 59
+    },
+    {
+      "start": 284.405,
+      "end": 289.653,
+      "type": "line",
+      "text": "Behold, my son, I cannot recommend them unto God lest he should smite me.",
+      "verse": "9:21",
+      "lineIndex": 60
+    },
+    {
+      "start": 290.333,
+      "end": 293.537,
+      "type": "line",
+      "text": "But behold, my son, I recommend thee unto God,",
+      "verse": "9:22",
+      "lineIndex": 62
+    },
+    {
+      "start": 293.717,
+      "end": 296.55,
+      "type": "line",
+      "text": "and I trust in Christ that thou wilt be saved;",
+      "verse": "9:22",
+      "lineIndex": 63
+    },
+    {
+      "start": 296.73,
+      "end": 304.811,
+      "type": "line",
+      "text": "and I pray unto God that he will spare thy life, to witness the return of his people unto him, or their utter destruction;",
+      "verse": "9:22",
+      "lineIndex": 64
+    },
+    {
+      "start": 304.991,
+      "end": 309.774,
+      "type": "line",
+      "text": "for I know that they must perish except they repent and return unto him.",
+      "verse": "9:22",
+      "lineIndex": 65
+    },
+    {
+      "start": 310.454,
+      "end": 318.535,
+      "type": "line",
+      "text": "And if they perish it will be like unto the Jaredites, because of the wilfulness of their hearts, seeking for blood and revenge.",
+      "verse": "9:23",
+      "lineIndex": 66
+    },
+    {
+      "start": 319.215,
+      "end": 326.831,
+      "type": "line",
+      "text": "And if it so be that they perish, we know that many of our brethren have deserted over unto the Lamanites,",
+      "verse": "9:24",
+      "lineIndex": 67
+    },
+    {
+      "start": 327.011,
+      "end": 330.54,
+      "type": "line",
+      "text": "and many more will also desert over unto them;",
+      "verse": "9:24",
+      "lineIndex": 68
+    },
+    {
+      "start": 330.72,
+      "end": 334.435,
+      "type": "line",
+      "text": "wherefore, write somewhat a few things, if thou art spared",
+      "verse": "9:24",
+      "lineIndex": 69
+    },
+    {
+      "start": 334.615,
+      "end": 336.798,
+      "type": "line",
+      "text": "and I shall perish and not see thee;",
+      "verse": "9:24",
+      "lineIndex": 70
+    },
+    {
+      "start": 336.978,
+      "end": 339.114,
+      "type": "line",
+      "text": "but I trust that I may see thee soon;",
+      "verse": "9:24",
+      "lineIndex": 71
+    },
+    {
+      "start": 339.294,
+      "end": 342.87,
+      "type": "line",
+      "text": "for I have sacred records that I would deliver up unto thee.",
+      "verse": "9:24",
+      "lineIndex": 72
+    },
+    {
+      "start": 343.55,
+      "end": 351.491,
+      "type": "line",
+      "text": "My son, be faithful in Christ; and may not the things which I have written grieve thee, to weigh thee down unto death;",
+      "verse": "9:25",
+      "lineIndex": 73
+    },
+    {
+      "start": 351.671,
+      "end": 367.786,
+      "type": "line",
+      "text": "but may Christ lift thee up, and may his sufferings and death, and the showing his body unto our fathers, and his mercy and long-suffering, and the hope of his glory and of eternal life, rest in your mind forever.",
+      "verse": "9:25",
+      "lineIndex": 74
+    },
+    {
+      "start": 368.466,
+      "end": 381.794,
+      "type": "line",
+      "text": "And may the grace of God the Father, whose throne is high in the heavens, and our Lord Jesus Christ, who sitteth on the right hand of his power, until all things shall become subject unto him, be, and abide with you forever.",
+      "verse": "9:26",
+      "lineIndex": 75
+    },
+    {
+      "start": 381.974,
+      "end": 382.81,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "9:26",
+      "lineIndex": 76
+    }
+  ]
+}
