@@ -1,0 +1,640 @@
+{
+  "book": "ether",
+  "bookName": "Ether",
+  "chapter": 15,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 468.915,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.802,
+      "type": "line",
+      "text": "And it came to pass when Coriantumr had recovered of his wounds, he began to remember the words which Ether had spoken unto him.",
+      "verse": "15:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 8.482,
+      "end": 13.683,
+      "type": "line",
+      "text": "He saw that there had been slain by the sword already nearly two millions of his people,",
+      "verse": "15:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 13.863,
+      "end": 16.324,
+      "type": "line",
+      "text": "and he began to sorrow in his heart;",
+      "verse": "15:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 16.504,
+      "end": 22.727,
+      "type": "line",
+      "text": "yea, there had been slain two millions of mighty men, and also their wives and their children.",
+      "verse": "15:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 23.407,
+      "end": 26.472,
+      "type": "line",
+      "text": "He began to repent of the evil which he had done;",
+      "verse": "15:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 26.652,
+      "end": 31.668,
+      "type": "line",
+      "text": "he began to remember the words which had been spoken by the mouth of all the prophets,",
+      "verse": "15:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 31.848,
+      "end": 36.585,
+      "type": "line",
+      "text": "and he saw them that they were fulfilled thus far, every whit;",
+      "verse": "15:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 36.765,
+      "end": 39.969,
+      "type": "line",
+      "text": "and his soul mourned and refused to be comforted.",
+      "verse": "15:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 40.649,
+      "end": 50.309,
+      "type": "line",
+      "text": "And it came to pass that he wrote an epistle unto Shiz, desiring him that he would spare the people, and he would give up the kingdom for the sake of the lives of the people.",
+      "verse": "15:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 50.989,
+      "end": 59.72,
+      "type": "line",
+      "text": "And it came to pass that when Shiz had received his epistle he wrote an epistle unto Coriantumr, that if he would give himself up,",
+      "verse": "15:5",
+      "lineIndex": 10
+    },
+    {
+      "start": 59.9,
+      "end": 62.594,
+      "type": "line",
+      "text": "that he might slay him with his own sword,",
+      "verse": "15:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 62.774,
+      "end": 65.142,
+      "type": "line",
+      "text": "that he would spare the lives of the people.",
+      "verse": "15:5",
+      "lineIndex": 12
+    },
+    {
+      "start": 65.822,
+      "end": 70.512,
+      "type": "line",
+      "text": "And it came to pass that the people repented not of their iniquity;",
+      "verse": "15:6",
+      "lineIndex": 13
+    },
+    {
+      "start": 70.692,
+      "end": 75.568,
+      "type": "line",
+      "text": "and the people of Coriantumr were stirred up to anger against the people of Shiz;",
+      "verse": "15:6",
+      "lineIndex": 14
+    },
+    {
+      "start": 75.748,
+      "end": 80.717,
+      "type": "line",
+      "text": "and the people of Shiz were stirred up to anger against the people of Coriantumr;",
+      "verse": "15:6",
+      "lineIndex": 15
+    },
+    {
+      "start": 80.897,
+      "end": 85.169,
+      "type": "line",
+      "text": "wherefore, the people of Shiz did give battle unto the people of Coriantumr.",
+      "verse": "15:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 85.849,
+      "end": 92.118,
+      "type": "line",
+      "text": "And when Coriantumr saw that he was about to fall he fled again before the people of Shiz.",
+      "verse": "15:7",
+      "lineIndex": 17
+    },
+    {
+      "start": 92.798,
+      "end": 100.136,
+      "type": "line",
+      "text": "And it came to pass that he came to the waters of Ripliancum, which, by interpretation, is large, or to exceed all;",
+      "verse": "15:8",
+      "lineIndex": 18
+    },
+    {
+      "start": 100.316,
+      "end": 104.867,
+      "type": "line",
+      "text": "wherefore, when they came to these waters they pitched their tents;",
+      "verse": "15:8",
+      "lineIndex": 19
+    },
+    {
+      "start": 105.047,
+      "end": 108.251,
+      "type": "line",
+      "text": "and Shiz also pitched his tents near unto them;",
+      "verse": "15:8",
+      "lineIndex": 20
+    },
+    {
+      "start": 108.431,
+      "end": 111.45,
+      "type": "line",
+      "text": "and therefore on the morrow they did come to battle.",
+      "verse": "15:8",
+      "lineIndex": 21
+    },
+    {
+      "start": 112.13,
+      "end": 121.557,
+      "type": "line",
+      "text": "And it came to pass that they fought an exceedingly sore battle, in which Coriantumr was wounded again, and he fainted with the loss of blood.",
+      "verse": "15:9",
+      "lineIndex": 22
+    },
+    {
+      "start": 122.237,
+      "end": 128.831,
+      "type": "line",
+      "text": "And it came to pass that the armies of Coriantumr did press upon the armies of Shiz",
+      "verse": "15:10",
+      "lineIndex": 23
+    },
+    {
+      "start": 129.011,
+      "end": 130.544,
+      "type": "line",
+      "text": "that they beat them,",
+      "verse": "15:10",
+      "lineIndex": 24
+    },
+    {
+      "start": 130.724,
+      "end": 139.501,
+      "type": "line",
+      "text": "that they caused them to flee before them; and they did flee southward, and did pitch their tents in a place which was called Ogath.",
+      "verse": "15:10",
+      "lineIndex": 25
+    },
+    {
+      "start": 140.181,
+      "end": 153.741,
+      "type": "line",
+      "text": "And it came to pass that the army of Coriantumr did pitch their tents by the hill Ramah; and it was that same hill where my father Mormon did hide up the records unto the Lord, which were sacred.",
+      "verse": "15:11",
+      "lineIndex": 27
+    },
+    {
+      "start": 154.421,
+      "end": 163.895,
+      "type": "line",
+      "text": "And it came to pass that they did gather together all the people upon all the face of the land, who had not been slain, save it was Ether.",
+      "verse": "15:12",
+      "lineIndex": 28
+    },
+    {
+      "start": 164.575,
+      "end": 176.882,
+      "type": "line",
+      "text": "And it came to pass that Ether did behold all the doings of the people; and he beheld that the people who were for Coriantumr were gathered together to the army of Coriantumr;",
+      "verse": "15:13",
+      "lineIndex": 29
+    },
+    {
+      "start": 177.062,
+      "end": 181.892,
+      "type": "line",
+      "text": "and the people who were for Shiz were gathered together to the army of Shiz.",
+      "verse": "15:13",
+      "lineIndex": 30
+    },
+    {
+      "start": 182.572,
+      "end": 187.727,
+      "type": "line",
+      "text": "Wherefore, they were for the space of four years gathering together the people,",
+      "verse": "15:14",
+      "lineIndex": 31
+    },
+    {
+      "start": 187.907,
+      "end": 191.947,
+      "type": "line",
+      "text": "that they might get all who were upon the face of the land,",
+      "verse": "15:14",
+      "lineIndex": 32
+    },
+    {
+      "start": 192.127,
+      "end": 196.028,
+      "type": "line",
+      "text": "and that they might receive all the strength which it was possible",
+      "verse": "15:14",
+      "lineIndex": 33
+    },
+    {
+      "start": 196.208,
+      "end": 197.694,
+      "type": "line",
+      "text": "that they could receive.",
+      "verse": "15:14",
+      "lineIndex": 34
+    },
+    {
+      "start": 198.374,
+      "end": 218.065,
+      "type": "line",
+      "text": "And it came to pass that when they were all gathered together, every one to the army which he would, with their wives and their children\u2014both men, women and children being armed with weapons of war, having shields, and breastplates, and head-plates,",
+      "verse": "15:15",
+      "lineIndex": 35
+    },
+    {
+      "start": 218.245,
+      "end": 221.031,
+      "type": "line",
+      "text": "and being clothed after the manner of war",
+      "verse": "15:15",
+      "lineIndex": 36
+    },
+    {
+      "start": 221.211,
+      "end": 226.83,
+      "type": "line",
+      "text": "\u2014they did march forth one against another to battle; and they fought all that day, and conquered not.",
+      "verse": "15:15",
+      "lineIndex": 37
+    },
+    {
+      "start": 227.51,
+      "end": 250.219,
+      "type": "line",
+      "text": "And it came to pass that when it was night they were weary, and retired to their camps; and after they had retired to their camps they took up a howling and a lamentation for the loss of the slain of their people; and so great were their cries, their howlings and lamentations, that they did rend the air exceedingly.",
+      "verse": "15:16",
+      "lineIndex": 38
+    },
+    {
+      "start": 250.899,
+      "end": 261.487,
+      "type": "line",
+      "text": "And it came to pass that on the morrow they did go again to battle, and great and terrible was that day; nevertheless, they conquered not,",
+      "verse": "15:17",
+      "lineIndex": 39
+    },
+    {
+      "start": 261.667,
+      "end": 272.023,
+      "type": "line",
+      "text": "and when the night came again they did rend the air with their cries, and their howlings, and their mournings, for the loss of the slain of their people.",
+      "verse": "15:17",
+      "lineIndex": 40
+    },
+    {
+      "start": 272.703,
+      "end": 285.567,
+      "type": "line",
+      "text": "And it came to pass that Coriantumr wrote again an epistle unto Shiz, desiring that he would not come again to battle, but that he would take the kingdom, and spare the lives of the people.",
+      "verse": "15:18",
+      "lineIndex": 41
+    },
+    {
+      "start": 286.247,
+      "end": 290.241,
+      "type": "line",
+      "text": "But behold, the Spirit of the Lord had ceased striving with them,",
+      "verse": "15:19",
+      "lineIndex": 42
+    },
+    {
+      "start": 290.421,
+      "end": 293.811,
+      "type": "line",
+      "text": "and Satan had full power over the hearts of the people;",
+      "verse": "15:19",
+      "lineIndex": 43
+    },
+    {
+      "start": 293.991,
+      "end": 299.703,
+      "type": "line",
+      "text": "for they were given up unto the hardness of their hearts, and the blindness of their minds that they might be destroyed;",
+      "verse": "15:19",
+      "lineIndex": 44
+    },
+    {
+      "start": 299.883,
+      "end": 302.391,
+      "type": "line",
+      "text": "wherefore they went again to battle.",
+      "verse": "15:19",
+      "lineIndex": 45
+    },
+    {
+      "start": 303.071,
+      "end": 309.34,
+      "type": "line",
+      "text": "And it came to pass that they fought all that day, and when the night came they slept upon their swords.",
+      "verse": "15:20",
+      "lineIndex": 46
+    },
+    {
+      "start": 310.02,
+      "end": 313.178,
+      "type": "line",
+      "text": "And on the morrow they fought even until the night came.",
+      "verse": "15:21",
+      "lineIndex": 47
+    },
+    {
+      "start": 313.858,
+      "end": 319.895,
+      "type": "line",
+      "text": "And when the night came they were drunken with anger, even as a man who is drunken with wine;",
+      "verse": "15:22",
+      "lineIndex": 48
+    },
+    {
+      "start": 320.075,
+      "end": 322.351,
+      "type": "line",
+      "text": "and they slept again upon their swords.",
+      "verse": "15:22",
+      "lineIndex": 49
+    },
+    {
+      "start": 323.031,
+      "end": 325.167,
+      "type": "line",
+      "text": "And on the morrow they fought again;",
+      "verse": "15:23",
+      "lineIndex": 50
+    },
+    {
+      "start": 325.347,
+      "end": 329.062,
+      "type": "line",
+      "text": "and when the night came they had all fallen by the sword save",
+      "verse": "15:23",
+      "lineIndex": 51
+    },
+    {
+      "start": 329.242,
+      "end": 334.629,
+      "type": "line",
+      "text": "it were fifty and two of the people of Coriantumr, and sixty and nine of the people of Shiz.",
+      "verse": "15:23",
+      "lineIndex": 52
+    },
+    {
+      "start": 335.309,
+      "end": 340.928,
+      "type": "line",
+      "text": "And it came to pass that they slept upon their swords that night, and on the morrow they fought again,",
+      "verse": "15:24",
+      "lineIndex": 53
+    },
+    {
+      "start": 341.108,
+      "end": 346.634,
+      "type": "line",
+      "text": "and they contended in their might with their swords and with their shields, all that day.",
+      "verse": "15:24",
+      "lineIndex": 54
+    },
+    {
+      "start": 347.314,
+      "end": 355.673,
+      "type": "line",
+      "text": "And when the night came there were thirty and two of the people of Shiz, and twenty and seven of the people of Coriantumr.",
+      "verse": "15:25",
+      "lineIndex": 56
+    },
+    {
+      "start": 356.353,
+      "end": 364.526,
+      "type": "line",
+      "text": "And it came to pass that they ate and slept, and prepared for death on the morrow. And they were large and mighty men as to the strength of men.",
+      "verse": "15:26",
+      "lineIndex": 57
+    },
+    {
+      "start": 365.206,
+      "end": 371.29,
+      "type": "line",
+      "text": "And it came to pass that they fought for the space of three hours, and they fainted with the loss of blood.",
+      "verse": "15:27",
+      "lineIndex": 58
+    },
+    {
+      "start": 371.97,
+      "end": 381.49,
+      "type": "line",
+      "text": "And it came to pass that when the men of Coriantumr had received sufficient strength that they could walk, they were about to flee for their lives;",
+      "verse": "15:28",
+      "lineIndex": 59
+    },
+    {
+      "start": 381.67,
+      "end": 385.06,
+      "type": "line",
+      "text": "but behold, Shiz arose, and also his men,",
+      "verse": "15:28",
+      "lineIndex": 60
+    },
+    {
+      "start": 385.24,
+      "end": 388.63,
+      "type": "line",
+      "text": "and he swore in his wrath that he would slay Coriantumr",
+      "verse": "15:28",
+      "lineIndex": 61
+    },
+    {
+      "start": 388.81,
+      "end": 391.364,
+      "type": "line",
+      "text": "or he would perish by the sword.",
+      "verse": "15:28",
+      "lineIndex": 62
+    },
+    {
+      "start": 392.044,
+      "end": 394.18,
+      "type": "line",
+      "text": "Wherefore, he did pursue them,",
+      "verse": "15:29",
+      "lineIndex": 63
+    },
+    {
+      "start": 394.36,
+      "end": 396.868,
+      "type": "line",
+      "text": "and on the morrow he did overtake them;",
+      "verse": "15:29",
+      "lineIndex": 64
+    },
+    {
+      "start": 397.048,
+      "end": 399.602,
+      "type": "line",
+      "text": "and they fought again with the sword.",
+      "verse": "15:29",
+      "lineIndex": 65
+    },
+    {
+      "start": 399.782,
+      "end": 409.859,
+      "type": "line",
+      "text": "And it came to pass that when they had all fallen by the sword, save it were Coriantumr and Shiz, behold Shiz had fainted with the loss of blood.",
+      "verse": "15:29",
+      "lineIndex": 66
+    },
+    {
+      "start": 410.539,
+      "end": 418.527,
+      "type": "line",
+      "text": "And it came to pass that when Coriantumr had leaned upon his sword, that he rested a little, he smote off the head of Shiz.",
+      "verse": "15:30",
+      "lineIndex": 67
+    },
+    {
+      "start": 419.207,
+      "end": 425.709,
+      "type": "line",
+      "text": "And it came to pass that after he had smitten off the head of Shiz, that Shiz raised up on his hands and fell;",
+      "verse": "15:31",
+      "lineIndex": 68
+    },
+    {
+      "start": 425.889,
+      "end": 428.861,
+      "type": "line",
+      "text": "and after that he had struggled for breath, he died.",
+      "verse": "15:31",
+      "lineIndex": 69
+    },
+    {
+      "start": 429.541,
+      "end": 434.603,
+      "type": "line",
+      "text": "And it came to pass that Coriantumr fell to the earth, and became as if he had no life.",
+      "verse": "15:32",
+      "lineIndex": 71
+    },
+    {
+      "start": 435.283,
+      "end": 438.812,
+      "type": "line",
+      "text": "And the Lord spake unto Ether, and said unto him: Go forth.",
+      "verse": "15:33",
+      "lineIndex": 72
+    },
+    {
+      "start": 438.992,
+      "end": 443.45,
+      "type": "line",
+      "text": "And he went forth, and beheld that the words of the Lord had all been fulfilled;",
+      "verse": "15:33",
+      "lineIndex": 73
+    },
+    {
+      "start": 443.63,
+      "end": 445.441,
+      "type": "line",
+      "text": "and he finished his record;",
+      "verse": "15:33",
+      "lineIndex": 74
+    },
+    {
+      "start": 445.621,
+      "end": 452.262,
+      "type": "line",
+      "text": "(and the hundredth part I have not written) and he hid them in a manner that the people of Limhi did find them.",
+      "verse": "15:33",
+      "lineIndex": 75
+    },
+    {
+      "start": 452.942,
+      "end": 456.425,
+      "type": "line",
+      "text": "Now the last words which are written by Ether are these:",
+      "verse": "15:34",
+      "lineIndex": 76
+    },
+    {
+      "start": 456.605,
+      "end": 459.252,
+      "type": "line",
+      "text": "Whether the Lord will that I be translated,",
+      "verse": "15:34",
+      "lineIndex": 77
+    },
+    {
+      "start": 459.432,
+      "end": 464.54,
+      "type": "line",
+      "text": "or that I suffer the will of the Lord in the flesh, it mattereth not, if it so be",
+      "verse": "15:34",
+      "lineIndex": 78
+    },
+    {
+      "start": 464.72,
+      "end": 467.228,
+      "type": "line",
+      "text": "that I am saved in the kingdom of God.",
+      "verse": "15:34",
+      "lineIndex": 79
+    },
+    {
+      "start": 467.408,
+      "end": 468.244,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "15:34",
+      "lineIndex": 80
+    }
+  ]
+}
