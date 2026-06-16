@@ -1,0 +1,776 @@
+{
+  "book": "mormon",
+  "bookName": "Mormon",
+  "chapter": 9,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 562.034,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.762,
+      "type": "line",
+      "text": "And now, I speak also concerning those who do not believe in Christ.",
+      "verse": "9:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 4.442,
+      "end": 16.609,
+      "type": "line",
+      "text": "Behold, will ye believe in the day of your visitation\u2014behold, when the Lord shall come, yea, even that great day when the earth shall be rolled together as a scroll,",
+      "verse": "9:2",
+      "lineIndex": 2
+    },
+    {
+      "start": 16.789,
+      "end": 19.808,
+      "type": "line",
+      "text": "and the elements shall melt with fervent heat,",
+      "verse": "9:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 19.988,
+      "end": 24.446,
+      "type": "line",
+      "text": "yea, in that great day when ye shall be brought to stand before the Lamb of God\u2014",
+      "verse": "9:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 24.626,
+      "end": 26.716,
+      "type": "line",
+      "text": "then will ye say that there is no God?",
+      "verse": "9:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 27.396,
+      "end": 29.672,
+      "type": "line",
+      "text": "Then will ye longer deny the Christ,",
+      "verse": "9:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 29.852,
+      "end": 32.081,
+      "type": "line",
+      "text": "or can ye behold the Lamb of God?",
+      "verse": "9:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 32.261,
+      "end": 37.323,
+      "type": "line",
+      "text": "Do ye suppose that ye shall dwell with him under a consciousness of your guilt?",
+      "verse": "9:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 37.503,
+      "end": 47.534,
+      "type": "line",
+      "text": "Do ye suppose that ye could be happy to dwell with that holy Being, when your souls are racked with a consciousness of guilt that ye have ever abused his laws?",
+      "verse": "9:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 48.214,
+      "end": 64.7,
+      "type": "line",
+      "text": "Behold, I say unto you that ye would be more miserable to dwell with a holy and just God, under a consciousness of your filthiness before him, than ye would to dwell with the damned souls in hell.",
+      "verse": "9:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 65.38,
+      "end": 78.476,
+      "type": "line",
+      "text": "For behold, when ye shall be brought to see your nakedness before God, and also the glory of God, and the holiness of Jesus Christ, it will kindle a flame of unquenchable fire upon you.",
+      "verse": "9:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 79.156,
+      "end": 93.692,
+      "type": "line",
+      "text": "O then ye unbelieving, turn ye unto the Lord; cry mightily unto the Father in the name of Jesus, that perhaps ye may be found spotless, pure, fair, and white, having been cleansed by the blood of the Lamb, at that great and last day.",
+      "verse": "9:6",
+      "lineIndex": 12
+    },
+    {
+      "start": 94.372,
+      "end": 110.672,
+      "type": "line",
+      "text": "And again I speak unto you who deny the revelations of God, and say that they are done away, that there are no revelations, nor prophecies, nor gifts, nor healing, nor speaking with tongues, and the interpretation of tongues;",
+      "verse": "9:7",
+      "lineIndex": 14
+    },
+    {
+      "start": 111.352,
+      "end": 113.024,
+      "type": "line",
+      "text": "Behold I say unto you,",
+      "verse": "9:8",
+      "lineIndex": 15
+    },
+    {
+      "start": 113.204,
+      "end": 116.78,
+      "type": "line",
+      "text": "he that denieth these things knoweth not the gospel of Christ;",
+      "verse": "9:8",
+      "lineIndex": 16
+    },
+    {
+      "start": 116.96,
+      "end": 119.143,
+      "type": "line",
+      "text": "yea, he has not read the scriptures;",
+      "verse": "9:8",
+      "lineIndex": 17
+    },
+    {
+      "start": 119.323,
+      "end": 121.645,
+      "type": "line",
+      "text": "if so, he does not understand them.",
+      "verse": "9:8",
+      "lineIndex": 18
+    },
+    {
+      "start": 122.325,
+      "end": 127.341,
+      "type": "line",
+      "text": "For do we not read that God is the same yesterday, today, and forever,",
+      "verse": "9:9",
+      "lineIndex": 19
+    },
+    {
+      "start": 127.521,
+      "end": 131.793,
+      "type": "line",
+      "text": "and in him there is no variableness neither shadow of changing?",
+      "verse": "9:9",
+      "lineIndex": 20
+    },
+    {
+      "start": 132.473,
+      "end": 137.628,
+      "type": "line",
+      "text": "And now, if ye have imagined up unto yourselves a god who doth vary,",
+      "verse": "9:10",
+      "lineIndex": 21
+    },
+    {
+      "start": 137.808,
+      "end": 140.409,
+      "type": "line",
+      "text": "and in whom there is shadow of changing,",
+      "verse": "9:10",
+      "lineIndex": 22
+    },
+    {
+      "start": 140.589,
+      "end": 145.558,
+      "type": "line",
+      "text": "then have ye imagined up unto yourselves a god who is not a God of miracles.",
+      "verse": "9:10",
+      "lineIndex": 23
+    },
+    {
+      "start": 146.238,
+      "end": 162.167,
+      "type": "line",
+      "text": "But behold, I will show unto you a God of miracles, even the God of Abraham, and the God of Isaac, and the God of Jacob; and it is that same God who created the heavens and the earth, and all things that in them are.",
+      "verse": "9:11",
+      "lineIndex": 24
+    },
+    {
+      "start": 162.847,
+      "end": 175.2,
+      "type": "line",
+      "text": "Behold, he created Adam, and by Adam came the fall of man. And because of the fall of man came Jesus Christ, even the Father and the Son; and because of Jesus Christ came the redemption of man.",
+      "verse": "9:12",
+      "lineIndex": 25
+    },
+    {
+      "start": 175.88,
+      "end": 182.149,
+      "type": "line",
+      "text": "And because of the redemption of man, which came by Jesus Christ, they are brought back into the presence of the Lord;",
+      "verse": "9:13",
+      "lineIndex": 26
+    },
+    {
+      "start": 182.329,
+      "end": 198.954,
+      "type": "line",
+      "text": "yea, this is wherein all men are redeemed, because the death of Christ bringeth to pass the resurrection, which bringeth to pass a redemption from an endless sleep, from which sleep all men shall be awakened by the power of God when the trump shall sound;",
+      "verse": "9:13",
+      "lineIndex": 27
+    },
+    {
+      "start": 199.134,
+      "end": 201.967,
+      "type": "line",
+      "text": "and they shall come forth, both small and great,",
+      "verse": "9:13",
+      "lineIndex": 28
+    },
+    {
+      "start": 202.147,
+      "end": 209.856,
+      "type": "line",
+      "text": "and all shall stand before his bar, being redeemed and loosed from this eternal band of death, which death is a temporal death.",
+      "verse": "9:13",
+      "lineIndex": 29
+    },
+    {
+      "start": 210.536,
+      "end": 221.635,
+      "type": "line",
+      "text": "And then cometh the judgment of the Holy One upon them; and then cometh the time that he that is filthy shall be filthy still; and he that is righteous shall be righteous still;",
+      "verse": "9:14",
+      "lineIndex": 30
+    },
+    {
+      "start": 221.815,
+      "end": 224.276,
+      "type": "line",
+      "text": "he that is happy shall be happy still;",
+      "verse": "9:14",
+      "lineIndex": 31
+    },
+    {
+      "start": 224.456,
+      "end": 227.01,
+      "type": "line",
+      "text": "and he that is unhappy shall be unhappy still.",
+      "verse": "9:14",
+      "lineIndex": 32
+    },
+    {
+      "start": 227.69,
+      "end": 237.21,
+      "type": "line",
+      "text": "And now, O all ye that have imagined up unto yourselves a god who can do no miracles, I would ask of you, have all these things passed, of which I have spoken?",
+      "verse": "9:15",
+      "lineIndex": 34
+    },
+    {
+      "start": 237.39,
+      "end": 238.737,
+      "type": "line",
+      "text": "Has the end come yet?",
+      "verse": "9:15",
+      "lineIndex": 35
+    },
+    {
+      "start": 238.917,
+      "end": 240.728,
+      "type": "line",
+      "text": "Behold I say unto you, Nay;",
+      "verse": "9:15",
+      "lineIndex": 36
+    },
+    {
+      "start": 240.908,
+      "end": 243.694,
+      "type": "line",
+      "text": "and God has not ceased to be a God of miracles.",
+      "verse": "9:15",
+      "lineIndex": 37
+    },
+    {
+      "start": 244.374,
+      "end": 248.786,
+      "type": "line",
+      "text": "Behold, are not the things that God hath wrought marvelous in our eyes?",
+      "verse": "9:16",
+      "lineIndex": 38
+    },
+    {
+      "start": 248.966,
+      "end": 252.077,
+      "type": "line",
+      "text": "Yea, and who can comprehend the marvelous works of God?",
+      "verse": "9:16",
+      "lineIndex": 39
+    },
+    {
+      "start": 252.757,
+      "end": 258.608,
+      "type": "line",
+      "text": "Who shall say that it was not a miracle that by his word the heaven and the earth should be;",
+      "verse": "9:17",
+      "lineIndex": 40
+    },
+    {
+      "start": 258.788,
+      "end": 264.454,
+      "type": "line",
+      "text": "and by the power of his word man was created of the dust of the earth;",
+      "verse": "9:17",
+      "lineIndex": 41
+    },
+    {
+      "start": 264.634,
+      "end": 267.699,
+      "type": "line",
+      "text": "and by the power of his word have miracles been wrought?",
+      "verse": "9:17",
+      "lineIndex": 42
+    },
+    {
+      "start": 268.379,
+      "end": 273.302,
+      "type": "line",
+      "text": "And who shall say that Jesus Christ did not do many mighty miracles?",
+      "verse": "9:18",
+      "lineIndex": 43
+    },
+    {
+      "start": 273.482,
+      "end": 278.126,
+      "type": "line",
+      "text": "And there were many mighty miracles wrought by the hands of the apostles.",
+      "verse": "9:18",
+      "lineIndex": 44
+    },
+    {
+      "start": 278.806,
+      "end": 285.726,
+      "type": "line",
+      "text": "And if there were miracles wrought then, why has God ceased to be a God of miracles and yet be an unchangeable Being?",
+      "verse": "9:19",
+      "lineIndex": 45
+    },
+    {
+      "start": 285.906,
+      "end": 287.949,
+      "type": "line",
+      "text": "And behold, I say unto you",
+      "verse": "9:19",
+      "lineIndex": 46
+    },
+    {
+      "start": 288.129,
+      "end": 289.708,
+      "type": "line",
+      "text": "he changeth not;",
+      "verse": "9:19",
+      "lineIndex": 47
+    },
+    {
+      "start": 289.888,
+      "end": 292.024,
+      "type": "line",
+      "text": "if so he would cease to be God;",
+      "verse": "9:19",
+      "lineIndex": 48
+    },
+    {
+      "start": 292.204,
+      "end": 296.012,
+      "type": "line",
+      "text": "and he ceaseth not to be God, and is a God of miracles.",
+      "verse": "9:19",
+      "lineIndex": 49
+    },
+    {
+      "start": 296.692,
+      "end": 307.745,
+      "type": "line",
+      "text": "And the reason why he ceaseth to do miracles among the children of men is because that they dwindle in unbelief, and depart from the right way, and know not the God in whom they should trust.",
+      "verse": "9:20",
+      "lineIndex": 50
+    },
+    {
+      "start": 308.425,
+      "end": 316.552,
+      "type": "line",
+      "text": "Behold, I say unto you that whoso believeth in Christ, doubting nothing, whatsoever he shall ask the Father in the name of Christ",
+      "verse": "9:21",
+      "lineIndex": 51
+    },
+    {
+      "start": 316.732,
+      "end": 321.84,
+      "type": "line",
+      "text": "it shall be granted him; and this promise is unto all, even unto the ends of the earth.",
+      "verse": "9:21",
+      "lineIndex": 52
+    },
+    {
+      "start": 322.52,
+      "end": 332.876,
+      "type": "line",
+      "text": "For behold, thus said Jesus Christ, the Son of God, unto his disciples who should tarry, yea, and also to all his disciples, in the hearing of the multitude:",
+      "verse": "9:22",
+      "lineIndex": 53
+    },
+    {
+      "start": 333.056,
+      "end": 336.864,
+      "type": "line",
+      "text": "Go ye into all the world, and preach the gospel to every creature;",
+      "verse": "9:22",
+      "lineIndex": 54
+    },
+    {
+      "start": 337.544,
+      "end": 343.07,
+      "type": "line",
+      "text": "And he that believeth and is baptized shall be saved, but he that believeth not shall be damned;",
+      "verse": "9:23",
+      "lineIndex": 55
+    },
+    {
+      "start": 343.75,
+      "end": 345.747,
+      "type": "line",
+      "text": "And these signs shall follow them",
+      "verse": "9:24",
+      "lineIndex": 57
+    },
+    {
+      "start": 345.927,
+      "end": 347.134,
+      "type": "line",
+      "text": "that believe",
+      "verse": "9:24",
+      "lineIndex": 58
+    },
+    {
+      "start": 347.314,
+      "end": 350.147,
+      "type": "line",
+      "text": "\u2014in my name shall they cast out devils;",
+      "verse": "9:24",
+      "lineIndex": 59
+    },
+    {
+      "start": 350.327,
+      "end": 352.277,
+      "type": "line",
+      "text": "they shall speak with new tongues;",
+      "verse": "9:24",
+      "lineIndex": 60
+    },
+    {
+      "start": 352.457,
+      "end": 354.361,
+      "type": "line",
+      "text": "they shall take up serpents;",
+      "verse": "9:24",
+      "lineIndex": 61
+    },
+    {
+      "start": 354.541,
+      "end": 357.652,
+      "type": "line",
+      "text": "and if they drink any deadly thing it shall not hurt them;",
+      "verse": "9:24",
+      "lineIndex": 62
+    },
+    {
+      "start": 357.832,
+      "end": 359.922,
+      "type": "line",
+      "text": "they shall lay hands on the sick",
+      "verse": "9:24",
+      "lineIndex": 63
+    },
+    {
+      "start": 360.102,
+      "end": 361.727,
+      "type": "line",
+      "text": "and they shall recover;",
+      "verse": "9:24",
+      "lineIndex": 64
+    },
+    {
+      "start": 362.407,
+      "end": 365.611,
+      "type": "line",
+      "text": "And whosoever shall believe in my name, doubting nothing,",
+      "verse": "9:25",
+      "lineIndex": 65
+    },
+    {
+      "start": 365.791,
+      "end": 370.249,
+      "type": "line",
+      "text": "unto him will I confirm all my words, even unto the ends of the earth.",
+      "verse": "9:25",
+      "lineIndex": 66
+    },
+    {
+      "start": 370.929,
+      "end": 374.18,
+      "type": "line",
+      "text": "And now, behold, who can stand against the works of the Lord?",
+      "verse": "9:26",
+      "lineIndex": 67
+    },
+    {
+      "start": 374.36,
+      "end": 376.078,
+      "type": "line",
+      "text": "Who can deny his sayings?",
+      "verse": "9:26",
+      "lineIndex": 68
+    },
+    {
+      "start": 376.258,
+      "end": 379.369,
+      "type": "line",
+      "text": "Who will rise up against the almighty power of the Lord?",
+      "verse": "9:26",
+      "lineIndex": 69
+    },
+    {
+      "start": 379.549,
+      "end": 382.01,
+      "type": "line",
+      "text": "Who will despise the works of the Lord?",
+      "verse": "9:26",
+      "lineIndex": 70
+    },
+    {
+      "start": 382.19,
+      "end": 384.605,
+      "type": "line",
+      "text": "Who will despise the children of Christ?",
+      "verse": "9:26",
+      "lineIndex": 71
+    },
+    {
+      "start": 384.785,
+      "end": 388.268,
+      "type": "line",
+      "text": "Behold, all ye who are despisers of the works of the Lord,",
+      "verse": "9:26",
+      "lineIndex": 72
+    },
+    {
+      "start": 388.448,
+      "end": 390.724,
+      "type": "line",
+      "text": "for ye shall wonder and perish.",
+      "verse": "9:26",
+      "lineIndex": 73
+    },
+    {
+      "start": 391.404,
+      "end": 401.435,
+      "type": "line",
+      "text": "O then despise not, and wonder not, but hearken unto the words of the Lord, and ask the Father in the name of Jesus for what things soever ye shall stand in need.",
+      "verse": "9:27",
+      "lineIndex": 74
+    },
+    {
+      "start": 401.615,
+      "end": 412.389,
+      "type": "line",
+      "text": "Doubt not, but be believing, and begin as in times of old, and come unto the Lord with all your heart, and work out your own salvation with fear and trembling before him.",
+      "verse": "9:27",
+      "lineIndex": 75
+    },
+    {
+      "start": 413.069,
+      "end": 423.1,
+      "type": "line",
+      "text": "Be wise in the days of your probation; strip yourselves of all uncleanness; ask not, that ye may consume it on your lusts, but ask with a firmness unshaken,",
+      "verse": "9:28",
+      "lineIndex": 76
+    },
+    {
+      "start": 423.28,
+      "end": 425.881,
+      "type": "line",
+      "text": "that ye will yield to no temptation,",
+      "verse": "9:28",
+      "lineIndex": 77
+    },
+    {
+      "start": 426.061,
+      "end": 429.172,
+      "type": "line",
+      "text": "but that ye will serve the true and living God.",
+      "verse": "9:28",
+      "lineIndex": 78
+    },
+    {
+      "start": 429.852,
+      "end": 445.502,
+      "type": "line",
+      "text": "See that ye are not baptized unworthily; see that ye partake not of the sacrament of Christ unworthily; but see that ye do all things in worthiness, and do it in the name of Jesus Christ, the Son of the living God;",
+      "verse": "9:29",
+      "lineIndex": 79
+    },
+    {
+      "start": 445.682,
+      "end": 450.698,
+      "type": "line",
+      "text": "and if ye do this, and endure to the end, ye will in nowise be cast out.",
+      "verse": "9:29",
+      "lineIndex": 80
+    },
+    {
+      "start": 451.378,
+      "end": 454.582,
+      "type": "line",
+      "text": "Behold, I speak unto you as though I spake from the dead;",
+      "verse": "9:30",
+      "lineIndex": 82
+    },
+    {
+      "start": 454.762,
+      "end": 457.13,
+      "type": "line",
+      "text": "for I know that ye shall have my words.",
+      "verse": "9:30",
+      "lineIndex": 83
+    },
+    {
+      "start": 457.81,
+      "end": 478.476,
+      "type": "line",
+      "text": "Condemn me not because of mine imperfection, neither my father, because of his imperfection, neither them who have written before him; but rather give thanks unto God that he hath made manifest unto you our imperfections, that ye may learn to be more wise than we have been.",
+      "verse": "9:31",
+      "lineIndex": 84
+    },
+    {
+      "start": 479.156,
+      "end": 492.624,
+      "type": "line",
+      "text": "And now, behold, we have written this record according to our knowledge, in the characters which are called among us the reformed Egyptian, being handed down and altered by us, according to our manner of speech.",
+      "verse": "9:32",
+      "lineIndex": 85
+    },
+    {
+      "start": 493.304,
+      "end": 497.716,
+      "type": "line",
+      "text": "And if our plates had been sufficiently large we should have written in Hebrew;",
+      "verse": "9:33",
+      "lineIndex": 86
+    },
+    {
+      "start": 497.896,
+      "end": 500.729,
+      "type": "line",
+      "text": "but the Hebrew hath been altered by us also;",
+      "verse": "9:33",
+      "lineIndex": 87
+    },
+    {
+      "start": 500.909,
+      "end": 506.157,
+      "type": "line",
+      "text": "and if we could have written in Hebrew, behold, ye would have had no imperfection in our record.",
+      "verse": "9:33",
+      "lineIndex": 88
+    },
+    {
+      "start": 506.837,
+      "end": 510.181,
+      "type": "line",
+      "text": "But the Lord knoweth the things which we have written,",
+      "verse": "9:34",
+      "lineIndex": 89
+    },
+    {
+      "start": 510.361,
+      "end": 511.522,
+      "type": "line",
+      "text": "and also",
+      "verse": "9:34",
+      "lineIndex": 90
+    },
+    {
+      "start": 511.702,
+      "end": 514.396,
+      "type": "line",
+      "text": "that none other people knoweth our language;",
+      "verse": "9:34",
+      "lineIndex": 91
+    },
+    {
+      "start": 514.576,
+      "end": 522.099,
+      "type": "line",
+      "text": "and because that none other people knoweth our language, therefore he hath prepared means for the interpretation thereof.",
+      "verse": "9:34",
+      "lineIndex": 92
+    },
+    {
+      "start": 522.779,
+      "end": 530.302,
+      "type": "line",
+      "text": "And these things are written that we may rid our garments of the blood of our brethren, who have dwindled in unbelief.",
+      "verse": "9:35",
+      "lineIndex": 93
+    },
+    {
+      "start": 530.982,
+      "end": 543.335,
+      "type": "line",
+      "text": "And behold, these things which we have desired concerning our brethren, yea, even their restoration to the knowledge of Christ, are according to the prayers of all the saints who have dwelt in the land.",
+      "verse": "9:36",
+      "lineIndex": 94
+    },
+    {
+      "start": 544.015,
+      "end": 548.891,
+      "type": "line",
+      "text": "And may the Lord Jesus Christ grant that their prayers may be answered according to their faith;",
+      "verse": "9:37",
+      "lineIndex": 95
+    },
+    {
+      "start": 549.071,
+      "end": 555.062,
+      "type": "line",
+      "text": "and may God the Father remember the covenant which he hath made with the house of Israel;",
+      "verse": "9:37",
+      "lineIndex": 96
+    },
+    {
+      "start": 555.242,
+      "end": 560.35,
+      "type": "line",
+      "text": "and may he bless them forever, through faith on the name of Jesus Christ.",
+      "verse": "9:37",
+      "lineIndex": 97
+    },
+    {
+      "start": 560.53,
+      "end": 561.366,
+      "type": "line",
+      "text": "Amen.",
+      "verse": "9:37",
+      "lineIndex": 98
+    }
+  ]
+}

@@ -1,0 +1,984 @@
+{
+  "book": "mormon",
+  "bookName": "Mormon",
+  "chapter": 8,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 616.033,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 3.622,
+      "type": "line",
+      "text": "Behold I, Moroni, do finish the record of my father, Mormon.",
+      "verse": "8:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 3.802,
+      "end": 8.91,
+      "type": "line",
+      "text": "Behold, I have but few things to write, which things I have been commanded by my father.",
+      "verse": "8:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 9.59,
+      "end": 22.315,
+      "type": "line",
+      "text": "And now it came to pass that after the great and tremendous battle at Cumorah, behold, the Nephites who had escaped into the country southward were hunted by the Lamanites, until they were all destroyed.",
+      "verse": "8:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 22.995,
+      "end": 25.456,
+      "type": "line",
+      "text": "And my father also was killed by them,",
+      "verse": "8:3",
+      "lineIndex": 4
+    },
+    {
+      "start": 25.636,
+      "end": 30.512,
+      "type": "line",
+      "text": "and I even remain alone to write the sad tale of the destruction of my people.",
+      "verse": "8:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 30.692,
+      "end": 32.271,
+      "type": "line",
+      "text": "But behold, they are gone,",
+      "verse": "8:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 32.451,
+      "end": 34.819,
+      "type": "line",
+      "text": "and I fulfil the commandment of my father.",
+      "verse": "8:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 34.999,
+      "end": 37.46,
+      "type": "line",
+      "text": "And whether they will slay me, I know not.",
+      "verse": "8:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 38.14,
+      "end": 41.251,
+      "type": "line",
+      "text": "Therefore I will write and hide up the records in the earth;",
+      "verse": "8:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 41.431,
+      "end": 43.799,
+      "type": "line",
+      "text": "and whither I go it mattereth not.",
+      "verse": "8:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 44.479,
+      "end": 46.755,
+      "type": "line",
+      "text": "Behold, my father hath made this record,",
+      "verse": "8:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 46.935,
+      "end": 49.118,
+      "type": "line",
+      "text": "and he hath written the intent thereof.",
+      "verse": "8:5",
+      "lineIndex": 12
+    },
+    {
+      "start": 49.298,
+      "end": 53.338,
+      "type": "line",
+      "text": "And behold, I would write it also if I had room upon the plates,",
+      "verse": "8:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 53.518,
+      "end": 55.051,
+      "type": "line",
+      "text": "but I have not;",
+      "verse": "8:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 55.231,
+      "end": 56.903,
+      "type": "line",
+      "text": "and ore I have none,",
+      "verse": "8:5",
+      "lineIndex": 15
+    },
+    {
+      "start": 57.083,
+      "end": 58.523,
+      "type": "line",
+      "text": "for I am alone.",
+      "verse": "8:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 58.703,
+      "end": 61.861,
+      "type": "line",
+      "text": "My father hath been slain in battle, and all my kinsfolk,",
+      "verse": "8:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 62.041,
+      "end": 64.456,
+      "type": "line",
+      "text": "and I have not friends nor whither to go;",
+      "verse": "8:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 64.636,
+      "end": 68.676,
+      "type": "line",
+      "text": "and how long the Lord will suffer that I may live I know not.",
+      "verse": "8:5",
+      "lineIndex": 19
+    },
+    {
+      "start": 69.356,
+      "end": 73.814,
+      "type": "line",
+      "text": "Behold, four hundred years have passed away since the coming of our Lord and Savior.",
+      "verse": "8:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 74.494,
+      "end": 85.407,
+      "type": "line",
+      "text": "And behold, the Lamanites have hunted my people, the Nephites, down from city to city and from place to place, even until they are no more; and great has been their fall;",
+      "verse": "8:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 85.587,
+      "end": 90.045,
+      "type": "line",
+      "text": "yea, great and marvelous is the destruction of my people, the Nephites.",
+      "verse": "8:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 90.725,
+      "end": 107.072,
+      "type": "line",
+      "text": "And behold, it is the hand of the Lord which hath done it. And behold also, the Lamanites are at war one with another; and the whole face of this land is one continual round of murder and bloodshed;",
+      "verse": "8:8",
+      "lineIndex": 24
+    },
+    {
+      "start": 107.252,
+      "end": 109.667,
+      "type": "line",
+      "text": "and no one knoweth the end of the war.",
+      "verse": "8:8",
+      "lineIndex": 25
+    },
+    {
+      "start": 110.347,
+      "end": 113.366,
+      "type": "line",
+      "text": "And now, behold, I say no more concerning them,",
+      "verse": "8:9",
+      "lineIndex": 26
+    },
+    {
+      "start": 113.546,
+      "end": 120.001,
+      "type": "line",
+      "text": "for there are none save it be the Lamanites and robbers that do exist upon the face of the land.",
+      "verse": "8:9",
+      "lineIndex": 27
+    },
+    {
+      "start": 120.681,
+      "end": 139.257,
+      "type": "line",
+      "text": "And there are none that do know the true God save it be the disciples of Jesus, who did tarry in the land until the wickedness of the people was so great that the Lord would not suffer them to remain with the people; and whether they be upon the face of the land no man knoweth.",
+      "verse": "8:10",
+      "lineIndex": 28
+    },
+    {
+      "start": 139.937,
+      "end": 142.909,
+      "type": "line",
+      "text": "But behold, my father and I have seen them,",
+      "verse": "8:11",
+      "lineIndex": 29
+    },
+    {
+      "start": 143.089,
+      "end": 145.318,
+      "type": "line",
+      "text": "and they have ministered unto us.",
+      "verse": "8:11",
+      "lineIndex": 30
+    },
+    {
+      "start": 145.998,
+      "end": 152.407,
+      "type": "line",
+      "text": "And whoso receiveth this record, and shall not condemn it because of the imperfections which are in it,",
+      "verse": "8:12",
+      "lineIndex": 32
+    },
+    {
+      "start": 152.587,
+      "end": 155.698,
+      "type": "line",
+      "text": "the same shall know of greater things than these.",
+      "verse": "8:12",
+      "lineIndex": 33
+    },
+    {
+      "start": 155.878,
+      "end": 157.457,
+      "type": "line",
+      "text": "Behold, I am Moroni;",
+      "verse": "8:12",
+      "lineIndex": 34
+    },
+    {
+      "start": 157.637,
+      "end": 161.12,
+      "type": "line",
+      "text": "and were it possible, I would make all things known unto you.",
+      "verse": "8:12",
+      "lineIndex": 35
+    },
+    {
+      "start": 161.8,
+      "end": 165.19,
+      "type": "line",
+      "text": "Behold, I make an end of speaking concerning this people.",
+      "verse": "8:13",
+      "lineIndex": 36
+    },
+    {
+      "start": 165.37,
+      "end": 169.55,
+      "type": "line",
+      "text": "I am the son of Mormon, and my father was a descendant of Nephi.",
+      "verse": "8:13",
+      "lineIndex": 37
+    },
+    {
+      "start": 170.23,
+      "end": 171.902,
+      "type": "line",
+      "text": "And I am the same",
+      "verse": "8:14",
+      "lineIndex": 38
+    },
+    {
+      "start": 172.082,
+      "end": 174.636,
+      "type": "line",
+      "text": "who hideth up this record unto the Lord;",
+      "verse": "8:14",
+      "lineIndex": 39
+    },
+    {
+      "start": 174.816,
+      "end": 178.949,
+      "type": "line",
+      "text": "the plates thereof are of no worth, because of the commandment of the Lord.",
+      "verse": "8:14",
+      "lineIndex": 40
+    },
+    {
+      "start": 179.129,
+      "end": 186.141,
+      "type": "line",
+      "text": "For he truly saith that no one shall have them to get gain; but the record thereof is of great worth;",
+      "verse": "8:14",
+      "lineIndex": 41
+    },
+    {
+      "start": 186.321,
+      "end": 188.643,
+      "type": "line",
+      "text": "and whoso shall bring it to light,",
+      "verse": "8:14",
+      "lineIndex": 42
+    },
+    {
+      "start": 188.823,
+      "end": 190.402,
+      "type": "line",
+      "text": "him will the Lord bless.",
+      "verse": "8:14",
+      "lineIndex": 43
+    },
+    {
+      "start": 191.082,
+      "end": 193.915,
+      "type": "line",
+      "text": "For none can have power to bring it to light",
+      "verse": "8:15",
+      "lineIndex": 44
+    },
+    {
+      "start": 194.095,
+      "end": 205.612,
+      "type": "line",
+      "text": "save it be given him of God; for God wills that it shall be done with an eye single to his glory, or the welfare of the ancient and long dispersed covenant people of the Lord.",
+      "verse": "8:15",
+      "lineIndex": 45
+    },
+    {
+      "start": 206.292,
+      "end": 209.496,
+      "type": "line",
+      "text": "And blessed be he that shall bring this thing to light;",
+      "verse": "8:16",
+      "lineIndex": 46
+    },
+    {
+      "start": 209.676,
+      "end": 214.738,
+      "type": "line",
+      "text": "for it shall be brought out of darkness unto light, according to the word of God;",
+      "verse": "8:16",
+      "lineIndex": 47
+    },
+    {
+      "start": 214.918,
+      "end": 217.704,
+      "type": "line",
+      "text": "yea, it shall be brought out of the earth,",
+      "verse": "8:16",
+      "lineIndex": 48
+    },
+    {
+      "start": 217.884,
+      "end": 222.621,
+      "type": "line",
+      "text": "and it shall shine forth out of darkness, and come unto the knowledge of the people;",
+      "verse": "8:16",
+      "lineIndex": 49
+    },
+    {
+      "start": 222.801,
+      "end": 225.216,
+      "type": "line",
+      "text": "and it shall be done by the power of God.",
+      "verse": "8:16",
+      "lineIndex": 50
+    },
+    {
+      "start": 225.896,
+      "end": 228.775,
+      "type": "line",
+      "text": "And if there be faults they be the faults of a man.",
+      "verse": "8:17",
+      "lineIndex": 51
+    },
+    {
+      "start": 228.955,
+      "end": 231.184,
+      "type": "line",
+      "text": "But behold, we know no fault;",
+      "verse": "8:17",
+      "lineIndex": 52
+    },
+    {
+      "start": 231.364,
+      "end": 233.779,
+      "type": "line",
+      "text": "nevertheless God knoweth all things;",
+      "verse": "8:17",
+      "lineIndex": 53
+    },
+    {
+      "start": 233.959,
+      "end": 239.671,
+      "type": "line",
+      "text": "therefore, he that condemneth, let him be aware lest he shall be in danger of hell fire.",
+      "verse": "8:17",
+      "lineIndex": 54
+    },
+    {
+      "start": 240.351,
+      "end": 241.884,
+      "type": "line",
+      "text": "And he that saith:",
+      "verse": "8:18",
+      "lineIndex": 55
+    },
+    {
+      "start": 242.064,
+      "end": 243.271,
+      "type": "line",
+      "text": "Show unto me,",
+      "verse": "8:18",
+      "lineIndex": 56
+    },
+    {
+      "start": 243.451,
+      "end": 245.169,
+      "type": "line",
+      "text": "or ye shall be smitten",
+      "verse": "8:18",
+      "lineIndex": 57
+    },
+    {
+      "start": 245.349,
+      "end": 249.436,
+      "type": "line",
+      "text": "\u2014let him beware lest he commandeth that which is forbidden of the Lord.",
+      "verse": "8:18",
+      "lineIndex": 58
+    },
+    {
+      "start": 250.116,
+      "end": 254.481,
+      "type": "line",
+      "text": "For behold, the same that judgeth rashly shall be judged rashly again;",
+      "verse": "8:19",
+      "lineIndex": 59
+    },
+    {
+      "start": 254.661,
+      "end": 257.494,
+      "type": "line",
+      "text": "for according to his works shall his wages be;",
+      "verse": "8:19",
+      "lineIndex": 60
+    },
+    {
+      "start": 257.674,
+      "end": 261.436,
+      "type": "line",
+      "text": "therefore, he that smiteth shall be smitten again, of the Lord.",
+      "verse": "8:19",
+      "lineIndex": 61
+    },
+    {
+      "start": 262.116,
+      "end": 265.274,
+      "type": "line",
+      "text": "Behold what the scripture says\u2014man shall not smite,",
+      "verse": "8:20",
+      "lineIndex": 62
+    },
+    {
+      "start": 265.454,
+      "end": 270.934,
+      "type": "line",
+      "text": "neither shall he judge; for judgment is mine, saith the Lord, and vengeance is mine also,",
+      "verse": "8:20",
+      "lineIndex": 63
+    },
+    {
+      "start": 271.114,
+      "end": 272.786,
+      "type": "line",
+      "text": "and I will repay.",
+      "verse": "8:20",
+      "lineIndex": 64
+    },
+    {
+      "start": 273.466,
+      "end": 283.358,
+      "type": "line",
+      "text": "And he that shall breathe out wrath and strifes against the work of the Lord, and against the covenant people of the Lord who are the house of Israel, and shall say:",
+      "verse": "8:21",
+      "lineIndex": 65
+    },
+    {
+      "start": 283.538,
+      "end": 285.674,
+      "type": "line",
+      "text": "We will destroy the work of the Lord,",
+      "verse": "8:21",
+      "lineIndex": 66
+    },
+    {
+      "start": 285.854,
+      "end": 291.055,
+      "type": "line",
+      "text": "and the Lord will not remember his covenant which he hath made unto the house of Israel",
+      "verse": "8:21",
+      "lineIndex": 67
+    },
+    {
+      "start": 291.235,
+      "end": 295.507,
+      "type": "line",
+      "text": "\u2014the same is in danger to be hewn down and cast into the fire;",
+      "verse": "8:21",
+      "lineIndex": 68
+    },
+    {
+      "start": 296.187,
+      "end": 302.549,
+      "type": "line",
+      "text": "For the eternal purposes of the Lord shall roll on, until all his promises shall be fulfilled.",
+      "verse": "8:22",
+      "lineIndex": 69
+    },
+    {
+      "start": 303.229,
+      "end": 305.551,
+      "type": "line",
+      "text": "Search the prophecies of Isaiah.",
+      "verse": "8:23",
+      "lineIndex": 70
+    },
+    {
+      "start": 305.731,
+      "end": 307.496,
+      "type": "line",
+      "text": "Behold, I cannot write them.",
+      "verse": "8:23",
+      "lineIndex": 71
+    },
+    {
+      "start": 307.676,
+      "end": 314.456,
+      "type": "line",
+      "text": "Yea, behold I say unto you, that those saints who have gone before me, who have possessed this land, shall cry,",
+      "verse": "8:23",
+      "lineIndex": 72
+    },
+    {
+      "start": 314.636,
+      "end": 317.794,
+      "type": "line",
+      "text": "yea, even from the dust will they cry unto the Lord;",
+      "verse": "8:23",
+      "lineIndex": 73
+    },
+    {
+      "start": 317.974,
+      "end": 322.618,
+      "type": "line",
+      "text": "and as the Lord liveth he will remember the covenant which he hath made with them.",
+      "verse": "8:23",
+      "lineIndex": 74
+    },
+    {
+      "start": 323.298,
+      "end": 327.153,
+      "type": "line",
+      "text": "And he knoweth their prayers, that they were in behalf of their brethren.",
+      "verse": "8:24",
+      "lineIndex": 75
+    },
+    {
+      "start": 327.333,
+      "end": 329.33,
+      "type": "line",
+      "text": "And he knoweth their faith,",
+      "verse": "8:24",
+      "lineIndex": 76
+    },
+    {
+      "start": 329.51,
+      "end": 332.389,
+      "type": "line",
+      "text": "for in his name could they remove mountains;",
+      "verse": "8:24",
+      "lineIndex": 77
+    },
+    {
+      "start": 332.569,
+      "end": 335.913,
+      "type": "line",
+      "text": "and in his name could they cause the earth to shake;",
+      "verse": "8:24",
+      "lineIndex": 78
+    },
+    {
+      "start": 336.093,
+      "end": 341.712,
+      "type": "line",
+      "text": "and by the power of his word did they cause prisons to tumble to the earth;",
+      "verse": "8:24",
+      "lineIndex": 79
+    },
+    {
+      "start": 341.892,
+      "end": 350.251,
+      "type": "line",
+      "text": "yea, even the fiery furnace could not harm them, neither wild beasts nor poisonous serpents, because of the power of his word.",
+      "verse": "8:24",
+      "lineIndex": 80
+    },
+    {
+      "start": 350.931,
+      "end": 357.433,
+      "type": "line",
+      "text": "And behold, their prayers were also in behalf of him that the Lord should suffer to bring these things forth.",
+      "verse": "8:25",
+      "lineIndex": 81
+    },
+    {
+      "start": 358.113,
+      "end": 359.692,
+      "type": "line",
+      "text": "And no one need say",
+      "verse": "8:26",
+      "lineIndex": 83
+    },
+    {
+      "start": 359.872,
+      "end": 361.172,
+      "type": "line",
+      "text": "they shall not come,",
+      "verse": "8:26",
+      "lineIndex": 84
+    },
+    {
+      "start": 361.352,
+      "end": 364.603,
+      "type": "line",
+      "text": "for they surely shall, for the Lord hath spoken it;",
+      "verse": "8:26",
+      "lineIndex": 85
+    },
+    {
+      "start": 364.783,
+      "end": 368.452,
+      "type": "line",
+      "text": "for out of the earth shall they come, by the hand of the Lord,",
+      "verse": "8:26",
+      "lineIndex": 86
+    },
+    {
+      "start": 368.632,
+      "end": 370.35,
+      "type": "line",
+      "text": "and none can stay it;",
+      "verse": "8:26",
+      "lineIndex": 87
+    },
+    {
+      "start": 370.53,
+      "end": 380.097,
+      "type": "line",
+      "text": "and it shall come in a day when it shall be said that miracles are done away; and it shall come even as if one should speak from the dead.",
+      "verse": "8:26",
+      "lineIndex": 88
+    },
+    {
+      "start": 380.777,
+      "end": 390.901,
+      "type": "line",
+      "text": "And it shall come in a day when the blood of saints shall cry unto the Lord, because of secret combinations and the works of darkness.",
+      "verse": "8:27",
+      "lineIndex": 89
+    },
+    {
+      "start": 391.581,
+      "end": 395.389,
+      "type": "line",
+      "text": "Yea, it shall come in a day when the power of God shall be denied,",
+      "verse": "8:28",
+      "lineIndex": 90
+    },
+    {
+      "start": 395.569,
+      "end": 400.352,
+      "type": "line",
+      "text": "and churches become defiled and be lifted up in the pride of their hearts;",
+      "verse": "8:28",
+      "lineIndex": 91
+    },
+    {
+      "start": 400.532,
+      "end": 410.238,
+      "type": "line",
+      "text": "yea, even in a day when leaders of churches and teachers shall rise in the pride of their hearts, even to the envying of them who belong to their churches.",
+      "verse": "8:28",
+      "lineIndex": 92
+    },
+    {
+      "start": 410.918,
+      "end": 418.627,
+      "type": "line",
+      "text": "Yea, it shall come in a day when there shall be heard of fires, and tempests, and vapors of smoke in foreign lands;",
+      "verse": "8:29",
+      "lineIndex": 93
+    },
+    {
+      "start": 419.307,
+      "end": 425.53,
+      "type": "line",
+      "text": "And there shall also be heard of wars, rumors of wars, and earthquakes in divers places.",
+      "verse": "8:30",
+      "lineIndex": 94
+    },
+    {
+      "start": 426.21,
+      "end": 445.018,
+      "type": "line",
+      "text": "Yea, it shall come in a day when there shall be great pollutions upon the face of the earth; there shall be murders, and robbing, and lying, and deceivings, and whoredoms, and all manner of abominations; when there shall be many who will say, Do this, or do that,",
+      "verse": "8:31",
+      "lineIndex": 95
+    },
+    {
+      "start": 445.198,
+      "end": 446.777,
+      "type": "line",
+      "text": "and it mattereth not,",
+      "verse": "8:31",
+      "lineIndex": 96
+    },
+    {
+      "start": 446.957,
+      "end": 449.651,
+      "type": "line",
+      "text": "for the Lord will uphold such at the last day.",
+      "verse": "8:31",
+      "lineIndex": 97
+    },
+    {
+      "start": 449.831,
+      "end": 451.364,
+      "type": "line",
+      "text": "But wo unto such,",
+      "verse": "8:31",
+      "lineIndex": 98
+    },
+    {
+      "start": 451.544,
+      "end": 456.281,
+      "type": "line",
+      "text": "for they are in the gall of bitterness and in the bonds of iniquity.",
+      "verse": "8:31",
+      "lineIndex": 99
+    },
+    {
+      "start": 456.961,
+      "end": 461.373,
+      "type": "line",
+      "text": "Yea, it shall come in a day when there shall be churches built up that shall say:",
+      "verse": "8:32",
+      "lineIndex": 100
+    },
+    {
+      "start": 461.553,
+      "end": 462.807,
+      "type": "line",
+      "text": "Come unto me,",
+      "verse": "8:32",
+      "lineIndex": 101
+    },
+    {
+      "start": 462.987,
+      "end": 466.331,
+      "type": "line",
+      "text": "and for your money you shall be forgiven of your sins.",
+      "verse": "8:32",
+      "lineIndex": 102
+    },
+    {
+      "start": 467.011,
+      "end": 469.89,
+      "type": "line",
+      "text": "O ye wicked and perverse and stiffnecked people,",
+      "verse": "8:33",
+      "lineIndex": 103
+    },
+    {
+      "start": 470.07,
+      "end": 473.739,
+      "type": "line",
+      "text": "why have ye built up churches unto yourselves to get gain?",
+      "verse": "8:33",
+      "lineIndex": 104
+    },
+    {
+      "start": 473.919,
+      "end": 479.12,
+      "type": "line",
+      "text": "Why have ye transfigured the holy word of God, that ye might bring damnation upon your souls?",
+      "verse": "8:33",
+      "lineIndex": 105
+    },
+    {
+      "start": 479.3,
+      "end": 481.947,
+      "type": "line",
+      "text": "Behold, look ye unto the revelations of God;",
+      "verse": "8:33",
+      "lineIndex": 106
+    },
+    {
+      "start": 482.127,
+      "end": 486.725,
+      "type": "line",
+      "text": "for behold, the time cometh at that day when all these things must be fulfilled.",
+      "verse": "8:33",
+      "lineIndex": 107
+    },
+    {
+      "start": 487.405,
+      "end": 497.947,
+      "type": "line",
+      "text": "Behold, the Lord hath shown unto me great and marvelous things concerning that which must shortly come, at that day when these things shall come forth among you.",
+      "verse": "8:34",
+      "lineIndex": 108
+    },
+    {
+      "start": 498.627,
+      "end": 501.831,
+      "type": "line",
+      "text": "Behold, I speak unto you as if ye were present,",
+      "verse": "8:35",
+      "lineIndex": 110
+    },
+    {
+      "start": 502.011,
+      "end": 503.59,
+      "type": "line",
+      "text": "and yet ye are not.",
+      "verse": "8:35",
+      "lineIndex": 111
+    },
+    {
+      "start": 503.77,
+      "end": 506.974,
+      "type": "line",
+      "text": "But behold, Jesus Christ hath shown you unto me,",
+      "verse": "8:35",
+      "lineIndex": 112
+    },
+    {
+      "start": 507.154,
+      "end": 508.826,
+      "type": "line",
+      "text": "and I know your doing.",
+      "verse": "8:35",
+      "lineIndex": 113
+    },
+    {
+      "start": 509.506,
+      "end": 512.571,
+      "type": "line",
+      "text": "And I know that ye do walk in the pride of your hearts;",
+      "verse": "8:36",
+      "lineIndex": 114
+    },
+    {
+      "start": 512.751,
+      "end": 528.633,
+      "type": "line",
+      "text": "and there are none save a few only who do not lift themselves up in the pride of their hearts, unto the wearing of very fine apparel, unto envying, and strifes, and malice, and persecutions, and all manner of iniquities;",
+      "verse": "8:36",
+      "lineIndex": 115
+    },
+    {
+      "start": 528.813,
+      "end": 534.85,
+      "type": "line",
+      "text": "and your churches, yea, even every one, have become polluted because of the pride of your hearts.",
+      "verse": "8:36",
+      "lineIndex": 116
+    },
+    {
+      "start": 535.53,
+      "end": 547.883,
+      "type": "line",
+      "text": "For behold, ye do love money, and your substance, and your fine apparel, and the adorning of your churches, more than ye love the poor and the needy, the sick and the afflicted.",
+      "verse": "8:37",
+      "lineIndex": 117
+    },
+    {
+      "start": 548.563,
+      "end": 557.665,
+      "type": "line",
+      "text": "O ye pollutions, ye hypocrites, ye teachers, who sell yourselves for that which will canker, why have ye polluted the holy church of God?",
+      "verse": "8:38",
+      "lineIndex": 118
+    },
+    {
+      "start": 557.845,
+      "end": 561.003,
+      "type": "line",
+      "text": "Why are ye ashamed to take upon you the name of Christ?",
+      "verse": "8:38",
+      "lineIndex": 119
+    },
+    {
+      "start": 561.183,
+      "end": 570.517,
+      "type": "line",
+      "text": "Why do ye not think that greater is the value of an endless happiness than that misery which never dies\u2014because of the praise of the world?",
+      "verse": "8:38",
+      "lineIndex": 120
+    },
+    {
+      "start": 571.197,
+      "end": 584.665,
+      "type": "line",
+      "text": "Why do ye adorn yourselves with that which hath no life, and yet suffer the hungry, and the needy, and the naked, and the sick and the afflicted to pass by you, and notice them not?",
+      "verse": "8:39",
+      "lineIndex": 121
+    },
+    {
+      "start": 585.345,
+      "end": 604.014,
+      "type": "line",
+      "text": "Yea, why do ye build up your secret abominations to get gain, and cause that widows should mourn before the Lord, and also orphans to mourn before the Lord, and also the blood of their fathers and their husbands to cry unto the Lord from the ground, for vengeance upon your heads?",
+      "verse": "8:40",
+      "lineIndex": 122
+    },
+    {
+      "start": 604.694,
+      "end": 612.264,
+      "type": "line",
+      "text": "Behold, the sword of vengeance hangeth over you; and the time soon cometh that he avengeth the blood of the saints upon you,",
+      "verse": "8:41",
+      "lineIndex": 123
+    },
+    {
+      "start": 612.444,
+      "end": 615.37,
+      "type": "line",
+      "text": "for he will not suffer their cries any longer.",
+      "verse": "8:41",
+      "lineIndex": 124
+    }
+  ]
+}
