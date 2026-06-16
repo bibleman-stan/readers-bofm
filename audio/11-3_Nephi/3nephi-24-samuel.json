@@ -1,0 +1,560 @@
+{
+  "book": "3nephi",
+  "bookName": "3 Nephi",
+  "chapter": 24,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 230.401,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 10.217,
+      "type": "line",
+      "text": "And it came to pass that he commanded them that they should write the words which the Father had given unto Malachi, which he should tell unto them.",
+      "verse": "24:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 10.397,
+      "end": 14.53,
+      "type": "line",
+      "text": "And it came to pass that after they were written he expounded them.",
+      "verse": "24:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 14.71,
+      "end": 18.007,
+      "type": "line",
+      "text": "And these are the words which he did tell unto them, saying:",
+      "verse": "24:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 18.187,
+      "end": 20.416,
+      "type": "line",
+      "text": "Thus said the Father unto Malachi",
+      "verse": "24:1",
+      "lineIndex": 4
+    },
+    {
+      "start": 20.596,
+      "end": 22.779,
+      "type": "line",
+      "text": "\u2014Behold, I will send my messenger,",
+      "verse": "24:1",
+      "lineIndex": 5
+    },
+    {
+      "start": 22.959,
+      "end": 25.142,
+      "type": "line",
+      "text": "and he shall prepare the way before me,",
+      "verse": "24:1",
+      "lineIndex": 6
+    },
+    {
+      "start": 25.322,
+      "end": 32.102,
+      "type": "line",
+      "text": "and the Lord whom ye seek shall suddenly come to his temple, even the messenger of the covenant, whom ye delight in;",
+      "verse": "24:1",
+      "lineIndex": 7
+    },
+    {
+      "start": 32.282,
+      "end": 33.768,
+      "type": "line",
+      "text": "behold, he shall come,",
+      "verse": "24:1",
+      "lineIndex": 8
+    },
+    {
+      "start": 33.948,
+      "end": 35.713,
+      "type": "line",
+      "text": "saith the Lord of Hosts.",
+      "verse": "24:1",
+      "lineIndex": 9
+    },
+    {
+      "start": 36.393,
+      "end": 39.087,
+      "type": "line",
+      "text": "But who may abide the day of his coming,",
+      "verse": "24:2",
+      "lineIndex": 10
+    },
+    {
+      "start": 39.267,
+      "end": 41.403,
+      "type": "line",
+      "text": "and who shall stand when he appeareth?",
+      "verse": "24:2",
+      "lineIndex": 11
+    },
+    {
+      "start": 41.583,
+      "end": 45.112,
+      "type": "line",
+      "text": "For he is like a refiner's fire, and like fuller's soap.",
+      "verse": "24:2",
+      "lineIndex": 12
+    },
+    {
+      "start": 45.792,
+      "end": 49.461,
+      "type": "line",
+      "text": "And he shall sit as a refiner and purifier of silver;",
+      "verse": "24:3",
+      "lineIndex": 13
+    },
+    {
+      "start": 49.641,
+      "end": 59.068,
+      "type": "line",
+      "text": "and he shall purify the sons of Levi, and purge them as gold and silver, that they may offer unto the Lord an offering in righteousness.",
+      "verse": "24:3",
+      "lineIndex": 14
+    },
+    {
+      "start": 59.748,
+      "end": 67.643,
+      "type": "line",
+      "text": "Then shall the offering of Judah and Jerusalem be pleasant unto the Lord, as in the days of old, and as in former years.",
+      "verse": "24:4",
+      "lineIndex": 15
+    },
+    {
+      "start": 68.323,
+      "end": 85.459,
+      "type": "line",
+      "text": "And I will come near to you to judgment; and I will be a swift witness against the sorcerers, and against the adulterers, and against false swearers, and against those that oppress the hireling in his wages, the widow and the fatherless,",
+      "verse": "24:5",
+      "lineIndex": 16
+    },
+    {
+      "start": 85.639,
+      "end": 89.122,
+      "type": "line",
+      "text": "and that turn aside the stranger, and fear not me,",
+      "verse": "24:5",
+      "lineIndex": 17
+    },
+    {
+      "start": 89.302,
+      "end": 91.067,
+      "type": "line",
+      "text": "saith the Lord of Hosts.",
+      "verse": "24:5",
+      "lineIndex": 18
+    },
+    {
+      "start": 91.747,
+      "end": 93.187,
+      "type": "line",
+      "text": "For I am the Lord,",
+      "verse": "24:6",
+      "lineIndex": 19
+    },
+    {
+      "start": 93.367,
+      "end": 94.853,
+      "type": "line",
+      "text": "I change not;",
+      "verse": "24:6",
+      "lineIndex": 20
+    },
+    {
+      "start": 95.033,
+      "end": 98.098,
+      "type": "line",
+      "text": "therefore ye sons of Jacob are not consumed.",
+      "verse": "24:6",
+      "lineIndex": 21
+    },
+    {
+      "start": 98.778,
+      "end": 103.654,
+      "type": "line",
+      "text": "Even from the days of your fathers ye are gone away from mine ordinances,",
+      "verse": "24:7",
+      "lineIndex": 22
+    },
+    {
+      "start": 103.834,
+      "end": 105.274,
+      "type": "line",
+      "text": "and have not kept them.",
+      "verse": "24:7",
+      "lineIndex": 23
+    },
+    {
+      "start": 105.454,
+      "end": 106.754,
+      "type": "line",
+      "text": "Return unto me",
+      "verse": "24:7",
+      "lineIndex": 24
+    },
+    {
+      "start": 106.934,
+      "end": 108.792,
+      "type": "line",
+      "text": "and I will return unto you,",
+      "verse": "24:7",
+      "lineIndex": 25
+    },
+    {
+      "start": 108.972,
+      "end": 110.737,
+      "type": "line",
+      "text": "saith the Lord of Hosts.",
+      "verse": "24:7",
+      "lineIndex": 26
+    },
+    {
+      "start": 110.917,
+      "end": 112.217,
+      "type": "line",
+      "text": "But ye say:",
+      "verse": "24:7",
+      "lineIndex": 27
+    },
+    {
+      "start": 112.397,
+      "end": 114.069,
+      "type": "line",
+      "text": "Wherein shall we return?",
+      "verse": "24:7",
+      "lineIndex": 28
+    },
+    {
+      "start": 114.749,
+      "end": 116.328,
+      "type": "line",
+      "text": "Will a man rob God?",
+      "verse": "24:8",
+      "lineIndex": 30
+    },
+    {
+      "start": 116.508,
+      "end": 117.994,
+      "type": "line",
+      "text": "Yet ye have robbed me.",
+      "verse": "24:8",
+      "lineIndex": 31
+    },
+    {
+      "start": 118.174,
+      "end": 119.474,
+      "type": "line",
+      "text": "But ye say:",
+      "verse": "24:8",
+      "lineIndex": 32
+    },
+    {
+      "start": 119.654,
+      "end": 121.233,
+      "type": "line",
+      "text": "Wherein have we robbed thee?",
+      "verse": "24:8",
+      "lineIndex": 33
+    },
+    {
+      "start": 121.413,
+      "end": 123.038,
+      "type": "line",
+      "text": "In tithes and offerings.",
+      "verse": "24:8",
+      "lineIndex": 34
+    },
+    {
+      "start": 123.718,
+      "end": 125.576,
+      "type": "line",
+      "text": "Ye are cursed with a curse,",
+      "verse": "24:9",
+      "lineIndex": 35
+    },
+    {
+      "start": 125.756,
+      "end": 128.914,
+      "type": "line",
+      "text": "for ye have robbed me, even this whole nation.",
+      "verse": "24:9",
+      "lineIndex": 36
+    },
+    {
+      "start": 129.594,
+      "end": 132.288,
+      "type": "line",
+      "text": "Bring ye all the tithes into the storehouse,",
+      "verse": "24:10",
+      "lineIndex": 37
+    },
+    {
+      "start": 132.468,
+      "end": 134.883,
+      "type": "line",
+      "text": "that there may be meat in my house;",
+      "verse": "24:10",
+      "lineIndex": 38
+    },
+    {
+      "start": 135.063,
+      "end": 136.828,
+      "type": "line",
+      "text": "and prove me now herewith,",
+      "verse": "24:10",
+      "lineIndex": 39
+    },
+    {
+      "start": 137.008,
+      "end": 138.633,
+      "type": "line",
+      "text": "saith the Lord of Hosts,",
+      "verse": "24:10",
+      "lineIndex": 40
+    },
+    {
+      "start": 138.813,
+      "end": 141.599,
+      "type": "line",
+      "text": "if I will not open you the windows of heaven,",
+      "verse": "24:10",
+      "lineIndex": 41
+    },
+    {
+      "start": 141.779,
+      "end": 146.423,
+      "type": "line",
+      "text": "and pour you out a blessing that there shall not be room enough to receive it.",
+      "verse": "24:10",
+      "lineIndex": 42
+    },
+    {
+      "start": 147.103,
+      "end": 150.029,
+      "type": "line",
+      "text": "And I will rebuke the devourer for your sakes,",
+      "verse": "24:11",
+      "lineIndex": 43
+    },
+    {
+      "start": 150.209,
+      "end": 153.413,
+      "type": "line",
+      "text": "and he shall not destroy the fruits of your ground;",
+      "verse": "24:11",
+      "lineIndex": 44
+    },
+    {
+      "start": 153.593,
+      "end": 157.726,
+      "type": "line",
+      "text": "neither shall your vine cast her fruit before the time in the fields,",
+      "verse": "24:11",
+      "lineIndex": 45
+    },
+    {
+      "start": 157.906,
+      "end": 159.671,
+      "type": "line",
+      "text": "saith the Lord of Hosts.",
+      "verse": "24:11",
+      "lineIndex": 46
+    },
+    {
+      "start": 160.351,
+      "end": 163.091,
+      "type": "line",
+      "text": "And all nations shall call you blessed,",
+      "verse": "24:12",
+      "lineIndex": 47
+    },
+    {
+      "start": 163.271,
+      "end": 165.779,
+      "type": "line",
+      "text": "for ye shall be a delightsome land,",
+      "verse": "24:12",
+      "lineIndex": 48
+    },
+    {
+      "start": 165.959,
+      "end": 167.724,
+      "type": "line",
+      "text": "saith the Lord of Hosts.",
+      "verse": "24:12",
+      "lineIndex": 49
+    },
+    {
+      "start": 168.404,
+      "end": 170.633,
+      "type": "line",
+      "text": "Your words have been stout against me,",
+      "verse": "24:13",
+      "lineIndex": 51
+    },
+    {
+      "start": 170.813,
+      "end": 172.113,
+      "type": "line",
+      "text": "saith the Lord.",
+      "verse": "24:13",
+      "lineIndex": 52
+    },
+    {
+      "start": 172.293,
+      "end": 173.686,
+      "type": "line",
+      "text": "Yet ye say:",
+      "verse": "24:13",
+      "lineIndex": 53
+    },
+    {
+      "start": 173.866,
+      "end": 175.584,
+      "type": "line",
+      "text": "What have we spoken against thee?",
+      "verse": "24:13",
+      "lineIndex": 54
+    },
+    {
+      "start": 176.264,
+      "end": 177.518,
+      "type": "line",
+      "text": "Ye have said:",
+      "verse": "24:14",
+      "lineIndex": 55
+    },
+    {
+      "start": 177.698,
+      "end": 187.311,
+      "type": "line",
+      "text": "It is vain to serve God, and what doth it profit that we have kept his ordinances and that we have walked mournfully before the Lord of Hosts?",
+      "verse": "24:14",
+      "lineIndex": 56
+    },
+    {
+      "start": 187.991,
+      "end": 190.127,
+      "type": "line",
+      "text": "And now we call the proud happy;",
+      "verse": "24:15",
+      "lineIndex": 57
+    },
+    {
+      "start": 190.307,
+      "end": 193.001,
+      "type": "line",
+      "text": "yea, they that work wickedness are set up;",
+      "verse": "24:15",
+      "lineIndex": 58
+    },
+    {
+      "start": 193.181,
+      "end": 195.875,
+      "type": "line",
+      "text": "yea, they that tempt God are even delivered.",
+      "verse": "24:15",
+      "lineIndex": 59
+    },
+    {
+      "start": 196.555,
+      "end": 200.177,
+      "type": "line",
+      "text": "Then they that feared the Lord spake often one to another,",
+      "verse": "24:16",
+      "lineIndex": 60
+    },
+    {
+      "start": 200.357,
+      "end": 202.772,
+      "type": "line",
+      "text": "and the Lord hearkened and heard;",
+      "verse": "24:16",
+      "lineIndex": 61
+    },
+    {
+      "start": 202.952,
+      "end": 208.06,
+      "type": "line",
+      "text": "and a book of remembrance was written before him for them that feared the Lord,",
+      "verse": "24:16",
+      "lineIndex": 62
+    },
+    {
+      "start": 208.24,
+      "end": 210.19,
+      "type": "line",
+      "text": "and that thought upon his name.",
+      "verse": "24:16",
+      "lineIndex": 63
+    },
+    {
+      "start": 210.87,
+      "end": 215.514,
+      "type": "line",
+      "text": "And they shall be mine, saith the Lord of Hosts, in that day when I make up my jewels;",
+      "verse": "24:17",
+      "lineIndex": 64
+    },
+    {
+      "start": 215.694,
+      "end": 220.245,
+      "type": "line",
+      "text": "and I will spare them as a man spareth his own son that serveth him.",
+      "verse": "24:17",
+      "lineIndex": 65
+    },
+    {
+      "start": 220.925,
+      "end": 222.458,
+      "type": "line",
+      "text": "Then shall ye return",
+      "verse": "24:18",
+      "lineIndex": 66
+    },
+    {
+      "start": 222.638,
+      "end": 225.378,
+      "type": "line",
+      "text": "and discern between the righteous and the wicked,",
+      "verse": "24:18",
+      "lineIndex": 67
+    },
+    {
+      "start": 225.558,
+      "end": 227.648,
+      "type": "line",
+      "text": "between him that serveth God",
+      "verse": "24:18",
+      "lineIndex": 68
+    },
+    {
+      "start": 227.828,
+      "end": 229.732,
+      "type": "line",
+      "text": "and him that serveth him not.",
+      "verse": "24:18",
+      "lineIndex": 69
+    }
+  ]
+}
