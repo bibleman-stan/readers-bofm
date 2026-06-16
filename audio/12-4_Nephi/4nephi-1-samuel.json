@@ -1,0 +1,896 @@
+{
+  "book": "4nephi",
+  "bookName": "4 Nephi",
+  "chapter": 1,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 727.419,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 13.142,
+      "type": "line",
+      "text": "And it came to pass that the thirty and fourth year passed away, and also the thirty and fifth, and behold the disciples of Jesus had formed a church of Christ in all the lands round about.",
+      "verse": "1:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 13.322,
+      "end": 20.242,
+      "type": "line",
+      "text": "And as many as did come unto them, and did truly repent of their sins, were baptized in the name of Jesus;",
+      "verse": "1:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 20.422,
+      "end": 23.069,
+      "type": "line",
+      "text": "and they did also receive the Holy Ghost.",
+      "verse": "1:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 23.749,
+      "end": 33.455,
+      "type": "line",
+      "text": "And it came to pass in the thirty and sixth year, the people were all converted unto the Lord, upon all the face of the land, both Nephites and Lamanites,",
+      "verse": "1:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 33.635,
+      "end": 37.164,
+      "type": "line",
+      "text": "and there were no contentions and disputations among them,",
+      "verse": "1:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 37.344,
+      "end": 40.502,
+      "type": "line",
+      "text": "and every man did deal justly one with another.",
+      "verse": "1:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 41.182,
+      "end": 43.968,
+      "type": "line",
+      "text": "And they had all things common among them;",
+      "verse": "1:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 44.148,
+      "end": 47.631,
+      "type": "line",
+      "text": "therefore there were not rich and poor, bond and free,",
+      "verse": "1:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 47.811,
+      "end": 51.805,
+      "type": "line",
+      "text": "but they were all made free, and partakers of the heavenly gift.",
+      "verse": "1:3",
+      "lineIndex": 9
+    },
+    {
+      "start": 52.485,
+      "end": 60.984,
+      "type": "line",
+      "text": "And it came to pass that the thirty and seventh year passed away also, and there still continued to be peace in the land.",
+      "verse": "1:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 61.664,
+      "end": 76.432,
+      "type": "line",
+      "text": "And there were great and marvelous works wrought by the disciples of Jesus, insomuch that they did heal the sick, and raise the dead, and cause the lame to walk, and the blind to receive their sight, and the deaf to hear;",
+      "verse": "1:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 76.612,
+      "end": 81.024,
+      "type": "line",
+      "text": "and all manner of miracles did they work among the children of men;",
+      "verse": "1:5",
+      "lineIndex": 12
+    },
+    {
+      "start": 81.204,
+      "end": 86.405,
+      "type": "line",
+      "text": "and in nothing did they work miracles save it were in the name of Jesus.",
+      "verse": "1:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 87.085,
+      "end": 95.212,
+      "type": "line",
+      "text": "And thus did the thirty and eighth year pass away, and also the thirty and ninth, and forty and first, and the forty and second,",
+      "verse": "1:6",
+      "lineIndex": 14
+    },
+    {
+      "start": 95.392,
+      "end": 101.243,
+      "type": "line",
+      "text": "yea, even until forty and nine years had passed away, and also the fifty and first, and the fifty and second;",
+      "verse": "1:6",
+      "lineIndex": 15
+    },
+    {
+      "start": 101.423,
+      "end": 105.138,
+      "type": "line",
+      "text": "yea, and even until fifty and nine years had passed away.",
+      "verse": "1:6",
+      "lineIndex": 16
+    },
+    {
+      "start": 105.818,
+      "end": 109.022,
+      "type": "line",
+      "text": "And the Lord did prosper them exceedingly in the land;",
+      "verse": "1:7",
+      "lineIndex": 17
+    },
+    {
+      "start": 109.202,
+      "end": 114.403,
+      "type": "line",
+      "text": "yea, insomuch that they did build cities again where there had been cities burned.",
+      "verse": "1:7",
+      "lineIndex": 18
+    },
+    {
+      "start": 115.083,
+      "end": 119.448,
+      "type": "line",
+      "text": "Yea, even that great city Zarahemla did they cause to be built again.",
+      "verse": "1:8",
+      "lineIndex": 19
+    },
+    {
+      "start": 120.128,
+      "end": 123.518,
+      "type": "line",
+      "text": "But there were many cities which had been sunk,",
+      "verse": "1:9",
+      "lineIndex": 20
+    },
+    {
+      "start": 123.698,
+      "end": 129.271,
+      "type": "line",
+      "text": "and waters came up in the stead thereof; therefore these cities could not be renewed.",
+      "verse": "1:9",
+      "lineIndex": 21
+    },
+    {
+      "start": 129.951,
+      "end": 140.586,
+      "type": "line",
+      "text": "And now, behold, it came to pass that the people of Nephi did wax strong, and did multiply exceedingly fast, and became an exceedingly fair and delightsome people.",
+      "verse": "1:10",
+      "lineIndex": 23
+    },
+    {
+      "start": 141.266,
+      "end": 150.972,
+      "type": "line",
+      "text": "And they were married, and given in marriage, and were blessed according to the multitude of the promises which the Lord had made unto them.",
+      "verse": "1:11",
+      "lineIndex": 24
+    },
+    {
+      "start": 151.652,
+      "end": 157.364,
+      "type": "line",
+      "text": "And they did not walk any more after the performances and ordinances of the law of Moses;",
+      "verse": "1:12",
+      "lineIndex": 25
+    },
+    {
+      "start": 157.544,
+      "end": 173.008,
+      "type": "line",
+      "text": "but they did walk after the commandments which they had received from their Lord and their God, continuing in fasting and prayer, and in meeting together oft both to pray and to hear the word of the Lord.",
+      "verse": "1:12",
+      "lineIndex": 26
+    },
+    {
+      "start": 173.688,
+      "end": 183.348,
+      "type": "line",
+      "text": "And it came to pass that there was no contention among all the people, in all the land; but there were mighty miracles wrought among the disciples of Jesus.",
+      "verse": "1:13",
+      "lineIndex": 27
+    },
+    {
+      "start": 184.028,
+      "end": 190.855,
+      "type": "line",
+      "text": "And it came to pass that the seventy and first year passed away, and also the seventy and second year,",
+      "verse": "1:14",
+      "lineIndex": 29
+    },
+    {
+      "start": 191.035,
+      "end": 195.679,
+      "type": "line",
+      "text": "yea, and in fine, till the seventy and ninth year had passed away;",
+      "verse": "1:14",
+      "lineIndex": 30
+    },
+    {
+      "start": 195.859,
+      "end": 198.553,
+      "type": "line",
+      "text": "yea, even an hundred years had passed away,",
+      "verse": "1:14",
+      "lineIndex": 31
+    },
+    {
+      "start": 198.733,
+      "end": 204.306,
+      "type": "line",
+      "text": "and the disciples of Jesus, whom he had chosen, had all gone to the paradise of God,",
+      "verse": "1:14",
+      "lineIndex": 32
+    },
+    {
+      "start": 204.486,
+      "end": 206.947,
+      "type": "line",
+      "text": "save it were the three who should tarry;",
+      "verse": "1:14",
+      "lineIndex": 33
+    },
+    {
+      "start": 207.127,
+      "end": 210.61,
+      "type": "line",
+      "text": "and there were other disciples ordained in their stead;",
+      "verse": "1:14",
+      "lineIndex": 34
+    },
+    {
+      "start": 210.79,
+      "end": 214.18,
+      "type": "line",
+      "text": "and also many of that generation had passed away.",
+      "verse": "1:14",
+      "lineIndex": 35
+    },
+    {
+      "start": 214.86,
+      "end": 223.312,
+      "type": "line",
+      "text": "And it came to pass that there was no contention in the land, because of the love of God which did dwell in the hearts of the people.",
+      "verse": "1:15",
+      "lineIndex": 36
+    },
+    {
+      "start": 223.992,
+      "end": 233.837,
+      "type": "line",
+      "text": "And there were no envyings, nor strifes, nor tumults, nor whoredoms, nor lyings, nor murders, nor any manner of lasciviousness;",
+      "verse": "1:16",
+      "lineIndex": 37
+    },
+    {
+      "start": 234.017,
+      "end": 240.147,
+      "type": "line",
+      "text": "and surely there could not be a happier people among all the people who had been created by the hand of God.",
+      "verse": "1:16",
+      "lineIndex": 38
+    },
+    {
+      "start": 240.827,
+      "end": 243.428,
+      "type": "line",
+      "text": "There were no robbers, nor murderers,",
+      "verse": "1:17",
+      "lineIndex": 39
+    },
+    {
+      "start": 243.608,
+      "end": 247.23,
+      "type": "line",
+      "text": "neither were there Lamanites, nor any manner of -ites;",
+      "verse": "1:17",
+      "lineIndex": 40
+    },
+    {
+      "start": 247.41,
+      "end": 251.868,
+      "type": "line",
+      "text": "but they were in one, the children of Christ, and heirs to the kingdom of God.",
+      "verse": "1:17",
+      "lineIndex": 41
+    },
+    {
+      "start": 252.548,
+      "end": 254.266,
+      "type": "line",
+      "text": "And how blessed were they!",
+      "verse": "1:18",
+      "lineIndex": 42
+    },
+    {
+      "start": 254.446,
+      "end": 257.465,
+      "type": "line",
+      "text": "For the Lord did bless them in all their doings;",
+      "verse": "1:18",
+      "lineIndex": 43
+    },
+    {
+      "start": 257.645,
+      "end": 262.661,
+      "type": "line",
+      "text": "yea, even they were blessed and prospered until an hundred and ten years had passed away;",
+      "verse": "1:18",
+      "lineIndex": 44
+    },
+    {
+      "start": 262.841,
+      "end": 265.767,
+      "type": "line",
+      "text": "and the first generation from Christ had passed away,",
+      "verse": "1:18",
+      "lineIndex": 45
+    },
+    {
+      "start": 265.947,
+      "end": 268.408,
+      "type": "line",
+      "text": "and there was no contention in all the land.",
+      "verse": "1:18",
+      "lineIndex": 46
+    },
+    {
+      "start": 269.088,
+      "end": 277.076,
+      "type": "line",
+      "text": "And it came to pass that Nephi, he that kept this last record, (and he kept it upon the plates of Nephi) died,",
+      "verse": "1:19",
+      "lineIndex": 47
+    },
+    {
+      "start": 277.256,
+      "end": 279.717,
+      "type": "line",
+      "text": "and his son Amos kept it in his stead;",
+      "verse": "1:19",
+      "lineIndex": 48
+    },
+    {
+      "start": 279.897,
+      "end": 282.776,
+      "type": "line",
+      "text": "and he kept it upon the plates of Nephi also.",
+      "verse": "1:19",
+      "lineIndex": 49
+    },
+    {
+      "start": 283.456,
+      "end": 285.917,
+      "type": "line",
+      "text": "And he kept it eighty and four years,",
+      "verse": "1:20",
+      "lineIndex": 51
+    },
+    {
+      "start": 286.097,
+      "end": 288.512,
+      "type": "line",
+      "text": "and there was still peace in the land,",
+      "verse": "1:20",
+      "lineIndex": 52
+    },
+    {
+      "start": 288.692,
+      "end": 300.395,
+      "type": "line",
+      "text": "save it were a small part of the people who had revolted from the church and taken upon them the name of Lamanites; therefore there began to be Lamanites again in the land.",
+      "verse": "1:20",
+      "lineIndex": 53
+    },
+    {
+      "start": 301.075,
+      "end": 312.917,
+      "type": "line",
+      "text": "And it came to pass that Amos died also, (and it was an hundred and ninety and four years from the coming of Christ) and his son Amos kept the record in his stead;",
+      "verse": "1:21",
+      "lineIndex": 54
+    },
+    {
+      "start": 313.097,
+      "end": 315.837,
+      "type": "line",
+      "text": "and he also kept it upon the plates of Nephi;",
+      "verse": "1:21",
+      "lineIndex": 55
+    },
+    {
+      "start": 316.017,
+      "end": 319.407,
+      "type": "line",
+      "text": "and it was also written in the book of Nephi, which is this book.",
+      "verse": "1:21",
+      "lineIndex": 56
+    },
+    {
+      "start": 320.087,
+      "end": 328.028,
+      "type": "line",
+      "text": "And it came to pass that two hundred years had passed away; and the second generation had all passed away save it were a few.",
+      "verse": "1:22",
+      "lineIndex": 57
+    },
+    {
+      "start": 328.708,
+      "end": 334.42,
+      "type": "line",
+      "text": "And now I, Mormon, would that ye should know that the people had multiplied, insomuch",
+      "verse": "1:23",
+      "lineIndex": 58
+    },
+    {
+      "start": 334.6,
+      "end": 337.897,
+      "type": "line",
+      "text": "that they were spread upon all the face of the land,",
+      "verse": "1:23",
+      "lineIndex": 59
+    },
+    {
+      "start": 338.077,
+      "end": 343.139,
+      "type": "line",
+      "text": "and that they had become exceedingly rich, because of their prosperity in Christ.",
+      "verse": "1:23",
+      "lineIndex": 60
+    },
+    {
+      "start": 343.819,
+      "end": 357.89,
+      "type": "line",
+      "text": "And now, in this two hundred and first year there began to be among them those who were lifted up in pride, such as the wearing of costly apparel, and all manner of fine pearls, and of the fine things of the world.",
+      "verse": "1:24",
+      "lineIndex": 61
+    },
+    {
+      "start": 358.57,
+      "end": 365.443,
+      "type": "line",
+      "text": "And from that time forth they did have their goods and their substance no more common among them.",
+      "verse": "1:25",
+      "lineIndex": 62
+    },
+    {
+      "start": 366.123,
+      "end": 368.724,
+      "type": "line",
+      "text": "And they began to be divided into classes;",
+      "verse": "1:26",
+      "lineIndex": 64
+    },
+    {
+      "start": 368.904,
+      "end": 376.009,
+      "type": "line",
+      "text": "and they began to build up churches unto themselves to get gain, and began to deny the true church of Christ.",
+      "verse": "1:26",
+      "lineIndex": 65
+    },
+    {
+      "start": 376.689,
+      "end": 383.469,
+      "type": "line",
+      "text": "And it came to pass that when two hundred and ten years had passed away there were many churches in the land;",
+      "verse": "1:27",
+      "lineIndex": 66
+    },
+    {
+      "start": 383.649,
+      "end": 387.504,
+      "type": "line",
+      "text": "yea, there were many churches which professed to know the Christ,",
+      "verse": "1:27",
+      "lineIndex": 67
+    },
+    {
+      "start": 387.684,
+      "end": 398.272,
+      "type": "line",
+      "text": "and yet they did deny the more parts of his gospel, insomuch that they did receive all manner of wickedness, and did administer that which was sacred unto him",
+      "verse": "1:27",
+      "lineIndex": 68
+    },
+    {
+      "start": 398.452,
+      "end": 402.167,
+      "type": "line",
+      "text": "to whom it had been forbidden because of unworthiness.",
+      "verse": "1:27",
+      "lineIndex": 69
+    },
+    {
+      "start": 402.847,
+      "end": 411.949,
+      "type": "line",
+      "text": "And this church did multiply exceedingly because of iniquity, and because of the power of Satan who did get hold upon their hearts.",
+      "verse": "1:28",
+      "lineIndex": 70
+    },
+    {
+      "start": 412.629,
+      "end": 416.112,
+      "type": "line",
+      "text": "And again, there was another church which denied the Christ;",
+      "verse": "1:29",
+      "lineIndex": 71
+    },
+    {
+      "start": 416.292,
+      "end": 422.561,
+      "type": "line",
+      "text": "and they did persecute the true church of Christ, because of their humility and their belief in Christ;",
+      "verse": "1:29",
+      "lineIndex": 72
+    },
+    {
+      "start": 422.741,
+      "end": 427.617,
+      "type": "line",
+      "text": "and they did despise them because of the many miracles which were wrought among them.",
+      "verse": "1:29",
+      "lineIndex": 73
+    },
+    {
+      "start": 428.297,
+      "end": 434.891,
+      "type": "line",
+      "text": "Therefore they did exercise power and authority over the disciples of Jesus who did tarry with them,",
+      "verse": "1:30",
+      "lineIndex": 74
+    },
+    {
+      "start": 435.071,
+      "end": 437.254,
+      "type": "line",
+      "text": "and they did cast them into prison;",
+      "verse": "1:30",
+      "lineIndex": 75
+    },
+    {
+      "start": 437.434,
+      "end": 443.611,
+      "type": "line",
+      "text": "but by the power of the word of God, which was in them, the prisons were rent in twain,",
+      "verse": "1:30",
+      "lineIndex": 76
+    },
+    {
+      "start": 443.791,
+      "end": 447.228,
+      "type": "line",
+      "text": "and they went forth doing mighty miracles among them.",
+      "verse": "1:30",
+      "lineIndex": 77
+    },
+    {
+      "start": 447.908,
+      "end": 459.936,
+      "type": "line",
+      "text": "Nevertheless, and notwithstanding all these miracles, the people did harden their hearts, and did seek to kill them, even as the Jews at Jerusalem sought to kill Jesus, according to his word.",
+      "verse": "1:31",
+      "lineIndex": 78
+    },
+    {
+      "start": 460.616,
+      "end": 464.053,
+      "type": "line",
+      "text": "And they did cast them into furnaces of fire,",
+      "verse": "1:32",
+      "lineIndex": 79
+    },
+    {
+      "start": 464.233,
+      "end": 466.694,
+      "type": "line",
+      "text": "and they came forth receiving no harm.",
+      "verse": "1:32",
+      "lineIndex": 80
+    },
+    {
+      "start": 467.374,
+      "end": 471.089,
+      "type": "line",
+      "text": "And they also cast them into dens of wild beasts,",
+      "verse": "1:33",
+      "lineIndex": 81
+    },
+    {
+      "start": 471.269,
+      "end": 475.402,
+      "type": "line",
+      "text": "and they did play with the wild beasts even as a child with a lamb;",
+      "verse": "1:33",
+      "lineIndex": 82
+    },
+    {
+      "start": 475.582,
+      "end": 478.786,
+      "type": "line",
+      "text": "and they did come forth from among them, receiving no harm.",
+      "verse": "1:33",
+      "lineIndex": 83
+    },
+    {
+      "start": 479.466,
+      "end": 482.299,
+      "type": "line",
+      "text": "Nevertheless, the people did harden their hearts,",
+      "verse": "1:34",
+      "lineIndex": 85
+    },
+    {
+      "start": 482.479,
+      "end": 490.188,
+      "type": "line",
+      "text": "for they were led by many priests and false prophets to build up many churches, and to do all manner of iniquity.",
+      "verse": "1:34",
+      "lineIndex": 86
+    },
+    {
+      "start": 490.368,
+      "end": 493.572,
+      "type": "line",
+      "text": "And they did smite upon the people of Jesus;",
+      "verse": "1:34",
+      "lineIndex": 87
+    },
+    {
+      "start": 493.752,
+      "end": 496.585,
+      "type": "line",
+      "text": "but the people of Jesus did not smite again.",
+      "verse": "1:34",
+      "lineIndex": 88
+    },
+    {
+      "start": 496.765,
+      "end": 505.867,
+      "type": "line",
+      "text": "And thus they did dwindle in unbelief and wickedness, from year to year, even until two hundred and thirty years had passed away.",
+      "verse": "1:34",
+      "lineIndex": 89
+    },
+    {
+      "start": 506.547,
+      "end": 508.915,
+      "type": "line",
+      "text": "And now it came to pass in this year,",
+      "verse": "1:35",
+      "lineIndex": 90
+    },
+    {
+      "start": 509.095,
+      "end": 515.782,
+      "type": "line",
+      "text": "yea, in the two hundred and thirty and first year, there was a great division among the people.",
+      "verse": "1:35",
+      "lineIndex": 91
+    },
+    {
+      "start": 516.462,
+      "end": 532.948,
+      "type": "line",
+      "text": "And it came to pass that in this year there arose a people who were called the Nephites, and they were true believers in Christ; and among them there were those who were called by the Lamanites\u2014Jacobites, and Josephites, and Zoramites;",
+      "verse": "1:36",
+      "lineIndex": 92
+    },
+    {
+      "start": 533.628,
+      "end": 548.303,
+      "type": "line",
+      "text": "Therefore the true believers in Christ, and the true worshipers of Christ, (among whom were the three disciples of Jesus who should tarry) were called Nephites, and Jacobites, and Josephites, and Zoramites.",
+      "verse": "1:37",
+      "lineIndex": 93
+    },
+    {
+      "start": 548.983,
+      "end": 556.321,
+      "type": "line",
+      "text": "And it came to pass that they who rejected the gospel were called Lamanites, and Lemuelites, and Ishmaelites;",
+      "verse": "1:38",
+      "lineIndex": 94
+    },
+    {
+      "start": 556.501,
+      "end": 558.684,
+      "type": "line",
+      "text": "and they did not dwindle in unbelief,",
+      "verse": "1:38",
+      "lineIndex": 95
+    },
+    {
+      "start": 558.864,
+      "end": 562.393,
+      "type": "line",
+      "text": "but they did wilfully rebel against the gospel of Christ;",
+      "verse": "1:38",
+      "lineIndex": 96
+    },
+    {
+      "start": 562.573,
+      "end": 570.654,
+      "type": "line",
+      "text": "and they did teach their children that they should not believe, even as their fathers, from the beginning, did dwindle.",
+      "verse": "1:38",
+      "lineIndex": 97
+    },
+    {
+      "start": 571.334,
+      "end": 578.346,
+      "type": "line",
+      "text": "And it was because of the wickedness and abomination of their fathers, even as it was in the beginning.",
+      "verse": "1:39",
+      "lineIndex": 98
+    },
+    {
+      "start": 578.526,
+      "end": 586.56,
+      "type": "line",
+      "text": "And they were taught to hate the children of God, even as the Lamanites were taught to hate the children of Nephi from the beginning.",
+      "verse": "1:39",
+      "lineIndex": 99
+    },
+    {
+      "start": 587.24,
+      "end": 603.773,
+      "type": "line",
+      "text": "And it came to pass that two hundred and forty and four years had passed away, and thus were the affairs of the people. And the more wicked part of the people did wax strong, and became exceedingly more numerous than were the people of God.",
+      "verse": "1:40",
+      "lineIndex": 100
+    },
+    {
+      "start": 604.453,
+      "end": 618.013,
+      "type": "line",
+      "text": "And they did still continue to build up churches unto themselves, and adorn them with all manner of precious things. And thus did two hundred and fifty years pass away, and also two hundred and sixty years.",
+      "verse": "1:41",
+      "lineIndex": 101
+    },
+    {
+      "start": 618.693,
+      "end": 627.888,
+      "type": "line",
+      "text": "And it came to pass that the wicked part of the people began again to build up the secret oaths and combinations of Gadianton.",
+      "verse": "1:42",
+      "lineIndex": 103
+    },
+    {
+      "start": 628.568,
+      "end": 642.036,
+      "type": "line",
+      "text": "And also the people who were called the people of Nephi began to be proud in their hearts, because of their exceeding riches, and become vain like unto their brethren, the Lamanites.",
+      "verse": "1:43",
+      "lineIndex": 104
+    },
+    {
+      "start": 642.716,
+      "end": 647.267,
+      "type": "line",
+      "text": "And from this time the disciples began to sorrow for the sins of the world.",
+      "verse": "1:44",
+      "lineIndex": 105
+    },
+    {
+      "start": 647.947,
+      "end": 658.675,
+      "type": "line",
+      "text": "And it came to pass that when three hundred years had passed away, both the people of Nephi and the Lamanites had become exceedingly wicked one like unto another.",
+      "verse": "1:45",
+      "lineIndex": 107
+    },
+    {
+      "start": 659.355,
+      "end": 669.665,
+      "type": "line",
+      "text": "And it came to pass that the robbers of Gadianton did spread over all the face of the land; and there were none that were righteous save it were the disciples of Jesus.",
+      "verse": "1:46",
+      "lineIndex": 108
+    },
+    {
+      "start": 669.845,
+      "end": 676.114,
+      "type": "line",
+      "text": "And gold and silver did they lay up in store in abundance, and did traffic in all manner of traffic.",
+      "verse": "1:46",
+      "lineIndex": 109
+    },
+    {
+      "start": 676.794,
+      "end": 681.345,
+      "type": "line",
+      "text": "And it came to pass that after three hundred and five years had passed away,",
+      "verse": "1:47",
+      "lineIndex": 110
+    },
+    {
+      "start": 681.525,
+      "end": 684.497,
+      "type": "line",
+      "text": "(and the people did still remain in wickedness)",
+      "verse": "1:47",
+      "lineIndex": 111
+    },
+    {
+      "start": 684.677,
+      "end": 685.792,
+      "type": "line",
+      "text": "Amos died;",
+      "verse": "1:47",
+      "lineIndex": 112
+    },
+    {
+      "start": 685.972,
+      "end": 688.991,
+      "type": "line",
+      "text": "and his brother, Ammaron, did keep the record in his stead.",
+      "verse": "1:47",
+      "lineIndex": 113
+    },
+    {
+      "start": 689.671,
+      "end": 713.959,
+      "type": "line",
+      "text": "And it came to pass that when three hundred and twenty years had passed away, Ammaron, being constrained by the Holy Ghost, did hide up the records which were sacred\u2014yea, even all the sacred records which had been handed down from generation to generation, which were sacred\u2014even until the three hundred and twentieth year from the coming of Christ.",
+      "verse": "1:48",
+      "lineIndex": 114
+    },
+    {
+      "start": 714.639,
+      "end": 723.927,
+      "type": "line",
+      "text": "And he did hide them up unto the Lord, that they might come again unto the remnant of the house of Jacob, according to the prophecies and the promises of the Lord.",
+      "verse": "1:49",
+      "lineIndex": 115
+    },
+    {
+      "start": 724.107,
+      "end": 726.754,
+      "type": "line",
+      "text": "And thus is the end of the record of Ammaron.",
+      "verse": "1:49",
+      "lineIndex": 116
+    }
+  ]
+}
