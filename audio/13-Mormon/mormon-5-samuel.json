@@ -1,0 +1,464 @@
+{
+  "book": "mormon",
+  "bookName": "Mormon",
+  "chapter": 5,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 388.209,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 8.359,
+      "type": "line",
+      "text": "And it came to pass that I did go forth among the Nephites, and did repent of the oath which I had made that I would no more assist them;",
+      "verse": "5:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 8.539,
+      "end": 11.79,
+      "type": "line",
+      "text": "and they gave me command again of their armies,",
+      "verse": "5:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 11.97,
+      "end": 16.428,
+      "type": "line",
+      "text": "for they looked upon me as though I could deliver them from their afflictions.",
+      "verse": "5:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 17.108,
+      "end": 19.291,
+      "type": "line",
+      "text": "But behold, I was without hope,",
+      "verse": "5:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 19.471,
+      "end": 22.908,
+      "type": "line",
+      "text": "for I knew the judgments of the Lord which should come upon them;",
+      "verse": "5:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 23.088,
+      "end": 31.494,
+      "type": "line",
+      "text": "for they repented not of their iniquities, but did struggle for their lives without calling upon that Being who created them.",
+      "verse": "5:2",
+      "lineIndex": 6
+    },
+    {
+      "start": 32.174,
+      "end": 43.645,
+      "type": "line",
+      "text": "And it came to pass that the Lamanites did come against us as we had fled to the city of Jordan; but behold, they were driven back that they did not take the city at that time.",
+      "verse": "5:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 44.325,
+      "end": 49.155,
+      "type": "line",
+      "text": "And it came to pass that they came against us again, and we did maintain the city.",
+      "verse": "5:4",
+      "lineIndex": 8
+    },
+    {
+      "start": 49.335,
+      "end": 64.103,
+      "type": "line",
+      "text": "And there were also other cities which were maintained by the Nephites, which strongholds did cut them off that they could not get into the country which lay before us, to destroy the inhabitants of our land.",
+      "verse": "5:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 64.783,
+      "end": 68.266,
+      "type": "line",
+      "text": "But it came to pass that whatsoever lands we had passed by,",
+      "verse": "5:5",
+      "lineIndex": 10
+    },
+    {
+      "start": 68.446,
+      "end": 71.65,
+      "type": "line",
+      "text": "and the inhabitants thereof were not gathered in,",
+      "verse": "5:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 71.83,
+      "end": 74.106,
+      "type": "line",
+      "text": "were destroyed by the Lamanites,",
+      "verse": "5:5",
+      "lineIndex": 12
+    },
+    {
+      "start": 74.286,
+      "end": 79.209,
+      "type": "line",
+      "text": "and their towns, and villages, and cities were burned with fire;",
+      "verse": "5:5",
+      "lineIndex": 13
+    },
+    {
+      "start": 79.389,
+      "end": 83.058,
+      "type": "line",
+      "text": "and thus three hundred and seventy and nine years passed away.",
+      "verse": "5:5",
+      "lineIndex": 14
+    },
+    {
+      "start": 83.738,
+      "end": 101.71,
+      "type": "line",
+      "text": "And it came to pass that in the three hundred and eightieth year the Lamanites did come again against us to battle, and we did stand against them boldly; but it was all in vain, for so great were their numbers that they did tread the people of the Nephites under their feet.",
+      "verse": "5:6",
+      "lineIndex": 15
+    },
+    {
+      "start": 102.39,
+      "end": 106.059,
+      "type": "line",
+      "text": "And it came to pass that we did again take to flight,",
+      "verse": "5:7",
+      "lineIndex": 16
+    },
+    {
+      "start": 106.239,
+      "end": 110.14,
+      "type": "line",
+      "text": "and those whose flight was swifter than the Lamanites' did escape,",
+      "verse": "5:7",
+      "lineIndex": 17
+    },
+    {
+      "start": 110.32,
+      "end": 115.707,
+      "type": "line",
+      "text": "and those whose flight did not exceed the Lamanites' were swept down and destroyed.",
+      "verse": "5:7",
+      "lineIndex": 18
+    },
+    {
+      "start": 116.387,
+      "end": 136.913,
+      "type": "line",
+      "text": "And now behold, I, Mormon, do not desire to harrow up the souls of men in casting before them such an awful scene of blood and carnage as was laid before mine eyes; but I, knowing that these things must surely be made known, and that all things which are hid must be revealed upon the house-tops\u2014",
+      "verse": "5:8",
+      "lineIndex": 20
+    },
+    {
+      "start": 137.593,
+      "end": 152.175,
+      "type": "line",
+      "text": "And also that a knowledge of these things must come unto the remnant of these people, and also unto the Gentiles, who the Lord hath said should scatter this people, and this people should be counted as naught among them",
+      "verse": "5:9",
+      "lineIndex": 21
+    },
+    {
+      "start": 152.355,
+      "end": 168.377,
+      "type": "line",
+      "text": "\u2014therefore I write a small abridgment, daring not to give a full account of the things which I have seen, because of the commandment which I have received, and also that ye might not have too great sorrow because of the wickedness of this people.",
+      "verse": "5:9",
+      "lineIndex": 22
+    },
+    {
+      "start": 169.057,
+      "end": 177.788,
+      "type": "line",
+      "text": "And now behold, this I speak unto their seed, and also to the Gentiles who have care for the house of Israel, that realize and know from whence",
+      "verse": "5:10",
+      "lineIndex": 23
+    },
+    {
+      "start": 177.968,
+      "end": 179.454,
+      "type": "line",
+      "text": "their blessings come.",
+      "verse": "5:10",
+      "lineIndex": 24
+    },
+    {
+      "start": 180.134,
+      "end": 184.592,
+      "type": "line",
+      "text": "For I know that such will sorrow for the calamity of the house of Israel;",
+      "verse": "5:11",
+      "lineIndex": 25
+    },
+    {
+      "start": 184.772,
+      "end": 187.837,
+      "type": "line",
+      "text": "yea, they will sorrow for the destruction of this people;",
+      "verse": "5:11",
+      "lineIndex": 26
+    },
+    {
+      "start": 188.017,
+      "end": 189.364,
+      "type": "line",
+      "text": "they will sorrow",
+      "verse": "5:11",
+      "lineIndex": 27
+    },
+    {
+      "start": 189.544,
+      "end": 191.773,
+      "type": "line",
+      "text": "that this people had not repented",
+      "verse": "5:11",
+      "lineIndex": 28
+    },
+    {
+      "start": 191.953,
+      "end": 195.39,
+      "type": "line",
+      "text": "that they might have been clasped in the arms of Jesus.",
+      "verse": "5:11",
+      "lineIndex": 29
+    },
+    {
+      "start": 196.07,
+      "end": 200.714,
+      "type": "line",
+      "text": "Now these things are written unto the remnant of the house of Jacob;",
+      "verse": "5:12",
+      "lineIndex": 31
+    },
+    {
+      "start": 200.894,
+      "end": 207.535,
+      "type": "line",
+      "text": "and they are written after this manner, because it is known of God that wickedness will not bring them forth unto them;",
+      "verse": "5:12",
+      "lineIndex": 32
+    },
+    {
+      "start": 207.715,
+      "end": 212.452,
+      "type": "line",
+      "text": "and they are to be hid up unto the Lord that they may come forth in his own due time.",
+      "verse": "5:12",
+      "lineIndex": 33
+    },
+    {
+      "start": 213.132,
+      "end": 217.033,
+      "type": "line",
+      "text": "And this is the commandment which I have received; and behold,",
+      "verse": "5:13",
+      "lineIndex": 34
+    },
+    {
+      "start": 217.213,
+      "end": 222.739,
+      "type": "line",
+      "text": "they shall come forth according to the commandment of the Lord, when he shall see fit, in his wisdom.",
+      "verse": "5:13",
+      "lineIndex": 35
+    },
+    {
+      "start": 223.419,
+      "end": 227.32,
+      "type": "line",
+      "text": "And behold, they shall go unto the unbelieving of the Jews;",
+      "verse": "5:14",
+      "lineIndex": 36
+    },
+    {
+      "start": 227.5,
+      "end": 235.673,
+      "type": "line",
+      "text": "and for this intent shall they go\u2014 that they may be persuaded that Jesus is the Christ, the Son of the living God;",
+      "verse": "5:14",
+      "lineIndex": 37
+    },
+    {
+      "start": 235.853,
+      "end": 253.547,
+      "type": "line",
+      "text": "that the Father may bring about, through his most Beloved, his great and eternal purpose, in restoring the Jews, or all the house of Israel, to the land of their inheritance, which the Lord their God hath given them, unto the fulfilling of his covenant;",
+      "verse": "5:14",
+      "lineIndex": 38
+    },
+    {
+      "start": 254.227,
+      "end": 261.982,
+      "type": "line",
+      "text": "And also that the seed of this people may more fully believe his gospel, which shall go forth unto them from the Gentiles;",
+      "verse": "5:15",
+      "lineIndex": 40
+    },
+    {
+      "start": 262.162,
+      "end": 283.292,
+      "type": "line",
+      "text": "for this people shall be scattered, and shall become a dark, a filthy, and a loathsome people, beyond the description of that which ever hath been amongst us, yea, even that which hath been among the Lamanites, and this because of their unbelief and idolatry.",
+      "verse": "5:15",
+      "lineIndex": 41
+    },
+    {
+      "start": 283.972,
+      "end": 293.632,
+      "type": "line",
+      "text": "For behold, the Spirit of the Lord hath already ceased to strive with their fathers; and they are without Christ and God in the world;",
+      "verse": "5:16",
+      "lineIndex": 42
+    },
+    {
+      "start": 293.812,
+      "end": 297.016,
+      "type": "line",
+      "text": "and they are driven about as chaff before the wind.",
+      "verse": "5:16",
+      "lineIndex": 43
+    },
+    {
+      "start": 297.696,
+      "end": 299.879,
+      "type": "line",
+      "text": "They were once a delightsome people,",
+      "verse": "5:17",
+      "lineIndex": 44
+    },
+    {
+      "start": 300.059,
+      "end": 302.195,
+      "type": "line",
+      "text": "and they had Christ for their shepherd;",
+      "verse": "5:17",
+      "lineIndex": 45
+    },
+    {
+      "start": 302.375,
+      "end": 304.883,
+      "type": "line",
+      "text": "yea, they were led even by God the Father.",
+      "verse": "5:17",
+      "lineIndex": 46
+    },
+    {
+      "start": 305.563,
+      "end": 311.182,
+      "type": "line",
+      "text": "But now, behold, they are led about by Satan, even as chaff is driven before the wind,",
+      "verse": "5:18",
+      "lineIndex": 48
+    },
+    {
+      "start": 311.362,
+      "end": 318.607,
+      "type": "line",
+      "text": "or as a vessel is tossed about upon the waves, without sail or anchor, or without anything wherewith to steer her;",
+      "verse": "5:18",
+      "lineIndex": 49
+    },
+    {
+      "start": 318.787,
+      "end": 321.155,
+      "type": "line",
+      "text": "and even as she is, so are they.",
+      "verse": "5:18",
+      "lineIndex": 50
+    },
+    {
+      "start": 321.835,
+      "end": 329.637,
+      "type": "line",
+      "text": "And behold, the Lord hath reserved their blessings, which they might have received in the land, for the Gentiles who shall possess the land.",
+      "verse": "5:19",
+      "lineIndex": 51
+    },
+    {
+      "start": 330.317,
+      "end": 347.128,
+      "type": "line",
+      "text": "But behold, it shall come to pass that they shall be driven and scattered by the Gentiles; and after they have been driven and scattered by the Gentiles, behold, then will the Lord remember the covenant which he made unto Abraham and unto all the house of Israel.",
+      "verse": "5:20",
+      "lineIndex": 52
+    },
+    {
+      "start": 347.808,
+      "end": 354.077,
+      "type": "line",
+      "text": "And also the Lord will remember the prayers of the righteous, which have been put up unto him for them.",
+      "verse": "5:21",
+      "lineIndex": 53
+    },
+    {
+      "start": 354.757,
+      "end": 361.584,
+      "type": "line",
+      "text": "And then, O ye Gentiles, how can ye stand before the power of God, except ye shall repent and turn from your evil ways?",
+      "verse": "5:22",
+      "lineIndex": 54
+    },
+    {
+      "start": 362.264,
+      "end": 364.911,
+      "type": "line",
+      "text": "Know ye not that ye are in the hands of God?",
+      "verse": "5:23",
+      "lineIndex": 55
+    },
+    {
+      "start": 365.091,
+      "end": 367.413,
+      "type": "line",
+      "text": "Know ye not that he hath all power,",
+      "verse": "5:23",
+      "lineIndex": 56
+    },
+    {
+      "start": 367.593,
+      "end": 371.68,
+      "type": "line",
+      "text": "and at his great command the earth shall be rolled together as a scroll?",
+      "verse": "5:23",
+      "lineIndex": 57
+    },
+    {
+      "start": 372.36,
+      "end": 385.781,
+      "type": "line",
+      "text": "Therefore, repent ye, and humble yourselves before him, lest he shall come out in justice against you\u2014lest a remnant of the seed of Jacob shall go forth among you as a lion, and tear you in pieces,",
+      "verse": "5:24",
+      "lineIndex": 58
+    },
+    {
+      "start": 385.961,
+      "end": 387.54,
+      "type": "line",
+      "text": "and there is none to deliver.",
+      "verse": "5:24",
+      "lineIndex": 59
+    }
+  ]
+}

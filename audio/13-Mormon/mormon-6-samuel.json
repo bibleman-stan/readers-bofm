@@ -1,0 +1,440 @@
+{
+  "book": "mormon",
+  "bookName": "Mormon",
+  "chapter": 6,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 328.666,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 5.201,
+      "type": "line",
+      "text": "And now I finish my record concerning the destruction of my people, the Nephites.",
+      "verse": "6:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 5.381,
+      "end": 9.653,
+      "type": "line",
+      "text": "And it came to pass that we did march forth before the Lamanites.",
+      "verse": "6:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.333,
+      "end": 24.358,
+      "type": "line",
+      "text": "And I, Mormon, wrote an epistle unto the king of the Lamanites, and desired of him that he would grant unto us that we might gather together our people unto the land of Cumorah, by a hill which was called Cumorah,",
+      "verse": "6:2",
+      "lineIndex": 3
+    },
+    {
+      "start": 24.538,
+      "end": 26.581,
+      "type": "line",
+      "text": "and there we could give them battle.",
+      "verse": "6:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 27.261,
+      "end": 33.763,
+      "type": "line",
+      "text": "And it came to pass that the king of the Lamanites did grant unto me the thing which I desired.",
+      "verse": "6:3",
+      "lineIndex": 5
+    },
+    {
+      "start": 34.443,
+      "end": 53.112,
+      "type": "line",
+      "text": "And it came to pass that we did march forth to the land of Cumorah, and we did pitch our tents around about the hill Cumorah; and it was in a land of many waters, rivers, and fountains; and here we had hope to gain advantage over the Lamanites.",
+      "verse": "6:4",
+      "lineIndex": 6
+    },
+    {
+      "start": 53.792,
+      "end": 64.055,
+      "type": "line",
+      "text": "And when three hundred and eighty and four years had passed away, we had gathered in all the remainder of our people unto the land of Cumorah.",
+      "verse": "6:5",
+      "lineIndex": 7
+    },
+    {
+      "start": 64.735,
+      "end": 78.574,
+      "type": "line",
+      "text": "And it came to pass that when we had gathered in all our people in one to the land of Cumorah, behold I, Mormon, began to be old; and knowing it to be the last struggle of my people,",
+      "verse": "6:6",
+      "lineIndex": 8
+    },
+    {
+      "start": 78.754,
+      "end": 91.479,
+      "type": "line",
+      "text": "and having been commanded of the Lord that I should not suffer the records which had been handed down by our fathers, which were sacred, to fall into the hands of the Lamanites,",
+      "verse": "6:6",
+      "lineIndex": 9
+    },
+    {
+      "start": 91.659,
+      "end": 94.12,
+      "type": "line",
+      "text": "(for the Lamanites would destroy them)",
+      "verse": "6:6",
+      "lineIndex": 10
+    },
+    {
+      "start": 94.3,
+      "end": 105.028,
+      "type": "line",
+      "text": "therefore I made this record out of the plates of Nephi, and hid up in the hill Cumorah all the records which had been entrusted to me by the hand of the Lord,",
+      "verse": "6:6",
+      "lineIndex": 11
+    },
+    {
+      "start": 105.208,
+      "end": 109.248,
+      "type": "line",
+      "text": "save it were these few plates which I gave unto my son Moroni.",
+      "verse": "6:6",
+      "lineIndex": 12
+    },
+    {
+      "start": 109.928,
+      "end": 127.157,
+      "type": "line",
+      "text": "And it came to pass that my people, with their wives and their children, did now behold the armies of the Lamanites marching towards them; and with that awful fear of death which fills the breasts of all the wicked, did they await to receive them.",
+      "verse": "6:7",
+      "lineIndex": 14
+    },
+    {
+      "start": 127.837,
+      "end": 136.336,
+      "type": "line",
+      "text": "And it came to pass that they came to battle against us, and every soul was filled with terror because of the greatness of their numbers.",
+      "verse": "6:8",
+      "lineIndex": 15
+    },
+    {
+      "start": 137.016,
+      "end": 146.443,
+      "type": "line",
+      "text": "And it came to pass that they did fall upon my people with the sword, and with the bow, and with the arrow, and with the ax, and with all manner of weapons of war.",
+      "verse": "6:9",
+      "lineIndex": 16
+    },
+    {
+      "start": 147.123,
+      "end": 155.761,
+      "type": "line",
+      "text": "And it came to pass that my men were hewn down, yea, even my ten thousand who were with me, and I fell wounded in the midst;",
+      "verse": "6:10",
+      "lineIndex": 17
+    },
+    {
+      "start": 155.941,
+      "end": 159.47,
+      "type": "line",
+      "text": "and they passed by me that they did not put an end to my life.",
+      "verse": "6:10",
+      "lineIndex": 18
+    },
+    {
+      "start": 160.15,
+      "end": 168.927,
+      "type": "line",
+      "text": "And when they had gone through and hewn down all my people save it were twenty and four of us, (among whom was my son Moroni)",
+      "verse": "6:11",
+      "lineIndex": 19
+    },
+    {
+      "start": 169.107,
+      "end": 172.079,
+      "type": "line",
+      "text": "and we having survived the dead of our people,",
+      "verse": "6:11",
+      "lineIndex": 20
+    },
+    {
+      "start": 172.259,
+      "end": 184.287,
+      "type": "line",
+      "text": "did behold on the morrow, when the Lamanites had returned unto their camps, from the top of the hill Cumorah, the ten thousand of my people who were hewn down, being led in the front by me.",
+      "verse": "6:11",
+      "lineIndex": 21
+    },
+    {
+      "start": 184.967,
+      "end": 189.704,
+      "type": "line",
+      "text": "And we also beheld the ten thousand of my people who were led by my son Moroni.",
+      "verse": "6:12",
+      "lineIndex": 22
+    },
+    {
+      "start": 190.384,
+      "end": 195.957,
+      "type": "line",
+      "text": "And behold, the ten thousand of Gidgiddonah had fallen, and he also in the midst.",
+      "verse": "6:13",
+      "lineIndex": 23
+    },
+    {
+      "start": 196.637,
+      "end": 199.284,
+      "type": "line",
+      "text": "And Lamah had fallen with his ten thousand;",
+      "verse": "6:14",
+      "lineIndex": 24
+    },
+    {
+      "start": 199.464,
+      "end": 202.018,
+      "type": "line",
+      "text": "and Gilgal had fallen with his ten thousand;",
+      "verse": "6:14",
+      "lineIndex": 25
+    },
+    {
+      "start": 202.198,
+      "end": 204.799,
+      "type": "line",
+      "text": "and Limhah had fallen with his ten thousand;",
+      "verse": "6:14",
+      "lineIndex": 26
+    },
+    {
+      "start": 204.979,
+      "end": 207.487,
+      "type": "line",
+      "text": "and Jeneum had fallen with his ten thousand;",
+      "verse": "6:14",
+      "lineIndex": 27
+    },
+    {
+      "start": 207.667,
+      "end": 215.283,
+      "type": "line",
+      "text": "and Cumenihah, and Moronihah, and Antionum, and Shiblom, and Shem, and Josh, had fallen with their ten thousand each.",
+      "verse": "6:14",
+      "lineIndex": 28
+    },
+    {
+      "start": 215.963,
+      "end": 222.65,
+      "type": "line",
+      "text": "And it came to pass that there were ten more who did fall by the sword, with their ten thousand each;",
+      "verse": "6:15",
+      "lineIndex": 29
+    },
+    {
+      "start": 222.83,
+      "end": 227.567,
+      "type": "line",
+      "text": "yea, even all my people, save it were those twenty and four who were with me,",
+      "verse": "6:15",
+      "lineIndex": 30
+    },
+    {
+      "start": 227.747,
+      "end": 236.106,
+      "type": "line",
+      "text": "and also a few who had escaped into the south countries, and a few who had deserted over unto the Lamanites, had fallen;",
+      "verse": "6:15",
+      "lineIndex": 31
+    },
+    {
+      "start": 236.286,
+      "end": 240.791,
+      "type": "line",
+      "text": "and their flesh, and bones, and blood lay upon the face of the earth,",
+      "verse": "6:15",
+      "lineIndex": 32
+    },
+    {
+      "start": 240.971,
+      "end": 248.401,
+      "type": "line",
+      "text": "being left by the hands of those who slew them to molder upon the land, and to crumble and to return to their mother earth.",
+      "verse": "6:15",
+      "lineIndex": 33
+    },
+    {
+      "start": 249.081,
+      "end": 253.446,
+      "type": "line",
+      "text": "And my soul was rent with anguish, because of the slain of my people,",
+      "verse": "6:16",
+      "lineIndex": 34
+    },
+    {
+      "start": 253.626,
+      "end": 254.973,
+      "type": "line",
+      "text": "and I cried:",
+      "verse": "6:16",
+      "lineIndex": 35
+    },
+    {
+      "start": 255.653,
+      "end": 257.093,
+      "type": "line",
+      "text": "O ye fair ones,",
+      "verse": "6:17",
+      "lineIndex": 36
+    },
+    {
+      "start": 257.273,
+      "end": 260.292,
+      "type": "line",
+      "text": "how could ye have departed from the ways of the Lord!",
+      "verse": "6:17",
+      "lineIndex": 37
+    },
+    {
+      "start": 260.472,
+      "end": 261.912,
+      "type": "line",
+      "text": "O ye fair ones,",
+      "verse": "6:17",
+      "lineIndex": 38
+    },
+    {
+      "start": 262.092,
+      "end": 266.782,
+      "type": "line",
+      "text": "how could ye have rejected that Jesus, who stood with open arms to receive you!",
+      "verse": "6:17",
+      "lineIndex": 39
+    },
+    {
+      "start": 267.462,
+      "end": 270.527,
+      "type": "line",
+      "text": "Behold, if ye had not done this, ye would not have fallen.",
+      "verse": "6:18",
+      "lineIndex": 40
+    },
+    {
+      "start": 270.707,
+      "end": 272.472,
+      "type": "line",
+      "text": "But behold, ye are fallen,",
+      "verse": "6:18",
+      "lineIndex": 41
+    },
+    {
+      "start": 272.652,
+      "end": 274.092,
+      "type": "line",
+      "text": "and I mourn your loss.",
+      "verse": "6:18",
+      "lineIndex": 42
+    },
+    {
+      "start": 274.772,
+      "end": 283.131,
+      "type": "line",
+      "text": "O ye fair sons and daughters, ye fathers and mothers, ye husbands and wives, ye fair ones, how is it that ye could have fallen!",
+      "verse": "6:19",
+      "lineIndex": 43
+    },
+    {
+      "start": 283.811,
+      "end": 285.761,
+      "type": "line",
+      "text": "But behold, ye are gone,",
+      "verse": "6:20",
+      "lineIndex": 44
+    },
+    {
+      "start": 285.941,
+      "end": 288.263,
+      "type": "line",
+      "text": "and my sorrows cannot bring your return.",
+      "verse": "6:20",
+      "lineIndex": 45
+    },
+    {
+      "start": 288.943,
+      "end": 293.355,
+      "type": "line",
+      "text": "And the day soon cometh that your mortal must put on immortality,",
+      "verse": "6:21",
+      "lineIndex": 46
+    },
+    {
+      "start": 293.535,
+      "end": 299.712,
+      "type": "line",
+      "text": "and these bodies which are now moldering in corruption must soon become incorruptible bodies;",
+      "verse": "6:21",
+      "lineIndex": 47
+    },
+    {
+      "start": 299.892,
+      "end": 305.233,
+      "type": "line",
+      "text": "and then ye must stand before the judgment-seat of Christ, to be judged according to your works;",
+      "verse": "6:21",
+      "lineIndex": 48
+    },
+    {
+      "start": 305.413,
+      "end": 306.946,
+      "type": "line",
+      "text": "and if it so be",
+      "verse": "6:21",
+      "lineIndex": 49
+    },
+    {
+      "start": 307.126,
+      "end": 312.234,
+      "type": "line",
+      "text": "that ye are righteous, then are ye blessed with your fathers who have gone before you.",
+      "verse": "6:21",
+      "lineIndex": 50
+    },
+    {
+      "start": 312.914,
+      "end": 319.741,
+      "type": "line",
+      "text": "O that ye had repented before this great destruction had come upon you. But behold, ye are gone,",
+      "verse": "6:22",
+      "lineIndex": 51
+    },
+    {
+      "start": 319.921,
+      "end": 324.379,
+      "type": "line",
+      "text": "and the Father, yea, the Eternal Father of heaven, knoweth your state;",
+      "verse": "6:22",
+      "lineIndex": 52
+    },
+    {
+      "start": 324.559,
+      "end": 327.996,
+      "type": "line",
+      "text": "and he doeth with you according to his justice and mercy.",
+      "verse": "6:22",
+      "lineIndex": 53
+    }
+  ]
+}
