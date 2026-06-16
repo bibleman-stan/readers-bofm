@@ -1,0 +1,520 @@
+{
+  "book": "mormon",
+  "bookName": "Mormon",
+  "chapter": 2,
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "ddDFRErfhdc2asyySOG5",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.35,
+      "use_speaker_boost": true
+    },
+    "name": "Samuel"
+  },
+  "pauses": {
+    "line_ms": 180,
+    "verse_ms": 500
+  },
+  "duration": 458.005,
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 7.059,
+      "type": "line",
+      "text": "And it came to pass in that same year there began to be a war again between the Nephites and the Lamanites.",
+      "verse": "2:1",
+      "lineIndex": 1
+    },
+    {
+      "start": 7.239,
+      "end": 10.815,
+      "type": "line",
+      "text": "And notwithstanding I being young, was large in stature;",
+      "verse": "2:1",
+      "lineIndex": 2
+    },
+    {
+      "start": 10.995,
+      "end": 17.311,
+      "type": "line",
+      "text": "therefore the people of Nephi appointed me that I should be their leader, or the leader of their armies.",
+      "verse": "2:1",
+      "lineIndex": 3
+    },
+    {
+      "start": 17.991,
+      "end": 26.211,
+      "type": "line",
+      "text": "Therefore it came to pass that in my sixteenth year I did go forth at the head of an army of the Nephites, against the Lamanites;",
+      "verse": "2:2",
+      "lineIndex": 4
+    },
+    {
+      "start": 26.391,
+      "end": 30.06,
+      "type": "line",
+      "text": "therefore three hundred and twenty and six years had passed away.",
+      "verse": "2:2",
+      "lineIndex": 5
+    },
+    {
+      "start": 30.74,
+      "end": 42.907,
+      "type": "line",
+      "text": "And it came to pass that in the three hundred and twenty and seventh year the Lamanites did come upon us with exceedingly great power, insomuch that they did frighten my armies;",
+      "verse": "2:3",
+      "lineIndex": 6
+    },
+    {
+      "start": 43.087,
+      "end": 45.037,
+      "type": "line",
+      "text": "therefore they would not fight,",
+      "verse": "2:3",
+      "lineIndex": 7
+    },
+    {
+      "start": 45.217,
+      "end": 48.421,
+      "type": "line",
+      "text": "and they began to retreat towards the north countries.",
+      "verse": "2:3",
+      "lineIndex": 8
+    },
+    {
+      "start": 49.101,
+      "end": 59.55,
+      "type": "line",
+      "text": "And it came to pass that we did come to the city of Angola, and we did take possession of the city, and make preparations to defend ourselves against the Lamanites.",
+      "verse": "2:4",
+      "lineIndex": 9
+    },
+    {
+      "start": 59.73,
+      "end": 71.619,
+      "type": "line",
+      "text": "And it came to pass that we did fortify the city with our might; but notwithstanding all our fortifications the Lamanites did come upon us and did drive us out of the city.",
+      "verse": "2:4",
+      "lineIndex": 10
+    },
+    {
+      "start": 72.299,
+      "end": 75.828,
+      "type": "line",
+      "text": "And they did also drive us forth out of the land of David.",
+      "verse": "2:5",
+      "lineIndex": 11
+    },
+    {
+      "start": 76.508,
+      "end": 83.753,
+      "type": "line",
+      "text": "And we marched forth and came to the land of Joshua, which was in the borders west by the seashore.",
+      "verse": "2:6",
+      "lineIndex": 12
+    },
+    {
+      "start": 84.433,
+      "end": 91.631,
+      "type": "line",
+      "text": "And it came to pass that we did gather in our people as fast as it were possible, that we might get them together in one body.",
+      "verse": "2:7",
+      "lineIndex": 13
+    },
+    {
+      "start": 92.311,
+      "end": 96.258,
+      "type": "line",
+      "text": "But behold, the land was filled with robbers and with Lamanites;",
+      "verse": "2:8",
+      "lineIndex": 15
+    },
+    {
+      "start": 96.438,
+      "end": 103.729,
+      "type": "line",
+      "text": "and notwithstanding the great destruction which hung over my people, they did not repent of their evil doings;",
+      "verse": "2:8",
+      "lineIndex": 16
+    },
+    {
+      "start": 103.909,
+      "end": 113.708,
+      "type": "line",
+      "text": "therefore there was blood and carnage spread throughout all the face of the land, both on the part of the Nephites and also on the part of the Lamanites;",
+      "verse": "2:8",
+      "lineIndex": 17
+    },
+    {
+      "start": 113.888,
+      "end": 117.743,
+      "type": "line",
+      "text": "and it was one complete revolution throughout all the face of the land.",
+      "verse": "2:8",
+      "lineIndex": 18
+    },
+    {
+      "start": 118.423,
+      "end": 121.999,
+      "type": "line",
+      "text": "And now, the Lamanites had a king, and his name was Aaron;",
+      "verse": "2:9",
+      "lineIndex": 19
+    },
+    {
+      "start": 122.179,
+      "end": 128.959,
+      "type": "line",
+      "text": "and he came against us with an army of forty and four thousand. And behold, I withstood him with forty and two thousand.",
+      "verse": "2:9",
+      "lineIndex": 20
+    },
+    {
+      "start": 129.139,
+      "end": 133.272,
+      "type": "line",
+      "text": "And it came to pass that I beat him with my army that he fled before me.",
+      "verse": "2:9",
+      "lineIndex": 21
+    },
+    {
+      "start": 133.452,
+      "end": 135.913,
+      "type": "line",
+      "text": "And behold, all this was done,",
+      "verse": "2:9",
+      "lineIndex": 22
+    },
+    {
+      "start": 136.093,
+      "end": 139.808,
+      "type": "line",
+      "text": "and three hundred and thirty years had passed away.",
+      "verse": "2:9",
+      "lineIndex": 23
+    },
+    {
+      "start": 140.488,
+      "end": 152.098,
+      "type": "line",
+      "text": "And it came to pass that the Nephites began to repent of their iniquity, and began to cry even as had been prophesied by Samuel the prophet;",
+      "verse": "2:10",
+      "lineIndex": 24
+    },
+    {
+      "start": 152.278,
+      "end": 164.213,
+      "type": "line",
+      "text": "for behold no man could keep that which was his own, for the thieves, and the robbers, and the murderers, and the magic art, and the witchcraft which was in the land.",
+      "verse": "2:10",
+      "lineIndex": 25
+    },
+    {
+      "start": 164.893,
+      "end": 174.181,
+      "type": "line",
+      "text": "Thus there began to be a mourning and a lamentation in all the land because of these things, and more especially among the people of Nephi.",
+      "verse": "2:11",
+      "lineIndex": 26
+    },
+    {
+      "start": 174.861,
+      "end": 185.217,
+      "type": "line",
+      "text": "And it came to pass that when I, Mormon, saw their lamentation and their mourning and their sorrow before the Lord, my heart did begin to rejoice within me,",
+      "verse": "2:12",
+      "lineIndex": 27
+    },
+    {
+      "start": 185.397,
+      "end": 194.36,
+      "type": "line",
+      "text": "knowing the mercies and the long-suffering of the Lord, therefore supposing that he would be merciful unto them that they would again become a righteous people.",
+      "verse": "2:12",
+      "lineIndex": 28
+    },
+    {
+      "start": 195.04,
+      "end": 197.269,
+      "type": "line",
+      "text": "But behold this my joy was vain,",
+      "verse": "2:13",
+      "lineIndex": 29
+    },
+    {
+      "start": 197.449,
+      "end": 201.954,
+      "type": "line",
+      "text": "for their sorrowing was not unto repentance, because of the goodness of God;",
+      "verse": "2:13",
+      "lineIndex": 30
+    },
+    {
+      "start": 202.134,
+      "end": 208.311,
+      "type": "line",
+      "text": "but it was rather the sorrowing of the damned, because the Lord would not always suffer them to take happiness in sin.",
+      "verse": "2:13",
+      "lineIndex": 31
+    },
+    {
+      "start": 208.991,
+      "end": 213.681,
+      "type": "line",
+      "text": "And they did not come unto Jesus with broken hearts and contrite spirits,",
+      "verse": "2:14",
+      "lineIndex": 32
+    },
+    {
+      "start": 213.861,
+      "end": 216.508,
+      "type": "line",
+      "text": "but they did curse God, and wish to die.",
+      "verse": "2:14",
+      "lineIndex": 33
+    },
+    {
+      "start": 216.688,
+      "end": 220.264,
+      "type": "line",
+      "text": "Nevertheless they would struggle with the sword for their lives.",
+      "verse": "2:14",
+      "lineIndex": 34
+    },
+    {
+      "start": 220.944,
+      "end": 232.74,
+      "type": "line",
+      "text": "And it came to pass that my sorrow did return unto me again, and I saw that the day of grace was passed with them, both temporally and spiritually;",
+      "verse": "2:15",
+      "lineIndex": 35
+    },
+    {
+      "start": 232.92,
+      "end": 240.397,
+      "type": "line",
+      "text": "for I saw thousands of them hewn down in open rebellion against their God, and heaped up as dung upon the face of the land.",
+      "verse": "2:15",
+      "lineIndex": 36
+    },
+    {
+      "start": 240.577,
+      "end": 245.407,
+      "type": "line",
+      "text": "And thus three hundred and forty and four years had passed away.",
+      "verse": "2:15",
+      "lineIndex": 37
+    },
+    {
+      "start": 246.087,
+      "end": 261.319,
+      "type": "line",
+      "text": "And it came to pass that in the three hundred and forty and fifth year the Nephites did begin to flee before the Lamanites; and they were pursued until they came even to the land of Jashon, before it was possible to stop them in their retreat.",
+      "verse": "2:16",
+      "lineIndex": 38
+    },
+    {
+      "start": 261.999,
+      "end": 269.754,
+      "type": "line",
+      "text": "And now, the city of Jashon was near the land where Ammaron had deposited the records unto the Lord, that they might not be destroyed.",
+      "verse": "2:17",
+      "lineIndex": 40
+    },
+    {
+      "start": 269.934,
+      "end": 280.383,
+      "type": "line",
+      "text": "And behold I had gone according to the word of Ammaron, and taken the plates of Nephi, and did make a record according to the words of Ammaron.",
+      "verse": "2:17",
+      "lineIndex": 41
+    },
+    {
+      "start": 281.063,
+      "end": 287.379,
+      "type": "line",
+      "text": "And upon the plates of Nephi I did make a full account of all the wickedness and abominations;",
+      "verse": "2:18",
+      "lineIndex": 42
+    },
+    {
+      "start": 287.559,
+      "end": 294.664,
+      "type": "line",
+      "text": "but upon these plates I did forbear to make a full account of their wickedness and abominations,",
+      "verse": "2:18",
+      "lineIndex": 43
+    },
+    {
+      "start": 294.844,
+      "end": 306.268,
+      "type": "line",
+      "text": "for behold, a continual scene of wickedness and abominations has been before mine eyes ever since I have been sufficient to behold the ways of man.",
+      "verse": "2:18",
+      "lineIndex": 44
+    },
+    {
+      "start": 306.948,
+      "end": 309.874,
+      "type": "line",
+      "text": "And wo is me because of their wickedness;",
+      "verse": "2:19",
+      "lineIndex": 45
+    },
+    {
+      "start": 310.054,
+      "end": 314.744,
+      "type": "line",
+      "text": "for my heart has been filled with sorrow because of their wickedness, all my days;",
+      "verse": "2:19",
+      "lineIndex": 46
+    },
+    {
+      "start": 314.924,
+      "end": 318.732,
+      "type": "line",
+      "text": "nevertheless, I know that I shall be lifted up at the last day.",
+      "verse": "2:19",
+      "lineIndex": 47
+    },
+    {
+      "start": 319.412,
+      "end": 325.078,
+      "type": "line",
+      "text": "And it came to pass that in this year the people of Nephi again were hunted and driven.",
+      "verse": "2:20",
+      "lineIndex": 48
+    },
+    {
+      "start": 325.258,
+      "end": 332.456,
+      "type": "line",
+      "text": "And it came to pass that we were driven forth until we had come northward to the land which was called Shem.",
+      "verse": "2:20",
+      "lineIndex": 49
+    },
+    {
+      "start": 333.136,
+      "end": 343.353,
+      "type": "line",
+      "text": "And it came to pass that we did fortify the city of Shem, and we did gather in our people as much as it were possible, that perhaps we might save them from destruction.",
+      "verse": "2:21",
+      "lineIndex": 50
+    },
+    {
+      "start": 344.033,
+      "end": 349.42,
+      "type": "line",
+      "text": "And it came to pass in the three hundred and forty and sixth year they began to come upon us again.",
+      "verse": "2:22",
+      "lineIndex": 51
+    },
+    {
+      "start": 350.1,
+      "end": 364.357,
+      "type": "line",
+      "text": "And it came to pass that I did speak unto my people, and did urge them with great energy, that they would stand boldly before the Lamanites and fight for their wives, and their children, and their houses, and their homes.",
+      "verse": "2:23",
+      "lineIndex": 52
+    },
+    {
+      "start": 365.037,
+      "end": 374.743,
+      "type": "line",
+      "text": "And my words did arouse them somewhat to vigor, insomuch that they did not flee from before the Lamanites, but did stand with boldness against them.",
+      "verse": "2:24",
+      "lineIndex": 53
+    },
+    {
+      "start": 375.423,
+      "end": 389.309,
+      "type": "line",
+      "text": "And it came to pass that we did contend with an army of thirty thousand against an army of fifty thousand. And it came to pass that we did stand before them with such firmness that they did flee from before us.",
+      "verse": "2:25",
+      "lineIndex": 54
+    },
+    {
+      "start": 389.989,
+      "end": 398.302,
+      "type": "line",
+      "text": "And it came to pass that when they had fled we did pursue them with our armies, and did meet them again, and did beat them;",
+      "verse": "2:26",
+      "lineIndex": 56
+    },
+    {
+      "start": 398.482,
+      "end": 401.593,
+      "type": "line",
+      "text": "nevertheless the strength of the Lord was not with us;",
+      "verse": "2:26",
+      "lineIndex": 57
+    },
+    {
+      "start": 401.773,
+      "end": 406.463,
+      "type": "line",
+      "text": "yea, we were left to ourselves, that the Spirit of the Lord did not abide in us;",
+      "verse": "2:26",
+      "lineIndex": 58
+    },
+    {
+      "start": 406.643,
+      "end": 410.312,
+      "type": "line",
+      "text": "therefore we had become weak like unto our brethren.",
+      "verse": "2:26",
+      "lineIndex": 59
+    },
+    {
+      "start": 410.992,
+      "end": 418.376,
+      "type": "line",
+      "text": "And my heart did sorrow because of this the great calamity of my people, because of their wickedness and their abominations.",
+      "verse": "2:27",
+      "lineIndex": 60
+    },
+    {
+      "start": 418.556,
+      "end": 429.702,
+      "type": "line",
+      "text": "But behold, we did go forth against the Lamanites and the robbers of Gadianton, until we had again taken possession of the lands of our inheritance.",
+      "verse": "2:27",
+      "lineIndex": 61
+    },
+    {
+      "start": 430.382,
+      "end": 434.376,
+      "type": "line",
+      "text": "And the three hundred and forty and ninth year had passed away.",
+      "verse": "2:28",
+      "lineIndex": 62
+    },
+    {
+      "start": 434.556,
+      "end": 444.866,
+      "type": "line",
+      "text": "And in the three hundred and fiftieth year we made a treaty with the Lamanites and the robbers of Gadianton, in which we did get the lands of our inheritance divided.",
+      "verse": "2:28",
+      "lineIndex": 63
+    },
+    {
+      "start": 445.546,
+      "end": 453.766,
+      "type": "line",
+      "text": "And the Lamanites did give unto us the land northward, yea, even to the narrow passage which led into the land southward.",
+      "verse": "2:29",
+      "lineIndex": 64
+    },
+    {
+      "start": 453.946,
+      "end": 457.336,
+      "type": "line",
+      "text": "And we did give unto the Lamanites all the land southward.",
+      "verse": "2:29",
+      "lineIndex": 65
+    }
+  ]
+}
