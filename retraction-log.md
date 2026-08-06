@@ -1,6 +1,6 @@
 # Retraction-Precedent Log — readers-bofm
 
-Per the cross-corpus protocol at [`atu-method/docs/retraction-log-protocol.md`](../atu-method/docs/retraction-log-protocol.md). Chronological, append-only. New retractions land here per occurrence; 3-strike threshold under shared factor + sub-pattern promotes a sub-pattern to `atu-method/memories/feedback_three_anti_default_factors.md`.
+Per the cross-corpus protocol at [`atu-method/docs/04-process/retraction-log-protocol.md`](../atu-method/docs/04-process/retraction-log-protocol.md). Chronological, append-only. New retractions land here per occurrence; 3-strike threshold under shared factor + sub-pattern promotes a sub-pattern to `atu-method/memories/feedback_three_anti_default_factors.md`.
 
 **STATUS: INAUGURAL SEEDING — PROPOSED, AWAITING STAN REVIEW.** Entries below are drafted from the 2026-05-15 retrospective + this session's audit-rejected proposals. Dates and commit hashes were researched (per Stan-directive 2026-05-16) via git log + JSONL evidence — four "??" placeholders are now filled in and two dates were corrected (J6 from 04-?? → 05-10; doctrinal-weight from 04-25 → 04-23). Stan to verify factor/sub-pattern classifications + date corrections before this file is committed.
 

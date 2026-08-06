@@ -39,7 +39,7 @@ auditable rule canon that combines:
 - A **universal framework** — generative principle, structural justifications,
   merge-overrides, decision procedure — codified in the sibling
   [`atu-method`](https://github.com/bibleman-stan/atu-method) repository at
-  [`docs/framework.md`](https://github.com/bibleman-stan/atu-method/blob/main/docs/framework.md).
+  [`docs/01-normative/framework.md`](https://github.com/bibleman-stan/atu-method/blob/main/docs/01-normative/framework.md).
 - A **BoFM-specific rule §5** with ~26 rules, each documented in MISRA-style
   operational form (Status / Category / Decidability / Layer / Rule / UD
   signature / Closed lists / Scope / Exclusions / Precedence / Examples /

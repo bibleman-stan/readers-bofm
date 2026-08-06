@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""TF validation suite — the release gate from atu-method/docs/substrate.md §9 (the Opus red-team).
+"""TF validation suite — the release gate from atu-method/docs/03-implementation/substrate.md §9 (the Opus red-team).
 
 A built TF must pass ALL of these before deploy, not merely "it loads". Run against any version dir:
     python scripts/validate_tf.py 0.1
