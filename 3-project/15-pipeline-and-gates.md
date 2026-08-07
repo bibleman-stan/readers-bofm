@@ -109,5 +109,5 @@ These currently **block any commit that stages canon or corpus**. Doc-only commi
 
 - `.claude/skills/bofm-rebreak-at-scale/SKILL.md` — the same chain as an invocable procedure
 - `3-project/14-operational-protocols.md` — shell and commit discipline
-- `../atu-method/docs/01-normative/framework.md` §7 — the change protocol the §7.3 gate implements
-- `../atu-method/docs/04-process/improvement-loops.md` — why gates that never run are the actual failure mode
+- `../atu-method/1-method/framework.md` §7 — the change protocol the §7.3 gate implements
+- `../atu-method/4-process/improvement-loops.md` — why gates that never run are the actual failure mode

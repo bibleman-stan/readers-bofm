@@ -58,7 +58,7 @@ def _is_canon(p: str) -> bool:
     )
 
 def _is_scholarship(p: str) -> bool:
-    return p.startswith("1-method/scholarship/")
+    return p.startswith("1-method/2-evidence/scholarship/")
 
 def _is_corpus(p: str) -> bool:
     return p.startswith("data/text-files/")

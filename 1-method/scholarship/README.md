@@ -19,10 +19,10 @@ ep-1.md        # EP-1: According-To Manner vs. Source
 
 | Content type | Belongs in |
 |---|---|
-| Rationale / WHY the rule exists | `scholarship/r{N}.md` |
-| Grammatical-grounding citations (CGEL, BDF, Skousen, Joüon, Smyth, Wallace, etc.) | `scholarship/r{N}.md` |
-| Corpus empirics ("zero hits in v2-mine") as empirical-validation evidence | `scholarship/r{N}.md` |
-| Pragmatic-stance disclaimers | `scholarship/r{N}.md` |
+| Rationale / WHY the rule exists | `2-evidence/scholarship/r{N}.md` |
+| Grammatical-grounding citations (CGEL, BDF, Skousen, Joüon, Smyth, Wallace, etc.) | `2-evidence/scholarship/r{N}.md` |
+| Corpus empirics ("zero hits in v2-mine") as empirical-validation evidence | `2-evidence/scholarship/r{N}.md` |
+| Pragmatic-stance disclaimers | `2-evidence/scholarship/r{N}.md` |
 | Audit precedent narratives | `../audit-trail/r{N}.md` |
 | Sweep results with dates | `../audit-trail/r{N}.md` |
 | Cross-project provenance ("BoFM coined; Tanakh ported") | `../audit-trail/r{N}.md` or git log |
@@ -30,14 +30,14 @@ ep-1.md        # EP-1: According-To Manner vs. Source
 
 ## Discipline: move, don't delete
 
-When future §5 work touches a rule whose canon body still carries scholarly-grounding citations inline (a violation of the rule-template), MOVE the citations to `scholarship/r{N}.md`. Do NOT delete them — the defensibility surface is load-bearing, just relocated.
+When future §5 work touches a rule whose canon body still carries scholarly-grounding citations inline (a violation of the rule-template), MOVE the citations to `2-evidence/scholarship/r{N}.md`. Do NOT delete them — the defensibility surface is load-bearing, just relocated.
 
 ## Status
 
 Empty — to be populated per rule as §5 entries are touched. Parallel surfaces already exist at:
 
-- [`readers-gnt/private/01-method/scholarship/`](../../../../readers-gnt/private/01-method/scholarship/) — has `m4-gnt-1.md`
-- `readers-tanakh/private/01-method/scholarship/` — pending creation
+- [`readers-gnt/private/01-method/2-evidence/scholarship/`](../../../../readers-gnt/private/01-method/2-evidence/scholarship/) — has `m4-gnt-1.md`
+- `readers-tanakh/private/01-method/2-evidence/scholarship/` — pending creation
 
 ## Tracking
 

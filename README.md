@@ -24,7 +24,7 @@ Hebrew poetry) can be overlaid. Audio narration is available per chapter.
 | `data/parses/llm-direct/` | CoNLL-U Universal-Dependencies parses, used by validators. |
 | `data/syntax-reference/` | UD-taxonomy and other rule-reference tables. |
 | `validators/` | Python rule-detector and applier suite (see Method section). |
-| `private/01-method/colometry-canon.md` | Operational rule canon (BoFM-specific §5). |
+| `1-method/colometry-canon.md` | Operational rule canon (BoFM-specific §5). |
 | `audio/` | Narration MP3 files. |
 
 The site is deployed via GitHub Pages from `main`; pushes go live in ~30s.
@@ -39,16 +39,16 @@ auditable rule canon that combines:
 - A **universal framework** — generative principle, structural justifications,
   merge-overrides, decision procedure — codified in the sibling
   [`atu-method`](https://github.com/bibleman-stan/atu-method) repository at
-  [`docs/01-normative/framework.md`](https://github.com/bibleman-stan/atu-method/blob/main/docs/01-normative/framework.md).
+  [`3-project/1-method/framework.md`](https://github.com/bibleman-stan/atu-method/blob/main/1-method/framework.md).
 - A **BoFM-specific rule §5** with ~26 rules, each documented in MISRA-style
   operational form (Status / Category / Decidability / Layer / Rule / UD
   signature / Closed lists / Scope / Exclusions / Precedence / Examples /
-  Implementation). Lives at `private/01-method/colometry-canon.md` (also
+  Implementation). Lives at `1-method/colometry-canon.md` (also
   available as a single tracked file in this repo despite the `private/`
   directory name).
 - **Per-rule scholarship companions** — rationale, grammatical grounding,
   empirical evidence, intellectual lineage, adversarial history — at
-  [`atu-method/scholarship/bofm/`](https://github.com/bibleman-stan/atu-method/tree/main/scholarship/bofm).
+  [`atu-method/2-evidence/scholarship/bofm/`](https://github.com/bibleman-stan/atu-method/tree/main/2-evidence/scholarship/bofm).
 
 The validator suite (`validators/`) implements each rule as a UD-query or
 surface-pattern detector. The pre-commit hook runs `validators/run_all.py`
@@ -126,7 +126,7 @@ bash validators/hooks/install.sh
 ## License
 
 - **Code** (`*.py`, `*.js`, `*.html`, `*.css`): MIT — see [LICENSE](LICENSE).
-- **Editorial method, canon, scholarship** (`private/01-method/`, prose docs):
+- **Editorial method, canon, scholarship** (`1-method/`, prose docs):
   the methodology is shared work between this repository and `atu-method`;
   see [`atu-method/LICENSE-DOCS`](https://github.com/bibleman-stan/atu-method/blob/main/LICENSE-DOCS)
   (CC-BY-4.0).

@@ -49,7 +49,7 @@ is a scope claim on a settled rule, so it wants an adversarial audit before it l
 
 ### [2026-08-07] Non-finite predication — the §2.1 reconstruction
 
-**The ask.** `atu-method/docs/04-process/proposal-2026-08-06-criterion-reconstruction.md`
+**The ask.** `atu-method/4-process/proposal-2026-08-06-criterion-reconstruction.md`
 found that three live §2.1 allowances rest on two carve-outs *"cited as existing and
 defined nowhere,"* and a fourth appears to contradict §2.2's firewall directly. Its
 step 1 is a single ruling: **does non-finite material ever constitute a thought unit

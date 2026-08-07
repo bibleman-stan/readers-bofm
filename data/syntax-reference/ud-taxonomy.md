@@ -1,6 +1,6 @@
 # Universal Dependencies — Colometry Reference
 
-**Purpose:** The standard vocabulary our canon rules cite when grounding in English syntax. Every rule in `private/01-method/colometry-canon.md` should map to one or more entries here. This document is the common floor.
+**Purpose:** The standard vocabulary our canon rules cite when grounding in English syntax. Every rule in `1-method/colometry-canon.md` should map to one or more entries here. This document is the common floor.
 
 **Standard:** Universal Dependencies v2 (universaldependencies.org). CC BY-SA.
 
@@ -174,7 +174,7 @@ Honest limits of this framework for our purposes:
 
 ## Part 7 — Break Legality Reference
 
-This table is a break-legality filter, not a break-doctrine. It catalogs where English grammar permits or forbids line breaks — not where we choose to break. Editorial decisions (when to take a permitted break, when to merge a permitted split) belong in the colometry canon at `private/01-method/colometry-canon.md`.
+This table is a break-legality filter, not a break-doctrine. It catalogs where English grammar permits or forbids line breaks — not where we choose to break. Editorial decisions (when to take a permitted break, when to merge a permitted split) belong in the colometry canon at `1-method/colometry-canon.md`.
 
 | UD signature | Legality | CGEL § |
 |---|---|---|

@@ -1,6 +1,6 @@
 # BofM Colometry — Operating Canon
 
-**Version:** 3.0 (2026-05-11 — four-plane architectural restructuring; framework extracted to atu-method/docs/01-normative/framework.md)
+**Version:** 3.0 (2026-05-11 — four-plane architectural restructuring; framework extracted to atu-method/1-method/framework.md)
 **Predecessors:**
 - v2.0 (2026-04-19) — superseded; framework material lived in §0/§1/§2/§7 prose. Now pointered to atu-method.
 - v1.0 (`archive/colometry-canon-v1-retired-2026-04-19.md`) — retained for reference, no longer authoritative.
@@ -9,13 +9,13 @@
 
 ## How to use this document
 
-This canon is the BoFM-corpus instantiation of the ATU methodology framework. Universal framework material (mission, generative principle, structural justifications, merge-overrides, decision procedure, change protocol) lives in [`atu-method/docs/01-normative/framework.md`](../../atu-method/docs/01-normative/framework.md); this document holds BoFM-specific rule detail and operational artefacts.
+This canon is the BoFM-corpus instantiation of the ATU methodology framework. Universal framework material (mission, generative principle, structural justifications, merge-overrides, decision procedure, change protocol) lives in [`atu-method/1-method/framework.md`](../../atu-method/1-method/framework.md); this document holds BoFM-specific rule detail and operational artefacts.
 
-**For humans** reviewing the method or wanting WHY-content: see [`atu-method/docs/01-normative/framework.md`](../../atu-method/docs/01-normative/framework.md) (universal framework) + [`atu-method/scholarship/bofm/`](../../atu-method/scholarship/bofm/) (per-rule rationale, grammatical grounding, empirical evidence, intellectual lineage, adversarial history).
+**For humans** reviewing the method or wanting WHY-content: see [`atu-method/1-method/framework.md`](../../atu-method/1-method/framework.md) (universal framework) + [`atu-method/2-evidence/scholarship/bofm/`](../../atu-method/2-evidence/scholarship/bofm/) (per-rule rationale, grammatical grounding, empirical evidence, intellectual lineage, adversarial history).
 
 **For robots** applying the method to v2-mine sources: read **Part II — Operating Rules** below (§3 Quick-Reference, §3.5 Precedence Hierarchy, §4 Layer 1 Pointers, §5 Rule Detail, §6 Validator Suite). The §3.5 Precedence Hierarchy is the single source of cross-rule precedence ordering — per-rule Precedence fields reference it by tier. Validator output is a **work queue**, not a review queue. `STRONG-*-CANDIDATE` tags are application-ready Category A by default; `REVIEW-REQUIRED` items are the only flags requiring per-item editorial judgment.
 
-**For updating this document:** see [`atu-method/docs/01-normative/framework.md §7 Change Protocol`](../../atu-method/docs/01-normative/framework.md) for the universal change protocol (12 mandatory-audit triggers, audit-skippable categories, commit-msg discipline). BoFM-canon-specific extensions to that protocol (audit-trail file convention, scholarship-companion convention) are noted in §7 below.
+**For updating this document:** see [`atu-method/1-method/framework.md §7 Change Protocol`](../../atu-method/1-method/framework.md) for the universal change protocol (12 mandatory-audit triggers, audit-skippable categories, commit-msg discipline). BoFM-canon-specific extensions to that protocol (audit-trail file convention, scholarship-companion convention) are noted in §7 below.
 
 ---
 
@@ -23,7 +23,7 @@ This canon is the BoFM-corpus instantiation of the ATU methodology framework. Un
 
 ## 0. Purpose and Stance
 
-**Pointer to framework.** Universal mission, method (sense-driven mission + syntax-constrained method), pragmatic stance, and scope statements are codified at [`atu-method/docs/01-normative/framework.md §0`](../../atu-method/docs/01-normative/framework.md). This canon does not duplicate that prose.
+**Pointer to framework.** Universal mission, method (sense-driven mission + syntax-constrained method), pragmatic stance, and scope statements are codified at [`atu-method/1-method/framework.md §0`](../../atu-method/1-method/framework.md). This canon does not duplicate that prose.
 
 BoFM-specific framing — Royal Skousen's *The Earliest Text* (2009/2022) as the intellectual-lineage trigger; v2-mine source-file conventions for editorial work; BoFM-archaic English register (KJV-derivative) governing the rule-set's lexical choices — is referenced in §5 rule entries where applicable. Skousen's sense-line work was the parent precedent for BoFM; the sibling readers-gnt and readers-tanakh projects extend the methodology analogically.
 
@@ -31,11 +31,11 @@ BoFM-specific framing — Royal Skousen's *The Earliest Text* (2009/2022) as the
 
 ## 1. The Framework — Proposition-First, Syntax-Constrained
 
-**Pointer to framework.** The framework specification — generative principle (each proposition splits by default); three closed-list ways syntax forbids splits (Layer 1 mid-phrase prohibitions, complement integrity, formula integrity); image diagnostic (camera-angle test); five structural justifications J1–J5 (formally-marked parallel series, portrait accumulation, speech-act announcement, classical commata, substantive adjunct); four merge-overrides M1–M4 (Gorgianic bonded pair, verb-object clause-nucleus bond, bare-governor indivisibility, fragmented atomic thought-unit); the four forces summary; the five-step decision procedure; the application-order step-by-step (Step 0 input filter through Step 4 diagnostic); the N=2 Adjudication Principle and N=3+ cliff (Helaman 3:16 precedent); the punctuation-not-a-signal and versification-not-a-signal stances; the Parallel-List Uniformity Principle (Moroni 10:8-17 spiritual-gifts list canonical case); and the Authorial Asymmetry Principle (2 Nephi 9:27-38 wo-series canonical case) — is codified at [`atu-method/docs/01-normative/framework.md §1`](../../atu-method/docs/01-normative/framework.md). This canon does not duplicate that prose.
+**Pointer to framework.** The framework specification — generative principle (each proposition splits by default); three closed-list ways syntax forbids splits (Layer 1 mid-phrase prohibitions, complement integrity, formula integrity); image diagnostic (camera-angle test); five structural justifications J1–J5 (formally-marked parallel series, portrait accumulation, speech-act announcement, classical commata, substantive adjunct); four merge-overrides M1–M4 (Gorgianic bonded pair, verb-object clause-nucleus bond, bare-governor indivisibility, fragmented atomic thought-unit); the four forces summary; the five-step decision procedure; the application-order step-by-step (Step 0 input filter through Step 4 diagnostic); the N=2 Adjudication Principle and N=3+ cliff (Helaman 3:16 precedent); the punctuation-not-a-signal and versification-not-a-signal stances; the Parallel-List Uniformity Principle (Moroni 10:8-17 spiritual-gifts list canonical case); and the Authorial Asymmetry Principle (2 Nephi 9:27-38 wo-series canonical case) — is codified at [`atu-method/1-method/framework.md §1`](../../atu-method/1-method/framework.md). This canon does not duplicate that prose.
 
 **BoFM-corpus instantiations of the framework:**
 
-- **M1 bonded-pair list (verb pairs, corpus-attested):** `{repent, believe}`, `{weep, gnash}` (verbal-extrapolated from canonical nominal hendiadys), `{fight, quarrel}`, `{bless, sanctify}`, `{fear, tremble}`, `{murmur, complain}`, `{hunger, thirst}`. M1 verb-pair protection fires only on N=2 verb-coordination per the N=2-only caveat in atu-method/docs/01-normative/framework.md §1.5. Detector reference: `validators/colometry/validate_polysyndetic_verb_chain_ud.py`.
+- **M1 bonded-pair list (verb pairs, corpus-attested):** `{repent, believe}`, `{weep, gnash}` (verbal-extrapolated from canonical nominal hendiadys), `{fight, quarrel}`, `{bless, sanctify}`, `{fear, tremble}`, `{murmur, complain}`, `{hunger, thirst}`. M1 verb-pair protection fires only on N=2 verb-coordination per the N=2-only caveat in atu-method/1-method/framework.md §1.5. Detector reference: `validators/colometry/validate_polysyndetic_verb_chain_ud.py`.
 - **M1 nominal-pair canonical cases:** *grace and mercy*, *heaven and earth*, *dust and ashes*, *flesh and blood*, *soul and body*, *weeping and gnashing of teeth*, *faith and repentance*.
 - **J3 named patterns** (operational sub-rules under speech-act announcement):
   - **Verily formula** — *"Verily I say unto you"* / *"Verily, verily, I say unto you"*: 32 instances total, all in 3 Nephi. Formula stands on its own line; content clause leads next line. See §5 J3-pattern documentation.
@@ -48,7 +48,7 @@ BoFM-specific framing — Royal Skousen's *The Earliest Text* (2009/2022) as the
 
 ## 2. Autonomy Boundary — Categories A / B / C
 
-**Pointer to framework.** Categories A (Mechanical, mandatory), B (Editorial, judgment-required), C (Theological / textual-critical), the Mechanical-Rule Authority principle, the default-handling under uncertainty, and the Scope/Precedence/Closed-List Diagnostic are codified at [`atu-method/docs/01-normative/framework.md §2`](../../atu-method/docs/01-normative/framework.md). This canon does not duplicate that prose.
+**Pointer to framework.** Categories A (Mechanical, mandatory), B (Editorial, judgment-required), C (Theological / textual-critical), the Mechanical-Rule Authority principle, the default-handling under uncertainty, and the Scope/Precedence/Closed-List Diagnostic are codified at [`atu-method/1-method/framework.md §2`](../../atu-method/1-method/framework.md). This canon does not duplicate that prose.
 
 Per-rule Category assignments are in each §5 entry's `Category:` header field.
 
@@ -96,7 +96,7 @@ Per-rule operational detail lives in §5. Each rule's full template entry (Statu
 | EP-5 | Virtue/vice lists | Active | B | 3 | §5 EP-5 | (no dedicated validator yet; Cat B = Stan-eye-check) |
 | M4-BoFM-1 | Subject-orphan predicate completion | Active | A (closed-list shapes) + B (length-backstop) | 3 | §5 M4-BoFM-1 | `validators/colometry/validate_m4_bofm_1_subject_orphan.py` |
 
-**Status semantics:** Active = settled, fires per detector signatures. Proposed = awaiting corpus-sweep verification per the framework's adoption protocol at [`atu-method/docs/01-normative/framework.md §7.8`](../../atu-method/docs/01-normative/framework.md). Retired = no longer governs (none in current canon; retired rules would be archived).
+**Status semantics:** Active = settled, fires per detector signatures. Proposed = awaiting corpus-sweep verification per the framework's adoption protocol at [`atu-method/1-method/framework.md §7.8`](../../atu-method/1-method/framework.md). Retired = no longer governs (none in current canon; retired rules would be archived).
 
 **Category semantics:** A = Mechanical, mandatory (rule firing IS the approval; auto-apply by default). B = Editorial, judgment-required (flag and discuss). C = Theological / textual-critical (hand-curation only).
 
@@ -255,7 +255,7 @@ See [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-reference/ud-taxo
 
 ## 5. The Rules (Detail)
 
-*Each rule below follows the operational template specified in [`atu-method/docs/rule-template.md`](../../atu-method/docs/rule-template.md) — MISRA-style with RFC 2119 normative keywords. Rationale, grammatical-grounding citations, audit-trail narratives, and corpus-empirics histories are extracted to the per-rule scholarship companion in [`atu-method/scholarship/bofm/`](../../atu-method/scholarship/bofm/) (cross-referenced from each rule's Implementation block).*
+*Each rule below follows the operational template specified in [`atu-method/docs/rule-template.md`](../../atu-method/docs/rule-template.md) — MISRA-style with RFC 2119 normative keywords. Rationale, grammatical-grounding citations, audit-trail narratives, and corpus-empirics histories are extracted to the per-rule scholarship companion in [`atu-method/2-evidence/scholarship/bofm/`](../../atu-method/2-evidence/scholarship/bofm/) (cross-referenced from each rule's Implementation block).*
 
 <!-- ===== §2.2 Marker Registry (BoFM) ===== -->
 ### §2.2 Marker Registry — BoFM instantiation
@@ -263,7 +263,7 @@ See [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-reference/ud-taxo
 **Status:** Active
 **Category:** A (Mechanical, mandatory — registry membership + the three entry conditions ARE the approval)
 **Layer:** 3
-**Framework pointer:** [`atu-method/docs/01-normative/framework.md §2.2`](../../atu-method/docs/01-normative/framework.md) — "The explicit-marker license (secondary criterion)". This section is the BoFM-corpus instantiation of that license; it is the corpus's FIRST registered §2.2 instance and is recorded here per the framework's "Registry discipline" mandate (each marker + bidirectional-test status + worked example).
+**Framework pointer:** [`atu-method/1-method/framework.md §2.2`](../../atu-method/1-method/framework.md) — "The explicit-marker license (secondary criterion)". This section is the BoFM-corpus instantiation of that license; it is the corpus's FIRST registered §2.2 instance and is recorded here per the framework's "Registry discipline" mandate (each marker + bidirectional-test status + worked example).
 
 The §2.2 marker license is a narrow, closed-list **break-license** — NOT an ATU-from-fragment rule. It does not certify an incomplete fragment as a thought. It permits a break, at an author-placed marker, between cola that are *already* closure-eligible under the bidirectional test (often via §2.1 ellipsis-restoration) but that the KEEP-AS-IS default would otherwise hold merged. The marker signals that this closure-eligible beat is a distinct authorial thought-move (escalation, restatement, enumerated parallel assertion).
 
@@ -431,7 +431,7 @@ AICTP_VARIANTS:
 - Applier: (none — surface-pattern keep-whole; corpus is hand-authored at this granularity, validator reports violations)
 - Closed-list definitions: §AICTP-Variants (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R1.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R1.md`](atu-method/scholarship/bofm/R1.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R1.md`](atu-method/2-evidence/scholarship/bofm/R1.md)
 
 <!-- ===== R5 ===== -->
 ### R5: Equivalence "Or" as Appositive
@@ -508,7 +508,7 @@ The substitution probes used by human reviewers applying the substitution test (
 - Closed-list / threshold definitions: `SHORT_CONJUNCT_THRESHOLD = 4` in validator source
 - Bucketing logic: STRONG = same-UPOS ∧ (both-short ∨ second-short); REVIEW = otherwise
 - Audit trail: `readers-bofm/private/audit-trail/R5.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R5.md`](atu-method/scholarship/bofm/R5.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R5.md`](atu-method/2-evidence/scholarship/bofm/R5.md)
 
 <!-- ===== R6 ===== -->
 ### R6: Causal Clauses Break
@@ -573,7 +573,7 @@ action: SPLIT_BEFORE_MARK
 - Applier: [`validators/apply_rule_06_ud.py`](../../../../readers-bofm/validators/apply_rule_06_ud.py)
 - Closed-list definitions: `because`-lemma hardcoded inline in validator; R17 precedence guard imports `GOVERNING_LEMMAS` from `validate_rule_17_ud.py`
 - Audit trail: `readers-bofm/private/audit-trail/R6.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R6.md`](atu-method/scholarship/bofm/R6.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R6.md`](atu-method/2-evidence/scholarship/bofm/R6.md)
 
 <!-- ===== R7 ===== -->
 ### R7: Purpose Clauses Break
@@ -656,7 +656,7 @@ RESULT_DEGREE_MARKERS:
 - Applier: [`validators/apply_rule_07_ud.py`](../../../../readers-bofm/validators/apply_rule_07_ud.py)
 - Closed-list definitions: in validator source (`MODAL_AUX_LEMMAS`, `RULE_26_HEAD_LEMMAS`, `RESULT_DEGREE_MARKERS`)
 - Audit trail: `readers-bofm/private/audit-trail/R7.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R7.md`](atu-method/scholarship/bofm/R7.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R7.md`](atu-method/2-evidence/scholarship/bofm/R7.md)
 
 <!-- ===== R9 ===== -->
 ### R9: Never End a Line on a Conjunction
@@ -693,7 +693,7 @@ action: MERGE_FORWARD
 - Validator: `validators/syntax/validate_line_final_tokens.py`
 - Applier: (none — surface-pattern Layer-1; corpus is hand-authored at this granularity, validator reports MALFORMED on violations)
 - Audit trail: `private/audit-trail/R9.md`
-- Scholarship: `atu-method/scholarship/bofm/R9.md`
+- Scholarship: `atu-method/2-evidence/scholarship/bofm/R9.md`
 
 <!-- ===== R10 ===== -->
 ### R10: Never Split Verb from Direct Object
@@ -765,7 +765,7 @@ action: MERGE_FORWARD
 - Applier: [`validators/apply_rule_10_ud.py`](../../../../readers-bofm/validators/apply_rule_10_ud.py)
 - Closed-list definitions: no named bare-NP-shape constant; the deprel + UPOS + line-gap predicate in `scan_book()` is the operational signature (see Closed lists block above)
 - Audit trail: `readers-bofm/private/audit-trail/R10.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R10.md`](atu-method/scholarship/bofm/R10.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R10.md`](atu-method/2-evidence/scholarship/bofm/R10.md)
 
 <!-- ===== R11 ===== -->
 ### R11: Never End a Line on an Article (Determiner)
@@ -802,7 +802,7 @@ action: MERGE_FORWARD
 - Validator: `validators/syntax/validate_line_final_tokens.py`
 - Applier: (none — surface-pattern Layer-1)
 - Audit trail: `private/audit-trail/R11.md`
-- Scholarship: `atu-method/scholarship/bofm/R11.md`
+- Scholarship: `atu-method/2-evidence/scholarship/bofm/R11.md`
 
 <!-- ===== R12 ===== -->
 ### R12: Never Split Auxiliary from Main Verb
@@ -919,7 +919,7 @@ At N≥3 coordinated participles under one shared auxiliary, J1 wins uncondition
 - Layer 1 break-legality table: [`data/syntax-reference/ud-taxonomy.md` §7](../../../../readers-bofm/data/syntax-reference/ud-taxonomy.md) — rows *line-final `AUX` with pending `aux` relation* and *line-final participle followed by coordinated participle under shared modal+aux*, both marked `REQUIRED-MERGE`.
 - Closed-list definitions: in validator source (`MODAL_AUX_PATTERN`, `PAST_PARTICIPLES`).
 - Audit trail: `readers-bofm/private/audit-trail/R12.md` (to be populated during BoFM canon migration).
-- Scholarship: [`atu-method/scholarship/bofm/R12.md`](atu-method/scholarship/bofm/R12.md).
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R12.md`](atu-method/2-evidence/scholarship/bofm/R12.md).
 
 <!-- ===== R13a ===== -->
 ### R13a: Never End a Line on a Preposition Seeking Its Object
@@ -958,7 +958,7 @@ action: MERGE_FORWARD
 - Validator: `validators/syntax/validate_line_final_tokens.py`
 - Applier: (none — surface-pattern Layer-1)
 - Audit trail: `private/audit-trail/R13a.md`
-- Scholarship: `atu-method/scholarship/bofm/R13a.md`
+- Scholarship: `atu-method/2-evidence/scholarship/bofm/R13a.md`
 
 <!-- ===== R15 ===== -->
 ### R15: Vocative Units Are Indivisible
@@ -1043,7 +1043,7 @@ action: SPLIT_BEFORE_SUBJECT
 - Applier: [`validators/apply_rule_15_vocative_splits.py`](../../../../readers-bofm/validators/apply_rule_15_vocative_splits.py)
 - Closed-list definitions: §Vocative-Confirmers-R15 (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R15.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R15.md`](atu-method/scholarship/bofm/R15.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R15.md`](atu-method/2-evidence/scholarship/bofm/R15.md)
 
 <!-- ===== R16 ===== -->
 ### R16: Dangling "That" After AICTP
@@ -1096,7 +1096,7 @@ AICTP_VARIANTS:  # inherited from R1
 - Applier: (none — surface-pattern split-before; corpus is hand-authored at this granularity, validator reports violations)
 - Closed-list definitions: §AICTP-Variants (inherited from R1)
 - Audit trail: `readers-bofm/private/audit-trail/R16.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R16.md`](atu-method/scholarship/bofm/R16.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R16.md`](atu-method/2-evidence/scholarship/bofm/R16.md)
 
 <!-- ===== R17 ===== -->
 ### R17: Complement Integrity
@@ -1192,7 +1192,7 @@ The sub-rule fires only when the matrix governor is in `GOVERNING_LEMMAS`. Out-o
 - Applier: [`validators/apply_rule_17_ud.py`](../../../readers-bofm/validators/apply_rule_17_ud.py)
 - Verb-class definitions: §Verb-Classes-R17 (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R17.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R17.md`](atu-method/scholarship/bofm/R17.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R17.md`](atu-method/2-evidence/scholarship/bofm/R17.md)
 
 ---
 
@@ -1259,7 +1259,7 @@ Date-colophon formulas are governed by R23 (sister rule, same KEEP_WHOLE logic; 
 - Applier: (none — surface-pattern keep-whole; corpus is hand-authored at this granularity, validators report violations)
 - Closed-list definitions: §Fixed-Idioms-R18 (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R18.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R18.md`](atu-method/scholarship/bofm/R18.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R18.md`](atu-method/2-evidence/scholarship/bofm/R18.md)
 
 <!-- ===== R18a ===== -->
 ### R18a: Patriarch-Deity-Triad Fixed Formula
@@ -1325,7 +1325,7 @@ PATRIARCH_DEITY_TRIAD_VARIANTS:
 - Applier: (none — surface-pattern keep-whole; validator reports violations for hand-correction or merge-applier dispatch)
 - Closed-list definitions: §Patriarch-Deity-Triad-R18a (this section)
 - Audit trail: `readers-bofm/private/audit-trail/R18a.md` (to be populated)
-- Scholarship: `atu-method/scholarship/bofm/R18a.md` (to be authored)
+- Scholarship: `atu-method/2-evidence/scholarship/bofm/R18a.md` (to be authored)
 
 <!-- ===== R19 ===== -->
 ### R19: Cataphoric "That"/Relative Clauses Break; Anaphoric Merge
@@ -1429,7 +1429,7 @@ V2 dispatch is UPOS-only; no lemma list. Typical BoFM `CATAPHORIC_UPOS` heads pa
 - Closed-list definitions: `ANAPHORIC_UPOS`, `CATAPHORIC_UPOS` in validator source
 - Applier filters: adjacency gap = 1, merged-line length ≤ 130 characters (Jarom-1:8-style catastrophe guard)
 - Audit trail: `readers-bofm/private/audit-trail/R19.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R19.md`](atu-method/scholarship/bofm/R19.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R19.md`](atu-method/2-evidence/scholarship/bofm/R19.md)
 
 <!-- ===== R20 ===== -->
 ### R20: No-Anchor Rule
@@ -1542,7 +1542,7 @@ The `CONNECTIVE_LEMMAS` list captures discourse connectives that legitimately oc
 - Applier: not implemented (remediation is per-case editorial — R20 violations route to MERGE_FORWARD candidate or REVIEW; no auto-applier)
 - Closed-list definitions: `CONNECTIVE_LEMMAS`, `STRUCTURALLY_JUSTIFIED_LEADING_UPOS`, `PREDICATIVE_PART_DEPRELS` in validator source. Anchor-kind taxonomy is documented in the validator docstring but not encoded as a runtime constant; operational anchor check is inline VERB/AUX/cop predicate.
 - Audit trail: `readers-bofm/private/audit-trail/R20.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R20.md`](atu-method/scholarship/bofm/R20.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R20.md`](atu-method/2-evidence/scholarship/bofm/R20.md)
 
 <!-- ===== R21 ===== -->
 ### R21: Participial Absolute Integrity
@@ -1601,7 +1601,7 @@ action: STAND_OWN_LINE
 - Applier: (not yet implemented — Category A but applier deferred; filename follows the validate_rule_{id}_ud.py / apply_rule_{id}_ud.py convention)
 - Closed-list definitions: none — R21 fires on UD-feature pattern, not on a lexical closed list
 - Audit trail: `readers-bofm/private/audit-trail/R21.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R21.md`](atu-method/scholarship/bofm/R21.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R21.md`](atu-method/2-evidence/scholarship/bofm/R21.md)
 
 <!-- ===== R22 ===== -->
 ### R22: Divine Title Appositives
@@ -1734,7 +1734,7 @@ FORMAL_ANCHORS_R22:
 - Applier: (not yet implemented — Category B; filename follows the validate_rule_{id}_ud.py convention)
 - Closed-list definitions: §Divine-Title-Closed-Lists-R22 (in BoFM canon, supplementary section — to be created during validator implementation)
 - Audit trail: `readers-bofm/private/audit-trail/R22.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R22.md`](atu-method/scholarship/bofm/R22.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R22.md`](atu-method/2-evidence/scholarship/bofm/R22.md)
 
 <!-- ===== R23 ===== -->
 ### R23: Date Colophon Integrity
@@ -1866,7 +1866,7 @@ The closed list admits compound-ordinal variants of the form *"<number-word> and
 - Applier: (none — surface-pattern keep-whole; corpus is hand-authored at this granularity, validators report violations)
 - Closed-list definitions: §Date-Colophons-R23 (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R23.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R23.md`](atu-method/scholarship/bofm/R23.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R23.md`](atu-method/2-evidence/scholarship/bofm/R23.md)
 
 <!-- ===== R26 ===== -->
 ### R26: Adjective (or NOUN-as-Predicate) + "That" Complement Stays Together
@@ -1946,7 +1946,7 @@ RULE_26_HEAD_LEMMAS:
 - Applier: shares R7 applier pipeline; R26-class matches resolve to MERGE rather than SPLIT
 - Closed-list definitions: in validator source (`RULE_26_HEAD_LEMMAS`)
 - Audit trail: `readers-bofm/private/audit-trail/R26.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R26.md`](atu-method/scholarship/bofm/R26.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R26.md`](atu-method/2-evidence/scholarship/bofm/R26.md)
 
 <!-- ===== R27 ===== -->
 ### R27: "Insomuch That" Binding
@@ -2081,7 +2081,7 @@ EXPLETIVE_THERE_VERBS:
 - Applier: [`validators/apply_rule_27_ud.py`](../../../../readers-bofm/validators/apply_rule_27_ud.py)
 - Closed-list definitions: in validator source (`CO_REF_PRONOUNS`, `ELIDED_SUBJECT_VERBS`, `NEW_NP_STARTERS`, `EXPLETIVE_THERE_VERBS`)
 - Audit trail: `readers-bofm/private/audit-trail/R27.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R27.md`](atu-method/scholarship/bofm/R27.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R27.md`](atu-method/2-evidence/scholarship/bofm/R27.md)
 
 <!-- ===== R28 ===== -->
 ### R28: Speech-Act Announcement After Frame
@@ -2164,7 +2164,7 @@ RESULT_MARK_LEMMAS:           # consequence-not-frame when speech precedes advcl
 - Closed-list definitions: in validator source (`SPEECH_LEMMAS`, `FRAME_MARK_LEMMAS`, `ADVCL_EXCLUDED_LEMMAS`, `RESULT_MARK_LEMMAS`)
 - Char-offset emission: detector emits `split_col` via `build_line_map_full`; applier inserts the break before `split_col` (T1.1 char-offset pattern).
 - Audit trail: `readers-bofm/private/audit-trail/R28.md` (to be populated during BoFM canon migration)
-- Scholarship: [`atu-method/scholarship/bofm/R28.md`](atu-method/scholarship/bofm/R28.md)
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R28.md`](atu-method/2-evidence/scholarship/bofm/R28.md)
 
 <!-- ===== R29 ===== -->
 ### R29: Bare Infinitival Orphan Integrity
@@ -2221,7 +2221,7 @@ action: MERGE_ORPHAN_WITH_GOVERNOR
 - Applier: [`validators/apply_rule_29_ud.py`](../../../../readers-bofm/validators/apply_rule_29_ud.py)
 - Closed-list definitions: R7 `MOTION_VERBS` + R17 `GOVERNING_LEMMAS` referenced for the Exclusion-6 routing note; no new closed list — R29's trigger is structural (line-initial `to` + governor-POS), not lexical.
 - Audit trail: §7.3 audit 2026-05-14 (2 parallel adversarial agents) — verdicts in commit message.
-- Scholarship: [`atu-method/scholarship/bofm/R29.md`](atu-method/scholarship/bofm/R29.md) (to be populated).
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/R29.md`](atu-method/2-evidence/scholarship/bofm/R29.md) (to be populated).
 
 **Co-orphaned-prefix sub-variant — Category B (surface only, NEVER auto-apply).**
 
@@ -2325,7 +2325,7 @@ MANNER_INDICATORS:
 - Applier: none (Category B; auto-applier MUST NOT exist for EP-1; editorial-judgment required per-case).
 - Closed-list definitions: §EP-1-Indicators (in BoFM canon, supplementary section — heuristic indicators only).
 - Audit trail: `readers-bofm/private/audit-trail/EP-1.md` (to be populated during BoFM canon migration).
-- Scholarship: [`atu-method/scholarship/bofm/EP-1.md`](atu-method/scholarship/bofm/EP-1.md).
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/EP-1.md`](atu-method/2-evidence/scholarship/bofm/EP-1.md).
 
 ---
 
@@ -2421,7 +2421,7 @@ EP_3_GRAMMATICAL_FORCING_EXCLUSIONS:
 - Applier: none (Category B; auto-applier MUST NOT exist for EP-3; editorial-judgment required per-case).
 - Closed-list definitions: §EP-3-Indicators (in BoFM canon, supplementary section — heuristic indicators only).
 - Audit trail: `readers-bofm/private/audit-trail/EP-3.md` (to be populated during BoFM canon migration).
-- Scholarship: [`atu-method/scholarship/bofm/EP-3.md`](atu-method/scholarship/bofm/EP-3.md).
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/EP-3.md`](atu-method/2-evidence/scholarship/bofm/EP-3.md).
 
 ---
 
@@ -2518,7 +2518,7 @@ DOMAIN_HEADWORD_INDICATORS:
 - Applier: none (Category B; auto-applier MUST NOT exist for EP-4; editorial-judgment required per-case).
 - Closed-list definitions: §EP-4-Title-Role-Lemmas (in BoFM canon, supplementary section).
 - Audit trail: `readers-bofm/private/audit-trail/EP-4.md` (to be populated during BoFM canon migration).
-- Scholarship: [`atu-method/scholarship/bofm/EP-4.md`](atu-method/scholarship/bofm/EP-4.md).
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/EP-4.md`](atu-method/2-evidence/scholarship/bofm/EP-4.md).
 
 ---
 
@@ -2639,7 +2639,7 @@ FORMULAIC_VIRTUE_TRIADS:
 - Applier: none (Category B; auto-applier MUST NOT exist for EP-5; editorial-judgment required per-case).
 - Closed-list definitions: §EP-5-Indicators (in BoFM canon, supplementary section — heuristic indicators only).
 - Audit trail: `readers-bofm/private/audit-trail/EP-5.md` (to be populated during BoFM canon migration).
-- Scholarship: [`atu-method/scholarship/bofm/EP-5.md`](atu-method/scholarship/bofm/EP-5.md).
+- Scholarship: [`atu-method/2-evidence/scholarship/bofm/EP-5.md`](atu-method/2-evidence/scholarship/bofm/EP-5.md).
 
 ---
 
@@ -2650,7 +2650,7 @@ FORMULAIC_VIRTUE_TRIADS:
 **Category:** A (Mechanical, mandatory) for closed-list-eligible subject shapes; B (Editorial) for length-backstop or multi-line restructuring cases
 **Decidability:** Surface-pattern + UD-aware (Stage 2 filter recommended; surface-only viable with explicit SCOPE-exclusions)
 **Layer:** 3
-**Framework anchor:** Corpus-specific operational instantiation of framework M4 (fragmented atomic thought-unit; see [`atu-method/docs/01-normative/framework.md §1.5`](../../atu-method/docs/01-normative/framework.md)).
+**Framework anchor:** Corpus-specific operational instantiation of framework M4 (fragmented atomic thought-unit; see [`atu-method/1-method/framework.md §1.5`](../../atu-method/1-method/framework.md)).
 
 **Rule.** When a v2-mine line whose content is a **subject NP** (any of the closed-list-eligible shapes below) terminates in `,` or `;`, AND the immediately-next v2-mine line is a **bare finite predicate** (starts with auxiliary or finite main verb; has no leading connective; has no independent subject NP on the same line), the predicate-line MUST be merged onto the subject-line as a single ATU. The atomic-thought principle governs: a subject NP standing alone is not an atomic thought (no predication), a bare predicate standing alone is not an atomic thought (no anchor on the line), and the merged subject+predicate IS one atomic thought (one proposition / one image).
 
@@ -2751,11 +2751,11 @@ length_backstop: merged > 130 chars -> REVIEW
 - Applier: surface-pattern MERGE_FORWARD; one-shot Python script over v2-mine corpus after Stage 1 + 2 verdicts settle
 - Closed-list definitions: §SUBJECT_SHAPES_M4_BOFM1 (inline above)
 - Audit trail: `readers-bofm/private/audit-trail/M4-BoFM-1.md` (audit task id: aec7492d96ab06a3c, codification commit forthcoming)
-- Scholarship: `atu-method/scholarship/bofm/M4-BoFM-1.md` (to be authored; cross-corpus relevance — GNT and Tanakh likely exhibit analogous patterns)
+- Scholarship: `atu-method/2-evidence/scholarship/bofm/M4-BoFM-1.md` (to be authored; cross-corpus relevance — GNT and Tanakh likely exhibit analogous patterns)
 
 **Defensibility (WHY this rule exists).** The canon's pre-existing rules were predominantly **prohibitive** (don't break here) and **protective** (keep these tokens together). Subject→predicate integrity — the dual of R17's predicate→complement integrity — was not operationally codified prior to 2026-05-11. The atomic-thought test in §1 served as foundational principle but was enforced editorially (Stan's eye), not mechanically. The Alma 29:11 case Stan flagged on 2026-05-11 surfaced the gap; the broader audit then found ~27 corpus instances of the same fragmenting failure mode across non-triad subject shapes (NP-with-RC, NP-with-appositive, NP-with-participial). M4-BoFM-1 codifies the missing dual rule operationally.
 
-**Cross-corpus implications.** The principle (subject NP + its predicate form one ATU when their combination is one image) is universal; the per-corpus closed-list of eligible subject shapes is BoFM-specific. Sibling readers (readers-gnt, readers-tanakh) should run parallel corpus sweeps for analogous M4-GNT-1, M4-TNK-1 operationalizations. Framework-level M4 in [`atu-method/docs/01-normative/framework.md §1.5`](../../atu-method/docs/01-normative/framework.md) is the universal anchor.
+**Cross-corpus implications.** The principle (subject NP + its predicate form one ATU when their combination is one image) is universal; the per-corpus closed-list of eligible subject shapes is BoFM-specific. Sibling readers (readers-gnt, readers-tanakh) should run parallel corpus sweeps for analogous M4-GNT-1, M4-TNK-1 operationalizations. Framework-level M4 in [`atu-method/1-method/framework.md §1.5`](../../atu-method/1-method/framework.md) is the universal anchor.
 
 ---
 
@@ -2822,12 +2822,12 @@ Merge validators and sweep scripts must not reject a candidate merge because the
 
 ## 7. Change Protocol
 
-**Pointer to framework.** The universal change protocol — proposal requirements (state the syntactic fact, provide corpus evidence, survive adversarial audit, apply uniformly, defensibility capture, re-evaluate deferred items, update the canon); the 12 mandatory-audit triggers; audit-skippable categories; audit-evidence-in-commit-message conventions; self-test before commit; self-consistency audit trigger; and the proposed-rule adoption protocol (≥80% clean categorization threshold, sweep-then-decide workflow) — is codified at [`atu-method/docs/01-normative/framework.md §7`](../../atu-method/docs/01-normative/framework.md). This canon does not duplicate that prose.
+**Pointer to framework.** The universal change protocol — proposal requirements (state the syntactic fact, provide corpus evidence, survive adversarial audit, apply uniformly, defensibility capture, re-evaluate deferred items, update the canon); the 12 mandatory-audit triggers; audit-skippable categories; audit-evidence-in-commit-message conventions; self-test before commit; self-consistency audit trigger; and the proposed-rule adoption protocol (≥80% clean categorization threshold, sweep-then-decide workflow) — is codified at [`atu-method/1-method/framework.md §7`](../../atu-method/1-method/framework.md). This canon does not duplicate that prose.
 
 **BoFM-canon-specific change-protocol artefacts:**
 
 - **Audit-trail per rule:** `private/audit-trail/<rule-id>.md` — populated as rules are migrated; captures sweep results, retirement events, dated decisions that would otherwise bloat the canon's operational entries.
-- **Scholarship companion per rule:** [`atu-method/scholarship/bofm/<rule-id>.md`](../../atu-method/scholarship/bofm/) — captures rationale, grammatical-grounding citations, empirical-validation evidence, intellectual lineage, and adversarial history. Per the framework's two-audience principle (operational entry for the robot; scholarship companion for the scholar), substantive WHY content lives there, not here.
+- **Scholarship companion per rule:** [`atu-method/2-evidence/scholarship/bofm/<rule-id>.md`](../../atu-method/2-evidence/scholarship/bofm/) — captures rationale, grammatical-grounding citations, empirical-validation evidence, intellectual lineage, and adversarial history. Per the framework's two-audience principle (operational entry for the robot; scholarship companion for the scholar), substantive WHY content lives there, not here.
 - **Commit-msg gate:** `validators/check_canon_extensions.py` — detects §7.3 mandatory-audit-trigger patterns in staged canon diffs; requires audit-evidence keywords in commit body.
 - **Baseline-check pre-commit:** `validators/hooks/install.sh` wires `validators/run_all.py --baseline-check` as pre-commit; blocks regressions vs `validators/.baseline.json`.
 
