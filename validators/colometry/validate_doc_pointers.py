@@ -5,7 +5,7 @@ and handoffs.
 
 Triggered by 2026-04-27 detritus audit finding ~12 references to
 `10-colometry.md` (a file that no longer exists; methodology was migrated
-to `private/01-method/colometry-canon.md`).
+to `1-method/colometry-canon.md`).
 
 Approach:
   1. For each .md file in scope, find file-path references using regex.
@@ -16,7 +16,7 @@ Approach:
   3. Flag references to files that don't exist anywhere checked.
 
 Scope:
-  - Canon (private/01-method/*.md)
+  - Canon (1-method/*.md)
   - CLAUDE.md
   - docs/*.md
 
@@ -36,11 +36,11 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 SCAN_PATHS = [
-    REPO_ROOT / "private" / "01-method" / "colometry-canon.md",
-    REPO_ROOT / "private" / "01-method" / "pericope-canon.md",
+    REPO_ROOT / "1-method" / "colometry-canon.md",
+    REPO_ROOT / "1-method" / "pericope-canon.md",
     REPO_ROOT / "CLAUDE.md",
-] + sorted((REPO_ROOT / "docs").glob("*.md")) \
-  + sorted((REPO_ROOT / "docs" / "findings").glob("*.md"))
+] + sorted((REPO_ROOT / "3-project").glob("*.md")) \
+  + sorted((REPO_ROOT / "2-evidence").glob("*.md"))
 
 
 # Subdirs to try when resolving bare filenames (canon §6 validator-table
@@ -102,7 +102,7 @@ SKIP_PATHS = {
     "COWORK-HANDOFF-KJV.md",
     "HANDOFF.md",
     # Historical directives file, deleted in the 2026-05-19 archive sweep;
-    # named in docs/retraction-log.md as a record of what was retracted.
+    # named in 2-evidence/retraction-log.md as a record of what was retracted.
     "2026-05-17-1500-ground-up-rebuild-architecture.md",
     # Gitignored Obsidian artifacts
     "Welcome.md",

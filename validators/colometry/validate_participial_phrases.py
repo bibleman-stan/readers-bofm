@@ -3,7 +3,7 @@
 Validate canon §1 M3 extension: bare trailing participial heads merge
 with their matrix predication, with 4 structural guards + length backstop.
 
-Canon source: private/01-method/colometry-canon.md, M3 extension subsection.
+Canon source: 1-method/colometry-canon.md, M3 extension subsection.
 
 Each candidate line gets classified as:
 

@@ -37,7 +37,7 @@ Only break positions move.
 ## Marschall bands — 1 Nephi, whole book
 
 Counter: `scripts/marschall_view.py` `syllables()`, unchanged, so these are comparable
-to `docs/findings/research-marschall-1ne3.md`.
+to `2-evidence/research-marschall-1ne3.md`.
 
 | band | v2 deployed | v1 clause |
 |---|---|---|

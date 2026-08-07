@@ -42,7 +42,7 @@ These validators check whether Stan's editorial line-break decisions conform
 to the settled rules of the BofM colometry canon. A failure here is a policy
 deviation — a rule says the break should be elsewhere.
 
-**Reference:** `private/01-method/colometry-canon.md`
+**Reference:** `1-method/colometry-canon.md`
 
 **Error class: `[DEVIATION]`** — editorial policy violation; review required
 before deciding whether to merge, split, or document an exception.

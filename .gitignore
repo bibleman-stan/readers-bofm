@@ -37,7 +37,14 @@ Welcome.md
 # Research / pre-publication (local only)
 research/
 
-# Private strategy / pre-publication (local only)
+# Private strategy / pre-publication (local only). Notably private/substrate/
+# (2.5 GB of licensed corpora) and private/04-sources/ — neither may ever be
+# committed.
+#
+# The method canon used to live at private/01-method/ and was re-included here
+# by exception. On 2026-08-07 it moved OUT to 1-method/ at the repo root, so the
+# exception is gone and this rule is a plain exclusion again. Publishing Stan's
+# own method canon is fine; third-party licensed material is not.
 private/
 
 # Reference/source text files (local only — not our editorial work)

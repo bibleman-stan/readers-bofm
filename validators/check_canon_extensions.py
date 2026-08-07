@@ -9,7 +9,7 @@ violation count), but does NOT detect "new closed-list extension being
 committed" (yesterday's emotion-class smuggling precedent).
 
 This script:
-1. Reads staged canon diffs (private/01-method/colometry-canon.md and
+1. Reads staged canon diffs (1-method/colometry-canon.md and
    pericope-canon.md).
 2. Detects §7.3-trigger patterns in the additions.
 3. Checks the proposed commit message (passed as argv[1]) for audit-
@@ -31,8 +31,8 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CANON_FILES = [
-    "private/01-method/colometry-canon.md",
-    "private/01-method/pericope-canon.md",
+    "1-method/colometry-canon.md",
+    "1-method/pericope-canon.md",
 ]
 
 

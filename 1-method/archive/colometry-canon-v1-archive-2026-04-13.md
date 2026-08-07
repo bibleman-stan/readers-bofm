@@ -1,0 +1,1774 @@
+# 10 — Colometry, Sense-Lines & Line-Breaking Theory
+
+This document captures the editorial methodology behind how Book of Mormon text is broken into sense-lines (cola). This is the intellectual heart of the Reading Edition — the line-breaking decisions determine how the text reads, breathes, and communicates.
+
+## What Colometry Means in This Project
+
+"Colometry" refers to dividing text into cola (singular: colon) — short sense-units that each carry one clause, phrase, or breath-group. In biblical scholarship, colometry has a long history in the study of Hebrew poetry (Psalms, Proverbs, prophetic oracles). We apply the same principle to Book of Mormon prose, treating it as a performed text that benefits from visible phrasing.
+
+The goal is not poetry formatting — it's **legibility for oral delivery**. Each line should be a natural breath unit that a reader (or listener, or ESL learner) can process as a single thought.
+
+## Three Layers of Source Text
+
+| Layer | Folder | Origin | Status |
+|-------|--------|--------|--------|
+| v0 | `data/text-files/v0-bofm-original/` | 2020 BofM base text, paragraph format | Reference only |
+| v1 | `data/text-files/v1-skousen-breaks/` | Royal Skousen's sense-line formatting | Input to reformatter |
+| v2 | `data/text-files/v2-mine/` | Stan's hand-edited revision | **Canonical source** |
+
+v2 is the authoritative text. Everything else is history. When Stan edits a v2 file, that becomes the new truth. HTML is rebuilt from v2 via `build_book.py`.
+
+## The Reformatter (senseline_reformat_v8.py)
+
+A 19-pass automated tool that takes Skousen's v1 breaks and applies mechanical rules to split or merge lines. Key passes include conjunction splits, subordinate clause breaks, list-stacking for parallel triads, and length-based rebalancing.
+
+**The reformatter is a starting point, not the final word.** Stan hand-edits the v2 output. The reformatter's thresholds were tuned iteratively (v7→v8) to reduce over-splitting and leave semantic decisions to the human editor.
+
+### Known v8 Threshold Decisions
+- M6 (according-to split): raised from >58 to >72 chars
+- M8 (", and [pronoun]"): widened from 45-70 to 60-90
+- M9 (subject-predicate at modal): raised from >70 to >85
+- M10 (long-line pattern): raised from >70 to >90
+- M15 (passive+prep): raised from ≥50 to ≥65
+- M18: NEW in v8 — list-stacking for parallel triads
+- 70-90 char range deliberately left unsplit (semantic preference over mechanical splitting)
+- M0 em-dash word attachment behavior differs from Stan's v2 in some cases
+- M12 in+gerund may over-split at 53 chars
+
+## Settled Principles
+
+These are editorial rules established through discussion and applied consistently.
+
+### 1. The Wayyehi Rule (Revised 2026-04-11)
+**"And it came to pass" is an indivisible discourse marker that opens a Front-End Frame (FEF).**
+
+The original rule stated: "And it came to pass that stays on one line — never break it." This was our first settled principle, written before FEFs were understood. It conflated two things: (a) formula integrity (don't break inside the formula) and (b) FEF behavior (the frame stays together until the main verb resolves).
+
+The revised rule:
+- **The formula itself is indivisible.** Never break "And it came to pass" mid-phrase. The words form a single discourse marker (Hebrew *wayyehi*).
+- **"That" belongs with the clause it introduces, not trailing the formula.** "That" is a complementizer — it leads the temporal/circumstantial clause, following the dangling-that principle (Rule 16).
+- **The FEF resolves at the main verb.** Everything between the discourse marker and the main verb (temporal clauses, circumstantial participials, date formulas) is part of the FEF frame and stays together per normal FEF rules.
+
+**Correct treatment:**
+```
+And it came to pass that in the seventh year of the reign of the judges,
+there were about three thousand five hundred souls...
+```
+(Formula + temporal clause = one FEF line. Main verb starts expansion.)
+
+Or when the temporal clause is very long:
+```
+And it came to pass
+that in the commencement of the twenty and fifth year of the reign of the judges over the people of Nephi,
+they having established peace...
+```
+(Formula on its own, "that" leads the temporal clause on the next line.)
+
+Applied to all variants: "And it came to pass," "And now it came to pass," "And it shall come to pass," etc. The future-tense variant follows the same rule — resolving the contradiction between the old Wayyehi rule and the dangling-that rule that the adversarial audit identified.
+
+### 2. "Expedient That" as Fixed Idiom
+**"It is expedient that" stays together — don't break at "that."**
+
+Normally we break at "that" clauses. But "expedient that" functions as a single idiomatic unit, like "it came to pass that." The "that" is part of the idiom, not a subordinating conjunction introducing a new clause.
+
+Example (2 Ne 25:16): "I say unto you that it is expedient that ye should keep the law of Moses as yet" — "expedient that" stays on one line.
+
+Applied in 2 Ne 9:28, 9:48, 25:16 and elsewhere.
+
+### 3. Rhetorical Address Formulas
+**"And now, O king," stays as one unit.**
+
+When the text uses a direct address formula (vocative), keep the address together. The break comes after the address, before the content of what's being said.
+
+Example (Mosiah 12:13):
+```
+And now, O king,
+what great evil hast thou done,
+or what great sins have thy people committed,
+that we should be condemned of God or judged of this man?
+```
+
+The address "And now, O king," is a single rhetorical unit. But when a second address appears in the same passage, it can be broken differently if the syntax warrants it: "and thou, O king, / hast not sinned" — here the address is interrupted by the predicate.
+
+### 4. Circumstantial Clause Pairing
+**Paired circumstantial phrases describing the same condition should stay on one line.**
+
+Example (Mosiah 15:24):
+```
+and these are they that have died before Christ came,
+in their ignorance, not having salvation declared unto them.
+```
+
+"In their ignorance" and "not having salvation declared unto them" are two descriptions of the same circumstance — they didn't know because nobody told them. Splitting them onto separate lines gives "in their ignorance" undue weight and breaks the pairing.
+
+### 5. Equivalence Restated After a Break
+**When "or" introduces a restatement/equivalence, keep it with the restated material.**
+
+Example (Mosiah 15:24):
+```
+and they have a part in the first resurrection,
+or have eternal life, being redeemed by the Lord.
+```
+
+"Or have eternal life" restates "part in the first resurrection" — they mean the same thing. The participial phrase "being redeemed by the Lord" attaches naturally to "eternal life" as its grounding. The break falls after "resurrection," and the restatement + explanation flow together on the second line.
+
+### 6. Line Length as a Signal, Not a Rule
+Short, staccato lines create emphasis and slow the reader down. Long lines create flow and momentum. Neither is wrong — the question is always whether the rhythm serves the rhetoric.
+
+Abinadi's trial speeches (Mosiah 12-15) benefit from shorter, more rhythmic lines because the content is confrontational and prophetic. Lehi's blessings (2 Ne 1-4) can sustain longer lines because the tone is pastoral and expansive.
+
+There's no hard character count threshold. The reformatter uses 70-90 chars as a guideline, but editorial judgment overrides.
+
+## Unsettled / In Progress
+
+### The "Behold" Question (from Stan's email, Mar 14)
+
+Stan identified three functional types of "behold" in Book of Mormon text:
+
+1. **Deictic** (pointing) — "Behold, I have dreamed a dream." Directs attention to something specific.
+2. **Mirative** (surprise/discovery) — "And behold, they were gone." Marks unexpected information.
+3. **Logical-connective** — "For behold, if the knowledge of the goodness of God..." Introduces an argument or explanation.
+
+Each type may warrant different line-break treatment. Type C especially is interesting — it might benefit from being joined to the clause it introduces rather than standing alone.
+
+"Lo" is distinct from "behold" — appears ~5-10 times, almost exclusively in Isaiah quotation blocks. Decision needed on whether "lo" in Isaiah follows our rules or defers to Isaiah's poetic structure.
+
+**Status: UNPURSUED.** The three-type distinction hasn't been tested yet.
+
+**Action items:**
+- Test on Alma 5 or 2 Nephi 4:15-35
+- Evaluate whether Type C benefits from line-joining vs standalone break
+- Decide how "and behold" vs standalone "behold" affects placement
+- Decide whether "lo" in Isaiah blocks follows our rules or defers to Isaiah's own structure
+
+### Parry Parallel Alignment as Diagnostic
+
+Donald Parry's Hebrew parallelism analysis identifies break-points within the text for parallel structures (chiasmus, synonymous parallelism, etc.). In 2 Nephi alone, 78% of Parry's structures have break-points that fall inside our sense-lines rather than between them.
+
+This creates a diagnostic opportunity: Parry's parallel break-points can flag sense-lines that might benefit from revision. If we split a sense-line at a point Parry identifies as a parallel boundary, we improve both the reading flow and the Parry-style visual rendering.
+
+**308 split candidates** identified across the canon by `parry_split_candidates.py`. ~98 high/medium-confidence splits were applied (semicolon breaks, comma+conjunction patterns) in the Mar 2 session. Remaining candidates are lower confidence and need editorial review.
+
+### Isaiah Block Quotation Treatment (2 Ne 12-24)
+
+These chapters are nearly 100% verbatim Isaiah quotation. The current sense-line breaking follows our general principles, but there's a question about whether Isaiah's own poetic structure should take precedence over our mechanical rules.
+
+Isaiah was originally Hebrew poetry with its own colometric conventions — parallelism, chiastic structures, strophic divisions. Our English sense-lines may or may not align with the underlying Hebrew cola. No decision has been made about whether to privilege Isaiah's poetic structure in these chapters.
+
+## Competing Theories / Tensions
+
+### Mechanical vs Semantic Breaking
+The reformatter applies syntactic/length rules. The editor applies semantic judgment. These don't always agree. The current resolution: mechanical rules handle the bulk, editorial override handles the exceptions. The v8 reformatter was deliberately loosened (raised thresholds) to reduce over-splitting, pushing more decisions to the editor.
+
+### Read-Aloud vs Visual Scanning
+Sense-lines optimized for oral delivery (natural breath pauses) may differ from lines optimized for visual scanning (clear clause boundaries). For example, a parenthetical aside might be best read aloud as part of a longer breath but visually benefits from its own line. The project prioritizes oral delivery — bomreader.com was built for read-aloud and ESL use.
+
+### Skousen's Breaks vs Stan's Breaks
+Royal Skousen's sense-line formatting (v1) reflects a particular scholarly approach to the text. Stan's revisions (v2) sometimes merge Skousen's breaks (especially for very short fragments) and sometimes add new ones. The divergences aren't systematic — they reflect case-by-case editorial judgment.
+
+### Consistency vs Context
+Should the same syntactic pattern always get the same break treatment? Or should context (rhetorical register, speaker identity, emotional tone) override? Current practice leans toward context — Abinadi's trial speeches get different treatment than Nephi's narrative transitions, even when the syntax is similar.
+
+## Review Process
+
+1. Stan edits v2-mine text files locally
+2. Claude runs `git diff` on the changed file to see the edits
+3. Claude categorizes each edit as merge (joining lines) or break (splitting)
+4. Claude evaluates against the settled principles above
+5. **After any substantive line-break edits:** commit the source file changes, then rebuild all HTML via `python3 build_book.py --all`, bump the service worker cache version in `sw.js`, and commit the rebuilt HTML — so everything is ready for Stan to push via GitHub Desktop
+6. If audio exists for changed chapters, audio must be regenerated via Colab pipeline (changed lines invalidate cache)
+
+---
+### Update — 2026-03-18
+
+#### Foundational Principle Clarified
+
+Through working review of Mosiah sense-lines, the overriding criterion for all line-break decisions was articulated more precisely:
+
+**Each line must be an atomic thought, an atomic breath unit, or ideally both.**
+
+This is the foundational test that all the settled principles below it are trying to serve. It should be read before the specific rules, not derived from them.
+
+"Atomic thought" means the line holds a single processable unit of meaning — the reader doesn't need to carry it forward and resolve it against the next line to understand it.
+
+"Atomic breath unit" means the line can be physically delivered in one breath at a natural reading pace — not gasping, not cutting a thought short.
+
+When a line fails both tests it clearly needs revision. When it passes both it's valid regardless of what a syntactic rule might suggest. When they conflict — a line that is one breath but two thoughts, or one thought but too long for one breath — editorial judgment decides which criterion governs for that passage.
+
+This principle also clarifies the relationship between syntactic attachment and rhetorical function: **syntax tells you where thoughts can be separated; rhetoric and breath tell you where they should be.** These usually agree; when they don't, breath and rhetoric govern.
+
+#### Qualifying Phrases That Escalate vs. Restrict
+
+A related distinction emerged from reviewing Mosiah 3:5 and 3:7:
+
+A qualifying phrase that **restricts** the preceding claim tends to belong with it on the same line ("save it be," "except it were"). But a qualifying phrase that **escalates or intensifies** the preceding claim — pushing it to a further extreme — often earns its own line, because the escalation is itself a thought that benefits from its own arrest.
+
+Example (Mosiah 3:7): "even more than man can suffer, / except it be unto death" — "except it be unto death" is not merely restricting; it is pushing the claim to its limit. The break honors that.
+
+#### Fronted Adverbials as Intentional Rhetorical Positioning
+
+Mosiah 3:5 — "that with power, / the Lord Omnipotent who reigneth" — initially flagged as a possible orphan fragment. On review: "with power" is a fronted adverbial, extracted from its natural post-verbal position ("shall come down with power") and placed before the subject for rhetorical effect. The fronting is the device — it announces the manner before the actor, building anticipation. The line break after it is grammatically and rhetorically accurate, not accidental.
+
+General principle: short lines that appear to be orphan fragments may instead be fronted elements occupying a genuine clause-initial position. Check deep structure before proposing a merge.
+
+#### Line Reordering as an Editorial Tool
+
+The revision of Mosiah 15:9 established that **reordering lines within a verse** is a legitimate editorial move, not just changing where breaks fall. In the original v2, "having broken the bands of death" preceded "standing betwixt them and justice." The revised order places "standing betwixt them and justice" as the climactic statement of Christ's mediating function, with the subsequent participles ("having broken… taken upon… redeemed… satisfied") explaining the acts that constitute that function. This is the correct theological and rhetorical sequence: function stated, then grounded.
+
+Reordering is more substantive than break adjustment and should be used sparingly, but it is the right tool when the logical or rhetorical arc of a verse requires it.
+
+#### Three-Category Framework for Automated Review
+
+When reviewing sense-lines systematically (book by book), proposed changes fall into three categories:
+
+- **Category A — Editorial slippage:** Break placement is suboptimal by our own principles. No theological or rhetorical stakes. Safe to revise with review.
+- **Category B — Rhetorical shape:** The arrangement reflects how a speaker builds argument or emphasis. Changing the break changes the rhetoric. Requires judgment about what the speaker is doing, not just syntactic tidiness.
+- **Category C — Theological weight:** Break placement makes a doctrinal point, or a proposed change would flatten something intentional. Flag and discuss before touching.
+
+Category A gets a confident proposal. B and C get a question first.
+
+#### Punctuation Is Canonical — Never Touch It
+
+Line breaks are editorial. Punctuation belongs to the canonical LDS text and is never altered, even when it might seem to affect how a line reads. This is moot in the default view (punctuation hidden via CSS) but the source files must preserve the canonical text exactly.
+
+---
+### Update — 2026-03-18 (evening)
+
+#### Framing Devices Beyond Wayyehi
+
+An external audit (via Gemini) confirmed and extended the wayyehi principle: **all discourse-framing constructions should be treated as atomic units with their content**, not broken away from it. This includes:
+
+1. **Wayyehi + temporal/spatial clause** — already settled. "And it came to pass that X" stays together.
+2. **We'atta / "And now"** — "And now, I Nephi, make an end" or "And now, my sons, I would that ye should" — the "And now" is a discourse pivot, not a standalone breath. It attaches to the clause it introduces.
+3. **"For behold" / "Behold"** — a deictic pointer that frames what follows. "For behold, he hath the record of the Jews" is one unit. Don't orphan the pointer from the pointed-at.
+4. **"Wherefore" / "Therefore"** — logical connectives that frame a conclusion. "Wherefore, men are free according to the flesh" is one atomic thought. Don't break after "Wherefore."
+5. **Speech introduction formulas** — "And he said unto them:" or "And I, Nephi, said unto my father:" — the speech introduction is a framing device. It attaches to the first line of the speech unless the combined line is too long for one breath.
+
+The general principle: **if a construction's function is to frame, introduce, or pivot to what comes next, it should not be severed from what comes next.** A frame without its content is an orphan. Content without its frame loses its rhetorical context.
+
+#### Syntactic Bond Rules (from audit)
+
+These rules prevent mechanical over-splitting:
+
+- **Never split verb from direct object** — "I make / a record" → merge to "I make a record"
+- **Never end a line on an article** (the, a, an) — always merge forward
+- **Never end a line on a preposition that's still looking for its object** — "the power / of the Lamb" → merge. BUT phrasal verb particles are fine: "grafted in," "carried away," "cast off" are complete images because the particle completes the verb's meaning, not a prepositional phrase seeking an object. Similarly, stranded prepositions in relative clauses are fine: "the state...they are in" — the preposition has already connected back to its antecedent
+- **Never split auxiliary from main verb** — "did / slay" → merge to "did slay"
+- **Never split "not/neither/nor" from what they negate** — "neither sense / nor insensibility" → merge to "neither sense nor insensibility"
+
+#### Vocative Splitting Rule
+
+Vocatives (O, Wo) get nuanced treatment:
+
+- **Vocative-as-command** → gets its own line: "Awake, my soul!" stands alone because it's a complete imperative.
+- **Vocative-as-appeal** → stays with the request: "O Lord, wilt thou redeem my soul?" is one atomic cry. Don't orphan "O Lord" from the plea.
+- **"Wo unto X who Y"** — merge when Y *defines* X ("Wo unto the murderer who deliberately killeth"); split when Y *elaborates* on X ("Wo unto the rich, / who are rich as to the things of the world").
+
+---
+### Update — 2026-03-18 (late evening)
+
+#### Formal Definition: Front-End Frames (FEFs)
+
+A **Front-End Frame** is a line that meets all four criteria:
+
+1. **Position**: Opens a verse or verse-block (first line after a verse marker)
+2. **Discourse marker**: Begins with one of: wayyehi ("And it came to pass"), we'atta ("And now"), "Wherefore," "Therefore," "For behold," "Behold," "Nevertheless," "And thus," "But behold," "Now," or a speech introduction formula
+3. **Irreducibility**: Binds syntactically to at least one dependent element (temporal clause, spatial clause, participial phrase, relative clause, or object clause) such that no break point exists that wouldn't orphan either the frame or its content under the atomic-image rule
+4. **Expansion**: Is followed by two or more shorter lines that unpack, elaborate, or detail the frame's content
+
+The irreducibility criterion (3) is what distinguishes FEFs from merely long lines. A line can be long because it contains a list or compound predicate — that's breakable. An FEF is long because every element is syntactically dependent on every other element. The frame *suspends resolution* until the main verb arrives, and everything between the discourse marker and the main verb is part of the suspension.
+
+#### FEFs and Hebrew Narrative Convention
+
+FEFs have a structural analogue in Biblical Hebrew. The *wayyiqtol* chain that forms the backbone of Hebrew narrative typically begins with a circumstantial protasis — a front-loaded frame that establishes time, place, condition, and actor before the main verb resolves:
+
+```
+wayehi [temporal clause] [circumstantial participial clause]... [main verb]
+```
+
+Hebrew grammarians treat the protasis as one syntactic unit — you don't break it. The atomic-image rule independently arrived at the same conclusion from the English side: don't break until the image resolves.
+
+This convergence is methodologically significant. The FEF pattern was not discovered by starting from Hebrew grammar and looking for it in English. It was discovered by applying an English readability criterion (atomic image / atomic breath) consistently across the text, noticing that certain lines *resisted* breaking, and then recognizing that the resistant structures match Hebrew narrative conventions.
+
+This means: whether the Book of Mormon's source is ancient Hebrew-influenced text or 19th-century KJV-absorbed composition, the structural pattern is real and measurable. The FEF definition is theory-neutral — it describes what's on the page without presupposing an explanation.
+
+#### FEF-Aware Pre-Breaking (Workflow Optimization)
+
+The current v8 reformatter breaks at syntactic boundaries (commas, conjunctions, subordinators) with length thresholds. It doesn't recognize framing constructions, so it frequently breaks FEFs that then require manual re-merging.
+
+An FEF-aware pre-breaker would:
+
+1. **Detect the discourse marker** at the start of a verse
+2. **Walk forward** looking for the main verb — the verb that the discourse marker introduces
+3. **Protect everything between marker and main verb resolution** as one atomic unit — no breaking regardless of internal commas, participials, or relative clauses
+4. **Apply normal v8 breaking rules only to the expansion lines** after the FEF resolves
+
+This would reduce manual editing burden for unedited books (Alma through Moroni) by preserving FEFs automatically and focusing human review on the expansion lines where editorial judgment is genuinely needed.
+
+#### Connection to Oral Transmission Criticism (OTC)
+
+The colometric methodology documented in this file connects to a broader academic research program. Stan is developing Oral Transmission Criticism (OTC) as a doctoral dissertation — a new critical method for detecting oral-mnemonic architecture in ancient texts, calibrated against Arab-Islamic materials and applied to early Christian Gospels.
+
+OTC's Chapter 9 argues that colometry tells us *where* oral units are; OTC tells us *why* they're there. The BOM Reader's colometric work is an unintentional pilot study demonstrating that consistent editorial colometric criteria applied at scale produce author-differentiated results — exactly the capability OTC needs colometry to have. FEFs are the colometric analogue of OTC's "oral ridges" (zones of high mnemonic density that resist editorial simplification).
+
+The full intellectual chain: OTC (theory) → colometry (method) → FEFs (emergent pattern) → colometric stylometry (author differentiation) → independent convergence with Hebrew narrative conventions. See `11-research-ideas.md` § 6 for the detailed connection.
+
+---
+*Created: 2026-03-18*
+
+---
+### Update — 2026-03-20
+
+#### Speech Attribution Formulas vs. FEFs
+
+A distinction emerged from Alma 3:15-16 editorial work that clarifies FEF treatment:
+
+**FEFs are the narrator's voice.** "For behold," "And now," "Wherefore," "Nevertheless" — these are the literary narrator (Mormon, Nephi, Alma) shaping discourse. They attach to what they introduce because narrator and content are continuous. The frame and its content belong to the same voice.
+
+**Speech attribution formulas introduce a different voice.** "And again:" "Thus saith the Lord:" "He said:" — these are handoffs to quoted speech. The break between the attribution and the speech marks a *voice shift*. The colon is the textual signal. Rule: **attribution formula takes its own line; quoted content begins fresh on the next line.**
+
+This is not FEF behavior — it's the opposite. FEFs bind forward; speech attributions *release* into a new voice.
+
+#### The Literary Narrator vs. The Oracular Voice
+
+The FEF/quotation asymmetry reveals a deeper pattern:
+
+- **The narrator deploys FEFs** — orienting, reasoning, persuading, connecting. FEFs are markers of a literary mind at work. A narrator using "Wherefore" or "For behold" is signaling logical relationship and shaping the listener's expectations. This is composed rhetoric, not improvised speech.
+- **Divine speech quotes short and compressed.** It doesn't need to orient you. It declares. The oracular voice resists elaboration — it pronounces, then stops.
+
+This asymmetry — literary narrator vs. oracular divine voice — is theologically and stylistically significant. FEFs cluster in narrative voice; direct divine speech tends toward shorter, less-structured lines.
+
+**Research implication:** FEF distribution across the text is potentially a marker of *narrative voice* specifically. Mapping FEF density could help distinguish narrator passages from embedded speeches, and narrator voice from divine voice, across the corpus. This is a dimension of the FEF paper worth developing: FEFs as markers of literary self-consciousness in the narrator, absent in the oracular.
+
+#### Quotations Tend Toward Shorter Breaks
+
+Observed pattern across Alma editorial work: direct speech — especially divine speech — tends to break into shorter, more reducible lines than narrative prose. This may reflect:
+- Original delivery of quoted speech with more deliberate, measured cadence
+- The oracular register resisting elaboration
+- The narrator's literary shaping being absent inside the quotation
+
+This is a working observation, not yet a settled rule. Track as editorial work continues into Alma.
+
+---
+*Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-20 (second entry)
+
+#### Coherence Is Primary: Resolving the Breath vs. Atomic Thought Tension
+
+When breath unit length and coherence appear to conflict, **coherence wins**. This is not an exception to the foundational test — it's what the foundational test actually says.
+
+A line that fails the atomic thought test cannot be rescued by being short. A fragment is not a breath unit in any meaningful sense — the reader has nowhere to land. "And now as many of the Lamanites and the Amlicites" is not a breath unit; it's a suspended quantifier waiting for resolution. Shortness without coherence is just a broken line.
+
+The practical rule: **never break a line to solve a length problem if the break produces a fragment.** Length is a signal that something complex is happening — not always a problem to be solved by breaking. Sometimes the right response to a long line is to recognize that its length is irreducible.
+
+#### Connection to FEF Principles
+
+This resolves what might look like a tension between FEF rules and breath-unit concerns. They are the same principle operating at different syntactic levels:
+
+- FEF rule: don't break the frame from its content (clause level)
+- Coherence rule: don't break a subject from its defining relative clause (phrase level)
+
+In both cases the unit resists breaking because every element is syntactically dependent on every other. The atomicity test independently arrives at the same conclusion as syntactic analysis: the unit is complete only when the meaning resolves.
+
+**Skousen's breaks on defining relative clauses** (e.g., Alma 3:3 "And now as many of the Lamanites and the Amlicites / who had been slain upon the bank of the river Sidon") are therefore systematically wrong by this principle — not just awkward, but failures of the foundational test. The v2 merge is correct.
+
+---
+*Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-20 (third entry)
+
+#### FEF Is a Structural Property, Not an AICTP Rule
+
+AICTP ("And it came to pass") constructions are high-frequency FEF candidates because "it came to pass" is always anticipatory — it never resolves without a following clause. But FEF irreducibility is not limited to AICTP. It is a **structural property** that appears in many construction types:
+
+- **Genitive phrases:** "the ninth year / of the reign of the judges" — the head noun doesn't identify without its genitive
+- **Verb + infinitive complement:** "began / to be lifted up" — "began" suspends until the infinitive resolves what was begun
+- **Verb + object:** "did not grant / unto him the office" — the action is incomplete without its object and recipient
+- **Participial frames:** "Alma, having seen the afflictions... / began to be sorrowful" — the participial suspends until the main verb lands
+- **Defining relative clauses:** "as many of the Lamanites / who had been slain" — the referent is unidentified without the clause
+
+**The unifying test is always the same:** can the reader land on this line as a complete unit of meaning? If not — regardless of *why* — the construction is irreducible and the break is wrong.
+
+AICTP is the most visible carrier of this pattern because it is formulaic and frequent. But the colometric principle applies wherever a line fails the atomic thought test due to syntactic suspension, not just at AICTP markers.
+
+---
+*Last updated: 2026-03-20*
+
+---
+### Update — 2026-03-21
+
+#### Refined FEF Temporal Frame Principle
+
+Cross-book consistency audit (1 Ne through Alma 5) revealed that AICTP + temporal/date formulas were handled inconsistently: 1 Nephi broke *inside* the temporal reference (too early), while Alma merged *past* the temporal reference into the main clause (too late).
+
+**The refined rule: complete the temporal/genitive reference on one line, then break before the main verb.**
+
+The FEF frame ends where the temporal identification ends. "And it came to pass in the seventh year of the reign of the judges" is the frame. "There were about three thousand five hundred souls..." is the expansion. The frame can be long — that's fine. But the main verb is where expansion begins, and expansion earns its own line.
+
+This principle is **structural, not authorial** — it operates the same way whether Nephi or Mormon is deploying it. AICTP suspends resolution the same way regardless of voice. This strengthens the case for AICTP as evidence of a Hebrew literary framing convention (wayyiqtol protasis), because the pattern holds uniformly across narrators rather than varying by author.
+
+**Implication for colometric stylometry:** The "Mormonistic vs. Nephic" voice distinction does not live in how FEFs are *handled* (which should be uniform). It lives in FEF *density* (how often they appear), line length distribution in non-FEF passages, sermonic fragmentation patterns, and parallel stacking frequency.
+
+#### Genre Awareness vs. Foundational Test
+
+Alma 5 editorial work (Alma's sermon) prompted the question: should sermonic voice get different break treatment than narrative voice? The answer: **genre awareness is context, not a rule.** The foundational test (atomic thought + atomic breath unit) applies universally regardless of voice type. If applying the same test to sermonic material produces shorter, more fragmented lines, that's an *observation* about how Alma speaks — not a license to fragment *because* it's a sermon.
+
+The guard against bias: never break or merge *because* of genre expectations. Apply the test, let the results fall, and interpret the pattern afterward.
+
+---
+*Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-20 (fourth entry)
+
+#### "Which" Relative Clauses: Open Question
+
+Working through Alma 5, a genuine open question emerged about "which" relative clauses as break points.
+
+The earlier principle (third entry, this update) settled that **defining relative clauses that leave the antecedent unidentifiable should not be broken** — "as many of the Lamanites / who had been slain" fails because the antecedent is a bare quantifier without the clause.
+
+But the Alma 5 work revealed a different situation: cases where the line before "which" is already a complete syntactic unit, and the "which" clause adds substantial specification:
+
+- `did not my father Alma believe in the words` / `which were delivered by the mouth of Abinadi?`
+- `to stand before God to be judged according to the deeds` / `which have been done in the mortal body?`
+
+In both cases the preceding line is syntactically complete — the "which" clause adds information rather than resolving an incomplete referent. Stan's instinct (confirmed) was to keep these broken. The "which" marks a genuine clausal boundary.
+
+**Working distinction (from Alma 5:3 vs. 5:11/5:15):**
+
+Alma 5:3 contains two "which" clauses that are correctly *merged* in v2:
+- `the land which was in the borders of Nephi` — light verb, thin identifier, essentially "the Nephi-bordered land"
+- `the land which was called the land of Mormon` — naming clause, another thin identifier
+
+Alma 5:11 and 5:15 contain "which" clauses that are correctly *broken*:
+- `words / which were delivered by the mouth of Abinadi` — passive verb + agent phrase; predicates something theologically substantial about the words
+- `the deeds / which have been done in the mortal body` — locative predication adding real content
+
+This is a **minimal pair** — same construction, different behavior. The distinguishing factor Stan articulated: sometimes "which" functions as an **extended adjective** (identifies/classifies the noun, thin predicate, merge tendency) and sometimes as a **genuine subordinate clause** (predicates new information, break legitimate).
+
+**Operational test:** Does the "which" clause introduce genuinely new information, or does it merely identify which one? Identifier → merge. New predication → break legitimate.
+
+This is consistent with v2 as already edited — the distinction was operating intuitively before it was theorized.
+
+**Applies equally to "who" relative clauses.** The distinguishing factor is the construction type (relative pronoun introducing a clause), not the specific pronoun. Example: Alma 5:48 — `the Only Begotten of the Father, / full of grace and mercy, and truth` — the appositional phrase functions as an extended adjective completing the portrait, not a new predication. Same merge logic applies.
+
+**Status: WORKING HYPOTHESIS.** Not yet fully settled. Continue tracking examples through Alma to confirm or complicate.
+
+---
+### Update — 2026-03-21 (second entry)
+
+#### Granular Over-Break Scrub Validation
+
+Full audit of 1 Nephi through Alma 5 (~17,000 lines): 43 over-breaks flagged, 40 fixed. Error rate 0.25%. All flags were Category A (editorial slippage). No new systemic patterns emerged. Rubric validated.
+
+**Error types found:**
+- Verb/complement splits (~20) — verb separated from its direct object or complement
+- Dangling conjunctions/subordinators (~10) — "and," "but," "that" trailing at end of line
+- Genitive orphans (~8) — head noun separated from its genitive phrase
+
+All mechanical slippage, no rule failures. The existing rubric caught every case without needing new rules.
+
+**Most common repeating pattern:** The "dangling that" after AICTP — "And it shall come to pass that" / [content] constructions where "that" trailed the previous line instead of leading the next. Fix: break BEFORE "that" so it leads the next line, not trail the previous.
+
+**Isaiah chapters (2 Ne 12-24)** contributed disproportionately to 2 Nephi's flags, consistent with complex syntax processed mechanically before FEF principles existed.
+
+---
+*Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-21 (third entry)
+
+#### New Settled Rules from Alma Editorial Work & Full-Corpus Scrub
+
+**Rule 15: Vocative units are indivisible.** Multi-word divine address formulas ("O Lord God," "O Lord our God,") stay whole on one line. The vocative can stand as its own line (consistent with Rule 3), but it must not be split mid-address. "O Lord" / "God" is always wrong; "O Lord God," / "how long wilt thou suffer..." is correct.
+
+**Rule 16: "Dangling that" after AICTP.** When "And it shall come to pass that" ends a line with "that" trailing, the fix is to break BEFORE "that" so it leads the next line: "And it shall come to pass" / "that [content]." The subordinator "that" introduces a clause and must lead, not trail. This was the most common mechanical error across the corpus (~10 instances in Mosiah alone).
+
+**Rule 17: "Caused that" complement integrity.** "Caused" requires its complement clause on the same line (or rebroken so "caused that" stays together). Same principle as "began to" — the governing verb needs its complement. "He caused" / "that his servants should..." fails; "he caused that his servants should stand forth" is correct.
+
+**Rule 18: Fixed idiom integrity.** Certain multi-word expressions are indivisible: "put to death," "from time to time," "prevailed upon," "put an end to." Never break inside a fixed idiom regardless of line length.
+
+**Rule 19: Cataphoric "that" clauses break; anaphoric "that" clauses merge.** A "that" clause earns its own line only if it introduces at least one new referent, image, or proposition (cataphoric — forward-pointing, new content). If its content is entirely backward-pointing — pronouns, demonstratives, "the case," "this thing," "the same" — it stays merged (anaphoric — resolving, no new content). Example: "I say unto you / there be many things to come" breaks because the content clause introduces new information. "The Spirit hath not said unto me that this should be the case" stays merged because "this" and "the case" are anaphoric back-references with zero new semantic content. This connects to the FEF framework: FEFs are cataphoric (forward-pointing, creating suspension); anaphoric back-references close down and resolve, having no independent energy to carry a line.
+
+#### Settled Editorial Decisions (promoted from working hypothesis)
+
+**"I say unto you" isolation pattern — SETTLED.** Isolated on its own line when introducing substantial content; merged when followed by a short response ("Nay," "Yea," "they are blessed"). This pattern is now consistent across Mosiah and Alma with no exceptions. It is not voice-dependent — it operates the same way in King Benjamin's speech, Abinadi's trial, and Alma's sermon.
+
+**"According to" as causal break — EDITORIAL JUDGMENT.** "According to his faith / there was a mighty change wrought in his heart" (Alma 5:12) — Stan's decision to treat "according to" as functionally causal. Not codified as a universal rule, but defensible when "according to" is doing causal work (stating WHY something happened, not just HOW). Watch for more instances before generalizing.
+
+---
+*Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-21 (fourth entry)
+
+#### Full-Corpus Mechanical Scrub: Patterns & Insights
+
+178 mechanical fixes applied across all 15 books (6,603 verses). The error types never changed from the initial validation set — the rubric scaled without requiring new rules.
+
+**Error distribution by book (normalized observations):**
+- **Alma 6-63** had the highest raw count (61 flags) but is also the longest book. The war chapters (43-63) and the geography chapter (22) were the densest error zones — complex military action sequences and geographic descriptions produce compound clauses the reformatter splits mechanically.
+- **The small plates (Enos, Jarom, Omni, Words of Mormon)** were remarkably clean (9 flags total). These are the earliest-edited files and reflect Stan's editorial hand the most. The principles were being applied intuitively before they were codified.
+- **Isaiah chapters (2 Ne 12-24)** contributed disproportionately to 2 Nephi's flags. Isaiah's Hebrew-poetry-in-KJV-English syntax doesn't follow the prose patterns the reformatter was built for. A future dedicated pass on Isaiah blocks may benefit from starting with Hebrew poetic structure rather than English prose rules.
+
+**The six mechanical error types (complete list — no new types emerged across the full corpus):**
+1. Dangling conjunctions/subordinators at line end ("and," "but," "nor," "that," "or," "even," "insomuch")
+2. Verb separated from direct object or complement
+3. Genitive noun separated from identifying "of/which/who/where" complement
+4. "Began to" / "caused that" split from complement verb
+5. Auxiliary/modal separated from main verb
+6. Fixed idiom split ("put to death," "from time to time," "one with another," "prevailed upon")
+
+**Stylometric observations from the scrub:**
+
+- **"Caused that" is Mormon's construction.** Almost every "caused that" split occurred in large-plates material (Mosiah through Mormon and Ether). "Caused that [subject] should [verb]" is a distinctly Mormonistic way of expressing indirect causation. Nephi doesn't use it. This is a potential stylometric marker beyond FEF density — *construction type* frequency.
+- **"Began to" splits cluster in narrative, not speech.** Every "began to" flag was in Mormon's narration or Ether's king-list chronicles. Embedded speeches (Alma's sermon, Benjamin's speech, Abinadi's trial) never triggered this error because their syntax is naturally shorter. Reinforces the voice distinction: Mormon's narrative generates longer, more complex lines; embedded speech is cleaner.
+- **The "dangling that" after AICTP was the single most common pattern** (~25-30 instances corpus-wide). All from the reformatter splitting at a length or comma threshold without recognizing "that" as a subordinator. This is the strongest case for an FEF-aware pre-breaker in any future reformatter version.
+
+**Reformatter implication:** The v8 reformatter was calibrated on 1-2 Nephi's measured prose. It doesn't anticipate how Mormon's war narrative piles up coordinated verbs, or how "caused that" constructions work, or that "it shall come to pass that" is structurally identical to the past-tense AICTP. A future v9 reformatter should protect these patterns.
+
+---
+*Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-21 (fifth entry)
+
+#### "Insomuch that" — Degree vs. Result Rule (Refined 2026-04-11)
+
+"Insomuch that" has two genuinely different functions, requiring different colometric treatment. Of 178 corpus instances, 91 are result clauses (correctly split) and 44 are degree modifiers (merged in April 2026 session). The remaining were confirmed as correctly split under the tighter image test.
+
+**DEGREE (merge):** The "insomuch that" clause restates, quantifies, or measures the SAME action on the preceding line. No new image is introduced.
+
+Three subtypes:
+- **(a) Same verb/synonym restated:** "there arose a division / insomuch that they divided hither and thither" — "divided" IS the "division"
+- **(b) Quantification:** "did slay them with much slaughter / insomuch that there were slain twelve thousand" — adds a number to the same action
+- **(c) Abstract → specific detail (same image):** "it began to be exceedingly difficult / insomuch that we could obtain no food" — specifies what "difficult" means without painting a new picture
+
+**RESULT (break):** The "insomuch that" clause introduces a genuinely new event, actor, or image.
+
+Three triggers for breaking:
+- **(d) New actor:** "they preached / insomuch that the Lord did bless them" — the Lord is a new actor
+- **(e) New type of action:** "their anger did increase / insomuch that they did seek to take away my life" — emotion → lethal action is a different kind of event
+- **(f) New image (image test):** "they were astonished / insomuch that they fell to the earth" — you were picturing stunned faces; now you see bodies hitting the ground
+
+**The image test for borderline cases:** Close your eyes and picture the scene. Does the "insomuch that" clause make you SEE something new (a new body position, a new physical event, a new scene) or does it just give you MORE DETAIL about what you were already picturing? New image = break. Same image with more detail = merge.
+
+**Key patterns that emerged from the audit:**
+- Emotion → same emotion restated: MERGE ("glad / insomuch that they did rejoice")
+- Emotion → physical action: BREAK ("astonished / insomuch that they fell to the earth")
+- Abstract state → concrete specification: MERGE ("exceedingly strong / insomuch that they became rich")
+- Abstract state → concrete new scene: BREAK ("prosperity / insomuch that they did build cities")
+- Same military action measured: MERGE ("did gain advantage / insomuch that they did drive them back")
+- Military action → different outcome: BREAK ("did beat them / insomuch that they did return to their own lands")
+
+---
+*Last updated: 2026-04-11*
+
+---
+### Update — 2026-03-22
+
+#### Rule 19: Anaphoric vs. Cataphoric "that" Clauses
+
+**Cataphoric "that" clauses (forward-pointing, new content) break; anaphoric "that" clauses (backward-pointing, resolving) merge.**
+
+Test: does the "that" clause introduce at least one new referent, image, or proposition? If yes (cataphoric), it can break. If its content is entirely backward-pointing — pronouns, demonstratives, "the case," "this thing," "the same" — it merges.
+
+Examples:
+- "that the good shepherd doth call you" — new image, new action → **breaks** (cataphoric)
+- "that this should be the case" — "this" and "the case" both point back → **merges** (anaphoric)
+- "there be many things to come" — new referent, new temporal info → **breaks** (cataphoric)
+
+This connects to the FEF framework: FEFs are cataphoric by nature (forward-pointing, creating suspension). Anaphoric back-references close down and resolve — they have no independent energy and merge with what precedes them.
+
+#### Methodological Note: Syntactic vs. Structural Categories
+
+Two distinct layers operate in sense-line decisions:
+
+**Syntactic rules** (grammar-level): subject-verb binding, verb-object binding, conjunction placement, genitive completion, auxiliary-verb unity. These are non-negotiable — if the grammar says the break creates an incomplete parse, the break doesn't happen. Rules 1-18 are almost entirely syntactic. These produce the 0.25% error rate and are falsifiable by sentence diagramming.
+
+**Structural decisions** (discourse-level): speech attribution isolation, vocative separation, parallel stacking for emphasis, causal breaks that separate cause from effect, sermonic pauses. These operate WITHIN the space syntactic rules leave open — where grammar permits a break, structural judgment decides whether to take it.
+
+**The principle: sense-line breaks occur only where syntactic permission and structural motivation converge.** If the grammar says no, the break doesn't happen regardless of rhetorical appeal. If the grammar says yes but there's no structural reason, lines stay merged. No structural choice should ever override a syntactic rule.
+
+This layered approach is what makes the method defensible: the syntactic rules are mechanical and replicable; the structural decisions are editorial but constrained by the syntactic floor.
+
+---
+*Last updated: 2026-03-22*
+
+---
+### Update — 2026-03-23
+
+#### Rule 19 Refinement: Expletive "It" and Result Clauses Are Not Anaphoric
+
+The initial formulation of Rule 19 (anaphoric "that" clauses merge; cataphoric break) was too broad. Corpus audit revealed false positives where "it" or "that" appeared to point backward but were actually introducing new content:
+
+**Expletive "it" in cleft constructions:** "that it is by his grace" (Jacob 4:7) — the "it" is a structural placeholder in a cleft sentence ("it is X that Y"), not a referential pronoun pointing to a previously named thing. The predication ("by his grace") is genuinely new content. These are CATAPHORIC — they break correctly.
+
+**Result/purpose clauses with new predication:** "that it is good" (Jacob 5:39) — "it" refers back to "the natural fruit," but "good" is NEW information — the discovery, the payoff of the action. When a backward-pointing pronoun is followed by a new predicate (quality, state, judgment), the clause carries enough new content to justify breaking.
+
+**Sharpened test for Rule 19:** A "that" clause is anaphoric (merge) ONLY when BOTH the subject AND the predicate are backward-pointing. If the subject points back ("this," "it," "these things") but the predicate introduces new content ("is by his grace," "is good," "is because I have testified"), the clause is cataphoric enough to break.
+
+Genuine anaphoric violations have predicates like "should be," "should be the case," "had not been written" — where the predicate adds no new image or information beyond what was already established.
+
+**Confirmed violations fixed:** Helaman 14:27 ("that these things should be" — "these things" + "should be" = all backward), 3 Nephi 11:30 ("that such things should be done away" — "such things" + removal = all backward), 3 Nephi 23:12 ("that this thing had not been written" — "this thing" + "not written" = all backward).
+
+---
+*Last updated: 2026-03-23*
+
+---
+### Update — 2026-03-23 (second entry)
+
+#### Rule 20: Polysyndeton + Repeated Possessive/Conjunction = Stack
+
+When a series uses polysyndeton ("and X, and Y, and Z") rather than asyndeton or simple listing ("X, Y, and Z"), each "and" marks a deliberate rhetorical beat. Combined with repeated possessives ("and his X, and his Y"), the speaker is re-anchoring each item individually rather than compressing them into a catalogue.
+
+**Stack (polysyndeton — each item gets its own line):**
+- "and his matchless power, / and his wisdom, / and his patience, / and his long-suffering" — repeated "and his" marks each as distinct
+- "but suffereth himself to be mocked, / and scourged, / and cast out, / and disowned" — each "and" introduces a new action/image
+
+**Keep together (asyndeton/simple list — one line):**
+- "gold and silver and precious things" — no escalation, same register
+- "submissive, meek, humble, patient" — comma-separated catalogue in the same register (humility cluster), no repeated conjunction
+
+**The test:** Does each "and" introduce a genuinely new image at a different register, or is the "and" just connecting equivalent items? If each conjunction marks a step up (or down) in theological/rhetorical weight, stack vertically. If the items are coordinate equivalents, keep together.
+
+**Statistical value:** Polysyndetic escalation frequency is a measurable feature per attributed author. The pattern clusters in theologically dense passages (Benjamin's angel discourse, Abinadi, Jacob's sermon) and may correlate with prophetic/revelatory voice type vs. narrative voice type.
+
+#### Escalatory Appositive Inventory Update
+
+After applying Rule 20 across Mosiah, the corpus now has:
+- 24 existing escalatory appositive stacks (19 original + 5 new Mosiah breaks)
+- 5 remaining missed opportunities in 2 Nephi and Mormon/Moroni (to be reviewed in Stan's manual pass)
+
+The pattern is concentrated in prophetic/revelatory speech — not in Mormon's narrative prose. This distribution is itself data for the colometric stylometry paper.
+
+---
+*Last updated: 2026-03-23*
+
+---
+### Update — 2026-03-23 (third entry)
+
+#### Methodological Principle: Punctuation Must Not Have Deterministic Force
+
+The commas, semicolons, colons, and dashes in the canonical text are editorial additions — added by the printer/publisher, not original to the translation event. They may corroborate a line-break decision grounded in grammar or rhetoric, but they CANNOT justify one by themselves.
+
+**The test:** If a line break depends on a comma being present to make the case, remove the comma mentally and ask whether the break still holds on purely grammatical/rhetorical grounds. If not, the break is grounded in a 19th-century typesetter's judgment, not in the text's structure.
+
+**Example:** Alma 7:12 — "that his bowels may be filled with mercy, / according to the flesh," was initially defended as a split because the comma after "mercy" seemed to mark "according to the flesh" as a non-restrictive modifier. But the comma is editorial, and syntactically "according to the flesh" is a manner adverbial modifying "filled" — identical to the subsequent "know according to the flesh" and "succor according to their infirmities," which were both correctly merged. Without the comma distinction, all three should be treated the same. The split was reversed.
+
+**Implication:** This does NOT mean we ignore punctuation entirely — it's useful context and often reflects genuine clause boundaries. But it cannot be the SOLE basis for a break decision. Grammar, rhetorical structure, and the atomic thought test are primary; punctuation is secondary/corroborating.
+
+---
+*Last updated: 2026-03-23*
+
+---
+### Update — 2026-03-24
+
+#### Rule 21: "According to" — Manner vs. Source/Authority
+
+"According to" phrases split when they claim divine source or authority; they merge when they describe manner.
+
+**Merge (manner — HOW the action is done):**
+- "spoke unto them, according to his word" — per instructions
+- "proceed with mine own prophecy, according to my plainness" — style of delivery
+- "gave a genealogy, according to his memory" — how he recalled
+- "manifest unto the children of men, according to their faith" — the mechanism
+
+**Split (source/authority — BY WHAT POWER the action occurs):**
+- "it whispereth me, / according to the workings of the Spirit of the Lord" — the Spirit is the source
+- "had spoken unto all his household, / according to the feelings of his heart and the Spirit of the Lord" — dual source: personal feeling + divine Spirit
+- "I give unto you a prophecy, / according to the spirit which is in me" — prophetic authorization
+
+**The test:** Is the "according to" phrase answering HOW? (manner → merge) or BY WHAT AUTHORITY / FROM WHAT SOURCE? (authorization → split). Source/authority claims are independent theological assertions that earn their own line. Manner adverbials are embedded modifiers that stay with their verb.
+
+**Connection to punctuation principle:** This distinction was discovered when the punctuation-dependency audit revealed that all "according to" breaks had been made at comma boundaries. Stripping the commas and testing on grammar alone revealed that some breaks were genuinely justified (source/authority) while others were punctuation artifacts (manner). The comma cannot be the basis — the function of the phrase must be.
+
+---
+*Last updated: 2026-03-24*
+
+---
+### Update — 2026-03-24 (second entry)
+
+#### Rule 22: Divine Title Appositives — INTRODUCING vs. REFERENCING
+
+Divine title appositive constructions ("Jesus Christ, the Son of God") are treated differently based on whether the speaker is INTRODUCING or REFERENCING the identity:
+
+**INTRODUCING (stack):** The speaker is prophetically declaring, formally proclaiming, or revealing the identity for the first time in context. The appositive makes a theological claim — it escalates from name to title. Examples:
+- "his name shall be Jesus Christ, / the Son of God." (2 Ne 25:19 — Nephi's naming prophecy)
+- "that I am Jesus Christ, / the Son of God," (3 Ne 20:31 — Christ's self-declaration)
+- "Christ was the God, / the Father of all things," (Mosiah 7:27 — Abinadi's Christological claim)
+- "Hosanna to the Lord, / the most high God;" (1 Ne 11:6 — liturgical exclamation)
+
+**REFERENCING (merge):** The speaker is using an already-established identity as a name unit. The audience already knows. The appositive identifies, doesn't escalate. Examples:
+- "I am a disciple of Jesus Christ, the Son of God." (3 Ne 5:13)
+- "in the name of Jesus Christ, the Son of the living God;" (Morm 9:29)
+- "O God, the Eternal Father," (Moroni 4:3, 5:2 — liturgical formula)
+
+**The test:** Is the speaker REVEALING identity (audience doesn't know, or the moment demands formal proclamation) or USING identity (audience already knows, name is formulaic)?
+
+Corpus inventory: 38 divine title appositive constructions identified. 18 already stacked, 6 newly stacked (all INTRODUCING), 14 correctly merged (all REFERENCING).
+
+---
+
+### Update — 2026-03-24 (Alma 7–8 editorial session)
+
+Three candidate rules emerged from manual review of Alma 7–8. Rules 20 and 21 are considered settled; Rule 22 is settled in principle but requires editorial judgment in application.
+
+#### Rule 20: Inverted predicate constructions earn their own line.
+
+When the predicate is fronted for emphasis — "great is my joy," "blessed are they," "marvelous are the works" — break before the inverted predicate. The inversion itself signals that the author is marking this as rhetorically weighted; the construction is a discrete image and a natural breath unit.
+
+**Test:** Can you rephrase it in normal word order ("my joy is great") and the emphasis is lost? If yes, the inversion is doing rhetorical work and deserves its own line.
+
+**Example (Alma 7:17):**
+```
+yea, concerning the things which I have spoken,
+great is my joy.
+```
+Not: `yea, concerning the things which I have spoken, great is my joy.`
+
+#### Rule 21: Title/role stays with its domain.
+
+Never split a title or role designation from the prepositional phrase that completes it: "high priest over the church," "king over the land," "chief judge among the people," "captain over the armies." The title is semantically incomplete without its domain.
+
+**Test:** Would the title alone be ambiguous or incomplete as a referent? If yes, keep title + domain on one line.
+
+**Example (Alma 8:11):**
+```
+and we know that thou art high priest over the church
+which thou hast established in many parts of the land,
+```
+Not: `and we know that thou art high priest / over the church which thou hast established...`
+
+#### Rule 22: Virtue/vice lists — examine for parallel structure.
+
+When a passage stacks moral qualities, exhortations, or enumerated items, examine the list for detectable parallel patterns before making line-break decisions. Common patterns to look for:
+
+- **Dual parallels (2-beat pairs):** "women and children," "humble and submissive," "spiritual and temporal." These stay together as a unit unless the second element introduces genuinely new content.
+- **Triadic parallels (3-beat triads):** "faith, hope, and charity." These stack vertically if each element carries enough weight, or stay merged if they function as a single compound concept.
+- **Dual + expansion (2+1 pattern):** A paired doublet followed by a third element that expands or recontextualizes the pair. The expansion earns its own line.
+- **Crescendo lists:** If the list items grow progressively longer, the lengthening may be deliberate — each item asks more of the reader. Do not normalize long lines to match short ones if the growing length tracks growing rhetorical weight.
+
+**Test:** Is there a detectable rhythmic pattern (2-beat, 3-beat, escalating doublet)? If yes, line breaks should make it visible. If no pattern is detectable, default to the breath/image test per line. Do not impose parallelism that isn't there — but do not obscure it either.
+
+**Example (Alma 7:23) — crescendo preserved:**
+```
+And now I would that ye should be humble,
+and be submissive and gentle;
+easy to be entreated;
+full of patience and long-suffering;
+being temperate in all things;
+being diligent in keeping the commandments of God at all times;
+asking for whatsoever things ye stand in need,
+both spiritual and temporal;
+always returning thanks unto God for whatsoever things ye do receive.
+```
+The list grows longer as the demands grow heavier. The longer lines earn their length.
+
+---
+*Last updated: 2026-03-24*
+
+---
+### Update — 2026-03-25
+
+#### Rule 23: Narrowing Vocative Addresses
+
+Compound vocative addresses that narrow from broad group to specific subset earn a break at the narrowing point. The speaker names the wide audience first, then zooms in to the specific addressees.
+
+**Break (narrows):**
+- "O ye house of Israel, / all ye that are broken off and are driven out" — nation → diaspora subset
+- "O ye wicked and perverse generation, / ye lawyers and hypocrites," — generation → occupational subset
+- "O ye workers of iniquity; / ye that are puffed up in the vain things of the world," — broad category → specific behavior
+
+**Keep merged (restates at same level):**
+- "O ye my people, or my brethren," — equivalence restatement (Rule 5), same scope
+
+**Corpus observation:** 15 compound vocative instances identified. The BofM text **consistently narrows from broad to specific** in vocative stacking — never the reverse. This unidirectional pattern (broad→narrow) parallels the escalatory appositive direction (general→specific) and may be a structural feature of the text's rhetorical grammar. Potentially quantifiable as a stylometric feature.
+
+#### Critical Bug Fix: _fix_double_that Stripping Genuine Clauses
+
+The build_book.py function `_fix_double_that` was silently deleting the word "that" from 31 genuine purpose/content clauses across the corpus. The function assumed every "that" following an AICTP line ending in comma was a duplicate, but many were introducing genuine new clauses ("that thereby they might," "that they should," "that if he would," etc.).
+
+Fix: added a CLAUSE_STARTERS guard — if the word after "that" is a pronoun, determiner, adverb, or conjunction (they, he, this, thereby, if, when, etc.), the "that" is a genuine clause introducer and is preserved. Also removed the paragraph-layer regex that did the same stripping.
+
+Impact: 31 verses across all 15 books now correctly retain their purpose/content clause "that."
+
+---
+*Last updated: 2026-03-25*
+
+---
+### Update — 2026-03-26
+
+#### Rule 24: Definitional "Which Is" Clauses — Equation vs. Description
+
+"Which is/are" relative clauses break when they make a **theological equation or reveal** something the reader doesn't already know. They merge when they merely **describe an attribute**.
+
+**Break (equation/revelation):**
+- "the atonement, / which is infinite for all mankind" — defines the scope (equation)
+- "the law of Moses / which is the right way" — equates law with theological status
+- "judgment of which we have spoken, / which is the end" — defines the judgment as the eschatological end
+- "Rabbanah, / which is, being interpreted, powerful or great king" — translates a foreign word
+- "the name of Christ, / which is my name?" — Christ equates the name with his identity
+
+**Merge (description/attribute):**
+- "a life which is endless" — single-word attribute, not an equation
+- "a sin which is unpardonable" — descriptive modifier
+- "that joy which is unspeakable and full of glory" — describes what the joy is LIKE
+
+**The test:** Does the "which is" clause tell the reader what something IS (equation → break) or what it's LIKE (attribute → merge)?
+
+Corpus: 65 definitional "which is/are" clauses identified. 52 already broken (80%), 5 newly broken, 8 correctly merged as descriptive.
+
+#### Rule 25: ~~"And Thus We See" — Editorial Narrator Formula~~ **ELIMINATED 2026-03-29**
+
+**Former rule:** "And thus we see" earns its own line as an editorial narrator formula, with "that [lesson]" beginning the next line.
+
+**Reason for elimination:** "We see" without its complement clause is an incomplete thought — it fails the atomic thought test. While discourse analysts (Hyland 2005, Schiffrin 1987) would recognize "And thus we see" as a metatextual discourse marker with its own intonational phrase, we privilege syntactic completeness over discourse-marker status. The prosodic pause after "we see" is real but not doing significant enough work to override the foundational test.
+
+**Methodological principle established:** When discourse-marker status (prosody) and syntactic completeness (atomic thought) conflict, syntactic completeness governs. Prosodic breaks can override syntax only when the break is clear, significant, and does unambiguous rhetorical or structural work. This applies equally to "And thus we see," "Now we see," "therefore we see," and all variants of the conclusory "we see" formula.
+
+**Action taken:** 13 instances merged across 1 Nephi (2), Alma (6), Helaman (5), Ether (1). All produce reasonable breath-length lines (8–14 words).
+
+**Note:** The *distribution* of "and thus we see" remains quantifiable data for stylometric analysis — the formula's frequency is still a narrator-voice marker, even though it no longer triggers a line break.
+
+---
+*Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-26 (second entry)
+
+#### Rule 26: Adjective + "That" Complement Constructions Stay Together
+
+When an adjective requires a "that" clause as its complement, they stay on the same line. The "that" clause is not independent content — it completes the adjective's meaning.
+
+**Merge (adjective needs its "that" complement):**
+- "if it were possible that our first parents..." — possible WHAT?
+- "it is expedient that much should be done..." — expedient THAT what?
+- "they were desirous that they might destroy..." — desirous OF what?
+- "it is impossible that ye should be ignorant..." — impossible THAT what?
+
+**Break (verb is complete without "that"):**
+- "he hath said / that no unclean thing..." — "said" is complete; "that" introduces content
+- "and thus we see that all mankind were fallen" — "we see" + complement merges (Rule 25 eliminated; verb is syntactically incomplete without "that" clause)
+
+**The distinction:** Adjectives (possible, expedient, desirous, necessary, needful, impossible) REQUIRE their "that" clause to have any meaning — they are incomplete without it. Verbs of speaking/perceiving (said, testified, see, know) are complete as speech acts even without specifying what was said/seen/known.
+
+19 instances fixed across 7 books.
+
+---
+*Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-26 (third entry)
+
+#### Virtue List Pivot Principle
+
+Asyndetic adjective lists in the same register compress onto one line; a pivot to a new register earns a break. The pivot can be:
+
+- **Bare adjectives → compound phrases:** "humble, submissive, gentle" (one-word adjectives) vs. "full of patience and long-suffering" (prepositional compound) — the shift from single modifiers to elaborated phrases marks a register change.
+- **Receptive → active:** qualities the believer RECEIVES (humble, meek, submissive) vs. qualities the believer DOES (diligent in keeping commandments, asking for whatsoever things) — the shift from passive reception to active practice earns a break.
+
+Alma 13:28 virtue list pivot applied to match the Mosiah 3:19 pattern. Both passages share a receptive-to-active arc; the break at the pivot makes this rhetorical architecture visible across books.
+
+#### "Through" as Source/Mechanism Follows Rule 21
+
+"Through [source]" phrases claiming the mechanism of salvation or divine action split from what precedes them. These are source/authority claims, not manner adverbials:
+
+- "redeemed of God, / through the blood of the Lamb"
+- "salvation cometh to none such / except it be through repentance and faith"
+- "be saved / through the merits, and mercy, and grace of the Holy Messiah"
+
+10 instances fixed across 6 books. Follows the same logic as Rule 21 (source/authority splits; manner merges).
+
+---
+*Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-29
+
+#### Verb + "That" Audit: No Verb-Type Rule Exists
+
+A corpus-wide audit of every verb + "that" construction tested the hypothesis that declarative verbs (said, testified, covenanted) should break before "that" while perceptive/stative verbs (saw, knew, believed, supposed) should merge. **The hypothesis failed.**
+
+131 instances contradicted the proposed rule: 55 declarative verbs merged, 76 perceptive verbs broken. The pattern is NOT governed by verb type.
+
+**What the data actually shows:**
+
+1. **Speech attribution formulas** break — "he said:" / "he testified / that..." This is a genuine structural pattern (already settled). The verb functions as attribution, not as an ordinary predicate.
+
+2. **Discourse formulas** break consistently — "I would that ye should know / that..." (~25 instances, ALL broken), "do ye not remember / that..." (ALL broken), "when they saw / that..." (ALL broken). These are FORMULAIC breaks at formula boundaries, not verb-type boundaries.
+
+3. **Line length and breath** govern most other cases — long lines break before "that" because the preceding line is already a full breath unit. Short embedded verb+"that" constructions merge because there's no natural breath point.
+
+4. **No verb-type classification produces consistent results.** The "exclamation test" and "declarative vs perceptive" distinction were post-hoc rationalizations of editorial decisions actually driven by breath and formula, not grammar.
+
+**Conclusion:** Verb + "that" breaks are governed by the foundational test (atomic thought + breath unit) and the speech attribution rule, not by a verb-type classification. No new rule is warranted.
+
+#### Rules Reclassification: Rules vs. Editorial Principles
+
+An adversarial review of all 26 settled rules revealed that approximately 10 are genuinely mechanical (any trained editor would apply them identically), while approximately 6 depend on editorial judgment about register, escalation, theological weight, or narrative context. Both categories are legitimate, but they should be labeled honestly.
+
+**RULES (mechanical, reproducible, falsifiable):**
+- Rule 1: AICTP stays on one line
+- Rule 2: "It is expedient that" is a fixed idiom
+- Rule 5: Equivalence "or" restatement
+- Rule 6: Causal clauses break
+- Rule 7: Purpose clauses break
+- Rule 9: Never end on a conjunction
+- Rule 11: Never end on an article
+- Rule 12: Never split auxiliary from main verb
+- Rule 15: Vocative units indivisible
+- Rule 16: Dangling "that" after AICTP
+- Rule 17: "Caused that" complement integrity
+- Rule 18: Fixed idiom integrity
+- ~~Rule 25: "And thus we see" editorial narrator formula~~ **ELIMINATED** — verb + complement is syntactically incomplete; foundational test overrides discourse-marker status
+- Rule 26: Adjective + "that" complement stays together
+
+**EDITORIAL PRINCIPLES (defensible, documented, but require judgment):**
+- Rule 14: Escalatory vs. restrictive qualifying phrases
+- Rule 20: Polysyndetic stacking (depends on "different register" judgment)
+- Rule 21: "According to" manner vs. source/authority
+- Rule 22: Divine title introducing vs. referencing
+- Rule 24: Definitional "which is" — equation vs. description
+
+**GUIDELINES (useful tendencies, not strict rules):**
+- Rule 4: Circumstantial clause pairing (restates the foundational test)
+- Rule 8: Framing devices attach to content (mostly true, some exceptions)
+- Rule 10: Verb + direct object on short phrases ("short" undefined)
+- Rule 13: Parallel structures stack ONLY when each stacked element is independently atomic (revised 2026-04-12 — see update at bottom of doc)
+- Rule 19: Anaphoric/cataphoric "that" (useful heuristic, edges are fuzzy)
+- Rule 23: Narrowing vocatives (data supports the pattern but sample is small)
+
+**Implication for the paper:** The mechanical rules provide the falsifiable, reproducible foundation for quantitative claims. The editorial principles provide the reading edition's character. The paper should claim only what the mechanical rules can support — editorial principles are methodology of the EDITION, not evidence for the STYLOMETRY.
+
+---
+*Last updated: 2026-03-29*
+
+---
+### Update — 2026-03-29 (second entry)
+
+#### Discourse Formula Check: "I would that ye should [verb]" is NOT a consistent pattern
+
+Tested all 50 instances of "I would that ye should [verb]" + "that" across the corpus. Result: exactly 25 broken, 25 merged — a perfect 50/50 split. This is NOT promotable to a rule. Breaks are governed by line length/breath, not by the formula itself. The earlier agent's claim of "~25 instances, ALL broken" was incorrect — it only counted instances where "that" appeared on the next line and missed the merged ones. **Cautionary tale about confirmation bias in audit processes.**
+
+#### Editorial Principle Break Audit Results
+
+Tested 16 breaks made under Editorial Principles (Rules 14, 20, 21, 22, 24) against the foundational test alone:
+- **11 of 16 SURVIVE** the foundational test without the editorial principle (Rules 21, 22, 24 breaks, plus Mosiah 3:19 and Alma 7:10)
+- **5 of 16 DEPEND ON PRINCIPLE** — all five are Rule 20 polysyndetic stacking of bare noun/verb fragments
+
+Of the 5 principle-dependent breaks:
+- **3 RETAINED** (Mosiah 15:5 passion verbs, Mosiah 18:2 salvific arc, 2 Ne 9:19 monster decomposition) — items are in genuinely different semantic domains with distinct visualizable images
+- **2 REVERTED** (Mosiah 4:6 divine attributes, Mosiah 5:15 divine attributes) — abstract quality catalogues where we may have imposed gravitas the text doesn't structurally demand
+
+#### Refined Polysyndetic Stacking Criterion
+
+Polysyndetic stacking is justified ONLY when items are in genuinely different semantic domains AND each item produces a distinct visualizable image:
+- **Stack:** "mocked / scourged / cast out / disowned" — four different KINDS of action, each a distinct image
+- **Stack:** "devil / death / hell / lake of fire" — distinct entities, each a distinct image
+- **Merge:** "matchless power, and his wisdom, and his patience" — abstract attributes in the same general domain (divine qualities), not distinct images
+
+**The test:** Can you visualize each item as a separate mental picture? "Scourged" — yes (whip on flesh). "Mercy" — no (abstract concept). Image-producing items can stack; abstractions merge.
+
+#### Mechanical Validation Test Results
+
+Line-length statistics measured across 10 attributed voice sections. Key finding: **voice differentiation IS present in the current text.**
+- Shortest: Abinadi at 7.71 avg words/line
+- Longest: Mormon Narrative at 9.09 avg words/line
+- Spread: 1.38 words/line across sections
+- Standard deviation remarkably consistent (2.87-3.19) across ALL sections — the editorial hand applies the same spread everywhere; only the center shifts
+
+Three tiers: oratorical/sermon (7.7-8.0), blended (8.4-8.5), narrative/abridgment (8.8-9.1). The differentiation is in the TEXT, not in our method.
+
+#### Methodological Commitment: Identify Real Grammar, Not Pseudo-Categories
+
+When identifying the grammatical basis for a line break:
+- **"This is [standard grammatical term]"** — when confident it's established (e.g., "verb phrase | prepositional adjunct")
+- **"I think this might be [X] but I'm not certain"** — when pattern-matching
+- **"I don't know"** — when uncertain
+
+Do not construct grammatical categories to justify editorial instincts. If a break can't be named in standard grammatical terms, it's an editorial decision — which is fine, but should be labeled honestly.
+
+---
+*Last updated: 2026-03-29*
+
+---
+### Update — 2026-03-29 (third entry)
+
+#### Compound List Break Signals (replaces Rule 20 polysyndetic stacking)
+
+In a compound list governed by one preposition or verb, bare "and [noun]" items are compound objects of one grammatical act and stay MERGED. A break is justified only when a grammatical signal marks an item as structurally distinct:
+
+**Signals that justify a break within a compound list:**
+1. **Elided auxiliary + stacked participles** — each participle is an implied predication. "Suffereth himself to be mocked, / and scourged, / and cast out, / and disowned" — each has an implied "to be." Standard grammatical ellipsis.
+2. **Possessive restart** — "and his/their/our" re-anchors to a new subject-relationship. "Through the power, and sufferings, and death of Christ, / and his resurrection and ascension" — "and his" starts a new possessive phrase.
+3. **Demonstrative** — "and that/this/these" signals a new specified noun phrase. "The devil, and death, and hell, / and that lake of fire and brimstone" — "that" marks a structurally distinct item.
+4. **Relative clause attached** — "which is/who was" adds a predication that gives the item independent grammatical weight.
+
+**Without such a signal:** bare "and [noun]" items merge. "His matchless power, and his wisdom, and his patience" — wait, this HAS repeated possessives ("and his"). But we reverted it. The distinction: the possessive in Mosiah 4:6 is REPEATED identically ("and his X, and his Y") — it's a formulaic pattern, not a restart. In Mosiah 18:2, the possessive SHIFTS from no possessive ("through the power, and sufferings, and death") to possessive ("and his resurrection") — a genuine grammatical shift marking a new phase.
+
+**Refined possessive test:** A possessive RESTART (appearing after items without it, or changing from one possessor to another) justifies a break. A repeated identical possessive ("and his X, and his Y, and his Z") is formulaic and does NOT alone justify stacking.
+
+**All three signals are mechanically testable — no judgment about register, escalation, or theological weight required.**
+
+---
+*Last updated: 2026-03-29*
+
+---
+### Update — 2026-03-29 (fourth entry)
+
+#### Reverted Editorial Breaks That Lacked Grammatical Justification
+
+Applied the compound list break signals test to all remaining editorial principle breaks. Reverted those without genuine grammatical signals:
+
+- **Mosiah 3:19** — "full of love" merged back with "submissive, meek, humble, patient" — all predicate adjectives of one participle, no structural signal separating them. "Willing to submit..." stays broken (full participial phrase with own object).
+- **Alma 13:28** — same pattern, merged back.
+- **Alma 7:10** — "a precious and chosen vessel" merged back with "she being a virgin" — both appositional noun phrases in the same slot. "Who shall be overshadowed" stays broken (own verb = genuine predication).
+- **Mosiah 18:2** — noun objects of "through" merged. Break at possessive restart ("and his resurrection") retained — genuine grammatical signal.
+- **2 Nephi 9:26** — compound appositive merged after "that awful monster" frame. No internal grammatical signals justified stacking.
+
+#### Retained Breaks That Pass Grammatical Tests
+
+- **Mosiah 15:5** — "mocked / scourged / cast out / disowned" — elided auxiliary "to be," each participle is an implied predication. PASSES.
+- **Moroni 7:45** — "beareth / believeth / hopeth / endureth all things" — elided subject "charity," each verb is an independent predication. PASSES.
+- **2 Nephi 9:19** — break at "and that lake of fire" — demonstrative "that" is a grammatical signal. PASSES.
+- **Mosiah 18:2** — break at "and his resurrection" — possessive restart. PASSES.
+
+---
+*Last updated: 2026-03-29*
+
+---
+### Update — 2026-03-29 (fifth entry)
+
+#### Rule 25 Eliminated: "And Thus We See" No Longer Breaks
+
+The editorial narrator formula "And thus we see / that [lesson]" has been re-merged across the corpus. "We see" without its complement clause is an incomplete thought — it fails the atomic thought test, same as "it is expedient" without "that."
+
+While discourse analysis (Hyland 2005 *Metadiscourse*; Schiffrin 1987 *Discourse Markers*; Genette 1980 *Narrative Discourse*) confirms that "And thus we see" IS a metatextual discourse marker with its own intonational phrase, we privilege syntactic completeness over discourse-marker status.
+
+**Methodological principle: syntax vs. prosody tiebreaker.** When discourse-marker status (prosody) and syntactic completeness (atomic thought) conflict, syntactic completeness governs unless the prosodic break is doing clear, significant, unambiguous rhetorical or structural work. The small pause after "we see" doesn't change meaning or reveal hidden structure — it's a prosodic instinct, not a structural revelation.
+
+This applies to ALL variants: "And thus we see," "Now we see," "therefore we see," "thus we see." All are verb + complement clause, governed by the foundational test.
+
+**13 instances merged:** 1 Nephi 16:29, 17:3; Alma 12:21, 12:22, 24:19, 30:60, 42:4, 42:14; Helaman 6:34, 6:35, 6:36, 6:40, 12:3; Ether 14:25.
+
+**Note:** The formula's *distribution* remains valid stylometric data. "And thus we see" frequency is still a narrator-voice marker — the formula just no longer triggers a line break.
+
+#### Foundational Test Hierarchy Formalized
+
+1. **Syntax (atomic thought)** — always governs unless overridden
+2. **Prosody (atomic breath)** — can override syntax only when break is clear and significant
+3. **Editorial instinct** — flags candidates but doesn't decide
+
+This hierarchy resolves the tension between the two prongs of the foundational test. Both are valid, but when they conflict, the atomic thought test is the stronger prong.
+
+#### Linguistic Audit of All Rules Completed
+
+Full audit saved to `research/colometry-rules-audit.md`. Results: 20 CONFIRMED, 7 PARTIALLY CONFIRMED, 0 UNCONFIRMED, 0 PROBLEMATIC. Key citations integrated. The PARTIALLY CONFIRMED rules all have real linguistic grounding but use non-standard terminology or require editorial judgment. None contradicts established grammar.
+
+---
+*Last updated: 2026-03-29*
+
+---
+### Update — 2026-04-11
+
+#### Four Criteria for Sense-Line Breaks (Definitive Formulation)
+
+Sense-line breaks are governed by four criteria, applied in a strict hierarchy:
+
+**1. English syntax / clause rules (FLOOR — never violate)**
+
+Syntax does two things: it *permits* breaks (clause boundaries, predication boundaries, restated prepositions) and it *forbids* breaks (verb + obligatory complement, article + noun, auxiliary + main verb). The syntactic bond rules are the floor. You never break where syntax says no, regardless of what the other three criteria suggest.
+
+Key principle: **obligatory vs. optional complement clauses.** Verbs that require their "that" clause to be semantically complete ("suppose," "understand," "show," "command") must not break before "that." Verbs that are complete without it ("say," "testify," "believe," "know") may break. The period test: can you put a period after the verb phrase and have a grammatically complete sentence? If not, the complement is obligatory and the break is forbidden.
+
+**2. Atomic idea (PRIMARY criterion)**
+
+Each line holds one processable unit of meaning. The reader doesn't need to carry it forward and resolve it against the next line to understand it. When breath and thought conflict, thought wins. A line that fails the atomic thought test cannot be rescued by being short.
+
+**3. New mental image (STRONG signal)**
+
+When a new picture appears — a new actor, a new scene, a new action — that's a break candidate. Each line should paint a single image in the mind. If a line contains two distinct images, it's a candidate for splitting. Operates within syntactic permission — the image test never overrides a syntactic bond.
+
+**4. Natural breath pause (SECONDARY — tiebreaker)**
+
+Each line can be delivered in one breath at natural reading pace. This is the weakest criterion — it decides *whether* to take a break that grammar permits and the other criteria leave ambiguous. A prosodic pause alone, without a thought boundary or image boundary, is not sufficient to justify a break unless it is clear and significant.
+
+**The hierarchy in practice:**
+
+```
+Criterion 1 (syntax)  — hard floor, never violate
+Criterion 2 (thought) — primary, governs when criteria conflict
+Criterion 3 (image)   — strong signal, operates within syntactic permission
+Criterion 4 (breath)  — secondary, tiebreaker when thought/image are ambiguous
+```
+
+This replaces the earlier two-prong "atomic thought OR atomic breath" formulation with a clearer four-part hierarchy.
+
+#### Obligatory vs. Optional Complement Rule (New)
+
+Formalized from verb valency analysis (Quirk et al. 1985, §16.31-35):
+
+**Break before "that" only when it introduces an OPTIONAL complement clause.** If the preceding verb requires the "that" clause to be semantically complete, the break is forbidden.
+
+| Verb class | Examples | Complement type | Break? |
+|-----------|----------|----------------|--------|
+| Reporting/speech | say, testify, declare, prophesy | Optional | YES |
+| Perception | see, hear, believe, know | Optional | YES |
+| Cognitive (obligatory) | suppose, understand, imagine | Obligatory | NO |
+| Causative | cause, command, grant | Obligatory | NO |
+| Demonstrative | show (prove sense), witness | Obligatory | NO |
+
+Applied: 23 suppose/understand/granted merges, 8 commanded merges, 5 desire merges.
+
+#### Semantic Grouping Principle for Compound Lists (New)
+
+Breaks in compound lists should fall at **semantic domain boundaries**, not arbitrarily. Items sharing a closer semantic relationship stay on the same line.
+
+**Recognized semantic pairings:** gold+silver, copper+brass, iron+steel, flocks+herds, swords+cimeters, famine+pestilence, women+children, statutes+judgments+commandments, murder+plunder+steal, whoredoms+abominations, power+wisdom+understanding.
+
+Applied: 17 semantic regrouping fixes + 19 same-register merges across all books.
+
+#### Rule 25 Eliminated
+
+"And thus we see" merged with complement clause. "We see" without its complement is incomplete — fails atomic thought test. 13 merges applied.
+
+#### Date/Colophon Formulas Always One Line
+
+Editorial timestamps are bureaucratic formulas, not rhetoric. 34 merges applied across Alma and Helaman.
+
+---
+
+### Update — 2026-04-11: Comparative Literature Review & Terminology Alignment
+
+#### 1. Comparative Literature Review
+
+How our four-criteria hierarchy compares to published colometric scholarship:
+
+**Priscille Marschall (2023)** — "Refining the Criteria for Delineating Cola and Periods." Her key concept "semantico-syntactic completeness" is equivalent to our "atomic thought" test. She validates that phrases without verbs CAN be cola if they carry enough semantic weight — this legitimizes our short emphatic lines as classical "commata." Her work is grounded in Graeco-Roman rhetorical treatises (Aristotle, Pseudo-Demetrius, Cicero, Quintilian). She distinguishes "autonomous" cola (disjointed style, each stands alone) from "periodic" cola (linked within a period by parallelism, hyperbaton, etc.). No hierarchy among criteria; no image test; no BOM application.
+
+**Royal Skousen** — "The Earliest Text" (2009/2022). Sense-line formatting based on phrases/clauses + "reasonable pause points." No formal hierarchy. Relies on unstated editorial judgment. Non-replicable.
+
+**Donald Parry** — "Poetic Parallelisms" (1992/2007). Single criterion: parallelism detection. Fundamentally different — identifies macro-level literary structures, not line-by-line colometry.
+
+**M.P. O'Connor** — "Hebrew Verse Structure" (1980). Strongest analog to our syntax-first principle. Six syntactic constraints define the Hebrew poetic line. Rejects meter/rhythm. Supports our syntax-as-floor principle.
+
+**Thomas Renz** — "Colometry and Accentuation" (2003). Empirical finding: Masoretic accent divisions align with syntactic boundaries in 92% of cases, supporting syntax as the dominant criterion.
+
+**Key finding: No published scholar has articulated a formal, ranked hierarchy of colometric criteria for the Book of Mormon.** Our four-criteria hierarchy (syntax > atomic thought > image > breath) appears to be genuinely novel.
+
+#### 2. Terminology Alignment
+
+Equivalences between our terms and established scholarly terminology:
+
+- Our "atomic thought" = Marschall's "semantico-syntactic completeness" = Chafe's "idea unit" = the intonational phrase of prosodic phonology
+- Our "atomic breath unit" = the classical côlon as breath unit (Lee & Scott 2009)
+- Our short emphatic lines = classical "commata" (κόμματα), validated by Pseudo-Demetrius and Cicero
+- Our "autonomous" lines (most of our lines) = Marschall's "autonomous côla" (disjointed style)
+- Our parallel-stacked lines = Marschall's "periodic côla" (linked by figures)
+
+#### 3. Methodological Implications
+
+- Our method is more operationally precise than any published alternative (four ranked criteria with specific rules, mechanical validation at 0.25% error rate, empirical voice-differentiation confirmation)
+- Our method is less historically grounded than Marschall's Graeco-Roman analysis — a paper should cite both traditions
+- The image test (criterion 3) has no direct parallel in published colometric scholarship — this is an original contribution
+- The convergence between ancient rhetorical theory ("semantico-syntactic completeness") and our modern editorial practice ("atomic thought test") independently arriving at the same criterion from different directions is methodologically significant
+
+---
+### Update — 2026-04-11 (second entry)
+
+#### Adversarial Audit: Three Rulings
+
+A four-agent adversarial audit of the full corpus (31,200 lines) identified three systematic inconsistencies. Rulings:
+
+**1. "And it shall come to pass" — Wayyehi Rule revised (see Rule 1 above)**
+The old Wayyehi rule and Rule 16 (dangling-that) contradicted each other for future-tense AICTP. 2 Nephi kept "that" attached; Mosiah split it off. Resolution: the Wayyehi rule is now subsumed into the FEF framework. "That" belongs with the clause it introduces, not trailing the formula. This resolves the contradiction and aligns past-tense and future-tense variants under the same principle.
+
+**2. "I say unto you" — settled as speech-act formula**
+"I say unto you" is a speech-act formula with an OPTIONAL complement ("say" passes the period test). Treatment: breaks when introducing substantial cataphoric content (the "that" clause is long enough to deserve its own line). Merges when the total line fits in one breath and passes the atomic thought test. This is length-dependent, not absolute — honest about the role of breath as tiebreaker.
+
+**3. Purpose clauses — honest about length-dependence**
+The rule "purpose clauses break" is refined: purpose clauses ("that they might," "that ye may") break when the preceding line is already a complete atomic thought. They merge when the combined line passes both the atomic thought and breath tests. The earlier formulation overpromised by treating the break as absolute; in practice, short-line contexts correctly merge the purpose clause.
+
+#### Corpus Consistency Scorecard
+
+| Section | Lines | Violations | Rate |
+|---------|-------|------------|------|
+| 1 Nephi – Jacob | 8,400 | 35 | 0.42% |
+| Mosiah – Alma | 13,129 | 10 | 0.076% |
+| Helaman – Moroni | 9,686 | 16 | 0.16% |
+| **Total** | **~31,200** | **61** | **0.20%** |
+
+Most common violation: "know/knew" split from "that" clause (17 instances). Concentrated in earlier-edited books (1 Nephi–Jacob) before rules were formalized. Mosiah–Alma is the cleanest section (0.076%).
+
+---
+### Update — 2026-04-11 (third entry): Harmonization with Reader's GNT
+
+The sister project Reader's GNT (`C:\Users\bibleman\repos\readers-gnt\`) has been independently developing colometric methodology for the Greek New Testament. A side-by-side comparison of `handoffs/02-colometry-method.md` (GNT) with this document (BOM) reveals that both projects have converged on the **same four criteria** but with slightly different framing and ordering. The GNT formulation is sharper and more honest about what grammar is actually doing. We are harmonizing the BOM doc to match.
+
+#### The Four Criteria (Harmonized Formulation)
+
+These supersede the earlier ordering. The criteria are the same; the framing is sharper.
+
+**1. Atomic Thought (PRIMARY)**
+
+Each line must contain one complete predication — a unit of meaning that can stand on its own without requiring the next line to resolve its subject, verb, or complement. A line that requires the next line to complete its sense is incomplete. This is the foundational test.
+
+**2. Single Image (STRONG)**
+
+Each line should paint a single image or picture in the mind. If a line contains two distinct images, it's a candidate for splitting. If a line contains no complete image, it may need merging with its neighbor. The image test sharpens the atomic thought test by asking: "what does the reader SEE here?"
+
+**3. Breath Unit (SECONDARY)**
+
+Each line can be delivered in one breath at natural reading pace. This is the oral-delivery criterion. Very short fragments (1–2 words) are rarely valid unless they are complete predications (imperatives, vocatives-as-commands, classical *commata*). Very long lines likely contain multiple thoughts.
+
+**4. Source-Language Syntax (SERVANT)**
+
+Line breaks are informed by the clause and syntax structure of the source language — for the BOM Reader, English clause structure (with awareness of underlying Hebrew patterns where relevant). Conditional constructions, subordinating conjunctions, participial phrases, discourse markers, and verb-complement bonds all signal natural break points.
+
+**This criterion serves the first three — it does not override them.** Grammar helps us *find* where atomic thoughts, images, and breath units naturally break. **If a grammatical rule produces a line that isn't an atomic thought, the rule is wrong, not the criteria.** Grammar reveals structure that already exists in the text; it doesn't create structure.
+
+#### Why the Reordering Matters
+
+The previous BOM formulation put syntax FIRST as a "floor — never violate." The harmonized formulation puts syntax LAST as a *servant* to the first three criteria. These positions are operationally identical (they produce the same edits in every case we've tested) but conceptually different:
+
+- **Old framing:** "Grammar trumps everything; you can't break inside a syntactic bond."
+- **New framing:** "Atomic thought trumps everything; grammar helps us find where atomic thoughts naturally break."
+
+The new framing is more honest because:
+1. We don't break because grammar permits it; we break because the line is an atomic thought.
+2. The obligatory complement rule (verbs that require their "that" clause) is enforced by both framings — but the new framing explains *why* (the result wouldn't be atomic) rather than just saying "syntax forbids it."
+3. It aligns with Marschall (2023) and Habineck (1985), who say "almost any constituent can, under the right circumstances, be a côlon" — meaning grammar is not the primary criterion, *completeness of thought* is.
+
+#### What Stays BOM-Specific
+
+The harmonization changes the framing, not the content. All BOM-specific rules and refinements remain in force:
+
+**Rules unique to BOM (or developed here first):**
+- **Wayyehi rule (revised):** AICTP is an indivisible discourse marker opening an FEF; "that" leads its clause, not trailing the formula
+- **"Expedient that" idiom integrity** (Rule 2)
+- **Date/colophon formula rule:** editorial timestamps stay on one line
+- **"Insomuch that" degree vs. result rule:** 178 instances classified, image test for borderline cases
+- **Obligatory vs. optional complement rule:** verb valency analysis (suppose, understand, command, grant, desire, witness, modal+know all merge; say, testify, declare, hear may break)
+- **Semantic grouping principle for compound lists:** items sharing a closer semantic relationship stay on one line; breaks fall at domain boundaries
+- **Compound list break signals:** elided auxiliary, possessive restart, demonstrative, relative clause
+- **AICTP variants treatment** (Wayyehi/FEF framework)
+- **Rule 25 elimination:** "And thus we see" merged with complement
+- **Imperative + emphatic ye/thou** dropped (90+ phrase swaps)
+- **The complete settled rules list** (Rules 1–26 with Rule 25 eliminated)
+- **FEF (Front-End Frame) concept** with four-criteria definition
+- **Skousen's breaks vs. Stan's breaks** observations
+- **The 26 rules and their adversarial audit results**
+
+**The corpus-specific application data:**
+- All editorial work, swap system, and corpus-wide audits remain BOM-specific
+- The 0.20% violation rate is BOM-specific
+- The "I say unto you" genre analysis (273 instances) is BOM-specific
+
+#### Contribution Back to GNT: Obligatory Complement Rule
+
+The obligatory vs. optional complement rule (developed during our March-April 2026 sessions) should be exported to the GNT project. Greek has the same verb valency distinctions:
+
+| BOM verb (English) | Greek equivalent | Class |
+|-------------------|------------------|-------|
+| say, said | λέγω, εἶπεν | OPTIONAL — can break |
+| testify, declare | μαρτυρέω, ἀπαγγέλλω | OPTIONAL — can break |
+| see, behold | ὁράω, βλέπω | OPTIONAL — can break |
+| know | γινώσκω, οἶδα | CONTEXT-DEP (modal makes obligatory) |
+| suppose, think | δοκέω, νομίζω | OBLIGATORY — must merge |
+| command | κελεύω, ἐντέλλομαι | OBLIGATORY — must merge |
+| desire | θέλω, ἐπιθυμέω | OBLIGATORY — must merge |
+| show (demonstrate) | δείκνυμι, δηλόω | OBLIGATORY — must merge |
+| witness | μαρτυρέω + ὅτι | CONTEXT-DEP |
+
+The period test ("can you put a period after the verb phrase and have a complete sentence?") works in Greek too. This rule should be added to GNT's `02-colometry-method.md` as a refinement of criterion 4 (Source-Language Syntax).
+
+#### What GNT Has That BOM Should Adopt (Future Work)
+
+The GNT doc has several refinements that we should consider adopting:
+
+1. **Ellipsis Principle (formalized):** An elided verb is a real predication. Triadic object lists and parallel structures with shared verbs each count as separate atomic thoughts. We've been applying this informally — should be codified.
+
+2. **Subordinate Clause Attachment (adjectival vs. adverbial):** Adjectival subordinate clauses (modifying a noun) merge with their head; adverbial subordinate clauses (frames of time, purpose, result) can stand alone. Cleaner than our current treatment.
+
+3. **Universal Vocative Rule:** All vocatives stand alone (with one exception: repeated vocatives as a rhetorical unit, e.g., "Lord, Lord"). Cleaner than our nuanced vocative-as-command vs. vocative-as-appeal distinction.
+
+4. **Participial Phrase Test (refined):** Default merge for circumstantial participles; split only when the participle is a supplementary predication via implicit verb repetition. This is sharper than our current treatment.
+
+5. **Paradox Pairs:** Antithetical pairs forming a single paradox merge ("seeing they may see and not perceive"). We've been doing this implicitly — should be codified.
+
+These are flagged as **adoption candidates** for a future BOM editorial pass.
+
+---
+### Update — 2026-04-12: Cognitive Hierarchy
+
+#### When Criteria Conflict, the Priority Order Is
+
+**Chunking > Oral > Rhetorical**
+
+This ordering was established in the Reader's GNT project (`readers-gnt/handoffs/04-editorial-workflow.md`, session 6) and is adopted here for consistency. It governs editorial decisions when the four criteria leave ambiguity.
+
+1. **Cognitive chunking** — line breaks first serve comprehension. Each line is a unit the reader can process as one cognitive bite. This is the foundational purpose of colometric formatting.
+
+2. **Oral delivery** — line breaks support read-aloud at natural breath pace. This is the ESL/youth/audio purpose — central to the BOM Reader's design for ESL readers, children, and newcomers.
+
+3. **Rhetorical structure revelation** — line breaks make the author's compositional architecture visible (parallels, escalation, climax, chiasm). This is the literary/scholarly purpose, and what makes the colometric output valuable for stylometric analysis.
+
+When these conflict, **chunking wins**. A break that aids cognitive chunking but flattens some rhetoric is acceptable. A break that reveals rhetoric but creates a fragment that can't be processed is not. Likewise, a break that serves oral delivery but breaks an atomic thought has the order wrong.
+
+This hierarchy resolves a tension that was implicit in our four-criteria framework but never made explicit. The four criteria tell us *what makes a break valid*. The cognitive hierarchy tells us *what to optimize for when the criteria leave room for multiple valid choices*.
+
+**Practical consequence:** if a break would help a reader chunk the text (criterion 1: atomic thought) but the breath is slightly long, take the break — chunking comes first. If a break would reveal a beautiful rhetorical parallel but produces a fragment that fails the atomic thought test, don't take it — chunking still comes first.
+
+---
+
+### Update — 2026-04-12
+
+#### Sense-Line Mission Clarified: We Expose Atomic Thoughts, Not Poetic Parallels
+
+After running an Isaiah block audit that initially preserved Hebrew bicolon and tricolon structures across multiple lines (the "stacked parallels" approach), Stan course-corrected with a clear prioritization that supersedes any earlier ambiguity:
+
+> "Parallels are fine, but we were trying to isolate clear ideas, not half strophes or poetic structure, except indirectly."
+
+And in a follow-up:
+
+> "Atomic thoughts trump rhetorical considerations. Our effort here is to expose SENSE-lines, not poetic parallels. While we might overlap with Parry, we're not trying to 'do Parry.'"
+
+**Three propositions, in priority order:**
+
+1. **Atomic thought is non-negotiable.** A line that fails the atomic-thought test is wrong, regardless of how beautifully it preserves a Hebrew colon, an English parallelism, or a rhetorical figure. The four-criteria hierarchy (atomic thought > image > breath > source-language syntax) is now fully resolved: atomic thought wins every collision.
+
+2. **The mission is sense-lines, not poetry layout.** Our editorial goal is to expose discrete units of thought that an ESL reader, child, or newcomer can process one bite at a time. Hebrew/Greek poetic structure is incidental to that goal. When the two align, that's a happy bonus. When they conflict, atomic thought wins.
+
+3. **Parry is a separate layer, not a target.** Donald Parry's parallelism analysis is loaded as the "Parry index" (6604 verses) and rendered as the optional **Hebrew Poetry layer** in the build. That layer exists to surface poetic structure for readers who want it. The sense-line layer is something else: a delivery substrate for atomic thoughts. The two layers may overlap by ~78% (per the earlier Parry-as-diagnostic note), but the overlap is incidental, not the design intent. We are **not** trying to make our sense-lines reproduce Parry's cola, and we should not feel compelled to preserve a Parry parallel at the cost of an atomic thought violation.
+
+#### Rule 13 Amendment — Parallel Structures Stack ONLY If Atomic
+
+**Old form (too broad):** "Parallel structures stack vertically — mirror parallel elements across lines to show rhetorical pattern."
+
+**New form:** "Parallel structures stack vertically **only when each stacked element is itself independently atomic**. If stacking a parallel produces fragment lines (subject without verb, verb without complement, restrictive relative split from antecedent), merge the stack into atomic-thought-sized units even if the rhetorical mirror is lost."
+
+**Worked example — 2 Ne 19:2 (Isaiah 9:2, the Galilean light verse):**
+
+The text was previously rendered as four lines preserving a parallel bicolon structure:
+```
+The people that walked in darkness
+have seen a great light;
+they that dwell in the land of the shadow of death,
+upon them hath the light shined.
+```
+
+Hebrew has this as exactly two cola. The four-line English version splits each colon at the relative-clause / subject-verb seam, producing four fragments — the first half of each colon ("The people that walked in darkness" / "they that dwell in the land of the shadow of death") is a hanging subject, not an atomic thought.
+
+Corrected to two lines (one per Hebrew colon, each independently atomic):
+```
+The people that walked in darkness have seen a great light;
+they that dwell in the land of the shadow of death, upon them hath the light shined.
+```
+
+The parallelism is still visible — two lines mirrored — but now each line stands as a complete idea. Stacking the parallel halves did not require fragmenting them; the merge accomplished both goals at once. When stacking and atomicity conflict, merge.
+
+**Where this rule applies most:** Isaiah blocks, Psalm-like passages, prophetic oracles in Mosiah/Alma, and any place where the editor was tempted to mirror Hebrew bicola or tricola at the cost of atomic-thought integrity. The April Isaiah audit caught ~20 instances in 2 Nephi alone where the old Rule 13 had over-stacked.
+
+#### What This Does NOT Mean
+
+- **It does NOT mean "merge all parallels."** Where each parallel element is independently atomic, stacking is still good and still serves rhetorical-structure revelation (criterion 3). The corrected rule only forbids stacking that *creates* fragments.
+- **It does NOT mean "ignore Parry."** Parry remains a useful diagnostic — when a Parry parallel break-point lies inside one of our sense-lines, that's still worth examining. It just means we don't always defer to Parry; we defer to atomic thought.
+- **It does NOT mean "Hebrew structure is irrelevant."** Hebrew colometry is one of the four criteria (the "source-language syntax" servant criterion). It still informs editorial judgment. It just doesn't outrank atomic thought.
+
+#### Consequences Already Applied
+
+- 21 Cat A merges in the 2 Nephi Isaiah block (chapters 8, 12, 13, 15, 18, 19, 20, 21, 23) committed in the April 12 session
+- 1 Cat A merge in Mosiah 14 (Isaiah 53:2 "tender plant + dry ground")
+- ~19 Cat B borderlines flagged for separate per-case review
+
+#### Consequences Still Pending
+
+- A Cat B borderline review of the Isaiah audit findings (cases where atomic-thought says merge but rhetorical/stacking arguments push back)
+- Possible re-audit of other Hebrew-poetry-influenced passages: 2 Nephi 4 (Psalm of Nephi), Jacob 5 (allegory of the olive tree), Alma 36 (chiasm), Mosiah 5, 3 Nephi 22-25 (Isaiah/Malachi reuse) — with the corrected Rule 13 in hand
+
+---
+
+### Update — 2026-04-12 (late)
+
+#### Three new mechanically-detectable colometric over-split classes
+
+User pattern recognition during a manual review of Alma 18 surfaced three classes of over-splits that can be detected mechanically by regex on v2 source files. Each got its own scanner script and discrete commit.
+
+**Class 1: Stranded adverbial fragments**
+
+Diagnostic shape:
+- Line N is a complete predication (subject + verb [+ object]), ending in a noun or comma — never in conjunction/preposition/article
+- Line N+1 begins with a preposition (`for|in|on|at|by|with|from|of|upon|before|after|during|previous|according|throughout|until|while|since|beyond|among|through|against|near|into|unto|toward|towards|amid|amidst|round`)
+- Line N+1 contains no finite verb
+- Line N+1 typically modifies line N as a temporal, manner, locative, or instrumental adjunct
+
+The fragment exists only as a modifier of line N. Atomic-thought primacy says it should merge.
+
+Worked example (Alma 18:14):
+```
+Before:
+  And the king answered him not
+  for the space of an hour, according to their time,
+After:
+  And the king answered him not for the space of an hour, according to their time,
+```
+
+Subclasses observed: duration ("for the space of"), temporal anchor ("previous to"), manner ("according to"), locative ("in the city of"), instrumental ("by the power of"), causal ("because of"), source ("from the X"), directional ("into/unto the X").
+
+**High-confidence Cat A patterns** (auto-merged in 2026-04-12 commit):
+- `for the space of [time]`
+- `according to`
+- `after the manner of`
+- `previous to`
+- `in the days/year/space/time/name/midst/presence of`
+- `by the power/words/spirit/hand/mouth/gift/name/commandment of`
+- `in/to the land/city/valley/wilderness/temple/borders/country of`
+- `even unto`
+- `throughout all/the`
+
+Resulted in **247 mechanical merges** in the first pass.
+
+The remaining ~1015 lower-confidence candidates need finer sub-class scans (Stage 2) plus eventual editorial agent judgment for the residue.
+
+Scanner: `C:/tmp/apply_oversplit_merges.py` (high-confidence subset only).
+
+**Class 2: Verb + obligatory "that" complement splits**
+
+Diagnostic shape:
+- Line N ends in a complement-taking verb: `heard|said|knew|supposed|believed|taught|commanded|promised|sworn|witnessed|declared|remembered|perceived|told|...`
+- Line N+1 starts with `that ...`
+- The "that" clause is the obligatory content of the verb (not a relative pronoun)
+
+**Excludes** RELATIVE_RISK_VERBS (`saw|see|beheld|behold`) where "that" is often a relative pronoun rather than a complementizer.
+
+Worked example (Alma 18:10):
+```
+Before:
+  Now when king Lamoni heard
+  that Ammon was preparing his horses and his chariots
+After:
+  Now when king Lamoni heard that Ammon was preparing his horses and his chariots
+```
+
+Resulted in **103 mechanical merges**.
+
+Scanner: same script as Class 1.
+
+**Class 3: Agent-of-passive over-splits**
+
+Diagnostic shape:
+- Line N contains a passive predication ending in a past participle (`was/were/be/been/is/are/am/being + Xed/Xen/Xt`, OR a bare past participle from a curated list: `appointed|given|made|sent|done|taught|called|brought|taken|led|killed|slain|wounded|destroyed|delivered|received|saved|redeemed|blessed|cursed|chosen|founded|prepared|established|known|written|spoken|told|shown|baptized|ordained|anointed|crowned|...`)
+- Line N+1 begins with `by [the/a/his/their/our/my/your/its/whom/Proper Noun]`
+- Line N must NOT end in semicolon (semicolon = clause boundary; the "by" then introduces an instrumental of the next clause, not the agent of this one)
+
+**Distinct from stranded adverbials**: an instrumental "by the power of God" modifying an active verb is a circumstantial adjunct (Class 1). An agent "by the father of Lamoni" following a passive "appointed" is the **obligatory missing argument** the passive demoted from subject position. The passive verb is incomplete in atomic-thought terms without it.
+
+Worked example (Alma 18:9):
+```
+Before:
+  for there had been a great feast appointed at the land of Nephi,
+  by the father of Lamoni,
+After:
+  for there had been a great feast appointed at the land of Nephi, by the father of Lamoni,
+```
+
+Caught one false positive in dry-run: Mosiah 15:8 (quoting Isaiah 53:11) "and shall be satisfied; / by his knowledge shall my righteous servant justify many" — the line ended in `;` and the "by" introduced an instrumental of the next clause, not the agent of "satisfied". Added the semicolon-rejection guard.
+
+Resulted in **10 mechanical merges**.
+
+Scanner: `C:/tmp/scan_agent_of_passive.py`.
+
+#### Workflow established for finding new colometric classes
+
+The Alma 18 sessions demonstrated a repeatable workflow:
+1. **User-observed instance** in a manual review → triggers class hypothesis
+2. **Articulate the diagnostic shape** (line N condition + line N+1 condition + filters)
+3. **Build a regex scanner** that bins all v2 source files by the shape
+4. **Dry-run** and inspect a sample for false positives
+5. **Add filters** for any false-positive classes found (e.g., the semicolon rejection)
+6. **Apply** as a separate commit so the class can be reverted if it goes wrong
+7. **Add the scanner to handoffs** so the class can be re-run in future sessions
+
+This is significantly faster than per-case agent judgment when the class is mechanically detectable. Reserve agents for the genuinely-ambiguous residue.
+
+#### Standing question: stage 3 deferred residue
+
+After the high-confidence Cat A passes for stranded adverbials, verb+that, and agent-of-passive, an estimated **800–900 lower-confidence stranded-adverbial candidates** remain. These don't match any narrow phrase pattern and need either:
+- (a) Finer sub-class scans for hidden narrow patterns ("in behalf of", "from generation to generation", "unto all nations" etc.)
+- (b) Editorial judgment via dispatched agents
+
+This is the next colometry attack surface.
+
+---
+
+### Update — 2026-04-13 — Alma 17-22 seven-agent sweep + eight new classes (A–H)
+
+**Result of the session:** 28 additional atomic-thought merges applied across Alma 17-22 (commit `8388e4f`), plus a complete scanner inventory for 8 previously uncatalogued violation classes, run corpus-wide.
+
+#### Trigger: the reactive-scanner wall
+
+After ~12 regex-defined classes had been scanned and cleaned, Stan continued to flag violations manually: "why are these still all non-complete atomic thought units — what pattern have we not been looking for?" Each manual example exposed a class the regex scanners didn't know to look for, so each fix was reactive, not systematic.
+
+The breakthrough: stop writing scanners first. **Dispatch atomic-thought scanning *agents* that read natural-language ranges and flag ANY two-line pair where neither line is atomic, regardless of shape.** The agents discover new classes by reporting what they flag. Stan confirmed the dispatch pattern: *"maybe you should have broken it up into sub-agents, yeah?"*
+
+#### Seven-agent parallel dispatch pattern
+
+- 6 per-chapter agents: Alma 17 / 18 / 19 / 20 / 21 / 22 (one each, parallel)
+- 1 full-range agent: Alma 17-22 end-to-end, looking for *class-level* patterns
+- Aggregated into a single content-matched Python script (`C:/tmp/apply_alma_17_22_merges.py`) with exact multi-line `before → after` replacements
+
+**28 merges landed clean on first application — zero content drift.**
+
+#### Eight new colometric classes discovered (A–H)
+
+Each has a dry-run scanner at `C:/tmp/scan_class_X_*.py`, runnable against the full v2 corpus on demand.
+
+| Class | Name | Diagnostic | Tier 1 corpus hits |
+|---|---|---|---|
+| **A** | Compound-subject stranding | Line N = conjoined NPs, no finite verb; Line N+1 starts with finite verb governing them | **99** (~91 deduped) |
+| **B** | Ditransitive object stranding | Line N ends with ditransitive verb (+IO); Line N+1 carries the DO | **26** |
+| **C** | "concerning/of" topic prep stranding | Line N ends with speech/cognition verb; Line N+1 opens "concerning X" | **18** (HIGH tier) |
+| **D** | Fixed idiom split | 20 canonical idioms straddle a line break | **0** (corpus clean) |
+| **E** | Appositional-relative stranding | Line N ends "it being the X,"; Line N+1 = "which/who/that..." | **13** (Tier 1 strict) |
+| **F** | Subject + parenthetical-adjunct stranding | Line N = "X, having/being Y,"; Line N+1 starts with finite verb | **94** (Tier 1; ~55-65% TP) |
+| **G** | Cataphoric / hollow-head resumption | Line N ends with content-light NP ("the cause,") or hollow verb ("began to fear,"); Line N+1 specifies | **58** (Tier 1 ~20% TP; Tier 2 = 2, both legit) |
+| **H** | Cataphoric "or" restatement | Line N ends NP,; Line N+1 opens "or [det] NP," with no finite main-clause verb | **33** (Tier 1; ~75-85% TP) |
+
+**Class D's zero result** is a real finding: Rule 18 (fixed-idiom integrity) has been applied cleanly across the whole corpus for the canonical idiom list.
+
+#### Principle refinements from this session
+
+1. **Length caps are wrong for atomic-thought scanning.** Stan: *"line/character limit should not be arbitrary right — if something's not an atomic thought, it's not."* The previous 140/200-char caps on merge scanners have been removed. Length is a hint to pause and look, not a mechanical gate.
+
+2. **Breath-unit intuition as a sanity check, not a gate.** *"The breath unit should give us pause and ask if there IS another way to consider the text, because people generally don't write/speak more than a coherent breath unit."* If a merge produces something un-speakable, reconsider — but don't refuse the merge on word count alone.
+
+3. **Speech verbs now include `saw/beheld/behold/see`.** The earlier Class 2 scanner excluded these out of caution about relative-clause confusion. That left a gap Stan caught manually (Alma 19:17 "when she saw / that all the servants..."). Subsequent scanners pick these up correctly.
+
+4. **Compound subjects are a MAJOR class.** 99 corpus-wide Tier 1 candidates from Class A — larger than verb+that was. Alma alone has 25. This is not a rare exception; it's a systematic under-broken class.
+
+5. **"Or" restatements (Class H / Rule 5) are more common than previously thought.** 33 Tier 1 candidates, heavy in Alma and Mosiah. Several are Category B/C (Mosiah 15:5 Son/Father doctrinal equivalence; Jacob 4:6 mountains/waves parallel triplet) — not mechanical.
+
+6. **Class F (subject + participial adjunct) is the single largest pathological class:** 94 Tier 1 hits. Participial absolutes "X, having Y," / "X, being Y," strand the subject from its finite verb. This is where Mormon's authorial voice builds momentum — Alma has 35 hits alone.
+
+#### Operational takeaway
+
+When the regex-scanner reactive loop starts failing, *switch medium*. Natural-language agents on contiguous ranges discover classes. Regex scanners clean up classes. The two complement each other; neither replaces the other.
+
+---
+
+### Update — 2026-04-13 (late) — The Goldilocks refinement: subordinating vs coordinating syntax
+
+This update codifies a **load-bearing refinement** to how the atomic-thought test gets applied. It's ported directly from a parallel insight in the GNT Reader project (see `readers-gnt/handoffs/02-colometry-method.md` §Goldilocks refinement, 2026-04-13) and it resolves a real failure mode we hit in this session: merges that nominally satisfied the atomic-thought test but actively erased the author's rhetorical architecture.
+
+#### The failure mode
+
+During the Class F (participial absolute) and Class A (compound subject) merge passes, I applied the container-not-originator reasoning too broadly. I treated **every** case where line N ended in a participial/NP fragment and line N+1 began with a verb or discourse pivot as a subordinating-modifier-to-head problem that required merging. That was wrong for a large subset of cases.
+
+#### The refinement in one sentence
+
+**Container-not-originator applies to SUBORDINATING syntax (modifier → head) only. It does NOT apply to COORDINATING or PARALLEL syntax. Parallel members are each their own atomic thought.**
+
+#### The three phases — the Goldilocks arc
+
+This is the same arc the GNT Reader project traversed, one week ahead of us:
+
+1. **Phase 1: over-broken.** Early BoM v2 files had bare PPs, particles, and modifier tails scattered on their own lines. Atomic-thought principle was applied too loosely — every grammatical boundary got a break.
+2. **Phase 2: over-merged.** The Class F, A, E, H passes in this session pulled coordinate/parallel members upward into their neighbors, collapsing tri-cola, isocola, and rhetorical subject-stacks into mega-lines. Nominally "atomic thought," but the merged lines failed the breath-unit test AND the rhetorical-architecture test. Examples: Nephi's opening "I, Nephi, having been born of goodly parents, therefore I was taught..." merged into one line; the patriarchal triad "God of Abraham, and of Isaac, and of Jacob, / yieldeth himself" merged; Mormon 6:14's casualty-roll verb attached to just the last pair of names.
+3. **Phase 3: Goldilocks.** The subordinating-vs-coordinating distinction, applied mechanically, recovers the right answer. Subordinating modifiers merge. Coordinate members stay split. The breath-unit test is a second-order sanity check — if a proposed merge produces an unspeakable line, coordination is almost certainly at work.
+
+#### The operative distinction
+
+| Syntax type | Example | Rule |
+|---|---|---|
+| **Subordinating** (modifier → head) | stranded preposition on its verb; verb missing its direct object; bare subject missing its finite verb; "concerning X" topic on a speech verb; ditransitive DO/IO stranding | Container-not-originator applies. **Merge** — line N is a bare fragment demanding completion from line N+1. |
+| **Coordinating / parallel** (member ↔ member) | participial absolute + "therefore/thus" + resumptive pronoun; rhetorical subject-stack (patriarchal triads, ethnic quadrads, casualty rolls); "or X / or Y" parallel namings; cleft with escalating relative image | Container-not-originator does NOT apply. **Split** — each member is its own atomic beat. |
+
+#### The diagnostic test (mechanical, reliable)
+
+When evaluating a candidate merge, ask two questions:
+
+**Q1.** Can line N be read as a **standalone prosodic predication** (with an implicit "was/had" if needed)?
+- "he being an exceedingly curious man" → "he was an exceedingly curious man" ✓ standalone
+- "Alma having seen all these things" → "Alma had seen all these things" ✓ standalone
+- "the Lamanites and the Amalekites and the people of Amulon" → can't stand alone, needs a verb ✗
+
+**Q2.** Does line N+1 open with a **rhetorical pivot**, a **resumptive subject pronoun**, or a **parallel conjunction**?
+- "therefore he went forth" ✓ pivot + resumptive
+- "thus he commanded" ✓ pivot + resumptive
+- "it was impossible" ✓ new grammatical subject
+- "his blood would cry" ✓ new subject NP
+- "or the church of Christ" ✓ parallel conjunction
+- "had built a great city" ✗ bare finite verb directly picking up the subject
+
+**If Q1=yes AND Q2=yes → COORDINATING, do NOT merge.**
+**If Q1=no OR Q2=no → SUBORDINATING, merge is correct.**
+
+Stan's earlier breath-unit intuition — *"people generally don't write/speak more than a coherent breath unit"* — is the same principle from a different angle. When a merge produces an unspeakably long line, coordinating syntax was almost certainly flattened.
+
+#### Signatures of coordinate syntax (red flags for merge scanners)
+
+- "therefore" / "thus" / "wherefore" / "and now" opening line N+1
+- Resumptive subject pronoun (he/she/they/it/I/we/ye) at start of line N+1
+- New grammatical subject NP opening line N+1 ("his blood", "it was", "Jacob was")
+- Parallel conjunction "or" + determiner + NP opening line N+1
+- "having/being" + full predicate nominal/participial predicate on line N (stands alone as "was/had")
+- Subject-stacks of 3+ parallel NPs across multiple lines (theological triads, ethnic lists, casualty rolls)
+- Relative clauses on line N+1 introducing a NEW image or action (Rule 14 — escalating qualifiers earn their own line)
+
+#### Signatures of subordinating syntax (green lights for merge)
+
+- Line N ends in a bare preposition waiting for its object ("I will plead / with the king")
+- Line N ends in a verb missing its direct object ("rehearse unto them / the words of Isaiah")
+- Line N ends in an NP subject with NO finite verb ("the Lamanites and Amalekites and Amulon / had built")
+- Line N ends in a speech/cognition verb + "unto X" awaiting content ("spake unto them / concerning X")
+- Line N ends in a "hollow head" ("began to fear exceedingly / lest...", "this was the cause / for which...")
+- Line N+1 opens with a bare finite verb that directly picks up line N's subject with no pivot and no resumptive
+
+#### This session's revert pass
+
+The adversarial audit dispatched five parallel agents (one per class batch) to evaluate every merge applied this session against this test. Results:
+
+| Class | Merges applied | Reverts | Pass rate |
+|---|---:|---:|---:|
+| C + G T2 + B | 28 | 0 | 100% subordinating |
+| Alma 17-22 sweep | 28 | 5 | 82% subordinating |
+| A compound subject | 34 | 5 | 85% subordinating |
+| E cleft + relative | 12 | 4 | 67% subordinating |
+| H "or" restatement | 17 | 7 | 59% subordinating |
+| F participial absolute | 19 | 12 | 37% subordinating |
+
+**Class F had the highest false-positive rate (63%) because participial absolutes in BoM archaic English function as prosodic full predications.** "He being X" is syntactically subordinate but prosodically equivalent to "he was X" — a complete statement followed by a beat. The Class F scanner mistook the syntactic form for a thought-level dependency. Class H was second worst because "or X" in BoM is MORE often a parallel naming/doubling than a simple restatement.
+
+Classes B, C, G, E, A held up well under the audit. The principle behind those scanners (stranded verb → object, stranded subject → verb) is genuinely subordinating in almost all cases.
+
+**Net session yield after reverts: 138 merges applied − 33 reverts = 105 standing corpus-wide atomic-thought fixes.**
+
+#### Protocol for future merge passes
+
+1. **Write the scanner as before.** Mechanical shape-matching is still the right first step.
+2. **Triage each hit against the Q1/Q2 test.** Don't auto-apply.
+3. **Apply the subset that passes Q1=no OR Q2=no.** These are the genuine subordinating cases.
+4. **Dispatch an adversarial audit agent on the applied batch** before committing, or at most one commit later, with the explicit subordinate/coordinate framing. The audit catches the residual false positives the mechanical filter missed.
+5. **If the audit flags ≥30% of a merge batch for revert, the scanner itself is too broad** — add filters before re-running.
+
+#### Credit
+
+The Goldilocks refinement was developed first in the Reader's GNT project (`readers-gnt/handoffs/02-colometry-method.md` §Goldilocks, 2026-04-13) after an adversarial agent asked to argue the opposite case ("we should break MORE, we're not thinking ancient-Greek enough"). That session's verdict — container-not-originator applies to subordinating syntax only — was the exact refinement we needed here. Credit to the GNT precedent and to the cross-project pollination.
+
+---
+### Update — 2026-04-13 (end of session) — Overseer items 2, 3, 4 applied
+
+Three cross-pollination items from the overseer's directions list
+(`research/OVERSEER-DIRECTIONS.md`) applied in one pass. All three port
+principles from the readers-gnt sibling project.
+
+#### The no-anchor rule (Rule 20)
+
+**The rule:** every sense-line must carry at least one thought-marking anchor:
+
+1. A finite verb (main, subordinate, imperative, archaic `-eth`/`-est` forms)
+2. An infinitive (`to` + base verb as the predication of its clause)
+3. A participle (`-ing` form or past participle standing as predicate)
+4. A substantive head — a noun phrase that is the topic/subject of its own line, not merely a modifier of something in a neighboring line
+
+Lines lacking all four are **containers without originators** — pure modifier fragments (dangling PPs, bare conjunctions, elliptical hinges). They belong *inside* a neighboring anchored line's atomic thought, not on a line of their own.
+
+**Source:** Imported from the readers-gnt project. See `readers-gnt/handoffs/02-colometry-method.md` lines 934–954. The GNT side ran 860 no-anchor merges across 26 books to reach **zero unanchored lines** corpus-wide. The rule was their answer to why over-fragmented lines survived multiple targeted editorial passes: targeted scanners find specific error classes, but nothing was enforcing "every line must carry a thought-marking element" on the positive side.
+
+**Legitimate exemptions** (inherited from GNT methodology):
+- Single-line verses — if the whole verse fits in one line, it is atomic by definition and needs no internal anchor check.
+- Speech-intro prefixes (rare in BoM; more common in GNT).
+- Standalone sentence connectives (`Wherefore,` `And now,` `Therefore`) — hinge markers that license merger with the *next* line, not failures.
+
+**BoM corpus scan result (2026-04-13):**
+
+| metric | value |
+|---|---:|
+| total lines scanned | 28,683 |
+| unanchored lines | **5** |
+| compliance | 99.98% |
+
+Per-book breakdown: clean everywhere except 1 Nephi (1), 2 Nephi (2), Alma (1), 3 Nephi (1). Nine books are at zero.
+
+**Residual hits** (all editorial judgment calls, none mechanical):
+
+1. `1 Nephi 14:8` — `Yea.`
+2. `2 Nephi 2:11` — `If not so,`
+3. `2 Nephi 33:12` — `if not all,`
+4. `Alma 36:27` — `yea,`
+5. `3 Nephi 16:9` — `that after all this,`
+
+All five are short discourse hinges or elliptical interjections — the same residual class the GNT scan caught at its tail end. They want Category A merges (upward or downward) but require a look at the surrounding context. (Note: `Yea.` and `yea,` may fall under the exemption for standalone sentence connectives — editorial review pending.)
+
+**Why this rule is already (near-)mechanically enforced in the BoM build:** Class F (subject + participial adjunct stranding) combined with Rule 9 (never end a line on a conjunction) and Rule 18 (fixed idiom integrity) together prevent the main ways a modifier-only fragment could end up on its own line. The BoM reached compliance organically through rule-governed hand-editing rather than a dedicated merge pass.
+
+**Verification tool:** `C:/tmp/scan_no_anchor_rule.py` — reads the 15 v2 canonical files, tokenizes each content line, tests for finite verbs, infinitives, `-ed`/`-eth`/`-est`/`-ing` suffixes, and substantive heads. Non-destructive; supports `--apply` which reports the count without mutating anything. No production scanner needed — the rule is empirically enforced by existing rules. The verification script lives in `C:/tmp/` as a spot-check tool; re-run after any future mass edit to confirm compliance still holds.
+
+
+#### Rule 21 — Participial absolute integrity
+
+A **participial absolute** — a subject-bearing participial clause of the form "X having Y-ed," or "X being Y," — constitutes a grammatically independent predication and earns its own sense-line. The participial clause carries its own subject, its own non-finite verb, and its own predicate complement; it is not a dangling modifier on the next clause's main verb but a full prosodic frame in its own right. Merging it into the following line collapses two atomic thoughts into one and destroys the archaic-English periodic rhythm.
+
+**Principle.** BoM English lacks Greek's formal genitive absolute, but functionally reproduces it. "Moroni being in their course of march," stands to "Jacob was determined to slay them" exactly as βλεπόντων αὐτῶν stands to ἐπήρθη in Acts 1:9 — two camera frames, two predications, two lines. The cross-project parallel is explicit: see GNT Reader `handoffs/02-colometry-method.md` lines 160–167 (Acts 1:9 showcase) and line 438 (the 2026-04-12 resolution: "Always its own line. Gen abs is grammatically independent (its own subject + its own predicate), so it passes the atomic-thought test on its own").
+
+**Diagnostic test.** Can the participial clause be rewritten as a finite sentence — "X was Y" or "X had Y-ed" — that stands alone as a complete thought? If yes, it is an absolute and earns its own line.
+- "they being hard in their hearts" → "they were hard in their hearts" ✓
+- "Moroni being in their course of march" → "Moroni was in their course of march" ✓
+- "their bows having lost their springs" → "their bows had lost their springs" ✓
+
+**Relationship to the Goldilocks refinement.** Rule 21 is the *principle*; the Q1/Q2 diagnostic is the operational *test* for candidate merges. Q1: does line N (the participial) stand alone as a predication? Q2: does line N+1 begin with a rhetorical pivot ("therefore," "thus," "wherefore"), a resumptive subject pronoun ("he went," "it began"), or a parallel opener? If both answers are yes, the merge is wrong — restore the split. Container-not-originator reasoning applies only to genuinely subordinating syntax, not to coordinated participial frames.
+
+**Positive examples (earn their own line).** From the 2026 audit reverts:
+- 1 Ne 1:1 — "I, Nephi, having been born of goodly parents," / "therefore I was taught..."
+- 1 Ne 16:21 — "and their bows having lost their springs," / "it began to be exceedingly difficult..."
+- Alma 2:16 — "Now Alma, being the chief judge and the governor of the people of Nephi," / "therefore he went up..."
+- Alma 52:34 — "Moroni being in their course of march," / "therefore Jacob was determined..."
+- Moroni 1:1 — "Now I, Moroni, after having made an end of abridging the account of the people of Jared," / "I had supposed not to have written more..."
+
+**Counter-examples (participials that genuinely strand and should merge).** From Class F merges kept after audit:
+- Mos 9:3 — "And yet, I being over-zealous to inherit the land of our fathers, collected as many as were desirous..." — "collected" has no resumptive subject; the participial is the subject of the main verb.
+- Mos 21:23 — "And the king having been without the gates of the city with his guard, discovered Ammon..." — "discovered" takes the king directly as subject; no pivot, no resumption.
+- Mos 21:26 — "and they, having supposed it to be the land of Zarahemla, returned..." — bare "returned" with the same subject threading through.
+- Alma 12:32 — "the penalty thereof being a second death, which was an everlasting death..." — the "which" relative is anaphoric, not a new predication.
+- Alma 35:8 / 52:36 — same pattern: participial adjunct feeding directly into a finite verb whose subject it shares, with no rhetorical pivot.
+
+**Edge case.** When the participial's predicate nominal is thin — e.g., Mos 18:12 "he being one of the first," — the standalone reading feels lighter than "he being the king's captain," or "Alma being the chief judge and the governor of the people of Nephi." These thin-predicate cases still passed the audit (Q2 was satisfied by "and went" / "he went forth"), but the call is harder and should be flagged for Stan's judgment rather than applied mechanically. The principle holds; the weighting of Q1 wobbles.
+
+
+#### Thought-marking vs. structural syntax
+
+Borrowing a distinction locked in by the sister GNT project (`readers-gnt/handoffs/02-colometry-method.md` lines 906–916), we can divide syntactic features into two classes, only one of which tracks atomic thought.
+
+**Thought-marking syntax** is the set of surface features that reveal where one atomic unit ends and the next begins. Main-verb shifts, clause boundaries, subject changes, appositive coreference, and camera-angle turns all belong here. When a thought-marking feature is present, the author has given us evidence that a new atomic unit is beginning; the line break exposes a boundary the author built into the text. Rules that manipulate thought-marking syntax are making editorial claims about where thought boundaries lie.
+
+**Structural syntax** is the set of fixed English/archaic-English patterns that do NOT automatically map to thought boundaries. These are grammatical scaffolds the language requires regardless of how the thought is chunked. A line break inside a structural pattern is not reading a boundary off the text — it is just following grammar. Rules that manipulate structural syntax are accommodating the container, not claiming a thought division.
+
+**BoM examples — thought-marking:**
+- Purpose clauses: "that they might believe" — a new telic frame, new image
+- Causal clauses: "because of the hardness of their hearts" — a new explanatory frame
+- Complement "that" after speech/cognition verbs: "I know that my Redeemer liveth" — the that-clause is the content of the knowing, a distinct proposition
+- Subordinate relative clauses introducing new images: "which thing was pleasing unto the Lord"
+
+**BoM examples — structural:**
+- Conditionals ("if ye shall keep my commandments... then"): the if/then pair is one hypothetical claim, not two
+- Correlatives ("as... so," "neither... nor"): both limbs belong to a single comparison
+- Comparatives ("more than all the earth"): the comparison is one thought
+- The Wayyehi formula ("And it came to pass that"): fixed narrative hinge, already Rule 1
+- Vocatives ("O Lord God"): already Rule 15 — indivisible address unit
+- Fixed idioms ("put to death," "from time to time"): already Rule 18
+
+#### What this replaces and what it sharpens
+
+This distinction **replaces the earlier "servant of the text" framing.** "Servant of the text" was directionally right but too vague — it did not say *which* textual features we were serving. The answer is: thought-marking features. Structural features we accommodate; thought-marking features we expose.
+
+It also **sharpens Rule 13 (parallel structures stack vertically).** Parallel structure earns vertical stacking when each limb is its own atomic claim — when the parallelism is *thought-marking*. Parallelism that is merely structural (a correlative pair expressing one comparison, a conditional with its consequent) does not earn a break just because the surface is parallel. The test is not "is this parallel?" but "does each limb carry its own atomic thought?" Rule 13 applies when the answer is yes; it is silent when the answer is no.
+
+The defense against "you're just breaking at every grammatical feature" is the same as the GNT project's: we break at features that *mark thought boundaries*, not at features that are merely fixed grammatical constructions.
+
+
+---
+*Last updated: 2026-04-13 (end of session — overseer items 2-4)*

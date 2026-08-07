@@ -31,7 +31,7 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent.parent
-CANON = REPO / "private" / "01-method" / "colometry-canon.md"
+CANON = REPO / "1-method" / "colometry-canon.md"
 
 
 def split_rules(canon_text: str) -> list[tuple[str, str, str]]:

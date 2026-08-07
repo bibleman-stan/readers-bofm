@@ -74,8 +74,8 @@ A file that moves *into* a scanned directory gets scanned for the first time, an
 may light up instantly. That is an artefact of the move, not new breakage —
 diagnose before suppressing, then fix at the right level.
 
-Worked case: `retraction-log.md` moved from the repo root into `docs/` and
-`validate_canon_retirement_residue.py` went 0 → 14. Every hit was legitimate:
+Worked case: `retraction-log.md` moved from the repo root into the scanned doc
+tree and `validate_canon_retirement_residue.py` went 0 → 14. Every hit was legitimate:
 naming retired terms is that file's entire purpose. The right fix was a
 whole-file retirement-context exemption — the file-scope form of an exemption the
 validator already granted to Update Log *sections* — not a blanket suppression
@@ -96,7 +96,7 @@ cd ../atu-method && py -3 scripts/check_broken_pointers.py
 blinded gate and it looks exactly like success. Record N before and after; if it
 fell, you broke a glob. (2026-08-07: 18 → 3 → fixed → 21.)
 
-Then update `docs/00-index.md` if the map changed, and say in the commit message
+Then update `3-project/00-index.md` if the map changed, and say in the commit message
 which gates you ran and what N was.
 
 ## The checklist

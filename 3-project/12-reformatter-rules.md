@@ -2,7 +2,7 @@
 
 This document preserves the detailed mechanical rule specifications, calibration data, and known limitations of the ATU/line reformatter pipeline. Originally developed during the `senseline_reformat_v8.py` era (filename retains the historical "senseline" term) and the earlier `assemble_all.py` build system.
 
-These rules document the *mechanical* layer of ATU/line processing. The *editorial* layer — human judgment about meaning and rhetoric — is documented in `private/01-method/colometry-canon.md`.
+These rules document the *mechanical* layer of ATU/line processing. The *editorial* layer — human judgment about meaning and rhetoric — is documented in `1-method/colometry-canon.md`.
 
 ---
 
@@ -48,7 +48,7 @@ AFTER:  which they had obtained--
 
 **Exception:** AICTP + very short clause that totals ≤ 42 chars stays merged.
 
-**Note:** Post-FEF discovery (March 2026), many of these mechanical AICTP splits are now recognized as incorrect — AICTP + temporal/date + main clause should remain merged as FEFs. See `private/01-method/colometry-canon.md` for the FEF framework that supersedes this rule in editorial review.
+**Note:** Post-FEF discovery (March 2026), many of these mechanical AICTP splits are now recognized as incorrect — AICTP + temporal/date + main clause should remain merged as FEFs. See `1-method/colometry-canon.md` for the FEF framework that supersedes this rule in editorial review.
 
 ---
 
@@ -185,7 +185,7 @@ These require judgment about meaning, rhetoric, and breath. Applied during manua
 - **E4. Temporal Setup / Main Action Boundary** — Temporal/conditional setup gets its own line when followed by a new subject.
 - **E5. Compound Objects Sharing a Verb** — "And" joining two things acted on (not two actions) stays together.
 - **E6. Orphaned Participles** — Never split participle from complement ("Believing that ye shall receive" stays together).
-- **E7. Restrictive vs. Non-Restrictive "Which"** — Restrictive (no comma, identifies): stays with noun. Non-restrictive (comma, describes): can be its own line. *Note: this has been significantly refined — see `private/01-method/colometry-canon.md` "which" clause working hypothesis for the current extended-adjective vs. genuine-subordinate-clause distinction.*
+- **E7. Restrictive vs. Non-Restrictive "Which"** — Restrictive (no comma, identifies): stays with noun. Non-restrictive (comma, describes): can be its own line. *Note: this has been significantly refined — see `1-method/colometry-canon.md` "which" clause working hypothesis for the current extended-adjective vs. genuine-subordinate-clause distinction.*
 - **E8. Exception/Save Clauses** — When the exception IS the punchline, own line. When it completes a negation in one breath, keep together.
 - **E9. Stacked Participial Phrases** — Each "having..." gets its own line when stacked in parallel.
 - **E10. Emotional Hinge Insertions** — "To his great astonishment," gets own line when it marks a shift.

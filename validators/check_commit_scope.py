@@ -53,12 +53,12 @@ def _is_audio(p: str) -> bool:
 
 def _is_canon(p: str) -> bool:
     return p in (
-        "private/01-method/colometry-canon.md",
-        "private/01-method/pericope-canon.md",
+        "1-method/colometry-canon.md",
+        "1-method/pericope-canon.md",
     )
 
 def _is_scholarship(p: str) -> bool:
-    return p.startswith("private/01-method/scholarship/")
+    return p.startswith("1-method/scholarship/")
 
 def _is_corpus(p: str) -> bool:
     return p.startswith("data/text-files/")
@@ -82,7 +82,7 @@ def _is_doc(p: str) -> bool:
         or p == "README.md"
         or p.startswith("directives/")
         or p == ".gitignore"
-        or p == "retraction-log.md"
+        or p == "2-evidence/retraction-log.md"
         or (p.endswith(".md") and "/" not in p)
     )
 

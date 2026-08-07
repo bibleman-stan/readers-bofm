@@ -84,7 +84,7 @@ Use Parry break-points to identify ATUs that merit revision. 209 split candidate
 - "abase → humble" and "amongst → among" swaps added to build_book.py
 - First Alma contextual gloss added (5:27 walked/halakh)
 - Book introductions HTML saved to data/book-introductions.html
-- Reformatter rules extracted to docs/12-reformatter-rules.md
+- Reformatter rules extracted to 3-project/12-reformatter-rules.md
 - External vault content consolidated into repo, vault deleted
 - All HTML rebuilt and cache at v66
 - Multiple commits queued for Stan to push
@@ -159,7 +159,7 @@ Use Parry break-points to identify ATUs that merit revision. 209 split candidate
 ### Update — 2026-03-29
 - Navigation refactor SHIPPED (hamburger panel, verse popover, intro page, centered topbar)
 - Verb + "that" audit COMPLETE — no verb-type rule warranted
-- Rules reclassified into three tiers: RULES, EDITORIAL PRINCIPLES, GUIDELINES (see private/01-method/colometry-canon.md)
+- Rules reclassified into three tiers: RULES, EDITORIAL PRINCIPLES, GUIDELINES (see 1-method/colometry-canon.md)
 - Mechanical-only validation test for stylometry paper: PROPOSED but not yet run
 - Stan's Alma manual pass: continuing through chapter 12+
 - Remaining: mobile testing of new navigation, intro page Back button edge cases, "I would that ye should know/remember" formula consistency review
@@ -214,7 +214,7 @@ Use Parry break-points to identify ATUs that merit revision. 209 split candidate
 - Swap engine fixes for Mosiah 28:3 "tremble" regression (infinitive-context detection in `_chain_coordinated_verbs`)
 - Search NEAR operator bug fixed for `(might OR mighty) NEAR9 call` (refactored `parseBooleanQuery` to return node objects with term lists)
 - Service worker bumped to v128
-- **8 new colometric-class scanners built and run corpus-wide** (see `private/01-method/colometry-canon.md` update for the full table). Scanners live at `C:/tmp/scan_class_{A..H}_*.py`.
+- **8 new colometric-class scanners built and run corpus-wide** (see `1-method/colometry-canon.md` update for the full table). Scanners live at `C:/tmp/scan_class_{A..H}_*.py`.
 
 **Next actionable work — Class A–H merge application (pending Stan review):**
 
@@ -239,7 +239,7 @@ Use Parry break-points to identify ATUs that merit revision. 209 split candidate
 7. Class E Tier 1 — focused 13-hit review
 
 **New principles added to handoffs:**
-- Length caps removed from merge scanners (`private/01-method/colometry-canon.md` + `14-operational-protocols.md`)
+- Length caps removed from merge scanners (`1-method/colometry-canon.md` + `14-operational-protocols.md`)
 - Multi-agent atomic-thought scanning workflow documented (`14-operational-protocols.md`)
 - Content-based replacement over line-number replacement (`14-operational-protocols.md`)
 - Write merge scripts to files, never bash heredocs (`14-operational-protocols.md`)

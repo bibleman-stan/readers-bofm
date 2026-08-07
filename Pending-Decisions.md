@@ -27,7 +27,7 @@ those, because the only instrument that would is barred.
 
 **This gates the whole evidence loop.** A finding measured in Marschall's or
 Skousen's units arrives at a canon with a standing instruction to reject it, so
-`docs/findings/` fills up and discharges nowhere.
+`2-evidence/` fills up and discharges nowhere.
 
 **Options.**
 - **(a) Licensor/detector split (recommended).** External units may never license or
@@ -100,16 +100,31 @@ forgotten. Revisit if the repo is ever mirrored, archived, or publicised.
 
 ---
 
-### [2026-08-07] Tier-2 repo reorganisation
+### [2026-08-07] Repo reorganisation — Stage A done, B and C to decide
 
-**The ask.** `private/01-method/` is tracked, public, and load-bearing canon whose
-name says the opposite. It should become `docs/01-method/`. But canon citations
-across four repos point at that path, and the 2026-08-06 incident (103 dangling
-citations) was caused by a repointer that skipped `private/`.
+**Done (Stage A, 2026-08-07).** Top-level numbered so the human-facing material
+sorts first and each name says what it holds:
 
-**Recommendation:** one move at a time, each with `validate_doc_pointers.py` and
-`atu-method/scripts/check_broken_pointers.py` run before and after, and archival
-material (`private/03-sessions/`, `_archive/`) never rewritten.
+| | holds |
+|---|---|
+| `1-method/` | the ATU method for BoFM — canon, rules, scholarship *(was `private/01-method/`, a name that said the opposite of what it is)* |
+| `2-evidence/` | measurements of the deployed corpus + the retraction log |
+| `3-project/` | how the project runs — pipeline, gates, build, deploy, audio, UI |
+
+**Not moved, and why.** `index.html`, `books/`, `sw.js`, `CNAME`, `manifest.json`,
+the JS and the icons must stay at the repo root — GitHub Pages serves from root and
+the site's relative URLs depend on it. That is a hard constraint, not an oversight.
+
+**Stage B — the machine (proposed, not done).** `scripts/` → `6-code/`,
+`validators/` → `7-gates/`. Cheap to move, but ~140 tracked files and many
+cross-references; worth doing only if the numbering matters more than the churn.
+
+**Stage C — the data (proposed, cautious).** `data/` → `5-text/` touches ~1,016
+tracked files and nearly every script's hard-coded paths, plus `booklist.txt`.
+High cost, purely navigational benefit. **Recommend not doing this one** unless
+`data/` is actively confusing you.
+
+**Procedure for any further move:** `.claude/skills/repoint-paths-safely/`.
 
 ---
 

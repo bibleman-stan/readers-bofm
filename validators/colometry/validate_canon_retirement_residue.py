@@ -39,10 +39,10 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 # Files to scan
 SCAN_PATHS = [
-    REPO_ROOT / "private" / "01-method" / "colometry-canon.md",
-    REPO_ROOT / "private" / "01-method" / "pericope-canon.md",
+    REPO_ROOT / "1-method" / "colometry-canon.md",
+    REPO_ROOT / "1-method" / "pericope-canon.md",
     REPO_ROOT / "CLAUDE.md",
-] + sorted((REPO_ROOT / "docs").glob("*.md"))
+] + sorted((REPO_ROOT / "3-project").glob("*.md"))
 
 
 # Retired/withdrawn/rescinded canon items.
@@ -141,10 +141,15 @@ def find_update_log_ranges(lines: list[str]) -> list[tuple[int, int]]:
 # record — the same exemption find_update_log_ranges() already grants to §8/§10
 # Update Log sections, applied at file scope.
 #
-# It moved from the repo root into docs/ on 2026-08-07 and so entered this
-# validator's glob for the first time, producing 14 instant "violations". Those
-# were an artefact of the move, not new residue: this validator has never been
-# meant to police the retraction log.
+# It moved from the repo root into the scanned doc tree on 2026-08-07 and so
+# entered this validator's glob for the first time, producing 14 instant
+# "violations". Those were an artefact of the move, not new residue: this
+# validator has never been meant to police the retraction log.
+#
+# Matched against Path.name — BARE FILENAMES ONLY, never a path. (A mechanical
+# repoint briefly rewrote this to "2-evidence/retraction-log.md", which silently
+# disabled the exemption: path.name is never a path, so nothing matched and the
+# 14 false positives came back.)
 WHOLE_FILE_RETIREMENT_CONTEXT = {"retraction-log.md"}
 
 
