@@ -1,0 +1,248 @@
+# 07 — Pending Tasks
+
+## IMMEDIATE (do first in next session)
+
+### 1. Generate 2 Nephi 25-33 with Samuel
+~49,400 chars. Stan has ~100k credits available. Use `samuel_pipeline.ipynb`. Configure `BOOK_ID='2nephi'`, `TOTAL_CHAPTERS=33`. Skip logic will handle ch 1-5 (already exist). Need to set start chapter or let it skip to 25.
+
+### 2. Test audio playback on bomreader.com
+Verify Samuel plays correctly for 2 Ne 1-5 (currently deployed) and any newly generated chapters.
+
+## WHEN MORE CREDITS AVAILABLE
+
+### 3. Generate remaining 2 Nephi (ch 6-24)
+~116,000 chars. The Isaiah quotation chapters (12-24). May fit in same credit cycle as #1 if budget allows.
+
+### 4. Generate Jacob, Jarom, Omni, Words of Mormon
+~63,000 chars total. Fills the gap between 1 Nephi and Mosiah.
+
+### 5. Continue through remaining books
+Mosiah (164k), Alma (443k), Helaman (107k), 3 Nephi (173k), 4 Nephi (10k), Mormon (49k), Ether (85k), Moroni (32k). At 100k/month this is roughly 13 months of generation.
+
+## BUGS TO FIX
+
+### 6. Audio-highlight sync drift
+Line highlight drifts from spoken text during playback. Pericope headers throw off `lineIndex` count. See 03-audio-voice.md for debugging approach.
+
+### 7. 1 Ne 6:1 verse text edit
+Needs text fix in source file and audio re-patch.
+
+### 8. KJV diff display
+Toggling KJV diff layer destroys ATU line formatting. Proposed fix: show diff as annotation below verse, don't hide verse-normal.
+
+### 9. build_kjv_diff.py hardcoded paths
+Lines 334 and 348 reference old session paths. Need relative paths + rebuild.
+
+## EDITORIAL / LOW PRIORITY
+
+### 10. "Behold" vs "Lo" methodology
+Stan's linguistic framework for ATU breaking. Test on Alma 5 or 2 Ne 4:15-35. See 02-text-editorial.md.
+
+### 11. rebreak.py uncommitted changes
+396-line diff, unclear if WIP. Check and commit or discard.
+
+### 12. Light mode CSS verification
+New UI elements (topbar, picker, sheet, landing) need light mode override verification.
+
+### 13. Book introductions accessibility
+Previously in background panel, now hidden. Need to surface in About page or picker.
+
+### 14. GitHub secrets alert
+Google API key in `annotations.js:26` — restrict in Google Cloud Console.
+
+### 15. Parry alignment as ATU diagnostic
+Use Parry break-points to identify ATUs that merit revision. 209 split candidates in 2 Nephi alone.
+
+---
+### Update — 2026-03-18
+- Mosiah editorial work begun — ATU revisions applied to chapters 4 and 15 as first pass, demonstrating newly articulated colometry principles
+- Remaining Mosiah chapters (1-3, 5-14, 16-29) still need systematic editorial review
+
+---
+*Last updated: 2026-03-18*
+
+---
+### Update — 2026-03-19
+- Alma editorial review begun: Stan making manual line-break decisions on Alma canonical file
+- Claude Code reviewed commits to Alma ch 1-2 (commit 72a4c44); key feedback:
+  - Parallel anaphora being flattened in several merges (gold/silver, flocks/wives/children) — worth revisiting
+  - Rule 5 violation at 2:11 ("or the people of God" should stay with "Nephites")
+  - "inasmuch as it was possible" (1:32) is a restricting qualifier — should stay with main clause
+  - Strong choices: both/both/both stacking (1:30), simile break (2:27), participial absolute (1:33)
+- `amongst → among` added as quiet swap (14 occurrences); build_book.py updated
+
+---
+*Last updated: 2026-03-19*
+
+---
+### Update — 2026-03-21
+- Alma 1-5 editorial review COMPLETE (FEF pass, sermonic breaks, consistency audit)
+- Granular over-break scrub of 1 Ne through Alma 5 COMPLETE (43 flags, 40 fixed, 0.25% error rate, rubric validated)
+- FEF consistency pass applied across 1 Ne, 2 Ne, Jacob, Mosiah, Alma 1-5
+- Alma 6-63 FEF/mechanical pre-break pass IN PROGRESS
+- Helaman through Moroni still needs FEF/mechanical pass + editorial review
+- "abase → humble" and "amongst → among" swaps added to build_book.py
+- First Alma contextual gloss added (5:27 walked/halakh)
+- Book introductions HTML saved to data/book-introductions.html
+- Reformatter rules extracted to docs/12-reformatter-rules.md
+- External vault content consolidated into repo, vault deleted
+- All HTML rebuilt and cache at v66
+- Multiple commits queued for Stan to push
+
+---
+*Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-21 (second entry)
+- Full-corpus FEF mechanical scrub COMPLETE: 178 fixes across all 15 books (Alma 6-63, Helaman through Moroni)
+- All books now have a clean mechanical floor; manual editorial decisions remain for Alma 6+ through Moroni
+- Colometric analysis script created (`scripts/colometric_analysis.py`) and CSV generated (`research/colometric_metrics.csv`) — quantitative data ready for paper
+- research/ folder established and gitignored (pre-publication materials: CSVs, paper notes, PDFs, analysis outputs)
+- Service worker cache now at v70 (was v66 in earlier entry)
+- Repo structure cleanup complete (scripts consolidated, dead files removed, colab cleaned)
+
+---
+*Last updated: 2026-03-21*
+
+---
+### Update — 2026-03-22–24
+- Full-corpus AICTP merge pass COMPLETE (all 15 books)
+- Anaphoric clause audit COMPLETE (Rule 19 refined, 3 fixes)
+- Escalatory appositive pass COMPLETE (28 stacks identified, 9 new breaks applied)
+- Punctuation-dependency audit COMPLETE (11 cases, 7 merged, 3 restored, 1 already correct)
+- Divine title appositive pass COMPLETE (38 identified, 6 newly stacked)
+- "after the manner of" swap removed
+- "Harlots" paper idea created in academic vault (Article Ideas folder)
+- Remaining: Stan's manual editorial pass on Alma 6+; "Jesus Christ, the Son of God" introducing/referencing calls in context (flagged for future dedicated review); Helaman-Moroni manual editorial pass; remaining ESL structural speed bumps from Tier 1 list
+
+---
+*Last updated: 2026-03-24*
+
+---
+### Update — 2026-03-26
+
+#### TTS Preprocessing Pipeline (Specced, Not Yet Built)
+
+**Problem:** Canonical punctuation conflicts with ATU structure. TTS pauses at commas that don't align with editorial breaks; no pauses at line breaks where commas are absent.
+
+**Solution:** A preprocessing function in the Colab audio pipeline that transforms v2 source text into TTS-optimized text at generation time. No separate file to maintain — reads v2 live and applies rules.
+
+**Key design decisions:**
+- TTS reads **authentic/original text** (data-orig), NOT modernized swaps
+- Line breaks → short SSML pauses (not full commas)
+- Strip line-end commas/semicolons (redundant with line-break pause)
+- Preserve mid-line punctuation, periods, question marks, colons before speech
+- Edge cases: "wo, wo" → pauses between repetitions; "yea, even" → strip comma
+
+**Potential issues identified:** comma stripping too aggressive, verse-initial "And" choppiness, SSML pause duration tuning, regeneration credit cost (~100k chars/month vs. Alma at ~180k chars).
+
+**Status:** Specced in this session. Build when next audio generation cycle begins.
+
+---
+### Update — 2026-03-25–26
+- Full predictive mechanical pass COMPLETE for entire corpus (Alma 12-63, Helaman, 3 Nephi, 4 Nephi, Mormon, Ether, Moroni)
+- Double-that bug FIXED (31 clauses restored)
+- Annotation system disabled
+- GA4 analytics added and live
+- Rules 23-26 codified and applied corpus-wide
+- "Through" source/mechanism + declaration verb passes COMPLETE
+- "And thus we see" editorial narrator breaks COMPLETE
+- Virtue list consistency scan IN PROGRESS
+- TTS preprocessing pipeline SPECCED (pending build when next audio generation)
+- Stan's manual Alma editorial pass: through chapter 13, continuing
+- Remaining: Alma 14+ manual editorial pass, virtue list consistency fixes (pending scan results), remaining books manual pass
+
+---
+*Last updated: 2026-03-26*
+
+---
+### Update — 2026-03-29
+- Navigation refactor SHIPPED (hamburger panel, verse popover, intro page, centered topbar)
+- Verb + "that" audit COMPLETE — no verb-type rule warranted
+- Rules reclassified into three tiers: RULES, EDITORIAL PRINCIPLES, GUIDELINES (see private/01-method/colometry-canon.md)
+- Mechanical-only validation test for stylometry paper: PROPOSED but not yet run
+- Stan's Alma manual pass: continuing through chapter 12+
+- Remaining: mobile testing of new navigation, intro page Back button edge cases, "I would that ye should know/remember" formula consistency review
+
+---
+*Last updated: 2026-03-29*
+
+---
+### Update — 2026-04-11
+
+**Completed this session:**
+- Four-criteria hierarchy formalized (syntax > thought > image > breath)
+- Obligatory complement rule: 42 merges (suppose, understand, command, grant, desire, know)
+- Modal+know rule: 11 merges (should/shall/might/may know + that)
+- "Insomuch that" degree/result rule: 44 merges
+- Semantic grouping principle: 36 compound list fixes + 17 semantic regrouping
+- Date/colophon formulas: 34 merges
+- AICTP rule revised to FEF framework: 7 AISCTP fixes
+- Rule 25 eliminated: 13 merges
+- 28 stuck-word bugs fixed
+- 28 Category A audit fixes (fragments, participials, witness+that)
+- Imperative ye/thou: 91 swap fixes
+- Check→halt/stop, inequality→contrast swaps
+- Notwithstanding+being: 7 phrase-level swap fixes
+- 58 archaic past-tense swap fixes (irregular verbs, CVC doubling, non-verb skips)
+- Wildcard search (? and *) + search return button features
+- Narration audio bug fix (verse hash parsing)
+- Pericope header mojibake fix (UTF-8 encoding)
+- Marschall 2023 comparative analysis saved to research/
+- Full corpus literature comparison saved to research/
+- Adversarial audit: corpus-wide consistency 0.20% violation rate
+- "I say unto you" genre analysis: 273 instances categorized (sermonic/editorial/divine)
+
+**Remaining work (Category B for editorial review):**
+- 9 Category B items confirmed as intentional (keep as-is)
+- 6 borderline AISCTP instances (70-81 chars) in 2 Nephi — editorial review
+- "I say unto you" — 52 merged sermonic instances could be spot-checked
+- Alma long lines (68 lines >18 words) — less thoroughly edited than other books
+- Isaiah blocks (2 Ne 12-24) — different conventions, no settled treatment
+
+**Features pending:**
+- Wildcard search and return button deployed but not yet tested on mobile
+- TTS preprocessing pipeline (specced but not built)
+- Generate 2 Nephi 25-33 audio when ElevenLabs credits reset
+
+---
+
+### Update — 2026-04-13 — Alma 17-22 sweep + Classes A–H scanner harvest
+
+**Completed this session:**
+- 28 atomic-thought merges applied across Alma 17-22 from 7-agent parallel sweep (commit `8388e4f`)
+- Swap engine fixes for Mosiah 28:3 "tremble" regression (infinitive-context detection in `_chain_coordinated_verbs`)
+- Search NEAR operator bug fixed for `(might OR mighty) NEAR9 call` (refactored `parseBooleanQuery` to return node objects with term lists)
+- Service worker bumped to v128
+- **8 new colometric-class scanners built and run corpus-wide** (see `private/01-method/colometry-canon.md` update for the full table). Scanners live at `C:/tmp/scan_class_{A..H}_*.py`.
+
+**Next actionable work — Class A–H merge application (pending Stan review):**
+
+| Class | Hits | Next step |
+|---|---:|---|
+| **A** compound-subject stranding | 99 (~91 deduped) | Review first-20 sample; dedupe 3-line duplicates; filter resumptive-verb FPs; apply Cat A subset |
+| **B** ditransitive object stranding | 26 | Filter passives + "of promise" noun-FPs; review ~20 high-conf survivors |
+| **C** "concerning" topic stranding | 18 | Review all 18 HIGH candidates; most look Cat A-clean |
+| **D** fixed idiom split | 0 | Nothing to do — corpus is clean for the 20-item idiom list |
+| **E** appositional relative | 13 strict / 309 broad | Tier 1 (13) worth focused review; Tier 2 noisy — tighten N+1 word-count filter before acting |
+| **F** subject + adjunct stranding | 94 / 51 | Tier 1 "having/being" (94) is the biggest pathological class in the corpus; Alma dominates (35); apply in stages |
+| **G** cataphoric / hollow head | 56 / **2** | Tier 2 (2 hits, both Alma 22:21 / 1 Ne 18:10 "fear exceedingly / lest") are both clean merges; Tier 1 needs tighter filter (require framing opener) |
+| **H** "or" restatement | 33 / 15 | Tier 1 needs "or that" complementizer filter + Cat B/C flags (Mosiah 15:5 Son/Father, Jacob 4:6 parallel triplet) before applying |
+
+**Priority order for next session:**
+1. Class H Tier 1 — filter & apply (~25 Cat A merges after flagging Cat B/C)
+2. Class G Tier 2 — apply 2 hits immediately
+3. Class C — apply 18 HIGH candidates (most look Cat A)
+4. Class A — dedupe + filter resumptive-verb FPs + apply
+5. Class B — filter passives + apply survivors
+6. Class F — largest class, requires staged review (35 in Alma alone)
+7. Class E Tier 1 — focused 13-hit review
+
+**New principles added to handoffs:**
+- Length caps removed from merge scanners (`private/01-method/colometry-canon.md` + `14-operational-protocols.md`)
+- Multi-agent atomic-thought scanning workflow documented (`14-operational-protocols.md`)
+- Content-based replacement over line-number replacement (`14-operational-protocols.md`)
+- Write merge scripts to files, never bash heredocs (`14-operational-protocols.md`)
+
+---
+*Last updated: 2026-04-13*

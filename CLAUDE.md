@@ -4,7 +4,7 @@
 
 The reason to work in this repo rather than from `atu-method` is concrete: **the gates live where the corpus lives.** The pre-commit validators, the parity checks, `quality_meter`, and the baseline comparison all run here. A session operating on BoFM from another repo has no gate coverage — on 2026-08-06 exactly that produced 103 dangling canon citations, caught only when this repo's pre-commit hook ran.
 
-Read `handoffs/15-pipeline-and-gates.md` first: it maps the pipeline, every gate, and the failure classes nothing catches.
+Read `docs/15-pipeline-and-gates.md` first: it maps the pipeline, every gate, and the failure classes nothing catches.
 
 Cross-corpus methodology still lives in `../atu-method/` and is authoritative for canon questions; this repo owns the corpus, the pipeline, and the gates.
 
@@ -34,7 +34,7 @@ A web-based colometric reading edition of the Book of Mormon at **bomreader.com*
 - **Prior cross-repo directives queue** (22 historical entries) archived at [`_archive/2026-05-19-pre-unification/directives/`](_archive/2026-05-19-pre-unification/directives/).
 - **Canonical methodology** (cross-corpus): `~/repos/atu-method/docs/` — framework.md, apparatus.md.
 - **Per-repo BoFM canon**: `private/01-method/colometry-canon.md`. As of 2026-08-06 `private/01-method/` is **tracked** (it was an untracked single copy — 237 KB of load-bearing canon with no history or backup). Everything else under `private/` stays ignored, notably `private/substrate/` (2.5 GB of licensed corpora) and `private/04-sources/`. Publishing Stan's own method canon is fine; third-party licensed source material must never be committed.
-- **Pipeline + gate map**: [`handoffs/15-pipeline-and-gates.md`](handoffs/15-pipeline-and-gates.md) — read before changing how the text breaks.
+- **Pipeline + gate map**: [`docs/15-pipeline-and-gates.md`](docs/15-pipeline-and-gates.md) — read before changing how the text breaks.
 - **At-scale procedure**: [`.claude/skills/bofm-rebreak-at-scale/SKILL.md`](.claude/skills/bofm-rebreak-at-scale/SKILL.md) — the candidate→audit→survivors→gate→deploy chain.
 
 ## Migration arc

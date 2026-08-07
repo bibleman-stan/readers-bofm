@@ -18,7 +18,7 @@ Approach:
 Scope:
   - Canon (private/01-method/*.md)
   - CLAUDE.md
-  - handoffs/*.md
+  - docs/*.md
 
 Exit code: 0 if no broken pointers, 1 if any found.
 
@@ -39,7 +39,8 @@ SCAN_PATHS = [
     REPO_ROOT / "private" / "01-method" / "colometry-canon.md",
     REPO_ROOT / "private" / "01-method" / "pericope-canon.md",
     REPO_ROOT / "CLAUDE.md",
-] + sorted((REPO_ROOT / "handoffs").glob("*.md"))
+] + sorted((REPO_ROOT / "docs").glob("*.md")) \
+  + sorted((REPO_ROOT / "docs" / "findings").glob("*.md"))
 
 
 # Subdirs to try when resolving bare filenames (canon §6 validator-table
@@ -95,14 +96,17 @@ SKIP_PATHS = {
     # Synthetic / example paths in canon prose
     "example.md",
     "tmp/file.py",
-    # Historical handoff references (described as deleted/superseded in handoffs/00)
+    # Historical handoff references (described as deleted/superseded in docs/00)
     "10-colometry.md",
     "COWORK-HANDOFF.md",
     "COWORK-HANDOFF-KJV.md",
     "HANDOFF.md",
+    # Historical directives file, deleted in the 2026-05-19 archive sweep;
+    # named in docs/retraction-log.md as a record of what was retracted.
+    "2026-05-17-1500-ground-up-rebuild-architecture.md",
     # Gitignored Obsidian artifacts
     "Welcome.md",
-    # Historical voice/audio pipeline references (decommissioned per handoffs/03)
+    # Historical voice/audio pipeline references (decommissioned per docs/03)
     "readalong.html",
     "sister_m_pipeline.ipynb",
     "2nephi_sister_m.ipynb",
@@ -111,7 +115,7 @@ SKIP_PATHS = {
     "colab/sister_m_pipeline.ipynb",
     "colab/bom_reader_voices_v1.ipynb",
     "colab/gen_2nephi.py",
-    # Historical UI artifacts (described in handoffs/04 as pre-Mar 16 redesign)
+    # Historical UI artifacts (described in docs/04 as pre-Mar 16 redesign)
     "old-toolbar.html",
     "old-toolbar-js.js",
     "text-mode-system.md",
@@ -120,7 +124,7 @@ SKIP_PATHS = {
     # Historical-deletion references (file is described as deleted/superseded
     # in the same prose that names it)
     "data/syntax-reference/english-break-rules.md",  # canon §8 2026-04-19 PM "Layer 1 prose draft deleted"
-    "assemble_all.py",  # handoffs/12 "originally developed during ... the earlier assemble_all.py build system"
+    "assemble_all.py",  # docs/12 "originally developed during ... the earlier assemble_all.py build system"
     # Session-folder convention filenames (described in CLAUDE.md as a
     # pattern, not actual paths -- they live in gitignored session folders)
     "transcript.md",

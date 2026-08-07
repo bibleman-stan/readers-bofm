@@ -77,7 +77,7 @@ def _is_data(p: str) -> bool:
 
 def _is_doc(p: str) -> bool:
     return (
-        p.startswith("handoffs/")
+        p.startswith("docs/")
         or p == "CLAUDE.md"
         or p == "README.md"
         or p.startswith("directives/")

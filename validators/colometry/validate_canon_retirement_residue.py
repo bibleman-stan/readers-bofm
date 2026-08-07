@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Detect carry-forward-inertia residue: active references to retired/
-withdrawn/rescinded canon items in canon, CLAUDE.md, and handoffs/.
+withdrawn/rescinded canon items in canon, CLAUDE.md, and docs/.
 
 Triggered by Stan's 2026-04-27 catch (sibling-project GNT-Claude precedent
 applied to BofM): when one canon section retires/withdraws/rescinds
@@ -11,7 +11,7 @@ prevents from going unnoticed.
 
 Approach:
   1. Hardcoded list of retired terms with their retirement markers.
-  2. Scan canon + CLAUDE.md + handoffs/ for occurrences of each term.
+  2. Scan canon + CLAUDE.md + docs/ for occurrences of each term.
   3. Filter out:
      - Lines within retirement notices (contain "retired"/"withdrawn"/etc.).
      - Lines in §8 / §10 Update Log entries (historical record).
@@ -42,7 +42,7 @@ SCAN_PATHS = [
     REPO_ROOT / "private" / "01-method" / "colometry-canon.md",
     REPO_ROOT / "private" / "01-method" / "pericope-canon.md",
     REPO_ROOT / "CLAUDE.md",
-] + sorted((REPO_ROOT / "handoffs").glob("*.md"))
+] + sorted((REPO_ROOT / "docs").glob("*.md"))
 
 
 # Retired/withdrawn/rescinded canon items.
@@ -136,9 +136,23 @@ def find_update_log_ranges(lines: list[str]) -> list[tuple[int, int]]:
     return ranges
 
 
+# Files that are retirement-context in their ENTIRETY. The retraction log's whole
+# job is to name what was retired and why, so every mention in it is historical
+# record — the same exemption find_update_log_ranges() already grants to §8/§10
+# Update Log sections, applied at file scope.
+#
+# It moved from the repo root into docs/ on 2026-08-07 and so entered this
+# validator's glob for the first time, producing 14 instant "violations". Those
+# were an artefact of the move, not new residue: this validator has never been
+# meant to police the retraction log.
+WHOLE_FILE_RETIREMENT_CONTEXT = {"retraction-log.md"}
+
+
 def scan_file(path: Path) -> list[dict]:
     """Find residue references in path."""
     if not path.exists():
+        return []
+    if path.name in WHOLE_FILE_RETIREMENT_CONTEXT:
         return []
     with open(path, encoding="utf-8") as f:
         lines = f.readlines()

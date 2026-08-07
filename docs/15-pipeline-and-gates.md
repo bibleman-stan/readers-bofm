@@ -31,7 +31,7 @@ Three levers change what v2 says, in ascending order of preference:
 
 1. **Binding rules** in `bofm_v1_fabric.py` / `apply_rule_*` — permanent, corpus-wide, cheapest to maintain. Try first.
 2. **UD corrections** to `v0-cache-conllu` — fixes the substrate the rules read. 781 full-class candidates remain in `data/parses/audit/ud-correction-fullclass-candidates.json`.
-3. **`overrides.json`** — judgment residuals neither of the above reaches. Token-exact and parity-safe.
+3. **`data/text-files/v2-adjudicated/overrides.json`** — judgment residuals neither of the above reaches. Token-exact and parity-safe.
 
 ## Where the gates stand
 
@@ -108,6 +108,6 @@ These currently **block any commit that stages canon or corpus**. Doc-only commi
 ## Related
 
 - `.claude/skills/bofm-rebreak-at-scale/SKILL.md` — the same chain as an invocable procedure
-- `handoffs/14-operational-protocols.md` — shell and commit discipline
+- `docs/14-operational-protocols.md` — shell and commit discipline
 - `../atu-method/docs/01-normative/framework.md` §7 — the change protocol the §7.3 gate implements
 - `../atu-method/docs/04-process/improvement-loops.md` — why gates that never run are the actual failure mode
