@@ -7,8 +7,20 @@ __pycache__/
 # Audio zip bundles (too large for GitHub; individual MP3s are fine)
 audio/*.zip
 
-# Obsidian vault config (local only)
-.obsidian/
+# Obsidian vault. Tracked: the config that makes the vault reproducible —
+# app.json (incl. the ignore filters that keep data/ and books/ out of the
+# index), appearance.json, community-plugins.json, hotkeys.json. Ignored: view
+# state that churns every session, and third-party code re-installable from
+# community-plugins.json. Note the directory itself is NOT excluded — git cannot
+# re-include a file whose parent directory is.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/graph.json
+.obsidian/cache/
+.obsidian/plugins/
+.obsidian/themes/
+.trash/
 Welcome.md
 
 # Audio line cache (local only, ~100s of small MP3 fragments)

@@ -1,0 +1,16 @@
+{
+  "attachmentFolderPath": "_attachments",
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "data/",
+    "books/",
+    "audio/",
+    "colab/",
+    "validators/",
+    "_archive/",
+    "archive-studying-edition/",
+    "__pycache__/",
+    ".venv/",
+    ".audio-cache/"
+  ]
+}
