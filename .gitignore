@@ -78,3 +78,9 @@ data/text-files/v2-adjudicated/overrides.json.bak
 # (Everything else under .claude/ stays ignored: settings, local caches.)
 !.claude/skills/
 !.claude/skills/**
+
+# Parry parallelism index — DERIVED from data/text-files/parry/ (already ignored).
+# Untracked 2026-08-06: it reproduces Donald Parry's published line arrangement,
+# labels and indents (Deseret Book / Maxwell Institute) in machine-readable form,
+# and this repo is public. Regenerate locally with scripts/build_parry_index_v2.py.
+data/parry_index.json
