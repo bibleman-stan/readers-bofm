@@ -2754,8 +2754,13 @@
     });
   });
 
-  // ---- TEXT MODE TOGGLE (cycles: verses → lines → parallels → verses) ----
-  // textMode: 0=verses, 1=lines, 2=parallels
+  // ---- TEXT MODE TOGGLE (cycles: verses → lines → verses) ----
+  // textMode: 0=verses, 1=lines. Mode 2 (Parry "Parallels") is RETIRED as of
+  // 2026-08-07: it rendered Donald Parry's published line arrangement, labels
+  // and indents, which is his copyrighted editorial work. The mode-2 branches
+  // and .parry-* styles below are inert (the built pages no longer carry
+  // .line-parry markup) and are kept only so a local research build with
+  // BOFM_PARRY_OVERLAY=1 still renders. Do not restore the cycle to % 3.
   var textMode = 1;
   var linesOn = false;  // kept for backward compat with settings
   function applyTextMode(mode) {
@@ -2780,7 +2785,7 @@
   }
   window.toggleLines = function() {
     pauseCollapse();
-    applyTextMode((textMode + 1) % 3);
+    applyTextMode((textMode + 1) % 2);   // % 2 — see the RETIRED note above
   };
 
   // ---- SETTINGS FUNCTIONS ----

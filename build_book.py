@@ -1863,19 +1863,35 @@ def get_parallel_structures(book_id, chapter):
     return _PARALLEL_INDEX.get(book_id, {}).get(str(chapter), [])
 
 # ── Parry parallelism overlay data ──
+# DISABLED BY DEFAULT (2026-08-07, copyright). The overlay reproduces Donald
+# Parry's published line arrangement — his line divisions, his A/B/a/b/c member
+# labels, and his indent levels — from *Poetic Parallelisms in the Book of
+# Mormon* (Deseret Book / Maxwell Institute). The Book of Mormon text is public
+# domain; Parry's ARRANGEMENT of it is his editorial work, and this repo and
+# bomreader.com are public. Shipping it was a good-faith error, not a licensed
+# use.
+#
+# The source data (data/parry_index.json, data/text-files/parry/) stays
+# gitignored and local — it remains usable for private research, which is what
+# BOFM_PARRY_OVERLAY=1 is for. Never enable it for a build that gets published.
 _PARRY_INDEX = {}
 
 def load_parry_index(base):
     global _PARRY_INDEX
+    _PARRY_INDEX = {}
+    if not os.environ.get('BOFM_PARRY_OVERLAY'):
+        print("  Parry overlay DISABLED (copyright; set BOFM_PARRY_OVERLAY=1 "
+              "for a local research build only)")
+        return
     path = os.path.join(base, 'data', 'parry_index.json')
     if os.path.exists(path):
         with open(path) as f:
             _PARRY_INDEX = json.load(f)
         total = sum(len(e) for ch in _PARRY_INDEX.values() for e in ch.values())
-        print(f"Loaded Parry index: {total} verses for Poetic layer")
+        print(f"Loaded Parry index: {total} verses for Poetic layer "
+              f"— LOCAL RESEARCH BUILD, DO NOT PUBLISH")
     else:
         print(f"  No Parry index at {path}, skipping Parry overlay")
-        _PARRY_INDEX = {}
 
 def get_parry_verses(book_id, chapter):
     """Return dict of verse_num → {lines, types} for this chapter from Parry index v2."""
@@ -2427,10 +2443,11 @@ def gen_verse(verse, swap_list, book_id=None, parallel_map=None, parry_lines=Non
             parts.append(f'  <span class="line-parry parry-indent-{indent}">{label_html}{processed_text}</span>')
         # Type annotations (chiasmus, simple alternate, etc.) are no longer
         # rendered visibly — they are metadata only, not displayed to the reader.
-    else:
-        # Fallback: show paragraph text when no Parry data exists
-        if para_html:
-            parts.append(f'  <span class="line-parry">{para_html}</span>')
+    # No fallback branch. The old one emitted an unlabelled `.line-parry` copy of
+    # every verse (6,604 elements, a duplicate of the entire text) as filler for
+    # the Parry mode. That mode is retired (see load_parry_index), `.line-parry`
+    # renders only under `body.show-parry`, and nothing can set that class — so
+    # the copy was dead weight in every page. Removed 2026-08-07.
 
     parts.append('</div>')
     return '\n'.join(parts)
