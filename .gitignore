@@ -17,8 +17,10 @@ Welcome.md
 # ElevenLabs API key
 .env
 
-# Claude Code local config (per-repo permissions, not project content)
-.claude/
+# Claude Code local config (per-repo permissions, not project content).
+# Contents ignored, but NOT the directory itself — git cannot re-include a file
+# whose parent directory is excluded, and skills below must stay tracked.
+.claude/*
 
 # Research / pre-publication (local only)
 research/
@@ -59,3 +61,8 @@ scripts/workflows/
 
 # Pre-revert scratch backup
 data/text-files/v2-adjudicated/overrides.json.bak
+
+# Skills are shareable project knowledge, not local state — track them.
+# (Everything else under .claude/ stays ignored: settings, local caches.)
+!.claude/skills/
+!.claude/skills/**
