@@ -1,8 +1,12 @@
 # BOM Reader — Claude Code Instructions (thin stub)
 
-This repo is operated by the **unified user-home orchestrator-Claude** at `C:\Users\bibleman\`. Stan opens VSCode at user-home, not at this repo.
+**Work here. Do not hand off.** (Superseded 2026-08-06: this file used to instruct sessions spawning in this repo to hand off to a user-home orchestrator-Claude. That orchestrator was dismantled in the 2026-06-28 repo-autonomy reorganization, and the hand-off instruction now blocks legitimate work.)
 
-If you are a Claude that spawned in this workspace (VSCode opened at this repo): **hand off**. Tell Stan to switch to a vault-Claude window at `C:\Users\bibleman\`. The unified Claude has full cross-repo context; per-repo Claudes don't.
+The reason to work in this repo rather than from `atu-method` is concrete: **the gates live where the corpus lives.** The pre-commit validators, the parity checks, `quality_meter`, and the baseline comparison all run here. A session operating on BoFM from another repo has no gate coverage — on 2026-08-06 exactly that produced 103 dangling canon citations, caught only when this repo's pre-commit hook ran.
+
+Read `handoffs/15-pipeline-and-gates.md` first: it maps the pipeline, every gate, and the failure classes nothing catches.
+
+Cross-corpus methodology still lives in `../atu-method/` and is authoritative for canon questions; this repo owns the corpus, the pipeline, and the gates.
 
 ## What this project is (for collaborators / forks)
 
@@ -29,10 +33,14 @@ A web-based colometric reading edition of the Book of Mormon at **bomreader.com*
 - **Full prior operational discipline** (229-line CLAUDE.md, authored before the 2026-05-19 vault unification) is archived at [`_archive/2026-05-19-pre-unification/CLAUDE.md`](_archive/2026-05-19-pre-unification/CLAUDE.md). Includes editorial discipline (Stan-flagged verse procedure, BoFM EME grammar anchor, R/M/EP rule system), validators tier system, swap system, audio pipeline.
 - **Prior cross-repo directives queue** (22 historical entries) archived at [`_archive/2026-05-19-pre-unification/directives/`](_archive/2026-05-19-pre-unification/directives/).
 - **Canonical methodology** (cross-corpus): `~/repos/atu-method/docs/` — framework.md, apparatus.md.
-- **Per-repo BoFM canon**: `private/01-method/colometry-canon.md` (gitignored except tracked-exception family).
+- **Per-repo BoFM canon**: `private/01-method/colometry-canon.md`. As of 2026-08-06 `private/01-method/` is **tracked** (it was an untracked single copy — 237 KB of load-bearing canon with no history or backup). Everything else under `private/` stays ignored, notably `private/substrate/` (2.5 GB of licensed corpora) and `private/04-sources/`. Publishing Stan's own method canon is fine; third-party licensed source material must never be committed.
+- **Pipeline + gate map**: [`handoffs/15-pipeline-and-gates.md`](handoffs/15-pipeline-and-gates.md) — read before changing how the text breaks.
+- **At-scale procedure**: [`.claude/skills/bofm-rebreak-at-scale/SKILL.md`](.claude/skills/bofm-rebreak-at-scale/SKILL.md) — the candidate→audit→survivors→gate→deploy chain.
 
 ## Migration arc
 
-This thin stub is part of the **master-blaster vault unification** (2026-05-19). Stan retired per-repo Claudes in favor of a single orchestrator at `C:\Users\bibleman\`. See `~/.claude/projects/C--Users-bibleman/memory/_named_arcs.md` for the arc.
+This file began as a thin stub under the **master-blaster vault unification** (2026-05-19), when Stan retired per-repo Claudes for a single user-home orchestrator. That decision was **reversed** by the repo-autonomy reorganization (2026-06-28): each repo is autonomous again, and per-repo sessions are the intended mode.
+
+Arc history is in `../atu-method/memories/operational/_named_arcs.md`. (It previously pointed at `~/.claude/projects/C--Users-bibleman/memory/`, a namespace deleted around mid-June 2026 and partially recovered on 2026-08-06 — recovered content reflects state as of 2026-06-15 and is flagged possibly-stale in each file.)
 
 `Audit-skippable per §7.3 (master-blaster Phase 6 — documentation-only stub demotion + worktree cleanup + directives archive; no code, no canon, no rule, no data)`
