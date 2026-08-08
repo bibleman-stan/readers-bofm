@@ -39,12 +39,19 @@ flowchart LR
 ```
 
 ```
+  ⓪ across sessions    read a sibling repo's JSONL transcript  TURNS  (human-carried)
   ① within a turn      run a gate, it fails, fix it            TURNS  (minutes)
   ② within the repo    a paid-for lesson becomes a skill       TURNS  (new)
   ③ into evidence      a measurement lands in 2-evidence/      BUILT  (unproven)
   ④ into theory        a finding revises the ATU thesis        BLOCKED
   ⑤ back to canon      revised theory changes binding rules    BLOCKED
 ```
+
+Loop ⓪ is numbered zero because it is not a step in the chain — it is the
+**sight** the other loops depend on. A session that cannot see its siblings will
+happily rebuild what one of them already has, or act on a fact that another one
+already disproved. It is listed first for that reason, and because it is the
+cheapest of all of them.
 
 ## Loop ① — Gate → fix, within a single turn (TURNS)
 
@@ -103,6 +110,44 @@ phantom citation — the exact failure class `atu-method/canon-index.md` was bui
 to track, where two carve-outs were found "cited as existing and defined
 nowhere."
 
+## Loop ⓪ — Cross-session sight (TURNS, but human-carried)
+
+**The channel that makes the others possible, and the one easiest to overlook
+because it does not look like a loop.**
+
+Every session runs in one repo and cannot see what a session in another repo
+decided. But Claude Code writes every session to JSONL under
+`~/.claude/projects/<cwd-slug>/`, and that record survives compaction. A session
+here can read what `atu-method`, `meta-wiki`, or `atu-nlp-wiki` actually said.
+Tool: the user-level `JSONL: <workspace>` skill; local script
+`scripts/dump_session_tail.py`.
+
+**Evidenced three times on 2026-08-07**, and the third is the clearest case for
+the channel's value:
+
+1. Reading the `meta-wiki` transcript surfaced a `findings/` layer already
+   designed and queued for Stan — which this repo's `2-evidence/` is the
+   producing half of. Neither side knew about the other.
+2. Reading the `atu-method` transcript surfaced the analysis that the validator
+   baseline stopped functioning as a control on 2026-05-29 — a fact that governs
+   every commit made here and is recorded nowhere in this repo.
+3. Reading `atu-method` again, to smoke-test a script, revealed that session was
+   **mid-build on the very skill this session was about to ship**. A duplicate
+   was avoided by looking. Without the channel, two repos would have grown two
+   versions of the same tool and drifted.
+
+**The failure branch, stated plainly: the channel is human-carried.** It fires
+only when Stan says "JSONL: X". No session checks its siblings on its own, at
+wake or at any other point. That makes Stan the transport layer between his own
+repos — which is exactly the thing that does not scale, and the same shape as
+every other blockage in this document: the mechanism exists, and a human has to
+walk the message across.
+
+*(A live instance of the drift this prevents: two user-level skills, `jsonl/` and
+`read-jsonl/`, currently both claim the `JSONL: <workspace>` trigger with
+different SKILL.md files and different scripts. Flagged 2026-08-07; one should
+win.)*
+
 ## Loop ④ — Finding → theory (BLOCKED)
 
 `atu-nlp-wiki` adjudicates the ATU thesis and states that its own central claim
@@ -143,16 +188,28 @@ single decision that unblocks loops ③–⑤ together.
   yardstick (33 stratified verses, F1 ≈ 0.67) was measured once, on 2026-05-28,
   and never re-run.
 
-## The pattern across all five
+## The pattern across all six
 
-The two loops that turn are the two that are **mechanical and local**: a gate
-fails in front of you, or a procedure is written down where the next session will
-read it. The three that are stuck all require **a decision or a hand-off across a
+The loops that turn are the ones that are **mechanical and local**: a gate fails
+in front of you, or a procedure is written down where the next session will read
+it. The ones that are stuck all require **a decision or a hand-off across a
 boundary**.
 
-That is worth stating plainly, because it predicts where to invest: the cheap
-wins are always in loops ① and ②, and they compound quietly. But the findings
-that would change what the edition *is* all sit in ③–⑤, behind one ruling.
+Loop ⓪ sits awkwardly across that line, and the awkwardness is informative. The
+*mechanism* is mechanical and it works — the transcripts are on disk, the script
+runs, and it has already prevented one duplicate build. But the *trigger* is a
+human sentence. So the channel is only as reliable as Stan remembering to open
+it, which makes a working tool behave like a blocked loop.
+
+That is the cheapest thing on this page to fix, and it is not a tooling problem:
+nothing tells a waking session that its siblings exist and are worth checking.
+A line in `CLAUDE.md` — *before acting on a cross-repo fact, read the sibling's
+transcript* — would convert loop ⓪ from human-carried to standing, at the cost of
+one sentence.
+
+The wider prediction: cheap wins are always in ⓪, ① and ②, and they compound
+quietly. But the findings that would change what the edition *is* all sit in
+③–⑤, behind one ruling.
 
 ## Related
 

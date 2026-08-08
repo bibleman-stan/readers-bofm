@@ -31,6 +31,13 @@ Pipeline: `v0` source → Stanza parse → `v1` clause atoms → `v1.5` binding 
 | cross-corpus methodology (authoritative for canon) | `atu-method/00-start-here.md` |
 | the theory + scholarship behind it | `~/work/atu-nlp-wiki/` |
 
+**Before acting on anything decided in another repo, read that repo's session
+transcript** — `JSONL: <workspace>`, or `scripts/dump_session_tail.py`. This repo
+is one organ of four (`atu-method`, `atu-nlp-wiki`, `meta-wiki`), decisions made
+in one routinely govern work here, and a session that cannot see its siblings
+will rebuild what one of them already has. It has already happened. The channel
+is cheap; see [`4-process/00-improvement-loops.md`](4-process/00-improvement-loops.md) loop ⓪.
+
 ## What is true today (2026-08-07)
 
 - **The deployed edition is systematically coarse.** Against Skousen's
