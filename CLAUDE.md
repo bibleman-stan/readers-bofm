@@ -26,7 +26,7 @@ Pipeline: `v0` source → Stanza parse → `v1` clause atoms → `v1.5` binding 
 | **pipeline + every gate + what nothing catches** | [`4-process/01-pipeline-and-gates.md`](4-process/01-pipeline-and-gates.md) — read the blind spots twice |
 | corpus measurements (the evidence layer) | [`2-evidence/`](2-evidence/) |
 | shell + commit discipline | [`4-process/02-operational-protocols.md`](4-process/02-operational-protocols.md) |
-| at-scale re-break procedure | `~/.claude/skills/bofm-rebreak-at-scale/` |
+| at-scale re-break procedure | `.claude/skills/bofm-rebreak-at-scale/` |
 | BoFM method canon | `1-method/` (tracked since 2026-08-06) |
 | cross-corpus methodology (authoritative for canon) | `atu-method/00-start-here.md` |
 | the theory + scholarship behind it | `~/work/atu-nlp-wiki/` |
