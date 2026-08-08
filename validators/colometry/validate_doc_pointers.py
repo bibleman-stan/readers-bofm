@@ -153,6 +153,11 @@ SKIP_PREFIXES = (
     "atu-method/",   # sibling repo: shared framework, scholarship, memories
     "archive/",
     "private/",      # gitignored session folders, sub-method docs
+    # `~/.claude/...` paths — the skills portfolio and the session transcripts.
+    # PATH_RE drops the leading `~/.`, so the capture arrives as `claude/...`
+    # and the "~" prefix above never matches it. Generalises the one-off
+    # SKIP_PATHS entry for claude/projects/.../_named_arcs.md.
+    "claude/",
 )
 
 
