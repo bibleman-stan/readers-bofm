@@ -1,0 +1,44 @@
+"""Transaction log for readers-bofm corpus appliers.
+
+Thin BoFM-specific wrapper around `atu_method.infrastructure.tx_log.TxLog`
+that fixes the per-repo TX_DIR to `<readers-bofm>/validators/.tx/`. Callers
+construct the log the same way as before -- e.g., `TxLog("rule_name")` --
+without needing to pass the directory.
+
+NOTE on verdict-layer infrastructure (recorded 2026-05-16 per readiness-arc
+Item 3): readers-bofm consumes ONLY `atu_method.infrastructure.tx_log` via
+this thin re-export. `atu_method.infrastructure.validator_output` (the
+Candidate verdict-layer module) is NOT currently consumed; BoFM validators
+emit findings as dicts from `scan_book()`. No local Candidate class
+duplicates exist outside this path. Future sessions investigating verdict-
+layer consumption: this is the state — don't re-investigate.
+
+Usage inside an applier::
+
+    from validators.tx_log import TxLog
+    tx = TxLog("polysyndetic_verb_chain")
+    tx.record_split(str(v2_path), line_idx, original_line, left, right)
+    tx.commit()   # writes <readers-bofm>/validators/.tx/<rule>_YYYYMMDD-HHMMSS.json
+
+For rollback::
+
+    python 5-machinery/validators/rollback.py --latest
+    python 5-machinery/validators/rollback.py --tx 5-machinery/validators/.tx/polysyndetic_verb_chain_20260510-143022.json
+"""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+from atu_method.infrastructure.tx_log import TxLog as _UniversalTxLog
+
+
+REPO = Path(__file__).resolve().parent.parent.parent
+TX_DIR = REPO / "5-machinery" / "validators" / ".tx"
+
+
+class TxLog(_UniversalTxLog):
+    """BoFM-fixed-tx-dir variant of the universal TxLog."""
+
+    def __init__(self, rule_name: str) -> None:
+        super().__init__(rule_name=rule_name, tx_dir=TX_DIR)

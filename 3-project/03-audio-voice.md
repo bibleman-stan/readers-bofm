@@ -80,12 +80,12 @@ const BOOK_FOLDERS = {
 ## Colab Pipeline
 
 ### Canonical Notebook
-`colab/samuel_pipeline.ipynb` — parameterized for any book. **Has Google Drive persistence.**
+`5-machinery/colab/samuel_pipeline.ipynb` — parameterized for any book. **Has Google Drive persistence.**
 
 ### DEPRECATED (do not use)
-- `colab/sister_m_pipeline.ipynb` — Sister M voice, hallucination issues
-- `colab/bom_reader_voices_v1.ipynb` — original notebook, no Drive persistence
-- `colab/gen_2nephi.py` — small script, assumes notebook context
+- `5-machinery/colab/sister_m_pipeline.ipynb` — Sister M voice, hallucination issues
+- `5-machinery/colab/bom_reader_voices_v1.ipynb` — original notebook, no Drive persistence
+- `5-machinery/colab/gen_2nephi.py` — small script, assumes notebook context
 
 ### Drive Persistence (CRITICAL — learned the hard way)
 Previous generation lost ~2 hours of output when Colab runtime disconnected because cache was on the ephemeral VM. Now fixed with three layers:
@@ -160,7 +160,7 @@ The line highlight drifts from actual spoken text during playback. Root cause: `
 ---
 ### Update — 2026-03-21
 - Colab folder cleaned: `sister_m_pipeline.ipynb`, `2nephi_sister_m.ipynb`, `bom_reader_voices_v1.ipynb`, `gen_2nephi.py` all deleted from repo
-- Only `samuel_pipeline.ipynb` remains in `colab/` (the canonical notebook)
+- Only `samuel_pipeline.ipynb` remains in `5-machinery/colab/` (the canonical notebook)
 - Local backup copies of all deleted notebooks saved at `C:\Users\bibleman\Downloads\Colab Notebooks\` (not in repo)
 - DEPRECATED section above is now historical note only — the files no longer exist in repo
 

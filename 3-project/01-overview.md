@@ -20,7 +20,7 @@ A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL
 | `narration.js` | Audio playback module (~1050 lines, IIFE on window.NARRATION) |
 | `sw.js` | Service worker for offline caching |
 | `build_book.py` | Converts ATU-formatted .txt sources (one ATU per line) → HTML book fragments (~1090 lines) |
-| `scripts/senseline_reformat_v8.py` | 19-pass automated ATU/line reformatter (~32K; filename retains historical "senseline") |
+| `5-machinery/scripts/senseline_reformat_v8.py` | 19-pass automated ATU/line reformatter (~32K; filename retains historical "senseline") |
 | `readalong.html` | Standalone beta Read Along mic/speech tool (extracted from index.html) |
 | `books/*.html` | Generated HTML fragments, one per book (15 total, loaded via fetch) |
 | `data/` | JSON data indexes for all layers (intertext, geography, pericopes, parallels, KJV diff) |
@@ -31,7 +31,7 @@ A web-based reading app for the Book of Mormon (bomreader.com). Designed for ESL
 
 ## How Content Gets Built
 1. ATU-format source files in `data/text-files/v2/` (Stan's hand-edited; one ATU per line)
-2. Optionally: `scripts/senseline_reformat_v8.py` applies 19 mechanical passes (for new/revised books)
+2. Optionally: `5-machinery/scripts/senseline_reformat_v8.py` applies 19 mechanical passes (for new/revised books)
 3. `build_book.py` applies archaic word swaps, injects intertext/geo/pericope layers, wraps punctuation, generates HTML
 4. Output: `books/{BOOKID}.html` as fragments
 5. `index.html` loads fragments via `fetch('books/' + bookId + '.html')`
@@ -94,9 +94,9 @@ Format: `#bookId` or `#bookId-chapterNumber` (e.g., `#alma-45`)
 
 ---
 ### Update — 2026-03-21
-- Major repo cleanup: root reduced from ~40 files to ~11 (scripts moved to `scripts/`, dead files deleted)
-- Scripts consolidated into `scripts/` folder: senseline_reformat_v8.py, build_kjv_diff.py, colometric_analysis.py, and 12 others
-- `colab/` cleaned: sister_m_pipeline, 2nephi_sister_m, bom_reader_voices_v1, gen_2nephi all deleted; only `samuel_pipeline.ipynb` remains
+- Major repo cleanup: root reduced from ~40 files to ~11 (scripts moved to `5-machinery/scripts/`, dead files deleted)
+- Scripts consolidated into `5-machinery/scripts/` folder: senseline_reformat_v8.py, build_kjv_diff.py, colometric_analysis.py, and 12 others
+- `5-machinery/colab/` cleaned: sister_m_pipeline, 2nephi_sister_m, bom_reader_voices_v1, gen_2nephi all deleted; only `samuel_pipeline.ipynb` remains
 - `data/` split: production data stays in repo; `research/` folder created for pre-publication materials (PDFs, analysis spreadsheets, paper notes)
 - `research/` is gitignored — local only, not tracked in repo
 - Old root-level handoff files deleted (COWORK-HANDOFF.md, COWORK-HANDOFF-KJV.md, HANDOFF.md)

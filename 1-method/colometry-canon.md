@@ -35,7 +35,7 @@ BoFM-specific framing — Royal Skousen's *The Earliest Text* (2009/2022) as the
 
 **BoFM-corpus instantiations of the framework:**
 
-- **M1 bonded-pair list (verb pairs, corpus-attested):** `{repent, believe}`, `{weep, gnash}` (verbal-extrapolated from canonical nominal hendiadys), `{fight, quarrel}`, `{bless, sanctify}`, `{fear, tremble}`, `{murmur, complain}`, `{hunger, thirst}`. M1 verb-pair protection fires only on N=2 verb-coordination per the N=2-only caveat in atu-method/1-method/framework.md §1.5. Detector reference: `validators/colometry/validate_polysyndetic_verb_chain_ud.py`.
+- **M1 bonded-pair list (verb pairs, corpus-attested):** `{repent, believe}`, `{weep, gnash}` (verbal-extrapolated from canonical nominal hendiadys), `{fight, quarrel}`, `{bless, sanctify}`, `{fear, tremble}`, `{murmur, complain}`, `{hunger, thirst}`. M1 verb-pair protection fires only on N=2 verb-coordination per the N=2-only caveat in atu-method/1-method/framework.md §1.5. Detector reference: `5-machinery/validators/colometry/validate_polysyndetic_verb_chain_ud.py`.
 - **M1 nominal-pair canonical cases:** *grace and mercy*, *heaven and earth*, *dust and ashes*, *flesh and blood*, *soul and body*, *weeping and gnashing of teeth*, *faith and repentance*.
 - **J3 named patterns** (operational sub-rules under speech-act announcement):
   - **Verily formula** — *"Verily I say unto you"* / *"Verily, verily, I say unto you"*: 32 instances total, all in 3 Nephi. Formula stands on its own line; content clause leads next line. See §5 J3-pattern documentation.
@@ -67,34 +67,34 @@ Per-rule operational detail lives in §5. Each rule's full template entry (Statu
 
 | # | Name | Status | Category | Layer | §5 Anchor | Detector |
 |---|------|--------|----------|-------|----------|----------|
-| R1 | AICTP formula integrity | Active | A | 3 | §5 R1 | `validators/colometry/validate_rule_01_ud.py` |
-| R5 | Equivalence "or" as appositive | Active | B | 3 | §5 R5 | `validators/colometry/validate_rule_05_ud.py` |
-| R6 | Causal clauses break | Active | A | 3 | §5 R6 | `validators/colometry/validate_rule_06_ud.py` |
-| R7 | Purpose clauses break | Active | A | 3 | §5 R7 | `validators/colometry/validate_rule_07_ud.py` |
-| R9 | Line-final CCONJ forbidden | Active | A | 1 | §5 R9 (Layer-1 pointer) | `validators/syntax/validate_line_final_tokens.py` |
-| R10 | V + DO split forbidden | Active | A | 1 | §5 R10 | `validators/colometry/validate_rule_10_ud.py` |
-| R11 | Line-final DET forbidden | Active | A | 1 | §5 R11 (Layer-1 pointer) | `validators/syntax/validate_line_final_tokens.py` |
-| R12 | Line-final AUX / compound-verb under shared aux | Active | A | 1+3 (mixed) | §5 R12 | `validators/syntax/validate_line_final_tokens.py` + `validators/syntax/validate_rule_12_compound_verb.py` |
-| R13a | Line-final ADP forbidden | Active | A | 1 | §5 R13a (Layer-1 pointer) | `validators/syntax/validate_line_final_tokens.py` |
-| R15 | Vocative indivisible | Active | A | 3 | §5 R15 | `validators/colometry/validate_rule_15_vocative.py` |
-| R16 | AICTP dangling "that" | Active | A | 3 | §5 R16 | `validators/colometry/validate_rule_16_ud.py` |
-| R17 | Complement integrity | Active | A | 3 | §5 R17 | `validators/colometry/validate_rule_17_ud.py` |
-| R18 | Fixed idiom integrity | Active | A | 3 | §5 R18 | `validators/colometry/validate_rule_18_ud.py` |
-| R18a | Patriarch-deity-triad fixed formula | Active | A | 3 | §5 R18a | `validators/colometry/validate_rule_18a_patriarch_triad.py` |
-| R19 | Cataphoric / anaphoric relative | Active | A (PROPN/PRON/DET + obligatory-reference NOUN closed-list) + B (NOUN-REVIEW for non-closed-list) | 3 | §5 R19 | `validators/colometry/validate_rule_19_ud.py` |
-| R20 | No-anchor (structural floor) | Active | B | 3 | §5 R20 | `validators/syntax/validate_rule_20_ud.py` |
-| R21 | Participial absolute integrity | Active | A | 3 | §5 R21 | `validators/colometry/validate_rule_21_ud.py` + `validators/colometry/validate_participial_phrases.py` |
+| R1 | AICTP formula integrity | Active | A | 3 | §5 R1 | `5-machinery/validators/colometry/validate_rule_01_ud.py` |
+| R5 | Equivalence "or" as appositive | Active | B | 3 | §5 R5 | `5-machinery/validators/colometry/validate_rule_05_ud.py` |
+| R6 | Causal clauses break | Active | A | 3 | §5 R6 | `5-machinery/validators/colometry/validate_rule_06_ud.py` |
+| R7 | Purpose clauses break | Active | A | 3 | §5 R7 | `5-machinery/validators/colometry/validate_rule_07_ud.py` |
+| R9 | Line-final CCONJ forbidden | Active | A | 1 | §5 R9 (Layer-1 pointer) | `5-machinery/validators/syntax/validate_line_final_tokens.py` |
+| R10 | V + DO split forbidden | Active | A | 1 | §5 R10 | `5-machinery/validators/colometry/validate_rule_10_ud.py` |
+| R11 | Line-final DET forbidden | Active | A | 1 | §5 R11 (Layer-1 pointer) | `5-machinery/validators/syntax/validate_line_final_tokens.py` |
+| R12 | Line-final AUX / compound-verb under shared aux | Active | A | 1+3 (mixed) | §5 R12 | `5-machinery/validators/syntax/validate_line_final_tokens.py` + `5-machinery/validators/syntax/validate_rule_12_compound_verb.py` |
+| R13a | Line-final ADP forbidden | Active | A | 1 | §5 R13a (Layer-1 pointer) | `5-machinery/validators/syntax/validate_line_final_tokens.py` |
+| R15 | Vocative indivisible | Active | A | 3 | §5 R15 | `5-machinery/validators/colometry/validate_rule_15_vocative.py` |
+| R16 | AICTP dangling "that" | Active | A | 3 | §5 R16 | `5-machinery/validators/colometry/validate_rule_16_ud.py` |
+| R17 | Complement integrity | Active | A | 3 | §5 R17 | `5-machinery/validators/colometry/validate_rule_17_ud.py` |
+| R18 | Fixed idiom integrity | Active | A | 3 | §5 R18 | `5-machinery/validators/colometry/validate_rule_18_ud.py` |
+| R18a | Patriarch-deity-triad fixed formula | Active | A | 3 | §5 R18a | `5-machinery/validators/colometry/validate_rule_18a_patriarch_triad.py` |
+| R19 | Cataphoric / anaphoric relative | Active | A (PROPN/PRON/DET + obligatory-reference NOUN closed-list) + B (NOUN-REVIEW for non-closed-list) | 3 | §5 R19 | `5-machinery/validators/colometry/validate_rule_19_ud.py` |
+| R20 | No-anchor (structural floor) | Active | B | 3 | §5 R20 | `5-machinery/validators/syntax/validate_rule_20_ud.py` |
+| R21 | Participial absolute integrity | Active | A | 3 | §5 R21 | `5-machinery/validators/colometry/validate_rule_21_ud.py` + `5-machinery/validators/colometry/validate_participial_phrases.py` |
 | R22 | Divine title appositives | Active | B | 3 | §5 R22 | (no dedicated validator yet; Cat B = Stan-eye-check) |
-| R23 | Date colophon integrity | Active | A | 3 | §5 R23 | `validators/colometry/validate_rule_23_ud.py` |
-| R26 | Adjective (or NOUN-as-predicate) + "that" | Active | A | 3 | §5 R26 | `validators/colometry/validate_rule_26_ud.py` |
-| R27 | "Insomuch that" binding | Active | A | 3 | §5 R27 | `validators/colometry/validate_rule_27_ud.py` |
-| R28 | Speech-act announcement after frame | Active | A | 3 | §5 R28 | `validators/colometry/validate_rule_28_ud.py` |
-| R29 | Bare infinitival orphan integrity | Active | A | 3 | §5 R29 | `validators/colometry/validate_rule_29_ud.py` (general rule; subsumes R7 SCOPE-merge + R17 `to`-INF) |
-| EP-1 | "According to" manner vs. source | Active | B | 3 | §5 EP-1 | `validators/colometry/validate_ep_01_according_to_ud.py` (Cat B REVIEW-surfacer; no auto-applier per canon) |
+| R23 | Date colophon integrity | Active | A | 3 | §5 R23 | `5-machinery/validators/colometry/validate_rule_23_ud.py` |
+| R26 | Adjective (or NOUN-as-predicate) + "that" | Active | A | 3 | §5 R26 | `5-machinery/validators/colometry/validate_rule_26_ud.py` |
+| R27 | "Insomuch that" binding | Active | A | 3 | §5 R27 | `5-machinery/validators/colometry/validate_rule_27_ud.py` |
+| R28 | Speech-act announcement after frame | Active | A | 3 | §5 R28 | `5-machinery/validators/colometry/validate_rule_28_ud.py` |
+| R29 | Bare infinitival orphan integrity | Active | A | 3 | §5 R29 | `5-machinery/validators/colometry/validate_rule_29_ud.py` (general rule; subsumes R7 SCOPE-merge + R17 `to`-INF) |
+| EP-1 | "According to" manner vs. source | Active | B | 3 | §5 EP-1 | `5-machinery/validators/colometry/validate_ep_01_according_to_ud.py` (Cat B REVIEW-surfacer; no auto-applier per canon) |
 | EP-3 | Inverted predicate | Active | B | 3 | §5 EP-3 | (no dedicated validator yet; Cat B = Stan-eye-check) |
 | EP-4 | Title/role + domain | Active | B | 3 | §5 EP-4 | (no dedicated validator yet; Cat B = Stan-eye-check) |
 | EP-5 | Virtue/vice lists | Active | B | 3 | §5 EP-5 | (no dedicated validator yet; Cat B = Stan-eye-check) |
-| M4-BoFM-1 | Subject-orphan predicate completion | Active | A (closed-list shapes) + B (length-backstop) | 3 | §5 M4-BoFM-1 | `validators/colometry/validate_m4_bofm_1_subject_orphan.py` |
+| M4-BoFM-1 | Subject-orphan predicate completion | Active | A (closed-list shapes) + B (length-backstop) | 3 | §5 M4-BoFM-1 | `5-machinery/validators/colometry/validate_m4_bofm_1_subject_orphan.py` |
 
 **Status semantics:** Active = settled, fires per detector signatures. Proposed = awaiting corpus-sweep verification per the framework's adoption protocol at [`atu-method/1-method/framework.md §7.8`](../../atu-method/1-method/framework.md). Retired = no longer governs (none in current canon; retired rules would be archived).
 
@@ -245,7 +245,7 @@ Authoritative table: [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-
 
 ### 4.2 Line-Final POS Prohibitions
 
-See [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-reference/ud-taxonomy.md) **§7 Break Legality Reference** — rows for `CCONJ` (Rule 9), `DET` (Rule 11), `AUX` (Rule 12), `ADP` (Rule 13a), all marked `REQUIRED-MERGE` per generic English grammar. Validator: `validators/syntax/validate_line_final_tokens.py`.
+See [`data/syntax-reference/ud-taxonomy.md`](../../data/syntax-reference/ud-taxonomy.md) **§7 Break Legality Reference** — rows for `CCONJ` (Rule 9), `DET` (Rule 11), `AUX` (Rule 12), `ADP` (Rule 13a), all marked `REQUIRED-MERGE` per generic English grammar. Validator: `5-machinery/validators/syntax/validate_line_final_tokens.py`.
 
 ---
 
@@ -321,9 +321,9 @@ The existing **yea-B merge** consolidates a `yea`-led segment that lacks its own
 
 **Implementation.**
 
-- Generate-layer split: `scripts/bofm_generate.py` — `_MARKER_REGISTRY`, `_marker_split` / `_split_one` (skips `j == 0`), `_colon_closure_eligible`, `_is_finite`.
-- Verbum-dicendi bind + quote-guard: `scripts/bofm_v1_fabric.py` — fabric parataxis branch (`_opens_new_beat`, `_is_multiclause_quote` with `_has_own_subject` / `_is_copular_independent_predication` / `_is_finite_independent_predication`) + `_speech_answer_peel` (short-answer peel) in generate.
-- Pronoun-head restrictive-relative bind: `scripts/bofm_v1_fabric.py` — `_LIGHT_PRON`, `_relcl_antecedent_is_light_pron`, intercept in `is_clause_head`.
+- Generate-layer split: `5-machinery/scripts/bofm_generate.py` — `_MARKER_REGISTRY`, `_marker_split` / `_split_one` (skips `j == 0`), `_colon_closure_eligible`, `_is_finite`.
+- Verbum-dicendi bind + quote-guard: `5-machinery/scripts/bofm_v1_fabric.py` — fabric parataxis branch (`_opens_new_beat`, `_is_multiclause_quote` with `_has_own_subject` / `_is_copular_independent_predication` / `_is_finite_independent_predication`) + `_speech_answer_peel` (short-answer peel) in generate.
+- Pronoun-head restrictive-relative bind: `5-machinery/scripts/bofm_v1_fabric.py` — `_LIGHT_PRON`, `_relcl_antecedent_is_light_pron`, intercept in `is_clause_head`.
 - Audit verdict (2026-05-26): linguistic + consistency lenses both COHERENT/SOUND on the marker registry (A) and the verbum-dicendi bind after the quote-guard fix (108 ccomp/copular pierces resolved, 0 single-complement regressions, token-exact integrity). Records this §7.3 closed-list-extension audit per Registry discipline.
 
 ### Forward-frame bind (§2.1 forward-incompleteness — subordinator-led frames)
@@ -371,14 +371,14 @@ The middle line is the framework's own worked example: "that because ye were com
 
 #### Parse-repair layer slot (R-INV, R-WLD)
 
-Upstream of all binding rules, `scripts/parse_repair.py` (`repair()`, applied at parse load-time, idempotent — the same architectural slot as `archaic_normalize`, but repairing ATTACHMENT not morphology) corrects two named, structurally-detectable stanza mis-parse classes of Early-Modern English before the rules run:
+Upstream of all binding rules, `5-machinery/scripts/parse_repair.py` (`repair()`, applied at parse load-time, idempotent — the same architectural slot as `archaic_normalize`, but repairing ATTACHMENT not morphology) corrects two named, structurally-detectable stanza mis-parse classes of Early-Modern English before the rules run:
 
 - **R-INV** (inverted speech-attribution) — re-attaches a postposed speech-subject ("thus saith THE LORD, …"; "said HE, …") that stanza grabbed as a non-subject of the quoted verb, restoring it as `nsubj` of the verbum dicendi so the M2 direct-speech release renders the frame line correctly. (Pre-existing.)
 - **R-WLD** (EME desiderative "would") — re-tags a stranded clause-level desiderative "would" ("I would THAT ye should remember …" = "I wish/desire that …") to a main VERB governing its following `that`-clause as `ccomp`, so the fabric complement-bind reunites the two segments. Guarded against the 546 modal-AUX cases (`deprel == aux`, "would believe") and reparandum sub-trees. **LOAD-BEARING:** verified by an Alma 32:22 render regression test (2026-05-26) — disabling R-WLD strands "and I would" as its own line. (The consistency audit's "output-inert" finding was incorrect for this verse; R-WLD is retained, not dormant.)
 
 #### Implementation
 
-`scripts/bofm_generate.py` — `_FORWARD_FRAME_LEADERS`, `_forward_frame_bind`, `_is_forward_frame`, `_seg_independent_predication`, `_apodosis_is_coordinated`, `_next_is_lone_leader`, `_merge_forward`; parse-repair layer in `scripts/parse_repair.py` (`repair`, `_repair_inverted_speech` = R-INV, `_repair_desiderative_would` = R-WLD).
+`5-machinery/scripts/bofm_generate.py` — `_FORWARD_FRAME_LEADERS`, `_forward_frame_bind`, `_is_forward_frame`, `_seg_independent_predication`, `_apodosis_is_coordinated`, `_next_is_lone_leader`, `_merge_forward`; parse-repair layer in `5-machinery/scripts/parse_repair.py` (`repair`, `_repair_inverted_speech` = R-INV, `_repair_desiderative_would` = R-WLD).
 
 - Audit verdict (2026-05-26): linguistic lens = SOUND (one judgment-call flagged — frame→frame binds at Alma 17:16 / 2 Nephi 25:20, defensible under §2.2 forward-incompleteness, not a regression); consistency lens = COHERENT-WITH-NITS (no punctuation leak; no harmful rule interaction). Corpus sweep: 11 forward-frame verses, all net binds (10 fewer-line + 1 same-count drift at Helaman 5:12), 0 splits, 0 over-merge cascade. Bidirectional gate fail count improved 496 → 493. NIT corrected: R-WLD confirmed LOAD-BEARING (Alma 32:22), not inert. Records this §7.3 new-mechanism + closed-list audit.
 
@@ -427,7 +427,7 @@ AICTP_VARIANTS:
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_01_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_01_ud.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_01_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_01_ud.py)
 - Applier: (none — surface-pattern keep-whole; corpus is hand-authored at this granularity, validator reports violations)
 - Closed-list definitions: §AICTP-Variants (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R1.md` (to be populated during BoFM canon migration)
@@ -503,7 +503,7 @@ The substitution probes used by human reviewers applying the substitution test (
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_05_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_05_ud.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_05_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_05_ud.py)
 - Applier: not yet implemented (Category B status — STRONG-MERGE-CANDIDATE bucket awaits per-instance editorial confirmation via the substitution test before merge is applied)
 - Closed-list / threshold definitions: `SHORT_CONJUNCT_THRESHOLD = 4` in validator source
 - Bucketing logic: STRONG = same-UPOS ∧ (both-short ∨ second-short); REVIEW = otherwise
@@ -569,8 +569,8 @@ action: SPLIT_BEFORE_MARK
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_06_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_06_ud.py)
-- Applier: [`validators/apply_rule_06_ud.py`](../../../../readers-bofm/validators/apply_rule_06_ud.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_06_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_06_ud.py)
+- Applier: [`5-machinery/validators/apply_rule_06_ud.py`](../../../../readers-bofm/5-machinery/validators/apply_rule_06_ud.py)
 - Closed-list definitions: `because`-lemma hardcoded inline in validator; R17 precedence guard imports `GOVERNING_LEMMAS` from `validate_rule_17_ud.py`
 - Audit trail: `readers-bofm/private/audit-trail/R6.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/2-evidence/scholarship/bofm/R6.md`](atu-method/2-evidence/scholarship/bofm/R6.md)
@@ -652,8 +652,8 @@ RESULT_DEGREE_MARKERS:
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_07_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_07_ud.py)
-- Applier: [`validators/apply_rule_07_ud.py`](../../../../readers-bofm/validators/apply_rule_07_ud.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_07_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_07_ud.py)
+- Applier: [`5-machinery/validators/apply_rule_07_ud.py`](../../../../readers-bofm/5-machinery/validators/apply_rule_07_ud.py)
 - Closed-list definitions: in validator source (`MODAL_AUX_LEMMAS`, `RULE_26_HEAD_LEMMAS`, `RESULT_DEGREE_MARKERS`)
 - Audit trail: `readers-bofm/private/audit-trail/R7.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/2-evidence/scholarship/bofm/R7.md`](atu-method/2-evidence/scholarship/bofm/R7.md)
@@ -690,7 +690,7 @@ action: MERGE_FORWARD
 
 **Implementation.**
 - Layer 1 reference: [`data/syntax-reference/ud-taxonomy.md §7`](../../../../readers-bofm/data/syntax-reference/ud-taxonomy.md) row: *line-final `CCONJ`* → `REQUIRED-MERGE`
-- Validator: `validators/syntax/validate_line_final_tokens.py`
+- Validator: `5-machinery/validators/syntax/validate_line_final_tokens.py`
 - Applier: (none — surface-pattern Layer-1; corpus is hand-authored at this granularity, validator reports MALFORMED on violations)
 - Audit trail: `private/audit-trail/R9.md`
 - Scholarship: `atu-method/2-evidence/scholarship/bofm/R9.md`
@@ -761,8 +761,8 @@ action: MERGE_FORWARD
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_10_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_10_ud.py) (UD-pattern); [`validators/colometry/validate_rule_10_verb_do_split.py`](../../../../readers-bofm/validators/colometry/validate_rule_10_verb_do_split.py) (surface heuristic)
-- Applier: [`validators/apply_rule_10_ud.py`](../../../../readers-bofm/validators/apply_rule_10_ud.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_10_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_10_ud.py) (UD-pattern); [`5-machinery/validators/colometry/validate_rule_10_verb_do_split.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_10_verb_do_split.py) (surface heuristic)
+- Applier: [`5-machinery/validators/apply_rule_10_ud.py`](../../../../readers-bofm/5-machinery/validators/apply_rule_10_ud.py)
 - Closed-list definitions: no named bare-NP-shape constant; the deprel + UPOS + line-gap predicate in `scan_book()` is the operational signature (see Closed lists block above)
 - Audit trail: `readers-bofm/private/audit-trail/R10.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/2-evidence/scholarship/bofm/R10.md`](atu-method/2-evidence/scholarship/bofm/R10.md)
@@ -799,7 +799,7 @@ action: MERGE_FORWARD
 
 **Implementation.**
 - Layer 1 reference: [`data/syntax-reference/ud-taxonomy.md §7`](../../../../readers-bofm/data/syntax-reference/ud-taxonomy.md) row: *line-final `DET`* → `REQUIRED-MERGE`
-- Validator: `validators/syntax/validate_line_final_tokens.py`
+- Validator: `5-machinery/validators/syntax/validate_line_final_tokens.py`
 - Applier: (none — surface-pattern Layer-1)
 - Audit trail: `private/audit-trail/R11.md`
 - Scholarship: `atu-method/2-evidence/scholarship/bofm/R11.md`
@@ -914,8 +914,8 @@ At N≥3 coordinated participles under one shared auxiliary, J1 wins uncondition
 
 **Implementation.**
 
-- Validator (profile a): [`validators/syntax/validate_line_final_tokens.py`](../../../../readers-bofm/validators/syntax/validate_line_final_tokens.py) — checks line-final `AUX` with pending `aux` relation per Layer 1 break-legality table.
-- Validator (profile b): [`validators/syntax/validate_rule_12_compound_verb.py`](../../../../readers-bofm/validators/syntax/validate_rule_12_compound_verb.py) — detects line-N modal+aux + line-final participle followed by line-N+1 *and* + bare participle without subject or finite verb.
+- Validator (profile a): [`5-machinery/validators/syntax/validate_line_final_tokens.py`](../../../../readers-bofm/5-machinery/validators/syntax/validate_line_final_tokens.py) — checks line-final `AUX` with pending `aux` relation per Layer 1 break-legality table.
+- Validator (profile b): [`5-machinery/validators/syntax/validate_rule_12_compound_verb.py`](../../../../readers-bofm/5-machinery/validators/syntax/validate_rule_12_compound_verb.py) — detects line-N modal+aux + line-final participle followed by line-N+1 *and* + bare participle without subject or finite verb.
 - Layer 1 break-legality table: [`data/syntax-reference/ud-taxonomy.md` §7](../../../../readers-bofm/data/syntax-reference/ud-taxonomy.md) — rows *line-final `AUX` with pending `aux` relation* and *line-final participle followed by coordinated participle under shared modal+aux*, both marked `REQUIRED-MERGE`.
 - Closed-list definitions: in validator source (`MODAL_AUX_PATTERN`, `PAST_PARTICIPLES`).
 - Audit trail: `readers-bofm/private/audit-trail/R12.md` (to be populated during BoFM canon migration).
@@ -955,7 +955,7 @@ action: MERGE_FORWARD
 
 **Implementation.**
 - Layer 1 reference: [`data/syntax-reference/ud-taxonomy.md §7`](../../../../readers-bofm/data/syntax-reference/ud-taxonomy.md) row: *line-final `ADP` with pending `case` relation* → `REQUIRED-MERGE`
-- Validator: `validators/syntax/validate_line_final_tokens.py`
+- Validator: `5-machinery/validators/syntax/validate_line_final_tokens.py`
 - Applier: (none — surface-pattern Layer-1)
 - Audit trail: `private/audit-trail/R13a.md`
 - Scholarship: `atu-method/2-evidence/scholarship/bofm/R13a.md`
@@ -1039,8 +1039,8 @@ action: SPLIT_BEFORE_SUBJECT
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_15_vocative.py`](../../../../readers-bofm/validators/colometry/validate_rule_15_vocative.py)
-- Applier: [`validators/apply_rule_15_vocative_splits.py`](../../../../readers-bofm/validators/apply_rule_15_vocative_splits.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_15_vocative.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_15_vocative.py)
+- Applier: [`5-machinery/validators/apply_rule_15_vocative_splits.py`](../../../../readers-bofm/5-machinery/validators/apply_rule_15_vocative_splits.py)
 - Closed-list definitions: §Vocative-Confirmers-R15 (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R15.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/2-evidence/scholarship/bofm/R15.md`](atu-method/2-evidence/scholarship/bofm/R15.md)
@@ -1092,7 +1092,7 @@ AICTP_VARIANTS:  # inherited from R1
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_16_aictp_dangling_that.py`](../../../../readers-bofm/validators/colometry/validate_rule_16_aictp_dangling_that.py) (also at `validate_rule_16_ud.py`)
+- Validator: [`5-machinery/validators/colometry/validate_rule_16_aictp_dangling_that.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_16_aictp_dangling_that.py) (also at `validate_rule_16_ud.py`)
 - Applier: (none — surface-pattern split-before; corpus is hand-authored at this granularity, validator reports violations)
 - Closed-list definitions: §AICTP-Variants (inherited from R1)
 - Audit trail: `readers-bofm/private/audit-trail/R16.md` (to be populated during BoFM canon migration)
@@ -1188,8 +1188,8 @@ The sub-rule fires only when the matrix governor is in `GOVERNING_LEMMAS`. Out-o
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_17_ud.py`](../../../readers-bofm/validators/colometry/validate_rule_17_ud.py)
-- Applier: [`validators/apply_rule_17_ud.py`](../../../readers-bofm/validators/apply_rule_17_ud.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_17_ud.py`](../../../readers-bofm/5-machinery/validators/colometry/validate_rule_17_ud.py)
+- Applier: [`5-machinery/validators/apply_rule_17_ud.py`](../../../readers-bofm/5-machinery/validators/apply_rule_17_ud.py)
 - Verb-class definitions: §Verb-Classes-R17 (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R17.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/2-evidence/scholarship/bofm/R17.md`](atu-method/2-evidence/scholarship/bofm/R17.md)
@@ -1254,8 +1254,8 @@ Date-colophon formulas are governed by R23 (sister rule, same KEEP_WHOLE logic; 
 
 **Implementation.**
 
-- Validator (surface-pattern): [`validators/colometry/validate_rule_18_fixed_idioms.py`](../../../../readers-bofm/validators/colometry/validate_rule_18_fixed_idioms.py)
-- Validator (UD-query): [`validators/colometry/validate_rule_18_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_18_ud.py)
+- Validator (surface-pattern): [`5-machinery/validators/colometry/validate_rule_18_fixed_idioms.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_18_fixed_idioms.py)
+- Validator (UD-query): [`5-machinery/validators/colometry/validate_rule_18_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_18_ud.py)
 - Applier: (none — surface-pattern keep-whole; corpus is hand-authored at this granularity, validators report violations)
 - Closed-list definitions: §Fixed-Idioms-R18 (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R18.md` (to be populated during BoFM canon migration)
@@ -1321,7 +1321,7 @@ PATRIARCH_DEITY_TRIAD_VARIANTS:
 
 **Implementation.**
 
-- Validator (surface-pattern): [`validators/colometry/validate_rule_18a_patriarch_triad.py`](../../../../readers-bofm/validators/colometry/validate_rule_18a_patriarch_triad.py)
+- Validator (surface-pattern): [`5-machinery/validators/colometry/validate_rule_18a_patriarch_triad.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_18a_patriarch_triad.py)
 - Applier: (none — surface-pattern keep-whole; validator reports violations for hand-correction or merge-applier dispatch)
 - Closed-list definitions: §Patriarch-Deity-Triad-R18a (this section)
 - Audit trail: `readers-bofm/private/audit-trail/R18a.md` (to be populated)
@@ -1352,7 +1352,7 @@ Expletive *it* in cleft constructions and result/purpose clauses with new predic
 
 **Parser-error override layer (codified 2026-05-16 per directive 2400, post-2203-audit consensus).** The 2102 Isaiah parser-error scan surfaced a small set (8) of cases in Isaiah-quoting chapters where the UD parser mis-classified Hebrew-style parallelism as `acl:relcl`. Rather than encode a closed-list pattern-suspect rule (rejected by the 2203 audit as fundamentally miscalibrated), R19 consults a per-case override layer (planned location: a JSON file under `data/` once Stan-confirmation of action values lands) BEFORE applying the rule's normal classification. Override entries are keyed `<book>_<chapter>_<verse>_<token_id>` and carry an `override_action` of `skip-r19` (case is excluded from R19 routing), `treat-as-NOUN-head` (route to REVIEW), or `treat-as-PROPN-head` (route to STRONG-MERGE) plus a one-sentence reason. This is a per-case data layer, not a rule-scope change. New overrides land as parser-error inventory accumulates; if the inventory grows beyond ~30-50 cases corpus-wide, the override mechanism's scaling profile triggers a re-evaluation per the 2203 audit precedent. Draft inventory at 8 entries from the 2102 Isaiah scan; action values surfaced in the 2400 reply for Stan-confirmation before the file is built and the validator wired.
 
-**Resolver Isaiah skeptical-mode (codified 2026-05-16 per directive 2400, post-2203-audit consensus).** The Sonnet-based resolver (`scripts/resolve_review_required.py`) prepends a skeptical-mode preamble to its per-case prompt when the case falls inside an Isaiah-quoting chapter range (1 Ne 20-22, 2 Ne 7-8, 2 Ne 12-24, 2 Ne 27, Mosiah 14, 3 Ne 22-24). The preamble instructs the resolver to verify the relative-clause structure is genuine before applying R19 routing; if the construction looks like Hebrew-parallel-limb mis-classification (no clear restrictive function, circular attachment, pronoun-resumptive exclamatory device), the resolver returns GENUINE-REVIEW-REQUIRED with rationale "probable Hebrew-parallelism parser mis-classification." This is a prompt-engineering refinement on the existing resolver, not a rule scope change.
+**Resolver Isaiah skeptical-mode (codified 2026-05-16 per directive 2400, post-2203-audit consensus).** The Sonnet-based resolver (`5-machinery/scripts/resolve_review_required.py`) prepends a skeptical-mode preamble to its per-case prompt when the case falls inside an Isaiah-quoting chapter range (1 Ne 20-22, 2 Ne 7-8, 2 Ne 12-24, 2 Ne 27, Mosiah 14, 3 Ne 22-24). The preamble instructs the resolver to verify the relative-clause structure is genuine before applying R19 routing; if the construction looks like Hebrew-parallel-limb mis-classification (no clear restrictive function, circular attachment, pronoun-resumptive exclamatory device), the resolver returns GENUINE-REVIEW-REQUIRED with rationale "probable Hebrew-parallelism parser mis-classification." This is a prompt-engineering refinement on the existing resolver, not a rule scope change.
 
 **UD signature.**
 ```yaml
@@ -1424,8 +1424,8 @@ V2 dispatch is UPOS-only; no lemma list. Typical BoFM `CATAPHORIC_UPOS` heads pa
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_19_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_19_ud.py)
-- Applier (anaphoric MERGE branch): [`validators/apply_rule_19_ud_merge.py`](../../../../readers-bofm/validators/apply_rule_19_ud_merge.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_19_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_19_ud.py)
+- Applier (anaphoric MERGE branch): [`5-machinery/validators/apply_rule_19_ud_merge.py`](../../../../readers-bofm/5-machinery/validators/apply_rule_19_ud_merge.py)
 - Closed-list definitions: `ANAPHORIC_UPOS`, `CATAPHORIC_UPOS` in validator source
 - Applier filters: adjacency gap = 1, merged-line length ≤ 130 characters (Jarom-1:8-style catastrophe guard)
 - Audit trail: `readers-bofm/private/audit-trail/R19.md` (to be populated during BoFM canon migration)
@@ -1538,7 +1538,7 @@ The `CONNECTIVE_LEMMAS` list captures discourse connectives that legitimately oc
 
 **Implementation.**
 
-- Validator: [`validators/syntax/validate_rule_20_ud.py`](../../../../readers-bofm/validators/syntax/validate_rule_20_ud.py)
+- Validator: [`5-machinery/validators/syntax/validate_rule_20_ud.py`](../../../../readers-bofm/5-machinery/validators/syntax/validate_rule_20_ud.py)
 - Applier: not implemented (remediation is per-case editorial — R20 violations route to MERGE_FORWARD candidate or REVIEW; no auto-applier)
 - Closed-list definitions: `CONNECTIVE_LEMMAS`, `STRUCTURALLY_JUSTIFIED_LEADING_UPOS`, `PREDICATIVE_PART_DEPRELS` in validator source. Anchor-kind taxonomy is documented in the validator docstring but not encoded as a runtime constant; operational anchor check is inline VERB/AUX/cop predicate.
 - Audit trail: `readers-bofm/private/audit-trail/R20.md` (to be populated during BoFM canon migration)
@@ -1861,8 +1861,8 @@ The closed list admits compound-ordinal variants of the form *"<number-word> and
 
 **Implementation.**
 
-- Validator (surface-pattern): [`validators/colometry/validate_rule_23_date_colophon.py`](../../../../readers-bofm/validators/colometry/validate_rule_23_date_colophon.py)
-- Validator (UD-query): [`validators/colometry/validate_rule_23_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_23_ud.py)
+- Validator (surface-pattern): [`5-machinery/validators/colometry/validate_rule_23_date_colophon.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_23_date_colophon.py)
+- Validator (UD-query): [`5-machinery/validators/colometry/validate_rule_23_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_23_ud.py)
 - Applier: (none — surface-pattern keep-whole; corpus is hand-authored at this granularity, validators report violations)
 - Closed-list definitions: §Date-Colophons-R23 (in BoFM canon, supplementary section)
 - Audit trail: `readers-bofm/private/audit-trail/R23.md` (to be populated during BoFM canon migration)
@@ -1942,7 +1942,7 @@ RULE_26_HEAD_LEMMAS:
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_07_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_07_ud.py) (R26 routing applied via `RULE_26_HEAD_LEMMAS` set + `is_rule_26_class` filter — Rule 7 detector routes R26-class matches away from R7)
+- Validator: [`5-machinery/validators/colometry/validate_rule_07_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_07_ud.py) (R26 routing applied via `RULE_26_HEAD_LEMMAS` set + `is_rule_26_class` filter — Rule 7 detector routes R26-class matches away from R7)
 - Applier: shares R7 applier pipeline; R26-class matches resolve to MERGE rather than SPLIT
 - Closed-list definitions: in validator source (`RULE_26_HEAD_LEMMAS`)
 - Audit trail: `readers-bofm/private/audit-trail/R26.md` (to be populated during BoFM canon migration)
@@ -2076,9 +2076,9 @@ EXPLETIVE_THERE_VERBS:
 
 **Implementation.**
 
-- Validator (UD): [`validators/colometry/validate_rule_27_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_27_ud.py)
-- Validator (regex precursor): [`validators/colometry/validate_rule_27_insomuch_that.py`](../../../../readers-bofm/validators/colometry/validate_rule_27_insomuch_that.py)
-- Applier: [`validators/apply_rule_27_ud.py`](../../../../readers-bofm/validators/apply_rule_27_ud.py)
+- Validator (UD): [`5-machinery/validators/colometry/validate_rule_27_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_27_ud.py)
+- Validator (regex precursor): [`5-machinery/validators/colometry/validate_rule_27_insomuch_that.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_27_insomuch_that.py)
+- Applier: [`5-machinery/validators/apply_rule_27_ud.py`](../../../../readers-bofm/5-machinery/validators/apply_rule_27_ud.py)
 - Closed-list definitions: in validator source (`CO_REF_PRONOUNS`, `ELIDED_SUBJECT_VERBS`, `NEW_NP_STARTERS`, `EXPLETIVE_THERE_VERBS`)
 - Audit trail: `readers-bofm/private/audit-trail/R27.md` (to be populated during BoFM canon migration)
 - Scholarship: [`atu-method/2-evidence/scholarship/bofm/R27.md`](atu-method/2-evidence/scholarship/bofm/R27.md)
@@ -2159,8 +2159,8 @@ RESULT_MARK_LEMMAS:           # consequence-not-frame when speech precedes advcl
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_28_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_28_ud.py)
-- Applier: [`validators/apply_rule_28_ud.py`](../../../../readers-bofm/validators/apply_rule_28_ud.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_28_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_28_ud.py)
+- Applier: [`5-machinery/validators/apply_rule_28_ud.py`](../../../../readers-bofm/5-machinery/validators/apply_rule_28_ud.py)
 - Closed-list definitions: in validator source (`SPEECH_LEMMAS`, `FRAME_MARK_LEMMAS`, `ADVCL_EXCLUDED_LEMMAS`, `RESULT_MARK_LEMMAS`)
 - Char-offset emission: detector emits `split_col` via `build_line_map_full`; applier inserts the break before `split_col` (T1.1 char-offset pattern).
 - Audit trail: `readers-bofm/private/audit-trail/R28.md` (to be populated during BoFM canon migration)
@@ -2217,8 +2217,8 @@ action: MERGE_ORPHAN_WITH_GOVERNOR
 
 **Implementation.**
 
-- Validator: [`validators/colometry/validate_rule_29_ud.py`](../../../../readers-bofm/validators/colometry/validate_rule_29_ud.py)
-- Applier: [`validators/apply_rule_29_ud.py`](../../../../readers-bofm/validators/apply_rule_29_ud.py)
+- Validator: [`5-machinery/validators/colometry/validate_rule_29_ud.py`](../../../../readers-bofm/5-machinery/validators/colometry/validate_rule_29_ud.py)
+- Applier: [`5-machinery/validators/apply_rule_29_ud.py`](../../../../readers-bofm/5-machinery/validators/apply_rule_29_ud.py)
 - Closed-list definitions: R7 `MOTION_VERBS` + R17 `GOVERNING_LEMMAS` referenced for the Exclusion-6 routing note; no new closed list — R29's trigger is structural (line-initial `to` + governor-POS), not lexical.
 - Audit trail: §7.3 audit 2026-05-14 (2 parallel adversarial agents) — verdicts in commit message.
 - Scholarship: [`atu-method/2-evidence/scholarship/bofm/R29.md`](atu-method/2-evidence/scholarship/bofm/R29.md) (to be populated).
@@ -2321,7 +2321,7 @@ MANNER_INDICATORS:
 
 **Implementation.**
 
-- Validator: `validators/colometry/validate_ep_01_according_to_ud.py` (added 2026-05-13). Surfaces *according to* PP cross-line candidates; emits REVIEW-REQUIRED for editorial disposition. Heuristic classification (SOURCE/MANNER/ambiguous) hints per canon indicator lists but is NOT decision-gating.
+- Validator: `5-machinery/validators/colometry/validate_ep_01_according_to_ud.py` (added 2026-05-13). Surfaces *according to* PP cross-line candidates; emits REVIEW-REQUIRED for editorial disposition. Heuristic classification (SOURCE/MANNER/ambiguous) hints per canon indicator lists but is NOT decision-gating.
 - Applier: none (Category B; auto-applier MUST NOT exist for EP-1; editorial-judgment required per-case).
 - Closed-list definitions: §EP-1-Indicators (in BoFM canon, supplementary section — heuristic indicators only).
 - Audit trail: `readers-bofm/private/audit-trail/EP-1.md` (to be populated during BoFM canon migration).
@@ -2747,7 +2747,7 @@ length_backstop: merged > 130 chars -> REVIEW
 
 **Implementation.**
 
-- Validator: `validators/colometry/validate_m4_bofm_1_subject_orphan.py` (surface-pattern with named exclusions; UD-aware Stage 2 filter recommended for future precision improvement)
+- Validator: `5-machinery/validators/colometry/validate_m4_bofm_1_subject_orphan.py` (surface-pattern with named exclusions; UD-aware Stage 2 filter recommended for future precision improvement)
 - Applier: surface-pattern MERGE_FORWARD; one-shot Python script over v2-mine corpus after Stage 1 + 2 verdicts settle
 - Closed-list definitions: §SUBJECT_SHAPES_M4_BOFM1 (inline above)
 - Audit trail: `readers-bofm/private/audit-trail/M4-BoFM-1.md` (audit task id: aec7492d96ab06a3c, codification commit forthcoming)
@@ -2766,14 +2766,14 @@ length_backstop: merged > 130 chars -> REVIEW
 
 Validators live in two subfolders reflecting the Layer 1 / Layer 3 split (restructured 2026-04-19):
 
-**Layer 1 — Syntax validators** at `validators/syntax/` (generic English grammar checks; violations tagged `[MALFORMED]` — hard grammatical failures):
+**Layer 1 — Syntax validators** at `5-machinery/validators/syntax/` (generic English grammar checks; violations tagged `[MALFORMED]` — hard grammatical failures):
 
 | Validator | Covers |
 |-----------|--------|
 | `validate_line_final_tokens.py` | Rules 9, 11, 12, 13a (line-final POS prohibitions — migrated to Layer 1; simple-aux Rule 12 cases) |
 | `validate_rule_12_compound_verb.py` | Rule 12 compound-participle-shared-auxiliary case (extension to simple-aux check) |
 
-**Layer 3 — Colometry validators** at `validators/colometry/` (BofM-specific editorial-rule checks; violations tagged `[DEVIATION]` — editorial-policy deviations):
+**Layer 3 — Colometry validators** at `5-machinery/validators/colometry/` (BofM-specific editorial-rule checks; violations tagged `[DEVIATION]` — editorial-policy deviations):
 
 | Validator | Covers |
 |-----------|--------|
@@ -2788,11 +2788,11 @@ Validators live in two subfolders reflecting the Layer 1 / Layer 3 split (restru
 | `validate_rule_28_speech_act_after_frame.py` | Rule 28 |
 | `validate_canon_retirement_residue.py` | Carry-forward-inertia residue (active references to retired/withdrawn/rescinded canon items) |
 
-**Audit dashboard.** `validators/run_all.py` runs all validators above and reports per-rule conformance counts. Modes: default (report-only), `--baseline-check` (compare to `validators/.baseline.json`; exit 1 on regression), `--update-baseline` (capture current state).
+**Audit dashboard.** `5-machinery/validators/run_all.py` runs all validators above and reports per-rule conformance counts. Modes: default (report-only), `--baseline-check` (compare to `5-machinery/validators/.baseline.json`; exit 1 on regression), `--update-baseline` (capture current state).
 
-**Pre-commit + commit-msg hooks.** `validators/hooks/pre-commit` runs the dashboard's baseline-check on canon/corpus/validator commits. `validators/hooks/commit-msg` runs `validators/check_canon_extensions.py` to detect §7.3 trigger #1 patterns and require audit-evidence in the message. Install both via `bash validators/hooks/install.sh`.
+**Pre-commit + commit-msg hooks.** `5-machinery/validators/hooks/pre-commit` runs the dashboard's baseline-check on canon/corpus/validator commits. `5-machinery/validators/hooks/commit-msg` runs `5-machinery/validators/check_canon_extensions.py` to detect §7.3 trigger #1 patterns and require audit-evidence in the message. Install both via `bash 5-machinery/validators/hooks/install.sh`.
 
-See `validators/README.md` for the error-class convention and philosophy.
+See `5-machinery/validators/README.md` for the error-class convention and philosophy.
 
 ### Gold-Standard Regression Fixtures
 
@@ -2828,8 +2828,8 @@ Merge validators and sweep scripts must not reject a candidate merge because the
 
 - **Audit-trail per rule:** `private/audit-trail/<rule-id>.md` — populated as rules are migrated; captures sweep results, retirement events, dated decisions that would otherwise bloat the canon's operational entries.
 - **Scholarship companion per rule:** [`atu-method/2-evidence/scholarship/bofm/<rule-id>.md`](../../atu-method/2-evidence/scholarship/bofm/) — captures rationale, grammatical-grounding citations, empirical-validation evidence, intellectual lineage, and adversarial history. Per the framework's two-audience principle (operational entry for the robot; scholarship companion for the scholar), substantive WHY content lives there, not here.
-- **Commit-msg gate:** `validators/check_canon_extensions.py` — detects §7.3 mandatory-audit-trigger patterns in staged canon diffs; requires audit-evidence keywords in commit body.
-- **Baseline-check pre-commit:** `validators/hooks/install.sh` wires `validators/run_all.py --baseline-check` as pre-commit; blocks regressions vs `validators/.baseline.json`.
+- **Commit-msg gate:** `5-machinery/validators/check_canon_extensions.py` — detects §7.3 mandatory-audit-trigger patterns in staged canon diffs; requires audit-evidence keywords in commit body.
+- **Baseline-check pre-commit:** `5-machinery/validators/hooks/install.sh` wires `5-machinery/validators/run_all.py --baseline-check` as pre-commit; blocks regressions vs `5-machinery/validators/.baseline.json`.
 
 
 ---

@@ -1,8 +1,9 @@
 # Documentation map — readers-bofm
 
-Numbers are for things you **read**, in roughly the order you'd want them.
-`scripts/`, `validators/`, `data/`, `books/`, `audio/` stay unnumbered because
-they are things that **run** — the same split `atu-method` uses.
+Numbers run 1→5 in the order you'd want them: what a line should be, what the
+text does, what the product is, how work gets done, and the machinery that does
+it. `data/`, `books/`, `audio/` stay unnumbered — they are inputs and outputs,
+not things you read.
 
 ## The five places
 
@@ -12,6 +13,7 @@ they are things that **run** — the same split `atu-method` uses.
 | [`../2-evidence/`](../2-evidence/) | measurements of the deployed corpus; the retraction log | you want to know what the text *actually does* |
 | **`3-project/`** (here) | what the product is — text, audio, UI, glossary, history | you're changing the edition |
 | [`../4-process/`](../4-process/) | how work gets done — pipeline, gates, protocols, loops | you're about to change something and want to not break it |
+| [`../5-machinery/`](../5-machinery/) | the code that runs it — `scripts/`, `validators/`, `colab/` | you're running or editing the pipeline itself |
 | [`../Pending-Decisions.md`](../Pending-Decisions.md) | what needs Stan's ruling | always, first |
 
 Cross-corpus methodology lives in `../../atu-method/` and is authoritative for

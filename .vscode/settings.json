@@ -1,0 +1,23 @@
+{
+  "// note": "Hides generated + machine-local clutter from the Explorer so the numbered folders read first. Nothing here is deleted or gitignored by this file — it is purely what the sidebar shows.",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    ".venv": true,
+    ".audio-cache": true,
+    ".pytest_cache": true,
+    "**/.DS_Store": true
+  },
+  "search.exclude": {
+    "**/__pycache__": true,
+    ".venv": true,
+    "audio": true,
+    "books": true,
+    "data/parses": true
+  },
+  "files.watcherExclude": {
+    "**/.venv/**": true,
+    "**/audio/**": true,
+    "**/data/parses/**": true
+  }
+}

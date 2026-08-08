@@ -53,7 +53,7 @@ data/text-files/v0-bofm-original/
 data/text-files/v1-skousen-breaks/
 
 # Applier transaction logs (local only — rollback artefacts)
-validators/.tx/*.json
+5-machinery/validators/.tx/*.json
 
 # Scratch / debug artefacts at repo root (detector output redirects, pickle dumps)
 /*.pkl
@@ -72,11 +72,11 @@ data/text-files/lds-scriptures.txt
 # Text-Fabric compiled binary cache (regenerated on load)
 data/tf/**/.tf/
 
-# Stanza-parse audit outputs + spray candidate sets (regenerable from scripts/audit_*.py)
+# Stanza-parse audit outputs + spray candidate sets (regenerable from 5-machinery/scripts/audit_*.py)
 data/parses/audit/
 
 # Generated v2-spray workflow scripts (regenerable from build_spray_workflow.py)
-scripts/workflows/
+5-machinery/scripts/workflows/
 
 # Pre-revert scratch backup
 data/text-files/v2-adjudicated/overrides.json.bak
@@ -89,5 +89,5 @@ data/text-files/v2-adjudicated/overrides.json.bak
 # Parry parallelism index — DERIVED from data/text-files/parry/ (already ignored).
 # Untracked 2026-08-06: it reproduces Donald Parry's published line arrangement,
 # labels and indents (Deseret Book / Maxwell Institute) in machine-readable form,
-# and this repo is public. Regenerate locally with scripts/build_parry_index_v2.py.
+# and this repo is public. Regenerate locally with 5-machinery/scripts/build_parry_index_v2.py.
 data/parry_index.json
