@@ -42,6 +42,7 @@ canon questions. The theory and scholarship behind it live in
 | 03 | [`03-build-pipeline.md`](../4-process/03-build-pipeline.md) | `build_book.py`, data layers, pericopes, Hebrew poetry, KJV diff |
 | 04 | [`04-deployment-infra.md`](../4-process/04-deployment-infra.md) | GitHub Pages, service worker, git workflow |
 | 05 | [`05-pending-tasks.md`](../4-process/05-pending-tasks.md) | Prioritised task list |
+| 06 | [`06-skills.md`](../4-process/06-skills.md) | Every skill a session here can use — repo-level **and** the user-level ones your file explorer doesn't show |
 
 ## Renumbering note (2026-08-07)
 
