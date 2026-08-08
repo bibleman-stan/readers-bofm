@@ -124,7 +124,7 @@ tracked files and nearly every script's hard-coded paths, plus `booklist.txt`.
 High cost, purely navigational benefit. **Recommend not doing this one** unless
 `data/` is actively confusing you.
 
-**Procedure for any further move:** `.claude/skills/repoint-paths-safely/`.
+**Procedure for any further move:** `~/.claude/skills/repoint-paths-safely/`.
 
 ---
 

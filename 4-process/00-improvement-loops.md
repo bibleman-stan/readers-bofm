@@ -84,7 +84,7 @@ repo's own checks is invisible to them.**
 A procedure that has cost something twice becomes a skill, so the next session
 pays once instead of again.
 
-**Evidenced same-day.** `.claude/skills/repoint-paths-safely/` was written after
+**Evidenced same-day.** `~/.claude/skills/repoint-paths-safely/` was written after
 the third repoint defect and immediately caught four more during the very next
 move — including one it did not yet contain (a validator exemption compared
 against a bare filename, where a path can never match). That last one is the
@@ -216,4 +216,4 @@ quietly. But the findings that would change what the edition *is* all sit in
 - [`01-pipeline-and-gates.md`](01-pipeline-and-gates.md) — the gates themselves, and their blind spots
 - [`../Pending-Decisions.md`](../Pending-Decisions.md) — the rulings loops ④/⑤ wait on
 - [`../2-evidence/`](../2-evidence/) — what loop ③ has produced so far
-- [`../.claude/skills/repoint-paths-safely/`](../.claude/skills/repoint-paths-safely/) — loop ②'s first output
+- [`~/.claude/skills/repoint-paths-safely/`](~/.claude/skills/repoint-paths-safely/) — loop ②'s first output

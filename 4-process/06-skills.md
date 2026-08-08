@@ -32,7 +32,7 @@ which is why this page exists.
 
 **Stan's rule, 2026-08-07: "a skill is specific to each claude — put YOURS in
 YOUR .claude skills bucket."** A skill is the *agent's* procedure, not a shared
-library. Each Claude carries its own, in its own repo's `.claude/skills/`, tuned
+library. Each Claude carries its own, in its own repo's `~/.claude/skills/`, tuned
 to what that Claude works on.
 
 So the default is **repo-level**, including for procedures that look generic. Two
