@@ -21,13 +21,14 @@ Pipeline: `v0` source → Stanza parse → `v1` clause atoms → `v1.5` binding 
 | For | Go to |
 |---|---|
 | **decisions waiting on Stan** | [`Pending-Decisions.md`](Pending-Decisions.md) |
-| the doc map | [`3-project/00-index.md`](3-project/00-index.md) |
-| **pipeline + every gate + what nothing catches** | [`3-project/15-pipeline-and-gates.md`](3-project/15-pipeline-and-gates.md) — read the blind spots twice |
+| the doc map (all five places) | [`3-project/00-index.md`](3-project/00-index.md) |
+| **how the work is meant to improve itself** | [`4-process/00-improvement-loops.md`](4-process/00-improvement-loops.md) |
+| **pipeline + every gate + what nothing catches** | [`4-process/01-pipeline-and-gates.md`](4-process/01-pipeline-and-gates.md) — read the blind spots twice |
 | corpus measurements (the evidence layer) | [`2-evidence/`](2-evidence/) |
-| shell + commit discipline | [`3-project/14-operational-protocols.md`](3-project/14-operational-protocols.md) |
+| shell + commit discipline | [`4-process/02-operational-protocols.md`](4-process/02-operational-protocols.md) |
 | at-scale re-break procedure | `.claude/skills/bofm-rebreak-at-scale/` |
 | BoFM method canon | `1-method/` (tracked since 2026-08-06) |
-| cross-corpus methodology (authoritative for canon) | `../atu-method/docs/` |
+| cross-corpus methodology (authoritative for canon) | `atu-method/00-start-here.md` |
 | the theory + scholarship behind it | `~/work/atu-nlp-wiki/` |
 
 ## What is true today (2026-08-07)

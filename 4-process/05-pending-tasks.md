@@ -84,7 +84,7 @@ Use Parry break-points to identify ATUs that merit revision. 209 split candidate
 - "abase → humble" and "amongst → among" swaps added to build_book.py
 - First Alma contextual gloss added (5:27 walked/halakh)
 - Book introductions HTML saved to data/book-introductions.html
-- Reformatter rules extracted to 3-project/12-reformatter-rules.md
+- Reformatter rules extracted to 3-project/08-reformatter-rules.md
 - External vault content consolidated into repo, vault deleted
 - All HTML rebuilt and cache at v66
 - Multiple commits queued for Stan to push
@@ -239,10 +239,10 @@ Use Parry break-points to identify ATUs that merit revision. 209 split candidate
 7. Class E Tier 1 — focused 13-hit review
 
 **New principles added to handoffs:**
-- Length caps removed from merge scanners (`1-method/colometry-canon.md` + `14-operational-protocols.md`)
-- Multi-agent atomic-thought scanning workflow documented (`14-operational-protocols.md`)
-- Content-based replacement over line-number replacement (`14-operational-protocols.md`)
-- Write merge scripts to files, never bash heredocs (`14-operational-protocols.md`)
+- Length caps removed from merge scanners (`1-method/colometry-canon.md` + `4-process/02-operational-protocols.md`)
+- Multi-agent atomic-thought scanning workflow documented (`4-process/02-operational-protocols.md`)
+- Content-based replacement over line-number replacement (`4-process/02-operational-protocols.md`)
+- Write merge scripts to files, never bash heredocs (`4-process/02-operational-protocols.md`)
 
 ---
 *Last updated: 2026-04-13*

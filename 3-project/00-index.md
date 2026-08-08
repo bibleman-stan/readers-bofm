@@ -1,131 +1,57 @@
-# BOM Reader — Documentation
+# Documentation map — readers-bofm
 
-Structured project documentation organized by domain. Each file is independently
-readable and covers one aspect of the project.
+Numbers are for things you **read**, in roughly the order you'd want them.
+`scripts/`, `validators/`, `data/`, `books/`, `audio/` stay unnumbered because
+they are things that **run** — the same split `atu-method` uses.
 
-*(This directory was named `handoffs/` until 2026-08-07. Renamed to `docs/` so the
-obvious folder name holds the documentation; contents and numbering are unchanged.)*
+## The five places
 
-## Where things live
+| | holds | read it when |
+|---|---|---|
+| [`../1-method/`](../1-method/) | the ATU method for BoFM — canon, rules, scholarship | you need to know what a line is *supposed* to be |
+| [`../2-evidence/`](../2-evidence/) | measurements of the deployed corpus; the retraction log | you want to know what the text *actually does* |
+| **`3-project/`** (here) | what the product is — text, audio, UI, glossary, history | you're changing the edition |
+| [`../4-process/`](../4-process/) | how work gets done — pipeline, gates, protocols, loops | you're about to change something and want to not break it |
+| [`../Pending-Decisions.md`](../Pending-Decisions.md) | what needs Stan's ruling | always, first |
 
-| Looking for… | Go to |
-|---|---|
-| **a decision waiting on Stan** | [`../Pending-Decisions.md`](../Pending-Decisions.md) (repo root) |
-| how the pipeline works + every gate | [`15-pipeline-and-gates.md`](15-pipeline-and-gates.md) |
-| **measurements of the deployed corpus** | [`findings/`](findings/) |
-| what we retracted, and why | [`2-evidence/retraction-log.md`](2-evidence/retraction-log.md) |
-| the method canon (rules, colometry) | `../private/01-method/` — tracked since 2026-08-06 |
-| cross-corpus methodology | `../../atu-method/docs/` |
-| the theory + scholarship behind it | `~/work/atu-nlp-wiki/` |
-| third-party PDFs, scratch analysis | `../research/` — **gitignored, not durable** |
+Cross-corpus methodology lives in `../../atu-method/` and is authoritative for
+canon questions. The theory and scholarship behind it live in
+`~/work/atu-nlp-wiki/`.
 
-## Files
+## This folder — the product
 
 | # | File | Covers |
-|---|------|--------|
-| 01 | `01-project-overview.md` | Architecture, key files, book metadata, CSS variables, body classes |
-| 02 | `02-text-editorial.md` | Source text pipeline, editorial principles, swap system, intertextual markup |
-| 03 | `03-audio-voice.md` | Voice decisions, ElevenLabs config, audio inventory, Colab pipeline, narration.js |
-| 04 | `04-ui-ux.md` | Current UI structure, navigation, scroll behavior, known UI issues |
-| 05 | `05-build-pipeline.md` | build_book.py, data layers, pericopes, Hebrew poetry, KJV diff, Firebase |
-| 06 | `06-deployment-infra.md` | GitHub Pages, service worker, git workflow, security alerts |
-| 07 | `07-pending-tasks.md` | Prioritized task list — immediate, when credits reset, bugs, low priority |
-| 08 | `08-future-plans.md` | Spanish fork, Studying Edition, Read Along, shelved ideas |
-| 09 | `09-bugs-fixed.md` | Historical bug fixes, key design decisions |
-| 12 | `12-reformatter-rules.md` | Mechanical reformatter rules (M0-M10), editorial rules (E1-E11), calibration data, -eth conjugation, script thresholds |
-| 12g | `12-grammatical-glossary.md` | Grammatical-vocabulary reference for AICTP, atomic-thought test, complement clauses, FEF, etc. |
-| 13 | `13-preliminary-linguistic-data.md` | Quantified colometric metrics by book: AICTP rates, voice markers, structural metrics, preliminary voice taxonomy |
-| 14 | `14-operational-protocols.md` | "Work smarter" patterns: parallel agent dispatch, two-phase pipeline changes, find-the-class bug fixes, adversarial testing, cognitive hierarchy |
-| 15 | `15-pipeline-and-gates.md` | The corpus pipeline end to end, every gate at every seam, and the failure classes **nothing** catches. Read the blind-spots section twice. |
-| — | `findings/` | Measurements of the deployed corpus against external comparanda (Marschall's bands, Skousen's sense-lines). The evidence that flows back up to `atu-nlp-wiki`. |
-| — | `2-evidence/retraction-log.md` | What was retracted and why; the 3-recurrence promotion threshold. |
+|---|---|---|
+| 01 | [`01-overview.md`](01-overview.md) | Architecture, key files, book metadata, CSS variables, body classes |
+| 02 | [`02-text-editorial.md`](02-text-editorial.md) | Source text pipeline, editorial principles, swap system, intertextual markup |
+| 03 | [`03-audio-voice.md`](03-audio-voice.md) | Voice decisions, ElevenLabs config, audio inventory, Colab pipeline, narration.js |
+| 04 | [`04-ui-ux.md`](04-ui-ux.md) | UI structure, navigation, scroll behaviour, known issues |
+| 05 | [`05-future-plans.md`](05-future-plans.md) | Spanish fork, Studying Edition, Read Along, shelved ideas |
+| 06 | [`06-bugs-fixed.md`](06-bugs-fixed.md) | Historical bug fixes, key design decisions |
+| 07 | [`07-glossary.md`](07-glossary.md) | Grammatical vocabulary — AICTP, the atomic-thought test, complement clauses, FEF |
+| 08 | [`08-reformatter-rules.md`](08-reformatter-rules.md) | Mechanical reformatter rules (M0–M10), editorial rules (E1–E11), calibration, -eth conjugation |
+| 09 | [`09-linguistic-data.md`](09-linguistic-data.md) | Quantified colometric metrics by book: AICTP rates, voice markers, structural metrics |
 
-*(Numbers 10/11 retired — `10-colometry.md` was migrated into `1-method/colometry-canon.md`; `11-*.md` slot intentionally vacant.)*
+## Next door — [`4-process/`](../4-process/)
 
-## Update Protocol
+| # | File | Covers |
+|---|---|---|
+| 00 | [`00-improvement-loops.md`](../4-process/00-improvement-loops.md) | How this work is supposed to get better at itself — five loops, which turn and which don't |
+| 01 | [`01-pipeline-and-gates.md`](../4-process/01-pipeline-and-gates.md) | The corpus pipeline end to end, every gate, and the failure classes **nothing** catches. Read the blind spots twice. |
+| 02 | [`02-operational-protocols.md`](../4-process/02-operational-protocols.md) | Shell and commit discipline; parallel dispatch; two-phase pipeline changes |
+| 03 | [`03-build-pipeline.md`](../4-process/03-build-pipeline.md) | `build_book.py`, data layers, pericopes, Hebrew poetry, KJV diff |
+| 04 | [`04-deployment-infra.md`](../4-process/04-deployment-infra.md) | GitHub Pages, service worker, git workflow |
+| 05 | [`05-pending-tasks.md`](../4-process/05-pending-tasks.md) | Prioritised task list |
 
-When updating these docs, **append a dated update block** at the bottom of the relevant file(s):
+## Renumbering note (2026-08-07)
 
-```markdown
----
-### Update — 2026-MM-DD
-- What changed
-- What was decided
-- New state
-```
+Files were renumbered contiguously when `4-process/` split off. Two different
+files both carried a `12-` prefix before this, which is the kind of thing that
+makes a folder feel arbitrary. Old numbers 10 and 11 were already vacant —
+`10-colometry.md` migrated into `1-method/colometry-canon.md`.
 
-This preserves history so anyone reading the file can trace how things evolved.
+## Update protocol
 
-## Two-AI Workflow (How This Project Is Managed)
-
-This project uses two AI tools with distinct roles. Stan is the link between them.
-
-| Tool | Role | File Access |
-|------|------|-------------|
-| **Claude Code** (VSCode) | File edits, commits, colometry review, build pipeline | Full repo access |
-| **Claude.ai chat** | UI/UX design, brainstorming, research, mobile access | None — docs only |
-
-**Sync protocol:** When Claude.ai reaches a decision, Stan carries it to Claude Code for implementation. When Claude Code makes changes, Stan updates Claude.ai with the relevant diff or summary. The handoff docs in this folder are the shared ground truth — kept current by Claude Code at the end of every session.
-
-**To initialize a Claude.ai session:** Upload all files in this `docs/` folder to a Claude.ai Project, then paste the system prompt from `00-index.md` → "Claude.ai System Prompt" section below.
-
-## Claude.ai System Prompt
-
-```
-You are a design and brainstorming partner for bomreader.com, a web reading
-app for the Book of Mormon. The attached handoff documents are your complete
-project context — read all of them before responding.
-
-Your role in this workflow:
-- UI/UX design, feature brainstorming, research discussions, ideation
-- You cannot read or edit files directly — Stan is the bridge between you
-  and Claude Code (the VSCode extension that handles all file/code/commits)
-- When we reach decisions, Stan will carry them to Claude Code for implementation
-- When Claude Code makes changes, Stan will bring you the relevant updates
-
-Key constraint: never suggest changes to the canonical source text files
-(data/text-files/v2/) directly — those go through Claude Code with
-Stan's explicit approval.
-
-Start by confirming you've read the handoffs and tell me your understanding
-of the current state of the project.
-```
-
-## AI Workflow
-
-**Primary tool:** Claude Code (VSCode extension) — file reads/edits, git commits, colometry review, build pipeline. Stan pushes to GitHub.
-
-**Mobile/brainstorming:** Claude.ai chat — accessible on phone for design, research threads, ideation. Use Claude.ai Projects with key handoff docs uploaded (especially `1-method/colometry-canon.md`) for persistent context. Conversations can be moved into the Project later from desktop.
-
-**COWORK deprecated** as of 2026-03-19. Claude Code covers all its GitHub capabilities with better project memory.
-
-**Session continuity:** Handoff docs are the memory layer between sessions. Claude Code updates these at session end; Stan pushes. Each new session: read CLAUDE.md + all handoffs, then proceed.
-
-**Obsidian vault:** Pointed at repo root (`C:\Users\bibleman\repos\readers-bofm`). `.obsidian/` is gitignored. "Show all file types" enabled so `.txt` source files are visible alongside `.md` handoffs.
-
-## Old Handoff Files
-The following files in the repo root are superseded by this directory:
-- `COWORK-HANDOFF.md` — comprehensive but monolithic, covers Feb 28 - Mar 16
-- `COWORK-HANDOFF-KJV.md` — KJV diff fix notes
-- `HANDOFF.md` — Mar 18 session state
-
-These can be kept for historical reference or deleted.
-
----
-### Update — 2026-03-21
-- research/ folder now gitignored from repo; lives locally at `research/` (not symlinked — just a local directory excluded from git)
-- Old handoff files (COWORK-HANDOFF.md, COWORK-HANDOFF-KJV.md, HANDOFF.md) deleted from repo root — section above is now historical note only
-
----
-### Update — 2026-03-29
-- Rules reclassification documented in 1-method/colometry-canon.md: 26 settled rules now organized into three tiers (RULES — mechanical/reproducible, EDITORIAL PRINCIPLES — defensible but judgment-dependent, GUIDELINES — useful tendencies). Implication: the paper should claim only what the mechanical rules can support.
-- Navigation refactor shipped; updates across 02, 04, 05, 06, 07.
-
----
-### Update — 2026-04-12
-- Added `14-operational-protocols.md` — codifies the "work smarter" patterns ported from Reader's GNT project
-- Added cognitive hierarchy (chunking > oral > rhetorical) to `1-method/colometry-canon.md`
-- Standard Operating Procedures (find-the-class, two-phase pipeline pattern, parallel dispatch discipline, adversarial testing) are now mandatory operating discipline, not optional
-
----
-*Last updated: 2026-04-12*
+When updating these docs, **append a dated update block** at the bottom of the
+relevant file rather than silently rewriting it — the same discipline the
+retraction log follows.

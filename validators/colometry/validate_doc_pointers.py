@@ -40,13 +40,23 @@ SCAN_PATHS = [
     REPO_ROOT / "1-method" / "pericope-canon.md",
     REPO_ROOT / "CLAUDE.md",
 ] + sorted((REPO_ROOT / "3-project").glob("*.md")) \
+  + sorted((REPO_ROOT / "4-process").glob("*.md")) \
   + sorted((REPO_ROOT / "2-evidence").glob("*.md"))
+# NB: every numbered prose directory must be listed here. A directory left out
+# is not a smaller scan that reports honestly — it is a gate that passes because
+# it looked at nothing. Check "Files scanned: N" after any reorganisation.
 
 
 # Subdirs to try when resolving bare filenames (canon §6 validator-table
 # rows say `validate_rule_15_vocative.py`, not the full path).
 SEARCH_SUBDIRS = [
     "",
+    # numbered prose directories (2026-08-07 reorg) — canon and docs cite each
+    # other by bare filename, so these must be resolvable roots
+    "1-method",
+    "2-evidence",
+    "3-project",
+    "4-process",
     "validators",
     "validators/colometry",
     "validators/syntax",

@@ -42,7 +42,8 @@ SCAN_PATHS = [
     REPO_ROOT / "1-method" / "colometry-canon.md",
     REPO_ROOT / "1-method" / "pericope-canon.md",
     REPO_ROOT / "CLAUDE.md",
-] + sorted((REPO_ROOT / "3-project").glob("*.md"))
+] + sorted((REPO_ROOT / "3-project").glob("*.md")) \
+  + sorted((REPO_ROOT / "4-process").glob("*.md"))
 
 
 # Retired/withdrawn/rescinded canon items.
