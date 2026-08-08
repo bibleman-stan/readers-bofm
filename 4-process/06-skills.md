@@ -32,7 +32,7 @@ which is why this page exists.
 
 **Stan's rule, 2026-08-07: "a skill is specific to each claude — put YOURS in
 YOUR .claude skills bucket."** A skill is the *agent's* procedure, not a shared
-library. Each Claude carries its own, in its own repo's `~/.claude/skills/`, tuned
+library. Each Claude carries its own, in its own repo's `.claude/skills/`, tuned
 to what that Claude works on.
 
 So the default is **repo-level**, including for procedures that look generic. Two
@@ -40,11 +40,19 @@ sessions needing the same capability each write their own version against their
 own machinery — `read-session-jsonl` here calls this repo's
 `scripts/dump_session_tail.py`; the `atu-method` Claude has its own.
 
-That is deliberately *not* DRY, and the trade is explicit: some parallel effort in
-exchange for each Claude's procedure staying legible, self-contained, and
-independently editable. The thing DRY would buy — one shared copy — is exactly
-what produced two competing `jsonl/` and `read-jsonl/` skills at user level on
-the day this was written.
+**The trade, stated plainly.** This means four Claudes may end up with four
+similar skills instead of one shared copy. That is a real cost: improving one
+does not improve the others, and a lesson learned here has to be carried over by
+hand if the `atu-method` Claude needs it too.
+
+What it buys is that each skill is self-contained and points at machinery that
+actually exists in its own repo — this one calls `scripts/dump_session_tail.py`,
+which lives here. A single shared skill would have to describe every repo's setup
+at once, and would go stale for three of them every time one changed.
+
+The one-shared-copy alternative also has a track record: it is what produced two
+competing user-level skills, `jsonl/` and `read-jsonl/`, with different
+instructions *and* different scripts, on the same day this was written.
 
 **User-level** stays for genuinely tool-shaped, agent-independent procedure with
 no repo machinery behind it: `safe-scripting`, `zotero`, `transcribe-video`.
