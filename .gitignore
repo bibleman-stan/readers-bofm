@@ -45,7 +45,12 @@ research/
 # by exception. On 2026-08-07 it moved OUT to 1-method/ at the repo root, so the
 # exception is gone and this rule is a plain exclusion again. Publishing Stan's
 # own method canon is fine; third-party licensed material is not.
-private/
+# Private material stays local. The README stub is the exception and IS
+# tracked, so the folder's purpose and layout survive even though its
+# contents cannot. A bare `private/` cannot be negated into -- git will not
+# descend into an ignored directory -- so the contents are ignored instead.
+/private/*
+!/private/README.md
 
 # Reference/source text files (local only — not our editorial work)
 data/text-files/parry/
