@@ -34,8 +34,17 @@ Welcome.md
 # whose parent directory is excluded, and skills below must stay tracked.
 .claude/*
 
-# Research / pre-publication (local only)
-research/
+# Third-party sources and material derived from them. Payloads stay local; the
+# tracked README names what belongs here so an absence is never silent. Notably
+# two copyrighted PDFs (Hardy 2023, Marschall 2023) which may never be committed,
+# and extractions derived from them, which are a publication decision rather than
+# a filing one — this repo is public.
+#
+# Our own analysis does NOT belong here. It goes in the numbered tiers; nine
+# files were moved out on 2026-08-10 (design docs to 1-method/, metrics and
+# syntactic patterns to 2-evidence/, UI mockups to 3-project/mockups/).
+research/*
+!research/README.md
 
 # Private strategy / pre-publication (local only). Notably private/substrate/
 # (2.5 GB of licensed corpora) and private/04-sources/ — neither may ever be

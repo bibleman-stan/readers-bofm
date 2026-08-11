@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FEF Whitespace Mockup</title>
+<style>
+  body {
+    background: #1a1a2e;
+    color: #d4d4d4;
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+    font-size: 17px;
+    line-height: 2.35;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h2 { color: #8888aa; font-size: 14px; font-weight: normal; letter-spacing: 2px; text-transform: uppercase; margin-top: 50px; }
+  .verse-num { color: #555; font-size: 11px; margin-right: 4px; }
+  .section-label { color: #666; font-size: 12px; font-style: italic; margin: 30px 0 10px 0; }
+
+  /* === STANDARD (current) === */
+  .standard .verse { margin-bottom: 2px; }
+
+  /* === FEF WHITESPACE (proposed) === */
+  .fef-ws .verse { margin-bottom: -2px; }  /* tighter default for non-FEF */
+  .fef-ws .verse.fef-start {
+    margin-top: 22px;  /* extra breath before FEF frames */
+  }
+  .fef-ws .fef-line {
+    /* no special styling — the whitespace does the work */
+  }
+
+  .comparison {
+    display: flex;
+    gap: 60px;
+  }
+  .column {
+    flex: 1;
+  }
+  .column-header {
+    color: #8888aa;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  .line { display: block; text-indent: -0.75em; padding-left: 0.75em; }
+</style>
+</head>
+<body>
+
+<h2>FEF Whitespace Mockup — Alma 9:32–10:6</h2>
+<p style="color:#666; font-size:13px; line-height:1.6;">
+  Left: current formatting (equal verse spacing).<br>
+  Right: proposed FEF whitespace (extra breath before narrative frames).<br>
+  The text is identical — only the vertical spacing changes.
+</p>
+
+<div class="comparison">
+
+<!-- ============ STANDARD (current) ============ -->
+<div class="column standard">
+<div class="column-header">Current</div>
+
+<div class="verse">
+<span class="verse-num">9:32</span>
+<span class="line">And now it came to pass that after Alma had spoken these words</span>
+<span class="line">the people began to be more astonished;</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">9:33</span>
+<span class="line">But it came to pass that the Lord did not suffer them</span>
+<span class="line">that they should take me at that time and cast me into prison.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">9:34</span>
+<span class="line">And it came to pass that Amulek went and stood forth,</span>
+<span class="line">and began to preach unto them also.</span>
+<span class="line">And now the words of Amulek are not all written,</span>
+<span class="line">nevertheless a part of his words are written in this book.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:1</span>
+<span class="line">Now these are the words which Amulek preached unto the people</span>
+<span class="line">who were in the land of Ammonihah, saying:</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:2</span>
+<span class="line">I am Amulek;</span>
+<span class="line">I am the son of Giddonah, who was the son of Ishmael,</span>
+<span class="line">who was a descendant of Aminadi;</span>
+<span class="line">and it was that same Aminadi</span>
+<span class="line">who interpreted the writing which was upon the wall of the temple,</span>
+<span class="line">which was written by the finger of God.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:3</span>
+<span class="line">And Aminadi was a descendant of Nephi,</span>
+<span class="line">who was the son of Lehi,</span>
+<span class="line">who came out of the land of Jerusalem,</span>
+<span class="line">who was a descendant of Manasseh,</span>
+<span class="line">who was the son of Joseph</span>
+<span class="line">who was sold into Egypt by the hands of his brethren.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:4</span>
+<span class="line">And behold, I am also a man of no small reputation</span>
+<span class="line">among all those who know me;</span>
+<span class="line">yea, and behold, I have many kindreds and friends,</span>
+<span class="line">and I have also acquired much riches by the hand of my industry.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:5</span>
+<span class="line">Nevertheless, after all this,</span>
+<span class="line">I never have known much of the ways of the Lord,</span>
+<span class="line">and his mysteries and marvelous power.</span>
+<span class="line">I said I never had known much of these things;</span>
+<span class="line">but behold, I mistake,</span>
+<span class="line">for I have seen much of his mysteries and his marvelous power;</span>
+<span class="line">yea, even in the preservation of the lives of this people.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:6</span>
+<span class="line">Nevertheless, I did harden my heart,</span>
+<span class="line">for I was called many times and I would not hear;</span>
+<span class="line">therefore I knew concerning these things, yet I would not know;</span>
+<span class="line">therefore I went on rebelling against God,</span>
+<span class="line">in the wickedness of my heart.</span>
+</div>
+
+</div>
+
+<!-- ============ FEF WHITESPACE (proposed) ============ -->
+<div class="column fef-ws">
+<div class="column-header">With FEF Whitespace</div>
+
+<div class="verse fef-start">
+<span class="verse-num">9:32</span>
+<span class="line fef-line">And now it came to pass that after Alma had spoken these words</span>
+<span class="line">the people began to be more astonished;</span>
+</div>
+
+<div class="verse fef-start">
+<span class="verse-num">9:33</span>
+<span class="line fef-line">But it came to pass that the Lord did not suffer them</span>
+<span class="line">that they should take me at that time and cast me into prison.</span>
+</div>
+
+<div class="verse fef-start">
+<span class="verse-num">9:34</span>
+<span class="line fef-line">And it came to pass that Amulek went and stood forth,</span>
+<span class="line">and began to preach unto them also.</span>
+<span class="line">And now the words of Amulek are not all written,</span>
+<span class="line">nevertheless a part of his words are written in this book.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:1</span>
+<span class="line">Now these are the words which Amulek preached unto the people</span>
+<span class="line">who were in the land of Ammonihah, saying:</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:2</span>
+<span class="line">I am Amulek;</span>
+<span class="line">I am the son of Giddonah, who was the son of Ishmael,</span>
+<span class="line">who was a descendant of Aminadi;</span>
+<span class="line">and it was that same Aminadi</span>
+<span class="line">who interpreted the writing which was upon the wall of the temple,</span>
+<span class="line">which was written by the finger of God.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:3</span>
+<span class="line">And Aminadi was a descendant of Nephi,</span>
+<span class="line">who was the son of Lehi,</span>
+<span class="line">who came out of the land of Jerusalem,</span>
+<span class="line">who was a descendant of Manasseh,</span>
+<span class="line">who was the son of Joseph</span>
+<span class="line">who was sold into Egypt by the hands of his brethren.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:4</span>
+<span class="line">And behold, I am also a man of no small reputation</span>
+<span class="line">among all those who know me;</span>
+<span class="line">yea, and behold, I have many kindreds and friends,</span>
+<span class="line">and I have also acquired much riches by the hand of my industry.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:5</span>
+<span class="line">Nevertheless, after all this,</span>
+<span class="line">I never have known much of the ways of the Lord,</span>
+<span class="line">and his mysteries and marvelous power.</span>
+<span class="line">I said I never had known much of these things;</span>
+<span class="line">but behold, I mistake,</span>
+<span class="line">for I have seen much of his mysteries and his marvelous power;</span>
+<span class="line">yea, even in the preservation of the lives of this people.</span>
+</div>
+
+<div class="verse">
+<span class="verse-num">10:6</span>
+<span class="line">Nevertheless, I did harden my heart,</span>
+<span class="line">for I was called many times and I would not hear;</span>
+<span class="line">therefore I knew concerning these things, yet I would not know;</span>
+<span class="line">therefore I went on rebelling against God,</span>
+<span class="line">in the wickedness of my heart.</span>
+</div>
+
+</div>
+</div>
+
+<p style="color:#666; font-size:13px; line-height:1.6; margin-top:40px;">
+  <strong>What to notice:</strong> In the right column, verses 9:32, 9:33, and 9:34 — all beginning with AICTP frames — get a small extra breath of whitespace before them. The Amulek speech (10:2–10:6), which has no AICTP frames, flows continuously at normal spacing. The effect is subtle: Mormon's narrative machinery gets a visual "inhale" before each frame, while embedded speech flows naturally. The reader feels the compositional architecture without being told about it.
+</p>
+
+</body>
+</html>

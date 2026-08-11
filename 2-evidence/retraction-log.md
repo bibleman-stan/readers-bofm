@@ -13,7 +13,7 @@ Per the cross-corpus protocol at [`atu-method/4-process/retraction-log-protocol.
 - **Sub-pattern:** rhetorical-figure smuggling — "breath test" as parallel-gate diagnostic
 - **What was retracted:** invocations of "breath tests" in Rule 6 / Rule 7 / Parallel-List Uniformity / Rule 15 as gate-like diagnostics
 - **What surfaced it:** Stan retirement of breath as diagnostic (2026-04-19 PM); week later still found "breath" cited in newly-codified principles I authored 2026-04-26 — *active reinjection* of a retired diagnostic
-- **Reference:** memory `feedback_no_fake_dilemmas` point 7 (carry-forward-inertia); mechanical safeguard at `validators/colometry/validate_canon_retirement_residue.py`
+- **Reference:** memory `feedback_no_fake_dilemmas` point 7 (carry-forward-inertia); mechanical safeguard at `5-machinery/validators/colometry/validate_canon_retirement_residue.py`
 
 ### 2026-04-22 — Em-dash codification withdrawn
 - **Factor:** A

@@ -6,7 +6,7 @@
 
 ## What v1 is
 
-`scripts/bofm_generate.py --stage v1` runs framework §3's **v1** stage and stops:
+`5-machinery/scripts/bofm_generate.py --stage v1` runs framework §3's **v1** stage and stops:
 `bofm_v1_fabric.clause_atoms` segmentation with `_rule_passes` skipped. Default stays
 `--stage v2`, byte-identical to before (verified against `git show HEAD` on 1nephi,
 enos, moroni).
@@ -36,7 +36,7 @@ Only break positions move.
 
 ## Marschall bands — 1 Nephi, whole book
 
-Counter: `scripts/marschall_view.py` `syllables()`, unchanged, so these are comparable
+Counter: `5-machinery/scripts/marschall_view.py` `syllables()`, unchanged, so these are comparable
 to `2-evidence/research-marschall-1ne3.md`.
 
 | band | v2 deployed | v1 clause |
